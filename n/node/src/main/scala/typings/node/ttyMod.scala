@@ -228,17 +228,17 @@ object ttyMod {
     *  1 - to the right from cursor
     */
   /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeNumbers.`-1`
-    - typings.node.nodeNumbers.`0`
-    - typings.node.nodeNumbers.`1`
+    - typings.node.nodeInts.`-1`
+    - typings.node.nodeInts.`0`
+    - typings.node.nodeInts.`1`
   */
   trait Direction extends StObject
   object Direction {
     
-    inline def `-1`: typings.node.nodeNumbers.`-1` = -1.asInstanceOf[typings.node.nodeNumbers.`-1`]
+    inline def `-1`: typings.node.nodeInts.`-1` = -1.asInstanceOf[typings.node.nodeInts.`-1`]
     
-    inline def `0`: typings.node.nodeNumbers.`0` = 0.asInstanceOf[typings.node.nodeNumbers.`0`]
+    inline def `0`: typings.node.nodeInts.`0` = 0.asInstanceOf[typings.node.nodeInts.`0`]
     
-    inline def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
+    inline def `1`: typings.node.nodeInts.`1` = 1.asInstanceOf[typings.node.nodeInts.`1`]
   }
 }

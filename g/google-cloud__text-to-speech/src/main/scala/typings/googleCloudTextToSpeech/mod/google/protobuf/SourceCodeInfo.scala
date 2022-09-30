@@ -5,7 +5,6 @@ import typings.googleCloudTextToSpeech.mod.google.protobuf.SourceCodeInfo.ILocat
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SourceCodeInfo.
   * @param [properties] Properties to set
   */
-class SourceCodeInfo ()
+open class SourceCodeInfo ()
   extends StObject
      with ISourceCodeInfo {
   def this(properties: ISourceCodeInfo) = this()
@@ -30,7 +29,7 @@ class SourceCodeInfo ()
     * Converts this SourceCodeInfo to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object SourceCodeInfo {
   
@@ -45,7 +44,7 @@ object SourceCodeInfo {
     * Constructs a new Location.
     * @param [properties] Properties to set
     */
-  class Location ()
+  open class Location ()
     extends StObject
        with ILocation {
     def this(properties: ILocation) = this()
@@ -70,7 +69,7 @@ object SourceCodeInfo {
       * Converts this Location to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** Location trailingComments. */
     @JSName("trailingComments")
@@ -91,6 +90,8 @@ object SourceCodeInfo {
     inline def create(): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.std.Location]
     inline def create(properties: ILocation): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.std.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Location]
     /**
       * Decodes a Location message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -102,9 +103,8 @@ object SourceCodeInfo {
     /* static member */
     inline def decode(reader: Reader): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
     inline def decode(reader: Reader, length: Double): typings.std.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Location]
-    inline def decode(reader: Uint8Array): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
-    inline def decode(reader: Uint8Array, length: Double): typings.std.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Location]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
     /**
       * Decodes a Location message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -114,7 +114,6 @@ object SourceCodeInfo {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
-    inline def decodeDelimited(reader: Uint8Array): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
     
     /**
       * Encodes the specified Location message. Does not implicitly {@link google.protobuf.SourceCodeInfo.Location.verify|verify} messages.
@@ -142,7 +141,16 @@ object SourceCodeInfo {
       * @returns Location
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.std.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Location]
+    
+    /**
+      * Gets the default type url for Location
+      * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+      * @returns The default type url
+      */
+    /* static member */
+    inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+    inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Creates a plain object from a Location message. Also converts values to other types if specified.
@@ -151,8 +159,8 @@ object SourceCodeInfo {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.std.Location): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.std.Location, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.std.Location): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.std.Location, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Location message.
@@ -160,7 +168,7 @@ object SourceCodeInfo {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -172,6 +180,8 @@ object SourceCodeInfo {
   inline def create(): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SourceCodeInfo]
   inline def create(properties: ISourceCodeInfo): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SourceCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourceCodeInfo]
   /**
     * Decodes a SourceCodeInfo message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -183,9 +193,8 @@ object SourceCodeInfo {
   /* static member */
   inline def decode(reader: Reader): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
   inline def decode(reader: Reader, length: Double): SourceCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourceCodeInfo]
-  inline def decode(reader: Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
-  inline def decode(reader: Uint8Array, length: Double): SourceCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourceCodeInfo]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
   /**
     * Decodes a SourceCodeInfo message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -195,7 +204,6 @@ object SourceCodeInfo {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
-  inline def decodeDelimited(reader: Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
   
   /**
     * Encodes the specified SourceCodeInfo message. Does not implicitly {@link google.protobuf.SourceCodeInfo.verify|verify} messages.
@@ -223,7 +231,16 @@ object SourceCodeInfo {
     * @returns SourceCodeInfo
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
+  inline def fromObject(`object`: StringDictionary[Any]): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
+  
+  /**
+    * Gets the default type url for SourceCodeInfo
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a SourceCodeInfo message. Also converts values to other types if specified.
@@ -232,8 +249,8 @@ object SourceCodeInfo {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SourceCodeInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SourceCodeInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SourceCodeInfo): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SourceCodeInfo, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SourceCodeInfo message.
@@ -241,7 +258,7 @@ object SourceCodeInfo {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a Location. */
   trait ILocation extends StObject {
@@ -282,7 +299,7 @@ object SourceCodeInfo {
       
       inline def setLeadingDetachedCommentsUndefined: Self = StObject.set(x, "leadingDetachedComments", js.undefined)
       
-      inline def setLeadingDetachedCommentsVarargs(value: String*): Self = StObject.set(x, "leadingDetachedComments", js.Array(value :_*))
+      inline def setLeadingDetachedCommentsVarargs(value: String*): Self = StObject.set(x, "leadingDetachedComments", js.Array(value*))
       
       inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -290,7 +307,7 @@ object SourceCodeInfo {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setSpan(value: js.Array[Double]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
@@ -298,7 +315,7 @@ object SourceCodeInfo {
       
       inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
       
-      inline def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value :_*))
+      inline def setSpanVarargs(value: Double*): Self = StObject.set(x, "span", js.Array(value*))
       
       inline def setTrailingComments(value: String): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
       

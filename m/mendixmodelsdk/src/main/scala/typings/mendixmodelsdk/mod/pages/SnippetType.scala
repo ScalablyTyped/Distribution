@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SnippetType")
 @js.native
-class SnippetType protected ()
+open class SnippetType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SnippetType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

@@ -2,6 +2,7 @@ package typings.gapiClient
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.gapiClient.anon.Callback
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +63,8 @@ object gapi {
       */
     @js.native
     trait Batch[T]
-      extends js.Promise[Response[ResponseMap[T]]] {
+      extends StObject
+         with Promise[Response[ResponseMap[T]]] {
       
       /**
         * Adds a gapi.client.Request to the batch.
@@ -84,7 +86,8 @@ object gapi {
       */
     @js.native
     trait Request[T]
-      extends js.Promise[Response[T]] {
+      extends StObject
+         with Promise[Response[T]] {
       
       /**
         * Executes the request and runs the supplied callback on response.

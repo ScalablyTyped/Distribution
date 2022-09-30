@@ -27,14 +27,16 @@ type LanguageMessages = Record[String, String]
 type NullableType[T] = js.UndefOr[Null | T]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.joi.mod.ObjectSchema[typings.joi.mod.StrictSchemaMap[T]]
+  - typings.joi.mod.StrictSchemaMap[T]
+  - typings.joi.mod.ObjectSchema[T]
   - typings.joi.mod.ArraySchema
   - typings.joi.mod.DateSchema
   - typings.joi.mod.BooleanSchema
   - typings.joi.mod.NumberSchema
   - typings.joi.mod.StringSchema
+  - typings.joi.mod.AlternativesSchema
 */
-type ObjectPropertiesSchema[T] = _ObjectPropertiesSchema[T] | ObjectSchema[StrictSchemaMap[T]]
+type ObjectPropertiesSchema[T] = _ObjectPropertiesSchema[T] | StrictSchemaMap[T]
 
 type PartialSchemaMap[TSchema] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ key in keyof TSchema ]:? joi.joi.SchemaLike | std.Array<joi.joi.SchemaLike>}

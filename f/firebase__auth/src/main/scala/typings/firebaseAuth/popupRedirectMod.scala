@@ -1,7 +1,7 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.firebaseAuthNumbers.`0`
-import typings.firebaseAuth.firebaseAuthNumbers.`1`
+import typings.firebaseAuth.firebaseAuthInts.`0`
+import typings.firebaseAuth.firebaseAuthInts.`1`
 import typings.firebaseAuth.firebaseAuthStrings.linkViaPopup
 import typings.firebaseAuth.firebaseAuthStrings.linkViaRedirect
 import typings.firebaseAuth.firebaseAuthStrings.reauthViaPopup
@@ -164,8 +164,8 @@ object popupRedirectMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseAuth.firebaseAuthNumbers.`0`
-    - typings.firebaseAuth.firebaseAuthNumbers.`1`
+    - typings.firebaseAuth.firebaseAuthInts.`0`
+    - typings.firebaseAuth.firebaseAuthInts.`1`
   */
   trait EventFilter extends StObject
   object EventFilter {

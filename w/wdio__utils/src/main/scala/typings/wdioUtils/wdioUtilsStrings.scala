@@ -11,6 +11,10 @@ object wdioUtilsStrings {
   inline def `QuotationmarkLessthansignScreenshot[base64]GreaterthansignQuotationmark`: `QuotationmarkLessthansignScreenshot[base64]GreaterthansignQuotationmark` = "\"<Screenshot[base64]>\"".asInstanceOf[`QuotationmarkLessthansignScreenshot[base64]GreaterthansignQuotationmark`]
   
   @js.native
+  sealed trait `QuotationmarkLessthansignScript[base64]GreaterthansignQuotationmark` extends StObject
+  inline def `QuotationmarkLessthansignScript[base64]GreaterthansignQuotationmark`: `QuotationmarkLessthansignScript[base64]GreaterthansignQuotationmark` = "\"<Script[base64]>\"".asInstanceOf[`QuotationmarkLessthansignScript[base64]GreaterthansignQuotationmark`]
+  
+  @js.native
   sealed trait bigint extends StObject
   inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
@@ -21,6 +25,10 @@ object wdioUtilsStrings {
   @js.native
   sealed trait function extends StObject
   inline def function: function = "function".asInstanceOf[function]
+  
+  @js.native
+  sealed trait local extends StObject
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait `null` extends StObject

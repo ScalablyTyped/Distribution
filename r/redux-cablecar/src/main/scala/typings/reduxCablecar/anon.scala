@@ -13,8 +13,8 @@ object anon {
   @js.native
   trait Connect extends StObject {
     
-    def connect(store: Store[js.Any, AnyAction], channel: String): CableCar = js.native
-    def connect(store: Store[js.Any, AnyAction], channel: String, options: Options): CableCar = js.native
+    def connect(store: Store[Any, AnyAction], channel: String): CableCar = js.native
+    def connect(store: Store[Any, AnyAction], channel: String, options: Options): CableCar = js.native
     
     def setProvider(actionCableProvider: String): Unit = js.native
   }

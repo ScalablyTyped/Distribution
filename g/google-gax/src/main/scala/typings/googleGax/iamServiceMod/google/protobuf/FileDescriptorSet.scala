@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FileDescriptorSet.
   * @param [properties] Properties to set
   */
-class FileDescriptorSet ()
+open class FileDescriptorSet ()
   extends StObject
      with IFileDescriptorSet {
   def this(properties: IFileDescriptorSet) = this()
@@ -29,7 +28,7 @@ class FileDescriptorSet ()
     * Converts this FileDescriptorSet to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object FileDescriptorSet {
   
@@ -46,6 +45,8 @@ object FileDescriptorSet {
   inline def create(): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FileDescriptorSet]
   inline def create(properties: IFileDescriptorSet): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
+  inline def decode(reader: js.typedarray.Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): FileDescriptorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorSet]
   /**
     * Decodes a FileDescriptorSet message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object FileDescriptorSet {
   /* static member */
   inline def decode(reader: Reader): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   inline def decode(reader: Reader, length: Double): FileDescriptorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorSet]
-  inline def decode(reader: Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
-  inline def decode(reader: Uint8Array, length: Double): FileDescriptorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorSet]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   /**
     * Decodes a FileDescriptorSet message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object FileDescriptorSet {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
-  inline def decodeDelimited(reader: Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
   /**
     * Encodes the specified FileDescriptorSet message. Does not implicitly {@link google.protobuf.FileDescriptorSet.verify|verify} messages.
@@ -97,7 +96,7 @@ object FileDescriptorSet {
     * @returns FileDescriptorSet
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
+  inline def fromObject(`object`: StringDictionary[Any]): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
   /**
     * Creates a plain object from a FileDescriptorSet message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object FileDescriptorSet {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: FileDescriptorSet): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: FileDescriptorSet, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: FileDescriptorSet): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: FileDescriptorSet, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a FileDescriptorSet message.
@@ -115,5 +114,5 @@ object FileDescriptorSet {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

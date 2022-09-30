@@ -1,13 +1,13 @@
 package typings.rbx
 
 import typings.rbx.anon.ReadonlyArraystringnumber
-import typings.rbx.rbxNumbers.`1`
-import typings.rbx.rbxNumbers.`2`
-import typings.rbx.rbxNumbers.`3`
-import typings.rbx.rbxNumbers.`4`
-import typings.rbx.rbxNumbers.`5`
-import typings.rbx.rbxNumbers.`6`
-import typings.rbx.rbxNumbers.`7`
+import typings.rbx.rbxInts.`1`
+import typings.rbx.rbxInts.`2`
+import typings.rbx.rbxInts.`3`
+import typings.rbx.rbxInts.`4`
+import typings.rbx.rbxInts.`5`
+import typings.rbx.rbxInts.`6`
+import typings.rbx.rbxInts.`7`
 import typings.rbx.rbxStrings.`black-bis`
 import typings.rbx.rbxStrings.`black-ter`
 import typings.rbx.rbxStrings.`grey-dark`

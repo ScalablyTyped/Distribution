@@ -10,7 +10,7 @@ object expectedConditionsMod {
   
   @JSImport("protractor/built/expectedConditions", "ProtractorExpectedConditions")
   @js.native
-  class ProtractorExpectedConditions protected () extends StObject {
+  open class ProtractorExpectedConditions protected () extends StObject {
     def this(browser: ProtractorBrowser) = this()
     
     /**

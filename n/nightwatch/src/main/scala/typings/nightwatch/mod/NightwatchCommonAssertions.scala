@@ -3,10 +3,10 @@ package typings.nightwatch.mod
 import typings.nightwatch.anon.AwaitableNightwatchAPINigAcceptAlert
 import typings.nightwatch.anon.AwaitableNightwatchAPINigActions
 import typings.nightwatch.anon.AwaitableNightwatchAPINigAssert
+import typings.nightwatch.anon.AwaitableNightwatchAPINigAxeInject
+import typings.nightwatch.anon.AwaitableNightwatchAPINigAxeRun
 import typings.nightwatch.anon.AwaitableNightwatchAPINigBack
 import typings.nightwatch.anon.AwaitableNightwatchAPINigBaseUrl
-import typings.nightwatch.anon.AwaitableNightwatchAPINigBrowserName
-import typings.nightwatch.anon.AwaitableNightwatchAPINigCaptureBrowserConsoleLogs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,8 +154,8 @@ trait NightwatchCommonAssertions extends StObject {
     *
     * @deprecated In favour of `assert.not.elementPresent()`.
     */
-  def elementNotPresent(selector: Definition): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
-  def elementNotPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
+  def elementNotPresent(selector: Definition): AwaitableNightwatchAPINigBaseUrl = js.native
+  def elementNotPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigBaseUrl = js.native
   
   /**
     * Checks if the given element exists in the DOM.
@@ -166,8 +166,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def elementPresent(selector: Definition): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
-  def elementPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigCaptureBrowserConsoleLogs = js.native
+  def elementPresent(selector: Definition): AwaitableNightwatchAPINigBaseUrl = js.native
+  def elementPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigBaseUrl = js.native
   
   /**
     * Checks if the number of elements specified by a selector is equal to a given value.
@@ -180,8 +180,8 @@ trait NightwatchCommonAssertions extends StObject {
     * }
     *
     */
-  def elementsCount(selector: Definition, count: Double): AwaitableNightwatchAPINigBrowserName = js.native
-  def elementsCount(selector: Definition, count: Double, msg: String): AwaitableNightwatchAPINigBrowserName = js.native
+  def elementsCount(selector: Definition, count: Double): AwaitableNightwatchAPINigBack = js.native
+  def elementsCount(selector: Definition, count: Double, msg: String): AwaitableNightwatchAPINigBack = js.native
   
   /**
     * Checks if the given element is enabled (as indicated by the 'disabled' attribute).
@@ -193,8 +193,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    browser.assert.enabled({selector: '.should_be_enabled', suppressNotFoundErrors: true});
     *  };
     */
-  def enabled(selector: Definition): AwaitableNightwatchAPINigBack = js.native
-  def enabled(selector: Definition, message: String): AwaitableNightwatchAPINigBack = js.native
+  def enabled(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
+  def enabled(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject = js.native
   
   /**
     * Checks if the given element contains the specified DOM attribute.
@@ -210,8 +210,8 @@ trait NightwatchCommonAssertions extends StObject {
     * ```
     *
     */
-  def hasAttribute(selector: Definition, expectedAttribute: String): AwaitableNightwatchAPINigBaseUrl = js.native
-  def hasAttribute(selector: Definition, expectedAttribute: String, msg: String): AwaitableNightwatchAPINigBaseUrl = js.native
+  def hasAttribute(selector: Definition, expectedAttribute: String): AwaitableNightwatchAPINigAxeRun = js.native
+  def hasAttribute(selector: Definition, expectedAttribute: String, msg: String): AwaitableNightwatchAPINigAxeRun = js.native
   
   /**
     * Checks if the given element has the specified CSS class.
@@ -245,8 +245,8 @@ trait NightwatchCommonAssertions extends StObject {
     *
     * @deprecated In favour of `assert.not.visible()`.
     */
-  def hidden(selector: Definition): AwaitableNightwatchAPINigBack = js.native
-  def hidden(selector: Definition, msg: String): AwaitableNightwatchAPINigBack = js.native
+  def hidden(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
+  def hidden(selector: Definition, msg: String): AwaitableNightwatchAPINigAxeInject = js.native
   
   /**
     * Checks if the given element is selected.
@@ -258,8 +258,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    browser.assert.selected({selector: '.should_be_selected', suppressNotFoundErrors: true});
     *  };
     */
-  def selected(selector: Definition): AwaitableNightwatchAPINigBack = js.native
-  def selected(selector: Definition, message: String): AwaitableNightwatchAPINigBack = js.native
+  def selected(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
+  def selected(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject = js.native
   
   /**
     * Checks if the given element contains the specified text.
@@ -453,6 +453,6 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def visible(selector: Definition): AwaitableNightwatchAPINigBack = js.native
-  def visible(selector: Definition, message: String): AwaitableNightwatchAPINigBack = js.native
+  def visible(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
+  def visible(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject = js.native
 }

@@ -19,7 +19,7 @@ object Private {
     body: BlockStatement_,
     key: PrivateName_,
     kind: get | set | method_,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): typings.babelTypes.libMod.ClassPrivateMethod_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])

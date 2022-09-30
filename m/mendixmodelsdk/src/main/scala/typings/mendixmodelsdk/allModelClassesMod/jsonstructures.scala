@@ -20,9 +20,9 @@ object jsonstructures {
   /**
     * In version 6.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonElement")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonElement")
   @js.native
-  class JsonElement protected ()
+  open class JsonElement protected ()
     extends typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement {
     def this(
       model: AbstractModel,
@@ -35,7 +35,7 @@ object jsonstructures {
   }
   object JsonElement {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonElement")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonElement")
     @js.native
     val ^ : js.Any = js.native
     
@@ -70,13 +70,13 @@ object jsonstructures {
     inline def createInJsonStructureUnderElements(container: typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonElement.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonElement.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonElement.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonElement.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.jsonstructuresMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.jsonstructuresMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -88,9 +88,9 @@ object jsonstructures {
     * In version 6.6.0: removed experimental
     * In version 6.2.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonStructure")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonStructure")
   @js.native
-  class JsonStructure protected ()
+  open class JsonStructure protected ()
     extends typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure {
     def this(
       model: AbstractModel,
@@ -102,7 +102,7 @@ object jsonstructures {
   }
   object JsonStructure {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonStructure")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonStructure")
     @js.native
     val ^ : js.Any = js.native
     
@@ -114,13 +114,13 @@ object jsonstructures {
     inline def createIn(container: IFolderBase): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonStructure.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonStructure.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "jsonstructures.JsonStructure.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "jsonstructures.JsonStructure.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.jsonstructuresMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.jsonstructuresMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

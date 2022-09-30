@@ -15,18 +15,18 @@ object fieldsMod {
   
   @JSImport("redux-form/lib/Fields", "Fields")
   @js.native
-  class Fields[P] protected () extends GenericFields[P] {
+  open class Fields[P] protected () extends GenericFields[P] {
     def this(props: BaseFieldsProps[P] & P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BaseFieldsProps[P] & P, context: js.Any) = this()
+    def this(props: BaseFieldsProps[P] & P, context: Any) = this()
   }
   
   trait BaseFieldsProps[P] extends StObject {
     
-    var component: js.UndefOr[ComponentType[js.Any]] = js.undefined
+    var component: js.UndefOr[ComponentType[Any]] = js.undefined
     
     var format: js.UndefOr[Formatter | Null] = js.undefined
     
@@ -51,11 +51,11 @@ object fieldsMod {
     
     extension [Self <: BaseFieldsProps[?], P](x: Self & BaseFieldsProps[P]) {
       
-      inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setFormat(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (/* value */ Any, /* name */ String) => Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
       inline def setFormatNull: Self = StObject.set(x, "format", null)
       
@@ -67,9 +67,9 @@ object fieldsMod {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
-      inline def setParse(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (/* value */ Any, /* name */ String) => Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
@@ -80,22 +80,22 @@ object fieldsMod {
       inline def setValidate(value: FieldsWarnerOrValidator): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       inline def setValidateFunction4(
-        value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
+        value: (/* value */ Any, /* allValues */ js.UndefOr[Any], /* props */ js.UndefOr[Any], /* name */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value*))
       
       inline def setWarn(value: FieldsWarnerOrValidator): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
       inline def setWarnFunction4(
-        value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
+        value: (/* value */ Any, /* allValues */ js.UndefOr[Any], /* props */ js.UndefOr[Any], /* name */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "warn", js.Any.fromFunction4(value))
       
       inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value*))
     }
   }
   
@@ -103,17 +103,17 @@ object fieldsMod {
   
   @js.native
   trait GenericFields[P]
-    extends Component[BaseFieldsProps[P] & P, js.Object, js.Any] {
+    extends Component[BaseFieldsProps[P] & P, js.Object, Any] {
     
     var dirty: Boolean = js.native
     
-    def getRenderedComponent(): Component[BaseFieldsProps[js.Object] & WrappedFieldsProps & P, js.Object, js.Any] = js.native
+    def getRenderedComponent(): Component[BaseFieldsProps[js.Object] & WrappedFieldsProps & P, js.Object, Any] = js.native
     
     var names: js.Array[String] = js.native
     
     var pristine: Boolean = js.native
     
-    var values: StringDictionary[js.Any] = js.native
+    var values: StringDictionary[Any] = js.native
   }
   
   trait WrappedFieldsProps

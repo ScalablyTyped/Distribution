@@ -30,6 +30,11 @@ trait ICodeActionParameter
     */
   val description: String = js.native
   
+  /**
+    * In version 9.17.0: introduced
+    */
+  val isRequired: Boolean = js.native
+  
   @JSName("model")
   val model_ICodeActionParameter: IModel = js.native
   

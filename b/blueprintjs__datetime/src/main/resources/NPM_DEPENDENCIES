@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/datetime" : "4.3.12"
+      "@blueprintjs/datetime" : "4.3.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/datetime" : "4.3.12"
+      "@blueprintjs/datetime" : "4.3.13"
     }
   ],
   "compile-devDependencies" : [

@@ -8,7 +8,7 @@ trait TimingConfig extends StObject {
   
   var duration: Adaptable[Double]
   
-  var easing: EasingFunction
+  var easing: EasingNodeFunction
   
   var toValue: Adaptable[Double]
 }
@@ -27,12 +27,12 @@ object TimingConfig {
     
     inline def setDuration(value: Adaptable[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setDurationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "duration", js.Array(value :_*))
+    inline def setDurationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "duration", js.Array(value*))
     
     inline def setEasing(value: /* value */ Adaptable[Double] => AnimatedNode[Double]): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
     inline def setToValue(value: Adaptable[Double]): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
     
-    inline def setToValueVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "toValue", js.Array(value :_*))
+    inline def setToValueVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "toValue", js.Array(value*))
   }
 }

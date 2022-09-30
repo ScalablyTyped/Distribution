@@ -14,6 +14,6 @@ object reshapeMod {
   
   inline def default(shape: Double*): NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(shape.asInstanceOf[Seq[js.Any]]*).asInstanceOf[NDArray]
   
-  inline def reshape(x: ArrayLike[Any], shape: Double*): NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NDArray]
-  inline def reshape(x: NDArray, shape: Double*): NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NDArray]
+  inline def reshape(x: ArrayLike[Any], shape: Double*): NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(scala.List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NDArray]
+  inline def reshape(x: NDArray, shape: Double*): NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(scala.List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NDArray]
 }

@@ -1,7 +1,7 @@
 package typings.hmacBlake2b
 
-import typings.hmacBlake2b.hmacBlake2bNumbers.`128`
-import typings.hmacBlake2b.hmacBlake2bNumbers.`64`
+import typings.hmacBlake2b.hmacBlake2bInts.`128`
+import typings.hmacBlake2b.hmacBlake2bInts.`64`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

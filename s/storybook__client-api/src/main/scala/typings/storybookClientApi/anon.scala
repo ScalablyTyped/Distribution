@@ -1,125 +1,86 @@
 package typings.storybookClientApi
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Pick
-import typings.storybookAddons.typesMod.Args
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookAddons.typesMod.LegacyStoryFn
-import typings.storybookAddons.typesMod.Parameters
-import typings.storybookAddons.typesMod.StoryKind
-import typings.storybookAddons.typesMod.StoryName
-import typings.storybookClientApi.storyStoreMod.default
-import typings.storybookClientApi.typesMod.ErrorLike
+import typings.std.Record
 import typings.storybookClientApi.typesMod._StorySpecifier
+import typings.storybookStore.ts39TypesMod.ModuleExports
+import typings.storybookStore.ts39TypesMod.ModuleImportFn
+import typings.storybookStore.ts39TypesMod.Path
+import typings.storybookStore.ts39TypesMod.PromiseLike
+import typings.storybookStore.ts39TypesMod.StoryIndexEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Channel extends StObject {
+  trait GlobalTypes extends StObject {
     
-    var channel: typings.storybookChannels.mod.Channel
+    var globalTypes: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalTypes */ Any
+      ] = js.undefined
+    
+    var globals: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Globals */ Any
+      ] = js.undefined
   }
-  object Channel {
+  object GlobalTypes {
     
-    inline def apply(channel: typings.storybookChannels.mod.Channel): Channel = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Channel]
+    inline def apply(): GlobalTypes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GlobalTypes]
     }
     
-    extension [Self <: Channel](x: Self) {
+    extension [Self <: GlobalTypes](x: Self) {
       
-      inline def setChannel(value: typings.storybookChannels.mod.Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setGlobalTypes(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalTypes */ Any
+      ): Self = StObject.set(x, "globalTypes", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalTypesUndefined: Self = StObject.set(x, "globalTypes", js.undefined)
+      
+      inline def setGlobals(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Globals */ Any
+      ): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     }
   }
   
-  trait Description extends StObject {
+  trait Globals extends StObject {
     
-    var description: String
-    
-    var title: String
+    var globals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
   }
-  object Description {
-    
-    inline def apply(description: String, title: String): Description = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Description]
-    }
-    
-    extension [Self <: Description](x: Self) {
-      
-      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-      
-      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Error extends StObject {
-    
-    var error: ErrorLike
-    
-    var globalParameters: Parameters
-    
-    var globals: Args
-    
-    var kindParameters: StringDictionary[Parameters]
-    
-    var v: Double
-  }
-  object Error {
+  object Globals {
     
     inline def apply(
-      error: ErrorLike,
-      globalParameters: Parameters,
-      globals: Args,
-      kindParameters: StringDictionary[Parameters],
-      v: Double
-    ): Error = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], globalParameters = globalParameters.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], kindParameters = kindParameters.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Error]
+      globals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+    ): Globals = {
+      val __obj = js.Dynamic.literal(globals = globals.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Globals]
     }
     
-    extension [Self <: Error](x: Self) {
+    extension [Self <: Globals](x: Self) {
       
-      inline def setError(value: ErrorLike): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setGlobalParameters(value: Parameters): Self = StObject.set(x, "globalParameters", value.asInstanceOf[js.Any])
-      
-      inline def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
-      
-      inline def setKindParameters(value: StringDictionary[Parameters]): Self = StObject.set(x, "kindParameters", value.asInstanceOf[js.Any])
-      
-      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setGlobals(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+      ): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     }
   }
   
-  trait GlobalParameters extends StObject {
+  trait ImportFn extends StObject {
     
-    var globalParameters: Pick[Parameters, String]
-    
-    var kindParameters: StringDictionary[Pick[Parameters, String]]
-    
-    var v: Double
+    var importFn: ModuleImportFn
   }
-  object GlobalParameters {
+  object ImportFn {
     
-    inline def apply(
-      globalParameters: Pick[Parameters, String],
-      kindParameters: StringDictionary[Pick[Parameters, String]],
-      v: Double
-    ): GlobalParameters = {
-      val __obj = js.Dynamic.literal(globalParameters = globalParameters.asInstanceOf[js.Any], kindParameters = kindParameters.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GlobalParameters]
+    inline def apply(importFn: /* path */ Path => PromiseLike[ModuleExports]): ImportFn = {
+      val __obj = js.Dynamic.literal(importFn = js.Any.fromFunction1(importFn))
+      __obj.asInstanceOf[ImportFn]
     }
     
-    extension [Self <: GlobalParameters](x: Self) {
+    extension [Self <: ImportFn](x: Self) {
       
-      inline def setGlobalParameters(value: Pick[Parameters, String]): Self = StObject.set(x, "globalParameters", value.asInstanceOf[js.Any])
-      
-      inline def setKindParameters(value: StringDictionary[Pick[Parameters, String]]): Self = StObject.set(x, "kindParameters", value.asInstanceOf[js.Any])
-      
-      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setImportFn(value: /* path */ Path => PromiseLike[ModuleExports]): Self = StObject.set(x, "importFn", js.Any.fromFunction1(value))
     }
   }
   
@@ -127,89 +88,69 @@ object anon {
     extends StObject
        with _StorySpecifier {
     
-    var kind: StoryKind
+    var kind: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any
     
-    var name: StoryName
+    var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any
   }
   object Kind {
     
-    inline def apply(kind: StoryKind, name: StoryName): Kind = {
+    inline def apply(
+      kind: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any,
+      name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any
+    ): Kind = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Kind]
     }
     
     extension [Self <: Kind](x: Self) {
       
-      inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any
+      ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any
+      ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined @storybook/client-api.@storybook/client-api/dist/story_store.StoryOptions & {  normalizeParameters :boolean | undefined} */
-  trait StoryOptionsnormalizePara extends StObject {
+  trait Stories extends StObject {
     
-    var includeDocsOnly: js.UndefOr[Boolean] = js.undefined
+    var stories: Record[String, StoryIndexEntry]
     
-    var normalizeParameters: js.UndefOr[Boolean] = js.undefined
+    var v: Double
   }
-  object StoryOptionsnormalizePara {
+  object Stories {
     
-    inline def apply(): StoryOptionsnormalizePara = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StoryOptionsnormalizePara]
+    inline def apply(stories: Record[String, StoryIndexEntry], v: Double): Stories = {
+      val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Stories]
     }
     
-    extension [Self <: StoryOptionsnormalizePara](x: Self) {
+    extension [Self <: Stories](x: Self) {
       
-      inline def setIncludeDocsOnly(value: Boolean): Self = StObject.set(x, "includeDocsOnly", value.asInstanceOf[js.Any])
+      inline def setStories(value: Record[String, StoryIndexEntry]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
-      inline def setIncludeDocsOnlyUndefined: Self = StObject.set(x, "includeDocsOnly", js.undefined)
-      
-      inline def setNormalizeParameters(value: Boolean): Self = StObject.set(x, "normalizeParameters", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizeParametersUndefined: Self = StObject.set(x, "normalizeParameters", js.undefined)
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
-  trait StoryStore extends StObject {
+  trait StoryStore[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] extends StObject {
     
-    var storyStore: default
+    var storyStore: js.UndefOr[typings.storybookStore.mod.StoryStore[TFramework]] = js.undefined
   }
   object StoryStore {
     
-    inline def apply(storyStore: default): StoryStore = {
-      val __obj = js.Dynamic.literal(storyStore = storyStore.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StoryStore]
+    inline def apply[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](): StoryStore[TFramework] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StoryStore[TFramework]]
     }
     
-    extension [Self <: StoryStore](x: Self) {
+    extension [Self <: StoryStore[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & StoryStore[TFramework]) {
       
-      inline def setStoryStore(value: default): Self = StObject.set(x, "storyStore", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined {applyDecorators (fn : @storybook/addons.@storybook/addons.LegacyStoryFn<unknown>, decorators : std.Array<@storybook/client-api.@storybook/client-api/dist/types.DecoratorFunction<unknown>>): any} & @storybook/client-api.@storybook/client-api/dist/story_store.AllowUnsafeOption */
-  trait applyDecoratorsfnLegacySt extends StObject {
-    
-    var allowUnsafe: js.UndefOr[Boolean] = js.undefined
-    
-    def applyDecorators(fn: LegacyStoryFn[js.Any], decorators: js.Array[DecoratorFunction[js.Any]]): js.Any
-  }
-  object applyDecoratorsfnLegacySt {
-    
-    inline def apply(applyDecorators: (LegacyStoryFn[js.Any], js.Array[DecoratorFunction[js.Any]]) => js.Any): applyDecoratorsfnLegacySt = {
-      val __obj = js.Dynamic.literal(applyDecorators = js.Any.fromFunction2(applyDecorators))
-      __obj.asInstanceOf[applyDecoratorsfnLegacySt]
-    }
-    
-    extension [Self <: applyDecoratorsfnLegacySt](x: Self) {
+      inline def setStoryStore(value: typings.storybookStore.mod.StoryStore[TFramework]): Self = StObject.set(x, "storyStore", value.asInstanceOf[js.Any])
       
-      inline def setAllowUnsafe(value: Boolean): Self = StObject.set(x, "allowUnsafe", value.asInstanceOf[js.Any])
-      
-      inline def setAllowUnsafeUndefined: Self = StObject.set(x, "allowUnsafe", js.undefined)
-      
-      inline def setApplyDecorators(value: (LegacyStoryFn[js.Any], js.Array[DecoratorFunction[js.Any]]) => js.Any): Self = StObject.set(x, "applyDecorators", js.Any.fromFunction2(value))
+      inline def setStoryStoreUndefined: Self = StObject.set(x, "storyStore", js.undefined)
     }
   }
 }

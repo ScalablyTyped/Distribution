@@ -1,9 +1,9 @@
 package typings.sharp.mod
 
-import typings.sharp.sharpNumbers.`1`
-import typings.sharp.sharpNumbers.`2`
-import typings.sharp.sharpNumbers.`3`
-import typings.sharp.sharpNumbers.`4`
+import typings.sharp.sharpInts.`1`
+import typings.sharp.sharpInts.`2`
+import typings.sharp.sharpInts.`3`
+import typings.sharp.sharpInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

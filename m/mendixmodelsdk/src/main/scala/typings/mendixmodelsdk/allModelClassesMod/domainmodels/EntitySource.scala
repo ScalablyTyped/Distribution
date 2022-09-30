@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.10.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntitySource")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntitySource")
 @js.native
 abstract class EntitySource protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntitySource {
@@ -28,18 +28,18 @@ abstract class EntitySource protected ()
 }
 object EntitySource {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntitySource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntitySource")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntitySource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntitySource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntitySource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntitySource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

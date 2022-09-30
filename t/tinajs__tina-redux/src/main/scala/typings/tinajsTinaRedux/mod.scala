@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("@tinajs/tina-redux", JSImport.Namespace)
   @js.native
-  class ^[S, A /* <: Action[js.Any] */] protected ()
+  open class ^[S, A /* <: Action[Any] */] protected ()
     extends StObject
        with TinaRedux[S, A] {
     def this(reduxStore: Store[S, A]) = this()
@@ -43,10 +43,10 @@ object mod {
     }
   }
   
-  type MapStateToProps = js.Function1[/* state */ js.Any, js.Any]
+  type MapStateToProps = js.Function1[/* state */ Any, Any]
   
   @js.native
-  trait TinaRedux[S, A /* <: Action[js.Any] */] extends StObject {
+  trait TinaRedux[S, A /* <: Action[Any] */] extends StObject {
     
     def connect(): HOC = js.native
     def connect(mapState: Unit, mapDispatch: mapDispatchToProps): HOC = js.native
@@ -54,5 +54,5 @@ object mod {
     def connect(mapState: MapStateToProps, mapDispatch: mapDispatchToProps): HOC = js.native
   }
   
-  type mapDispatchToProps = js.Function1[/* dispatch */ Dispatch[AnyAction], js.Any]
+  type mapDispatchToProps = js.Function1[/* dispatch */ Dispatch[AnyAction], Any]
 }

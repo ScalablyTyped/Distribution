@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
 import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
+import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined icon, serviceName, version, endpointId, minimumMxVersion, recommendedMxVersion, applicationId, environmentType */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined icon, serviceName, version, endpointId, minimumMxVersion, recommendedMxVersion, applicationId, environmentType, metadataHash, validated, validatedEntities */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument")
 @js.native
 abstract class RemoteEntitySourceDocument protected () extends Document {
   def this(
@@ -101,6 +102,17 @@ abstract class RemoteEntitySourceDocument protected () extends Document {
   
   def metadata: String = js.native
   
+  /**
+    * In version 8.16.0: introduced
+    */
+  def metadataHash: String = js.native
+  def metadataHash_=(newValue: String): Unit = js.native
+  /**
+    * In version 8.16.0: introduced
+    */
+  @JSName("metadataHash")
+  val metadataHash_FRemoteEntitySourceDocument: String = js.native
+  
   def metadataUrl: String = js.native
   def metadataUrl_=(newValue: String): Unit = js.native
   
@@ -142,6 +154,28 @@ abstract class RemoteEntitySourceDocument protected () extends Document {
   val serviceName_FRemoteEntitySourceDocument: String = js.native
   
   /**
+    * In version 9.6.0: introduced
+    */
+  def validated: Boolean = js.native
+  
+  /**
+    * In version 9.8.0: introduced
+    */
+  def validatedEntities: IList[String] = js.native
+  /**
+    * In version 9.8.0: introduced
+    */
+  @JSName("validatedEntities")
+  val validatedEntities_FRemoteEntitySourceDocument: IList[String] = js.native
+  
+  def validated_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 9.6.0: introduced
+    */
+  @JSName("validated")
+  val validated_FRemoteEntitySourceDocument: Boolean = js.native
+  
+  /**
     * In version 8.10.0: added public
     * In version 8.0.0: introduced
     */
@@ -156,18 +190,18 @@ abstract class RemoteEntitySourceDocument protected () extends Document {
 }
 object RemoteEntitySourceDocument {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteEntitySourceDocument.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

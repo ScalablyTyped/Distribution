@@ -8,11 +8,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide/published-app-services relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide8/published-app-services relevant section in reference guide}
+  *
+  * In version 9.0.2: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedAppService")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.PublishedAppService")
 @js.native
-class PublishedAppService protected ()
+open class PublishedAppService protected ()
   extends typings.mendixmodelsdk.webservicesMod.webservices.PublishedAppService {
   def this(
     model: AbstractModel,
@@ -24,7 +26,7 @@ class PublishedAppService protected ()
 }
 object PublishedAppService {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedAppService")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.PublishedAppService")
   @js.native
   val ^ : js.Any = js.native
   
@@ -36,13 +38,13 @@ object PublishedAppService {
   inline def createIn(container: IFolderBase): typings.mendixmodelsdk.webservicesMod.webservices.PublishedAppService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.PublishedAppService]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedAppService.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.PublishedAppService.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedAppService.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.PublishedAppService.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

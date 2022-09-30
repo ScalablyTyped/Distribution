@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`1`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`2`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`1`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

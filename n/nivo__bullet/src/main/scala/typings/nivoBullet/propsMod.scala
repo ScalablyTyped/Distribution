@@ -3,10 +3,10 @@ package typings.nivoBullet
 import typings.nivoBullet.anon.From
 import typings.nivoBullet.nivoBulletBooleans.`false`
 import typings.nivoBullet.nivoBulletBooleans.`true`
-import typings.nivoBullet.nivoBulletNumbers.`0.4`
-import typings.nivoBullet.nivoBulletNumbers.`0.6`
-import typings.nivoBullet.nivoBulletNumbers.`0`
-import typings.nivoBullet.nivoBulletNumbers.`30`
+import typings.nivoBullet.nivoBulletDoubles.`0.4`
+import typings.nivoBullet.nivoBulletDoubles.`0.6`
+import typings.nivoBullet.nivoBulletInts.`0`
+import typings.nivoBullet.nivoBulletInts.`30`
 import typings.nivoBullet.nivoBulletStrings.after
 import typings.nivoBullet.nivoBulletStrings.auto
 import typings.nivoBullet.nivoBulletStrings.before

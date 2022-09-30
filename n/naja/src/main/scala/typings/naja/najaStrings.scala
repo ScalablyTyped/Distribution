@@ -60,6 +60,10 @@ object najaStrings {
   inline def off: off = "off".asInstanceOf[off]
   
   @js.native
+  sealed trait payload extends StObject
+  inline def payload: payload = "payload".asInstanceOf[payload]
+  
+  @js.native
   sealed trait redirect extends StObject
   inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   

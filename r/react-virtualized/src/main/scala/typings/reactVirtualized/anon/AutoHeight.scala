@@ -4,9 +4,9 @@ import typings.reactVirtualized.esGridMod.OverscanIndices
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetterParams
 import typings.reactVirtualized.reactVirtualizedBooleans.`false`
-import typings.reactVirtualized.reactVirtualizedNumbers.`-1`
-import typings.reactVirtualized.reactVirtualizedNumbers.`10`
-import typings.reactVirtualized.reactVirtualizedNumbers.`30`
+import typings.reactVirtualized.reactVirtualizedInts.`-1`
+import typings.reactVirtualized.reactVirtualizedInts.`10`
+import typings.reactVirtualized.reactVirtualizedInts.`30`
 import typings.reactVirtualized.reactVirtualizedStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

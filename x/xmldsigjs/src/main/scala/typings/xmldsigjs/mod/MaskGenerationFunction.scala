@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "MaskGenerationFunction")
 @js.native
-class MaskGenerationFunction ()
+open class MaskGenerationFunction ()
   extends typings.xmldsigjs.keyInfosMod.MaskGenerationFunction {
   def this(properties: js.Object) = this()
 }

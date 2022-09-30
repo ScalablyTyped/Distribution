@@ -1,7 +1,6 @@
 package typings.themeUiColorModes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.emotionSerialize.mod.CSSObject
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,10 +19,10 @@ object customPropertiesMod {
     ]
   ): Record[String, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("__createColorProperties")(colors.asInstanceOf[js.Any], modes.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Object]]
   
-  inline def createColorStyles(): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("__createColorStyles")().asInstanceOf[CSSObject]
+  inline def createColorStyles(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__createColorStyles")().asInstanceOf[Any]
   inline def createColorStyles(
     theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ Any
-  ): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("__createColorStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__createColorStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def objectToVars(parent: String, obj: Record[String, Any]): Record[String, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("__objectToVars")(parent.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Object]]
   

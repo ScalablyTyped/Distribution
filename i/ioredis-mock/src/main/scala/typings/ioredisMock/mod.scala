@@ -67,7 +67,7 @@ object mod {
       @JSImport("ioredis-mock", "default.default.Cluster")
       @js.native
       open class Cluster protected ()
-        extends typings.ioredis.mod.default.Cluster {
+        extends typings.ioredis.clusterMod.default {
         /**
           * Creates an instance of Cluster.
           */
@@ -94,43 +94,6 @@ object mod {
             ]
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cluster")(x.asInstanceOf[js.Any])
       
-      /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-      @JSImport("ioredis-mock", "default.default.Command")
-      @js.native
-      open class Command protected ()
-        extends typings.ioredis.mod.default.Command {
-        /**
-          * Creates an instance of Command.
-          * @param name Command name
-          * @param args An array of command arguments
-          * @param options
-          * @param callback The callback that handles the response.
-          * If omit, the response will be handled via Promise
-          */
-        def this(name: String) = this()
-        def this(name: String, args: js.Array[ArgumentType]) = this()
-        def this(name: String, args: js.Array[ArgumentType], options: CommandOptions) = this()
-        def this(name: String, args: Unit, options: CommandOptions) = this()
-        def this(
-          name: String,
-          args: js.Array[ArgumentType],
-          options: Unit,
-          callback: typings.ioredis.builtTypesMod.Callback[Any]
-        ) = this()
-        def this(
-          name: String,
-          args: js.Array[ArgumentType],
-          options: CommandOptions,
-          callback: typings.ioredis.builtTypesMod.Callback[Any]
-        ) = this()
-        def this(name: String, args: Unit, options: Unit, callback: typings.ioredis.builtTypesMod.Callback[Any]) = this()
-        def this(
-          name: String,
-          args: Unit,
-          options: CommandOptions,
-          callback: typings.ioredis.builtTypesMod.Callback[Any]
-        ) = this()
-      }
       /* static member */
       /* was `typeof Command` */
       object Command {
@@ -356,7 +319,7 @@ object mod {
       @JSImport("ioredis-mock", "default.Redis.Cluster")
       @js.native
       open class Cluster protected ()
-        extends typings.ioredis.mod.Redis.Cluster {
+        extends typings.ioredis.clusterMod.default {
         /**
           * Creates an instance of Cluster.
           */
@@ -383,43 +346,6 @@ object mod {
             ]
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cluster")(x.asInstanceOf[js.Any])
       
-      /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-      @JSImport("ioredis-mock", "default.Redis.Command")
-      @js.native
-      open class Command protected ()
-        extends typings.ioredis.mod.Redis.Command {
-        /**
-          * Creates an instance of Command.
-          * @param name Command name
-          * @param args An array of command arguments
-          * @param options
-          * @param callback The callback that handles the response.
-          * If omit, the response will be handled via Promise
-          */
-        def this(name: String) = this()
-        def this(name: String, args: js.Array[ArgumentType]) = this()
-        def this(name: String, args: js.Array[ArgumentType], options: CommandOptions) = this()
-        def this(name: String, args: Unit, options: CommandOptions) = this()
-        def this(
-          name: String,
-          args: js.Array[ArgumentType],
-          options: Unit,
-          callback: typings.ioredis.builtTypesMod.Callback[Any]
-        ) = this()
-        def this(
-          name: String,
-          args: js.Array[ArgumentType],
-          options: CommandOptions,
-          callback: typings.ioredis.builtTypesMod.Callback[Any]
-        ) = this()
-        def this(name: String, args: Unit, options: Unit, callback: typings.ioredis.builtTypesMod.Callback[Any]) = this()
-        def this(
-          name: String,
-          args: Unit,
-          options: CommandOptions,
-          callback: typings.ioredis.builtTypesMod.Callback[Any]
-        ) = this()
-      }
       /* static member */
       /* was `typeof Command` */
       object Command {

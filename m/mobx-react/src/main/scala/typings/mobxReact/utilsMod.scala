@@ -16,9 +16,9 @@ object utilsMod {
   
   inline def patch(target: js.Object, methodName: String, mixinMethod: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], mixinMethod.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setHiddenProp(target: js.Object, prop: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHiddenProp")(target.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setHiddenProp(target: js.Object, prop: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHiddenProp")(target.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def shallowEqual(objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shallowEqual(objA: Any, objB: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in string ]: any} */ trait Mixins extends StObject {
@@ -40,7 +40,7 @@ object utilsMod {
       
       inline def setMethods(value: js.Array[js.Function]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: js.Function*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: js.Function*): Self = StObject.set(x, "methods", js.Array(value*))
     }
   }
 }

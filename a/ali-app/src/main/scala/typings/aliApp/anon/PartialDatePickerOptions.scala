@@ -1,6 +1,6 @@
 package typings.aliApp.anon
 
-import typings.aliApp.aliAppNumbers.`11`
+import typings.aliApp.aliAppInts.`11`
 import typings.aliApp.aliAppStrings.HHColonmm
 import typings.aliApp.aliAppStrings.`yyyy-MM-dd HHColonmm`
 import typings.aliApp.aliAppStrings.`yyyy-MM-dd`

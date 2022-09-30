@@ -1,35 +1,39 @@
 package typings.storybookReact
 
 import typings.react.mod.ComponentType
-import typings.storybookAddons.typesMod.Annotations
-import typings.storybookAddons.typesMod.BaseMeta
-import typings.storybookAddons.typesMod.BaseStory
-import typings.storybookReact.typesMod.StoryFnReactReturnType
+import typings.storybookReact.previewTypesMod.StoryFnReactReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object types60Mod {
   
-  trait Meta[Args]
-    extends StObject
-       with BaseMeta[ReactComponent]
-       with Annotations[Args, ReactReturnType]
-  object Meta {
+  type Meta[TArgs] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentAnnotations<ReactFramework, TArgs> */ Any
+  
+  trait ReactFramework extends StObject {
     
-    inline def apply[Args](title: String): Meta[Args] = {
-      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Meta[Args]]
+    var component: ComponentType[Any]
+    
+    var storyResult: StoryFnReactReturnType
+  }
+  object ReactFramework {
+    
+    inline def apply(component: ComponentType[Any], storyResult: StoryFnReactReturnType): ReactFramework = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], storyResult = storyResult.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReactFramework]
+    }
+    
+    extension [Self <: ReactFramework](x: Self) {
+      
+      inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setStoryResult(value: StoryFnReactReturnType): Self = StObject.set(x, "storyResult", value.asInstanceOf[js.Any])
     }
   }
   
-  type ReactComponent = ComponentType[js.Any]
+  type Story[TArgs] = StoryFn[TArgs]
   
-  type ReactReturnType = StoryFnReactReturnType
+  type StoryFn[TArgs] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnnotatedStoryFn<ReactFramework, TArgs> */ Any
   
-  @js.native
-  trait Story[Args]
-    extends StObject
-       with BaseStory[Args, ReactReturnType]
-       with Annotations[Args, ReactReturnType]
+  type StoryObj[TArgs] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryAnnotations<ReactFramework, TArgs> */ Any
 }

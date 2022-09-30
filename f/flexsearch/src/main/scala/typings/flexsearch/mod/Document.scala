@@ -60,9 +60,9 @@ open class Document[T, Store /* <: StoreOption */] protected () extends StObject
   ): js.Promise[this.type] = js.native
   
   @JSName("search")
-  def search_Enrich_Boolean_DocumentSearchResult[Enrich /* <: Boolean */](query: String): DocumentSearchResult[T, Store, Enrich] = js.native
+  def search_Enrich_DocumentSearchResult[Enrich /* <: Boolean */](query: String): DocumentSearchResult[T, Store, Enrich] = js.native
   @JSName("search")
-  def search_Enrich_Boolean_DocumentSearchResult[Enrich /* <: Boolean */](query: String, limit: Double): DocumentSearchResult[T, Store, Enrich] = js.native
+  def search_Enrich_DocumentSearchResult[Enrich /* <: Boolean */](query: String, limit: Double): DocumentSearchResult[T, Store, Enrich] = js.native
   
   def update(document: T): this.type = js.native
   def update(id: Id, document: T): this.type = js.native

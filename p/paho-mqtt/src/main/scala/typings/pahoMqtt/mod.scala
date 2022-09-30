@@ -1,8 +1,8 @@
 package typings.pahoMqtt
 
 import typings.pahoMqtt.mod.global.Paho.MQTT.TypedArray
-import typings.pahoMqtt.pahoMqttNumbers.`3`
-import typings.pahoMqtt.pahoMqttNumbers.`4`
+import typings.pahoMqtt.pahoMqttInts.`3`
+import typings.pahoMqtt.pahoMqttInts.`4`
 import typings.pahoMqtt.pahoMqttStrings.Debug
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -660,18 +660,18 @@ object mod {
           * </dl>
           */
         /* Rewritten from type alias, can be one of: 
-          - typings.pahoMqtt.pahoMqttNumbers.`0`
-          - typings.pahoMqtt.pahoMqttNumbers.`1`
-          - typings.pahoMqtt.pahoMqttNumbers.`2`
+          - typings.pahoMqtt.pahoMqttInts.`0`
+          - typings.pahoMqtt.pahoMqttInts.`1`
+          - typings.pahoMqtt.pahoMqttInts.`2`
         */
         trait Qos extends StObject
         object Qos {
           
-          inline def `0`: typings.pahoMqtt.pahoMqttNumbers.`0` = 0.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`0`]
+          inline def `0`: typings.pahoMqtt.pahoMqttInts.`0` = 0.asInstanceOf[typings.pahoMqtt.pahoMqttInts.`0`]
           
-          inline def `1`: typings.pahoMqtt.pahoMqttNumbers.`1` = 1.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`1`]
+          inline def `1`: typings.pahoMqtt.pahoMqttInts.`1` = 1.asInstanceOf[typings.pahoMqtt.pahoMqttInts.`1`]
           
-          inline def `2`: typings.pahoMqtt.pahoMqttNumbers.`2` = 2.asInstanceOf[typings.pahoMqtt.pahoMqttNumbers.`2`]
+          inline def `2`: typings.pahoMqtt.pahoMqttInts.`2` = 2.asInstanceOf[typings.pahoMqtt.pahoMqttInts.`2`]
         }
         
         /**

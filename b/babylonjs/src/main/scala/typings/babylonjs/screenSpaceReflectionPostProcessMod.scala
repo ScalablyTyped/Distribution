@@ -120,11 +120,7 @@ object screenSpaceReflectionPostProcessMod {
     val ^ : js.Any = js.native
     
     /**
-      * @param parsedPostProcess
-      * @param targetCamera
-      * @param scene
-      * @param rootUrl
-      * @hidden
+      * @internal
       */
     inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): ScreenSpaceReflectionPostProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ScreenSpaceReflectionPostProcess]
   }

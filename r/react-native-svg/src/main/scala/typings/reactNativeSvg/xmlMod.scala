@@ -78,8 +78,8 @@ object xmlMod {
   
   inline def camelCase(phrase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(phrase.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def err(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def err(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def err(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def err(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def fetchText(uri: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchText")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   

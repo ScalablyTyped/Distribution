@@ -1,7 +1,5 @@
 package typings.polished.anon
 
-import typings.polished.polishedStrings.BackslashRightparenthesis
-import typings.polished.polishedStrings.Rightparenthesis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +8,9 @@ trait Postfix extends StObject {
   
   var postfix: NotationPrecedence
   
-  var regSymbol: BackslashRightparenthesis
+  var regSymbol: String
   
-  var symbol: Rightparenthesis
+  var symbol: String
 }
 object Postfix {
   
@@ -25,8 +23,8 @@ object Postfix {
     
     inline def setPostfix(value: NotationPrecedence): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: BackslashRightparenthesis): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

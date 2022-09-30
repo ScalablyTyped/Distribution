@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__scale
 
-Typings are for version 0.4.10
+Typings are for version 0.4.11
 
 ## Library description:
 Toolkit for mapping abstract data into visual representation.

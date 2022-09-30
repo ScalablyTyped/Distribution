@@ -36,7 +36,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.AggregateFunctionEnum")
   @js.native
-  class AggregateFunctionEnum protected ()
+  open class AggregateFunctionEnum protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.AggregateFunctionEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -79,7 +79,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.AspectRatio")
   @js.native
-  class AspectRatio protected ()
+  open class AspectRatio protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.AspectRatio {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -137,7 +137,7 @@ object reports {
     */
   @JSImport("mendixmodelsdk", "reports.BasicReport")
   @js.native
-  class BasicReport protected ()
+  open class BasicReport protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.BasicReport {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -738,7 +738,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.BasicReportAggregate")
   @js.native
-  class BasicReportAggregate protected ()
+  open class BasicReportAggregate protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.BasicReportAggregate {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -786,7 +786,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.BasicReportColumn")
   @js.native
-  class BasicReportColumn protected ()
+  open class BasicReportColumn protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.BasicReportColumn {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -834,7 +834,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.ChartType")
   @js.native
-  class ChartType protected ()
+  open class ChartType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ChartType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -878,7 +878,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.ColumnFormat")
   @js.native
-  class ColumnFormat protected ()
+  open class ColumnFormat protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ColumnFormat {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -909,7 +909,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.DateRangeFieldEnum")
   @js.native
-  class DateRangeFieldEnum protected ()
+  open class DateRangeFieldEnum protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.DateRangeFieldEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -955,7 +955,7 @@ object reports {
     */
   @JSImport("mendixmodelsdk", "reports.ReportButton")
   @js.native
-  class ReportButton protected ()
+  open class ReportButton protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportButton {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1556,10 +1556,12 @@ object reports {
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/report-chart relevant document}
+    *
+    * In version 9.0.1: deleted
     */
   @JSImport("mendixmodelsdk", "reports.ReportChart")
   @js.native
-  class ReportChart protected ()
+  open class ReportChart protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportChart {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1601,7 +1603,7 @@ object reports {
       * of the parent pages.BuildingBlock element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1623,7 +1625,7 @@ object reports {
       * of the parent pages.DataView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInDataViewUnderFooterWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1645,7 +1647,7 @@ object reports {
       * of the parent pages.DataView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInDataViewUnderWidgets(container: DataView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1667,7 +1669,7 @@ object reports {
       * of the parent pages.DivContainer element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInDivContainerUnderWidgets(container: DivContainer): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1689,7 +1691,7 @@ object reports {
       * of the parent pages.GroupBox element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInGroupBoxUnderWidgets(container: GroupBox): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1711,7 +1713,7 @@ object reports {
       * of the parent pages.Header element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInHeaderUnderLeftWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1733,7 +1735,7 @@ object reports {
       * of the parent pages.Header element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInHeaderUnderRightWidgets(container: Header): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1755,7 +1757,7 @@ object reports {
       * of the parent pages.LayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1777,7 +1779,7 @@ object reports {
       * of the parent pages.LayoutGridColumn element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1821,7 +1823,7 @@ object reports {
       * of the parent pages.ListViewTemplate element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1843,7 +1845,7 @@ object reports {
       * of the parent pages.ListView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInListViewUnderWidgets(container: ListView): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1876,7 +1878,7 @@ object reports {
       * of the parent pages.NativeLayoutContent element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  8.5.0 and higher
+      *  8.5.0 to 9.0.0
       */
     /* static member */
     inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1887,7 +1889,7 @@ object reports {
       * of the parent pages.NativeLayoutContent element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  8.0.0 and higher
+      *  8.0.0 to 9.0.0
       */
     /* static member */
     inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1931,7 +1933,7 @@ object reports {
       * of the parent pages.NavigationListItem element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1975,7 +1977,7 @@ object reports {
       * of the parent pages.ScrollContainerRegion element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -1997,7 +1999,7 @@ object reports {
       * of the parent pages.Snippet element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInSnippetUnderWidgets(container: Snippet): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -2063,7 +2065,7 @@ object reports {
       * of the parent pages.TabPage element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInTabPageUnderWidgets(container: TabPage): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -2085,7 +2087,7 @@ object reports {
       * of the parent pages.TableCell element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInTableCellUnderWidgets(container: TableCell): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -2107,7 +2109,7 @@ object reports {
       * of the parent pages.TemplateGridContents element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 9.0.0
       */
     /* static member */
     inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -2129,7 +2131,7 @@ object reports {
       * of the parent pages.WebLayoutContent element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  8.0.0 and higher
+      *  8.0.0 to 9.0.0
       */
     /* static member */
     inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -2140,7 +2142,7 @@ object reports {
       * of the parent customwidgets.WidgetValue element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  8.2.0 and higher
+      *  8.2.0 to 9.0.0
       */
     /* static member */
     inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.reportsMod.reports.ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChart]
@@ -2158,9 +2160,12 @@ object reports {
     inline def versionInfo_=(x: typings.mendixmodelsdk.reportsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * In version 9.0.1: deleted
+    */
   @JSImport("mendixmodelsdk", "reports.ReportChartSeries")
   @js.native
-  class ReportChartSeries protected ()
+  open class ReportChartSeries protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportChartSeries {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -2189,6 +2194,9 @@ object reports {
       * Creates and returns a new ReportChartSeries instance in the SDK and on the server.
       * The new ReportChartSeries will be automatically stored in the 'seriess' property
       * of the parent ReportChart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 9.0.0
       */
     /* static member */
     inline def createIn(container: typings.mendixmodelsdk.reportsMod.reports.ReportChart): typings.mendixmodelsdk.reportsMod.reports.ReportChartSeries = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.reportsMod.reports.ReportChartSeries]
@@ -2211,7 +2219,7 @@ object reports {
     */
   @JSImport("mendixmodelsdk", "reports.ReportDateRangeField")
   @js.native
-  class ReportDateRangeField protected ()
+  open class ReportDateRangeField protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportDateRangeField {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -2262,7 +2270,7 @@ object reports {
     */
   @JSImport("mendixmodelsdk", "reports.ReportDateRangeSelector")
   @js.native
-  class ReportDateRangeSelector protected ()
+  open class ReportDateRangeSelector protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportDateRangeSelector {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -2866,7 +2874,7 @@ object reports {
     */
   @JSImport("mendixmodelsdk", "reports.ReportDropDown")
   @js.native
-  class ReportDropDown protected ()
+  open class ReportDropDown protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportDropDown {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -3472,7 +3480,7 @@ object reports {
     */
   @JSImport("mendixmodelsdk", "reports.ReportPane")
   @js.native
-  class ReportPane protected ()
+  open class ReportPane protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportPane {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -3824,7 +3832,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.ReportZoomInfo")
   @js.native
-  class ReportZoomInfo protected ()
+  open class ReportZoomInfo protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportZoomInfo {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -3872,7 +3880,7 @@ object reports {
   
   @JSImport("mendixmodelsdk", "reports.ReportZoomMapping")
   @js.native
-  class ReportZoomMapping protected ()
+  open class ReportZoomMapping protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.reports.ReportZoomMapping {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

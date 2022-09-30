@@ -6,7 +6,6 @@ import typings.googleCloudTextToSpeech.mod.google.protobuf.DescriptorProto.IRese
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DescriptorProto.
   * @param [properties] Properties to set
   */
-class DescriptorProto ()
+open class DescriptorProto ()
   extends StObject
      with IDescriptorProto {
   def this(properties: IDescriptorProto) = this()
@@ -63,7 +62,7 @@ class DescriptorProto ()
     * Converts this DescriptorProto to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object DescriptorProto {
   
@@ -78,7 +77,7 @@ object DescriptorProto {
     * Constructs a new ExtensionRange.
     * @param [properties] Properties to set
     */
-  class ExtensionRange ()
+  open class ExtensionRange ()
     extends StObject
        with IExtensionRange {
     def this(properties: IExtensionRange) = this()
@@ -95,7 +94,7 @@ object DescriptorProto {
       * Converts this ExtensionRange to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object ExtensionRange {
     
@@ -112,6 +111,8 @@ object DescriptorProto {
     inline def create(): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExtensionRange]
     inline def create(properties: IExtensionRange): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     
+    inline def decode(reader: js.typedarray.Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExtensionRange]
     /**
       * Decodes an ExtensionRange message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -123,9 +124,8 @@ object DescriptorProto {
     /* static member */
     inline def decode(reader: Reader): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     inline def decode(reader: Reader, length: Double): ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExtensionRange]
-    inline def decode(reader: Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
-    inline def decode(reader: Uint8Array, length: Double): ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExtensionRange]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     /**
       * Decodes an ExtensionRange message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -135,7 +135,6 @@ object DescriptorProto {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
-    inline def decodeDelimited(reader: Uint8Array): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
     
     /**
       * Encodes the specified ExtensionRange message. Does not implicitly {@link google.protobuf.DescriptorProto.ExtensionRange.verify|verify} messages.
@@ -163,7 +162,16 @@ object DescriptorProto {
       * @returns ExtensionRange
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
+    inline def fromObject(`object`: StringDictionary[Any]): ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExtensionRange]
+    
+    /**
+      * Gets the default type url for ExtensionRange
+      * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+      * @returns The default type url
+      */
+    /* static member */
+    inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+    inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Creates a plain object from an ExtensionRange message. Also converts values to other types if specified.
@@ -172,8 +180,8 @@ object DescriptorProto {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: ExtensionRange): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: ExtensionRange, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: ExtensionRange): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: ExtensionRange, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an ExtensionRange message.
@@ -181,7 +189,7 @@ object DescriptorProto {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ReservedRange. */
@@ -191,7 +199,7 @@ object DescriptorProto {
     * Constructs a new ReservedRange.
     * @param [properties] Properties to set
     */
-  class ReservedRange ()
+  open class ReservedRange ()
     extends StObject
        with IReservedRange {
     def this(properties: IReservedRange) = this()
@@ -208,7 +216,7 @@ object DescriptorProto {
       * Converts this ReservedRange to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object ReservedRange {
     
@@ -225,6 +233,8 @@ object DescriptorProto {
     inline def create(): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ReservedRange]
     inline def create(properties: IReservedRange): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     
+    inline def decode(reader: js.typedarray.Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ReservedRange]
     /**
       * Decodes a ReservedRange message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -236,9 +246,8 @@ object DescriptorProto {
     /* static member */
     inline def decode(reader: Reader): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     inline def decode(reader: Reader, length: Double): ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ReservedRange]
-    inline def decode(reader: Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
-    inline def decode(reader: Uint8Array, length: Double): ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ReservedRange]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     /**
       * Decodes a ReservedRange message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -248,7 +257,6 @@ object DescriptorProto {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
-    inline def decodeDelimited(reader: Uint8Array): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
     
     /**
       * Encodes the specified ReservedRange message. Does not implicitly {@link google.protobuf.DescriptorProto.ReservedRange.verify|verify} messages.
@@ -276,7 +284,16 @@ object DescriptorProto {
       * @returns ReservedRange
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
+    inline def fromObject(`object`: StringDictionary[Any]): ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ReservedRange]
+    
+    /**
+      * Gets the default type url for ReservedRange
+      * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+      * @returns The default type url
+      */
+    /* static member */
+    inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+    inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Creates a plain object from a ReservedRange message. Also converts values to other types if specified.
@@ -285,8 +302,8 @@ object DescriptorProto {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: ReservedRange): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: ReservedRange, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: ReservedRange): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: ReservedRange, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ReservedRange message.
@@ -294,7 +311,7 @@ object DescriptorProto {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -306,6 +323,8 @@ object DescriptorProto {
   inline def create(): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DescriptorProto]
   inline def create(properties: IDescriptorProto): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   
+  inline def decode(reader: js.typedarray.Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DescriptorProto]
   /**
     * Decodes a DescriptorProto message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -317,9 +336,8 @@ object DescriptorProto {
   /* static member */
   inline def decode(reader: Reader): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   inline def decode(reader: Reader, length: Double): DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DescriptorProto]
-  inline def decode(reader: Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
-  inline def decode(reader: Uint8Array, length: Double): DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DescriptorProto]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   /**
     * Decodes a DescriptorProto message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -329,7 +347,6 @@ object DescriptorProto {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
-  inline def decodeDelimited(reader: Uint8Array): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
   
   /**
     * Encodes the specified DescriptorProto message. Does not implicitly {@link google.protobuf.DescriptorProto.verify|verify} messages.
@@ -357,7 +374,16 @@ object DescriptorProto {
     * @returns DescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
+  inline def fromObject(`object`: StringDictionary[Any]): DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DescriptorProto]
+  
+  /**
+    * Gets the default type url for DescriptorProto
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a DescriptorProto message. Also converts values to other types if specified.
@@ -366,8 +392,8 @@ object DescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: DescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: DescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: DescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: DescriptorProto, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a DescriptorProto message.
@@ -375,7 +401,7 @@ object DescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an ExtensionRange. */
   trait IExtensionRange extends StObject {

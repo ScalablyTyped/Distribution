@@ -23,7 +23,7 @@ object mod {
   
   inline def simpleDecode(signature: String, data: Buffer): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleDecode")(signature.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def simpleEncode(signature: String, args: Any*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleEncode")(List(signature.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Buffer]
+  inline def simpleEncode(signature: String, args: Any*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleEncode")(scala.List(signature.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Buffer]
   
   inline def solidityPack(types: js.Array[String], values: js.Array[Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("solidityPack")(types.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   

@@ -12,9 +12,9 @@ object withFocusReturnMod {
   val ^ : js.Any = js.native
   
   // prettier-ignore
-  inline def default(options: WFROptions): js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def default(options: WFROptions): js.Function1[/* wrapped */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[Any], ComponentType[Any]]]
   // prettier-ignore
-  inline def default[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def default[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
   
   @JSImport("@wordpress/components/higher-order/with-focus-return", "Provider")
   @js.native

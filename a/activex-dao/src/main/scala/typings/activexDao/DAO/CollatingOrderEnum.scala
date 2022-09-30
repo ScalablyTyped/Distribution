@@ -1,58 +1,58 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`-1`
-import typings.activexDao.activexDaoNumbers.`1024`
-import typings.activexDao.activexDaoNumbers.`1025`
-import typings.activexDao.activexDaoNumbers.`1028`
-import typings.activexDao.activexDaoNumbers.`1029`
-import typings.activexDao.activexDaoNumbers.`1030`
-import typings.activexDao.activexDaoNumbers.`1032`
-import typings.activexDao.activexDaoNumbers.`1033`
-import typings.activexDao.activexDaoNumbers.`1034`
-import typings.activexDao.activexDaoNumbers.`1037`
-import typings.activexDao.activexDaoNumbers.`1038`
-import typings.activexDao.activexDaoNumbers.`1039`
-import typings.activexDao.activexDaoNumbers.`1041`
-import typings.activexDao.activexDaoNumbers.`1042`
-import typings.activexDao.activexDaoNumbers.`1043`
-import typings.activexDao.activexDaoNumbers.`1045`
-import typings.activexDao.activexDaoNumbers.`1049`
-import typings.activexDao.activexDaoNumbers.`1053`
-import typings.activexDao.activexDaoNumbers.`1054`
-import typings.activexDao.activexDaoNumbers.`1055`
-import typings.activexDao.activexDaoNumbers.`1060`
-import typings.activexDao.activexDaoNumbers.`1081`
-import typings.activexDao.activexDaoNumbers.`2052`
-import typings.activexDao.activexDaoNumbers.`263185`
+import typings.activexDao.activexDaoInts.`-1`
+import typings.activexDao.activexDaoInts.`1024`
+import typings.activexDao.activexDaoInts.`1025`
+import typings.activexDao.activexDaoInts.`1028`
+import typings.activexDao.activexDaoInts.`1029`
+import typings.activexDao.activexDaoInts.`1030`
+import typings.activexDao.activexDaoInts.`1032`
+import typings.activexDao.activexDaoInts.`1033`
+import typings.activexDao.activexDaoInts.`1034`
+import typings.activexDao.activexDaoInts.`1037`
+import typings.activexDao.activexDaoInts.`1038`
+import typings.activexDao.activexDaoInts.`1039`
+import typings.activexDao.activexDaoInts.`1041`
+import typings.activexDao.activexDaoInts.`1042`
+import typings.activexDao.activexDaoInts.`1043`
+import typings.activexDao.activexDaoInts.`1045`
+import typings.activexDao.activexDaoInts.`1049`
+import typings.activexDao.activexDaoInts.`1053`
+import typings.activexDao.activexDaoInts.`1054`
+import typings.activexDao.activexDaoInts.`1055`
+import typings.activexDao.activexDaoInts.`1060`
+import typings.activexDao.activexDaoInts.`1081`
+import typings.activexDao.activexDaoInts.`2052`
+import typings.activexDao.activexDaoInts.`263185`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`1025`
-  - typings.activexDao.activexDaoNumbers.`2052`
-  - typings.activexDao.activexDaoNumbers.`1028`
-  - typings.activexDao.activexDaoNumbers.`1049`
-  - typings.activexDao.activexDaoNumbers.`1029`
-  - typings.activexDao.activexDaoNumbers.`1043`
-  - typings.activexDao.activexDaoNumbers.`1033`
-  - typings.activexDao.activexDaoNumbers.`1032`
-  - typings.activexDao.activexDaoNumbers.`1037`
-  - typings.activexDao.activexDaoNumbers.`1081`
-  - typings.activexDao.activexDaoNumbers.`1038`
-  - typings.activexDao.activexDaoNumbers.`1039`
-  - typings.activexDao.activexDaoNumbers.`1041`
-  - typings.activexDao.activexDaoNumbers.`263185`
-  - typings.activexDao.activexDaoNumbers.`1042`
-  - typings.activexDao.activexDaoNumbers.`1024`
-  - typings.activexDao.activexDaoNumbers.`1030`
-  - typings.activexDao.activexDaoNumbers.`1053`
-  - typings.activexDao.activexDaoNumbers.`1045`
-  - typings.activexDao.activexDaoNumbers.`1060`
-  - typings.activexDao.activexDaoNumbers.`1034`
-  - typings.activexDao.activexDaoNumbers.`1054`
-  - typings.activexDao.activexDaoNumbers.`1055`
-  - typings.activexDao.activexDaoNumbers.`-1`
+  - typings.activexDao.activexDaoInts.`1025`
+  - typings.activexDao.activexDaoInts.`2052`
+  - typings.activexDao.activexDaoInts.`1028`
+  - typings.activexDao.activexDaoInts.`1049`
+  - typings.activexDao.activexDaoInts.`1029`
+  - typings.activexDao.activexDaoInts.`1043`
+  - typings.activexDao.activexDaoInts.`1033`
+  - typings.activexDao.activexDaoInts.`1032`
+  - typings.activexDao.activexDaoInts.`1037`
+  - typings.activexDao.activexDaoInts.`1081`
+  - typings.activexDao.activexDaoInts.`1038`
+  - typings.activexDao.activexDaoInts.`1039`
+  - typings.activexDao.activexDaoInts.`1041`
+  - typings.activexDao.activexDaoInts.`263185`
+  - typings.activexDao.activexDaoInts.`1042`
+  - typings.activexDao.activexDaoInts.`1024`
+  - typings.activexDao.activexDaoInts.`1030`
+  - typings.activexDao.activexDaoInts.`1053`
+  - typings.activexDao.activexDaoInts.`1045`
+  - typings.activexDao.activexDaoInts.`1060`
+  - typings.activexDao.activexDaoInts.`1034`
+  - typings.activexDao.activexDaoInts.`1054`
+  - typings.activexDao.activexDaoInts.`1055`
+  - typings.activexDao.activexDaoInts.`-1`
 */
 trait CollatingOrderEnum extends StObject
 object CollatingOrderEnum {

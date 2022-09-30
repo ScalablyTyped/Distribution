@@ -1,6 +1,6 @@
 package typings.thenRequest
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.promise.mod.ThenPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object responsePromiseMod {
   
   @JSImport("then-request/lib/ResponsePromise", "ResponsePromise")
   @js.native
-  class ResponsePromise ()
+  open class ResponsePromise ()
     extends StObject
        with ThenPromise[typings.httpResponseObject.mod.^[Buffer | String]] {
     

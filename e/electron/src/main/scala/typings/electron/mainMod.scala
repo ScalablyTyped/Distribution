@@ -1,32 +1,45 @@
 package typings.electron
 
-import typings.electron.Electron.App
+import typings.electron.Electron.Accelerator
 import typings.electron.Electron.AutoResizeOptions
-import typings.electron.Electron.AutoUpdater
-import typings.electron.Electron.ContentTracing
-import typings.electron.Electron.Dialog
-import typings.electron.Electron.GlobalShortcut
-import typings.electron.Electron.InAppPurchase
-import typings.electron.Electron.IpcMain
-import typings.electron.Electron.NativeImage_
-import typings.electron.Electron.NativeTheme
-import typings.electron.Electron.Net
-import typings.electron.Electron.NetLog
-import typings.electron.Electron.PowerMonitor
-import typings.electron.Electron.PowerSaveBlocker
-import typings.electron.Electron.Protocol
+import typings.electron.Electron.FromPartitionOptions
+import typings.electron.Electron.Main.App
+import typings.electron.Electron.Main.AutoUpdater
+import typings.electron.Electron.Main.ContentTracing
+import typings.electron.Electron.Main.DesktopCapturer
+import typings.electron.Electron.Main.Dialog
+import typings.electron.Electron.Main.GlobalShortcut
+import typings.electron.Electron.Main.InAppPurchase
+import typings.electron.Electron.Main.IpcMain
+import typings.electron.Electron.Main.NativeTheme
+import typings.electron.Electron.Main.Net
+import typings.electron.Electron.Main.NetLog
+import typings.electron.Electron.Main.PowerMonitor
+import typings.electron.Electron.Main.PowerSaveBlocker
+import typings.electron.Electron.Main.Protocol
+import typings.electron.Electron.Main.PushNotifications
+import typings.electron.Electron.Main.SafeStorage
+import typings.electron.Electron.Main.Screen
+import typings.electron.Electron.Main.SystemPreferences
 import typings.electron.Electron.Rectangle
-import typings.electron.Electron.Screen
-import typings.electron.Electron.SystemPreferences
+import typings.electron.Electron.Session_
+import typings.electron.Electron.SharingItem
+import typings.electron.Electron.TouchBarButton
+import typings.electron.Electron.TouchBarColorPicker
+import typings.electron.Electron.TouchBarGroup
+import typings.electron.Electron.TouchBarLabel
+import typings.electron.Electron.TouchBarPopover
+import typings.electron.Electron.TouchBarScrubber
+import typings.electron.Electron.TouchBarSegmentedControl
+import typings.electron.Electron.TouchBarSlider
+import typings.electron.Electron.TouchBarSpacer
+import typings.electron.Electron.WebContents_
+import typings.electron.Electron.WebFrameMain_
 import typings.electron.electronStrings.checkbox
-import typings.electron.electronStrings.left
 import typings.electron.electronStrings.normal
-import typings.electron.electronStrings.overlay
 import typings.electron.electronStrings.radio
-import typings.electron.electronStrings.right
 import typings.electron.electronStrings.separator
 import typings.electron.electronStrings.submenu
-import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +48,7 @@ object mainMod {
   
   @JSImport("electron/main", "BrowserView")
   @js.native
-  class BrowserView ()
+  open class BrowserView ()
     extends StObject
        with typings.electron.Electron.BrowserView {
     
@@ -50,6 +63,36 @@ object mainMod {
     /* CompleteClass */
     override def setAutoResize(options: AutoResizeOptions): Unit = js.native
     
+    /**
+      * Examples of valid `color` values:
+      *
+      * * Hex
+      *   * #fff (RGB)
+      *   * #ffff (ARGB)
+      *   * #ffffff (RRGGBB)
+      *   * #ffffffff (AARRGGBB)
+      * * RGB
+      *   * rgb(([\d]+),\s*([\d]+),\s*([\d]+))
+      *     * e.g. rgb(255, 255, 255)
+      * * RGBA
+      *   * rgba(([\d]+),\s*([\d]+),\s*([\d]+),\s*([\d.]+))
+      *     * e.g. rgba(255, 255, 255, 1.0)
+      * * HSL
+      *   * hsl((-?[\d.]+),\s*([\d.]+)%,\s*([\d.]+)%)
+      *     * e.g. hsl(200, 20%, 50%)
+      * * HSLA
+      *   * hsla((-?[\d.]+),\s*([\d.]+)%,\s*([\d.]+)%,\s*([\d.]+))
+      *     * e.g. hsla(200, 20%, 50%, 0.5)
+      * * Color name
+      *   * Options are listed in SkParseColor.cpp
+      *   * Similar to CSS Color Module Level 3 keywords, but case-sensitive.
+      *     * e.g. `blueviolet` or `red`
+      *
+      * **Note:** Hex format with alpha takes `AARRGGBB` or `ARGB`, _not_ `RRGGBBA` or
+      * `RGA`.
+      *
+      * @experimental
+      */
     /* CompleteClass */
     override def setBackgroundColor(color: String): Unit = js.native
     
@@ -61,219 +104,186 @@ object mainMod {
     /* CompleteClass */
     override def setBounds(bounds: Rectangle): Unit = js.native
     
+    /**
+      * A `WebContents` object owned by this view.
+      *
+      * @experimental
+      */
     /* CompleteClass */
-    var webContents: typings.electron.Electron.WebContents_ = js.native
+    var webContents: WebContents_ = js.native
   }
   
   @JSImport("electron/main", "BrowserWindow")
   @js.native
-  class BrowserWindow ()
+  open class BrowserWindow ()
     extends typings.electron.Electron.BrowserWindow
-  
-  @JSImport("electron/main", "ClientRequest")
-  @js.native
-  class ClientRequest ()
-    extends typings.electron.Electron.ClientRequest
-  
-  @JSImport("electron/main", "CommandLine")
-  @js.native
-  class CommandLine ()
-    extends StObject
-       with typings.electron.Electron.CommandLine
-  
-  @JSImport("electron/main", "Cookies")
-  @js.native
-  class Cookies ()
-    extends typings.electron.Electron.Cookies
-  
-  @JSImport("electron/main", "Debugger")
-  @js.native
-  class Debugger ()
-    extends typings.electron.Electron.Debugger
-  
-  @JSImport("electron/main", "Dock")
-  @js.native
-  class Dock ()
-    extends StObject
-       with typings.electron.Electron.Dock
-  
-  @JSImport("electron/main", "DownloadItem")
-  @js.native
-  class DownloadItem ()
-    extends typings.electron.Electron.DownloadItem
-  
-  @JSImport("electron/main", "IncomingMessage")
-  @js.native
-  class IncomingMessage ()
-    extends typings.electron.Electron.IncomingMessage
   
   @JSImport("electron/main", "Menu")
   @js.native
-  class Menu ()
+  open class Menu ()
     extends StObject
        with typings.electron.Electron.Menu
   
   @JSImport("electron/main", "MenuItem")
   @js.native
-  class MenuItem ()
+  open class MenuItem ()
     extends StObject
        with typings.electron.Electron.MenuItem {
     
+    /**
+      * A `boolean` indicating whether the item is checked, this property can be
+      * dynamically changed.
+      *
+      * A `checkbox` menu item will toggle the `checked` property on and off when
+      * selected.
+      *
+      * A `radio` menu item will turn on its `checked` property when clicked, and will
+      * turn off that property for all adjacent items in the same menu.
+      *
+      * You can add a `click` function for additional behavior.
+      */
     /* CompleteClass */
     var checked: Boolean = js.native
     
+    /**
+      * A `Function` that is fired when the MenuItem receives a click event. It can be
+      * called with `menuItem.click(event, focusedWindow, focusedWebContents)`.
+      *
+      * * `event` KeyboardEvent
+      * * `focusedWindow` BrowserWindow
+      * * `focusedWebContents` WebContents
+      */
     /* CompleteClass */
     var click: js.Function = js.native
     
+    /**
+      * A `number` indicating an item's sequential unique id.
+      */
     /* CompleteClass */
     var commandId: Double = js.native
     
+    /**
+      * A `boolean` indicating whether the item is enabled, this property can be
+      * dynamically changed.
+      */
     /* CompleteClass */
     var enabled: Boolean = js.native
     
+    /**
+      * A `string` indicating the item's unique id, this property can be dynamically
+      * changed.
+      */
     /* CompleteClass */
     var id: String = js.native
     
+    /**
+      * A `string` indicating the item's visible label.
+      */
     /* CompleteClass */
     var label: String = js.native
     
+    /**
+      * A `Menu` that the item is a part of.
+      */
     /* CompleteClass */
     var menu: typings.electron.Electron.Menu = js.native
     
+    /**
+      * A `boolean` indicating if the accelerator should be registered with the system
+      * or just displayed.
+      *
+      * This property can be dynamically changed.
+      */
     /* CompleteClass */
     var registerAccelerator: Boolean = js.native
     
+    /**
+      * A `SharingItem` indicating the item to share when the `role` is `shareMenu`.
+      *
+      * This property can be dynamically changed.
+      *
+      * @platform darwin
+      */
+    /* CompleteClass */
+    var sharingItem: SharingItem = js.native
+    
+    /**
+      * A `string` indicating the item's sublabel.
+      */
     /* CompleteClass */
     var sublabel: String = js.native
     
+    /**
+      * A `string` indicating the item's hover text.
+      *
+      * @platform darwin
+      */
     /* CompleteClass */
     var toolTip: String = js.native
     
+    /**
+      * A `string` indicating the type of the item. Can be `normal`, `separator`,
+      * `submenu`, `checkbox` or `radio`.
+      */
     /* CompleteClass */
     var `type`: normal | separator | submenu | checkbox | radio = js.native
     
+    /**
+      * An `Accelerator | null` indicating the item's user-assigned accelerator for the
+      * menu item.
+      *
+      * **Note:** This property is only initialized after the `MenuItem` has been added
+      * to a `Menu`. Either via `Menu.buildFromTemplate` or via
+      * `Menu.append()/insert()`.  Accessing before initialization will just return
+      * `null`.
+      *
+      * @platform darwin
+      */
+    /* CompleteClass */
+    override val userAccelerator: Accelerator | Null = js.native
+    
+    /**
+      * A `boolean` indicating whether the item is visible, this property can be
+      * dynamically changed.
+      */
     /* CompleteClass */
     var visible: Boolean = js.native
   }
   
   @JSImport("electron/main", "MessageChannelMain")
   @js.native
-  class MessageChannelMain ()
+  open class MessageChannelMain ()
     extends typings.electron.Electron.MessageChannelMain
-  
-  @JSImport("electron/main", "MessagePortMain")
-  @js.native
-  class MessagePortMain ()
-    extends typings.electron.Electron.MessagePortMain
   
   @JSImport("electron/main", "Notification")
   @js.native
-  class Notification ()
+  open class Notification ()
     extends typings.electron.Electron.Notification
   
-  @JSImport("electron/main", "ServiceWorkers")
+  @JSImport("electron/main", "ShareMenu")
   @js.native
-  class ServiceWorkers ()
-    extends typings.electron.Electron.ServiceWorkers
-  
-  @JSImport("electron/main", "Session")
-  @js.native
-  class Session_ ()
-    extends typings.electron.Electron.Session_
+  open class ShareMenu ()
+    extends typings.electron.Electron.ShareMenu
   
   @JSImport("electron/main", "TouchBar")
   @js.native
-  class TouchBar ()
+  open class TouchBar ()
     extends StObject
        with typings.electron.Electron.TouchBar {
     
+    /**
+      * A `TouchBarItem` that will replace the "esc" button on the touch bar when set.
+      * Setting to `null` restores the default "esc" button. Changing this value
+      * immediately updates the escape item in the touch bar.
+      */
     /* CompleteClass */
-    var escapeItem: typings.electron.Electron.TouchBarButton | typings.electron.Electron.TouchBarColorPicker | typings.electron.Electron.TouchBarGroup | typings.electron.Electron.TouchBarLabel | typings.electron.Electron.TouchBarPopover | typings.electron.Electron.TouchBarScrubber | typings.electron.Electron.TouchBarSegmentedControl | typings.electron.Electron.TouchBarSlider | typings.electron.Electron.TouchBarSpacer | Null = js.native
+    var escapeItem: TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer | Null = js.native
   }
-  
-  @JSImport("electron/main", "TouchBarButton")
-  @js.native
-  class TouchBarButton ()
-    extends StObject
-       with typings.electron.Electron.TouchBarButton {
-    
-    /* CompleteClass */
-    var accessibilityLabel: String = js.native
-    
-    /* CompleteClass */
-    var backgroundColor: String = js.native
-    
-    /* CompleteClass */
-    var enabled: Boolean = js.native
-    
-    /* CompleteClass */
-    var icon: NativeImage_ = js.native
-    
-    /* CompleteClass */
-    var iconPosition: left | right | overlay = js.native
-    
-    /* CompleteClass */
-    var label: String = js.native
-  }
-  
-  @JSImport("electron/main", "TouchBarColorPicker")
-  @js.native
-  class TouchBarColorPicker ()
-    extends typings.electron.Electron.TouchBarColorPicker
-  
-  @JSImport("electron/main", "TouchBarGroup")
-  @js.native
-  class TouchBarGroup () extends EventEmitter
-  
-  @JSImport("electron/main", "TouchBarLabel")
-  @js.native
-  class TouchBarLabel ()
-    extends typings.electron.Electron.TouchBarLabel
-  
-  @JSImport("electron/main", "TouchBarOtherItemsProxy")
-  @js.native
-  class TouchBarOtherItemsProxy () extends EventEmitter
-  
-  @JSImport("electron/main", "TouchBarPopover")
-  @js.native
-  class TouchBarPopover ()
-    extends typings.electron.Electron.TouchBarPopover
-  
-  @JSImport("electron/main", "TouchBarScrubber")
-  @js.native
-  class TouchBarScrubber ()
-    extends typings.electron.Electron.TouchBarScrubber
-  
-  @JSImport("electron/main", "TouchBarSegmentedControl")
-  @js.native
-  class TouchBarSegmentedControl ()
-    extends typings.electron.Electron.TouchBarSegmentedControl
-  
-  @JSImport("electron/main", "TouchBarSlider")
-  @js.native
-  class TouchBarSlider ()
-    extends typings.electron.Electron.TouchBarSlider
-  
-  @JSImport("electron/main", "TouchBarSpacer")
-  @js.native
-  class TouchBarSpacer ()
-    extends typings.electron.Electron.TouchBarSpacer
   
   @JSImport("electron/main", "Tray")
   @js.native
-  class Tray ()
+  open class Tray ()
     extends typings.electron.Electron.Tray
-  
-  @JSImport("electron/main", "WebContents")
-  @js.native
-  class WebContents_ ()
-    extends typings.electron.Electron.WebContents_
-  
-  @JSImport("electron/main", "WebRequest")
-  @js.native
-  class WebRequest ()
-    extends StObject
-       with typings.electron.Electron.WebRequest
   
   @JSImport("electron/main", "app")
   @js.native
@@ -286,6 +296,10 @@ object mainMod {
   @JSImport("electron/main", "contentTracing")
   @js.native
   val contentTracing: ContentTracing = js.native
+  
+  @JSImport("electron/main", "desktopCapturer")
+  @js.native
+  val desktopCapturer: DesktopCapturer = js.native
   
   @JSImport("electron/main", "dialog")
   @js.native
@@ -327,6 +341,14 @@ object mainMod {
   @js.native
   val protocol: Protocol = js.native
   
+  @JSImport("electron/main", "pushNotifications")
+  @js.native
+  val pushNotifications: PushNotifications = js.native
+  
+  @JSImport("electron/main", "safeStorage")
+  @js.native
+  val safeStorage: SafeStorage = js.native
+  
   @JSImport("electron/main", "screen")
   @js.native
   val screen: Screen = js.native
@@ -334,8 +356,42 @@ object mainMod {
   /* was `typeof Session` */
   @JSImport("electron/main", "session")
   @js.native
-  class session ()
-    extends typings.electron.Electron.Session_
+  open class session () extends Session_
+  /* was `typeof Session` */
+  object session {
+    
+    @JSImport("electron/main", "session")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * A `Session` object, the default session object of the app.
+      */
+    /* static member */
+    @JSImport("electron/main", "session.defaultSession")
+    @js.native
+    def defaultSession: Session_ = js.native
+    inline def defaultSession_=(x: Session_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSession")(x.asInstanceOf[js.Any])
+    
+    // Docs: https://electronjs.org/docs/api/session
+    /**
+      * A session instance from `partition` string. When there is an existing `Session`
+      * with the same `partition`, it will be returned; otherwise a new `Session`
+      * instance will be created with `options`.
+      *
+      * If `partition` starts with `persist:`, the page will use a persistent session
+      * available to all pages in the app with the same `partition`. if there is no
+      * `persist:` prefix, the page will use an in-memory session. If the `partition` is
+      * empty then default session of the app will be returned.
+      *
+      * To create a `Session` with `options`, you have to ensure the `Session` with the
+      * `partition` has never been used before. There is no way to change the `options`
+      * of an existing `Session` object.
+      */
+    /* static member */
+    inline def fromPartition(partition: String): Session_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any]).asInstanceOf[Session_]
+    inline def fromPartition(partition: String, options: FromPartitionOptions): Session_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Session_]
+  }
   
   @JSImport("electron/main", "systemPreferences")
   @js.native
@@ -344,6 +400,64 @@ object mainMod {
   /* was `typeof WebContents` */
   @JSImport("electron/main", "webContents")
   @js.native
-  class webContents ()
-    extends typings.electron.Electron.WebContents_
+  open class webContents () extends WebContents_
+  /* was `typeof WebContents` */
+  object webContents {
+    
+    @JSImport("electron/main", "webContents")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    // Docs: https://electronjs.org/docs/api/web-contents
+    /**
+      * | undefined - A WebContents instance with the given TargetID, or `undefined` if
+      * there is no WebContents associated with the given TargetID.
+      *
+      * When communicating with the Chrome DevTools Protocol, it can be useful to lookup
+      * a WebContents instance based on its assigned TargetID.
+      */
+    /* static member */
+    inline def fromDevToolsTargetId(targetId: String): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[WebContents_]
+    
+    /**
+      * | undefined - A WebContents instance with the given ID, or `undefined` if there
+      * is no WebContents associated with the given ID.
+      */
+    /* static member */
+    inline def fromId(id: Double): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[WebContents_]
+    
+    /**
+      * An array of all `WebContents` instances. This will contain web contents for all
+      * windows, webviews, opened devtools, and devtools extension background pages.
+      */
+    /* static member */
+    inline def getAllWebContents(): js.Array[WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWebContents")().asInstanceOf[js.Array[WebContents_]]
+    
+    /**
+      * | null - The web contents that is focused in this application, otherwise returns
+      * `null`.
+      */
+    /* static member */
+    inline def getFocusedWebContents(): WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[WebContents_]
+  }
+  
+  /* was `typeof WebFrameMain` */
+  @JSImport("electron/main", "webFrameMain")
+  @js.native
+  open class webFrameMain () extends WebFrameMain_
+  /* was `typeof WebFrameMain` */
+  object webFrameMain {
+    
+    @JSImport("electron/main", "webFrameMain")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    // Docs: https://electronjs.org/docs/api/web-frame-main
+    /**
+      * A frame with the given process and routing IDs, or `undefined` if there is no
+      * WebFrameMain associated with the given IDs.
+      */
+    /* static member */
+    inline def fromId(processId: Double, routingId: Double): js.UndefOr[WebFrameMain_] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(processId.asInstanceOf[js.Any], routingId.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WebFrameMain_]]
+  }
 }

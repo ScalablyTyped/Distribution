@@ -1208,16 +1208,7 @@ inline def forceTransformFeedbackToBundle: Boolean = ^.asInstanceOf[js.Dynamic].
 inline def forceTransformFeedbackToBundle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_forceTransformFeedbackToBundle")(x.asInstanceOf[js.Any])
 
 /**
-  * @param header
-  * @param palettes
-  * @param pixel_data
-  * @param y_start
-  * @param y_step
-  * @param y_end
-  * @param x_start
-  * @param x_step
-  * @param x_end
-  * @hidden
+  * @internal
   */
 inline def getImageData16bits(
   header: Any,
@@ -1232,16 +1223,7 @@ inline def getImageData16bits(
 ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_getImageData16bits")(header.asInstanceOf[js.Any], palettes.asInstanceOf[js.Any], pixel_data.asInstanceOf[js.Any], y_start.asInstanceOf[js.Any], y_step.asInstanceOf[js.Any], y_end.asInstanceOf[js.Any], x_start.asInstanceOf[js.Any], x_step.asInstanceOf[js.Any], x_end.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 /**
-  * @param header
-  * @param palettes
-  * @param pixel_data
-  * @param y_start
-  * @param y_step
-  * @param y_end
-  * @param x_start
-  * @param x_step
-  * @param x_end
-  * @hidden
+  * @internal
   */
 inline def getImageData24bits(
   header: Any,
@@ -1256,16 +1238,7 @@ inline def getImageData24bits(
 ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_getImageData24bits")(header.asInstanceOf[js.Any], palettes.asInstanceOf[js.Any], pixel_data.asInstanceOf[js.Any], y_start.asInstanceOf[js.Any], y_step.asInstanceOf[js.Any], y_end.asInstanceOf[js.Any], x_start.asInstanceOf[js.Any], x_step.asInstanceOf[js.Any], x_end.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 /**
-  * @param header
-  * @param palettes
-  * @param pixel_data
-  * @param y_start
-  * @param y_step
-  * @param y_end
-  * @param x_start
-  * @param x_step
-  * @param x_end
-  * @hidden
+  * @internal
   */
 inline def getImageData32bits(
   header: Any,
@@ -1280,16 +1253,7 @@ inline def getImageData32bits(
 ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_getImageData32bits")(header.asInstanceOf[js.Any], palettes.asInstanceOf[js.Any], pixel_data.asInstanceOf[js.Any], y_start.asInstanceOf[js.Any], y_step.asInstanceOf[js.Any], y_end.asInstanceOf[js.Any], x_start.asInstanceOf[js.Any], x_step.asInstanceOf[js.Any], x_end.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 /**
-  * @param header
-  * @param palettes
-  * @param pixel_data
-  * @param y_start
-  * @param y_step
-  * @param y_end
-  * @param x_start
-  * @param x_step
-  * @param x_end
-  * @hidden
+  * @internal
   */
 inline def getImageData8bits(
   header: Any,
@@ -1304,16 +1268,7 @@ inline def getImageData8bits(
 ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_getImageData8bits")(header.asInstanceOf[js.Any], palettes.asInstanceOf[js.Any], pixel_data.asInstanceOf[js.Any], y_start.asInstanceOf[js.Any], y_step.asInstanceOf[js.Any], y_end.asInstanceOf[js.Any], x_start.asInstanceOf[js.Any], x_step.asInstanceOf[js.Any], x_end.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 /**
-  * @param header
-  * @param palettes
-  * @param pixel_data
-  * @param y_start
-  * @param y_step
-  * @param y_end
-  * @param x_start
-  * @param x_step
-  * @param x_end
-  * @hidden
+  * @internal
   */
 inline def getImageDataGrey16bits(
   header: Any,
@@ -1328,16 +1283,7 @@ inline def getImageDataGrey16bits(
 ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("_getImageDataGrey16bits")(header.asInstanceOf[js.Any], palettes.asInstanceOf[js.Any], pixel_data.asInstanceOf[js.Any], y_start.asInstanceOf[js.Any], y_step.asInstanceOf[js.Any], y_end.asInstanceOf[js.Any], x_start.asInstanceOf[js.Any], x_step.asInstanceOf[js.Any], x_end.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 /**
-  * @param header
-  * @param palettes
-  * @param pixel_data
-  * @param y_start
-  * @param y_step
-  * @param y_end
-  * @param x_start
-  * @param x_step
-  * @param x_end
-  * @hidden
+  * @internal
   */
 inline def getImageDataGrey8bits(
   header: Any,

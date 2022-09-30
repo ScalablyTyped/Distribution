@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the collection of {@link Word.Setting} objects.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 trait SettingCollectionLoadOptions extends StObject {
   
@@ -20,11 +19,10 @@ trait SettingCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the key of the setting. Read only.
+    * For EACH ITEM in the collection: Gets the key of the setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var key: js.UndefOr[Boolean] = js.undefined
   
@@ -32,8 +30,7 @@ trait SettingCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets or sets the value of the setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var value: js.UndefOr[Boolean] = js.undefined
 }

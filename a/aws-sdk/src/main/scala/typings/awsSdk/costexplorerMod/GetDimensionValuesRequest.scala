@@ -12,7 +12,7 @@ trait GetDimensionValuesRequest extends StObject {
   var Context: js.UndefOr[typings.awsSdk.costexplorerMod.Context] = js.undefined
   
   /**
-    * The name of the dimension. Each Dimension is available for a different Context. For more information, see Context. 
+    * The name of the dimension. Each Dimension is available for a different Context. For more information, see Context. LINK_ACCOUNT_NAME and SERVICE_CODE can only be used in CostCategoryRule. 
     */
   var Dimension: typings.awsSdk.costexplorerMod.Dimension
   

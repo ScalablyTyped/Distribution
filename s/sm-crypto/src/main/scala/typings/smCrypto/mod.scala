@@ -84,15 +84,15 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.smCrypto.smCryptoNumbers.`0`
-    - typings.smCrypto.smCryptoNumbers.`1`
+    - typings.smCrypto.smCryptoInts.`0`
+    - typings.smCrypto.smCryptoInts.`1`
   */
   trait CipherMode extends StObject
   object CipherMode {
     
-    inline def `0`: typings.smCrypto.smCryptoNumbers.`0` = 0.asInstanceOf[typings.smCrypto.smCryptoNumbers.`0`]
+    inline def `0`: typings.smCrypto.smCryptoInts.`0` = 0.asInstanceOf[typings.smCrypto.smCryptoInts.`0`]
     
-    inline def `1`: typings.smCrypto.smCryptoNumbers.`1` = 1.asInstanceOf[typings.smCrypto.smCryptoNumbers.`1`]
+    inline def `1`: typings.smCrypto.smCryptoInts.`1` = 1.asInstanceOf[typings.smCrypto.smCryptoInts.`1`]
   }
   
   type HexString = String

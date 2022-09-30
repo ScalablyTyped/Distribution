@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.ExclusiveMerge")
 @js.native
-class ExclusiveMerge protected ()
+open class ExclusiveMerge protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ExclusiveMerge {
   def this(
     model: AbstractModel,

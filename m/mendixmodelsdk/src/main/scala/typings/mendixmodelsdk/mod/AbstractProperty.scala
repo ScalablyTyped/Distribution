@@ -24,6 +24,6 @@ abstract class AbstractProperty[T, P] protected ()
     parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: T,
-    moreArgs: js.Any*
+    moreArgs: Any*
   ) = this()
 }

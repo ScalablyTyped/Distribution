@@ -63,11 +63,11 @@ object mod {
       * History list
       * List is Immutable.List<>
       */
-    var history: js.Any
+    var history: Any
   }
   object OptimisticState {
     
-    inline def apply[TState](beforeState: TState, current: TState, history: js.Any): OptimisticState[TState] = {
+    inline def apply[TState](beforeState: TState, current: TState, history: Any): OptimisticState[TState] = {
       val __obj = js.Dynamic.literal(beforeState = beforeState.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptimisticState[TState]]
     }
@@ -78,7 +78,7 @@ object mod {
       
       inline def setCurrent(value: TState): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      inline def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     }
   }
 }

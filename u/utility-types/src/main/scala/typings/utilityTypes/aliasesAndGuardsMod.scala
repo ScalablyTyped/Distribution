@@ -17,7 +17,7 @@ object aliasesAndGuardsMod {
   /* Rewritten from type alias, can be one of: 
     - typings.utilityTypes.utilityTypesBooleans.`false`
     - typings.utilityTypes.utilityTypesStrings._empty
-    - typings.utilityTypes.utilityTypesNumbers.`0`
+    - typings.utilityTypes.utilityTypesInts.`0`
     - scala.Null
     - scala.Unit
   */

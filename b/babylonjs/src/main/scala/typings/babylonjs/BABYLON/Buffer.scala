@@ -9,21 +9,21 @@ trait Buffer extends StObject {
   
   /* private */ var _buffer: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _data: Nullable[DataArray] = js.native
   
   /* private */ var _divisor: Any = js.native
   
   /* private */ var _engine: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _increaseReferences(): Unit = js.native
   
   /* private */ var _instanced: Any = js.native
   
   /* private */ var _isAlreadyOwned: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _rebuild(): Unit = js.native
   
   /* private */ var _updatable: Any = js.native

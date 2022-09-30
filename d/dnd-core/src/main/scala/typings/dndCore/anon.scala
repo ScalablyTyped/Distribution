@@ -25,7 +25,7 @@ object anon {
       
       inline def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
       
-      inline def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
+      inline def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value*))
     }
   }
   
@@ -71,11 +71,11 @@ object anon {
   
   trait DropResult extends StObject {
     
-    var dropResult: js.Any
+    var dropResult: Any
     
     var isSourcePublic: Boolean
     
-    var item: js.Any
+    var item: Any
     
     var itemType: Identifier | js.Array[Identifier]
     
@@ -88,9 +88,9 @@ object anon {
   object DropResult {
     
     inline def apply(
-      dropResult: js.Any,
+      dropResult: Any,
       isSourcePublic: Boolean,
-      item: js.Any,
+      item: Any,
       itemType: Identifier | js.Array[Identifier],
       sourceId: String,
       targetId: String,
@@ -102,15 +102,15 @@ object anon {
     
     extension [Self <: DropResult](x: Self) {
       
-      inline def setDropResult(value: js.Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
+      inline def setDropResult(value: Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
       
       inline def setIsSourcePublic(value: Boolean): Self = StObject.set(x, "isSourcePublic", value.asInstanceOf[js.Any])
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemType(value: Identifier | js.Array[Identifier]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      inline def setItemTypeVarargs(value: Identifier*): Self = StObject.set(x, "itemType", js.Array(value :_*))
+      inline def setItemTypeVarargs(value: Identifier*): Self = StObject.set(x, "itemType", js.Array(value*))
       
       inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
       
@@ -118,7 +118,7 @@ object anon {
       
       inline def setTargetIds(value: js.Array[String]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
       
-      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value*))
     }
   }
   
@@ -139,7 +139,7 @@ object anon {
       
       inline def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
       
-      inline def setHandlerIdsVarargs(value: String*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
+      inline def setHandlerIdsVarargs(value: String*): Self = StObject.set(x, "handlerIds", js.Array(value*))
     }
   }
   

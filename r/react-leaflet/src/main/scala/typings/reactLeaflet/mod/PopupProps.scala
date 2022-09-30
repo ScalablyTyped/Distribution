@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.DivOverlayOptions because Already inherited
 - typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typings.reactLeaflet.mod.DivOverlayProps because var conflicts: className, offset, pane, zoomAnimation. Inlined children, onClose, onOpen */ trait PopupProps
+- typings.reactLeaflet.mod.DivOverlayProps because var conflicts: className, interactive, offset, pane. Inlined children, onClose, onOpen */ trait PopupProps
   extends StObject
      with PopupOptions {
   
@@ -37,7 +37,7 @@ object PopupProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     

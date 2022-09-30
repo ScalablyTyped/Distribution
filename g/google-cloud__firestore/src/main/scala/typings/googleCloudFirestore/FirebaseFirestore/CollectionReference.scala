@@ -14,10 +14,11 @@ trait CollectionReference[T]
     * it a document ID automatically.
     *
     * @param data An Object containing the data for the new document.
+    * @throws Error If the provided input is not a valid Firestore document.
     * @return A Promise resolved with a `DocumentReference` pointing to the
     * newly created document after it has been written to the backend.
     */
-  def add(data: T): js.Promise[DocumentReference[T]] = js.native
+  def add(data: WithFieldValue[T]): js.Promise[DocumentReference[T]] = js.native
   
   /**
     * Get a `DocumentReference` for a randomly-named document within this

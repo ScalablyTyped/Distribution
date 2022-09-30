@@ -11,14 +11,11 @@ Bootstrapping for Redux applications
 | Full name          | redux-bootstrap |
 | Keywords           | redux, react, bootstrap |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 5544 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 99.33333333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/remojansen/redux-bootstrap#readme)
-- [Bugs](https://github.com/remojansen/redux-bootstrap/issues)
-- [Repository](https://github.com/remojansen/redux-bootstrap)
 - [Npm](https://www.npmjs.com/package/redux-bootstrap)
     
 

@@ -10,5 +10,5 @@ object rethrowUnlessCodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(maybeError: Any, codes: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(maybeError.asInstanceOf[js.Any]).`++`(codes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def default(maybeError: Any, codes: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(maybeError.asInstanceOf[js.Any]).`++`(codes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 }

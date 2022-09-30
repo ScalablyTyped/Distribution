@@ -1,12 +1,12 @@
 package typings.dbStations
 
-import typings.dbStations.dbStationsNumbers.`1`
-import typings.dbStations.dbStationsNumbers.`2`
-import typings.dbStations.dbStationsNumbers.`3`
-import typings.dbStations.dbStationsNumbers.`4`
-import typings.dbStations.dbStationsNumbers.`5`
-import typings.dbStations.dbStationsNumbers.`6`
-import typings.dbStations.dbStationsNumbers.`7`
+import typings.dbStations.dbStationsInts.`1`
+import typings.dbStations.dbStationsInts.`2`
+import typings.dbStations.dbStationsInts.`3`
+import typings.dbStations.dbStationsInts.`4`
+import typings.dbStations.dbStationsInts.`5`
+import typings.dbStations.dbStationsInts.`6`
+import typings.dbStations.dbStationsInts.`7`
 import typings.dbStations.dbStationsStrings.`RB Mitte`
 import typings.dbStations.dbStationsStrings.`RB Nord`
 import typings.dbStations.dbStationsStrings.`RB Ost`

@@ -3,9 +3,9 @@ package typings.tslint
 import typings.tslint.mod.Rules.AbstractRule
 import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
-import typings.tslint.tslintNumbers.`-1`
-import typings.tslint.tslintNumbers.`0`
-import typings.tslint.tslintNumbers.`1`
+import typings.tslint.tslintInts.`-1`
+import typings.tslint.tslintInts.`0`
+import typings.tslint.tslintInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

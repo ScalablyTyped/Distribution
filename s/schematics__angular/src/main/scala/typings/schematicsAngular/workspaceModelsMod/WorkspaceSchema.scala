@@ -1,7 +1,7 @@
 package typings.schematicsAngular.workspaceModelsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.schematicsAngular.schematicsAngularNumbers.`1`
+import typings.schematicsAngular.schematicsAngularInts.`1`
 import typings.schematicsAngular.workspaceModelsMod.ProjectType.Application
 import typings.schematicsAngular.workspaceModelsMod.ProjectType.Library
 import org.scalablytyped.runtime.StObject

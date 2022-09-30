@@ -11,13 +11,16 @@ object onDeviceUIMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI", JSImport.Default)
   @js.native
-  class default protected () extends OnDeviceUI {
+  open class default protected () extends OnDeviceUI {
     def this(props: OnDeviceUIProps) = this()
   }
   
+  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI", "IS_EXPO")
   @js.native
-  trait OnDeviceUI
-    extends PureComponent[OnDeviceUIProps, OnDeviceUIState, js.Any] {
+  val IS_EXPO: Boolean = js.native
+  
+  @js.native
+  trait OnDeviceUI extends PureComponent[OnDeviceUIProps, OnDeviceUIState, Any] {
     
     var animatedValue: Value = js.native
     
@@ -38,7 +41,7 @@ object onDeviceUIMod {
     
     var shouldDisableKeyboardAvoidingView: js.UndefOr[Boolean] = js.undefined
     
-    var stories: js.Any
+    var stories: Any
     
     var tabOpen: js.UndefOr[Double] = js.undefined
     
@@ -46,7 +49,7 @@ object onDeviceUIMod {
   }
   object OnDeviceUIProps {
     
-    inline def apply(stories: js.Any): OnDeviceUIProps = {
+    inline def apply(stories: Any): OnDeviceUIProps = {
       val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnDeviceUIProps]
     }
@@ -65,7 +68,7 @@ object onDeviceUIMod {
       
       inline def setShouldDisableKeyboardAvoidingViewUndefined: Self = StObject.set(x, "shouldDisableKeyboardAvoidingView", js.undefined)
       
-      inline def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
       inline def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
       

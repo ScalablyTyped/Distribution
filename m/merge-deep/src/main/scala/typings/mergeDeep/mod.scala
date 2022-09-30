@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   /** Recursively merge values in a javascript object. */
   inline def apply[T, U](orig: T, objects: U): T & U = (^.asInstanceOf[js.Dynamic].apply(orig.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[T & U]
   inline def apply[T, U, V](orig: T, objects1: U, objects2: V): T & U & V = (^.asInstanceOf[js.Dynamic].apply(orig.asInstanceOf[js.Any], objects1.asInstanceOf[js.Any], objects2.asInstanceOf[js.Any])).asInstanceOf[T & U & V]

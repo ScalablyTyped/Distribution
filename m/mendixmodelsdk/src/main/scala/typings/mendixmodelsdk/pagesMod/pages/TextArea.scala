@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/text-area relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.TextArea")
 @js.native
-class TextArea protected () extends TextWidget {
+open class TextArea protected () extends TextWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,12 +43,24 @@ class TextArea protected () extends TextWidget {
   def numberOfLines: Double = js.native
   def numberOfLines_=(newValue: Double): Unit = js.native
   
+  /**
+    * In version 9.14.0: introduced
+    */
+  def submitBehaviour: SubmitBehaviourType = js.native
+  def submitBehaviour_=(newValue: SubmitBehaviourType): Unit = js.native
+  
+  /**
+    * In version 9.14.0: introduced
+    */
+  def submitOnInputDelay: Double = js.native
+  def submitOnInputDelay_=(newValue: Double): Unit = js.native
+  
   def textTooLongMessage: Text = js.native
   def textTooLongMessage_=(newValue: Text): Unit = js.native
 }
 object TextArea {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TextArea")
   @js.native
   val ^ : js.Any = js.native
   
@@ -622,13 +634,13 @@ object TextArea {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): TextArea = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextArea]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TextArea.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextArea.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TextArea.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

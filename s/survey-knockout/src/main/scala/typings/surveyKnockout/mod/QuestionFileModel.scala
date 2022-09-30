@@ -130,6 +130,8 @@ open class QuestionFileModel protected () extends Question {
     */
   def loadFiles(files: Any): Unit = js.native
   
+  /* protected */ def loadPreview(newValue: Any): Unit = js.native
+  
   /*
     * The loading file input title.
     */

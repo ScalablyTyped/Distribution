@@ -14,7 +14,6 @@ import typings.marked.mod.marked.Tokens.Heading
 import typings.marked.mod.marked.Tokens.Hr
 import typings.marked.mod.marked.Tokens.Image
 import typings.marked.mod.marked.Tokens.Link
-import typings.marked.mod.marked.Tokens.List
 import typings.marked.mod.marked.Tokens.Paragraph
 import typings.marked.mod.marked.Tokens.Space
 import typings.marked.mod.marked.Tokens.Strong
@@ -148,7 +147,7 @@ trait TokenizerObject extends StObject {
     js.ThisFunction1[
       /* this */ Tokenizer[scala.Nothing] & TokenizerThis, 
       /* src */ String, 
-      List | `false`
+      typings.marked.mod.marked.Tokens.List | `false`
     ]
   ] = js.undefined
   
@@ -367,7 +366,7 @@ object TokenizerObject {
       value: js.ThisFunction1[
           /* this */ Tokenizer[scala.Nothing] & TokenizerThis, 
           /* src */ String, 
-          List | `false`
+          typings.marked.mod.marked.Tokens.List | `false`
         ]
     ): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

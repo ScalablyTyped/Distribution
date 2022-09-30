@@ -1,0 +1,26 @@
+package typings.reactNativeWindows.rntypesMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ErrorUtils extends StObject {
+  
+  def getGlobalHandler(): ErrorHandlerCallback
+  
+  def setGlobalHandler(callback: ErrorHandlerCallback): Unit
+}
+object ErrorUtils {
+  
+  inline def apply(getGlobalHandler: () => ErrorHandlerCallback, setGlobalHandler: ErrorHandlerCallback => Unit): ErrorUtils = {
+    val __obj = js.Dynamic.literal(getGlobalHandler = js.Any.fromFunction0(getGlobalHandler), setGlobalHandler = js.Any.fromFunction1(setGlobalHandler))
+    __obj.asInstanceOf[ErrorUtils]
+  }
+  
+  extension [Self <: ErrorUtils](x: Self) {
+    
+    inline def setGetGlobalHandler(value: () => ErrorHandlerCallback): Self = StObject.set(x, "getGlobalHandler", js.Any.fromFunction0(value))
+    
+    inline def setSetGlobalHandler(value: ErrorHandlerCallback => Unit): Self = StObject.set(x, "setGlobalHandler", js.Any.fromFunction1(value))
+  }
+}

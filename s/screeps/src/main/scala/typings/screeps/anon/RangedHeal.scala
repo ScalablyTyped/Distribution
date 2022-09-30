@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RangedHeal extends StObject {
   
-  var heal: typings.screeps.screepsNumbers.`3`
+  var heal: typings.screeps.screepsInts.`3`
   
-  var rangedHeal: typings.screeps.screepsNumbers.`3`
+  var rangedHeal: typings.screeps.screepsInts.`3`
 }
 object RangedHeal {
   
@@ -19,8 +19,8 @@ object RangedHeal {
   
   extension [Self <: RangedHeal](x: Self) {
     
-    inline def setHeal(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "heal", value.asInstanceOf[js.Any])
+    inline def setHeal(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "heal", value.asInstanceOf[js.Any])
     
-    inline def setRangedHeal(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "rangedHeal", value.asInstanceOf[js.Any])
+    inline def setRangedHeal(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "rangedHeal", value.asInstanceOf[js.Any])
   }
 }

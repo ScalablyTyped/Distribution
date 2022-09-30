@@ -10,43 +10,43 @@ trait SolidParticle extends StObject {
   /* private */ var _boundingInfo: Any = js.native
   
   /**
-    * @hidden Internal global position in the SPS.
+    * @internal Internal global position in the SPS.
     */
   var _globalPosition: Vector3 = js.native
   
   /**
-    * @hidden Index of this particle in the global "indices" array (Internal use)
+    * @internal Index of this particle in the global "indices" array (Internal use)
     */
   var _ind: Double = js.native
   
   /**
-    * @hidden ModelShape of this particle (Internal use)
+    * @internal ModelShape of this particle (Internal use)
     */
   var _model: ModelShape = js.native
   
   /**
-    * @hidden Reference to the shape model BoundingInfo object (Internal use)
+    * @internal Reference to the shape model BoundingInfo object (Internal use)
     */
   var _modelBoundingInfo: BoundingInfo = js.native
   
   /**
     * Index of this particle in the global "positions" array (Internal use)
-    * @hidden
+    * @internal
     */
   var _pos: Double = js.native
   
   /**
-    * @hidden Last computed particle rotation matrix
+    * @internal Last computed particle rotation matrix
     */
   var _rotationMatrix: js.Array[Double] = js.native
   
   /**
-    * @hidden Reference to the SPS what the particle belongs to (Internal use)
+    * @internal Reference to the SPS what the particle belongs to (Internal use)
     */
   var _sps: SolidParticleSystem = js.native
   
   /**
-    * @hidden Still set as invisible in order to skip useless computations (Internal use)
+    * @internal Still set as invisible in order to skip useless computations (Internal use)
     */
   var _stillInvisible: Boolean = js.native
   
@@ -87,8 +87,7 @@ trait SolidParticle extends StObject {
   
   /**
     * get the rotation matrix of the particle
-    * @param m
-    * @hidden
+    * @internal
     */
   def getRotationMatrix(m: Matrix): Unit = js.native
   

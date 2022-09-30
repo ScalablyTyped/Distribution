@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the collection of {@link Word.Setting} objects.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @JSGlobal("Word.SettingCollection")
 @js.native

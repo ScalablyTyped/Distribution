@@ -13,23 +13,23 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(form: String, data: js.Any): FormAction = js.native
-    def apply(form: String, data: js.Any, keepDirty: Boolean): FormAction = js.native
-    def apply(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = js.native
-    def apply(form: String, data: js.Any, keepDirty: Unit, options: PartialInitializeOptions): FormAction = js.native
-    def apply(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = js.native
+    def apply(form: String, data: Any): FormAction = js.native
+    def apply(form: String, data: Any, keepDirty: Boolean): FormAction = js.native
+    def apply(form: String, data: Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = js.native
+    def apply(form: String, data: Any, keepDirty: Unit, options: PartialInitializeOptions): FormAction = js.native
+    def apply(form: String, data: Any, options: PartialInitializeOptions): FormAction = js.native
+  }
+  
+  @js.native
+  trait FnCallFormSyncErrorsError extends StObject {
+    
+    def apply[T](form: String, syncErrors: FormErrors[Any, T], error: T): FormAction = js.native
   }
   
   @js.native
   trait FnCallFormSyncWarningsWarning extends StObject {
     
-    def apply[T](form: String, syncWarnings: FormWarnings[js.Any, T], warning: T): FormAction = js.native
-  }
-  
-  @js.native
-  trait FnCallFromSyncErrorsError extends StObject {
-    
-    def apply[T](from: String, syncErrors: FormErrors[js.Any, T], error: T): FormAction = js.native
+    def apply[T](form: String, syncWarnings: FormWarnings[Any, T], warning: T): FormAction = js.native
   }
   
   trait Form extends StObject {
@@ -95,18 +95,20 @@ object anon {
   
   trait Props[P] extends StObject {
     
-    var props: P
+    var props: js.UndefOr[P] = js.undefined
   }
   object Props {
     
-    inline def apply[P](props: P): Props[P] = {
-      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    inline def apply[P](): Props[P] = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props[P]]
     }
     
     extension [Self <: Props[?], P](x: Self & Props[P]) {
       
       inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   

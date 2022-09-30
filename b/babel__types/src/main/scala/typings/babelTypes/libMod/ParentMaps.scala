@@ -12,7 +12,7 @@ trait ParentMaps extends StObject {
   
   var ArrayExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var ArrayPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction | TSDeclareMethod | VariableDeclarator_
+  var ArrayPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | VariableDeclarator_
   
   var ArrayTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
@@ -20,7 +20,7 @@ trait ParentMaps extends StObject {
   
   var AssignmentExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var AssignmentPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction | TSDeclareMethod | TSParameterProperty | VariableDeclarator_
+  var AssignmentPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | TSParameterProperty__ | VariableDeclarator_
   
   var AwaitExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -30,7 +30,7 @@ trait ParentMaps extends StObject {
   
   var BindExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var BlockStatement: ArrowFunctionExpression_ | BlockStatement_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | DeclareModule_ | DoExpression_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | IfStatement_ | LabeledStatement_ | ObjectMethod_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | TryStatement_ | WhileStatement_ | WithStatement_
+  var BlockStatement: ArrowFunctionExpression_ | BlockStatement_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | DeclareModule_ | DoExpression_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | IfStatement_ | LabeledStatement_ | ObjectMethod_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | TryStatement_ | WhileStatement_ | WithStatement_
   
   var BooleanLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any
   
@@ -38,7 +38,7 @@ trait ParentMaps extends StObject {
   
   var BooleanTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var BreakStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var BreakStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var CallExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -48,7 +48,7 @@ trait ParentMaps extends StObject {
   
   var ClassBody: ClassDeclaration_ | ClassExpression_
   
-  var ClassDeclaration: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ClassDeclaration: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var ClassExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -68,35 +68,35 @@ trait ParentMaps extends StObject {
   
   var ConditionalExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var ContinueStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ContinueStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DebuggerStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DebuggerStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var DecimalLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var DeclareClass: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareClass: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareExportAllDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareExportAllDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareExportDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareExportDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareFunction: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareFunction: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareInterface: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareInterface: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareModule: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareModule: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareModuleExports: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareModuleExports: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareOpaqueType: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareOpaqueType: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareTypeAlias: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareTypeAlias: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var DeclareVariable: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DeclareVariable: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var DeclaredPredicate: ArrowFunctionExpression_ | DeclareExportDeclaration_ | DeclareFunction_ | DeclaredPredicate_ | FunctionDeclaration_ | FunctionExpression_
   
-  var Decorator: ArrayPattern_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSDeclareMethod | TSParameterProperty
+  var Decorator: ArrayPattern_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSDeclareMethod__ | TSParameterProperty__
   
   var Directive: BlockStatement_ | Program_
   
@@ -104,9 +104,9 @@ trait ParentMaps extends StObject {
   
   var DoExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var DoWhileStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var DoWhileStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var EmptyStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var EmptyStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var EmptyTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
@@ -114,7 +114,7 @@ trait ParentMaps extends StObject {
   
   var EnumBooleanMember: DeclareExportDeclaration_ | DeclaredPredicate_ | EnumBooleanBody_
   
-  var EnumDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var EnumDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var EnumDefaultedMember: DeclareExportDeclaration_ | DeclaredPredicate_ | EnumStringBody_ | EnumSymbolBody_
   
@@ -130,29 +130,29 @@ trait ParentMaps extends StObject {
   
   var ExistsTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var ExportAllDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ExportAllDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var ExportDefaultDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ExportDefaultDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var ExportDefaultSpecifier: ExportNamedDeclaration_
   
-  var ExportNamedDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ExportNamedDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var ExportNamespaceSpecifier: DeclareExportDeclaration_ | ExportNamedDeclaration_
   
   var ExportSpecifier: DeclareExportDeclaration_ | ExportNamedDeclaration_
   
-  var ExpressionStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ExpressionStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var File: Null
   
-  var ForInStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ForInStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var ForOfStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ForOfStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var ForStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ForStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var FunctionDeclaration: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var FunctionDeclaration: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var FunctionExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -164,13 +164,13 @@ trait ParentMaps extends StObject {
   
   var Identifier: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 123 */ Any
   
-  var IfStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var IfStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var Import: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
   var ImportAttribute: ExportAllDeclaration_ | ExportNamedDeclaration_ | ImportDeclaration_
   
-  var ImportDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ImportDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var ImportDefaultSpecifier: ImportDeclaration_
   
@@ -182,7 +182,7 @@ trait ParentMaps extends StObject {
   
   var InferredPredicate: ArrowFunctionExpression_ | DeclareExportDeclaration_ | DeclaredPredicate_ | FunctionDeclaration_ | FunctionExpression_
   
-  var InterfaceDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var InterfaceDeclaration: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var InterfaceExtends: ClassDeclaration_ | ClassExpression_ | DeclareClass_ | DeclareExportDeclaration_ | DeclareInterface_ | DeclaredPredicate_ | InterfaceDeclaration_ | InterfaceTypeAnnotation_
   
@@ -192,37 +192,37 @@ trait ParentMaps extends StObject {
   
   var IntersectionTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var JSXAttribute: JSXOpeningElement
+  var JSXAttribute: JSXOpeningElement__
   
-  var JSXClosingElement: JSXElement
+  var JSXClosingElement: JSXElement__
   
-  var JSXClosingFragment: JSXFragment
+  var JSXClosingFragment: JSXFragment__
   
   var JSXElement: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any
   
-  var JSXEmptyExpression: JSXExpressionContainer
+  var JSXEmptyExpression: JSXExpressionContainer__
   
-  var JSXExpressionContainer: JSXAttribute | JSXElement | JSXFragment
+  var JSXExpressionContainer: JSXAttribute__ | JSXElement__ | JSXFragment__
   
   var JSXFragment: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any
   
-  var JSXIdentifier: JSXAttribute | JSXClosingElement | JSXMemberExpression | JSXNamespacedName | JSXOpeningElement
+  var JSXIdentifier: JSXAttribute__ | JSXClosingElement__ | JSXMemberExpression__ | JSXNamespacedName__ | JSXOpeningElement__
   
-  var JSXMemberExpression: JSXClosingElement | typings.babelTypes.libMod.JSXMemberExpression | JSXOpeningElement
+  var JSXMemberExpression: JSXClosingElement__ | JSXMemberExpression__ | JSXOpeningElement__
   
-  var JSXNamespacedName: CallExpression_ | JSXAttribute | JSXClosingElement | JSXOpeningElement | NewExpression_ | OptionalCallExpression_
+  var JSXNamespacedName: CallExpression_ | JSXAttribute__ | JSXClosingElement__ | JSXOpeningElement__ | NewExpression_ | OptionalCallExpression_
   
-  var JSXOpeningElement: JSXElement
+  var JSXOpeningElement: JSXElement__
   
-  var JSXOpeningFragment: JSXFragment
+  var JSXOpeningFragment: JSXFragment__
   
-  var JSXSpreadAttribute: JSXOpeningElement
+  var JSXSpreadAttribute: JSXOpeningElement__
   
-  var JSXSpreadChild: JSXElement | JSXFragment
+  var JSXSpreadChild: JSXElement__ | JSXFragment__
   
-  var JSXText: JSXElement | JSXFragment
+  var JSXText: JSXElement__ | JSXFragment__
   
-  var LabeledStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var LabeledStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var LogicalExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -236,7 +236,7 @@ trait ParentMaps extends StObject {
   
   var NewExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var Noop: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSDeclareFunction | TSDeclareMethod
+  var Noop: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__
   
   var NullLiteral: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -256,7 +256,7 @@ trait ParentMaps extends StObject {
   
   var ObjectMethod: ObjectExpression_
   
-  var ObjectPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction | TSDeclareMethod | VariableDeclarator_
+  var ObjectPattern: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | VariableDeclarator_
   
   var ObjectProperty: ObjectExpression_ | ObjectPattern_ | RecordExpression_
   
@@ -272,7 +272,7 @@ trait ParentMaps extends StObject {
   
   var ObjectTypeSpreadProperty: DeclareExportDeclaration_ | DeclaredPredicate_ | ObjectTypeAnnotation_
   
-  var OpaqueType: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var OpaqueType: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var OptionalCallExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -302,11 +302,11 @@ trait ParentMaps extends StObject {
   
   var RegexLiteral: Null
   
-  var RestElement: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSConstructorType | TSDeclareFunction | TSDeclareMethod | TSFunctionType | TSMethodSignature | VariableDeclarator_
+  var RestElement: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSConstructorType__ | TSDeclareFunction__ | TSDeclareMethod__ | TSFunctionType__ | TSMethodSignature__ | VariableDeclarator_
   
   var RestProperty: Null
   
-  var ReturnStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ReturnStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var SequenceExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -326,137 +326,137 @@ trait ParentMaps extends StObject {
   
   var SwitchCase: SwitchStatement_
   
-  var SwitchStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var SwitchStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var SymbolTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var TSAnyKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSAnyKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSArrayType: typings.babelTypes.libMod.TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSArrayType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSAsExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any
   
-  var TSBigIntKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSBigIntKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSBooleanKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSBooleanKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSCallSignatureDeclaration: TSInterfaceBody | TSTypeLiteral
+  var TSCallSignatureDeclaration: TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSConditionalType: TSArrayType | TSAsExpression | typings.babelTypes.libMod.TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSConditionalType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSConstructSignatureDeclaration: TSInterfaceBody | TSTypeLiteral
+  var TSConstructSignatureDeclaration: TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSConstructorType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSConstructorType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSDeclareFunction: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TSDeclareFunction: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var TSDeclareMethod: ClassBody_
   
-  var TSEnumDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TSEnumDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSEnumMember: TSEnumDeclaration
+  var TSEnumMember: TSEnumDeclaration__
   
-  var TSExportAssignment: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TSExportAssignment: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSExpressionWithTypeArguments: ClassDeclaration_ | ClassExpression_ | TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSInterfaceDeclaration | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSExpressionWithTypeArguments: ClassDeclaration_ | ClassExpression_ | TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSInterfaceDeclaration__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSExternalModuleReference: TSImportEqualsDeclaration
+  var TSExternalModuleReference: TSImportEqualsDeclaration__
   
-  var TSFunctionType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSFunctionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSImportEqualsDeclaration: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TSImportEqualsDeclaration: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSImportType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSTypeQuery | TSUnionType | TemplateLiteral_
+  var TSImportType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypeQuery__ | TSUnionType__ | TemplateLiteral_
   
-  var TSIndexSignature: ClassBody_ | TSInterfaceBody | TSTypeLiteral
+  var TSIndexSignature: ClassBody_ | TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSIndexedAccessType: TSArrayType | TSAsExpression | TSConditionalType | typings.babelTypes.libMod.TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSIndexedAccessType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSInferType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSInferType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSInstantiationExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var TSInterfaceBody: TSInterfaceDeclaration
+  var TSInterfaceBody: TSInterfaceDeclaration__
   
-  var TSInterfaceDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TSInterfaceDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSIntersectionType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | typings.babelTypes.libMod.TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSIntersectionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSIntrinsicKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSIntrinsicKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSLiteralType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSLiteralType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSMappedType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | typings.babelTypes.libMod.TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSMappedType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSMethodSignature: TSInterfaceBody | TSTypeLiteral
+  var TSMethodSignature: TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSModuleBlock: TSModuleDeclaration
+  var TSModuleBlock: TSModuleDeclaration__
   
-  var TSModuleDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | typings.babelTypes.libMod.TSModuleDeclaration | WhileStatement_ | WithStatement_
+  var TSModuleDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | TSModuleDeclaration__ | WhileStatement_ | WithStatement_
   
-  var TSNamedTupleMember: TSTupleType
+  var TSNamedTupleMember: TSTupleType__
   
-  var TSNamespaceExportDeclaration: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TSNamespaceExportDeclaration: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSNeverKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSNeverKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TSNonNullExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any
   
-  var TSNullKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSNullKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSNumberKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSNumberKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSObjectKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSObjectKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSOptionalType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | typings.babelTypes.libMod.TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSOptionalType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSParameterProperty: ArrayPattern_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | RestElement_ | TSDeclareMethod | VariableDeclarator_
+  var TSParameterProperty: ArrayPattern_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | RestElement_ | TSDeclareMethod__ | VariableDeclarator_
   
-  var TSParenthesizedType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | typings.babelTypes.libMod.TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSParenthesizedType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSPropertySignature: TSInterfaceBody | TSTypeLiteral
+  var TSPropertySignature: TSInterfaceBody__ | TSTypeLiteral__
   
-  var TSQualifiedName: TSExpressionWithTypeArguments | TSImportEqualsDeclaration | TSImportType | typings.babelTypes.libMod.TSQualifiedName | TSTypeQuery | TSTypeReference
+  var TSQualifiedName: TSExpressionWithTypeArguments__ | TSImportEqualsDeclaration__ | TSImportType__ | TSQualifiedName__ | TSTypeQuery__ | TSTypeReference__
   
-  var TSRestType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | typings.babelTypes.libMod.TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSRestType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSStringKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSStringKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSSymbolKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSSymbolKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSThisType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSTypePredicate | TSUnionType | TemplateLiteral_
+  var TSThisType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypePredicate__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTupleType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | typings.babelTypes.libMod.TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSTupleType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeAliasDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TSTypeAliasDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var TSTypeAnnotation: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSConstructorType | TSDeclareFunction | TSDeclareMethod | TSFunctionType | TSIndexSignature | TSMethodSignature | TSPropertySignature | TSTypePredicate
+  var TSTypeAnnotation: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSConstructorType__ | TSDeclareFunction__ | TSDeclareMethod__ | TSFunctionType__ | TSIndexSignature__ | TSMethodSignature__ | TSPropertySignature__ | TSTypePredicate__
   
   var TSTypeAssertion: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any
   
-  var TSTypeLiteral: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSTypeLiteral: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeOperator: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | typings.babelTypes.libMod.TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSTypeOperator: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeParameter: TSInferType | TSMappedType | TSTypeParameterDeclaration
+  var TSTypeParameter: TSInferType__ | TSMappedType__ | TSTypeParameterDeclaration__
   
-  var TSTypeParameterDeclaration: ArrowFunctionExpression_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSConstructorType | TSDeclareFunction | TSDeclareMethod | TSFunctionType | TSInterfaceDeclaration | TSMethodSignature | TSTypeAliasDeclaration
+  var TSTypeParameterDeclaration: ArrowFunctionExpression_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSConstructorType__ | TSDeclareFunction__ | TSDeclareMethod__ | TSFunctionType__ | TSInterfaceDeclaration__ | TSMethodSignature__ | TSTypeAliasDeclaration__
   
-  var TSTypeParameterInstantiation: CallExpression_ | ClassDeclaration_ | ClassExpression_ | JSXOpeningElement | NewExpression_ | OptionalCallExpression_ | TSExpressionWithTypeArguments | TSImportType | TSInstantiationExpression | TSTypeQuery | TSTypeReference | TaggedTemplateExpression_
+  var TSTypeParameterInstantiation: CallExpression_ | ClassDeclaration_ | ClassExpression_ | JSXOpeningElement__ | NewExpression_ | OptionalCallExpression_ | TSExpressionWithTypeArguments__ | TSImportType__ | TSInstantiationExpression__ | TSTypeQuery__ | TSTypeReference__ | TaggedTemplateExpression_
   
-  var TSTypePredicate: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSTypePredicate: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeQuery: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSTypeQuery: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSTypeReference: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSTypeReference: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSUndefinedKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSUndefinedKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSUnionType: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | typings.babelTypes.libMod.TSUnionType | TemplateLiteral_
+  var TSUnionType: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSUnknownKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSUnknownKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
-  var TSVoidKeyword: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+  var TSVoidKeyword: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
   
   var TaggedTemplateExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
@@ -468,17 +468,17 @@ trait ParentMaps extends StObject {
   
   var ThisTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var ThrowStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var ThrowStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var TopicReference: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
-  var TryStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TryStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var TupleExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
   
   var TupleTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var TypeAlias: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var TypeAlias: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var TypeAnnotation: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | DeclareExportDeclaration_ | DeclareModuleExports_ | DeclaredPredicate_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TypeCastExpression_ | TypeParameter_
   
@@ -488,7 +488,7 @@ trait ParentMaps extends StObject {
   
   var TypeParameterDeclaration: ArrowFunctionExpression_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | DeclareClass_ | DeclareExportDeclaration_ | DeclareInterface_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionDeclaration_ | FunctionExpression_ | FunctionTypeAnnotation_ | InterfaceDeclaration_ | ObjectMethod_ | OpaqueType_ | TypeAlias_
   
-  var TypeParameterInstantiation: CallExpression_ | ClassDeclaration_ | ClassExpression_ | ClassImplements_ | DeclareExportDeclaration_ | DeclaredPredicate_ | GenericTypeAnnotation_ | InterfaceExtends_ | JSXOpeningElement | NewExpression_ | OptionalCallExpression_ | TaggedTemplateExpression_
+  var TypeParameterInstantiation: CallExpression_ | ClassDeclaration_ | ClassExpression_ | ClassImplements_ | DeclareExportDeclaration_ | DeclaredPredicate_ | GenericTypeAnnotation_ | InterfaceExtends_ | JSXOpeningElement__ | NewExpression_ | OptionalCallExpression_ | TaggedTemplateExpression_
   
   var TypeofTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
@@ -500,7 +500,7 @@ trait ParentMaps extends StObject {
   
   var V8IntrinsicIdentifier: CallExpression_ | NewExpression_
   
-  var VariableDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var VariableDeclaration: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var VariableDeclarator: VariableDeclaration_
   
@@ -508,9 +508,9 @@ trait ParentMaps extends StObject {
   
   var VoidTypeAnnotation: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
   
-  var WhileStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var WhileStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
-  var WithStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+  var WithStatement: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
   
   var YieldExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any
 }
@@ -527,7 +527,7 @@ object ParentMaps {
     inline def setArrayExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
     
     inline def setArrayPattern(
-      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction | TSDeclareMethod | VariableDeclarator_
+      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | VariableDeclarator_
     ): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
     
     inline def setArrayTypeAnnotation(
@@ -539,7 +539,7 @@ object ParentMaps {
     inline def setAssignmentExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
     
     inline def setAssignmentPattern(
-      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction | TSDeclareMethod | TSParameterProperty | VariableDeclarator_
+      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | TSParameterProperty__ | VariableDeclarator_
     ): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
     
     inline def setAwaitExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
@@ -551,7 +551,7 @@ object ParentMaps {
     inline def setBindExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "BindExpression", value.asInstanceOf[js.Any])
     
     inline def setBlockStatement(
-      value: ArrowFunctionExpression_ | BlockStatement_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | DeclareModule_ | DoExpression_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | IfStatement_ | LabeledStatement_ | ObjectMethod_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | TryStatement_ | WhileStatement_ | WithStatement_
+      value: ArrowFunctionExpression_ | BlockStatement_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | DeclareModule_ | DoExpression_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | IfStatement_ | LabeledStatement_ | ObjectMethod_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | TryStatement_ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
     
     inline def setBooleanLiteral(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any): Self = StObject.set(x, "BooleanLiteral", value.asInstanceOf[js.Any])
@@ -565,7 +565,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "BooleanTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setBreakStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
     
     inline def setCallExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
@@ -577,7 +577,7 @@ object ParentMaps {
     inline def setClassBody(value: ClassDeclaration_ | ClassExpression_): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
     
     inline def setClassDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
     
     inline def setClassExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
@@ -601,53 +601,53 @@ object ParentMaps {
     inline def setConditionalExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
     
     inline def setContinueStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
     
     inline def setDebuggerStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
     
     inline def setDecimalLiteral(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "DecimalLiteral", value.asInstanceOf[js.Any])
     
     inline def setDeclareClass(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareClass", value.asInstanceOf[js.Any])
     
     inline def setDeclareExportAllDeclaration(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareExportAllDeclaration", value.asInstanceOf[js.Any])
     
     inline def setDeclareExportDeclaration(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareExportDeclaration", value.asInstanceOf[js.Any])
     
     inline def setDeclareFunction(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareFunction", value.asInstanceOf[js.Any])
     
     inline def setDeclareInterface(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareInterface", value.asInstanceOf[js.Any])
     
     inline def setDeclareModule(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareModule", value.asInstanceOf[js.Any])
     
     inline def setDeclareModuleExports(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareModuleExports", value.asInstanceOf[js.Any])
     
     inline def setDeclareOpaqueType(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareOpaqueType", value.asInstanceOf[js.Any])
     
     inline def setDeclareTypeAlias(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareTypeAlias", value.asInstanceOf[js.Any])
     
     inline def setDeclareVariable(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DeclareVariable", value.asInstanceOf[js.Any])
     
     inline def setDeclaredPredicate(
@@ -655,7 +655,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "DeclaredPredicate", value.asInstanceOf[js.Any])
     
     inline def setDecorator(
-      value: ArrayPattern_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSDeclareMethod | TSParameterProperty
+      value: ArrayPattern_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSDeclareMethod__ | TSParameterProperty__
     ): Self = StObject.set(x, "Decorator", value.asInstanceOf[js.Any])
     
     inline def setDirective(value: BlockStatement_ | Program_): Self = StObject.set(x, "Directive", value.asInstanceOf[js.Any])
@@ -665,11 +665,11 @@ object ParentMaps {
     inline def setDoExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "DoExpression", value.asInstanceOf[js.Any])
     
     inline def setDoWhileStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
     
     inline def setEmptyStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
     
     inline def setEmptyTypeAnnotation(
@@ -681,7 +681,7 @@ object ParentMaps {
     inline def setEnumBooleanMember(value: DeclareExportDeclaration_ | DeclaredPredicate_ | EnumBooleanBody_): Self = StObject.set(x, "EnumBooleanMember", value.asInstanceOf[js.Any])
     
     inline def setEnumDeclaration(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "EnumDeclaration", value.asInstanceOf[js.Any])
     
     inline def setEnumDefaultedMember(value: DeclareExportDeclaration_ | DeclaredPredicate_ | EnumStringBody_ | EnumSymbolBody_): Self = StObject.set(x, "EnumDefaultedMember", value.asInstanceOf[js.Any])
@@ -701,17 +701,17 @@ object ParentMaps {
     ): Self = StObject.set(x, "ExistsTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setExportAllDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
     
     inline def setExportDefaultDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
     
     inline def setExportDefaultSpecifier(value: ExportNamedDeclaration_): Self = StObject.set(x, "ExportDefaultSpecifier", value.asInstanceOf[js.Any])
     
     inline def setExportNamedDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
     
     inline def setExportNamespaceSpecifier(value: DeclareExportDeclaration_ | ExportNamedDeclaration_): Self = StObject.set(x, "ExportNamespaceSpecifier", value.asInstanceOf[js.Any])
@@ -719,25 +719,25 @@ object ParentMaps {
     inline def setExportSpecifier(value: DeclareExportDeclaration_ | ExportNamedDeclaration_): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
     
     inline def setExpressionStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
     
     inline def setFile(value: Null): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     
     inline def setForInStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
     
     inline def setForOfStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
     
     inline def setForStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
     
     inline def setFunctionDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
     
     inline def setFunctionExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
@@ -755,7 +755,7 @@ object ParentMaps {
     inline def setIdentifier(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 123 */ Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     inline def setIfStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
     
     inline def setImport(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "Import", value.asInstanceOf[js.Any])
@@ -763,7 +763,7 @@ object ParentMaps {
     inline def setImportAttribute(value: ExportAllDeclaration_ | ExportNamedDeclaration_ | ImportDeclaration_): Self = StObject.set(x, "ImportAttribute", value.asInstanceOf[js.Any])
     
     inline def setImportDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
     
     inline def setImportDefaultSpecifier(value: ImportDeclaration_): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
@@ -781,7 +781,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "InferredPredicate", value.asInstanceOf[js.Any])
     
     inline def setInterfaceDeclaration(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "InterfaceDeclaration", value.asInstanceOf[js.Any])
     
     inline def setInterfaceExtends(
@@ -798,42 +798,42 @@ object ParentMaps {
       value: ArrayTypeAnnotation_ | DeclareExportDeclaration_ | DeclareOpaqueType_ | DeclareTypeAlias_ | DeclaredPredicate_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | IndexedAccessType_ | IntersectionTypeAnnotation_ | NullableTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeInternalSlot_ | ObjectTypeProperty_ | ObjectTypeSpreadProperty_ | OpaqueType_ | OptionalIndexedAccessType_ | TupleTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeParameter_ | TypeParameterInstantiation_ | TypeofTypeAnnotation_ | UnionTypeAnnotation_
     ): Self = StObject.set(x, "IntersectionTypeAnnotation", value.asInstanceOf[js.Any])
     
-    inline def setJSXAttribute(value: JSXOpeningElement): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
+    inline def setJSXAttribute(value: JSXOpeningElement__): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
     
-    inline def setJSXClosingElement(value: JSXElement): Self = StObject.set(x, "JSXClosingElement", value.asInstanceOf[js.Any])
+    inline def setJSXClosingElement(value: JSXElement__): Self = StObject.set(x, "JSXClosingElement", value.asInstanceOf[js.Any])
     
-    inline def setJSXClosingFragment(value: JSXFragment): Self = StObject.set(x, "JSXClosingFragment", value.asInstanceOf[js.Any])
+    inline def setJSXClosingFragment(value: JSXFragment__): Self = StObject.set(x, "JSXClosingFragment", value.asInstanceOf[js.Any])
     
     inline def setJSXElement(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
     
-    inline def setJSXEmptyExpression(value: JSXExpressionContainer): Self = StObject.set(x, "JSXEmptyExpression", value.asInstanceOf[js.Any])
+    inline def setJSXEmptyExpression(value: JSXExpressionContainer__): Self = StObject.set(x, "JSXEmptyExpression", value.asInstanceOf[js.Any])
     
-    inline def setJSXExpressionContainer(value: JSXAttribute | JSXElement | JSXFragment): Self = StObject.set(x, "JSXExpressionContainer", value.asInstanceOf[js.Any])
+    inline def setJSXExpressionContainer(value: JSXAttribute__ | JSXElement__ | JSXFragment__): Self = StObject.set(x, "JSXExpressionContainer", value.asInstanceOf[js.Any])
     
     inline def setJSXFragment(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any): Self = StObject.set(x, "JSXFragment", value.asInstanceOf[js.Any])
     
     inline def setJSXIdentifier(
-      value: JSXAttribute | JSXClosingElement | JSXMemberExpression | JSXNamespacedName | JSXOpeningElement
+      value: JSXAttribute__ | JSXClosingElement__ | JSXMemberExpression__ | JSXNamespacedName__ | JSXOpeningElement__
     ): Self = StObject.set(x, "JSXIdentifier", value.asInstanceOf[js.Any])
     
-    inline def setJSXMemberExpression(value: JSXClosingElement | JSXMemberExpression | JSXOpeningElement): Self = StObject.set(x, "JSXMemberExpression", value.asInstanceOf[js.Any])
+    inline def setJSXMemberExpression(value: JSXClosingElement__ | JSXMemberExpression__ | JSXOpeningElement__): Self = StObject.set(x, "JSXMemberExpression", value.asInstanceOf[js.Any])
     
     inline def setJSXNamespacedName(
-      value: CallExpression_ | JSXAttribute | JSXClosingElement | JSXOpeningElement | NewExpression_ | OptionalCallExpression_
+      value: CallExpression_ | JSXAttribute__ | JSXClosingElement__ | JSXOpeningElement__ | NewExpression_ | OptionalCallExpression_
     ): Self = StObject.set(x, "JSXNamespacedName", value.asInstanceOf[js.Any])
     
-    inline def setJSXOpeningElement(value: JSXElement): Self = StObject.set(x, "JSXOpeningElement", value.asInstanceOf[js.Any])
+    inline def setJSXOpeningElement(value: JSXElement__): Self = StObject.set(x, "JSXOpeningElement", value.asInstanceOf[js.Any])
     
-    inline def setJSXOpeningFragment(value: JSXFragment): Self = StObject.set(x, "JSXOpeningFragment", value.asInstanceOf[js.Any])
+    inline def setJSXOpeningFragment(value: JSXFragment__): Self = StObject.set(x, "JSXOpeningFragment", value.asInstanceOf[js.Any])
     
-    inline def setJSXSpreadAttribute(value: JSXOpeningElement): Self = StObject.set(x, "JSXSpreadAttribute", value.asInstanceOf[js.Any])
+    inline def setJSXSpreadAttribute(value: JSXOpeningElement__): Self = StObject.set(x, "JSXSpreadAttribute", value.asInstanceOf[js.Any])
     
-    inline def setJSXSpreadChild(value: JSXElement | JSXFragment): Self = StObject.set(x, "JSXSpreadChild", value.asInstanceOf[js.Any])
+    inline def setJSXSpreadChild(value: JSXElement__ | JSXFragment__): Self = StObject.set(x, "JSXSpreadChild", value.asInstanceOf[js.Any])
     
-    inline def setJSXText(value: JSXElement | JSXFragment): Self = StObject.set(x, "JSXText", value.asInstanceOf[js.Any])
+    inline def setJSXText(value: JSXElement__ | JSXFragment__): Self = StObject.set(x, "JSXText", value.asInstanceOf[js.Any])
     
     inline def setLabeledStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
     
     inline def setLogicalExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
@@ -851,7 +851,7 @@ object ParentMaps {
     inline def setNewExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
     
     inline def setNoop(
-      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSDeclareFunction | TSDeclareMethod
+      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__
     ): Self = StObject.set(x, "Noop", value.asInstanceOf[js.Any])
     
     inline def setNullLiteral(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "NullLiteral", value.asInstanceOf[js.Any])
@@ -881,7 +881,7 @@ object ParentMaps {
     inline def setObjectMethod(value: ObjectExpression_): Self = StObject.set(x, "ObjectMethod", value.asInstanceOf[js.Any])
     
     inline def setObjectPattern(
-      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction | TSDeclareMethod | VariableDeclarator_
+      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | AssignmentPattern_ | CatchClause_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | TSDeclareFunction__ | TSDeclareMethod__ | VariableDeclarator_
     ): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
     
     inline def setObjectProperty(value: ObjectExpression_ | ObjectPattern_ | RecordExpression_): Self = StObject.set(x, "ObjectProperty", value.asInstanceOf[js.Any])
@@ -901,7 +901,7 @@ object ParentMaps {
     inline def setObjectTypeSpreadProperty(value: DeclareExportDeclaration_ | DeclaredPredicate_ | ObjectTypeAnnotation_): Self = StObject.set(x, "ObjectTypeSpreadProperty", value.asInstanceOf[js.Any])
     
     inline def setOpaqueType(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "OpaqueType", value.asInstanceOf[js.Any])
     
     inline def setOptionalCallExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "OptionalCallExpression", value.asInstanceOf[js.Any])
@@ -939,13 +939,13 @@ object ParentMaps {
     inline def setRegexLiteral(value: Null): Self = StObject.set(x, "RegexLiteral", value.asInstanceOf[js.Any])
     
     inline def setRestElement(
-      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSConstructorType | TSDeclareFunction | TSDeclareMethod | TSFunctionType | TSMethodSignature | VariableDeclarator_
+      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | ObjectPattern_ | ObjectProperty_ | RestElement_ | TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSConstructorType__ | TSDeclareFunction__ | TSDeclareMethod__ | TSFunctionType__ | TSMethodSignature__ | VariableDeclarator_
     ): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
     
     inline def setRestProperty(value: Null): Self = StObject.set(x, "RestProperty", value.asInstanceOf[js.Any])
     
     inline def setReturnStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
     
     inline def setSequenceExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
@@ -973,7 +973,7 @@ object ParentMaps {
     inline def setSwitchCase(value: SwitchStatement_): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
     
     inline def setSwitchStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
     
     inline def setSymbolTypeAnnotation(
@@ -981,227 +981,227 @@ object ParentMaps {
     ): Self = StObject.set(x, "SymbolTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTSAnyKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSAnyKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSArrayType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSArrayType", value.asInstanceOf[js.Any])
     
     inline def setTSAsExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any): Self = StObject.set(x, "TSAsExpression", value.asInstanceOf[js.Any])
     
     inline def setTSBigIntKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSBigIntKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSBooleanKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSBooleanKeyword", value.asInstanceOf[js.Any])
     
-    inline def setTSCallSignatureDeclaration(value: TSInterfaceBody | TSTypeLiteral): Self = StObject.set(x, "TSCallSignatureDeclaration", value.asInstanceOf[js.Any])
+    inline def setTSCallSignatureDeclaration(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSCallSignatureDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSConditionalType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSConditionalType", value.asInstanceOf[js.Any])
     
-    inline def setTSConstructSignatureDeclaration(value: TSInterfaceBody | TSTypeLiteral): Self = StObject.set(x, "TSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
+    inline def setTSConstructSignatureDeclaration(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSConstructorType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSConstructorType", value.asInstanceOf[js.Any])
     
     inline def setTSDeclareFunction(
-      value: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSDeclareFunction", value.asInstanceOf[js.Any])
     
     inline def setTSDeclareMethod(value: ClassBody_): Self = StObject.set(x, "TSDeclareMethod", value.asInstanceOf[js.Any])
     
     inline def setTSEnumDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSEnumDeclaration", value.asInstanceOf[js.Any])
     
-    inline def setTSEnumMember(value: TSEnumDeclaration): Self = StObject.set(x, "TSEnumMember", value.asInstanceOf[js.Any])
+    inline def setTSEnumMember(value: TSEnumDeclaration__): Self = StObject.set(x, "TSEnumMember", value.asInstanceOf[js.Any])
     
     inline def setTSExportAssignment(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSExportAssignment", value.asInstanceOf[js.Any])
     
     inline def setTSExpressionWithTypeArguments(
-      value: ClassDeclaration_ | ClassExpression_ | TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSInterfaceDeclaration | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: ClassDeclaration_ | ClassExpression_ | TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSInterfaceDeclaration__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSExpressionWithTypeArguments", value.asInstanceOf[js.Any])
     
-    inline def setTSExternalModuleReference(value: TSImportEqualsDeclaration): Self = StObject.set(x, "TSExternalModuleReference", value.asInstanceOf[js.Any])
+    inline def setTSExternalModuleReference(value: TSImportEqualsDeclaration__): Self = StObject.set(x, "TSExternalModuleReference", value.asInstanceOf[js.Any])
     
     inline def setTSFunctionType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSFunctionType", value.asInstanceOf[js.Any])
     
     inline def setTSImportEqualsDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSImportEqualsDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSImportType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSTypeQuery | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypeQuery__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSImportType", value.asInstanceOf[js.Any])
     
-    inline def setTSIndexSignature(value: ClassBody_ | TSInterfaceBody | TSTypeLiteral): Self = StObject.set(x, "TSIndexSignature", value.asInstanceOf[js.Any])
+    inline def setTSIndexSignature(value: ClassBody_ | TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSIndexSignature", value.asInstanceOf[js.Any])
     
     inline def setTSIndexedAccessType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSIndexedAccessType", value.asInstanceOf[js.Any])
     
     inline def setTSInferType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSInferType", value.asInstanceOf[js.Any])
     
     inline def setTSInstantiationExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "TSInstantiationExpression", value.asInstanceOf[js.Any])
     
-    inline def setTSInterfaceBody(value: TSInterfaceDeclaration): Self = StObject.set(x, "TSInterfaceBody", value.asInstanceOf[js.Any])
+    inline def setTSInterfaceBody(value: TSInterfaceDeclaration__): Self = StObject.set(x, "TSInterfaceBody", value.asInstanceOf[js.Any])
     
     inline def setTSInterfaceDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSInterfaceDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSIntersectionType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSIntersectionType", value.asInstanceOf[js.Any])
     
     inline def setTSIntrinsicKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSIntrinsicKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSLiteralType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSLiteralType", value.asInstanceOf[js.Any])
     
     inline def setTSMappedType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSMappedType", value.asInstanceOf[js.Any])
     
-    inline def setTSMethodSignature(value: TSInterfaceBody | TSTypeLiteral): Self = StObject.set(x, "TSMethodSignature", value.asInstanceOf[js.Any])
+    inline def setTSMethodSignature(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSMethodSignature", value.asInstanceOf[js.Any])
     
-    inline def setTSModuleBlock(value: TSModuleDeclaration): Self = StObject.set(x, "TSModuleBlock", value.asInstanceOf[js.Any])
+    inline def setTSModuleBlock(value: TSModuleDeclaration__): Self = StObject.set(x, "TSModuleBlock", value.asInstanceOf[js.Any])
     
     inline def setTSModuleDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | TSModuleDeclaration | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | TSModuleDeclaration__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSModuleDeclaration", value.asInstanceOf[js.Any])
     
-    inline def setTSNamedTupleMember(value: TSTupleType): Self = StObject.set(x, "TSNamedTupleMember", value.asInstanceOf[js.Any])
+    inline def setTSNamedTupleMember(value: TSTupleType__): Self = StObject.set(x, "TSNamedTupleMember", value.asInstanceOf[js.Any])
     
     inline def setTSNamespaceExportDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSNamespaceExportDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSNeverKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSNeverKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSNonNullExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any): Self = StObject.set(x, "TSNonNullExpression", value.asInstanceOf[js.Any])
     
     inline def setTSNullKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSNullKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSNumberKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSNumberKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSObjectKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSObjectKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSOptionalType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSOptionalType", value.asInstanceOf[js.Any])
     
     inline def setTSParameterProperty(
-      value: ArrayPattern_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | RestElement_ | TSDeclareMethod | VariableDeclarator_
+      value: ArrayPattern_ | AssignmentExpression_ | ClassMethod_ | ClassPrivateMethod_ | ForInStatement_ | ForOfStatement_ | RestElement_ | TSDeclareMethod__ | VariableDeclarator_
     ): Self = StObject.set(x, "TSParameterProperty", value.asInstanceOf[js.Any])
     
     inline def setTSParenthesizedType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSParenthesizedType", value.asInstanceOf[js.Any])
     
-    inline def setTSPropertySignature(value: TSInterfaceBody | TSTypeLiteral): Self = StObject.set(x, "TSPropertySignature", value.asInstanceOf[js.Any])
+    inline def setTSPropertySignature(value: TSInterfaceBody__ | TSTypeLiteral__): Self = StObject.set(x, "TSPropertySignature", value.asInstanceOf[js.Any])
     
     inline def setTSQualifiedName(
-      value: TSExpressionWithTypeArguments | TSImportEqualsDeclaration | TSImportType | TSQualifiedName | TSTypeQuery | TSTypeReference
+      value: TSExpressionWithTypeArguments__ | TSImportEqualsDeclaration__ | TSImportType__ | TSQualifiedName__ | TSTypeQuery__ | TSTypeReference__
     ): Self = StObject.set(x, "TSQualifiedName", value.asInstanceOf[js.Any])
     
     inline def setTSRestType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSRestType", value.asInstanceOf[js.Any])
     
     inline def setTSStringKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSStringKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSSymbolKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSSymbolKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSThisType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSTypePredicate | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSTypePredicate__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSThisType", value.asInstanceOf[js.Any])
     
     inline def setTSTupleType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTupleType", value.asInstanceOf[js.Any])
     
     inline def setTSTypeAliasDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TSTypeAliasDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSTypeAnnotation(
-      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSConstructorType | TSDeclareFunction | TSDeclareMethod | TSFunctionType | TSIndexSignature | TSMethodSignature | TSPropertySignature | TSTypePredicate
+      value: ArrayPattern_ | ArrowFunctionExpression_ | AssignmentPattern_ | ClassAccessorProperty_ | ClassMethod_ | ClassPrivateMethod_ | ClassPrivateProperty_ | ClassProperty_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | ObjectMethod_ | ObjectPattern_ | RestElement_ | TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSConstructorType__ | TSDeclareFunction__ | TSDeclareMethod__ | TSFunctionType__ | TSIndexSignature__ | TSMethodSignature__ | TSPropertySignature__ | TSTypePredicate__
     ): Self = StObject.set(x, "TSTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTSTypeAssertion(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any): Self = StObject.set(x, "TSTypeAssertion", value.asInstanceOf[js.Any])
     
     inline def setTSTypeLiteral(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeLiteral", value.asInstanceOf[js.Any])
     
     inline def setTSTypeOperator(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeOperator", value.asInstanceOf[js.Any])
     
-    inline def setTSTypeParameter(value: TSInferType | TSMappedType | TSTypeParameterDeclaration): Self = StObject.set(x, "TSTypeParameter", value.asInstanceOf[js.Any])
+    inline def setTSTypeParameter(value: TSInferType__ | TSMappedType__ | TSTypeParameterDeclaration__): Self = StObject.set(x, "TSTypeParameter", value.asInstanceOf[js.Any])
     
     inline def setTSTypeParameterDeclaration(
-      value: ArrowFunctionExpression_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSConstructorType | TSDeclareFunction | TSDeclareMethod | TSFunctionType | TSInterfaceDeclaration | TSMethodSignature | TSTypeAliasDeclaration
+      value: ArrowFunctionExpression_ | ClassDeclaration_ | ClassExpression_ | ClassMethod_ | ClassPrivateMethod_ | FunctionDeclaration_ | FunctionExpression_ | ObjectMethod_ | TSCallSignatureDeclaration__ | TSConstructSignatureDeclaration__ | TSConstructorType__ | TSDeclareFunction__ | TSDeclareMethod__ | TSFunctionType__ | TSInterfaceDeclaration__ | TSMethodSignature__ | TSTypeAliasDeclaration__
     ): Self = StObject.set(x, "TSTypeParameterDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTSTypeParameterInstantiation(
-      value: CallExpression_ | ClassDeclaration_ | ClassExpression_ | JSXOpeningElement | NewExpression_ | OptionalCallExpression_ | TSExpressionWithTypeArguments | TSImportType | TSInstantiationExpression | TSTypeQuery | TSTypeReference | TaggedTemplateExpression_
+      value: CallExpression_ | ClassDeclaration_ | ClassExpression_ | JSXOpeningElement__ | NewExpression_ | OptionalCallExpression_ | TSExpressionWithTypeArguments__ | TSImportType__ | TSInstantiationExpression__ | TSTypeQuery__ | TSTypeReference__ | TaggedTemplateExpression_
     ): Self = StObject.set(x, "TSTypeParameterInstantiation", value.asInstanceOf[js.Any])
     
     inline def setTSTypePredicate(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypePredicate", value.asInstanceOf[js.Any])
     
     inline def setTSTypeQuery(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeQuery", value.asInstanceOf[js.Any])
     
     inline def setTSTypeReference(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSTypeReference", value.asInstanceOf[js.Any])
     
     inline def setTSUndefinedKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSUndefinedKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSUnionType(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSUnionType", value.asInstanceOf[js.Any])
     
     inline def setTSUnknownKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSUnknownKeyword", value.asInstanceOf[js.Any])
     
     inline def setTSVoidKeyword(
-      value: TSArrayType | TSAsExpression | TSConditionalType | TSIndexedAccessType | TSIntersectionType | TSMappedType | TSNamedTupleMember | TSOptionalType | TSParenthesizedType | TSRestType | TSTupleType | TSTypeAliasDeclaration | TSTypeAnnotation | TSTypeAssertion | TSTypeOperator | TSTypeParameter | TSTypeParameterInstantiation | TSUnionType | TemplateLiteral_
+      value: TSArrayType__ | TSAsExpression__ | TSConditionalType__ | TSIndexedAccessType__ | TSIntersectionType__ | TSMappedType__ | TSNamedTupleMember__ | TSOptionalType__ | TSParenthesizedType__ | TSRestType__ | TSTupleType__ | TSTypeAliasDeclaration__ | TSTypeAnnotation__ | TSTypeAssertion__ | TSTypeOperator__ | TSTypeParameter__ | TSTypeParameterInstantiation__ | TSUnionType__ | TemplateLiteral_
     ): Self = StObject.set(x, "TSVoidKeyword", value.asInstanceOf[js.Any])
     
     inline def setTaggedTemplateExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
@@ -1217,13 +1217,13 @@ object ParentMaps {
     ): Self = StObject.set(x, "ThisTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setThrowStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
     
     inline def setTopicReference(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "TopicReference", value.asInstanceOf[js.Any])
     
     inline def setTryStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
     
     inline def setTupleExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "TupleExpression", value.asInstanceOf[js.Any])
@@ -1233,7 +1233,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "TupleTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTypeAlias(
-      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DeclareExportDeclaration_ | DeclaredPredicate_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "TypeAlias", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotation(
@@ -1249,7 +1249,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "TypeParameterDeclaration", value.asInstanceOf[js.Any])
     
     inline def setTypeParameterInstantiation(
-      value: CallExpression_ | ClassDeclaration_ | ClassExpression_ | ClassImplements_ | DeclareExportDeclaration_ | DeclaredPredicate_ | GenericTypeAnnotation_ | InterfaceExtends_ | JSXOpeningElement | NewExpression_ | OptionalCallExpression_ | TaggedTemplateExpression_
+      value: CallExpression_ | ClassDeclaration_ | ClassExpression_ | ClassImplements_ | DeclareExportDeclaration_ | DeclaredPredicate_ | GenericTypeAnnotation_ | InterfaceExtends_ | JSXOpeningElement__ | NewExpression_ | OptionalCallExpression_ | TaggedTemplateExpression_
     ): Self = StObject.set(x, "TypeParameterInstantiation", value.asInstanceOf[js.Any])
     
     inline def setTypeofTypeAnnotation(
@@ -1267,7 +1267,7 @@ object ParentMaps {
     inline def setV8IntrinsicIdentifier(value: CallExpression_ | NewExpression_): Self = StObject.set(x, "V8IntrinsicIdentifier", value.asInstanceOf[js.Any])
     
     inline def setVariableDeclaration(
-      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ExportNamedDeclaration_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
     
     inline def setVariableDeclarator(value: VariableDeclaration_): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
@@ -1281,11 +1281,11 @@ object ParentMaps {
     ): Self = StObject.set(x, "VoidTypeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setWhileStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
     
     inline def setWithStatement(
-      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock | WhileStatement_ | WithStatement_
+      value: BlockStatement_ | DoWhileStatement_ | ForInStatement_ | ForOfStatement_ | ForStatement_ | IfStatement_ | LabeledStatement_ | Program_ | StaticBlock_ | SwitchCase_ | TSModuleBlock__ | WhileStatement_ | WithStatement_
     ): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
     
     inline def setYieldExpression(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])

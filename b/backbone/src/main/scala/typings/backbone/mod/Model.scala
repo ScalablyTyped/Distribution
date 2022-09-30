@@ -174,9 +174,9 @@ open class Model[T /* <: ObjectHash */, S, E] () extends StObject {
   ): this.type = js.native
   def set[A /* <: StringKey[T] */](attributeName: Partial[T], value: Unit, options: S): this.type = js.native
   @JSName("set")
-  def set_A_StringKeyT[A /* <: StringKey[T] */](attributeName: Partial[T]): this.type = js.native
+  def set_A[A /* <: StringKey[T] */](attributeName: Partial[T]): this.type = js.native
   @JSName("set")
-  def set_A_StringKeyT[A /* <: StringKey[T] */](attributeName: Partial[T], value: S): this.type = js.native
+  def set_A[A /* <: StringKey[T] */](attributeName: Partial[T], value: S): this.type = js.native
   
   def unset(attribute: StringKey[T]): this.type = js.native
   def unset(attribute: StringKey[T], options: Silenceable): this.type = js.native

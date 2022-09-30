@@ -1,6 +1,6 @@
 package typings.ipldDagCbor
 
-import typings.ipldDagCbor.ipldDagCborNumbers.`113`
+import typings.ipldDagCbor.ipldDagCborInts.`113`
 import typings.ipldDagCbor.ipldDagCborStrings.`dag-cbor`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

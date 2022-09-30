@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait CommentContentRange
@@ -48,7 +48,7 @@ trait CommentContentRange
     * Gets or sets a value that indicates whether the comment text is bold.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var bold: Boolean = js.native
   
@@ -60,7 +60,7 @@ trait CommentContentRange
     * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var hyperlink: String = js.native
   
@@ -69,7 +69,7 @@ trait CommentContentRange
     * Inserts text into at the specified location. **Note**: For the modern comment, the content range tracked across context turns to empty if any revision to the comment is posted through the UI.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     *
     * @param text Required. The text to be inserted in to the CommentContentRange.
     * @param insertLocation Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -77,10 +77,10 @@ trait CommentContentRange
   def insertText(text: String, insertLocation: InsertLocation): CommentContentRange = js.native
   
   /**
-    * Checks whether the range length is zero. Read-only.
+    * Checks whether the range length is zero.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val isEmpty: Boolean = js.native
   
@@ -88,7 +88,7 @@ trait CommentContentRange
     * Gets or sets a value that indicates whether the comment text is italicized.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var italic: Boolean = js.native
   
@@ -117,15 +117,15 @@ trait CommentContentRange
     * Gets or sets a value that indicates whether the comment text has a strikethrough.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var strikeThrough: Boolean = js.native
   
   /**
-    * Gets the text of the comment range. Read-only.
+    * Gets the text of the comment range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val text: String = js.native
   
@@ -144,7 +144,7 @@ trait CommentContentRange
     * Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var underline: UnderlineType | Mixed | None | Hidden | DotLine | Single | typings.officeJs.officeJsStrings.Word | Double | Thick | Dotted | DottedHeavy | DashLine | DashLineHeavy | DashLineLong | DashLineLongHeavy | DotDashLine | DotDashLineHeavy | TwoDotDashLine | TwoDotDashLineHeavy | Wave | WaveHeavy | WaveDouble = js.native
   

@@ -22,14 +22,14 @@ object gamepadManagerMod {
     
     /* private */ var _babylonGamepads: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _checkGamepadsStatus(): Unit = js.native
     
     /* private */ var _gamepadEventSupported: Any = js.native
     
     /* private */ var _gamepadSupport: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _isMonitoring: Boolean = js.native
     
     /* private */ var _loggedErrors: Any = js.native

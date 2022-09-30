@@ -61,7 +61,7 @@ object warningMod {
         
         inline def setSecondaryActionsUndefined: Self = StObject.set(x, "secondaryActions", js.undefined)
         
-        inline def setSecondaryActionsVarargs(value: OnClick*): Self = StObject.set(x, "secondaryActions", js.Array(value :_*))
+        inline def setSecondaryActionsVarargs(value: OnClick*): Self = StObject.set(x, "secondaryActions", js.Array(value*))
       }
     }
   }

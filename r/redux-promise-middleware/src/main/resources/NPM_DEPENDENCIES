@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redux-promise-middleware" : "6.1.2"
+      "redux-promise-middleware" : "6.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "redux-promise-middleware" : "6.1.2"
+      "redux-promise-middleware" : "6.1.3"
     }
   ],
   "compile-devDependencies" : [

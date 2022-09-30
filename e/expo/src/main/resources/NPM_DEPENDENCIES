@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo" : "46.0.10"
+      "expo" : "46.0.13"
     }
   ],
   "test-dependencies" : [
     {
-      "expo" : "46.0.10"
+      "expo" : "46.0.13"
     }
   ],
   "compile-devDependencies" : [

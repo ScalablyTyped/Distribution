@@ -1,6 +1,6 @@
 package typings.exaroton.mod
 
-import typings.exaroton.exarotonNumbers.`1`
+import typings.exaroton.exarotonInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

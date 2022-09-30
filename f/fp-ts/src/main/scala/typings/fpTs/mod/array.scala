@@ -287,7 +287,7 @@ object array {
   
   inline def dropLeftWhile[A](predicate: Predicate[A]): js.Function1[/* bs */ js.Array[A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropLeftWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bs */ js.Array[A], js.Array[A]]]
   
-  inline def dropLeftWhile_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropLeftWhile")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
+  inline def dropLeftWhile_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropLeftWhile")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
   
   inline def dropRight(n: Double): js.Function1[/* as */ js.Array[Any], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropRight")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[Any], js.Array[Any]]]
   
@@ -301,7 +301,7 @@ object array {
   
   inline def every[A](predicate: Predicate[A]): Predicate[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[Predicate[js.Array[A]]]
   
-  inline def every_AB_A_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[js.Array[A], js.Array[B]]]
+  inline def every_AB_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[js.Array[A], js.Array[B]]]
   
   inline def exists[A](predicate: Predicate[A]): js.Function1[
     /* as */ js.Array[A], 
@@ -325,15 +325,15 @@ object array {
   
   inline def filterWithIndex[A](predicateWithIndex: PredicateWithIndex[Double, A]): js.Function1[/* bs */ js.Array[A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bs */ js.Array[A], js.Array[A]]]
   
-  inline def filterWithIndex_AB_A[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[Double, A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
+  inline def filterWithIndex_AB[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[Double, A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
   
   inline def findFirst[A](predicate: Predicate[A]): js.Function1[/* bs */ js.Array[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bs */ js.Array[A], Option_[A]]]
   
   inline def findFirstMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* as */ js.Array[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[B]]]
   
-  inline def findFirst_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[B]]]
+  inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[B]]]
   
   inline def findIndex[A](predicate: Predicate[A]): js.Function1[/* as */ js.Array[A], Option_[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[Double]]]
   
@@ -343,7 +343,7 @@ object array {
   
   inline def findLastMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* as */ js.Array[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findLastMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[B]]]
   
-  inline def findLast_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[B]]]
+  inline def findLast_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Option_[B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ js.Array[js.Function1[/* a */ A, Any]], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ js.Array[js.Function1[/* a */ A, Any]], js.Array[Any]]]
   
@@ -377,7 +377,7 @@ object array {
   
   inline def fromPredicate[A](predicate: Predicate[A]): js.Function1[/* b */ A, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ A, js.Array[A]]]
   
-  inline def fromPredicate_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, js.Array[B]]]
+  inline def fromPredicate_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, js.Array[B]]]
   
   inline def getDifferenceMagma[A](E: Eq[A]): Magma[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDifferenceMagma")(E.asInstanceOf[js.Any]).asInstanceOf[Magma[js.Array[A]]]
   
@@ -459,9 +459,9 @@ object array {
   
   inline def partitionWithIndex[A](predicateWithIndex: PredicateWithIndex[Double, A]): js.Function1[/* bs */ js.Array[A], Separated_[js.Array[A], js.Array[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bs */ js.Array[A], Separated_[js.Array[A], js.Array[A]]]]
   
-  inline def partitionWithIndex_AB_A[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[Double, A, B]): js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]]]
+  inline def partitionWithIndex_AB[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[Double, A, B]): js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]]]
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Separated_[js.Array[A], js.Array[B]]]]
   
   inline def prepend[A](head: A): js.Function1[/* tail */ js.Array[A], NonEmptyArray_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(head.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* tail */ js.Array[A], NonEmptyArray_[A]]]
   
@@ -517,7 +517,7 @@ object array {
   
   inline def spanLeft[A](predicate: Predicate[A]): js.Function1[/* bs */ js.Array[A], Spanned[A, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("spanLeft")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bs */ js.Array[A], Spanned[A, A]]]
   
-  inline def spanLeft_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Spanned[B, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("spanLeft")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Spanned[B, A]]]
+  inline def spanLeft_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], Spanned[B, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("spanLeft")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Spanned[B, A]]]
   
   inline def splitAt(n: Double): js.Function1[/* as */ js.Array[Any], js.Tuple2[js.Array[Any], js.Array[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitAt")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[Any], js.Tuple2[js.Array[Any], js.Array[Any]]]]
   
@@ -527,7 +527,7 @@ object array {
   
   inline def takeLeftWhile[A](predicate: Predicate[A]): js.Function1[/* bs */ js.Array[A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeLeftWhile")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* bs */ js.Array[A], js.Array[A]]]
   
-  inline def takeLeftWhile_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeLeftWhile")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
+  inline def takeLeftWhile_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ js.Array[A], js.Array[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeLeftWhile")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], js.Array[B]]]
   
   inline def takeRight(n: Double): js.Function1[/* as */ js.Array[Any], js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeRight")(n.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[Any], js.Array[Any]]]
   

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ClientTemplateParameter")
 @js.native
-class ClientTemplateParameter protected ()
+open class ClientTemplateParameter protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ClientTemplateParameter {
   def this(
     model: AbstractModel,

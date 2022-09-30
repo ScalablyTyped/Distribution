@@ -4,105 +4,105 @@ import org.scalablytyped.runtime.TopLevel
 import typings.fluentuiDomUtilities.ivirtualelementMod.IVirtualElement
 import typings.officeUiFabricReact.anon.ReadonlyICustomizerProps
 import typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`100`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`101`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`102`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`103`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`104`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`105`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`106`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`107`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`109`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`110`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`111`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`112`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`113`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`114`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`115`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`116`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`117`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`118`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`119`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`120`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`121`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`122`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`123`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`13`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`144`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`145`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`16`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`17`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`186`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`187`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`188`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`189`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`18`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`190`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`191`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`192`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`19`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`20`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`219`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`220`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`221`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`222`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`27`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`32`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`33`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`34`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`35`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`36`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`37`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`38`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`39`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`40`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`45`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`46`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`48`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`49`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`50`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`51`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`52`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`53`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`54`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`55`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`56`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`57`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`65`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`66`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`67`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`68`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`69`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`70`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`71`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`72`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`73`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`74`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`75`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`76`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`77`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`78`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`79`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`80`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`81`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`82`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`83`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`84`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`85`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`86`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`87`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`88`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`89`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`90`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`91`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`92`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`93`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`96`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`97`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`98`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`99`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`100`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`101`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`102`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`103`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`104`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`105`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`106`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`107`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`109`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`110`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`111`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`112`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`113`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`114`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`115`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`116`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`117`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`118`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`119`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`120`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`121`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`122`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`123`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`13`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`144`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`145`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`16`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`17`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`186`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`187`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`188`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`189`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`18`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`190`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`191`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`192`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`19`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`20`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`219`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`220`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`221`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`222`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`27`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`32`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`33`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`34`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`35`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`36`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`37`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`38`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`39`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`40`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`45`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`46`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`48`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`49`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`50`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`51`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`52`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`53`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`54`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`55`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`56`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`57`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`65`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`66`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`67`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`68`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`69`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`70`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`71`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`72`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`73`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`74`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`75`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`76`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`77`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`78`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`79`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`80`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`81`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`82`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`83`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`84`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`85`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`86`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`87`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`88`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`89`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`8`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`90`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`91`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`92`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`93`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`96`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`97`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`98`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`99`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`9`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`data-no-horizontal-wrap`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`data-no-vertical-wrap`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.localStorage
@@ -1024,7 +1024,7 @@ object utilitiesMod {
   @js.native
   val anchorProperties: Record[String, Double] = js.native
   
-  inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
+  inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(scala.List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
   
   inline def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -1036,7 +1036,7 @@ object utilitiesMod {
   
   inline def assertNever(x: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(x.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  inline def assign(target: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def assign(target: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("office-ui-fabric-react/lib/Utilities", "audioProperties")
   @js.native
@@ -1148,7 +1148,7 @@ object utilitiesMod {
     */ typings.officeUiFabricReact.officeUiFabricReactStrings.extendComponent & TopLevel[T]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendComponent")(parent.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((scala.List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
@@ -1175,7 +1175,7 @@ object utilitiesMod {
   @js.native
   val formProperties: Record[String, Double] = js.native
   
-  inline def format(s: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(s.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(s: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(s.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def getChildren(parent: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
   inline def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any], allowVirtualChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
@@ -1404,7 +1404,7 @@ object utilitiesMod {
   inline def mergeSettings(oldSettings: ISettings, newSettings: ISettings): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
   inline def mergeSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
   
-  inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def modalize(target: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("modalize")(target.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
@@ -1591,98 +1591,98 @@ object utilitiesMod {
     pure: Boolean
   ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
   
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: ICustomizableProps,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,

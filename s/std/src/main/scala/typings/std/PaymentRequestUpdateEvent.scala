@@ -13,7 +13,7 @@ trait PaymentRequestUpdateEvent
   extends StObject
      with Event {
   
-  def updateWith(detailsPromise: js.Thenable[PaymentDetailsUpdate]): Unit = js.native
   /* standard dom */
   def updateWith(detailsPromise: PaymentDetailsUpdate): Unit = js.native
+  def updateWith(detailsPromise: PromiseLike[PaymentDetailsUpdate]): Unit = js.native
 }

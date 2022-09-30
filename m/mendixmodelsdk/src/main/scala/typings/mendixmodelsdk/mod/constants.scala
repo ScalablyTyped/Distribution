@@ -12,7 +12,7 @@ object constants {
     */
   @JSImport("mendixmodelsdk", "constants.Constant")
   @js.native
-  class Constant protected ()
+  open class Constant protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.constants.Constant {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

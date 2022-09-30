@@ -1,7 +1,7 @@
 package typings.gridstack
 
-import typings.gridstack.gridstackNumbers.`-1`
-import typings.gridstack.gridstackNumbers.`1`
+import typings.gridstack.gridstackInts.`-1`
+import typings.gridstack.gridstackInts.`1`
 import typings.gridstack.typesMod.GridStackMoveOpts
 import typings.gridstack.typesMod.GridStackNode
 import typings.gridstack.typesMod.GridStackPosition

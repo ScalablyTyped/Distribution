@@ -36,7 +36,7 @@ object Command {
   /**
     * Creates a new Command literal.
     */
-  inline def create(title: String, command: String, args: Any*): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Command]
+  inline def create(title: String, command: String, args: Any*): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Command]
   
   /**
     * Checks whether the given literal conforms to the [Command](#Command) interface.

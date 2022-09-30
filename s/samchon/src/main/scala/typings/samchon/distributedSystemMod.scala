@@ -30,13 +30,5 @@ object distributedSystemMod {
       * @hidden
       */
     /* private */ var _Compute_average_elapsed_time: Any = js.native
-    
-    /**
-      * Get manager of this object.
-      *
-      * @return The parent {@link DistributedSystemArray} object.
-      */
-    @JSName("getSystemArray")
-    def getSystemArray_SystemArray_DistributedSystemArrayDistributedSystem_SystemArray[SystemArray /* <: DistributedSystemArray[DistributedSystem] */](): SystemArray = js.native
   }
 }

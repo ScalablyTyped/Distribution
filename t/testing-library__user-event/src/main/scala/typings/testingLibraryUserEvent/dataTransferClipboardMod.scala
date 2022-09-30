@@ -17,7 +17,7 @@ object dataTransferClipboardMod {
   
   inline def attachClipboardStubToView(window: Window & (/* globalThis */ Any)): ClipboardStubControlInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("attachClipboardStubToView")(window.asInstanceOf[js.Any]).asInstanceOf[ClipboardStubControlInstance]
   
-  inline def createClipboardItem(window: Window & (/* globalThis */ Any), blobs: (Blob | String)*): ClipboardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createClipboardItem")(List(window.asInstanceOf[js.Any]).`++`(blobs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClipboardItem]
+  inline def createClipboardItem(window: Window & (/* globalThis */ Any), blobs: (Blob | String)*): ClipboardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createClipboardItem")(scala.List(window.asInstanceOf[js.Any]).`++`(blobs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClipboardItem]
   
   inline def detachClipboardStubFromView(window: Window & (/* globalThis */ Any)): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachClipboardStubFromView")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

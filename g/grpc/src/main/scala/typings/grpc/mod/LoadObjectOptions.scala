@@ -1,7 +1,7 @@
 package typings.grpc.mod
 
-import typings.grpc.grpcNumbers.`5`
-import typings.grpc.grpcNumbers.`6`
+import typings.grpc.grpcInts.`5`
+import typings.grpc.grpcInts.`6`
 import typings.grpc.grpcStrings.detect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

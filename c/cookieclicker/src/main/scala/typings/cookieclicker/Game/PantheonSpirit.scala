@@ -1,9 +1,9 @@
 package typings.cookieclicker.Game
 
-import typings.cookieclicker.cookieclickerNumbers.`-1`
-import typings.cookieclicker.cookieclickerNumbers.`0`
-import typings.cookieclicker.cookieclickerNumbers.`1`
-import typings.cookieclicker.cookieclickerNumbers.`2`
+import typings.cookieclicker.cookieclickerInts.`-1`
+import typings.cookieclicker.cookieclickerInts.`0`
+import typings.cookieclicker.cookieclickerInts.`1`
+import typings.cookieclicker.cookieclickerInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

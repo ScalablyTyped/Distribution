@@ -92,21 +92,13 @@ inline def useResetRecoilState(recoilState: RecoilState[Any]): Resetter = ^.asIn
 
 inline def useSetRecoilState[T](recoilState: RecoilState[T]): SetterOrUpdater[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetRecoilState")(recoilState.asInstanceOf[js.Any]).asInstanceOf[SetterOrUpdater[T]]
 
-inline def waitForAll[RecoilValues /* <: StringDictionary[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValues[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAll")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValues[RecoilValues]]]
+inline def waitForAll[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValues[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAll")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValues[RecoilValues]]]
 
-inline def waitForAllSettled[RecoilValues /* <: StringDictionary[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAllSettled")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
+inline def waitForAllSettled[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAllSettled")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
 
-inline def waitForAllSettled_RecoilValues_ArrayRecoilValueAny[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAllSettled")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
+inline def waitForAny[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAny")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
 
-inline def waitForAll_RecoilValues_ArrayRecoilValueAny[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValues[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAll")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValues[RecoilValues]]]
-
-inline def waitForAny[RecoilValues /* <: StringDictionary[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAny")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
-
-inline def waitForAny_RecoilValues_ArrayRecoilValueAny[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAny")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
-
-inline def waitForNone[RecoilValues /* <: StringDictionary[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForNone")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
-
-inline def waitForNone_RecoilValues_ArrayRecoilValueAny[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForNone")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
+inline def waitForNone[RecoilValues /* <: js.Array[RecoilValue[Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForNone")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
 
 type AtomEffect[T] = js.Function1[/* param */ GetInfoUNSTABLE[T], Unit | js.Function0[Unit]]
 

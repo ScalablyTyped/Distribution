@@ -1,25 +1,25 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x10`
-import typings.webcl.webclNumbers.`0x1`
-import typings.webcl.webclNumbers.`0x20`
-import typings.webcl.webclNumbers.`0x2`
-import typings.webcl.webclNumbers.`0x40`
-import typings.webcl.webclNumbers.`0x4`
-import typings.webcl.webclNumbers.`0x8`
+import typings.webcl.webclInts.`0x10`
+import typings.webcl.webclInts.`0x1`
+import typings.webcl.webclInts.`0x20`
+import typings.webcl.webclInts.`0x2`
+import typings.webcl.webclInts.`0x40`
+import typings.webcl.webclInts.`0x4`
+import typings.webcl.webclInts.`0x8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_device_fp_config - bitfield */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1`
-  - typings.webcl.webclNumbers.`0x2`
-  - typings.webcl.webclNumbers.`0x4`
-  - typings.webcl.webclNumbers.`0x8`
-  - typings.webcl.webclNumbers.`0x10`
-  - typings.webcl.webclNumbers.`0x20`
-  - typings.webcl.webclNumbers.`0x40`
+  - typings.webcl.webclInts.`0x1`
+  - typings.webcl.webclInts.`0x2`
+  - typings.webcl.webclInts.`0x4`
+  - typings.webcl.webclInts.`0x8`
+  - typings.webcl.webclInts.`0x10`
+  - typings.webcl.webclInts.`0x20`
+  - typings.webcl.webclInts.`0x40`
 */
 trait DeviceFPConfigBits extends StObject
 object DeviceFPConfigBits {

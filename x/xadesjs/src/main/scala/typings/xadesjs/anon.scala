@@ -530,51 +530,6 @@ object anon {
     }
   }
   
-  trait AttributeNames extends StObject {
-    
-    var AttributeNames: Encoding
-    
-    var DefaultPrefix: String
-    
-    var ElementNames: AllDataObjectsTimeStamp
-    
-    /**
-      * The XAdES XML namespace URI
-      */
-    var NamespaceURI: String
-    
-    /**
-      * Mandated type name for the Uri reference to the SignedProperties element
-      */
-    var SignedPropertiesType: String
-  }
-  object AttributeNames {
-    
-    inline def apply(
-      AttributeNames: Encoding,
-      DefaultPrefix: String,
-      ElementNames: AllDataObjectsTimeStamp,
-      NamespaceURI: String,
-      SignedPropertiesType: String
-    ): AttributeNames = {
-      val __obj = js.Dynamic.literal(AttributeNames = AttributeNames.asInstanceOf[js.Any], DefaultPrefix = DefaultPrefix.asInstanceOf[js.Any], ElementNames = ElementNames.asInstanceOf[js.Any], NamespaceURI = NamespaceURI.asInstanceOf[js.Any], SignedPropertiesType = SignedPropertiesType.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AttributeNames]
-    }
-    
-    extension [Self <: AttributeNames](x: Self) {
-      
-      inline def setAttributeNames(value: Encoding): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultPrefix(value: String): Self = StObject.set(x, "DefaultPrefix", value.asInstanceOf[js.Any])
-      
-      inline def setElementNames(value: AllDataObjectsTimeStamp): Self = StObject.set(x, "ElementNames", value.asInstanceOf[js.Any])
-      
-      inline def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
-      
-      inline def setSignedPropertiesType(value: String): Self = StObject.set(x, "SignedPropertiesType", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Encoding extends StObject {
     
     var Encoding: String

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.BinaryRequestHandling")
 @js.native
-class BinaryRequestHandling protected ()
+open class BinaryRequestHandling protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.BinaryRequestHandling {
   def this(
     model: AbstractModel,

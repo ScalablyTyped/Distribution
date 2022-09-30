@@ -1,5 +1,6 @@
 package typings.domLoaded
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ object mod {
       */
     /* standard es5 */
     inline def `catch`[TResult](): js.Promise[Unit | TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")().asInstanceOf[js.Promise[Unit | TResult]]
-    inline def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[Unit | TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")(onrejected.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit | TResult]]
+    inline def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): js.Promise[Unit | TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("catch")(onrejected.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit | TResult]]
     
     /**
       * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
@@ -53,12 +54,12 @@ object mod {
       */
     /* standard es5 */
     inline def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")().asInstanceOf[js.Promise[TResult1 | TResult2]]
-    inline def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Unit, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")(onfulfilled.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TResult1 | TResult2]]
+    inline def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Unit, PromiseLike[TResult1] | TResult1]): js.Promise[TResult1 | TResult2] = ^.asInstanceOf[js.Dynamic].applyDynamic("then")(onfulfilled.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TResult1 | TResult2]]
     inline def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ Unit, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onfulfilled: js.Function1[/* value */ Unit, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): js.Promise[TResult1 | TResult2] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(onfulfilled.asInstanceOf[js.Any], onrejected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TResult1 | TResult2]]
-    inline def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(onfulfilled.asInstanceOf[js.Any], onrejected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TResult1 | TResult2]]
-    inline def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(onfulfilled.asInstanceOf[js.Any], onrejected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TResult1 | TResult2]]
+    inline def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(onfulfilled.asInstanceOf[js.Any], onrejected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TResult1 | TResult2]]
+    inline def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = (^.asInstanceOf[js.Dynamic].applyDynamic("then")(onfulfilled.asInstanceOf[js.Any], onrejected.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TResult1 | TResult2]]
   }
 }

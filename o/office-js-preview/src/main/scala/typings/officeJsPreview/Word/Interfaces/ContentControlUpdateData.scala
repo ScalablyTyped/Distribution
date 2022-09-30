@@ -52,8 +52,7 @@ trait ContentControlUpdateData extends StObject {
   var font: js.UndefOr[FontUpdateData] = js.undefined
   
   /**
-    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-    * **Note**: The set operation for this property is not supported in Word on the web.
+    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
     *
     * @remarks
     * [Api set: WordApi 1.1]

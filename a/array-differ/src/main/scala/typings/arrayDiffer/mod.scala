@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ValueType](array: js.Array[ValueType], values: js.Array[ValueType]*): js.Array[ValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(array.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[ValueType]]
+  inline def default[ValueType](array: js.Array[ValueType], values: js.Array[ValueType]*): js.Array[ValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(array.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[ValueType]]
 }

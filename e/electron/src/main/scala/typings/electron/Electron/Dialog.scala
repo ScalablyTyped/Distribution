@@ -58,11 +58,11 @@ trait Dialog extends StObject {
   /**
     * resolves with a promise containing the following properties:
     *
-    * * `response` Number - The index of the clicked button.
-    * * `checkboxChecked` Boolean - The checked state of the checkbox if
+    * * `response` number - The index of the clicked button.
+    * * `checkboxChecked` boolean - The checked state of the checkbox if
     * `checkboxLabel` was set. Otherwise `false`.
     *
-    * Shows a message box, it will block the process until the message box is closed.
+    * Shows a message box.
     *
     * The `browserWindow` argument allows the dialog to attach itself to a parent
     * window, making it modal.
@@ -71,11 +71,11 @@ trait Dialog extends StObject {
   /**
     * resolves with a promise containing the following properties:
     *
-    * * `response` Number - The index of the clicked button.
-    * * `checkboxChecked` Boolean - The checked state of the checkbox if
+    * * `response` number - The index of the clicked button.
+    * * `checkboxChecked` boolean - The checked state of the checkbox if
     * `checkboxLabel` was set. Otherwise `false`.
     *
-    * Shows a message box, it will block the process until the message box is closed.
+    * Shows a message box.
     *
     * The `browserWindow` argument allows the dialog to attach itself to a parent
     * window, making it modal.
@@ -108,10 +108,10 @@ trait Dialog extends StObject {
   /**
     * Resolve with an object containing the following:
     *
-    * * `canceled` Boolean - whether or not the dialog was canceled.
-    * * `filePaths` String[] - An array of file paths chosen by the user. If the
+    * * `canceled` boolean - whether or not the dialog was canceled.
+    * * `filePaths` string[] - An array of file paths chosen by the user. If the
     * dialog is cancelled this will be an empty array.
-    * * `bookmarks` String[] (optional) _macOS_ _mas_ - An array matching the
+    * * `bookmarks` string[] (optional) _macOS_ _mas_ - An array matching the
     * `filePaths` array of base64 encoded strings which contains security scoped
     * bookmark data. `securityScopedBookmarks` must be enabled for this to be
     * populated. (For return values, see table here.)
@@ -134,10 +134,10 @@ trait Dialog extends StObject {
   /**
     * Resolve with an object containing the following:
     *
-    * * `canceled` Boolean - whether or not the dialog was canceled.
-    * * `filePaths` String[] - An array of file paths chosen by the user. If the
+    * * `canceled` boolean - whether or not the dialog was canceled.
+    * * `filePaths` string[] - An array of file paths chosen by the user. If the
     * dialog is cancelled this will be an empty array.
-    * * `bookmarks` String[] (optional) _macOS_ _mas_ - An array matching the
+    * * `bookmarks` string[] (optional) _macOS_ _mas_ - An array matching the
     * `filePaths` array of base64 encoded strings which contains security scoped
     * bookmark data. `securityScopedBookmarks` must be enabled for this to be
     * populated. (For return values, see table here.)
@@ -200,10 +200,10 @@ trait Dialog extends StObject {
   /**
     * Resolve with an object containing the following:
     *
-    * * `canceled` Boolean - whether or not the dialog was canceled.
-    * * `filePath` String (optional) - If the dialog is canceled, this will be
+    * * `canceled` boolean - whether or not the dialog was canceled.
+    * * `filePath` string (optional) - If the dialog is canceled, this will be
     * `undefined`.
-    * * `bookmark` String (optional) _macOS_ _mas_ - Base64 encoded string which
+    * * `bookmark` string (optional) _macOS_ _mas_ - Base64 encoded string which
     * contains the security scoped bookmark data for the saved file.
     * `securityScopedBookmarks` must be enabled for this to be present. (For return
     * values, see table here.)
@@ -221,10 +221,10 @@ trait Dialog extends StObject {
   /**
     * Resolve with an object containing the following:
     *
-    * * `canceled` Boolean - whether or not the dialog was canceled.
-    * * `filePath` String (optional) - If the dialog is canceled, this will be
+    * * `canceled` boolean - whether or not the dialog was canceled.
+    * * `filePath` string (optional) - If the dialog is canceled, this will be
     * `undefined`.
-    * * `bookmark` String (optional) _macOS_ _mas_ - Base64 encoded string which
+    * * `bookmark` string (optional) _macOS_ _mas_ - Base64 encoded string which
     * contains the security scoped bookmark data for the saved file.
     * `securityScopedBookmarks` must be enabled for this to be present. (For return
     * values, see table here.)

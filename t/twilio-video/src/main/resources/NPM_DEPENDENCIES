@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "twilio-video" : "2.24.1"
+      "twilio-video" : "2.24.2"
     }
   ],
   "test-dependencies" : [
     {
-      "twilio-video" : "2.24.1"
+      "twilio-video" : "2.24.2"
     }
   ],
   "compile-devDependencies" : [

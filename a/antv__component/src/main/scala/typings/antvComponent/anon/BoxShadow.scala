@@ -30,7 +30,7 @@ trait BoxShadow extends StObject {
   
   var margin: Unit
   
-  var marginBottom: String
+  var marginBottom: Unit
   
   var marginLeft: Unit
   
@@ -38,15 +38,15 @@ trait BoxShadow extends StObject {
   
   var padding: Unit
   
-  var position: Unit
+  var position: String
   
-  var transition: Unit
+  var transition: String
   
   var visibility: Unit
   
   var width: Unit
   
-  var zIndex: Unit
+  var zIndex: Double
 }
 object BoxShadow {
   
@@ -63,15 +63,15 @@ object BoxShadow {
     lineHeight: Unit,
     listStyleType: Unit,
     margin: Unit,
-    marginBottom: String,
+    marginBottom: Unit,
     marginLeft: Unit,
     marginRight: Unit,
     padding: Unit,
-    position: Unit,
-    transition: Unit,
+    position: String,
+    transition: String,
     visibility: Unit,
     width: Unit,
-    zIndex: Unit
+    zIndex: Double
   ): BoxShadow = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], listStyleType = listStyleType.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginBottom = marginBottom.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxShadow]
@@ -103,7 +103,7 @@ object BoxShadow {
     
     inline def setMargin(value: Unit): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMarginBottom(value: String): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: Unit): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     inline def setMarginLeft(value: Unit): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
@@ -111,14 +111,14 @@ object BoxShadow {
     
     inline def setPadding(value: Unit): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: Unit): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setTransition(value: Unit): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setVisibility(value: Unit): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Unit): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    inline def setZIndex(value: Unit): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -17,13 +17,13 @@ object mod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
@@ -35,7 +35,7 @@ object mod {
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
-    def setNext(sequenceId: String, callback: js.Function2[/* err */ js.Any, /* res */ this.type, Unit]): Unit = js.native
+    def setNext(sequenceId: String, callback: js.Function2[/* err */ Any, /* res */ this.type, Unit]): Unit = js.native
   }
   
   trait SequenceOptions extends StObject {
@@ -81,7 +81,7 @@ object mod {
       
       inline def setReference_fieldsUndefined: Self = StObject.set(x, "reference_fields", js.undefined)
       
-      inline def setReference_fieldsVarargs(value: String*): Self = StObject.set(x, "reference_fields", js.Array(value :_*))
+      inline def setReference_fieldsVarargs(value: String*): Self = StObject.set(x, "reference_fields", js.Array(value*))
     }
   }
   
@@ -92,7 +92,7 @@ object mod {
     // overload for the default mongoose plugin function
     def plugin(
       plugin: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ Any, 
           /* options */ js.UndefOr[js.Object], 
           Unit
         ]
@@ -103,7 +103,7 @@ object mod {
     ): this.type = js.native
     def plugin(
       plugin: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ Any, 
           /* options */ js.UndefOr[js.Object], 
           Unit
         ],

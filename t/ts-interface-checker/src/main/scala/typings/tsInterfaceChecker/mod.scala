@@ -260,7 +260,7 @@ object mod {
   
   inline def enumtype(values: StringDictionary[String | Double]): typings.tsInterfaceChecker.typesMod.TEnumType = ^.asInstanceOf[js.Dynamic].applyDynamic("enumtype")(values.asInstanceOf[js.Any]).asInstanceOf[typings.tsInterfaceChecker.typesMod.TEnumType]
   
-  inline def func(resultSpec: TypeSpec, params: typings.tsInterfaceChecker.typesMod.TParam*): typings.tsInterfaceChecker.typesMod.TFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(List(resultSpec.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.tsInterfaceChecker.typesMod.TFunc]
+  inline def func(resultSpec: TypeSpec, params: typings.tsInterfaceChecker.typesMod.TParam*): typings.tsInterfaceChecker.typesMod.TFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(scala.List(resultSpec.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.tsInterfaceChecker.typesMod.TFunc]
   
   inline def iface(
     bases: js.Array[String],

@@ -84,6 +84,12 @@ object intercomWebStrings {
   inline def shutdown: shutdown = "shutdown".asInstanceOf[shutdown]
   
   @js.native
+  sealed trait startSurvey
+    extends StObject
+       with IntercomCommand
+  inline def startSurvey: startSurvey = "startSurvey".asInstanceOf[startSurvey]
+  
+  @js.native
   sealed trait startTour
     extends StObject
        with IntercomCommand

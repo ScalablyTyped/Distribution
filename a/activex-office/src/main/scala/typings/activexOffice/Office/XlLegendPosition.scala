@@ -1,22 +1,22 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-4107`
-import typings.activexOffice.activexOfficeNumbers.`-4131`
-import typings.activexOffice.activexOfficeNumbers.`-4152`
-import typings.activexOffice.activexOfficeNumbers.`-4160`
-import typings.activexOffice.activexOfficeNumbers.`-4161`
-import typings.activexOffice.activexOfficeNumbers.`2`
+import typings.activexOffice.activexOfficeInts.`-4107`
+import typings.activexOffice.activexOfficeInts.`-4131`
+import typings.activexOffice.activexOfficeInts.`-4152`
+import typings.activexOffice.activexOfficeInts.`-4160`
+import typings.activexOffice.activexOfficeInts.`-4161`
+import typings.activexOffice.activexOfficeInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-4107`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`-4161`
-  - typings.activexOffice.activexOfficeNumbers.`-4131`
-  - typings.activexOffice.activexOfficeNumbers.`-4152`
-  - typings.activexOffice.activexOfficeNumbers.`-4160`
+  - typings.activexOffice.activexOfficeInts.`-4107`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`-4161`
+  - typings.activexOffice.activexOfficeInts.`-4131`
+  - typings.activexOffice.activexOfficeInts.`-4152`
+  - typings.activexOffice.activexOfficeInts.`-4160`
 */
 trait XlLegendPosition extends StObject
 object XlLegendPosition {

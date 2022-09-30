@@ -6,6 +6,7 @@ import typings.q.mod.IPromise
 import typings.q.mod.IWhenable
 import typings.q.mod.Promise
 import typings.q.mod.PromiseState
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ object global {
       * If value is a promise from another library it is coerced into a Q promise (where possible).
       * If value is not a promise, returns a promise that is fulfilled with value.
       */
-    inline def apply[T](promise: js.Thenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    inline def apply[T](promise: PromiseLike[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
     @JSGlobal("Q")
     @js.native
@@ -69,13 +70,13 @@ object global {
     inline def delay[T](promiseOrValue: T, ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(promiseOrValue.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     inline def delay[T](promiseOrValue: Promise[T], ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(promiseOrValue.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def denodeify[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
+    inline def denodeify[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(scala.List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
-    inline def fbind[T](method: js.Function1[/* repeated */ Any, IWhenable[T]], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fbind")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
+    inline def fbind[T](method: js.Function1[/* repeated */ Any, IWhenable[T]], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fbind")(scala.List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
-    inline def fcall[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fcall")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
+    inline def fcall[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fcall")(scala.List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
     
-    inline def invoke[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
+    inline def invoke[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((scala.List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
     inline def isFulfilled(promise: Promise[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFulfilled")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
@@ -93,9 +94,9 @@ object global {
     def longStackSupport: Boolean = js.native
     inline def longStackSupport_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longStackSupport")(x.asInstanceOf[js.Any])
     
-    inline def mcall[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mcall")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
+    inline def mcall[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mcall")((scala.List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
-    inline def nbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], thisArg: Any, args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nbind")((List(nodeFunction.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
+    inline def nbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], thisArg: Any, args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nbind")((scala.List(nodeFunction.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
     inline def nearer[T](promise: Promise[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("nearer")(promise.asInstanceOf[js.Any]).asInstanceOf[T]
     
@@ -103,17 +104,17 @@ object global {
     
     inline def nfapply[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: js.Array[Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfapply")(nodeFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def nfbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfbind")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
+    inline def nfbind[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function1[/* repeated */ Any, Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfbind")(scala.List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* repeated */ Any, Promise[T]]]
     
-    inline def nfcall[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")(List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
+    inline def nfcall[T](nodeFunction: js.Function1[/* repeated */ Any, Any], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")(scala.List(nodeFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
     
-    inline def ninvoke[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ninvoke")((List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
+    inline def ninvoke[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ninvoke")((scala.List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
     inline def noConflict(): Typeofq = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Typeofq]
     
     inline def npost[T](nodeModule: Any, functionName: String, args: js.Array[Any]): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("npost")(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def nsend[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsend")((List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
+    inline def nsend[T](nodeModule: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nsend")((scala.List(nodeModule.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
     @JSGlobal("Q.onerror")
     @js.native
@@ -130,7 +131,7 @@ object global {
     inline def resolve[T](): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise[T]]
     inline def resolve[T](`object`: IWhenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(`object`.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
     
-    inline def send[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")((List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
+    inline def send[T](obj: Any, functionName: String, args: Any*): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")((scala.List(obj.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Promise[T]]
     
     inline def spread[T, U](promises: js.Array[IWhenable[T]], onFulfilled: js.Function1[/* repeated */ T, IWhenable[U]]): Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(promises.asInstanceOf[js.Any], onFulfilled.asInstanceOf[js.Any])).asInstanceOf[Promise[U]]
     inline def spread[T, U](
@@ -142,7 +143,7 @@ object global {
     inline def timeout[T](promise: Promise[T], ms: Double): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     inline def timeout[T](promise: Promise[T], ms: Double, message: String): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
-    inline def `try`[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
+    inline def `try`[T](method: js.Function1[/* repeated */ Any, T], args: Any*): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(scala.List(method.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Promise[T]]
     
     inline def when(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")().asInstanceOf[Promise[Unit]]
     inline def when[T](value: IWhenable[T]): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]

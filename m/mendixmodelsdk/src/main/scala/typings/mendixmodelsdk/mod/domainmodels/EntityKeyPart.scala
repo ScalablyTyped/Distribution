@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "domainmodels.EntityKeyPart")
 @js.native
-class EntityKeyPart protected ()
+open class EntityKeyPart protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.EntityKeyPart {
   def this(
     model: AbstractModel,

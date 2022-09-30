@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "DivIcon")
 @js.native
-class DivIcon_ () extends Icon_[DivIconOptions] {
+open class DivIcon_ () extends Icon_[DivIconOptions] {
   def this(options: DivIconOptions) = this()
 }

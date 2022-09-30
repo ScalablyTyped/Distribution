@@ -221,7 +221,7 @@ object Utils {
       * @param context The context in which the callback is invoked.
       * @param args Additional arguments that will be passed to the callback, after the current array item.
       */
-    inline def Each(array: js.Array[Any], callback: js.Function, context: js.Object, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Each")((List(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
+    inline def Each(array: js.Array[Any], callback: js.Function, context: js.Object, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Each")((scala.List(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
     
     /**
       * Passes each element in the array, between the start and end indexes, to the given callback.
@@ -239,7 +239,7 @@ object Utils {
       startIndex: Double,
       endIndex: Double,
       args: Any*
-    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("EachInRange")((List(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("EachInRange")((scala.List(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
     
     /**
       * Searches a pre-sorted array for the closet value to the given number.

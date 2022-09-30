@@ -47,13 +47,13 @@ trait ClassMethod_
   
   var `override`: js.UndefOr[Boolean] = js.undefined
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty]
+  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__]
   
-  var returnType: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null] = js.undefined
+  var returnType: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   var static: Boolean
   
-  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_ | Null] = js.undefined
+  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
   var type_ClassMethod_ : ClassMethod
@@ -67,7 +67,7 @@ object ClassMethod_ {
     generator: Boolean,
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
     kind: get | set | method_ | constructor,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
@@ -125,11 +125,11 @@ object ClassMethod_ {
     
     inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    inline def setParams(value: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: (Identifier_ | Pattern | RestElement_ | TSParameterProperty)*): Self = StObject.set(x, "params", js.Array(value*))
+    inline def setParamsVarargs(value: (Identifier_ | Pattern | RestElement_ | TSParameterProperty__)*): Self = StObject.set(x, "params", js.Array(value*))
     
-    inline def setReturnType(value: TypeAnnotation_ | TSTypeAnnotation | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     inline def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
@@ -139,7 +139,7 @@ object ClassMethod_ {
     
     inline def setType(value: ClassMethod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     

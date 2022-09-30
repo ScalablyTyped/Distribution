@@ -303,7 +303,7 @@ object mod {
     var availableLegacyWidgets: js.Array[Description]
     
     // FIXME: it is unclear what this value should be.
-    var availableTemplates: js.Array[js.Any]
+    var availableTemplates: js.Array[Any]
     
     /**
       * Empty post placeholder.
@@ -399,7 +399,7 @@ object mod {
       allowedBlockTypes: js.Array[String] | Boolean,
       autosaveInterval: Double,
       availableLegacyWidgets: js.Array[Description],
-      availableTemplates: js.Array[js.Any],
+      availableTemplates: js.Array[Any],
       bodyPlaceholder: String,
       codeEditingEnabled: Boolean,
       colors: js.Array[Color],
@@ -431,7 +431,7 @@ object mod {
       
       inline def setAllowedBlockTypes(value: js.Array[String] | Boolean): Self = StObject.set(x, "allowedBlockTypes", value.asInstanceOf[js.Any])
       
-      inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value :_*))
+      inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value*))
       
       inline def setAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "allowedMimeTypes", value.asInstanceOf[js.Any])
       
@@ -441,11 +441,11 @@ object mod {
       
       inline def setAvailableLegacyWidgets(value: js.Array[Description]): Self = StObject.set(x, "availableLegacyWidgets", value.asInstanceOf[js.Any])
       
-      inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
+      inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value*))
       
-      inline def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+      inline def setAvailableTemplates(value: js.Array[Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
       
-      inline def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
+      inline def setAvailableTemplatesVarargs(value: Any*): Self = StObject.set(x, "availableTemplates", js.Array(value*))
       
       inline def setBodyPlaceholder(value: String): Self = StObject.set(x, "bodyPlaceholder", value.asInstanceOf[js.Any])
       
@@ -453,7 +453,7 @@ object mod {
       
       inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
       
@@ -467,7 +467,7 @@ object mod {
       
       inline def setFontSizes(value: js.Array[Name]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
       
-      inline def setFontSizesVarargs(value: Name*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+      inline def setFontSizesVarargs(value: Name*): Self = StObject.set(x, "fontSizes", js.Array(value*))
       
       inline def setHasFixedToolbar(value: Boolean): Self = StObject.set(x, "hasFixedToolbar", value.asInstanceOf[js.Any])
       
@@ -475,7 +475,7 @@ object mod {
       
       inline def setImageSizes(value: js.Array[Slug]): Self = StObject.set(x, "imageSizes", value.asInstanceOf[js.Any])
       
-      inline def setImageSizesVarargs(value: Slug*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
+      inline def setImageSizesVarargs(value: Slug*): Self = StObject.set(x, "imageSizes", js.Array(value*))
       
       inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
       
@@ -491,7 +491,7 @@ object mod {
       
       inline def setStyles(value: js.Array[Css]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      inline def setStylesVarargs(value: Css*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: Css*): Self = StObject.set(x, "styles", js.Array(value*))
       
       inline def setTitlePlaceholder(value: String): Self = StObject.set(x, "titlePlaceholder", value.asInstanceOf[js.Any])
     }

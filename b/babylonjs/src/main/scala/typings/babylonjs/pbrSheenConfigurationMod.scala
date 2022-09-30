@@ -56,14 +56,14 @@ object pbrSheenConfigurationMod {
     
     /* private */ var _albedoScaling: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: Any = js.native
     
     /* private */ var _isEnabled: Any = js.native
     
     /* private */ var _linkSheenWithAlbedo: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
     /* private */ var _roughness: Any = js.native

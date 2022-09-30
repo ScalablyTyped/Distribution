@@ -20,6 +20,7 @@ import typings.naja.najaStrings.before
 import typings.naja.najaStrings.complete
 import typings.naja.najaStrings.error
 import typings.naja.najaStrings.init
+import typings.naja.najaStrings.payload
 import typings.naja.najaStrings.start
 import typings.naja.najaStrings.success
 import typings.naja.redirectHandlerMod.RedirectHandler
@@ -119,6 +120,17 @@ object najaMod {
     def addEventListener(
       `type`: init,
       listener: TypedEventListener[Naja, CustomEvent[Any] | InitEvent],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    def addEventListener(`type`: payload, listener: TypedEventListener[Naja, CustomEvent[Any] | PayloadEvent]): Unit = js.native
+    def addEventListener(
+      `type`: payload,
+      listener: TypedEventListener[Naja, CustomEvent[Any] | PayloadEvent],
+      options: Boolean
+    ): Unit = js.native
+    def addEventListener(
+      `type`: payload,
+      listener: TypedEventListener[Naja, CustomEvent[Any] | PayloadEvent],
       options: AddEventListenerOptions
     ): Unit = js.native
     def addEventListener(`type`: start, listener: TypedEventListener[Naja, CustomEvent[Any] | StartEvent]): Unit = js.native
@@ -224,6 +236,17 @@ object najaMod {
       listener: TypedEventListener[Naja, CustomEvent[Any] | InitEvent],
       options: AddEventListenerOptions
     ): Unit = js.native
+    def removeEventListener(`type`: payload, listener: TypedEventListener[Naja, CustomEvent[Any] | PayloadEvent]): Unit = js.native
+    def removeEventListener(
+      `type`: payload,
+      listener: TypedEventListener[Naja, CustomEvent[Any] | PayloadEvent],
+      options: Boolean
+    ): Unit = js.native
+    def removeEventListener(
+      `type`: payload,
+      listener: TypedEventListener[Naja, CustomEvent[Any] | PayloadEvent],
+      options: AddEventListenerOptions
+    ): Unit = js.native
     def removeEventListener(`type`: start, listener: TypedEventListener[Naja, CustomEvent[Any] | StartEvent]): Unit = js.native
     def removeEventListener(`type`: start, listener: TypedEventListener[Naja, CustomEvent[Any] | StartEvent], options: Boolean): Unit = js.native
     def removeEventListener(
@@ -293,6 +316,8 @@ object najaMod {
     
     var init: InitEvent
     
+    var payload: PayloadEvent
+    
     var start: StartEvent
     
     var success: SuccessEvent
@@ -305,10 +330,11 @@ object najaMod {
       complete: CompleteEvent,
       error: ErrorEvent,
       init: InitEvent,
+      payload: PayloadEvent,
       start: StartEvent,
       success: SuccessEvent
     ): NajaEventMap = {
-      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[NajaEventMap]
     }
     
@@ -323,6 +349,8 @@ object najaMod {
       inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setInit(value: InitEvent): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      
+      inline def setPayload(value: PayloadEvent): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setStart(value: StartEvent): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
@@ -423,6 +451,8 @@ object najaMod {
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
+  
+  type PayloadEvent = CustomEvent[typings.naja.anon.Options]
   
   type StartEvent = CustomEvent[AbortController]
   

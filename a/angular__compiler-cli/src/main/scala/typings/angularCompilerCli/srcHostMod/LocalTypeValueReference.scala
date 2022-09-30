@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.srcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
 import typings.typescript.mod.Expression
 import typings.typescript.mod.ImportDeclaration
 import org.scalablytyped.runtime.StObject

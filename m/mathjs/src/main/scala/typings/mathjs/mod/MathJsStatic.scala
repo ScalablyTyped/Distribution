@@ -2021,7 +2021,7 @@ trait MathJsStatic
     * @returns Multiplication of x and y
     */
   @JSName("multiply")
-  def multiply_T_Matrix_Matrix[T /* <: Matrix */](x: MathType | T, y: MathType | T): Matrix = js.native
+  def multiply_T_Matrix[T /* <: Matrix */](x: MathType | T, y: MathType | T): Matrix = js.native
   
   /**
     * Calculate the norm of a number, vector or matrix. The second

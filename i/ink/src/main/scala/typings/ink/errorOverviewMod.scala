@@ -2,7 +2,6 @@ package typings.ink
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,18 +14,18 @@ object errorOverviewMod extends Shortcut {
   
   trait Props extends StObject {
     
-    val error: Error
+    val error: js.Error
   }
   object Props {
     
-    inline def apply(error: Error): Props = {
+    inline def apply(error: js.Error): Props = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
     extension [Self <: Props](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   

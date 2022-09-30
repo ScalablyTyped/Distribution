@@ -37,8 +37,8 @@ object mod {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def call(fun: js.Function, args: Any*): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
-      inline def call(fun: Unit, args: Any*): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
+      inline def call(fun: js.Function, args: Any*): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
+      inline def call(fun: Unit, args: Any*): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
       
       /* static member */
       inline def chain(args: Any*): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Deferred]
@@ -92,8 +92,8 @@ object mod {
       inline def wait_(n: Double): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(n.asInstanceOf[js.Any]).asInstanceOf[Deferred]
     }
     
-    inline def call(fun: js.Function, args: Any*): Deferred = js.Dynamic.global.applyDynamic("call")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
-    inline def call(fun: Unit, args: Any*): Deferred = js.Dynamic.global.applyDynamic("call")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
+    inline def call(fun: js.Function, args: Any*): Deferred = js.Dynamic.global.applyDynamic("call")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
+    inline def call(fun: Unit, args: Any*): Deferred = js.Dynamic.global.applyDynamic("call")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Deferred]
     
     inline def chain(args: Any*): Deferred = js.Dynamic.global.applyDynamic("chain")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Deferred]
     

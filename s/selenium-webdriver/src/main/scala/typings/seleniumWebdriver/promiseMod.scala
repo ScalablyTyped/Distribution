@@ -19,7 +19,7 @@ object promiseMod {
       * argument. The callback will the resolve or reject the returned promise,
       * based on its arguments.
       */
-    inline def checkedNodeCall[T](fn: js.Function, varArgs: Any*): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedNodeCall")(List(fn.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[T]]
+    inline def checkedNodeCall[T](fn: js.Function, varArgs: Any*): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedNodeCall")(scala.List(fn.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[T]]
     
     /**
       * Creates a promise that will be resolved at a set time in the future.

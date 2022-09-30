@@ -2,8 +2,10 @@ package typings.reactNativeReanimated.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.reactNativeReanimated.anon.InputRange
-import typings.reactNativeReanimated.mod.Animated.Adaptable
 import typings.reactNativeReanimated.mod.Animated.BackwardCompatibleWrapper
 import typings.reactNativeReanimated.mod.Animated.BinaryOperator
 import typings.reactNativeReanimated.mod.Animated.CodeProps
@@ -11,17 +13,17 @@ import typings.reactNativeReanimated.mod.Animated.DecayConfig
 import typings.reactNativeReanimated.mod.Animated.DecayState
 import typings.reactNativeReanimated.mod.Animated.EventMappingArray
 import typings.reactNativeReanimated.mod.Animated.InterpolationConfig
-import typings.reactNativeReanimated.mod.Animated.Mapping
 import typings.reactNativeReanimated.mod.Animated.MultiOperator
 import typings.reactNativeReanimated.mod.Animated.Nullable
+import typings.reactNativeReanimated.mod.Animated.Options
 import typings.reactNativeReanimated.mod.Animated.SpringConfig
 import typings.reactNativeReanimated.mod.Animated.SpringState
 import typings.reactNativeReanimated.mod.Animated.TimingConfig
 import typings.reactNativeReanimated.mod.Animated.TimingState
 import typings.reactNativeReanimated.mod.Animated.UnaryOperator
 import typings.reactNativeReanimated.reactNativeReanimatedBooleans.`true`
-import typings.reactNativeReanimated.reactNativeReanimatedNumbers.`0`
-import typings.reactNativeReanimated.reactNativeReanimatedNumbers.`1`
+import typings.reactNativeReanimated.reactNativeReanimatedInts.`0`
+import typings.reactNativeReanimated.reactNativeReanimatedInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +36,7 @@ object default {
   
   @JSImport("react-native-reanimated", "default.AnimatedClock")
   @js.native
-  class AnimatedClock ()
+  open class AnimatedClock ()
     extends StObject
        with typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] {
     
@@ -53,13 +55,13 @@ object default {
   
   @JSImport("react-native-reanimated", "default.AnimatedNode")
   @js.native
-  class AnimatedNode[T] protected ()
+  open class AnimatedNode[T] protected ()
     extends StObject
        with typings.reactNativeReanimated.mod.Animated.AnimatedNode[T] {
     def this(nodeConfig: js.Object) = this()
     def this(
       nodeConfig: js.Object,
-      inputNodes: js.Array[typings.reactNativeReanimated.mod.Animated.AnimatedNode[js.Any]]
+      inputNodes: js.Array[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Any]]
     ) = this()
     
     /**
@@ -77,7 +79,7 @@ object default {
   
   @JSImport("react-native-reanimated", "default.AnimatedValue")
   @js.native
-  class AnimatedValue[T /* <: typings.reactNativeReanimated.mod.Animated.Value */] ()
+  open class AnimatedValue[T /* <: typings.reactNativeReanimated.mod.Animated.Value */] ()
     extends StObject
        with typings.reactNativeReanimated.mod.Animated.AnimatedValue[T] {
     def this(value: T) = this()
@@ -98,13 +100,13 @@ object default {
     override def isNativelyInitialized(): Boolean = js.native
     
     /* CompleteClass */
-    override def setValue(value: Adaptable[T]): Unit = js.native
+    override def setValue(value: typings.reactNativeReanimated.mod.Animated.Adaptable[T]): Unit = js.native
   }
   
   @JSImport("react-native-reanimated", "default.Code")
   @js.native
-  class Code ()
-    extends Component[CodeProps, js.Object, js.Any]
+  open class Code ()
+    extends Component[CodeProps, js.Object, Any]
   
   @JSImport("react-native-reanimated", "default.Extrapolate")
   @js.native
@@ -120,14 +122,19 @@ object default {
     /* "identity" */ val IDENTITY: typings.reactNativeReanimated.mod.Animated.Extrapolate.IDENTITY & String = js.native
   }
   
+  @JSImport("react-native-reanimated", "default.FlatList")
+  @js.native
+  open class FlatList[T] ()
+    extends typings.reactNativeReanimated.mod.Animated.FlatList[T]
+  
   @JSImport("react-native-reanimated", "default.Image")
   @js.native
-  class Image ()
+  open class Image ()
     extends typings.reactNativeReanimated.mod.Animated.Image
   
   @JSImport("react-native-reanimated", "default.ScrollView")
   @js.native
-  class ScrollView ()
+  open class ScrollView ()
     extends typings.reactNativeReanimated.mod.Animated.ScrollView
   
   @JSImport("react-native-reanimated", "default.SpringUtils")
@@ -136,17 +143,17 @@ object default {
   
   @JSImport("react-native-reanimated", "default.Text")
   @js.native
-  class Text ()
+  open class Text ()
     extends typings.reactNativeReanimated.mod.Animated.Text
   
   @JSImport("react-native-reanimated", "default.View")
   @js.native
-  class View ()
+  open class View ()
     extends typings.reactNativeReanimated.mod.Animated.View
   
-  inline def abs(value: Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def abs(value: typings.reactNativeReanimated.mod.Animated.Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   
-  inline def acc(value: Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("acc")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def acc(value: typings.reactNativeReanimated.mod.Animated.Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("acc")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   
   @JSImport("react-native-reanimated", "default.acos")
   @js.native
@@ -172,7 +179,7 @@ object default {
   @js.native
   val atan: UnaryOperator = js.native
   
-  inline def block[T1 /* <: typings.reactNativeReanimated.mod.Animated.Value */, T2 /* <: typings.reactNativeReanimated.mod.Animated.Value */](items: js.Array[Adaptable[T2]]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1] = ^.asInstanceOf[js.Dynamic].applyDynamic("block")(items.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1]]
+  inline def block[T1 /* <: typings.reactNativeReanimated.mod.Animated.Value */, T2 /* <: typings.reactNativeReanimated.mod.Animated.Value */](items: js.Array[typings.reactNativeReanimated.mod.Animated.Adaptable[T2]]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1] = ^.asInstanceOf[js.Dynamic].applyDynamic("block")(items.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1]]
   
   inline def call[T](
     args: js.Array[T | typings.reactNativeReanimated.mod.Animated.AnimatedNode[T]],
@@ -185,19 +192,38 @@ object default {
   
   inline def clockRunning(clock: typings.reactNativeReanimated.mod.Animated.AnimatedClock): typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("clockRunning")(clock.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`]]
   
-  inline def color(r: Adaptable[Double], g: Adaptable[Double], b: Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
-  inline def color(r: Adaptable[Double], g: Adaptable[Double], b: Adaptable[Double], a: Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def color(
+    r: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    g: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    b: typings.reactNativeReanimated.mod.Animated.Adaptable[Double]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double | String]]
+  inline def color(
+    r: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    g: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    b: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    a: typings.reactNativeReanimated.mod.Animated.Adaptable[Double]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double | String]]
   
-  inline def concat(args: (Adaptable[Double | String])*): typings.reactNativeReanimated.mod.Animated.AnimatedNode[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(args.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[String]]
+  inline def concat(args: (typings.reactNativeReanimated.mod.Animated.Adaptable[Double | String])*): typings.reactNativeReanimated.mod.Animated.AnimatedNode[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[String]]
   
-  inline def cond[T1 /* <: typings.reactNativeReanimated.mod.Animated.Value */, T2 /* <: typings.reactNativeReanimated.mod.Animated.Value */](conditionNode: Adaptable[Double], ifNode: Adaptable[T1]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("cond")(conditionNode.asInstanceOf[js.Any], ifNode.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2]]
-  inline def cond[T1 /* <: typings.reactNativeReanimated.mod.Animated.Value */, T2 /* <: typings.reactNativeReanimated.mod.Animated.Value */](conditionNode: Adaptable[Double], ifNode: Adaptable[T1], elseNode: Adaptable[T2]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("cond")(conditionNode.asInstanceOf[js.Any], ifNode.asInstanceOf[js.Any], elseNode.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2]]
+  inline def cond[T1 /* <: typings.reactNativeReanimated.mod.Animated.Value */, T2 /* <: typings.reactNativeReanimated.mod.Animated.Value */](
+    conditionNode: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    ifNode: typings.reactNativeReanimated.mod.Animated.Adaptable[T1]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("cond")(conditionNode.asInstanceOf[js.Any], ifNode.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2]]
+  inline def cond[T1 /* <: typings.reactNativeReanimated.mod.Animated.Value */, T2 /* <: typings.reactNativeReanimated.mod.Animated.Value */](
+    conditionNode: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    ifNode: typings.reactNativeReanimated.mod.Animated.Adaptable[T1],
+    elseNode: typings.reactNativeReanimated.mod.Animated.Adaptable[T2]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2] = (^.asInstanceOf[js.Dynamic].applyDynamic("cond")(conditionNode.asInstanceOf[js.Any], ifNode.asInstanceOf[js.Any], elseNode.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T1 | T2]]
   
   @JSImport("react-native-reanimated", "default.cos")
   @js.native
   val cos: UnaryOperator = js.native
   
-  inline def createAnimatedComponent(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createAnimatedComponent[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[typings.reactNativeReanimated.mod.Animated.AnimateProps[P], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[typings.reactNativeReanimated.mod.Animated.AnimateProps[P], ComponentState]]
+  inline def createAnimatedComponent[P /* <: js.Object */](component: ComponentClass[P, ComponentState], options: Options[P]): ComponentClass[typings.reactNativeReanimated.mod.Animated.AnimateProps[P], ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[typings.reactNativeReanimated.mod.Animated.AnimateProps[P], ComponentState]]
+  inline def createAnimatedComponent[P /* <: js.Object */](component: FunctionComponent[P]): FunctionComponent[typings.reactNativeReanimated.mod.Animated.AnimateProps[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[typings.reactNativeReanimated.mod.Animated.AnimateProps[P]]]
+  inline def createAnimatedComponent[P /* <: js.Object */](component: FunctionComponent[P], options: Options[P]): FunctionComponent[typings.reactNativeReanimated.mod.Animated.AnimateProps[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[typings.reactNativeReanimated.mod.Animated.AnimateProps[P]]]
   
   inline def debug[T](message: String, value: typings.reactNativeReanimated.mod.Animated.AnimatedNode[T]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T]]
   
@@ -208,11 +234,15 @@ object default {
   ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decay")(clock.asInstanceOf[js.Any], state.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   inline def decay(node: typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double], config: DecayConfig): BackwardCompatibleWrapper = (^.asInstanceOf[js.Dynamic].applyDynamic("decay")(node.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[BackwardCompatibleWrapper]
   
-  inline def defined(value: Adaptable[js.Any]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("defined")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`]]
+  inline def defined(value: typings.reactNativeReanimated.mod.Animated.Adaptable[Any]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("defined")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`]]
   
-  inline def diff(value: Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def diff(value: typings.reactNativeReanimated.mod.Animated.Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   
-  inline def diffClamp(value: Adaptable[Double], minVal: Adaptable[Double], maxVal: Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffClamp")(value.asInstanceOf[js.Any], minVal.asInstanceOf[js.Any], maxVal.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def diffClamp(
+    value: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    minVal: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    maxVal: typings.reactNativeReanimated.mod.Animated.Adaptable[Double]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffClamp")(value.asInstanceOf[js.Any], minVal.asInstanceOf[js.Any], maxVal.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   
   @JSImport("react-native-reanimated", "default.divide")
   @js.native
@@ -222,8 +252,11 @@ object default {
   @js.native
   val eq_ : BinaryOperator[`0` | `1`] = js.native
   
-  inline def event[T](argMapping: EventMappingArray[T] | js.Array[Mapping]): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
-  inline def event[T](argMapping: EventMappingArray[T] | js.Array[Mapping], config: js.Object): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def event[T](argMapping: EventMappingArray[T] | js.Array[typings.reactNativeReanimated.mod.Animated.Mapping]): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
+  inline def event[T](
+    argMapping: EventMappingArray[T] | js.Array[typings.reactNativeReanimated.mod.Animated.Mapping],
+    config: js.Object
+  ): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   
   @JSImport("react-native-reanimated", "default.exp")
   @js.native
@@ -241,9 +274,12 @@ object default {
   @js.native
   val greaterThan: BinaryOperator[`0` | `1`] = js.native
   
-  inline def interpolate(value: Adaptable[Double], config: InterpolationConfig): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def interpolateColors[T /* <: String | Double */](
+    animationValue: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    hasInputRangeOutputColorRange: InputRange[T]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateColors")(animationValue.asInstanceOf[js.Any], hasInputRangeOutputColorRange.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T]]
   
-  inline def interpolateColors(animationValue: Adaptable[Double], hasInputRangeOutputColorRange: InputRange): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateColors")(animationValue.asInstanceOf[js.Any], hasInputRangeOutputColorRange.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def interpolateNode(value: typings.reactNativeReanimated.mod.Animated.Adaptable[Double], config: InterpolationConfig): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNode")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   
   @JSImport("react-native-reanimated", "default.lessOrEq")
   @js.native
@@ -277,9 +313,12 @@ object default {
   @js.native
   val neq: BinaryOperator[`0` | `1`] = js.native
   
-  inline def not(value: Adaptable[js.Any]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`]]
+  inline def not(value: typings.reactNativeReanimated.mod.Animated.Adaptable[Any]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(value.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[`0` | `1`]]
   
-  inline def onChange(value: Adaptable[Double], action: Adaptable[Double]): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(value.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
+  inline def onChange(
+    value: typings.reactNativeReanimated.mod.Animated.Adaptable[Double],
+    action: typings.reactNativeReanimated.mod.Animated.Adaptable[Double]
+  ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(value.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]
   
   @JSImport("react-native-reanimated", "default.or")
   @js.native
@@ -289,7 +328,11 @@ object default {
   @js.native
   val pow: MultiOperator[Double] = js.native
   
-  inline def proc[T /* <: js.Array[js.UndefOr[Adaptable[typings.reactNativeReanimated.mod.Animated.Value]]] */](func: js.Function1[/* args */ T, typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("proc")(func.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def proc[T /* <: js.Array[
+    js.UndefOr[
+      typings.reactNativeReanimated.mod.Animated.Adaptable[typings.reactNativeReanimated.mod.Animated.Value]
+    ]
+  ] */](func: js.Function1[/* args */ T, typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("proc")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("react-native-reanimated", "default.round")
   @js.native
@@ -297,7 +340,7 @@ object default {
   
   inline def set[T /* <: typings.reactNativeReanimated.mod.Animated.Value */](
     valueToBeUpdated: typings.reactNativeReanimated.mod.Animated.AnimatedValue[T],
-    sourceNode: Adaptable[T]
+    sourceNode: typings.reactNativeReanimated.mod.Animated.Adaptable[T]
   ): typings.reactNativeReanimated.mod.Animated.AnimatedNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(valueToBeUpdated.asInstanceOf[js.Any], sourceNode.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedNode[T]]
   
   @JSImport("react-native-reanimated", "default.sin")
@@ -340,7 +383,7 @@ object default {
         js.Array[typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]] | typings.reactNativeReanimated.mod.Animated.AnimatedNode[Double]
       ]) | Boolean
     ],
-    deps: js.Array[js.Any]
+    deps: js.Array[Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useCode")(exec.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useValue(initialValue: String): typings.reactNativeReanimated.mod.Animated.AnimatedValue[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useValue")(initialValue.asInstanceOf[js.Any]).asInstanceOf[typings.reactNativeReanimated.mod.Animated.AnimatedValue[String]]

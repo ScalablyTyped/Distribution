@@ -1,10 +1,26 @@
 package typings.electron.Electron
 
+import typings.electron.electronStrings.error
+import typings.electron.electronStrings.follow
+import typings.electron.electronStrings.include
+import typings.electron.electronStrings.manual
+import typings.electron.electronStrings.omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClientRequestConstructorOptions extends StObject {
+  
+  /**
+    * Can be `include` or `omit`. Whether to send credentials with this request. If
+    * set to `include`, credentials from the session associated with the request will
+    * be used. If set to `omit`, credentials will not be sent with the request (and
+    * the `'login'` event will not be triggered in the event of a 401). This matches
+    * the behavior of the fetch option of the same name. If this option is not
+    * specified, authentication data from the session will be sent, and cookies will
+    * not be sent (unless `useSessionCookies` is set).
+    */
+  var credentials: js.UndefOr[include | omit] = js.undefined
   
   /**
     * The server host provided as a concatenation of the hostname and the port number
@@ -23,8 +39,13 @@ trait ClientRequestConstructorOptions extends StObject {
   var method: js.UndefOr[String] = js.undefined
   
   /**
+    * The origin URL of the request.
+    */
+  var origin: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the `partition` with which the request is associated. Defaults to
-    * the empty string. The `session` option prevails on `partition`. Thus if a
+    * the empty string. The `session` option supersedes `partition`. Thus if a
     * `session` is explicitly specified, `partition` is ignored.
     */
   var partition: js.UndefOr[String] = js.undefined
@@ -40,18 +61,18 @@ trait ClientRequestConstructorOptions extends StObject {
   var port: js.UndefOr[Double] = js.undefined
   
   /**
-    * The protocol scheme in the form 'scheme:'. Currently supported values are
-    * 'http:' or 'https:'. Defaults to 'http:'.
+    * Can be `http:` or `https:`. The protocol scheme in the form 'scheme:'. Defaults
+    * to 'http:'.
     */
   var protocol: js.UndefOr[String] = js.undefined
   
   /**
-    * The redirect mode for this request. Should be one of `follow`, `error` or
-    * `manual`. Defaults to `follow`. When mode is `error`, any redirection will be
-    * aborted. When mode is `manual` the redirection will be cancelled unless
-    * `request.followRedirect` is invoked synchronously during the `redirect` event.
+    * Can be `follow`, `error` or `manual`. The redirect mode for this request. When
+    * mode is `error`, any redirection will be aborted. When mode is `manual` the
+    * redirection will be cancelled unless `request.followRedirect` is invoked
+    * synchronously during the `redirect` event.  Defaults to `follow`.
     */
-  var redirect: js.UndefOr[String] = js.undefined
+  var redirect: js.UndefOr[follow | error | manual] = js.undefined
   
   /**
     * The `Session` instance with which the request is associated.
@@ -65,9 +86,8 @@ trait ClientRequestConstructorOptions extends StObject {
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to send cookies with this request from the provided session.  This will
-    * make the `net` request's cookie behavior match a `fetch` request. Default is
-    * `false`.
+    * Whether to send cookies with this request from the provided session. If
+    * `credentials` is specified, this option has no effect. Default is `false`.
     */
   var useSessionCookies: js.UndefOr[Boolean] = js.undefined
 }
@@ -80,6 +100,10 @@ object ClientRequestConstructorOptions {
   
   extension [Self <: ClientRequestConstructorOptions](x: Self) {
     
+    inline def setCredentials(value: include | omit): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
@@ -91,6 +115,10 @@ object ClientRequestConstructorOptions {
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
@@ -108,7 +136,7 @@ object ClientRequestConstructorOptions {
     
     inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: follow | error | manual): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     

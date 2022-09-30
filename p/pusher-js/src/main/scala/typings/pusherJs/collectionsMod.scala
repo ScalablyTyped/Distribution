@@ -25,7 +25,7 @@ object collectionsMod {
   
   inline def encodeParamsObject(data: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParamsObject")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def extend[T](target: Any, sources: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def extend[T](target: Any, sources: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def filter(array: js.Array[Any], test: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   

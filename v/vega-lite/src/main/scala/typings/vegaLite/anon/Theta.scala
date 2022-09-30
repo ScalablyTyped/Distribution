@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Theta extends StObject {
   
-  val radius: typings.vegaLite.vegaLiteNumbers.`1`
+  val radius: typings.vegaLite.vegaLiteInts.`1`
   
-  val theta: typings.vegaLite.vegaLiteNumbers.`1`
+  val theta: typings.vegaLite.vegaLiteInts.`1`
 }
 object Theta {
   
@@ -19,8 +19,8 @@ object Theta {
   
   extension [Self <: Theta](x: Self) {
     
-    inline def setRadius(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setTheta(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+    inline def setTheta(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
   }
 }

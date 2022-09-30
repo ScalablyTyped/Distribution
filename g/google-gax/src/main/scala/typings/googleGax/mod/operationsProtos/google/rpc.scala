@@ -5,7 +5,6 @@ import typings.googleGax.operationsMod.google.rpc.IStatus
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object rpc {
     * Constructs a new Status.
     * @param [properties] Properties to set
     */
-  class Status ()
+  open class Status ()
     extends typings.googleGax.operationsMod.google.rpc.Status {
     def this(properties: IStatus) = this()
   }
@@ -39,6 +38,8 @@ object rpc {
     inline def create(): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     inline def create(properties: IStatus): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.rpc.Status = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     /**
       * Decodes a Status message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -50,9 +51,8 @@ object rpc {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.rpc.Status = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.rpc.Status = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     /**
       * Decodes a Status message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -62,7 +62,6 @@ object rpc {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
     /**
       * Encodes the specified Status message. Does not implicitly {@link google.rpc.Status.verify|verify} messages.
@@ -90,7 +89,7 @@ object rpc {
       * @returns Status
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.rpc.Status = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.rpc.Status]
     
     /**
       * Creates a plain object from a Status message. Also converts values to other types if specified.
@@ -99,8 +98,8 @@ object rpc {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.rpc.Status): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.googleGax.operationsMod.google.rpc.Status, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.rpc.Status): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.rpc.Status, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Status message.
@@ -108,6 +107,6 @@ object rpc {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
 }

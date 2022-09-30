@@ -139,14 +139,14 @@ inline def pool: ConnectionPool = ^.asInstanceOf[js.Dynamic].selectDynamic("pool
 inline def pool_=(x: ConnectionPool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pool")(x.asInstanceOf[js.Any])
 
 inline def query(command: String): js.Promise[IResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[Any]]]
-inline def query(command: TemplateStringsArray, interpolations: Any*): js.Promise[IResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(command.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[IResult[Any]]]
+inline def query(command: TemplateStringsArray, interpolations: Any*): js.Promise[IResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(command.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[IResult[Any]]]
 inline def query[Entity](
   command: String,
   callback: js.Function2[/* err */ js.UndefOr[js.Error], /* recordset */ js.UndefOr[IResult[Entity]], Unit]
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def query_Entity[Entity](command: String): js.Promise[IResult[Entity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[Entity]]]
-inline def query_Entity[Entity](command: TemplateStringsArray, interpolations: Any*): js.Promise[IResult[Entity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(command.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[IResult[Entity]]]
+inline def query_Entity[Entity](command: TemplateStringsArray, interpolations: Any*): js.Promise[IResult[Entity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(command.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[IResult[Entity]]]
 
 type Connection = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify tds.Connection */ Any
 

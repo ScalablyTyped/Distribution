@@ -17,13 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object localByNameReferencePropertyMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/LocalByNameReferenceProperty", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty", "LocalByNameReferenceProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/LocalByNameReferenceProperty", "LocalByNameReferenceProperty")
   @js.native
-  class LocalByNameReferenceProperty[T /* <: INamedElement */] protected () extends AbstractProperty[T | Null, IObservableValue[String | Null]] {
+  open class LocalByNameReferenceProperty[T /* <: INamedElement */] protected () extends AbstractProperty[T | Null, IObservableValue[String | Null]] {
     def this(
       declaredOn: IStructureClass,
       parent: AbstractElement[IAbstractModel, Container],
@@ -65,7 +65,7 @@ object localByNameReferencePropertyMod {
     def updateWithRawValue(value: String): Unit = js.native
   }
   
-  inline def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean]
+  inline def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean]
   
   @js.native
   trait INamedElement

@@ -2,7 +2,6 @@ package typings.mdastUtilMdxJsx
 
 import typings.mdastUtilFromMarkdown.mod.Extension
 import typings.mdastUtilFromMarkdown.mod.Handle
-import typings.mdastUtilMdxJsx.mdastUtilMdxJsxStrings.Apostrophe
 import typings.mdastUtilMdxJsx.mdastUtilMdxJsxStrings.Quotationmark
 import typings.mdastUtilToMarkdown.mod.Map
 import typings.mdastUtilToMarkdown.mod.Options
@@ -112,7 +111,7 @@ object libMod {
     /**
       * Preferred quote to use around attribute values.
       */
-    var quote: js.UndefOr[Quotationmark | Apostrophe] = js.undefined
+    var quote: js.UndefOr[Quotationmark | String] = js.undefined
     
     /**
       * Use the other quote if that results in less bytes.
@@ -138,7 +137,7 @@ object libMod {
       
       inline def setPrintWidthUndefined: Self = StObject.set(x, "printWidth", js.undefined)
       
-      inline def setQuote(value: Quotationmark | Apostrophe): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: Quotationmark | String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
       inline def setQuoteSmart(value: Boolean): Self = StObject.set(x, "quoteSmart", value.asInstanceOf[js.Any])
       

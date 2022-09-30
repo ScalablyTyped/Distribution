@@ -10,10 +10,10 @@ Implement spellchecking, correctly
 | ------------------ | :-------------: |
 | Full name          | electron-spellchecker |
 | Keywords           | spelling, electron, rx |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 178111 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1157.6666666666667 |
+| # stars            | 235.0 |
 
 ## Links
 - [Homepage](https://github.com/electron-userland/electron-spellchecker)

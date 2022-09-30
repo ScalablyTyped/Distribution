@@ -12,7 +12,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.inlayHintSlashresolve
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashinlayHint
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashinlayHintSlashrefresh
 import typings.vscodeLanguageserverTypes.mod.InlayHint
 import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
@@ -30,7 +29,7 @@ object protocolInlayHintMod {
     
     @JSImport("vscode-languageserver-protocol/lib/common/protocol.inlayHint", "InlayHintRefreshRequest.method")
     @js.native
-    val method: workspaceSlashinlayHintSlashrefresh = js.native
+    val method: /* template literal string: workspace/inlayHint/refresh */ String = js.native
     
     @JSImport("vscode-languageserver-protocol/lib/common/protocol.inlayHint", "InlayHintRefreshRequest.type")
     @js.native

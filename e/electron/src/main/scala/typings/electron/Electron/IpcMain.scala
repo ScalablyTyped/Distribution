@@ -22,10 +22,14 @@ trait IpcMain
     * The `event` that is passed as the first argument to the handler is the same as
     * that passed to a regular event listener. It includes information about which
     * WebContents is the source of the invoke request.
+    *
+    * Errors thrown through `handle` in the main process are not transparent as they
+    * are serialized and only the `message` property from the original error is
+    * provided to the renderer process. Please refer to #24427 for details.
     */
   def handle(
     channel: String,
-    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ js.Any, js.Promise[Unit] | js.Any]
+    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ Any, js.Promise[Unit] | Any]
   ): Unit = js.native
   
   /**
@@ -34,20 +38,20 @@ trait IpcMain
     */
   def handleOnce(
     channel: String,
-    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ js.Any, js.Promise[Unit] | js.Any]
+    listener: js.Function2[/* event */ IpcMainInvokeEvent, /* repeated */ Any, js.Promise[Unit] | Any]
   ): Unit = js.native
   
   /**
     * Listens to `channel`, when a new message arrives `listener` would be called with
     * `listener(event, args...)`.
     */
-  def on(channel: String, listener: js.Function2[/* event */ IpcMainEvent, /* repeated */ js.Any, Unit]): this.type = js.native
+  def on(channel: String, listener: js.Function2[/* event */ IpcMainEvent, /* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Adds a one time `listener` function for the event. This `listener` is invoked
     * only the next time a message is sent to `channel`, after which it is removed.
     */
-  def once(channel: String, listener: js.Function2[/* event */ IpcMainEvent, /* repeated */ js.Any, Unit]): this.type = js.native
+  def once(channel: String, listener: js.Function2[/* event */ IpcMainEvent, /* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Removes any handler for `channel`, if present.

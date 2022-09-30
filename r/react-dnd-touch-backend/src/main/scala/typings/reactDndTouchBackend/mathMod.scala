@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mathMod {
   
-  @JSImport("react-dnd-touch-backend/lib/utils/math", JSImport.Namespace)
+  @JSImport("react-dnd-touch-backend/dist/utils/math", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

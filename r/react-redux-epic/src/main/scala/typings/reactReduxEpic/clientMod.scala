@@ -12,5 +12,5 @@ object clientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def render(element: ReactElement, container: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def render(element: ReactElement, container: Element): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

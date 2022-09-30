@@ -15,13 +15,7 @@ trait Debugger extends EventEmitter {
   @JSName("addListener")
   def addListener_message(
     event: message,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* method */ String, 
-      /* params */ js.Any, 
-      /* sessionId */ String, 
-      Unit
-    ]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   
   /**
@@ -53,13 +47,7 @@ trait Debugger extends EventEmitter {
   @JSName("on")
   def on_message(
     event: message,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* method */ String, 
-      /* params */ js.Any, 
-      /* sessionId */ String, 
-      Unit
-    ]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   
   @JSName("once")
@@ -67,13 +55,7 @@ trait Debugger extends EventEmitter {
   @JSName("once")
   def once_message(
     event: message,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* method */ String, 
-      /* params */ js.Any, 
-      /* sessionId */ String, 
-      Unit
-    ]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   
   @JSName("removeListener")
@@ -81,24 +63,18 @@ trait Debugger extends EventEmitter {
   @JSName("removeListener")
   def removeListener_message(
     event: message,
-    listener: js.Function4[
-      /* event */ Event, 
-      /* method */ String, 
-      /* params */ js.Any, 
-      /* sessionId */ String, 
-      Unit
-    ]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
   
   /**
     * A promise that resolves with the response defined by the 'returns' attribute of
     * the command description in the remote debugging protocol or is rejected
     * indicating the failure of the command.
-    * 
-  Send given command to the debugging target.
+    *
+    * Send given command to the debugging target.
     */
-  def sendCommand(method: String): js.Promise[js.Any] = js.native
-  def sendCommand(method: String, commandParams: js.Any): js.Promise[js.Any] = js.native
-  def sendCommand(method: String, commandParams: js.Any, sessionId: String): js.Promise[js.Any] = js.native
-  def sendCommand(method: String, commandParams: Unit, sessionId: String): js.Promise[js.Any] = js.native
+  def sendCommand(method: String): js.Promise[Any] = js.native
+  def sendCommand(method: String, commandParams: Any): js.Promise[Any] = js.native
+  def sendCommand(method: String, commandParams: Any, sessionId: String): js.Promise[Any] = js.native
+  def sendCommand(method: String, commandParams: Unit, sessionId: String): js.Promise[Any] = js.native
 }

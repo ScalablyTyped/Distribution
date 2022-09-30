@@ -8,7 +8,7 @@ object dataCacheMod {
   
   @JSImport("iitc/core/data_cache", "DataCache")
   @js.native
-  class DataCache () extends StObject {
+  open class DataCache () extends StObject {
     
     /**
       * if younger than this, use data in the cache rather than fetching from the server
@@ -30,7 +30,7 @@ object dataCacheMod {
     
     def debug(): String = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     def getFresh(key: String): js.UndefOr[Boolean] = js.native
     
@@ -44,7 +44,7 @@ object dataCacheMod {
     
     def stopExpireInterval(): Unit = js.native
     
-    def store(key: String, data: js.Any): Unit = js.native
-    def store(key: String, data: js.Any, freshTime: Double): Unit = js.native
+    def store(key: String, data: Any): Unit = js.native
+    def store(key: String, data: Any, freshTime: Double): Unit = js.native
   }
 }

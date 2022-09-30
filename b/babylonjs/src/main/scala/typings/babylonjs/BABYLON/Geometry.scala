@@ -14,9 +14,7 @@ trait Geometry
   /* private */ var _applyToMesh: Any = js.native
   
   /**
-    * @param effect
-    * @param indexToBind
-    * @hidden
+    * @internal
     */
   def _bind(effect: Nullable[Effect]): Unit = js.native
   def _bind(
@@ -57,13 +55,13 @@ trait Geometry
   
   /* private */ var _boundingBias: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _boundingInfo: Nullable[BoundingInfo] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _delayInfo: js.Array[String] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _delayLoadingFunction: Nullable[js.Function2[/* any */ Any, /* geometry */ this.type, Unit]] = js.native
   
   /* private */ var _disposeVertexArrayObjects: Any = js.native
@@ -72,51 +70,50 @@ trait Geometry
   
   /* private */ var _extend: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _generatePointsArray(): Boolean = js.native
   
   /* private */ var _indexBuffer: Any = js.native
   
   /* private */ var _indexBufferIsUpdatable: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _indices: IndicesArray = js.native
   
   /* private */ var _isDisposed: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _loadedUniqueId: String = js.native
   
   /* private */ var _meshes: Any = js.native
   
   /* private */ var _notifyUpdate: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _parentContainer: Nullable[AbstractScene] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _positions: Nullable[js.Array[Vector3]] = js.native
   
   /* private */ var _positionsCache: Any = js.native
   
   /* private */ var _queueLoad: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _rebuild(): Unit = js.native
   
   /**
-    * @param effect
-    * @hidden
+    * @internal
     */
   def _releaseVertexArrayObject(): Unit = js.native
   def _releaseVertexArrayObject(effect: Nullable[Effect]): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _resetPointsArrayCache(): Unit = js.native
   
   /* private */ var _scene: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _softwareSkinningFrameId: Double = js.native
   
   /* private */ var _toNumberArray: Any = js.native
@@ -131,7 +128,7 @@ trait Geometry
   
   /* private */ var _vertexArrayObjects: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vertexBuffers: org.scalablytyped.runtime.StringDictionary[VertexBuffer] = js.native
   
   /**

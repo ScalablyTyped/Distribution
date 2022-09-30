@@ -3,7 +3,7 @@ package typings.ghPages
 import typings.ghPages.anon.Email
 import typings.ghPages.ghPagesBooleans.`false`
 import typings.ghPages.ghPagesBooleans.`true`
-import typings.ghPages.ghPagesNumbers.`1`
+import typings.ghPages.ghPagesInts.`1`
 import typings.ghPages.ghPagesStrings.AsteriskAsteriskSlashAsterisk
 import typings.ghPages.ghPagesStrings.Dot
 import typings.ghPages.ghPagesStrings.Updates

@@ -17,21 +17,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactJoyride.reactJoyrideStrings.right
   - typings.reactJoyride.reactJoyrideStrings.`right-start`
   - typings.reactJoyride.reactJoyrideStrings.`right-end`
-  - typings.reactJoyride.reactJoyrideStrings.auto
-  - typings.reactJoyride.reactJoyrideStrings.center
 */
 trait Placement extends StObject
 object Placement {
-  
-  inline def auto: typings.reactJoyride.reactJoyrideStrings.auto = "auto".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.auto]
   
   inline def bottom: typings.reactJoyride.reactJoyrideStrings.bottom = "bottom".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.bottom]
   
   inline def `bottom-end`: typings.reactJoyride.reactJoyrideStrings.`bottom-end` = "bottom-end".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`bottom-end`]
   
   inline def `bottom-start`: typings.reactJoyride.reactJoyrideStrings.`bottom-start` = "bottom-start".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.`bottom-start`]
-  
-  inline def center: typings.reactJoyride.reactJoyrideStrings.center = "center".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.center]
   
   inline def left: typings.reactJoyride.reactJoyrideStrings.left = "left".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.left]
   

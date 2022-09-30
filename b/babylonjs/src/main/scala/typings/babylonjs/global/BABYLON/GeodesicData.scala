@@ -11,7 +11,7 @@ open class GeodesicData ()
      with typings.babylonjs.BABYLON.GeodesicData {
   
   /**
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   var adjacentFaces: js.Array[js.Array[Double]] = js.native
@@ -26,33 +26,25 @@ open class GeodesicData ()
   var face: js.Array[js.Array[Double]] = js.native
   
   /**
-    * @param face
-    * @param primTri
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def innerToData(face: Double, primTri: typings.babylonjs.BABYLON.PrimaryIsoTriangle): Unit = js.native
   
   /**
-    * @param faceNb
-    * @param primTri
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def mapABOBtoDATA(faceNb: Double, primTri: typings.babylonjs.BABYLON.PrimaryIsoTriangle): Unit = js.native
   
   /**
-    * @param faceNb
-    * @param primTri
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def mapBAOAtoDATA(faceNb: Double, primTri: typings.babylonjs.BABYLON.PrimaryIsoTriangle): Unit = js.native
   
   /**
-    * @param faceNb
-    * @param primTri
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def mapOBOAtoDATA(faceNb: Double, primTri: typings.babylonjs.BABYLON.PrimaryIsoTriangle): Unit = js.native
@@ -61,34 +53,31 @@ open class GeodesicData ()
   var name: String = js.native
   
   /**
-    * @param primTri
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def orderData(primTri: typings.babylonjs.BABYLON.PrimaryIsoTriangle): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   var poleNodes: Double = js.native
   
   /**
-    * @param m
-    * @param faces
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def setOrder(m: Double, faces: js.Array[Double]): js.Array[Double] = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   var sharedNodes: Double = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def toGoldbergPolyhedronData(): typings.babylonjs.BABYLON.PolyhedronData = js.native
@@ -105,7 +94,7 @@ object GeodesicData {
   
   /**Builds the data for a Geodesic Polyhedron from a primary triangle
     * @param primTri the primary triangle
-    * @hidden
+    * @internal
     */
   inline def BuildGeodesicData(primTri: typings.babylonjs.BABYLON.PrimaryIsoTriangle): typings.babylonjs.BABYLON.GeodesicData = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildGeodesicData")(primTri.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.GeodesicData]
 }

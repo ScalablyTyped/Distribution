@@ -54,7 +54,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def all[T1](values: js.Array[T1 | Thenable[T1]]): Promise[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[T1]]]
+    inline def all[TAll](values: js.Array[TAll | Thenable[TAll]]): Promise[js.Array[TAll]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[TAll]]]
     inline def all[T1, T2](values: js.Tuple2[T1 | Thenable[T1], T2 | Thenable[T2]]): Promise[js.Tuple2[T1, T2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple2[T1, T2]]]
     inline def all[T1, T2, T3](values: js.Tuple3[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3]]): Promise[js.Tuple3[T1, T2, T3]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple3[T1, T2, T3]]]
     inline def all[T1, T2, T3, T4](values: js.Tuple4[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3], T4 | Thenable[T4]]): Promise[js.Tuple4[T1, T2, T3, T4]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple4[T1, T2, T3, T4]]]
@@ -133,7 +133,7 @@ object mod {
         ]
     ): Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]]]
     
-    inline def all_TAll[TAll](values: js.Array[TAll | Thenable[TAll]]): Promise[js.Array[TAll]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[TAll]]]
+    inline def all_T1[T1](values: js.Array[T1 | Thenable[T1]]): Promise[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[T1]]]
     
     /**
       * Make a Promise that fulfills when any item fulfills, and rejects if any item rejects.

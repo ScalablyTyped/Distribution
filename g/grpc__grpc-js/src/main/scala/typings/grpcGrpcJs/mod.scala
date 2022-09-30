@@ -287,7 +287,7 @@ object mod {
     inline def combineCallCredentials(
       first: typings.grpcGrpcJs.callCredentialsMod.CallCredentials,
       additional: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(List(first.asInstanceOf[js.Any]).`++`(additional.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
+    ): typings.grpcGrpcJs.callCredentialsMod.CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(scala.List(first.asInstanceOf[js.Any]).`++`(additional.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.callCredentialsMod.CallCredentials]
     
     /**
       * Combine a ChannelCredentials with any number of CallCredentials into a
@@ -299,7 +299,7 @@ object mod {
     inline def combineChannelCredentials(
       channelCredentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials,
       callCredentials: typings.grpcGrpcJs.callCredentialsMod.CallCredentials*
-    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(List(channelCredentials.asInstanceOf[js.Any]).`++`(callCredentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
+    ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(scala.List(channelCredentials.asInstanceOf[js.Any]).`++`(callCredentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
     
     @JSImport("@grpc/grpc-js", "credentials.createEmpty")
     @js.native
@@ -446,7 +446,7 @@ object mod {
     
     inline def getFirstUsableConfig_true(configs: js.Array[LoadBalancingConfig], fallbackTodefault: `true`): LoadBalancingConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any], fallbackTodefault.asInstanceOf[js.Any])).asInstanceOf[LoadBalancingConfig]
     
-    inline def log(severity: LogVerbosity, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(severity.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def log(severity: LogVerbosity, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(severity.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def registerAdminService(getServiceDefinition: GetServiceDefinition, getHandlers: GetHandlers): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAdminService")(getServiceDefinition.asInstanceOf[js.Any], getHandlers.asInstanceOf[js.Any])).asInstanceOf[Unit]
     

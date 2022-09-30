@@ -1,9 +1,9 @@
 package typings.reactNativeMaterialUi.mod
 
 import typings.react.mod.global.JSX.Element
-import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`1`
-import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`2`
-import typings.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`3`
+import typings.reactNativeMaterialUi.reactNativeMaterialUiInts.`1`
+import typings.reactNativeMaterialUi.reactNativeMaterialUiInts.`2`
+import typings.reactNativeMaterialUi.reactNativeMaterialUiInts.`3`
 import typings.reactNativeMaterialUi.reactNativeMaterialUiStrings.dynamic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

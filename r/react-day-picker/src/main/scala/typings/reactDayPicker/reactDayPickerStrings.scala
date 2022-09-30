@@ -1,12 +1,9 @@
 package typings.reactDayPicker
 
-import typings.reactDayPicker.captionCaptionMod.CaptionLayout
-import typings.reactDayPicker.dayPickerBaseMod.DaySelectionMode
-import typings.reactDayPicker.getNextFocusMod.MoveFocusBy
-import typings.reactDayPicker.getNextFocusMod.MoveFocusDirection
-import typings.reactDayPicker.stylesMod.InternalModifiersElement
-import typings.reactDayPicker.useDayEventHandlersUseDayEventHandlersMod.DayEventName
-import typings.reactDayPicker.useDayEventHandlersUseDayEventHandlersMod.EventName
+import typings.reactDayPicker.indexEsmMod.CaptionLayout
+import typings.reactDayPicker.indexEsmMod.DaySelectionMode
+import typings.reactDayPicker.indexEsmMod.EventName
+import typings.reactDayPicker.indexEsmMod.InternalModifiersElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +14,7 @@ object reactDayPickerStrings {
   sealed trait default
     extends StObject
        with DaySelectionMode
+       with typings.reactDayPicker.mod.DaySelectionMode
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -32,12 +30,6 @@ object reactDayPickerStrings {
   inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
-  sealed trait after
-    extends StObject
-       with MoveFocusDirection
-  inline def after: after = "after".asInstanceOf[after]
-  
-  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   
@@ -50,12 +42,6 @@ object reactDayPickerStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait before
-    extends StObject
-       with MoveFocusDirection
-  inline def before: before = "before".asInstanceOf[before]
-  
-  @js.native
   sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
   
@@ -63,6 +49,7 @@ object reactDayPickerStrings {
   sealed trait buttons
     extends StObject
        with CaptionLayout
+       with typings.reactDayPicker.mod.CaptionLayout
   inline def buttons: buttons = "buttons".asInstanceOf[buttons]
   
   @js.native
@@ -74,57 +61,59 @@ object reactDayPickerStrings {
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait day
-    extends StObject
-       with MoveFocusBy
-  inline def day: day = "day".asInstanceOf[day]
-  
-  @js.native
   sealed trait day_disabled
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_disabled: day_disabled = "day_disabled".asInstanceOf[day_disabled]
   
   @js.native
   sealed trait day_hidden
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_hidden: day_hidden = "day_hidden".asInstanceOf[day_hidden]
   
   @js.native
   sealed trait day_outside
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_outside: day_outside = "day_outside".asInstanceOf[day_outside]
   
   @js.native
   sealed trait day_range_end
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_range_end: day_range_end = "day_range_end".asInstanceOf[day_range_end]
   
   @js.native
   sealed trait day_range_middle
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_range_middle: day_range_middle = "day_range_middle".asInstanceOf[day_range_middle]
   
   @js.native
   sealed trait day_range_start
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_range_start: day_range_start = "day_range_start".asInstanceOf[day_range_start]
   
   @js.native
   sealed trait day_selected
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_selected: day_selected = "day_selected".asInstanceOf[day_selected]
   
   @js.native
   sealed trait day_today
     extends StObject
        with InternalModifiersElement
+       with typings.reactDayPicker.mod.InternalModifiersElement
   inline def day_today: day_today = "day_today".asInstanceOf[day_today]
   
   @js.native
@@ -143,17 +132,12 @@ object reactDayPickerStrings {
   sealed trait dropdown
     extends StObject
        with CaptionLayout
+       with typings.reactDayPicker.mod.CaptionLayout
   inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
-  
-  @js.native
-  sealed trait endOfWeek
-    extends StObject
-       with MoveFocusBy
-  inline def endOfWeek: endOfWeek = "endOfWeek".asInstanceOf[endOfWeek]
   
   @js.native
   sealed trait environment extends StObject
@@ -208,12 +192,6 @@ object reactDayPickerStrings {
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait month
-    extends StObject
-       with MoveFocusBy
-  inline def month: month = "month".asInstanceOf[month]
-  
-  @js.native
   sealed trait move extends StObject
   inline def move: move = "move".asInstanceOf[move]
   
@@ -221,6 +199,7 @@ object reactDayPickerStrings {
   sealed trait multiple
     extends StObject
        with DaySelectionMode
+       with typings.reactDayPicker.mod.DaySelectionMode
   inline def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
@@ -247,132 +226,77 @@ object reactDayPickerStrings {
   sealed trait onBlur
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   
   @js.native
   sealed trait onClick
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onClick: onClick = "onClick".asInstanceOf[onClick]
-  
-  @js.native
-  sealed trait onDayBlur
-    extends StObject
-       with DayEventName
-  inline def onDayBlur: onDayBlur = "onDayBlur".asInstanceOf[onDayBlur]
-  
-  @js.native
-  sealed trait onDayClick
-    extends StObject
-       with DayEventName
-  inline def onDayClick: onDayClick = "onDayClick".asInstanceOf[onDayClick]
-  
-  @js.native
-  sealed trait onDayFocus
-    extends StObject
-       with DayEventName
-  inline def onDayFocus: onDayFocus = "onDayFocus".asInstanceOf[onDayFocus]
-  
-  @js.native
-  sealed trait onDayKeyDown
-    extends StObject
-       with DayEventName
-  inline def onDayKeyDown: onDayKeyDown = "onDayKeyDown".asInstanceOf[onDayKeyDown]
-  
-  @js.native
-  sealed trait onDayKeyUp
-    extends StObject
-       with DayEventName
-  inline def onDayKeyUp: onDayKeyUp = "onDayKeyUp".asInstanceOf[onDayKeyUp]
-  
-  @js.native
-  sealed trait onDayMouseEnter
-    extends StObject
-       with DayEventName
-  inline def onDayMouseEnter: onDayMouseEnter = "onDayMouseEnter".asInstanceOf[onDayMouseEnter]
-  
-  @js.native
-  sealed trait onDayMouseLeave
-    extends StObject
-       with DayEventName
-  inline def onDayMouseLeave: onDayMouseLeave = "onDayMouseLeave".asInstanceOf[onDayMouseLeave]
-  
-  @js.native
-  sealed trait onDayTouchCancel
-    extends StObject
-       with DayEventName
-  inline def onDayTouchCancel: onDayTouchCancel = "onDayTouchCancel".asInstanceOf[onDayTouchCancel]
-  
-  @js.native
-  sealed trait onDayTouchEnd
-    extends StObject
-       with DayEventName
-  inline def onDayTouchEnd: onDayTouchEnd = "onDayTouchEnd".asInstanceOf[onDayTouchEnd]
-  
-  @js.native
-  sealed trait onDayTouchMove
-    extends StObject
-       with DayEventName
-  inline def onDayTouchMove: onDayTouchMove = "onDayTouchMove".asInstanceOf[onDayTouchMove]
-  
-  @js.native
-  sealed trait onDayTouchStart
-    extends StObject
-       with DayEventName
-  inline def onDayTouchStart: onDayTouchStart = "onDayTouchStart".asInstanceOf[onDayTouchStart]
   
   @js.native
   sealed trait onFocus
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   
   @js.native
   sealed trait onKeyDown
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onKeyDown: onKeyDown = "onKeyDown".asInstanceOf[onKeyDown]
   
   @js.native
   sealed trait onKeyUp
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onKeyUp: onKeyUp = "onKeyUp".asInstanceOf[onKeyUp]
   
   @js.native
   sealed trait onMouseEnter
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onMouseEnter: onMouseEnter = "onMouseEnter".asInstanceOf[onMouseEnter]
   
   @js.native
   sealed trait onMouseLeave
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onMouseLeave: onMouseLeave = "onMouseLeave".asInstanceOf[onMouseLeave]
   
   @js.native
   sealed trait onTouchCancel
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onTouchCancel: onTouchCancel = "onTouchCancel".asInstanceOf[onTouchCancel]
   
   @js.native
   sealed trait onTouchEnd
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onTouchEnd: onTouchEnd = "onTouchEnd".asInstanceOf[onTouchEnd]
   
   @js.native
   sealed trait onTouchMove
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onTouchMove: onTouchMove = "onTouchMove".asInstanceOf[onTouchMove]
   
   @js.native
   sealed trait onTouchStart
     extends StObject
        with EventName
+       with typings.reactDayPicker.mod.EventName
   inline def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
   
   @js.native
@@ -395,6 +319,7 @@ object reactDayPickerStrings {
   sealed trait range
     extends StObject
        with DaySelectionMode
+       with typings.reactDayPicker.mod.DaySelectionMode
   inline def range: range = "range".asInstanceOf[range]
   
   @js.native
@@ -417,17 +342,12 @@ object reactDayPickerStrings {
   sealed trait single
     extends StObject
        with DaySelectionMode
+       with typings.reactDayPicker.mod.DaySelectionMode
   inline def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
-  
-  @js.native
-  sealed trait startOfWeek
-    extends StObject
-       with MoveFocusBy
-  inline def startOfWeek: startOfWeek = "startOfWeek".asInstanceOf[startOfWeek]
   
   @js.native
   sealed trait step extends StObject
@@ -468,18 +388,6 @@ object reactDayPickerStrings {
   @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
-  
-  @js.native
-  sealed trait week
-    extends StObject
-       with MoveFocusBy
-  inline def week: week = "week".asInstanceOf[week]
-  
-  @js.native
-  sealed trait year
-    extends StObject
-       with MoveFocusBy
-  inline def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait yes extends StObject

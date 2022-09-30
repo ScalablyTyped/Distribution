@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior")
 @js.native
-class DeletingBehavior protected ()
+open class DeletingBehavior protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.DeletingBehavior {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

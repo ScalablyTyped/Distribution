@@ -17,10 +17,7 @@ import typings.blessed.mod.Widgets.Types.TTopLeft
 import typings.react.mod.ReactNode
 import typings.reactBlessed.mod.ElementStyle
 import typings.reactBlessed.mod.ListStyle
-import typings.reactBlessed.mod.ProgressBarEvent
-import typings.reactBlessed.mod.ProgressBarEventHandler
 import typings.reactBlessed.mod.ProgressBarStyle
-import typings.reactBlessed.mod.SpreadableArgs
 import typings.reactBlessed.reactBlessedStrings.`inline-block`
 import typings.reactBlessed.reactBlessedStrings.`inline`
 import typings.reactBlessed.reactBlessedStrings.bg
@@ -399,65 +396,45 @@ object anon {
     }
   }
   
-  /* Inlined react-blessed.react-blessed.ProgressBarEventProps & {  style :react-blessed.react-blessed.ProgressBarStyle | undefined} */
-  trait ProgressBarEventPropsstyl extends StObject {
-    
-    @JSName("on${Capitalize<T>}")
-    var on$LeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracket: js.UndefOr[ProgressBarEventHandler] = js.undefined
-    
-    var style: js.UndefOr[ProgressBarStyle] = js.undefined
-  }
-  object ProgressBarEventPropsstyl {
-    
-    inline def apply(): ProgressBarEventPropsstyl = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ProgressBarEventPropsstyl]
-    }
-    
-    extension [Self <: ProgressBarEventPropsstyl](x: Self) {
-      
-      inline def setOn$LeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracket(
-        value: /* args */ SpreadableArgs[ProgressBarEvent, js.Array[ProgressBarEvent] | ProgressBarEvent] => Unit
-      ): Self = StObject.set(x, "on${Capitalize<T>}", js.Any.fromFunction1(value))
-      
-      inline def setOn$LeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracketUndefined: Self = StObject.set(x, "on${Capitalize<T>}", js.undefined)
-      
-      inline def setStyle(value: ProgressBarStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    }
-  }
-  
-  /* Inlined react-blessed.react-blessed.ProgressBarEventProps & {  style :react-blessed.react-blessed.ListStyle | undefined,   selected :number | undefined} */
-  trait ProgressBarEventPropsstylOnCapitalizeT extends StObject {
-    
-    @JSName("on${Capitalize<T>}")
-    var on$LeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracket: js.UndefOr[ProgressBarEventHandler] = js.undefined
+  trait Selected extends StObject {
     
     var selected: js.UndefOr[Double] = js.undefined
     
     var style: js.UndefOr[ListStyle] = js.undefined
   }
-  object ProgressBarEventPropsstylOnCapitalizeT {
+  object Selected {
     
-    inline def apply(): ProgressBarEventPropsstylOnCapitalizeT = {
+    inline def apply(): Selected = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ProgressBarEventPropsstylOnCapitalizeT]
+      __obj.asInstanceOf[Selected]
     }
     
-    extension [Self <: ProgressBarEventPropsstylOnCapitalizeT](x: Self) {
-      
-      inline def setOn$LeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracket(
-        value: /* args */ SpreadableArgs[ProgressBarEvent, js.Array[ProgressBarEvent] | ProgressBarEvent] => Unit
-      ): Self = StObject.set(x, "on${Capitalize<T>}", js.Any.fromFunction1(value))
-      
-      inline def setOn$LeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracketUndefined: Self = StObject.set(x, "on${Capitalize<T>}", js.undefined)
+    extension [Self <: Selected](x: Self) {
       
       inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
       inline def setStyle(value: ListStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    }
+  }
+  
+  trait Style extends StObject {
+    
+    var style: js.UndefOr[ProgressBarStyle] = js.undefined
+  }
+  object Style {
+    
+    inline def apply(): Style = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Style]
+    }
+    
+    extension [Self <: Style](x: Self) {
+      
+      inline def setStyle(value: ProgressBarStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

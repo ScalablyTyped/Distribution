@@ -1,0 +1,269 @@
+package typings.reactMosaicComponent
+
+import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object optionalBlueprintMod {
+  
+  object OptionalBlueprint {
+    
+    @JSImport("react-mosaic-component/lib/util/OptionalBlueprint", "OptionalBlueprint")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def Icon(hasIconClassNameSize: typings.reactMosaicComponent.anon.Icon): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Icon")(hasIconClassNameSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    inline def getClasses(blueprintNamespace: String, names: BlueprintClass*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getClasses")(scala.List(blueprintNamespace.asInstanceOf[js.Any]).`++`(names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    
+    inline def getIconClass(
+      blueprintNamespace: String,
+      iconName: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1116 */ Any
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getIconClass")(blueprintNamespace.asInstanceOf[js.Any], iconName.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    /* Rewritten from type alias, can be one of: 
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_LABEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAB_INDICATOR
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BUTTON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HTML_TABLE_STRIPED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CODE_BLOCK
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK_VIEW
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTILINE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU_DIVIDER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.KEY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INTENT_WARNING
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_CARET_CLOSED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.LABEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FIXED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.getClassNamespace
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HTML_TABLE_CONDENSED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ALERT_CONTENTS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INPUT_ACTION
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ALERT_BODY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_END_FOCUS_TRAP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ICON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DARK
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INLINE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TEXT_MUTED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SMALL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CONTROL_INDICATOR
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_STEP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_OUT_OF_BOUNDARIES
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HOTKEY_DIALOG
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CODE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CHECKBOX
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OUTLINED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INPUT_LEFT_CONTAINER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SELECTED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.elevationClass
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_BACKDROP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NON_IDEAL_STATE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_CARET_NONE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ICON_STANDARD
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DRAWER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.LIST
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PROGRESS_NO_STRIPES
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CALLOUT_ICON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SPINNER_NO_SPIN
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTISTEP_DIALOG_NAV_RIGHT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FILL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.END
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CONTROL_GROUP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_WRAPPER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_LIST
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_STEP_ICON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SLIDER_AXIS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HTML_TABLE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HOTKEY_LABEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_DISMISS_OVERRIDE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_SECONDARY_LABEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TOAST
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POSITION_TOP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NAVBAR
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ICON_LARGE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POSITION_BOTTOM
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SKELETON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_STEP_TITLE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIVIDER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAG_INPUT_VALUES
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NON_IDEAL_STATE_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_HEADER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ALERT_FOOTER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.UI_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FILE_UPLOAD_INPUT_CUSTOM_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BREADCRUMBS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU_ITEM_ICON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.LOADING
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_INLINE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ELEVATION_3
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POSITION_LEFT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.alignmentClass
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INPUT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_START_FOCUS_TRAP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BUTTON_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_BACKDROP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAB
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ELEVATION_0
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MODIFIER_KEY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ALIGN_LEFT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DRAWER_FOOTER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.iconClass
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ACTIVE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ALIGN_RIGHT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_CONTENT_SIZING
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.START
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.RTL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SWITCH
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.positionClass
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.LIST_UNSTYLED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_TARGET
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SLIDER_PROGRESS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INTENT_PRIMARY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SPINNER_HEAD
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAG_INPUT_ICON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SLIDER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FLEX_EXPANDER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NAVBAR_HEADING
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_CLOSE_BUTTON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DRAWER_HEADER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FOCUS_DISABLED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ELEVATION_4
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.COLLAPSE_BODY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK_HEADER_BACK
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CONTROL_INDICATOR_CHILD
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CARD
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU_ITEM
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERFLOW_LIST
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_FOOTER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.LARGE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.EDITABLE_TEXT_EDITING
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU_HEADER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_DISMISS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MONOSPACE_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HOTKEY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FORM_GROUP_SUB_LABEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BREADCRUMBS_COLLAPSED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.COLLAPSIBLE_LIST
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_OPEN
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ALERT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_SELECTED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_CONTAINER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CONTEXT_MENU_POPOVER_TARGET
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK2_VIEW
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_CAPTURING_DISMISS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAG
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PROGRESS_METER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PROGRESS_NO_ANIMATION
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CONTEXT_MENU
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.COLLAPSE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.EDITABLE_TEXT_CONTENT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_CONTAINER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NAVBAR_DIVIDER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TEXT_SMALL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_STEP_CONTAINER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_CONTENT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NON_IDEAL_STATE_VISUAL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PORTAL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK_HEADER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK2
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.VERTICAL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SPINNER_TRACK
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_SCROLL_CONTAINER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DISABLED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SLIDER_HANDLE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NAVBAR_GROUP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TOOLTIP_INDICATOR
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.intentClass
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BLOCKQUOTE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SLIDER_LABEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HTML_SELECT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CALLOUT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_CARET_OPEN
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_CONTENT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_EXPANDED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU_SUBMENU
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FOCUS_STYLE_MANAGER_IGNORE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FILE_UPLOAD_INPUT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SPINNER_ANIMATION
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU_ITEM_LABEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAG_REMOVE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_OPEN
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_CARET
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BREADCRUMB
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERFLOW_LIST_SPACER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FORM_HELPER_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.RADIO
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK2_HEADER_BACK
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ROUND
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PROGRESS_BAR
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HTML_TABLE_BORDERED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TABS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ELEVATION_2
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SLIDER_TRACK
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_FOOTER_ACTIONS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HEADING
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TOAST_MESSAGE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FILE_INPUT_HAS_SELECTION
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POPOVER_ARROW
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAB_LIST
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TEXT_OVERFLOW_ELLIPSIS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MINIMAL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAB_INDICATOR_WRAPPER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTISTEP_DIALOG_FOOTER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INTERACTIVE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INTENT_SUCCESS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.EDITABLE_TEXT_INPUT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.ELEVATION_1
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FIXED_TOP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TOAST_CONTAINER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.HOTKEY_COLUMN
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TEXT_LARGE
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INPUT_GHOST
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.POSITION_RIGHT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BREADCRUMB_CURRENT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_NODE_ICON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.RUNNING_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INTENT_DANGER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTISTEP_DIALOG_NAV_TOP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTISTEP_DIALOG_PANELS
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BUTTON_SPINNER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DRAWER_BODY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTISTEP_DIALOG
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FILE_INPUT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SWITCH_INNER_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FORM_GROUP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TRANSITION_CONTAINER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.CONTROL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.KEY_COMBO
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TEXT_DISABLED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MENU_SUBMENU_ICON
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.FORM_CONTENT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.OVERLAY_CONTENT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTISTEP_DIALOG_LEFT_PANEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_STEP_VIEWED
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.INPUT_GROUP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SELECT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.PANEL_STACK2_HEADER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.DIALOG_BODY
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.SPINNER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.MULTISTEP_DIALOG_RIGHT_PANEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAB_PANEL
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.BUTTON_GROUP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TAG_INPUT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.NUMERIC_INPUT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE_ROOT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.EDITABLE_TEXT
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TOOLTIP
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.EDITABLE_TEXT_PLACEHOLDER
+      - typings.reactMosaicComponent.reactMosaicComponentStrings.TREE
+    */
+    trait BlueprintClass extends StObject
+  }
+}

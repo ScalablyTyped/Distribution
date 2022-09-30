@@ -10,5 +10,26 @@ object getWindowSizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  inline def default(): js.Promise[BrowserSize] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[BrowserSize]]
+  
+  trait BrowserSize extends StObject {
+    
+    var height: Double
+    
+    var width: Double
+  }
+  object BrowserSize {
+    
+    inline def apply(height: Double, width: Double): BrowserSize = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BrowserSize]
+    }
+    
+    extension [Self <: BrowserSize](x: Self) {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
 }

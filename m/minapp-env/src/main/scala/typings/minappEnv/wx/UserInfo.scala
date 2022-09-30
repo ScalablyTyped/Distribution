@@ -1,8 +1,8 @@
 package typings.minappEnv.wx
 
-import typings.minappEnv.minappEnvNumbers.`0`
-import typings.minappEnv.minappEnvNumbers.`1`
-import typings.minappEnv.minappEnvNumbers.`2`
+import typings.minappEnv.minappEnvInts.`0`
+import typings.minappEnv.minappEnvInts.`1`
+import typings.minappEnv.minappEnvInts.`2`
 import typings.minappEnv.minappEnvStrings.en
 import typings.minappEnv.minappEnvStrings.zh_CN
 import typings.minappEnv.minappEnvStrings.zh_TW

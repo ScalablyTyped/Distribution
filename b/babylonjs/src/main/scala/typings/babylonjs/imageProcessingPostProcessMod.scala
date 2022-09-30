@@ -55,7 +55,7 @@ object imageProcessingPostProcessMod {
     /* private */ var _imageProcessingObserver: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _updateParameters(): Unit = js.native
     

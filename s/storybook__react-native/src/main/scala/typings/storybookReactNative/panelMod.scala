@@ -9,28 +9,28 @@ object panelMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/panel", JSImport.Default)
   @js.native
-  class default () extends Panel
+  open class default () extends Panel
   
   @js.native
   trait Panel
-    extends PureComponent[Props, js.Object, js.Any]
+    extends PureComponent[Props, js.Object, Any]
   
   trait Props extends StObject {
     
-    var style: js.Array[js.Any]
+    var style: js.Array[Any]
   }
   object Props {
     
-    inline def apply(style: js.Array[js.Any]): Props = {
+    inline def apply(style: js.Array[Any]): Props = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
     extension [Self <: Props](x: Self) {
       
-      inline def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Array[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      inline def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Any*): Self = StObject.set(x, "style", js.Array(value*))
     }
   }
 }

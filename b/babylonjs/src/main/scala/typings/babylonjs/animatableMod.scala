@@ -53,8 +53,7 @@ object animatableMod {
     ) = this()
     
     /**
-      * @param delay
-      * @hidden
+      * @internal
       */
     def _animate(delay: Double): Boolean = js.native
     
@@ -273,16 +272,16 @@ object animatableMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _processLateAnimationBindings(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): Any = js.native
       
-      /** @hidden */
+      /** @internal */
       def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: Quaternion): Quaternion = js.native
       
-      /** @hidden */
+      /** @internal */
       def _registerTargetForLateAnimationBinding(runtimeAnimation: RuntimeAnimation, originalValue: Any): Unit = js.native
       
       /**

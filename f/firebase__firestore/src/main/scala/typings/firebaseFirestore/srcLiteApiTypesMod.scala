@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object srcLiteApiTypesMod {
   
   type AddPrefixToKeys[Prefix /* <: String */, T /* <: Record[String, Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T & string as '${Prefix}.${K}' ]:? T[K]}
+  {[ K in keyof T & string as / * template literal string: ${Prefix}.${K} * / string ]:? T[K]}
     */ typings.firebaseFirestore.firebaseFirestoreStrings.AddPrefixToKeys & TopLevel[T]
   
   type ChildUpdateFields[K /* <: String */, V] = AddPrefixToKeys[K, UpdateData[V]]

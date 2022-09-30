@@ -121,7 +121,7 @@ object externalSystemMod {
       * Get parent {@link ExternalSystemArray} object.
       */
     @JSName("getSystemArray")
-    def getSystemArray_SystemArray_ExternalSystemArrayExternalSystem_SystemArray[SystemArray /* <: ExternalSystemArray[ExternalSystem] */](): SystemArray = js.native
+    def getSystemArray_SystemArray_SystemArray[SystemArray /* <: ExternalSystemArray[ExternalSystem] */](): SystemArray = js.native
     
     /* InferMemberOverrides */
     override def hasEventListener(`type`: Type): Boolean = js.native

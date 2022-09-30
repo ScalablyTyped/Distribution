@@ -20,10 +20,10 @@ object engineRenderTargetMod {
     @js.native
     trait ThinEngine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _createDepthStencilTexture(size: TextureSize, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
       
-      /** @hidden */
+      /** @internal */
       def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): RenderTargetWrapper = js.native
       
       /**

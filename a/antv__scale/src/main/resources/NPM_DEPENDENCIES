@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/scale" : "0.4.10"
+      "@antv/scale" : "0.4.11"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/scale" : "0.4.10"
+      "@antv/scale" : "0.4.11"
     }
   ],
   "compile-devDependencies" : [

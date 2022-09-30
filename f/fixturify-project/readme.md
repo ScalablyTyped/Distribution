@@ -1,19 +1,19 @@
 
 # Scala.js typings for fixturify-project
 
-Typings are for version 1.10.0
+Typings are for version 5.1.0
 
 ## Library description:
-![CI](https://github.com/stefanpenner/node-fixturify-project/workflows/CI/badge.svg)
+[![npm version](https://badge.fury.io/js/fixturify-project.svg)](https://badge.fury.io/js/fixturify-project) [![CI](https://github.com/stefanpenner/node-fixturify-project/workflows/CI/badge.svg)](https://github.com/stefanpenner/node-fixturify-project/acti
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fixturify-project |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 3 |
-| # downloads        | 6873023 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 990271.6666666666 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/node-fixturify-project#readme)

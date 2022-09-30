@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/footer-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Footer")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Footer")
 @js.native
-class Footer protected () extends DropZone {
+open class Footer protected () extends DropZone {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,7 +31,7 @@ class Footer protected () extends DropZone {
 }
 object Footer {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Footer")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Footer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -52,13 +52,13 @@ object Footer {
   inline def createIn(container: DocumentTemplate): Footer = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Footer]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Footer.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Footer.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Footer.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Footer.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

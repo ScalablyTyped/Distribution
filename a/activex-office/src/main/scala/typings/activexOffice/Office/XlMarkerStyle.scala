@@ -1,34 +1,34 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-4105`
-import typings.activexOffice.activexOfficeNumbers.`-4115`
-import typings.activexOffice.activexOfficeNumbers.`-4118`
-import typings.activexOffice.activexOfficeNumbers.`-4142`
-import typings.activexOffice.activexOfficeNumbers.`-4147`
-import typings.activexOffice.activexOfficeNumbers.`-4168`
-import typings.activexOffice.activexOfficeNumbers.`1`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`3`
-import typings.activexOffice.activexOfficeNumbers.`5`
-import typings.activexOffice.activexOfficeNumbers.`8`
-import typings.activexOffice.activexOfficeNumbers.`9`
+import typings.activexOffice.activexOfficeInts.`-4105`
+import typings.activexOffice.activexOfficeInts.`-4115`
+import typings.activexOffice.activexOfficeInts.`-4118`
+import typings.activexOffice.activexOfficeInts.`-4142`
+import typings.activexOffice.activexOfficeInts.`-4147`
+import typings.activexOffice.activexOfficeInts.`-4168`
+import typings.activexOffice.activexOfficeInts.`1`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`3`
+import typings.activexOffice.activexOfficeInts.`5`
+import typings.activexOffice.activexOfficeInts.`8`
+import typings.activexOffice.activexOfficeInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-4105`
-  - typings.activexOffice.activexOfficeNumbers.`8`
-  - typings.activexOffice.activexOfficeNumbers.`-4115`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`-4118`
-  - typings.activexOffice.activexOfficeNumbers.`-4142`
-  - typings.activexOffice.activexOfficeNumbers.`-4147`
-  - typings.activexOffice.activexOfficeNumbers.`9`
-  - typings.activexOffice.activexOfficeNumbers.`1`
-  - typings.activexOffice.activexOfficeNumbers.`5`
-  - typings.activexOffice.activexOfficeNumbers.`3`
-  - typings.activexOffice.activexOfficeNumbers.`-4168`
+  - typings.activexOffice.activexOfficeInts.`-4105`
+  - typings.activexOffice.activexOfficeInts.`8`
+  - typings.activexOffice.activexOfficeInts.`-4115`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`-4118`
+  - typings.activexOffice.activexOfficeInts.`-4142`
+  - typings.activexOffice.activexOfficeInts.`-4147`
+  - typings.activexOffice.activexOfficeInts.`9`
+  - typings.activexOffice.activexOfficeInts.`1`
+  - typings.activexOffice.activexOfficeInts.`5`
+  - typings.activexOffice.activexOfficeInts.`3`
+  - typings.activexOffice.activexOfficeInts.`-4168`
 */
 trait XlMarkerStyle extends StObject
 object XlMarkerStyle {

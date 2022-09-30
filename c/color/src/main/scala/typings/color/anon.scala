@@ -1,9 +1,9 @@
 package typings.color
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.color.colorNumbers.`1`
-import typings.color.colorNumbers.`3`
-import typings.color.colorNumbers.`4`
+import typings.color.colorInts.`1`
+import typings.color.colorInts.`3`
+import typings.color.colorInts.`4`
 import typings.color.colorStrings.ansi16
 import typings.color.colorStrings.ansi256
 import typings.color.colorStrings.b16

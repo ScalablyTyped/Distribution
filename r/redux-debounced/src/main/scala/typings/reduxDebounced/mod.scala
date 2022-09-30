@@ -13,5 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def default(): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
 }

@@ -2,11 +2,9 @@ package typings.xmldsigjs
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Algorithm
-import typings.std.ArrayBuffer
 import typings.std.BufferSource
 import typings.std.CryptoKey
 import typings.std.Node
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +17,9 @@ object algorithmMod {
   @js.native
   abstract class HashAlgorithm () extends XmlAlgorithm {
     
-    def Digest(xml: String): js.Promise[Uint8Array] = js.native
-    def Digest(xml: BufferSource): js.Promise[Uint8Array] = js.native
-    def Digest(xml: Node): js.Promise[Uint8Array] = js.native
+    def Digest(xml: String): js.Promise[js.typedarray.Uint8Array] = js.native
+    def Digest(xml: BufferSource): js.Promise[js.typedarray.Uint8Array] = js.native
+    def Digest(xml: Node): js.Promise[js.typedarray.Uint8Array] = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -33,13 +31,13 @@ object algorithmMod {
     /**
       * Sign the given string using the given key
       */
-    def Sign(signedInfo: String, signingKey: CryptoKey, algorithm: Algorithm): js.Promise[ArrayBuffer] = js.native
+    def Sign(signedInfo: String, signingKey: CryptoKey, algorithm: Algorithm): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
     /**
       * Verify the given signature of the given string using key
       */
-    def Verify(signedInfo: String, key: CryptoKey, signatureValue: Uint8Array): js.Promise[Boolean] = js.native
-    def Verify(signedInfo: String, key: CryptoKey, signatureValue: Uint8Array, algorithm: Algorithm): js.Promise[Boolean] = js.native
+    def Verify(signedInfo: String, key: CryptoKey, signatureValue: js.typedarray.Uint8Array): js.Promise[Boolean] = js.native
+    def Verify(signedInfo: String, key: CryptoKey, signatureValue: js.typedarray.Uint8Array, algorithm: Algorithm): js.Promise[Boolean] = js.native
   }
   
   @JSImport("xmldsigjs/build/types/algorithm", "XmlAlgorithm")
@@ -90,9 +88,9 @@ object algorithmMod {
     extends StObject
        with IAlgorithm {
     
-    def Digest(xml: String): js.Promise[Uint8Array] = js.native
-    def Digest(xml: BufferSource): js.Promise[Uint8Array] = js.native
-    def Digest(xml: Node): js.Promise[Uint8Array] = js.native
+    def Digest(xml: String): js.Promise[js.typedarray.Uint8Array] = js.native
+    def Digest(xml: BufferSource): js.Promise[js.typedarray.Uint8Array] = js.native
+    def Digest(xml: Node): js.Promise[js.typedarray.Uint8Array] = js.native
   }
   
   type IHashAlgorithmConstructable = Instantiable0[IHashAlgorithm]
@@ -102,10 +100,10 @@ object algorithmMod {
     extends StObject
        with IAlgorithm {
     
-    def Sign(signedInfo: String, signingKey: CryptoKey, algorithm: Algorithm): js.Promise[ArrayBuffer] = js.native
+    def Sign(signedInfo: String, signingKey: CryptoKey, algorithm: Algorithm): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
-    def Verify(signedInfo: String, key: CryptoKey, signatureValue: Uint8Array): js.Promise[Boolean] = js.native
-    def Verify(signedInfo: String, key: CryptoKey, signatureValue: Uint8Array, algorithm: Algorithm): js.Promise[Boolean] = js.native
+    def Verify(signedInfo: String, key: CryptoKey, signatureValue: js.typedarray.Uint8Array): js.Promise[Boolean] = js.native
+    def Verify(signedInfo: String, key: CryptoKey, signatureValue: js.typedarray.Uint8Array, algorithm: Algorithm): js.Promise[Boolean] = js.native
   }
   
   type ISignatureAlgorithmConstructable = Instantiable0[ISignatureAlgorithm]

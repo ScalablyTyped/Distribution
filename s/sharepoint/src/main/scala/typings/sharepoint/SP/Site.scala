@@ -14,7 +14,7 @@ trait Site
   
   def extendUpgradeReminderDate(): Unit = js.native
   
-  def getCatalog(typeCatalog: Double): List[Any] = js.native
+  def getCatalog(typeCatalog: Double): typings.sharepoint.SP.List[Any] = js.native
   
   def getChanges(query: ChangeQuery): ChangeCollection = js.native
   

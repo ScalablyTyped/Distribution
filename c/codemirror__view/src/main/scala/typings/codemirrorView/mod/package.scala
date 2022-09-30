@@ -11,8 +11,8 @@ import typings.codemirrorView.anon.Fixed
 import typings.codemirrorView.anon.HideOn
 import typings.codemirrorView.anon.Key
 import typings.codemirrorView.anon.Parent
-import typings.codemirrorView.codemirrorViewNumbers.`-1`
-import typings.codemirrorView.codemirrorViewNumbers.`1`
+import typings.codemirrorView.codemirrorViewInts.`-1`
+import typings.codemirrorView.codemirrorViewInts.`1`
 import typings.codemirrorView.mod.^
 import typings.std.Event
 import typings.std.HTMLElement

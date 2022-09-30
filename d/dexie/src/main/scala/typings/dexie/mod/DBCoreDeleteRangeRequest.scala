@@ -1,50 +1,34 @@
 package typings.dexie.mod
 
 import typings.dexie.dexieStrings.deleteRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreDeleteRangeRequest extends DBCoreMutateRequest {
+trait DBCoreDeleteRangeRequest
+  extends StObject
+     with DBCoreMutateRequest {
   
-  var range: DBCoreKeyRange = js.native
+  var range: DBCoreKeyRange
   
-  var trans: DBCoreTransaction = js.native
+  var trans: DBCoreTransaction
   
-  var `type`: deleteRange = js.native
+  var `type`: deleteRange
 }
 object DBCoreDeleteRangeRequest {
   
-  @scala.inline
-  def apply(range: DBCoreKeyRange, trans: DBCoreTransaction, `type`: deleteRange): DBCoreDeleteRangeRequest = {
+  inline def apply(range: DBCoreKeyRange, trans: DBCoreTransaction): DBCoreDeleteRangeRequest = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("deleteRange")
     __obj.asInstanceOf[DBCoreDeleteRangeRequest]
   }
   
-  @scala.inline
-  implicit class DBCoreDeleteRangeRequestOps[Self <: DBCoreDeleteRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreDeleteRangeRequest](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setRange(value: DBCoreKeyRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setTrans(value: DBCoreTransaction): Self = StObject.set(x, "trans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRange(value: DBCoreKeyRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrans(value: DBCoreTransaction): Self = this.set("trans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: deleteRange): Self = this.set("type", value.asInstanceOf[js.Any])
+    inline def setType(value: deleteRange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

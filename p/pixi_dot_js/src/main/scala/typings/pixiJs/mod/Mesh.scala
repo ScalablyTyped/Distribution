@@ -4,62 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Base mesh class.
-  *
-  * This class empowers you to have maximum flexibility to render any kind of WebGL visuals you can think of.
-  * This class assumes a certain level of WebGL knowledge.
-  * If you know a bit this should abstract enough away to make you life easier!
-  *
-  * Pretty much ALL WebGL can be broken down into the following:
-  * - Geometry - The structure and data for the mesh. This can include anything from positions, uvs, normals, colors etc..
-  * - Shader - This is the shader that PixiJS will render the geometry with (attributes in the shader must match the geometry)
-  * - State - This is the state of WebGL required to render the mesh.
-  *
-  * Through a combination of the above elements you can render anything you want, 2D or 3D!
-  *
-  * @class
-  * @extends PIXI.Container
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Mesh")
 @js.native
-class Mesh protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.Mesh {
-  def this(geometry: typings.pixiJs.PIXI.Geometry, shader: typings.pixiJs.PIXI.MeshMaterial) = this()
+open class Mesh[T /* <: typings.pixiCore.mod.Shader */] protected ()
+  extends typings.pixiMesh.mod.Mesh[T] {
+  /**
+    * @param geometry - The geometry the mesh will use.
+    * @param {PIXI.MeshMaterial} shader - The shader the mesh will use.
+    * @param state - The state that the WebGL context is required to be in to render the mesh
+    *        if no state is provided, uses {@link PIXI.State.for2d} to create a 2D state for PixiJS.
+    * @param drawMode - The drawMode, can be any of the {@link PIXI.DRAW_MODES} constants.
+    */
+  def this(geometry: typings.pixiCore.mod.Geometry, shader: T) = this()
+  def this(geometry: typings.pixiCore.mod.Geometry, shader: T, state: typings.pixiCore.mod.State) = this()
   def this(
-    geometry: typings.pixiJs.PIXI.Geometry,
-    shader: typings.pixiJs.PIXI.MeshMaterial,
-    state: typings.pixiJs.PIXI.State
-  ) = this()
-  def this(
-    geometry: typings.pixiJs.PIXI.Geometry,
-    shader: typings.pixiJs.PIXI.MeshMaterial,
+    geometry: typings.pixiCore.mod.Geometry,
+    shader: T,
     state: Unit,
-    drawMode: Double
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    geometry: typings.pixiJs.PIXI.Geometry,
-    shader: typings.pixiJs.PIXI.MeshMaterial,
-    state: typings.pixiJs.PIXI.State,
-    drawMode: Double
+    geometry: typings.pixiCore.mod.Geometry,
+    shader: T,
+    state: typings.pixiCore.mod.State,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
 }
+/* static members */
 object Mesh {
   
   @JSImport("pixi.js", "Mesh")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * The maximum number of vertices to consider batchable. Generally, the complexity
-    * of the geometry.
-    * @memberof PIXI.Mesh
-    * @static
-    * @member {number} BATCHABLE_SIZE
-    */
-  /* static member */
+  /** The maximum number of vertices to consider batchable. Generally, the complexity of the geometry. */
   @JSImport("pixi.js", "Mesh.BATCHABLE_SIZE")
   @js.native
   def BATCHABLE_SIZE: Double = js.native

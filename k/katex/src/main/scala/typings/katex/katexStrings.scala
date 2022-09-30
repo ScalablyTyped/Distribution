@@ -15,14 +15,6 @@ object katexStrings {
   inline def DollarDollar: DollarDollar = "$$".asInstanceOf[DollarDollar]
   
   @js.native
-  sealed trait Leftparenthesis extends StObject
-  inline def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
-  
-  @js.native
-  sealed trait Rightparenthesis extends StObject
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
-  
-  @js.native
   sealed trait `[` extends StObject
   inline def `[`: `[` = "[".asInstanceOf[`[`]
   

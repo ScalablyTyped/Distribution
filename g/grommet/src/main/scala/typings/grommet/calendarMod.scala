@@ -1,8 +1,8 @@
 package typings.grommet
 
 import typings.grommet.anon.Next
-import typings.grommet.grommetNumbers.`0`
-import typings.grommet.grommetNumbers.`1`
+import typings.grommet.grommetInts.`0`
+import typings.grommet.grommetInts.`1`
 import typings.grommet.grommetStrings.array
 import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.large

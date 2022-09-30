@@ -683,26 +683,26 @@ object Viewer {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.viewerjs.viewerjsNumbers.`0`
-    - typings.viewerjs.viewerjsNumbers.`1`
-    - typings.viewerjs.viewerjsNumbers.`2`
-    - typings.viewerjs.viewerjsNumbers.`3`
-    - typings.viewerjs.viewerjsNumbers.`4`
+    - typings.viewerjs.viewerjsInts.`0`
+    - typings.viewerjs.viewerjsInts.`1`
+    - typings.viewerjs.viewerjsInts.`2`
+    - typings.viewerjs.viewerjsInts.`3`
+    - typings.viewerjs.viewerjsInts.`4`
   */
   trait Visibility
     extends StObject
        with _ToolbarOption
   object Visibility {
     
-    inline def `0`: typings.viewerjs.viewerjsNumbers.`0` = 0.asInstanceOf[typings.viewerjs.viewerjsNumbers.`0`]
+    inline def `0`: typings.viewerjs.viewerjsInts.`0` = 0.asInstanceOf[typings.viewerjs.viewerjsInts.`0`]
     
-    inline def `1`: typings.viewerjs.viewerjsNumbers.`1` = 1.asInstanceOf[typings.viewerjs.viewerjsNumbers.`1`]
+    inline def `1`: typings.viewerjs.viewerjsInts.`1` = 1.asInstanceOf[typings.viewerjs.viewerjsInts.`1`]
     
-    inline def `2`: typings.viewerjs.viewerjsNumbers.`2` = 2.asInstanceOf[typings.viewerjs.viewerjsNumbers.`2`]
+    inline def `2`: typings.viewerjs.viewerjsInts.`2` = 2.asInstanceOf[typings.viewerjs.viewerjsInts.`2`]
     
-    inline def `3`: typings.viewerjs.viewerjsNumbers.`3` = 3.asInstanceOf[typings.viewerjs.viewerjsNumbers.`3`]
+    inline def `3`: typings.viewerjs.viewerjsInts.`3` = 3.asInstanceOf[typings.viewerjs.viewerjsInts.`3`]
     
-    inline def `4`: typings.viewerjs.viewerjsNumbers.`4` = 4.asInstanceOf[typings.viewerjs.viewerjsNumbers.`4`]
+    inline def `4`: typings.viewerjs.viewerjsInts.`4` = 4.asInstanceOf[typings.viewerjs.viewerjsInts.`4`]
   }
   
   @js.native

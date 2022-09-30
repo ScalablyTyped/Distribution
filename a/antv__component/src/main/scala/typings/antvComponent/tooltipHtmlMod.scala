@@ -39,6 +39,8 @@ object tooltipHtmlMod {
     
     def setCrossHairsVisible(visible: Any): Unit = js.native
     
+    /* private */ var setCustomContainer: Any = js.native
+    
     def setLocation(point: Point): Unit = js.native
     
     /* private */ var setTitle: Any = js.native

@@ -1,11 +1,11 @@
 package typings.nodegit
 
 import typings.nodegit.indexEntryMod.IndexEntry
-import typings.nodegit.nodegitNumbers.`-1`
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`4`
+import typings.nodegit.nodegitInts.`-1`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`4`
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.strArrayMod.Strarray
@@ -122,10 +122,10 @@ object indexMod {
     inline def open(indexPath: String): js.Promise[Index] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(indexPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Index]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
     */
     trait ADD_OPTION extends StObject
     object ADD_OPTION {
@@ -140,10 +140,10 @@ object indexMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`-1`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`-1`
     */
     trait CAP extends StObject
     object CAP {

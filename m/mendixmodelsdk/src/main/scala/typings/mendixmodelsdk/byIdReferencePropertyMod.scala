@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object byIdReferencePropertyMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/ByIdReferenceProperty", "ByIdReferenceProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/ByIdReferenceProperty", "ByIdReferenceProperty")
   @js.native
-  class ByIdReferenceProperty[T /* <: AbstractElement[IAbstractModel, Container] */] protected () extends AbstractProperty[T | Null, ByIdReference[T]] {
+  open class ByIdReferenceProperty[T /* <: AbstractElement[IAbstractModel, Container] */] protected () extends AbstractProperty[T | Null, ByIdReference[T]] {
     /**
       * parent is the structure that the value of this property attaches to,
       * so e.g. for all values `item` of Part(List)Property we (should) have the invariant:
@@ -30,14 +30,14 @@ object byIdReferencePropertyMod {
       parent: Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: T,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
     def this(
       declaredOn: IStructureClass,
       parent: Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: Null,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
     
     @JSName("parent")

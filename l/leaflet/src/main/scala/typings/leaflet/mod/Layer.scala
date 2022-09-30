@@ -8,12 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Layer")
 @js.native
-class Layer () extends Evented {
+open class Layer () extends Evented {
   def this(options: LayerOptions) = this()
   
   /* protected */ var _map: Map_ = js.native
   
-  def addTo(map: LayerGroup_[js.Any]): this.type = js.native
+  def addInteractiveTarget(targetEl: HTMLElement): this.type = js.native
+  
+  def addTo(map: LayerGroup_[Any]): this.type = js.native
   def addTo(map: Map_): this.type = js.native
   
   var beforeAdd: js.UndefOr[js.Function1[/* map */ Map_, this.type]] = js.native
@@ -67,6 +69,8 @@ class Layer () extends Evented {
   def remove(): this.type = js.native
   
   def removeFrom(map: Map_): this.type = js.native
+  
+  def removeInteractiveTarget(targetEl: HTMLElement): this.type = js.native
   
   def setPopupContent(content: Content): this.type = js.native
   def setPopupContent(content: Popup_): this.type = js.native

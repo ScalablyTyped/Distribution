@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "match-url-wildcard" : "0.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "match-url-wildcard" : "0.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

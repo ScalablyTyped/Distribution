@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.protobufjs.mod.IService
   - typings.protobufjs.mod.AnyExtensionField
   - typings.protobufjs.mod.INamespace
+  - typings.protobufjs.mod.IOneOf
 */
 trait AnyNestedObject extends StObject
 object AnyNestedObject {
@@ -36,6 +37,11 @@ object AnyNestedObject {
   inline def INamespace(): typings.protobufjs.mod.INamespace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.protobufjs.mod.INamespace]
+  }
+  
+  inline def IOneOf(oneof: js.Array[String]): typings.protobufjs.mod.IOneOf = {
+    val __obj = js.Dynamic.literal(oneof = oneof.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.protobufjs.mod.IOneOf]
   }
   
   inline def IService(methods: StringDictionary[IMethod]): typings.protobufjs.mod.IService = {

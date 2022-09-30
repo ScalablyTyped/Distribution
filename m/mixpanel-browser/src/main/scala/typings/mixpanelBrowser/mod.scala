@@ -566,17 +566,17 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`
-    - typings.mixpanelBrowser.mixpanelBrowserNumbers.`0`
+    - typings.mixpanelBrowser.mixpanelBrowserInts.`1`
+    - typings.mixpanelBrowser.mixpanelBrowserInts.`0`
   */
   trait NormalResponse
     extends StObject
        with Response
   object NormalResponse {
     
-    inline def `0`: typings.mixpanelBrowser.mixpanelBrowserNumbers.`0` = 0.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserNumbers.`0`]
+    inline def `0`: typings.mixpanelBrowser.mixpanelBrowserInts.`0` = 0.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserInts.`0`]
     
-    inline def `1`: typings.mixpanelBrowser.mixpanelBrowserNumbers.`1` = 1.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`]
+    inline def `1`: typings.mixpanelBrowser.mixpanelBrowserInts.`1` = 1.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserInts.`1`]
   }
   
   trait OutTrackingOptions

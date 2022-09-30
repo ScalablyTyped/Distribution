@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "async-retry"
-version := "1.4-dt-20220819Z-6fd445"
+version := "1.4-dt-20220819Z-c1d7c2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "retry" % "0.12-dt-20220426Z-d38354",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "retry" % "0.12-dt-20220426Z-db9e1f",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

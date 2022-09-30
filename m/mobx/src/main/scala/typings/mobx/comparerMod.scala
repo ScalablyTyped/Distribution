@@ -8,33 +8,33 @@ object comparerMod {
   
   object comparer {
     
-    @JSImport("mobx/lib/utils/comparer", "comparer")
+    @JSImport("mobx/dist/utils/comparer", "comparer")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("mobx/lib/utils/comparer", "comparer.default")
+    @JSImport("mobx/dist/utils/comparer", "comparer.default")
     @js.native
-    def default: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean] = js.native
-    inline def default(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def default_=(x: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+    def default: js.Function2[/* a */ Any, /* b */ Any, Boolean] = js.native
+    inline def default(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def default_=(x: js.Function2[/* a */ Any, /* b */ Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
     
-    @JSImport("mobx/lib/utils/comparer", "comparer.identity")
+    @JSImport("mobx/dist/utils/comparer", "comparer.identity")
     @js.native
-    def identity: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean] = js.native
-    inline def identity(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("identity")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def identity_=(x: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
+    def identity: js.Function2[/* a */ Any, /* b */ Any, Boolean] = js.native
+    inline def identity(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("identity")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def identity_=(x: js.Function2[/* a */ Any, /* b */ Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
     
-    @JSImport("mobx/lib/utils/comparer", "comparer.shallow")
+    @JSImport("mobx/dist/utils/comparer", "comparer.shallow")
     @js.native
-    def shallow: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean] = js.native
-    inline def shallow(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def shallow_=(x: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shallow")(x.asInstanceOf[js.Any])
+    def shallow: js.Function2[/* a */ Any, /* b */ Any, Boolean] = js.native
+    inline def shallow(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallow_=(x: js.Function2[/* a */ Any, /* b */ Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shallow")(x.asInstanceOf[js.Any])
     
-    @JSImport("mobx/lib/utils/comparer", "comparer.structural")
+    @JSImport("mobx/dist/utils/comparer", "comparer.structural")
     @js.native
-    def structural: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean] = js.native
-    inline def structural(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("structural")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def structural_=(x: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structural")(x.asInstanceOf[js.Any])
+    def structural: js.Function2[/* a */ Any, /* b */ Any, Boolean] = js.native
+    inline def structural(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("structural")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def structural_=(x: js.Function2[/* a */ Any, /* b */ Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structural")(x.asInstanceOf[js.Any])
   }
   
   type IEqualsComparer[T] = js.Function2[/* a */ T, /* b */ T, Boolean]

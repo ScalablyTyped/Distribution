@@ -45,13 +45,13 @@ object reduxFormMod {
   inline def reduxForm[FormData, P, ErrorType](config: ConfigProps[FormData, P, ErrorType]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
   inline def reduxForm[FormData, P, ErrorType](config: Partial[ConfigProps[FormData, P, ErrorType]]): FormDecorator[FormData, P, ErrorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("reduxForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormDecorator[FormData, P, ErrorType]]
   
-  type ArrayInsertAction = js.Function3[/* field */ String, /* index */ Double, /* value */ js.Any, Unit]
+  type ArrayInsertAction = js.Function3[/* field */ String, /* index */ Double, /* value */ Any, Unit]
   
   type ArrayMoveAction = js.Function3[/* field */ String, /* from */ Double, /* to */ Double, Unit]
   
   type ArrayPopAction = js.Function1[/* field */ String, Unit]
   
-  type ArrayPushAction = js.Function2[/* field */ String, /* value */ js.Any, Unit]
+  type ArrayPushAction = js.Function2[/* field */ String, /* value */ Any, Unit]
   
   type ArrayRemoveAction = js.Function2[/* field */ String, /* index */ Double, Unit]
   
@@ -59,11 +59,11 @@ object reduxFormMod {
   
   type ArrayShiftAction = js.Function1[/* field */ String, Unit]
   
-  type ArraySpliceAction = js.Function4[/* field */ String, /* index */ Double, /* removeNum */ Double, /* value */ js.Any, Unit]
+  type ArraySpliceAction = js.Function4[/* field */ String, /* index */ Double, /* removeNum */ Double, /* value */ Any, Unit]
   
   type ArraySwapAction = js.Function3[/* field */ String, /* indexA */ Double, /* indexB */ Double, Unit]
   
-  type ArrayUnshiftAction = js.Function2[/* field */ String, /* value */ js.Any, Unit]
+  type ArrayUnshiftAction = js.Function2[/* field */ String, /* value */ Any, Unit]
   
   trait AsyncValidateCallback[FormData, ErrorType] extends StObject {
     
@@ -106,11 +106,11 @@ object reduxFormMod {
     }
   }
   
-  type AutoFillAction = js.Function2[/* field */ String, /* value */ js.Any, Unit]
+  type AutoFillAction = js.Function2[/* field */ String, /* value */ Any, Unit]
   
-  type BlurAction = js.Function2[/* field */ String, /* value */ js.Any, Unit]
+  type BlurAction = js.Function2[/* field */ String, /* value */ Any, Unit]
   
-  type ChangeAction = js.Function2[/* field */ String, /* value */ js.Any, Unit]
+  type ChangeAction = js.Function2[/* field */ String, /* value */ Any, Unit]
   
   type ClearAsyncErrorAction = js.Function1[/* field */ String, Unit]
   
@@ -133,10 +133,10 @@ object reduxFormMod {
     var asyncValidate: js.UndefOr[
         js.Function4[
           /* values */ FormData, 
-          /* dispatch */ Dispatch[js.Any], 
+          /* dispatch */ Dispatch[Any], 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           /* blurredField */ String, 
-          js.Promise[js.Any]
+          js.Promise[Any]
         ]
       ] = js.undefined
     
@@ -161,7 +161,7 @@ object reduxFormMod {
     var onChange: js.UndefOr[
         js.Function4[
           /* values */ Partial[FormData], 
-          /* dispatch */ Dispatch[js.Any], 
+          /* dispatch */ Dispatch[Any], 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           /* previousValues */ Partial[FormData], 
           Unit
@@ -175,8 +175,8 @@ object reduxFormMod {
     var onSubmitFail: js.UndefOr[
         js.Function4[
           /* errors */ js.UndefOr[FormErrors[FormData, ErrorType]], 
-          /* dispatch */ Dispatch[js.Any], 
-          /* submitError */ js.Any, 
+          /* dispatch */ Dispatch[Any], 
+          /* submitError */ Any, 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           Unit
         ]
@@ -184,8 +184,8 @@ object reduxFormMod {
     
     var onSubmitSuccess: js.UndefOr[
         js.Function3[
-          /* result */ js.Any, 
-          /* dispatch */ Dispatch[js.Any], 
+          /* result */ Any, 
+          /* dispatch */ Dispatch[Any], 
           /* props */ DecoratedFormProps[FormData, P, ErrorType], 
           Unit
         ]
@@ -242,16 +242,16 @@ object reduxFormMod {
       
       inline def setAsyncBlurFieldsUndefined: Self = StObject.set(x, "asyncBlurFields", js.undefined)
       
-      inline def setAsyncBlurFieldsVarargs(value: String*): Self = StObject.set(x, "asyncBlurFields", js.Array(value :_*))
+      inline def setAsyncBlurFieldsVarargs(value: String*): Self = StObject.set(x, "asyncBlurFields", js.Array(value*))
       
       inline def setAsyncChangeFields(value: js.Array[String]): Self = StObject.set(x, "asyncChangeFields", value.asInstanceOf[js.Any])
       
       inline def setAsyncChangeFieldsUndefined: Self = StObject.set(x, "asyncChangeFields", js.undefined)
       
-      inline def setAsyncChangeFieldsVarargs(value: String*): Self = StObject.set(x, "asyncChangeFields", js.Array(value :_*))
+      inline def setAsyncChangeFieldsVarargs(value: String*): Self = StObject.set(x, "asyncChangeFields", js.Array(value*))
       
       inline def setAsyncValidate(
-        value: (/* values */ FormData, /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* blurredField */ String) => js.Promise[js.Any]
+        value: (/* values */ FormData, /* dispatch */ Dispatch[Any], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* blurredField */ String) => js.Promise[Any]
       ): Self = StObject.set(x, "asyncValidate", js.Any.fromFunction4(value))
       
       inline def setAsyncValidateUndefined: Self = StObject.set(x, "asyncValidate", js.undefined)
@@ -270,7 +270,7 @@ object reduxFormMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setGetFormState(value: /* state */ js.Any => FormStateMap): Self = StObject.set(x, "getFormState", js.Any.fromFunction1(value))
+      inline def setGetFormState(value: /* state */ Any => FormStateMap): Self = StObject.set(x, "getFormState", js.Any.fromFunction1(value))
       
       inline def setGetFormStateUndefined: Self = StObject.set(x, "getFormState", js.undefined)
       
@@ -278,7 +278,7 @@ object reduxFormMod {
       
       inline def setImmutablePropsUndefined: Self = StObject.set(x, "immutableProps", js.undefined)
       
-      inline def setImmutablePropsVarargs(value: String*): Self = StObject.set(x, "immutableProps", js.Array(value :_*))
+      inline def setImmutablePropsVarargs(value: String*): Self = StObject.set(x, "immutableProps", js.Array(value*))
       
       inline def setInitialValues(value: Partial[FormData]): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
@@ -293,7 +293,7 @@ object reduxFormMod {
       inline def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
       
       inline def setOnChange(
-        value: (/* values */ Partial[FormData], /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* previousValues */ Partial[FormData]) => Unit
+        value: (/* values */ Partial[FormData], /* dispatch */ Dispatch[Any], /* props */ DecoratedFormProps[FormData, P, ErrorType], /* previousValues */ Partial[FormData]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -301,17 +301,17 @@ object reduxFormMod {
       inline def setOnSubmit(value: (FormSubmitHandler[FormData, P, ErrorType]) | (SubmitHandler[FormData, P, ErrorType])): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
       
       inline def setOnSubmitFail(
-        value: (/* errors */ js.UndefOr[FormErrors[FormData, ErrorType]], /* dispatch */ Dispatch[js.Any], /* submitError */ js.Any, /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
+        value: (/* errors */ js.UndefOr[FormErrors[FormData, ErrorType]], /* dispatch */ Dispatch[Any], /* submitError */ Any, /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
       ): Self = StObject.set(x, "onSubmitFail", js.Any.fromFunction4(value))
       
       inline def setOnSubmitFailUndefined: Self = StObject.set(x, "onSubmitFail", js.undefined)
       
       inline def setOnSubmitFunction3(
-        value: (FormData, /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit | (FormErrors[FormData, ErrorType]) | js.Promise[js.Any]
+        value: (FormData, /* dispatch */ Dispatch[Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit | (FormErrors[FormData, ErrorType]) | js.Promise[Any]
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
       inline def setOnSubmitSuccess(
-        value: (/* result */ js.Any, /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
+        value: (/* result */ Any, /* dispatch */ Dispatch[Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit
       ): Self = StObject.set(x, "onSubmitSuccess", js.Any.fromFunction3(value))
       
       inline def setOnSubmitSuccessUndefined: Self = StObject.set(x, "onSubmitSuccess", js.undefined)
@@ -381,11 +381,7 @@ object reduxFormMod {
     extends StObject
        with Instantiable0[FormInstance[FormData, P]]
        with Instantiable1[/* props */ P, FormInstance[FormData, P]]
-       with Instantiable2[
-          (/* props */ P) | (/* props */ Unit), 
-          /* context */ js.Any, 
-          FormInstance[FormData, P]
-        ]
+       with Instantiable2[(/* props */ P) | (/* props */ Unit), /* context */ Any, FormInstance[FormData, P]]
   
   trait DecoratedFormActions[ErrorType] extends StObject {
     
@@ -467,19 +463,19 @@ object reduxFormMod {
     
     inline def apply[ErrorType](
       array: InjectedArrayProps,
-      arrayInsert: (/* field */ String, /* index */ Double, /* value */ js.Any) => Unit,
+      arrayInsert: (/* field */ String, /* index */ Double, /* value */ Any) => Unit,
       arrayMove: (/* field */ String, /* from */ Double, /* to */ Double) => Unit,
       arrayPop: /* field */ String => Unit,
-      arrayPush: (/* field */ String, /* value */ js.Any) => Unit,
+      arrayPush: (/* field */ String, /* value */ Any) => Unit,
       arrayRemove: (/* field */ String, /* index */ Double) => Unit,
       arrayRemoveAll: /* field */ String => Unit,
       arrayShift: /* field */ String => Unit,
-      arraySplice: (/* field */ String, /* index */ Double, /* removeNum */ Double, /* value */ js.Any) => Unit,
+      arraySplice: (/* field */ String, /* index */ Double, /* removeNum */ Double, /* value */ Any) => Unit,
       arraySwap: (/* field */ String, /* indexA */ Double, /* indexB */ Double) => Unit,
-      arrayUnshift: (/* field */ String, /* value */ js.Any) => Unit,
-      autofill: (/* field */ String, /* value */ js.Any) => Unit,
-      blur: (/* field */ String, /* value */ js.Any) => Unit,
-      change: (/* field */ String, /* value */ js.Any) => Unit,
+      arrayUnshift: (/* field */ String, /* value */ Any) => Unit,
+      autofill: (/* field */ String, /* value */ Any) => Unit,
+      blur: (/* field */ String, /* value */ Any) => Unit,
+      change: (/* field */ String, /* value */ Any) => Unit,
       clearAsyncError: /* field */ String => Unit,
       clearFields: ClearFieldsAction,
       clearSubmit: () => Unit,
@@ -487,7 +483,7 @@ object reduxFormMod {
       destroy: () => Unit,
       dispatch: AnyAction => AnyAction,
       focus: /* field */ String => Unit,
-      initialize: (/* initialValues */ Partial[ErrorType], /* keepDirty */ Boolean, /* otherMeta */ js.UndefOr[js.Any]) => Unit,
+      initialize: (/* initialValues */ Partial[ErrorType], /* keepDirty */ Boolean, /* otherMeta */ js.UndefOr[Any]) => Unit,
       registerField: (/* name */ String, /* type */ FieldType) => Unit,
       reset: () => Unit,
       resetSection: () => Unit,
@@ -501,8 +497,8 @@ object reduxFormMod {
       touch: TouchAction,
       unregisterField: (/* name */ String, /* destroyOnUnmount */ js.UndefOr[Boolean]) => Unit,
       untouch: UntouchAction,
-      updateSyncErrors: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[js.Any]) => Unit,
-      updateSyncWarnings: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[js.Any]) => Unit
+      updateSyncErrors: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[Any]) => Unit,
+      updateSyncWarnings: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[Any]) => Unit
     ): DecoratedFormActions[ErrorType] = {
       val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], arrayInsert = js.Any.fromFunction3(arrayInsert), arrayMove = js.Any.fromFunction3(arrayMove), arrayPop = js.Any.fromFunction1(arrayPop), arrayPush = js.Any.fromFunction2(arrayPush), arrayRemove = js.Any.fromFunction2(arrayRemove), arrayRemoveAll = js.Any.fromFunction1(arrayRemoveAll), arrayShift = js.Any.fromFunction1(arrayShift), arraySplice = js.Any.fromFunction4(arraySplice), arraySwap = js.Any.fromFunction3(arraySwap), arrayUnshift = js.Any.fromFunction2(arrayUnshift), autofill = js.Any.fromFunction2(autofill), blur = js.Any.fromFunction2(blur), change = js.Any.fromFunction2(change), clearAsyncError = js.Any.fromFunction1(clearAsyncError), clearFields = clearFields.asInstanceOf[js.Any], clearSubmit = js.Any.fromFunction0(clearSubmit), clearSubmitErrors = js.Any.fromFunction0(clearSubmitErrors), destroy = js.Any.fromFunction0(destroy), dispatch = js.Any.fromFunction1(dispatch), focus = js.Any.fromFunction1(focus), initialize = js.Any.fromFunction3(initialize), registerField = js.Any.fromFunction2(registerField), reset = js.Any.fromFunction0(reset), resetSection = js.Any.fromFunction0(resetSection), setSubmitFailed = setSubmitFailed.asInstanceOf[js.Any], setSubmitSucceeded = setSubmitSucceeded.asInstanceOf[js.Any], startAsyncValidation = js.Any.fromFunction1(startAsyncValidation), startSubmit = js.Any.fromFunction0(startSubmit), stopAsyncValidation = js.Any.fromFunction1(stopAsyncValidation), stopSubmit = js.Any.fromFunction1(stopSubmit), submit = js.Any.fromFunction0(submit), touch = touch.asInstanceOf[js.Any], unregisterField = js.Any.fromFunction2(unregisterField), untouch = untouch.asInstanceOf[js.Any], updateSyncErrors = js.Any.fromFunction2(updateSyncErrors), updateSyncWarnings = js.Any.fromFunction2(updateSyncWarnings))
       __obj.asInstanceOf[DecoratedFormActions[ErrorType]]
@@ -512,13 +508,13 @@ object reduxFormMod {
       
       inline def setArray(value: InjectedArrayProps): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      inline def setArrayInsert(value: (/* field */ String, /* index */ Double, /* value */ js.Any) => Unit): Self = StObject.set(x, "arrayInsert", js.Any.fromFunction3(value))
+      inline def setArrayInsert(value: (/* field */ String, /* index */ Double, /* value */ Any) => Unit): Self = StObject.set(x, "arrayInsert", js.Any.fromFunction3(value))
       
       inline def setArrayMove(value: (/* field */ String, /* from */ Double, /* to */ Double) => Unit): Self = StObject.set(x, "arrayMove", js.Any.fromFunction3(value))
       
       inline def setArrayPop(value: /* field */ String => Unit): Self = StObject.set(x, "arrayPop", js.Any.fromFunction1(value))
       
-      inline def setArrayPush(value: (/* field */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "arrayPush", js.Any.fromFunction2(value))
+      inline def setArrayPush(value: (/* field */ String, /* value */ Any) => Unit): Self = StObject.set(x, "arrayPush", js.Any.fromFunction2(value))
       
       inline def setArrayRemove(value: (/* field */ String, /* index */ Double) => Unit): Self = StObject.set(x, "arrayRemove", js.Any.fromFunction2(value))
       
@@ -526,19 +522,17 @@ object reduxFormMod {
       
       inline def setArrayShift(value: /* field */ String => Unit): Self = StObject.set(x, "arrayShift", js.Any.fromFunction1(value))
       
-      inline def setArraySplice(
-        value: (/* field */ String, /* index */ Double, /* removeNum */ Double, /* value */ js.Any) => Unit
-      ): Self = StObject.set(x, "arraySplice", js.Any.fromFunction4(value))
+      inline def setArraySplice(value: (/* field */ String, /* index */ Double, /* removeNum */ Double, /* value */ Any) => Unit): Self = StObject.set(x, "arraySplice", js.Any.fromFunction4(value))
       
       inline def setArraySwap(value: (/* field */ String, /* indexA */ Double, /* indexB */ Double) => Unit): Self = StObject.set(x, "arraySwap", js.Any.fromFunction3(value))
       
-      inline def setArrayUnshift(value: (/* field */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "arrayUnshift", js.Any.fromFunction2(value))
+      inline def setArrayUnshift(value: (/* field */ String, /* value */ Any) => Unit): Self = StObject.set(x, "arrayUnshift", js.Any.fromFunction2(value))
       
-      inline def setAutofill(value: (/* field */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "autofill", js.Any.fromFunction2(value))
+      inline def setAutofill(value: (/* field */ String, /* value */ Any) => Unit): Self = StObject.set(x, "autofill", js.Any.fromFunction2(value))
       
-      inline def setBlur(value: (/* field */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
+      inline def setBlur(value: (/* field */ String, /* value */ Any) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
       
-      inline def setChange(value: (/* field */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+      inline def setChange(value: (/* field */ String, /* value */ Any) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
       
       inline def setClearAsyncError(value: /* field */ String => Unit): Self = StObject.set(x, "clearAsyncError", js.Any.fromFunction1(value))
       
@@ -555,7 +549,7 @@ object reduxFormMod {
       inline def setFocus(value: /* field */ String => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
       
       inline def setInitialize(
-        value: (/* initialValues */ Partial[ErrorType], /* keepDirty */ Boolean, /* otherMeta */ js.UndefOr[js.Any]) => Unit
+        value: (/* initialValues */ Partial[ErrorType], /* keepDirty */ Boolean, /* otherMeta */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "initialize", js.Any.fromFunction3(value))
       
       inline def setRegisterField(value: (/* name */ String, /* type */ FieldType) => Unit): Self = StObject.set(x, "registerField", js.Any.fromFunction2(value))
@@ -585,11 +579,11 @@ object reduxFormMod {
       inline def setUntouch(value: UntouchAction): Self = StObject.set(x, "untouch", value.asInstanceOf[js.Any])
       
       inline def setUpdateSyncErrors(
-        value: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[js.Any]) => Unit
+        value: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "updateSyncErrors", js.Any.fromFunction2(value))
       
       inline def setUpdateSyncWarnings(
-        value: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[js.Any]) => Unit
+        value: (/* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], /* error */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "updateSyncWarnings", js.Any.fromFunction2(value))
     }
   }
@@ -616,7 +610,7 @@ object reduxFormMod {
     
     var syncErrors: js.UndefOr[FormErrors[FormData, ErrorType]] = js.undefined
     
-    var syncWarnings: js.UndefOr[FormWarnings[js.Any, js.Any]] = js.undefined
+    var syncWarnings: js.UndefOr[FormWarnings[Any, Any]] = js.undefined
     
     var triggerSubmit: js.UndefOr[Boolean] = js.undefined
     
@@ -624,7 +618,7 @@ object reduxFormMod {
     
     var validExceptSubmit: Boolean
     
-    var warning: js.UndefOr[js.Any] = js.undefined
+    var warning: js.UndefOr[Any] = js.undefined
   }
   object DecoratedFormState {
     
@@ -665,7 +659,7 @@ object reduxFormMod {
       
       inline def setSyncErrorsUndefined: Self = StObject.set(x, "syncErrors", js.undefined)
       
-      inline def setSyncWarnings(value: FormWarnings[js.Any, js.Any]): Self = StObject.set(x, "syncWarnings", value.asInstanceOf[js.Any])
+      inline def setSyncWarnings(value: FormWarnings[Any, Any]): Self = StObject.set(x, "syncWarnings", value.asInstanceOf[js.Any])
       
       inline def setSyncWarningsUndefined: Self = StObject.set(x, "syncWarnings", js.undefined)
       
@@ -677,7 +671,7 @@ object reduxFormMod {
       
       inline def setValidExceptSubmit(value: Boolean): Self = StObject.set(x, "validExceptSubmit", value.asInstanceOf[js.Any])
       
-      inline def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
       inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
@@ -690,30 +684,18 @@ object reduxFormMod {
   @js.native
   trait FormContext extends StObject {
     
-    def asyncValidate(): js.Promise[js.Any] = js.native
-    def asyncValidate(name: String): js.Promise[js.Any] = js.native
-    def asyncValidate(name: String, value: js.Any): js.Promise[js.Any] = js.native
-    def asyncValidate(name: Unit, value: js.Any): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_blur(name: String, value: js.Any, trigger: blur): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_blur(name: String, value: Unit, trigger: blur): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_blur(name: Unit, value: js.Any, trigger: blur): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_blur(name: Unit, value: Unit, trigger: blur): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_change(name: String, value: js.Any, trigger: change): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_change(name: String, value: Unit, trigger: change): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_change(name: Unit, value: js.Any, trigger: change): js.Promise[js.Any] = js.native
-    @JSName("asyncValidate")
-    def asyncValidate_change(name: Unit, value: Unit, trigger: change): js.Promise[js.Any] = js.native
+    def asyncValidate(): js.Promise[Any] = js.native
+    def asyncValidate(name: String): js.Promise[Any] = js.native
+    def asyncValidate(name: String, value: Any): js.Promise[Any] = js.native
+    def asyncValidate(name: String, value: Any, trigger: blur | change): js.Promise[Any] = js.native
+    def asyncValidate(name: String, value: Unit, trigger: blur | change): js.Promise[Any] = js.native
+    def asyncValidate(name: Unit, value: Any): js.Promise[Any] = js.native
+    def asyncValidate(name: Unit, value: Any, trigger: blur | change): js.Promise[Any] = js.native
+    def asyncValidate(name: Unit, value: Unit, trigger: blur | change): js.Promise[Any] = js.native
     
-    def blur(name: String, value: js.Any): Unit = js.native
+    def blur(name: String, value: Any): Unit = js.native
     
-    def change(name: String, value: js.Any): Unit = js.native
+    def change(name: String, value: Any): Unit = js.native
     
     def focus(name: String): Unit = js.native
     
@@ -721,7 +703,7 @@ object reduxFormMod {
     
     var getFormState: GetFormState = js.native
     
-    def getValues(): js.Any = js.native
+    def getValues(): Any = js.native
     
     var prefixName: js.UndefOr[String] = js.native
     
@@ -754,7 +736,7 @@ object reduxFormMod {
   
   @js.native
   trait FormInstance[FormData, P]
-    extends Component[P, js.Object, js.Any] {
+    extends Component[P, js.Object, Any] {
     
     var dirty: Boolean = js.native
     
@@ -768,7 +750,7 @@ object reduxFormMod {
     
     def resetSection(sections: String*): Unit = js.native
     
-    def submit(): js.Promise[js.Any] = js.native
+    def submit(): js.Promise[Any] = js.native
     
     var valid: Boolean = js.native
     
@@ -779,29 +761,29 @@ object reduxFormMod {
   
   type FormSubmitHandler[FormData, P, ErrorType] = js.Function3[
     /* values */ FormData, 
-    /* dispatch */ Dispatch[js.Any], 
+    /* dispatch */ Dispatch[Any], 
     /* props */ DecoratedFormProps[FormData, P, ErrorType], 
-    Unit | (FormErrors[FormData, ErrorType]) | js.Promise[js.Any]
+    Unit | (FormErrors[FormData, ErrorType]) | js.Promise[Any]
   ]
   
-  type GetFormState = js.Function1[/* state */ js.Any, FormStateMap]
+  type GetFormState = js.Function1[/* state */ Any, FormStateMap]
   
   type InitializeAction[FormData] = js.Function3[
     /* initialValues */ Partial[FormData], 
     /* keepDirty */ Boolean, 
-    /* otherMeta */ js.UndefOr[js.Any], 
+    /* otherMeta */ js.UndefOr[Any], 
     Unit
   ]
   
   trait InjectedArrayProps extends StObject {
     
-    def insert(field: String, index: Double, value: js.Any): Unit
+    def insert(field: String, index: Double, value: Any): Unit
     
     def move(field: String, from: Double, to: Double): Unit
     
     def pop(field: String): Unit
     
-    def push(field: String, value: js.Any): Unit
+    def push(field: String, value: Any): Unit
     
     def remove(field: String, index: Double): Unit
     
@@ -809,25 +791,25 @@ object reduxFormMod {
     
     def shift(field: String): Unit
     
-    def splice(field: String, index: Double, removeNum: Double, value: js.Any): Unit
+    def splice(field: String, index: Double, removeNum: Double, value: Any): Unit
     
     def swap(field: String, indexA: Double, indexB: Double): Unit
     
-    def unshift(field: String, value: js.Any): Unit
+    def unshift(field: String, value: Any): Unit
   }
   object InjectedArrayProps {
     
     inline def apply(
-      insert: (String, Double, js.Any) => Unit,
+      insert: (String, Double, Any) => Unit,
       move: (String, Double, Double) => Unit,
       pop: String => Unit,
-      push: (String, js.Any) => Unit,
+      push: (String, Any) => Unit,
       remove: (String, Double) => Unit,
       removeAll: String => Unit,
       shift: String => Unit,
-      splice: (String, Double, Double, js.Any) => Unit,
+      splice: (String, Double, Double, Any) => Unit,
       swap: (String, Double, Double) => Unit,
-      unshift: (String, js.Any) => Unit
+      unshift: (String, Any) => Unit
     ): InjectedArrayProps = {
       val __obj = js.Dynamic.literal(insert = js.Any.fromFunction3(insert), move = js.Any.fromFunction3(move), pop = js.Any.fromFunction1(pop), push = js.Any.fromFunction2(push), remove = js.Any.fromFunction2(remove), removeAll = js.Any.fromFunction1(removeAll), shift = js.Any.fromFunction1(shift), splice = js.Any.fromFunction4(splice), swap = js.Any.fromFunction3(swap), unshift = js.Any.fromFunction2(unshift))
       __obj.asInstanceOf[InjectedArrayProps]
@@ -835,13 +817,13 @@ object reduxFormMod {
     
     extension [Self <: InjectedArrayProps](x: Self) {
       
-      inline def setInsert(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
+      inline def setInsert(value: (String, Double, Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
       
       inline def setMove(value: (String, Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction3(value))
       
       inline def setPop(value: String => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
       
-      inline def setPush(value: (String, js.Any) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
+      inline def setPush(value: (String, Any) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
       
       inline def setRemove(value: (String, Double) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
@@ -849,11 +831,11 @@ object reduxFormMod {
       
       inline def setShift(value: String => Unit): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
       
-      inline def setSplice(value: (String, Double, Double, js.Any) => Unit): Self = StObject.set(x, "splice", js.Any.fromFunction4(value))
+      inline def setSplice(value: (String, Double, Double, Any) => Unit): Self = StObject.set(x, "splice", js.Any.fromFunction4(value))
       
       inline def setSwap(value: (String, Double, Double) => Unit): Self = StObject.set(x, "swap", js.Any.fromFunction3(value))
       
-      inline def setUnshift(value: (String, js.Any) => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction2(value))
+      inline def setUnshift(value: (String, Any) => Unit): Self = StObject.set(x, "unshift", js.Any.fromFunction2(value))
     }
   }
   
@@ -867,11 +849,11 @@ object reduxFormMod {
     
     var asyncValidating: String | Boolean
     
-    def autofill(field: String, value: js.Any): Unit
+    def autofill(field: String, value: Any): Unit
     
-    def blur(field: String, value: js.Any): Unit
+    def blur(field: String, value: Any): Unit
     
-    def change(field: String, value: js.Any): Unit
+    def change(field: String, value: Any): Unit
     
     def clearAsyncError(field: String): Unit
     
@@ -911,7 +893,7 @@ object reduxFormMod {
     
     var valid: Boolean
     
-    var warning: js.Any
+    var warning: Any
   }
   object InjectedFormProps {
     
@@ -920,9 +902,9 @@ object reduxFormMod {
       array: InjectedArrayProps,
       asyncValidate: () => Unit,
       asyncValidating: String | Boolean,
-      autofill: (String, js.Any) => Unit,
-      blur: (String, js.Any) => Unit,
-      change: (String, js.Any) => Unit,
+      autofill: (String, Any) => Unit,
+      blur: (String, Any) => Unit,
+      change: (String, Any) => Unit,
       clearAsyncError: String => Unit,
       clearSubmit: () => Unit,
       destroy: () => Unit,
@@ -942,7 +924,7 @@ object reduxFormMod {
       touch: /* repeated */ String => Unit,
       untouch: /* repeated */ String => Unit,
       valid: Boolean,
-      warning: js.Any
+      warning: Any
     ): InjectedFormProps[FormData, P, ErrorType] = {
       val __obj = js.Dynamic.literal(anyTouched = anyTouched.asInstanceOf[js.Any], array = array.asInstanceOf[js.Any], asyncValidate = js.Any.fromFunction0(asyncValidate), asyncValidating = asyncValidating.asInstanceOf[js.Any], autofill = js.Any.fromFunction2(autofill), blur = js.Any.fromFunction2(blur), change = js.Any.fromFunction2(change), clearAsyncError = js.Any.fromFunction1(clearAsyncError), clearSubmit = js.Any.fromFunction0(clearSubmit), destroy = js.Any.fromFunction0(destroy), dirty = dirty.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], handleSubmit = handleSubmit.asInstanceOf[js.Any], initialValues = initialValues.asInstanceOf[js.Any], initialize = js.Any.fromFunction1(initialize), initialized = initialized.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], pristine = pristine.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), submitFailed = submitFailed.asInstanceOf[js.Any], submitSucceeded = submitSucceeded.asInstanceOf[js.Any], submitting = submitting.asInstanceOf[js.Any], touch = js.Any.fromFunction1(touch), untouch = js.Any.fromFunction1(untouch), valid = valid.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
       __obj.asInstanceOf[InjectedFormProps[FormData, P, ErrorType]]
@@ -958,11 +940,11 @@ object reduxFormMod {
       
       inline def setAsyncValidating(value: String | Boolean): Self = StObject.set(x, "asyncValidating", value.asInstanceOf[js.Any])
       
-      inline def setAutofill(value: (String, js.Any) => Unit): Self = StObject.set(x, "autofill", js.Any.fromFunction2(value))
+      inline def setAutofill(value: (String, Any) => Unit): Self = StObject.set(x, "autofill", js.Any.fromFunction2(value))
       
-      inline def setBlur(value: (String, js.Any) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
+      inline def setBlur(value: (String, Any) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
       
-      inline def setChange(value: (String, js.Any) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+      inline def setChange(value: (String, Any) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
       
       inline def setClearAsyncError(value: String => Unit): Self = StObject.set(x, "clearAsyncError", js.Any.fromFunction1(value))
       
@@ -1002,7 +984,7 @@ object reduxFormMod {
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      inline def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1063,93 +1045,88 @@ object reduxFormMod {
   @js.native
   trait SubmitHandler[FormData, P, ErrorType] extends StObject {
     
-    def apply(event: SyntheticEvent[js.Any, Event]): Unit = js.native
-    def apply(submit: FormSubmitHandler[FormData, P, ErrorType]): js.Any = js.native
-    def apply(submit: FormSubmitHandler[FormData, P, ErrorType], props: Unit, valid: Boolean): js.Any = js.native
+    def apply(event: SyntheticEvent[Any, Event]): Unit = js.native
+    def apply(submit: FormSubmitHandler[FormData, P, ErrorType]): Any = js.native
+    def apply(submit: FormSubmitHandler[FormData, P, ErrorType], props: Unit, valid: Boolean): Any = js.native
+    def apply(submit: FormSubmitHandler[FormData, P, ErrorType], props: Unit, valid: Boolean, asyncValidate: Any): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: Unit,
       valid: Boolean,
-      asyncValidate: js.Any
-    ): js.Any = js.native
-    def apply(
-      submit: FormSubmitHandler[FormData, P, ErrorType],
-      props: Unit,
-      valid: Boolean,
-      asyncValidate: js.Any,
+      asyncValidate: Any,
       fields: js.Array[String]
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: Unit,
       valid: Boolean,
       asyncValidate: Unit,
       fields: js.Array[String]
-    ): js.Any = js.native
-    def apply(submit: FormSubmitHandler[FormData, P, ErrorType], props: Unit, valid: Unit, asyncValidate: js.Any): js.Any = js.native
+    ): Any = js.native
+    def apply(submit: FormSubmitHandler[FormData, P, ErrorType], props: Unit, valid: Unit, asyncValidate: Any): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: Unit,
       valid: Unit,
-      asyncValidate: js.Any,
+      asyncValidate: Any,
       fields: js.Array[String]
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: Unit,
       valid: Unit,
       asyncValidate: Unit,
       fields: js.Array[String]
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType]
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Boolean
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Boolean,
-      asyncValidate: js.Any
-    ): js.Any = js.native
+      asyncValidate: Any
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Boolean,
-      asyncValidate: js.Any,
+      asyncValidate: Any,
       fields: js.Array[String]
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Boolean,
       asyncValidate: Unit,
       fields: js.Array[String]
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Unit,
-      asyncValidate: js.Any
-    ): js.Any = js.native
+      asyncValidate: Any
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Unit,
-      asyncValidate: js.Any,
+      asyncValidate: Any,
       fields: js.Array[String]
-    ): js.Any = js.native
+    ): Any = js.native
     def apply(
       submit: FormSubmitHandler[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
       valid: Unit,
       asyncValidate: Unit,
       fields: js.Array[String]
-    ): js.Any = js.native
+    ): Any = js.native
   }
   
   @js.native
@@ -1168,13 +1145,13 @@ object reduxFormMod {
   
   type UpdateSyncErrorsAction[ErrorType] = js.Function2[
     /* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], 
-    /* error */ js.UndefOr[js.Any], 
+    /* error */ js.UndefOr[Any], 
     Unit
   ]
   
   type UpdateSyncWarningsAction[ErrorType] = js.Function2[
     /* syncErrors */ js.UndefOr[FormErrors[ErrorType, String]], 
-    /* error */ js.UndefOr[js.Any], 
+    /* error */ js.UndefOr[Any], 
     Unit
   ]
   
@@ -1190,7 +1167,7 @@ object reduxFormMod {
     
     var props: DecoratedFormProps[FormData, P, ErrorType]
     
-    var structure: js.Any
+    var structure: Any
     
     var values: FormData
   }
@@ -1202,7 +1179,7 @@ object reduxFormMod {
       lastFieldValidatorKeys: js.Array[String],
       nextProps: DecoratedFormProps[FormData, P, ErrorType],
       props: DecoratedFormProps[FormData, P, ErrorType],
-      structure: js.Any,
+      structure: Any,
       values: FormData
     ): ValidateCallback[FormData, P, ErrorType] = {
       val __obj = js.Dynamic.literal(fieldValidatorKeys = fieldValidatorKeys.asInstanceOf[js.Any], initialRender = initialRender.asInstanceOf[js.Any], lastFieldValidatorKeys = lastFieldValidatorKeys.asInstanceOf[js.Any], nextProps = nextProps.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], structure = structure.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
@@ -1213,19 +1190,19 @@ object reduxFormMod {
       
       inline def setFieldValidatorKeys(value: js.Array[String]): Self = StObject.set(x, "fieldValidatorKeys", value.asInstanceOf[js.Any])
       
-      inline def setFieldValidatorKeysVarargs(value: String*): Self = StObject.set(x, "fieldValidatorKeys", js.Array(value :_*))
+      inline def setFieldValidatorKeysVarargs(value: String*): Self = StObject.set(x, "fieldValidatorKeys", js.Array(value*))
       
       inline def setInitialRender(value: Boolean): Self = StObject.set(x, "initialRender", value.asInstanceOf[js.Any])
       
       inline def setLastFieldValidatorKeys(value: js.Array[String]): Self = StObject.set(x, "lastFieldValidatorKeys", value.asInstanceOf[js.Any])
       
-      inline def setLastFieldValidatorKeysVarargs(value: String*): Self = StObject.set(x, "lastFieldValidatorKeys", js.Array(value :_*))
+      inline def setLastFieldValidatorKeysVarargs(value: String*): Self = StObject.set(x, "lastFieldValidatorKeys", js.Array(value*))
       
       inline def setNextProps(value: DecoratedFormProps[FormData, P, ErrorType]): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
       
       inline def setProps(value: DecoratedFormProps[FormData, P, ErrorType]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setStructure(value: js.Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
+      inline def setStructure(value: Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
       
       inline def setValues(value: FormData): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }

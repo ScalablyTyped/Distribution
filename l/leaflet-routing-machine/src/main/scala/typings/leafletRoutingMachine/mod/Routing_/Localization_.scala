@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.Localization")
 @js.native
-class Localization_ protected () extends StObject {
+open class Localization_ protected () extends StObject {
   def this(langs: js.Array[LocalizationOptions]) = this()
   def this(langs: LocalizationOptions) = this()
   

@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 7.1.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.LogoutButton")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.LogoutButton")
 @js.native
-class LogoutButton protected () extends Button {
+open class LogoutButton protected () extends Button {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,7 +31,7 @@ class LogoutButton protected () extends Button {
 }
 object LogoutButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LogoutButton")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LogoutButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -286,13 +286,13 @@ object LogoutButton {
   inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): LogoutButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LogoutButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LogoutButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LogoutButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LogoutButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LogoutButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

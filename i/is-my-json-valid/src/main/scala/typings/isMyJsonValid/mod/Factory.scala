@@ -221,12 +221,12 @@ trait Factory extends StObject {
     ]
   ] = js.native
   @JSName("createFilter")
-  def createFilter_Properties_RecordStringAnySchemaRequired_StringKeysProperties[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */](schema: ObjectSchema[Properties, Required]): Filter[
+  def createFilter_PropertiesRequired[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */](schema: ObjectSchema[Properties, Required]): Filter[
     ObjectSchema[Properties, Required], 
     TypeFromSchema[ObjectSchema[Properties, Required]]
   ] = js.native
   @JSName("createFilter")
-  def createFilter_Properties_RecordStringAnySchemaRequired_StringKeysProperties[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */](schema: ObjectSchema[Properties, Required], options: Any): Filter[
+  def createFilter_PropertiesRequired[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */](schema: ObjectSchema[Properties, Required], options: Any): Filter[
     ObjectSchema[Properties, Required], 
     TypeFromSchema[ObjectSchema[Properties, Required]]
   ] = js.native

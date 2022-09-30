@@ -18,9 +18,9 @@ object unsignedSignaturePropertiesMod {
   - typings.xmlCore.xmlObjectMod.XmlObject because Already inherited
   - typings.xmlCore.mod.XmlObject because Already inherited
   - typings.xadesjs.xmlBaseMod.XadesObject because Already inherited
-  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "ArchiveTimeStamp")
+  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "ArchiveTimeStamp")
   @js.native
-  class ArchiveTimeStamp () extends XAdESTimeStamp {
+  open class ArchiveTimeStamp () extends XAdESTimeStamp {
     def this(properties: js.Object) = this()
   }
   
@@ -29,32 +29,21 @@ object unsignedSignaturePropertiesMod {
   - typings.xmlCore.xmlObjectMod.XmlObject because Already inherited
   - typings.xmlCore.mod.XmlObject because Already inherited
   - typings.xadesjs.xmlBaseMod.XadesObject because Already inherited
-  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "AttrAuthoritiesCertValues")
+  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "AttrAuthoritiesCertValues")
   @js.native
-  class AttrAuthoritiesCertValues () extends CertificateValues {
+  open class AttrAuthoritiesCertValues () extends CertificateValues {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "AttributeCertificateRefs")
+  @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "AttributeCertificateRefs")
   @js.native
-  class AttributeCertificateRefs () extends CompleteCertificateRefs {
+  open class AttributeCertificateRefs () extends CompleteCertificateRefs {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "AttributeRevocationRefs")
+  @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "AttributeRevocationRefs")
   @js.native
-  class AttributeRevocationRefs () extends CompleteRevocationRefs {
-    def this(properties: js.Object) = this()
-  }
-  
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.xmlCore.typesMod.IXmlSerializable because Already inherited
-  - typings.xmlCore.xmlObjectMod.XmlObject because Already inherited
-  - typings.xmlCore.mod.XmlObject because Already inherited
-  - typings.xadesjs.xmlBaseMod.XadesObject because Already inherited
-  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "AttributeRevocationValues")
-  @js.native
-  class AttributeRevocationValues () extends RevocationValues {
+  open class AttributeRevocationRefs () extends CompleteRevocationRefs {
     def this(properties: js.Object) = this()
   }
   
@@ -63,9 +52,9 @@ object unsignedSignaturePropertiesMod {
   - typings.xmlCore.xmlObjectMod.XmlObject because Already inherited
   - typings.xmlCore.mod.XmlObject because Already inherited
   - typings.xadesjs.xmlBaseMod.XadesObject because Already inherited
-  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "RefsOnlyTimeStamp")
+  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "AttributeRevocationValues")
   @js.native
-  class RefsOnlyTimeStamp () extends XAdESTimeStamp {
+  open class AttributeRevocationValues () extends RevocationValues {
     def this(properties: js.Object) = this()
   }
   
@@ -74,9 +63,9 @@ object unsignedSignaturePropertiesMod {
   - typings.xmlCore.xmlObjectMod.XmlObject because Already inherited
   - typings.xmlCore.mod.XmlObject because Already inherited
   - typings.xadesjs.xmlBaseMod.XadesObject because Already inherited
-  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "SigAndRefsTimeStamp")
+  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "RefsOnlyTimeStamp")
   @js.native
-  class SigAndRefsTimeStamp () extends XAdESTimeStamp {
+  open class RefsOnlyTimeStamp () extends XAdESTimeStamp {
     def this(properties: js.Object) = this()
   }
   
@@ -85,23 +74,34 @@ object unsignedSignaturePropertiesMod {
   - typings.xmlCore.xmlObjectMod.XmlObject because Already inherited
   - typings.xmlCore.mod.XmlObject because Already inherited
   - typings.xadesjs.xmlBaseMod.XadesObject because Already inherited
-  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "SignatureTimeStamp")
+  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "SigAndRefsTimeStamp")
   @js.native
-  class SignatureTimeStamp () extends XAdESTimeStamp {
+  open class SigAndRefsTimeStamp () extends XAdESTimeStamp {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "UnsignedSignatureProperties")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.xmlCore.typesMod.IXmlSerializable because Already inherited
+  - typings.xmlCore.xmlObjectMod.XmlObject because Already inherited
+  - typings.xmlCore.mod.XmlObject because Already inherited
+  - typings.xadesjs.xmlBaseMod.XadesObject because Already inherited
+  - typings.xadesjs.unsignedSignaturePropertiesMod.UnsignedSignatureProperty because Inheritance from two classes. Inlined  */ @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "SignatureTimeStamp")
   @js.native
-  class UnsignedSignatureProperties () extends XadesCollection[UnsignedSignatureProperty] {
+  open class SignatureTimeStamp () extends XAdESTimeStamp {
+    def this(properties: js.Object) = this()
+  }
+  
+  @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "UnsignedSignatureProperties")
+  @js.native
+  open class UnsignedSignatureProperties () extends XadesCollection[UnsignedSignatureProperty] {
     def this(properties: js.Object) = this()
     
     var Id: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/unsigned_signature_properties", "UnsignedSignatureProperty")
+  @JSImport("xadesjs/build/types/src/xml/unsigned_signature_properties", "UnsignedSignatureProperty")
   @js.native
-  class UnsignedSignatureProperty () extends XadesObject {
+  open class UnsignedSignatureProperty () extends XadesObject {
     def this(properties: js.Object) = this()
   }
 }

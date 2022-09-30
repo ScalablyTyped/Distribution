@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object xadesTimeStampMod {
   
-  @JSImport("xadesjs/build/types/xml/xades_time_stamp", "XAdESTimeStamp")
+  @JSImport("xadesjs/build/types/src/xml/xades_time_stamp", "XAdESTimeStamp")
   @js.native
-  class XAdESTimeStamp () extends XadesObject {
+  open class XAdESTimeStamp () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var CanonicalizationMethod: typings.xmldsigjs.mod.CanonicalizationMethod = js.native

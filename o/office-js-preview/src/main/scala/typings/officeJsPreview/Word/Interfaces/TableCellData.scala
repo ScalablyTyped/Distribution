@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableCellData extends StObject {
   
   /**
-    * Gets the body object of the cell. Read-only.
+    * Gets the body object of the cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -27,7 +27,7 @@ trait TableCellData extends StObject {
   var body: js.UndefOr[BodyData] = js.undefined
   
   /**
-    * Gets the index of the cell in its row. Read-only.
+    * Gets the index of the cell in its row.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -51,7 +51,7 @@ trait TableCellData extends StObject {
   var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    * Gets the index of the cell's row in the table. Read-only.
+    * Gets the index of the cell's row in the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait TableCellData extends StObject {
   var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined
   
   /**
-    * Gets the width of the cell in points. Read-only.
+    * Gets the width of the cell in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]

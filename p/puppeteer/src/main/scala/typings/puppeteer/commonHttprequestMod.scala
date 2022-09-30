@@ -11,6 +11,7 @@ import typings.puppeteer.commonFrameMod.Frame
 import typings.puppeteer.commonHttpresponseMod.HTTPResponse
 import typings.puppeteer.puppeteerStrings.abort_
 import typings.std.Lowercase
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -168,7 +169,7 @@ object commonHttprequestMod {
       * but they are guaranteed to resolve before the request interception
       * is finalized.
       */
-    def enqueueInterceptAction(pendingHandler: js.Function0[Unit | js.Thenable[Any]]): Unit = js.native
+    def enqueueInterceptAction(pendingHandler: js.Function0[Unit | PromiseLike[Any]]): Unit = js.native
     
     /**
       * Access information about the request's failure.

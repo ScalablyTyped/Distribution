@@ -11,6 +11,4 @@ object utilsMod {
   val ^ : js.Any = js.native
   
   inline def useDeprecated(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeprecated")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def useForceUpdate(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForceUpdate")().asInstanceOf[js.Function0[Unit]]
 }

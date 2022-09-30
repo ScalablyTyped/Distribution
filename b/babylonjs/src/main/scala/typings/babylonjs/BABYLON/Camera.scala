@@ -11,18 +11,18 @@ trait Camera
   
   /* private */ var _absoluteRotation: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _activeMeshes: SmartArray[AbstractMesh] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _cameraRigParams: Any = js.native
   
   /* private */ var _cascadePostProcessesToRigCams: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _checkInputs(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _computedViewMatrix: Matrix = js.native
   
   /* private */ var _doNotComputeProjectionMatrix: Any = js.native
@@ -35,41 +35,41 @@ trait Camera
     */
   def _getFirstPostProcess(): Nullable[PostProcess] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _getVRProjectionMatrix(): Matrix = js.native
   
-  /** @hidden */
+  /** @internal */
   def _getViewMatrix(): Matrix = js.native
   
   /**
     * This function MUST be overwritten by the different WebVR cameras available.
     * The context in which it is running is the RIG camera. So 'this' is the TargetCamera, left or right.
-    * @hidden
+    * @internal
     */
   def _getWebVRProjectionMatrix(): Matrix = js.native
   
   /**
     * This function MUST be overwritten by the different WebVR cameras available.
     * The context in which it is running is the RIG camera. So 'this' is the TargetCamera, left or right.
-    * @hidden
+    * @internal
     */
   def _getWebVRViewMatrix(): Matrix = js.native
   
   /* protected */ var _globalPosition: Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   val _isCamera: /* true */ Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _isLeftCamera: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _isRightCamera: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def _isSynchronizedProjectionMatrix(): Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def _isSynchronizedViewMatrix(): Boolean = js.native
   
   /**
@@ -78,7 +78,7 @@ trait Camera
   /* private */ var _mode: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
     */
   var _multiviewTexture: Nullable[RenderTargetTexture] = js.native
@@ -107,25 +107,25 @@ trait Camera
     */
   /* private */ var _orthoTop: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _position: Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   var _postProcesses: js.Array[Nullable[PostProcess]] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _projectionMatrix: Matrix = js.native
   
   /* private */ var _refreshFrustumPlanes: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * For WebXR cameras that are rendering to multiview texture arrays.
     */
   var _renderingMultiview: Boolean = js.native
   
   /**
-    * @hidden
+    * @internal
     * ensures the multiview texture of the camera exists and has the specified width/height
     * @param width height to set on the multiview texture
     * @param height width to set on the multiview texture
@@ -137,18 +137,18 @@ trait Camera
     */
   /* protected */ def _restoreStateValues(): Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _rigCameras: js.Array[Camera] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _rigPostProcess: Nullable[PostProcess] = js.native
   
   /* protected */ def _setRigMode(rigParams: Any): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _setupInputs(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _skipRendering: Boolean = js.native
   
   /* private */ var _stateStored: Any = js.native
@@ -165,14 +165,14 @@ trait Camera
   
   /**
     * May need to be overridden by children
-    * @hidden
+    * @internal
     */
   def _updateRigCameras(): Unit = js.native
   
   /* protected */ def _updateWebVRCameraRotationMatrix(): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
     */
   var _useMultiviewToSingleView: Boolean = js.native
@@ -232,9 +232,7 @@ trait Camera
   
   /**
     * needs to be overridden by children so sub has required properties to be copied
-    * @param name
-    * @param cameraIndex
-    * @hidden
+    * @internal
     */
   def createRigCamera(name: String, cameraIndex: Double): Nullable[Camera] = js.native
   
@@ -529,7 +527,7 @@ trait Camera
     */
   def restoreState(): Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def rigCameras: js.Array[Camera] = js.native
   
   /**
@@ -560,16 +558,12 @@ trait Camera
   def serialize(): Any = js.native
   
   /**
-    * @param mode
-    * @param rigParams
-    * @hidden
+    * @internal
     */
   def setCameraRigMode(mode: Double, rigParams: Any): Unit = js.native
   
   /**
-    * @param name
-    * @param value
-    * @hidden
+    * @internal
     */
   def setCameraRigParameter(name: String, value: Any): Unit = js.native
   

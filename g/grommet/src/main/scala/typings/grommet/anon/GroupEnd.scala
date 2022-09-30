@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GroupEnd extends StObject {
   
-  var body: js.UndefOr[`15`] = js.undefined
+  var body: js.UndefOr[`16`] = js.undefined
   
   var container: js.UndefOr[BoxProps] = js.undefined
   
-  var groupEnd: js.UndefOr[`18`] = js.undefined
+  var groupEnd: js.UndefOr[`19`] = js.undefined
   
   var groupHeader: js.UndefOr[Fill] = js.undefined
   
@@ -21,7 +21,7 @@ trait GroupEnd extends StObject {
   
   var pinned: js.UndefOr[Footer] = js.undefined
   
-  var primary: js.UndefOr[`21`] = js.undefined
+  var primary: js.UndefOr[`22`] = js.undefined
   
   var resize: js.UndefOr[BorderHover] = js.undefined
 }
@@ -34,7 +34,7 @@ object GroupEnd {
   
   extension [Self <: GroupEnd](x: Self) {
     
-    inline def setBody(value: `15`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: `16`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -42,7 +42,7 @@ object GroupEnd {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setGroupEnd(value: `18`): Self = StObject.set(x, "groupEnd", value.asInstanceOf[js.Any])
+    inline def setGroupEnd(value: `19`): Self = StObject.set(x, "groupEnd", value.asInstanceOf[js.Any])
     
     inline def setGroupEndUndefined: Self = StObject.set(x, "groupEnd", js.undefined)
     
@@ -62,7 +62,7 @@ object GroupEnd {
     
     inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    inline def setPrimary(value: `21`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: `22`): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     

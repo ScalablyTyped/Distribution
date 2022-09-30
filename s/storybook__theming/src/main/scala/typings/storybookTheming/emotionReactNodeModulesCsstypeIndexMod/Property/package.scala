@@ -1796,9 +1796,9 @@ type MozContextProperties = _MozContextProperties | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.Globals
-  - typings.storybookTheming.storybookThemingNumbers.`0`
+  - typings.storybookTheming.storybookThemingInts.`0`
   - java.lang.String
-  - typings.storybookTheming.storybookThemingNumbers.`1`
+  - typings.storybookTheming.storybookThemingInts.`1`
 */
 type MozForceBrokenImageIcon = _MozForceBrokenImageIcon | String
 

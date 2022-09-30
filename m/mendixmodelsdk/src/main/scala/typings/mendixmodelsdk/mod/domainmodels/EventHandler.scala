@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "domainmodels.EventHandler")
 @js.native
-class EventHandler protected ()
+open class EventHandler protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.EventHandler {
   def this(
     model: AbstractModel,

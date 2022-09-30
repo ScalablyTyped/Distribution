@@ -1,10 +1,8 @@
 package typings.griddleReact.mod
 
-import typings.reactRedux.mod.Connect_
-import typings.reactRedux.mod.DefaultRootState
+import typings.reactRedux.connectMod.Connect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
@@ -20,7 +18,7 @@ object utils {
   /* was `typeof originalConnect` */
   @JSImport("griddle-react", "utils.connect")
   @js.native
-  val connect: Connect_[DefaultRootState] = js.native
+  val connect: Connect[Any] = js.native
   
   @JSImport("griddle-react", "utils.dataUtils")
   @js.native
@@ -32,31 +30,27 @@ object utils {
   
   object sortUtils {
     
-    @JSImport("griddle-react", "utils.sortUtils.defaultSort")
+    @JSImport("griddle-react", "utils.sortUtils")
     @js.native
-    def defaultSort(data: js.Array[_], column: String): Double = js.native
-    @JSImport("griddle-react", "utils.sortUtils.defaultSort")
-    @js.native
-    def defaultSort(data: js.Array[_], column: String, sortAscending: Boolean): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("griddle-react", "utils.sortUtils.setSortProperties")
-    @js.native
-    def setSortProperties(sortProperties: SortProperties): js.Function0[Unit] = js.native
+    inline def defaultSort(data: js.Array[Any], column: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSort")(data.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def defaultSort(data: js.Array[Any], column: String, sortAscending: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSort")(data.asInstanceOf[js.Any], column.asInstanceOf[js.Any], sortAscending.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def setSortProperties(sortProperties: SortProperties): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setSortProperties")(sortProperties.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   }
   
-  @js.native
   trait SortProperties extends StObject {
     
-    var columnId: String = js.native
+    var columnId: String
     
-    def setSortColumn(sortProperties: js.Function1[/* key */ GriddleSortKey, Unit]): Unit = js.native
+    def setSortColumn(sortProperties: js.Function1[/* key */ GriddleSortKey, Unit]): Unit
     
-    var sortProperty: GriddleSortKey = js.native
+    var sortProperty: GriddleSortKey
   }
   object SortProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnId: String,
       setSortColumn: js.Function1[/* key */ GriddleSortKey, Unit] => Unit,
       sortProperty: GriddleSortKey
@@ -65,17 +59,13 @@ object utils {
       __obj.asInstanceOf[SortProperties]
     }
     
-    @scala.inline
-    implicit class SortPropertiesMutableBuilder[Self <: SortProperties] (val x: Self) extends AnyVal {
+    extension [Self <: SortProperties](x: Self) {
       
-      @scala.inline
-      def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+      inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetSortColumn(value: js.Function1[/* key */ GriddleSortKey, Unit] => Unit): Self = StObject.set(x, "setSortColumn", js.Any.fromFunction1(value))
+      inline def setSetSortColumn(value: js.Function1[/* key */ GriddleSortKey, Unit] => Unit): Self = StObject.set(x, "setSortColumn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSortProperty(value: GriddleSortKey): Self = StObject.set(x, "sortProperty", value.asInstanceOf[js.Any])
+      inline def setSortProperty(value: GriddleSortKey): Self = StObject.set(x, "sortProperty", value.asInstanceOf[js.Any])
     }
   }
 }

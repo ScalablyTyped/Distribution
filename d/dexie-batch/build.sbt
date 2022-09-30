@@ -1,14 +1,12 @@
 organization := "org.scalablytyped"
 name := "dexie-batch"
-version := "0.4-dt-20200515Z-292cc2"
-scalaVersion := "2.13.3"
+version := "0.4-dt-20211202Z-81fd9e"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "dexie" % "3.0.3-2aacd4",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "dexie" % "3.2.2-069632",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

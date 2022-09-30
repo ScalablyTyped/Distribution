@@ -1,7 +1,7 @@
 
 # Scala.js typings for naja
 
-Typings are for version 2.4.0
+Typings are for version 2.5.0
 
 ## Library description:
 Modern AJAX library for Nette Framework

@@ -1,58 +1,58 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`1`
-import typings.activexWord.activexWordNumbers.`2`
-import typings.activexWord.activexWordNumbers.`31`
-import typings.activexWord.activexWordNumbers.`33`
-import typings.activexWord.activexWordNumbers.`34`
-import typings.activexWord.activexWordNumbers.`354`
-import typings.activexWord.activexWordNumbers.`358`
-import typings.activexWord.activexWordNumbers.`39`
-import typings.activexWord.activexWordNumbers.`3`
-import typings.activexWord.activexWordNumbers.`44`
-import typings.activexWord.activexWordNumbers.`45`
-import typings.activexWord.activexWordNumbers.`46`
-import typings.activexWord.activexWordNumbers.`47`
-import typings.activexWord.activexWordNumbers.`49`
-import typings.activexWord.activexWordNumbers.`51`
-import typings.activexWord.activexWordNumbers.`52`
-import typings.activexWord.activexWordNumbers.`54`
-import typings.activexWord.activexWordNumbers.`55`
-import typings.activexWord.activexWordNumbers.`56`
-import typings.activexWord.activexWordNumbers.`58`
-import typings.activexWord.activexWordNumbers.`81`
-import typings.activexWord.activexWordNumbers.`82`
-import typings.activexWord.activexWordNumbers.`86`
-import typings.activexWord.activexWordNumbers.`886`
+import typings.activexWord.activexWordInts.`1`
+import typings.activexWord.activexWordInts.`2`
+import typings.activexWord.activexWordInts.`31`
+import typings.activexWord.activexWordInts.`33`
+import typings.activexWord.activexWordInts.`34`
+import typings.activexWord.activexWordInts.`354`
+import typings.activexWord.activexWordInts.`358`
+import typings.activexWord.activexWordInts.`39`
+import typings.activexWord.activexWordInts.`3`
+import typings.activexWord.activexWordInts.`44`
+import typings.activexWord.activexWordInts.`45`
+import typings.activexWord.activexWordInts.`46`
+import typings.activexWord.activexWordInts.`47`
+import typings.activexWord.activexWordInts.`49`
+import typings.activexWord.activexWordInts.`51`
+import typings.activexWord.activexWordInts.`52`
+import typings.activexWord.activexWordInts.`54`
+import typings.activexWord.activexWordInts.`55`
+import typings.activexWord.activexWordInts.`56`
+import typings.activexWord.activexWordInts.`58`
+import typings.activexWord.activexWordInts.`81`
+import typings.activexWord.activexWordInts.`82`
+import typings.activexWord.activexWordInts.`86`
+import typings.activexWord.activexWordInts.`886`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`54`
-  - typings.activexWord.activexWordNumbers.`55`
-  - typings.activexWord.activexWordNumbers.`2`
-  - typings.activexWord.activexWordNumbers.`56`
-  - typings.activexWord.activexWordNumbers.`86`
-  - typings.activexWord.activexWordNumbers.`45`
-  - typings.activexWord.activexWordNumbers.`358`
-  - typings.activexWord.activexWordNumbers.`33`
-  - typings.activexWord.activexWordNumbers.`49`
-  - typings.activexWord.activexWordNumbers.`354`
-  - typings.activexWord.activexWordNumbers.`39`
-  - typings.activexWord.activexWordNumbers.`81`
-  - typings.activexWord.activexWordNumbers.`82`
-  - typings.activexWord.activexWordNumbers.`3`
-  - typings.activexWord.activexWordNumbers.`52`
-  - typings.activexWord.activexWordNumbers.`31`
-  - typings.activexWord.activexWordNumbers.`47`
-  - typings.activexWord.activexWordNumbers.`51`
-  - typings.activexWord.activexWordNumbers.`34`
-  - typings.activexWord.activexWordNumbers.`46`
-  - typings.activexWord.activexWordNumbers.`886`
-  - typings.activexWord.activexWordNumbers.`44`
-  - typings.activexWord.activexWordNumbers.`1`
-  - typings.activexWord.activexWordNumbers.`58`
+  - typings.activexWord.activexWordInts.`54`
+  - typings.activexWord.activexWordInts.`55`
+  - typings.activexWord.activexWordInts.`2`
+  - typings.activexWord.activexWordInts.`56`
+  - typings.activexWord.activexWordInts.`86`
+  - typings.activexWord.activexWordInts.`45`
+  - typings.activexWord.activexWordInts.`358`
+  - typings.activexWord.activexWordInts.`33`
+  - typings.activexWord.activexWordInts.`49`
+  - typings.activexWord.activexWordInts.`354`
+  - typings.activexWord.activexWordInts.`39`
+  - typings.activexWord.activexWordInts.`81`
+  - typings.activexWord.activexWordInts.`82`
+  - typings.activexWord.activexWordInts.`3`
+  - typings.activexWord.activexWordInts.`52`
+  - typings.activexWord.activexWordInts.`31`
+  - typings.activexWord.activexWordInts.`47`
+  - typings.activexWord.activexWordInts.`51`
+  - typings.activexWord.activexWordInts.`34`
+  - typings.activexWord.activexWordInts.`46`
+  - typings.activexWord.activexWordInts.`886`
+  - typings.activexWord.activexWordInts.`44`
+  - typings.activexWord.activexWordInts.`1`
+  - typings.activexWord.activexWordInts.`58`
 */
 trait WdCountry extends StObject
 object WdCountry {

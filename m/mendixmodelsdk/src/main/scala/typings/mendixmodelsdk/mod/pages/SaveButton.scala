@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SaveButton")
 @js.native
-class SaveButton protected ()
+open class SaveButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SaveButton {
   def this(
     model: AbstractModel,

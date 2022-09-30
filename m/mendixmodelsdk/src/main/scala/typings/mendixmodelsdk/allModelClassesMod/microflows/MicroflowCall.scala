@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowCall")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowCall")
 @js.native
-class MicroflowCall protected ()
+open class MicroflowCall protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCall {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class MicroflowCall protected ()
 }
 object MicroflowCall {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowCall")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowCall")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object MicroflowCall {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCallAction): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCall]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowCall.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowCall.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowCall.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowCall.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

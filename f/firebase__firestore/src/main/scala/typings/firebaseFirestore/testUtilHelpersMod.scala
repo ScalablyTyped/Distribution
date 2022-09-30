@@ -99,7 +99,7 @@ object testUtilHelpersMod {
   
   inline def addTargetMapping(docsOrKeys: (MutableDocument | String)*): TargetChange = ^.asInstanceOf[js.Dynamic].applyDynamic("addTargetMapping")(docsOrKeys.asInstanceOf[Seq[js.Any]]*).asInstanceOf[TargetChange]
   
-  inline def applyDocChanges(view: View, docsOrKeys: (Document | DocumentKey)*): ViewChange = ^.asInstanceOf[js.Dynamic].applyDynamic("applyDocChanges")(List(view.asInstanceOf[js.Any]).`++`(docsOrKeys.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ViewChange]
+  inline def applyDocChanges(view: View, docsOrKeys: (Document | DocumentKey)*): ViewChange = ^.asInstanceOf[js.Dynamic].applyDynamic("applyDocChanges")(scala.List(view.asInstanceOf[js.Any]).`++`(docsOrKeys.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ViewChange]
   
   inline def blob(bytes: Double*): Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("blob")(bytes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Bytes]
   
@@ -257,7 +257,7 @@ object testUtilHelpersMod {
     limboTargets: js.Array[TargetId]
   ): RemoteEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("docUpdateRemoteEvent")(doc.asInstanceOf[js.Any], updatedInTargets.asInstanceOf[js.Any], removedFromTargets.asInstanceOf[js.Any], limboTargets.asInstanceOf[js.Any])).asInstanceOf[RemoteEvent]
   
-  inline def documentSet(comp: DocumentComparator, docs: Document*): DocumentSet = ^.asInstanceOf[js.Dynamic].applyDynamic("documentSet")(List(comp.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[DocumentSet]
+  inline def documentSet(comp: DocumentComparator, docs: Document*): DocumentSet = ^.asInstanceOf[js.Dynamic].applyDynamic("documentSet")(scala.List(comp.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[DocumentSet]
   inline def documentSet(docs: Document*): DocumentSet = ^.asInstanceOf[js.Dynamic].applyDynamic("documentSet")(docs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[DocumentSet]
   
   inline def documentSetAsArray(docs: DocumentSet): js.Array[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("documentSetAsArray")(docs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Document]]
@@ -338,7 +338,7 @@ object testUtilHelpersMod {
   inline def path(path: String): ResourcePath = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any]).asInstanceOf[ResourcePath]
   inline def path(path: String, offset: Double): ResourcePath = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[ResourcePath]
   
-  inline def query(resourcePath: String, constraints: (OrderBy | Filter)*): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(resourcePath.asInstanceOf[js.Any]).`++`(constraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query]
+  inline def query(resourcePath: String, constraints: (OrderBy | Filter)*): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(resourcePath.asInstanceOf[js.Any]).`++`(constraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query]
   
   inline def ref(key: String): DocumentReference[DocumentData] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(key.asInstanceOf[js.Any]).asInstanceOf[DocumentReference[DocumentData]]
   inline def ref(key: String, offset: Double): DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(key.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[DocumentReference[DocumentData]]

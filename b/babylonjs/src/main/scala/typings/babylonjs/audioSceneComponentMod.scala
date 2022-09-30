@@ -166,7 +166,7 @@ object audioSceneComponentMod {
     trait Scene extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing field
         */
       var _mainSoundTrack: SoundTrack

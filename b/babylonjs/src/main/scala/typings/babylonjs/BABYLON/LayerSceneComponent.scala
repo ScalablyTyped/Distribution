@@ -13,13 +13,17 @@ trait LayerSceneComponent
   
   /* private */ var _drawCameraBackground: Any = js.native
   
-  /* private */ var _drawCameraForeground: Any = js.native
+  /* private */ var _drawCameraForegroundWithPostProcessing: Any = js.native
+  
+  /* private */ var _drawCameraForegroundWithoutPostProcessing: Any = js.native
   
   /* private */ var _drawCameraPredicate: Any = js.native
   
   /* private */ var _drawRenderTargetBackground: Any = js.native
   
-  /* private */ var _drawRenderTargetForeground: Any = js.native
+  /* private */ var _drawRenderTargetForegroundWithPostProcessing: Any = js.native
+  
+  /* private */ var _drawRenderTargetForegroundWithoutPostProcessing: Any = js.native
   
   /* private */ var _drawRenderTargetPredicate: Any = js.native
   

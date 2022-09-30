@@ -1,7 +1,7 @@
 package typings.syncRequest
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.syncRequest.formDataMod.FormData
 import typings.syncRequest.formDataMod.FormDataEntry
@@ -29,13 +29,13 @@ object optionsMod {
     
     var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.undefined
+    var json: js.UndefOr[Any] = js.undefined
     
     var maxRedirects: js.UndefOr[Double] = js.undefined
     
     var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var qs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var qs: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var retry: js.UndefOr[Boolean] = js.undefined
     
@@ -62,7 +62,7 @@ object optionsMod {
       
       inline def setAllowRedirectHeadersUndefined: Self = StObject.set(x, "allowRedirectHeaders", js.undefined)
       
-      inline def setAllowRedirectHeadersVarargs(value: String*): Self = StObject.set(x, "allowRedirectHeaders", js.Array(value :_*))
+      inline def setAllowRedirectHeadersVarargs(value: String*): Self = StObject.set(x, "allowRedirectHeaders", js.Array(value*))
       
       inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -84,7 +84,7 @@ object optionsMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
@@ -96,7 +96,7 @@ object optionsMod {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setQs(value: StringDictionary[js.Any]): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+      inline def setQs(value: StringDictionary[Any]): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
       
       inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
       
@@ -137,7 +137,7 @@ object optionsMod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setFormVarargs(value: FormDataEntry*): Self = StObject.set(x, "form", js.Array(value :_*))
+      inline def setFormVarargs(value: FormDataEntry*): Self = StObject.set(x, "form", js.Array(value*))
     }
   }
   

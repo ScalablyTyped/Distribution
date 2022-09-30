@@ -14,10 +14,11 @@ object telemetryMod {
   
   @JSImport("gatsby-telemetry/lib/telemetry", "AnalyticsTracker")
   @js.native
-  class AnalyticsTracker () extends StObject {
+  open class AnalyticsTracker () extends StObject {
     def this(hasComponentIdGatsbyCliVersionTrackingEnabled: IAnalyticsTrackerConstructorParameters) = this()
     
-    def addSiteMeasurement(event: String, obj: js.Any): Unit = js.native
+    def addSiteMeasurement(event: String): Unit = js.native
+    def addSiteMeasurement(event: String, obj: BundleStats): Unit = js.native
     
     def aggregateStats(data: js.Array[Double]): IAggregateStats = js.native
     
@@ -50,7 +51,7 @@ object telemetryMod {
     
     def decorateAll(tags: ITelemetryTagsPayload): Unit = js.native
     
-    def decorateNextEvent(event: String, obj: js.Any): Unit = js.native
+    def decorateNextEvent(event: String, obj: Any): Unit = js.native
     
     var features: Set[String] = js.native
     
@@ -72,13 +73,19 @@ object telemetryMod {
     
     def getSessionId(): String = js.native
     
-    def getTagsFromEnv(): Record[String, js.Any] = js.native
+    def getTagsFromEnv(): Record[String, Any] = js.native
+    
+    def getTagsFromPath(): ITelemetryTagsPayload = js.native
     
     var installedGatsbyVersion: js.UndefOr[SemVer] = js.native
     
     def isFinalEvent(event: String): Boolean = js.native
     
     def isTrackingEnabled(): Boolean = js.native
+    
+    var lastEnvTagsFromFileTime: Double = js.native
+    
+    var lastEnvTagsFromFileValue: ITelemetryTagsPayload = js.native
     
     var machineId: String = js.native
     
@@ -296,7 +303,7 @@ object telemetryMod {
     
     var code: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var error: js.UndefOr[Stack] = js.undefined
     
@@ -321,7 +328,7 @@ object telemetryMod {
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -451,6 +458,8 @@ object telemetryMod {
     
     var valid: js.UndefOr[Boolean] = js.undefined
     
+    var valueBoolean: js.UndefOr[Boolean] = js.undefined
+    
     var valueInteger: js.UndefOr[Double] = js.undefined
     
     var valueString: js.UndefOr[String] = js.undefined
@@ -474,13 +483,13 @@ object telemetryMod {
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setDevDependencies(value: js.Array[String]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
       
       inline def setDevDependenciesUndefined: Self = StObject.set(x, "devDependencies", js.undefined)
       
-      inline def setDevDependenciesVarargs(value: String*): Self = StObject.set(x, "devDependencies", js.Array(value :_*))
+      inline def setDevDependenciesVarargs(value: String*): Self = StObject.set(x, "devDependencies", js.Array(value*))
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -494,7 +503,7 @@ object telemetryMod {
       
       inline def setErrorV2Undefined: Self = StObject.set(x, "errorV2", js.undefined)
       
-      inline def setErrorVarargs(value: IStructuredError*): Self = StObject.set(x, "error", js.Array(value :_*))
+      inline def setErrorVarargs(value: IStructuredError*): Self = StObject.set(x, "error", js.Array(value*))
       
       inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
       
@@ -520,7 +529,7 @@ object telemetryMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setSiteHash(value: String): Self = StObject.set(x, "siteHash", value.asInstanceOf[js.Any])
       
@@ -550,6 +559,10 @@ object telemetryMod {
       
       inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
+      inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
+      
+      inline def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
+      
       inline def setValueInteger(value: Double): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
       
       inline def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
@@ -560,7 +573,7 @@ object telemetryMod {
       
       inline def setValueStringArrayUndefined: Self = StObject.set(x, "valueStringArray", js.undefined)
       
-      inline def setValueStringArrayVarargs(value: String*): Self = StObject.set(x, "valueStringArray", js.Array(value :_*))
+      inline def setValueStringArrayVarargs(value: String*): Self = StObject.set(x, "valueStringArray", js.Array(value*))
       
       inline def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
     }

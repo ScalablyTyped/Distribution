@@ -21,7 +21,7 @@ import typings.underscore.anon.FnCallListN
 import typings.underscore.anon.FnCallN
 import typings.underscore.underscoreBooleans.`false`
 import typings.underscore.underscoreBooleans.`true`
-import typings.underscore.underscoreNumbers.`1`
+import typings.underscore.underscoreInts.`1`
 import typings.underscore.underscoreStrings._Chain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +38,7 @@ object mod extends Shortcut {
     - scala.Null
     - typings.underscore.underscoreBooleans.`false`
     - typings.underscore.underscoreStrings._empty
-    - typings.underscore.underscoreNumbers.`0`
+    - typings.underscore.underscoreInts.`0`
   */
   type AnyFalsy = js.UndefOr[_AnyFalsy | Null]
   
@@ -313,7 +313,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper around the contents of the wrapped list
       * without the values in `others`.
       **/
-    def difference(others: List[T]*): Chain[T, js.Array[T]] = js.native
+    def difference(others: typings.underscore.mod.List[T]*): Chain[T, js.Array[T]] = js.native
     
     /**
       * @see rest
@@ -708,7 +708,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper around the intersection of elements within
       * the the wrapped list and `lists`.
       **/
-    def intersection(lists: List[T]*): Chain[T, js.Array[T]] = js.native
+    def intersection(lists: typings.underscore.mod.List[T]*): Chain[T, js.Array[T]] = js.native
     
     /**
       * Wrapped type `object`.
@@ -1142,7 +1142,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper around an object comprised of the provided
       * keys and values.
       **/
-    def `object`[TValue](values: List[TValue]): Chain[js.UndefOr[TValue], Dictionary[js.UndefOr[TValue]]] = js.native
+    def `object`[TValue](values: typings.underscore.mod.List[TValue]): Chain[js.UndefOr[TValue], Dictionary[js.UndefOr[TValue]]] = js.native
     
     /**
       * Return a copy of the wrapped object that is filtered to not have
@@ -1595,7 +1595,7 @@ object mod extends Shortcut {
       * @returns A chain wrapper around the union of elements within the
       * wrapped list and `lists`.
       **/
-    def union(lists: List[T]*): Chain[T, js.Array[T]] = js.native
+    def union(lists: typings.underscore.mod.List[T]*): Chain[T, js.Array[T]] = js.native
     
     /**
       * Produces a duplicate-free version of the wrapped list, using === to
@@ -1713,12 +1713,12 @@ object mod extends Shortcut {
       * @returns A chain wrapper around the zipped version of the wrapped
       * list and `lists`.
       **/
-    def zip(arrays: List[Any]*): Chain[js.Array[Any], js.Array[js.Array[Any]]] = js.native
+    def zip(arrays: typings.underscore.mod.List[Any]*): Chain[js.Array[Any], js.Array[js.Array[Any]]] = js.native
   }
   
   type ChainSingle[V] = Chain[TypeOfCollection[V, scala.Nothing], V]
   
-  type Collection[T] = List[T] | Dictionary[T]
+  type Collection[T] = typings.underscore.mod.List[T] | Dictionary[T]
   
   type CollectionIterator[T /* <: TypeOfList[V] | (TypeOfDictionary[V, Any]) */, TResult, V] = js.Function3[/* element */ T, /* key */ CollectionKey[V], /* collection */ V, TResult]
   
@@ -1755,12 +1755,12 @@ object mod extends Shortcut {
   }
   object List {
     
-    inline def apply[T](length: Double): List[T] = {
+    inline def apply[T](length: Double): typings.underscore.mod.List[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[List[T]]
+      __obj.asInstanceOf[typings.underscore.mod.List[T]]
     }
     
-    extension [Self <: List[?], T](x: Self & List[T]) {
+    extension [Self <: typings.underscore.mod.List[?], T](x: Self & typings.underscore.mod.List[T]) {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -2133,7 +2133,7 @@ object mod extends Shortcut {
       * @returns The contents of the wrapped list without the values in
       * `others`.
       **/
-    def difference(others: List[T]*): js.Array[T] = js.native
+    def difference(others: typings.underscore.mod.List[T]*): js.Array[T] = js.native
     
     /**
       * @see rest
@@ -2519,7 +2519,7 @@ object mod extends Shortcut {
       * @returns The intersection of elements within the the wrapped list
       * and `lists`.
       **/
-    def intersection(lists: List[T]*): js.Array[T] = js.native
+    def intersection(lists: typings.underscore.mod.List[T]*): js.Array[T] = js.native
     
     /**
       * Wrapped type `object`.
@@ -2797,13 +2797,13 @@ object mod extends Shortcut {
       * Wrapped type `any[]`.
       * @see _.matcher
       **/
-    def matcher(): ListIterator[T, Boolean, List[T]] = js.native
+    def matcher(): ListIterator[T, Boolean, typings.underscore.mod.List[T]] = js.native
     
     /**
       * Wrapped type `any[]`.
       * @see _.matches
       **/
-    def matches(): ListIterator[T, Boolean, List[T]] = js.native
+    def matches(): ListIterator[T, Boolean, typings.underscore.mod.List[T]] = js.native
     
     /**
       * Returns the maximum value in the wrapped collection. If an
@@ -2881,7 +2881,7 @@ object mod extends Shortcut {
       * values corresponding to those keys.
       * @returns An object comprised of the provided keys and values.
       **/
-    def `object`[TValue](values: List[TValue]): Dictionary[js.UndefOr[TValue]] = js.native
+    def `object`[TValue](values: typings.underscore.mod.List[TValue]): Dictionary[js.UndefOr[TValue]] = js.native
     
     /**
       * Return a copy of the wrapped object that is filtered to not have
@@ -3270,7 +3270,7 @@ object mod extends Shortcut {
       * the union of.
       * @returns The union of elements within the wrapped list and `lists`.
       **/
-    def union(lists: List[T]*): js.Array[T] = js.native
+    def union(lists: typings.underscore.mod.List[T]*): js.Array[T] = js.native
     
     /**
       * Produces a duplicate-free version of the wrapped list, using === to
@@ -3377,7 +3377,7 @@ object mod extends Shortcut {
       * matching list indexes.
       * @returns The zipped version of the wrapped list and `lists`.
       **/
-    def zip(lists: List[Any]*): js.Array[js.Array[Any]] = js.native
+    def zip(lists: typings.underscore.mod.List[Any]*): js.Array[js.Array[Any]] = js.native
   }
   
   @js.native
@@ -3514,7 +3514,7 @@ object mod extends Shortcut {
       * @returns The contents of `list` in chunks no greater than `length`
       * in size.
       **/
-    def chunk[V /* <: List[Any] */](list: V, length: Double): js.Array[js.Array[TypeOfList[V]]] = js.native
+    def chunk[V /* <: typings.underscore.mod.List[Any] */](list: V, length: Double): js.Array[js.Array[TypeOfList[V]]] = js.native
     
     /**
       * Create a shallow-copied clone of the object.
@@ -3567,7 +3567,7 @@ object mod extends Shortcut {
       * @returns An array containing the elements of `list` without falsy
       * values.
       **/
-    def compact[V /* <: js.UndefOr[List[Any] | Null] */](list: V): js.Array[Truthy[TypeOfList[V]]] = js.native
+    def compact[V /* <: js.UndefOr[typings.underscore.mod.List[Any] | Null] */](list: V): js.Array[Truthy[TypeOfList[V]]] = js.native
     
     /**
       * Returns the composition of a list of functions, where each function consumes the return value of the
@@ -3706,21 +3706,21 @@ object mod extends Shortcut {
       * @param others The lists of values to exclude from `list`.
       * @returns The contents of `list` without the values in `others`.
       **/
-    def difference[T](list: List[T], others: List[T]*): js.Array[T] = js.native
+    def difference[T](list: typings.underscore.mod.List[T], others: typings.underscore.mod.List[T]*): js.Array[T] = js.native
     
     /**
       * @see rest
       **/
-    def drop[V /* <: List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def drop[V /* <: List[Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
+    def drop[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def drop[V /* <: typings.underscore.mod.List[Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see rest
       **/
     @JSName("drop")
     var drop_Original: js.Function2[
-        /* list */ List[Any], 
+        /* list */ typings.underscore.mod.List[Any], 
         /* index */ js.UndefOr[Double], 
-        js.Array[TypeOfList[List[Any]]]
+        js.Array[TypeOfList[typings.underscore.mod.List[Any]]]
       ] = js.native
     
     /***************
@@ -3818,10 +3818,10 @@ object mod extends Shortcut {
       * @returns The index of the first element in `list` where the
       * truth test passes or -1 if no elements pass.
       **/
-    def findIndex[V /* <: List[Any] */](list: V): Double = js.native
-    def findIndex[V /* <: List[Any] */](list: V, iteratee: Unit, context: Any): Double = js.native
-    def findIndex[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
-    def findIndex[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: Any): Double = js.native
+    def findIndex[V /* <: typings.underscore.mod.List[Any] */](list: V): Double = js.native
+    def findIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Unit, context: Any): Double = js.native
+    def findIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: Any): Double = js.native
     
     /**
       * Similar to `findIndex` but for keys in objects. Returns the key
@@ -3847,10 +3847,10 @@ object mod extends Shortcut {
       * @returns The index of the last element in `list` where the
       * truth test passes or -1 if no elements pass.
       **/
-    def findLastIndex[V /* <: List[Any] */](list: V): Double = js.native
-    def findLastIndex[V /* <: List[Any] */](list: V, iteratee: Unit, context: Any): Double = js.native
-    def findLastIndex[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
-    def findLastIndex[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: Any): Double = js.native
+    def findLastIndex[V /* <: typings.underscore.mod.List[Any] */](list: V): Double = js.native
+    def findLastIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Unit, context: Any): Double = js.native
+    def findLastIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]]): Double = js.native
+    def findLastIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V, scala.Nothing]], context: Any): Double = js.native
     
     /**
       * Looks through `collection` and returns the first value that matches
@@ -3876,10 +3876,10 @@ object mod extends Shortcut {
       * @returns The first `n` elements of `list` or the first element if
       * `n` is omitted.
       **/
-    def first[V /* <: List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
-    def first[V /* <: List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def first[V /* <: typings.underscore.mod.List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def first[V /* <: typings.underscore.mod.List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     
-    def flatten[V /* <: List[Any] */](list: V): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
+    def flatten[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
     /**
       * Flattens a nested `list` (the nesting can be to any depth). If you
       * pass true or 1 as the depth, the `list` will only be flattened a
@@ -3892,10 +3892,10 @@ object mod extends Shortcut {
       * default = false.
       * @returns The flattened `list`.
       **/
-    def flatten[V /* <: List[Any] */](list: V, depth: `1` | `true`): js.Array[ListItemOrSelf[TypeOfList[V]]] = js.native
-    def flatten[V /* <: List[Any] */](list: V, depth: Double): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
+    def flatten[V /* <: typings.underscore.mod.List[Any] */](list: V, depth: `1` | `true`): js.Array[ListItemOrSelf[TypeOfList[V]]] = js.native
+    def flatten[V /* <: typings.underscore.mod.List[Any] */](list: V, depth: Double): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
     @JSName("flatten")
-    def flatten_false[V /* <: List[Any] */](list: V, depth: `false`): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
+    def flatten_false[V /* <: typings.underscore.mod.List[Any] */](list: V, depth: `false`): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
     
     /**
       * @see reduce
@@ -4018,9 +4018,9 @@ object mod extends Shortcut {
     @JSName("get")
     def get_U_U[U](`object`: Unit, path: js.Array[String]): U = js.native
     @JSName("get")
-    def get_V_CollectionAnyU[V /* <: Collection[Any] */, U](`object`: V, path: String): (TypeOfCollection[V, scala.Nothing]) | U = js.native
+    def get_VU[V /* <: Collection[Any] */, U](`object`: V, path: String): (TypeOfCollection[V, scala.Nothing]) | U = js.native
     @JSName("get")
-    def get_V_CollectionAnyU[V /* <: Collection[Any] */, U](`object`: V, path: js.Array[String]): (TypeOfCollection[V, scala.Nothing]) | U = js.native
+    def get_VU[V /* <: Collection[Any] */, U](`object`: V, path: js.Array[String]): (TypeOfCollection[V, scala.Nothing]) | U = js.native
     
     /**
       * Splits `collection` into sets that are grouped by the result of
@@ -4054,11 +4054,11 @@ object mod extends Shortcut {
     /**
       * @see first
       **/
-    def head[V /* <: List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def head[V /* <: typings.underscore.mod.List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
-    def head[V /* <: List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def head[V /* <: typings.underscore.mod.List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
@@ -4140,9 +4140,9 @@ object mod extends Shortcut {
       * @returns The index of the first occurrence of `value` within `list`
       * or -1 if `value` is not found.
       **/
-    def indexOf[V /* <: List[Any] */](list: V, value: TypeOfList[V]): Double = js.native
-    def indexOf[V /* <: List[Any] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Boolean): Double = js.native
-    def indexOf[V /* <: List[Any] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Double): Double = js.native
+    def indexOf[V /* <: typings.underscore.mod.List[Any] */](list: V, value: TypeOfList[V]): Double = js.native
+    def indexOf[V /* <: typings.underscore.mod.List[Any] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Boolean): Double = js.native
+    def indexOf[V /* <: typings.underscore.mod.List[Any] */](list: V, value: TypeOfList[V], isSortedOrFromIndex: Double): Double = js.native
     
     /**
       * Returns everything but the last entry of `list`. Especially useful
@@ -4153,8 +4153,8 @@ object mod extends Shortcut {
       * optional, default = 1.
       * @returns The elements of `list` with the last `n` items omitted.
       **/
-    def initial[V /* <: List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def initial[V /* <: List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def initial[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def initial[V /* <: typings.underscore.mod.List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     
     /**
       * @see reduce
@@ -4194,7 +4194,7 @@ object mod extends Shortcut {
       * @param lists The lists to compute the intersection of.
       * @returns The intersection of elements within the `lists`.
       **/
-    def intersection[T](lists: List[T]*): js.Array[T] = js.native
+    def intersection[T](lists: typings.underscore.mod.List[T]*): js.Array[T] = js.native
     
     /**
       * Returns a copy of the object where the keys have become the values and the values the keys.
@@ -4414,8 +4414,8 @@ object mod extends Shortcut {
       * @returns The last `n` elements of `list` or the last element if `n`
       * is omitted.
       **/
-    def last[V /* <: List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
-    def last[V /* <: List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def last[V /* <: typings.underscore.mod.List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def last[V /* <: typings.underscore.mod.List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Returns the index of the last occurrence of `value` in `list`, or -1
@@ -4427,8 +4427,8 @@ object mod extends Shortcut {
       * @returns The index of the last occurrence of `value` within `list`
       * or -1 if `value` is not found.
       **/
-    def lastIndexOf[V /* <: List[Any] */](list: V, value: TypeOfList[V]): Double = js.native
-    def lastIndexOf[V /* <: List[Any] */](list: V, value: TypeOfList[V], fromIndex: Double): Double = js.native
+    def lastIndexOf[V /* <: typings.underscore.mod.List[Any] */](list: V, value: TypeOfList[V]): Double = js.native
+    def lastIndexOf[V /* <: typings.underscore.mod.List[Any] */](list: V, value: TypeOfList[V], fromIndex: Double): Double = js.native
     
     def map[V /* <: Collection[Any] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
     /**
@@ -4608,7 +4608,7 @@ object mod extends Shortcut {
       **/
     def now(): Double = js.native
     
-    def `object`[TList /* <: List[List[Any]] */](list: TList): Dictionary[PairValue[TypeOfList[TList]]] = js.native
+    def `object`[TList /* <: typings.underscore.mod.List[typings.underscore.mod.List[Any]] */](list: TList): Dictionary[PairValue[TypeOfList[TList]]] = js.native
     /**
       * Converts lists into objects. Pass either a single `list` of
       * [key, value] pairs, or a `list` of keys and a list of `values`.
@@ -4619,7 +4619,7 @@ object mod extends Shortcut {
       * corresponding to those keys.
       * @returns An object comprised of the provided keys and values.
       **/
-    def `object`[TList /* <: List[String | Double] */, TValue](list: TList, values: List[TValue]): Dictionary[js.UndefOr[TValue]] = js.native
+    def `object`[TList /* <: typings.underscore.mod.List[String | Double] */, TValue](list: TList, values: typings.underscore.mod.List[TValue]): Dictionary[js.UndefOr[TValue]] = js.native
     
     /**
       * Return a copy of `object` that is filtered to not have values for
@@ -6859,8 +6859,8 @@ object mod extends Shortcut {
       * default = 1.
       * @returns The elements of `list` from `index` to the end of the list.
       **/
-    def rest[V /* <: List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def rest[V /* <: List[Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
+    def rest[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def rest[V /* <: typings.underscore.mod.List[Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Similar to ES6's rest param (http://ariya.ofilabs.com/2013/03/es6-and-rest-parameter.html)
@@ -6968,14 +6968,14 @@ object mod extends Shortcut {
       * @param context `this` object in `iteratee`, optional.
       * @returns The index where `value` should be inserted into `list`.
       **/
-    def sortedIndex[V /* <: List[Any] */](list: V, value: TypeOfList[V]): Double = js.native
-    def sortedIndex[V /* <: List[Any] */](list: V, value: TypeOfList[V], iteratee: Unit, context: Any): Double = js.native
-    def sortedIndex[V /* <: List[Any] */](
+    def sortedIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, value: TypeOfList[V]): Double = js.native
+    def sortedIndex[V /* <: typings.underscore.mod.List[Any] */](list: V, value: TypeOfList[V], iteratee: Unit, context: Any): Double = js.native
+    def sortedIndex[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       value: TypeOfList[V],
       iteratee: Iteratee[js.UndefOr[V], Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]]
     ): Double = js.native
-    def sortedIndex[V /* <: List[Any] */](
+    def sortedIndex[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       value: TypeOfList[V],
       iteratee: Iteratee[js.UndefOr[V], Any, TypeOfCollection[js.UndefOr[V], scala.Nothing]],
@@ -6985,26 +6985,26 @@ object mod extends Shortcut {
     /**
       * @see rest
       **/
-    def tail[V /* <: List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def tail[V /* <: List[Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
+    def tail[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def tail[V /* <: typings.underscore.mod.List[Any] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see rest
       **/
     @JSName("tail")
     var tail_Original: js.Function2[
-        /* list */ List[Any], 
+        /* list */ typings.underscore.mod.List[Any], 
         /* index */ js.UndefOr[Double], 
-        js.Array[TypeOfList[List[Any]]]
+        js.Array[TypeOfList[typings.underscore.mod.List[Any]]]
       ] = js.native
     
     /**
       * @see first
       **/
-    def take[V /* <: List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def take[V /* <: typings.underscore.mod.List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
-    def take[V /* <: List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def take[V /* <: typings.underscore.mod.List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
     /**
       * @see first
       **/
@@ -7078,7 +7078,7 @@ object mod extends Shortcut {
       **/
     def toArray[V /* <: Collection[Any] */](collection: V): js.Array[TypeOfCollection[V, scala.Nothing]] = js.native
     
-    def transpose(lists: List[List[Any]]): js.Array[js.Array[Any]] = js.native
+    def transpose(lists: typings.underscore.mod.List[typings.underscore.mod.List[Any]]): js.Array[js.Array[Any]] = js.native
     
     /**
       * The opposite of escape, replaces &amp;, &lt;, &gt;, &quot;, and &#x27; with their unescaped counterparts.
@@ -7094,7 +7094,7 @@ object mod extends Shortcut {
       * @param lists The lists to compute the union of.
       * @returns The union of elements within `lists`.
       **/
-    def union[T](lists: List[T]*): js.Array[T] = js.native
+    def union[T](lists: typings.underscore.mod.List[T]*): js.Array[T] = js.native
     
     /**
       * Produces a duplicate-free version of `list`, using === to test
@@ -7110,50 +7110,50 @@ object mod extends Shortcut {
       * @param context 'this' object in `iteratee`, optional.
       * @returns An array containing only the unique elements in `list`.
       **/
-    def uniq[V /* <: List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       isSorted: Boolean,
       iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]],
       context: Any
     ): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](list: V, isSorted: Unit, iteratee: Any | (Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]])): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](list: V, isSorted: Unit, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Unit, iteratee: Any | (Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]])): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Unit, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       isSorted: Unit,
       iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]],
       context: Any
     ): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def uniq[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]], context: Any): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def uniq[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]], context: Any): js.Array[TypeOfList[V]] = js.native
     
     /**
       * @see uniq
       **/
-    def unique[V /* <: List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       isSorted: Boolean,
       iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]],
       context: Any
     ): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](list: V, isSorted: Unit, iteratee: Any | (Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]])): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](list: V, isSorted: Unit, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Unit, iteratee: Any | (Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]])): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Unit, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       isSorted: Unit,
       iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]],
       context: Any
     ): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def unique[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]], context: Any): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def unique[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]], context: Any): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Generate a globally-unique id for client-side models or DOM elements that need one.
@@ -7178,7 +7178,7 @@ object mod extends Shortcut {
       * @param lists The lists to unzip.
       * @returns The unzipped version of `lists`.
       **/
-    def unzip(lists: List[List[Any]]): js.Array[js.Array[Any]] = js.native
+    def unzip(lists: typings.underscore.mod.List[typings.underscore.mod.List[Any]]): js.Array[js.Array[Any]] = js.native
     
     /**
       * Return all of the values of the object's properties.
@@ -7211,7 +7211,7 @@ object mod extends Shortcut {
       * @returns An array that contains all elements of `list` except for
       * `values`.
       **/
-    def without[V /* <: List[Any] */](list: V, values: TypeOfList[V]*): js.Array[TypeOfList[V]] = js.native
+    def without[V /* <: typings.underscore.mod.List[Any] */](list: V, values: TypeOfList[V]*): js.Array[TypeOfList[V]] = js.native
     
     /**
       * Wraps the first function inside of the wrapper function, passing it as the first argument. This allows
@@ -7230,7 +7230,7 @@ object mod extends Shortcut {
       * @param lists The lists to zip.
       * @returns The zipped version of `lists`.
       **/
-    def zip(lists: List[Any]*): js.Array[js.Array[Any]] = js.native
+    def zip(lists: typings.underscore.mod.List[Any]*): js.Array[js.Array[Any]] = js.native
   }
   
   trait _AnyFalsy extends StObject

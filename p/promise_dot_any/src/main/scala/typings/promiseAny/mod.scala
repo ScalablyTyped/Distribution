@@ -2,6 +2,7 @@ package typings.promiseAny
 
 import org.scalablytyped.runtime.Shortcut
 import typings.promiseAny.anon.FnCall
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +16,8 @@ object mod extends Shortcut {
   @js.native
   trait ExportedImplementationType extends StObject {
     
-    def apply[T](iterable: js.Array[T | js.Thenable[T]]): js.Promise[T] = js.native
-    def apply[T](iterable: js.Iterable[T | js.Thenable[T]]): js.Promise[T] = js.native
+    def apply[T](iterable: js.Array[T | PromiseLike[T]]): js.Promise[T] = js.native
+    def apply[T](iterable: js.Iterable[T | PromiseLike[T]]): js.Promise[T] = js.native
     
     def getPolyfill(): /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any = js.native
     @JSName("getPolyfill")
@@ -24,8 +25,8 @@ object mod extends Shortcut {
         /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
       ] = js.native
     
-    def implementation[T](iterable: js.Array[T | js.Thenable[T]]): js.Promise[T] = js.native
-    def implementation[T](iterable: js.Iterable[T | js.Thenable[T]]): js.Promise[T] = js.native
+    def implementation[T](iterable: js.Array[T | PromiseLike[T]]): js.Promise[T] = js.native
+    def implementation[T](iterable: js.Iterable[T | PromiseLike[T]]): js.Promise[T] = js.native
     @JSName("implementation")
     var implementation_Original: FnCall = js.native
     

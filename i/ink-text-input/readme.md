@@ -10,10 +10,10 @@ Text input component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-text-input |
 | Keywords           | ink, text, input, component, jsx, react, stdin, keypress, search, query |
-| # releases         | 12 |
-| # dependents       | 135 |
-| # downloads        | 1321987 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 397043.3333333333 |
+| # stars            | 118.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/ink-text-input#readme)

@@ -14,8 +14,7 @@ object avatarListMod {
   
   @JSImport("ant-design-pro/lib/AvatarList", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AvatarListProps, js.Any, js.Any]
+  open class default () extends Component[AvatarListProps, Any, Any]
   /* static members */
   object default {
     
@@ -29,7 +28,7 @@ object avatarListMod {
     inline def Item_=(x: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   }
   
-  type AvatarList = Component[AvatarListProps, js.Any, js.Any]
+  type AvatarList = Component[AvatarListProps, Any, Any]
   
   trait AvatarListProps extends StObject {
     
@@ -56,7 +55,7 @@ object avatarListMod {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setExcessItemsStyle(value: CSSProperties): Self = StObject.set(x, "excessItemsStyle", value.asInstanceOf[js.Any])
       

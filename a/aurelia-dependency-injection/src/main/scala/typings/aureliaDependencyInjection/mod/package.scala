@@ -64,7 +64,7 @@ inline def newInstance[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase
 /* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
-Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(List(asKeyOrTarget.asInstanceOf[js.Any]).`++`(dynamicDependencies.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function3[
+Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(scala.List(asKeyOrTarget.asInstanceOf[js.Any]).`++`(dynamicDependencies.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function3[
 /* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
@@ -76,7 +76,7 @@ inline def newInstance[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase
 /* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
-Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(List(asKeyOrTarget.asInstanceOf[js.Any]).`++`(dynamicDependencies.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function3[
+Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(scala.List(asKeyOrTarget.asInstanceOf[js.Any]).`++`(dynamicDependencies.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function3[
 /* target */ (DependencyCtor[TBase, TImpl, TArgs]) & (Inject[TArgs, TBase]), 
 /* _key */ Any, 
 /* index */ Double, 
@@ -113,7 +113,7 @@ inline def singleton[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] 
 inline def singleton[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
 inline def singleton[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], registerInChild: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(key.asInstanceOf[js.Any], registerInChild.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def singleton_TBaseTImpl_ImplTBaseTArgs_ArgsTBase[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("singleton")().asInstanceOf[Any]
+inline def singleton_TBaseTImplTArgs[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("singleton")().asInstanceOf[Any]
 
 inline def transient[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](): js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transient")().asInstanceOf[js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit]]
 inline def transient[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transient")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ DependencyCtor[TBase, TImpl, TArgs], Unit]]

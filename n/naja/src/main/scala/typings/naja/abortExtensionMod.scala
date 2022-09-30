@@ -14,18 +14,16 @@ object abortExtensionMod {
     extends StObject
        with Extension {
     
-    /* private */ var abortController: Any = js.native
-    
-    /* private */ var abortable: Any = js.native
+    /* private */ val abortControllers: Any = js.native
     
     /* private */ var checkAbortable: Any = js.native
-    
-    /* private */ var clearAbortController: Any = js.native
     
     /* CompleteClass */
     override def initialize(naja: Naja): Unit = js.native
     
     /* private */ var onInitialize: Any = js.native
+    
+    /* private */ var removeAbortController: Any = js.native
     
     /* private */ var saveAbortController: Any = js.native
   }

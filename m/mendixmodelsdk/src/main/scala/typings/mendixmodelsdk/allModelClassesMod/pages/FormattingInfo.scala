@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormattingInfo")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.FormattingInfo")
 @js.native
-class FormattingInfo protected ()
+open class FormattingInfo protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.FormattingInfo {
   def this(
     model: AbstractModel,
@@ -28,7 +28,7 @@ class FormattingInfo protected ()
 }
 object FormattingInfo {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormattingInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.FormattingInfo")
   @js.native
   val ^ : js.Any = js.native
   
@@ -100,13 +100,13 @@ object FormattingInfo {
   inline def createInTextBoxUnderFormattingInfo(container: typings.mendixmodelsdk.pagesMod.pages.TextBox): typings.mendixmodelsdk.pagesMod.pages.FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.FormattingInfo]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormattingInfo.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.FormattingInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormattingInfo.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.FormattingInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

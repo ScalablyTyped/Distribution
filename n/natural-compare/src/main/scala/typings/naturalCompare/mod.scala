@@ -1,8 +1,8 @@
 package typings.naturalCompare
 
-import typings.naturalCompare.naturalCompareNumbers.`-1`
-import typings.naturalCompare.naturalCompareNumbers.`0`
-import typings.naturalCompare.naturalCompareNumbers.`1`
+import typings.naturalCompare.naturalCompareInts.`-1`
+import typings.naturalCompare.naturalCompareInts.`0`
+import typings.naturalCompare.naturalCompareInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

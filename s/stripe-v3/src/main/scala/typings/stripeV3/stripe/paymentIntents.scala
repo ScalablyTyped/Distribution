@@ -202,7 +202,7 @@ object paymentIntents {
     /**
       * A list of refunds that have been applied to the charge.
       */
-    var refunds: List[Refund]
+    var refunds: typings.stripeV3.stripe.List[Refund]
     
     /**
       * ID of the review associated with this charge if one exists.
@@ -268,7 +268,7 @@ object paymentIntents {
       payment_method_details: PaymentMethodDetails,
       receipt_url: String,
       refunded: Boolean,
-      refunds: List[Refund],
+      refunds: typings.stripeV3.stripe.List[Refund],
       status: succeeded | pending | failed
     ): Charge = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_refunded = amount_refunded.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], billing_details = billing_details.asInstanceOf[js.Any], captured = captured.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fraud_details = fraud_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], paid = paid.asInstanceOf[js.Any], payment_intent = payment_intent.asInstanceOf[js.Any], payment_method_details = payment_method_details.asInstanceOf[js.Any], receipt_url = receipt_url.asInstanceOf[js.Any], refunded = refunded.asInstanceOf[js.Any], refunds = refunds.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], application = null, application_fee = null, application_fee_amount = null, customer = null, description = null, dispute = null, failure_code = null, failure_message = null, invoice = null, on_behalf_of = null, order = null, outcome = null, payment_method = null, receipt_email = null, receipt_number = null, source_transfer = null, statement_descriptor = null)
@@ -372,7 +372,7 @@ object paymentIntents {
       
       inline def setRefunded(value: Boolean): Self = StObject.set(x, "refunded", value.asInstanceOf[js.Any])
       
-      inline def setRefunds(value: List[Refund]): Self = StObject.set(x, "refunds", value.asInstanceOf[js.Any])
+      inline def setRefunds(value: typings.stripeV3.stripe.List[Refund]): Self = StObject.set(x, "refunds", value.asInstanceOf[js.Any])
       
       inline def setReview(value: String): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
       
@@ -460,7 +460,7 @@ object paymentIntents {
     /**
       * Charges that were created by this PaymentIntent, if any.
       */
-    var charges: List[Charge]
+    var charges: typings.stripeV3.stripe.List[Charge]
     
     /**
       * The client secret of this PaymentIntent. Used for client-side retrieval using a publishable key. Please refer to dynamic authentication guide on how client_secret should be handled.
@@ -587,7 +587,7 @@ object paymentIntents {
       amount_capturable: Double,
       amount_received: Double,
       capture_method: automatic | manual,
-      charges: List[Charge],
+      charges: typings.stripeV3.stripe.List[Charge],
       client_secret: String,
       confirmation_method: automatic | manual,
       created: Double,
@@ -630,7 +630,7 @@ object paymentIntents {
       
       inline def setCapture_method(value: automatic | manual): Self = StObject.set(x, "capture_method", value.asInstanceOf[js.Any])
       
-      inline def setCharges(value: List[Charge]): Self = StObject.set(x, "charges", value.asInstanceOf[js.Any])
+      inline def setCharges(value: typings.stripeV3.stripe.List[Charge]): Self = StObject.set(x, "charges", value.asInstanceOf[js.Any])
       
       inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       

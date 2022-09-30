@@ -10,7 +10,7 @@ trait TileLayerOptions
   
   var accessToken: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
+  var crossOrigin: js.UndefOr[CrossOrigin | Boolean] = js.undefined
   
   var detectRetina: js.UndefOr[Boolean] = js.undefined
   
@@ -18,9 +18,7 @@ trait TileLayerOptions
   
   var id: js.UndefOr[String] = js.undefined
   
-  var maxNativeZoom: js.UndefOr[Double] = js.undefined
-  
-  var minNativeZoom: js.UndefOr[Double] = js.undefined
+  var referrerPolicy: js.UndefOr[ReferrerPolicy | Boolean] = js.undefined
   
   var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -43,7 +41,7 @@ object TileLayerOptions {
     
     inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    inline def setCrossOrigin(value: CrossOrigin): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: CrossOrigin | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -59,19 +57,15 @@ object TileLayerOptions {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setMaxNativeZoom(value: Double): Self = StObject.set(x, "maxNativeZoom", value.asInstanceOf[js.Any])
+    inline def setReferrerPolicy(value: ReferrerPolicy | Boolean): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
-    inline def setMaxNativeZoomUndefined: Self = StObject.set(x, "maxNativeZoom", js.undefined)
-    
-    inline def setMinNativeZoom(value: Double): Self = StObject.set(x, "minNativeZoom", value.asInstanceOf[js.Any])
-    
-    inline def setMinNativeZoomUndefined: Self = StObject.set(x, "minNativeZoom", js.undefined)
+    inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
     
     inline def setSubdomains(value: String | js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     
-    inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
+    inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value*))
     
     inline def setTms(value: Boolean): Self = StObject.set(x, "tms", value.asInstanceOf[js.Any])
     

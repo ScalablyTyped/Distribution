@@ -1,17 +1,23 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
+import typings.reactCssThemr.mod.ThemeProvider
 import typings.reactCssThemr.mod.ThemeProviderProps
+import typings.reactToolbox.anon.ReadonlyThemeProviderProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/ThemeProvider", JSImport.Namespace)
-@js.native
-object themeProviderMod extends js.Object {
-  @js.native
-  class default ()
-    extends Component[ThemeProviderProps, js.Any, js.Any]
+object themeProviderMod {
   
+  @JSImport("react-toolbox/components/ThemeProvider", JSImport.Default)
+  @js.native
+  open class default protected () extends ThemeProvider {
+    def this(props: ThemeProviderProps) = this()
+    def this(props: ReadonlyThemeProviderProp) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ThemeProviderProps, context: Any) = this()
+  }
 }
-

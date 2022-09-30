@@ -1,7 +1,6 @@
 package typings.reduxPersistTransformEncrypt
 
 import typings.reduxPersist.typesMod.Transform
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State, Raw](config: EncryptorConfig): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](config: EncryptorConfig): Transform[State, Raw, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, Any, Any]]
   
   trait EncryptorConfig extends StObject {
     
-    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     var secretKey: String
   }
@@ -29,7 +28,7 @@ object mod {
     
     extension [Self <: EncryptorConfig](x: Self) {
       
-      inline def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

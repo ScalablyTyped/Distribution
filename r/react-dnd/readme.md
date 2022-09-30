@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd
 
-Typings are for version 11.1.3
+Typings are for version 16.0.1
 
 ## Library description:
 Drag and Drop for React
@@ -10,10 +10,10 @@ Drag and Drop for React
 | ------------------ | :-------------: |
 | Full name          | react-dnd |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 1114 |
-| # downloads        | 33965174 |
-| # stars            | 30 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 5654034.666666667 |
+| # stars            | 17806.0 |
 
 ## Links
 - [Homepage](https://github.com/react-dnd/react-dnd#readme)

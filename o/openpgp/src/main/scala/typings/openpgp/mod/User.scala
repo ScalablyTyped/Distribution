@@ -3,7 +3,6 @@ package typings.openpgp.mod
 import typings.openpgp.anon.Keyid
 import typings.openpgp.mod.enums.keyStatus
 import typings.openpgp.mod.key.Key
-import typings.openpgp.mod.packet.List
 import typings.openpgp.mod.packet.PublicKey
 import typings.openpgp.mod.packet.PublicSubkey
 import typings.openpgp.mod.packet.SecretKey
@@ -47,7 +46,7 @@ open class User () extends StObject {
     * Transforms structured user data to packetlist
     * @returns
     */
-  def toPacketlist(): List = js.native
+  def toPacketlist(): typings.openpgp.mod.packet.List = js.native
   
   /**
     * Update user with new components from specified user

@@ -10,8 +10,7 @@ trait BoundingInfo
      with ICullable {
   
   /**
-    * @param collider
-    * @hidden
+    * @internal
     */
   def _checkCollision(collider: Collider): Boolean = js.native
   

@@ -3,7 +3,6 @@ package typings.antDesignPro
 import typings.antDesignPro.anon.Key
 import typings.antDesignPro.anon.Title
 import typings.history.mod.Location
-import typings.history.mod.LocationState
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
@@ -15,10 +14,9 @@ object pageHeaderMod {
   
   @JSImport("ant-design-pro/lib/PageHeader", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PageHeaderProps, js.Any, js.Any]
+  open class default () extends Component[PageHeaderProps, Any, Any]
   
-  type PageHeader = Component[PageHeaderProps, js.Any, js.Any]
+  type PageHeader = Component[PageHeaderProps, Any, Any]
   
   trait PageHeaderProps extends StObject {
     
@@ -26,7 +24,7 @@ object pageHeaderMod {
     
     var breadcrumbList: js.UndefOr[js.Array[Title]] = js.undefined
     
-    var breadcrumbNameMap: js.UndefOr[js.Any] = js.undefined
+    var breadcrumbNameMap: js.UndefOr[Any] = js.undefined
     
     var breadcrumbSeparator: js.UndefOr[ReactNode] = js.undefined
     
@@ -40,21 +38,21 @@ object pageHeaderMod {
     
     var home: js.UndefOr[ReactNode] = js.undefined
     
-    def itemRender(menuItem: js.Any): ReactNode
+    def itemRender(menuItem: Any): ReactNode
     
     var linkElement: js.UndefOr[ReactNode | String] = js.undefined
     
     var loading: js.UndefOr[Boolean] = js.undefined
     
-    var location: js.UndefOr[Location[LocationState]] = js.undefined
+    var location: js.UndefOr[Location] = js.undefined
     
     var logo: js.UndefOr[ReactNode | String] = js.undefined
     
     var onTabChange: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
-    var routes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var routes: js.UndefOr[js.Array[Any]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -72,7 +70,7 @@ object pageHeaderMod {
   }
   object PageHeaderProps {
     
-    inline def apply(itemRender: js.Any => ReactNode): PageHeaderProps = {
+    inline def apply(itemRender: Any => ReactNode): PageHeaderProps = {
       val __obj = js.Dynamic.literal(itemRender = js.Any.fromFunction1(itemRender))
       __obj.asInstanceOf[PageHeaderProps]
     }
@@ -87,9 +85,9 @@ object pageHeaderMod {
       
       inline def setBreadcrumbListUndefined: Self = StObject.set(x, "breadcrumbList", js.undefined)
       
-      inline def setBreadcrumbListVarargs(value: Title*): Self = StObject.set(x, "breadcrumbList", js.Array(value :_*))
+      inline def setBreadcrumbListVarargs(value: Title*): Self = StObject.set(x, "breadcrumbList", js.Array(value*))
       
-      inline def setBreadcrumbNameMap(value: js.Any): Self = StObject.set(x, "breadcrumbNameMap", value.asInstanceOf[js.Any])
+      inline def setBreadcrumbNameMap(value: Any): Self = StObject.set(x, "breadcrumbNameMap", value.asInstanceOf[js.Any])
       
       inline def setBreadcrumbNameMapUndefined: Self = StObject.set(x, "breadcrumbNameMap", js.undefined)
       
@@ -117,7 +115,7 @@ object pageHeaderMod {
       
       inline def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
       
-      inline def setItemRender(value: js.Any => ReactNode): Self = StObject.set(x, "itemRender", js.Any.fromFunction1(value))
+      inline def setItemRender(value: Any => ReactNode): Self = StObject.set(x, "itemRender", js.Any.fromFunction1(value))
       
       inline def setLinkElement(value: ReactNode | String): Self = StObject.set(x, "linkElement", value.asInstanceOf[js.Any])
       
@@ -127,7 +125,7 @@ object pageHeaderMod {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
@@ -139,15 +137,15 @@ object pageHeaderMod {
       
       inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setRoutes(value: js.Array[js.Any]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[Any]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      inline def setRoutesVarargs(value: js.Any*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Any*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -169,7 +167,7 @@ object pageHeaderMod {
       
       inline def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
       
-      inline def setTabListVarargs(value: Key*): Self = StObject.set(x, "tabList", js.Array(value :_*))
+      inline def setTabListVarargs(value: Key*): Self = StObject.set(x, "tabList", js.Array(value*))
       
       inline def setTitle(value: ReactNode | String | Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

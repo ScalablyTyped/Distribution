@@ -69,14 +69,14 @@ object cryptoEngineMod {
   type Argon2Type = /* 0 */ Double
   
   /* Rewritten from type alias, can be one of: 
-    - typings.kdbxweb.kdbxwebNumbers.`0x10`
-    - typings.kdbxweb.kdbxwebNumbers.`0x13`
+    - typings.kdbxweb.kdbxwebInts.`0x10`
+    - typings.kdbxweb.kdbxwebInts.`0x13`
   */
   trait Argon2Version extends StObject
   object Argon2Version {
     
-    inline def `0x10`: typings.kdbxweb.kdbxwebNumbers.`0x10` = 0x10.asInstanceOf[typings.kdbxweb.kdbxwebNumbers.`0x10`]
+    inline def `0x10`: typings.kdbxweb.kdbxwebInts.`0x10` = 0x10.asInstanceOf[typings.kdbxweb.kdbxwebInts.`0x10`]
     
-    inline def `0x13`: typings.kdbxweb.kdbxwebNumbers.`0x13` = 0x13.asInstanceOf[typings.kdbxweb.kdbxwebNumbers.`0x13`]
+    inline def `0x13`: typings.kdbxweb.kdbxwebInts.`0x13` = 0x13.asInstanceOf[typings.kdbxweb.kdbxwebInts.`0x13`]
   }
 }

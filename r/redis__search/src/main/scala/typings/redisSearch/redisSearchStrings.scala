@@ -19,10 +19,6 @@ object redisSearchStrings {
   inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
-  sealed trait `DollarLeftcurlybracketApostrophe@Apostrophe Verticalline ApostropheDollarDotApostropheRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket` extends StObject
-  inline def `DollarLeftcurlybracketApostrophe@Apostrophe Verticalline ApostropheDollarDotApostropheRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket`: `DollarLeftcurlybracketApostrophe@Apostrophe Verticalline ApostropheDollarDotApostropheRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket` = ("${'@' | '$.'}${string}").asInstanceOf[`DollarLeftcurlybracketApostrophe@Apostrophe Verticalline ApostropheDollarDotApostropheRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket`]
-  
-  @js.native
   sealed trait EXCLUDE extends StObject
   inline def EXCLUDE: EXCLUDE = "EXCLUDE".asInstanceOf[EXCLUDE]
   

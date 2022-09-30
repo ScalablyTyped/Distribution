@@ -7,6 +7,7 @@ import typings.angularDevkitSchematics.actionMod.OverwriteFileAction
 import typings.angularDevkitSchematics.actionMod.RenameFileAction
 import typings.angularDevkitSchematics.treeInterfaceMod.Tree
 import typings.node.bufferMod.global.Buffer
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +55,7 @@ object sinkMod {
     
     def preCommit(): Unit | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<void> */ Any) = js.native
     
-    def preCommitAction(action: Action): Unit | Action | js.Thenable[Action] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Action> */ Any) = js.native
+    def preCommitAction(action: Action): Unit | Action | PromiseLike[Action] | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Action> */ Any) = js.native
     
     def validateSingleAction(action: Action): Any = js.native
   }

@@ -3,38 +3,38 @@ package typings.nbind
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.nbind.anon.GetComplexType
-import typings.nbind.nbindNumbers.`0`
-import typings.nbind.nbindNumbers.`10240`
-import typings.nbind.nbindNumbers.`1024`
-import typings.nbind.nbindNumbers.`10`
-import typings.nbind.nbindNumbers.`120`
-import typings.nbind.nbindNumbers.`128`
-import typings.nbind.nbindNumbers.`15360`
-import typings.nbind.nbindNumbers.`16`
-import typings.nbind.nbindNumbers.`1`
-import typings.nbind.nbindNumbers.`2048`
-import typings.nbind.nbindNumbers.`256`
-import typings.nbind.nbindNumbers.`2`
-import typings.nbind.nbindNumbers.`3072`
-import typings.nbind.nbindNumbers.`32`
-import typings.nbind.nbindNumbers.`384`
-import typings.nbind.nbindNumbers.`3`
-import typings.nbind.nbindNumbers.`4096`
-import typings.nbind.nbindNumbers.`4`
-import typings.nbind.nbindNumbers.`5120`
-import typings.nbind.nbindNumbers.`512`
-import typings.nbind.nbindNumbers.`5`
-import typings.nbind.nbindNumbers.`6144`
-import typings.nbind.nbindNumbers.`640`
-import typings.nbind.nbindNumbers.`64`
-import typings.nbind.nbindNumbers.`6`
-import typings.nbind.nbindNumbers.`7168`
-import typings.nbind.nbindNumbers.`7`
-import typings.nbind.nbindNumbers.`8192`
-import typings.nbind.nbindNumbers.`896`
-import typings.nbind.nbindNumbers.`8`
-import typings.nbind.nbindNumbers.`9216`
-import typings.nbind.nbindNumbers.`9`
+import typings.nbind.nbindInts.`0`
+import typings.nbind.nbindInts.`10240`
+import typings.nbind.nbindInts.`1024`
+import typings.nbind.nbindInts.`10`
+import typings.nbind.nbindInts.`120`
+import typings.nbind.nbindInts.`128`
+import typings.nbind.nbindInts.`15360`
+import typings.nbind.nbindInts.`16`
+import typings.nbind.nbindInts.`1`
+import typings.nbind.nbindInts.`2048`
+import typings.nbind.nbindInts.`256`
+import typings.nbind.nbindInts.`2`
+import typings.nbind.nbindInts.`3072`
+import typings.nbind.nbindInts.`32`
+import typings.nbind.nbindInts.`384`
+import typings.nbind.nbindInts.`3`
+import typings.nbind.nbindInts.`4096`
+import typings.nbind.nbindInts.`4`
+import typings.nbind.nbindInts.`5120`
+import typings.nbind.nbindInts.`512`
+import typings.nbind.nbindInts.`5`
+import typings.nbind.nbindInts.`6144`
+import typings.nbind.nbindInts.`640`
+import typings.nbind.nbindInts.`64`
+import typings.nbind.nbindInts.`6`
+import typings.nbind.nbindInts.`7168`
+import typings.nbind.nbindInts.`7`
+import typings.nbind.nbindInts.`8192`
+import typings.nbind.nbindInts.`896`
+import typings.nbind.nbindInts.`8`
+import typings.nbind.nbindInts.`9216`
+import typings.nbind.nbindInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,9 +75,9 @@ object typeMod {
   type PolicyTbl = StringDictionary[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nbind.nbindNumbers.`0`
-    - typings.nbind.nbindNumbers.`1`
-    - typings.nbind.nbindNumbers.`2`
+    - typings.nbind.nbindInts.`0`
+    - typings.nbind.nbindInts.`1`
+    - typings.nbind.nbindInts.`2`
   */
   trait StateFlags extends StObject
   object StateFlags {
@@ -90,17 +90,17 @@ object typeMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nbind.nbindNumbers.`0`
-    - typings.nbind.nbindNumbers.`1`
-    - typings.nbind.nbindNumbers.`2`
-    - typings.nbind.nbindNumbers.`3`
-    - typings.nbind.nbindNumbers.`4`
-    - typings.nbind.nbindNumbers.`5`
-    - typings.nbind.nbindNumbers.`6`
-    - typings.nbind.nbindNumbers.`7`
-    - typings.nbind.nbindNumbers.`8`
-    - typings.nbind.nbindNumbers.`9`
-    - typings.nbind.nbindNumbers.`10`
+    - typings.nbind.nbindInts.`0`
+    - typings.nbind.nbindInts.`1`
+    - typings.nbind.nbindInts.`2`
+    - typings.nbind.nbindInts.`3`
+    - typings.nbind.nbindInts.`4`
+    - typings.nbind.nbindInts.`5`
+    - typings.nbind.nbindInts.`6`
+    - typings.nbind.nbindInts.`7`
+    - typings.nbind.nbindInts.`8`
+    - typings.nbind.nbindInts.`9`
+    - typings.nbind.nbindInts.`10`
   */
   trait StructureType extends StObject
   object StructureType {
@@ -203,10 +203,10 @@ object typeMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nbind.nbindNumbers.`1`
-    - typings.nbind.nbindNumbers.`8`
-    - typings.nbind.nbindNumbers.`128`
-    - typings.nbind.nbindNumbers.`1024`
+    - typings.nbind.nbindInts.`1`
+    - typings.nbind.nbindInts.`8`
+    - typings.nbind.nbindInts.`128`
+    - typings.nbind.nbindInts.`1024`
   */
   trait TypeFlagBase extends StObject
   object TypeFlagBase {
@@ -221,33 +221,33 @@ object typeMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nbind.nbindNumbers.`0`
-    - typings.nbind.nbindNumbers.`3`
-    - typings.nbind.nbindNumbers.`1`
-    - typings.nbind.nbindNumbers.`2`
-    - typings.nbind.nbindNumbers.`4`
-    - typings.nbind.nbindNumbers.`120`
-    - typings.nbind.nbindNumbers.`8`
-    - typings.nbind.nbindNumbers.`16`
-    - typings.nbind.nbindNumbers.`32`
-    - typings.nbind.nbindNumbers.`64`
-    - typings.nbind.nbindNumbers.`896`
-    - typings.nbind.nbindNumbers.`128`
-    - typings.nbind.nbindNumbers.`256`
-    - typings.nbind.nbindNumbers.`384`
-    - typings.nbind.nbindNumbers.`512`
-    - typings.nbind.nbindNumbers.`640`
-    - typings.nbind.nbindNumbers.`15360`
-    - typings.nbind.nbindNumbers.`1024`
-    - typings.nbind.nbindNumbers.`2048`
-    - typings.nbind.nbindNumbers.`3072`
-    - typings.nbind.nbindNumbers.`4096`
-    - typings.nbind.nbindNumbers.`5120`
-    - typings.nbind.nbindNumbers.`6144`
-    - typings.nbind.nbindNumbers.`7168`
-    - typings.nbind.nbindNumbers.`8192`
-    - typings.nbind.nbindNumbers.`9216`
-    - typings.nbind.nbindNumbers.`10240`
+    - typings.nbind.nbindInts.`0`
+    - typings.nbind.nbindInts.`3`
+    - typings.nbind.nbindInts.`1`
+    - typings.nbind.nbindInts.`2`
+    - typings.nbind.nbindInts.`4`
+    - typings.nbind.nbindInts.`120`
+    - typings.nbind.nbindInts.`8`
+    - typings.nbind.nbindInts.`16`
+    - typings.nbind.nbindInts.`32`
+    - typings.nbind.nbindInts.`64`
+    - typings.nbind.nbindInts.`896`
+    - typings.nbind.nbindInts.`128`
+    - typings.nbind.nbindInts.`256`
+    - typings.nbind.nbindInts.`384`
+    - typings.nbind.nbindInts.`512`
+    - typings.nbind.nbindInts.`640`
+    - typings.nbind.nbindInts.`15360`
+    - typings.nbind.nbindInts.`1024`
+    - typings.nbind.nbindInts.`2048`
+    - typings.nbind.nbindInts.`3072`
+    - typings.nbind.nbindInts.`4096`
+    - typings.nbind.nbindInts.`5120`
+    - typings.nbind.nbindInts.`6144`
+    - typings.nbind.nbindInts.`7168`
+    - typings.nbind.nbindInts.`8192`
+    - typings.nbind.nbindInts.`9216`
+    - typings.nbind.nbindInts.`10240`
   */
   trait TypeFlags extends StObject
   object TypeFlags {

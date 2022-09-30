@@ -106,13 +106,13 @@ trait Component
   def addChild[T /* <: Component */](child: T, options: Any, index: Double): T = js.native
   def addChild[T /* <: Component */](child: T, options: Unit, index: Double): T = js.native
   @JSName("addChild")
-  def addChild_T_Component_T[T /* <: Component */](child: String): T = js.native
+  def addChild_T_T[T /* <: Component */](child: String): T = js.native
   @JSName("addChild")
-  def addChild_T_Component_T[T /* <: Component */](child: String, options: Any): T = js.native
+  def addChild_T_T[T /* <: Component */](child: String, options: Any): T = js.native
   @JSName("addChild")
-  def addChild_T_Component_T[T /* <: Component */](child: String, options: Any, index: Double): T = js.native
+  def addChild_T_T[T /* <: Component */](child: String, options: Any, index: Double): T = js.native
   @JSName("addChild")
-  def addChild_T_Component_T[T /* <: Component */](child: String, options: Unit, index: Double): T = js.native
+  def addChild_T_T[T /* <: Component */](child: String, options: Unit, index: Double): T = js.native
   
   /**
     * Add a CSS class name to the `Component`s element.

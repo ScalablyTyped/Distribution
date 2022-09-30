@@ -9,12 +9,12 @@ object storybookStaticsServerMod {
   
   @JSImport("wix-ui-test-utils/dist/src/servers/StorybookStaticsServer", "StorybookStaticsServer")
   @js.native
-  class StorybookStaticsServer () extends StObject {
+  open class StorybookStaticsServer () extends StObject {
     
-    /* private */ var server: js.Any = js.native
+    /* private */ var server: Any = js.native
     
-    def start(hasPort: Port): js.Promise[js.Object] = js.native
+    def start(hasPort: Port): js.Promise[Any] = js.native
     
-    def stop(): js.Promise[js.Object] = js.native
+    def stop(): js.Promise[Any] = js.native
   }
 }

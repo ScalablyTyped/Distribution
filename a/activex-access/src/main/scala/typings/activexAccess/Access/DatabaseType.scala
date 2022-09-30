@@ -4,28 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.activexAccess.activexAccessStrings.`Microsoft Access LeftparenthesisdefaultRightparenthesis`
-  - typings.activexAccess.activexAccessStrings.`Jet 2Dotx`
-  - typings.activexAccess.activexAccessStrings.`Jet 3Dotx`
-  - typings.activexAccess.activexAccessStrings.`dBase III`
-  - typings.activexAccess.activexAccessStrings.`dBase IV`
-  - typings.activexAccess.activexAccessStrings.`dBase 5Dot0`
-  - typings.activexAccess.activexAccessStrings.`Paradox 3Dotx`
-  - typings.activexAccess.activexAccessStrings.`Paradox 4Dotx`
-  - typings.activexAccess.activexAccessStrings.`Paradox 5Dotx`
-  - typings.activexAccess.activexAccessStrings.`Paradox 7Dotx`
-  - typings.activexAccess.activexAccessStrings.`ODBC Database`
-  - typings.activexAccess.activexAccessStrings.WSS
-*/
-trait DatabaseType extends StObject
 object DatabaseType {
   
   inline def `Jet 2Dotx`: typings.activexAccess.activexAccessStrings.`Jet 2Dotx` = ("Jet 2.x").asInstanceOf[typings.activexAccess.activexAccessStrings.`Jet 2Dotx`]
   
   inline def `Jet 3Dotx`: typings.activexAccess.activexAccessStrings.`Jet 3Dotx` = ("Jet 3.x").asInstanceOf[typings.activexAccess.activexAccessStrings.`Jet 3Dotx`]
   
-  inline def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: typings.activexAccess.activexAccessStrings.`Microsoft Access LeftparenthesisdefaultRightparenthesis` = ("Microsoft Access (default)").asInstanceOf[typings.activexAccess.activexAccessStrings.`Microsoft Access LeftparenthesisdefaultRightparenthesis`]
+  inline def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: String = String.asInstanceOf[String]
   
   inline def `ODBC Database`: typings.activexAccess.activexAccessStrings.`ODBC Database` = ("ODBC Database").asInstanceOf[typings.activexAccess.activexAccessStrings.`ODBC Database`]
   

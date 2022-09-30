@@ -421,7 +421,7 @@ object observerMod {
       options: UseCapture
     ): Unit = js.native
     @JSName("listenTo")
-    def listenTo_P_StringE_Any[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
+    def listenTo_PE[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
       emitter: E,
       event: P,
       callback: js.ThisFunction2[
@@ -432,7 +432,7 @@ object observerMod {
         ]
     ): Unit = js.native
     @JSName("listenTo")
-    def listenTo_P_StringE_Any[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
+    def listenTo_PE[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
       emitter: E,
       event: P,
       callback: js.ThisFunction2[
@@ -5758,11 +5758,11 @@ object observerMod {
         ]
     ): Unit = js.native
     @JSName("stopListening")
-    def stopListening_P_StringE_Any[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](): Unit = js.native
+    def stopListening_PE[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](): Unit = js.native
     @JSName("stopListening")
-    def stopListening_P_StringE_Any[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](emitter: E): Unit = js.native
+    def stopListening_PE[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](emitter: E): Unit = js.native
     @JSName("stopListening")
-    def stopListening_P_StringE_Any[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
+    def stopListening_PE[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
       emitter: E,
       event: Unit,
       callback: js.ThisFunction2[
@@ -5773,7 +5773,7 @@ object observerMod {
         ]
     ): Unit = js.native
     @JSName("stopListening")
-    def stopListening_P_StringE_Any[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
+    def stopListening_PE[P /* <: String */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any */](
       emitter: Unit,
       event: Unit,
       callback: js.ThisFunction2[

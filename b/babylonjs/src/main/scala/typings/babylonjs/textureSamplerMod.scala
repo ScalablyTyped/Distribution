@@ -14,19 +14,19 @@ object textureSamplerMod {
     */
   open class TextureSampler () extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var _cachedAnisotropicFilteringLevel: Nullable[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedWrapR: Nullable[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedWrapU: Nullable[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedWrapV: Nullable[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _comparisonFunction: Double = js.native
     
     /* private */ var _useMipMaps: Any = js.native

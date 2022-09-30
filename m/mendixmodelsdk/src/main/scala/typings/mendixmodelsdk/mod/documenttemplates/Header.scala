@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.Header")
 @js.native
-class Header protected ()
+open class Header protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.Header {
   def this(
     model: AbstractModel,

@@ -1,8 +1,8 @@
 package typings.rangeCheck
 
-import typings.rangeCheck.rangeCheckNumbers.`0`
-import typings.rangeCheck.rangeCheckNumbers.`4`
-import typings.rangeCheck.rangeCheckNumbers.`6`
+import typings.rangeCheck.rangeCheckInts.`0`
+import typings.rangeCheck.rangeCheckInts.`4`
+import typings.rangeCheck.rangeCheckInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

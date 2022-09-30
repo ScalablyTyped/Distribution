@@ -51,6 +51,8 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   
   def getInputId(): String = js.native
   
+  var inputHasValue: Boolean = js.native
+  
   /*
     * The name of a component used to render drop-down menu items.
     */
@@ -81,7 +83,7 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   
   def popupModel: Any = js.native
   
-  def readOnlyText: String = js.native
+  var readOnlyText: String = js.native
   
   /*
     * Specifies whether users can enter a value into the input field to filter the drop-down list.
@@ -90,6 +92,10 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   
   def selectedItem: ItemValue = js.native
   
+  def selectedItemLocText: LocalizableString = js.native
+  
   def showOptionsCaption: Boolean = js.native
   def showOptionsCaption_=(`val`: Boolean): Unit = js.native
+  
+  def updateReadOnlyText(): Unit = js.native
 }

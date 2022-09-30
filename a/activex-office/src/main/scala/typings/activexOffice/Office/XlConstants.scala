@@ -1,82 +1,82 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-1`
-import typings.activexOffice.activexOfficeNumbers.`-4099`
-import typings.activexOffice.activexOfficeNumbers.`-4103`
-import typings.activexOffice.activexOfficeNumbers.`-4105`
-import typings.activexOffice.activexOfficeNumbers.`-4107`
-import typings.activexOffice.activexOfficeNumbers.`-4108`
-import typings.activexOffice.activexOfficeNumbers.`-4111`
-import typings.activexOffice.activexOfficeNumbers.`-4114`
-import typings.activexOffice.activexOfficeNumbers.`-4117`
-import typings.activexOffice.activexOfficeNumbers.`-4124`
-import typings.activexOffice.activexOfficeNumbers.`-4125`
-import typings.activexOffice.activexOfficeNumbers.`-4126`
-import typings.activexOffice.activexOfficeNumbers.`-4127`
-import typings.activexOffice.activexOfficeNumbers.`-4130`
-import typings.activexOffice.activexOfficeNumbers.`-4131`
-import typings.activexOffice.activexOfficeNumbers.`-4134`
-import typings.activexOffice.activexOfficeNumbers.`-4142`
-import typings.activexOffice.activexOfficeNumbers.`-4152`
-import typings.activexOffice.activexOfficeNumbers.`-4160`
-import typings.activexOffice.activexOfficeNumbers.`0`
-import typings.activexOffice.activexOfficeNumbers.`10`
-import typings.activexOffice.activexOfficeNumbers.`11`
-import typings.activexOffice.activexOfficeNumbers.`12`
-import typings.activexOffice.activexOfficeNumbers.`13`
-import typings.activexOffice.activexOfficeNumbers.`14`
-import typings.activexOffice.activexOfficeNumbers.`15`
-import typings.activexOffice.activexOfficeNumbers.`16`
-import typings.activexOffice.activexOfficeNumbers.`17`
-import typings.activexOffice.activexOfficeNumbers.`18`
-import typings.activexOffice.activexOfficeNumbers.`1`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`3`
-import typings.activexOffice.activexOfficeNumbers.`4`
-import typings.activexOffice.activexOfficeNumbers.`5`
-import typings.activexOffice.activexOfficeNumbers.`8`
-import typings.activexOffice.activexOfficeNumbers.`9`
+import typings.activexOffice.activexOfficeInts.`-1`
+import typings.activexOffice.activexOfficeInts.`-4099`
+import typings.activexOffice.activexOfficeInts.`-4103`
+import typings.activexOffice.activexOfficeInts.`-4105`
+import typings.activexOffice.activexOfficeInts.`-4107`
+import typings.activexOffice.activexOfficeInts.`-4108`
+import typings.activexOffice.activexOfficeInts.`-4111`
+import typings.activexOffice.activexOfficeInts.`-4114`
+import typings.activexOffice.activexOfficeInts.`-4117`
+import typings.activexOffice.activexOfficeInts.`-4124`
+import typings.activexOffice.activexOfficeInts.`-4125`
+import typings.activexOffice.activexOfficeInts.`-4126`
+import typings.activexOffice.activexOfficeInts.`-4127`
+import typings.activexOffice.activexOfficeInts.`-4130`
+import typings.activexOffice.activexOfficeInts.`-4131`
+import typings.activexOffice.activexOfficeInts.`-4134`
+import typings.activexOffice.activexOfficeInts.`-4142`
+import typings.activexOffice.activexOfficeInts.`-4152`
+import typings.activexOffice.activexOfficeInts.`-4160`
+import typings.activexOffice.activexOfficeInts.`0`
+import typings.activexOffice.activexOfficeInts.`10`
+import typings.activexOffice.activexOfficeInts.`11`
+import typings.activexOffice.activexOfficeInts.`12`
+import typings.activexOffice.activexOfficeInts.`13`
+import typings.activexOffice.activexOfficeInts.`14`
+import typings.activexOffice.activexOfficeInts.`15`
+import typings.activexOffice.activexOfficeInts.`16`
+import typings.activexOffice.activexOfficeInts.`17`
+import typings.activexOffice.activexOfficeInts.`18`
+import typings.activexOffice.activexOfficeInts.`1`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`3`
+import typings.activexOffice.activexOfficeInts.`4`
+import typings.activexOffice.activexOfficeInts.`5`
+import typings.activexOffice.activexOfficeInts.`8`
+import typings.activexOffice.activexOfficeInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-4099`
-  - typings.activexOffice.activexOfficeNumbers.`-4103`
-  - typings.activexOffice.activexOfficeNumbers.`0`
-  - typings.activexOffice.activexOfficeNumbers.`-4105`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`1`
-  - typings.activexOffice.activexOfficeNumbers.`-4107`
-  - typings.activexOffice.activexOfficeNumbers.`-4108`
-  - typings.activexOffice.activexOfficeNumbers.`9`
-  - typings.activexOffice.activexOfficeNumbers.`8`
-  - typings.activexOffice.activexOfficeNumbers.`3`
-  - typings.activexOffice.activexOfficeNumbers.`-4111`
-  - typings.activexOffice.activexOfficeNumbers.`16`
-  - typings.activexOffice.activexOfficeNumbers.`4`
-  - typings.activexOffice.activexOfficeNumbers.`-4114`
-  - typings.activexOffice.activexOfficeNumbers.`-1`
-  - typings.activexOffice.activexOfficeNumbers.`-4117`
-  - typings.activexOffice.activexOfficeNumbers.`5`
-  - typings.activexOffice.activexOfficeNumbers.`17`
-  - typings.activexOffice.activexOfficeNumbers.`-4124`
-  - typings.activexOffice.activexOfficeNumbers.`-4125`
-  - typings.activexOffice.activexOfficeNumbers.`-4126`
-  - typings.activexOffice.activexOfficeNumbers.`18`
-  - typings.activexOffice.activexOfficeNumbers.`15`
-  - typings.activexOffice.activexOfficeNumbers.`-4127`
-  - typings.activexOffice.activexOfficeNumbers.`-4130`
-  - typings.activexOffice.activexOfficeNumbers.`-4131`
-  - typings.activexOffice.activexOfficeNumbers.`13`
-  - typings.activexOffice.activexOfficeNumbers.`11`
-  - typings.activexOffice.activexOfficeNumbers.`14`
-  - typings.activexOffice.activexOfficeNumbers.`12`
-  - typings.activexOffice.activexOfficeNumbers.`-4134`
-  - typings.activexOffice.activexOfficeNumbers.`-4142`
-  - typings.activexOffice.activexOfficeNumbers.`-4152`
-  - typings.activexOffice.activexOfficeNumbers.`10`
-  - typings.activexOffice.activexOfficeNumbers.`-4160`
+  - typings.activexOffice.activexOfficeInts.`-4099`
+  - typings.activexOffice.activexOfficeInts.`-4103`
+  - typings.activexOffice.activexOfficeInts.`0`
+  - typings.activexOffice.activexOfficeInts.`-4105`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`1`
+  - typings.activexOffice.activexOfficeInts.`-4107`
+  - typings.activexOffice.activexOfficeInts.`-4108`
+  - typings.activexOffice.activexOfficeInts.`9`
+  - typings.activexOffice.activexOfficeInts.`8`
+  - typings.activexOffice.activexOfficeInts.`3`
+  - typings.activexOffice.activexOfficeInts.`-4111`
+  - typings.activexOffice.activexOfficeInts.`16`
+  - typings.activexOffice.activexOfficeInts.`4`
+  - typings.activexOffice.activexOfficeInts.`-4114`
+  - typings.activexOffice.activexOfficeInts.`-1`
+  - typings.activexOffice.activexOfficeInts.`-4117`
+  - typings.activexOffice.activexOfficeInts.`5`
+  - typings.activexOffice.activexOfficeInts.`17`
+  - typings.activexOffice.activexOfficeInts.`-4124`
+  - typings.activexOffice.activexOfficeInts.`-4125`
+  - typings.activexOffice.activexOfficeInts.`-4126`
+  - typings.activexOffice.activexOfficeInts.`18`
+  - typings.activexOffice.activexOfficeInts.`15`
+  - typings.activexOffice.activexOfficeInts.`-4127`
+  - typings.activexOffice.activexOfficeInts.`-4130`
+  - typings.activexOffice.activexOfficeInts.`-4131`
+  - typings.activexOffice.activexOfficeInts.`13`
+  - typings.activexOffice.activexOfficeInts.`11`
+  - typings.activexOffice.activexOfficeInts.`14`
+  - typings.activexOffice.activexOfficeInts.`12`
+  - typings.activexOffice.activexOfficeInts.`-4134`
+  - typings.activexOffice.activexOfficeInts.`-4142`
+  - typings.activexOffice.activexOfficeInts.`-4152`
+  - typings.activexOffice.activexOfficeInts.`10`
+  - typings.activexOffice.activexOfficeInts.`-4160`
 */
 trait XlConstants extends StObject
 object XlConstants {

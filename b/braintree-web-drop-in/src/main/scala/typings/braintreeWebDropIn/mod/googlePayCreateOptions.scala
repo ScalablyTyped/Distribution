@@ -10,7 +10,7 @@ trait googlePayCreateOptions extends StObject {
   
   var button: js.UndefOr[ButtonOptions] = js.undefined
   
-  var googlePayVersion: js.UndefOr[String] = js.undefined
+  var googlePayVersion: js.UndefOr[Double] = js.undefined
   
   var merchantId: String
   
@@ -29,7 +29,7 @@ object googlePayCreateOptions {
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    inline def setGooglePayVersion(value: String): Self = StObject.set(x, "googlePayVersion", value.asInstanceOf[js.Any])
+    inline def setGooglePayVersion(value: Double): Self = StObject.set(x, "googlePayVersion", value.asInstanceOf[js.Any])
     
     inline def setGooglePayVersionUndefined: Self = StObject.set(x, "googlePayVersion", js.undefined)
     

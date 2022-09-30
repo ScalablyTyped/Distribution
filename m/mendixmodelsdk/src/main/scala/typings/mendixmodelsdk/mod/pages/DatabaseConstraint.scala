@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.DatabaseConstraint")
 @js.native
-class DatabaseConstraint protected ()
+open class DatabaseConstraint protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DatabaseConstraint {
   def this(
     model: AbstractModel,

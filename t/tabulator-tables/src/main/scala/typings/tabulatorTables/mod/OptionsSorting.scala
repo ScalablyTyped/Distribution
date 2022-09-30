@@ -1,0 +1,34 @@
+package typings.tabulatorTables.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait OptionsSorting extends StObject {
+  
+  /** Array of sorters to be applied on load. */
+  var initialSort: js.UndefOr[js.Array[Sorter]] = js.undefined
+  
+  /** reverse the order that multiple sorters are applied to the table. */
+  var sortOrderReverse: js.UndefOr[Boolean] = js.undefined
+}
+object OptionsSorting {
+  
+  inline def apply(): OptionsSorting = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[OptionsSorting]
+  }
+  
+  extension [Self <: OptionsSorting](x: Self) {
+    
+    inline def setInitialSort(value: js.Array[Sorter]): Self = StObject.set(x, "initialSort", value.asInstanceOf[js.Any])
+    
+    inline def setInitialSortUndefined: Self = StObject.set(x, "initialSort", js.undefined)
+    
+    inline def setInitialSortVarargs(value: Sorter*): Self = StObject.set(x, "initialSort", js.Array(value*))
+    
+    inline def setSortOrderReverse(value: Boolean): Self = StObject.set(x, "sortOrderReverse", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrderReverseUndefined: Self = StObject.set(x, "sortOrderReverse", js.undefined)
+  }
+}

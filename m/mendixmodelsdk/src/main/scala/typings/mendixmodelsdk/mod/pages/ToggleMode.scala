@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ToggleMode")
 @js.native
-class ToggleMode protected ()
+open class ToggleMode protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ToggleMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "RsaPssSha1")
 @js.native
-class RsaPssSha1 ()
+open class RsaPssSha1 ()
   extends typings.xmldsigjs.algorithmsMod.RsaPssSha1 {
   def this(saltLength: Double) = this()
 }

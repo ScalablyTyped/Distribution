@@ -6,8 +6,8 @@ import typings.guacamoleClient.clientMod.Client.ExportedState
 import typings.guacamoleClient.clientMod.Client.State
 import typings.guacamoleClient.displayMod.Display
 import typings.guacamoleClient.guacCommonMod.Mimetype
-import typings.guacamoleClient.guacamoleClientNumbers.`0`
-import typings.guacamoleClient.guacamoleClientNumbers.`1`
+import typings.guacamoleClient.guacamoleClientInts.`0`
+import typings.guacamoleClient.guacamoleClientInts.`1`
 import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.guacamoleClient.objectMod.Object
 import typings.guacamoleClient.outputStreamMod.OutputStream
@@ -427,27 +427,27 @@ object clientMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.guacamoleClient.guacamoleClientNumbers.`0`
-      - typings.guacamoleClient.guacamoleClientNumbers.`1`
-      - typings.guacamoleClient.guacamoleClientNumbers.`2`
-      - typings.guacamoleClient.guacamoleClientNumbers.`3`
-      - typings.guacamoleClient.guacamoleClientNumbers.`4`
-      - typings.guacamoleClient.guacamoleClientNumbers.`5`
+      - typings.guacamoleClient.guacamoleClientInts.`0`
+      - typings.guacamoleClient.guacamoleClientInts.`1`
+      - typings.guacamoleClient.guacamoleClientInts.`2`
+      - typings.guacamoleClient.guacamoleClientInts.`3`
+      - typings.guacamoleClient.guacamoleClientInts.`4`
+      - typings.guacamoleClient.guacamoleClientInts.`5`
     */
     trait State extends StObject
     object State {
       
-      inline def `0`: typings.guacamoleClient.guacamoleClientNumbers.`0` = 0.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`0`]
+      inline def `0`: typings.guacamoleClient.guacamoleClientInts.`0` = 0.asInstanceOf[typings.guacamoleClient.guacamoleClientInts.`0`]
       
-      inline def `1`: typings.guacamoleClient.guacamoleClientNumbers.`1` = 1.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`1`]
+      inline def `1`: typings.guacamoleClient.guacamoleClientInts.`1` = 1.asInstanceOf[typings.guacamoleClient.guacamoleClientInts.`1`]
       
-      inline def `2`: typings.guacamoleClient.guacamoleClientNumbers.`2` = 2.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`2`]
+      inline def `2`: typings.guacamoleClient.guacamoleClientInts.`2` = 2.asInstanceOf[typings.guacamoleClient.guacamoleClientInts.`2`]
       
-      inline def `3`: typings.guacamoleClient.guacamoleClientNumbers.`3` = 3.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`3`]
+      inline def `3`: typings.guacamoleClient.guacamoleClientInts.`3` = 3.asInstanceOf[typings.guacamoleClient.guacamoleClientInts.`3`]
       
-      inline def `4`: typings.guacamoleClient.guacamoleClientNumbers.`4` = 4.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`4`]
+      inline def `4`: typings.guacamoleClient.guacamoleClientInts.`4` = 4.asInstanceOf[typings.guacamoleClient.guacamoleClientInts.`4`]
       
-      inline def `5`: typings.guacamoleClient.guacamoleClientNumbers.`5` = 5.asInstanceOf[typings.guacamoleClient.guacamoleClientNumbers.`5`]
+      inline def `5`: typings.guacamoleClient.guacamoleClientInts.`5` = 5.asInstanceOf[typings.guacamoleClient.guacamoleClientInts.`5`]
     }
   }
 }

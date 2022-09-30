@@ -1,5 +1,6 @@
 package typings.trashable
 
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,8 @@ object mod {
   
   @js.native
   trait TrashablePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def trash(): Unit = js.native
   }

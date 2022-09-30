@@ -1,6 +1,8 @@
 package typings.googleGax
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleGax.anon.PartialRetryOptions
+import typings.googleGax.anon.TypeofMessage
 import typings.googleGax.bundleExecutorMod.BundleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +34,7 @@ object gaxMod {
     *
     * @constructor
     */
-  class CallSettings () extends StObject {
+  open class CallSettings () extends StObject {
     def this(settings: CallOptions) = this()
     
     var apiName: js.UndefOr[String] = js.native
@@ -58,7 +60,7 @@ object gaxMod {
     def merge(): CallSettings = js.native
     def merge(options: CallOptions): CallSettings = js.native
     
-    var otherArgs: StringDictionary[js.Any] = js.native
+    var otherArgs: StringDictionary[Any] = js.native
     
     var pageSize: js.UndefOr[Double] = js.native
     
@@ -73,7 +75,7 @@ object gaxMod {
   
   @JSImport("google-gax/build/src/gax", "RetryOptions")
   @js.native
-  class RetryOptions protected () extends StObject {
+  open class RetryOptions protected () extends StObject {
     def this(retryCodes: js.Array[Double], backoffSettings: BackoffSettings) = this()
     
     var backoffSettings: BackoffSettings = js.native
@@ -86,14 +88,14 @@ object gaxMod {
     clientConfig: ClientConfig,
     configOverrides: ClientConfig,
     retryNames: js.Object
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructSettings")(serviceName.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any], configOverrides.asInstanceOf[js.Any], retryNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructSettings")(serviceName.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any], configOverrides.asInstanceOf[js.Any], retryNames.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def constructSettings(
     serviceName: String,
     clientConfig: ClientConfig,
     configOverrides: ClientConfig,
     retryNames: js.Object,
     otherArgs: js.Object
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructSettings")(serviceName.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any], configOverrides.asInstanceOf[js.Any], retryNames.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructSettings")(serviceName.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any], configOverrides.asInstanceOf[js.Any], retryNames.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def createBackoffSettings(initialRetryDelayMillis: Double, retryDelayMultiplier: Double, maxRetryDelayMillis: Double): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
   inline def createBackoffSettings(
@@ -222,6 +224,8 @@ object gaxMod {
   ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], totalTimeoutMillis.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
   
   inline def createBundleOptions(options: BundlingConfig): BundleOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleOptions")(options.asInstanceOf[js.Any]).asInstanceOf[BundleOptions]
+  
+  inline def createByteLengthFunction(message: TypeofMessage): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
   
   inline def createDefaultBackoffSettings(): BackoffSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultBackoffSettings")().asInstanceOf[BackoffSettings]
   
@@ -355,13 +359,9 @@ object gaxMod {
     
     var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var otherArgs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var otherArgs: js.UndefOr[StringDictionary[Any]] = js.undefined
     
-    var pageSize: js.UndefOr[Double] = js.undefined
-    
-    var pageToken: js.UndefOr[String] = js.undefined
-    
-    var retry: js.UndefOr[RetryOptions | Null] = js.undefined
+    var retry: js.UndefOr[PartialRetryOptions | Null] = js.undefined
     
     var retryRequestOptions: js.UndefOr[RetryRequestOptions] = js.undefined
     
@@ -406,19 +406,11 @@ object gaxMod {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setOtherArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "otherArgs", value.asInstanceOf[js.Any])
+      inline def setOtherArgs(value: StringDictionary[Any]): Self = StObject.set(x, "otherArgs", value.asInstanceOf[js.Any])
       
       inline def setOtherArgsUndefined: Self = StObject.set(x, "otherArgs", js.undefined)
       
-      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-      
-      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-      
-      inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-      
-      inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-      
-      inline def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: PartialRetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
       inline def setRetryNull: Self = StObject.set(x, "retry", null)
       
@@ -549,7 +541,7 @@ object gaxMod {
     
     var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     var retries: js.UndefOr[Double] = js.undefined
     
@@ -576,7 +568,7 @@ object gaxMod {
       
       inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       

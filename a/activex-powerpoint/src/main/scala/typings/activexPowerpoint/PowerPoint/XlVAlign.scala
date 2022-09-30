@@ -1,20 +1,20 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4107`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4108`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4117`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4130`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4160`
+import typings.activexPowerpoint.activexPowerpointInts.`-4107`
+import typings.activexPowerpoint.activexPowerpointInts.`-4108`
+import typings.activexPowerpoint.activexPowerpointInts.`-4117`
+import typings.activexPowerpoint.activexPowerpointInts.`-4130`
+import typings.activexPowerpoint.activexPowerpointInts.`-4160`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4107`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4108`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4117`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4130`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4160`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4107`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4108`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4117`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4130`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4160`
 */
 trait XlVAlign extends StObject
 object XlVAlign {

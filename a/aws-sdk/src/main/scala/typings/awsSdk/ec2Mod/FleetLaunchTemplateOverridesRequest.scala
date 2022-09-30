@@ -12,6 +12,11 @@ trait FleetLaunchTemplateOverridesRequest extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
+    * The ID of the AMI. An AMI is required to launch an instance. The AMI ID must be specified here or in the launch template.
+    */
+  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.undefined
+  
+  /**
     * The attributes for the instance types. When you specify instance attributes, Amazon EC2 will identify instance types with those attributes.  If you specify InstanceRequirements, you can't specify InstanceType. 
     */
   var InstanceRequirements: js.UndefOr[InstanceRequirementsRequest] = js.undefined
@@ -58,6 +63,10 @@ object FleetLaunchTemplateOverridesRequest {
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
     inline def setInstanceRequirements(value: InstanceRequirementsRequest): Self = StObject.set(x, "InstanceRequirements", value.asInstanceOf[js.Any])
     

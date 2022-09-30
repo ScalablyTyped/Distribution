@@ -21,4 +21,14 @@ trait ITemplateFormBase
     * In version 7.17.0: introduced
     */
   val documentationUrl: String = js.native
+  
+  /**
+    * In version 9.0.2: introduced
+    */
+  val templateCategory: String = js.native
+  
+  /**
+    * In version 9.0.2: introduced
+    */
+  val templateCategoryWeight: Double = js.native
 }

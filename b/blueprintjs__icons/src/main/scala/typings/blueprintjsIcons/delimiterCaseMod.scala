@@ -1,6 +1,6 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.blueprintjsIconsStrings.DollarLeftcurlybracketDelimiterRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignStringPartGreaterthansignRightcurlybracket
+import typings.blueprintjsIcons.blueprintjsIconsStrings._empty
 import typings.blueprintjsIcons.sourceUtilitiesMod.UpperCaseCharacters
 import typings.blueprintjsIcons.sourceUtilitiesMod.WordSeparators
 import org.scalablytyped.runtime.StObject
@@ -23,15 +23,11 @@ object delimiterCaseMod {
   It receives `UsedWordSeparators` and `UsedUpperCaseCharacters` as input to ensure it's fully encapsulated.
   @see SplitIncludingDelimiters
   */
-  /* Rewritten from type alias, can be one of: 
-    - typings.blueprintjsIcons.blueprintjsIconsStrings._empty
-    - typings.blueprintjsIcons.blueprintjsIconsStrings.`DollarLeftcurlybracketStringPartToDelimiterCaseLessthansignFirstPartComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracketDollarLeftcurlybracketStringArrayToDelimiterCaseLessthansignRemainingPartsComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracket`
-  */
-  trait StringArrayToDelimiterCase[Parts /* <: js.Array[Any] */, UsedWordSeparators /* <: String */, UsedUpperCaseCharacters /* <: String */, Delimiter /* <: String */] extends StObject
+  type StringArrayToDelimiterCase[Parts /* <: js.Array[Any] */, UsedWordSeparators /* <: String */, UsedUpperCaseCharacters /* <: String */, Delimiter /* <: String */] = _empty | (/* template literal string: ${StringPartToDelimiterCase<FirstPart,UsedWordSeparators,UsedUpperCaseCharacters,Delimiter>}${StringArrayToDelimiterCase<RemainingParts,UsedWordSeparators,UsedUpperCaseCharacters,Delimiter>} */ String)
   
   /**
   Format a specific part of the splitted string literal that `StringArrayToDelimiterCase<>` fuses together, ensuring desired casing.
   @see StringArrayToDelimiterCase
   */
-  type StringPartToDelimiterCase[StringPart /* <: String */, UsedWordSeparators /* <: String */, UsedUpperCaseCharacters /* <: String */, Delimiter /* <: String */] = StringPart | DollarLeftcurlybracketDelimiterRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignStringPartGreaterthansignRightcurlybracket | Delimiter
+  type StringPartToDelimiterCase[StringPart /* <: String */, UsedWordSeparators /* <: String */, UsedUpperCaseCharacters /* <: String */, Delimiter /* <: String */] = StringPart | (/* template literal string: ${Delimiter}${Lowercase<StringPart>} */ String) | Delimiter
 }

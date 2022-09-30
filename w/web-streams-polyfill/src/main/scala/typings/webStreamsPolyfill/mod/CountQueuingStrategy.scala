@@ -1,6 +1,6 @@
 package typings.webStreamsPolyfill.mod
 
-import typings.webStreamsPolyfill.webStreamsPolyfillNumbers.`1`
+import typings.webStreamsPolyfill.webStreamsPolyfillInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

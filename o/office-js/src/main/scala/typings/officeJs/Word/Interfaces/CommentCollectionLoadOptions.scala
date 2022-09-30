@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of {@link Word.Comment} objects.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 trait CommentCollectionLoadOptions extends StObject {
   
@@ -22,7 +22,7 @@ trait CommentCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets the email of the comment's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var authorEmail: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +30,7 @@ trait CommentCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets the name of the comment's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var authorName: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +38,7 @@ trait CommentCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets or sets the comment's content as plain text.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var content: js.UndefOr[Boolean] = js.undefined
   
@@ -46,7 +46,7 @@ trait CommentCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets or sets the comment's content range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var contentRange: js.UndefOr[CommentContentRangeLoadOptions] = js.undefined
   
@@ -54,15 +54,15 @@ trait CommentCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets the creation date of the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var creationDate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the Id of the comment. Read-only.
+    * For EACH ITEM in the collection: Gets the ID of the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
@@ -70,7 +70,7 @@ trait CommentCollectionLoadOptions extends StObject {
     * For EACH ITEM in the collection: Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
 }

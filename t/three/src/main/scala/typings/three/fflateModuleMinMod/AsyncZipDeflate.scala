@@ -1,9 +1,9 @@
 package typings.three.fflateModuleMinMod
 
-import typings.three.threeNumbers.`0`
-import typings.three.threeNumbers.`1`
-import typings.three.threeNumbers.`2`
-import typings.three.threeNumbers.`3`
+import typings.three.threeInts.`0`
+import typings.three.threeInts.`1`
+import typings.three.threeInts.`2`
+import typings.three.threeInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

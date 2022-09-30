@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.ChangeActionItemType")
 @js.native
-class ChangeActionItemType protected ()
+open class ChangeActionItemType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ChangeActionItemType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

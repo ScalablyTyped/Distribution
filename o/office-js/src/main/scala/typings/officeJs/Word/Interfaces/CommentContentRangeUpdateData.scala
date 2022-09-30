@@ -33,7 +33,7 @@ trait CommentContentRangeUpdateData extends StObject {
     * Gets or sets a value that indicates whether the comment text is bold.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
@@ -41,7 +41,7 @@ trait CommentContentRangeUpdateData extends StObject {
     * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var hyperlink: js.UndefOr[String] = js.undefined
   
@@ -49,7 +49,7 @@ trait CommentContentRangeUpdateData extends StObject {
     * Gets or sets a value that indicates whether the comment text is italicized.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
@@ -57,7 +57,7 @@ trait CommentContentRangeUpdateData extends StObject {
     * Gets or sets a value that indicates whether the comment text has a strikethrough.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var strikeThrough: js.UndefOr[Boolean] = js.undefined
   
@@ -65,7 +65,7 @@ trait CommentContentRangeUpdateData extends StObject {
     * Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var underline: js.UndefOr[
     UnderlineType | Mixed | None | Hidden | DotLine | Single | Word | Double | Thick | Dotted | DottedHeavy | DashLine | DashLineHeavy | DashLineLong | DashLineLongHeavy | DotDashLine | DotDashLineHeavy | TwoDotDashLine | TwoDotDashLineHeavy | Wave | WaveHeavy | WaveDouble

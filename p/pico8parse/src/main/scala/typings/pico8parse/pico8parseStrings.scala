@@ -1,9 +1,9 @@
 package typings.pico8parse
 
 import typings.pico8parse.mod.LuaVersion
-import typings.pico8parse.mod.ast.BinaryOperator
 import typings.pico8parse.mod.ast.ComparisonOperator
 import typings.pico8parse.mod.ast.UnaryOperator
+import typings.pico8parse.mod.ast._BinaryOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object pico8parseStrings {
   @js.native
   sealed trait ^
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def ^ : ^ = "^".asInstanceOf[^]
   
   @js.native
@@ -25,8 +25,8 @@ object pico8parseStrings {
   @js.native
   sealed trait `-_`
     extends StObject
-       with BinaryOperator
        with UnaryOperator
+       with _BinaryOperator
   inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
@@ -56,7 +56,7 @@ object pico8parseStrings {
   @js.native
   sealed trait Ampersand
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   
   @js.native
@@ -70,14 +70,8 @@ object pico8parseStrings {
   @js.native
   sealed trait Asterisk
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  
-  @js.native
-  sealed trait Backslash
-    extends StObject
-       with BinaryOperator
-  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
   
   @js.native
   sealed trait BinaryExpression extends StObject
@@ -122,7 +116,7 @@ object pico8parseStrings {
   @js.native
   sealed trait DotDot
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def DotDot: DotDot = "..".asInstanceOf[DotDot]
   
   @js.native
@@ -180,19 +174,19 @@ object pico8parseStrings {
   @js.native
   sealed trait GreaterthansignGreaterthansign
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
   
   @js.native
   sealed trait GreaterthansignGreaterthansignGreaterthansign
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def GreaterthansignGreaterthansignGreaterthansign: GreaterthansignGreaterthansignGreaterthansign = ">>>".asInstanceOf[GreaterthansignGreaterthansignGreaterthansign]
   
   @js.native
   sealed trait GreaterthansignGreaterthansignLessthansign
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def GreaterthansignGreaterthansignLessthansign: GreaterthansignGreaterthansignLessthansign = ">><".asInstanceOf[GreaterthansignGreaterthansignLessthansign]
   
   @js.native
@@ -230,13 +224,13 @@ object pico8parseStrings {
   @js.native
   sealed trait LessthansignLessthansign
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
   
   @js.native
   sealed trait LessthansignLessthansignGreaterthansign
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def LessthansignLessthansignGreaterthansign: LessthansignLessthansignGreaterthansign = "<<>".asInstanceOf[LessthansignLessthansignGreaterthansign]
   
   @js.native
@@ -304,14 +298,14 @@ object pico8parseStrings {
   @js.native
   sealed trait Percentsign
     extends StObject
-       with BinaryOperator
        with UnaryOperator
+       with _BinaryOperator
   inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
   sealed trait Plussign
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
@@ -325,13 +319,13 @@ object pico8parseStrings {
   @js.native
   sealed trait Slash
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
   sealed trait SlashSlash
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def SlashSlash: SlashSlash = "//".asInstanceOf[SlashSlash]
   
   @js.native
@@ -365,8 +359,8 @@ object pico8parseStrings {
   @js.native
   sealed trait Tilde
     extends StObject
-       with BinaryOperator
        with UnaryOperator
+       with _BinaryOperator
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
@@ -386,7 +380,7 @@ object pico8parseStrings {
   @js.native
   sealed trait Verticalline
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   
   @js.native
@@ -396,7 +390,7 @@ object pico8parseStrings {
   @js.native
   sealed trait `^^`
     extends StObject
-       with BinaryOperator
+       with _BinaryOperator
   inline def `^^`: `^^` = "^^".asInstanceOf[`^^`]
   
   @js.native

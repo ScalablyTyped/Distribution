@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.15.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ProxyConfiguration")
 @js.native
-class ProxyConfiguration protected () extends Element[IModel] {
+open class ProxyConfiguration protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -41,6 +41,8 @@ class ProxyConfiguration protected () extends Element[IModel] {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.8.0: deleted
     */
   def hostExpressionModel: Expression | Null = js.native
   def hostExpressionModel_=(newValue: Expression | Null): Unit = js.native
@@ -56,6 +58,8 @@ class ProxyConfiguration protected () extends Element[IModel] {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.8.0: deleted
     */
   def passwordExpressionModel: Expression | Null = js.native
   def passwordExpressionModel_=(newValue: Expression | Null): Unit = js.native
@@ -71,6 +75,8 @@ class ProxyConfiguration protected () extends Element[IModel] {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.8.0: deleted
     */
   def portExpressionModel: Expression | Null = js.native
   def portExpressionModel_=(newValue: Expression | Null): Unit = js.native
@@ -86,6 +92,8 @@ class ProxyConfiguration protected () extends Element[IModel] {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.8.0: deleted
     */
   def useConfigurationExpressionModel: Expression | Null = js.native
   def useConfigurationExpressionModel_=(newValue: Expression | Null): Unit = js.native
@@ -101,6 +109,8 @@ class ProxyConfiguration protected () extends Element[IModel] {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.8.0: deleted
     */
   def usernameExpressionModel: Expression | Null = js.native
   def usernameExpressionModel_=(newValue: Expression | Null): Unit = js.native
@@ -109,7 +119,7 @@ class ProxyConfiguration protected () extends Element[IModel] {
 }
 object ProxyConfiguration {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ProxyConfiguration")
   @js.native
   val ^ : js.Any = js.native
   
@@ -144,13 +154,13 @@ object ProxyConfiguration {
   inline def createInWebServiceCallActionUnderProxyConfiguration(container: WebServiceCallAction): ProxyConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderProxyConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[ProxyConfiguration]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ProxyConfiguration.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ProxyConfiguration.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ProxyConfiguration.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

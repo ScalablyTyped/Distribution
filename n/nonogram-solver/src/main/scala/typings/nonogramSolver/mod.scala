@@ -95,17 +95,17 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nonogramSolver.nonogramSolverNumbers.`0`
-    - typings.nonogramSolver.nonogramSolverNumbers.`1`
-    - typings.nonogramSolver.nonogramSolverNumbers.`-1`
+    - typings.nonogramSolver.nonogramSolverInts.`0`
+    - typings.nonogramSolver.nonogramSolverInts.`1`
+    - typings.nonogramSolver.nonogramSolverInts.`-1`
   */
   trait State extends StObject
   object State {
     
-    inline def `-1`: typings.nonogramSolver.nonogramSolverNumbers.`-1` = -1.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`-1`]
+    inline def `-1`: typings.nonogramSolver.nonogramSolverInts.`-1` = -1.asInstanceOf[typings.nonogramSolver.nonogramSolverInts.`-1`]
     
-    inline def `0`: typings.nonogramSolver.nonogramSolverNumbers.`0` = 0.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`0`]
+    inline def `0`: typings.nonogramSolver.nonogramSolverInts.`0` = 0.asInstanceOf[typings.nonogramSolver.nonogramSolverInts.`0`]
     
-    inline def `1`: typings.nonogramSolver.nonogramSolverNumbers.`1` = 1.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`1`]
+    inline def `1`: typings.nonogramSolver.nonogramSolverInts.`1` = 1.asInstanceOf[typings.nonogramSolver.nonogramSolverInts.`1`]
   }
 }

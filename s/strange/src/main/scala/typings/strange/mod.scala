@@ -6,9 +6,10 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Node
-import typings.strange.strangeNumbers.`-1`
-import typings.strange.strangeNumbers.`0`
-import typings.strange.strangeNumbers.`1`
+import typings.strange.strangeInts.`-1`
+import typings.strange.strangeInts.`0`
+import typings.strange.strangeInts.`1`
+import typings.strange.strangeStrings.`[]`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,23 +72,17 @@ object mod extends Shortcut {
     override val startOffset: Double = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.strange.strangeStrings.LeftparenthesisRightparenthesis
-    - typings.strange.strangeStrings.`[]`
-    - typings.strange.strangeStrings.`[Rightparenthesis`
-    - typings.strange.strangeStrings.`Leftparenthesis]`
-  */
-  trait Bounds extends StObject
   object Bounds {
     
-    inline def LeftparenthesisRightparenthesis: typings.strange.strangeStrings.LeftparenthesisRightparenthesis = "()".asInstanceOf[typings.strange.strangeStrings.LeftparenthesisRightparenthesis]
+    inline def LeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
     
-    inline def `Leftparenthesis]`: typings.strange.strangeStrings.`Leftparenthesis]` = "(]".asInstanceOf[typings.strange.strangeStrings.`Leftparenthesis]`]
+    inline def `Leftparenthesis]`: String = String.asInstanceOf[String]
     
-    inline def `[Rightparenthesis`: typings.strange.strangeStrings.`[Rightparenthesis` = "[)".asInstanceOf[typings.strange.strangeStrings.`[Rightparenthesis`]
+    inline def `[Rightparenthesis`: String = String.asInstanceOf[String]
     
     inline def `[]`: typings.strange.strangeStrings.`[]` = "[]".asInstanceOf[typings.strange.strangeStrings.`[]`]
   }
+  type Bounds = String | `[]`
   
   type Endpoint = js.Date | Double | String
   

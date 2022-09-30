@@ -1,12 +1,12 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`20`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`21`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`22`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`23`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`24`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`25`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`27`
+import typings.activexLibreoffice.activexLibreofficeInts.`20`
+import typings.activexLibreoffice.activexLibreofficeInts.`21`
+import typings.activexLibreoffice.activexLibreofficeInts.`22`
+import typings.activexLibreoffice.activexLibreofficeInts.`23`
+import typings.activexLibreoffice.activexLibreofficeInts.`24`
+import typings.activexLibreoffice.activexLibreofficeInts.`25`
+import typings.activexLibreoffice.activexLibreofficeInts.`27`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListActionType {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`23`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`27`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`21`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`24`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`25`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`22`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`20`
+    - typings.activexLibreoffice.activexLibreofficeInts.`23`
+    - typings.activexLibreoffice.activexLibreofficeInts.`27`
+    - typings.activexLibreoffice.activexLibreofficeInts.`21`
+    - typings.activexLibreoffice.activexLibreofficeInts.`24`
+    - typings.activexLibreoffice.activexLibreofficeInts.`25`
+    - typings.activexLibreoffice.activexLibreofficeInts.`22`
+    - typings.activexLibreoffice.activexLibreofficeInts.`20`
   */
   trait Constants extends StObject
   object Constants {

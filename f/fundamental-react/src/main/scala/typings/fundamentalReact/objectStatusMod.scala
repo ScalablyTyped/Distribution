@@ -1,14 +1,14 @@
 package typings.fundamentalReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.fundamentalReact.fundamentalReactNumbers.`1`
-import typings.fundamentalReact.fundamentalReactNumbers.`2`
-import typings.fundamentalReact.fundamentalReactNumbers.`3`
-import typings.fundamentalReact.fundamentalReactNumbers.`4`
-import typings.fundamentalReact.fundamentalReactNumbers.`5`
-import typings.fundamentalReact.fundamentalReactNumbers.`6`
-import typings.fundamentalReact.fundamentalReactNumbers.`7`
-import typings.fundamentalReact.fundamentalReactNumbers.`8`
+import typings.fundamentalReact.fundamentalReactInts.`1`
+import typings.fundamentalReact.fundamentalReactInts.`2`
+import typings.fundamentalReact.fundamentalReactInts.`3`
+import typings.fundamentalReact.fundamentalReactInts.`4`
+import typings.fundamentalReact.fundamentalReactInts.`5`
+import typings.fundamentalReact.fundamentalReactInts.`6`
+import typings.fundamentalReact.fundamentalReactInts.`7`
+import typings.fundamentalReact.fundamentalReactInts.`8`
 import typings.fundamentalReact.fundamentalReactStrings.l
 import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLAttributes

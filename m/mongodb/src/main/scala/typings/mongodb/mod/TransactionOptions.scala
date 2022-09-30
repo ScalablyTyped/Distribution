@@ -4,13 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransactionOptions extends StObject {
+trait TransactionOptions
+  extends StObject
+     with CommandOperationOptions {
   
-  var readConcern: js.UndefOr[ReadConcern] = js.undefined
+  /** Specifies the maximum amount of time to allow a commit action on a transaction to run in milliseconds */
+  var maxCommitTimeMS: js.UndefOr[scala.Double] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
+  /** A default read preference for commands in this transaction */
+  @JSName("readPreference")
+  var readPreference_TransactionOptions: js.UndefOr[ReadPreference] = js.undefined
   
-  var writeConcern: js.UndefOr[WriteConcern] = js.undefined
+  /** A default writeConcern for commands in this transaction */
+  @JSName("writeConcern")
+  var writeConcern_TransactionOptions: js.UndefOr[WriteConcern] = js.undefined
 }
 object TransactionOptions {
   
@@ -21,11 +28,11 @@ object TransactionOptions {
   
   extension [Self <: TransactionOptions](x: Self) {
     
-    inline def setReadConcern(value: ReadConcern): Self = StObject.set(x, "readConcern", value.asInstanceOf[js.Any])
+    inline def setMaxCommitTimeMS(value: scala.Double): Self = StObject.set(x, "maxCommitTimeMS", value.asInstanceOf[js.Any])
     
-    inline def setReadConcernUndefined: Self = StObject.set(x, "readConcern", js.undefined)
+    inline def setMaxCommitTimeMSUndefined: Self = StObject.set(x, "maxCommitTimeMS", js.undefined)
     
-    inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     

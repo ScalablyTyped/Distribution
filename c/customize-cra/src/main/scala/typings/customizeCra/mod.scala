@@ -7,7 +7,7 @@ import typings.customizeCra.anon.Dest
 import typings.customizeCra.anon.RequiredRuleSetRule
 import typings.customizeCra.coreMod.OverrideFunc
 import typings.customizeCra.customizeCraBooleans.`false`
-import typings.customizeCra.customizeCraNumbers.`0`
+import typings.customizeCra.customizeCraInts.`0`
 import typings.customizeCra.customizeCraStrings.`errors-only`
 import typings.customizeCra.customizeCraStrings.`errors-warnings`
 import typings.customizeCra.customizeCraStrings.detailed

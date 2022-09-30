@@ -10,7 +10,7 @@ object attachSessionMod {
   
   @JSImport("protractor/built/driverProviders/attachSession", "AttachSession")
   @js.native
-  class AttachSession protected () extends DriverProvider {
+  open class AttachSession protected () extends DriverProvider {
     def this(config: Config) = this()
     
     /**

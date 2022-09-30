@@ -112,7 +112,7 @@ type ResourceLabel = String
   - typings.awsSdk.awsSdkStrings.rdsColonclusterColonReadReplicaCount
   - typings.awsSdk.awsSdkStrings.sagemakerColonvariantColonDesiredInstanceCount
   - typings.awsSdk.awsSdkStrings.`custom-resourceColonResourceTypeColonProperty`
-  - typings.awsSdk.awsSdkStrings.`comprehendColondocument-classifier-endpointColonDesiredInferenceUnits`
+  - java.lang.String
   - typings.awsSdk.awsSdkStrings.`comprehendColonentity-recognizer-endpointColonDesiredInferenceUnits`
   - typings.awsSdk.awsSdkStrings.lambdaColonfunctionColonProvisionedConcurrency
   - typings.awsSdk.awsSdkStrings.cassandraColontableColonReadCapacityUnits
@@ -121,7 +121,6 @@ type ResourceLabel = String
   - typings.awsSdk.awsSdkStrings.`elasticacheColonreplication-groupColonNodeGroups`
   - typings.awsSdk.awsSdkStrings.`elasticacheColonreplication-groupColonReplicas`
   - typings.awsSdk.awsSdkStrings.neptuneColonclusterColonReadReplicaCount
-  - java.lang.String
 */
 type ScalableDimension = _ScalableDimension | String
 

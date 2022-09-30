@@ -2,9 +2,9 @@ package typings.nodegit
 
 import typings.nodegit.annotatedCommitMod.AnnotatedCommit
 import typings.nodegit.commitMod.Commit
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
 import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
@@ -45,9 +45,9 @@ object branchMod {
     inline def upstream(branch: Reference): js.Promise[Reference] = ^.asInstanceOf[js.Dynamic].applyDynamic("upstream")(branch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Reference]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
     */
     trait BRANCH extends StObject
     object BRANCH {

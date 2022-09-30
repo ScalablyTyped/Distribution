@@ -13,7 +13,7 @@ object commands {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def executeCommand[T](command: String, rest: Any*): Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeCommand")(List(command.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Thenable[T]]
+  inline def executeCommand[T](command: String, rest: Any*): Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeCommand")(scala.List(command.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Thenable[T]]
   
   inline def getCommands(): Thenable[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommands")().asInstanceOf[Thenable[js.Array[String]]]
   inline def getCommands(filterInternal: Boolean): Thenable[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommands")(filterInternal.asInstanceOf[js.Any]).asInstanceOf[Thenable[js.Array[String]]]

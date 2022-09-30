@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.LanguageSettings")
+@JSImport("mendixmodelsdk/src/gen/settings", "settings.LanguageSettings")
 @js.native
-class LanguageSettings protected () extends ProjectSettingsPart {
+open class LanguageSettings protected () extends ProjectSettingsPart {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,7 +31,7 @@ class LanguageSettings protected () extends ProjectSettingsPart {
 }
 object LanguageSettings {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.LanguageSettings")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.LanguageSettings")
   @js.native
   val ^ : js.Any = js.native
   
@@ -52,13 +52,13 @@ object LanguageSettings {
   inline def createIn(container: ProjectSettings): LanguageSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[LanguageSettings]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.LanguageSettings.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.LanguageSettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.LanguageSettings.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.LanguageSettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

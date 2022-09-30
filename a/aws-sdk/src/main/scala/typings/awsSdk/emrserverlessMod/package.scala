@@ -131,6 +131,8 @@ type TagValue = String
 
 type UriString = String
 
+type Url = String
+
 type WorkerCounts = scala.Double
 
 type WorkerTypeString = String

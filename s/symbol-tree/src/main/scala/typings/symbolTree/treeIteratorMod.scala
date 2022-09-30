@@ -1,11 +1,11 @@
 package typings.symbolTree
 
 import typings.std.IterableIterator
-import typings.symbolTree.symbolTreeNumbers.`1`
-import typings.symbolTree.symbolTreeNumbers.`2`
-import typings.symbolTree.symbolTreeNumbers.`3`
-import typings.symbolTree.symbolTreeNumbers.`4`
-import typings.symbolTree.symbolTreeNumbers.`5`
+import typings.symbolTree.symbolTreeInts.`1`
+import typings.symbolTree.symbolTreeInts.`2`
+import typings.symbolTree.symbolTreeInts.`3`
+import typings.symbolTree.symbolTreeInts.`4`
+import typings.symbolTree.symbolTreeInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,24 +65,24 @@ object treeIteratorMod {
     * - `5`: Iterate all tree-inclusive following nodes.
     */
   /* Rewritten from type alias, can be one of: 
-    - typings.symbolTree.symbolTreeNumbers.`1`
-    - typings.symbolTree.symbolTreeNumbers.`2`
-    - typings.symbolTree.symbolTreeNumbers.`3`
-    - typings.symbolTree.symbolTreeNumbers.`4`
-    - typings.symbolTree.symbolTreeNumbers.`5`
+    - typings.symbolTree.symbolTreeInts.`1`
+    - typings.symbolTree.symbolTreeInts.`2`
+    - typings.symbolTree.symbolTreeInts.`3`
+    - typings.symbolTree.symbolTreeInts.`4`
+    - typings.symbolTree.symbolTreeInts.`5`
   */
   trait IterateFunction extends StObject
   object IterateFunction {
     
-    inline def `1`: typings.symbolTree.symbolTreeNumbers.`1` = 1.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`1`]
+    inline def `1`: typings.symbolTree.symbolTreeInts.`1` = 1.asInstanceOf[typings.symbolTree.symbolTreeInts.`1`]
     
-    inline def `2`: typings.symbolTree.symbolTreeNumbers.`2` = 2.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`2`]
+    inline def `2`: typings.symbolTree.symbolTreeInts.`2` = 2.asInstanceOf[typings.symbolTree.symbolTreeInts.`2`]
     
-    inline def `3`: typings.symbolTree.symbolTreeNumbers.`3` = 3.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`3`]
+    inline def `3`: typings.symbolTree.symbolTreeInts.`3` = 3.asInstanceOf[typings.symbolTree.symbolTreeInts.`3`]
     
-    inline def `4`: typings.symbolTree.symbolTreeNumbers.`4` = 4.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`4`]
+    inline def `4`: typings.symbolTree.symbolTreeInts.`4` = 4.asInstanceOf[typings.symbolTree.symbolTreeInts.`4`]
     
-    inline def `5`: typings.symbolTree.symbolTreeNumbers.`5` = 5.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`5`]
+    inline def `5`: typings.symbolTree.symbolTreeInts.`5` = 5.asInstanceOf[typings.symbolTree.symbolTreeInts.`5`]
   }
   
   @js.native

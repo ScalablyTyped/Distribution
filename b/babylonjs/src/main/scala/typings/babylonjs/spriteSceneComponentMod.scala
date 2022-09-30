@@ -34,7 +34,7 @@ object spriteSceneComponentMod {
     
     /* private */ var _pointerUp: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _spritePredicate: Any = js.native
     
     /**
@@ -75,13 +75,13 @@ object spriteSceneComponentMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _internalMultiPickSprites(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalPickSprites(ray: Ray): Nullable[PickingInfo] = js.native
       def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[PickingInfo] = js.native
       def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], fastCheck: Boolean): Nullable[PickingInfo] = js.native
@@ -96,13 +96,13 @@ object spriteSceneComponentMod {
       def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
       def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _pickedDownSprite: Nullable[Sprite] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _pointerOverSprite: Nullable[Sprite] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _tempSpritePickingRay: Nullable[Ray] = js.native
       
       /**

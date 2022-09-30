@@ -1,6 +1,6 @@
 package typings.jestTestResult
 
-import typings.jestTestResult.typesMod.Milliseconds
+import typings.jestTestResult.mod.RuntimeTransformResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +50,7 @@ object anon {
       
       inline def setUncheckedKeys(value: js.Array[String]): Self = StObject.set(x, "uncheckedKeys", value.asInstanceOf[js.Any])
       
-      inline def setUncheckedKeysVarargs(value: String*): Self = StObject.set(x, "uncheckedKeys", js.Array(value :_*))
+      inline def setUncheckedKeysVarargs(value: String*): Self = StObject.set(x, "uncheckedKeys", js.Array(value*))
       
       inline def setUnmatched(value: Double): Self = StObject.set(x, "unmatched", value.asInstanceOf[js.Any])
       
@@ -58,24 +58,59 @@ object anon {
     }
   }
   
+  trait CodeTransformResult extends StObject {
+    
+    var codeTransformResult: js.UndefOr[RuntimeTransformResult] = js.undefined
+    
+    var result: /* import warning: importer.ImportType#apply Failed type conversion: collect-v8-coverage.collect-v8-coverage.V8Coverage[number] */ js.Any
+  }
+  object CodeTransformResult {
+    
+    inline def apply(
+      result: /* import warning: importer.ImportType#apply Failed type conversion: collect-v8-coverage.collect-v8-coverage.V8Coverage[number] */ js.Any
+    ): CodeTransformResult = {
+      val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CodeTransformResult]
+    }
+    
+    extension [Self <: CodeTransformResult](x: Self) {
+      
+      inline def setCodeTransformResult(value: RuntimeTransformResult): Self = StObject.set(x, "codeTransformResult", value.asInstanceOf[js.Any])
+      
+      inline def setCodeTransformResultUndefined: Self = StObject.set(x, "codeTransformResult", js.undefined)
+      
+      inline def setResult(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: collect-v8-coverage.collect-v8-coverage.V8Coverage[number] */ js.Any
+      ): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait End extends StObject {
     
-    var end: Milliseconds
+    var end: Double
     
-    var start: Milliseconds
+    var runtime: Double
+    
+    var slow: Boolean
+    
+    var start: Double
   }
   object End {
     
-    inline def apply(end: Milliseconds, start: Milliseconds): End = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    inline def apply(end: Double, runtime: Double, slow: Boolean, start: Double): End = {
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
     extension [Self <: End](x: Self) {
       
-      inline def setEnd(value: Milliseconds): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: Milliseconds): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      
+      inline def setSlow(value: Boolean): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

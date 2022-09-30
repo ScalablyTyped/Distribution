@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__node-config-provider
 
-Typings are for version 3.171.0
+Typings are for version 3.178.0
 
 ## Library description:
 Load config default values from ini config files and environmental variable

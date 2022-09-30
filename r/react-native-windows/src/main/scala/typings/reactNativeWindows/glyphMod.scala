@@ -10,13 +10,13 @@ object glyphMod {
   
   @JSImport("react-native-windows/Libraries/Components/Glyph/Glyph", "Glyph")
   @js.native
-  class Glyph protected ()
-    extends PureComponent[GlyphProps, js.Object, js.Any] {
+  open class Glyph protected ()
+    extends PureComponent[GlyphProps, js.Object, Any] {
     def this(props: GlyphProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: GlyphProps, context: js.Any) = this()
+    def this(props: GlyphProps, context: Any) = this()
   }
 }

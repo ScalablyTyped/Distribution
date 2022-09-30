@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv
 
-Typings are for version 16.0.2
+Typings are for version 16.0.3
 
 ## Library description:
 Loads environment variables from .env file

@@ -12,11 +12,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * In version 8.15.0: introduced
+  * In version 9.0.2: introduced
   */
 @JSImport("mendixmodelsdk", "pages.WorkflowOverviewTemplateType")
 @js.native
-class WorkflowOverviewTemplateType protected ()
+open class WorkflowOverviewTemplateType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.WorkflowOverviewTemplateType {
   def this(
     model: AbstractModel,
@@ -47,7 +47,7 @@ object WorkflowOverviewTemplateType {
     * of the parent PageTemplate element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.PageTemplate): typings.mendixmodelsdk.pagesMod.pages.WorkflowOverviewTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WorkflowOverviewTemplateType]

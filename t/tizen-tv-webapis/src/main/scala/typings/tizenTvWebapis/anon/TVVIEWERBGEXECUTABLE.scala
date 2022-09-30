@@ -1,6 +1,6 @@
 package typings.tizenTvWebapis.anon
 
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

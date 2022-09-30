@@ -355,6 +355,11 @@ object iconCodepointsMod {
     
     inline def bringData_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bring-data")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.bug")
+    @js.native
+    def bug: String = js.native
+    inline def bug_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bug")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.buggy")
     @js.native
     def buggy: String = js.native

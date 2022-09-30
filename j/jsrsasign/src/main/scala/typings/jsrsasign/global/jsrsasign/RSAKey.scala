@@ -1,7 +1,7 @@
 package typings.jsrsasign.global.jsrsasign
 
-import typings.jsrsasign.jsrsasignNumbers.`0`
-import typings.jsrsasign.jsrsasignNumbers.`1`
+import typings.jsrsasign.jsrsasignInts.`0`
+import typings.jsrsasign.jsrsasignInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

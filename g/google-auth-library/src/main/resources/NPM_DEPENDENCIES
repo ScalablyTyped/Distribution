@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "google-auth-library" : "8.5.1"
+      "google-auth-library" : "8.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "google-auth-library" : "8.5.1"
+      "google-auth-library" : "8.5.2"
     }
   ],
   "compile-devDependencies" : [

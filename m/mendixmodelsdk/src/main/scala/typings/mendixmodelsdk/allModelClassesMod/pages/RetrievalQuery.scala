@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.12.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQuery")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQuery")
 @js.native
-class RetrievalQuery protected ()
+open class RetrievalQuery protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.RetrievalQuery {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class RetrievalQuery protected ()
 }
 object RetrievalQuery {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQuery")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQuery")
   @js.native
   val ^ : js.Any = js.native
   
@@ -42,13 +42,13 @@ object RetrievalQuery {
   inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.RetrievalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.RetrievalQuery]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQuery.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQuery.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQuery.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQuery.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

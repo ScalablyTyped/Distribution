@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/search-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.RangeSearchField")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.RangeSearchField")
 @js.native
-class RangeSearchField protected () extends SearchField {
+open class RangeSearchField protected () extends SearchField {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -65,7 +65,7 @@ class RangeSearchField protected () extends SearchField {
 }
 object RangeSearchField {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RangeSearchField")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.RangeSearchField")
   @js.native
   val ^ : js.Any = js.native
   
@@ -86,13 +86,13 @@ object RangeSearchField {
   inline def createIn(container: ControlBar): RangeSearchField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RangeSearchField]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RangeSearchField.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.RangeSearchField.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RangeSearchField.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.RangeSearchField.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

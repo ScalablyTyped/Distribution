@@ -27,7 +27,7 @@ object computeEffectMod {
     
     /* private */ var _compilationError: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _computeSourceCode: String = js.native
     
     /* private */ var _computeSourceCodeOverride: Any = js.native
@@ -44,17 +44,17 @@ object computeEffectMod {
     
     /* private */ var _isReadyInternal: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _key: String = js.native
     
     /* private */ var _loadShader: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pipelineContext: Nullable[IComputePipelineContext] = js.native
     
     /**
       * Prepares the effect
-      * @hidden
+      * @internal
       */
     def _prepareEffect(): Unit = js.native
     
@@ -71,7 +71,7 @@ object computeEffectMod {
     /* private */ var _useFinalCode: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Specifies if the effect was previously ready
       */
     var _wasPreviouslyReady: Boolean = js.native

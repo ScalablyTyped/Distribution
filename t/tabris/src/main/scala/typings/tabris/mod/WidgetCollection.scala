@@ -127,19 +127,19 @@ open class WidgetCollection[WidgetType /* <: Widget[Any] */] ()
   val jsxAttributes: `17`[WidgetType] = js.native
   
   /**
-    * Returns the last widget in the collection that is an instance of the given class.
-    * @param constructor A class to filter the results.
-    */
-  def last[U /* <: Widget[Any] */](): U = js.native
-  def last[U /* <: Widget[Any] */](constructor: `16`[U]): U = js.native
-  def last[Result /* <: WidgetType */](selector: Selector[WidgetType, Result]): js.UndefOr[Result] = js.native
-  /**
     * Returns the last widget in the collection that is matched by the selector. Without selector, it is
     * the same as `collection[collection.length - 1]`.
     * @param selector A selector expression or a predicate function to filter the results.
     */
+  def last[Result /* <: WidgetType */](): js.UndefOr[Result] = js.native
+  def last[U /* <: Widget[Any] */](constructor: `16`[U]): U = js.native
+  def last[Result /* <: WidgetType */](selector: Selector[WidgetType, Result]): js.UndefOr[Result] = js.native
+  /**
+    * Returns the last widget in the collection that is an instance of the given class.
+    * @param constructor A class to filter the results.
+    */
   @JSName("last")
-  def last_Result_WidgetType_Union[Result /* <: WidgetType */](): js.UndefOr[Result] = js.native
+  def last_U_U[U /* <: Widget[Any] */](): U = js.native
   
   /**
     * Contains the number of widgets in the collection.

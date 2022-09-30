@@ -65,7 +65,7 @@ trait PartialArraySortStrategy extends StObject {
   ] = js.undefined
   
   var flat: js.UndefOr[
-    js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.typedoc.typedocNumbers.`1`]]]
+    js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.typedoc.typedocInts.`1`]]]
   ] = js.undefined
   
   var flatMap: js.UndefOr[
@@ -233,9 +233,7 @@ object PartialArraySortStrategy {
     
     inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
     
-    inline def setFlat(
-      value: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.typedoc.typedocNumbers.`1`]]]
-    ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.typedoc.typedocInts.`1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     inline def setFlatMap(
       value: /* callback */ js.ThisFunction3[

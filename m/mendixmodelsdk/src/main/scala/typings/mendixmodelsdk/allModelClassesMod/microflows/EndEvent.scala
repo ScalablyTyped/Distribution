@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/end-event relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EndEvent")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EndEvent")
 @js.native
-class EndEvent protected ()
+open class EndEvent protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.EndEvent {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class EndEvent protected ()
 }
 object EndEvent {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EndEvent")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EndEvent")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object EndEvent {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObjectCollection): typings.mendixmodelsdk.microflowsMod.microflows.EndEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.EndEvent]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EndEvent.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EndEvent.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EndEvent.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EndEvent.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

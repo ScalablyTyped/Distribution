@@ -52,7 +52,7 @@ object baseParticleSystemMod {
       */
     /* protected */ def _attachImageProcessingConfiguration(configuration: Nullable[ImageProcessingConfiguration]): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _billboardMode: Double = js.native
     
     /* protected */ var _colorGradients: Nullable[js.Array[ColorGradient]] = js.native
@@ -80,13 +80,13 @@ object baseParticleSystemMod {
       */
     /* protected */ var _imageProcessingConfigurationDefines: ImageProcessingConfigurationDefines = js.native
     
-    /** @hidden */
+    /** @internal */
     var _isAnimationSheetEnabled: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _isBillboardBased: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _isSubEmitter: Boolean = js.native
     
     /* protected */ var _lifeTimeGradients: Nullable[js.Array[FactorGradient]] = js.native
@@ -98,14 +98,11 @@ object baseParticleSystemMod {
     /* protected */ var _rampGradients: Nullable[js.Array[Color3Gradient]] = js.native
     
     /**
-      * @param gradient
-      * @param gradients
-      * @param texture
-      * @hidden
+      * @internal
       */
     /* protected */ def _removeGradientAndTexture(gradient: Double, gradients: Nullable[js.Array[IValueGradient]], texture: Nullable[RawTexture]): BaseParticleSystem = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ def _reset(): Unit = js.native
     
     /* protected */ var _rootUrl: String = js.native
@@ -119,7 +116,12 @@ object baseParticleSystemMod {
     
     /* protected */ var _startSizeGradients: Nullable[js.Array[FactorGradient]] = js.native
     
+    /* private */ var _useLogarithmicDepth: Any = js.native
+    
     /* protected */ var _velocityGradients: Nullable[js.Array[FactorGradient]] = js.native
+    
+    /** @internal */
+    var _wasDispatched: Boolean = js.native
     
     /**
       * List of animations used by the particle system.
@@ -675,6 +677,12 @@ object baseParticleSystemMod {
       * The overall motion speed (0.01 is default update speed, faster updates = faster animation)
       */
     var updateSpeed: Double = js.native
+    
+    /**
+      * Gets or sets a boolean enabling the use of logarithmic depth buffers, which is good for wide depth buffers.
+      */
+    def useLogarithmicDepth: Boolean = js.native
+    def useLogarithmicDepth_=(value: Boolean): Unit = js.native
     
     /**
       * Gets or sets a world offset applied to all particles

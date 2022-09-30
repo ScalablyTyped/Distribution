@@ -26,7 +26,7 @@ open class Transaction () extends StObject {
   def canUndo(): Boolean = js.native
   
   /**This read-only property returns the list of ChangedEvents.*/
-  var changes: List[ChangedEvent] = js.native
+  var changes: typings.go.mod.List[ChangedEvent] = js.native
   
   /**
     * Clear all of the saved changes.

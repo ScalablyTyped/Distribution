@@ -16,15 +16,15 @@ object typeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isType(value: js.Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean]
+  inline def isType(value: Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean]
   
   type ExtractCSTWithSTN[IT /* <: SnapshotType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
   
   type ExtractCSTWithoutSTN[IT /* <: CreationType */] = /* import warning: importer.ImportType#apply Failed type conversion: IT['CreationType'] */ js.Any
   
-  type IAnyComplexType = IType[js.Any, js.Any, js.Object]
+  type IAnyComplexType = IType[Any, Any, js.Object]
   
-  type IAnyType = IType[js.Any, js.Any, js.Any]
+  type IAnyType = IType[Any, Any, Any]
   
   type IComplexType[C, S, T] = IType[C, S, T & js.Object]
   
@@ -64,8 +64,8 @@ object typeMod {
       */
     def create(): /* import warning: importer.ImportType#apply Failed type conversion: this['Type'] */ js.Any = js.native
     def create(snapshot: C): /* import warning: importer.ImportType#apply Failed type conversion: this['Type'] */ js.Any = js.native
-    def create(snapshot: C, env: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: this['Type'] */ js.Any = js.native
-    def create(snapshot: Unit, env: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: this['Type'] */ js.Any = js.native
+    def create(snapshot: C, env: Any): /* import warning: importer.ImportType#apply Failed type conversion: this['Type'] */ js.Any = js.native
+    def create(snapshot: Unit, env: Any): /* import warning: importer.ImportType#apply Failed type conversion: this['Type'] */ js.Any = js.native
     
     /**
       * Gets the textual representation of the type as a string.
@@ -83,7 +83,7 @@ object typeMod {
       * @param thing Snapshot or instance to be checked.
       * @returns true if the value is of the current type, false otherwise.
       */
-    def is(thing: js.Any): Boolean = js.native
+    def is(thing: Any): Boolean = js.native
     
     /**
       * Friendly type name.

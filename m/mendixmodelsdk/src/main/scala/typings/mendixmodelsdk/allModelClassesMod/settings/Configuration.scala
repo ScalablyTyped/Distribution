@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/configuration relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.Configuration")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.Configuration")
 @js.native
-class Configuration protected ()
+open class Configuration protected ()
   extends typings.mendixmodelsdk.settingsMod.settings.Configuration {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class Configuration protected ()
 }
 object Configuration {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.Configuration")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.Configuration")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object Configuration {
   inline def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ConfigurationSettings): typings.mendixmodelsdk.settingsMod.settings.Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.Configuration]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.Configuration.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.Configuration.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.Configuration.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.Configuration.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

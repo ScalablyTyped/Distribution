@@ -2,6 +2,7 @@ package typings.yayson
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.PromiseLike
 import typings.yayson.anon.TypeofPresenter
 import typings.yayson.yaysonStrings.default
 import typings.yayson.yaysonStrings.sequelize
@@ -55,8 +56,8 @@ object mod {
     
     def render(instanceOrCollection: js.Object): Any = js.native
     def render(instanceOrCollection: js.Object, options: JsonOptions): Any = js.native
-    def render[T](instanceOrCollection: js.Thenable[T]): js.Thenable[T] = js.native
-    def render[T](instanceOrCollection: js.Thenable[T], options: JsonOptions): js.Thenable[T] = js.native
+    def render[T](instanceOrCollection: PromiseLike[T]): PromiseLike[T] = js.native
+    def render[T](instanceOrCollection: PromiseLike[T], options: JsonOptions): PromiseLike[T] = js.native
     
     def toJSON(instanceOrCollection: js.Object): Any = js.native
     def toJSON(instanceOrCollection: js.Object, options: JsonOptions): Any = js.native

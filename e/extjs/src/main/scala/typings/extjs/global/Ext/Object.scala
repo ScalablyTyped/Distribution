@@ -97,7 +97,7 @@ object Object {
     * @param object Object... Any number of objects to merge into the destination.
     * @returns Object merged The destination object with all passed objects merged in.
     */
-  inline def merge(destination: Any, `object`: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(destination.asInstanceOf[js.Any]).`++`(`object`.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def merge(destination: Any, `object`: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(destination.asInstanceOf[js.Any]).`++`(`object`.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   /** [Method] Converts a name  value pair to an array of objects with support for nested structures
     * @param name String

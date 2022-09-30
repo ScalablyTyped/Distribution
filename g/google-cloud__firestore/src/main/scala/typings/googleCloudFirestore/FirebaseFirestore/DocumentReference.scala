@@ -1,7 +1,5 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
-import typings.std.Error
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +21,10 @@ trait DocumentReference[T] extends StObject {
     * provided object values. The write fails if the document already exists
     *
     * @param data The object data to serialize as the document.
+    * @throws Error If the provided input is not a valid Firestore document.
     * @return A Promise resolved with the write time of this create.
     */
-  def create(data: T): js.Promise[WriteResult] = js.native
+  def create(data: WithFieldValue[T]): js.Promise[WriteResult] = js.native
   
   /**
     * Deletes the document referred to by this `DocumentReference`.
@@ -81,7 +80,7 @@ trait DocumentReference[T] extends StObject {
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot[T], Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): js.Function0[Unit] = js.native
   
   /**
@@ -95,7 +94,6 @@ trait DocumentReference[T] extends StObject {
     */
   val path: String = js.native
   
-  def set(data: T): js.Promise[WriteResult] = js.native
   /**
     * Writes to the document referred to by this `DocumentReference`. If the
     * document does not yet exist, it will be created. If you pass
@@ -103,9 +101,19 @@ trait DocumentReference[T] extends StObject {
     *
     * @param data A map of the fields and values for the document.
     * @param options An object to configure the set behavior.
+    * @param  options.merge - If true, set() merges the values specified in its
+    * data argument. Fields omitted from this set() call remain untouched. If
+    * your input sets any field to an empty map, all nested fields are
+    * overwritten.
+    * @param options.mergeFields - If provided, set() only replaces the
+    * specified field paths. Any field path that is not specified is ignored
+    * and remains untouched. If your input sets any field to an empty map, all
+    * nested fields are overwritten.
+    * @throws Error If the provided input is not a valid Firestore document.
     * @return A Promise resolved with the write time of this set.
     */
-  def set(data: Partial[T], options: SetOptions): js.Promise[WriteResult] = js.native
+  def set(data: PartialWithFieldValue[T], options: SetOptions): js.Promise[WriteResult] = js.native
+  def set(data: WithFieldValue[T]): js.Promise[WriteResult] = js.native
   
   /**
     * Updates fields in the document referred to by this `DocumentReference`.
@@ -117,10 +125,11 @@ trait DocumentReference[T] extends StObject {
     * @param data An object containing the fields and values with which to
     * update the document.
     * @param precondition A Precondition to enforce on this update.
+    * @throws Error If the provided input is not valid Firestore data.
     * @return A Promise resolved with the write time of this update.
     */
-  def update(data: UpdateData): js.Promise[WriteResult] = js.native
-  def update(data: UpdateData, precondition: Precondition): js.Promise[WriteResult] = js.native
+  def update(data: UpdateData[T]): js.Promise[WriteResult] = js.native
+  def update(data: UpdateData[T], precondition: Precondition): js.Promise[WriteResult] = js.native
   /**
     * Updates fields in the document referred to by this `DocumentReference`.
     * The update will fail if applied to a document that does not exist.
@@ -136,11 +145,13 @@ trait DocumentReference[T] extends StObject {
     * @param moreFieldsOrPrecondition An alternating list of field paths and
     * values to update, optionally followed by a `Precondition` to enforce on
     * this update.
+    * @throws Error If the provided input is not valid Firestore data.
     * @return A Promise resolved with the write time of this update.
     */
-  def update(field: String, value: js.Any, moreFieldsOrPrecondition: js.Any*): js.Promise[WriteResult] = js.native
-  def update(field: FieldPath, value: js.Any, moreFieldsOrPrecondition: js.Any*): js.Promise[WriteResult] = js.native
+  def update(field: String, value: Any, moreFieldsOrPrecondition: Any*): js.Promise[WriteResult] = js.native
+  def update(field: FieldPath, value: Any, moreFieldsOrPrecondition: Any*): js.Promise[WriteResult] = js.native
   
+  def withConverter(converter: Null): DocumentReference[DocumentData] = js.native
   /**
     * Applies a custom data converter to this DocumentReference, allowing you
     * to use your own custom model objects with Firestore. When you call
@@ -148,7 +159,8 @@ trait DocumentReference[T] extends StObject {
     * provided converter will convert between Firestore data and your custom
     * type U.
     *
-    * @param converter Converts objects to and from Firestore.
+    * @param converter Converts objects to and from Firestore. Passing in
+    * `null` removes the current converter.
     * @return A DocumentReference<U> that uses the provided converter.
     */
   def withConverter[U](converter: FirestoreDataConverter[U]): DocumentReference[U] = js.native

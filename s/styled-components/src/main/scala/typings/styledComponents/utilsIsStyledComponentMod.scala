@@ -10,5 +10,5 @@ object utilsIsStyledComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(target: Any): /* is styled-components.styled-components/native/dist/types.IStyledComponent<any, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components/native/dist/types.IStyledComponent<any, unknown> */ Boolean]
+  inline def default(target: Any): /* is styled-components.styled-components/native/dist/types.IStyledComponent<'web', any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components/native/dist/types.IStyledComponent<'web', any, any> */ Boolean]
 }

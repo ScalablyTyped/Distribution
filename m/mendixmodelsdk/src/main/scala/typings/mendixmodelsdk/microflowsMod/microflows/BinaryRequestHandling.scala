@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 6.9.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryRequestHandling")
 @js.native
-class BinaryRequestHandling protected () extends RequestHandling {
+open class BinaryRequestHandling protected () extends RequestHandling {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,6 +37,7 @@ class BinaryRequestHandling protected () extends RequestHandling {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def expressionModel: Expression = js.native
@@ -46,7 +47,7 @@ class BinaryRequestHandling protected () extends RequestHandling {
 }
 object BinaryRequestHandling {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryRequestHandling")
   @js.native
   val ^ : js.Any = js.native
   
@@ -92,13 +93,13 @@ object BinaryRequestHandling {
   inline def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryRequestHandling.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryRequestHandling.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

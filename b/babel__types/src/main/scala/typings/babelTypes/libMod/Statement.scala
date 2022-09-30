@@ -47,14 +47,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.libMod.OpaqueType_
   - typings.babelTypes.libMod.TypeAlias_
   - typings.babelTypes.libMod.EnumDeclaration_
-  - typings.babelTypes.libMod.TSDeclareFunction
-  - typings.babelTypes.libMod.TSInterfaceDeclaration
-  - typings.babelTypes.libMod.TSTypeAliasDeclaration
-  - typings.babelTypes.libMod.TSEnumDeclaration
-  - typings.babelTypes.libMod.TSModuleDeclaration
-  - typings.babelTypes.libMod.TSImportEqualsDeclaration
-  - typings.babelTypes.libMod.TSExportAssignment
-  - typings.babelTypes.libMod.TSNamespaceExportDeclaration
+  - typings.babelTypes.libMod.TSDeclareFunction__
+  - typings.babelTypes.libMod.TSInterfaceDeclaration__
+  - typings.babelTypes.libMod.TSTypeAliasDeclaration__
+  - typings.babelTypes.libMod.TSEnumDeclaration__
+  - typings.babelTypes.libMod.TSModuleDeclaration__
+  - typings.babelTypes.libMod.TSImportEqualsDeclaration__
+  - typings.babelTypes.libMod.TSExportAssignment__
+  - typings.babelTypes.libMod.TSNamespaceExportDeclaration__
 */
 trait Statement extends StObject
 object Statement {
@@ -173,7 +173,7 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.libMod.ExportAllDeclaration_]
   }
   
-  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.libMod.ExportDefaultDeclaration_ = {
+  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction__ | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.libMod.ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[typings.babelTypes.libMod.ExportDefaultDeclaration_]
@@ -265,55 +265,55 @@ object Statement {
     __obj.asInstanceOf[typings.babelTypes.libMod.SwitchStatement_]
   }
   
-  inline def TSDeclareFunction(params: js.Array[Identifier_ | Pattern | RestElement_]): typings.babelTypes.libMod.TSDeclareFunction = {
+  inline def TSDeclareFunction__(params: js.Array[Identifier_ | Pattern | RestElement_]): typings.babelTypes.libMod.TSDeclareFunction__ = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSDeclareFunction")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSDeclareFunction]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSDeclareFunction__]
   }
   
-  inline def TSEnumDeclaration(id: Identifier_, members: js.Array[TSEnumMember]): typings.babelTypes.libMod.TSEnumDeclaration = {
+  inline def TSEnumDeclaration__(id: Identifier_, members: js.Array[TSEnumMember__]): typings.babelTypes.libMod.TSEnumDeclaration__ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSEnumDeclaration")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSEnumDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSEnumDeclaration__]
   }
   
-  inline def TSExportAssignment(expression: Expression): typings.babelTypes.libMod.TSExportAssignment = {
+  inline def TSExportAssignment__(expression: Expression): typings.babelTypes.libMod.TSExportAssignment__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSExportAssignment")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSExportAssignment]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSExportAssignment__]
   }
   
-  inline def TSImportEqualsDeclaration(id: Identifier_, isExport: Boolean, moduleReference: TSEntityName | TSExternalModuleReference): typings.babelTypes.libMod.TSImportEqualsDeclaration = {
+  inline def TSImportEqualsDeclaration__(id: Identifier_, isExport: Boolean, moduleReference: TSEntityName | TSExternalModuleReference__): typings.babelTypes.libMod.TSImportEqualsDeclaration__ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isExport = isExport.asInstanceOf[js.Any], moduleReference = moduleReference.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSImportEqualsDeclaration")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSImportEqualsDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSImportEqualsDeclaration__]
   }
   
-  inline def TSInterfaceDeclaration(body: TSInterfaceBody, id: Identifier_): typings.babelTypes.libMod.TSInterfaceDeclaration = {
+  inline def TSInterfaceDeclaration__(body: TSInterfaceBody__, id: Identifier_): typings.babelTypes.libMod.TSInterfaceDeclaration__ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSInterfaceDeclaration")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSInterfaceDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSInterfaceDeclaration__]
   }
   
-  inline def TSModuleDeclaration(
-    body: TSModuleBlock | typings.babelTypes.libMod.TSModuleDeclaration,
+  inline def TSModuleDeclaration__(
+    body: TSModuleBlock__ | typings.babelTypes.libMod.TSModuleDeclaration__,
     id: Identifier_ | StringLiteral_
-  ): typings.babelTypes.libMod.TSModuleDeclaration = {
+  ): typings.babelTypes.libMod.TSModuleDeclaration__ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSModuleDeclaration")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSModuleDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSModuleDeclaration__]
   }
   
-  inline def TSNamespaceExportDeclaration(id: Identifier_): typings.babelTypes.libMod.TSNamespaceExportDeclaration = {
+  inline def TSNamespaceExportDeclaration__(id: Identifier_): typings.babelTypes.libMod.TSNamespaceExportDeclaration__ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSNamespaceExportDeclaration")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSNamespaceExportDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSNamespaceExportDeclaration__]
   }
   
-  inline def TSTypeAliasDeclaration(id: Identifier_, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAliasDeclaration = {
+  inline def TSTypeAliasDeclaration__(id: Identifier_, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAliasDeclaration__ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeAliasDeclaration")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeAliasDeclaration]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeAliasDeclaration__]
   }
   
   inline def ThrowStatement_(argument: Expression): typings.babelTypes.libMod.ThrowStatement_ = {

@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,4 +11,4 @@ type IEvent[T] = js.Function2[
 /* thisArg */ js.UndefOr[Any], 
 IDisposable]
 
-type Thenable[T] = js.Thenable[T]
+type Thenable[T] = PromiseLike[T]

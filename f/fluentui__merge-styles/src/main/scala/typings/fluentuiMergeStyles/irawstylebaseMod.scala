@@ -1,6 +1,6 @@
 package typings.fluentuiMergeStyles
 
-import typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`0`
+import typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`0`
 import typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.`-ms-autohiding-scrollbar`
 import typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.`border-box`
 import typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.`break-word`
@@ -369,15 +369,15 @@ object irawstylebaseMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`100`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`200`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`300`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`400`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`500`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`600`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`700`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`800`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`900`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`100`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`200`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`300`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`400`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`500`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`600`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`700`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`800`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`900`
     - typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.normal
     - typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.bold
     - typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.bolder
@@ -398,23 +398,23 @@ object irawstylebaseMod {
   trait IFontWeight extends StObject
   object IFontWeight {
     
-    inline def `100`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`100` = 100.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`100`]
+    inline def `100`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`100` = 100.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`100`]
     
-    inline def `200`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`200` = 200.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`200`]
+    inline def `200`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`200` = 200.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`200`]
     
-    inline def `300`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`300` = 300.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`300`]
+    inline def `300`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`300` = 300.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`300`]
     
-    inline def `400`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`400` = 400.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`400`]
+    inline def `400`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`400` = 400.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`400`]
     
-    inline def `500`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`500` = 500.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`500`]
+    inline def `500`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`500` = 500.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`500`]
     
-    inline def `600`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`600` = 600.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`600`]
+    inline def `600`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`600` = 600.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`600`]
     
-    inline def `700`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`700` = 700.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`700`]
+    inline def `700`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`700` = 700.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`700`]
     
-    inline def `800`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`800` = 800.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`800`]
+    inline def `800`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`800` = 800.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`800`]
     
-    inline def `900`: typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`900` = 900.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`900`]
+    inline def `900`: typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`900` = 900.asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`900`]
     
     inline def bold: typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.bold = "bold".asInstanceOf[typings.fluentuiMergeStyles.fluentuiMergeStylesStrings.bold]
     

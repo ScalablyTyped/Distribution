@@ -1,22 +1,77 @@
 package typings.jestResolve
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.jestResolve.moduleNotFoundErrorMod.ModuleNotFoundError
-import typings.jestResolve.moduleNotFoundErrorMod.default
+import typings.jestResolve.mod.ModuleNotFoundError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
-  @js.native
-  trait TypeofModuleNotFoundError
-    extends Instantiable1[/* message */ String, default]
-       with Instantiable2[/* message */ String, /* moduleName */ String, default] {
+  trait FilePath extends StObject {
     
-    def duckType(error: ModuleNotFoundError): ModuleNotFoundError = js.native
+    var filePath: String
+    
+    def requireResolveFunction(moduleName: String): String
+    
+    var rootDir: String
+  }
+  object FilePath {
+    
+    inline def apply(filePath: String, requireResolveFunction: String => String, rootDir: String): FilePath = {
+      val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], requireResolveFunction = js.Any.fromFunction1(requireResolveFunction), rootDir = rootDir.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FilePath]
+    }
+    
+    extension [Self <: FilePath](x: Self) {
+      
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      
+      inline def setRequireResolveFunction(value: String => String): Self = StObject.set(x, "requireResolveFunction", js.Any.fromFunction1(value))
+      
+      inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RequireResolveFunction extends StObject {
+    
+    def requireResolveFunction(moduleName: String): String
+    
+    var rootDir: String
+    
+    var testEnvironment: String
+  }
+  object RequireResolveFunction {
+    
+    inline def apply(requireResolveFunction: String => String, rootDir: String, testEnvironment: String): RequireResolveFunction = {
+      val __obj = js.Dynamic.literal(requireResolveFunction = js.Any.fromFunction1(requireResolveFunction), rootDir = rootDir.asInstanceOf[js.Any], testEnvironment = testEnvironment.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequireResolveFunction]
+    }
+    
+    extension [Self <: RequireResolveFunction](x: Self) {
+      
+      inline def setRequireResolveFunction(value: String => String): Self = StObject.set(x, "requireResolveFunction", js.Any.fromFunction1(value))
+      
+      inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
+      
+      inline def setTestEnvironment(value: String): Self = StObject.set(x, "testEnvironment", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TypeofModuleNotFoundError extends StObject {
+    
+    /* static member */
+    def duckType(error: ModuleNotFoundError): ModuleNotFoundError
+  }
+  object TypeofModuleNotFoundError {
+    
+    inline def apply(duckType: ModuleNotFoundError => ModuleNotFoundError): TypeofModuleNotFoundError = {
+      val __obj = js.Dynamic.literal(duckType = js.Any.fromFunction1(duckType))
+      __obj.asInstanceOf[TypeofModuleNotFoundError]
+    }
+    
+    extension [Self <: TypeofModuleNotFoundError](x: Self) {
+      
+      inline def setDuckType(value: ModuleNotFoundError => ModuleNotFoundError): Self = StObject.set(x, "duckType", js.Any.fromFunction1(value))
+    }
   }
 }

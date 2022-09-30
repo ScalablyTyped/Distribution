@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/sidebar-toggle-button relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleButton")
 @js.native
-class SidebarToggleButton protected () extends Button {
+open class SidebarToggleButton protected () extends Button {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -50,7 +50,7 @@ class SidebarToggleButton protected () extends Button {
 }
 object SidebarToggleButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -624,13 +624,13 @@ object SidebarToggleButton {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

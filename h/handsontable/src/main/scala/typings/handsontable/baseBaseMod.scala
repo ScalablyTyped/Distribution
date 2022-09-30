@@ -17,8 +17,8 @@ import typings.handsontable.contextMenuMod.ContextMenu
 import typings.handsontable.coreMod.default
 import typings.handsontable.dropdownMenuMod.DropdownMenu
 import typings.handsontable.filtersFiltersMod.ColumnConditions
-import typings.handsontable.handsontableNumbers.`-1`
-import typings.handsontable.handsontableNumbers.`0`
+import typings.handsontable.handsontableInts.`-1`
+import typings.handsontable.handsontableInts.`0`
 import typings.handsontable.handsontableStrings.afterAddChild
 import typings.handsontable.handsontableStrings.afterAutofill
 import typings.handsontable.handsontableStrings.afterBeginEditing
@@ -206,7 +206,6 @@ import typings.handsontable.handsontableStrings.modifyRowData
 import typings.handsontable.handsontableStrings.modifyRowHeader
 import typings.handsontable.handsontableStrings.modifyRowHeaderWidth
 import typings.handsontable.handsontableStrings.modifyRowHeight
-import typings.handsontable.handsontableStrings.modifyRowSourceData
 import typings.handsontable.handsontableStrings.modifySourceData
 import typings.handsontable.handsontableStrings.modifyTransformEnd
 import typings.handsontable.handsontableStrings.modifyTransformStart
@@ -3262,10 +3261,6 @@ object baseBaseMod {
       callback: js.Array[js.UndefOr[js.Function2[/* height */ Double, /* row */ Double, Unit]]]
     ): Unit = js.native
     @JSName("addHook")
-    def addHook_modifyRowSourceData(key: modifyRowSourceData, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_modifyRowSourceData(key: modifyRowSourceData, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
-    @JSName("addHook")
     def addHook_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
@@ -3340,7 +3335,7 @@ object baseBaseMod {
     
     var pluginsInitializedCallbacks: js.Array[String] = js.native
     
-    def removeHooks(name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any): Unit = js.native
+    def removeHooks(name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Unit = js.native
     
     def updatePlugin(): Unit = js.native
   }

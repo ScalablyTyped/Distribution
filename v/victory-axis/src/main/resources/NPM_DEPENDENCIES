@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "victory-axis" : "36.6.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "victory-axis" : "36.6.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

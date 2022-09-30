@@ -10,10 +10,10 @@ Very generic autoincrement plugin for mongoose
 | ------------------ | :-------------: |
 | Full name          | mongoose-sequence |
 | Keywords           | mongoose, autoincrement, sequence, seq |
-| # releases         | 6 |
-| # dependents       | 23 |
-| # downloads        | 400835 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 60862.666666666664 |
+| # stars            | 236.0 |
 
 ## Links
 - [Homepage](https://github.com/ramiel/mongoose-sequence#readme)

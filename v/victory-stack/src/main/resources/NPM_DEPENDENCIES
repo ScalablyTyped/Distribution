@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-stack" : "36.6.7"
+      "victory-stack" : "36.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-stack" : "36.6.7"
+      "victory-stack" : "36.6.8"
     }
   ],
   "compile-devDependencies" : [

@@ -1,30 +1,30 @@
 package typings.intlifyMessageCompiler.mod
 
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`0`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`1`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`2`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`3`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`4`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`5`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`6`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`7`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`8`
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`9`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`0`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`1`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`2`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`3`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`4`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`5`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`6`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`7`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`8`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`0`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`1`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`2`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`3`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`4`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`5`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`6`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`7`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`8`
-  - typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`9`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`0`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`1`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`2`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`3`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`4`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`5`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`6`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`7`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`8`
+  - typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`9`
 */
 trait NodeTypes extends StObject
 object NodeTypes {

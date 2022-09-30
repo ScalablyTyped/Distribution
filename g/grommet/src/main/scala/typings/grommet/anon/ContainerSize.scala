@@ -8,9 +8,9 @@ trait ContainerSize extends StObject {
   
   var container: js.UndefOr[BackgroundExtendPad] = js.undefined
   
-  var size: js.UndefOr[`36`] = js.undefined
+  var size: js.UndefOr[`37`] = js.undefined
   
-  var text: js.UndefOr[`37`] = js.undefined
+  var text: js.UndefOr[`38`] = js.undefined
 }
 object ContainerSize {
   
@@ -25,11 +25,11 @@ object ContainerSize {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setSize(value: `36`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: `37`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setText(value: `37`): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: `38`): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

@@ -17,11 +17,11 @@ object webgpuComputePipelineContextMod {
        with IComputePipelineContext {
     def this(engine: WebGPUEngine) = this()
     
-    /** @hidden */
+    /** @internal */
     /* CompleteClass */
     override def _getComputeShaderCode(): String | Null = js.native
     
-    /** @hidden */
+    /** @internal */
     @JSName("_name")
     var _name_WebGPUComputePipelineContext: String = js.native
     

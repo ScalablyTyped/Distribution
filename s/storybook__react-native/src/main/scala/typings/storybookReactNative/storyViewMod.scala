@@ -10,19 +10,19 @@ object storyViewMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/StoryView", JSImport.Default)
   @js.native
-  class default () extends StoryView
+  open class default () extends StoryView
   
   trait Props extends StObject {
     
     var onDevice: js.UndefOr[Boolean] = js.undefined
     
-    var stories: js.Any
+    var stories: Any
     
     var url: String
   }
   object Props {
     
-    inline def apply(stories: js.Any, url: String): Props = {
+    inline def apply(stories: Any, url: String): Props = {
       val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
@@ -33,7 +33,7 @@ object storyViewMod {
       
       inline def setOnDeviceUndefined: Self = StObject.set(x, "onDevice", js.undefined)
       
-      inline def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -41,7 +41,7 @@ object storyViewMod {
   
   @js.native
   trait StoryView
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[Props, js.Object, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MStoryView(): Unit = js.native

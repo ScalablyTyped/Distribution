@@ -1,17 +1,12 @@
 package typings.xadesjs.mod.xml
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.xadesjs.mod.xml.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("xadesjs", "xml.OtherCertificateCollection")
 @js.native
-class OtherCertificateCollection ()
-  extends typings.xadesjs.xmlMod.OtherCertificateCollection
-object OtherCertificateCollection {
-  
-  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OtherCertificateCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("OtherCertificateCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OtherCertificateCollection]]
+open class OtherCertificateCollection ()
+  extends typings.xadesjs.typesXmlMod.OtherCertificateCollection {
+  def this(properties: js.Object) = this()
 }

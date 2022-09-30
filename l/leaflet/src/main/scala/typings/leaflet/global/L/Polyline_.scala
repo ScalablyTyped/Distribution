@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Polyline")
 @js.native
-class Polyline_[T /* <: GeometryObject */, P] protected ()
+open class Polyline_[T /* <: GeometryObject */, P] protected ()
   extends typings.leaflet.mod.Polyline_[T, P] {
   def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
   def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()

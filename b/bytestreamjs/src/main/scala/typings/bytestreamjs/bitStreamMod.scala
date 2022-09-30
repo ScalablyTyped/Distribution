@@ -7,7 +7,7 @@ import typings.bytestreamjs.byteStreamMod.FindFirstSequenceResult
 import typings.bytestreamjs.byteStreamMod.FindPairedArraysResult
 import typings.bytestreamjs.byteStreamMod.FindPairedPatternsResult
 import typings.bytestreamjs.byteStreamMod.FindResult
-import typings.bytestreamjs.bytestreamjsNumbers.`-1`
+import typings.bytestreamjs.bytestreamjsInts.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

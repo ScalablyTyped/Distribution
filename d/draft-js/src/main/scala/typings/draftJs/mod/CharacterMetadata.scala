@@ -1,29 +1,38 @@
 package typings.draftJs.mod
 
 import typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadataConfig
+import typings.draftJs.mod.Draft.Model.ImmutableData.DraftInlineStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("draft-js", "CharacterMetadata")
 @js.native
-class CharacterMetadata ()
-  extends typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata
+open class CharacterMetadata ()
+  extends StObject
+     with typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata {
+  
+  /* CompleteClass */
+  override def getEntity(): String = js.native
+  
+  /* CompleteClass */
+  override def getStyle(): DraftInlineStyle = js.native
+  
+  /* CompleteClass */
+  override def hasStyle(style: String): Boolean = js.native
+}
 object CharacterMetadata {
   
-  /* static member */
-  @JSImport("draft-js", "CharacterMetadata.applyEntity")
+  @JSImport("draft-js", "CharacterMetadata")
   @js.native
-  def applyEntity(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = js.native
-  @JSImport("draft-js", "CharacterMetadata.applyEntity")
-  @js.native
-  def applyEntity(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata, entityKey: String): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("draft-js", "CharacterMetadata.applyStyle")
-  @js.native
-  def applyStyle(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata, style: String): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = js.native
+  inline def applyEntity(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("applyEntity")(record.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata]
+  inline def applyEntity(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata, entityKey: String): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("applyEntity")(record.asInstanceOf[js.Any], entityKey.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata]
+  
+  /* static member */
+  inline def applyStyle(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata, style: String): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("applyStyle")(record.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata]
   
   /**
     * Use this function instead of the `CharacterMetadata` constructor.
@@ -32,15 +41,9 @@ object CharacterMetadata {
     * possible.
     */
   /* static member */
-  @JSImport("draft-js", "CharacterMetadata.create")
-  @js.native
-  def create(): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = js.native
-  @JSImport("draft-js", "CharacterMetadata.create")
-  @js.native
-  def create(config: CharacterMetadataConfig): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = js.native
+  inline def create(): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata]
+  inline def create(config: CharacterMetadataConfig): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata]
   
   /* static member */
-  @JSImport("draft-js", "CharacterMetadata.removeStyle")
-  @js.native
-  def removeStyle(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata, style: String): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = js.native
+  inline def removeStyle(record: typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata, style: String): typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStyle")(record.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata]
 }

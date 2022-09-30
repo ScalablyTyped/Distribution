@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SendCommandRequest extends StObject {
   
   /**
+    * The CloudWatch alarm you want to apply to your command.
+    */
+  var AlarmConfiguration: js.UndefOr[typings.awsSdk.ssmMod.AlarmConfiguration] = js.undefined
+  
+  /**
     * Enables Amazon Web Services Systems Manager to send Run Command output to Amazon CloudWatch Logs. Run Command is a capability of Amazon Web Services Systems Manager.
     */
   var CloudWatchOutputConfig: js.UndefOr[typings.awsSdk.ssmMod.CloudWatchOutputConfig] = js.undefined
@@ -99,6 +104,10 @@ object SendCommandRequest {
   }
   
   extension [Self <: SendCommandRequest](x: Self) {
+    
+    inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "AlarmConfiguration", js.undefined)
     
     inline def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = StObject.set(x, "CloudWatchOutputConfig", value.asInstanceOf[js.Any])
     

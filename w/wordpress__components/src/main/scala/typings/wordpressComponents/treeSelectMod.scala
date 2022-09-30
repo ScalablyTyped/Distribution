@@ -60,7 +60,7 @@ object treeSelectMod {
         
         inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
         
-        inline def setTreeVarargs(value: TreeNode*): Self = StObject.set(x, "tree", js.Array(value :_*))
+        inline def setTreeVarargs(value: TreeNode*): Self = StObject.set(x, "tree", js.Array(value*))
       }
     }
     
@@ -93,7 +93,7 @@ object treeSelectMod {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setChildrenVarargs(value: TreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: TreeNode*): Self = StObject.set(x, "children", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         

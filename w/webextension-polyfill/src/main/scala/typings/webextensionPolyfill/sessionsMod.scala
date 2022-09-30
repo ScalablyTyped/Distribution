@@ -2,7 +2,7 @@ package typings.webextensionPolyfill
 
 import typings.webextensionPolyfill.eventsMod.Events.Event
 import typings.webextensionPolyfill.tabsMod.Tabs.Tab
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`25`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`25`
 import typings.webextensionPolyfill.windowsMod.Windows.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

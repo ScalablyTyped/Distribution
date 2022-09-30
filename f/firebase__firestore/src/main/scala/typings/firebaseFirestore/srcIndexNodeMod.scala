@@ -562,17 +562,17 @@ object srcIndexNodeMod {
     firestore: typings.firebaseFirestore.firestoreSrcLiteApiDatabaseMod.Firestore,
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
+  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
   inline def collection(
     reference: typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[Any],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
+  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
   inline def collection(
     reference: typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
+  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[DocumentData]]
   
   inline def collectionGroup(
     firestore: typings.firebaseFirestore.firestoreSrcLiteApiDatabaseMod.Firestore,
@@ -603,22 +603,22 @@ object srcIndexNodeMod {
     firestore: typings.firebaseFirestore.firestoreSrcLiteApiDatabaseMod.Firestore,
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
+  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(firestore.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
   inline def doc(
     reference: typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[Any],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
+  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[DocumentData]]
   inline def doc[T](
     reference: typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[T],
     path: String,
     pathSegments: String*
-  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T]]
+  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T]]
   inline def doc[T](
     reference: typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.CollectionReference[T],
     path: Unit,
     pathSegments: String*
-  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T]]
+  ): typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(reference.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T]]
   
   inline def documentId(): typings.firebaseFirestore.firestoreSrcLiteApiFieldPathMod.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.firebaseFirestore.firestoreSrcLiteApiFieldPathMod.FieldPath]
   
@@ -680,7 +680,7 @@ object srcIndexNodeMod {
     bundleData: ReadableStream[js.typedarray.Uint8Array]
   ): typings.firebaseFirestore.srcApiBundleMod.LoadBundleTask = (^.asInstanceOf[js.Dynamic].applyDynamic("loadBundle")(firestore.asInstanceOf[js.Any], bundleData.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.srcApiBundleMod.LoadBundleTask]
   
-  inline def logWarn(msg: String, obj: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logWarn")(List(msg.asInstanceOf[js.Any]).`++`(obj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def logWarn(msg: String, obj: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logWarn")(scala.List(msg.asInstanceOf[js.Any]).`++`(obj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def namedQuery(firestore: typings.firebaseFirestore.srcApiDatabaseMod.Firestore, name: String): js.Promise[Query[DocumentData] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("namedQuery")(firestore.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Query[DocumentData] | Null]]
   
@@ -826,7 +826,7 @@ object srcIndexNodeMod {
   inline def query[T](
     query: Query[T],
     queryConstraints: typings.firebaseFirestore.firestoreSrcLiteApiQueryMod.QueryConstraint*
-  ): Query[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query[T]]
+  ): Query[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query[T]]
   
   inline def queryEqual[T](left: Query[T], right: Query[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("queryEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -913,13 +913,13 @@ object srcIndexNodeMod {
     field: String,
     value: Any,
     moreFieldsAndValues: Any*
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((List(reference.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(moreFieldsAndValues.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((scala.List(reference.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(moreFieldsAndValues.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
   inline def updateDoc(
     reference: typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[Any],
     field: typings.firebaseFirestore.firestoreSrcLiteApiFieldPathMod.FieldPath,
     value: Any,
     moreFieldsAndValues: Any*
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((List(reference.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(moreFieldsAndValues.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((scala.List(reference.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(moreFieldsAndValues.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
   inline def updateDoc[T](
     reference: typings.firebaseFirestore.firestoreSrcLiteApiReferenceMod.DocumentReference[T],
     data: UpdateData[T]

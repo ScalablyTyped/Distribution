@@ -1,7 +1,7 @@
 package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.anon.ColIndex
-import typings.reactBootstrapTable.reactBootstrapTableNumbers.`1`
+import typings.reactBootstrapTable.reactBootstrapTableInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

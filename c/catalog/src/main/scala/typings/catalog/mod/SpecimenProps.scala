@@ -1,52 +1,42 @@
 package typings.catalog.mod
 
-import typings.catalog.catalogNumbers.`1`
-import typings.catalog.catalogNumbers.`2`
-import typings.catalog.catalogNumbers.`3`
-import typings.catalog.catalogNumbers.`4`
-import typings.catalog.catalogNumbers.`5`
-import typings.catalog.catalogNumbers.`6`
+import typings.catalog.catalogInts.`1`
+import typings.catalog.catalogInts.`2`
+import typings.catalog.catalogInts.`3`
+import typings.catalog.catalogInts.`4`
+import typings.catalog.catalogInts.`5`
+import typings.catalog.catalogInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpecimenProps extends js.Object {
-  var rawBody: js.UndefOr[String] = js.native
-  var rawOptions: js.UndefOr[String] = js.native
-  var span: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.native
+trait SpecimenProps extends StObject {
+  
+  var rawBody: js.UndefOr[String] = js.undefined
+  
+  var rawOptions: js.UndefOr[String] = js.undefined
+  
+  var span: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
 }
-
 object SpecimenProps {
-  @scala.inline
-  def apply(): SpecimenProps = {
+  
+  inline def apply(): SpecimenProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpecimenProps]
   }
-  @scala.inline
-  implicit class SpecimenPropsOps[Self <: SpecimenProps] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setRawBody(value: String): Self = this.set("rawBody", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRawBody: Self = this.set("rawBody", js.undefined)
-    @scala.inline
-    def setRawOptions(value: String): Self = this.set("rawOptions", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRawOptions: Self = this.set("rawOptions", js.undefined)
-    @scala.inline
-    def setSpan(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = this.set("span", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteSpan: Self = this.set("span", js.undefined)
-  }
   
+  extension [Self <: SpecimenProps](x: Self) {
+    
+    inline def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
+    
+    inline def setRawBodyUndefined: Self = StObject.set(x, "rawBody", js.undefined)
+    
+    inline def setRawOptions(value: String): Self = StObject.set(x, "rawOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRawOptionsUndefined: Self = StObject.set(x, "rawOptions", js.undefined)
+    
+    inline def setSpan(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    
+    inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+  }
 }
-

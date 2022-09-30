@@ -261,7 +261,7 @@ object codegenMod {
     def this(prefix: String, nameStr: String) = this()
   }
   
-  inline def _underscore(strs: TemplateStringsArray, args: CodeArg*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("_")(List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
+  inline def _underscore(strs: TemplateStringsArray, args: CodeArg*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("_")(scala.List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
   
   inline def and(args: Code*): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Code]
   
@@ -342,7 +342,7 @@ object codegenMod {
   
   inline def regexpCode(rx: js.RegExp): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("regexpCode")(rx.asInstanceOf[js.Any]).asInstanceOf[Code]
   
-  inline def str(strs: TemplateStringsArray, args: (CodeArg | js.Array[String])*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
+  inline def str(strs: TemplateStringsArray, args: (CodeArg | js.Array[String])*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(scala.List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
   
   inline def strConcat(c1: Code, c2: Code): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("strConcat")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[Code]
   

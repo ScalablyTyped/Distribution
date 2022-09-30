@@ -4,7 +4,6 @@ import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashc
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotconfigurationDotUpdate
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotconfigurationDottheDefaultProvider
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotdeploymentDotExtensionManager
-import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotdeploymentDotPackageInformationProvider
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotdeploymentDotthePackageManagerFactory
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotframeDottheAutoRecovery
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotframeDottheDesktop
@@ -18,19 +17,16 @@ import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashc
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotreflectionDottheCoreReflection
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotresourceDotOfficeResourceLoader
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotscriptDotbrowseDottheBrowseNodeFactory
-import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotscriptDotproviderDottheMasterScriptProviderFactory
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotscriptDottheServiceDocumenter
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotsdbDotDataAccessDescriptorFactory
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDottaskDotOfficeRestartManager
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDottaskDottheJobExecutor
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotuiDotContextChangeEventMultiplexer
-import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotuiDottheModuleUIConfigurationManagerSupplier
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotuiDottheUICategoryDescription
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotuiDottheUIElementFactoryManager
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotuiDottheWindowContentFactoryManager
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotuiDottheWindowStateConfiguration
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotutilDottheMacroExpander
-import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotutilDottheOfficeInstallationDirectories
 import typings.activexLibreoffice.activexLibreofficeStrings.SlashsingletonSlashcomDotsunDotstarDotutilDotthePathSettings
 import typings.activexLibreoffice.activexLibreofficeStrings.`[][]any`
 import typings.activexLibreoffice.activexLibreofficeStrings.`[][]boolean`
@@ -1790,7 +1786,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstardeploymentExtensionManager(aName: SlashsingletonSlashcomDotsunDotstarDotdeploymentDotExtensionManager): ExtensionManager = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstardeploymentPackageInformationProvider(aName: SlashsingletonSlashcomDotsunDotstarDotdeploymentDotPackageInformationProvider): PackageInformationProvider = js.native
+    def getByName_singletoncomsunstardeploymentPackageInformationProvider(aName: String): PackageInformationProvider = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstardeploymentthePackageManagerFactory(aName: SlashsingletonSlashcomDotsunDotstarDotdeploymentDotthePackageManagerFactory): thePackageManagerFactory = js.native
     @JSName("getByName")
@@ -1818,7 +1814,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstarscriptbrowsetheBrowseNodeFactory(aName: SlashsingletonSlashcomDotsunDotstarDotscriptDotbrowseDottheBrowseNodeFactory): theBrowseNodeFactory = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstarscriptprovidertheMasterScriptProviderFactory(aName: SlashsingletonSlashcomDotsunDotstarDotscriptDotproviderDottheMasterScriptProviderFactory): theMasterScriptProviderFactory = js.native
+    def getByName_singletoncomsunstarscriptprovidertheMasterScriptProviderFactory(aName: String): theMasterScriptProviderFactory = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstarscripttheServiceDocumenter(aName: SlashsingletonSlashcomDotsunDotstarDotscriptDottheServiceDocumenter): theServiceDocumenter = js.native
     @JSName("getByName")
@@ -1830,7 +1826,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstaruiContextChangeEventMultiplexer(aName: SlashsingletonSlashcomDotsunDotstarDotuiDotContextChangeEventMultiplexer): ContextChangeEventMultiplexer = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstaruitheModuleUIConfigurationManagerSupplier(aName: SlashsingletonSlashcomDotsunDotstarDotuiDottheModuleUIConfigurationManagerSupplier): theModuleUIConfigurationManagerSupplier = js.native
+    def getByName_singletoncomsunstaruitheModuleUIConfigurationManagerSupplier(aName: String): theModuleUIConfigurationManagerSupplier = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstaruitheUICategoryDescription(aName: SlashsingletonSlashcomDotsunDotstarDotuiDottheUICategoryDescription): theUICategoryDescription = js.native
     @JSName("getByName")
@@ -1842,7 +1838,7 @@ object LibreOffice {
     @JSName("getByName")
     def getByName_singletoncomsunstarutiltheMacroExpander(aName: SlashsingletonSlashcomDotsunDotstarDotutilDottheMacroExpander): theMacroExpander = js.native
     @JSName("getByName")
-    def getByName_singletoncomsunstarutiltheOfficeInstallationDirectories(aName: SlashsingletonSlashcomDotsunDotstarDotutilDottheOfficeInstallationDirectories): theOfficeInstallationDirectories = js.native
+    def getByName_singletoncomsunstarutiltheOfficeInstallationDirectories(aName: String): theOfficeInstallationDirectories = js.native
     @JSName("getByName")
     def getByName_singletoncomsunstarutilthePathSettings(aName: SlashsingletonSlashcomDotsunDotstarDotutilDotthePathSettings): thePathSettings = js.native
   }

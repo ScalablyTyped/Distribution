@@ -1,6 +1,6 @@
 package typings.isomorphicGitLightningFs
 
-import typings.isomorphicGitLightningFs.isomorphicGitLightningFsNumbers.`1`
+import typings.isomorphicGitLightningFs.isomorphicGitLightningFsInts.`1`
 import typings.isomorphicGitLightningFs.isomorphicGitLightningFsStrings.dir
 import typings.isomorphicGitLightningFs.isomorphicGitLightningFsStrings.file
 import typings.isomorphicGitLightningFs.isomorphicGitLightningFsStrings.utf8

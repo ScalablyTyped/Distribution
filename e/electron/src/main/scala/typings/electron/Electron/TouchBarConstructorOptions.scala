@@ -43,6 +43,6 @@ object TouchBarConstructorOptions {
     
     inline def setItemsVarargs(
       value: (TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer)*
-    ): Self = StObject.set(x, "items", js.Array(value :_*))
+    ): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

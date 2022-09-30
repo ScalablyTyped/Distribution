@@ -17,8 +17,7 @@ object thinSpriteMod {
   open class ThinSprite () extends StObject {
     
     /**
-      * @param deltaTime
-      * @hidden
+      * @internal
       */
     def _animate(deltaTime: Double): Unit = js.native
     
@@ -38,16 +37,16 @@ object thinSpriteMod {
     
     /* protected */ var _toIndex: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _xOffset: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _xSize: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _yOffset: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _ySize: Double = js.native
     
     /** Gets or sets rotation angle */

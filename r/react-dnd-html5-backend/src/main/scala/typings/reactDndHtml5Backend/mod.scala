@@ -22,6 +22,10 @@ object mod {
     @js.native
     val FILE: /* "__NATIVE_FILE__" */ String = js.native
     
+    @JSImport("react-dnd-html5-backend", "NativeTypes.HTML")
+    @js.native
+    val HTML: /* "__NATIVE_HTML__" */ String = js.native
+    
     @JSImport("react-dnd-html5-backend", "NativeTypes.TEXT")
     @js.native
     val TEXT: /* "__NATIVE_TEXT__" */ String = js.native

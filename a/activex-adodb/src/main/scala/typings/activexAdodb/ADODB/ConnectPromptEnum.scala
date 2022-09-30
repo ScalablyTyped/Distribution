@@ -1,18 +1,18 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`1`
-import typings.activexAdodb.activexAdodbNumbers.`2`
-import typings.activexAdodb.activexAdodbNumbers.`3`
-import typings.activexAdodb.activexAdodbNumbers.`4`
+import typings.activexAdodb.activexAdodbInts.`1`
+import typings.activexAdodb.activexAdodbInts.`2`
+import typings.activexAdodb.activexAdodbInts.`3`
+import typings.activexAdodb.activexAdodbInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`1`
-  - typings.activexAdodb.activexAdodbNumbers.`2`
-  - typings.activexAdodb.activexAdodbNumbers.`3`
-  - typings.activexAdodb.activexAdodbNumbers.`4`
+  - typings.activexAdodb.activexAdodbInts.`1`
+  - typings.activexAdodb.activexAdodbInts.`2`
+  - typings.activexAdodb.activexAdodbInts.`3`
+  - typings.activexAdodb.activexAdodbInts.`4`
 */
 trait ConnectPromptEnum extends StObject
 object ConnectPromptEnum {

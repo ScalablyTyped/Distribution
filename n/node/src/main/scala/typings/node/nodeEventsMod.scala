@@ -293,6 +293,6 @@ object nodeEventsMod {
     * objects.
     */
   /* static member */
-  inline def setMaxListeners(n: Double, eventTargets: (DOMEventTarget | EventEmitter)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(List(n.asInstanceOf[js.Any]).`++`(eventTargets.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def setMaxListeners(n: Unit, eventTargets: (DOMEventTarget | EventEmitter)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(List(n.asInstanceOf[js.Any]).`++`(eventTargets.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def setMaxListeners(n: Double, eventTargets: (DOMEventTarget | EventEmitter)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(scala.List(n.asInstanceOf[js.Any]).`++`(eventTargets.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def setMaxListeners(n: Unit, eventTargets: (DOMEventTarget | EventEmitter)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(scala.List(n.asInstanceOf[js.Any]).`++`(eventTargets.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 }

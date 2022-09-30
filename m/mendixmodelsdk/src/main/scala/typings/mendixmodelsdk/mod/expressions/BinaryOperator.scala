@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "expressions.BinaryOperator")
 @js.native
-class BinaryOperator protected ()
+open class BinaryOperator protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.expressions.BinaryOperator {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

@@ -3,7 +3,7 @@ package typings.electron.global.Electron
 import typings.electron.Electron.CreateFromBitmapOptions
 import typings.electron.Electron.CreateFromBufferOptions
 import typings.electron.Electron.Size
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof NativeImage` */
 @JSGlobal("Electron.nativeImage")
 @js.native
-class nativeImage ()
+open class nativeImage ()
   extends StObject
      with typings.electron.Electron.NativeImage_
 /* was `typeof NativeImage` */
@@ -75,8 +75,8 @@ object nativeImage {
     *
     * `echo -e '#import <Cocoa/Cocoa.h>\nint main() { NSLog(@"%@", SYSTEM_IMAGE_NAME);
     * }' | clang -otest -x objective-c -framework Cocoa - && ./test`
-    * 
-  where `SYSTEM_IMAGE_NAME` should be replaced with any value from this list.
+    *
+    * where `SYSTEM_IMAGE_NAME` should be replaced with any value from this list.
     *
     * @platform darwin
     */

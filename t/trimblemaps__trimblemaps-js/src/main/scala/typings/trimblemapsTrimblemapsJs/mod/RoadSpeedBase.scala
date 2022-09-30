@@ -1,19 +1,19 @@
 package typings.trimblemapsTrimblemapsJs.mod
 
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`10`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`12`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`13`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`14`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`15`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`16`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`17`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`1`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`3`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`4`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`5`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`6`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`7`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`8`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`10`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`12`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`13`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`14`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`15`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`16`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`17`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`1`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`3`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`4`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`5`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`6`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`7`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

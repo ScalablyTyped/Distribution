@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 6.7.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.BasicJavaActionParameterValue")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.BasicJavaActionParameterValue")
 @js.native
-class BasicJavaActionParameterValue protected ()
+open class BasicJavaActionParameterValue protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue {
   def this(
     model: AbstractModel,
@@ -30,7 +30,7 @@ class BasicJavaActionParameterValue protected ()
 }
 object BasicJavaActionParameterValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.BasicJavaActionParameterValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.BasicJavaActionParameterValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -54,13 +54,13 @@ object BasicJavaActionParameterValue {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.BasicJavaActionParameterValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.BasicJavaActionParameterValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.BasicJavaActionParameterValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.BasicJavaActionParameterValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

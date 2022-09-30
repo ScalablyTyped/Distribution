@@ -11,8 +11,7 @@ object flyoutMod {
   
   @JSImport("react-native-windows/Libraries/Components/Flyout/Flyout", "Flyout")
   @js.native
-  class Flyout protected ()
-    extends Component[IFlyoutProps, IFlyoutTargetState, js.Any] {
+  open class Flyout protected () extends Component[IFlyoutProps, IFlyoutTargetState, Any] {
     def this(props: IFlyoutProps) = this()
   }
   /* static members */

@@ -32,7 +32,7 @@ trait UpdateServiceTemplateVersionInput extends StObject {
   var status: js.UndefOr[TemplateVersionStatus] = js.undefined
   
   /**
-    * An array of supported component sources. Components with supported sources can be attached to service instances based on this service template version.  A change to supportedComponentSources doesn't impact existing component attachments to instances based on this template version. A change only affects later associations.  For more information about components, see Proton components in the Proton Administrator Guide.
+    * An array of supported component sources. Components with supported sources can be attached to service instances based on this service template version.  A change to supportedComponentSources doesn't impact existing component attachments to instances based on this template version. A change only affects later associations.  For more information about components, see Proton components in the Proton User Guide.
     */
   var supportedComponentSources: js.UndefOr[ServiceTemplateSupportedComponentSourceInputList] = js.undefined
   

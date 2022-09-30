@@ -154,18 +154,18 @@ object simpleEnumEntityMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`11`
-    - typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`12`
-    - typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`13`
+    - typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`11`
+    - typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`12`
+    - typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`13`
   */
   trait ArrayDefinedNumericEnumType extends StObject
   object ArrayDefinedNumericEnumType {
     
-    inline def `11`: typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`11` = 11.asInstanceOf[typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`11`]
+    inline def `11`: typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`11` = 11.asInstanceOf[typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`11`]
     
-    inline def `12`: typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`12` = 12.asInstanceOf[typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`12`]
+    inline def `12`: typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`12` = 12.asInstanceOf[typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`12`]
     
-    inline def `13`: typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`13` = 13.asInstanceOf[typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverNumbers.`13`]
+    inline def `13`: typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`13` = 13.asInstanceOf[typings.typeormAuroraDataApiDriver.typeormAuroraDataApiDriverInts.`13`]
   }
   
   /* Rewritten from type alias, can be one of: 

@@ -22,7 +22,8 @@ object esListMod {
   
   @JSImport("react-virtualized/dist/es/List", JSImport.Default)
   @js.native
-  open class default protected () extends List {
+  open class default protected ()
+    extends typings.reactVirtualized.esListMod.List {
     def this(props: ListProps) = this()
     /**
       * @deprecated

@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
+import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.projectsMod.projects.IDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,6 +41,11 @@ trait IRemoteEntitySourceDocument
   val icon: String | Null = js.native
   
   /**
+    * In version 8.16.0: introduced
+    */
+  val metadataHash: String = js.native
+  
+  /**
     * In version 8.14.0: introduced
     */
   val minimumMxVersion: String = js.native
@@ -54,6 +60,16 @@ trait IRemoteEntitySourceDocument
     * In version 8.0.0: introduced
     */
   val serviceName: String = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  val validated: Boolean = js.native
+  
+  /**
+    * In version 9.8.0: introduced
+    */
+  val validatedEntities: IList[String] = js.native
   
   /**
     * In version 8.10.0: added public

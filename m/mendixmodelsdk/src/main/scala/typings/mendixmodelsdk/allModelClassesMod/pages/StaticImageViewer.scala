@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/image relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.StaticImageViewer")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.StaticImageViewer")
 @js.native
-class StaticImageViewer protected ()
+open class StaticImageViewer protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer {
   def this(
     model: AbstractModel,
@@ -33,7 +33,7 @@ class StaticImageViewer protected ()
 }
 object StaticImageViewer {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.StaticImageViewer")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.StaticImageViewer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -607,13 +607,13 @@ object StaticImageViewer {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.StaticImageViewer.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.StaticImageViewer.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.StaticImageViewer.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.StaticImageViewer.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

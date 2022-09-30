@@ -13,7 +13,7 @@ trait OmitPropsnameBubblesVirtually extends StObject {
   
   var children: js.UndefOr[js.Function1[/* fills */ js.Array[js.Array[Element]], Element | Null]] = js.undefined
   
-  var fillProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var fillProps: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object OmitPropsnameBubblesVirtually {
   
@@ -32,7 +32,7 @@ object OmitPropsnameBubblesVirtually {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setFillProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
+    inline def setFillProps(value: StringDictionary[Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
     
     inline def setFillPropsUndefined: Self = StObject.set(x, "fillProps", js.undefined)
   }

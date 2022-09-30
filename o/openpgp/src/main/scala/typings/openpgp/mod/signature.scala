@@ -1,6 +1,5 @@
 package typings.openpgp.mod
 
-import typings.openpgp.mod.packet.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object signature {
     /**
       * @param packetlist The signature packets
       */
-    def this(packetlist: List) = this()
+    def this(packetlist: typings.openpgp.mod.packet.List) = this()
     
     /**
       * Returns ASCII armored text of signature
@@ -28,7 +27,7 @@ object signature {
       */
     def armor(): ReadableStream[String] = js.native
     
-    var packets: List = js.native
+    var packets: typings.openpgp.mod.packet.List = js.native
   }
   
   /**

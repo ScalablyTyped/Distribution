@@ -1,17 +1,17 @@
 package typings.fridaGum.Java
 
-import typings.fridaGum.fridaGumNumbers.`1`
-import typings.fridaGum.fridaGumNumbers.`2`
-import typings.fridaGum.fridaGumNumbers.`3`
+import typings.fridaGum.fridaGumInts.`1`
+import typings.fridaGum.fridaGumInts.`2`
+import typings.fridaGum.fridaGumInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.fridaGum.fridaGumNumbers.`1`
-  - typings.fridaGum.fridaGumNumbers.`2`
-  - typings.fridaGum.fridaGumNumbers.`3`
+  - typings.fridaGum.fridaGumInts.`1`
+  - typings.fridaGum.fridaGumInts.`2`
+  - typings.fridaGum.fridaGumInts.`3`
 */
 trait MethodType extends StObject
 object MethodType {

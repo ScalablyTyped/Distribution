@@ -398,20 +398,12 @@ object storefrontUiVueStrings {
   inline def `sf-button--pure sf-product-card__wishlist-icon`: `sf-button--pure sf-product-card__wishlist-icon` = ("sf-button--pure sf-product-card__wishlist-icon").asInstanceOf[`sf-button--pure sf-product-card__wishlist-icon`]
   
   @js.native
-  sealed trait `sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist` extends StObject
-  inline def `sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist`: `sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist` = ("sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist").asInstanceOf[`sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist`]
-  
-  @js.native
   sealed trait `sf-link` extends StObject
   inline def `sf-link`: `sf-link` = "sf-link".asInstanceOf[`sf-link`]
   
   @js.native
   sealed trait `sf-product-card-horizontal__wishlist-icon` extends StObject
   inline def `sf-product-card-horizontal__wishlist-icon`: `sf-product-card-horizontal__wishlist-icon` = "sf-product-card-horizontal__wishlist-icon".asInstanceOf[`sf-product-card-horizontal__wishlist-icon`]
-  
-  @js.native
-  sealed trait `sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist` extends StObject
-  inline def `sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist`: `sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist` = ("sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist").asInstanceOf[`sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist`]
   
   @js.native
   sealed trait shipping

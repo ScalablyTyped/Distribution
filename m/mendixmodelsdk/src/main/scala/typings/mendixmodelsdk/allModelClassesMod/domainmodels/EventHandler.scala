@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/event-handlers relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EventHandler")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EventHandler")
 @js.native
-class EventHandler protected ()
+open class EventHandler protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.EventHandler {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class EventHandler protected ()
 }
 object EventHandler {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EventHandler")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EventHandler")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object EventHandler {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EventHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EventHandler]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EventHandler.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EventHandler.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EventHandler.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EventHandler.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

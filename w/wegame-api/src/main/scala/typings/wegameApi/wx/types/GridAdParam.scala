@@ -1,7 +1,7 @@
 package typings.wegameApi.wx.types
 
-import typings.wegameApi.wegameApiNumbers.`5`
-import typings.wegameApi.wegameApiNumbers.`8`
+import typings.wegameApi.wegameApiInts.`5`
+import typings.wegameApi.wegameApiInts.`8`
 import typings.wegameApi.wegameApiStrings.black
 import typings.wegameApi.wegameApiStrings.white
 import org.scalablytyped.runtime.StObject

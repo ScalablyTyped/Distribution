@@ -1,8 +1,8 @@
 package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelBooleans.`true`
-import typings.activexExcel.activexExcelNumbers.`0`
-import typings.activexExcel.activexExcelNumbers.`1`
+import typings.activexExcel.activexExcelInts.`0`
+import typings.activexExcel.activexExcelInts.`1`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

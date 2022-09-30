@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gravatar-url" : "3.1.0"
+      "gravatar-url" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "gravatar-url" : "3.1.0"
+      "gravatar-url" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -2143,6 +2143,20 @@ trait Lightsail extends Service {
   ): Request[UpdateDomainEntryResult, AWSError] = js.native
   
   /**
+    * Modifies the Amazon Lightsail instance metadata parameters on a running or stopped instance. When you modify the parameters on a running instance, the GetInstance or GetInstances API operation initially responds with a state of pending. After the parameter modifications are successfully applied, the state changes to applied in subsequent GetInstance or GetInstances API calls. For more information, see Use IMDSv2 with an Amazon Lightsail instance in the Amazon Lightsail Developer Guide.
+    */
+  def updateInstanceMetadataOptions(): Request[UpdateInstanceMetadataOptionsResult, AWSError] = js.native
+  def updateInstanceMetadataOptions(callback: js.Function2[/* err */ AWSError, /* data */ UpdateInstanceMetadataOptionsResult, Unit]): Request[UpdateInstanceMetadataOptionsResult, AWSError] = js.native
+  /**
+    * Modifies the Amazon Lightsail instance metadata parameters on a running or stopped instance. When you modify the parameters on a running instance, the GetInstance or GetInstances API operation initially responds with a state of pending. After the parameter modifications are successfully applied, the state changes to applied in subsequent GetInstance or GetInstances API calls. For more information, see Use IMDSv2 with an Amazon Lightsail instance in the Amazon Lightsail Developer Guide.
+    */
+  def updateInstanceMetadataOptions(params: UpdateInstanceMetadataOptionsRequest): Request[UpdateInstanceMetadataOptionsResult, AWSError] = js.native
+  def updateInstanceMetadataOptions(
+    params: UpdateInstanceMetadataOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateInstanceMetadataOptionsResult, Unit]
+  ): Request[UpdateInstanceMetadataOptionsResult, AWSError] = js.native
+  
+  /**
     * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by load balancer name. For more information, see the Amazon Lightsail Developer Guide.
     */
   def updateLoadBalancerAttribute(): Request[UpdateLoadBalancerAttributeResult, AWSError] = js.native

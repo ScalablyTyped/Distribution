@@ -1,42 +1,42 @@
 package typings.activexWia.WIA
 
-import typings.activexWia.activexWiaNumbers.`0`
-import typings.activexWia.activexWiaNumbers.`101`
-import typings.activexWia.activexWiaNumbers.`102`
-import typings.activexWia.activexWiaNumbers.`103`
-import typings.activexWia.activexWiaNumbers.`104`
-import typings.activexWia.activexWiaNumbers.`105`
-import typings.activexWia.activexWiaNumbers.`106`
-import typings.activexWia.activexWiaNumbers.`107`
-import typings.activexWia.activexWiaNumbers.`108`
-import typings.activexWia.activexWiaNumbers.`109`
-import typings.activexWia.activexWiaNumbers.`10`
-import typings.activexWia.activexWiaNumbers.`110`
-import typings.activexWia.activexWiaNumbers.`111`
-import typings.activexWia.activexWiaNumbers.`112`
-import typings.activexWia.activexWiaNumbers.`113`
-import typings.activexWia.activexWiaNumbers.`114`
-import typings.activexWia.activexWiaNumbers.`115`
-import typings.activexWia.activexWiaNumbers.`116`
-import typings.activexWia.activexWiaNumbers.`119`
-import typings.activexWia.activexWiaNumbers.`11`
-import typings.activexWia.activexWiaNumbers.`12`
-import typings.activexWia.activexWiaNumbers.`13`
-import typings.activexWia.activexWiaNumbers.`14`
-import typings.activexWia.activexWiaNumbers.`15`
-import typings.activexWia.activexWiaNumbers.`16`
-import typings.activexWia.activexWiaNumbers.`17`
-import typings.activexWia.activexWiaNumbers.`18`
-import typings.activexWia.activexWiaNumbers.`19`
-import typings.activexWia.activexWiaNumbers.`1`
-import typings.activexWia.activexWiaNumbers.`2`
-import typings.activexWia.activexWiaNumbers.`3`
-import typings.activexWia.activexWiaNumbers.`4`
-import typings.activexWia.activexWiaNumbers.`5`
-import typings.activexWia.activexWiaNumbers.`6`
-import typings.activexWia.activexWiaNumbers.`7`
-import typings.activexWia.activexWiaNumbers.`8`
-import typings.activexWia.activexWiaNumbers.`9`
+import typings.activexWia.activexWiaInts.`0`
+import typings.activexWia.activexWiaInts.`101`
+import typings.activexWia.activexWiaInts.`102`
+import typings.activexWia.activexWiaInts.`103`
+import typings.activexWia.activexWiaInts.`104`
+import typings.activexWia.activexWiaInts.`105`
+import typings.activexWia.activexWiaInts.`106`
+import typings.activexWia.activexWiaInts.`107`
+import typings.activexWia.activexWiaInts.`108`
+import typings.activexWia.activexWiaInts.`109`
+import typings.activexWia.activexWiaInts.`10`
+import typings.activexWia.activexWiaInts.`110`
+import typings.activexWia.activexWiaInts.`111`
+import typings.activexWia.activexWiaInts.`112`
+import typings.activexWia.activexWiaInts.`113`
+import typings.activexWia.activexWiaInts.`114`
+import typings.activexWia.activexWiaInts.`115`
+import typings.activexWia.activexWiaInts.`116`
+import typings.activexWia.activexWiaInts.`119`
+import typings.activexWia.activexWiaInts.`11`
+import typings.activexWia.activexWiaInts.`12`
+import typings.activexWia.activexWiaInts.`13`
+import typings.activexWia.activexWiaInts.`14`
+import typings.activexWia.activexWiaInts.`15`
+import typings.activexWia.activexWiaInts.`16`
+import typings.activexWia.activexWiaInts.`17`
+import typings.activexWia.activexWiaInts.`18`
+import typings.activexWia.activexWiaInts.`19`
+import typings.activexWia.activexWiaInts.`1`
+import typings.activexWia.activexWiaInts.`2`
+import typings.activexWia.activexWiaInts.`3`
+import typings.activexWia.activexWiaInts.`4`
+import typings.activexWia.activexWiaInts.`5`
+import typings.activexWia.activexWiaInts.`6`
+import typings.activexWia.activexWiaInts.`7`
+import typings.activexWia.activexWiaInts.`8`
+import typings.activexWia.activexWiaInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,43 +46,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Device or Item object.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWia.activexWiaNumbers.`1`
-  - typings.activexWia.activexWiaNumbers.`2`
-  - typings.activexWia.activexWiaNumbers.`15`
-  - typings.activexWia.activexWiaNumbers.`12`
-  - typings.activexWia.activexWiaNumbers.`13`
-  - typings.activexWia.activexWiaNumbers.`11`
-  - typings.activexWia.activexWiaNumbers.`7`
-  - typings.activexWia.activexWiaNumbers.`14`
-  - typings.activexWia.activexWiaNumbers.`18`
-  - typings.activexWia.activexWiaNumbers.`3`
-  - typings.activexWia.activexWiaNumbers.`8`
-  - typings.activexWia.activexWiaNumbers.`5`
-  - typings.activexWia.activexWiaNumbers.`17`
-  - typings.activexWia.activexWiaNumbers.`10`
-  - typings.activexWia.activexWiaNumbers.`16`
-  - typings.activexWia.activexWiaNumbers.`4`
-  - typings.activexWia.activexWiaNumbers.`9`
-  - typings.activexWia.activexWiaNumbers.`6`
-  - typings.activexWia.activexWiaNumbers.`0`
-  - typings.activexWia.activexWiaNumbers.`19`
-  - typings.activexWia.activexWiaNumbers.`101`
-  - typings.activexWia.activexWiaNumbers.`102`
-  - typings.activexWia.activexWiaNumbers.`115`
-  - typings.activexWia.activexWiaNumbers.`112`
-  - typings.activexWia.activexWiaNumbers.`113`
-  - typings.activexWia.activexWiaNumbers.`111`
-  - typings.activexWia.activexWiaNumbers.`107`
-  - typings.activexWia.activexWiaNumbers.`114`
-  - typings.activexWia.activexWiaNumbers.`103`
-  - typings.activexWia.activexWiaNumbers.`108`
-  - typings.activexWia.activexWiaNumbers.`105`
-  - typings.activexWia.activexWiaNumbers.`110`
-  - typings.activexWia.activexWiaNumbers.`116`
-  - typings.activexWia.activexWiaNumbers.`104`
-  - typings.activexWia.activexWiaNumbers.`109`
-  - typings.activexWia.activexWiaNumbers.`106`
-  - typings.activexWia.activexWiaNumbers.`119`
+  - typings.activexWia.activexWiaInts.`1`
+  - typings.activexWia.activexWiaInts.`2`
+  - typings.activexWia.activexWiaInts.`15`
+  - typings.activexWia.activexWiaInts.`12`
+  - typings.activexWia.activexWiaInts.`13`
+  - typings.activexWia.activexWiaInts.`11`
+  - typings.activexWia.activexWiaInts.`7`
+  - typings.activexWia.activexWiaInts.`14`
+  - typings.activexWia.activexWiaInts.`18`
+  - typings.activexWia.activexWiaInts.`3`
+  - typings.activexWia.activexWiaInts.`8`
+  - typings.activexWia.activexWiaInts.`5`
+  - typings.activexWia.activexWiaInts.`17`
+  - typings.activexWia.activexWiaInts.`10`
+  - typings.activexWia.activexWiaInts.`16`
+  - typings.activexWia.activexWiaInts.`4`
+  - typings.activexWia.activexWiaInts.`9`
+  - typings.activexWia.activexWiaInts.`6`
+  - typings.activexWia.activexWiaInts.`0`
+  - typings.activexWia.activexWiaInts.`19`
+  - typings.activexWia.activexWiaInts.`101`
+  - typings.activexWia.activexWiaInts.`102`
+  - typings.activexWia.activexWiaInts.`115`
+  - typings.activexWia.activexWiaInts.`112`
+  - typings.activexWia.activexWiaInts.`113`
+  - typings.activexWia.activexWiaInts.`111`
+  - typings.activexWia.activexWiaInts.`107`
+  - typings.activexWia.activexWiaInts.`114`
+  - typings.activexWia.activexWiaInts.`103`
+  - typings.activexWia.activexWiaInts.`108`
+  - typings.activexWia.activexWiaInts.`105`
+  - typings.activexWia.activexWiaInts.`110`
+  - typings.activexWia.activexWiaInts.`116`
+  - typings.activexWia.activexWiaInts.`104`
+  - typings.activexWia.activexWiaInts.`109`
+  - typings.activexWia.activexWiaInts.`106`
+  - typings.activexWia.activexWiaInts.`119`
 */
 trait WiaPropertyType extends StObject
 object WiaPropertyType {

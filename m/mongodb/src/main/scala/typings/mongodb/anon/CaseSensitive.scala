@@ -9,8 +9,8 @@ trait CaseSensitive extends StObject {
   @JSName("$caseSensitive")
   var $caseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  @JSName("$diacraticSensitive")
-  var $diacraticSensitive: js.UndefOr[Boolean] = js.undefined
+  @JSName("$diacriticSensitive")
+  var $diacriticSensitive: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$language")
   var $language: js.UndefOr[String] = js.undefined
@@ -31,9 +31,9 @@ object CaseSensitive {
     
     inline def set$caseSensitiveUndefined: Self = StObject.set(x, "$caseSensitive", js.undefined)
     
-    inline def set$diacraticSensitive(value: Boolean): Self = StObject.set(x, "$diacraticSensitive", value.asInstanceOf[js.Any])
+    inline def set$diacriticSensitive(value: Boolean): Self = StObject.set(x, "$diacriticSensitive", value.asInstanceOf[js.Any])
     
-    inline def set$diacraticSensitiveUndefined: Self = StObject.set(x, "$diacraticSensitive", js.undefined)
+    inline def set$diacriticSensitiveUndefined: Self = StObject.set(x, "$diacriticSensitive", js.undefined)
     
     inline def set$language(value: String): Self = StObject.set(x, "$language", value.asInstanceOf[js.Any])
     

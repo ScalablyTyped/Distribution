@@ -1,202 +1,202 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`100`
-import typings.activexWord.activexWordNumbers.`101`
-import typings.activexWord.activexWordNumbers.`1024`
-import typings.activexWord.activexWordNumbers.`102`
-import typings.activexWord.activexWordNumbers.`103`
-import typings.activexWord.activexWordNumbers.`104`
-import typings.activexWord.activexWordNumbers.`105`
-import typings.activexWord.activexWordNumbers.`106`
-import typings.activexWord.activexWordNumbers.`107`
-import typings.activexWord.activexWordNumbers.`109`
-import typings.activexWord.activexWordNumbers.`110`
-import typings.activexWord.activexWordNumbers.`111`
-import typings.activexWord.activexWordNumbers.`112`
-import typings.activexWord.activexWordNumbers.`113`
-import typings.activexWord.activexWordNumbers.`114`
-import typings.activexWord.activexWordNumbers.`115`
-import typings.activexWord.activexWordNumbers.`116`
-import typings.activexWord.activexWordNumbers.`117`
-import typings.activexWord.activexWordNumbers.`118`
-import typings.activexWord.activexWordNumbers.`119`
-import typings.activexWord.activexWordNumbers.`120`
-import typings.activexWord.activexWordNumbers.`121`
-import typings.activexWord.activexWordNumbers.`122`
-import typings.activexWord.activexWordNumbers.`123`
-import typings.activexWord.activexWordNumbers.`124`
-import typings.activexWord.activexWordNumbers.`125`
-import typings.activexWord.activexWordNumbers.`126`
-import typings.activexWord.activexWordNumbers.`127`
-import typings.activexWord.activexWordNumbers.`12`
-import typings.activexWord.activexWordNumbers.`13`
-import typings.activexWord.activexWordNumbers.`145`
-import typings.activexWord.activexWordNumbers.`186`
-import typings.activexWord.activexWordNumbers.`187`
-import typings.activexWord.activexWordNumbers.`188`
-import typings.activexWord.activexWordNumbers.`189`
-import typings.activexWord.activexWordNumbers.`190`
-import typings.activexWord.activexWordNumbers.`191`
-import typings.activexWord.activexWordNumbers.`192`
-import typings.activexWord.activexWordNumbers.`19`
-import typings.activexWord.activexWordNumbers.`219`
-import typings.activexWord.activexWordNumbers.`220`
-import typings.activexWord.activexWordNumbers.`221`
-import typings.activexWord.activexWordNumbers.`222`
-import typings.activexWord.activexWordNumbers.`255`
-import typings.activexWord.activexWordNumbers.`256`
-import typings.activexWord.activexWordNumbers.`27`
-import typings.activexWord.activexWordNumbers.`32`
-import typings.activexWord.activexWordNumbers.`33`
-import typings.activexWord.activexWordNumbers.`34`
-import typings.activexWord.activexWordNumbers.`35`
-import typings.activexWord.activexWordNumbers.`36`
-import typings.activexWord.activexWordNumbers.`45`
-import typings.activexWord.activexWordNumbers.`46`
-import typings.activexWord.activexWordNumbers.`48`
-import typings.activexWord.activexWordNumbers.`49`
-import typings.activexWord.activexWordNumbers.`50`
-import typings.activexWord.activexWordNumbers.`512`
-import typings.activexWord.activexWordNumbers.`51`
-import typings.activexWord.activexWordNumbers.`52`
-import typings.activexWord.activexWordNumbers.`53`
-import typings.activexWord.activexWordNumbers.`54`
-import typings.activexWord.activexWordNumbers.`55`
-import typings.activexWord.activexWordNumbers.`56`
-import typings.activexWord.activexWordNumbers.`57`
-import typings.activexWord.activexWordNumbers.`65`
-import typings.activexWord.activexWordNumbers.`66`
-import typings.activexWord.activexWordNumbers.`67`
-import typings.activexWord.activexWordNumbers.`68`
-import typings.activexWord.activexWordNumbers.`69`
-import typings.activexWord.activexWordNumbers.`70`
-import typings.activexWord.activexWordNumbers.`71`
-import typings.activexWord.activexWordNumbers.`72`
-import typings.activexWord.activexWordNumbers.`73`
-import typings.activexWord.activexWordNumbers.`74`
-import typings.activexWord.activexWordNumbers.`75`
-import typings.activexWord.activexWordNumbers.`76`
-import typings.activexWord.activexWordNumbers.`77`
-import typings.activexWord.activexWordNumbers.`78`
-import typings.activexWord.activexWordNumbers.`79`
-import typings.activexWord.activexWordNumbers.`80`
-import typings.activexWord.activexWordNumbers.`81`
-import typings.activexWord.activexWordNumbers.`82`
-import typings.activexWord.activexWordNumbers.`83`
-import typings.activexWord.activexWordNumbers.`84`
-import typings.activexWord.activexWordNumbers.`85`
-import typings.activexWord.activexWordNumbers.`86`
-import typings.activexWord.activexWordNumbers.`87`
-import typings.activexWord.activexWordNumbers.`88`
-import typings.activexWord.activexWordNumbers.`89`
-import typings.activexWord.activexWordNumbers.`8`
-import typings.activexWord.activexWordNumbers.`90`
-import typings.activexWord.activexWordNumbers.`96`
-import typings.activexWord.activexWordNumbers.`97`
-import typings.activexWord.activexWordNumbers.`98`
-import typings.activexWord.activexWordNumbers.`99`
-import typings.activexWord.activexWordNumbers.`9`
+import typings.activexWord.activexWordInts.`100`
+import typings.activexWord.activexWordInts.`101`
+import typings.activexWord.activexWordInts.`1024`
+import typings.activexWord.activexWordInts.`102`
+import typings.activexWord.activexWordInts.`103`
+import typings.activexWord.activexWordInts.`104`
+import typings.activexWord.activexWordInts.`105`
+import typings.activexWord.activexWordInts.`106`
+import typings.activexWord.activexWordInts.`107`
+import typings.activexWord.activexWordInts.`109`
+import typings.activexWord.activexWordInts.`110`
+import typings.activexWord.activexWordInts.`111`
+import typings.activexWord.activexWordInts.`112`
+import typings.activexWord.activexWordInts.`113`
+import typings.activexWord.activexWordInts.`114`
+import typings.activexWord.activexWordInts.`115`
+import typings.activexWord.activexWordInts.`116`
+import typings.activexWord.activexWordInts.`117`
+import typings.activexWord.activexWordInts.`118`
+import typings.activexWord.activexWordInts.`119`
+import typings.activexWord.activexWordInts.`120`
+import typings.activexWord.activexWordInts.`121`
+import typings.activexWord.activexWordInts.`122`
+import typings.activexWord.activexWordInts.`123`
+import typings.activexWord.activexWordInts.`124`
+import typings.activexWord.activexWordInts.`125`
+import typings.activexWord.activexWordInts.`126`
+import typings.activexWord.activexWordInts.`127`
+import typings.activexWord.activexWordInts.`12`
+import typings.activexWord.activexWordInts.`13`
+import typings.activexWord.activexWordInts.`145`
+import typings.activexWord.activexWordInts.`186`
+import typings.activexWord.activexWordInts.`187`
+import typings.activexWord.activexWordInts.`188`
+import typings.activexWord.activexWordInts.`189`
+import typings.activexWord.activexWordInts.`190`
+import typings.activexWord.activexWordInts.`191`
+import typings.activexWord.activexWordInts.`192`
+import typings.activexWord.activexWordInts.`19`
+import typings.activexWord.activexWordInts.`219`
+import typings.activexWord.activexWordInts.`220`
+import typings.activexWord.activexWordInts.`221`
+import typings.activexWord.activexWordInts.`222`
+import typings.activexWord.activexWordInts.`255`
+import typings.activexWord.activexWordInts.`256`
+import typings.activexWord.activexWordInts.`27`
+import typings.activexWord.activexWordInts.`32`
+import typings.activexWord.activexWordInts.`33`
+import typings.activexWord.activexWordInts.`34`
+import typings.activexWord.activexWordInts.`35`
+import typings.activexWord.activexWordInts.`36`
+import typings.activexWord.activexWordInts.`45`
+import typings.activexWord.activexWordInts.`46`
+import typings.activexWord.activexWordInts.`48`
+import typings.activexWord.activexWordInts.`49`
+import typings.activexWord.activexWordInts.`50`
+import typings.activexWord.activexWordInts.`512`
+import typings.activexWord.activexWordInts.`51`
+import typings.activexWord.activexWordInts.`52`
+import typings.activexWord.activexWordInts.`53`
+import typings.activexWord.activexWordInts.`54`
+import typings.activexWord.activexWordInts.`55`
+import typings.activexWord.activexWordInts.`56`
+import typings.activexWord.activexWordInts.`57`
+import typings.activexWord.activexWordInts.`65`
+import typings.activexWord.activexWordInts.`66`
+import typings.activexWord.activexWordInts.`67`
+import typings.activexWord.activexWordInts.`68`
+import typings.activexWord.activexWordInts.`69`
+import typings.activexWord.activexWordInts.`70`
+import typings.activexWord.activexWordInts.`71`
+import typings.activexWord.activexWordInts.`72`
+import typings.activexWord.activexWordInts.`73`
+import typings.activexWord.activexWordInts.`74`
+import typings.activexWord.activexWordInts.`75`
+import typings.activexWord.activexWordInts.`76`
+import typings.activexWord.activexWordInts.`77`
+import typings.activexWord.activexWordInts.`78`
+import typings.activexWord.activexWordInts.`79`
+import typings.activexWord.activexWordInts.`80`
+import typings.activexWord.activexWordInts.`81`
+import typings.activexWord.activexWordInts.`82`
+import typings.activexWord.activexWordInts.`83`
+import typings.activexWord.activexWordInts.`84`
+import typings.activexWord.activexWordInts.`85`
+import typings.activexWord.activexWordInts.`86`
+import typings.activexWord.activexWordInts.`87`
+import typings.activexWord.activexWordInts.`88`
+import typings.activexWord.activexWordInts.`89`
+import typings.activexWord.activexWordInts.`8`
+import typings.activexWord.activexWordInts.`90`
+import typings.activexWord.activexWordInts.`96`
+import typings.activexWord.activexWordInts.`97`
+import typings.activexWord.activexWordInts.`98`
+import typings.activexWord.activexWordInts.`99`
+import typings.activexWord.activexWordInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`48`
-  - typings.activexWord.activexWordNumbers.`49`
-  - typings.activexWord.activexWordNumbers.`50`
-  - typings.activexWord.activexWordNumbers.`51`
-  - typings.activexWord.activexWordNumbers.`52`
-  - typings.activexWord.activexWordNumbers.`53`
-  - typings.activexWord.activexWordNumbers.`54`
-  - typings.activexWord.activexWordNumbers.`55`
-  - typings.activexWord.activexWordNumbers.`56`
-  - typings.activexWord.activexWordNumbers.`57`
-  - typings.activexWord.activexWordNumbers.`65`
-  - typings.activexWord.activexWordNumbers.`1024`
-  - typings.activexWord.activexWordNumbers.`66`
-  - typings.activexWord.activexWordNumbers.`192`
-  - typings.activexWord.activexWordNumbers.`220`
-  - typings.activexWord.activexWordNumbers.`8`
-  - typings.activexWord.activexWordNumbers.`67`
-  - typings.activexWord.activexWordNumbers.`221`
-  - typings.activexWord.activexWordNumbers.`188`
-  - typings.activexWord.activexWordNumbers.`512`
-  - typings.activexWord.activexWordNumbers.`68`
-  - typings.activexWord.activexWordNumbers.`46`
-  - typings.activexWord.activexWordNumbers.`69`
-  - typings.activexWord.activexWordNumbers.`35`
-  - typings.activexWord.activexWordNumbers.`187`
-  - typings.activexWord.activexWordNumbers.`27`
-  - typings.activexWord.activexWordNumbers.`70`
-  - typings.activexWord.activexWordNumbers.`112`
-  - typings.activexWord.activexWordNumbers.`121`
-  - typings.activexWord.activexWordNumbers.`122`
-  - typings.activexWord.activexWordNumbers.`123`
-  - typings.activexWord.activexWordNumbers.`124`
-  - typings.activexWord.activexWordNumbers.`125`
-  - typings.activexWord.activexWordNumbers.`126`
-  - typings.activexWord.activexWordNumbers.`127`
-  - typings.activexWord.activexWordNumbers.`113`
-  - typings.activexWord.activexWordNumbers.`114`
-  - typings.activexWord.activexWordNumbers.`115`
-  - typings.activexWord.activexWordNumbers.`116`
-  - typings.activexWord.activexWordNumbers.`117`
-  - typings.activexWord.activexWordNumbers.`118`
-  - typings.activexWord.activexWordNumbers.`119`
-  - typings.activexWord.activexWordNumbers.`120`
-  - typings.activexWord.activexWordNumbers.`71`
-  - typings.activexWord.activexWordNumbers.`72`
-  - typings.activexWord.activexWordNumbers.`36`
-  - typings.activexWord.activexWordNumbers.`189`
-  - typings.activexWord.activexWordNumbers.`73`
-  - typings.activexWord.activexWordNumbers.`45`
-  - typings.activexWord.activexWordNumbers.`74`
-  - typings.activexWord.activexWordNumbers.`75`
-  - typings.activexWord.activexWordNumbers.`76`
-  - typings.activexWord.activexWordNumbers.`77`
-  - typings.activexWord.activexWordNumbers.`78`
-  - typings.activexWord.activexWordNumbers.`96`
-  - typings.activexWord.activexWordNumbers.`97`
-  - typings.activexWord.activexWordNumbers.`98`
-  - typings.activexWord.activexWordNumbers.`99`
-  - typings.activexWord.activexWordNumbers.`100`
-  - typings.activexWord.activexWordNumbers.`101`
-  - typings.activexWord.activexWordNumbers.`12`
-  - typings.activexWord.activexWordNumbers.`102`
-  - typings.activexWord.activexWordNumbers.`103`
-  - typings.activexWord.activexWordNumbers.`104`
-  - typings.activexWord.activexWordNumbers.`105`
-  - typings.activexWord.activexWordNumbers.`107`
-  - typings.activexWord.activexWordNumbers.`110`
-  - typings.activexWord.activexWordNumbers.`111`
-  - typings.activexWord.activexWordNumbers.`106`
-  - typings.activexWord.activexWordNumbers.`109`
-  - typings.activexWord.activexWordNumbers.`79`
-  - typings.activexWord.activexWordNumbers.`219`
-  - typings.activexWord.activexWordNumbers.`80`
-  - typings.activexWord.activexWordNumbers.`34`
-  - typings.activexWord.activexWordNumbers.`33`
-  - typings.activexWord.activexWordNumbers.`19`
-  - typings.activexWord.activexWordNumbers.`190`
-  - typings.activexWord.activexWordNumbers.`81`
-  - typings.activexWord.activexWordNumbers.`82`
-  - typings.activexWord.activexWordNumbers.`13`
-  - typings.activexWord.activexWordNumbers.`83`
-  - typings.activexWord.activexWordNumbers.`145`
-  - typings.activexWord.activexWordNumbers.`186`
-  - typings.activexWord.activexWordNumbers.`256`
-  - typings.activexWord.activexWordNumbers.`222`
-  - typings.activexWord.activexWordNumbers.`191`
-  - typings.activexWord.activexWordNumbers.`32`
-  - typings.activexWord.activexWordNumbers.`84`
-  - typings.activexWord.activexWordNumbers.`9`
-  - typings.activexWord.activexWordNumbers.`85`
-  - typings.activexWord.activexWordNumbers.`86`
-  - typings.activexWord.activexWordNumbers.`87`
-  - typings.activexWord.activexWordNumbers.`88`
-  - typings.activexWord.activexWordNumbers.`89`
-  - typings.activexWord.activexWordNumbers.`90`
-  - typings.activexWord.activexWordNumbers.`255`
+  - typings.activexWord.activexWordInts.`48`
+  - typings.activexWord.activexWordInts.`49`
+  - typings.activexWord.activexWordInts.`50`
+  - typings.activexWord.activexWordInts.`51`
+  - typings.activexWord.activexWordInts.`52`
+  - typings.activexWord.activexWordInts.`53`
+  - typings.activexWord.activexWordInts.`54`
+  - typings.activexWord.activexWordInts.`55`
+  - typings.activexWord.activexWordInts.`56`
+  - typings.activexWord.activexWordInts.`57`
+  - typings.activexWord.activexWordInts.`65`
+  - typings.activexWord.activexWordInts.`1024`
+  - typings.activexWord.activexWordInts.`66`
+  - typings.activexWord.activexWordInts.`192`
+  - typings.activexWord.activexWordInts.`220`
+  - typings.activexWord.activexWordInts.`8`
+  - typings.activexWord.activexWordInts.`67`
+  - typings.activexWord.activexWordInts.`221`
+  - typings.activexWord.activexWordInts.`188`
+  - typings.activexWord.activexWordInts.`512`
+  - typings.activexWord.activexWordInts.`68`
+  - typings.activexWord.activexWordInts.`46`
+  - typings.activexWord.activexWordInts.`69`
+  - typings.activexWord.activexWordInts.`35`
+  - typings.activexWord.activexWordInts.`187`
+  - typings.activexWord.activexWordInts.`27`
+  - typings.activexWord.activexWordInts.`70`
+  - typings.activexWord.activexWordInts.`112`
+  - typings.activexWord.activexWordInts.`121`
+  - typings.activexWord.activexWordInts.`122`
+  - typings.activexWord.activexWordInts.`123`
+  - typings.activexWord.activexWordInts.`124`
+  - typings.activexWord.activexWordInts.`125`
+  - typings.activexWord.activexWordInts.`126`
+  - typings.activexWord.activexWordInts.`127`
+  - typings.activexWord.activexWordInts.`113`
+  - typings.activexWord.activexWordInts.`114`
+  - typings.activexWord.activexWordInts.`115`
+  - typings.activexWord.activexWordInts.`116`
+  - typings.activexWord.activexWordInts.`117`
+  - typings.activexWord.activexWordInts.`118`
+  - typings.activexWord.activexWordInts.`119`
+  - typings.activexWord.activexWordInts.`120`
+  - typings.activexWord.activexWordInts.`71`
+  - typings.activexWord.activexWordInts.`72`
+  - typings.activexWord.activexWordInts.`36`
+  - typings.activexWord.activexWordInts.`189`
+  - typings.activexWord.activexWordInts.`73`
+  - typings.activexWord.activexWordInts.`45`
+  - typings.activexWord.activexWordInts.`74`
+  - typings.activexWord.activexWordInts.`75`
+  - typings.activexWord.activexWordInts.`76`
+  - typings.activexWord.activexWordInts.`77`
+  - typings.activexWord.activexWordInts.`78`
+  - typings.activexWord.activexWordInts.`96`
+  - typings.activexWord.activexWordInts.`97`
+  - typings.activexWord.activexWordInts.`98`
+  - typings.activexWord.activexWordInts.`99`
+  - typings.activexWord.activexWordInts.`100`
+  - typings.activexWord.activexWordInts.`101`
+  - typings.activexWord.activexWordInts.`12`
+  - typings.activexWord.activexWordInts.`102`
+  - typings.activexWord.activexWordInts.`103`
+  - typings.activexWord.activexWordInts.`104`
+  - typings.activexWord.activexWordInts.`105`
+  - typings.activexWord.activexWordInts.`107`
+  - typings.activexWord.activexWordInts.`110`
+  - typings.activexWord.activexWordInts.`111`
+  - typings.activexWord.activexWordInts.`106`
+  - typings.activexWord.activexWordInts.`109`
+  - typings.activexWord.activexWordInts.`79`
+  - typings.activexWord.activexWordInts.`219`
+  - typings.activexWord.activexWordInts.`80`
+  - typings.activexWord.activexWordInts.`34`
+  - typings.activexWord.activexWordInts.`33`
+  - typings.activexWord.activexWordInts.`19`
+  - typings.activexWord.activexWordInts.`190`
+  - typings.activexWord.activexWordInts.`81`
+  - typings.activexWord.activexWordInts.`82`
+  - typings.activexWord.activexWordInts.`13`
+  - typings.activexWord.activexWordInts.`83`
+  - typings.activexWord.activexWordInts.`145`
+  - typings.activexWord.activexWordInts.`186`
+  - typings.activexWord.activexWordInts.`256`
+  - typings.activexWord.activexWordInts.`222`
+  - typings.activexWord.activexWordInts.`191`
+  - typings.activexWord.activexWordInts.`32`
+  - typings.activexWord.activexWordInts.`84`
+  - typings.activexWord.activexWordInts.`9`
+  - typings.activexWord.activexWordInts.`85`
+  - typings.activexWord.activexWordInts.`86`
+  - typings.activexWord.activexWordInts.`87`
+  - typings.activexWord.activexWordInts.`88`
+  - typings.activexWord.activexWordInts.`89`
+  - typings.activexWord.activexWordInts.`90`
+  - typings.activexWord.activexWordInts.`255`
 */
 trait WdKey extends StObject
 object WdKey {

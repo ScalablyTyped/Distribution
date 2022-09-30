@@ -9,18 +9,18 @@ object anon {
   
   trait Args extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var effectId: Double
     
-    var saga: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any
+    var saga: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ Any
   }
   object Args {
     
     inline def apply(
-      args: js.Array[js.Any],
+      args: js.Array[Any],
       effectId: Double,
-      saga: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any
+      saga: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ Any
     ): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], effectId = effectId.asInstanceOf[js.Any], saga = saga.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
@@ -28,21 +28,21 @@ object anon {
     
     extension [Self <: Args](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setEffectId(value: Double): Self = StObject.set(x, "effectId", value.asInstanceOf[js.Any])
       
       inline def setSaga(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ Any
       ): Self = StObject.set(x, "saga", value.asInstanceOf[js.Any])
     }
   }
   
   trait Context[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[js.Any] */, Name /* <: String */] extends StObject {
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[Any] */, Name /* <: String */] extends StObject {
     
     var context: Ctx
     
@@ -52,14 +52,14 @@ object anon {
     
     inline def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): any}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[js.Any] */, Name /* <: String */](context: Ctx, fn: Name): Context[Ctx, Name] = {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[Any] */, Name /* <: String */](context: Ctx, fn: Name): Context[Ctx, Name] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context[Ctx, Name]]
     }
     
     extension [Self <: Context[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): any}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[js.Any] */, Name /* <: String */](x: Self & (Context[Ctx, Name])) {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[Any] */, Name /* <: String */](x: Self & (Context[Ctx, Name])) {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -67,7 +67,7 @@ object anon {
     }
   }
   
-  trait ContextCtx[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */] extends StObject {
+  trait ContextCtx[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Unit] */] extends StObject {
     
     var context: Ctx
     
@@ -75,12 +75,12 @@ object anon {
   }
   object ContextCtx {
     
-    inline def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */](context: Ctx, fn: Fn): ContextCtx[Ctx, Fn] = {
+    inline def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Unit] */](context: Ctx, fn: Fn): ContextCtx[Ctx, Fn] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContextCtx[Ctx, Fn]]
     }
     
-    extension [Self <: ContextCtx[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */](x: Self & (ContextCtx[Ctx, Fn])) {
+    extension [Self <: ContextCtx[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Unit] */](x: Self & (ContextCtx[Ctx, Fn])) {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -88,7 +88,7 @@ object anon {
     }
   }
   
-  trait ContextFn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */] extends StObject {
+  trait ContextFn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */] extends StObject {
     
     var context: Ctx
     
@@ -96,12 +96,12 @@ object anon {
   }
   object ContextFn {
     
-    inline def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](context: Ctx, fn: Fn): ContextFn[Ctx, Fn] = {
+    inline def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](context: Ctx, fn: Fn): ContextFn[Ctx, Fn] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContextFn[Ctx, Fn]]
     }
     
-    extension [Self <: ContextFn[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](x: Self & (ContextFn[Ctx, Fn])) {
+    extension [Self <: ContextFn[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](x: Self & (ContextFn[Ctx, Fn])) {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -111,7 +111,7 @@ object anon {
   
   trait Effect extends StObject {
     
-    var effect: js.Any
+    var effect: Any
     
     var effectId: Double
     
@@ -121,14 +121,14 @@ object anon {
   }
   object Effect {
     
-    inline def apply(effect: js.Any, effectId: Double, parentEffectId: Double): Effect = {
+    inline def apply(effect: Any, effectId: Double, parentEffectId: Double): Effect = {
       val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], effectId = effectId.asInstanceOf[js.Any], parentEffectId = parentEffectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Effect]
     }
     
     extension [Self <: Effect](x: Self) {
       
-      inline def setEffect(value: js.Any): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: Any): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
       inline def setEffectId(value: Double): Self = StObject.set(x, "effectId", value.asInstanceOf[js.Any])
       
@@ -142,7 +142,7 @@ object anon {
   
   trait Fn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): void}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[js.Any] */, Name /* <: String */] extends StObject {
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[Any] */, Name /* <: String */] extends StObject {
     
     var context: Ctx
     
@@ -152,14 +152,14 @@ object anon {
     
     inline def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): void}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[js.Any] */, Name /* <: String */](context: Ctx, fn: Name): Fn[Ctx, Name] = {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[Any] */, Name /* <: String */](context: Ctx, fn: Name): Fn[Ctx, Name] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fn[Ctx, Name]]
     }
     
     extension [Self <: Fn[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): void}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[js.Any] */, Name /* <: String */](x: Self & (Fn[Ctx, Name])) {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[Any] */, Name /* <: String */](x: Self & (Fn[Ctx, Name])) {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

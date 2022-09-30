@@ -1,26 +1,26 @@
 package typings.xrm.XrmEnum
 
-import typings.xrm.xrmNumbers.`0`
-import typings.xrm.xrmNumbers.`10`
-import typings.xrm.xrmNumbers.`11`
-import typings.xrm.xrmNumbers.`12`
-import typings.xrm.xrmNumbers.`13`
-import typings.xrm.xrmNumbers.`14`
-import typings.xrm.xrmNumbers.`15`
-import typings.xrm.xrmNumbers.`16`
-import typings.xrm.xrmNumbers.`17`
-import typings.xrm.xrmNumbers.`18`
-import typings.xrm.xrmNumbers.`19`
-import typings.xrm.xrmNumbers.`1`
-import typings.xrm.xrmNumbers.`20`
-import typings.xrm.xrmNumbers.`2`
-import typings.xrm.xrmNumbers.`3`
-import typings.xrm.xrmNumbers.`4`
-import typings.xrm.xrmNumbers.`5`
-import typings.xrm.xrmNumbers.`6`
-import typings.xrm.xrmNumbers.`7`
-import typings.xrm.xrmNumbers.`8`
-import typings.xrm.xrmNumbers.`9`
+import typings.xrm.xrmInts.`0`
+import typings.xrm.xrmInts.`10`
+import typings.xrm.xrmInts.`11`
+import typings.xrm.xrmInts.`12`
+import typings.xrm.xrmInts.`13`
+import typings.xrm.xrmInts.`14`
+import typings.xrm.xrmInts.`15`
+import typings.xrm.xrmInts.`16`
+import typings.xrm.xrmInts.`17`
+import typings.xrm.xrmInts.`18`
+import typings.xrm.xrmInts.`19`
+import typings.xrm.xrmInts.`1`
+import typings.xrm.xrmInts.`20`
+import typings.xrm.xrmInts.`2`
+import typings.xrm.xrmInts.`3`
+import typings.xrm.xrmInts.`4`
+import typings.xrm.xrmInts.`5`
+import typings.xrm.xrmInts.`6`
+import typings.xrm.xrmInts.`7`
+import typings.xrm.xrmInts.`8`
+import typings.xrm.xrmInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +29,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An enumeration for Attribute Type metadata
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.xrm.xrmNumbers.`0`
-  - typings.xrm.xrmNumbers.`1`
-  - typings.xrm.xrmNumbers.`2`
-  - typings.xrm.xrmNumbers.`3`
-  - typings.xrm.xrmNumbers.`4`
-  - typings.xrm.xrmNumbers.`5`
-  - typings.xrm.xrmNumbers.`6`
-  - typings.xrm.xrmNumbers.`7`
-  - typings.xrm.xrmNumbers.`8`
-  - typings.xrm.xrmNumbers.`9`
-  - typings.xrm.xrmNumbers.`10`
-  - typings.xrm.xrmNumbers.`11`
-  - typings.xrm.xrmNumbers.`12`
-  - typings.xrm.xrmNumbers.`13`
-  - typings.xrm.xrmNumbers.`14`
-  - typings.xrm.xrmNumbers.`15`
-  - typings.xrm.xrmNumbers.`16`
-  - typings.xrm.xrmNumbers.`17`
-  - typings.xrm.xrmNumbers.`18`
-  - typings.xrm.xrmNumbers.`19`
-  - typings.xrm.xrmNumbers.`20`
+  - typings.xrm.xrmInts.`0`
+  - typings.xrm.xrmInts.`1`
+  - typings.xrm.xrmInts.`2`
+  - typings.xrm.xrmInts.`3`
+  - typings.xrm.xrmInts.`4`
+  - typings.xrm.xrmInts.`5`
+  - typings.xrm.xrmInts.`6`
+  - typings.xrm.xrmInts.`7`
+  - typings.xrm.xrmInts.`8`
+  - typings.xrm.xrmInts.`9`
+  - typings.xrm.xrmInts.`10`
+  - typings.xrm.xrmInts.`11`
+  - typings.xrm.xrmInts.`12`
+  - typings.xrm.xrmInts.`13`
+  - typings.xrm.xrmInts.`14`
+  - typings.xrm.xrmInts.`15`
+  - typings.xrm.xrmInts.`16`
+  - typings.xrm.xrmInts.`17`
+  - typings.xrm.xrmInts.`18`
+  - typings.xrm.xrmInts.`19`
+  - typings.xrm.xrmInts.`20`
 */
 trait AttributeTypeCode extends StObject
 object AttributeTypeCode {

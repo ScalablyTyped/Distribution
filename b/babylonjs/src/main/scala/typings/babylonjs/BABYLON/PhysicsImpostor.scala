@@ -1,7 +1,7 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.anon.Impulse
 import typings.babylonjs.anon.OtherImpostors
-import typings.babylonjs.anon.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,13 +24,13 @@ trait PhysicsImpostor extends StObject {
     * It will create a new body - but only if this mesh has no parent.
     * If it has, this impostor will not be used other than to define the impostor
     * of the child mesh.
-    * @hidden
+    * @internal
     */
   def _init(): Unit = js.native
   
   /* private */ var _isDisposed: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _isFromLine: Boolean = js.native
   
   /* private */ var _joints: Any = js.native
@@ -39,7 +39,7 @@ trait PhysicsImpostor extends StObject {
   
   /* private */ var _onBeforePhysicsStepCallbacks: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _onPhysicsCollideCallbacks: js.Array[OtherImpostors] = js.native
   
   /* private */ var _options: Any = js.native
@@ -50,7 +50,7 @@ trait PhysicsImpostor extends StObject {
   
   /* private */ var _physicsEngine: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _pluginData: Any = js.native
   
   /* private */ var _scene: Any = js.native
@@ -245,8 +245,11 @@ trait PhysicsImpostor extends StObject {
     * @param e
     * @param e.body
     * @param e.point
+    * @param e.distance
+    * @param e.impulse
+    * @param e.normal
     */
-  def onCollide(e: Point): Unit = js.native
+  def onCollide(e: Impulse): Unit = js.native
   
   /**
     * Legacy collision detection event support
@@ -341,7 +344,7 @@ trait PhysicsImpostor extends StObject {
   def restitution_=(value: Double): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var segments: Double = js.native
   
@@ -394,7 +397,7 @@ trait PhysicsImpostor extends StObject {
   def sleep(): PhysicsImpostor = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var soft: Boolean = js.native
   

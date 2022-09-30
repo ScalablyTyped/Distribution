@@ -15,7 +15,7 @@ object checkBoxGroupMod {
   val CheckBoxGroup: FC[CheckBoxGroupExtendedProps] = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onClick' | 'onChange'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait CheckBoxGroupExtendedProps
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onClick' | 'value' | 'defaultValue' | 'disabled' | 'labelKey' | 'name' | 'onChange' | 'options' | 'valueKey'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait CheckBoxGroupExtendedProps
     extends StObject
        with CheckBoxGroupProps
        with BoxProps
@@ -28,6 +28,8 @@ object checkBoxGroupMod {
   }
   
   trait CheckBoxGroupProps extends StObject {
+    
+    var defaultValue: js.UndefOr[js.Array[Double | String]] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -51,6 +53,12 @@ object checkBoxGroupMod {
     }
     
     extension [Self <: CheckBoxGroupProps](x: Self) {
+      
+      inline def setDefaultValue(value: js.Array[Double | String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      
+      inline def setDefaultValueVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

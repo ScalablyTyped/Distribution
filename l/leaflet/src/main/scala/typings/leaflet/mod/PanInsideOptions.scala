@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PanInsideOptions extends StObject {
+trait PanInsideOptions
+  extends StObject
+     with PanOptions {
   
   var padding: js.UndefOr[PointExpression] = js.undefined
   

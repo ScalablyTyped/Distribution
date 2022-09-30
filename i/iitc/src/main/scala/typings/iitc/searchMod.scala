@@ -23,7 +23,7 @@ object searchMod {
       */
     @JSGlobal("SearchQuery")
     @js.native
-    class SearchQuery () extends StObject {
+    open class SearchQuery () extends StObject {
       
       /** called to add a result to the query */
       def addResult(result: SearchResult): Unit = js.native
@@ -38,17 +38,17 @@ object searchMod {
       
       /* private */ def init(): Unit = js.native
       
-      /* private */ def onResultHoverEnd(result: SearchResult, event: js.Any): Unit = js.native
+      /* private */ def onResultHoverEnd(result: SearchResult, event: Any): Unit = js.native
       
-      /* private */ def onResultHoverStart(result: SearchResult, event: js.Any): Unit = js.native
+      /* private */ def onResultHoverStart(result: SearchResult, event: Any): Unit = js.native
       
-      /* private */ def onResultSelected(result: SearchResult, event: js.Any): Unit = js.native
+      /* private */ def onResultSelected(result: SearchResult, event: Any): Unit = js.native
       
       /* private */ def removeHoverResult(): Unit = js.native
       
       /* private */ def removeSelectedResult(): Unit = js.native
       
-      /* private */ def resultLayer(result: SearchResult): LayerGroup_[js.Any] = js.native
+      /* private */ def resultLayer(result: SearchResult): LayerGroup_[Any] = js.native
       
       /* private */ def show(): Unit = js.native
       
@@ -58,7 +58,7 @@ object searchMod {
     
     @JSGlobal("Search")
     @js.native
-    class Search_ () extends StObject {
+    open class Search_ () extends StObject {
       
       def doSearch(term: String, confirmed: Boolean): Unit = js.native
       
@@ -81,7 +81,7 @@ object searchMod {
       
       inline def SearchResultBounds(
         bounds: LatLngBoundsExpression,
-        description: JQuery | js.Array[js.Any] | Element | Text | String,
+        description: JQuery | js.Array[Any] | Element | Text | String,
         title: String
       ): typings.iitc.searchMod.global.SearchResultBounds = {
         val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
@@ -89,7 +89,7 @@ object searchMod {
       }
       
       inline def SearchResultPosition(
-        description: JQuery | js.Array[js.Any] | Element | Text | String,
+        description: JQuery | js.Array[Any] | Element | Text | String,
         position: LatLngExpression,
         title: String
       ): typings.iitc.searchMod.global.SearchResultPosition = {
@@ -101,7 +101,7 @@ object searchMod {
     trait SearchResultBase extends StObject {
       
       /** secondary information for this result.Will be interpreted as HTML, so make sure to escape properly. */
-      var description: JQuery | js.Array[js.Any] | Element | Text | String
+      var description: JQuery | js.Array[Any] | Element | Text | String
       
       /** a URL to a icon to display in the result list. Should be 12x12. */
       var icon: js.UndefOr[String] = js.undefined
@@ -128,16 +128,16 @@ object searchMod {
     }
     object SearchResultBase {
       
-      inline def apply(description: JQuery | js.Array[js.Any] | Element | Text | String, title: String): SearchResultBase = {
+      inline def apply(description: JQuery | js.Array[Any] | Element | Text | String, title: String): SearchResultBase = {
         val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResultBase]
       }
       
       extension [Self <: SearchResultBase](x: Self) {
         
-        inline def setDescription(value: JQuery | js.Array[js.Any] | Element | Text | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: JQuery | js.Array[Any] | Element | Text | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        inline def setDescriptionVarargs(value: js.Any*): Self = StObject.set(x, "description", js.Array(value :_*))
+        inline def setDescriptionVarargs(value: Any*): Self = StObject.set(x, "description", js.Array(value*))
         
         inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
@@ -170,7 +170,7 @@ object searchMod {
       
       inline def apply(
         bounds: LatLngBoundsExpression,
-        description: JQuery | js.Array[js.Any] | Element | Text | String,
+        description: JQuery | js.Array[Any] | Element | Text | String,
         title: String
       ): SearchResultBounds = {
         val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
@@ -181,7 +181,7 @@ object searchMod {
         
         inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
       }
     }
     
@@ -195,7 +195,7 @@ object searchMod {
     object SearchResultPosition {
       
       inline def apply(
-        description: JQuery | js.Array[js.Any] | Element | Text | String,
+        description: JQuery | js.Array[Any] | Element | Text | String,
         position: LatLngExpression,
         title: String
       ): SearchResultPosition = {

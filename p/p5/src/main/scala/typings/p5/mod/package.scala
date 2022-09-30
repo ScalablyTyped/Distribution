@@ -1,12 +1,12 @@
 package typings.p5.mod
 
-import typings.p5.p5Numbers.`0x0000`
-import typings.p5.p5Numbers.`0x0001`
-import typings.p5.p5Numbers.`0x0002`
-import typings.p5.p5Numbers.`0x0003`
-import typings.p5.p5Numbers.`0x0004`
-import typings.p5.p5Numbers.`0x0005`
-import typings.p5.p5Numbers.`0x0006`
+import typings.p5.p5Ints.`0x0000`
+import typings.p5.p5Ints.`0x0001`
+import typings.p5.p5Ints.`0x0002`
+import typings.p5.p5Ints.`0x0003`
+import typings.p5.p5Ints.`0x0004`
+import typings.p5.p5Ints.`0x0005`
+import typings.p5.p5Ints.`0x0006`
 import typings.p5.p5Strings.`color-burn`
 import typings.p5.p5Strings.`color-dodge`
 import typings.p5.p5Strings.`destination-out`

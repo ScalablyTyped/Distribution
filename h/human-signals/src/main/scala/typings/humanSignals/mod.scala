@@ -1,6 +1,5 @@
 package typings.humanSignals
 
-import typings.humanSignals.humanSignalsStrings.SIG$LeftcurlybracketstringRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,7 +102,7 @@ object mod {
     inline def unpause: typings.humanSignals.humanSignalsStrings.unpause = "unpause".asInstanceOf[typings.humanSignals.humanSignalsStrings.unpause]
   }
   
-  type SignalName = SIG$LeftcurlybracketstringRightcurlybracket
+  type SignalName = /* template literal string: SIG${string} */ String
   
   type SignalNumber = Double
   

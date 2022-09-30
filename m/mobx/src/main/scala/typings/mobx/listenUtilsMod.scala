@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object listenUtilsMod {
   
-  @JSImport("mobx/lib/types/listen-utils", JSImport.Namespace)
+  @JSImport("mobx/dist/types/listen-utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -17,15 +17,24 @@ object listenUtilsMod {
   
   inline def registerListener(listenable: IListenable, handler: js.Function): Lambda = (^.asInstanceOf[js.Dynamic].applyDynamic("registerListener")(listenable.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Lambda]
   
-  @js.native
   trait IListenable extends StObject {
     
-    var changeListeners: js.UndefOr[js.Array[js.Function]] = js.native
+    var changeListeners_ : js.UndefOr[js.Array[js.Function]] = js.undefined
+  }
+  object IListenable {
     
-    def observe(handler: js.Function2[/* change */ js.Any, /* oldValue */ js.UndefOr[js.Any], Unit]): Lambda = js.native
-    def observe(
-      handler: js.Function2[/* change */ js.Any, /* oldValue */ js.UndefOr[js.Any], Unit],
-      fireImmediately: Boolean
-    ): Lambda = js.native
+    inline def apply(): IListenable = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IListenable]
+    }
+    
+    extension [Self <: IListenable](x: Self) {
+      
+      inline def setChangeListeners_(value: js.Array[js.Function]): Self = StObject.set(x, "changeListeners_", value.asInstanceOf[js.Any])
+      
+      inline def setChangeListeners_Undefined: Self = StObject.set(x, "changeListeners_", js.undefined)
+      
+      inline def setChangeListeners_Varargs(value: js.Function*): Self = StObject.set(x, "changeListeners_", js.Array(value*))
+    }
   }
 }

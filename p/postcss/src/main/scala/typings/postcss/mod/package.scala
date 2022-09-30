@@ -5,7 +5,6 @@ import typings.postcss.anon.ToString
 import typings.postcss.atRuleMod.AtRuleProps
 import typings.postcss.commentMod.CommentProps
 import typings.postcss.declarationMod.DeclarationProps
-import typings.postcss.listMod.List
 import typings.postcss.mod.^
 import typings.postcss.nodeMod.AnyNode
 import typings.postcss.postcssStrings.end
@@ -29,7 +28,7 @@ typings.postcss.declarationMod.default]]
 
 inline def fromJSON: JSONHydrator = ^.asInstanceOf[js.Dynamic].selectDynamic("fromJSON").asInstanceOf[JSONHydrator]
 
-inline def list: List = ^.asInstanceOf[js.Dynamic].selectDynamic("list").asInstanceOf[List]
+inline def list: typings.postcss.listMod.List = ^.asInstanceOf[js.Dynamic].selectDynamic("list").asInstanceOf[typings.postcss.listMod.List]
 
 inline def parse: Parser[typings.postcss.rootMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("parse").asInstanceOf[Parser[typings.postcss.rootMod.default]]
 

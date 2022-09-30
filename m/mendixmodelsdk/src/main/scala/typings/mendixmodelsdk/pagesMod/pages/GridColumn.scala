@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/columns relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridColumn")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.GridColumn")
 @js.native
-class GridColumn protected () extends Element[IModel] {
+open class GridColumn protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -89,7 +89,7 @@ class GridColumn protected () extends Element[IModel] {
 }
 object GridColumn {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridColumn")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridColumn")
   @js.native
   val ^ : js.Any = js.native
   
@@ -110,13 +110,13 @@ object GridColumn {
   inline def createIn(container: ColumnGrid): GridColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridColumn]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridColumn.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridColumn.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridColumn.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridColumn.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

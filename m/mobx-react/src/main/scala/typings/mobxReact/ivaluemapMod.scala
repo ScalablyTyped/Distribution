@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ivaluemapMod {
   
-  type IValueMap = Record[String, js.Any]
+  type IValueMap = Record[String, Any]
 }

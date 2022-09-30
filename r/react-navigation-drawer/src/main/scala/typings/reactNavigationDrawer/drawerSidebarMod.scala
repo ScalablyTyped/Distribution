@@ -22,22 +22,22 @@ object drawerSidebarMod {
     */
   @JSImport("react-navigation-drawer/lib/typescript/src/views/DrawerSidebar", JSImport.Default)
   @js.native
-  class default () extends DrawerSidebar
+  open class default () extends DrawerSidebar
   
   /**
     * Component that renders the sidebar screen of the drawer.
     */
   @js.native
   trait DrawerSidebar
-    extends PureComponent[Props, js.Object, js.Any] {
+    extends PureComponent[Props, js.Object, Any] {
     
-    /* private */ var getLabel: js.Any = js.native
+    /* private */ var getLabel: Any = js.native
     
-    /* private */ var getScreenOptions: js.Any = js.native
+    /* private */ var getScreenOptions: Any = js.native
     
-    /* private */ var handleItemPress: js.Any = js.native
+    /* private */ var handleItemPress: Any = js.native
     
-    /* private */ var renderIcon: js.Any = js.native
+    /* private */ var renderIcon: Any = js.native
   }
   
   trait Props extends StObject {
@@ -54,7 +54,7 @@ object drawerSidebarMod {
     
     var navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams]
     
-    var screenProps: js.UndefOr[js.Any] = js.undefined
+    var screenProps: js.UndefOr[Any] = js.undefined
     
     var style: js.UndefOr[ViewStyle] = js.undefined
   }
@@ -88,7 +88,7 @@ object drawerSidebarMod {
       
       inline def setNavigation(value: NavigationScreenProp[NavigationDrawerState, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
       
       inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
       

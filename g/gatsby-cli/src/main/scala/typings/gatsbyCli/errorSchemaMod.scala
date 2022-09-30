@@ -2,7 +2,7 @@ package typings.gatsbyCli
 
 import typings.gatsbyCli.structuredErrorsTypesMod.ILocationPosition
 import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredError
-import typings.hapiJoi.mod.ObjectSchema
+import typings.joi.mod.ObjectSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateRepositoryOutput extends StObject {
   
   /**
-    * The repository detail data that's returned by Proton.
+    * The repository link's detail data that's returned by Proton.
     */
   var repository: Repository
 }

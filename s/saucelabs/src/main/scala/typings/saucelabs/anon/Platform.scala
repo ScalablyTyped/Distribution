@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Platform
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var browser: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ object Platform {
     
     inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
-    inline def setResolutionsVarargs(value: String*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: String*): Self = StObject.set(x, "resolutions", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

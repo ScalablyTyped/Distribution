@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * In version 8.15.0: introduced
+  * In version 9.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WorkflowTemplateType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WorkflowTemplateType")
 @js.native
 abstract class WorkflowTemplateType protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.WorkflowTemplateType {
@@ -28,18 +28,18 @@ abstract class WorkflowTemplateType protected ()
 }
 object WorkflowTemplateType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WorkflowTemplateType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WorkflowTemplateType")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WorkflowTemplateType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WorkflowTemplateType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WorkflowTemplateType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WorkflowTemplateType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

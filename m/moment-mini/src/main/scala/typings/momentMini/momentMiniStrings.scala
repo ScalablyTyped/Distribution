@@ -77,14 +77,6 @@ object momentMiniStrings {
   inline def LTS: LTS = "LTS".asInstanceOf[LTS]
   
   @js.native
-  sealed trait LeftparenthesisRightparenthesis extends StObject
-  inline def LeftparenthesisRightparenthesis: LeftparenthesisRightparenthesis = "()".asInstanceOf[LeftparenthesisRightparenthesis]
-  
-  @js.native
-  sealed trait `Leftparenthesis]` extends StObject
-  inline def `Leftparenthesis]`: `Leftparenthesis]` = "(]".asInstanceOf[`Leftparenthesis]`]
-  
-  @js.native
   sealed trait M
     extends StObject
        with All
@@ -117,10 +109,6 @@ object momentMiniStrings {
        with DurationConstructor
        with typings.momentMini.mod.unitOfTime.isoWeek
   inline def W: W = "W".asInstanceOf[W]
-  
-  @js.native
-  sealed trait `[Rightparenthesis` extends StObject
-  inline def `[Rightparenthesis`: `[Rightparenthesis` = "[)".asInstanceOf[`[Rightparenthesis`]
   
   @js.native
   sealed trait `[]` extends StObject

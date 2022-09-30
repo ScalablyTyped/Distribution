@@ -5,7 +5,7 @@ import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
 import typings.mendixmodelsdk.deltaManagerMod.IDeltaManager
 import typings.mendixmodelsdk.deltasMod.DeltaProcessor
-import typings.mendixmodelsdk.imodeleventMod.IDeltaEvent
+import typings.mendixmodelsdk.imodeleventMod.IModelEvent
 import typings.mendixmodelsdk.modelEventReceiverMod.ModelEventReceiver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modelEventManagerMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/model-events/ModelEventManager", "ModelEventManager")
+  @JSImport("mendixmodelsdk/src/sdk/internal/model-events/ModelEventManager", "ModelEventManager")
   @js.native
-  class ModelEventManager protected ()
+  open class ModelEventManager protected ()
     extends StObject
        with IModelEventManager {
     def this(
@@ -26,25 +26,25 @@ object modelEventManagerMod {
       currentEventId: Double
     ) = this()
     
-    /* private */ var currentEventId: js.Any = js.native
+    /* private */ var currentEventId: Any = js.native
     
-    /* private */ var deltaProcessor: js.Any = js.native
+    /* private */ var deltaProcessor: Any = js.native
     
-    /* private */ var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: Any = js.native
     
-    /* private */ var eventQueue: js.Any = js.native
+    /* private */ var eventQueue: Any = js.native
     
     var eventReceiver: ModelEventReceiver = js.native
     
     /* CompleteClass */
     override def loadUnitCompleted(eventId: Double, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     
-    /* private */ var loadUnitResults: js.Any = js.native
+    /* private */ var loadUnitResults: Any = js.native
     
     /* CompleteClass */
     override def loadUnitStarted(): Unit = js.native
     
-    /* private */ var modelChanged: js.Any = js.native
+    /* private */ var modelChanged: Any = js.native
     
     /* CompleteClass */
     override def onEventProcessed(callback: IVoidCallback): Unit = js.native
@@ -52,15 +52,15 @@ object modelEventManagerMod {
     /* CompleteClass */
     override def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit = js.native
     
-    /* private */ var onNewDelta: js.Any = js.native
+    /* private */ var onNewDelta: Any = js.native
     
-    /* private */ var pendingUnits: js.Any = js.native
+    /* private */ var pendingUnits: Any = js.native
     
-    /* private */ var processEventsQueue: js.Any = js.native
+    /* private */ var processEventsQueue: Any = js.native
     
-    /* private */ var processLoadedUnits: js.Any = js.native
+    /* private */ var processLoadedUnits: Any = js.native
     
-    def scheduleEvent(deltaEvent: IDeltaEvent): Unit = js.native
+    def scheduleEvent(modelEvent: IModelEvent): Unit = js.native
     
     /* CompleteClass */
     override def start(): Unit = js.native

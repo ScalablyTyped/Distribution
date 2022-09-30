@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `6` extends StObject {
   
-  var attack: typings.screeps.screepsNumbers.`3`
+  var attack: typings.screeps.screepsInts.`3`
 }
 object `6` {
   
@@ -17,6 +17,6 @@ object `6` {
   
   extension [Self <: `6`](x: Self) {
     
-    inline def setAttack(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
+    inline def setAttack(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
   }
 }

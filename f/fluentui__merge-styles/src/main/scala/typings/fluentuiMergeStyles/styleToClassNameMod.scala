@@ -18,9 +18,9 @@ object styleToClassNameMod {
   
   inline def serializeRuleEntries(options: IStyleOptions, ruleEntries: StringDictionary[String | Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeRuleEntries")(options.asInstanceOf[js.Any], ruleEntries.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def styleToClassName(options: IStyleOptions, args: IStyle*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToClassName")(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def styleToClassName(options: IStyleOptions, args: IStyle*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToClassName")(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
-  inline def styleToRegistration(options: IStyleOptions, args: IStyle*): js.UndefOr[IRegistration] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToRegistration")(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.UndefOr[IRegistration]]
+  inline def styleToRegistration(options: IStyleOptions, args: IStyle*): js.UndefOr[IRegistration] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToRegistration")(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.UndefOr[IRegistration]]
   
   trait IRegistration extends StObject {
     

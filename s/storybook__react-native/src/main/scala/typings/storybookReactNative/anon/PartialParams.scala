@@ -14,7 +14,7 @@ trait PartialParams extends StObject {
   
   var host: js.UndefOr[String] = js.undefined
   
-  var initialSelection: js.UndefOr[js.Any] = js.undefined
+  var initialSelection: js.UndefOr[Any] = js.undefined
   
   var isUIHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -61,7 +61,7 @@ object PartialParams {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setInitialSelection(value: js.Any): Self = StObject.set(x, "initialSelection", value.asInstanceOf[js.Any])
+    inline def setInitialSelection(value: Any): Self = StObject.set(x, "initialSelection", value.asInstanceOf[js.Any])
     
     inline def setInitialSelectionUndefined: Self = StObject.set(x, "initialSelection", js.undefined)
     

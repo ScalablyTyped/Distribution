@@ -35,7 +35,7 @@ trait Site
   var items: js.UndefOr[NullableOption[js.Array[BaseItem]]] = js.undefined
   
   // The collection of lists under this site.
-  var lists: js.UndefOr[NullableOption[js.Array[List]]] = js.undefined
+  var lists: js.UndefOr[NullableOption[js.Array[typings.microsoftGraph.mod.List]]] = js.undefined
   
   // Calls the OneNote service for notebook related operations.
   var onenote: js.UndefOr[NullableOption[Onenote]] = js.undefined
@@ -137,13 +137,13 @@ object Site {
     
     inline def setItemsVarargs(value: BaseItem*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setLists(value: NullableOption[js.Array[List]]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+    inline def setLists(value: NullableOption[js.Array[typings.microsoftGraph.mod.List]]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     inline def setListsNull: Self = StObject.set(x, "lists", null)
     
     inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
-    inline def setListsVarargs(value: List*): Self = StObject.set(x, "lists", js.Array(value*))
+    inline def setListsVarargs(value: typings.microsoftGraph.mod.List*): Self = StObject.set(x, "lists", js.Array(value*))
     
     inline def setOnenote(value: NullableOption[Onenote]): Self = StObject.set(x, "onenote", value.asInstanceOf[js.Any])
     

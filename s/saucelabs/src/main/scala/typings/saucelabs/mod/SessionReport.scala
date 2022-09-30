@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SessionReport
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var appId: js.UndefOr[Id] = js.undefined
   
@@ -102,13 +102,13 @@ object SessionReport {
     
     inline def setTestIdsUndefined: Self = StObject.set(x, "testIds", js.undefined)
     
-    inline def setTestIdsVarargs(value: Id*): Self = StObject.set(x, "testIds", js.Array(value :_*))
+    inline def setTestIdsVarargs(value: Id*): Self = StObject.set(x, "testIds", js.Array(value*))
     
     inline def setTestReportIds(value: js.Array[Id]): Self = StObject.set(x, "testReportIds", value.asInstanceOf[js.Any])
     
     inline def setTestReportIdsUndefined: Self = StObject.set(x, "testReportIds", js.undefined)
     
-    inline def setTestReportIdsVarargs(value: Id*): Self = StObject.set(x, "testReportIds", js.Array(value :_*))
+    inline def setTestReportIdsVarargs(value: Id*): Self = StObject.set(x, "testReportIds", js.Array(value*))
     
     inline def setUsage(value: MANUAL | BATCH | APPIUM | PIRANHA | XCUITEST | ANDROID_INSTRUMENTATION): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     

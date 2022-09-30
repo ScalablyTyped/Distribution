@@ -3,7 +3,6 @@ package typings.sparkpost.anon
 import typings.sparkpost.mod.Callback
 import typings.sparkpost.mod.CreateTemplate
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.Template
 import typings.sparkpost.mod.TemplateContent
 import typings.sparkpost.mod.TemplateMeta
@@ -21,7 +20,7 @@ trait Preview extends StObject {
     * @param template an object of [template attributes]{@link https://developers.sparkpost.com/api/templates#header-template-attributes}
     * @returns The template id results
     */
-  def create(template: CreateTemplate): ResultsPromise[Id] = js.native
+  def create(template: CreateTemplate): js.Promise[Results[Id]] = js.native
   /**
     * Create a new template
     *
@@ -51,7 +50,7 @@ trait Preview extends StObject {
     * @param [options] specifies a draft or published template
     * @returns The Template results
     */
-  def get(id: String): ResultsPromise[Template] = js.native
+  def get(id: String): js.Promise[Results[Template]] = js.native
   /**
     * Retrieve details about a specified template by its id
     *
@@ -59,7 +58,7 @@ trait Preview extends StObject {
     * @param callback The request callback with Template results
     */
   def get(id: String, callback: ResultsCallback[Template]): Unit = js.native
-  def get(id: String, options: Draft): ResultsPromise[Template] = js.native
+  def get(id: String, options: Draft): js.Promise[Results[Template]] = js.native
   /**
     * Retrieve details about a specified template by its id
     *
@@ -74,7 +73,7 @@ trait Preview extends StObject {
     *
     * @returns The TemplateMeta results array
     */
-  def list(): ResultsPromise[js.Array[TemplateMeta]] = js.native
+  def list(): js.Promise[Results[js.Array[TemplateMeta]]] = js.native
   /**
     * List a summary of all templates.
     * @param callback The request callback with TemplateMeta results array
@@ -87,7 +86,7 @@ trait Preview extends StObject {
     * @param id the id of the template you want to look up
     * @returns The webhook id results
     */
-  def preview(id: String): ResultsPromise[TemplateContent] = js.native
+  def preview(id: String): js.Promise[Results[TemplateContent]] = js.native
   /**
     * Preview the most recent version of an existing template by id
     *
@@ -95,7 +94,7 @@ trait Preview extends StObject {
     * @param callback The request callback with webhook id results
     */
   def preview(id: String, callback: ResultsCallback[TemplateContent]): Unit = js.native
-  def preview(id: String, options: Substitutiondata): ResultsPromise[TemplateContent] = js.native
+  def preview(id: String, options: Substitutiondata): js.Promise[Results[TemplateContent]] = js.native
   /**
     * Preview the most recent version of an existing template by id
     *
@@ -113,7 +112,7 @@ trait Preview extends StObject {
     * @param options If true, directly overwrite the existing published template. If false, create a new draft
     * @returns The template id results
     */
-  def update(id: String, template: UpdateTemplate): ResultsPromise[Id] = js.native
+  def update(id: String, template: UpdateTemplate): js.Promise[Results[Id]] = js.native
   /**
     * Update an existing template
     *
@@ -122,7 +121,7 @@ trait Preview extends StObject {
     * @param callback The request callback with template id results
     */
   def update(id: String, template: UpdateTemplate, callback: ResultsCallback[Id]): Unit = js.native
-  def update(id: String, template: UpdateTemplate, options: Updatepublished): ResultsPromise[Id] = js.native
+  def update(id: String, template: UpdateTemplate, options: Updatepublished): js.Promise[Results[Id]] = js.native
   /**
     * Update an existing template
     *

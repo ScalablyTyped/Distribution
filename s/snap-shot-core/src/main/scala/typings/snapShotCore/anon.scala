@@ -2,7 +2,6 @@ package typings.snapShotCore
 
 import typings.snapShotCore.mod.CompareFunction
 import typings.snapShotCore.mod.Result
-import typings.snapShotCore.snapShotCoreStrings.Dot$LeftcurlybracketstringRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object anon {
       */
     var exactSpecName: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[Dot$LeftcurlybracketstringRightcurlybracket] = js.undefined
+    var ext: js.UndefOr[/* template literal string: .${string} */ String] = js.undefined
     
     /**
       * Either `file` or `__filename` must be defined.
@@ -81,7 +80,7 @@ object anon {
       
       inline def setExactSpecNameUndefined: Self = StObject.set(x, "exactSpecName", js.undefined)
       
-      inline def setExt(value: Dot$LeftcurlybracketstringRightcurlybracket): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: /* template literal string: .${string} */ String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
       inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
@@ -211,7 +210,7 @@ object anon {
     /**
       * Defaults to `.snapshot.js`.
       */
-    var ext: js.UndefOr[Dot$LeftcurlybracketstringRightcurlybracket] = js.undefined
+    var ext: js.UndefOr[/* template literal string: .${string} */ String] = js.undefined
     
     var tests: js.Array[SpecFile]
   }
@@ -224,7 +223,7 @@ object anon {
     
     extension [Self <: Ext](x: Self) {
       
-      inline def setExt(value: Dot$LeftcurlybracketstringRightcurlybracket): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: /* template literal string: .${string} */ String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
       inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
@@ -319,7 +318,7 @@ object anon {
     
     var exactSpecName: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[Dot$LeftcurlybracketstringRightcurlybracket] = js.undefined
+    var ext: js.UndefOr[/* template literal string: .${string} */ String] = js.undefined
     
     var file: String
     
@@ -348,7 +347,7 @@ object anon {
       
       inline def setExactSpecNameUndefined: Self = StObject.set(x, "exactSpecName", js.undefined)
       
-      inline def setExt(value: Dot$LeftcurlybracketstringRightcurlybracket): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: /* template literal string: .${string} */ String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
       inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       

@@ -11,7 +11,7 @@ trait Action
   
   /**
     * Internal only - manager for action
-    * @hidden
+    * @internal
     */
   @JSName("_actionManager")
   var _actionManager_Action: ActionManager = js.native
@@ -22,22 +22,18 @@ trait Action
   
   /**
     * Internal only - Returns if the current condition allows to run the action
-    * @hidden
+    * @internal
     */
   def _evaluateConditionForCurrentFrame(): Boolean = js.native
   
   /**
-    * Internal only
-    * @param target
-    * @param propertyPath
-    * @hidden
+    * @internal
     */
   def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
   
   /**
     * Internal only
-    * @param propertyPath
-    * @hidden
+    * @internal
     */
   def _getProperty(propertyPath: String): String = js.native
   
@@ -45,9 +41,7 @@ trait Action
   
   /**
     * Internal only called by serialize
-    * @param serializedAction
-    * @param parent
-    * @hidden
+    * @internal
     */
   /* protected */ def _serialize(serializedAction: Any): Any = js.native
   /* protected */ def _serialize(serializedAction: Any, parent: Any): Any = js.native

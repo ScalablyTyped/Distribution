@@ -22,6 +22,7 @@ import typings.reactEasyCrop.typesMod.Point
 import typings.reactEasyCrop.typesMod.Size
 import typings.reactEasyCrop.typesMod.VideoSrc
 import typings.std.DOMRect
+import typings.std.Document
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
@@ -33,6 +34,7 @@ import typings.std.MouseEvent
 import typings.std.Touch
 import typings.std.TouchEvent
 import typings.std.WheelEvent
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -146,6 +148,10 @@ object cropperMod {
     var containerRect: DOMRect | Null = js.native
     
     var containerRef: HTMLDivElement | Null = js.native
+    
+    var currentDoc: Document = js.native
+    
+    var currentWindow: Window = js.native
     
     var dragStartCrop: Point = js.native
     

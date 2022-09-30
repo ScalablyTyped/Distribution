@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Renderer")
 @js.native
-class Renderer () extends Layer {
+open class Renderer () extends Layer {
   def this(options: RendererOptions) = this()
   
   var options: RendererOptions = js.native

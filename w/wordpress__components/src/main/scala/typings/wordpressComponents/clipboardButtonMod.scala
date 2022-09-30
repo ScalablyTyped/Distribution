@@ -42,7 +42,8 @@ object clipboardButtonMod {
       /**
         * Text to be copied to the clipboard on click.
         */
-      var text: String
+      @JSName("text")
+      var text_Props: String
     }
     object Props {
       

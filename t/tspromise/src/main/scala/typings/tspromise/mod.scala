@@ -36,7 +36,7 @@ object mod {
   inline def async[T1, T2, T3, T4, TR](callback: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, TR]): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, Thenable[TR]] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, Thenable[TR]]]
   
   /* static member */
-  inline def nfcall[T](obj: Any, methodName: String, args: Any*): Thenable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")((List(obj.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Thenable[T]]
+  inline def nfcall[T](obj: Any, methodName: String, args: Any*): Thenable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nfcall")((scala.List(obj.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Thenable[T]]
   
   /* static member */
   inline def reject[T](error: js.Error): Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(error.asInstanceOf[js.Any]).asInstanceOf[Thenable[T]]

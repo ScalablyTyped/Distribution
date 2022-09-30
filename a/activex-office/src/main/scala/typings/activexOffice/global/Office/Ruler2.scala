@@ -2,11 +2,11 @@ package typings.activexOffice.global.Office
 
 import typings.activexOffice.Office.RulerLevels2
 import typings.activexOffice.Office.TabStops2
-import typings.activexOffice.activexOfficeNumbers.`1`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`3`
-import typings.activexOffice.activexOfficeNumbers.`4`
-import typings.activexOffice.activexOfficeNumbers.`5`
+import typings.activexOffice.activexOfficeInts.`1`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`3`
+import typings.activexOffice.activexOfficeInts.`4`
+import typings.activexOffice.activexOfficeInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.Subtract")
 @js.native
-class Subtract protected ()
+open class Subtract protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.Subtract {
   def this(
     model: AbstractModel,

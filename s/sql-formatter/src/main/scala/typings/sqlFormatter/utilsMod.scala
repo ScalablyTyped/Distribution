@@ -20,6 +20,8 @@ object utilsMod {
   
   inline def flatKeywordList(obj: Record[String, js.Array[String]]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatKeywordList")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
+  inline def isMultiline(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiline")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def last[T](arr: js.Array[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(arr.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
   inline def maxLength(strings: js.Array[String]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(strings.asInstanceOf[js.Any]).asInstanceOf[Double]

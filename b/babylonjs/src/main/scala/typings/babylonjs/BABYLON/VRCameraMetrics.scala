@@ -54,12 +54,12 @@ trait VRCameraMetrics extends StObject {
   var interpupillaryDistance: Double = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   def leftHMatrix: Matrix = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   def leftPreViewMatrix: Matrix = js.native
   
@@ -85,12 +85,12 @@ trait VRCameraMetrics extends StObject {
   var postProcessScaleFactor: Double = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   def rightHMatrix: Matrix = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   def rightPreViewMatrix: Matrix = js.native
   

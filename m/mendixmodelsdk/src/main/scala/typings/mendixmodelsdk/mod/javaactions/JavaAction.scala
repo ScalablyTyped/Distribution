@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "javaactions.JavaAction")
 @js.native
-class JavaAction protected ()
+open class JavaAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.javaactions.JavaAction {
   def this(
     model: AbstractModel,

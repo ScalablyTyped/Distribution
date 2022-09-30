@@ -13,10 +13,9 @@ object numberInfoMod {
   
   @JSImport("ant-design-pro/lib/NumberInfo", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[NumberInfoProps, js.Any, js.Any]
+  open class default () extends Component[NumberInfoProps, Any, Any]
   
-  type NumberInfo = Component[NumberInfoProps, js.Any, js.Any]
+  type NumberInfo = Component[NumberInfoProps, Any, Any]
   
   trait NumberInfoProps extends StObject {
     

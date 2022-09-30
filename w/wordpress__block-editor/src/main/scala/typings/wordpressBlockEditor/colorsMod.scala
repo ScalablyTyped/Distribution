@@ -16,10 +16,10 @@ object colorsMod {
   
   inline def createCustomColorsHOC[T /* <: js.Array[String] */](colorsArray: js.Array[EditorColor]): js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomColorsHOC")(colorsArray.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ]]
   
   inline def getColorClassName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")().asInstanceOf[js.UndefOr[String]]
@@ -35,5 +35,5 @@ object colorsMod {
   inline def getColorObjectByColorValue(colors: js.Array[EditorColor]): js.UndefOr[EditorColor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByColorValue")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EditorColor]]
   inline def getColorObjectByColorValue(colors: js.Array[EditorColor], colorValue: String): js.UndefOr[EditorColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByColorValue")(colors.asInstanceOf[js.Any], colorValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[EditorColor]]
   
-  inline def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColors")(colorTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColors")(colorTypes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
 }

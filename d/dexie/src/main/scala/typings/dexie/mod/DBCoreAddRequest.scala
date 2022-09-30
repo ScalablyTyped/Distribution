@@ -1,72 +1,51 @@
 package typings.dexie.mod
 
 import typings.dexie.dexieStrings.add
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreAddRequest extends DBCoreMutateRequest {
+trait DBCoreAddRequest
+  extends StObject
+     with DBCoreMutateRequest {
   
-  var keys: js.UndefOr[js.Array[_]] = js.native
+  var keys: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var trans: DBCoreTransaction = js.native
+  var trans: DBCoreTransaction
   
-  var `type`: add = js.native
+  var `type`: add
   
-  var values: js.Array[_] = js.native
+  var values: js.Array[Any]
   
-  var wantResults: js.UndefOr[Boolean] = js.native
+  /** @deprecated Will always get results since 3.1.0-alpha.5 */
+  var wantResults: js.UndefOr[Boolean] = js.undefined
 }
 object DBCoreAddRequest {
   
-  @scala.inline
-  def apply(trans: DBCoreTransaction, `type`: add, values: js.Array[_]): DBCoreAddRequest = {
+  inline def apply(trans: DBCoreTransaction, values: js.Array[Any]): DBCoreAddRequest = {
     val __obj = js.Dynamic.literal(trans = trans.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("add")
     __obj.asInstanceOf[DBCoreAddRequest]
   }
   
-  @scala.inline
-  implicit class DBCoreAddRequestOps[Self <: DBCoreAddRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreAddRequest](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setKeysVarargs(value: Any*): Self = StObject.set(x, "keys", js.Array(value*))
     
-    @scala.inline
-    def setTrans(value: DBCoreTransaction): Self = this.set("trans", value.asInstanceOf[js.Any])
+    inline def setTrans(value: DBCoreTransaction): Self = StObject.set(x, "trans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: add): Self = this.set("type", value.asInstanceOf[js.Any])
+    inline def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     
-    @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = this.set("keys", js.Array(value :_*))
+    inline def setWantResults(value: Boolean): Self = StObject.set(x, "wantResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: js.Array[_]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
-    
-    @scala.inline
-    def setWantResults(value: Boolean): Self = this.set("wantResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWantResults: Self = this.set("wantResults", js.undefined)
+    inline def setWantResultsUndefined: Self = StObject.set(x, "wantResults", js.undefined)
   }
 }

@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationSource")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationSource")
 @js.native
-class NavigationSource protected ()
+open class NavigationSource protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.NavigationSource {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class NavigationSource protected ()
 }
 object NavigationSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationSource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object NavigationSource {
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.MenuWidget): typings.mendixmodelsdk.pagesMod.pages.NavigationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NavigationSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

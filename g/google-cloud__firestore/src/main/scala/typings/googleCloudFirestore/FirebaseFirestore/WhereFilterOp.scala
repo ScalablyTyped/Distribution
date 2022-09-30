@@ -1,5 +1,6 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
+import typings.googleCloudFirestore.googleCloudFirestoreStrings.in_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleCloudFirestore.googleCloudFirestoreStrings.GreaterthansignEqualssign
   - typings.googleCloudFirestore.googleCloudFirestoreStrings.Greaterthansign
   - typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains`
-  - typings.googleCloudFirestore.googleCloudFirestoreStrings.in
+  - typings.googleCloudFirestore.googleCloudFirestoreStrings.in_
   - typings.googleCloudFirestore.googleCloudFirestoreStrings.`not-in`
   - typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains-any`
 */
@@ -35,7 +36,7 @@ object WhereFilterOp {
   
   inline def `array-contains-any`: typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains-any` = "array-contains-any".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.`array-contains-any`]
   
-  inline def in: typings.googleCloudFirestore.googleCloudFirestoreStrings.in = "in".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.in]
+  inline def in: in_ = "in".asInstanceOf[in_]
   
   inline def `not-in`: typings.googleCloudFirestore.googleCloudFirestoreStrings.`not-in` = "not-in".asInstanceOf[typings.googleCloudFirestore.googleCloudFirestoreStrings.`not-in`]
 }

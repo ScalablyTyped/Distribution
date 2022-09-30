@@ -13,7 +13,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object longrunning {
     * Constructs a new CancelOperationRequest.
     * @param [properties] Properties to set
     */
-  class CancelOperationRequest ()
+  open class CancelOperationRequest ()
     extends typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest {
     def this(properties: ICancelOperationRequest) = this()
   }
@@ -47,6 +46,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     inline def create(properties: ICancelOperationRequest): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     /**
       * Decodes a CancelOperationRequest message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -58,9 +59,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     /**
       * Decodes a CancelOperationRequest message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -70,7 +70,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     
     /**
       * Encodes the specified CancelOperationRequest message. Does not implicitly {@link google.longrunning.CancelOperationRequest.verify|verify} messages.
@@ -98,7 +97,7 @@ object longrunning {
       * @returns CancelOperationRequest
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest]
     
     /**
       * Creates a plain object from a CancelOperationRequest message. Also converts values to other types if specified.
@@ -107,11 +106,11 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.operationsMod.google.longrunning.CancelOperationRequest,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a CancelOperationRequest message.
@@ -119,7 +118,7 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a DeleteOperationRequest. */
@@ -129,7 +128,7 @@ object longrunning {
     * Constructs a new DeleteOperationRequest.
     * @param [properties] Properties to set
     */
-  class DeleteOperationRequest ()
+  open class DeleteOperationRequest ()
     extends typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest {
     def this(properties: IDeleteOperationRequest) = this()
   }
@@ -148,6 +147,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     inline def create(properties: IDeleteOperationRequest): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     /**
       * Decodes a DeleteOperationRequest message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -159,9 +160,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     /**
       * Decodes a DeleteOperationRequest message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -171,7 +171,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     
     /**
       * Encodes the specified DeleteOperationRequest message. Does not implicitly {@link google.longrunning.DeleteOperationRequest.verify|verify} messages.
@@ -199,7 +198,7 @@ object longrunning {
       * @returns DeleteOperationRequest
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest]
     
     /**
       * Creates a plain object from a DeleteOperationRequest message. Also converts values to other types if specified.
@@ -208,11 +207,11 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.operationsMod.google.longrunning.DeleteOperationRequest,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a DeleteOperationRequest message.
@@ -220,7 +219,7 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a GetOperationRequest. */
@@ -230,7 +229,7 @@ object longrunning {
     * Constructs a new GetOperationRequest.
     * @param [properties] Properties to set
     */
-  class GetOperationRequest ()
+  open class GetOperationRequest ()
     extends typings.googleGax.operationsMod.google.longrunning.GetOperationRequest {
     def this(properties: IGetOperationRequest) = this()
   }
@@ -249,6 +248,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     inline def create(properties: IGetOperationRequest): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     /**
       * Decodes a GetOperationRequest message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -260,9 +261,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     /**
       * Decodes a GetOperationRequest message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -272,7 +272,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     
     /**
       * Encodes the specified GetOperationRequest message. Does not implicitly {@link google.longrunning.GetOperationRequest.verify|verify} messages.
@@ -300,7 +299,7 @@ object longrunning {
       * @returns GetOperationRequest
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.GetOperationRequest]
     
     /**
       * Creates a plain object from a GetOperationRequest message. Also converts values to other types if specified.
@@ -309,11 +308,11 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.GetOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.GetOperationRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.operationsMod.google.longrunning.GetOperationRequest,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a GetOperationRequest message.
@@ -321,7 +320,7 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ListOperationsRequest. */
@@ -331,7 +330,7 @@ object longrunning {
     * Constructs a new ListOperationsRequest.
     * @param [properties] Properties to set
     */
-  class ListOperationsRequest ()
+  open class ListOperationsRequest ()
     extends typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest {
     def this(properties: IListOperationsRequest) = this()
   }
@@ -350,6 +349,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     inline def create(properties: IListOperationsRequest): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     /**
       * Decodes a ListOperationsRequest message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -361,9 +362,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     /**
       * Decodes a ListOperationsRequest message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -373,7 +373,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     
     /**
       * Encodes the specified ListOperationsRequest message. Does not implicitly {@link google.longrunning.ListOperationsRequest.verify|verify} messages.
@@ -401,7 +400,7 @@ object longrunning {
       * @returns ListOperationsRequest
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest]
     
     /**
       * Creates a plain object from a ListOperationsRequest message. Also converts values to other types if specified.
@@ -410,11 +409,11 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.operationsMod.google.longrunning.ListOperationsRequest,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ListOperationsRequest message.
@@ -422,7 +421,7 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ListOperationsResponse. */
@@ -432,7 +431,7 @@ object longrunning {
     * Constructs a new ListOperationsResponse.
     * @param [properties] Properties to set
     */
-  class ListOperationsResponse ()
+  open class ListOperationsResponse ()
     extends typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse {
     def this(properties: IListOperationsResponse) = this()
   }
@@ -451,6 +450,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     inline def create(properties: IListOperationsResponse): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     /**
       * Decodes a ListOperationsResponse message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -462,9 +463,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     /**
       * Decodes a ListOperationsResponse message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -474,7 +474,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     
     /**
       * Encodes the specified ListOperationsResponse message. Does not implicitly {@link google.longrunning.ListOperationsResponse.verify|verify} messages.
@@ -502,7 +501,7 @@ object longrunning {
       * @returns ListOperationsResponse
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse]
     
     /**
       * Creates a plain object from a ListOperationsResponse message. Also converts values to other types if specified.
@@ -511,11 +510,11 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ListOperationsResponse message.
@@ -523,7 +522,7 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents an Operation. */
@@ -533,7 +532,7 @@ object longrunning {
     * Constructs a new Operation.
     * @param [properties] Properties to set
     */
-  class Operation ()
+  open class Operation ()
     extends typings.googleGax.operationsMod.google.longrunning.Operation {
     def this(properties: IOperation) = this()
   }
@@ -552,6 +551,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     inline def create(properties: IOperation): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     /**
       * Decodes an Operation message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -563,9 +564,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     /**
       * Decodes an Operation message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -575,7 +575,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     
     /**
       * Encodes the specified Operation message. Does not implicitly {@link google.longrunning.Operation.verify|verify} messages.
@@ -603,7 +602,7 @@ object longrunning {
       * @returns Operation
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.Operation]
     
     /**
       * Creates a plain object from an Operation message. Also converts values to other types if specified.
@@ -612,8 +611,8 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.Operation): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.Operation, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.Operation): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.Operation, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Operation message.
@@ -621,7 +620,7 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents an OperationInfo. */
@@ -631,7 +630,7 @@ object longrunning {
     * Constructs a new OperationInfo.
     * @param [properties] Properties to set
     */
-  class OperationInfo ()
+  open class OperationInfo ()
     extends typings.googleGax.operationsMod.google.longrunning.OperationInfo {
     def this(properties: IOperationInfo) = this()
   }
@@ -650,6 +649,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     inline def create(properties: IOperationInfo): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.OperationInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     /**
       * Decodes an OperationInfo message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -661,9 +662,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.OperationInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.OperationInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     /**
       * Decodes an OperationInfo message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -673,7 +673,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     
     /**
       * Encodes the specified OperationInfo message. Does not implicitly {@link google.longrunning.OperationInfo.verify|verify} messages.
@@ -701,7 +700,7 @@ object longrunning {
       * @returns OperationInfo
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.OperationInfo]
     
     /**
       * Creates a plain object from an OperationInfo message. Also converts values to other types if specified.
@@ -710,11 +709,11 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.OperationInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.OperationInfo): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.operationsMod.google.longrunning.OperationInfo,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an OperationInfo message.
@@ -722,13 +721,13 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents an Operations */
   @JSImport("google-gax", "operationsProtos.google.longrunning.Operations")
   @js.native
-  class Operations protected ()
+  open class Operations protected ()
     extends typings.googleGax.operationsMod.google.longrunning.Operations {
     /**
       * Constructs a new Operations service.
@@ -768,7 +767,7 @@ object longrunning {
     * Constructs a new WaitOperationRequest.
     * @param [properties] Properties to set
     */
-  class WaitOperationRequest ()
+  open class WaitOperationRequest ()
     extends typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest {
     def this(properties: IWaitOperationRequest) = this()
   }
@@ -787,6 +786,8 @@ object longrunning {
     inline def create(): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     inline def create(properties: IWaitOperationRequest): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     /**
       * Decodes a WaitOperationRequest message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -798,9 +799,8 @@ object longrunning {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
-    inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     /**
       * Decodes a WaitOperationRequest message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -810,7 +810,6 @@ object longrunning {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     
     /**
       * Encodes the specified WaitOperationRequest message. Does not implicitly {@link google.longrunning.WaitOperationRequest.verify|verify} messages.
@@ -838,7 +837,7 @@ object longrunning {
       * @returns WaitOperationRequest
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest]
     
     /**
       * Creates a plain object from a WaitOperationRequest message. Also converts values to other types if specified.
@@ -847,11 +846,11 @@ object longrunning {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.operationsMod.google.longrunning.WaitOperationRequest,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a WaitOperationRequest message.
@@ -859,6 +858,6 @@ object longrunning {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
 }

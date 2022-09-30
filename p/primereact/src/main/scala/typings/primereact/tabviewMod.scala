@@ -458,6 +458,10 @@ object tabviewMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    var onBeforeTabChange: js.UndefOr[js.Function1[/* e */ TabViewTabChangeParams, Unit]] = js.undefined
+    
+    var onBeforeTabClose: js.UndefOr[js.Function1[/* e */ TabViewTabCloseParams, Unit]] = js.undefined
+    
     var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -1000,6 +1004,14 @@ object tabviewMod {
       inline def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
+      
+      inline def setOnBeforeTabChange(value: /* e */ TabViewTabChangeParams => Unit): Self = StObject.set(x, "onBeforeTabChange", js.Any.fromFunction1(value))
+      
+      inline def setOnBeforeTabChangeUndefined: Self = StObject.set(x, "onBeforeTabChange", js.undefined)
+      
+      inline def setOnBeforeTabClose(value: /* e */ TabViewTabCloseParams => Unit): Self = StObject.set(x, "onBeforeTabClose", js.Any.fromFunction1(value))
+      
+      inline def setOnBeforeTabCloseUndefined: Self = StObject.set(x, "onBeforeTabClose", js.undefined)
       
       inline def setOnBlur(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       

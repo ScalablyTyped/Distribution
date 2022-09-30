@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babylonjs.BABYLON.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient
+- typings.babylonjs.BABYLON.IParticleSystem because var conflicts: _wasDispatched, animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed, useLogarithmicDepth. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient
 - typings.babylonjs.BABYLON.IAnimatable because var conflicts: animations. Inlined  */ @js.native
 trait ParticleSystem
   extends StObject
@@ -19,11 +19,7 @@ trait ParticleSystem
   /* private */ var _alive: Any = js.native
   
   /**
-    * @param index
-    * @param particle
-    * @param offsetX
-    * @param offsetY
-    * @hidden (for internal use only)
+    * @internal (for internal use only)
     */
   def _appendParticleVertex(index: Double, particle: Particle, offsetX: Double, offsetY: Double): Unit = js.native
   
@@ -41,30 +37,30 @@ trait ParticleSystem
   
   /* private */ var _createVertexBuffers: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentEmitRate1: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentEmitRate2: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentEmitRateGradient: Nullable[FactorGradient] = js.native
   
   /* private */ var _currentRenderId: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentStartSize1: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentStartSize2: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentStartSizeGradient: Nullable[FactorGradient] = js.native
   
   /* private */ var _customWrappers: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * If the particle systems emitter should be disposed when the particle system is disposed
     */
   var _disposeEmitterOnDispose: Boolean = js.native
@@ -84,21 +80,20 @@ trait ParticleSystem
   /* private */ var _getCustomDrawWrapper: Any = js.native
   
   /**
-    * @param blendMode
-    * @hidden
+    * @internal
     */
   /* private */ var _getWrapper: Any = js.native
   
   /* private */ var _indexBuffer: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _inheritedVelocityOffset: Vector3 = js.native
   
   /* private */ var _newPartsExcess: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _onBeforeDrawParticlesObservable: Any = js.native
   
   /* private */ var _onDisposeObserver: Any = js.native

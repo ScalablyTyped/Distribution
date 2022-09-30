@@ -11,14 +11,11 @@ A higher order component that accepts lifecycle hook functions as props
 | Full name          | react-lifecycle-component |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 34768 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3267.6666666666665 |
+| # stars            | 46.0 |
 
 ## Links
-- [Homepage](https://github.com/JamieDixon/react-lifecycle-component#readme)
-- [Bugs](https://github.com/JamieDixon/react-lifecycle-component/issues)
-- [Repository](https://github.com/JamieDixon/react-lifecycle-component)
 - [Npm](https://www.npmjs.com/package/react-lifecycle-component)
     
 

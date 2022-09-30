@@ -49,5 +49,5 @@ object Class {
     * @param mixin An object declaring the set of instance members. The mixin parameter list is of variable length.
     * @returns The newly defined class.
     **/
-  inline def mix(constructor: js.Function, mixin: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mix")(List(constructor.asInstanceOf[js.Any]).`++`(mixin.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def mix(constructor: js.Function, mixin: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mix")(scala.List(constructor.asInstanceOf[js.Any]).`++`(mixin.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

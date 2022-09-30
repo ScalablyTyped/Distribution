@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.NoCase")
 @js.native
-class NoCase protected ()
+open class NoCase protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.NoCase {
   def this(
     model: AbstractModel,

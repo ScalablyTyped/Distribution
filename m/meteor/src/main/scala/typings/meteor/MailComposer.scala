@@ -8,7 +8,7 @@ trait MailComposer extends StObject {
   
   def addHeader(name: String, value: String): Unit
   
-  def pipe(stream: js.Any): Unit
+  def pipe(stream: Any): Unit
   
   def setMessageOption(from: String, to: String, body: String, html: String): Unit
   
@@ -18,7 +18,7 @@ object MailComposer {
   
   inline def apply(
     addHeader: (String, String) => Unit,
-    pipe: js.Any => Unit,
+    pipe: Any => Unit,
     setMessageOption: (String, String, String, String) => Unit,
     streamMessage: () => Unit
   ): MailComposer = {
@@ -30,7 +30,7 @@ object MailComposer {
     
     inline def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
     
-    inline def setPipe(value: js.Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
+    inline def setPipe(value: Any => Unit): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
     
     inline def setSetMessageOption(value: (String, String, String, String) => Unit): Self = StObject.set(x, "setMessageOption", js.Any.fromFunction4(value))
     

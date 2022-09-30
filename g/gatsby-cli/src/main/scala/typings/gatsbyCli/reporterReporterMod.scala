@@ -2,9 +2,10 @@ package typings.gatsbyCli
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.commonTags.mod.TemplateTag
-import typings.gatsbyCli.anon.ChalkChalkFunctionsupport
+import typings.gatsbyCli.anon.BackgroundColor
 import typings.gatsbyCli.anon.Id
 import typings.gatsbyCli.constantsMod.ActivityStatuses
+import typings.gatsbyCli.diagnosticsMod.AdditionalDiagnosticsOutputHandler
 import typings.gatsbyCli.errorMapMod.ErrorId
 import typings.gatsbyCli.errorMapMod.IErrorMapEntry
 import typings.gatsbyCli.reporterPhantomMod.IPhantomReporter
@@ -12,12 +13,14 @@ import typings.gatsbyCli.reporterProgressMod.IProgressReporter
 import typings.gatsbyCli.reporterTimerMod.ITimerReporter
 import typings.gatsbyCli.reporterTypesMod.CreateLogAction
 import typings.gatsbyCli.reporterTypesMod.ErrorMeta
+import typings.gatsbyCli.reporterTypesMod.ILogIntent
+import typings.gatsbyCli.reporterTypesMod.IRenderPageArgs
 import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredError
 import typings.gatsbyCli.typesMod.IPendingActivity
 import typings.gatsbyCli.typesMod.ISetStatus
 import typings.opentracing.mod.Span
+import typings.opentracing.mod.SpanContext
 import typings.redux.mod.Dispatch
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +34,15 @@ object reporterReporterMod {
     */
   @JSImport("gatsby-cli/lib/reporter/reporter", "Reporter")
   @js.native
-  class Reporter_ () extends StObject {
+  open class Reporter_ () extends StObject {
+    
+    def _initReporterMessagingInMain(onMessage: js.Function1[/* listener */ js.Function1[/* msg */ ILogIntent | Any, Unit], Unit]): Unit = js.native
+    
+    def _initReporterMessagingInWorker(sendMessage: js.Function1[/* msg */ ILogIntent, Unit]): Unit = js.native
+    
+    def _registerAdditionalDiagnosticOutputHandler(handler: AdditionalDiagnosticsOutputHandler): Unit = js.native
+    
+    def _renderPageTree(args: IRenderPageArgs): Unit = js.native
     
     def _setStage(): Unit = js.native
     
@@ -57,15 +68,21 @@ object reporterReporterMod {
     def createProgress(text: String, total: Unit, start: Unit, activityArgs: IActivityArgs): IProgressReporter = js.native
     
     def error(errorMeta: js.Array[ErrorMeta]): IStructuredError | js.Array[IStructuredError] = js.native
-    def error(errorMeta: js.Array[ErrorMeta], error: js.Array[Error]): IStructuredError | js.Array[IStructuredError] = js.native
-    def error(errorMeta: js.Array[ErrorMeta], error: Error): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: js.Array[ErrorMeta], error: js.Array[js.Error]): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: js.Array[ErrorMeta], error: js.Array[js.Error], pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: js.Array[ErrorMeta], error: js.Error): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: js.Array[ErrorMeta], error: js.Error, pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: js.Array[ErrorMeta], error: Unit, pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
     def error(errorMeta: ErrorMeta): IStructuredError | js.Array[IStructuredError] = js.native
-    def error(errorMeta: ErrorMeta, error: js.Array[Error]): IStructuredError | js.Array[IStructuredError] = js.native
-    def error(errorMeta: ErrorMeta, error: Error): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: ErrorMeta, error: js.Array[js.Error]): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: ErrorMeta, error: js.Array[js.Error], pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: ErrorMeta, error: js.Error): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: ErrorMeta, error: js.Error, pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
+    def error(errorMeta: ErrorMeta, error: Unit, pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
     
     var errorMap: Record[ErrorId, IErrorMapEntry] = js.native
     
-    var format: ChalkChalkFunctionsupport = js.native
+    var format: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify chalk.Chalk */ Any) & BackgroundColor = js.native
     
     def info(): CreateLogAction = js.native
     def info(text: String): CreateLogAction = js.native
@@ -77,14 +94,20 @@ object reporterReporterMod {
       * Log arguments and exit process with status 1.
       */
     def panic(errorMeta: ErrorMeta): scala.Nothing = js.native
-    def panic(errorMeta: ErrorMeta, error: js.Array[Error]): scala.Nothing = js.native
-    def panic(errorMeta: ErrorMeta, error: Error): scala.Nothing = js.native
+    def panic(errorMeta: ErrorMeta, error: js.Array[js.Error]): scala.Nothing = js.native
+    def panic(errorMeta: ErrorMeta, error: js.Array[js.Error], pluginName: String): scala.Nothing = js.native
+    def panic(errorMeta: ErrorMeta, error: js.Error): scala.Nothing = js.native
+    def panic(errorMeta: ErrorMeta, error: js.Error, pluginName: String): scala.Nothing = js.native
+    def panic(errorMeta: ErrorMeta, error: Unit, pluginName: String): scala.Nothing = js.native
     
     def panicOnBuild(errorMeta: ErrorMeta): IStructuredError | js.Array[IStructuredError] = js.native
-    def panicOnBuild(errorMeta: ErrorMeta, error: js.Array[Error]): IStructuredError | js.Array[IStructuredError] = js.native
-    def panicOnBuild(errorMeta: ErrorMeta, error: Error): IStructuredError | js.Array[IStructuredError] = js.native
+    def panicOnBuild(errorMeta: ErrorMeta, error: js.Array[js.Error]): IStructuredError | js.Array[IStructuredError] = js.native
+    def panicOnBuild(errorMeta: ErrorMeta, error: js.Array[js.Error], pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
+    def panicOnBuild(errorMeta: ErrorMeta, error: js.Error): IStructuredError | js.Array[IStructuredError] = js.native
+    def panicOnBuild(errorMeta: ErrorMeta, error: js.Error, pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
+    def panicOnBuild(errorMeta: ErrorMeta, error: Unit, pluginName: String): IStructuredError | js.Array[IStructuredError] = js.native
     
-    def pendingActivity(hasIdStatus: Id): js.Array[IPendingActivity | (js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit])] = js.native
+    def pendingActivity(hasIdStatus: Id): js.Array[(js.Function1[/* dispatch */ Dispatch[ISetStatus], Unit]) | IPendingActivity] = js.native
     
     /**
       * Create an Activity that is not visible to the user
@@ -147,9 +170,9 @@ object reporterReporterMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var parentSpan: js.UndefOr[Span] = js.undefined
+    var parentSpan: js.UndefOr[Span | SpanContext] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var tags: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object IActivityArgs {
     
@@ -164,11 +187,11 @@ object reporterReporterMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setParentSpan(value: Span): Self = StObject.set(x, "parentSpan", value.asInstanceOf[js.Any])
+      inline def setParentSpan(value: Span | SpanContext): Self = StObject.set(x, "parentSpan", value.asInstanceOf[js.Any])
       
       inline def setParentSpanUndefined: Self = StObject.set(x, "parentSpan", js.undefined)
       
-      inline def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }

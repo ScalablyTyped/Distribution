@@ -1,16 +1,16 @@
 package typings.guacamoleClient.mod
 
-import typings.guacamoleClient.guacamoleClientNumbers.`0x1`
-import typings.guacamoleClient.guacamoleClientNumbers.`0x2`
-import typings.guacamoleClient.guacamoleClientNumbers.`0x4`
-import typings.guacamoleClient.guacamoleClientNumbers.`0x6`
-import typings.guacamoleClient.guacamoleClientNumbers.`0x8`
-import typings.guacamoleClient.guacamoleClientNumbers.`0x9`
-import typings.guacamoleClient.guacamoleClientNumbers.`0xa`
-import typings.guacamoleClient.guacamoleClientNumbers.`0xb`
-import typings.guacamoleClient.guacamoleClientNumbers.`0xc`
-import typings.guacamoleClient.guacamoleClientNumbers.`0xe`
-import typings.guacamoleClient.guacamoleClientNumbers.`0xf`
+import typings.guacamoleClient.guacamoleClientInts.`0x1`
+import typings.guacamoleClient.guacamoleClientInts.`0x2`
+import typings.guacamoleClient.guacamoleClientInts.`0x4`
+import typings.guacamoleClient.guacamoleClientInts.`0x6`
+import typings.guacamoleClient.guacamoleClientInts.`0x8`
+import typings.guacamoleClient.guacamoleClientInts.`0x9`
+import typings.guacamoleClient.guacamoleClientInts.`0xa`
+import typings.guacamoleClient.guacamoleClientInts.`0xb`
+import typings.guacamoleClient.guacamoleClientInts.`0xc`
+import typings.guacamoleClient.guacamoleClientInts.`0xe`
+import typings.guacamoleClient.guacamoleClientInts.`0xf`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

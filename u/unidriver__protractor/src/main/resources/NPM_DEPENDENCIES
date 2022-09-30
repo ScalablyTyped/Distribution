@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@unidriver/protractor" : "1.1.7"
+      "@unidriver/protractor" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@unidriver/protractor" : "1.1.7"
+      "@unidriver/protractor" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

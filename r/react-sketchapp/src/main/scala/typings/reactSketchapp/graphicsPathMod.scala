@@ -1,9 +1,9 @@
 package typings.reactSketchapp
 
 import typings.reactSketchapp.anon.Data
-import typings.reactSketchapp.reactSketchappNumbers.`0`
-import typings.reactSketchapp.reactSketchappNumbers.`1`
-import typings.reactSketchapp.reactSketchappNumbers.`2`
+import typings.reactSketchapp.reactSketchappInts.`0`
+import typings.reactSketchapp.reactSketchappInts.`1`
+import typings.reactSketchapp.reactSketchappInts.`2`
 import typings.reactSketchapp.reactSketchappStrings.butt
 import typings.reactSketchapp.reactSketchappStrings.round
 import typings.reactSketchapp.reactSketchappStrings.square

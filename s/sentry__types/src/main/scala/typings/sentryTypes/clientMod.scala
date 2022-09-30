@@ -15,6 +15,7 @@ import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.severityMod.SeverityLevel
 import typings.sentryTypes.transportMod.BaseTransportOptions
 import typings.sentryTypes.transportMod.Transport
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,20 +88,20 @@ object clientMod {
       * @returns A promise which resolves to `true` if the flush completes successfully before the timeout, or `false` if
       * it doesn't.
       */
-    def close(): js.Thenable[Boolean] = js.native
-    def close(timeout: Double): js.Thenable[Boolean] = js.native
+    def close(): PromiseLike[Boolean] = js.native
+    def close(timeout: Double): PromiseLike[Boolean] = js.native
     
     /** Creates an {@link Event} from all inputs to `captureException` and non-primitive inputs to `captureMessage`. */
-    def eventFromException(exception: Any): js.Thenable[Event] = js.native
-    def eventFromException(exception: Any, hint: EventHint): js.Thenable[Event] = js.native
+    def eventFromException(exception: Any): PromiseLike[Event] = js.native
+    def eventFromException(exception: Any, hint: EventHint): PromiseLike[Event] = js.native
     
     /** Creates an {@link Event} from primitive inputs to `captureMessage`. */
-    def eventFromMessage(message: String): js.Thenable[Event] = js.native
-    def eventFromMessage(message: String, level: Unit, hint: EventHint): js.Thenable[Event] = js.native
-    def eventFromMessage(message: String, level: Severity): js.Thenable[Event] = js.native
-    def eventFromMessage(message: String, level: SeverityLevel): js.Thenable[Event] = js.native
-    def eventFromMessage(message: String, level: SeverityLevel, hint: EventHint): js.Thenable[Event] = js.native
-    def eventFromMessage(message: String, level: Severity, hint: EventHint): js.Thenable[Event] = js.native
+    def eventFromMessage(message: String): PromiseLike[Event] = js.native
+    def eventFromMessage(message: String, level: Unit, hint: EventHint): PromiseLike[Event] = js.native
+    def eventFromMessage(message: String, level: Severity): PromiseLike[Event] = js.native
+    def eventFromMessage(message: String, level: SeverityLevel): PromiseLike[Event] = js.native
+    def eventFromMessage(message: String, level: SeverityLevel, hint: EventHint): PromiseLike[Event] = js.native
+    def eventFromMessage(message: String, level: Severity, hint: EventHint): PromiseLike[Event] = js.native
     
     /**
       * Wait for all events to be sent or the timeout to expire, whichever comes first.
@@ -110,8 +111,8 @@ object clientMod {
       * @returns A promise that will resolve with `true` if all events are sent before the timeout, or `false` if there are
       * still events in the queue when the timeout is reached.
       */
-    def flush(): js.Thenable[Boolean] = js.native
-    def flush(timeout: Double): js.Thenable[Boolean] = js.native
+    def flush(): PromiseLike[Boolean] = js.native
+    def flush(timeout: Double): PromiseLike[Boolean] = js.native
     
     /** Returns the current Dsn. */
     def getDsn(): js.UndefOr[DsnComponents] = js.native

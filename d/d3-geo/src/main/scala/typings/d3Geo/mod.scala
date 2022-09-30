@@ -130,21 +130,21 @@ object mod {
   inline def geoPath(projection: GeoStreamWrapper): GeoPath_[Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
   inline def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
   
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
-  inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
+  inline def geoPath_DatumObject[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
   
-  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
-  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
-  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
-  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
-  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
-  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
-  inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject[This, DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  inline def geoPath_ThisDatumObject[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
   
   inline def geoProjection(project: GeoRawProjection): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjection")(project.asInstanceOf[js.Any]).asInstanceOf[GeoProjection_]
   
@@ -697,7 +697,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("context")
-    def context_C_UnionGeoContextNull_C[C /* <: GeoContext | Null */](): C = js.native
+    def context_C_C[C /* <: GeoContext | Null */](): C = js.native
     
     /**
       * Returns the projected planar length (typically in pixels) for the specified GeoJSON object.
@@ -741,7 +741,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("projection")
-    def projection_P_UnionGeoConicProjectionGeoProjection_GeoStreamWrapperNull_P[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
+    def projection_P_P[P /* <: GeoConicProjection | GeoProjection_ | GeoStreamWrapper | Null */](): P = js.native
   }
   
   type GeoPermissibleObjects = GeoGeometryObjects | ExtendedGeometryCollection[GeoGeometryObjects] | (ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]) | (ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]])

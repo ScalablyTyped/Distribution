@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__icons
 
-Typings are for version 7.8.6
+Typings are for version 7.9.1
 
 ## Library description:
 Fluent UI React icon set.

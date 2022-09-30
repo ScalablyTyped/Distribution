@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/layout relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Layout")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Layout")
 @js.native
-class Layout protected ()
+open class Layout protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.Layout {
   def this(
     model: AbstractModel,
@@ -24,7 +24,7 @@ class Layout protected ()
 }
 object Layout {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Layout")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Layout")
   @js.native
   val ^ : js.Any = js.native
   
@@ -36,13 +36,13 @@ object Layout {
   inline def createIn(container: IFolderBase): typings.mendixmodelsdk.pagesMod.pages.Layout = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Layout]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Layout.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Layout.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Layout.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Layout.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

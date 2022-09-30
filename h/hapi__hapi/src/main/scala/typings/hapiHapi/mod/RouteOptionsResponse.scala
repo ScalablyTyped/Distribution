@@ -1,7 +1,7 @@
 package typings.hapiHapi.mod
 
-import typings.hapiHapi.hapiHapiNumbers.`200`
-import typings.hapiHapi.hapiHapiNumbers.`204`
+import typings.hapiHapi.hapiHapiInts.`200`
+import typings.hapiHapi.hapiHapiInts.`204`
 import typings.hapiHapi.mod.Lifecycle.FailAction
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Util.Dictionary

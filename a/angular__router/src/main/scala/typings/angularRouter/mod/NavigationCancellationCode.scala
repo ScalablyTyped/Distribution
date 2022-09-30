@@ -1,18 +1,18 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterNumbers.`0`
-import typings.angularRouter.angularRouterNumbers.`1`
-import typings.angularRouter.angularRouterNumbers.`2`
-import typings.angularRouter.angularRouterNumbers.`3`
+import typings.angularRouter.angularRouterInts.`0`
+import typings.angularRouter.angularRouterInts.`1`
+import typings.angularRouter.angularRouterInts.`2`
+import typings.angularRouter.angularRouterInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularRouter.angularRouterNumbers.`0`
-  - typings.angularRouter.angularRouterNumbers.`1`
-  - typings.angularRouter.angularRouterNumbers.`2`
-  - typings.angularRouter.angularRouterNumbers.`3`
+  - typings.angularRouter.angularRouterInts.`0`
+  - typings.angularRouter.angularRouterInts.`1`
+  - typings.angularRouter.angularRouterInts.`2`
+  - typings.angularRouter.angularRouterInts.`3`
 */
 trait NavigationCancellationCode extends StObject
 object NavigationCancellationCode {

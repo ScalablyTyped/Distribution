@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "XAdESTimeStamp")
+@JSImport("xadesjs/build/types/src/xml", "XAdESTimeStamp")
 @js.native
-class XAdESTimeStamp ()
+open class XAdESTimeStamp ()
   extends typings.xadesjs.xadesTimeStampMod.XAdESTimeStamp {
   def this(properties: js.Object) = this()
 }

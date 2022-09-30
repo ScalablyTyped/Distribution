@@ -314,11 +314,7 @@ object Texture {
   val WRAP_ADDRESSMODE: /* 1 */ Double = js.native
   
   /**
-    * @param name
-    * @param renderTargetSize
-    * @param scene
-    * @param generateMipMaps
-    * @hidden
+    * @internal
     */
   inline def _CreateMirror(
     name: String,
@@ -328,12 +324,7 @@ object Texture {
   ): typings.babylonjs.BABYLON.MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.MirrorTexture]
   
   /**
-    * @param name
-    * @param renderTargetSize
-    * @param scene
-    * @param generateMipMaps
-    * @param creationFlags
-    * @hidden
+    * @internal
     */
   inline def _CreateRenderTargetTexture(
     name: String,
@@ -350,10 +341,7 @@ object Texture {
   ): typings.babylonjs.BABYLON.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.RenderTargetTexture]
   
   /**
-    * @param jsonTexture
-    * @param scene
-    * @param rootUrl
-    * @hidden
+    * @internal
     */
   inline def _CubeTextureParser(jsonTexture: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.CubeTexture]
 }

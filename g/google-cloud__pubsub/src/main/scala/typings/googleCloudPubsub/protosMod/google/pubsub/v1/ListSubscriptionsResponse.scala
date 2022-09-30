@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListSubscriptionsResponse.
   * @param [properties] Properties to set
   */
-class ListSubscriptionsResponse ()
+open class ListSubscriptionsResponse ()
   extends StObject
      with IListSubscriptionsResponse {
   def this(properties: IListSubscriptionsResponse) = this()
@@ -33,7 +32,7 @@ class ListSubscriptionsResponse ()
     * Converts this ListSubscriptionsResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object ListSubscriptionsResponse {
   
@@ -50,6 +49,8 @@ object ListSubscriptionsResponse {
   inline def create(): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSubscriptionsResponse]
   inline def create(properties: IListSubscriptionsResponse): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ListSubscriptionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSubscriptionsResponse]
   /**
     * Decodes a ListSubscriptionsResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object ListSubscriptionsResponse {
   /* static member */
   inline def decode(reader: Reader): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
   inline def decode(reader: Reader, length: Double): ListSubscriptionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSubscriptionsResponse]
-  inline def decode(reader: Uint8Array): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
-  inline def decode(reader: Uint8Array, length: Double): ListSubscriptionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSubscriptionsResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
   /**
     * Decodes a ListSubscriptionsResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object ListSubscriptionsResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
-  inline def decodeDelimited(reader: Uint8Array): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
   
   /**
     * Encodes the specified ListSubscriptionsResponse message. Does not implicitly {@link google.pubsub.v1.ListSubscriptionsResponse.verify|verify} messages.
@@ -101,7 +100,16 @@ object ListSubscriptionsResponse {
     * @returns ListSubscriptionsResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ListSubscriptionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSubscriptionsResponse]
+  
+  /**
+    * Gets the default type url for ListSubscriptionsResponse
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a ListSubscriptionsResponse message. Also converts values to other types if specified.
@@ -110,8 +118,8 @@ object ListSubscriptionsResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ListSubscriptionsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ListSubscriptionsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListSubscriptionsResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ListSubscriptionsResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ListSubscriptionsResponse message.
@@ -119,5 +127,5 @@ object ListSubscriptionsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.AssociationSource")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.AssociationSource")
 @js.native
-class AssociationSource protected () extends EntityPathSource {
+open class AssociationSource protected () extends EntityPathSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -26,7 +26,7 @@ class AssociationSource protected () extends EntityPathSource {
 }
 object AssociationSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AssociationSource")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AssociationSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -69,13 +69,13 @@ object AssociationSource {
   inline def createInWidgetValueUnderDataSource(container: WidgetValue): AssociationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[AssociationSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AssociationSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AssociationSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AssociationSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AssociationSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

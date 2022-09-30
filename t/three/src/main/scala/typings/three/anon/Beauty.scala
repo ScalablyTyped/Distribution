@@ -1,9 +1,9 @@
 package typings.three.anon
 
-import typings.three.threeNumbers.`3`
-import typings.three.threeNumbers.`4`
-import typings.three.threeNumbers.`5`
-import typings.three.threeNumbers.`7`
+import typings.three.threeInts.`3`
+import typings.three.threeInts.`4`
+import typings.three.threeInts.`5`
+import typings.three.threeInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait Beauty extends StObject {
   
   var Beauty: `3`
   
-  var Default: typings.three.threeNumbers.`0`
+  var Default: typings.three.threeInts.`0`
   
   var Depth: `4`
   
@@ -20,7 +20,7 @@ trait Beauty extends StObject {
   
   var Normal: `5`
   
-  var SSR: typings.three.threeNumbers.`1`
+  var SSR: typings.three.threeInts.`1`
 }
 object Beauty {
   
@@ -33,7 +33,7 @@ object Beauty {
     
     inline def setBeauty(value: `3`): Self = StObject.set(x, "Beauty", value.asInstanceOf[js.Any])
     
-    inline def setDefault(value: typings.three.threeNumbers.`0`): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: typings.three.threeInts.`0`): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
     inline def setDepth(value: `4`): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
@@ -41,6 +41,6 @@ object Beauty {
     
     inline def setNormal(value: `5`): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
-    inline def setSSR(value: typings.three.threeNumbers.`1`): Self = StObject.set(x, "SSR", value.asInstanceOf[js.Any])
+    inline def setSSR(value: typings.three.threeInts.`1`): Self = StObject.set(x, "SSR", value.asInstanceOf[js.Any])
   }
 }

@@ -16,7 +16,7 @@ trait JQuery extends StObject {
   def overlay(): JQuery = js.native
   def overlay(opts: OverlayOptions): JQuery = js.native
   @JSName("overlay")
-  def overlay_T_Overlay_T[T /* <: Overlay */](): T = js.native
+  def overlay_T_T[T /* <: Overlay */](): T = js.native
   @JSName("overlay")
-  def overlay_T_Overlay_T[T /* <: Overlay */](opts: OverlayOptions): T = js.native
+  def overlay_T_T[T /* <: Overlay */](opts: OverlayOptions): T = js.native
 }

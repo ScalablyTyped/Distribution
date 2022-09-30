@@ -111,7 +111,7 @@ trait EffectLayer extends StObject {
   
   /**
     * Rebuild the required buffers.
-    * @hidden Internal use only.
+    * @internal Internal use only.
     */
   def _rebuild(): Unit = js.native
   

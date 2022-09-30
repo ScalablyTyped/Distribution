@@ -28,7 +28,7 @@ object IPolicyDelta {
     
     inline def setAuditConfigDeltasUndefined: Self = StObject.set(x, "auditConfigDeltas", js.undefined)
     
-    inline def setAuditConfigDeltasVarargs(value: IAuditConfigDelta*): Self = StObject.set(x, "auditConfigDeltas", js.Array(value :_*))
+    inline def setAuditConfigDeltasVarargs(value: IAuditConfigDelta*): Self = StObject.set(x, "auditConfigDeltas", js.Array(value*))
     
     inline def setBindingDeltas(value: js.Array[IBindingDelta]): Self = StObject.set(x, "bindingDeltas", value.asInstanceOf[js.Any])
     
@@ -36,6 +36,6 @@ object IPolicyDelta {
     
     inline def setBindingDeltasUndefined: Self = StObject.set(x, "bindingDeltas", js.undefined)
     
-    inline def setBindingDeltasVarargs(value: IBindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value :_*))
+    inline def setBindingDeltasVarargs(value: IBindingDelta*): Self = StObject.set(x, "bindingDeltas", js.Array(value*))
   }
 }

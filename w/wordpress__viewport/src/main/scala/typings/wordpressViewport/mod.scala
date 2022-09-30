@@ -32,7 +32,7 @@ object mod {
     * ```
     */
   // prettier-ignore
-  inline def ifViewportMatches(query: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifViewportMatches")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def ifViewportMatches(query: String): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifViewportMatches")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
   
   /**
     * Higher-order component creator, creating a new component which renders with the given prop names,
@@ -54,13 +54,7 @@ object mod {
     * ```
     */
   // prettier-ignore
-  inline def withViewportMatch[T /* <: Record[String, String] */](queries: T): js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof T */ String]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewportMatch")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof T */ String]]
-  ]]
+  inline def withViewportMatch[T /* <: Record[String, String] */](queries: T): js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewportMatch")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]]]
   
   /* augmented module */
   object wordpressDataAugmentingMod {

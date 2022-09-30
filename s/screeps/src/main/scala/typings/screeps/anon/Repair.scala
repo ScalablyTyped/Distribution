@@ -1,6 +1,6 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsNumbers.`1.8`
+import typings.screeps.screepsDoubles.`1.8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Repair extends StObject {
 object Repair {
   
   inline def apply(): Repair = {
-    val __obj = js.Dynamic.literal(build = 1.8, repair = 1.8)
+    val __obj = js.Dynamic.literal(build = 1.8d, repair = 1.8d)
     __obj.asInstanceOf[Repair]
   }
   

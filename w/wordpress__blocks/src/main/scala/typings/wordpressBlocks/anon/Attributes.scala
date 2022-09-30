@@ -49,7 +49,7 @@ object Attributes {
     
     inline def setAttributesVarargs(
       value: (charset | coords | download | hreflang | name | ping | referrerPolicy | rel | relList | rev | shape | target | text | `type`)*
-    ): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    ): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setChildren(value: PhrasingContentSchema): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }

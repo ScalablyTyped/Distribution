@@ -2,9 +2,9 @@ package typings.uint8arrays
 
 import typings.std.ArrayLike
 import typings.uint8arrays.basesMod.SupportedEncodings
-import typings.uint8arrays.uint8arraysNumbers.`-1`
-import typings.uint8arrays.uint8arraysNumbers.`0`
-import typings.uint8arrays.uint8arraysNumbers.`1`
+import typings.uint8arrays.uint8arraysInts.`-1`
+import typings.uint8arrays.uint8arraysInts.`0`
+import typings.uint8arrays.uint8arraysInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

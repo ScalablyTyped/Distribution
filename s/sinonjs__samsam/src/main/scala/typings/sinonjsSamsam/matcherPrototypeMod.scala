@@ -10,7 +10,7 @@ object matcherPrototypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def and(valueOrMatcher: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(List(valueOrMatcher.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def and(valueOrMatcher: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(scala.List(valueOrMatcher.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
-  inline def or(valueOrMatcher: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(List(valueOrMatcher.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def or(valueOrMatcher: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(scala.List(valueOrMatcher.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

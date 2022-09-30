@@ -165,56 +165,48 @@ object thinEngineMod {
     
     /* private */ var _activateCurrentTexture: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _activeChannel: Double = js.native
     
     /* protected */ var _activeRenderLoops: js.Array[js.Function0[Unit]] = js.native
     
     /* private */ var _activeRequests: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _alphaEquation: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _alphaMode: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _alphaState: AlphaState = js.native
     
     /* protected */ var _audioContext: Nullable[AudioContext] = js.native
     
     /* protected */ var _audioDestination: Nullable[AudioDestinationNode | MediaStreamAudioDestinationNode] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _badDesktopOS: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _badOS: Boolean = js.native
     
     /* private */ var _bindBuffer: Any = js.native
     
     /**
-      * @param indexBuffer
-      * @hidden
+      * @internal
       */
     def _bindIndexBufferWithCache(indexBuffer: Nullable[DataBuffer]): Unit = js.native
     
     /* private */ var _bindSamplerUniformToChannel: Any = js.native
     
     /**
-      * @param channel
-      * @param texture
-      * @param name
-      * @hidden
+      * @internal
       */
     def _bindTexture(channel: Double, texture: Nullable[InternalTexture], name: String): Unit = js.native
     
     /**
-      * @param target
-      * @param texture
-      * @param forTextureDataUpdate
-      * @param force
-      * @hidden
+      * @internal
       */
     def _bindTextureDirectly(target: Double, texture: Nullable[InternalTexture]): Boolean = js.native
     def _bindTextureDirectly(target: Double, texture: Nullable[InternalTexture], forTextureDataUpdate: Boolean): Boolean = js.native
@@ -222,33 +214,32 @@ object thinEngineMod {
     def _bindTextureDirectly(target: Double, texture: Nullable[InternalTexture], forTextureDataUpdate: Unit, force: Boolean): Boolean = js.native
     
     /**
-      * @param framebuffer
-      * @hidden
+      * @internal
       */
     def _bindUnboundFramebuffer(framebuffer: Nullable[WebGLFramebuffer]): Unit = js.native
     
     /* private */ var _bindVertexBuffersAttributes: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _boundRenderFunction: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _boundTexturesCache: StringDictionary[Nullable[InternalTexture]] = js.native
     
     /* protected */ var _boundUniforms: NumberDictionary[WebGLUniformLocation] = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _cachedEffectForVertexBuffers: Nullable[Effect] = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _cachedIndexBuffer: Nullable[DataBuffer] = js.native
     
     /* private */ var _cachedVertexArrayObject: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _cachedVertexBuffers: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _cachedViewport: Nullable[IViewportLike] = js.native
     
     /* private */ var _canRenderToFloatFramebuffer: Any = js.native
@@ -257,10 +248,10 @@ object thinEngineMod {
     
     /* private */ var _canRenderToHalfFloatFramebuffer: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _caps: EngineCapabilities = js.native
     
-    /** @hidden */
+    /** @internal */
     def _cascadeLoadFiles(
       scene: Nullable[Scene],
       onfinish: js.Function1[/* images */ js.Array[js.typedarray.ArrayBuffer], Unit],
@@ -270,7 +261,7 @@ object thinEngineMod {
         ]
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _cascadeLoadImgs(
       scene: Nullable[Scene],
       texture: InternalTexture,
@@ -305,10 +296,10 @@ object thinEngineMod {
     
     /* private */ var _checkForMobile: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _colorWrite: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _colorWriteChanged: Boolean = js.native
     
     /* private */ var _compileRawShader: Any = js.native
@@ -329,18 +320,18 @@ object thinEngineMod {
       */
     def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createDepthStencilTexture(size: TextureSize, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): RenderTargetWrapper = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createHardwareTexture(): HardwareTextureWrapper = js.native
     
     /**
       * Creates an internal texture without binding it to a framebuffer
-      * @hidden
+      * @internal
       * @param size defines the size of the texture
       * @param options defines the options used to create the texture
       * @param delayGPUTextureCreation true to delay the texture creation the first time it is really needed. false to create it right away
@@ -372,14 +363,7 @@ object thinEngineMod {
     ): InternalTexture = js.native
     
     /**
-      * @param width
-      * @param height
-      * @param samples
-      * @param internalFormat
-      * @param msInternalFormat
-      * @param attachment
-      * @param unbindBuffer
-      * @hidden
+      * @internal
       */
     def _createRenderBuffer(
       width: Double,
@@ -413,7 +397,7 @@ object thinEngineMod {
       transformFeedbackVaryings: Nullable[js.Array[String]]
     ): WebGLProgram = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ def _createTexture(): WebGLTexture = js.native
     
     /* protected */ def _createTextureBase(
@@ -474,69 +458,68 @@ object thinEngineMod {
     
     /* private */ var _currentBufferPointers: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentDrawContext: IDrawContext = js.native
     
     /* protected */ var _currentEffect: Nullable[Effect] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _currentFrameBufferIsDefaultFrameBuffer(): Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentFramebuffer: Nullable[WebGLFramebuffer] = js.native
     
     /* private */ var _currentInstanceBuffers: Any = js.native
     
     /* private */ var _currentInstanceLocations: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentMaterialContext: IMaterialContext = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _currentProgram: Nullable[WebGLProgram] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentRenderTarget: Nullable[RenderTargetWrapper] = js.native
     
     /* private */ var _currentTextureChannel: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugFlushPendingCommands(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugInsertMarker(text: String): Unit = js.native
     def _debugInsertMarker(text: String, targetObject: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugPopGroup(): Unit = js.native
     def _debugPopGroup(targetObject: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugPushGroup(groupName: String): Unit = js.native
     def _debugPushGroup(groupName: String, targetObject: Double): Unit = js.native
     
     /* protected */ def _deleteBuffer(buffer: DataBuffer): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _deleteComputePipelineContext(pipelineContext: IComputePipelineContext): Unit = js.native
     
     /**
-      * @param pipelineContext
-      * @hidden
+      * @internal
       */
     def _deletePipelineContext(pipelineContext: IPipelineContext): Unit = js.native
     
     /* protected */ def _deleteTexture(texture: Nullable[WebGLTexture]): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _depthCullingState: DepthCullingState = js.native
     
-    /** @hidden */
+    /** @internal */
     var _doNotHandleContextLost: Boolean = js.native
     
     /* private */ var _drawMode: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _dummyFramebuffer: Nullable[WebGLFramebuffer] = js.native
     
     /* private */ var _emptyCubeTexture: Any = js.native
@@ -547,45 +530,38 @@ object thinEngineMod {
     
     /* private */ var _emptyTexture3D: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _executeWhenComputeStateIsCompiled(pipelineContext: IComputePipelineContext, action: js.Function0[Unit]): Unit = js.native
     
     /**
-      * @param pipelineContext
-      * @param action
-      * @hidden
+      * @internal
       */
     def _executeWhenRenderingStateIsCompiled(pipelineContext: IPipelineContext, action: js.Function0[Unit]): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _features: EngineFeatures = js.native
     
     /* protected */ def _finalizePipelineContext(pipelineContext: WebGLPipelineContext): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _frameHandler: Double = js.native
     
     /* private */ var _frameId: Any = js.native
     
     /* private */ var _framebufferDimensionsObject: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getGlobalDefines(): js.UndefOr[String] = js.native
     def _getGlobalDefines(defines: StringDictionary[String]): js.UndefOr[String] = js.native
     
     /**
-      * @param format
-      * @param useSRGBBuffer
-      * @hidden
+      * @internal
       */
     def _getInternalFormat(format: Double): Double = js.native
     def _getInternalFormat(format: Double, useSRGBBuffer: Boolean): Double = js.native
     
     /**
-      * @param type
-      * @param format
-      * @param useSRGBBuffer
-      * @hidden
+      * @internal
       */
     def _getRGBABufferInternalSizedFormat(`type`: Double): Double = js.native
     def _getRGBABufferInternalSizedFormat(`type`: Double, format: Double): Double = js.native
@@ -593,33 +569,27 @@ object thinEngineMod {
     def _getRGBABufferInternalSizedFormat(`type`: Double, format: Unit, useSRGBBuffer: Boolean): Double = js.native
     
     /**
-      * @param type
-      * @hidden
+      * @internal
       */
     def _getRGBAMultiSampleBufferFormat(`type`: Double): Double = js.native
     
     /**
-      * @param samplingMode
-      * @param generateMipMaps
-      * @hidden
+      * @internal
       */
     def _getSamplingParameters(samplingMode: Double, generateMipMaps: Boolean): Mag = js.native
     
     /**
-      * @param shaderLanguage
-      * @hidden
+      * @internal
       */
     def _getShaderProcessingContext(shaderLanguage: ShaderLanguage): Nullable[ShaderProcessingContext] = js.native
     
     /**
-      * @param shaderLanguage
-      * @hidden
+      * @internal
       */
     def _getShaderProcessor(shaderLanguage: ShaderLanguage): Nullable[IShaderProcessor] = js.native
     
     /**
-      * @param shader
-      * @hidden
+      * @internal
       */
     def _getShaderSource(shader: WebGLShader): Nullable[String] = js.native
     
@@ -627,23 +597,20 @@ object thinEngineMod {
     
     /* private */ var _getTextureWrapMode: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getUnpackAlignement(): Double = js.native
     
     /**
-      * @param useSRGBBuffer
-      * @param noMipmap
-      * @hidden
+      * @internal
       */
     def _getUseSRGBBuffer(useSRGBBuffer: Boolean, noMipmap: Boolean): Boolean = js.native
     
     /**
-      * @param type
-      * @hidden
+      * @internal
       */
     def _getWebGLTextureType(`type`: Double): Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gl: WebGL2RenderingContext = js.native
     
     /* private */ var _glRenderer: Any = js.native
@@ -652,7 +619,7 @@ object thinEngineMod {
     
     /* private */ var _glVersion: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _hardwareScalingLevel: Double = js.native
     
     /* protected */ var _highPrecisionShadersAllowed: Boolean = js.native
@@ -661,31 +628,24 @@ object thinEngineMod {
     
     /* protected */ def _initGLContext(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _internalTexturesCache: js.Array[InternalTexture] = js.native
     
     /**
-      * @param pipelineContext
-      * @hidden
+      * @internal
       */
     def _isRenderingStateCompiled(pipelineContext: IPipelineContext): Boolean = js.native
     
     /* protected */ var _isStencilEnable: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _isWebGPU: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _lastDevicePixelRatio: Any = js.native
     
     /**
-      * @param url
-      * @param onSuccess
-      * @param onProgress
-      * @param offlineProvider
-      * @param useArrayBuffer
-      * @param onError
-      * @hidden
+      * @internal
       */
     def _loadFile(
       url: String,
@@ -871,7 +831,7 @@ object thinEngineMod {
     
     /* private */ var _mustWipeVertexAttributes: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _name: String = js.native
     
     /* private */ var _nextFreeTextureSlots: Any = js.native
@@ -882,7 +842,7 @@ object thinEngineMod {
     
     /* private */ var _onContextRestored: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _partialLoadFile(
       url: String,
       index: Double,
@@ -893,7 +853,7 @@ object thinEngineMod {
         ]
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _partialLoadImg(
       url: String,
       index: Double,
@@ -926,7 +886,7 @@ object thinEngineMod {
       mimeType: String
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _prepareComputePipelineContext(
       pipelineContext: IComputePipelineContext,
       computeSourceCode: String,
@@ -936,17 +896,7 @@ object thinEngineMod {
     ): Unit = js.native
     
     /**
-      * @param pipelineContext
-      * @param vertexSourceCode
-      * @param fragmentSourceCode
-      * @param createAsRaw
-      * @param rawVertexSourceCode
-      * @param rawFragmentSourceCode
-      * @param rebuildRebind
-      * @param defines
-      * @param transformFeedbackVaryings
-      * @param key
-      * @hidden
+      * @internal
       */
     def _preparePipelineContext(
       pipelineContext: IPipelineContext,
@@ -971,19 +921,17 @@ object thinEngineMod {
       samplingMode: Double
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _prepareWorkingCanvas(): Unit = js.native
     
     /**
       * Can be used to override the current requestAnimationFrame requester.
-      * @param bindedRenderFunction
-      * @param requester
-      * @hidden
+      * @internal
       */
     /* protected */ def _queueNewFrame(bindedRenderFunction: Any): Double = js.native
     /* protected */ def _queueNewFrame(bindedRenderFunction: Any, requester: Any): Double = js.native
     
-    /** @hidden */
+    /** @internal */
     def _readTexturePixels(
       texture: InternalTexture,
       width: Double,
@@ -997,7 +945,7 @@ object thinEngineMod {
       y: js.UndefOr[Double]
     ): js.Promise[js.typedarray.ArrayBufferView] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _readTexturePixelsSync(
       texture: InternalTexture,
       width: Double,
@@ -1013,7 +961,7 @@ object thinEngineMod {
     
     /* protected */ def _rebuildBuffers(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuildComputeEffects(): Unit = js.native
     
     /* private */ var _rebuildEffects: Any = js.native
@@ -1023,52 +971,43 @@ object thinEngineMod {
     /* private */ var _rebuildRenderTargetWrappers: Any = js.native
     
     /**
-      * @param buffer
-      * @hidden
+      * @internal
       */
     def _releaseBuffer(buffer: DataBuffer): Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     def _releaseComputeEffect(effect: ComputeEffect): Unit = js.native
     
     /**
-      * @param effect
-      * @hidden
+      * @internal
       */
     def _releaseEffect(effect: Effect): Unit = js.native
     
     /**
-      * @param rtWrapper
-      * @hidden
+      * @internal
       */
     def _releaseRenderTargetWrapper(rtWrapper: RenderTargetWrapper): Unit = js.native
     
     /**
-      * @param texture
-      * @hidden
+      * @internal
       */
     def _releaseTexture(texture: InternalTexture): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _renderLoop(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _renderTargetWrapperCache: js.Array[RenderTargetWrapper] = js.native
     
     /* protected */ var _renderingCanvas: Nullable[HTMLCanvasElement] = js.native
     
     /* protected */ var _renderingQueueLaunched: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ def _reportDrawCall(): Unit = js.native
     
     /**
-      * @param source
-      * @param destination
-      * @param scene
-      * @param internalFormat
-      * @param onComplete
-      * @hidden
+      * @internal
       */
     def _rescaleTexture(
       source: InternalTexture,
@@ -1080,21 +1019,18 @@ object thinEngineMod {
     
     /* protected */ def _resetIndexBufferBinding(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ def _resetVertexBufferBinding(): Unit = js.native
     
     /* protected */ def _restoreEngineAfterContextLost(initEngine: js.Function0[Unit]): Unit = js.native
     
     /**
-      * @param target
-      * @param internalTexture
-      * @param anisotropicFilteringLevel
-      * @hidden
+      * @internal
       */
     def _setAnisotropicLevel(target: Double, internalTexture: InternalTexture, anisotropicFilteringLevel: Double): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean): Unit = js.native
     def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean, maxLevel: Double): Unit = js.native
@@ -1149,13 +1085,7 @@ object thinEngineMod {
     /* private */ var _setTextureParameterInteger: Any = js.native
     
     /**
-      * @param internalTexture
-      * @param size
-      * @param generateStencil
-      * @param bilinearFiltering
-      * @param comparisonFunction
-      * @param samples
-      * @hidden
+      * @internal
       */
     def _setupDepthStencilTexture(
       internalTexture: InternalTexture,
@@ -1189,12 +1119,7 @@ object thinEngineMod {
     ): Unit = js.native
     
     /**
-      * @param generateStencilBuffer
-      * @param generateDepthBuffer
-      * @param width
-      * @param height
-      * @param samples
-      * @hidden
+      * @internal
       */
     def _setupFramebufferDepthAttachments(generateStencilBuffer: Boolean, generateDepthBuffer: Boolean, width: Double, height: Double): Nullable[WebGLRenderbuffer] = js.native
     def _setupFramebufferDepthAttachments(
@@ -1205,7 +1130,7 @@ object thinEngineMod {
       samples: Double
     ): Nullable[WebGLRenderbuffer] = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _shaderPlatformName: String = js.native
     
     /* protected */ var _shaderProcessor: Nullable[IShaderProcessor] = js.native
@@ -1218,37 +1143,36 @@ object thinEngineMod {
       */
     /* protected */ def _sharedInit(canvas: HTMLCanvasElement, doNotHandleTouchAction: Boolean, audioEngine: Boolean): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _shouldUseHighPrecisionShader: Boolean = js.native
     
     /* protected */ var _snapshotRenderingMode: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _stencilState: StencilState = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _stencilStateComposer: StencilStateComposer = js.native
     
-    /** @hidden */
+    /** @internal */
     var _storageBuffers: js.Array[StorageBuffer] = js.native
     
     /* protected */ def _supportsHardwareTextureRescaling: Boolean = js.native
     
     /* private */ var _textureUnits: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _transformTextureUrl: Nullable[js.Function1[/* url */ String, String]] = js.native
     
     /* private */ var _uintIndicesCurrentlySet: Any = js.native
     
     /* private */ var _unbindVertexArrayObject: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _uniformBuffers: js.Array[UniformBuffer] = js.native
     
     /**
-      * @param value
-      * @hidden
+      * @internal
       */
     def _unpackFlipY(value: Boolean): Unit = js.native
     
@@ -1275,11 +1199,7 @@ object thinEngineMod {
     ): Nullable[WebGLRenderbuffer] = js.native
     
     /**
-      * @param texture
-      * @param imageData
-      * @param faceIndex
-      * @param lod
-      * @hidden
+      * @internal
       */
     def _uploadArrayBufferViewToTexture(texture: InternalTexture, imageData: js.typedarray.ArrayBufferView): Unit = js.native
     def _uploadArrayBufferViewToTexture(texture: InternalTexture, imageData: js.typedarray.ArrayBufferView, faceIndex: Double): Unit = js.native
@@ -1287,14 +1207,7 @@ object thinEngineMod {
     def _uploadArrayBufferViewToTexture(texture: InternalTexture, imageData: js.typedarray.ArrayBufferView, faceIndex: Unit, lod: Double): Unit = js.native
     
     /**
-      * @param texture
-      * @param internalFormat
-      * @param width
-      * @param height
-      * @param data
-      * @param faceIndex
-      * @param lod
-      * @hidden
+      * @internal
       */
     def _uploadCompressedDataToTextureDirectly(
       texture: InternalTexture,
@@ -1331,13 +1244,7 @@ object thinEngineMod {
     ): Unit = js.native
     
     /**
-      * @param texture
-      * @param imageData
-      * @param faceIndex
-      * @param lod
-      * @param babylonInternalFormat
-      * @param useTextureWidthAndHeight
-      * @hidden
+      * @internal
       */
     def _uploadDataToTextureDirectly(texture: InternalTexture, imageData: js.typedarray.ArrayBufferView): Unit = js.native
     def _uploadDataToTextureDirectly(texture: InternalTexture, imageData: js.typedarray.ArrayBufferView, faceIndex: Double): Unit = js.native
@@ -1446,29 +1353,25 @@ object thinEngineMod {
     
     /* private */ var _vertexAttribPointer: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _videoTextureSupported: Boolean = js.native
     
     /**
-      * @param x
-      * @param y
-      * @param width
-      * @param height
-      * @hidden
+      * @internal
       */
     def _viewport(x: Double, y: Double, width: Double, height: Double): Unit = js.native
     
     /* protected */ var _viewportCached: W = js.native
     
-    /** @hidden */
+    /** @internal */
     var _webGLVersion: Double = js.native
     
     /* protected */ var _windowIsBackground: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _workingCanvas: Nullable[ICanvas] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _workingContext: Nullable[ICanvasRenderingContext] = js.native
     
     /**
@@ -1939,7 +1842,7 @@ object thinEngineMod {
       useSRGBBuffer: Boolean
     ): InternalTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     def createCubeTextureBase(
       rootUrl: String,
       scene: Nullable[Scene],
@@ -4290,7 +4193,7 @@ object thinEngineMod {
       * @param useArrayBuffer defines a boolean indicating that date must be returned as ArrayBuffer
       * @param onError callback called when the file fails to load
       * @returns a file request object
-      * @hidden
+      * @internal
       */
     inline def _FileToolsLoadFile(
       url: String,
@@ -4511,7 +4414,7 @@ object thinEngineMod {
       * @param mimeType optional mime type
       * @param imageBitmapOptions optional the options to use when creating an ImageBitmap
       * @returns the HTMLImageElement of the loaded image
-      * @hidden
+      * @internal
       */
     inline def _FileToolsLoadImage(
       input: String,
@@ -4640,7 +4543,7 @@ object thinEngineMod {
     def _IsSupported: Any = js.native
     inline def _IsSupported_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsSupported")(x.asInstanceOf[js.Any])
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Engines/thinEngine", "ThinEngine._TextureLoaders")
     @js.native
     def _TextureLoaders: js.Array[IInternalTextureLoader] = js.native

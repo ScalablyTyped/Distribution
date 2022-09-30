@@ -1,10 +1,9 @@
 package typings.jestTypes.anon
 
-import typings.jestTypes.circusMod.HookFn
-import typings.jestTypes.circusMod.HookType
-import typings.jestTypes.circusMod.SyncEvent
-import typings.jestTypes.globalMod.DoneFn
 import typings.jestTypes.jestTypesStrings.add_hook
+import typings.jestTypes.mod.HookFn2
+import typings.jestTypes.mod.HookType
+import typings.jestTypes.mod.SyncEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +12,9 @@ trait Fn
   extends StObject
      with SyncEvent {
   
-  var asyncError: typings.std.Error
+  var asyncError: js.Error
   
-  def fn(): js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]
-  def fn(done: DoneFn): js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]
-  @JSName("fn")
-  var fn_Original: HookFn
+  var fn: HookFn2
   
   var hookType: HookType
   
@@ -28,20 +24,16 @@ trait Fn
 }
 object Fn {
   
-  inline def apply(
-    asyncError: typings.std.Error,
-    fn: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
-    hookType: HookType
-  ): Fn = {
-    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], fn = js.Any.fromFunction1(fn), hookType = hookType.asInstanceOf[js.Any], name = "add_hook")
+  inline def apply(asyncError: js.Error, fn: HookFn2, hookType: HookType): Fn = {
+    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], hookType = hookType.asInstanceOf[js.Any], name = "add_hook")
     __obj.asInstanceOf[Fn]
   }
   
   extension [Self <: Fn](x: Self) {
     
-    inline def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
+    inline def setAsyncError(value: js.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     
-    inline def setFn(value: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    inline def setFn(value: HookFn2): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
     inline def setHookType(value: HookType): Self = StObject.set(x, "hookType", value.asInstanceOf[js.Any])
     

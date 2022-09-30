@@ -1,24 +1,24 @@
 package typings.activexMsforms.MSForms
 
-import typings.activexMsforms.activexMsformsNumbers.`1`
-import typings.activexMsforms.activexMsformsNumbers.`2`
-import typings.activexMsforms.activexMsformsNumbers.`3`
-import typings.activexMsforms.activexMsformsNumbers.`4`
-import typings.activexMsforms.activexMsformsNumbers.`5`
-import typings.activexMsforms.activexMsformsNumbers.`6`
-import typings.activexMsforms.activexMsformsNumbers.`7`
+import typings.activexMsforms.activexMsformsInts.`1`
+import typings.activexMsforms.activexMsformsInts.`2`
+import typings.activexMsforms.activexMsformsInts.`3`
+import typings.activexMsforms.activexMsformsInts.`4`
+import typings.activexMsforms.activexMsformsInts.`5`
+import typings.activexMsforms.activexMsformsInts.`6`
+import typings.activexMsforms.activexMsformsInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMsforms.activexMsformsNumbers.`4`
-  - typings.activexMsforms.activexMsformsNumbers.`3`
-  - typings.activexMsforms.activexMsformsNumbers.`7`
-  - typings.activexMsforms.activexMsformsNumbers.`2`
-  - typings.activexMsforms.activexMsformsNumbers.`5`
-  - typings.activexMsforms.activexMsformsNumbers.`1`
-  - typings.activexMsforms.activexMsformsNumbers.`6`
+  - typings.activexMsforms.activexMsformsInts.`4`
+  - typings.activexMsforms.activexMsformsInts.`3`
+  - typings.activexMsforms.activexMsformsInts.`7`
+  - typings.activexMsforms.activexMsformsInts.`2`
+  - typings.activexMsforms.activexMsformsInts.`5`
+  - typings.activexMsforms.activexMsformsInts.`1`
+  - typings.activexMsforms.activexMsformsInts.`6`
 */
 trait fmDisplayStyle extends StObject
 object fmDisplayStyle {

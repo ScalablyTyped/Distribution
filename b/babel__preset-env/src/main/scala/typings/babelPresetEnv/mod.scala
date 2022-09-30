@@ -18,17 +18,17 @@ object mod {
   trait CorejsOption extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - typings.babelPresetEnv.babelPresetEnvNumbers.`2`
-    - typings.babelPresetEnv.babelPresetEnvNumbers.`3`
+    - typings.babelPresetEnv.babelPresetEnvInts.`2`
+    - typings.babelPresetEnv.babelPresetEnvInts.`3`
   */
   trait CorejsVersion
     extends StObject
        with CorejsOption
   object CorejsVersion {
     
-    inline def `2`: typings.babelPresetEnv.babelPresetEnvNumbers.`2` = 2.asInstanceOf[typings.babelPresetEnv.babelPresetEnvNumbers.`2`]
+    inline def `2`: typings.babelPresetEnv.babelPresetEnvInts.`2` = 2.asInstanceOf[typings.babelPresetEnv.babelPresetEnvInts.`2`]
     
-    inline def `3`: typings.babelPresetEnv.babelPresetEnvNumbers.`3` = 3.asInstanceOf[typings.babelPresetEnv.babelPresetEnvNumbers.`3`]
+    inline def `3`: typings.babelPresetEnv.babelPresetEnvInts.`3` = 3.asInstanceOf[typings.babelPresetEnv.babelPresetEnvInts.`3`]
   }
   
   /* Rewritten from type alias, can be one of: 

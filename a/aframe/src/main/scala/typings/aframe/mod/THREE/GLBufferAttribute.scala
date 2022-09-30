@@ -1,8 +1,8 @@
 package typings.aframe.mod.THREE
 
-import typings.aframe.aframeNumbers.`1`
-import typings.aframe.aframeNumbers.`2`
-import typings.aframe.aframeNumbers.`4`
+import typings.aframe.aframeInts.`1`
+import typings.aframe.aframeInts.`2`
+import typings.aframe.aframeInts.`4`
 import typings.std.WebGLBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

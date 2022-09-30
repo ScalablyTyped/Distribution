@@ -20,11 +20,6 @@ object protractorProtractorMod {
   ): js.Function1[/* obj */ Wrapper, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("protractorTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ Wrapper, T]]
   
   inline def protractorUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
-    driverFactory: js.Function3[
-      /* base */ UniDriver[js.Any], 
-      /* body */ UniDriver[js.Any], 
-      /* options */ DataHookString, 
-      T
-    ]
+    driverFactory: js.Function3[/* base */ UniDriver[Any], /* body */ UniDriver[Any], /* options */ DataHookString, T]
   ): js.Function1[/* obj */ DataHookString, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("protractorUniTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ DataHookString, T]]
 }

@@ -1,13 +1,13 @@
 package typings.popoto.anon
 
-import typings.popoto.popotoNumbers.`0`
-import typings.popoto.popotoNumbers.`1`
-import typings.popoto.popotoNumbers.`2`
-import typings.popoto.popotoNumbers.`3`
-import typings.popoto.popotoNumbers.`4`
-import typings.popoto.popotoNumbers.`5`
-import typings.popoto.popotoNumbers.`6`
-import typings.popoto.popotoNumbers.`7`
+import typings.popoto.popotoInts.`0`
+import typings.popoto.popotoInts.`1`
+import typings.popoto.popotoInts.`2`
+import typings.popoto.popotoInts.`3`
+import typings.popoto.popotoInts.`4`
+import typings.popoto.popotoInts.`5`
+import typings.popoto.popotoInts.`6`
+import typings.popoto.popotoInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

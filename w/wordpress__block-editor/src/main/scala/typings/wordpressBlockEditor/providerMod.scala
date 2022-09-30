@@ -52,9 +52,7 @@ object providerMod {
         * be reflected immediately (`onInput`), you may only want history entries to reflect change
         * milestones (`onChange`).
         */
-      var onChange: js.UndefOr[
-            js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], Unit]
-          ] = js.undefined
+      var onChange: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[Any]]], Unit]] = js.undefined
       
       /**
         * A callback invoked when the blocks have been modified in a non-persistent manner.
@@ -62,9 +60,7 @@ object providerMod {
         * input. Any sequence of updates to the same block attribute are treated as non-persistent,
         * except for the first.
         */
-      var onInput: js.UndefOr[
-            js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], Unit]
-          ] = js.undefined
+      var onInput: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[Any]]], Unit]] = js.undefined
       
       var settings: js.UndefOr[PartialEditorSettingsEdit] = js.undefined
       
@@ -73,7 +69,7 @@ object providerMod {
       /**
         * The current array of blocks.
         */
-      var value: js.UndefOr[js.Array[BlockInstance[StringDictionary[js.Any]]]] = js.undefined
+      var value: js.UndefOr[js.Array[BlockInstance[StringDictionary[Any]]]] = js.undefined
     }
     object Props {
       
@@ -88,11 +84,11 @@ object providerMod {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setOnChange(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: /* blocks */ js.Array[BlockInstance[StringDictionary[Any]]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
         inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        inline def setOnInput(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+        inline def setOnInput(value: /* blocks */ js.Array[BlockInstance[StringDictionary[Any]]] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
         
         inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
         
@@ -104,11 +100,11 @@ object providerMod {
         
         inline def setUseSubRegistryUndefined: Self = StObject.set(x, "useSubRegistry", js.undefined)
         
-        inline def setValue(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[BlockInstance[StringDictionary[Any]]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: BlockInstance[StringDictionary[Any]]*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for primereact
 
-Typings are for version 8.5.0
+Typings are for version 8.6.1
 
 ## Library description:
 PrimeReact is an open source UI library for React featuring a rich set of 80+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with Prime

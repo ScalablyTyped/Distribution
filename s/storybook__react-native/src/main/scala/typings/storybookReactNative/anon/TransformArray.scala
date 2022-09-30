@@ -19,6 +19,6 @@ object TransformArray {
     
     inline def setTransform(value: js.Array[TranslateY | TranslateXTranslateY]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    inline def setTransformVarargs(value: (TranslateY | TranslateXTranslateY)*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: (TranslateY | TranslateXTranslateY)*): Self = StObject.set(x, "transform", js.Array(value*))
   }
 }

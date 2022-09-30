@@ -15,7 +15,8 @@ object listIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/list/index.native", JSImport.Default)
   @js.native
-  open class default () extends List
+  open class default ()
+    extends typings.antdMobileRn.listIndexNativeMod.List
   /* static members */
   object default {
     

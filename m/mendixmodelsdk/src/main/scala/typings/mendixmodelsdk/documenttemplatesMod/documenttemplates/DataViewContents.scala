@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataViewContents")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.DataViewContents")
 @js.native
-class DataViewContents protected () extends DropZone {
+open class DataViewContents protected () extends DropZone {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -25,7 +25,7 @@ class DataViewContents protected () extends DropZone {
 }
 object DataViewContents {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataViewContents")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.DataViewContents")
   @js.native
   val ^ : js.Any = js.native
   
@@ -46,13 +46,13 @@ object DataViewContents {
   inline def createIn(container: DataView): DataViewContents = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewContents]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataViewContents.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.DataViewContents.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataViewContents.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.DataViewContents.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

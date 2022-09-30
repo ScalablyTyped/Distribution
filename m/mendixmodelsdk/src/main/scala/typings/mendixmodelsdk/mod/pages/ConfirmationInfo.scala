@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ConfirmationInfo")
 @js.native
-class ConfirmationInfo protected ()
+open class ConfirmationInfo protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ConfirmationInfo {
   def this(
     model: AbstractModel,
@@ -59,6 +59,17 @@ object ConfirmationInfo {
     */
   /* static member */
   inline def createInCallNanoflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.CallNanoflowClientAction): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallNanoflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
+  
+  /**
+    * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
+    * The new ConfirmationInfo will be automatically stored in the 'confirmationInfo' property
+    * of the parent CallWorkflowClientAction element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.12.0 and higher
+    */
+  /* static member */
+  inline def createInCallWorkflowClientActionUnderConfirmationInfo(container: typings.mendixmodelsdk.pagesMod.pages.CallWorkflowClientAction): typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallWorkflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConfirmationInfo]
   
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nativeInterfacesMod {
   
-  /** @hidden */
+  /** @internal */
   @js.native
   trait IDeviceInputSystemConstructor
     extends StObject
@@ -110,13 +110,13 @@ object nativeInterfacesMod {
     }
   }
   
-  /** @hidden */
+  /** @internal */
   @js.native
   trait INativeCameraConstructor
     extends StObject
        with Instantiable0[INativeCamera]
   
-  /** @hidden */
+  /** @internal */
   @js.native
   trait INativeCanvasConstructor
     extends StObject
@@ -142,7 +142,7 @@ object nativeInterfacesMod {
     }
   }
   
-  /** @hidden */
+  /** @internal */
   @js.native
   trait INativeDataStreamConstructor
     extends StObject
@@ -323,7 +323,7 @@ object nativeInterfacesMod {
     ): Unit = js.native
   }
   
-  /** @hidden */
+  /** @internal */
   @js.native
   trait INativeEngineConstructor
     extends StObject
@@ -570,7 +570,7 @@ object nativeInterfacesMod {
     val TEXTURE_NEAREST_NEAREST_MIPNEAREST: Double = js.native
   }
   
-  /** @hidden */
+  /** @internal */
   @js.native
   trait INativeImageConstructor
     extends StObject

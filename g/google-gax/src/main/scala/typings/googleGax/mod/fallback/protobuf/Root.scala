@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new root namespace instance.
   * @param [options] Top level options
   */
-class Root ()
+open class Root ()
   extends typings.googleGax.fallbackMod.protobuf.Root {
-  def this(options: StringDictionary[js.Any]) = this()
+  def this(options: StringDictionary[Any]) = this()
 }
 /* static members */
 object Root {

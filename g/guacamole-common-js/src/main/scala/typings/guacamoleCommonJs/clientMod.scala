@@ -6,8 +6,8 @@ import typings.guacamoleCommonJs.clientMod.Client.ExportedState
 import typings.guacamoleCommonJs.clientMod.Client.State
 import typings.guacamoleCommonJs.displayMod.Display
 import typings.guacamoleCommonJs.guacCommonMod.Mimetype
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`1`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`1`
 import typings.guacamoleCommonJs.inputStreamMod.InputStream
 import typings.guacamoleCommonJs.objectMod.Object
 import typings.guacamoleCommonJs.outputStreamMod.OutputStream
@@ -427,27 +427,27 @@ object clientMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`1`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`2`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`3`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`4`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`5`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`1`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`2`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`3`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`4`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`5`
     */
     trait State extends StObject
     object State {
       
-      inline def `0`: typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0` = 0.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0`]
+      inline def `0`: typings.guacamoleCommonJs.guacamoleCommonJsInts.`0` = 0.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsInts.`0`]
       
-      inline def `1`: typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`1` = 1.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`1`]
+      inline def `1`: typings.guacamoleCommonJs.guacamoleCommonJsInts.`1` = 1.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsInts.`1`]
       
-      inline def `2`: typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`2` = 2.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`2`]
+      inline def `2`: typings.guacamoleCommonJs.guacamoleCommonJsInts.`2` = 2.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsInts.`2`]
       
-      inline def `3`: typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`3` = 3.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`3`]
+      inline def `3`: typings.guacamoleCommonJs.guacamoleCommonJsInts.`3` = 3.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsInts.`3`]
       
-      inline def `4`: typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`4` = 4.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`4`]
+      inline def `4`: typings.guacamoleCommonJs.guacamoleCommonJsInts.`4` = 4.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsInts.`4`]
       
-      inline def `5`: typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`5` = 5.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`5`]
+      inline def `5`: typings.guacamoleCommonJs.guacamoleCommonJsInts.`5` = 5.asInstanceOf[typings.guacamoleCommonJs.guacamoleCommonJsInts.`5`]
     }
   }
 }

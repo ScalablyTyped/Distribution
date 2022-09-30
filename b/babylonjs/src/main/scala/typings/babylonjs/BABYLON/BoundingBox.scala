@@ -9,20 +9,19 @@ trait BoundingBox
   extends StObject
      with ICullable {
   
-  /** @hidden */
+  /** @internal */
   var _drawWrapperBack: Nullable[DrawWrapper] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _drawWrapperFront: Nullable[DrawWrapper] = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _tag: Double = js.native
   
   /**
-    * @param world
-    * @hidden
+    * @internal
     */
   def _update(world: DeepImmutable[Matrix]): Unit = js.native
   

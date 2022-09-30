@@ -1,6 +1,7 @@
 package typings.devextreme.mod.DevExpress.common.grids
 
 import typings.devextreme.mod.DevExpress.common.charts.StateStoreType
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait StateStoring extends StObject {
   /**
     * Specifies a function that is executed on state loading. Applies only if the type is &apos;custom&apos;.
     */
-  var customLoad: js.UndefOr[js.Function0[js.Thenable[Any]]] = js.undefined
+  var customLoad: js.UndefOr[js.Function0[PromiseLike[Any]]] = js.undefined
   
   /**
     * Specifies a function that is executed on state saving. Applies only if the type is &apos;custom&apos;.
@@ -46,7 +47,7 @@ object StateStoring {
   
   extension [Self <: StateStoring](x: Self) {
     
-    inline def setCustomLoad(value: () => js.Thenable[Any]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
+    inline def setCustomLoad(value: () => PromiseLike[Any]): Self = StObject.set(x, "customLoad", js.Any.fromFunction0(value))
     
     inline def setCustomLoadUndefined: Self = StObject.set(x, "customLoad", js.undefined)
     

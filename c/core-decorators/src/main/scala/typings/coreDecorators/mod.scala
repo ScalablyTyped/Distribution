@@ -18,7 +18,7 @@ object mod {
   @js.native
   val autobind: js.Function = js.native
   
-  inline def decorate(func: js.Function, args: Any*): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[MethodDecorator]
+  inline def decorate(func: js.Function, args: Any*): MethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(scala.List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[MethodDecorator]
   
   @JSImport("core-decorators", "deprecate")
   @js.native

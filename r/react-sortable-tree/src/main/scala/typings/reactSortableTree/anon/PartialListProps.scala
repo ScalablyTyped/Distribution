@@ -3,18 +3,19 @@ package typings.reactSortableTree.anon
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache
+import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCacheInterface
 import typings.reactVirtualized.esGridMod.GridCellRangeProps
 import typings.reactVirtualized.esGridMod.GridCellRangeRenderer
 import typings.reactVirtualized.esGridMod.OverscanIndices
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetterParams
+import typings.reactVirtualized.esGridMod.ScrollParams
 import typings.reactVirtualized.esGridMod.ScrollbarPresenceParams
 import typings.reactVirtualized.esGridMod.SectionRenderedParams
 import typings.reactVirtualized.esListMod.ListRowProps
 import typings.reactVirtualized.esListMod.ListRowRenderer
 import typings.reactVirtualized.esListMod.RenderedRows
-import typings.reactVirtualized.esScrollSyncMod.OnScrollParams
+import typings.reactVirtualized.mod.Alignment
 import typings.reactVirtualized.mod.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,7 +44,7 @@ trait PartialListProps extends StObject {
   
   var containerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var deferredMeasurementCache: js.UndefOr[CellMeasurerCache] = js.undefined
+  var deferredMeasurementCache: js.UndefOr[CellMeasurerCacheInterface] = js.undefined
   
   var estimatedColumnSize: js.UndefOr[Double] = js.undefined
   
@@ -63,11 +64,11 @@ trait PartialListProps extends StObject {
   
   var onRowsRendered: js.UndefOr[js.Function1[/* info */ RenderedRows, Unit]] = js.undefined
   
-  var onScroll: js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, Any]] = js.undefined
   
-  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, js.Any]] = js.undefined
+  var onScrollbarPresenceChange: js.UndefOr[js.Function1[/* params */ ScrollbarPresenceParams, Any]] = js.undefined
   
-  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, js.Any]] = js.undefined
+  var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, Any]] = js.undefined
   
   var overscanColumnCount: js.UndefOr[Double] = js.undefined
   
@@ -79,13 +80,13 @@ trait PartialListProps extends StObject {
   
   var rowCount: js.UndefOr[Double] = js.undefined
   
-  var rowHeight: js.UndefOr[Double | (js.Function1[/* info */ Index, Double])] = js.undefined
+  var rowHeight: js.UndefOr[Double | (js.Function1[/* params */ Index, Double])] = js.undefined
   
   var rowRenderer: js.UndefOr[ListRowRenderer] = js.undefined
   
   var scrollLeft: js.UndefOr[Double] = js.undefined
   
-  var scrollToAlignment: js.UndefOr[String] = js.undefined
+  var scrollToAlignment: js.UndefOr[Alignment] = js.undefined
   
   var scrollToColumn: js.UndefOr[Double] = js.undefined
   
@@ -152,7 +153,7 @@ object PartialListProps {
     
     inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    inline def setDeferredMeasurementCache(value: CellMeasurerCache): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
+    inline def setDeferredMeasurementCache(value: CellMeasurerCacheInterface): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
     
     inline def setDeferredMeasurementCacheUndefined: Self = StObject.set(x, "deferredMeasurementCache", js.undefined)
     
@@ -192,15 +193,15 @@ object PartialListProps {
     
     inline def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
     
-    inline def setOnScroll(value: /* params */ OnScrollParams => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: /* params */ ScrollParams => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => js.Any): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
+    inline def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => Any): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
     
     inline def setOnScrollbarPresenceChangeUndefined: Self = StObject.set(x, "onScrollbarPresenceChange", js.undefined)
     
-    inline def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+    inline def setOnSectionRendered(value: /* params */ SectionRenderedParams => Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
     
     inline def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)
     
@@ -224,9 +225,9 @@ object PartialListProps {
     
     inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    inline def setRowHeight(value: Double | (js.Function1[/* info */ Index, Double])): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double | (js.Function1[/* params */ Index, Double])): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    inline def setRowHeightFunction1(value: /* info */ Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
+    inline def setRowHeightFunction1(value: /* params */ Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
     
     inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
@@ -238,7 +239,7 @@ object PartialListProps {
     
     inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
-    inline def setScrollToAlignment(value: String): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+    inline def setScrollToAlignment(value: Alignment): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
     inline def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
     

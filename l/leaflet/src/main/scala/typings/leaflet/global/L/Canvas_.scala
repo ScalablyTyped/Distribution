@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Canvas")
 @js.native
-class Canvas_ ()
+open class Canvas_ ()
   extends typings.leaflet.mod.Canvas_ {
   def this(options: RendererOptions) = this()
 }

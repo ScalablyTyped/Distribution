@@ -242,10 +242,10 @@ object mod {
   
   object h {
     
-    inline def apply(tag: String, attrs: ElementAttrs, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((List(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
-    inline def apply(tag: String, attrs: ElementAttrs, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((List(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
-    inline def apply(tag: String, children: Child*): VirtualElement = ^.asInstanceOf[js.Dynamic].apply(List(tag.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VirtualElement]
-    inline def apply(tag: String, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((List(tag.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, attrs: ElementAttrs, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((scala.List(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, attrs: ElementAttrs, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((scala.List(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, children: Child*): VirtualElement = ^.asInstanceOf[js.Dynamic].apply(scala.List(tag.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((scala.List(tag.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     
     @JSImport("@lumino/virtualdom", "h")
     @js.native

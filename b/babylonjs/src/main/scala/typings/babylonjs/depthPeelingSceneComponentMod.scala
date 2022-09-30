@@ -58,10 +58,10 @@ object depthPeelingSceneComponentMod {
     
     trait Scene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _depthPeelingRenderer: Nullable[DepthPeelingRenderer]
       
-      /** @hidden */
+      /** @internal */
       var _useOrderIndependentTransparency: Boolean
       
       /**

@@ -11,6 +11,7 @@ import typings.lifeomicAxiosFetch.lifeomicAxiosFetchStrings.post_
 import typings.lifeomicAxiosFetch.lifeomicAxiosFetchStrings.purge_
 import typings.lifeomicAxiosFetch.lifeomicAxiosFetchStrings.put_
 import typings.lifeomicAxiosFetch.lifeomicAxiosFetchStrings.unlink_
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,8 @@ object axiosTypesMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ @js.native
   trait AxiosPromise[T]
-    extends js.Promise[AxiosResponse[T]]
+    extends StObject
+       with Promise[AxiosResponse[T]]
   
   trait AxiosRequestConfig
     extends StObject

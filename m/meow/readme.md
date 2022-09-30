@@ -1,7 +1,7 @@
 
 # Scala.js typings for meow
 
-Typings are for version 5.x
+Typings are for version 10.1.4
 
 ## Library description:
 CLI app helper
@@ -11,9 +11,9 @@ CLI app helper
 | Full name          | meow |
 | Keywords           | cli, bin, util, utility, helper, argv, command, line, meow, cat, kitten, parser, option, flags, input, cmd, console |
 | # releases         | 13 |
-| # dependents       | 4492 |
-| # downloads        | 633930982 |
-| # stars            | 82 |
+| # dependents       | 0.0 |
+| # downloads        | 7.1609888E7 |
+| # stars            | 3045.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/meow#readme)
@@ -24,7 +24,7 @@ CLI app helper
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -26,7 +26,7 @@ object mstOperationsMod {
   inline def applyPatch(target: IAnyStateTreeNode, patch: js.Array[IJsonPatch]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(target.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def applyPatch(target: IAnyStateTreeNode, patch: IJsonPatch): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(target.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def applySnapshot[C](target: IStateTreeNode[IType[C, js.Any, js.Any]], snapshot: C): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applySnapshot")(target.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applySnapshot[C](target: IStateTreeNode[IType[C, Any, Any]], snapshot: C): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applySnapshot")(target.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cast(snapshotOrInstance: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def cast(snapshotOrInstance: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -51,7 +51,7 @@ object mstOperationsMod {
   ): O = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[O]
   
   inline def clone_[T /* <: IAnyStateTreeNode */](source: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def destroy(target: IAnyStateTreeNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -85,8 +85,8 @@ object mstOperationsMod {
   
   inline def getRoot[IT /* <: IAnyComplexType | IAnyStateTreeNode */](target: IAnyStateTreeNode): TypeOrStateTreeNodeToStateTreeNode[IT] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoot")(target.asInstanceOf[js.Any]).asInstanceOf[TypeOrStateTreeNodeToStateTreeNode[IT]]
   
-  inline def getSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]]): S = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any]).asInstanceOf[S]
-  inline def getSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]], applyPostProcess: Boolean): S = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any], applyPostProcess.asInstanceOf[js.Any])).asInstanceOf[S]
+  inline def getSnapshot[S](target: IStateTreeNode[IType[Any, S, Any]]): S = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any]).asInstanceOf[S]
+  inline def getSnapshot[S](target: IStateTreeNode[IType[Any, S, Any]], applyPostProcess: Boolean): S = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any], applyPostProcess.asInstanceOf[js.Any])).asInstanceOf[S]
   
   inline def getType(`object`: IAnyStateTreeNode): IAnyComplexType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(`object`.asInstanceOf[js.Any]).asInstanceOf[IAnyComplexType]
   
@@ -109,7 +109,7 @@ object mstOperationsMod {
     callback: js.Function2[/* patch */ IJsonPatch, /* reversePatch */ IJsonPatch, Unit]
   ): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onPatch")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  inline def onSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]], callback: js.Function1[/* snapshot */ S, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
+  inline def onSnapshot[S](target: IStateTreeNode[IType[Any, S, Any]], callback: js.Function1[/* snapshot */ S, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
   inline def protect(target: IAnyStateTreeNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("protect")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -130,12 +130,12 @@ object mstOperationsMod {
     /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any
   ]]
   
-  inline def resolvePath(target: IAnyStateTreeNode, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolvePath(target: IAnyStateTreeNode, path: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]]): js.UndefOr[N] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryReference")(getter.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[N]]
   inline def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]], checkIfAlive: Boolean): js.UndefOr[N] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryReference")(getter.asInstanceOf[js.Any], checkIfAlive.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[N]]
   
-  inline def tryResolve(target: IAnyStateTreeNode, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryResolve")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def tryResolve(target: IAnyStateTreeNode, path: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryResolve")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def unprotect(target: IAnyStateTreeNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unprotect")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -168,15 +168,15 @@ object mstOperationsMod {
       
       inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value :_*))
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def setVolatile(value: js.Array[String]): Self = StObject.set(x, "volatile", value.asInstanceOf[js.Any])
       
-      inline def setVolatileVarargs(value: String*): Self = StObject.set(x, "volatile", js.Array(value :_*))
+      inline def setVolatileVarargs(value: String*): Self = StObject.set(x, "volatile", js.Array(value*))
     }
   }
   
@@ -223,5 +223,5 @@ object mstOperationsMod {
     def undo(target: IAnyStateTreeNode): Unit = js.native
   }
   
-  type TypeOrStateTreeNodeToStateTreeNode[T /* <: IAnyType | IAnyStateTreeNode */] = T | (js.Any & IStateTreeNode[T])
+  type TypeOrStateTreeNodeToStateTreeNode[T /* <: IAnyType | IAnyStateTreeNode */] = T | (Any & IStateTreeNode[T])
 }

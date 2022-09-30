@@ -33,11 +33,5 @@ object withViewportMatchMod {
     * ```
     */
   // prettier-ignore
-  inline def default[T /* <: Record[String, String] */](queries: T): js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof T */ String]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof T */ String]]
-  ]]
+  inline def default[T /* <: Record[String, String] */](queries: T): js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]]]
 }

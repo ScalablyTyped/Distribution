@@ -1,5 +1,6 @@
 package typings.tapeAsync
 
+import typings.std.PromiseLike
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,7 +60,7 @@ object mod {
     extends StObject
        with typings.tape.mod.Test
   
-  type TestCase = js.Function1[/* test */ Test, Unit | js.Iterator[Any] | js.Thenable[Unit]]
+  type TestCase = js.Function1[/* test */ Test, Unit | js.Iterator[Any] | PromiseLike[Unit]]
   
   /**
     * Available opts options for the tape function.

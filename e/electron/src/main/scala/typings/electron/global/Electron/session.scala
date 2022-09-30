@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof Session` */
 @JSGlobal("Electron.session")
 @js.native
-class session ()
+open class session ()
   extends typings.electron.Electron.Session_
 /* was `typeof Session` */
 object session {

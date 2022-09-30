@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "puppeteer" : "18.0.4"
+      "puppeteer" : "18.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "puppeteer" : "18.0.4"
+      "puppeteer" : "18.0.5"
     }
   ],
   "compile-devDependencies" : [

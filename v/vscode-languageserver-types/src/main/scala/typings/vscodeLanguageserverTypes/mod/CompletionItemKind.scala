@@ -1,60 +1,60 @@
 package typings.vscodeLanguageserverTypes.mod
 
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`10`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`11`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`12`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`13`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`14`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`15`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`16`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`17`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`18`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`19`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`20`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`21`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`22`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`23`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`24`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`25`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`3`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`4`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`5`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`6`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`7`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`8`
-import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`9`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`10`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`11`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`12`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`13`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`14`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`15`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`16`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`17`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`18`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`19`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`1`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`20`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`21`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`22`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`23`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`24`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`25`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`2`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`3`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`4`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`5`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`6`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`7`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`8`
+import typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`3`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`4`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`5`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`6`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`7`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`8`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`9`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`10`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`11`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`12`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`13`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`14`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`15`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`16`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`17`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`18`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`19`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`20`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`21`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`22`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`23`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`24`
-  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`25`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`1`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`2`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`3`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`4`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`5`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`6`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`7`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`8`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`9`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`10`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`11`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`12`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`13`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`14`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`15`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`16`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`17`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`18`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`19`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`20`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`21`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`22`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`23`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`24`
+  - typings.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`25`
 */
 trait CompletionItemKind extends StObject
 object CompletionItemKind {

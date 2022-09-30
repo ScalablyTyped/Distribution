@@ -1,18 +1,18 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`5`
-import typings.activexExcel.activexExcelNumbers.`6`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`5`
+import typings.activexExcel.activexExcelInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`2`
-  - typings.activexExcel.activexExcelNumbers.`5`
-  - typings.activexExcel.activexExcelNumbers.`6`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`2`
+  - typings.activexExcel.activexExcelInts.`5`
+  - typings.activexExcel.activexExcelInts.`6`
 */
 trait XlLink extends StObject
 object XlLink {

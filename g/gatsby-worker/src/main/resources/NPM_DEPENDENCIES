@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gatsby-worker" : "1.23.0"
+      "gatsby-worker" : "1.24.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gatsby-worker" : "1.23.0"
+      "gatsby-worker" : "1.24.0"
     }
   ],
   "compile-devDependencies" : [

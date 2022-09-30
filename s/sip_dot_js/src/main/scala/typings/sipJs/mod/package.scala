@@ -10,4 +10,4 @@ inline def equivalentURI(a: typings.sipJs.uriMod.URI, b: typings.sipJs.uriMod.UR
 
 inline def name: /* "sip.js" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("name").asInstanceOf[/* "sip.js" */ String]
 
-inline def version: /* "0.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "0.20.0" */ String]
+inline def version: /* "0.20.1" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "0.20.1" */ String]

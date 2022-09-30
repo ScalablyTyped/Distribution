@@ -480,7 +480,7 @@ object mod {
   
   inline def zipAll[A](xss: js.Array[A]*): js.Array[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(xss.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[js.Array[A]]]
   
-  inline def zipAllWith[A, B](f: js.Function1[/* repeated */ A, B], xss: js.Array[A]*): js.Array[B] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAllWith")(List(f.asInstanceOf[js.Any]).`++`(xss.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[B]]
+  inline def zipAllWith[A, B](f: js.Function1[/* repeated */ A, B], xss: js.Array[A]*): js.Array[B] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAllWith")(scala.List(f.asInstanceOf[js.Any]).`++`(xss.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[B]]
   
   inline def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]]): js.Function1[/* xs */ js.Array[A], js.Function1[/* ys */ js.Array[B], js.Array[C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* xs */ js.Array[A], js.Function1[/* ys */ js.Array[B], js.Array[C]]]]
   inline def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]], xs: js.Array[A]): js.Function1[/* ys */ js.Array[B], js.Array[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(f.asInstanceOf[js.Any], xs.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ys */ js.Array[B], js.Array[C]]]

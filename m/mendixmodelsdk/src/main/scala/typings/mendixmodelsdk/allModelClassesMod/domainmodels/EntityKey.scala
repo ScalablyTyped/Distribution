@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.9.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKey")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKey")
 @js.native
-class EntityKey protected ()
+open class EntityKey protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKey {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class EntityKey protected ()
 }
 object EntityKey {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKey")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKey")
   @js.native
   val ^ : js.Any = js.native
   
@@ -42,13 +42,13 @@ object EntityKey {
   inline def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKey = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKey]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKey.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKey.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKey.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKey.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

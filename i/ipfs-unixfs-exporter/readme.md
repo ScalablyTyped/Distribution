@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-unixfs-exporter
 
-Typings are for version 8.0.5
+Typings are for version 8.0.6
 
 ## Library description:
 JavaScript implementation of the UnixFs exporter used by IPFS

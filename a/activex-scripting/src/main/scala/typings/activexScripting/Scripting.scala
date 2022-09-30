@@ -1,18 +1,18 @@
 package typings.activexScripting
 
-import typings.activexScripting.activexScriptingNumbers.`-1`
-import typings.activexScripting.activexScriptingNumbers.`-2`
-import typings.activexScripting.activexScriptingNumbers.`0`
-import typings.activexScripting.activexScriptingNumbers.`1024`
-import typings.activexScripting.activexScriptingNumbers.`16`
-import typings.activexScripting.activexScriptingNumbers.`1`
-import typings.activexScripting.activexScriptingNumbers.`2048`
-import typings.activexScripting.activexScriptingNumbers.`2`
-import typings.activexScripting.activexScriptingNumbers.`32`
-import typings.activexScripting.activexScriptingNumbers.`3`
-import typings.activexScripting.activexScriptingNumbers.`4`
-import typings.activexScripting.activexScriptingNumbers.`5`
-import typings.activexScripting.activexScriptingNumbers.`8`
+import typings.activexScripting.activexScriptingInts.`-1`
+import typings.activexScripting.activexScriptingInts.`-2`
+import typings.activexScripting.activexScriptingInts.`0`
+import typings.activexScripting.activexScriptingInts.`1024`
+import typings.activexScripting.activexScriptingInts.`16`
+import typings.activexScripting.activexScriptingInts.`1`
+import typings.activexScripting.activexScriptingInts.`2048`
+import typings.activexScripting.activexScriptingInts.`2`
+import typings.activexScripting.activexScriptingInts.`32`
+import typings.activexScripting.activexScriptingInts.`3`
+import typings.activexScripting.activexScriptingInts.`4`
+import typings.activexScripting.activexScriptingInts.`5`
+import typings.activexScripting.activexScriptingInts.`8`
 import typings.std.SafeArray
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
@@ -23,9 +23,9 @@ object Scripting {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexScripting.activexScriptingNumbers.`0`
-    - typings.activexScripting.activexScriptingNumbers.`2`
-    - typings.activexScripting.activexScriptingNumbers.`1`
+    - typings.activexScripting.activexScriptingInts.`0`
+    - typings.activexScripting.activexScriptingInts.`2`
+    - typings.activexScripting.activexScriptingInts.`1`
   */
   trait CompareMethod extends StObject
   object CompareMethod {
@@ -173,12 +173,12 @@ object Scripting {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexScripting.activexScriptingNumbers.`4`
-    - typings.activexScripting.activexScriptingNumbers.`2`
-    - typings.activexScripting.activexScriptingNumbers.`5`
-    - typings.activexScripting.activexScriptingNumbers.`3`
-    - typings.activexScripting.activexScriptingNumbers.`1`
-    - typings.activexScripting.activexScriptingNumbers.`0`
+    - typings.activexScripting.activexScriptingInts.`4`
+    - typings.activexScripting.activexScriptingInts.`2`
+    - typings.activexScripting.activexScriptingInts.`5`
+    - typings.activexScripting.activexScriptingInts.`3`
+    - typings.activexScripting.activexScriptingInts.`1`
+    - typings.activexScripting.activexScriptingInts.`0`
   */
   trait DriveTypeConst extends StObject
   object DriveTypeConst {
@@ -294,15 +294,15 @@ object Scripting {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexScripting.activexScriptingNumbers.`1024`
-    - typings.activexScripting.activexScriptingNumbers.`32`
-    - typings.activexScripting.activexScriptingNumbers.`2048`
-    - typings.activexScripting.activexScriptingNumbers.`16`
-    - typings.activexScripting.activexScriptingNumbers.`2`
-    - typings.activexScripting.activexScriptingNumbers.`0`
-    - typings.activexScripting.activexScriptingNumbers.`1`
-    - typings.activexScripting.activexScriptingNumbers.`4`
-    - typings.activexScripting.activexScriptingNumbers.`8`
+    - typings.activexScripting.activexScriptingInts.`1024`
+    - typings.activexScripting.activexScriptingInts.`32`
+    - typings.activexScripting.activexScriptingInts.`2048`
+    - typings.activexScripting.activexScriptingInts.`16`
+    - typings.activexScripting.activexScriptingInts.`2`
+    - typings.activexScripting.activexScriptingInts.`0`
+    - typings.activexScripting.activexScriptingInts.`1`
+    - typings.activexScripting.activexScriptingInts.`4`
+    - typings.activexScripting.activexScriptingInts.`8`
   */
   trait FileAttribute extends StObject
   object FileAttribute {
@@ -579,9 +579,9 @@ object Scripting {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexScripting.activexScriptingNumbers.`8`
-    - typings.activexScripting.activexScriptingNumbers.`1`
-    - typings.activexScripting.activexScriptingNumbers.`2`
+    - typings.activexScripting.activexScriptingInts.`8`
+    - typings.activexScripting.activexScriptingInts.`1`
+    - typings.activexScripting.activexScriptingInts.`2`
   */
   trait IOMode extends StObject
   object IOMode {
@@ -595,9 +595,9 @@ object Scripting {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexScripting.activexScriptingNumbers.`1`
-    - typings.activexScripting.activexScriptingNumbers.`2`
-    - typings.activexScripting.activexScriptingNumbers.`0`
+    - typings.activexScripting.activexScriptingInts.`1`
+    - typings.activexScripting.activexScriptingInts.`2`
+    - typings.activexScripting.activexScriptingInts.`0`
   */
   trait SpecialFolderConst extends StObject
   object SpecialFolderConst {
@@ -611,9 +611,9 @@ object Scripting {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexScripting.activexScriptingNumbers.`2`
-    - typings.activexScripting.activexScriptingNumbers.`0`
-    - typings.activexScripting.activexScriptingNumbers.`1`
+    - typings.activexScripting.activexScriptingInts.`2`
+    - typings.activexScripting.activexScriptingInts.`0`
+    - typings.activexScripting.activexScriptingInts.`1`
   */
   trait StandardStreamTypes extends StObject
   object StandardStreamTypes {
@@ -678,9 +678,9 @@ object Scripting {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexScripting.activexScriptingNumbers.`0`
-    - typings.activexScripting.activexScriptingNumbers.`-2`
-    - typings.activexScripting.activexScriptingNumbers.`-1`
+    - typings.activexScripting.activexScriptingInts.`0`
+    - typings.activexScripting.activexScriptingInts.`-2`
+    - typings.activexScripting.activexScriptingInts.`-1`
   */
   trait Tristate extends StObject
   object Tristate {

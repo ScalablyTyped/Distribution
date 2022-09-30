@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-state-tree
 
-Typings are for version 4.0.2
+Typings are for version 5.1.6
 
 ## Library description:
 Opinionated, transactional, MobX powered state container
@@ -11,9 +11,9 @@ Opinionated, transactional, MobX powered state container
 | Full name          | mobx-state-tree |
 | Keywords           | mobx, mobx-state-tree, promise, reactive, frp, functional-reactive-programming, state management |
 | # releases         | 18 |
-| # dependents       | 95 |
-| # downloads        | 2048719 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 332489.6666666667 |
+| # stars            | 6511.0 |
 
 ## Links
 - [Homepage](https://github.com/mobxjs/mobx-state-tree#readme)

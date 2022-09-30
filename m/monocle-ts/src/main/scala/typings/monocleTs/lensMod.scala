@@ -82,15 +82,15 @@ object lensMod {
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* sa */ Lens_[Any, A], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, A], Optional_[Any, A]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens_[Any, A], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, A], Optional_[Any, B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens_[Any, A], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, A], Optional_[Any, B]]]
   
   inline def findFirst[A](predicate: Predicate[A]): js.Function1[/* sa */ Lens_[Any, js.Array[A]], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, js.Array[A]], Optional_[Any, A]]]
   
   inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[/* sa */ Lens_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, A]]]
   
-  inline def findFirstNonEmpty_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]]]
+  inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]]]
   
-  inline def findFirst_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens_[Any, js.Array[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, js.Array[A]], Optional_[Any, B]]]
+  inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Lens_[Any, js.Array[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Lens_[Any, js.Array[A]], Optional_[Any, B]]]
   
   inline def fromNullable[S, A](sa: Lens_[S, A]): Optional_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[Optional_[S, NonNullable[A]]]
   

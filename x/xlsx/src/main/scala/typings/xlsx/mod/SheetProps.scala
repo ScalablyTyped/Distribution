@@ -1,8 +1,8 @@
 package typings.xlsx.mod
 
-import typings.xlsx.xlsxNumbers.`0`
-import typings.xlsx.xlsxNumbers.`1`
-import typings.xlsx.xlsxNumbers.`2`
+import typings.xlsx.xlsxInts.`0`
+import typings.xlsx.xlsxInts.`1`
+import typings.xlsx.xlsxInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

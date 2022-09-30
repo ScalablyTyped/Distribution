@@ -14,7 +14,7 @@ object mod {
     * @param {...*} params Function arguments
     * @returns {Promise<*>} Promisified function
     */
-  inline def apply(fn: asPromiseCallback, ctx: Any, params: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].apply((List(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
+  inline def apply(fn: asPromiseCallback, ctx: Any, params: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
   
   @JSImport("@protobufjs/aspromise", JSImport.Namespace)
   @js.native

@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings")
+@JSImport("mendixmodelsdk/src/gen/settings", "settings.RuntimeSettings")
 @js.native
-class RuntimeSettings protected () extends ProjectSettingsPart {
+open class RuntimeSettings protected () extends ProjectSettingsPart {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -32,6 +32,12 @@ class RuntimeSettings protected () extends ProjectSettingsPart {
   
   def allowUserMultipleSessions: Boolean = js.native
   def allowUserMultipleSessions_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.11.0: introduced
+    */
+  def bcryptCost: Double = js.native
+  def bcryptCost_=(newValue: Double): Unit = js.native
   
   def beforeShutdownMicroflow: IMicroflow | Null = js.native
   
@@ -56,6 +62,7 @@ class RuntimeSettings protected () extends ProjectSettingsPart {
   def enableDataStorageOptimisticLocking_=(newValue: Boolean): Unit = js.native
   
   /**
+    * In version 9.0.2: deleted
     * In version 7.1.0: introduced
     */
   def enforceDataStorageUniqueness: Boolean = js.native
@@ -85,10 +92,16 @@ class RuntimeSettings protected () extends ProjectSettingsPart {
     */
   def useDeprecatedClientForWebServiceCalls: Boolean = js.native
   def useDeprecatedClientForWebServiceCalls_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  def useSystemContextForBackgroundTasks: Boolean = js.native
+  def useSystemContextForBackgroundTasks_=(newValue: Boolean): Unit = js.native
 }
 object RuntimeSettings {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.RuntimeSettings")
   @js.native
   val ^ : js.Any = js.native
   
@@ -109,13 +122,13 @@ object RuntimeSettings {
   inline def createIn(container: ProjectSettings): RuntimeSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RuntimeSettings]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.RuntimeSettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.RuntimeSettings.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.RuntimeSettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

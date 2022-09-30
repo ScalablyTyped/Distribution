@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object viewDefMod {
   
-  inline def apply(key: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(List(key.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def apply(key: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(scala.List(key.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("@nginstack/web-framework/lib/classdef/ViewDef", JSImport.Namespace)
   @js.native

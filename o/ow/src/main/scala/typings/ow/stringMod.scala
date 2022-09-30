@@ -2,19 +2,18 @@ package typings.ow
 
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringMod {
   
-  @JSImport("ow/dist/source/predicates/string", "StringPredicate")
+  @JSImport("ow/dist/predicates/string", "StringPredicate")
   @js.native
   /**
     @hidden
     */
-  class StringPredicate () extends Predicate[String] {
+  open class StringPredicate () extends Predicate[String] {
     def this(options: PredicateOptions) = this()
     
     /**
@@ -70,7 +69,7 @@ object stringMod {
       Test a string against a regular expression.
       @param regex - The regular expression to match the value with.
       */
-    def matches(regex: RegExp): this.type = js.native
+    def matches(regex: js.RegExp): this.type = js.native
     
     /**
       Test a string to have a maximum length.
@@ -83,6 +82,11 @@ object stringMod {
       @param length - The minimum length of the string.
       */
     def minLength(length: Double): this.type = js.native
+    
+    /**
+      Test a string to contain at least 1 non-whitespace character.
+      */
+    def nonBlank: this.type = js.native
     
     /**
       Test a string to be not empty.

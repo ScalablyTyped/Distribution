@@ -1,41 +1,41 @@
 package typings.activexShdocvw.SHDocVw
 
-import typings.activexShdocvw.activexShdocvwNumbers.`1024`
-import typings.activexShdocvw.activexShdocvwNumbers.`128`
-import typings.activexShdocvw.activexShdocvwNumbers.`16384`
-import typings.activexShdocvw.activexShdocvwNumbers.`16`
-import typings.activexShdocvw.activexShdocvwNumbers.`1`
-import typings.activexShdocvw.activexShdocvwNumbers.`2048`
-import typings.activexShdocvw.activexShdocvwNumbers.`256`
-import typings.activexShdocvw.activexShdocvwNumbers.`2`
-import typings.activexShdocvw.activexShdocvwNumbers.`32768`
-import typings.activexShdocvw.activexShdocvwNumbers.`32`
-import typings.activexShdocvw.activexShdocvwNumbers.`4096`
-import typings.activexShdocvw.activexShdocvwNumbers.`512`
-import typings.activexShdocvw.activexShdocvwNumbers.`64`
-import typings.activexShdocvw.activexShdocvwNumbers.`65536`
-import typings.activexShdocvw.activexShdocvwNumbers.`8192`
+import typings.activexShdocvw.activexShdocvwInts.`1024`
+import typings.activexShdocvw.activexShdocvwInts.`128`
+import typings.activexShdocvw.activexShdocvwInts.`16384`
+import typings.activexShdocvw.activexShdocvwInts.`16`
+import typings.activexShdocvw.activexShdocvwInts.`1`
+import typings.activexShdocvw.activexShdocvwInts.`2048`
+import typings.activexShdocvw.activexShdocvwInts.`256`
+import typings.activexShdocvw.activexShdocvwInts.`2`
+import typings.activexShdocvw.activexShdocvwInts.`32768`
+import typings.activexShdocvw.activexShdocvwInts.`32`
+import typings.activexShdocvw.activexShdocvwInts.`4096`
+import typings.activexShdocvw.activexShdocvwInts.`512`
+import typings.activexShdocvw.activexShdocvwInts.`64`
+import typings.activexShdocvw.activexShdocvwInts.`65536`
+import typings.activexShdocvw.activexShdocvwInts.`8192`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShdocvw.activexShdocvwNumbers.`1`
-  - typings.activexShdocvw.activexShdocvwNumbers.`2`
-  - typings.activexShdocvw.activexShdocvwNumbers.`16`
-  - typings.activexShdocvw.activexShdocvwNumbers.`32`
-  - typings.activexShdocvw.activexShdocvwNumbers.`64`
-  - typings.activexShdocvw.activexShdocvwNumbers.`128`
-  - typings.activexShdocvw.activexShdocvwNumbers.`256`
-  - typings.activexShdocvw.activexShdocvwNumbers.`512`
-  - typings.activexShdocvw.activexShdocvwNumbers.`1024`
-  - typings.activexShdocvw.activexShdocvwNumbers.`2048`
-  - typings.activexShdocvw.activexShdocvwNumbers.`4096`
-  - typings.activexShdocvw.activexShdocvwNumbers.`8192`
-  - typings.activexShdocvw.activexShdocvwNumbers.`16384`
-  - typings.activexShdocvw.activexShdocvwNumbers.`32768`
-  - typings.activexShdocvw.activexShdocvwNumbers.`65536`
+  - typings.activexShdocvw.activexShdocvwInts.`1`
+  - typings.activexShdocvw.activexShdocvwInts.`2`
+  - typings.activexShdocvw.activexShdocvwInts.`16`
+  - typings.activexShdocvw.activexShdocvwInts.`32`
+  - typings.activexShdocvw.activexShdocvwInts.`64`
+  - typings.activexShdocvw.activexShdocvwInts.`128`
+  - typings.activexShdocvw.activexShdocvwInts.`256`
+  - typings.activexShdocvw.activexShdocvwInts.`512`
+  - typings.activexShdocvw.activexShdocvwInts.`1024`
+  - typings.activexShdocvw.activexShdocvwInts.`2048`
+  - typings.activexShdocvw.activexShdocvwInts.`4096`
+  - typings.activexShdocvw.activexShdocvwInts.`8192`
+  - typings.activexShdocvw.activexShdocvwInts.`16384`
+  - typings.activexShdocvw.activexShdocvwInts.`32768`
+  - typings.activexShdocvw.activexShdocvwInts.`65536`
 */
 trait BrowserNavConstants extends StObject
 object BrowserNavConstants {

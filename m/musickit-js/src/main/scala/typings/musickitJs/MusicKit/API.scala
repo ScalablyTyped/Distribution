@@ -1,9 +1,8 @@
 package typings.musickitJs.MusicKit
 
 import typings.musickitJs.anon.Data
-import typings.musickitJs.anon.Results
-import typings.musickitJs.anon.ResultsActivities
-import typings.musickitJs.anon.ResultsTerms
+import typings.musickitJs.anon.Terms
+import typings.musickitJs.anon.keyinMusicCatalogChartReq
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,8 +107,8 @@ trait API extends StObject {
     * directly to the Apple Music API.
     * https://developer.apple.com/documentation/applemusicapi/chartresponse
     */
-  def charts(types: js.Array[String]): js.Promise[Results] = js.native
-  def charts(types: js.Array[String], parameters: QueryParameters): js.Promise[Results] = js.native
+  def charts(types: js.Array[MusicCatalogChartRequestable]): js.Promise[keyinMusicCatalogChartReq] = js.native
+  def charts(types: js.Array[MusicCatalogChartRequestable], parameters: QueryParameters): js.Promise[keyinMusicCatalogChartReq] = js.native
   
   /**
     * Fetch a curator using its identifier.
@@ -243,8 +242,8 @@ trait API extends StObject {
     * directly to the Apple Music API.
     * https://developer.apple.com/documentation/applemusicapi/searchresponse
     */
-  def search(term: String): js.Promise[ResultsActivities] = js.native
-  def search(term: String, parameters: QueryParameters): js.Promise[ResultsActivities] = js.native
+  def search(term: String): js.Promise[typings.musickitJs.anon.Activities] = js.native
+  def search(term: String, parameters: QueryParameters): js.Promise[typings.musickitJs.anon.Activities] = js.native
   
   /**
     * Fetch the search term results for a hint.
@@ -254,8 +253,8 @@ trait API extends StObject {
     * directly to the Apple Music API.
     * https://developer.apple.com/documentation/applemusicapi/searchhintsresponse
     */
-  def searchHints(term: String): js.Promise[ResultsTerms] = js.native
-  def searchHints(term: String, parameters: QueryParameters): js.Promise[ResultsTerms] = js.native
+  def searchHints(term: String): js.Promise[Terms] = js.native
+  def searchHints(term: String, parameters: QueryParameters): js.Promise[Terms] = js.native
   
   /**
     * Fetch a song using its identifier.

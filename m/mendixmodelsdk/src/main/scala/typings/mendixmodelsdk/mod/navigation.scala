@@ -13,7 +13,7 @@ object navigation {
   
   @JSImport("mendixmodelsdk", "navigation.DeviceType")
   @js.native
-  class DeviceType protected ()
+  open class DeviceType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.DeviceType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -44,7 +44,7 @@ object navigation {
   
   @JSImport("mendixmodelsdk", "navigation.HomePage")
   @js.native
-  class HomePage protected ()
+  open class HomePage protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.HomePage {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -126,11 +126,100 @@ object navigation {
   }
   
   /**
+    * In version 9.4.0: introduced
+    */
+  @JSImport("mendixmodelsdk", "navigation.NativeHomePage")
+  @js.native
+  open class NativeHomePage protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.navigation.NativeHomePage {
+    def this(
+      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+    ) = this()
+  }
+  object NativeHomePage {
+    
+    @JSImport("mendixmodelsdk", "navigation.NativeHomePage")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates and returns a new NativeHomePage instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    /* static member */
+    inline def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.NativeHomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NativeHomePage]
+    
+    /**
+      * Creates and returns a new NativeHomePage instance in the SDK and on the server.
+      * The new NativeHomePage will be automatically stored in the 'nativeHomePage' property
+      * of the parent NativeNavigationProfile element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.NativeHomePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.NativeHomePage]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "navigation.NativeHomePage.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "navigation.NativeHomePage.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.navigationMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.navigationMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  }
+  
+  /**
+    * In version 9.4.0: introduced
+    */
+  @JSImport("mendixmodelsdk", "navigation.NativeHomePageBase")
+  @js.native
+  abstract class NativeHomePageBase protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.navigation.NativeHomePageBase {
+    def this(
+      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+    ) = this()
+  }
+  object NativeHomePageBase {
+    
+    @JSImport("mendixmodelsdk", "navigation.NativeHomePageBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "navigation.NativeHomePageBase.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "navigation.NativeHomePageBase.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.navigationMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.navigationMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  }
+  
+  /**
     * In version 7.22.0: introduced
     */
   @JSImport("mendixmodelsdk", "navigation.NativeNavigationProfile")
   @js.native
-  class NativeNavigationProfile protected ()
+  open class NativeNavigationProfile protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.NativeNavigationProfile {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -184,7 +273,7 @@ object navigation {
     */
   @JSImport("mendixmodelsdk", "navigation.NavigationDocument")
   @js.native
-  class NavigationDocument protected ()
+  open class NavigationDocument protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.NavigationDocument {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -225,7 +314,7 @@ object navigation {
     */
   @JSImport("mendixmodelsdk", "navigation.NavigationProfile")
   @js.native
-  class NavigationProfile protected ()
+  open class NavigationProfile protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.NavigationProfile {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -414,7 +503,7 @@ object navigation {
     */
   @JSImport("mendixmodelsdk", "navigation.OfflineEntityConfig")
   @js.native
-  class OfflineEntityConfig protected ()
+  open class OfflineEntityConfig protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.OfflineEntityConfig {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -465,7 +554,7 @@ object navigation {
   
   @JSImport("mendixmodelsdk", "navigation.OfflineEntitySyncDownloadMode")
   @js.native
-  class OfflineEntitySyncDownloadMode protected ()
+  open class OfflineEntitySyncDownloadMode protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.OfflineEntitySyncDownloadMode {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -503,7 +592,7 @@ object navigation {
   
   @JSImport("mendixmodelsdk", "navigation.ProfileKind")
   @js.native
-  class ProfileKind protected ()
+  open class ProfileKind protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.ProfileKind {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -600,7 +689,7 @@ object navigation {
   
   @JSImport("mendixmodelsdk", "navigation.ProfileType")
   @js.native
-  class ProfileType protected ()
+  open class ProfileType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.ProfileType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -661,9 +750,69 @@ object navigation {
     inline def Tablet_=(x: typings.mendixmodelsdk.navigationMod.navigation.ProfileType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tablet")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * See: {@link https://docs.mendix.com/refguide/progressive-web-app relevant section in reference guide}
+    *
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
+    *
+    * In version 9.0.3: introduced
+    */
+  @JSImport("mendixmodelsdk", "navigation.ProgressiveWebAppSettings")
+  @js.native
+  open class ProgressiveWebAppSettings protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.navigation.ProgressiveWebAppSettings {
+    def this(
+      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+    ) = this()
+  }
+  object ProgressiveWebAppSettings {
+    
+    @JSImport("mendixmodelsdk", "navigation.ProgressiveWebAppSettings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates and returns a new ProgressiveWebAppSettings instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    /* static member */
+    inline def create(model: IModel): typings.mendixmodelsdk.navigationMod.navigation.ProgressiveWebAppSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.ProgressiveWebAppSettings]
+    
+    /**
+      * Creates and returns a new ProgressiveWebAppSettings instance in the SDK and on the server.
+      * The new ProgressiveWebAppSettings will be automatically stored in the 'progressiveWebAppSettings' property
+      * of the parent NavigationProfile element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.0.3 and higher
+      */
+    /* static member */
+    inline def createIn(container: typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile): typings.mendixmodelsdk.navigationMod.navigation.ProgressiveWebAppSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.navigationMod.navigation.ProgressiveWebAppSettings]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "navigation.ProgressiveWebAppSettings.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "navigation.ProgressiveWebAppSettings.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.navigationMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.navigationMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("mendixmodelsdk", "navigation.RoleBasedHomePage")
   @js.native
-  class RoleBasedHomePage protected ()
+  open class RoleBasedHomePage protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.RoleBasedHomePage {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -714,7 +863,7 @@ object navigation {
     */
   @JSImport("mendixmodelsdk", "navigation.RoleBasedNativeHomePage")
   @js.native
-  class RoleBasedNativeHomePage protected ()
+  open class RoleBasedNativeHomePage protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.navigation.RoleBasedNativeHomePage {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

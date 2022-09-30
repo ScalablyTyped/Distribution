@@ -19,6 +19,8 @@ trait RenderingManager extends StObject {
   
   /* private */ var _depthStencilBufferAlreadyCleaned: Any = js.native
   
+  /* private */ var _maintainStateBetweenFrames: Any = js.native
+  
   /* private */ var _prepareRenderingGroup: Any = js.native
   
   /* private */ var _renderingGroupInfo: Any = js.native
@@ -28,7 +30,7 @@ trait RenderingManager extends StObject {
   /* private */ var _scene: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _useSceneAutoClearSetup: Boolean = js.native
   
@@ -57,7 +59,7 @@ trait RenderingManager extends StObject {
   
   /**
     * Dispose and release the group and its associated resources.
-    * @hidden
+    * @internal
     */
   def dispose(): Unit = js.native
   
@@ -74,13 +76,20 @@ trait RenderingManager extends StObject {
     */
   def getAutoClearDepthStencilSetup(index: Double): IRenderingManagerAutoClearSetup = js.native
   
+  def getRenderingGroup(id: Double): RenderingGroup = js.native
+  
+  /**
+    * Gets or sets a boolean indicating that the manager will not reset between frames.
+    * This means that if a mesh becomes invisible or transparent it will not be visible until this boolean is set to false again.
+    * By default, the rendering manager will dispatch all active meshes per frame (moving them to the transparent, opaque or alpha testing lists).
+    * By turning this property on, you will accelerate the rendering by keeping all these lists unchanged between frames.
+    */
+  def maintainStateBetweenFrames: Boolean = js.native
+  def maintainStateBetweenFrames_=(value: Boolean): Unit = js.native
+  
   /**
     * Renders the entire managed groups. This is used by the scene or the different render targets.
-    * @param customRenderFunction
-    * @param activeMeshes
-    * @param renderParticles
-    * @param renderSprites
-    * @hidden
+    * @internal
     */
   def render(
     customRenderFunction: Nullable[
@@ -99,7 +108,7 @@ trait RenderingManager extends StObject {
   
   /**
     * Resets the different information of the group to prepare a new frame
-    * @hidden
+    * @internal
     */
   def reset(): Unit = js.native
   

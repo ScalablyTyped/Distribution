@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutomationExecutionMetadata extends StObject {
   
   /**
+    * The details for the CloudWatch alarm applied to your automation.
+    */
+  var AlarmConfiguration: js.UndefOr[typings.awsSdk.ssmMod.AlarmConfiguration] = js.undefined
+  
+  /**
     * The ID of a State Manager association used in the Automation operation.
     */
   var AssociationId: js.UndefOr[String] = js.undefined
@@ -145,6 +150,11 @@ trait AutomationExecutionMetadata extends StObject {
     * The targets defined by the user when starting the automation.
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
+  
+  /**
+    * The CloudWatch alarm that was invoked by the automation.
+    */
+  var TriggeredAlarms: js.UndefOr[AlarmStateInformationList] = js.undefined
 }
 object AutomationExecutionMetadata {
   
@@ -154,6 +164,10 @@ object AutomationExecutionMetadata {
   }
   
   extension [Self <: AutomationExecutionMetadata](x: Self) {
+    
+    inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "AlarmConfiguration", js.undefined)
     
     inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
@@ -272,5 +286,11 @@ object AutomationExecutionMetadata {
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
     inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
+    
+    inline def setTriggeredAlarms(value: AlarmStateInformationList): Self = StObject.set(x, "TriggeredAlarms", value.asInstanceOf[js.Any])
+    
+    inline def setTriggeredAlarmsUndefined: Self = StObject.set(x, "TriggeredAlarms", js.undefined)
+    
+    inline def setTriggeredAlarmsVarargs(value: AlarmStateInformation*): Self = StObject.set(x, "TriggeredAlarms", js.Array(value*))
   }
 }

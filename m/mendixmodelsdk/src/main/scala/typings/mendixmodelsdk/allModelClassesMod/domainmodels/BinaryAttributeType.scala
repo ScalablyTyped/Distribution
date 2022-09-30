@@ -2,19 +2,21 @@ package typings.mendixmodelsdk.allModelClassesMod.domainmodels
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute
 import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.TensorMappingElement
 import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BinaryAttributeType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.BinaryAttributeType")
 @js.native
-class BinaryAttributeType protected ()
+open class BinaryAttributeType protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.BinaryAttributeType {
   def this(
     model: AbstractModel,
@@ -27,7 +29,7 @@ class BinaryAttributeType protected ()
 }
 object BinaryAttributeType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BinaryAttributeType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.BinaryAttributeType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -80,14 +82,36 @@ object BinaryAttributeType {
   /* static member */
   inline def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BinaryAttributeType]
   
+  /**
+    * Creates and returns a new BinaryAttributeType instance in the SDK and on the server.
+    * The new BinaryAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent businessevents.PublishedMessageAttribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.14.0 and higher
+    */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BinaryAttributeType.structureTypeName")
+  inline def createInPublishedMessageAttributeUnderAttributeType(container: PublishedMessageAttribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedMessageAttributeUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BinaryAttributeType]
+  
+  /**
+    * Creates and returns a new BinaryAttributeType instance in the SDK and on the server.
+    * The new BinaryAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent mlmappings.TensorMappingElement element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.17.0 and higher
+    */
+  /* static member */
+  inline def createInTensorMappingElementUnderAttributeType(container: TensorMappingElement): typings.mendixmodelsdk.domainmodelsMod.domainmodels.BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.BinaryAttributeType]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.BinaryAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.BinaryAttributeType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.BinaryAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

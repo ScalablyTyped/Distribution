@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SearchFieldOperator")
 @js.native
-class SearchFieldOperator protected ()
+open class SearchFieldOperator protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SearchFieldOperator {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

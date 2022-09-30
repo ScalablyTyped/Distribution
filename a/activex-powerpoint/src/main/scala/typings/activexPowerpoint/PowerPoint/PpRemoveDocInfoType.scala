@@ -1,32 +1,32 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`10`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16`
-import typings.activexPowerpoint.activexPowerpointNumbers.`17`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1`
-import typings.activexPowerpoint.activexPowerpointNumbers.`4`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8`
-import typings.activexPowerpoint.activexPowerpointNumbers.`99`
+import typings.activexPowerpoint.activexPowerpointInts.`10`
+import typings.activexPowerpoint.activexPowerpointInts.`11`
+import typings.activexPowerpoint.activexPowerpointInts.`13`
+import typings.activexPowerpoint.activexPowerpointInts.`14`
+import typings.activexPowerpoint.activexPowerpointInts.`15`
+import typings.activexPowerpoint.activexPowerpointInts.`16`
+import typings.activexPowerpoint.activexPowerpointInts.`17`
+import typings.activexPowerpoint.activexPowerpointInts.`1`
+import typings.activexPowerpoint.activexPowerpointInts.`4`
+import typings.activexPowerpoint.activexPowerpointInts.`8`
+import typings.activexPowerpoint.activexPowerpointInts.`99`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`99`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`17`
+  - typings.activexPowerpoint.activexPowerpointInts.`99`
+  - typings.activexPowerpoint.activexPowerpointInts.`1`
+  - typings.activexPowerpoint.activexPowerpointInts.`16`
+  - typings.activexPowerpoint.activexPowerpointInts.`15`
+  - typings.activexPowerpoint.activexPowerpointInts.`8`
+  - typings.activexPowerpoint.activexPowerpointInts.`14`
+  - typings.activexPowerpoint.activexPowerpointInts.`10`
+  - typings.activexPowerpoint.activexPowerpointInts.`11`
+  - typings.activexPowerpoint.activexPowerpointInts.`13`
+  - typings.activexPowerpoint.activexPowerpointInts.`4`
+  - typings.activexPowerpoint.activexPowerpointInts.`17`
 */
 trait PpRemoveDocInfoType extends StObject
 object PpRemoveDocInfoType {

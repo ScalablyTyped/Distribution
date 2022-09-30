@@ -1,16 +1,15 @@
 package typings.meteor
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.meteor.Blaze.Template
+import typings.meteor.Blaze.TemplateInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateStatic
+trait TemplateStatic[D, T]
   extends StObject
-     with typings.meteor.Blaze.TemplateStatic
-     with /* index */ StringDictionary[js.Any | Template] {
+     with typings.meteor.Blaze.TemplateStatic[D, T] {
   
-  var body: Template = js.native
+  var body: Template[Any, TemplateInstance[Any]] = js.native
 }

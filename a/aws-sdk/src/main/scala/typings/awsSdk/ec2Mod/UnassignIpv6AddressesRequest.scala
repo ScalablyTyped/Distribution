@@ -12,7 +12,7 @@ trait UnassignIpv6AddressesRequest extends StObject {
   var Ipv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
   
   /**
-    * One or more IPv6 prefixes to unassign from the network interface.
+    * The IPv6 prefixes to unassign from the network interface.
     */
   var Ipv6Prefixes: js.UndefOr[IpPrefixList] = js.undefined
   

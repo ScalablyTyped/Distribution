@@ -25,7 +25,7 @@ trait ButtonKindTypedefaultButt extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var font: js.UndefOr[`23`] = js.undefined
+  var font: js.UndefOr[`24`] = js.undefined
   
   var icon: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
@@ -68,7 +68,7 @@ object ButtonKindTypedefaultButt {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFont(value: `23`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: `24`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

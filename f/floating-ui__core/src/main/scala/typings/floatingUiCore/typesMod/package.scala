@@ -10,7 +10,6 @@ import typings.floatingUiCore.anon.PartialOptionsOptionsCrossAxis
 import typings.floatingUiCore.anon.PartialOptionsPadding
 import typings.floatingUiCore.anon.PartialSideObject
 import typings.floatingUiCore.arrowMod.Options
-import typings.floatingUiCore.floatingUiCoreStrings.`DollarLeftcurlybracketSideRightcurlybracket-DollarLeftcurlybracketAlignmentRightcurlybracket`
 import typings.floatingUiCore.typesMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,7 +49,7 @@ inline def shift(options: PartialOptionsOptionsCrossAxis): Middleware = ^.asInst
 inline def size(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("size")().asInstanceOf[Middleware]
 inline def size(options: PartialOptionsOptionsApply): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
 
-type AlignedPlacement = `DollarLeftcurlybracketSideRightcurlybracket-DollarLeftcurlybracketAlignmentRightcurlybracket`
+type AlignedPlacement = /* template literal string: ${Side}-${Alignment} */ String
 
 type Boundary = Any
 

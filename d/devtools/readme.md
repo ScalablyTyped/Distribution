@@ -1,7 +1,7 @@
 
 # Scala.js typings for devtools
 
-Typings are for version 6.9.0
+Typings are for version 7.25.0
 
 ## Library description:
 A Chrome DevTools protocol binding that maps WebDriver commands into Chrome DevTools commands using Puppeteer
@@ -10,10 +10,10 @@ A Chrome DevTools protocol binding that maps WebDriver commands into Chrome DevT
 | ------------------ | :-------------: |
 | Full name          | devtools |
 | Keywords           | devtoolsdriver |
-| # releases         | 127 |
-| # dependents       | 3 |
-| # downloads        | 14498254 |
-| # stars            | 0 |
+| # releases         | 116 |
+| # dependents       | 0.0 |
+| # downloads        | 3122101.3333333335 |
+| # stars            | 7720.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/devtools)

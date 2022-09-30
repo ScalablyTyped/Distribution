@@ -1,6 +1,6 @@
 package typings.filelist
 
-import typings.filelist.filelistNumbers.`1`
+import typings.filelist.filelistInts.`1`
 import typings.filelist.mod.IncludeOptions
 import typings.std.FlatArray
 import typings.std.IterableIterator

@@ -53,7 +53,7 @@ object helpersMod {
   
   inline def isSupportedEnvironment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedEnvironment")().asInstanceOf[Boolean]
   
-  inline def omit[T /* <: PlainObject[Any] */, K /* <: /* keyof T */ String */](input: T, filter: K*): Omit[T, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("omit")(List(input.asInstanceOf[js.Any]).`++`(filter.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Omit[T, K]]
+  inline def omit[T /* <: PlainObject[Any] */, K /* <: /* keyof T */ String */](input: T, filter: K*): Omit[T, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("omit")(scala.List(input.asInstanceOf[js.Any]).`++`(filter.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Omit[T, K]]
   
   inline def randomString(length: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(length.asInstanceOf[js.Any]).asInstanceOf[String]
   

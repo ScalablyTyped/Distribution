@@ -13,7 +13,7 @@ object mod {
   
   inline def findRepos(roots: js.Array[String]): js.Promise[Repos] = ^.asInstanceOf[js.Dynamic].applyDynamic("findRepos")(roots.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repos]]
   
-  inline def getChangedFilesForRoots(roots: js.Array[String], options: Options): ChangedFilesPromise = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangedFilesForRoots")(roots.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ChangedFilesPromise]
+  inline def getChangedFilesForRoots(roots: js.Array[String], options: Options): js.Promise[ChangedFiles] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangedFilesForRoots")(roots.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChangedFiles]]
   
   trait ChangedFiles extends StObject {
     

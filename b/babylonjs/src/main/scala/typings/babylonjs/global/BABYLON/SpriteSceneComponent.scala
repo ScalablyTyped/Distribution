@@ -27,7 +27,7 @@ open class SpriteSceneComponent protected ()
   /* private */ /* CompleteClass */
   var _pointerUp: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   /* private */ /* CompleteClass */
   var _spritePredicate: Any = js.native
   

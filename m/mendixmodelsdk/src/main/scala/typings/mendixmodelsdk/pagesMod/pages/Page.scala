@@ -24,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.pagesMod.pages.IFormBase because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.IPage because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined layoutCall, allowedRoles, allowedRolesQualifiedNames */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Page")
+- typings.mendixmodelsdk.pagesMod.pages.IPage because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined parameters, layoutCall, allowedRoles, allowedRolesQualifiedNames */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.Page")
 @js.native
-class Page protected () extends FormBase {
+open class Page protected () extends FormBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -82,6 +82,16 @@ class Page protected () extends FormBase {
   def markAsUsed_=(newValue: Boolean): Unit = js.native
   
   /**
+    * In version 9.4.0: introduced
+    */
+  def parameters: IList[PageParameter] = js.native
+  /**
+    * In version 9.4.0: introduced
+    */
+  @JSName("parameters")
+  val parameters_FPage: IList[IPageParameter] = js.native
+  
+  /**
     * In version 6.7.0: introduced
     */
   def popupCloseAction: String = js.native
@@ -113,7 +123,7 @@ class Page protected () extends FormBase {
 }
 object Page {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Page")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Page")
   @js.native
   val ^ : js.Any = js.native
   
@@ -125,13 +135,13 @@ object Page {
   inline def createIn(container: IFolderBase): Page = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Page]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Page.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Page.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Page.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Page.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

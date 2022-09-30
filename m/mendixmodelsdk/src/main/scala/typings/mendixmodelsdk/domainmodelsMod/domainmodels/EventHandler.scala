@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/event-handlers relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventHandler")
+@JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EventHandler")
 @js.native
-class EventHandler protected () extends Element[IModel] {
+open class EventHandler protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -50,7 +50,7 @@ class EventHandler protected () extends Element[IModel] {
 }
 object EventHandler {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventHandler")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EventHandler")
   @js.native
   val ^ : js.Any = js.native
   
@@ -71,13 +71,13 @@ object EventHandler {
   inline def createIn(container: Entity): EventHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EventHandler]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventHandler.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EventHandler.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EventHandler.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EventHandler.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -62,7 +62,7 @@ trait ContentControlData extends StObject {
   var color: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the collection of content control objects in the content control. Read-only.
+    * Gets the collection of content control objects in the content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -70,16 +70,15 @@ trait ContentControlData extends StObject {
   var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   
   /**
-    * Gets the collection of field objects in the contentcontrol. Read-only.
+    * Gets the collection of field objects in the content control.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
   
   /**
-    * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -87,7 +86,7 @@ trait ContentControlData extends StObject {
   var font: js.UndefOr[FontData] = js.undefined
   
   /**
-    * Gets an integer that represents the content control identifier. Read-only.
+    * Gets an integer that represents the content control identifier.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -95,7 +94,7 @@ trait ContentControlData extends StObject {
   var id: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+    * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -103,7 +102,7 @@ trait ContentControlData extends StObject {
   var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
-    * Gets the collection of list objects in the content control. Read-only.
+    * Gets the collection of list objects in the content control.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -111,7 +110,7 @@ trait ContentControlData extends StObject {
   var lists: js.UndefOr[js.Array[ListData]] = js.undefined
   
   /**
-    * Get the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+    * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -119,8 +118,7 @@ trait ContentControlData extends StObject {
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   
   /**
-    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-    * **Note**: The set operation for this property is not supported in Word on the web.
+    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -154,7 +152,7 @@ trait ContentControlData extends StObject {
   ] = js.undefined
   
   /**
-    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -164,7 +162,7 @@ trait ContentControlData extends StObject {
   ] = js.undefined
   
   /**
-    * Gets the collection of table objects in the content control. Read-only.
+    * Gets the collection of table objects in the content control.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -180,7 +178,7 @@ trait ContentControlData extends StObject {
   var tag: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the text of the content control. Read-only.
+    * Gets the text of the content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -196,7 +194,7 @@ trait ContentControlData extends StObject {
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+    * Gets the content control type. Only rich text content controls are supported currently.
     *
     * @remarks
     * [Api set: WordApi 1.1]

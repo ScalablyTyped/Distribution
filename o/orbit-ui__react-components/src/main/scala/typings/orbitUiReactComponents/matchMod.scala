@@ -15,10 +15,10 @@ object matchMod {
     value: String,
     lookup: Record[String, TReturnValue | (js.Function1[/* repeated */ Any, TReturnValue])],
     args: Any*
-  ): TReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("match")((List(value.asInstanceOf[js.Any], lookup.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TReturnValue]
+  ): TReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("match")((scala.List(value.asInstanceOf[js.Any], lookup.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TReturnValue]
   inline def `match`[TReturnValue](
     value: Double,
     lookup: Record[Double, TReturnValue | (js.Function1[/* repeated */ Any, TReturnValue])],
     args: Any*
-  ): TReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("match")((List(value.asInstanceOf[js.Any], lookup.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TReturnValue]
+  ): TReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("match")((scala.List(value.asInstanceOf[js.Any], lookup.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TReturnValue]
 }

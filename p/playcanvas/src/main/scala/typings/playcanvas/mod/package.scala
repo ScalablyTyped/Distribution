@@ -17,49 +17,59 @@ import typings.playcanvas.anon.LatitudeBands
 import typings.playcanvas.anon.RingRadius
 import typings.playcanvas.anon.TypeofScriptType
 import typings.playcanvas.mod.^
-import typings.playcanvas.playcanvasNumbers.`0`
-import typings.playcanvas.playcanvasNumbers.`1024`
-import typings.playcanvas.playcanvasNumbers.`10`
-import typings.playcanvas.playcanvasNumbers.`11`
-import typings.playcanvas.playcanvasNumbers.`128`
-import typings.playcanvas.playcanvasNumbers.`12`
-import typings.playcanvas.playcanvasNumbers.`13`
-import typings.playcanvas.playcanvasNumbers.`14`
-import typings.playcanvas.playcanvasNumbers.`15`
-import typings.playcanvas.playcanvasNumbers.`16384`
-import typings.playcanvas.playcanvasNumbers.`16`
-import typings.playcanvas.playcanvasNumbers.`17`
-import typings.playcanvas.playcanvasNumbers.`18`
-import typings.playcanvas.playcanvasNumbers.`19`
-import typings.playcanvas.playcanvasNumbers.`1`
-import typings.playcanvas.playcanvasNumbers.`2048`
-import typings.playcanvas.playcanvasNumbers.`20`
-import typings.playcanvas.playcanvasNumbers.`21`
-import typings.playcanvas.playcanvasNumbers.`22`
-import typings.playcanvas.playcanvasNumbers.`23`
-import typings.playcanvas.playcanvasNumbers.`256`
-import typings.playcanvas.playcanvasNumbers.`2`
-import typings.playcanvas.playcanvasNumbers.`32`
-import typings.playcanvas.playcanvasNumbers.`3`
-import typings.playcanvas.playcanvasNumbers.`4096`
-import typings.playcanvas.playcanvasNumbers.`4`
-import typings.playcanvas.playcanvasNumbers.`512`
-import typings.playcanvas.playcanvasNumbers.`5`
-import typings.playcanvas.playcanvasNumbers.`64`
-import typings.playcanvas.playcanvasNumbers.`65535`
-import typings.playcanvas.playcanvasNumbers.`6`
-import typings.playcanvas.playcanvasNumbers.`7`
-import typings.playcanvas.playcanvasNumbers.`8192`
-import typings.playcanvas.playcanvasNumbers.`8`
-import typings.playcanvas.playcanvasNumbers.`9`
+import typings.playcanvas.playcanvasInts.`0`
+import typings.playcanvas.playcanvasInts.`1024`
+import typings.playcanvas.playcanvasInts.`10`
+import typings.playcanvas.playcanvasInts.`11`
+import typings.playcanvas.playcanvasInts.`128`
+import typings.playcanvas.playcanvasInts.`12`
+import typings.playcanvas.playcanvasInts.`13`
+import typings.playcanvas.playcanvasInts.`14`
+import typings.playcanvas.playcanvasInts.`15`
+import typings.playcanvas.playcanvasInts.`16384`
+import typings.playcanvas.playcanvasInts.`16`
+import typings.playcanvas.playcanvasInts.`17`
+import typings.playcanvas.playcanvasInts.`18`
+import typings.playcanvas.playcanvasInts.`19`
+import typings.playcanvas.playcanvasInts.`1`
+import typings.playcanvas.playcanvasInts.`2048`
+import typings.playcanvas.playcanvasInts.`20`
+import typings.playcanvas.playcanvasInts.`21`
+import typings.playcanvas.playcanvasInts.`22`
+import typings.playcanvas.playcanvasInts.`23`
+import typings.playcanvas.playcanvasInts.`256`
+import typings.playcanvas.playcanvasInts.`2`
+import typings.playcanvas.playcanvasInts.`32`
+import typings.playcanvas.playcanvasInts.`3`
+import typings.playcanvas.playcanvasInts.`4096`
+import typings.playcanvas.playcanvasInts.`4`
+import typings.playcanvas.playcanvasInts.`512`
+import typings.playcanvas.playcanvasInts.`5`
+import typings.playcanvas.playcanvasInts.`64`
+import typings.playcanvas.playcanvasInts.`65535`
+import typings.playcanvas.playcanvasInts.`6`
+import typings.playcanvas.playcanvasInts.`7`
+import typings.playcanvas.playcanvasInts.`8192`
+import typings.playcanvas.playcanvasInts.`8`
+import typings.playcanvas.playcanvasInts.`9`
 import typings.playcanvas.playcanvasStrings.$_CURRENT_SDK_REVISION
 import typings.playcanvas.playcanvasStrings.$_CURRENT_SDK_VERSION
 import typings.playcanvas.playcanvasStrings.ATTR
 import typings.playcanvas.playcanvasStrings.TEXCOORD
 import typings.playcanvas.playcanvasStrings.`1Dot55`
 import typings.playcanvas.playcanvasStrings.`1Dot56`
+import typings.playcanvas.playcanvasStrings.`1Dot57`
+import typings.playcanvas.playcanvasStrings.`1d`
+import typings.playcanvas.playcanvasStrings.`2d-array`
+import typings.playcanvas.playcanvasStrings.`2d`
+import typings.playcanvas.playcanvasStrings.`3d`
+import typings.playcanvas.playcanvasStrings.`cube-array`
+import typings.playcanvas.playcanvasStrings.`unfilterable-float`
 import typings.playcanvas.playcanvasStrings.bitmap
+import typings.playcanvas.playcanvasStrings.cube
 import typings.playcanvas.playcanvasStrings.default
+import typings.playcanvas.playcanvasStrings.depth
+import typings.playcanvas.playcanvasStrings.float
 import typings.playcanvas.playcanvasStrings.gamepad
 import typings.playcanvas.playcanvasStrings.key
 import typings.playcanvas.playcanvasStrings.keyboard
@@ -797,6 +807,8 @@ inline def CHUNKAPI_1_51: String = ^.asInstanceOf[js.Dynamic].selectDynamic("CHU
 inline def CHUNKAPI_1_55: `1Dot55` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_55").asInstanceOf[`1Dot55`]
 
 inline def CHUNKAPI_1_56: `1Dot56` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_56").asInstanceOf[`1Dot56`]
+
+inline def CHUNKAPI_1_57: `1Dot57` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_57").asInstanceOf[`1Dot57`]
 
 /**
   * Clear the color buffer.
@@ -2714,6 +2726,12 @@ inline def RIGIDBODY_TYPE_STATIC: String = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def RIGIDBODY_WANTS_DEACTIVATION: `3` = ^.asInstanceOf[js.Dynamic].selectDynamic("RIGIDBODY_WANTS_DEACTIVATION").asInstanceOf[`3`]
 
+inline def SAMPLETYPE_DEPTH: depth = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_DEPTH").asInstanceOf[depth]
+
+inline def SAMPLETYPE_FLOAT: float = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_FLOAT").asInstanceOf[float]
+
+inline def SAMPLETYPE_UNFILTERABLE_FLOAT: `unfilterable-float` = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_UNFILTERABLE_FLOAT").asInstanceOf[`unfilterable-float`]
+
 /**
   * Scale the {@link ScreenComponent} when the application's resolution is different than the
   * ScreenComponent's referenceResolution.
@@ -3326,6 +3344,18 @@ inline def TEXHINT_LIGHTMAP: `3` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEX
 inline def TEXHINT_NONE: `0` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXHINT_NONE").asInstanceOf[`0`]
 
 inline def TEXHINT_SHADOWMAP: `1` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXHINT_SHADOWMAP").asInstanceOf[`1`]
+
+inline def TEXTUREDIMENSION_1D: `1d` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXTUREDIMENSION_1D").asInstanceOf[`1d`]
+
+inline def TEXTUREDIMENSION_2D: `2d` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXTUREDIMENSION_2D").asInstanceOf[`2d`]
+
+inline def TEXTUREDIMENSION_2D_ARRAY: `2d-array` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXTUREDIMENSION_2D_ARRAY").asInstanceOf[`2d-array`]
+
+inline def TEXTUREDIMENSION_3D: `3d` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXTUREDIMENSION_3D").asInstanceOf[`3d`]
+
+inline def TEXTUREDIMENSION_CUBE: cube = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXTUREDIMENSION_CUBE").asInstanceOf[cube]
+
+inline def TEXTUREDIMENSION_CUBE_ARRAY: `cube-array` = ^.asInstanceOf[js.Dynamic].selectDynamic("TEXTUREDIMENSION_CUBE_ARRAY").asInstanceOf[`cube-array`]
 
 /**
   * Read only. Any changes to the locked mip level's pixels will not update the texture.
@@ -4670,7 +4700,7 @@ inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ A
 inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType]), name: String, app: AppBase): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def registerScript(script: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType]), name: Unit, app: AppBase): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScript")(script.asInstanceOf[js.Any], name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def reprojectTexture(source: Texture, target: Texture, options: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def reprojectTexture(source: Texture, target: Texture, options: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((scala.List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 /**
   * This function reprojects textures between cubemap, equirectangular and octahedral formats. The
   * function can read and write textures with pixel data in RGBE, RGBM, linear and sRGB formats.
@@ -4690,7 +4720,7 @@ inline def reprojectTexture(source: Texture, target: Texture, options: Unit, arg
   * @param {Vec4} [options.rect] - Optional viewport rectangle.
   * @param {number} [options.seamPixels] - Optional number of seam pixels to render
   */
-inline def reprojectTexture(source: Texture, target: Texture, options: Distribution, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def reprojectTexture(source: Texture, target: Texture, options: Distribution, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((scala.List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 
 inline def revision: $_CURRENT_SDK_REVISION = ^.asInstanceOf[js.Dynamic].selectDynamic("revision").asInstanceOf[$_CURRENT_SDK_REVISION]
 
@@ -4763,6 +4793,8 @@ type AnimSetter = js.Function1[/* value */ js.Array[Double], Any]
 type AssetReadyCallback = js.Function1[/* asset */ Asset_, Any]
 
 type CalculateMatrixCallback = js.Function2[/* transformMatrix */ Mat4, /* view */ Double, Any]
+
+type ChangeSceneCallback = js.Function2[/* err */ String | Null, /* entity */ js.UndefOr[Entity], Any]
 
 type ConfigureAppCallback = js.Function1[/* err */ String | Null, Any]
 

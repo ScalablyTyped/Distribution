@@ -1,0 +1,33 @@
+package typings.tsToolbelt.anon
+
+import typings.tsToolbelt.iterationOfMod.IterationOf
+import typings.tsToolbelt.keyMod.Key
+import typings.tsToolbelt.recordMod.RecordRR
+import typings.tsToolbelt.recordMod.RecordRW
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait R[Path /* <: typings.tsToolbelt.listMod.List[Key] */, A] extends StObject {
+  
+  var R: RecordRR[Path, A, IterationOf[typings.tsToolbelt.tsToolbeltInts.`0`]]
+  
+  var W: RecordRW[Path, A, IterationOf[typings.tsToolbelt.tsToolbeltInts.`0`]]
+}
+object R {
+  
+  inline def apply[Path /* <: typings.tsToolbelt.listMod.List[Key] */, A](
+    R: RecordRR[Path, A, IterationOf[typings.tsToolbelt.tsToolbeltInts.`0`]],
+    W: RecordRW[Path, A, IterationOf[typings.tsToolbelt.tsToolbeltInts.`0`]]
+  ): R[Path, A] = {
+    val __obj = js.Dynamic.literal(R = R.asInstanceOf[js.Any], W = W.asInstanceOf[js.Any])
+    __obj.asInstanceOf[R[Path, A]]
+  }
+  
+  extension [Self <: R[?, ?], Path /* <: typings.tsToolbelt.listMod.List[Key] */, A](x: Self & (R[Path, A])) {
+    
+    inline def setR(value: RecordRR[Path, A, IterationOf[typings.tsToolbelt.tsToolbeltInts.`0`]]): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
+    
+    inline def setW(value: RecordRW[Path, A, IterationOf[typings.tsToolbelt.tsToolbeltInts.`0`]]): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
+  }
+}

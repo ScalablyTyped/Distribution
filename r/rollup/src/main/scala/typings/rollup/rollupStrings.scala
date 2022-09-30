@@ -339,10 +339,6 @@ object rollupStrings {
   inline def outro: outro = "outro".asInstanceOf[outro]
   
   @js.native
-  sealed trait placeholder extends StObject
-  inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
-  
-  @js.native
   sealed trait post extends StObject
   inline def post: post = "post".asInstanceOf[post]
   

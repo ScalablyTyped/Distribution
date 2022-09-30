@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait As[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends StObject {
+trait As[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] extends StObject {
   
   /**
     * Render as a different element type
@@ -26,12 +26,12 @@ trait As[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type
 }
 object As {
   
-  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](): As[T] = {
+  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](): As[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[As[T]]
   }
   
-  extension [Self <: As[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](x: Self & As[T]) {
+  extension [Self <: As[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](x: Self & As[T]) {
     
     inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

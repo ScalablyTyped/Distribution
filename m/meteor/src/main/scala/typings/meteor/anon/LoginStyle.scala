@@ -47,7 +47,7 @@ object LoginStyle {
     
     inline def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
     
-    inline def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value :_*))
+    inline def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value*))
     
     inline def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     

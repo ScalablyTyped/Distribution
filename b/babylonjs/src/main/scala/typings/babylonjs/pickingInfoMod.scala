@@ -17,7 +17,7 @@ object pickingInfoMod {
   @js.native
   open class PickingInfo () extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var _pickingUnavailable: Boolean = js.native
     
     /**

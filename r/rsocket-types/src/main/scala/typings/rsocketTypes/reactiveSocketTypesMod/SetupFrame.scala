@@ -1,7 +1,7 @@
 package typings.rsocketTypes.reactiveSocketTypesMod
 
-import typings.rsocketTypes.rsocketTypesNumbers.`0`
-import typings.rsocketTypes.rsocketTypesNumbers.`0x01`
+import typings.rsocketTypes.rsocketTypesInts.`0`
+import typings.rsocketTypes.rsocketTypesInts.`0x01`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

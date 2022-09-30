@@ -6,7 +6,7 @@ import typings.antDesignPro.antDesignProStrings.bottomRight
 import typings.antDesignPro.antDesignProStrings.topCenter
 import typings.antDesignPro.antDesignProStrings.topLeft
 import typings.antDesignPro.antDesignProStrings.topRight
-import typings.antd.dropdownDropdownMod.DropDownProps
+import typings.antd.dropdownDropdownMod.DropdownProps
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -17,14 +17,13 @@ object headerDropdownMod {
   
   @JSImport("ant-design-pro/lib/HeaderDropdown", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HeaderDropdownProps, js.Any, js.Any]
+  open class default () extends Component[HeaderDropdownProps, Any, Any]
   
-  type HeaderDropdown = Component[HeaderDropdownProps, js.Any, js.Any]
+  type HeaderDropdown = Component[HeaderDropdownProps, Any, Any]
   
   trait HeaderDropdownProps
     extends StObject
-       with DropDownProps {
+       with DropdownProps {
     
     @JSName("overlay")
     var overlay_HeaderDropdownProps: ReactNode | OverlayFunc

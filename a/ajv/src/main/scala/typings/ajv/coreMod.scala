@@ -127,13 +127,13 @@ object coreMod {
     def this(s: String) = this()
   }
   
-  inline def _underscore(strs: TemplateStringsArray, args: CodeArg*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("_")(List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
+  inline def _underscore(strs: TemplateStringsArray, args: CodeArg*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("_")(scala.List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
   
   @JSImport("ajv/dist/core", "nil")
   @js.native
   val nil: _Code = js.native
   
-  inline def str(strs: TemplateStringsArray, args: (CodeArg | js.Array[String])*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
+  inline def str(strs: TemplateStringsArray, args: (CodeArg | js.Array[String])*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(scala.List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
   
   inline def stringify(x: Any): Code = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(x.asInstanceOf[js.Any]).asInstanceOf[Code]
   
@@ -407,8 +407,8 @@ object coreMod {
     
     def addVocabulary(definitions: Vocabulary): Ajv = js.native
     
-    def compile[T](schema: AnySchema): AnyValidateFunction[T] = js.native
-    def compile[T](schema: AnySchema, _meta: Boolean): AnyValidateFunction[T] = js.native
+    def compile[T](schema: JSONSchemaType[T] | Schema): ValidateFunction[T] = js.native
+    def compile[T](schema: JSONSchemaType[T] | Schema, _meta: Boolean): ValidateFunction[T] = js.native
     def compile[T](schema: AsyncSchema): AsyncValidateFunction[T] = js.native
     def compile[T](schema: AsyncSchema, _meta: Boolean): AsyncValidateFunction[T] = js.native
     def compile[T](schema: JTDSchemaType[T, Record[String, scala.Nothing]]): ValidateFunction[T] = js.native
@@ -426,13 +426,13 @@ object coreMod {
     def compileAsync[T](schema: JTDSchemaType[T, Record[String, scala.Nothing]], _meta: Boolean): js.Promise[ValidateFunction[T]] = js.native
     
     @JSName("compile")
-    def compile_N_NothingT_SomeJTDSchemaType_ValidateFunction[N /* <: scala.Nothing */, T /* <: SomeJTDSchemaType */](schema: T): ValidateFunction[JTDDataType[T]] = js.native
+    def compile_NT[N /* <: scala.Nothing */, T /* <: SomeJTDSchemaType */](schema: T): ValidateFunction[JTDDataType[T]] = js.native
     @JSName("compile")
-    def compile_N_NothingT_SomeJTDSchemaType_ValidateFunction[N /* <: scala.Nothing */, T /* <: SomeJTDSchemaType */](schema: T, _meta: Boolean): ValidateFunction[JTDDataType[T]] = js.native
+    def compile_NT[N /* <: scala.Nothing */, T /* <: SomeJTDSchemaType */](schema: T, _meta: Boolean): ValidateFunction[JTDDataType[T]] = js.native
     @JSName("compile")
-    def compile_T_ValidateFunction[T](schema: JSONSchemaType[T] | Schema): ValidateFunction[T] = js.native
+    def compile_T_AnyValidateFunction[T](schema: AnySchema): AnyValidateFunction[T] = js.native
     @JSName("compile")
-    def compile_T_ValidateFunction[T](schema: JSONSchemaType[T] | Schema, _meta: Boolean): ValidateFunction[T] = js.native
+    def compile_T_AnyValidateFunction[T](schema: AnySchema, _meta: Boolean): AnyValidateFunction[T] = js.native
     
     def defaultMeta(): js.UndefOr[String | AnySchemaObject] = js.native
     
@@ -492,7 +492,7 @@ object coreMod {
     @JSName("validate")
     def validate_Boolean(schema: Schema, data: Any): Boolean = js.native
     @JSName("validate")
-    def validate_N_NothingT_SomeJTDSchemaType_Boolean[N /* <: scala.Nothing */, T /* <: SomeJTDSchemaType */](schema: T, data: Any): /* is ajv.ajv/dist/types/jtd-schema.JTDDataType<T> */ Boolean = js.native
+    def validate_NT_Boolean[N /* <: scala.Nothing */, T /* <: SomeJTDSchemaType */](schema: T, data: Any): /* is ajv.ajv/dist/types/jtd-schema.JTDDataType<T> */ Boolean = js.native
     @JSName("validate")
     def validate_T_Boolean[T](schema: AnySchema | JSONSchemaType[T] | Schema, data: Any): /* is T */ Boolean = js.native
     @JSName("validate")

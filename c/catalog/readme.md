@@ -1,7 +1,7 @@
 
 # Scala.js typings for catalog
 
-Typings are for version 3.6.0
+Typings are for version 3.6.2
 
 ## Library description:
 Create living style guides using Markdown or React
@@ -10,10 +10,10 @@ Create living style guides using Markdown or React
 | ------------------ | :-------------: |
 | Full name          | catalog |
 | Keywords           | styleguide, style guide, docs, documentation, react, markdown |
-| # releases         | 18 |
-| # dependents       | 7 |
-| # downloads        | 311459 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4006.3333333333335 |
+| # stars            | 1543.0 |
 
 ## Links
 - [Homepage](https://www.catalog.style/)

@@ -1,7 +1,7 @@
 package typings.trezorConnect.nemMod
 
 import typings.trezorConnect.anon.Mode
-import typings.trezorConnect.trezorConnectNumbers.`0x0801`
+import typings.trezorConnect.trezorConnectInts.`0x0801`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

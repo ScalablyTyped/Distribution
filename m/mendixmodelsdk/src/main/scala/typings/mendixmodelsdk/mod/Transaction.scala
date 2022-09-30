@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "Transaction")
 @js.native
-class Transaction protected ()
+open class Transaction protected ()
   extends typings.mendixmodelsdk.transactionManagerMod.Transaction {
   def this(transactionType: TransactionType, transactionManager: TransactionManager) = this()
 }

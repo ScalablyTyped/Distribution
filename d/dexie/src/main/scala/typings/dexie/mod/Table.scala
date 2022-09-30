@@ -8,29 +8,29 @@ import typings.dexie.dexieStrings.creating
 import typings.dexie.dexieStrings.deleting
 import typings.dexie.dexieStrings.reading
 import typings.dexie.dexieStrings.updating
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Table[T, TKey] extends js.Object {
+trait Table[T, TKey] extends StObject {
   
   def add(item: T): PromiseExtended[TKey] = js.native
   def add(item: T, key: TKey): PromiseExtended[TKey] = js.native
   
   def bulkAdd(items: js.Array[T]): PromiseExtended[TKey] = js.native
-  def bulkAdd(items: js.Array[T], keys: js.UndefOr[scala.Nothing], options: AllKeysBoolean): PromiseExtended[TKey] = js.native
+  def bulkAdd(items: js.Array[T], keys: Unit, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
   def bulkAdd(items: js.Array[T], keys: IndexableTypeArrayReadonly): PromiseExtended[TKey] = js.native
   def bulkAdd(items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
   def bulkAdd[B /* <: Boolean */](items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeys[B]): PromiseExtended[TKey | js.Array[TKey]] = js.native
   def bulkAdd[B /* <: Boolean */](items: js.Array[T], options: AllKeys[B]): PromiseExtended[TKey | js.Array[TKey]] = js.native
   
-  def bulkDelete(keys: IndexableTypeArrayReadonly): PromiseExtended[Unit] = js.native
+  def bulkDelete(keys: js.Array[TKey]): PromiseExtended[Unit] = js.native
   
   def bulkGet(keys: js.Array[TKey]): PromiseExtended[js.Array[js.UndefOr[T]]] = js.native
   
   def bulkPut(items: js.Array[T]): PromiseExtended[TKey] = js.native
-  def bulkPut(items: js.Array[T], keys: js.UndefOr[scala.Nothing], options: AllKeysBoolean): PromiseExtended[TKey] = js.native
+  def bulkPut(items: js.Array[T], keys: Unit, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
   def bulkPut(items: js.Array[T], keys: IndexableTypeArrayReadonly): PromiseExtended[TKey] = js.native
   def bulkPut(items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
   def bulkPut[B /* <: Boolean */](items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeys[B]): PromiseExtended[TKey | js.Array[TKey]] = js.native
@@ -47,13 +47,13 @@ trait Table[T, TKey] extends js.Object {
   
   def delete(key: TKey): PromiseExtended[Unit] = js.native
   
-  def each(callback: js.Function2[/* obj */ T, /* cursor */ PrimaryKey[TKey], _]): PromiseExtended[Unit] = js.native
+  def each(callback: js.Function2[/* obj */ T, /* cursor */ PrimaryKey[TKey], Any]): PromiseExtended[Unit] = js.native
   
   def filter(fn: js.Function1[/* obj */ T, Boolean]): Collection[T, TKey] = js.native
   
-  def get(equalityCriterias: StringDictionary[js.Any]): PromiseExtended[js.UndefOr[T]] = js.native
+  def get(equalityCriterias: StringDictionary[Any]): PromiseExtended[js.UndefOr[T]] = js.native
   def get(key: TKey): PromiseExtended[js.UndefOr[T]] = js.native
-  def get[R](equalityCriterias: StringDictionary[js.Any], thenShortcut: ThenShortcut[js.UndefOr[T], R]): PromiseExtended[R] = js.native
+  def get[R](equalityCriterias: StringDictionary[Any], thenShortcut: ThenShortcut[js.UndefOr[T], R]): PromiseExtended[R] = js.native
   def get[R](key: TKey, thenShortcut: ThenShortcut[js.UndefOr[T], R]): PromiseExtended[R] = js.native
   
   def hook(eventName: String): DexieEvent = js.native
@@ -67,7 +67,7 @@ trait Table[T, TKey] extends js.Object {
       /* primKey */ TKey, 
       /* obj */ T, 
       /* transaction */ Transaction, 
-      _
+      Any
     ]
   ): Unit = js.native
   @JSName("hook")
@@ -78,11 +78,11 @@ trait Table[T, TKey] extends js.Object {
       /* primKey */ TKey, 
       /* obj */ T, 
       /* transaction */ Transaction, 
-      _
+      Any
     ]
   ): Unit = js.native
   @JSName("hook")
-  def hook_reading(eventName: reading, subscriber: js.Function1[/* obj */ T, T | _]): Unit = js.native
+  def hook_reading(eventName: reading, subscriber: js.Function1[/* obj */ T, T | Any]): Unit = js.native
   @JSName("hook")
   def hook_updating(
     eventName: updating,
@@ -92,7 +92,7 @@ trait Table[T, TKey] extends js.Object {
       /* primKey */ TKey, 
       /* obj */ T, 
       /* transaction */ Transaction, 
-      _
+      Any
     ]
   ): Unit = js.native
   
@@ -119,9 +119,9 @@ trait Table[T, TKey] extends js.Object {
   
   def toCollection(): Collection[T, TKey] = js.native
   
-  def update(key: T | TKey, changes: StringDictionary[js.Any]): PromiseExtended[Double] = js.native
+  def update(key: T | TKey, changes: StringDictionary[Any]): PromiseExtended[Double] = js.native
   
-  def where(equalityCriterias: StringDictionary[js.Any]): Collection[T, TKey] = js.native
+  def where(equalityCriterias: StringDictionary[Any]): Collection[T, TKey] = js.native
   def where(index: String): WhereClause[T, TKey] = js.native
   def where(index: js.Array[String]): WhereClause[T, TKey] = js.native
 }

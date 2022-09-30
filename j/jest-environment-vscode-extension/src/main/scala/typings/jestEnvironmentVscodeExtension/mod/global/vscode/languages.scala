@@ -85,7 +85,7 @@ object languages {
     selector: DocumentSelector,
     provider: CompletionItemProvider[typings.vscode.mod.CompletionItem],
     triggerCharacters: String*
-  ): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCompletionItemProvider")((List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).`++`(triggerCharacters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscode.mod.Disposable]
+  ): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCompletionItemProvider")((scala.List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).`++`(triggerCharacters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscode.mod.Disposable]
   
   inline def registerDeclarationProvider(selector: DocumentSelector, provider: DeclarationProvider): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDeclarationProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[typings.vscode.mod.Disposable]
   
@@ -141,7 +141,7 @@ object languages {
     provider: OnTypeFormattingEditProvider,
     firstTriggerCharacter: String,
     moreTriggerCharacter: String*
-  ): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOnTypeFormattingEditProvider")((List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], firstTriggerCharacter.asInstanceOf[js.Any])).`++`(moreTriggerCharacter.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscode.mod.Disposable]
+  ): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOnTypeFormattingEditProvider")((scala.List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], firstTriggerCharacter.asInstanceOf[js.Any])).`++`(moreTriggerCharacter.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscode.mod.Disposable]
   
   inline def registerReferenceProvider(selector: DocumentSelector, provider: ReferenceProvider): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerReferenceProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[typings.vscode.mod.Disposable]
   
@@ -154,7 +154,7 @@ object languages {
     provider: SignatureHelpProvider,
     metadata: SignatureHelpProviderMetadata
   ): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.vscode.mod.Disposable]
-  inline def registerSignatureHelpProvider(selector: DocumentSelector, provider: SignatureHelpProvider, triggerCharacters: String*): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")((List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).`++`(triggerCharacters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscode.mod.Disposable]
+  inline def registerSignatureHelpProvider(selector: DocumentSelector, provider: SignatureHelpProvider, triggerCharacters: String*): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSignatureHelpProvider")((scala.List(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).`++`(triggerCharacters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscode.mod.Disposable]
   
   inline def registerTypeDefinitionProvider(selector: DocumentSelector, provider: TypeDefinitionProvider): typings.vscode.mod.Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTypeDefinitionProvider")(selector.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[typings.vscode.mod.Disposable]
   

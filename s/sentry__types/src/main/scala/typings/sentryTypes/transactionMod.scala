@@ -3,7 +3,6 @@ package typings.sentryTypes
 import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.anon.Data
 import typings.sentryTypes.anon.Description
-import typings.sentryTypes.anon.Method
 import typings.sentryTypes.anon.PartialDynamicSamplingCon
 import typings.sentryTypes.anon.PartialTransactionMetadat
 import typings.sentryTypes.anon.PickSpanContextExcludekey
@@ -11,6 +10,7 @@ import typings.sentryTypes.measurementMod.MeasurementUnit
 import typings.sentryTypes.miscMod.ExtractedNodeRequestData
 import typings.sentryTypes.miscMod.Primitive
 import typings.sentryTypes.miscMod.WorkerLocation
+import typings.sentryTypes.polymorphicsMod.PolymorphicRequest
 import typings.sentryTypes.spanMod.Span
 import typings.sentryTypes.spanMod.SpanContext
 import org.scalablytyped.runtime.StObject
@@ -311,16 +311,21 @@ object transactionMod {
     /** The total number of propagations that happened */
     var propagations: Double
     
+    /** For transactions tracing server-side request handling, the request being tracked. */
+    var request: js.UndefOr[PolymorphicRequest] = js.undefined
+    
     /** For transactions tracing server-side request handling, the path of the request being tracked. */
+    /** TODO: If we rm -rf `instrumentServer`, this can go, too */
     var requestPath: js.UndefOr[String] = js.undefined
+    
+    /** The sample rate used when sampling this transaction */
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
     /** Information on how a transaction name was generated. */
     var source: TransactionSource
     
     /** Metadata for the transaction's spans, keyed by spanId */
     var spanMetadata: StringDictionary[StringDictionary[Any]]
-    
-    var transactionSampling: js.UndefOr[Method] = js.undefined
   }
   object TransactionMetadata {
     
@@ -346,17 +351,21 @@ object transactionMod {
       
       inline def setPropagations(value: Double): Self = StObject.set(x, "propagations", value.asInstanceOf[js.Any])
       
+      inline def setRequest(value: PolymorphicRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      
       inline def setRequestPath(value: String): Self = StObject.set(x, "requestPath", value.asInstanceOf[js.Any])
       
       inline def setRequestPathUndefined: Self = StObject.set(x, "requestPath", js.undefined)
       
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      
       inline def setSource(value: TransactionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSpanMetadata(value: StringDictionary[StringDictionary[Any]]): Self = StObject.set(x, "spanMetadata", value.asInstanceOf[js.Any])
-      
-      inline def setTransactionSampling(value: Method): Self = StObject.set(x, "transactionSampling", value.asInstanceOf[js.Any])
-      
-      inline def setTransactionSamplingUndefined: Self = StObject.set(x, "transactionSampling", js.undefined)
     }
   }
   
@@ -389,24 +398,6 @@ object transactionMod {
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.sentryTypes.sentryTypesStrings.explicitly_set
-    - typings.sentryTypes.sentryTypesStrings.client_sampler
-    - typings.sentryTypes.sentryTypesStrings.client_rate
-    - typings.sentryTypes.sentryTypesStrings.inheritance
-  */
-  trait TransactionSamplingMethod extends StObject
-  object TransactionSamplingMethod {
-    
-    inline def client_rate: typings.sentryTypes.sentryTypesStrings.client_rate = "client_rate".asInstanceOf[typings.sentryTypes.sentryTypesStrings.client_rate]
-    
-    inline def client_sampler: typings.sentryTypes.sentryTypesStrings.client_sampler = "client_sampler".asInstanceOf[typings.sentryTypes.sentryTypesStrings.client_sampler]
-    
-    inline def explicitly_set: typings.sentryTypes.sentryTypesStrings.explicitly_set = "explicitly_set".asInstanceOf[typings.sentryTypes.sentryTypesStrings.explicitly_set]
-    
-    inline def inheritance: typings.sentryTypes.sentryTypesStrings.inheritance = "inheritance".asInstanceOf[typings.sentryTypes.sentryTypesStrings.inheritance]
   }
   
   /* Rewritten from type alias, can be one of: 

@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.srcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`2`
+import typings.angularCompilerCli.angularCompilerCliInts.`2`
 import typings.typescript.mod.ImportClause
 import typings.typescript.mod.ImportSpecifier
 import typings.typescript.mod.TypeNode

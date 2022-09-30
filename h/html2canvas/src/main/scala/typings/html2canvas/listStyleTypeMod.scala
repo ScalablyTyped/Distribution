@@ -1,58 +1,58 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`-1`
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`10`
-import typings.html2canvas.html2canvasNumbers.`11`
-import typings.html2canvas.html2canvasNumbers.`12`
-import typings.html2canvas.html2canvasNumbers.`13`
-import typings.html2canvas.html2canvasNumbers.`14`
-import typings.html2canvas.html2canvasNumbers.`15`
-import typings.html2canvas.html2canvasNumbers.`16`
-import typings.html2canvas.html2canvasNumbers.`17`
-import typings.html2canvas.html2canvasNumbers.`18`
-import typings.html2canvas.html2canvasNumbers.`19`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`20`
-import typings.html2canvas.html2canvasNumbers.`21`
-import typings.html2canvas.html2canvasNumbers.`22`
-import typings.html2canvas.html2canvasNumbers.`23`
-import typings.html2canvas.html2canvasNumbers.`24`
-import typings.html2canvas.html2canvasNumbers.`25`
-import typings.html2canvas.html2canvasNumbers.`26`
-import typings.html2canvas.html2canvasNumbers.`27`
-import typings.html2canvas.html2canvasNumbers.`28`
-import typings.html2canvas.html2canvasNumbers.`29`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`30`
-import typings.html2canvas.html2canvasNumbers.`31`
-import typings.html2canvas.html2canvasNumbers.`32`
-import typings.html2canvas.html2canvasNumbers.`33`
-import typings.html2canvas.html2canvasNumbers.`34`
-import typings.html2canvas.html2canvasNumbers.`35`
-import typings.html2canvas.html2canvasNumbers.`36`
-import typings.html2canvas.html2canvasNumbers.`37`
-import typings.html2canvas.html2canvasNumbers.`38`
-import typings.html2canvas.html2canvasNumbers.`39`
-import typings.html2canvas.html2canvasNumbers.`3`
-import typings.html2canvas.html2canvasNumbers.`40`
-import typings.html2canvas.html2canvasNumbers.`41`
-import typings.html2canvas.html2canvasNumbers.`42`
-import typings.html2canvas.html2canvasNumbers.`43`
-import typings.html2canvas.html2canvasNumbers.`44`
-import typings.html2canvas.html2canvasNumbers.`45`
-import typings.html2canvas.html2canvasNumbers.`46`
-import typings.html2canvas.html2canvasNumbers.`47`
-import typings.html2canvas.html2canvasNumbers.`48`
-import typings.html2canvas.html2canvasNumbers.`49`
-import typings.html2canvas.html2canvasNumbers.`4`
-import typings.html2canvas.html2canvasNumbers.`50`
-import typings.html2canvas.html2canvasNumbers.`51`
-import typings.html2canvas.html2canvasNumbers.`5`
-import typings.html2canvas.html2canvasNumbers.`6`
-import typings.html2canvas.html2canvasNumbers.`7`
-import typings.html2canvas.html2canvasNumbers.`8`
-import typings.html2canvas.html2canvasNumbers.`9`
+import typings.html2canvas.html2canvasInts.`-1`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`10`
+import typings.html2canvas.html2canvasInts.`11`
+import typings.html2canvas.html2canvasInts.`12`
+import typings.html2canvas.html2canvasInts.`13`
+import typings.html2canvas.html2canvasInts.`14`
+import typings.html2canvas.html2canvasInts.`15`
+import typings.html2canvas.html2canvasInts.`16`
+import typings.html2canvas.html2canvasInts.`17`
+import typings.html2canvas.html2canvasInts.`18`
+import typings.html2canvas.html2canvasInts.`19`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`20`
+import typings.html2canvas.html2canvasInts.`21`
+import typings.html2canvas.html2canvasInts.`22`
+import typings.html2canvas.html2canvasInts.`23`
+import typings.html2canvas.html2canvasInts.`24`
+import typings.html2canvas.html2canvasInts.`25`
+import typings.html2canvas.html2canvasInts.`26`
+import typings.html2canvas.html2canvasInts.`27`
+import typings.html2canvas.html2canvasInts.`28`
+import typings.html2canvas.html2canvasInts.`29`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`30`
+import typings.html2canvas.html2canvasInts.`31`
+import typings.html2canvas.html2canvasInts.`32`
+import typings.html2canvas.html2canvasInts.`33`
+import typings.html2canvas.html2canvasInts.`34`
+import typings.html2canvas.html2canvasInts.`35`
+import typings.html2canvas.html2canvasInts.`36`
+import typings.html2canvas.html2canvasInts.`37`
+import typings.html2canvas.html2canvasInts.`38`
+import typings.html2canvas.html2canvasInts.`39`
+import typings.html2canvas.html2canvasInts.`3`
+import typings.html2canvas.html2canvasInts.`40`
+import typings.html2canvas.html2canvasInts.`41`
+import typings.html2canvas.html2canvasInts.`42`
+import typings.html2canvas.html2canvasInts.`43`
+import typings.html2canvas.html2canvasInts.`44`
+import typings.html2canvas.html2canvasInts.`45`
+import typings.html2canvas.html2canvasInts.`46`
+import typings.html2canvas.html2canvasInts.`47`
+import typings.html2canvas.html2canvasInts.`48`
+import typings.html2canvas.html2canvasInts.`49`
+import typings.html2canvas.html2canvasInts.`4`
+import typings.html2canvas.html2canvasInts.`50`
+import typings.html2canvas.html2canvasInts.`51`
+import typings.html2canvas.html2canvasInts.`5`
+import typings.html2canvas.html2canvasInts.`6`
+import typings.html2canvas.html2canvasInts.`7`
+import typings.html2canvas.html2canvasInts.`8`
+import typings.html2canvas.html2canvasInts.`9`
 import typings.html2canvas.ipropertydescriptorMod.IPropertyIdentValueDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -65,59 +65,59 @@ object listStyleTypeMod {
   val listStyleType: IPropertyIdentValueDescriptor[LIST_STYLE_TYPE] = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`-1`
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`3`
-    - typings.html2canvas.html2canvasNumbers.`4`
-    - typings.html2canvas.html2canvasNumbers.`5`
-    - typings.html2canvas.html2canvasNumbers.`6`
-    - typings.html2canvas.html2canvasNumbers.`7`
-    - typings.html2canvas.html2canvasNumbers.`8`
-    - typings.html2canvas.html2canvasNumbers.`9`
-    - typings.html2canvas.html2canvasNumbers.`10`
-    - typings.html2canvas.html2canvasNumbers.`11`
-    - typings.html2canvas.html2canvasNumbers.`12`
-    - typings.html2canvas.html2canvasNumbers.`13`
-    - typings.html2canvas.html2canvasNumbers.`14`
-    - typings.html2canvas.html2canvasNumbers.`15`
-    - typings.html2canvas.html2canvasNumbers.`16`
-    - typings.html2canvas.html2canvasNumbers.`17`
-    - typings.html2canvas.html2canvasNumbers.`18`
-    - typings.html2canvas.html2canvasNumbers.`19`
-    - typings.html2canvas.html2canvasNumbers.`20`
-    - typings.html2canvas.html2canvasNumbers.`21`
-    - typings.html2canvas.html2canvasNumbers.`22`
-    - typings.html2canvas.html2canvasNumbers.`23`
-    - typings.html2canvas.html2canvasNumbers.`24`
-    - typings.html2canvas.html2canvasNumbers.`25`
-    - typings.html2canvas.html2canvasNumbers.`26`
-    - typings.html2canvas.html2canvasNumbers.`27`
-    - typings.html2canvas.html2canvasNumbers.`28`
-    - typings.html2canvas.html2canvasNumbers.`29`
-    - typings.html2canvas.html2canvasNumbers.`30`
-    - typings.html2canvas.html2canvasNumbers.`31`
-    - typings.html2canvas.html2canvasNumbers.`32`
-    - typings.html2canvas.html2canvasNumbers.`33`
-    - typings.html2canvas.html2canvasNumbers.`34`
-    - typings.html2canvas.html2canvasNumbers.`35`
-    - typings.html2canvas.html2canvasNumbers.`36`
-    - typings.html2canvas.html2canvasNumbers.`37`
-    - typings.html2canvas.html2canvasNumbers.`38`
-    - typings.html2canvas.html2canvasNumbers.`39`
-    - typings.html2canvas.html2canvasNumbers.`40`
-    - typings.html2canvas.html2canvasNumbers.`41`
-    - typings.html2canvas.html2canvasNumbers.`42`
-    - typings.html2canvas.html2canvasNumbers.`43`
-    - typings.html2canvas.html2canvasNumbers.`44`
-    - typings.html2canvas.html2canvasNumbers.`45`
-    - typings.html2canvas.html2canvasNumbers.`46`
-    - typings.html2canvas.html2canvasNumbers.`47`
-    - typings.html2canvas.html2canvasNumbers.`48`
-    - typings.html2canvas.html2canvasNumbers.`49`
-    - typings.html2canvas.html2canvasNumbers.`50`
-    - typings.html2canvas.html2canvasNumbers.`51`
+    - typings.html2canvas.html2canvasInts.`-1`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`3`
+    - typings.html2canvas.html2canvasInts.`4`
+    - typings.html2canvas.html2canvasInts.`5`
+    - typings.html2canvas.html2canvasInts.`6`
+    - typings.html2canvas.html2canvasInts.`7`
+    - typings.html2canvas.html2canvasInts.`8`
+    - typings.html2canvas.html2canvasInts.`9`
+    - typings.html2canvas.html2canvasInts.`10`
+    - typings.html2canvas.html2canvasInts.`11`
+    - typings.html2canvas.html2canvasInts.`12`
+    - typings.html2canvas.html2canvasInts.`13`
+    - typings.html2canvas.html2canvasInts.`14`
+    - typings.html2canvas.html2canvasInts.`15`
+    - typings.html2canvas.html2canvasInts.`16`
+    - typings.html2canvas.html2canvasInts.`17`
+    - typings.html2canvas.html2canvasInts.`18`
+    - typings.html2canvas.html2canvasInts.`19`
+    - typings.html2canvas.html2canvasInts.`20`
+    - typings.html2canvas.html2canvasInts.`21`
+    - typings.html2canvas.html2canvasInts.`22`
+    - typings.html2canvas.html2canvasInts.`23`
+    - typings.html2canvas.html2canvasInts.`24`
+    - typings.html2canvas.html2canvasInts.`25`
+    - typings.html2canvas.html2canvasInts.`26`
+    - typings.html2canvas.html2canvasInts.`27`
+    - typings.html2canvas.html2canvasInts.`28`
+    - typings.html2canvas.html2canvasInts.`29`
+    - typings.html2canvas.html2canvasInts.`30`
+    - typings.html2canvas.html2canvasInts.`31`
+    - typings.html2canvas.html2canvasInts.`32`
+    - typings.html2canvas.html2canvasInts.`33`
+    - typings.html2canvas.html2canvasInts.`34`
+    - typings.html2canvas.html2canvasInts.`35`
+    - typings.html2canvas.html2canvasInts.`36`
+    - typings.html2canvas.html2canvasInts.`37`
+    - typings.html2canvas.html2canvasInts.`38`
+    - typings.html2canvas.html2canvasInts.`39`
+    - typings.html2canvas.html2canvasInts.`40`
+    - typings.html2canvas.html2canvasInts.`41`
+    - typings.html2canvas.html2canvasInts.`42`
+    - typings.html2canvas.html2canvasInts.`43`
+    - typings.html2canvas.html2canvasInts.`44`
+    - typings.html2canvas.html2canvasInts.`45`
+    - typings.html2canvas.html2canvasInts.`46`
+    - typings.html2canvas.html2canvasInts.`47`
+    - typings.html2canvas.html2canvasInts.`48`
+    - typings.html2canvas.html2canvasInts.`49`
+    - typings.html2canvas.html2canvasInts.`50`
+    - typings.html2canvas.html2canvasInts.`51`
   */
   trait LIST_STYLE_TYPE extends StObject
   object LIST_STYLE_TYPE {

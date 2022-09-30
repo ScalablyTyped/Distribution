@@ -1,7 +1,7 @@
 
 # Scala.js typings for gravatar-url
 
-Typings are for version 3.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Get the URL to a Gravatar image from an identifier, such as an email
@@ -10,10 +10,10 @@ Get the URL to a Gravatar image from an identifier, such as an email
 | ------------------ | :-------------: |
 | Full name          | gravatar-url |
 | Keywords           | gravatar, avatar, profile, image, picture, photo, hash, email, identifier |
-| # releases         | 4 |
-| # dependents       | 15 |
-| # downloads        | 189352 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 37455.333333333336 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/gravatar-url#readme)

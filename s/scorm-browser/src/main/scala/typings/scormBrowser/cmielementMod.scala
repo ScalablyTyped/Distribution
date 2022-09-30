@@ -18,26 +18,9 @@ import typings.scormBrowser.scormBrowserStrings.cmiDotcoreDotsession_time
 import typings.scormBrowser.scormBrowserStrings.cmiDotcoreDotstudent_id
 import typings.scormBrowser.scormBrowserStrings.cmiDotcoreDotstudent_name
 import typings.scormBrowser.scormBrowserStrings.cmiDotcoreDottotal_time
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotcorrect_responsesDot_count
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotid
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotlatency
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotobjectivesDot_count
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotresult
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotstudent_response
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottime
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottype
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotweighting
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotcorrect_responsesDotDollarLeftcurlybracketnRightcurlybracketDotpattern
-import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotobjectivesDotDollarLeftcurlybracketnRightcurlybracketDotid
 import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot_children
 import typings.scormBrowser.scormBrowserStrings.cmiDotinteractionsDot_count
 import typings.scormBrowser.scormBrowserStrings.cmiDotlaunch_data
-import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotid
-import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDot_children
-import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmax
-import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmin
-import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotraw
-import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotstatus
 import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot_children
 import typings.scormBrowser.scormBrowserStrings.cmiDotobjectivesDot_count
 import typings.scormBrowser.scormBrowserStrings.cmiDotstudent_dataDot_children
@@ -94,27 +77,27 @@ object cmielementMod {
   
   type CMIElementInteractionsCount = cmiDotinteractionsDot_count
   
-  type CMIElementInteractionsNCorrectResponsesCount = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotcorrect_responsesDot_count
+  type CMIElementInteractionsNCorrectResponsesCount = /* template literal string: cmi.interactions.${n}.correct_responses._count */ String
   
-  type CMIElementInteractionsNCorrectResponsesNPattern = cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotcorrect_responsesDotDollarLeftcurlybracketnRightcurlybracketDotpattern
+  type CMIElementInteractionsNCorrectResponsesNPattern = /* template literal string: cmi.interactions.${n}.correct_responses.${n}.pattern */ String
   
-  type CMIElementInteractionsNID = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotid
+  type CMIElementInteractionsNID = /* template literal string: cmi.interactions.${n}.id */ String
   
-  type CMIElementInteractionsNLatency = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotlatency
+  type CMIElementInteractionsNLatency = /* template literal string: cmi.interactions.${n}.latency */ String
   
-  type CMIElementInteractionsNObjectivesCount = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotobjectivesDot_count
+  type CMIElementInteractionsNObjectivesCount = /* template literal string: cmi.interactions.${n}.objectives._count */ String
   
-  type CMIElementInteractionsNObjectivesID = cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotobjectivesDotDollarLeftcurlybracketnRightcurlybracketDotid
+  type CMIElementInteractionsNObjectivesID = /* template literal string: cmi.interactions.${n}.objectives.${n}.id */ String
   
-  type CMIElementInteractionsNResult = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotresult
+  type CMIElementInteractionsNResult = /* template literal string: cmi.interactions.${n}.result */ String
   
-  type CMIElementInteractionsNStudentResponse = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotstudent_response
+  type CMIElementInteractionsNStudentResponse = /* template literal string: cmi.interactions.${n}.student_response */ String
   
-  type CMIElementInteractionsNTime = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottime
+  type CMIElementInteractionsNTime = /* template literal string: cmi.interactions.${n}.time */ String
   
-  type CMIElementInteractionsNType = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottype
+  type CMIElementInteractionsNType = /* template literal string: cmi.interactions.${n}.type */ String
   
-  type CMIElementInteractionsNWeighting = cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotweighting
+  type CMIElementInteractionsNWeighting = /* template literal string: cmi.interactions.${n}.weighting */ String
   
   type CMIElementLaunchData = cmiDotlaunch_data
   
@@ -122,17 +105,17 @@ object cmielementMod {
   
   type CMIElementObjectivesCount = cmiDotobjectivesDot_count
   
-  type CMIElementObjectivesNID = cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotid
+  type CMIElementObjectivesNID = /* template literal string: cmi.objectives.${n}.id */ String
   
-  type CMIElementObjectivesNScoreChildren = cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDot_children
+  type CMIElementObjectivesNScoreChildren = /* template literal string: cmi.objectives.${n}.score._children */ String
   
-  type CMIElementObjectivesNScoreMax = cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmax
+  type CMIElementObjectivesNScoreMax = /* template literal string: cmi.objectives.${n}.score.max */ String
   
-  type CMIElementObjectivesNScoreMin = cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmin
+  type CMIElementObjectivesNScoreMin = /* template literal string: cmi.objectives.${n}.score.min */ String
   
-  type CMIElementObjectivesNScoreRaw = cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotraw
+  type CMIElementObjectivesNScoreRaw = /* template literal string: cmi.objectives.${n}.score.raw */ String
   
-  type CMIElementObjectivesNStatus = cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotstatus
+  type CMIElementObjectivesNStatus = /* template literal string: cmi.objectives.${n}.status */ String
   
   type CMIElementStudentDataChildren = cmiDotstudent_dataDot_children
   

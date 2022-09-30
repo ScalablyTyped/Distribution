@@ -10,7 +10,7 @@ sealed trait ChangeTrackingMode extends StObject
   * ChangeTracking mode.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 @JSGlobal("Word.ChangeTrackingMode")
 @js.native
@@ -19,7 +19,7 @@ object ChangeTrackingMode extends StObject {
   /**
     * ChangeTracking is turned off.
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   @js.native
   sealed trait off
@@ -29,7 +29,7 @@ object ChangeTrackingMode extends StObject {
   /**
     * ChangeTracking is turned on for everyone.
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   @js.native
   sealed trait trackAll
@@ -39,7 +39,7 @@ object ChangeTrackingMode extends StObject {
   /**
     * Tracking is turned on for my changes only.
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   @js.native
   sealed trait trackMineOnly

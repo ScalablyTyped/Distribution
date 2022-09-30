@@ -1,6 +1,8 @@
 package typings.ow
 
+import typings.ow.basePredicateMod.BasePredicate
 import typings.ow.matchShapeMod.Shape
+import typings.ow.matchShapeMod.TypeOfShape
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
 import org.scalablytyped.runtime.StObject
@@ -9,13 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object objectMod {
   
-  @JSImport("ow/dist/source/predicates/object", "ObjectPredicate")
+  @JSImport("ow/dist/predicates/object", "ObjectPredicate")
   @js.native
   /**
     @hidden
     */
-  class ObjectPredicate ()
-    extends Predicate[js.Object] {
+  open class ObjectPredicate[T /* <: js.Object */] () extends Predicate[T] {
     def this(options: PredicateOptions) = this()
     
     /**
@@ -47,7 +48,7 @@ object objectMod {
       }));
       ```
       */
-    def exactShape(shape: Shape): this.type = js.native
+    def exactShape[S /* <: Shape */](shape: S): ObjectPredicate[TypeOfShape[S]] = js.native
     
     /**
       Test an object to include any of the provided keys. You can use [dot-notation](https://github.com/sindresorhus/dot-prop) in a key to access nested properties.
@@ -88,7 +89,7 @@ object objectMod {
       }));
       ```
       */
-    def partialShape(shape: Shape): this.type = js.native
+    def partialShape[S /* <: Shape */](shape: S): ObjectPredicate[TypeOfShape[S]] = js.native
     
     /**
       Test if an Object is a plain object.
@@ -99,6 +100,6 @@ object objectMod {
       Test all the values in the object to match the provided predicate.
       @param predicate - The predicate that should be applied against every value in the object.
       */
-    def valuesOfType[T](predicate: Predicate[T]): this.type = js.native
+    def valuesOfType[T](predicate: BasePredicate[T]): this.type = js.native
   }
 }

@@ -32,20 +32,9 @@ object completionListenerMod {
     - typings.concurrently.concurrentlyStrings.first
     - typings.concurrently.concurrentlyStrings.last
     - typings.concurrently.concurrentlyStrings.all
-    - typings.concurrently.concurrentlyStrings.`command-$Leftcurlybracketstring Verticalline numberRightcurlybracket`
-    - typings.concurrently.concurrentlyStrings.`Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket`
+    - / * template literal string: command-${string|number} * / java.lang.String
   */
-  trait SuccessCondition extends StObject
-  object SuccessCondition {
-    
-    inline def `Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket`: typings.concurrently.concurrentlyStrings.`Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket` = ("!command-${string | number}").asInstanceOf[typings.concurrently.concurrentlyStrings.`Exclamationmarkcommand-$Leftcurlybracketstring Verticalline numberRightcurlybracket`]
-    
-    inline def all: typings.concurrently.concurrentlyStrings.all = "all".asInstanceOf[typings.concurrently.concurrentlyStrings.all]
-    
-    inline def `command-$Leftcurlybracketstring Verticalline numberRightcurlybracket`: typings.concurrently.concurrentlyStrings.`command-$Leftcurlybracketstring Verticalline numberRightcurlybracket` = ("command-${string | number}").asInstanceOf[typings.concurrently.concurrentlyStrings.`command-$Leftcurlybracketstring Verticalline numberRightcurlybracket`]
-    
-    inline def first: typings.concurrently.concurrentlyStrings.first = "first".asInstanceOf[typings.concurrently.concurrentlyStrings.first]
-    
-    inline def last: typings.concurrently.concurrentlyStrings.last = "last".asInstanceOf[typings.concurrently.concurrentlyStrings.last]
-  }
+  type SuccessCondition = _SuccessCondition | (/* template literal string: command-${string|number} */ String)
+  
+  trait _SuccessCondition extends StObject
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].apply(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def apply(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].apply(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   @JSImport("pg-format", JSImport.Namespace)
   @js.native

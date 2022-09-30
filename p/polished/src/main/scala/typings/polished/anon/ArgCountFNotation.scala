@@ -1,8 +1,8 @@
 package typings.polished.anon
 
-import typings.polished.polishedNumbers.`0`
-import typings.polished.polishedNumbers.`1`
-import typings.polished.polishedNumbers.`6`
+import typings.polished.polishedInts.`0`
+import typings.polished.polishedInts.`1`
+import typings.polished.polishedInts.`6`
 import typings.polished.polishedStrings.Exclamationmark
 import typings.polished.polishedStrings.postfix
 import org.scalablytyped.runtime.StObject

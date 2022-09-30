@@ -14,46 +14,46 @@ object componentToggleMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/toggle/component.toggle", "WorksToggle")
   @js.native
-  class WorksToggle protected ()
+  open class WorksToggle protected ()
     extends HomeworksManager
        with ControlValueAccessor {
-    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
     /* private */ @JSName("$toggle")
-    var $toggle: js.Any = js.native
+    var $toggle: Any = js.native
     
-    /* private */ var changeDetectorRef: js.Any = js.native
+    /* private */ var changeDetectorRef: Any = js.native
     
-    var checked: js.Any = js.native
+    var checked: Any = js.native
     
     var `class`: String = js.native
     
     var color: String = js.native
     
-    var disabled: js.Any = js.native
+    var disabled: Any = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
     var id: String = js.native
     
-    /* private */ var m_checked: js.Any = js.native
+    /* private */ var m_checked: Any = js.native
     
-    /* private */ var m_color: js.Any = js.native
+    /* private */ var m_color: Any = js.native
     
-    /* private */ var m_disabled: js.Any = js.native
+    /* private */ var m_disabled: Any = js.native
     
-    /* private */ var m_model: js.Any = js.native
+    /* private */ var m_model: Any = js.native
     
-    /* private */ var m_placeholder: js.Any = js.native
+    /* private */ var m_placeholder: Any = js.native
     
-    /* private */ var m_readonly: js.Any = js.native
+    /* private */ var m_readonly: Any = js.native
     
-    /* private */ var m_required: js.Any = js.native
+    /* private */ var m_required: Any = js.native
     
-    var model: js.Any = js.native
+    var model: Any = js.native
     
     var name: String = js.native
     
@@ -61,15 +61,15 @@ object componentToggleMod {
     
     def ngOnInit(): Unit = js.native
     
-    var onUpdate: EventEmitter[js.Any] = js.native
+    var onUpdate: EventEmitter[Any] = js.native
     
-    var placeholder: js.Any = js.native
+    var placeholder: Any = js.native
     
-    /* private */ var propagateChange: js.Any = js.native
+    /* private */ var propagateChange: Any = js.native
     
-    /* private */ var propagateTouch: js.Any = js.native
+    /* private */ var propagateTouch: Any = js.native
     
-    var readonly: js.Any = js.native
+    var readonly: Any = js.native
     
     /**
       * @description
@@ -105,7 +105,7 @@ object componentToggleMod {
       * @param fn The callback function to register
       */
     /* CompleteClass */
-    override def registerOnChange(fn: js.Any): Unit = js.native
+    override def registerOnChange(fn: Any): Unit = js.native
     
     /**
       * @description
@@ -139,19 +139,19 @@ object componentToggleMod {
       * @param fn The callback function to register
       */
     /* CompleteClass */
-    override def registerOnTouched(fn: js.Any): Unit = js.native
+    override def registerOnTouched(fn: Any): Unit = js.native
     
     def render(): Unit = js.native
     
-    var required: js.Any = js.native
+    var required: Any = js.native
     
     var title: String = js.native
     
-    var toggleChild: ElementRef[js.Any] = js.native
+    var toggleChild: ElementRef[Any] = js.native
     
     var `type`: String = js.native
     
-    var value: js.Any = js.native
+    var value: Any = js.native
     
     /**
       * @description
@@ -174,6 +174,6 @@ object componentToggleMod {
       * @param obj The new value for the element
       */
     /* CompleteClass */
-    override def writeValue(obj: js.Any): Unit = js.native
+    override def writeValue(obj: Any): Unit = js.native
   }
 }

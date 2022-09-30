@@ -1,72 +1,72 @@
 package typings.activexMshtml.MSHTML
 
-import typings.activexMshtml.activexMshtmlNumbers.`0`
-import typings.activexMshtml.activexMshtmlNumbers.`10`
-import typings.activexMshtml.activexMshtmlNumbers.`11`
-import typings.activexMshtml.activexMshtmlNumbers.`12`
-import typings.activexMshtml.activexMshtmlNumbers.`13`
-import typings.activexMshtml.activexMshtmlNumbers.`14`
-import typings.activexMshtml.activexMshtmlNumbers.`15`
-import typings.activexMshtml.activexMshtmlNumbers.`16`
-import typings.activexMshtml.activexMshtmlNumbers.`17`
-import typings.activexMshtml.activexMshtmlNumbers.`18`
-import typings.activexMshtml.activexMshtmlNumbers.`19`
-import typings.activexMshtml.activexMshtmlNumbers.`1`
-import typings.activexMshtml.activexMshtmlNumbers.`20`
-import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typings.activexMshtml.activexMshtmlNumbers.`21`
-import typings.activexMshtml.activexMshtmlNumbers.`22`
-import typings.activexMshtml.activexMshtmlNumbers.`23`
-import typings.activexMshtml.activexMshtmlNumbers.`24`
-import typings.activexMshtml.activexMshtmlNumbers.`25`
-import typings.activexMshtml.activexMshtmlNumbers.`26`
-import typings.activexMshtml.activexMshtmlNumbers.`27`
-import typings.activexMshtml.activexMshtmlNumbers.`28`
-import typings.activexMshtml.activexMshtmlNumbers.`29`
-import typings.activexMshtml.activexMshtmlNumbers.`2`
-import typings.activexMshtml.activexMshtmlNumbers.`3`
-import typings.activexMshtml.activexMshtmlNumbers.`4`
-import typings.activexMshtml.activexMshtmlNumbers.`5`
-import typings.activexMshtml.activexMshtmlNumbers.`6`
-import typings.activexMshtml.activexMshtmlNumbers.`7`
-import typings.activexMshtml.activexMshtmlNumbers.`8`
-import typings.activexMshtml.activexMshtmlNumbers.`9`
+import typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typings.activexMshtml.activexMshtmlInts.`0`
+import typings.activexMshtml.activexMshtmlInts.`10`
+import typings.activexMshtml.activexMshtmlInts.`11`
+import typings.activexMshtml.activexMshtmlInts.`12`
+import typings.activexMshtml.activexMshtmlInts.`13`
+import typings.activexMshtml.activexMshtmlInts.`14`
+import typings.activexMshtml.activexMshtmlInts.`15`
+import typings.activexMshtml.activexMshtmlInts.`16`
+import typings.activexMshtml.activexMshtmlInts.`17`
+import typings.activexMshtml.activexMshtmlInts.`18`
+import typings.activexMshtml.activexMshtmlInts.`19`
+import typings.activexMshtml.activexMshtmlInts.`1`
+import typings.activexMshtml.activexMshtmlInts.`20`
+import typings.activexMshtml.activexMshtmlInts.`21`
+import typings.activexMshtml.activexMshtmlInts.`22`
+import typings.activexMshtml.activexMshtmlInts.`23`
+import typings.activexMshtml.activexMshtmlInts.`24`
+import typings.activexMshtml.activexMshtmlInts.`25`
+import typings.activexMshtml.activexMshtmlInts.`26`
+import typings.activexMshtml.activexMshtmlInts.`27`
+import typings.activexMshtml.activexMshtmlInts.`28`
+import typings.activexMshtml.activexMshtmlInts.`29`
+import typings.activexMshtml.activexMshtmlInts.`2`
+import typings.activexMshtml.activexMshtmlInts.`3`
+import typings.activexMshtml.activexMshtmlInts.`4`
+import typings.activexMshtml.activexMshtmlInts.`5`
+import typings.activexMshtml.activexMshtmlInts.`6`
+import typings.activexMshtml.activexMshtmlInts.`7`
+import typings.activexMshtml.activexMshtmlInts.`8`
+import typings.activexMshtml.activexMshtmlInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typings.activexMshtml.activexMshtmlNumbers.`1`
-  - typings.activexMshtml.activexMshtmlNumbers.`26`
-  - typings.activexMshtml.activexMshtmlNumbers.`2`
-  - typings.activexMshtml.activexMshtmlNumbers.`7`
-  - typings.activexMshtml.activexMshtmlNumbers.`27`
-  - typings.activexMshtml.activexMshtmlNumbers.`9`
-  - typings.activexMshtml.activexMshtmlNumbers.`3`
-  - typings.activexMshtml.activexMshtmlNumbers.`22`
-  - typings.activexMshtml.activexMshtmlNumbers.`24`
-  - typings.activexMshtml.activexMshtmlNumbers.`23`
-  - typings.activexMshtml.activexMshtmlNumbers.`25`
-  - typings.activexMshtml.activexMshtmlNumbers.`4`
-  - typings.activexMshtml.activexMshtmlNumbers.`0`
-  - typings.activexMshtml.activexMshtmlNumbers.`17`
-  - typings.activexMshtml.activexMshtmlNumbers.`18`
-  - typings.activexMshtml.activexMshtmlNumbers.`20`
-  - typings.activexMshtml.activexMshtmlNumbers.`19`
-  - typings.activexMshtml.activexMshtmlNumbers.`21`
-  - typings.activexMshtml.activexMshtmlNumbers.`16`
-  - typings.activexMshtml.activexMshtmlNumbers.`8`
-  - typings.activexMshtml.activexMshtmlNumbers.`15`
-  - typings.activexMshtml.activexMshtmlNumbers.`14`
-  - typings.activexMshtml.activexMshtmlNumbers.`12`
-  - typings.activexMshtml.activexMshtmlNumbers.`13`
-  - typings.activexMshtml.activexMshtmlNumbers.`6`
-  - typings.activexMshtml.activexMshtmlNumbers.`5`
-  - typings.activexMshtml.activexMshtmlNumbers.`10`
-  - typings.activexMshtml.activexMshtmlNumbers.`11`
-  - typings.activexMshtml.activexMshtmlNumbers.`28`
-  - typings.activexMshtml.activexMshtmlNumbers.`29`
+  - typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typings.activexMshtml.activexMshtmlInts.`1`
+  - typings.activexMshtml.activexMshtmlInts.`26`
+  - typings.activexMshtml.activexMshtmlInts.`2`
+  - typings.activexMshtml.activexMshtmlInts.`7`
+  - typings.activexMshtml.activexMshtmlInts.`27`
+  - typings.activexMshtml.activexMshtmlInts.`9`
+  - typings.activexMshtml.activexMshtmlInts.`3`
+  - typings.activexMshtml.activexMshtmlInts.`22`
+  - typings.activexMshtml.activexMshtmlInts.`24`
+  - typings.activexMshtml.activexMshtmlInts.`23`
+  - typings.activexMshtml.activexMshtmlInts.`25`
+  - typings.activexMshtml.activexMshtmlInts.`4`
+  - typings.activexMshtml.activexMshtmlInts.`0`
+  - typings.activexMshtml.activexMshtmlInts.`17`
+  - typings.activexMshtml.activexMshtmlInts.`18`
+  - typings.activexMshtml.activexMshtmlInts.`20`
+  - typings.activexMshtml.activexMshtmlInts.`19`
+  - typings.activexMshtml.activexMshtmlInts.`21`
+  - typings.activexMshtml.activexMshtmlInts.`16`
+  - typings.activexMshtml.activexMshtmlInts.`8`
+  - typings.activexMshtml.activexMshtmlInts.`15`
+  - typings.activexMshtml.activexMshtmlInts.`14`
+  - typings.activexMshtml.activexMshtmlInts.`12`
+  - typings.activexMshtml.activexMshtmlInts.`13`
+  - typings.activexMshtml.activexMshtmlInts.`6`
+  - typings.activexMshtml.activexMshtmlInts.`5`
+  - typings.activexMshtml.activexMshtmlInts.`10`
+  - typings.activexMshtml.activexMshtmlInts.`11`
+  - typings.activexMshtml.activexMshtmlInts.`28`
+  - typings.activexMshtml.activexMshtmlInts.`29`
 */
 trait styleDisplay extends StObject
 object styleDisplay {
@@ -131,5 +131,5 @@ object styleDisplay {
   
   inline def styleDisplayWebkitInlineBox: `29` = 29.asInstanceOf[`29`]
   
-  inline def styleDisplay_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleDisplay_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }

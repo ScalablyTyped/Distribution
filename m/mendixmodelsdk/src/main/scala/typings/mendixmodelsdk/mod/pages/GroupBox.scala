@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.GroupBox")
 @js.native
-class GroupBox protected ()
+open class GroupBox protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GroupBox {
   def this(
     model: AbstractModel,

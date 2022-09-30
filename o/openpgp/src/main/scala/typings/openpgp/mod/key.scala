@@ -5,7 +5,6 @@ import typings.openpgp.anon.SelfCertification
 import typings.openpgp.anon.Userid
 import typings.openpgp.mod.`type`.keyid.Keyid
 import typings.openpgp.mod.enums.keyStatus
-import typings.openpgp.mod.packet.List
 import typings.openpgp.mod.packet.PublicKey
 import typings.openpgp.mod.packet.PublicSubkey
 import typings.openpgp.mod.packet.SecretKey
@@ -34,7 +33,7 @@ object key {
     /**
       * @param packetlist The packets that form this key
       */
-    def this(packetlist: List) = this()
+    def this(packetlist: typings.openpgp.mod.packet.List) = this()
     
     /**
       * Applies a revocation certificate to a key
@@ -254,7 +253,7 @@ object key {
       * Transforms packetlist to structured key data
       * @param packetlist The packets that form a key
       */
-    def packetlist2structure(packetlist: List): Unit = js.native
+    def packetlist2structure(packetlist: typings.openpgp.mod.packet.List): Unit = js.native
     
     var primaryKey: Key = js.native
     
@@ -288,7 +287,7 @@ object key {
       * Transforms structured key data to packetlist
       * @returns The packets that form a key
       */
-    def toPacketlist(): List = js.native
+    def toPacketlist(): typings.openpgp.mod.packet.List = js.native
     
     /**
       * Returns key as public key (shallow copy)
@@ -425,7 +424,7 @@ object key {
       * Transforms structured subkey data to packetlist
       * @returns
       */
-    def toPacketlist(): List = js.native
+    def toPacketlist(): typings.openpgp.mod.packet.List = js.native
     
     /**
       * Update subkey with new components from specified subkey
@@ -484,7 +483,7 @@ object key {
       * Transforms structured user data to packetlist
       * @returns
       */
-    def toPacketlist(): List = js.native
+    def toPacketlist(): typings.openpgp.mod.packet.List = js.native
     
     /**
       * Update user with new components from specified user

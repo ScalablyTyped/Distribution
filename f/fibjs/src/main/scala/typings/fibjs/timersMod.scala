@@ -15,7 +15,7 @@ object timersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def call(func: js.Function, timeout: Double, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("call")((List(func.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def call(func: js.Function, timeout: Double, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("call")((scala.List(func.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def clearHrInterval(t: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHrInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -25,12 +25,12 @@ object timersMod {
   
   inline def clearTimeout(t: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setHrInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setHrInterval")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
+  inline def setHrInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setHrInterval")((scala.List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
   
-  inline def setImmediate(callback: js.Function, args: Any*): ClassTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClassTimer]
+  inline def setImmediate(callback: js.Function, args: Any*): ClassTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(scala.List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClassTimer]
   
-  inline def setInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
+  inline def setInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")((scala.List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
   
-  inline def setTimeout(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
-  inline def setTimeout(callback: js.Function, timeout: Unit, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
+  inline def setTimeout(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((scala.List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
+  inline def setTimeout(callback: js.Function, timeout: Unit, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((scala.List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
 }

@@ -14,7 +14,7 @@ object driverProviderMod {
   abstract class DriverProvider protected () extends StObject {
     def this(config: Config) = this()
     
-    /* private */ var bpRunner: js.Any = js.native
+    /* private */ var bpRunner: Any = js.native
     
     var config_ : Config = js.native
     
@@ -50,12 +50,12 @@ object driverProviderMod {
       * Set up environment specific to a particular driver provider. Overridden
       * by each driver provider.
       */
-    /* protected */ def setupDriverEnv(): Promise[js.Any] = js.native
+    /* protected */ def setupDriverEnv(): Promise[Any] = js.native
     
     /**
       * Default setup environment method, common to all driver providers.
       */
-    def setupEnv(): Promise[js.Any] = js.native
+    def setupEnv(): Promise[Any] = js.native
     
     /**
       * Teardown and destroy the environment and do any associated cleanup.
@@ -64,13 +64,13 @@ object driverProviderMod {
       * @public
       * @return {q.Promise<any>} A promise which will resolve when the environment is down.
       */
-    def teardownEnv(): Promise[js.Any] = js.native
+    def teardownEnv(): Promise[Any] = js.native
     
     /**
       * Default update job method.
       * @return a promise
       */
-    def updateJob(update: js.Any): Promise[js.Any] = js.native
+    def updateJob(update: Any): Promise[Any] = js.native
   }
   /* static members */
   object DriverProvider {

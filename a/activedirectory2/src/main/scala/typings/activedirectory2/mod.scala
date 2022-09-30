@@ -1,8 +1,8 @@
 package typings.activedirectory2
 
-import typings.activedirectory2.activedirectory2Numbers.`0`
-import typings.activedirectory2.activedirectory2Numbers.`1000`
-import typings.activedirectory2.activedirectory2Numbers.`10`
+import typings.activedirectory2.activedirectory2Ints.`0`
+import typings.activedirectory2.activedirectory2Ints.`1000`
+import typings.activedirectory2.activedirectory2Ints.`10`
 import typings.activedirectory2.activedirectory2Strings.base
 import typings.activedirectory2.activedirectory2Strings.one
 import typings.activedirectory2.activedirectory2Strings.sub

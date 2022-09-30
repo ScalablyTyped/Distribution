@@ -34,6 +34,6 @@ object JumpListSettings {
     
     inline def setRemovedItems(value: js.Array[JumpListItem]): Self = StObject.set(x, "removedItems", value.asInstanceOf[js.Any])
     
-    inline def setRemovedItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "removedItems", js.Array(value :_*))
+    inline def setRemovedItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "removedItems", js.Array(value*))
   }
 }

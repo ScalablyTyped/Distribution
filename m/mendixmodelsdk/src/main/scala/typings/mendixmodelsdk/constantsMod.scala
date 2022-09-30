@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.datatypesMod.datatypes.DataType
+import typings.mendixmodelsdk.datatypesMod.datatypes.IDataType
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
@@ -14,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object constantsMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/constants", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/constants", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
@@ -35,9 +36,9 @@ object constantsMod {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.constantsMod.constants.IConstant because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant")
+    - typings.mendixmodelsdk.constantsMod.constants.IConstant because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined `type` */ @JSImport("mendixmodelsdk/src/gen/constants", "constants.Constant")
     @js.native
-    class Constant protected () extends Document {
+    open class Constant protected () extends Document {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -67,14 +68,23 @@ object constantsMod {
       def exposedToClient_=(newValue: Boolean): Unit = js.native
       
       /**
+        * In version 9.0.5: added public
         * In version 7.9.0: introduced
         */
       def `type`: DataType = js.native
       def type_=(newValue: DataType): Unit = js.native
+      /**
+        * This property is required and cannot be set to null.
+        *
+        * In version 9.0.5: added public
+        * In version 7.9.0: introduced
+        */
+      @JSName("type")
+      val type_FConstant: IDataType = js.native
     }
     object Constant {
       
-      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant")
+      @JSImport("mendixmodelsdk/src/gen/constants", "constants.Constant")
       @js.native
       val ^ : js.Any = js.native
       
@@ -86,13 +96,13 @@ object constantsMod {
       inline def createIn(container: IFolderBase): Constant = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Constant]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/constants", "constants.Constant.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/constants", "constants.Constant.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/constants", "constants.Constant.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -107,6 +117,15 @@ object constantsMod {
     @js.native
     trait IConstant
       extends StObject
-         with IDocument
+         with IDocument {
+      
+      /**
+        * This property is required and cannot be set to null.
+        *
+        * In version 9.0.5: added public
+        * In version 7.9.0: introduced
+        */
+      val `type`: IDataType = js.native
+    }
   }
 }

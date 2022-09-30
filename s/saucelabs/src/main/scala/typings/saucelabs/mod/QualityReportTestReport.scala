@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QualityReportTestReport
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var appVersionId: js.UndefOr[Double] = js.undefined
   
@@ -165,7 +165,7 @@ object QualityReportTestReport {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setSystemError(value: String): Self = StObject.set(x, "systemError", value.asInstanceOf[js.Any])
     

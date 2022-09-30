@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.GridLayerOptions because var conflicts: attribution, pane. Inlined maxZoom, tileSize, updateWhenIdle, bounds, minZoom, noWrap, updateWhenZooming, className, zIndex, opacity, keepBuffer, updateInterval */ trait GridLayerProps
+- typings.leaflet.mod.GridLayerOptions because var conflicts: attribution, pane. Inlined minNativeZoom, maxZoom, tileSize, updateWhenIdle, maxNativeZoom, bounds, minZoom, noWrap, updateWhenZooming, className, zIndex, opacity, keepBuffer, updateInterval */ trait GridLayerProps
   extends StObject
      with MapLayerProps {
   
@@ -18,7 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var keepBuffer: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Maximum zoom number the tile source has available. If it is specified, the tiles on all zoom levels higher than
+    * `maxNativeZoom` will be loaded from `maxNativeZoom` level and auto-scaled.
+    */
+  var maxNativeZoom: js.UndefOr[Double] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Minimum zoom number the tile source has available. If it is specified, the tiles on all zoom levels lower than
+    * `minNativeZoom` will be loaded from `minNativeZoom` level and auto-scaled.
+    */
+  var minNativeZoom: js.UndefOr[Double] = js.undefined
   
   var minZoom: js.UndefOr[Double] = js.undefined
   
@@ -49,7 +61,7 @@ object GridLayerProps {
     
     inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -59,9 +71,17 @@ object GridLayerProps {
     
     inline def setKeepBufferUndefined: Self = StObject.set(x, "keepBuffer", js.undefined)
     
+    inline def setMaxNativeZoom(value: Double): Self = StObject.set(x, "maxNativeZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxNativeZoomUndefined: Self = StObject.set(x, "maxNativeZoom", js.undefined)
+    
     inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinNativeZoom(value: Double): Self = StObject.set(x, "minNativeZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinNativeZoomUndefined: Self = StObject.set(x, "minNativeZoom", js.undefined)
     
     inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     

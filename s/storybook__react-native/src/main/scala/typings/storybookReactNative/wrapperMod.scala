@@ -1,7 +1,7 @@
 package typings.storybookReactNative
 
 import typings.react.mod.PureComponent
-import typings.storybookAddons.distMod.Collection
+import typings.storybookAddons.ts39Mod.Collection
 import typings.storybookReactNative.anon.AddonSelected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object wrapperMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/addons/wrapper", JSImport.Default)
   @js.native
-  class default () extends Wrapper
+  open class default () extends Wrapper
   /* static members */
   object default {
     
@@ -48,5 +48,5 @@ object wrapperMod {
   
   @js.native
   trait Wrapper
-    extends PureComponent[Props, js.Object, js.Any]
+    extends PureComponent[Props, js.Object, Any]
 }

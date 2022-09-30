@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Config extends StObject {
   
-  var config: Record[String, js.Any]
+  var config: Record[String, Any]
   
   var path: String
 }
 object Config {
   
-  inline def apply(config: Record[String, js.Any], path: String): Config = {
+  inline def apply(config: Record[String, Any], path: String): Config = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
   extension [Self <: Config](x: Self) {
     
-    inline def setConfig(value: Record[String, js.Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

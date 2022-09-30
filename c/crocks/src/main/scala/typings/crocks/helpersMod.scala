@@ -1,7 +1,6 @@
 package typings.crocks
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.crocks.listListMod.List
 import typings.crocks.pairMod.default
 import typings.crocks.typesMod.BinaryFunction
 import typings.crocks.typesMod.TernaryFunction
@@ -53,7 +52,7 @@ object helpersMod {
     * fromPairs :: Foldable f => f (Pair String a) -> Object
     */
   inline def fromPairs(`val`: js.Array[default]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPairs")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def fromPairs(`val`: List): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPairs")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def fromPairs(`val`: typings.crocks.listListMod.List): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPairs")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   inline def getPathOr[A /* <: Any */](a: A): js.Function1[/* p */ js.Array[String | Double], js.Function1[/* b */ Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathOr")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* p */ js.Array[String | Double], js.Function1[/* b */ Any, A]]]
   inline def getPathOr[A /* <: Any */](a: A, p: js.Array[String | Double]): js.Function1[/* b */ Any, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathOr")(a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ Any, A]]

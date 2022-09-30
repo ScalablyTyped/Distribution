@@ -1,8 +1,10 @@
 package typings.officeJsPreview.Word
 
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.Word.Interfaces.FieldData
 import typings.officeJsPreview.Word.Interfaces.FieldLoadOptions
+import typings.officeJsPreview.Word.Interfaces.FieldUpdateData
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a field.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait Field
@@ -21,11 +22,10 @@ trait Field
      with ClientObject {
   
   /**
-    * Gets the field's code instruction. Read-only.
+    * Gets the field's code instruction.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val code: String = js.native
   
@@ -37,37 +37,26 @@ trait Field
     * Deletes the field.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   def delete(): Unit = js.native
   
   /**
-    * Gets the next field. Throws an error if this field is the last one.
+    * Gets the next field. Throws an `ItemNotFound` error if this field is the last one.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getNext(): Field = js.native
   
   /**
-    * Gets the next field. Returns a null object if this field is the last one.
+    * Gets the next field. If this field is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getNextOrNullObject(): Field = js.native
-  
-  /**
-    * Gets the whole field as a range.
-    *
-    * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  def getRange(): Range = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -81,76 +70,78 @@ trait Field
   def load(propertyNames: js.Array[String]): Field = js.native
   
   /**
-    * Gets the parent body of the field. Read-only.
+    * Gets the parent body of the field.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val parentBody: Body = js.native
   
   /**
-    * Gets the content control that contains the field. Throws an error if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the field. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val parentContentControl: ContentControl = js.native
   
   /**
-    * Gets the content control that contains the field. Returns a null object if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the field. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    * Gets the table that contains the field. Throws an error if it is not contained in a table. Read-only.
+    * Gets the table that contains the field. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val parentTable: Table = js.native
   
   /**
-    * Gets the table cell that contains the field. Throws an error if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the field. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val parentTableCell: TableCell = js.native
   
   /**
-    * Gets the table cell that contains the field. Returns a null object if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the field. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val parentTableCellOrNullObject: TableCell = js.native
   
   /**
-    * Gets the table that contains the field. Returns a null object if it is not contained in a table. Read-only.
+    * Gets the table that contains the field. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val parentTableOrNullObject: Table = js.native
   
   /**
-    * Gets the field's result data. Read-only.
+    * Gets the field's result data.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
-  val result: String = js.native
+  val result: Range = js.native
+  
+  /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+  def set(properties: Field): Unit = js.native
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+    * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+    */
+  def set(properties: FieldUpdateData): Unit = js.native
+  def set(properties: FieldUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

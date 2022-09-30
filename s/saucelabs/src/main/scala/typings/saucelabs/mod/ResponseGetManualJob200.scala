@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponseGetManualJob200
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var browser: String
   
@@ -46,7 +46,7 @@ object ResponseGetManualJob200 {
     
     inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     

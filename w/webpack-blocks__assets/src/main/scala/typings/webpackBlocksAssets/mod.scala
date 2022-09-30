@@ -2,9 +2,9 @@ package typings.webpackBlocksAssets
 
 import typings.webpackBlocksAssets.mod.css.FileOptions
 import typings.webpackBlocksAssets.mod.css.UrlOptions
-import typings.webpackBlocksAssets.webpackBlocksAssetsNumbers.`0`
-import typings.webpackBlocksAssets.webpackBlocksAssetsNumbers.`1`
-import typings.webpackBlocksAssets.webpackBlocksAssetsNumbers.`2`
+import typings.webpackBlocksAssets.webpackBlocksAssetsInts.`0`
+import typings.webpackBlocksAssets.webpackBlocksAssetsInts.`1`
+import typings.webpackBlocksAssets.webpackBlocksAssetsInts.`2`
 import typings.webpackBlocksAssets.webpackBlocksAssetsStrings.asIs
 import typings.webpackBlocksAssets.webpackBlocksAssetsStrings.camelCase
 import typings.webpackBlocksAssets.webpackBlocksAssetsStrings.camelCaseOnly

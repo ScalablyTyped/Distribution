@@ -5,7 +5,6 @@ import typings.typedoc.anon.Kind
 import typings.typedoc.anon.Tag
 import typings.typedoc.anon.Text
 import typings.typedoc.commentMod.CommentDisplayPart
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,6 +61,6 @@ object modelsCommentsMod {
     /**
       * Create a new CommentTag instance.
       */
-    def this(tag: `@$LeftcurlybracketstringRightcurlybracket`, text: js.Array[CommentDisplayPart]) = this()
+    def this(tag: /* template literal string: @${string} */ String, text: js.Array[CommentDisplayPart]) = this()
   }
 }

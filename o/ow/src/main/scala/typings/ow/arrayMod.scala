@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayMod {
   
-  @JSImport("ow/dist/source/predicates/array", "ArrayPredicate")
+  @JSImport("ow/dist/predicates/array", "ArrayPredicate")
   @js.native
   /**
     @hidden
     */
-  class ArrayPredicate[T] ()
+  open class ArrayPredicate[T] ()
     extends Predicate[js.Array[T]] {
     def this(options: PredicateOptions) = this()
     
@@ -34,6 +34,16 @@ object arrayMod {
       @param searchElement - The value that should be the end of the array.
       */
     def endsWith(searchElement: T): this.type = js.native
+    
+    /**
+      Test if the elements in the array exactly matches the elements placed at the same indices in the predicates array.
+      @param predicates - Predicates to test the array against. Describes what the tested array should look like.
+      @example
+      ```
+      ow(['1', 2], ow.array.exactShape([ow.string, ow.number]));
+      ```
+      */
+    def exactShape(predicates: js.Array[Predicate[Any]]): this.type = js.native
     
     /**
       Test an array to include all the provided elements. The values are tested by identity, not structure.
@@ -78,7 +88,7 @@ object arrayMod {
       ow(['a', 1], ow.array.ofType(ow.any(ow.string, ow.number)));
       ```
       */
-    def ofType[P /* <: BasePredicate[T] */](predicate: P): this.type = js.native
+    def ofType[U /* <: T */](predicate: BasePredicate[U]): ArrayPredicate[U] = js.native
     
     /**
       Test an array to start with a specific value. The value is tested by identity, not structure.

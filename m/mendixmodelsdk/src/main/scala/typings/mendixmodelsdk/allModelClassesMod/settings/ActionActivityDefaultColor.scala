@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.ActionActivityDefaultColor")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.ActionActivityDefaultColor")
 @js.native
-class ActionActivityDefaultColor protected ()
+open class ActionActivityDefaultColor protected ()
   extends typings.mendixmodelsdk.settingsMod.settings.ActionActivityDefaultColor {
   def this(
     model: AbstractModel,
@@ -32,7 +32,7 @@ class ActionActivityDefaultColor protected ()
 }
 object ActionActivityDefaultColor {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.ActionActivityDefaultColor")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.ActionActivityDefaultColor")
   @js.native
   val ^ : js.Any = js.native
   
@@ -56,13 +56,13 @@ object ActionActivityDefaultColor {
   inline def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ModelerSettings): typings.mendixmodelsdk.settingsMod.settings.ActionActivityDefaultColor = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.ActionActivityDefaultColor]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.ActionActivityDefaultColor.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.ActionActivityDefaultColor.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.ActionActivityDefaultColor.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.ActionActivityDefaultColor.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

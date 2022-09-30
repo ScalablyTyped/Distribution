@@ -1,8 +1,8 @@
 package typings.rcPicker
 
 import typings.rcPicker.anon.DefaultDates
-import typings.rcPicker.rcPickerNumbers.`0`
-import typings.rcPicker.rcPickerNumbers.`1`
+import typings.rcPicker.rcPickerInts.`0`
+import typings.rcPicker.rcPickerInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

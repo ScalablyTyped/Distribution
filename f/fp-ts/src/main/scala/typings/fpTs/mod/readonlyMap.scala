@@ -94,9 +94,9 @@ object readonlyMap {
   
   inline def filterWithIndex[K, A](predicateWithIndex: js.Function2[/* k */ K, /* a */ A, Boolean]): js.Function1[/* m */ ReadonlyMap[K, A], ReadonlyMap[K, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, A], ReadonlyMap[K, A]]]
   
-  inline def filterWithIndex_KAB_A[K, A, B /* <: A */](predicateWithIndex: js.Function2[/* k */ K, /* a */ A, /* is B */ Boolean]): js.Function1[/* m */ ReadonlyMap[K, A], ReadonlyMap[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, A], ReadonlyMap[K, B]]]
+  inline def filterWithIndex_KAB[K, A, B /* <: A */](predicateWithIndex: js.Function2[/* k */ K, /* a */ A, /* is B */ Boolean]): js.Function1[/* m */ ReadonlyMap[K, A], ReadonlyMap[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, A], ReadonlyMap[K, B]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ ReadonlyMap[Any, js.Function1[/* a */ A, Any]], ReadonlyMap[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ ReadonlyMap[Any, js.Function1[/* a */ A, Any]], ReadonlyMap[Any, Any]]]
   
@@ -239,9 +239,9 @@ object readonlyMap {
   
   inline def partitionWithIndex[K, A](predicateWithIndex: js.Function2[/* k */ K, /* a */ A, Boolean]): js.Function1[/* m */ ReadonlyMap[K, A], Separated_[ReadonlyMap[K, A], ReadonlyMap[K, A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, A], Separated_[ReadonlyMap[K, A], ReadonlyMap[K, A]]]]
   
-  inline def partitionWithIndex_KAB_A[K, A, B /* <: A */](predicateWithIndex: js.Function2[/* k */ K, /* a */ A, /* is B */ Boolean]): js.Function1[/* m */ ReadonlyMap[K, A], Separated_[ReadonlyMap[K, A], ReadonlyMap[K, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, A], Separated_[ReadonlyMap[K, A], ReadonlyMap[K, B]]]]
+  inline def partitionWithIndex_KAB[K, A, B /* <: A */](predicateWithIndex: js.Function2[/* k */ K, /* a */ A, /* is B */ Boolean]): js.Function1[/* m */ ReadonlyMap[K, A], Separated_[ReadonlyMap[K, A], ReadonlyMap[K, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, A], Separated_[ReadonlyMap[K, A], ReadonlyMap[K, B]]]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ ReadonlyMap[Any, A], Separated_[ReadonlyMap[Any, A], ReadonlyMap[Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[Any, A], Separated_[ReadonlyMap[Any, A], ReadonlyMap[Any, B]]]]
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ ReadonlyMap[Any, A], Separated_[ReadonlyMap[Any, A], ReadonlyMap[Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[Any, A], Separated_[ReadonlyMap[Any, A], ReadonlyMap[Any, B]]]]
   
   inline def pop[K](E: Eq[K]): js.Function1[
     /* k */ K, 

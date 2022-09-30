@@ -1,9 +1,9 @@
 package typings.sharp.mod
 
-import typings.sharp.sharpNumbers.`1`
-import typings.sharp.sharpNumbers.`2`
-import typings.sharp.sharpNumbers.`4`
-import typings.sharp.sharpNumbers.`8`
+import typings.sharp.sharpInts.`1`
+import typings.sharp.sharpInts.`2`
+import typings.sharp.sharpInts.`4`
+import typings.sharp.sharpInts.`8`
 import typings.sharp.sharpStrings.cm
 import typings.sharp.sharpStrings.inch
 import org.scalablytyped.runtime.StObject

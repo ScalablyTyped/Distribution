@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.Tail")
 @js.native
-class Tail protected ()
+open class Tail protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.Tail {
   def this(
     model: AbstractModel,

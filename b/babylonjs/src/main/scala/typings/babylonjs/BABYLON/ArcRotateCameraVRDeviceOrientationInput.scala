@@ -19,8 +19,7 @@ trait ArcRotateCameraVRDeviceOrientationInput
   /* private */ var _gamma: Any = js.native
   
   /**
-    * @param evt
-    * @hidden
+    * @internal
     */
   def _onOrientationEvent(evt: DeviceOrientationEvent): Unit = js.native
   

@@ -64,7 +64,7 @@ object utilsMod {
   
   inline def chooseNiceTimeMask(date: js.Date, intervalMap: IntervalMap): String = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNiceTimeMask")(date.asInstanceOf[js.Any], intervalMap.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def compose[T](fn: js.Function1[/* x */ T, T], rest: (js.Function1[/* x */ T, T])*): js.Function1[/* x */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(List(fn.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* x */ T, T]]
+  inline def compose[T](fn: js.Function1[/* x */ T, T], rest: (js.Function1[/* x */ T, T])*): js.Function1[/* x */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(scala.List(fn.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* x */ T, T]]
   
   inline def createClamp(a: Double, b: Double): js.Function1[/* x */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClamp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ Double, Double]]
   

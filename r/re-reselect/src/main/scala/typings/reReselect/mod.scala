@@ -16,15 +16,15 @@ object mod {
   val ^ : js.Any = js.native
   
   /*
-    * Homogeneous selectors, array argument
+    * Heterogeneous selectors, array argument
     */
   /* one selector */
-  inline def default[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def default[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   /*
-    * Heterogeneous selectors, parameter types
+    * Homogeneous selectors, parameter types
     */
   /* one selector */
-  inline def default[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def default[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   /* two selectors */
   inline def default[S, R1, R2, T](
     selector1: Selector[S, R1],
@@ -1934,15 +1934,15 @@ object mod {
   }
   
   /*
-    * Homogeneous selectors, array argument
+    * Heterogeneous selectors, array argument
     */
   /* one selector */
-  inline def createCachedSelector[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def createCachedSelector[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   /*
-    * Heterogeneous selectors, parameter types
+    * Homogeneous selectors, parameter types
     */
   /* one selector */
-  inline def createCachedSelector[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def createCachedSelector[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   /* two selectors */
   inline def createCachedSelector[S, R1, R2, T](
     selector1: Selector[S, R1],
@@ -3729,10 +3729,10 @@ object mod {
   inline def createCachedSelector_S1P1R1T_OutputParametricCachedSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
   
   /*
-    * Heterogeneous selectors, array argument
+    * Heterogeneous selectors, parameter types
     */
   /* one selector */
-  inline def createCachedSelector_S1R1T[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def createCachedSelector_S1R1T[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   
   inline def createCachedSelector_S1S2P1P2R1R2T[S1, S2, P1, P2, R1, R2, T](
     selector1: ParametricSelector[S1, P1, R1],
@@ -6838,10 +6838,10 @@ object mod {
   inline def createCachedSelector_SPRT_OutputParametricCachedSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]]]
   
   /*
-    * Homogeneous selectors, parameter types
+    * Homogeneous selectors, array argument
     */
   /* one selector */
-  inline def createCachedSelector_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def createCachedSelector_SR1T[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   
   /*
     * Any number of uniform selectors
@@ -6850,7 +6850,7 @@ object mod {
   
   inline def createStructuredCachedSelector[T /* <: StringDictionary[js.Function1[/* state */ Any, Any]] */, S, R](selectors: T): OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredCachedSelector")(selectors.asInstanceOf[js.Any]).asInstanceOf[OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]]]
   
-  inline def createStructuredCachedSelector_T_StringDictionaryFunction3AnyAnyAnyAnySPR_OutputParametricCachedSelector[T /* <: StringDictionary[js.Function3[/* state */ Any, /* props */ Any, /* repeated */ Any, Any]] */, S, P, R](selectors: T): OutputParametricCachedSelector[
+  inline def createStructuredCachedSelector_TSPR_OutputParametricCachedSelector[T /* <: StringDictionary[js.Function3[/* state */ Any, /* props */ Any, /* repeated */ Any, Any]] */, S, P, R](selectors: T): OutputParametricCachedSelector[
     S, 
     P, 
     R, 
@@ -6869,10 +6869,10 @@ object mod {
   inline def default_S1P1R1T_OutputParametricCachedSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S1, P1, T, js.Function1[/* res */ R1, T], js.Array[ParametricSelector[S1, P1, R1]]]]
   
   /*
-    * Heterogeneous selectors, array argument
+    * Heterogeneous selectors, parameter types
     */
   /* one selector */
-  inline def default_S1R1T[S1, R1, T](selectors: js.Array[Selector[S1, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
+  inline def default_S1R1T[S1, R1, T](selector: Selector[S1, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S1, T, js.Function1[/* res */ R1, T], js.Array[Selector[S1, R1]]]]
   
   inline def default_S1S2P1P2R1R2T[S1, S2, P1, P2, R1, R2, T](
     selector1: ParametricSelector[S1, P1, R1],
@@ -9978,10 +9978,10 @@ object mod {
   inline def default_SPRT_OutputParametricCachedSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputParametricCachedSelector[S, P, T, js.Function1[/* repeated */ R, T], js.Array[ParametricSelector[S, P, R]]]]
   
   /*
-    * Homogeneous selectors, parameter types
+    * Homogeneous selectors, array argument
     */
   /* one selector */
-  inline def default_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
+  inline def default_SR1T[S, R1, T](selectors: js.Array[Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]]]
   
   /*
     * Any number of uniform selectors

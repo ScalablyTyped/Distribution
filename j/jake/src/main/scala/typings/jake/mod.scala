@@ -334,7 +334,7 @@ object mod {
       inline def createExec(cmds: js.Array[String], opts: ExecOptions): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Exec_]
       inline def createExec(cmds: js.Array[String], opts: ExecOptions, callback: js.Function0[Unit]): Exec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createExec")(cmds.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Exec_]
       
-      inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+      inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(scala.List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
       
       inline def exec(cmds: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
       inline def exec(cmds: js.Array[String], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(cmds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

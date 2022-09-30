@@ -1,6 +1,7 @@
 package typings.electron.Electron
 
-import typings.node.Buffer
+import typings.electron.electronStrings.rawData
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +17,13 @@ trait UploadRawData extends StObject {
   /**
     * `rawData`.
     */
-  var `type`: String
+  var `type`: rawData
 }
 object UploadRawData {
   
-  inline def apply(bytes: Buffer, `type`: String): UploadRawData = {
+  inline def apply(bytes: Buffer): UploadRawData = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("rawData")
     __obj.asInstanceOf[UploadRawData]
   }
   
@@ -30,6 +31,6 @@ object UploadRawData {
     
     inline def setBytes(value: Buffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rawData): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

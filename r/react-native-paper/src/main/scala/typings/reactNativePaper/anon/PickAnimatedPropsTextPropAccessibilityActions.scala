@@ -109,6 +109,10 @@ trait PickAnimatedPropsTextPropAccessibilityActions extends StObject {
     (WithAnimatedValue[js.UndefOr[Null | phoneNumber | link | email | none | all]]) | Null | phoneNumber | link | email | none | all | (TAugmentRef[js.UndefOr[Null | phoneNumber | link | email | none | all]])
   ] = js.undefined
   
+  var disabled: js.UndefOr[
+    WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]
+  ] = js.undefined
+  
   var ellipsizeMode: js.UndefOr[
     (WithAnimatedValue[js.UndefOr[head | middle | tail | clip]]) | head | middle | tail | clip | (TAugmentRef[js.UndefOr[head | middle | tail | clip]])
   ] = js.undefined
@@ -379,6 +383,14 @@ object PickAnimatedPropsTextPropAccessibilityActions {
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
     inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+    
+    inline def setDisabled(value: WithAnimatedValue[js.UndefOr[Boolean]] | Boolean | TAugmentRef[js.UndefOr[Boolean]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledFunction1(value: /* instance */ (Any | LegacyRef[Any]) | Null => Unit): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
+    
+    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setEllipsizeMode(
       value: (WithAnimatedValue[js.UndefOr[head | middle | tail | clip]]) | head | middle | tail | clip | (TAugmentRef[js.UndefOr[head | middle | tail | clip]])

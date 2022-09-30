@@ -1,23 +1,18 @@
 package typings.dndCore
 
+import typings.dndCore.interfacesMod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reducersMod {
   
-  @JSImport("dnd-core/lib/reducers", JSImport.Namespace)
+  @JSImport("dnd-core/dist/reducers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def reduce(
-    state: Unit,
-    action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action<any> */ js.Any
-  ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def reduce(
-    state: State,
-    action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action<any> */ js.Any
-  ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def reduce(state: Unit, action: Action[Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def reduce(state: State, action: Action[Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
   
   trait State extends StObject {
     
@@ -48,7 +43,7 @@ object reducersMod {
       
       inline def setDirtyHandlerIds(value: typings.dndCore.dirtyHandlerIdsMod.State): Self = StObject.set(x, "dirtyHandlerIds", value.asInstanceOf[js.Any])
       
-      inline def setDirtyHandlerIdsVarargs(value: String*): Self = StObject.set(x, "dirtyHandlerIds", js.Array(value :_*))
+      inline def setDirtyHandlerIdsVarargs(value: String*): Self = StObject.set(x, "dirtyHandlerIds", js.Array(value*))
       
       inline def setDragOffset(value: typings.dndCore.dragOffsetMod.State): Self = StObject.set(x, "dragOffset", value.asInstanceOf[js.Any])
       

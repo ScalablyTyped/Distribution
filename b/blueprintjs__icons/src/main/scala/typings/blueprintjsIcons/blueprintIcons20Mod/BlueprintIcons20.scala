@@ -368,6 +368,12 @@ object BlueprintIcons20 extends StObject {
   /* "bring-data" */ val BringData: typings.blueprintjsIcons.blueprintIcons20Mod.BlueprintIcons20.BringData & String = js.native
   
   @js.native
+  sealed trait Bug
+    extends StObject
+       with BlueprintIcons20
+  /* "bug" */ val Bug: typings.blueprintjsIcons.blueprintIcons20Mod.BlueprintIcons20.Bug & String = js.native
+  
+  @js.native
   sealed trait Buggy
     extends StObject
        with BlueprintIcons20

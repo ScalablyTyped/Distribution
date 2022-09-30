@@ -1,139 +1,139 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`10`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`11`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`12`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`131072`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`134217728`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`13`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16384`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16777216`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2097152`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`262144`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`268435456`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`32768`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`33554432`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`35`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`36`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`37`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`38`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`39`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`40`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4194304`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`41`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`42`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`43`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`44`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`45`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`46`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`47`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`48`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`49`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`50`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`51`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`524288`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`52`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`536870912`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`53`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`54`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`55`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`56`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`59`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`60`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`61`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`62`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`63`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`64`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`65`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`67108864`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8192`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8388608`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1024`
+import typings.activexLibreoffice.activexLibreofficeInts.`1048576`
+import typings.activexLibreoffice.activexLibreofficeInts.`10`
+import typings.activexLibreoffice.activexLibreofficeInts.`11`
+import typings.activexLibreoffice.activexLibreofficeInts.`12`
+import typings.activexLibreoffice.activexLibreofficeInts.`131072`
+import typings.activexLibreoffice.activexLibreofficeInts.`134217728`
+import typings.activexLibreoffice.activexLibreofficeInts.`13`
+import typings.activexLibreoffice.activexLibreofficeInts.`16384`
+import typings.activexLibreoffice.activexLibreofficeInts.`16777216`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2097152`
+import typings.activexLibreoffice.activexLibreofficeInts.`256`
+import typings.activexLibreoffice.activexLibreofficeInts.`262144`
+import typings.activexLibreoffice.activexLibreofficeInts.`268435456`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`32768`
+import typings.activexLibreoffice.activexLibreofficeInts.`33554432`
+import typings.activexLibreoffice.activexLibreofficeInts.`35`
+import typings.activexLibreoffice.activexLibreofficeInts.`36`
+import typings.activexLibreoffice.activexLibreofficeInts.`37`
+import typings.activexLibreoffice.activexLibreofficeInts.`38`
+import typings.activexLibreoffice.activexLibreofficeInts.`39`
+import typings.activexLibreoffice.activexLibreofficeInts.`3`
+import typings.activexLibreoffice.activexLibreofficeInts.`4096`
+import typings.activexLibreoffice.activexLibreofficeInts.`40`
+import typings.activexLibreoffice.activexLibreofficeInts.`4194304`
+import typings.activexLibreoffice.activexLibreofficeInts.`41`
+import typings.activexLibreoffice.activexLibreofficeInts.`42`
+import typings.activexLibreoffice.activexLibreofficeInts.`43`
+import typings.activexLibreoffice.activexLibreofficeInts.`44`
+import typings.activexLibreoffice.activexLibreofficeInts.`45`
+import typings.activexLibreoffice.activexLibreofficeInts.`46`
+import typings.activexLibreoffice.activexLibreofficeInts.`47`
+import typings.activexLibreoffice.activexLibreofficeInts.`48`
+import typings.activexLibreoffice.activexLibreofficeInts.`49`
+import typings.activexLibreoffice.activexLibreofficeInts.`4`
+import typings.activexLibreoffice.activexLibreofficeInts.`50`
+import typings.activexLibreoffice.activexLibreofficeInts.`512`
+import typings.activexLibreoffice.activexLibreofficeInts.`51`
+import typings.activexLibreoffice.activexLibreofficeInts.`524288`
+import typings.activexLibreoffice.activexLibreofficeInts.`52`
+import typings.activexLibreoffice.activexLibreofficeInts.`536870912`
+import typings.activexLibreoffice.activexLibreofficeInts.`53`
+import typings.activexLibreoffice.activexLibreofficeInts.`54`
+import typings.activexLibreoffice.activexLibreofficeInts.`55`
+import typings.activexLibreoffice.activexLibreofficeInts.`56`
+import typings.activexLibreoffice.activexLibreofficeInts.`59`
+import typings.activexLibreoffice.activexLibreofficeInts.`5`
+import typings.activexLibreoffice.activexLibreofficeInts.`60`
+import typings.activexLibreoffice.activexLibreofficeInts.`61`
+import typings.activexLibreoffice.activexLibreofficeInts.`62`
+import typings.activexLibreoffice.activexLibreofficeInts.`63`
+import typings.activexLibreoffice.activexLibreofficeInts.`64`
+import typings.activexLibreoffice.activexLibreofficeInts.`65536`
+import typings.activexLibreoffice.activexLibreofficeInts.`65`
+import typings.activexLibreoffice.activexLibreofficeInts.`67108864`
+import typings.activexLibreoffice.activexLibreofficeInts.`6`
+import typings.activexLibreoffice.activexLibreofficeInts.`7`
+import typings.activexLibreoffice.activexLibreofficeInts.`8192`
+import typings.activexLibreoffice.activexLibreofficeInts.`8388608`
+import typings.activexLibreoffice.activexLibreofficeInts.`8`
+import typings.activexLibreoffice.activexLibreofficeInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** New transliteration module enumeration to use with {@link XTransliteration.loadModuleNew()} */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`63`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`64`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`59`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`61`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`65`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`60`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`62`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`262144`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`4194304`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`32768`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`8388608`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`67108864`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`16384`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`33554432`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`2097152`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`16777216`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`134217728`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`524288`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`8192`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`131072`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`5`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`536870912`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`45`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`42`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`46`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`43`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`38`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`40`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`44`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`39`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`41`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`11`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`12`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`13`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`35`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`36`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`37`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`7`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`9`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`10`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`268435456`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`51`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`52`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`53`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`54`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`55`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`56`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`47`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`49`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`48`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`50`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+  - typings.activexLibreoffice.activexLibreofficeInts.`63`
+  - typings.activexLibreoffice.activexLibreofficeInts.`64`
+  - typings.activexLibreoffice.activexLibreofficeInts.`59`
+  - typings.activexLibreoffice.activexLibreofficeInts.`61`
+  - typings.activexLibreoffice.activexLibreofficeInts.`65`
+  - typings.activexLibreoffice.activexLibreofficeInts.`60`
+  - typings.activexLibreoffice.activexLibreofficeInts.`62`
+  - typings.activexLibreoffice.activexLibreofficeInts.`0`
+  - typings.activexLibreoffice.activexLibreofficeInts.`4`
+  - typings.activexLibreoffice.activexLibreofficeInts.`3`
+  - typings.activexLibreoffice.activexLibreofficeInts.`6`
+  - typings.activexLibreoffice.activexLibreofficeInts.`256`
+  - typings.activexLibreoffice.activexLibreofficeInts.`512`
+  - typings.activexLibreoffice.activexLibreofficeInts.`1024`
+  - typings.activexLibreoffice.activexLibreofficeInts.`262144`
+  - typings.activexLibreoffice.activexLibreofficeInts.`1048576`
+  - typings.activexLibreoffice.activexLibreofficeInts.`4194304`
+  - typings.activexLibreoffice.activexLibreofficeInts.`32768`
+  - typings.activexLibreoffice.activexLibreofficeInts.`8388608`
+  - typings.activexLibreoffice.activexLibreofficeInts.`67108864`
+  - typings.activexLibreoffice.activexLibreofficeInts.`16384`
+  - typings.activexLibreoffice.activexLibreofficeInts.`33554432`
+  - typings.activexLibreoffice.activexLibreofficeInts.`65536`
+  - typings.activexLibreoffice.activexLibreofficeInts.`2097152`
+  - typings.activexLibreoffice.activexLibreofficeInts.`16777216`
+  - typings.activexLibreoffice.activexLibreofficeInts.`134217728`
+  - typings.activexLibreoffice.activexLibreofficeInts.`524288`
+  - typings.activexLibreoffice.activexLibreofficeInts.`8192`
+  - typings.activexLibreoffice.activexLibreofficeInts.`4096`
+  - typings.activexLibreoffice.activexLibreofficeInts.`131072`
+  - typings.activexLibreoffice.activexLibreofficeInts.`5`
+  - typings.activexLibreoffice.activexLibreofficeInts.`536870912`
+  - typings.activexLibreoffice.activexLibreofficeInts.`2`
+  - typings.activexLibreoffice.activexLibreofficeInts.`45`
+  - typings.activexLibreoffice.activexLibreofficeInts.`42`
+  - typings.activexLibreoffice.activexLibreofficeInts.`46`
+  - typings.activexLibreoffice.activexLibreofficeInts.`43`
+  - typings.activexLibreoffice.activexLibreofficeInts.`38`
+  - typings.activexLibreoffice.activexLibreofficeInts.`40`
+  - typings.activexLibreoffice.activexLibreofficeInts.`44`
+  - typings.activexLibreoffice.activexLibreofficeInts.`39`
+  - typings.activexLibreoffice.activexLibreofficeInts.`41`
+  - typings.activexLibreoffice.activexLibreofficeInts.`11`
+  - typings.activexLibreoffice.activexLibreofficeInts.`12`
+  - typings.activexLibreoffice.activexLibreofficeInts.`13`
+  - typings.activexLibreoffice.activexLibreofficeInts.`35`
+  - typings.activexLibreoffice.activexLibreofficeInts.`36`
+  - typings.activexLibreoffice.activexLibreofficeInts.`37`
+  - typings.activexLibreoffice.activexLibreofficeInts.`7`
+  - typings.activexLibreoffice.activexLibreofficeInts.`9`
+  - typings.activexLibreoffice.activexLibreofficeInts.`8`
+  - typings.activexLibreoffice.activexLibreofficeInts.`10`
+  - typings.activexLibreoffice.activexLibreofficeInts.`268435456`
+  - typings.activexLibreoffice.activexLibreofficeInts.`51`
+  - typings.activexLibreoffice.activexLibreofficeInts.`52`
+  - typings.activexLibreoffice.activexLibreofficeInts.`53`
+  - typings.activexLibreoffice.activexLibreofficeInts.`54`
+  - typings.activexLibreoffice.activexLibreofficeInts.`55`
+  - typings.activexLibreoffice.activexLibreofficeInts.`56`
+  - typings.activexLibreoffice.activexLibreofficeInts.`47`
+  - typings.activexLibreoffice.activexLibreofficeInts.`49`
+  - typings.activexLibreoffice.activexLibreofficeInts.`48`
+  - typings.activexLibreoffice.activexLibreofficeInts.`50`
+  - typings.activexLibreoffice.activexLibreofficeInts.`1`
 */
 trait TransliterationModulesNew extends StObject
 object TransliterationModulesNew {

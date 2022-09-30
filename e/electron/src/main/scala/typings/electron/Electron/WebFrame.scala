@@ -1,7 +1,6 @@
 package typings.electron.Electron
 
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,18 +33,18 @@ trait WebFrame
     * invoked by a gesture from the user. Setting `userGesture` to `true` will remove
     * this limitation.
     */
-  def executeJavaScript(code: String): js.Promise[js.Any] = js.native
-  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[js.Any] = js.native
+  def executeJavaScript(code: String): js.Promise[Any] = js.native
+  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[Any] = js.native
   def executeJavaScript(
     code: String,
     userGesture: Boolean,
-    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function2[/* result */ Any, /* error */ js.Error, Unit]
+  ): js.Promise[Any] = js.native
   def executeJavaScript(
     code: String,
     userGesture: Unit,
-    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function2[/* result */ Any, /* error */ js.Error, Unit]
+  ): js.Promise[Any] = js.native
   
   /**
     * A promise that resolves with the result of the executed code or is rejected if
@@ -57,20 +56,20 @@ trait WebFrame
     * reject and the `result` would be `undefined`. This is because Chromium does not
     * dispatch errors of isolated worlds to foreign worlds.
     */
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[js.Any] = js.native
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[js.Any] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[Any] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[Any] = js.native
   def executeJavaScriptInIsolatedWorld(
     worldId: Double,
     scripts: js.Array[WebSource],
     userGesture: Boolean,
-    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function2[/* result */ Any, /* error */ js.Error, Unit]
+  ): js.Promise[Any] = js.native
   def executeJavaScriptInIsolatedWorld(
     worldId: Double,
     scripts: js.Array[WebSource],
     userGesture: Unit,
-    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function2[/* result */ Any, /* error */ js.Error, Unit]
+  ): js.Promise[Any] = js.native
   
   /**
     * A child of `webFrame` with the supplied `name`, `null` would be returned if
@@ -108,9 +107,16 @@ trait WebFrame
     *
     * Returns an object describing usage information of Blink's internal memory
     * caches.
-  This will generate:
+    *
+    * This will generate:
     */
   def getResourceUsage(): ResourceUsage = js.native
+  
+  /**
+    * A list of suggested words for a given word. If the word is spelled correctly,
+    * the result will be empty.
+    */
+  def getWordSuggestions(word: String): js.Array[String] = js.native
   
   /**
     * The current zoom factor.
@@ -130,11 +136,18 @@ trait WebFrame
     * stylesheet.
     */
   def insertCSS(css: String): String = js.native
+  def insertCSS(css: String, options: InsertCSSOptions): String = js.native
   
   /**
     * Inserts `text` to the focused element.
     */
   def insertText(text: String): Unit = js.native
+  
+  /**
+    * True if the word is misspelled according to the built in spellchecker, false
+    * otherwise. If no dictionary is loaded, always return false.
+    */
+  def isWordMisspelled(word: String): Boolean = js.native
   
   /**
     * A `WebFrame | null` representing next sibling frame, the property would be
@@ -190,7 +203,8 @@ trait WebFrame
     * array of individual words for spellchecking. The `spellCheck` function runs
     * asynchronously and calls the `callback` function with an array of misspelt words
     * when complete.
-  An example of using node-spellchecker as provider:
+    *
+    * An example of using node-spellchecker as provider:
     */
   def setSpellCheckProvider(language: String, provider: Provider): Unit = js.native
   
@@ -199,13 +213,19 @@ trait WebFrame
     *
     * > **NOTE**: Visual zoom is disabled by default in Electron. To re-enable it,
     * call:
+    *
+    * > **NOTE**: Visual zoom only applies to pinch-to-zoom behavior. Cmd+/-/0 zoom
+    * shortcuts are controlled by the 'zoomIn', 'zoomOut', and 'resetZoom' MenuItem
+    * roles in the application Menu. To disable shortcuts, manually define the Menu
+    * and omit zoom roles from the definition.
     */
   def setVisualZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): Unit = js.native
   
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
     * divided by 100, so 300% = 3.0.
-  The factor must be greater than 0.0.
+    *
+    * The factor must be greater than 0.0.
     */
   def setZoomFactor(factor: Double): Unit = js.native
   
@@ -213,6 +233,11 @@ trait WebFrame
     * Changes the zoom level to the specified level. The original size is 0 and each
     * increment above or below represents zooming 20% larger or smaller to default
     * limits of 300% and 50% of original size, respectively.
+    *
+    * > **NOTE**: The zoom policy at the Chromium level is same-origin, meaning that
+    * the zoom level for a specific domain propagates across all instances of windows
+    * with the same domain. Differentiating the window URLs will make zoom work
+    * per-window.
     */
   def setZoomLevel(level: Double): Unit = js.native
   

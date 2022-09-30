@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/pubsub", "IAM")
 @js.native
-class IAM protected ()
+open class IAM protected ()
   extends typings.googleCloudPubsub.iamMod.IAM {
   def this(pubsub: typings.googleCloudPubsub.pubsubMod.PubSub, id: String) = this()
 }

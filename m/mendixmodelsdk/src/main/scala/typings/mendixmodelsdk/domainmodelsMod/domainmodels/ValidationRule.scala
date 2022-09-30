@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/validation-rules relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValidationRule")
+@JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValidationRule")
 @js.native
-class ValidationRule protected () extends Element[IModel] {
+open class ValidationRule protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +44,7 @@ class ValidationRule protected () extends Element[IModel] {
 }
 object ValidationRule {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValidationRule")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValidationRule")
   @js.native
   val ^ : js.Any = js.native
   
@@ -65,13 +65,13 @@ object ValidationRule {
   inline def createIn(container: Entity): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValidationRule.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValidationRule.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValidationRule.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValidationRule.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

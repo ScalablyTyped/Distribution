@@ -14,8 +14,7 @@ trait PointsCloudSystem
   /* private */ var _alwaysVisible: Any = js.native
   
   /**
-    * @param material
-    * @hidden
+    * @internal
     */
   /* private */ var _buildMesh: Any = js.native
   
@@ -64,7 +63,7 @@ trait PointsCloudSystem
   /* private */ var _setPointsColorOrUV: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _size: Double = js.native
   
@@ -238,7 +237,7 @@ trait PointsCloudSystem
   /**
     * The PCS mesh. It's a standard BJS Mesh, so all the methods from the Mesh class are available.
     */
-  var mesh: Mesh = js.native
+  var mesh: js.UndefOr[Mesh] = js.native
   
   /**
     * The PCS name. This name is also given to the underlying mesh.

@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridRow")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutGridRow")
 @js.native
-class LayoutGridRow protected () extends Element[IModel] {
+open class LayoutGridRow protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -70,7 +70,7 @@ class LayoutGridRow protected () extends Element[IModel] {
 }
 object LayoutGridRow {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridRow")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutGridRow")
   @js.native
   val ^ : js.Any = js.native
   
@@ -91,13 +91,13 @@ object LayoutGridRow {
   inline def createIn(container: LayoutGrid): LayoutGridRow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutGridRow]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridRow.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutGridRow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutGridRow.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutGridRow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

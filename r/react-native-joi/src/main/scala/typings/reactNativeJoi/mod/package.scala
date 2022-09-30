@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def allow(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("allow")(List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
+inline def allow(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("allow")(scala.List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
 inline def allow(values: js.Array[Any]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("allow")(values.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def alt(types: SchemaLike*): AlternativesSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[AlternativesSchema]
@@ -45,27 +45,27 @@ inline def describe(schema: Schema): Description_ = ^.asInstanceOf[js.Dynamic].a
 
 inline def description(desc: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("description")(desc.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
-inline def disallow(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("disallow")(List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
+inline def disallow(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("disallow")(scala.List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
 inline def disallow(values: js.Array[Any]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("disallow")(values.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def empty(): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Schema]
 inline def empty(schema: Any): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(schema.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
-inline def equal(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("equal")(List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
+inline def equal(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("equal")(scala.List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
 inline def equal(values: js.Array[Any]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("equal")(values.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def example(value: Any): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("example")(value.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def exist(): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("exist")().asInstanceOf[Schema]
 
-inline def extend(`extension`: js.Array[Extension], extensions: (Extension | js.Array[Extension])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(`extension`.asInstanceOf[js.Any]).`++`(extensions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
-inline def extend(`extension`: Extension, extensions: (Extension | js.Array[Extension])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(`extension`.asInstanceOf[js.Any]).`++`(extensions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def extend(`extension`: js.Array[Extension], extensions: (Extension | js.Array[Extension])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(`extension`.asInstanceOf[js.Any]).`++`(extensions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def extend(`extension`: Extension, extensions: (Extension | js.Array[Extension])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(`extension`.asInstanceOf[js.Any]).`++`(extensions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def forbidden(): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("forbidden")().asInstanceOf[Schema]
 
 inline def func(): FunctionSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("func")().asInstanceOf[FunctionSchema]
 
-inline def invalid(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
+inline def invalid(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(scala.List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
 inline def invalid(values: js.Array[Any]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(values.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def isRef(ref: Any): /* is react-native-joi.react-native-joi.Reference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRef")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is react-native-joi.react-native-joi.Reference */ Boolean]
@@ -77,7 +77,7 @@ inline def `lazy`(cb: js.Function0[Schema], options: LazyOptions): LazySchema = 
 
 inline def meta(meta: js.Object): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("meta")(meta.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
-inline def not(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
+inline def not(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(scala.List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
 inline def not(values: js.Array[Any]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(values.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def notes(notes: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("notes")(notes.asInstanceOf[js.Any]).asInstanceOf[Schema]
@@ -88,7 +88,7 @@ inline def number(): NumberSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("num
 inline def `object`(): ObjectSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("object")().asInstanceOf[ObjectSchema]
 inline def `object`(schema: SchemaMap): ObjectSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(schema.asInstanceOf[js.Any]).asInstanceOf[ObjectSchema]
 
-inline def only(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
+inline def only(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(scala.List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
 inline def only(values: js.Array[Any]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(values.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def optional(): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")().asInstanceOf[Schema]
@@ -120,7 +120,7 @@ inline def tags(notes: js.Array[String]): Schema = ^.asInstanceOf[js.Dynamic].ap
 
 inline def unit(name: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("unit")(name.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
-inline def valid(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
+inline def valid(value: Any, values: Any*): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(scala.List(value.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Schema]
 inline def valid(values: js.Array[Any]): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(values.asInstanceOf[js.Any]).asInstanceOf[Schema]
 
 inline def validate[T](value: T, schema: SchemaLike): ValidationResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[ValidationResult[T]]

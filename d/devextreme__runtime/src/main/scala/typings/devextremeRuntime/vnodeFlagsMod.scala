@@ -1,31 +1,31 @@
 package typings.devextremeRuntime
 
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`-16385`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`0`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`1024`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`128`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`12`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`14`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`16384`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`16`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`1`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`2033`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`2048`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`256`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`2`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`32768`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`32776`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`32`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`4096`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`448`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`481`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`4`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`512`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`64`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`65536`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`81920`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`8192`
-import typings.devextremeRuntime.devextremeRuntimeNumbers.`8`
+import typings.devextremeRuntime.devextremeRuntimeInts.`-16385`
+import typings.devextremeRuntime.devextremeRuntimeInts.`0`
+import typings.devextremeRuntime.devextremeRuntimeInts.`1024`
+import typings.devextremeRuntime.devextremeRuntimeInts.`128`
+import typings.devextremeRuntime.devextremeRuntimeInts.`12`
+import typings.devextremeRuntime.devextremeRuntimeInts.`14`
+import typings.devextremeRuntime.devextremeRuntimeInts.`16384`
+import typings.devextremeRuntime.devextremeRuntimeInts.`16`
+import typings.devextremeRuntime.devextremeRuntimeInts.`1`
+import typings.devextremeRuntime.devextremeRuntimeInts.`2033`
+import typings.devextremeRuntime.devextremeRuntimeInts.`2048`
+import typings.devextremeRuntime.devextremeRuntimeInts.`256`
+import typings.devextremeRuntime.devextremeRuntimeInts.`2`
+import typings.devextremeRuntime.devextremeRuntimeInts.`32768`
+import typings.devextremeRuntime.devextremeRuntimeInts.`32776`
+import typings.devextremeRuntime.devextremeRuntimeInts.`32`
+import typings.devextremeRuntime.devextremeRuntimeInts.`4096`
+import typings.devextremeRuntime.devextremeRuntimeInts.`448`
+import typings.devextremeRuntime.devextremeRuntimeInts.`481`
+import typings.devextremeRuntime.devextremeRuntimeInts.`4`
+import typings.devextremeRuntime.devextremeRuntimeInts.`512`
+import typings.devextremeRuntime.devextremeRuntimeInts.`64`
+import typings.devextremeRuntime.devextremeRuntimeInts.`65536`
+import typings.devextremeRuntime.devextremeRuntimeInts.`81920`
+import typings.devextremeRuntime.devextremeRuntimeInts.`8192`
+import typings.devextremeRuntime.devextremeRuntimeInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,13 +33,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vnodeFlagsMod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`0`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`1`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`2`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`4`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`8`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`16`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`12`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`0`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`1`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`2`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`4`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`8`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`16`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`12`
   */
   trait ChildFlags extends StObject
   object ChildFlags {
@@ -60,31 +60,31 @@ object vnodeFlagsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`1`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`2`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`4`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`8`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`16`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`32`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`64`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`128`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`256`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`512`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`1024`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`2048`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`4096`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`8192`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`16384`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`32768`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`65536`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`32776`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`448`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`481`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`14`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`2033`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`81920`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`-16385`
-    - typings.devextremeRuntime.devextremeRuntimeNumbers.`12`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`1`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`2`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`4`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`8`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`16`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`32`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`64`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`128`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`256`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`512`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`1024`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`2048`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`4096`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`8192`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`16384`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`32768`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`65536`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`32776`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`448`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`481`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`14`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`2033`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`81920`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`-16385`
+    - typings.devextremeRuntime.devextremeRuntimeInts.`12`
   */
   trait VNodeFlags extends StObject
   object VNodeFlags {

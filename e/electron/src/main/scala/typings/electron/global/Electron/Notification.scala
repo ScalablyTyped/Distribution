@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Notification
   */
-class Notification ()
+open class Notification ()
   extends typings.electron.Electron.Notification {
   def this(options: NotificationConstructorOptions) = this()
 }

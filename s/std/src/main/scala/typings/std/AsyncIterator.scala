@@ -16,7 +16,7 @@ trait AsyncIterator[T, TReturn, TNext] extends StObject {
   /* standard es2018.asynciterable */
   var `return`: js.UndefOr[
     js.Function1[
-      /* value */ js.UndefOr[TReturn | js.Thenable[TReturn]], 
+      /* value */ js.UndefOr[TReturn | PromiseLike[TReturn]], 
       js.Promise[IteratorResult[T, TReturn]]
     ]
   ] = js.native

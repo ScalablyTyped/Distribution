@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object createBannerStrings {
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait `camel-case` extends StObject
   inline def `camel-case`: `camel-case` = "camel-case".asInstanceOf[`camel-case`]
   

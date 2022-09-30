@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object equalityMod {
   
-  @JSImport("dnd-core/lib/utils/equality", JSImport.Namespace)
+  @JSImport("dnd-core/dist/utils/equality", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

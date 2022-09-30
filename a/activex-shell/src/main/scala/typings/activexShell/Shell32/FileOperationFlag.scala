@@ -1,33 +1,33 @@
 package typings.activexShell.Shell32
 
-import typings.activexShell.activexShellNumbers.`1024`
-import typings.activexShell.activexShellNumbers.`128`
-import typings.activexShell.activexShellNumbers.`16`
-import typings.activexShell.activexShellNumbers.`2048`
-import typings.activexShell.activexShellNumbers.`256`
-import typings.activexShell.activexShellNumbers.`4096`
-import typings.activexShell.activexShellNumbers.`4`
-import typings.activexShell.activexShellNumbers.`512`
-import typings.activexShell.activexShellNumbers.`64`
-import typings.activexShell.activexShellNumbers.`8192`
-import typings.activexShell.activexShellNumbers.`8`
+import typings.activexShell.activexShellInts.`1024`
+import typings.activexShell.activexShellInts.`128`
+import typings.activexShell.activexShellInts.`16`
+import typings.activexShell.activexShellInts.`2048`
+import typings.activexShell.activexShellInts.`256`
+import typings.activexShell.activexShellInts.`4096`
+import typings.activexShell.activexShellInts.`4`
+import typings.activexShell.activexShellInts.`512`
+import typings.activexShell.activexShellInts.`64`
+import typings.activexShell.activexShellInts.`8192`
+import typings.activexShell.activexShellInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShell.activexShellNumbers.`64`
-  - typings.activexShell.activexShellNumbers.`128`
-  - typings.activexShell.activexShellNumbers.`16`
-  - typings.activexShell.activexShellNumbers.`512`
-  - typings.activexShell.activexShellNumbers.`8192`
-  - typings.activexShell.activexShellNumbers.`2048`
-  - typings.activexShell.activexShellNumbers.`1024`
-  - typings.activexShell.activexShellNumbers.`4096`
-  - typings.activexShell.activexShellNumbers.`8`
-  - typings.activexShell.activexShellNumbers.`4`
-  - typings.activexShell.activexShellNumbers.`256`
+  - typings.activexShell.activexShellInts.`64`
+  - typings.activexShell.activexShellInts.`128`
+  - typings.activexShell.activexShellInts.`16`
+  - typings.activexShell.activexShellInts.`512`
+  - typings.activexShell.activexShellInts.`8192`
+  - typings.activexShell.activexShellInts.`2048`
+  - typings.activexShell.activexShellInts.`1024`
+  - typings.activexShell.activexShellInts.`4096`
+  - typings.activexShell.activexShellInts.`8`
+  - typings.activexShell.activexShellInts.`4`
+  - typings.activexShell.activexShellInts.`256`
 */
 trait FileOperationFlag extends StObject
 object FileOperationFlag {

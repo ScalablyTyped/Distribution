@@ -10,10 +10,10 @@ Nice and simple notifications for Electron apps
 | ------------------ | :-------------: |
 | Full name          | electron-notify |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2539 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 90.66666666666667 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/hankbao/electron-notify#readme)

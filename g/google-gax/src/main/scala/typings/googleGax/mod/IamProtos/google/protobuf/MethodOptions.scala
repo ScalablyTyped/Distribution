@@ -5,7 +5,6 @@ import typings.googleGax.iamServiceMod.google.protobuf.IMethodOptions
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new MethodOptions.
   * @param [properties] Properties to set
   */
-class MethodOptions ()
+open class MethodOptions ()
   extends typings.googleGax.iamServiceMod.google.protobuf.MethodOptions {
   def this(properties: IMethodOptions) = this()
 }
@@ -53,6 +52,8 @@ object MethodOptions {
   inline def create(): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   inline def create(properties: IMethodOptions): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   /**
     * Decodes a MethodOptions message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -64,9 +65,8 @@ object MethodOptions {
   /* static member */
   inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
-  inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
-  inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   /**
     * Decodes a MethodOptions message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -76,7 +76,6 @@ object MethodOptions {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
-  inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   
   /**
     * Encodes the specified MethodOptions message. Does not implicitly {@link google.protobuf.MethodOptions.verify|verify} messages.
@@ -104,7 +103,7 @@ object MethodOptions {
     * @returns MethodOptions
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.protobuf.MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.MethodOptions]
   
   /**
     * Creates a plain object from a MethodOptions message. Also converts values to other types if specified.
@@ -113,11 +112,11 @@ object MethodOptions {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.MethodOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.MethodOptions): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
     message: typings.googleGax.iamServiceMod.google.protobuf.MethodOptions,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a MethodOptions message.
@@ -125,5 +124,5 @@ object MethodOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

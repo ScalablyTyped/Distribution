@@ -18,10 +18,10 @@ object configureStoreMod {
   val ^ : js.Any = js.native
   
   inline def default(
-    middlewares: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]],
-    enhancers: js.Array[StoreEnhancer[js.Any, js.Object]],
-    rootReducer: Reducer[js.Any, AnyAction],
-    initialState: js.Any,
+    middlewares: js.Array[Middleware[js.Object, Any, Dispatch[AnyAction]]],
+    enhancers: js.Array[StoreEnhancer[Any, js.Object]],
+    rootReducer: Reducer[Any, AnyAction],
+    initialState: Any,
     devToolsOptions: DevToolsOptions
-  ): Store[js.Any, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(middlewares.asInstanceOf[js.Any], enhancers.asInstanceOf[js.Any], rootReducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], devToolsOptions.asInstanceOf[js.Any])).asInstanceOf[Store[js.Any, AnyAction]]
+  ): Store[Any, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(middlewares.asInstanceOf[js.Any], enhancers.asInstanceOf[js.Any], rootReducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], devToolsOptions.asInstanceOf[js.Any])).asInstanceOf[Store[Any, AnyAction]]
 }

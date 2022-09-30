@@ -5,11 +5,11 @@ import typings.jimpCore.etcMod.DecoderFn
 import typings.jimpCore.etcMod.EncoderFn
 import typings.jimpCore.etcMod.Image
 import typings.jimpPng.jimpPngBooleans.`true`
-import typings.jimpPng.jimpPngNumbers.`-1`
-import typings.jimpPng.jimpPngNumbers.`1`
-import typings.jimpPng.jimpPngNumbers.`2`
-import typings.jimpPng.jimpPngNumbers.`3`
-import typings.jimpPng.jimpPngNumbers.`4`
+import typings.jimpPng.jimpPngInts.`-1`
+import typings.jimpPng.jimpPngInts.`1`
+import typings.jimpPng.jimpPngInts.`2`
+import typings.jimpPng.jimpPngInts.`3`
+import typings.jimpPng.jimpPngInts.`4`
 import typings.jimpPng.jimpPngStrings.imageSlashpng
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -109,7 +109,7 @@ object anon {
     
     var PNG_FILTER_AVERAGE: `3`
     
-    var PNG_FILTER_NONE: typings.jimpPng.jimpPngNumbers.`0`
+    var PNG_FILTER_NONE: typings.jimpPng.jimpPngInts.`0`
     
     var PNG_FILTER_PATH: `4`
     
@@ -132,7 +132,7 @@ object anon {
       
       inline def setPNG_FILTER_AVERAGE(value: `3`): Self = StObject.set(x, "PNG_FILTER_AVERAGE", value.asInstanceOf[js.Any])
       
-      inline def setPNG_FILTER_NONE(value: typings.jimpPng.jimpPngNumbers.`0`): Self = StObject.set(x, "PNG_FILTER_NONE", value.asInstanceOf[js.Any])
+      inline def setPNG_FILTER_NONE(value: typings.jimpPng.jimpPngInts.`0`): Self = StObject.set(x, "PNG_FILTER_NONE", value.asInstanceOf[js.Any])
       
       inline def setPNG_FILTER_PATH(value: `4`): Self = StObject.set(x, "PNG_FILTER_PATH", value.asInstanceOf[js.Any])
       

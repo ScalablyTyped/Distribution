@@ -172,7 +172,7 @@ object cheerioMod {
     ): Cheerio[T] = js.native
     def attr[T /* <: AnyNode */](values: Record[String, String | Null]): Cheerio[T] = js.native
     @JSName("attr")
-    def attr_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
+    def attr_T_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
     
     def data[T /* <: AnyNode */](): Record[String, Any] = js.native
     def data[T /* <: AnyNode */](name: String): js.UndefOr[Any] = js.native
@@ -198,7 +198,7 @@ object cheerioMod {
         ]
     ): Cheerio[T] = js.native
     @JSName("prop")
-    def prop_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
+    def prop_T_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
     @JSName("prop")
     def prop_attribs[T /* <: AnyNode */](name: attribs): StringDictionary[String] = js.native
     @JSName("prop")

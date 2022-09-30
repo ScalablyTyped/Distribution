@@ -2,8 +2,16 @@ package typings.wordpressComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
+import typings.react.mod.FocusEvent
+import typings.react.mod.FocusEventHandler
 import typings.react.mod.HTMLProps
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.wordpressComponents.anon.Describedby
 import typings.wordpressComponents.modalMod.Modal.Props
@@ -77,8 +85,11 @@ object modalMod {
       
       /**
         * This function is called to indicate that the modal should be closed.
+        *
+        * The originating event might be different depending on how the modal
+        * is closed.
         */
-      def onRequestClose(): Unit
+      var onRequestClose: KeyboardEventHandler[Element] | MouseEventHandler[Element] | FocusEventHandler[Element]
       
       /**
         * If this property is added, it will an additional class name to the
@@ -110,8 +121,11 @@ object modalMod {
     }
     object Props {
       
-      inline def apply(onRequestClose: () => Unit, title: String): Props = {
-        val __obj = js.Dynamic.literal(onRequestClose = js.Any.fromFunction0(onRequestClose), title = title.asInstanceOf[js.Any])
+      inline def apply(
+        onRequestClose: (FocusEvent[Element, Element]) | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) => Unit,
+        title: String
+      ): Props = {
+        val __obj = js.Dynamic.literal(onRequestClose = js.Any.fromFunction1(onRequestClose), title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
@@ -149,7 +163,9 @@ object modalMod {
         
         inline def setIsDismissibleUndefined: Self = StObject.set(x, "isDismissible", js.undefined)
         
-        inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+        inline def setOnRequestClose(
+          value: (FocusEvent[Element, Element]) | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) => Unit
+        ): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
         
         inline def setOverlayClassName(value: String): Self = StObject.set(x, "overlayClassName", value.asInstanceOf[js.Any])
         

@@ -1,8 +1,8 @@
 package typings.firebaseFirestore.indexEsm2017Mod
 
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`-1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`-1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

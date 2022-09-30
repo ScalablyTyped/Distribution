@@ -12,7 +12,7 @@ object engineDotcomputeShaderMod {
     
     trait WebGPUEngine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _createComputePipelineStageDescriptor(computeShader: String, defines: Nullable[String], entryPoint: String): GPUProgrammableStage
     }
     object WebGPUEngine {

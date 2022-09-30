@@ -13,7 +13,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -21,7 +21,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -29,7 +29,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -37,7 +37,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -45,7 +45,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -53,7 +53,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -61,7 +61,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -69,7 +69,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -77,7 +77,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -85,7 +85,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -93,7 +93,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: String,
@@ -101,7 +101,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -109,7 +109,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -117,7 +117,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -125,7 +125,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -133,7 +133,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -141,7 +141,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -149,7 +149,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -157,7 +157,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -165,7 +165,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -173,7 +173,7 @@ object entityErrorMod {
     opt_code: Double,
     opt_fields: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -181,7 +181,7 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: String,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     error: String,
     opt_solution: Unit,
@@ -189,8 +189,8 @@ object entityErrorMod {
     opt_code: Unit,
     opt_fields: js.Array[String],
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def apply(error: String, opt_solution: Unit, opt_details: Unit, opt_code: Unit, opt_fields: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def apply(error: String, opt_solution: Unit, opt_details: Unit, opt_code: Unit, opt_fields: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(error.asInstanceOf[js.Any], opt_solution.asInstanceOf[js.Any], opt_details.asInstanceOf[js.Any], opt_code.asInstanceOf[js.Any], opt_fields.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   @JSImport("@nginstack/orm/lib/EntityError", JSImport.Namespace)
   @js.native

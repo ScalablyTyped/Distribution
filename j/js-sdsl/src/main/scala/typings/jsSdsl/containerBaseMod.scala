@@ -3,7 +3,8 @@ package typings.jsSdsl
 import typings.jsSdsl.anon.ForEach
 import typings.jsSdsl.anon.Length
 import typings.jsSdsl.anon.Size
-import typings.jsSdsl.anon.`0`
+import typings.jsSdsl.jsSdslInts.`0`
+import typings.jsSdsl.jsSdslInts.`1`
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,12 +25,6 @@ object containerBaseMod {
       * @return Boolean about if the container is empty.
       */
     def empty(): Boolean = js.native
-    
-    /**
-      * @description Container's size.
-      * @protected
-      */
-    /* protected */ var length: Double = js.native
     
     /**
       * @return The size of the container.
@@ -113,7 +108,7 @@ object containerBaseMod {
   @JSImport("js-sdsl/dist/cjs/container/ContainerBase", "ContainerIterator")
   @js.native
   /* protected */ abstract class ContainerIterator[T] () extends StObject {
-    /* protected */ def this(iteratorType: Boolean) = this()
+    /* protected */ def this(iteratorType: IteratorType) = this()
     
     /**
       * @description Get a copy of itself.<br/>
@@ -133,14 +128,12 @@ object containerBaseMod {
     /**
       * @description Iterator's type.
       */
-    val iteratorType: Boolean = js.native
+    val iteratorType: IteratorType = js.native
     
     /**
       * @description Move `this` iterator to next.
       */
     def next(): this.type = js.native
-    
-    /* protected */ var node: Any = js.native
     
     /**
       * @description Pointers to element.
@@ -158,17 +151,18 @@ object containerBaseMod {
       */
     def pre(): this.type = js.native
   }
-  /* static members */
-  object ContainerIterator {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.jsSdsl.jsSdslInts.`0`
+    - typings.jsSdsl.jsSdslInts.`1`
+  */
+  trait IteratorType extends StObject
+  object IteratorType {
     
-    @JSImport("js-sdsl/dist/cjs/container/ContainerBase", "ContainerIterator.NORMAL")
-    @js.native
-    val NORMAL: /* false */ Boolean = js.native
+    inline def NORMAL: `0` = 0.asInstanceOf[`0`]
     
-    @JSImport("js-sdsl/dist/cjs/container/ContainerBase", "ContainerIterator.REVERSE")
-    @js.native
-    val REVERSE: /* true */ Boolean = js.native
+    inline def REVERSE: `1` = 1.asInstanceOf[`1`]
   }
   
-  type initContainer[T] = (Size & ForEach[T]) | (Length & ForEach[T]) | (`0` & ForEach[T])
+  type initContainer[T] = (Size & ForEach[T]) | (Length & ForEach[T]) | (typings.jsSdsl.anon.`0` & ForEach[T])
 }

@@ -18,6 +18,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.book_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.bookmark_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.box_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.briefcase_
+import typings.blueprintjsIcons.blueprintjsIconsStrings.bug_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.buggy_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.build_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.calculator_
@@ -301,6 +302,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.box_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.briefcase_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`bring-data`
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.bug_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.buggy_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.build_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.calculator_
@@ -920,6 +922,8 @@ object BlueprintIcons16Id {
   inline def briefcase: briefcase_ = "briefcase".asInstanceOf[briefcase_]
   
   inline def `bring-data`: typings.blueprintjsIcons.blueprintjsIconsStrings.`bring-data` = "bring-data".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`bring-data`]
+  
+  inline def bug: bug_ = "bug".asInstanceOf[bug_]
   
   inline def buggy: buggy_ = "buggy".asInstanceOf[buggy_]
   

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MaintenanceWindowExecutionTaskIdentity extends StObject {
   
   /**
+    * The details for the CloudWatch alarm applied to your maintenance window task.
+    */
+  var AlarmConfiguration: js.UndefOr[typings.awsSdk.ssmMod.AlarmConfiguration] = js.undefined
+  
+  /**
     * The time the task execution finished.
     */
   var EndTime: js.UndefOr[js.Date] = js.undefined
@@ -42,6 +47,11 @@ trait MaintenanceWindowExecutionTaskIdentity extends StObject {
   var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   
   /**
+    * The CloudWatch alarm that was invoked by the maintenance window task.
+    */
+  var TriggeredAlarms: js.UndefOr[AlarmStateInformationList] = js.undefined
+  
+  /**
     * The ID of the maintenance window execution that ran the task.
     */
   var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
@@ -54,6 +64,10 @@ object MaintenanceWindowExecutionTaskIdentity {
   }
   
   extension [Self <: MaintenanceWindowExecutionTaskIdentity](x: Self) {
+    
+    inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "AlarmConfiguration", js.undefined)
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
@@ -82,6 +96,12 @@ object MaintenanceWindowExecutionTaskIdentity {
     inline def setTaskType(value: MaintenanceWindowTaskType): Self = StObject.set(x, "TaskType", value.asInstanceOf[js.Any])
     
     inline def setTaskTypeUndefined: Self = StObject.set(x, "TaskType", js.undefined)
+    
+    inline def setTriggeredAlarms(value: AlarmStateInformationList): Self = StObject.set(x, "TriggeredAlarms", value.asInstanceOf[js.Any])
+    
+    inline def setTriggeredAlarmsUndefined: Self = StObject.set(x, "TriggeredAlarms", js.undefined)
+    
+    inline def setTriggeredAlarmsVarargs(value: AlarmStateInformation*): Self = StObject.set(x, "TriggeredAlarms", js.Array(value*))
     
     inline def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
     

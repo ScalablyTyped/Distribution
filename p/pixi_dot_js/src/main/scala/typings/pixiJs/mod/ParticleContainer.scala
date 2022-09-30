@@ -1,55 +1,41 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.anon.Position
+import typings.pixiParticleContainer.mod.IParticleProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The ParticleContainer class is a really fast version of the Container built solely for speed,
-  * so use when you need a lot of sprites or particles.
-  *
-  * The tradeoff of the ParticleContainer is that most advanced functionality will not work.
-  * ParticleContainer implements the basic object transform (position, scale, rotation)
-  * and some advanced functionality like tint (as of v4.5.6).
-  *
-  * Other more advanced functionality like masking, children, filters, etc will not work on sprites in this batch.
-  *
-  * It's extremely easy to use:
-  * ```js
-  * let container = new ParticleContainer();
-  *
-  * for (let i = 0; i < 100; ++i)
-  * {
-  *     let sprite = PIXI.Sprite.from("myImage.png");
-  *     container.addChild(sprite);
-  * }
-  * ```
-  *
-  * And here you have a hundred sprites that will be rendered at the speed of light.
-  *
-  * @class
-  * @extends PIXI.Container
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "ParticleContainer")
 @js.native
-class ParticleContainer ()
-  extends StObject
-     with typings.pixiJs.PIXI.ParticleContainer {
+/**
+  * @param maxSize - The maximum number of particles that can be rendered by the container.
+  *  Affects size of allocated buffers.
+  * @param properties - The properties of children that should be uploaded to the gpu and applied.
+  * @param {boolean} [properties.vertices=false] - When true, vertices be uploaded and applied.
+  *                  if sprite's ` scale/anchor/trim/frame/orig` is dynamic, please set `true`.
+  * @param {boolean} [properties.position=true] - When true, position be uploaded and applied.
+  * @param {boolean} [properties.rotation=false] - When true, rotation be uploaded and applied.
+  * @param {boolean} [properties.uvs=false] - When true, uvs be uploaded and applied.
+  * @param {boolean} [properties.tint=false] - When true, alpha and tint be uploaded and applied.
+  * @param {number} [batchSize=16384] - Number of particles per batch. If less than maxSize, it uses maxSize instead.
+  * @param {boolean} [autoResize=false] - If true, container allocates more batches in case
+  *  there are more than `maxSize` particles.
+  */
+open class ParticleContainer ()
+  extends typings.pixiParticleContainer.mod.ParticleContainer {
   def this(maxSize: Double) = this()
-  def this(maxSize: Double, properties: Position) = this()
-  def this(maxSize: Unit, properties: Position) = this()
+  def this(maxSize: Double, properties: IParticleProperties) = this()
+  def this(maxSize: Unit, properties: IParticleProperties) = this()
   def this(maxSize: Double, properties: Unit, batchSize: Double) = this()
-  def this(maxSize: Double, properties: Position, batchSize: Double) = this()
+  def this(maxSize: Double, properties: IParticleProperties, batchSize: Double) = this()
   def this(maxSize: Unit, properties: Unit, batchSize: Double) = this()
-  def this(maxSize: Unit, properties: Position, batchSize: Double) = this()
+  def this(maxSize: Unit, properties: IParticleProperties, batchSize: Double) = this()
   def this(maxSize: Double, properties: Unit, batchSize: Double, autoResize: Boolean) = this()
   def this(maxSize: Double, properties: Unit, batchSize: Unit, autoResize: Boolean) = this()
-  def this(maxSize: Double, properties: Position, batchSize: Double, autoResize: Boolean) = this()
-  def this(maxSize: Double, properties: Position, batchSize: Unit, autoResize: Boolean) = this()
+  def this(maxSize: Double, properties: IParticleProperties, batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Double, properties: IParticleProperties, batchSize: Unit, autoResize: Boolean) = this()
   def this(maxSize: Unit, properties: Unit, batchSize: Double, autoResize: Boolean) = this()
   def this(maxSize: Unit, properties: Unit, batchSize: Unit, autoResize: Boolean) = this()
-  def this(maxSize: Unit, properties: Position, batchSize: Double, autoResize: Boolean) = this()
-  def this(maxSize: Unit, properties: Position, batchSize: Unit, autoResize: Boolean) = this()
+  def this(maxSize: Unit, properties: IParticleProperties, batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Unit, properties: IParticleProperties, batchSize: Unit, autoResize: Boolean) = this()
 }

@@ -146,8 +146,8 @@ object global {
     
     inline def promote(subclass: js.Function0[Any], prefix: String): js.Function0[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promote")(subclass.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Any]]
     
-    inline def proxy(method: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
-    inline def proxy(method: HandleEvent, scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
-    inline def proxy(method: `0`, scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
+    inline def proxy(method: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((scala.List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
+    inline def proxy(method: HandleEvent, scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((scala.List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
+    inline def proxy(method: `0`, scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((scala.List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
   }
 }

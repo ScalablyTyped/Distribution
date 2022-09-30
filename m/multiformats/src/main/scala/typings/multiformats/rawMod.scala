@@ -1,6 +1,6 @@
 package typings.multiformats
 
-import typings.multiformats.multiformatsNumbers.`85`
+import typings.multiformats.multiformatsInts.`85`
 import typings.multiformats.multiformatsStrings.raw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rawMod {
   
-  @JSImport("multiformats/dist/types/src/codecs/raw", JSImport.Namespace)
+  @JSImport("multiformats/types/src/codecs/raw", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("multiformats/dist/types/src/codecs/raw", "code")
+  @JSImport("multiformats/types/src/codecs/raw", "code")
   @js.native
   val code: `85` = js.native
   
@@ -20,9 +20,9 @@ object rawMod {
   
   inline def encode(node: js.typedarray.Uint8Array): ByteView[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(node.asInstanceOf[js.Any]).asInstanceOf[ByteView[js.typedarray.Uint8Array]]
   
-  @JSImport("multiformats/dist/types/src/codecs/raw", "name")
+  @JSImport("multiformats/types/src/codecs/raw", "name")
   @js.native
   val name: raw = js.native
   
-  type ByteView[T] = typings.multiformats.blockInterfaceMod.ByteView[T]
+  type ByteView[T] = typings.multiformats.codecsInterfaceMod.ByteView[T]
 }

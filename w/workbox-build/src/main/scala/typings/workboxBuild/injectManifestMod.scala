@@ -14,7 +14,7 @@ object injectManifestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def injectManifest(config: InjectManifestConfig): InjectManifestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("injectManifest")(config.asInstanceOf[js.Any]).asInstanceOf[InjectManifestResult]
+  inline def injectManifest(config: InjectManifestConfig): js.Promise[Count] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectManifest")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Count]]
   
   trait InjectManifestConfig extends StObject {
     

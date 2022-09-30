@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "all-keys" : "3.1.1"
+      "all-keys" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "all-keys" : "3.1.1"
+      "all-keys" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -3,7 +3,7 @@ package typings.reactReduxI18n
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.ReactType
+import typings.react.mod.ElementType
 import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
@@ -26,10 +26,10 @@ object mod {
   trait I18n extends StObject {
     
     def l(timestamp: Double): String = js.native
-    def l(timestamp: Double, options: js.Any): String = js.native
+    def l(timestamp: Double, options: Any): String = js.native
     
     def t(code: String): String = js.native
-    def t(code: String, options: js.Any): String = js.native
+    def t(code: String, options: Any): String = js.native
   }
   @JSImport("react-redux-i18n", "I18n")
   @js.native
@@ -38,43 +38,43 @@ object mod {
   
   @JSImport("react-redux-i18n", "Localize")
   @js.native
-  class Localize protected ()
-    extends Component[LocalizeProps, js.Object, js.Any] {
+  open class Localize protected ()
+    extends Component[LocalizeProps, js.Object, Any] {
     def this(props: LocalizeProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LocalizeProps, context: js.Any) = this()
+    def this(props: LocalizeProps, context: Any) = this()
   }
   
   @JSImport("react-redux-i18n", "Translate")
   @js.native
-  class Translate protected ()
-    extends Component[TranslateProps, js.Object, js.Any] {
+  open class Translate protected ()
+    extends Component[TranslateProps, js.Object, Any] {
     def this(props: TranslateProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TranslateProps, context: js.Any) = this()
+    def this(props: TranslateProps, context: Any) = this()
   }
   
   inline def i18nReducer(): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")().asInstanceOf[Reducer[I18nState, AnyAction]]
-  inline def i18nReducer(state: js.Any): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any]).asInstanceOf[Reducer[I18nState, AnyAction]]
-  inline def i18nReducer(state: js.Any, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
-  inline def i18nReducer(state: Unit, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
+  inline def i18nReducer(state: Any): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any]).asInstanceOf[Reducer[I18nState, AnyAction]]
+  inline def i18nReducer(state: Any, options: Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
+  inline def i18nReducer(state: Unit, options: Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
   
-  inline def loadTranslations(translationsObject: TranslationObjects): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTranslations")(translationsObject.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
+  inline def loadTranslations(translationsObject: TranslationObjects): DispatchCallback[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTranslations")(translationsObject.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[Any]]
   
-  inline def setLocale(locale: String): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
+  inline def setLocale(locale: String): DispatchCallback[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[Any]]
   
-  inline def syncTranslationWithStore(store: Store[js.Any, AnyAction]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncTranslationWithStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def syncTranslationWithStore(store: Store[Any, AnyAction]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncTranslationWithStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type DispatchCallback[S /* <: Action[js.Any] */] = js.Function2[
+  type DispatchCallback[S /* <: Action[Any] */] = js.Function2[
     /* dispatch */ js.UndefOr[Dispatch[S]], 
     /* getState */ js.UndefOr[js.Function0[S]], 
-    js.Any
+    Any
   ]
   
   trait I18nState extends StObject {
@@ -110,7 +110,7 @@ object mod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tag: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     var value: String | Double | js.Object
   }
@@ -143,7 +143,7 @@ object mod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
@@ -151,13 +151,11 @@ object mod {
     }
   }
   
-  type SubTranslationObject = String | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-redux-i18n.react-redux-i18n.SubTranslationObject */ js.Object
-  ])
+  type SubTranslationObject = String | StringDictionary[Any]
   
   trait TranslateProps
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -165,7 +163,7 @@ object mod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tag: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     var value: String
   }
@@ -190,7 +188,7 @@ object mod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
@@ -198,5 +196,14 @@ object mod {
     }
   }
   
-  type TranslationObjects = StringDictionary[SubTranslationObject]
+  trait TranslationObjects
+    extends StObject
+       with /* lang */ StringDictionary[SubTranslationObject]
+  object TranslationObjects {
+    
+    inline def apply(): TranslationObjects = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TranslationObjects]
+    }
+  }
 }

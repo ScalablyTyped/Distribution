@@ -16,11 +16,11 @@ object mod {
     
     @JSImport("leaflet", "Control.GroupedLayers")
     @js.native
-    class GroupedLayers protected ()
+    open class GroupedLayers protected ()
       extends typings.leaflet.mod.Control_ {
       def this(
         baseLayers: StringDictionary[Layer],
-        groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[js.Any]]],
+        groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[Any]]],
         options: GroupedLayersOptions
       ) = this()
     }
@@ -34,7 +34,7 @@ object mod {
     
     inline def groupedLayers(
       baseLayers: StringDictionary[Layer],
-      groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[js.Any]]],
+      groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[Any]]],
       options: GroupedLayersOptions
     ): Control_ = (^.asInstanceOf[js.Dynamic].applyDynamic("groupedLayers")(baseLayers.asInstanceOf[js.Any], groupedOverlays.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Control_]
   }
@@ -75,7 +75,7 @@ object mod {
       
       inline def setExclusiveGroupsUndefined: Self = StObject.set(x, "exclusiveGroups", js.undefined)
       
-      inline def setExclusiveGroupsVarargs(value: String*): Self = StObject.set(x, "exclusiveGroups", js.Array(value :_*))
+      inline def setExclusiveGroupsVarargs(value: String*): Self = StObject.set(x, "exclusiveGroups", js.Array(value*))
       
       inline def setGroupCheckboxes(value: Boolean): Self = StObject.set(x, "groupCheckboxes", value.asInstanceOf[js.Any])
       

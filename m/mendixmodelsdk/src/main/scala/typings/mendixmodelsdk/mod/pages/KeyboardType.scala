@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.KeyboardType")
 @js.native
-class KeyboardType protected ()
+open class KeyboardType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.KeyboardType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

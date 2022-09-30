@@ -104,7 +104,7 @@ object effectRendererMod {
       */
     def this(creationOptions: EffectWrapperCreationOptions) = this()
     
-    /** @hidden */
+    /** @internal */
     var _drawWrapper: DrawWrapper = js.native
     
     /* private */ var _onContextRestoredObserver: Any = js.native

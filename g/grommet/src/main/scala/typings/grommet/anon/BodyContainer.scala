@@ -9,13 +9,13 @@ trait BodyContainer extends StObject {
   
   var body: js.UndefOr[BoxProps] = js.undefined
   
-  var container: js.UndefOr[BoxProps | `15`] = js.undefined
+  var container: js.UndefOr[BoxProps | `16`] = js.undefined
   
   var footer: js.UndefOr[BoxProps] = js.undefined
   
   var header: js.UndefOr[BoxProps] = js.undefined
   
-  var hover: js.UndefOr[`27`] = js.undefined
+  var hover: js.UndefOr[`28`] = js.undefined
 }
 object BodyContainer {
   
@@ -30,7 +30,7 @@ object BodyContainer {
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    inline def setContainer(value: BoxProps | `15`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: BoxProps | `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -42,7 +42,7 @@ object BodyContainer {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setHover(value: `27`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `28`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
   }

@@ -27,7 +27,7 @@ object utilsMod {
   
   inline def getRandomTestNetIP(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomTestNetIP")().asInstanceOf[String]
   
-  inline def hasMethods(obj: Any, methodNames: String*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMethods")(List(obj.asInstanceOf[js.Any]).`++`(methodNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def hasMethods(obj: Any, methodNames: String*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMethods")(scala.List(obj.asInstanceOf[js.Any]).`++`(methodNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def headerize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("headerize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   

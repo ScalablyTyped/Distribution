@@ -11,12 +11,12 @@ object taskRunnerMod {
   
   @JSImport("protractor/built/taskRunner", "TaskRunner")
   @js.native
-  class TaskRunner protected () extends EventEmitter {
-    def this(configFile: String, additionalConfig: Config, task: js.Any, runInFork: Boolean) = this()
+  open class TaskRunner protected () extends EventEmitter {
+    def this(configFile: String, additionalConfig: Config, task: Any, runInFork: Boolean) = this()
     
-    /* private */ var additionalConfig: js.Any = js.native
+    /* private */ var additionalConfig: Any = js.native
     
-    /* private */ var configFile: js.Any = js.native
+    /* private */ var configFile: Any = js.native
     
     /**
       * Sends the run command.
@@ -25,22 +25,22 @@ object taskRunnerMod {
       *     result of the run:
       *       taskId, specs, capabilities, failedCount, exitCode, specResults
       */
-    def run(): Promise[js.Any] = js.native
+    def run(): Promise[Any] = js.native
     
-    /* private */ var runInFork: js.Any = js.native
+    /* private */ var runInFork: Any = js.native
     
-    /* private */ var task: js.Any = js.native
+    /* private */ var task: Any = js.native
   }
   
   trait RunResults extends StObject {
     
-    var capabilities: js.Any
+    var capabilities: Any
     
     var exitCode: Double
     
     var failedCount: Double
     
-    var specResults: js.Array[js.Any]
+    var specResults: js.Array[Any]
     
     var specs: js.Array[String]
     
@@ -49,10 +49,10 @@ object taskRunnerMod {
   object RunResults {
     
     inline def apply(
-      capabilities: js.Any,
+      capabilities: Any,
       exitCode: Double,
       failedCount: Double,
-      specResults: js.Array[js.Any],
+      specResults: js.Array[Any],
       specs: js.Array[String],
       taskId: Double
     ): RunResults = {
@@ -62,19 +62,19 @@ object taskRunnerMod {
     
     extension [Self <: RunResults](x: Self) {
       
-      inline def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
       inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
       
       inline def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
       
-      inline def setSpecResults(value: js.Array[js.Any]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
+      inline def setSpecResults(value: js.Array[Any]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
       
-      inline def setSpecResultsVarargs(value: js.Any*): Self = StObject.set(x, "specResults", js.Array(value :_*))
+      inline def setSpecResultsVarargs(value: Any*): Self = StObject.set(x, "specResults", js.Array(value*))
       
       inline def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
       
-      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
+      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value*))
       
       inline def setTaskId(value: Double): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,7 @@ object uploadMediaMod {
   inline def uploadMedia(options: UploadMediaOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadMedia")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>, 'alt_text' | 'caption' | 'source_url' | 'title'> ]: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Media<'edit'>[P]} */ trait MediaItem extends StObject {
+  - Dropped {[ P in std.Exclude<keyof @wordpress/core-data.@wordpress/core-data/schema.Schema.Media<'edit'>, 'alt_text' | 'caption' | 'source_url' | 'title'> ]: @wordpress/core-data.@wordpress/core-data/schema.Schema.Media<'edit'>[P]} */ trait MediaItem extends StObject {
     
     var alt: String
     
@@ -72,7 +72,7 @@ object uploadMediaMod {
     /**
       * Additional data to include in the request.
       */
-    var additionalData: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var additionalData: js.UndefOr[Record[String, Any]] = js.undefined
     
     /**
       * Array with the types of media that can be uploaded, if unset all types are allowed.
@@ -124,7 +124,7 @@ object uploadMediaMod {
     
     extension [Self <: UploadMediaOptions](x: Self) {
       
-      inline def setAdditionalData(value: Record[String, js.Any]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+      inline def setAdditionalData(value: Record[String, Any]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
       inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
       
@@ -132,7 +132,7 @@ object uploadMediaMod {
       
       inline def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
       
-      inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
+      inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value*))
       
       inline def setFilesList(value: ArrayLike[File]): Self = StObject.set(x, "filesList", value.asInstanceOf[js.Any])
       

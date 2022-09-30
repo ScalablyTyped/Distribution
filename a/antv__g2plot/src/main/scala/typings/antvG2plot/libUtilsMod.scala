@@ -46,7 +46,7 @@ object libUtilsMod {
   
   inline def adjustYMetaByZero(data: Data, field: String): Meta = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustYMetaByZero")(data.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Meta]
   
-  inline def deepAssign(rst: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepAssign")(List(rst.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def deepAssign(rst: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepAssign")(scala.List(rst.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def findGeometry(
     view: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify View */ Any,
@@ -100,7 +100,7 @@ object libUtilsMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify View */ Any
   ]]
   
-  inline def invariant(condition: Boolean, format: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")((List(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def invariant(condition: Boolean, format: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")((scala.List(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   inline def isBetween(value: Double, start: Double, end: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBetween")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -108,7 +108,7 @@ object libUtilsMod {
   
   inline def kebabCase(word: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebabCase")(word.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def log(level: LEVEL, condition: Boolean, format: Any, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((List(level.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def log(level: LEVEL, condition: Boolean, format: Any, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((scala.List(level.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   object measureTextWidth {
     

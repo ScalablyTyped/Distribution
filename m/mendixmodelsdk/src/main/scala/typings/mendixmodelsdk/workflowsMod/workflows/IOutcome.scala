@@ -7,32 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interfaces and instance classes for types from the Mendix sub meta model `Workflows`.
-  */
-/**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/workflows relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 @js.native
 trait IOutcome
   extends StObject
      with IElement {
   
-  val containerAsExclusiveSplitActivity: IExclusiveSplitActivity = js.native
+  val containerAsConditionOutcomeActivity: IConditionOutcomeActivity = js.native
   
   val containerAsParallelSplitActivity: IParallelSplitActivity = js.native
   
-  val containerAsWorkflowTask: IWorkflowTask = js.native
+  val containerAsUserTask: IUserTask = js.native
   
   /**
     * This property is required and cannot be set to null.
-    *
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
     */
   val flow: IFlow = js.native
   

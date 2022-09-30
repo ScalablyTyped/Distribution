@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dropTargetMonitorImplMod {
   
-  @JSImport("react-dnd/lib/common/DropTargetMonitorImpl", "DropTargetMonitorImpl")
+  @JSImport("react-dnd/dist/internals/DropTargetMonitorImpl", "DropTargetMonitorImpl")
   @js.native
-  class DropTargetMonitorImpl protected ()
+  open class DropTargetMonitorImpl protected ()
     extends StObject
-       with DropTargetMonitor {
+       with DropTargetMonitor[Any, Any] {
     def this(manager: DragDropManager) = this()
     
-    /* private */ var internalMonitor: js.Any = js.native
+    /* private */ var internalMonitor: Any = js.native
     
-    /* private */ var targetId: js.Any = js.native
+    /* private */ var targetId: Any = js.native
   }
 }

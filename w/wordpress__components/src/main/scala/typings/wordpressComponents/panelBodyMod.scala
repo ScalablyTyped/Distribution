@@ -35,7 +35,7 @@ object panelBodyMod {
         * to the classes of the wrapper div. If no `className` is passed then
         * only `components-panel__body` and `is-opened` is used.
         */
-      var className: js.UndefOr[js.Any] = js.undefined
+      var className: js.UndefOr[Any] = js.undefined
       
       /**
         * An icon to be shown next to the `PanelBody` title.
@@ -79,7 +79,7 @@ object panelBodyMod {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
         inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         

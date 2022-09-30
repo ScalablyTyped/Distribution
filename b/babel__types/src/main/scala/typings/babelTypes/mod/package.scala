@@ -2113,13 +2113,13 @@ inline def continueStatement(label: Identifier_): ContinueStatement_ = ^.asInsta
 
 inline def createFlowUnionType(types: js.Array[FlowType]): UnionTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlowUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[UnionTypeAnnotation_]
 
-inline def createFlowUnionType_T_FlowType_T[T /* <: FlowType */](types: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlowUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def createFlowUnionType_T_T[T /* <: FlowType */](types: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlowUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[T]
 
 inline def createTypeAnnotationBasedOnTypeof(`type`: string | number | undefined | boolean | function_ | `object` | symbol): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_]
 
 inline def createUnionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnionTypeAnnotation")(types.asInstanceOf[js.Any]).asInstanceOf[UnionTypeAnnotation_]
 
-inline def createUnionTypeAnnotation_T_FlowType_T[T /* <: FlowType */](types: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnionTypeAnnotation")(types.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def createUnionTypeAnnotation_T_T[T /* <: FlowType */](types: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnionTypeAnnotation")(types.asInstanceOf[js.Any]).asInstanceOf[T]
 
 inline def debuggerStatement(): DebuggerStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("debuggerStatement")().asInstanceOf[DebuggerStatement_]
 
@@ -3551,7 +3551,7 @@ inline def isNode(node: js.Object): /* is @babel/types.@babel/types.Node */ Bool
 
 inline def isNodesEquivalent(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodesEquivalent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def isNodesEquivalent_T_PartialNode[T /* <: Partial[Node] */](a: T, b: Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodesEquivalent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+inline def isNodesEquivalent_T[T /* <: Partial[Node] */](a: T, b: Any): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodesEquivalent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
 
 inline def isNoop(): /* is @babel/types.@babel/types.Noop */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoop")().asInstanceOf[/* is @babel/types.@babel/types.Noop */ Boolean]
 inline def isNoop(node: js.Object): /* is @babel/types.@babel/types.Noop */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoop")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.Noop */ Boolean]
@@ -4518,9 +4518,9 @@ inline def isYieldExpression(node: js.Object, opts: js.Object): /* is @babel/typ
 inline def isYieldExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.YieldExpression */ Boolean]
 inline def isYieldExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types.YieldExpression */ Boolean]
 
-inline def is_P_Node[P /* <: Node */](`type`: String, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is_P_Node[P /* <: Node */](`type`: String, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is_P_Node[P /* <: Node */](`type`: String, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
 
 inline def jsxAttribute(name: JSXIdentifier_): JSXAttribute_ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute_]
 inline def jsxAttribute(name: JSXIdentifier_, value: JSXElement_): JSXAttribute_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute_]

@@ -1,8 +1,8 @@
 package typings.popoto.anon
 
-import typings.popoto.popotoNumbers.`0`
-import typings.popoto.popotoNumbers.`1`
-import typings.popoto.popotoNumbers.`2`
+import typings.popoto.popotoInts.`0`
+import typings.popoto.popotoInts.`1`
+import typings.popoto.popotoInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.18.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickMicroflow")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickMicroflow")
 @js.native
-class OnClickMicroflow protected () extends OnClickBehavior {
+open class OnClickMicroflow protected () extends OnClickBehavior {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,7 +31,7 @@ class OnClickMicroflow protected () extends OnClickBehavior {
 }
 object OnClickMicroflow {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickMicroflow")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickMicroflow")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object OnClickMicroflow {
   inline def createIn(container: DynamicImageViewer): OnClickMicroflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OnClickMicroflow]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickMicroflow.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickMicroflow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickMicroflow.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickMicroflow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

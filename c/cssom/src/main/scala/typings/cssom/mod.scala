@@ -3,15 +3,15 @@ package typings.cssom
 import org.scalablytyped.runtime.NumberDictionary
 import typings.cssom.anon.Error
 import typings.cssom.anon.Expression
-import typings.cssom.cssomNumbers.`1001`
-import typings.cssom.cssomNumbers.`12`
-import typings.cssom.cssomNumbers.`13`
-import typings.cssom.cssomNumbers.`1`
-import typings.cssom.cssomNumbers.`3`
-import typings.cssom.cssomNumbers.`4`
-import typings.cssom.cssomNumbers.`5`
-import typings.cssom.cssomNumbers.`7`
-import typings.cssom.cssomNumbers.`8`
+import typings.cssom.cssomInts.`1001`
+import typings.cssom.cssomInts.`12`
+import typings.cssom.cssomInts.`13`
+import typings.cssom.cssomInts.`1`
+import typings.cssom.cssomInts.`3`
+import typings.cssom.cssomInts.`4`
+import typings.cssom.cssomInts.`5`
+import typings.cssom.cssomInts.`7`
+import typings.cssom.cssomInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

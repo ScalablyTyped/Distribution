@@ -14,6 +14,11 @@ trait IODataRemoteEntitySource
      with IQueryBasedRemoteEntitySource {
   
   /**
+    * In version 8.16.0: introduced
+    */
+  val countable: Boolean = js.native
+  
+  /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore

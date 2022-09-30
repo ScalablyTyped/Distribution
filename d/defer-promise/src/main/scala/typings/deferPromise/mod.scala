@@ -1,6 +1,7 @@
 package typings.deferPromise
 
 import typings.deferPromise.mod.global.DeferPromise.Deferred
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ object mod {
         
         def resolve(): Unit = js.native
         def resolve(value: T): Unit = js.native
-        def resolve(value: js.Thenable[T]): Unit = js.native
+        def resolve(value: PromiseLike[T]): Unit = js.native
       }
     }
   }

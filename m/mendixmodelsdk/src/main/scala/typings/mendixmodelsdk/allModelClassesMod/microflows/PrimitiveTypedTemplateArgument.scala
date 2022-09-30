@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument")
 @js.native
-class PrimitiveTypedTemplateArgument protected ()
+open class PrimitiveTypedTemplateArgument protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class PrimitiveTypedTemplateArgument protected ()
 }
 object PrimitiveTypedTemplateArgument {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,13 +53,13 @@ object PrimitiveTypedTemplateArgument {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.TypedTemplate): typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.PrimitiveTypedTemplateArgument.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

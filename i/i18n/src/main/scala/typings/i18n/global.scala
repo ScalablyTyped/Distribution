@@ -35,7 +35,7 @@ object global {
       * @param phraseOrOptions - The phrase to translate or options for translation
       * @returns The translated phrase
       */
-    inline def __(phraseOrOptions: String, replace: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def __(phraseOrOptions: String, replace: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(scala.List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     /**
       * Translate the given phrase using locale configuration
       * @param phraseOrOptions - The phrase to translate or options for translation
@@ -43,7 +43,7 @@ object global {
       * @returns The translated phrase
       */
     inline def __(phraseOrOptions: String, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def __(phraseOrOptions: TranslateOptions, replace: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def __(phraseOrOptions: TranslateOptions, replace: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__")(scala.List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     inline def __(phraseOrOptions: TranslateOptions, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def addLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -123,7 +123,7 @@ object global {
       * @param phraseOrOptions - The phrase to translate or options for translation
       * @returns The translated phrase
       */
-    inline def mf(phraseOrOptions: String, replace: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def mf(phraseOrOptions: String, replace: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(scala.List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     /**
       * Translate the given phrase using locale configuration and MessageFormat
       * @param phraseOrOptions - The phrase to translate or options for translation
@@ -131,7 +131,7 @@ object global {
       * @returns The translated phrase
       */
     inline def mf(phraseOrOptions: String, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def mf(phraseOrOptions: TranslateOptions, replace: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def mf(phraseOrOptions: TranslateOptions, replace: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(scala.List(phraseOrOptions.asInstanceOf[js.Any]).`++`(replace.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     inline def mf(phraseOrOptions: TranslateOptions, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("__mf")(phraseOrOptions.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**

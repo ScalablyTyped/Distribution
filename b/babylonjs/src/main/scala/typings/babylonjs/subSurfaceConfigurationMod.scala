@@ -73,8 +73,7 @@ object subSurfaceConfigurationMod {
     var enabled: Boolean = js.native
     
     /**
-      * @param color
-      * @hidden
+      * @internal
       * https://zero-radiance.github.io/post/sampling-diffusion/
       *
       * Importance sample the normalized diffuse reflectance profile for the computed value of 's'.
@@ -148,8 +147,7 @@ object subSurfaceConfigurationMod {
     val ^ : js.Any = js.native
     
     /**
-      * @param _
-      * @hidden
+      * @internal
       */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }

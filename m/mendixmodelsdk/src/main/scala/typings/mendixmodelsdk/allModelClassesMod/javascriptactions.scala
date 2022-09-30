@@ -19,9 +19,9 @@ object javascriptactions {
     * In version 8.0.0: removed experimental
     * In version 7.21.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptAction")
   @js.native
-  class JavaScriptAction protected ()
+  open class JavaScriptAction protected ()
     extends typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction {
     def this(
       model: AbstractModel,
@@ -33,7 +33,7 @@ object javascriptactions {
   }
   object JavaScriptAction {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptAction")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptAction")
     @js.native
     val ^ : js.Any = js.native
     
@@ -45,13 +45,13 @@ object javascriptactions {
     inline def createIn(container: IFolderBase): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptAction]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptAction.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptAction.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptAction.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptAction.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -61,9 +61,9 @@ object javascriptactions {
     * In version 8.0.0: removed experimental
     * In version 7.21.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter")
   @js.native
-  class JavaScriptActionParameter protected ()
+  open class JavaScriptActionParameter protected ()
     extends typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter {
     def this(
       model: AbstractModel,
@@ -76,7 +76,7 @@ object javascriptactions {
   }
   object JavaScriptActionParameter {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter")
     @js.native
     val ^ : js.Any = js.native
     
@@ -89,13 +89,13 @@ object javascriptactions {
     inline def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.JavaScriptActionParameter]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.JavaScriptActionParameter.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -104,9 +104,9 @@ object javascriptactions {
   /**
     * In version 8.4.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType")
   @js.native
-  class NanoflowJavaScriptActionParameterType protected ()
+  open class NanoflowJavaScriptActionParameterType protected ()
     extends typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType {
     def this(
       model: AbstractModel,
@@ -119,7 +119,7 @@ object javascriptactions {
   }
   object NanoflowJavaScriptActionParameterType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType")
     @js.native
     val ^ : js.Any = js.native
     
@@ -132,13 +132,13 @@ object javascriptactions {
     inline def create(model: IModel): typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.NanoflowJavaScriptActionParameterType]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javascriptactions.NanoflowJavaScriptActionParameterType.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -1,8 +1,6 @@
 package typings.reduxAuthWrapper
 
 import typings.history.mod.Location
-import typings.history.mod.LocationDescriptorObject
-import typings.history.mod.LocationState
 import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
@@ -24,20 +22,26 @@ object redirectMod {
   inline def connectedReduxRedirect[OwnProps, State](config: ConnectedReduxRedirectConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedReduxRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps]]
   
   inline def connectedRouterRedirect[OwnProps, State](config: ConnectedRouterRedirectConfig[OwnProps, State]): AuthWrapperDecorator[
-    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
+    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ Any, Action[Any]]])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedRouterRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[
-    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
+    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ Any, Action[Any]]])
   ]]
   
   inline def createOnEnter[State](config: CreateOnEnterConfig[State]): js.Function3[
-    /* store */ Store[js.Any, AnyAction], 
+    /* store */ Store[Any, AnyAction], 
     /* nextState */ State, 
-    /* redirect */ js.Function1[/* location */ LocationDescriptorObject[LocationState], Unit], 
+    /* redirect */ js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ /* location */ Any, 
+      Unit
+    ], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnEnter")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* store */ Store[js.Any, AnyAction], 
+    /* store */ Store[Any, AnyAction], 
     /* nextState */ State, 
-    /* redirect */ js.Function1[/* location */ LocationDescriptorObject[LocationState], Unit], 
+    /* redirect */ js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ /* location */ Any, 
+      Unit
+    ], 
     Unit
   ]]
   
@@ -49,7 +53,7 @@ object redirectMod {
     
     var allowRedirectBack: js.UndefOr[Boolean | (StateSelector[State, OwnProps, Boolean])] = js.undefined
     
-    var redirectAction: js.UndefOr[js.Function1[/* location */ Location[LocationState], Action[js.Any]]] = js.undefined
+    var redirectAction: js.UndefOr[js.Function1[/* location */ Location, Action[Any]]] = js.undefined
     
     var redirectPath: String | (StateSelector[State, OwnProps, String])
     
@@ -73,7 +77,7 @@ object redirectMod {
       
       inline def setAllowRedirectBackUndefined: Self = StObject.set(x, "allowRedirectBack", js.undefined)
       
-      inline def setRedirectAction(value: /* location */ Location[LocationState] => Action[js.Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
+      inline def setRedirectAction(value: /* location */ Location => Action[Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
       
       inline def setRedirectActionUndefined: Self = StObject.set(x, "redirectAction", js.undefined)
       

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_qrcode"
-version := "v0.12.0-dt-20220818Z-5dc17a"
+version := "v0.12.0-dt-20220818Z-0808d1"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

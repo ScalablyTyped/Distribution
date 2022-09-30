@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue__shared
 
-Typings are for version 3.2.39
+Typings are for version 3.2.40
 
 ## Library description:
 internal utils shared across @vue packages

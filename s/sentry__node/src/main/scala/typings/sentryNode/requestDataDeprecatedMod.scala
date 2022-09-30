@@ -5,7 +5,6 @@ import typings.sentryNode.anon.ServerName
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.miscMod.ExtractedNodeRequestData
 import typings.sentryUtils.anon.Ip
-import typings.sentryUtils.requestdataMod.CrossPlatformRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object requestDataDeprecatedMod {
   inline def parseRequest(event: Event, req: ExpressRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
   inline def parseRequest(event: Event, req: ExpressRequest, options: ParseRequestOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
   
-  type ExpressRequest = CrossPlatformRequest
+  type ExpressRequest = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CrossPlatformRequest */ Any
   
   type ParseRequestOptions = js.UndefOr[Ip] & ServerName
 }

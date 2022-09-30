@@ -1,9 +1,9 @@
 package typings.tizenCommonWeb.mod
 
-import typings.tizenCommonWeb.tizenCommonWebNumbers.`3600`
-import typings.tizenCommonWeb.tizenCommonWebNumbers.`604800`
-import typings.tizenCommonWeb.tizenCommonWebNumbers.`60`
-import typings.tizenCommonWeb.tizenCommonWebNumbers.`86400`
+import typings.tizenCommonWeb.tizenCommonWebInts.`3600`
+import typings.tizenCommonWeb.tizenCommonWebInts.`604800`
+import typings.tizenCommonWeb.tizenCommonWebInts.`60`
+import typings.tizenCommonWeb.tizenCommonWebInts.`86400`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

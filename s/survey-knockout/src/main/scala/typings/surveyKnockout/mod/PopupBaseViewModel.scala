@@ -33,6 +33,8 @@ open class PopupBaseViewModel protected () extends Base {
   
   def initializePopupContainer(): Unit = js.native
   
+  var isAutoScroll: Boolean = js.native
+  
   def isFocusedContent: Boolean = js.native
   
   def isModal: Boolean = js.native

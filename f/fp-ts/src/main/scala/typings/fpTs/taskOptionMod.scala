@@ -209,7 +209,7 @@ object taskOptionMod {
   
   inline def filterMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* fga */ TaskOption[A], TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fga */ TaskOption[A], TaskOption[B]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ TaskOption[A], TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ TaskOption[A], TaskOption[B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ TaskOption[A], TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ TaskOption[A], TaskOption[B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ TaskOption[js.Function1[/* a */ A, Any]], TaskOption[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ TaskOption[js.Function1[/* a */ A, Any]], TaskOption[Any]]]
   
@@ -243,7 +243,7 @@ object taskOptionMod {
   
   inline def fromPredicate[A](predicate: Predicate[A]): js.Function1[/* b */ A, TaskOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ A, TaskOption[A]]]
   
-  inline def fromPredicate_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
+  inline def fromPredicate_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, TaskOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, TaskOption[B]]]
   
   @JSImport("fp-ts/lib/TaskOption", "fromTask")
   @js.native
@@ -286,7 +286,7 @@ object taskOptionMod {
   
   inline def partitionMap[A, B, C](f: js.Function1[/* a */ A, Either_[B, C]]): js.Function1[/* fa */ TaskOption[A], Separated_[TaskOption[B], TaskOption[C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ TaskOption[A], Separated_[TaskOption[B], TaskOption[C]]]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ TaskOption[A], Separated_[TaskOption[A], TaskOption[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ TaskOption[A], Separated_[TaskOption[A], TaskOption[B]]]]
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ TaskOption[A], Separated_[TaskOption[A], TaskOption[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ TaskOption[A], Separated_[TaskOption[A], TaskOption[B]]]]
   
   @JSImport("fp-ts/lib/TaskOption", "separate")
   @js.native

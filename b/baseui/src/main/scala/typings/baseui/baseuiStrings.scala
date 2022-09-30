@@ -271,18 +271,6 @@ object baseuiStrings {
   inline def AZ: AZ = "AZ".asInstanceOf[AZ]
   
   @js.native
-  sealed trait `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis` extends StObject
-  inline def `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`: `Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis` = ("Afghanistan (\u202B\u0627\u0641\u063A\u0627\u0646\u0633\u062A\u0627\u0646\u202C\u200E)").asInstanceOf[`Afghanistan Leftparenthesis‫افغانستان‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Albania LeftparenthesisShqipëriRightparenthesis` extends StObject
-  inline def `Albania LeftparenthesisShqipëriRightparenthesis`: `Albania LeftparenthesisShqipëriRightparenthesis` = ("Albania (Shqip\u00EBri)").asInstanceOf[`Albania LeftparenthesisShqipëriRightparenthesis`]
-  
-  @js.native
-  sealed trait `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis` extends StObject
-  inline def `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`: `Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis` = ("Algeria (\u202B\u0627\u0644\u062C\u0632\u0627\u0626\u0631\u202C\u200E)").asInstanceOf[`Algeria Leftparenthesis‫الجزائر‬‎Rightparenthesis`]
-  
-  @js.native
   sealed trait `American Samoa` extends StObject
   inline def `American Samoa`: `American Samoa` = ("American Samoa").asInstanceOf[`American Samoa`]
   
@@ -307,10 +295,6 @@ object baseuiStrings {
   inline def Argentina: Argentina = "Argentina".asInstanceOf[Argentina]
   
   @js.native
-  sealed trait `Armenia LeftparenthesisՀայաստանRightparenthesis` extends StObject
-  inline def `Armenia LeftparenthesisՀայաստանRightparenthesis`: `Armenia LeftparenthesisՀայաստանRightparenthesis` = ("Armenia (\u0540\u0561\u0575\u0561\u057D\u057F\u0561\u0576)").asInstanceOf[`Armenia LeftparenthesisՀայաստանRightparenthesis`]
-  
-  @js.native
   sealed trait ArrowDown extends StObject
   inline def ArrowDown: ArrowDown = "ArrowDown".asInstanceOf[ArrowDown]
   
@@ -333,14 +317,6 @@ object baseuiStrings {
   @js.native
   sealed trait Australia extends StObject
   inline def Australia: Australia = "Australia".asInstanceOf[Australia]
-  
-  @js.native
-  sealed trait `Austria LeftparenthesisÖsterreichRightparenthesis` extends StObject
-  inline def `Austria LeftparenthesisÖsterreichRightparenthesis`: `Austria LeftparenthesisÖsterreichRightparenthesis` = ("Austria (\u00D6sterreich)").asInstanceOf[`Austria LeftparenthesisÖsterreichRightparenthesis`]
-  
-  @js.native
-  sealed trait `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` extends StObject
-  inline def `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` = ("Azerbaijan (Az\u0259rbaycan)").asInstanceOf[`Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`]
   
   @js.native
   sealed trait BA
@@ -471,56 +447,24 @@ object baseuiStrings {
   inline def Bahamas: Bahamas = "Bahamas".asInstanceOf[Bahamas]
   
   @js.native
-  sealed trait `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis` extends StObject
-  inline def `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`: `Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis` = ("Bahrain (\u202B\u0627\u0644\u0628\u062D\u0631\u064A\u0646\u202C\u200E)").asInstanceOf[`Bahrain Leftparenthesis‫البحرين‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis` extends StObject
-  inline def `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`: `Bangladesh LeftparenthesisবাংলাদেশRightparenthesis` = ("Bangladesh (\u09AC\u09BE\u0982\u09B2\u09BE\u09A6\u09C7\u09B6)").asInstanceOf[`Bangladesh LeftparenthesisবাংলাদেশRightparenthesis`]
-  
-  @js.native
   sealed trait Barbados extends StObject
   inline def Barbados: Barbados = "Barbados".asInstanceOf[Barbados]
-  
-  @js.native
-  sealed trait `Belarus LeftparenthesisБеларусьRightparenthesis` extends StObject
-  inline def `Belarus LeftparenthesisБеларусьRightparenthesis`: `Belarus LeftparenthesisБеларусьRightparenthesis` = ("Belarus (\u0411\u0435\u043B\u0430\u0440\u0443\u0441\u044C)").asInstanceOf[`Belarus LeftparenthesisБеларусьRightparenthesis`]
-  
-  @js.native
-  sealed trait `Belgium LeftparenthesisBelgiëRightparenthesis` extends StObject
-  inline def `Belgium LeftparenthesisBelgiëRightparenthesis`: `Belgium LeftparenthesisBelgiëRightparenthesis` = ("Belgium (Belgi\u00EB)").asInstanceOf[`Belgium LeftparenthesisBelgiëRightparenthesis`]
   
   @js.native
   sealed trait Belize extends StObject
   inline def Belize: Belize = "Belize".asInstanceOf[Belize]
   
   @js.native
-  sealed trait `Benin LeftparenthesisBéninRightparenthesis` extends StObject
-  inline def `Benin LeftparenthesisBéninRightparenthesis`: `Benin LeftparenthesisBéninRightparenthesis` = ("Benin (B\u00E9nin)").asInstanceOf[`Benin LeftparenthesisBéninRightparenthesis`]
-  
-  @js.native
   sealed trait Bermuda extends StObject
   inline def Bermuda: Bermuda = "Bermuda".asInstanceOf[Bermuda]
-  
-  @js.native
-  sealed trait `Bhutan LeftparenthesisའབྲུགRightparenthesis` extends StObject
-  inline def `Bhutan LeftparenthesisའབྲུགRightparenthesis`: `Bhutan LeftparenthesisའབྲུགRightparenthesis` = ("Bhutan (\u0F60\u0F56\u0FB2\u0F74\u0F42)").asInstanceOf[`Bhutan LeftparenthesisའབྲུགRightparenthesis`]
   
   @js.native
   sealed trait Bolivia extends StObject
   inline def Bolivia: Bolivia = "Bolivia".asInstanceOf[Bolivia]
   
   @js.native
-  sealed trait `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis` extends StObject
-  inline def `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`: `Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis` = ("Bosnia and Herzegovina (\u0411\u043E\u0441\u043D\u0430 \u0438 \u0425\u0435\u0440\u0446\u0435\u0433\u043E\u0432\u0438\u043D\u0430)").asInstanceOf[`Bosnia and Herzegovina LeftparenthesisБосна и ХерцеговинаRightparenthesis`]
-  
-  @js.native
   sealed trait Botswana extends StObject
   inline def Botswana: Botswana = "Botswana".asInstanceOf[Botswana]
-  
-  @js.native
-  sealed trait `Brazil LeftparenthesisBrasilRightparenthesis` extends StObject
-  inline def `Brazil LeftparenthesisBrasilRightparenthesis`: `Brazil LeftparenthesisBrasilRightparenthesis` = ("Brazil (Brasil)").asInstanceOf[`Brazil LeftparenthesisBrasilRightparenthesis`]
   
   @js.native
   sealed trait `British Indian Ocean Territory` extends StObject
@@ -535,16 +479,8 @@ object baseuiStrings {
   inline def Brunei: Brunei = "Brunei".asInstanceOf[Brunei]
   
   @js.native
-  sealed trait `Bulgaria LeftparenthesisБългарияRightparenthesis` extends StObject
-  inline def `Bulgaria LeftparenthesisБългарияRightparenthesis`: `Bulgaria LeftparenthesisБългарияRightparenthesis` = ("Bulgaria (\u0411\u044A\u043B\u0433\u0430\u0440\u0438\u044F)").asInstanceOf[`Bulgaria LeftparenthesisБългарияRightparenthesis`]
-  
-  @js.native
   sealed trait `Burkina Faso` extends StObject
   inline def `Burkina Faso`: `Burkina Faso` = ("Burkina Faso").asInstanceOf[`Burkina Faso`]
-  
-  @js.native
-  sealed trait `Burundi LeftparenthesisUburundiRightparenthesis` extends StObject
-  inline def `Burundi LeftparenthesisUburundiRightparenthesis`: `Burundi LeftparenthesisUburundiRightparenthesis` = ("Burundi (Uburundi)").asInstanceOf[`Burundi LeftparenthesisUburundiRightparenthesis`]
   
   @js.native
   sealed trait CA
@@ -677,64 +613,24 @@ object baseuiStrings {
   inline def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
-  sealed trait `Cambodia Leftparenthesisកម្ពុជាRightparenthesis` extends StObject
-  inline def `Cambodia Leftparenthesisកម្ពុជាRightparenthesis`: `Cambodia Leftparenthesisកម្ពុជាRightparenthesis` = ("Cambodia (\u1780\u1798\u17D2\u1796\u17BB\u1787\u17B6)").asInstanceOf[`Cambodia Leftparenthesisកម្ពុជាRightparenthesis`]
-  
-  @js.native
-  sealed trait `Cameroon LeftparenthesisCamerounRightparenthesis` extends StObject
-  inline def `Cameroon LeftparenthesisCamerounRightparenthesis`: `Cameroon LeftparenthesisCamerounRightparenthesis` = ("Cameroon (Cameroun)").asInstanceOf[`Cameroon LeftparenthesisCamerounRightparenthesis`]
-  
-  @js.native
   sealed trait Canada extends StObject
   inline def Canada: Canada = "Canada".asInstanceOf[Canada]
-  
-  @js.native
-  sealed trait `Cape Verde LeftparenthesisKabu VerdiRightparenthesis` extends StObject
-  inline def `Cape Verde LeftparenthesisKabu VerdiRightparenthesis`: `Cape Verde LeftparenthesisKabu VerdiRightparenthesis` = ("Cape Verde (Kabu Verdi)").asInstanceOf[`Cape Verde LeftparenthesisKabu VerdiRightparenthesis`]
   
   @js.native
   sealed trait `Cayman Islands` extends StObject
   inline def `Cayman Islands`: `Cayman Islands` = ("Cayman Islands").asInstanceOf[`Cayman Islands`]
   
   @js.native
-  sealed trait `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis` extends StObject
-  inline def `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`: `Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis` = ("Central African Republic (R\u00E9publique centrafricaine)").asInstanceOf[`Central African Republic LeftparenthesisRépublique centrafricaineRightparenthesis`]
-  
-  @js.native
-  sealed trait `Chad LeftparenthesisTchadRightparenthesis` extends StObject
-  inline def `Chad LeftparenthesisTchadRightparenthesis`: `Chad LeftparenthesisTchadRightparenthesis` = ("Chad (Tchad)").asInstanceOf[`Chad LeftparenthesisTchadRightparenthesis`]
-  
-  @js.native
   sealed trait Chile extends StObject
   inline def Chile: Chile = "Chile".asInstanceOf[Chile]
-  
-  @js.native
-  sealed trait `China Leftparenthesis中国Rightparenthesis` extends StObject
-  inline def `China Leftparenthesis中国Rightparenthesis`: `China Leftparenthesis中国Rightparenthesis` = ("China (\u4E2D\u56FD)").asInstanceOf[`China Leftparenthesis中国Rightparenthesis`]
   
   @js.native
   sealed trait `Christmas Island` extends StObject
   inline def `Christmas Island`: `Christmas Island` = ("Christmas Island").asInstanceOf[`Christmas Island`]
   
   @js.native
-  sealed trait `Cocos LeftparenthesisKeelingRightparenthesis Islands` extends StObject
-  inline def `Cocos LeftparenthesisKeelingRightparenthesis Islands`: `Cocos LeftparenthesisKeelingRightparenthesis Islands` = ("Cocos (Keeling) Islands").asInstanceOf[`Cocos LeftparenthesisKeelingRightparenthesis Islands`]
-  
-  @js.native
   sealed trait Colombia extends StObject
   inline def Colombia: Colombia = "Colombia".asInstanceOf[Colombia]
-  
-  @js.native
-  sealed trait `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis` extends StObject
-  inline def `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`: `Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis` = ("Comoros (\u202B\u062C\u0632\u0631 \u0627\u0644\u0642\u0645\u0631\u202C\u200E)").asInstanceOf[`Comoros Leftparenthesis‫جزر القمر‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis` extends StObject
-  inline def `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`: `Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis` = ("Congo (DRC) (Jamhuri ya Kisoemokrasia ya Kongo)").asInstanceOf[`Congo LeftparenthesisDRCRightparenthesis LeftparenthesisJamhuri ya Kisoemokrasia ya KongoRightparenthesis`]
-  
-  @js.native
-  sealed trait `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis` extends StObject
-  inline def `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`: `Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis` = ("Congo (Republic) (Congo-Brazzaville)").asInstanceOf[`Congo LeftparenthesisRepublicRightparenthesis LeftparenthesisCongo-BrazzavilleRightparenthesis`]
   
   @js.native
   sealed trait `Cook Islands` extends StObject
@@ -745,24 +641,12 @@ object baseuiStrings {
   inline def `Costa Rica`: `Costa Rica` = ("Costa Rica").asInstanceOf[`Costa Rica`]
   
   @js.native
-  sealed trait `Croatia LeftparenthesisHrvatskaRightparenthesis` extends StObject
-  inline def `Croatia LeftparenthesisHrvatskaRightparenthesis`: `Croatia LeftparenthesisHrvatskaRightparenthesis` = ("Croatia (Hrvatska)").asInstanceOf[`Croatia LeftparenthesisHrvatskaRightparenthesis`]
-  
-  @js.native
   sealed trait Cuba extends StObject
   inline def Cuba: Cuba = "Cuba".asInstanceOf[Cuba]
   
   @js.native
   sealed trait Curaçao extends StObject
   inline def Curaçao: Curaçao = "Cura\u00E7ao".asInstanceOf[Curaçao]
-  
-  @js.native
-  sealed trait `Cyprus LeftparenthesisΚύπροςRightparenthesis` extends StObject
-  inline def `Cyprus LeftparenthesisΚύπροςRightparenthesis`: `Cyprus LeftparenthesisΚύπροςRightparenthesis` = ("Cyprus (\u039A\u03CD\u03C0\u03C1\u03BF\u03C2)").asInstanceOf[`Cyprus LeftparenthesisΚύπροςRightparenthesis`]
-  
-  @js.native
-  sealed trait `Czech Republic LeftparenthesisČeská republikaRightparenthesis` extends StObject
-  inline def `Czech Republic LeftparenthesisČeská republikaRightparenthesis`: `Czech Republic LeftparenthesisČeská republikaRightparenthesis` = ("Czech Republic (\u010Cesk\u00E1 republika)").asInstanceOf[`Czech Republic LeftparenthesisČeská republikaRightparenthesis`]
   
   @js.native
   sealed trait `Côte dRightsinglequotationmarkIvoire` extends StObject
@@ -824,20 +708,12 @@ object baseuiStrings {
   inline def DZ: DZ = "DZ".asInstanceOf[DZ]
   
   @js.native
-  sealed trait `Denmark LeftparenthesisDanmarkRightparenthesis` extends StObject
-  inline def `Denmark LeftparenthesisDanmarkRightparenthesis`: `Denmark LeftparenthesisDanmarkRightparenthesis` = ("Denmark (Danmark)").asInstanceOf[`Denmark LeftparenthesisDanmarkRightparenthesis`]
-  
-  @js.native
   sealed trait Djibouti extends StObject
   inline def Djibouti: Djibouti = "Djibouti".asInstanceOf[Djibouti]
   
   @js.native
   sealed trait Dominica extends StObject
   inline def Dominica: Dominica = "Dominica".asInstanceOf[Dominica]
-  
-  @js.native
-  sealed trait `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis` extends StObject
-  inline def `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`: `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis` = ("Dominican Republic (Rep\u00FAblica Dominicana)").asInstanceOf[`Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`]
   
   @js.native
   sealed trait EC
@@ -880,10 +756,6 @@ object baseuiStrings {
   inline def Ecuador: Ecuador = "Ecuador".asInstanceOf[Ecuador]
   
   @js.native
-  sealed trait `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis` extends StObject
-  inline def `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`: `Egypt Leftparenthesis‫مصر‬‎Rightparenthesis` = ("Egypt (\u202B\u0645\u0635\u0631\u202C\u200E)").asInstanceOf[`Egypt Leftparenthesis‫مصر‬‎Rightparenthesis`]
-  
-  @js.native
   sealed trait `El Salvador` extends StObject
   inline def `El Salvador`: `El Salvador` = ("El Salvador").asInstanceOf[`El Salvador`]
   
@@ -896,20 +768,12 @@ object baseuiStrings {
   inline def Enter: Enter = "Enter".asInstanceOf[Enter]
   
   @js.native
-  sealed trait `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis` extends StObject
-  inline def `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`: `Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis` = ("Equatorial Guinea (Guinea Ecuatorial)").asInstanceOf[`Equatorial Guinea LeftparenthesisGuinea EcuatorialRightparenthesis`]
-  
-  @js.native
   sealed trait Eritrea extends StObject
   inline def Eritrea: Eritrea = "Eritrea".asInstanceOf[Eritrea]
   
   @js.native
   sealed trait Escape extends StObject
   inline def Escape: Escape = "Escape".asInstanceOf[Escape]
-  
-  @js.native
-  sealed trait `Estonia LeftparenthesisEestiRightparenthesis` extends StObject
-  inline def `Estonia LeftparenthesisEestiRightparenthesis`: `Estonia LeftparenthesisEestiRightparenthesis` = ("Estonia (Eesti)").asInstanceOf[`Estonia LeftparenthesisEestiRightparenthesis`]
   
   @js.native
   sealed trait Ethiopia extends StObject
@@ -952,32 +816,12 @@ object baseuiStrings {
   inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
-  sealed trait `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis` extends StObject
-  inline def `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`: `Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis` = ("Falkland Islands (Islas Malvinas)").asInstanceOf[`Falkland Islands LeftparenthesisIslas MalvinasRightparenthesis`]
-  
-  @js.native
-  sealed trait `Faroe Islands LeftparenthesisFøroyarRightparenthesis` extends StObject
-  inline def `Faroe Islands LeftparenthesisFøroyarRightparenthesis`: `Faroe Islands LeftparenthesisFøroyarRightparenthesis` = ("Faroe Islands (F\u00F8royar)").asInstanceOf[`Faroe Islands LeftparenthesisFøroyarRightparenthesis`]
-  
-  @js.native
   sealed trait Fiji extends StObject
   inline def Fiji: Fiji = "Fiji".asInstanceOf[Fiji]
   
   @js.native
-  sealed trait `Finland LeftparenthesisSuomiRightparenthesis` extends StObject
-  inline def `Finland LeftparenthesisSuomiRightparenthesis`: `Finland LeftparenthesisSuomiRightparenthesis` = ("Finland (Suomi)").asInstanceOf[`Finland LeftparenthesisSuomiRightparenthesis`]
-  
-  @js.native
   sealed trait France extends StObject
   inline def France: France = "France".asInstanceOf[France]
-  
-  @js.native
-  sealed trait `French Guiana LeftparenthesisGuyane françaiseRightparenthesis` extends StObject
-  inline def `French Guiana LeftparenthesisGuyane françaiseRightparenthesis`: `French Guiana LeftparenthesisGuyane françaiseRightparenthesis` = ("French Guiana (Guyane fran\u00E7aise)").asInstanceOf[`French Guiana LeftparenthesisGuyane françaiseRightparenthesis`]
-  
-  @js.native
-  sealed trait `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis` extends StObject
-  inline def `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`: `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis` = ("French Polynesia (Polyn\u00E9sie fran\u00E7aise)").asInstanceOf[`French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`]
   
   @js.native
   sealed trait GA
@@ -1096,28 +940,8 @@ object baseuiStrings {
   inline def Gambia: Gambia = "Gambia".asInstanceOf[Gambia]
   
   @js.native
-  sealed trait `Georgia LeftparenthesisსაქართველოRightparenthesis` extends StObject
-  inline def `Georgia LeftparenthesisსაქართველოRightparenthesis`: `Georgia LeftparenthesisსაქართველოRightparenthesis` = ("Georgia (\u10E1\u10D0\u10E5\u10D0\u10E0\u10D7\u10D5\u10D4\u10DA\u10DD)").asInstanceOf[`Georgia LeftparenthesisსაქართველოRightparenthesis`]
-  
-  @js.native
-  sealed trait `Germany LeftparenthesisDeutschlandRightparenthesis` extends StObject
-  inline def `Germany LeftparenthesisDeutschlandRightparenthesis`: `Germany LeftparenthesisDeutschlandRightparenthesis` = ("Germany (Deutschland)").asInstanceOf[`Germany LeftparenthesisDeutschlandRightparenthesis`]
-  
-  @js.native
-  sealed trait `Ghana LeftparenthesisGaanaRightparenthesis` extends StObject
-  inline def `Ghana LeftparenthesisGaanaRightparenthesis`: `Ghana LeftparenthesisGaanaRightparenthesis` = ("Ghana (Gaana)").asInstanceOf[`Ghana LeftparenthesisGaanaRightparenthesis`]
-  
-  @js.native
   sealed trait Gibraltar extends StObject
   inline def Gibraltar: Gibraltar = "Gibraltar".asInstanceOf[Gibraltar]
-  
-  @js.native
-  sealed trait `Greece LeftparenthesisΕλλάδαRightparenthesis` extends StObject
-  inline def `Greece LeftparenthesisΕλλάδαRightparenthesis`: `Greece LeftparenthesisΕλλάδαRightparenthesis` = ("Greece (\u0395\u03BB\u03BB\u03AC\u03B4\u03B1)").asInstanceOf[`Greece LeftparenthesisΕλλάδαRightparenthesis`]
-  
-  @js.native
-  sealed trait `Greenland LeftparenthesisKalaallit NunaatRightparenthesis` extends StObject
-  inline def `Greenland LeftparenthesisKalaallit NunaatRightparenthesis`: `Greenland LeftparenthesisKalaallit NunaatRightparenthesis` = ("Greenland (Kalaallit Nunaat)").asInstanceOf[`Greenland LeftparenthesisKalaallit NunaatRightparenthesis`]
   
   @js.native
   sealed trait Grenada extends StObject
@@ -1138,14 +962,6 @@ object baseuiStrings {
   @js.native
   sealed trait Guernsey extends StObject
   inline def Guernsey: Guernsey = "Guernsey".asInstanceOf[Guernsey]
-  
-  @js.native
-  sealed trait `Guinea LeftparenthesisGuinéeRightparenthesis` extends StObject
-  inline def `Guinea LeftparenthesisGuinéeRightparenthesis`: `Guinea LeftparenthesisGuinéeRightparenthesis` = ("Guinea (Guin\u00E9e)").asInstanceOf[`Guinea LeftparenthesisGuinéeRightparenthesis`]
-  
-  @js.native
-  sealed trait `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis` extends StObject
-  inline def `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`: `Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis` = ("Guinea-Bissau (Guin\u00E9 Bissau)").asInstanceOf[`Guinea-Bissau LeftparenthesisGuiné BissauRightparenthesis`]
   
   @js.native
   sealed trait Guyana extends StObject
@@ -1196,14 +1012,6 @@ object baseuiStrings {
   @js.native
   sealed trait Honduras extends StObject
   inline def Honduras: Honduras = "Honduras".asInstanceOf[Honduras]
-  
-  @js.native
-  sealed trait `Hong Kong Leftparenthesis香港Rightparenthesis` extends StObject
-  inline def `Hong Kong Leftparenthesis香港Rightparenthesis`: `Hong Kong Leftparenthesis香港Rightparenthesis` = ("Hong Kong (\u9999\u6E2F)").asInstanceOf[`Hong Kong Leftparenthesis香港Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Hungary LeftparenthesisMagyarországRightparenthesis` extends StObject
-  inline def `Hungary LeftparenthesisMagyarországRightparenthesis`: `Hungary LeftparenthesisMagyarországRightparenthesis` = ("Hungary (Magyarorsz\u00E1g)").asInstanceOf[`Hungary LeftparenthesisMagyarországRightparenthesis`]
   
   @js.native
   sealed trait ID
@@ -1266,24 +1074,8 @@ object baseuiStrings {
   inline def IT: IT = "IT".asInstanceOf[IT]
   
   @js.native
-  sealed trait `Iceland LeftparenthesisÍslandRightparenthesis` extends StObject
-  inline def `Iceland LeftparenthesisÍslandRightparenthesis`: `Iceland LeftparenthesisÍslandRightparenthesis` = ("Iceland (\u00CDsland)").asInstanceOf[`Iceland LeftparenthesisÍslandRightparenthesis`]
-  
-  @js.native
-  sealed trait `India LeftparenthesisभारतRightparenthesis` extends StObject
-  inline def `India LeftparenthesisभारतRightparenthesis`: `India LeftparenthesisभारतRightparenthesis` = ("India (\u092D\u093E\u0930\u0924)").asInstanceOf[`India LeftparenthesisभारतRightparenthesis`]
-  
-  @js.native
   sealed trait Indonesia extends StObject
   inline def Indonesia: Indonesia = "Indonesia".asInstanceOf[Indonesia]
-  
-  @js.native
-  sealed trait `Iran Leftparenthesis‫ایران‬‎Rightparenthesis` extends StObject
-  inline def `Iran Leftparenthesis‫ایران‬‎Rightparenthesis`: `Iran Leftparenthesis‫ایران‬‎Rightparenthesis` = ("Iran (\u202B\u0627\u06CC\u0631\u0627\u0646\u202C\u200E)").asInstanceOf[`Iran Leftparenthesis‫ایران‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis` extends StObject
-  inline def `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`: `Iraq Leftparenthesis‫العراق‬‎Rightparenthesis` = ("Iraq (\u202B\u0627\u0644\u0639\u0631\u0627\u0642\u202C\u200E)").asInstanceOf[`Iraq Leftparenthesis‫العراق‬‎Rightparenthesis`]
   
   @js.native
   sealed trait Ireland extends StObject
@@ -1292,14 +1084,6 @@ object baseuiStrings {
   @js.native
   sealed trait `Isle of Man` extends StObject
   inline def `Isle of Man`: `Isle of Man` = ("Isle of Man").asInstanceOf[`Isle of Man`]
-  
-  @js.native
-  sealed trait `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis` extends StObject
-  inline def `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`: `Israel Leftparenthesis‫ישראל‬‎Rightparenthesis` = ("Israel (\u202B\u05D9\u05E9\u05E8\u05D0\u05DC\u202C\u200E)").asInstanceOf[`Israel Leftparenthesis‫ישראל‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Italy LeftparenthesisItaliaRightparenthesis` extends StObject
-  inline def `Italy LeftparenthesisItaliaRightparenthesis`: `Italy LeftparenthesisItaliaRightparenthesis` = ("Italy (Italia)").asInstanceOf[`Italy LeftparenthesisItaliaRightparenthesis`]
   
   @js.native
   sealed trait JE
@@ -1330,16 +1114,8 @@ object baseuiStrings {
   inline def Jamaica: Jamaica = "Jamaica".asInstanceOf[Jamaica]
   
   @js.native
-  sealed trait `Japan Leftparenthesis日本Rightparenthesis` extends StObject
-  inline def `Japan Leftparenthesis日本Rightparenthesis`: `Japan Leftparenthesis日本Rightparenthesis` = ("Japan (\u65E5\u672C)").asInstanceOf[`Japan Leftparenthesis日本Rightparenthesis`]
-  
-  @js.native
   sealed trait Jersey extends StObject
   inline def Jersey: Jersey = "Jersey".asInstanceOf[Jersey]
-  
-  @js.native
-  sealed trait `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis` extends StObject
-  inline def `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`: `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis` = ("Jordan (\u202B\u0627\u0644\u0623\u0631\u062F\u0646\u202C\u200E)").asInstanceOf[`Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`]
   
   @js.native
   sealed trait KE
@@ -1408,10 +1184,6 @@ object baseuiStrings {
   inline def KZ: KZ = "KZ".asInstanceOf[KZ]
   
   @js.native
-  sealed trait `Kazakhstan LeftparenthesisКазахстанRightparenthesis` extends StObject
-  inline def `Kazakhstan LeftparenthesisКазахстанRightparenthesis`: `Kazakhstan LeftparenthesisКазахстанRightparenthesis` = ("Kazakhstan (\u041A\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043D)").asInstanceOf[`Kazakhstan LeftparenthesisКазахстанRightparenthesis`]
-  
-  @js.native
   sealed trait Kenya extends StObject
   inline def Kenya: Kenya = "Kenya".asInstanceOf[Kenya]
   
@@ -1422,14 +1194,6 @@ object baseuiStrings {
   @js.native
   sealed trait Kosovo extends StObject
   inline def Kosovo: Kosovo = "Kosovo".asInstanceOf[Kosovo]
-  
-  @js.native
-  sealed trait `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis` extends StObject
-  inline def `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`: `Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis` = ("Kuwait (\u202B\u0627\u0644\u0643\u0648\u064A\u062A\u202C\u200E)").asInstanceOf[`Kuwait Leftparenthesis‫الكويت‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis` extends StObject
-  inline def `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`: `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis` = ("Kyrgyzstan (\u041A\u044B\u0440\u0433\u044B\u0437\u0441\u0442\u0430\u043D)").asInstanceOf[`Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`]
   
   @js.native
   sealed trait LA
@@ -1504,18 +1268,6 @@ object baseuiStrings {
   inline def LY: LY = "LY".asInstanceOf[LY]
   
   @js.native
-  sealed trait `Laos LeftparenthesisລາວRightparenthesis` extends StObject
-  inline def `Laos LeftparenthesisລາວRightparenthesis`: `Laos LeftparenthesisລາວRightparenthesis` = ("Laos (\u0EA5\u0EB2\u0EA7)").asInstanceOf[`Laos LeftparenthesisລາວRightparenthesis`]
-  
-  @js.native
-  sealed trait `Latvia LeftparenthesisLatvijaRightparenthesis` extends StObject
-  inline def `Latvia LeftparenthesisLatvijaRightparenthesis`: `Latvia LeftparenthesisLatvijaRightparenthesis` = ("Latvia (Latvija)").asInstanceOf[`Latvia LeftparenthesisLatvijaRightparenthesis`]
-  
-  @js.native
-  sealed trait `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis` extends StObject
-  inline def `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`: `Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis` = ("Lebanon (\u202B\u0644\u0628\u0646\u0627\u0646\u202C\u200E)").asInstanceOf[`Lebanon Leftparenthesis‫لبنان‬‎Rightparenthesis`]
-  
-  @js.native
   sealed trait Lesotho extends StObject
   inline def Lesotho: Lesotho = "Lesotho".asInstanceOf[Lesotho]
   
@@ -1524,16 +1276,8 @@ object baseuiStrings {
   inline def Liberia: Liberia = "Liberia".asInstanceOf[Liberia]
   
   @js.native
-  sealed trait `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis` extends StObject
-  inline def `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`: `Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis` = ("Libya (\u202B\u0644\u064A\u0628\u064A\u0627\u202C\u200E)").asInstanceOf[`Libya Leftparenthesis‫ليبيا‬‎Rightparenthesis`]
-  
-  @js.native
   sealed trait Liechtenstein extends StObject
   inline def Liechtenstein: Liechtenstein = "Liechtenstein".asInstanceOf[Liechtenstein]
-  
-  @js.native
-  sealed trait `Lithuania LeftparenthesisLietuvaRightparenthesis` extends StObject
-  inline def `Lithuania LeftparenthesisLietuvaRightparenthesis`: `Lithuania LeftparenthesisLietuvaRightparenthesis` = ("Lithuania (Lietuva)").asInstanceOf[`Lithuania LeftparenthesisLietuvaRightparenthesis`]
   
   @js.native
   sealed trait Luxembourg extends StObject
@@ -1688,14 +1432,6 @@ object baseuiStrings {
   inline def MZ: MZ = "MZ".asInstanceOf[MZ]
   
   @js.native
-  sealed trait `Macau Leftparenthesis澳門Rightparenthesis` extends StObject
-  inline def `Macau Leftparenthesis澳門Rightparenthesis`: `Macau Leftparenthesis澳門Rightparenthesis` = ("Macau (\u6FB3\u9580)").asInstanceOf[`Macau Leftparenthesis澳門Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Madagascar LeftparenthesisMadagasikaraRightparenthesis` extends StObject
-  inline def `Madagascar LeftparenthesisMadagasikaraRightparenthesis`: `Madagascar LeftparenthesisMadagasikaraRightparenthesis` = ("Madagascar (Madagasikara)").asInstanceOf[`Madagascar LeftparenthesisMadagasikaraRightparenthesis`]
-  
-  @js.native
   sealed trait Malawi extends StObject
   inline def Malawi: Malawi = "Malawi".asInstanceOf[Malawi]
   
@@ -1724,56 +1460,20 @@ object baseuiStrings {
   inline def Martinique: Martinique = "Martinique".asInstanceOf[Martinique]
   
   @js.native
-  sealed trait `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis` extends StObject
-  inline def `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`: `Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis` = ("Mauritania (\u202B\u0645\u0648\u0631\u064A\u062A\u0627\u0646\u064A\u0627\u202C\u200E)").asInstanceOf[`Mauritania Leftparenthesis‫موريتانيا‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Mauritius LeftparenthesisMorisRightparenthesis` extends StObject
-  inline def `Mauritius LeftparenthesisMorisRightparenthesis`: `Mauritius LeftparenthesisMorisRightparenthesis` = ("Mauritius (Moris)").asInstanceOf[`Mauritius LeftparenthesisMorisRightparenthesis`]
-  
-  @js.native
   sealed trait Mayotte extends StObject
   inline def Mayotte: Mayotte = "Mayotte".asInstanceOf[Mayotte]
-  
-  @js.native
-  sealed trait `Mexico LeftparenthesisMéxicoRightparenthesis` extends StObject
-  inline def `Mexico LeftparenthesisMéxicoRightparenthesis`: `Mexico LeftparenthesisMéxicoRightparenthesis` = ("Mexico (M\u00E9xico)").asInstanceOf[`Mexico LeftparenthesisMéxicoRightparenthesis`]
   
   @js.native
   sealed trait Micronesia extends StObject
   inline def Micronesia: Micronesia = "Micronesia".asInstanceOf[Micronesia]
   
   @js.native
-  sealed trait `Moldova LeftparenthesisRepublica MoldovaRightparenthesis` extends StObject
-  inline def `Moldova LeftparenthesisRepublica MoldovaRightparenthesis`: `Moldova LeftparenthesisRepublica MoldovaRightparenthesis` = ("Moldova (Republica Moldova)").asInstanceOf[`Moldova LeftparenthesisRepublica MoldovaRightparenthesis`]
-  
-  @js.native
   sealed trait Monaco extends StObject
   inline def Monaco: Monaco = "Monaco".asInstanceOf[Monaco]
   
   @js.native
-  sealed trait `Mongolia LeftparenthesisМонголRightparenthesis` extends StObject
-  inline def `Mongolia LeftparenthesisМонголRightparenthesis`: `Mongolia LeftparenthesisМонголRightparenthesis` = ("Mongolia (\u041C\u043E\u043D\u0433\u043E\u043B)").asInstanceOf[`Mongolia LeftparenthesisМонголRightparenthesis`]
-  
-  @js.native
-  sealed trait `Montenegro LeftparenthesisCrna GoraRightparenthesis` extends StObject
-  inline def `Montenegro LeftparenthesisCrna GoraRightparenthesis`: `Montenegro LeftparenthesisCrna GoraRightparenthesis` = ("Montenegro (Crna Gora)").asInstanceOf[`Montenegro LeftparenthesisCrna GoraRightparenthesis`]
-  
-  @js.native
   sealed trait Montserrat extends StObject
   inline def Montserrat: Montserrat = "Montserrat".asInstanceOf[Montserrat]
-  
-  @js.native
-  sealed trait `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis` extends StObject
-  inline def `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`: `Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis` = ("Morocco (\u202B\u0627\u0644\u0645\u063A\u0631\u0628\u202C\u200E)").asInstanceOf[`Morocco Leftparenthesis‫المغرب‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Mozambique LeftparenthesisMoçambiqueRightparenthesis` extends StObject
-  inline def `Mozambique LeftparenthesisMoçambiqueRightparenthesis`: `Mozambique LeftparenthesisMoçambiqueRightparenthesis` = ("Mozambique (Mo\u00E7ambique)").asInstanceOf[`Mozambique LeftparenthesisMoçambiqueRightparenthesis`]
-  
-  @js.native
-  sealed trait `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis` extends StObject
-  inline def `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`: `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis` = ("Myanmar (Burma) (\u1019\u103C\u1014\u103A\u1019\u102C)").asInstanceOf[`Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`]
   
   @js.native
   sealed trait NA
@@ -1854,24 +1554,8 @@ object baseuiStrings {
   inline def NZ: NZ = "NZ".asInstanceOf[NZ]
   
   @js.native
-  sealed trait `Namibia LeftparenthesisNamibiëRightparenthesis` extends StObject
-  inline def `Namibia LeftparenthesisNamibiëRightparenthesis`: `Namibia LeftparenthesisNamibiëRightparenthesis` = ("Namibia (Namibi\u00EB)").asInstanceOf[`Namibia LeftparenthesisNamibiëRightparenthesis`]
-  
-  @js.native
   sealed trait Nauru extends StObject
   inline def Nauru: Nauru = "Nauru".asInstanceOf[Nauru]
-  
-  @js.native
-  sealed trait `Nepal LeftparenthesisनेपालRightparenthesis` extends StObject
-  inline def `Nepal LeftparenthesisनेपालRightparenthesis`: `Nepal LeftparenthesisनेपालRightparenthesis` = ("Nepal (\u0928\u0947\u092A\u093E\u0932)").asInstanceOf[`Nepal LeftparenthesisनेपालRightparenthesis`]
-  
-  @js.native
-  sealed trait `Netherlands LeftparenthesisNederlandRightparenthesis` extends StObject
-  inline def `Netherlands LeftparenthesisNederlandRightparenthesis`: `Netherlands LeftparenthesisNederlandRightparenthesis` = ("Netherlands (Nederland)").asInstanceOf[`Netherlands LeftparenthesisNederlandRightparenthesis`]
-  
-  @js.native
-  sealed trait `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis` extends StObject
-  inline def `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`: `New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis` = ("New Caledonia (Nouvelle-Cal\u00E9donie)").asInstanceOf[`New Caledonia LeftparenthesisNouvelle-CalédonieRightparenthesis`]
   
   @js.native
   sealed trait `New Zealand` extends StObject
@@ -1880,10 +1564,6 @@ object baseuiStrings {
   @js.native
   sealed trait Nicaragua extends StObject
   inline def Nicaragua: Nicaragua = "Nicaragua".asInstanceOf[Nicaragua]
-  
-  @js.native
-  sealed trait `Niger LeftparenthesisNijarRightparenthesis` extends StObject
-  inline def `Niger LeftparenthesisNijarRightparenthesis`: `Niger LeftparenthesisNijarRightparenthesis` = ("Niger (Nijar)").asInstanceOf[`Niger LeftparenthesisNijarRightparenthesis`]
   
   @js.native
   sealed trait Nigeria extends StObject
@@ -1898,30 +1578,14 @@ object baseuiStrings {
   inline def `Norfolk Island`: `Norfolk Island` = ("Norfolk Island").asInstanceOf[`Norfolk Island`]
   
   @js.native
-  sealed trait `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis` extends StObject
-  inline def `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`: `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis` = ("North Korea (\uC870\uC120 \uBBFC\uC8FC\uC8FC\uC758 \uC778\uBBFC \uACF5\uD654\uAD6D)").asInstanceOf[`North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`]
-  
-  @js.native
-  sealed trait `North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` extends StObject
-  inline def `North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`: `North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` = ("North Macedonia (FYROM) (\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0438\u0458\u0430)").asInstanceOf[`North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`]
-  
-  @js.native
   sealed trait `Northern Mariana Islands` extends StObject
   inline def `Northern Mariana Islands`: `Northern Mariana Islands` = ("Northern Mariana Islands").asInstanceOf[`Northern Mariana Islands`]
-  
-  @js.native
-  sealed trait `Norway LeftparenthesisNorgeRightparenthesis` extends StObject
-  inline def `Norway LeftparenthesisNorgeRightparenthesis`: `Norway LeftparenthesisNorgeRightparenthesis` = ("Norway (Norge)").asInstanceOf[`Norway LeftparenthesisNorgeRightparenthesis`]
   
   @js.native
   sealed trait OM
     extends StObject
        with CountryIso
   inline def OM: OM = "OM".asInstanceOf[OM]
-  
-  @js.native
-  sealed trait `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis` extends StObject
-  inline def `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`: `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis` = ("Oman (\u202B\u0639\u064F\u0645\u0627\u0646\u202C\u200E)").asInstanceOf[`Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`]
   
   @js.native
   sealed trait PA
@@ -2006,20 +1670,8 @@ object baseuiStrings {
   inline def PY: PY = "PY".asInstanceOf[PY]
   
   @js.native
-  sealed trait `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis` extends StObject
-  inline def `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`: `Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis` = ("Pakistan (\u202B\u067E\u0627\u06A9\u0633\u062A\u0627\u0646\u202C\u200E)").asInstanceOf[`Pakistan Leftparenthesis‫پاکستان‬‎Rightparenthesis`]
-  
-  @js.native
   sealed trait Palau extends StObject
   inline def Palau: Palau = "Palau".asInstanceOf[Palau]
-  
-  @js.native
-  sealed trait `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis` extends StObject
-  inline def `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`: `Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis` = ("Palestine (\u202B\u0641\u0644\u0633\u0637\u064A\u0646\u202C\u200E)").asInstanceOf[`Palestine Leftparenthesis‫فلسطين‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Panama LeftparenthesisPanamáRightparenthesis` extends StObject
-  inline def `Panama LeftparenthesisPanamáRightparenthesis`: `Panama LeftparenthesisPanamáRightparenthesis` = ("Panama (Panam\u00E1)").asInstanceOf[`Panama LeftparenthesisPanamáRightparenthesis`]
   
   @js.native
   sealed trait `Papua New Guinea` extends StObject
@@ -2034,10 +1686,6 @@ object baseuiStrings {
     extends StObject
        with CSSLengthUnit
   inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
-  
-  @js.native
-  sealed trait `Peru LeftparenthesisPerúRightparenthesis` extends StObject
-  inline def `Peru LeftparenthesisPerúRightparenthesis`: `Peru LeftparenthesisPerúRightparenthesis` = ("Peru (Per\u00FA)").asInstanceOf[`Peru LeftparenthesisPerúRightparenthesis`]
   
   @js.native
   sealed trait Philippines extends StObject
@@ -2944,10 +2592,6 @@ object baseuiStrings {
   inline def Plussign998: Plussign998 = "+998".asInstanceOf[Plussign998]
   
   @js.native
-  sealed trait `Poland LeftparenthesisPolskaRightparenthesis` extends StObject
-  inline def `Poland LeftparenthesisPolskaRightparenthesis`: `Poland LeftparenthesisPolskaRightparenthesis` = ("Poland (Polska)").asInstanceOf[`Poland LeftparenthesisPolskaRightparenthesis`]
-  
-  @js.native
   sealed trait Portugal extends StObject
   inline def Portugal: Portugal = "Portugal".asInstanceOf[Portugal]
   
@@ -2970,10 +2614,6 @@ object baseuiStrings {
   @js.native
   sealed trait QUARTER extends StObject
   inline def QUARTER: QUARTER = "QUARTER".asInstanceOf[QUARTER]
-  
-  @js.native
-  sealed trait `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` extends StObject
-  inline def `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`: `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` = ("Qatar (\u202B\u0642\u0637\u0631\u202C\u200E)").asInstanceOf[`Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`]
   
   @js.native
   sealed trait RANGE_DATE extends StObject
@@ -3030,20 +2670,8 @@ object baseuiStrings {
   inline def RW: RW = "RW".asInstanceOf[RW]
   
   @js.native
-  sealed trait `Romania LeftparenthesisRomâniaRightparenthesis` extends StObject
-  inline def `Romania LeftparenthesisRomâniaRightparenthesis`: `Romania LeftparenthesisRomâniaRightparenthesis` = ("Romania (Rom\u00E2nia)").asInstanceOf[`Romania LeftparenthesisRomâniaRightparenthesis`]
-  
-  @js.native
-  sealed trait `Russia LeftparenthesisРоссияRightparenthesis` extends StObject
-  inline def `Russia LeftparenthesisРоссияRightparenthesis`: `Russia LeftparenthesisРоссияRightparenthesis` = ("Russia (\u0420\u043E\u0441\u0441\u0438\u044F)").asInstanceOf[`Russia LeftparenthesisРоссияRightparenthesis`]
-  
-  @js.native
   sealed trait Rwanda extends StObject
   inline def Rwanda: Rwanda = "Rwanda".asInstanceOf[Rwanda]
-  
-  @js.native
-  sealed trait `Réunion LeftparenthesisLa RéunionRightparenthesis` extends StObject
-  inline def `Réunion LeftparenthesisLa RéunionRightparenthesis`: `Réunion LeftparenthesisLa RéunionRightparenthesis` = ("R\u00E9union (La R\u00E9union)").asInstanceOf[`Réunion LeftparenthesisLa RéunionRightparenthesis`]
   
   @js.native
   sealed trait SA
@@ -3200,14 +2828,6 @@ object baseuiStrings {
   inline def `Saint Lucia`: `Saint Lucia` = ("Saint Lucia").asInstanceOf[`Saint Lucia`]
   
   @js.native
-  sealed trait `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis` extends StObject
-  inline def `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`: `Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis` = ("Saint Martin (Saint-Martin (partie fran\u00E7aise))").asInstanceOf[`Saint Martin LeftparenthesisSaint-Martin Leftparenthesispartie françaiseRightparenthesisRightparenthesis`]
-  
-  @js.native
-  sealed trait `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis` extends StObject
-  inline def `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`: `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis` = ("Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)").asInstanceOf[`Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`]
-  
-  @js.native
   sealed trait `Saint Vincent and the Grenadines` extends StObject
   inline def `Saint Vincent and the Grenadines`: `Saint Vincent and the Grenadines` = ("Saint Vincent and the Grenadines").asInstanceOf[`Saint Vincent and the Grenadines`]
   
@@ -3218,18 +2838,6 @@ object baseuiStrings {
   @js.native
   sealed trait `San Marino` extends StObject
   inline def `San Marino`: `San Marino` = ("San Marino").asInstanceOf[`San Marino`]
-  
-  @js.native
-  sealed trait `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis` extends StObject
-  inline def `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`: `Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis` = ("Saudi Arabia (\u202B\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0633\u0639\u0648\u062F\u064A\u0629\u202C\u200E)").asInstanceOf[`Saudi Arabia Leftparenthesis‫المملكة العربية السعودية‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Senegal LeftparenthesisSénégalRightparenthesis` extends StObject
-  inline def `Senegal LeftparenthesisSénégalRightparenthesis`: `Senegal LeftparenthesisSénégalRightparenthesis` = ("Senegal (S\u00E9n\u00E9gal)").asInstanceOf[`Senegal LeftparenthesisSénégalRightparenthesis`]
-  
-  @js.native
-  sealed trait `Serbia LeftparenthesisСрбијаRightparenthesis` extends StObject
-  inline def `Serbia LeftparenthesisСрбијаRightparenthesis`: `Serbia LeftparenthesisСрбијаRightparenthesis` = ("Serbia (\u0421\u0440\u0431\u0438\u0458\u0430)").asInstanceOf[`Serbia LeftparenthesisСрбијаRightparenthesis`]
   
   @js.native
   sealed trait Seychelles extends StObject
@@ -3248,48 +2856,16 @@ object baseuiStrings {
   inline def `Sint Maarten`: `Sint Maarten` = ("Sint Maarten").asInstanceOf[`Sint Maarten`]
   
   @js.native
-  sealed trait `Slovakia LeftparenthesisSlovenskoRightparenthesis` extends StObject
-  inline def `Slovakia LeftparenthesisSlovenskoRightparenthesis`: `Slovakia LeftparenthesisSlovenskoRightparenthesis` = ("Slovakia (Slovensko)").asInstanceOf[`Slovakia LeftparenthesisSlovenskoRightparenthesis`]
-  
-  @js.native
-  sealed trait `Slovenia LeftparenthesisSlovenijaRightparenthesis` extends StObject
-  inline def `Slovenia LeftparenthesisSlovenijaRightparenthesis`: `Slovenia LeftparenthesisSlovenijaRightparenthesis` = ("Slovenia (Slovenija)").asInstanceOf[`Slovenia LeftparenthesisSlovenijaRightparenthesis`]
-  
-  @js.native
   sealed trait `Solomon Islands` extends StObject
   inline def `Solomon Islands`: `Solomon Islands` = ("Solomon Islands").asInstanceOf[`Solomon Islands`]
-  
-  @js.native
-  sealed trait `Somalia LeftparenthesisSoomaaliyaRightparenthesis` extends StObject
-  inline def `Somalia LeftparenthesisSoomaaliyaRightparenthesis`: `Somalia LeftparenthesisSoomaaliyaRightparenthesis` = ("Somalia (Soomaaliya)").asInstanceOf[`Somalia LeftparenthesisSoomaaliyaRightparenthesis`]
   
   @js.native
   sealed trait `South Africa` extends StObject
   inline def `South Africa`: `South Africa` = ("South Africa").asInstanceOf[`South Africa`]
   
   @js.native
-  sealed trait `South Korea Leftparenthesis대한민국Rightparenthesis` extends StObject
-  inline def `South Korea Leftparenthesis대한민국Rightparenthesis`: `South Korea Leftparenthesis대한민국Rightparenthesis` = ("South Korea (\uB300\uD55C\uBBFC\uAD6D)").asInstanceOf[`South Korea Leftparenthesis대한민국Rightparenthesis`]
-  
-  @js.native
-  sealed trait `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis` extends StObject
-  inline def `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`: `South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis` = ("South Sudan (\u202B\u062C\u0646\u0648\u0628 \u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)").asInstanceOf[`South Sudan Leftparenthesis‫جنوب السودان‬‎Rightparenthesis`]
-  
-  @js.native
   sealed trait Space extends StObject
   inline def Space: Space = (" ").asInstanceOf[Space]
-  
-  @js.native
-  sealed trait `Spain LeftparenthesisEspañaRightparenthesis` extends StObject
-  inline def `Spain LeftparenthesisEspañaRightparenthesis`: `Spain LeftparenthesisEspañaRightparenthesis` = ("Spain (Espa\u00F1a)").asInstanceOf[`Spain LeftparenthesisEspañaRightparenthesis`]
-  
-  @js.native
-  sealed trait `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis` extends StObject
-  inline def `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`: `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis` = ("Sri Lanka (\u0DC1\u0DCA\u200D\u0DBB\u0DD3 \u0DBD\u0D82\u0D9A\u0DCF\u0DC0)").asInstanceOf[`Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`]
-  
-  @js.native
-  sealed trait `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis` extends StObject
-  inline def `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`: `Sudan Leftparenthesis‫السودان‬‎Rightparenthesis` = ("Sudan (\u202B\u0627\u0644\u0633\u0648\u062F\u0627\u0646\u202C\u200E)").asInstanceOf[`Sudan Leftparenthesis‫السودان‬‎Rightparenthesis`]
   
   @js.native
   sealed trait Suriname extends StObject
@@ -3302,22 +2878,6 @@ object baseuiStrings {
   @js.native
   sealed trait Swaziland extends StObject
   inline def Swaziland: Swaziland = "Swaziland".asInstanceOf[Swaziland]
-  
-  @js.native
-  sealed trait `Sweden LeftparenthesisSverigeRightparenthesis` extends StObject
-  inline def `Sweden LeftparenthesisSverigeRightparenthesis`: `Sweden LeftparenthesisSverigeRightparenthesis` = ("Sweden (Sverige)").asInstanceOf[`Sweden LeftparenthesisSverigeRightparenthesis`]
-  
-  @js.native
-  sealed trait `Switzerland LeftparenthesisSchweizRightparenthesis` extends StObject
-  inline def `Switzerland LeftparenthesisSchweizRightparenthesis`: `Switzerland LeftparenthesisSchweizRightparenthesis` = ("Switzerland (Schweiz)").asInstanceOf[`Switzerland LeftparenthesisSchweizRightparenthesis`]
-  
-  @js.native
-  sealed trait `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis` extends StObject
-  inline def `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`: `Syria Leftparenthesis‫سوريا‬‎Rightparenthesis` = ("Syria (\u202B\u0633\u0648\u0631\u064A\u0627\u202C\u200E)").asInstanceOf[`Syria Leftparenthesis‫سوريا‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis` extends StObject
-  inline def `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`: `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis` = ("S\u00E3o Tom\u00E9 and Pr\u00EDncipe (S\u00E3o Tom\u00E9 e Pr\u00EDncipe)").asInstanceOf[`São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`]
   
   @js.native
   sealed trait TC
@@ -3410,20 +2970,12 @@ object baseuiStrings {
   inline def TZ: TZ = "TZ".asInstanceOf[TZ]
   
   @js.native
-  sealed trait `Taiwan Leftparenthesis台灣Rightparenthesis` extends StObject
-  inline def `Taiwan Leftparenthesis台灣Rightparenthesis`: `Taiwan Leftparenthesis台灣Rightparenthesis` = ("Taiwan (\u53F0\u7063)").asInstanceOf[`Taiwan Leftparenthesis台灣Rightparenthesis`]
-  
-  @js.native
   sealed trait Tajikistan extends StObject
   inline def Tajikistan: Tajikistan = "Tajikistan".asInstanceOf[Tajikistan]
   
   @js.native
   sealed trait Tanzania extends StObject
   inline def Tanzania: Tanzania = "Tanzania".asInstanceOf[Tanzania]
-  
-  @js.native
-  sealed trait `Thailand LeftparenthesisไทยRightparenthesis` extends StObject
-  inline def `Thailand LeftparenthesisไทยRightparenthesis`: `Thailand LeftparenthesisไทยRightparenthesis` = ("Thailand (\u0E44\u0E17\u0E22)").asInstanceOf[`Thailand LeftparenthesisไทยRightparenthesis`]
   
   @js.native
   sealed trait `Timor-Leste` extends StObject
@@ -3444,14 +2996,6 @@ object baseuiStrings {
   @js.native
   sealed trait `Trinisoad and Tobago` extends StObject
   inline def `Trinisoad and Tobago`: `Trinisoad and Tobago` = ("Trinisoad and Tobago").asInstanceOf[`Trinisoad and Tobago`]
-  
-  @js.native
-  sealed trait `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis` extends StObject
-  inline def `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`: `Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis` = ("Tunisia (\u202B\u062A\u0648\u0646\u0633\u202C\u200E)").asInstanceOf[`Tunisia Leftparenthesis‫تونس‬‎Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Turkey LeftparenthesisTürkiyeRightparenthesis` extends StObject
-  inline def `Turkey LeftparenthesisTürkiyeRightparenthesis`: `Turkey LeftparenthesisTürkiyeRightparenthesis` = ("Turkey (T\u00FCrkiye)").asInstanceOf[`Turkey LeftparenthesisTürkiyeRightparenthesis`]
   
   @js.native
   sealed trait Turkmenistan extends StObject
@@ -3504,14 +3048,6 @@ object baseuiStrings {
   inline def Uganda: Uganda = "Uganda".asInstanceOf[Uganda]
   
   @js.native
-  sealed trait `Ukraine LeftparenthesisУкраїнаRightparenthesis` extends StObject
-  inline def `Ukraine LeftparenthesisУкраїнаRightparenthesis`: `Ukraine LeftparenthesisУкраїнаRightparenthesis` = ("Ukraine (\u0423\u043A\u0440\u0430\u0457\u043D\u0430)").asInstanceOf[`Ukraine LeftparenthesisУкраїнаRightparenthesis`]
-  
-  @js.native
-  sealed trait `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis` extends StObject
-  inline def `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`: `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis` = ("United Arab Emirates (\u202B\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062A \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0645\u062A\u062D\u062F\u0629\u202C\u200E)").asInstanceOf[`United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`]
-  
-  @js.native
   sealed trait `United Kingdom` extends StObject
   inline def `United Kingdom`: `United Kingdom` = ("United Kingdom").asInstanceOf[`United Kingdom`]
   
@@ -3522,10 +3058,6 @@ object baseuiStrings {
   @js.native
   sealed trait Uruguay extends StObject
   inline def Uruguay: Uruguay = "Uruguay".asInstanceOf[Uruguay]
-  
-  @js.native
-  sealed trait `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis` extends StObject
-  inline def `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`: `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis` = ("Uzbekistan (O\u02BBzbekiston)").asInstanceOf[`Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`]
   
   @js.native
   sealed trait VA
@@ -3574,16 +3106,8 @@ object baseuiStrings {
   inline def Vanuatu: Vanuatu = "Vanuatu".asInstanceOf[Vanuatu]
   
   @js.native
-  sealed trait `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis` extends StObject
-  inline def `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`: `Vatican City LeftparenthesisCittà del VaticanoRightparenthesis` = ("Vatican City (Citt\u00E0 del Vaticano)").asInstanceOf[`Vatican City LeftparenthesisCittà del VaticanoRightparenthesis`]
-  
-  @js.native
   sealed trait Venezuela extends StObject
   inline def Venezuela: Venezuela = "Venezuela".asInstanceOf[Venezuela]
-  
-  @js.native
-  sealed trait `Vietnam LeftparenthesisViệt NamRightparenthesis` extends StObject
-  inline def `Vietnam LeftparenthesisViệt NamRightparenthesis`: `Vietnam LeftparenthesisViệt NamRightparenthesis` = ("Vietnam (Vi\u1EC7t Nam)").asInstanceOf[`Vietnam LeftparenthesisViệt NamRightparenthesis`]
   
   @js.native
   sealed trait WEEKDAY extends StObject
@@ -3600,10 +3124,6 @@ object baseuiStrings {
     extends StObject
        with CountryIso
   inline def WS: WS = "WS".asInstanceOf[WS]
-  
-  @js.native
-  sealed trait `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis` extends StObject
-  inline def `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`: `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis` = ("Wallis and Futuna (Wallis-et-Futuna)").asInstanceOf[`Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`]
   
   @js.native
   sealed trait XK
@@ -3626,10 +3146,6 @@ object baseuiStrings {
     extends StObject
        with CountryIso
   inline def YT: YT = "YT".asInstanceOf[YT]
-  
-  @js.native
-  sealed trait `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` extends StObject
-  inline def `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`: `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` = ("Yemen (\u202B\u0627\u0644\u064A\u0645\u0646\u202C\u200E)").asInstanceOf[`Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`]
   
   @js.native
   sealed trait ZA
@@ -4020,10 +3536,6 @@ object baseuiStrings {
   @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
-  
-  @js.native
-  sealed trait `calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis` extends StObject
-  inline def `calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis`: `calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis` = ("calc(${string} - .5px)").asInstanceOf[`calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis`]
   
   @js.native
   sealed trait canvas extends StObject

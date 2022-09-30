@@ -6,10 +6,10 @@ import typings.ftpd.anon.EncodingFlag
 import typings.ftpd.anon.Flag
 import typings.ftpd.anon.Mode
 import typings.ftpd.anon.`0`
-import typings.ftpd.ftpdNumbers.`1`
-import typings.ftpd.ftpdNumbers.`2`
-import typings.ftpd.ftpdNumbers.`3`
-import typings.ftpd.ftpdNumbers.`4`
+import typings.ftpd.ftpdInts.`1`
+import typings.ftpd.ftpdInts.`2`
+import typings.ftpd.ftpdInts.`3`
+import typings.ftpd.ftpdInts.`4`
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
@@ -381,18 +381,18 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.ftpd.ftpdNumbers.`0`
-    - typings.ftpd.ftpdNumbers.`1`
-    - typings.ftpd.ftpdNumbers.`2`
-    - typings.ftpd.ftpdNumbers.`3`
-    - typings.ftpd.ftpdNumbers.`4`
+    - typings.ftpd.ftpdInts.`0`
+    - typings.ftpd.ftpdInts.`1`
+    - typings.ftpd.ftpdInts.`2`
+    - typings.ftpd.ftpdInts.`3`
+    - typings.ftpd.ftpdInts.`4`
   */
   trait LogLevel extends StObject
   object LogLevel {
     
     inline def DEBUG: `3` = 3.asInstanceOf[`3`]
     
-    inline def ERROR: typings.ftpd.ftpdNumbers.`0` = 0.asInstanceOf[typings.ftpd.ftpdNumbers.`0`]
+    inline def ERROR: typings.ftpd.ftpdInts.`0` = 0.asInstanceOf[typings.ftpd.ftpdInts.`0`]
     
     inline def INFO: `2` = 2.asInstanceOf[`2`]
     

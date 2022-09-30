@@ -1,13 +1,13 @@
 package typings.gestaltDatepicker
 
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`0`
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`1`
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`2`
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`3`
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`4`
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`5`
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`6`
-import typings.gestaltDatepicker.gestaltDatepickerNumbers.`7`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`0`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`1`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`2`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`3`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`4`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`5`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`6`
+import typings.gestaltDatepicker.gestaltDatepickerInts.`7`
 import typings.react.mod.SyntheticEvent
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject

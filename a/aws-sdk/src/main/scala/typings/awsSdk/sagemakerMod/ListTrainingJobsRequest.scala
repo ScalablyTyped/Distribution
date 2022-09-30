@@ -55,6 +55,11 @@ trait ListTrainingJobsRequest extends StObject {
     * A filter that retrieves only training jobs with a specific status.
     */
   var StatusEquals: js.UndefOr[TrainingJobStatus] = js.undefined
+  
+  /**
+    * A filter that retrieves only training jobs with a specific warm pool status.
+    */
+  var WarmPoolStatusEquals: js.UndefOr[WarmPoolResourceStatus] = js.undefined
 }
 object ListTrainingJobsRequest {
   
@@ -104,5 +109,9 @@ object ListTrainingJobsRequest {
     inline def setStatusEquals(value: TrainingJobStatus): Self = StObject.set(x, "StatusEquals", value.asInstanceOf[js.Any])
     
     inline def setStatusEqualsUndefined: Self = StObject.set(x, "StatusEquals", js.undefined)
+    
+    inline def setWarmPoolStatusEquals(value: WarmPoolResourceStatus): Self = StObject.set(x, "WarmPoolStatusEquals", value.asInstanceOf[js.Any])
+    
+    inline def setWarmPoolStatusEqualsUndefined: Self = StObject.set(x, "WarmPoolStatusEquals", js.undefined)
   }
 }

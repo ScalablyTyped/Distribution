@@ -1,7 +1,7 @@
 package typings.svgArcToCubicBezier
 
-import typings.svgArcToCubicBezier.svgArcToCubicBezierNumbers.`0`
-import typings.svgArcToCubicBezier.svgArcToCubicBezierNumbers.`1`
+import typings.svgArcToCubicBezier.svgArcToCubicBezierInts.`0`
+import typings.svgArcToCubicBezier.svgArcToCubicBezierInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

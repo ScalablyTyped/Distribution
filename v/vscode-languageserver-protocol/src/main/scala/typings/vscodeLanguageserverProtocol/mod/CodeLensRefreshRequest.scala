@@ -1,6 +1,5 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashcodeLensSlashrefresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object CodeLensRefreshRequest {
   
   @JSImport("vscode-languageserver-protocol", "CodeLensRefreshRequest.method")
   @js.native
-  val method: workspaceSlashcodeLensSlashrefresh = js.native
+  val method: /* template literal string: workspace/codeLens/refresh */ String = js.native
   
   @JSImport("vscode-languageserver-protocol", "CodeLensRefreshRequest.type")
   @js.native

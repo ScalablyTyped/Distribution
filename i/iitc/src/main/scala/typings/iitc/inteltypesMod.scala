@@ -4,7 +4,6 @@ import typings.iitc.anon.Markup
 import typings.iitc.iitcStrings.PLAYER
 import typings.iitc.iitcStrings.PORTAL
 import typings.iitc.iitcStrings.TEXT
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,15 +28,15 @@ object inteltypesMod {
         
         inline def setResult(value: js.Array[ChatLine]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
-        inline def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value :_*))
+        inline def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value*))
       }
     }
     
     type ChatLine = js.Tuple3[/*guid*/ String, /*time*/ Double, PlextContainer]
     
-    type FieldDetails = js.Array[js.Any]
+    type FieldDetails = js.Array[Any]
     
-    type LinkDetails = js.Array[js.Any]
+    type LinkDetails = js.Array[Any]
     
     type MarkUpPlayer = js.Tuple2[PLAYER, MarkUpPlayerType]
     
@@ -135,7 +134,7 @@ object inteltypesMod {
       
       var min_ap_for_next_level: String
       
-      var nickMatcher: RegExp
+      var nickMatcher: js.RegExp
       
       var nickname: String
       
@@ -154,7 +153,7 @@ object inteltypesMod {
         level: Double,
         min_ap_for_current_level: String,
         min_ap_for_next_level: String,
-        nickMatcher: RegExp,
+        nickMatcher: js.RegExp,
         nickname: String,
         team: String,
         verified_level: Double,
@@ -178,7 +177,7 @@ object inteltypesMod {
         
         inline def setMin_ap_for_next_level(value: String): Self = StObject.set(x, "min_ap_for_next_level", value.asInstanceOf[js.Any])
         
-        inline def setNickMatcher(value: RegExp): Self = StObject.set(x, "nickMatcher", value.asInstanceOf[js.Any])
+        inline def setNickMatcher(value: js.RegExp): Self = StObject.set(x, "nickMatcher", value.asInstanceOf[js.Any])
         
         inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
         
@@ -208,6 +207,6 @@ object inteltypesMod {
     }
     
     // ENTITY
-    type PortalDetails = js.Array[js.Any]
+    type PortalDetails = js.Array[Any]
   }
 }

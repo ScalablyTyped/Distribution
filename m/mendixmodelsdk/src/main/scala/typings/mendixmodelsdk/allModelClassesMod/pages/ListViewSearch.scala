@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewSearch")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewSearch")
 @js.native
-class ListViewSearch protected ()
+open class ListViewSearch protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.ListViewSearch {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class ListViewSearch protected ()
 }
 object ListViewSearch {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewSearch")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewSearch")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object ListViewSearch {
   inline def createInListViewXPathSourceUnderSearch(container: typings.mendixmodelsdk.pagesMod.pages.ListViewXPathSource): typings.mendixmodelsdk.pagesMod.pages.ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewXPathSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewSearch]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewSearch.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewSearch.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewSearch.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewSearch.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

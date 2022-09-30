@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 6.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ListType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ListType")
 @js.native
-class ListType protected ()
+open class ListType protected ()
   extends typings.mendixmodelsdk.javaactionsMod.javaactions.ListType {
   def this(
     model: AbstractModel,
@@ -30,7 +30,7 @@ class ListType protected ()
 }
 object ListType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ListType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ListType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -76,13 +76,13 @@ object ListType {
   inline def createInJavaActionUnderJavaReturnType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ListType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ListType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ListType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ListType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ListType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

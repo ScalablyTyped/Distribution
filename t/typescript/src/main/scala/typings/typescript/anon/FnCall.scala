@@ -50,44 +50,44 @@ trait FnCall extends StObject {
   def apply[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
   def apply[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
   def apply[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T]): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T]): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
   def apply[T /* <: Node */](
     nodes: NodeArray[T],
     visitor: Unit,
     test: js.Function1[/* node */ Node, Boolean],
     start: Double,
     count: Double
-  ): NodeArray[T] = js.native
+  ): js.UndefOr[NodeArray[T]] = js.native
   def apply[T /* <: Node */](
     nodes: NodeArray[T],
     visitor: Unit,
     test: js.Function1[/* node */ Node, Boolean],
     start: Unit,
     count: Double
-  ): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
+  ): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
   def apply[T /* <: Node */](
     nodes: NodeArray[T],
     visitor: Visitor,
     test: js.Function1[/* node */ Node, Boolean],
     start: Double,
     count: Double
-  ): NodeArray[T] = js.native
+  ): js.UndefOr[NodeArray[T]] = js.native
   def apply[T /* <: Node */](
     nodes: NodeArray[T],
     visitor: Visitor,
     test: js.Function1[/* node */ Node, Boolean],
     start: Unit,
     count: Double
-  ): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
-  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
+  ): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
+  def apply[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "redux-test-utils" : "1.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "redux-test-utils" : "1.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

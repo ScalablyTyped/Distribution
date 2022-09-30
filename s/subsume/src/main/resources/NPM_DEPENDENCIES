@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "subsume" : "3.0.0"
+      "subsume" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "subsume" : "3.0.0"
+      "subsume" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

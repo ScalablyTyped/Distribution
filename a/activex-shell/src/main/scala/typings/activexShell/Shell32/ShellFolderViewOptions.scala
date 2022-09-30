@@ -1,25 +1,25 @@
 package typings.activexShell.Shell32
 
-import typings.activexShell.activexShellNumbers.`0x00000001`
-import typings.activexShell.activexShellNumbers.`0x00000002`
-import typings.activexShell.activexShellNumbers.`0x00000008`
-import typings.activexShell.activexShellNumbers.`0x00000020`
-import typings.activexShell.activexShellNumbers.`0x00000040`
-import typings.activexShell.activexShellNumbers.`0x00000080`
-import typings.activexShell.activexShellNumbers.`0x00000200`
+import typings.activexShell.activexShellInts.`0x00000001`
+import typings.activexShell.activexShellInts.`0x00000002`
+import typings.activexShell.activexShellInts.`0x00000008`
+import typings.activexShell.activexShellInts.`0x00000020`
+import typings.activexShell.activexShellInts.`0x00000040`
+import typings.activexShell.activexShellInts.`0x00000080`
+import typings.activexShell.activexShellInts.`0x00000200`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShell.activexShellNumbers.`0x00000001`
-  - typings.activexShell.activexShellNumbers.`0x00000002`
-  - typings.activexShell.activexShellNumbers.`0x00000008`
-  - typings.activexShell.activexShellNumbers.`0x00000020`
-  - typings.activexShell.activexShellNumbers.`0x00000040`
-  - typings.activexShell.activexShellNumbers.`0x00000080`
-  - typings.activexShell.activexShellNumbers.`0x00000200`
+  - typings.activexShell.activexShellInts.`0x00000001`
+  - typings.activexShell.activexShellInts.`0x00000002`
+  - typings.activexShell.activexShellInts.`0x00000008`
+  - typings.activexShell.activexShellInts.`0x00000020`
+  - typings.activexShell.activexShellInts.`0x00000040`
+  - typings.activexShell.activexShellInts.`0x00000080`
+  - typings.activexShell.activexShellInts.`0x00000200`
 */
 trait ShellFolderViewOptions extends StObject
 object ShellFolderViewOptions {

@@ -119,4 +119,95 @@ object anon {
       */
     var initializedAdaptiveHeight: Boolean = js.native
   }
+  
+  trait IsAnimating extends StObject {
+    
+    var isAnimating: Boolean
+    
+    var value: Double
+  }
+  object IsAnimating {
+    
+    inline def apply(isAnimating: Boolean, value: Double): IsAnimating = {
+      val __obj = js.Dynamic.literal(isAnimating = isAnimating.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsAnimating]
+    }
+    
+    extension [Self <: IsAnimating](x: Self) {
+      
+      inline def setIsAnimating(value: Boolean): Self = StObject.set(x, "isAnimating", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Pick<nuka-carousel.nuka-carousel/lib/types.ControlProps, 'cellAlign' | 'currentSlide' | 'slidesToShow' | 'wrapAround'> */
+  trait PickControlPropscellAlign extends StObject {
+    
+    var cellAlign: Alignment
+    
+    var currentSlide: Double
+    
+    var slidesToShow: Double
+    
+    var wrapAround: Boolean
+  }
+  object PickControlPropscellAlign {
+    
+    inline def apply(cellAlign: Alignment, currentSlide: Double, slidesToShow: Double, wrapAround: Boolean): PickControlPropscellAlign = {
+      val __obj = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PickControlPropscellAlign]
+    }
+    
+    extension [Self <: PickControlPropscellAlign](x: Self) {
+      
+      inline def setCellAlign(value: Alignment): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
+      
+      inline def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      
+      inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Pick<nuka-carousel.nuka-carousel/lib/types.ControlProps, 'cellAlign' | 'currentSlide' | 'slideCount' | 'slidesToShow' | 'wrapAround'> */
+  trait PickControlPropscellAlignCellAlign extends StObject {
+    
+    var cellAlign: Alignment
+    
+    var currentSlide: Double
+    
+    var slideCount: Double
+    
+    var slidesToShow: Double
+    
+    var wrapAround: Boolean
+  }
+  object PickControlPropscellAlignCellAlign {
+    
+    inline def apply(
+      cellAlign: Alignment,
+      currentSlide: Double,
+      slideCount: Double,
+      slidesToShow: Double,
+      wrapAround: Boolean
+    ): PickControlPropscellAlignCellAlign = {
+      val __obj = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PickControlPropscellAlignCellAlign]
+    }
+    
+    extension [Self <: PickControlPropscellAlignCellAlign](x: Self) {
+      
+      inline def setCellAlign(value: Alignment): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      
+      inline def setCurrentSlide(value: Double): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
+      
+      inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
+      
+      inline def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      
+      inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+    }
+  }
 }

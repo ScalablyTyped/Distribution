@@ -5,7 +5,6 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object renderMod extends Shortcut {
     /**
       * Manually unmount the whole Ink app.
       */
-    var unmount: js.Function1[/* error */ js.UndefOr[Error | Double | Null], Unit]
+    var unmount: js.Function1[/* error */ js.UndefOr[js.Error | Double | Null], Unit]
     
     /**
       * Returns a promise, which resolves when app is unmounted.
@@ -49,7 +48,7 @@ object renderMod extends Shortcut {
       cleanup: () => Unit,
       clear: () => Unit,
       rerender: /* node */ ReactNode => Unit,
-      unmount: /* error */ js.UndefOr[Error | Double | Null] => Unit,
+      unmount: /* error */ js.UndefOr[js.Error | Double | Null] => Unit,
       waitUntilExit: () => js.Promise[Unit]
     ): Instance = {
       val __obj = js.Dynamic.literal(cleanup = js.Any.fromFunction0(cleanup), clear = js.Any.fromFunction0(clear), rerender = js.Any.fromFunction1(rerender), unmount = js.Any.fromFunction1(unmount), waitUntilExit = js.Any.fromFunction0(waitUntilExit))
@@ -64,7 +63,7 @@ object renderMod extends Shortcut {
       
       inline def setRerender(value: /* node */ ReactNode => Unit): Self = StObject.set(x, "rerender", js.Any.fromFunction1(value))
       
-      inline def setUnmount(value: /* error */ js.UndefOr[Error | Double | Null] => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
+      inline def setUnmount(value: /* error */ js.UndefOr[js.Error | Double | Null] => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
       
       inline def setWaitUntilExit(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitUntilExit", js.Any.fromFunction0(value))
     }

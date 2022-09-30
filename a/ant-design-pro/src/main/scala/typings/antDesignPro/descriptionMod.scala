@@ -11,10 +11,9 @@ object descriptionMod {
   
   @JSImport("ant-design-pro/lib/DescriptionList/Description", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DescriptionProps, js.Any, js.Any]
+  open class default () extends Component[DescriptionProps, Any, Any]
   
-  type Description = Component[DescriptionProps, js.Any, js.Any]
+  type Description = Component[DescriptionProps, Any, Any]
   
   trait DescriptionProps
     extends StObject

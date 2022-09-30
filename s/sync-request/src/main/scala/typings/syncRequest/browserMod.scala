@@ -21,5 +21,5 @@ object browserMod {
   
   @JSImport("sync-request/lib/browser", "FormData")
   @js.native
-  val FormData: js.Any = js.native
+  val FormData: Any = js.native
 }

@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Pub/Sub **/
 trait SubscriptionHandle extends StObject {
   
+  /** True if the server has marked the subscription as ready. A reactive data source. */
   def ready(): Boolean
   
+  /** Cancel the subscription. This will typically result in the server directing the client to remove the subscription’s data from the client’s cache. */
   def stop(): Unit
 }
 object SubscriptionHandle {

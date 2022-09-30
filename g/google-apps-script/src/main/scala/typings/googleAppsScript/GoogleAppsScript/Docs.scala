@@ -2396,12 +2396,12 @@ object Docs {
     }
     object List {
       
-      inline def apply(): List = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Docs.Schema.List = {
         val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[List]
+        __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Docs.Schema.List]
       }
       
-      extension [Self <: List](x: Self) {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Docs.Schema.List](x: Self) {
         
         inline def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
         

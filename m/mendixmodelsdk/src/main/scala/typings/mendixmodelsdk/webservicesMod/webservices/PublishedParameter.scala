@@ -15,9 +15,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter")
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedParameter")
 @js.native
-class PublishedParameter protected () extends Element[IModel] {
+open class PublishedParameter protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,6 +34,9 @@ class PublishedParameter protected () extends Element[IModel] {
   
   def entityExposedItemName: String = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def entityExposedItemNameByContract: String = js.native
   def entityExposedItemNameByContract_=(newValue: String): Unit = js.native
   
@@ -42,6 +45,9 @@ class PublishedParameter protected () extends Element[IModel] {
   def entityExposedName: String = js.native
   def entityExposedName_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def isLockedByContract: Boolean = js.native
   def isLockedByContract_=(newValue: Boolean): Unit = js.native
   
@@ -50,6 +56,9 @@ class PublishedParameter protected () extends Element[IModel] {
   
   def isOptional: Boolean = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def isOptionalByContract: Boolean = js.native
   def isOptionalByContract_=(newValue: Boolean): Unit = js.native
   
@@ -57,6 +66,9 @@ class PublishedParameter protected () extends Element[IModel] {
   
   def parameter: IMicroflowParameter | Null = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def parameterByContract: MsdMicroflowParameter = js.native
   def parameterByContract_=(newValue: MsdMicroflowParameter): Unit = js.native
   
@@ -80,7 +92,7 @@ class PublishedParameter protected () extends Element[IModel] {
 }
 object PublishedParameter {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedParameter")
   @js.native
   val ^ : js.Any = js.native
   
@@ -101,13 +113,13 @@ object PublishedParameter {
   inline def createIn(container: PublishedOperation): PublishedParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedParameter]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedParameter.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedParameter.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

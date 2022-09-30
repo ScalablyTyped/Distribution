@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "emoji-regex" : "10.1.0"
+      "emoji-regex" : "10.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "emoji-regex" : "10.1.0"
+      "emoji-regex" : "10.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -15,12 +15,12 @@ object withFallbackStylesMod {
   val ^ : js.Any = js.native
   
   inline def default[FSP](
-    mapNodeToProps: js.Function2[/* parentNode */ HTMLDivElement, /* ownProps */ StringDictionary[js.Any], FSP]
+    mapNodeToProps: js.Function2[/* parentNode */ HTMLDivElement, /* ownProps */ StringDictionary[Any], FSP]
   ): js.Function1[
-    /* wrappedComponent */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof FSP */ String]]
+    /* wrappedComponent */ ComponentType[Any], 
+    ComponentType[Omit[Any, /* keyof FSP */ String]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mapNodeToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* wrappedComponent */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof FSP */ String]]
+    /* wrappedComponent */ ComponentType[Any], 
+    ComponentType[Omit[Any, /* keyof FSP */ String]]
   ]]
 }

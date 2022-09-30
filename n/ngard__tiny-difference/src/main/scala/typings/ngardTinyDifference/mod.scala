@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def difference[T](first: js.Array[T], rest: js.Array[T]*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(List(first.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
+  inline def difference[T](first: js.Array[T], rest: js.Array[T]*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(scala.List(first.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
 }

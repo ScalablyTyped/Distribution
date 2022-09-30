@@ -1,20 +1,20 @@
 package typings.sharepoint
 
-import typings.sharepoint.sharepointNumbers.`1`
-import typings.sharepoint.sharepointNumbers.`2`
-import typings.sharepoint.sharepointNumbers.`3`
-import typings.sharepoint.sharepointNumbers.`4`
-import typings.sharepoint.sharepointNumbers.`5`
+import typings.sharepoint.sharepointInts.`1`
+import typings.sharepoint.sharepointInts.`2`
+import typings.sharepoint.sharepointInts.`3`
+import typings.sharepoint.sharepointInts.`4`
+import typings.sharepoint.sharepointInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.sharepoint.sharepointNumbers.`1`
-  - typings.sharepoint.sharepointNumbers.`2`
-  - typings.sharepoint.sharepointNumbers.`3`
-  - typings.sharepoint.sharepointNumbers.`4`
-  - typings.sharepoint.sharepointNumbers.`5`
+  - typings.sharepoint.sharepointInts.`1`
+  - typings.sharepoint.sharepointInts.`2`
+  - typings.sharepoint.sharepointInts.`3`
+  - typings.sharepoint.sharepointInts.`4`
+  - typings.sharepoint.sharepointInts.`5`
 */
 trait Sods extends StObject
 object Sods {

@@ -11,24 +11,24 @@ object headerMod {
   type ArrowSize = Double
   
   /* Rewritten from type alias, can be one of: 
-    - typings.dxf.dxfNumbers.`10`
-    - typings.dxf.dxfNumbers.`20`
-    - typings.dxf.dxfNumbers.`30`
-    - typings.dxf.dxfNumbers.`40`
-    - typings.dxf.dxfNumbers.`70`
+    - typings.dxf.dxfInts.`10`
+    - typings.dxf.dxfInts.`20`
+    - typings.dxf.dxfInts.`30`
+    - typings.dxf.dxfInts.`40`
+    - typings.dxf.dxfInts.`70`
   */
   trait DXFHeaderPropertyType extends StObject
   object DXFHeaderPropertyType {
     
-    inline def `10`: typings.dxf.dxfNumbers.`10` = 10.asInstanceOf[typings.dxf.dxfNumbers.`10`]
+    inline def `10`: typings.dxf.dxfInts.`10` = 10.asInstanceOf[typings.dxf.dxfInts.`10`]
     
-    inline def `20`: typings.dxf.dxfNumbers.`20` = 20.asInstanceOf[typings.dxf.dxfNumbers.`20`]
+    inline def `20`: typings.dxf.dxfInts.`20` = 20.asInstanceOf[typings.dxf.dxfInts.`20`]
     
-    inline def `30`: typings.dxf.dxfNumbers.`30` = 30.asInstanceOf[typings.dxf.dxfNumbers.`30`]
+    inline def `30`: typings.dxf.dxfInts.`30` = 30.asInstanceOf[typings.dxf.dxfInts.`30`]
     
-    inline def `40`: typings.dxf.dxfNumbers.`40` = 40.asInstanceOf[typings.dxf.dxfNumbers.`40`]
+    inline def `40`: typings.dxf.dxfInts.`40` = 40.asInstanceOf[typings.dxf.dxfInts.`40`]
     
-    inline def `70`: typings.dxf.dxfNumbers.`70` = 70.asInstanceOf[typings.dxf.dxfNumbers.`70`]
+    inline def `70`: typings.dxf.dxfInts.`70` = 70.asInstanceOf[typings.dxf.dxfInts.`70`]
   }
   
   /* Rewritten from type alias, can be one of: 

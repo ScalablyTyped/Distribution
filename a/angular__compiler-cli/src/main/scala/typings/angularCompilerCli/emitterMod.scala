@@ -1,8 +1,8 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.Expression
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`1`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.angularCompilerCli.angularCompilerCliStrings.unknown
 import typings.angularCompilerCli.fileSystemMod.LogicalFileSystem
 import typings.angularCompilerCli.interfacesMod.UnifiedModulesHost
@@ -365,8 +365,8 @@ object emitterMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`1`
+    - typings.angularCompilerCli.angularCompilerCliInts.`0`
+    - typings.angularCompilerCli.angularCompilerCliInts.`1`
   */
   trait ReferenceEmitKind extends StObject
   object ReferenceEmitKind {

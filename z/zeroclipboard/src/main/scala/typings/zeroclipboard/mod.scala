@@ -2,7 +2,6 @@ package typings.zeroclipboard
 
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Element
-import typings.zeroclipboard.ZC.List
 import typings.zeroclipboard.ZC.ZeroClipboardClient
 import typings.zeroclipboard.ZC.ZeroClipboardStatic
 import org.scalablytyped.runtime.StObject
@@ -22,7 +21,7 @@ object mod extends Shortcut {
     extends StObject
        with ZeroClipboardClient {
     def this(elements: Element) = this()
-    def this(elements: List[Element]) = this()
+    def this(elements: typings.zeroclipboard.ZC.List[Element]) = this()
   }
   @JSImport("zeroclipboard", JSImport.Namespace)
   @js.native

@@ -25,6 +25,11 @@ trait Project extends StObject {
     * The project's name.
     */
   var name: js.UndefOr[Name] = js.undefined
+  
+  /**
+    * The VPC security groups and subnets that are attached to a project.
+    */
+  var vpcConfig: js.UndefOr[VpcConfig] = js.undefined
 }
 object Project {
   
@@ -50,5 +55,9 @@ object Project {
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
   }
 }

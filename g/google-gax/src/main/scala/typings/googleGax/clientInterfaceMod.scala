@@ -6,10 +6,11 @@ import typings.googleGax.descriptorMod.LongrunningDescriptor
 import typings.googleGax.descriptorMod.PageDescriptor
 import typings.googleGax.descriptorMod.StreamDescriptor
 import typings.googleGax.gaxMod.ClientConfig
+import typings.googleGax.googleGaxStrings.proto
+import typings.googleGax.googleGaxStrings.rest
 import typings.googleGax.grpcMod.GrpcClientOptions
 import typings.googleGax.longrunningMod.Operation_
 import typings.grpcGrpcJs.mod.ChannelCredentials
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object clientInterfaceMod {
   
   type Callback[ResponseObject, NextRequestObject, RawResponseObject] = js.Function4[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* value */ js.UndefOr[ResponseObject | Null], 
     /* nextRequest */ js.UndefOr[NextRequestObject], 
     /* rawResponse */ js.UndefOr[RawResponseObject], 
@@ -35,15 +36,19 @@ object clientInterfaceMod {
   - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
   - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
-  - typings.googleGax.grpcMod.ClientStubOptions because Inheritance from two classes. Inlined protocol, servicePath, port, sslCreds */ trait ClientOptions
+  - typings.googleGax.grpcMod.ClientStubOptions because Inheritance from two classes. Inlined protocol, servicePath, port, sslCreds, cert, key */ trait ClientOptions
     extends StObject
        with GrpcClientOptions {
     
     var apiEndpoint: js.UndefOr[String] = js.undefined
     
+    var cert: js.UndefOr[String] = js.undefined
+    
     var clientConfig: js.UndefOr[ClientConfig] = js.undefined
     
-    var fallback: js.UndefOr[Boolean] = js.undefined
+    var fallback: js.UndefOr[Boolean | rest | proto] = js.undefined
+    
+    var key: js.UndefOr[String] = js.undefined
     
     var libName: js.UndefOr[String] = js.undefined
     
@@ -70,13 +75,21 @@ object clientInterfaceMod {
       
       inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      
       inline def setClientConfig(value: ClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       
       inline def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
       
-      inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Boolean | rest | proto): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       inline def setLibName(value: String): Self = StObject.set(x, "libName", value.asInstanceOf[js.Any])
       
@@ -143,7 +156,7 @@ object clientInterfaceMod {
   trait LROperation[ResultType, MetadataType] extends Operation_
   
   type PaginationCallback[RequestObject, ResponseObject, ResponseType] = js.Function4[
-    /* err */ Error | Null, 
+    /* err */ js.Error | Null, 
     /* values */ js.UndefOr[js.Array[ResponseType]], 
     /* nextPageRequest */ js.UndefOr[RequestObject], 
     /* rawResponse */ js.UndefOr[ResponseObject], 
@@ -179,7 +192,7 @@ object clientInterfaceMod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: ResponseType*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: ResponseType*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

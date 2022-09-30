@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.sketchapp.sketchappNumbers.`0`
-  - typings.sketchapp.sketchappNumbers.`1`
-  - typings.sketchapp.sketchappNumbers.`2`
+  - typings.sketchapp.sketchappInts.`0`
+  - typings.sketchapp.sketchappInts.`1`
+  - typings.sketchapp.sketchappInts.`2`
 */
 trait SketchMSBorderLineJoinStyle extends StObject
 object SketchMSBorderLineJoinStyle {
   
-  inline def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
+  inline def `0`: typings.sketchapp.sketchappInts.`0` = 0.asInstanceOf[typings.sketchapp.sketchappInts.`0`]
   
-  inline def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
+  inline def `1`: typings.sketchapp.sketchappInts.`1` = 1.asInstanceOf[typings.sketchapp.sketchappInts.`1`]
   
-  inline def `2`: typings.sketchapp.sketchappNumbers.`2` = 2.asInstanceOf[typings.sketchapp.sketchappNumbers.`2`]
+  inline def `2`: typings.sketchapp.sketchappInts.`2` = 2.asInstanceOf[typings.sketchapp.sketchappInts.`2`]
 }

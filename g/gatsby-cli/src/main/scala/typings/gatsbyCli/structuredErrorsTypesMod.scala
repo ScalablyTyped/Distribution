@@ -2,7 +2,6 @@ package typings.gatsbyCli
 
 import typings.gatsbyCli.anon.Dictkey
 import typings.gatsbyCli.anon.End
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,6 +50,12 @@ object structuredErrorsTypesMod {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Type & String] = js.native
+    
+    @js.native
+    sealed trait COMPILATION
+      extends StObject
+         with Type
+    /* "COMPILATION" */ val COMPILATION: typings.gatsbyCli.structuredErrorsTypesMod.Type.COMPILATION & String = js.native
     
     @js.native
     sealed trait CONFIG
@@ -162,7 +167,7 @@ object structuredErrorsTypesMod {
     
     var docsUrl: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var filePath: js.UndefOr[String] = js.undefined
     
@@ -171,6 +176,8 @@ object structuredErrorsTypesMod {
     var level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String
     
     var location: js.UndefOr[End] = js.undefined
+    
+    var pluginName: js.UndefOr[String] = js.undefined
     
     var stack: js.Array[IStructuredStackFrame]
     
@@ -207,7 +214,7 @@ object structuredErrorsTypesMod {
       
       inline def setDocsUrlUndefined: Self = StObject.set(x, "docsUrl", js.undefined)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -227,9 +234,13 @@ object structuredErrorsTypesMod {
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
+      inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
+      
+      inline def setPluginNameUndefined: Self = StObject.set(x, "pluginName", js.undefined)
+      
       inline def setStack(value: js.Array[IStructuredStackFrame]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      inline def setStackVarargs(value: IStructuredStackFrame*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: IStructuredStackFrame*): Self = StObject.set(x, "stack", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

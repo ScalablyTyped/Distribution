@@ -22,6 +22,6 @@ object NativeEngine {
   @js.native
   val PROTOCOL_VERSION: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   inline def _createNativeDataStream(): typings.babylonjs.nativeDataStreamMod.NativeDataStream = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNativeDataStream")().asInstanceOf[typings.babylonjs.nativeDataStreamMod.NativeDataStream]
 }

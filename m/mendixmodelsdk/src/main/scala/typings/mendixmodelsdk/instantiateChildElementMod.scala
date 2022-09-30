@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object instantiateChildElementMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/instantiateChildElement", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/instantiateChildElement", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

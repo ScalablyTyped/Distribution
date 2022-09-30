@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chenfengyuan__vue-qrcode"
-version := "1.0-dt-20211202Z-4b4299"
+version := "1.0-dt-20211202Z-94e6ae"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

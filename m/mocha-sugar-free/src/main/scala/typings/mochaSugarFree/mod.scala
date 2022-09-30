@@ -20,6 +20,7 @@ import typings.mochaSugarFree.mochaSugarFreeStrings.qunit
 import typings.mochaSugarFree.mochaSugarFreeStrings.tdd
 import typings.std.Exclude
 import typings.std.Pick
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1564,7 +1565,7 @@ object mod extends Shortcut {
     }
   }
   
-  type TestCase = js.ThisFunction1[/* this */ Unit, /* context */ TestContext, Unit | js.Thenable[Any]]
+  type TestCase = js.ThisFunction1[/* this */ Unit, /* context */ TestContext, Unit | PromiseLike[Any]]
   
   type TestCaseWithDone = js.ThisFunction1[/* this */ Unit, /* context */ TestContextWithDone, Unit]
   

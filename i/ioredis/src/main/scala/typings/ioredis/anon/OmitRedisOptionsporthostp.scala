@@ -297,7 +297,7 @@ object OmitRedisOptionsporthostp {
     inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     
     inline def setReconnectOnError(
-      value: /* err */ js.Error => Boolean | typings.ioredis.ioredisNumbers.`1` | typings.ioredis.ioredisNumbers.`2`
+      value: /* err */ js.Error => Boolean | typings.ioredis.ioredisInts.`1` | typings.ioredis.ioredisInts.`2`
     ): Self = StObject.set(x, "reconnectOnError", js.Any.fromFunction1(value))
     
     inline def setReconnectOnErrorNull: Self = StObject.set(x, "reconnectOnError", null)

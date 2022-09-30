@@ -1,6 +1,7 @@
 package typings.sipJs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sipJs.anon.Source
 import typings.sipJs.sipJsStrings.`class`
 import typings.sipJs.sipJsStrings.any
 import typings.sipJs.sipJsStrings.end
@@ -23,6 +24,8 @@ object distGrammarMod {
     def this(message: String, expected: js.Array[Expectation], found: Null, location: IFileRange) = this()
     
     var expected: js.Array[Expectation] = js.native
+    
+    def format(sources: js.Array[Source]): String = js.native
     
     var found: String | Null = js.native
     
@@ -198,18 +201,22 @@ object distGrammarMod {
     
     var end: IFilePosition
     
+    var source: String
+    
     var start: IFilePosition
   }
   object IFileRange {
     
-    inline def apply(end: IFilePosition, start: IFilePosition): IFileRange = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    inline def apply(end: IFilePosition, source: String, start: IFilePosition): IFileRange = {
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileRange]
     }
     
     extension [Self <: IFileRange](x: Self) {
       
       inline def setEnd(value: IFilePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setStart(value: IFilePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }

@@ -1,13 +1,13 @@
 package typings.reactInfiniteCalendar
 
 import typings.reactInfiniteCalendar.mod.DateType
-import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`0`
-import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`1`
-import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`2`
-import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`3`
-import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`4`
-import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`5`
-import typings.reactInfiniteCalendar.reactInfiniteCalendarNumbers.`6`
+import typings.reactInfiniteCalendar.reactInfiniteCalendarInts.`0`
+import typings.reactInfiniteCalendar.reactInfiniteCalendarInts.`1`
+import typings.reactInfiniteCalendar.reactInfiniteCalendarInts.`2`
+import typings.reactInfiniteCalendar.reactInfiniteCalendarInts.`3`
+import typings.reactInfiniteCalendar.reactInfiniteCalendarInts.`4`
+import typings.reactInfiniteCalendar.reactInfiniteCalendarInts.`5`
+import typings.reactInfiniteCalendar.reactInfiniteCalendarInts.`6`
 import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.landscape
 import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.portrait
 import org.scalablytyped.runtime.StObject

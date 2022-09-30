@@ -842,15 +842,7 @@ object animationsIndexMod {
     ): Nullable[typings.babylonjs.animatableMod.Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.animatableMod.Animatable]]
     
     /**
-      * @param name
-      * @param targetProperty
-      * @param framePerSecond
-      * @param totalFrame
-      * @param from
-      * @param to
-      * @param loopMode
-      * @param easingFunction
-      * @hidden Internal use
+      * @internal Internal use
       */
     inline def _PrepareAnimation(
       name: String,
@@ -896,10 +888,7 @@ object animationsIndexMod {
     inline def _UniqueIdGenerator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdGenerator")(x.asInstanceOf[js.Any])
     
     /**
-      * @param left
-      * @param right
-      * @param amount
-      * @hidden
+      * @internal
       */
     inline def _UniversalLerp(left: Any, right: Any, amount: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_UniversalLerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
@@ -1477,16 +1466,16 @@ object animationsIndexMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _processLateAnimationBindings(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): Any = js.native
       
-      /** @hidden */
+      /** @internal */
       def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: Quaternion): Quaternion = js.native
       
-      /** @hidden */
+      /** @internal */
       def _registerTargetForLateAnimationBinding(runtimeAnimation: typings.babylonjs.runtimeAnimationMod.RuntimeAnimation, originalValue: Any): Unit = js.native
       
       /**

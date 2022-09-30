@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "electron-window-state" : "5.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "electron-window-state" : "5.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,5 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashinlayHintSlashrefresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object InlayHintRefreshRequest {
   
   @JSImport("vscode-languageserver-protocol", "InlayHintRefreshRequest.method")
   @js.native
-  val method: workspaceSlashinlayHintSlashrefresh = js.native
+  val method: /* template literal string: workspace/inlayHint/refresh */ String = js.native
   
   @JSImport("vscode-languageserver-protocol", "InlayHintRefreshRequest.type")
   @js.native

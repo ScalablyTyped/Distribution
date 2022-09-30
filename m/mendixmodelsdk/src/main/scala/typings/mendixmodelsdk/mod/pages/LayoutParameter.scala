@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.LayoutParameter")
 @js.native
-class LayoutParameter protected ()
+open class LayoutParameter protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LayoutParameter {
   def this(
     model: AbstractModel,

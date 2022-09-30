@@ -16,9 +16,6 @@ object utilsMod {
   
   inline def getNativeFetchImplementation(): FetchImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFetchImplementation")().asInstanceOf[FetchImpl]
   
-  inline def sendReport(url: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendReport")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendReport(url: String, body: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendReport")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
   @js.native
   trait FetchImpl extends StObject {
     

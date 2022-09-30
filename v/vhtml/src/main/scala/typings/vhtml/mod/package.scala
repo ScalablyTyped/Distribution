@@ -14,15 +14,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply[T /* <: String */](name: T, attrs: Null, children: Any*): String = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
-inline def apply[T /* <: String */](name: T, attrs: Unit, children: Any*): String = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+inline def apply[T /* <: String */](name: T, attrs: Null, children: Any*): String = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+inline def apply[T /* <: String */](name: T, attrs: Unit, children: Any*): String = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
 /**
   * Converts Hyperscript/JSX to a plain string.
   * @param name Element name
   * @param attrs Attributes
   * @param children Child elements
   */
-inline def apply[T /* <: String */](name: T, attrs: HtmlElementAttr[T], children: Any*): String = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+inline def apply[T /* <: String */](name: T, attrs: HtmlElementAttr[T], children: Any*): String = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
 /**
   * Converts Hyperscript/JSX to a plain string.
   * @param component Functional pseudo-component

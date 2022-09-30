@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object supportsPassiveMod {
   
-  @JSImport("react-dnd-touch-backend/lib/utils/supportsPassive", "supportsPassive")
+  @JSImport("react-dnd-touch-backend/dist/utils/supportsPassive", "supportsPassive")
   @js.native
   val supportsPassive: Boolean = js.native
 }

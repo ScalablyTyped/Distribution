@@ -9,26 +9,26 @@ trait ReflectionBlock
   extends StObject
      with ReflectionTextureBaseBlock {
   
-  /** @hidden */
+  /** @internal */
   var _defineLODReflectionAlpha: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineLinearSpecularReflection: String = js.native
   
   /* private */ var _scene: Any = js.native
   
   /* private */ var _vEnvironmentIrradianceName: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vReflectionFilteringInfoName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vReflectionInfosName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vReflectionMicrosurfaceInfosName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var cameraPositionConnectionPoint: NodeMaterialConnectionPoint = js.native
   
   /**
@@ -70,10 +70,10 @@ trait ReflectionBlock
     */
   var useSphericalHarmonics: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var viewConnectionPoint: NodeMaterialConnectionPoint = js.native
   
-  /** @hidden */
+  /** @internal */
   var worldNormalConnectionPoint: NodeMaterialConnectionPoint = js.native
   
   /**
@@ -81,6 +81,6 @@ trait ReflectionBlock
     * This is to avoid having to add them as inputs here whereas they are already inputs of the main block, so already known.
     * It's less burden on the user side in the editor part.
     */
-  /** @hidden */
+  /** @internal */
   var worldPositionConnectionPoint: NodeMaterialConnectionPoint = js.native
 }

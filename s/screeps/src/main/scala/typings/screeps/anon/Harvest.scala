@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Harvest extends StObject {
   
-  var harvest: typings.screeps.screepsNumbers.`3`
+  var harvest: typings.screeps.screepsInts.`3`
 }
 object Harvest {
   
@@ -17,6 +17,6 @@ object Harvest {
   
   extension [Self <: Harvest](x: Self) {
     
-    inline def setHarvest(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "harvest", value.asInstanceOf[js.Any])
+    inline def setHarvest(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "harvest", value.asInstanceOf[js.Any])
   }
 }

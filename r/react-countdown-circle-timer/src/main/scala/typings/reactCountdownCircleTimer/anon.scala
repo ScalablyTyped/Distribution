@@ -92,7 +92,7 @@ object anon {
       */
     /* standard es5 */
     @JSName("every")
-    def every_S_ColorHex[S /* <: ColorHex */](
+    def every_S[S /* <: ColorHex */](
       predicate: js.Function3[
           /* value */ ColorHex, 
           /* index */ Double, 
@@ -101,7 +101,7 @@ object anon {
         ]
     ): /* is std.Array<S> */ Boolean = js.native
     @JSName("every")
-    def every_S_ColorHex[S /* <: ColorHex */](
+    def every_S[S /* <: ColorHex */](
       predicate: js.Function3[
           /* value */ ColorHex, 
           /* index */ Double, 
@@ -145,7 +145,7 @@ object anon {
       */
     /* standard es5 */
     @JSName("filter")
-    def filter_S_ColorHex[S /* <: ColorHex */](
+    def filter_S[S /* <: ColorHex */](
       predicate: js.Function3[
           /* value */ ColorHex, 
           /* index */ Double, 
@@ -154,7 +154,7 @@ object anon {
         ]
     ): js.Array[S] = js.native
     @JSName("filter")
-    def filter_S_ColorHex[S /* <: ColorHex */](
+    def filter_S[S /* <: ColorHex */](
       predicate: js.Function3[
           /* value */ ColorHex, 
           /* index */ Double, 
@@ -611,7 +611,7 @@ object anon {
       */
     /* standard es5 */
     @JSName("every")
-    def every_S_Double[S /* <: Double */](
+    def every_S[S /* <: Double */](
       predicate: js.Function3[
           /* value */ Double, 
           /* index */ Double, 
@@ -620,7 +620,7 @@ object anon {
         ]
     ): /* is std.Array<S> */ Boolean = js.native
     @JSName("every")
-    def every_S_Double[S /* <: Double */](
+    def every_S[S /* <: Double */](
       predicate: js.Function3[
           /* value */ Double, 
           /* index */ Double, 
@@ -662,7 +662,7 @@ object anon {
       */
     /* standard es5 */
     @JSName("filter")
-    def filter_S_Double[S /* <: Double */](
+    def filter_S[S /* <: Double */](
       predicate: js.Function3[
           /* value */ Double, 
           /* index */ Double, 
@@ -671,7 +671,7 @@ object anon {
         ]
     ): js.Array[S] = js.native
     @JSName("filter")
-    def filter_S_Double[S /* <: Double */](
+    def filter_S[S /* <: Double */](
       predicate: js.Function3[
           /* value */ Double, 
           /* index */ Double, 

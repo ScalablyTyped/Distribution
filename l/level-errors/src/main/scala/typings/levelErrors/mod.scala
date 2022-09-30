@@ -1,7 +1,7 @@
 package typings.levelErrors
 
 import typings.levelErrors.levelErrorsBooleans.`true`
-import typings.levelErrors.levelErrorsNumbers.`404`
+import typings.levelErrors.levelErrorsInts.`404`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

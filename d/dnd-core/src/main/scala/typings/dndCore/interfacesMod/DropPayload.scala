@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DropPayload extends StObject {
   
-  var dropResult: js.Any
+  var dropResult: Any
 }
 object DropPayload {
   
-  inline def apply(dropResult: js.Any): DropPayload = {
+  inline def apply(dropResult: Any): DropPayload = {
     val __obj = js.Dynamic.literal(dropResult = dropResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropPayload]
   }
   
   extension [Self <: DropPayload](x: Self) {
     
-    inline def setDropResult(value: js.Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
+    inline def setDropResult(value: Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-dnd-multi-backend" : "7.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-dnd-multi-backend" : "7.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

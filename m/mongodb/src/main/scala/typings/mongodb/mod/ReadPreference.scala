@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.Document
 import typings.mongodb.mongodbStrings.nearest
 import typings.mongodb.mongodbStrings.primary
 import typings.mongodb.mongodbStrings.primaryPreferred
@@ -11,17 +12,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongodb", "ReadPreference")
 @js.native
-class ReadPreference protected ()
+open class ReadPreference protected ()
   extends StObject
-     with ReadPreferenceOrMode {
-  def this(mode: ReadPreferenceMode, tags: js.Object) = this()
-  def this(mode: ReadPreferenceMode, tags: js.Object, options: ReadPreferenceOptions) = this()
+     with ReadPreferenceLike {
+  /**
+    * @param mode - A string describing the read preference mode (primary|primaryPreferred|secondary|secondaryPreferred|nearest)
+    * @param tags - A tag set used to target reads to members with the specified tag(s). tagSet is not available if using read preference mode primary.
+    * @param options - Additional read preference options
+    */
+  def this(mode: ReadPreferenceMode) = this()
+  def this(mode: ReadPreferenceMode, tags: js.Array[TagSet]) = this()
+  def this(mode: ReadPreferenceMode, tags: js.Array[TagSet], options: ReadPreferenceOptions) = this()
+  def this(mode: ReadPreferenceMode, tags: Unit, options: ReadPreferenceOptions) = this()
   
+  /**
+    * Check if the two ReadPreferences are equivalent
+    *
+    * @param readPreference - The read preference with which to check equality
+    */
+  def equals(readPreference: ReadPreference): Boolean = js.native
+  
+  var hedge: js.UndefOr[HedgeOptions] = js.native
+  
+  /**
+    * Validate if a mode is legal
+    *
+    * @param mode - The string representing the read preference mode.
+    */
+  def isValid(): Boolean = js.native
   def isValid(mode: String): Boolean = js.native
+  
+  var maxStalenessSeconds: js.UndefOr[scala.Double] = js.native
+  
+  var minWireVersion: js.UndefOr[scala.Double] = js.native
   
   var mode: ReadPreferenceMode = js.native
   
-  var tags: js.Any = js.native
+  def preference: ReadPreferenceMode = js.native
+  
+  /**
+    * Indicates that this readPreference needs the "SecondaryOk" bit when sent over the wire
+    * @see https://docs.mongodb.com/manual/reference/mongodb-wire-protocol/#op-query
+    */
+  def secondaryOk(): Boolean = js.native
+  
+  /**
+    * Indicates that this readPreference needs the "secondaryOk" bit when sent over the wire
+    * @deprecated Use secondaryOk instead
+    * @see https://docs.mongodb.com/manual/reference/mongodb-wire-protocol/#op-query
+    */
+  def slaveOk(): Boolean = js.native
+  
+  var tags: js.UndefOr[js.Array[TagSet]] = js.native
+  
+  /** Return JSON representation */
+  def toJSON(): Document = js.native
 }
 /* static members */
 object ReadPreference {
@@ -55,5 +100,52 @@ object ReadPreference {
   def SECONDARY_PREFERRED: secondaryPreferred = js.native
   inline def SECONDARY_PREFERRED_=(x: secondaryPreferred): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_PREFERRED")(x.asInstanceOf[js.Any])
   
+  /**
+    * Construct a ReadPreference given an options object.
+    *
+    * @param options - The options object from which to extract the read preference.
+    */
+  inline def fromOptions(): js.UndefOr[ReadPreference] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")().asInstanceOf[js.UndefOr[ReadPreference]]
+  inline def fromOptions(options: ReadPreferenceFromOptions): js.UndefOr[ReadPreference] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReadPreference]]
+  
+  inline def fromString(mode: String): ReadPreference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(mode.asInstanceOf[js.Any]).asInstanceOf[ReadPreference]
+  
+  /**
+    * Validate if a mode is legal
+    *
+    * @param mode - The string representing the read preference mode.
+    */
   inline def isValid(mode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("mongodb", "ReadPreference.nearest")
+  @js.native
+  def nearest: ReadPreference = js.native
+  inline def nearest_=(x: ReadPreference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nearest")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mongodb", "ReadPreference.primary")
+  @js.native
+  def primary: ReadPreference = js.native
+  
+  @JSImport("mongodb", "ReadPreference.primaryPreferred")
+  @js.native
+  def primaryPreferred: ReadPreference = js.native
+  inline def primaryPreferred_=(x: ReadPreference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primaryPreferred")(x.asInstanceOf[js.Any])
+  
+  inline def primary_=(x: ReadPreference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primary")(x.asInstanceOf[js.Any])
+  
+  @JSImport("mongodb", "ReadPreference.secondary")
+  @js.native
+  def secondary: ReadPreference = js.native
+  
+  @JSImport("mongodb", "ReadPreference.secondaryPreferred")
+  @js.native
+  def secondaryPreferred: ReadPreference = js.native
+  inline def secondaryPreferred_=(x: ReadPreference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryPreferred")(x.asInstanceOf[js.Any])
+  
+  inline def secondary_=(x: ReadPreference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondary")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Replaces options.readPreference with a ReadPreference instance
+    */
+  inline def translate(options: ReadPreferenceLikeOptions): ReadPreferenceLikeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(options.asInstanceOf[js.Any]).asInstanceOf[ReadPreferenceLikeOptions]
 }

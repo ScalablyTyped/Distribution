@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ErrorInfo
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
-import typings.std.Error
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +44,7 @@ trait Componentanyoccurrencenum extends StObject {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
-  var UNSAFE_componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ js.Any, Unit]] = js.native
+  var UNSAFE_componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ Any, Unit]] = js.native
   
   /**
     * Called immediately before rendering when new props or state is received. Not called for the initial render.
@@ -62,14 +61,14 @@ trait Componentanyoccurrencenum extends StObject {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillUpdate: js.UndefOr[
-    js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ js.Any, Unit]
+    js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ Any, Unit]
   ] = js.native
   
   /**
     * Catches exceptions generated in descendant components. Unhandled exceptions will cause
     * the entire component tree to unmount.
     */
-  var componentDidCatch: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
+  var componentDidCatch: js.UndefOr[js.Function2[/* error */ js.Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
   
   /**
     * Called immediately after a component is mounted. Setting state here will trigger re-rendering.
@@ -85,7 +84,7 @@ trait Componentanyoccurrencenum extends StObject {
     js.Function3[
       /* prevProps */ js.Object, 
       /* prevState */ js.Object, 
-      /* snapshot */ js.UndefOr[js.Any], 
+      /* snapshot */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.native
@@ -117,7 +116,7 @@ trait Componentanyoccurrencenum extends StObject {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
-  var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ js.Any, Unit]] = js.native
+  var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ Any, Unit]] = js.native
   
   /**
     * Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
@@ -138,7 +137,7 @@ trait Componentanyoccurrencenum extends StObject {
     * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillUpdate: js.UndefOr[
-    js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ js.Any, Unit]
+    js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ Any, Unit]
   ] = js.native
   
   /**
@@ -156,8 +155,7 @@ trait Componentanyoccurrencenum extends StObject {
     *
     * @see https://reactjs.org/docs/context.html
     */
-  // TODO (TypeScript 3.0): unknown
-  var context: js.Any = js.native
+  var context: Any = js.native
   
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
@@ -170,18 +168,9 @@ trait Componentanyoccurrencenum extends StObject {
     * Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
     * lifecycle events from running.
     */
-  var getSnapshotBeforeUpdate: js.UndefOr[
-    js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, js.Any | Null]
-  ] = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, Any | Null]] = js.native
   
   var occurrence: js.UndefOr[Double] = js.native
-  
-  // React.Props<T> is now deprecated, which means that the `children`
-  // property is not available on `P` by default, even though you can
-  // always pass children as variadic arguments to `createElement`.
-  // In the future, if we can define its call signature conditionally
-  // on the existence of `children` in `P`, then we should remove this.
-  val props: ReadonlyReadonlyChildren = js.native
   
   /**
     * @deprecated
@@ -227,11 +216,6 @@ trait Componentanyoccurrencenum extends StObject {
     * and `componentDidUpdate` will not be called.
     */
   var shouldComponentUpdate: js.UndefOr[
-    js.Function3[
-      /* nextProps */ js.Object, 
-      /* nextState */ js.Object, 
-      /* nextContext */ js.Any, 
-      Boolean
-    ]
+    js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ Any, Boolean]
   ] = js.native
 }

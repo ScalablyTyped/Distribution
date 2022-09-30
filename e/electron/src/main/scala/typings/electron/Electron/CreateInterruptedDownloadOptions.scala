@@ -76,6 +76,6 @@ object CreateInterruptedDownloadOptions {
     
     inline def setUrlChain(value: js.Array[String]): Self = StObject.set(x, "urlChain", value.asInstanceOf[js.Any])
     
-    inline def setUrlChainVarargs(value: String*): Self = StObject.set(x, "urlChain", js.Array(value :_*))
+    inline def setUrlChainVarargs(value: String*): Self = StObject.set(x, "urlChain", js.Array(value*))
   }
 }

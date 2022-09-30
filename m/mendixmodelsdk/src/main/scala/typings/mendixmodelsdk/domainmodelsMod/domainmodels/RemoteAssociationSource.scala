@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationSource because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteAssociationSource because var conflicts: containerAsAssociationBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteAssociationSource")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteAssociationSource because var conflicts: containerAsAssociationBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteAssociationSource")
 @js.native
 abstract class RemoteAssociationSource protected () extends AssociationSource {
   def this(
@@ -36,18 +36,18 @@ abstract class RemoteAssociationSource protected () extends AssociationSource {
 }
 object RemoteAssociationSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteAssociationSource")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteAssociationSource")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteAssociationSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteAssociationSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RemoteAssociationSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RemoteAssociationSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

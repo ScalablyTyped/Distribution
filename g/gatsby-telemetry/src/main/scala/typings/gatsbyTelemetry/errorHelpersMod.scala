@@ -1,7 +1,7 @@
 package typings.gatsbyTelemetry
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object errorHelpersMod {
   
   trait IErrorWithStdErrAndStdOut
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var stderr: js.UndefOr[Buffer | String] = js.undefined
     

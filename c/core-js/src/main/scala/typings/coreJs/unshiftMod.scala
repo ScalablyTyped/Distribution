@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object unshiftMod {
   
   /* was `typeof core.Array.unshift` */
-  inline def apply[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].apply(List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def apply[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].apply(scala.List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
   @JSImport("core-js/fn/array/unshift", JSImport.Namespace)
   @js.native

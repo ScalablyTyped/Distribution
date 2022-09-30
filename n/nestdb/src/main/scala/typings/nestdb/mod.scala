@@ -418,9 +418,9 @@ object mod {
       * @api private Use Datastore.update which has the same signature
       */
     @JSName("update")
-    def update_T_G[T /* <: G */](query: Any, updateQuery: Any): Unit = js.native
+    def update_T[T /* <: G */](query: Any, updateQuery: Any): Unit = js.native
     @JSName("update")
-    def update_T_G[T /* <: G */](query: Any, updateQuery: Any, options: UpdateOptions): Unit = js.native
+    def update_T[T /* <: G */](query: Any, updateQuery: Any, options: UpdateOptions): Unit = js.native
   }
   
   trait Persistence extends StObject {

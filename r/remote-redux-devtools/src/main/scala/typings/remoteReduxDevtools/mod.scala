@@ -3,9 +3,9 @@ package typings.remoteReduxDevtools
 import typings.redux.mod.ActionCreator
 import typings.redux.mod.ActionCreatorsMapObject
 import typings.redux.mod.StoreEnhancer
-import typings.remoteReduxDevtools.remoteReduxDevtoolsNumbers.`0`
-import typings.remoteReduxDevtools.remoteReduxDevtoolsNumbers.`1`
-import typings.remoteReduxDevtools.remoteReduxDevtoolsNumbers.`2`
+import typings.remoteReduxDevtools.remoteReduxDevtoolsInts.`0`
+import typings.remoteReduxDevtools.remoteReduxDevtoolsInts.`1`
+import typings.remoteReduxDevtools.remoteReduxDevtoolsInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object mod {
     /* repeated */ StoreEnhancer[js.Object, js.Object], 
     StoreEnhancer[js.Object, js.Object]
   ]]
-  inline def composeWithDevTools(funcs: (StoreEnhancer[js.Object, js.Object])*): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  inline def composeWithDevTools(funcs: (StoreEnhancer[js.Object, js.Object])*): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
   inline def composeWithDevTools(options: RemoteReduxDevToolsOptions): js.Function1[
     /* repeated */ StoreEnhancer[js.Object, js.Object], 
     StoreEnhancer[js.Object, js.Object]
@@ -38,13 +38,13 @@ object mod {
   trait RemoteReduxDevToolsOptions extends StObject {
     
     /** Action creators functions to be available in the dispatcher. */
-    var actionCreators: js.UndefOr[js.Array[ActionCreator[js.Any]] | ActionCreatorsMapObject[js.Any]] = js.undefined
+    var actionCreators: js.UndefOr[js.Array[ActionCreator[Any]] | ActionCreatorsMapObject[Any]] = js.undefined
     
     /**
       * Function which takes `action` object as argument, and should return
       * `action` object back.
       */
-    var actionSanitizer: js.UndefOr[js.Function1[/* action */ js.Any, js.Any]] = js.undefined
+    var actionSanitizer: js.UndefOr[js.Function1[/* action */ Any, Any]] = js.undefined
     
     /**
       * Actions types to be hidden in the monitors (while passed to the
@@ -148,7 +148,7 @@ object mod {
       * Function which takes `state` object as argument, and should return
       * `state` object back.
       */
-    var stateSanitizer: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
+    var stateSanitizer: js.UndefOr[js.Function1[/* state */ Any, Any]] = js.undefined
     
     /** Action or list of actions which should stop remote monitoring. */
     var stopOn: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -162,13 +162,13 @@ object mod {
     
     extension [Self <: RemoteReduxDevToolsOptions](x: Self) {
       
-      inline def setActionCreators(value: js.Array[ActionCreator[js.Any]] | ActionCreatorsMapObject[js.Any]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
+      inline def setActionCreators(value: js.Array[ActionCreator[Any]] | ActionCreatorsMapObject[Any]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
       
       inline def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
       
-      inline def setActionCreatorsVarargs(value: ActionCreator[js.Any]*): Self = StObject.set(x, "actionCreators", js.Array(value :_*))
+      inline def setActionCreatorsVarargs(value: ActionCreator[Any]*): Self = StObject.set(x, "actionCreators", js.Array(value*))
       
-      inline def setActionSanitizer(value: /* action */ js.Any => js.Any): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction1(value))
+      inline def setActionSanitizer(value: /* action */ Any => Any): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction1(value))
       
       inline def setActionSanitizerUndefined: Self = StObject.set(x, "actionSanitizer", js.undefined)
       
@@ -176,13 +176,13 @@ object mod {
       
       inline def setActionsBlacklistUndefined: Self = StObject.set(x, "actionsBlacklist", js.undefined)
       
-      inline def setActionsBlacklistVarargs(value: String*): Self = StObject.set(x, "actionsBlacklist", js.Array(value :_*))
+      inline def setActionsBlacklistVarargs(value: String*): Self = StObject.set(x, "actionsBlacklist", js.Array(value*))
       
       inline def setActionsWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "actionsWhitelist", value.asInstanceOf[js.Any])
       
       inline def setActionsWhitelistUndefined: Self = StObject.set(x, "actionsWhitelist", js.undefined)
       
-      inline def setActionsWhitelistVarargs(value: String*): Self = StObject.set(x, "actionsWhitelist", js.Array(value :_*))
+      inline def setActionsWhitelistVarargs(value: String*): Self = StObject.set(x, "actionsWhitelist", js.Array(value*))
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -220,7 +220,7 @@ object mod {
       
       inline def setSendOnUndefined: Self = StObject.set(x, "sendOn", js.undefined)
       
-      inline def setSendOnVarargs(value: String*): Self = StObject.set(x, "sendOn", js.Array(value :_*))
+      inline def setSendOnVarargs(value: String*): Self = StObject.set(x, "sendOn", js.Array(value*))
       
       inline def setSendTo(value: String): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
       
@@ -246,9 +246,9 @@ object mod {
       
       inline def setStartOnUndefined: Self = StObject.set(x, "startOn", js.undefined)
       
-      inline def setStartOnVarargs(value: String*): Self = StObject.set(x, "startOn", js.Array(value :_*))
+      inline def setStartOnVarargs(value: String*): Self = StObject.set(x, "startOn", js.Array(value*))
       
-      inline def setStateSanitizer(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction1(value))
+      inline def setStateSanitizer(value: /* state */ Any => Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction1(value))
       
       inline def setStateSanitizerUndefined: Self = StObject.set(x, "stateSanitizer", js.undefined)
       
@@ -256,7 +256,7 @@ object mod {
       
       inline def setStopOnUndefined: Self = StObject.set(x, "stopOn", js.undefined)
       
-      inline def setStopOnVarargs(value: String*): Self = StObject.set(x, "stopOn", js.Array(value :_*))
+      inline def setStopOnVarargs(value: String*): Self = StObject.set(x, "stopOn", js.Array(value*))
     }
   }
 }

@@ -45,17 +45,17 @@ object orderingMod {
   inline def sign(n: Double): Ordering = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Ordering]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.fpTs.fpTsNumbers.`-1`
-    - typings.fpTs.fpTsNumbers.`0`
-    - typings.fpTs.fpTsNumbers.`1`
+    - typings.fpTs.fpTsInts.`-1`
+    - typings.fpTs.fpTsInts.`0`
+    - typings.fpTs.fpTsInts.`1`
   */
   trait Ordering extends StObject
   object Ordering {
     
-    inline def `-1`: typings.fpTs.fpTsNumbers.`-1` = -1.asInstanceOf[typings.fpTs.fpTsNumbers.`-1`]
+    inline def `-1`: typings.fpTs.fpTsInts.`-1` = -1.asInstanceOf[typings.fpTs.fpTsInts.`-1`]
     
-    inline def `0`: typings.fpTs.fpTsNumbers.`0` = 0.asInstanceOf[typings.fpTs.fpTsNumbers.`0`]
+    inline def `0`: typings.fpTs.fpTsInts.`0` = 0.asInstanceOf[typings.fpTs.fpTsInts.`0`]
     
-    inline def `1`: typings.fpTs.fpTsNumbers.`1` = 1.asInstanceOf[typings.fpTs.fpTsNumbers.`1`]
+    inline def `1`: typings.fpTs.fpTsInts.`1` = 1.asInstanceOf[typings.fpTs.fpTsInts.`1`]
   }
 }

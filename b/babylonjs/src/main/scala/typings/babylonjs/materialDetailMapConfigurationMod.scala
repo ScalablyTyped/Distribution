@@ -25,12 +25,12 @@ object materialDetailMapConfigurationMod {
     def this(material: PBRBaseMaterial, addToPluginList: Boolean) = this()
     def this(material: StandardMaterial, addToPluginList: Boolean) = this()
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: Any = js.native
     
     /* private */ var _isEnabled: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
     /* private */ var _normalBlendMethod: Any = js.native

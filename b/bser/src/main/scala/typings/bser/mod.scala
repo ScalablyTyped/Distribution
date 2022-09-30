@@ -2,8 +2,8 @@ package typings.bser
 
 import typings.bser.bserBooleans.`false`
 import typings.bser.bserBooleans.`true`
-import typings.bser.bserNumbers.`0`
-import typings.bser.bserNumbers.`1`
+import typings.bser.bserInts.`0`
+import typings.bser.bserInts.`1`
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.SharedArrayBuffer

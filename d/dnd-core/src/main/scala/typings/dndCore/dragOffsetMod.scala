@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dragOffsetMod {
   
-  @JSImport("dnd-core/lib/reducers/dragOffset", JSImport.Namespace)
+  @JSImport("dnd-core/dist/reducers/dragOffset", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

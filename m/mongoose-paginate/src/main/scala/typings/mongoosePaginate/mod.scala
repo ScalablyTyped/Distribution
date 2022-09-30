@@ -14,22 +14,22 @@ object mod {
   inline def model[T /* <: Document */](name: String): PaginateModel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[PaginateModel[T]]
   inline def model[T /* <: Document */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
   inline def model[T /* <: Document */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any,
     collection: String
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
   inline def model[T /* <: Document */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any,
     collection: String,
     skipInit: Boolean
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
   inline def model[T /* <: Document */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any,
     collection: Unit,
     skipInit: Boolean
   ): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
@@ -37,31 +37,31 @@ object mod {
   inline def model[T /* <: Document */](name: String, schema: Unit, collection: String, skipInit: Boolean): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
   inline def model[T /* <: Document */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): PaginateModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PaginateModel[T]]
   
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any,
     collection: String
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any,
     collection: String,
     skipInit: Boolean
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](
     name: String,
-    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ js.Any,
+    schema: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ Any,
     collection: Unit,
     skipInit: Boolean
   ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PaginateModelT_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PaginateModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<T> * / any */ @js.native
@@ -72,24 +72,24 @@ object mod {
     def paginate(
       query: js.Object,
       options: Unit,
-      callback: js.Function2[/* err */ js.Any, /* result */ PaginateResult[T], Unit]
+      callback: js.Function2[/* err */ Any, /* result */ PaginateResult[T], Unit]
     ): js.Promise[PaginateResult[T]] = js.native
     def paginate(query: js.Object, options: PaginateOptions): js.Promise[PaginateResult[T]] = js.native
     def paginate(
       query: js.Object,
       options: PaginateOptions,
-      callback: js.Function2[/* err */ js.Any, /* result */ PaginateResult[T], Unit]
+      callback: js.Function2[/* err */ Any, /* result */ PaginateResult[T], Unit]
     ): js.Promise[PaginateResult[T]] = js.native
     def paginate(
       query: Unit,
       options: Unit,
-      callback: js.Function2[/* err */ js.Any, /* result */ PaginateResult[T], Unit]
+      callback: js.Function2[/* err */ Any, /* result */ PaginateResult[T], Unit]
     ): js.Promise[PaginateResult[T]] = js.native
     def paginate(query: Unit, options: PaginateOptions): js.Promise[PaginateResult[T]] = js.native
     def paginate(
       query: Unit,
       options: PaginateOptions,
-      callback: js.Function2[/* err */ js.Any, /* result */ PaginateResult[T], Unit]
+      callback: js.Function2[/* err */ Any, /* result */ PaginateResult[T], Unit]
     ): js.Promise[PaginateResult[T]] = js.native
   }
   
@@ -144,7 +144,7 @@ object mod {
       
       inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      inline def setPopulateVarargs(value: (js.Object | String)*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: (js.Object | String)*): Self = StObject.set(x, "populate", js.Array(value*))
       
       inline def setSelect(value: js.Object | String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
@@ -181,7 +181,7 @@ object mod {
       
       inline def setDocs(value: js.Array[T]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
       
-      inline def setDocsVarargs(value: T*): Self = StObject.set(x, "docs", js.Array(value :_*))
+      inline def setDocsVarargs(value: T*): Self = StObject.set(x, "docs", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -204,15 +204,15 @@ object mod {
   trait QueryPopulateOptions extends StObject {
     
     /** optional query conditions to match */
-    var `match`: js.UndefOr[js.Any] = js.undefined
+    var `match`: js.UndefOr[Any] = js.undefined
     
     /** optional model to use for population */
     var model: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<any> */ js.Any)
+        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<any> */ Any)
       ] = js.undefined
     
     /** optional query options like sort, limit, etc */
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     /** space delimited path(s) to populate */
     var path: String
@@ -221,7 +221,7 @@ object mod {
     var populate: js.UndefOr[QueryPopulateOptions | js.Array[QueryPopulateOptions]] = js.undefined
     
     /** optional fields to select */
-    var select: js.UndefOr[js.Any] = js.undefined
+    var select: js.UndefOr[Any] = js.undefined
   }
   object QueryPopulateOptions {
     
@@ -232,17 +232,17 @@ object mod {
     
     extension [Self <: QueryPopulateOptions](x: Self) {
       
-      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
       inline def setModel(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<any> */ js.Any)
+        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Model<any> */ Any)
       ): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -252,9 +252,9 @@ object mod {
       
       inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      inline def setPopulateVarargs(value: QueryPopulateOptions*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: QueryPopulateOptions*): Self = StObject.set(x, "populate", js.Array(value*))
       
-      inline def setSelect(value: js.Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Any): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     }

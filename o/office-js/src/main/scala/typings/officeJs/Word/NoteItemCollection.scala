@@ -25,7 +25,7 @@ trait NoteItemCollection
   var context_NoteItemCollection: RequestContext = js.native
   
   /**
-    * Gets the first note item in this collection. Throws an error if this collection is empty.
+    * Gets the first note item in this collection. Throws an `ItemNotFound` error if this collection is empty.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -33,7 +33,7 @@ trait NoteItemCollection
   def getFirst(): NoteItem = js.native
   
   /**
-    * Gets the first note item in this collection. Returns a null object if this collection is empty.
+    * Gets the first note item in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]

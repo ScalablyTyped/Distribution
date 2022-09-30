@@ -1,5 +1,7 @@
 package typings.wdioUtils
 
+import typings.wdioTypes.servicesMod.RunnerPlugin
+import typings.wdioTypes.servicesMod.ServicePlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,6 @@ object initialisePluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def default(name: String, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(name: String): ServicePlugin | RunnerPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[ServicePlugin | RunnerPlugin]
+  inline def default(name: String, `type`: String): ServicePlugin | RunnerPlugin = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ServicePlugin | RunnerPlugin]
 }

@@ -11,4 +11,4 @@ inline def bunyanSerializer(err: Any): Any = ^.asInstanceOf[js.Dynamic].applyDyn
 inline def makeConstructor(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConstructor")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def makeConstructor(name: String, defaults: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeConstructor")(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def makeErrFromCode(statusCode: Double, args: Any*): HttpError = ^.asInstanceOf[js.Dynamic].applyDynamic("makeErrFromCode")(List(statusCode.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HttpError]
+inline def makeErrFromCode(statusCode: Double, args: Any*): HttpError = ^.asInstanceOf[js.Dynamic].applyDynamic("makeErrFromCode")(scala.List(statusCode.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HttpError]

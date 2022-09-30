@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "Identifier")
+@JSImport("xadesjs/build/types/src/xml", "Identifier")
 @js.native
-class Identifier ()
+open class Identifier ()
   extends typings.xadesjs.objectIdentifierMod.Identifier {
   def this(properties: js.Object) = this()
 }

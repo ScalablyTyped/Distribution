@@ -16,25 +16,25 @@ object engineQueryMod {
   @js.native
   open class OcclusionDataStorage () extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var forceRenderingWhenOccluded: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var isOccluded: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var isOcclusionQueryInProgress: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var occlusionInternalRetryCounter: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var occlusionQueryAlgorithmType: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var occlusionRetryCount: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var occlusionType: Double = js.native
   }
   
@@ -45,37 +45,37 @@ object engineQueryMod {
     
     trait Engine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _captureGPUFrameTime: Boolean
       
-      /** @hidden */
+      /** @internal */
       def _createTimeQuery(): WebGLQuery
       
-      /** @hidden */
+      /** @internal */
       var _currentNonTimestampToken: Nullable[TimeToken]
       
-      /** @hidden */
+      /** @internal */
       def _deleteTimeQuery(query: WebGLQuery): Unit
       
-      /** @hidden */
+      /** @internal */
       def _getGlAlgorithmType(algorithmType: Double): Double
       
-      /** @hidden */
+      /** @internal */
       def _getTimeQueryAvailability(query: WebGLQuery): Any
       
-      /** @hidden */
+      /** @internal */
       def _getTimeQueryResult(query: WebGLQuery): Any
       
-      /** @hidden */
+      /** @internal */
       var _gpuFrameTime: PerfCounter
       
-      /** @hidden */
+      /** @internal */
       var _gpuFrameTimeToken: Nullable[TimeToken]
       
-      /** @hidden */
+      /** @internal */
       var _onBeginFrameObserver: Nullable[Observer[Engine]]
       
-      /** @hidden */
+      /** @internal */
       var _onEndFrameObserver: Nullable[Observer[Engine]]
       
       /**
@@ -235,13 +235,13 @@ object engineQueryMod {
       
       /**
         * Backing filed
-        * @hidden
+        * @internal
         */
       var __occlusionDataStorage: OcclusionDataStorage
       
       /**
         * Access property
-        * @hidden
+        * @internal
         */
       var _occlusionDataStorage: OcclusionDataStorage
       

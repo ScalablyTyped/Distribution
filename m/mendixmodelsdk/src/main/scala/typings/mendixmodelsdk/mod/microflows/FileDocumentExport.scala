@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.FileDocumentExport")
 @js.native
-class FileDocumentExport protected ()
+open class FileDocumentExport protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.FileDocumentExport {
   def this(
     model: AbstractModel,

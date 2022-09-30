@@ -7,57 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields.
-  @returns A URL string.
-  @example
-  ```
-  import newGithubReleaseUrl = require('new-github-release-url');
-  import open = require('open');
-  const url = newGithubReleaseUrl({
-  	user: 'sindresorhus',
-  	repo: 'new-github-release-url',
-  	body: '\n\n\n---\nI\'m a human. Please be nice.'
-  });
-  //=> 'https://github.com/sindresorhus/new-github-release-url/releases/new?body=%0A%0A%0A---%0AI%27m+a+human.+Please+be+nice.'
-  // Then open it
-  open(url);
-  ```
-  */
-  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("new-github-release-url", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait BaseOptions extends StObject {
     
     /**
-    		The description text of the release.
-    		*/
+    	The description text of the release.
+    	*/
     val body: js.UndefOr[String] = js.undefined
     
     /**
-    		Whether the release should be marked as a pre-release.
-    		@default false
-    		*/
+    	Whether the release should be marked as a pre-release.
+    	@default false
+    	*/
     val isPrerelease: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		The tag name of the release.
-    		*/
+    	The tag name of the release.
+    	*/
     val tag: js.UndefOr[String] = js.undefined
     
     /**
-    		The branch name or commit SHA to point the release's tag at, if the tag doesn't already exist.
-    		Default: The default branch.
-    		*/
+    	The branch name or commit SHA to point the release's tag at, if the tag doesn't already exist.
+    	Default: The default branch.
+    	*/
     val target: js.UndefOr[String] = js.undefined
     
     /**
-    		The title of the release.
-    		GitHub shows the `tag` name when not specified.
-    		*/
+    	The title of the release.
+    	GitHub shows the `tag` name when not specified.
+    	*/
     val title: js.UndefOr[String] = js.undefined
   }
   object BaseOptions {
@@ -98,8 +81,8 @@ object mod {
        with BaseOptions {
     
     /**
-    		The full URL to the repo.
-    		*/
+    	The full URL to the repo.
+    	*/
     val repoUrl: String
   }
   object RepoUrlOptions {
@@ -120,13 +103,13 @@ object mod {
        with BaseOptions {
     
     /**
-    		GitHub repo.
-    		*/
+    	GitHub repo.
+    	*/
     val repo: String
     
     /**
-    		GitHub username or organization.
-    		*/
+    	GitHub username or organization.
+    	*/
     val user: String
   }
   object UserRepoOptions {

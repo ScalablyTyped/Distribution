@@ -301,9 +301,9 @@ inline def createHydrationRenderer(options: RendererOptions[Node, Element]): Hyd
 inline def createRenderer[HostNode, HostElement](options: RendererOptions[HostNode, HostElement]): Renderer[HostElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[Renderer[HostElement]]
 
 inline def createSlots(
-  slots: Record[String, Slot],
+  slots: Record[String, SSRSlot],
   dynamicSlots: js.Array[js.UndefOr[CompiledSlotDescriptor | js.Array[CompiledSlotDescriptor]]]
-): Record[String, Slot] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlots")(slots.asInstanceOf[js.Any], dynamicSlots.asInstanceOf[js.Any])).asInstanceOf[Record[String, Slot]]
+): Record[String, SSRSlot] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlots")(slots.asInstanceOf[js.Any], dynamicSlots.asInstanceOf[js.Any])).asInstanceOf[Record[String, SSRSlot]]
 
 inline def createStaticVNode(content: String, numberOfNodes: Double): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticVNode")(content.asInstanceOf[js.Any], numberOfNodes.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 
@@ -1025,7 +1025,7 @@ inline def shallowReadonly[T /* <: js.Object */](target: T): T = ^.asInstanceOf[
 inline def shallowRef[T](): ShallowRef_[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")().asInstanceOf[ShallowRef_[js.UndefOr[T]]]
 inline def shallowRef[T](value: T): ShallowRef_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T]]
 
-inline def shallowRef_T_Object_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T] | T]
+inline def shallowRef_T_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T] | T]
 
 inline def ssrContextKey: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("ssrContextKey").asInstanceOf[js.Symbol]
 
@@ -1089,7 +1089,7 @@ inline def useTransitionState(): TransitionState = ^.asInstanceOf[js.Dynamic].ap
 
 inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-inline def warn(msg: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def warn(msg: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
 inline def watchEffect(effect: WatchEffect_): WatchStopHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[WatchStopHandle]
 inline def watchEffect(effect: WatchEffect_, options: WatchOptionsBase): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]
@@ -1263,7 +1263,7 @@ type EmitFn[Options, Event /* <: /* keyof Options */ String */] = (UnionToInters
 type EmitsOptions = ObjectEmitsOptions | js.Array[String]
 
 type EmitsToProps[T /* <: EmitsOptions */] = js.Object | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in string & 'on${Capitalize<string & keyof T>}' ]:? K extends 'on${infer C}'? T[std.Uncapitalize</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify C * / any>] extends null? (args : ...any): any : (args : T[std.Uncapitalize</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify C * / any>] extends (args : infer P): any? any : never): any : never}
+{[ K in string ]:? K extends / * template literal string: on${inferC} * / string? T[std.Uncapitalize</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify C * / any>] extends null? (args : ...any): any : (args : T[std.Uncapitalize</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify C * / any>] extends (args : infer P): any? any : never): any : never}
   */ typings.vueRuntimeCore.vueRuntimeCoreStrings.EmitsToProps & TopLevel[Any])
 
 type EnsureNonVoid[T] = T | js.Object

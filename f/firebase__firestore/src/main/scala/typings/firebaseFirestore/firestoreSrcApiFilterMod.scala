@@ -38,7 +38,7 @@ object firestoreSrcApiFilterMod {
   inline def query[T](
     query: Query[T],
     queryConstraints: typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint*
-  ): Query[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query[T]]
+  ): Query[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query[T]]
   
   inline def startAfter(fieldValues: Any*): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]
   inline def startAfter(snapshot: DocumentSnapshot[Any]): typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.packagesFirestoreSrcLiteApiQueryMod.QueryConstraint]

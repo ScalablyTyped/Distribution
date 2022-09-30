@@ -2,8 +2,8 @@ package typings.qiniuJs
 
 import typings.qiniuJs.apiMod.UploadChunkData
 import typings.qiniuJs.baseMod.Extra
-import typings.qiniuJs.qiniuJsNumbers.`0`
-import typings.qiniuJs.qiniuJsNumbers.`1`
+import typings.qiniuJs.qiniuJsInts.`0`
+import typings.qiniuJs.qiniuJsInts.`1`
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

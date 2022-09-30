@@ -19,7 +19,7 @@ object FeatureLayerOptions {
   
   extension [Self <: FeatureLayerOptions](x: Self) {
     
-    inline def setFilter(value: /* feature */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* feature */ Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.21.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportMappingParameterValue")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportMappingParameterValue")
 @js.native
-class ImportMappingParameterValue protected ()
+open class ImportMappingParameterValue protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingParameterValue {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class ImportMappingParameterValue protected ()
 }
 object ImportMappingParameterValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportMappingParameterValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportMappingParameterValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +64,13 @@ object ImportMappingParameterValue {
   inline def createInJavaScriptActionParameterMappingUnderParameterValue(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaScriptActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingParameterValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportMappingParameterValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportMappingParameterValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportMappingParameterValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportMappingParameterValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

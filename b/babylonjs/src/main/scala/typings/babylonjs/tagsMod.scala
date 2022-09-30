@@ -68,16 +68,12 @@ object tagsMod {
     inline def RemoveTagsFrom(obj: Any, tagsString: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveTagsFrom")(obj.asInstanceOf[js.Any], tagsString.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @param obj
-      * @param tag
-      * @hidden
+      * @internal
       */
     inline def _AddTagTo(obj: Any, tag: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_AddTagTo")(obj.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @param obj
-      * @param tag
-      * @hidden
+      * @internal
       */
     inline def _RemoveTagFrom(obj: Any, tag: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_RemoveTagFrom")(obj.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }

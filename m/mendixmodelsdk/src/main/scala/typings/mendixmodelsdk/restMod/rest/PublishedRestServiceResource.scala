@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.11.0: removed experimental
   * In version 7.7.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceResource")
+@JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceResource")
 @js.native
-class PublishedRestServiceResource protected () extends Element[IModel] {
+open class PublishedRestServiceResource protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +43,7 @@ class PublishedRestServiceResource protected () extends Element[IModel] {
 }
 object PublishedRestServiceResource {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceResource")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceResource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -67,13 +67,13 @@ object PublishedRestServiceResource {
   inline def createIn(container: PublishedRestService): PublishedRestServiceResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedRestServiceResource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceResource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceResource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceResource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceResource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

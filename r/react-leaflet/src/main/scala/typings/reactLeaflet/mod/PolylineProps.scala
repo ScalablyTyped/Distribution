@@ -34,7 +34,7 @@ object PolylineProps {
     
     inline def setPositions(value: js.Array[js.Array[LatLngExpression] | LatLngExpression]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: (js.Array[LatLngExpression] | LatLngExpression)*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: (js.Array[LatLngExpression] | LatLngExpression)*): Self = StObject.set(x, "positions", js.Array(value*))
     
     inline def setSmoothFactor(value: Double): Self = StObject.set(x, "smoothFactor", value.asInstanceOf[js.Any])
     

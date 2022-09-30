@@ -8,6 +8,7 @@ import typings.maximMazurokGapiClientIam.gapi.client.iam.ProjectsResource
 import typings.maximMazurokGapiClientIam.gapi.client.iam.RolesResource
 import typings.maximMazurokGapiClientIam.maximMazurokGapiClientIamStrings.iam
 import typings.maximMazurokGapiClientIam.maximMazurokGapiClientIamStrings.v1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,7 @@ object global {
       }
       
       /** Load Identity and Access Management (IAM) API v1 */
-      inline def load(name: iam, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: iam, version: v1): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: iam, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }

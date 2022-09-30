@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "Operation")
 @js.native
-class Operation_ protected ()
+open class Operation_ protected ()
   extends typings.googleGax.longrunningMod.Operation_ {
   /**
     * Wrapper for a google.longrunnung.Operation.

@@ -3,6 +3,7 @@ package typings.globWatcher
 import typings.globWatcher.anon.Subscribe
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.fsMod.FSWatcher
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +56,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type AsyncType = EventEmitter | js.Thenable[Any] | Subscribe
+  type AsyncType = EventEmitter | PromiseLike[Any] | Subscribe
   
   // copied from https://github.com/paulmillr/chokidar/blob/5e09c85ea04ffb7fd9cdb829892540e93ce63553/types/index.d.ts
   trait AwaitWriteFinishOptions extends StObject {

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "wordpress__data-controls"
-version := "1.0-dt-20200925Z-a6451b"
-scalaVersion := "3.0.1"
+version := "2.2-dt-20211202Z-10c1e9"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "redux" % "4.0.5-213600",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "wordpress__api-fetch" % "3.2-dt-20200925Z-d41e85")
+  "org.scalablytyped" %%% "redux" % "4.2.0-0fa2db",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "wordpress__api-fetch" % "6.15.0-0a7020")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

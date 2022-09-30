@@ -49,26 +49,26 @@ object mod extends Shortcut {
         */
       def fromJS[T](source: T, target: MappedType[T]): MappedType[T] = js.native
       /**
-        * Creates an observable array view model. Objects on the source array are also converted to observables. Primitive types and arrays are not. 
+        * Creates an readonly observable array view model. Objects on the source array are also converted to observables. Primitive types and arrays are not. 
         * If 'target' is supplied, instead, target's observable properties are updated.
         * @param source Array to be mapped.
         * @param options Options on mapping behavior.
         * @param target View model object previosly mapped to be updated.
         */
-      def fromJS[T](source: js.Array[T]): KnockoutObservableArrayType[T] = js.native
-      def fromJS[T](source: js.Array[T], options: Unit, target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
-      def fromJS[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutObservableArrayType[T] = js.native
+      def fromJS[T](source: js.Array[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+      def fromJS[T](source: js.Array[T], options: Unit, target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+      def fromJS[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutReadonlyObservableArrayType[T] = js.native
       def fromJS[T](
         source: js.Array[T],
         options: KnockoutMappingOptions[js.Array[T]],
-        target: KnockoutObservableArrayType[T]
-      ): KnockoutObservableArrayType[T] = js.native
+        target: KnockoutReadonlyObservableArrayType[T]
+      ): KnockoutReadonlyObservableArrayType[T] = js.native
       /**
         * Updates target's observable properties with those of the sources.
         * @param source Array to be mapped.
         * @param target View model object previosly mapped to be updated.
         */
-      def fromJS[T](source: js.Array[T], target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
+      def fromJS[T](source: js.Array[T], target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
       
       /**
         * Creates a view model object with observable properties for each of the properties on the source. 
@@ -89,31 +89,31 @@ object mod extends Shortcut {
       def fromJSON(source: String, target: Any): Any = js.native
       
       /**
-        * Creates an readonly observable array view model. Objects on the source array are also converted to observables. Primitive types and arrays are not. 
+        * Creates an observable array view model. Objects on the source array are also converted to observables. Primitive types and arrays are not. 
         * If 'target' is supplied, instead, target's observable properties are updated.
         * @param source Array to be mapped.
         * @param options Options on mapping behavior.
         * @param target View model object previosly mapped to be updated.
         */
       @JSName("fromJS")
-      def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+      def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T]): KnockoutObservableArrayType[T] = js.native
       @JSName("fromJS")
-      def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T], options: Unit, target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+      def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T], options: Unit, target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
       @JSName("fromJS")
-      def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutReadonlyObservableArrayType[T] = js.native
+      def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T], options: KnockoutMappingOptions[js.Array[T]]): KnockoutObservableArrayType[T] = js.native
       @JSName("fromJS")
-      def fromJS_T_KnockoutReadonlyObservableArrayType[T](
+      def fromJS_T_KnockoutObservableArrayType[T](
         source: js.Array[T],
         options: KnockoutMappingOptions[js.Array[T]],
-        target: KnockoutReadonlyObservableArrayType[T]
-      ): KnockoutReadonlyObservableArrayType[T] = js.native
+        target: KnockoutObservableArrayType[T]
+      ): KnockoutObservableArrayType[T] = js.native
       /**
         * Updates target's observable properties with those of the sources.
         * @param source Array to be mapped.
         * @param target View model object previosly mapped to be updated.
         */
       @JSName("fromJS")
-      def fromJS_T_KnockoutReadonlyObservableArrayType[T](source: js.Array[T], target: KnockoutReadonlyObservableArrayType[T]): KnockoutReadonlyObservableArrayType[T] = js.native
+      def fromJS_T_KnockoutObservableArrayType[T](source: js.Array[T], target: KnockoutObservableArrayType[T]): KnockoutObservableArrayType[T] = js.native
       
       /**
         * Undocumented. Custom implementation of JavaScript's typeof.

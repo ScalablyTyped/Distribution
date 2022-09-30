@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/columns-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DataGridColumn")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DataGridColumn")
 @js.native
-class DataGridColumn protected ()
+open class DataGridColumn protected ()
   extends typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class DataGridColumn protected ()
 }
 object DataGridColumn {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DataGridColumn")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DataGridColumn")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object DataGridColumn {
   inline def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DataGridColumn.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DataGridColumn.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DataGridColumn.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DataGridColumn.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

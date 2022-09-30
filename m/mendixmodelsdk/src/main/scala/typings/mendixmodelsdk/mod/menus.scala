@@ -16,7 +16,7 @@ object menus {
     */
   @JSImport("mendixmodelsdk", "menus.MenuDocument")
   @js.native
-  class MenuDocument protected ()
+  open class MenuDocument protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.menus.MenuDocument {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -57,7 +57,7 @@ object menus {
     */
   @JSImport("mendixmodelsdk", "menus.MenuItem")
   @js.native
-  class MenuItem protected ()
+  open class MenuItem protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.menus.MenuItem {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -105,7 +105,7 @@ object menus {
   
   @JSImport("mendixmodelsdk", "menus.MenuItemCollection")
   @js.native
-  class MenuItemCollection protected ()
+  open class MenuItemCollection protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.menus.MenuItemCollection {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

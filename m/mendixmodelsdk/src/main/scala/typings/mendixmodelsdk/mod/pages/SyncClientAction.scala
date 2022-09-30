@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SyncClientAction")
 @js.native
-class SyncClientAction protected ()
+open class SyncClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SyncClientAction {
   def this(
     model: AbstractModel,

@@ -2,19 +2,18 @@ package typings.wordpressBlocks.mod
 
 import typings.std.Partial
 import typings.std.Record
-import typings.std.RegExp
 import typings.wordpressBlocks.wordpressBlocksStrings.enter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransformEnter[T /* <: Record[String, js.Any] */]
+trait TransformEnter[T /* <: Record[String, Any] */]
   extends StObject
      with Transform[T] {
   
   var priority: js.UndefOr[Double] = js.undefined
   
-  var regExp: RegExp
+  var regExp: js.RegExp
   
   def transform(): BlockInstance[Partial[T]]
   
@@ -22,19 +21,19 @@ trait TransformEnter[T /* <: Record[String, js.Any] */]
 }
 object TransformEnter {
   
-  inline def apply[T /* <: Record[String, js.Any] */](regExp: RegExp, transform: () => BlockInstance[Partial[T]]): TransformEnter[T] = {
+  inline def apply[T /* <: Record[String, Any] */](regExp: js.RegExp, transform: () => BlockInstance[Partial[T]]): TransformEnter[T] = {
     val __obj = js.Dynamic.literal(regExp = regExp.asInstanceOf[js.Any], transform = js.Any.fromFunction0(transform))
     __obj.updateDynamic("type")("enter")
     __obj.asInstanceOf[TransformEnter[T]]
   }
   
-  extension [Self <: TransformEnter[?], T /* <: Record[String, js.Any] */](x: Self & TransformEnter[T]) {
+  extension [Self <: TransformEnter[?], T /* <: Record[String, Any] */](x: Self & TransformEnter[T]) {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    inline def setRegExp(value: RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+    inline def setRegExp(value: js.RegExp): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
     
     inline def setTransform(value: () => BlockInstance[Partial[T]]): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
     

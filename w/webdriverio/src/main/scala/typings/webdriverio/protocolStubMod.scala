@@ -1,5 +1,8 @@
 package typings.webdriverio
 
+import typings.std.Record
+import typings.wdioTypes.optionsMod.WebDriver
+import typings.webdriver.typesMod.AttachOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +11,7 @@ object protocolStubMod {
   
   @JSImport("webdriverio/build/protocol-stub", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ProtocolStub
   /* static members */
@@ -18,11 +21,15 @@ object protocolStubMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachToSession(options: js.Any, modifier: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def attachToSession(options: AttachOptions): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
+    inline def attachToSession(options: AttachOptions, modifier: js.Function1[/* repeated */ Any, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
     
-    inline def newSession(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")().asInstanceOf[js.Promise[js.Object]]
-    inline def newSession(options: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+    inline def newSession(options: WebDriver): js.Promise[Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Record[String, Any]]]
     
+    /**
+      * added just in case user wants to somehow reload webdriver or devtools session
+      * before it was started.
+      */
     inline def reloadSession(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")().asInstanceOf[Unit]
   }
   

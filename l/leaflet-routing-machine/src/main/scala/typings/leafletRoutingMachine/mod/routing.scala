@@ -38,7 +38,7 @@ object routing {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def autocomplete(element: HTMLElement, callback: js.Any, context: js.Any, options: AutoCompleteOptions): AutoComplete_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AutoComplete_]
+  inline def autocomplete(element: HTMLElement, callback: Any, context: Any, options: AutoCompleteOptions): AutoComplete_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AutoComplete_]
   
   inline def control(): Control_ = ^.asInstanceOf[js.Dynamic].applyDynamic("control")().asInstanceOf[Control_]
   inline def control(options: RoutingControlOptions): Control_ = ^.asInstanceOf[js.Dynamic].applyDynamic("control")(options.asInstanceOf[js.Any]).asInstanceOf[Control_]
@@ -48,7 +48,7 @@ object routing {
   inline def formatter(): Formatter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatter")().asInstanceOf[Formatter_]
   inline def formatter(options: FormatterOptions): Formatter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(options.asInstanceOf[js.Any]).asInstanceOf[Formatter_]
   
-  inline def geocoderElement(waypoint: Waypoint_, i: Double, numberWaypoints: Double, options: GeocoderElementOptions): GeocoderElement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geocoderElement")(waypoint.asInstanceOf[js.Any], i.asInstanceOf[js.Any], numberWaypoints.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeocoderElement_]
+  inline def geocoderElement(waypoint: Waypoint_, i: Double, numberOfWaypoints: Double, options: GeocoderElementOptions): GeocoderElement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geocoderElement")(waypoint.asInstanceOf[js.Any], i.asInstanceOf[js.Any], numberOfWaypoints.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeocoderElement_]
   
   inline def itinerary(): Itinerary_ = ^.asInstanceOf[js.Dynamic].applyDynamic("itinerary")().asInstanceOf[Itinerary_]
   inline def itinerary(options: ItineraryOptions): Itinerary_ = ^.asInstanceOf[js.Dynamic].applyDynamic("itinerary")(options.asInstanceOf[js.Any]).asInstanceOf[Itinerary_]

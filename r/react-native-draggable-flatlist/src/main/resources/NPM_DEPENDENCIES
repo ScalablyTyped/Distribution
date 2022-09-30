@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-draggable-flatlist" : "3.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-draggable-flatlist" : "3.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

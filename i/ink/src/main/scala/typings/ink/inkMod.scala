@@ -3,7 +3,6 @@ package typings.ink
 import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.react.mod.ReactNode
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object inkMod {
   
   @JSImport("ink/build/ink", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Ink {
     def this(options: Options) = this()
@@ -23,44 +22,44 @@ object inkMod {
     
     def clear(): Unit = js.native
     
-    /* private */ val container: js.Any = js.native
+    /* private */ val container: Any = js.native
     
-    /* private */ var exitPromise: js.Any = js.native
+    /* private */ var exitPromise: Any = js.native
     
-    /* private */ var fullStaticOutput: js.Any = js.native
+    /* private */ var fullStaticOutput: Any = js.native
     
-    /* private */ var isUnmounted: js.Any = js.native
+    /* private */ var isUnmounted: Any = js.native
     
-    /* private */ var lastOutput: js.Any = js.native
+    /* private */ var lastOutput: Any = js.native
     
-    /* private */ val log: js.Any = js.native
+    /* private */ val log: Any = js.native
     
     def onRender(): Unit = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
     
     def patchConsole(): Unit = js.native
     
     def rejectExitPromise(): Unit = js.native
-    def rejectExitPromise(reason: Error): Unit = js.native
+    def rejectExitPromise(reason: js.Error): Unit = js.native
     
     def render(node: ReactNode): Unit = js.native
     
     def resolveExitPromise(): Unit = js.native
     
-    /* private */ var restoreConsole: js.Any = js.native
+    /* private */ var restoreConsole: Any = js.native
     
-    /* private */ val rootNode: js.Any = js.native
+    /* private */ val rootNode: Any = js.native
     
-    /* private */ val throttledLog: js.Any = js.native
+    /* private */ val throttledLog: Any = js.native
     
     def unmount(): Unit = js.native
+    def unmount(error: js.Error): Unit = js.native
     def unmount(error: Double): Unit = js.native
-    def unmount(error: Error): Unit = js.native
     
     def unsubscribeExit(): Unit = js.native
     
-    /* private */ val unsubscribeResize: js.Any = js.native
+    /* private */ val unsubscribeResize: Any = js.native
     
     def waitUntilExit(): js.Promise[Unit] = js.native
     

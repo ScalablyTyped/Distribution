@@ -17,6 +17,7 @@ import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
 import typings.mendixmodelsdk.microflowsMod.microflows.CustomRange
 import typings.mendixmodelsdk.microflowsMod.microflows.DocumentTemplateParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.EndEvent
+import typings.mendixmodelsdk.microflowsMod.microflows.ExpressionListOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.ExpressionSplitCondition
 import typings.mendixmodelsdk.microflowsMod.microflows.FormDataPart
 import typings.mendixmodelsdk.microflowsMod.microflows.GenerateDocumentAction
@@ -45,15 +46,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interfaces and instance classes for types from the Mendix sub meta model `Expressions`.
   */
 /**
-  * See: {@link https://docs.mendix.com/refguide/expressions relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide9/expressions relevant section in reference guide}
   *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
   * @ignore
   *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.Expression")
+@JSImport("mendixmodelsdk/src/gen/expressions", "expressions.Expression")
 @js.native
 abstract class Expression protected () extends Element[IModel] {
   def this(
@@ -90,6 +92,8 @@ abstract class Expression protected () extends Element[IModel] {
   def containerAsDocumentTemplateParameterMapping: DocumentTemplateParameterMapping = js.native
   
   def containerAsEndEvent: EndEvent = js.native
+  
+  def containerAsExpressionListOperation: ExpressionListOperation = js.native
   
   def containerAsExpressionSplitCondition: ExpressionSplitCondition = js.native
   
@@ -135,18 +139,18 @@ abstract class Expression protected () extends Element[IModel] {
 }
 object Expression {
   
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.Expression")
+  @JSImport("mendixmodelsdk/src/gen/expressions", "expressions.Expression")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.Expression.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/expressions", "expressions.Expression.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.Expression.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/expressions", "expressions.Expression.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

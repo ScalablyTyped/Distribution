@@ -1,6 +1,6 @@
 package typings.jridgewellGenMapping
 
-import typings.jridgewellGenMapping.jridgewellGenMappingNumbers.`3`
+import typings.jridgewellGenMapping.jridgewellGenMappingInts.`3`
 import typings.jridgewellGenMapping.sourcemapSegmentMod.SourceMapSegment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -3685,12 +3685,12 @@ trait SageMaker extends Service {
   ): Request[UpdateProjectOutput, AWSError] = js.native
   
   /**
-    * Update a model training job to request a new Debugger profiling configuration.
+    * Update a model training job to request a new Debugger profiling configuration or to change warm pool retention length.
     */
   def updateTrainingJob(): Request[UpdateTrainingJobResponse, AWSError] = js.native
   def updateTrainingJob(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTrainingJobResponse, Unit]): Request[UpdateTrainingJobResponse, AWSError] = js.native
   /**
-    * Update a model training job to request a new Debugger profiling configuration.
+    * Update a model training job to request a new Debugger profiling configuration or to change warm pool retention length.
     */
   def updateTrainingJob(params: UpdateTrainingJobRequest): Request[UpdateTrainingJobResponse, AWSError] = js.native
   def updateTrainingJob(

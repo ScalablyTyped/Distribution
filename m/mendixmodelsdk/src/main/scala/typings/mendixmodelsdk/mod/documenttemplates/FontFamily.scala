@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "documenttemplates.FontFamily")
 @js.native
-class FontFamily protected ()
+open class FontFamily protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.FontFamily {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

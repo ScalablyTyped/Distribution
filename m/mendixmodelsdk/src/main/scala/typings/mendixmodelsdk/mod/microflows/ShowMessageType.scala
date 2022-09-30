@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.ShowMessageType")
 @js.native
-class ShowMessageType protected ()
+open class ShowMessageType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ShowMessageType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

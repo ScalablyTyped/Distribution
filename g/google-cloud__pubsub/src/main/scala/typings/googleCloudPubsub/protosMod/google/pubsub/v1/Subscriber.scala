@@ -19,7 +19,6 @@ import typings.googleCloudPubsub.protosMod.google.pubsub.v1.Subscriber.UpdateSna
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.Subscriber.UpdateSubscriptionCallback
 import typings.googleGax.mod.protobuf.rpc.Service
 import typings.protobufjs.mod.RPCImpl
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Subscriber */
 @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Subscriber")
 @js.native
-class Subscriber protected () extends Service {
+open class Subscriber protected () extends Service {
   /**
     * Constructs a new Subscriber service.
     * @param rpcImpl RPC implementation
@@ -267,114 +266,118 @@ object Subscriber {
   inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#acknowledge}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|acknowledge}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type AcknowledgeCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type AcknowledgeCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#createSnapshot}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|createSnapshot}.
     * @param error Error, if any
     * @param [response] Snapshot
     */
-  type CreateSnapshotCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Snapshot], Unit]
+  type CreateSnapshotCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Snapshot], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#createSubscription}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|createSubscription}.
     * @param error Error, if any
     * @param [response] Subscription
     */
-  type CreateSubscriptionCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Subscription], Unit]
+  type CreateSubscriptionCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Subscription], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#deleteSnapshot}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|deleteSnapshot}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteSnapshotCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteSnapshotCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#deleteSubscription}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|deleteSubscription}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteSubscriptionCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteSubscriptionCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#getSnapshot}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|getSnapshot}.
     * @param error Error, if any
     * @param [response] Snapshot
     */
-  type GetSnapshotCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Snapshot], Unit]
+  type GetSnapshotCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Snapshot], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#getSubscription}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|getSubscription}.
     * @param error Error, if any
     * @param [response] Subscription
     */
-  type GetSubscriptionCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Subscription], Unit]
+  type GetSubscriptionCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Subscription], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#listSnapshots}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|listSnapshots}.
     * @param error Error, if any
     * @param [response] ListSnapshotsResponse
     */
-  type ListSnapshotsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListSnapshotsResponse], Unit]
+  type ListSnapshotsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[ListSnapshotsResponse], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#listSubscriptions}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|listSubscriptions}.
     * @param error Error, if any
     * @param [response] ListSubscriptionsResponse
     */
-  type ListSubscriptionsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListSubscriptionsResponse], Unit]
+  type ListSubscriptionsCallback = js.Function2[
+    /* error */ js.Error | Null, 
+    /* response */ js.UndefOr[ListSubscriptionsResponse], 
+    Unit
+  ]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#modifyAckDeadline}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|modifyAckDeadline}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type ModifyAckDeadlineCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type ModifyAckDeadlineCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#modifyPushConfig}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|modifyPushConfig}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type ModifyPushConfigCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type ModifyPushConfigCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#pull}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|pull}.
     * @param error Error, if any
     * @param [response] PullResponse
     */
-  type PullCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[PullResponse], Unit]
+  type PullCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[PullResponse], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#seek}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|seek}.
     * @param error Error, if any
     * @param [response] SeekResponse
     */
-  type SeekCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[SeekResponse], Unit]
+  type SeekCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[SeekResponse], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#streamingPull}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|streamingPull}.
     * @param error Error, if any
     * @param [response] StreamingPullResponse
     */
-  type StreamingPullCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[StreamingPullResponse], Unit]
+  type StreamingPullCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[StreamingPullResponse], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#updateSnapshot}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|updateSnapshot}.
     * @param error Error, if any
     * @param [response] Snapshot
     */
-  type UpdateSnapshotCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Snapshot], Unit]
+  type UpdateSnapshotCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Snapshot], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Subscriber#updateSubscription}.
+    * Callback as used by {@link google.pubsub.v1.Subscriber|updateSubscription}.
     * @param error Error, if any
     * @param [response] Subscription
     */
-  type UpdateSubscriptionCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Subscription], Unit]
+  type UpdateSubscriptionCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Subscription], Unit]
 }

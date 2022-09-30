@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object commitmentTypeIndicationMod {
   
-  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "CommitmentTypeIndication")
+  @JSImport("xadesjs/build/types/src/xml/commitment_type_indication", "CommitmentTypeIndication")
   @js.native
-  class CommitmentTypeIndication () extends XadesObject {
+  open class CommitmentTypeIndication () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var AllSignedDataObjects: Boolean = js.native
@@ -24,29 +24,29 @@ object commitmentTypeIndicationMod {
     var ObjectReference: ObjectReferenceCollection = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "CommitmentTypeQualifier")
+  @JSImport("xadesjs/build/types/src/xml/commitment_type_indication", "CommitmentTypeQualifier")
   @js.native
-  class CommitmentTypeQualifier () extends Any {
+  open class CommitmentTypeQualifier () extends Any {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "CommitmentTypeQualifiers")
+  @JSImport("xadesjs/build/types/src/xml/commitment_type_indication", "CommitmentTypeQualifiers")
   @js.native
-  class CommitmentTypeQualifiers () extends XadesCollection[CommitmentTypeQualifier] {
+  open class CommitmentTypeQualifiers () extends XadesCollection[CommitmentTypeQualifier] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "ObjectReference")
+  @JSImport("xadesjs/build/types/src/xml/commitment_type_indication", "ObjectReference")
   @js.native
-  class ObjectReference () extends XadesObject {
+  open class ObjectReference () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Value: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "ObjectReferenceCollection")
+  @JSImport("xadesjs/build/types/src/xml/commitment_type_indication", "ObjectReferenceCollection")
   @js.native
-  class ObjectReferenceCollection () extends XadesCollection[ObjectReference] {
+  open class ObjectReferenceCollection () extends XadesCollection[ObjectReference] {
     def this(properties: js.Object) = this()
   }
 }

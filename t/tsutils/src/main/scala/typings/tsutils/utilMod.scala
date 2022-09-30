@@ -7,10 +7,8 @@ import typings.tsutils.controlFlowMod.ControlFlowEnd
 import typings.tsutils.controlFlowMod.SignatureEffect
 import typings.tsutils.convertAstMod.ConvertedAst
 import typings.tsutils.convertAstMod.NodeWrap
-import typings.tsutils.tsutilsStrings.$LeftcurlybracketstringRightcurlybracketn
 import typings.tsutils.tsutilsStrings.CarriagereturnLinefeed
 import typings.tsutils.tsutilsStrings.Linefeed
-import typings.tsutils.tsutilsStrings.`-$LeftcurlybracketstringRightcurlybracketn`
 import typings.tsutils.tsutilsStrings.stripInternal
 import typings.tsutils.usageMod.DeclarationDomain
 import typings.tsutils.usageMod.UsageDomain
@@ -299,7 +297,7 @@ object utilMod {
   inline def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachTokenWithTrivia")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback, sourceFile: SourceFile): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachTokenWithTrivia")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def formatPseudoBigInt(v: PseudoBigInt): $LeftcurlybracketstringRightcurlybracketn | `-$LeftcurlybracketstringRightcurlybracketn` = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPseudoBigInt")(v.asInstanceOf[js.Any]).asInstanceOf[$LeftcurlybracketstringRightcurlybracketn | `-$LeftcurlybracketstringRightcurlybracketn`]
+  inline def formatPseudoBigInt(v: PseudoBigInt): /* template literal string: ${string}n */ String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPseudoBigInt")(v.asInstanceOf[js.Any]).asInstanceOf[/* template literal string: ${string}n */ String]
   
   inline def getAccessKind(node: Node): AccessKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessKind")(node.asInstanceOf[js.Any]).asInstanceOf[AccessKind]
   
@@ -410,11 +408,11 @@ object utilMod {
   inline def hasModifier(
     modifiers: Unit,
     kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | InKeyword | PrivateKeyword | ProtectedKeyword | PublicKeyword | OutKeyword | OverrideKeyword | ReadonlyKeyword | StaticKeyword)*
-  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(List(modifiers.asInstanceOf[js.Any]).`++`(kinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(scala.List(modifiers.asInstanceOf[js.Any]).`++`(kinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   inline def hasModifier(
     modifiers: ModifiersArray,
     kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | InKeyword | PrivateKeyword | ProtectedKeyword | PublicKeyword | OutKeyword | OverrideKeyword | ReadonlyKeyword | StaticKeyword)*
-  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(List(modifiers.asInstanceOf[js.Any]).`++`(kinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(scala.List(modifiers.asInstanceOf[js.Any]).`++`(kinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def hasOwnThisReference(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnThisReference")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

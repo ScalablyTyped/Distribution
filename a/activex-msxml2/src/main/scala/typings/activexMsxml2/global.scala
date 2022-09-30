@@ -9,14 +9,14 @@ import typings.activexMsxml2.MSXML2.IXMLDOMSchemaCollection
 import typings.activexMsxml2.MSXML2.SOMITEMTYPE
 import typings.activexMsxml2.MSXML2.XHR_PROPERTY
 import typings.activexMsxml2.MSXML2.tagXHRCOOKIE
-import typings.activexMsxml2.activexMsxml2Numbers.`11`
-import typings.activexMsxml2.activexMsxml2Numbers.`1`
-import typings.activexMsxml2.activexMsxml2Numbers.`2`
-import typings.activexMsxml2.activexMsxml2Numbers.`3`
-import typings.activexMsxml2.activexMsxml2Numbers.`4`
-import typings.activexMsxml2.activexMsxml2Numbers.`5`
-import typings.activexMsxml2.activexMsxml2Numbers.`7`
-import typings.activexMsxml2.activexMsxml2Numbers.`8`
+import typings.activexMsxml2.activexMsxml2Ints.`11`
+import typings.activexMsxml2.activexMsxml2Ints.`1`
+import typings.activexMsxml2.activexMsxml2Ints.`2`
+import typings.activexMsxml2.activexMsxml2Ints.`3`
+import typings.activexMsxml2.activexMsxml2Ints.`4`
+import typings.activexMsxml2.activexMsxml2Ints.`5`
+import typings.activexMsxml2.activexMsxml2Ints.`7`
+import typings.activexMsxml2.activexMsxml2Ints.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__test-result
 
-Typings are for version 24.9.0
+Typings are for version 29.1.2
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/test-result |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 33 |
-| # downloads        | 454976227 |
-| # stars            | 0 |
+| # releases         | 61 |
+| # dependents       | 0.0 |
+| # downloads        | 9.1314274E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

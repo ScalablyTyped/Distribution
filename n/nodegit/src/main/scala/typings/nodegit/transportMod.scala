@@ -1,7 +1,7 @@
 package typings.nodegit
 
 import typings.nodegit.certMod.Cert
-import typings.nodegit.nodegitNumbers.`0`
+import typings.nodegit.nodegitInts.`0`
 import typings.nodegit.remoteMod.Remote
 import typings.nodegit.strArrayMod.Strarray
 import org.scalablytyped.runtime.StObject

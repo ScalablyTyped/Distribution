@@ -20,7 +20,7 @@ trait Header extends StObject {
   
   var header: js.UndefOr[BackgroundBorderExtend] = js.undefined
   
-  var panel: js.UndefOr[`15`] = js.undefined
+  var panel: js.UndefOr[`16`] = js.undefined
   
   var step: js.UndefOr[LargeMedium] = js.undefined
 }
@@ -51,7 +51,7 @@ object Header {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setPanel(value: `15`): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: `16`): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     

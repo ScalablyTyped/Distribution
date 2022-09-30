@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object infiniteScrollStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketERightcurlybracketDotinfiniteScroll extends StObject
-  inline def $LeftcurlybracketERightcurlybracketDotinfiniteScroll: $LeftcurlybracketERightcurlybracketDotinfiniteScroll = "${E}.infiniteScroll".asInstanceOf[$LeftcurlybracketERightcurlybracketDotinfiniteScroll]
-  
-  @js.native
   sealed trait append extends StObject
   inline def append: append = "append".asInstanceOf[append]
   

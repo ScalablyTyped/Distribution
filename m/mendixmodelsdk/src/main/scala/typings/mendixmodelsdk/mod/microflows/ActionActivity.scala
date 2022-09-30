@@ -11,12 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * See: {@link https://docs.mendix.com/refguide/activities relevant section in reference guide}
-  */
 @JSImport("mendixmodelsdk", "microflows.ActionActivity")
 @js.native
-class ActionActivity protected ()
+open class ActionActivity protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ActionActivity {
   def this(
     model: AbstractModel,

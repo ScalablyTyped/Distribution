@@ -10,8 +10,7 @@ object tagSelectOptionMod {
   
   @JSImport("ant-design-pro/lib/TagSelect/TagSelectOption", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TagSelectOptionProps, js.Any, js.Any]
+  open class default () extends Component[TagSelectOptionProps, Any, Any]
   /* static members */
   object default {
     
@@ -25,7 +24,7 @@ object tagSelectOptionMod {
     inline def isTagSelectOption_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTagSelectOption")(x.asInstanceOf[js.Any])
   }
   
-  type TagSelectOption = Component[TagSelectOptionProps, js.Any, js.Any]
+  type TagSelectOption = Component[TagSelectOptionProps, Any, Any]
   
   trait TagSelectOptionProps extends StObject {
     

@@ -29,13 +29,13 @@ trait List[T] extends StObject {
 }
 object List {
   
-  inline def apply[T](data: js.Array[T], has_more: Boolean, url: String): List[T] = {
+  inline def apply[T](data: js.Array[T], has_more: Boolean, url: String): typings.stripeV3.stripe.List[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("object")("list")
-    __obj.asInstanceOf[List[T]]
+    __obj.asInstanceOf[typings.stripeV3.stripe.List[T]]
   }
   
-  extension [Self <: List[?], T](x: Self & List[T]) {
+  extension [Self <: typings.stripeV3.stripe.List[?], T](x: Self & typings.stripeV3.stripe.List[T]) {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

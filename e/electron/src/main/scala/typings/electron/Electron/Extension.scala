@@ -12,7 +12,7 @@ trait Extension extends StObject {
   /**
     * Copy of the extension's manifest data.
     */
-  var manifest: js.Any
+  var manifest: Any
   
   var name: String
   
@@ -30,7 +30,7 @@ trait Extension extends StObject {
 }
 object Extension {
   
-  inline def apply(id: String, manifest: js.Any, name: String, path: String, url: String, version: String): Extension = {
+  inline def apply(id: String, manifest: Any, name: String, path: String, url: String, version: String): Extension = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
   }
@@ -39,7 +39,7 @@ object Extension {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setManifest(value: js.Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

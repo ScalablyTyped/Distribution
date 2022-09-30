@@ -1,7 +1,7 @@
 package typings.jwplayer.jwplayer
 
-import typings.jwplayer.jwplayerNumbers.`0`
-import typings.jwplayer.jwplayerNumbers.`1`
+import typings.jwplayer.jwplayerInts.`0`
+import typings.jwplayer.jwplayerInts.`1`
 import typings.jwplayer.jwplayerStrings.buffering
 import typings.jwplayer.jwplayerStrings.playing
 import org.scalablytyped.runtime.StObject

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.WsdlDescription")
 @js.native
-class WsdlDescription protected ()
+open class WsdlDescription protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.WsdlDescription {
   def this(
     model: AbstractModel,
@@ -43,6 +43,17 @@ object WsdlDescription {
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
     * The new WsdlDescription will be automatically stored in the 'wsdlDescription' property
     * of the parent ImportedWebService element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.0.2 and higher
+    */
+  /* static member */
+  inline def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
+  
+  /**
+    * Creates and returns a new WsdlDescription instance in the SDK and on the server.
+    * The new WsdlDescription will be automatically stored in the 'wsdlDescription' property
+    * of the parent ImportedWebService element passed as argument.
     */
   /* static member */
   inline def createInImportedWebServiceUnderWsdlDescription(container: typings.mendixmodelsdk.webservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportedWebServiceUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
@@ -51,6 +62,9 @@ object WsdlDescription {
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
     * The new WsdlDescription will be automatically stored in the 'wsdlDescription' property
     * of the parent appservices.Msd element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.0.1
     */
   /* static member */
   inline def createInMsdUnderWsdlDescription(container: Msd): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]

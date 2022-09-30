@@ -1,6 +1,5 @@
 package typings.xmldsigjs
 
-import typings.std.Uint8Array
 import typings.xmldsigjs.dataObjectMod.DataObjects
 import typings.xmldsigjs.xmlObjectMod.XmlSignatureObject
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ object signatureMod {
   
   @JSImport("xmldsigjs/build/types/xml/signature", "Signature")
   @js.native
-  class Signature () extends XmlSignatureObject {
+  open class Signature () extends XmlSignatureObject {
     def this(properties: js.Object) = this()
     
     /**
@@ -29,7 +28,7 @@ object signatureMod {
     /**
       * Gets or sets the value of the digital signature.
       */
-    var SignatureValue: Uint8Array | Null = js.native
+    var SignatureValue: js.typedarray.Uint8Array | Null = js.native
     
     /**
       * Gets or sets the SignedInfo of the current Signature.

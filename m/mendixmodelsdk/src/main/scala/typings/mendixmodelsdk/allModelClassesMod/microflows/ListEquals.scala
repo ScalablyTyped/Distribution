@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ListEquals")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ListEquals")
 @js.native
-class ListEquals protected ()
+open class ListEquals protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.ListEquals {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class ListEquals protected ()
 }
 object ListEquals {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ListEquals")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ListEquals")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object ListEquals {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ListOperationAction): typings.mendixmodelsdk.microflowsMod.microflows.ListEquals = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ListEquals]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ListEquals.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ListEquals.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ListEquals.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ListEquals.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

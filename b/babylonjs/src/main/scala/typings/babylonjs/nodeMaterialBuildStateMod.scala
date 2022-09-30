@@ -16,67 +16,44 @@ object nodeMaterialBuildStateMod {
   @js.native
   open class NodeMaterialBuildState () extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var _attributeDeclaration: String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _builtCompilationString: String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _constantDeclaration: String = js.native
     
     /**
-      * @param name
-      * @hidden
+      * @internal
       */
     def _emit2DSampler(name: String): Unit = js.native
     
     /**
-      * @param includeName
-      * @param comments
-      * @param options
-      * @param options.replaceStrings
-      * @param options.repeatKey
-      * @hidden
+      * @internal
       */
     def _emitCodeFromInclude(includeName: String, comments: String): String = js.native
     def _emitCodeFromInclude(includeName: String, comments: String, options: RepeatKey): String = js.native
     
     /**
-      * @param name
-      * @param extension
-      * @param define
-      * @hidden
+      * @internal
       */
     def _emitExtension(name: String, `extension`: String): Unit = js.native
     def _emitExtension(name: String, `extension`: String, define: String): Unit = js.native
     
     /**
-      * @param value
-      * @hidden
+      * @internal
       */
     def _emitFloat(value: Double): String = js.native
     
     /**
-      * @param name
-      * @param code
-      * @param comments
-      * @hidden
+      * @internal
       */
     def _emitFunction(name: String, code: String, comments: String): Unit = js.native
     
     /**
-      * @param includeName
-      * @param comments
-      * @param options
-      * @param options.repeatKey
-      * @param options.removeAttributes
-      * @param options.removeUniforms
-      * @param options.removeVaryings
-      * @param options.removeIfDef
-      * @param options.replaceStrings
-      * @param storeKey
-      * @hidden
+      * @internal
       */
     def _emitFunctionFromInclude(includeName: String, comments: String): Unit = js.native
     def _emitFunctionFromInclude(includeName: String, comments: String, options: Unit, storeKey: String): Unit = js.native
@@ -84,11 +61,7 @@ object nodeMaterialBuildStateMod {
     def _emitFunctionFromInclude(includeName: String, comments: String, options: RemoveAttributes, storeKey: String): Unit = js.native
     
     /**
-      * @param name
-      * @param type
-      * @param define
-      * @param notDefine
-      * @hidden
+      * @internal
       */
     def _emitUniformFromString(name: String, `type`: String): Unit = js.native
     def _emitUniformFromString(name: String, `type`: String, define: String): Unit = js.native
@@ -96,11 +69,7 @@ object nodeMaterialBuildStateMod {
     def _emitUniformFromString(name: String, `type`: String, define: Unit, notDefine: Boolean): Unit = js.native
     
     /**
-      * @param name
-      * @param type
-      * @param define
-      * @param notDefine
-      * @hidden
+      * @internal
       */
     def _emitVaryingFromString(name: String, `type`: String): Boolean = js.native
     def _emitVaryingFromString(name: String, `type`: String, define: String): Boolean = js.native
@@ -108,53 +77,48 @@ object nodeMaterialBuildStateMod {
     def _emitVaryingFromString(name: String, `type`: String, define: Unit, notDefine: Boolean): Boolean = js.native
     
     /**
-      * @param name
-      * @hidden
+      * @internal
       */
     def _excludeVariableName(name: String): Unit = js.native
     
     /**
-      * @param prefix
-      * @hidden
+      * @internal
       */
     def _getFreeDefineName(prefix: String): String = js.native
     
     /**
-      * @param prefix
-      * @hidden
+      * @internal
       */
     def _getFreeVariableName(prefix: String): String = js.native
     
     /**
-      * @param type
-      * @hidden
+      * @internal
       */
     def _getGLType(`type`: NodeMaterialBlockConnectionPointTypes): String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _injectAtEnd: String = js.native
     
     /**
-      * @param name
-      * @hidden
+      * @internal
       */
     def _registerTempVariable(name: String): Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     def _repeatableContentAnchor: String = js.native
     
     /* private */ var _repeatableContentAnchorIndex: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _samplerDeclaration: String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _uniformDeclaration: String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _varyingTransfer: String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _vertexState: NodeMaterialBuildState = js.native
     
     /**

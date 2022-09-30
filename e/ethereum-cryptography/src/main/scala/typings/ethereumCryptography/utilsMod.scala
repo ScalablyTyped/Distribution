@@ -16,9 +16,9 @@ object utilsMod {
   inline def assertBool(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertBool")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* was `typeof imported__assert.bytes` */
-  inline def assertBytes(b: js.typedarray.Uint8Array, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertBytes")(List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def assertBytes(b: js.typedarray.Uint8Array, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertBytes")(scala.List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   /* was `typeof imported__assert.bytes` */
-  inline def assertBytes(b: Unit, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertBytes")(List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def assertBytes(b: Unit, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertBytes")(scala.List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def bytesToHex(uint8a: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(uint8a.asInstanceOf[js.Any]).asInstanceOf[String]
   

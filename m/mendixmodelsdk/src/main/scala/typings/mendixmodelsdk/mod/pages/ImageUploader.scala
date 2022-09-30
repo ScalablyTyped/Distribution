@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.ImageUploader")
 @js.native
-class ImageUploader protected ()
+open class ImageUploader protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ImageUploader {
   def this(
     model: AbstractModel,

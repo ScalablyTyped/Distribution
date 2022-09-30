@@ -18,7 +18,7 @@ object mod {
   
   inline def createStyleFunction(args: ConfigStyle): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleFunction")(args.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   
-  inline def get(obj: Any, paths: (String | Double)*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(List(obj.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def get(obj: Any, paths: (String | Double)*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(scala.List(obj.asInstanceOf[js.Any]).`++`(paths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def system(styleDefinitions: Config): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("system")(styleDefinitions.asInstanceOf[js.Any]).asInstanceOf[styleFn]
   

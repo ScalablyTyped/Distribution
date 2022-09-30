@@ -11,5 +11,5 @@ object mergeExclusiveMod {
   
   type Without[FirstType, SecondType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ KeyType in std.Exclude<keyof FirstType, keyof SecondType> ]:? never}
-    */ typings.typeFest.typeFestStrings.Without & TopLevel[js.Any]
+    */ typings.typeFest.typeFestStrings.Without & TopLevel[Any]
 }

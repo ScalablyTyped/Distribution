@@ -1,7 +1,7 @@
 
 # Scala.js typings for agenda
 
-Typings are for version v2.0.0
+Typings are for version 4.3.0
 
 ## Library description:
 Light weight job scheduler for Node.js
@@ -10,10 +10,10 @@ Light weight job scheduler for Node.js
 | ------------------ | :-------------: |
 | Full name          | agenda |
 | Keywords           | job, jobs, cron, delayed, scheduler, runner |
-| # releases         | 8 |
-| # dependents       | 97 |
-| # downloads        | 2540491 |
-| # stars            | 107 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 366159.3333333333 |
+| # stars            | 8338.0 |
 
 ## Links
 - [Homepage](https://github.com/agenda/agenda#readme)
@@ -24,7 +24,7 @@ Light weight job scheduler for Node.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

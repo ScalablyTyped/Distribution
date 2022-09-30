@@ -12,6 +12,8 @@ type Arn = java.lang.String
 
 type AwsAccountId = java.lang.String
 
+type Boolean = scala.Boolean
+
 type ClientToken = java.lang.String
 
 type CompatibleEnvironmentTemplateInputList = js.Array[CompatibleEnvironmentTemplateInput]

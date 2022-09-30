@@ -19,7 +19,7 @@ trait CustomPropertyCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+    * For EACH ITEM in the collection: Gets the key of the custom property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -27,7 +27,7 @@ trait CustomPropertyCollectionLoadOptions extends StObject {
   var key: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+    * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.
     *
     * @remarks
     * [Api set: WordApi 1.3]

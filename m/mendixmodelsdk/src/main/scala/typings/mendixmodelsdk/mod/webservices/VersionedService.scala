@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "webservices.VersionedService")
 @js.native
-class VersionedService protected ()
+open class VersionedService protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.VersionedService {
   def this(
     model: AbstractModel,

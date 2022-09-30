@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.projectsMod.projects.ExportLevel
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/annotations relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Annotation")
+@JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Annotation")
 @js.native
-class Annotation protected () extends Element[IModel] {
+open class Annotation protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,6 +34,12 @@ class Annotation protected () extends Element[IModel] {
   
   def containerAsDomainModel: DomainModel = js.native
   
+  /**
+    * In version 9.15.0: introduced
+    */
+  def exportLevel: ExportLevel = js.native
+  def exportLevel_=(newValue: ExportLevel): Unit = js.native
+  
   def location: IPoint = js.native
   def location_=(newValue: IPoint): Unit = js.native
   
@@ -41,7 +48,7 @@ class Annotation protected () extends Element[IModel] {
 }
 object Annotation {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Annotation")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Annotation")
   @js.native
   val ^ : js.Any = js.native
   
@@ -62,13 +69,13 @@ object Annotation {
   inline def createIn(container: DomainModel): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Annotation]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Annotation.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Annotation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Annotation.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Annotation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

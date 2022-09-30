@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference")
+@JSImport("mendixmodelsdk/src/gen/rest", "rest.MetadataReference")
 @js.native
-class MetadataReference protected () extends Element[IModel] {
+open class MetadataReference protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -49,7 +49,7 @@ class MetadataReference protected () extends Element[IModel] {
 }
 object MetadataReference {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.MetadataReference")
   @js.native
   val ^ : js.Any = js.native
   
@@ -106,13 +106,13 @@ object MetadataReference {
   inline def createInMetadataReferenceUnderMetadataReferences(container: MetadataReference): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMetadataReferenceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.MetadataReference.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.MetadataReference.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

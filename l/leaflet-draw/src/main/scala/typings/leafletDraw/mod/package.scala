@@ -1,15 +1,15 @@
 package typings.leafletDraw.mod
 
+import typings.leafletDraw.mod.Localization.DrawLocal
+import typings.leafletDraw.mod.^
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def drawLocal: typings.leafletDraw.mod.Localization.DrawLocal = typings.leafletDraw.mod.^.asInstanceOf[js.Dynamic].selectDynamic("drawLocal").asInstanceOf[typings.leafletDraw.mod.Localization.DrawLocal]
+inline def drawLocal: DrawLocal = ^.asInstanceOf[js.Dynamic].selectDynamic("drawLocal").asInstanceOf[DrawLocal]
 
-inline def drawVersion: java.lang.String = typings.leafletDraw.mod.^.asInstanceOf[js.Dynamic].selectDynamic("drawVersion").asInstanceOf[java.lang.String]
+inline def drawVersion: String = ^.asInstanceOf[js.Dynamic].selectDynamic("drawVersion").asInstanceOf[String]
 
-inline def map(
-  element: java.lang.String | typings.std.HTMLElement,
-  options: js.UndefOr[typings.leafletDraw.mod.MapOptions]
-): typings.leafletDraw.mod.DrawMap = (typings.leafletDraw.mod.^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leafletDraw.mod.DrawMap]
+inline def map(element: String | HTMLElement, options: js.UndefOr[MapOptions]): DrawMap = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DrawMap]

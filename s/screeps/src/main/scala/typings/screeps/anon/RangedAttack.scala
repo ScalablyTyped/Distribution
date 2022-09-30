@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RangedAttack extends StObject {
   
-  var rangedAttack: typings.screeps.screepsNumbers.`2`
+  var rangedAttack: typings.screeps.screepsInts.`2`
   
-  var rangedMassAttack: typings.screeps.screepsNumbers.`2`
+  var rangedMassAttack: typings.screeps.screepsInts.`2`
 }
 object RangedAttack {
   
@@ -19,8 +19,8 @@ object RangedAttack {
   
   extension [Self <: RangedAttack](x: Self) {
     
-    inline def setRangedAttack(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedAttack", value.asInstanceOf[js.Any])
+    inline def setRangedAttack(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "rangedAttack", value.asInstanceOf[js.Any])
     
-    inline def setRangedMassAttack(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedMassAttack", value.asInstanceOf[js.Any])
+    inline def setRangedMassAttack(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "rangedMassAttack", value.asInstanceOf[js.Any])
   }
 }

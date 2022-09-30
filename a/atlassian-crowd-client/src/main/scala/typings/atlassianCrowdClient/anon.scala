@@ -81,7 +81,7 @@ object anon {
   @js.native
   trait Attributes extends StObject {
     
-    var attributes: List = js.native
+    var attributes: typings.atlassianCrowdClient.anon.List = js.native
     
     def create(user: ^): js.Promise[^] = js.native
     
@@ -261,12 +261,12 @@ object anon {
       remove: (String, String) => js.Promise[Unit],
       set: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^],
       username: Request
-    ): List = {
+    ): typings.atlassianCrowdClient.anon.List = {
       val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), password = password.asInstanceOf[js.Any], remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set), username = username.asInstanceOf[js.Any])
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.atlassianCrowdClient.anon.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.atlassianCrowdClient.anon.List](x: Self) {
       
       inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       

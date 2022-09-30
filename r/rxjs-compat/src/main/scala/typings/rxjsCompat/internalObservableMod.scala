@@ -634,9 +634,9 @@ object internalObservableMod {
     @JSName("filter")
     var filter_Original: Fn2
     @JSName("filter")
-    def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): Any
+    def filter_TS[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): Any
     @JSName("filter")
-    def filter_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: Any): Any
+    def filter_TS[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: Any): Any
     
     def `finally`[T](callback: js.Function0[Unit]): Any
     @JSName("finally")
@@ -668,9 +668,9 @@ object internalObservableMod {
     @JSName("find")
     var find_Original: Fn2
     @JSName("find")
-    def find_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): Any
+    def find_TS[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean]): Any
     @JSName("find")
-    def find_TS_T[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: Any): Any
+    def find_TS[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], thisArg: Any): Any
     
     def first[T, D](): Any
     def first[T, S /* <: T */](

@@ -13,12 +13,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[UIStateShape](): js.Function1[/* component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* component */ js.Any, js.Any]]
-  inline def default[UIStateShape](params: uiParams[UIStateShape]): js.Function1[/* component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.Any, js.Any]]
+  inline def default[UIStateShape](): js.Function1[/* component */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* component */ Any, Any]]
+  inline def default[UIStateShape](params: uiParams[UIStateShape]): js.Function1[/* component */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ Any, Any]]
   
   @JSImport("redux-ui", "reducer")
   @js.native
-  val reducer: Reducer[js.Any, AnyAction] = js.native
+  val reducer: Reducer[Any, AnyAction] = js.native
   
   @js.native
   trait ReduxUIProps[UIStateShape] extends StObject {
@@ -33,7 +33,7 @@ object mod {
     // (eg. 'some-decorator' with `@ui('some-decorator')`
     var uiKey: String = js.native
     
-    def updateUI(key: String, value: js.Any): Unit = js.native
+    def updateUI(key: String, value: Any): Unit = js.native
     // A function accepting either a name/value pair or object which updates
     // state within `uiKey`
     def updateUI(obj: UIStateShape): Unit = js.native
@@ -47,7 +47,7 @@ object mod {
     
     // optional mergeProps passed to react-redux' @connect
     var mergeProps: js.UndefOr[
-        js.Function3[/* stateProps */ js.Any, /* dispatchProps */ js.Any, /* ownProps */ js.Any, js.Any]
+        js.Function3[/* stateProps */ Any, /* dispatchProps */ Any, /* ownProps */ Any, Any]
       ] = js.undefined
     
     // optional `options` passed to react-redux @connect
@@ -60,7 +60,7 @@ object mod {
     
     // customReducer: you can handle the UI state for this component's scope
     // by dispatching actions
-    var reducer: js.UndefOr[js.Function2[/* state */ js.Any, /* action */ js.Any, js.Any]] = js.undefined
+    var reducer: js.UndefOr[js.Function2[/* state */ Any, /* action */ Any, Any]] = js.undefined
     
     // **required**: UI state for the component
     var state: UIStateShape
@@ -78,7 +78,7 @@ object mod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setMergeProps(value: (/* stateProps */ js.Any, /* dispatchProps */ js.Any, /* ownProps */ js.Any) => js.Any): Self = StObject.set(x, "mergeProps", js.Any.fromFunction3(value))
+      inline def setMergeProps(value: (/* stateProps */ Any, /* dispatchProps */ Any, /* ownProps */ Any) => Any): Self = StObject.set(x, "mergeProps", js.Any.fromFunction3(value))
       
       inline def setMergePropsUndefined: Self = StObject.set(x, "mergeProps", js.undefined)
       
@@ -90,7 +90,7 @@ object mod {
       
       inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
       
-      inline def setReducer(value: (/* state */ js.Any, /* action */ js.Any) => js.Any): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
+      inline def setReducer(value: (/* state */ Any, /* action */ Any) => Any): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
       
       inline def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
       

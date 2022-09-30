@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object webappsecCredentialManagementStrings {
   
   @js.native
-  sealed trait ble extends StObject
-  inline def ble: ble = "ble".asInstanceOf[ble]
-  
-  @js.native
   sealed trait `cross-platform` extends StObject
   inline def `cross-platform`: `cross-platform` = "cross-platform".asInstanceOf[`cross-platform`]
   
@@ -21,14 +17,6 @@ object webappsecCredentialManagementStrings {
   @js.native
   sealed trait federated extends StObject
   inline def federated: federated = "federated".asInstanceOf[federated]
-  
-  @js.native
-  sealed trait internal extends StObject
-  inline def internal: internal = "internal".asInstanceOf[internal]
-  
-  @js.native
-  sealed trait nfc extends StObject
-  inline def nfc: nfc = "nfc".asInstanceOf[nfc]
   
   @js.native
   sealed trait optional extends StObject
@@ -57,8 +45,4 @@ object webappsecCredentialManagementStrings {
   @js.native
   sealed trait silent extends StObject
   inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
-  sealed trait usb extends StObject
-  inline def usb: usb = "usb".asInstanceOf[usb]
 }

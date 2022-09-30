@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownButtonItem")
 @js.native
-class DropDownButtonItem protected () extends ActionItem {
+open class DropDownButtonItem protected () extends ActionItem {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ class DropDownButtonItem protected () extends ActionItem {
 }
 object DropDownButtonItem {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownButtonItem")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,13 +57,13 @@ object DropDownButtonItem {
   inline def createIn(container: DropDownButton): DropDownButtonItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButtonItem]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownButtonItem.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownButtonItem.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

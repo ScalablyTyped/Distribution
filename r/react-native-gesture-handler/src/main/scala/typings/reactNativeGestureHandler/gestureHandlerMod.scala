@@ -41,6 +41,8 @@ object gestureHandlerMod {
     def cancel(): Unit = js.native
     def cancel(sendIfDisabled: Boolean): Unit = js.native
     
+    /* private */ var cancelTouches: Any = js.native
+    
     /* protected */ def checkCustomActivationCriteria(criterias: js.Array[String]): Unit = js.native
     
     /* private */ var checkHitSlop: Any = js.native

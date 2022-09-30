@@ -5,6 +5,7 @@ import typings.matrixAppserviceBridge.anon.Avatarurl
 import typings.matrixAppserviceBridge.anon.State
 import typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache
 import typings.matrixAppserviceBridge.stateLookupMod.StateLookupEvent
+import typings.matrixBotSdk.mod.MatrixClient
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +17,7 @@ object appServiceBotMod {
   @js.native
   open class AppServiceBot protected () extends StObject {
     def this(
-      client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixClient */ Any,
+      client: MatrixClient,
       userId: String,
       registration: AppServiceRegistration,
       memberCache: MembershipCache
@@ -26,7 +27,7 @@ object appServiceBotMod {
     
     /* private */ var exclusiveUserRegexes: Any = js.native
     
-    def getClient(): Any = js.native
+    def getClient(): MatrixClient = js.native
     
     /**
       * Get a map of joined user IDs for the given room ID. The values in the map are objects

@@ -29,9 +29,9 @@ import typings.nightwatch.mod.NightwatchTestSuite
 import typings.nightwatch.mod.WindowPosition
 import typings.nightwatch.mod.WindowSizeAndPosition
 import typings.nightwatch.mod.WindowType
-import typings.nightwatch.nightwatchNumbers.`0`
-import typings.nightwatch.nightwatchNumbers.`1`
-import typings.nightwatch.nightwatchNumbers.`2`
+import typings.nightwatch.nightwatchInts.`0`
+import typings.nightwatch.nightwatchInts.`1`
+import typings.nightwatch.nightwatchInts.`2`
 import typings.nightwatch.nightwatchStrings.LANDSCAPE
 import typings.nightwatch.nightwatchStrings.PORTRAIT
 import typings.nightwatch.nightwatchStrings.browser
@@ -46,12 +46,13 @@ import typings.seleniumWebdriver.mod.Actions
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebElement
 import typings.std.HTMLScriptElement
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined nightwatch.nightwatch.Awaitable<nightwatch.nightwatch.NightwatchAPI, nightwatch.nightwatch.NightwatchAssertionsResult<std.Array<string>>> */
+/* Inlined nightwatch.nightwatch.Awaitable<nightwatch.nightwatch.NightwatchAPI, nightwatch.nightwatch.NightwatchAssertionsResult<std.Array<std.Omit<nightwatch.nightwatch.JSON_WEB_OBJECT, 'getId'>>>> */
 @js.native
 trait AwaitableNightwatchAPINigBaseUrl extends StObject {
   
@@ -85,6 +86,44 @@ trait AwaitableNightwatchAPINigBaseUrl extends StObject {
   var actions_Original: js.Function1[/* options */ js.UndefOr[Async], Actions] = js.native
   
   var assert: Assert = js.native
+  
+  def axeInject(): Awaitable[this.type, Null] = js.native
+  @JSName("axeInject")
+  var axeInject_Original: js.Function0[Awaitable[this.type, Null]] = js.native
+  
+  def axeRun(): Awaitable[this.type, Null] = js.native
+  def axeRun(selector: String): Awaitable[this.type, Null] = js.native
+  def axeRun(selector: String, options: StringDictionary[Any]): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: String,
+    options: StringDictionary[Any],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: String,
+    options: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def axeRun(selector: Unit, options: StringDictionary[Any]): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: Unit,
+    options: StringDictionary[Any],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: Unit,
+    options: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  @JSName("axeRun")
+  var axeRun_Original: js.Function3[
+    /* selector */ js.UndefOr[String], 
+    /* options */ js.UndefOr[StringDictionary[Any]], 
+    /* callback */ js.UndefOr[
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+    ], 
+    Awaitable[this.type, Null]
+  ] = js.native
   
   def back(): this.type = js.native
   def back(
@@ -2448,22 +2487,22 @@ trait AwaitableNightwatchAPINigBaseUrl extends StObject {
     * @returns A Promise for the completion of which ever callback is executed.
     */
   /* standard es5 */
-  def `then`[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): PromiseLike[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[
-      /* value */ NightwatchAssertionsResult[js.Array[String]], 
-      TResult1 | js.Thenable[TResult1]
+      /* value */ NightwatchAssertionsResult[js.Array[js.Object]], 
+      TResult1 | PromiseLike[TResult1]
     ]
-  ): js.Thenable[TResult1 | TResult2] = js.native
+  ): PromiseLike[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[
-      /* value */ NightwatchAssertionsResult[js.Array[String]], 
-      TResult1 | js.Thenable[TResult1]
+      /* value */ NightwatchAssertionsResult[js.Array[js.Object]], 
+      TResult1 | PromiseLike[TResult1]
     ],
-    onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
-  ): js.Thenable[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+    onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
+  ): PromiseLike[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
   
   def timeouts(typeOfOperation: String, ms: Double): this.type = js.native
   def timeouts(

@@ -1,19 +1,19 @@
 package typings.reactNavigationDrawer
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ComponentProps
+import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.ContextType
 import typings.react.mod.PureComponent
+import typings.react.mod.RefAttributes
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandlerProps_
 import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationScreenProp
 import typings.reactNavigation.mod.SupportedThemes
 import typings.reactNavigationDrawer.anon.DrawerOptionscontentCompo
 import typings.reactNavigationDrawer.anon.Lazy
 import typings.reactNavigationDrawer.anon.Loaded
-import typings.reactNavigationDrawer.anon.ReadonlyPanGestureHandler
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
@@ -35,7 +35,7 @@ object drawerViewMod {
   
   @JSImport("react-navigation-drawer/lib/typescript/src/views/DrawerView", JSImport.Default)
   @js.native
-  class default () extends DrawerView
+  open class default () extends DrawerView
   /* static members */
   object default {
     
@@ -70,9 +70,7 @@ object drawerViewMod {
     
     var edgeWidth: Double
     
-    var gestureHandlerProps: js.UndefOr[
-        ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]
-      ] = js.undefined
+    var gestureHandlerProps: js.UndefOr[ComponentProps[ComponentType[PanGestureHandlerProps_ & RefAttributes[Any]]]] = js.undefined
     
     var hideStatusBar: js.UndefOr[Boolean] = js.undefined
     
@@ -125,7 +123,7 @@ object drawerViewMod {
       
       inline def setEdgeWidth(value: Double): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
       
-      inline def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
+      inline def setGestureHandlerProps(value: ComponentProps[ComponentType[PanGestureHandlerProps_ & RefAttributes[Any]]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
       
       inline def setGestureHandlerPropsUndefined: Self = StObject.set(x, "gestureHandlerProps", js.undefined)
       
@@ -166,8 +164,7 @@ object drawerViewMod {
   }
   
   @js.native
-  trait DrawerView
-    extends PureComponent[Props, State, js.Any] {
+  trait DrawerView extends PureComponent[Props, State, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MDrawerView(): Unit = js.native
@@ -181,25 +178,25 @@ object drawerViewMod {
     @JSName("context")
     var context_DrawerView: ContextType[Context[SupportedThemes]] = js.native
     
-    /* private */ var drawerGestureRef: js.Any = js.native
+    /* private */ var drawerGestureRef: Any = js.native
     
-    /* private */ var getDrawerBackgroundColor: js.Any = js.native
+    /* private */ var getDrawerBackgroundColor: Any = js.native
     
-    /* private */ var getLockMode: js.Any = js.native
+    /* private */ var getLockMode: Any = js.native
     
-    /* private */ var getOverlayColor: js.Any = js.native
+    /* private */ var getOverlayColor: Any = js.native
     
-    /* private */ var handleDrawerClose: js.Any = js.native
+    /* private */ var handleDrawerClose: Any = js.native
     
-    /* private */ var handleDrawerOpen: js.Any = js.native
+    /* private */ var handleDrawerOpen: Any = js.native
     
-    /* private */ var renderContent: js.Any = js.native
+    /* private */ var renderContent: Any = js.native
     
-    /* private */ var renderNavigationView: js.Any = js.native
+    /* private */ var renderNavigationView: Any = js.native
     
-    /* private */ var setDrawerGestureRef: js.Any = js.native
+    /* private */ var setDrawerGestureRef: Any = js.native
     
-    /* private */ var updateWidth: js.Any = js.native
+    /* private */ var updateWidth: Any = js.native
   }
   
   trait Props extends StObject {
@@ -214,7 +211,7 @@ object drawerViewMod {
     
     var navigationConfig: DrawerOptionscontentCompo
     
-    var screenProps: js.Any
+    var screenProps: Any
   }
   object Props {
     
@@ -224,7 +221,7 @@ object drawerViewMod {
       `lazy`: Boolean,
       navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams],
       navigationConfig: DrawerOptionscontentCompo,
-      screenProps: js.Any
+      screenProps: Any
     ): Props = {
       val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], detachInactiveScreens = detachInactiveScreens.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], navigationConfig = navigationConfig.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any])
       __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
@@ -243,7 +240,7 @@ object drawerViewMod {
       
       inline def setNavigationConfig(value: DrawerOptionscontentCompo): Self = StObject.set(x, "navigationConfig", value.asInstanceOf[js.Any])
       
-      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,7 +263,7 @@ object drawerViewMod {
       
       inline def setLoaded(value: js.Array[Double]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      inline def setLoadedVarargs(value: Double*): Self = StObject.set(x, "loaded", js.Array(value :_*))
+      inline def setLoadedVarargs(value: Double*): Self = StObject.set(x, "loaded", js.Array(value*))
     }
   }
 }

@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/image-uploader relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageUploader")
 @js.native
-class ImageUploader protected () extends InputWidget {
+open class ImageUploader protected () extends InputWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -42,7 +42,7 @@ class ImageUploader protected () extends InputWidget {
 }
 object ImageUploader {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageUploader")
   @js.native
   val ^ : js.Any = js.native
   
@@ -616,13 +616,13 @@ object ImageUploader {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): ImageUploader = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ImageUploader]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageUploader.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageUploader.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageUploader.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

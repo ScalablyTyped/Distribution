@@ -58,7 +58,7 @@ trait ReadonlyArraystring extends StObject {
   val flat: js.ThisFunction0[
     /* this */ Any, 
     js.Array[
-      FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`]
+      FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
     ]
   ]
   
@@ -177,7 +177,7 @@ object ReadonlyArraystring {
     flat: js.ThisFunction0[
       /* this */ Any, 
       js.Array[
-        FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`]
+        FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
       ]
     ],
     flatMap: /* callback */ js.ThisFunction3[
@@ -275,7 +275,7 @@ object ReadonlyArraystring {
       value: js.ThisFunction0[
           /* this */ Any, 
           js.Array[
-            FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`]
+            FlatArray[Any, typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
           ]
         ]
     ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])

@@ -19,6 +19,6 @@ object Loaded {
     
     inline def setLoaded(value: js.Array[Double]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    inline def setLoadedVarargs(value: Double*): Self = StObject.set(x, "loaded", js.Array(value :_*))
+    inline def setLoadedVarargs(value: Double*): Self = StObject.set(x, "loaded", js.Array(value*))
   }
 }

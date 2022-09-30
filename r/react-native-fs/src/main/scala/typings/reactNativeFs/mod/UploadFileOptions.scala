@@ -61,7 +61,7 @@ object UploadFileOptions {
     
     inline def setFiles(value: js.Array[UploadFileItem]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: UploadFileItem*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: UploadFileItem*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

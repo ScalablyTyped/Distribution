@@ -75,7 +75,7 @@ object prePassRendererSceneComponentMod {
     
     trait AbstractScene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _prePassRenderer: Nullable[PrePassRenderer]
       
       /**
@@ -123,7 +123,7 @@ object prePassRendererSceneComponentMod {
     
     trait RenderTargetTexture extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _prePassRenderTarget: Nullable[PrePassRenderTarget]
     }
     object RenderTargetTexture {

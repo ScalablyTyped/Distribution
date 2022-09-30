@@ -15,5 +15,5 @@ object mod {
   inline def createPrintf(): Printf = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrintf")().asInstanceOf[Printf]
   inline def createPrintf(configuration: Configuration): Printf = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrintf")(configuration.asInstanceOf[js.Any]).asInstanceOf[Printf]
   
-  inline def printf(subject: String, boundValues: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(List(subject.asInstanceOf[js.Any]).`++`(boundValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def printf(subject: String, boundValues: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(scala.List(subject.asInstanceOf[js.Any]).`++`(boundValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

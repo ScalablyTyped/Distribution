@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SnippetCall")
 @js.native
-class SnippetCall protected ()
+open class SnippetCall protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SnippetCall {
   def this(
     model: AbstractModel,

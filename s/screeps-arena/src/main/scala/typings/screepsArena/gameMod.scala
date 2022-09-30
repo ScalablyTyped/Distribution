@@ -32,7 +32,7 @@ import typings.screepsArena.pathFinderMod.CostMatrixConstructor
 import typings.screepsArena.pathFinderMod.FindPathOpts
 import typings.screepsArena.pathFinderMod.FindPathResult
 import typings.screepsArena.pathFinderMod.PathStep
-import typings.screepsArena.screepsArenaNumbers.`0`
+import typings.screepsArena.screepsArenaInts.`0`
 import typings.screepsArena.screepsArenaStrings.energy
 import typings.screepsArena.utilsMod.HeapStatistics
 import org.scalablytyped.runtime.StObject

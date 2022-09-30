@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Publisher */
 @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.Publisher")
 @js.native
-class Publisher protected ()
+open class Publisher protected ()
   extends typings.googleCloudPubsub.protosMod.google.pubsub.v1.Publisher {
   /**
     * Constructs a new Publisher service.

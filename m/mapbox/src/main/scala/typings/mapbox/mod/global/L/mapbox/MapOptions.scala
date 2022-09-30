@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var featureLayer: js.UndefOr[FeatureLayerOptions] = js.undefined
   
-  var gridLayer: js.UndefOr[js.Any] = js.undefined
+  var gridLayer: js.UndefOr[Any] = js.undefined
   
   var infoControl: js.UndefOr[ControlOptions] = js.undefined
   
@@ -32,7 +32,7 @@ object MapOptions {
     
     inline def setFeatureLayerUndefined: Self = StObject.set(x, "featureLayer", js.undefined)
     
-    inline def setGridLayer(value: js.Any): Self = StObject.set(x, "gridLayer", value.asInstanceOf[js.Any])
+    inline def setGridLayer(value: Any): Self = StObject.set(x, "gridLayer", value.asInstanceOf[js.Any])
     
     inline def setGridLayerUndefined: Self = StObject.set(x, "gridLayer", js.undefined)
     

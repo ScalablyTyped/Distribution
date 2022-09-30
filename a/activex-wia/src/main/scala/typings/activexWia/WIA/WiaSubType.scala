@@ -1,9 +1,9 @@
 package typings.activexWia.WIA
 
-import typings.activexWia.activexWiaNumbers.`0`
-import typings.activexWia.activexWiaNumbers.`1`
-import typings.activexWia.activexWiaNumbers.`2`
-import typings.activexWia.activexWiaNumbers.`3`
+import typings.activexWia.activexWiaInts.`0`
+import typings.activexWia.activexWiaInts.`1`
+import typings.activexWia.activexWiaInts.`2`
+import typings.activexWia.activexWiaInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the property.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWia.activexWiaNumbers.`3`
-  - typings.activexWia.activexWiaNumbers.`2`
-  - typings.activexWia.activexWiaNumbers.`1`
-  - typings.activexWia.activexWiaNumbers.`0`
+  - typings.activexWia.activexWiaInts.`3`
+  - typings.activexWia.activexWiaInts.`2`
+  - typings.activexWia.activexWiaInts.`1`
+  - typings.activexWia.activexWiaInts.`0`
 */
 trait WiaSubType extends StObject
 object WiaSubType {

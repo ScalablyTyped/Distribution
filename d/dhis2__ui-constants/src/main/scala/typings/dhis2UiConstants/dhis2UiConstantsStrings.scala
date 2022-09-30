@@ -1,14 +1,13 @@
 package typings.dhis2UiConstants
 
 import typings.dhis2UiConstants.mod.ColorBase
-import typings.dhis2UiConstants.mod.ColorProp
 import typings.dhis2UiConstants.mod.ColorVariant
 import typings.dhis2UiConstants.mod.ElevantionVariant
 import typings.dhis2UiConstants.mod.LayerVariant
 import typings.dhis2UiConstants.mod.SpacerVariant
 import typings.dhis2UiConstants.mod.ThemeBase
-import typings.dhis2UiConstants.mod.ThemeProp
 import typings.dhis2UiConstants.mod.ThemeVariant
+import typings.dhis2UiConstants.mod._ThemeProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object dhis2UiConstantsStrings {
   @js.native
   sealed trait default
     extends StObject
-       with ThemeProp
+       with _ThemeProp
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
@@ -92,18 +91,6 @@ object dhis2UiConstantsStrings {
   inline def `900`: `900` = "900".asInstanceOf[`900`]
   
   @js.native
-  sealed trait DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket
-    extends StObject
-       with ColorProp
-  inline def DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket: DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket = "${ColorBase}${ColorVariant}".asInstanceOf[DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket
-    extends StObject
-       with ThemeProp
-  inline def DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket: DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket = "${ThemeBase}${ThemeVariant}".asInstanceOf[DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket]
-  
-  @js.native
   sealed trait alert
     extends StObject
        with LayerVariant
@@ -130,7 +117,7 @@ object dhis2UiConstantsStrings {
   @js.native
   sealed trait disabled
     extends StObject
-       with ThemeProp
+       with _ThemeProp
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
@@ -250,19 +237,19 @@ object dhis2UiConstantsStrings {
   @js.native
   sealed trait error
     extends StObject
-       with ThemeProp
+       with _ThemeProp
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait focus
     extends StObject
-       with ThemeProp
+       with _ThemeProp
   inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
   sealed trait fonts
     extends StObject
-       with ThemeProp
+       with _ThemeProp
   inline def fonts: fonts = "fonts".asInstanceOf[fonts]
   
   @js.native
@@ -304,19 +291,17 @@ object dhis2UiConstantsStrings {
   @js.native
   sealed trait valid
     extends StObject
-       with ThemeProp
+       with _ThemeProp
   inline def valid: valid = "valid".asInstanceOf[valid]
   
   @js.native
   sealed trait warning
     extends StObject
-       with ThemeProp
+       with _ThemeProp
   inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait white
-    extends StObject
-       with ColorProp
+  sealed trait white extends StObject
   inline def white: white = "white".asInstanceOf[white]
   
   @js.native

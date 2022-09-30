@@ -12,6 +12,8 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def getBoundedIndex(rawIndex: Double, slideCount: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedIndex")(rawIndex.asInstanceOf[js.Any], slideCount.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   inline def getDefaultSlideIndex(
     slideIndex: Double,
     slideCount: Double,
@@ -30,8 +32,6 @@ object utilsMod {
     autoplayReverse: Boolean,
     scrollMode: ScrollMode
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultSlideIndex")(slideIndex.asInstanceOf[js.Any], slideCount.asInstanceOf[js.Any], slidesToShow.asInstanceOf[js.Any], slidesToScroll.asInstanceOf[js.Any], cellAlign.asInstanceOf[js.Any], autoplayReverse.asInstanceOf[js.Any], scrollMode.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def getIndexes(slide: Double, endSlide: Double, slideCount: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIndexes")(slide.asInstanceOf[js.Any], endSlide.asInstanceOf[js.Any], slideCount.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
   inline def getNextMoveIndex(
     scrollMode: ScrollMode,

@@ -142,7 +142,7 @@ object global {
   def fl: FlashFL = js.native
   inline def fl_=(x: FlashFL): Unit = js.Dynamic.global.updateDynamic("fl")(x.asInstanceOf[js.Any])
   
-  inline def format(format: String, params: Any*): Unit = js.Dynamic.global.applyDynamic("format")(List(format.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def format(format: String, params: Any*): Unit = js.Dynamic.global.applyDynamic("format")(scala.List(format.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   // Library / class loading
   inline def include(className: String): Unit = js.Dynamic.global.applyDynamic("include")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]

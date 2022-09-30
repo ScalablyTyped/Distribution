@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.matrixAppserviceBridge.agecountersMod.AgeCounters
 import typings.matrixAppserviceBridge.mod.Bridge
+import typings.matrixBotSdk.mod.Appservice
 import typings.promClient.mod.Counter
 import typings.promClient.mod.Gauge
 import typings.promClient.mod.Histogram
@@ -71,7 +72,7 @@ object prometheusmetricsMod {
       * gauge in order to provide a new value for it.
       * @return {Gauge} A gauge metric.
       */
-    def addGauge(opts: GagueOpts): Gauge[String] = js.native
+    def addGauge(opts: GaugeOpts): Gauge[String] = js.native
     
     /**
       * Adds a new timer metric, represented by a prometheus Histogram.
@@ -119,9 +120,7 @@ object prometheusmetricsMod {
       * matrix-bot-sdk. In particular, a metric is added that counts the number of
       * calls to client API endpoints made by the client library.
       */
-    def registerMatrixSdkMetrics(
-      appservice: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdkAppservice */ Any
-    ): Unit = js.native
+    def registerMatrixSdkMetrics(appservice: Appservice): Unit = js.native
     
     /**
       * Begins a new timer observation for a timer metric.
@@ -254,20 +253,20 @@ object prometheusmetricsMod {
     }
   }
   
-  trait GagueOpts
+  trait GaugeOpts
     extends StObject
        with CounterOpts {
     
     var refresh: js.UndefOr[js.Function1[/* gauge */ Gauge[String], Unit]] = js.undefined
   }
-  object GagueOpts {
+  object GaugeOpts {
     
-    inline def apply(help: String, name: String): GagueOpts = {
+    inline def apply(help: String, name: String): GaugeOpts = {
       val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GagueOpts]
+      __obj.asInstanceOf[GaugeOpts]
     }
     
-    extension [Self <: GagueOpts](x: Self) {
+    extension [Self <: GaugeOpts](x: Self) {
       
       inline def setRefresh(value: /* gauge */ Gauge[String] => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
       

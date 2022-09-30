@@ -2,8 +2,8 @@ package typings.amapJsApiMapType
 
 import typings.amapJsApi.AMap.EventEmitter
 import typings.amapJsApi.AMap.Event_
-import typings.amapJsApiMapType.amapJsApiMapTypeNumbers.`0`
-import typings.amapJsApiMapType.amapJsApiMapTypeNumbers.`1`
+import typings.amapJsApiMapType.amapJsApiMapTypeInts.`0`
+import typings.amapJsApiMapType.amapJsApiMapTypeInts.`1`
 import typings.amapJsApiMapType.amapJsApiMapTypeStrings.hide
 import typings.amapJsApiMapType.amapJsApiMapTypeStrings.show
 import org.scalablytyped.runtime.StObject

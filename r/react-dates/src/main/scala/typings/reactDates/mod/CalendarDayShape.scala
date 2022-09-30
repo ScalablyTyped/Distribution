@@ -4,8 +4,8 @@ import typings.moment.mod.Moment
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.reactDates.reactDatesNumbers.`-1`
-import typings.reactDates.reactDatesNumbers.`0`
+import typings.reactDates.reactDatesInts.`-1`
+import typings.reactDates.reactDatesInts.`0`
 import typings.std.HTMLTableDataCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

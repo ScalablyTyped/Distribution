@@ -1,9 +1,9 @@
 package typings.tengitsui.mod
 
-import typings.tengitsui.tengitsuiNumbers.`0`
-import typings.tengitsui.tengitsuiNumbers.`1`
-import typings.tengitsui.tengitsuiNumbers.`2`
-import typings.tengitsui.tengitsuiNumbers.`3`
+import typings.tengitsui.tengitsuiInts.`0`
+import typings.tengitsui.tengitsuiInts.`1`
+import typings.tengitsui.tengitsuiInts.`2`
+import typings.tengitsui.tengitsuiInts.`3`
 import typings.tengitsui.tengitsuiStrings.biz_area
 import typings.tengitsui.tengitsuiStrings.city
 import typings.tengitsui.tengitsuiStrings.country

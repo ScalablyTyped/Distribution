@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object chartjsPluginDoughnutlabelRebourneStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketnumberRightcurlybracket extends StObject
-  inline def $LeftcurlybracketnumberRightcurlybracket: $LeftcurlybracketnumberRightcurlybracket = "${number}".asInstanceOf[$LeftcurlybracketnumberRightcurlybracket]
-  
-  @js.native
   sealed trait afterBuildTicks extends StObject
   inline def afterBuildTicks: afterBuildTicks = "afterBuildTicks".asInstanceOf[afterBuildTicks]
   

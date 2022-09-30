@@ -78,7 +78,7 @@ object AboutPanelOptionsOptions {
     
     inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
-    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
+    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object qualifiedNameCacheMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/QualifiedNameCache", "QualifiedNameCache")
+  @JSImport("mendixmodelsdk/src/sdk/internal/QualifiedNameCache", "QualifiedNameCache")
   @js.native
-  class QualifiedNameCache protected () extends StObject {
+  open class QualifiedNameCache protected () extends StObject {
     def this(_model: AbstractModel) = this()
     
     /**
@@ -22,7 +22,7 @@ object qualifiedNameCacheMod {
     
     def keys(): js.Array[String] = js.native
     
-    def observe(listener: js.Function0[Unit]): Unit = js.native
+    def observe(listener: js.Function1[/* names */ js.Array[String], Unit]): js.Function0[Unit] = js.native
     
     /**
       * Removes the structure and its children from the cache.

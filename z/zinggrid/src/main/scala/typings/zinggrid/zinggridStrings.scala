@@ -47,10 +47,6 @@ object zinggridStrings {
   inline def D: D = "D".asInstanceOf[D]
   
   @js.native
-  sealed trait `DollarLeftcurlybracketLRightcurlybracket-DollarLeftcurlybracketLowercaseLessthansignUGreaterthansignRightcurlybracketDollarLeftcurlybracketKebabLessthansignRGreaterthansignRightcurlybracket` extends StObject
-  inline def `DollarLeftcurlybracketLRightcurlybracket-DollarLeftcurlybracketLowercaseLessthansignUGreaterthansignRightcurlybracketDollarLeftcurlybracketKebabLessthansignRGreaterthansignRightcurlybracket`: `DollarLeftcurlybracketLRightcurlybracket-DollarLeftcurlybracketLowercaseLessthansignUGreaterthansignRightcurlybracketDollarLeftcurlybracketKebabLessthansignRGreaterthansignRightcurlybracket` = "${L}-${Lowercase<U>}${Kebab<R>}".asInstanceOf[`DollarLeftcurlybracketLRightcurlybracket-DollarLeftcurlybracketLowercaseLessthansignUGreaterthansignRightcurlybracketDollarLeftcurlybracketKebabLessthansignRGreaterthansignRightcurlybracket`]
-  
-  @js.native
   sealed trait E
     extends StObject
        with Upper

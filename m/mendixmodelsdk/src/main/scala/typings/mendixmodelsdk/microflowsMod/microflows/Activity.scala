@@ -10,7 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Activity")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Activity")
 @js.native
 abstract class Activity protected () extends MicroflowObject {
   def this(
@@ -24,18 +24,18 @@ abstract class Activity protected () extends MicroflowObject {
 }
 object Activity {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Activity")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Activity")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Activity.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Activity.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Activity.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Activity.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

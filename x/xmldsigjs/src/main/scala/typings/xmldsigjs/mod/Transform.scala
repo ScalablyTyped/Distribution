@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "Transform")
 @js.native
-class Transform ()
+open class Transform ()
   extends typings.xmldsigjs.xmlMod.Transform {
   def this(properties: js.Object) = this()
 }

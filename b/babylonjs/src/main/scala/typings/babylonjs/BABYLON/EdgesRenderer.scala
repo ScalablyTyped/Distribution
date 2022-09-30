@@ -62,7 +62,7 @@ trait EdgesRenderer
   
   /* protected */ def _processEdgeForAdjacenciesWithVertices(pa: Vector3, pb: Vector3, p0: Vector3, p1: Vector3, p2: Vector3): Double = js.native
   
-  /** @hidden */
+  /** @internal */
   def _rebuild(): Unit = js.native
   
   /* protected */ var _source: AbstractMesh = js.native

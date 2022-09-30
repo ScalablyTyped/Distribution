@@ -224,9 +224,9 @@ inline def prompt(text: Any, `type`: Unit, callback: WebixCallback): js.Promise[
 inline def prompt(text: Any, `type`: WebixCallback): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 inline def prompt(text: Any, `type`: WebixCallback, callback: WebixCallback): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
-inline def proto(target: Any, mixins: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("proto")(List(target.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def proto(target: Any, mixins: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("proto")(scala.List(target.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
-inline def protoUI(target: Any, mixins: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("protoUI")(List(target.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def protoUI(target: Any, mixins: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("protoUI")(scala.List(target.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def proxy(`type`: String, source: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(`type`.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Any]
 

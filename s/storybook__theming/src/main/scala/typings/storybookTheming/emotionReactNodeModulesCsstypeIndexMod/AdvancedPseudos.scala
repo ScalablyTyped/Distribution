@@ -4,36 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.storybookTheming.storybookThemingStrings.`Colon-moz-anyLeftparenthesisRightparenthesis`
-  - typings.storybookTheming.storybookThemingStrings.`Colon-moz-dir`
-  - typings.storybookTheming.storybookThemingStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`
-  - typings.storybookTheming.storybookThemingStrings.ColonColoncue
-  - typings.storybookTheming.storybookThemingStrings.`ColonColoncue-region`
-  - typings.storybookTheming.storybookThemingStrings.ColonColonpart
-  - typings.storybookTheming.storybookThemingStrings.ColonColonslotted
-  - typings.storybookTheming.storybookThemingStrings.Colondir
-  - typings.storybookTheming.storybookThemingStrings.Colonhas
-  - typings.storybookTheming.storybookThemingStrings.Colonhost
-  - typings.storybookTheming.storybookThemingStrings.`Colonhost-context`
-  - typings.storybookTheming.storybookThemingStrings.Colonis
-  - typings.storybookTheming.storybookThemingStrings.Colonlang
-  - typings.storybookTheming.storybookThemingStrings.ColonmatchesLeftparenthesisRightparenthesis
-  - typings.storybookTheming.storybookThemingStrings.Colonnot
-  - typings.storybookTheming.storybookThemingStrings.`Colonnth-child`
-  - typings.storybookTheming.storybookThemingStrings.`Colonnth-last-child`
-  - typings.storybookTheming.storybookThemingStrings.`Colonnth-last-of-type`
-  - typings.storybookTheming.storybookThemingStrings.`Colonnth-of-type`
-  - typings.storybookTheming.storybookThemingStrings.Colonwhere
-*/
-trait AdvancedPseudos extends StObject
 object AdvancedPseudos {
   
-  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: typings.storybookTheming.storybookThemingStrings.`Colon-moz-anyLeftparenthesisRightparenthesis` = ":-moz-any()".asInstanceOf[typings.storybookTheming.storybookThemingStrings.`Colon-moz-anyLeftparenthesisRightparenthesis`]
+  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
   
   inline def `Colon-moz-dir`: typings.storybookTheming.storybookThemingStrings.`Colon-moz-dir` = ":-moz-dir".asInstanceOf[typings.storybookTheming.storybookThemingStrings.`Colon-moz-dir`]
   
-  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: typings.storybookTheming.storybookThemingStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis` = ":-webkit-any()".asInstanceOf[typings.storybookTheming.storybookThemingStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`]
+  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
   
   inline def ColonColoncue: typings.storybookTheming.storybookThemingStrings.ColonColoncue = "::cue".asInstanceOf[typings.storybookTheming.storybookThemingStrings.ColonColoncue]
   
@@ -55,7 +32,7 @@ object AdvancedPseudos {
   
   inline def Colonlang: typings.storybookTheming.storybookThemingStrings.Colonlang = ":lang".asInstanceOf[typings.storybookTheming.storybookThemingStrings.Colonlang]
   
-  inline def ColonmatchesLeftparenthesisRightparenthesis: typings.storybookTheming.storybookThemingStrings.ColonmatchesLeftparenthesisRightparenthesis = ":matches()".asInstanceOf[typings.storybookTheming.storybookThemingStrings.ColonmatchesLeftparenthesisRightparenthesis]
+  inline def ColonmatchesLeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
   
   inline def Colonnot: typings.storybookTheming.storybookThemingStrings.Colonnot = ":not".asInstanceOf[typings.storybookTheming.storybookThemingStrings.Colonnot]
   

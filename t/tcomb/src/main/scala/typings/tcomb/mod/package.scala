@@ -76,7 +76,7 @@ inline def isType[T](x: Constructor[T]): scala.Boolean = ^.asInstanceOf[js.Dynam
 inline def list[T](`type`: Constructor[T]): List_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(`type`.asInstanceOf[js.Any]).asInstanceOf[List_[T]]
 inline def list[T](`type`: Constructor[T], name: java.lang.String): List_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[List_[T]]
 
-inline def `match`(x: scala.Any, clauses: Clause*): scala.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(List(x.asInstanceOf[js.Any]).`++`(clauses.asInstanceOf[Seq[js.Any]])*).asInstanceOf[scala.Any]
+inline def `match`(x: scala.Any, clauses: Clause*): scala.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(scala.List(x.asInstanceOf[js.Any]).`++`(clauses.asInstanceOf[Seq[js.Any]])*).asInstanceOf[scala.Any]
 
 inline def maybe[T](`type`: Constructor[T]): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(`type`.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
 inline def maybe[T](`type`: Constructor[T], name: java.lang.String): Maybe_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Maybe_[T]]

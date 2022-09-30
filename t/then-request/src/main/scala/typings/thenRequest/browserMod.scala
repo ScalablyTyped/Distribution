@@ -2,7 +2,7 @@ package typings.thenRequest
 
 import org.scalablytyped.runtime.Shortcut
 import typings.httpResponseObject.mod.^
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.thenRequest.requestFnMod.RequestFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,11 +16,11 @@ object browserMod extends Shortcut {
   
   @JSImport("then-request/lib/browser", "FormData")
   @js.native
-  val FormData: js.Any = js.native
+  val FormData: Any = js.native
   
   @JSImport("then-request/lib/browser", "ResponsePromise")
   @js.native
-  class ResponsePromise ()
+  open class ResponsePromise ()
     extends typings.thenRequest.responsePromiseMod.ResponsePromise
   
   type Response = ^[Buffer | String]

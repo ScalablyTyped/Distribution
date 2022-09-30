@@ -61,7 +61,7 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.Atrule]
   }
   
-  inline def AtrulePrelude(children: List[CssNode]): typings.cssTree.mod.AtrulePrelude = {
+  inline def AtrulePrelude(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.AtrulePrelude = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AtrulePrelude")
     __obj.asInstanceOf[typings.cssTree.mod.AtrulePrelude]
@@ -73,13 +73,13 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.AttributeSelector]
   }
   
-  inline def Block(children: List[CssNode]): typings.cssTree.mod.Block = {
+  inline def Block(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.Block = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Block")
     __obj.asInstanceOf[typings.cssTree.mod.Block]
   }
   
-  inline def Brackets(children: List[CssNode]): typings.cssTree.mod.Brackets = {
+  inline def Brackets(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.Brackets = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Brackets")
     __obj.asInstanceOf[typings.cssTree.mod.Brackets]
@@ -121,7 +121,7 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.Declaration]
   }
   
-  inline def DeclarationList(children: List[CssNode]): typings.cssTree.mod.DeclarationList = {
+  inline def DeclarationList(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.DeclarationList = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclarationList")
     __obj.asInstanceOf[typings.cssTree.mod.DeclarationList]
@@ -133,7 +133,7 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.Dimension]
   }
   
-  inline def FunctionNode(children: List[CssNode], name: String): typings.cssTree.mod.FunctionNode = {
+  inline def FunctionNode(children: typings.cssTree.mod.List[CssNode], name: String): typings.cssTree.mod.FunctionNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Function")
     __obj.asInstanceOf[typings.cssTree.mod.FunctionNode]
@@ -163,13 +163,13 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.MediaFeature]
   }
   
-  inline def MediaQuery(children: List[CssNode]): typings.cssTree.mod.MediaQuery = {
+  inline def MediaQuery(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.MediaQuery = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MediaQuery")
     __obj.asInstanceOf[typings.cssTree.mod.MediaQuery]
   }
   
-  inline def MediaQueryList(children: List[CssNode]): typings.cssTree.mod.MediaQueryList = {
+  inline def MediaQueryList(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.MediaQueryList = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MediaQueryList")
     __obj.asInstanceOf[typings.cssTree.mod.MediaQueryList]
@@ -193,7 +193,7 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.Operator]
   }
   
-  inline def Parentheses(children: List[CssNode]): typings.cssTree.mod.Parentheses = {
+  inline def Parentheses(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.Parentheses = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Parentheses")
     __obj.asInstanceOf[typings.cssTree.mod.Parentheses]
@@ -235,13 +235,13 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.Rule]
   }
   
-  inline def Selector(children: List[CssNode]): typings.cssTree.mod.Selector = {
+  inline def Selector(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.Selector = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Selector")
     __obj.asInstanceOf[typings.cssTree.mod.Selector]
   }
   
-  inline def SelectorList(children: List[CssNode]): typings.cssTree.mod.SelectorList = {
+  inline def SelectorList(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.SelectorList = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SelectorList")
     __obj.asInstanceOf[typings.cssTree.mod.SelectorList]
@@ -253,7 +253,7 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.StringNode]
   }
   
-  inline def StyleSheet(children: List[CssNode]): typings.cssTree.mod.StyleSheet = {
+  inline def StyleSheet(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.StyleSheet = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StyleSheet")
     __obj.asInstanceOf[typings.cssTree.mod.StyleSheet]
@@ -277,7 +277,7 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.Url]
   }
   
-  inline def Value(children: List[CssNode]): typings.cssTree.mod.Value = {
+  inline def Value(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.Value = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Value")
     __obj.asInstanceOf[typings.cssTree.mod.Value]

@@ -17,14 +17,13 @@ object integrationReactMod {
     */
   @JSImport("redux-persist/integration/react", "PersistGate")
   @js.native
-  class PersistGate protected ()
-    extends PureComponent[PersistGateProps, PersistorGateState, js.Any] {
+  open class PersistGate protected () extends PureComponent[PersistGateProps, PersistorGateState, Any] {
     def this(props: PersistGateProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PersistGateProps, context: js.Any) = this()
+    def this(props: PersistGateProps, context: Any) = this()
   }
   
   /** @see PersistGate */

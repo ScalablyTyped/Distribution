@@ -5,7 +5,7 @@ import typings.sinon.mod.MatchArguments
 import typings.sinon.mod.SinonFakeServer
 import typings.sinon.mod.SinonMatcher
 import typings.sinon.mod.SinonSpy
-import typings.sinon.sinonNumbers.`1`
+import typings.sinon.sinonInts.`1`
 import typings.sinonjsFakeTimers.mod.Clock
 import typings.sinonjsFakeTimers.mod.FakeMethod
 import typings.std.FlatArray

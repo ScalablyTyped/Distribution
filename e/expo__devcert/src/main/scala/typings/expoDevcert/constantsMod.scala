@@ -60,7 +60,7 @@ object constantsMod {
   @js.native
   val opensslSerialFilePath: String = js.native
   
-  inline def pathForDomain(domain: String, pathSegments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathForDomain")(List(domain.asInstanceOf[js.Any]).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def pathForDomain(domain: String, pathSegments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathForDomain")(scala.List(domain.asInstanceOf[js.Any]).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   @JSImport("@expo/devcert/dist/constants", "rootCACertPath")
   @js.native

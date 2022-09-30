@@ -1,18 +1,18 @@
 package typings.firebaseFirestore.internalMod
 
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-  - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-  - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-  - typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+  - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+  - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+  - typings.firebaseFirestore.firebaseFirestoreInts.`2`
+  - typings.firebaseFirestore.firebaseFirestoreInts.`3`
 */
 trait MutationType extends StObject
 object MutationType {

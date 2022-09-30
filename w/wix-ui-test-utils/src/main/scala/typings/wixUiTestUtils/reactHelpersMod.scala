@@ -1,6 +1,6 @@
 package typings.wixUiTestUtils
 
-import typings.react.mod.SFC
+import typings.react.mod.FunctionComponent
 import typings.std.HTMLElement
 import typings.wixUiTestUtils.anon.Instantiable
 import typings.wixUiTestUtils.anon.TypeofSimulate
@@ -17,7 +17,7 @@ object reactHelpersMod {
   
   inline def isClassExists(element: HTMLElement, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClassExists")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def makeControlled[T /* <: ControlledComponentProps */](Component: SFC[T]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("makeControlled")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def makeControlled[T /* <: ControlledComponentProps */](Component: FunctionComponent[T]): Instantiable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeControlled")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[T]]
   
   inline def reactEventTrigger(): TypeofSimulate = ^.asInstanceOf[js.Dynamic].applyDynamic("reactEventTrigger")().asInstanceOf[TypeofSimulate]
   

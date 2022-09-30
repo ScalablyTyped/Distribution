@@ -12,7 +12,7 @@ trait WebGPUComputePipelineContext
   extends StObject
      with IComputePipelineContext {
   
-  /** @hidden */
+  /** @internal */
   @JSName("_name")
   var _name_WebGPUComputePipelineContext: String = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xadesjs", "SignedXml")
 @js.native
-class SignedXml ()
+open class SignedXml ()
   extends typings.xadesjs.signedXmlMod.SignedXml {
   def this(node: Document) = this()
   def this(node: Element) = this()

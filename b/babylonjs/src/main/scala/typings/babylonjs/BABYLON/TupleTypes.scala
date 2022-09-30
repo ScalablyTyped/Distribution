@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @hidden */
+/** @internal */
 trait TupleTypes[T] extends StObject {
   
   var `10`: js.Tuple10[T, T, T, T, T, T, T, T, T, T]

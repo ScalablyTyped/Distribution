@@ -55,7 +55,7 @@ trait BuyQuantity extends StObject {
     *   0 - 米大师正式环境
     *   1 - 米大师沙箱环境
     */
-  var env: js.UndefOr[typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`] = js.undefined
+  var env: js.UndefOr[typings.wegameApi.wegameApiInts.`0` | typings.wegameApi.wegameApiInts.`1`] = js.undefined
   
   /**
     * @param res.errCode 有如下值：
@@ -121,7 +121,7 @@ object BuyQuantity {
     
     inline def setCurrencyType(value: CNY): Self = StObject.set(x, "currencyType", value.asInstanceOf[js.Any])
     
-    inline def setEnv(value: typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: typings.wegameApi.wegameApiInts.`0` | typings.wegameApi.wegameApiInts.`1`): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     

@@ -12,15 +12,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/workflow-call relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 @JSImport("mendixmodelsdk", "microflows.WorkflowCallAction")
 @js.native
-class WorkflowCallAction protected ()
+open class WorkflowCallAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.WorkflowCallAction {
   def this(
     model: AbstractModel,
@@ -51,7 +50,7 @@ object WorkflowCallAction {
     * of the parent ActionActivity element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.WorkflowCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.WorkflowCallAction]

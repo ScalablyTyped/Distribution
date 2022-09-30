@@ -13,12 +13,7 @@ object libTypesMod {
   
   type AcceptedFilters[T] = String | FilterFunction[T] | T | Cheerio[T]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.cheerio.libTypesMod.LowercaseLetters
-    - typings.std.Uppercase[typings.cheerio.libTypesMod.LowercaseLetters]
-    - typings.cheerio.cheerioStrings.$LeftcurlybracketnumberRightcurlybracket
-  */
-  type AlphaNumeric = _AlphaNumeric | Uppercase[LowercaseLetters]
+  type AlphaNumeric = LowercaseLetters | Uppercase[LowercaseLetters] | (/* template literal string: ${number} */ String)
   
   type BasicAcceptedElems[T /* <: AnyNode */] = Cheerio[T] | js.Array[T] | T | String
   
@@ -52,9 +47,7 @@ object libTypesMod {
     - typings.cheerio.cheerioStrings.y
     - typings.cheerio.cheerioStrings.z
   */
-  trait LowercaseLetters
-    extends StObject
-       with _AlphaNumeric
+  trait LowercaseLetters extends StObject
   object LowercaseLetters {
     
     inline def a: typings.cheerio.cheerioStrings.a = "a".asInstanceOf[typings.cheerio.cheerioStrings.a]
@@ -140,17 +133,5 @@ object libTypesMod {
     inline def `[`: typings.cheerio.cheerioStrings.`[` = "[".asInstanceOf[typings.cheerio.cheerioStrings.`[`]
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.cheerio.cheerioStrings.DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket
-    - typings.cheerio.cheerioStrings.DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket
-  */
-  trait SelectorType extends StObject
-  object SelectorType {
-    
-    inline def DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket: typings.cheerio.cheerioStrings.DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket = "${AlphaNumeric}${string}".asInstanceOf[typings.cheerio.cheerioStrings.DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket]
-    
-    inline def DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket: typings.cheerio.cheerioStrings.DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket = "${SelectorSpecial}${AlphaNumeric}${string}".asInstanceOf[typings.cheerio.cheerioStrings.DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket]
-  }
-  
-  trait _AlphaNumeric extends StObject
+  type SelectorType = /* template literal string: ${SelectorSpecial}${AlphaNumeric}${string} */ String
 }

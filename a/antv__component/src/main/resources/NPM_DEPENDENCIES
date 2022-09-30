@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/component" : "0.8.28"
+      "@antv/component" : "0.8.32"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/component" : "0.8.28"
+      "@antv/component" : "0.8.32"
     }
   ],
   "compile-devDependencies" : [

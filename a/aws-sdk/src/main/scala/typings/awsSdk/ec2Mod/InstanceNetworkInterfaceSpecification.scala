@@ -47,7 +47,7 @@ trait InstanceNetworkInterfaceSpecification extends StObject {
   var Ipv4PrefixCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * One or more IPv4 delegated prefixes to be assigned to the network interface. You cannot use this option if you use the Ipv4PrefixCount option.
+    * The IPv4 delegated prefixes to be assigned to the network interface. You cannot use this option if you use the Ipv4PrefixCount option.
     */
   var Ipv4Prefixes: js.UndefOr[Ipv4PrefixList] = js.undefined
   
@@ -57,7 +57,7 @@ trait InstanceNetworkInterfaceSpecification extends StObject {
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * One or more IPv6 addresses to assign to the network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch.
+    * The IPv6 addresses to assign to the network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch.
     */
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
   
@@ -67,7 +67,7 @@ trait InstanceNetworkInterfaceSpecification extends StObject {
   var Ipv6PrefixCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * One or more IPv6 delegated prefixes to be assigned to the network interface. You cannot use this option if you use the Ipv6PrefixCount option.
+    * The IPv6 delegated prefixes to be assigned to the network interface. You cannot use this option if you use the Ipv6PrefixCount option.
     */
   var Ipv6Prefixes: js.UndefOr[Ipv6PrefixList] = js.undefined
   
@@ -87,7 +87,7 @@ trait InstanceNetworkInterfaceSpecification extends StObject {
   var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more private IPv4 addresses to assign to the network interface. Only one private IPv4 address can be designated as primary. You cannot specify this option if you're launching more than one instance in a RunInstances request.
+    * The private IPv4 addresses to assign to the network interface. Only one private IPv4 address can be designated as primary. You cannot specify this option if you're launching more than one instance in a RunInstances request.
     */
   var PrivateIpAddresses: js.UndefOr[PrivateIpAddressSpecificationList] = js.undefined
   

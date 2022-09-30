@@ -3,16 +3,15 @@ package typings.umzug
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
+import typings.bson.mod.Document
 import typings.mongodb.mod.Collection
 import typings.mongodb.mod.Db
-import typings.mongodb.mod.DefaultSchema
 import typings.node.eventsMod.EventEmitter
 import typings.sequelize.mod.DataTypeAbstract
 import typings.sequelize.mod.Model
 import typings.sequelize.mod.Sequelize
-import typings.std.RegExp
 import typings.umzug.anon.Down
-import typings.umzug.umzugNumbers.`0`
+import typings.umzug.umzugInts.`0`
 import typings.umzug.umzugStrings.json
 import typings.umzug.umzugStrings.migrated
 import typings.umzug.umzugStrings.migrating
@@ -29,7 +28,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("umzug", JSImport.Namespace)
   @js.native
-  class ^ () extends Umzug {
+  open class ^ () extends Umzug {
     def this(options: UmzugOptions) = this()
   }
   @JSImport("umzug", JSImport.Namespace)
@@ -81,7 +80,7 @@ object mod extends Shortcut {
       
       inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
       
-      inline def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+      inline def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value*))
     }
   }
   
@@ -116,24 +115,24 @@ object mod extends Shortcut {
   
   trait Migration extends StObject {
     
-    def down(): js.Promise[js.Any]
+    def down(): js.Promise[Any]
     
     var file: String
     
-    def migration(): js.Promise[js.Any]
+    def migration(): js.Promise[Any]
     
     def testFileName(needle: String): Boolean
     
-    def up(): js.Promise[js.Any]
+    def up(): js.Promise[Any]
   }
   object Migration {
     
     inline def apply(
-      down: () => js.Promise[js.Any],
+      down: () => js.Promise[Any],
       file: String,
-      migration: () => js.Promise[js.Any],
+      migration: () => js.Promise[Any],
       testFileName: String => Boolean,
-      up: () => js.Promise[js.Any]
+      up: () => js.Promise[Any]
     ): Migration = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction0(down), file = file.asInstanceOf[js.Any], migration = js.Any.fromFunction0(migration), testFileName = js.Any.fromFunction1(testFileName), up = js.Any.fromFunction0(up))
       __obj.asInstanceOf[Migration]
@@ -141,15 +140,15 @@ object mod extends Shortcut {
     
     extension [Self <: Migration](x: Self) {
       
-      inline def setDown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
+      inline def setDown(value: () => js.Promise[Any]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      inline def setMigration(value: () => js.Promise[js.Any]): Self = StObject.set(x, "migration", js.Any.fromFunction0(value))
+      inline def setMigration(value: () => js.Promise[Any]): Self = StObject.set(x, "migration", js.Any.fromFunction0(value))
       
       inline def setTestFileName(value: String => Boolean): Self = StObject.set(x, "testFileName", js.Any.fromFunction1(value))
       
-      inline def setUp(value: () => js.Promise[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
+      inline def setUp(value: () => js.Promise[Any]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
     }
   }
   
@@ -162,12 +161,12 @@ object mod extends Shortcut {
   object MigrationDefinitionWithName {
     
     inline def apply(
-      down: () => js.Promise[js.Any],
+      down: () => js.Promise[Any],
       file: String,
-      migration: () => js.Promise[js.Any],
+      migration: () => js.Promise[Any],
       name: String,
       testFileName: String => Boolean,
-      up: () => js.Promise[js.Any]
+      up: () => js.Promise[Any]
     ): MigrationDefinitionWithName = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction0(down), file = file.asInstanceOf[js.Any], migration = js.Any.fromFunction0(migration), name = name.asInstanceOf[js.Any], testFileName = js.Any.fromFunction1(testFileName), up = js.Any.fromFunction0(up))
       __obj.asInstanceOf[MigrationDefinitionWithName]
@@ -195,19 +194,19 @@ object mod extends Shortcut {
       * The params that gets passed to the migrations.
       * Might be an array or a synchronous function which returns an array.
       */
-    var params: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var params: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** The path to the migrations directory. */
     var path: js.UndefOr[String] = js.undefined
     
     /** The pattern that determines whether or not a file is a migration. */
-    var pattern: js.UndefOr[RegExp] = js.undefined
+    var pattern: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * A function that receives and returns the to be executed function.
       * This can be used to modify the function.
       */
-    var wrap: js.UndefOr[js.Function1[/* fn */ js.Any, js.Any]] = js.undefined
+    var wrap: js.UndefOr[js.Function1[/* fn */ Any, Any]] = js.undefined
   }
   object MigrationOptions {
     
@@ -222,21 +221,21 @@ object mod extends Shortcut {
       
       inline def setCustomResolverUndefined: Self = StObject.set(x, "customResolver", js.undefined)
       
-      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setWrap(value: /* fn */ js.Any => js.Any): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
+      inline def setWrap(value: /* fn */ Any => Any): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
       
       inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
@@ -250,7 +249,7 @@ object mod extends Shortcut {
       * The to be used Mongo collection cursor.
       * Defaults to collection created from collectionName attribute.
       */
-    var collection: js.UndefOr[Collection[DefaultSchema]] = js.undefined
+    var collection: js.UndefOr[Collection[Document]] = js.undefined
     
     /**
       * The name of the collection used by the connection.
@@ -276,7 +275,7 @@ object mod extends Shortcut {
     
     extension [Self <: MongoDBStorageOptions](x: Self) {
       
-      inline def setCollection(value: Collection[DefaultSchema]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Collection[Document]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
       inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
       
@@ -311,7 +310,7 @@ object mod extends Shortcut {
       * Must have column name matching `columnName` option
       * Optional of `sequelize` is passed.
       */
-    var model: js.UndefOr[Model[js.Any, js.Any, js.Any]] = js.undefined
+    var model: js.UndefOr[Model[Any, Any, Any]] = js.undefined
     
     /**
       * The name of the to be used model.
@@ -350,7 +349,7 @@ object mod extends Shortcut {
       
       inline def setColumnType(value: DataTypeAbstract): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
       
-      inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Model[Any, Any, Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       
@@ -416,22 +415,11 @@ object mod extends Shortcut {
   @js.native
   trait Umzug extends EventEmitter {
     
-    @JSName("addListener")
-    def addListener_migrated(eventName: migrated): this.type = js.native
-    @JSName("addListener")
-    def addListener_migrated(eventName: migrated, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_migrating(eventName: migrating): this.type = js.native
-    @JSName("addListener")
-    def addListener_migrating(eventName: migrating, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_reverted(eventName: reverted): this.type = js.native
-    @JSName("addListener")
-    def addListener_reverted(eventName: reverted, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_reverting(eventName: reverting): this.type = js.native
-    @JSName("addListener")
-    def addListener_reverting(eventName: reverting, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
+    def addListener(eventName: migrating | reverting | migrated | reverted): this.type = js.native
+    def addListener(
+      eventName: migrating | reverting | migrated | reverted,
+      cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]
+    ): this.type = js.native
     
     /**
       * The down method can be used to revert the last executed migration.
@@ -454,44 +442,22 @@ object mod extends Shortcut {
       */
     def executed(): js.Promise[js.Array[Migration]] = js.native
     
-    @JSName("on")
-    def on_migrated(eventName: migrated): this.type = js.native
-    @JSName("on")
-    def on_migrated(eventName: migrated, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("on")
-    def on_migrating(eventName: migrating): this.type = js.native
-    @JSName("on")
-    def on_migrating(eventName: migrating, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("on")
-    def on_reverted(eventName: reverted): this.type = js.native
-    @JSName("on")
-    def on_reverted(eventName: reverted, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("on")
-    def on_reverting(eventName: reverting): this.type = js.native
-    @JSName("on")
-    def on_reverting(eventName: reverting, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
+    def on(eventName: migrating | reverting | migrated | reverted): this.type = js.native
+    def on(
+      eventName: migrating | reverting | migrated | reverted,
+      cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]
+    ): this.type = js.native
     
     /**
       * You can get a list of pending/not yet executed migrations like this:
       */
     def pending(): js.Promise[js.Array[Migration]] = js.native
     
-    @JSName("removeListener")
-    def removeListener_migrated(eventName: migrated): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_migrated(eventName: migrated, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_migrating(eventName: migrating): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_migrating(eventName: migrating, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_reverted(eventName: reverted): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_reverted(eventName: reverted, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_reverting(eventName: reverting): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_reverting(eventName: reverting, cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]): this.type = js.native
+    def removeListener(eventName: migrating | reverting | migrated | reverted): this.type = js.native
+    def removeListener(
+      eventName: migrating | reverting | migrated | reverted,
+      cb: js.Function2[/* name */ String, /* migration */ Migration, Unit]
+    ): this.type = js.native
     
     /**
       * The up method can be used to execute all pending migrations.
@@ -557,7 +523,7 @@ object mod extends Shortcut {
       
       inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
       
-      inline def setMigrationsVarargs(value: Migration*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+      inline def setMigrationsVarargs(value: Migration*): Self = StObject.set(x, "migrations", js.Array(value*))
       
       inline def setStorage(value: json | sequelize | mongodb | Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
@@ -580,7 +546,7 @@ object mod extends Shortcut {
        with Instantiable1[/* options */ UmzugOptions, Umzug] {
     
     def migrationsList(migrations: js.Array[MigrationDefinitionWithName]): js.Array[Migration] = js.native
-    def migrationsList(migrations: js.Array[MigrationDefinitionWithName], parameters: js.Array[js.Any]): js.Array[Migration] = js.native
+    def migrationsList(migrations: js.Array[MigrationDefinitionWithName], parameters: js.Array[Any]): js.Array[Migration] = js.native
   }
   
   trait UpDownMigrationsOptions extends StObject {
@@ -602,7 +568,7 @@ object mod extends Shortcut {
       
       inline def setMigrations(value: js.Array[String]): Self = StObject.set(x, "migrations", value.asInstanceOf[js.Any])
       
-      inline def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+      inline def setMigrationsVarargs(value: String*): Self = StObject.set(x, "migrations", js.Array(value*))
     }
   }
   

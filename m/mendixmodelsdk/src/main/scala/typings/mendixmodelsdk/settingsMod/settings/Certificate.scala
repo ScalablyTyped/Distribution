@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate")
+@JSImport("mendixmodelsdk/src/gen/settings", "settings.Certificate")
 @js.native
-class Certificate protected () extends Element[IModel] {
+open class Certificate protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,7 @@ class Certificate protected () extends Element[IModel] {
 }
 object Certificate {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.Certificate")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object Certificate {
   inline def createIn(container: CertificateSettings): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Certificate]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.Certificate.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.Certificate.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

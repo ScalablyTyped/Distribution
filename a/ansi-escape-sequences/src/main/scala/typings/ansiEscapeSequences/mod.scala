@@ -1,9 +1,9 @@
 package typings.ansiEscapeSequences
 
-import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`0`
-import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`1`
-import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`2`
-import typings.ansiEscapeSequences.ansiEscapeSequencesNumbers.`3`
+import typings.ansiEscapeSequences.ansiEscapeSequencesInts.`0`
+import typings.ansiEscapeSequences.ansiEscapeSequencesInts.`1`
+import typings.ansiEscapeSequences.ansiEscapeSequencesInts.`2`
+import typings.ansiEscapeSequences.ansiEscapeSequencesInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

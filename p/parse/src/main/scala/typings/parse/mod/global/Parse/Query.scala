@@ -14,12 +14,13 @@ import typings.parse.mod.global.Parse.Query.FindOptions
 import typings.parse.mod.global.Parse.Query.FirstOptions
 import typings.parse.mod.global.Parse.Query.FullTextOptions
 import typings.parse.mod.global.Parse.Query.GetOptions
-import typings.parse.parseNumbers.`-1`
-import typings.parse.parseNumbers.`1`
+import typings.parse.parseInts.`-1`
+import typings.parse.parseInts.`1`
 import typings.parse.parseStrings.createdAt
 import typings.parse.parseStrings.objectId
 import typings.parse.parseStrings.updatedAt
 import typings.std.Extract
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -266,11 +267,11 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   
   def doesNotMatchQuery[U /* <: Object[Attributes] */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, query: Query[U]): this.type = js.native
   
-  def each(callback: js.Function1[/* obj */ T, js.Thenable[Unit] | Unit]): js.Promise[Unit] = js.native
-  def each(callback: js.Function1[/* obj */ T, js.Thenable[Unit] | Unit], options: BatchOptions): js.Promise[Unit] = js.native
+  def each(callback: js.Function1[/* obj */ T, PromiseLike[Unit] | Unit]): js.Promise[Unit] = js.native
+  def each(callback: js.Function1[/* obj */ T, PromiseLike[Unit] | Unit], options: BatchOptions): js.Promise[Unit] = js.native
   
-  def eachBatch(callback: js.Function1[/* objs */ js.Array[T], js.Thenable[Unit] | Unit]): js.Promise[Unit] = js.native
-  def eachBatch(callback: js.Function1[/* objs */ js.Array[T], js.Thenable[Unit] | Unit], options: BatchOptions): js.Promise[Unit] = js.native
+  def eachBatch(callback: js.Function1[/* objs */ js.Array[T], PromiseLike[Unit] | Unit]): js.Promise[Unit] = js.native
+  def eachBatch(callback: js.Function1[/* objs */ js.Array[T], PromiseLike[Unit] | Unit], options: BatchOptions): js.Promise[Unit] = js.native
   
   def endsWith[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, suffix: String): this.type = js.native
   @JSName("endsWith")
@@ -326,7 +327,7 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
       /* currentObject */ T, 
       /* index */ Double, 
       /* query */ Query[Object[Attributes]], 
-      js.Thenable[Boolean] | Boolean
+      PromiseLike[Boolean] | Boolean
     ]
   ): js.Promise[js.Array[T]] = js.native
   def filter(
@@ -334,7 +335,7 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
       /* currentObject */ T, 
       /* index */ Double, 
       /* query */ Query[Object[Attributes]], 
-      js.Thenable[Boolean] | Boolean
+      PromiseLike[Boolean] | Boolean
     ],
     options: BatchOptions
   ): js.Promise[js.Array[T]] = js.native
@@ -476,7 +477,7 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
       /* currentObject */ T, 
       /* index */ Double, 
       /* query */ Query[Object[Attributes]], 
-      js.Thenable[U] | U
+      PromiseLike[U] | U
     ]
   ): js.Promise[js.Array[U]] = js.native
   def map[U](
@@ -484,7 +485,7 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
       /* currentObject */ T, 
       /* index */ Double, 
       /* query */ Query[Object[Attributes]], 
-      js.Thenable[U] | U
+      PromiseLike[U] | U
     ],
     options: BatchOptions
   ): js.Promise[js.Array[U]] = js.native
@@ -580,19 +581,19 @@ open class Query[T /* <: Object[Attributes] */] protected () extends StObject {
   def polygonContains_updatedAt(key: updatedAt, point: GeoPoint): this.type = js.native
   
   def reduce(
-    callback: js.Function3[/* accumulator */ T, /* currentObject */ T, /* index */ Double, js.Thenable[T] | T]
+    callback: js.Function3[/* accumulator */ T, /* currentObject */ T, /* index */ Double, PromiseLike[T] | T]
   ): js.Promise[T] = js.native
   def reduce(
-    callback: js.Function3[/* accumulator */ T, /* currentObject */ T, /* index */ Double, js.Thenable[T] | T],
+    callback: js.Function3[/* accumulator */ T, /* currentObject */ T, /* index */ Double, PromiseLike[T] | T],
     initialValue: Unit,
     options: BatchOptions
   ): js.Promise[T] = js.native
   def reduce[U](
-    callback: js.Function3[/* accumulator */ U, /* currentObject */ T, /* index */ Double, js.Thenable[U] | U],
+    callback: js.Function3[/* accumulator */ U, /* currentObject */ T, /* index */ Double, PromiseLike[U] | U],
     initialValue: U
   ): js.Promise[U] = js.native
   def reduce[U](
-    callback: js.Function3[/* accumulator */ U, /* currentObject */ T, /* index */ Double, js.Thenable[U] | U],
+    callback: js.Function3[/* accumulator */ U, /* currentObject */ T, /* index */ Double, PromiseLike[U] | U],
     initialValue: U,
     options: BatchOptions
   ): js.Promise[U] = js.native

@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("ant-design-pro", "AvatarList")
   @js.native
-  class AvatarList () extends default
+  open class AvatarList () extends default
   /* static members */
   object AvatarList {
     
@@ -38,12 +38,12 @@ object mod {
   
   @JSImport("ant-design-pro", "CountDown")
   @js.native
-  class CountDown ()
+  open class CountDown ()
     extends typings.antDesignPro.countDownMod.default
   
   @JSImport("ant-design-pro", "DescriptionList")
   @js.native
-  class DescriptionList ()
+  open class DescriptionList ()
     extends typings.antDesignPro.descriptionListMod.default
   /* static members */
   object DescriptionList {
@@ -60,37 +60,37 @@ object mod {
   
   @JSImport("ant-design-pro", "Ellipsis")
   @js.native
-  class Ellipsis ()
+  open class Ellipsis ()
     extends typings.antDesignPro.ellipsisMod.default
   
   @JSImport("ant-design-pro", "Exception")
   @js.native
-  class Exception ()
+  open class Exception ()
     extends typings.antDesignPro.exceptionMod.default
   
   @JSImport("ant-design-pro", "FooterToolbar")
   @js.native
-  class FooterToolbar ()
+  open class FooterToolbar ()
     extends typings.antDesignPro.footerToolbarMod.default
   
   @JSImport("ant-design-pro", "GlobalFooter")
   @js.native
-  class GlobalFooter ()
+  open class GlobalFooter ()
     extends typings.antDesignPro.globalFooterMod.default
   
   @JSImport("ant-design-pro", "HeaderDropdown")
   @js.native
-  class HeaderDropdown ()
+  open class HeaderDropdown ()
     extends typings.antDesignPro.headerDropdownMod.default
   
   @JSImport("ant-design-pro", "HeaderSearch")
   @js.native
-  class HeaderSearch ()
+  open class HeaderSearch ()
     extends typings.antDesignPro.headerSearchMod.default
   
   @JSImport("ant-design-pro", "Login")
   @js.native
-  class Login ()
+  open class Login ()
     extends typings.antDesignPro.loginMod.default
   object Login {
     
@@ -119,15 +119,15 @@ object mod {
     /* static member */
     @JSImport("ant-design-pro", "Login.Submit")
     @js.native
-    def Submit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any = js.native
+    def Submit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ Any = js.native
     inline def Submit_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Submit")(x.asInstanceOf[js.Any])
     
     /* was `typeof LoginTab` */
     @JSImport("ant-design-pro", "Login.Tab")
     @js.native
-    class Tab ()
+    open class Tab ()
       extends typings.antDesignPro.loginMod.default.Tab
     
     /* static member */
@@ -139,7 +139,7 @@ object mod {
   
   @JSImport("ant-design-pro", "NoticeIcon")
   @js.native
-  class NoticeIcon ()
+  open class NoticeIcon ()
     extends typings.antDesignPro.noticeIconMod.default
   /* static members */
   object NoticeIcon {
@@ -156,22 +156,22 @@ object mod {
   
   @JSImport("ant-design-pro", "NumberInfo")
   @js.native
-  class NumberInfo ()
+  open class NumberInfo ()
     extends typings.antDesignPro.numberInfoMod.default
   
   @JSImport("ant-design-pro", "PageHeader")
   @js.native
-  class PageHeader ()
+  open class PageHeader ()
     extends typings.antDesignPro.pageHeaderMod.default
   
   @JSImport("ant-design-pro", "Result")
   @js.native
-  class Result ()
+  open class Result ()
     extends typings.antDesignPro.resultMod.default
   
   @JSImport("ant-design-pro", "TagSelect")
   @js.native
-  class TagSelect ()
+  open class TagSelect ()
     extends typings.antDesignPro.tagSelectMod.default
   /* static members */
   object TagSelect {
@@ -188,6 +188,6 @@ object mod {
   
   @JSImport("ant-design-pro", "Trend")
   @js.native
-  class Trend ()
+  open class Trend ()
     extends typings.antDesignPro.trendMod.default
 }

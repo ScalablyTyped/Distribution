@@ -23,7 +23,7 @@ trait LoadURLOptions extends StObject {
     */
   var httpReferrer: js.UndefOr[String | Referrer] = js.undefined
   
-  var postData: js.UndefOr[js.Array[UploadBlob | UploadFile | UploadRawData]] = js.undefined
+  var postData: js.UndefOr[js.Array[UploadRawData | UploadFile]] = js.undefined
   
   /**
     * A user agent originating the request.
@@ -51,11 +51,11 @@ object LoadURLOptions {
     
     inline def setHttpReferrerUndefined: Self = StObject.set(x, "httpReferrer", js.undefined)
     
-    inline def setPostData(value: js.Array[UploadBlob | UploadFile | UploadRawData]): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: js.Array[UploadRawData | UploadFile]): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
     inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
-    inline def setPostDataVarargs(value: (UploadBlob | UploadFile | UploadRawData)*): Self = StObject.set(x, "postData", js.Array(value :_*))
+    inline def setPostDataVarargs(value: (UploadRawData | UploadFile)*): Self = StObject.set(x, "postData", js.Array(value*))
     
     inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     

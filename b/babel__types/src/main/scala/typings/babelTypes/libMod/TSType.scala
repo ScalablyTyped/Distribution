@@ -5,254 +5,254 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.babelTypes.libMod.TSAnyKeyword
-  - typings.babelTypes.libMod.TSBooleanKeyword
-  - typings.babelTypes.libMod.TSBigIntKeyword
-  - typings.babelTypes.libMod.TSIntrinsicKeyword
-  - typings.babelTypes.libMod.TSNeverKeyword
-  - typings.babelTypes.libMod.TSNullKeyword
-  - typings.babelTypes.libMod.TSNumberKeyword
-  - typings.babelTypes.libMod.TSObjectKeyword
-  - typings.babelTypes.libMod.TSStringKeyword
-  - typings.babelTypes.libMod.TSSymbolKeyword
-  - typings.babelTypes.libMod.TSUndefinedKeyword
-  - typings.babelTypes.libMod.TSUnknownKeyword
-  - typings.babelTypes.libMod.TSVoidKeyword
-  - typings.babelTypes.libMod.TSThisType
-  - typings.babelTypes.libMod.TSFunctionType
-  - typings.babelTypes.libMod.TSConstructorType
-  - typings.babelTypes.libMod.TSTypeReference
-  - typings.babelTypes.libMod.TSTypePredicate
-  - typings.babelTypes.libMod.TSTypeQuery
-  - typings.babelTypes.libMod.TSTypeLiteral
-  - typings.babelTypes.libMod.TSArrayType
-  - typings.babelTypes.libMod.TSTupleType
-  - typings.babelTypes.libMod.TSOptionalType
-  - typings.babelTypes.libMod.TSRestType
-  - typings.babelTypes.libMod.TSUnionType
-  - typings.babelTypes.libMod.TSIntersectionType
-  - typings.babelTypes.libMod.TSConditionalType
-  - typings.babelTypes.libMod.TSInferType
-  - typings.babelTypes.libMod.TSParenthesizedType
-  - typings.babelTypes.libMod.TSTypeOperator
-  - typings.babelTypes.libMod.TSIndexedAccessType
-  - typings.babelTypes.libMod.TSMappedType
-  - typings.babelTypes.libMod.TSLiteralType
-  - typings.babelTypes.libMod.TSExpressionWithTypeArguments
-  - typings.babelTypes.libMod.TSImportType
+  - typings.babelTypes.libMod.TSAnyKeyword__
+  - typings.babelTypes.libMod.TSBooleanKeyword__
+  - typings.babelTypes.libMod.TSBigIntKeyword__
+  - typings.babelTypes.libMod.TSIntrinsicKeyword__
+  - typings.babelTypes.libMod.TSNeverKeyword__
+  - typings.babelTypes.libMod.TSNullKeyword__
+  - typings.babelTypes.libMod.TSNumberKeyword__
+  - typings.babelTypes.libMod.TSObjectKeyword__
+  - typings.babelTypes.libMod.TSStringKeyword__
+  - typings.babelTypes.libMod.TSSymbolKeyword__
+  - typings.babelTypes.libMod.TSUndefinedKeyword__
+  - typings.babelTypes.libMod.TSUnknownKeyword__
+  - typings.babelTypes.libMod.TSVoidKeyword__
+  - typings.babelTypes.libMod.TSThisType__
+  - typings.babelTypes.libMod.TSFunctionType__
+  - typings.babelTypes.libMod.TSConstructorType__
+  - typings.babelTypes.libMod.TSTypeReference__
+  - typings.babelTypes.libMod.TSTypePredicate__
+  - typings.babelTypes.libMod.TSTypeQuery__
+  - typings.babelTypes.libMod.TSTypeLiteral__
+  - typings.babelTypes.libMod.TSArrayType__
+  - typings.babelTypes.libMod.TSTupleType__
+  - typings.babelTypes.libMod.TSOptionalType__
+  - typings.babelTypes.libMod.TSRestType__
+  - typings.babelTypes.libMod.TSUnionType__
+  - typings.babelTypes.libMod.TSIntersectionType__
+  - typings.babelTypes.libMod.TSConditionalType__
+  - typings.babelTypes.libMod.TSInferType__
+  - typings.babelTypes.libMod.TSParenthesizedType__
+  - typings.babelTypes.libMod.TSTypeOperator__
+  - typings.babelTypes.libMod.TSIndexedAccessType__
+  - typings.babelTypes.libMod.TSMappedType__
+  - typings.babelTypes.libMod.TSLiteralType__
+  - typings.babelTypes.libMod.TSExpressionWithTypeArguments__
+  - typings.babelTypes.libMod.TSImportType__
 */
 trait TSType extends StObject
 object TSType {
   
-  inline def TSAnyKeyword(): typings.babelTypes.libMod.TSAnyKeyword = {
+  inline def TSAnyKeyword__(): typings.babelTypes.libMod.TSAnyKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSAnyKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSAnyKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSAnyKeyword__]
   }
   
-  inline def TSArrayType(elementType: TSType): typings.babelTypes.libMod.TSArrayType = {
+  inline def TSArrayType__(elementType: TSType): typings.babelTypes.libMod.TSArrayType__ = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSArrayType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSArrayType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSArrayType__]
   }
   
-  inline def TSBigIntKeyword(): typings.babelTypes.libMod.TSBigIntKeyword = {
+  inline def TSBigIntKeyword__(): typings.babelTypes.libMod.TSBigIntKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSBigIntKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSBigIntKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSBigIntKeyword__]
   }
   
-  inline def TSBooleanKeyword(): typings.babelTypes.libMod.TSBooleanKeyword = {
+  inline def TSBooleanKeyword__(): typings.babelTypes.libMod.TSBooleanKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSBooleanKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSBooleanKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSBooleanKeyword__]
   }
   
-  inline def TSConditionalType(checkType: TSType, extendsType: TSType, falseType: TSType, trueType: TSType): typings.babelTypes.libMod.TSConditionalType = {
+  inline def TSConditionalType__(checkType: TSType, extendsType: TSType, falseType: TSType, trueType: TSType): typings.babelTypes.libMod.TSConditionalType__ = {
     val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], falseType = falseType.asInstanceOf[js.Any], trueType = trueType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSConditionalType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSConditionalType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSConditionalType__]
   }
   
-  inline def TSConstructorType(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.libMod.TSConstructorType = {
+  inline def TSConstructorType__(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.libMod.TSConstructorType__ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSConstructorType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSConstructorType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSConstructorType__]
   }
   
-  inline def TSExpressionWithTypeArguments(expression: TSEntityName): typings.babelTypes.libMod.TSExpressionWithTypeArguments = {
+  inline def TSExpressionWithTypeArguments__(expression: TSEntityName): typings.babelTypes.libMod.TSExpressionWithTypeArguments__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSExpressionWithTypeArguments")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSExpressionWithTypeArguments]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSExpressionWithTypeArguments__]
   }
   
-  inline def TSFunctionType(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.libMod.TSFunctionType = {
+  inline def TSFunctionType__(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.libMod.TSFunctionType__ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSFunctionType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSFunctionType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSFunctionType__]
   }
   
-  inline def TSImportType(argument: StringLiteral_): typings.babelTypes.libMod.TSImportType = {
+  inline def TSImportType__(argument: StringLiteral_): typings.babelTypes.libMod.TSImportType__ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSImportType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSImportType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSImportType__]
   }
   
-  inline def TSIndexedAccessType(indexType: TSType, objectType: TSType): typings.babelTypes.libMod.TSIndexedAccessType = {
+  inline def TSIndexedAccessType__(indexType: TSType, objectType: TSType): typings.babelTypes.libMod.TSIndexedAccessType__ = {
     val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSIndexedAccessType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSIndexedAccessType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSIndexedAccessType__]
   }
   
-  inline def TSInferType(typeParameter: TSTypeParameter): typings.babelTypes.libMod.TSInferType = {
+  inline def TSInferType__(typeParameter: TSTypeParameter__): typings.babelTypes.libMod.TSInferType__ = {
     val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSInferType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSInferType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSInferType__]
   }
   
-  inline def TSIntersectionType(types: js.Array[TSType]): typings.babelTypes.libMod.TSIntersectionType = {
+  inline def TSIntersectionType__(types: js.Array[TSType]): typings.babelTypes.libMod.TSIntersectionType__ = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSIntersectionType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSIntersectionType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSIntersectionType__]
   }
   
-  inline def TSIntrinsicKeyword(): typings.babelTypes.libMod.TSIntrinsicKeyword = {
+  inline def TSIntrinsicKeyword__(): typings.babelTypes.libMod.TSIntrinsicKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSIntrinsicKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSIntrinsicKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSIntrinsicKeyword__]
   }
   
-  inline def TSLiteralType(
+  inline def TSLiteralType__(
     literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ | TemplateLiteral_ | UnaryExpression_
-  ): typings.babelTypes.libMod.TSLiteralType = {
+  ): typings.babelTypes.libMod.TSLiteralType__ = {
     val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSLiteralType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSLiteralType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSLiteralType__]
   }
   
-  inline def TSMappedType(typeParameter: TSTypeParameter): typings.babelTypes.libMod.TSMappedType = {
+  inline def TSMappedType__(typeParameter: TSTypeParameter__): typings.babelTypes.libMod.TSMappedType__ = {
     val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSMappedType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSMappedType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSMappedType__]
   }
   
-  inline def TSNeverKeyword(): typings.babelTypes.libMod.TSNeverKeyword = {
+  inline def TSNeverKeyword__(): typings.babelTypes.libMod.TSNeverKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSNeverKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSNeverKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSNeverKeyword__]
   }
   
-  inline def TSNullKeyword(): typings.babelTypes.libMod.TSNullKeyword = {
+  inline def TSNullKeyword__(): typings.babelTypes.libMod.TSNullKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSNullKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSNullKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSNullKeyword__]
   }
   
-  inline def TSNumberKeyword(): typings.babelTypes.libMod.TSNumberKeyword = {
+  inline def TSNumberKeyword__(): typings.babelTypes.libMod.TSNumberKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSNumberKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSNumberKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSNumberKeyword__]
   }
   
-  inline def TSObjectKeyword(): typings.babelTypes.libMod.TSObjectKeyword = {
+  inline def TSObjectKeyword__(): typings.babelTypes.libMod.TSObjectKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSObjectKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSObjectKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSObjectKeyword__]
   }
   
-  inline def TSOptionalType(typeAnnotation: TSType): typings.babelTypes.libMod.TSOptionalType = {
+  inline def TSOptionalType__(typeAnnotation: TSType): typings.babelTypes.libMod.TSOptionalType__ = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSOptionalType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSOptionalType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSOptionalType__]
   }
   
-  inline def TSParenthesizedType(typeAnnotation: TSType): typings.babelTypes.libMod.TSParenthesizedType = {
+  inline def TSParenthesizedType__(typeAnnotation: TSType): typings.babelTypes.libMod.TSParenthesizedType__ = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSParenthesizedType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSParenthesizedType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSParenthesizedType__]
   }
   
-  inline def TSRestType(typeAnnotation: TSType): typings.babelTypes.libMod.TSRestType = {
+  inline def TSRestType__(typeAnnotation: TSType): typings.babelTypes.libMod.TSRestType__ = {
     val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSRestType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSRestType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSRestType__]
   }
   
-  inline def TSStringKeyword(): typings.babelTypes.libMod.TSStringKeyword = {
+  inline def TSStringKeyword__(): typings.babelTypes.libMod.TSStringKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSStringKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSStringKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSStringKeyword__]
   }
   
-  inline def TSSymbolKeyword(): typings.babelTypes.libMod.TSSymbolKeyword = {
+  inline def TSSymbolKeyword__(): typings.babelTypes.libMod.TSSymbolKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSSymbolKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSSymbolKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSSymbolKeyword__]
   }
   
-  inline def TSThisType(): typings.babelTypes.libMod.TSThisType = {
+  inline def TSThisType__(): typings.babelTypes.libMod.TSThisType__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSThisType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSThisType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSThisType__]
   }
   
-  inline def TSTupleType(elementTypes: js.Array[TSType | TSNamedTupleMember]): typings.babelTypes.libMod.TSTupleType = {
+  inline def TSTupleType__(elementTypes: js.Array[TSType | TSNamedTupleMember__]): typings.babelTypes.libMod.TSTupleType__ = {
     val __obj = js.Dynamic.literal(elementTypes = elementTypes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTupleType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTupleType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTupleType__]
   }
   
-  inline def TSTypeLiteral(members: js.Array[TSTypeElement]): typings.babelTypes.libMod.TSTypeLiteral = {
+  inline def TSTypeLiteral__(members: js.Array[TSTypeElement]): typings.babelTypes.libMod.TSTypeLiteral__ = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeLiteral")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeLiteral]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeLiteral__]
   }
   
-  inline def TSTypeOperator(operator: String, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeOperator = {
+  inline def TSTypeOperator__(operator: String, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeOperator__ = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeOperator")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeOperator]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeOperator__]
   }
   
-  inline def TSTypePredicate(parameterName: Identifier_ | TSThisType): typings.babelTypes.libMod.TSTypePredicate = {
+  inline def TSTypePredicate__(parameterName: Identifier_ | TSThisType__): typings.babelTypes.libMod.TSTypePredicate__ = {
     val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypePredicate")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypePredicate]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypePredicate__]
   }
   
-  inline def TSTypeQuery(exprName: TSEntityName | TSImportType): typings.babelTypes.libMod.TSTypeQuery = {
+  inline def TSTypeQuery__(exprName: TSEntityName | TSImportType__): typings.babelTypes.libMod.TSTypeQuery__ = {
     val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeQuery")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeQuery]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeQuery__]
   }
   
-  inline def TSTypeReference(typeName: TSEntityName): typings.babelTypes.libMod.TSTypeReference = {
+  inline def TSTypeReference__(typeName: TSEntityName): typings.babelTypes.libMod.TSTypeReference__ = {
     val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeReference")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeReference]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeReference__]
   }
   
-  inline def TSUndefinedKeyword(): typings.babelTypes.libMod.TSUndefinedKeyword = {
+  inline def TSUndefinedKeyword__(): typings.babelTypes.libMod.TSUndefinedKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSUndefinedKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSUndefinedKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSUndefinedKeyword__]
   }
   
-  inline def TSUnionType(types: js.Array[TSType]): typings.babelTypes.libMod.TSUnionType = {
+  inline def TSUnionType__(types: js.Array[TSType]): typings.babelTypes.libMod.TSUnionType__ = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSUnionType")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSUnionType]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSUnionType__]
   }
   
-  inline def TSUnknownKeyword(): typings.babelTypes.libMod.TSUnknownKeyword = {
+  inline def TSUnknownKeyword__(): typings.babelTypes.libMod.TSUnknownKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSUnknownKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSUnknownKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSUnknownKeyword__]
   }
   
-  inline def TSVoidKeyword(): typings.babelTypes.libMod.TSVoidKeyword = {
+  inline def TSVoidKeyword__(): typings.babelTypes.libMod.TSVoidKeyword__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("TSVoidKeyword")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSVoidKeyword]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSVoidKeyword__]
   }
 }

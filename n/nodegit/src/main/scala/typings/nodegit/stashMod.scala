@@ -1,14 +1,14 @@
 package typings.nodegit
 
 import typings.nodegit.checkoutOptionsMod.CheckoutOptions
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`5`
-import typings.nodegit.nodegitNumbers.`6`
-import typings.nodegit.nodegitNumbers.`7`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`5`
+import typings.nodegit.nodegitInts.`6`
+import typings.nodegit.nodegitInts.`7`
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
@@ -44,8 +44,8 @@ object stashMod {
     inline def save(repo: Repository, stasher: Signature, message: String, flags: Double): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(repo.asInstanceOf[js.Any], stasher.asInstanceOf[js.Any], message.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
     */
     trait APPLY_FLAGS extends StObject
     object APPLY_FLAGS {
@@ -56,14 +56,14 @@ object stashMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`5`
-      - typings.nodegit.nodegitNumbers.`6`
-      - typings.nodegit.nodegitNumbers.`7`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`5`
+      - typings.nodegit.nodegitInts.`6`
+      - typings.nodegit.nodegitInts.`7`
     */
     trait APPLY_PROGRESS extends StObject
     object APPLY_PROGRESS {
@@ -86,10 +86,10 @@ object stashMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
     */
     trait FLAGS extends StObject
     object FLAGS {

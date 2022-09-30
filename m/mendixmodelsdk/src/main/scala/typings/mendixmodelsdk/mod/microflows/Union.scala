@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.Union")
 @js.native
-class Union protected ()
+open class Union protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.Union {
   def this(
     model: AbstractModel,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Icon")
 @js.native
-class Icon_[T /* <: BaseIconOptions */] protected ()
+open class Icon_[T /* <: BaseIconOptions */] protected ()
   extends typings.leaflet.mod.Icon_[T] {
   def this(options: T) = this()
 }
@@ -16,7 +16,7 @@ object Icon_ {
   
   @JSGlobal("L.Icon.Default")
   @js.native
-  class Default ()
+  open class Default ()
     extends typings.leaflet.mod.Icon_.Default {
     def this(options: DefaultIconOptions) = this()
   }

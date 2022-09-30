@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DivContainer")
 @js.native
-class DivContainer protected ()
+open class DivContainer protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DivContainer {
   def this(
     model: AbstractModel,

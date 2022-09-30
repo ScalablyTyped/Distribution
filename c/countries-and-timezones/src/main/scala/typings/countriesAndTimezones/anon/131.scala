@@ -1,7 +1,7 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`-240`
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`-300`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`-240`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`-300`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.BS
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.CA
 import org.scalablytyped.runtime.StObject

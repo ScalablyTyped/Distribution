@@ -2,8 +2,8 @@ package typings.hexoUtil
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.hexoUtil.hexoUtilNumbers.`1`
-import typings.hexoUtil.hexoUtilNumbers.`2`
+import typings.hexoUtil.hexoUtilInts.`1`
+import typings.hexoUtil.hexoUtilInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

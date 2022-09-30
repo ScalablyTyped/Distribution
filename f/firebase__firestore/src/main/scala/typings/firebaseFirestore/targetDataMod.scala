@@ -1,9 +1,9 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.byteStringMod.ByteString
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
 import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.targetMod.Target
 import typings.firebaseFirestore.typesMod.ListenSequenceNumber
@@ -270,9 +270,9 @@ object targetDataMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
   */
   trait TargetPurpose extends StObject
   object TargetPurpose {

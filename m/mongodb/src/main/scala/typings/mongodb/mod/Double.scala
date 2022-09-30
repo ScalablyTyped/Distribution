@@ -6,10 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongodb", "Double")
 @js.native
-class Double protected ()
+open class Double protected ()
   extends typings.bson.mod.Double {
   /**
-    * @param value The number we want to represent as a double.
+    * Create a Double type
+    *
+    * @param value - the number we want to represent as a double.
     */
   def this(value: scala.Double) = this()
 }

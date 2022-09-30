@@ -1,7 +1,7 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsNumbers.`40`
-import typings.screeps.screepsNumbers.`50`
+import typings.screeps.screepsInts.`40`
+import typings.screeps.screepsInts.`50`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,24 +11,24 @@ trait OpsRange extends StObject {
   
   var className: operator
   
-  var cooldown: typings.screeps.screepsNumbers.`8`
+  var cooldown: typings.screeps.screepsInts.`8`
   
-  var duration: typings.screeps.screepsNumbers.`10`
+  var duration: typings.screeps.screepsInts.`10`
   
   var level: js.Tuple5[
-    typings.screeps.screepsNumbers.`20`, 
-    typings.screeps.screepsNumbers.`21`, 
-    typings.screeps.screepsNumbers.`22`, 
-    typings.screeps.screepsNumbers.`23`, 
-    typings.screeps.screepsNumbers.`24`
+    typings.screeps.screepsInts.`20`, 
+    typings.screeps.screepsInts.`21`, 
+    typings.screeps.screepsInts.`22`, 
+    typings.screeps.screepsInts.`23`, 
+    typings.screeps.screepsInts.`24`
   ]
   
   var ops: js.Tuple5[
     `50`, 
     `40`, 
-    typings.screeps.screepsNumbers.`30`, 
-    typings.screeps.screepsNumbers.`20`, 
-    typings.screeps.screepsNumbers.`10`
+    typings.screeps.screepsInts.`30`, 
+    typings.screeps.screepsInts.`20`, 
+    typings.screeps.screepsInts.`10`
   ]
   
   var range: `50`
@@ -37,18 +37,18 @@ object OpsRange {
   
   inline def apply(
     level: js.Tuple5[
-      typings.screeps.screepsNumbers.`20`, 
-      typings.screeps.screepsNumbers.`21`, 
-      typings.screeps.screepsNumbers.`22`, 
-      typings.screeps.screepsNumbers.`23`, 
-      typings.screeps.screepsNumbers.`24`
+      typings.screeps.screepsInts.`20`, 
+      typings.screeps.screepsInts.`21`, 
+      typings.screeps.screepsInts.`22`, 
+      typings.screeps.screepsInts.`23`, 
+      typings.screeps.screepsInts.`24`
     ],
     ops: js.Tuple5[
       `50`, 
       `40`, 
-      typings.screeps.screepsNumbers.`30`, 
-      typings.screeps.screepsNumbers.`20`, 
-      typings.screeps.screepsNumbers.`10`
+      typings.screeps.screepsInts.`30`, 
+      typings.screeps.screepsInts.`20`, 
+      typings.screeps.screepsInts.`10`
     ]
   ): OpsRange = {
     val __obj = js.Dynamic.literal(className = "operator", cooldown = 8, duration = 10, level = level.asInstanceOf[js.Any], ops = ops.asInstanceOf[js.Any], range = 50)
@@ -59,17 +59,17 @@ object OpsRange {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setCooldown(value: typings.screeps.screepsNumbers.`8`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: typings.screeps.screepsInts.`8`): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    inline def setDuration(value: typings.screeps.screepsNumbers.`10`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: typings.screeps.screepsInts.`10`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setLevel(
       value: js.Tuple5[
-          typings.screeps.screepsNumbers.`20`, 
-          typings.screeps.screepsNumbers.`21`, 
-          typings.screeps.screepsNumbers.`22`, 
-          typings.screeps.screepsNumbers.`23`, 
-          typings.screeps.screepsNumbers.`24`
+          typings.screeps.screepsInts.`20`, 
+          typings.screeps.screepsInts.`21`, 
+          typings.screeps.screepsInts.`22`, 
+          typings.screeps.screepsInts.`23`, 
+          typings.screeps.screepsInts.`24`
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
@@ -77,9 +77,9 @@ object OpsRange {
       value: js.Tuple5[
           `50`, 
           `40`, 
-          typings.screeps.screepsNumbers.`30`, 
-          typings.screeps.screepsNumbers.`20`, 
-          typings.screeps.screepsNumbers.`10`
+          typings.screeps.screepsInts.`30`, 
+          typings.screeps.screepsInts.`20`, 
+          typings.screeps.screepsInts.`10`
         ]
     ): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     

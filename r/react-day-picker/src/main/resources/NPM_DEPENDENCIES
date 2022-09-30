@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-day-picker" : "8.2.1"
+      "react-day-picker" : "8.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-day-picker" : "8.2.1"
+      "react-day-picker" : "8.3.0"
     }
   ],
   "compile-devDependencies" : [

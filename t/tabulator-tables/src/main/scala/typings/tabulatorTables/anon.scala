@@ -3,37 +3,37 @@ package typings.tabulatorTables
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.UIEvent
-import typings.tabulatorTables.mod.Tabulator.CellComponent
-import typings.tabulatorTables.mod.Tabulator.CellEditEventCallback
-import typings.tabulatorTables.mod.Tabulator.CellEventCallback
-import typings.tabulatorTables.mod.Tabulator.ColumnCalc
-import typings.tabulatorTables.mod.Tabulator.ColumnCalcParams
-import typings.tabulatorTables.mod.Tabulator.ColumnComponent
-import typings.tabulatorTables.mod.Tabulator.ColumnDefinition
-import typings.tabulatorTables.mod.Tabulator.ColumnDefinitionAlign
-import typings.tabulatorTables.mod.Tabulator.ColumnDefinitionSorterParams
-import typings.tabulatorTables.mod.Tabulator.ColumnEventCallback
-import typings.tabulatorTables.mod.Tabulator.ColumnSorterParamLookupFunction
-import typings.tabulatorTables.mod.Tabulator.CustomAccessor
-import typings.tabulatorTables.mod.Tabulator.CustomAccessorParams
-import typings.tabulatorTables.mod.Tabulator.CustomMutator
-import typings.tabulatorTables.mod.Tabulator.CustomMutatorParams
-import typings.tabulatorTables.mod.Tabulator.Editor
-import typings.tabulatorTables.mod.Tabulator.EditorParams
-import typings.tabulatorTables.mod.Tabulator.EmptyCallback
-import typings.tabulatorTables.mod.Tabulator.FilterType
-import typings.tabulatorTables.mod.Tabulator.Formatter
-import typings.tabulatorTables.mod.Tabulator.FormatterParams
-import typings.tabulatorTables.mod.Tabulator.GlobalTooltipOption
-import typings.tabulatorTables.mod.Tabulator.MenuObject
-import typings.tabulatorTables.mod.Tabulator.MenuSeparator
-import typings.tabulatorTables.mod.Tabulator.RowComponent
-import typings.tabulatorTables.mod.Tabulator.SortDirection
-import typings.tabulatorTables.mod.Tabulator.StandardValidatorType
-import typings.tabulatorTables.mod.Tabulator.Validator
-import typings.tabulatorTables.mod.Tabulator.ValueBooleanCallback
-import typings.tabulatorTables.mod.Tabulator.ValueVoidCallback
-import typings.tabulatorTables.mod.Tabulator.VerticalAlign
+import typings.tabulatorTables.mod.CellComponent
+import typings.tabulatorTables.mod.CellEditEventCallback
+import typings.tabulatorTables.mod.CellEventCallback
+import typings.tabulatorTables.mod.ColumnCalc
+import typings.tabulatorTables.mod.ColumnCalcParams
+import typings.tabulatorTables.mod.ColumnComponent
+import typings.tabulatorTables.mod.ColumnDefinition
+import typings.tabulatorTables.mod.ColumnDefinitionAlign
+import typings.tabulatorTables.mod.ColumnDefinitionSorterParams
+import typings.tabulatorTables.mod.ColumnEventCallback
+import typings.tabulatorTables.mod.ColumnSorterParamLookupFunction
+import typings.tabulatorTables.mod.CustomAccessor
+import typings.tabulatorTables.mod.CustomAccessorParams
+import typings.tabulatorTables.mod.CustomMutator
+import typings.tabulatorTables.mod.CustomMutatorParams
+import typings.tabulatorTables.mod.Editor
+import typings.tabulatorTables.mod.EditorParams
+import typings.tabulatorTables.mod.EmptyCallback
+import typings.tabulatorTables.mod.FilterType
+import typings.tabulatorTables.mod.Formatter
+import typings.tabulatorTables.mod.FormatterParams
+import typings.tabulatorTables.mod.GlobalTooltipOption
+import typings.tabulatorTables.mod.MenuObject
+import typings.tabulatorTables.mod.MenuSeparator
+import typings.tabulatorTables.mod.RowComponent
+import typings.tabulatorTables.mod.SortDirection
+import typings.tabulatorTables.mod.StandardValidatorType
+import typings.tabulatorTables.mod.Validator
+import typings.tabulatorTables.mod.ValueBooleanCallback
+import typings.tabulatorTables.mod.ValueVoidCallback
+import typings.tabulatorTables.mod.VerticalAlign
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesBooleans.`true`
 import typings.tabulatorTables.tabulatorTablesStrings.alphanum
@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined std.Partial<tabulator-tables.tabulator-tables.Tabulator.ColumnDefinition> */
+  /* Inlined std.Partial<tabulator-tables.tabulator-tables.ColumnDefinition> */
   trait PartialColumnDefinition extends StObject {
     
     var accessor: js.UndefOr[CustomAccessor] = js.undefined
@@ -112,6 +112,15 @@ object anon {
     var cellMouseOut: js.UndefOr[CellEventCallback] = js.undefined
     
     var cellMouseOver: js.UndefOr[CellEventCallback] = js.undefined
+    
+    var cellPopup: js.UndefOr[
+        String | (js.Function3[
+          /* e */ MouseEvent, 
+          /* component */ RowComponent | CellComponent | ColumnComponent, 
+          /* onRendered */ js.Function0[Any], 
+          Any
+        ])
+      ] = js.undefined
     
     var cellTap: js.UndefOr[CellEventCallback] = js.undefined
     
@@ -446,6 +455,21 @@ object anon {
       inline def setCellMouseOver(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseOver", js.Any.fromFunction2(value))
       
       inline def setCellMouseOverUndefined: Self = StObject.set(x, "cellMouseOver", js.undefined)
+      
+      inline def setCellPopup(
+        value: String | (js.Function3[
+              /* e */ MouseEvent, 
+              /* component */ RowComponent | CellComponent | ColumnComponent, 
+              /* onRendered */ js.Function0[Any], 
+              Any
+            ])
+      ): Self = StObject.set(x, "cellPopup", value.asInstanceOf[js.Any])
+      
+      inline def setCellPopupFunction3(
+        value: (/* e */ MouseEvent, /* component */ RowComponent | CellComponent | ColumnComponent, /* onRendered */ js.Function0[Any]) => Any
+      ): Self = StObject.set(x, "cellPopup", js.Any.fromFunction3(value))
+      
+      inline def setCellPopupUndefined: Self = StObject.set(x, "cellPopup", js.undefined)
       
       inline def setCellTap(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellTap", js.Any.fromFunction2(value))
       
@@ -904,7 +928,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<tabulator-tables.tabulator-tables.Tabulator.Filter, 'field' | 'value'> */
+  /* Inlined std.Pick<tabulator-tables.tabulator-tables.Filter, 'field' | 'value'> */
   trait PickFilterfieldvalue extends StObject {
     
     var field: String

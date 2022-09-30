@@ -468,7 +468,7 @@ object mod extends Shortcut {
     - scala.Unit
     - scala.Null
     - typings.cashDom.cashDomBooleans.`false`
-    - typings.cashDom.cashDomNumbers.`0`
+    - typings.cashDom.cashDomInts.`0`
     - typings.cashDom.cashDomStrings._empty
   */
   type falsy = js.UndefOr[_falsy | Null]

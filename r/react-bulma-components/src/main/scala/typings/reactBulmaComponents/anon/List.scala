@@ -13,12 +13,12 @@ trait List extends StObject {
 }
 object List {
   
-  inline def apply(List: (BulmaComponentWithoutRenderAs[MenuListComponentProps, ul]) & `1`): List = {
+  inline def apply(List: (BulmaComponentWithoutRenderAs[MenuListComponentProps, ul]) & `1`): typings.reactBulmaComponents.anon.List = {
     val __obj = js.Dynamic.literal(List = List.asInstanceOf[js.Any])
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.reactBulmaComponents.anon.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.reactBulmaComponents.anon.List](x: Self) {
     
     inline def setList(value: (BulmaComponentWithoutRenderAs[MenuListComponentProps, ul]) & `1`): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
   }

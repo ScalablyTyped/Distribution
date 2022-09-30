@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gatsby-sharp" : "0.17.0"
+      "gatsby-sharp" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gatsby-sharp" : "0.17.0"
+      "gatsby-sharp" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

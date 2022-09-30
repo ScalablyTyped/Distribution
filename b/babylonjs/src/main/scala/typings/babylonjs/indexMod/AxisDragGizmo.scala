@@ -118,11 +118,7 @@ object AxisDragGizmo {
   val ^ : js.Any = js.native
   
   /**
-    * @param scene
-    * @param material
-    * @param thickness
-    * @param isCollider
-    * @hidden
+    * @internal
     */
   inline def _CreateArrow(
     scene: typings.babylonjs.sceneMod.Scene,
@@ -147,9 +143,7 @@ object AxisDragGizmo {
   ): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrow")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any], thickness.asInstanceOf[js.Any], isCollider.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
   
   /**
-    * @param scene
-    * @param arrow
-    * @hidden
+    * @internal
     */
   inline def _CreateArrowInstance(scene: typings.babylonjs.sceneMod.Scene, arrow: typings.babylonjs.transformNodeMod.TransformNode): typings.babylonjs.transformNodeMod.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateArrowInstance")(scene.asInstanceOf[js.Any], arrow.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.transformNodeMod.TransformNode]
 }

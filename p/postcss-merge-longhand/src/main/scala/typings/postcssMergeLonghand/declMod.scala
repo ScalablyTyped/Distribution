@@ -73,7 +73,7 @@ object declMod {
     thisArg: Any
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def every_S_Any[S /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
+  inline def every_S[S /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
     predicate: js.Function3[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ /* value */ Any, 
       /* index */ Double, 
@@ -83,7 +83,7 @@ object declMod {
       /* is S */ Boolean
     ]
   ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-  inline def every_S_Any[S /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
+  inline def every_S[S /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
     predicate: js.Function3[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ /* value */ Any, 
       /* index */ Double, 
@@ -157,7 +157,7 @@ object declMod {
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any
   ]]
   
-  inline def filter_S_1_Any[S_1 /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
+  inline def filter_S_1[S_1 /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
     predicate: js.Function3[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ /* value */ Any, 
       /* index */ Double, 
@@ -167,7 +167,7 @@ object declMod {
       /* is S_1 */ Boolean
     ]
   ): js.Array[S_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S_1]]
-  inline def filter_S_1_Any[S_1 /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
+  inline def filter_S_1[S_1 /* <: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any */](
     predicate: js.Function3[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ /* value */ Any, 
       /* index */ Double, 
@@ -529,7 +529,7 @@ object declMod {
     items: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any)*
   ): js.Array[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof borders */ Any
   ]]
   

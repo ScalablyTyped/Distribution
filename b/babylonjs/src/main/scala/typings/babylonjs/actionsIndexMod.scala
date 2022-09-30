@@ -68,15 +68,13 @@ object actionsIndexMod {
     inline def _GetTargetProperty(target: Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     /**
       * Internal only
-      * @param target
-      * @hidden
+      * @internal
       */
     inline def _GetTargetProperty(target: Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     
     /**
       * Internal only
-      * @param value
-      * @hidden
+      * @internal
       */
     inline def _SerializeValueAsString(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
@@ -850,37 +848,21 @@ object actionsIndexMod {
       */
     inline def GetOperatorName(operator: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperatorName")(operator.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/index", "ValueCondition._IsDifferent")
     @js.native
     def _IsDifferent: Any = js.native
     inline def _IsDifferent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/index", "ValueCondition._IsEqual")
     @js.native
     def _IsEqual: Any = js.native
     inline def _IsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/index", "ValueCondition._IsGreater")
     @js.native
     def _IsGreater: Any = js.native
     inline def _IsGreater_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/index", "ValueCondition._IsLesser")
     @js.native
     def _IsLesser: Any = js.native

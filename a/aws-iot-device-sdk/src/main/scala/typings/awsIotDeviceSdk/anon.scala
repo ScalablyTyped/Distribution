@@ -1,7 +1,7 @@
 package typings.awsIotDeviceSdk
 
-import typings.awsIotDeviceSdk.awsIotDeviceSdkNumbers.`0`
-import typings.awsIotDeviceSdk.awsIotDeviceSdkNumbers.`1`
+import typings.awsIotDeviceSdk.awsIotDeviceSdkInts.`0`
+import typings.awsIotDeviceSdk.awsIotDeviceSdkInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

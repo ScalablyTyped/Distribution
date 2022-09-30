@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.DateTimeType")
 @js.native
-class DateTimeType protected ()
+open class DateTimeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.DateTimeType {
   def this(
     model: AbstractModel,

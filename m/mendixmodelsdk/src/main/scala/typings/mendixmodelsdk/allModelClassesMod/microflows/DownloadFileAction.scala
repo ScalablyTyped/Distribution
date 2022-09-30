@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/download-file relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DownloadFileAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DownloadFileAction")
 @js.native
-class DownloadFileAction protected ()
+open class DownloadFileAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.DownloadFileAction {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class DownloadFileAction protected ()
 }
 object DownloadFileAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DownloadFileAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DownloadFileAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object DownloadFileAction {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.DownloadFileAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.DownloadFileAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DownloadFileAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DownloadFileAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DownloadFileAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DownloadFileAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

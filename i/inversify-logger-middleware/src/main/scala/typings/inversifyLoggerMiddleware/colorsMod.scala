@@ -29,7 +29,8 @@ object colorsMod {
     @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.Chalk")
     @js.native
     open class Chalk ()
-      extends typings.chalk.mod.Chalk {
+      extends StObject
+         with ChalkInstance {
       def this(options: Options) = this()
     }
     @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.Chalk")

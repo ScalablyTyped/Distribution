@@ -15,7 +15,7 @@ object arrappendMod {
   @js.native
   val FIRST_KEY_INDEX: /* 1 */ Double = js.native
   
-  inline def transformArguments(key: String, path: String, jsons: RedisJSON*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")((List(key.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(jsons.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+  inline def transformArguments(key: String, path: String, jsons: RedisJSON*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")((scala.List(key.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(jsons.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
   
   inline def transformReply(): Double | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[Double | js.Array[Double]]
 }

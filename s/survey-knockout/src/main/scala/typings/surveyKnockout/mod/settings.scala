@@ -30,6 +30,14 @@ object settings {
   inline def allowShowEmptyTitleInDesignMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowShowEmptyTitleInDesignMode")(x.asInstanceOf[js.Any])
   
   /*
+    * Set this property to false to stop showing "Compete" button when the complete trigger is going to be executed.
+    */
+  @JSImport("survey-knockout", "settings.changeNavigationButtonsOnCompleteTrigger")
+  @js.native
+  def changeNavigationButtonsOnCompleteTrigger: Boolean = js.native
+  inline def changeNavigationButtonsOnCompleteTrigger_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("changeNavigationButtonsOnCompleteTrigger")(x.asInstanceOf[js.Any])
+  
+  /*
     * The prefix that uses to store the question comment, as "questionName + commentPrefix".
     * The default value is "-Comment"
     */
@@ -95,6 +103,11 @@ object settings {
   @js.native
   def executeSkipTriggerOnValueChanged: Boolean = js.native
   inline def executeSkipTriggerOnValueChanged_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("executeSkipTriggerOnValueChanged")(x.asInstanceOf[js.Any])
+  
+  @JSImport("survey-knockout", "settings.expressionDisableConversionChar")
+  @js.native
+  def expressionDisableConversionChar: String = js.native
+  inline def expressionDisableConversionChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expressionDisableConversionChar")(x.asInstanceOf[js.Any])
   
   /*
     * Set it to true to serialize itemvalue instance always as object even if text property is empty

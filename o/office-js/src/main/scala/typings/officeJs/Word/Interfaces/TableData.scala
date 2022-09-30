@@ -27,7 +27,15 @@ trait TableData extends StObject {
   var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the collection of field objects in the table.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
+  
+  /**
+    * Gets the font. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -51,7 +59,7 @@ trait TableData extends StObject {
   var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    * Indicates whether all of the table rows are uniform. Read-only.
+    * Indicates whether all of the table rows are uniform.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -59,7 +67,7 @@ trait TableData extends StObject {
   var isUniform: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+    * Gets the nesting level of the table. Top-level tables have level 1.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -67,7 +75,7 @@ trait TableData extends StObject {
   var nestingLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets the number of rows in the table. Read-only.
+    * Gets the number of rows in the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -75,7 +83,7 @@ trait TableData extends StObject {
   var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets all of the table rows. Read-only.
+    * Gets all of the table rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -149,7 +157,7 @@ trait TableData extends StObject {
   var styleTotalRow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the child tables nested one level deeper. Read-only.
+    * Gets the child tables nested one level deeper.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -192,6 +200,12 @@ object TableData {
     inline def setAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setFields(value: js.Array[FieldData]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: FieldData*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

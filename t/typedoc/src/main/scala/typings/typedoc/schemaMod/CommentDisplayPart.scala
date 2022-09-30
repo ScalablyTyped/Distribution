@@ -19,8 +19,8 @@ object CommentDisplayPart {
     __obj.asInstanceOf[typings.typedoc.anon.Kind]
   }
   
-  inline def Target(text: String): typings.typedoc.anon.Target = {
-    val __obj = js.Dynamic.literal(kind = "inline-tag", tag = "@${string}", text = text.asInstanceOf[js.Any])
+  inline def Target(tag: /* template literal string: @${string} */ String, text: String): typings.typedoc.anon.Target = {
+    val __obj = js.Dynamic.literal(kind = "inline-tag", tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.anon.Target]
   }
   

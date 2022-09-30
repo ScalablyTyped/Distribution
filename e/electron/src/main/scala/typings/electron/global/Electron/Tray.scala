@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.Tray")
 @js.native
-class Tray protected ()
+open class Tray protected ()
   extends typings.electron.Electron.Tray {
   def this(image: String) = this()
   /**

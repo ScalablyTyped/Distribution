@@ -20,6 +20,8 @@ trait Aabb extends StObject {
   var deltaPositionsType: Double
   
   var name: js.UndefOr[String] = js.undefined
+  
+  var preserveData: js.UndefOr[Boolean] = js.undefined
 }
 object Aabb {
   
@@ -51,5 +53,9 @@ object Aabb {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPreserveData(value: Boolean): Self = StObject.set(x, "preserveData", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveDataUndefined: Self = StObject.set(x, "preserveData", js.undefined)
   }
 }

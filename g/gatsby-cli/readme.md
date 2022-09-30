@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-cli
 
-Typings are for version 2.14.0
+Typings are for version 4.24.0
 
 ## Library description:
 Gatsby command-line interface for creating new sites and running Gatsby commands
@@ -10,10 +10,10 @@ Gatsby command-line interface for creating new sites and running Gatsby commands
 | ------------------ | :-------------: |
 | Full name          | gatsby-cli |
 | Keywords           | gatsby |
-| # releases         | 482 |
-| # dependents       | 96 |
-| # downloads        | 23016361 |
-| # stars            | 1 |
+| # releases         | 403 |
+| # dependents       | 0.0 |
+| # downloads        | 1829935.6666666667 |
+| # stars            | 53594.0 |
 
 ## Links
 - [Homepage](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-cli#readme)

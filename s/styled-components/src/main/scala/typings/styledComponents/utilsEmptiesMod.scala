@@ -1,7 +1,7 @@
 package typings.styledComponents
 
 import typings.styledComponents.modelsThemeProviderMod.DefaultTheme
-import typings.styledComponents.nativeDistTypesMod.KnownWebTarget
+import typings.styledComponents.nativeDistTypesMod.KnownTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,19 +17,19 @@ object utilsEmptiesMod {
     
     @JSImport("styled-components/native/dist/utils/empties", "EMPTY_OBJECT.$as")
     @js.native
-    val $as: js.UndefOr[KnownWebTarget] = js.native
+    val $as: js.UndefOr[KnownTarget] = js.native
     
     @JSImport("styled-components/native/dist/utils/empties", "EMPTY_OBJECT.$forwardedAs")
     @js.native
-    val $forwardedAs: js.UndefOr[KnownWebTarget] = js.native
+    val $forwardedAs: js.UndefOr[KnownTarget] = js.native
     
     @JSImport("styled-components/native/dist/utils/empties", "EMPTY_OBJECT.as")
     @js.native
-    val as: js.UndefOr[KnownWebTarget] = js.native
+    val as: js.UndefOr[KnownTarget] = js.native
     
     @JSImport("styled-components/native/dist/utils/empties", "EMPTY_OBJECT.forwardedAs")
     @js.native
-    val forwardedAs: js.UndefOr[KnownWebTarget] = js.native
+    val forwardedAs: js.UndefOr[KnownTarget] = js.native
     
     @JSImport("styled-components/native/dist/utils/empties", "EMPTY_OBJECT.theme")
     @js.native

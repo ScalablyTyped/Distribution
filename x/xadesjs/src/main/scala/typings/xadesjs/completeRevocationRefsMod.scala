@@ -1,6 +1,5 @@
 package typings.xadesjs
 
-import typings.std.Uint8Array
 import typings.xadesjs.anyMod.Any
 import typings.xadesjs.dateTimeMod.XadesDateTime
 import typings.xadesjs.signingCertificateMod.DigestAlgAndValueType
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object completeRevocationRefsMod {
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CRLIdentifier")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "CRLIdentifier")
   @js.native
-  class CRLIdentifier () extends XadesObject {
+  open class CRLIdentifier () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var IssueTime: XadesDateTime = js.native
@@ -27,9 +26,9 @@ object completeRevocationRefsMod {
     var URI: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CRLRef")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "CRLRef")
   @js.native
-  class CRLRef () extends XadesObject {
+  open class CRLRef () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var CRLIdentifier: typings.xadesjs.completeRevocationRefsMod.CRLIdentifier = js.native
@@ -37,15 +36,15 @@ object completeRevocationRefsMod {
     var DigestAlgAndValue: DigestAlgAndValueType = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CRLRefs")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "CRLRefs")
   @js.native
-  class CRLRefs () extends XadesCollection[CRLRef] {
+  open class CRLRefs () extends XadesCollection[CRLRef] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "CompleteRevocationRefs")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "CompleteRevocationRefs")
   @js.native
-  class CompleteRevocationRefs () extends UnsignedSignatureProperty {
+  open class CompleteRevocationRefs () extends UnsignedSignatureProperty {
     def this(properties: js.Object) = this()
     
     var CRLRefs: typings.xadesjs.completeRevocationRefsMod.CRLRefs = js.native
@@ -57,9 +56,9 @@ object completeRevocationRefsMod {
     var OtherRefs: typings.xadesjs.completeRevocationRefsMod.OtherRefs = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OCSPIdentifier")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "OCSPIdentifier")
   @js.native
-  class OCSPIdentifier () extends XadesObject {
+  open class OCSPIdentifier () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var ProducedAt: XadesDateTime = js.native
@@ -69,9 +68,9 @@ object completeRevocationRefsMod {
     var URI: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OCSPRef")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "OCSPRef")
   @js.native
-  class OCSPRef () extends XadesObject {
+  open class OCSPRef () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var DigestAlgAndValue: DigestAlgAndValueType = js.native
@@ -79,30 +78,30 @@ object completeRevocationRefsMod {
     var OCSPIdentifier: typings.xadesjs.completeRevocationRefsMod.OCSPIdentifier = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OCSPRefs")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "OCSPRefs")
   @js.native
-  class OCSPRefs () extends XadesCollection[OCSPRef] {
+  open class OCSPRefs () extends XadesCollection[OCSPRef] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OtherRef")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "OtherRef")
   @js.native
-  class OtherRef () extends Any {
+  open class OtherRef () extends Any {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "OtherRefs")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "OtherRefs")
   @js.native
-  class OtherRefs () extends XadesCollection[OtherRef] {
+  open class OtherRefs () extends XadesCollection[OtherRef] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/complete_revocation_refs", "ResponderID")
+  @JSImport("xadesjs/build/types/src/xml/complete_revocation_refs", "ResponderID")
   @js.native
-  class ResponderID () extends XadesObject {
+  open class ResponderID () extends XadesObject {
     def this(properties: js.Object) = this()
     
-    var ByKey: Uint8Array = js.native
+    var ByKey: js.typedarray.Uint8Array = js.native
     
     var ByName: String = js.native
   }

@@ -5,8 +5,8 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.AgentOptions
 import typings.node.httpMod.IncomingMessage
-import typings.request.requestNumbers.`4`
-import typings.request.requestNumbers.`6`
+import typings.request.requestInts.`4`
+import typings.request.requestInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

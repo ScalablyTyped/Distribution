@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.TemplateArgument")
 @js.native
-class TemplateArgument protected ()
+open class TemplateArgument protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.TemplateArgument {
   def this(
     model: AbstractModel,

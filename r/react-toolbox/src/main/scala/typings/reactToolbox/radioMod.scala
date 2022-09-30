@@ -1,26 +1,46 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.radioButtonMod.RadioButtonProps
 import typings.reactToolbox.radioGroupMod.RadioGroupProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/radio", JSImport.Namespace)
-@js.native
-object radioMod extends js.Object {
-  @js.native
-  class RadioButton ()
-    extends Component[RadioButtonProps, js.Object, js.Any]
+object radioMod {
   
+  @JSImport("react-toolbox/components/radio", JSImport.Default)
   @js.native
-  class RadioGroup ()
-    extends Component[RadioGroupProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.radioButtonMod.RadioButton {
+    def this(props: RadioButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: RadioButtonProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/radio", "RadioButton")
   @js.native
-  class default ()
-    extends Component[RadioButtonProps, js.Object, js.Any]
+  open class RadioButton protected ()
+    extends typings.reactToolbox.radioButtonMod.RadioButton {
+    def this(props: RadioButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: RadioButtonProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/radio", "RadioGroup")
+  @js.native
+  open class RadioGroup protected ()
+    extends typings.reactToolbox.radioGroupMod.RadioGroup {
+    def this(props: RadioGroupProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: RadioGroupProps, context: Any) = this()
+  }
 }
-

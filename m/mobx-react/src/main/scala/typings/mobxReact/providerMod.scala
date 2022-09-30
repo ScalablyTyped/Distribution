@@ -1,9 +1,9 @@
 package typings.mobxReact
 
+import typings.mobxReact.ivaluemapMod.IValueMap
 import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object providerMod {
   
   @JSImport("mobx-react/dist/Provider", "MobXProviderContext")
   @js.native
-  val MobXProviderContext: Context[Record[String, js.Any]] = js.native
+  val MobXProviderContext: Context[IValueMap] = js.native
   
   object Provider {
     

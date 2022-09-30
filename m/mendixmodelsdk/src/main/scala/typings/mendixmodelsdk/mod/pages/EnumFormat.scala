@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.EnumFormat")
 @js.native
-class EnumFormat protected ()
+open class EnumFormat protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.EnumFormat {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

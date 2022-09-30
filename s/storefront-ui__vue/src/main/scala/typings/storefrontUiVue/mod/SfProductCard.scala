@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.Location
 import typings.storefrontUiVue.storefrontUiVueStrings.`Add to wishlist`
 import typings.storefrontUiVue.storefrontUiVueStrings.`Remove from wishlist`
-import typings.storefrontUiVue.storefrontUiVueStrings.`sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist`
 import typings.storefrontUiVue.storefrontUiVueStrings.`sf-button--pure sf-product-card__wishlist-icon`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +30,7 @@ object SfProductCard extends Shortcut {
     
     var showAddedToCartBadge: Boolean
     
-    var wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | (`sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist`)
+    var wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | String
   }
   object Computed {
     
@@ -42,7 +41,7 @@ object SfProductCard extends Shortcut {
       isSFColors: Boolean,
       linkComponentTag: String,
       showAddedToCartBadge: Boolean,
-      wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | (`sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist`)
+      wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | String
     ): Computed = {
       val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], badgeColorClass = badgeColorClass.asInstanceOf[js.Any], currentWishlistIcon = currentWishlistIcon.asInstanceOf[js.Any], isSFColors = isSFColors.asInstanceOf[js.Any], linkComponentTag = linkComponentTag.asInstanceOf[js.Any], showAddedToCartBadge = showAddedToCartBadge.asInstanceOf[js.Any], wishlistIconClasses = wishlistIconClasses.asInstanceOf[js.Any])
       __obj.asInstanceOf[Computed]
@@ -62,9 +61,7 @@ object SfProductCard extends Shortcut {
       
       inline def setShowAddedToCartBadge(value: Boolean): Self = StObject.set(x, "showAddedToCartBadge", value.asInstanceOf[js.Any])
       
-      inline def setWishlistIconClasses(
-        value: (`sf-button--pure sf-product-card__wishlist-icon`) | (`sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist`)
-      ): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
+      inline def setWishlistIconClasses(value: (`sf-button--pure sf-product-card__wishlist-icon`) | String): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
     }
   }
   

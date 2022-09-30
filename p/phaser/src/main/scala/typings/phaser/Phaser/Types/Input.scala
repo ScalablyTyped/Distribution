@@ -4,9 +4,9 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Shape
 import typings.phaser.Phaser.Input.Keyboard.Key
-import typings.phaser.phaserNumbers.`0`
-import typings.phaser.phaserNumbers.`1`
-import typings.phaser.phaserNumbers.`2`
+import typings.phaser.phaserInts.`0`
+import typings.phaser.phaserInts.`1`
+import typings.phaser.phaserInts.`2`
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -10,10 +10,10 @@ Typed factories for your redux reducers and actions.
 | ------------------ | :-------------: |
 | Full name          | @mindbox/redux-helpers |
 | Keywords           | typescript, redux |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 798 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 502.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/mindbox-moscow/redux-helpers#readme)

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ServiceDescriptorProto.
   * @param [properties] Properties to set
   */
-class ServiceDescriptorProto ()
+open class ServiceDescriptorProto ()
   extends StObject
      with IServiceDescriptorProto {
   def this(properties: IServiceDescriptorProto) = this()
@@ -33,7 +32,7 @@ class ServiceDescriptorProto ()
     * Converts this ServiceDescriptorProto to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
 }
 object ServiceDescriptorProto {
   
@@ -50,6 +49,8 @@ object ServiceDescriptorProto {
   inline def create(): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ServiceDescriptorProto]
   inline def create(properties: IServiceDescriptorProto): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ServiceDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ServiceDescriptorProto]
   /**
     * Decodes a ServiceDescriptorProto message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object ServiceDescriptorProto {
   /* static member */
   inline def decode(reader: Reader): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
   inline def decode(reader: Reader, length: Double): ServiceDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ServiceDescriptorProto]
-  inline def decode(reader: Uint8Array): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
-  inline def decode(reader: Uint8Array, length: Double): ServiceDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ServiceDescriptorProto]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
   /**
     * Decodes a ServiceDescriptorProto message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object ServiceDescriptorProto {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
-  inline def decodeDelimited(reader: Uint8Array): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
   
   /**
     * Encodes the specified ServiceDescriptorProto message. Does not implicitly {@link google.protobuf.ServiceDescriptorProto.verify|verify} messages.
@@ -101,7 +100,7 @@ object ServiceDescriptorProto {
     * @returns ServiceDescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): ServiceDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ServiceDescriptorProto]
   
   /**
     * Creates a plain object from a ServiceDescriptorProto message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object ServiceDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ServiceDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ServiceDescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ServiceDescriptorProto): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: ServiceDescriptorProto, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a ServiceDescriptorProto message.
@@ -119,5 +118,5 @@ object ServiceDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -11,7 +11,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchField")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchField")
 @js.native
 abstract class SearchField protected () extends ControlBarItem {
   def this(
@@ -46,18 +46,18 @@ abstract class SearchField protected () extends ControlBarItem {
 }
 object SearchField {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchField")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchField")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchField.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchField.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchField.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchField.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -12,15 +12,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
-  * @ignore
-  *
+  * In version 9.0.5: removed experimental
   * In version 8.8.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart")
 @js.native
-class WorkflowsProjectSettingsPart protected ()
+open class WorkflowsProjectSettingsPart protected ()
   extends typings.mendixmodelsdk.settingsMod.settings.WorkflowsProjectSettingsPart {
   def this(
     model: AbstractModel,
@@ -33,7 +30,7 @@ class WorkflowsProjectSettingsPart protected ()
 }
 object WorkflowsProjectSettingsPart {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,13 +54,13 @@ object WorkflowsProjectSettingsPart {
   inline def createIn(container: typings.mendixmodelsdk.settingsMod.settings.ProjectSettings): typings.mendixmodelsdk.settingsMod.settings.WorkflowsProjectSettingsPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.settingsMod.settings.WorkflowsProjectSettingsPart]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "settings.WorkflowsProjectSettingsPart.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

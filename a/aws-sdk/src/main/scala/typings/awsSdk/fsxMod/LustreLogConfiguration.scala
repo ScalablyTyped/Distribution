@@ -12,7 +12,7 @@ trait LustreLogConfiguration extends StObject {
   var Destination: js.UndefOr[GeneralARN] = js.undefined
   
   /**
-    * The data repository events that are logged by Amazon FSx.    WARN_ONLY - only warning events are logged.    ERROR_ONLY - only error events are logged.    WARN_ERROR - both warning events and error events are logged.    DISABLED - logging of data repository events is turned off.  
+    * The data repository events that are logged by Amazon FSx.    WARN_ONLY - only warning events are logged.    ERROR_ONLY - only error events are logged.    WARN_ERROR - both warning events and error events are logged.    DISABLED - logging of data repository events is turned off.   Note that Amazon File Cache uses a default setting of WARN_ERROR, which can't be changed.
     */
   var Level: LustreAccessAuditLogLevel
 }

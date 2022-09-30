@@ -11,19 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object base64Mod {
   
-  @JSImport("multiformats/dist/types/src/bases/base64", "base64")
+  @JSImport("multiformats/types/src/bases/base64", "base64")
   @js.native
   val base64: Codec[typings.multiformats.multiformatsStrings.base64, m_] = js.native
   
-  @JSImport("multiformats/dist/types/src/bases/base64", "base64pad")
+  @JSImport("multiformats/types/src/bases/base64", "base64pad")
   @js.native
   val base64pad: Codec[typings.multiformats.multiformatsStrings.base64pad, M] = js.native
   
-  @JSImport("multiformats/dist/types/src/bases/base64", "base64url")
+  @JSImport("multiformats/types/src/bases/base64", "base64url")
   @js.native
   val base64url: Codec[typings.multiformats.multiformatsStrings.base64url, u_] = js.native
   
-  @JSImport("multiformats/dist/types/src/bases/base64", "base64urlpad")
+  @JSImport("multiformats/types/src/bases/base64", "base64urlpad")
   @js.native
   val base64urlpad: Codec[typings.multiformats.multiformatsStrings.base64urlpad, U] = js.native
 }

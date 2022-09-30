@@ -13,7 +13,6 @@ import typings.webpack.anon.Request
 import typings.webpack.anon.Runtime
 import typings.webpack.anon.RuntimeRequirements
 import typings.webpack.anon.Strict
-import typings.webpack.webpackStrings.`functionLeftparenthesisRightparenthesis LeftcurlybracketRightcurlybracket`
 import typings.webpack.webpackStrings.`x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,7 +55,7 @@ trait RuntimeTemplate extends StObject {
   def destructureObject(items: Any, value: Any): String = js.native
   def destructureObject(items: Unit, value: Any): String = js.native
   
-  def emptyFunction(): (`x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket`) | (`functionLeftparenthesisRightparenthesis LeftcurlybracketRightcurlybracket`) = js.native
+  def emptyFunction(): (`x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket`) | String = js.native
   
   def exportFromImport(__0: AsiSafe): String = js.native
   

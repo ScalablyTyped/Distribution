@@ -97,13 +97,12 @@ object observableMod {
     var _coroutineSchedulerDispose: js.UndefOr[js.Function0[Unit]] = js.native
     
     /**
-      * @param observer
-      * @hidden
+      * @internal
       */
     def _deferUnregister(observer: Observer[T]): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var _eventState: EventState = js.native
     
@@ -404,7 +403,7 @@ object observableMod {
     scope: Any
     ) = this()
     
-    /** @hidden */
+    /** @internal */
     var _willBeUnregistered: Boolean = js.native
     
     /**

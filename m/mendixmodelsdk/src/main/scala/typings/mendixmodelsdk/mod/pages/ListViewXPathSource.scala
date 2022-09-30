@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ListViewXPathSource")
 @js.native
-class ListViewXPathSource protected ()
+open class ListViewXPathSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ListViewXPathSource {
   def this(
     model: AbstractModel,

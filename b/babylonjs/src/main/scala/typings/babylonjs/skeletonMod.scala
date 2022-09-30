@@ -52,29 +52,28 @@ object skeletonMod {
     
     /* private */ var _getHighestAnimationFrame: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _hasWaitingData: Nullable[Boolean] = js.native
     
     /* private */ var _identity: Any = js.native
     
     /* private */ var _isDirty: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAsDirty(): Unit = js.native
     
     /* private */ var _meshesWithPoseMatrix: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _numBonesWithLinkedTransformNode: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _parentContainer: Nullable[AbstractScene] = js.native
     
     /* private */ var _ranges: Any = js.native
     
     /**
-      * @param mesh
-      * @hidden
+      * @internal
       */
     def _registerMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
     
@@ -91,8 +90,7 @@ object skeletonMod {
     /* private */ var _uniqueId: Any = js.native
     
     /**
-      * @param mesh
-      * @hidden
+      * @internal
       */
     def _unregisterMeshWithPoseMatrix(mesh: AbstractMesh): Unit = js.native
     

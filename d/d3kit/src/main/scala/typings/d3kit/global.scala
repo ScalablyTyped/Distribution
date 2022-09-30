@@ -183,9 +183,9 @@ object global {
       
       inline def debounce(fn: js.Function1[/* repeated */ Any, Unit], delay: Double): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
       
-      inline def deepExtend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+      inline def deepExtend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(scala.List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
       
-      inline def extend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+      inline def extend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
       
       inline def functor(value: Any): js.Function1[/* repeated */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
       

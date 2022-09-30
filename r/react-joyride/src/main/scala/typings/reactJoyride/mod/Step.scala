@@ -1,6 +1,8 @@
 package typings.reactJoyride.mod
 
 import typings.react.mod.ReactNode
+import typings.reactJoyride.reactJoyrideStrings.auto
+import typings.reactJoyride.reactJoyrideStrings.center
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,17 +18,15 @@ trait Step
   
   var event: js.UndefOr[String] = js.undefined
   
-  var hideCloseButton: js.UndefOr[Boolean] = js.undefined
-  
   var hideFooter: js.UndefOr[Boolean] = js.undefined
   
   var isFixed: js.UndefOr[Boolean] = js.undefined
   
   var offset: js.UndefOr[Double] = js.undefined
   
-  var placement: js.UndefOr[Placement] = js.undefined
+  var placement: js.UndefOr[Placement | auto | center] = js.undefined
   
-  var placementBeacon: js.UndefOr[PlacementBeacon] = js.undefined
+  var placementBeacon: js.UndefOr[Placement] = js.undefined
   
   var target: String | HTMLElement
   
@@ -53,10 +53,6 @@ object Step {
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    inline def setHideCloseButton(value: Boolean): Self = StObject.set(x, "hideCloseButton", value.asInstanceOf[js.Any])
-    
-    inline def setHideCloseButtonUndefined: Self = StObject.set(x, "hideCloseButton", js.undefined)
-    
     inline def setHideFooter(value: Boolean): Self = StObject.set(x, "hideFooter", value.asInstanceOf[js.Any])
     
     inline def setHideFooterUndefined: Self = StObject.set(x, "hideFooter", js.undefined)
@@ -69,9 +65,9 @@ object Step {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: Placement | auto | center): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    inline def setPlacementBeacon(value: PlacementBeacon): Self = StObject.set(x, "placementBeacon", value.asInstanceOf[js.Any])
+    inline def setPlacementBeacon(value: Placement): Self = StObject.set(x, "placementBeacon", value.asInstanceOf[js.Any])
     
     inline def setPlacementBeaconUndefined: Self = StObject.set(x, "placementBeacon", js.undefined)
     

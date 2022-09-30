@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "domainmodels.AccessRule")
 @js.native
-class AccessRule protected ()
+open class AccessRule protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AccessRule {
   def this(
     model: AbstractModel,

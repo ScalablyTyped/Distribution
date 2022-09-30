@@ -1,11 +1,13 @@
 package typings.jestEach
 
 import typings.jestEach.anon.Describe
-import typings.jestEach.bindMod.GlobalCallback
-import typings.jestTypes.globalMod.EachTable
-import typings.jestTypes.globalMod.EachTestFn
-import typings.jestTypes.globalMod.TemplateData
-import typings.jestTypes.globalMod.TestCallback
+import typings.jestTypes.mod.BlockNameLike
+import typings.jestTypes.mod.ConcurrentTestFn
+import typings.jestTypes.mod.EachTable
+import typings.jestTypes.mod.EachTestFn
+import typings.jestTypes.mod.TemplateData
+import typings.jestTypes.mod.TestCallback
+import typings.node.urlMod.global.Global
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,7 +41,7 @@ object mod {
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
     js.Function3[
-      /* title */ String, 
+      /* title */ BlockNameLike, 
       /* test */ EachTestFn[EachCallback], 
       /* timeout */ js.UndefOr[Double], 
       Unit
@@ -48,7 +50,7 @@ object mod {
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
     js.Function3[
-      /* title */ String, 
+      /* title */ BlockNameLike, 
       /* test */ EachTestFn[EachCallback], 
       /* timeout */ js.UndefOr[Double], 
       Unit
@@ -58,7 +60,7 @@ object mod {
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
     js.Function3[
-      /* title */ String, 
+      /* title */ BlockNameLike, 
       /* test */ EachTestFn[EachCallback], 
       /* timeout */ js.UndefOr[Double], 
       Unit
@@ -67,12 +69,17 @@ object mod {
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
     js.Function3[
-      /* title */ String, 
+      /* title */ BlockNameLike, 
       /* test */ EachTestFn[EachCallback], 
       /* timeout */ js.UndefOr[Double], 
       Unit
     ]
   ]]
   
-  type Global = typings.jestTypes.globalMod.Global
+  type GlobalCallback = js.Function3[
+    /* testName */ String, 
+    /* fn */ ConcurrentTestFn, 
+    /* timeout */ js.UndefOr[Double], 
+    Unit
+  ]
 }

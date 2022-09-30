@@ -17,6 +17,11 @@ trait UpdateTrainingJobRequest extends StObject {
   var ProfilerRuleConfigurations: js.UndefOr[typings.awsSdk.sagemakerMod.ProfilerRuleConfigurations] = js.undefined
   
   /**
+    * The training job ResourceConfig to update warm pool retention length.
+    */
+  var ResourceConfig: js.UndefOr[ResourceConfigForUpdate] = js.undefined
+  
+  /**
     * The name of a training job to update the Debugger profiling configuration.
     */
   var TrainingJobName: typings.awsSdk.sagemakerMod.TrainingJobName
@@ -39,6 +44,10 @@ object UpdateTrainingJobRequest {
     inline def setProfilerRuleConfigurationsUndefined: Self = StObject.set(x, "ProfilerRuleConfigurations", js.undefined)
     
     inline def setProfilerRuleConfigurationsVarargs(value: ProfilerRuleConfiguration*): Self = StObject.set(x, "ProfilerRuleConfigurations", js.Array(value*))
+    
+    inline def setResourceConfig(value: ResourceConfigForUpdate): Self = StObject.set(x, "ResourceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setResourceConfigUndefined: Self = StObject.set(x, "ResourceConfig", js.undefined)
     
     inline def setTrainingJobName(value: TrainingJobName): Self = StObject.set(x, "TrainingJobName", value.asInstanceOf[js.Any])
   }

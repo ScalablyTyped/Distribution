@@ -1,7 +1,7 @@
 
 # Scala.js typings for new-github-release-url
 
-Typings are for version 1.0.0
+Typings are for version 2.0.0
 
 ## Library description:
 Generate a URL for opening a new GitHub release with prefilled tag, body, and other fields
@@ -11,9 +11,9 @@ Generate a URL for opening a new GitHub release with prefilled tag, body, and ot
 | Full name          | new-github-release-url |
 | Keywords           | github, release, releases, new, generate, url, gh, query, search, parameters, params |
 | # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 706632 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 704659.0 |
+| # stars            | 118.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/new-github-release-url#readme)

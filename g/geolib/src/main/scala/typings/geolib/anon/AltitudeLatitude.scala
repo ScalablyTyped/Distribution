@@ -1,6 +1,6 @@
 package typings.geolib.anon
 
-import typings.geolib.geolibNumbers.`1`
+import typings.geolib.geolibInts.`1`
 import typings.geolib.geolibStrings.lat
 import typings.geolib.geolibStrings.latitude
 import typings.geolib.geolibStrings.lng
@@ -18,7 +18,7 @@ trait AltitudeLatitude extends StObject {
   var latitude: js.UndefOr[lat | typings.geolib.geolibStrings.latitude | `1`] = js.undefined
   
   var longitude: js.UndefOr[
-    typings.geolib.geolibNumbers.`0` | lng | lon | typings.geolib.geolibStrings.longitude
+    typings.geolib.geolibInts.`0` | lng | lon | typings.geolib.geolibStrings.longitude
   ] = js.undefined
 }
 object AltitudeLatitude {
@@ -38,7 +38,7 @@ object AltitudeLatitude {
     
     inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    inline def setLongitude(value: typings.geolib.geolibNumbers.`0` | lng | lon | longitude): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: typings.geolib.geolibInts.`0` | lng | lon | longitude): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }

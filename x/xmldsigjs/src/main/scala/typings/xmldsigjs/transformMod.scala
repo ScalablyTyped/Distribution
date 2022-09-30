@@ -12,7 +12,7 @@ object transformMod {
   
   @JSImport("xmldsigjs/build/types/xml/transform", "Transform")
   @js.native
-  class Transform ()
+  open class Transform ()
     extends XmlSignatureObject
        with ITransform {
     def this(properties: js.Object) = this()
@@ -34,7 +34,7 @@ object transformMod {
     
     def GetInnerXml(): Node | Null = js.native
     
-    def GetOutput(): js.Any = js.native
+    def GetOutput(): Any = js.native
     
     def LoadInnerXml(node: Node): Unit = js.native
   }

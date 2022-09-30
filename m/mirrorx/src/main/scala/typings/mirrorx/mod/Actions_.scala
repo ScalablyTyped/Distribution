@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Actions_
   extends StObject
-     with /* propName */ StringDictionary[js.Any] {
+     with /* propName */ StringDictionary[Any] {
   
   var routing: routeActions
 }

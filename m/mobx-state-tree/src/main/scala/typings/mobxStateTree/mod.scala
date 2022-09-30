@@ -21,7 +21,7 @@ import typings.mobxStateTree.anon.FnCallType
 import typings.mobxStateTree.anon.FnCallTypeDefaultValueOrFunctionOptionalValues
 import typings.mobxStateTree.anon.FnCallTypeProcessorsName
 import typings.mobxStateTree.anon.FnCallValue
-import typings.mobxStateTree.anon.`0`
+import typings.mobxStateTree.anon.OnInvalidated
 import typings.mobxStateTree.arrayMod.IArrayType
 import typings.mobxStateTree.createActionTrackingMiddleware2Mod.IActionTrackingMiddleware2Hooks
 import typings.mobxStateTree.createActionTrackingMiddlewareMod.IActionTrackingMiddlewareHooks
@@ -68,9 +68,9 @@ import typings.mobxStateTree.typeMod.IType
 import typings.mobxStateTree.unionMod.ITypeUnion
 import typings.mobxStateTree.unionMod.UnionOptions
 import typings.mobxStateTree.utilsMod.IDisposer
-import typings.std.Date
 import typings.std.Generator
 import typings.std.IterableIterator
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,7 +92,7 @@ object mod {
   inline def applyPatch(target: IAnyStateTreeNode, patch: js.Array[IJsonPatch]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(target.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def applyPatch(target: IAnyStateTreeNode, patch: IJsonPatch): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyPatch")(target.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def applySnapshot[C](target: IStateTreeNode[IType[C, js.Any, js.Any]], snapshot: C): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applySnapshot")(target.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applySnapshot[C](target: IStateTreeNode[IType[C, Any, Any]], snapshot: C): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applySnapshot")(target.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cast(snapshotOrInstance: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def cast(snapshotOrInstance: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -119,7 +119,7 @@ object mod {
   ): O = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(snapshotOrInstance.asInstanceOf[js.Any]).asInstanceOf[O]
   
   inline def clone_[T /* <: IAnyStateTreeNode */](source: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def clone_[T /* <: IAnyStateTreeNode */](source: T, keepEnvironment: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any], keepEnvironment.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def createActionTrackingMiddleware[T](hooks: IActionTrackingMiddlewareHooks[T]): IMiddlewareHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createActionTrackingMiddleware")(hooks.asInstanceOf[js.Any]).asInstanceOf[IMiddlewareHandler]
@@ -135,7 +135,7 @@ object mod {
   
   inline def escapeJsonPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeJsonPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def flow[R, Args /* <: js.Array[js.Any] */](generator: js.Function1[/* args */ Args, Generator[js.Promise[js.Any], R, js.Any]]): js.Function1[/* args */ Args, js.Promise[FlowReturn[R]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flow")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, js.Promise[FlowReturn[R]]]]
+  inline def flow[R, Args /* <: js.Array[Any] */](generator: js.Function1[/* args */ Args, Generator[PromiseLike[Any], R, Any]]): js.Function1[/* args */ Args, js.Promise[FlowReturn[R]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flow")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, js.Promise[FlowReturn[R]]]]
   
   inline def getChildType(`object`: IAnyStateTreeNode): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildType")(`object`.asInstanceOf[js.Any]).asInstanceOf[IAnyType]
   inline def getChildType(`object`: IAnyStateTreeNode, propertyName: String): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildType")(`object`.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
@@ -168,8 +168,8 @@ object mod {
   
   inline def getRunningActionContext(): js.UndefOr[IActionContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRunningActionContext")().asInstanceOf[js.UndefOr[IActionContext]]
   
-  inline def getSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]]): S = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any]).asInstanceOf[S]
-  inline def getSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]], applyPostProcess: Boolean): S = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any], applyPostProcess.asInstanceOf[js.Any])).asInstanceOf[S]
+  inline def getSnapshot[S](target: IStateTreeNode[IType[Any, S, Any]]): S = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any]).asInstanceOf[S]
+  inline def getSnapshot[S](target: IStateTreeNode[IType[Any, S, Any]], applyPostProcess: Boolean): S = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshot")(target.asInstanceOf[js.Any], applyPostProcess.asInstanceOf[js.Any])).asInstanceOf[S]
   
   inline def getType(`object`: IAnyStateTreeNode): IAnyComplexType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(`object`.asInstanceOf[js.Any]).asInstanceOf[IAnyComplexType]
   
@@ -190,13 +190,13 @@ object mod {
   
   inline def isArrayType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/array.IArrayType<Items> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/array.IArrayType<Items> */ Boolean]
   
-  inline def isFrozenType[IT /* <: IType[T | js.Any, T, T] */, T](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFrozenType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
+  inline def isFrozenType[IT /* <: IType[T | Any, T, T] */, T](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFrozenType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
   inline def isIdentifierType(`type`: IType[Double | String, Double | String, Double | String]): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean]
   
   inline def isLateType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLateType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
-  inline def isLiteralType[IT /* <: ISimpleType[js.Any] */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
+  inline def isLiteralType[IT /* <: ISimpleType[Any] */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
   inline def isMapType[Items /* <: IAnyType */](`type`: IAnyType): /* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/map.IMapType<Items> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMapType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/types/complex-types/map.IMapType<Items> */ Boolean]
   
@@ -206,23 +206,23 @@ object mod {
   
   inline def isPrimitiveType(
     `type`: IType[
-      Boolean | Date | Double | String, 
+      Boolean | js.Date | Double | String, 
       Boolean | Double | String, 
-      Boolean | Date | Double | String
+      Boolean | js.Date | Double | String
     ]
   ): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitiveType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean]
   
   inline def isProtected(target: IAnyStateTreeNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProtected")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isReferenceType[IT /* <: IReferenceType[js.Any] */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReferenceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
+  inline def isReferenceType[IT /* <: IReferenceType[Any] */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReferenceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
   inline def isRefinementType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefinementType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
   inline def isRoot(target: IAnyStateTreeNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isStateTreeNode[IT /* <: IAnyComplexType */](value: js.Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateTreeNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean]
+  inline def isStateTreeNode[IT /* <: IAnyComplexType */](value: Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateTreeNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean]
   
-  inline def isType(value: js.Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean]
+  inline def isType(value: Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType */ Boolean]
   
   inline def isUnionType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
@@ -243,18 +243,16 @@ object mod {
     callback: js.Function2[/* patch */ IJsonPatch, /* reversePatch */ IJsonPatch, Unit]
   ): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onPatch")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  inline def onSnapshot[S](target: IStateTreeNode[IType[js.Any, S, js.Any]], callback: js.Function1[/* snapshot */ S, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
+  inline def onSnapshot[S](target: IStateTreeNode[IType[Any, S, Any]], callback: js.Function1[/* snapshot */ S, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  inline def process[R](generator: js.Function0[IterableIterator[js.Any]]): js.Function0[js.Promise[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[R]]]
-  inline def process[A1](generator: js.Function1[/* a1 */ A1, IterableIterator[js.Any]]): js.Function1[/* a1 */ A1, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a1 */ A1, js.Promise[js.Any]]]
-  inline def process[A1, A2](generator: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[js.Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[js.Any]]]
-  inline def process[A1, A2, A3](generator: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[js.Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[js.Any]]]
-  inline def process[A1, A2, A3, A4](
-    generator: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[js.Any]]
-  ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, js.Promise[js.Any]]]
+  inline def process[R](generator: js.Function0[IterableIterator[Any]]): js.Function0[js.Promise[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[R]]]
+  inline def process[A1](generator: js.Function1[/* a1 */ A1, IterableIterator[Any]]): js.Function1[/* a1 */ A1, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a1 */ A1, js.Promise[Any]]]
+  inline def process[A1, A2](generator: js.Function2[/* a1 */ A1, /* a2 */ A2, IterableIterator[Any]]): js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a1 */ A1, /* a2 */ A2, js.Promise[Any]]]
+  inline def process[A1, A2, A3](generator: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, IterableIterator[Any]]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, js.Promise[Any]]]
+  inline def process[A1, A2, A3, A4](generator: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, IterableIterator[Any]]): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, js.Promise[Any]]]
   inline def process[A1, A2, A3, A4, A5](
-    generator: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[js.Any]]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, js.Promise[js.Any]]]
+    generator: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, IterableIterator[Any]]
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* a5 */ A5, js.Promise[Any]]]
   inline def process[A1, A2, A3, A4, A5, A6](
     generator: js.Function6[
       /* a1 */ A1, 
@@ -263,7 +261,7 @@ object mod {
       /* a4 */ A4, 
       /* a5 */ A5, 
       /* a6 */ A6, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ]
   ): js.Function6[
     /* a1 */ A1, 
@@ -272,7 +270,7 @@ object mod {
     /* a4 */ A4, 
     /* a5 */ A5, 
     /* a6 */ A6, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function6[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -280,7 +278,7 @@ object mod {
     /* a4 */ A4, 
     /* a5 */ A5, 
     /* a6 */ A6, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]]
   inline def process[A1, A2, A3, A4, A5, A6, A7](
     generator: js.Function7[
@@ -291,7 +289,7 @@ object mod {
       /* a5 */ A5, 
       /* a6 */ A6, 
       /* a7 */ A7, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ]
   ): js.Function7[
     /* a1 */ A1, 
@@ -301,7 +299,7 @@ object mod {
     /* a5 */ A5, 
     /* a6 */ A6, 
     /* a7 */ A7, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function7[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -310,7 +308,7 @@ object mod {
     /* a5 */ A5, 
     /* a6 */ A6, 
     /* a7 */ A7, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]]
   inline def process[A1, A2, A3, A4, A5, A6, A7, A8](
     generator: js.Function8[
@@ -322,7 +320,7 @@ object mod {
       /* a6 */ A6, 
       /* a7 */ A7, 
       /* a8 */ A8, 
-      IterableIterator[js.Any]
+      IterableIterator[Any]
     ]
   ): js.Function8[
     /* a1 */ A1, 
@@ -333,7 +331,7 @@ object mod {
     /* a6 */ A6, 
     /* a7 */ A7, 
     /* a8 */ A8, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("process")(generator.asInstanceOf[js.Any]).asInstanceOf[js.Function8[
     /* a1 */ A1, 
     /* a2 */ A2, 
@@ -343,7 +341,7 @@ object mod {
     /* a6 */ A6, 
     /* a7 */ A7, 
     /* a8 */ A8, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]]
   
   inline def protect(target: IAnyStateTreeNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("protect")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -375,7 +373,7 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any
   ]]
   
-  inline def resolvePath(target: IAnyStateTreeNode, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolvePath(target: IAnyStateTreeNode, path: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def setLivelinessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelinessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -385,12 +383,12 @@ object mod {
   
   inline def toGenerator[R](p: js.Promise[R]): Generator[js.Promise[R], R, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGenerator")(p.asInstanceOf[js.Any]).asInstanceOf[Generator[js.Promise[R], R, R]]
   
-  inline def toGeneratorFunction[R, Args /* <: js.Array[js.Any] */](p: js.Function1[/* args */ Args, js.Promise[R]]): js.Function1[/* args */ Args, Generator[js.Promise[R], R, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeneratorFunction")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Generator[js.Promise[R], R, R]]]
+  inline def toGeneratorFunction[R, Args /* <: js.Array[Any] */](p: js.Function1[/* args */ Args, js.Promise[R]]): js.Function1[/* args */ Args, Generator[js.Promise[R], R, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toGeneratorFunction")(p.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Generator[js.Promise[R], R, R]]]
   
   inline def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]]): js.UndefOr[N] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryReference")(getter.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[N]]
   inline def tryReference[N /* <: IAnyStateTreeNode */](getter: js.Function0[js.UndefOr[N | Null]], checkIfAlive: Boolean): js.UndefOr[N] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryReference")(getter.asInstanceOf[js.Any], checkIfAlive.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[N]]
   
-  inline def tryResolve(target: IAnyStateTreeNode, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryResolve")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def tryResolve(target: IAnyStateTreeNode, path: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tryResolve")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def typecheck[IT /* <: IAnyType */](`type`: IT, value: ExtractCSTWithSTN[IT]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("typecheck")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -402,8 +400,8 @@ object mod {
     
     @JSImport("mobx-state-tree", "types.Date")
     @js.native
-    def Date: IType[Double | typings.std.Date, Double, typings.std.Date] = js.native
-    inline def Date_=(x: IType[Double | Date, Double, Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+    def Date: IType[Double | js.Date, Double, js.Date] = js.native
+    inline def Date_=(x: IType[Double | js.Date, Double, js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-state-tree", "types.array")
     @js.native
@@ -837,7 +835,7 @@ object mod {
     
     inline def frozen[T](): IType[T, T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")().asInstanceOf[IType[T, T, T]]
     inline def frozen[T](defaultValue: T): IType[js.UndefOr[T | Null], T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[IType[js.UndefOr[T | Null], T, T]]
-    inline def frozen[C](subType: IType[C, js.Any, js.Any]): IType[C, C, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")(subType.asInstanceOf[js.Any]).asInstanceOf[IType[C, C, C]]
+    inline def frozen[C](subType: IType[C, Any, Any]): IType[C, C, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")(subType.asInstanceOf[js.Any]).asInstanceOf[IType[C, C, C]]
     @JSImport("mobx-state-tree", "types.frozen")
     @js.native
     def frozen_Ftypes: FnCallDefaultValue = js.native
@@ -871,11 +869,11 @@ object mod {
     @js.native
     def literal: FnCallValue = js.native
     inline def literal(value: String): ISimpleType[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[String]]
+    inline def literal(value: js.Date): ISimpleType[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[js.Date]]
     inline def literal(value: Boolean): ISimpleType[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Boolean]]
     inline def literal(value: Double): ISimpleType[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Double]]
     inline def literal(value: Null): ISimpleType[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Null]]
     inline def literal(value: Unit): ISimpleType[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Unit]]
-    inline def literal(value: Date): ISimpleType[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Date]]
     inline def literal_=(x: FnCallValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("literal")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-state-tree", "types.map")
@@ -999,10 +997,14 @@ object mod {
     @js.native
     def safeReference: Fn0 = js.native
     inline def safeReference[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any]).asInstanceOf[IMaybe[IReferenceType[IT]]]
-    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & AcceptsUndefined): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
+    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptionsGetSet[IT] & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: js.Object & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
     inline def safeReference_=(x: Fn0): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("safeReference")(x.asInstanceOf[js.Any])
     
-    inline def safeReference_IT_IAnyComplexType_IReferenceType[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & `0`): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+    inline def safeReference_IT_IMaybe[IT /* <: IAnyComplexType */](
+      subType: IT,
+      options: (ReferenceOptionsGetSet[IT] & AcceptsUndefined[IT]) | (js.Object & AcceptsUndefined[IT])
+    ): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
     
     @JSImport("mobx-state-tree", "types.snapshotProcessor")
     @js.native
@@ -1041,9 +1043,9 @@ object mod {
     @JSImport("mobx-state-tree", "types.union")
     @js.native
     def union: FnCallOptionsABCDEFGHI = js.native
-    inline def union(dispatchOrType: IAnyType, otherTypes: IAnyType*): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(dispatchOrType.asInstanceOf[js.Any], otherTypes.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
-    inline def union(dispatchOrType: UnionOptions, otherTypes: IAnyType*): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(dispatchOrType.asInstanceOf[js.Any], otherTypes.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
-    inline def union(types: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(types.asInstanceOf[js.Any]).asInstanceOf[IAnyType]
+    inline def union(dispatchOrType: IAnyType, otherTypes: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(scala.List(dispatchOrType.asInstanceOf[js.Any]).`++`(otherTypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IAnyType]
+    inline def union(dispatchOrType: UnionOptions, otherTypes: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(scala.List(dispatchOrType.asInstanceOf[js.Any]).`++`(otherTypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IAnyType]
+    inline def union(types: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IAnyType]
     inline def union[CA, SA, TA, CB, SB, TB](A: IType[CA, SA, TA], B: IType[CB, SB, TB]): ITypeUnion[CA | CB, SA | SB, TA | TB] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB, SA | SB, TA | TB]]
     inline def union[CA, SA, TA, CB, SB, TB](options: UnionOptions, A: IType[CA, SA, TA], B: IType[CB, SB, TB]): ITypeUnion[CA | CB, SA | SB, TA | TB] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB, SA | SB, TA | TB]]
     inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): ITypeUnion[

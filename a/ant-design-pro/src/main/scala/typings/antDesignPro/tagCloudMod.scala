@@ -11,8 +11,7 @@ object tagCloudMod {
   
   @JSImport("ant-design-pro/lib/Charts/TagCloud", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ITagCloudProps, js.Any, js.Any]
+  open class default () extends Component[ITagCloudProps, Any, Any]
   
   trait ITagCloudProps extends StObject {
     
@@ -33,7 +32,7 @@ object tagCloudMod {
       
       inline def setData(value: js.Array[Name]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Name*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Name*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -43,5 +42,5 @@ object tagCloudMod {
     }
   }
   
-  type TagCloud = Component[ITagCloudProps, js.Any, js.Any]
+  type TagCloud = Component[ITagCloudProps, Any, Any]
 }

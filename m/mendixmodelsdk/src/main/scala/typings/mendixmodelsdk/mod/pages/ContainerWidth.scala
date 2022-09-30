@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ContainerWidth")
 @js.native
-class ContainerWidth protected ()
+open class ContainerWidth protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ContainerWidth {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

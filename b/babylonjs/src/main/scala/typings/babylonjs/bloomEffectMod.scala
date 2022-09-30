@@ -55,26 +55,26 @@ object bloomEffectMod {
     /* private */ var _blurY: Any = js.native
     
     /**
-      * @hidden Internal
+      * @internal Internal
       */
     var _downscale: ExtractHighlightsPostProcess = js.native
     
     /**
-      * @hidden Internal
+      * @internal Internal
       */
     var _effects: js.Array[PostProcess] = js.native
     
     /**
       * Internal
       * @returns if all the contained post processes are ready.
-      * @hidden
+      * @internal
       */
     def _isReady(): Boolean = js.native
     
     /* private */ var _merge: Any = js.native
     
     /**
-      * @hidden Internal
+      * @internal Internal
       */
     def _updateEffects(): Unit = js.native
     

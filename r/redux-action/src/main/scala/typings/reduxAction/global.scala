@@ -23,9 +23,9 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createAction[Payload](): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+    inline def createAction[Payload](): ActionFunction1[Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[Any, ThunkAction[Payload]]]
     inline def createAction[Payload](payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
-    inline def createAction[Payload](`type`: String): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+    inline def createAction[Payload](`type`: String): ActionFunction1[Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Any, ThunkAction[Payload]]]
     inline def createAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
     inline def createAction[Payload, Arg](payloadCreator: ActionFunction1[Arg, js.Promise[Payload] | Payload]): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
     inline def createAction[Payload, Meta](

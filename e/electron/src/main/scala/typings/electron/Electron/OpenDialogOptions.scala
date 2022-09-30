@@ -72,7 +72,7 @@ object OpenDialogOptions {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: FileFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: FileFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
@@ -88,7 +88,7 @@ object OpenDialogOptions {
     
     inline def setPropertiesVarargs(
       value: (openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory | dontAddToRecent)*
-    ): Self = StObject.set(x, "properties", js.Array(value :_*))
+    ): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setSecurityScopedBookmarks(value: Boolean): Self = StObject.set(x, "securityScopedBookmarks", value.asInstanceOf[js.Any])
     

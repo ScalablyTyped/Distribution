@@ -3,6 +3,8 @@ package typings.nats
 import typings.nats.anon.Duration
 import typings.nats.queuedIteratorMod.QueuedIterator
 import typings.std.Map
+import typings.std.Promise
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +57,7 @@ object utilMod {
   inline def delay(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")().asInstanceOf[js.Promise[Unit]]
   inline def delay(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def extend(a: Any, b: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(a.asInstanceOf[js.Any]).`++`(b.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def extend(a: Any, b: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(a.asInstanceOf[js.Any]).`++`(b.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def extractProtocolMessage(a: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractProtocolMessage")(a.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -71,14 +73,15 @@ object utilMod {
   
   @js.native
   trait Deferred_[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def reject(): Unit = js.native
     def reject(reason: Any): Unit = js.native
     
     def resolve(): Unit = js.native
     def resolve(value: T): Unit = js.native
-    def resolve(value: js.Thenable[T]): Unit = js.native
+    def resolve(value: PromiseLike[T]): Unit = js.native
   }
   
   trait Pending extends StObject {
@@ -137,7 +140,8 @@ object utilMod {
   
   @js.native
   trait Timeout_[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def cancel(): Unit = js.native
   }

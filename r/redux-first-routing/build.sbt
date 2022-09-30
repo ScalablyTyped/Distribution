@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-first-routing"
-version := "0.3-dt-20180613Z-7cd188"
-scalaVersion := "3.0.1"
+version := "0.3-dt-20220118Z-fc6ce5"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-965ac3",
-  "org.scalablytyped" %%% "redux" % "4.0.5-213600",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "history" % "5.3.0-740b01",
+  "org.scalablytyped" %%% "redux" % "4.2.0-0fa2db",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

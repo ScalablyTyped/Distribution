@@ -12,10 +12,6 @@ object commonmarkStrings {
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
-  sealed trait Rightparenthesis extends StObject
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
-  
-  @js.native
   sealed trait block_quote
     extends StObject
        with NodeType

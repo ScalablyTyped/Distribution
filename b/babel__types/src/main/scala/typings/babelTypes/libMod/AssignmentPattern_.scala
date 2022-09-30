@@ -16,11 +16,11 @@ trait AssignmentPattern_
   
   var decorators: js.UndefOr[js.Array[Decorator_] | Null] = js.undefined
   
-  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression | TSTypeAssertion | TSNonNullExpression
+  var left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__
   
   var right: Expression
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null] = js.undefined
+  var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
   var type_AssignmentPattern_ : AssignmentPattern
@@ -28,7 +28,7 @@ trait AssignmentPattern_
 object AssignmentPattern_ {
   
   inline def apply(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression | TSTypeAssertion | TSNonNullExpression,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
     right: Expression
   ): AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
@@ -47,14 +47,14 @@ object AssignmentPattern_ {
     inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
     
     inline def setLeft(
-      value: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression | TSTypeAssertion | TSNonNullExpression
+      value: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__
     ): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     inline def setType(value: AssignmentPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     

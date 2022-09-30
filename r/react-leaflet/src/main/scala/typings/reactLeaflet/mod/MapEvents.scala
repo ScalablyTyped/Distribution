@@ -77,6 +77,8 @@ trait MapEvents extends StObject {
   
   var onviewreset: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
+  var onzoom: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
+  
   var onzoomend: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
   
   var onzoomlevelschange: js.UndefOr[js.Function1[/* event */ LeafletEvent, Unit]] = js.undefined
@@ -215,6 +217,10 @@ object MapEvents {
     inline def setOnviewreset(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onviewreset", js.Any.fromFunction1(value))
     
     inline def setOnviewresetUndefined: Self = StObject.set(x, "onviewreset", js.undefined)
+    
+    inline def setOnzoom(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onzoom", js.Any.fromFunction1(value))
+    
+    inline def setOnzoomUndefined: Self = StObject.set(x, "onzoom", js.undefined)
     
     inline def setOnzoomend(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onzoomend", js.Any.fromFunction1(value))
     

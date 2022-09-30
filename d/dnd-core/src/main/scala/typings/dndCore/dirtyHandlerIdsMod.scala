@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dirtyHandlerIdsMod {
   
-  @JSImport("dnd-core/lib/reducers/dirtyHandlerIds", JSImport.Namespace)
+  @JSImport("dnd-core/dist/reducers/dirtyHandlerIds", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -31,11 +31,11 @@ object dirtyHandlerIdsMod {
       
       inline def setPrevTargetIds(value: js.Array[String]): Self = StObject.set(x, "prevTargetIds", value.asInstanceOf[js.Any])
       
-      inline def setPrevTargetIdsVarargs(value: String*): Self = StObject.set(x, "prevTargetIds", js.Array(value :_*))
+      inline def setPrevTargetIdsVarargs(value: String*): Self = StObject.set(x, "prevTargetIds", js.Array(value*))
       
       inline def setTargetIds(value: js.Array[String]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
       
-      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value*))
     }
   }
   

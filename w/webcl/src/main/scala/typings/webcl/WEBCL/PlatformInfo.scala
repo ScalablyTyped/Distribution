@@ -1,21 +1,21 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x0900`
-import typings.webcl.webclNumbers.`0x0901`
-import typings.webcl.webclNumbers.`0x0902`
-import typings.webcl.webclNumbers.`0x0903`
-import typings.webcl.webclNumbers.`0x0904`
+import typings.webcl.webclInts.`0x0900`
+import typings.webcl.webclInts.`0x0901`
+import typings.webcl.webclInts.`0x0902`
+import typings.webcl.webclInts.`0x0903`
+import typings.webcl.webclInts.`0x0904`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_platforinfo */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x0900`
-  - typings.webcl.webclNumbers.`0x0901`
-  - typings.webcl.webclNumbers.`0x0902`
-  - typings.webcl.webclNumbers.`0x0903`
-  - typings.webcl.webclNumbers.`0x0904`
+  - typings.webcl.webclInts.`0x0900`
+  - typings.webcl.webclInts.`0x0901`
+  - typings.webcl.webclInts.`0x0902`
+  - typings.webcl.webclInts.`0x0903`
+  - typings.webcl.webclInts.`0x0904`
 */
 trait PlatformInfo extends StObject
 object PlatformInfo {

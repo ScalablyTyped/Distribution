@@ -1,7 +1,7 @@
 package typings.jspreadsheetCe.mod
 
-import typings.jspreadsheetCe.jspreadsheetCeNumbers.`0`
-import typings.jspreadsheetCe.jspreadsheetCeNumbers.`1`
+import typings.jspreadsheetCe.jspreadsheetCeInts.`0`
+import typings.jspreadsheetCe.jspreadsheetCeInts.`1`
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLTableColElement

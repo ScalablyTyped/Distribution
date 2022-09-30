@@ -49,7 +49,7 @@ trait TraceConfig extends StObject {
     * optional additional configuration for data collection. See the Chromium
     * memory-infra docs for more information.
     */
-  var memory_dump_config: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var memory_dump_config: js.UndefOr[Record[String, Any]] = js.undefined
   
   /**
     * Can be `record-until-full`, `record-continuously`, `record-as-much-as-possible`
@@ -86,27 +86,27 @@ object TraceConfig {
     
     inline def setExcluded_categoriesUndefined: Self = StObject.set(x, "excluded_categories", js.undefined)
     
-    inline def setExcluded_categoriesVarargs(value: String*): Self = StObject.set(x, "excluded_categories", js.Array(value :_*))
+    inline def setExcluded_categoriesVarargs(value: String*): Self = StObject.set(x, "excluded_categories", js.Array(value*))
     
     inline def setHistogram_names(value: js.Array[String]): Self = StObject.set(x, "histogram_names", value.asInstanceOf[js.Any])
     
     inline def setHistogram_namesUndefined: Self = StObject.set(x, "histogram_names", js.undefined)
     
-    inline def setHistogram_namesVarargs(value: String*): Self = StObject.set(x, "histogram_names", js.Array(value :_*))
+    inline def setHistogram_namesVarargs(value: String*): Self = StObject.set(x, "histogram_names", js.Array(value*))
     
     inline def setIncluded_categories(value: js.Array[String]): Self = StObject.set(x, "included_categories", value.asInstanceOf[js.Any])
     
     inline def setIncluded_categoriesUndefined: Self = StObject.set(x, "included_categories", js.undefined)
     
-    inline def setIncluded_categoriesVarargs(value: String*): Self = StObject.set(x, "included_categories", js.Array(value :_*))
+    inline def setIncluded_categoriesVarargs(value: String*): Self = StObject.set(x, "included_categories", js.Array(value*))
     
     inline def setIncluded_process_ids(value: js.Array[Double]): Self = StObject.set(x, "included_process_ids", value.asInstanceOf[js.Any])
     
     inline def setIncluded_process_idsUndefined: Self = StObject.set(x, "included_process_ids", js.undefined)
     
-    inline def setIncluded_process_idsVarargs(value: Double*): Self = StObject.set(x, "included_process_ids", js.Array(value :_*))
+    inline def setIncluded_process_idsVarargs(value: Double*): Self = StObject.set(x, "included_process_ids", js.Array(value*))
     
-    inline def setMemory_dump_config(value: Record[String, js.Any]): Self = StObject.set(x, "memory_dump_config", value.asInstanceOf[js.Any])
+    inline def setMemory_dump_config(value: Record[String, Any]): Self = StObject.set(x, "memory_dump_config", value.asInstanceOf[js.Any])
     
     inline def setMemory_dump_configUndefined: Self = StObject.set(x, "memory_dump_config", js.undefined)
     

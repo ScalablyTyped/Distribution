@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.TouchBarGroup")
 @js.native
-class TouchBarGroup protected () extends EventEmitter {
+open class TouchBarGroup protected () extends EventEmitter {
   // Docs: https://electronjs.org/docs/api/touch-bar-group
   /**
     * TouchBarGroup

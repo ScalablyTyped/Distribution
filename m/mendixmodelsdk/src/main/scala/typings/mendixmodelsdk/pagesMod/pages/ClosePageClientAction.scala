@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ClosePageClientAction")
 @js.native
-class ClosePageClientAction protected () extends ClientAction {
+open class ClosePageClientAction protected () extends ClientAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -47,7 +47,7 @@ class ClosePageClientAction protected () extends ClientAction {
 }
 object ClosePageClientAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ClosePageClientAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -247,13 +247,13 @@ object ClosePageClientAction {
   inline def createInWidgetValueUnderAction(container: WidgetValue): ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[ClosePageClientAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ClosePageClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClosePageClientAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ClosePageClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -65,7 +65,7 @@ object mod {
   inline def sort[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def sort[T](array: js.Array[T], compareFunction: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any], compareFunction.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def splice[T](array: js.Array[T], start: Double, deleteCount: Double, items: T*): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[T]]
+  inline def splice[T](array: js.Array[T], start: Double, deleteCount: Double, items: T*): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[T]]
   
   inline def thaw[T](collection: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("thaw")(collection.asInstanceOf[js.Any]).asInstanceOf[T]
   

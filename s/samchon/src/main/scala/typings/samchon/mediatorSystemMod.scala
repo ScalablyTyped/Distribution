@@ -1,7 +1,6 @@
 package typings.samchon
 
 import typings.samchon.distributedSystemArrayMediatorMod.DistributedSystemArrayMediator
-import typings.samchon.distributedSystemArrayMod.DistributedSystemArray
 import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediator
 import typings.samchon.parallelSystemArrayMod.ParallelSystemArray
@@ -39,15 +38,13 @@ object mediatorSystemMod {
       */
     def getSystemArray(): ParallelSystemArrayMediator[ParallelSystem] | DistributedSystemArrayMediator[DistributedSystem] = js.native
     /**
+      * Get parent {@link ParallelSystemArrayMediator} object.
+      */
+    /**
       * Get parent {@link DistributedSystemArrayMediator} object.
       */
     @JSName("getSystemArray")
-    def getSystemArray_SystemArray_DistributedSystemArrayDistributedSystem_SystemArray[SystemArray /* <: DistributedSystemArray[DistributedSystem] */](): SystemArray = js.native
-    /**
-      * Get parent {@link ParallelSystemArrayMediator} object.
-      */
-    @JSName("getSystemArray")
-    def getSystemArray_SystemArray_ParallelSystemArrayParallelSystem_SystemArray[SystemArray /* <: ParallelSystemArray[ParallelSystem] */](): SystemArray = js.native
+    def getSystemArray_SystemArray_SystemArray[SystemArray /* <: ParallelSystemArray[ParallelSystem] */](): SystemArray = js.native
     
     /**
       * @hidden

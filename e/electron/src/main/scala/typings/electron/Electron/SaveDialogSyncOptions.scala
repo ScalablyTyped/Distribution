@@ -60,6 +60,9 @@ trait SaveDialogSyncOptions extends StObject {
     */
   var showsTagField: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The dialog title. Cannot be displayed on some _Linux_ desktop environments.
+    */
   var title: js.UndefOr[String] = js.undefined
 }
 object SaveDialogSyncOptions {
@@ -83,7 +86,7 @@ object SaveDialogSyncOptions {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: FileFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: FileFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
@@ -103,7 +106,7 @@ object SaveDialogSyncOptions {
     
     inline def setPropertiesVarargs(
       value: (showHiddenFiles | createDirectory | treatPackageAsDirectory | showOverwriteConfirmation | dontAddToRecent)*
-    ): Self = StObject.set(x, "properties", js.Array(value :_*))
+    ): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setSecurityScopedBookmarks(value: Boolean): Self = StObject.set(x, "securityScopedBookmarks", value.asInstanceOf[js.Any])
     

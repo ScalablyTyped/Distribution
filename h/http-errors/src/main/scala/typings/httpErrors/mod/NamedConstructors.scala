@@ -10,258 +10,258 @@ trait NamedConstructors
   extends StObject
      with /* code */ StringDictionary[HttpErrorConstructor[Double]] {
   
-  var `400`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`400`]
+  var `400`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`400`]
   
-  var `401`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`401`]
+  var `401`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`401`]
   
-  var `402`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`402`]
+  var `402`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`402`]
   
-  var `403`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`403`]
+  var `403`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`403`]
   
-  var `404`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`404`]
+  var `404`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`404`]
   
-  var `405`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`405`]
+  var `405`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`405`]
   
-  var `406`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`406`]
+  var `406`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`406`]
   
-  var `407`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`407`]
+  var `407`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`407`]
   
-  var `408`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`408`]
+  var `408`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]
   
-  var `409`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`409`]
+  var `409`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`409`]
   
-  var `410`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`410`]
+  var `410`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`410`]
   
-  var `411`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`411`]
+  var `411`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`411`]
   
-  var `412`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`412`]
+  var `412`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`412`]
   
-  var `413`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`413`]
+  var `413`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`413`]
   
-  var `414`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`414`]
+  var `414`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`414`]
   
-  var `415`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`415`]
+  var `415`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`415`]
   
-  var `416`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`416`]
+  var `416`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`416`]
   
-  var `417`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`417`]
+  var `417`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`417`]
   
-  var `418`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`418`]
+  var `418`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`418`]
   
-  var `421`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`421`]
+  var `421`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`421`]
   
-  var `422`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`422`]
+  var `422`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`422`]
   
-  var `423`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`423`]
+  var `423`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`423`]
   
-  var `424`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`424`]
+  var `424`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`424`]
   
-  var `425`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`425`]
+  var `425`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`]
   
-  var `426`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`426`]
+  var `426`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`426`]
   
-  var `428`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`428`]
+  var `428`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`428`]
   
-  var `429`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`429`]
+  var `429`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`429`]
   
-  var `431`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`431`]
+  var `431`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`431`]
   
-  var `451`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`451`]
+  var `451`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`451`]
   
-  var `500`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]
+  var `500`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]
   
-  var `501`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`501`]
+  var `501`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`501`]
   
-  var `502`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`502`]
+  var `502`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`]
   
-  var `503`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]
+  var `503`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]
   
-  var `504`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`504`]
+  var `504`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`]
   
-  var `505`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`505`]
+  var `505`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`505`]
   
-  var `506`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`506`]
+  var `506`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`506`]
   
-  var `507`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`507`]
+  var `507`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`507`]
   
-  var `508`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`508`]
+  var `508`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`508`]
   
-  var `509`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`509`]
+  var `509`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`509`]
   
-  var `510`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`510`]
+  var `510`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`510`]
   
-  var `511`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`511`]
+  var `511`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`511`]
   
-  var BadGateway: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`502`]
+  var BadGateway: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`]
   
-  var BadRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`400`]
+  var BadRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`400`]
   
-  var BandwidthLimitExceeded: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`509`]
+  var BandwidthLimitExceeded: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`509`]
   
-  var Conflict: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`409`]
+  var Conflict: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`409`]
   
-  var ExpectationFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`417`]
+  var ExpectationFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`417`]
   
-  var FailedDependency: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`424`]
+  var FailedDependency: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`424`]
   
-  var Forbidden: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`403`]
+  var Forbidden: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`403`]
   
-  var GatewayTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`504`]
+  var GatewayTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`]
   
-  var Gone: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`410`]
+  var Gone: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`410`]
   
-  var HTTPVersionNotSupported: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`505`]
+  var HTTPVersionNotSupported: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`505`]
   
   var HttpError: HttpErrorConstructor[Double]
   
-  var ImATeapot: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`418`]
+  var ImATeapot: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`418`]
   
-  var InsufficientStorage: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`507`]
+  var InsufficientStorage: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`507`]
   
-  var InternalServerError: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]
+  var InternalServerError: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]
   
-  var LengthRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`411`]
+  var LengthRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`411`]
   
-  var Locked: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`423`]
+  var Locked: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`423`]
   
-  var LoopDetected: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`508`]
+  var LoopDetected: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`508`]
   
-  var MethodNotAllowed: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`405`]
+  var MethodNotAllowed: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`405`]
   
-  var MisdirectedRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`421`]
+  var MisdirectedRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`421`]
   
-  var NetworkAuthenticationRequire: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`511`]
+  var NetworkAuthenticationRequire: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`511`]
   
-  var NotAcceptable: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`406`]
+  var NotAcceptable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`406`]
   
-  var NotExtended: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`510`]
+  var NotExtended: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`510`]
   
-  var NotFound: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`404`]
+  var NotFound: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`404`]
   
-  var NotImplemented: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`501`]
+  var NotImplemented: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`501`]
   
-  var PayloadTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`413`]
+  var PayloadTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`413`]
   
-  var PaymentRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`402`]
+  var PaymentRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`402`]
   
-  var PreconditionFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`412`]
+  var PreconditionFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`412`]
   
-  var PreconditionRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`428`]
+  var PreconditionRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`428`]
   
-  var ProxyAuthenticationRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`407`]
+  var ProxyAuthenticationRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`407`]
   
-  var RangeNotSatisfiable: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`416`]
+  var RangeNotSatisfiable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`416`]
   
-  var RequestHeaderFieldsTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`431`]
+  var RequestHeaderFieldsTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`431`]
   
-  var RequestTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`408`]
+  var RequestTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]
   
-  var ServiceUnavailable: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]
+  var ServiceUnavailable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]
   
-  var TooManyRequests: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`429`]
+  var TooManyRequests: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`429`]
   
-  var URITooLong: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`414`]
+  var URITooLong: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`414`]
   
-  var Unauthorized: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`401`]
+  var Unauthorized: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`401`]
   
-  var UnavailableForLegalReasons: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`451`]
+  var UnavailableForLegalReasons: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`451`]
   
-  var UnorderedCollection: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`425`]
+  var UnorderedCollection: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`]
   
-  var UnprocessableEntity: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`422`]
+  var UnprocessableEntity: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`422`]
   
-  var UnsupportedMediaType: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`415`]
+  var UnsupportedMediaType: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`415`]
   
-  var UpgradeRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`426`]
+  var UpgradeRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`426`]
   
-  var VariantAlsoNegotiates: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`506`]
+  var VariantAlsoNegotiates: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`506`]
 }
 object NamedConstructors {
   
   inline def apply(
-    `400`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`400`],
-    `401`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`401`],
-    `402`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`402`],
-    `403`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`403`],
-    `404`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`404`],
-    `405`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`405`],
-    `406`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`406`],
-    `407`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`407`],
-    `408`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`408`],
-    `409`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`409`],
-    `410`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`410`],
-    `411`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`411`],
-    `412`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`412`],
-    `413`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`413`],
-    `414`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`414`],
-    `415`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`415`],
-    `416`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`416`],
-    `417`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`417`],
-    `418`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`418`],
-    `421`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`421`],
-    `422`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`422`],
-    `423`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`423`],
-    `424`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`424`],
-    `425`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`425`],
-    `426`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`426`],
-    `428`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`428`],
-    `429`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`429`],
-    `431`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`431`],
-    `451`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`451`],
-    `500`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`],
-    `501`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`501`],
-    `502`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`502`],
-    `503`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`],
-    `504`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`504`],
-    `505`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`505`],
-    `506`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`506`],
-    `507`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`507`],
-    `508`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`508`],
-    `509`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`509`],
-    `510`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`510`],
-    `511`: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`511`],
-    BadGateway: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`502`],
-    BadRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`400`],
-    BandwidthLimitExceeded: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`509`],
-    Conflict: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`409`],
-    ExpectationFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`417`],
-    FailedDependency: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`424`],
-    Forbidden: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`403`],
-    GatewayTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`504`],
-    Gone: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`410`],
-    HTTPVersionNotSupported: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`505`],
+    `400`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`400`],
+    `401`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`401`],
+    `402`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`402`],
+    `403`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`403`],
+    `404`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`404`],
+    `405`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`405`],
+    `406`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`406`],
+    `407`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`407`],
+    `408`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`],
+    `409`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`409`],
+    `410`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`410`],
+    `411`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`411`],
+    `412`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`412`],
+    `413`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`413`],
+    `414`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`414`],
+    `415`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`415`],
+    `416`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`416`],
+    `417`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`417`],
+    `418`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`418`],
+    `421`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`421`],
+    `422`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`422`],
+    `423`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`423`],
+    `424`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`424`],
+    `425`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`],
+    `426`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`426`],
+    `428`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`428`],
+    `429`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`429`],
+    `431`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`431`],
+    `451`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`451`],
+    `500`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`],
+    `501`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`501`],
+    `502`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`],
+    `503`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`],
+    `504`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`],
+    `505`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`505`],
+    `506`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`506`],
+    `507`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`507`],
+    `508`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`508`],
+    `509`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`509`],
+    `510`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`510`],
+    `511`: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`511`],
+    BadGateway: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`],
+    BadRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`400`],
+    BandwidthLimitExceeded: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`509`],
+    Conflict: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`409`],
+    ExpectationFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`417`],
+    FailedDependency: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`424`],
+    Forbidden: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`403`],
+    GatewayTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`],
+    Gone: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`410`],
+    HTTPVersionNotSupported: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`505`],
     HttpError: HttpErrorConstructor[Double],
-    ImATeapot: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`418`],
-    InsufficientStorage: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`507`],
-    InternalServerError: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`],
-    LengthRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`411`],
-    Locked: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`423`],
-    LoopDetected: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`508`],
-    MethodNotAllowed: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`405`],
-    MisdirectedRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`421`],
-    NetworkAuthenticationRequire: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`511`],
-    NotAcceptable: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`406`],
-    NotExtended: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`510`],
-    NotFound: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`404`],
-    NotImplemented: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`501`],
-    PayloadTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`413`],
-    PaymentRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`402`],
-    PreconditionFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`412`],
-    PreconditionRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`428`],
-    ProxyAuthenticationRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`407`],
-    RangeNotSatisfiable: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`416`],
-    RequestHeaderFieldsTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`431`],
-    RequestTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`408`],
-    ServiceUnavailable: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`],
-    TooManyRequests: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`429`],
-    URITooLong: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`414`],
-    Unauthorized: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`401`],
-    UnavailableForLegalReasons: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`451`],
-    UnorderedCollection: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`425`],
-    UnprocessableEntity: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`422`],
-    UnsupportedMediaType: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`415`],
-    UpgradeRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`426`],
-    VariantAlsoNegotiates: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`506`]
+    ImATeapot: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`418`],
+    InsufficientStorage: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`507`],
+    InternalServerError: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`],
+    LengthRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`411`],
+    Locked: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`423`],
+    LoopDetected: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`508`],
+    MethodNotAllowed: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`405`],
+    MisdirectedRequest: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`421`],
+    NetworkAuthenticationRequire: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`511`],
+    NotAcceptable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`406`],
+    NotExtended: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`510`],
+    NotFound: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`404`],
+    NotImplemented: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`501`],
+    PayloadTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`413`],
+    PaymentRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`402`],
+    PreconditionFailed: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`412`],
+    PreconditionRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`428`],
+    ProxyAuthenticationRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`407`],
+    RangeNotSatisfiable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`416`],
+    RequestHeaderFieldsTooLarge: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`431`],
+    RequestTimeout: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`],
+    ServiceUnavailable: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`],
+    TooManyRequests: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`429`],
+    URITooLong: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`414`],
+    Unauthorized: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`401`],
+    UnavailableForLegalReasons: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`451`],
+    UnorderedCollection: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`],
+    UnprocessableEntity: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`422`],
+    UnsupportedMediaType: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`415`],
+    UpgradeRequired: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`426`],
+    VariantAlsoNegotiates: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`506`]
   ): NamedConstructors = {
     val __obj = js.Dynamic.literal(BadGateway = BadGateway.asInstanceOf[js.Any], BadRequest = BadRequest.asInstanceOf[js.Any], BandwidthLimitExceeded = BandwidthLimitExceeded.asInstanceOf[js.Any], Conflict = Conflict.asInstanceOf[js.Any], ExpectationFailed = ExpectationFailed.asInstanceOf[js.Any], FailedDependency = FailedDependency.asInstanceOf[js.Any], Forbidden = Forbidden.asInstanceOf[js.Any], GatewayTimeout = GatewayTimeout.asInstanceOf[js.Any], Gone = Gone.asInstanceOf[js.Any], HTTPVersionNotSupported = HTTPVersionNotSupported.asInstanceOf[js.Any], HttpError = HttpError.asInstanceOf[js.Any], ImATeapot = ImATeapot.asInstanceOf[js.Any], InsufficientStorage = InsufficientStorage.asInstanceOf[js.Any], InternalServerError = InternalServerError.asInstanceOf[js.Any], LengthRequired = LengthRequired.asInstanceOf[js.Any], Locked = Locked.asInstanceOf[js.Any], LoopDetected = LoopDetected.asInstanceOf[js.Any], MethodNotAllowed = MethodNotAllowed.asInstanceOf[js.Any], MisdirectedRequest = MisdirectedRequest.asInstanceOf[js.Any], NetworkAuthenticationRequire = NetworkAuthenticationRequire.asInstanceOf[js.Any], NotAcceptable = NotAcceptable.asInstanceOf[js.Any], NotExtended = NotExtended.asInstanceOf[js.Any], NotFound = NotFound.asInstanceOf[js.Any], NotImplemented = NotImplemented.asInstanceOf[js.Any], PayloadTooLarge = PayloadTooLarge.asInstanceOf[js.Any], PaymentRequired = PaymentRequired.asInstanceOf[js.Any], PreconditionFailed = PreconditionFailed.asInstanceOf[js.Any], PreconditionRequired = PreconditionRequired.asInstanceOf[js.Any], ProxyAuthenticationRequired = ProxyAuthenticationRequired.asInstanceOf[js.Any], RangeNotSatisfiable = RangeNotSatisfiable.asInstanceOf[js.Any], RequestHeaderFieldsTooLarge = RequestHeaderFieldsTooLarge.asInstanceOf[js.Any], RequestTimeout = RequestTimeout.asInstanceOf[js.Any], ServiceUnavailable = ServiceUnavailable.asInstanceOf[js.Any], TooManyRequests = TooManyRequests.asInstanceOf[js.Any], URITooLong = URITooLong.asInstanceOf[js.Any], Unauthorized = Unauthorized.asInstanceOf[js.Any], UnavailableForLegalReasons = UnavailableForLegalReasons.asInstanceOf[js.Any], UnorderedCollection = UnorderedCollection.asInstanceOf[js.Any], UnprocessableEntity = UnprocessableEntity.asInstanceOf[js.Any], UnsupportedMediaType = UnsupportedMediaType.asInstanceOf[js.Any], UpgradeRequired = UpgradeRequired.asInstanceOf[js.Any], VariantAlsoNegotiates = VariantAlsoNegotiates.asInstanceOf[js.Any])
     __obj.updateDynamic("400")(`400`.asInstanceOf[js.Any])
@@ -310,170 +310,170 @@ object NamedConstructors {
   
   extension [Self <: NamedConstructors](x: Self) {
     
-    inline def set400(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`400`]): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+    inline def set400(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`400`]): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set401(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`401`]): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`401`]): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set402(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`402`]): Self = StObject.set(x, "402", value.asInstanceOf[js.Any])
+    inline def set402(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`402`]): Self = StObject.set(x, "402", value.asInstanceOf[js.Any])
     
-    inline def set403(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`403`]): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`403`]): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`404`]): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`404`]): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set405(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`405`]): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
+    inline def set405(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`405`]): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
     
-    inline def set406(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`406`]): Self = StObject.set(x, "406", value.asInstanceOf[js.Any])
+    inline def set406(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`406`]): Self = StObject.set(x, "406", value.asInstanceOf[js.Any])
     
-    inline def set407(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`407`]): Self = StObject.set(x, "407", value.asInstanceOf[js.Any])
+    inline def set407(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`407`]): Self = StObject.set(x, "407", value.asInstanceOf[js.Any])
     
-    inline def set408(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`408`]): Self = StObject.set(x, "408", value.asInstanceOf[js.Any])
+    inline def set408(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]): Self = StObject.set(x, "408", value.asInstanceOf[js.Any])
     
-    inline def set409(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`409`]): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+    inline def set409(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`409`]): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
     
-    inline def set410(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`410`]): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
+    inline def set410(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`410`]): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
     
-    inline def set411(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`411`]): Self = StObject.set(x, "411", value.asInstanceOf[js.Any])
+    inline def set411(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`411`]): Self = StObject.set(x, "411", value.asInstanceOf[js.Any])
     
-    inline def set412(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`412`]): Self = StObject.set(x, "412", value.asInstanceOf[js.Any])
+    inline def set412(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`412`]): Self = StObject.set(x, "412", value.asInstanceOf[js.Any])
     
-    inline def set413(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`413`]): Self = StObject.set(x, "413", value.asInstanceOf[js.Any])
+    inline def set413(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`413`]): Self = StObject.set(x, "413", value.asInstanceOf[js.Any])
     
-    inline def set414(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`414`]): Self = StObject.set(x, "414", value.asInstanceOf[js.Any])
+    inline def set414(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`414`]): Self = StObject.set(x, "414", value.asInstanceOf[js.Any])
     
-    inline def set415(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`415`]): Self = StObject.set(x, "415", value.asInstanceOf[js.Any])
+    inline def set415(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`415`]): Self = StObject.set(x, "415", value.asInstanceOf[js.Any])
     
-    inline def set416(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`416`]): Self = StObject.set(x, "416", value.asInstanceOf[js.Any])
+    inline def set416(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`416`]): Self = StObject.set(x, "416", value.asInstanceOf[js.Any])
     
-    inline def set417(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`417`]): Self = StObject.set(x, "417", value.asInstanceOf[js.Any])
+    inline def set417(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`417`]): Self = StObject.set(x, "417", value.asInstanceOf[js.Any])
     
-    inline def set418(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`418`]): Self = StObject.set(x, "418", value.asInstanceOf[js.Any])
+    inline def set418(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`418`]): Self = StObject.set(x, "418", value.asInstanceOf[js.Any])
     
-    inline def set421(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`421`]): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
+    inline def set421(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`421`]): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
     
-    inline def set422(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`422`]): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`422`]): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
     
-    inline def set423(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`423`]): Self = StObject.set(x, "423", value.asInstanceOf[js.Any])
+    inline def set423(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`423`]): Self = StObject.set(x, "423", value.asInstanceOf[js.Any])
     
-    inline def set424(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`424`]): Self = StObject.set(x, "424", value.asInstanceOf[js.Any])
+    inline def set424(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`424`]): Self = StObject.set(x, "424", value.asInstanceOf[js.Any])
     
-    inline def set425(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`425`]): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
+    inline def set425(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`]): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
     
-    inline def set426(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`426`]): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
+    inline def set426(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`426`]): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
     
-    inline def set428(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`428`]): Self = StObject.set(x, "428", value.asInstanceOf[js.Any])
+    inline def set428(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`428`]): Self = StObject.set(x, "428", value.asInstanceOf[js.Any])
     
-    inline def set429(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`429`]): Self = StObject.set(x, "429", value.asInstanceOf[js.Any])
+    inline def set429(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`429`]): Self = StObject.set(x, "429", value.asInstanceOf[js.Any])
     
-    inline def set431(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`431`]): Self = StObject.set(x, "431", value.asInstanceOf[js.Any])
+    inline def set431(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`431`]): Self = StObject.set(x, "431", value.asInstanceOf[js.Any])
     
-    inline def set451(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`451`]): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
+    inline def set451(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`451`]): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
     
-    inline def set500(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    inline def set500(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
     
-    inline def set501(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`501`]): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
+    inline def set501(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`501`]): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
     
-    inline def set502(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`502`]): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
+    inline def set502(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`]): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
     
-    inline def set503(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set503(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
     
-    inline def set504(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`504`]): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
+    inline def set504(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`]): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
     
-    inline def set505(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`505`]): Self = StObject.set(x, "505", value.asInstanceOf[js.Any])
+    inline def set505(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`505`]): Self = StObject.set(x, "505", value.asInstanceOf[js.Any])
     
-    inline def set506(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`506`]): Self = StObject.set(x, "506", value.asInstanceOf[js.Any])
+    inline def set506(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`506`]): Self = StObject.set(x, "506", value.asInstanceOf[js.Any])
     
-    inline def set507(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`507`]): Self = StObject.set(x, "507", value.asInstanceOf[js.Any])
+    inline def set507(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`507`]): Self = StObject.set(x, "507", value.asInstanceOf[js.Any])
     
-    inline def set508(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`508`]): Self = StObject.set(x, "508", value.asInstanceOf[js.Any])
+    inline def set508(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`508`]): Self = StObject.set(x, "508", value.asInstanceOf[js.Any])
     
-    inline def set509(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`509`]): Self = StObject.set(x, "509", value.asInstanceOf[js.Any])
+    inline def set509(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`509`]): Self = StObject.set(x, "509", value.asInstanceOf[js.Any])
     
-    inline def set510(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`510`]): Self = StObject.set(x, "510", value.asInstanceOf[js.Any])
+    inline def set510(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`510`]): Self = StObject.set(x, "510", value.asInstanceOf[js.Any])
     
-    inline def set511(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`511`]): Self = StObject.set(x, "511", value.asInstanceOf[js.Any])
+    inline def set511(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`511`]): Self = StObject.set(x, "511", value.asInstanceOf[js.Any])
     
-    inline def setBadGateway(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`502`]): Self = StObject.set(x, "BadGateway", value.asInstanceOf[js.Any])
+    inline def setBadGateway(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`502`]): Self = StObject.set(x, "BadGateway", value.asInstanceOf[js.Any])
     
-    inline def setBadRequest(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`400`]): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
+    inline def setBadRequest(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`400`]): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
     
-    inline def setBandwidthLimitExceeded(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`509`]): Self = StObject.set(x, "BandwidthLimitExceeded", value.asInstanceOf[js.Any])
+    inline def setBandwidthLimitExceeded(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`509`]): Self = StObject.set(x, "BandwidthLimitExceeded", value.asInstanceOf[js.Any])
     
-    inline def setConflict(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`409`]): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
+    inline def setConflict(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`409`]): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
     
-    inline def setExpectationFailed(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`417`]): Self = StObject.set(x, "ExpectationFailed", value.asInstanceOf[js.Any])
+    inline def setExpectationFailed(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`417`]): Self = StObject.set(x, "ExpectationFailed", value.asInstanceOf[js.Any])
     
-    inline def setFailedDependency(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`424`]): Self = StObject.set(x, "FailedDependency", value.asInstanceOf[js.Any])
+    inline def setFailedDependency(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`424`]): Self = StObject.set(x, "FailedDependency", value.asInstanceOf[js.Any])
     
-    inline def setForbidden(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`403`]): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
+    inline def setForbidden(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`403`]): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
     
-    inline def setGatewayTimeout(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`504`]): Self = StObject.set(x, "GatewayTimeout", value.asInstanceOf[js.Any])
+    inline def setGatewayTimeout(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`504`]): Self = StObject.set(x, "GatewayTimeout", value.asInstanceOf[js.Any])
     
-    inline def setGone(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`410`]): Self = StObject.set(x, "Gone", value.asInstanceOf[js.Any])
+    inline def setGone(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`410`]): Self = StObject.set(x, "Gone", value.asInstanceOf[js.Any])
     
-    inline def setHTTPVersionNotSupported(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`505`]): Self = StObject.set(x, "HTTPVersionNotSupported", value.asInstanceOf[js.Any])
+    inline def setHTTPVersionNotSupported(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`505`]): Self = StObject.set(x, "HTTPVersionNotSupported", value.asInstanceOf[js.Any])
     
     inline def setHttpError(value: HttpErrorConstructor[Double]): Self = StObject.set(x, "HttpError", value.asInstanceOf[js.Any])
     
-    inline def setImATeapot(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`418`]): Self = StObject.set(x, "ImATeapot", value.asInstanceOf[js.Any])
+    inline def setImATeapot(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`418`]): Self = StObject.set(x, "ImATeapot", value.asInstanceOf[js.Any])
     
-    inline def setInsufficientStorage(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`507`]): Self = StObject.set(x, "InsufficientStorage", value.asInstanceOf[js.Any])
+    inline def setInsufficientStorage(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`507`]): Self = StObject.set(x, "InsufficientStorage", value.asInstanceOf[js.Any])
     
-    inline def setInternalServerError(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]): Self = StObject.set(x, "InternalServerError", value.asInstanceOf[js.Any])
+    inline def setInternalServerError(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]): Self = StObject.set(x, "InternalServerError", value.asInstanceOf[js.Any])
     
-    inline def setLengthRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`411`]): Self = StObject.set(x, "LengthRequired", value.asInstanceOf[js.Any])
+    inline def setLengthRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`411`]): Self = StObject.set(x, "LengthRequired", value.asInstanceOf[js.Any])
     
-    inline def setLocked(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`423`]): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`423`]): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    inline def setLoopDetected(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`508`]): Self = StObject.set(x, "LoopDetected", value.asInstanceOf[js.Any])
+    inline def setLoopDetected(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`508`]): Self = StObject.set(x, "LoopDetected", value.asInstanceOf[js.Any])
     
-    inline def setMethodNotAllowed(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`405`]): Self = StObject.set(x, "MethodNotAllowed", value.asInstanceOf[js.Any])
+    inline def setMethodNotAllowed(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`405`]): Self = StObject.set(x, "MethodNotAllowed", value.asInstanceOf[js.Any])
     
-    inline def setMisdirectedRequest(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`421`]): Self = StObject.set(x, "MisdirectedRequest", value.asInstanceOf[js.Any])
+    inline def setMisdirectedRequest(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`421`]): Self = StObject.set(x, "MisdirectedRequest", value.asInstanceOf[js.Any])
     
-    inline def setNetworkAuthenticationRequire(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`511`]): Self = StObject.set(x, "NetworkAuthenticationRequire", value.asInstanceOf[js.Any])
+    inline def setNetworkAuthenticationRequire(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`511`]): Self = StObject.set(x, "NetworkAuthenticationRequire", value.asInstanceOf[js.Any])
     
-    inline def setNotAcceptable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`406`]): Self = StObject.set(x, "NotAcceptable", value.asInstanceOf[js.Any])
+    inline def setNotAcceptable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`406`]): Self = StObject.set(x, "NotAcceptable", value.asInstanceOf[js.Any])
     
-    inline def setNotExtended(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`510`]): Self = StObject.set(x, "NotExtended", value.asInstanceOf[js.Any])
+    inline def setNotExtended(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`510`]): Self = StObject.set(x, "NotExtended", value.asInstanceOf[js.Any])
     
-    inline def setNotFound(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`404`]): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`404`]): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
     
-    inline def setNotImplemented(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`501`]): Self = StObject.set(x, "NotImplemented", value.asInstanceOf[js.Any])
+    inline def setNotImplemented(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`501`]): Self = StObject.set(x, "NotImplemented", value.asInstanceOf[js.Any])
     
-    inline def setPayloadTooLarge(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`413`]): Self = StObject.set(x, "PayloadTooLarge", value.asInstanceOf[js.Any])
+    inline def setPayloadTooLarge(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`413`]): Self = StObject.set(x, "PayloadTooLarge", value.asInstanceOf[js.Any])
     
-    inline def setPaymentRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`402`]): Self = StObject.set(x, "PaymentRequired", value.asInstanceOf[js.Any])
+    inline def setPaymentRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`402`]): Self = StObject.set(x, "PaymentRequired", value.asInstanceOf[js.Any])
     
-    inline def setPreconditionFailed(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`412`]): Self = StObject.set(x, "PreconditionFailed", value.asInstanceOf[js.Any])
+    inline def setPreconditionFailed(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`412`]): Self = StObject.set(x, "PreconditionFailed", value.asInstanceOf[js.Any])
     
-    inline def setPreconditionRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`428`]): Self = StObject.set(x, "PreconditionRequired", value.asInstanceOf[js.Any])
+    inline def setPreconditionRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`428`]): Self = StObject.set(x, "PreconditionRequired", value.asInstanceOf[js.Any])
     
-    inline def setProxyAuthenticationRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`407`]): Self = StObject.set(x, "ProxyAuthenticationRequired", value.asInstanceOf[js.Any])
+    inline def setProxyAuthenticationRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`407`]): Self = StObject.set(x, "ProxyAuthenticationRequired", value.asInstanceOf[js.Any])
     
-    inline def setRangeNotSatisfiable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`416`]): Self = StObject.set(x, "RangeNotSatisfiable", value.asInstanceOf[js.Any])
+    inline def setRangeNotSatisfiable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`416`]): Self = StObject.set(x, "RangeNotSatisfiable", value.asInstanceOf[js.Any])
     
-    inline def setRequestHeaderFieldsTooLarge(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`431`]): Self = StObject.set(x, "RequestHeaderFieldsTooLarge", value.asInstanceOf[js.Any])
+    inline def setRequestHeaderFieldsTooLarge(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`431`]): Self = StObject.set(x, "RequestHeaderFieldsTooLarge", value.asInstanceOf[js.Any])
     
-    inline def setRequestTimeout(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`408`]): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
+    inline def setRequestTimeout(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`408`]): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
     
-    inline def setServiceUnavailable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`500`]): Self = StObject.set(x, "ServiceUnavailable", value.asInstanceOf[js.Any])
+    inline def setServiceUnavailable(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`500`]): Self = StObject.set(x, "ServiceUnavailable", value.asInstanceOf[js.Any])
     
-    inline def setTooManyRequests(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`429`]): Self = StObject.set(x, "TooManyRequests", value.asInstanceOf[js.Any])
+    inline def setTooManyRequests(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`429`]): Self = StObject.set(x, "TooManyRequests", value.asInstanceOf[js.Any])
     
-    inline def setURITooLong(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`414`]): Self = StObject.set(x, "URITooLong", value.asInstanceOf[js.Any])
+    inline def setURITooLong(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`414`]): Self = StObject.set(x, "URITooLong", value.asInstanceOf[js.Any])
     
-    inline def setUnauthorized(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`401`]): Self = StObject.set(x, "Unauthorized", value.asInstanceOf[js.Any])
+    inline def setUnauthorized(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`401`]): Self = StObject.set(x, "Unauthorized", value.asInstanceOf[js.Any])
     
-    inline def setUnavailableForLegalReasons(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`451`]): Self = StObject.set(x, "UnavailableForLegalReasons", value.asInstanceOf[js.Any])
+    inline def setUnavailableForLegalReasons(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`451`]): Self = StObject.set(x, "UnavailableForLegalReasons", value.asInstanceOf[js.Any])
     
-    inline def setUnorderedCollection(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`425`]): Self = StObject.set(x, "UnorderedCollection", value.asInstanceOf[js.Any])
+    inline def setUnorderedCollection(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`425`]): Self = StObject.set(x, "UnorderedCollection", value.asInstanceOf[js.Any])
     
-    inline def setUnprocessableEntity(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`422`]): Self = StObject.set(x, "UnprocessableEntity", value.asInstanceOf[js.Any])
+    inline def setUnprocessableEntity(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`422`]): Self = StObject.set(x, "UnprocessableEntity", value.asInstanceOf[js.Any])
     
-    inline def setUnsupportedMediaType(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`415`]): Self = StObject.set(x, "UnsupportedMediaType", value.asInstanceOf[js.Any])
+    inline def setUnsupportedMediaType(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`415`]): Self = StObject.set(x, "UnsupportedMediaType", value.asInstanceOf[js.Any])
     
-    inline def setUpgradeRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`426`]): Self = StObject.set(x, "UpgradeRequired", value.asInstanceOf[js.Any])
+    inline def setUpgradeRequired(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`426`]): Self = StObject.set(x, "UpgradeRequired", value.asInstanceOf[js.Any])
     
-    inline def setVariantAlsoNegotiates(value: HttpErrorConstructor[typings.httpErrors.httpErrorsNumbers.`506`]): Self = StObject.set(x, "VariantAlsoNegotiates", value.asInstanceOf[js.Any])
+    inline def setVariantAlsoNegotiates(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`506`]): Self = StObject.set(x, "VariantAlsoNegotiates", value.asInstanceOf[js.Any])
   }
 }

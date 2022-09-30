@@ -41,11 +41,7 @@ object PassCubePostProcess {
   val ^ : js.Any = js.native
   
   /**
-    * @param parsedPostProcess
-    * @param targetCamera
-    * @param scene
-    * @param rootUrl
-    * @hidden
+    * @internal
     */
   inline def _Parse(
     parsedPostProcess: Any,

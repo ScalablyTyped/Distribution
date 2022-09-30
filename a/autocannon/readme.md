@@ -1,7 +1,7 @@
 
 # Scala.js typings for autocannon
 
-Typings are for version 7.6
+Typings are for version 7.9
 
 ## Library description:
 Fast HTTP benchmarking tool written in Node.js

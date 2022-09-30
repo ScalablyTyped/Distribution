@@ -19,7 +19,7 @@ object List {
   @js.native
   val ^ : ListConstructor = js.native
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.nodeSass.mod.types.List](x: Self) {
     
     inline def setGetSeparator(value: () => scala.Boolean): Self = StObject.set(x, "getSeparator", js.Any.fromFunction0(value))
     

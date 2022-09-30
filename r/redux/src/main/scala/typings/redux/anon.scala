@@ -74,12 +74,6 @@ object anon {
     }
   }
   
-  @js.native
-  trait CombinedState extends StObject
-  
-  @js.native
-  trait CombinedStateUndefined extends StObject
-  
   trait Dispatch[Ext1] extends StObject {
     
     var dispatch: Ext1

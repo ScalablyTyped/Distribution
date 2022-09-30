@@ -4,7 +4,7 @@ import typings.std.ArrayLike
 import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.matrix3Mod.Matrix3
 import typings.three.threeBooleans.`true`
-import typings.three.threeNumbers.`0`
+import typings.three.threeInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

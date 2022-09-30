@@ -1,7 +1,7 @@
 package typings.wonka
 
-import typings.wonka.wonkaNumbers.`0`
-import typings.wonka.wonkaNumbers.`1`
+import typings.wonka.wonkaInts.`0`
+import typings.wonka.wonkaInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,8 +36,8 @@ object typesMod {
   type Signal[T] = Start[T] | Push[T] | `0`
   
   /* Rewritten from type alias, can be one of: 
-    - typings.wonka.wonkaNumbers.`0`
-    - typings.wonka.wonkaNumbers.`1`
+    - typings.wonka.wonkaInts.`0`
+    - typings.wonka.wonkaInts.`1`
   */
   trait SignalKind extends StObject
   object SignalKind {
@@ -113,8 +113,8 @@ object typesMod {
   type TalkbackFn = js.Function1[/* signal */ TalkbackKind, Unit]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.wonka.wonkaNumbers.`0`
-    - typings.wonka.wonkaNumbers.`1`
+    - typings.wonka.wonkaInts.`0`
+    - typings.wonka.wonkaInts.`1`
   */
   trait TalkbackKind extends StObject
   object TalkbackKind {

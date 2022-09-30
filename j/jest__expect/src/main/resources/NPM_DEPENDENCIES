@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jest/expect" : "29.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jest/expect" : "29.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

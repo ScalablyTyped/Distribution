@@ -151,7 +151,7 @@ object coreMod {
   inline def expr[T](expr: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expr")(expr.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def expr[T](expr: js.Function0[T], scope: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expr")(expr.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B*): A & B = ^.asInstanceOf[js.Dynamic].applyDynamic("extendObservable")(List(target.asInstanceOf[js.Any]).`++`(properties.asInstanceOf[Seq[js.Any]])*).asInstanceOf[A & B]
+  inline def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B*): A & B = ^.asInstanceOf[js.Dynamic].applyDynamic("extendObservable")(scala.List(target.asInstanceOf[js.Any]).`++`(properties.asInstanceOf[Seq[js.Any]])*).asInstanceOf[A & B]
   
   inline def extendObservableHelper(target: Any, properties: Any, mode: ValueMode, context: IContextInfoStruct): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extendObservableHelper")(target.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   

@@ -175,9 +175,6 @@ type NextToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.`None specified`
   - typings.awsSdk.awsSdkStrings.`AWS Elastic BeanStalk`
   - typings.awsSdk.awsSdkStrings.`AWS Fargate`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Cloud Compute LeftparenthesisEC2Rightparenthesis`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Container Service LeftparenthesisECSRightparenthesis`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Kubernetes Service LeftparenthesisEKSRightparenthesis`
   - java.lang.String
 */
 type NoPreferenceTargetDestination = _NoPreferenceTargetDestination | java.lang.String
@@ -246,14 +243,7 @@ type S3Keys = js.Array[String]
 
 type SecretsManagerKey = java.lang.String
 
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.`None specified`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Cloud Compute LeftparenthesisEC2Rightparenthesis`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Container Service LeftparenthesisECSRightparenthesis`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Kubernetes Service LeftparenthesisEKSRightparenthesis`
-  - java.lang.String
-*/
-type SelfManageTargetDestination = _SelfManageTargetDestination | java.lang.String
+type SelfManageTargetDestination = (`None specified`) | java.lang.String
 
 type SelfManageTargetDestinations = js.Array[SelfManageTargetDestination]
 
@@ -366,9 +356,7 @@ type TargetDatabaseEngines = js.Array[TargetDatabaseEngine]
   - typings.awsSdk.awsSdkStrings.`None specified`
   - typings.awsSdk.awsSdkStrings.`AWS Elastic BeanStalk`
   - typings.awsSdk.awsSdkStrings.`AWS Fargate`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Cloud Compute LeftparenthesisEC2Rightparenthesis`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Container Service LeftparenthesisECSRightparenthesis`
-  - typings.awsSdk.awsSdkStrings.`Amazon Elastic Kubernetes Service LeftparenthesisEKSRightparenthesis`
+  - java.lang.String
   - typings.awsSdk.awsSdkStrings.`Aurora MySQL`
   - typings.awsSdk.awsSdkStrings.`Aurora PostgreSQL`
   - typings.awsSdk.awsSdkStrings.`Amazon Relational Database Service on MySQL`
@@ -376,7 +364,6 @@ type TargetDatabaseEngines = js.Array[TargetDatabaseEngine]
   - typings.awsSdk.awsSdkStrings.`Amazon DocumentDB`
   - typings.awsSdk.awsSdkStrings.`Amazon DynamoDB`
   - typings.awsSdk.awsSdkStrings.`Amazon Relational Database Service`
-  - java.lang.String
 */
 type TargetDestination = _TargetDestination | java.lang.String
 

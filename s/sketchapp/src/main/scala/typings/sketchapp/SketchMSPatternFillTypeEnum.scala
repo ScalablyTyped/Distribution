@@ -5,19 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.sketchapp.sketchappNumbers.`0`
-  - typings.sketchapp.sketchappNumbers.`1`
-  - typings.sketchapp.sketchappNumbers.`2`
-  - typings.sketchapp.sketchappNumbers.`3`
+  - typings.sketchapp.sketchappInts.`0`
+  - typings.sketchapp.sketchappInts.`1`
+  - typings.sketchapp.sketchappInts.`2`
+  - typings.sketchapp.sketchappInts.`3`
 */
 trait SketchMSPatternFillTypeEnum extends StObject
 object SketchMSPatternFillTypeEnum {
   
-  inline def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
+  inline def `0`: typings.sketchapp.sketchappInts.`0` = 0.asInstanceOf[typings.sketchapp.sketchappInts.`0`]
   
-  inline def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
+  inline def `1`: typings.sketchapp.sketchappInts.`1` = 1.asInstanceOf[typings.sketchapp.sketchappInts.`1`]
   
-  inline def `2`: typings.sketchapp.sketchappNumbers.`2` = 2.asInstanceOf[typings.sketchapp.sketchappNumbers.`2`]
+  inline def `2`: typings.sketchapp.sketchappInts.`2` = 2.asInstanceOf[typings.sketchapp.sketchappInts.`2`]
   
-  inline def `3`: typings.sketchapp.sketchappNumbers.`3` = 3.asInstanceOf[typings.sketchapp.sketchappNumbers.`3`]
+  inline def `3`: typings.sketchapp.sketchappInts.`3` = 3.asInstanceOf[typings.sketchapp.sketchappInts.`3`]
 }

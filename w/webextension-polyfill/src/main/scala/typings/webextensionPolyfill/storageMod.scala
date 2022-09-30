@@ -3,12 +3,12 @@ package typings.webextensionPolyfill
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import typings.webextensionPolyfill.eventsMod.Events.Event
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`102400`
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`120`
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`1800`
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`512`
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`5242880`
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`8192`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`102400`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`120`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`1800`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`512`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`5242880`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`8192`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

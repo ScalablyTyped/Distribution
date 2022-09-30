@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "Session")
 @js.native
-class Session protected ()
+open class Session protected ()
   extends typings.seleniumWebdriver.mod.Session {
   def this(id: String, capabilities: js.Object) = this()
   // region Constructors

@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of {@link Word.Field} objects.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait FieldCollection
@@ -26,20 +25,18 @@ trait FieldCollection
   var context_FieldCollection: RequestContext = js.native
   
   /**
-    * Gets the first field in this collection. Throws an error if this collection is empty.
+    * Gets the first field in this collection. Throws an `ItemNotFound` error if this collection is empty.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getFirst(): Field = js.native
   
   /**
-    * Gets the first field in this collection. Returns a null object if this collection is empty.
+    * Gets the first field in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getFirstOrNullObject(): Field = js.native
   

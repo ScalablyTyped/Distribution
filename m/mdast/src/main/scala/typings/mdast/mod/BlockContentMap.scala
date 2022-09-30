@@ -14,7 +14,7 @@ trait BlockContentMap extends StObject {
   
   var html: HTML
   
-  var list: List
+  var list: typings.mdast.mod.List
   
   var paragraph: Paragraph
   
@@ -29,7 +29,7 @@ object BlockContentMap {
     code: Code,
     heading: Heading,
     html: HTML,
-    list: List,
+    list: typings.mdast.mod.List,
     paragraph: Paragraph,
     table: Table,
     thematicbreak: ThematicBreak
@@ -48,7 +48,7 @@ object BlockContentMap {
     
     inline def setHtml(value: HTML): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    inline def setList(value: List): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: typings.mdast.mod.List): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setParagraph(value: Paragraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     

@@ -19,52 +19,52 @@ object materialDefinesMod {
        with /* id */ StringDictionary[Any] {
     def this(externalProperties: StringDictionary[Default]) = this()
     
-    /** @hidden */
+    /** @internal */
     var _areAttributesDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _areFresnelDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _areImageProcessingDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _areLightsDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _areLightsDisposed: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _areMiscDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _arePrePassDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _areTexturesDirty: Boolean = js.native
     
     /* protected */ var _externalProperties: js.UndefOr[StringDictionary[Default]] = js.native
     
     /* private */ var _isDirty: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _keys: js.Array[String] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _needNormals: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _needUVs: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _normals: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _renderId: Double = js.native
     
     /* private */ var _setDefaultValue: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _uvs: Boolean = js.native
     
     /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PostProcessRenderPipelineManager extends StObject {
   
-  /** @hidden */
+  /** @internal */
   def _rebuild(): Unit = js.native
   
   /* private */ var _renderPipelines: Any = js.native

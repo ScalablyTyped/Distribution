@@ -6,7 +6,6 @@ import typings.typedoc.anon.Tag
 import typings.typedoc.anon.Text
 import typings.typedoc.modelsReflectionsMod.Reflection
 import typings.typedoc.serializationMod.Serializer
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import typings.typedoc.typedocStrings.`inline-tag`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,8 +32,7 @@ object commentMod {
       */
     var blockTags: js.Array[CommentTag] = js.native
     
-    @JSName("getIdentifiedTag")
-    def getIdentifiedTag_string(identifier: String, tagName: `@$LeftcurlybracketstringRightcurlybracket`): js.UndefOr[CommentTag] = js.native
+    def getIdentifiedTag(identifier: String, tagName: /* template literal string: @${string} */ String): js.UndefOr[CommentTag] = js.native
     
     /**
       * Return the first tag with the given name.
@@ -43,14 +41,12 @@ object commentMod {
       * @param paramName  An optional parameter name to look for.
       * @returns The found tag or undefined.
       */
-    @JSName("getTag")
-    def getTag_string(tagName: `@$LeftcurlybracketstringRightcurlybracket`): js.UndefOr[CommentTag] = js.native
+    def getTag(tagName: /* template literal string: @${string} */ String): js.UndefOr[CommentTag] = js.native
     
     /**
       * Get all tags with the given tag name.
       */
-    @JSName("getTags")
-    def getTags_string(tagName: `@$LeftcurlybracketstringRightcurlybracket`): js.Array[CommentTag] = js.native
+    def getTags(tagName: /* template literal string: @${string} */ String): js.Array[CommentTag] = js.native
     
     /**
       * Test whether this comment contains a tag with the given name.
@@ -58,8 +54,7 @@ object commentMod {
       * @param tagName  The name of the tag to look for.
       * @returns TRUE when this comment contains a tag with the given name, otherwise FALSE.
       */
-    @JSName("hasModifier")
-    def hasModifier_string(tagName: `@$LeftcurlybracketstringRightcurlybracket`): Boolean = js.native
+    def hasModifier(tagName: /* template literal string: @${string} */ String): Boolean = js.native
     
     /**
       * Has this comment a visible component?
@@ -79,15 +74,13 @@ object commentMod {
       */
     var modifierTags: Set[String] = js.native
     
-    @JSName("removeModifier")
-    def removeModifier_string(tagName: `@$LeftcurlybracketstringRightcurlybracket`): Unit = js.native
+    def removeModifier(tagName: /* template literal string: @${string} */ String): Unit = js.native
     
     /**
       * Removes all block tags with the given tag name from the comment.
       * @param tagName
       */
-    @JSName("removeTags")
-    def removeTags_string(tagName: `@$LeftcurlybracketstringRightcurlybracket`): Unit = js.native
+    def removeTags(tagName: /* template literal string: @${string} */ String): Unit = js.native
     
     /**
       * The content of the comment which is not associated with a block tag.
@@ -122,7 +115,7 @@ object commentMod {
     /**
       * Create a new CommentTag instance.
       */
-    def this(tag: `@$LeftcurlybracketstringRightcurlybracket`, text: js.Array[CommentDisplayPart]) = this()
+    def this(tag: /* template literal string: @${string} */ String, text: js.Array[CommentDisplayPart]) = this()
     
     /**
       * The actual body text of this tag.
@@ -138,7 +131,7 @@ object commentMod {
     /**
       * The name of this tag, e.g. `@returns`, `@example`
       */
-    var tag: `@$LeftcurlybracketstringRightcurlybracket` = js.native
+    var tag: /* template literal string: @${string} */ String = js.native
     
     def toObject(): typings.typedoc.schemaMod.CommentTag = js.native
   }
@@ -151,8 +144,8 @@ object commentMod {
   trait CommentDisplayPart extends StObject
   object CommentDisplayPart {
     
-    inline def InlineTagDisplayPart(text: String): typings.typedoc.commentMod.InlineTagDisplayPart = {
-      val __obj = js.Dynamic.literal(kind = "inline-tag", tag = "@${string}", text = text.asInstanceOf[js.Any])
+    inline def InlineTagDisplayPart(tag: /* template literal string: @${string} */ String, text: String): typings.typedoc.commentMod.InlineTagDisplayPart = {
+      val __obj = js.Dynamic.literal(kind = "inline-tag", tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.typedoc.commentMod.InlineTagDisplayPart]
     }
     
@@ -173,7 +166,7 @@ object commentMod {
     
     var kind: `inline-tag`
     
-    var tag: `@$LeftcurlybracketstringRightcurlybracket`
+    var tag: /* template literal string: @${string} */ String
     
     var target: js.UndefOr[Reflection | String] = js.undefined
     
@@ -181,8 +174,8 @@ object commentMod {
   }
   object InlineTagDisplayPart {
     
-    inline def apply(text: String): InlineTagDisplayPart = {
-      val __obj = js.Dynamic.literal(kind = "inline-tag", tag = "@${string}", text = text.asInstanceOf[js.Any])
+    inline def apply(tag: /* template literal string: @${string} */ String, text: String): InlineTagDisplayPart = {
+      val __obj = js.Dynamic.literal(kind = "inline-tag", tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[InlineTagDisplayPart]
     }
     
@@ -190,7 +183,7 @@ object commentMod {
       
       inline def setKind(value: `inline-tag`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setTag(value: `@$LeftcurlybracketstringRightcurlybracket`): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: /* template literal string: @${string} */ String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: Reflection | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.anon
 
-import typings.jupyterlabServices.jupyterlabServicesNumbers.`0`
-import typings.jupyterlabServices.jupyterlabServicesNumbers.`1`
+import typings.jupyterlabServices.jupyterlabServicesInts.`0`
+import typings.jupyterlabServices.jupyterlabServicesInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

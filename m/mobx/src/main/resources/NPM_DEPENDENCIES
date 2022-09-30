@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mobx" : "5.15.7"
+      "mobx" : "6.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "mobx" : "5.15.7"
+      "mobx" : "6.6.2"
     }
   ],
   "compile-devDependencies" : [

@@ -26,7 +26,7 @@ object writeGetObjectResponseEndpointMod {
     
     var disableHostPrefix: Boolean
     
-    var isCustomEndpoint: Boolean
+    var isCustomEndpoint: js.UndefOr[Boolean] = js.undefined
     
     def region(): js.Promise[String]
     @JSName("region")
@@ -36,13 +36,8 @@ object writeGetObjectResponseEndpointMod {
   }
   object PreviouslyResolved {
     
-    inline def apply(
-      disableHostPrefix: Boolean,
-      isCustomEndpoint: Boolean,
-      region: () => js.Promise[String],
-      runtime: String
-    ): PreviouslyResolved = {
-      val __obj = js.Dynamic.literal(disableHostPrefix = disableHostPrefix.asInstanceOf[js.Any], isCustomEndpoint = isCustomEndpoint.asInstanceOf[js.Any], region = js.Any.fromFunction0(region), runtime = runtime.asInstanceOf[js.Any])
+    inline def apply(disableHostPrefix: Boolean, region: () => js.Promise[String], runtime: String): PreviouslyResolved = {
+      val __obj = js.Dynamic.literal(disableHostPrefix = disableHostPrefix.asInstanceOf[js.Any], region = js.Any.fromFunction0(region), runtime = runtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
@@ -51,6 +46,8 @@ object writeGetObjectResponseEndpointMod {
       inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
       inline def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setIsCustomEndpointUndefined: Self = StObject.set(x, "isCustomEndpoint", js.undefined)
       
       inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       

@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @hidden */
+/** @internal */
 trait NodeState extends StObject {
   
   def count(): js.Tuple2[Double, Double]

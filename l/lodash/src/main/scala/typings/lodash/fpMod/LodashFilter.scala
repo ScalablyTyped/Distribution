@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.lodash.mod.ValueIterateeCustom
 import typings.lodash.mod.ValueIteratorTypeGuard
 import typings.lodash.mod.__
@@ -11,14 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashFilter extends StObject {
   
-  def apply[T /* <: js.Object */](
+  def apply[T](
     predicate: ValueIterateeCustom[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | T, 
       Boolean
     ]
-  ): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  ): js.Array[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueIterateeCustom[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -28,11 +25,16 @@ trait LodashFilter extends StObject {
   ): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def apply[T](predicate: ValueIterateeCustom[T, Boolean], collection: List[T]): js.Array[T] = js.native
-  def apply[T /* <: js.Object */](predicate: __): LodashFilter3x2[T] = js.native
+  def apply[T](predicate: ValueIterateeCustom[T, Boolean], collection: typings.lodash.mod.List[T]): js.Array[T] = js.native
+  def apply[T](predicate: __): LodashFilter1x2[T] = js.native
   def apply[T /* <: js.Object */](predicate: __, collection: T): LodashFilter3x2[T] = js.native
-  def apply[T](predicate: __, collection: List[T]): LodashFilter1x2[T] = js.native
-  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S]): LodashFilter1x1[T, S] = js.native
+  def apply[T](predicate: __, collection: typings.lodash.mod.List[T]): LodashFilter1x2[T] = js.native
+  def apply[T, S /* <: T */](
+    predicate: ValueIteratorTypeGuard[
+      (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | T, 
+      S
+    ]
+  ): js.Array[S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: ValueIteratorTypeGuard[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -40,5 +42,5 @@ trait LodashFilter extends StObject {
     ],
     collection: T
   ): js.Array[S] = js.native
-  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S], collection: List[T]): js.Array[S] = js.native
+  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S], collection: typings.lodash.mod.List[T]): js.Array[S] = js.native
 }

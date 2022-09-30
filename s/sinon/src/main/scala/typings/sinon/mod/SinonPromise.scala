@@ -3,13 +3,15 @@ package typings.sinon.mod
 import typings.sinon.sinonStrings.pending
 import typings.sinon.sinonStrings.rejected
 import typings.sinon.sinonStrings.resolved
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SinonPromise[T]
-  extends js.Promise[T] {
+  extends StObject
+     with Promise[T] {
   
   def reject(reason: Any): js.Promise[Unit] = js.native
   

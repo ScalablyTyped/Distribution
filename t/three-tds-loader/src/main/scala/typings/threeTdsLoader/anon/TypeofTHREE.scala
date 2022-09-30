@@ -273,9 +273,9 @@ import typings.three.webGLPropertiesMod.WebGLProperties
 import typings.three.webGLRendererMod.WebGLRenderer
 import typings.three.webGLStateMod.WebGLState
 import typings.three.webGLUtilsMod.WebGLUtils
-import typings.threeTdsLoader.threeTdsLoaderNumbers.`1`
-import typings.threeTdsLoader.threeTdsLoaderNumbers.`2`
-import typings.threeTdsLoader.threeTdsLoaderNumbers.`4`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2`
+import typings.threeTdsLoader.threeTdsLoaderInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

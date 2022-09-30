@@ -1,20 +1,20 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-4107`
-import typings.activexWord.activexWordNumbers.`-4108`
-import typings.activexWord.activexWordNumbers.`-4117`
-import typings.activexWord.activexWordNumbers.`-4130`
-import typings.activexWord.activexWordNumbers.`-4160`
+import typings.activexWord.activexWordInts.`-4107`
+import typings.activexWord.activexWordInts.`-4108`
+import typings.activexWord.activexWordInts.`-4117`
+import typings.activexWord.activexWordInts.`-4130`
+import typings.activexWord.activexWordInts.`-4160`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`-4107`
-  - typings.activexWord.activexWordNumbers.`-4108`
-  - typings.activexWord.activexWordNumbers.`-4117`
-  - typings.activexWord.activexWordNumbers.`-4130`
-  - typings.activexWord.activexWordNumbers.`-4160`
+  - typings.activexWord.activexWordInts.`-4107`
+  - typings.activexWord.activexWordInts.`-4108`
+  - typings.activexWord.activexWordInts.`-4117`
+  - typings.activexWord.activexWordInts.`-4130`
+  - typings.activexWord.activexWordInts.`-4160`
 */
 trait XlVAlign extends StObject
 object XlVAlign {

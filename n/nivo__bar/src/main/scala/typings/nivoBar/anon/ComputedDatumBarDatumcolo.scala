@@ -1,7 +1,7 @@
 package typings.nivoBar.anon
 
 import typings.nivoBar.nivoBarBooleans.`false`
-import typings.nivoBar.nivoBarNumbers.`0`
+import typings.nivoBar.nivoBarInts.`0`
 import typings.nivoBar.nivoBarStrings._empty
 import typings.nivoBar.typesMod.BarDatum
 import typings.std.Exclude

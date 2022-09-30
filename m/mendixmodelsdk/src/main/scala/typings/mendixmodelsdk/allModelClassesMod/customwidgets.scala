@@ -41,9 +41,9 @@ object customwidgets {
   /**
     * Interfaces and instance classes for types from the Mendix sub meta model `CustomWidgets`.
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidget")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidget")
   @js.native
-  class CustomWidget protected ()
+  open class CustomWidget protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget {
     def this(
       model: AbstractModel,
@@ -56,7 +56,7 @@ object customwidgets {
   }
   object CustomWidget {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidget")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidget")
     @js.native
     val ^ : js.Any = js.native
     
@@ -630,98 +630,124 @@ object customwidgets {
     inline def createInWidgetValueUnderWidgets(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidget.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidget.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidget.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidget.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAssociationType")
   @js.native
-  class CustomWidgetAttributeType protected ()
+  open class CustomWidgetAssociationType protected ()
+    extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType {
+    def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+  }
+  object CustomWidgetAssociationType {
+    
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAssociationType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAssociationType.Reference")
+    @js.native
+    def Reference: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAssociationType.ReferenceSet")
+    @js.native
+    def ReferenceSet: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType = js.native
+    inline def ReferenceSet_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReferenceSet")(x.asInstanceOf[js.Any])
+    
+    inline def Reference_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reference")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType")
+  @js.native
+  open class CustomWidgetAttributeType protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object CustomWidgetAttributeType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.AutoNumber")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.AutoNumber")
     @js.native
     def AutoNumber: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def AutoNumber_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AutoNumber")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Binary")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Binary")
     @js.native
     def Binary: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Binary_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Boolean")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Boolean")
     @js.native
     def Boolean: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Boolean_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Currency")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Currency")
     @js.native
     def Currency: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Currency_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Currency")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.DateTime")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.DateTime")
     @js.native
     def DateTime: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def DateTime_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Decimal")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Decimal")
     @js.native
     def Decimal: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Decimal_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Enum")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Enum")
     @js.native
     def Enum: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Enum_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enum")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Float")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Float")
     @js.native
     def Float: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Float_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.HashString")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.HashString")
     @js.native
     def HashString: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def HashString_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HashString")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Integer")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Integer")
     @js.native
     def Integer: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Integer_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Long")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.Long")
     @js.native
     def Long: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def Long_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.String")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetAttributeType.String")
     @js.native
     def String: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType = js.native
     inline def String_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAttributeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
@@ -730,9 +756,9 @@ object customwidgets {
   /**
     * In version 8.5.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource")
   @js.native
-  class CustomWidgetDatabaseSource protected ()
+  open class CustomWidgetDatabaseSource protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetDatabaseSource {
     def this(
       model: AbstractModel,
@@ -745,7 +771,7 @@ object customwidgets {
   }
   object CustomWidgetDatabaseSource {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource")
     @js.native
     val ^ : js.Any = js.native
     
@@ -780,21 +806,21 @@ object customwidgets {
     inline def createInWidgetValueUnderDataSource(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetDatabaseSource]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetDatabaseSource.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetType")
   @js.native
-  class CustomWidgetType protected ()
+  open class CustomWidgetType protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetType {
     def this(
       model: AbstractModel,
@@ -807,7 +833,7 @@ object customwidgets {
   }
   object CustomWidgetType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetType")
     @js.native
     val ^ : js.Any = js.native
     
@@ -828,13 +854,13 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetType]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetType.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetType.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetType.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetType.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -843,9 +869,9 @@ object customwidgets {
   /**
     * In version 8.5.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource")
   @js.native
-  class CustomWidgetXPathSource protected ()
+  open class CustomWidgetXPathSource protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetXPathSource {
     def this(
       model: AbstractModel,
@@ -858,7 +884,7 @@ object customwidgets {
   }
   object CustomWidgetXPathSource {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource")
     @js.native
     val ^ : js.Any = js.native
     
@@ -893,74 +919,74 @@ object customwidgets {
     inline def createInWidgetValueUnderDataSource(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue): typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetXPathSource]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.CustomWidgetXPathSource.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.IsPath")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.IsPath")
   @js.native
-  class IsPath protected ()
+  open class IsPath protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.IsPath {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object IsPath {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.IsPath")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.IsPath")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.IsPath.No")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.IsPath.No")
     @js.native
     def No: typings.mendixmodelsdk.customwidgetsMod.customwidgets.IsPath = js.native
     inline def No_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("No")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.IsPath.Optional")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.IsPath.Optional")
     @js.native
     def Optional: typings.mendixmodelsdk.customwidgetsMod.customwidgets.IsPath = js.native
     inline def Optional_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Optional")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.IsPath.Yes")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.IsPath.Yes")
     @js.native
     def Yes: typings.mendixmodelsdk.customwidgetsMod.customwidgets.IsPath = js.native
     inline def Yes_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.IsPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Yes")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.PathType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.PathType")
   @js.native
-  class PathType protected ()
+  open class PathType protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.PathType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object PathType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.PathType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.PathType")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.PathType.None")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.PathType.None")
     @js.native
     def None: typings.mendixmodelsdk.customwidgetsMod.customwidgets.PathType = js.native
     inline def None_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.PathType.Reference")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.PathType.Reference")
     @js.native
     def Reference: typings.mendixmodelsdk.customwidgetsMod.customwidgets.PathType = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.PathType.ReferenceSet")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.PathType.ReferenceSet")
     @js.native
     def ReferenceSet: typings.mendixmodelsdk.customwidgetsMod.customwidgets.PathType = js.native
     inline def ReferenceSet_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReferenceSet")(x.asInstanceOf[js.Any])
@@ -968,52 +994,52 @@ object customwidgets {
     inline def Reference_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.PathType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reference")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.SystemPropertyEnum")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.SystemPropertyEnum")
   @js.native
-  class SystemPropertyEnum protected ()
+  open class SystemPropertyEnum protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object SystemPropertyEnum {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.SystemPropertyEnum")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.SystemPropertyEnum")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Editability")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Editability")
     @js.native
     def Editability: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum = js.native
     inline def Editability_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Editability")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Label")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Label")
     @js.native
     def Label: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum = js.native
     inline def Label_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Name")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Name")
     @js.native
     def Name: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum = js.native
     inline def Name_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Name")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.SystemPropertyEnum.TabIndex")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.SystemPropertyEnum.TabIndex")
     @js.native
     def TabIndex: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum = js.native
     inline def TabIndex_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TabIndex")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Visibility")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.SystemPropertyEnum.Visibility")
     @js.native
     def Visibility: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum = js.native
     inline def Visibility_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.SystemPropertyEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Visibility")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetEnumerationValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetEnumerationValue")
   @js.native
-  class WidgetEnumerationValue protected ()
+  open class WidgetEnumerationValue protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetEnumerationValue {
     def this(
       model: AbstractModel,
@@ -1026,7 +1052,7 @@ object customwidgets {
   }
   object WidgetEnumerationValue {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetEnumerationValue")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetEnumerationValue")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1047,21 +1073,21 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueType): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetEnumerationValue]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetEnumerationValue.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetEnumerationValue.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetEnumerationValue.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetEnumerationValue.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObject")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObject")
   @js.native
-  class WidgetObject protected ()
+  open class WidgetObject protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObject {
     def this(
       model: AbstractModel,
@@ -1074,7 +1100,7 @@ object customwidgets {
   }
   object WidgetObject {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObject")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObject")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1103,21 +1129,21 @@ object customwidgets {
     inline def createInWidgetValueUnderObjects(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObject = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderObjects")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObject]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObject.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObject.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObject.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObject.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObjectType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObjectType")
   @js.native
-  class WidgetObjectType protected ()
+  open class WidgetObjectType protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObjectType {
     def this(
       model: AbstractModel,
@@ -1130,7 +1156,7 @@ object customwidgets {
   }
   object WidgetObjectType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObjectType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObjectType")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1159,21 +1185,21 @@ object customwidgets {
     inline def createInWidgetValueTypeUnderObjectType(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueType): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueTypeUnderObjectType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObjectType]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObjectType.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObjectType.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetObjectType.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetObjectType.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetProperty")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetProperty")
   @js.native
-  class WidgetProperty protected ()
+  open class WidgetProperty protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetProperty {
     def this(
       model: AbstractModel,
@@ -1186,7 +1212,7 @@ object customwidgets {
   }
   object WidgetProperty {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetProperty")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetProperty")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1207,21 +1233,21 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObject): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetProperty]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetProperty.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetProperty.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetProperty.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetProperty.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetPropertyType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetPropertyType")
   @js.native
-  class WidgetPropertyType protected ()
+  open class WidgetPropertyType protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetPropertyType {
     def this(
       model: AbstractModel,
@@ -1234,7 +1260,7 @@ object customwidgets {
   }
   object WidgetPropertyType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetPropertyType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetPropertyType")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1255,21 +1281,21 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObjectType): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetPropertyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetPropertyType]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetPropertyType.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetPropertyType.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetPropertyType.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetPropertyType.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnType")
   @js.native
-  class WidgetReturnType protected ()
+  open class WidgetReturnType protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnType {
     def this(
       model: AbstractModel,
@@ -1282,7 +1308,7 @@ object customwidgets {
   }
   object WidgetReturnType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnType")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1303,82 +1329,82 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueType): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnType]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnType.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnType.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnType.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnType.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum")
   @js.native
-  class WidgetReturnTypeEnum protected ()
+  open class WidgetReturnTypeEnum protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object WidgetReturnTypeEnum {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Boolean")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Boolean")
     @js.native
     def Boolean: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def Boolean_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.DateTime")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.DateTime")
     @js.native
     def DateTime: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def DateTime_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Decimal")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Decimal")
     @js.native
     def Decimal: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def Decimal_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Float")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Float")
     @js.native
     def Float: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def Float_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Integer")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Integer")
     @js.native
     def Integer: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def Integer_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Object")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Object")
     @js.native
     def Object: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def Object_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.String")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.String")
     @js.native
     def String: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def String_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Void")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetReturnTypeEnum.Void")
     @js.native
     def Void: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum = js.native
     inline def Void_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetReturnTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Void")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetTranslation")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetTranslation")
   @js.native
-  class WidgetTranslation protected ()
+  open class WidgetTranslation protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetTranslation {
     def this(
       model: AbstractModel,
@@ -1391,7 +1417,7 @@ object customwidgets {
   }
   object WidgetTranslation {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetTranslation")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetTranslation")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1412,21 +1438,21 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueType): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetTranslation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetTranslation]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetTranslation.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetTranslation.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetTranslation.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetTranslation.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValue")
   @js.native
-  class WidgetValue protected ()
+  open class WidgetValue protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue {
     def this(
       model: AbstractModel,
@@ -1439,7 +1465,7 @@ object customwidgets {
   }
   object WidgetValue {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValue")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValue")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1460,21 +1486,21 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetProperty): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValue.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValue.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValue.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValue.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueType")
   @js.native
-  class WidgetValueType protected ()
+  open class WidgetValueType protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueType {
     def this(
       model: AbstractModel,
@@ -1487,7 +1513,7 @@ object customwidgets {
   }
   object WidgetValueType {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueType")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueType")
     @js.native
     val ^ : js.Any = js.native
     
@@ -1508,67 +1534,73 @@ object customwidgets {
     inline def createIn(container: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetPropertyType): typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueType]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueType.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueType.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueType.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueType.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum")
   @js.native
-  class WidgetValueTypeEnum protected ()
+  open class WidgetValueTypeEnum protected ()
     extends typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object WidgetValueTypeEnum {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Action")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Action")
     @js.native
     def Action: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Action_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Attribute")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Association")
+    @js.native
+    def Association: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
+    inline def Association_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Association")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Attribute")
     @js.native
     def Attribute: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Attribute_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Attribute")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Boolean")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Boolean")
     @js.native
     def Boolean: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Boolean_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.DataSource")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.DataSource")
     @js.native
     def DataSource: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def DataSource_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Decimal")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Decimal")
     @js.native
     def Decimal: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Decimal_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Entity")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Entity")
     @js.native
     def Entity: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.EntityConstraint")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.EntityConstraint")
     @js.native
     def EntityConstraint: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def EntityConstraint_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EntityConstraint")(x.asInstanceOf[js.Any])
@@ -1576,91 +1608,91 @@ object customwidgets {
     inline def Entity_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Entity")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Enumeration")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Enumeration")
     @js.native
     def Enumeration: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Enumeration_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enumeration")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Expression")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Expression")
     @js.native
     def Expression: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Expression_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Expression")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.File")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.File")
     @js.native
     def File: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def File_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Form")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Form")
     @js.native
     def Form: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Form_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Icon")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Icon")
     @js.native
     def Icon: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Icon_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Icon")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Image")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Image")
     @js.native
     def Image: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Image_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Integer")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Integer")
     @js.native
     def Integer: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Integer_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Microflow")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Microflow")
     @js.native
     def Microflow: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Microflow_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Microflow")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Nanoflow")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Nanoflow")
     @js.native
     def Nanoflow: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Nanoflow_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Nanoflow")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Object")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Object")
     @js.native
     def Object: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Object_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Object")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.String")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.String")
     @js.native
     def String: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def String_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.System")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.System")
     @js.native
     def System: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def System_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("System")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.TextTemplate")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.TextTemplate")
     @js.native
     def TextTemplate: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def TextTemplate_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextTemplate")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.TranslatableString")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.TranslatableString")
     @js.native
     def TranslatableString: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def TranslatableString_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TranslatableString")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Widgets")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "customwidgets.WidgetValueTypeEnum.Widgets")
     @js.native
     def Widgets: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Widgets_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Widgets")(x.asInstanceOf[js.Any])

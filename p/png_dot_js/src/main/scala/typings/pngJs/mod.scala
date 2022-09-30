@@ -1,8 +1,8 @@
 package typings.pngJs
 
 import typings.node.bufferMod.global.Buffer
-import typings.pngJs.pngJsNumbers.`0`
-import typings.pngJs.pngJsNumbers.`1`
+import typings.pngJs.pngJsInts.`0`
+import typings.pngJs.pngJsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,42 +21,42 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.pngJs.pngJsNumbers.`2`
-    - typings.pngJs.pngJsNumbers.`4`
-    - typings.pngJs.pngJsNumbers.`8`
-    - typings.pngJs.pngJsNumbers.`16`
+    - typings.pngJs.pngJsInts.`2`
+    - typings.pngJs.pngJsInts.`4`
+    - typings.pngJs.pngJsInts.`8`
+    - typings.pngJs.pngJsInts.`16`
   */
   trait BitDepth extends StObject
   object BitDepth {
     
-    inline def `16`: typings.pngJs.pngJsNumbers.`16` = 16.asInstanceOf[typings.pngJs.pngJsNumbers.`16`]
+    inline def `16`: typings.pngJs.pngJsInts.`16` = 16.asInstanceOf[typings.pngJs.pngJsInts.`16`]
     
-    inline def `2`: typings.pngJs.pngJsNumbers.`2` = 2.asInstanceOf[typings.pngJs.pngJsNumbers.`2`]
+    inline def `2`: typings.pngJs.pngJsInts.`2` = 2.asInstanceOf[typings.pngJs.pngJsInts.`2`]
     
-    inline def `4`: typings.pngJs.pngJsNumbers.`4` = 4.asInstanceOf[typings.pngJs.pngJsNumbers.`4`]
+    inline def `4`: typings.pngJs.pngJsInts.`4` = 4.asInstanceOf[typings.pngJs.pngJsInts.`4`]
     
-    inline def `8`: typings.pngJs.pngJsNumbers.`8` = 8.asInstanceOf[typings.pngJs.pngJsNumbers.`8`]
+    inline def `8`: typings.pngJs.pngJsInts.`8` = 8.asInstanceOf[typings.pngJs.pngJsInts.`8`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.pngJs.pngJsNumbers.`0`
-    - typings.pngJs.pngJsNumbers.`2`
-    - typings.pngJs.pngJsNumbers.`3`
-    - typings.pngJs.pngJsNumbers.`4`
-    - typings.pngJs.pngJsNumbers.`6`
+    - typings.pngJs.pngJsInts.`0`
+    - typings.pngJs.pngJsInts.`2`
+    - typings.pngJs.pngJsInts.`3`
+    - typings.pngJs.pngJsInts.`4`
+    - typings.pngJs.pngJsInts.`6`
   */
   trait ColorType extends StObject
   object ColorType {
     
-    inline def `0`: typings.pngJs.pngJsNumbers.`0` = 0.asInstanceOf[typings.pngJs.pngJsNumbers.`0`]
+    inline def `0`: typings.pngJs.pngJsInts.`0` = 0.asInstanceOf[typings.pngJs.pngJsInts.`0`]
     
-    inline def `2`: typings.pngJs.pngJsNumbers.`2` = 2.asInstanceOf[typings.pngJs.pngJsNumbers.`2`]
+    inline def `2`: typings.pngJs.pngJsInts.`2` = 2.asInstanceOf[typings.pngJs.pngJsInts.`2`]
     
-    inline def `3`: typings.pngJs.pngJsNumbers.`3` = 3.asInstanceOf[typings.pngJs.pngJsNumbers.`3`]
+    inline def `3`: typings.pngJs.pngJsInts.`3` = 3.asInstanceOf[typings.pngJs.pngJsInts.`3`]
     
-    inline def `4`: typings.pngJs.pngJsNumbers.`4` = 4.asInstanceOf[typings.pngJs.pngJsNumbers.`4`]
+    inline def `4`: typings.pngJs.pngJsInts.`4` = 4.asInstanceOf[typings.pngJs.pngJsInts.`4`]
     
-    inline def `6`: typings.pngJs.pngJsNumbers.`6` = 6.asInstanceOf[typings.pngJs.pngJsNumbers.`6`]
+    inline def `6`: typings.pngJs.pngJsInts.`6` = 6.asInstanceOf[typings.pngJs.pngJsInts.`6`]
   }
   
   trait PNG extends StObject {

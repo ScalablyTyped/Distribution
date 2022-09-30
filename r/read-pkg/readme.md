@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-pkg
 
-Typings are for version 5.2.0
+Typings are for version 7.1.0
 
 ## Library description:
 Read a package.json file
@@ -10,10 +10,10 @@ Read a package.json file
 | ------------------ | :-------------: |
 | Full name          | read-pkg |
 | Keywords           | json, read, parse, file, fs, graceful, load, package, normalize |
-| # releases         | 5 |
-| # dependents       | 632 |
-| # downloads        | 1542400681 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6036102733333334E8 |
+| # stars            | 137.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/read-pkg#readme)

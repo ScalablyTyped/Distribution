@@ -43,7 +43,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
+    * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -51,7 +51,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var isLastParagraph: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only.
+    * For EACH ITEM in the collection: Checks whether the paragraph is a list item.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var lineUnitBefore: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list.
+    * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -99,7 +99,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var list: js.UndefOr[ListLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
+    * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -107,7 +107,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var listItem: js.UndefOr[ListItemLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+    * For EACH ITEM in the collection: Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -115,7 +115,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var listItemOrNullObject: js.UndefOr[ListItemLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
+    * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -139,7 +139,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+    * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -147,7 +147,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
+    * For EACH ITEM in the collection: Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -155,7 +155,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws an error if it is not contained in a table.
+    * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -163,7 +163,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.
+    * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -171,7 +171,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
+    * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -179,7 +179,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
+    * For EACH ITEM in the collection: Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -227,7 +227,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+    * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -235,7 +235,7 @@ trait ParagraphCollectionLoadOptions extends StObject {
   var tableNestingLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
+    * For EACH ITEM in the collection: Gets the text of the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]

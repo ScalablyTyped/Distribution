@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ExpirationPolicy.
   * @param [properties] Properties to set
   */
-class ExpirationPolicy ()
+open class ExpirationPolicy ()
   extends StObject
      with IExpirationPolicy {
   def this(properties: IExpirationPolicy) = this()
@@ -25,7 +24,7 @@ class ExpirationPolicy ()
     * Converts this ExpirationPolicy to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object ExpirationPolicy {
   
@@ -42,6 +41,8 @@ object ExpirationPolicy {
   inline def create(): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExpirationPolicy]
   inline def create(properties: IExpirationPolicy): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
   /**
     * Decodes an ExpirationPolicy message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -53,9 +54,8 @@ object ExpirationPolicy {
   /* static member */
   inline def decode(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   inline def decode(reader: Reader, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
-  inline def decode(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
-  inline def decode(reader: Uint8Array, length: Double): ExpirationPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExpirationPolicy]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   /**
     * Decodes an ExpirationPolicy message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -65,7 +65,6 @@ object ExpirationPolicy {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
-  inline def decodeDelimited(reader: Uint8Array): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
   
   /**
     * Encodes the specified ExpirationPolicy message. Does not implicitly {@link google.pubsub.v1.ExpirationPolicy.verify|verify} messages.
@@ -93,7 +92,16 @@ object ExpirationPolicy {
     * @returns ExpirationPolicy
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  inline def fromObject(`object`: StringDictionary[Any]): ExpirationPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExpirationPolicy]
+  
+  /**
+    * Gets the default type url for ExpirationPolicy
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from an ExpirationPolicy message. Also converts values to other types if specified.
@@ -102,8 +110,8 @@ object ExpirationPolicy {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ExpirationPolicy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ExpirationPolicy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ExpirationPolicy): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ExpirationPolicy, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an ExpirationPolicy message.
@@ -111,5 +119,5 @@ object ExpirationPolicy {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

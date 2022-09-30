@@ -2,12 +2,12 @@ package typings.fundamentalReact
 
 import typings.fundamentalReact.anon.PartialLayoutGridProps
 import typings.fundamentalReact.anon.WeakValidationMapLayoutGr
-import typings.fundamentalReact.fundamentalReactNumbers.`1`
-import typings.fundamentalReact.fundamentalReactNumbers.`2`
-import typings.fundamentalReact.fundamentalReactNumbers.`3`
-import typings.fundamentalReact.fundamentalReactNumbers.`4`
-import typings.fundamentalReact.fundamentalReactNumbers.`5`
-import typings.fundamentalReact.fundamentalReactNumbers.`6`
+import typings.fundamentalReact.fundamentalReactInts.`1`
+import typings.fundamentalReact.fundamentalReactInts.`2`
+import typings.fundamentalReact.fundamentalReactInts.`3`
+import typings.fundamentalReact.fundamentalReactInts.`4`
+import typings.fundamentalReact.fundamentalReactInts.`5`
+import typings.fundamentalReact.fundamentalReactInts.`6`
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref

@@ -1,57 +1,24 @@
 package typings.pixiJs.mod
 
-import typings.std.Float32Array
-import typings.std.Uint16Array
+import typings.pixiCore.mod.IArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Standard 2D geometry used in PixiJS.
-  *
-  * Geometry can be defined without passing in a style or data if required.
-  *
-  * ```js
-  * const geometry = new PIXI.Geometry();
-  *
-  * geometry.addAttribute('positions', [0, 0, 100, 0, 100, 100, 0, 100], 2);
-  * geometry.addAttribute('uvs', [0,0,1,0,1,1,0,1], 2);
-  * geometry.addIndex([0,1,2,1,3,2]);
-  *
-  * ```
-  * @class
-  * @memberof PIXI
-  * @extends PIXI.Geometry
-  */
 @JSImport("pixi.js", "MeshGeometry")
 @js.native
-class MeshGeometry ()
-  extends StObject
-     with typings.pixiJs.PIXI.MeshGeometry {
-  def this(vertices: js.Array[Double]) = this()
-  def this(vertices: Float32Array) = this()
-  def this(vertices: js.Array[Double], uvs: js.Array[Double]) = this()
-  def this(vertices: js.Array[Double], uvs: Float32Array) = this()
-  def this(vertices: Unit, uvs: js.Array[Double]) = this()
-  def this(vertices: Unit, uvs: Float32Array) = this()
-  def this(vertices: Float32Array, uvs: js.Array[Double]) = this()
-  def this(vertices: Float32Array, uvs: Float32Array) = this()
-  def this(vertices: js.Array[Double], uvs: js.Array[Double], index: js.Array[Double]) = this()
-  def this(vertices: js.Array[Double], uvs: js.Array[Double], index: Uint16Array) = this()
-  def this(vertices: js.Array[Double], uvs: Unit, index: js.Array[Double]) = this()
-  def this(vertices: js.Array[Double], uvs: Unit, index: Uint16Array) = this()
-  def this(vertices: js.Array[Double], uvs: Float32Array, index: js.Array[Double]) = this()
-  def this(vertices: js.Array[Double], uvs: Float32Array, index: Uint16Array) = this()
-  def this(vertices: Unit, uvs: js.Array[Double], index: js.Array[Double]) = this()
-  def this(vertices: Unit, uvs: js.Array[Double], index: Uint16Array) = this()
-  def this(vertices: Unit, uvs: Unit, index: js.Array[Double]) = this()
-  def this(vertices: Unit, uvs: Unit, index: Uint16Array) = this()
-  def this(vertices: Unit, uvs: Float32Array, index: js.Array[Double]) = this()
-  def this(vertices: Unit, uvs: Float32Array, index: Uint16Array) = this()
-  def this(vertices: Float32Array, uvs: js.Array[Double], index: js.Array[Double]) = this()
-  def this(vertices: Float32Array, uvs: js.Array[Double], index: Uint16Array) = this()
-  def this(vertices: Float32Array, uvs: Unit, index: js.Array[Double]) = this()
-  def this(vertices: Float32Array, uvs: Unit, index: Uint16Array) = this()
-  def this(vertices: Float32Array, uvs: Float32Array, index: js.Array[Double]) = this()
-  def this(vertices: Float32Array, uvs: Float32Array, index: Uint16Array) = this()
+/**
+  * @param {Float32Array|number[]} [vertices] - Positional data on geometry.
+  * @param {Float32Array|number[]} [uvs] - Texture UVs.
+  * @param {Uint16Array|number[]} [index] - IndexBuffer
+  */
+open class MeshGeometry ()
+  extends typings.pixiMesh.mod.MeshGeometry {
+  def this(vertices: IArrayBuffer) = this()
+  def this(vertices: Unit, uvs: IArrayBuffer) = this()
+  def this(vertices: IArrayBuffer, uvs: IArrayBuffer) = this()
+  def this(vertices: Unit, uvs: Unit, index: IArrayBuffer) = this()
+  def this(vertices: Unit, uvs: IArrayBuffer, index: IArrayBuffer) = this()
+  def this(vertices: IArrayBuffer, uvs: Unit, index: IArrayBuffer) = this()
+  def this(vertices: IArrayBuffer, uvs: IArrayBuffer, index: IArrayBuffer) = this()
 }

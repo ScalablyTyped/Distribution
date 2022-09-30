@@ -7,7 +7,6 @@ import typings.underscore.mod.Collection
 import typings.underscore.mod.CollectionIterator
 import typings.underscore.mod.Iteratee
 import typings.underscore.mod.IterateeResult
-import typings.underscore.mod.List
 import typings.underscore.mod.MemoCollectionIterator
 import typings.underscore.mod.TypeOfCollection
 import typings.underscore.mod.TypeOfList
@@ -183,33 +182,33 @@ object anon {
   @js.native
   trait FnCallListIsSortedIterateeContext extends StObject {
     
-    def apply[V /* <: List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       isSorted: Boolean,
       iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]],
       context: Any
     ): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, isSorted: Unit, iteratee: Any | (Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]])): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, isSorted: Unit, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Unit, iteratee: Any | (Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]])): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, isSorted: Unit, iteratee: Unit, context: Any): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](
       list: V,
       isSorted: Unit,
       iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]],
       context: Any
     ): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]], context: Any): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]]): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, iteratee: Iteratee[V, Any, TypeOfCollection[V, scala.Nothing]], context: Any): js.Array[TypeOfList[V]] = js.native
   }
   
   @js.native
   trait FnCallListN extends StObject {
     
-    def apply[V /* <: List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
-    def apply[V /* <: List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+    def apply[V /* <: typings.underscore.mod.List[Any] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
   }
   
   @js.native

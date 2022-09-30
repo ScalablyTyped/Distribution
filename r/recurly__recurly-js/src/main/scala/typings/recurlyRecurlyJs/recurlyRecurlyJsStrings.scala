@@ -6,6 +6,7 @@ import typings.recurlyRecurlyJs.applePayMod.ApplePayEvent
 import typings.recurlyRecurlyJs.bankRedirectMod.BankRedirectEvent
 import typings.recurlyRecurlyJs.bankRedirectMod.PaymentMethodType
 import typings.recurlyRecurlyJs.elementsMod.ElementEvent
+import typings.recurlyRecurlyJs.googlePayMod.GooglePayEvent
 import typings.recurlyRecurlyJs.paypalMod.PayPalEvent
 import typings.recurlyRecurlyJs.pricingMod.PricingEvent
 import typings.recurlyRecurlyJs.recurlyMod.RecurlyEvent
@@ -68,6 +69,7 @@ object recurlyRecurlyJsStrings {
        with AdyenEvent
        with ApplePayEvent
        with BankRedirectEvent
+       with GooglePayEvent
        with PayPalEvent
        with RecurlyEvent
        with ThreeDSecureEvent
@@ -107,6 +109,7 @@ object recurlyRecurlyJsStrings {
   sealed trait ready
     extends StObject
        with ApplePayEvent
+       with GooglePayEvent
        with PayPalEvent
   inline def ready: ready = "ready".asInstanceOf[ready]
   
@@ -200,6 +203,7 @@ object recurlyRecurlyJsStrings {
        with AdyenEvent
        with ApplePayEvent
        with BankRedirectEvent
+       with GooglePayEvent
        with PayPalEvent
        with ThreeDSecureEvent
   inline def token: token = "token".asInstanceOf[token]

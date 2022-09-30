@@ -12,7 +12,7 @@ trait `155` extends StObject {
   
   var c: js.Tuple4[TH, KH, LA, VN]
   
-  var u: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`420`
+  var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`420`
 }
 object `155` {
   
@@ -25,6 +25,6 @@ object `155` {
     
     inline def setC(value: js.Tuple4[TH, KH, LA, VN]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`420`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`420`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
   }
 }

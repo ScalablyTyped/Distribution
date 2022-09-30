@@ -3,8 +3,8 @@ package typings.interactjsTypes.anon
 import typings.interactjsTypes.interactjsAutoScrollPluginMod.AutoScrollOptions
 import typings.interactjsTypes.interactjsDevToolsPluginMod.DevToolsOptions
 import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
-import typings.interactjsTypes.interactjsTypesNumbers.`16`
-import typings.interactjsTypes.interactjsTypesNumbers.`8`
+import typings.interactjsTypes.interactjsTypesInts.`16`
+import typings.interactjsTypes.interactjsTypesInts.`8`
 import typings.interactjsTypes.interactjsTypesStrings.auto
 import typings.interactjsTypes.interactjsTypesStrings.client
 import typings.interactjsTypes.interactjsTypesStrings.never
@@ -59,7 +59,7 @@ trait OrBooleanOptionsAllowFrom extends StObject {
   var modifiers: js.UndefOr[(js.Array[Modifier[Any, Any, Any, Any]]) | Boolean] = js.undefined
   
   var mouseButtons: js.UndefOr[
-    typings.interactjsTypes.interactjsTypesNumbers.`0` | typings.interactjsTypes.interactjsTypesNumbers.`1` | typings.interactjsTypes.interactjsTypesNumbers.`2` | typings.interactjsTypes.interactjsTypesNumbers.`4` | `8` | `16` | Boolean
+    typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16` | Boolean
   ] = js.undefined
   
   var origin: js.UndefOr[Point | String | typings.interactjsTypes.typesMod.Element | Boolean] = js.undefined
@@ -166,7 +166,7 @@ object OrBooleanOptionsAllowFrom {
     inline def setModifiersVarargs(value: (Modifier[Any, Any, Any, Any])*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setMouseButtons(
-      value: typings.interactjsTypes.interactjsTypesNumbers.`0` | typings.interactjsTypes.interactjsTypesNumbers.`1` | typings.interactjsTypes.interactjsTypesNumbers.`2` | typings.interactjsTypes.interactjsTypesNumbers.`4` | `8` | `16` | Boolean
+      value: typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16` | Boolean
     ): Self = StObject.set(x, "mouseButtons", value.asInstanceOf[js.Any])
     
     inline def setMouseButtonsUndefined: Self = StObject.set(x, "mouseButtons", js.undefined)

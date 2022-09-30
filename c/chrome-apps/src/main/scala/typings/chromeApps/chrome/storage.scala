@@ -1,12 +1,12 @@
 package typings.chromeApps.chrome
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chromeApps.chromeAppsNumbers.`102400`
-import typings.chromeApps.chromeAppsNumbers.`120`
-import typings.chromeApps.chromeAppsNumbers.`1800`
-import typings.chromeApps.chromeAppsNumbers.`512`
-import typings.chromeApps.chromeAppsNumbers.`5242880`
-import typings.chromeApps.chromeAppsNumbers.`8192`
+import typings.chromeApps.chromeAppsInts.`102400`
+import typings.chromeApps.chromeAppsInts.`120`
+import typings.chromeApps.chromeAppsInts.`1800`
+import typings.chromeApps.chromeAppsInts.`512`
+import typings.chromeApps.chromeAppsInts.`5242880`
+import typings.chromeApps.chromeAppsInts.`8192`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

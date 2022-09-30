@@ -3,6 +3,7 @@ package typings.promisePoller
 import typings.promisePoller.promisePollerStrings.`exponential-backoff`
 import typings.promisePoller.promisePollerStrings.`fixed-interval`
 import typings.promisePoller.promisePollerStrings.`linear-backoff`
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -156,7 +157,7 @@ object mod {
       * be a waste of time to continue to poll. To cancel polling early, return
       * `false` from the task function instead of a promise.
       */
-    def taskFn(): T | js.Thenable[T]
+    def taskFn(): T | PromiseLike[T]
     
     /**
       * For each poll attempt, reject after this timeout has passed
@@ -165,7 +166,7 @@ object mod {
   }
   object PromisePollerOptions {
     
-    inline def apply[T](taskFn: () => T | js.Thenable[T]): PromisePollerOptions[T] = {
+    inline def apply[T](taskFn: () => T | PromiseLike[T]): PromisePollerOptions[T] = {
       val __obj = js.Dynamic.literal(taskFn = js.Any.fromFunction0(taskFn))
       __obj.asInstanceOf[PromisePollerOptions[T]]
     }
@@ -216,7 +217,7 @@ object mod {
       
       inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
       
-      inline def setTaskFn(value: () => T | js.Thenable[T]): Self = StObject.set(x, "taskFn", js.Any.fromFunction0(value))
+      inline def setTaskFn(value: () => T | PromiseLike[T]): Self = StObject.set(x, "taskFn", js.Any.fromFunction0(value))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

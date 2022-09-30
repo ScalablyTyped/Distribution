@@ -1,6 +1,5 @@
 package typings.ipldCar
 
-import typings.multiformats.linkInterfaceMod.Version
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -124,7 +123,7 @@ object iteratorMod {
     
     var _iterable: Unit | AsyncIterable[typings.ipldCar.apiMod.Block] = js.native
     
-    var _roots: js.Array[typings.multiformats.mod.CID[Any, Double, Double, Version]] = js.native
+    var _roots: js.Array[typings.multiformats.mod.CID] = js.native
     
     var _version: Double = js.native
     
@@ -145,7 +144,7 @@ object iteratorMod {
   
   type BytesReader = typings.ipldCar.codingMod.BytesReader
   
-  type CID = typings.multiformats.mod.CID[Any, Double, Double, Version]
+  type CID = typings.multiformats.mod.CID
   
   type RootsReader = typings.ipldCar.apiMod.RootsReader
 }

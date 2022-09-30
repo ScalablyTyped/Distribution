@@ -1,38 +1,38 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`0`
-import typings.activexOutlook.activexOutlookNumbers.`11`
-import typings.activexOutlook.activexOutlookNumbers.`12`
-import typings.activexOutlook.activexOutlookNumbers.`14`
-import typings.activexOutlook.activexOutlookNumbers.`18`
-import typings.activexOutlook.activexOutlookNumbers.`19`
-import typings.activexOutlook.activexOutlookNumbers.`1`
-import typings.activexOutlook.activexOutlookNumbers.`20`
-import typings.activexOutlook.activexOutlookNumbers.`21`
-import typings.activexOutlook.activexOutlookNumbers.`22`
-import typings.activexOutlook.activexOutlookNumbers.`3`
-import typings.activexOutlook.activexOutlookNumbers.`5`
-import typings.activexOutlook.activexOutlookNumbers.`6`
-import typings.activexOutlook.activexOutlookNumbers.`7`
+import typings.activexOutlook.activexOutlookInts.`0`
+import typings.activexOutlook.activexOutlookInts.`11`
+import typings.activexOutlook.activexOutlookInts.`12`
+import typings.activexOutlook.activexOutlookInts.`14`
+import typings.activexOutlook.activexOutlookInts.`18`
+import typings.activexOutlook.activexOutlookInts.`19`
+import typings.activexOutlook.activexOutlookInts.`1`
+import typings.activexOutlook.activexOutlookInts.`20`
+import typings.activexOutlook.activexOutlookInts.`21`
+import typings.activexOutlook.activexOutlookInts.`22`
+import typings.activexOutlook.activexOutlookInts.`3`
+import typings.activexOutlook.activexOutlookInts.`5`
+import typings.activexOutlook.activexOutlookInts.`6`
+import typings.activexOutlook.activexOutlookInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`19`
-  - typings.activexOutlook.activexOutlookNumbers.`14`
-  - typings.activexOutlook.activexOutlookNumbers.`5`
-  - typings.activexOutlook.activexOutlookNumbers.`7`
-  - typings.activexOutlook.activexOutlookNumbers.`21`
-  - typings.activexOutlook.activexOutlookNumbers.`18`
-  - typings.activexOutlook.activexOutlookNumbers.`20`
-  - typings.activexOutlook.activexOutlookNumbers.`11`
-  - typings.activexOutlook.activexOutlookNumbers.`3`
-  - typings.activexOutlook.activexOutlookNumbers.`0`
-  - typings.activexOutlook.activexOutlookNumbers.`12`
-  - typings.activexOutlook.activexOutlookNumbers.`22`
-  - typings.activexOutlook.activexOutlookNumbers.`1`
-  - typings.activexOutlook.activexOutlookNumbers.`6`
+  - typings.activexOutlook.activexOutlookInts.`19`
+  - typings.activexOutlook.activexOutlookInts.`14`
+  - typings.activexOutlook.activexOutlookInts.`5`
+  - typings.activexOutlook.activexOutlookInts.`7`
+  - typings.activexOutlook.activexOutlookInts.`21`
+  - typings.activexOutlook.activexOutlookInts.`18`
+  - typings.activexOutlook.activexOutlookInts.`20`
+  - typings.activexOutlook.activexOutlookInts.`11`
+  - typings.activexOutlook.activexOutlookInts.`3`
+  - typings.activexOutlook.activexOutlookInts.`0`
+  - typings.activexOutlook.activexOutlookInts.`12`
+  - typings.activexOutlook.activexOutlookInts.`22`
+  - typings.activexOutlook.activexOutlookInts.`1`
+  - typings.activexOutlook.activexOutlookInts.`6`
 */
 trait OlUserPropertyType extends StObject
 object OlUserPropertyType {

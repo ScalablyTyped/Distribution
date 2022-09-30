@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DataViewControlBar")
 @js.native
-class DataViewControlBar protected ()
+open class DataViewControlBar protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DataViewControlBar {
   def this(
     model: AbstractModel,

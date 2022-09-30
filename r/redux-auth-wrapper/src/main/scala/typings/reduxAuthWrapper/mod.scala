@@ -3,7 +3,7 @@ package typings.reduxAuthWrapper
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
-import typings.react.mod.ReactType
+import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ object mod {
   
   trait AuthConfig extends StObject {
     
-    var AuthenticatingComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var AuthenticatingComponent: js.UndefOr[ElementType[Any]] = js.undefined
     
     var wrapperDisplayName: js.UndefOr[String] = js.undefined
   }
@@ -50,7 +50,7 @@ object mod {
     
     extension [Self <: AuthConfig](x: Self) {
       
-      inline def setAuthenticatingComponent(value: ReactType[js.Any]): Self = StObject.set(x, "AuthenticatingComponent", value.asInstanceOf[js.Any])
+      inline def setAuthenticatingComponent(value: ElementType[Any]): Self = StObject.set(x, "AuthenticatingComponent", value.asInstanceOf[js.Any])
       
       inline def setAuthenticatingComponentUndefined: Self = StObject.set(x, "AuthenticatingComponent", js.undefined)
       

@@ -24,9 +24,6 @@ open class Question protected ()
   
   def addConditionObjectsByContext(objects: Any, context: Any): Unit = js.native
   
-  /*
-    * Add error into the question error list.
-    */
   def addError(error: String): Unit = js.native
   def addError(error: SurveyError): Unit = js.native
   
@@ -42,9 +39,6 @@ open class Question protected ()
   
   def ariaInvalid: `true` | `false` = js.native
   
-  /*
-    * A11Y properties
-    */
   def ariaRequired: `true` | `false` = js.native
   
   def ariaRole: String = js.native
@@ -59,35 +53,35 @@ open class Question protected ()
   
   /* protected */ def checkForResponsiveness(el: Any): Unit = js.native
   
-  /*
-    * Get is question ready to use
-    */
   def choicesLoaded(): Unit = js.native
   
   def clearErrors(): Any = js.native
   /*
-    * Call this function to clear all errors in the question
+    * Empties the `errors` array.
     */
   @JSName("clearErrors")
   def clearErrors_Unit(): Unit = js.native
   
   /*
-    * Gets or sets a value that specifies how invisible question clears the value. By default the behavior is define by Survey "clearInvisibleValues" property.
+    * Specifies when to clear the question value if the question becomes invisible.
     * 
-    * The following options are available:
+    * Possible values:
     * 
-    * - `default` (default) - Survey "clearInvisibleValues" property defines the behavior.
-    * - `none` - do not clear invisible value.
-    * - `onHidden` - clear the question value when it becomes invisible. If a question has value and it was invisible initially then survey clears the value on completing.
-    * - `onComplete` - clear invisible question value on survey complete.
+    * - `"default"` (default) - Inherits the setting from the Survey's [`clearInvisibleValues`](https://surveyjs.io/form-library/documentation/surveymodel#clearInvisibleValues) property.
+    * - `"onHidden"` - Clears the value when the question becomes invisible. If a question is invisible on startup and has an initial value, this value will be cleared when the survey is complete.
+    * - `"onComplete"` - Clears the value when the survey is complete.
+    * - `"none"` - Never clears the value of an invisible question.
     */
   def clearIfInvisible: String = js.native
   def clearIfInvisible_=(`val`: String): Unit = js.native
   
   def clearIncorrectValues(): Any = js.native
   /*
-    * Call this function to remove values from the current question, that end-user will not be able to enter.
-    * For example the value that doesn't exists in a radigroup/dropdown/checkbox choices or matrix rows/columns.
+    * Removes values that cannot be assigned to this question, for example, choices unlisted in the `choices` array.
+    * 
+    * Call this method after you assign new question values in code to ensure that they are acceptable.
+    * 
+    * > NOTE: This method does not remove values that do not pass validation. Call the `hasErrors()` method to validate newly assigned values.
     */
   @JSName("clearIncorrectValues")
   def clearIncorrectValues_Unit(): Unit = js.native
@@ -109,13 +103,13 @@ open class Question protected ()
   def clearValueIfInvisible_Unit(): Unit = js.native
   
   /*
-    * Clear the question value. It clears the question comment as well.
+    * Sets the question's `value` and `comment` properties to `undefined`.
     */
   @JSName("clearValue")
   def clearValue_Unit(): Unit = js.native
   
   /*
-    * The question comment value.
+    * A comment to the selected question value. Enable the `hasComment` property to allow users to leave comments.
     */
   def comment: String = js.native
   
@@ -123,16 +117,19 @@ open class Question protected ()
   
   var commentElement: Any = js.native
   
-  def commentOrOtherPlaceHolder: String = js.native
+  def commentOrOtherPlaceholder: String = js.native
   
-  /*
-    * Use this property to set the place holder text for comment field  .
-    */
   def commentPlaceHolder: String = js.native
   def commentPlaceHolder_=(`val`: String): Unit = js.native
   
   /*
-    * Use it to get or set the comment value.
+    * A placeholder for the comment area. Applies when the `hasComment` property is `true`.
+    */
+  def commentPlaceholder: String = js.native
+  def commentPlaceholder_=(`val`: String): Unit = js.native
+  
+  /*
+    * Specifies a caption displayed above the comment area. Applies when the `hasComment` property is `true`.
     */
   def commentText: String = js.native
   def commentText_=(`val`: String): Unit = js.native
@@ -142,8 +139,7 @@ open class Question protected ()
   /* protected */ def convertDefaultValue(`val`: Any): Any = js.native
   
   /*
-    * The correct answer on the question. Set this value if you are doing a quiz.
-    * Please note, this property is hidden for question without input, for example html question.
+    * A correct answer to this question. Specify this property if you want to [create a quiz](https://surveyjs.io/form-library/documentation/design-survey-create-a-quiz).
     */
   def correctAnswer: Any = js.native
   
@@ -161,14 +157,8 @@ open class Question protected ()
   
   def cssRoot: String = js.native
   
-  /*
-    * Returns the validation errors count.
-    */
   def currentErrorCount: Double = js.native
   
-  /*
-    * The link to the custom widget.
-    */
   def customWidget: QuestionCustomWidget = js.native
   
   var customWidgetData: Any = js.native
@@ -176,7 +166,7 @@ open class Question protected ()
   var customWidgetValue: QuestionCustomWidget = js.native
   
   /*
-    * A default value for the question. Ignored for question types that cannot have a [value](https://surveyjs.io/Documentation/Library?id=Question#value) (for example, HTML).
+    * A default value for the question. Ignored for question types that cannot have a [value](https://surveyjs.io/form-library/documentation/question#value) (for example, HTML).
     * 
     * The default value is used as a question value in the following cases:
     * 
@@ -187,9 +177,9 @@ open class Question protected ()
   def defaultValue: Any = js.native
   
   /*
-    * An expression used to calculate the [defaultValue](https://surveyjs.io/Documentation/Library?id=Question#defaultValue).
+    * An expression used to calculate the [defaultValue](https://surveyjs.io/form-library/documentation/question#defaultValue).
     * 
-    * This expression applies until the question [value](https://surveyjs.io/Documentation/Library?id=Question#value) is specified by an end user or programmatically.
+    * This expression applies until the question [value](https://surveyjs.io/form-library/documentation/question#value) is specified by an end user or programmatically.
     * 
     * An expression can reference other questions as follows:
     * 
@@ -197,7 +187,7 @@ open class Question protected ()
     * - `{panel.other_question_name}` (to access questions inside the same dynamic panel)
     * - `{row.other_question_name}` (to access questions inside the same dynamic matrix or multi-column dropdown)
     * 
-    * An expression can also include built-in and custom functions for advanced calculations. For example, if the `defaultValue` should be today's date, set the `defaultValueExpression` to `"today()"`, and the corresponding built-in function will be executed each time the survey is loaded. Refer to the following help topic for more information: [Use Functions in Expressions](https://surveyjs.io/Documentation/Library#conditions-functions).
+    * An expression can also include built-in and custom functions for advanced calculations. For example, if the `defaultValue` should be today's date, set the `defaultValueExpression` to `"today()"`, and the corresponding built-in function will be executed each time the survey is loaded. Refer to the following help topic for more information: [Built-In Functions](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#built-in-functions).
     */
   def defaultValueExpression: Any = js.native
   def defaultValueExpression_=(`val`: Any): Unit = js.native
@@ -207,8 +197,13 @@ open class Question protected ()
   def defaultValue_=(`val`: Any): Unit = js.native
   
   /*
-    * Question description location. By default, value is "default" and it depends on survey questionDescriptionLocation property
-    * You may change it to "underInput" to render it under question input or "underTitle" to rendered it under title.
+    * Specifies where to display a question description.
+    * 
+    * Possible values:
+    * 
+    * - `"default"` (default) - Inherits the setting from the Survey's [`questionDescriptionLocation`](https://surveyjs.io/form-library/documentation/surveymodel#questionDescriptionLocation) property.
+    * - `"underTitle"` - Displays the description under the question title.
+    * - `"underInput"` - Displays the description under the interactive area.
     */
   def descriptionLocation: String = js.native
   def descriptionLocation_=(`val`: String): Unit = js.native
@@ -218,8 +213,11 @@ open class Question protected ()
   def displayValueCallback(text: String): String = js.native
   
   /*
-    * An expression that returns true or false. If it returns false the Question becomes read only and an end-user will not able to answer on the qustion. The library runs the expression on survey start and on changing a question value. If the property is empty then readOnly property is used.
-    * Please note, this property is hidden for question without input, for example html question.
+    * A Boolean expression. If it evaluates to `false`, this question becomes read-only.
+    * 
+    * A survey parses and runs all expressions on startup. If any values used in the expression change, the survey re-evaluates it.
+    * 
+    * Refer to the following help topic for more information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility)
     */
   def enableIf: String = js.native
   def enableIf_=(`val`: String): Unit = js.native
@@ -229,7 +227,7 @@ open class Question protected ()
   /* protected */ def fireCallback(callback: Any): Unit = js.native
   
   /*
-    * Move the focus to the input of this question.
+    * Moves focus to the input field of this question.
     */
   def focus(): Unit = js.native
   def focus(onError: Boolean): Unit = js.native
@@ -238,14 +236,8 @@ open class Question protected ()
   
   var focusIn: Any = js.native
   
-  /*
-    * Returns the title after processing the question template.
-    */
   def fullTitle: String = js.native
   
-  /*
-    * Returns a copy of question errors survey. For some questions like matrix and panel dynamic it includes the errors of nested questions.
-    */
   def getAllErrors(): js.Array[SurveyError] = js.native
   
   def getAllValues(): Any = js.native
@@ -288,7 +280,7 @@ open class Question protected ()
   /* protected */ def getDesktopRenderAs(): String = js.native
   
   /*
-    * Return the question value as a display text. For example, for dropdown, it would return the item text instead of item value.
+    * Returns a display text that corresponds to the question value. For example, if you call this method for a Dropdown question, it returns an item text instead of an item value.
     */
   def getDisplayValue(keysAsText: Boolean): Any = js.native
   def getDisplayValue(keysAsText: Boolean, value: Any): Any = js.native
@@ -327,9 +319,11 @@ open class Question protected ()
   def getPanel(): IPanel = js.native
   
   /*
-    * Returns question answer data as a plain object: with question title, name, value and displayValue.
-    * For complex questions (like matrix, etc.) isNode flag is set to true and data contains array of nested objects (rows)
-    * set options.includeEmpty to false if you want to skip empty answers
+    * Returns the question value as an object in which the question name, title, value, and other parameters are stored as individual properties.
+    * 
+    * If the question can have more than one value (Matrix, Multiple Text), the object enables the `isNode` flag and stores information about these values in the `data` property. Refer to the following help topic for more information: [Access Full Survey Results](https://surveyjs.io/form-library/documentation/handle-survey-results-access#access-full-survey-results).
+    * 
+    * Pass an object with the `includeEmpty` property set to `false` if you want to skip empty answers.
     */
   def getPlainData(): Any = js.native
   def getPlainData(options: Any): Any = js.native
@@ -358,7 +352,7 @@ open class Question protected ()
   def getSupportedValidators(): js.Array[Any] = js.native
   
   /*
-    * Return the title location based on question titleLocation property and QuestionTitleLocation of it's parents
+    * Returns title location calculated based on the question's `titleLocation` property and the `questionTitleLocation` property of the question's containers (survey, page, or panel).
     */
   def getTitleLocation(): String = js.native
   
@@ -386,7 +380,7 @@ open class Question protected ()
   def getValueName(): String = js.native
   
   /*
-    * Set it to true, to add a comment for the question.
+    * Specifies whether to display a comment area. Incompatible with the `hasOther` property.
     */
   def hasComment: Boolean = js.native
   def hasComment_=(`val`: Boolean): Unit = js.native
@@ -404,12 +398,12 @@ open class Question protected ()
   def hasErrors(fireCallback: Unit, rec: Any): Boolean = js.native
   
   /*
-    * Returns false if the question doesn't have an input element, for example: QuestionHtmlModel
+    * Returns `false` if the question has no input fields ([HTML](https://surveyjs.io/form-library/documentation/questionhtmlmodel), [Image](https://surveyjs.io/form-library/documentation/questionimagemodel), and similar question types).
     */
   def hasInput: Boolean = js.native
   
   /*
-    * Specifies whether to display the "Other" choice item.
+    * Specifies whether to display the "Other" choice item. Incompatible with the `hasComment` property.
     */
   def hasOther: Boolean = js.native
   
@@ -420,7 +414,7 @@ open class Question protected ()
   /* protected */ def hasRequiredError(): Boolean = js.native
   
   /*
-    * Returns false if the question doesn't have an input element or have multiple inputs: matrices or panel dynamic
+    * Returns `false` if the question has no input fields ([HTML](https://surveyjs.io/form-library/documentation/questionhtmlmodel), [Image](https://surveyjs.io/form-library/documentation/questionimagemodel)) or has multiple input fields ([Matrix](https://surveyjs.io/form-library/documentation/questionmatrixmodel), [Multiple Text](https://surveyjs.io/form-library/documentation/questionmultipletextmodel)).
     */
   def hasSingleInput: Boolean = js.native
   
@@ -433,13 +427,15 @@ open class Question protected ()
   def hasTitleOnTop: Boolean = js.native
   
   /*
-    * Set hideNumber to true to stop showing the number for this question. The question will not be counter
+    * Hides the question number from the title and excludes the question from numbering.
+    * 
+    * If you want to disable question numbering in the entire survey, set SurveyModel's `showQuestionNumbers` property to `false`.
     */
   def hideNumber: Boolean = js.native
   def hideNumber_=(`val`: Boolean): Unit = js.native
   
   /*
-    * The unique identificator. It is generated automatically.
+    * A value to assign to the `id` attribute of the rendered HTML element. A default `id` is generated automatically.
     */
   def id: String = js.native
   def id_=(`val`: String): Unit = js.native
@@ -451,7 +447,7 @@ open class Question protected ()
   def inputId: String = js.native
   
   /*
-    * Returns true if the question may have a title located on the left
+    * Returns `true` if the question can display its title to the left of the input field.
     */
   def isAllowTitleLeft: Boolean = js.native
   
@@ -473,7 +469,7 @@ open class Question protected ()
   /* protected */ def isDefaultValueEmpty(): Boolean = js.native
   
   /*
-    * Returns true if the question value is empty
+    * Returns `true` if the question value is an empty string, array, or object or if it equals `undefined` or `null`.
     */
   def isEmpty(): Boolean = js.native
   
@@ -488,7 +484,7 @@ open class Question protected ()
   var isMobile: Boolean = js.native
   
   /*
-    * Return true if there is a parent (page or panel) and it is visible
+    * Returns `true` if a parent element (page or panel) is visible.
     */
   def isParentVisible: Boolean = js.native
   
@@ -514,8 +510,7 @@ open class Question protected ()
   var isRequireTextOnStart_FQuestion: Boolean = js.native
   
   /*
-    * Set this property to true, to make the question a required. If a user doesn't answer the question then a validation error will be generated.
-    * Please note, this property is hidden for question without input, for example html question.
+    * Makes the question required. If a respondent skips a required question, the survey displays a validation error.
     */
   def isRequired: Boolean = js.native
   def isRequired_=(`val`: Boolean): Unit = js.native
@@ -537,12 +532,14 @@ open class Question protected ()
   /* protected */ def isValueSurveyElement(`val`: Any): Boolean = js.native
   
   /*
-    * Returns true if the question is visible or survey is in design mode right now.
+    * Returns `true` if the question is visible or the survey is currently in design mode.
+    * 
+    * If you want to display or hide a question based on a condition, specify the [`visibleIf`](https://surveyjs.io/form-library/documentation/question#visibleIf) property. Refer to the following help topic for information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   @JSName("isVisible")
   def isVisible_MQuestion: Boolean = js.native
   
-  def locCommentPlaceHolder: LocalizableString = js.native
+  def locCommentPlaceholder: LocalizableString = js.native
   
   def locCommentText: LocalizableString = js.native
   
@@ -555,10 +552,6 @@ open class Question protected ()
   
   var localeChangedCallback: Any = js.native
   
-  /*
-    * Move question to a new container Page/Panel. Add as a last element if insertBefore parameter is not used or inserted into the given index,
-    * if insert parameter is number, or before the given element, if the insertBefore parameter is a question or panel
-    */
   def moveTo(container: IPanel): Boolean = js.native
   def moveTo(container: IPanel, insertBefore: Any): Boolean = js.native
   
@@ -567,8 +560,9 @@ open class Question protected ()
   /* protected */ def needResponsiveness(): Boolean = js.native
   
   /*
-    * The property returns the question number. If question is invisible then it returns empty string.
-    * If visibleIndex is 1, then no is 2, or 'B' if survey.questionStartIndex is 'A'.
+    * A question number or letter (depends on SurveyModel's `questionStartIndex` property).
+    * 
+    * For invisible questions, this property returns an empty string.
     */
   def no: String = js.native
   @JSName("no")
@@ -597,10 +591,13 @@ open class Question protected ()
   /* protected */ def onParentQuestionChanged(): Unit = js.native
   
   /*
-    * The event is fired when isReady property of question is changed.
-    * options.question - the question
-    * options.isReady - current value of isReady
-    * options.oldIsReady - old value of isReady
+    * An event that is raised when the question's ready state has changed (expressions are evaluated, choices are loaded from a web resource specified by the `choicesByUrl` property, etc.).
+    * 
+    * Parameters:
+    * 
+    * - `sender` - A survey that contains the question whose ready state has changed.
+    * - `options.isReady` - A Boolean value that indicates whether the question is ready.
+    * - `options.oldIsReady` - A Boolean value that indicates the previous ready state.
     */
   var onReadyChanged: EventBase[Question] = js.native
   
@@ -618,36 +615,34 @@ open class Question protected ()
   /* protected */ def onVisibleChanged(): Unit = js.native
   
   /*
-    * Get/set the page where the question is located.
+    * Returns a page to which the question belongs and allows you to move this question to a different page.
     */
   def page: IPage = js.native
   def page_=(`val`: IPage): Unit = js.native
   
   /*
-    * A parent question. It can be a dynamic panel or dynamic/dropdown matrices. If the value is a matrix, it means that question is a cell question.
-    * This property is null for a stand alone question.
+    * A Dynamic Panel, Dynamic Matrix, or Dropdown Matrix that includes the current question.
+    * 
+    * This property is `null` for standalone questions.
     */
   def parentQuestion: Question = js.native
   
   var parentQuestionValue: Question = js.native
   
   /*
-    * A parent element. It can be panel or page.
+    * Returns a survey element (panel or page) that contains the question and allows you to move this question to a different survey element.
     */
   @JSName("parent")
   def parent_MQuestion: IPanel = js.native
   
   /* protected */ def processResponsiveness(requiredWidth: Double, availableWidth: Double): Any = js.native
   
-  /*
-    * Returns the rendred question title.
-    */
   def processedTitle: String = js.native
   
   var questionTitleTemplateCallback: Any = js.native
   
   /*
-    * Returns questions count: 1 for the non-matrix questions and all inner visible questions that has input(s) widgets for question of matrix types.
+    * The number of quiz questions. A question counts if it is visible, has an input field, and specifies `correctAnswer`.
     */
   def quizQuestionCount: Double = js.native
   
@@ -655,9 +650,6 @@ open class Question protected ()
   
   def removeElement(element: IElement): Boolean = js.native
   
-  /*
-    * Remove a particular error from the question error list.
-    */
   def removeError(error: SurveyError): Unit = js.native
   
   var renderAs: String = js.native
@@ -671,23 +663,23 @@ open class Question protected ()
   def requireUpdateCommentValue: Boolean = js.native
   
   /*
-    * The custom text that will be shown on required error. Use this property, if you do not want to show the default text.
-    * Please note, this property is hidden for question without input, for example html question.
+    * Specifies a custom error message for a required form field.
     */
   def requiredErrorText: String = js.native
   def requiredErrorText_=(`val`: String): Unit = js.native
   
   /*
-    * An expression that returns true or false. If it returns true the Question becomes required and an end-user has to answer it.
-    * If it returns false the Question then an end-user may not answer it the Question maybe empty.
-    * The library runs the expression on survey start and on changing a question value. If the property is empty then isRequired property is used.
-    * Please note, this property is hidden for question without input, for example html question.
+    * A Boolean expression. If it evaluates to `true`, this question becomes required.
+    * 
+    * A survey parses and runs all expressions on startup. If any values used in the expression change, the survey re-evaluates it.
+    * 
+    * Refer to the following help topic for more information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility)
     */
   def requiredIf: String = js.native
   def requiredIf_=(`val`: String): Unit = js.native
   
   /*
-    * Returns the char/string for a required question.
+    * Returns a character or text string that indicates a required question.
     */
   def requiredText: String = js.native
   @JSName("requiredText")
@@ -766,7 +758,7 @@ open class Question protected ()
   def showErrorsBelowQuestion: Boolean = js.native
   
   /*
-    * The Question renders on the new line if the property is true. If the property is false, the question tries to render on the same line/row with a previous question/panel.
+    * Disable this property if you want to render the current question on the same line or row with the previous question or panel.
     */
   def startWithNewLine: Boolean = js.native
   def startWithNewLine_=(`val`: Boolean): Unit = js.native
@@ -788,8 +780,17 @@ open class Question protected ()
   var surveyLoadCallback: Any = js.native
   
   /*
-    * Set this property different from "default" to set the specific question title location for this panel/page.
-    * Please note, this property is hidden for questions without input, for example html question.
+    * Sets question title location relative to the input field. Overrides the `questionTitleLocation` property specified for the question's container (survey, page, or panel).
+    * 
+    * Possible values:
+    * 
+    * - `"default"` - Inherits the setting from the `questionTitleLocation` property specified for the question's container.
+    * - `"top"` - Displays the title above the input field.
+    * - `"bottom"` - Displays the title below the input field.
+    * - `"left"` - Displays the title to the left of the input field.
+    * - `"hidden"` - Hides the question title.
+    * 
+    * > NOTE: Certain question types (Matrix, Multiple Text) do not support the `"left"` value. For them, the `"top"` value is used.
     */
   def titleLocation: String = js.native
   def titleLocation_=(`val`: String): Unit = js.native
@@ -827,8 +828,11 @@ open class Question protected ()
   def updateValueWithDefaults_Unit(): Unit = js.native
   
   /*
-    * Use it to choose how other question values will be rendered in title if referenced in {}.
-    * Please note, this property is hidden for question without input, for example html question.
+    * Specifies whether to use display names for question values interpolated in the title. To interpolate question values, use curly brackets (`{}`).
+    * 
+    * This property is useful when interpolated question values have both the `value` and `text` properties.
+    * 
+    * Default value: `true`
     */
   def useDisplayValuesInTitle: Boolean = js.native
   def useDisplayValuesInTitle_=(`val`: Boolean): Unit = js.native
@@ -843,14 +847,13 @@ open class Question protected ()
   var validatorRunner: ValidatorRunner = js.native
   
   /*
-    * The list of question validators.
-    * Please note, this property is hidden for question without input, for example html question.
+    * Question validators.
     */
   def validators: Any = js.native
   def validators_=(`val`: Any): Unit = js.native
   
   /*
-    * Get/Set the question value.
+    * Gets or sets the question value.
     */
   def value: Any = js.native
   
@@ -863,11 +866,9 @@ open class Question protected ()
   def valueFromDataCallback(`val`: Any): Any = js.native
   
   /*
-    * Use this property if you want to store the question result in the name different from the question name.
-    * Question name should be unique in the survey and valueName could be not unique. It allows to share data between several questions with the same valueName.
-    * The library set the value automatically if the question.name property is not valid. For example, if it contains the period '.' symbol.
-    * In this case if you set the question.name property to 'x.y' then the valueName becomes 'x y'.
-    * Please note, this property is hidden for questions without input, for example html question.
+    * Specifies an object property that should store the question value.
+    * 
+    * Refer to the [Merge Question Values](https://surveyjs.io/form-library/documentation/design-survey-merge-question-values) help topic for more information.
     */
   def valueName: String = js.native
   def valueName_=(`val`: String): Unit = js.native
@@ -881,12 +882,18 @@ open class Question protected ()
   var value_FQuestion: Any = js.native
   
   /*
-    * Use it to get/set the question visibility.
+    * Gets or sets question visibility.
+    * 
+    * If you want to display or hide a question based on a condition, specify the [`visibleIf`](https://surveyjs.io/form-library/documentation/question#visibleIf) property. Refer to the following help topic for information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   def visible: Boolean = js.native
   
   /*
-    * An expression that returns true or false. If it returns true the Question becomes visible and if it returns false the Question becomes invisible. The library runs the expression on survey start and on changing a question value. If the property is empty then visible property is used.
+    * A Boolean expression. If it evaluates to `false`, this question becomes hidden.
+    * 
+    * A survey parses and runs all expressions on startup. If any values used in the expression change, the survey re-evaluates it.
+    * 
+    * Refer to the following help topic for more information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility)
     */
   def visibleIf: String = js.native
   def visibleIf_=(`val`: String): Unit = js.native

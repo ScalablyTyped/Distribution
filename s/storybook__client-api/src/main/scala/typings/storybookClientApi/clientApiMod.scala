@@ -1,166 +1,180 @@
 package typings.storybookClientApi
 
-import typings.node.NodeModule
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookAddons.typesMod.LoaderFunction
-import typings.storybookAddons.typesMod.Parameters
+import typings.std.Parameters
+import typings.std.Record
 import typings.storybookAddons.typesMod.StoryApi
-import typings.storybookClientApi.typesMod.ArgTypesEnhancer
-import typings.storybookClientApi.typesMod.ClientApiParams
-import typings.storybookClientApi.typesMod.GetStorybookKind
-import typings.storybookClientApi.typesMod.PublishedStoreItem
+import typings.storybookClientApi.anon.GlobalTypes
+import typings.storybookClientApi.anon.ImportFn
+import typings.storybookClientApi.anon.Stories
+import typings.storybookClientApi.anon.StoryStore
+import typings.storybookClientApi.storyStoreFacadeMod.StoryStoreFacade
+import typings.storybookStore.ts39TypesMod.BoundStory
+import typings.storybookStore.ts39TypesMod.Path
+import typings.webpackEnv.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientApiMod {
   
-  @JSImport("@storybook/client-api/dist/client_api", JSImport.Namespace)
+  @JSImport("@storybook/client-api/dist/ts3.9/ClientApi", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@storybook/client-api/dist/client_api", JSImport.Default)
+  @JSImport("@storybook/client-api/dist/ts3.9/ClientApi", "ClientApi")
   @js.native
-  class default protected ()
-    extends StObject
-       with ClientApi {
-    def this(hasStoryStoreDecorateStoryNoStoryModuleAddMethodHotDispose: ClientApiParams) = this()
+  open class ClientApi[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] () extends StObject {
+    def this(hasStoryStore: StoryStore[TFramework]) = this()
     
-    /* private */ /* CompleteClass */
-    var _addons: js.Any = js.native
+    def _storyStore: typings.storybookStore.mod.StoryStore[TFramework] = js.native
     
-    /* private */ /* CompleteClass */
-    var _decorateStory: js.Any = js.native
+    def addArgTypes(
+      argTypes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypes */ Any
+    ): Unit = js.native
     
-    /* private */ /* CompleteClass */
-    var _noStoryModuleAddMethodHotDispose: js.Any = js.native
+    def addArgTypesEnhancer(
+      enhancer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypesEnhancer<TFramework> */ Any
+    ): Unit = js.native
     
-    /* private */ /* CompleteClass */
-    var _storyStore: js.Any = js.native
+    def addArgs(
+      args: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+    ): Unit = js.native
     
-    /* CompleteClass */
-    override def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = js.native
+    def addArgsEnhancer(
+      enhancer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgsEnhancer<TFramework> */ Any
+    ): Unit = js.native
     
-    /* CompleteClass */
-    override def addDecorator(decorator: DecoratorFunction[js.Any]): Unit = js.native
+    def addDecorator(
+      decorator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DecoratorFunction<TFramework> */ Any
+    ): Unit = js.native
     
-    /* CompleteClass */
-    override def addLoader(loader: LoaderFunction): Unit = js.native
+    def addLoader(
+      loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LoaderFunction<TFramework> */ Any
+    ): Unit = js.native
     
-    /* CompleteClass */
-    override def addParameters(parameters: Parameters): Unit = js.native
+    def addParameters(hasGlobalsGlobalTypesParameters: (Parameters[js.Function1[/* args */ Any, Any]]) & GlobalTypes): Unit = js.native
     
-    /* CompleteClass */
-    override def clearDecorators(): Unit = js.native
+    /* private */ var addons: Any = js.native
     
-    /* CompleteClass */
-    override def getStorybook(): js.Array[GetStorybookKind] = js.native
+    def clearDecorators(): Unit = js.native
     
-    /* CompleteClass */
-    override def raw(): js.Array[PublishedStoreItem] = js.native
+    var facade: StoryStoreFacade[TFramework] = js.native
     
-    /* CompleteClass */
-    override def setAddon(addon: js.Any): Unit = js.native
+    def getStoryIndex(): Stories = js.native
     
-    /* CompleteClass */
-    override def store(): typings.storybookClientApi.storyStoreMod.default = js.native
+    def getStorybook(): js.Array[GetStorybookKind[TFramework]] = js.native
     
-    /* CompleteClass */
-    override def storiesOf[StoryFnReturnType](kind: String, m: NodeModule): StoryApi[StoryFnReturnType] = js.native
+    def importFn(path: Path): js.Promise[Record[String, Any]] = js.native
+    
+    /* private */ var lastFileName: Any = js.native
+    
+    var onImportFnChanged: js.UndefOr[js.Function1[/* hasImportFn */ ImportFn, Unit]] = js.native
+    
+    def raw(): js.Array[BoundStory[TFramework]] = js.native
+    
+    def setAddon(addon: Any): Unit = js.native
+    
+    def storiesOf(kind: String): StoryApi[
+        /* import warning: importer.ImportType#apply Failed type conversion: TFramework['storyResult'] */ js.Any
+      ] = js.native
+    def storiesOf(kind: String, m: NodeModule): StoryApi[
+        /* import warning: importer.ImportType#apply Failed type conversion: TFramework['storyResult'] */ js.Any
+      ] = js.native
+    
+    var storyStore: js.UndefOr[typings.storybookStore.mod.StoryStore[TFramework]] = js.native
   }
   
-  inline def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgTypesEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addArgTypes(
+    argTypes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypes */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgTypes")(argTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def addDecorator(decorator: DecoratorFunction[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addDecorator(decorator: DecoratorFunction[js.Any], deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addArgTypesEnhancer(
+    enhancer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypesEnhancer<AnyFramework> */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgTypesEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def addLoader(loader: LoaderFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addLoader(loader: LoaderFunction, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addArgs(
+    args: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def addParameters(parameters: Parameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addParameters(parameters: Parameters, deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addArgsEnhancer(
+    enhancer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgsEnhancer<AnyFramework> */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addArgsEnhancer")(enhancer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  trait ClientApi extends StObject {
+  inline def addDecorator(
+    decorator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DecoratorFunction<AnyFramework> */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addDecorator(
+    decorator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DecoratorFunction<AnyFramework> */ Any,
+    deprecationWarning: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDecorator")(decorator.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addLoader(
+    loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LoaderFunction<AnyFramework> */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addLoader(
+    loader: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LoaderFunction<AnyFramework> */ Any,
+    deprecationWarning: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addLoader")(loader.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addParameters(parameters: Parameters[js.Function1[/* args */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addParameters(parameters: Parameters[js.Function1[/* args */ Any, Any]], deprecationWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addParameters")(parameters.asInstanceOf[js.Any], deprecationWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def getGlobalRender(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalRender")().asInstanceOf[Any]
+  
+  inline def setGlobalRender(
+    render: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryFn<AnyFramework> */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalRender")(render.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  trait GetStorybookKind[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] extends StObject {
     
-    /* private */ var _addons: js.Any
+    var fileName: String
     
-    /* private */ var _decorateStory: js.Any
+    var kind: String
     
-    /* private */ var _noStoryModuleAddMethodHotDispose: js.Any
-    
-    /* private */ var _storyStore: js.Any
-    
-    def addArgTypesEnhancer(enhancer: ArgTypesEnhancer): Unit
-    
-    def addDecorator(decorator: DecoratorFunction[js.Any]): Unit
-    
-    def addLoader(loader: LoaderFunction): Unit
-    
-    def addParameters(parameters: Parameters): Unit
-    
-    def clearDecorators(): Unit
-    
-    def getStorybook(): js.Array[GetStorybookKind]
-    
-    def raw(): js.Array[PublishedStoreItem]
-    
-    def setAddon(addon: js.Any): Unit
-    
-    def store(): typings.storybookClientApi.storyStoreMod.default
-    
-    def storiesOf[StoryFnReturnType](kind: String, m: NodeModule): StoryApi[StoryFnReturnType]
+    var stories: js.Array[GetStorybookStory[TFramework]]
   }
-  object ClientApi {
+  object GetStorybookKind {
     
-    inline def apply(
-      _addons: js.Any,
-      _decorateStory: js.Any,
-      _noStoryModuleAddMethodHotDispose: js.Any,
-      _storyStore: js.Any,
-      addArgTypesEnhancer: ArgTypesEnhancer => Unit,
-      addDecorator: DecoratorFunction[js.Any] => Unit,
-      addLoader: LoaderFunction => Unit,
-      addParameters: Parameters => Unit,
-      clearDecorators: () => Unit,
-      getStorybook: () => js.Array[GetStorybookKind],
-      raw: () => js.Array[PublishedStoreItem],
-      setAddon: js.Any => Unit,
-      store: () => typings.storybookClientApi.storyStoreMod.default,
-      storiesOf: (String, NodeModule) => StoryApi[js.Any]
-    ): ClientApi = {
-      val __obj = js.Dynamic.literal(_addons = _addons.asInstanceOf[js.Any], _decorateStory = _decorateStory.asInstanceOf[js.Any], _noStoryModuleAddMethodHotDispose = _noStoryModuleAddMethodHotDispose.asInstanceOf[js.Any], _storyStore = _storyStore.asInstanceOf[js.Any], addArgTypesEnhancer = js.Any.fromFunction1(addArgTypesEnhancer), addDecorator = js.Any.fromFunction1(addDecorator), addLoader = js.Any.fromFunction1(addLoader), addParameters = js.Any.fromFunction1(addParameters), clearDecorators = js.Any.fromFunction0(clearDecorators), getStorybook = js.Any.fromFunction0(getStorybook), raw = js.Any.fromFunction0(raw), setAddon = js.Any.fromFunction1(setAddon), store = js.Any.fromFunction0(store), storiesOf = js.Any.fromFunction2(storiesOf))
-      __obj.asInstanceOf[ClientApi]
+    inline def apply[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](fileName: String, kind: String, stories: js.Array[GetStorybookStory[TFramework]]): GetStorybookKind[TFramework] = {
+      val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetStorybookKind[TFramework]]
     }
     
-    extension [Self <: ClientApi](x: Self) {
+    extension [Self <: GetStorybookKind[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & GetStorybookKind[TFramework]) {
       
-      inline def setAddArgTypesEnhancer(value: ArgTypesEnhancer => Unit): Self = StObject.set(x, "addArgTypesEnhancer", js.Any.fromFunction1(value))
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      inline def setAddDecorator(value: DecoratorFunction[js.Any] => Unit): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setAddLoader(value: LoaderFunction => Unit): Self = StObject.set(x, "addLoader", js.Any.fromFunction1(value))
+      inline def setStories(value: js.Array[GetStorybookStory[TFramework]]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
-      inline def setAddParameters(value: Parameters => Unit): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
+      inline def setStoriesVarargs(value: GetStorybookStory[TFramework]*): Self = StObject.set(x, "stories", js.Array(value*))
+    }
+  }
+  
+  trait GetStorybookStory[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] extends StObject {
+    
+    var name: String
+    
+    var render: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LegacyStoryFn<TFramework> */ Any
+  }
+  object GetStorybookStory {
+    
+    inline def apply[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
+      name: String,
+      render: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LegacyStoryFn<TFramework> */ Any
+    ): GetStorybookStory[TFramework] = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetStorybookStory[TFramework]]
+    }
+    
+    extension [Self <: GetStorybookStory[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & GetStorybookStory[TFramework]) {
       
-      inline def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setGetStorybook(value: () => js.Array[GetStorybookKind]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
-      
-      inline def setRaw(value: () => js.Array[PublishedStoreItem]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
-      
-      inline def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
-      
-      inline def setStore(value: () => typings.storybookClientApi.storyStoreMod.default): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
-      
-      inline def setStoriesOf(value: (String, NodeModule) => StoryApi[js.Any]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
-      
-      inline def set_addons(value: js.Any): Self = StObject.set(x, "_addons", value.asInstanceOf[js.Any])
-      
-      inline def set_decorateStory(value: js.Any): Self = StObject.set(x, "_decorateStory", value.asInstanceOf[js.Any])
-      
-      inline def set_noStoryModuleAddMethodHotDispose(value: js.Any): Self = StObject.set(x, "_noStoryModuleAddMethodHotDispose", value.asInstanceOf[js.Any])
-      
-      inline def set_storyStore(value: js.Any): Self = StObject.set(x, "_storyStore", value.asInstanceOf[js.Any])
+      inline def setRender(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LegacyStoryFn<TFramework> */ Any
+      ): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
 }

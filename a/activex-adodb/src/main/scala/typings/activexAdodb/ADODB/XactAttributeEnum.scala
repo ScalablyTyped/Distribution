@@ -1,18 +1,18 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`1048576`
-import typings.activexAdodb.activexAdodbNumbers.`131072`
-import typings.activexAdodb.activexAdodbNumbers.`262144`
-import typings.activexAdodb.activexAdodbNumbers.`524288`
+import typings.activexAdodb.activexAdodbInts.`1048576`
+import typings.activexAdodb.activexAdodbInts.`131072`
+import typings.activexAdodb.activexAdodbInts.`262144`
+import typings.activexAdodb.activexAdodbInts.`524288`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`262144`
-  - typings.activexAdodb.activexAdodbNumbers.`524288`
-  - typings.activexAdodb.activexAdodbNumbers.`131072`
-  - typings.activexAdodb.activexAdodbNumbers.`1048576`
+  - typings.activexAdodb.activexAdodbInts.`262144`
+  - typings.activexAdodb.activexAdodbInts.`524288`
+  - typings.activexAdodb.activexAdodbInts.`131072`
+  - typings.activexAdodb.activexAdodbInts.`1048576`
 */
 trait XactAttributeEnum extends StObject
 object XactAttributeEnum {

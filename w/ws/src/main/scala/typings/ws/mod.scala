@@ -24,10 +24,10 @@ import typings.ws.anon.ChunkSize
 import typings.ws.anon.Origin
 import typings.ws.anon.TypeofWebSocket
 import typings.ws.wsBooleans.`false`
-import typings.ws.wsNumbers.`0`
-import typings.ws.wsNumbers.`1`
-import typings.ws.wsNumbers.`2`
-import typings.ws.wsNumbers.`3`
+import typings.ws.wsInts.`0`
+import typings.ws.wsInts.`1`
+import typings.ws.wsInts.`2`
+import typings.ws.wsInts.`3`
 import typings.ws.wsStrings.`unexpected-response`
 import typings.ws.wsStrings.close
 import typings.ws.wsStrings.connection

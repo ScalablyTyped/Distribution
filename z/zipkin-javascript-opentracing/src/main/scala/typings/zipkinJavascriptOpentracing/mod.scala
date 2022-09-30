@@ -57,7 +57,7 @@ object mod {
     
     inline def inject(span: Any, format: Any, carrier: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def startSpan(name: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("startSpan")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def startSpan(name: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("startSpan")(scala.List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
   trait zipkinJavascriptOpentracing extends StObject {

@@ -213,9 +213,9 @@ open class TypeBuilder () extends StObject {
   def Union(items: js.Array[Any]): TNever = js.native
   def Union(items: js.Array[Any], options: SchemaOptions): TNever = js.native
   @JSName("Union")
-  def Union_T_ArrayTSchema_TUnion[T /* <: js.Array[TSchema] */](items: /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]): TUnion[T] = js.native
+  def Union_T_TUnion[T /* <: js.Array[TSchema] */](items: /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]): TUnion[T] = js.native
   @JSName("Union")
-  def Union_T_ArrayTSchema_TUnion[T /* <: js.Array[TSchema] */](
+  def Union_T_TUnion[T /* <: js.Array[TSchema] */](
     items: /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T],
     options: SchemaOptions
   ): TUnion[T] = js.native

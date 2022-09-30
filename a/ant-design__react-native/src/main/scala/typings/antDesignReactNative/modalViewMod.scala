@@ -1,8 +1,8 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.antDesignReactNativeNumbers.`0`
-import typings.antDesignReactNative.antDesignReactNativeNumbers.`1.05`
-import typings.antDesignReactNative.antDesignReactNativeNumbers.`1`
+import typings.antDesignReactNative.antDesignReactNativeDoubles.`1.05`
+import typings.antDesignReactNative.antDesignReactNativeInts.`0`
+import typings.antDesignReactNative.antDesignReactNativeInts.`1`
 import typings.antDesignReactNative.antDesignReactNativeStrings.`slide-down`
 import typings.antDesignReactNative.antDesignReactNativeStrings.`slide-up`
 import typings.antDesignReactNative.antDesignReactNativeStrings.fade

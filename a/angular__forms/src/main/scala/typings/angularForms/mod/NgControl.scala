@@ -26,5 +26,5 @@ abstract class NgControl () extends AbstractControlDirective {
     *
     * @param newValue The new value for the view
     */
-  def viewToModelUpdate(newValue: js.Any): Unit = js.native
+  def viewToModelUpdate(newValue: Any): Unit = js.native
 }

@@ -32,6 +32,11 @@ trait GatewayDetails extends StObject {
   var LastSeenTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * Returns your gateway's weekly maintenance start time including the day and time of the week. Note that values are in terms of the gateway's time zone. Can be weekly or monthly.
+    */
+  var MaintenanceStartTime: js.UndefOr[typings.awsSdk.backupgatewayMod.MaintenanceStartTime] = js.undefined
+  
+  /**
     * Details showing the next update availability time of the gateway.
     */
   var NextUpdateAvailabilityTime: js.UndefOr[js.Date] = js.undefined
@@ -69,6 +74,10 @@ object GatewayDetails {
     inline def setLastSeenTime(value: js.Date): Self = StObject.set(x, "LastSeenTime", value.asInstanceOf[js.Any])
     
     inline def setLastSeenTimeUndefined: Self = StObject.set(x, "LastSeenTime", js.undefined)
+    
+    inline def setMaintenanceStartTime(value: MaintenanceStartTime): Self = StObject.set(x, "MaintenanceStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceStartTimeUndefined: Self = StObject.set(x, "MaintenanceStartTime", js.undefined)
     
     inline def setNextUpdateAvailabilityTime(value: js.Date): Self = StObject.set(x, "NextUpdateAvailabilityTime", value.asInstanceOf[js.Any])
     

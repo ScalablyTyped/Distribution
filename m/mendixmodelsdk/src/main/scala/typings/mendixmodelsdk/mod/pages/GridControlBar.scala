@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.GridControlBar")
 @js.native
-class GridControlBar protected ()
+open class GridControlBar protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GridControlBar {
   def this(
     model: AbstractModel,

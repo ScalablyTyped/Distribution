@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ZoneSettings extends StObject {
   
-  def browse(id: String): ResponseObjectPromise = js.native
+  def browse(id: String): js.Promise[js.Object] = js.native
   
-  def edit(id: String, setting: String, value: String): ResponseObjectPromise = js.native
-  def edit(id: String, setting: String, value: Record[String, Any]): ResponseObjectPromise = js.native
+  def edit(id: String, setting: String, value: String): js.Promise[js.Object] = js.native
+  def edit(id: String, setting: String, value: Record[String, Any]): js.Promise[js.Object] = js.native
   
-  def editAll(id: String, settings: Any): ResponseObjectPromise = js.native
+  def editAll(id: String, settings: Any): js.Promise[js.Object] = js.native
   
-  def read(id: String, setting: String): ResponseObjectPromise = js.native
+  def read(id: String, setting: String): js.Promise[js.Object] = js.native
 }

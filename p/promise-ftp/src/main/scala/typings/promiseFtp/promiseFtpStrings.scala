@@ -11,10 +11,6 @@ object promiseFtpStrings {
   inline def `Bad sequence of commands`: `Bad sequence of commands` = ("Bad sequence of commands").asInstanceOf[`Bad sequence of commands`]
   
   @js.native
-  sealed trait `CanApostrophet open data connection` extends StObject
-  inline def `CanApostrophet open data connection`: `CanApostrophet open data connection` = ("Can't open data connection").asInstanceOf[`CanApostrophet open data connection`]
-  
-  @js.native
   sealed trait `Command not implemented` extends StObject
   inline def `Command not implemented`: `Command not implemented` = ("Command not implemented").asInstanceOf[`Command not implemented`]
   
@@ -45,22 +41,6 @@ object promiseFtpStrings {
   @js.native
   sealed trait `Requested action not taken Slash File name not allowed` extends StObject
   inline def `Requested action not taken Slash File name not allowed`: `Requested action not taken Slash File name not allowed` = ("Requested action not taken / File name not allowed").asInstanceOf[`Requested action not taken Slash File name not allowed`]
-  
-  @js.native
-  sealed trait `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis` extends StObject
-  inline def `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis`: `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis` = ("Requested action not taken / File unavailable (e.g., file not found, no access)").asInstanceOf[`Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis`]
-  
-  @js.native
-  sealed trait `Requested action not taken Slash Insufficient storage space in system` extends StObject
-  inline def `Requested action not taken Slash Insufficient storage space in system`: `Requested action not taken Slash Insufficient storage space in system` = ("Requested action not taken / Insufficient storage space in system").asInstanceOf[`Requested action not taken Slash Insufficient storage space in system`]
-  
-  @js.native
-  sealed trait `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis` extends StObject
-  inline def `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis`: `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis` = ("Requested file action aborted / Exceeded storage allocation (for current directory or dataset)").asInstanceOf[`Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis`]
-  
-  @js.native
-  sealed trait `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis` extends StObject
-  inline def `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis`: `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis` = ("Requested file action not taken / File unavailable (e.g., file busy)").asInstanceOf[`Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis`]
   
   @js.native
   sealed trait `Service not availableComma closing control connection` extends StObject

@@ -36,7 +36,7 @@ object LineOptions {
     
     inline def setMissingRouteStylesUndefined: Self = StObject.set(x, "missingRouteStyles", js.undefined)
     
-    inline def setMissingRouteStylesVarargs(value: PathOptions*): Self = StObject.set(x, "missingRouteStyles", js.Array(value :_*))
+    inline def setMissingRouteStylesVarargs(value: PathOptions*): Self = StObject.set(x, "missingRouteStyles", js.Array(value*))
     
     inline def setMissingRouteTolerance(value: Double): Self = StObject.set(x, "missingRouteTolerance", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object LineOptions {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: PathOptions*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: PathOptions*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

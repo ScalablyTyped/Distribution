@@ -1,280 +1,280 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`0`
-import typings.activexExcel.activexExcelNumbers.`10025880`
-import typings.activexExcel.activexExcelNumbers.`10061943`
-import typings.activexExcel.activexExcelNumbers.`10156544`
-import typings.activexExcel.activexExcelNumbers.`10526303`
-import typings.activexExcel.activexExcelNumbers.`11119017`
-import typings.activexExcel.activexExcelNumbers.`11186720`
-import typings.activexExcel.activexExcelNumbers.`11206502`
-import typings.activexExcel.activexExcelNumbers.`11394815`
-import typings.activexExcel.activexExcelNumbers.`11788021`
-import typings.activexExcel.activexExcelNumbers.`11823615`
-import typings.activexExcel.activexExcelNumbers.`11829830`
-import typings.activexExcel.activexExcelNumbers.`11920639`
-import typings.activexExcel.activexExcelNumbers.`12180223`
-import typings.activexExcel.activexExcelNumbers.`12632256`
-import typings.activexExcel.activexExcelNumbers.`12695295`
-import typings.activexExcel.activexExcelNumbers.`128`
-import typings.activexExcel.activexExcelNumbers.`12903679`
-import typings.activexExcel.activexExcelNumbers.`13353215`
-import typings.activexExcel.activexExcelNumbers.`13382297`
-import typings.activexExcel.activexExcelNumbers.`13422920`
-import typings.activexExcel.activexExcelNumbers.`13434880`
-import typings.activexExcel.activexExcelNumbers.`13458026`
-import typings.activexExcel.activexExcelNumbers.`13495295`
-import typings.activexExcel.activexExcelNumbers.`13499135`
-import typings.activexExcel.activexExcelNumbers.`13688896`
-import typings.activexExcel.activexExcelNumbers.`13749760`
-import typings.activexExcel.activexExcelNumbers.`13826810`
-import typings.activexExcel.activexExcelNumbers.`13828244`
-import typings.activexExcel.activexExcelNumbers.`13850042`
-import typings.activexExcel.activexExcelNumbers.`13882323`
-import typings.activexExcel.activexExcelNumbers.`13959039`
-import typings.activexExcel.activexExcelNumbers.`139`
-import typings.activexExcel.activexExcelNumbers.`14020607`
-import typings.activexExcel.activexExcelNumbers.`14053594`
-import typings.activexExcel.activexExcelNumbers.`14150650`
-import typings.activexExcel.activexExcelNumbers.`14204888`
-import typings.activexExcel.activexExcelNumbers.`14381203`
-import typings.activexExcel.activexExcelNumbers.`14474460`
-import typings.activexExcel.activexExcelNumbers.`14480885`
-import typings.activexExcel.activexExcelNumbers.`14481663`
-import typings.activexExcel.activexExcelNumbers.`14524637`
-import typings.activexExcel.activexExcelNumbers.`14599344`
-import typings.activexExcel.activexExcelNumbers.`14745599`
-import typings.activexExcel.activexExcelNumbers.`14772545`
-import typings.activexExcel.activexExcelNumbers.`14804223`
-import typings.activexExcel.activexExcelNumbers.`14822282`
-import typings.activexExcel.activexExcelNumbers.`15128749`
-import typings.activexExcel.activexExcelNumbers.`15130800`
-import typings.activexExcel.activexExcelNumbers.`15134970`
-import typings.activexExcel.activexExcelNumbers.`15136253`
-import typings.activexExcel.activexExcelNumbers.`15453831`
-import typings.activexExcel.activexExcelNumbers.`15570276`
-import typings.activexExcel.activexExcelNumbers.`15624315`
-import typings.activexExcel.activexExcelNumbers.`15631086`
-import typings.activexExcel.activexExcelNumbers.`15658671`
-import typings.activexExcel.activexExcelNumbers.`15660543`
-import typings.activexExcel.activexExcelNumbers.`15792895`
-import typings.activexExcel.activexExcelNumbers.`15794160`
-import typings.activexExcel.activexExcelNumbers.`15794175`
-import typings.activexExcel.activexExcelNumbers.`16118015`
-import typings.activexExcel.activexExcelNumbers.`16119285`
-import typings.activexExcel.activexExcelNumbers.`16436871`
-import typings.activexExcel.activexExcelNumbers.`16443110`
-import typings.activexExcel.activexExcelNumbers.`16448255`
-import typings.activexExcel.activexExcelNumbers.`16449525`
-import typings.activexExcel.activexExcelNumbers.`16711680`
-import typings.activexExcel.activexExcelNumbers.`16711935`
-import typings.activexExcel.activexExcelNumbers.`16748574`
-import typings.activexExcel.activexExcelNumbers.`16760576`
-import typings.activexExcel.activexExcelNumbers.`16775408`
-import typings.activexExcel.activexExcelNumbers.`16775416`
-import typings.activexExcel.activexExcelNumbers.`16776960`
-import typings.activexExcel.activexExcelNumbers.`16777200`
-import typings.activexExcel.activexExcelNumbers.`16777215`
-import typings.activexExcel.activexExcelNumbers.`17919`
-import typings.activexExcel.activexExcelNumbers.`2139610`
-import typings.activexExcel.activexExcelNumbers.`2237106`
-import typings.activexExcel.activexExcelNumbers.`2263842`
-import typings.activexExcel.activexExcelNumbers.`2330219`
-import typings.activexExcel.activexExcelNumbers.`255`
-import typings.activexExcel.activexExcelNumbers.`25600`
-import typings.activexExcel.activexExcelNumbers.`2763429`
-import typings.activexExcel.activexExcelNumbers.`2970272`
-import typings.activexExcel.activexExcelNumbers.`3107669`
-import typings.activexExcel.activexExcelNumbers.`3145645`
-import typings.activexExcel.activexExcelNumbers.`32768`
-import typings.activexExcel.activexExcelNumbers.`32896`
-import typings.activexExcel.activexExcelNumbers.`3329330`
-import typings.activexExcel.activexExcelNumbers.`3329434`
-import typings.activexExcel.activexExcelNumbers.`36095`
-import typings.activexExcel.activexExcelNumbers.`3937500`
-import typings.activexExcel.activexExcelNumbers.`4163021`
-import typings.activexExcel.activexExcelNumbers.`42495`
-import typings.activexExcel.activexExcelNumbers.`4678655`
-import typings.activexExcel.activexExcelNumbers.`5197615`
-import typings.activexExcel.activexExcelNumbers.`5275647`
-import typings.activexExcel.activexExcelNumbers.`55295`
-import typings.activexExcel.activexExcelNumbers.`5737262`
-import typings.activexExcel.activexExcelNumbers.`6053069`
-import typings.activexExcel.activexExcelNumbers.`6333684`
-import typings.activexExcel.activexExcelNumbers.`64636`
-import typings.activexExcel.activexExcelNumbers.`65280`
-import typings.activexExcel.activexExcelNumbers.`65407`
-import typings.activexExcel.activexExcelNumbers.`65535`
-import typings.activexExcel.activexExcelNumbers.`6908265`
-import typings.activexExcel.activexExcelNumbers.`7059389`
-import typings.activexExcel.activexExcelNumbers.`7071982`
-import typings.activexExcel.activexExcelNumbers.`7346457`
-import typings.activexExcel.activexExcelNumbers.`7451452`
-import typings.activexExcel.activexExcelNumbers.`7504122`
-import typings.activexExcel.activexExcelNumbers.`755384`
-import typings.activexExcel.activexExcelNumbers.`8034025`
-import typings.activexExcel.activexExcelNumbers.`8036607`
-import typings.activexExcel.activexExcelNumbers.`8388352`
-import typings.activexExcel.activexExcelNumbers.`8388608`
-import typings.activexExcel.activexExcelNumbers.`8388736`
-import typings.activexExcel.activexExcelNumbers.`8421376`
-import typings.activexExcel.activexExcelNumbers.`8421504`
-import typings.activexExcel.activexExcelNumbers.`8421616`
-import typings.activexExcel.activexExcelNumbers.`8519755`
-import typings.activexExcel.activexExcelNumbers.`8721863`
-import typings.activexExcel.activexExcelNumbers.`8894686`
-import typings.activexExcel.activexExcelNumbers.`9109504`
-import typings.activexExcel.activexExcelNumbers.`9109643`
-import typings.activexExcel.activexExcelNumbers.`9125192`
-import typings.activexExcel.activexExcelNumbers.`9145088`
-import typings.activexExcel.activexExcelNumbers.`9221330`
-import typings.activexExcel.activexExcelNumbers.`9234160`
-import typings.activexExcel.activexExcelNumbers.`9408444`
-import typings.activexExcel.activexExcelNumbers.`9419919`
-import typings.activexExcel.activexExcelNumbers.`9470064`
-import typings.activexExcel.activexExcelNumbers.`9498256`
-import typings.activexExcel.activexExcelNumbers.`9639167`
-import typings.activexExcel.activexExcelNumbers.`9662683`
+import typings.activexExcel.activexExcelInts.`0`
+import typings.activexExcel.activexExcelInts.`10025880`
+import typings.activexExcel.activexExcelInts.`10061943`
+import typings.activexExcel.activexExcelInts.`10156544`
+import typings.activexExcel.activexExcelInts.`10526303`
+import typings.activexExcel.activexExcelInts.`11119017`
+import typings.activexExcel.activexExcelInts.`11186720`
+import typings.activexExcel.activexExcelInts.`11206502`
+import typings.activexExcel.activexExcelInts.`11394815`
+import typings.activexExcel.activexExcelInts.`11788021`
+import typings.activexExcel.activexExcelInts.`11823615`
+import typings.activexExcel.activexExcelInts.`11829830`
+import typings.activexExcel.activexExcelInts.`11920639`
+import typings.activexExcel.activexExcelInts.`12180223`
+import typings.activexExcel.activexExcelInts.`12632256`
+import typings.activexExcel.activexExcelInts.`12695295`
+import typings.activexExcel.activexExcelInts.`128`
+import typings.activexExcel.activexExcelInts.`12903679`
+import typings.activexExcel.activexExcelInts.`13353215`
+import typings.activexExcel.activexExcelInts.`13382297`
+import typings.activexExcel.activexExcelInts.`13422920`
+import typings.activexExcel.activexExcelInts.`13434880`
+import typings.activexExcel.activexExcelInts.`13458026`
+import typings.activexExcel.activexExcelInts.`13495295`
+import typings.activexExcel.activexExcelInts.`13499135`
+import typings.activexExcel.activexExcelInts.`13688896`
+import typings.activexExcel.activexExcelInts.`13749760`
+import typings.activexExcel.activexExcelInts.`13826810`
+import typings.activexExcel.activexExcelInts.`13828244`
+import typings.activexExcel.activexExcelInts.`13850042`
+import typings.activexExcel.activexExcelInts.`13882323`
+import typings.activexExcel.activexExcelInts.`13959039`
+import typings.activexExcel.activexExcelInts.`139`
+import typings.activexExcel.activexExcelInts.`14020607`
+import typings.activexExcel.activexExcelInts.`14053594`
+import typings.activexExcel.activexExcelInts.`14150650`
+import typings.activexExcel.activexExcelInts.`14204888`
+import typings.activexExcel.activexExcelInts.`14381203`
+import typings.activexExcel.activexExcelInts.`14474460`
+import typings.activexExcel.activexExcelInts.`14480885`
+import typings.activexExcel.activexExcelInts.`14481663`
+import typings.activexExcel.activexExcelInts.`14524637`
+import typings.activexExcel.activexExcelInts.`14599344`
+import typings.activexExcel.activexExcelInts.`14745599`
+import typings.activexExcel.activexExcelInts.`14772545`
+import typings.activexExcel.activexExcelInts.`14804223`
+import typings.activexExcel.activexExcelInts.`14822282`
+import typings.activexExcel.activexExcelInts.`15128749`
+import typings.activexExcel.activexExcelInts.`15130800`
+import typings.activexExcel.activexExcelInts.`15134970`
+import typings.activexExcel.activexExcelInts.`15136253`
+import typings.activexExcel.activexExcelInts.`15453831`
+import typings.activexExcel.activexExcelInts.`15570276`
+import typings.activexExcel.activexExcelInts.`15624315`
+import typings.activexExcel.activexExcelInts.`15631086`
+import typings.activexExcel.activexExcelInts.`15658671`
+import typings.activexExcel.activexExcelInts.`15660543`
+import typings.activexExcel.activexExcelInts.`15792895`
+import typings.activexExcel.activexExcelInts.`15794160`
+import typings.activexExcel.activexExcelInts.`15794175`
+import typings.activexExcel.activexExcelInts.`16118015`
+import typings.activexExcel.activexExcelInts.`16119285`
+import typings.activexExcel.activexExcelInts.`16436871`
+import typings.activexExcel.activexExcelInts.`16443110`
+import typings.activexExcel.activexExcelInts.`16448255`
+import typings.activexExcel.activexExcelInts.`16449525`
+import typings.activexExcel.activexExcelInts.`16711680`
+import typings.activexExcel.activexExcelInts.`16711935`
+import typings.activexExcel.activexExcelInts.`16748574`
+import typings.activexExcel.activexExcelInts.`16760576`
+import typings.activexExcel.activexExcelInts.`16775408`
+import typings.activexExcel.activexExcelInts.`16775416`
+import typings.activexExcel.activexExcelInts.`16776960`
+import typings.activexExcel.activexExcelInts.`16777200`
+import typings.activexExcel.activexExcelInts.`16777215`
+import typings.activexExcel.activexExcelInts.`17919`
+import typings.activexExcel.activexExcelInts.`2139610`
+import typings.activexExcel.activexExcelInts.`2237106`
+import typings.activexExcel.activexExcelInts.`2263842`
+import typings.activexExcel.activexExcelInts.`2330219`
+import typings.activexExcel.activexExcelInts.`255`
+import typings.activexExcel.activexExcelInts.`25600`
+import typings.activexExcel.activexExcelInts.`2763429`
+import typings.activexExcel.activexExcelInts.`2970272`
+import typings.activexExcel.activexExcelInts.`3107669`
+import typings.activexExcel.activexExcelInts.`3145645`
+import typings.activexExcel.activexExcelInts.`32768`
+import typings.activexExcel.activexExcelInts.`32896`
+import typings.activexExcel.activexExcelInts.`3329330`
+import typings.activexExcel.activexExcelInts.`3329434`
+import typings.activexExcel.activexExcelInts.`36095`
+import typings.activexExcel.activexExcelInts.`3937500`
+import typings.activexExcel.activexExcelInts.`4163021`
+import typings.activexExcel.activexExcelInts.`42495`
+import typings.activexExcel.activexExcelInts.`4678655`
+import typings.activexExcel.activexExcelInts.`5197615`
+import typings.activexExcel.activexExcelInts.`5275647`
+import typings.activexExcel.activexExcelInts.`55295`
+import typings.activexExcel.activexExcelInts.`5737262`
+import typings.activexExcel.activexExcelInts.`6053069`
+import typings.activexExcel.activexExcelInts.`6333684`
+import typings.activexExcel.activexExcelInts.`64636`
+import typings.activexExcel.activexExcelInts.`65280`
+import typings.activexExcel.activexExcelInts.`65407`
+import typings.activexExcel.activexExcelInts.`65535`
+import typings.activexExcel.activexExcelInts.`6908265`
+import typings.activexExcel.activexExcelInts.`7059389`
+import typings.activexExcel.activexExcelInts.`7071982`
+import typings.activexExcel.activexExcelInts.`7346457`
+import typings.activexExcel.activexExcelInts.`7451452`
+import typings.activexExcel.activexExcelInts.`7504122`
+import typings.activexExcel.activexExcelInts.`755384`
+import typings.activexExcel.activexExcelInts.`8034025`
+import typings.activexExcel.activexExcelInts.`8036607`
+import typings.activexExcel.activexExcelInts.`8388352`
+import typings.activexExcel.activexExcelInts.`8388608`
+import typings.activexExcel.activexExcelInts.`8388736`
+import typings.activexExcel.activexExcelInts.`8421376`
+import typings.activexExcel.activexExcelInts.`8421504`
+import typings.activexExcel.activexExcelInts.`8421616`
+import typings.activexExcel.activexExcelInts.`8519755`
+import typings.activexExcel.activexExcelInts.`8721863`
+import typings.activexExcel.activexExcelInts.`8894686`
+import typings.activexExcel.activexExcelInts.`9109504`
+import typings.activexExcel.activexExcelInts.`9109643`
+import typings.activexExcel.activexExcelInts.`9125192`
+import typings.activexExcel.activexExcelInts.`9145088`
+import typings.activexExcel.activexExcelInts.`9221330`
+import typings.activexExcel.activexExcelInts.`9234160`
+import typings.activexExcel.activexExcelInts.`9408444`
+import typings.activexExcel.activexExcelInts.`9419919`
+import typings.activexExcel.activexExcelInts.`9470064`
+import typings.activexExcel.activexExcelInts.`9498256`
+import typings.activexExcel.activexExcelInts.`9639167`
+import typings.activexExcel.activexExcelInts.`9662683`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`16775408`
-  - typings.activexExcel.activexExcelNumbers.`14150650`
-  - typings.activexExcel.activexExcelNumbers.`16776960`
-  - typings.activexExcel.activexExcelNumbers.`13959039`
-  - typings.activexExcel.activexExcelNumbers.`16777200`
-  - typings.activexExcel.activexExcelNumbers.`14480885`
-  - typings.activexExcel.activexExcelNumbers.`12903679`
-  - typings.activexExcel.activexExcelNumbers.`0`
-  - typings.activexExcel.activexExcelNumbers.`13495295`
-  - typings.activexExcel.activexExcelNumbers.`16711680`
-  - typings.activexExcel.activexExcelNumbers.`14822282`
-  - typings.activexExcel.activexExcelNumbers.`2763429`
-  - typings.activexExcel.activexExcelNumbers.`8894686`
-  - typings.activexExcel.activexExcelNumbers.`10526303`
-  - typings.activexExcel.activexExcelNumbers.`65407`
-  - typings.activexExcel.activexExcelNumbers.`5275647`
-  - typings.activexExcel.activexExcelNumbers.`15570276`
-  - typings.activexExcel.activexExcelNumbers.`14481663`
-  - typings.activexExcel.activexExcelNumbers.`3937500`
-  - typings.activexExcel.activexExcelNumbers.`9109504`
-  - typings.activexExcel.activexExcelNumbers.`9145088`
-  - typings.activexExcel.activexExcelNumbers.`755384`
-  - typings.activexExcel.activexExcelNumbers.`11119017`
-  - typings.activexExcel.activexExcelNumbers.`25600`
-  - typings.activexExcel.activexExcelNumbers.`7059389`
-  - typings.activexExcel.activexExcelNumbers.`9109643`
-  - typings.activexExcel.activexExcelNumbers.`3107669`
-  - typings.activexExcel.activexExcelNumbers.`36095`
-  - typings.activexExcel.activexExcelNumbers.`13382297`
-  - typings.activexExcel.activexExcelNumbers.`139`
-  - typings.activexExcel.activexExcelNumbers.`8034025`
-  - typings.activexExcel.activexExcelNumbers.`9419919`
-  - typings.activexExcel.activexExcelNumbers.`9125192`
-  - typings.activexExcel.activexExcelNumbers.`5197615`
-  - typings.activexExcel.activexExcelNumbers.`13749760`
-  - typings.activexExcel.activexExcelNumbers.`13828244`
-  - typings.activexExcel.activexExcelNumbers.`9639167`
-  - typings.activexExcel.activexExcelNumbers.`16760576`
-  - typings.activexExcel.activexExcelNumbers.`6908265`
-  - typings.activexExcel.activexExcelNumbers.`16748574`
-  - typings.activexExcel.activexExcelNumbers.`2237106`
-  - typings.activexExcel.activexExcelNumbers.`15792895`
-  - typings.activexExcel.activexExcelNumbers.`2263842`
-  - typings.activexExcel.activexExcelNumbers.`16711935`
-  - typings.activexExcel.activexExcelNumbers.`14474460`
-  - typings.activexExcel.activexExcelNumbers.`16775416`
-  - typings.activexExcel.activexExcelNumbers.`55295`
-  - typings.activexExcel.activexExcelNumbers.`2139610`
-  - typings.activexExcel.activexExcelNumbers.`8421504`
-  - typings.activexExcel.activexExcelNumbers.`32768`
-  - typings.activexExcel.activexExcelNumbers.`3145645`
-  - typings.activexExcel.activexExcelNumbers.`15794160`
-  - typings.activexExcel.activexExcelNumbers.`11823615`
-  - typings.activexExcel.activexExcelNumbers.`6053069`
-  - typings.activexExcel.activexExcelNumbers.`8519755`
-  - typings.activexExcel.activexExcelNumbers.`15794175`
-  - typings.activexExcel.activexExcelNumbers.`9234160`
-  - typings.activexExcel.activexExcelNumbers.`16443110`
-  - typings.activexExcel.activexExcelNumbers.`16118015`
-  - typings.activexExcel.activexExcelNumbers.`64636`
-  - typings.activexExcel.activexExcelNumbers.`13499135`
-  - typings.activexExcel.activexExcelNumbers.`15128749`
-  - typings.activexExcel.activexExcelNumbers.`8421616`
-  - typings.activexExcel.activexExcelNumbers.`13826810`
-  - typings.activexExcel.activexExcelNumbers.`13882323`
-  - typings.activexExcel.activexExcelNumbers.`9498256`
-  - typings.activexExcel.activexExcelNumbers.`12695295`
-  - typings.activexExcel.activexExcelNumbers.`8036607`
-  - typings.activexExcel.activexExcelNumbers.`11186720`
-  - typings.activexExcel.activexExcelNumbers.`16436871`
-  - typings.activexExcel.activexExcelNumbers.`10061943`
-  - typings.activexExcel.activexExcelNumbers.`14599344`
-  - typings.activexExcel.activexExcelNumbers.`14745599`
-  - typings.activexExcel.activexExcelNumbers.`65280`
-  - typings.activexExcel.activexExcelNumbers.`3329330`
-  - typings.activexExcel.activexExcelNumbers.`15134970`
-  - typings.activexExcel.activexExcelNumbers.`128`
-  - typings.activexExcel.activexExcelNumbers.`11206502`
-  - typings.activexExcel.activexExcelNumbers.`13434880`
-  - typings.activexExcel.activexExcelNumbers.`13850042`
-  - typings.activexExcel.activexExcelNumbers.`14381203`
-  - typings.activexExcel.activexExcelNumbers.`7451452`
-  - typings.activexExcel.activexExcelNumbers.`15624315`
-  - typings.activexExcel.activexExcelNumbers.`10156544`
-  - typings.activexExcel.activexExcelNumbers.`13422920`
-  - typings.activexExcel.activexExcelNumbers.`8721863`
-  - typings.activexExcel.activexExcelNumbers.`7346457`
-  - typings.activexExcel.activexExcelNumbers.`16449525`
-  - typings.activexExcel.activexExcelNumbers.`14804223`
-  - typings.activexExcel.activexExcelNumbers.`11920639`
-  - typings.activexExcel.activexExcelNumbers.`11394815`
-  - typings.activexExcel.activexExcelNumbers.`8388608`
-  - typings.activexExcel.activexExcelNumbers.`15136253`
-  - typings.activexExcel.activexExcelNumbers.`32896`
-  - typings.activexExcel.activexExcelNumbers.`2330219`
-  - typings.activexExcel.activexExcelNumbers.`42495`
-  - typings.activexExcel.activexExcelNumbers.`17919`
-  - typings.activexExcel.activexExcelNumbers.`14053594`
-  - typings.activexExcel.activexExcelNumbers.`7071982`
-  - typings.activexExcel.activexExcelNumbers.`10025880`
-  - typings.activexExcel.activexExcelNumbers.`15658671`
-  - typings.activexExcel.activexExcelNumbers.`9662683`
-  - typings.activexExcel.activexExcelNumbers.`14020607`
-  - typings.activexExcel.activexExcelNumbers.`12180223`
-  - typings.activexExcel.activexExcelNumbers.`4163021`
-  - typings.activexExcel.activexExcelNumbers.`13353215`
-  - typings.activexExcel.activexExcelNumbers.`14524637`
-  - typings.activexExcel.activexExcelNumbers.`15130800`
-  - typings.activexExcel.activexExcelNumbers.`8388736`
-  - typings.activexExcel.activexExcelNumbers.`255`
-  - typings.activexExcel.activexExcelNumbers.`9408444`
-  - typings.activexExcel.activexExcelNumbers.`14772545`
-  - typings.activexExcel.activexExcelNumbers.`7504122`
-  - typings.activexExcel.activexExcelNumbers.`6333684`
-  - typings.activexExcel.activexExcelNumbers.`5737262`
-  - typings.activexExcel.activexExcelNumbers.`15660543`
-  - typings.activexExcel.activexExcelNumbers.`2970272`
-  - typings.activexExcel.activexExcelNumbers.`12632256`
-  - typings.activexExcel.activexExcelNumbers.`15453831`
-  - typings.activexExcel.activexExcelNumbers.`13458026`
-  - typings.activexExcel.activexExcelNumbers.`9470064`
-  - typings.activexExcel.activexExcelNumbers.`16448255`
-  - typings.activexExcel.activexExcelNumbers.`8388352`
-  - typings.activexExcel.activexExcelNumbers.`11829830`
-  - typings.activexExcel.activexExcelNumbers.`9221330`
-  - typings.activexExcel.activexExcelNumbers.`8421376`
-  - typings.activexExcel.activexExcelNumbers.`14204888`
-  - typings.activexExcel.activexExcelNumbers.`4678655`
-  - typings.activexExcel.activexExcelNumbers.`13688896`
-  - typings.activexExcel.activexExcelNumbers.`15631086`
-  - typings.activexExcel.activexExcelNumbers.`11788021`
-  - typings.activexExcel.activexExcelNumbers.`16777215`
-  - typings.activexExcel.activexExcelNumbers.`16119285`
-  - typings.activexExcel.activexExcelNumbers.`65535`
-  - typings.activexExcel.activexExcelNumbers.`3329434`
+  - typings.activexExcel.activexExcelInts.`16775408`
+  - typings.activexExcel.activexExcelInts.`14150650`
+  - typings.activexExcel.activexExcelInts.`16776960`
+  - typings.activexExcel.activexExcelInts.`13959039`
+  - typings.activexExcel.activexExcelInts.`16777200`
+  - typings.activexExcel.activexExcelInts.`14480885`
+  - typings.activexExcel.activexExcelInts.`12903679`
+  - typings.activexExcel.activexExcelInts.`0`
+  - typings.activexExcel.activexExcelInts.`13495295`
+  - typings.activexExcel.activexExcelInts.`16711680`
+  - typings.activexExcel.activexExcelInts.`14822282`
+  - typings.activexExcel.activexExcelInts.`2763429`
+  - typings.activexExcel.activexExcelInts.`8894686`
+  - typings.activexExcel.activexExcelInts.`10526303`
+  - typings.activexExcel.activexExcelInts.`65407`
+  - typings.activexExcel.activexExcelInts.`5275647`
+  - typings.activexExcel.activexExcelInts.`15570276`
+  - typings.activexExcel.activexExcelInts.`14481663`
+  - typings.activexExcel.activexExcelInts.`3937500`
+  - typings.activexExcel.activexExcelInts.`9109504`
+  - typings.activexExcel.activexExcelInts.`9145088`
+  - typings.activexExcel.activexExcelInts.`755384`
+  - typings.activexExcel.activexExcelInts.`11119017`
+  - typings.activexExcel.activexExcelInts.`25600`
+  - typings.activexExcel.activexExcelInts.`7059389`
+  - typings.activexExcel.activexExcelInts.`9109643`
+  - typings.activexExcel.activexExcelInts.`3107669`
+  - typings.activexExcel.activexExcelInts.`36095`
+  - typings.activexExcel.activexExcelInts.`13382297`
+  - typings.activexExcel.activexExcelInts.`139`
+  - typings.activexExcel.activexExcelInts.`8034025`
+  - typings.activexExcel.activexExcelInts.`9419919`
+  - typings.activexExcel.activexExcelInts.`9125192`
+  - typings.activexExcel.activexExcelInts.`5197615`
+  - typings.activexExcel.activexExcelInts.`13749760`
+  - typings.activexExcel.activexExcelInts.`13828244`
+  - typings.activexExcel.activexExcelInts.`9639167`
+  - typings.activexExcel.activexExcelInts.`16760576`
+  - typings.activexExcel.activexExcelInts.`6908265`
+  - typings.activexExcel.activexExcelInts.`16748574`
+  - typings.activexExcel.activexExcelInts.`2237106`
+  - typings.activexExcel.activexExcelInts.`15792895`
+  - typings.activexExcel.activexExcelInts.`2263842`
+  - typings.activexExcel.activexExcelInts.`16711935`
+  - typings.activexExcel.activexExcelInts.`14474460`
+  - typings.activexExcel.activexExcelInts.`16775416`
+  - typings.activexExcel.activexExcelInts.`55295`
+  - typings.activexExcel.activexExcelInts.`2139610`
+  - typings.activexExcel.activexExcelInts.`8421504`
+  - typings.activexExcel.activexExcelInts.`32768`
+  - typings.activexExcel.activexExcelInts.`3145645`
+  - typings.activexExcel.activexExcelInts.`15794160`
+  - typings.activexExcel.activexExcelInts.`11823615`
+  - typings.activexExcel.activexExcelInts.`6053069`
+  - typings.activexExcel.activexExcelInts.`8519755`
+  - typings.activexExcel.activexExcelInts.`15794175`
+  - typings.activexExcel.activexExcelInts.`9234160`
+  - typings.activexExcel.activexExcelInts.`16443110`
+  - typings.activexExcel.activexExcelInts.`16118015`
+  - typings.activexExcel.activexExcelInts.`64636`
+  - typings.activexExcel.activexExcelInts.`13499135`
+  - typings.activexExcel.activexExcelInts.`15128749`
+  - typings.activexExcel.activexExcelInts.`8421616`
+  - typings.activexExcel.activexExcelInts.`13826810`
+  - typings.activexExcel.activexExcelInts.`13882323`
+  - typings.activexExcel.activexExcelInts.`9498256`
+  - typings.activexExcel.activexExcelInts.`12695295`
+  - typings.activexExcel.activexExcelInts.`8036607`
+  - typings.activexExcel.activexExcelInts.`11186720`
+  - typings.activexExcel.activexExcelInts.`16436871`
+  - typings.activexExcel.activexExcelInts.`10061943`
+  - typings.activexExcel.activexExcelInts.`14599344`
+  - typings.activexExcel.activexExcelInts.`14745599`
+  - typings.activexExcel.activexExcelInts.`65280`
+  - typings.activexExcel.activexExcelInts.`3329330`
+  - typings.activexExcel.activexExcelInts.`15134970`
+  - typings.activexExcel.activexExcelInts.`128`
+  - typings.activexExcel.activexExcelInts.`11206502`
+  - typings.activexExcel.activexExcelInts.`13434880`
+  - typings.activexExcel.activexExcelInts.`13850042`
+  - typings.activexExcel.activexExcelInts.`14381203`
+  - typings.activexExcel.activexExcelInts.`7451452`
+  - typings.activexExcel.activexExcelInts.`15624315`
+  - typings.activexExcel.activexExcelInts.`10156544`
+  - typings.activexExcel.activexExcelInts.`13422920`
+  - typings.activexExcel.activexExcelInts.`8721863`
+  - typings.activexExcel.activexExcelInts.`7346457`
+  - typings.activexExcel.activexExcelInts.`16449525`
+  - typings.activexExcel.activexExcelInts.`14804223`
+  - typings.activexExcel.activexExcelInts.`11920639`
+  - typings.activexExcel.activexExcelInts.`11394815`
+  - typings.activexExcel.activexExcelInts.`8388608`
+  - typings.activexExcel.activexExcelInts.`15136253`
+  - typings.activexExcel.activexExcelInts.`32896`
+  - typings.activexExcel.activexExcelInts.`2330219`
+  - typings.activexExcel.activexExcelInts.`42495`
+  - typings.activexExcel.activexExcelInts.`17919`
+  - typings.activexExcel.activexExcelInts.`14053594`
+  - typings.activexExcel.activexExcelInts.`7071982`
+  - typings.activexExcel.activexExcelInts.`10025880`
+  - typings.activexExcel.activexExcelInts.`15658671`
+  - typings.activexExcel.activexExcelInts.`9662683`
+  - typings.activexExcel.activexExcelInts.`14020607`
+  - typings.activexExcel.activexExcelInts.`12180223`
+  - typings.activexExcel.activexExcelInts.`4163021`
+  - typings.activexExcel.activexExcelInts.`13353215`
+  - typings.activexExcel.activexExcelInts.`14524637`
+  - typings.activexExcel.activexExcelInts.`15130800`
+  - typings.activexExcel.activexExcelInts.`8388736`
+  - typings.activexExcel.activexExcelInts.`255`
+  - typings.activexExcel.activexExcelInts.`9408444`
+  - typings.activexExcel.activexExcelInts.`14772545`
+  - typings.activexExcel.activexExcelInts.`7504122`
+  - typings.activexExcel.activexExcelInts.`6333684`
+  - typings.activexExcel.activexExcelInts.`5737262`
+  - typings.activexExcel.activexExcelInts.`15660543`
+  - typings.activexExcel.activexExcelInts.`2970272`
+  - typings.activexExcel.activexExcelInts.`12632256`
+  - typings.activexExcel.activexExcelInts.`15453831`
+  - typings.activexExcel.activexExcelInts.`13458026`
+  - typings.activexExcel.activexExcelInts.`9470064`
+  - typings.activexExcel.activexExcelInts.`16448255`
+  - typings.activexExcel.activexExcelInts.`8388352`
+  - typings.activexExcel.activexExcelInts.`11829830`
+  - typings.activexExcel.activexExcelInts.`9221330`
+  - typings.activexExcel.activexExcelInts.`8421376`
+  - typings.activexExcel.activexExcelInts.`14204888`
+  - typings.activexExcel.activexExcelInts.`4678655`
+  - typings.activexExcel.activexExcelInts.`13688896`
+  - typings.activexExcel.activexExcelInts.`15631086`
+  - typings.activexExcel.activexExcelInts.`11788021`
+  - typings.activexExcel.activexExcelInts.`16777215`
+  - typings.activexExcel.activexExcelInts.`16119285`
+  - typings.activexExcel.activexExcelInts.`65535`
+  - typings.activexExcel.activexExcelInts.`3329434`
 */
 trait XlRgbColor extends StObject
 object XlRgbColor {

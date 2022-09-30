@@ -25,9 +25,9 @@ object isUUIDMod {
   inline def isUUID(value: Any, version: UUIDVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.classValidator.classValidatorNumbers.`3`
-    - typings.classValidator.classValidatorNumbers.`4`
-    - typings.classValidator.classValidatorNumbers.`5`
+    - typings.classValidator.classValidatorInts.`3`
+    - typings.classValidator.classValidatorInts.`4`
+    - typings.classValidator.classValidatorInts.`5`
     - typings.classValidator.classValidatorStrings.`3`
     - typings.classValidator.classValidatorStrings.`4`
     - typings.classValidator.classValidatorStrings.`5`
@@ -36,11 +36,11 @@ object isUUIDMod {
   trait UUIDVersion extends StObject
   object UUIDVersion {
     
-    inline def `3`: typings.classValidator.classValidatorNumbers.`3` = 3.asInstanceOf[typings.classValidator.classValidatorNumbers.`3`]
+    inline def `3`: typings.classValidator.classValidatorInts.`3` = 3.asInstanceOf[typings.classValidator.classValidatorInts.`3`]
     
-    inline def `4`: typings.classValidator.classValidatorNumbers.`4` = 4.asInstanceOf[typings.classValidator.classValidatorNumbers.`4`]
+    inline def `4`: typings.classValidator.classValidatorInts.`4` = 4.asInstanceOf[typings.classValidator.classValidatorInts.`4`]
     
-    inline def `5`: typings.classValidator.classValidatorNumbers.`5` = 5.asInstanceOf[typings.classValidator.classValidatorNumbers.`5`]
+    inline def `5`: typings.classValidator.classValidatorInts.`5` = 5.asInstanceOf[typings.classValidator.classValidatorInts.`5`]
     
     inline def all: typings.classValidator.classValidatorStrings.all = "all".asInstanceOf[typings.classValidator.classValidatorStrings.all]
   }

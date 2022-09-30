@@ -6,6 +6,7 @@ import typings.assemblyscriptLoader.anon.Exports
 import typings.std.BigInt64Array
 import typings.std.BigUint64Array
 import typings.std.BufferSource
+import typings.std.PromiseLike
 import typings.std.Record
 import typings.std.Response
 import typings.std.WebAssembly.Instance
@@ -25,17 +26,17 @@ object mod {
   inline def demangle[T /* <: Record[String, Any] */](exports: Record[String, Any]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def demangle[T /* <: Record[String, Any] */](exports: Record[String, Any], extendedExports: Record[String, Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any], extendedExports.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def instantiate[T /* <: Record[String, Any] */](source: js.Thenable[Module | BufferSource | Response]): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
-  inline def instantiate[T /* <: Record[String, Any] */](source: js.Thenable[Module | BufferSource | Response], imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiate[T /* <: Record[String, Any] */](source: BufferSource): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiate[T /* <: Record[String, Any] */](source: BufferSource, imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
+  inline def instantiate[T /* <: Record[String, Any] */](source: PromiseLike[Module | BufferSource | Response]): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
+  inline def instantiate[T /* <: Record[String, Any] */](source: PromiseLike[Module | BufferSource | Response], imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiate[T /* <: Record[String, Any] */](source: Response): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiate[T /* <: Record[String, Any] */](source: Response, imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiate[T /* <: Record[String, Any] */](source: Module): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiate[T /* <: Record[String, Any] */](source: Module, imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   
-  inline def instantiateStreaming[T /* <: Record[String, Any] */](source: js.Thenable[Response]): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
-  inline def instantiateStreaming[T /* <: Record[String, Any] */](source: js.Thenable[Response], imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
+  inline def instantiateStreaming[T /* <: Record[String, Any] */](source: PromiseLike[Response]): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
+  inline def instantiateStreaming[T /* <: Record[String, Any] */](source: PromiseLike[Response], imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiateStreaming[T /* <: Record[String, Any] */](source: Response): js.Promise[ResultObject & Exports[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   inline def instantiateStreaming[T /* <: Record[String, Any] */](source: Response, imports: Imports): js.Promise[ResultObject & Exports[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultObject & Exports[T]]]
   

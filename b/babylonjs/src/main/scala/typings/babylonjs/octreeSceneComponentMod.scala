@@ -92,7 +92,7 @@ object octreeSceneComponentMod {
     trait AbstractMesh extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing Field
         */
       var _submeshesOctree: Octree[SubMesh] = js.native
@@ -120,7 +120,7 @@ object octreeSceneComponentMod {
     trait Scene extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing Filed
         */
       var _selectionOctree: Octree[AbstractMesh] = js.native

@@ -52,7 +52,7 @@ object security {
     */
   @JSImport("mendixmodelsdk", "security.DemoUser")
   @js.native
-  class DemoUser protected ()
+  open class DemoUser protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.DemoUser {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -100,7 +100,7 @@ object security {
   
   @JSImport("mendixmodelsdk", "security.FileDocumentAccessRuleContainer")
   @js.native
-  class FileDocumentAccessRuleContainer protected ()
+  open class FileDocumentAccessRuleContainer protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.FileDocumentAccessRuleContainer {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -148,7 +148,7 @@ object security {
   
   @JSImport("mendixmodelsdk", "security.ImageAccessRuleContainer")
   @js.native
-  class ImageAccessRuleContainer protected ()
+  open class ImageAccessRuleContainer protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.ImageAccessRuleContainer {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -199,7 +199,7 @@ object security {
     */
   @JSImport("mendixmodelsdk", "security.ModuleRole")
   @js.native
-  class ModuleRole protected ()
+  open class ModuleRole protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.ModuleRole {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -250,7 +250,7 @@ object security {
     */
   @JSImport("mendixmodelsdk", "security.ModuleSecurity")
   @js.native
-  class ModuleSecurity protected ()
+  open class ModuleSecurity protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.ModuleSecurity {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -291,7 +291,7 @@ object security {
     */
   @JSImport("mendixmodelsdk", "security.PasswordPolicySettings")
   @js.native
-  class PasswordPolicySettings protected ()
+  open class PasswordPolicySettings protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.PasswordPolicySettings {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -342,7 +342,7 @@ object security {
     */
   @JSImport("mendixmodelsdk", "security.ProjectSecurity")
   @js.native
-  class ProjectSecurity protected ()
+  open class ProjectSecurity protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.ProjectSecurity {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -380,7 +380,7 @@ object security {
   
   @JSImport("mendixmodelsdk", "security.SecurityLevel")
   @js.native
-  class SecurityLevel protected ()
+  open class SecurityLevel protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.SecurityLevel {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -414,7 +414,7 @@ object security {
     */
   @JSImport("mendixmodelsdk", "security.UserRole")
   @js.native
-  class UserRole protected ()
+  open class UserRole protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.security.UserRole {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

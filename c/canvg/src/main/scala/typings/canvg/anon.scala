@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.canvg.canvgNumbers.`0`
-import typings.canvg.canvgNumbers.`1`
+import typings.canvg.canvgInts.`0`
+import typings.canvg.canvgInts.`1`
 import typings.canvg.documentDocumentMod.Document
 import typings.canvg.filterElementMod.FilterElement
 import typings.canvg.glyphElementMod.GlyphElement

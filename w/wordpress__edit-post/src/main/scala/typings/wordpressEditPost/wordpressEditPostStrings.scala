@@ -71,6 +71,10 @@ object wordpressEditPostStrings {
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
   
@@ -93,6 +97,10 @@ object wordpressEditPostStrings {
   @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait link extends StObject
@@ -177,6 +185,10 @@ object wordpressEditPostStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
   sealed trait search extends StObject
   inline def search: search = "search".asInstanceOf[search]
   
@@ -223,6 +235,10 @@ object wordpressEditPostStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait vertical extends StObject

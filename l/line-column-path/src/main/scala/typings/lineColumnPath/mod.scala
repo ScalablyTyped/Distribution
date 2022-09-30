@@ -10,36 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(path: PathLike): ParsedPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
+  inline def parseLineColumnPath(path: PathLike): ParsedPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLineColumnPath")(path.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
   
-  inline def stringify(path: PathDescriptor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(path: PathDescriptor, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyLineColumnPath(path: PathDescriptor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyLineColumnPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyLineColumnPath(path: PathDescriptor, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyLineColumnPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  /* Inlined type-fest.type-fest.Mutable<std.Required<line-column-path.line-column-path.PathDescriptor>> */
-  trait ParsedPath extends StObject {
-    
-    var column: Double
-    
-    var file: String
-    
-    var line: Double
-  }
-  object ParsedPath {
-    
-    inline def apply(column: Double, file: String, line: Double): ParsedPath = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ParsedPath]
-    }
-    
-    extension [Self <: ParsedPath](x: Self) {
-      
-      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-      
-      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-      
-      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
-    }
-  }
+  type ParsedPath = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mutable<Required<PathDescriptor>> */ Any
   
   trait PathDescriptor extends StObject {
     
@@ -79,7 +55,7 @@ object mod {
     	Setting this to `false` will result in `unicorn.js:8` instead of `unicorn.js:8:14`.
     	@default true
     	*/
-    var column: js.UndefOr[Boolean] = js.undefined
+    val column: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Output the file path.

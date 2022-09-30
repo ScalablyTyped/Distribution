@@ -12,7 +12,7 @@ trait Root extends StObject {
   
   var ValidationError: Instantiable3[
     /* message */ String, 
-    /* details */ Any, 
+    /* details */ js.Array[ValidationErrorItem], 
     /* original */ Any, 
     typings.joi.mod.ValidationError
   ] = js.native
@@ -61,6 +61,12 @@ trait Root extends StObject {
   def assert(value: Any, schema: Schema[Any], message: js.Error, options: ValidationOptions): Unit = js.native
   def assert(value: Any, schema: Schema[Any], options: ValidationOptions): Unit = js.native
   
+  def attempt(value: Any, schema: AlternativesSchema): Any = js.native
+  def attempt(value: Any, schema: AlternativesSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: AlternativesSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: AlternativesSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: AlternativesSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: AlternativesSchema, options: ValidationOptions): Any = js.native
   /**
     * Validates a value against a schema, returns valid object, and throws if validation fails.
     *
@@ -68,12 +74,66 @@ trait Root extends StObject {
     * @param schema - the schema object.
     * @param message - optional message string prefix added in front of the error message. may also be an Error object.
     */
-  def attempt(value: Any, schema: Schema[Any]): Any = js.native
-  def attempt(value: Any, schema: Schema[Any], message: String): Any = js.native
-  def attempt(value: Any, schema: Schema[Any], message: String, options: ValidationOptions): Any = js.native
-  def attempt(value: Any, schema: Schema[Any], message: js.Error): Any = js.native
-  def attempt(value: Any, schema: Schema[Any], message: js.Error, options: ValidationOptions): Any = js.native
-  def attempt(value: Any, schema: Schema[Any], options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: ArraySchema): Any = js.native
+  def attempt(value: Any, schema: ArraySchema, message: String): Any = js.native
+  def attempt(value: Any, schema: ArraySchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: ArraySchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: ArraySchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: ArraySchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: BinarySchema): Any = js.native
+  def attempt(value: Any, schema: BinarySchema, message: String): Any = js.native
+  def attempt(value: Any, schema: BinarySchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: BinarySchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: BinarySchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: BinarySchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: BooleanSchema): Any = js.native
+  def attempt(value: Any, schema: BooleanSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: BooleanSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: BooleanSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: BooleanSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: BooleanSchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: DateSchema): Any = js.native
+  def attempt(value: Any, schema: DateSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: DateSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: DateSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: DateSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: DateSchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: FunctionSchema): Any = js.native
+  def attempt(value: Any, schema: FunctionSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: FunctionSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: FunctionSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: FunctionSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: FunctionSchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: LinkSchema): Any = js.native
+  def attempt(value: Any, schema: LinkSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: LinkSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: LinkSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: LinkSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: LinkSchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: NumberSchema): Any = js.native
+  def attempt(value: Any, schema: NumberSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: NumberSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: NumberSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: NumberSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: NumberSchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: StringSchema): Any = js.native
+  def attempt(value: Any, schema: StringSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: StringSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: StringSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: StringSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: StringSchema, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: SymbolSchema): Any = js.native
+  def attempt(value: Any, schema: SymbolSchema, message: String): Any = js.native
+  def attempt(value: Any, schema: SymbolSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: SymbolSchema, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: SymbolSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: SymbolSchema, options: ValidationOptions): Any = js.native
+  def attempt[TSchema /* <: AnySchema[Any] | ObjectSchema[Any] */](value: Any, schema: TSchema): Any = js.native
+  def attempt[TSchema /* <: AnySchema[Any] | ObjectSchema[Any] */](value: Any, schema: TSchema, message: String): Any = js.native
+  def attempt[TSchema /* <: AnySchema[Any] | ObjectSchema[Any] */](value: Any, schema: TSchema, message: String, options: ValidationOptions): Any = js.native
+  def attempt[TSchema /* <: AnySchema[Any] | ObjectSchema[Any] */](value: Any, schema: TSchema, message: js.Error): Any = js.native
+  def attempt[TSchema /* <: AnySchema[Any] | ObjectSchema[Any] */](value: Any, schema: TSchema, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt[TSchema /* <: AnySchema[Any] | ObjectSchema[Any] */](value: Any, schema: TSchema, options: ValidationOptions): Any = js.native
   
   /**
     * Generates a schema object that matches a Buffer data type (as well as the strings which will be converted to Buffers).

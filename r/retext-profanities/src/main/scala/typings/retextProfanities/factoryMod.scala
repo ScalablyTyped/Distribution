@@ -1,9 +1,9 @@
 package typings.retextProfanities
 
 import typings.retextProfanities.anon.Plural
-import typings.retextProfanities.retextProfanitiesNumbers.`0`
-import typings.retextProfanities.retextProfanitiesNumbers.`1`
-import typings.retextProfanities.retextProfanitiesNumbers.`2`
+import typings.retextProfanities.retextProfanitiesInts.`0`
+import typings.retextProfanities.retextProfanitiesInts.`1`
+import typings.retextProfanities.retextProfanitiesInts.`2`
 import typings.std.Record
 import typings.unified.mod.Processor
 import typings.unified.mod.Transformer

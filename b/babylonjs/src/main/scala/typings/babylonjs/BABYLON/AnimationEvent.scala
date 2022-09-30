@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnimationEvent extends StObject {
   
-  /** @hidden */
+  /** @internal */
   def _clone(): AnimationEvent
   
   /** The event to perform when triggered **/

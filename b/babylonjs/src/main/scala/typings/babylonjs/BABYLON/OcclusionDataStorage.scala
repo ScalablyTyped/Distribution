@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OcclusionDataStorage extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var forceRenderingWhenOccluded: Boolean
   
-  /** @hidden */
+  /** @internal */
   var isOccluded: Boolean
   
-  /** @hidden */
+  /** @internal */
   var isOcclusionQueryInProgress: Boolean
   
-  /** @hidden */
+  /** @internal */
   var occlusionInternalRetryCounter: Double
   
-  /** @hidden */
+  /** @internal */
   var occlusionQueryAlgorithmType: Double
   
-  /** @hidden */
+  /** @internal */
   var occlusionRetryCount: Double
   
-  /** @hidden */
+  /** @internal */
   var occlusionType: Double
 }
 object OcclusionDataStorage {

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BuildRepair extends StObject {
   
-  var build: typings.screeps.screepsNumbers.`2`
+  var build: typings.screeps.screepsInts.`2`
   
-  var repair: typings.screeps.screepsNumbers.`2`
+  var repair: typings.screeps.screepsInts.`2`
 }
 object BuildRepair {
   
@@ -19,8 +19,8 @@ object BuildRepair {
   
   extension [Self <: BuildRepair](x: Self) {
     
-    inline def setBuild(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    inline def setRepair(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "repair", value.asInstanceOf[js.Any])
+    inline def setRepair(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "repair", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-telemetry
 
-Typings are for version 1.5.0
+Typings are for version 3.24.0
 
 ## Library description:
 Gatsby Telemetry
@@ -10,10 +10,10 @@ Gatsby Telemetry
 | ------------------ | :-------------: |
 | Full name          | gatsby-telemetry |
 | Keywords           | telemetry |
-| # releases         | 210 |
-| # dependents       | 15 |
-| # downloads        | 21130941 |
-| # stars            | 0 |
+| # releases         | 264 |
+| # dependents       | 0.0 |
+| # downloads        | 1986287.3333333333 |
+| # stars            | 53589.0 |
 
 ## Links
 - [Homepage](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-telemetry#readme)

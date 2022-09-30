@@ -9,14 +9,14 @@ trait Parentheses
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode]
+  var children: typings.cssTree.mod.List[CssNode]
   
   @JSName("type")
   var type_Parentheses: typings.cssTree.cssTreeStrings.Parentheses
 }
 object Parentheses {
   
-  inline def apply(children: List[CssNode]): Parentheses = {
+  inline def apply(children: typings.cssTree.mod.List[CssNode]): Parentheses = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Parentheses")
     __obj.asInstanceOf[Parentheses]
@@ -24,7 +24,7 @@ object Parentheses {
   
   extension [Self <: Parentheses](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Parentheses): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

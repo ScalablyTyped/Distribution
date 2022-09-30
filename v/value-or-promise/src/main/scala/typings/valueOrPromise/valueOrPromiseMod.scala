@@ -1,5 +1,6 @@
 package typings.valueOrPromise
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,23 +10,23 @@ object valueOrPromiseMod {
   @JSImport("value-or-promise/build/main/ValueOrPromise", "ValueOrPromise")
   @js.native
   open class ValueOrPromise[T] protected () extends StObject {
-    def this(executor: js.Function0[T | js.Thenable[T]]) = this()
+    def this(executor: js.Function0[T | PromiseLike[T]]) = this()
     
     def `catch`[TResult](): ValueOrPromise[TResult] = js.native
-    def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): ValueOrPromise[TResult] = js.native
+    def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): ValueOrPromise[TResult] = js.native
     
     def resolve(): T | js.Promise[T] = js.native
     
     /* private */ val state: Any = js.native
     
     def `then`[TResult1, TResult2](): ValueOrPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onFulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): ValueOrPromise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onFulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]]): ValueOrPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
-      onFulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onFulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+      onRejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): ValueOrPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onFulfilled: Null, onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): ValueOrPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): ValueOrPromise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onFulfilled: Null, onRejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): ValueOrPromise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): ValueOrPromise[TResult1 | TResult2] = js.native
   }
   /* static members */
   object ValueOrPromise {

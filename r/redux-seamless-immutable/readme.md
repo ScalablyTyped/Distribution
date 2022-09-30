@@ -10,15 +10,12 @@ Helpers for using seamless-immutable with Redux
 | ------------------ | :-------------: |
 | Full name          | redux-seamless-immutable |
 | Keywords           | javascript, redux, immutable, seamless, router |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 1713682 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 102931.33333333333 |
+| # stars            | 46.0 |
 
 ## Links
-- [Homepage](https://github.com/eadmundo/redux-seamless-immutable)
-- [Bugs](https://github.com/eadmundo/redux-seamless-immutable/issues)
-- [Repository](https://github.com/eadmundo/redux-seamless-immutable)
 - [Npm](https://www.npmjs.com/package/redux-seamless-immutable)
     
 

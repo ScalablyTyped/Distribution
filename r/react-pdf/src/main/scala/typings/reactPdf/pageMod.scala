@@ -6,10 +6,10 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
-import typings.reactPdf.reactPdfNumbers.`0`
-import typings.reactPdf.reactPdfNumbers.`180`
-import typings.reactPdf.reactPdfNumbers.`270`
-import typings.reactPdf.reactPdfNumbers.`90`
+import typings.reactPdf.reactPdfInts.`0`
+import typings.reactPdf.reactPdfInts.`180`
+import typings.reactPdf.reactPdfInts.`270`
+import typings.reactPdf.reactPdfInts.`90`
 import typings.reactPdf.reactPdfStrings.canvas
 import typings.reactPdf.reactPdfStrings.none
 import typings.reactPdf.reactPdfStrings.svg

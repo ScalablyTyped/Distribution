@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashDefaultTo extends StObject {
   
-  def apply[TDefault](defaultValue: TDefault): LodashDefaultTo2x1[TDefault] = js.native
+  def apply[T](defaultValue: T): LodashDefaultTo1x1[T] = js.native
   def apply[T](defaultValue: T, value: T): T = js.native
   def apply[T](defaultValue: __): LodashDefaultTo1x2[T] = js.native
   def apply[T](defaultValue: __, value: T): LodashDefaultTo1x2[T] = js.native

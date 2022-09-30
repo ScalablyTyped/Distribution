@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.microflowsMod.microflows
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.expressionsMod.expressions.Expression
+import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
@@ -16,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.0.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FormDataPart")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FormDataPart")
 @js.native
-class FormDataPart protected () extends Element[IModel] {
+open class FormDataPart protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -29,6 +30,11 @@ class FormDataPart protected () extends Element[IModel] {
   ) = this()
   
   def containerAsFormDataRequestHandling: FormDataRequestHandling = js.native
+  
+  /**
+    * In version 9.2.0: introduced
+    */
+  def headerEntries: IList[HttpHeaderEntry] = js.native
   
   def key: String = js.native
   def key_=(newValue: String): Unit = js.native
@@ -42,6 +48,8 @@ class FormDataPart protected () extends Element[IModel] {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.8.0: deleted
     */
   def valueModel: Expression = js.native
   def valueModel_=(newValue: Expression): Unit = js.native
@@ -50,7 +58,7 @@ class FormDataPart protected () extends Element[IModel] {
 }
 object FormDataPart {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FormDataPart")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FormDataPart")
   @js.native
   val ^ : js.Any = js.native
   
@@ -74,13 +82,13 @@ object FormDataPart {
   inline def createIn(container: FormDataRequestHandling): FormDataPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[FormDataPart]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FormDataPart.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FormDataPart.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FormDataPart.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FormDataPart.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

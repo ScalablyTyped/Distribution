@@ -6,8 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongodb", "MongoNetworkError")
 @js.native
-class MongoNetworkError protected () extends MongoError {
+open class MongoNetworkError protected () extends MongoError {
+  /* Excluded from this release type: [kBeforeHandshake] */
   def this(message: String) = this()
+  def this(message: js.Error) = this()
+  def this(message: String, options: MongoNetworkErrorOptions) = this()
+  def this(message: js.Error, options: MongoNetworkErrorOptions) = this()
   
-  var errorLabels: js.Array[String] = js.native
+  @JSName("name")
+  def name_MMongoNetworkError: String = js.native
 }

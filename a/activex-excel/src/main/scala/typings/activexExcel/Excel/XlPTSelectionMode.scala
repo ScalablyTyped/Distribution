@@ -1,24 +1,24 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`0`
-import typings.activexExcel.activexExcelNumbers.`15`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`256`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`3`
-import typings.activexExcel.activexExcelNumbers.`4`
+import typings.activexExcel.activexExcelInts.`0`
+import typings.activexExcel.activexExcelInts.`15`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`256`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`3`
+import typings.activexExcel.activexExcelInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`4`
-  - typings.activexExcel.activexExcelNumbers.`15`
-  - typings.activexExcel.activexExcelNumbers.`0`
-  - typings.activexExcel.activexExcelNumbers.`2`
-  - typings.activexExcel.activexExcelNumbers.`256`
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`3`
+  - typings.activexExcel.activexExcelInts.`4`
+  - typings.activexExcel.activexExcelInts.`15`
+  - typings.activexExcel.activexExcelInts.`0`
+  - typings.activexExcel.activexExcelInts.`2`
+  - typings.activexExcel.activexExcelInts.`256`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`3`
 */
 trait XlPTSelectionMode extends StObject
 object XlPTSelectionMode {

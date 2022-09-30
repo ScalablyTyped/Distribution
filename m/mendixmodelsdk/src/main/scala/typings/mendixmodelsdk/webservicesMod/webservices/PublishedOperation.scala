@@ -15,9 +15,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedOperation")
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedOperation")
 @js.native
-class PublishedOperation protected () extends PublishedResource {
+open class PublishedOperation protected () extends PublishedResource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,6 +35,9 @@ class PublishedOperation protected () extends PublishedResource {
   
   def entityExposedName: String = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def entityExposedNameByContract: String = js.native
   def entityExposedNameByContract_=(newValue: String): Unit = js.native
   
@@ -46,6 +49,9 @@ class PublishedOperation protected () extends PublishedResource {
   
   def image_=(newValue: IImage | Null): Unit = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def isLockedByContract: Boolean = js.native
   def isLockedByContract_=(newValue: Boolean): Unit = js.native
   
@@ -79,9 +85,15 @@ class PublishedOperation protected () extends PublishedResource {
   def returnTypeIsOptional: Boolean = js.native
   def returnTypeIsOptional_=(newValue: Boolean): Unit = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def returnTypeNameByContract: String = js.native
   def returnTypeNameByContract_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def returnTypeSpecificationByContract: String = js.native
   def returnTypeSpecificationByContract_=(newValue: String): Unit = js.native
   
@@ -89,7 +101,7 @@ class PublishedOperation protected () extends PublishedResource {
 }
 object PublishedOperation {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedOperation")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedOperation")
   @js.native
   val ^ : js.Any = js.native
   
@@ -110,13 +122,13 @@ object PublishedOperation {
   inline def createIn(container: VersionedService): PublishedOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedOperation]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedOperation.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedOperation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedOperation.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedOperation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

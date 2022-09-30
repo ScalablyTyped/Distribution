@@ -1,34 +1,34 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-4104`
-import typings.activexExcel.activexExcelNumbers.`-4122`
-import typings.activexExcel.activexExcelNumbers.`-4123`
-import typings.activexExcel.activexExcelNumbers.`-4144`
-import typings.activexExcel.activexExcelNumbers.`-4163`
-import typings.activexExcel.activexExcelNumbers.`11`
-import typings.activexExcel.activexExcelNumbers.`12`
-import typings.activexExcel.activexExcelNumbers.`13`
-import typings.activexExcel.activexExcelNumbers.`14`
-import typings.activexExcel.activexExcelNumbers.`6`
-import typings.activexExcel.activexExcelNumbers.`7`
-import typings.activexExcel.activexExcelNumbers.`8`
+import typings.activexExcel.activexExcelInts.`-4104`
+import typings.activexExcel.activexExcelInts.`-4122`
+import typings.activexExcel.activexExcelInts.`-4123`
+import typings.activexExcel.activexExcelInts.`-4144`
+import typings.activexExcel.activexExcelInts.`-4163`
+import typings.activexExcel.activexExcelInts.`11`
+import typings.activexExcel.activexExcelInts.`12`
+import typings.activexExcel.activexExcelInts.`13`
+import typings.activexExcel.activexExcelInts.`14`
+import typings.activexExcel.activexExcelInts.`6`
+import typings.activexExcel.activexExcelInts.`7`
+import typings.activexExcel.activexExcelInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`-4104`
-  - typings.activexExcel.activexExcelNumbers.`7`
-  - typings.activexExcel.activexExcelNumbers.`14`
-  - typings.activexExcel.activexExcelNumbers.`13`
-  - typings.activexExcel.activexExcelNumbers.`8`
-  - typings.activexExcel.activexExcelNumbers.`-4144`
-  - typings.activexExcel.activexExcelNumbers.`-4122`
-  - typings.activexExcel.activexExcelNumbers.`-4123`
-  - typings.activexExcel.activexExcelNumbers.`11`
-  - typings.activexExcel.activexExcelNumbers.`6`
-  - typings.activexExcel.activexExcelNumbers.`-4163`
-  - typings.activexExcel.activexExcelNumbers.`12`
+  - typings.activexExcel.activexExcelInts.`-4104`
+  - typings.activexExcel.activexExcelInts.`7`
+  - typings.activexExcel.activexExcelInts.`14`
+  - typings.activexExcel.activexExcelInts.`13`
+  - typings.activexExcel.activexExcelInts.`8`
+  - typings.activexExcel.activexExcelInts.`-4144`
+  - typings.activexExcel.activexExcelInts.`-4122`
+  - typings.activexExcel.activexExcelInts.`-4123`
+  - typings.activexExcel.activexExcelInts.`11`
+  - typings.activexExcel.activexExcelInts.`6`
+  - typings.activexExcel.activexExcelInts.`-4163`
+  - typings.activexExcel.activexExcelInts.`12`
 */
 trait XlPasteType extends StObject
 object XlPasteType {

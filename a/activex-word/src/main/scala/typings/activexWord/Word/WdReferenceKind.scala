@@ -1,36 +1,36 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-1`
-import typings.activexWord.activexWordNumbers.`-2`
-import typings.activexWord.activexWordNumbers.`-3`
-import typings.activexWord.activexWordNumbers.`-4`
-import typings.activexWord.activexWordNumbers.`15`
-import typings.activexWord.activexWordNumbers.`16`
-import typings.activexWord.activexWordNumbers.`17`
-import typings.activexWord.activexWordNumbers.`2`
-import typings.activexWord.activexWordNumbers.`3`
-import typings.activexWord.activexWordNumbers.`4`
-import typings.activexWord.activexWordNumbers.`5`
-import typings.activexWord.activexWordNumbers.`6`
-import typings.activexWord.activexWordNumbers.`7`
+import typings.activexWord.activexWordInts.`-1`
+import typings.activexWord.activexWordInts.`-2`
+import typings.activexWord.activexWordInts.`-3`
+import typings.activexWord.activexWordInts.`-4`
+import typings.activexWord.activexWordInts.`15`
+import typings.activexWord.activexWordInts.`16`
+import typings.activexWord.activexWordInts.`17`
+import typings.activexWord.activexWordInts.`2`
+import typings.activexWord.activexWordInts.`3`
+import typings.activexWord.activexWordInts.`4`
+import typings.activexWord.activexWordInts.`5`
+import typings.activexWord.activexWordInts.`6`
+import typings.activexWord.activexWordInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`-1`
-  - typings.activexWord.activexWordNumbers.`6`
-  - typings.activexWord.activexWordNumbers.`17`
-  - typings.activexWord.activexWordNumbers.`2`
-  - typings.activexWord.activexWordNumbers.`5`
-  - typings.activexWord.activexWordNumbers.`16`
-  - typings.activexWord.activexWordNumbers.`-4`
-  - typings.activexWord.activexWordNumbers.`-3`
-  - typings.activexWord.activexWordNumbers.`-2`
-  - typings.activexWord.activexWordNumbers.`4`
-  - typings.activexWord.activexWordNumbers.`3`
-  - typings.activexWord.activexWordNumbers.`7`
-  - typings.activexWord.activexWordNumbers.`15`
+  - typings.activexWord.activexWordInts.`-1`
+  - typings.activexWord.activexWordInts.`6`
+  - typings.activexWord.activexWordInts.`17`
+  - typings.activexWord.activexWordInts.`2`
+  - typings.activexWord.activexWordInts.`5`
+  - typings.activexWord.activexWordInts.`16`
+  - typings.activexWord.activexWordInts.`-4`
+  - typings.activexWord.activexWordInts.`-3`
+  - typings.activexWord.activexWordInts.`-2`
+  - typings.activexWord.activexWordInts.`4`
+  - typings.activexWord.activexWordInts.`3`
+  - typings.activexWord.activexWordInts.`7`
+  - typings.activexWord.activexWordInts.`15`
 */
 trait WdReferenceKind extends StObject
 object WdReferenceKind {

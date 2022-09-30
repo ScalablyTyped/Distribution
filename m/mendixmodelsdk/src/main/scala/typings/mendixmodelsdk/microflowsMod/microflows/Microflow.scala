@@ -27,9 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowBase because Already inherited
 - typings.mendixmodelsdk.microflowsMod.microflows.IServerSideMicroflow because Already inherited
-- typings.mendixmodelsdk.microflowsMod.microflows.IMicroflow because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames, microflowActionInfo */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Microflow")
+- typings.mendixmodelsdk.microflowsMod.microflows.IMicroflow because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined allowedModuleRoles, allowedModuleRolesQualifiedNames, microflowActionInfo, workflowActionInfo */ @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Microflow")
 @js.native
-class Microflow protected () extends ServerSideMicroflow {
+open class Microflow protected () extends ServerSideMicroflow {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -78,10 +78,21 @@ class Microflow protected () extends ServerSideMicroflow {
     */
   @JSName("microflowActionInfo")
   val microflowActionInfo_FMicroflow: IMicroflowActionInfo | Null = js.native
+  
+  /**
+    * In version 9.0.2: introduced
+    */
+  def workflowActionInfo: MicroflowActionInfo | Null = js.native
+  def workflowActionInfo_=(newValue: MicroflowActionInfo | Null): Unit = js.native
+  /**
+    * In version 9.0.2: introduced
+    */
+  @JSName("workflowActionInfo")
+  val workflowActionInfo_FMicroflow: IMicroflowActionInfo | Null = js.native
 }
 object Microflow {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Microflow")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Microflow")
   @js.native
   val ^ : js.Any = js.native
   
@@ -93,13 +104,13 @@ object Microflow {
   inline def createIn(container: IFolderBase): Microflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Microflow]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Microflow.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Microflow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Microflow.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Microflow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

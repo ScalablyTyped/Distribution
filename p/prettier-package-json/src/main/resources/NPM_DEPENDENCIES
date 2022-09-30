@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "prettier-package-json" : "2.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "prettier-package-json" : "2.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

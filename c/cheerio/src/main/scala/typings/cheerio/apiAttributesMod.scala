@@ -55,7 +55,7 @@ object apiAttributesMod {
   ): R = ^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(value.asInstanceOf[js.Any]).asInstanceOf[R]
   
   inline def attr[T /* <: AnyNode */](): js.UndefOr[Record[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")().asInstanceOf[js.UndefOr[Record[String, String]]]
-  inline def attr[T /* <: AnyNode */](name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def attr[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   inline def attr[T /* <: AnyNode */](name: String, value: String): Cheerio[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Cheerio[T]]
   inline def attr[T /* <: AnyNode */](
     name: String,
@@ -63,7 +63,7 @@ object apiAttributesMod {
   ): Cheerio[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Cheerio[T]]
   inline def attr[T /* <: AnyNode */](values: Record[String, String | Null]): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(values.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   
-  inline def attr_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
+  inline def attr_T_Union[T /* <: AnyNode */](name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   inline def data[T /* <: AnyNode */](): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("data")().asInstanceOf[Record[String, Any]]
   inline def data[T /* <: AnyNode */](name: String): js.UndefOr[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Any]]
@@ -73,7 +73,7 @@ object apiAttributesMod {
   inline def hasClass[T /* <: AnyNode */](className: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(className.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def prop[T /* <: AnyNode */](name: href | innerHTML | innerText | nodeName | outerHTML | src | tagName | textContent): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  inline def prop[T /* <: AnyNode */](name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prop[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   inline def prop[T /* <: AnyNode */](name: String, value: String): Cheerio[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Cheerio[T]]
   inline def prop[T /* <: AnyNode */](
     name: String,
@@ -89,7 +89,7 @@ object apiAttributesMod {
     ]
   ): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   
-  inline def prop_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
+  inline def prop_T_String[T /* <: AnyNode */](name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def prop_attribs[T /* <: AnyNode */](name: attribs): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   inline def prop_attribs[T /* <: AnyNode */](

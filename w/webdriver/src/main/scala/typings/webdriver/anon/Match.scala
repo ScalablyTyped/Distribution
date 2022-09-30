@@ -1,11 +1,9 @@
 package typings.webdriver.anon
 
-import typings.std.RegExp
-import typings.webdriver.typesMod.WebDriverLogTypes
+import typings.wdioTypes.optionsMod.WebDriverLogTypes
 import typings.webdriver.webdriverStrings.`object`
 import typings.webdriver.webdriverStrings.boolean
 import typings.webdriver.webdriverStrings.function
-import typings.webdriver.webdriverStrings.logLevel
 import typings.webdriver.webdriverStrings.number
 import typings.webdriver.webdriverStrings.string
 import org.scalablytyped.runtime.StObject
@@ -16,13 +14,13 @@ trait Match extends StObject {
   
   var default: js.UndefOr[WebDriverLogTypes] = js.undefined
   
-  var `match`: js.UndefOr[RegExp] = js.undefined
+  var `match`: js.UndefOr[js.RegExp] = js.undefined
   
   var required: js.UndefOr[Boolean] = js.undefined
   
   var `type`: string | number | `object` | boolean | function
   
-  var validate: js.UndefOr[js.Function1[logLevel, Unit]] = js.undefined
+  var validate: js.UndefOr[js.Function1[/* option */ WebDriverLogTypes, Unit]] = js.undefined
 }
 object Match {
   
@@ -38,7 +36,7 @@ object Match {
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: js.RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
@@ -48,7 +46,7 @@ object Match {
     
     inline def setType(value: string | number | `object` | boolean | function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValidate(value: logLevel => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: /* option */ WebDriverLogTypes => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
     inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }

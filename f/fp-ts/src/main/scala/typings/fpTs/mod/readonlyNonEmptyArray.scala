@@ -208,7 +208,7 @@ object readonlyNonEmptyArray {
   
   inline def filterWithIndex[A](predicate: js.Function2[/* i */ Double, /* a */ A, Boolean]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[A]]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[B]]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[B]]]]
   
   inline def flap[A](a: A): js.Function1[
     /* fab */ ReadonlyNonEmptyArray_[js.Function1[/* a */ A, Any]], 

@@ -1,16 +1,16 @@
 package typings.activexInfopath.InfoPath
 
-import typings.activexInfopath.activexInfopathNumbers.`1`
-import typings.activexInfopath.activexInfopathNumbers.`2`
-import typings.activexInfopath.activexInfopathNumbers.`3`
+import typings.activexInfopath.activexInfopathInts.`1`
+import typings.activexInfopath.activexInfopathInts.`2`
+import typings.activexInfopath.activexInfopathInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexInfopath.activexInfopathNumbers.`2`
-  - typings.activexInfopath.activexInfopathNumbers.`3`
-  - typings.activexInfopath.activexInfopathNumbers.`1`
+  - typings.activexInfopath.activexInfopathInts.`2`
+  - typings.activexInfopath.activexInfopathInts.`3`
+  - typings.activexInfopath.activexInfopathInts.`1`
 */
 trait XdSignatureRelation extends StObject
 object XdSignatureRelation {

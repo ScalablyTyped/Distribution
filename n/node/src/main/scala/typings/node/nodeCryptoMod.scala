@@ -62,8 +62,8 @@ import typings.node.cryptoMod.X448KeyPairOptions
 import typings.node.cryptoMod.webcrypto.Crypto
 import typings.node.cryptoMod.webcrypto.CryptoKey
 import typings.node.cryptoMod.webcrypto.SubtleCrypto
-import typings.node.nodeNumbers.`0`
-import typings.node.nodeNumbers.`1`
+import typings.node.nodeInts.`0`
+import typings.node.nodeInts.`1`
 import typings.node.nodeStrings.`rsa-pss`
 import typings.node.nodeStrings.aes
 import typings.node.nodeStrings.base64

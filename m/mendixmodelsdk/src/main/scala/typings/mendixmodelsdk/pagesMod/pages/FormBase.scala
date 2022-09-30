@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.IFormBase because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormBase")
+- typings.mendixmodelsdk.pagesMod.pages.IFormBase because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.FormBase")
 @js.native
 abstract class FormBase protected () extends Document {
   def this(
@@ -43,18 +43,18 @@ abstract class FormBase protected () extends Document {
 }
 object FormBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormBase")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.FormBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.FormBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.FormBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

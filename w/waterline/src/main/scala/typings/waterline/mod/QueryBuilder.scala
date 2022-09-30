@@ -12,6 +12,7 @@ import typings.bluebird.mod.IterateFunction
 import typings.bluebird.mod.Resolvable
 import typings.bluebird.mod.SpreadOption
 import typings.std.Map
+import typings.std.PromiseLike
 import typings.std.ReturnType
 import typings.waterline.anon.Limit
 import typings.waterline.waterlineStrings.Object
@@ -3020,7 +3021,7 @@ trait QueryBuilder[T] extends StObject {
     onReject: js.Function1[/* error */ Any, Resolvable[U]]
   ): Bluebird[U] = js.native
   def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
   
   def thenReturn(): Bluebird[Unit] = js.native
   def thenReturn[U](value: U): Bluebird[U] = js.native
@@ -3039,6 +3040,8 @@ trait QueryBuilder[T] extends StObject {
   ): Bluebird[TResult1 | TResult2] = js.native
   @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+  @JSName("then")
+  def then_TResult1TResult2_Bluebird[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
     * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -3047,18 +3050,16 @@ trait QueryBuilder[T] extends StObject {
     */
   /* standard es5 */
   @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
+  def then_TResult1TResult2_PromiseLike[TResult1, TResult2](): PromiseLike[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Thenable[TResult1 | TResult2] = js.native
+  def then_TResult1TResult2_PromiseLike[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]]): PromiseLike[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](
-    onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-    onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
-  ): js.Thenable[TResult1 | TResult2] = js.native
+  def then_TResult1TResult2_PromiseLike[TResult1, TResult2](
+    onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+    onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
+  ): PromiseLike[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
-  @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+  def then_TResult1TResult2_PromiseLike[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
   
   /**
     * Convenience method for:

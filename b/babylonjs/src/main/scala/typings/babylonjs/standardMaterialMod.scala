@@ -585,13 +585,13 @@ object standardMaterialMod {
     
     /**
       * If the reflection texture on this material is in linear color space
-      * @hidden
+      * @internal
       */
     var IS_REFLECTION_LINEAR: Boolean = js.native
     
     /**
       * If the refraction texture on this material is in linear color space
-      * @hidden
+      * @internal
       */
     var IS_REFRACTION_LINEAR: Boolean = js.native
     

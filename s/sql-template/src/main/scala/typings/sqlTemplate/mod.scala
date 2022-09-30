@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(parts: TemplateStringsArray, values: Any*): Fragment = ^.asInstanceOf[js.Dynamic].apply(List(parts.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Fragment]
+  inline def apply(parts: TemplateStringsArray, values: Any*): Fragment = ^.asInstanceOf[js.Dynamic].apply(scala.List(parts.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Fragment]
   
   @JSImport("sql-template", JSImport.Namespace)
   @js.native

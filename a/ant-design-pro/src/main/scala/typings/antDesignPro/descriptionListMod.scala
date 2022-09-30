@@ -17,8 +17,7 @@ object descriptionListMod {
   
   @JSImport("ant-design-pro/lib/DescriptionList", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DescriptionListProps, js.Any, js.Any]
+  open class default () extends Component[DescriptionListProps, Any, Any]
   /* static members */
   object default {
     
@@ -32,7 +31,7 @@ object descriptionListMod {
     inline def Description_=(x: Instantiable0[typings.antDesignPro.descriptionMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Description")(x.asInstanceOf[js.Any])
   }
   
-  type DescriptionList = Component[DescriptionListProps, js.Any, js.Any]
+  type DescriptionList = Component[DescriptionListProps, Any, Any]
   
   trait DescriptionListProps extends StObject {
     
@@ -73,7 +72,7 @@ object descriptionListMod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setDescriptionVarargs(value: DescriptionProps*): Self = StObject.set(x, "description", js.Array(value :_*))
+      inline def setDescriptionVarargs(value: DescriptionProps*): Self = StObject.set(x, "description", js.Array(value*))
       
       inline def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       

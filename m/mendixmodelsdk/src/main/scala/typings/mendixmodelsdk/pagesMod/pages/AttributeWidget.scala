@@ -11,7 +11,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidget")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidget")
 @js.native
 abstract class AttributeWidget protected () extends MemberWidget {
   def this(
@@ -22,6 +22,12 @@ abstract class AttributeWidget protected () extends MemberWidget {
     unit: ModelUnit[IAbstractModel],
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
+  
+  /**
+    * In version 9.2.0: introduced
+    */
+  def ariaRequired: Boolean = js.native
+  def ariaRequired_=(newValue: Boolean): Unit = js.native
   
   /**
     * In version 7.13.0: introduced
@@ -86,18 +92,18 @@ abstract class AttributeWidget protected () extends MemberWidget {
 }
 object AttributeWidget {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidget")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidget")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidget.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidget.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidget.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidget.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

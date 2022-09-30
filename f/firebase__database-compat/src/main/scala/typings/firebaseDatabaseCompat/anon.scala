@@ -10,6 +10,7 @@ import typings.firebaseDatabaseCompat.referenceMod.Query
 import typings.firebaseDatabaseCompat.referenceMod.Reference
 import typings.firebaseDatabaseTypes.mod.FirebaseDatabase
 import typings.firebaseUtil.mod.EmulatorMockTokenOptions
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -230,13 +231,13 @@ object anon {
   trait FnCall extends StObject {
     
     def apply[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def apply[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
   }
   
   @js.native
@@ -262,7 +263,7 @@ object anon {
   trait FnCallOnrejected extends StObject {
     
     def apply[TResult](): js.Promise[Reference | TResult] = js.native
-    def apply[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[Reference | TResult] = js.native
+    def apply[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): js.Promise[Reference | TResult] = js.native
   }
   
   trait Increment extends StObject {

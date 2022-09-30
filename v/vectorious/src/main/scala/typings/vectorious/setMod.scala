@@ -13,5 +13,5 @@ object setMod {
   
   inline def default(args: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def set(x: NDArray, args: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(List(x.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def set(x: NDArray, args: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(scala.List(x.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 }

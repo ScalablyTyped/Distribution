@@ -24,13 +24,13 @@ object webgpuPipelineContextMod {
     
     /* protected */ var _leftOverUniformsByName: StringDictionary[String] = js.native
     
-    /** @hidden */
+    /** @internal */
     @JSName("_name")
     var _name_WebGPUPipelineContext: String = js.native
     
     var bindGroupLayouts: js.Array[GPUBindGroupLayout] = js.native
     
-    /** @hidden */
+    /** @internal */
     /**
       * Build the uniform buffer used in the material.
       */

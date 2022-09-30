@@ -45,7 +45,7 @@ trait TableRow
      with ClientObject {
   
   /**
-    * Gets the number of cells in the row. Read-only.
+    * Gets the number of cells in the row.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -81,7 +81,7 @@ trait TableRow
   def delete(): Unit = js.native
   
   /**
-    * Gets the collection of endnotes in the table row. Read-only.
+    * Gets the collection of endnotes in the table row.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -89,7 +89,15 @@ trait TableRow
   val endnotes: NoteItemCollection = js.native
   
   /**
-    * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the collection of field objects in the table row.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val fields: FieldCollection = js.native
+  
+  /**
+    * Gets the font. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -97,7 +105,7 @@ trait TableRow
   val font: Font = js.native
   
   /**
-    * Gets the collection of footnotes in the table row. Read-only.
+    * Gets the collection of footnotes in the table row.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -145,7 +153,7 @@ trait TableRow
   def getCellPadding(cellPaddingLocation: CellPaddingLocation): ClientResult[Double] = js.native
   
   /**
-    * Gets the next row. Throws an error if this row is the last one.
+    * Gets the next row. Throws an `ItemNotFound` error if this row is the last one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -153,7 +161,7 @@ trait TableRow
   def getNext(): TableRow = js.native
   
   /**
-    * Gets the next row. Returns a null object if this row is the last one.
+    * Gets the next row. If this row is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -186,7 +194,7 @@ trait TableRow
   def insertRows(insertLocation: before, rowCount: Double, values: js.Array[js.Array[String]]): TableRowCollection = js.native
   
   /**
-    * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+    * Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table object.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -205,7 +213,15 @@ trait TableRow
   def load(propertyNames: js.Array[String]): TableRow = js.native
   
   /**
-    * Gets parent table. Read-only.
+    * Merges the row into one cell.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  def merge(): TableCell = js.native
+  
+  /**
+    * Gets parent table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -221,7 +237,7 @@ trait TableRow
   var preferredHeight: Double = js.native
   
   /**
-    * Gets the index of the row in its parent table. Read-only.
+    * Gets the index of the row in its parent table.
     *
     * @remarks
     * [Api set: WordApi 1.3]

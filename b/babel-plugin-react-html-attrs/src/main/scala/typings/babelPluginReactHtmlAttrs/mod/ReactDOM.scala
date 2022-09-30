@@ -1,5 +1,6 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import typings.babelPluginReactHtmlAttrs.HTMLBdoElement
 import typings.babelPluginReactHtmlAttrs.HTMLWebViewElement
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
@@ -81,7 +82,7 @@ object ReactDOM {
     b: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     base: DetailedHTMLFactory[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement],
     bdi: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
-    bdo: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
+    bdo: DetailedHTMLFactory[BdoHTMLAttributes[HTMLBdoElement], HTMLBdoElement],
     big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement],
     body: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement],

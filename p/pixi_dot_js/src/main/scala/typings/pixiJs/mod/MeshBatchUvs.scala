@@ -4,16 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Class controls cache for UV mapping from Texture normal space to BaseTexture normal space.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "MeshBatchUvs")
 @js.native
-class MeshBatchUvs protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.MeshBatchUvs {
-  def this(uvBuffer: typings.pixiJs.PIXI.Buffer, uvMatrix: typings.pixiJs.PIXI.TextureMatrix) = this()
+open class MeshBatchUvs protected ()
+  extends typings.pixiMesh.mod.MeshBatchUvs {
+  /**
+    * @param uvBuffer - Buffer with normalized uv's
+    * @param uvMatrix - Material UV matrix
+    */
+  def this(uvBuffer: typings.pixiCore.mod.Buffer, uvMatrix: typings.pixiCore.mod.TextureMatrix) = this()
 }

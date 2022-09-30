@@ -21,9 +21,13 @@ trait IpcRenderer
     * included. Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw
     * an exception.
     *
-    * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
-    * Electron objects is deprecated, and will begin throwing an exception starting
-    * with Electron 9.
+    * > **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
+    * Electron objects will throw an exception.
+    *
+    * Since the main process does not have support for DOM objects such as
+    * `ImageBitmap`, `File`, `DOMMatrix` and so on, such objects cannot be sent over
+    * Electron's IPC to the main process, as the main process would have no way to
+    * decode them. Attempting to send such objects over IPC will result in an error.
     *
     * The main process should listen for `channel` with `ipcMain.handle()`.
     *
@@ -34,19 +38,19 @@ trait IpcRenderer
     *
     * If you do not need a response to the message, consider using `ipcRenderer.send`.
     */
-  def invoke(channel: String, args: js.Any*): js.Promise[js.Any] = js.native
+  def invoke(channel: String, args: Any*): js.Promise[Any] = js.native
   
   /**
     * Listens to `channel`, when a new message arrives `listener` would be called with
     * `listener(event, args...)`.
     */
-  def on(channel: String, listener: js.Function2[/* event */ IpcRendererEvent, /* repeated */ js.Any, Unit]): this.type = js.native
+  def on(channel: String, listener: js.Function2[/* event */ IpcRendererEvent, /* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Adds a one time `listener` function for the event. This `listener` is invoked
     * only the next time a message is sent to `channel`, after which it is removed.
     */
-  def once(channel: String, listener: js.Function2[/* event */ IpcRendererEvent, /* repeated */ js.Any, Unit]): this.type = js.native
+  def once(channel: String, listener: js.Function2[/* event */ IpcRendererEvent, /* repeated */ Any, Unit]): this.type = js.native
   
   /**
     * Send a message to the main process, optionally transferring ownership of zero or
@@ -61,8 +65,8 @@ trait IpcRenderer
     * For more information on using `MessagePort` and `MessageChannel`, see the MDN
     * documentation.
     */
-  def postMessage(channel: String, message: js.Any): Unit = js.native
-  def postMessage(channel: String, message: js.Any, transfer: js.Array[MessagePort]): Unit = js.native
+  def postMessage(channel: String, message: Any): Unit = js.native
+  def postMessage(channel: String, message: Any, transfer: js.Array[MessagePort]): Unit = js.native
   
   /**
     * Send an asynchronous message to the main process via `channel`, along with
@@ -71,9 +75,13 @@ trait IpcRenderer
     * Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an
     * exception.
     *
-    * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
-    * Electron objects is deprecated, and will begin throwing an exception starting
-    * with Electron 9.
+    * > **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
+    * Electron objects will throw an exception.
+    *
+    * Since the main process does not have support for DOM objects such as
+    * `ImageBitmap`, `File`, `DOMMatrix` and so on, such objects cannot be sent over
+    * Electron's IPC to the main process, as the main process would have no way to
+    * decode them. Attempting to send such objects over IPC will result in an error.
     *
     * The main process handles it by listening for `channel` with the `ipcMain`
     * module.
@@ -84,7 +92,7 @@ trait IpcRenderer
     * If you want to receive a single response from the main process, like the result
     * of a method call, consider using `ipcRenderer.invoke`.
     */
-  def send(channel: String, args: js.Any*): Unit = js.native
+  def send(channel: String, args: Any*): Unit = js.native
   
   /**
     * The value sent back by the `ipcMain` handler.
@@ -95,9 +103,13 @@ trait IpcRenderer
     * Sending Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an
     * exception.
     *
-    * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
-    * Electron objects is deprecated, and will begin throwing an exception starting
-    * with Electron 9.
+    * > **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
+    * Electron objects will throw an exception.
+    *
+    * Since the main process does not have support for DOM objects such as
+    * `ImageBitmap`, `File`, `DOMMatrix` and so on, such objects cannot be sent over
+    * Electron's IPC to the main process, as the main process would have no way to
+    * decode them. Attempting to send such objects over IPC will result in an error.
     *
     * The main process handles it by listening for `channel` with `ipcMain` module,
     * and replies by setting `event.returnValue`.
@@ -106,16 +118,16 @@ trait IpcRenderer
     * renderer process until the reply is received, so use this method only as a last
     * resort. It's much better to use the asynchronous version, `invoke()`.
     */
-  def sendSync(channel: String, args: js.Any*): js.Any = js.native
+  def sendSync(channel: String, args: Any*): Any = js.native
   
   /**
     * Sends a message to a window with `webContentsId` via `channel`.
     */
-  def sendTo(webContentsId: Double, channel: String, args: js.Any*): Unit = js.native
+  def sendTo(webContentsId: Double, channel: String, args: Any*): Unit = js.native
   
   /**
     * Like `ipcRenderer.send` but the event will be sent to the `<webview>` element in
     * the host page instead of the main process.
     */
-  def sendToHost(channel: String, args: js.Any*): Unit = js.native
+  def sendToHost(channel: String, args: Any*): Unit = js.native
 }

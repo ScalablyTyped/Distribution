@@ -2,6 +2,7 @@ package typings.vanillajsDatepicker
 
 import typings.std.HTMLElement
 import typings.vanillajsDatepicker.anon.Clear
+import typings.vanillajsDatepicker.vanillajsDatepickerStrings.auto
 import typings.vanillajsDatepicker.vanillajsDatepickerStrings.input
 import typings.vanillajsDatepicker.vanillajsDatepickerStrings.picker
 import org.scalablytyped.runtime.StObject
@@ -354,17 +355,7 @@ object datepickerMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.vanillajsDatepicker.vanillajsDatepickerStrings.`DollarLeftcurlybracketDatepickerOptionsOrientationVerticalRightcurlybracket DollarLeftcurlybracketDatepickerOptionsOrientationHorizontalRightcurlybracket`
-    - typings.vanillajsDatepicker.vanillajsDatepickerStrings.auto
-  */
-  trait DatepickerOptionsOrientation extends StObject
-  object DatepickerOptionsOrientation {
-    
-    inline def `DollarLeftcurlybracketDatepickerOptionsOrientationVerticalRightcurlybracket DollarLeftcurlybracketDatepickerOptionsOrientationHorizontalRightcurlybracket`: typings.vanillajsDatepicker.vanillajsDatepickerStrings.`DollarLeftcurlybracketDatepickerOptionsOrientationVerticalRightcurlybracket DollarLeftcurlybracketDatepickerOptionsOrientationHorizontalRightcurlybracket` = ("${DatepickerOptionsOrientationVertical} ${DatepickerOptionsOrientationHorizontal}").asInstanceOf[typings.vanillajsDatepicker.vanillajsDatepickerStrings.`DollarLeftcurlybracketDatepickerOptionsOrientationVerticalRightcurlybracket DollarLeftcurlybracketDatepickerOptionsOrientationHorizontalRightcurlybracket`]
-    
-    inline def auto: typings.vanillajsDatepicker.vanillajsDatepickerStrings.auto = "auto".asInstanceOf[typings.vanillajsDatepicker.vanillajsDatepickerStrings.auto]
-  }
+  type DatepickerOptionsOrientation = (/* template literal string: ${DatepickerOptionsOrientationVertical} ${DatepickerOptionsOrientationHorizontal} */ String) | auto
   
   /* Rewritten from type alias, can be one of: 
     - typings.vanillajsDatepicker.vanillajsDatepickerStrings.left

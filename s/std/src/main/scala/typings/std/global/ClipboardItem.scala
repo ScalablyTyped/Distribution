@@ -1,6 +1,7 @@
 package typings.std.global
 
 import typings.std.ClipboardItemOptions
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,12 +16,12 @@ open class ClipboardItem protected ()
   /* standard dom */
   def this(items: Record[
         java.lang.String, 
-        java.lang.String | typings.std.Blob | (js.Thenable[java.lang.String | typings.std.Blob])
+        java.lang.String | typings.std.Blob | (PromiseLike[java.lang.String | typings.std.Blob])
       ]) = this()
   def this(
     items: Record[
         java.lang.String, 
-        java.lang.String | typings.std.Blob | (js.Thenable[java.lang.String | typings.std.Blob])
+        java.lang.String | typings.std.Blob | (PromiseLike[java.lang.String | typings.std.Blob])
       ],
     options: ClipboardItemOptions
   ) = this()

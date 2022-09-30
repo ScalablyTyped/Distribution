@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.DesignPropertyValueType")
 @js.native
-class DesignPropertyValueType protected ()
+open class DesignPropertyValueType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DesignPropertyValueType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

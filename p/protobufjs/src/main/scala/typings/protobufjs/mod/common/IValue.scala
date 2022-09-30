@@ -1,6 +1,6 @@
 package typings.protobufjs.mod.common
 
-import typings.protobufjs.protobufjsNumbers.`0`
+import typings.protobufjs.protobufjsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

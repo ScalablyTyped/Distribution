@@ -2,8 +2,6 @@ package typings.cheerio
 
 import typings.cheerio.typesMod.LowercaseLetters
 import typings.cheerio.typesMod.SelectorSpecial
-import typings.cheerio.typesMod.SelectorType
-import typings.cheerio.typesMod._AlphaNumeric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,32 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cheerioStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketnumberRightcurlybracket
-    extends StObject
-       with _AlphaNumeric
-       with typings.cheerio.libTypesMod._AlphaNumeric
-  inline def $LeftcurlybracketnumberRightcurlybracket: $LeftcurlybracketnumberRightcurlybracket = "${number}".asInstanceOf[$LeftcurlybracketnumberRightcurlybracket]
-  
-  @js.native
   sealed trait Colon
     extends StObject
        with SelectorSpecial
        with typings.cheerio.libTypesMod.SelectorSpecial
   inline def Colon: Colon = ":".asInstanceOf[Colon]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket
-    extends StObject
-       with SelectorType
-       with typings.cheerio.libTypesMod.SelectorType
-  inline def DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket: DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket = "${AlphaNumeric}${string}".asInstanceOf[DollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket
-    extends StObject
-       with SelectorType
-       with typings.cheerio.libTypesMod.SelectorType
-  inline def DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket: DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket = "${SelectorSpecial}${AlphaNumeric}${string}".asInstanceOf[DollarLeftcurlybracketSelectorSpecialRightcurlybracketDollarLeftcurlybracketAlphaNumericRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket]
   
   @js.native
   sealed trait Dot

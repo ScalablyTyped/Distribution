@@ -22,6 +22,7 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.MouseEvent
+import typings.std.PromiseLike
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -101,7 +102,7 @@ object basePickerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MBasePicker(): Unit = js.native
     
-    /* protected */ var currentPromise: js.UndefOr[js.Thenable[Any]] = js.native
+    /* protected */ var currentPromise: js.UndefOr[PromiseLike[Any]] = js.native
     
     def dismissSuggestions(): Unit = js.native
     def dismissSuggestions(ev: Any): Unit = js.native
@@ -185,8 +186,8 @@ object basePickerMod {
     
     /* protected */ def updateSuggestionsList(suggestions: js.Array[T]): Unit = js.native
     /* protected */ def updateSuggestionsList(suggestions: js.Array[T], updatedValue: String): Unit = js.native
-    /* protected */ def updateSuggestionsList(suggestions: js.Thenable[js.Array[T]]): Unit = js.native
-    /* protected */ def updateSuggestionsList(suggestions: js.Thenable[js.Array[T]], updatedValue: String): Unit = js.native
+    /* protected */ def updateSuggestionsList(suggestions: PromiseLike[js.Array[T]]): Unit = js.native
+    /* protected */ def updateSuggestionsList(suggestions: PromiseLike[js.Array[T]], updatedValue: String): Unit = js.native
     
     /* protected */ def updateValue(updatedValue: String): Unit = js.native
   }

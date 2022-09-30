@@ -1,40 +1,22 @@
 package typings.pixiJs.mod
 
+import typings.pixiUtils.mod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A helper class for shaders
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Shader")
 @js.native
-class Shader ()
-  extends StObject
-     with typings.pixiJs.PIXI.Shader {
-  def this(program: typings.pixiJs.PIXI.Program) = this()
-  def this(program: Unit, uniforms: js.Any) = this()
-  def this(program: typings.pixiJs.PIXI.Program, uniforms: js.Any) = this()
-  
+open class Shader protected ()
+  extends typings.pixiCore.mod.Shader {
   /**
-    * Program that the shader uses
-    *
-    * @member {PIXI.Program} PIXI.Shader#program
+    * @param program - The program the shader will use.
+    * @param uniforms - Custom uniforms to use to augment the built-in ones.
     */
-  /* CompleteClass */
-  var program: typings.pixiJs.PIXI.Program = js.native
-  
-  /**
-    * Shader uniform values, shortcut for `uniformGroup.uniforms`
-    * @readonly
-    * @member {object}
-    */
-  /* CompleteClass */
-  override val uniforms: js.Any = js.native
+  def this(program: typings.pixiCore.mod.Program) = this()
+  def this(program: typings.pixiCore.mod.Program, uniforms: Dict[Any]) = this()
 }
+/* static members */
 object Shader {
   
   @JSImport("pixi.js", "Shader")
@@ -42,21 +24,18 @@ object Shader {
   val ^ : js.Any = js.native
   
   /**
-    * A short hand function to create a shader based of a vertex and fragment shader
-    *
-    * @param {string} [vertexSrc] - The source of the vertex shader.
-    * @param {string} [fragmentSrc] - The source of the fragment shader.
-    * @param {object} [uniforms] - Custom uniforms to use to augment the built-in ones.
-    *
-    * @returns {PIXI.Shader} an shiny new Pixi shader!
+    * A short hand function to create a shader based of a vertex and fragment shader.
+    * @param vertexSrc - The source of the vertex shader.
+    * @param fragmentSrc - The source of the fragment shader.
+    * @param uniforms - Custom uniforms to use to augment the built-in ones.
+    * @returns A shiny new PixiJS shader!
     */
-  /* static member */
-  inline def from(): typings.pixiJs.PIXI.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiJs.PIXI.Shader]
-  inline def from(vertexSrc: String): typings.pixiJs.PIXI.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Shader]
-  inline def from(vertexSrc: String, fragmentSrc: String): typings.pixiJs.PIXI.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Shader]
-  inline def from(vertexSrc: String, fragmentSrc: String, uniforms: js.Any): typings.pixiJs.PIXI.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Shader]
-  inline def from(vertexSrc: String, fragmentSrc: Unit, uniforms: js.Any): typings.pixiJs.PIXI.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Shader]
-  inline def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiJs.PIXI.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Shader]
-  inline def from(vertexSrc: Unit, fragmentSrc: String, uniforms: js.Any): typings.pixiJs.PIXI.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Shader]
-  inline def from(vertexSrc: Unit, fragmentSrc: Unit, uniforms: js.Any): typings.pixiJs.PIXI.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.Shader]
+  inline def from(): typings.pixiCore.mod.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(vertexSrc: String): typings.pixiCore.mod.Shader = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(vertexSrc: String, fragmentSrc: String): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(vertexSrc: String, fragmentSrc: String, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(vertexSrc: String, fragmentSrc: Unit, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(vertexSrc: Unit, fragmentSrc: String): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(vertexSrc: Unit, fragmentSrc: String, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
+  inline def from(vertexSrc: Unit, fragmentSrc: Unit, uniforms: Dict[Any]): typings.pixiCore.mod.Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(vertexSrc.asInstanceOf[js.Any], fragmentSrc.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.Shader]
 }

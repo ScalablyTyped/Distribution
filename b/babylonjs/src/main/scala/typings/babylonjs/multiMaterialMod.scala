@@ -27,7 +27,7 @@ object multiMaterialMod {
     
     /* private */ var _subMaterials: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _waitingSubMaterialsUniqueIds: js.Array[String] = js.native
     
     def clone(name: String, cloneChildren: Boolean): MultiMaterial = js.native

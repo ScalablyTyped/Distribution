@@ -23,7 +23,7 @@ trait NotificationConstructorOptions extends StObject {
     * The body text of the notification, which will be displayed below the title or
     * subtitle.
     */
-  var body: String
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * A custom title for the close button of an alert. An empty string will cause the
@@ -82,7 +82,15 @@ trait NotificationConstructorOptions extends StObject {
     * A title for the notification, which will be shown at the top of the notification
     * window when it is shown.
     */
-  var title: String
+  var title: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A custom description of the Notification on Windows superseding all properties
+    * above. Provides full customization of design and behavior of the notification.
+    *
+    * @platform win32
+    */
+  var toastXml: js.UndefOr[String] = js.undefined
   
   /**
     * The urgency level of the notification. Can be 'normal', 'critical', or 'low'.
@@ -93,8 +101,8 @@ trait NotificationConstructorOptions extends StObject {
 }
 object NotificationConstructorOptions {
   
-  inline def apply(body: String, title: String): NotificationConstructorOptions = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply(): NotificationConstructorOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationConstructorOptions]
   }
   
@@ -104,9 +112,11 @@ object NotificationConstructorOptions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setCloseButtonText(value: String): Self = StObject.set(x, "closeButtonText", value.asInstanceOf[js.Any])
     
@@ -141,6 +151,12 @@ object NotificationConstructorOptions {
     inline def setTimeoutTypeUndefined: Self = StObject.set(x, "timeoutType", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setToastXml(value: String): Self = StObject.set(x, "toastXml", value.asInstanceOf[js.Any])
+    
+    inline def setToastXmlUndefined: Self = StObject.set(x, "toastXml", js.undefined)
     
     inline def setUrgency(value: normal | critical | low): Self = StObject.set(x, "urgency", value.asInstanceOf[js.Any])
     

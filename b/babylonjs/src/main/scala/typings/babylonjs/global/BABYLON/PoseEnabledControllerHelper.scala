@@ -25,13 +25,13 @@ object PoseEnabledControllerHelper {
     */
   inline def InitiateController(vrGamepad: Any): typings.babylonjs.BABYLON.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Gamepad]
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.PoseEnabledControllerHelper._ControllerFactories")
   @js.native
   def _ControllerFactories: js.Array[GamePadFactory] = js.native
   inline def _ControllerFactories_=(x: js.Array[GamePadFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ControllerFactories")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.PoseEnabledControllerHelper._DefaultControllerFactory")
   @js.native
   def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.BABYLON.Gamepad]] = js.native

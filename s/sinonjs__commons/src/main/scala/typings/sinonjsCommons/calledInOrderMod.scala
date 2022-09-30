@@ -20,8 +20,8 @@ object calledInOrderMod {
     * @param  {SinonProxy[] | SinonProxy} spies An array of proxies, or several proxies as arguments
     * @returns {boolean} true when spies are called in order, false otherwise
     */
-  inline def apply(spies: js.Array[SinonProxy], args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].apply(List(spies.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
-  inline def apply(spies: SinonProxy, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].apply(List(spies.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def apply(spies: js.Array[SinonProxy], args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].apply(scala.List(spies.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def apply(spies: SinonProxy, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].apply(scala.List(spies.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   @JSImport("@sinonjs/commons/types/called-in-order", JSImport.Namespace)
   @js.native

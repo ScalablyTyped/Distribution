@@ -13,10 +13,9 @@ object loginItemMod {
   
   @JSImport("ant-design-pro/lib/Login/LoginItem", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LoginItemProps, js.Any, js.Any]
+  open class default () extends Component[LoginItemProps, Any, Any]
   
-  type LoginItem = Component[LoginItemProps, js.Any, js.Any]
+  type LoginItem = Component[LoginItemProps, Any, Any]
   
   trait LoginItemProps extends StObject {
     
@@ -24,11 +23,11 @@ object loginItemMod {
     
     var countDown: js.UndefOr[Double] = js.undefined
     
-    var customprops: js.UndefOr[js.Any] = js.undefined
+    var customprops: js.UndefOr[Any] = js.undefined
     
     var defaultValue: js.UndefOr[String] = js.undefined
     
-    var form: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ js.Any
+    var form: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ Any
     
     var getCaptchaButtonText: js.UndefOr[String] = js.undefined
     
@@ -36,28 +35,28 @@ object loginItemMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
     
     var onGetCaptcha: js.UndefOr[js.Function1[/* event */ js.UndefOr[MouseEvent], Unit]] = js.undefined
     
-    var onPressEnter: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+    var onPressEnter: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var rules: js.UndefOr[js.Array[Any]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var `type`: String
     
-    def updateActive(activeItem: js.Any): Unit
+    def updateActive(activeItem: Any): Unit
   }
   object LoginItemProps {
     
     inline def apply(
-      form: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ js.Any,
+      form: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ Any,
       `type`: String,
-      updateActive: js.Any => Unit
+      updateActive: Any => Unit
     ): LoginItemProps = {
       val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], updateActive = js.Any.fromFunction1(updateActive))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -74,7 +73,7 @@ object loginItemMod {
       
       inline def setCountDownUndefined: Self = StObject.set(x, "countDown", js.undefined)
       
-      inline def setCustomprops(value: js.Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
+      inline def setCustomprops(value: Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
       
       inline def setCustompropsUndefined: Self = StObject.set(x, "customprops", js.undefined)
       
@@ -83,7 +82,7 @@ object loginItemMod {
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
       inline def setForm(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils */ Any
       ): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setGetCaptchaButtonText(value: String): Self = StObject.set(x, "getCaptchaButtonText", value.asInstanceOf[js.Any])
@@ -98,7 +97,7 @@ object loginItemMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -106,7 +105,7 @@ object loginItemMod {
       
       inline def setOnGetCaptchaUndefined: Self = StObject.set(x, "onGetCaptcha", js.undefined)
       
-      inline def setOnPressEnter(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
+      inline def setOnPressEnter(value: /* e */ Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
       
       inline def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
       
@@ -114,11 +113,11 @@ object loginItemMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Any*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -126,22 +125,22 @@ object loginItemMod {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setUpdateActive(value: js.Any => Unit): Self = StObject.set(x, "updateActive", js.Any.fromFunction1(value))
+      inline def setUpdateActive(value: Any => Unit): Self = StObject.set(x, "updateActive", js.Any.fromFunction1(value))
     }
   }
   
   type LoginItemType = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemMap * / any ]: react.react.FC<ant-design-pro.ant-design-pro/lib/Login/LoginItem.WrappedLoginItemProps>}
-    */ typings.antDesignPro.antDesignProStrings.LoginItemType & TopLevel[js.Any]
+    */ typings.antDesignPro.antDesignProStrings.LoginItemType & TopLevel[Any]
   
-  /* Inlined antd.antd/lib/_util/type.Omit<ant-design-pro.ant-design-pro/lib/Login/LoginItem.LoginItemProps, 'form' | 'type' | 'updateActive'> */
+  /* Inlined std.Omit<ant-design-pro.ant-design-pro/lib/Login/LoginItem.LoginItemProps, 'form' | 'type' | 'updateActive'> */
   trait WrappedLoginItemProps extends StObject {
     
     var buttonText: js.UndefOr[ReactNode] = js.undefined
     
     var countDown: js.UndefOr[Double] = js.undefined
     
-    var customprops: js.UndefOr[js.Any] = js.undefined
+    var customprops: js.UndefOr[Any] = js.undefined
     
     var defaultValue: js.UndefOr[String] = js.undefined
     
@@ -151,15 +150,15 @@ object loginItemMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
     
     var onGetCaptcha: js.UndefOr[js.Function1[/* event */ js.UndefOr[MouseEvent], Unit]] = js.undefined
     
-    var onPressEnter: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+    var onPressEnter: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var rules: js.UndefOr[js.Array[Any]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -180,7 +179,7 @@ object loginItemMod {
       
       inline def setCountDownUndefined: Self = StObject.set(x, "countDown", js.undefined)
       
-      inline def setCustomprops(value: js.Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
+      inline def setCustomprops(value: Any): Self = StObject.set(x, "customprops", value.asInstanceOf[js.Any])
       
       inline def setCustompropsUndefined: Self = StObject.set(x, "customprops", js.undefined)
       
@@ -200,7 +199,7 @@ object loginItemMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -208,7 +207,7 @@ object loginItemMod {
       
       inline def setOnGetCaptchaUndefined: Self = StObject.set(x, "onGetCaptcha", js.undefined)
       
-      inline def setOnPressEnter(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
+      inline def setOnPressEnter(value: /* e */ Any => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
       
       inline def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
       
@@ -216,11 +215,11 @@ object loginItemMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setRules(value: js.Array[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: js.Any*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Any*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

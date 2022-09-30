@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "parse5-html-rewriting-stream"
-version := "7.0.0-3f2735"
+version := "7.0.0-98f76c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
-  "org.scalablytyped" %%% "parse5" % "7.1.1-96513d",
-  "org.scalablytyped" %%% "parse5-sax-parser" % "7.0.0-3a78a8",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "parse5" % "7.1.1-cebd2a",
+  "org.scalablytyped" %%% "parse5-sax-parser" % "7.0.0-326a07",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

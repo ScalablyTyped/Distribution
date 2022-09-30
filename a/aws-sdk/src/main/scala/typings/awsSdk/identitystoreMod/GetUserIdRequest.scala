@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUserIdRequest extends StObject {
   
   /**
-    * A unique identifier for an identity resource that is not the primary identifier.
+    * A unique identifier for a user or group that is not the primary identifier. This value can be an identifier from an external identity provider (IdP) that is associated with the user, the group, or a unique attribute. For example, a unique UserDisplayName.
     */
   var AlternateIdentifier: typings.awsSdk.identitystoreMod.AlternateIdentifier
   

@@ -13,7 +13,7 @@ trait AsyncGenerator[T, TReturn, TNext]
   @JSName("return")
   def return_MAsyncGenerator(value: TReturn): js.Promise[IteratorResult[T, TReturn]] = js.native
   @JSName("return")
-  def return_MAsyncGenerator(value: js.Thenable[TReturn]): js.Promise[IteratorResult[T, TReturn]] = js.native
+  def return_MAsyncGenerator(value: PromiseLike[TReturn]): js.Promise[IteratorResult[T, TReturn]] = js.native
   
   /* standard es2018.asyncgenerator */
   @JSName("throw")

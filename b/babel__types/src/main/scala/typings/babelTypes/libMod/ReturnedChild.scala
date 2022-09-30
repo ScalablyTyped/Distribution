@@ -38,9 +38,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.babelTypes.libMod.JSXSpreadChild
-  - typings.babelTypes.libMod.JSXElement
-  - typings.babelTypes.libMod.JSXFragment
+  - typings.babelTypes.libMod.JSXSpreadChild__
+  - typings.babelTypes.libMod.JSXElement__
+  - typings.babelTypes.libMod.JSXFragment__
   - typings.babelTypes.libMod.Expression
 */
 trait ReturnedChild extends StObject
@@ -105,7 +105,7 @@ object ReturnedChild {
   }
   
   inline def CallExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
     callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.libMod.CallExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
@@ -160,33 +160,33 @@ object ReturnedChild {
     __obj.asInstanceOf[typings.babelTypes.libMod.Import_]
   }
   
-  inline def JSXElement(
+  inline def JSXElement__(
     children: js.Array[
-      JSXText | JSXExpressionContainer | JSXSpreadChild | typings.babelTypes.libMod.JSXElement | JSXFragment
+      JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | typings.babelTypes.libMod.JSXElement__ | JSXFragment__
     ],
-    openingElement: JSXOpeningElement
-  ): typings.babelTypes.libMod.JSXElement = {
+    openingElement: JSXOpeningElement__
+  ): typings.babelTypes.libMod.JSXElement__ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXElement")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXElement]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXElement__]
   }
   
-  inline def JSXFragment(
+  inline def JSXFragment__(
     children: js.Array[
-      JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | typings.babelTypes.libMod.JSXFragment
+      JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | typings.babelTypes.libMod.JSXFragment__
     ],
-    closingFragment: JSXClosingFragment,
-    openingFragment: JSXOpeningFragment
-  ): typings.babelTypes.libMod.JSXFragment = {
+    closingFragment: JSXClosingFragment__,
+    openingFragment: JSXOpeningFragment__
+  ): typings.babelTypes.libMod.JSXFragment__ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingFragment = closingFragment.asInstanceOf[js.Any], openingFragment = openingFragment.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXFragment")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXFragment]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXFragment__]
   }
   
-  inline def JSXSpreadChild(expression: Expression): typings.babelTypes.libMod.JSXSpreadChild = {
+  inline def JSXSpreadChild__(expression: Expression): typings.babelTypes.libMod.JSXSpreadChild__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXSpreadChild")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXSpreadChild]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXSpreadChild__]
   }
   
   inline def LogicalExpression_(
@@ -223,7 +223,7 @@ object ReturnedChild {
   }
   
   inline def NewExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
     callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.libMod.NewExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
@@ -250,7 +250,7 @@ object ReturnedChild {
   }
   
   inline def OptionalCallExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
     callee: Expression,
     optional: Boolean
   ): typings.babelTypes.libMod.OptionalCallExpression_ = {
@@ -320,28 +320,28 @@ object ReturnedChild {
     __obj.asInstanceOf[typings.babelTypes.libMod.Super_]
   }
   
-  inline def TSAsExpression(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSAsExpression = {
+  inline def TSAsExpression__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSAsExpression__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSAsExpression")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSAsExpression]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSAsExpression__]
   }
   
-  inline def TSInstantiationExpression(expression: Expression): typings.babelTypes.libMod.TSInstantiationExpression = {
+  inline def TSInstantiationExpression__(expression: Expression): typings.babelTypes.libMod.TSInstantiationExpression__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSInstantiationExpression")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSInstantiationExpression]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSInstantiationExpression__]
   }
   
-  inline def TSNonNullExpression(expression: Expression): typings.babelTypes.libMod.TSNonNullExpression = {
+  inline def TSNonNullExpression__(expression: Expression): typings.babelTypes.libMod.TSNonNullExpression__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSNonNullExpression")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSNonNullExpression]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSNonNullExpression__]
   }
   
-  inline def TSTypeAssertion(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAssertion = {
+  inline def TSTypeAssertion__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAssertion__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeAssertion")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeAssertion]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeAssertion__]
   }
   
   inline def TaggedTemplateExpression_(quasi: TemplateLiteral_, tag: Expression): typings.babelTypes.libMod.TaggedTemplateExpression_ = {

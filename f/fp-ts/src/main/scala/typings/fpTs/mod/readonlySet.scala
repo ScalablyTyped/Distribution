@@ -50,7 +50,7 @@ object readonlySet {
   
   inline def every[A](predicate: Predicate[A]): Predicate[ReadonlySet[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[Predicate[ReadonlySet[A]]]
   
-  inline def every_AB_A_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[ReadonlySet[A], ReadonlySet[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[ReadonlySet[A], ReadonlySet[B]]]
+  inline def every_AB_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[ReadonlySet[A], ReadonlySet[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[ReadonlySet[A], ReadonlySet[B]]]
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* set */ ReadonlySet[A], ReadonlySet[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ ReadonlySet[A], ReadonlySet[A]]]
   
@@ -62,7 +62,7 @@ object readonlySet {
     js.Function1[/* fa */ ReadonlySet[Any], ReadonlySet[B]]
   ]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ ReadonlySet[A], ReadonlySet[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ ReadonlySet[A], ReadonlySet[B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ ReadonlySet[A], ReadonlySet[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ ReadonlySet[A], ReadonlySet[B]]]
   
   inline def foldMap[A, M](O: Ord_[A], M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ A, M], js.Function1[/* fa */ ReadonlySet[A], M]] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(O.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ A, M], js.Function1[/* fa */ ReadonlySet[A], M]]]
   
@@ -110,7 +110,7 @@ object readonlySet {
     js.Function1[/* set */ ReadonlySet[Any], Separated_[ReadonlySet[B], ReadonlySet[C]]]
   ]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ ReadonlySet[A], Separated_[ReadonlySet[A], ReadonlySet[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ ReadonlySet[A], Separated_[ReadonlySet[A], ReadonlySet[B]]]]
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ ReadonlySet[A], Separated_[ReadonlySet[A], ReadonlySet[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ ReadonlySet[A], Separated_[ReadonlySet[A], ReadonlySet[B]]]]
   
   inline def reduce[A](O: Ord_[A]): js.Function2[
     /* b */ Any, 

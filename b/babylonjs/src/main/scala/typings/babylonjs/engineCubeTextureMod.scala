@@ -19,7 +19,7 @@ object engineCubeTextureMod {
     @js.native
     trait ThinEngine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _cascadeLoadFiles(
         scene: Nullable[Scene],
         onfinish: js.Function1[/* images */ js.Array[js.typedarray.ArrayBuffer], Unit],
@@ -29,7 +29,7 @@ object engineCubeTextureMod {
             ]
       ): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _cascadeLoadImgs(
         scene: Nullable[Scene],
         texture: InternalTexture,
@@ -72,7 +72,7 @@ object engineCubeTextureMod {
         */
       def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
       
-      /** @hidden */
+      /** @internal */
       def _partialLoadFile(
         url: String,
         index: Double,
@@ -83,7 +83,7 @@ object engineCubeTextureMod {
             ]
       ): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _partialLoadImg(
         url: String,
         index: Double,
@@ -117,7 +117,7 @@ object engineCubeTextureMod {
       ): Unit = js.native
       
       /**
-        * @hidden
+        * @internal
         */
       def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean): Unit = js.native
       def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean, maxLevel: Double): Unit = js.native
@@ -294,7 +294,7 @@ object engineCubeTextureMod {
         useSRGBBuffer: Boolean
       ): InternalTexture = js.native
       
-      /** @hidden */
+      /** @internal */
       def createCubeTextureBase(
         rootUrl: String,
         scene: Nullable[Scene],

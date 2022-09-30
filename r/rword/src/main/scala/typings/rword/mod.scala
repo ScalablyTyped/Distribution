@@ -1,6 +1,6 @@
 package typings.rword
 
-import typings.rword.rwordNumbers.`1`
+import typings.rword.rwordInts.`1`
 import typings.rword.rwordStrings.all
 import typings.rword.rwordStrings.big
 import typings.rword.rwordStrings.first

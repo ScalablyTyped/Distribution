@@ -17,6 +17,7 @@ import typings.sentryTypes.transactionMod.SamplingContext
 import typings.sentryTypes.transportMod.BaseTransportOptions
 import typings.sentryTypes.transportMod.Transport
 import typings.std.Partial
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +78,7 @@ object optionsMod {
       * @returns A new event that will be sent | null.
       */
     var beforeSend: js.UndefOr[
-        js.Function2[/* event */ Event, /* hint */ EventHint, (js.Thenable[Event | Null]) | Event | Null]
+        js.Function2[/* event */ Event, /* hint */ EventHint, (PromiseLike[Event | Null]) | Event | Null]
       ] = js.undefined
     
     /**
@@ -276,7 +277,7 @@ object optionsMod {
       
       inline def setBeforeBreadcrumbUndefined: Self = StObject.set(x, "beforeBreadcrumb", js.undefined)
       
-      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (js.Thenable[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
+      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
       
       inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
       
@@ -402,7 +403,7 @@ object optionsMod {
       ] = js.undefined
     
     var beforeSend: js.UndefOr[
-        js.Function2[/* event */ Event, /* hint */ EventHint, (js.Thenable[Event | Null]) | Event | Null]
+        js.Function2[/* event */ Event, /* hint */ EventHint, (PromiseLike[Event | Null]) | Event | Null]
       ] = js.undefined
     
     var debug: js.UndefOr[Boolean] = js.undefined
@@ -494,7 +495,7 @@ object optionsMod {
       
       inline def setBeforeBreadcrumbUndefined: Self = StObject.set(x, "beforeBreadcrumb", js.undefined)
       
-      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (js.Thenable[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
+      inline def setBeforeSend(value: (/* event */ Event, /* hint */ EventHint) => (PromiseLike[Event | Null]) | Event | Null): Self = StObject.set(x, "beforeSend", js.Any.fromFunction2(value))
       
       inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
       

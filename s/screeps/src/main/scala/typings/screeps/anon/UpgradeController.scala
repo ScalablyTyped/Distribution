@@ -1,6 +1,6 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsNumbers.`1.5`
+import typings.screeps.screepsDoubles.`1.5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait UpgradeController extends StObject {
 object UpgradeController {
   
   inline def apply(): UpgradeController = {
-    val __obj = js.Dynamic.literal(upgradeController = 1.5)
+    val __obj = js.Dynamic.literal(upgradeController = 1.5d)
     __obj.asInstanceOf[UpgradeController]
   }
   

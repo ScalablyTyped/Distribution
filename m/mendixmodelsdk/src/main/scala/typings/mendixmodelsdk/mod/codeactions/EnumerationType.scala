@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.EnumerationType")
 @js.native
-class EnumerationType protected ()
+open class EnumerationType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.EnumerationType {
   def this(
     model: AbstractModel,

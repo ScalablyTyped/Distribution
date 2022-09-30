@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.MenuDocumentSource")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.MenuDocumentSource")
 @js.native
-class MenuDocumentSource protected () extends MenuSource {
+open class MenuDocumentSource protected () extends MenuSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -32,7 +32,7 @@ class MenuDocumentSource protected () extends MenuSource {
 }
 object MenuDocumentSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MenuDocumentSource")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MenuDocumentSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,13 +53,13 @@ object MenuDocumentSource {
   inline def createIn(container: MenuWidget): MenuDocumentSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MenuDocumentSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MenuDocumentSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MenuDocumentSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MenuDocumentSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MenuDocumentSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

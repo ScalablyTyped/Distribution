@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Y extends StObject {
   
-  val x: typings.vegaLite.vegaLiteNumbers.`1`
+  val x: typings.vegaLite.vegaLiteInts.`1`
   
-  val y: typings.vegaLite.vegaLiteNumbers.`1`
+  val y: typings.vegaLite.vegaLiteInts.`1`
 }
 object Y {
   
@@ -19,8 +19,8 @@ object Y {
   
   extension [Self <: Y](x: Self) {
     
-    inline def setX(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setY(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

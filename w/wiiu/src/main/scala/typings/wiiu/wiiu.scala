@@ -1,37 +1,37 @@
 package typings.wiiu
 
-import typings.wiiu.wiiuNumbers.`0`
-import typings.wiiu.wiiuNumbers.`0x00000004`
-import typings.wiiu.wiiuNumbers.`0x00000008`
-import typings.wiiu.wiiuNumbers.`0x00000010`
-import typings.wiiu.wiiuNumbers.`0x00000020`
-import typings.wiiu.wiiuNumbers.`0x00000040`
-import typings.wiiu.wiiuNumbers.`0x00000080`
-import typings.wiiu.wiiuNumbers.`0x00000100`
-import typings.wiiu.wiiuNumbers.`0x00000200`
-import typings.wiiu.wiiuNumbers.`0x00000400`
-import typings.wiiu.wiiuNumbers.`0x00000800`
-import typings.wiiu.wiiuNumbers.`0x00001000`
-import typings.wiiu.wiiuNumbers.`0x00002000`
-import typings.wiiu.wiiuNumbers.`0x00004000`
-import typings.wiiu.wiiuNumbers.`0x00008000`
-import typings.wiiu.wiiuNumbers.`0x00020000`
-import typings.wiiu.wiiuNumbers.`0x00040000`
-import typings.wiiu.wiiuNumbers.`0x00800000`
-import typings.wiiu.wiiuNumbers.`0x01000000`
-import typings.wiiu.wiiuNumbers.`0x02000000`
-import typings.wiiu.wiiuNumbers.`0x04000000`
-import typings.wiiu.wiiuNumbers.`0x08000000`
-import typings.wiiu.wiiuNumbers.`0x10000000`
-import typings.wiiu.wiiuNumbers.`0x20000000`
-import typings.wiiu.wiiuNumbers.`0x40000000`
-import typings.wiiu.wiiuNumbers.`1`
-import typings.wiiu.wiiuNumbers.`202`
-import typings.wiiu.wiiuNumbers.`203`
-import typings.wiiu.wiiuNumbers.`204`
-import typings.wiiu.wiiuNumbers.`205`
-import typings.wiiu.wiiuNumbers.`2`
-import typings.wiiu.wiiuNumbers.`3`
+import typings.wiiu.wiiuInts.`0`
+import typings.wiiu.wiiuInts.`0x00000004`
+import typings.wiiu.wiiuInts.`0x00000008`
+import typings.wiiu.wiiuInts.`0x00000010`
+import typings.wiiu.wiiuInts.`0x00000020`
+import typings.wiiu.wiiuInts.`0x00000040`
+import typings.wiiu.wiiuInts.`0x00000080`
+import typings.wiiu.wiiuInts.`0x00000100`
+import typings.wiiu.wiiuInts.`0x00000200`
+import typings.wiiu.wiiuInts.`0x00000400`
+import typings.wiiu.wiiuInts.`0x00000800`
+import typings.wiiu.wiiuInts.`0x00001000`
+import typings.wiiu.wiiuInts.`0x00002000`
+import typings.wiiu.wiiuInts.`0x00004000`
+import typings.wiiu.wiiuInts.`0x00008000`
+import typings.wiiu.wiiuInts.`0x00020000`
+import typings.wiiu.wiiuInts.`0x00040000`
+import typings.wiiu.wiiuInts.`0x00800000`
+import typings.wiiu.wiiuInts.`0x01000000`
+import typings.wiiu.wiiuInts.`0x02000000`
+import typings.wiiu.wiiuInts.`0x04000000`
+import typings.wiiu.wiiuInts.`0x08000000`
+import typings.wiiu.wiiuInts.`0x10000000`
+import typings.wiiu.wiiuInts.`0x20000000`
+import typings.wiiu.wiiuInts.`0x40000000`
+import typings.wiiu.wiiuInts.`1`
+import typings.wiiu.wiiuInts.`202`
+import typings.wiiu.wiiuInts.`203`
+import typings.wiiu.wiiuInts.`204`
+import typings.wiiu.wiiuInts.`205`
+import typings.wiiu.wiiuInts.`2`
+import typings.wiiu.wiiuInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,30 +39,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wiiu {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.wiiu.wiiuNumbers.`0x00000004`
-    - typings.wiiu.wiiuNumbers.`0x00000008`
-    - typings.wiiu.wiiuNumbers.`0x00000010`
-    - typings.wiiu.wiiuNumbers.`0x00000020`
-    - typings.wiiu.wiiuNumbers.`0x00000040`
-    - typings.wiiu.wiiuNumbers.`0x00000080`
-    - typings.wiiu.wiiuNumbers.`0x00000100`
-    - typings.wiiu.wiiuNumbers.`0x00000200`
-    - typings.wiiu.wiiuNumbers.`0x00000400`
-    - typings.wiiu.wiiuNumbers.`0x00000800`
-    - typings.wiiu.wiiuNumbers.`0x00001000`
-    - typings.wiiu.wiiuNumbers.`0x00002000`
-    - typings.wiiu.wiiuNumbers.`0x00004000`
-    - typings.wiiu.wiiuNumbers.`0x00008000`
-    - typings.wiiu.wiiuNumbers.`0x00020000`
-    - typings.wiiu.wiiuNumbers.`0x00040000`
-    - typings.wiiu.wiiuNumbers.`0x00800000`
-    - typings.wiiu.wiiuNumbers.`0x01000000`
-    - typings.wiiu.wiiuNumbers.`0x02000000`
-    - typings.wiiu.wiiuNumbers.`0x04000000`
-    - typings.wiiu.wiiuNumbers.`0x08000000`
-    - typings.wiiu.wiiuNumbers.`0x10000000`
-    - typings.wiiu.wiiuNumbers.`0x20000000`
-    - typings.wiiu.wiiuNumbers.`0x40000000`
+    - typings.wiiu.wiiuInts.`0x00000004`
+    - typings.wiiu.wiiuInts.`0x00000008`
+    - typings.wiiu.wiiuInts.`0x00000010`
+    - typings.wiiu.wiiuInts.`0x00000020`
+    - typings.wiiu.wiiuInts.`0x00000040`
+    - typings.wiiu.wiiuInts.`0x00000080`
+    - typings.wiiu.wiiuInts.`0x00000100`
+    - typings.wiiu.wiiuInts.`0x00000200`
+    - typings.wiiu.wiiuInts.`0x00000400`
+    - typings.wiiu.wiiuInts.`0x00000800`
+    - typings.wiiu.wiiuInts.`0x00001000`
+    - typings.wiiu.wiiuInts.`0x00002000`
+    - typings.wiiu.wiiuInts.`0x00004000`
+    - typings.wiiu.wiiuInts.`0x00008000`
+    - typings.wiiu.wiiuInts.`0x00020000`
+    - typings.wiiu.wiiuInts.`0x00040000`
+    - typings.wiiu.wiiuInts.`0x00800000`
+    - typings.wiiu.wiiuInts.`0x01000000`
+    - typings.wiiu.wiiuInts.`0x02000000`
+    - typings.wiiu.wiiuInts.`0x04000000`
+    - typings.wiiu.wiiuInts.`0x08000000`
+    - typings.wiiu.wiiuInts.`0x10000000`
+    - typings.wiiu.wiiuInts.`0x20000000`
+    - typings.wiiu.wiiuInts.`0x40000000`
   */
   trait Button extends StObject
   object Button {
@@ -146,10 +146,10 @@ object wiiu {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.wiiu.wiiuNumbers.`202`
-    - typings.wiiu.wiiuNumbers.`203`
-    - typings.wiiu.wiiuNumbers.`204`
-    - typings.wiiu.wiiuNumbers.`205`
+    - typings.wiiu.wiiuInts.`202`
+    - typings.wiiu.wiiuInts.`203`
+    - typings.wiiu.wiiuInts.`204`
+    - typings.wiiu.wiiuInts.`205`
   */
   trait ImageViewErrorCode extends StObject
   object ImageViewErrorCode {
@@ -164,10 +164,10 @@ object wiiu {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.wiiu.wiiuNumbers.`0`
-    - typings.wiiu.wiiuNumbers.`1`
-    - typings.wiiu.wiiuNumbers.`2`
-    - typings.wiiu.wiiuNumbers.`3`
+    - typings.wiiu.wiiuInts.`0`
+    - typings.wiiu.wiiuInts.`1`
+    - typings.wiiu.wiiuInts.`2`
+    - typings.wiiu.wiiuInts.`3`
   */
   trait TPValidity extends StObject
   object TPValidity {

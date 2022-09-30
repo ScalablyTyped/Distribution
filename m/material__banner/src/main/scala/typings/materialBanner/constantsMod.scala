@@ -1,8 +1,8 @@
 package typings.materialBanner
 
-import typings.materialBanner.materialBannerNumbers.`0`
-import typings.materialBanner.materialBannerNumbers.`1`
-import typings.materialBanner.materialBannerNumbers.`2`
+import typings.materialBanner.materialBannerInts.`0`
+import typings.materialBanner.materialBannerInts.`1`
+import typings.materialBanner.materialBannerInts.`2`
 import typings.materialDom.focusTrapMod.FocusOptions
 import typings.materialDom.focusTrapMod.FocusTrap
 import typings.std.HTMLElement
@@ -140,9 +140,9 @@ object constantsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.materialBanner.materialBannerNumbers.`0`
-    - typings.materialBanner.materialBannerNumbers.`1`
-    - typings.materialBanner.materialBannerNumbers.`2`
+    - typings.materialBanner.materialBannerInts.`0`
+    - typings.materialBanner.materialBannerInts.`1`
+    - typings.materialBanner.materialBannerInts.`2`
   */
   trait Action extends StObject
   object Action {

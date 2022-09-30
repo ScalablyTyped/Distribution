@@ -22,12 +22,6 @@ object v11Mod {
     @JSImport("otplib/v11", "authenticator.Authenticator")
     @js.native
     open class Authenticator ()
-      extends typings.otplibPresetV11.mod.authenticator.Authenticator
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("otplib/v11", "authenticator.Authenticator")
-    @js.native
-    open class AuthenticatorCls ()
       extends StObject
          with typings.otplibPresetV11.Authenticator {
       
@@ -88,12 +82,6 @@ object v11Mod {
     @JSImport("otplib/v11", "authenticator.HOTP")
     @js.native
     open class HOTP ()
-      extends typings.otplibPresetV11.mod.authenticator.HOTP
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("otplib/v11", "authenticator.HOTP")
-    @js.native
-    open class HOTPCls ()
       extends StObject
          with typings.otplibPresetV11.HOTP {
       
@@ -126,12 +114,6 @@ object v11Mod {
     @JSImport("otplib/v11", "authenticator.TOTP")
     @js.native
     open class TOTP ()
-      extends typings.otplibPresetV11.mod.authenticator.TOTP
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("otplib/v11", "authenticator.TOTP")
-    @js.native
-    open class TOTPCls ()
       extends StObject
          with typings.otplibPresetV11.TOTP {
       
@@ -204,12 +186,6 @@ object v11Mod {
     @JSImport("otplib/v11", "hotp.HOTP")
     @js.native
     open class HOTP ()
-      extends typings.otplibPresetV11.mod.hotp.HOTP
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("otplib/v11", "hotp.HOTP")
-    @js.native
-    open class HOTPCls ()
       extends StObject
          with typings.otplibPresetV11.HOTP {
       
@@ -254,12 +230,6 @@ object v11Mod {
     @JSImport("otplib/v11", "totp.HOTP")
     @js.native
     open class HOTP ()
-      extends typings.otplibPresetV11.mod.totp.HOTP
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("otplib/v11", "totp.HOTP")
-    @js.native
-    open class HOTPCls ()
       extends StObject
          with typings.otplibPresetV11.HOTP {
       
@@ -292,12 +262,6 @@ object v11Mod {
     @JSImport("otplib/v11", "totp.TOTP")
     @js.native
     open class TOTP ()
-      extends typings.otplibPresetV11.mod.totp.TOTP
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("otplib/v11", "totp.TOTP")
-    @js.native
-    open class TOTPCls ()
       extends StObject
          with typings.otplibPresetV11.TOTP {
       

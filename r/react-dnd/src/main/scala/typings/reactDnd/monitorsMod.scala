@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object monitorsMod {
   
-  trait DragLayerMonitor extends StObject {
+  trait DragLayerMonitor[DragObject] extends StObject {
     
     /**
       * Returns the last recorded { x, y } client offset of the pointer while a drag operation is in progress.
@@ -41,10 +41,10 @@ object monitorsMod {
       * Every drag source must specify it by returning an object from its beginDrag() method.
       * Returns null if no item is being dragged.
       */
-    def getItem(): js.Any
+    def getItem[T](): T
     
     /**
-      * Returns a string or an ES6 symbol identifying the type of the current dragged item.
+      * Returns a string or a symbol identifying the type of the current dragged item.
       * Returns null if no item is being dragged.
       */
     def getItemType(): Identifier | Null
@@ -63,21 +63,21 @@ object monitorsMod {
   }
   object DragLayerMonitor {
     
-    inline def apply(
+    inline def apply[DragObject](
       getClientOffset: () => XYCoord | Null,
       getDifferenceFromInitialOffset: () => XYCoord | Null,
       getInitialClientOffset: () => XYCoord | Null,
       getInitialSourceClientOffset: () => XYCoord | Null,
-      getItem: () => js.Any,
+      getItem: () => Any,
       getItemType: () => Identifier | Null,
       getSourceClientOffset: () => XYCoord | Null,
       isDragging: () => Boolean
-    ): DragLayerMonitor = {
+    ): DragLayerMonitor[DragObject] = {
       val __obj = js.Dynamic.literal(getClientOffset = js.Any.fromFunction0(getClientOffset), getDifferenceFromInitialOffset = js.Any.fromFunction0(getDifferenceFromInitialOffset), getInitialClientOffset = js.Any.fromFunction0(getInitialClientOffset), getInitialSourceClientOffset = js.Any.fromFunction0(getInitialSourceClientOffset), getItem = js.Any.fromFunction0(getItem), getItemType = js.Any.fromFunction0(getItemType), getSourceClientOffset = js.Any.fromFunction0(getSourceClientOffset), isDragging = js.Any.fromFunction0(isDragging))
-      __obj.asInstanceOf[DragLayerMonitor]
+      __obj.asInstanceOf[DragLayerMonitor[DragObject]]
     }
     
-    extension [Self <: DragLayerMonitor](x: Self) {
+    extension [Self <: DragLayerMonitor[?], DragObject](x: Self & DragLayerMonitor[DragObject]) {
       
       inline def setGetClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getClientOffset", js.Any.fromFunction0(value))
       
@@ -87,7 +87,7 @@ object monitorsMod {
       
       inline def setGetInitialSourceClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getInitialSourceClientOffset", js.Any.fromFunction0(value))
       
-      inline def setGetItem(value: () => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
+      inline def setGetItem(value: () => Any): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
       
       inline def setGetItemType(value: () => Identifier | Null): Self = StObject.set(x, "getItemType", js.Any.fromFunction0(value))
       
@@ -98,7 +98,7 @@ object monitorsMod {
   }
   
   @js.native
-  trait DragSourceMonitor
+  trait DragSourceMonitor[DragObject, DropResult]
     extends StObject
        with HandlerManager
        with MonitorEventEmitter {
@@ -130,7 +130,7 @@ object monitorsMod {
       * drop() methods. When a chain of drop() is dispatched for the nested targets, bottom up, any parent that explicitly returns its own result from drop()
       * overrides the child drop result previously set by the child. Returns null if called outside endDrag().
       */
-    def getDropResult(): js.Any = js.native
+    def getDropResult[T](): T | Null = js.native
     
     /**
       * Returns the { x, y } client offset of the pointer at the time when the current drag operation has started. Returns null if no item is being dragged.
@@ -147,10 +147,10 @@ object monitorsMod {
       * Returns a plain object representing the currently dragged item. Every drag source must specify it by returning an object from its beginDrag() method.
       * Returns null if no item is being dragged.
       */
-    def getItem(): js.Any = js.native
+    def getItem[T](): T = js.native
     
     /**
-      * Returns a string or an ES6 symbol identifying the type of the current dragged item. Returns null if no item is being dragged.
+      * Returns a string or a symbol identifying the type of the current dragged item. Returns null if no item is being dragged.
       */
     def getItemType(): Identifier | Null = js.native
     
@@ -172,7 +172,7 @@ object monitorsMod {
   }
   
   @js.native
-  trait DropTargetMonitor
+  trait DropTargetMonitor[DragObject, DropResult]
     extends StObject
        with HandlerManager
        with MonitorEventEmitter {
@@ -205,7 +205,7 @@ object monitorsMod {
       * object from their drop() methods. When a chain of drop() is dispatched for the nested targets, bottom up, any parent that explicitly
       * returns its own result from drop() overrides the drop result previously set by the child. Returns null if called outside drop().
       */
-    def getDropResult(): js.Any = js.native
+    def getDropResult[T](): T | Null = js.native
     
     /**
       * Returns the { x, y } client offset of the pointer at the time when the current drag operation has started. Returns null if no item
@@ -223,10 +223,10 @@ object monitorsMod {
       * Returns a plain object representing the currently dragged item. Every drag source must specify it by returning an object from
       * its beginDrag() method. Returns null if no item is being dragged.
       */
-    def getItem(): js.Any = js.native
+    def getItem[T](): T = js.native
     
     /**
-      * Returns a string or an ES6 symbol identifying the type of the current dragged item. Returns null if no item is being dragged.
+      * Returns a string or a symbol identifying the type of the current dragged item. Returns null if no item is being dragged.
       */
     def getItemType(): Identifier | Null = js.native
     

@@ -278,7 +278,7 @@ object dialogMod {
   
   inline def Dialog(props: ForwardRefProps[HTMLDivElement, DialogDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def Dialog_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, DialogCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Dialog_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, DialogCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Dialog_a[R /* <: HTMLElement */](props: ForwardRefProps[R, DialogIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Dialog")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

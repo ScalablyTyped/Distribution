@@ -1,13 +1,12 @@
 organization := "org.scalablytyped"
 name := "meow"
-version := "5.x-dt-20200515Z-19f557"
-scalaVersion := "3.0.1"
+version := "10.1.4-cb9040"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "minimist" % "1.2-dt-20201106Z-23b986",
-  "org.scalablytyped" %%% "minimist-options" % "4.1.0-a2f3d3",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "type-fest" % "3.0.0-e72bbe")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

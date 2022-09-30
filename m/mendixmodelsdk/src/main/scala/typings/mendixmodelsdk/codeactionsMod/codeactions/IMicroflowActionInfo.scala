@@ -24,9 +24,17 @@ trait IMicroflowActionInfo
   
   val containerAsMicroflow: IMicroflow = js.native
   
+  /**
+    * In version 9.10.0: deleted
+    */
   val icon: IImage | Null = js.native
   
   val iconQualifiedName: String | Null = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  val imageData: String | Null = js.native
   
   @JSName("model")
   val model_IMicroflowActionInfo: IModel = js.native

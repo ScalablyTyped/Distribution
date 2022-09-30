@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.FormattingInfo")
 @js.native
-class FormattingInfo protected ()
+open class FormattingInfo protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.FormattingInfo {
   def this(
     model: AbstractModel,

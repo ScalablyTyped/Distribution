@@ -107,7 +107,7 @@ trait RecursivePartialPartialLiAccessibilityElementsHidden extends StObject {
   
   var delayPressOut: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | Null]]] = js.undefined
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var disabledStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
@@ -177,7 +177,7 @@ trait RecursivePartialPartialLiAccessibilityElementsHidden extends StObject {
   
   var topDivider: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | Null]]] = js.undefined
+  var touchSoundDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var underlayColor: js.UndefOr[RecursivePartial[js.UndefOr[ColorValue]]] = js.undefined
 }
@@ -295,7 +295,7 @@ object RecursivePartialPartialLiAccessibilityElementsHidden {
     
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
-    inline def setDisabled(value: RecursivePartial[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
@@ -411,7 +411,7 @@ object RecursivePartialPartialLiAccessibilityElementsHidden {
     
     inline def setTopDividerUndefined: Self = StObject.set(x, "topDivider", js.undefined)
     
-    inline def setTouchSoundDisabled(value: RecursivePartial[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+    inline def setTouchSoundDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

@@ -1,8 +1,14 @@
 package typings.mobx
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.mobx.anon.DebugObjectName
+import typings.mobx.anon.NewValue
+import typings.mobx.anon.Object
+import typings.mobx.anon.OldValue
+import typings.mobx.atomMod.IAtom
 import typings.mobx.interceptUtilsMod.IInterceptable
 import typings.mobx.interceptUtilsMod.IInterceptor
+import typings.mobx.internalMod.ObservableValue
 import typings.mobx.listenUtilsMod.IListenable
 import typings.mobx.mobxStrings.add
 import typings.mobx.mobxStrings.delete
@@ -17,128 +23,102 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object observablemapMod {
   
-  @JSImport("mobx/lib/types/observablemap", JSImport.Namespace)
+  @JSImport("mobx/dist/types/observablemap", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/types/observablemap", "ObservableMap")
+  @JSImport("mobx/dist/types/observablemap", "ADD")
   @js.native
-  class ObservableMap[K, V] ()
+  val ADD: /* "add" */ String = js.native
+  
+  @JSImport("mobx/dist/types/observablemap", "DELETE")
+  @js.native
+  val DELETE: /* "delete" */ String = js.native
+  
+  @JSImport("mobx/dist/types/observablemap", "ObservableMap")
+  @js.native
+  open class ObservableMap[K, V] ()
     extends StObject
        with Map[K, V]
        with IInterceptable[IMapWillChange[K, V]]
        with IListenable {
     def this(initialData: IObservableMapInitialValues[K, V]) = this()
-    def this(initialData: Unit, enhancer: IEnhancer[V]) = this()
-    def this(initialData: IObservableMapInitialValues[K, V], enhancer: IEnhancer[V]) = this()
-    def this(initialData: Unit, enhancer: Unit, name: String) = this()
-    def this(initialData: Unit, enhancer: IEnhancer[V], name: String) = this()
-    def this(initialData: IObservableMapInitialValues[K, V], enhancer: Unit, name: String) = this()
-    def this(initialData: IObservableMapInitialValues[K, V], enhancer: IEnhancer[V], name: String) = this()
+    def this(initialData: Unit, enhancer_ : IEnhancer[V]) = this()
+    def this(initialData: IObservableMapInitialValues[K, V], enhancer_ : IEnhancer[V]) = this()
+    def this(initialData: Unit, enhancer_ : Unit, name_ : String) = this()
+    def this(initialData: Unit, enhancer_ : IEnhancer[V], name_ : String) = this()
+    def this(initialData: IObservableMapInitialValues[K, V], enhancer_ : Unit, name_ : String) = this()
+    def this(initialData: IObservableMapInitialValues[K, V], enhancer_ : IEnhancer[V], name_ : String) = this()
     
-    /* private */ var _addValue: js.Any = js.native
+    /* private */ var addValue_ : Any = js.native
     
-    /* private */ var _data: js.Any = js.native
+    var data_ : Map[K, ObservableValue[V]] = js.native
     
-    /* private */ var _has: js.Any = js.native
+    /* private */ var dehanceValue_ : Any = js.native
     
-    /* private */ var _hasMap: js.Any = js.native
+    var dehancer: Any = js.native
     
-    /* private */ var _keysAtom: js.Any = js.native
+    def enhancer_(newValue: V, oldValue: V, name: String): V = js.native
+    def enhancer_(newValue: V, oldValue: Unit, name: String): V = js.native
+    @JSName("enhancer_")
+    var enhancer__Original: IEnhancer[V] = js.native
     
-    /* private */ var _updateHasMapEntry: js.Any = js.native
+    var get: Any = js.native
     
-    /* private */ var _updateValue: js.Any = js.native
+    var hasMap_ : Map[K, ObservableValue[Boolean]] = js.native
     
-    /* private */ var dehanceValue: js.Any = js.native
+    /* private */ var has_ : Any = js.native
     
-    var dehancer: js.Any = js.native
-    
-    def enhancer(newValue: V, oldValue: V, name: String): V = js.native
-    def enhancer(newValue: V, oldValue: Unit, name: String): V = js.native
-    @JSName("enhancer")
-    var enhancer_Original: IEnhancer[V] = js.native
-    
-    /* CompleteClass */
-    override def intercept(handler: IInterceptor[IMapWillChange[K, V]]): Lambda = js.native
+    def intercept_(handler: IInterceptor[IMapWillChange[K, V]]): Lambda = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_ObservableMap: js.Function0[IterableIterator[IMapEntry[K, V]]] = js.native
     
-    def merge(other: js.Any): ObservableMap[K, V] = js.native
-    def merge(other: IKeyValueMap[V]): ObservableMap[K, V] = js.native
-    /** Merge another object into this object, returns this. */
-    def merge(other: ObservableMap[K, V]): ObservableMap[K, V] = js.native
+    var keysAtom_ : IAtom = js.native
     
-    var name: String = js.native
+    /** Merge another object into this object, returns this. */
+    def merge(): ObservableMap[K, V] = js.native
+    def merge(other: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = js.native
+    
+    var name_ : String = js.native
     
     /**
       * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
       * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
       * for callback details
       */
-    def observe(listener: js.Function1[/* changes */ IMapDidChange[K, V], Unit]): Lambda = js.native
-    def observe(listener: js.Function1[/* changes */ IMapDidChange[K, V], Unit], fireImmediately: Boolean): Lambda = js.native
+    def observe_(listener: js.Function1[/* changes */ IMapDidChange[K, V], Unit]): Lambda = js.native
+    def observe_(listener: js.Function1[/* changes */ IMapDidChange[K, V], Unit], fireImmediately: Boolean): Lambda = js.native
     
-    def replace(values: js.Any): ObservableMap[K, V] = js.native
-    def replace(values: IKeyValueMap[V]): ObservableMap[K, V] = js.native
-    def replace(values: ObservableMap[K, V]): ObservableMap[K, V] = js.native
+    def replace(values: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = js.native
     
     @JSName("size")
     def size_MObservableMap: Double = js.native
     
-    /**
-      * Returns a shallow non observable object clone of this map.
-      * Note that the values migth still be observable. For a deep clone use mobx.toJS.
-      */
-    def toJS(): Map[K, V] = js.native
-    
-    def toJSON(): IKeyValueMap[V] = js.native
-    
-    /**
-      * Returns a plain object that represents this map.
-      * Note that all the keys being stringified.
-      * If there are duplicating keys after converting them to strings, behaviour is undetermined.
-      */
-    def toPOJO(): IKeyValueMap[V] = js.native
+    def toJSON(): js.Array[js.Tuple2[K, V]] = js.native
     
     @JSName(js.Symbol.toStringTag)
-    var toStringTag_ObservableMap: typings.mobx.mobxStrings.Map = js.native
+    var toStringTag_ObservableMap: js.Function0[String] = js.native
+    
+    /* private */ var updateValue_ : Any = js.native
   }
   
-  inline def isObservableMap(thing: js.Any): /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableMap")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ Boolean]
+  @JSImport("mobx/dist/types/observablemap", "isObservableMap")
+  @js.native
+  def isObservableMap: js.Function1[
+    /* thing */ Any, 
+    /* is mobx.mobx/dist/types/observablemap.ObservableMap<any, any> */ Boolean
+  ] = js.native
+  inline def isObservableMap_=(
+    x: js.Function1[
+      /* thing */ Any, 
+      /* is mobx.mobx/dist/types/observablemap.ObservableMap<any, any> */ Boolean
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isObservableMap")(x.asInstanceOf[js.Any])
   
   type IKeyValueMap[V] = StringDictionary[V]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.anon.Name[K, V]
-    - typings.mobx.anon.NewValue[K, V]
-    - typings.mobx.anon.Object[K, V]
-  */
-  trait IMapDidChange[K, V] extends StObject
-  object IMapDidChange {
-    
-    inline def Name[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], oldValue: V): typings.mobx.anon.Name[K, V] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("update")
-      __obj.asInstanceOf[typings.mobx.anon.Name[K, V]]
-    }
-    
-    inline def NewValue[K, V](name: K, newValue: V, `object`: ObservableMap[K, V]): typings.mobx.anon.NewValue[K, V] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("add")
-      __obj.asInstanceOf[typings.mobx.anon.NewValue[K, V]]
-    }
-    
-    inline def Object[K, V](name: K, `object`: ObservableMap[K, V], oldValue: V): typings.mobx.anon.Object[K, V] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("delete")
-      __obj.asInstanceOf[typings.mobx.anon.Object[K, V]]
-    }
-  }
+  type IMapDidChange[K, V] = ((NewValue[K, V]) & DebugObjectName) | ((Object[K, V]) & DebugObjectName) | ((OldValue[K, V]) & DebugObjectName)
   
   type IMapEntries[K, V] = js.Array[IMapEntry[K, V]]
   
@@ -177,5 +157,9 @@ object observablemapMod {
     }
   }
   
-  type IObservableMapInitialValues[K, V] = (IMapEntries[K, V]) | IKeyValueMap[V] | (Map[K, V])
+  type IObservableMapInitialValues[K, V] = (IMapEntries[K, V]) | (IReadonlyMapEntries[K, V]) | IKeyValueMap[V] | (Map[K, V])
+  
+  type IReadonlyMapEntries[K, V] = js.Array[IReadonlyMapEntry[K, V]]
+  
+  type IReadonlyMapEntry[K, V] = js.Tuple2[K, V]
 }

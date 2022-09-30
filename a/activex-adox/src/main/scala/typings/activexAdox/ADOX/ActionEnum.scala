@@ -1,18 +1,18 @@
 package typings.activexAdox.ADOX
 
-import typings.activexAdox.activexAdoxNumbers.`1`
-import typings.activexAdox.activexAdoxNumbers.`2`
-import typings.activexAdox.activexAdoxNumbers.`3`
-import typings.activexAdox.activexAdoxNumbers.`4`
+import typings.activexAdox.activexAdoxInts.`1`
+import typings.activexAdox.activexAdoxInts.`2`
+import typings.activexAdox.activexAdoxInts.`3`
+import typings.activexAdox.activexAdoxInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdox.activexAdoxNumbers.`3`
-  - typings.activexAdox.activexAdoxNumbers.`1`
-  - typings.activexAdox.activexAdoxNumbers.`4`
-  - typings.activexAdox.activexAdoxNumbers.`2`
+  - typings.activexAdox.activexAdoxInts.`3`
+  - typings.activexAdox.activexAdoxInts.`1`
+  - typings.activexAdox.activexAdoxInts.`4`
+  - typings.activexAdox.activexAdoxInts.`2`
 */
 trait ActionEnum extends StObject
 object ActionEnum {

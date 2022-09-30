@@ -12,13 +12,13 @@ object absolutePositionedKeyboardAwareViewMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/absolute-positioned-keyboard-aware-view", JSImport.Default)
   @js.native
-  class default protected () extends AbsolutePositionedKeyboardAwareView {
+  open class default protected () extends AbsolutePositionedKeyboardAwareView {
     def this(props: Props) = this()
   }
   
   @js.native
   trait AbsolutePositionedKeyboardAwareView
-    extends PureComponent[Props, js.Object, js.Any] {
+    extends PureComponent[Props, js.Object, Any] {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAbsolutePositionedKeyboardAwareView(): Unit = js.native

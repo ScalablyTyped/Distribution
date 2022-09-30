@@ -50,9 +50,9 @@ trait Moddle extends StObject {
     * @return model instance
     */
   @JSName("create")
-  def create_TK_String_Any[T, K /* <: /* keyof T */ String */](descriptor: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def create_TK_Any[T, K /* <: /* keyof T */ String */](descriptor: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   @JSName("create")
-  def create_TK_String_Any[T, K /* <: /* keyof T */ String */](descriptor: K, attrs: Any): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
+  def create_TK_Any[T, K /* <: /* keyof T */ String */](descriptor: K, attrs: Any): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   
   /**
     * Returns the descriptor for an element

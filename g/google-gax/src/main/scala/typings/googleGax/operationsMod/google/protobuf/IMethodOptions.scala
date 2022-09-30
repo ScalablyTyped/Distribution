@@ -14,6 +14,10 @@ trait IMethodOptions extends StObject {
   @JSName(".google.api.http")
   var DotgoogleDotapiDothttp: js.UndefOr[IHttpRule | Null] = js.undefined
   
+  /** MethodOptions .google.api.methodSignature */
+  @JSName(".google.api.methodSignature")
+  var DotgoogleDotapiDotmethodSignature: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
   /** MethodOptions .google.longrunning.operationInfo */
   @JSName(".google.longrunning.operationInfo")
   var DotgoogleDotlongrunningDotoperationInfo: js.UndefOr[IOperationInfo | Null] = js.undefined
@@ -48,6 +52,14 @@ object IMethodOptions {
     
     inline def setDotgoogleDotapiDothttpUndefined: Self = StObject.set(x, ".google.api.http", js.undefined)
     
+    inline def setDotgoogleDotapiDotmethodSignature(value: js.Array[String]): Self = StObject.set(x, ".google.api.methodSignature", value.asInstanceOf[js.Any])
+    
+    inline def setDotgoogleDotapiDotmethodSignatureNull: Self = StObject.set(x, ".google.api.methodSignature", null)
+    
+    inline def setDotgoogleDotapiDotmethodSignatureUndefined: Self = StObject.set(x, ".google.api.methodSignature", js.undefined)
+    
+    inline def setDotgoogleDotapiDotmethodSignatureVarargs(value: String*): Self = StObject.set(x, ".google.api.methodSignature", js.Array(value*))
+    
     inline def setDotgoogleDotlongrunningDotoperationInfo(value: IOperationInfo): Self = StObject.set(x, ".google.longrunning.operationInfo", value.asInstanceOf[js.Any])
     
     inline def setDotgoogleDotlongrunningDotoperationInfoNull: Self = StObject.set(x, ".google.longrunning.operationInfo", null)
@@ -66,6 +78,6 @@ object IMethodOptions {
     
     inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value*))
   }
 }

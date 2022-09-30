@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isRefMod {
   
-  @JSImport("react-dnd/lib/utils/isRef", JSImport.Namespace)
+  @JSImport("react-dnd/dist/internals/isRef", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isRef(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRef(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Ref[T] extends StObject {
     

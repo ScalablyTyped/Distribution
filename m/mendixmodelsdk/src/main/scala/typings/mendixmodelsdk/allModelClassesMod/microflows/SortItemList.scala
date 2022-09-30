@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SortItemList")
 @js.native
-class SortItemList protected ()
+open class SortItemList protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.SortItemList {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class SortItemList protected ()
 }
 object SortItemList {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SortItemList")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object SortItemList {
   inline def createInSortUnderSortItemList(container: typings.mendixmodelsdk.microflowsMod.microflows.Sort): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SortItemList]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SortItemList.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SortItemList.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

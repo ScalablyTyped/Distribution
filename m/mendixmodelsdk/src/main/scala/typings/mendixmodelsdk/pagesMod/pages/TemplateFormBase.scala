@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.pagesMod.pages.IFormBase because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.ITemplateFormBase because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined displayName, documentationUrl */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateFormBase")
+- typings.mendixmodelsdk.pagesMod.pages.ITemplateFormBase because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined displayName, documentationUrl, templateCategory, templateCategoryWeight */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateFormBase")
 @js.native
 abstract class TemplateFormBase protected () extends FormBase {
   def this(
@@ -59,21 +59,44 @@ abstract class TemplateFormBase protected () extends FormBase {
   
   def imageData: String | Null = js.native
   def imageData_=(newValue: String | Null): Unit = js.native
+  
+  /**
+    * In version 9.0.2: introduced
+    */
+  def templateCategory: String = js.native
+  
+  /**
+    * In version 9.0.2: introduced
+    */
+  def templateCategoryWeight: Double = js.native
+  def templateCategoryWeight_=(newValue: Double): Unit = js.native
+  /**
+    * In version 9.0.2: introduced
+    */
+  @JSName("templateCategoryWeight")
+  val templateCategoryWeight_FTemplateFormBase: Double = js.native
+  
+  def templateCategory_=(newValue: String): Unit = js.native
+  /**
+    * In version 9.0.2: introduced
+    */
+  @JSName("templateCategory")
+  val templateCategory_FTemplateFormBase: String = js.native
 }
 object TemplateFormBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateFormBase")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateFormBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateFormBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateFormBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateFormBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateFormBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

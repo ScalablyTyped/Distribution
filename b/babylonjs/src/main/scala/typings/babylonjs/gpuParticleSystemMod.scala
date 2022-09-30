@@ -23,7 +23,7 @@ object gpuParticleSystemMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.animatableInterfaceMod.IAnimatable because var conflicts: animations. Inlined 
-  - typings.babylonjs.iparticlesystemMod.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @JSImport("babylonjs/Particles/gpuParticleSystem", "GPUParticleSystem")
+  - typings.babylonjs.iparticlesystemMod.IParticleSystem because var conflicts: _wasDispatched, animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed, useLogarithmicDepth. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @JSImport("babylonjs/Particles/gpuParticleSystem", "GPUParticleSystem")
   @js.native
   open class GPUParticleSystem protected ()
     extends BaseParticleSystem
@@ -88,7 +88,7 @@ object gpuParticleSystemMod {
     
     /* private */ var _addFactorGradient: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _angularSpeedGradientsTexture: RawTexture = js.native
     
     /* private */ var _attributesStrideSize: Any = js.native
@@ -101,7 +101,7 @@ object gpuParticleSystemMod {
     
     /* private */ var _capacity: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _colorGradientsTexture: RawTexture = js.native
     
     /* private */ var _createAngularSpeedGradientTexture: Any = js.native
@@ -128,7 +128,7 @@ object gpuParticleSystemMod {
     
     /* private */ var _customWrappers: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _dragGradientsTexture: RawTexture = js.native
     
     /* private */ var _drawWrappers: Any = js.native
@@ -136,34 +136,33 @@ object gpuParticleSystemMod {
     /* private */ var _getCustomDrawWrapper: Any = js.native
     
     /**
-      * @param blendMode
-      * @hidden
+      * @internal
       */
     def _getWrapper(blendMode: Double): DrawWrapper = js.native
     
     /* private */ var _initialize: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _limitVelocityGradientsTexture: RawTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _onBeforeDrawParticlesObservable: Nullable[Observable[Nullable[Effect]]] = js.native
     
     /* private */ var _platform: Any = js.native
     
     /* private */ var _preWarmDone: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _randomTexture: RawTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     var _randomTexture2: RawTexture = js.native
     
     /* private */ var _randomTextureSize: Any = js.native
     
     /* private */ val _rawTextureWidth: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _recreateUpdateEffect(): Unit = js.native
     
     /* private */ var _refreshColorGradient: Any = js.native
@@ -174,7 +173,7 @@ object gpuParticleSystemMod {
     
     /* private */ var _render: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _sizeGradientsTexture: RawTexture = js.native
     
     /* private */ var _sourceBuffer: Any = js.native
@@ -193,7 +192,7 @@ object gpuParticleSystemMod {
     
     /* private */ var _updateBuffer: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _velocityGradientsTexture: RawTexture = js.native
     
     /**
@@ -837,11 +836,7 @@ object gpuParticleSystemMod {
     ): GPUParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedParticleSystem.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[GPUParticleSystem]
     
     /**
-      * @param hasColorGradients
-      * @param isAnimationSheetEnabled
-      * @param isBillboardBased
-      * @param isBillboardStretched
-      * @hidden
+      * @internal
       */
     inline def _GetAttributeNamesOrOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")().asInstanceOf[js.Array[String]]
     inline def _GetAttributeNamesOrOptions(hasColorGradients: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
@@ -901,10 +896,11 @@ object gpuParticleSystemMod {
     ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetAttributeNamesOrOptions")(hasColorGradients.asInstanceOf[js.Any], isAnimationSheetEnabled.asInstanceOf[js.Any], isBillboardBased.asInstanceOf[js.Any], isBillboardStretched.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
-      * @param isAnimationSheetEnabled
-      * @hidden
+      * @internal
       */
     inline def _GetEffectCreationOptions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")().asInstanceOf[js.Array[String]]
     inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Boolean, useLogarithmicDepth: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], useLogarithmicDepth.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def _GetEffectCreationOptions(isAnimationSheetEnabled: Unit, useLogarithmicDepth: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetEffectCreationOptions")(isAnimationSheetEnabled.asInstanceOf[js.Any], useLogarithmicDepth.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
 }

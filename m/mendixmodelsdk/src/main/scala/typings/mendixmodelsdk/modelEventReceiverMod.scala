@@ -11,20 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modelEventReceiverMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/model-events/ModelEventReceiver", "ModelEventReceiver")
+  @JSImport("mendixmodelsdk/src/sdk/internal/model-events/ModelEventReceiver", "ModelEventReceiver")
   @js.native
-  class ModelEventReceiver protected () extends StObject {
+  open class ModelEventReceiver protected () extends StObject {
     def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
     
-    /* private */ var client: js.Any = js.native
+    /* private */ var client: Any = js.native
     
-    /* private */ var deltaEventEmitter: js.Any = js.native
+    /* private */ var deltaEventEmitter: Any = js.native
     
-    /* private */ var errorHandler: js.Any = js.native
+    /* private */ var errorHandler: Any = js.native
     
     var eventSource: ^ | Null = js.native
     
-    /* private */ var fileEventEmitter: js.Any = js.native
+    /* private */ var fileEventEmitter: Any = js.native
     
     def isRunning: Boolean = js.native
     
@@ -36,6 +36,6 @@ object modelEventReceiverMod {
     
     def stop(): Unit = js.native
     
-    /* private */ var workingCopyId: js.Any = js.native
+    /* private */ var workingCopyId: Any = js.native
   }
 }

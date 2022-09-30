@@ -2,9 +2,9 @@ package typings.ipcheck
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.ipcheck.ipcheckNumbers.`0`
-import typings.ipcheck.ipcheckNumbers.`4`
-import typings.ipcheck.ipcheckNumbers.`6`
+import typings.ipcheck.ipcheckInts.`0`
+import typings.ipcheck.ipcheckInts.`4`
+import typings.ipcheck.ipcheckInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

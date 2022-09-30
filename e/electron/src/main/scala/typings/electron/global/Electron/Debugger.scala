@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.Debugger")
 @js.native
-class Debugger ()
+open class Debugger ()
   extends typings.electron.Electron.Debugger

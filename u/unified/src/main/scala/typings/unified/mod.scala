@@ -442,7 +442,7 @@ object mod {
       *   Current processor.
       */
     @JSName("use")
-    def use_PluginParameters_ArrayAnyInputOutput_UsePlugin[PluginParameters /* <: js.Array[Any] */, Input, Output](tuple: PluginTuple[PluginParameters, Input, Output]): UsePlugin[ParseTree, CurrentTree, CompileTree, CompileResult, Input, Output] = js.native
+    def use_PluginParametersInputOutput_UsePlugin[PluginParameters /* <: js.Array[Any] */, Input, Output](tuple: PluginTuple[PluginParameters, Input, Output]): UsePlugin[ParseTree, CurrentTree, CompileTree, CompileResult, Input, Output] = js.native
   }
   
   type RunCallback[Tree /* <: Node[Data] */] = js.Function3[

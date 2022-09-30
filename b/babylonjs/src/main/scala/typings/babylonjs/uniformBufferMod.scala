@@ -117,7 +117,7 @@ object uniformBufferMod {
       */
     /* private */ var _fillAlignment: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _indexBuffer: Double = js.native
     
     /* private */ var _name: Any = js.native
@@ -126,10 +126,10 @@ object uniformBufferMod {
     
     /* private */ var _noUBO: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _numBuffers: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
     /* private */ var _uniformArraySizes: Any = js.native
@@ -574,7 +574,7 @@ object uniformBufferMod {
     
     inline def _TempBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TempBuffer")(x.asInstanceOf[js.Any])
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Materials/uniformBuffer", "UniformBuffer._UpdatedUbosInFrame")
     @js.native
     def _UpdatedUbosInFrame: StringDictionary[Double] = js.native

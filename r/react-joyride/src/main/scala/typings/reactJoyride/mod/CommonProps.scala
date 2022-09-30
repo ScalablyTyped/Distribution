@@ -19,11 +19,15 @@ trait CommonProps extends StObject {
   
   var disableScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var floaterProps: js.UndefOr[FloaterProps] = js.undefined
+  var floaterProps: js.UndefOr[Props] = js.undefined
   
   var hideBackButton: js.UndefOr[Boolean] = js.undefined
   
+  var hideCloseButton: js.UndefOr[Boolean] = js.undefined
+  
   var locale: js.UndefOr[Locale] = js.undefined
+  
+  var nonce: js.UndefOr[String] = js.undefined
   
   var showProgress: js.UndefOr[Boolean] = js.undefined
   
@@ -70,7 +74,7 @@ object CommonProps {
     
     inline def setDisableScrollingUndefined: Self = StObject.set(x, "disableScrolling", js.undefined)
     
-    inline def setFloaterProps(value: FloaterProps): Self = StObject.set(x, "floaterProps", value.asInstanceOf[js.Any])
+    inline def setFloaterProps(value: Props): Self = StObject.set(x, "floaterProps", value.asInstanceOf[js.Any])
     
     inline def setFloaterPropsUndefined: Self = StObject.set(x, "floaterProps", js.undefined)
     
@@ -78,9 +82,17 @@ object CommonProps {
     
     inline def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
     
+    inline def setHideCloseButton(value: Boolean): Self = StObject.set(x, "hideCloseButton", value.asInstanceOf[js.Any])
+    
+    inline def setHideCloseButtonUndefined: Self = StObject.set(x, "hideCloseButton", js.undefined)
+    
     inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     inline def setShowProgress(value: Boolean): Self = StObject.set(x, "showProgress", value.asInstanceOf[js.Any])
     

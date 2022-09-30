@@ -312,19 +312,25 @@ trait FunctionChain[T]
   /**
     * @see _.partialRight
     */
+  def partialRight[T1](arg1: T1, plc2: __, plc3: __): FunctionChain[Function2[Any, Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
   def partialRight[T1](arg1: T1, plc2: __, plc3: __, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2](arg2: T2): FunctionChain[Function1[Any, Any]] = js.native
+  def partialRight[T3](arg3: T3, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2](arg2: T2, plc3: __): FunctionChain[Function2[Any, Any, Any]] = js.native
+  def partialRight[TS /* <: js.Array[Any] */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ts because its type TS is not an array type */ ts: TS
+  ): FunctionChain[js.Function0[Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2](arg2: T2, plc3: __, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
+  def partialRight[T1, T2](arg1: T1, arg2: T2, plc3: __): FunctionChain[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
@@ -340,15 +346,11 @@ trait FunctionChain[T]
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T3](arg2: T2, arg3: T3): FunctionChain[Function1[Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  def partialRight[T2, T3](arg2: T2, arg3: T3, plc4: __): FunctionChain[Function2[Any, Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
   def partialRight[T2, T4](arg2: T2, plc3: __, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
+  def partialRight[T3, T4](arg3: T3, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
@@ -374,17 +376,32 @@ trait FunctionChain[T]
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1[T1](arg1: T1, plc2: __, plc3: __): FunctionChain[Function2[Any, Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T1T2[T1, T2](arg1: T1, arg2: T2, plc3: __): FunctionChain[Function1[Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
   def partialRight_T1T3[T1, T3](arg1: T1, plc2: __, arg3: T3): FunctionChain[Function1[Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2[T2](arg2: T2): FunctionChain[Function1[Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2[T2](arg2: T2, plc3: __): FunctionChain[Function2[Any, Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2[T2](arg2: T2, plc3: __, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3): FunctionChain[Function1[Any, Any]] = js.native
+  /**
+    * @see _.partialRight
+    */
+  @JSName("partialRight")
+  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3, plc4: __): FunctionChain[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
@@ -394,24 +411,7 @@ trait FunctionChain[T]
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T3[T3](arg3: T3, plc4: __): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_T3T4[T3, T4](arg3: T3, arg4: T4): FunctionChain[Function2[Any, Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
   def partialRight_T4[T4](arg4: T4): FunctionChain[Function3[Any, Any, Any, Any]] = js.native
-  /**
-    * @see _.partialRight
-    */
-  @JSName("partialRight")
-  def partialRight_TS_ArrayAny[TS /* <: js.Array[Any] */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ts because its type TS is not an array type */ ts: TS
-  ): FunctionChain[js.Function0[Any]] = js.native
   
   /**
     * @see _.rearg

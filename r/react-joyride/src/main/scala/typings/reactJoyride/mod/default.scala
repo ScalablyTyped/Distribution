@@ -7,5 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-joyride", JSImport.Default)
 @js.native
-class default ()
-  extends Component[Props, StoreState, js.Any]
+open class default () extends Component[Props, StoreState, Any]

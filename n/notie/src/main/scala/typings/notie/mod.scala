@@ -107,11 +107,11 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.notie.notieNumbers.`1`
-    - typings.notie.notieNumbers.`2`
-    - typings.notie.notieNumbers.`3`
-    - typings.notie.notieNumbers.`4`
-    - typings.notie.notieNumbers.`5`
+    - typings.notie.notieInts.`1`
+    - typings.notie.notieInts.`2`
+    - typings.notie.notieInts.`3`
+    - typings.notie.notieInts.`4`
+    - typings.notie.notieInts.`5`
     - typings.notie.notieStrings.success
     - typings.notie.notieStrings.warning
     - typings.notie.notieStrings.error
@@ -121,15 +121,15 @@ object mod {
   trait AlertType extends StObject
   object AlertType {
     
-    inline def `1`: typings.notie.notieNumbers.`1` = 1.asInstanceOf[typings.notie.notieNumbers.`1`]
+    inline def `1`: typings.notie.notieInts.`1` = 1.asInstanceOf[typings.notie.notieInts.`1`]
     
-    inline def `2`: typings.notie.notieNumbers.`2` = 2.asInstanceOf[typings.notie.notieNumbers.`2`]
+    inline def `2`: typings.notie.notieInts.`2` = 2.asInstanceOf[typings.notie.notieInts.`2`]
     
-    inline def `3`: typings.notie.notieNumbers.`3` = 3.asInstanceOf[typings.notie.notieNumbers.`3`]
+    inline def `3`: typings.notie.notieInts.`3` = 3.asInstanceOf[typings.notie.notieInts.`3`]
     
-    inline def `4`: typings.notie.notieNumbers.`4` = 4.asInstanceOf[typings.notie.notieNumbers.`4`]
+    inline def `4`: typings.notie.notieInts.`4` = 4.asInstanceOf[typings.notie.notieInts.`4`]
     
-    inline def `5`: typings.notie.notieNumbers.`5` = 5.asInstanceOf[typings.notie.notieNumbers.`5`]
+    inline def `5`: typings.notie.notieInts.`5` = 5.asInstanceOf[typings.notie.notieInts.`5`]
     
     inline def error: typings.notie.notieStrings.error = "error".asInstanceOf[typings.notie.notieStrings.error]
     

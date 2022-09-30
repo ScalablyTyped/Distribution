@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.15.0: deleted
   * In version 7.1.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetailDetailRegion")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetailDetailRegion")
 @js.native
-class MasterDetailDetailRegion protected () extends MasterDetailRegion {
+open class MasterDetailDetailRegion protected () extends MasterDetailRegion {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +43,7 @@ class MasterDetailDetailRegion protected () extends MasterDetailRegion {
 }
 object MasterDetailDetailRegion {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetailDetailRegion")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetailDetailRegion")
   @js.native
   val ^ : js.Any = js.native
   
@@ -67,13 +67,13 @@ object MasterDetailDetailRegion {
   inline def createIn(container: MasterDetail): MasterDetailDetailRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetailDetailRegion]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetailDetailRegion.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetailDetailRegion.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetailDetailRegion.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetailDetailRegion.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -21,10 +21,10 @@ trait CommandArray extends StObject {
     *  @param f A JavaScript function to be executed. The runtime binding will
     * always be
     * [`globalThis`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/globalThis).
-    * Consider passing an arrow function to retain the <code>this</code> value
+    * Consider passing an arrow function to retain the `this` value
     * of the enclosing lexical context.
     *  @return The number of commands processed so far. This is compatible with
-    * <code>Array.push</code>'s return value (the current length of the array).
+    * `Array.push`'s return value (the current length of the array).
     */
   def push(f: (js.ThisFunction0[/* globalThis */ /* this */ Any, Unit])*): Double
 }

@@ -26,9 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IODataKeyPart because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsODataKey, `type` */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKeyPart")
+- typings.mendixmodelsdk.restMod.rest.IODataKeyPart because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsODataKey, `type` */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataKeyPart")
 @js.native
-class ODataKeyPart protected () extends Element[IModel] {
+open class ODataKeyPart protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -45,8 +45,20 @@ class ODataKeyPart protected () extends Element[IModel] {
   def entityKeyPartName: String = js.native
   def entityKeyPartName_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.16.0: introduced
+    */
+  def filterable: Boolean = js.native
+  def filterable_=(newValue: Boolean): Unit = js.native
+  
   def name: String = js.native
   def name_=(newValue: String): Unit = js.native
+  
+  /**
+    * In version 9.9.0: introduced
+    */
+  def remoteType: String = js.native
+  def remoteType_=(newValue: String): Unit = js.native
   
   def `type`: AttributeType = js.native
   def type_=(newValue: AttributeType): Unit = js.native
@@ -58,7 +70,7 @@ class ODataKeyPart protected () extends Element[IModel] {
 }
 object ODataKeyPart {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKeyPart")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataKeyPart")
   @js.native
   val ^ : js.Any = js.native
   
@@ -82,13 +94,13 @@ object ODataKeyPart {
   inline def createIn(container: ODataKey): ODataKeyPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataKeyPart]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKeyPart.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataKeyPart.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataKeyPart.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataKeyPart.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

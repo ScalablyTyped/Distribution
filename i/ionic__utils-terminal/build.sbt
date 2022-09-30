@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ionic__utils-terminal"
-version := "2.3.3-2f571b"
+version := "2.3.3-214304"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
-  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
   "org.scalablytyped" %%% "string-width" % "5.1.2-e4a09c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

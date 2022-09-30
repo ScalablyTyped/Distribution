@@ -54,11 +54,11 @@ object global {
     
     inline def filter[T](fn: Filter_[T], iter: js.Iterable[T]): WuIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[T]]
     
-    inline def filter_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: js.Iterable[T]): WuIterable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[S]]
+    inline def filter_TS[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: js.Iterable[T]): WuIterable[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[S]]
     
     inline def find[T](fn: Filter_[T], iter: js.Iterable[T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
-    inline def find_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: js.Iterable[T]): js.UndefOr[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[S]]
+    inline def find_TS[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: js.Iterable[T]): js.UndefOr[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fn.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[S]]
     
     inline def flatten(iter: js.Iterable[Any]): WuIterable[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(iter.asInstanceOf[js.Any]).asInstanceOf[WuIterable[Any]]
     inline def flatten(shallow: Boolean, iter: js.Iterable[Any]): WuIterable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(shallow.asInstanceOf[js.Any], iter.asInstanceOf[js.Any])).asInstanceOf[WuIterable[Any]]

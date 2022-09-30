@@ -1,15 +1,15 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`1`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`2`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`3`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`4`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`5`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`6`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`7`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`8`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`9`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`1`
+import typings.angularCompilerCli.angularCompilerCliInts.`2`
+import typings.angularCompilerCli.angularCompilerCliInts.`3`
+import typings.angularCompilerCli.angularCompilerCliInts.`4`
+import typings.angularCompilerCli.angularCompilerCliInts.`5`
+import typings.angularCompilerCli.angularCompilerCliInts.`6`
+import typings.angularCompilerCli.angularCompilerCliInts.`7`
+import typings.angularCompilerCli.angularCompilerCliInts.`8`
+import typings.angularCompilerCli.angularCompilerCliInts.`9`
 import typings.angularCompilerCli.ngtscImportsMod.Reference
 import typings.angularCompilerCli.srcHostMod.FunctionDefinition
 import typings.angularCompilerCli.syntheticMod.SyntheticValue
@@ -82,16 +82,16 @@ object dynamicMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`1`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`2`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`3`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`4`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`5`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`6`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`7`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`8`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`9`
+    - typings.angularCompilerCli.angularCompilerCliInts.`0`
+    - typings.angularCompilerCli.angularCompilerCliInts.`1`
+    - typings.angularCompilerCli.angularCompilerCliInts.`2`
+    - typings.angularCompilerCli.angularCompilerCliInts.`3`
+    - typings.angularCompilerCli.angularCompilerCliInts.`4`
+    - typings.angularCompilerCli.angularCompilerCliInts.`5`
+    - typings.angularCompilerCli.angularCompilerCliInts.`6`
+    - typings.angularCompilerCli.angularCompilerCliInts.`7`
+    - typings.angularCompilerCli.angularCompilerCliInts.`8`
+    - typings.angularCompilerCli.angularCompilerCliInts.`9`
   */
   trait DynamicValueReason extends StObject
   object DynamicValueReason {

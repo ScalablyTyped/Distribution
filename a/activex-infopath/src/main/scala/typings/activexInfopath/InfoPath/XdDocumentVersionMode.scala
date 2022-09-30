@@ -1,26 +1,26 @@
 package typings.activexInfopath.InfoPath
 
-import typings.activexInfopath.activexInfopathNumbers.`0`
-import typings.activexInfopath.activexInfopathNumbers.`128`
-import typings.activexInfopath.activexInfopathNumbers.`16`
-import typings.activexInfopath.activexInfopathNumbers.`1`
-import typings.activexInfopath.activexInfopathNumbers.`2`
-import typings.activexInfopath.activexInfopathNumbers.`32`
-import typings.activexInfopath.activexInfopathNumbers.`64`
-import typings.activexInfopath.activexInfopathNumbers.`8`
+import typings.activexInfopath.activexInfopathInts.`0`
+import typings.activexInfopath.activexInfopathInts.`128`
+import typings.activexInfopath.activexInfopathInts.`16`
+import typings.activexInfopath.activexInfopathInts.`1`
+import typings.activexInfopath.activexInfopathInts.`2`
+import typings.activexInfopath.activexInfopathInts.`32`
+import typings.activexInfopath.activexInfopathInts.`64`
+import typings.activexInfopath.activexInfopathInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexInfopath.activexInfopathNumbers.`8`
-  - typings.activexInfopath.activexInfopathNumbers.`16`
-  - typings.activexInfopath.activexInfopathNumbers.`128`
-  - typings.activexInfopath.activexInfopathNumbers.`0`
-  - typings.activexInfopath.activexInfopathNumbers.`1`
-  - typings.activexInfopath.activexInfopathNumbers.`64`
-  - typings.activexInfopath.activexInfopathNumbers.`32`
-  - typings.activexInfopath.activexInfopathNumbers.`2`
+  - typings.activexInfopath.activexInfopathInts.`8`
+  - typings.activexInfopath.activexInfopathInts.`16`
+  - typings.activexInfopath.activexInfopathInts.`128`
+  - typings.activexInfopath.activexInfopathInts.`0`
+  - typings.activexInfopath.activexInfopathInts.`1`
+  - typings.activexInfopath.activexInfopathInts.`64`
+  - typings.activexInfopath.activexInfopathInts.`32`
+  - typings.activexInfopath.activexInfopathInts.`2`
 */
 trait XdDocumentVersionMode extends StObject
 object XdDocumentVersionMode {

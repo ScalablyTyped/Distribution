@@ -77,15 +77,15 @@ object traversalMod {
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* sa */ Traversal_[Any, A], Traversal_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, A], Traversal_[Any, A]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Traversal_[Any, A], Traversal_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, A], Traversal_[Any, B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Traversal_[Any, A], Traversal_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, A], Traversal_[Any, B]]]
   
   inline def findFirst[A](predicate: Predicate[A]): js.Function1[/* sa */ Traversal_[Any, js.Array[A]], Traversal_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, js.Array[A]], Traversal_[Any, A]]]
   
   inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[/* sa */ Traversal_[Any, ReadonlyNonEmptyArray_[A]], Traversal_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, ReadonlyNonEmptyArray_[A]], Traversal_[Any, A]]]
   
-  inline def findFirstNonEmpty_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Traversal_[Any, ReadonlyNonEmptyArray_[A]], Traversal_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, ReadonlyNonEmptyArray_[A]], Traversal_[Any, B]]]
+  inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Traversal_[Any, ReadonlyNonEmptyArray_[A]], Traversal_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, ReadonlyNonEmptyArray_[A]], Traversal_[Any, B]]]
   
-  inline def findFirst_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Traversal_[Any, js.Array[A]], Traversal_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, js.Array[A]], Traversal_[Any, B]]]
+  inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Traversal_[Any, js.Array[A]], Traversal_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, js.Array[A]], Traversal_[Any, B]]]
   
   inline def fold[A](M: Monoid[A]): js.Function1[/* sa */ Traversal_[Any, A], js.Function1[/* s */ Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fold")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Traversal_[Any, A], js.Function1[/* s */ Any, A]]]
   
@@ -180,7 +180,7 @@ object traversalMod {
   {[ K in P ]: A[K]}
     */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
     ]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((scala.List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
     /* sa */ Traversal_[Any, A], 
     Traversal_[
       Any, 

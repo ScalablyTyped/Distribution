@@ -47,9 +47,8 @@ trait ProcessMetric extends StObject {
   var memory: MemoryInfo
   
   /**
-    * The name of the process. i.e. for plugins it might be Flash. Examples for
-    * utility: `Audio Service`, `Content Decryption Module Service`, `Network
-    * Service`, `Video Capture`, etc.
+    * The name of the process. Examples for utility: `Audio Service`, `Content
+    * Decryption Module Service`, `Network Service`, `Video Capture`, etc.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -64,6 +63,11 @@ trait ProcessMetric extends StObject {
     * @platform darwin,win32
     */
   var sandboxed: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The non-localized name of the process.
+    */
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /**
     * Process type. One of the following values:
@@ -105,6 +109,10 @@ object ProcessMetric {
     inline def setSandboxed(value: Boolean): Self = StObject.set(x, "sandboxed", value.asInstanceOf[js.Any])
     
     inline def setSandboxedUndefined: Self = StObject.set(x, "sandboxed", js.undefined)
+    
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     inline def setType(
       value: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown

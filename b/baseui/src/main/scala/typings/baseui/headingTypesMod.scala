@@ -1,11 +1,11 @@
 package typings.baseui
 
-import typings.baseui.baseuiNumbers.`1`
-import typings.baseui.baseuiNumbers.`2`
-import typings.baseui.baseuiNumbers.`3`
-import typings.baseui.baseuiNumbers.`4`
-import typings.baseui.baseuiNumbers.`5`
-import typings.baseui.baseuiNumbers.`6`
+import typings.baseui.baseuiInts.`1`
+import typings.baseui.baseuiInts.`2`
+import typings.baseui.baseuiInts.`3`
+import typings.baseui.baseuiInts.`4`
+import typings.baseui.baseuiInts.`5`
+import typings.baseui.baseuiInts.`6`
 import typings.baseui.baseuiStrings.h1
 import typings.baseui.blockTypesMod.BlockProps
 import typings.react.mod.ReactNode

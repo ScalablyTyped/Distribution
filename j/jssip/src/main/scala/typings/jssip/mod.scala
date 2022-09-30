@@ -3,27 +3,27 @@ package typings.jssip
 import typings.debug.mod.Debug
 import typings.jssip.constantsMod.causes
 import typings.jssip.grammarMod.Grammar
-import typings.jssip.jssipNumbers.`300`
-import typings.jssip.jssipNumbers.`301`
-import typings.jssip.jssipNumbers.`302`
-import typings.jssip.jssipNumbers.`305`
-import typings.jssip.jssipNumbers.`380`
-import typings.jssip.jssipNumbers.`401`
-import typings.jssip.jssipNumbers.`403`
-import typings.jssip.jssipNumbers.`404`
-import typings.jssip.jssipNumbers.`407`
-import typings.jssip.jssipNumbers.`408`
-import typings.jssip.jssipNumbers.`410`
-import typings.jssip.jssipNumbers.`424`
-import typings.jssip.jssipNumbers.`430`
-import typings.jssip.jssipNumbers.`480`
-import typings.jssip.jssipNumbers.`484`
-import typings.jssip.jssipNumbers.`486`
-import typings.jssip.jssipNumbers.`488`
-import typings.jssip.jssipNumbers.`600`
-import typings.jssip.jssipNumbers.`603`
-import typings.jssip.jssipNumbers.`604`
-import typings.jssip.jssipNumbers.`606`
+import typings.jssip.jssipInts.`300`
+import typings.jssip.jssipInts.`301`
+import typings.jssip.jssipInts.`302`
+import typings.jssip.jssipInts.`305`
+import typings.jssip.jssipInts.`380`
+import typings.jssip.jssipInts.`401`
+import typings.jssip.jssipInts.`403`
+import typings.jssip.jssipInts.`404`
+import typings.jssip.jssipInts.`407`
+import typings.jssip.jssipInts.`408`
+import typings.jssip.jssipInts.`410`
+import typings.jssip.jssipInts.`424`
+import typings.jssip.jssipInts.`430`
+import typings.jssip.jssipInts.`480`
+import typings.jssip.jssipInts.`484`
+import typings.jssip.jssipInts.`486`
+import typings.jssip.jssipInts.`488`
+import typings.jssip.jssipInts.`600`
+import typings.jssip.jssipInts.`603`
+import typings.jssip.jssipInts.`604`
+import typings.jssip.jssipInts.`606`
 import typings.jssip.uAMod.UAConfiguration
 import typings.jssip.uriMod.Headers
 import typings.jssip.uriMod.Parameters
@@ -376,7 +376,7 @@ object mod {
     
     inline def getRandomTestNetIP(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomTestNetIP")().asInstanceOf[String]
     
-    inline def hasMethods(obj: Any, methodNames: String*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMethods")(List(obj.asInstanceOf[js.Any]).`++`(methodNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+    inline def hasMethods(obj: Any, methodNames: String*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMethods")(scala.List(obj.asInstanceOf[js.Any]).`++`(methodNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
     
     inline def headerize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("headerize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     

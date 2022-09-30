@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.Itinerary")
 @js.native
-class Itinerary_ protected ()
+open class Itinerary_ protected ()
   extends typings.leaflet.mod.Control_ {
   def this(options: ItineraryOptions) = this()
   
@@ -15,7 +15,7 @@ class Itinerary_ protected ()
   
   def hide(): Unit = js.native
   
-  def setAlternatives(routes: js.Array[IRoute]): js.Any = js.native
+  def setAlternatives(routes: js.Array[IRoute]): Any = js.native
   
   def show(): Unit = js.native
 }

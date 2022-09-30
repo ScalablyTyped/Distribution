@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "PrimitiveListProperty")
 @js.native
-class PrimitiveListProperty[T] protected ()
+open class PrimitiveListProperty[T] protected ()
   extends typings.mendixmodelsdk.propertiesMod.PrimitiveListProperty[T] {
   /**
     * parent is the structure that the value of this property attaches to,
@@ -24,6 +24,6 @@ class PrimitiveListProperty[T] protected ()
     parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: js.Array[T],
-    moreArgs: js.Any*
+    moreArgs: Any*
   ) = this()
 }

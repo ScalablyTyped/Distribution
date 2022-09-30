@@ -3,13 +3,13 @@ package typings.arangodb
 import typings.arangodb.ArangoDB.ArangoSearchViewConsolidationType
 import typings.arangodb.ArangoDB.EdgeDirection
 import typings.arangodb.ArangoDB.EngineType
-import typings.arangodb.ArangoDB.ErrorName
 import typings.arangodb.ArangoDB.HashAlgorithm
 import typings.arangodb.ArangoDB.HttpMethod
-import typings.arangodb.ArangoDB.HttpStatus
 import typings.arangodb.ArangoDB.IndexType
 import typings.arangodb.ArangoDB.JwtAlgorithm
 import typings.arangodb.ArangoDB.KeyGeneratorType
+import typings.arangodb.ArangoDB._ErrorName
+import typings.arangodb.ArangoDB._HttpStatus
 import typings.arangodb.Foxx.ConfigurationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,13 +20,13 @@ object arangodbStrings {
   @js.native
   sealed trait COMMUNICATOR_DISABLED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def COMMUNICATOR_DISABLED: COMMUNICATOR_DISABLED = "COMMUNICATOR_DISABLED".asInstanceOf[COMMUNICATOR_DISABLED]
   
   @js.native
   sealed trait COMMUNICATOR_REQUEST_ABORTED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def COMMUNICATOR_REQUEST_ABORTED: COMMUNICATOR_REQUEST_ABORTED = "COMMUNICATOR_REQUEST_ABORTED".asInstanceOf[COMMUNICATOR_REQUEST_ABORTED]
   
   @js.native
@@ -42,1765 +42,1759 @@ object arangodbStrings {
   @js.native
   sealed trait ERROR_AGENCY_CANNOT_REBUILD_DBS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_CANNOT_REBUILD_DBS: ERROR_AGENCY_CANNOT_REBUILD_DBS = "ERROR_AGENCY_CANNOT_REBUILD_DBS".asInstanceOf[ERROR_AGENCY_CANNOT_REBUILD_DBS]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_BE_OBJECT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_BE_OBJECT: ERROR_AGENCY_INFORM_MUST_BE_OBJECT = "ERROR_AGENCY_INFORM_MUST_BE_OBJECT".asInstanceOf[ERROR_AGENCY_INFORM_MUST_BE_OBJECT]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_CONTAIN_ACTIVE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_CONTAIN_ACTIVE: ERROR_AGENCY_INFORM_MUST_CONTAIN_ACTIVE = "ERROR_AGENCY_INFORM_MUST_CONTAIN_ACTIVE".asInstanceOf[ERROR_AGENCY_INFORM_MUST_CONTAIN_ACTIVE]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_CONTAIN_ID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_CONTAIN_ID: ERROR_AGENCY_INFORM_MUST_CONTAIN_ID = "ERROR_AGENCY_INFORM_MUST_CONTAIN_ID".asInstanceOf[ERROR_AGENCY_INFORM_MUST_CONTAIN_ID]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_CONTAIN_MAX_PING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_CONTAIN_MAX_PING: ERROR_AGENCY_INFORM_MUST_CONTAIN_MAX_PING = "ERROR_AGENCY_INFORM_MUST_CONTAIN_MAX_PING".asInstanceOf[ERROR_AGENCY_INFORM_MUST_CONTAIN_MAX_PING]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_CONTAIN_MIN_PING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_CONTAIN_MIN_PING: ERROR_AGENCY_INFORM_MUST_CONTAIN_MIN_PING = "ERROR_AGENCY_INFORM_MUST_CONTAIN_MIN_PING".asInstanceOf[ERROR_AGENCY_INFORM_MUST_CONTAIN_MIN_PING]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_CONTAIN_POOL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_CONTAIN_POOL: ERROR_AGENCY_INFORM_MUST_CONTAIN_POOL = "ERROR_AGENCY_INFORM_MUST_CONTAIN_POOL".asInstanceOf[ERROR_AGENCY_INFORM_MUST_CONTAIN_POOL]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_CONTAIN_TERM
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_CONTAIN_TERM: ERROR_AGENCY_INFORM_MUST_CONTAIN_TERM = "ERROR_AGENCY_INFORM_MUST_CONTAIN_TERM".asInstanceOf[ERROR_AGENCY_INFORM_MUST_CONTAIN_TERM]
   
   @js.native
   sealed trait ERROR_AGENCY_INFORM_MUST_CONTAIN_TIMEOUT_MULT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INFORM_MUST_CONTAIN_TIMEOUT_MULT: ERROR_AGENCY_INFORM_MUST_CONTAIN_TIMEOUT_MULT = "ERROR_AGENCY_INFORM_MUST_CONTAIN_TIMEOUT_MULT".asInstanceOf[ERROR_AGENCY_INFORM_MUST_CONTAIN_TIMEOUT_MULT]
   
   @js.native
   sealed trait ERROR_AGENCY_INQUIRE_CLIENT_ID_MUST_BE_STRING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INQUIRE_CLIENT_ID_MUST_BE_STRING: ERROR_AGENCY_INQUIRE_CLIENT_ID_MUST_BE_STRING = "ERROR_AGENCY_INQUIRE_CLIENT_ID_MUST_BE_STRING".asInstanceOf[ERROR_AGENCY_INQUIRE_CLIENT_ID_MUST_BE_STRING]
   
   @js.native
   sealed trait ERROR_AGENCY_INQUIRY_SYNTAX
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_AGENCY_INQUIRY_SYNTAX: ERROR_AGENCY_INQUIRY_SYNTAX = "ERROR_AGENCY_INQUIRY_SYNTAX".asInstanceOf[ERROR_AGENCY_INQUIRY_SYNTAX]
   
   @js.native
   sealed trait ERROR_ARANGO_ATTRIBUTE_PARSER_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_ATTRIBUTE_PARSER_FAILED: ERROR_ARANGO_ATTRIBUTE_PARSER_FAILED = "ERROR_ARANGO_ATTRIBUTE_PARSER_FAILED".asInstanceOf[ERROR_ARANGO_ATTRIBUTE_PARSER_FAILED]
   
   @js.native
   sealed trait ERROR_ARANGO_BUSY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_BUSY: ERROR_ARANGO_BUSY = "ERROR_ARANGO_BUSY".asInstanceOf[ERROR_ARANGO_BUSY]
   
   @js.native
   sealed trait ERROR_ARANGO_COLLECTION_DIRECTORY_ALREADY_EXISTS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_COLLECTION_DIRECTORY_ALREADY_EXISTS: ERROR_ARANGO_COLLECTION_DIRECTORY_ALREADY_EXISTS = "ERROR_ARANGO_COLLECTION_DIRECTORY_ALREADY_EXISTS".asInstanceOf[ERROR_ARANGO_COLLECTION_DIRECTORY_ALREADY_EXISTS]
   
   @js.native
   sealed trait ERROR_ARANGO_COLLECTION_NOT_LOADED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_COLLECTION_NOT_LOADED: ERROR_ARANGO_COLLECTION_NOT_LOADED = "ERROR_ARANGO_COLLECTION_NOT_LOADED".asInstanceOf[ERROR_ARANGO_COLLECTION_NOT_LOADED]
   
   @js.native
   sealed trait ERROR_ARANGO_COLLECTION_NOT_UNLOADED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_COLLECTION_NOT_UNLOADED: ERROR_ARANGO_COLLECTION_NOT_UNLOADED = "ERROR_ARANGO_COLLECTION_NOT_UNLOADED".asInstanceOf[ERROR_ARANGO_COLLECTION_NOT_UNLOADED]
   
   @js.native
   sealed trait ERROR_ARANGO_COLLECTION_PARAMETER_MISSING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_COLLECTION_PARAMETER_MISSING: ERROR_ARANGO_COLLECTION_PARAMETER_MISSING = "ERROR_ARANGO_COLLECTION_PARAMETER_MISSING".asInstanceOf[ERROR_ARANGO_COLLECTION_PARAMETER_MISSING]
   
   @js.native
   sealed trait ERROR_ARANGO_COLLECTION_TYPE_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_COLLECTION_TYPE_INVALID: ERROR_ARANGO_COLLECTION_TYPE_INVALID = "ERROR_ARANGO_COLLECTION_TYPE_INVALID".asInstanceOf[ERROR_ARANGO_COLLECTION_TYPE_INVALID]
   
   @js.native
   sealed trait ERROR_ARANGO_COLLECTION_TYPE_MISMATCH
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_COLLECTION_TYPE_MISMATCH: ERROR_ARANGO_COLLECTION_TYPE_MISMATCH = "ERROR_ARANGO_COLLECTION_TYPE_MISMATCH".asInstanceOf[ERROR_ARANGO_COLLECTION_TYPE_MISMATCH]
   
   @js.native
   sealed trait ERROR_ARANGO_CONFLICT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_CONFLICT: ERROR_ARANGO_CONFLICT = "ERROR_ARANGO_CONFLICT".asInstanceOf[ERROR_ARANGO_CONFLICT]
   
   @js.native
   sealed trait ERROR_ARANGO_CORRUPTED_COLLECTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_CORRUPTED_COLLECTION: ERROR_ARANGO_CORRUPTED_COLLECTION = "ERROR_ARANGO_CORRUPTED_COLLECTION".asInstanceOf[ERROR_ARANGO_CORRUPTED_COLLECTION]
   
   @js.native
   sealed trait ERROR_ARANGO_CORRUPTED_DATAFILE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_CORRUPTED_DATAFILE: ERROR_ARANGO_CORRUPTED_DATAFILE = "ERROR_ARANGO_CORRUPTED_DATAFILE".asInstanceOf[ERROR_ARANGO_CORRUPTED_DATAFILE]
   
   @js.native
   sealed trait ERROR_ARANGO_CROSS_COLLECTION_REQUEST
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_CROSS_COLLECTION_REQUEST: ERROR_ARANGO_CROSS_COLLECTION_REQUEST = "ERROR_ARANGO_CROSS_COLLECTION_REQUEST".asInstanceOf[ERROR_ARANGO_CROSS_COLLECTION_REQUEST]
   
   @js.native
   sealed trait ERROR_ARANGO_DATABASE_NAME_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATABASE_NAME_INVALID: ERROR_ARANGO_DATABASE_NAME_INVALID = "ERROR_ARANGO_DATABASE_NAME_INVALID".asInstanceOf[ERROR_ARANGO_DATABASE_NAME_INVALID]
   
   @js.native
   sealed trait ERROR_ARANGO_DATABASE_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATABASE_NOT_FOUND: ERROR_ARANGO_DATABASE_NOT_FOUND = "ERROR_ARANGO_DATABASE_NOT_FOUND".asInstanceOf[ERROR_ARANGO_DATABASE_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_ARANGO_DATADIR_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATADIR_INVALID: ERROR_ARANGO_DATADIR_INVALID = "ERROR_ARANGO_DATADIR_INVALID".asInstanceOf[ERROR_ARANGO_DATADIR_INVALID]
   
   @js.native
   sealed trait ERROR_ARANGO_DATADIR_LOCKED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATADIR_LOCKED: ERROR_ARANGO_DATADIR_LOCKED = "ERROR_ARANGO_DATADIR_LOCKED".asInstanceOf[ERROR_ARANGO_DATADIR_LOCKED]
   
   @js.native
   sealed trait ERROR_ARANGO_DATADIR_NOT_WRITABLE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATADIR_NOT_WRITABLE: ERROR_ARANGO_DATADIR_NOT_WRITABLE = "ERROR_ARANGO_DATADIR_NOT_WRITABLE".asInstanceOf[ERROR_ARANGO_DATADIR_NOT_WRITABLE]
   
   @js.native
   sealed trait ERROR_ARANGO_DATADIR_UNLOCKABLE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATADIR_UNLOCKABLE: ERROR_ARANGO_DATADIR_UNLOCKABLE = "ERROR_ARANGO_DATADIR_UNLOCKABLE".asInstanceOf[ERROR_ARANGO_DATADIR_UNLOCKABLE]
   
   @js.native
   sealed trait ERROR_ARANGO_DATAFILE_ALREADY_EXISTS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATAFILE_ALREADY_EXISTS: ERROR_ARANGO_DATAFILE_ALREADY_EXISTS = "ERROR_ARANGO_DATAFILE_ALREADY_EXISTS".asInstanceOf[ERROR_ARANGO_DATAFILE_ALREADY_EXISTS]
   
   @js.native
   sealed trait ERROR_ARANGO_DATAFILE_EMPTY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATAFILE_EMPTY: ERROR_ARANGO_DATAFILE_EMPTY = "ERROR_ARANGO_DATAFILE_EMPTY".asInstanceOf[ERROR_ARANGO_DATAFILE_EMPTY]
   
   @js.native
   sealed trait ERROR_ARANGO_DATAFILE_FULL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATAFILE_FULL: ERROR_ARANGO_DATAFILE_FULL = "ERROR_ARANGO_DATAFILE_FULL".asInstanceOf[ERROR_ARANGO_DATAFILE_FULL]
   
   @js.native
   sealed trait ERROR_ARANGO_DATAFILE_SEALED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATAFILE_SEALED: ERROR_ARANGO_DATAFILE_SEALED = "ERROR_ARANGO_DATAFILE_SEALED".asInstanceOf[ERROR_ARANGO_DATAFILE_SEALED]
   
   @js.native
   sealed trait ERROR_ARANGO_DATAFILE_STATISTICS_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATAFILE_STATISTICS_NOT_FOUND: ERROR_ARANGO_DATAFILE_STATISTICS_NOT_FOUND = "ERROR_ARANGO_DATAFILE_STATISTICS_NOT_FOUND".asInstanceOf[ERROR_ARANGO_DATAFILE_STATISTICS_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_ARANGO_DATAFILE_UNREADABLE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATAFILE_UNREADABLE: ERROR_ARANGO_DATAFILE_UNREADABLE = "ERROR_ARANGO_DATAFILE_UNREADABLE".asInstanceOf[ERROR_ARANGO_DATAFILE_UNREADABLE]
   
   @js.native
   sealed trait ERROR_ARANGO_DATA_SOURCE_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DATA_SOURCE_NOT_FOUND: ERROR_ARANGO_DATA_SOURCE_NOT_FOUND = "ERROR_ARANGO_DATA_SOURCE_NOT_FOUND".asInstanceOf[ERROR_ARANGO_DATA_SOURCE_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_HANDLE_BAD
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_HANDLE_BAD: ERROR_ARANGO_DOCUMENT_HANDLE_BAD = "ERROR_ARANGO_DOCUMENT_HANDLE_BAD".asInstanceOf[ERROR_ARANGO_DOCUMENT_HANDLE_BAD]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_KEY_BAD
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_KEY_BAD: ERROR_ARANGO_DOCUMENT_KEY_BAD = "ERROR_ARANGO_DOCUMENT_KEY_BAD".asInstanceOf[ERROR_ARANGO_DOCUMENT_KEY_BAD]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_KEY_MISSING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_KEY_MISSING: ERROR_ARANGO_DOCUMENT_KEY_MISSING = "ERROR_ARANGO_DOCUMENT_KEY_MISSING".asInstanceOf[ERROR_ARANGO_DOCUMENT_KEY_MISSING]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_KEY_UNEXPECTED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_KEY_UNEXPECTED: ERROR_ARANGO_DOCUMENT_KEY_UNEXPECTED = "ERROR_ARANGO_DOCUMENT_KEY_UNEXPECTED".asInstanceOf[ERROR_ARANGO_DOCUMENT_KEY_UNEXPECTED]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_NOT_FOUND: ERROR_ARANGO_DOCUMENT_NOT_FOUND = "ERROR_ARANGO_DOCUMENT_NOT_FOUND".asInstanceOf[ERROR_ARANGO_DOCUMENT_NOT_FOUND]
-  
-  @js.native
-  sealed trait ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED
-    extends StObject
-       with ErrorName
-  inline def ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED: ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED = "ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED".asInstanceOf[ERROR_ARANGO_DOCUMENT_NOT_FOUND_OR_SHARDING_ATTRIBUTES_CHANGED]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_REV_BAD
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_REV_BAD: ERROR_ARANGO_DOCUMENT_REV_BAD = "ERROR_ARANGO_DOCUMENT_REV_BAD".asInstanceOf[ERROR_ARANGO_DOCUMENT_REV_BAD]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_TOO_LARGE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_TOO_LARGE: ERROR_ARANGO_DOCUMENT_TOO_LARGE = "ERROR_ARANGO_DOCUMENT_TOO_LARGE".asInstanceOf[ERROR_ARANGO_DOCUMENT_TOO_LARGE]
   
   @js.native
   sealed trait ERROR_ARANGO_DOCUMENT_TYPE_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DOCUMENT_TYPE_INVALID: ERROR_ARANGO_DOCUMENT_TYPE_INVALID = "ERROR_ARANGO_DOCUMENT_TYPE_INVALID".asInstanceOf[ERROR_ARANGO_DOCUMENT_TYPE_INVALID]
   
   @js.native
   sealed trait ERROR_ARANGO_DUPLICATE_IDENTIFIER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DUPLICATE_IDENTIFIER: ERROR_ARANGO_DUPLICATE_IDENTIFIER = "ERROR_ARANGO_DUPLICATE_IDENTIFIER".asInstanceOf[ERROR_ARANGO_DUPLICATE_IDENTIFIER]
   
   @js.native
   sealed trait ERROR_ARANGO_DUPLICATE_NAME
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_DUPLICATE_NAME: ERROR_ARANGO_DUPLICATE_NAME = "ERROR_ARANGO_DUPLICATE_NAME".asInstanceOf[ERROR_ARANGO_DUPLICATE_NAME]
   
   @js.native
   sealed trait ERROR_ARANGO_EMPTY_DATADIR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_EMPTY_DATADIR: ERROR_ARANGO_EMPTY_DATADIR = "ERROR_ARANGO_EMPTY_DATADIR".asInstanceOf[ERROR_ARANGO_EMPTY_DATADIR]
   
   @js.native
   sealed trait ERROR_ARANGO_ENDPOINT_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_ENDPOINT_NOT_FOUND: ERROR_ARANGO_ENDPOINT_NOT_FOUND = "ERROR_ARANGO_ENDPOINT_NOT_FOUND".asInstanceOf[ERROR_ARANGO_ENDPOINT_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_ARANGO_FILESYSTEM_FULL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_FILESYSTEM_FULL: ERROR_ARANGO_FILESYSTEM_FULL = "ERROR_ARANGO_FILESYSTEM_FULL".asInstanceOf[ERROR_ARANGO_FILESYSTEM_FULL]
   
   @js.native
   sealed trait ERROR_ARANGO_ICU_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_ICU_ERROR: ERROR_ARANGO_ICU_ERROR = "ERROR_ARANGO_ICU_ERROR".asInstanceOf[ERROR_ARANGO_ICU_ERROR]
   
   @js.native
   sealed trait ERROR_ARANGO_ILLEGAL_NAME
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_ILLEGAL_NAME: ERROR_ARANGO_ILLEGAL_NAME = "ERROR_ARANGO_ILLEGAL_NAME".asInstanceOf[ERROR_ARANGO_ILLEGAL_NAME]
   
   @js.native
   sealed trait ERROR_ARANGO_ILLEGAL_PARAMETER_FILE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_ILLEGAL_PARAMETER_FILE: ERROR_ARANGO_ILLEGAL_PARAMETER_FILE = "ERROR_ARANGO_ILLEGAL_PARAMETER_FILE".asInstanceOf[ERROR_ARANGO_ILLEGAL_PARAMETER_FILE]
   
   @js.native
   sealed trait ERROR_ARANGO_ILLEGAL_STATE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_ILLEGAL_STATE: ERROR_ARANGO_ILLEGAL_STATE = "ERROR_ARANGO_ILLEGAL_STATE".asInstanceOf[ERROR_ARANGO_ILLEGAL_STATE]
   
   @js.native
   sealed trait ERROR_ARANGO_INDEX_CREATION_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_INDEX_CREATION_FAILED: ERROR_ARANGO_INDEX_CREATION_FAILED = "ERROR_ARANGO_INDEX_CREATION_FAILED".asInstanceOf[ERROR_ARANGO_INDEX_CREATION_FAILED]
   
   @js.native
   sealed trait ERROR_ARANGO_INDEX_DOCUMENT_ATTRIBUTE_MISSING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_INDEX_DOCUMENT_ATTRIBUTE_MISSING: ERROR_ARANGO_INDEX_DOCUMENT_ATTRIBUTE_MISSING = "ERROR_ARANGO_INDEX_DOCUMENT_ATTRIBUTE_MISSING".asInstanceOf[ERROR_ARANGO_INDEX_DOCUMENT_ATTRIBUTE_MISSING]
   
   @js.native
   sealed trait ERROR_ARANGO_INDEX_HANDLE_BAD
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_INDEX_HANDLE_BAD: ERROR_ARANGO_INDEX_HANDLE_BAD = "ERROR_ARANGO_INDEX_HANDLE_BAD".asInstanceOf[ERROR_ARANGO_INDEX_HANDLE_BAD]
   
   @js.native
   sealed trait ERROR_ARANGO_INDEX_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_INDEX_NOT_FOUND: ERROR_ARANGO_INDEX_NOT_FOUND = "ERROR_ARANGO_INDEX_NOT_FOUND".asInstanceOf[ERROR_ARANGO_INDEX_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_ARANGO_INVALID_EDGE_ATTRIBUTE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_INVALID_EDGE_ATTRIBUTE: ERROR_ARANGO_INVALID_EDGE_ATTRIBUTE = "ERROR_ARANGO_INVALID_EDGE_ATTRIBUTE".asInstanceOf[ERROR_ARANGO_INVALID_EDGE_ATTRIBUTE]
   
   @js.native
   sealed trait ERROR_ARANGO_INVALID_KEY_GENERATOR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_INVALID_KEY_GENERATOR: ERROR_ARANGO_INVALID_KEY_GENERATOR = "ERROR_ARANGO_INVALID_KEY_GENERATOR".asInstanceOf[ERROR_ARANGO_INVALID_KEY_GENERATOR]
   
   @js.native
   sealed trait ERROR_ARANGO_IO_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_IO_ERROR: ERROR_ARANGO_IO_ERROR = "ERROR_ARANGO_IO_ERROR".asInstanceOf[ERROR_ARANGO_IO_ERROR]
   
   @js.native
   sealed trait ERROR_ARANGO_MAXIMAL_SIZE_TOO_SMALL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_MAXIMAL_SIZE_TOO_SMALL: ERROR_ARANGO_MAXIMAL_SIZE_TOO_SMALL = "ERROR_ARANGO_MAXIMAL_SIZE_TOO_SMALL".asInstanceOf[ERROR_ARANGO_MAXIMAL_SIZE_TOO_SMALL]
   
   @js.native
   sealed trait ERROR_ARANGO_MERGE_IN_PROGRESS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_MERGE_IN_PROGRESS: ERROR_ARANGO_MERGE_IN_PROGRESS = "ERROR_ARANGO_MERGE_IN_PROGRESS".asInstanceOf[ERROR_ARANGO_MERGE_IN_PROGRESS]
   
   @js.native
   sealed trait ERROR_ARANGO_MMAP_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_MMAP_FAILED: ERROR_ARANGO_MMAP_FAILED = "ERROR_ARANGO_MMAP_FAILED".asInstanceOf[ERROR_ARANGO_MMAP_FAILED]
   
   @js.native
   sealed trait ERROR_ARANGO_MSYNC_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_MSYNC_FAILED: ERROR_ARANGO_MSYNC_FAILED = "ERROR_ARANGO_MSYNC_FAILED".asInstanceOf[ERROR_ARANGO_MSYNC_FAILED]
   
   @js.native
   sealed trait ERROR_ARANGO_NO_INDEX
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_NO_INDEX: ERROR_ARANGO_NO_INDEX = "ERROR_ARANGO_NO_INDEX".asInstanceOf[ERROR_ARANGO_NO_INDEX]
   
   @js.native
   sealed trait ERROR_ARANGO_NO_JOURNAL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_NO_JOURNAL: ERROR_ARANGO_NO_JOURNAL = "ERROR_ARANGO_NO_JOURNAL".asInstanceOf[ERROR_ARANGO_NO_JOURNAL]
   
   @js.native
   sealed trait ERROR_ARANGO_OUT_OF_KEYS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_OUT_OF_KEYS: ERROR_ARANGO_OUT_OF_KEYS = "ERROR_ARANGO_OUT_OF_KEYS".asInstanceOf[ERROR_ARANGO_OUT_OF_KEYS]
   
   @js.native
   sealed trait ERROR_ARANGO_READ_ONLY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_READ_ONLY: ERROR_ARANGO_READ_ONLY = "ERROR_ARANGO_READ_ONLY".asInstanceOf[ERROR_ARANGO_READ_ONLY]
   
   @js.native
   sealed trait ERROR_ARANGO_RECOVERY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_RECOVERY: ERROR_ARANGO_RECOVERY = "ERROR_ARANGO_RECOVERY".asInstanceOf[ERROR_ARANGO_RECOVERY]
   
   @js.native
   sealed trait ERROR_ARANGO_SYNC_TIMEOUT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_SYNC_TIMEOUT: ERROR_ARANGO_SYNC_TIMEOUT = "ERROR_ARANGO_SYNC_TIMEOUT".asInstanceOf[ERROR_ARANGO_SYNC_TIMEOUT]
   
   @js.native
   sealed trait ERROR_ARANGO_TRY_AGAIN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_TRY_AGAIN: ERROR_ARANGO_TRY_AGAIN = "ERROR_ARANGO_TRY_AGAIN".asInstanceOf[ERROR_ARANGO_TRY_AGAIN]
   
   @js.native
   sealed trait ERROR_ARANGO_UNIQUE_CONSTRAINT_VIOLATED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_UNIQUE_CONSTRAINT_VIOLATED: ERROR_ARANGO_UNIQUE_CONSTRAINT_VIOLATED = "ERROR_ARANGO_UNIQUE_CONSTRAINT_VIOLATED".asInstanceOf[ERROR_ARANGO_UNIQUE_CONSTRAINT_VIOLATED]
   
   @js.native
   sealed trait ERROR_ARANGO_USE_SYSTEM_DATABASE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_USE_SYSTEM_DATABASE: ERROR_ARANGO_USE_SYSTEM_DATABASE = "ERROR_ARANGO_USE_SYSTEM_DATABASE".asInstanceOf[ERROR_ARANGO_USE_SYSTEM_DATABASE]
   
   @js.native
   sealed trait ERROR_ARANGO_VALIDATION_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_VALIDATION_FAILED: ERROR_ARANGO_VALIDATION_FAILED = "ERROR_ARANGO_VALIDATION_FAILED".asInstanceOf[ERROR_ARANGO_VALIDATION_FAILED]
   
   @js.native
   sealed trait ERROR_ARANGO_WRITE_THROTTLE_TIMEOUT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ARANGO_WRITE_THROTTLE_TIMEOUT: ERROR_ARANGO_WRITE_THROTTLE_TIMEOUT = "ERROR_ARANGO_WRITE_THROTTLE_TIMEOUT".asInstanceOf[ERROR_ARANGO_WRITE_THROTTLE_TIMEOUT]
   
   @js.native
   sealed trait ERROR_BAD_PARAMETER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_BAD_PARAMETER: ERROR_BAD_PARAMETER = "ERROR_BAD_PARAMETER".asInstanceOf[ERROR_BAD_PARAMETER]
   
   @js.native
   sealed trait ERROR_CANNOT_CREATE_DIRECTORY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CANNOT_CREATE_DIRECTORY: ERROR_CANNOT_CREATE_DIRECTORY = "ERROR_CANNOT_CREATE_DIRECTORY".asInstanceOf[ERROR_CANNOT_CREATE_DIRECTORY]
   
   @js.native
   sealed trait ERROR_CANNOT_CREATE_TEMP_FILE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CANNOT_CREATE_TEMP_FILE: ERROR_CANNOT_CREATE_TEMP_FILE = "ERROR_CANNOT_CREATE_TEMP_FILE".asInstanceOf[ERROR_CANNOT_CREATE_TEMP_FILE]
   
   @js.native
   sealed trait ERROR_CANNOT_DROP_SMART_COLLECTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CANNOT_DROP_SMART_COLLECTION: ERROR_CANNOT_DROP_SMART_COLLECTION = "ERROR_CANNOT_DROP_SMART_COLLECTION".asInstanceOf[ERROR_CANNOT_DROP_SMART_COLLECTION]
   
   @js.native
   sealed trait ERROR_CANNOT_OVERWRITE_FILE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CANNOT_OVERWRITE_FILE: ERROR_CANNOT_OVERWRITE_FILE = "ERROR_CANNOT_OVERWRITE_FILE".asInstanceOf[ERROR_CANNOT_OVERWRITE_FILE]
   
   @js.native
   sealed trait ERROR_CANNOT_READ_FILE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CANNOT_READ_FILE: ERROR_CANNOT_READ_FILE = "ERROR_CANNOT_READ_FILE".asInstanceOf[ERROR_CANNOT_READ_FILE]
   
   @js.native
   sealed trait ERROR_CANNOT_WRITE_FILE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CANNOT_WRITE_FILE: ERROR_CANNOT_WRITE_FILE = "ERROR_CANNOT_WRITE_FILE".asInstanceOf[ERROR_CANNOT_WRITE_FILE]
   
   @js.native
   sealed trait ERROR_CLUSTER_AGENCY_COMMUNICATION_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_AGENCY_COMMUNICATION_FAILED: ERROR_CLUSTER_AGENCY_COMMUNICATION_FAILED = "ERROR_CLUSTER_AGENCY_COMMUNICATION_FAILED".asInstanceOf[ERROR_CLUSTER_AGENCY_COMMUNICATION_FAILED]
   
   @js.native
   sealed trait ERROR_CLUSTER_AGENCY_STRUCTURE_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_AGENCY_STRUCTURE_INVALID: ERROR_CLUSTER_AGENCY_STRUCTURE_INVALID = "ERROR_CLUSTER_AGENCY_STRUCTURE_INVALID".asInstanceOf[ERROR_CLUSTER_AGENCY_STRUCTURE_INVALID]
   
   @js.native
   sealed trait ERROR_CLUSTER_AQL_COLLECTION_OUT_OF_SYNC
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_AQL_COLLECTION_OUT_OF_SYNC: ERROR_CLUSTER_AQL_COLLECTION_OUT_OF_SYNC = "ERROR_CLUSTER_AQL_COLLECTION_OUT_OF_SYNC".asInstanceOf[ERROR_CLUSTER_AQL_COLLECTION_OUT_OF_SYNC]
   
   @js.native
   sealed trait ERROR_CLUSTER_AQL_COMMUNICATION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_AQL_COMMUNICATION: ERROR_CLUSTER_AQL_COMMUNICATION = "ERROR_CLUSTER_AQL_COMMUNICATION".asInstanceOf[ERROR_CLUSTER_AQL_COMMUNICATION]
   
   @js.native
   sealed trait ERROR_CLUSTER_BACKEND_UNAVAILABLE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_BACKEND_UNAVAILABLE: ERROR_CLUSTER_BACKEND_UNAVAILABLE = "ERROR_CLUSTER_BACKEND_UNAVAILABLE".asInstanceOf[ERROR_CLUSTER_BACKEND_UNAVAILABLE]
   
   @js.native
   sealed trait ERROR_CLUSTER_CHAIN_OF_DISTRIBUTESHARDSLIKE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_CHAIN_OF_DISTRIBUTESHARDSLIKE: ERROR_CLUSTER_CHAIN_OF_DISTRIBUTESHARDSLIKE = "ERROR_CLUSTER_CHAIN_OF_DISTRIBUTESHARDSLIKE".asInstanceOf[ERROR_CLUSTER_CHAIN_OF_DISTRIBUTESHARDSLIKE]
   
   @js.native
   sealed trait ERROR_CLUSTER_COLLECTION_ID_EXISTS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COLLECTION_ID_EXISTS: ERROR_CLUSTER_COLLECTION_ID_EXISTS = "ERROR_CLUSTER_COLLECTION_ID_EXISTS".asInstanceOf[ERROR_CLUSTER_COLLECTION_ID_EXISTS]
   
   @js.native
   sealed trait ERROR_CLUSTER_CONNECTION_LOST
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_CONNECTION_LOST: ERROR_CLUSTER_CONNECTION_LOST = "ERROR_CLUSTER_CONNECTION_LOST".asInstanceOf[ERROR_CLUSTER_CONNECTION_LOST]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION: ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION = "ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION".asInstanceOf[ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION_IN_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION_IN_PLAN: ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION_IN_PLAN = "ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION_IN_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_CREATE_COLLECTION_IN_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE: ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE = "ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE".asInstanceOf[ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE_IN_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE_IN_PLAN: ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE_IN_PLAN = "ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE_IN_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_CREATE_DATABASE_IN_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_CREATE_INDEX_IN_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_CREATE_INDEX_IN_PLAN: ERROR_CLUSTER_COULD_NOT_CREATE_INDEX_IN_PLAN = "ERROR_CLUSTER_COULD_NOT_CREATE_INDEX_IN_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_CREATE_INDEX_IN_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_CREATE_VIEW_IN_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_CREATE_VIEW_IN_PLAN: ERROR_CLUSTER_COULD_NOT_CREATE_VIEW_IN_PLAN = "ERROR_CLUSTER_COULD_NOT_CREATE_VIEW_IN_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_CREATE_VIEW_IN_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_DETERMINE_ID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_DETERMINE_ID: ERROR_CLUSTER_COULD_NOT_DETERMINE_ID = "ERROR_CLUSTER_COULD_NOT_DETERMINE_ID".asInstanceOf[ERROR_CLUSTER_COULD_NOT_DETERMINE_ID]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_DROP_FOLLOWER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_DROP_FOLLOWER: ERROR_CLUSTER_COULD_NOT_DROP_FOLLOWER = "ERROR_CLUSTER_COULD_NOT_DROP_FOLLOWER".asInstanceOf[ERROR_CLUSTER_COULD_NOT_DROP_FOLLOWER]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_DROP_INDEX_IN_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_DROP_INDEX_IN_PLAN: ERROR_CLUSTER_COULD_NOT_DROP_INDEX_IN_PLAN = "ERROR_CLUSTER_COULD_NOT_DROP_INDEX_IN_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_DROP_INDEX_IN_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_LOCK_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_LOCK_PLAN: ERROR_CLUSTER_COULD_NOT_LOCK_PLAN = "ERROR_CLUSTER_COULD_NOT_LOCK_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_LOCK_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_READ_CURRENT_VERSION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_READ_CURRENT_VERSION: ERROR_CLUSTER_COULD_NOT_READ_CURRENT_VERSION = "ERROR_CLUSTER_COULD_NOT_READ_CURRENT_VERSION".asInstanceOf[ERROR_CLUSTER_COULD_NOT_READ_CURRENT_VERSION]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_CURRENT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_CURRENT: ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_CURRENT = "ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_CURRENT".asInstanceOf[ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_CURRENT]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_PLAN: ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_PLAN = "ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_REMOVE_COLLECTION_IN_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_CURRENT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_CURRENT: ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_CURRENT = "ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_CURRENT".asInstanceOf[ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_CURRENT]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_PLAN: ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_PLAN = "ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_PLAN".asInstanceOf[ERROR_CLUSTER_COULD_NOT_REMOVE_DATABASE_IN_PLAN]
   
   @js.native
   sealed trait ERROR_CLUSTER_COULD_NOT_TRUNCATE_COLLECTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_COULD_NOT_TRUNCATE_COLLECTION: ERROR_CLUSTER_COULD_NOT_TRUNCATE_COLLECTION = "ERROR_CLUSTER_COULD_NOT_TRUNCATE_COLLECTION".asInstanceOf[ERROR_CLUSTER_COULD_NOT_TRUNCATE_COLLECTION]
   
   @js.native
   sealed trait ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_NUMBER_OF_SHARDS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_NUMBER_OF_SHARDS: ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_NUMBER_OF_SHARDS = "ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_NUMBER_OF_SHARDS".asInstanceOf[ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_NUMBER_OF_SHARDS]
   
   @js.native
   sealed trait ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_REPLICATION_FACTOR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_REPLICATION_FACTOR: ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_REPLICATION_FACTOR = "ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_REPLICATION_FACTOR".asInstanceOf[ERROR_CLUSTER_DISTRIBUTE_SHARDS_LIKE_REPLICATION_FACTOR]
   
   @js.native
   sealed trait ERROR_CLUSTER_GOT_CONTRADICTING_ANSWERS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_GOT_CONTRADICTING_ANSWERS: ERROR_CLUSTER_GOT_CONTRADICTING_ANSWERS = "ERROR_CLUSTER_GOT_CONTRADICTING_ANSWERS".asInstanceOf[ERROR_CLUSTER_GOT_CONTRADICTING_ANSWERS]
   
   @js.native
   sealed trait ERROR_CLUSTER_INSUFFICIENT_DBSERVERS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_INSUFFICIENT_DBSERVERS: ERROR_CLUSTER_INSUFFICIENT_DBSERVERS = "ERROR_CLUSTER_INSUFFICIENT_DBSERVERS".asInstanceOf[ERROR_CLUSTER_INSUFFICIENT_DBSERVERS]
   
   @js.native
   sealed trait ERROR_CLUSTER_LEADERSHIP_CHALLENGE_ONGOING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_LEADERSHIP_CHALLENGE_ONGOING: ERROR_CLUSTER_LEADERSHIP_CHALLENGE_ONGOING = "ERROR_CLUSTER_LEADERSHIP_CHALLENGE_ONGOING".asInstanceOf[ERROR_CLUSTER_LEADERSHIP_CHALLENGE_ONGOING]
   
   @js.native
   sealed trait ERROR_CLUSTER_MUST_NOT_CHANGE_SHARDING_ATTRIBUTES
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_MUST_NOT_CHANGE_SHARDING_ATTRIBUTES: ERROR_CLUSTER_MUST_NOT_CHANGE_SHARDING_ATTRIBUTES = "ERROR_CLUSTER_MUST_NOT_CHANGE_SHARDING_ATTRIBUTES".asInstanceOf[ERROR_CLUSTER_MUST_NOT_CHANGE_SHARDING_ATTRIBUTES]
   
   @js.native
   sealed trait ERROR_CLUSTER_MUST_NOT_DROP_COLL_OTHER_DISTRIBUTESHARDSLIKE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_MUST_NOT_DROP_COLL_OTHER_DISTRIBUTESHARDSLIKE: ERROR_CLUSTER_MUST_NOT_DROP_COLL_OTHER_DISTRIBUTESHARDSLIKE = "ERROR_CLUSTER_MUST_NOT_DROP_COLL_OTHER_DISTRIBUTESHARDSLIKE".asInstanceOf[ERROR_CLUSTER_MUST_NOT_DROP_COLL_OTHER_DISTRIBUTESHARDSLIKE]
   
   @js.native
   sealed trait ERROR_CLUSTER_MUST_NOT_SPECIFY_KEY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_MUST_NOT_SPECIFY_KEY: ERROR_CLUSTER_MUST_NOT_SPECIFY_KEY = "ERROR_CLUSTER_MUST_NOT_SPECIFY_KEY".asInstanceOf[ERROR_CLUSTER_MUST_NOT_SPECIFY_KEY]
   
   @js.native
   sealed trait ERROR_CLUSTER_NOT_ALL_SHARDING_ATTRIBUTES_GIVEN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_NOT_ALL_SHARDING_ATTRIBUTES_GIVEN: ERROR_CLUSTER_NOT_ALL_SHARDING_ATTRIBUTES_GIVEN = "ERROR_CLUSTER_NOT_ALL_SHARDING_ATTRIBUTES_GIVEN".asInstanceOf[ERROR_CLUSTER_NOT_ALL_SHARDING_ATTRIBUTES_GIVEN]
   
   @js.native
   sealed trait ERROR_CLUSTER_NOT_LEADER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_NOT_LEADER: ERROR_CLUSTER_NOT_LEADER = "ERROR_CLUSTER_NOT_LEADER".asInstanceOf[ERROR_CLUSTER_NOT_LEADER]
   
   @js.native
   sealed trait ERROR_CLUSTER_NO_AGENCY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_NO_AGENCY: ERROR_CLUSTER_NO_AGENCY = "ERROR_CLUSTER_NO_AGENCY".asInstanceOf[ERROR_CLUSTER_NO_AGENCY]
   
   @js.native
   sealed trait ERROR_CLUSTER_NO_COORDINATOR_HEADER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_NO_COORDINATOR_HEADER: ERROR_CLUSTER_NO_COORDINATOR_HEADER = "ERROR_CLUSTER_NO_COORDINATOR_HEADER".asInstanceOf[ERROR_CLUSTER_NO_COORDINATOR_HEADER]
   
   @js.native
   sealed trait ERROR_CLUSTER_ONLY_ON_COORDINATOR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_ONLY_ON_COORDINATOR: ERROR_CLUSTER_ONLY_ON_COORDINATOR = "ERROR_CLUSTER_ONLY_ON_COORDINATOR".asInstanceOf[ERROR_CLUSTER_ONLY_ON_COORDINATOR]
   
   @js.native
   sealed trait ERROR_CLUSTER_ONLY_ON_DBSERVER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_ONLY_ON_DBSERVER: ERROR_CLUSTER_ONLY_ON_DBSERVER = "ERROR_CLUSTER_ONLY_ON_DBSERVER".asInstanceOf[ERROR_CLUSTER_ONLY_ON_DBSERVER]
   
   @js.native
   sealed trait ERROR_CLUSTER_READING_PLAN_AGENCY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_READING_PLAN_AGENCY: ERROR_CLUSTER_READING_PLAN_AGENCY = "ERROR_CLUSTER_READING_PLAN_AGENCY".asInstanceOf[ERROR_CLUSTER_READING_PLAN_AGENCY]
   
   @js.native
   sealed trait ERROR_CLUSTER_SHARD_FOLLOWER_REFUSES_OPERATION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_SHARD_FOLLOWER_REFUSES_OPERATION: ERROR_CLUSTER_SHARD_FOLLOWER_REFUSES_OPERATION = "ERROR_CLUSTER_SHARD_FOLLOWER_REFUSES_OPERATION".asInstanceOf[ERROR_CLUSTER_SHARD_FOLLOWER_REFUSES_OPERATION]
   
   @js.native
   sealed trait ERROR_CLUSTER_SHARD_GONE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_SHARD_GONE: ERROR_CLUSTER_SHARD_GONE = "ERROR_CLUSTER_SHARD_GONE".asInstanceOf[ERROR_CLUSTER_SHARD_GONE]
   
   @js.native
   sealed trait ERROR_CLUSTER_SHARD_LEADER_REFUSES_REPLICATION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_SHARD_LEADER_REFUSES_REPLICATION: ERROR_CLUSTER_SHARD_LEADER_REFUSES_REPLICATION = "ERROR_CLUSTER_SHARD_LEADER_REFUSES_REPLICATION".asInstanceOf[ERROR_CLUSTER_SHARD_LEADER_REFUSES_REPLICATION]
   
   @js.native
   sealed trait ERROR_CLUSTER_SHARD_LEADER_RESIGNED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_SHARD_LEADER_RESIGNED: ERROR_CLUSTER_SHARD_LEADER_RESIGNED = "ERROR_CLUSTER_SHARD_LEADER_RESIGNED".asInstanceOf[ERROR_CLUSTER_SHARD_LEADER_RESIGNED]
   
   @js.native
   sealed trait ERROR_CLUSTER_TIMEOUT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_TIMEOUT: ERROR_CLUSTER_TIMEOUT = "ERROR_CLUSTER_TIMEOUT".asInstanceOf[ERROR_CLUSTER_TIMEOUT]
   
   @js.native
   sealed trait ERROR_CLUSTER_UNKNOWN_CALLBACK_ENDPOINT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_UNKNOWN_CALLBACK_ENDPOINT: ERROR_CLUSTER_UNKNOWN_CALLBACK_ENDPOINT = "ERROR_CLUSTER_UNKNOWN_CALLBACK_ENDPOINT".asInstanceOf[ERROR_CLUSTER_UNKNOWN_CALLBACK_ENDPOINT]
   
   @js.native
   sealed trait ERROR_CLUSTER_UNKNOWN_DISTRIBUTESHARDSLIKE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_UNKNOWN_DISTRIBUTESHARDSLIKE: ERROR_CLUSTER_UNKNOWN_DISTRIBUTESHARDSLIKE = "ERROR_CLUSTER_UNKNOWN_DISTRIBUTESHARDSLIKE".asInstanceOf[ERROR_CLUSTER_UNKNOWN_DISTRIBUTESHARDSLIKE]
   
   @js.native
   sealed trait ERROR_CLUSTER_UNSUPPORTED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CLUSTER_UNSUPPORTED: ERROR_CLUSTER_UNSUPPORTED = "ERROR_CLUSTER_UNSUPPORTED".asInstanceOf[ERROR_CLUSTER_UNSUPPORTED]
   
   @js.native
   sealed trait ERROR_CORRUPTED_CSV
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CORRUPTED_CSV: ERROR_CORRUPTED_CSV = "ERROR_CORRUPTED_CSV".asInstanceOf[ERROR_CORRUPTED_CSV]
   
   @js.native
   sealed trait ERROR_CURSOR_BUSY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CURSOR_BUSY: ERROR_CURSOR_BUSY = "ERROR_CURSOR_BUSY".asInstanceOf[ERROR_CURSOR_BUSY]
   
   @js.native
   sealed trait ERROR_CURSOR_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_CURSOR_NOT_FOUND: ERROR_CURSOR_NOT_FOUND = "ERROR_CURSOR_NOT_FOUND".asInstanceOf[ERROR_CURSOR_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_DEADLOCK
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_DEADLOCK: ERROR_DEADLOCK = "ERROR_DEADLOCK".asInstanceOf[ERROR_DEADLOCK]
   
   @js.native
   sealed trait ERROR_DEAD_PID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_DEAD_PID: ERROR_DEAD_PID = "ERROR_DEAD_PID".asInstanceOf[ERROR_DEAD_PID]
   
   @js.native
   sealed trait ERROR_DEBUG
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_DEBUG: ERROR_DEBUG = "ERROR_DEBUG".asInstanceOf[ERROR_DEBUG]
   
   @js.native
   sealed trait ERROR_DISPATCHER_IS_STOPPING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_DISPATCHER_IS_STOPPING: ERROR_DISPATCHER_IS_STOPPING = "ERROR_DISPATCHER_IS_STOPPING".asInstanceOf[ERROR_DISPATCHER_IS_STOPPING]
   
   @js.native
   sealed trait ERROR_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_FAILED: ERROR_FAILED = "ERROR_FAILED".asInstanceOf[ERROR_FAILED]
   
   @js.native
   sealed trait ERROR_FILE_EXISTS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_FILE_EXISTS: ERROR_FILE_EXISTS = "ERROR_FILE_EXISTS".asInstanceOf[ERROR_FILE_EXISTS]
   
   @js.native
   sealed trait ERROR_FILE_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_FILE_NOT_FOUND: ERROR_FILE_NOT_FOUND = "ERROR_FILE_NOT_FOUND".asInstanceOf[ERROR_FILE_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_FORBIDDEN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_FORBIDDEN: ERROR_FORBIDDEN = "ERROR_FORBIDDEN".asInstanceOf[ERROR_FORBIDDEN]
   
   @js.native
   sealed trait ERROR_GRAPH_COULD_NOT_CHANGE_EDGE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_COULD_NOT_CHANGE_EDGE: ERROR_GRAPH_COULD_NOT_CHANGE_EDGE = "ERROR_GRAPH_COULD_NOT_CHANGE_EDGE".asInstanceOf[ERROR_GRAPH_COULD_NOT_CHANGE_EDGE]
   
   @js.native
   sealed trait ERROR_GRAPH_COULD_NOT_CHANGE_VERTEX
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_COULD_NOT_CHANGE_VERTEX: ERROR_GRAPH_COULD_NOT_CHANGE_VERTEX = "ERROR_GRAPH_COULD_NOT_CHANGE_VERTEX".asInstanceOf[ERROR_GRAPH_COULD_NOT_CHANGE_VERTEX]
   
   @js.native
   sealed trait ERROR_GRAPH_COULD_NOT_CREATE_EDGE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_COULD_NOT_CREATE_EDGE: ERROR_GRAPH_COULD_NOT_CREATE_EDGE = "ERROR_GRAPH_COULD_NOT_CREATE_EDGE".asInstanceOf[ERROR_GRAPH_COULD_NOT_CREATE_EDGE]
   
   @js.native
   sealed trait ERROR_GRAPH_COULD_NOT_CREATE_GRAPH
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_COULD_NOT_CREATE_GRAPH: ERROR_GRAPH_COULD_NOT_CREATE_GRAPH = "ERROR_GRAPH_COULD_NOT_CREATE_GRAPH".asInstanceOf[ERROR_GRAPH_COULD_NOT_CREATE_GRAPH]
   
   @js.native
   sealed trait ERROR_GRAPH_COULD_NOT_CREATE_VERTEX
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_COULD_NOT_CREATE_VERTEX: ERROR_GRAPH_COULD_NOT_CREATE_VERTEX = "ERROR_GRAPH_COULD_NOT_CREATE_VERTEX".asInstanceOf[ERROR_GRAPH_COULD_NOT_CREATE_VERTEX]
   
   @js.native
   sealed trait ERROR_GRAPH_EMPTY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_EMPTY: ERROR_GRAPH_EMPTY = "ERROR_GRAPH_EMPTY".asInstanceOf[ERROR_GRAPH_EMPTY]
   
   @js.native
   sealed trait ERROR_GRAPH_INVALID_EDGE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_INVALID_EDGE: ERROR_GRAPH_INVALID_EDGE = "ERROR_GRAPH_INVALID_EDGE".asInstanceOf[ERROR_GRAPH_INVALID_EDGE]
   
   @js.native
   sealed trait ERROR_GRAPH_INVALID_FILTER_RESULT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_INVALID_FILTER_RESULT: ERROR_GRAPH_INVALID_FILTER_RESULT = "ERROR_GRAPH_INVALID_FILTER_RESULT".asInstanceOf[ERROR_GRAPH_INVALID_FILTER_RESULT]
   
   @js.native
   sealed trait ERROR_GRAPH_INVALID_GRAPH
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_INVALID_GRAPH: ERROR_GRAPH_INVALID_GRAPH = "ERROR_GRAPH_INVALID_GRAPH".asInstanceOf[ERROR_GRAPH_INVALID_GRAPH]
   
   @js.native
   sealed trait ERROR_GRAPH_INVALID_VERTEX
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_INVALID_VERTEX: ERROR_GRAPH_INVALID_VERTEX = "ERROR_GRAPH_INVALID_VERTEX".asInstanceOf[ERROR_GRAPH_INVALID_VERTEX]
   
   @js.native
   sealed trait ERROR_GRAPH_TOO_MANY_ITERATIONS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_GRAPH_TOO_MANY_ITERATIONS: ERROR_GRAPH_TOO_MANY_ITERATIONS = "ERROR_GRAPH_TOO_MANY_ITERATIONS".asInstanceOf[ERROR_GRAPH_TOO_MANY_ITERATIONS]
   
   @js.native
   sealed trait ERROR_HTTP_BAD_PARAMETER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_BAD_PARAMETER: ERROR_HTTP_BAD_PARAMETER = "ERROR_HTTP_BAD_PARAMETER".asInstanceOf[ERROR_HTTP_BAD_PARAMETER]
   
   @js.native
   sealed trait ERROR_HTTP_CORRUPTED_JSON
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_CORRUPTED_JSON: ERROR_HTTP_CORRUPTED_JSON = "ERROR_HTTP_CORRUPTED_JSON".asInstanceOf[ERROR_HTTP_CORRUPTED_JSON]
   
   @js.native
   sealed trait ERROR_HTTP_FORBIDDEN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_FORBIDDEN: ERROR_HTTP_FORBIDDEN = "ERROR_HTTP_FORBIDDEN".asInstanceOf[ERROR_HTTP_FORBIDDEN]
   
   @js.native
   sealed trait ERROR_HTTP_GATEWAY_TIMEOUT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_GATEWAY_TIMEOUT: ERROR_HTTP_GATEWAY_TIMEOUT = "ERROR_HTTP_GATEWAY_TIMEOUT".asInstanceOf[ERROR_HTTP_GATEWAY_TIMEOUT]
   
   @js.native
   sealed trait ERROR_HTTP_METHOD_NOT_ALLOWED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_METHOD_NOT_ALLOWED: ERROR_HTTP_METHOD_NOT_ALLOWED = "ERROR_HTTP_METHOD_NOT_ALLOWED".asInstanceOf[ERROR_HTTP_METHOD_NOT_ALLOWED]
   
   @js.native
   sealed trait ERROR_HTTP_NOT_ACCEPTABLE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_NOT_ACCEPTABLE: ERROR_HTTP_NOT_ACCEPTABLE = "ERROR_HTTP_NOT_ACCEPTABLE".asInstanceOf[ERROR_HTTP_NOT_ACCEPTABLE]
   
   @js.native
   sealed trait ERROR_HTTP_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_NOT_FOUND: ERROR_HTTP_NOT_FOUND = "ERROR_HTTP_NOT_FOUND".asInstanceOf[ERROR_HTTP_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_HTTP_PRECONDITION_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_PRECONDITION_FAILED: ERROR_HTTP_PRECONDITION_FAILED = "ERROR_HTTP_PRECONDITION_FAILED".asInstanceOf[ERROR_HTTP_PRECONDITION_FAILED]
   
   @js.native
   sealed trait ERROR_HTTP_SERVER_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_SERVER_ERROR: ERROR_HTTP_SERVER_ERROR = "ERROR_HTTP_SERVER_ERROR".asInstanceOf[ERROR_HTTP_SERVER_ERROR]
   
   @js.native
   sealed trait ERROR_HTTP_SERVICE_UNAVAILABLE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_SERVICE_UNAVAILABLE: ERROR_HTTP_SERVICE_UNAVAILABLE = "ERROR_HTTP_SERVICE_UNAVAILABLE".asInstanceOf[ERROR_HTTP_SERVICE_UNAVAILABLE]
   
   @js.native
   sealed trait ERROR_HTTP_SUPERFLUOUS_SUFFICES
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_SUPERFLUOUS_SUFFICES: ERROR_HTTP_SUPERFLUOUS_SUFFICES = "ERROR_HTTP_SUPERFLUOUS_SUFFICES".asInstanceOf[ERROR_HTTP_SUPERFLUOUS_SUFFICES]
   
   @js.native
   sealed trait ERROR_HTTP_UNAUTHORIZED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_HTTP_UNAUTHORIZED: ERROR_HTTP_UNAUTHORIZED = "ERROR_HTTP_UNAUTHORIZED".asInstanceOf[ERROR_HTTP_UNAUTHORIZED]
   
   @js.native
   sealed trait ERROR_ILLEGAL_NUMBER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ILLEGAL_NUMBER: ERROR_ILLEGAL_NUMBER = "ERROR_ILLEGAL_NUMBER".asInstanceOf[ERROR_ILLEGAL_NUMBER]
   
   @js.native
   sealed trait ERROR_ILLEGAL_OPTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ILLEGAL_OPTION: ERROR_ILLEGAL_OPTION = "ERROR_ILLEGAL_OPTION".asInstanceOf[ERROR_ILLEGAL_OPTION]
   
   @js.native
   sealed trait ERROR_ILLEGAL_SMART_GRAPH_ATTRIBUTE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ILLEGAL_SMART_GRAPH_ATTRIBUTE: ERROR_ILLEGAL_SMART_GRAPH_ATTRIBUTE = "ERROR_ILLEGAL_SMART_GRAPH_ATTRIBUTE".asInstanceOf[ERROR_ILLEGAL_SMART_GRAPH_ATTRIBUTE]
   
   @js.native
   sealed trait ERROR_INTERNAL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_INTERNAL: ERROR_INTERNAL = "ERROR_INTERNAL".asInstanceOf[ERROR_INTERNAL]
   
   @js.native
   sealed trait ERROR_INVALID_FOXX_OPTIONS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_INVALID_FOXX_OPTIONS: ERROR_INVALID_FOXX_OPTIONS = "ERROR_INVALID_FOXX_OPTIONS".asInstanceOf[ERROR_INVALID_FOXX_OPTIONS]
   
   @js.native
   sealed trait ERROR_INVALID_MOUNTPOINT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_INVALID_MOUNTPOINT: ERROR_INVALID_MOUNTPOINT = "ERROR_INVALID_MOUNTPOINT".asInstanceOf[ERROR_INVALID_MOUNTPOINT]
   
   @js.native
   sealed trait ERROR_INVALID_SERVICE_MANIFEST
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_INVALID_SERVICE_MANIFEST: ERROR_INVALID_SERVICE_MANIFEST = "ERROR_INVALID_SERVICE_MANIFEST".asInstanceOf[ERROR_INVALID_SERVICE_MANIFEST]
   
   @js.native
   sealed trait ERROR_IP_ADDRESS_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_IP_ADDRESS_INVALID: ERROR_IP_ADDRESS_INVALID = "ERROR_IP_ADDRESS_INVALID".asInstanceOf[ERROR_IP_ADDRESS_INVALID]
   
   @js.native
   sealed trait ERROR_KEY_MUST_BE_PREFIXED_WITH_SMART_GRAPH_ATTRIBUTE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_KEY_MUST_BE_PREFIXED_WITH_SMART_GRAPH_ATTRIBUTE: ERROR_KEY_MUST_BE_PREFIXED_WITH_SMART_GRAPH_ATTRIBUTE = "ERROR_KEY_MUST_BE_PREFIXED_WITH_SMART_GRAPH_ATTRIBUTE".asInstanceOf[ERROR_KEY_MUST_BE_PREFIXED_WITH_SMART_GRAPH_ATTRIBUTE]
   
   @js.native
   sealed trait ERROR_LDAP_CANNOT_BIND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_CANNOT_BIND: ERROR_LDAP_CANNOT_BIND = "ERROR_LDAP_CANNOT_BIND".asInstanceOf[ERROR_LDAP_CANNOT_BIND]
   
   @js.native
   sealed trait ERROR_LDAP_CANNOT_INIT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_CANNOT_INIT: ERROR_LDAP_CANNOT_INIT = "ERROR_LDAP_CANNOT_INIT".asInstanceOf[ERROR_LDAP_CANNOT_INIT]
   
   @js.native
   sealed trait ERROR_LDAP_CANNOT_SEARCH
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_CANNOT_SEARCH: ERROR_LDAP_CANNOT_SEARCH = "ERROR_LDAP_CANNOT_SEARCH".asInstanceOf[ERROR_LDAP_CANNOT_SEARCH]
   
   @js.native
   sealed trait ERROR_LDAP_CANNOT_SET_OPTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_CANNOT_SET_OPTION: ERROR_LDAP_CANNOT_SET_OPTION = "ERROR_LDAP_CANNOT_SET_OPTION".asInstanceOf[ERROR_LDAP_CANNOT_SET_OPTION]
   
   @js.native
   sealed trait ERROR_LDAP_CANNOT_START_TLS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_CANNOT_START_TLS: ERROR_LDAP_CANNOT_START_TLS = "ERROR_LDAP_CANNOT_START_TLS".asInstanceOf[ERROR_LDAP_CANNOT_START_TLS]
   
   @js.native
   sealed trait ERROR_LDAP_CANNOT_UNBIND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_CANNOT_UNBIND: ERROR_LDAP_CANNOT_UNBIND = "ERROR_LDAP_CANNOT_UNBIND".asInstanceOf[ERROR_LDAP_CANNOT_UNBIND]
   
   @js.native
   sealed trait ERROR_LDAP_FOUND_NO_OBJECTS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_FOUND_NO_OBJECTS: ERROR_LDAP_FOUND_NO_OBJECTS = "ERROR_LDAP_FOUND_NO_OBJECTS".asInstanceOf[ERROR_LDAP_FOUND_NO_OBJECTS]
   
   @js.native
   sealed trait ERROR_LDAP_INVALID_MODE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_INVALID_MODE: ERROR_LDAP_INVALID_MODE = "ERROR_LDAP_INVALID_MODE".asInstanceOf[ERROR_LDAP_INVALID_MODE]
   
   @js.native
   sealed trait ERROR_LDAP_NOT_ONE_USER_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_NOT_ONE_USER_FOUND: ERROR_LDAP_NOT_ONE_USER_FOUND = "ERROR_LDAP_NOT_ONE_USER_FOUND".asInstanceOf[ERROR_LDAP_NOT_ONE_USER_FOUND]
   
   @js.native
   sealed trait ERROR_LDAP_USER_NOT_IDENTIFIED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LDAP_USER_NOT_IDENTIFIED: ERROR_LDAP_USER_NOT_IDENTIFIED = "ERROR_LDAP_USER_NOT_IDENTIFIED".asInstanceOf[ERROR_LDAP_USER_NOT_IDENTIFIED]
   
   @js.native
   sealed trait ERROR_LOCKED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LOCKED: ERROR_LOCKED = "ERROR_LOCKED".asInstanceOf[ERROR_LOCKED]
   
   @js.native
   sealed trait ERROR_LOCK_TIMEOUT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_LOCK_TIMEOUT: ERROR_LOCK_TIMEOUT = "ERROR_LOCK_TIMEOUT".asInstanceOf[ERROR_LOCK_TIMEOUT]
   
   @js.native
   sealed trait ERROR_MALFORMED_MANIFEST_FILE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_MALFORMED_MANIFEST_FILE: ERROR_MALFORMED_MANIFEST_FILE = "ERROR_MALFORMED_MANIFEST_FILE".asInstanceOf[ERROR_MALFORMED_MANIFEST_FILE]
   
   @js.native
   sealed trait ERROR_MODULE_FAILURE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_MODULE_FAILURE: ERROR_MODULE_FAILURE = "ERROR_MODULE_FAILURE".asInstanceOf[ERROR_MODULE_FAILURE]
   
   @js.native
   sealed trait ERROR_MODULE_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_MODULE_NOT_FOUND: ERROR_MODULE_NOT_FOUND = "ERROR_MODULE_NOT_FOUND".asInstanceOf[ERROR_MODULE_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_MODULE_SYNTAX_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_MODULE_SYNTAX_ERROR: ERROR_MODULE_SYNTAX_ERROR = "ERROR_MODULE_SYNTAX_ERROR".asInstanceOf[ERROR_MODULE_SYNTAX_ERROR]
   
   @js.native
   sealed trait ERROR_NOT_IMPLEMENTED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_NOT_IMPLEMENTED: ERROR_NOT_IMPLEMENTED = "ERROR_NOT_IMPLEMENTED".asInstanceOf[ERROR_NOT_IMPLEMENTED]
   
   @js.native
   sealed trait ERROR_NO_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_NO_ERROR: ERROR_NO_ERROR = "ERROR_NO_ERROR".asInstanceOf[ERROR_NO_ERROR]
   
   @js.native
   sealed trait ERROR_NO_SMART_COLLECTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_NO_SMART_COLLECTION: ERROR_NO_SMART_COLLECTION = "ERROR_NO_SMART_COLLECTION".asInstanceOf[ERROR_NO_SMART_COLLECTION]
   
   @js.native
   sealed trait ERROR_NO_SMART_GRAPH_ATTRIBUTE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_NO_SMART_GRAPH_ATTRIBUTE: ERROR_NO_SMART_GRAPH_ATTRIBUTE = "ERROR_NO_SMART_GRAPH_ATTRIBUTE".asInstanceOf[ERROR_NO_SMART_GRAPH_ATTRIBUTE]
   
   @js.native
   sealed trait ERROR_NUMERIC_OVERFLOW
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_NUMERIC_OVERFLOW: ERROR_NUMERIC_OVERFLOW = "ERROR_NUMERIC_OVERFLOW".asInstanceOf[ERROR_NUMERIC_OVERFLOW]
   
   @js.native
   sealed trait ERROR_ONLY_ENTERPRISE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_ONLY_ENTERPRISE: ERROR_ONLY_ENTERPRISE = "ERROR_ONLY_ENTERPRISE".asInstanceOf[ERROR_ONLY_ENTERPRISE]
   
   @js.native
   sealed trait ERROR_OUT_OF_MEMORY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_OUT_OF_MEMORY: ERROR_OUT_OF_MEMORY = "ERROR_OUT_OF_MEMORY".asInstanceOf[ERROR_OUT_OF_MEMORY]
   
   @js.native
   sealed trait ERROR_OUT_OF_MEMORY_MMAP
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_OUT_OF_MEMORY_MMAP: ERROR_OUT_OF_MEMORY_MMAP = "ERROR_OUT_OF_MEMORY_MMAP".asInstanceOf[ERROR_OUT_OF_MEMORY_MMAP]
   
   @js.native
   sealed trait ERROR_QUERY_ACCESS_AFTER_MODIFICATION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_ACCESS_AFTER_MODIFICATION: ERROR_QUERY_ACCESS_AFTER_MODIFICATION = "ERROR_QUERY_ACCESS_AFTER_MODIFICATION".asInstanceOf[ERROR_QUERY_ACCESS_AFTER_MODIFICATION]
   
   @js.native
   sealed trait ERROR_QUERY_ARRAY_EXPECTED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_ARRAY_EXPECTED: ERROR_QUERY_ARRAY_EXPECTED = "ERROR_QUERY_ARRAY_EXPECTED".asInstanceOf[ERROR_QUERY_ARRAY_EXPECTED]
   
   @js.native
   sealed trait ERROR_QUERY_BAD_JSON_PLAN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_BAD_JSON_PLAN: ERROR_QUERY_BAD_JSON_PLAN = "ERROR_QUERY_BAD_JSON_PLAN".asInstanceOf[ERROR_QUERY_BAD_JSON_PLAN]
   
   @js.native
   sealed trait ERROR_QUERY_BIND_PARAMETERS_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_BIND_PARAMETERS_INVALID: ERROR_QUERY_BIND_PARAMETERS_INVALID = "ERROR_QUERY_BIND_PARAMETERS_INVALID".asInstanceOf[ERROR_QUERY_BIND_PARAMETERS_INVALID]
   
   @js.native
   sealed trait ERROR_QUERY_BIND_PARAMETER_MISSING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_BIND_PARAMETER_MISSING: ERROR_QUERY_BIND_PARAMETER_MISSING = "ERROR_QUERY_BIND_PARAMETER_MISSING".asInstanceOf[ERROR_QUERY_BIND_PARAMETER_MISSING]
   
   @js.native
   sealed trait ERROR_QUERY_BIND_PARAMETER_TYPE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_BIND_PARAMETER_TYPE: ERROR_QUERY_BIND_PARAMETER_TYPE = "ERROR_QUERY_BIND_PARAMETER_TYPE".asInstanceOf[ERROR_QUERY_BIND_PARAMETER_TYPE]
   
   @js.native
   sealed trait ERROR_QUERY_BIND_PARAMETER_UNDECLARED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_BIND_PARAMETER_UNDECLARED: ERROR_QUERY_BIND_PARAMETER_UNDECLARED = "ERROR_QUERY_BIND_PARAMETER_UNDECLARED".asInstanceOf[ERROR_QUERY_BIND_PARAMETER_UNDECLARED]
   
   @js.native
   sealed trait ERROR_QUERY_COLLECTION_LOCK_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_COLLECTION_LOCK_FAILED: ERROR_QUERY_COLLECTION_LOCK_FAILED = "ERROR_QUERY_COLLECTION_LOCK_FAILED".asInstanceOf[ERROR_QUERY_COLLECTION_LOCK_FAILED]
   
   @js.native
   sealed trait ERROR_QUERY_COLLECTION_USED_IN_EXPRESSION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_COLLECTION_USED_IN_EXPRESSION: ERROR_QUERY_COLLECTION_USED_IN_EXPRESSION = "ERROR_QUERY_COLLECTION_USED_IN_EXPRESSION".asInstanceOf[ERROR_QUERY_COLLECTION_USED_IN_EXPRESSION]
   
   @js.native
   sealed trait ERROR_QUERY_COMPILE_TIME_OPTIONS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_COMPILE_TIME_OPTIONS: ERROR_QUERY_COMPILE_TIME_OPTIONS = "ERROR_QUERY_COMPILE_TIME_OPTIONS".asInstanceOf[ERROR_QUERY_COMPILE_TIME_OPTIONS]
   
   @js.native
   sealed trait ERROR_QUERY_DISALLOWED_DYNAMIC_CALL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_DISALLOWED_DYNAMIC_CALL: ERROR_QUERY_DISALLOWED_DYNAMIC_CALL = "ERROR_QUERY_DISALLOWED_DYNAMIC_CALL".asInstanceOf[ERROR_QUERY_DISALLOWED_DYNAMIC_CALL]
   
   @js.native
   sealed trait ERROR_QUERY_DIVISION_BY_ZERO
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_DIVISION_BY_ZERO: ERROR_QUERY_DIVISION_BY_ZERO = "ERROR_QUERY_DIVISION_BY_ZERO".asInstanceOf[ERROR_QUERY_DIVISION_BY_ZERO]
   
   @js.native
   sealed trait ERROR_QUERY_DOCUMENT_ATTRIBUTE_REDECLARED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_DOCUMENT_ATTRIBUTE_REDECLARED: ERROR_QUERY_DOCUMENT_ATTRIBUTE_REDECLARED = "ERROR_QUERY_DOCUMENT_ATTRIBUTE_REDECLARED".asInstanceOf[ERROR_QUERY_DOCUMENT_ATTRIBUTE_REDECLARED]
   
   @js.native
   sealed trait ERROR_QUERY_EMPTY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_EMPTY: ERROR_QUERY_EMPTY = "ERROR_QUERY_EMPTY".asInstanceOf[ERROR_QUERY_EMPTY]
   
   @js.native
   sealed trait ERROR_QUERY_EXCEPTION_OPTIONS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_EXCEPTION_OPTIONS: ERROR_QUERY_EXCEPTION_OPTIONS = "ERROR_QUERY_EXCEPTION_OPTIONS".asInstanceOf[ERROR_QUERY_EXCEPTION_OPTIONS]
   
   @js.native
   sealed trait ERROR_QUERY_FAIL_CALLED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FAIL_CALLED: ERROR_QUERY_FAIL_CALLED = "ERROR_QUERY_FAIL_CALLED".asInstanceOf[ERROR_QUERY_FAIL_CALLED]
   
   @js.native
   sealed trait ERROR_QUERY_FULLTEXT_INDEX_MISSING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FULLTEXT_INDEX_MISSING: ERROR_QUERY_FULLTEXT_INDEX_MISSING = "ERROR_QUERY_FULLTEXT_INDEX_MISSING".asInstanceOf[ERROR_QUERY_FULLTEXT_INDEX_MISSING]
   
   @js.native
   sealed trait ERROR_QUERY_FUNCTION_ARGUMENT_NUMBER_MISMATCH
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FUNCTION_ARGUMENT_NUMBER_MISMATCH: ERROR_QUERY_FUNCTION_ARGUMENT_NUMBER_MISMATCH = "ERROR_QUERY_FUNCTION_ARGUMENT_NUMBER_MISMATCH".asInstanceOf[ERROR_QUERY_FUNCTION_ARGUMENT_NUMBER_MISMATCH]
   
   @js.native
   sealed trait ERROR_QUERY_FUNCTION_ARGUMENT_TYPE_MISMATCH
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FUNCTION_ARGUMENT_TYPE_MISMATCH: ERROR_QUERY_FUNCTION_ARGUMENT_TYPE_MISMATCH = "ERROR_QUERY_FUNCTION_ARGUMENT_TYPE_MISMATCH".asInstanceOf[ERROR_QUERY_FUNCTION_ARGUMENT_TYPE_MISMATCH]
   
   @js.native
   sealed trait ERROR_QUERY_FUNCTION_INVALID_CODE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FUNCTION_INVALID_CODE: ERROR_QUERY_FUNCTION_INVALID_CODE = "ERROR_QUERY_FUNCTION_INVALID_CODE".asInstanceOf[ERROR_QUERY_FUNCTION_INVALID_CODE]
   
   @js.native
   sealed trait ERROR_QUERY_FUNCTION_INVALID_NAME
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FUNCTION_INVALID_NAME: ERROR_QUERY_FUNCTION_INVALID_NAME = "ERROR_QUERY_FUNCTION_INVALID_NAME".asInstanceOf[ERROR_QUERY_FUNCTION_INVALID_NAME]
   
   @js.native
   sealed trait ERROR_QUERY_FUNCTION_NAME_UNKNOWN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FUNCTION_NAME_UNKNOWN: ERROR_QUERY_FUNCTION_NAME_UNKNOWN = "ERROR_QUERY_FUNCTION_NAME_UNKNOWN".asInstanceOf[ERROR_QUERY_FUNCTION_NAME_UNKNOWN]
   
   @js.native
   sealed trait ERROR_QUERY_FUNCTION_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FUNCTION_NOT_FOUND: ERROR_QUERY_FUNCTION_NOT_FOUND = "ERROR_QUERY_FUNCTION_NOT_FOUND".asInstanceOf[ERROR_QUERY_FUNCTION_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_QUERY_FUNCTION_RUNTIME_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_FUNCTION_RUNTIME_ERROR: ERROR_QUERY_FUNCTION_RUNTIME_ERROR = "ERROR_QUERY_FUNCTION_RUNTIME_ERROR".asInstanceOf[ERROR_QUERY_FUNCTION_RUNTIME_ERROR]
   
   @js.native
   sealed trait ERROR_QUERY_GEO_INDEX_MISSING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_GEO_INDEX_MISSING: ERROR_QUERY_GEO_INDEX_MISSING = "ERROR_QUERY_GEO_INDEX_MISSING".asInstanceOf[ERROR_QUERY_GEO_INDEX_MISSING]
   
   @js.native
   sealed trait ERROR_QUERY_INVALID_AGGREGATE_EXPRESSION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_INVALID_AGGREGATE_EXPRESSION: ERROR_QUERY_INVALID_AGGREGATE_EXPRESSION = "ERROR_QUERY_INVALID_AGGREGATE_EXPRESSION".asInstanceOf[ERROR_QUERY_INVALID_AGGREGATE_EXPRESSION]
   
   @js.native
   sealed trait ERROR_QUERY_INVALID_ARITHMETIC_VALUE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_INVALID_ARITHMETIC_VALUE: ERROR_QUERY_INVALID_ARITHMETIC_VALUE = "ERROR_QUERY_INVALID_ARITHMETIC_VALUE".asInstanceOf[ERROR_QUERY_INVALID_ARITHMETIC_VALUE]
   
   @js.native
   sealed trait ERROR_QUERY_INVALID_DATE_VALUE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_INVALID_DATE_VALUE: ERROR_QUERY_INVALID_DATE_VALUE = "ERROR_QUERY_INVALID_DATE_VALUE".asInstanceOf[ERROR_QUERY_INVALID_DATE_VALUE]
   
   @js.native
   sealed trait ERROR_QUERY_INVALID_LOGICAL_VALUE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_INVALID_LOGICAL_VALUE: ERROR_QUERY_INVALID_LOGICAL_VALUE = "ERROR_QUERY_INVALID_LOGICAL_VALUE".asInstanceOf[ERROR_QUERY_INVALID_LOGICAL_VALUE]
   
   @js.native
   sealed trait ERROR_QUERY_INVALID_REGEX
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_INVALID_REGEX: ERROR_QUERY_INVALID_REGEX = "ERROR_QUERY_INVALID_REGEX".asInstanceOf[ERROR_QUERY_INVALID_REGEX]
   
   @js.native
   sealed trait ERROR_QUERY_IN_USE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_IN_USE: ERROR_QUERY_IN_USE = "ERROR_QUERY_IN_USE".asInstanceOf[ERROR_QUERY_IN_USE]
   
   @js.native
   sealed trait ERROR_QUERY_KILLED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_KILLED: ERROR_QUERY_KILLED = "ERROR_QUERY_KILLED".asInstanceOf[ERROR_QUERY_KILLED]
   
   @js.native
   sealed trait ERROR_QUERY_MULTI_MODIFY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_MULTI_MODIFY: ERROR_QUERY_MULTI_MODIFY = "ERROR_QUERY_MULTI_MODIFY".asInstanceOf[ERROR_QUERY_MULTI_MODIFY]
   
   @js.native
   sealed trait ERROR_QUERY_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_NOT_FOUND: ERROR_QUERY_NOT_FOUND = "ERROR_QUERY_NOT_FOUND".asInstanceOf[ERROR_QUERY_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_QUERY_NUMBER_OUT_OF_RANGE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_NUMBER_OUT_OF_RANGE: ERROR_QUERY_NUMBER_OUT_OF_RANGE = "ERROR_QUERY_NUMBER_OUT_OF_RANGE".asInstanceOf[ERROR_QUERY_NUMBER_OUT_OF_RANGE]
   
   @js.native
   sealed trait ERROR_QUERY_PARSE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_PARSE: ERROR_QUERY_PARSE = "ERROR_QUERY_PARSE".asInstanceOf[ERROR_QUERY_PARSE]
   
   @js.native
   sealed trait ERROR_QUERY_SCRIPT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_SCRIPT: ERROR_QUERY_SCRIPT = "ERROR_QUERY_SCRIPT".asInstanceOf[ERROR_QUERY_SCRIPT]
   
   @js.native
   sealed trait ERROR_QUERY_TOO_MANY_COLLECTIONS
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_TOO_MANY_COLLECTIONS: ERROR_QUERY_TOO_MANY_COLLECTIONS = "ERROR_QUERY_TOO_MANY_COLLECTIONS".asInstanceOf[ERROR_QUERY_TOO_MANY_COLLECTIONS]
   
   @js.native
   sealed trait ERROR_QUERY_USER_ASSERT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_USER_ASSERT: ERROR_QUERY_USER_ASSERT = "ERROR_QUERY_USER_ASSERT".asInstanceOf[ERROR_QUERY_USER_ASSERT]
   
   @js.native
   sealed trait ERROR_QUERY_USER_WARN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_USER_WARN: ERROR_QUERY_USER_WARN = "ERROR_QUERY_USER_WARN".asInstanceOf[ERROR_QUERY_USER_WARN]
   
   @js.native
   sealed trait ERROR_QUERY_VARIABLE_NAME_INVALID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_VARIABLE_NAME_INVALID: ERROR_QUERY_VARIABLE_NAME_INVALID = "ERROR_QUERY_VARIABLE_NAME_INVALID".asInstanceOf[ERROR_QUERY_VARIABLE_NAME_INVALID]
   
   @js.native
   sealed trait ERROR_QUERY_VARIABLE_NAME_UNKNOWN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_VARIABLE_NAME_UNKNOWN: ERROR_QUERY_VARIABLE_NAME_UNKNOWN = "ERROR_QUERY_VARIABLE_NAME_UNKNOWN".asInstanceOf[ERROR_QUERY_VARIABLE_NAME_UNKNOWN]
   
   @js.native
   sealed trait ERROR_QUERY_VARIABLE_REDECLARED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUERY_VARIABLE_REDECLARED: ERROR_QUERY_VARIABLE_REDECLARED = "ERROR_QUERY_VARIABLE_REDECLARED".asInstanceOf[ERROR_QUERY_VARIABLE_REDECLARED]
   
   @js.native
   sealed trait ERROR_QUEUE_FULL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUEUE_FULL: ERROR_QUEUE_FULL = "ERROR_QUEUE_FULL".asInstanceOf[ERROR_QUEUE_FULL]
   
   @js.native
   sealed trait ERROR_QUEUE_UNKNOWN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_QUEUE_UNKNOWN: ERROR_QUEUE_UNKNOWN = "ERROR_QUEUE_UNKNOWN".asInstanceOf[ERROR_QUEUE_UNKNOWN]
   
   @js.native
   sealed trait ERROR_REPLICATION_APPLIER_STOPPED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_APPLIER_STOPPED: ERROR_REPLICATION_APPLIER_STOPPED = "ERROR_REPLICATION_APPLIER_STOPPED".asInstanceOf[ERROR_REPLICATION_APPLIER_STOPPED]
   
   @js.native
   sealed trait ERROR_REPLICATION_INVALID_APPLIER_CONFIGURATION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_INVALID_APPLIER_CONFIGURATION: ERROR_REPLICATION_INVALID_APPLIER_CONFIGURATION = "ERROR_REPLICATION_INVALID_APPLIER_CONFIGURATION".asInstanceOf[ERROR_REPLICATION_INVALID_APPLIER_CONFIGURATION]
   
   @js.native
   sealed trait ERROR_REPLICATION_INVALID_APPLIER_STATE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_INVALID_APPLIER_STATE: ERROR_REPLICATION_INVALID_APPLIER_STATE = "ERROR_REPLICATION_INVALID_APPLIER_STATE".asInstanceOf[ERROR_REPLICATION_INVALID_APPLIER_STATE]
   
   @js.native
   sealed trait ERROR_REPLICATION_INVALID_RESPONSE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_INVALID_RESPONSE: ERROR_REPLICATION_INVALID_RESPONSE = "ERROR_REPLICATION_INVALID_RESPONSE".asInstanceOf[ERROR_REPLICATION_INVALID_RESPONSE]
   
   @js.native
   sealed trait ERROR_REPLICATION_LOOP
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_LOOP: ERROR_REPLICATION_LOOP = "ERROR_REPLICATION_LOOP".asInstanceOf[ERROR_REPLICATION_LOOP]
   
   @js.native
   sealed trait ERROR_REPLICATION_MASTER_CHANGE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_MASTER_CHANGE: ERROR_REPLICATION_MASTER_CHANGE = "ERROR_REPLICATION_MASTER_CHANGE".asInstanceOf[ERROR_REPLICATION_MASTER_CHANGE]
   
   @js.native
   sealed trait ERROR_REPLICATION_MASTER_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_MASTER_ERROR: ERROR_REPLICATION_MASTER_ERROR = "ERROR_REPLICATION_MASTER_ERROR".asInstanceOf[ERROR_REPLICATION_MASTER_ERROR]
   
   @js.native
   sealed trait ERROR_REPLICATION_MASTER_INCOMPATIBLE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_MASTER_INCOMPATIBLE: ERROR_REPLICATION_MASTER_INCOMPATIBLE = "ERROR_REPLICATION_MASTER_INCOMPATIBLE".asInstanceOf[ERROR_REPLICATION_MASTER_INCOMPATIBLE]
   
   @js.native
   sealed trait ERROR_REPLICATION_NO_RESPONSE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_NO_RESPONSE: ERROR_REPLICATION_NO_RESPONSE = "ERROR_REPLICATION_NO_RESPONSE".asInstanceOf[ERROR_REPLICATION_NO_RESPONSE]
   
   @js.native
   sealed trait ERROR_REPLICATION_NO_START_TICK
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_NO_START_TICK: ERROR_REPLICATION_NO_START_TICK = "ERROR_REPLICATION_NO_START_TICK".asInstanceOf[ERROR_REPLICATION_NO_START_TICK]
   
   @js.native
   sealed trait ERROR_REPLICATION_RUNNING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_RUNNING: ERROR_REPLICATION_RUNNING = "ERROR_REPLICATION_RUNNING".asInstanceOf[ERROR_REPLICATION_RUNNING]
   
   @js.native
   sealed trait ERROR_REPLICATION_SHARD_NONEMPTY
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_SHARD_NONEMPTY: ERROR_REPLICATION_SHARD_NONEMPTY = "ERROR_REPLICATION_SHARD_NONEMPTY".asInstanceOf[ERROR_REPLICATION_SHARD_NONEMPTY]
   
   @js.native
   sealed trait ERROR_REPLICATION_START_TICK_NOT_PRESENT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_START_TICK_NOT_PRESENT: ERROR_REPLICATION_START_TICK_NOT_PRESENT = "ERROR_REPLICATION_START_TICK_NOT_PRESENT".asInstanceOf[ERROR_REPLICATION_START_TICK_NOT_PRESENT]
   
   @js.native
   sealed trait ERROR_REPLICATION_UNEXPECTED_MARKER
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_UNEXPECTED_MARKER: ERROR_REPLICATION_UNEXPECTED_MARKER = "ERROR_REPLICATION_UNEXPECTED_MARKER".asInstanceOf[ERROR_REPLICATION_UNEXPECTED_MARKER]
   
   @js.native
   sealed trait ERROR_REPLICATION_UNEXPECTED_TRANSACTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_UNEXPECTED_TRANSACTION: ERROR_REPLICATION_UNEXPECTED_TRANSACTION = "ERROR_REPLICATION_UNEXPECTED_TRANSACTION".asInstanceOf[ERROR_REPLICATION_UNEXPECTED_TRANSACTION]
   
   @js.native
   sealed trait ERROR_REPLICATION_WRONG_CHECKSUM
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REPLICATION_WRONG_CHECKSUM: ERROR_REPLICATION_WRONG_CHECKSUM = "ERROR_REPLICATION_WRONG_CHECKSUM".asInstanceOf[ERROR_REPLICATION_WRONG_CHECKSUM]
   
   @js.native
   sealed trait ERROR_REQUEST_CANCELED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_REQUEST_CANCELED: ERROR_REQUEST_CANCELED = "ERROR_REQUEST_CANCELED".asInstanceOf[ERROR_REQUEST_CANCELED]
   
   @js.native
   sealed trait ERROR_RESOURCE_LIMIT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_RESOURCE_LIMIT: ERROR_RESOURCE_LIMIT = "ERROR_RESOURCE_LIMIT".asInstanceOf[ERROR_RESOURCE_LIMIT]
   
   @js.native
   sealed trait ERROR_SERVICE_DOWNLOAD_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_DOWNLOAD_FAILED: ERROR_SERVICE_DOWNLOAD_FAILED = "ERROR_SERVICE_DOWNLOAD_FAILED".asInstanceOf[ERROR_SERVICE_DOWNLOAD_FAILED]
   
   @js.native
   sealed trait ERROR_SERVICE_FILES_MISSING
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_FILES_MISSING: ERROR_SERVICE_FILES_MISSING = "ERROR_SERVICE_FILES_MISSING".asInstanceOf[ERROR_SERVICE_FILES_MISSING]
   
   @js.native
   sealed trait ERROR_SERVICE_FILES_OUTDATED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_FILES_OUTDATED: ERROR_SERVICE_FILES_OUTDATED = "ERROR_SERVICE_FILES_OUTDATED".asInstanceOf[ERROR_SERVICE_FILES_OUTDATED]
   
   @js.native
   sealed trait ERROR_SERVICE_INVALID_MOUNT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_INVALID_MOUNT: ERROR_SERVICE_INVALID_MOUNT = "ERROR_SERVICE_INVALID_MOUNT".asInstanceOf[ERROR_SERVICE_INVALID_MOUNT]
   
   @js.native
   sealed trait ERROR_SERVICE_INVALID_NAME
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_INVALID_NAME: ERROR_SERVICE_INVALID_NAME = "ERROR_SERVICE_INVALID_NAME".asInstanceOf[ERROR_SERVICE_INVALID_NAME]
   
   @js.native
   sealed trait ERROR_SERVICE_MANIFEST_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_MANIFEST_NOT_FOUND: ERROR_SERVICE_MANIFEST_NOT_FOUND = "ERROR_SERVICE_MANIFEST_NOT_FOUND".asInstanceOf[ERROR_SERVICE_MANIFEST_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_SERVICE_MOUNTPOINT_CONFLICT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_MOUNTPOINT_CONFLICT: ERROR_SERVICE_MOUNTPOINT_CONFLICT = "ERROR_SERVICE_MOUNTPOINT_CONFLICT".asInstanceOf[ERROR_SERVICE_MOUNTPOINT_CONFLICT]
   
   @js.native
   sealed trait ERROR_SERVICE_NEEDS_CONFIGURATION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_NEEDS_CONFIGURATION: ERROR_SERVICE_NEEDS_CONFIGURATION = "ERROR_SERVICE_NEEDS_CONFIGURATION".asInstanceOf[ERROR_SERVICE_NEEDS_CONFIGURATION]
   
   @js.native
   sealed trait ERROR_SERVICE_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_NOT_FOUND: ERROR_SERVICE_NOT_FOUND = "ERROR_SERVICE_NOT_FOUND".asInstanceOf[ERROR_SERVICE_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_SERVICE_OPTIONS_MALFORMED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_OPTIONS_MALFORMED: ERROR_SERVICE_OPTIONS_MALFORMED = "ERROR_SERVICE_OPTIONS_MALFORMED".asInstanceOf[ERROR_SERVICE_OPTIONS_MALFORMED]
   
   @js.native
   sealed trait ERROR_SERVICE_SOURCE_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_SOURCE_ERROR: ERROR_SERVICE_SOURCE_ERROR = "ERROR_SERVICE_SOURCE_ERROR".asInstanceOf[ERROR_SERVICE_SOURCE_ERROR]
   
   @js.native
   sealed trait ERROR_SERVICE_SOURCE_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_SOURCE_NOT_FOUND: ERROR_SERVICE_SOURCE_NOT_FOUND = "ERROR_SERVICE_SOURCE_NOT_FOUND".asInstanceOf[ERROR_SERVICE_SOURCE_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_SERVICE_UNKNOWN_SCRIPT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_UNKNOWN_SCRIPT: ERROR_SERVICE_UNKNOWN_SCRIPT = "ERROR_SERVICE_UNKNOWN_SCRIPT".asInstanceOf[ERROR_SERVICE_UNKNOWN_SCRIPT]
   
   @js.native
   sealed trait ERROR_SERVICE_UPLOAD_FAILED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SERVICE_UPLOAD_FAILED: ERROR_SERVICE_UPLOAD_FAILED = "ERROR_SERVICE_UPLOAD_FAILED".asInstanceOf[ERROR_SERVICE_UPLOAD_FAILED]
   
   @js.native
   sealed trait ERROR_SESSION_EXPIRED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SESSION_EXPIRED: ERROR_SESSION_EXPIRED = "ERROR_SESSION_EXPIRED".asInstanceOf[ERROR_SESSION_EXPIRED]
   
   @js.native
   sealed trait ERROR_SESSION_UNKNOWN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SESSION_UNKNOWN: ERROR_SESSION_UNKNOWN = "ERROR_SESSION_UNKNOWN".asInstanceOf[ERROR_SESSION_UNKNOWN]
   
   @js.native
   sealed trait ERROR_SHUTTING_DOWN
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SHUTTING_DOWN: ERROR_SHUTTING_DOWN = "ERROR_SHUTTING_DOWN".asInstanceOf[ERROR_SHUTTING_DOWN]
   
   @js.native
   sealed trait ERROR_SUPERVISION_GENERAL_FAILURE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SUPERVISION_GENERAL_FAILURE: ERROR_SUPERVISION_GENERAL_FAILURE = "ERROR_SUPERVISION_GENERAL_FAILURE".asInstanceOf[ERROR_SUPERVISION_GENERAL_FAILURE]
   
   @js.native
   sealed trait ERROR_SYS_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_SYS_ERROR: ERROR_SYS_ERROR = "ERROR_SYS_ERROR".asInstanceOf[ERROR_SYS_ERROR]
   
   @js.native
   sealed trait ERROR_TASK_DUPLICATE_ID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TASK_DUPLICATE_ID: ERROR_TASK_DUPLICATE_ID = "ERROR_TASK_DUPLICATE_ID".asInstanceOf[ERROR_TASK_DUPLICATE_ID]
   
   @js.native
   sealed trait ERROR_TASK_INVALID_ID
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TASK_INVALID_ID: ERROR_TASK_INVALID_ID = "ERROR_TASK_INVALID_ID".asInstanceOf[ERROR_TASK_INVALID_ID]
   
   @js.native
   sealed trait ERROR_TASK_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TASK_NOT_FOUND: ERROR_TASK_NOT_FOUND = "ERROR_TASK_NOT_FOUND".asInstanceOf[ERROR_TASK_NOT_FOUND]
   
   @js.native
   sealed trait ERROR_TRANSACTION_ABORTED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TRANSACTION_ABORTED: ERROR_TRANSACTION_ABORTED = "ERROR_TRANSACTION_ABORTED".asInstanceOf[ERROR_TRANSACTION_ABORTED]
   
   @js.native
   sealed trait ERROR_TRANSACTION_DISALLOWED_OPERATION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TRANSACTION_DISALLOWED_OPERATION: ERROR_TRANSACTION_DISALLOWED_OPERATION = "ERROR_TRANSACTION_DISALLOWED_OPERATION".asInstanceOf[ERROR_TRANSACTION_DISALLOWED_OPERATION]
   
   @js.native
   sealed trait ERROR_TRANSACTION_INTERNAL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TRANSACTION_INTERNAL: ERROR_TRANSACTION_INTERNAL = "ERROR_TRANSACTION_INTERNAL".asInstanceOf[ERROR_TRANSACTION_INTERNAL]
   
   @js.native
   sealed trait ERROR_TRANSACTION_NESTED
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TRANSACTION_NESTED: ERROR_TRANSACTION_NESTED = "ERROR_TRANSACTION_NESTED".asInstanceOf[ERROR_TRANSACTION_NESTED]
   
   @js.native
   sealed trait ERROR_TRANSACTION_UNREGISTERED_COLLECTION
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TRANSACTION_UNREGISTERED_COLLECTION: ERROR_TRANSACTION_UNREGISTERED_COLLECTION = "ERROR_TRANSACTION_UNREGISTERED_COLLECTION".asInstanceOf[ERROR_TRANSACTION_UNREGISTERED_COLLECTION]
   
   @js.native
   sealed trait ERROR_TYPE_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_TYPE_ERROR: ERROR_TYPE_ERROR = "ERROR_TYPE_ERROR".asInstanceOf[ERROR_TYPE_ERROR]
   
   @js.native
   sealed trait ERROR_USER_CHANGE_PASSWORD
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_USER_CHANGE_PASSWORD: ERROR_USER_CHANGE_PASSWORD = "ERROR_USER_CHANGE_PASSWORD".asInstanceOf[ERROR_USER_CHANGE_PASSWORD]
   
   @js.native
   sealed trait ERROR_USER_DUPLICATE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_USER_DUPLICATE: ERROR_USER_DUPLICATE = "ERROR_USER_DUPLICATE".asInstanceOf[ERROR_USER_DUPLICATE]
   
   @js.native
   sealed trait ERROR_USER_EXTERNAL
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_USER_EXTERNAL: ERROR_USER_EXTERNAL = "ERROR_USER_EXTERNAL".asInstanceOf[ERROR_USER_EXTERNAL]
   
   @js.native
   sealed trait ERROR_USER_INVALID_NAME
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_USER_INVALID_NAME: ERROR_USER_INVALID_NAME = "ERROR_USER_INVALID_NAME".asInstanceOf[ERROR_USER_INVALID_NAME]
   
   @js.native
   sealed trait ERROR_USER_INVALID_PASSWORD
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_USER_INVALID_PASSWORD: ERROR_USER_INVALID_PASSWORD = "ERROR_USER_INVALID_PASSWORD".asInstanceOf[ERROR_USER_INVALID_PASSWORD]
   
   @js.native
   sealed trait ERROR_USER_NOT_FOUND
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def ERROR_USER_NOT_FOUND: ERROR_USER_NOT_FOUND = "ERROR_USER_NOT_FOUND".asInstanceOf[ERROR_USER_NOT_FOUND]
   
   @js.native
@@ -1838,12 +1832,6 @@ object arangodbStrings {
   inline def HS512: HS512 = "HS512".asInstanceOf[HS512]
   
   @js.native
-  sealed trait LeftparenthesisunusedRightparenthesis
-    extends StObject
-       with HttpStatus
-  inline def LeftparenthesisunusedRightparenthesis: LeftparenthesisunusedRightparenthesis = "(unused)".asInstanceOf[LeftparenthesisunusedRightparenthesis]
-  
-  @js.native
   sealed trait OPTIONS
     extends StObject
        with HttpMethod
@@ -1878,37 +1866,37 @@ object arangodbStrings {
   @js.native
   sealed trait SIMPLE_CLIENT_COULD_NOT_CONNECT
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def SIMPLE_CLIENT_COULD_NOT_CONNECT: SIMPLE_CLIENT_COULD_NOT_CONNECT = "SIMPLE_CLIENT_COULD_NOT_CONNECT".asInstanceOf[SIMPLE_CLIENT_COULD_NOT_CONNECT]
   
   @js.native
   sealed trait SIMPLE_CLIENT_COULD_NOT_READ
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def SIMPLE_CLIENT_COULD_NOT_READ: SIMPLE_CLIENT_COULD_NOT_READ = "SIMPLE_CLIENT_COULD_NOT_READ".asInstanceOf[SIMPLE_CLIENT_COULD_NOT_READ]
   
   @js.native
   sealed trait SIMPLE_CLIENT_COULD_NOT_WRITE
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def SIMPLE_CLIENT_COULD_NOT_WRITE: SIMPLE_CLIENT_COULD_NOT_WRITE = "SIMPLE_CLIENT_COULD_NOT_WRITE".asInstanceOf[SIMPLE_CLIENT_COULD_NOT_WRITE]
   
   @js.native
   sealed trait SIMPLE_CLIENT_UNKNOWN_ERROR
     extends StObject
-       with ErrorName
+       with _ErrorName
   inline def SIMPLE_CLIENT_UNKNOWN_ERROR: SIMPLE_CLIENT_UNKNOWN_ERROR = "SIMPLE_CLIENT_UNKNOWN_ERROR".asInstanceOf[SIMPLE_CLIENT_UNKNOWN_ERROR]
   
   @js.native
   sealed trait accepted
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def accepted: accepted = "accepted".asInstanceOf[accepted]
   
   @js.native
   sealed trait `already reported`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `already reported`: `already reported` = ("already reported").asInstanceOf[`already reported`]
   
   @js.native
@@ -1934,19 +1922,19 @@ object arangodbStrings {
   @js.native
   sealed trait `bad gateway`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `bad gateway`: `bad gateway` = ("bad gateway").asInstanceOf[`bad gateway`]
   
   @js.native
   sealed trait `bad request`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `bad request`: `bad request` = ("bad request").asInstanceOf[`bad request`]
   
   @js.native
   sealed trait `bandwidth limit exceeded`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `bandwidth limit exceeded`: `bandwidth limit exceeded` = ("bandwidth limit exceeded").asInstanceOf[`bandwidth limit exceeded`]
   
   @js.native
@@ -1976,13 +1964,13 @@ object arangodbStrings {
   @js.native
   sealed trait conflict
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def conflict: conflict = "conflict".asInstanceOf[conflict]
   
   @js.native
   sealed trait continue
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
@@ -1998,19 +1986,19 @@ object arangodbStrings {
   @js.native
   sealed trait created
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def created: created = "created".asInstanceOf[created]
   
   @js.native
   sealed trait `expectation failed`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `expectation failed`: `expectation failed` = ("expectation failed").asInstanceOf[`expectation failed`]
   
   @js.native
   sealed trait `failed dependency`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `failed dependency`: `failed dependency` = ("failed dependency").asInstanceOf[`failed dependency`]
   
   @js.native
@@ -2022,13 +2010,13 @@ object arangodbStrings {
   @js.native
   sealed trait forbidden
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
   
   @js.native
   sealed trait found
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def found: found = "found".asInstanceOf[found]
   
   @js.native
@@ -2040,7 +2028,7 @@ object arangodbStrings {
   @js.native
   sealed trait `gateway timeout`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `gateway timeout`: `gateway timeout` = ("gateway timeout").asInstanceOf[`gateway timeout`]
   
   @js.native
@@ -2052,7 +2040,7 @@ object arangodbStrings {
   @js.native
   sealed trait gone
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def gone: gone = "gone".asInstanceOf[gone]
   
   @js.native
@@ -2068,14 +2056,8 @@ object arangodbStrings {
   @js.native
   sealed trait `http version not supported`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `http version not supported`: `http version not supported` = ("http version not supported").asInstanceOf[`http version not supported`]
-  
-  @js.native
-  sealed trait `iApostrophem a teapot`
-    extends StObject
-       with HttpStatus
-  inline def `iApostrophem a teapot`: `iApostrophem a teapot` = ("i'm a teapot").asInstanceOf[`iApostrophem a teapot`]
   
   @js.native
   sealed trait id extends StObject
@@ -2084,7 +2066,7 @@ object arangodbStrings {
   @js.native
   sealed trait `im used`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `im used`: `im used` = ("im used").asInstanceOf[`im used`]
   
   @js.native
@@ -2096,7 +2078,7 @@ object arangodbStrings {
   @js.native
   sealed trait `insufficient storage`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `insufficient storage`: `insufficient storage` = ("insufficient storage").asInstanceOf[`insufficient storage`]
   
   @js.native
@@ -2114,7 +2096,7 @@ object arangodbStrings {
   @js.native
   sealed trait `internal server error`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `internal server error`: `internal server error` = ("internal server error").asInstanceOf[`internal server error`]
   
   @js.native
@@ -2126,19 +2108,19 @@ object arangodbStrings {
   @js.native
   sealed trait `length required`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `length required`: `length required` = ("length required").asInstanceOf[`length required`]
   
   @js.native
   sealed trait locked
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def locked: locked = "locked".asInstanceOf[locked]
   
   @js.native
   sealed trait `loop detected`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `loop detected`: `loop detected` = ("loop detected").asInstanceOf[`loop detected`]
   
   @js.native
@@ -2150,13 +2132,13 @@ object arangodbStrings {
   @js.native
   sealed trait `method not allowed`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `method not allowed`: `method not allowed` = ("method not allowed").asInstanceOf[`method not allowed`]
   
   @js.native
   sealed trait `misdirected request`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `misdirected request`: `misdirected request` = ("misdirected request").asInstanceOf[`misdirected request`]
   
   @js.native
@@ -2168,37 +2150,37 @@ object arangodbStrings {
   @js.native
   sealed trait `moved permanently`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `moved permanently`: `moved permanently` = ("moved permanently").asInstanceOf[`moved permanently`]
   
   @js.native
   sealed trait `multi-status`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `multi-status`: `multi-status` = "multi-status".asInstanceOf[`multi-status`]
   
   @js.native
   sealed trait `multiple choices`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `multiple choices`: `multiple choices` = ("multiple choices").asInstanceOf[`multiple choices`]
   
   @js.native
   sealed trait `network authentication required`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `network authentication required`: `network authentication required` = ("network authentication required").asInstanceOf[`network authentication required`]
   
   @js.native
   sealed trait `no content`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `no content`: `no content` = ("no content").asInstanceOf[`no content`]
   
   @js.native
   sealed trait `non-authoritative information`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `non-authoritative information`: `non-authoritative information` = ("non-authoritative information").asInstanceOf[`non-authoritative information`]
   
   @js.native
@@ -2208,31 +2190,31 @@ object arangodbStrings {
   @js.native
   sealed trait `not acceptable`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `not acceptable`: `not acceptable` = ("not acceptable").asInstanceOf[`not acceptable`]
   
   @js.native
   sealed trait `not extended`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `not extended`: `not extended` = ("not extended").asInstanceOf[`not extended`]
   
   @js.native
   sealed trait `not found`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `not found`: `not found` = ("not found").asInstanceOf[`not found`]
   
   @js.native
   sealed trait `not implemented`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `not implemented`: `not implemented` = ("not implemented").asInstanceOf[`not implemented`]
   
   @js.native
   sealed trait `not modified`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `not modified`: `not modified` = ("not modified").asInstanceOf[`not modified`]
   
   @js.native
@@ -2244,7 +2226,7 @@ object arangodbStrings {
   @js.native
   sealed trait ok
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
@@ -2256,7 +2238,7 @@ object arangodbStrings {
   @js.native
   sealed trait `partial content`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `partial content`: `partial content` = ("partial content").asInstanceOf[`partial content`]
   
   @js.native
@@ -2268,13 +2250,13 @@ object arangodbStrings {
   @js.native
   sealed trait `payload too large`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `payload too large`: `payload too large` = ("payload too large").asInstanceOf[`payload too large`]
   
   @js.native
   sealed trait `payment required`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `payment required`: `payment required` = ("payment required").asInstanceOf[`payment required`]
   
   @js.native
@@ -2284,7 +2266,7 @@ object arangodbStrings {
   @js.native
   sealed trait `permanent redirect`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `permanent redirect`: `permanent redirect` = ("permanent redirect").asInstanceOf[`permanent redirect`]
   
   @js.native
@@ -2296,49 +2278,49 @@ object arangodbStrings {
   @js.native
   sealed trait `precondition failed`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `precondition failed`: `precondition failed` = ("precondition failed").asInstanceOf[`precondition failed`]
   
   @js.native
   sealed trait `precondition required`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `precondition required`: `precondition required` = ("precondition required").asInstanceOf[`precondition required`]
   
   @js.native
   sealed trait processing
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def processing: processing = "processing".asInstanceOf[processing]
   
   @js.native
   sealed trait `proxy authentication required`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `proxy authentication required`: `proxy authentication required` = ("proxy authentication required").asInstanceOf[`proxy authentication required`]
   
   @js.native
   sealed trait `range not satisfiable`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `range not satisfiable`: `range not satisfiable` = ("range not satisfiable").asInstanceOf[`range not satisfiable`]
   
   @js.native
   sealed trait `request header fields too large`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `request header fields too large`: `request header fields too large` = ("request header fields too large").asInstanceOf[`request header fields too large`]
   
   @js.native
   sealed trait `request timeout`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `request timeout`: `request timeout` = ("request timeout").asInstanceOf[`request timeout`]
   
   @js.native
   sealed trait `reset content`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `reset content`: `reset content` = ("reset content").asInstanceOf[`reset content`]
   
   @js.native
@@ -2350,13 +2332,13 @@ object arangodbStrings {
   @js.native
   sealed trait `see other`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `see other`: `see other` = ("see other").asInstanceOf[`see other`]
   
   @js.native
   sealed trait `service unavailable`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `service unavailable`: `service unavailable` = ("service unavailable").asInstanceOf[`service unavailable`]
   
   @js.native
@@ -2404,19 +2386,19 @@ object arangodbStrings {
   @js.native
   sealed trait `switching protocols`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `switching protocols`: `switching protocols` = ("switching protocols").asInstanceOf[`switching protocols`]
   
   @js.native
   sealed trait `temporary redirect`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `temporary redirect`: `temporary redirect` = ("temporary redirect").asInstanceOf[`temporary redirect`]
   
   @js.native
   sealed trait `too many requests`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `too many requests`: `too many requests` = ("too many requests").asInstanceOf[`too many requests`]
   
   @js.native
@@ -2434,54 +2416,54 @@ object arangodbStrings {
   @js.native
   sealed trait unauthorized
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def unauthorized: unauthorized = "unauthorized".asInstanceOf[unauthorized]
   
   @js.native
   sealed trait `unavailable for legal reasons`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `unavailable for legal reasons`: `unavailable for legal reasons` = ("unavailable for legal reasons").asInstanceOf[`unavailable for legal reasons`]
   
   @js.native
   sealed trait `unordered collection`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `unordered collection`: `unordered collection` = ("unordered collection").asInstanceOf[`unordered collection`]
   
   @js.native
   sealed trait `unprocessable entity`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `unprocessable entity`: `unprocessable entity` = ("unprocessable entity").asInstanceOf[`unprocessable entity`]
   
   @js.native
   sealed trait `unsupported media type`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `unsupported media type`: `unsupported media type` = ("unsupported media type").asInstanceOf[`unsupported media type`]
   
   @js.native
   sealed trait `upgrade required`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `upgrade required`: `upgrade required` = ("upgrade required").asInstanceOf[`upgrade required`]
   
   @js.native
   sealed trait `uri too long`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `uri too long`: `uri too long` = ("uri too long").asInstanceOf[`uri too long`]
   
   @js.native
   sealed trait `use proxy`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `use proxy`: `use proxy` = ("use proxy").asInstanceOf[`use proxy`]
   
   @js.native
   sealed trait `variant also negotiates`
     extends StObject
-       with HttpStatus
+       with _HttpStatus
   inline def `variant also negotiates`: `variant also negotiates` = ("variant also negotiates").asInstanceOf[`variant also negotiates`]
 }

@@ -1,8 +1,8 @@
 package typings.reactVirtualized.anon
 
-import typings.reactVirtualized.reactVirtualizedNumbers.`0`
-import typings.reactVirtualized.reactVirtualizedNumbers.`10`
-import typings.reactVirtualized.reactVirtualizedNumbers.`15`
+import typings.reactVirtualized.reactVirtualizedInts.`0`
+import typings.reactVirtualized.reactVirtualizedInts.`10`
+import typings.reactVirtualized.reactVirtualizedInts.`15`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

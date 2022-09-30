@@ -8,7 +8,6 @@ import typings.mobxStateTree.snapshotProcessorMod.NotCustomized
 import typings.mobxStateTree.typeMod.IAnyType
 import typings.mobxStateTree.typeMod.IType
 import typings.mobxStateTree.typeMod.Instance
-import typings.std.Date
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -445,11 +444,11 @@ object modelMod {
   {[ k in keyof P ]: P[k]['CreationType']}
     */ typings.mobxStateTree.mobxStateTreeStrings.ExtractCFromProps & TopLevel[P]
   
-  type ExtractOthers[T /* <: IAnyModelType */] = js.Any
+  type ExtractOthers[T /* <: IAnyModelType */] = Any
   
-  type ExtractProps[T /* <: IAnyModelType */] = js.Any
+  type ExtractProps[T /* <: IAnyModelType */] = Any
   
-  type IAnyModelType = IModelType[js.Any, js.Any, js.Any, js.Any]
+  type IAnyModelType = IModelType[Any, Any, Any, Any]
   
   @js.native
   trait IModelType[PROPS /* <: ModelProperties */, OTHERS, CustomC, CustomS]
@@ -505,7 +504,7 @@ object modelMod {
   
   type ModelInstanceTypeProps[P /* <: ModelProperties */] = typings.mobxStateTree.mobxStateTreeStrings.ModelInstanceTypeProps & TopLevel[P] & NonEmptyObject_
   
-  type ModelPrimitive = String | Double | Boolean | Date
+  type ModelPrimitive = String | Double | Boolean | js.Date
   
   type ModelProperties = StringDictionary[IAnyType]
   
@@ -513,7 +512,7 @@ object modelMod {
   
   type ModelPropertiesDeclarationToProperties[T /* <: ModelPropertiesDeclaration */] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] extends mobx-state-tree.mobx-state-tree/dist/core/type/type.IAnyType? T[K] : T[K] extends string? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string | undefined, string, string> : T[K] extends number? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<number | undefined, number, number> : T[K] extends boolean? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<boolean | undefined, boolean, boolean> : T[K] extends std.Date? mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<number | std.Date | undefined, number, std.Date> : never}
-    */ typings.mobxStateTree.mobxStateTreeStrings.ModelPropertiesDeclarationToProperties & TopLevel[js.Any]) | T
+    */ typings.mobxStateTree.mobxStateTreeStrings.ModelPropertiesDeclarationToProperties & TopLevel[Any]) | T
   
   type ModelSnapshotType[P /* <: ModelProperties */] = typings.mobxStateTree.mobxStateTreeStrings.ModelSnapshotType & TopLevel[P] & NonEmptyObject_
   

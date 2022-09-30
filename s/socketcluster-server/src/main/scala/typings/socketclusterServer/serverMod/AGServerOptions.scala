@@ -7,8 +7,8 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import typings.node.nodeNetMod.Socket
-import typings.socketclusterServer.socketclusterServerNumbers.`1`
-import typings.socketclusterServer.socketclusterServerNumbers.`2`
+import typings.socketclusterServer.socketclusterServerInts.`1`
+import typings.socketclusterServer.socketclusterServerInts.`2`
 import typings.socketclusterServer.socketclusterServerStrings.close
 import typings.socketclusterServer.socketclusterServerStrings.kill
 import typings.ws.mod.ClientOptions

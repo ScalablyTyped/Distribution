@@ -85,21 +85,21 @@ object supportsColorMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.chalk.chalkNumbers.`0`
-    - typings.chalk.chalkNumbers.`1`
-    - typings.chalk.chalkNumbers.`2`
-    - typings.chalk.chalkNumbers.`3`
+    - typings.chalk.chalkInts.`0`
+    - typings.chalk.chalkInts.`1`
+    - typings.chalk.chalkInts.`2`
+    - typings.chalk.chalkInts.`3`
   */
   trait ColorSupportLevel extends StObject
   object ColorSupportLevel {
     
-    inline def `0`: typings.chalk.chalkNumbers.`0` = 0.asInstanceOf[typings.chalk.chalkNumbers.`0`]
+    inline def `0`: typings.chalk.chalkInts.`0` = 0.asInstanceOf[typings.chalk.chalkInts.`0`]
     
-    inline def `1`: typings.chalk.chalkNumbers.`1` = 1.asInstanceOf[typings.chalk.chalkNumbers.`1`]
+    inline def `1`: typings.chalk.chalkInts.`1` = 1.asInstanceOf[typings.chalk.chalkInts.`1`]
     
-    inline def `2`: typings.chalk.chalkNumbers.`2` = 2.asInstanceOf[typings.chalk.chalkNumbers.`2`]
+    inline def `2`: typings.chalk.chalkInts.`2` = 2.asInstanceOf[typings.chalk.chalkInts.`2`]
     
-    inline def `3`: typings.chalk.chalkNumbers.`3` = 3.asInstanceOf[typings.chalk.chalkNumbers.`3`]
+    inline def `3`: typings.chalk.chalkInts.`3` = 3.asInstanceOf[typings.chalk.chalkInts.`3`]
   }
   
   trait Options extends StObject {

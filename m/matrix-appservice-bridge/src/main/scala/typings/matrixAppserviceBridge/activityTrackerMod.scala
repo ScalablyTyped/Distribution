@@ -1,6 +1,7 @@
 package typings.matrixAppserviceBridge
 
 import typings.matrixAppserviceBridge.anon.InactiveMs
+import typings.matrixBotSdk.mod.MatrixClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +11,7 @@ object activityTrackerMod {
   @JSImport("matrix-appservice-bridge/lib/components/activity-tracker", "ActivityTracker")
   @js.native
   open class ActivityTracker protected () extends StObject {
-    def this(
-      client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixClient */ Any,
-      opts: ActivityTrackerOpts
-    ) = this()
+    def this(client: MatrixClient, opts: ActivityTrackerOpts) = this()
     
     /* private */ var canUseWhois: Any = js.native
     

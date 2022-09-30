@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "chartjs-plugin-doughnutlabel-rebourne"
-version := "3.0-dt-20220707Z-ce6f2c"
+version := "3.0-dt-20220707Z-60b332"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chart_dot_js" % "3.9.1-5b7afa",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "chart_dot_js" % "3.9.1-0b1564",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

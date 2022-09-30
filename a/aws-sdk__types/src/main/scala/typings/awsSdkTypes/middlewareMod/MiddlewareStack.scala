@@ -48,6 +48,13 @@ trait MiddlewareStack[Input /* <: js.Object */, Output /* <: js.Object */]
     */
   def concat[InputType /* <: Input */, OutputType /* <: Output */](from: MiddlewareStack[InputType, OutputType]): MiddlewareStack[InputType, OutputType] = js.native
   
+  /**
+    * Returns a list of the current order of middleware in the stack.
+    * This does not execute the middleware functions, nor does it
+    * provide a reference to the stack itself.
+    */
+  def identify(): js.Array[String] = js.native
+  
   def remove(toRemove: String): Boolean = js.native
   /**
     * Removes middleware from the stack.

@@ -141,6 +141,20 @@ trait Translate extends Service {
   ): Request[ListParallelDataResponse, AWSError] = js.native
   
   /**
+    * 
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
     * Provides a list of custom terminologies associated with your account.
     */
   def listTerminologies(): Request[ListTerminologiesResponse, AWSError] = js.native
@@ -197,6 +211,20 @@ trait Translate extends Service {
   ): Request[StopTextTranslationJobResponse, AWSError] = js.native
   
   /**
+    * 
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  
+  /**
     * Translates input text from the source language to the target language. For a list of available languages and language codes, see what-is-languages.
     */
   def translateText(): Request[TranslateTextResponse, AWSError] = js.native
@@ -209,6 +237,20 @@ trait Translate extends Service {
     params: TranslateTextRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TranslateTextResponse, Unit]
   ): Request[TranslateTextResponse, AWSError] = js.native
+  
+  /**
+    * 
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
     * Updates a previously created parallel data resource by importing a new input file from Amazon S3.

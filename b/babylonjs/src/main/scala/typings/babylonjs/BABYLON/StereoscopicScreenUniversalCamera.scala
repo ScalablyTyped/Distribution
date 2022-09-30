@@ -18,8 +18,7 @@ trait StereoscopicScreenUniversalCamera
   /* private */ var _updateCamera: Any = js.native
   
   /**
-    * @param name
-    * @hidden
+    * @internal
     */
   def createRigCamera(name: String): Nullable[Camera] = js.native
   

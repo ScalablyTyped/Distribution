@@ -11,7 +11,7 @@ import typings.three.matrix4Mod.Matrix4
 import typings.three.quaternionMod.Quaternion
 import typings.three.sphericalMod.Spherical
 import typings.three.threeBooleans.`true`
-import typings.three.threeNumbers.`0`
+import typings.three.threeInts.`0`
 import typings.three.vector2Mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 0 is PROD, 1 is DEV.
 // Might add PROFILE later.
 /* Rewritten from type alias, can be one of: 
-  - typings.reactReconciler.reactReconcilerNumbers.`0`
-  - typings.reactReconciler.reactReconcilerNumbers.`1`
+  - typings.reactReconciler.reactReconcilerInts.`0`
+  - typings.reactReconciler.reactReconcilerInts.`1`
 */
 trait BundleType extends StObject
 object BundleType {
   
-  inline def `0`: typings.reactReconciler.reactReconcilerNumbers.`0` = 0.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`0`]
+  inline def `0`: typings.reactReconciler.reactReconcilerInts.`0` = 0.asInstanceOf[typings.reactReconciler.reactReconcilerInts.`0`]
   
-  inline def `1`: typings.reactReconciler.reactReconcilerNumbers.`1` = 1.asInstanceOf[typings.reactReconciler.reactReconcilerNumbers.`1`]
+  inline def `1`: typings.reactReconciler.reactReconcilerInts.`1` = 1.asInstanceOf[typings.reactReconciler.reactReconcilerInts.`1`]
 }

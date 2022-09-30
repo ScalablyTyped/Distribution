@@ -11,8 +11,8 @@ object mainMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/checkbox/main", "WorksCheckbox")
   @js.native
-  class WorksCheckbox protected ()
+  open class WorksCheckbox protected ()
     extends typings.homeworks.componentCheckboxMod.WorksCheckbox {
-    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[Any]) = this()
   }
 }

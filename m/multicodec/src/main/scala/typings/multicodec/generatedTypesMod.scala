@@ -1949,1419 +1949,1419 @@ object generatedTypesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.multicodec.multicodecNumbers.`0x00`
-    - typings.multicodec.multicodecNumbers.`0x01`
-    - typings.multicodec.multicodecNumbers.`0x02`
-    - typings.multicodec.multicodecNumbers.`0x03`
-    - typings.multicodec.multicodecNumbers.`0x04`
-    - typings.multicodec.multicodecNumbers.`0x06`
-    - typings.multicodec.multicodecNumbers.`0x11`
-    - typings.multicodec.multicodecNumbers.`0x12`
-    - typings.multicodec.multicodecNumbers.`0x13`
-    - typings.multicodec.multicodecNumbers.`0x14`
-    - typings.multicodec.multicodecNumbers.`0x15`
-    - typings.multicodec.multicodecNumbers.`0x16`
-    - typings.multicodec.multicodecNumbers.`0x17`
-    - typings.multicodec.multicodecNumbers.`0x18`
-    - typings.multicodec.multicodecNumbers.`0x19`
-    - typings.multicodec.multicodecNumbers.`0x1a`
-    - typings.multicodec.multicodecNumbers.`0x1b`
-    - typings.multicodec.multicodecNumbers.`0x1c`
-    - typings.multicodec.multicodecNumbers.`0x1d`
-    - typings.multicodec.multicodecNumbers.`0x1e`
-    - typings.multicodec.multicodecNumbers.`0x21`
-    - typings.multicodec.multicodecNumbers.`0x22`
-    - typings.multicodec.multicodecNumbers.`0x23`
-    - typings.multicodec.multicodecNumbers.`0x29`
-    - typings.multicodec.multicodecNumbers.`0x2a`
-    - typings.multicodec.multicodecNumbers.`0x2f`
-    - typings.multicodec.multicodecNumbers.`0x30`
-    - typings.multicodec.multicodecNumbers.`0x31`
-    - typings.multicodec.multicodecNumbers.`0x32`
-    - typings.multicodec.multicodecNumbers.`0x33`
-    - typings.multicodec.multicodecNumbers.`0x35`
-    - typings.multicodec.multicodecNumbers.`0x36`
-    - typings.multicodec.multicodecNumbers.`0x37`
-    - typings.multicodec.multicodecNumbers.`0x38`
-    - typings.multicodec.multicodecNumbers.`0x50`
-    - typings.multicodec.multicodecNumbers.`0x51`
-    - typings.multicodec.multicodecNumbers.`0x55`
-    - typings.multicodec.multicodecNumbers.`0x56`
-    - typings.multicodec.multicodecNumbers.`0x60`
-    - typings.multicodec.multicodecNumbers.`0x63`
-    - typings.multicodec.multicodecNumbers.`0x70`
-    - typings.multicodec.multicodecNumbers.`0x71`
-    - typings.multicodec.multicodecNumbers.`0x72`
-    - typings.multicodec.multicodecNumbers.`0x78`
-    - typings.multicodec.multicodecNumbers.`0x7b`
-    - typings.multicodec.multicodecNumbers.`0x7c`
-    - typings.multicodec.multicodecNumbers.`0x81`
-    - typings.multicodec.multicodecNumbers.`0x82`
-    - typings.multicodec.multicodecNumbers.`0x83`
-    - typings.multicodec.multicodecNumbers.`0x84`
-    - typings.multicodec.multicodecNumbers.`0x85`
-    - typings.multicodec.multicodecNumbers.`0x86`
-    - typings.multicodec.multicodecNumbers.`0x90`
-    - typings.multicodec.multicodecNumbers.`0x91`
-    - typings.multicodec.multicodecNumbers.`0x92`
-    - typings.multicodec.multicodecNumbers.`0x93`
-    - typings.multicodec.multicodecNumbers.`0x94`
-    - typings.multicodec.multicodecNumbers.`0x95`
-    - typings.multicodec.multicodecNumbers.`0x96`
-    - typings.multicodec.multicodecNumbers.`0x97`
-    - typings.multicodec.multicodecNumbers.`0x98`
-    - typings.multicodec.multicodecNumbers.`0x99`
-    - typings.multicodec.multicodecNumbers.`0x9a`
-    - typings.multicodec.multicodecNumbers.`0xb0`
-    - typings.multicodec.multicodecNumbers.`0xb1`
-    - typings.multicodec.multicodecNumbers.`0xb2`
-    - typings.multicodec.multicodecNumbers.`0xc0`
-    - typings.multicodec.multicodecNumbers.`0xc1`
-    - typings.multicodec.multicodecNumbers.`0xca`
-    - typings.multicodec.multicodecNumbers.`0xce`
-    - typings.multicodec.multicodecNumbers.`0xd0`
-    - typings.multicodec.multicodecNumbers.`0xd1`
-    - typings.multicodec.multicodecNumbers.`0xd4`
-    - typings.multicodec.multicodecNumbers.`0xd5`
-    - typings.multicodec.multicodecNumbers.`0xd6`
-    - typings.multicodec.multicodecNumbers.`0xe0`
-    - typings.multicodec.multicodecNumbers.`0xe1`
-    - typings.multicodec.multicodecNumbers.`0xe2`
-    - typings.multicodec.multicodecNumbers.`0xe3`
-    - typings.multicodec.multicodecNumbers.`0xe4`
-    - typings.multicodec.multicodecNumbers.`0xe5`
-    - typings.multicodec.multicodecNumbers.`0xe6`
-    - typings.multicodec.multicodecNumbers.`0xe7`
-    - typings.multicodec.multicodecNumbers.`0xea`
-    - typings.multicodec.multicodecNumbers.`0xeb`
-    - typings.multicodec.multicodecNumbers.`0xec`
-    - typings.multicodec.multicodecNumbers.`0xed`
-    - typings.multicodec.multicodecNumbers.`0xee`
-    - typings.multicodec.multicodecNumbers.`0xf0`
-    - typings.multicodec.multicodecNumbers.`0xf1`
-    - typings.multicodec.multicodecNumbers.`0xfa`
-    - typings.multicodec.multicodecNumbers.`0xfb`
-    - typings.multicodec.multicodecNumbers.`0x0111`
-    - typings.multicodec.multicodecNumbers.`0x0113`
-    - typings.multicodec.multicodecNumbers.`0x0114`
-    - typings.multicodec.multicodecNumbers.`0x0115`
-    - typings.multicodec.multicodecNumbers.`0x0122`
-    - typings.multicodec.multicodecNumbers.`0x0129`
-    - typings.multicodec.multicodecNumbers.`0x012d`
-    - typings.multicodec.multicodecNumbers.`0x012e`
-    - typings.multicodec.multicodecNumbers.`0x0190`
-    - typings.multicodec.multicodecNumbers.`0x0196`
-    - typings.multicodec.multicodecNumbers.`0x01a5`
-    - typings.multicodec.multicodecNumbers.`0x01bb`
-    - typings.multicodec.multicodecNumbers.`0x01bc`
-    - typings.multicodec.multicodecNumbers.`0x01bd`
-    - typings.multicodec.multicodecNumbers.`0x01be`
-    - typings.multicodec.multicodecNumbers.`0x01bf`
-    - typings.multicodec.multicodecNumbers.`0x01c0`
-    - typings.multicodec.multicodecNumbers.`0x01c6`
-    - typings.multicodec.multicodecNumbers.`0x01cc`
-    - typings.multicodec.multicodecNumbers.`0x01dd`
-    - typings.multicodec.multicodecNumbers.`0x01de`
-    - typings.multicodec.multicodecNumbers.`0x01df`
-    - typings.multicodec.multicodecNumbers.`0x01e0`
-    - typings.multicodec.multicodecNumbers.`0x01f0`
-    - typings.multicodec.multicodecNumbers.`0x0200`
-    - typings.multicodec.multicodecNumbers.`0x0201`
-    - typings.multicodec.multicodecNumbers.`0x0301`
-    - typings.multicodec.multicodecNumbers.`0x0302`
-    - typings.multicodec.multicodecNumbers.`0x0400`
-    - typings.multicodec.multicodecNumbers.`0x1012`
-    - typings.multicodec.multicodecNumbers.`0x1052`
-    - typings.multicodec.multicodecNumbers.`0x1053`
-    - typings.multicodec.multicodecNumbers.`0x1054`
-    - typings.multicodec.multicodecNumbers.`0x1055`
-    - typings.multicodec.multicodecNumbers.`0x1100`
-    - typings.multicodec.multicodecNumbers.`0x1200`
-    - typings.multicodec.multicodecNumbers.`0x1201`
-    - typings.multicodec.multicodecNumbers.`0x1202`
-    - typings.multicodec.multicodecNumbers.`0x1203`
-    - typings.multicodec.multicodecNumbers.`0x1204`
-    - typings.multicodec.multicodecNumbers.`0x1300`
-    - typings.multicodec.multicodecNumbers.`0x1301`
-    - typings.multicodec.multicodecNumbers.`0x1302`
-    - typings.multicodec.multicodecNumbers.`0x1d01`
-    - typings.multicodec.multicodecNumbers.`0x534d`
-    - typings.multicodec.multicodecNumbers.`0xb201`
-    - typings.multicodec.multicodecNumbers.`0xb202`
-    - typings.multicodec.multicodecNumbers.`0xb203`
-    - typings.multicodec.multicodecNumbers.`0xb204`
-    - typings.multicodec.multicodecNumbers.`0xb205`
-    - typings.multicodec.multicodecNumbers.`0xb206`
-    - typings.multicodec.multicodecNumbers.`0xb207`
-    - typings.multicodec.multicodecNumbers.`0xb208`
-    - typings.multicodec.multicodecNumbers.`0xb209`
-    - typings.multicodec.multicodecNumbers.`0xb20a`
-    - typings.multicodec.multicodecNumbers.`0xb20b`
-    - typings.multicodec.multicodecNumbers.`0xb20c`
-    - typings.multicodec.multicodecNumbers.`0xb20d`
-    - typings.multicodec.multicodecNumbers.`0xb20e`
-    - typings.multicodec.multicodecNumbers.`0xb20f`
-    - typings.multicodec.multicodecNumbers.`0xb210`
-    - typings.multicodec.multicodecNumbers.`0xb211`
-    - typings.multicodec.multicodecNumbers.`0xb212`
-    - typings.multicodec.multicodecNumbers.`0xb213`
-    - typings.multicodec.multicodecNumbers.`0xb214`
-    - typings.multicodec.multicodecNumbers.`0xb215`
-    - typings.multicodec.multicodecNumbers.`0xb216`
-    - typings.multicodec.multicodecNumbers.`0xb217`
-    - typings.multicodec.multicodecNumbers.`0xb218`
-    - typings.multicodec.multicodecNumbers.`0xb219`
-    - typings.multicodec.multicodecNumbers.`0xb21a`
-    - typings.multicodec.multicodecNumbers.`0xb21b`
-    - typings.multicodec.multicodecNumbers.`0xb21c`
-    - typings.multicodec.multicodecNumbers.`0xb21d`
-    - typings.multicodec.multicodecNumbers.`0xb21e`
-    - typings.multicodec.multicodecNumbers.`0xb21f`
-    - typings.multicodec.multicodecNumbers.`0xb220`
-    - typings.multicodec.multicodecNumbers.`0xb221`
-    - typings.multicodec.multicodecNumbers.`0xb222`
-    - typings.multicodec.multicodecNumbers.`0xb223`
-    - typings.multicodec.multicodecNumbers.`0xb224`
-    - typings.multicodec.multicodecNumbers.`0xb225`
-    - typings.multicodec.multicodecNumbers.`0xb226`
-    - typings.multicodec.multicodecNumbers.`0xb227`
-    - typings.multicodec.multicodecNumbers.`0xb228`
-    - typings.multicodec.multicodecNumbers.`0xb229`
-    - typings.multicodec.multicodecNumbers.`0xb22a`
-    - typings.multicodec.multicodecNumbers.`0xb22b`
-    - typings.multicodec.multicodecNumbers.`0xb22c`
-    - typings.multicodec.multicodecNumbers.`0xb22d`
-    - typings.multicodec.multicodecNumbers.`0xb22e`
-    - typings.multicodec.multicodecNumbers.`0xb22f`
-    - typings.multicodec.multicodecNumbers.`0xb230`
-    - typings.multicodec.multicodecNumbers.`0xb231`
-    - typings.multicodec.multicodecNumbers.`0xb232`
-    - typings.multicodec.multicodecNumbers.`0xb233`
-    - typings.multicodec.multicodecNumbers.`0xb234`
-    - typings.multicodec.multicodecNumbers.`0xb235`
-    - typings.multicodec.multicodecNumbers.`0xb236`
-    - typings.multicodec.multicodecNumbers.`0xb237`
-    - typings.multicodec.multicodecNumbers.`0xb238`
-    - typings.multicodec.multicodecNumbers.`0xb239`
-    - typings.multicodec.multicodecNumbers.`0xb23a`
-    - typings.multicodec.multicodecNumbers.`0xb23b`
-    - typings.multicodec.multicodecNumbers.`0xb23c`
-    - typings.multicodec.multicodecNumbers.`0xb23d`
-    - typings.multicodec.multicodecNumbers.`0xb23e`
-    - typings.multicodec.multicodecNumbers.`0xb23f`
-    - typings.multicodec.multicodecNumbers.`0xb240`
-    - typings.multicodec.multicodecNumbers.`0xb241`
-    - typings.multicodec.multicodecNumbers.`0xb242`
-    - typings.multicodec.multicodecNumbers.`0xb243`
-    - typings.multicodec.multicodecNumbers.`0xb244`
-    - typings.multicodec.multicodecNumbers.`0xb245`
-    - typings.multicodec.multicodecNumbers.`0xb246`
-    - typings.multicodec.multicodecNumbers.`0xb247`
-    - typings.multicodec.multicodecNumbers.`0xb248`
-    - typings.multicodec.multicodecNumbers.`0xb249`
-    - typings.multicodec.multicodecNumbers.`0xb24a`
-    - typings.multicodec.multicodecNumbers.`0xb24b`
-    - typings.multicodec.multicodecNumbers.`0xb24c`
-    - typings.multicodec.multicodecNumbers.`0xb24d`
-    - typings.multicodec.multicodecNumbers.`0xb24e`
-    - typings.multicodec.multicodecNumbers.`0xb24f`
-    - typings.multicodec.multicodecNumbers.`0xb250`
-    - typings.multicodec.multicodecNumbers.`0xb251`
-    - typings.multicodec.multicodecNumbers.`0xb252`
-    - typings.multicodec.multicodecNumbers.`0xb253`
-    - typings.multicodec.multicodecNumbers.`0xb254`
-    - typings.multicodec.multicodecNumbers.`0xb255`
-    - typings.multicodec.multicodecNumbers.`0xb256`
-    - typings.multicodec.multicodecNumbers.`0xb257`
-    - typings.multicodec.multicodecNumbers.`0xb258`
-    - typings.multicodec.multicodecNumbers.`0xb259`
-    - typings.multicodec.multicodecNumbers.`0xb25a`
-    - typings.multicodec.multicodecNumbers.`0xb25b`
-    - typings.multicodec.multicodecNumbers.`0xb25c`
-    - typings.multicodec.multicodecNumbers.`0xb25d`
-    - typings.multicodec.multicodecNumbers.`0xb25e`
-    - typings.multicodec.multicodecNumbers.`0xb25f`
-    - typings.multicodec.multicodecNumbers.`0xb260`
-    - typings.multicodec.multicodecNumbers.`0xb301`
-    - typings.multicodec.multicodecNumbers.`0xb302`
-    - typings.multicodec.multicodecNumbers.`0xb303`
-    - typings.multicodec.multicodecNumbers.`0xb304`
-    - typings.multicodec.multicodecNumbers.`0xb305`
-    - typings.multicodec.multicodecNumbers.`0xb306`
-    - typings.multicodec.multicodecNumbers.`0xb307`
-    - typings.multicodec.multicodecNumbers.`0xb308`
-    - typings.multicodec.multicodecNumbers.`0xb309`
-    - typings.multicodec.multicodecNumbers.`0xb30a`
-    - typings.multicodec.multicodecNumbers.`0xb30b`
-    - typings.multicodec.multicodecNumbers.`0xb30c`
-    - typings.multicodec.multicodecNumbers.`0xb30d`
-    - typings.multicodec.multicodecNumbers.`0xb30e`
-    - typings.multicodec.multicodecNumbers.`0xb30f`
-    - typings.multicodec.multicodecNumbers.`0xb310`
-    - typings.multicodec.multicodecNumbers.`0xb311`
-    - typings.multicodec.multicodecNumbers.`0xb312`
-    - typings.multicodec.multicodecNumbers.`0xb313`
-    - typings.multicodec.multicodecNumbers.`0xb314`
-    - typings.multicodec.multicodecNumbers.`0xb315`
-    - typings.multicodec.multicodecNumbers.`0xb316`
-    - typings.multicodec.multicodecNumbers.`0xb317`
-    - typings.multicodec.multicodecNumbers.`0xb318`
-    - typings.multicodec.multicodecNumbers.`0xb319`
-    - typings.multicodec.multicodecNumbers.`0xb31a`
-    - typings.multicodec.multicodecNumbers.`0xb31b`
-    - typings.multicodec.multicodecNumbers.`0xb31c`
-    - typings.multicodec.multicodecNumbers.`0xb31d`
-    - typings.multicodec.multicodecNumbers.`0xb31e`
-    - typings.multicodec.multicodecNumbers.`0xb31f`
-    - typings.multicodec.multicodecNumbers.`0xb320`
-    - typings.multicodec.multicodecNumbers.`0xb321`
-    - typings.multicodec.multicodecNumbers.`0xb322`
-    - typings.multicodec.multicodecNumbers.`0xb323`
-    - typings.multicodec.multicodecNumbers.`0xb324`
-    - typings.multicodec.multicodecNumbers.`0xb325`
-    - typings.multicodec.multicodecNumbers.`0xb326`
-    - typings.multicodec.multicodecNumbers.`0xb327`
-    - typings.multicodec.multicodecNumbers.`0xb328`
-    - typings.multicodec.multicodecNumbers.`0xb329`
-    - typings.multicodec.multicodecNumbers.`0xb32a`
-    - typings.multicodec.multicodecNumbers.`0xb32b`
-    - typings.multicodec.multicodecNumbers.`0xb32c`
-    - typings.multicodec.multicodecNumbers.`0xb32d`
-    - typings.multicodec.multicodecNumbers.`0xb32e`
-    - typings.multicodec.multicodecNumbers.`0xb32f`
-    - typings.multicodec.multicodecNumbers.`0xb330`
-    - typings.multicodec.multicodecNumbers.`0xb331`
-    - typings.multicodec.multicodecNumbers.`0xb332`
-    - typings.multicodec.multicodecNumbers.`0xb333`
-    - typings.multicodec.multicodecNumbers.`0xb334`
-    - typings.multicodec.multicodecNumbers.`0xb335`
-    - typings.multicodec.multicodecNumbers.`0xb336`
-    - typings.multicodec.multicodecNumbers.`0xb337`
-    - typings.multicodec.multicodecNumbers.`0xb338`
-    - typings.multicodec.multicodecNumbers.`0xb339`
-    - typings.multicodec.multicodecNumbers.`0xb33a`
-    - typings.multicodec.multicodecNumbers.`0xb33b`
-    - typings.multicodec.multicodecNumbers.`0xb33c`
-    - typings.multicodec.multicodecNumbers.`0xb33d`
-    - typings.multicodec.multicodecNumbers.`0xb33e`
-    - typings.multicodec.multicodecNumbers.`0xb33f`
-    - typings.multicodec.multicodecNumbers.`0xb340`
-    - typings.multicodec.multicodecNumbers.`0xb341`
-    - typings.multicodec.multicodecNumbers.`0xb342`
-    - typings.multicodec.multicodecNumbers.`0xb343`
-    - typings.multicodec.multicodecNumbers.`0xb344`
-    - typings.multicodec.multicodecNumbers.`0xb345`
-    - typings.multicodec.multicodecNumbers.`0xb346`
-    - typings.multicodec.multicodecNumbers.`0xb347`
-    - typings.multicodec.multicodecNumbers.`0xb348`
-    - typings.multicodec.multicodecNumbers.`0xb349`
-    - typings.multicodec.multicodecNumbers.`0xb34a`
-    - typings.multicodec.multicodecNumbers.`0xb34b`
-    - typings.multicodec.multicodecNumbers.`0xb34c`
-    - typings.multicodec.multicodecNumbers.`0xb34d`
-    - typings.multicodec.multicodecNumbers.`0xb34e`
-    - typings.multicodec.multicodecNumbers.`0xb34f`
-    - typings.multicodec.multicodecNumbers.`0xb350`
-    - typings.multicodec.multicodecNumbers.`0xb351`
-    - typings.multicodec.multicodecNumbers.`0xb352`
-    - typings.multicodec.multicodecNumbers.`0xb353`
-    - typings.multicodec.multicodecNumbers.`0xb354`
-    - typings.multicodec.multicodecNumbers.`0xb355`
-    - typings.multicodec.multicodecNumbers.`0xb356`
-    - typings.multicodec.multicodecNumbers.`0xb357`
-    - typings.multicodec.multicodecNumbers.`0xb358`
-    - typings.multicodec.multicodecNumbers.`0xb359`
-    - typings.multicodec.multicodecNumbers.`0xb35a`
-    - typings.multicodec.multicodecNumbers.`0xb35b`
-    - typings.multicodec.multicodecNumbers.`0xb35c`
-    - typings.multicodec.multicodecNumbers.`0xb35d`
-    - typings.multicodec.multicodecNumbers.`0xb35e`
-    - typings.multicodec.multicodecNumbers.`0xb35f`
-    - typings.multicodec.multicodecNumbers.`0xb360`
-    - typings.multicodec.multicodecNumbers.`0xb361`
-    - typings.multicodec.multicodecNumbers.`0xb362`
-    - typings.multicodec.multicodecNumbers.`0xb363`
-    - typings.multicodec.multicodecNumbers.`0xb364`
-    - typings.multicodec.multicodecNumbers.`0xb365`
-    - typings.multicodec.multicodecNumbers.`0xb366`
-    - typings.multicodec.multicodecNumbers.`0xb367`
-    - typings.multicodec.multicodecNumbers.`0xb368`
-    - typings.multicodec.multicodecNumbers.`0xb369`
-    - typings.multicodec.multicodecNumbers.`0xb36a`
-    - typings.multicodec.multicodecNumbers.`0xb36b`
-    - typings.multicodec.multicodecNumbers.`0xb36c`
-    - typings.multicodec.multicodecNumbers.`0xb36d`
-    - typings.multicodec.multicodecNumbers.`0xb36e`
-    - typings.multicodec.multicodecNumbers.`0xb36f`
-    - typings.multicodec.multicodecNumbers.`0xb370`
-    - typings.multicodec.multicodecNumbers.`0xb371`
-    - typings.multicodec.multicodecNumbers.`0xb372`
-    - typings.multicodec.multicodecNumbers.`0xb373`
-    - typings.multicodec.multicodecNumbers.`0xb374`
-    - typings.multicodec.multicodecNumbers.`0xb375`
-    - typings.multicodec.multicodecNumbers.`0xb376`
-    - typings.multicodec.multicodecNumbers.`0xb377`
-    - typings.multicodec.multicodecNumbers.`0xb378`
-    - typings.multicodec.multicodecNumbers.`0xb379`
-    - typings.multicodec.multicodecNumbers.`0xb37a`
-    - typings.multicodec.multicodecNumbers.`0xb37b`
-    - typings.multicodec.multicodecNumbers.`0xb37c`
-    - typings.multicodec.multicodecNumbers.`0xb37d`
-    - typings.multicodec.multicodecNumbers.`0xb37e`
-    - typings.multicodec.multicodecNumbers.`0xb37f`
-    - typings.multicodec.multicodecNumbers.`0xb380`
-    - typings.multicodec.multicodecNumbers.`0xb381`
-    - typings.multicodec.multicodecNumbers.`0xb382`
-    - typings.multicodec.multicodecNumbers.`0xb383`
-    - typings.multicodec.multicodecNumbers.`0xb384`
-    - typings.multicodec.multicodecNumbers.`0xb385`
-    - typings.multicodec.multicodecNumbers.`0xb386`
-    - typings.multicodec.multicodecNumbers.`0xb387`
-    - typings.multicodec.multicodecNumbers.`0xb388`
-    - typings.multicodec.multicodecNumbers.`0xb389`
-    - typings.multicodec.multicodecNumbers.`0xb38a`
-    - typings.multicodec.multicodecNumbers.`0xb38b`
-    - typings.multicodec.multicodecNumbers.`0xb38c`
-    - typings.multicodec.multicodecNumbers.`0xb38d`
-    - typings.multicodec.multicodecNumbers.`0xb38e`
-    - typings.multicodec.multicodecNumbers.`0xb38f`
-    - typings.multicodec.multicodecNumbers.`0xb390`
-    - typings.multicodec.multicodecNumbers.`0xb391`
-    - typings.multicodec.multicodecNumbers.`0xb392`
-    - typings.multicodec.multicodecNumbers.`0xb393`
-    - typings.multicodec.multicodecNumbers.`0xb394`
-    - typings.multicodec.multicodecNumbers.`0xb395`
-    - typings.multicodec.multicodecNumbers.`0xb396`
-    - typings.multicodec.multicodecNumbers.`0xb397`
-    - typings.multicodec.multicodecNumbers.`0xb398`
-    - typings.multicodec.multicodecNumbers.`0xb399`
-    - typings.multicodec.multicodecNumbers.`0xb39a`
-    - typings.multicodec.multicodecNumbers.`0xb39b`
-    - typings.multicodec.multicodecNumbers.`0xb39c`
-    - typings.multicodec.multicodecNumbers.`0xb39d`
-    - typings.multicodec.multicodecNumbers.`0xb39e`
-    - typings.multicodec.multicodecNumbers.`0xb39f`
-    - typings.multicodec.multicodecNumbers.`0xb3a0`
-    - typings.multicodec.multicodecNumbers.`0xb3a1`
-    - typings.multicodec.multicodecNumbers.`0xb3a2`
-    - typings.multicodec.multicodecNumbers.`0xb3a3`
-    - typings.multicodec.multicodecNumbers.`0xb3a4`
-    - typings.multicodec.multicodecNumbers.`0xb3a5`
-    - typings.multicodec.multicodecNumbers.`0xb3a6`
-    - typings.multicodec.multicodecNumbers.`0xb3a7`
-    - typings.multicodec.multicodecNumbers.`0xb3a8`
-    - typings.multicodec.multicodecNumbers.`0xb3a9`
-    - typings.multicodec.multicodecNumbers.`0xb3aa`
-    - typings.multicodec.multicodecNumbers.`0xb3ab`
-    - typings.multicodec.multicodecNumbers.`0xb3ac`
-    - typings.multicodec.multicodecNumbers.`0xb3ad`
-    - typings.multicodec.multicodecNumbers.`0xb3ae`
-    - typings.multicodec.multicodecNumbers.`0xb3af`
-    - typings.multicodec.multicodecNumbers.`0xb3b0`
-    - typings.multicodec.multicodecNumbers.`0xb3b1`
-    - typings.multicodec.multicodecNumbers.`0xb3b2`
-    - typings.multicodec.multicodecNumbers.`0xb3b3`
-    - typings.multicodec.multicodecNumbers.`0xb3b4`
-    - typings.multicodec.multicodecNumbers.`0xb3b5`
-    - typings.multicodec.multicodecNumbers.`0xb3b6`
-    - typings.multicodec.multicodecNumbers.`0xb3b7`
-    - typings.multicodec.multicodecNumbers.`0xb3b8`
-    - typings.multicodec.multicodecNumbers.`0xb3b9`
-    - typings.multicodec.multicodecNumbers.`0xb3ba`
-    - typings.multicodec.multicodecNumbers.`0xb3bb`
-    - typings.multicodec.multicodecNumbers.`0xb3bc`
-    - typings.multicodec.multicodecNumbers.`0xb3bd`
-    - typings.multicodec.multicodecNumbers.`0xb3be`
-    - typings.multicodec.multicodecNumbers.`0xb3bf`
-    - typings.multicodec.multicodecNumbers.`0xb3c0`
-    - typings.multicodec.multicodecNumbers.`0xb3c1`
-    - typings.multicodec.multicodecNumbers.`0xb3c2`
-    - typings.multicodec.multicodecNumbers.`0xb3c3`
-    - typings.multicodec.multicodecNumbers.`0xb3c4`
-    - typings.multicodec.multicodecNumbers.`0xb3c5`
-    - typings.multicodec.multicodecNumbers.`0xb3c6`
-    - typings.multicodec.multicodecNumbers.`0xb3c7`
-    - typings.multicodec.multicodecNumbers.`0xb3c8`
-    - typings.multicodec.multicodecNumbers.`0xb3c9`
-    - typings.multicodec.multicodecNumbers.`0xb3ca`
-    - typings.multicodec.multicodecNumbers.`0xb3cb`
-    - typings.multicodec.multicodecNumbers.`0xb3cc`
-    - typings.multicodec.multicodecNumbers.`0xb3cd`
-    - typings.multicodec.multicodecNumbers.`0xb3ce`
-    - typings.multicodec.multicodecNumbers.`0xb3cf`
-    - typings.multicodec.multicodecNumbers.`0xb3d0`
-    - typings.multicodec.multicodecNumbers.`0xb3d1`
-    - typings.multicodec.multicodecNumbers.`0xb3d2`
-    - typings.multicodec.multicodecNumbers.`0xb3d3`
-    - typings.multicodec.multicodecNumbers.`0xb3d4`
-    - typings.multicodec.multicodecNumbers.`0xb3d5`
-    - typings.multicodec.multicodecNumbers.`0xb3d6`
-    - typings.multicodec.multicodecNumbers.`0xb3d7`
-    - typings.multicodec.multicodecNumbers.`0xb3d8`
-    - typings.multicodec.multicodecNumbers.`0xb3d9`
-    - typings.multicodec.multicodecNumbers.`0xb3da`
-    - typings.multicodec.multicodecNumbers.`0xb3db`
-    - typings.multicodec.multicodecNumbers.`0xb3dc`
-    - typings.multicodec.multicodecNumbers.`0xb3dd`
-    - typings.multicodec.multicodecNumbers.`0xb3de`
-    - typings.multicodec.multicodecNumbers.`0xb3df`
-    - typings.multicodec.multicodecNumbers.`0xb3e0`
-    - typings.multicodec.multicodecNumbers.`0xb401`
-    - typings.multicodec.multicodecNumbers.`0xb402`
-    - typings.multicodec.multicodecNumbers.`0xce11`
-    - typings.multicodec.multicodecNumbers.`0xf101`
-    - typings.multicodec.multicodecNumbers.`0xf102`
-    - typings.multicodec.multicodecNumbers.`0x807124`
-    - typings.multicodec.multicodecNumbers.`0x817124`
-    - typings.multicodec.multicodecNumbers.`0x947124`
-    - typings.multicodec.multicodecNumbers.`0x957124`
-    - typings.multicodec.multicodecNumbers.`0xa27124`
-    - typings.multicodec.multicodecNumbers.`0xa37124`
-    - typings.multicodec.multicodecNumbers.`0xb19910`
-    - typings.multicodec.multicodecNumbers.`0xb29910`
+    - typings.multicodec.multicodecInts.`0x00`
+    - typings.multicodec.multicodecInts.`0x01`
+    - typings.multicodec.multicodecInts.`0x02`
+    - typings.multicodec.multicodecInts.`0x03`
+    - typings.multicodec.multicodecInts.`0x04`
+    - typings.multicodec.multicodecInts.`0x06`
+    - typings.multicodec.multicodecInts.`0x11`
+    - typings.multicodec.multicodecInts.`0x12`
+    - typings.multicodec.multicodecInts.`0x13`
+    - typings.multicodec.multicodecInts.`0x14`
+    - typings.multicodec.multicodecInts.`0x15`
+    - typings.multicodec.multicodecInts.`0x16`
+    - typings.multicodec.multicodecInts.`0x17`
+    - typings.multicodec.multicodecInts.`0x18`
+    - typings.multicodec.multicodecInts.`0x19`
+    - typings.multicodec.multicodecInts.`0x1a`
+    - typings.multicodec.multicodecInts.`0x1b`
+    - typings.multicodec.multicodecInts.`0x1c`
+    - typings.multicodec.multicodecInts.`0x1d`
+    - typings.multicodec.multicodecInts.`0x1e`
+    - typings.multicodec.multicodecInts.`0x21`
+    - typings.multicodec.multicodecInts.`0x22`
+    - typings.multicodec.multicodecInts.`0x23`
+    - typings.multicodec.multicodecInts.`0x29`
+    - typings.multicodec.multicodecInts.`0x2a`
+    - typings.multicodec.multicodecInts.`0x2f`
+    - typings.multicodec.multicodecInts.`0x30`
+    - typings.multicodec.multicodecInts.`0x31`
+    - typings.multicodec.multicodecInts.`0x32`
+    - typings.multicodec.multicodecInts.`0x33`
+    - typings.multicodec.multicodecInts.`0x35`
+    - typings.multicodec.multicodecInts.`0x36`
+    - typings.multicodec.multicodecInts.`0x37`
+    - typings.multicodec.multicodecInts.`0x38`
+    - typings.multicodec.multicodecInts.`0x50`
+    - typings.multicodec.multicodecInts.`0x51`
+    - typings.multicodec.multicodecInts.`0x55`
+    - typings.multicodec.multicodecInts.`0x56`
+    - typings.multicodec.multicodecInts.`0x60`
+    - typings.multicodec.multicodecInts.`0x63`
+    - typings.multicodec.multicodecInts.`0x70`
+    - typings.multicodec.multicodecInts.`0x71`
+    - typings.multicodec.multicodecInts.`0x72`
+    - typings.multicodec.multicodecInts.`0x78`
+    - typings.multicodec.multicodecInts.`0x7b`
+    - typings.multicodec.multicodecInts.`0x7c`
+    - typings.multicodec.multicodecInts.`0x81`
+    - typings.multicodec.multicodecInts.`0x82`
+    - typings.multicodec.multicodecInts.`0x83`
+    - typings.multicodec.multicodecInts.`0x84`
+    - typings.multicodec.multicodecInts.`0x85`
+    - typings.multicodec.multicodecInts.`0x86`
+    - typings.multicodec.multicodecInts.`0x90`
+    - typings.multicodec.multicodecInts.`0x91`
+    - typings.multicodec.multicodecInts.`0x92`
+    - typings.multicodec.multicodecInts.`0x93`
+    - typings.multicodec.multicodecInts.`0x94`
+    - typings.multicodec.multicodecInts.`0x95`
+    - typings.multicodec.multicodecInts.`0x96`
+    - typings.multicodec.multicodecInts.`0x97`
+    - typings.multicodec.multicodecInts.`0x98`
+    - typings.multicodec.multicodecInts.`0x99`
+    - typings.multicodec.multicodecInts.`0x9a`
+    - typings.multicodec.multicodecInts.`0xb0`
+    - typings.multicodec.multicodecInts.`0xb1`
+    - typings.multicodec.multicodecInts.`0xb2`
+    - typings.multicodec.multicodecInts.`0xc0`
+    - typings.multicodec.multicodecInts.`0xc1`
+    - typings.multicodec.multicodecInts.`0xca`
+    - typings.multicodec.multicodecInts.`0xce`
+    - typings.multicodec.multicodecInts.`0xd0`
+    - typings.multicodec.multicodecInts.`0xd1`
+    - typings.multicodec.multicodecInts.`0xd4`
+    - typings.multicodec.multicodecInts.`0xd5`
+    - typings.multicodec.multicodecInts.`0xd6`
+    - typings.multicodec.multicodecInts.`0xe0`
+    - typings.multicodec.multicodecInts.`0xe1`
+    - typings.multicodec.multicodecInts.`0xe2`
+    - typings.multicodec.multicodecInts.`0xe3`
+    - typings.multicodec.multicodecInts.`0xe4`
+    - typings.multicodec.multicodecInts.`0xe5`
+    - typings.multicodec.multicodecInts.`0xe6`
+    - typings.multicodec.multicodecInts.`0xe7`
+    - typings.multicodec.multicodecInts.`0xea`
+    - typings.multicodec.multicodecInts.`0xeb`
+    - typings.multicodec.multicodecInts.`0xec`
+    - typings.multicodec.multicodecInts.`0xed`
+    - typings.multicodec.multicodecInts.`0xee`
+    - typings.multicodec.multicodecInts.`0xf0`
+    - typings.multicodec.multicodecInts.`0xf1`
+    - typings.multicodec.multicodecInts.`0xfa`
+    - typings.multicodec.multicodecInts.`0xfb`
+    - typings.multicodec.multicodecInts.`0x0111`
+    - typings.multicodec.multicodecInts.`0x0113`
+    - typings.multicodec.multicodecInts.`0x0114`
+    - typings.multicodec.multicodecInts.`0x0115`
+    - typings.multicodec.multicodecInts.`0x0122`
+    - typings.multicodec.multicodecInts.`0x0129`
+    - typings.multicodec.multicodecInts.`0x012d`
+    - typings.multicodec.multicodecInts.`0x012e`
+    - typings.multicodec.multicodecInts.`0x0190`
+    - typings.multicodec.multicodecInts.`0x0196`
+    - typings.multicodec.multicodecInts.`0x01a5`
+    - typings.multicodec.multicodecInts.`0x01bb`
+    - typings.multicodec.multicodecInts.`0x01bc`
+    - typings.multicodec.multicodecInts.`0x01bd`
+    - typings.multicodec.multicodecInts.`0x01be`
+    - typings.multicodec.multicodecInts.`0x01bf`
+    - typings.multicodec.multicodecInts.`0x01c0`
+    - typings.multicodec.multicodecInts.`0x01c6`
+    - typings.multicodec.multicodecInts.`0x01cc`
+    - typings.multicodec.multicodecInts.`0x01dd`
+    - typings.multicodec.multicodecInts.`0x01de`
+    - typings.multicodec.multicodecInts.`0x01df`
+    - typings.multicodec.multicodecInts.`0x01e0`
+    - typings.multicodec.multicodecInts.`0x01f0`
+    - typings.multicodec.multicodecInts.`0x0200`
+    - typings.multicodec.multicodecInts.`0x0201`
+    - typings.multicodec.multicodecInts.`0x0301`
+    - typings.multicodec.multicodecInts.`0x0302`
+    - typings.multicodec.multicodecInts.`0x0400`
+    - typings.multicodec.multicodecInts.`0x1012`
+    - typings.multicodec.multicodecInts.`0x1052`
+    - typings.multicodec.multicodecInts.`0x1053`
+    - typings.multicodec.multicodecInts.`0x1054`
+    - typings.multicodec.multicodecInts.`0x1055`
+    - typings.multicodec.multicodecInts.`0x1100`
+    - typings.multicodec.multicodecInts.`0x1200`
+    - typings.multicodec.multicodecInts.`0x1201`
+    - typings.multicodec.multicodecInts.`0x1202`
+    - typings.multicodec.multicodecInts.`0x1203`
+    - typings.multicodec.multicodecInts.`0x1204`
+    - typings.multicodec.multicodecInts.`0x1300`
+    - typings.multicodec.multicodecInts.`0x1301`
+    - typings.multicodec.multicodecInts.`0x1302`
+    - typings.multicodec.multicodecInts.`0x1d01`
+    - typings.multicodec.multicodecInts.`0x534d`
+    - typings.multicodec.multicodecInts.`0xb201`
+    - typings.multicodec.multicodecInts.`0xb202`
+    - typings.multicodec.multicodecInts.`0xb203`
+    - typings.multicodec.multicodecInts.`0xb204`
+    - typings.multicodec.multicodecInts.`0xb205`
+    - typings.multicodec.multicodecInts.`0xb206`
+    - typings.multicodec.multicodecInts.`0xb207`
+    - typings.multicodec.multicodecInts.`0xb208`
+    - typings.multicodec.multicodecInts.`0xb209`
+    - typings.multicodec.multicodecInts.`0xb20a`
+    - typings.multicodec.multicodecInts.`0xb20b`
+    - typings.multicodec.multicodecInts.`0xb20c`
+    - typings.multicodec.multicodecInts.`0xb20d`
+    - typings.multicodec.multicodecInts.`0xb20e`
+    - typings.multicodec.multicodecInts.`0xb20f`
+    - typings.multicodec.multicodecInts.`0xb210`
+    - typings.multicodec.multicodecInts.`0xb211`
+    - typings.multicodec.multicodecInts.`0xb212`
+    - typings.multicodec.multicodecInts.`0xb213`
+    - typings.multicodec.multicodecInts.`0xb214`
+    - typings.multicodec.multicodecInts.`0xb215`
+    - typings.multicodec.multicodecInts.`0xb216`
+    - typings.multicodec.multicodecInts.`0xb217`
+    - typings.multicodec.multicodecInts.`0xb218`
+    - typings.multicodec.multicodecInts.`0xb219`
+    - typings.multicodec.multicodecInts.`0xb21a`
+    - typings.multicodec.multicodecInts.`0xb21b`
+    - typings.multicodec.multicodecInts.`0xb21c`
+    - typings.multicodec.multicodecInts.`0xb21d`
+    - typings.multicodec.multicodecInts.`0xb21e`
+    - typings.multicodec.multicodecInts.`0xb21f`
+    - typings.multicodec.multicodecInts.`0xb220`
+    - typings.multicodec.multicodecInts.`0xb221`
+    - typings.multicodec.multicodecInts.`0xb222`
+    - typings.multicodec.multicodecInts.`0xb223`
+    - typings.multicodec.multicodecInts.`0xb224`
+    - typings.multicodec.multicodecInts.`0xb225`
+    - typings.multicodec.multicodecInts.`0xb226`
+    - typings.multicodec.multicodecInts.`0xb227`
+    - typings.multicodec.multicodecInts.`0xb228`
+    - typings.multicodec.multicodecInts.`0xb229`
+    - typings.multicodec.multicodecInts.`0xb22a`
+    - typings.multicodec.multicodecInts.`0xb22b`
+    - typings.multicodec.multicodecInts.`0xb22c`
+    - typings.multicodec.multicodecInts.`0xb22d`
+    - typings.multicodec.multicodecInts.`0xb22e`
+    - typings.multicodec.multicodecInts.`0xb22f`
+    - typings.multicodec.multicodecInts.`0xb230`
+    - typings.multicodec.multicodecInts.`0xb231`
+    - typings.multicodec.multicodecInts.`0xb232`
+    - typings.multicodec.multicodecInts.`0xb233`
+    - typings.multicodec.multicodecInts.`0xb234`
+    - typings.multicodec.multicodecInts.`0xb235`
+    - typings.multicodec.multicodecInts.`0xb236`
+    - typings.multicodec.multicodecInts.`0xb237`
+    - typings.multicodec.multicodecInts.`0xb238`
+    - typings.multicodec.multicodecInts.`0xb239`
+    - typings.multicodec.multicodecInts.`0xb23a`
+    - typings.multicodec.multicodecInts.`0xb23b`
+    - typings.multicodec.multicodecInts.`0xb23c`
+    - typings.multicodec.multicodecInts.`0xb23d`
+    - typings.multicodec.multicodecInts.`0xb23e`
+    - typings.multicodec.multicodecInts.`0xb23f`
+    - typings.multicodec.multicodecInts.`0xb240`
+    - typings.multicodec.multicodecInts.`0xb241`
+    - typings.multicodec.multicodecInts.`0xb242`
+    - typings.multicodec.multicodecInts.`0xb243`
+    - typings.multicodec.multicodecInts.`0xb244`
+    - typings.multicodec.multicodecInts.`0xb245`
+    - typings.multicodec.multicodecInts.`0xb246`
+    - typings.multicodec.multicodecInts.`0xb247`
+    - typings.multicodec.multicodecInts.`0xb248`
+    - typings.multicodec.multicodecInts.`0xb249`
+    - typings.multicodec.multicodecInts.`0xb24a`
+    - typings.multicodec.multicodecInts.`0xb24b`
+    - typings.multicodec.multicodecInts.`0xb24c`
+    - typings.multicodec.multicodecInts.`0xb24d`
+    - typings.multicodec.multicodecInts.`0xb24e`
+    - typings.multicodec.multicodecInts.`0xb24f`
+    - typings.multicodec.multicodecInts.`0xb250`
+    - typings.multicodec.multicodecInts.`0xb251`
+    - typings.multicodec.multicodecInts.`0xb252`
+    - typings.multicodec.multicodecInts.`0xb253`
+    - typings.multicodec.multicodecInts.`0xb254`
+    - typings.multicodec.multicodecInts.`0xb255`
+    - typings.multicodec.multicodecInts.`0xb256`
+    - typings.multicodec.multicodecInts.`0xb257`
+    - typings.multicodec.multicodecInts.`0xb258`
+    - typings.multicodec.multicodecInts.`0xb259`
+    - typings.multicodec.multicodecInts.`0xb25a`
+    - typings.multicodec.multicodecInts.`0xb25b`
+    - typings.multicodec.multicodecInts.`0xb25c`
+    - typings.multicodec.multicodecInts.`0xb25d`
+    - typings.multicodec.multicodecInts.`0xb25e`
+    - typings.multicodec.multicodecInts.`0xb25f`
+    - typings.multicodec.multicodecInts.`0xb260`
+    - typings.multicodec.multicodecInts.`0xb301`
+    - typings.multicodec.multicodecInts.`0xb302`
+    - typings.multicodec.multicodecInts.`0xb303`
+    - typings.multicodec.multicodecInts.`0xb304`
+    - typings.multicodec.multicodecInts.`0xb305`
+    - typings.multicodec.multicodecInts.`0xb306`
+    - typings.multicodec.multicodecInts.`0xb307`
+    - typings.multicodec.multicodecInts.`0xb308`
+    - typings.multicodec.multicodecInts.`0xb309`
+    - typings.multicodec.multicodecInts.`0xb30a`
+    - typings.multicodec.multicodecInts.`0xb30b`
+    - typings.multicodec.multicodecInts.`0xb30c`
+    - typings.multicodec.multicodecInts.`0xb30d`
+    - typings.multicodec.multicodecInts.`0xb30e`
+    - typings.multicodec.multicodecInts.`0xb30f`
+    - typings.multicodec.multicodecInts.`0xb310`
+    - typings.multicodec.multicodecInts.`0xb311`
+    - typings.multicodec.multicodecInts.`0xb312`
+    - typings.multicodec.multicodecInts.`0xb313`
+    - typings.multicodec.multicodecInts.`0xb314`
+    - typings.multicodec.multicodecInts.`0xb315`
+    - typings.multicodec.multicodecInts.`0xb316`
+    - typings.multicodec.multicodecInts.`0xb317`
+    - typings.multicodec.multicodecInts.`0xb318`
+    - typings.multicodec.multicodecInts.`0xb319`
+    - typings.multicodec.multicodecInts.`0xb31a`
+    - typings.multicodec.multicodecInts.`0xb31b`
+    - typings.multicodec.multicodecInts.`0xb31c`
+    - typings.multicodec.multicodecInts.`0xb31d`
+    - typings.multicodec.multicodecInts.`0xb31e`
+    - typings.multicodec.multicodecInts.`0xb31f`
+    - typings.multicodec.multicodecInts.`0xb320`
+    - typings.multicodec.multicodecInts.`0xb321`
+    - typings.multicodec.multicodecInts.`0xb322`
+    - typings.multicodec.multicodecInts.`0xb323`
+    - typings.multicodec.multicodecInts.`0xb324`
+    - typings.multicodec.multicodecInts.`0xb325`
+    - typings.multicodec.multicodecInts.`0xb326`
+    - typings.multicodec.multicodecInts.`0xb327`
+    - typings.multicodec.multicodecInts.`0xb328`
+    - typings.multicodec.multicodecInts.`0xb329`
+    - typings.multicodec.multicodecInts.`0xb32a`
+    - typings.multicodec.multicodecInts.`0xb32b`
+    - typings.multicodec.multicodecInts.`0xb32c`
+    - typings.multicodec.multicodecInts.`0xb32d`
+    - typings.multicodec.multicodecInts.`0xb32e`
+    - typings.multicodec.multicodecInts.`0xb32f`
+    - typings.multicodec.multicodecInts.`0xb330`
+    - typings.multicodec.multicodecInts.`0xb331`
+    - typings.multicodec.multicodecInts.`0xb332`
+    - typings.multicodec.multicodecInts.`0xb333`
+    - typings.multicodec.multicodecInts.`0xb334`
+    - typings.multicodec.multicodecInts.`0xb335`
+    - typings.multicodec.multicodecInts.`0xb336`
+    - typings.multicodec.multicodecInts.`0xb337`
+    - typings.multicodec.multicodecInts.`0xb338`
+    - typings.multicodec.multicodecInts.`0xb339`
+    - typings.multicodec.multicodecInts.`0xb33a`
+    - typings.multicodec.multicodecInts.`0xb33b`
+    - typings.multicodec.multicodecInts.`0xb33c`
+    - typings.multicodec.multicodecInts.`0xb33d`
+    - typings.multicodec.multicodecInts.`0xb33e`
+    - typings.multicodec.multicodecInts.`0xb33f`
+    - typings.multicodec.multicodecInts.`0xb340`
+    - typings.multicodec.multicodecInts.`0xb341`
+    - typings.multicodec.multicodecInts.`0xb342`
+    - typings.multicodec.multicodecInts.`0xb343`
+    - typings.multicodec.multicodecInts.`0xb344`
+    - typings.multicodec.multicodecInts.`0xb345`
+    - typings.multicodec.multicodecInts.`0xb346`
+    - typings.multicodec.multicodecInts.`0xb347`
+    - typings.multicodec.multicodecInts.`0xb348`
+    - typings.multicodec.multicodecInts.`0xb349`
+    - typings.multicodec.multicodecInts.`0xb34a`
+    - typings.multicodec.multicodecInts.`0xb34b`
+    - typings.multicodec.multicodecInts.`0xb34c`
+    - typings.multicodec.multicodecInts.`0xb34d`
+    - typings.multicodec.multicodecInts.`0xb34e`
+    - typings.multicodec.multicodecInts.`0xb34f`
+    - typings.multicodec.multicodecInts.`0xb350`
+    - typings.multicodec.multicodecInts.`0xb351`
+    - typings.multicodec.multicodecInts.`0xb352`
+    - typings.multicodec.multicodecInts.`0xb353`
+    - typings.multicodec.multicodecInts.`0xb354`
+    - typings.multicodec.multicodecInts.`0xb355`
+    - typings.multicodec.multicodecInts.`0xb356`
+    - typings.multicodec.multicodecInts.`0xb357`
+    - typings.multicodec.multicodecInts.`0xb358`
+    - typings.multicodec.multicodecInts.`0xb359`
+    - typings.multicodec.multicodecInts.`0xb35a`
+    - typings.multicodec.multicodecInts.`0xb35b`
+    - typings.multicodec.multicodecInts.`0xb35c`
+    - typings.multicodec.multicodecInts.`0xb35d`
+    - typings.multicodec.multicodecInts.`0xb35e`
+    - typings.multicodec.multicodecInts.`0xb35f`
+    - typings.multicodec.multicodecInts.`0xb360`
+    - typings.multicodec.multicodecInts.`0xb361`
+    - typings.multicodec.multicodecInts.`0xb362`
+    - typings.multicodec.multicodecInts.`0xb363`
+    - typings.multicodec.multicodecInts.`0xb364`
+    - typings.multicodec.multicodecInts.`0xb365`
+    - typings.multicodec.multicodecInts.`0xb366`
+    - typings.multicodec.multicodecInts.`0xb367`
+    - typings.multicodec.multicodecInts.`0xb368`
+    - typings.multicodec.multicodecInts.`0xb369`
+    - typings.multicodec.multicodecInts.`0xb36a`
+    - typings.multicodec.multicodecInts.`0xb36b`
+    - typings.multicodec.multicodecInts.`0xb36c`
+    - typings.multicodec.multicodecInts.`0xb36d`
+    - typings.multicodec.multicodecInts.`0xb36e`
+    - typings.multicodec.multicodecInts.`0xb36f`
+    - typings.multicodec.multicodecInts.`0xb370`
+    - typings.multicodec.multicodecInts.`0xb371`
+    - typings.multicodec.multicodecInts.`0xb372`
+    - typings.multicodec.multicodecInts.`0xb373`
+    - typings.multicodec.multicodecInts.`0xb374`
+    - typings.multicodec.multicodecInts.`0xb375`
+    - typings.multicodec.multicodecInts.`0xb376`
+    - typings.multicodec.multicodecInts.`0xb377`
+    - typings.multicodec.multicodecInts.`0xb378`
+    - typings.multicodec.multicodecInts.`0xb379`
+    - typings.multicodec.multicodecInts.`0xb37a`
+    - typings.multicodec.multicodecInts.`0xb37b`
+    - typings.multicodec.multicodecInts.`0xb37c`
+    - typings.multicodec.multicodecInts.`0xb37d`
+    - typings.multicodec.multicodecInts.`0xb37e`
+    - typings.multicodec.multicodecInts.`0xb37f`
+    - typings.multicodec.multicodecInts.`0xb380`
+    - typings.multicodec.multicodecInts.`0xb381`
+    - typings.multicodec.multicodecInts.`0xb382`
+    - typings.multicodec.multicodecInts.`0xb383`
+    - typings.multicodec.multicodecInts.`0xb384`
+    - typings.multicodec.multicodecInts.`0xb385`
+    - typings.multicodec.multicodecInts.`0xb386`
+    - typings.multicodec.multicodecInts.`0xb387`
+    - typings.multicodec.multicodecInts.`0xb388`
+    - typings.multicodec.multicodecInts.`0xb389`
+    - typings.multicodec.multicodecInts.`0xb38a`
+    - typings.multicodec.multicodecInts.`0xb38b`
+    - typings.multicodec.multicodecInts.`0xb38c`
+    - typings.multicodec.multicodecInts.`0xb38d`
+    - typings.multicodec.multicodecInts.`0xb38e`
+    - typings.multicodec.multicodecInts.`0xb38f`
+    - typings.multicodec.multicodecInts.`0xb390`
+    - typings.multicodec.multicodecInts.`0xb391`
+    - typings.multicodec.multicodecInts.`0xb392`
+    - typings.multicodec.multicodecInts.`0xb393`
+    - typings.multicodec.multicodecInts.`0xb394`
+    - typings.multicodec.multicodecInts.`0xb395`
+    - typings.multicodec.multicodecInts.`0xb396`
+    - typings.multicodec.multicodecInts.`0xb397`
+    - typings.multicodec.multicodecInts.`0xb398`
+    - typings.multicodec.multicodecInts.`0xb399`
+    - typings.multicodec.multicodecInts.`0xb39a`
+    - typings.multicodec.multicodecInts.`0xb39b`
+    - typings.multicodec.multicodecInts.`0xb39c`
+    - typings.multicodec.multicodecInts.`0xb39d`
+    - typings.multicodec.multicodecInts.`0xb39e`
+    - typings.multicodec.multicodecInts.`0xb39f`
+    - typings.multicodec.multicodecInts.`0xb3a0`
+    - typings.multicodec.multicodecInts.`0xb3a1`
+    - typings.multicodec.multicodecInts.`0xb3a2`
+    - typings.multicodec.multicodecInts.`0xb3a3`
+    - typings.multicodec.multicodecInts.`0xb3a4`
+    - typings.multicodec.multicodecInts.`0xb3a5`
+    - typings.multicodec.multicodecInts.`0xb3a6`
+    - typings.multicodec.multicodecInts.`0xb3a7`
+    - typings.multicodec.multicodecInts.`0xb3a8`
+    - typings.multicodec.multicodecInts.`0xb3a9`
+    - typings.multicodec.multicodecInts.`0xb3aa`
+    - typings.multicodec.multicodecInts.`0xb3ab`
+    - typings.multicodec.multicodecInts.`0xb3ac`
+    - typings.multicodec.multicodecInts.`0xb3ad`
+    - typings.multicodec.multicodecInts.`0xb3ae`
+    - typings.multicodec.multicodecInts.`0xb3af`
+    - typings.multicodec.multicodecInts.`0xb3b0`
+    - typings.multicodec.multicodecInts.`0xb3b1`
+    - typings.multicodec.multicodecInts.`0xb3b2`
+    - typings.multicodec.multicodecInts.`0xb3b3`
+    - typings.multicodec.multicodecInts.`0xb3b4`
+    - typings.multicodec.multicodecInts.`0xb3b5`
+    - typings.multicodec.multicodecInts.`0xb3b6`
+    - typings.multicodec.multicodecInts.`0xb3b7`
+    - typings.multicodec.multicodecInts.`0xb3b8`
+    - typings.multicodec.multicodecInts.`0xb3b9`
+    - typings.multicodec.multicodecInts.`0xb3ba`
+    - typings.multicodec.multicodecInts.`0xb3bb`
+    - typings.multicodec.multicodecInts.`0xb3bc`
+    - typings.multicodec.multicodecInts.`0xb3bd`
+    - typings.multicodec.multicodecInts.`0xb3be`
+    - typings.multicodec.multicodecInts.`0xb3bf`
+    - typings.multicodec.multicodecInts.`0xb3c0`
+    - typings.multicodec.multicodecInts.`0xb3c1`
+    - typings.multicodec.multicodecInts.`0xb3c2`
+    - typings.multicodec.multicodecInts.`0xb3c3`
+    - typings.multicodec.multicodecInts.`0xb3c4`
+    - typings.multicodec.multicodecInts.`0xb3c5`
+    - typings.multicodec.multicodecInts.`0xb3c6`
+    - typings.multicodec.multicodecInts.`0xb3c7`
+    - typings.multicodec.multicodecInts.`0xb3c8`
+    - typings.multicodec.multicodecInts.`0xb3c9`
+    - typings.multicodec.multicodecInts.`0xb3ca`
+    - typings.multicodec.multicodecInts.`0xb3cb`
+    - typings.multicodec.multicodecInts.`0xb3cc`
+    - typings.multicodec.multicodecInts.`0xb3cd`
+    - typings.multicodec.multicodecInts.`0xb3ce`
+    - typings.multicodec.multicodecInts.`0xb3cf`
+    - typings.multicodec.multicodecInts.`0xb3d0`
+    - typings.multicodec.multicodecInts.`0xb3d1`
+    - typings.multicodec.multicodecInts.`0xb3d2`
+    - typings.multicodec.multicodecInts.`0xb3d3`
+    - typings.multicodec.multicodecInts.`0xb3d4`
+    - typings.multicodec.multicodecInts.`0xb3d5`
+    - typings.multicodec.multicodecInts.`0xb3d6`
+    - typings.multicodec.multicodecInts.`0xb3d7`
+    - typings.multicodec.multicodecInts.`0xb3d8`
+    - typings.multicodec.multicodecInts.`0xb3d9`
+    - typings.multicodec.multicodecInts.`0xb3da`
+    - typings.multicodec.multicodecInts.`0xb3db`
+    - typings.multicodec.multicodecInts.`0xb3dc`
+    - typings.multicodec.multicodecInts.`0xb3dd`
+    - typings.multicodec.multicodecInts.`0xb3de`
+    - typings.multicodec.multicodecInts.`0xb3df`
+    - typings.multicodec.multicodecInts.`0xb3e0`
+    - typings.multicodec.multicodecInts.`0xb401`
+    - typings.multicodec.multicodecInts.`0xb402`
+    - typings.multicodec.multicodecInts.`0xce11`
+    - typings.multicodec.multicodecInts.`0xf101`
+    - typings.multicodec.multicodecInts.`0xf102`
+    - typings.multicodec.multicodecInts.`0x807124`
+    - typings.multicodec.multicodecInts.`0x817124`
+    - typings.multicodec.multicodecInts.`0x947124`
+    - typings.multicodec.multicodecInts.`0x957124`
+    - typings.multicodec.multicodecInts.`0xa27124`
+    - typings.multicodec.multicodecInts.`0xa37124`
+    - typings.multicodec.multicodecInts.`0xb19910`
+    - typings.multicodec.multicodecInts.`0xb29910`
   */
   trait CodecCode extends StObject
   object CodecCode {
     
-    inline def `0x00`: typings.multicodec.multicodecNumbers.`0x00` = 0x00.asInstanceOf[typings.multicodec.multicodecNumbers.`0x00`]
+    inline def `0x00`: typings.multicodec.multicodecInts.`0x00` = 0x00.asInstanceOf[typings.multicodec.multicodecInts.`0x00`]
     
-    inline def `0x01`: typings.multicodec.multicodecNumbers.`0x01` = 0x01.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01`]
+    inline def `0x01`: typings.multicodec.multicodecInts.`0x01` = 0x01.asInstanceOf[typings.multicodec.multicodecInts.`0x01`]
     
-    inline def `0x0111`: typings.multicodec.multicodecNumbers.`0x0111` = 0x0111.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0111`]
+    inline def `0x0111`: typings.multicodec.multicodecInts.`0x0111` = 0x0111.asInstanceOf[typings.multicodec.multicodecInts.`0x0111`]
     
-    inline def `0x0113`: typings.multicodec.multicodecNumbers.`0x0113` = 0x0113.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0113`]
+    inline def `0x0113`: typings.multicodec.multicodecInts.`0x0113` = 0x0113.asInstanceOf[typings.multicodec.multicodecInts.`0x0113`]
     
-    inline def `0x0114`: typings.multicodec.multicodecNumbers.`0x0114` = 0x0114.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0114`]
+    inline def `0x0114`: typings.multicodec.multicodecInts.`0x0114` = 0x0114.asInstanceOf[typings.multicodec.multicodecInts.`0x0114`]
     
-    inline def `0x0115`: typings.multicodec.multicodecNumbers.`0x0115` = 0x0115.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0115`]
+    inline def `0x0115`: typings.multicodec.multicodecInts.`0x0115` = 0x0115.asInstanceOf[typings.multicodec.multicodecInts.`0x0115`]
     
-    inline def `0x0122`: typings.multicodec.multicodecNumbers.`0x0122` = 0x0122.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0122`]
+    inline def `0x0122`: typings.multicodec.multicodecInts.`0x0122` = 0x0122.asInstanceOf[typings.multicodec.multicodecInts.`0x0122`]
     
-    inline def `0x0129`: typings.multicodec.multicodecNumbers.`0x0129` = 0x0129.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0129`]
+    inline def `0x0129`: typings.multicodec.multicodecInts.`0x0129` = 0x0129.asInstanceOf[typings.multicodec.multicodecInts.`0x0129`]
     
-    inline def `0x012d`: typings.multicodec.multicodecNumbers.`0x012d` = 0x012d.asInstanceOf[typings.multicodec.multicodecNumbers.`0x012d`]
+    inline def `0x012d`: typings.multicodec.multicodecInts.`0x012d` = 0x012d.asInstanceOf[typings.multicodec.multicodecInts.`0x012d`]
     
-    inline def `0x012e`: typings.multicodec.multicodecNumbers.`0x012e` = 0x012e.asInstanceOf[typings.multicodec.multicodecNumbers.`0x012e`]
+    inline def `0x012e`: typings.multicodec.multicodecInts.`0x012e` = 0x012e.asInstanceOf[typings.multicodec.multicodecInts.`0x012e`]
     
-    inline def `0x0190`: typings.multicodec.multicodecNumbers.`0x0190` = 0x0190.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0190`]
+    inline def `0x0190`: typings.multicodec.multicodecInts.`0x0190` = 0x0190.asInstanceOf[typings.multicodec.multicodecInts.`0x0190`]
     
-    inline def `0x0196`: typings.multicodec.multicodecNumbers.`0x0196` = 0x0196.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0196`]
+    inline def `0x0196`: typings.multicodec.multicodecInts.`0x0196` = 0x0196.asInstanceOf[typings.multicodec.multicodecInts.`0x0196`]
     
-    inline def `0x01a5`: typings.multicodec.multicodecNumbers.`0x01a5` = 0x01a5.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01a5`]
+    inline def `0x01a5`: typings.multicodec.multicodecInts.`0x01a5` = 0x01a5.asInstanceOf[typings.multicodec.multicodecInts.`0x01a5`]
     
-    inline def `0x01bb`: typings.multicodec.multicodecNumbers.`0x01bb` = 0x01bb.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01bb`]
+    inline def `0x01bb`: typings.multicodec.multicodecInts.`0x01bb` = 0x01bb.asInstanceOf[typings.multicodec.multicodecInts.`0x01bb`]
     
-    inline def `0x01bc`: typings.multicodec.multicodecNumbers.`0x01bc` = 0x01bc.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01bc`]
+    inline def `0x01bc`: typings.multicodec.multicodecInts.`0x01bc` = 0x01bc.asInstanceOf[typings.multicodec.multicodecInts.`0x01bc`]
     
-    inline def `0x01bd`: typings.multicodec.multicodecNumbers.`0x01bd` = 0x01bd.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01bd`]
+    inline def `0x01bd`: typings.multicodec.multicodecInts.`0x01bd` = 0x01bd.asInstanceOf[typings.multicodec.multicodecInts.`0x01bd`]
     
-    inline def `0x01be`: typings.multicodec.multicodecNumbers.`0x01be` = 0x01be.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01be`]
+    inline def `0x01be`: typings.multicodec.multicodecInts.`0x01be` = 0x01be.asInstanceOf[typings.multicodec.multicodecInts.`0x01be`]
     
-    inline def `0x01bf`: typings.multicodec.multicodecNumbers.`0x01bf` = 0x01bf.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01bf`]
+    inline def `0x01bf`: typings.multicodec.multicodecInts.`0x01bf` = 0x01bf.asInstanceOf[typings.multicodec.multicodecInts.`0x01bf`]
     
-    inline def `0x01c0`: typings.multicodec.multicodecNumbers.`0x01c0` = 0x01c0.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01c0`]
+    inline def `0x01c0`: typings.multicodec.multicodecInts.`0x01c0` = 0x01c0.asInstanceOf[typings.multicodec.multicodecInts.`0x01c0`]
     
-    inline def `0x01c6`: typings.multicodec.multicodecNumbers.`0x01c6` = 0x01c6.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01c6`]
+    inline def `0x01c6`: typings.multicodec.multicodecInts.`0x01c6` = 0x01c6.asInstanceOf[typings.multicodec.multicodecInts.`0x01c6`]
     
-    inline def `0x01cc`: typings.multicodec.multicodecNumbers.`0x01cc` = 0x01cc.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01cc`]
+    inline def `0x01cc`: typings.multicodec.multicodecInts.`0x01cc` = 0x01cc.asInstanceOf[typings.multicodec.multicodecInts.`0x01cc`]
     
-    inline def `0x01dd`: typings.multicodec.multicodecNumbers.`0x01dd` = 0x01dd.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01dd`]
+    inline def `0x01dd`: typings.multicodec.multicodecInts.`0x01dd` = 0x01dd.asInstanceOf[typings.multicodec.multicodecInts.`0x01dd`]
     
-    inline def `0x01de`: typings.multicodec.multicodecNumbers.`0x01de` = 0x01de.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01de`]
+    inline def `0x01de`: typings.multicodec.multicodecInts.`0x01de` = 0x01de.asInstanceOf[typings.multicodec.multicodecInts.`0x01de`]
     
-    inline def `0x01df`: typings.multicodec.multicodecNumbers.`0x01df` = 0x01df.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01df`]
+    inline def `0x01df`: typings.multicodec.multicodecInts.`0x01df` = 0x01df.asInstanceOf[typings.multicodec.multicodecInts.`0x01df`]
     
-    inline def `0x01e0`: typings.multicodec.multicodecNumbers.`0x01e0` = 0x01e0.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01e0`]
+    inline def `0x01e0`: typings.multicodec.multicodecInts.`0x01e0` = 0x01e0.asInstanceOf[typings.multicodec.multicodecInts.`0x01e0`]
     
-    inline def `0x01f0`: typings.multicodec.multicodecNumbers.`0x01f0` = 0x01f0.asInstanceOf[typings.multicodec.multicodecNumbers.`0x01f0`]
+    inline def `0x01f0`: typings.multicodec.multicodecInts.`0x01f0` = 0x01f0.asInstanceOf[typings.multicodec.multicodecInts.`0x01f0`]
     
-    inline def `0x02`: typings.multicodec.multicodecNumbers.`0x02` = 0x02.asInstanceOf[typings.multicodec.multicodecNumbers.`0x02`]
+    inline def `0x02`: typings.multicodec.multicodecInts.`0x02` = 0x02.asInstanceOf[typings.multicodec.multicodecInts.`0x02`]
     
-    inline def `0x0200`: typings.multicodec.multicodecNumbers.`0x0200` = 0x0200.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0200`]
+    inline def `0x0200`: typings.multicodec.multicodecInts.`0x0200` = 0x0200.asInstanceOf[typings.multicodec.multicodecInts.`0x0200`]
     
-    inline def `0x0201`: typings.multicodec.multicodecNumbers.`0x0201` = 0x0201.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0201`]
+    inline def `0x0201`: typings.multicodec.multicodecInts.`0x0201` = 0x0201.asInstanceOf[typings.multicodec.multicodecInts.`0x0201`]
     
-    inline def `0x03`: typings.multicodec.multicodecNumbers.`0x03` = 0x03.asInstanceOf[typings.multicodec.multicodecNumbers.`0x03`]
+    inline def `0x03`: typings.multicodec.multicodecInts.`0x03` = 0x03.asInstanceOf[typings.multicodec.multicodecInts.`0x03`]
     
-    inline def `0x0301`: typings.multicodec.multicodecNumbers.`0x0301` = 0x0301.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0301`]
+    inline def `0x0301`: typings.multicodec.multicodecInts.`0x0301` = 0x0301.asInstanceOf[typings.multicodec.multicodecInts.`0x0301`]
     
-    inline def `0x0302`: typings.multicodec.multicodecNumbers.`0x0302` = 0x0302.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0302`]
+    inline def `0x0302`: typings.multicodec.multicodecInts.`0x0302` = 0x0302.asInstanceOf[typings.multicodec.multicodecInts.`0x0302`]
     
-    inline def `0x04`: typings.multicodec.multicodecNumbers.`0x04` = 0x04.asInstanceOf[typings.multicodec.multicodecNumbers.`0x04`]
+    inline def `0x04`: typings.multicodec.multicodecInts.`0x04` = 0x04.asInstanceOf[typings.multicodec.multicodecInts.`0x04`]
     
-    inline def `0x0400`: typings.multicodec.multicodecNumbers.`0x0400` = 0x0400.asInstanceOf[typings.multicodec.multicodecNumbers.`0x0400`]
+    inline def `0x0400`: typings.multicodec.multicodecInts.`0x0400` = 0x0400.asInstanceOf[typings.multicodec.multicodecInts.`0x0400`]
     
-    inline def `0x06`: typings.multicodec.multicodecNumbers.`0x06` = 0x06.asInstanceOf[typings.multicodec.multicodecNumbers.`0x06`]
+    inline def `0x06`: typings.multicodec.multicodecInts.`0x06` = 0x06.asInstanceOf[typings.multicodec.multicodecInts.`0x06`]
     
-    inline def `0x1012`: typings.multicodec.multicodecNumbers.`0x1012` = 0x1012.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1012`]
+    inline def `0x1012`: typings.multicodec.multicodecInts.`0x1012` = 0x1012.asInstanceOf[typings.multicodec.multicodecInts.`0x1012`]
     
-    inline def `0x1052`: typings.multicodec.multicodecNumbers.`0x1052` = 0x1052.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1052`]
+    inline def `0x1052`: typings.multicodec.multicodecInts.`0x1052` = 0x1052.asInstanceOf[typings.multicodec.multicodecInts.`0x1052`]
     
-    inline def `0x1053`: typings.multicodec.multicodecNumbers.`0x1053` = 0x1053.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1053`]
+    inline def `0x1053`: typings.multicodec.multicodecInts.`0x1053` = 0x1053.asInstanceOf[typings.multicodec.multicodecInts.`0x1053`]
     
-    inline def `0x1054`: typings.multicodec.multicodecNumbers.`0x1054` = 0x1054.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1054`]
+    inline def `0x1054`: typings.multicodec.multicodecInts.`0x1054` = 0x1054.asInstanceOf[typings.multicodec.multicodecInts.`0x1054`]
     
-    inline def `0x1055`: typings.multicodec.multicodecNumbers.`0x1055` = 0x1055.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1055`]
+    inline def `0x1055`: typings.multicodec.multicodecInts.`0x1055` = 0x1055.asInstanceOf[typings.multicodec.multicodecInts.`0x1055`]
     
-    inline def `0x11`: typings.multicodec.multicodecNumbers.`0x11` = 0x11.asInstanceOf[typings.multicodec.multicodecNumbers.`0x11`]
+    inline def `0x11`: typings.multicodec.multicodecInts.`0x11` = 0x11.asInstanceOf[typings.multicodec.multicodecInts.`0x11`]
     
-    inline def `0x1100`: typings.multicodec.multicodecNumbers.`0x1100` = 0x1100.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1100`]
+    inline def `0x1100`: typings.multicodec.multicodecInts.`0x1100` = 0x1100.asInstanceOf[typings.multicodec.multicodecInts.`0x1100`]
     
-    inline def `0x12`: typings.multicodec.multicodecNumbers.`0x12` = 0x12.asInstanceOf[typings.multicodec.multicodecNumbers.`0x12`]
+    inline def `0x12`: typings.multicodec.multicodecInts.`0x12` = 0x12.asInstanceOf[typings.multicodec.multicodecInts.`0x12`]
     
-    inline def `0x1200`: typings.multicodec.multicodecNumbers.`0x1200` = 0x1200.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1200`]
+    inline def `0x1200`: typings.multicodec.multicodecInts.`0x1200` = 0x1200.asInstanceOf[typings.multicodec.multicodecInts.`0x1200`]
     
-    inline def `0x1201`: typings.multicodec.multicodecNumbers.`0x1201` = 0x1201.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1201`]
+    inline def `0x1201`: typings.multicodec.multicodecInts.`0x1201` = 0x1201.asInstanceOf[typings.multicodec.multicodecInts.`0x1201`]
     
-    inline def `0x1202`: typings.multicodec.multicodecNumbers.`0x1202` = 0x1202.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1202`]
+    inline def `0x1202`: typings.multicodec.multicodecInts.`0x1202` = 0x1202.asInstanceOf[typings.multicodec.multicodecInts.`0x1202`]
     
-    inline def `0x1203`: typings.multicodec.multicodecNumbers.`0x1203` = 0x1203.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1203`]
+    inline def `0x1203`: typings.multicodec.multicodecInts.`0x1203` = 0x1203.asInstanceOf[typings.multicodec.multicodecInts.`0x1203`]
     
-    inline def `0x1204`: typings.multicodec.multicodecNumbers.`0x1204` = 0x1204.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1204`]
+    inline def `0x1204`: typings.multicodec.multicodecInts.`0x1204` = 0x1204.asInstanceOf[typings.multicodec.multicodecInts.`0x1204`]
     
-    inline def `0x13`: typings.multicodec.multicodecNumbers.`0x13` = 0x13.asInstanceOf[typings.multicodec.multicodecNumbers.`0x13`]
+    inline def `0x13`: typings.multicodec.multicodecInts.`0x13` = 0x13.asInstanceOf[typings.multicodec.multicodecInts.`0x13`]
     
-    inline def `0x1300`: typings.multicodec.multicodecNumbers.`0x1300` = 0x1300.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1300`]
+    inline def `0x1300`: typings.multicodec.multicodecInts.`0x1300` = 0x1300.asInstanceOf[typings.multicodec.multicodecInts.`0x1300`]
     
-    inline def `0x1301`: typings.multicodec.multicodecNumbers.`0x1301` = 0x1301.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1301`]
+    inline def `0x1301`: typings.multicodec.multicodecInts.`0x1301` = 0x1301.asInstanceOf[typings.multicodec.multicodecInts.`0x1301`]
     
-    inline def `0x1302`: typings.multicodec.multicodecNumbers.`0x1302` = 0x1302.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1302`]
+    inline def `0x1302`: typings.multicodec.multicodecInts.`0x1302` = 0x1302.asInstanceOf[typings.multicodec.multicodecInts.`0x1302`]
     
-    inline def `0x14`: typings.multicodec.multicodecNumbers.`0x14` = 0x14.asInstanceOf[typings.multicodec.multicodecNumbers.`0x14`]
+    inline def `0x14`: typings.multicodec.multicodecInts.`0x14` = 0x14.asInstanceOf[typings.multicodec.multicodecInts.`0x14`]
     
-    inline def `0x15`: typings.multicodec.multicodecNumbers.`0x15` = 0x15.asInstanceOf[typings.multicodec.multicodecNumbers.`0x15`]
+    inline def `0x15`: typings.multicodec.multicodecInts.`0x15` = 0x15.asInstanceOf[typings.multicodec.multicodecInts.`0x15`]
     
-    inline def `0x16`: typings.multicodec.multicodecNumbers.`0x16` = 0x16.asInstanceOf[typings.multicodec.multicodecNumbers.`0x16`]
+    inline def `0x16`: typings.multicodec.multicodecInts.`0x16` = 0x16.asInstanceOf[typings.multicodec.multicodecInts.`0x16`]
     
-    inline def `0x17`: typings.multicodec.multicodecNumbers.`0x17` = 0x17.asInstanceOf[typings.multicodec.multicodecNumbers.`0x17`]
+    inline def `0x17`: typings.multicodec.multicodecInts.`0x17` = 0x17.asInstanceOf[typings.multicodec.multicodecInts.`0x17`]
     
-    inline def `0x18`: typings.multicodec.multicodecNumbers.`0x18` = 0x18.asInstanceOf[typings.multicodec.multicodecNumbers.`0x18`]
+    inline def `0x18`: typings.multicodec.multicodecInts.`0x18` = 0x18.asInstanceOf[typings.multicodec.multicodecInts.`0x18`]
     
-    inline def `0x19`: typings.multicodec.multicodecNumbers.`0x19` = 0x19.asInstanceOf[typings.multicodec.multicodecNumbers.`0x19`]
+    inline def `0x19`: typings.multicodec.multicodecInts.`0x19` = 0x19.asInstanceOf[typings.multicodec.multicodecInts.`0x19`]
     
-    inline def `0x1a`: typings.multicodec.multicodecNumbers.`0x1a` = 0x1a.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1a`]
+    inline def `0x1a`: typings.multicodec.multicodecInts.`0x1a` = 0x1a.asInstanceOf[typings.multicodec.multicodecInts.`0x1a`]
     
-    inline def `0x1b`: typings.multicodec.multicodecNumbers.`0x1b` = 0x1b.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1b`]
+    inline def `0x1b`: typings.multicodec.multicodecInts.`0x1b` = 0x1b.asInstanceOf[typings.multicodec.multicodecInts.`0x1b`]
     
-    inline def `0x1c`: typings.multicodec.multicodecNumbers.`0x1c` = 0x1c.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1c`]
+    inline def `0x1c`: typings.multicodec.multicodecInts.`0x1c` = 0x1c.asInstanceOf[typings.multicodec.multicodecInts.`0x1c`]
     
-    inline def `0x1d`: typings.multicodec.multicodecNumbers.`0x1d` = 0x1d.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1d`]
+    inline def `0x1d`: typings.multicodec.multicodecInts.`0x1d` = 0x1d.asInstanceOf[typings.multicodec.multicodecInts.`0x1d`]
     
-    inline def `0x1d01`: typings.multicodec.multicodecNumbers.`0x1d01` = 0x1d01.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1d01`]
+    inline def `0x1d01`: typings.multicodec.multicodecInts.`0x1d01` = 0x1d01.asInstanceOf[typings.multicodec.multicodecInts.`0x1d01`]
     
-    inline def `0x1e`: typings.multicodec.multicodecNumbers.`0x1e` = 0x1e.asInstanceOf[typings.multicodec.multicodecNumbers.`0x1e`]
+    inline def `0x1e`: typings.multicodec.multicodecInts.`0x1e` = 0x1e.asInstanceOf[typings.multicodec.multicodecInts.`0x1e`]
     
-    inline def `0x21`: typings.multicodec.multicodecNumbers.`0x21` = 0x21.asInstanceOf[typings.multicodec.multicodecNumbers.`0x21`]
+    inline def `0x21`: typings.multicodec.multicodecInts.`0x21` = 0x21.asInstanceOf[typings.multicodec.multicodecInts.`0x21`]
     
-    inline def `0x22`: typings.multicodec.multicodecNumbers.`0x22` = 0x22.asInstanceOf[typings.multicodec.multicodecNumbers.`0x22`]
+    inline def `0x22`: typings.multicodec.multicodecInts.`0x22` = 0x22.asInstanceOf[typings.multicodec.multicodecInts.`0x22`]
     
-    inline def `0x23`: typings.multicodec.multicodecNumbers.`0x23` = 0x23.asInstanceOf[typings.multicodec.multicodecNumbers.`0x23`]
+    inline def `0x23`: typings.multicodec.multicodecInts.`0x23` = 0x23.asInstanceOf[typings.multicodec.multicodecInts.`0x23`]
     
-    inline def `0x29`: typings.multicodec.multicodecNumbers.`0x29` = 0x29.asInstanceOf[typings.multicodec.multicodecNumbers.`0x29`]
+    inline def `0x29`: typings.multicodec.multicodecInts.`0x29` = 0x29.asInstanceOf[typings.multicodec.multicodecInts.`0x29`]
     
-    inline def `0x2a`: typings.multicodec.multicodecNumbers.`0x2a` = 0x2a.asInstanceOf[typings.multicodec.multicodecNumbers.`0x2a`]
+    inline def `0x2a`: typings.multicodec.multicodecInts.`0x2a` = 0x2a.asInstanceOf[typings.multicodec.multicodecInts.`0x2a`]
     
-    inline def `0x2f`: typings.multicodec.multicodecNumbers.`0x2f` = 0x2f.asInstanceOf[typings.multicodec.multicodecNumbers.`0x2f`]
+    inline def `0x2f`: typings.multicodec.multicodecInts.`0x2f` = 0x2f.asInstanceOf[typings.multicodec.multicodecInts.`0x2f`]
     
-    inline def `0x30`: typings.multicodec.multicodecNumbers.`0x30` = 0x30.asInstanceOf[typings.multicodec.multicodecNumbers.`0x30`]
+    inline def `0x30`: typings.multicodec.multicodecInts.`0x30` = 0x30.asInstanceOf[typings.multicodec.multicodecInts.`0x30`]
     
-    inline def `0x31`: typings.multicodec.multicodecNumbers.`0x31` = 0x31.asInstanceOf[typings.multicodec.multicodecNumbers.`0x31`]
+    inline def `0x31`: typings.multicodec.multicodecInts.`0x31` = 0x31.asInstanceOf[typings.multicodec.multicodecInts.`0x31`]
     
-    inline def `0x32`: typings.multicodec.multicodecNumbers.`0x32` = 0x32.asInstanceOf[typings.multicodec.multicodecNumbers.`0x32`]
+    inline def `0x32`: typings.multicodec.multicodecInts.`0x32` = 0x32.asInstanceOf[typings.multicodec.multicodecInts.`0x32`]
     
-    inline def `0x33`: typings.multicodec.multicodecNumbers.`0x33` = 0x33.asInstanceOf[typings.multicodec.multicodecNumbers.`0x33`]
+    inline def `0x33`: typings.multicodec.multicodecInts.`0x33` = 0x33.asInstanceOf[typings.multicodec.multicodecInts.`0x33`]
     
-    inline def `0x35`: typings.multicodec.multicodecNumbers.`0x35` = 0x35.asInstanceOf[typings.multicodec.multicodecNumbers.`0x35`]
+    inline def `0x35`: typings.multicodec.multicodecInts.`0x35` = 0x35.asInstanceOf[typings.multicodec.multicodecInts.`0x35`]
     
-    inline def `0x36`: typings.multicodec.multicodecNumbers.`0x36` = 0x36.asInstanceOf[typings.multicodec.multicodecNumbers.`0x36`]
+    inline def `0x36`: typings.multicodec.multicodecInts.`0x36` = 0x36.asInstanceOf[typings.multicodec.multicodecInts.`0x36`]
     
-    inline def `0x37`: typings.multicodec.multicodecNumbers.`0x37` = 0x37.asInstanceOf[typings.multicodec.multicodecNumbers.`0x37`]
+    inline def `0x37`: typings.multicodec.multicodecInts.`0x37` = 0x37.asInstanceOf[typings.multicodec.multicodecInts.`0x37`]
     
-    inline def `0x38`: typings.multicodec.multicodecNumbers.`0x38` = 0x38.asInstanceOf[typings.multicodec.multicodecNumbers.`0x38`]
+    inline def `0x38`: typings.multicodec.multicodecInts.`0x38` = 0x38.asInstanceOf[typings.multicodec.multicodecInts.`0x38`]
     
-    inline def `0x50`: typings.multicodec.multicodecNumbers.`0x50` = 0x50.asInstanceOf[typings.multicodec.multicodecNumbers.`0x50`]
+    inline def `0x50`: typings.multicodec.multicodecInts.`0x50` = 0x50.asInstanceOf[typings.multicodec.multicodecInts.`0x50`]
     
-    inline def `0x51`: typings.multicodec.multicodecNumbers.`0x51` = 0x51.asInstanceOf[typings.multicodec.multicodecNumbers.`0x51`]
+    inline def `0x51`: typings.multicodec.multicodecInts.`0x51` = 0x51.asInstanceOf[typings.multicodec.multicodecInts.`0x51`]
     
-    inline def `0x534d`: typings.multicodec.multicodecNumbers.`0x534d` = 0x534d.asInstanceOf[typings.multicodec.multicodecNumbers.`0x534d`]
+    inline def `0x534d`: typings.multicodec.multicodecInts.`0x534d` = 0x534d.asInstanceOf[typings.multicodec.multicodecInts.`0x534d`]
     
-    inline def `0x55`: typings.multicodec.multicodecNumbers.`0x55` = 0x55.asInstanceOf[typings.multicodec.multicodecNumbers.`0x55`]
+    inline def `0x55`: typings.multicodec.multicodecInts.`0x55` = 0x55.asInstanceOf[typings.multicodec.multicodecInts.`0x55`]
     
-    inline def `0x56`: typings.multicodec.multicodecNumbers.`0x56` = 0x56.asInstanceOf[typings.multicodec.multicodecNumbers.`0x56`]
+    inline def `0x56`: typings.multicodec.multicodecInts.`0x56` = 0x56.asInstanceOf[typings.multicodec.multicodecInts.`0x56`]
     
-    inline def `0x60`: typings.multicodec.multicodecNumbers.`0x60` = 0x60.asInstanceOf[typings.multicodec.multicodecNumbers.`0x60`]
+    inline def `0x60`: typings.multicodec.multicodecInts.`0x60` = 0x60.asInstanceOf[typings.multicodec.multicodecInts.`0x60`]
     
-    inline def `0x63`: typings.multicodec.multicodecNumbers.`0x63` = 0x63.asInstanceOf[typings.multicodec.multicodecNumbers.`0x63`]
+    inline def `0x63`: typings.multicodec.multicodecInts.`0x63` = 0x63.asInstanceOf[typings.multicodec.multicodecInts.`0x63`]
     
-    inline def `0x70`: typings.multicodec.multicodecNumbers.`0x70` = 0x70.asInstanceOf[typings.multicodec.multicodecNumbers.`0x70`]
+    inline def `0x70`: typings.multicodec.multicodecInts.`0x70` = 0x70.asInstanceOf[typings.multicodec.multicodecInts.`0x70`]
     
-    inline def `0x71`: typings.multicodec.multicodecNumbers.`0x71` = 0x71.asInstanceOf[typings.multicodec.multicodecNumbers.`0x71`]
+    inline def `0x71`: typings.multicodec.multicodecInts.`0x71` = 0x71.asInstanceOf[typings.multicodec.multicodecInts.`0x71`]
     
-    inline def `0x72`: typings.multicodec.multicodecNumbers.`0x72` = 0x72.asInstanceOf[typings.multicodec.multicodecNumbers.`0x72`]
+    inline def `0x72`: typings.multicodec.multicodecInts.`0x72` = 0x72.asInstanceOf[typings.multicodec.multicodecInts.`0x72`]
     
-    inline def `0x78`: typings.multicodec.multicodecNumbers.`0x78` = 0x78.asInstanceOf[typings.multicodec.multicodecNumbers.`0x78`]
+    inline def `0x78`: typings.multicodec.multicodecInts.`0x78` = 0x78.asInstanceOf[typings.multicodec.multicodecInts.`0x78`]
     
-    inline def `0x7b`: typings.multicodec.multicodecNumbers.`0x7b` = 0x7b.asInstanceOf[typings.multicodec.multicodecNumbers.`0x7b`]
+    inline def `0x7b`: typings.multicodec.multicodecInts.`0x7b` = 0x7b.asInstanceOf[typings.multicodec.multicodecInts.`0x7b`]
     
-    inline def `0x7c`: typings.multicodec.multicodecNumbers.`0x7c` = 0x7c.asInstanceOf[typings.multicodec.multicodecNumbers.`0x7c`]
+    inline def `0x7c`: typings.multicodec.multicodecInts.`0x7c` = 0x7c.asInstanceOf[typings.multicodec.multicodecInts.`0x7c`]
     
-    inline def `0x807124`: typings.multicodec.multicodecNumbers.`0x807124` = 0x807124.asInstanceOf[typings.multicodec.multicodecNumbers.`0x807124`]
+    inline def `0x807124`: typings.multicodec.multicodecInts.`0x807124` = 0x807124.asInstanceOf[typings.multicodec.multicodecInts.`0x807124`]
     
-    inline def `0x81`: typings.multicodec.multicodecNumbers.`0x81` = 0x81.asInstanceOf[typings.multicodec.multicodecNumbers.`0x81`]
+    inline def `0x81`: typings.multicodec.multicodecInts.`0x81` = 0x81.asInstanceOf[typings.multicodec.multicodecInts.`0x81`]
     
-    inline def `0x817124`: typings.multicodec.multicodecNumbers.`0x817124` = 0x817124.asInstanceOf[typings.multicodec.multicodecNumbers.`0x817124`]
+    inline def `0x817124`: typings.multicodec.multicodecInts.`0x817124` = 0x817124.asInstanceOf[typings.multicodec.multicodecInts.`0x817124`]
     
-    inline def `0x82`: typings.multicodec.multicodecNumbers.`0x82` = 0x82.asInstanceOf[typings.multicodec.multicodecNumbers.`0x82`]
+    inline def `0x82`: typings.multicodec.multicodecInts.`0x82` = 0x82.asInstanceOf[typings.multicodec.multicodecInts.`0x82`]
     
-    inline def `0x83`: typings.multicodec.multicodecNumbers.`0x83` = 0x83.asInstanceOf[typings.multicodec.multicodecNumbers.`0x83`]
+    inline def `0x83`: typings.multicodec.multicodecInts.`0x83` = 0x83.asInstanceOf[typings.multicodec.multicodecInts.`0x83`]
     
-    inline def `0x84`: typings.multicodec.multicodecNumbers.`0x84` = 0x84.asInstanceOf[typings.multicodec.multicodecNumbers.`0x84`]
+    inline def `0x84`: typings.multicodec.multicodecInts.`0x84` = 0x84.asInstanceOf[typings.multicodec.multicodecInts.`0x84`]
     
-    inline def `0x85`: typings.multicodec.multicodecNumbers.`0x85` = 0x85.asInstanceOf[typings.multicodec.multicodecNumbers.`0x85`]
+    inline def `0x85`: typings.multicodec.multicodecInts.`0x85` = 0x85.asInstanceOf[typings.multicodec.multicodecInts.`0x85`]
     
-    inline def `0x86`: typings.multicodec.multicodecNumbers.`0x86` = 0x86.asInstanceOf[typings.multicodec.multicodecNumbers.`0x86`]
+    inline def `0x86`: typings.multicodec.multicodecInts.`0x86` = 0x86.asInstanceOf[typings.multicodec.multicodecInts.`0x86`]
     
-    inline def `0x90`: typings.multicodec.multicodecNumbers.`0x90` = 0x90.asInstanceOf[typings.multicodec.multicodecNumbers.`0x90`]
+    inline def `0x90`: typings.multicodec.multicodecInts.`0x90` = 0x90.asInstanceOf[typings.multicodec.multicodecInts.`0x90`]
     
-    inline def `0x91`: typings.multicodec.multicodecNumbers.`0x91` = 0x91.asInstanceOf[typings.multicodec.multicodecNumbers.`0x91`]
+    inline def `0x91`: typings.multicodec.multicodecInts.`0x91` = 0x91.asInstanceOf[typings.multicodec.multicodecInts.`0x91`]
     
-    inline def `0x92`: typings.multicodec.multicodecNumbers.`0x92` = 0x92.asInstanceOf[typings.multicodec.multicodecNumbers.`0x92`]
+    inline def `0x92`: typings.multicodec.multicodecInts.`0x92` = 0x92.asInstanceOf[typings.multicodec.multicodecInts.`0x92`]
     
-    inline def `0x93`: typings.multicodec.multicodecNumbers.`0x93` = 0x93.asInstanceOf[typings.multicodec.multicodecNumbers.`0x93`]
+    inline def `0x93`: typings.multicodec.multicodecInts.`0x93` = 0x93.asInstanceOf[typings.multicodec.multicodecInts.`0x93`]
     
-    inline def `0x94`: typings.multicodec.multicodecNumbers.`0x94` = 0x94.asInstanceOf[typings.multicodec.multicodecNumbers.`0x94`]
+    inline def `0x94`: typings.multicodec.multicodecInts.`0x94` = 0x94.asInstanceOf[typings.multicodec.multicodecInts.`0x94`]
     
-    inline def `0x947124`: typings.multicodec.multicodecNumbers.`0x947124` = 0x947124.asInstanceOf[typings.multicodec.multicodecNumbers.`0x947124`]
+    inline def `0x947124`: typings.multicodec.multicodecInts.`0x947124` = 0x947124.asInstanceOf[typings.multicodec.multicodecInts.`0x947124`]
     
-    inline def `0x95`: typings.multicodec.multicodecNumbers.`0x95` = 0x95.asInstanceOf[typings.multicodec.multicodecNumbers.`0x95`]
+    inline def `0x95`: typings.multicodec.multicodecInts.`0x95` = 0x95.asInstanceOf[typings.multicodec.multicodecInts.`0x95`]
     
-    inline def `0x957124`: typings.multicodec.multicodecNumbers.`0x957124` = 0x957124.asInstanceOf[typings.multicodec.multicodecNumbers.`0x957124`]
+    inline def `0x957124`: typings.multicodec.multicodecInts.`0x957124` = 0x957124.asInstanceOf[typings.multicodec.multicodecInts.`0x957124`]
     
-    inline def `0x96`: typings.multicodec.multicodecNumbers.`0x96` = 0x96.asInstanceOf[typings.multicodec.multicodecNumbers.`0x96`]
+    inline def `0x96`: typings.multicodec.multicodecInts.`0x96` = 0x96.asInstanceOf[typings.multicodec.multicodecInts.`0x96`]
     
-    inline def `0x97`: typings.multicodec.multicodecNumbers.`0x97` = 0x97.asInstanceOf[typings.multicodec.multicodecNumbers.`0x97`]
+    inline def `0x97`: typings.multicodec.multicodecInts.`0x97` = 0x97.asInstanceOf[typings.multicodec.multicodecInts.`0x97`]
     
-    inline def `0x98`: typings.multicodec.multicodecNumbers.`0x98` = 0x98.asInstanceOf[typings.multicodec.multicodecNumbers.`0x98`]
+    inline def `0x98`: typings.multicodec.multicodecInts.`0x98` = 0x98.asInstanceOf[typings.multicodec.multicodecInts.`0x98`]
     
-    inline def `0x99`: typings.multicodec.multicodecNumbers.`0x99` = 0x99.asInstanceOf[typings.multicodec.multicodecNumbers.`0x99`]
+    inline def `0x99`: typings.multicodec.multicodecInts.`0x99` = 0x99.asInstanceOf[typings.multicodec.multicodecInts.`0x99`]
     
-    inline def `0x9a`: typings.multicodec.multicodecNumbers.`0x9a` = 0x9a.asInstanceOf[typings.multicodec.multicodecNumbers.`0x9a`]
+    inline def `0x9a`: typings.multicodec.multicodecInts.`0x9a` = 0x9a.asInstanceOf[typings.multicodec.multicodecInts.`0x9a`]
     
-    inline def `0xa27124`: typings.multicodec.multicodecNumbers.`0xa27124` = 0xa27124.asInstanceOf[typings.multicodec.multicodecNumbers.`0xa27124`]
+    inline def `0xa27124`: typings.multicodec.multicodecInts.`0xa27124` = 0xa27124.asInstanceOf[typings.multicodec.multicodecInts.`0xa27124`]
     
-    inline def `0xa37124`: typings.multicodec.multicodecNumbers.`0xa37124` = 0xa37124.asInstanceOf[typings.multicodec.multicodecNumbers.`0xa37124`]
+    inline def `0xa37124`: typings.multicodec.multicodecInts.`0xa37124` = 0xa37124.asInstanceOf[typings.multicodec.multicodecInts.`0xa37124`]
     
-    inline def `0xb0`: typings.multicodec.multicodecNumbers.`0xb0` = 0xb0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb0`]
+    inline def `0xb0`: typings.multicodec.multicodecInts.`0xb0` = 0xb0.asInstanceOf[typings.multicodec.multicodecInts.`0xb0`]
     
-    inline def `0xb1`: typings.multicodec.multicodecNumbers.`0xb1` = 0xb1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb1`]
+    inline def `0xb1`: typings.multicodec.multicodecInts.`0xb1` = 0xb1.asInstanceOf[typings.multicodec.multicodecInts.`0xb1`]
     
-    inline def `0xb19910`: typings.multicodec.multicodecNumbers.`0xb19910` = 0xb19910.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb19910`]
+    inline def `0xb19910`: typings.multicodec.multicodecInts.`0xb19910` = 0xb19910.asInstanceOf[typings.multicodec.multicodecInts.`0xb19910`]
     
-    inline def `0xb2`: typings.multicodec.multicodecNumbers.`0xb2` = 0xb2.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb2`]
+    inline def `0xb2`: typings.multicodec.multicodecInts.`0xb2` = 0xb2.asInstanceOf[typings.multicodec.multicodecInts.`0xb2`]
     
-    inline def `0xb201`: typings.multicodec.multicodecNumbers.`0xb201` = 0xb201.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb201`]
+    inline def `0xb201`: typings.multicodec.multicodecInts.`0xb201` = 0xb201.asInstanceOf[typings.multicodec.multicodecInts.`0xb201`]
     
-    inline def `0xb202`: typings.multicodec.multicodecNumbers.`0xb202` = 0xb202.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb202`]
+    inline def `0xb202`: typings.multicodec.multicodecInts.`0xb202` = 0xb202.asInstanceOf[typings.multicodec.multicodecInts.`0xb202`]
     
-    inline def `0xb203`: typings.multicodec.multicodecNumbers.`0xb203` = 0xb203.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb203`]
+    inline def `0xb203`: typings.multicodec.multicodecInts.`0xb203` = 0xb203.asInstanceOf[typings.multicodec.multicodecInts.`0xb203`]
     
-    inline def `0xb204`: typings.multicodec.multicodecNumbers.`0xb204` = 0xb204.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb204`]
+    inline def `0xb204`: typings.multicodec.multicodecInts.`0xb204` = 0xb204.asInstanceOf[typings.multicodec.multicodecInts.`0xb204`]
     
-    inline def `0xb205`: typings.multicodec.multicodecNumbers.`0xb205` = 0xb205.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb205`]
+    inline def `0xb205`: typings.multicodec.multicodecInts.`0xb205` = 0xb205.asInstanceOf[typings.multicodec.multicodecInts.`0xb205`]
     
-    inline def `0xb206`: typings.multicodec.multicodecNumbers.`0xb206` = 0xb206.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb206`]
+    inline def `0xb206`: typings.multicodec.multicodecInts.`0xb206` = 0xb206.asInstanceOf[typings.multicodec.multicodecInts.`0xb206`]
     
-    inline def `0xb207`: typings.multicodec.multicodecNumbers.`0xb207` = 0xb207.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb207`]
+    inline def `0xb207`: typings.multicodec.multicodecInts.`0xb207` = 0xb207.asInstanceOf[typings.multicodec.multicodecInts.`0xb207`]
     
-    inline def `0xb208`: typings.multicodec.multicodecNumbers.`0xb208` = 0xb208.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb208`]
+    inline def `0xb208`: typings.multicodec.multicodecInts.`0xb208` = 0xb208.asInstanceOf[typings.multicodec.multicodecInts.`0xb208`]
     
-    inline def `0xb209`: typings.multicodec.multicodecNumbers.`0xb209` = 0xb209.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb209`]
+    inline def `0xb209`: typings.multicodec.multicodecInts.`0xb209` = 0xb209.asInstanceOf[typings.multicodec.multicodecInts.`0xb209`]
     
-    inline def `0xb20a`: typings.multicodec.multicodecNumbers.`0xb20a` = 0xb20a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb20a`]
+    inline def `0xb20a`: typings.multicodec.multicodecInts.`0xb20a` = 0xb20a.asInstanceOf[typings.multicodec.multicodecInts.`0xb20a`]
     
-    inline def `0xb20b`: typings.multicodec.multicodecNumbers.`0xb20b` = 0xb20b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb20b`]
+    inline def `0xb20b`: typings.multicodec.multicodecInts.`0xb20b` = 0xb20b.asInstanceOf[typings.multicodec.multicodecInts.`0xb20b`]
     
-    inline def `0xb20c`: typings.multicodec.multicodecNumbers.`0xb20c` = 0xb20c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb20c`]
+    inline def `0xb20c`: typings.multicodec.multicodecInts.`0xb20c` = 0xb20c.asInstanceOf[typings.multicodec.multicodecInts.`0xb20c`]
     
-    inline def `0xb20d`: typings.multicodec.multicodecNumbers.`0xb20d` = 0xb20d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb20d`]
+    inline def `0xb20d`: typings.multicodec.multicodecInts.`0xb20d` = 0xb20d.asInstanceOf[typings.multicodec.multicodecInts.`0xb20d`]
     
-    inline def `0xb20e`: typings.multicodec.multicodecNumbers.`0xb20e` = 0xb20e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb20e`]
+    inline def `0xb20e`: typings.multicodec.multicodecInts.`0xb20e` = 0xb20e.asInstanceOf[typings.multicodec.multicodecInts.`0xb20e`]
     
-    inline def `0xb20f`: typings.multicodec.multicodecNumbers.`0xb20f` = 0xb20f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb20f`]
+    inline def `0xb20f`: typings.multicodec.multicodecInts.`0xb20f` = 0xb20f.asInstanceOf[typings.multicodec.multicodecInts.`0xb20f`]
     
-    inline def `0xb210`: typings.multicodec.multicodecNumbers.`0xb210` = 0xb210.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb210`]
+    inline def `0xb210`: typings.multicodec.multicodecInts.`0xb210` = 0xb210.asInstanceOf[typings.multicodec.multicodecInts.`0xb210`]
     
-    inline def `0xb211`: typings.multicodec.multicodecNumbers.`0xb211` = 0xb211.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb211`]
+    inline def `0xb211`: typings.multicodec.multicodecInts.`0xb211` = 0xb211.asInstanceOf[typings.multicodec.multicodecInts.`0xb211`]
     
-    inline def `0xb212`: typings.multicodec.multicodecNumbers.`0xb212` = 0xb212.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb212`]
+    inline def `0xb212`: typings.multicodec.multicodecInts.`0xb212` = 0xb212.asInstanceOf[typings.multicodec.multicodecInts.`0xb212`]
     
-    inline def `0xb213`: typings.multicodec.multicodecNumbers.`0xb213` = 0xb213.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb213`]
+    inline def `0xb213`: typings.multicodec.multicodecInts.`0xb213` = 0xb213.asInstanceOf[typings.multicodec.multicodecInts.`0xb213`]
     
-    inline def `0xb214`: typings.multicodec.multicodecNumbers.`0xb214` = 0xb214.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb214`]
+    inline def `0xb214`: typings.multicodec.multicodecInts.`0xb214` = 0xb214.asInstanceOf[typings.multicodec.multicodecInts.`0xb214`]
     
-    inline def `0xb215`: typings.multicodec.multicodecNumbers.`0xb215` = 0xb215.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb215`]
+    inline def `0xb215`: typings.multicodec.multicodecInts.`0xb215` = 0xb215.asInstanceOf[typings.multicodec.multicodecInts.`0xb215`]
     
-    inline def `0xb216`: typings.multicodec.multicodecNumbers.`0xb216` = 0xb216.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb216`]
+    inline def `0xb216`: typings.multicodec.multicodecInts.`0xb216` = 0xb216.asInstanceOf[typings.multicodec.multicodecInts.`0xb216`]
     
-    inline def `0xb217`: typings.multicodec.multicodecNumbers.`0xb217` = 0xb217.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb217`]
+    inline def `0xb217`: typings.multicodec.multicodecInts.`0xb217` = 0xb217.asInstanceOf[typings.multicodec.multicodecInts.`0xb217`]
     
-    inline def `0xb218`: typings.multicodec.multicodecNumbers.`0xb218` = 0xb218.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb218`]
+    inline def `0xb218`: typings.multicodec.multicodecInts.`0xb218` = 0xb218.asInstanceOf[typings.multicodec.multicodecInts.`0xb218`]
     
-    inline def `0xb219`: typings.multicodec.multicodecNumbers.`0xb219` = 0xb219.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb219`]
+    inline def `0xb219`: typings.multicodec.multicodecInts.`0xb219` = 0xb219.asInstanceOf[typings.multicodec.multicodecInts.`0xb219`]
     
-    inline def `0xb21a`: typings.multicodec.multicodecNumbers.`0xb21a` = 0xb21a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb21a`]
+    inline def `0xb21a`: typings.multicodec.multicodecInts.`0xb21a` = 0xb21a.asInstanceOf[typings.multicodec.multicodecInts.`0xb21a`]
     
-    inline def `0xb21b`: typings.multicodec.multicodecNumbers.`0xb21b` = 0xb21b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb21b`]
+    inline def `0xb21b`: typings.multicodec.multicodecInts.`0xb21b` = 0xb21b.asInstanceOf[typings.multicodec.multicodecInts.`0xb21b`]
     
-    inline def `0xb21c`: typings.multicodec.multicodecNumbers.`0xb21c` = 0xb21c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb21c`]
+    inline def `0xb21c`: typings.multicodec.multicodecInts.`0xb21c` = 0xb21c.asInstanceOf[typings.multicodec.multicodecInts.`0xb21c`]
     
-    inline def `0xb21d`: typings.multicodec.multicodecNumbers.`0xb21d` = 0xb21d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb21d`]
+    inline def `0xb21d`: typings.multicodec.multicodecInts.`0xb21d` = 0xb21d.asInstanceOf[typings.multicodec.multicodecInts.`0xb21d`]
     
-    inline def `0xb21e`: typings.multicodec.multicodecNumbers.`0xb21e` = 0xb21e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb21e`]
+    inline def `0xb21e`: typings.multicodec.multicodecInts.`0xb21e` = 0xb21e.asInstanceOf[typings.multicodec.multicodecInts.`0xb21e`]
     
-    inline def `0xb21f`: typings.multicodec.multicodecNumbers.`0xb21f` = 0xb21f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb21f`]
+    inline def `0xb21f`: typings.multicodec.multicodecInts.`0xb21f` = 0xb21f.asInstanceOf[typings.multicodec.multicodecInts.`0xb21f`]
     
-    inline def `0xb220`: typings.multicodec.multicodecNumbers.`0xb220` = 0xb220.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb220`]
+    inline def `0xb220`: typings.multicodec.multicodecInts.`0xb220` = 0xb220.asInstanceOf[typings.multicodec.multicodecInts.`0xb220`]
     
-    inline def `0xb221`: typings.multicodec.multicodecNumbers.`0xb221` = 0xb221.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb221`]
+    inline def `0xb221`: typings.multicodec.multicodecInts.`0xb221` = 0xb221.asInstanceOf[typings.multicodec.multicodecInts.`0xb221`]
     
-    inline def `0xb222`: typings.multicodec.multicodecNumbers.`0xb222` = 0xb222.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb222`]
+    inline def `0xb222`: typings.multicodec.multicodecInts.`0xb222` = 0xb222.asInstanceOf[typings.multicodec.multicodecInts.`0xb222`]
     
-    inline def `0xb223`: typings.multicodec.multicodecNumbers.`0xb223` = 0xb223.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb223`]
+    inline def `0xb223`: typings.multicodec.multicodecInts.`0xb223` = 0xb223.asInstanceOf[typings.multicodec.multicodecInts.`0xb223`]
     
-    inline def `0xb224`: typings.multicodec.multicodecNumbers.`0xb224` = 0xb224.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb224`]
+    inline def `0xb224`: typings.multicodec.multicodecInts.`0xb224` = 0xb224.asInstanceOf[typings.multicodec.multicodecInts.`0xb224`]
     
-    inline def `0xb225`: typings.multicodec.multicodecNumbers.`0xb225` = 0xb225.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb225`]
+    inline def `0xb225`: typings.multicodec.multicodecInts.`0xb225` = 0xb225.asInstanceOf[typings.multicodec.multicodecInts.`0xb225`]
     
-    inline def `0xb226`: typings.multicodec.multicodecNumbers.`0xb226` = 0xb226.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb226`]
+    inline def `0xb226`: typings.multicodec.multicodecInts.`0xb226` = 0xb226.asInstanceOf[typings.multicodec.multicodecInts.`0xb226`]
     
-    inline def `0xb227`: typings.multicodec.multicodecNumbers.`0xb227` = 0xb227.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb227`]
+    inline def `0xb227`: typings.multicodec.multicodecInts.`0xb227` = 0xb227.asInstanceOf[typings.multicodec.multicodecInts.`0xb227`]
     
-    inline def `0xb228`: typings.multicodec.multicodecNumbers.`0xb228` = 0xb228.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb228`]
+    inline def `0xb228`: typings.multicodec.multicodecInts.`0xb228` = 0xb228.asInstanceOf[typings.multicodec.multicodecInts.`0xb228`]
     
-    inline def `0xb229`: typings.multicodec.multicodecNumbers.`0xb229` = 0xb229.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb229`]
+    inline def `0xb229`: typings.multicodec.multicodecInts.`0xb229` = 0xb229.asInstanceOf[typings.multicodec.multicodecInts.`0xb229`]
     
-    inline def `0xb22a`: typings.multicodec.multicodecNumbers.`0xb22a` = 0xb22a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb22a`]
+    inline def `0xb22a`: typings.multicodec.multicodecInts.`0xb22a` = 0xb22a.asInstanceOf[typings.multicodec.multicodecInts.`0xb22a`]
     
-    inline def `0xb22b`: typings.multicodec.multicodecNumbers.`0xb22b` = 0xb22b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb22b`]
+    inline def `0xb22b`: typings.multicodec.multicodecInts.`0xb22b` = 0xb22b.asInstanceOf[typings.multicodec.multicodecInts.`0xb22b`]
     
-    inline def `0xb22c`: typings.multicodec.multicodecNumbers.`0xb22c` = 0xb22c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb22c`]
+    inline def `0xb22c`: typings.multicodec.multicodecInts.`0xb22c` = 0xb22c.asInstanceOf[typings.multicodec.multicodecInts.`0xb22c`]
     
-    inline def `0xb22d`: typings.multicodec.multicodecNumbers.`0xb22d` = 0xb22d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb22d`]
+    inline def `0xb22d`: typings.multicodec.multicodecInts.`0xb22d` = 0xb22d.asInstanceOf[typings.multicodec.multicodecInts.`0xb22d`]
     
-    inline def `0xb22e`: typings.multicodec.multicodecNumbers.`0xb22e` = 0xb22e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb22e`]
+    inline def `0xb22e`: typings.multicodec.multicodecInts.`0xb22e` = 0xb22e.asInstanceOf[typings.multicodec.multicodecInts.`0xb22e`]
     
-    inline def `0xb22f`: typings.multicodec.multicodecNumbers.`0xb22f` = 0xb22f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb22f`]
+    inline def `0xb22f`: typings.multicodec.multicodecInts.`0xb22f` = 0xb22f.asInstanceOf[typings.multicodec.multicodecInts.`0xb22f`]
     
-    inline def `0xb230`: typings.multicodec.multicodecNumbers.`0xb230` = 0xb230.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb230`]
+    inline def `0xb230`: typings.multicodec.multicodecInts.`0xb230` = 0xb230.asInstanceOf[typings.multicodec.multicodecInts.`0xb230`]
     
-    inline def `0xb231`: typings.multicodec.multicodecNumbers.`0xb231` = 0xb231.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb231`]
+    inline def `0xb231`: typings.multicodec.multicodecInts.`0xb231` = 0xb231.asInstanceOf[typings.multicodec.multicodecInts.`0xb231`]
     
-    inline def `0xb232`: typings.multicodec.multicodecNumbers.`0xb232` = 0xb232.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb232`]
+    inline def `0xb232`: typings.multicodec.multicodecInts.`0xb232` = 0xb232.asInstanceOf[typings.multicodec.multicodecInts.`0xb232`]
     
-    inline def `0xb233`: typings.multicodec.multicodecNumbers.`0xb233` = 0xb233.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb233`]
+    inline def `0xb233`: typings.multicodec.multicodecInts.`0xb233` = 0xb233.asInstanceOf[typings.multicodec.multicodecInts.`0xb233`]
     
-    inline def `0xb234`: typings.multicodec.multicodecNumbers.`0xb234` = 0xb234.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb234`]
+    inline def `0xb234`: typings.multicodec.multicodecInts.`0xb234` = 0xb234.asInstanceOf[typings.multicodec.multicodecInts.`0xb234`]
     
-    inline def `0xb235`: typings.multicodec.multicodecNumbers.`0xb235` = 0xb235.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb235`]
+    inline def `0xb235`: typings.multicodec.multicodecInts.`0xb235` = 0xb235.asInstanceOf[typings.multicodec.multicodecInts.`0xb235`]
     
-    inline def `0xb236`: typings.multicodec.multicodecNumbers.`0xb236` = 0xb236.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb236`]
+    inline def `0xb236`: typings.multicodec.multicodecInts.`0xb236` = 0xb236.asInstanceOf[typings.multicodec.multicodecInts.`0xb236`]
     
-    inline def `0xb237`: typings.multicodec.multicodecNumbers.`0xb237` = 0xb237.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb237`]
+    inline def `0xb237`: typings.multicodec.multicodecInts.`0xb237` = 0xb237.asInstanceOf[typings.multicodec.multicodecInts.`0xb237`]
     
-    inline def `0xb238`: typings.multicodec.multicodecNumbers.`0xb238` = 0xb238.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb238`]
+    inline def `0xb238`: typings.multicodec.multicodecInts.`0xb238` = 0xb238.asInstanceOf[typings.multicodec.multicodecInts.`0xb238`]
     
-    inline def `0xb239`: typings.multicodec.multicodecNumbers.`0xb239` = 0xb239.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb239`]
+    inline def `0xb239`: typings.multicodec.multicodecInts.`0xb239` = 0xb239.asInstanceOf[typings.multicodec.multicodecInts.`0xb239`]
     
-    inline def `0xb23a`: typings.multicodec.multicodecNumbers.`0xb23a` = 0xb23a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb23a`]
+    inline def `0xb23a`: typings.multicodec.multicodecInts.`0xb23a` = 0xb23a.asInstanceOf[typings.multicodec.multicodecInts.`0xb23a`]
     
-    inline def `0xb23b`: typings.multicodec.multicodecNumbers.`0xb23b` = 0xb23b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb23b`]
+    inline def `0xb23b`: typings.multicodec.multicodecInts.`0xb23b` = 0xb23b.asInstanceOf[typings.multicodec.multicodecInts.`0xb23b`]
     
-    inline def `0xb23c`: typings.multicodec.multicodecNumbers.`0xb23c` = 0xb23c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb23c`]
+    inline def `0xb23c`: typings.multicodec.multicodecInts.`0xb23c` = 0xb23c.asInstanceOf[typings.multicodec.multicodecInts.`0xb23c`]
     
-    inline def `0xb23d`: typings.multicodec.multicodecNumbers.`0xb23d` = 0xb23d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb23d`]
+    inline def `0xb23d`: typings.multicodec.multicodecInts.`0xb23d` = 0xb23d.asInstanceOf[typings.multicodec.multicodecInts.`0xb23d`]
     
-    inline def `0xb23e`: typings.multicodec.multicodecNumbers.`0xb23e` = 0xb23e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb23e`]
+    inline def `0xb23e`: typings.multicodec.multicodecInts.`0xb23e` = 0xb23e.asInstanceOf[typings.multicodec.multicodecInts.`0xb23e`]
     
-    inline def `0xb23f`: typings.multicodec.multicodecNumbers.`0xb23f` = 0xb23f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb23f`]
+    inline def `0xb23f`: typings.multicodec.multicodecInts.`0xb23f` = 0xb23f.asInstanceOf[typings.multicodec.multicodecInts.`0xb23f`]
     
-    inline def `0xb240`: typings.multicodec.multicodecNumbers.`0xb240` = 0xb240.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb240`]
+    inline def `0xb240`: typings.multicodec.multicodecInts.`0xb240` = 0xb240.asInstanceOf[typings.multicodec.multicodecInts.`0xb240`]
     
-    inline def `0xb241`: typings.multicodec.multicodecNumbers.`0xb241` = 0xb241.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb241`]
+    inline def `0xb241`: typings.multicodec.multicodecInts.`0xb241` = 0xb241.asInstanceOf[typings.multicodec.multicodecInts.`0xb241`]
     
-    inline def `0xb242`: typings.multicodec.multicodecNumbers.`0xb242` = 0xb242.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb242`]
+    inline def `0xb242`: typings.multicodec.multicodecInts.`0xb242` = 0xb242.asInstanceOf[typings.multicodec.multicodecInts.`0xb242`]
     
-    inline def `0xb243`: typings.multicodec.multicodecNumbers.`0xb243` = 0xb243.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb243`]
+    inline def `0xb243`: typings.multicodec.multicodecInts.`0xb243` = 0xb243.asInstanceOf[typings.multicodec.multicodecInts.`0xb243`]
     
-    inline def `0xb244`: typings.multicodec.multicodecNumbers.`0xb244` = 0xb244.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb244`]
+    inline def `0xb244`: typings.multicodec.multicodecInts.`0xb244` = 0xb244.asInstanceOf[typings.multicodec.multicodecInts.`0xb244`]
     
-    inline def `0xb245`: typings.multicodec.multicodecNumbers.`0xb245` = 0xb245.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb245`]
+    inline def `0xb245`: typings.multicodec.multicodecInts.`0xb245` = 0xb245.asInstanceOf[typings.multicodec.multicodecInts.`0xb245`]
     
-    inline def `0xb246`: typings.multicodec.multicodecNumbers.`0xb246` = 0xb246.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb246`]
+    inline def `0xb246`: typings.multicodec.multicodecInts.`0xb246` = 0xb246.asInstanceOf[typings.multicodec.multicodecInts.`0xb246`]
     
-    inline def `0xb247`: typings.multicodec.multicodecNumbers.`0xb247` = 0xb247.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb247`]
+    inline def `0xb247`: typings.multicodec.multicodecInts.`0xb247` = 0xb247.asInstanceOf[typings.multicodec.multicodecInts.`0xb247`]
     
-    inline def `0xb248`: typings.multicodec.multicodecNumbers.`0xb248` = 0xb248.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb248`]
+    inline def `0xb248`: typings.multicodec.multicodecInts.`0xb248` = 0xb248.asInstanceOf[typings.multicodec.multicodecInts.`0xb248`]
     
-    inline def `0xb249`: typings.multicodec.multicodecNumbers.`0xb249` = 0xb249.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb249`]
+    inline def `0xb249`: typings.multicodec.multicodecInts.`0xb249` = 0xb249.asInstanceOf[typings.multicodec.multicodecInts.`0xb249`]
     
-    inline def `0xb24a`: typings.multicodec.multicodecNumbers.`0xb24a` = 0xb24a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb24a`]
+    inline def `0xb24a`: typings.multicodec.multicodecInts.`0xb24a` = 0xb24a.asInstanceOf[typings.multicodec.multicodecInts.`0xb24a`]
     
-    inline def `0xb24b`: typings.multicodec.multicodecNumbers.`0xb24b` = 0xb24b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb24b`]
+    inline def `0xb24b`: typings.multicodec.multicodecInts.`0xb24b` = 0xb24b.asInstanceOf[typings.multicodec.multicodecInts.`0xb24b`]
     
-    inline def `0xb24c`: typings.multicodec.multicodecNumbers.`0xb24c` = 0xb24c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb24c`]
+    inline def `0xb24c`: typings.multicodec.multicodecInts.`0xb24c` = 0xb24c.asInstanceOf[typings.multicodec.multicodecInts.`0xb24c`]
     
-    inline def `0xb24d`: typings.multicodec.multicodecNumbers.`0xb24d` = 0xb24d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb24d`]
+    inline def `0xb24d`: typings.multicodec.multicodecInts.`0xb24d` = 0xb24d.asInstanceOf[typings.multicodec.multicodecInts.`0xb24d`]
     
-    inline def `0xb24e`: typings.multicodec.multicodecNumbers.`0xb24e` = 0xb24e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb24e`]
+    inline def `0xb24e`: typings.multicodec.multicodecInts.`0xb24e` = 0xb24e.asInstanceOf[typings.multicodec.multicodecInts.`0xb24e`]
     
-    inline def `0xb24f`: typings.multicodec.multicodecNumbers.`0xb24f` = 0xb24f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb24f`]
+    inline def `0xb24f`: typings.multicodec.multicodecInts.`0xb24f` = 0xb24f.asInstanceOf[typings.multicodec.multicodecInts.`0xb24f`]
     
-    inline def `0xb250`: typings.multicodec.multicodecNumbers.`0xb250` = 0xb250.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb250`]
+    inline def `0xb250`: typings.multicodec.multicodecInts.`0xb250` = 0xb250.asInstanceOf[typings.multicodec.multicodecInts.`0xb250`]
     
-    inline def `0xb251`: typings.multicodec.multicodecNumbers.`0xb251` = 0xb251.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb251`]
+    inline def `0xb251`: typings.multicodec.multicodecInts.`0xb251` = 0xb251.asInstanceOf[typings.multicodec.multicodecInts.`0xb251`]
     
-    inline def `0xb252`: typings.multicodec.multicodecNumbers.`0xb252` = 0xb252.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb252`]
+    inline def `0xb252`: typings.multicodec.multicodecInts.`0xb252` = 0xb252.asInstanceOf[typings.multicodec.multicodecInts.`0xb252`]
     
-    inline def `0xb253`: typings.multicodec.multicodecNumbers.`0xb253` = 0xb253.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb253`]
+    inline def `0xb253`: typings.multicodec.multicodecInts.`0xb253` = 0xb253.asInstanceOf[typings.multicodec.multicodecInts.`0xb253`]
     
-    inline def `0xb254`: typings.multicodec.multicodecNumbers.`0xb254` = 0xb254.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb254`]
+    inline def `0xb254`: typings.multicodec.multicodecInts.`0xb254` = 0xb254.asInstanceOf[typings.multicodec.multicodecInts.`0xb254`]
     
-    inline def `0xb255`: typings.multicodec.multicodecNumbers.`0xb255` = 0xb255.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb255`]
+    inline def `0xb255`: typings.multicodec.multicodecInts.`0xb255` = 0xb255.asInstanceOf[typings.multicodec.multicodecInts.`0xb255`]
     
-    inline def `0xb256`: typings.multicodec.multicodecNumbers.`0xb256` = 0xb256.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb256`]
+    inline def `0xb256`: typings.multicodec.multicodecInts.`0xb256` = 0xb256.asInstanceOf[typings.multicodec.multicodecInts.`0xb256`]
     
-    inline def `0xb257`: typings.multicodec.multicodecNumbers.`0xb257` = 0xb257.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb257`]
+    inline def `0xb257`: typings.multicodec.multicodecInts.`0xb257` = 0xb257.asInstanceOf[typings.multicodec.multicodecInts.`0xb257`]
     
-    inline def `0xb258`: typings.multicodec.multicodecNumbers.`0xb258` = 0xb258.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb258`]
+    inline def `0xb258`: typings.multicodec.multicodecInts.`0xb258` = 0xb258.asInstanceOf[typings.multicodec.multicodecInts.`0xb258`]
     
-    inline def `0xb259`: typings.multicodec.multicodecNumbers.`0xb259` = 0xb259.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb259`]
+    inline def `0xb259`: typings.multicodec.multicodecInts.`0xb259` = 0xb259.asInstanceOf[typings.multicodec.multicodecInts.`0xb259`]
     
-    inline def `0xb25a`: typings.multicodec.multicodecNumbers.`0xb25a` = 0xb25a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb25a`]
+    inline def `0xb25a`: typings.multicodec.multicodecInts.`0xb25a` = 0xb25a.asInstanceOf[typings.multicodec.multicodecInts.`0xb25a`]
     
-    inline def `0xb25b`: typings.multicodec.multicodecNumbers.`0xb25b` = 0xb25b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb25b`]
+    inline def `0xb25b`: typings.multicodec.multicodecInts.`0xb25b` = 0xb25b.asInstanceOf[typings.multicodec.multicodecInts.`0xb25b`]
     
-    inline def `0xb25c`: typings.multicodec.multicodecNumbers.`0xb25c` = 0xb25c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb25c`]
+    inline def `0xb25c`: typings.multicodec.multicodecInts.`0xb25c` = 0xb25c.asInstanceOf[typings.multicodec.multicodecInts.`0xb25c`]
     
-    inline def `0xb25d`: typings.multicodec.multicodecNumbers.`0xb25d` = 0xb25d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb25d`]
+    inline def `0xb25d`: typings.multicodec.multicodecInts.`0xb25d` = 0xb25d.asInstanceOf[typings.multicodec.multicodecInts.`0xb25d`]
     
-    inline def `0xb25e`: typings.multicodec.multicodecNumbers.`0xb25e` = 0xb25e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb25e`]
+    inline def `0xb25e`: typings.multicodec.multicodecInts.`0xb25e` = 0xb25e.asInstanceOf[typings.multicodec.multicodecInts.`0xb25e`]
     
-    inline def `0xb25f`: typings.multicodec.multicodecNumbers.`0xb25f` = 0xb25f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb25f`]
+    inline def `0xb25f`: typings.multicodec.multicodecInts.`0xb25f` = 0xb25f.asInstanceOf[typings.multicodec.multicodecInts.`0xb25f`]
     
-    inline def `0xb260`: typings.multicodec.multicodecNumbers.`0xb260` = 0xb260.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb260`]
+    inline def `0xb260`: typings.multicodec.multicodecInts.`0xb260` = 0xb260.asInstanceOf[typings.multicodec.multicodecInts.`0xb260`]
     
-    inline def `0xb29910`: typings.multicodec.multicodecNumbers.`0xb29910` = 0xb29910.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb29910`]
+    inline def `0xb29910`: typings.multicodec.multicodecInts.`0xb29910` = 0xb29910.asInstanceOf[typings.multicodec.multicodecInts.`0xb29910`]
     
-    inline def `0xb301`: typings.multicodec.multicodecNumbers.`0xb301` = 0xb301.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb301`]
+    inline def `0xb301`: typings.multicodec.multicodecInts.`0xb301` = 0xb301.asInstanceOf[typings.multicodec.multicodecInts.`0xb301`]
     
-    inline def `0xb302`: typings.multicodec.multicodecNumbers.`0xb302` = 0xb302.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb302`]
+    inline def `0xb302`: typings.multicodec.multicodecInts.`0xb302` = 0xb302.asInstanceOf[typings.multicodec.multicodecInts.`0xb302`]
     
-    inline def `0xb303`: typings.multicodec.multicodecNumbers.`0xb303` = 0xb303.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb303`]
+    inline def `0xb303`: typings.multicodec.multicodecInts.`0xb303` = 0xb303.asInstanceOf[typings.multicodec.multicodecInts.`0xb303`]
     
-    inline def `0xb304`: typings.multicodec.multicodecNumbers.`0xb304` = 0xb304.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb304`]
+    inline def `0xb304`: typings.multicodec.multicodecInts.`0xb304` = 0xb304.asInstanceOf[typings.multicodec.multicodecInts.`0xb304`]
     
-    inline def `0xb305`: typings.multicodec.multicodecNumbers.`0xb305` = 0xb305.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb305`]
+    inline def `0xb305`: typings.multicodec.multicodecInts.`0xb305` = 0xb305.asInstanceOf[typings.multicodec.multicodecInts.`0xb305`]
     
-    inline def `0xb306`: typings.multicodec.multicodecNumbers.`0xb306` = 0xb306.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb306`]
+    inline def `0xb306`: typings.multicodec.multicodecInts.`0xb306` = 0xb306.asInstanceOf[typings.multicodec.multicodecInts.`0xb306`]
     
-    inline def `0xb307`: typings.multicodec.multicodecNumbers.`0xb307` = 0xb307.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb307`]
+    inline def `0xb307`: typings.multicodec.multicodecInts.`0xb307` = 0xb307.asInstanceOf[typings.multicodec.multicodecInts.`0xb307`]
     
-    inline def `0xb308`: typings.multicodec.multicodecNumbers.`0xb308` = 0xb308.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb308`]
+    inline def `0xb308`: typings.multicodec.multicodecInts.`0xb308` = 0xb308.asInstanceOf[typings.multicodec.multicodecInts.`0xb308`]
     
-    inline def `0xb309`: typings.multicodec.multicodecNumbers.`0xb309` = 0xb309.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb309`]
+    inline def `0xb309`: typings.multicodec.multicodecInts.`0xb309` = 0xb309.asInstanceOf[typings.multicodec.multicodecInts.`0xb309`]
     
-    inline def `0xb30a`: typings.multicodec.multicodecNumbers.`0xb30a` = 0xb30a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb30a`]
+    inline def `0xb30a`: typings.multicodec.multicodecInts.`0xb30a` = 0xb30a.asInstanceOf[typings.multicodec.multicodecInts.`0xb30a`]
     
-    inline def `0xb30b`: typings.multicodec.multicodecNumbers.`0xb30b` = 0xb30b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb30b`]
+    inline def `0xb30b`: typings.multicodec.multicodecInts.`0xb30b` = 0xb30b.asInstanceOf[typings.multicodec.multicodecInts.`0xb30b`]
     
-    inline def `0xb30c`: typings.multicodec.multicodecNumbers.`0xb30c` = 0xb30c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb30c`]
+    inline def `0xb30c`: typings.multicodec.multicodecInts.`0xb30c` = 0xb30c.asInstanceOf[typings.multicodec.multicodecInts.`0xb30c`]
     
-    inline def `0xb30d`: typings.multicodec.multicodecNumbers.`0xb30d` = 0xb30d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb30d`]
+    inline def `0xb30d`: typings.multicodec.multicodecInts.`0xb30d` = 0xb30d.asInstanceOf[typings.multicodec.multicodecInts.`0xb30d`]
     
-    inline def `0xb30e`: typings.multicodec.multicodecNumbers.`0xb30e` = 0xb30e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb30e`]
+    inline def `0xb30e`: typings.multicodec.multicodecInts.`0xb30e` = 0xb30e.asInstanceOf[typings.multicodec.multicodecInts.`0xb30e`]
     
-    inline def `0xb30f`: typings.multicodec.multicodecNumbers.`0xb30f` = 0xb30f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb30f`]
+    inline def `0xb30f`: typings.multicodec.multicodecInts.`0xb30f` = 0xb30f.asInstanceOf[typings.multicodec.multicodecInts.`0xb30f`]
     
-    inline def `0xb310`: typings.multicodec.multicodecNumbers.`0xb310` = 0xb310.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb310`]
+    inline def `0xb310`: typings.multicodec.multicodecInts.`0xb310` = 0xb310.asInstanceOf[typings.multicodec.multicodecInts.`0xb310`]
     
-    inline def `0xb311`: typings.multicodec.multicodecNumbers.`0xb311` = 0xb311.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb311`]
+    inline def `0xb311`: typings.multicodec.multicodecInts.`0xb311` = 0xb311.asInstanceOf[typings.multicodec.multicodecInts.`0xb311`]
     
-    inline def `0xb312`: typings.multicodec.multicodecNumbers.`0xb312` = 0xb312.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb312`]
+    inline def `0xb312`: typings.multicodec.multicodecInts.`0xb312` = 0xb312.asInstanceOf[typings.multicodec.multicodecInts.`0xb312`]
     
-    inline def `0xb313`: typings.multicodec.multicodecNumbers.`0xb313` = 0xb313.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb313`]
+    inline def `0xb313`: typings.multicodec.multicodecInts.`0xb313` = 0xb313.asInstanceOf[typings.multicodec.multicodecInts.`0xb313`]
     
-    inline def `0xb314`: typings.multicodec.multicodecNumbers.`0xb314` = 0xb314.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb314`]
+    inline def `0xb314`: typings.multicodec.multicodecInts.`0xb314` = 0xb314.asInstanceOf[typings.multicodec.multicodecInts.`0xb314`]
     
-    inline def `0xb315`: typings.multicodec.multicodecNumbers.`0xb315` = 0xb315.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb315`]
+    inline def `0xb315`: typings.multicodec.multicodecInts.`0xb315` = 0xb315.asInstanceOf[typings.multicodec.multicodecInts.`0xb315`]
     
-    inline def `0xb316`: typings.multicodec.multicodecNumbers.`0xb316` = 0xb316.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb316`]
+    inline def `0xb316`: typings.multicodec.multicodecInts.`0xb316` = 0xb316.asInstanceOf[typings.multicodec.multicodecInts.`0xb316`]
     
-    inline def `0xb317`: typings.multicodec.multicodecNumbers.`0xb317` = 0xb317.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb317`]
+    inline def `0xb317`: typings.multicodec.multicodecInts.`0xb317` = 0xb317.asInstanceOf[typings.multicodec.multicodecInts.`0xb317`]
     
-    inline def `0xb318`: typings.multicodec.multicodecNumbers.`0xb318` = 0xb318.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb318`]
+    inline def `0xb318`: typings.multicodec.multicodecInts.`0xb318` = 0xb318.asInstanceOf[typings.multicodec.multicodecInts.`0xb318`]
     
-    inline def `0xb319`: typings.multicodec.multicodecNumbers.`0xb319` = 0xb319.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb319`]
+    inline def `0xb319`: typings.multicodec.multicodecInts.`0xb319` = 0xb319.asInstanceOf[typings.multicodec.multicodecInts.`0xb319`]
     
-    inline def `0xb31a`: typings.multicodec.multicodecNumbers.`0xb31a` = 0xb31a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb31a`]
+    inline def `0xb31a`: typings.multicodec.multicodecInts.`0xb31a` = 0xb31a.asInstanceOf[typings.multicodec.multicodecInts.`0xb31a`]
     
-    inline def `0xb31b`: typings.multicodec.multicodecNumbers.`0xb31b` = 0xb31b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb31b`]
+    inline def `0xb31b`: typings.multicodec.multicodecInts.`0xb31b` = 0xb31b.asInstanceOf[typings.multicodec.multicodecInts.`0xb31b`]
     
-    inline def `0xb31c`: typings.multicodec.multicodecNumbers.`0xb31c` = 0xb31c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb31c`]
+    inline def `0xb31c`: typings.multicodec.multicodecInts.`0xb31c` = 0xb31c.asInstanceOf[typings.multicodec.multicodecInts.`0xb31c`]
     
-    inline def `0xb31d`: typings.multicodec.multicodecNumbers.`0xb31d` = 0xb31d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb31d`]
+    inline def `0xb31d`: typings.multicodec.multicodecInts.`0xb31d` = 0xb31d.asInstanceOf[typings.multicodec.multicodecInts.`0xb31d`]
     
-    inline def `0xb31e`: typings.multicodec.multicodecNumbers.`0xb31e` = 0xb31e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb31e`]
+    inline def `0xb31e`: typings.multicodec.multicodecInts.`0xb31e` = 0xb31e.asInstanceOf[typings.multicodec.multicodecInts.`0xb31e`]
     
-    inline def `0xb31f`: typings.multicodec.multicodecNumbers.`0xb31f` = 0xb31f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb31f`]
+    inline def `0xb31f`: typings.multicodec.multicodecInts.`0xb31f` = 0xb31f.asInstanceOf[typings.multicodec.multicodecInts.`0xb31f`]
     
-    inline def `0xb320`: typings.multicodec.multicodecNumbers.`0xb320` = 0xb320.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb320`]
+    inline def `0xb320`: typings.multicodec.multicodecInts.`0xb320` = 0xb320.asInstanceOf[typings.multicodec.multicodecInts.`0xb320`]
     
-    inline def `0xb321`: typings.multicodec.multicodecNumbers.`0xb321` = 0xb321.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb321`]
+    inline def `0xb321`: typings.multicodec.multicodecInts.`0xb321` = 0xb321.asInstanceOf[typings.multicodec.multicodecInts.`0xb321`]
     
-    inline def `0xb322`: typings.multicodec.multicodecNumbers.`0xb322` = 0xb322.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb322`]
+    inline def `0xb322`: typings.multicodec.multicodecInts.`0xb322` = 0xb322.asInstanceOf[typings.multicodec.multicodecInts.`0xb322`]
     
-    inline def `0xb323`: typings.multicodec.multicodecNumbers.`0xb323` = 0xb323.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb323`]
+    inline def `0xb323`: typings.multicodec.multicodecInts.`0xb323` = 0xb323.asInstanceOf[typings.multicodec.multicodecInts.`0xb323`]
     
-    inline def `0xb324`: typings.multicodec.multicodecNumbers.`0xb324` = 0xb324.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb324`]
+    inline def `0xb324`: typings.multicodec.multicodecInts.`0xb324` = 0xb324.asInstanceOf[typings.multicodec.multicodecInts.`0xb324`]
     
-    inline def `0xb325`: typings.multicodec.multicodecNumbers.`0xb325` = 0xb325.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb325`]
+    inline def `0xb325`: typings.multicodec.multicodecInts.`0xb325` = 0xb325.asInstanceOf[typings.multicodec.multicodecInts.`0xb325`]
     
-    inline def `0xb326`: typings.multicodec.multicodecNumbers.`0xb326` = 0xb326.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb326`]
+    inline def `0xb326`: typings.multicodec.multicodecInts.`0xb326` = 0xb326.asInstanceOf[typings.multicodec.multicodecInts.`0xb326`]
     
-    inline def `0xb327`: typings.multicodec.multicodecNumbers.`0xb327` = 0xb327.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb327`]
+    inline def `0xb327`: typings.multicodec.multicodecInts.`0xb327` = 0xb327.asInstanceOf[typings.multicodec.multicodecInts.`0xb327`]
     
-    inline def `0xb328`: typings.multicodec.multicodecNumbers.`0xb328` = 0xb328.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb328`]
+    inline def `0xb328`: typings.multicodec.multicodecInts.`0xb328` = 0xb328.asInstanceOf[typings.multicodec.multicodecInts.`0xb328`]
     
-    inline def `0xb329`: typings.multicodec.multicodecNumbers.`0xb329` = 0xb329.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb329`]
+    inline def `0xb329`: typings.multicodec.multicodecInts.`0xb329` = 0xb329.asInstanceOf[typings.multicodec.multicodecInts.`0xb329`]
     
-    inline def `0xb32a`: typings.multicodec.multicodecNumbers.`0xb32a` = 0xb32a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb32a`]
+    inline def `0xb32a`: typings.multicodec.multicodecInts.`0xb32a` = 0xb32a.asInstanceOf[typings.multicodec.multicodecInts.`0xb32a`]
     
-    inline def `0xb32b`: typings.multicodec.multicodecNumbers.`0xb32b` = 0xb32b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb32b`]
+    inline def `0xb32b`: typings.multicodec.multicodecInts.`0xb32b` = 0xb32b.asInstanceOf[typings.multicodec.multicodecInts.`0xb32b`]
     
-    inline def `0xb32c`: typings.multicodec.multicodecNumbers.`0xb32c` = 0xb32c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb32c`]
+    inline def `0xb32c`: typings.multicodec.multicodecInts.`0xb32c` = 0xb32c.asInstanceOf[typings.multicodec.multicodecInts.`0xb32c`]
     
-    inline def `0xb32d`: typings.multicodec.multicodecNumbers.`0xb32d` = 0xb32d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb32d`]
+    inline def `0xb32d`: typings.multicodec.multicodecInts.`0xb32d` = 0xb32d.asInstanceOf[typings.multicodec.multicodecInts.`0xb32d`]
     
-    inline def `0xb32e`: typings.multicodec.multicodecNumbers.`0xb32e` = 0xb32e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb32e`]
+    inline def `0xb32e`: typings.multicodec.multicodecInts.`0xb32e` = 0xb32e.asInstanceOf[typings.multicodec.multicodecInts.`0xb32e`]
     
-    inline def `0xb32f`: typings.multicodec.multicodecNumbers.`0xb32f` = 0xb32f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb32f`]
+    inline def `0xb32f`: typings.multicodec.multicodecInts.`0xb32f` = 0xb32f.asInstanceOf[typings.multicodec.multicodecInts.`0xb32f`]
     
-    inline def `0xb330`: typings.multicodec.multicodecNumbers.`0xb330` = 0xb330.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb330`]
+    inline def `0xb330`: typings.multicodec.multicodecInts.`0xb330` = 0xb330.asInstanceOf[typings.multicodec.multicodecInts.`0xb330`]
     
-    inline def `0xb331`: typings.multicodec.multicodecNumbers.`0xb331` = 0xb331.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb331`]
+    inline def `0xb331`: typings.multicodec.multicodecInts.`0xb331` = 0xb331.asInstanceOf[typings.multicodec.multicodecInts.`0xb331`]
     
-    inline def `0xb332`: typings.multicodec.multicodecNumbers.`0xb332` = 0xb332.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb332`]
+    inline def `0xb332`: typings.multicodec.multicodecInts.`0xb332` = 0xb332.asInstanceOf[typings.multicodec.multicodecInts.`0xb332`]
     
-    inline def `0xb333`: typings.multicodec.multicodecNumbers.`0xb333` = 0xb333.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb333`]
+    inline def `0xb333`: typings.multicodec.multicodecInts.`0xb333` = 0xb333.asInstanceOf[typings.multicodec.multicodecInts.`0xb333`]
     
-    inline def `0xb334`: typings.multicodec.multicodecNumbers.`0xb334` = 0xb334.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb334`]
+    inline def `0xb334`: typings.multicodec.multicodecInts.`0xb334` = 0xb334.asInstanceOf[typings.multicodec.multicodecInts.`0xb334`]
     
-    inline def `0xb335`: typings.multicodec.multicodecNumbers.`0xb335` = 0xb335.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb335`]
+    inline def `0xb335`: typings.multicodec.multicodecInts.`0xb335` = 0xb335.asInstanceOf[typings.multicodec.multicodecInts.`0xb335`]
     
-    inline def `0xb336`: typings.multicodec.multicodecNumbers.`0xb336` = 0xb336.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb336`]
+    inline def `0xb336`: typings.multicodec.multicodecInts.`0xb336` = 0xb336.asInstanceOf[typings.multicodec.multicodecInts.`0xb336`]
     
-    inline def `0xb337`: typings.multicodec.multicodecNumbers.`0xb337` = 0xb337.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb337`]
+    inline def `0xb337`: typings.multicodec.multicodecInts.`0xb337` = 0xb337.asInstanceOf[typings.multicodec.multicodecInts.`0xb337`]
     
-    inline def `0xb338`: typings.multicodec.multicodecNumbers.`0xb338` = 0xb338.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb338`]
+    inline def `0xb338`: typings.multicodec.multicodecInts.`0xb338` = 0xb338.asInstanceOf[typings.multicodec.multicodecInts.`0xb338`]
     
-    inline def `0xb339`: typings.multicodec.multicodecNumbers.`0xb339` = 0xb339.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb339`]
+    inline def `0xb339`: typings.multicodec.multicodecInts.`0xb339` = 0xb339.asInstanceOf[typings.multicodec.multicodecInts.`0xb339`]
     
-    inline def `0xb33a`: typings.multicodec.multicodecNumbers.`0xb33a` = 0xb33a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb33a`]
+    inline def `0xb33a`: typings.multicodec.multicodecInts.`0xb33a` = 0xb33a.asInstanceOf[typings.multicodec.multicodecInts.`0xb33a`]
     
-    inline def `0xb33b`: typings.multicodec.multicodecNumbers.`0xb33b` = 0xb33b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb33b`]
+    inline def `0xb33b`: typings.multicodec.multicodecInts.`0xb33b` = 0xb33b.asInstanceOf[typings.multicodec.multicodecInts.`0xb33b`]
     
-    inline def `0xb33c`: typings.multicodec.multicodecNumbers.`0xb33c` = 0xb33c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb33c`]
+    inline def `0xb33c`: typings.multicodec.multicodecInts.`0xb33c` = 0xb33c.asInstanceOf[typings.multicodec.multicodecInts.`0xb33c`]
     
-    inline def `0xb33d`: typings.multicodec.multicodecNumbers.`0xb33d` = 0xb33d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb33d`]
+    inline def `0xb33d`: typings.multicodec.multicodecInts.`0xb33d` = 0xb33d.asInstanceOf[typings.multicodec.multicodecInts.`0xb33d`]
     
-    inline def `0xb33e`: typings.multicodec.multicodecNumbers.`0xb33e` = 0xb33e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb33e`]
+    inline def `0xb33e`: typings.multicodec.multicodecInts.`0xb33e` = 0xb33e.asInstanceOf[typings.multicodec.multicodecInts.`0xb33e`]
     
-    inline def `0xb33f`: typings.multicodec.multicodecNumbers.`0xb33f` = 0xb33f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb33f`]
+    inline def `0xb33f`: typings.multicodec.multicodecInts.`0xb33f` = 0xb33f.asInstanceOf[typings.multicodec.multicodecInts.`0xb33f`]
     
-    inline def `0xb340`: typings.multicodec.multicodecNumbers.`0xb340` = 0xb340.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb340`]
+    inline def `0xb340`: typings.multicodec.multicodecInts.`0xb340` = 0xb340.asInstanceOf[typings.multicodec.multicodecInts.`0xb340`]
     
-    inline def `0xb341`: typings.multicodec.multicodecNumbers.`0xb341` = 0xb341.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb341`]
+    inline def `0xb341`: typings.multicodec.multicodecInts.`0xb341` = 0xb341.asInstanceOf[typings.multicodec.multicodecInts.`0xb341`]
     
-    inline def `0xb342`: typings.multicodec.multicodecNumbers.`0xb342` = 0xb342.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb342`]
+    inline def `0xb342`: typings.multicodec.multicodecInts.`0xb342` = 0xb342.asInstanceOf[typings.multicodec.multicodecInts.`0xb342`]
     
-    inline def `0xb343`: typings.multicodec.multicodecNumbers.`0xb343` = 0xb343.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb343`]
+    inline def `0xb343`: typings.multicodec.multicodecInts.`0xb343` = 0xb343.asInstanceOf[typings.multicodec.multicodecInts.`0xb343`]
     
-    inline def `0xb344`: typings.multicodec.multicodecNumbers.`0xb344` = 0xb344.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb344`]
+    inline def `0xb344`: typings.multicodec.multicodecInts.`0xb344` = 0xb344.asInstanceOf[typings.multicodec.multicodecInts.`0xb344`]
     
-    inline def `0xb345`: typings.multicodec.multicodecNumbers.`0xb345` = 0xb345.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb345`]
+    inline def `0xb345`: typings.multicodec.multicodecInts.`0xb345` = 0xb345.asInstanceOf[typings.multicodec.multicodecInts.`0xb345`]
     
-    inline def `0xb346`: typings.multicodec.multicodecNumbers.`0xb346` = 0xb346.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb346`]
+    inline def `0xb346`: typings.multicodec.multicodecInts.`0xb346` = 0xb346.asInstanceOf[typings.multicodec.multicodecInts.`0xb346`]
     
-    inline def `0xb347`: typings.multicodec.multicodecNumbers.`0xb347` = 0xb347.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb347`]
+    inline def `0xb347`: typings.multicodec.multicodecInts.`0xb347` = 0xb347.asInstanceOf[typings.multicodec.multicodecInts.`0xb347`]
     
-    inline def `0xb348`: typings.multicodec.multicodecNumbers.`0xb348` = 0xb348.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb348`]
+    inline def `0xb348`: typings.multicodec.multicodecInts.`0xb348` = 0xb348.asInstanceOf[typings.multicodec.multicodecInts.`0xb348`]
     
-    inline def `0xb349`: typings.multicodec.multicodecNumbers.`0xb349` = 0xb349.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb349`]
+    inline def `0xb349`: typings.multicodec.multicodecInts.`0xb349` = 0xb349.asInstanceOf[typings.multicodec.multicodecInts.`0xb349`]
     
-    inline def `0xb34a`: typings.multicodec.multicodecNumbers.`0xb34a` = 0xb34a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb34a`]
+    inline def `0xb34a`: typings.multicodec.multicodecInts.`0xb34a` = 0xb34a.asInstanceOf[typings.multicodec.multicodecInts.`0xb34a`]
     
-    inline def `0xb34b`: typings.multicodec.multicodecNumbers.`0xb34b` = 0xb34b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb34b`]
+    inline def `0xb34b`: typings.multicodec.multicodecInts.`0xb34b` = 0xb34b.asInstanceOf[typings.multicodec.multicodecInts.`0xb34b`]
     
-    inline def `0xb34c`: typings.multicodec.multicodecNumbers.`0xb34c` = 0xb34c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb34c`]
+    inline def `0xb34c`: typings.multicodec.multicodecInts.`0xb34c` = 0xb34c.asInstanceOf[typings.multicodec.multicodecInts.`0xb34c`]
     
-    inline def `0xb34d`: typings.multicodec.multicodecNumbers.`0xb34d` = 0xb34d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb34d`]
+    inline def `0xb34d`: typings.multicodec.multicodecInts.`0xb34d` = 0xb34d.asInstanceOf[typings.multicodec.multicodecInts.`0xb34d`]
     
-    inline def `0xb34e`: typings.multicodec.multicodecNumbers.`0xb34e` = 0xb34e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb34e`]
+    inline def `0xb34e`: typings.multicodec.multicodecInts.`0xb34e` = 0xb34e.asInstanceOf[typings.multicodec.multicodecInts.`0xb34e`]
     
-    inline def `0xb34f`: typings.multicodec.multicodecNumbers.`0xb34f` = 0xb34f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb34f`]
+    inline def `0xb34f`: typings.multicodec.multicodecInts.`0xb34f` = 0xb34f.asInstanceOf[typings.multicodec.multicodecInts.`0xb34f`]
     
-    inline def `0xb350`: typings.multicodec.multicodecNumbers.`0xb350` = 0xb350.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb350`]
+    inline def `0xb350`: typings.multicodec.multicodecInts.`0xb350` = 0xb350.asInstanceOf[typings.multicodec.multicodecInts.`0xb350`]
     
-    inline def `0xb351`: typings.multicodec.multicodecNumbers.`0xb351` = 0xb351.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb351`]
+    inline def `0xb351`: typings.multicodec.multicodecInts.`0xb351` = 0xb351.asInstanceOf[typings.multicodec.multicodecInts.`0xb351`]
     
-    inline def `0xb352`: typings.multicodec.multicodecNumbers.`0xb352` = 0xb352.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb352`]
+    inline def `0xb352`: typings.multicodec.multicodecInts.`0xb352` = 0xb352.asInstanceOf[typings.multicodec.multicodecInts.`0xb352`]
     
-    inline def `0xb353`: typings.multicodec.multicodecNumbers.`0xb353` = 0xb353.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb353`]
+    inline def `0xb353`: typings.multicodec.multicodecInts.`0xb353` = 0xb353.asInstanceOf[typings.multicodec.multicodecInts.`0xb353`]
     
-    inline def `0xb354`: typings.multicodec.multicodecNumbers.`0xb354` = 0xb354.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb354`]
+    inline def `0xb354`: typings.multicodec.multicodecInts.`0xb354` = 0xb354.asInstanceOf[typings.multicodec.multicodecInts.`0xb354`]
     
-    inline def `0xb355`: typings.multicodec.multicodecNumbers.`0xb355` = 0xb355.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb355`]
+    inline def `0xb355`: typings.multicodec.multicodecInts.`0xb355` = 0xb355.asInstanceOf[typings.multicodec.multicodecInts.`0xb355`]
     
-    inline def `0xb356`: typings.multicodec.multicodecNumbers.`0xb356` = 0xb356.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb356`]
+    inline def `0xb356`: typings.multicodec.multicodecInts.`0xb356` = 0xb356.asInstanceOf[typings.multicodec.multicodecInts.`0xb356`]
     
-    inline def `0xb357`: typings.multicodec.multicodecNumbers.`0xb357` = 0xb357.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb357`]
+    inline def `0xb357`: typings.multicodec.multicodecInts.`0xb357` = 0xb357.asInstanceOf[typings.multicodec.multicodecInts.`0xb357`]
     
-    inline def `0xb358`: typings.multicodec.multicodecNumbers.`0xb358` = 0xb358.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb358`]
+    inline def `0xb358`: typings.multicodec.multicodecInts.`0xb358` = 0xb358.asInstanceOf[typings.multicodec.multicodecInts.`0xb358`]
     
-    inline def `0xb359`: typings.multicodec.multicodecNumbers.`0xb359` = 0xb359.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb359`]
+    inline def `0xb359`: typings.multicodec.multicodecInts.`0xb359` = 0xb359.asInstanceOf[typings.multicodec.multicodecInts.`0xb359`]
     
-    inline def `0xb35a`: typings.multicodec.multicodecNumbers.`0xb35a` = 0xb35a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb35a`]
+    inline def `0xb35a`: typings.multicodec.multicodecInts.`0xb35a` = 0xb35a.asInstanceOf[typings.multicodec.multicodecInts.`0xb35a`]
     
-    inline def `0xb35b`: typings.multicodec.multicodecNumbers.`0xb35b` = 0xb35b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb35b`]
+    inline def `0xb35b`: typings.multicodec.multicodecInts.`0xb35b` = 0xb35b.asInstanceOf[typings.multicodec.multicodecInts.`0xb35b`]
     
-    inline def `0xb35c`: typings.multicodec.multicodecNumbers.`0xb35c` = 0xb35c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb35c`]
+    inline def `0xb35c`: typings.multicodec.multicodecInts.`0xb35c` = 0xb35c.asInstanceOf[typings.multicodec.multicodecInts.`0xb35c`]
     
-    inline def `0xb35d`: typings.multicodec.multicodecNumbers.`0xb35d` = 0xb35d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb35d`]
+    inline def `0xb35d`: typings.multicodec.multicodecInts.`0xb35d` = 0xb35d.asInstanceOf[typings.multicodec.multicodecInts.`0xb35d`]
     
-    inline def `0xb35e`: typings.multicodec.multicodecNumbers.`0xb35e` = 0xb35e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb35e`]
+    inline def `0xb35e`: typings.multicodec.multicodecInts.`0xb35e` = 0xb35e.asInstanceOf[typings.multicodec.multicodecInts.`0xb35e`]
     
-    inline def `0xb35f`: typings.multicodec.multicodecNumbers.`0xb35f` = 0xb35f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb35f`]
+    inline def `0xb35f`: typings.multicodec.multicodecInts.`0xb35f` = 0xb35f.asInstanceOf[typings.multicodec.multicodecInts.`0xb35f`]
     
-    inline def `0xb360`: typings.multicodec.multicodecNumbers.`0xb360` = 0xb360.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb360`]
+    inline def `0xb360`: typings.multicodec.multicodecInts.`0xb360` = 0xb360.asInstanceOf[typings.multicodec.multicodecInts.`0xb360`]
     
-    inline def `0xb361`: typings.multicodec.multicodecNumbers.`0xb361` = 0xb361.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb361`]
+    inline def `0xb361`: typings.multicodec.multicodecInts.`0xb361` = 0xb361.asInstanceOf[typings.multicodec.multicodecInts.`0xb361`]
     
-    inline def `0xb362`: typings.multicodec.multicodecNumbers.`0xb362` = 0xb362.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb362`]
+    inline def `0xb362`: typings.multicodec.multicodecInts.`0xb362` = 0xb362.asInstanceOf[typings.multicodec.multicodecInts.`0xb362`]
     
-    inline def `0xb363`: typings.multicodec.multicodecNumbers.`0xb363` = 0xb363.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb363`]
+    inline def `0xb363`: typings.multicodec.multicodecInts.`0xb363` = 0xb363.asInstanceOf[typings.multicodec.multicodecInts.`0xb363`]
     
-    inline def `0xb364`: typings.multicodec.multicodecNumbers.`0xb364` = 0xb364.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb364`]
+    inline def `0xb364`: typings.multicodec.multicodecInts.`0xb364` = 0xb364.asInstanceOf[typings.multicodec.multicodecInts.`0xb364`]
     
-    inline def `0xb365`: typings.multicodec.multicodecNumbers.`0xb365` = 0xb365.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb365`]
+    inline def `0xb365`: typings.multicodec.multicodecInts.`0xb365` = 0xb365.asInstanceOf[typings.multicodec.multicodecInts.`0xb365`]
     
-    inline def `0xb366`: typings.multicodec.multicodecNumbers.`0xb366` = 0xb366.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb366`]
+    inline def `0xb366`: typings.multicodec.multicodecInts.`0xb366` = 0xb366.asInstanceOf[typings.multicodec.multicodecInts.`0xb366`]
     
-    inline def `0xb367`: typings.multicodec.multicodecNumbers.`0xb367` = 0xb367.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb367`]
+    inline def `0xb367`: typings.multicodec.multicodecInts.`0xb367` = 0xb367.asInstanceOf[typings.multicodec.multicodecInts.`0xb367`]
     
-    inline def `0xb368`: typings.multicodec.multicodecNumbers.`0xb368` = 0xb368.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb368`]
+    inline def `0xb368`: typings.multicodec.multicodecInts.`0xb368` = 0xb368.asInstanceOf[typings.multicodec.multicodecInts.`0xb368`]
     
-    inline def `0xb369`: typings.multicodec.multicodecNumbers.`0xb369` = 0xb369.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb369`]
+    inline def `0xb369`: typings.multicodec.multicodecInts.`0xb369` = 0xb369.asInstanceOf[typings.multicodec.multicodecInts.`0xb369`]
     
-    inline def `0xb36a`: typings.multicodec.multicodecNumbers.`0xb36a` = 0xb36a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb36a`]
+    inline def `0xb36a`: typings.multicodec.multicodecInts.`0xb36a` = 0xb36a.asInstanceOf[typings.multicodec.multicodecInts.`0xb36a`]
     
-    inline def `0xb36b`: typings.multicodec.multicodecNumbers.`0xb36b` = 0xb36b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb36b`]
+    inline def `0xb36b`: typings.multicodec.multicodecInts.`0xb36b` = 0xb36b.asInstanceOf[typings.multicodec.multicodecInts.`0xb36b`]
     
-    inline def `0xb36c`: typings.multicodec.multicodecNumbers.`0xb36c` = 0xb36c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb36c`]
+    inline def `0xb36c`: typings.multicodec.multicodecInts.`0xb36c` = 0xb36c.asInstanceOf[typings.multicodec.multicodecInts.`0xb36c`]
     
-    inline def `0xb36d`: typings.multicodec.multicodecNumbers.`0xb36d` = 0xb36d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb36d`]
+    inline def `0xb36d`: typings.multicodec.multicodecInts.`0xb36d` = 0xb36d.asInstanceOf[typings.multicodec.multicodecInts.`0xb36d`]
     
-    inline def `0xb36e`: typings.multicodec.multicodecNumbers.`0xb36e` = 0xb36e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb36e`]
+    inline def `0xb36e`: typings.multicodec.multicodecInts.`0xb36e` = 0xb36e.asInstanceOf[typings.multicodec.multicodecInts.`0xb36e`]
     
-    inline def `0xb36f`: typings.multicodec.multicodecNumbers.`0xb36f` = 0xb36f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb36f`]
+    inline def `0xb36f`: typings.multicodec.multicodecInts.`0xb36f` = 0xb36f.asInstanceOf[typings.multicodec.multicodecInts.`0xb36f`]
     
-    inline def `0xb370`: typings.multicodec.multicodecNumbers.`0xb370` = 0xb370.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb370`]
+    inline def `0xb370`: typings.multicodec.multicodecInts.`0xb370` = 0xb370.asInstanceOf[typings.multicodec.multicodecInts.`0xb370`]
     
-    inline def `0xb371`: typings.multicodec.multicodecNumbers.`0xb371` = 0xb371.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb371`]
+    inline def `0xb371`: typings.multicodec.multicodecInts.`0xb371` = 0xb371.asInstanceOf[typings.multicodec.multicodecInts.`0xb371`]
     
-    inline def `0xb372`: typings.multicodec.multicodecNumbers.`0xb372` = 0xb372.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb372`]
+    inline def `0xb372`: typings.multicodec.multicodecInts.`0xb372` = 0xb372.asInstanceOf[typings.multicodec.multicodecInts.`0xb372`]
     
-    inline def `0xb373`: typings.multicodec.multicodecNumbers.`0xb373` = 0xb373.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb373`]
+    inline def `0xb373`: typings.multicodec.multicodecInts.`0xb373` = 0xb373.asInstanceOf[typings.multicodec.multicodecInts.`0xb373`]
     
-    inline def `0xb374`: typings.multicodec.multicodecNumbers.`0xb374` = 0xb374.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb374`]
+    inline def `0xb374`: typings.multicodec.multicodecInts.`0xb374` = 0xb374.asInstanceOf[typings.multicodec.multicodecInts.`0xb374`]
     
-    inline def `0xb375`: typings.multicodec.multicodecNumbers.`0xb375` = 0xb375.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb375`]
+    inline def `0xb375`: typings.multicodec.multicodecInts.`0xb375` = 0xb375.asInstanceOf[typings.multicodec.multicodecInts.`0xb375`]
     
-    inline def `0xb376`: typings.multicodec.multicodecNumbers.`0xb376` = 0xb376.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb376`]
+    inline def `0xb376`: typings.multicodec.multicodecInts.`0xb376` = 0xb376.asInstanceOf[typings.multicodec.multicodecInts.`0xb376`]
     
-    inline def `0xb377`: typings.multicodec.multicodecNumbers.`0xb377` = 0xb377.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb377`]
+    inline def `0xb377`: typings.multicodec.multicodecInts.`0xb377` = 0xb377.asInstanceOf[typings.multicodec.multicodecInts.`0xb377`]
     
-    inline def `0xb378`: typings.multicodec.multicodecNumbers.`0xb378` = 0xb378.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb378`]
+    inline def `0xb378`: typings.multicodec.multicodecInts.`0xb378` = 0xb378.asInstanceOf[typings.multicodec.multicodecInts.`0xb378`]
     
-    inline def `0xb379`: typings.multicodec.multicodecNumbers.`0xb379` = 0xb379.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb379`]
+    inline def `0xb379`: typings.multicodec.multicodecInts.`0xb379` = 0xb379.asInstanceOf[typings.multicodec.multicodecInts.`0xb379`]
     
-    inline def `0xb37a`: typings.multicodec.multicodecNumbers.`0xb37a` = 0xb37a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb37a`]
+    inline def `0xb37a`: typings.multicodec.multicodecInts.`0xb37a` = 0xb37a.asInstanceOf[typings.multicodec.multicodecInts.`0xb37a`]
     
-    inline def `0xb37b`: typings.multicodec.multicodecNumbers.`0xb37b` = 0xb37b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb37b`]
+    inline def `0xb37b`: typings.multicodec.multicodecInts.`0xb37b` = 0xb37b.asInstanceOf[typings.multicodec.multicodecInts.`0xb37b`]
     
-    inline def `0xb37c`: typings.multicodec.multicodecNumbers.`0xb37c` = 0xb37c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb37c`]
+    inline def `0xb37c`: typings.multicodec.multicodecInts.`0xb37c` = 0xb37c.asInstanceOf[typings.multicodec.multicodecInts.`0xb37c`]
     
-    inline def `0xb37d`: typings.multicodec.multicodecNumbers.`0xb37d` = 0xb37d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb37d`]
+    inline def `0xb37d`: typings.multicodec.multicodecInts.`0xb37d` = 0xb37d.asInstanceOf[typings.multicodec.multicodecInts.`0xb37d`]
     
-    inline def `0xb37e`: typings.multicodec.multicodecNumbers.`0xb37e` = 0xb37e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb37e`]
+    inline def `0xb37e`: typings.multicodec.multicodecInts.`0xb37e` = 0xb37e.asInstanceOf[typings.multicodec.multicodecInts.`0xb37e`]
     
-    inline def `0xb37f`: typings.multicodec.multicodecNumbers.`0xb37f` = 0xb37f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb37f`]
+    inline def `0xb37f`: typings.multicodec.multicodecInts.`0xb37f` = 0xb37f.asInstanceOf[typings.multicodec.multicodecInts.`0xb37f`]
     
-    inline def `0xb380`: typings.multicodec.multicodecNumbers.`0xb380` = 0xb380.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb380`]
+    inline def `0xb380`: typings.multicodec.multicodecInts.`0xb380` = 0xb380.asInstanceOf[typings.multicodec.multicodecInts.`0xb380`]
     
-    inline def `0xb381`: typings.multicodec.multicodecNumbers.`0xb381` = 0xb381.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb381`]
+    inline def `0xb381`: typings.multicodec.multicodecInts.`0xb381` = 0xb381.asInstanceOf[typings.multicodec.multicodecInts.`0xb381`]
     
-    inline def `0xb382`: typings.multicodec.multicodecNumbers.`0xb382` = 0xb382.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb382`]
+    inline def `0xb382`: typings.multicodec.multicodecInts.`0xb382` = 0xb382.asInstanceOf[typings.multicodec.multicodecInts.`0xb382`]
     
-    inline def `0xb383`: typings.multicodec.multicodecNumbers.`0xb383` = 0xb383.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb383`]
+    inline def `0xb383`: typings.multicodec.multicodecInts.`0xb383` = 0xb383.asInstanceOf[typings.multicodec.multicodecInts.`0xb383`]
     
-    inline def `0xb384`: typings.multicodec.multicodecNumbers.`0xb384` = 0xb384.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb384`]
+    inline def `0xb384`: typings.multicodec.multicodecInts.`0xb384` = 0xb384.asInstanceOf[typings.multicodec.multicodecInts.`0xb384`]
     
-    inline def `0xb385`: typings.multicodec.multicodecNumbers.`0xb385` = 0xb385.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb385`]
+    inline def `0xb385`: typings.multicodec.multicodecInts.`0xb385` = 0xb385.asInstanceOf[typings.multicodec.multicodecInts.`0xb385`]
     
-    inline def `0xb386`: typings.multicodec.multicodecNumbers.`0xb386` = 0xb386.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb386`]
+    inline def `0xb386`: typings.multicodec.multicodecInts.`0xb386` = 0xb386.asInstanceOf[typings.multicodec.multicodecInts.`0xb386`]
     
-    inline def `0xb387`: typings.multicodec.multicodecNumbers.`0xb387` = 0xb387.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb387`]
+    inline def `0xb387`: typings.multicodec.multicodecInts.`0xb387` = 0xb387.asInstanceOf[typings.multicodec.multicodecInts.`0xb387`]
     
-    inline def `0xb388`: typings.multicodec.multicodecNumbers.`0xb388` = 0xb388.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb388`]
+    inline def `0xb388`: typings.multicodec.multicodecInts.`0xb388` = 0xb388.asInstanceOf[typings.multicodec.multicodecInts.`0xb388`]
     
-    inline def `0xb389`: typings.multicodec.multicodecNumbers.`0xb389` = 0xb389.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb389`]
+    inline def `0xb389`: typings.multicodec.multicodecInts.`0xb389` = 0xb389.asInstanceOf[typings.multicodec.multicodecInts.`0xb389`]
     
-    inline def `0xb38a`: typings.multicodec.multicodecNumbers.`0xb38a` = 0xb38a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb38a`]
+    inline def `0xb38a`: typings.multicodec.multicodecInts.`0xb38a` = 0xb38a.asInstanceOf[typings.multicodec.multicodecInts.`0xb38a`]
     
-    inline def `0xb38b`: typings.multicodec.multicodecNumbers.`0xb38b` = 0xb38b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb38b`]
+    inline def `0xb38b`: typings.multicodec.multicodecInts.`0xb38b` = 0xb38b.asInstanceOf[typings.multicodec.multicodecInts.`0xb38b`]
     
-    inline def `0xb38c`: typings.multicodec.multicodecNumbers.`0xb38c` = 0xb38c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb38c`]
+    inline def `0xb38c`: typings.multicodec.multicodecInts.`0xb38c` = 0xb38c.asInstanceOf[typings.multicodec.multicodecInts.`0xb38c`]
     
-    inline def `0xb38d`: typings.multicodec.multicodecNumbers.`0xb38d` = 0xb38d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb38d`]
+    inline def `0xb38d`: typings.multicodec.multicodecInts.`0xb38d` = 0xb38d.asInstanceOf[typings.multicodec.multicodecInts.`0xb38d`]
     
-    inline def `0xb38e`: typings.multicodec.multicodecNumbers.`0xb38e` = 0xb38e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb38e`]
+    inline def `0xb38e`: typings.multicodec.multicodecInts.`0xb38e` = 0xb38e.asInstanceOf[typings.multicodec.multicodecInts.`0xb38e`]
     
-    inline def `0xb38f`: typings.multicodec.multicodecNumbers.`0xb38f` = 0xb38f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb38f`]
+    inline def `0xb38f`: typings.multicodec.multicodecInts.`0xb38f` = 0xb38f.asInstanceOf[typings.multicodec.multicodecInts.`0xb38f`]
     
-    inline def `0xb390`: typings.multicodec.multicodecNumbers.`0xb390` = 0xb390.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb390`]
+    inline def `0xb390`: typings.multicodec.multicodecInts.`0xb390` = 0xb390.asInstanceOf[typings.multicodec.multicodecInts.`0xb390`]
     
-    inline def `0xb391`: typings.multicodec.multicodecNumbers.`0xb391` = 0xb391.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb391`]
+    inline def `0xb391`: typings.multicodec.multicodecInts.`0xb391` = 0xb391.asInstanceOf[typings.multicodec.multicodecInts.`0xb391`]
     
-    inline def `0xb392`: typings.multicodec.multicodecNumbers.`0xb392` = 0xb392.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb392`]
+    inline def `0xb392`: typings.multicodec.multicodecInts.`0xb392` = 0xb392.asInstanceOf[typings.multicodec.multicodecInts.`0xb392`]
     
-    inline def `0xb393`: typings.multicodec.multicodecNumbers.`0xb393` = 0xb393.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb393`]
+    inline def `0xb393`: typings.multicodec.multicodecInts.`0xb393` = 0xb393.asInstanceOf[typings.multicodec.multicodecInts.`0xb393`]
     
-    inline def `0xb394`: typings.multicodec.multicodecNumbers.`0xb394` = 0xb394.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb394`]
+    inline def `0xb394`: typings.multicodec.multicodecInts.`0xb394` = 0xb394.asInstanceOf[typings.multicodec.multicodecInts.`0xb394`]
     
-    inline def `0xb395`: typings.multicodec.multicodecNumbers.`0xb395` = 0xb395.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb395`]
+    inline def `0xb395`: typings.multicodec.multicodecInts.`0xb395` = 0xb395.asInstanceOf[typings.multicodec.multicodecInts.`0xb395`]
     
-    inline def `0xb396`: typings.multicodec.multicodecNumbers.`0xb396` = 0xb396.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb396`]
+    inline def `0xb396`: typings.multicodec.multicodecInts.`0xb396` = 0xb396.asInstanceOf[typings.multicodec.multicodecInts.`0xb396`]
     
-    inline def `0xb397`: typings.multicodec.multicodecNumbers.`0xb397` = 0xb397.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb397`]
+    inline def `0xb397`: typings.multicodec.multicodecInts.`0xb397` = 0xb397.asInstanceOf[typings.multicodec.multicodecInts.`0xb397`]
     
-    inline def `0xb398`: typings.multicodec.multicodecNumbers.`0xb398` = 0xb398.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb398`]
+    inline def `0xb398`: typings.multicodec.multicodecInts.`0xb398` = 0xb398.asInstanceOf[typings.multicodec.multicodecInts.`0xb398`]
     
-    inline def `0xb399`: typings.multicodec.multicodecNumbers.`0xb399` = 0xb399.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb399`]
+    inline def `0xb399`: typings.multicodec.multicodecInts.`0xb399` = 0xb399.asInstanceOf[typings.multicodec.multicodecInts.`0xb399`]
     
-    inline def `0xb39a`: typings.multicodec.multicodecNumbers.`0xb39a` = 0xb39a.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb39a`]
+    inline def `0xb39a`: typings.multicodec.multicodecInts.`0xb39a` = 0xb39a.asInstanceOf[typings.multicodec.multicodecInts.`0xb39a`]
     
-    inline def `0xb39b`: typings.multicodec.multicodecNumbers.`0xb39b` = 0xb39b.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb39b`]
+    inline def `0xb39b`: typings.multicodec.multicodecInts.`0xb39b` = 0xb39b.asInstanceOf[typings.multicodec.multicodecInts.`0xb39b`]
     
-    inline def `0xb39c`: typings.multicodec.multicodecNumbers.`0xb39c` = 0xb39c.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb39c`]
+    inline def `0xb39c`: typings.multicodec.multicodecInts.`0xb39c` = 0xb39c.asInstanceOf[typings.multicodec.multicodecInts.`0xb39c`]
     
-    inline def `0xb39d`: typings.multicodec.multicodecNumbers.`0xb39d` = 0xb39d.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb39d`]
+    inline def `0xb39d`: typings.multicodec.multicodecInts.`0xb39d` = 0xb39d.asInstanceOf[typings.multicodec.multicodecInts.`0xb39d`]
     
-    inline def `0xb39e`: typings.multicodec.multicodecNumbers.`0xb39e` = 0xb39e.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb39e`]
+    inline def `0xb39e`: typings.multicodec.multicodecInts.`0xb39e` = 0xb39e.asInstanceOf[typings.multicodec.multicodecInts.`0xb39e`]
     
-    inline def `0xb39f`: typings.multicodec.multicodecNumbers.`0xb39f` = 0xb39f.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb39f`]
+    inline def `0xb39f`: typings.multicodec.multicodecInts.`0xb39f` = 0xb39f.asInstanceOf[typings.multicodec.multicodecInts.`0xb39f`]
     
-    inline def `0xb3a0`: typings.multicodec.multicodecNumbers.`0xb3a0` = 0xb3a0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a0`]
+    inline def `0xb3a0`: typings.multicodec.multicodecInts.`0xb3a0` = 0xb3a0.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a0`]
     
-    inline def `0xb3a1`: typings.multicodec.multicodecNumbers.`0xb3a1` = 0xb3a1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a1`]
+    inline def `0xb3a1`: typings.multicodec.multicodecInts.`0xb3a1` = 0xb3a1.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a1`]
     
-    inline def `0xb3a2`: typings.multicodec.multicodecNumbers.`0xb3a2` = 0xb3a2.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a2`]
+    inline def `0xb3a2`: typings.multicodec.multicodecInts.`0xb3a2` = 0xb3a2.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a2`]
     
-    inline def `0xb3a3`: typings.multicodec.multicodecNumbers.`0xb3a3` = 0xb3a3.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a3`]
+    inline def `0xb3a3`: typings.multicodec.multicodecInts.`0xb3a3` = 0xb3a3.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a3`]
     
-    inline def `0xb3a4`: typings.multicodec.multicodecNumbers.`0xb3a4` = 0xb3a4.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a4`]
+    inline def `0xb3a4`: typings.multicodec.multicodecInts.`0xb3a4` = 0xb3a4.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a4`]
     
-    inline def `0xb3a5`: typings.multicodec.multicodecNumbers.`0xb3a5` = 0xb3a5.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a5`]
+    inline def `0xb3a5`: typings.multicodec.multicodecInts.`0xb3a5` = 0xb3a5.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a5`]
     
-    inline def `0xb3a6`: typings.multicodec.multicodecNumbers.`0xb3a6` = 0xb3a6.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a6`]
+    inline def `0xb3a6`: typings.multicodec.multicodecInts.`0xb3a6` = 0xb3a6.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a6`]
     
-    inline def `0xb3a7`: typings.multicodec.multicodecNumbers.`0xb3a7` = 0xb3a7.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a7`]
+    inline def `0xb3a7`: typings.multicodec.multicodecInts.`0xb3a7` = 0xb3a7.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a7`]
     
-    inline def `0xb3a8`: typings.multicodec.multicodecNumbers.`0xb3a8` = 0xb3a8.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a8`]
+    inline def `0xb3a8`: typings.multicodec.multicodecInts.`0xb3a8` = 0xb3a8.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a8`]
     
-    inline def `0xb3a9`: typings.multicodec.multicodecNumbers.`0xb3a9` = 0xb3a9.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3a9`]
+    inline def `0xb3a9`: typings.multicodec.multicodecInts.`0xb3a9` = 0xb3a9.asInstanceOf[typings.multicodec.multicodecInts.`0xb3a9`]
     
-    inline def `0xb3aa`: typings.multicodec.multicodecNumbers.`0xb3aa` = 0xb3aa.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3aa`]
+    inline def `0xb3aa`: typings.multicodec.multicodecInts.`0xb3aa` = 0xb3aa.asInstanceOf[typings.multicodec.multicodecInts.`0xb3aa`]
     
-    inline def `0xb3ab`: typings.multicodec.multicodecNumbers.`0xb3ab` = 0xb3ab.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3ab`]
+    inline def `0xb3ab`: typings.multicodec.multicodecInts.`0xb3ab` = 0xb3ab.asInstanceOf[typings.multicodec.multicodecInts.`0xb3ab`]
     
-    inline def `0xb3ac`: typings.multicodec.multicodecNumbers.`0xb3ac` = 0xb3ac.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3ac`]
+    inline def `0xb3ac`: typings.multicodec.multicodecInts.`0xb3ac` = 0xb3ac.asInstanceOf[typings.multicodec.multicodecInts.`0xb3ac`]
     
-    inline def `0xb3ad`: typings.multicodec.multicodecNumbers.`0xb3ad` = 0xb3ad.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3ad`]
+    inline def `0xb3ad`: typings.multicodec.multicodecInts.`0xb3ad` = 0xb3ad.asInstanceOf[typings.multicodec.multicodecInts.`0xb3ad`]
     
-    inline def `0xb3ae`: typings.multicodec.multicodecNumbers.`0xb3ae` = 0xb3ae.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3ae`]
+    inline def `0xb3ae`: typings.multicodec.multicodecInts.`0xb3ae` = 0xb3ae.asInstanceOf[typings.multicodec.multicodecInts.`0xb3ae`]
     
-    inline def `0xb3af`: typings.multicodec.multicodecNumbers.`0xb3af` = 0xb3af.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3af`]
+    inline def `0xb3af`: typings.multicodec.multicodecInts.`0xb3af` = 0xb3af.asInstanceOf[typings.multicodec.multicodecInts.`0xb3af`]
     
-    inline def `0xb3b0`: typings.multicodec.multicodecNumbers.`0xb3b0` = 0xb3b0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b0`]
+    inline def `0xb3b0`: typings.multicodec.multicodecInts.`0xb3b0` = 0xb3b0.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b0`]
     
-    inline def `0xb3b1`: typings.multicodec.multicodecNumbers.`0xb3b1` = 0xb3b1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b1`]
+    inline def `0xb3b1`: typings.multicodec.multicodecInts.`0xb3b1` = 0xb3b1.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b1`]
     
-    inline def `0xb3b2`: typings.multicodec.multicodecNumbers.`0xb3b2` = 0xb3b2.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b2`]
+    inline def `0xb3b2`: typings.multicodec.multicodecInts.`0xb3b2` = 0xb3b2.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b2`]
     
-    inline def `0xb3b3`: typings.multicodec.multicodecNumbers.`0xb3b3` = 0xb3b3.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b3`]
+    inline def `0xb3b3`: typings.multicodec.multicodecInts.`0xb3b3` = 0xb3b3.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b3`]
     
-    inline def `0xb3b4`: typings.multicodec.multicodecNumbers.`0xb3b4` = 0xb3b4.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b4`]
+    inline def `0xb3b4`: typings.multicodec.multicodecInts.`0xb3b4` = 0xb3b4.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b4`]
     
-    inline def `0xb3b5`: typings.multicodec.multicodecNumbers.`0xb3b5` = 0xb3b5.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b5`]
+    inline def `0xb3b5`: typings.multicodec.multicodecInts.`0xb3b5` = 0xb3b5.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b5`]
     
-    inline def `0xb3b6`: typings.multicodec.multicodecNumbers.`0xb3b6` = 0xb3b6.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b6`]
+    inline def `0xb3b6`: typings.multicodec.multicodecInts.`0xb3b6` = 0xb3b6.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b6`]
     
-    inline def `0xb3b7`: typings.multicodec.multicodecNumbers.`0xb3b7` = 0xb3b7.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b7`]
+    inline def `0xb3b7`: typings.multicodec.multicodecInts.`0xb3b7` = 0xb3b7.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b7`]
     
-    inline def `0xb3b8`: typings.multicodec.multicodecNumbers.`0xb3b8` = 0xb3b8.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b8`]
+    inline def `0xb3b8`: typings.multicodec.multicodecInts.`0xb3b8` = 0xb3b8.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b8`]
     
-    inline def `0xb3b9`: typings.multicodec.multicodecNumbers.`0xb3b9` = 0xb3b9.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3b9`]
+    inline def `0xb3b9`: typings.multicodec.multicodecInts.`0xb3b9` = 0xb3b9.asInstanceOf[typings.multicodec.multicodecInts.`0xb3b9`]
     
-    inline def `0xb3ba`: typings.multicodec.multicodecNumbers.`0xb3ba` = 0xb3ba.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3ba`]
+    inline def `0xb3ba`: typings.multicodec.multicodecInts.`0xb3ba` = 0xb3ba.asInstanceOf[typings.multicodec.multicodecInts.`0xb3ba`]
     
-    inline def `0xb3bb`: typings.multicodec.multicodecNumbers.`0xb3bb` = 0xb3bb.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3bb`]
+    inline def `0xb3bb`: typings.multicodec.multicodecInts.`0xb3bb` = 0xb3bb.asInstanceOf[typings.multicodec.multicodecInts.`0xb3bb`]
     
-    inline def `0xb3bc`: typings.multicodec.multicodecNumbers.`0xb3bc` = 0xb3bc.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3bc`]
+    inline def `0xb3bc`: typings.multicodec.multicodecInts.`0xb3bc` = 0xb3bc.asInstanceOf[typings.multicodec.multicodecInts.`0xb3bc`]
     
-    inline def `0xb3bd`: typings.multicodec.multicodecNumbers.`0xb3bd` = 0xb3bd.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3bd`]
+    inline def `0xb3bd`: typings.multicodec.multicodecInts.`0xb3bd` = 0xb3bd.asInstanceOf[typings.multicodec.multicodecInts.`0xb3bd`]
     
-    inline def `0xb3be`: typings.multicodec.multicodecNumbers.`0xb3be` = 0xb3be.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3be`]
+    inline def `0xb3be`: typings.multicodec.multicodecInts.`0xb3be` = 0xb3be.asInstanceOf[typings.multicodec.multicodecInts.`0xb3be`]
     
-    inline def `0xb3bf`: typings.multicodec.multicodecNumbers.`0xb3bf` = 0xb3bf.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3bf`]
+    inline def `0xb3bf`: typings.multicodec.multicodecInts.`0xb3bf` = 0xb3bf.asInstanceOf[typings.multicodec.multicodecInts.`0xb3bf`]
     
-    inline def `0xb3c0`: typings.multicodec.multicodecNumbers.`0xb3c0` = 0xb3c0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c0`]
+    inline def `0xb3c0`: typings.multicodec.multicodecInts.`0xb3c0` = 0xb3c0.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c0`]
     
-    inline def `0xb3c1`: typings.multicodec.multicodecNumbers.`0xb3c1` = 0xb3c1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c1`]
+    inline def `0xb3c1`: typings.multicodec.multicodecInts.`0xb3c1` = 0xb3c1.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c1`]
     
-    inline def `0xb3c2`: typings.multicodec.multicodecNumbers.`0xb3c2` = 0xb3c2.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c2`]
+    inline def `0xb3c2`: typings.multicodec.multicodecInts.`0xb3c2` = 0xb3c2.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c2`]
     
-    inline def `0xb3c3`: typings.multicodec.multicodecNumbers.`0xb3c3` = 0xb3c3.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c3`]
+    inline def `0xb3c3`: typings.multicodec.multicodecInts.`0xb3c3` = 0xb3c3.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c3`]
     
-    inline def `0xb3c4`: typings.multicodec.multicodecNumbers.`0xb3c4` = 0xb3c4.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c4`]
+    inline def `0xb3c4`: typings.multicodec.multicodecInts.`0xb3c4` = 0xb3c4.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c4`]
     
-    inline def `0xb3c5`: typings.multicodec.multicodecNumbers.`0xb3c5` = 0xb3c5.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c5`]
+    inline def `0xb3c5`: typings.multicodec.multicodecInts.`0xb3c5` = 0xb3c5.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c5`]
     
-    inline def `0xb3c6`: typings.multicodec.multicodecNumbers.`0xb3c6` = 0xb3c6.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c6`]
+    inline def `0xb3c6`: typings.multicodec.multicodecInts.`0xb3c6` = 0xb3c6.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c6`]
     
-    inline def `0xb3c7`: typings.multicodec.multicodecNumbers.`0xb3c7` = 0xb3c7.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c7`]
+    inline def `0xb3c7`: typings.multicodec.multicodecInts.`0xb3c7` = 0xb3c7.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c7`]
     
-    inline def `0xb3c8`: typings.multicodec.multicodecNumbers.`0xb3c8` = 0xb3c8.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c8`]
+    inline def `0xb3c8`: typings.multicodec.multicodecInts.`0xb3c8` = 0xb3c8.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c8`]
     
-    inline def `0xb3c9`: typings.multicodec.multicodecNumbers.`0xb3c9` = 0xb3c9.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3c9`]
+    inline def `0xb3c9`: typings.multicodec.multicodecInts.`0xb3c9` = 0xb3c9.asInstanceOf[typings.multicodec.multicodecInts.`0xb3c9`]
     
-    inline def `0xb3ca`: typings.multicodec.multicodecNumbers.`0xb3ca` = 0xb3ca.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3ca`]
+    inline def `0xb3ca`: typings.multicodec.multicodecInts.`0xb3ca` = 0xb3ca.asInstanceOf[typings.multicodec.multicodecInts.`0xb3ca`]
     
-    inline def `0xb3cb`: typings.multicodec.multicodecNumbers.`0xb3cb` = 0xb3cb.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3cb`]
+    inline def `0xb3cb`: typings.multicodec.multicodecInts.`0xb3cb` = 0xb3cb.asInstanceOf[typings.multicodec.multicodecInts.`0xb3cb`]
     
-    inline def `0xb3cc`: typings.multicodec.multicodecNumbers.`0xb3cc` = 0xb3cc.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3cc`]
+    inline def `0xb3cc`: typings.multicodec.multicodecInts.`0xb3cc` = 0xb3cc.asInstanceOf[typings.multicodec.multicodecInts.`0xb3cc`]
     
-    inline def `0xb3cd`: typings.multicodec.multicodecNumbers.`0xb3cd` = 0xb3cd.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3cd`]
+    inline def `0xb3cd`: typings.multicodec.multicodecInts.`0xb3cd` = 0xb3cd.asInstanceOf[typings.multicodec.multicodecInts.`0xb3cd`]
     
-    inline def `0xb3ce`: typings.multicodec.multicodecNumbers.`0xb3ce` = 0xb3ce.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3ce`]
+    inline def `0xb3ce`: typings.multicodec.multicodecInts.`0xb3ce` = 0xb3ce.asInstanceOf[typings.multicodec.multicodecInts.`0xb3ce`]
     
-    inline def `0xb3cf`: typings.multicodec.multicodecNumbers.`0xb3cf` = 0xb3cf.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3cf`]
+    inline def `0xb3cf`: typings.multicodec.multicodecInts.`0xb3cf` = 0xb3cf.asInstanceOf[typings.multicodec.multicodecInts.`0xb3cf`]
     
-    inline def `0xb3d0`: typings.multicodec.multicodecNumbers.`0xb3d0` = 0xb3d0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d0`]
+    inline def `0xb3d0`: typings.multicodec.multicodecInts.`0xb3d0` = 0xb3d0.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d0`]
     
-    inline def `0xb3d1`: typings.multicodec.multicodecNumbers.`0xb3d1` = 0xb3d1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d1`]
+    inline def `0xb3d1`: typings.multicodec.multicodecInts.`0xb3d1` = 0xb3d1.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d1`]
     
-    inline def `0xb3d2`: typings.multicodec.multicodecNumbers.`0xb3d2` = 0xb3d2.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d2`]
+    inline def `0xb3d2`: typings.multicodec.multicodecInts.`0xb3d2` = 0xb3d2.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d2`]
     
-    inline def `0xb3d3`: typings.multicodec.multicodecNumbers.`0xb3d3` = 0xb3d3.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d3`]
+    inline def `0xb3d3`: typings.multicodec.multicodecInts.`0xb3d3` = 0xb3d3.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d3`]
     
-    inline def `0xb3d4`: typings.multicodec.multicodecNumbers.`0xb3d4` = 0xb3d4.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d4`]
+    inline def `0xb3d4`: typings.multicodec.multicodecInts.`0xb3d4` = 0xb3d4.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d4`]
     
-    inline def `0xb3d5`: typings.multicodec.multicodecNumbers.`0xb3d5` = 0xb3d5.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d5`]
+    inline def `0xb3d5`: typings.multicodec.multicodecInts.`0xb3d5` = 0xb3d5.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d5`]
     
-    inline def `0xb3d6`: typings.multicodec.multicodecNumbers.`0xb3d6` = 0xb3d6.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d6`]
+    inline def `0xb3d6`: typings.multicodec.multicodecInts.`0xb3d6` = 0xb3d6.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d6`]
     
-    inline def `0xb3d7`: typings.multicodec.multicodecNumbers.`0xb3d7` = 0xb3d7.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d7`]
+    inline def `0xb3d7`: typings.multicodec.multicodecInts.`0xb3d7` = 0xb3d7.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d7`]
     
-    inline def `0xb3d8`: typings.multicodec.multicodecNumbers.`0xb3d8` = 0xb3d8.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d8`]
+    inline def `0xb3d8`: typings.multicodec.multicodecInts.`0xb3d8` = 0xb3d8.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d8`]
     
-    inline def `0xb3d9`: typings.multicodec.multicodecNumbers.`0xb3d9` = 0xb3d9.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3d9`]
+    inline def `0xb3d9`: typings.multicodec.multicodecInts.`0xb3d9` = 0xb3d9.asInstanceOf[typings.multicodec.multicodecInts.`0xb3d9`]
     
-    inline def `0xb3da`: typings.multicodec.multicodecNumbers.`0xb3da` = 0xb3da.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3da`]
+    inline def `0xb3da`: typings.multicodec.multicodecInts.`0xb3da` = 0xb3da.asInstanceOf[typings.multicodec.multicodecInts.`0xb3da`]
     
-    inline def `0xb3db`: typings.multicodec.multicodecNumbers.`0xb3db` = 0xb3db.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3db`]
+    inline def `0xb3db`: typings.multicodec.multicodecInts.`0xb3db` = 0xb3db.asInstanceOf[typings.multicodec.multicodecInts.`0xb3db`]
     
-    inline def `0xb3dc`: typings.multicodec.multicodecNumbers.`0xb3dc` = 0xb3dc.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3dc`]
+    inline def `0xb3dc`: typings.multicodec.multicodecInts.`0xb3dc` = 0xb3dc.asInstanceOf[typings.multicodec.multicodecInts.`0xb3dc`]
     
-    inline def `0xb3dd`: typings.multicodec.multicodecNumbers.`0xb3dd` = 0xb3dd.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3dd`]
+    inline def `0xb3dd`: typings.multicodec.multicodecInts.`0xb3dd` = 0xb3dd.asInstanceOf[typings.multicodec.multicodecInts.`0xb3dd`]
     
-    inline def `0xb3de`: typings.multicodec.multicodecNumbers.`0xb3de` = 0xb3de.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3de`]
+    inline def `0xb3de`: typings.multicodec.multicodecInts.`0xb3de` = 0xb3de.asInstanceOf[typings.multicodec.multicodecInts.`0xb3de`]
     
-    inline def `0xb3df`: typings.multicodec.multicodecNumbers.`0xb3df` = 0xb3df.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3df`]
+    inline def `0xb3df`: typings.multicodec.multicodecInts.`0xb3df` = 0xb3df.asInstanceOf[typings.multicodec.multicodecInts.`0xb3df`]
     
-    inline def `0xb3e0`: typings.multicodec.multicodecNumbers.`0xb3e0` = 0xb3e0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb3e0`]
+    inline def `0xb3e0`: typings.multicodec.multicodecInts.`0xb3e0` = 0xb3e0.asInstanceOf[typings.multicodec.multicodecInts.`0xb3e0`]
     
-    inline def `0xb401`: typings.multicodec.multicodecNumbers.`0xb401` = 0xb401.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb401`]
+    inline def `0xb401`: typings.multicodec.multicodecInts.`0xb401` = 0xb401.asInstanceOf[typings.multicodec.multicodecInts.`0xb401`]
     
-    inline def `0xb402`: typings.multicodec.multicodecNumbers.`0xb402` = 0xb402.asInstanceOf[typings.multicodec.multicodecNumbers.`0xb402`]
+    inline def `0xb402`: typings.multicodec.multicodecInts.`0xb402` = 0xb402.asInstanceOf[typings.multicodec.multicodecInts.`0xb402`]
     
-    inline def `0xc0`: typings.multicodec.multicodecNumbers.`0xc0` = 0xc0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xc0`]
+    inline def `0xc0`: typings.multicodec.multicodecInts.`0xc0` = 0xc0.asInstanceOf[typings.multicodec.multicodecInts.`0xc0`]
     
-    inline def `0xc1`: typings.multicodec.multicodecNumbers.`0xc1` = 0xc1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xc1`]
+    inline def `0xc1`: typings.multicodec.multicodecInts.`0xc1` = 0xc1.asInstanceOf[typings.multicodec.multicodecInts.`0xc1`]
     
-    inline def `0xca`: typings.multicodec.multicodecNumbers.`0xca` = 0xca.asInstanceOf[typings.multicodec.multicodecNumbers.`0xca`]
+    inline def `0xca`: typings.multicodec.multicodecInts.`0xca` = 0xca.asInstanceOf[typings.multicodec.multicodecInts.`0xca`]
     
-    inline def `0xce`: typings.multicodec.multicodecNumbers.`0xce` = 0xce.asInstanceOf[typings.multicodec.multicodecNumbers.`0xce`]
+    inline def `0xce`: typings.multicodec.multicodecInts.`0xce` = 0xce.asInstanceOf[typings.multicodec.multicodecInts.`0xce`]
     
-    inline def `0xce11`: typings.multicodec.multicodecNumbers.`0xce11` = 0xce11.asInstanceOf[typings.multicodec.multicodecNumbers.`0xce11`]
+    inline def `0xce11`: typings.multicodec.multicodecInts.`0xce11` = 0xce11.asInstanceOf[typings.multicodec.multicodecInts.`0xce11`]
     
-    inline def `0xd0`: typings.multicodec.multicodecNumbers.`0xd0` = 0xd0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xd0`]
+    inline def `0xd0`: typings.multicodec.multicodecInts.`0xd0` = 0xd0.asInstanceOf[typings.multicodec.multicodecInts.`0xd0`]
     
-    inline def `0xd1`: typings.multicodec.multicodecNumbers.`0xd1` = 0xd1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xd1`]
+    inline def `0xd1`: typings.multicodec.multicodecInts.`0xd1` = 0xd1.asInstanceOf[typings.multicodec.multicodecInts.`0xd1`]
     
-    inline def `0xd4`: typings.multicodec.multicodecNumbers.`0xd4` = 0xd4.asInstanceOf[typings.multicodec.multicodecNumbers.`0xd4`]
+    inline def `0xd4`: typings.multicodec.multicodecInts.`0xd4` = 0xd4.asInstanceOf[typings.multicodec.multicodecInts.`0xd4`]
     
-    inline def `0xd5`: typings.multicodec.multicodecNumbers.`0xd5` = 0xd5.asInstanceOf[typings.multicodec.multicodecNumbers.`0xd5`]
+    inline def `0xd5`: typings.multicodec.multicodecInts.`0xd5` = 0xd5.asInstanceOf[typings.multicodec.multicodecInts.`0xd5`]
     
-    inline def `0xd6`: typings.multicodec.multicodecNumbers.`0xd6` = 0xd6.asInstanceOf[typings.multicodec.multicodecNumbers.`0xd6`]
+    inline def `0xd6`: typings.multicodec.multicodecInts.`0xd6` = 0xd6.asInstanceOf[typings.multicodec.multicodecInts.`0xd6`]
     
-    inline def `0xe0`: typings.multicodec.multicodecNumbers.`0xe0` = 0xe0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe0`]
+    inline def `0xe0`: typings.multicodec.multicodecInts.`0xe0` = 0xe0.asInstanceOf[typings.multicodec.multicodecInts.`0xe0`]
     
-    inline def `0xe1`: typings.multicodec.multicodecNumbers.`0xe1` = 0xe1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe1`]
+    inline def `0xe1`: typings.multicodec.multicodecInts.`0xe1` = 0xe1.asInstanceOf[typings.multicodec.multicodecInts.`0xe1`]
     
-    inline def `0xe2`: typings.multicodec.multicodecNumbers.`0xe2` = 0xe2.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe2`]
+    inline def `0xe2`: typings.multicodec.multicodecInts.`0xe2` = 0xe2.asInstanceOf[typings.multicodec.multicodecInts.`0xe2`]
     
-    inline def `0xe3`: typings.multicodec.multicodecNumbers.`0xe3` = 0xe3.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe3`]
+    inline def `0xe3`: typings.multicodec.multicodecInts.`0xe3` = 0xe3.asInstanceOf[typings.multicodec.multicodecInts.`0xe3`]
     
-    inline def `0xe4`: typings.multicodec.multicodecNumbers.`0xe4` = 0xe4.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe4`]
+    inline def `0xe4`: typings.multicodec.multicodecInts.`0xe4` = 0xe4.asInstanceOf[typings.multicodec.multicodecInts.`0xe4`]
     
-    inline def `0xe5`: typings.multicodec.multicodecNumbers.`0xe5` = 0xe5.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe5`]
+    inline def `0xe5`: typings.multicodec.multicodecInts.`0xe5` = 0xe5.asInstanceOf[typings.multicodec.multicodecInts.`0xe5`]
     
-    inline def `0xe6`: typings.multicodec.multicodecNumbers.`0xe6` = 0xe6.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe6`]
+    inline def `0xe6`: typings.multicodec.multicodecInts.`0xe6` = 0xe6.asInstanceOf[typings.multicodec.multicodecInts.`0xe6`]
     
-    inline def `0xe7`: typings.multicodec.multicodecNumbers.`0xe7` = 0xe7.asInstanceOf[typings.multicodec.multicodecNumbers.`0xe7`]
+    inline def `0xe7`: typings.multicodec.multicodecInts.`0xe7` = 0xe7.asInstanceOf[typings.multicodec.multicodecInts.`0xe7`]
     
-    inline def `0xea`: typings.multicodec.multicodecNumbers.`0xea` = 0xea.asInstanceOf[typings.multicodec.multicodecNumbers.`0xea`]
+    inline def `0xea`: typings.multicodec.multicodecInts.`0xea` = 0xea.asInstanceOf[typings.multicodec.multicodecInts.`0xea`]
     
-    inline def `0xeb`: typings.multicodec.multicodecNumbers.`0xeb` = 0xeb.asInstanceOf[typings.multicodec.multicodecNumbers.`0xeb`]
+    inline def `0xeb`: typings.multicodec.multicodecInts.`0xeb` = 0xeb.asInstanceOf[typings.multicodec.multicodecInts.`0xeb`]
     
-    inline def `0xec`: typings.multicodec.multicodecNumbers.`0xec` = 0xec.asInstanceOf[typings.multicodec.multicodecNumbers.`0xec`]
+    inline def `0xec`: typings.multicodec.multicodecInts.`0xec` = 0xec.asInstanceOf[typings.multicodec.multicodecInts.`0xec`]
     
-    inline def `0xed`: typings.multicodec.multicodecNumbers.`0xed` = 0xed.asInstanceOf[typings.multicodec.multicodecNumbers.`0xed`]
+    inline def `0xed`: typings.multicodec.multicodecInts.`0xed` = 0xed.asInstanceOf[typings.multicodec.multicodecInts.`0xed`]
     
-    inline def `0xee`: typings.multicodec.multicodecNumbers.`0xee` = 0xee.asInstanceOf[typings.multicodec.multicodecNumbers.`0xee`]
+    inline def `0xee`: typings.multicodec.multicodecInts.`0xee` = 0xee.asInstanceOf[typings.multicodec.multicodecInts.`0xee`]
     
-    inline def `0xf0`: typings.multicodec.multicodecNumbers.`0xf0` = 0xf0.asInstanceOf[typings.multicodec.multicodecNumbers.`0xf0`]
+    inline def `0xf0`: typings.multicodec.multicodecInts.`0xf0` = 0xf0.asInstanceOf[typings.multicodec.multicodecInts.`0xf0`]
     
-    inline def `0xf1`: typings.multicodec.multicodecNumbers.`0xf1` = 0xf1.asInstanceOf[typings.multicodec.multicodecNumbers.`0xf1`]
+    inline def `0xf1`: typings.multicodec.multicodecInts.`0xf1` = 0xf1.asInstanceOf[typings.multicodec.multicodecInts.`0xf1`]
     
-    inline def `0xf101`: typings.multicodec.multicodecNumbers.`0xf101` = 0xf101.asInstanceOf[typings.multicodec.multicodecNumbers.`0xf101`]
+    inline def `0xf101`: typings.multicodec.multicodecInts.`0xf101` = 0xf101.asInstanceOf[typings.multicodec.multicodecInts.`0xf101`]
     
-    inline def `0xf102`: typings.multicodec.multicodecNumbers.`0xf102` = 0xf102.asInstanceOf[typings.multicodec.multicodecNumbers.`0xf102`]
+    inline def `0xf102`: typings.multicodec.multicodecInts.`0xf102` = 0xf102.asInstanceOf[typings.multicodec.multicodecInts.`0xf102`]
     
-    inline def `0xfa`: typings.multicodec.multicodecNumbers.`0xfa` = 0xfa.asInstanceOf[typings.multicodec.multicodecNumbers.`0xfa`]
+    inline def `0xfa`: typings.multicodec.multicodecInts.`0xfa` = 0xfa.asInstanceOf[typings.multicodec.multicodecInts.`0xfa`]
     
-    inline def `0xfb`: typings.multicodec.multicodecNumbers.`0xfb` = 0xfb.asInstanceOf[typings.multicodec.multicodecNumbers.`0xfb`]
+    inline def `0xfb`: typings.multicodec.multicodecInts.`0xfb` = 0xfb.asInstanceOf[typings.multicodec.multicodecInts.`0xfb`]
   }
   
   /* Rewritten from type alias, can be one of: 

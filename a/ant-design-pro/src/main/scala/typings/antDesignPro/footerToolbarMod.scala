@@ -11,10 +11,9 @@ object footerToolbarMod {
   
   @JSImport("ant-design-pro/lib/FooterToolbar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FooterToolbarProps, js.Any, js.Any]
+  open class default () extends Component[FooterToolbarProps, Any, Any]
   
-  type FooterToolbar = Component[FooterToolbarProps, js.Any, js.Any]
+  type FooterToolbar = Component[FooterToolbarProps, Any, Any]
   
   trait FooterToolbarProps extends StObject {
     

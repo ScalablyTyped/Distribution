@@ -12,7 +12,7 @@ trait LimitClauseNode
   
   var count: js.Array[AstNode]
   
-  var name: KeywordNode
+  var limitKw: KeywordNode
   
   var offset: js.UndefOr[js.Array[AstNode]] = js.undefined
   
@@ -20,8 +20,8 @@ trait LimitClauseNode
 }
 object LimitClauseNode {
   
-  inline def apply(count: js.Array[AstNode], name: KeywordNode, `type`: limit_clause): LimitClauseNode = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(count: js.Array[AstNode], limitKw: KeywordNode, `type`: limit_clause): LimitClauseNode = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], limitKw = limitKw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimitClauseNode]
   }
@@ -32,7 +32,7 @@ object LimitClauseNode {
     
     inline def setCountVarargs(value: AstNode*): Self = StObject.set(x, "count", js.Array(value*))
     
-    inline def setName(value: KeywordNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setLimitKw(value: KeywordNode): Self = StObject.set(x, "limitKw", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: js.Array[AstNode]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

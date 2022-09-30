@@ -70,6 +70,11 @@ trait OnsPopoverElement
   def show(target: Any, options: PopoverOptions): js.Promise[HTMLElement] = js.native
   
   /**
+    * @description Specifies the ID of the default element for the popover.
+    */
+  var target: String = js.native
+  
+  /**
     * @description Whether the dialog is visible or not.
     */
   var visible: Boolean = js.native

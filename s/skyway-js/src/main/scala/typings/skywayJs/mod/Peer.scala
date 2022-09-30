@@ -41,7 +41,7 @@ trait Peer extends EventEmitter {
   def joinRoom[T /* <: Room */](roomName: String, options: RoomOption): T = js.native
   def joinRoom[T /* <: Room */, Options /* <: RoomOption */](roomName: String, options: Options): SfuRoom | MeshRoom = js.native
   @JSName("joinRoom")
-  def joinRoom_T_RoomOptions_RoomOption_Union[T /* <: Room */, Options /* <: RoomOption */](roomName: String): SfuRoom | MeshRoom = js.native
+  def joinRoom_TOptions_Union[T /* <: Room */, Options /* <: RoomOption */](roomName: String): SfuRoom | MeshRoom = js.native
   
   def listAllPeers(callback: js.Function1[/* peers */ js.Array[String], Unit]): Unit = js.native
   

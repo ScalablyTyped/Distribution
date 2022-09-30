@@ -1,14 +1,7 @@
 package typings.onionoo
 
-import typings.got.mod.GotPromise
-import typings.onionoo.mod.Onionoo.Bandwidth
-import typings.onionoo.mod.Onionoo.Clients
-import typings.onionoo.mod.Onionoo.Details
 import typings.onionoo.mod.Onionoo.Histogram
 import typings.onionoo.mod.Onionoo.QueryParameters
-import typings.onionoo.mod.Onionoo.Summary
-import typings.onionoo.mod.Onionoo.Uptime
-import typings.onionoo.mod.Onionoo.Weights
 import typings.onionoo.onionooStrings.bandwidth
 import typings.onionoo.onionooStrings.clients
 import typings.onionoo.onionooStrings.details
@@ -40,13 +33,13 @@ object anon {
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value*))
       
       inline def setReject(value: js.Array[String]): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
       
       inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
       
-      inline def setRejectVarargs(value: String*): Self = StObject.set(x, "reject", js.Array(value :_*))
+      inline def setRejectVarargs(value: String*): Self = StObject.set(x, "reject", js.Array(value*))
     }
   }
   
@@ -54,42 +47,72 @@ object anon {
   @js.native
   trait InstancePartialEndpoints extends StObject {
     
-    var bandwidth: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Bandwidth]]] = js.native
+    var bandwidth: js.UndefOr[
+        js.Function1[
+          /* query */ js.UndefOr[QueryParameters], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GotPromise<Bandwidth> */ Any
+        ]
+      ] = js.native
     
-    var clients: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Clients]]] = js.native
+    var clients: js.UndefOr[
+        js.Function1[
+          /* query */ js.UndefOr[QueryParameters], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GotPromise<Clients> */ Any
+        ]
+      ] = js.native
     
-    var details: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Details]]] = js.native
+    var details: js.UndefOr[
+        js.Function1[
+          /* query */ js.UndefOr[QueryParameters], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GotPromise<Details> */ Any
+        ]
+      ] = js.native
     
     @JSName("get")
-    def get_bandwidth(endpoint: bandwidth): GotPromise[Bandwidth] = js.native
+    def get_bandwidth(endpoint: bandwidth): Any = js.native
     @JSName("get")
-    def get_bandwidth(endpoint: bandwidth, query: QueryParameters): GotPromise[Bandwidth] = js.native
+    def get_bandwidth(endpoint: bandwidth, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_clients(endpoint: clients): GotPromise[Clients] = js.native
+    def get_clients(endpoint: clients): Any = js.native
     @JSName("get")
-    def get_clients(endpoint: clients, query: QueryParameters): GotPromise[Clients] = js.native
+    def get_clients(endpoint: clients, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_details(endpoint: details): GotPromise[Details] = js.native
+    def get_details(endpoint: details): Any = js.native
     @JSName("get")
-    def get_details(endpoint: details, query: QueryParameters): GotPromise[Details] = js.native
+    def get_details(endpoint: details, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_summary(endpoint: summary): GotPromise[Summary] = js.native
+    def get_summary(endpoint: summary): Any = js.native
     @JSName("get")
-    def get_summary(endpoint: summary, query: QueryParameters): GotPromise[Summary] = js.native
+    def get_summary(endpoint: summary, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_uptime(endpoint: uptime): GotPromise[Uptime] = js.native
+    def get_uptime(endpoint: uptime): Any = js.native
     @JSName("get")
-    def get_uptime(endpoint: uptime, query: QueryParameters): GotPromise[Uptime] = js.native
+    def get_uptime(endpoint: uptime, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_weights(endpoint: weights): GotPromise[Weights] = js.native
+    def get_weights(endpoint: weights): Any = js.native
     @JSName("get")
-    def get_weights(endpoint: weights, query: QueryParameters): GotPromise[Weights] = js.native
+    def get_weights(endpoint: weights, query: QueryParameters): Any = js.native
     
-    var summary: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Summary]]] = js.native
+    var summary: js.UndefOr[
+        js.Function1[
+          /* query */ js.UndefOr[QueryParameters], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GotPromise<Summary> */ Any
+        ]
+      ] = js.native
     
-    var uptime: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Uptime]]] = js.native
+    var uptime: js.UndefOr[
+        js.Function1[
+          /* query */ js.UndefOr[QueryParameters], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GotPromise<Uptime> */ Any
+        ]
+      ] = js.native
     
-    var weights: js.UndefOr[js.Function1[/* query */ js.UndefOr[QueryParameters], GotPromise[Weights]]] = js.native
+    var weights: js.UndefOr[
+        js.Function1[
+          /* query */ js.UndefOr[QueryParameters], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GotPromise<Weights> */ Any
+        ]
+      ] = js.native
   }
   
   /* Inlined std.Partial<std.Record<'1_week' | '1_month' | '6_months' | '1_year' | '5_years', onionoo.onionoo.Onionoo.Histogram>> */

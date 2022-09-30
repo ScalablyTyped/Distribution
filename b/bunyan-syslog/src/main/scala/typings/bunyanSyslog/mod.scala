@@ -1,7 +1,7 @@
 package typings.bunyanSyslog
 
-import typings.bunyanSyslog.bunyanSyslogNumbers.`0`
-import typings.bunyanSyslog.bunyanSyslogNumbers.`24`
+import typings.bunyanSyslog.bunyanSyslogInts.`0`
+import typings.bunyanSyslog.bunyanSyslogInts.`24`
 import typings.std.Exclude
 import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject

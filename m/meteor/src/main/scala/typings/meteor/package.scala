@@ -1,24 +1,54 @@
 package typings.meteor
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.meteor.Blaze.TemplateInstance
+import typings.std.Exclude
+import typings.std.HTMLElement
+import typings.std.Pick
+import typings.std.ReadableStream
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EJSON = typings.meteor.EJSONable
+type Callback = js.Function1[/* sink */ Sink, js.Promise[Any] | Any]
 
-type EJSONable = org.scalablytyped.runtime.StringDictionary[typings.meteor.EJSONableProperty]
+type Content = String | js.Array[Any] | ReadableStream[Any] | HTMLElement
+
+type EJSON = EJSONable
+
+type EJSONable = StringDictionary[EJSONableProperty]
 
 type EJSONableProperty = js.UndefOr[
-scala.Double | java.lang.String | scala.Boolean | js.Object | (js.Array[scala.Double | js.Object | java.lang.String]) | typings.std.Date | typings.std.Uint8Array | typings.meteor.EJSONableCustomType | scala.Null]
+Double | String | Boolean | js.Object | (js.Array[Double | js.Object | String]) | js.Date | js.typedarray.Uint8Array | EJSONableCustomType | Null]
 
-type Header = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Header = StringDictionary[String]
 
-type JSONable = org.scalablytyped.runtime.StringDictionary[
+type JSONable = StringDictionary[
 js.UndefOr[
-  scala.Double | java.lang.String | scala.Boolean | js.Object | (js.Array[scala.Double | js.Object | java.lang.String]) | scala.Null
+  Double | String | Boolean | js.Object | (js.Array[Double | js.Object | String]) | Null
 ]]
 
-type UnionOmit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+/**
+  * A helper type to make the access to data and template instance member type safe.
+  * @example
+  * const TemplateTyped = Template as TemplateStaticTyped<
+  *     'newTemplate',
+  *     { foo: string },
+  *     {
+  *         state: ReactiveDict<{ bar: number }>;
+  *         getFooBar(): string;
+  *     }
+  * >;
+  * TemplateTyped.newTemplate.onCreated(function () { ...
+  * @template N Template name
+  * @template D Data
+  * @template T Template interface with custom properties and methods that extends the template instance
+  */
+type TemplateStaticTyped[N /* <: String */, D /* <: Any */, T /* <: Record[String, Any] */] = (TemplateStatic[D, T & TemplateInstance[D]]) & typings.meteor.meteorStrings.TemplateStaticTyped & TopLevel[Any]
 
-type globalError = typings.std.Error
+type UnionOmit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
+
+type globalError = js.Error

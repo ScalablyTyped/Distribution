@@ -17,17 +17,12 @@ trait NullEngine
      with Engine {
   
   /**
-    * @param channel
-    * @param texture
-    * @hidden
+    * @internal
     */
   def _bindTexture(channel: Double, texture: InternalTexture): Unit = js.native
   
   /**
-    * @param isMulti
-    * @param isCube
-    * @param size
-    * @hidden
+    * @internal
     */
   def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: Double): RenderTargetWrapper = js.native
   def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: Layers): RenderTargetWrapper = js.native

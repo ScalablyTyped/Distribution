@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.RuleCall")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.RuleCall")
 @js.native
-class RuleCall protected ()
+open class RuleCall protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.RuleCall {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class RuleCall protected ()
 }
 object RuleCall {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.RuleCall")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.RuleCall")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object RuleCall {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.RuleSplitCondition): typings.mendixmodelsdk.microflowsMod.microflows.RuleCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.RuleCall]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.RuleCall.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.RuleCall.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.RuleCall.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.RuleCall.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

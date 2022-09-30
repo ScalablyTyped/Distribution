@@ -2,10 +2,10 @@ package typings.itWs
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
-import typings.itWs.itWsNumbers.`0`
-import typings.itWs.itWsNumbers.`1`
-import typings.itWs.itWsNumbers.`2`
-import typings.itWs.itWsNumbers.`3`
+import typings.itWs.itWsInts.`0`
+import typings.itWs.itWsInts.`1`
+import typings.itWs.itWsInts.`2`
+import typings.itWs.itWsInts.`3`
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
@@ -101,10 +101,10 @@ object webSocketMod {
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("it-ws/dist/src/web-socket", "default.WebSocketServerCls")
+    @JSImport("it-ws/dist/src/web-socket", "default.WebSocketServer")
     @js.native
     open class WebSocketServerCls[T /* <: typings.ws.mod.WebSocket */] ()
-      extends typings.ws.mod.WebSocketServerCls[T] {
+      extends typings.ws.mod.Server[T] {
       def this(options: ServerOptions) = this()
       def this(options: Unit, callback: js.Function0[Unit]) = this()
       def this(options: ServerOptions, callback: js.Function0[Unit]) = this()

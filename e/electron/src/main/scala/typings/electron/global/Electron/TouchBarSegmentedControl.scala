@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.TouchBarSegmentedControl")
 @js.native
-class TouchBarSegmentedControl protected ()
+open class TouchBarSegmentedControl protected ()
   extends typings.electron.Electron.TouchBarSegmentedControl {
   // Docs: https://electronjs.org/docs/api/touch-bar-segmented-control
   /**

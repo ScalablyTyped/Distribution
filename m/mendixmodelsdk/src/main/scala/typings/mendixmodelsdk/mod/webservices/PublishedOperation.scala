@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.PublishedOperation")
 @js.native
-class PublishedOperation protected ()
+open class PublishedOperation protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.PublishedOperation {
   def this(
     model: AbstractModel,

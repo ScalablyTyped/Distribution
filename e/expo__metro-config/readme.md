@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__metro-config
 
-Typings are for version 0.3.22
+Typings are for version 0.4.0
 
 ## Library description:
 A Metro config for running React Native projects with the Metro bundler

@@ -3,6 +3,7 @@ package typings.xRay
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.processMod.global.NodeJS.ReadStream
 import typings.std.Array
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +52,7 @@ object mod {
     def stream(): ReadStream = js.native
     
     def `then`[U](): typings.bluebird.mod.^[U] = js.native
-    def `then`[U](fn: js.Function1[/* value */ Any, U | js.Thenable[U]]): typings.bluebird.mod.^[U] = js.native
+    def `then`[U](fn: js.Function1[/* value */ Any, U | PromiseLike[U]]): typings.bluebird.mod.^[U] = js.native
     
     def write(): js.Function1[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 

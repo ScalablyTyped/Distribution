@@ -1,8 +1,8 @@
 package typings.adalAngular
 
-import typings.adalAngular.adalAngularNumbers.`1`
-import typings.adalAngular.adalAngularNumbers.`2`
-import typings.adalAngular.adalAngularNumbers.`3`
+import typings.adalAngular.adalAngularInts.`1`
+import typings.adalAngular.adalAngularInts.`2`
+import typings.adalAngular.adalAngularInts.`3`
 import typings.adalAngular.adalAngularStrings.ERRORColon
 import typings.adalAngular.adalAngularStrings.INFOColon
 import typings.adalAngular.adalAngularStrings.VERBOSEColon
@@ -131,7 +131,7 @@ object anon {
   
   trait ERROR extends StObject {
     
-    var ERROR: typings.adalAngular.adalAngularNumbers.`0`
+    var ERROR: typings.adalAngular.adalAngularInts.`0`
     
     var INFO: `2`
     
@@ -148,7 +148,7 @@ object anon {
     
     extension [Self <: ERROR](x: Self) {
       
-      inline def setERROR(value: typings.adalAngular.adalAngularNumbers.`0`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: typings.adalAngular.adalAngularInts.`0`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
       inline def setINFO(value: `2`): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       

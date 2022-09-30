@@ -23,13 +23,15 @@ import typings.cadesplugin.CAdESCOM.CADESCOM_DISPLAY_DATA
 import typings.cadesplugin.CAdESCOM.CADESCOM_ENCRYPTION_ALGORITHM
 import typings.cadesplugin.CAdESCOM.CADESCOM_HASH_ALGORITHM
 import typings.cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CADESPluginBase
-  extends js.Promise[scala.Nothing]
+  extends StObject
+     with Promise[scala.Nothing]
      with StoreLocationPlugin
      with typings.cadesplugin.CAdESCOM.StoreLocationPlugin
      with StoreNamePlugin
@@ -67,12 +69,4 @@ trait CADESPluginBase
   def set(obj: CADESPluginBase): Unit = js.native
   
   def set_log_level(level: ValuesOf[LogLevel]): Unit = js.native
-  
-  /* InferMemberOverrides */
-  override def `then`[B](
-    onFulfilled: js.Function1[scala.Nothing, B | js.Thenable[B]],
-    onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
-  ): js.Promise[B] & js.Thenable[B] = js.native
-  /* InferMemberOverrides */
-  override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] & js.Thenable[B] = js.native
 }

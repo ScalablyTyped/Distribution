@@ -14,7 +14,7 @@ object minMod {
   
   @JSImport("class-validator/types/decorator/number/Min", "MIN")
   @js.native
-  val MIN: /* "min" */ String = js.native
+  val MIN__ : /* "min" */ String = js.native
   
   inline def Min_(minValue: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Min")(minValue.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Min_(minValue: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Min")(minValue.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]

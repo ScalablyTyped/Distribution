@@ -12,7 +12,7 @@ trait PrivateIpAddressSpecification extends StObject {
   var Primary: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The private IPv4 addresses.
+    * The private IPv4 address.
     */
   var PrivateIpAddress: js.UndefOr[String] = js.undefined
 }

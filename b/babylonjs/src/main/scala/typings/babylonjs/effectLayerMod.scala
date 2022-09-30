@@ -139,7 +139,7 @@ object effectLayerMod {
     
     /**
       * Rebuild the required buffers.
-      * @hidden Internal use only.
+      * @internal Internal use only.
       */
     def _rebuild(): Unit = js.native
     
@@ -342,8 +342,7 @@ object effectLayerMod {
     inline def Parse(parsedEffectLayer: Any, scene: Scene, rootUrl: String): EffectLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedEffectLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[EffectLayer]
     
     /**
-      * @param _
-      * @hidden
+      * @internal
       */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }

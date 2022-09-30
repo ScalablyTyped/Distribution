@@ -2,7 +2,7 @@ package typings.vegaLite
 
 import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaLite.typeMod.RangeType
-import typings.vegaLite.vegaLiteNumbers.`1`
+import typings.vegaLite.vegaLiteInts.`1`
 import typings.vegaLite.vegaLiteStrings.always
 import typings.vegaLite.vegaLiteStrings.angle
 import typings.vegaLite.vegaLiteStrings.binned

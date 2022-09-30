@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/cast-object relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CastAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CastAction")
 @js.native
-class CastAction protected ()
+open class CastAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.CastAction {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class CastAction protected ()
 }
 object CastAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CastAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CastAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object CastAction {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.CastAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.CastAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CastAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CastAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CastAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CastAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

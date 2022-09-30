@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Control")
 @js.native
-class Control_ ()
+open class Control_ ()
   extends typings.leaflet.mod.Control_ {
   def this(options: ControlOptions) = this()
 }
@@ -26,14 +26,14 @@ object Control_ {
   
   @JSGlobal("L.Control.Attribution")
   @js.native
-  class Attribution ()
+  open class Attribution ()
     extends typings.leaflet.mod.Control_.Attribution {
     def this(options: AttributionOptions) = this()
   }
   
   @JSGlobal("L.Control.Layers")
   @js.native
-  class Layers ()
+  open class Layers ()
     extends typings.leaflet.mod.Control_.Layers {
     def this(baseLayers: LayersObject) = this()
     def this(baseLayers: Unit, overlays: LayersObject) = this()
@@ -46,14 +46,14 @@ object Control_ {
   
   @JSGlobal("L.Control.Scale")
   @js.native
-  class Scale ()
+  open class Scale ()
     extends typings.leaflet.mod.Control_.Scale {
     def this(options: ScaleOptions) = this()
   }
   
   @JSGlobal("L.Control.Zoom")
   @js.native
-  class Zoom ()
+  open class Zoom ()
     extends typings.leaflet.mod.Control_.Zoom {
     def this(options: ZoomOptions) = this()
   }

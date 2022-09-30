@@ -29,8 +29,7 @@ object flyCameraMod {
     def this(name: String, position: Vector3, scene: Scene, setActiveOnSceneIfNoneActive: Boolean) = this()
     
     /**
-      * @param displacement
-      * @hidden
+      * @internal
       */
     def _collideWithWorld(displacement: Vector3): Unit = js.native
     
@@ -40,7 +39,7 @@ object flyCameraMod {
     
     /* private */ var _diffPosition: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _localDirection: Vector3 = js.native
     
     /* private */ var _needMoveForGravity: Any = js.native
@@ -50,10 +49,7 @@ object flyCameraMod {
     /* private */ var _oldPosition: Any = js.native
     
     /**
-      * @param collisionId
-      * @param newPosition
-      * @param collidedMesh
-      * @hidden
+      * @internal
       */
     /* private */ var _onCollisionPositionChange: Any = js.native
     
@@ -62,7 +58,7 @@ object flyCameraMod {
       */
     var _trackRoll: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _transformedDirection: Vector3 = js.native
     
     /**
@@ -191,7 +187,7 @@ object flyCameraMod {
     /**
       * Restore the Roll to its target value at the rate specified.
       * @param rate - Higher means slower restoring.
-      * @hidden
+      * @internal
       */
     def restoreRoll(rate: Double): Unit = js.native
     

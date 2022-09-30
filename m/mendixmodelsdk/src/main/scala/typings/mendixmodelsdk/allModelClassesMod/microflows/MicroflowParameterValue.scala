@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.21.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowParameterValue")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowParameterValue")
 @js.native
-class MicroflowParameterValue protected ()
+open class MicroflowParameterValue protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class MicroflowParameterValue protected ()
 }
 object MicroflowParameterValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowParameterValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowParameterValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +64,13 @@ object MicroflowParameterValue {
   inline def createInJavaScriptActionParameterMappingUnderParameterValue(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaScriptActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowParameterValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowParameterValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowParameterValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowParameterValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

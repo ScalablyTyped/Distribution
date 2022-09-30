@@ -87,7 +87,7 @@ trait RequestLaunchTemplateData extends StObject {
   var InstanceRequirements: js.UndefOr[InstanceRequirementsRequest] = js.undefined
   
   /**
-    * The instance type. For more information, see Instance types in the Amazon Elastic Compute Cloud User Guide. If you specify InstanceTypes, you can't specify InstanceRequirements.
+    * The instance type. For more information, see Instance types in the Amazon Elastic Compute Cloud User Guide. If you specify InstanceType, you can't specify InstanceRequirements.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   

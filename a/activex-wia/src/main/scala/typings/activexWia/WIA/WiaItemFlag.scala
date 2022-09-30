@@ -1,24 +1,24 @@
 package typings.activexWia.WIA
 
-import typings.activexWia.activexWiaNumbers.`-2147483648`
-import typings.activexWia.activexWiaNumbers.`0`
-import typings.activexWia.activexWiaNumbers.`1024`
-import typings.activexWia.activexWiaNumbers.`128`
-import typings.activexWia.activexWiaNumbers.`16384`
-import typings.activexWia.activexWiaNumbers.`16`
-import typings.activexWia.activexWiaNumbers.`1`
-import typings.activexWia.activexWiaNumbers.`2048`
-import typings.activexWia.activexWiaNumbers.`256`
-import typings.activexWia.activexWiaNumbers.`2`
-import typings.activexWia.activexWiaNumbers.`32768`
-import typings.activexWia.activexWiaNumbers.`32`
-import typings.activexWia.activexWiaNumbers.`4096`
-import typings.activexWia.activexWiaNumbers.`4`
-import typings.activexWia.activexWiaNumbers.`512`
-import typings.activexWia.activexWiaNumbers.`64`
-import typings.activexWia.activexWiaNumbers.`65536`
-import typings.activexWia.activexWiaNumbers.`8192`
-import typings.activexWia.activexWiaNumbers.`8`
+import typings.activexWia.activexWiaDoubles.`-2147483648`
+import typings.activexWia.activexWiaInts.`0`
+import typings.activexWia.activexWiaInts.`1024`
+import typings.activexWia.activexWiaInts.`128`
+import typings.activexWia.activexWiaInts.`16384`
+import typings.activexWia.activexWiaInts.`16`
+import typings.activexWia.activexWiaInts.`1`
+import typings.activexWia.activexWiaInts.`2048`
+import typings.activexWia.activexWiaInts.`256`
+import typings.activexWia.activexWiaInts.`2`
+import typings.activexWia.activexWiaInts.`32768`
+import typings.activexWia.activexWiaInts.`32`
+import typings.activexWia.activexWiaInts.`4096`
+import typings.activexWia.activexWiaInts.`4`
+import typings.activexWia.activexWiaInts.`512`
+import typings.activexWia.activexWiaInts.`64`
+import typings.activexWia.activexWiaInts.`65536`
+import typings.activexWia.activexWiaInts.`8192`
+import typings.activexWia.activexWiaInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,25 +28,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Item.Properties("Item Flags") and a member from the WiaItemFlags enumeration.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWia.activexWiaNumbers.`16`
-  - typings.activexWia.activexWiaNumbers.`32`
-  - typings.activexWia.activexWiaNumbers.`2048`
-  - typings.activexWia.activexWiaNumbers.`128`
-  - typings.activexWia.activexWiaNumbers.`64`
-  - typings.activexWia.activexWiaNumbers.`256`
-  - typings.activexWia.activexWiaNumbers.`2`
-  - typings.activexWia.activexWiaNumbers.`4`
-  - typings.activexWia.activexWiaNumbers.`0`
-  - typings.activexWia.activexWiaNumbers.`16384`
-  - typings.activexWia.activexWiaNumbers.`32768`
-  - typings.activexWia.activexWiaNumbers.`512`
-  - typings.activexWia.activexWiaNumbers.`1`
-  - typings.activexWia.activexWiaNumbers.`-2147483648`
-  - typings.activexWia.activexWiaNumbers.`8`
-  - typings.activexWia.activexWiaNumbers.`4096`
-  - typings.activexWia.activexWiaNumbers.`8192`
-  - typings.activexWia.activexWiaNumbers.`65536`
-  - typings.activexWia.activexWiaNumbers.`1024`
+  - typings.activexWia.activexWiaInts.`16`
+  - typings.activexWia.activexWiaInts.`32`
+  - typings.activexWia.activexWiaInts.`2048`
+  - typings.activexWia.activexWiaInts.`128`
+  - typings.activexWia.activexWiaInts.`64`
+  - typings.activexWia.activexWiaInts.`256`
+  - typings.activexWia.activexWiaInts.`2`
+  - typings.activexWia.activexWiaInts.`4`
+  - typings.activexWia.activexWiaInts.`0`
+  - typings.activexWia.activexWiaInts.`16384`
+  - typings.activexWia.activexWiaInts.`32768`
+  - typings.activexWia.activexWiaInts.`512`
+  - typings.activexWia.activexWiaInts.`1`
+  - typings.activexWia.activexWiaDoubles.`-2147483648`
+  - typings.activexWia.activexWiaInts.`8`
+  - typings.activexWia.activexWiaInts.`4096`
+  - typings.activexWia.activexWiaInts.`8192`
+  - typings.activexWia.activexWiaInts.`65536`
+  - typings.activexWia.activexWiaInts.`1024`
 */
 trait WiaItemFlag extends StObject
 object WiaItemFlag {
@@ -77,7 +77,7 @@ object WiaItemFlag {
   
   inline def ImageItemFlag: `1` = 1.asInstanceOf[`1`]
   
-  inline def RemovedItemFlag: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+  inline def RemovedItemFlag: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
   
   inline def RootItemFlag: `8` = 8.asInstanceOf[`8`]
   

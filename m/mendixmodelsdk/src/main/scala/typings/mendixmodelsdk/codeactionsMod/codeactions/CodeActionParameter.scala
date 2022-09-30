@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsCodeAction, containerAsJavaAction, name, actionParameterType, description */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.CodeActionParameter")
+- typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsCodeAction, containerAsJavaAction, name, actionParameterType, description, isRequired */ @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.CodeActionParameter")
 @js.native
 abstract class CodeActionParameter protected ()
   extends Element[IModel]
@@ -72,6 +72,17 @@ abstract class CodeActionParameter protected ()
   @JSName("description")
   val description_FCodeActionParameter: String = js.native
   
+  /**
+    * In version 9.17.0: introduced
+    */
+  def isRequired: Boolean = js.native
+  def isRequired_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 9.17.0: introduced
+    */
+  @JSName("isRequired")
+  val isRequired_FCodeActionParameter: Boolean = js.native
+  
   def name: String = js.native
   def name_=(newValue: String): Unit = js.native
   @JSName("name")
@@ -90,18 +101,18 @@ abstract class CodeActionParameter protected ()
 }
 object CodeActionParameter {
   
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.CodeActionParameter")
+  @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.CodeActionParameter")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.CodeActionParameter.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.CodeActionParameter.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.CodeActionParameter.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.CodeActionParameter.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

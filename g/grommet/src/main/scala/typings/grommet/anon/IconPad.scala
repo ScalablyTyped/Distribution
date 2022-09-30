@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IconPad extends StObject {
   
-  var icon: js.UndefOr[`13`] = js.undefined
+  var icon: js.UndefOr[`14`] = js.undefined
   
   var pad: js.UndefOr[PadType] = js.undefined
 }
@@ -20,7 +20,7 @@ object IconPad {
   
   extension [Self <: IconPad](x: Self) {
     
-    inline def setIcon(value: `13`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: `14`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     

@@ -1,9 +1,9 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`4`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`4`
 import typings.html2canvas.pathMod.Path
 import typings.html2canvas.transformMod.Matrix
 import org.scalablytyped.runtime.StObject
@@ -77,8 +77,8 @@ object effectsMod {
   inline def isTransformEffect(effect: IElementEffect): /* is html2canvas.html2canvas/dist/types/render/effects.TransformEffect */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[/* is html2canvas.html2canvas/dist/types/render/effects.TransformEffect */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`4`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`4`
   */
   trait EffectTarget extends StObject
   object EffectTarget {
@@ -89,9 +89,9 @@ object effectsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
   */
   trait EffectType extends StObject
   object EffectType {

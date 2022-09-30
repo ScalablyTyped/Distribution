@@ -23,7 +23,7 @@ object CategoriesList {
     
     inline def setCategoriesList(value: js.Array[Id]): Self = StObject.set(x, "categoriesList", value.asInstanceOf[js.Any])
     
-    inline def setCategoriesListVarargs(value: Id*): Self = StObject.set(x, "categoriesList", js.Array(value :_*))
+    inline def setCategoriesListVarargs(value: Id*): Self = StObject.set(x, "categoriesList", js.Array(value*))
     
     inline def setOnCategoryChange(value: Double => Unit): Self = StObject.set(x, "onCategoryChange", js.Any.fromFunction1(value))
     

@@ -1,7 +1,9 @@
 package typings.postcssSelectorParser.mod
 
 import typings.postcssSelectorParser.mod.^
+import typings.postcssSelectorParser.postcssSelectorParserStrings.Quotationmark
 import typings.postcssSelectorParser.postcssSelectorParserStrings.`class`
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,29 +13,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def apply(): Processor[scala.Nothing, Selectors] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Processor[scala.Nothing, Selectors]]
 inline def apply(processor: AsyncProcessor[Unit] | SyncProcessor[Unit]): Processor[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(processor.asInstanceOf[js.Any]).asInstanceOf[Processor[scala.Nothing, scala.Nothing]]
 
-inline def ATTRIBUTE: typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = ^.asInstanceOf[js.Dynamic].selectDynamic("ATTRIBUTE").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.attribute]
+inline def ATTRIBUTE__ : typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = ^.asInstanceOf[js.Dynamic].selectDynamic("ATTRIBUTE").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.attribute]
 
 inline def CLASS: `class` = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASS").asInstanceOf[`class`]
 
-inline def COMBINATOR: typings.postcssSelectorParser.postcssSelectorParserStrings.combinator = ^.asInstanceOf[js.Dynamic].selectDynamic("COMBINATOR").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.combinator]
+inline def COMBINATOR__ : typings.postcssSelectorParser.postcssSelectorParserStrings.combinator = ^.asInstanceOf[js.Dynamic].selectDynamic("COMBINATOR").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.combinator]
 
-inline def COMMENT: typings.postcssSelectorParser.postcssSelectorParserStrings.comment = ^.asInstanceOf[js.Dynamic].selectDynamic("COMMENT").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.comment]
+inline def COMMENT__ : typings.postcssSelectorParser.postcssSelectorParserStrings.comment = ^.asInstanceOf[js.Dynamic].selectDynamic("COMMENT").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.comment]
 
 inline def ID_ : typings.postcssSelectorParser.postcssSelectorParserStrings.id = ^.asInstanceOf[js.Dynamic].selectDynamic("ID").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.id]
 
-inline def NESTING: typings.postcssSelectorParser.postcssSelectorParserStrings.nesting = ^.asInstanceOf[js.Dynamic].selectDynamic("NESTING").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.nesting]
+inline def NESTING__ : typings.postcssSelectorParser.postcssSelectorParserStrings.nesting = ^.asInstanceOf[js.Dynamic].selectDynamic("NESTING").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.nesting]
 
-inline def PSEUDO: typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo = ^.asInstanceOf[js.Dynamic].selectDynamic("PSEUDO").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo]
+inline def PSEUDO__ : typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo = ^.asInstanceOf[js.Dynamic].selectDynamic("PSEUDO").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo]
 
-inline def ROOT: typings.postcssSelectorParser.postcssSelectorParserStrings.root = ^.asInstanceOf[js.Dynamic].selectDynamic("ROOT").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.root]
+inline def ROOT__ : typings.postcssSelectorParser.postcssSelectorParserStrings.root = ^.asInstanceOf[js.Dynamic].selectDynamic("ROOT").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.root]
 
-inline def SELECTOR: typings.postcssSelectorParser.postcssSelectorParserStrings.selector = ^.asInstanceOf[js.Dynamic].selectDynamic("SELECTOR").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.selector]
+inline def SELECTOR__ : typings.postcssSelectorParser.postcssSelectorParserStrings.selector = ^.asInstanceOf[js.Dynamic].selectDynamic("SELECTOR").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.selector]
 
-inline def STRING: typings.postcssSelectorParser.postcssSelectorParserStrings.string = ^.asInstanceOf[js.Dynamic].selectDynamic("STRING").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.string]
+inline def STRING__ : typings.postcssSelectorParser.postcssSelectorParserStrings.string = ^.asInstanceOf[js.Dynamic].selectDynamic("STRING").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.string]
 
-inline def TAG: typings.postcssSelectorParser.postcssSelectorParserStrings.tag = ^.asInstanceOf[js.Dynamic].selectDynamic("TAG").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.tag]
+inline def TAG__ : typings.postcssSelectorParser.postcssSelectorParserStrings.tag = ^.asInstanceOf[js.Dynamic].selectDynamic("TAG").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.tag]
 
-inline def UNIVERSAL: typings.postcssSelectorParser.postcssSelectorParserStrings.universal = ^.asInstanceOf[js.Dynamic].selectDynamic("UNIVERSAL").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.universal]
+inline def UNIVERSAL__ : typings.postcssSelectorParser.postcssSelectorParserStrings.universal = ^.asInstanceOf[js.Dynamic].selectDynamic("UNIVERSAL").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.universal]
 
 inline def attribute(opts: AttributeOptions): Attribute_ = ^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(opts.asInstanceOf[js.Any]).asInstanceOf[Attribute_]
 
@@ -105,19 +107,14 @@ inline def tag(opts: NamespaceOptions[String]): Tag_ = ^.asInstanceOf[js.Dynamic
 inline def universal(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("universal")().asInstanceOf[Any]
 inline def universal(opts: NamespaceOptions[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("universal")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-type AsyncProcessor[Transform] = ProcessorFn[js.Thenable[Transform]]
+type AsyncProcessor[Transform] = ProcessorFn[PromiseLike[Transform]]
 
 // A type that's T but not U.
 type Diff[T, U] = T
 
 type ProcessorFn[ReturnType] = js.Function1[/* root */ Root_, ReturnType]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.Quotationmark
-  - typings.postcssSelectorParser.postcssSelectorParserStrings.Apostrophe
-  - scala.Null
-*/
-type QuoteMark = _QuoteMark | Null
+type QuoteMark = Quotationmark | String | Null
 
 /** Accepts a string  */
 type Selectors = String | PostCSSRuleNode

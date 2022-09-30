@@ -39,7 +39,7 @@ object clusterMod {
   inline def disconnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")().asInstanceOf[Unit]
   inline def disconnect(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(scala.List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def fork(): Worker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")().asInstanceOf[Worker_]
   inline def fork(env: Any): Worker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(env.asInstanceOf[js.Any]).asInstanceOf[Worker_]

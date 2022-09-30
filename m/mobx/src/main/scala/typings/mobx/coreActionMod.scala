@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object coreActionMod {
   
-  @JSImport("mobx/lib/core/action", JSImport.Namespace)
+  @JSImport("mobx/dist/core/action", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -16,93 +16,89 @@ object coreActionMod {
   
   inline def allowStateChangesEnd(prev: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateChangesEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def allowStateChangesInsideComputed[T](func: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateChangesInsideComputed")(func.asInstanceOf[js.Any]).asInstanceOf[T]
-  
   inline def allowStateChangesStart(allowStateChanges: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateChangesStart")(allowStateChanges.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def createAction(actionName: String, fn: js.Function): js.Function & IAction = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function & IAction]
-  inline def createAction(actionName: String, fn: js.Function, ref: js.Object): js.Function & IAction = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Function & IAction]
+  inline def createAction(actionName: String, fn: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def createAction(actionName: String, fn: js.Function, autoAction: Boolean): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], autoAction.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def createAction(actionName: String, fn: js.Function, autoAction: Boolean, ref: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], autoAction.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def createAction(actionName: String, fn: js.Function, autoAction: Unit, ref: js.Object): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], autoAction.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   inline def endAction(runInfo: IActionRunInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_endAction")(runInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def executeAction(actionName: String, fn: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def executeAction(actionName: String, fn: js.Function, scope: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def executeAction(actionName: String, fn: js.Function, scope: js.Any, args: IArguments): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def executeAction(actionName: String, fn: js.Function, scope: Unit, args: IArguments): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def executeAction(actionName: String, canRunAsDerivation: Boolean, fn: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], canRunAsDerivation.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def executeAction(actionName: String, canRunAsDerivation: Boolean, fn: js.Function, scope: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], canRunAsDerivation.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def executeAction(actionName: String, canRunAsDerivation: Boolean, fn: js.Function, scope: Any, args: IArguments): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], canRunAsDerivation.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def executeAction(actionName: String, canRunAsDerivation: Boolean, fn: js.Function, scope: Unit, args: IArguments): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAction")(actionName.asInstanceOf[js.Any], canRunAsDerivation.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def startAction(actionName: String, scope: js.Any): IActionRunInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("_startAction")(actionName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IActionRunInfo]
-  inline def startAction(actionName: String, scope: js.Any, args: IArguments): IActionRunInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("_startAction")(actionName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IActionRunInfo]
-  
-  trait IAction extends StObject {
-    
-    var isMobxAction: Boolean
-  }
-  object IAction {
-    
-    inline def apply(isMobxAction: Boolean): IAction = {
-      val __obj = js.Dynamic.literal(isMobxAction = isMobxAction.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IAction]
-    }
-    
-    extension [Self <: IAction](x: Self) {
-      
-      inline def setIsMobxAction(value: Boolean): Self = StObject.set(x, "isMobxAction", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def startAction(actionName: String, canRunAsDerivation: Boolean, // true for autoAction
+  scope: Any): IActionRunInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("_startAction")(actionName.asInstanceOf[js.Any], canRunAsDerivation.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[IActionRunInfo]
+  inline def startAction(
+    actionName: String,
+    canRunAsDerivation: Boolean,
+    // true for autoAction
+  scope: Any,
+    args: IArguments
+  ): IActionRunInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("_startAction")(actionName.asInstanceOf[js.Any], canRunAsDerivation.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[IActionRunInfo]
   
   trait IActionRunInfo extends StObject {
     
-    var actionId: Double
+    var actionId_ : Double
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error_ : js.UndefOr[Any] = js.undefined
     
-    var notifySpy: Boolean
+    var notifySpy_ : Boolean
     
-    var parentActionId: Double
+    var parentActionId_ : Double
     
-    var prevAllowStateChanges: Boolean
+    var prevAllowStateChanges_ : Boolean
     
-    var prevAllowStateReads: Boolean
+    var prevAllowStateReads_ : Boolean
     
-    var prevDerivation: IDerivation | Null
+    var prevDerivation_ : IDerivation | Null
     
-    var startTime: Double
+    var runAsAction_ : js.UndefOr[Boolean] = js.undefined
+    
+    var startTime_ : Double
   }
   object IActionRunInfo {
     
     inline def apply(
-      actionId: Double,
-      notifySpy: Boolean,
-      parentActionId: Double,
-      prevAllowStateChanges: Boolean,
-      prevAllowStateReads: Boolean,
-      startTime: Double
+      actionId_ : Double,
+      notifySpy_ : Boolean,
+      parentActionId_ : Double,
+      prevAllowStateChanges_ : Boolean,
+      prevAllowStateReads_ : Boolean,
+      startTime_ : Double
     ): IActionRunInfo = {
-      val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], notifySpy = notifySpy.asInstanceOf[js.Any], parentActionId = parentActionId.asInstanceOf[js.Any], prevAllowStateChanges = prevAllowStateChanges.asInstanceOf[js.Any], prevAllowStateReads = prevAllowStateReads.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], prevDerivation = null)
+      val __obj = js.Dynamic.literal(actionId_ = actionId_.asInstanceOf[js.Any], notifySpy_ = notifySpy_.asInstanceOf[js.Any], parentActionId_ = parentActionId_.asInstanceOf[js.Any], prevAllowStateChanges_ = prevAllowStateChanges_.asInstanceOf[js.Any], prevAllowStateReads_ = prevAllowStateReads_.asInstanceOf[js.Any], startTime_ = startTime_.asInstanceOf[js.Any], prevDerivation_ = null)
       __obj.asInstanceOf[IActionRunInfo]
     }
     
     extension [Self <: IActionRunInfo](x: Self) {
       
-      inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+      inline def setActionId_(value: Double): Self = StObject.set(x, "actionId_", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError_(value: Any): Self = StObject.set(x, "error_", value.asInstanceOf[js.Any])
       
-      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setError_Undefined: Self = StObject.set(x, "error_", js.undefined)
       
-      inline def setNotifySpy(value: Boolean): Self = StObject.set(x, "notifySpy", value.asInstanceOf[js.Any])
+      inline def setNotifySpy_(value: Boolean): Self = StObject.set(x, "notifySpy_", value.asInstanceOf[js.Any])
       
-      inline def setParentActionId(value: Double): Self = StObject.set(x, "parentActionId", value.asInstanceOf[js.Any])
+      inline def setParentActionId_(value: Double): Self = StObject.set(x, "parentActionId_", value.asInstanceOf[js.Any])
       
-      inline def setPrevAllowStateChanges(value: Boolean): Self = StObject.set(x, "prevAllowStateChanges", value.asInstanceOf[js.Any])
+      inline def setPrevAllowStateChanges_(value: Boolean): Self = StObject.set(x, "prevAllowStateChanges_", value.asInstanceOf[js.Any])
       
-      inline def setPrevAllowStateReads(value: Boolean): Self = StObject.set(x, "prevAllowStateReads", value.asInstanceOf[js.Any])
+      inline def setPrevAllowStateReads_(value: Boolean): Self = StObject.set(x, "prevAllowStateReads_", value.asInstanceOf[js.Any])
       
-      inline def setPrevDerivation(value: IDerivation): Self = StObject.set(x, "prevDerivation", value.asInstanceOf[js.Any])
+      inline def setPrevDerivation_(value: IDerivation): Self = StObject.set(x, "prevDerivation_", value.asInstanceOf[js.Any])
       
-      inline def setPrevDerivationNull: Self = StObject.set(x, "prevDerivation", null)
+      inline def setPrevDerivation_Null: Self = StObject.set(x, "prevDerivation_", null)
       
-      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setRunAsAction_(value: Boolean): Self = StObject.set(x, "runAsAction_", value.asInstanceOf[js.Any])
+      
+      inline def setRunAsAction_Undefined: Self = StObject.set(x, "runAsAction_", js.undefined)
+      
+      inline def setStartTime_(value: Double): Self = StObject.set(x, "startTime_", value.asInstanceOf[js.Any])
     }
   }
 }

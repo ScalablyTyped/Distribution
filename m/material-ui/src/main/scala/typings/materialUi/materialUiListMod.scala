@@ -20,7 +20,8 @@ object materialUiListMod {
   
   @JSImport("material-ui/List", JSImport.Default)
   @js.native
-  open class default () extends List
+  open class default ()
+    extends typings.materialUi.materialUiListMod.List
   
   @JSImport("material-ui/List", "List")
   @js.native

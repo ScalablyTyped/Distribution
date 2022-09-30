@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.mongodb.mongodbStrings.slow_only
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mongodb.mongodbStrings.all
 */
 trait ProfilingLevel extends StObject
+/* Inlined std.Readonly<{ readonly off :'off',  readonly slowOnly :'slow_only',  readonly all :'all'}> */
 object ProfilingLevel {
   
-  inline def all: typings.mongodb.mongodbStrings.all = "all".asInstanceOf[typings.mongodb.mongodbStrings.all]
+  @JSImport("mongodb", "ProfilingLevel.all")
+  @js.native
+  val all: typings.mongodb.mongodbStrings.all = js.native
   
-  inline def off: typings.mongodb.mongodbStrings.off = "off".asInstanceOf[typings.mongodb.mongodbStrings.off]
+  @JSImport("mongodb", "ProfilingLevel.off")
+  @js.native
+  val off: typings.mongodb.mongodbStrings.off = js.native
   
-  inline def slow_only: typings.mongodb.mongodbStrings.slow_only = "slow_only".asInstanceOf[typings.mongodb.mongodbStrings.slow_only]
+  @JSImport("mongodb", "ProfilingLevel.slowOnly")
+  @js.native
+  val slowOnly: slow_only = js.native
 }

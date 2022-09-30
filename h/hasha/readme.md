@@ -10,15 +10,12 @@ Hashing made simple. Get the hash of a buffer/string/stream/file.
 | ------------------ | :-------------: |
 | Full name          | hasha |
 | Keywords           | hash, hashing, crypto, hex, base64, md5, sha1, sha256, sha512, sum, stream, file, fs, buffer, string, text, rev, revving, simple, easy |
-| # releases         | 5 |
-| # dependents       | 299 |
-| # downloads        | 99332120 |
-| # stars            | 16 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5799854666666666E7 |
+| # stars            | 903.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/hasha#readme)
-- [Bugs](https://github.com/sindresorhus/hasha/issues)
-- [Repository](https://github.com/sindresorhus/hasha)
 - [Npm](https://www.npmjs.com/package/hasha)
     
 

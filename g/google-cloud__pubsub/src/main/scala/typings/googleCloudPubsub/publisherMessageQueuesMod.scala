@@ -5,10 +5,10 @@ import typings.googleCloudPubsub.messageBatchMod.MessageBatch
 import typings.googleCloudPubsub.publishErrorMod.PublishError
 import typings.googleCloudPubsub.publisherMod.PublishCallback
 import typings.googleCloudPubsub.publisherMod.Publisher
-import typings.googleCloudPubsub.publisherMod.PubsubMessage
+import typings.googleCloudPubsub.pubsubMessageMod.PubsubMessage
 import typings.grpcGrpcJs.callMod.ServiceError
-import typings.node.NodeJS.Timer
 import typings.node.eventsMod.EventEmitter
+import typings.node.timersMod.global.NodeJS.Timer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,11 +52,22 @@ object publisherMessageQueuesMod {
     def publish(): Unit = js.native
     
     var publisher: Publisher = js.native
+    
+    /**
+      * Forces the queue to update its options from the publisher.
+      * The specific queue will need to do a bit more to pass the new
+      * values down into any MessageBatch.
+      *
+      * This is only for use by {@link Publisher}.
+      *
+      * @private
+      */
+    def updateOptions(): Unit = js.native
   }
   
   @JSImport("@google-cloud/pubsub/build/src/publisher/message-queues", "OrderedQueue")
   @js.native
-  class OrderedQueue protected () extends MessageQueue {
+  open class OrderedQueue protected () extends MessageQueue {
     def this(publisher: Publisher, key: String) = this()
     
     var batches: js.Array[MessageBatch] = js.native
@@ -104,7 +115,7 @@ object publisherMessageQueuesMod {
   
   @JSImport("@google-cloud/pubsub/build/src/publisher/message-queues", "Queue")
   @js.native
-  class Queue protected () extends MessageQueue {
+  open class Queue protected () extends MessageQueue {
     def this(publisher: Publisher) = this()
     
     var batch: MessageBatch = js.native

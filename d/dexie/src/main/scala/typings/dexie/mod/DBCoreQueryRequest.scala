@@ -1,59 +1,38 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreQueryRequest extends js.Object {
+trait DBCoreQueryRequest extends StObject {
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var query: DBCoreQuery = js.native
+  var query: DBCoreQuery
   
-  var trans: DBCoreTransaction = js.native
+  var trans: DBCoreTransaction
   
-  var values: js.UndefOr[Boolean] = js.native
+  var values: js.UndefOr[Boolean] = js.undefined
 }
 object DBCoreQueryRequest {
   
-  @scala.inline
-  def apply(query: DBCoreQuery, trans: DBCoreTransaction): DBCoreQueryRequest = {
+  inline def apply(query: DBCoreQuery, trans: DBCoreTransaction): DBCoreQueryRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBCoreQueryRequest]
   }
   
-  @scala.inline
-  implicit class DBCoreQueryRequestOps[Self <: DBCoreQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreQueryRequest](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setQuery(value: DBCoreQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: DBCoreQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    inline def setTrans(value: DBCoreTransaction): Self = StObject.set(x, "trans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrans(value: DBCoreTransaction): Self = this.set("trans", value.asInstanceOf[js.Any])
+    inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
-    
-    @scala.inline
-    def setValues(value: Boolean): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.0.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValue")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DesignPropertyValue")
 @js.native
-class DesignPropertyValue protected () extends Element[IModel] {
+open class DesignPropertyValue protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +43,7 @@ class DesignPropertyValue protected () extends Element[IModel] {
 }
 object DesignPropertyValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValue")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DesignPropertyValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -67,13 +67,13 @@ object DesignPropertyValue {
   inline def createIn(container: Appearance): DesignPropertyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DesignPropertyValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DesignPropertyValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DesignPropertyValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DesignPropertyValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

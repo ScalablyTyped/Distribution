@@ -1,11 +1,11 @@
 package typings.html2canvas
 
 import typings.html2canvas.contextMod.Context
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`3`
-import typings.html2canvas.html2canvasNumbers.`4`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`3`
+import typings.html2canvas.html2canvasInts.`4`
 import typings.html2canvas.parserMod.CSSValue
 import typings.html2canvas.typesMod.CSSTypes
 import org.scalablytyped.runtime.StObject
@@ -212,11 +212,11 @@ object ipropertydescriptorMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`3`
-    - typings.html2canvas.html2canvasNumbers.`4`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`3`
+    - typings.html2canvas.html2canvasInts.`4`
   */
   trait PropertyDescriptorParsingType extends StObject
   object PropertyDescriptorParsingType {

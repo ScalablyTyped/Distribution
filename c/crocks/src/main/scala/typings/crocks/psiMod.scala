@@ -17,7 +17,7 @@ object psiMod {
     /* g */ js.Function1[/* a */ A, B], 
     js.Function1[/* x */ A, js.Function1[/* y */ A, C]]
   ]]
-  inline def default[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function2[/* x */ A, /* y */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, C]]
+  inline def default[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function1[/* x */ A, js.Function1[/* y */ A, C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, js.Function1[/* y */ A, C]]]
   
-  inline def default_ABC_Function1[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function1[/* x */ A, js.Function1[/* y */ A, C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, js.Function1[/* y */ A, C]]]
+  inline def default_ABC_Function2[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function2[/* x */ A, /* y */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, C]]
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "typed-assert" : "1.0.9"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "typed-assert" : "1.0.9"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

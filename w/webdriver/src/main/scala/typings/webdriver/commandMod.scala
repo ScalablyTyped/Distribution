@@ -1,6 +1,6 @@
 package typings.webdriver
 
-import typings.wdioProtocols.WDIOProtocols.CommandEndpoint
+import typings.wdioProtocols.typesMod.CommandEndpoint
 import typings.webdriver.requestMod.WebDriverResponse
 import typings.webdriver.typesMod.BaseClient
 import org.scalablytyped.runtime.StObject
@@ -13,6 +13,6 @@ object commandMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(method: String, endpointUri: String, commandInfo: CommandEndpoint): js.ThisFunction1[/* this */ BaseClient, /* repeated */ js.Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ js.Any, js.Promise[WebDriverResponse]]]
-  inline def default(method: String, endpointUri: String, commandInfo: CommandEndpoint, doubleEncodeVariables: Boolean): js.ThisFunction1[/* this */ BaseClient, /* repeated */ js.Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any], doubleEncodeVariables.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ js.Any, js.Promise[WebDriverResponse]]]
+  inline def default(method: String, endpointUri: String, commandInfo: CommandEndpoint): js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]]]
+  inline def default(method: String, endpointUri: String, commandInfo: CommandEndpoint, doubleEncodeVariables: Boolean): js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any], doubleEncodeVariables.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]]]
 }

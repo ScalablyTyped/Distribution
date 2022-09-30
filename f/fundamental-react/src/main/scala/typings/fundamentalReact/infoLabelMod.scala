@@ -2,16 +2,16 @@ package typings.fundamentalReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.fundamentalReact.fundamentalReactNumbers.`10`
-import typings.fundamentalReact.fundamentalReactNumbers.`1`
-import typings.fundamentalReact.fundamentalReactNumbers.`2`
-import typings.fundamentalReact.fundamentalReactNumbers.`3`
-import typings.fundamentalReact.fundamentalReactNumbers.`4`
-import typings.fundamentalReact.fundamentalReactNumbers.`5`
-import typings.fundamentalReact.fundamentalReactNumbers.`6`
-import typings.fundamentalReact.fundamentalReactNumbers.`7`
-import typings.fundamentalReact.fundamentalReactNumbers.`8`
-import typings.fundamentalReact.fundamentalReactNumbers.`9`
+import typings.fundamentalReact.fundamentalReactInts.`10`
+import typings.fundamentalReact.fundamentalReactInts.`1`
+import typings.fundamentalReact.fundamentalReactInts.`2`
+import typings.fundamentalReact.fundamentalReactInts.`3`
+import typings.fundamentalReact.fundamentalReactInts.`4`
+import typings.fundamentalReact.fundamentalReactInts.`5`
+import typings.fundamentalReact.fundamentalReactInts.`6`
+import typings.fundamentalReact.fundamentalReactInts.`7`
+import typings.fundamentalReact.fundamentalReactInts.`8`
+import typings.fundamentalReact.fundamentalReactInts.`9`
 import typings.fundamentalReact.iconMod.IconGlyph
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject

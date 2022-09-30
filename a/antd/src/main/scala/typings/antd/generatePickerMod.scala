@@ -6,8 +6,8 @@ import typings.antd.anon.Format
 import typings.antd.anon.MonthPicker
 import typings.antd.anon.Placement
 import typings.antd.anon.ShowTime
-import typings.antd.antdNumbers.`0`
-import typings.antd.antdNumbers.`1`
+import typings.antd.antdInts.`0`
+import typings.antd.antdInts.`1`
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`

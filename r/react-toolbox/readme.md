@@ -10,10 +10,10 @@ A set of React components implementing Google's Material Design specification wi
 | ------------------ | :-------------: |
 | Full name          | react-toolbox |
 | Keywords           | components, material design, react, react-component, toolkit |
-| # releases         | 3 |
-| # dependents       | 43 |
-| # downloads        | 785112 |
-| # stars            | 15 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 28286.333333333332 |
+| # stars            | 8704.0 |
 
 ## Links
 - [Homepage](https://github.com/react-toolbox/react-toolbox#readme)

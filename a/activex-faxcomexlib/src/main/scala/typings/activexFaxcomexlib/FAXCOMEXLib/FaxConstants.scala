@@ -1,7 +1,7 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`100`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`59`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`100`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`59`
 import typings.activexFaxcomexlib.activexFaxcomexlibStrings.`LessthansignAll DevicesGreaterthansign`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
   - typings.activexFaxcomexlib.activexFaxcomexlibStrings.`LessthansignAll DevicesGreaterthansign`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`100`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`59`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`100`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`59`
 */
 trait FaxConstants extends StObject
 object FaxConstants {

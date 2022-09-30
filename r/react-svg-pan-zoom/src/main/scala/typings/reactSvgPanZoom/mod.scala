@@ -9,7 +9,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.TouchEvent
 import typings.reactSvgPanZoom.anon.Background
 import typings.reactSvgPanZoom.anon.Position
-import typings.reactSvgPanZoom.reactSvgPanZoomNumbers.`2`
+import typings.reactSvgPanZoom.reactSvgPanZoomInts.`2`
 import typings.std.Exclude
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject

@@ -1,7 +1,6 @@
 package typings.reactEmbedGist
 
 import typings.react.mod.Component
-import typings.reactEmbedGist.reactEmbedGistStrings.DollarLeftcurlybracketstringRightcurlybracketSlashDollarLeftcurlybracketstringRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object mod {
     
     var file: js.UndefOr[String] = js.undefined
     
-    var gist: DollarLeftcurlybracketstringRightcurlybracketSlashDollarLeftcurlybracketstringRightcurlybracket
+    var gist: /* template literal string: ${string}/${string} */ String
     
     var loadingClass: js.UndefOr[String] = js.undefined
     
@@ -30,8 +29,8 @@ object mod {
   }
   object Props {
     
-    inline def apply(): Props = {
-      val __obj = js.Dynamic.literal(gist = "${string}/${string}")
+    inline def apply(gist: /* template literal string: ${string}/${string} */ String): Props = {
+      val __obj = js.Dynamic.literal(gist = gist.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
@@ -49,9 +48,7 @@ object mod {
       
       inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      inline def setGist(
-        value: DollarLeftcurlybracketstringRightcurlybracketSlashDollarLeftcurlybracketstringRightcurlybracket
-      ): Self = StObject.set(x, "gist", value.asInstanceOf[js.Any])
+      inline def setGist(value: /* template literal string: ${string}/${string} */ String): Self = StObject.set(x, "gist", value.asInstanceOf[js.Any])
       
       inline def setLoadingClass(value: String): Self = StObject.set(x, "loadingClass", value.asInstanceOf[js.Any])
       

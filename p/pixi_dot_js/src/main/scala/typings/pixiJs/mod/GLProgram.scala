@@ -1,26 +1,19 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.WebGLProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Helper class to create a WebGL Program
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "GLProgram")
 @js.native
-class GLProgram protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.GLProgram {
-  def this(program: WebGLProgram, uniformData: js.Any) = this()
-  
+open class GLProgram protected ()
+  extends typings.pixiCore.mod.GLProgram {
   /**
-    * Destroys this program
+    * Makes a new Pixi program.
+    * @param program - webgl program
+    * @param uniformData - uniforms
     */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
+  def this(program: WebGLProgram, uniformData: StringDictionary[typings.pixiCore.mod.IGLUniformData]) = this()
 }

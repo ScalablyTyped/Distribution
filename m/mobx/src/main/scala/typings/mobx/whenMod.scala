@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object whenMod {
   
-  @JSImport("mobx/lib/api/when", JSImport.Namespace)
+  @JSImport("mobx/dist/api/when", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -22,13 +22,7 @@ object whenMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
-    
-    /**
-      * Experimental.
-      * Warns if the view doesn't track observables
-      */
-    var requiresObservable: js.UndefOr[Boolean] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
@@ -45,13 +39,9 @@ object whenMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
-      
-      inline def setRequiresObservable(value: Boolean): Self = StObject.set(x, "requiresObservable", value.asInstanceOf[js.Any])
-      
-      inline def setRequiresObservableUndefined: Self = StObject.set(x, "requiresObservable", js.undefined)
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

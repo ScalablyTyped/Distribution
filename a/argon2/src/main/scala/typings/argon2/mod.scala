@@ -2,9 +2,9 @@ package typings.argon2
 
 import typings.argon2.anon.Optionsrawfalseundefined
 import typings.argon2.anon.Optionsrawtrue
-import typings.argon2.argon2Numbers.`0`
-import typings.argon2.argon2Numbers.`1`
-import typings.argon2.argon2Numbers.`2`
+import typings.argon2.argon2Ints.`0`
+import typings.argon2.argon2Ints.`1`
+import typings.argon2.argon2Ints.`2`
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

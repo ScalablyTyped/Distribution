@@ -82,13 +82,6 @@ open class MorphInstance protected () extends StObject {
   var maxSubmitCount: Any = js.native
   
   /**
-    * The mesh instance this morph instance controls the morphing of.
-    *
-    * @type {MeshInstance}
-    */
-  var meshInstance: MeshInstance = js.native
-  
-  /**
     * The morph with its targets, which is being instanced.
     *
     * @type {Morph}

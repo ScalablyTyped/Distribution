@@ -17,7 +17,7 @@ object importmappings {
     */
   @JSImport("mendixmodelsdk", "importmappings.ImportMapping")
   @js.native
-  class ImportMapping protected ()
+  open class ImportMapping protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.importmappings.ImportMapping {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -58,7 +58,7 @@ object importmappings {
     */
   @JSImport("mendixmodelsdk", "importmappings.ImportObjectMappingElement")
   @js.native
-  class ImportObjectMappingElement protected ()
+  open class ImportObjectMappingElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.importmappings.ImportObjectMappingElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -117,7 +117,7 @@ object importmappings {
     */
   @JSImport("mendixmodelsdk", "importmappings.ImportValueMappingElement")
   @js.native
-  class ImportValueMappingElement protected ()
+  open class ImportValueMappingElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.importmappings.ImportValueMappingElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

@@ -1,8 +1,8 @@
 package typings.tslint
 
-import typings.tslint.tslintNumbers.`0`
-import typings.tslint.tslintNumbers.`1`
-import typings.tslint.tslintNumbers.`2`
+import typings.tslint.tslintInts.`0`
+import typings.tslint.tslintInts.`1`
+import typings.tslint.tslintInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -197,9 +197,9 @@ object runnerMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.tslint.tslintNumbers.`0`
-    - typings.tslint.tslintNumbers.`1`
-    - typings.tslint.tslintNumbers.`2`
+    - typings.tslint.tslintInts.`0`
+    - typings.tslint.tslintInts.`1`
+    - typings.tslint.tslintInts.`2`
   */
   trait Status extends StObject
   object Status {

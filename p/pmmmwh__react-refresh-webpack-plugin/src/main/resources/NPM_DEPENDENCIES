@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pmmmwh/react-refresh-webpack-plugin" : "0.4.3"
+      "@pmmmwh/react-refresh-webpack-plugin" : "0.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@pmmmwh/react-refresh-webpack-plugin" : "0.4.3"
+      "@pmmmwh/react-refresh-webpack-plugin" : "0.5.7"
     }
   ],
   "compile-devDependencies" : [

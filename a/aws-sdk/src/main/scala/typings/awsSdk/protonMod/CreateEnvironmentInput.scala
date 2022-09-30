@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateEnvironmentInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in this environment. It determines the scope of infrastructure that a component can provision. You must specify componentRoleArn to allow directly defined components to be associated with this environment. For more information about components, see Proton components in the Proton Administrator Guide.
+    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in this environment. It determines the scope of infrastructure that a component can provision. You must specify componentRoleArn to allow directly defined components to be associated with this environment. For more information about components, see Proton components in the Proton User Guide.
     */
   var componentRoleArn: js.UndefOr[Arn] = js.undefined
   
@@ -17,7 +17,7 @@ trait CreateEnvironmentInput extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    * The ID of the environment account connection that you provide if you're provisioning your environment infrastructure resources to an environment account. For more information, see Environment account connections in the Proton Administrator guide. To use Amazon Web Services-managed provisioning for the environment, specify either the environmentAccountConnectionId or protonServiceRoleArn parameter and omit the provisioningRepository parameter.
+    * The ID of the environment account connection that you provide if you're provisioning your environment infrastructure resources to an environment account. For more information, see Environment account connections in the Proton User guide. To use Amazon Web Services-managed provisioning for the environment, specify either the environmentAccountConnectionId or protonServiceRoleArn parameter and omit the provisioningRepository parameter.
     */
   var environmentAccountConnectionId: js.UndefOr[EnvironmentAccountConnectionId] = js.undefined
   
@@ -32,17 +32,17 @@ trait CreateEnvironmentInput extends StObject {
   var protonServiceRoleArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The infrastructure repository that you use to host your rendered infrastructure templates for self-managed provisioning. To use self-managed provisioning for the environment, specify this parameter and omit the environmentAccountConnectionId and protonServiceRoleArn parameters.
+    * The linked repository that you use to host your rendered infrastructure templates for self-managed provisioning. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository. To use self-managed provisioning for the environment, specify this parameter and omit the environmentAccountConnectionId and protonServiceRoleArn parameters.
     */
   var provisioningRepository: js.UndefOr[RepositoryBranchInput] = js.undefined
   
   /**
-    * A YAML formatted string that provides inputs as defined in the environment template bundle schema file. For more information, see Environments in the Proton Administrator Guide.
+    * A YAML formatted string that provides inputs as defined in the environment template bundle schema file. For more information, see Environments in the Proton User Guide.
     */
   var spec: SpecContents
   
   /**
-    * An optional list of metadata items that you can associate with the Proton environment. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * An optional list of metadata items that you can associate with the Proton environment. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
@@ -57,7 +57,7 @@ trait CreateEnvironmentInput extends StObject {
   var templateMinorVersion: js.UndefOr[TemplateVersionPart] = js.undefined
   
   /**
-    * The name of the environment template. For more information, see Environment Templates in the Proton Administrator Guide.
+    * The name of the environment template. For more information, see Environment Templates in the Proton User Guide.
     */
   var templateName: ResourceName
 }

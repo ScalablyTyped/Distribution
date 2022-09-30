@@ -15,7 +15,7 @@ object pluginsMod {
   
   @JSImport("protractor/built/plugins", "Plugins")
   @js.native
-  class Plugins protected () extends StObject {
+  open class Plugins protected () extends StObject {
     def this(config: Config) = this()
     
     /**
@@ -23,7 +23,7 @@ object pluginsMod {
       *
       * @see docs/plugins.md#provided-properties-and-functions
       */
-    /* private */ def annotatePluginObj(obj: js.Any, conf: js.Any, i: js.Any): js.Any = js.native
+    /* private */ def annotatePluginObj(obj: Any, conf: Any, i: Any): Any = js.native
     
     var assertions: StringDictionary[js.Array[AssertionResult]] = js.native
     
@@ -37,11 +37,11 @@ object pluginsMod {
       */
     def getResults(): FailedCount = js.native
     
-    def onPageLoad(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
+    def onPageLoad(args: Any*): js.Promise[js.Array[Any]] = js.native
     
-    def onPageStable(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
+    def onPageStable(args: Any*): js.Promise[js.Array[Any]] = js.native
     
-    def onPrepare(args: js.Any*): Promise[js.Array[js.Any]] = js.native
+    def onPrepare(args: Any*): Promise[js.Array[Any]] = js.native
     
     /**
       * Generates the handler for a plugin function (e.g. the setup() function)
@@ -52,15 +52,15 @@ object pluginsMod {
       *
       * @return The handler
       */
-    /* private */ def pluginFunFactory(funName: js.Any, promiseType: js.Any, failReturnVal: js.Any): js.Any = js.native
+    /* private */ def pluginFunFactory(funName: Any, promiseType: Any, failReturnVal: Any): Any = js.native
     
     var pluginObjs: js.Array[ProtractorPlugin] = js.native
     
-    def postResults(args: js.Any*): Promise[js.Array[js.Any]] = js.native
+    def postResults(args: Any*): Promise[js.Array[Any]] = js.native
     
-    def postTest(args: js.Any*): Promise[js.Array[js.Any]] = js.native
+    def postTest(args: Any*): Promise[js.Array[Any]] = js.native
     
-    /* private */ def printPluginResults(specResults: js.Any): js.Any = js.native
+    /* private */ def printPluginResults(specResults: Any): Any = js.native
     
     var resultsReported: Boolean = js.native
     
@@ -81,12 +81,12 @@ object pluginsMod {
       * @return {webdriver.promise.Promise|Q.Promise} A promise which resolves to the
       *     function's return value
       */
-    /* private */ def safeCallPluginFun(pluginObj: js.Any, funName: js.Any, args: js.Any, promiseType: js.Any, failReturnVal: js.Any): js.Any = js.native
+    /* private */ def safeCallPluginFun(pluginObj: Any, funName: Any, args: Any, promiseType: Any, failReturnVal: Any): Any = js.native
     
     /**
       * @see docs/plugins.md#writing-plugins for information on these functions
       */
-    def setup(args: js.Any*): Promise[js.Array[js.Any]] = js.native
+    def setup(args: Any*): Promise[js.Array[Any]] = js.native
     
     /**
       * Returns true if any loaded plugin has skipAngularStability enabled.
@@ -95,11 +95,11 @@ object pluginsMod {
       */
     def skipAngularStability(): Boolean = js.native
     
-    def teardown(args: js.Any*): Promise[js.Array[js.Any]] = js.native
+    def teardown(args: Any*): Promise[js.Array[Any]] = js.native
     
-    def waitForCondition(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
+    def waitForCondition(args: Any*): js.Promise[js.Array[Any]] = js.native
     
-    def waitForPromise(args: js.Any*): js.Promise[js.Array[js.Any]] = js.native
+    def waitForPromise(args: Any*): js.Promise[js.Array[Any]] = js.native
   }
   
   @js.native
@@ -155,7 +155,7 @@ object pluginsMod {
   
   trait PluginConfig
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     @JSName("package")
     var _package: js.UndefOr[String] = js.undefined
@@ -352,9 +352,7 @@ object pluginsMod {
       *     will *not* wait before executing the next test; however, if the promise
       *     is rejected, a failed assertion is added to the test results.
       */
-    var postTest: js.UndefOr[
-        js.Function2[/* passed */ Boolean, /* testInfo */ js.Any, Unit | js.Promise[Unit]]
-      ] = js.undefined
+    var postTest: js.UndefOr[js.Function2[/* passed */ Boolean, /* testInfo */ Any, Unit | js.Promise[Unit]]] = js.undefined
     
     /**
       * Sets up plugins before tests are run. This is called after the WebDriver
@@ -492,7 +490,7 @@ object pluginsMod {
       
       inline def setPostResultsUndefined: Self = StObject.set(x, "postResults", js.undefined)
       
-      inline def setPostTest(value: (/* passed */ Boolean, /* testInfo */ js.Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "postTest", js.Any.fromFunction2(value))
+      inline def setPostTest(value: (/* passed */ Boolean, /* testInfo */ Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "postTest", js.Any.fromFunction2(value))
       
       inline def setPostTestUndefined: Self = StObject.set(x, "postTest", js.undefined)
       
@@ -535,7 +533,7 @@ object pluginsMod {
       
       inline def setAssertions(value: js.Array[AssertionResult]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
-      inline def setAssertionsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertions", js.Array(value :_*))
+      inline def setAssertionsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertions", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }

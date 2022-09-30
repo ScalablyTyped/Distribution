@@ -6,45 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Get the latest version of an npm package.
-  	@example
-  	```
-  	import latestVersion = require('latest-version');
-  	(async () => {
-  		console.log(await latestVersion('ava'));
-  		//=> '0.18.0'
-  		console.log(await latestVersion('@sindresorhus/df'));
-  		//=> '1.0.1'
-  		// Also works with semver ranges and dist-tags
-  		console.log(await latestVersion('npm', {version: 'latest-5'}));
-  		//=> '5.5.1'
-  	})();
-  	```
-  	*/
-  inline def apply(packageName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def apply(packageName: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  
   @JSImport("latest-version", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function latestVersion(
-  // 	packageName: string,
-  // 	options?: latestVersion.Options
-  // ): Promise<string>;
-  // export = latestVersion;
-  @JSImport("latest-version", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof latestVersion */ js.Any = js.native
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof latestVersion */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(packageName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(packageName: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(packageName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait Options extends StObject {
     
     /**
-    		A semver range or [dist-tag](https://docs.npmjs.com/cli/dist-tag).
-    		*/
+    	A semver range or [dist-tag](https://docs.npmjs.com/cli/dist-tag).
+    	*/
     val version: js.UndefOr[String] = js.undefined
   }
   object Options {

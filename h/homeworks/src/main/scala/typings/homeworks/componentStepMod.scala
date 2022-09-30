@@ -14,11 +14,11 @@ object componentStepMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStep")
   @js.native
-  class WorksStep protected () extends HomeworksManager {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+  open class WorksStep protected () extends HomeworksManager {
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
     var active: Double = js.native
     
@@ -26,9 +26,9 @@ object componentStepMod {
     
     var `class`: String = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
-    /* private */ var m_active: js.Any = js.native
+    /* private */ var m_active: Any = js.native
     
     def ngAfterViewInit(): Unit = js.native
     
@@ -36,24 +36,24 @@ object componentStepMod {
     
     var onMove: EventEmitter[StepEvent] = js.native
     
-    /* private */ var wrapperElement: js.Any = js.native
+    /* private */ var wrapperElement: Any = js.native
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStepItem")
   @js.native
-  class WorksStepItem protected ()
+  open class WorksStepItem protected ()
     extends HomeworksManager
        with AfterContentInit {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
-    /* private */ var contentElement: js.Any = js.native
+    /* private */ var contentElement: Any = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
-    /* private */ var m_title: js.Any = js.native
+    /* private */ var m_title: Any = js.native
     
     /**
       * A callback method that is invoked immediately after
@@ -70,18 +70,18 @@ object componentStepMod {
     
     var titleChild: WorksStepTitle = js.native
     
-    /* private */ var titleElement: js.Any = js.native
+    /* private */ var titleElement: Any = js.native
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStepTitle")
   @js.native
-  class WorksStepTitle protected () extends HomeworksManager {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+  open class WorksStepTitle protected () extends HomeworksManager {
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
-    var elementRef: ElementRef[js.Any] = js.native
+    var elementRef: ElementRef[Any] = js.native
     
     def ngOnInit(): Unit = js.native
   }

@@ -65,30 +65,30 @@ object microphoneMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.wavesurferJs.wavesurferJsNumbers.`256`
-    - typings.wavesurferJs.wavesurferJsNumbers.`512`
-    - typings.wavesurferJs.wavesurferJsNumbers.`1024`
-    - typings.wavesurferJs.wavesurferJsNumbers.`2048`
-    - typings.wavesurferJs.wavesurferJsNumbers.`4096`
-    - typings.wavesurferJs.wavesurferJsNumbers.`8192`
-    - typings.wavesurferJs.wavesurferJsNumbers.`16384`
+    - typings.wavesurferJs.wavesurferJsInts.`256`
+    - typings.wavesurferJs.wavesurferJsInts.`512`
+    - typings.wavesurferJs.wavesurferJsInts.`1024`
+    - typings.wavesurferJs.wavesurferJsInts.`2048`
+    - typings.wavesurferJs.wavesurferJsInts.`4096`
+    - typings.wavesurferJs.wavesurferJsInts.`8192`
+    - typings.wavesurferJs.wavesurferJsInts.`16384`
   */
   trait BufferSize extends StObject
   object BufferSize {
     
-    inline def `1024`: typings.wavesurferJs.wavesurferJsNumbers.`1024` = 1024.asInstanceOf[typings.wavesurferJs.wavesurferJsNumbers.`1024`]
+    inline def `1024`: typings.wavesurferJs.wavesurferJsInts.`1024` = 1024.asInstanceOf[typings.wavesurferJs.wavesurferJsInts.`1024`]
     
-    inline def `16384`: typings.wavesurferJs.wavesurferJsNumbers.`16384` = 16384.asInstanceOf[typings.wavesurferJs.wavesurferJsNumbers.`16384`]
+    inline def `16384`: typings.wavesurferJs.wavesurferJsInts.`16384` = 16384.asInstanceOf[typings.wavesurferJs.wavesurferJsInts.`16384`]
     
-    inline def `2048`: typings.wavesurferJs.wavesurferJsNumbers.`2048` = 2048.asInstanceOf[typings.wavesurferJs.wavesurferJsNumbers.`2048`]
+    inline def `2048`: typings.wavesurferJs.wavesurferJsInts.`2048` = 2048.asInstanceOf[typings.wavesurferJs.wavesurferJsInts.`2048`]
     
-    inline def `256`: typings.wavesurferJs.wavesurferJsNumbers.`256` = 256.asInstanceOf[typings.wavesurferJs.wavesurferJsNumbers.`256`]
+    inline def `256`: typings.wavesurferJs.wavesurferJsInts.`256` = 256.asInstanceOf[typings.wavesurferJs.wavesurferJsInts.`256`]
     
-    inline def `4096`: typings.wavesurferJs.wavesurferJsNumbers.`4096` = 4096.asInstanceOf[typings.wavesurferJs.wavesurferJsNumbers.`4096`]
+    inline def `4096`: typings.wavesurferJs.wavesurferJsInts.`4096` = 4096.asInstanceOf[typings.wavesurferJs.wavesurferJsInts.`4096`]
     
-    inline def `512`: typings.wavesurferJs.wavesurferJsNumbers.`512` = 512.asInstanceOf[typings.wavesurferJs.wavesurferJsNumbers.`512`]
+    inline def `512`: typings.wavesurferJs.wavesurferJsInts.`512` = 512.asInstanceOf[typings.wavesurferJs.wavesurferJsInts.`512`]
     
-    inline def `8192`: typings.wavesurferJs.wavesurferJsNumbers.`8192` = 8192.asInstanceOf[typings.wavesurferJs.wavesurferJsNumbers.`8192`]
+    inline def `8192`: typings.wavesurferJs.wavesurferJsInts.`8192` = 8192.asInstanceOf[typings.wavesurferJs.wavesurferJsInts.`8192`]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

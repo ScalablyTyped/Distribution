@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "TiledMapLayer")
 @js.native
-class TiledMapLayer_ protected ()
+open class TiledMapLayer_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.TiledMapLayer_ {
   def this(options: TiledMapLayerOptions) = this()
 }

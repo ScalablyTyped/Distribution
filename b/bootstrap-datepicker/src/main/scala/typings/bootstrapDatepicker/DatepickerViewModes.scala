@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`0`
-  - typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`1`
-  - typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`2`
-  - typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`3`
-  - typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`4`
+  - typings.bootstrapDatepicker.bootstrapDatepickerInts.`0`
+  - typings.bootstrapDatepicker.bootstrapDatepickerInts.`1`
+  - typings.bootstrapDatepicker.bootstrapDatepickerInts.`2`
+  - typings.bootstrapDatepicker.bootstrapDatepickerInts.`3`
+  - typings.bootstrapDatepicker.bootstrapDatepickerInts.`4`
   - typings.bootstrapDatepicker.bootstrapDatepickerStrings.days
   - typings.bootstrapDatepicker.bootstrapDatepickerStrings.months
   - typings.bootstrapDatepicker.bootstrapDatepickerStrings.years
@@ -20,15 +20,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatepickerViewModes extends StObject
 object DatepickerViewModes {
   
-  inline def `0`: typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`0` = 0.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`0`]
+  inline def `0`: typings.bootstrapDatepicker.bootstrapDatepickerInts.`0` = 0.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerInts.`0`]
   
-  inline def `1`: typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`1` = 1.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`1`]
+  inline def `1`: typings.bootstrapDatepicker.bootstrapDatepickerInts.`1` = 1.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerInts.`1`]
   
-  inline def `2`: typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`2` = 2.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`2`]
+  inline def `2`: typings.bootstrapDatepicker.bootstrapDatepickerInts.`2` = 2.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerInts.`2`]
   
-  inline def `3`: typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`3` = 3.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`3`]
+  inline def `3`: typings.bootstrapDatepicker.bootstrapDatepickerInts.`3` = 3.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerInts.`3`]
   
-  inline def `4`: typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`4` = 4.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerNumbers.`4`]
+  inline def `4`: typings.bootstrapDatepicker.bootstrapDatepickerInts.`4` = 4.asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerInts.`4`]
   
   inline def centuries: typings.bootstrapDatepicker.bootstrapDatepickerStrings.centuries = "centuries".asInstanceOf[typings.bootstrapDatepicker.bootstrapDatepickerStrings.centuries]
   

@@ -68,7 +68,7 @@ object PortalData {
     
     inline def setOrnaments(value: js.Array[String]): Self = StObject.set(x, "ornaments", value.asInstanceOf[js.Any])
     
-    inline def setOrnamentsVarargs(value: String*): Self = StObject.set(x, "ornaments", js.Array(value :_*))
+    inline def setOrnamentsVarargs(value: String*): Self = StObject.set(x, "ornaments", js.Array(value*))
     
     inline def setResCount(value: Double): Self = StObject.set(x, "resCount", value.asInstanceOf[js.Any])
     

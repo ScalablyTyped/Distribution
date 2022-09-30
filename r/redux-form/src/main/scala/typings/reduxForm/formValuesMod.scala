@@ -26,22 +26,16 @@ object formValuesMod {
   val ^ : js.Any = js.native
   
   inline def formValues[Values, P](obj: Values): js.Function1[
-    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any]], 
-    ComponentClass[
-      P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any], 
-      ComponentState
-    ]
+    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any]], 
+    ComponentClass[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any], ComponentState]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValues")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any]], 
-    ComponentClass[
-      P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any], 
-      ComponentState
-    ]
+    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any]], 
+    ComponentClass[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[Any], ComponentState]
   ]]
   inline def formValues[FormData, K /* <: /* keyof FormData */ append | delete | get | getAll | has | set | forEach | entries | keys | values */, P](names: K*): js.Function1[
     /* component */ ComponentType[P & (Pick[FormData, K])], 
     ComponentClass[P & (Pick[FormData, K]), ComponentState]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValues")(names.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValues")(names.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[
     /* component */ ComponentType[P & (Pick[FormData, K])], 
     ComponentClass[P & (Pick[FormData, K]), ComponentState]
   ]]

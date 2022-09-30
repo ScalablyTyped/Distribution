@@ -1,10 +1,10 @@
 package typings.qbittorrentApiV2.mod
 
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`0`
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`1`
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`2`
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`6`
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`7`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`0`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`1`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`2`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`6`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`7`
 import typings.qbittorrentApiV2.qbittorrentApiV2Strings.all
 import typings.qbittorrentApiV2.qbittorrentApiV2Strings.enabled
 import org.scalablytyped.runtime.StObject

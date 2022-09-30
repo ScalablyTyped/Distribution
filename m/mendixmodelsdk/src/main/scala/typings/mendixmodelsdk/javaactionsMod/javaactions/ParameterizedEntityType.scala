@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IType because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IEntityType because Already inherited
-- typings.mendixmodelsdk.javaactionsMod.javaactions.IParameterizedEntityType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ParameterizedEntityType")
+- typings.mendixmodelsdk.javaactionsMod.javaactions.IParameterizedEntityType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ParameterizedEntityType")
 @js.native
-class ParameterizedEntityType protected () extends EntityType {
+open class ParameterizedEntityType protected () extends EntityType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -56,7 +56,7 @@ class ParameterizedEntityType protected () extends EntityType {
 }
 object ParameterizedEntityType {
   
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ParameterizedEntityType")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ParameterizedEntityType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -113,13 +113,13 @@ object ParameterizedEntityType {
   inline def createInListTypeUnderParameter(container: ListType): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ParameterizedEntityType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ParameterizedEntityType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ParameterizedEntityType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ParameterizedEntityType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

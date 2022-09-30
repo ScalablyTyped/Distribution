@@ -11,9 +11,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * In version 9.0.2: deleted
+  */
 @JSImport("mendixmodelsdk", "microflows.AppServiceCallAction")
 @js.native
-class AppServiceCallAction protected ()
+open class AppServiceCallAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.AppServiceCallAction {
   def this(
     model: AbstractModel,
@@ -42,6 +45,9 @@ object AppServiceCallAction {
     * Creates and returns a new AppServiceCallAction instance in the SDK and on the server.
     * The new AppServiceCallAction will be automatically stored in the 'action' property
     * of the parent ActionActivity element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.0.1
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallAction]

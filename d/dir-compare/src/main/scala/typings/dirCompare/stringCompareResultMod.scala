@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object stringCompareResultMod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.dirCompare.dirCompareNumbers.`-1`
-    - typings.dirCompare.dirCompareNumbers.`0`
-    - typings.dirCompare.dirCompareNumbers.`1`
+    - typings.dirCompare.dirCompareInts.`-1`
+    - typings.dirCompare.dirCompareInts.`0`
+    - typings.dirCompare.dirCompareInts.`1`
   */
   trait StringCompareResult extends StObject
   object StringCompareResult {
     
-    inline def `-1`: typings.dirCompare.dirCompareNumbers.`-1` = -1.asInstanceOf[typings.dirCompare.dirCompareNumbers.`-1`]
+    inline def `-1`: typings.dirCompare.dirCompareInts.`-1` = -1.asInstanceOf[typings.dirCompare.dirCompareInts.`-1`]
     
-    inline def `0`: typings.dirCompare.dirCompareNumbers.`0` = 0.asInstanceOf[typings.dirCompare.dirCompareNumbers.`0`]
+    inline def `0`: typings.dirCompare.dirCompareInts.`0` = 0.asInstanceOf[typings.dirCompare.dirCompareInts.`0`]
     
-    inline def `1`: typings.dirCompare.dirCompareNumbers.`1` = 1.asInstanceOf[typings.dirCompare.dirCompareNumbers.`1`]
+    inline def `1`: typings.dirCompare.dirCompareInts.`1` = 1.asInstanceOf[typings.dirCompare.dirCompareInts.`1`]
   }
 }

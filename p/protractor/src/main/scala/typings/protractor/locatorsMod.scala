@@ -4,7 +4,6 @@ import typings.seleniumWebdriver.byMod.ByHash
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object locatorsMod {
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
   - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("protractor/built/locators", "ProtractorBy")
   @js.native
-  class ProtractorBy () extends WebdriverBy {
+  open class ProtractorBy () extends WebdriverBy {
     
     def addLocator(name: String, script: String): Unit = js.native
     /**
@@ -112,7 +111,7 @@ object locatorsMod {
       */
     def buttonText(searchText: String): ProtractorLocator = js.native
     
-    /* private */ def byRepeaterInner(exact: js.Any, repeatDescriptor: js.Any): js.Any = js.native
+    /* private */ def byRepeaterInner(exact: Any, repeatDescriptor: Any): Any = js.native
     
     /**
       * Find elements by CSS which contain a certain string.
@@ -132,7 +131,7 @@ object locatorsMod {
       * @returns {ProtractorLocator} location strategy
       */
     def cssContainingText(cssSelector: String, searchText: String): ProtractorLocator = js.native
-    def cssContainingText(cssSelector: String, searchText: RegExp): ProtractorLocator = js.native
+    def cssContainingText(cssSelector: String, searchText: js.RegExp): ProtractorLocator = js.native
     
     /**
       * Find an element by css selector within the Shadow DOM.
@@ -309,7 +308,7 @@ object locatorsMod {
   
   @JSImport("protractor/built/locators", "WebdriverBy")
   @js.native
-  class WebdriverBy () extends StObject {
+  open class WebdriverBy () extends StObject {
     
     def className(className: String): By = js.native
     
@@ -318,9 +317,9 @@ object locatorsMod {
     def id(id: String): By = js.native
     
     @JSName("js")
-    def js_(js_ : String, var_args: js.Any*): By = js.native
+    def js_(js_ : String, var_args: Any*): By = js.native
     @JSName("js")
-    def js_(js_ : js.Function, var_args: js.Any*): By = js.native
+    def js_(js_ : js.Function, var_args: Any*): By = js.native
     
     def linkText(linkText: String): By = js.native
     

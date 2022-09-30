@@ -1,6 +1,7 @@
 package typings.pCatchIf
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,5 +16,5 @@ object mod {
   
   type ErrorConstructor = Instantiable1[/* message */ js.UndefOr[String], js.Error]
   
-  type Predicate = ErrorConstructor | js.Array[ErrorConstructor] | Boolean | (js.Function1[/* error */ js.Error, Boolean | js.Thenable[Boolean]])
+  type Predicate = ErrorConstructor | js.Array[ErrorConstructor] | Boolean | (js.Function1[/* error */ js.Error, Boolean | PromiseLike[Boolean]])
 }

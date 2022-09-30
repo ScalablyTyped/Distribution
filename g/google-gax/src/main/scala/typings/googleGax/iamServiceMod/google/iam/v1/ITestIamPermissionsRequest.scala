@@ -28,7 +28,7 @@ object ITestIamPermissionsRequest {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

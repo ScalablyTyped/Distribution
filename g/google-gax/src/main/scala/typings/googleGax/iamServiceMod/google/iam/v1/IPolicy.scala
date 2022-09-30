@@ -1,6 +1,5 @@
 package typings.googleGax.iamServiceMod.google.iam.v1
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait IPolicy extends StObject {
   var bindings: js.UndefOr[js.Array[IBinding] | Null] = js.undefined
   
   /** Policy etag */
-  var etag: js.UndefOr[Uint8Array | Null] = js.undefined
+  var etag: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** Policy version */
   var version: js.UndefOr[Double | Null] = js.undefined
@@ -32,9 +31,9 @@ object IPolicy {
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
-    inline def setBindingsVarargs(value: IBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+    inline def setBindingsVarargs(value: IBinding*): Self = StObject.set(x, "bindings", js.Array(value*))
     
-    inline def setEtag(value: Uint8Array): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: js.typedarray.Uint8Array): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     inline def setEtagNull: Self = StObject.set(x, "etag", null)
     

@@ -1,16 +1,16 @@
 package typings.canvas
 
 import typings.canvas.anon.Family
-import typings.canvas.canvasNumbers.`0`
-import typings.canvas.canvasNumbers.`1`
-import typings.canvas.canvasNumbers.`2`
-import typings.canvas.canvasNumbers.`3`
-import typings.canvas.canvasNumbers.`4`
-import typings.canvas.canvasNumbers.`5`
-import typings.canvas.canvasNumbers.`6`
-import typings.canvas.canvasNumbers.`7`
-import typings.canvas.canvasNumbers.`8`
-import typings.canvas.canvasNumbers.`9`
+import typings.canvas.canvasInts.`0`
+import typings.canvas.canvasInts.`1`
+import typings.canvas.canvasInts.`2`
+import typings.canvas.canvasInts.`3`
+import typings.canvas.canvasInts.`4`
+import typings.canvas.canvasInts.`5`
+import typings.canvas.canvasInts.`6`
+import typings.canvas.canvasInts.`7`
+import typings.canvas.canvasInts.`8`
+import typings.canvas.canvasInts.`9`
 import typings.canvas.canvasStrings.A1
 import typings.canvas.canvasStrings.A8
 import typings.canvas.canvasStrings.RGB16_565

@@ -41,7 +41,7 @@ object d3v4adaptorMod {
     
     def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition]
     @JSName("drag")
-    def drag_GElement_DraggedElementBaseTypeDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject]
+    def drag_GElementDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject]
     @JSName("drag")
     var drag_Original: Fn0
     

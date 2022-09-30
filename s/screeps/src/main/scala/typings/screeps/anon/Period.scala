@@ -1,11 +1,11 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsNumbers.`100`
-import typings.screeps.screepsNumbers.`150`
-import typings.screeps.screepsNumbers.`200`
-import typings.screeps.screepsNumbers.`250`
-import typings.screeps.screepsNumbers.`300`
-import typings.screeps.screepsNumbers.`50`
+import typings.screeps.screepsInts.`100`
+import typings.screeps.screepsInts.`150`
+import typings.screeps.screepsInts.`200`
+import typings.screeps.screepsInts.`250`
+import typings.screeps.screepsInts.`300`
+import typings.screeps.screepsInts.`50`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,27 +22,27 @@ trait Period extends StObject {
   var effect: js.Tuple5[`50`, `100`, `150`, `200`, `250`]
   
   var level: js.Tuple5[
-    typings.screeps.screepsNumbers.`10`, 
-    typings.screeps.screepsNumbers.`11`, 
-    typings.screeps.screepsNumbers.`12`, 
-    typings.screeps.screepsNumbers.`14`, 
-    typings.screeps.screepsNumbers.`22`
+    typings.screeps.screepsInts.`10`, 
+    typings.screeps.screepsInts.`11`, 
+    typings.screeps.screepsInts.`12`, 
+    typings.screeps.screepsInts.`14`, 
+    typings.screeps.screepsInts.`22`
   ]
   
-  var period: typings.screeps.screepsNumbers.`15`
+  var period: typings.screeps.screepsInts.`15`
   
-  var range: typings.screeps.screepsNumbers.`3`
+  var range: typings.screeps.screepsInts.`3`
 }
 object Period {
   
   inline def apply(
     effect: js.Tuple5[`50`, `100`, `150`, `200`, `250`],
     level: js.Tuple5[
-      typings.screeps.screepsNumbers.`10`, 
-      typings.screeps.screepsNumbers.`11`, 
-      typings.screeps.screepsNumbers.`12`, 
-      typings.screeps.screepsNumbers.`14`, 
-      typings.screeps.screepsNumbers.`22`
+      typings.screeps.screepsInts.`10`, 
+      typings.screeps.screepsInts.`11`, 
+      typings.screeps.screepsInts.`12`, 
+      typings.screeps.screepsInts.`14`, 
+      typings.screeps.screepsInts.`22`
     ]
   ): Period = {
     val __obj = js.Dynamic.literal(className = "operator", cooldown = 100, duration = 300, effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], period = 15, range = 3)
@@ -61,16 +61,16 @@ object Period {
     
     inline def setLevel(
       value: js.Tuple5[
-          typings.screeps.screepsNumbers.`10`, 
-          typings.screeps.screepsNumbers.`11`, 
-          typings.screeps.screepsNumbers.`12`, 
-          typings.screeps.screepsNumbers.`14`, 
-          typings.screeps.screepsNumbers.`22`
+          typings.screeps.screepsInts.`10`, 
+          typings.screeps.screepsInts.`11`, 
+          typings.screeps.screepsInts.`12`, 
+          typings.screeps.screepsInts.`14`, 
+          typings.screeps.screepsInts.`22`
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setPeriod(value: typings.screeps.screepsNumbers.`15`): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: typings.screeps.screepsInts.`15`): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

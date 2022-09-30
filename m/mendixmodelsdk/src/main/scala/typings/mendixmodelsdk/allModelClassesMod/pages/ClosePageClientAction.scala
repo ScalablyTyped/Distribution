@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ClosePageClientAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ClosePageClientAction")
 @js.native
-class ClosePageClientAction protected ()
+open class ClosePageClientAction protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.ClosePageClientAction {
   def this(
     model: AbstractModel,
@@ -32,7 +32,7 @@ class ClosePageClientAction protected ()
 }
 object ClosePageClientAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ClosePageClientAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ClosePageClientAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -232,13 +232,13 @@ object ClosePageClientAction {
   inline def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.ClosePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClosePageClientAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ClosePageClientAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ClosePageClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ClosePageClientAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ClosePageClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

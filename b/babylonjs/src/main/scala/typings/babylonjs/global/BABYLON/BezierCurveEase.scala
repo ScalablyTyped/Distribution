@@ -159,8 +159,7 @@ open class BezierCurveEase ()
   override def ease(gradient: Double): Double = js.native
   
   /**
-    * @param gradient
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def easeInCore(gradient: Double): Double = js.native

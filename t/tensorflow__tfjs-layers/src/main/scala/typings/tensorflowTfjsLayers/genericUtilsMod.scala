@@ -6,9 +6,9 @@ import typings.tensorflowTfjsCore.fusedTypesMod.Activation
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
 import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.ConfigDictValue
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`-1`
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`0`
-import typings.tensorflowTfjsLayers.tensorflowTfjsLayersNumbers.`1`
+import typings.tensorflowTfjsLayers.tensorflowTfjsLayersInts.`-1`
+import typings.tensorflowTfjsLayers.tensorflowTfjsLayersInts.`0`
+import typings.tensorflowTfjsLayers.tensorflowTfjsLayersInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

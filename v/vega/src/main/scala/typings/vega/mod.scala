@@ -7,8 +7,8 @@ import typings.std.Partial
 import typings.std.PropertyKey
 import typings.vega.vegaBooleans.`false`
 import typings.vega.vegaBooleans.`true`
-import typings.vega.vegaNumbers.`0`
-import typings.vega.vegaNumbers.`1`
+import typings.vega.vegaInts.`0`
+import typings.vega.vegaInts.`1`
 import typings.vega.vegaStrings.DEBUG
 import typings.vega.vegaStrings.ERROR
 import typings.vega.vegaStrings.INFO
@@ -176,7 +176,7 @@ object mod {
   inline def expressionFunction(name: String, fn: Any, visitor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def expressionFunction(name: String, fn: Unit, visitor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def extend[T](target: T, source: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(target.asInstanceOf[js.Any]).`++`(source.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def extend[T](target: T, source: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(target.asInstanceOf[js.Any]).`++`(source.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def extent(array: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   inline def extent(array: js.Array[Double], accessor: AccessorFn[Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(array.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]

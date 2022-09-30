@@ -74,7 +74,7 @@ object rt {
   
   inline def checkACStatus(t: IParsedType): IStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("checkACStatus")(t.asInstanceOf[js.Any]).asInstanceOf[IStatus]
   
-  inline def derive(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("derive")(List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
+  inline def derive(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("derive")(scala.List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
   
   inline def dump(ts: IParsedType): ITypeCollection | IType = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(ts.asInstanceOf[js.Any]).asInstanceOf[ITypeCollection | IType]
   inline def dump(ts: IParsedTypeCollection): ITypeCollection | IType = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(ts.asInstanceOf[js.Any]).asInstanceOf[ITypeCollection | IType]
@@ -515,7 +515,7 @@ object rt {
     inline def visit(node: BaseNode, action: js.Function1[/* n */ BaseNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  inline def unify(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("unify")(List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
+  inline def unify(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("unify")(scala.List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
   
   inline def validate(i: Any, t: IParsedType): IStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(i.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IStatus]
   inline def validate(i: Any, t: IParsedType, autoClose: Boolean): IStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(i.asInstanceOf[js.Any], t.asInstanceOf[js.Any], autoClose.asInstanceOf[js.Any])).asInstanceOf[IStatus]

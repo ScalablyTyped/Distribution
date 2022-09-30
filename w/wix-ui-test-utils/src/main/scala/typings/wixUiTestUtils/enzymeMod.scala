@@ -22,12 +22,7 @@ object enzymeMod {
   inline def enzymeTestkitFactoryCreator[T /* <: BaseDriver */](driverFactory: EnzymeDriverFactory[T]): js.Function1[/* obj */ WrapperData, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enzymeTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ WrapperData, T]]
   
   inline def enzymeUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
-    driverFactory: js.Function3[
-      /* base */ UniDriver[js.Any], 
-      /* body */ UniDriver[js.Any], 
-      /* data */ DataHookString, 
-      T
-    ]
+    driverFactory: js.Function3[/* base */ UniDriver[Any], /* body */ UniDriver[Any], /* data */ DataHookString, T]
   ): js.Function1[/* obj */ WrapperData, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enzymeUniTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ WrapperData, T]]
   
   inline def isEnzymeTestkitExists[T /* <: BaseDriver */](

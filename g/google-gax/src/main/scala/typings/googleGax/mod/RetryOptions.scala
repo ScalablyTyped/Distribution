@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "RetryOptions")
 @js.native
-class RetryOptions protected ()
+open class RetryOptions protected ()
   extends typings.googleGax.gaxMod.RetryOptions {
   def this(retryCodes: js.Array[Double], backoffSettings: BackoffSettings) = this()
 }

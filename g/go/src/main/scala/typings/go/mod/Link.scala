@@ -277,7 +277,7 @@ open class Link () extends Part {
   var path: Shape = js.native
   
   /**Gets or sets the List of Points in the route. Can also be set as an Array of numbers.*/
-  var points: List[Point] = js.native
+  var points: typings.go.mod.List[Point] = js.native
   
   /**This read-only property returns the number of points in the route.*/
   var pointsCount: Double = js.native

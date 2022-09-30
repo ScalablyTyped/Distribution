@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-vendor" : "36.6.7"
+      "victory-vendor" : "36.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-vendor" : "36.6.7"
+      "victory-vendor" : "36.6.8"
     }
   ],
   "compile-devDependencies" : [

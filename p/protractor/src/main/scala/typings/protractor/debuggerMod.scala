@@ -9,12 +9,12 @@ object debuggerMod {
   
   @JSImport("protractor/built/debugger", "DebugHelper")
   @js.native
-  class DebugHelper protected () extends StObject {
+  open class DebugHelper protected () extends StObject {
     def this(browserUnderDebug_ : ProtractorBrowser) = this()
     
-    /* private */ var browserUnderDebug_ : js.Any = js.native
+    /* private */ var browserUnderDebug_ : Any = js.native
     
-    var dbgCodeExecutor: js.Any = js.native
+    var dbgCodeExecutor: Any = js.native
     
     /**
       * Set to true when we validate that the debug port is open. Since the debug
@@ -63,6 +63,6 @@ object debuggerMod {
       *     is done. The promise will resolve to a boolean which represents whether
       *     this is the first time that the debugger is called.
       */
-    /* private */ def validatePortAvailability_(port: js.Any): js.Any = js.native
+    /* private */ def validatePortAvailability_(port: Any): Any = js.native
   }
 }

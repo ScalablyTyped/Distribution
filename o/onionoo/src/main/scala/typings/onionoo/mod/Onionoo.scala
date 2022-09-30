@@ -3,8 +3,6 @@ package typings.onionoo.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.got.mod.Cache
-import typings.got.mod.GotPromise
 import typings.onionoo.anon.Accept
 import typings.onionoo.anon.InstancePartialEndpoints
 import typings.onionoo.anon.PartialRecord1week1month6
@@ -28,6 +26,7 @@ import typings.onionoo.onionooStrings.summary
 import typings.onionoo.onionooStrings.unrecommended
 import typings.onionoo.onionooStrings.uptime
 import typings.onionoo.onionooStrings.weights
+import typings.std.Cache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -162,7 +161,7 @@ object Onionoo {
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
       
       inline def setHashed_fingerprint(value: String): Self = StObject.set(x, "hashed_fingerprint", value.asInstanceOf[js.Any])
       
@@ -176,7 +175,7 @@ object Onionoo {
       
       inline def setOr_addresses(value: js.Array[String]): Self = StObject.set(x, "or_addresses", value.asInstanceOf[js.Any])
       
-      inline def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value :_*))
+      inline def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value*))
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
@@ -192,7 +191,7 @@ object Onionoo {
       
       inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
       
-      inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -310,23 +309,23 @@ object Onionoo {
   @js.native
   trait Endpoints extends StObject {
     
-    def bandwidth(): GotPromise[Bandwidth] = js.native
-    def bandwidth(query: QueryParameters): GotPromise[Bandwidth] = js.native
+    def bandwidth(): Any = js.native
+    def bandwidth(query: QueryParameters): Any = js.native
     
-    def clients(): GotPromise[Clients] = js.native
-    def clients(query: QueryParameters): GotPromise[Clients] = js.native
+    def clients(): Any = js.native
+    def clients(query: QueryParameters): Any = js.native
     
-    def details(): GotPromise[Details] = js.native
-    def details(query: QueryParameters): GotPromise[Details] = js.native
+    def details(): Any = js.native
+    def details(query: QueryParameters): Any = js.native
     
-    def summary(): GotPromise[Summary] = js.native
-    def summary(query: QueryParameters): GotPromise[Summary] = js.native
+    def summary(): Any = js.native
+    def summary(query: QueryParameters): Any = js.native
     
-    def uptime(): GotPromise[Uptime] = js.native
-    def uptime(query: QueryParameters): GotPromise[Uptime] = js.native
+    def uptime(): Any = js.native
+    def uptime(query: QueryParameters): Any = js.native
     
-    def weights(): GotPromise[Weights] = js.native
-    def weights(query: QueryParameters): GotPromise[Weights] = js.native
+    def weights(): Any = js.native
+    def weights(query: QueryParameters): Any = js.native
   }
   
   trait Histogram extends StObject {
@@ -371,7 +370,7 @@ object Onionoo {
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -379,29 +378,29 @@ object Onionoo {
   trait Instance extends StObject {
     
     @JSName("get")
-    def get_bandwidth(endpoint: bandwidth): GotPromise[Bandwidth] = js.native
+    def get_bandwidth(endpoint: bandwidth): Any = js.native
     @JSName("get")
-    def get_bandwidth(endpoint: bandwidth, query: QueryParameters): GotPromise[Bandwidth] = js.native
+    def get_bandwidth(endpoint: bandwidth, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_clients(endpoint: clients): GotPromise[Clients] = js.native
+    def get_clients(endpoint: clients): Any = js.native
     @JSName("get")
-    def get_clients(endpoint: clients, query: QueryParameters): GotPromise[Clients] = js.native
+    def get_clients(endpoint: clients, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_details(endpoint: details): GotPromise[Details] = js.native
+    def get_details(endpoint: details): Any = js.native
     @JSName("get")
-    def get_details(endpoint: details, query: QueryParameters): GotPromise[Details] = js.native
+    def get_details(endpoint: details, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_summary(endpoint: summary): GotPromise[Summary] = js.native
+    def get_summary(endpoint: summary): Any = js.native
     @JSName("get")
-    def get_summary(endpoint: summary, query: QueryParameters): GotPromise[Summary] = js.native
+    def get_summary(endpoint: summary, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_uptime(endpoint: uptime): GotPromise[Uptime] = js.native
+    def get_uptime(endpoint: uptime): Any = js.native
     @JSName("get")
-    def get_uptime(endpoint: uptime, query: QueryParameters): GotPromise[Uptime] = js.native
+    def get_uptime(endpoint: uptime, query: QueryParameters): Any = js.native
     @JSName("get")
-    def get_weights(endpoint: weights): GotPromise[Weights] = js.native
+    def get_weights(endpoint: weights): Any = js.native
     @JSName("get")
-    def get_weights(endpoint: weights, query: QueryParameters): GotPromise[Weights] = js.native
+    def get_weights(endpoint: weights, query: QueryParameters): Any = js.native
   }
   
   trait NodeBandwidth extends StObject {
@@ -505,7 +504,7 @@ object Onionoo {
       
       inline def setEndpoints(value: js.Array[summary | details | bandwidth | weights | clients | uptime]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      inline def setEndpointsVarargs(value: (summary | details | bandwidth | weights | clients | uptime)*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: (summary | details | bandwidth | weights | clients | uptime)*): Self = StObject.set(x, "endpoints", js.Array(value*))
     }
   }
   
@@ -710,7 +709,7 @@ object Onionoo {
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setFirst_seen_days(value: String): Self = StObject.set(x, "first_seen_days", value.asInstanceOf[js.Any])
       
@@ -1118,7 +1117,7 @@ object Onionoo {
       
       inline def setAlleged_familyUndefined: Self = StObject.set(x, "alleged_family", js.undefined)
       
-      inline def setAlleged_familyVarargs(value: String*): Self = StObject.set(x, "alleged_family", js.Array(value :_*))
+      inline def setAlleged_familyVarargs(value: String*): Self = StObject.set(x, "alleged_family", js.Array(value*))
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -1166,19 +1165,19 @@ object Onionoo {
       
       inline def setEffective_familyUndefined: Self = StObject.set(x, "effective_family", js.undefined)
       
-      inline def setEffective_familyVarargs(value: String*): Self = StObject.set(x, "effective_family", js.Array(value :_*))
+      inline def setEffective_familyVarargs(value: String*): Self = StObject.set(x, "effective_family", js.Array(value*))
       
       inline def setExit_addresses(value: js.Array[String]): Self = StObject.set(x, "exit_addresses", value.asInstanceOf[js.Any])
       
       inline def setExit_addressesUndefined: Self = StObject.set(x, "exit_addresses", js.undefined)
       
-      inline def setExit_addressesVarargs(value: String*): Self = StObject.set(x, "exit_addresses", js.Array(value :_*))
+      inline def setExit_addressesVarargs(value: String*): Self = StObject.set(x, "exit_addresses", js.Array(value*))
       
       inline def setExit_policy(value: js.Array[String]): Self = StObject.set(x, "exit_policy", value.asInstanceOf[js.Any])
       
       inline def setExit_policyUndefined: Self = StObject.set(x, "exit_policy", js.undefined)
       
-      inline def setExit_policyVarargs(value: String*): Self = StObject.set(x, "exit_policy", js.Array(value :_*))
+      inline def setExit_policyVarargs(value: String*): Self = StObject.set(x, "exit_policy", js.Array(value*))
       
       inline def setExit_policy_summary(value: Accept): Self = StObject.set(x, "exit_policy_summary", value.asInstanceOf[js.Any])
       
@@ -1200,7 +1199,7 @@ object Onionoo {
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
       
       inline def setGuard_probability(value: Double): Self = StObject.set(x, "guard_probability", value.asInstanceOf[js.Any])
       
@@ -1218,7 +1217,7 @@ object Onionoo {
       
       inline def setIndirect_familyUndefined: Self = StObject.set(x, "indirect_family", js.undefined)
       
-      inline def setIndirect_familyVarargs(value: String*): Self = StObject.set(x, "indirect_family", js.Array(value :_*))
+      inline def setIndirect_familyVarargs(value: String*): Self = StObject.set(x, "indirect_family", js.Array(value*))
       
       inline def setLast_changed_address_or_port(value: String): Self = StObject.set(x, "last_changed_address_or_port", value.asInstanceOf[js.Any])
       
@@ -1252,7 +1251,7 @@ object Onionoo {
       
       inline def setOr_addresses(value: js.Array[String]): Self = StObject.set(x, "or_addresses", value.asInstanceOf[js.Any])
       
-      inline def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value :_*))
+      inline def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value*))
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
@@ -1272,19 +1271,19 @@ object Onionoo {
       
       inline def setUnreachable_or_addressesUndefined: Self = StObject.set(x, "unreachable_or_addresses", js.undefined)
       
-      inline def setUnreachable_or_addressesVarargs(value: String*): Self = StObject.set(x, "unreachable_or_addresses", js.Array(value :_*))
+      inline def setUnreachable_or_addressesVarargs(value: String*): Self = StObject.set(x, "unreachable_or_addresses", js.Array(value*))
       
       inline def setUnverified_host_names(value: js.Array[String]): Self = StObject.set(x, "unverified_host_names", value.asInstanceOf[js.Any])
       
       inline def setUnverified_host_namesUndefined: Self = StObject.set(x, "unverified_host_names", js.undefined)
       
-      inline def setUnverified_host_namesVarargs(value: String*): Self = StObject.set(x, "unverified_host_names", js.Array(value :_*))
+      inline def setUnverified_host_namesVarargs(value: String*): Self = StObject.set(x, "unverified_host_names", js.Array(value*))
       
       inline def setVerified_host_names(value: js.Array[String]): Self = StObject.set(x, "verified_host_names", value.asInstanceOf[js.Any])
       
       inline def setVerified_host_namesUndefined: Self = StObject.set(x, "verified_host_names", js.undefined)
       
-      inline def setVerified_host_namesVarargs(value: String*): Self = StObject.set(x, "verified_host_names", js.Array(value :_*))
+      inline def setVerified_host_namesVarargs(value: String*): Self = StObject.set(x, "verified_host_names", js.Array(value*))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -1332,7 +1331,7 @@ object Onionoo {
       
       inline def setA(value: js.Array[String]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      inline def setAVarargs(value: String*): Self = StObject.set(x, "a", js.Array(value :_*))
+      inline def setAVarargs(value: String*): Self = StObject.set(x, "a", js.Array(value*))
       
       inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
@@ -1542,7 +1541,7 @@ object Onionoo {
       
       inline def setBridges(value: js.Array[TBridge]): Self = StObject.set(x, "bridges", value.asInstanceOf[js.Any])
       
-      inline def setBridgesVarargs(value: TBridge*): Self = StObject.set(x, "bridges", js.Array(value :_*))
+      inline def setBridgesVarargs(value: TBridge*): Self = StObject.set(x, "bridges", js.Array(value*))
       
       inline def setBridges_published(value: String): Self = StObject.set(x, "bridges_published", value.asInstanceOf[js.Any])
       
@@ -1564,7 +1563,7 @@ object Onionoo {
       
       inline def setRelays(value: js.Array[TRelay]): Self = StObject.set(x, "relays", value.asInstanceOf[js.Any])
       
-      inline def setRelaysVarargs(value: TRelay*): Self = StObject.set(x, "relays", js.Array(value :_*))
+      inline def setRelaysVarargs(value: TRelay*): Self = StObject.set(x, "relays", js.Array(value*))
       
       inline def setRelays_published(value: String): Self = StObject.set(x, "relays_published", value.asInstanceOf[js.Any])
       

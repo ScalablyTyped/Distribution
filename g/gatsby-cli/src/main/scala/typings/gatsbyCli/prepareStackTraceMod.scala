@@ -13,19 +13,21 @@ object prepareStackTraceMod {
   
   @JSImport("gatsby-cli/lib/reporter/prepare-stack-trace", "ErrorWithCodeFrame")
   @js.native
-  class ErrorWithCodeFrame protected ()
+  open class ErrorWithCodeFrame protected ()
     extends StObject
        with Error {
-    def this(error: Error) = this()
+    def this(error: js.Error) = this()
     
-    var codeFrame: String = js.native
+    var codeFrame: js.UndefOr[String] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def prepareStackTrace(error: Error, source: String): js.Promise[ErrorWithCodeFrame] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareStackTrace")(error.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ErrorWithCodeFrame]]
+  inline def prepareStackTrace(error: js.Error, sourceOfMainMap: String): ErrorWithCodeFrame = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareStackTrace")(error.asInstanceOf[js.Any], sourceOfMainMap.asInstanceOf[js.Any])).asInstanceOf[ErrorWithCodeFrame]
 }

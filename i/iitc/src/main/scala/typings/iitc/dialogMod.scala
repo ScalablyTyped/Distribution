@@ -21,8 +21,8 @@ object dialogMod {
     /** The dialog that has focus. */
     @JSGlobal("DIALOG_FOCUS")
     @js.native
-    def DIALOG_FOCUS: js.Any = js.native
-    inline def DIALOG_FOCUS_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("DIALOG_FOCUS")(x.asInstanceOf[js.Any])
+    def DIALOG_FOCUS: Any = js.native
+    inline def DIALOG_FOCUS_=(x: Any): Unit = js.Dynamic.global.updateDynamic("DIALOG_FOCUS")(x.asInstanceOf[js.Any])
     
     /** The global ID of onscreen dialogs. */
     @JSGlobal("DIALOG_ID")
@@ -41,7 +41,7 @@ object dialogMod {
     inline def DIALOG_SLIDE_DURATION_=(x: Double): Unit = js.Dynamic.global.updateDynamic("DIALOG_SLIDE_DURATION")(x.asInstanceOf[js.Any])
     
     /** custom alert box */
-    inline def alert(text: String, isHTML: Boolean, closeCallback: js.Any): JQuery = (js.Dynamic.global.applyDynamic("alert")(text.asInstanceOf[js.Any], isHTML.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[JQuery]
+    inline def alert(text: String, isHTML: Boolean, closeCallback: Any): JQuery = (js.Dynamic.global.applyDynamic("alert")(text.asInstanceOf[js.Any], isHTML.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[JQuery]
     
     /** Create and show dialog */
     inline def dialog(data: DialogOptions): JQuery = js.Dynamic.global.applyDynamic("dialog")(data.asInstanceOf[js.Any]).asInstanceOf[JQuery]
@@ -52,26 +52,26 @@ object dialogMod {
     // see https://jqueryui.com/dialog/
     trait DialogOptions extends StObject {
       
-      var appendTo: js.UndefOr[js.Any] = js.undefined
+      var appendTo: js.UndefOr[Any] = js.undefined
       
       var autoOpen: js.UndefOr[Boolean] = js.undefined
       
-      var blurCallback: js.UndefOr[js.Any] = js.undefined
+      var blurCallback: js.UndefOr[Any] = js.undefined
       
       var buttons: js.UndefOr[js.Array[ButtonOptions] | StringDictionary[js.Function0[Unit]]] = js.undefined
       
-      var classes: js.UndefOr[js.Any] = js.undefined
+      var classes: js.UndefOr[Any] = js.undefined
       
-      var closeCallback: js.UndefOr[js.Any] = js.undefined
+      var closeCallback: js.UndefOr[Any] = js.undefined
       
       var closeOnEscape: js.UndefOr[Boolean] = js.undefined
       
       /** Specifies the text for the close button */
       var closeText: js.UndefOr[String] = js.undefined
       
-      var collapseCallback: js.UndefOr[js.Any] = js.undefined
+      var collapseCallback: js.UndefOr[Any] = js.undefined
       
-      var collapseExpandCallback: js.UndefOr[js.Any] = js.undefined
+      var collapseExpandCallback: js.UndefOr[Any] = js.undefined
       
       var dialogClass: js.UndefOr[String] = js.undefined
       
@@ -81,14 +81,14 @@ object dialogMod {
         */
       var draggable: js.UndefOr[Boolean] = js.undefined
       
-      var expandCallback: js.UndefOr[js.Any] = js.undefined
+      var expandCallback: js.UndefOr[Any] = js.undefined
       
-      var focusCallback: js.UndefOr[js.Any] = js.undefined
+      var focusCallback: js.UndefOr[Any] = js.undefined
       
       /** size */
       var height: js.UndefOr[String | Double] = js.undefined
       
-      var hide: js.UndefOr[js.Any] = js.undefined
+      var hide: js.UndefOr[Any] = js.undefined
       
       /** Dialog contents (if no text) */
       var html: js.UndefOr[String | HTMLElement | JQuery] = js.undefined
@@ -111,7 +111,7 @@ object dialogMod {
       var modal: js.UndefOr[Boolean] = js.undefined
       
       /** position, see: https://api.jqueryui.com/position/ */
-      var position: js.UndefOr[js.Any] = js.undefined
+      var position: js.UndefOr[Any] = js.undefined
       
       /**
         * resizeable dialog (won't work in iitc out-of-the-box)
@@ -139,7 +139,7 @@ object dialogMod {
       
       extension [Self <: DialogOptions](x: Self) {
         
-        inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+        inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
         
         inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
         
@@ -147,7 +147,7 @@ object dialogMod {
         
         inline def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
         
-        inline def setBlurCallback(value: js.Any): Self = StObject.set(x, "blurCallback", value.asInstanceOf[js.Any])
+        inline def setBlurCallback(value: Any): Self = StObject.set(x, "blurCallback", value.asInstanceOf[js.Any])
         
         inline def setBlurCallbackUndefined: Self = StObject.set(x, "blurCallback", js.undefined)
         
@@ -155,13 +155,13 @@ object dialogMod {
         
         inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
         
-        inline def setButtonsVarargs(value: ButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+        inline def setButtonsVarargs(value: ButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value*))
         
-        inline def setClasses(value: js.Any): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+        inline def setClasses(value: Any): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
         
         inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
         
-        inline def setCloseCallback(value: js.Any): Self = StObject.set(x, "closeCallback", value.asInstanceOf[js.Any])
+        inline def setCloseCallback(value: Any): Self = StObject.set(x, "closeCallback", value.asInstanceOf[js.Any])
         
         inline def setCloseCallbackUndefined: Self = StObject.set(x, "closeCallback", js.undefined)
         
@@ -173,11 +173,11 @@ object dialogMod {
         
         inline def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
         
-        inline def setCollapseCallback(value: js.Any): Self = StObject.set(x, "collapseCallback", value.asInstanceOf[js.Any])
+        inline def setCollapseCallback(value: Any): Self = StObject.set(x, "collapseCallback", value.asInstanceOf[js.Any])
         
         inline def setCollapseCallbackUndefined: Self = StObject.set(x, "collapseCallback", js.undefined)
         
-        inline def setCollapseExpandCallback(value: js.Any): Self = StObject.set(x, "collapseExpandCallback", value.asInstanceOf[js.Any])
+        inline def setCollapseExpandCallback(value: Any): Self = StObject.set(x, "collapseExpandCallback", value.asInstanceOf[js.Any])
         
         inline def setCollapseExpandCallbackUndefined: Self = StObject.set(x, "collapseExpandCallback", js.undefined)
         
@@ -189,11 +189,11 @@ object dialogMod {
         
         inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
         
-        inline def setExpandCallback(value: js.Any): Self = StObject.set(x, "expandCallback", value.asInstanceOf[js.Any])
+        inline def setExpandCallback(value: Any): Self = StObject.set(x, "expandCallback", value.asInstanceOf[js.Any])
         
         inline def setExpandCallbackUndefined: Self = StObject.set(x, "expandCallback", js.undefined)
         
-        inline def setFocusCallback(value: js.Any): Self = StObject.set(x, "focusCallback", value.asInstanceOf[js.Any])
+        inline def setFocusCallback(value: Any): Self = StObject.set(x, "focusCallback", value.asInstanceOf[js.Any])
         
         inline def setFocusCallbackUndefined: Self = StObject.set(x, "focusCallback", js.undefined)
         
@@ -201,7 +201,7 @@ object dialogMod {
         
         inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        inline def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        inline def setHide(value: Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
         inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
         
@@ -233,7 +233,7 @@ object dialogMod {
         
         inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
         
-        inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         

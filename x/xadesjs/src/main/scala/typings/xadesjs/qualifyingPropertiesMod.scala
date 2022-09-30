@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object qualifyingPropertiesMod {
   
-  @JSImport("xadesjs/build/types/xml/qualifying_properties", "QualifyingProperties")
+  @JSImport("xadesjs/build/types/src/xml/qualifying_properties", "QualifyingProperties")
   @js.native
-  class QualifyingProperties () extends XadesObject {
+  open class QualifyingProperties () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Id: String = js.native

@@ -12,13 +12,7 @@ object getStoredStateMigrateV4Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(v4Config: V4Config): js.Function1[
-    /* config */ PersistConfig[js.Any, js.Any, js.Any, js.Any], 
-    js.Promise[js.UndefOr[js.Object]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(v4Config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* config */ PersistConfig[js.Any, js.Any, js.Any, js.Any], 
-    js.Promise[js.UndefOr[js.Object]]
-  ]]
+  inline def default(v4Config: V4Config): js.Function1[/* config */ PersistConfig[Any, Any, Any, Any], js.Promise[js.UndefOr[js.Object]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(v4Config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* config */ PersistConfig[Any, Any, Any, Any], js.Promise[js.UndefOr[js.Object]]]]
   
   trait V4Config extends StObject {
     
@@ -28,7 +22,7 @@ object getStoredStateMigrateV4Mod {
     
     var storage: js.UndefOr[V4Storage] = js.undefined
     
-    var transforms: js.UndefOr[js.Array[Transform[js.Any, js.Any, js.Any, js.Any]]] = js.undefined
+    var transforms: js.UndefOr[js.Array[Transform[Any, Any, Any, Any]]] = js.undefined
     
     var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -45,7 +39,7 @@ object getStoredStateMigrateV4Mod {
       
       inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
       
       inline def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
       
@@ -55,41 +49,35 @@ object getStoredStateMigrateV4Mod {
       
       inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       
-      inline def setTransforms(value: js.Array[Transform[js.Any, js.Any, js.Any, js.Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      inline def setTransforms(value: js.Array[Transform[Any, Any, Any, Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
       inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
       
-      inline def setTransformsVarargs(value: (Transform[js.Any, js.Any, js.Any, js.Any])*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+      inline def setTransformsVarargs(value: (Transform[Any, Any, Any, Any])*): Self = StObject.set(x, "transforms", js.Array(value*))
       
       inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
       inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
     }
   }
   
   trait V4Storage extends StObject {
     
     var getAllKeys: js.UndefOr[
-        js.Function1[
-          /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any], 
-          js.Any
-        ]
+        js.Function1[/* cb */ js.Function2[/* err */ Any, /* allKeys */ js.Array[String], Any], Any]
       ] = js.undefined
     
     var getItem: js.UndefOr[
         js.Function1[
-          /* cb */ js.Function2[/* err */ js.Any, /* serialized */ js.UndefOr[String | Null], js.Any], 
-          js.Any
+          /* cb */ js.Function2[/* err */ Any, /* serialized */ js.UndefOr[String | Null], Any], 
+          Any
         ]
       ] = js.undefined
     
     var keys: js.UndefOr[
-        js.Function1[
-          /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any], 
-          js.Any
-        ]
+        js.Function1[/* cb */ js.Function2[/* err */ Any, /* allKeys */ js.Array[String], Any], Any]
       ] = js.undefined
   }
   object V4Storage {
@@ -101,17 +89,17 @@ object getStoredStateMigrateV4Mod {
     
     extension [Self <: V4Storage](x: Self) {
       
-      inline def setGetAllKeys(value: /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any] => js.Any): Self = StObject.set(x, "getAllKeys", js.Any.fromFunction1(value))
+      inline def setGetAllKeys(value: /* cb */ js.Function2[/* err */ Any, /* allKeys */ js.Array[String], Any] => Any): Self = StObject.set(x, "getAllKeys", js.Any.fromFunction1(value))
       
       inline def setGetAllKeysUndefined: Self = StObject.set(x, "getAllKeys", js.undefined)
       
       inline def setGetItem(
-        value: /* cb */ js.Function2[/* err */ js.Any, /* serialized */ js.UndefOr[String | Null], js.Any] => js.Any
+        value: /* cb */ js.Function2[/* err */ Any, /* serialized */ js.UndefOr[String | Null], Any] => Any
       ): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
       inline def setGetItemUndefined: Self = StObject.set(x, "getItem", js.undefined)
       
-      inline def setKeys(value: /* cb */ js.Function2[/* err */ js.Any, /* allKeys */ js.Array[String], js.Any] => js.Any): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+      inline def setKeys(value: /* cb */ js.Function2[/* err */ Any, /* allKeys */ js.Array[String], Any] => Any): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     }

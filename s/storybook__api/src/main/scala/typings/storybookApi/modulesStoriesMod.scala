@@ -22,15 +22,15 @@ object modulesStoriesMod {
   val init: ModuleFn = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.storybookApi.storybookApiNumbers.`-1`
-    - typings.storybookApi.storybookApiNumbers.`1`
+    - typings.storybookApi.storybookApiInts.`-1`
+    - typings.storybookApi.storybookApiInts.`1`
   */
   trait Direction extends StObject
   object Direction {
     
-    inline def `-1`: typings.storybookApi.storybookApiNumbers.`-1` = -1.asInstanceOf[typings.storybookApi.storybookApiNumbers.`-1`]
+    inline def `-1`: typings.storybookApi.storybookApiInts.`-1` = -1.asInstanceOf[typings.storybookApi.storybookApiInts.`-1`]
     
-    inline def `1`: typings.storybookApi.storybookApiNumbers.`1` = 1.asInstanceOf[typings.storybookApi.storybookApiNumbers.`1`]
+    inline def `1`: typings.storybookApi.storybookApiInts.`1` = 1.asInstanceOf[typings.storybookApi.storybookApiInts.`1`]
   }
   
   type ParameterName = String

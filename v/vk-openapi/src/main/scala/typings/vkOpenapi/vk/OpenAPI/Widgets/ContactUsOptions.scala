@@ -1,10 +1,10 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
-import typings.vkOpenapi.vkOpenapiNumbers.`18`
-import typings.vkOpenapi.vkOpenapiNumbers.`20`
-import typings.vkOpenapi.vkOpenapiNumbers.`22`
-import typings.vkOpenapi.vkOpenapiNumbers.`24`
-import typings.vkOpenapi.vkOpenapiNumbers.`30`
+import typings.vkOpenapi.vkOpenapiInts.`18`
+import typings.vkOpenapi.vkOpenapiInts.`20`
+import typings.vkOpenapi.vkOpenapiInts.`22`
+import typings.vkOpenapi.vkOpenapiInts.`24`
+import typings.vkOpenapi.vkOpenapiInts.`30`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

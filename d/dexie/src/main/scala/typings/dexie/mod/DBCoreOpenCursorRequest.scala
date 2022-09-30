@@ -1,67 +1,44 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreOpenCursorRequest extends js.Object {
+trait DBCoreOpenCursorRequest extends StObject {
   
-  var query: DBCoreQuery = js.native
+  var query: DBCoreQuery
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var trans: DBCoreTransaction = js.native
+  var trans: DBCoreTransaction
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
   
-  var values: js.UndefOr[Boolean] = js.native
+  var values: js.UndefOr[Boolean] = js.undefined
 }
 object DBCoreOpenCursorRequest {
   
-  @scala.inline
-  def apply(query: DBCoreQuery, trans: DBCoreTransaction): DBCoreOpenCursorRequest = {
+  inline def apply(query: DBCoreQuery, trans: DBCoreTransaction): DBCoreOpenCursorRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBCoreOpenCursorRequest]
   }
   
-  @scala.inline
-  implicit class DBCoreOpenCursorRequestOps[Self <: DBCoreOpenCursorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreOpenCursorRequest](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setQuery(value: DBCoreQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setQuery(value: DBCoreQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    inline def setTrans(value: DBCoreTransaction): Self = StObject.set(x, "trans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrans(value: DBCoreTransaction): Self = this.set("trans", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     
-    @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
-    
-    @scala.inline
-    def setValues(value: Boolean): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

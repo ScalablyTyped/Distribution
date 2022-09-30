@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-cancelable
 
-Typings are for version 2.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Create a promise that can be canceled
@@ -10,10 +10,10 @@ Create a promise that can be canceled
 | ------------------ | :-------------: |
 | Full name          | p-cancelable |
 | Keywords           | promise, cancelable, cancel, canceled, canceling, cancellable, cancellation, abort, abortable, aborting, cleanup, task, token, async, function, await, promises, bluebird |
-| # releases         | 8 |
-| # dependents       | 42 |
-| # downloads        | 146889554 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7.504883533333333E7 |
+| # stars            | 403.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-cancelable#readme)

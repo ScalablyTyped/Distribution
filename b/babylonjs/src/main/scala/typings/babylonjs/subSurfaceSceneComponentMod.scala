@@ -68,7 +68,7 @@ object subSurfaceSceneComponentMod {
     
     trait AbstractScene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _subSurfaceConfiguration: Nullable[SubSurfaceConfiguration]
       
       /**

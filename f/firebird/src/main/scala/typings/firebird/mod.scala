@@ -237,7 +237,7 @@ object mod {
     def fetchSync(rowCount: all, asObject: `false`): js.Array[js.Array[DataType]] = js.native
     def fetchSync(rowCount: all, asObject: `true`): js.Array[StringDictionary[DataType]] = js.native
     @JSName("fetchSync")
-    def fetchSync_T_Object[T /* <: js.Object */](rowCount: all, asObject: `true`): js.Array[T] = js.native
+    def fetchSync_T[T /* <: js.Object */](rowCount: all, asObject: `true`): js.Array[T] = js.native
     @JSName("fetchSync")
     def fetchSync_all(rowCount: all, asObject: Boolean): js.Array[js.Array[DataType] | StringDictionary[DataType]] = js.native
     @JSName("fetchSync")
@@ -245,10 +245,10 @@ object mod {
     @JSName("fetchSync")
     def fetchSync_true(rowCount: Double, asObject: `true`): js.Array[StringDictionary[DataType]] = js.native
     @JSName("fetchSync")
-    def fetchSync_true_T_Object[T /* <: js.Object */](rowCount: Double, asObject: `true`): js.Array[T] = js.native
+    def fetchSync_true_T[T /* <: js.Object */](rowCount: Double, asObject: `true`): js.Array[T] = js.native
     
     @JSName("fetch")
-    def fetch_T_Object[T /* <: js.Object */](
+    def fetch_T[T /* <: js.Object */](
       rowCount: all,
       asObject: `true`,
       rowCallback: js.Function1[/* row */ T, Unit],
@@ -276,7 +276,7 @@ object mod {
       eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     @JSName("fetch")
-    def fetch_true_T_Object[T /* <: js.Object */](
+    def fetch_true_T[T /* <: js.Object */](
       rowCount: Double,
       asObject: `true`,
       rowCallback: js.Function1[/* row */ T, Unit],

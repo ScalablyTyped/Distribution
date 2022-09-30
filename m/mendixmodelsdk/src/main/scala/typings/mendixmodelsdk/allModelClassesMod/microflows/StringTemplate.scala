@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.StringTemplate")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.StringTemplate")
 @js.native
-class StringTemplate protected ()
+open class StringTemplate protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate {
   def this(
     model: AbstractModel,
@@ -28,7 +28,7 @@ class StringTemplate protected ()
 }
 object StringTemplate {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.StringTemplate")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.StringTemplate")
   @js.native
   val ^ : js.Any = js.native
   
@@ -39,6 +39,17 @@ object StringTemplate {
     */
   /* static member */
   inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
+  
+  /**
+    * Creates and returns a new StringTemplate instance in the SDK and on the server.
+    * The new StringTemplate will be automatically stored in the 'reason' property
+    * of the parent AbortOperation element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.2.0 and higher
+    */
+  /* static member */
+  inline def createInAbortOperationUnderReason(container: typings.mendixmodelsdk.microflowsMod.microflows.AbortOperation): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAbortOperationUnderReason")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
@@ -80,45 +91,56 @@ object StringTemplate {
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
-    * The new StringTemplate will be automatically stored in the 'description' property
+    * The new StringTemplate will be automatically stored in the 'taskDescription' property
     * of the parent workflows.UserTask element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
-  inline def createInUserTaskUnderDescription(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
+  inline def createInUserTaskUnderTaskDescription(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderTaskDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
-    * The new StringTemplate will be automatically stored in the 'subject' property
+    * The new StringTemplate will be automatically stored in the 'taskName' property
     * of the parent workflows.UserTask element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
-  inline def createInUserTaskUnderSubject(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderSubject")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
+  inline def createInUserTaskUnderTaskName(container: UserTask): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderTaskName")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /**
     * Creates and returns a new StringTemplate instance in the SDK and on the server.
-    * The new StringTemplate will be automatically stored in the 'subject' property
+    * The new StringTemplate will be automatically stored in the 'workflowDescription' property
     * of the parent workflows.Workflow element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
-  inline def createInWorkflowUnderSubject(container: Workflow): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderSubject")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
+  inline def createInWorkflowUnderWorkflowDescription(container: Workflow): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderWorkflowDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
+  
+  /**
+    * Creates and returns a new StringTemplate instance in the SDK and on the server.
+    * The new StringTemplate will be automatically stored in the 'workflowName' property
+    * of the parent workflows.Workflow element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.0.2 and higher
+    */
+  /* static member */
+  inline def createInWorkflowUnderWorkflowName(container: Workflow): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderWorkflowName")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.StringTemplate.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.StringTemplate.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.StringTemplate.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.StringTemplate.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

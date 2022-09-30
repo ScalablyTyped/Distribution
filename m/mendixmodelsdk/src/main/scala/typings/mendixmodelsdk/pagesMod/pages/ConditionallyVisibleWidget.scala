@@ -10,7 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionallyVisibleWidget")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionallyVisibleWidget")
 @js.native
 abstract class ConditionallyVisibleWidget protected () extends Widget {
   def this(
@@ -27,18 +27,18 @@ abstract class ConditionallyVisibleWidget protected () extends Widget {
 }
 object ConditionallyVisibleWidget {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionallyVisibleWidget")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionallyVisibleWidget")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionallyVisibleWidget.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionallyVisibleWidget.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionallyVisibleWidget.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionallyVisibleWidget.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

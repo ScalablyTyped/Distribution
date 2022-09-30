@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SidebarToggleRegion")
 @js.native
-class SidebarToggleRegion protected ()
+open class SidebarToggleRegion protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SidebarToggleRegion {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

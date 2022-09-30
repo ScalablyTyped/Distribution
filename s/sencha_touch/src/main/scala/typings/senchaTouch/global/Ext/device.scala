@@ -689,7 +689,7 @@ object device {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean Returns false if any of the handlers return false.
       */
-    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(scala.List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
     
     /** [Method] Returns the value of bubbleEvents
       * @returns String/String[]
@@ -1347,7 +1347,7 @@ object device {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean Returns false if any of the handlers return false.
       */
-    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(scala.List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
     
     /** [Method] Returns the value of bubbleEvents
       * @returns String/String[]
@@ -2010,7 +2010,7 @@ object device {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean Returns false if any of the handlers return false.
       */
-    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(scala.List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
     
     /** [Method] Returns the value of bubbleEvents
       * @returns String/String[]
@@ -2966,7 +2966,7 @@ object device {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean Returns false if any of the handlers return false.
       */
-    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(scala.List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
     
     /** [Method] Returns the value of bubbleEvents
       * @returns String/String[]
@@ -3679,7 +3679,7 @@ object device {
       * @param args Object... Variable number of parameters are passed to handlers.
       * @returns Boolean Returns false if any of the handlers return false.
       */
-    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+    inline def fireEvent(eventName: java.lang.String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fireEvent")(scala.List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
     
     /** [Method] Returns the value of bubbleEvents
       * @returns String/String[]

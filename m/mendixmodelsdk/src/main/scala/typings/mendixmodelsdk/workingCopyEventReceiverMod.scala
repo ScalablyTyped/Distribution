@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object workingCopyEventReceiverMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/working-copy-events/WorkingCopyEventReceiver", "WorkingCopyEventReceiver")
+  @JSImport("mendixmodelsdk/src/sdk/internal/working-copy-events/WorkingCopyEventReceiver", "WorkingCopyEventReceiver")
   @js.native
-  class WorkingCopyEventReceiver protected () extends StObject {
+  open class WorkingCopyEventReceiver protected () extends StObject {
     def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
     
-    /* private */ var buildResultEventEmitter: js.Any = js.native
+    /* private */ var buildResultEventEmitter: Any = js.native
     
-    /* private */ var client: js.Any = js.native
+    /* private */ var client: Any = js.native
     
-    /* private */ var errorHandler: js.Any = js.native
+    /* private */ var errorHandler: Any = js.native
     
     var eventSource: ^ | Null = js.native
     
@@ -34,8 +34,8 @@ object workingCopyEventReceiverMod {
     
     def stop(): Unit = js.native
     
-    /* private */ var workingCopyDataEventEmitter: js.Any = js.native
+    /* private */ var workingCopyDataEventEmitter: Any = js.native
     
-    /* private */ var workingCopyId: js.Any = js.native
+    /* private */ var workingCopyId: Any = js.native
   }
 }

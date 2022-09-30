@@ -67,7 +67,7 @@ object lazyResultMod {
       * })
       * ```
       */
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[typings.postcss.resultMod.default | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): js.Promise[typings.postcss.resultMod.default | TResult] = js.native
     /**
       * Processes input CSS through synchronous and asynchronous plugins
       * and calls onRejected for each error thrown in any plugin.

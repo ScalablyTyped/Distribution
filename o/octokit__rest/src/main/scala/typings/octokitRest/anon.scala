@@ -137,13 +137,21 @@ object anon {
       */
     def paginate[T](options: EndpointOptions): js.Promise[PaginationResults[T]]
     /**
+      * Paginate a request using an known endpoint route string
+      *
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
+      * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      */
+    /**
       * Paginate a request using an endpoint method and parameters
       *
       * @param {string} request Request method (`octokit.request` or `@octokit/request`)
       * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
-    def paginate[R /* <: RequestInterface[js.Object] */](request: R): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.NormalizeResponse<@octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.GetResponseTypeFromEndpointMethod<R>>['data'] */ js.Any
+    def paginate[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](route: R): js.Promise[
+        DataType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
+        ]
       ]
     /**
       * Paginate a request using endpoint options and map each response to a custom array
@@ -173,7 +181,7 @@ object anon {
       * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       * @param {function} mapFn Optional method to map each response to a custom array
       */
-    def paginate[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */, M /* <: js.Array[Any] */](
+    def paginate[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */, M /* <: js.Array[Any] */](
       route: R,
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any,
       mapFn: MapFunction[
@@ -204,27 +212,15 @@ object anon {
     @JSName("paginate")
     var paginate_Original: PaginateInterface
     /**
-      * Paginate a request using an known endpoint route string
-      *
-      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
-      * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
-      */
-    @JSName("paginate")
-    def paginate_R_Any[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */](route: R): js.Promise[
-        DataType[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
-        ]
-      ]
-    /**
       * Paginate a request using an unknown endpoint route string
       *
       * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
       * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
     @JSName("paginate")
-    def paginate_TR_Route[T, R /* <: Route */](route: R): js.Promise[js.Array[T]]
+    def paginate_TR[T, R /* <: Route */](route: R): js.Promise[js.Array[T]]
     @JSName("paginate")
-    def paginate_parameters[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */](
+    def paginate_parameters[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](
       route: R,
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any
     ): js.Promise[
@@ -239,7 +235,7 @@ object anon {
       * @param {function} mapFn Optional method to map each response to a custom array
       */
     @JSName("paginate")
-    def paginate_response[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */, M /* <: js.Array[Any] */](
+    def paginate_response[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */, M /* <: js.Array[Any] */](
       route: R,
       mapFn: MapFunction[
           /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any, 

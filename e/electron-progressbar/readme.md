@@ -4,16 +4,16 @@
 Typings are for version 1.2
 
 ## Library description:
-Progress bar component for Electron applications
+The original Progress Bar component for Electron applications
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | electron-progressbar |
 | Keywords           | electron, progress, progressbar, loading, processing |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 75466 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10464.0 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/AndersonMamede/electron-progressbar)

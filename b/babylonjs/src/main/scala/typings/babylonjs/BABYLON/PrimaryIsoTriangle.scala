@@ -11,9 +11,7 @@ trait PrimaryIsoTriangle extends StObject {
   def MapToFace(faceNb: Double, geodesicData: PolyhedronData): Unit
   
   /**Creates a primary triangle
-    * @param m
-    * @param n
-    * @hidden
+    * @internal
     */
   def build(m: Double, n: Double): this.type
   

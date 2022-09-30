@@ -1,8 +1,8 @@
 package typings.colorConvert
 
-import typings.colorConvert.colorConvertNumbers.`1`
-import typings.colorConvert.colorConvertNumbers.`3`
-import typings.colorConvert.colorConvertNumbers.`4`
+import typings.colorConvert.colorConvertInts.`1`
+import typings.colorConvert.colorConvertInts.`3`
+import typings.colorConvert.colorConvertInts.`4`
 import typings.colorConvert.colorConvertStrings.b16
 import typings.colorConvert.colorConvertStrings.c
 import typings.colorConvert.colorConvertStrings.g

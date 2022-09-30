@@ -35,6 +35,12 @@ trait Menu extends StObject {
     */
   def insert(pos: Double, menuItem: MenuItem): Unit = js.native
   
+  /**
+    * A `MenuItem[]` array containing the menu's items.
+    *
+    * Each `Menu` consists of multiple `MenuItem`s and each `MenuItem` can have a
+    * submenu.
+    */
   var items: js.Array[MenuItem] = js.native
   
   // Docs: https://electronjs.org/docs/api/menu

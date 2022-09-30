@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TextTemplate")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TextTemplate")
 @js.native
-class TextTemplate protected () extends Template {
+open class TextTemplate protected () extends Template {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -30,7 +30,7 @@ class TextTemplate protected () extends Template {
 }
 object TextTemplate {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TextTemplate")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TextTemplate")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +70,13 @@ object TextTemplate {
   inline def createInValidationFeedbackActionUnderFeedbackTemplate(container: ValidationFeedbackAction): TextTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValidationFeedbackActionUnderFeedbackTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[TextTemplate]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TextTemplate.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TextTemplate.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TextTemplate.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TextTemplate.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

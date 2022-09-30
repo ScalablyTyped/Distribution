@@ -11,6 +11,7 @@ import typings.jupyterlabServices.messagesMod.IShellMessage
 import typings.jupyterlabServices.messagesMod.ShellMessageType
 import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.luminoDisposable.mod.DisposableDelegate
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,7 +89,7 @@ object commMod {
       *
       * **See also:** [[ICommClose]], [[close]]
       */
-    def onClose: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
+    def onClose: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | PromiseLike[Unit]] = js.native
     /**
       * Set the callback for a comm close event.
       *
@@ -100,12 +101,12 @@ object commMod {
       *
       * **See also:** [[close]]
       */
-    def onClose_=(cb: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit = js.native
+    def onClose_=(cb: js.Function1[/* msg */ ICommCloseMsg[iopub | shell], Unit | PromiseLike[Unit]]): Unit = js.native
     
     /**
       * Get the callback for a comm message received event.
       */
-    def onMsg: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]] = js.native
+    def onMsg: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | PromiseLike[Unit]] = js.native
     /**
       * Set the callback for a comm message received event.
       *
@@ -113,7 +114,7 @@ object commMod {
       * This is called when a comm message is received. If the function returns a
       * promise, kernel message processing will pause until it is fulfilled.
       */
-    def onMsg_=(cb: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | js.Thenable[Unit]]): Unit = js.native
+    def onMsg_=(cb: js.Function1[/* msg */ ICommMsgMsg[iopub | shell], Unit | PromiseLike[Unit]]): Unit = js.native
     
     def open(data: JSONObject): IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]] = js.native
     def open(

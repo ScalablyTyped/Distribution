@@ -253,7 +253,7 @@ open class QuestionSelectBase protected () extends Question {
   
   def locOtherErrorText: LocalizableString = js.native
   
-  def locOtherPlaceHolder: LocalizableString = js.native
+  def locOtherPlaceholder: LocalizableString = js.native
   
   def locOtherText: LocalizableString = js.native
   
@@ -297,11 +297,14 @@ open class QuestionSelectBase protected () extends Question {
   
   var otherItemValue: ItemValue = js.native
   
+  def otherPlaceHolder: String = js.native
+  def otherPlaceHolder_=(`val`: String): Unit = js.native
+  
   /*
     * Use this property to set the place holder text for other or comment field  .
     */
-  def otherPlaceHolder: String = js.native
-  def otherPlaceHolder_=(`val`: String): Unit = js.native
+  def otherPlaceholder: String = js.native
+  def otherPlaceholder_=(`val`: String): Unit = js.native
   
   /*
     * Use this property to set the different text for other item.

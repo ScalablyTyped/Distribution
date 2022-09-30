@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-tether" : "3.0.0"
+      "react-tether" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-tether" : "3.0.0"
+      "react-tether" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

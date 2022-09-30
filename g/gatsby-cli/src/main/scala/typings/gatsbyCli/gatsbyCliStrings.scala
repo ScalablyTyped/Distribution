@@ -1,7 +1,9 @@
 package typings.gatsbyCli
 
 import typings.gatsbyCli.errorMapMod._ErrorId
+import typings.gatsbyCli.generatePageTreeMod.SYMBOLS
 import typings.gatsbyCli.packageManagerMod.PackageManager
+import typings.gatsbyCli.reporterTypesMod.PageMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,6 +39,18 @@ object gatsbyCliStrings {
     extends StObject
        with _ErrorId
   inline def `10126`: `10126` = "10126".asInstanceOf[`10126`]
+  
+  @js.native
+  sealed trait `10127`
+    extends StObject
+       with _ErrorId
+  inline def `10127`: `10127` = "10127".asInstanceOf[`10127`]
+  
+  @js.native
+  sealed trait `10128`
+    extends StObject
+       with _ErrorId
+  inline def `10128`: `10128` = "10128".asInstanceOf[`10128`]
   
   @js.native
   sealed trait `10226`
@@ -111,6 +125,12 @@ object gatsbyCliStrings {
   inline def `11331`: `11331` = "11331".asInstanceOf[`11331`]
   
   @js.native
+  sealed trait `11332`
+    extends StObject
+       with _ErrorId
+  inline def `11332`: `11332` = "11332".asInstanceOf[`11332`]
+  
+  @js.native
   sealed trait `11467`
     extends StObject
        with _ErrorId
@@ -159,10 +179,88 @@ object gatsbyCliStrings {
   inline def `11614`: `11614` = "11614".asInstanceOf[`11614`]
   
   @js.native
+  sealed trait `11615`
+    extends StObject
+       with _ErrorId
+  inline def `11615`: `11615` = "11615".asInstanceOf[`11615`]
+  
+  @js.native
+  sealed trait `11616`
+    extends StObject
+       with _ErrorId
+  inline def `11616`: `11616` = "11616".asInstanceOf[`11616`]
+  
+  @js.native
   sealed trait `11701`
     extends StObject
        with _ErrorId
   inline def `11701`: `11701` = "11701".asInstanceOf[`11701`]
+  
+  @js.native
+  sealed trait `11801`
+    extends StObject
+       with _ErrorId
+  inline def `11801`: `11801` = "11801".asInstanceOf[`11801`]
+  
+  @js.native
+  sealed trait `11802`
+    extends StObject
+       with _ErrorId
+  inline def `11802`: `11802` = "11802".asInstanceOf[`11802`]
+  
+  @js.native
+  sealed trait `11803`
+    extends StObject
+       with _ErrorId
+  inline def `11803`: `11803` = "11803".asInstanceOf[`11803`]
+  
+  @js.native
+  sealed trait `11804`
+    extends StObject
+       with _ErrorId
+  inline def `11804`: `11804` = "11804".asInstanceOf[`11804`]
+  
+  @js.native
+  sealed trait `11805`
+    extends StObject
+       with _ErrorId
+  inline def `11805`: `11805` = "11805".asInstanceOf[`11805`]
+  
+  @js.native
+  sealed trait `11901`
+    extends StObject
+       with _ErrorId
+  inline def `11901`: `11901` = "11901".asInstanceOf[`11901`]
+  
+  @js.native
+  sealed trait `11902`
+    extends StObject
+       with _ErrorId
+  inline def `11902`: `11902` = "11902".asInstanceOf[`11902`]
+  
+  @js.native
+  sealed trait `11903`
+    extends StObject
+       with _ErrorId
+  inline def `11903`: `11903` = "11903".asInstanceOf[`11903`]
+  
+  @js.native
+  sealed trait `11904`
+    extends StObject
+       with _ErrorId
+  inline def `11904`: `11904` = "11904".asInstanceOf[`11904`]
+  
+  @js.native
+  sealed trait `12100`
+    extends StObject
+       with _ErrorId
+  inline def `12100`: `12100` = "12100".asInstanceOf[`12100`]
+  
+  @js.native
+  sealed trait `80000`
+    extends StObject
+       with _ErrorId
+  inline def `80000`: `80000` = "80000".asInstanceOf[`80000`]
   
   @js.native
   sealed trait `85901`
@@ -297,6 +395,18 @@ object gatsbyCliStrings {
   inline def `85927`: `85927` = "85927".asInstanceOf[`85927`]
   
   @js.native
+  sealed trait `85928`
+    extends StObject
+       with _ErrorId
+  inline def `85928`: `85928` = "85928".asInstanceOf[`85928`]
+  
+  @js.native
+  sealed trait `85929`
+    extends StObject
+       with _ErrorId
+  inline def `85929`: `85929` = "85929".asInstanceOf[`85929`]
+  
+  @js.native
   sealed trait `95312`
     extends StObject
        with _ErrorId
@@ -307,6 +417,30 @@ object gatsbyCliStrings {
     extends StObject
        with _ErrorId
   inline def `95313`: `95313` = "95313".asInstanceOf[`95313`]
+  
+  @js.native
+  sealed trait `95314`
+    extends StObject
+       with _ErrorId
+  inline def `95314`: `95314` = "95314".asInstanceOf[`95314`]
+  
+  @js.native
+  sealed trait `95315`
+    extends StObject
+       with _ErrorId
+  inline def `95315`: `95315` = "95315".asInstanceOf[`95315`]
+  
+  @js.native
+  sealed trait `98001`
+    extends StObject
+       with _ErrorId
+  inline def `98001`: `98001` = "98001".asInstanceOf[`98001`]
+  
+  @js.native
+  sealed trait `98011`
+    extends StObject
+       with _ErrorId
+  inline def `98011`: `98011` = "98011".asInstanceOf[`98011`]
   
   @js.native
   sealed trait `98123`
@@ -321,8 +455,48 @@ object gatsbyCliStrings {
   inline def `98124`: `98124` = "98124".asInstanceOf[`98124`]
   
   @js.native
+  sealed trait D
+    extends StObject
+       with SYMBOLS
+  inline def D: D = "D".asInstanceOf[D]
+  
+  @js.native
+  sealed trait DSG
+    extends StObject
+       with PageMode
+  inline def DSG: DSG = "DSG".asInstanceOf[DSG]
+  
+  @js.native
+  sealed trait Infinity
+    extends StObject
+       with SYMBOLS
+  inline def Infinity: Infinity = "\u221E".asInstanceOf[Infinity]
+  
+  @js.native
+  sealed trait LOG_INTENT extends StObject
+  inline def LOG_INTENT: LOG_INTENT = "LOG_INTENT".asInstanceOf[LOG_INTENT]
+  
+  @js.native
+  sealed trait SSG
+    extends StObject
+       with PageMode
+  inline def SSG: SSG = "SSG".asInstanceOf[SSG]
+  
+  @js.native
+  sealed trait SSR
+    extends StObject
+       with PageMode
+  inline def SSR: SSR = "SSR".asInstanceOf[SSR]
+  
+  @js.native
   sealed trait SYSTEM extends StObject
   inline def SYSTEM: SYSTEM = "SYSTEM".asInstanceOf[SYSTEM]
+  
+  @js.native
+  sealed trait Space
+    extends StObject
+       with SYMBOLS
+  inline def Space: Space = (" ").asInstanceOf[Space]
   
   @js.native
   sealed trait THIRD_PARTY extends StObject
@@ -337,6 +511,10 @@ object gatsbyCliStrings {
     extends StObject
        with _ErrorId
   inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait activityTick extends StObject
+  inline def activityTick: activityTick = "activityTick".asInstanceOf[activityTick]
   
   @js.native
   sealed trait bgBlack extends StObject
@@ -431,6 +609,14 @@ object gatsbyCliStrings {
   inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
+  sealed trait createLog extends StObject
+  inline def createLog: createLog = "createLog".asInstanceOf[createLog]
+  
+  @js.native
+  sealed trait createPendingActivity extends StObject
+  inline def createPendingActivity: createPendingActivity = "createPendingActivity".asInstanceOf[createPendingActivity]
+  
+  @js.native
   sealed trait cyan extends StObject
   inline def cyan: cyan = "cyan".asInstanceOf[cyan]
   
@@ -441,6 +627,10 @@ object gatsbyCliStrings {
   @js.native
   sealed trait dim extends StObject
   inline def dim: dim = "dim".asInstanceOf[dim]
+  
+  @js.native
+  sealed trait endActivity extends StObject
+  inline def endActivity: endActivity = "endActivity".asInstanceOf[endActivity]
   
   @js.native
   sealed trait gray extends StObject
@@ -497,12 +687,36 @@ object gatsbyCliStrings {
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
+  sealed trait setActivityErrored extends StObject
+  inline def setActivityErrored: setActivityErrored = "setActivityErrored".asInstanceOf[setActivityErrored]
+  
+  @js.native
+  sealed trait setActivityStatusText extends StObject
+  inline def setActivityStatusText: setActivityStatusText = "setActivityStatusText".asInstanceOf[setActivityStatusText]
+  
+  @js.native
+  sealed trait setActivityTotal extends StObject
+  inline def setActivityTotal: setActivityTotal = "setActivityTotal".asInstanceOf[setActivityTotal]
+  
+  @js.native
+  sealed trait setStatus extends StObject
+  inline def setStatus: setStatus = "setStatus".asInstanceOf[setStatus]
+  
+  @js.native
+  sealed trait startActivity extends StObject
+  inline def startActivity: startActivity = "startActivity".asInstanceOf[startActivity]
+  
+  @js.native
   sealed trait strikethrough extends StObject
   inline def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
   
   @js.native
   sealed trait underline extends StObject
   inline def underline: underline = "underline".asInstanceOf[underline]
+  
+  @js.native
+  sealed trait updateActivity extends StObject
+  inline def updateActivity: updateActivity = "updateActivity".asInstanceOf[updateActivity]
   
   @js.native
   sealed trait visible extends StObject
@@ -529,4 +743,10 @@ object gatsbyCliStrings {
   @js.native
   sealed trait yellowBright extends StObject
   inline def yellowBright: yellowBright = "yellowBright".asInstanceOf[yellowBright]
+  
+  @js.native
+  sealed trait λ
+    extends StObject
+       with SYMBOLS
+  inline def λ: λ = "\u03BB".asInstanceOf[λ]
 }

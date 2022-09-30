@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Observer[T] extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _willBeUnregistered: Boolean
   
   /**

@@ -81,7 +81,7 @@ object arrayToolsMod {
   
   type ObserveCallback = js.Function2[/* functionName */ String, /* previousLength */ Double, Unit]
   
-  /** @hidden */
+  /** @internal */
   trait TupleTypes[T] extends StObject {
     
     var `10`: js.Tuple10[T, T, T, T, T, T, T, T, T, T]

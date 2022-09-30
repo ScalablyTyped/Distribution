@@ -1,5 +1,6 @@
 package typings.jasmine.jasmine
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +19,8 @@ trait Env extends StObject {
   def configure(configuration: Configuration): Unit = js.native
   
   /** @async */
-  def execute(): js.Thenable[JasmineDoneInfo] = js.native
-  def execute(runnablesToRun: js.Array[Suite]): js.Thenable[JasmineDoneInfo] = js.native
+  def execute(): PromiseLike[JasmineDoneInfo] = js.native
+  def execute(runnablesToRun: js.Array[Suite]): PromiseLike[JasmineDoneInfo] = js.native
   def execute(runnablesToRun: js.Array[Suite], onComplete: Func): Unit = js.native
   def execute(runnablesToRun: Null, onComplete: Func): Unit = js.native
   def execute(runnablesToRun: Unit, onComplete: Func): Unit = js.native

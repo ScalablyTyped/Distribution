@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-builder" : "22.9.1"
+      "electron-builder" : "23.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-builder" : "22.9.1"
+      "electron-builder" : "23.3.3"
     }
   ],
   "compile-devDependencies" : [

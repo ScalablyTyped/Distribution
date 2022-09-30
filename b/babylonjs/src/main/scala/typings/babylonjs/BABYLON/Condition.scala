@@ -8,41 +8,32 @@ trait Condition extends StObject {
   
   /**
     * Internal only - manager for action
-    * @hidden
+    * @internal
     */
   var _actionManager: ActionManager
   
   /**
-    * Internal only
-    * @hidden
+    * @internal
     */
   var _currentResult: Boolean
   
   /**
-    * Internal only
-    * @hidden
+    * @internal
     */
   var _evaluationId: Double
   
   /**
-    * Internal only
-    * @param target
-    * @param propertyPath
-    * @hidden
+    * @internal
     */
   def _getEffectiveTarget(target: Any, propertyPath: String): Any
   
   /**
-    * Internal only
-    * @param propertyPath
-    * @hidden
+    * @internal
     */
   def _getProperty(propertyPath: String): String
   
   /**
-    * Internal only
-    * @param serializedCondition
-    * @hidden
+    * @internal
     */
   /* protected */ def _serialize(serializedCondition: Any): Any
   

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.BackButton")
 @js.native
-class BackButton protected ()
+open class BackButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.BackButton {
   def this(
     model: AbstractModel,

@@ -10,7 +10,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Custom
 import typings.officeJsPreview.officeJsPreviewStrings.Date
 import typings.officeJsPreview.officeJsPreviewStrings.Decimal
 import typings.officeJsPreview.officeJsPreviewStrings.Inconsistent
-import typings.officeJsPreview.officeJsPreviewStrings.List
 import typings.officeJsPreview.officeJsPreviewStrings.MixedCriteria
 import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.TextLength
@@ -125,7 +124,7 @@ trait DataValidation
     * @remarks
     * [Api set: ExcelApi 1.8]
     */
-  val `type`: DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria = js.native
+  val `type`: DataValidationType | None | WholeNumber | Decimal | typings.officeJsPreview.officeJsPreviewStrings.List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria = js.native
   
   /**
     * Represents if all cell values are valid according to the data validation rules.

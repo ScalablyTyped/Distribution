@@ -1,9 +1,9 @@
 package typings.poly2tri
 
 import typings.poly2tri.anon.Max
-import typings.poly2tri.poly2triNumbers.`0`
-import typings.poly2tri.poly2triNumbers.`1`
-import typings.poly2tri.poly2triNumbers.`2`
+import typings.poly2tri.poly2triInts.`0`
+import typings.poly2tri.poly2triInts.`1`
+import typings.poly2tri.poly2triInts.`2`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

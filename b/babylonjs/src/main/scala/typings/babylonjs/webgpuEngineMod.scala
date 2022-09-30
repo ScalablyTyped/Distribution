@@ -55,55 +55,54 @@ object webgpuEngineMod {
     /* private */ var _applyScissor: Any = js.native
     
     /**
-      * @param renderPass
-      * @hidden
+      * @internal
       */
     def _applyStencilRef(renderPass: GPURenderPassEncoder): Unit = js.native
     
     /* private */ var _applyViewport: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _bindTextureDirectly(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _bindUnboundFramebuffer(): Unit = js.native
     
     /* private */ var _blendColorsCurrent: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _bufferManager: WebGPUBufferManager = js.native
     
-    /** @hidden */
+    /** @internal */
     var _bundleList: WebGPUBundleList = js.native
     
-    /** @hidden */
+    /** @internal */
     var _bundleListRenderTarget: WebGPUBundleList = js.native
     
     /* private */ var _cacheBindGroups: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cacheRenderPipeline: WebGPUCacheRenderPipeline = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cacheSampler: WebGPUCacheSampler = js.native
     
     /* private */ var _canvas: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     val _clearDepthValue: Double = js.native
     
     /* private */ var _clearFullQuad: Any = js.native
     
     /* private */ var _clearQuad: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     val _clearReverseDepthValue: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     val _clearStencilValue: Double = js.native
     
     /* private */ var _colorFormat: Any = js.native
@@ -120,42 +119,40 @@ object webgpuEngineMod {
     
     /* private */ var _compileShaderToSpirV: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _compiledComputeEffects: StringDictionary[ComputeEffect] = js.native
     
     /* private */ var _configureContext: Any = js.native
     
     /* private */ var _context: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _counters: NumBundleCreationNonCompatMode = js.native
     
     def _createBuffer(data: Double, creationFlags: Double): DataBuffer = js.native
     /**
-      * @param data
-      * @param creationFlags
-      * @hidden
+      * @internal
       */
     def _createBuffer(data: DataArray, creationFlags: Double): DataBuffer = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createComputePipelineStageDescriptor(computeShader: String, defines: Nullable[String], entryPoint: String): GPUProgrammableStage = js.native
     
     /* private */ var _createPipelineStageDescriptor: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     @JSName("_currentDrawContext")
     var _currentDrawContext_WebGPUEngine: WebGPUDrawContext = js.native
     
     /* private */ var _currentIndexBuffer: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     @JSName("_currentMaterialContext")
     var _currentMaterialContext_WebGPUEngine: WebGPUMaterialContext = js.native
     
     /* private */ var _currentOverrideVertexBuffers: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentRenderPass: Nullable[GPURenderPassEncoder] = js.native
     
     /* private */ var _defaultDrawContext: Any = js.native
@@ -168,7 +165,7 @@ object webgpuEngineMod {
     
     /* private */ var _depthTextureFormat: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _device: GPUDevice = js.native
     
     /* private */ var _deviceEnabledExtensions: Any = js.native
@@ -179,31 +176,29 @@ object webgpuEngineMod {
     
     /* private */ var _endMainRenderPass: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _endRenderTargetRenderPass(): Unit = js.native
     
     /* private */ var _forceEnableEffect: Any = js.native
     
     /**
-      * @param texture
-      * @param commandEncoder
-      * @hidden
+      * @internal
       */
     def _generateMipmaps(texture: InternalTexture): Unit = js.native
     def _generateMipmaps(texture: InternalTexture, commandEncoder: GPUCommandEncoder): Unit = js.native
     
     /* private */ var _getCurrentRenderPass: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getCurrentRenderPassIndex(): Double = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _getRGBABufferInternalSizedFormat(): Double = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _getSamplingParameters(): Mag = js.native
     
@@ -220,13 +215,13 @@ object webgpuEngineMod {
     /* private */ var _initializeMainAttachments: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _isRenderingStateCompiled(): Boolean = js.native
     
     /* private */ var _mainPassSampleCount: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _mainRenderPassWrapper: WebGPURenderPassWrapper = js.native
     
     /* private */ var _mainTexture: Any = js.native
@@ -235,7 +230,7 @@ object webgpuEngineMod {
     
     /* private */ var _mainTextureLastCopy: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _mrtAttachments: js.Array[Double] = js.native
     
     /* private */ var _mustUpdateBlendColor: Any = js.native
@@ -246,28 +241,20 @@ object webgpuEngineMod {
     
     /* private */ var _mustUpdateViewport: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _occlusionQuery: WebGPUOcclusionQuery = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onAfterUnbindFrameBufferObservable: Observable[WebGPUEngine] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _options: WebGPUEngineOptions = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pendingDebugCommands: js.Array[js.Tuple2[String, Nullable[String]]] = js.native
     
     /**
-      * @param pipelineContext
-      * @param vertexSourceCode
-      * @param fragmentSourceCode
-      * @param createAsRaw
-      * @param rawVertexSourceCode
-      * @param rawFragmentSourceCode
-      * @param rebuildRebind
-      * @param defines
-      * @hidden
+      * @internal
       */
     def _preparePipelineContext(
       pipelineContext: IPipelineContext,
@@ -280,12 +267,12 @@ object webgpuEngineMod {
       defines: Nullable[String]
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _renderEncoder: GPUCommandEncoder = js.native
     
     /* private */ val _renderEncoderDescriptor: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _renderTargetEncoder: GPUCommandEncoder = js.native
     
     /* private */ val _renderTargetEncoderDescriptor: Any = js.native
@@ -298,7 +285,7 @@ object webgpuEngineMod {
     
     /* private */ var _resetCurrentViewport: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _rttRenderPassWrapper: WebGPURenderPassWrapper = js.native
     
     /* protected */ var _scissorCached: W = js.native
@@ -308,22 +295,17 @@ object webgpuEngineMod {
     /* private */ var _scissorsCurrent: Any = js.native
     
     /**
-      * @param wrapper
-      * @hidden
+      * @internal
       */
     def _setColorFormat(wrapper: WebGPURenderPassWrapper): Unit = js.native
     
     /**
-      * @param wrapper
-      * @hidden
+      * @internal
       */
     def _setDepthTextureFormat(wrapper: WebGPURenderPassWrapper): Unit = js.native
     
     /**
-      * @param name
-      * @param texture
-      * @param baseName
-      * @hidden
+      * @internal
       */
     def _setInternalTexture(name: String, texture: Nullable[InternalTexture | ExternalTexture]): Unit = js.native
     def _setInternalTexture(name: String, texture: Nullable[InternalTexture | ExternalTexture], baseName: String): Unit = js.native
@@ -447,26 +429,26 @@ object webgpuEngineMod {
     
     /* private */ var _swapChainTexture: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _textureHelper: WebGPUTextureHelper = js.native
     
-    /** @hidden */
+    /** @internal */
     var _timestampQuery: WebGPUTimestampQuery = js.native
     
     /* private */ var _tintWASM: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _ubDontInvertY: WebGPUDataBuffer = js.native
     
-    /** @hidden */
+    /** @internal */
     var _ubInvertY: WebGPUDataBuffer = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _unpackFlipY(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _uploadEncoder: GPUCommandEncoder = js.native
     
     /* private */ val _uploadEncoderDescriptor: Any = js.native
@@ -474,12 +456,12 @@ object webgpuEngineMod {
     /* private */ var _viewportsCurrent: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def bindBuffersDirectly(): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def bindSamplers(): Unit = js.native
     
@@ -489,34 +471,34 @@ object webgpuEngineMod {
     val countersLastFrame: NumBundleCreationNonCompatMode = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def createRawShaderProgram(): WebGLProgram = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def createShaderProgram(): WebGLProgram = js.native
     
-    /** @hidden */
+    /** @internal */
     def currentSampleCount: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var dbgLogIfNotDrawWrapper: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var dbgSanityChecks: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var dbgShowEmptyEnableEffectCalls: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var dbgShowShaderCode: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var dbgVerboseLogsForFirstFrames: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var dbgVerboseLogsNumFrames: Double = js.native
     
     /**
@@ -543,7 +525,7 @@ object webgpuEngineMod {
     def flushFramebuffer(reopenPass: Boolean): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def getUniforms(): js.Array[Nullable[WebGLUniformLocation]] = js.native
     
@@ -564,79 +546,79 @@ object webgpuEngineMod {
     var numMaxUncapturedErrors: Double = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setArray(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setArray2(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setArray3(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setArray4(): Boolean = js.native
     
     def setDitheringState(): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setFloat(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setFloat2(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setFloat3(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setFloat4(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setIntArray(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setIntArray2(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setIntArray3(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setIntArray4(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setMatrices(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setMatrix2x2(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def setMatrix3x3(): Boolean = js.native
     
@@ -660,7 +642,7 @@ object webgpuEngineMod {
     def supportedExtensions: Immutable[js.Array[GPUFeatureName]] = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def updateAndBindInstancesBuffer(): Unit = js.native
     

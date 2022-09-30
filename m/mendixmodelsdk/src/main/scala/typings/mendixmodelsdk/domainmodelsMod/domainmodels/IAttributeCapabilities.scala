@@ -7,17 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.0.1: deleted
   * In version 8.13.0: introduced
   */
 @js.native
 trait IAttributeCapabilities
   extends StObject
      with IElement {
-  
-  /**
-    * In version 9.0.0: introduced
-    */
-  val canDeleteFromModel: Boolean = js.native
   
   val containerAsAttribute: IAttribute = js.native
   

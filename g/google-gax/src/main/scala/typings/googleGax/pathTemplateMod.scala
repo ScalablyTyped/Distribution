@@ -9,7 +9,7 @@ object pathTemplateMod {
   
   @JSImport("google-gax/build/src/pathTemplate", "PathTemplate")
   @js.native
-  class PathTemplate protected () extends StObject {
+  open class PathTemplate protected () extends StObject {
     /**
       * @param {String} data the of the template
       *
@@ -17,9 +17,9 @@ object pathTemplateMod {
       */
     def this(data: String) = this()
     
-    /* private */ var bindings: js.Any = js.native
+    /* private */ var bindings: Any = js.native
     
-    /* private */ var data: js.Any = js.native
+    /* private */ var data: Any = js.native
     
     /**
       * Renders the path template.
@@ -43,7 +43,7 @@ object pathTemplateMod {
       * @return {string[]} return segments of the input path.
       * For example: 'buckets/{hello}'' will give back ['buckets', {hello=*}]
       */
-    /* private */ var parsePathTemplate: js.Any = js.native
+    /* private */ var parsePathTemplate: Any = js.native
     
     /**
       * Renders a path template using the provided bindings.

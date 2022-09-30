@@ -477,117 +477,117 @@ object DataSetApi {
       * This is subset of full condition operators list defined in https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.query.conditionoperator
       */
     /* Rewritten from type alias, can be one of: 
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`8`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`12`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`14`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`15`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`16`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`17`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`18`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`19`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`20`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`22`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`23`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`25`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`26`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`27`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`28`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`29`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`33`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`34`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`37`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`38`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`49`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`70`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`75`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`76`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`77`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`78`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`79`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`87`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`-1`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`4`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`5`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`6`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`8`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`12`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`14`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`15`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`16`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`17`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`18`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`19`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`20`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`22`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`23`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`25`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`26`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`27`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`28`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`29`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`33`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`34`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`37`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`38`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`49`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`70`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`75`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`76`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`77`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`78`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`79`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`87`
     */
     trait ConditionOperator extends StObject
     object ConditionOperator {
       
-      inline def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`]
+      inline def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`-1`]
       
-      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`]
       
-      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`]
       
-      inline def `12`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`12` = 12.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`12`]
+      inline def `12`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`12` = 12.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`12`]
       
-      inline def `14`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`14` = 14.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`14`]
+      inline def `14`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`14` = 14.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`14`]
       
-      inline def `15`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`15` = 15.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`15`]
+      inline def `15`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`15` = 15.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`15`]
       
-      inline def `16`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`16` = 16.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`16`]
+      inline def `16`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`16` = 16.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`16`]
       
-      inline def `17`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`17` = 17.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`17`]
+      inline def `17`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`17` = 17.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`17`]
       
-      inline def `18`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`18` = 18.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`18`]
+      inline def `18`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`18` = 18.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`18`]
       
-      inline def `19`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`19` = 19.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`19`]
+      inline def `19`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`19` = 19.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`19`]
       
-      inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
+      inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2`]
       
-      inline def `20`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`20` = 20.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`20`]
+      inline def `20`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`20` = 20.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`20`]
       
-      inline def `22`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`22` = 22.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`22`]
+      inline def `22`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`22` = 22.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`22`]
       
-      inline def `23`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`23` = 23.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`23`]
+      inline def `23`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`23` = 23.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`23`]
       
-      inline def `25`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`25` = 25.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`25`]
+      inline def `25`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`25` = 25.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`25`]
       
-      inline def `26`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`26` = 26.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`26`]
+      inline def `26`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`26` = 26.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`26`]
       
-      inline def `27`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`27` = 27.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`27`]
+      inline def `27`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`27` = 27.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`27`]
       
-      inline def `28`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`28` = 28.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`28`]
+      inline def `28`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`28` = 28.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`28`]
       
-      inline def `29`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`29` = 29.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`29`]
+      inline def `29`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`29` = 29.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`29`]
       
-      inline def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`]
+      inline def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3`]
       
-      inline def `33`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`33` = 33.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`33`]
+      inline def `33`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`33` = 33.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`33`]
       
-      inline def `34`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`34` = 34.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`34`]
+      inline def `34`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`34` = 34.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`34`]
       
-      inline def `37`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`37` = 37.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`37`]
+      inline def `37`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`37` = 37.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`37`]
       
-      inline def `38`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`38` = 38.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`38`]
+      inline def `38`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`38` = 38.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`38`]
       
-      inline def `4`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4` = 4.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4`]
+      inline def `4`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`4` = 4.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`4`]
       
-      inline def `49`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`49` = 49.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`49`]
+      inline def `49`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`49` = 49.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`49`]
       
-      inline def `5`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5` = 5.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5`]
+      inline def `5`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`5` = 5.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`5`]
       
-      inline def `6`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6` = 6.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6`]
+      inline def `6`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`6` = 6.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`6`]
       
-      inline def `70`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`70` = 70.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`70`]
+      inline def `70`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`70` = 70.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`70`]
       
-      inline def `75`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`75` = 75.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`75`]
+      inline def `75`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`75` = 75.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`75`]
       
-      inline def `76`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`76` = 76.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`76`]
+      inline def `76`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`76` = 76.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`76`]
       
-      inline def `77`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`77` = 77.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`77`]
+      inline def `77`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`77` = 77.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`77`]
       
-      inline def `78`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`78` = 78.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`78`]
+      inline def `78`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`78` = 78.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`78`]
       
-      inline def `79`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`79` = 79.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`79`]
+      inline def `79`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`79` = 79.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`79`]
       
-      inline def `8`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`8` = 8.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`8`]
+      inline def `8`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`8` = 8.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`8`]
       
-      inline def `87`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`87` = 87.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`87`]
+      inline def `87`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`87` = 87.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`87`]
     }
     
     /**
@@ -596,15 +596,15 @@ object DataSetApi {
       * 1 - Or
       */
     /* Rewritten from type alias, can be one of: 
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`
     */
     trait FilterOperator extends StObject
     object FilterOperator {
       
-      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`]
       
-      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`]
     }
     
     /**
@@ -614,18 +614,18 @@ object DataSetApi {
       * 1 - Descending
       */
     /* Rewritten from type alias, can be one of: 
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`-1`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`
     */
     trait SortDirection extends StObject
     object SortDirection {
       
-      inline def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`]
+      inline def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`-1`]
       
-      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`]
       
-      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`]
     }
   }
 }

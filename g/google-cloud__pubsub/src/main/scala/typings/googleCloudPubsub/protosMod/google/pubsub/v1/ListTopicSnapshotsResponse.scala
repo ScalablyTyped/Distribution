@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListTopicSnapshotsResponse.
   * @param [properties] Properties to set
   */
-class ListTopicSnapshotsResponse ()
+open class ListTopicSnapshotsResponse ()
   extends StObject
      with IListTopicSnapshotsResponse {
   def this(properties: IListTopicSnapshotsResponse) = this()
@@ -33,7 +32,7 @@ class ListTopicSnapshotsResponse ()
     * Converts this ListTopicSnapshotsResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object ListTopicSnapshotsResponse {
   
@@ -50,6 +49,8 @@ object ListTopicSnapshotsResponse {
   inline def create(): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListTopicSnapshotsResponse]
   inline def create(properties: IListTopicSnapshotsResponse): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ListTopicSnapshotsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListTopicSnapshotsResponse]
   /**
     * Decodes a ListTopicSnapshotsResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object ListTopicSnapshotsResponse {
   /* static member */
   inline def decode(reader: Reader): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
   inline def decode(reader: Reader, length: Double): ListTopicSnapshotsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListTopicSnapshotsResponse]
-  inline def decode(reader: Uint8Array): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
-  inline def decode(reader: Uint8Array, length: Double): ListTopicSnapshotsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListTopicSnapshotsResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
   /**
     * Decodes a ListTopicSnapshotsResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object ListTopicSnapshotsResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
-  inline def decodeDelimited(reader: Uint8Array): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
   
   /**
     * Encodes the specified ListTopicSnapshotsResponse message. Does not implicitly {@link google.pubsub.v1.ListTopicSnapshotsResponse.verify|verify} messages.
@@ -101,7 +100,16 @@ object ListTopicSnapshotsResponse {
     * @returns ListTopicSnapshotsResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ListTopicSnapshotsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListTopicSnapshotsResponse]
+  
+  /**
+    * Gets the default type url for ListTopicSnapshotsResponse
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a ListTopicSnapshotsResponse message. Also converts values to other types if specified.
@@ -110,8 +118,8 @@ object ListTopicSnapshotsResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ListTopicSnapshotsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ListTopicSnapshotsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListTopicSnapshotsResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ListTopicSnapshotsResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ListTopicSnapshotsResponse message.
@@ -119,5 +127,5 @@ object ListTopicSnapshotsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

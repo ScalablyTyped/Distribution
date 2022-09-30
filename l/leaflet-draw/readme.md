@@ -10,15 +10,12 @@ Vector drawing plugin for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-draw |
 | Keywords           | maps, leaflet, client, vector, drawing, draw |
-| # releases         | 2 |
-| # dependents       | 89 |
-| # downloads        | 1545740 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 279894.6666666667 |
+| # stars            | 1775.0 |
 
 ## Links
-- [Homepage](https://github.com/Leaflet/Leaflet.draw#readme)
-- [Bugs](https://github.com/Leaflet/Leaflet.draw/issues)
-- [Repository](https://github.com/Leaflet/Leaflet.draw)
 - [Npm](https://www.npmjs.com/package/leaflet-draw)
     
 

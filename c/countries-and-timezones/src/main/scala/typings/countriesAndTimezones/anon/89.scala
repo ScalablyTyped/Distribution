@@ -9,7 +9,7 @@ trait `89` extends StObject {
   
   var a: AmericaSlashArgentinaSlashJujuy
   
-  var r: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`1`
+  var r: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`
 }
 object `89` {
   
@@ -22,6 +22,6 @@ object `89` {
     
     inline def setA(value: AmericaSlashArgentinaSlashJujuy): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setR(value: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`1`): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

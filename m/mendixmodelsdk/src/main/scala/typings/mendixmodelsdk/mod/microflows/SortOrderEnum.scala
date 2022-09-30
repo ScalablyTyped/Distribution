@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.SortOrderEnum")
 @js.native
-class SortOrderEnum protected ()
+open class SortOrderEnum protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.SortOrderEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

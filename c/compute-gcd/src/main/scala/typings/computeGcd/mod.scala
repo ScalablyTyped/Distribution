@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(firstValue: Double, secondValue: Double, values: Double*): Double = (^.asInstanceOf[js.Dynamic].apply((List(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any])).`++`(values.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def apply(firstValue: Double, secondValue: Double, values: Double*): Double = (^.asInstanceOf[js.Dynamic].apply((scala.List(firstValue.asInstanceOf[js.Any], secondValue.asInstanceOf[js.Any])).`++`(values.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   inline def apply(singleValue: js.Array[Double]): Null = ^.asInstanceOf[js.Dynamic].apply(singleValue.asInstanceOf[js.Any]).asInstanceOf[Null]
   // If provided an array with a length less than 2 or a single integer argument, the function returns `null`.
   inline def apply(singleValue: Double): Null = ^.asInstanceOf[js.Dynamic].apply(singleValue.asInstanceOf[js.Any]).asInstanceOf[Null]

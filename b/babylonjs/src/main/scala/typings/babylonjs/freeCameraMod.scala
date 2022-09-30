@@ -30,8 +30,7 @@ object freeCameraMod {
     def this(name: String, position: Vector3, scene: Scene, setActiveOnSceneIfNoneActive: Boolean) = this()
     
     /**
-      * @param displacement
-      * @hidden
+      * @internal
       */
     def _collideWithWorld(displacement: Vector3): Unit = js.native
     
@@ -41,7 +40,7 @@ object freeCameraMod {
     
     /* private */ var _diffPosition: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _localDirection: Vector3 = js.native
     
     /* private */ var _needMoveForGravity: Any = js.native
@@ -52,7 +51,7 @@ object freeCameraMod {
     
     /* private */ var _onCollisionPositionChange: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _transformedDirection: Vector3 = js.native
     
     /**

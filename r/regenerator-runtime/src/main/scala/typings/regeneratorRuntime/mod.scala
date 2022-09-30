@@ -17,6 +17,7 @@ import typings.std.Exclude
 import typings.std.Generator
 import typings.std.GeneratorFunction
 import typings.std.IteratorResult
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,8 +35,8 @@ object mod {
        with AsyncGenerator[TYield, TReturn, TNext] {
     def this(
       generator: Generator[
-            TYield | js.Thenable[TYield] | awrap[Any], 
-            TReturn | js.Thenable[TReturn] | awrap[Any], 
+            TYield | PromiseLike[TYield] | awrap[Any], 
+            TReturn | PromiseLike[TReturn] | awrap[Any], 
             Any
           ],
       PromiseImpl: ResolvablePromiseConstructorLike
@@ -44,7 +45,7 @@ object mod {
     @JSName("return")
     def return_MAsyncIterator(value: TReturn): js.Promise[IteratorResult[TYield, TReturn]] = js.native
     @JSName("return")
-    def return_MAsyncIterator(value: js.Thenable[TReturn]): js.Promise[IteratorResult[TYield, TReturn]] = js.native
+    def return_MAsyncIterator(value: PromiseLike[TReturn]): js.Promise[IteratorResult[TYield, TReturn]] = js.native
     
     @JSName("throw")
     def throw_MAsyncIterator(e: Any): js.Promise[IteratorResult[TYield, TReturn]] = js.native
@@ -287,8 +288,8 @@ object mod {
         extends typings.regeneratorRuntime.mod.AsyncIterator[TYield, TReturn, TNext] {
         def this(
           generator: Generator[
-                    TYield | js.Thenable[TYield] | typings.regeneratorRuntime.mod.awrap[Any], 
-                    TReturn | js.Thenable[TReturn] | typings.regeneratorRuntime.mod.awrap[Any], 
+                    TYield | PromiseLike[TYield] | typings.regeneratorRuntime.mod.awrap[Any], 
+                    TReturn | PromiseLike[TReturn] | typings.regeneratorRuntime.mod.awrap[Any], 
                     Any
                   ],
           PromiseImpl: ResolvablePromiseConstructorLike
@@ -920,8 +921,8 @@ object mod {
   - Dropped new <T>(executor : (resolve : (value : T | std.PromiseLike<T>): void, reject : (reason : any | undefined): void): void): std.PromiseLike<T> */ @js.native
   trait ResolvablePromiseConstructorLike extends StObject {
     
-    def resolve[T](): js.Thenable[T] = js.native
-    def resolve[T](value: T): js.Thenable[T] = js.native
+    def resolve[T](): PromiseLike[T] = js.native
+    def resolve[T](value: T): PromiseLike[T] = js.native
   }
   
   trait TryEntry extends StObject {

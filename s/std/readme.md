@@ -1,7 +1,7 @@
 
 # Scala.js typings for std
 
-Typings are for version 4.8.3
+Typings are for version 4.8.4
 
 
 

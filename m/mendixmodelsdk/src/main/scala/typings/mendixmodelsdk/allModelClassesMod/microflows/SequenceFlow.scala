@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/sequence-flow relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SequenceFlow")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SequenceFlow")
 @js.native
-class SequenceFlow protected ()
+open class SequenceFlow protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.SequenceFlow {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class SequenceFlow protected ()
 }
 object SequenceFlow {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SequenceFlow")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SequenceFlow")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object SequenceFlow {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.MicroflowBase): typings.mendixmodelsdk.microflowsMod.microflows.SequenceFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SequenceFlow]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SequenceFlow.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SequenceFlow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SequenceFlow.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SequenceFlow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

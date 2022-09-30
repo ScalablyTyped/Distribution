@@ -10,5 +10,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("react-native-permissions/dist/typescript/utils", "platformVersion")
+  @js.native
+  val platformVersion: Double = js.native
+  
   inline def uniq[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniq")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

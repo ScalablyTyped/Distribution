@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.lodash.mod.Many
 import typings.lodash.mod.NotVoid
 import typings.lodash.mod.ValueIteratee
@@ -12,25 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashOrderBy1x2 extends StObject {
   
-  def apply[T /* <: js.Object */](
+  def apply[T](
     iteratees: Many[
       ValueIteratee[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | T
       ]
     ]
-  ): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def apply[T /* <: js.Object */](
+  ): js.Array[T] = js.native
+  def apply[T](
     iteratees: Many[
       js.Function1[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+        (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any) | (/* value */ T), 
         NotVoid
       ]
     ]
-  ): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  ): js.Array[T] = js.native
   def apply[T /* <: js.Object */](
     iteratees: Many[
       js.Function1[
@@ -52,9 +47,9 @@ trait LodashOrderBy1x2 extends StObject {
   ): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def apply[T](iteratees: Many[ValueIteratee[T]], collection: List[T]): js.Array[T] = js.native
-  def apply[T](iteratees: Many[js.Function1[/* value */ T, NotVoid]], collection: List[T]): js.Array[T] = js.native
-  def apply[T /* <: js.Object */](iteratees: __): LodashOrderBy3x6[T] = js.native
+  def apply[T](iteratees: Many[ValueIteratee[T]], collection: typings.lodash.mod.List[T]): js.Array[T] = js.native
+  def apply[T](iteratees: Many[js.Function1[/* value */ T, NotVoid]], collection: typings.lodash.mod.List[T]): js.Array[T] = js.native
+  def apply[T](iteratees: __): LodashOrderBy1x6[T] = js.native
   def apply[T /* <: js.Object */](iteratees: __, collection: T): LodashOrderBy3x6[T] = js.native
-  def apply[T](iteratees: __, collection: List[T]): LodashOrderBy1x6[T] = js.native
+  def apply[T](iteratees: __, collection: typings.lodash.mod.List[T]): LodashOrderBy1x6[T] = js.native
 }

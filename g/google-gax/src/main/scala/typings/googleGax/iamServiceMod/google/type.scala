@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object `type` {
     * Constructs a new Expr.
     * @param [properties] Properties to set
     */
-  class Expr ()
+  open class Expr ()
     extends StObject
        with IExpr {
     def this(properties: IExpr) = this()
@@ -44,7 +43,7 @@ object `type` {
       * Converts this Expr to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object Expr {
     
@@ -61,6 +60,8 @@ object `type` {
     inline def create(): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Expr]
     inline def create(properties: IExpr): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Expr]
     
+    inline def decode(reader: js.typedarray.Uint8Array): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Expr]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): Expr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Expr]
     /**
       * Decodes an Expr message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -72,9 +73,8 @@ object `type` {
     /* static member */
     inline def decode(reader: Reader): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Expr]
     inline def decode(reader: Reader, length: Double): Expr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Expr]
-    inline def decode(reader: Uint8Array): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Expr]
-    inline def decode(reader: Uint8Array, length: Double): Expr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Expr]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Expr]
     /**
       * Decodes an Expr message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -84,7 +84,6 @@ object `type` {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Expr]
-    inline def decodeDelimited(reader: Uint8Array): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Expr]
     
     /**
       * Encodes the specified Expr message. Does not implicitly {@link google.type.Expr.verify|verify} messages.
@@ -112,7 +111,7 @@ object `type` {
       * @returns Expr
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Expr]
+    inline def fromObject(`object`: StringDictionary[Any]): Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Expr]
     
     /**
       * Creates a plain object from an Expr message. Also converts values to other types if specified.
@@ -121,8 +120,8 @@ object `type` {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: Expr): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: Expr, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Expr): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: Expr, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Expr message.
@@ -130,7 +129,7 @@ object `type` {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of an Expr. */

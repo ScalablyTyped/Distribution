@@ -42,14 +42,14 @@ object drawerActionsMod {
   @js.native
   val TOGGLE_DRAWER: /* "Navigation/TOGGLE_DRAWER" */ String = js.native
   
-  inline def closeDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[js.Any]
-  inline def closeDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def closeDrawer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[Any]
+  inline def closeDrawer(payload: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def openDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[js.Any]
-  inline def openDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def openDrawer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[Any]
+  inline def openDrawer(payload: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def toggleDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[js.Any]
-  inline def toggleDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toggleDrawer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[Any]
+  inline def toggleDrawer(payload: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   type DrawerActionType = /* "Navigation/OPEN_DRAWER" */ String
 }

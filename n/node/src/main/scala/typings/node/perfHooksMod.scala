@@ -3,7 +3,7 @@ package typings.node
 import typings.node.anon.Buffered
 import typings.node.anon.BufferedType
 import typings.node.nodeAsyncHooksMod.AsyncResource
-import typings.node.nodeNumbers.`0`
+import typings.node.nodeInts.`0`
 import typings.node.nodeStrings.mark
 import typings.node.nodeStrings.measure
 import typings.std.Map

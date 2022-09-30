@@ -13,7 +13,7 @@ object mod {
     
     @JSImport("leaflet", "TileLayer.DeepZoom")
     @js.native
-    class DeepZoom protected ()
+    open class DeepZoom protected ()
       extends typings.leaflet.mod.TileLayer_ {
       def this(urlTemplate: String) = this()
       def this(urlTemplate: String, options: DeepZoomOptions) = this()

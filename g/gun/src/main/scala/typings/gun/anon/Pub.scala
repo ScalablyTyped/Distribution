@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pub extends StObject {
   
-  var ok: typings.gun.gunNumbers.`0`
+  var ok: typings.gun.gunInts.`0`
   
   var pub: String
 }
@@ -19,7 +19,7 @@ object Pub {
   
   extension [Self <: Pub](x: Self) {
     
-    inline def setOk(value: typings.gun.gunNumbers.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: typings.gun.gunInts.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
     inline def setPub(value: String): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
   }

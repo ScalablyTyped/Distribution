@@ -14,18 +14,15 @@ object hashSetMod {
     def this(container: initContainer[K]) = this()
     def this(container: Unit, initBucketNum: Double) = this()
     def this(container: initContainer[K], initBucketNum: Double) = this()
-    def this(container: Unit, initBucketNum: Double, hashFunc: js.Function1[/* x */ K, Double]) = this()
-    def this(container: Unit, initBucketNum: Unit, hashFunc: js.Function1[/* x */ K, Double]) = this()
-    def this(container: initContainer[K], initBucketNum: Double, hashFunc: js.Function1[/* x */ K, Double]) = this()
-    def this(container: initContainer[K], initBucketNum: Unit, hashFunc: js.Function1[/* x */ K, Double]) = this()
+    def this(container: Unit, initBucketNum: Double, _hashFunc: js.Function1[/* x */ K, Double]) = this()
+    def this(container: Unit, initBucketNum: Unit, _hashFunc: js.Function1[/* x */ K, Double]) = this()
+    def this(container: initContainer[K], initBucketNum: Double, _hashFunc: js.Function1[/* x */ K, Double]) = this()
+    def this(container: initContainer[K], initBucketNum: Unit, _hashFunc: js.Function1[/* x */ K, Double]) = this()
   }
   
   @js.native
   trait HashSet[K]
     extends typings.jsSdsl.baseMod.default[K] {
-    
-    /* protected */ @JSName("hashTable")
-    var hashTable_HashSet: js.Array[typings.jsSdsl.vectorMod.default[K] | typings.jsSdsl.orderedSetMod.default[K]] = js.native
     
     /**
       * @description Insert element to hash set.

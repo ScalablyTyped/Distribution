@@ -1,6 +1,5 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashinlineValueSlashrefresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object InlineValueRefreshRequest {
   
   @JSImport("vscode-languageserver-protocol", "InlineValueRefreshRequest.method")
   @js.native
-  val method: workspaceSlashinlineValueSlashrefresh = js.native
+  val method: /* template literal string: workspace/inlineValue/refresh */ String = js.native
   
   @JSImport("vscode-languageserver-protocol", "InlineValueRefreshRequest.type")
   @js.native

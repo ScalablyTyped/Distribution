@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.GlyphIcon")
 @js.native
-class GlyphIcon protected ()
+open class GlyphIcon protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GlyphIcon {
   def this(
     model: AbstractModel,

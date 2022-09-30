@@ -9,23 +9,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Callback extends StObject {
   
-  def callback(collider: PhysicsImpostor, collidedAgainst: PhysicsImpostor, point: Nullable[Vector3]): Unit
+  def callback(
+    collider: PhysicsImpostor,
+    collidedAgainst: PhysicsImpostor,
+    point: Nullable[Vector3],
+    distance: Double,
+    impulse: Double,
+    normal: Nullable[Vector3]
+  ): Unit
   
   var otherImpostors: js.Array[PhysicsImpostor]
 }
 object Callback {
   
   inline def apply(
-    callback: (PhysicsImpostor, PhysicsImpostor, Nullable[Vector3]) => Unit,
+    callback: (PhysicsImpostor, PhysicsImpostor, Nullable[Vector3], Double, Double, Nullable[Vector3]) => Unit,
     otherImpostors: js.Array[PhysicsImpostor]
   ): Callback = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction3(callback), otherImpostors = otherImpostors.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction6(callback), otherImpostors = otherImpostors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Callback]
   }
   
   extension [Self <: Callback](x: Self) {
     
-    inline def setCallback(value: (PhysicsImpostor, PhysicsImpostor, Nullable[Vector3]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+    inline def setCallback(
+      value: (PhysicsImpostor, PhysicsImpostor, Nullable[Vector3], Double, Double, Nullable[Vector3]) => Unit
+    ): Self = StObject.set(x, "callback", js.Any.fromFunction6(value))
     
     inline def setOtherImpostors(value: js.Array[PhysicsImpostor]): Self = StObject.set(x, "otherImpostors", value.asInstanceOf[js.Any])
     

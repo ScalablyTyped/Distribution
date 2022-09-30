@@ -25,9 +25,9 @@ object rawHandlingMod {
   
   object pasteHandler {
     
-    inline def apply(options: Options & `0`): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+    inline def apply(options: Options & `0`): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
     inline def apply(options: Options & Mode): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def apply(options: Options): js.Array[BlockInstance[StringDictionary[js.Any]]] | String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]] | String]
+    inline def apply(options: Options): js.Array[BlockInstance[StringDictionary[Any]]] | String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]] | String]
     
     @JSImport("@wordpress/blocks/api/raw-handling", "pasteHandler")
     @js.native
@@ -52,7 +52,7 @@ object rawHandlingMod {
         * The tag into which content will be inserted.
         */
       var tagName: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
           ] = js.undefined
     }
     object BaseOptions {
@@ -72,7 +72,7 @@ object rawHandlingMod {
         
         inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+        inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
         
         inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       }
@@ -143,7 +143,7 @@ object rawHandlingMod {
     }
   }
   
-  inline def rawHandler(options: HTML): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  inline def rawHandler(options: HTML): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
   
   /* Inlined {readonly [ k in '#text' | 'a' | 'abbr' | 'br' | 'code' | 'del' | 'em' | 'ins' | 's' | 'strong' | 'sub' | 'sup' ]: k extends '#text' | 'br'? {} : k extends 'a'? { readonly attributes :std.ReadonlyArray<keyof std.HTMLAnchorElement>,  readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema} : k extends 'abbr'? { readonly attributes :std.ReadonlyArray<keyof std.HTMLElement>,  readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema} : { readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema}} */
   trait PhrasingContentSchema extends StObject {

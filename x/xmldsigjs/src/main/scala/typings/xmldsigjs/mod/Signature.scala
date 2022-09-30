@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "Signature")
 @js.native
-class Signature ()
+open class Signature ()
   extends typings.xmldsigjs.xmlMod.Signature {
   def this(properties: js.Object) = this()
 }

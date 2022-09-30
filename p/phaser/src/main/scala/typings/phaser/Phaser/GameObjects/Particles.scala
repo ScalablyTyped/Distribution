@@ -12,7 +12,6 @@ import typings.phaser.Phaser.GameObjects.Particles.Zones.EdgeZone
 import typings.phaser.Phaser.GameObjects.Particles.Zones.RandomZone
 import typings.phaser.Phaser.Geom.Point
 import typings.phaser.Phaser.Math.Vector2
-import typings.phaser.Phaser.Structs.List
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Types.GameObjects.Particles.DeathZoneSource
@@ -1341,7 +1340,7 @@ object Particles {
     /**
       * A list of Emitters being managed by this Emitter Manager.
       */
-    var emitters: List[ParticleEmitter] = js.native
+    var emitters: typings.phaser.Phaser.Structs.List[ParticleEmitter] = js.native
     
     /**
       * The texture frame used to render this Emitter Manager's particles.
@@ -1430,7 +1429,7 @@ object Particles {
     /**
       * A list of Gravity Wells being managed by this Emitter Manager.
       */
-    var wells: List[GravityWell] = js.native
+    var wells: typings.phaser.Phaser.Structs.List[GravityWell] = js.native
   }
   
   object Zones {

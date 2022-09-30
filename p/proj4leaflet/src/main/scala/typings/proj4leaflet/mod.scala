@@ -6,6 +6,7 @@ import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.GeometryObject
 import typings.leaflet.mod.Bounds_
 import typings.leaflet.mod.GeoJSONOptions
+import typings.leaflet.mod.GeoJSON__
 import typings.leaflet.mod.ImageOverlayOptions
 import typings.leaflet.mod.LatLngBoundsExpression
 import typings.leaflet.mod.LatLngExpression
@@ -14,7 +15,7 @@ import typings.leaflet.mod.LatLng_
 import typings.leaflet.mod.PointExpression
 import typings.leaflet.mod.Point_
 import typings.leaflet.mod.Projection
-import typings.leaflet.mod.Transformation
+import typings.leaflet.mod.Transformation_
 import typings.proj4.mod.InterfaceProjection
 import typings.proj4leaflet.anon.Properties
 import org.scalablytyped.runtime.StObject
@@ -34,7 +35,7 @@ object mod {
       
       @JSImport("leaflet", "Proj.CRS")
       @js.native
-      class CRS protected () extends StObject {
+      open class CRS protected () extends StObject {
         def this(projection: InterfaceProjection) = this()
         def this(code: String, proj4def: String) = this()
         def this(projection: InterfaceProjection, options: ProjCRSOptions) = this()
@@ -59,7 +60,7 @@ object mod {
         
         def scale(zoom: Double): Double = js.native
         
-        var transformation: Transformation = js.native
+        var transformation: Transformation_ = js.native
         
         def unproject(point: PointExpression): LatLng_ = js.native
         
@@ -75,25 +76,24 @@ object mod {
       
       @JSImport("leaflet", "Proj.GeoJSON")
       @js.native
-      class GeoJSON_ ()
-        extends typings.leaflet.mod.GeoJSON_[js.Any] {
+      open class GeoJSON_ () extends GeoJSON__[Any] {
         def this(geojson: GeoJsonObject) = this()
-        def this(geojson: Unit, options: GeoJSONOptions[js.Any]) = this()
-        def this(geojson: GeoJsonObject, options: GeoJSONOptions[js.Any]) = this()
+        def this(geojson: Unit, options: GeoJSONOptions[Any]) = this()
+        def this(geojson: GeoJsonObject, options: GeoJSONOptions[Any]) = this()
       }
       
       @JSImport("leaflet", "Proj.ImageOverlay")
       @js.native
-      class ImageOverlay_ protected ()
+      open class ImageOverlay_ protected ()
         extends typings.leaflet.mod.ImageOverlay_ {
         def this(imageUrl: String, bounds: LatLngBoundsExpression) = this()
         def this(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions) = this()
       }
       
       inline def geoJson(): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[GeoJSON_]
-      inline def geoJson(geojson: Unit, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
+      inline def geoJson(geojson: Unit, options: GeoJSONOptions[Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
       inline def geoJson(geojson: Proj4GeoJSONFeature): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON_]
-      inline def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[js.Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
+      inline def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
       
       inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
       inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
@@ -108,7 +108,7 @@ object mod {
         
         var scales: js.UndefOr[js.Array[Double]] = js.undefined
         
-        var transformation: js.UndefOr[Transformation] = js.undefined
+        var transformation: js.UndefOr[Transformation_] = js.undefined
       }
       object ProjCRSOptions {
         
@@ -131,15 +131,15 @@ object mod {
           
           inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
           
-          inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+          inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
           
           inline def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
           
           inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
           
-          inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
+          inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value*))
           
-          inline def setTransformation(value: Transformation): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
+          inline def setTransformation(value: Transformation_): Self = StObject.set(x, "transformation", value.asInstanceOf[js.Any])
           
           inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
         }

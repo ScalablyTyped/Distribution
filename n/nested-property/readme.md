@@ -10,15 +10,12 @@ Read, write or test a data structure's nested property via a string like 'my.nes
 | ------------------ | :-------------: |
 | Full name          | nested-property |
 | Keywords           | nested, property, object, array, read, write, get, set |
-| # releases         | 8 |
-| # dependents       | 56 |
-| # downloads        | 4848570 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1407988.0 |
+| # stars            | 52.0 |
 
 ## Links
-- [Homepage](https://github.com/cosmosio/nested-property)
-- [Bugs](https://github.com/cosmosio/nested-property/issues)
-- [Repository](https://github.com/cosmosio/nested-property)
 - [Npm](https://www.npmjs.com/package/nested-property)
     
 

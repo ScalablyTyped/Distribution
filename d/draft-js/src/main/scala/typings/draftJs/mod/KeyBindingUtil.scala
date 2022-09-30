@@ -2,19 +2,21 @@ package typings.draftJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("draft-js", "KeyBindingUtil")
 @js.native
-class KeyBindingUtil ()
-  extends typings.draftJs.mod.Draft.Component.Utils.KeyBindingUtil
+open class KeyBindingUtil ()
+  extends StObject
+     with typings.draftJs.mod.Draft.Component.Utils.KeyBindingUtil
 object KeyBindingUtil {
   
-  /* static member */
-  @JSImport("draft-js", "KeyBindingUtil.hasCommandModifier")
+  @JSImport("draft-js", "KeyBindingUtil")
   @js.native
-  def hasCommandModifier(e: SyntheticKeyboardEvent): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def hasCommandModifier(e: SyntheticKeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCommandModifier")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Check whether the ctrlKey modifier is *not* being used in conjunction with
@@ -22,19 +24,13 @@ object KeyBindingUtil {
     * key modifier, which should not be handled by this set of key bindings.
     */
   /* static member */
-  @JSImport("draft-js", "KeyBindingUtil.isCtrlKeyCommand")
-  @js.native
-  def isCtrlKeyCommand(e: SyntheticKeyboardEvent): Boolean = js.native
+  inline def isCtrlKeyCommand(e: SyntheticKeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCtrlKeyCommand")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("draft-js", "KeyBindingUtil.isOptionKeyCommand")
-  @js.native
-  def isOptionKeyCommand(e: SyntheticKeyboardEvent): Boolean = js.native
+  inline def isOptionKeyCommand(e: SyntheticKeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionKeyCommand")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("draft-js", "KeyBindingUtil.isSoftNewlineEvent")
-  @js.native
-  def isSoftNewlineEvent(e: SyntheticKeyboardEvent): Boolean = js.native
+  inline def isSoftNewlineEvent(e: SyntheticKeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSoftNewlineEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Check whether heuristics that only apply to macOS are used
@@ -42,7 +38,5 @@ object KeyBindingUtil {
     * used as command modifier.
     */
   /* static member */
-  @JSImport("draft-js", "KeyBindingUtil.usesMacOSHeuristics")
-  @js.native
-  def usesMacOSHeuristics(): Boolean = js.native
+  inline def usesMacOSHeuristics(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("usesMacOSHeuristics")().asInstanceOf[Boolean]
 }

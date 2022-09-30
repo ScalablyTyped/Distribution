@@ -18,7 +18,7 @@ object javascriptactions {
     */
   @JSImport("mendixmodelsdk", "javascriptactions.JavaScriptAction")
   @js.native
-  class JavaScriptAction protected ()
+  open class JavaScriptAction protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.javascriptactions.JavaScriptAction {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -60,7 +60,7 @@ object javascriptactions {
     */
   @JSImport("mendixmodelsdk", "javascriptactions.JavaScriptActionParameter")
   @js.native
-  class JavaScriptActionParameter protected ()
+  open class JavaScriptActionParameter protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.javascriptactions.JavaScriptActionParameter {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -103,7 +103,7 @@ object javascriptactions {
     */
   @JSImport("mendixmodelsdk", "javascriptactions.NanoflowJavaScriptActionParameterType")
   @js.native
-  class NanoflowJavaScriptActionParameterType protected ()
+  open class NanoflowJavaScriptActionParameterType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.javascriptactions.NanoflowJavaScriptActionParameterType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

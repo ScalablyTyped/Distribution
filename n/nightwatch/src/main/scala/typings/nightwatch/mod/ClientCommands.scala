@@ -1,5 +1,6 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.nightwatch.anon.Preview
 import typings.nightwatch.nightwatchStrings.browser
 import typings.nightwatch.nightwatchStrings.client
@@ -15,6 +16,83 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClientCommands
   extends StObject
      with ChromiumClientCommands {
+  
+  /**
+    * Injects the axe-core js library into the current page (using the .executeScript() command) to be paired
+    * with axeRun to evaluate the axe-core accessibility rules.
+    *
+    * @example
+    * this.demoTest = function () {
+    *   browser
+    *     .url('https://nightwatchjs.org')
+    *     .axeInject()
+    *     .axeRun();
+    * };
+    *
+    * @see https://nightwatchjs.org/api/axeInject.html
+    */
+  def axeInject(): Awaitable[this.type, Null] = js.native
+  
+  /**
+    * Analyzes the current page against applied axe rules.
+    *
+    * @example
+    * this.demoTest = function () {
+    *   browser
+    *     .url('https://nightwatchjs.org')
+    *     .axeInject()
+    *     .axeRun(
+    *        'body',
+    *        { runOnly: ['color-contrast', 'image-alt'] }
+    *     );
+    * };
+    *
+    * @example
+    * this.demoTest = function () {
+    *   browser
+    *     .url('https://nightwatchjs.org')
+    *     .axeInject()
+    *     .axeRun(
+    *        'body',
+    *        {
+    *          'color-contrast': {
+    *             enabled: false
+    *            }
+    *          },
+    *        }
+    *     );
+    * };
+    *
+    * @param selector - CSS selector to scope rule analysis against, will cascade to child elements
+    * @param options - Allows configuration of what rules will be run (accessibility standard or rules to enable/disable)
+    * @see {@link https://www.deque.com/axe/core-documentation/api-documentation/#options-parameter}
+    *
+    * @see {@link https://nightwatchjs.org/api/axeRun.html}
+    */
+  def axeRun(): Awaitable[this.type, Null] = js.native
+  def axeRun(selector: String): Awaitable[this.type, Null] = js.native
+  def axeRun(selector: String, options: StringDictionary[Any]): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: String,
+    options: StringDictionary[Any],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: String,
+    options: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def axeRun(selector: Unit, options: StringDictionary[Any]): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: Unit,
+    options: StringDictionary[Any],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def axeRun(
+    selector: Unit,
+    options: Unit,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Close the current window. This can be useful when you're working with multiple windows open (e.g. an OAuth login).

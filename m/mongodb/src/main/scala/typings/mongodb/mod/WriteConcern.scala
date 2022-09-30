@@ -1,55 +1,74 @@
 package typings.mongodb.mod
 
-import typings.mongodb.mongodbStrings.majority
+import typings.mongodb.mongodbInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("mongodb", "WriteConcern")
+@js.native
 /**
-  * A MongoDB WriteConcern, which describes the level of acknowledgement
-  * requested from MongoDB for write operations.
-  * http://mongodb.github.io/node-mongodb-native/3.1/api/global.html#WriteConcern
+  * Constructs a WriteConcern from the write concern properties.
+  * @param w - request acknowledgment that the write operation has propagated to a specified number of mongod instances or to mongod instances with specified tags.
+  * @param wtimeout - specify a time limit to prevent write operations from blocking indefinitely
+  * @param j - request acknowledgment that the write operation has been written to the on-disk journal
+  * @param fsync - equivalent to the j option
   */
-trait WriteConcern extends StObject {
+open class WriteConcern () extends StObject {
+  def this(w: W) = this()
+  def this(w: Unit, wtimeout: scala.Double) = this()
+  def this(w: W, wtimeout: scala.Double) = this()
+  def this(w: Unit, wtimeout: scala.Double, j: Boolean) = this()
+  def this(w: Unit, wtimeout: Unit, j: Boolean) = this()
+  def this(w: W, wtimeout: scala.Double, j: Boolean) = this()
+  def this(w: W, wtimeout: Unit, j: Boolean) = this()
+  def this(w: Unit, wtimeout: scala.Double, j: Boolean, fsync: Boolean) = this()
+  def this(w: Unit, wtimeout: scala.Double, j: Boolean, fsync: `1`) = this()
+  def this(w: Unit, wtimeout: scala.Double, j: Unit, fsync: Boolean) = this()
+  def this(w: Unit, wtimeout: scala.Double, j: Unit, fsync: `1`) = this()
+  def this(w: Unit, wtimeout: Unit, j: Boolean, fsync: Boolean) = this()
+  def this(w: Unit, wtimeout: Unit, j: Boolean, fsync: `1`) = this()
+  def this(w: Unit, wtimeout: Unit, j: Unit, fsync: Boolean) = this()
+  def this(w: Unit, wtimeout: Unit, j: Unit, fsync: `1`) = this()
+  def this(w: W, wtimeout: scala.Double, j: Boolean, fsync: Boolean) = this()
+  def this(w: W, wtimeout: scala.Double, j: Boolean, fsync: `1`) = this()
+  def this(w: W, wtimeout: scala.Double, j: Unit, fsync: Boolean) = this()
+  def this(w: W, wtimeout: scala.Double, j: Unit, fsync: `1`) = this()
+  def this(w: W, wtimeout: Unit, j: Boolean, fsync: Boolean) = this()
+  def this(w: W, wtimeout: Unit, j: Boolean, fsync: `1`) = this()
+  def this(w: W, wtimeout: Unit, j: Unit, fsync: Boolean) = this()
+  def this(w: W, wtimeout: Unit, j: Unit, fsync: `1`) = this()
   
-  /**
-    * requests acknowledgement from MongoDB that the write operation has
-    * been written to the journal
-    * @default false
-    */
-  var j: js.UndefOr[Boolean] = js.undefined
+  /** equivalent to the j option */
+  var fsync: js.UndefOr[Boolean | `1`] = js.native
   
-  /**
-    * requests acknowledgement that the write operation has
-    * propagated to a specified number of mongod hosts
-    * @default 1
-    */
-  var w: js.UndefOr[scala.Double | majority | String] = js.undefined
+  /** request acknowledgment that the write operation has been written to the on-disk journal */
+  var j: js.UndefOr[Boolean] = js.native
   
-  /**
-    * a time limit, in milliseconds, for the write concern
-    */
-  var wtimeout: js.UndefOr[scala.Double] = js.undefined
+  /** request acknowledgment that the write operation has propagated to a specified number of mongod instances or to mongod instances with specified tags. */
+  var w: js.UndefOr[W] = js.native
+  
+  /** specify a time limit to prevent write operations from blocking indefinitely */
+  var wtimeout: js.UndefOr[scala.Double] = js.native
 }
+/* static members */
 object WriteConcern {
   
-  inline def apply(): WriteConcern = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[WriteConcern]
-  }
+  @JSImport("mongodb", "WriteConcern")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: WriteConcern](x: Self) {
-    
-    inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
-    
-    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
-    
-    inline def setW(value: scala.Double | majority | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
-    
-    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
-    
-    inline def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
-    
-    inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
-  }
+  /** Construct a WriteConcern given an options object. */
+  inline def fromOptions(): js.UndefOr[WriteConcern] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")().asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: Unit, inherit: WriteConcern): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: Unit, inherit: WriteConcernOptions): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: W): js.UndefOr[WriteConcern] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: W, inherit: WriteConcern): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: W, inherit: WriteConcernOptions): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: WriteConcern): js.UndefOr[WriteConcern] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: WriteConcernOptions): js.UndefOr[WriteConcern] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: WriteConcernOptions, inherit: WriteConcern): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: WriteConcernOptions, inherit: WriteConcernOptions): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: WriteConcern, inherit: WriteConcern): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
+  inline def fromOptions(options: WriteConcern, inherit: WriteConcernOptions): js.UndefOr[WriteConcern] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[WriteConcern]]
 }

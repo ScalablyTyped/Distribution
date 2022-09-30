@@ -76,7 +76,7 @@ object anon {
       */
     /* standard es5 */
     @JSName("every")
-    def every_S_String[S /* <: String */](
+    def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -85,7 +85,7 @@ object anon {
         ]
     ): /* is std.Array<S> */ Boolean = js.native
     @JSName("every")
-    def every_S_String[S /* <: String */](
+    def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -127,7 +127,7 @@ object anon {
       */
     /* standard es5 */
     @JSName("filter")
-    def filter_S_String[S /* <: String */](
+    def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -136,7 +136,7 @@ object anon {
         ]
     ): js.Array[S] = js.native
     @JSName("filter")
-    def filter_S_String[S /* <: String */](
+    def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 

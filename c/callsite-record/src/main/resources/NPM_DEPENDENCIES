@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "callsite-record" : "4.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "callsite-record" : "4.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

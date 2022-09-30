@@ -1,6 +1,5 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait BulkWriter extends StObject {
   /**
     * Commits all enqueued writes and marks the BulkWriter instance as closed.
     *
-    * After calling `close()`, calling any method wil throw an error. Any
+    * After calling `close()`, calling any method will throw an error. Any
     * retries scheduled as part of an `onWriteError()` handler will be run
     * before the `close()` promise resolves.
     *
@@ -32,11 +31,12 @@ trait BulkWriter extends StObject {
     * @param documentRef A reference to the document to be
     * created.
     * @param data The object to serialize as the document.
+    * @throws Error If the provided input is not a valid Firestore document.
     * @returns A promise that resolves with the result of the write. If the
     * write fails, the promise is rejected with a
     * [BulkWriterError]{@link BulkWriterError}.
     */
-  def create[T](documentRef: DocumentReference[T], data: T): js.Promise[WriteResult] = js.native
+  def create[T](documentRef: DocumentReference[T], data: WithFieldValue[T]): js.Promise[WriteResult] = js.native
   
   /**
     * Delete a document from the database.
@@ -48,12 +48,14 @@ trait BulkWriter extends StObject {
     * @param precondition.lastUpdateTime If set, enforces that the
     * document was last updated at lastUpdateTime. Fails the batch if the
     * document doesn't exist or was last updated at a different time.
+    * @param precondition.exists If set, enforces that the target document
+    * must or must not exist.
     * @returns A promise that resolves with the result of the delete. If the
     * delete fails, the promise is rejected with a
     * [BulkWriterError]{@link BulkWriterError}.
     */
-  def delete(documentRef: DocumentReference[js.Any]): js.Promise[WriteResult] = js.native
-  def delete(documentRef: DocumentReference[js.Any], precondition: Precondition): js.Promise[WriteResult] = js.native
+  def delete(documentRef: DocumentReference[Any]): js.Promise[WriteResult] = js.native
+  def delete(documentRef: DocumentReference[Any], precondition: Precondition): js.Promise[WriteResult] = js.native
   
   /**
     * Commits all writes that have been enqueued up to this point in parallel.
@@ -93,11 +95,8 @@ trait BulkWriter extends StObject {
     * @param callback A callback to be called every time a BulkWriter operation
     * successfully completes.
     */
-  def onWriteResult(
-    callback: js.Function2[/* documentRef */ DocumentReference[DocumentData], /* result */ WriteResult, Unit]
-  ): Unit = js.native
+  def onWriteResult(callback: js.Function2[/* documentRef */ DocumentReference[Any], /* result */ WriteResult, Unit]): Unit = js.native
   
-  def set[T](documentRef: DocumentReference[T], data: T): js.Promise[WriteResult] = js.native
   /**
     * Write to the document referred to by the provided
     * [DocumentReference]{@link DocumentReference}. If the document does not
@@ -109,43 +108,22 @@ trait BulkWriter extends StObject {
     * set.
     * @param data The object to serialize as the document.
     * @param options An object to configure the set behavior.
-    * @param  options.merge - If true, set() merges the values
-    * specified in its data argument. Fields omitted from this set() call
-    * remain untouched.
-    * @param options.mergeFields - If provided,
-    * set() only replaces the specified field paths. Any field path that is not
-    * specified is ignored and remains untouched.
+    * @param  options.merge - If true, set() merges the values specified in its
+    * data argument. Fields omitted from this set() call remain untouched. If
+    * your input sets any field to an empty map, all nested fields are
+    * overwritten.
+    * @param options.mergeFields - If provided, set() only replaces the
+    * specified field paths. Any field path that is not specified is ignored
+    * and remains untouched. If your input sets any field to an empty map, all
+    * nested fields are overwritten.
+    * @throws Error If the provided input is not a valid Firestore document.
     * @returns A promise that resolves with the result of the write. If the
     * write fails, the promise is rejected with a
     * [BulkWriterError]{@link BulkWriterError}.
     */
-  def set[T](documentRef: DocumentReference[T], data: Partial[T], options: SetOptions): js.Promise[WriteResult] = js.native
+  def set[T](documentRef: DocumentReference[T], data: PartialWithFieldValue[T], options: SetOptions): js.Promise[WriteResult] = js.native
+  def set[T](documentRef: DocumentReference[T], data: WithFieldValue[T]): js.Promise[WriteResult] = js.native
   
-  /**
-    * Update fields of the document referred to by the provided
-    * [DocumentReference]{@link DocumentReference}. If the document doesn't yet
-    * exist, the update fails and the entire batch will be rejected.
-    *
-    * The update() method accepts either an object with field paths encoded as
-    * keys and field values encoded as values, or a variable number of
-    * arguments that alternate between field paths and field values. Nested
-    * fields can be updated by providing dot-separated field path strings or by
-    * providing FieldPath objects.
-    *
-    *
-    * A Precondition restricting this update can be specified as the last
-    * argument.
-    *
-    * @param documentRef A reference to the document to be updated.
-    * @param data An object containing the fields and values with which to
-    * update the document.
-    * @param precondition A Precondition to enforce on this update.
-    * @returns A promise that resolves with the result of the write. If the
-    * write fails, the promise is rejected with a
-    * [BulkWriterError]{@link BulkWriterError}.
-    */
-  def update(documentRef: DocumentReference[js.Any], data: UpdateData): js.Promise[WriteResult] = js.native
-  def update(documentRef: DocumentReference[js.Any], data: UpdateData, precondition: Precondition): js.Promise[WriteResult] = js.native
   /**
     * Update fields of the document referred to by the provided
     * [DocumentReference]{@link DocumentReference}. If the document doesn't yet
@@ -165,21 +143,39 @@ trait BulkWriter extends StObject {
     * @param field The first field to update.
     * @param value The first value
     * @param fieldsOrPrecondition An alternating list of field paths and values
-    * to update, optionally followed a `Precondition` to enforce on this update.
+    * to update, optionally followed a `Precondition` to enforce on this
+    * update.
+    * @throws Error If the provided input is not valid Firestore data;
     * @returns A promise that resolves with the result of the write. If the
     * write fails, the promise is rejected with a
     * [BulkWriterError]{@link BulkWriterError}.
     */
-  def update(
-    documentRef: DocumentReference[js.Any],
-    field: String,
-    value: js.Any,
-    fieldsOrPrecondition: js.Any*
-  ): js.Promise[WriteResult] = js.native
-  def update(
-    documentRef: DocumentReference[js.Any],
-    field: FieldPath,
-    value: js.Any,
-    fieldsOrPrecondition: js.Any*
-  ): js.Promise[WriteResult] = js.native
+  def update(documentRef: DocumentReference[Any], field: String, value: Any, fieldsOrPrecondition: Any*): js.Promise[WriteResult] = js.native
+  def update(documentRef: DocumentReference[Any], field: FieldPath, value: Any, fieldsOrPrecondition: Any*): js.Promise[WriteResult] = js.native
+  /**
+    * Update fields of the document referred to by the provided
+    * [DocumentReference]{@link DocumentReference}. If the document doesn't yet
+    * exist, the update fails and the entire batch will be rejected.
+    *
+    * The update() method accepts either an object with field paths encoded as
+    * keys and field values encoded as values, or a variable number of
+    * arguments that alternate between field paths and field values. Nested
+    * fields can be updated by providing dot-separated field path strings or by
+    * providing FieldPath objects.
+    *
+    *
+    * A Precondition restricting this update can be specified as the last
+    * argument.
+    *
+    * @param documentRef A reference to the document to be updated.
+    * @param data An object containing the fields and values with which to
+    * update the document.
+    * @param precondition A Precondition to enforce on this update.
+    * @throws Error If the provided input is not valid Firestore data.
+    * @returns A promise that resolves with the result of the write. If the
+    * write fails, the promise is rejected with a
+    * [BulkWriterError]{@link BulkWriterError}.
+    */
+  def update[T](documentRef: DocumentReference[T], data: UpdateData[T]): js.Promise[WriteResult] = js.native
+  def update[T](documentRef: DocumentReference[T], data: UpdateData[T], precondition: Precondition): js.Promise[WriteResult] = js.native
 }

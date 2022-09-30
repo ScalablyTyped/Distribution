@@ -10,10 +10,10 @@ Frisby.js v2.0: REST API Endpoint Testing built on Jasmine
 | ------------------ | :-------------: |
 | Full name          | frisby |
 | Keywords           | testing, api, REST, jasmine, bdd, frisby |
-| # releases         | 8 |
-| # dependents       | 7 |
-| # downloads        | 512260 |
-| # stars            | 14 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 147691.0 |
+| # stars            | 1496.0 |
 
 ## Links
 - [Homepage](http://frisbyjs.com)

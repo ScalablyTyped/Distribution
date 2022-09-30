@@ -3,8 +3,8 @@ package typings.styledComponents
 import typings.std.Document
 import typings.std.HTMLElement
 import typings.styledComponents.anon.A
+import typings.styledComponents.anon.Attrs
 import typings.styledComponents.anon.IgnoreWhitespace
-import typings.styledComponents.anon.`168`
 import typings.styledComponents.nativeDistTypesMod.WebTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,8 +26,8 @@ object testUtilsMod {
   
   inline def rehydrateTestStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rehydrateTestStyles")().asInstanceOf[Unit]
   
-  inline def resetStyled(): (js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyled")().asInstanceOf[(js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A]
-  inline def resetStyled(isServer: Boolean): (js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyled")(isServer.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A]
+  inline def resetStyled(): (js.Function1[/* tag */ WebTarget, Attrs[WebTarget]]) & A = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyled")().asInstanceOf[(js.Function1[/* tag */ WebTarget, Attrs[WebTarget]]) & A]
+  inline def resetStyled(isServer: Boolean): (js.Function1[/* tag */ WebTarget, Attrs[WebTarget]]) & A = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyled")(isServer.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* tag */ WebTarget, Attrs[WebTarget]]) & A]
   
   inline def seedNextClassnames(names: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("seedNextClassnames")(names.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   

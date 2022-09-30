@@ -1,8 +1,8 @@
 package typings.blake2sJs
 
-import typings.blake2sJs.blake2sJsNumbers.`32`
-import typings.blake2sJs.blake2sJsNumbers.`64`
-import typings.blake2sJs.blake2sJsNumbers.`8`
+import typings.blake2sJs.blake2sJsInts.`32`
+import typings.blake2sJs.blake2sJsInts.`64`
+import typings.blake2sJs.blake2sJsInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

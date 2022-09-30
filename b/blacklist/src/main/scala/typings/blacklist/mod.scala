@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(src: Any, args: String*): Any = ^.asInstanceOf[js.Dynamic].apply(List(src.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply(src: Any, args: String*): Any = ^.asInstanceOf[js.Dynamic].apply(scala.List(src.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   inline def apply(src: Any, spec: StringDictionary[Boolean]): Any = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("blacklist", JSImport.Namespace)

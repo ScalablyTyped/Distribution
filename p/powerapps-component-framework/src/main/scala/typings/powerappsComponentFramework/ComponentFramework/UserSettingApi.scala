@@ -530,30 +530,30 @@ object UserSettingApi {
       * 6 - Saturday
       */
     /* Rewritten from type alias, can be one of: 
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`4`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`5`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`6`
     */
     trait DayOfWeek extends StObject
     object DayOfWeek {
       
-      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`]
       
-      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`]
       
-      inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
+      inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2`]
       
-      inline def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`]
+      inline def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3`]
       
-      inline def `4`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4` = 4.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4`]
+      inline def `4`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`4` = 4.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`4`]
       
-      inline def `5`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5` = 5.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5`]
+      inline def `5`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`5` = 5.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`5`]
       
-      inline def `6`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6` = 6.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6`]
+      inline def `6`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`6` = 6.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`6`]
     }
   }
 }

@@ -116,15 +116,15 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.testingbotApi.testingbotApiBooleans.`true`
     - typings.testingbotApi.testingbotApiBooleans.`false`
-    - typings.testingbotApi.testingbotApiNumbers.`0`
-    - typings.testingbotApi.testingbotApiNumbers.`1`
+    - typings.testingbotApi.testingbotApiInts.`0`
+    - typings.testingbotApi.testingbotApiInts.`1`
   */
   trait TestSuccess extends StObject
   object TestSuccess {
     
-    inline def `0`: typings.testingbotApi.testingbotApiNumbers.`0` = 0.asInstanceOf[typings.testingbotApi.testingbotApiNumbers.`0`]
+    inline def `0`: typings.testingbotApi.testingbotApiInts.`0` = 0.asInstanceOf[typings.testingbotApi.testingbotApiInts.`0`]
     
-    inline def `1`: typings.testingbotApi.testingbotApiNumbers.`1` = 1.asInstanceOf[typings.testingbotApi.testingbotApiNumbers.`1`]
+    inline def `1`: typings.testingbotApi.testingbotApiInts.`1` = 1.asInstanceOf[typings.testingbotApi.testingbotApiInts.`1`]
     
     inline def `false`: typings.testingbotApi.testingbotApiBooleans.`false` = false.asInstanceOf[typings.testingbotApi.testingbotApiBooleans.`false`]
     

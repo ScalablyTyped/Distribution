@@ -1,8 +1,8 @@
 package typings.complexviewer
 
-import typings.complexviewer.complexviewerNumbers.`0`
-import typings.complexviewer.complexviewerNumbers.`1`
-import typings.complexviewer.complexviewerNumbers.`2`
+import typings.complexviewer.complexviewerInts.`0`
+import typings.complexviewer.complexviewerInts.`1`
+import typings.complexviewer.complexviewerInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

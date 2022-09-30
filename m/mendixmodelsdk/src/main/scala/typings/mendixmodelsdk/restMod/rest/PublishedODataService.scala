@@ -24,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IPublishedODataService because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedODataService")
+- typings.mendixmodelsdk.restMod.rest.IPublishedODataService because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedODataService")
 @js.native
-class PublishedODataService protected () extends Document {
+open class PublishedODataService protected () extends Document {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -65,6 +65,12 @@ class PublishedODataService protected () extends Document {
   def namespace: String = js.native
   def namespace_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.1.0: introduced
+    */
+  def oDataVersion: PublishedODataVersion = js.native
+  def oDataVersion_=(newValue: PublishedODataVersion): Unit = js.native
+  
   def path: String = js.native
   def path_=(newValue: String): Unit = js.native
   
@@ -95,6 +101,12 @@ class PublishedODataService protected () extends Document {
   def summary_=(newValue: String): Unit = js.native
   
   /**
+    * In version 8.18.0: introduced
+    */
+  def useGeneralization: Boolean = js.native
+  def useGeneralization_=(newValue: Boolean): Unit = js.native
+  
+  /**
     * In version 8.0.0: introduced
     */
   def version: String = js.native
@@ -102,7 +114,7 @@ class PublishedODataService protected () extends Document {
 }
 object PublishedODataService {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedODataService")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedODataService")
   @js.native
   val ^ : js.Any = js.native
   
@@ -114,13 +126,13 @@ object PublishedODataService {
   inline def createIn(container: IFolderBase): PublishedODataService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedODataService]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedODataService.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedODataService.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedODataService.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedODataService.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

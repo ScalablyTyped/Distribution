@@ -2,6 +2,7 @@ package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.Element
 import typings.devextreme.mod.DevExpress.AnimationConfig
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ trait dxDeferRenderingOptions
   /**
     * Specifies when the UI component content is rendered.
     */
-  var renderWhen: js.UndefOr[js.Thenable[Unit] | Boolean] = js.undefined
+  var renderWhen: js.UndefOr[PromiseLike[Unit] | Boolean] = js.undefined
   
   /**
     * Indicates if a load indicator should be shown until the UI component&apos;s content is rendered.
@@ -61,7 +62,7 @@ object dxDeferRenderingOptions {
     
     inline def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
     
-    inline def setRenderWhen(value: js.Thenable[Unit] | Boolean): Self = StObject.set(x, "renderWhen", value.asInstanceOf[js.Any])
+    inline def setRenderWhen(value: PromiseLike[Unit] | Boolean): Self = StObject.set(x, "renderWhen", value.asInstanceOf[js.Any])
     
     inline def setRenderWhenUndefined: Self = StObject.set(x, "renderWhen", js.undefined)
     

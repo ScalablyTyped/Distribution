@@ -938,10 +938,10 @@ object rocMod {
     
     inline def map(arr: js.Array[Any], fn: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
-    inline def merge[T](a: T, n: js.UndefOr[js.Object]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(n.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
-    inline def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(n.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
-    inline def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((List(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
-    inline def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((List(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
+    inline def merge[T](a: T, n: js.UndefOr[js.Object]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(a.asInstanceOf[js.Any]).`++`(n.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+    inline def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(a.asInstanceOf[js.Any]).`++`(n.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+    inline def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((scala.List(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
+    inline def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((scala.List(extend.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
     
     inline def normalizeTickInterval(interval: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def normalizeTickInterval(interval: Double, multiples: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTickInterval")(interval.asInstanceOf[js.Any], multiples.asInstanceOf[js.Any])).asInstanceOf[Double]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.ErrorResultHandlingType")
 @js.native
-class ErrorResultHandlingType protected ()
+open class ErrorResultHandlingType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ErrorResultHandlingType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

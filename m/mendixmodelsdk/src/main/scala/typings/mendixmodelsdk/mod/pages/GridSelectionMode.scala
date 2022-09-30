@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.GridSelectionMode")
 @js.native
-class GridSelectionMode protected ()
+open class GridSelectionMode protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GridSelectionMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

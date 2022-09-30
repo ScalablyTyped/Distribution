@@ -24,14 +24,14 @@ object mod {
   inline def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: String, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
   inline def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: Unit, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
   
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_TU_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
   
   @js.native
   trait AuthenticateMethod[T] extends StObject {
@@ -40,28 +40,28 @@ object mod {
     def apply(
       username: String,
       password: String,
-      cb: js.Function3[/* err */ js.Any, /* user */ T | Boolean, /* error */ js.Any, Unit]
+      cb: js.Function3[/* err */ Any, /* user */ T | Boolean, /* error */ Any, Unit]
     ): Unit = js.native
   }
   
   trait AuthenticationResult extends StObject {
     
-    var error: js.Any
+    var error: Any
     
-    var user: js.Any
+    var user: Any
   }
   object AuthenticationResult {
     
-    inline def apply(error: js.Any, user: js.Any): AuthenticationResult = {
+    inline def apply(error: Any, user: Any): AuthenticationResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthenticationResult]
     }
     
     extension [Self <: AuthenticationResult](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,23 +72,19 @@ object mod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     def authenticate(password: String): js.Promise[AuthenticationResult] = js.native
-    def authenticate(password: String, cb: js.Function3[/* err */ js.Any, /* user */ js.Any, /* error */ js.Any, Unit]): Unit = js.native
+    def authenticate(password: String, cb: js.Function3[/* err */ Any, /* user */ Any, /* error */ Any, Unit]): Unit = js.native
     
     def changePassword(oldPassword: String, newPassword: String): js.Promise[PassportLocalDocument] = js.native
-    def changePassword(
-      oldPassword: String,
-      newPassword: String,
-      cb: js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]
-    ): Unit = js.native
+    def changePassword(oldPassword: String, newPassword: String, cb: js.Function2[/* err */ Any, /* res */ Any, Unit]): Unit = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
@@ -101,10 +97,10 @@ object mod {
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
     def resetAttempts(): js.Promise[PassportLocalDocument] = js.native
-    def resetAttempts(cb: js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]): Unit = js.native
+    def resetAttempts(cb: js.Function2[/* err */ Any, /* res */ Any, Unit]): Unit = js.native
     
     def setPassword(password: String): js.Promise[PassportLocalDocument] = js.native
-    def setPassword(password: String, cb: js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]): Unit = js.native
+    def setPassword(password: String, cb: js.Function2[/* err */ Any, /* res */ Any, Unit]): Unit = js.native
   }
   
   trait PassportLocalErrorMessages extends StObject {
@@ -179,23 +175,23 @@ object mod {
     
     def deserializeUser(): js.Function2[
         /* username */ String, 
-        /* cb */ js.Function2[/* err */ js.Any, /* user */ js.UndefOr[js.Any], Unit], 
+        /* cb */ js.Function2[/* err */ Any, /* user */ js.UndefOr[Any], Unit], 
         Unit
       ] = js.native
     
-    def findByUsername(username: String, selectHashSaltFields: Boolean): js.Any = js.native
+    def findByUsername(username: String, selectHashSaltFields: Boolean): Any = js.native
     def findByUsername(
       username: String,
       selectHashSaltFields: Boolean,
-      cb: js.Function2[/* err */ js.Any, /* account */ js.Any, Unit]
-    ): js.Any = js.native
+      cb: js.Function2[/* err */ Any, /* account */ Any, Unit]
+    ): Any = js.native
     
     def register(user: T, password: String): js.Promise[T] = js.native
-    def register(user: T, password: String, cb: js.Function2[/* err */ js.Any, /* account */ js.Any, Unit]): Unit = js.native
+    def register(user: T, password: String, cb: js.Function2[/* err */ Any, /* account */ Any, Unit]): Unit = js.native
     
     def serializeUser(): js.Function2[
-        /* user */ PassportLocalModel[T], 
-        /* cb */ js.Function2[/* err */ js.Any, /* id */ js.UndefOr[js.Any], Unit], 
+        /* user */ T, 
+        /* cb */ js.Function2[/* err */ Any, /* id */ js.UndefOr[Any], Unit], 
         Unit
       ] = js.native
   }
@@ -227,7 +223,7 @@ object mod {
     var maxInterval: js.UndefOr[Double] = js.undefined
     
     var passwordValidator: js.UndefOr[
-        js.Function2[/* password */ String, /* cb */ js.Function1[/* err */ js.Any, Unit], Unit]
+        js.Function2[/* password */ String, /* cb */ js.Function1[/* err */ Any, Unit], Unit]
       ] = js.undefined
     
     var populateFields: js.UndefOr[String] = js.undefined
@@ -303,7 +299,7 @@ object mod {
       
       inline def setMaxIntervalUndefined: Self = StObject.set(x, "maxInterval", js.undefined)
       
-      inline def setPasswordValidator(value: (/* password */ String, /* cb */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "passwordValidator", js.Any.fromFunction2(value))
+      inline def setPasswordValidator(value: (/* password */ String, /* cb */ js.Function1[/* err */ Any, Unit]) => Unit): Self = StObject.set(x, "passwordValidator", js.Any.fromFunction2(value))
       
       inline def setPasswordValidatorUndefined: Self = StObject.set(x, "passwordValidator", js.undefined)
       
@@ -333,7 +329,7 @@ object mod {
       
       inline def setUsernameQueryFields(value: js.Array[String]): Self = StObject.set(x, "usernameQueryFields", value.asInstanceOf[js.Any])
       
-      inline def setUsernameQueryFieldsVarargs(value: String*): Self = StObject.set(x, "usernameQueryFields", js.Array(value :_*))
+      inline def setUsernameQueryFieldsVarargs(value: String*): Self = StObject.set(x, "usernameQueryFields", js.Array(value*))
       
       inline def setUsernameUnique(value: Boolean): Self = StObject.set(x, "usernameUnique", value.asInstanceOf[js.Any])
       
@@ -348,7 +344,7 @@ object mod {
     // overload for the default mongoose plugin function
     def plugin(
       plugin: js.Function2[
-          (/* schema */ this.type) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any), 
+          (/* schema */ this.type) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ Any), 
           js.UndefOr[js.Object | PassportLocalOptions], 
           Unit
         ]
@@ -359,7 +355,7 @@ object mod {
     ): this.type = js.native
     def plugin(
       plugin: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Schema */ /* schema */ Any, 
           /* options */ js.UndefOr[js.Object], 
           Unit
         ],

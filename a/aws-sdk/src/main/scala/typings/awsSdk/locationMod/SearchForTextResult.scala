@@ -17,6 +17,11 @@ trait SearchForTextResult extends StObject {
   var Place: typings.awsSdk.locationMod.Place
   
   /**
+    * The unique identifier of the place. You can use this with the GetPlace operation to find the place again later.  For SearchPlaceIndexForText operations, the PlaceId is returned only by place indexes that use HERE as a data provider. 
+    */
+  var PlaceId: js.UndefOr[typings.awsSdk.locationMod.PlaceId] = js.undefined
+  
+  /**
     * The relative confidence in the match for a result among the results returned. For example, if more fields for an address match (including house number, street, city, country/region, and postal code), the relevance score is closer to 1. Returned only when the partner selected is Esri.
     */
   var Relevance: js.UndefOr[SearchForTextResultRelevanceDouble] = js.undefined
@@ -35,6 +40,10 @@ object SearchForTextResult {
     inline def setDistanceUndefined: Self = StObject.set(x, "Distance", js.undefined)
     
     inline def setPlace(value: Place): Self = StObject.set(x, "Place", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceId(value: PlaceId): Self = StObject.set(x, "PlaceId", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceIdUndefined: Self = StObject.set(x, "PlaceId", js.undefined)
     
     inline def setRelevance(value: SearchForTextResultRelevanceDouble): Self = StObject.set(x, "Relevance", value.asInstanceOf[js.Any])
     

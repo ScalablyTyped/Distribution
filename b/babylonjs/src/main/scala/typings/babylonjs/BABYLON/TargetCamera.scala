@@ -13,40 +13,40 @@ trait TargetCamera
   
   /* private */ var _cachedRotationZ: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _camMatrix: Matrix = js.native
   
-  /** @hidden */
+  /** @internal */
   var _cameraRotationMatrix: Matrix = js.native
   
-  /** @hidden */
+  /** @internal */
   var _cameraTransformMatrix: Matrix = js.native
   
-  /** @hidden */
+  /** @internal */
   def _computeLocalCameraSpeed(): Double = js.native
   
   /* protected */ def _computeViewMatrix(position: Vector3, target: Vector3, up: Vector3): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentTarget: Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   def _decideIfNeedsToMove(): Boolean = js.native
   
   /* private */ var _defaultUp: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _getLockedTargetPosition(): Nullable[Vector3] = js.native
   
   /* private */ var _getRigCamPositionAndTarget: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _initialFocalDistance: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _referencePoint: Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   def _reset(): Unit = js.native
   
   /**
@@ -67,13 +67,13 @@ trait TargetCamera
   
   /* private */ var _tmpUpVector: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _transformedReferencePoint: Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   def _updatePosition(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _viewMatrix: Matrix = js.native
   
   /**

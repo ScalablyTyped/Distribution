@@ -13,11 +13,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.1.0: deleted
   * In version 6.0.0: deprecated
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.CurrencyAttributeType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.CurrencyAttributeType")
 @js.native
-class CurrencyAttributeType protected ()
+open class CurrencyAttributeType protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType {
   def this(
     model: AbstractModel,
@@ -30,7 +31,7 @@ class CurrencyAttributeType protected ()
 }
 object CurrencyAttributeType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.CurrencyAttributeType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.CurrencyAttributeType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,6 +58,9 @@ object CurrencyAttributeType {
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
     * The new CurrencyAttributeType will be automatically stored in the 'type' property
     * of the parent Attribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.0.5
     */
   /* static member */
   inline def createInAttributeUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
@@ -67,7 +71,7 @@ object CurrencyAttributeType {
     * of the parent EntityKeyPart element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.9.0 to 9.0.5
     */
   /* static member */
   inline def createInEntityKeyPartUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
@@ -78,19 +82,19 @@ object CurrencyAttributeType {
     * of the parent rest.ODataKeyPart element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.9.0 to 9.0.5
     */
   /* static member */
   inline def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.CurrencyAttributeType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.CurrencyAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.CurrencyAttributeType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.CurrencyAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

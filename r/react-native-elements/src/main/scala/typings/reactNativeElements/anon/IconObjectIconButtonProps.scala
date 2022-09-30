@@ -225,7 +225,16 @@ trait IconObjectIconButtonProps extends StObject {
   /**
     * If true, disable all interactions for this component.
     */
-  var disabled: (js.UndefOr[Boolean | Null]) & js.UndefOr[Boolean]
+  /**
+    * Specifies the disabled state of the text view for testing purposes.
+    */
+  /**
+    * If true, disable all interactions for this component.
+    */
+  /**
+    * If true, disable all interactions for this component.
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -530,7 +539,7 @@ trait IconObjectIconButtonProps extends StObject {
     *
     * @platform android
     */
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var `type`: js.UndefOr[IconType] & js.UndefOr[String]
   
@@ -545,13 +554,12 @@ object IconObjectIconButtonProps {
   
   inline def apply(
     color: js.UndefOr[String] & (js.UndefOr[ColorValue | Double]),
-    disabled: (js.UndefOr[Boolean | Null]) & js.UndefOr[Boolean],
     iconStyle: js.UndefOr[StyleProp[TextStyle]] & js.UndefOr[TextStyle],
     name: js.UndefOr[String] & String,
     style: js.UndefOr[StyleProp[ViewStyle]] & (js.UndefOr[ViewStyle | TextStyle]),
     `type`: js.UndefOr[IconType] & js.UndefOr[String]
   ): IconObjectIconButtonProps = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], iconStyle = iconStyle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], iconStyle = iconStyle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconObjectIconButtonProps]
   }
@@ -685,13 +693,15 @@ object IconObjectIconButtonProps {
     
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
-    inline def setDisabled(value: (js.UndefOr[Boolean | Null]) & js.UndefOr[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
     inline def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
     
     inline def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     
@@ -862,8 +872,6 @@ object IconObjectIconButtonProps {
     inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

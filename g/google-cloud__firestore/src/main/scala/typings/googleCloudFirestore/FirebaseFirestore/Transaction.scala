@@ -1,6 +1,5 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,10 @@ trait Transaction extends StObject {
     *
     * @param documentRef A reference to the document to be create.
     * @param data The object data to serialize as the document.
+    * @throws Error If the provided input is not a valid Firestore document.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def create[T](documentRef: DocumentReference[T], data: T): Transaction = js.native
+  def create[T](documentRef: DocumentReference[T], data: WithFieldValue[T]): Transaction = js.native
   
   /**
     * Deletes the document referred to by the provided `DocumentReference`.
@@ -26,8 +26,8 @@ trait Transaction extends StObject {
     * @param precondition A Precondition to enforce for this delete.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def delete(documentRef: DocumentReference[js.Any]): Transaction = js.native
-  def delete(documentRef: DocumentReference[js.Any], precondition: Precondition): Transaction = js.native
+  def delete(documentRef: DocumentReference[Any]): Transaction = js.native
+  def delete(documentRef: DocumentReference[Any], precondition: Precondition): Transaction = js.native
   
   /**
     * Reads the document referenced by the provided `DocumentReference.`
@@ -62,7 +62,6 @@ trait Transaction extends StObject {
     */
   def getAll[T](documentRefsOrReadOptions: (DocumentReference[T] | ReadOptions)*): js.Promise[js.Array[DocumentSnapshot[T]]] = js.native
   
-  def set[T](documentRef: DocumentReference[T], data: T): Transaction = js.native
   /**
     * Writes to the document referred to by the provided `DocumentReference`.
     * If the document does not exist yet, it will be created. If you pass
@@ -71,26 +70,20 @@ trait Transaction extends StObject {
     * @param documentRef A reference to the document to be set.
     * @param data An object of the fields and values for the document.
     * @param options An object to configure the set behavior.
+    * @param  options.merge - If true, set() merges the values specified in its
+    * data argument. Fields omitted from this set() call remain untouched. If
+    * your input sets any field to an empty map, all nested fields are
+    * overwritten.
+    * @param options.mergeFields - If provided, set() only replaces the
+    * specified field paths. Any field path that is not specified is ignored
+    * and remains untouched. If your input sets any field to an empty map, all
+    * nested fields are overwritten.
+    * @throws Error If the provided input is not a valid Firestore document.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def set[T](documentRef: DocumentReference[T], data: Partial[T], options: SetOptions): Transaction = js.native
+  def set[T](documentRef: DocumentReference[T], data: PartialWithFieldValue[T], options: SetOptions): Transaction = js.native
+  def set[T](documentRef: DocumentReference[T], data: WithFieldValue[T]): Transaction = js.native
   
-  /**
-    * Updates fields in the document referred to by the provided
-    * `DocumentReference`. The update will fail if applied to a document that
-    * does not exist.
-    *
-    * Nested fields can be updated by providing dot-separated field path
-    * strings.
-    *
-    * @param documentRef A reference to the document to be updated.
-    * @param data An object containing the fields and values with which to
-    * update the document.
-    * @param precondition A Precondition to enforce on this update.
-    * @return This `Transaction` instance. Used for chaining method calls.
-    */
-  def update(documentRef: DocumentReference[js.Any], data: UpdateData): Transaction = js.native
-  def update(documentRef: DocumentReference[js.Any], data: UpdateData, precondition: Precondition): Transaction = js.native
   /**
     * Updates fields in the document referred to by the provided
     * `DocumentReference`. The update will fail if applied to a document that
@@ -108,18 +101,26 @@ trait Transaction extends StObject {
     * @param fieldsOrPrecondition An alternating list of field paths and values
     * to update, optionally followed by a `Precondition` to enforce on this
     * update.
+    * @throws Error If the provided input is not valid Firestore data.
     * @return This `Transaction` instance. Used for chaining method calls.
     */
-  def update(
-    documentRef: DocumentReference[js.Any],
-    field: String,
-    value: js.Any,
-    fieldsOrPrecondition: js.Any*
-  ): Transaction = js.native
-  def update(
-    documentRef: DocumentReference[js.Any],
-    field: FieldPath,
-    value: js.Any,
-    fieldsOrPrecondition: js.Any*
-  ): Transaction = js.native
+  def update(documentRef: DocumentReference[Any], field: String, value: Any, fieldsOrPrecondition: Any*): Transaction = js.native
+  def update(documentRef: DocumentReference[Any], field: FieldPath, value: Any, fieldsOrPrecondition: Any*): Transaction = js.native
+  /**
+    * Updates fields in the document referred to by the provided
+    * `DocumentReference`. The update will fail if applied to a document that
+    * does not exist.
+    *
+    * Nested fields can be updated by providing dot-separated field path
+    * strings.
+    *
+    * @param documentRef A reference to the document to be updated.
+    * @param data An object containing the fields and values with which to
+    * update the document.
+    * @param precondition A Precondition to enforce on this update.
+    * @throws Error If the provided input is not valid Firestore data.
+    * @return This `Transaction` instance. Used for chaining method calls.
+    */
+  def update[T](documentRef: DocumentReference[T], data: UpdateData[T]): Transaction = js.native
+  def update[T](documentRef: DocumentReference[T], data: UpdateData[T], precondition: Precondition): Transaction = js.native
 }

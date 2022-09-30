@@ -68,7 +68,7 @@ object implementationMod {
     ]
   ): Instantiable1[/* args */ A, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ A, R]]
   
-  inline def apply_AX_ArrayAnyA_ArrayAnyR[AX /* <: js.Array[Any] */, A /* <: js.Array[Any] */, R](
+  inline def apply_AXAR[AX /* <: js.Array[Any] */, A /* <: js.Array[Any] */, R](
     func: Instantiable1[
       /* import warning: importer.ImportType#apply c repeated non-array type: AX */ /* bound */ /* args */ js.Array[AX], 
       R

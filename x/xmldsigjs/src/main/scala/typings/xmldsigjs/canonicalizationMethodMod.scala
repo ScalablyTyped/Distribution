@@ -9,7 +9,7 @@ object canonicalizationMethodMod {
   
   @JSImport("xmldsigjs/build/types/xml/canonicalization_method", "CanonicalizationMethod")
   @js.native
-  class CanonicalizationMethod () extends XmlSignatureObject {
+  open class CanonicalizationMethod () extends XmlSignatureObject {
     def this(properties: js.Object) = this()
     
     var Algorithm: String = js.native

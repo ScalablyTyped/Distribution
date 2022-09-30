@@ -14,7 +14,7 @@ object stylableUnidriverUtilLegacyMod {
   
   @JSImport("wix-ui-test-utils/dist/src/unidriver/stylable-unidriver-util-legacy", "StylableCompatUniDriver")
   @js.native
-  class StylableCompatUniDriver protected () extends StObject {
+  open class StylableCompatUniDriver protected () extends StObject {
     def this(style: CommonStylesheet) = this()
     
     /**
@@ -22,22 +22,22 @@ object stylableUnidriverUtilLegacyMod {
       *
       * @returns state or null if not found
       */
-    def getStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[js.Any] = js.native
+    def getStyleState(base: UniDriver[Any], stateName: String): js.Promise[Any] = js.native
     
-    def hasStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[Boolean] = js.native
-    def hasStyleState(base: UniDriver[js.Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
+    def hasStyleState(base: UniDriver[Any], stateName: String): js.Promise[Boolean] = js.native
+    def hasStyleState(base: UniDriver[Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    /* private */ var internal: js.Any = js.native
+    /* private */ var internal: Any = js.native
     
-    /* private */ var style: js.Any = js.native
+    /* private */ var style: Any = js.native
   }
   
   @JSImport("wix-ui-test-utils/dist/src/unidriver/stylable-unidriver-util-legacy", "StylableUnidriverUtilCompat")
   @js.native
-  class StylableUnidriverUtilCompat protected () extends StObject {
+  open class StylableUnidriverUtilCompat protected () extends StObject {
     def this(style: CompatStylesheet) = this()
     
-    /* private */ var getBaseStateWithParam: js.Any = js.native
+    /* private */ var getBaseStateWithParam: Any = js.native
     
     def getStateValueFromClassName(cls: String, baseState: String): String = js.native
     
@@ -46,31 +46,31 @@ object stylableUnidriverUtilLegacyMod {
       *
       * @returns state or null if not found
       */
-    def getStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[String | `true` | Null] = js.native
+    def getStyleState(base: UniDriver[Any], stateName: String): js.Promise[String | `true` | Null] = js.native
     
-    def hasStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[Boolean] = js.native
-    def hasStyleState(base: UniDriver[js.Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
+    def hasStyleState(base: UniDriver[Any], stateName: String): js.Promise[Boolean] = js.native
+    def hasStyleState(base: UniDriver[Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    /* private */ var style: js.Any = js.native
+    /* private */ var style: Any = js.native
   }
   
   @JSImport("wix-ui-test-utils/dist/src/unidriver/stylable-unidriver-util-legacy", "StylableUnidriverUtilLegacy")
   @js.native
-  class StylableUnidriverUtilLegacy protected () extends StObject {
+  open class StylableUnidriverUtilLegacy protected () extends StObject {
     def this(style: LegacyStylesheet) = this()
     
-    /* private */ var getStateDataAttrKey: js.Any = js.native
+    /* private */ var getStateDataAttrKey: Any = js.native
     
     /**
       * Get style state value
       *
       * @returns state or null if not found
       */
-    def getStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[String | Null] = js.native
+    def getStyleState(base: UniDriver[Any], stateName: String): js.Promise[String | Null] = js.native
     
-    def hasStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[Boolean] = js.native
-    def hasStyleState(base: UniDriver[js.Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
+    def hasStyleState(base: UniDriver[Any], stateName: String): js.Promise[Boolean] = js.native
+    def hasStyleState(base: UniDriver[Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    /* private */ var style: js.Any = js.native
+    /* private */ var style: Any = js.native
   }
 }

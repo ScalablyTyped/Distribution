@@ -2,36 +2,36 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1000000`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1001`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1002`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1003`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2001`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2002`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2003`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2004`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2005`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2006`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2007`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2008`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2009`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2010`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2011`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2101`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2102`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2103`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2104`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2105`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2106`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2107`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2108`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
+import typings.activexLibreoffice.activexLibreofficeInts.`-1`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1000000`
+import typings.activexLibreoffice.activexLibreofficeInts.`1001`
+import typings.activexLibreoffice.activexLibreofficeInts.`1002`
+import typings.activexLibreoffice.activexLibreofficeInts.`1003`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2001`
+import typings.activexLibreoffice.activexLibreofficeInts.`2002`
+import typings.activexLibreoffice.activexLibreofficeInts.`2003`
+import typings.activexLibreoffice.activexLibreofficeInts.`2004`
+import typings.activexLibreoffice.activexLibreofficeInts.`2005`
+import typings.activexLibreoffice.activexLibreofficeInts.`2006`
+import typings.activexLibreoffice.activexLibreofficeInts.`2007`
+import typings.activexLibreoffice.activexLibreofficeInts.`2008`
+import typings.activexLibreoffice.activexLibreofficeInts.`2009`
+import typings.activexLibreoffice.activexLibreofficeInts.`2010`
+import typings.activexLibreoffice.activexLibreofficeInts.`2011`
+import typings.activexLibreoffice.activexLibreofficeInts.`2101`
+import typings.activexLibreoffice.activexLibreofficeInts.`2102`
+import typings.activexLibreoffice.activexLibreofficeInts.`2103`
+import typings.activexLibreoffice.activexLibreofficeInts.`2104`
+import typings.activexLibreoffice.activexLibreofficeInts.`2105`
+import typings.activexLibreoffice.activexLibreofficeInts.`2106`
+import typings.activexLibreoffice.activexLibreofficeInts.`2107`
+import typings.activexLibreoffice.activexLibreofficeInts.`2108`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`3`
+import typings.activexLibreoffice.activexLibreofficeInts.`4`
+import typings.activexLibreoffice.activexLibreofficeInts.`5`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
@@ -44,35 +44,35 @@ object vba {
   object VBAEventId {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`5`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1003`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1001`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1002`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`-1`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1000000`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2001`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2007`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2004`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2005`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2006`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2002`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2008`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2003`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2009`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2010`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2011`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2101`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2103`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2104`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2105`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2106`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2102`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2108`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2107`
+      - typings.activexLibreoffice.activexLibreofficeInts.`3`
+      - typings.activexLibreoffice.activexLibreofficeInts.`4`
+      - typings.activexLibreoffice.activexLibreofficeInts.`5`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1003`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1001`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1002`
+      - typings.activexLibreoffice.activexLibreofficeInts.`-1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1000000`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2001`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2007`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2004`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2005`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2006`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2002`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2008`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2003`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2009`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2010`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2011`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2101`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2103`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2104`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2105`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2106`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2102`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2108`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2107`
     */
     trait Constants extends StObject
     object Constants {
@@ -181,9 +181,9 @@ object vba {
   object VBAScriptEventId {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`0`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1`
     */
     trait Constants extends StObject
     object Constants {

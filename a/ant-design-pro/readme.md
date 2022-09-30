@@ -10,10 +10,10 @@ An enterprise-class UI design language and React-based implementation
 | ------------------ | :-------------: |
 | Full name          | ant-design-pro |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 40 |
-| # downloads        | 290546 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20764.0 |
+| # stars            | 32371.0 |
 
 ## Links
 - [Homepage](https://github.com/ant-design/ant-design-pro#readme)

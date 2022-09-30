@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.Intersect")
 @js.native
-class Intersect protected ()
+open class Intersect protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.Intersect {
   def this(
     model: AbstractModel,

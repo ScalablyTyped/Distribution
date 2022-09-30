@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-chat-widget
 
-Typings are for version 2.1
+Typings are for version 3.1.4
 
 ## Library description:
 Chat web widget for React apps
@@ -10,10 +10,10 @@ Chat web widget for React apps
 | ------------------ | :-------------: |
 | Full name          | react-chat-widget |
 | Keywords           | react, chat, widget, javascript |
-| # releases         | 17 |
-| # dependents       | 4 |
-| # downloads        | 76497 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 10355.666666666666 |
+| # stars            | 1134.0 |
 
 ## Links
 - [Homepage](https://github.com/Wolox/react-chat-widget#readme)
@@ -24,7 +24,7 @@ Chat web widget for React apps
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

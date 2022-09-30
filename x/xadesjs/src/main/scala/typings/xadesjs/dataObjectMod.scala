@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dataObjectMod {
   
-  @JSImport("xadesjs/build/types/xml/data_object", "DataObject")
+  @JSImport("xadesjs/build/types/src/xml/data_object", "DataObject")
   @js.native
-  class DataObject ()
+  open class DataObject ()
     extends typings.xmldsigjs.mod.DataObject {
     def this(properties: js.Object) = this()
     

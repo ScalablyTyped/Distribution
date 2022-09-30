@@ -41,7 +41,7 @@ object engineReadTextureMod {
     
     trait ThinEngine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _readTexturePixels(
         texture: InternalTexture,
         width: Double,
@@ -55,7 +55,7 @@ object engineReadTextureMod {
         y: js.UndefOr[Double]
       ): js.Promise[js.typedarray.ArrayBufferView]
       
-      /** @hidden */
+      /** @internal */
       def _readTexturePixelsSync(
         texture: InternalTexture,
         width: Double,

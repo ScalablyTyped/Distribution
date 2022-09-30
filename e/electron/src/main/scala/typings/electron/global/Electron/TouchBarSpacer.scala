@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.TouchBarSpacer")
 @js.native
-class TouchBarSpacer protected ()
+open class TouchBarSpacer protected ()
   extends typings.electron.Electron.TouchBarSpacer {
   // Docs: https://electronjs.org/docs/api/touch-bar-spacer
   /**

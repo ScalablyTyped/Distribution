@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SidebarToggleButton")
 @js.native
-class SidebarToggleButton protected ()
+open class SidebarToggleButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SidebarToggleButton {
   def this(
     model: AbstractModel,

@@ -320,12 +320,13 @@ object mod {
     @JSImport("ffi-napi", "ForeignFunction")
     @js.native
     def apply(ptr: Buffer, retType: TypeLike, argTypes: js.Array[TypeLike], abi: Double): ForeignFunction[Any, js.Array[Any]] = js.native
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
     @JSImport("ffi-napi", "ForeignFunction")
     @js.native
-    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = js.native
+    def apply[TReturnType /* <: NamedType */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = js.native
     @JSImport("ffi-napi", "ForeignFunction")
     @js.native
-    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes, abi: Double): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = js.native
+    def apply[TReturnType /* <: NamedType */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes, abi: Double): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -338,10 +339,6 @@ object mod {
     def this(ptr: Buffer, retType: TReturnType, argTypes: TArgTypes) = this()
     def this(ptr: Buffer, retType: TReturnType, argTypes: TArgTypes, abi: Double) = this()
   }
-  
-  // NOTE: This overload is a subtype of the next overload, but provides better completions.
-  inline def ForeignFunction_TReturnType_NamedTypeTArgTypes_UnionArrayTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedType */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ForeignFunction")(ptr.asInstanceOf[js.Any], retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]]]
-  inline def ForeignFunction_TReturnType_NamedTypeTArgTypes_UnionArrayTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedType */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, retType: TReturnType, argTypes: TArgTypes, abi: Double): ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("ForeignFunction")(ptr.asInstanceOf[js.Any], retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[ForeignFunction[UnderlyingType[TReturnType], UnderlyingTypes[TArgTypes]]]
   
   @js.native
   trait Function[TReturnType /* <: Type[Any] */, TArgTypes /* <: js.Array[Type[Any]] */]
@@ -418,9 +415,6 @@ object mod {
     /* CompleteClass */
     var size: Double = js.native
   }
-  
-  inline def Function_TReturnType_TypeLikeTArgTypes_UnionArrayTypeAnyArgTypesInferenceMarker[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[Type[Any]] | ArgTypesInferenceMarker */](retType: TReturnType, argTypes: TArgTypes): Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any])).asInstanceOf[Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
-  inline def Function_TReturnType_TypeLikeTArgTypes_UnionArrayTypeAnyArgTypesInferenceMarker[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[Type[Any]] | ArgTypesInferenceMarker */](retType: TReturnType, argTypes: TArgTypes, abi: Double): Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(retType.asInstanceOf[js.Any], argTypes.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[Function[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
   
   @JSImport("ffi-napi", "HAS_OBJC")
   @js.native
@@ -641,12 +635,13 @@ object mod {
     @JSImport("ffi-napi", "VariadicForeignFunction")
     @js.native
     def apply(ptr: Buffer, ret: TypeLike, fixedArgs: js.Array[TypeLike], abi: Double): VariadicForeignFunction[Type[Any], js.Array[Type[Any]]] = js.native
+    // NOTE: This overload is a subtype of the next overload, but provides better completions.
     @JSImport("ffi-napi", "VariadicForeignFunction")
     @js.native
-    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
+    def apply[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
     @JSImport("ffi-napi", "VariadicForeignFunction")
     @js.native
-    def apply[TReturnType /* <: TypeLike */, TArgTypes /* <: js.Array[TypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes, abi: Double): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
+    def apply[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes, abi: Double): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -659,10 +654,6 @@ object mod {
     def this(ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes) = this()
     def this(ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes, abi: Double) = this()
   }
-  
-  // NOTE: This overload is a subtype of the next overload, but provides better completions.
-  inline def VariadicForeignFunction_TReturnType_NamedTypeLikeTArgTypes_UnionArrayNamedTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("VariadicForeignFunction")(ptr.asInstanceOf[js.Any], ret.asInstanceOf[js.Any], fixedArgs.asInstanceOf[js.Any])).asInstanceOf[VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
-  inline def VariadicForeignFunction_TReturnType_NamedTypeLikeTArgTypes_UnionArrayNamedTypeLikeArgTypesInferenceMarker[TReturnType /* <: NamedTypeLike */, TArgTypes /* <: js.Array[NamedTypeLike] | ArgTypesInferenceMarker */](ptr: Buffer, ret: TReturnType, fixedArgs: TArgTypes, abi: Double): VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("VariadicForeignFunction")(ptr.asInstanceOf[js.Any], ret.asInstanceOf[js.Any], fixedArgs.asInstanceOf[js.Any], abi.asInstanceOf[js.Any])).asInstanceOf[VariadicForeignFunction[CoerceType_[TReturnType], CoerceTypes[TArgTypes]]]
   
   inline def errno(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("errno")().asInstanceOf[Double]
   

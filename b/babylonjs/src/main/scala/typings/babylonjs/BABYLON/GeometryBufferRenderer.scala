@@ -29,25 +29,21 @@ trait GeometryBufferRenderer extends StObject {
   /* private */ var _enableVelocity: Any = js.native
   
   /**
-    * @param geometryBufferType
-    * @param index
-    * @hidden
+    * @internal
     * Replaces a texture in the geometry buffer renderer
     * Useful when linking textures of the prepass renderer
     */
   def _forceTextureType(geometryBufferType: Double, index: Double): Unit = js.native
   
   /**
-    * @param internalTexture
-    * @hidden
+    * @internal
     * Replaces the first texture which is hard coded as a depth texture in the geometry buffer
     * Useful when linking textures of the prepass renderer
     */
   def _linkInternalTexture(internalTexture: InternalTexture): Unit = js.native
   
   /**
-    * @param prePassRenderer
-    * @hidden
+    * @internal
     * Sets up internal structures to share outputs with PrePassRenderer
     * This method should only be called by the PrePassRenderer itself
     */
@@ -66,14 +62,14 @@ trait GeometryBufferRenderer extends StObject {
   /**
     * Dictionary used to store the previous bones transformation matrices of each rendered mesh
     * in order to compute objects velocities when enableVelocity is set to "true"
-    * @hidden
+    * @internal
     */
   var _previousBonesTransformationMatrices: NumberDictionary[js.typedarray.Float32Array] = js.native
   
   /**
     * Dictionary used to store the previous transformation matrices of each rendered mesh
     * in order to compute objects velocities when enableVelocity is set to "true"
-    * @hidden
+    * @internal
     */
   var _previousTransformationMatrices: NumberDictionary[ISavedTransformationMatrix] = js.native
   
@@ -82,7 +78,7 @@ trait GeometryBufferRenderer extends StObject {
   /* private */ var _reflectivityIndex: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * Resets the geometry buffer layout
     */
   def _resetLayout(): Unit = js.native
@@ -92,15 +88,14 @@ trait GeometryBufferRenderer extends StObject {
   /* private */ var _scene: Any = js.native
   
   /**
-    * @param attachments
-    * @hidden
+    * @internal
     * Sets texture attachments
     * Useful when linking textures of the prepass renderer
     */
   def _setAttachments(attachments: js.Array[Double]): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     * Separates internal structures from PrePassRenderer so the geometry buffer can now operate by itself.
     * This method should only be called by the PrePassRenderer itself
     */

@@ -1,7 +1,7 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
 import typings.html2canvas.ipropertydescriptorMod.IPropertyIdentValueDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +14,8 @@ object directionMod {
   val direction: IPropertyIdentValueDescriptor[DIRECTION_] = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
   */
   trait DIRECTION_ extends StObject
   object DIRECTION_ {

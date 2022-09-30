@@ -10,40 +10,35 @@ trait Node
   extends StObject
      with IBehaviorAware[Node] {
   
-  /** @hidden */
+  /** @internal */
   def _addToSceneRootNodes(): Unit = js.native
   
   /* private */ var _animationPropertiesOverride: Any = js.native
   
   /* private */ var _behaviors: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _cache: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _childUpdateId: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* protected */ var _children: Nullable[js.Array[Node]] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _currentRenderId: Double = js.native
   
   /**
-    * @param trigger
-    * @param initialCall
-    * @hidden
+    * @internal
     */
   def _getActionManagerForTrigger(): Nullable[AbstractActionManager] = js.native
   def _getActionManagerForTrigger(trigger: Double): Nullable[AbstractActionManager] = js.native
-  def _getActionManagerForTrigger(trigger: Double, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
-  def _getActionManagerForTrigger(trigger: Unit, initialCall: Boolean): Nullable[AbstractActionManager] = js.native
+  def _getActionManagerForTrigger(trigger: Double, _initialCall: Boolean): Nullable[AbstractActionManager] = js.native
+  def _getActionManagerForTrigger(trigger: Unit, _initialCall: Boolean): Nullable[AbstractActionManager] = js.native
   
   /**
-    * @param results
-    * @param directDescendantsOnly
-    * @param predicate
-    * @hidden
+    * @internal
     */
   def _getDescendants(results: js.Array[Node]): Unit = js.native
   def _getDescendants(results: js.Array[Node], directDescendantsOnly: Boolean): Unit = js.native
@@ -58,28 +53,28 @@ trait Node
     predicate: js.Function1[/* node */ this.type, Boolean]
   ): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _getWorldMatrixDeterminant(): Double = js.native
   
-  /** @hidden */
+  /** @internal */
   def _initCache(): Unit = js.native
   
   /* protected */ var _isDirty: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   val _isNode: /* true */ Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def _isSynchronized(): Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def _markSyncedWithParent(): Unit = js.native
   
   /* private */ var _nodeDataStorage: Any = js.native
   
   /* private */ var _onDisposeObserver: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _parentContainer: Nullable[AbstractScene] = js.native
   
   /* protected */ var _parentNode: Nullable[Node] = js.native
@@ -88,50 +83,47 @@ trait Node
   
   /* protected */ var _ranges: org.scalablytyped.runtime.StringDictionary[Nullable[AnimationRange]] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _removeFromSceneRootNodes(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _scene: Scene = js.native
   
   /**
-    * @param serializationObject
-    * @hidden
+    * @internal
     */
   def _serializeAsParent(serializationObject: Any): Unit = js.native
   
   /**
-    * @param state
-    * @hidden
+    * @internal
     */
   def _setReady(state: Boolean): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   /* protected */ def _syncParentEnabledState(): Unit = js.native
   
   /**
-    * @param ignoreParentClass
-    * @hidden
+    * @internal
     */
   def _updateCache(): Unit = js.native
-  def _updateCache(ignoreParentClass: Boolean): Unit = js.native
+  def _updateCache(_ignoreParentClass: Boolean): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _waitingParentId: Nullable[String] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _waitingParentInstanceIndex: Nullable[String] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _waitingParsedUniqueId: Nullable[Double] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _worldMatrix: Matrix = js.native
   
-  /** @hidden */
+  /** @internal */
   var _worldMatrixDeterminant: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _worldMatrixDeterminantIsDirty: Boolean = js.native
   
   def addBehavior(behavior: Behavior[Node], attachImmediately: Boolean): Node = js.native
@@ -172,11 +164,11 @@ trait Node
   
   /**
     * Computes the world matrix of the node
-    * @param force defines if the cache version should be invalidated forcing the world matrix to be created from scratch
+    * @param _force defines if the cache version should be invalidated forcing the world matrix to be created from scratch
     * @returns the world matrix
     */
   def computeWorldMatrix(): Matrix = js.native
-  def computeWorldMatrix(force: Boolean): Matrix = js.native
+  def computeWorldMatrix(_force: Boolean): Matrix = js.native
   
   /**
     * Creates an animation range for this node
@@ -247,13 +239,13 @@ trait Node
     * @returns an array of AbstractMesh
     */
   @JSName("getChildMeshes")
-  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](): js.Array[T] = js.native
+  def getChildMeshes_T[T /* <: AbstractMesh */](): js.Array[T] = js.native
   @JSName("getChildMeshes")
-  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](directDescendantsOnly: Boolean): js.Array[T] = js.native
+  def getChildMeshes_T[T /* <: AbstractMesh */](directDescendantsOnly: Boolean): js.Array[T] = js.native
   @JSName("getChildMeshes")
-  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  def getChildMeshes_T[T /* <: AbstractMesh */](directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
   @JSName("getChildMeshes")
-  def getChildMeshes_T_AbstractMesh[T /* <: AbstractMesh */](directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  def getChildMeshes_T[T /* <: AbstractMesh */](directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
   
   /**
     * Get all direct children of this node
@@ -272,13 +264,13 @@ trait Node
     * @returns an array of Node
     */
   @JSName("getChildren")
-  def getChildren_T_Node[T /* <: Node */](): js.Array[T] = js.native
+  def getChildren_T[T /* <: Node */](): js.Array[T] = js.native
   @JSName("getChildren")
-  def getChildren_T_Node[T /* <: Node */](predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  def getChildren_T[T /* <: Node */](predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
   @JSName("getChildren")
-  def getChildren_T_Node[T /* <: Node */](predicate: js.Function1[/* node */ this.type, /* is T */ Boolean], directDescendantsOnly: Boolean): js.Array[T] = js.native
+  def getChildren_T[T /* <: Node */](predicate: js.Function1[/* node */ this.type, /* is T */ Boolean], directDescendantsOnly: Boolean): js.Array[T] = js.native
   @JSName("getChildren")
-  def getChildren_T_Node[T /* <: Node */](predicate: Unit, directDescendantsOnly: Boolean): js.Array[T] = js.native
+  def getChildren_T[T /* <: Node */](predicate: Unit, directDescendantsOnly: Boolean): js.Array[T] = js.native
   
   /**
     * Gets a string identifying the name of the class
@@ -303,13 +295,13 @@ trait Node
     * @returns all children nodes of all types
     */
   @JSName("getDescendants")
-  def getDescendants_T_Node[T /* <: Node */](): js.Array[T] = js.native
+  def getDescendants_T[T /* <: Node */](): js.Array[T] = js.native
   @JSName("getDescendants")
-  def getDescendants_T_Node[T /* <: Node */](directDescendantsOnly: Boolean): js.Array[T] = js.native
+  def getDescendants_T[T /* <: Node */](directDescendantsOnly: Boolean): js.Array[T] = js.native
   @JSName("getDescendants")
-  def getDescendants_T_Node[T /* <: Node */](directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  def getDescendants_T[T /* <: Node */](directDescendantsOnly: Boolean, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
   @JSName("getDescendants")
-  def getDescendants_T_Node[T /* <: Node */](directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
+  def getDescendants_T[T /* <: Node */](directDescendantsOnly: Unit, predicate: js.Function1[/* node */ this.type, /* is T */ Boolean]): js.Array[T] = js.native
   
   /**
     * Gets the engine of the node
@@ -382,25 +374,25 @@ trait Node
   
   /**
     * Is this node ready to be used/rendered
-    * @param completeCheck defines if a complete check (including materials and lights) has to be done (false by default)
+    * @param _completeCheck defines if a complete check (including materials and lights) has to be done (false by default)
     * @returns true if the node is ready
     */
   def isReady(): Boolean = js.native
-  def isReady(completeCheck: Boolean): Boolean = js.native
+  def isReady(_completeCheck: Boolean): Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def isSynchronized(): Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def isSynchronizedWithParent(): Boolean = js.native
   
   /**
     * Flag the  node as dirty (Forcing it to update everything)
-    * @param property helps children apply precise "dirtyfication"
+    * @param _property helps children apply precise "dirtyfication"
     * @returns this node
     */
   def markAsDirty(): Node = js.native
-  def markAsDirty(property: String): Node = js.native
+  def markAsDirty(_property: String): Node = js.native
   
   /**
     * Gets or sets an object used to store user defined information for the node
@@ -472,8 +464,7 @@ trait Node
   var uniqueId: Double = js.native
   
   /**
-    * @param force
-    * @hidden
+    * @internal
     */
   def updateCache(): Unit = js.native
   def updateCache(force: Boolean): Unit = js.native

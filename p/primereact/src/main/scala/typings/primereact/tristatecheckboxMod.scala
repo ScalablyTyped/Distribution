@@ -80,7 +80,6 @@ import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
-import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
@@ -191,7 +190,7 @@ object tristatecheckboxMod {
     }
   }
   
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'value'> */
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'value' | 'ref'> */
   trait TriStateCheckboxProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -563,8 +562,6 @@ object tristatecheckboxMod {
     var radioGroup: js.UndefOr[String] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
-    
-    var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -1364,14 +1361,6 @@ object tristatecheckboxMod {
       inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
-      
-      inline def setRef(value: LegacyRef[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
-      
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       

@@ -1,5 +1,6 @@
 package typings.reactCache
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def unstableCreateResource[Input, Value](fetch: js.Function1[/* input */ Input, js.Thenable[Value]]): Resource[Input, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createResource")(fetch.asInstanceOf[js.Any]).asInstanceOf[Resource[Input, Value]]
+  inline def unstableCreateResource[Input, Value](fetch: js.Function1[/* input */ Input, PromiseLike[Value]]): Resource[Input, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createResource")(fetch.asInstanceOf[js.Any]).asInstanceOf[Resource[Input, Value]]
   inline def unstableCreateResource[Input, Value](
-    fetch: js.Function1[/* input */ Input, js.Thenable[Value]],
+    fetch: js.Function1[/* input */ Input, PromiseLike[Value]],
     maybeHashInput: js.Function1[/* input */ Input, String | Double]
   ): Resource[Input, Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createResource")(fetch.asInstanceOf[js.Any], maybeHashInput.asInstanceOf[js.Any])).asInstanceOf[Resource[Input, Value]]
   

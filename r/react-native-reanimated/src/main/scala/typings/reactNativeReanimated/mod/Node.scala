@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-reanimated", "Node")
 @js.native
-class Node[T] () extends StObject
+open class Node[T] () extends StObject

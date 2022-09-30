@@ -48,6 +48,15 @@ object mod {
   inline def openDevTools(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDevTools")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
+  	The absolute path to a preload script to use in [`session#setPreloads()`](https://www.electronjs.org/docs/api/session#sessetpreloadspreloads).
+  	Use it to enable `devtron` even when [`nodeIntegration`](https://www.electronjs.org/docs/api/browser-window#new-browserwindowoptions) is turned off.
+  	*/
+  @JSImport("electron-debug", "preloadScriptPath")
+  @js.native
+  def preloadScriptPath: String = js.native
+  inline def preloadScriptPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preloadScriptPath")(x.asInstanceOf[js.Any])
+  
+  /**
   	Reload the specified `BrowserWindow` instance or the focused one.
   	@param window - Default: `BrowserWindow.getFocusedWindow()`
   	*/

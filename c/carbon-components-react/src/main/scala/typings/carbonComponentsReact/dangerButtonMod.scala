@@ -195,7 +195,7 @@ object dangerButtonMod {
   // tslint:disable:unified-signatures breaks certain usages
   inline def default(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def default_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_T[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

@@ -189,7 +189,7 @@ type JobReportScope = _JobReportScope | String
   - typings.awsSdk.awsSdkStrings.Failing_
   - typings.awsSdk.awsSdkStrings.New_
   - typings.awsSdk.awsSdkStrings.Paused_
-  - typings.awsSdk.awsSdkStrings.Pausing
+  - typings.awsSdk.awsSdkStrings.Pausing_
   - typings.awsSdk.awsSdkStrings.Preparing_
   - typings.awsSdk.awsSdkStrings.Ready_
   - typings.awsSdk.awsSdkStrings.Suspended_

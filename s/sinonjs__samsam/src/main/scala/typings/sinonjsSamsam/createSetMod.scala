@@ -17,7 +17,7 @@ object createSetMod {
     *
     * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
     */
-  inline def apply(array: js.Array[Any], args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(List(array.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply(array: js.Array[Any], args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(scala.List(array.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("@sinonjs/samsam/types/create-set", JSImport.Namespace)
   @js.native

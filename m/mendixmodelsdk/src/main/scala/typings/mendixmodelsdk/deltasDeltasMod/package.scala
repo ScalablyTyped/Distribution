@@ -13,4 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mendixmodelsdk.commonMod.common.ISize
   - typings.mendixmodelsdk.commonMod.common.IColor
 */
-type PrimitiveValue = typings.mendixmodelsdk.deltasDeltasMod._PrimitiveValue | scala.Boolean | scala.Double | java.lang.String
+type PrimitiveValue = _PrimitiveValue | Boolean | Double | String

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.DatabaseType")
 @js.native
-class DatabaseType protected ()
+open class DatabaseType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.DatabaseType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

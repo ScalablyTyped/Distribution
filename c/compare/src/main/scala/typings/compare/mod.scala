@@ -1,8 +1,8 @@
 package typings.compare
 
-import typings.compare.compareNumbers.`-1`
-import typings.compare.compareNumbers.`0`
-import typings.compare.compareNumbers.`1`
+import typings.compare.compareInts.`-1`
+import typings.compare.compareInts.`0`
+import typings.compare.compareInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

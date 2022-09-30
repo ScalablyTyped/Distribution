@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.RollbackAction")
 @js.native
-class RollbackAction protected ()
+open class RollbackAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.RollbackAction {
   def this(
     model: AbstractModel,

@@ -3,6 +3,7 @@ package typings.schematicsAngular
 import typings.angularDevkitCore.utilsMod.JsonValue
 import typings.angularDevkitSchematics.interfaceMod.Rule
 import typings.angularDevkitSchematics.mod.Tree
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +42,7 @@ object workspaceMod {
   inline def getWorkspace(tree: Tree, path: String): js.Promise[WorkspaceDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(tree.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WorkspaceDefinition]]
   
   inline def updateWorkspace(
-    updater: js.Function1[/* workspace */ WorkspaceDefinition, Unit | Rule | (js.Thenable[Unit | Rule])]
+    updater: js.Function1[/* workspace */ WorkspaceDefinition, Unit | Rule | (PromiseLike[Unit | Rule])]
   ): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspace")(updater.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
   inline def writeWorkspace(tree: Tree, workspace: WorkspaceDefinition): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeWorkspace")(tree.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

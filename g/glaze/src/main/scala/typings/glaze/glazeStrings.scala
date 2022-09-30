@@ -16,26 +16,6 @@ object glazeStrings {
   inline def `-0Dot05em`: `-0Dot05em` = "-0.05em".asInstanceOf[`-0Dot05em`]
   
   @js.native
-  sealed trait `0 0 0 3px rgbaLeftparenthesis66Comma153Comma225CommaDot5Rightparenthesis` extends StObject
-  inline def `0 0 0 3px rgbaLeftparenthesis66Comma153Comma225CommaDot5Rightparenthesis`: `0 0 0 3px rgbaLeftparenthesis66Comma153Comma225CommaDot5Rightparenthesis` = ("0 0 0 3px rgba(66,153,225,.5)").asInstanceOf[`0 0 0 3px rgbaLeftparenthesis66Comma153Comma225CommaDot5Rightparenthesis`]
-  
-  @js.native
-  sealed trait `0 10px 15px -3px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 4px 6px -2px rgbaLeftparenthesis0Comma0Comma0CommaDot05Rightparenthesis` extends StObject
-  inline def `0 10px 15px -3px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 4px 6px -2px rgbaLeftparenthesis0Comma0Comma0CommaDot05Rightparenthesis`: `0 10px 15px -3px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 4px 6px -2px rgbaLeftparenthesis0Comma0Comma0CommaDot05Rightparenthesis` = ("0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)").asInstanceOf[`0 10px 15px -3px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 4px 6px -2px rgbaLeftparenthesis0Comma0Comma0CommaDot05Rightparenthesis`]
-  
-  @js.native
-  sealed trait `0 1px 3px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 1px 2px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` extends StObject
-  inline def `0 1px 3px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 1px 2px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`: `0 1px 3px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 1px 2px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` = ("0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)").asInstanceOf[`0 1px 3px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 1px 2px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`]
-  
-  @js.native
-  sealed trait `0 20px 25px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 10px 10px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot04Rightparenthesis` extends StObject
-  inline def `0 20px 25px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 10px 10px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot04Rightparenthesis`: `0 20px 25px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 10px 10px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot04Rightparenthesis` = ("0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04)").asInstanceOf[`0 20px 25px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 10px 10px -5px rgbaLeftparenthesis0Comma0Comma0CommaDot04Rightparenthesis`]
-  
-  @js.native
-  sealed trait `0 4px 6px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 2px 4px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` extends StObject
-  inline def `0 4px 6px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 2px 4px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`: `0 4px 6px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 2px 4px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` = ("0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)").asInstanceOf[`0 4px 6px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot1RightparenthesisComma0 2px 4px -1px rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`]
-  
-  @js.native
   sealed trait `100Percentsign` extends StObject
   inline def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
   
@@ -168,10 +148,6 @@ object glazeStrings {
   @js.native
   sealed trait height extends StObject
   inline def height: height = "height".asInstanceOf[height]
-  
-  @js.native
-  sealed trait `inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` extends StObject
-  inline def `inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`: `inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis` = ("inset 0 2px 4px 0 rgba(0,0,0,.06)").asInstanceOf[`inset 0 2px 4px 0 rgbaLeftparenthesis0Comma0Comma0CommaDot06Rightparenthesis`]
   
   @js.native
   sealed trait left extends StObject

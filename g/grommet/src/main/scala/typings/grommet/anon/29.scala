@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `29` extends StObject {
   
-  var icons: js.UndefOr[`4`] = js.undefined
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object `29` {
   
@@ -17,8 +17,8 @@ object `29` {
   
   extension [Self <: `29`](x: Self) {
     
-    inline def setIcons(value: `4`): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

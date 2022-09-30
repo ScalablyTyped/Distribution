@@ -14,7 +14,7 @@ object createMatcherMod {
     * @param {string} message A message for the expectation
     * @returns {object} A matcher object
     */
-  inline def apply(expectation: Any, message: String, args: Any*): js.Object = (^.asInstanceOf[js.Dynamic].apply((List(expectation.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
+  inline def apply(expectation: Any, message: String, args: Any*): js.Object = (^.asInstanceOf[js.Dynamic].apply((scala.List(expectation.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
   
   @JSImport("@sinonjs/samsam/types/create-matcher", JSImport.Namespace)
   @js.native
@@ -56,7 +56,7 @@ object createMatcherMod {
   @js.native
   val has: Any = js.native
   
-  inline def hasNested(property: Any, value: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasNested")((List(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def hasNested(property: Any, value: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasNested")((scala.List(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   @JSImport("@sinonjs/samsam/types/create-matcher", "hasOwn")
   @js.native

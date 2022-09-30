@@ -2,7 +2,7 @@ package typings.simpleDiff
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.simpleDiff.anon.NewPath
-import typings.simpleDiff.simpleDiffNumbers.`-1`
+import typings.simpleDiff.simpleDiffInts.`-1`
 import typings.simpleDiff.simpleDiffStrings.`add-item`
 import typings.simpleDiff.simpleDiffStrings.`move-item`
 import typings.simpleDiff.simpleDiffStrings.`remove-item`

@@ -7,12 +7,12 @@ import typings.angularCore.mod.NgModuleFactory
 import typings.angularCore.mod.Provider
 import typings.angularCore.mod.Type
 import typings.angularCore.mod.Version
-import typings.angularRouter.angularRouterNumbers.`0`
-import typings.angularRouter.angularRouterNumbers.`1`
-import typings.angularRouter.angularRouterNumbers.`2`
-import typings.angularRouter.angularRouterNumbers.`3`
-import typings.angularRouter.angularRouterNumbers.`4`
-import typings.angularRouter.angularRouterNumbers.`5`
+import typings.angularRouter.angularRouterInts.`0`
+import typings.angularRouter.angularRouterInts.`1`
+import typings.angularRouter.angularRouterInts.`2`
+import typings.angularRouter.angularRouterInts.`3`
+import typings.angularRouter.angularRouterInts.`4`
+import typings.angularRouter.angularRouterInts.`5`
 import typings.angularRouter.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,7 +39,7 @@ inline def createUrlTreeFromSnapshot(relativeTo: ActivatedRouteSnapshot, command
 
 inline def defaultUrlMatcher(segments: js.Array[UrlSegment], segmentGroup: UrlSegmentGroup, route: Route): UrlMatchResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultUrlMatcher")(segments.asInstanceOf[js.Any], segmentGroup.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[UrlMatchResult | Null]
 
-inline def provideRouter(routes: Routes, features: RouterFeatures*): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideRouter")(List(routes.asInstanceOf[js.Any]).`++`(features.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Provider]]
+inline def provideRouter(routes: Routes, features: RouterFeatures*): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideRouter")(scala.List(routes.asInstanceOf[js.Any]).`++`(features.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Provider]]
 
 inline def provideRoutes(routes: Routes): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[Provider]]
 

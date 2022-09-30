@@ -10,7 +10,7 @@ import typings.ethereumjsUtil.accountMod.AccountData
 import typings.ethereumjsUtil.bytesMod.ToBufferInputTypes
 import typings.ethereumjsUtil.ethereumjsUtilBooleans.`false`
 import typings.ethereumjsUtil.ethereumjsUtilBooleans.`true`
-import typings.ethereumjsUtil.ethereumjsUtilNumbers.`26`
+import typings.ethereumjsUtil.ethereumjsUtilInts.`26`
 import typings.ethereumjsUtil.ethereumjsUtilStrings.hex
 import typings.ethereumjsUtil.signatureMod.ECDSASignature
 import typings.ethereumjsUtil.signatureMod.ECDSASignatureBuffer
@@ -250,10 +250,11 @@ object mod {
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("ethereumjs-util", "BN.BNCls")
+    @JSImport("ethereumjs-util", "BN.BN")
     @js.native
     open class BNCls protected ()
-      extends typings.ethereumjsUtil.externalsMod.BN.BNCls {
+      extends StObject
+         with typings.bnJs.mod.BN {
       def this(number: String) = this()
       def this(number: js.Array[Double]) = this()
       def this(number: js.typedarray.Uint8Array) = this()

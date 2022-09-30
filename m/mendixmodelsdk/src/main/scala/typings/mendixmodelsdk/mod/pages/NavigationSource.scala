@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.NavigationSource")
 @js.native
-class NavigationSource protected ()
+open class NavigationSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.NavigationSource {
   def this(
     model: AbstractModel,

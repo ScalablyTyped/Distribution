@@ -11,22 +11,22 @@ object componentDropdownMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/dropdown/component.dropdown", "WorksDropdown")
   @js.native
-  class WorksDropdown protected () extends HomeworksManager {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+  open class WorksDropdown protected () extends HomeworksManager {
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$dropdown")
-    var $dropdown: js.Any = js.native
+    var $dropdown: Any = js.native
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
     var `class`: String = js.native
     
     var direction: String = js.native
     
-    var dropdownChild: ElementRef[js.Any] = js.native
+    var dropdownChild: ElementRef[Any] = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
     def ngAfterViewInit(): Unit = js.native
     

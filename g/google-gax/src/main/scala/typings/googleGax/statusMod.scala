@@ -1,10 +1,19 @@
 package typings.googleGax
 
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusMod {
+  
+  @JSImport("google-gax/build/src/status", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("google-gax/build/src/status", "HttpCodeToRpcCodeMap")
+  @js.native
+  val HttpCodeToRpcCodeMap: Map[Double, Status] = js.native
   
   @js.native
   sealed trait Status extends StObject
@@ -117,4 +126,6 @@ object statusMod {
          with Status
     /* 2 */ val UNKNOWN: typings.googleGax.statusMod.Status.UNKNOWN & Double = js.native
   }
+  
+  inline def rpcCodeFromHttpStatusCode(httpStatusCode: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rpcCodeFromHttpStatusCode")(httpStatusCode.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

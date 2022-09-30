@@ -12,7 +12,7 @@ trait ExperienceConfiguration extends StObject {
   var ContentSourceConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ContentSourceConfiguration] = js.undefined
   
   /**
-    * The Amazon Web Services SSO field name that contains the identifiers of your users, such as their emails.
+    * The IAM Identity Center field name that contains the identifiers of your users, such as their emails.
     */
   var UserIdentityConfiguration: js.UndefOr[typings.awsSdk.kendraMod.UserIdentityConfiguration] = js.undefined
 }

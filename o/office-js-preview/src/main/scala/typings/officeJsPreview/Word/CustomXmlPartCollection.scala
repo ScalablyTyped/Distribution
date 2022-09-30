@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the collection of {@link Word.CustomXmlPart} objects.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait CustomXmlPartCollection
@@ -26,8 +25,7 @@ trait CustomXmlPartCollection
     * Adds a new custom XML part to the document.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param xml Required. XML content. Must be a valid XML fragment.
     */
@@ -41,8 +39,7 @@ trait CustomXmlPartCollection
     * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param namespaceUri Required. The namespace URI.
     */
@@ -52,28 +49,25 @@ trait CustomXmlPartCollection
     * Gets the number of items in the collection.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a custom XML part based on its ID. Read only.
+    * Gets a custom XML part based on its ID.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param id ID or index of the custom XML part to be retrieved.
     */
   def getItem(id: String): CustomXmlPart = js.native
   
   /**
-    * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist.
+    * Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param id Required. ID of the object to be retrieved.
     */

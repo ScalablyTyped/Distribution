@@ -1,9 +1,9 @@
 package typings.openfin.windowMod
 
 import typings.openfin.eventsBaseMod.WindowEvent
-import typings.openfin.openfinNumbers.`0`
-import typings.openfin.openfinNumbers.`1`
-import typings.openfin.openfinNumbers.`2`
+import typings.openfin.openfinInts.`0`
+import typings.openfin.openfinInts.`1`
+import typings.openfin.openfinInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

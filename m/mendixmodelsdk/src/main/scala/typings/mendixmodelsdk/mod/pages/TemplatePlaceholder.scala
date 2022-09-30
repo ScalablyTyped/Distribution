@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.TemplatePlaceholder")
 @js.native
-class TemplatePlaceholder protected ()
+open class TemplatePlaceholder protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.TemplatePlaceholder {
   def this(
     model: AbstractModel,

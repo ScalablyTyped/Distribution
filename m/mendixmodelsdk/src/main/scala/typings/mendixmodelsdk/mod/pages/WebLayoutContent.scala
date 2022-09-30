@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.WebLayoutContent")
 @js.native
-class WebLayoutContent protected ()
+open class WebLayoutContent protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.WebLayoutContent {
   def this(
     model: AbstractModel,

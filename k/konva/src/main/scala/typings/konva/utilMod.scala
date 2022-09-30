@@ -3,8 +3,8 @@ package typings.konva
 import typings.konva.anon.A
 import typings.konva.anon.Rotation
 import typings.konva.anon.X
-import typings.konva.konvaNumbers.`-1`
-import typings.konva.konvaNumbers.`1`
+import typings.konva.konvaInts.`-1`
+import typings.konva.konvaInts.`1`
 import typings.konva.typesMod.IRect
 import typings.konva.typesMod.RGB
 import typings.konva.typesMod.RGBA

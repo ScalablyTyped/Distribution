@@ -1,10 +1,10 @@
 package typings.activexShdocvw.SHDocVw
 
-import typings.activexShdocvw.activexShdocvwNumbers.`0`
-import typings.activexShdocvw.activexShdocvwNumbers.`1`
-import typings.activexShdocvw.activexShdocvwNumbers.`2`
-import typings.activexShdocvw.activexShdocvwNumbers.`4`
-import typings.activexShdocvw.activexShdocvwNumbers.`8`
+import typings.activexShdocvw.activexShdocvwInts.`0`
+import typings.activexShdocvw.activexShdocvwInts.`1`
+import typings.activexShdocvw.activexShdocvwInts.`2`
+import typings.activexShdocvw.activexShdocvwInts.`4`
+import typings.activexShdocvw.activexShdocvwInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Constants for ShellWindows registration */
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShdocvw.activexShdocvwNumbers.`2`
-  - typings.activexShdocvw.activexShdocvwNumbers.`1`
-  - typings.activexShdocvw.activexShdocvwNumbers.`4`
-  - typings.activexShdocvw.activexShdocvwNumbers.`8`
-  - typings.activexShdocvw.activexShdocvwNumbers.`0`
+  - typings.activexShdocvw.activexShdocvwInts.`2`
+  - typings.activexShdocvw.activexShdocvwInts.`1`
+  - typings.activexShdocvw.activexShdocvwInts.`4`
+  - typings.activexShdocvw.activexShdocvwInts.`8`
+  - typings.activexShdocvw.activexShdocvwInts.`0`
 */
 trait ShellWindowTypeConstants extends StObject
 object ShellWindowTypeConstants {

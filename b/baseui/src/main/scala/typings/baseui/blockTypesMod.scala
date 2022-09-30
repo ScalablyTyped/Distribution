@@ -3,7 +3,7 @@ package typings.baseui
 import typings.baseui.anon.ClassName
 import typings.baseui.anon.RefAny
 import typings.baseui.anon.`2`
-import typings.baseui.baseuiNumbers.`0`
+import typings.baseui.baseuiInts.`0`
 import typings.baseui.baseuiStrings.$style
 import typings.baseui.baseuiStrings.className
 import typings.baseui.baseuiStrings.end_

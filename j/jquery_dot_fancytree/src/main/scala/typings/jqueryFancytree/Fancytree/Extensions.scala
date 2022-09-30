@@ -315,12 +315,12 @@ object Extensions {
   }
   object List {
     
-    inline def apply(): List = {
+    inline def apply(): typings.jqueryFancytree.Fancytree.Extensions.List = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.jqueryFancytree.Fancytree.Extensions.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.jqueryFancytree.Fancytree.Extensions.List](x: Self) {
       
       inline def setDnd5(value: DragAndDrop5): Self = StObject.set(x, "dnd5", value.asInstanceOf[js.Any])
       

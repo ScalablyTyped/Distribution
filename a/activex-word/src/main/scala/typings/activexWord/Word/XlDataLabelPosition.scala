@@ -1,32 +1,32 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-4108`
-import typings.activexWord.activexWordNumbers.`-4131`
-import typings.activexWord.activexWordNumbers.`-4152`
-import typings.activexWord.activexWordNumbers.`0`
-import typings.activexWord.activexWordNumbers.`1`
-import typings.activexWord.activexWordNumbers.`2`
-import typings.activexWord.activexWordNumbers.`3`
-import typings.activexWord.activexWordNumbers.`4`
-import typings.activexWord.activexWordNumbers.`5`
-import typings.activexWord.activexWordNumbers.`6`
-import typings.activexWord.activexWordNumbers.`7`
+import typings.activexWord.activexWordInts.`-4108`
+import typings.activexWord.activexWordInts.`-4131`
+import typings.activexWord.activexWordInts.`-4152`
+import typings.activexWord.activexWordInts.`0`
+import typings.activexWord.activexWordInts.`1`
+import typings.activexWord.activexWordInts.`2`
+import typings.activexWord.activexWordInts.`3`
+import typings.activexWord.activexWordInts.`4`
+import typings.activexWord.activexWordInts.`5`
+import typings.activexWord.activexWordInts.`6`
+import typings.activexWord.activexWordInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`0`
-  - typings.activexWord.activexWordNumbers.`1`
-  - typings.activexWord.activexWordNumbers.`5`
-  - typings.activexWord.activexWordNumbers.`-4108`
-  - typings.activexWord.activexWordNumbers.`7`
-  - typings.activexWord.activexWordNumbers.`4`
-  - typings.activexWord.activexWordNumbers.`3`
-  - typings.activexWord.activexWordNumbers.`-4131`
-  - typings.activexWord.activexWordNumbers.`6`
-  - typings.activexWord.activexWordNumbers.`2`
-  - typings.activexWord.activexWordNumbers.`-4152`
+  - typings.activexWord.activexWordInts.`0`
+  - typings.activexWord.activexWordInts.`1`
+  - typings.activexWord.activexWordInts.`5`
+  - typings.activexWord.activexWordInts.`-4108`
+  - typings.activexWord.activexWordInts.`7`
+  - typings.activexWord.activexWordInts.`4`
+  - typings.activexWord.activexWordInts.`3`
+  - typings.activexWord.activexWordInts.`-4131`
+  - typings.activexWord.activexWordInts.`6`
+  - typings.activexWord.activexWordInts.`2`
+  - typings.activexWord.activexWordInts.`-4152`
 */
 trait XlDataLabelPosition extends StObject
 object XlDataLabelPosition {

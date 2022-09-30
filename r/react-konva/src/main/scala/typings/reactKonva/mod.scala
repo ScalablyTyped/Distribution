@@ -10,14 +10,15 @@ import typings.konva.mod.Konva.Ellipse
 import typings.konva.mod.Konva.EllipseConfig
 import typings.konva.mod.Konva.FastLayer
 import typings.konva.mod.Konva.Group
+import typings.konva.mod.Konva.GroupConfig
 import typings.konva.mod.Konva.Image
 import typings.konva.mod.Konva.ImageConfig
 import typings.konva.mod.Konva.Label
+import typings.konva.mod.Konva.LabelConfig
 import typings.konva.mod.Konva.Layer
 import typings.konva.mod.Konva.LayerConfig
 import typings.konva.mod.Konva.Line
 import typings.konva.mod.Konva.LineConfig
-import typings.konva.mod.Konva.NodeConfig
 import typings.konva.mod.Konva.Path
 import typings.konva.mod.Konva.PathConfig
 import typings.konva.mod.Konva.Rect
@@ -43,8 +44,9 @@ import typings.konva.mod.Konva.Transformer
 import typings.konva.mod.Konva.TransformerConfig
 import typings.konva.mod.Konva.Wedge
 import typings.konva.mod.Konva.WedgeConfig
-import typings.reactKonva.reactKonvaCoreMod.KonvaNodeComponent
-import typings.reactKonva.reactKonvaCoreMod.StageProps
+import typings.reactKonva.reactKonvaMod.KonvaNodeComponent
+import typings.reactKonva.reactKonvaMod.StageProps
+import typings.reactReconciler.mod.Reconciler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,18 +84,23 @@ object mod {
   
   @JSImport("react-konva", "Group")
   @js.native
-  def Group: KonvaNodeComponent[typings.konva.mod.Konva.Group, NodeConfig] = js.native
-  inline def Group_=(x: KonvaNodeComponent[Group, NodeConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+  def Group: KonvaNodeComponent[typings.konva.mod.Konva.Group, GroupConfig] = js.native
+  inline def Group_=(x: KonvaNodeComponent[Group, GroupConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
   
   @JSImport("react-konva", "Image")
   @js.native
   def Image: KonvaNodeComponent[typings.konva.mod.Konva.Image, ImageConfig] = js.native
   inline def Image_=(x: KonvaNodeComponent[Image, ImageConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
   
+  @JSImport("react-konva", "KonvaRenderer")
+  @js.native
+  def KonvaRenderer: Reconciler[Any, Any, Any, Any, Any] = js.native
+  inline def KonvaRenderer_=(x: Reconciler[Any, Any, Any, Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KonvaRenderer")(x.asInstanceOf[js.Any])
+  
   @JSImport("react-konva", "Label")
   @js.native
-  def Label: KonvaNodeComponent[typings.konva.mod.Konva.Label, NodeConfig] = js.native
-  inline def Label_=(x: KonvaNodeComponent[Label, NodeConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
+  def Label: KonvaNodeComponent[typings.konva.mod.Konva.Label, LabelConfig] = js.native
+  inline def Label_=(x: KonvaNodeComponent[Label, LabelConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
   
   @JSImport("react-konva", "Layer")
   @js.native

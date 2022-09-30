@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.17.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NewButton")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NewButton")
 @js.native
-class NewButton protected ()
+open class NewButton protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.NewButton {
   def this(
     model: AbstractModel,
@@ -30,7 +30,7 @@ class NewButton protected ()
 }
 object NewButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NewButton")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NewButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -527,13 +527,13 @@ object NewButton {
   inline def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.NewButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NewButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NewButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NewButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NewButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NewButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

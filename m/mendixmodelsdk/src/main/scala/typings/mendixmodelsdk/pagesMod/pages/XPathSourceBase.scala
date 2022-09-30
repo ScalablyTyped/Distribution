@@ -10,7 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.XPathSourceBase")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.XPathSourceBase")
 @js.native
 abstract class XPathSourceBase protected () extends SortableEntityPathSource {
   def this(
@@ -30,18 +30,18 @@ abstract class XPathSourceBase protected () extends SortableEntityPathSource {
 }
 object XPathSourceBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.XPathSourceBase")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.XPathSourceBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.XPathSourceBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.XPathSourceBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.XPathSourceBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.XPathSourceBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

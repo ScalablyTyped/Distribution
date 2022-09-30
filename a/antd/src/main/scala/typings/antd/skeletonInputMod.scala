@@ -1,30 +1,19 @@
 package typings.antd
 
-import typings.antd.anon.SizeString
-import typings.antd.antdStrings.default
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
 import typings.react.mod.CSSProperties
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object skeletonInputMod {
+object skeletonInputMod extends Shortcut {
   
-  object default {
-    
-    inline def apply(props: SkeletonInputProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("antd/lib/skeleton/Input", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd/lib/skeleton/Input", "default.defaultProps")
-    @js.native
-    def defaultProps: SizeString = js.native
-    inline def defaultProps_=(x: SizeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("antd/lib/skeleton/Input", JSImport.Default)
+  @js.native
+  val default: FC[SkeletonInputProps] = js.native
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size' | 'shape'> */
   trait SkeletonInputProps extends StObject {
@@ -37,7 +26,7 @@ object skeletonInputMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[large | small | default] = js.undefined
+    var size: js.UndefOr[large | small | typings.antd.antdStrings.default] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -66,7 +55,7 @@ object skeletonInputMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setSize(value: large | small | default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small | typings.antd.antdStrings.default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -75,4 +64,9 @@ object skeletonInputMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
+  
+  type _To = FC[SkeletonInputProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `skeletonInputMod.foo` */
+  override def _to: FC[SkeletonInputProps] = default
 }

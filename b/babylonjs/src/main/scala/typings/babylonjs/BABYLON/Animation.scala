@@ -18,15 +18,12 @@ trait Animation extends StObject {
   /* private */ var _events: Any = js.native
   
   /**
-    * @param value
-    * @hidden Internal use only
+    * @internal Internal use only
     */
   def _getKeyValue(value: Any): Any = js.native
   
   /**
-    * @param currentFrame
-    * @param state
-    * @hidden Internal use only
+    * @internal Internal use only
     */
   def _interpolate(currentFrame: Double, state: IAnimationState): Any = js.native
   
@@ -41,7 +38,7 @@ trait Animation extends StObject {
   /* private */ var _ranges: Any = js.native
   
   /**
-    * @hidden Internal use only
+    * @internal Internal use only
     */
   var _runtimeAnimations: js.Array[RuntimeAnimation] = js.native
   

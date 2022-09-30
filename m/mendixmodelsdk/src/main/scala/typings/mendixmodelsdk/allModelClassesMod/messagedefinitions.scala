@@ -21,9 +21,9 @@ object messagedefinitions {
   /**
     * In version 7.10.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AssociationElement")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AssociationElement")
   @js.native
-  class AssociationElement protected ()
+  open class AssociationElement protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.AssociationElement {
     def this(
       model: AbstractModel,
@@ -36,7 +36,7 @@ object messagedefinitions {
   }
   object AssociationElement {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AssociationElement")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AssociationElement")
     @js.native
     val ^ : js.Any = js.native
     
@@ -71,13 +71,13 @@ object messagedefinitions {
     inline def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.AssociationElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.AssociationElement]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AssociationElement.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AssociationElement.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AssociationElement.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AssociationElement.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -86,9 +86,9 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AttributeElement")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AttributeElement")
   @js.native
-  class AttributeElement protected ()
+  open class AttributeElement protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.AttributeElement {
     def this(
       model: AbstractModel,
@@ -101,7 +101,7 @@ object messagedefinitions {
   }
   object AttributeElement {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AttributeElement")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AttributeElement")
     @js.native
     val ^ : js.Any = js.native
     
@@ -136,13 +136,13 @@ object messagedefinitions {
     inline def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.AttributeElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.AttributeElement]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AttributeElement.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AttributeElement.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.AttributeElement.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.AttributeElement.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -151,9 +151,9 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityElement")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityElement")
   @js.native
-  class EntityElement protected ()
+  open class EntityElement protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.EntityElement {
     def this(
       model: AbstractModel,
@@ -166,7 +166,7 @@ object messagedefinitions {
   }
   object EntityElement {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityElement")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityElement")
     @js.native
     val ^ : js.Any = js.native
     
@@ -201,13 +201,13 @@ object messagedefinitions {
     inline def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.EntityElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.EntityElement]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityElement.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityElement.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityElement.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityElement.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -218,9 +218,9 @@ object messagedefinitions {
     *
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition")
   @js.native
-  class EntityMessageDefinition protected ()
+  open class EntityMessageDefinition protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.EntityMessageDefinition {
     def this(
       model: AbstractModel,
@@ -233,7 +233,7 @@ object messagedefinitions {
   }
   object EntityMessageDefinition {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition")
     @js.native
     val ^ : js.Any = js.native
     
@@ -259,13 +259,13 @@ object messagedefinitions {
     ): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.EntityMessageDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.EntityMessageDefinition]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.EntityMessageDefinition.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -274,9 +274,9 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAssociation")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAssociation")
   @js.native
-  class ExposedAssociation protected ()
+  open class ExposedAssociation protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedAssociation {
     def this(
       model: AbstractModel,
@@ -289,7 +289,7 @@ object messagedefinitions {
   }
   object ExposedAssociation {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAssociation")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAssociation")
     @js.native
     val ^ : js.Any = js.native
     
@@ -324,13 +324,13 @@ object messagedefinitions {
     inline def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedAssociation]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAssociation.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAssociation.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAssociation.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAssociation.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -339,9 +339,9 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAttribute")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAttribute")
   @js.native
-  class ExposedAttribute protected ()
+  open class ExposedAttribute protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedAttribute {
     def this(
       model: AbstractModel,
@@ -354,7 +354,7 @@ object messagedefinitions {
   }
   object ExposedAttribute {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAttribute")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAttribute")
     @js.native
     val ^ : js.Any = js.native
     
@@ -389,13 +389,13 @@ object messagedefinitions {
     inline def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedAttribute]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAttribute.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAttribute.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedAttribute.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedAttribute.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -404,9 +404,9 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntity")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntity")
   @js.native
-  class ExposedEntity protected ()
+  open class ExposedEntity protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedEntity {
     def this(
       model: AbstractModel,
@@ -419,7 +419,7 @@ object messagedefinitions {
   }
   object ExposedEntity {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntity")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntity")
     @js.native
     val ^ : js.Any = js.native
     
@@ -465,13 +465,13 @@ object messagedefinitions {
     inline def createInJsonStructureUnderElements(container: JsonStructure): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedEntity]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntity.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntity.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntity.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntity.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -480,7 +480,7 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntityBase")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntityBase")
   @js.native
   abstract class ExposedEntityBase protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedEntityBase {
@@ -495,18 +495,18 @@ object messagedefinitions {
   }
   object ExposedEntityBase {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntityBase")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntityBase")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntityBase.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntityBase.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedEntityBase.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedEntityBase.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -515,7 +515,7 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedMember")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedMember")
   @js.native
   abstract class ExposedMember protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedMember {
@@ -530,18 +530,18 @@ object messagedefinitions {
   }
   object ExposedMember {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedMember")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedMember")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedMember.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedMember.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.ExposedMember.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.ExposedMember.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -550,7 +550,7 @@ object messagedefinitions {
   /**
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinition")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinition")
   @js.native
   abstract class MessageDefinition protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.MessageDefinition {
@@ -565,18 +565,18 @@ object messagedefinitions {
   }
   object MessageDefinition {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinition")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinition")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinition.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinition.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinition.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinition.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -587,9 +587,9 @@ object messagedefinitions {
     *
     * In version 7.6.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection")
   @js.native
-  class MessageDefinitionCollection protected ()
+  open class MessageDefinitionCollection protected ()
     extends typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.MessageDefinitionCollection {
     def this(
       model: AbstractModel,
@@ -601,7 +601,7 @@ object messagedefinitions {
   }
   object MessageDefinitionCollection {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection")
     @js.native
     val ^ : js.Any = js.native
     
@@ -613,13 +613,13 @@ object messagedefinitions {
     inline def createIn(container: IFolderBase): typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.MessageDefinitionCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.MessageDefinitionCollection]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "messagedefinitions.MessageDefinitionCollection.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

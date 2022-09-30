@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-screens
 
-Typings are for version 2.15.0
+Typings are for version 3.17.0
 
 ## Library description:
 Native navigation primitives for your React Native app.
@@ -10,15 +10,15 @@ Native navigation primitives for your React Native app.
 | ------------------ | :-------------: |
 | Full name          | react-native-screens |
 | Keywords           | - |
-| # releases         | 71 |
-| # dependents       | 208 |
-| # downloads        | 16350446 |
-| # stars            | 0 |
+| # releases         | 40 |
+| # dependents       | 0.0 |
+| # downloads        | 2398021.0 |
+| # stars            | 2411.0 |
 
 ## Links
-- [Homepage](https://github.com/kmagiera/react-native-screens#readme)
-- [Bugs](https://github.com/kmagiera/react-native-screens/issues)
-- [Repository](https://github.com/kmagiera/react-native-screens)
+- [Homepage](https://github.com/software-mansion/react-native-screens#readme)
+- [Bugs](https://github.com/software-mansion/react-native-screens/issues)
+- [Repository](https://github.com/software-mansion/react-native-screens)
 - [Npm](https://www.npmjs.com/package/react-native-screens)
     
 

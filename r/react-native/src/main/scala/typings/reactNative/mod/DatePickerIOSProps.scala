@@ -1,16 +1,16 @@
 package typings.reactNative.mod
 
-import typings.reactNative.reactNativeNumbers.`10`
-import typings.reactNative.reactNativeNumbers.`12`
-import typings.reactNative.reactNativeNumbers.`15`
-import typings.reactNative.reactNativeNumbers.`1`
-import typings.reactNative.reactNativeNumbers.`20`
-import typings.reactNative.reactNativeNumbers.`2`
-import typings.reactNative.reactNativeNumbers.`30`
-import typings.reactNative.reactNativeNumbers.`3`
-import typings.reactNative.reactNativeNumbers.`4`
-import typings.reactNative.reactNativeNumbers.`5`
-import typings.reactNative.reactNativeNumbers.`6`
+import typings.reactNative.reactNativeInts.`10`
+import typings.reactNative.reactNativeInts.`12`
+import typings.reactNative.reactNativeInts.`15`
+import typings.reactNative.reactNativeInts.`1`
+import typings.reactNative.reactNativeInts.`20`
+import typings.reactNative.reactNativeInts.`2`
+import typings.reactNative.reactNativeInts.`30`
+import typings.reactNative.reactNativeInts.`3`
+import typings.reactNative.reactNativeInts.`4`
+import typings.reactNative.reactNativeInts.`5`
+import typings.reactNative.reactNativeInts.`6`
 import typings.reactNative.reactNativeStrings.`inline`
 import typings.reactNative.reactNativeStrings.compact
 import typings.reactNative.reactNativeStrings.date

@@ -574,9 +574,9 @@ object libMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.rehypeParse.rehypeParseNumbers.`0`
-    - typings.rehypeParse.rehypeParseNumbers.`1`
-    - typings.rehypeParse.rehypeParseNumbers.`2`
+    - typings.rehypeParse.rehypeParseInts.`0`
+    - typings.rehypeParse.rehypeParseInts.`1`
+    - typings.rehypeParse.rehypeParseInts.`2`
     - scala.Boolean
     - scala.Null
     - scala.Unit

@@ -1,7 +1,7 @@
 package typings.interactjsTypes
 
-import typings.interactjsTypes.interactjsTypesNumbers.`-1`
-import typings.interactjsTypes.interactjsTypesNumbers.`1`
+import typings.interactjsTypes.interactjsTypesInts.`-1`
+import typings.interactjsTypes.interactjsTypesInts.`1`
 import typings.interactjsTypes.interactjsTypesStrings.drag
 import typings.interactjsTypes.interactjsTypesStrings.drop
 import typings.interactjsTypes.interactjsTypesStrings.gesture

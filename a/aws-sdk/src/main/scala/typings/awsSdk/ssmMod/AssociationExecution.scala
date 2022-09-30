@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AssociationExecution extends StObject {
   
+  var AlarmConfiguration: js.UndefOr[typings.awsSdk.ssmMod.AlarmConfiguration] = js.undefined
+  
   /**
     * The association ID.
     */
@@ -45,6 +47,11 @@ trait AssociationExecution extends StObject {
     * The status of the association execution.
     */
   var Status: js.UndefOr[StatusName] = js.undefined
+  
+  /**
+    * The CloudWatch alarms that were invoked by the association.
+    */
+  var TriggeredAlarms: js.UndefOr[AlarmStateInformationList] = js.undefined
 }
 object AssociationExecution {
   
@@ -54,6 +61,10 @@ object AssociationExecution {
   }
   
   extension [Self <: AssociationExecution](x: Self) {
+    
+    inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "AlarmConfiguration", js.undefined)
     
     inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
@@ -86,5 +97,11 @@ object AssociationExecution {
     inline def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setTriggeredAlarms(value: AlarmStateInformationList): Self = StObject.set(x, "TriggeredAlarms", value.asInstanceOf[js.Any])
+    
+    inline def setTriggeredAlarmsUndefined: Self = StObject.set(x, "TriggeredAlarms", js.undefined)
+    
+    inline def setTriggeredAlarmsVarargs(value: AlarmStateInformation*): Self = StObject.set(x, "TriggeredAlarms", js.Array(value*))
   }
 }

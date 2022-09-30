@@ -22,23 +22,23 @@ trait Effect
     * Binds a texture to the engine to be used as output of the shader.
     * @param channel Name of the output variable.
     * @param texture Texture to bind.
-    * @hidden
+    * @internal
     */
   def _bindTexture(channel: String, texture: Nullable[InternalTexture]): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _bonesComputationForcedToCPU: Boolean = js.native
   
   /* private */ var _checkIsReady: Any = js.native
   
   /* private */ var _compilationError: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _engine: Engine = js.native
   
   /* private */ var _fallbacks: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _fragmentSourceCode: String = js.native
   
   /* private */ var _fragmentSourceCodeOverride: Any = js.native
@@ -55,27 +55,27 @@ trait Effect
   
   /**
     * Key for the effect.
-    * @hidden
+    * @internal
     */
   var _key: String = js.native
   
   /* private */ var _loadShader: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _multiTarget: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _onBindObservable: Nullable[Observable[Effect]] = js.native
   
   /**
     * Compiled shader to webGL program.
-    * @hidden
+    * @internal
     */
   var _pipelineContext: Nullable[IPipelineContext] = js.native
   
   /**
     * Prepares the effect
-    * @hidden
+    * @internal
     */
   def _prepareEffect(): Unit = js.native
   
@@ -83,10 +83,10 @@ trait Effect
   
   /* private */ var _processingContext: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _rawFragmentSourceCode: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _rawVertexSourceCode: Any = js.native
   
   /**
@@ -95,7 +95,7 @@ trait Effect
     * @param fragmentSourceCode The source code for the fragment shader.
     * @param onCompiled Callback called when completed.
     * @param onError Callback called on error.
-    * @hidden
+    * @internal
     */
   def _rebuildProgram(
     vertexSourceCode: String,
@@ -104,7 +104,7 @@ trait Effect
     onError: js.Function1[/* message */ String, Unit]
   ): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _samplerList: js.Array[String] = js.native
   
   /* private */ var _samplers: Any = js.native
@@ -113,7 +113,7 @@ trait Effect
   
   /* private */ var _transformFeedbackVaryings: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _uniformBuffersNames: org.scalablytyped.runtime.StringDictionary[Double] = js.native
   
   /* private */ var _uniformBuffersNamesList: Any = js.native
@@ -124,19 +124,19 @@ trait Effect
   
   /* private */ var _useFinalCode: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vertexSourceCode: String = js.native
   
   /* private */ var _vertexSourceCodeOverride: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * Specifies if the effect was previously ready
     */
   var _wasPreviouslyReady: Boolean = js.native
   
   /**
-    * @hidden
+    * @internal
     * Specifies if the effect was previously using instances
     */
   var _wasPreviouslyUsingInstances: Nullable[Boolean] = js.native

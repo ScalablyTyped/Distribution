@@ -43,43 +43,43 @@ object engineWebVRMod {
     
     trait Engine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs]
       
-      /** @hidden */
+      /** @internal */
       var _oldHardwareScaleFactor: Double
       
-      /** @hidden */
+      /** @internal */
       var _oldSize: Size
       
-      /** @hidden */
+      /** @internal */
       def _onVRDisplayPointerRestricted(): Unit
       
-      /** @hidden */
+      /** @internal */
       def _onVRDisplayPointerUnrestricted(): Unit
       
-      /** @hidden */
+      /** @internal */
       def _onVRFullScreenTriggered(): Unit
       
-      /** @hidden */
+      /** @internal */
       var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]]
       
-      /** @hidden */
+      /** @internal */
       var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]]
       
-      /** @hidden */
+      /** @internal */
       var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]]
       
-      /** @hidden */
+      /** @internal */
       var _vrDisplay: Any
       
-      /** @hidden */
+      /** @internal */
       var _vrExclusivePointerMode: Boolean
       
-      /** @hidden */
+      /** @internal */
       var _vrSupported: Boolean
       
-      /** @hidden */
+      /** @internal */
       var _webVRInitPromise: js.Promise[IDisplayChangedEventArgs]
       
       /**

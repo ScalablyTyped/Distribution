@@ -2,15 +2,22 @@ package typings.electronPackager
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.asar.mod.CreateOptions
-import typings.electronNotarize.mod.NotarizeCredentials
-import typings.electronNotarize.mod.TransporterOptions
+import typings.electronNotarize.typesMod.LegacyNotarizeCredentials
+import typings.electronNotarize.typesMod.NotaryToolCredentials
+import typings.electronNotarize.typesMod.TransporterOptions
+import typings.electronPackager.anon.Tool
+import typings.electronPackager.anon.`0`
 import typings.electronPackager.electronPackagerBooleans.`false`
 import typings.electronPackager.electronPackagerBooleans.`true`
 import typings.electronPackager.electronPackagerStrings.all
+import typings.electronPackager.electronPackagerStrings.arm64AppPath
 import typings.electronPackager.electronPackagerStrings.asInvoker
+import typings.electronPackager.electronPackagerStrings.force
 import typings.electronPackager.electronPackagerStrings.highestAvailable
+import typings.electronPackager.electronPackagerStrings.outAppPath
 import typings.electronPackager.electronPackagerStrings.requireAdministrator
-import typings.std.RegExp
+import typings.electronPackager.electronPackagerStrings.x64AppPath
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,6 +85,9 @@ object mod {
     *   // ...
     * })
     * ```
+    *
+    * For real-world examples of `HookFunction`s, see the [list of related
+    * plugins](https://github.com/electron/electron-packager#plugins).
     */
   type HookFunction = /**
     * @param buildPath - For [[afterExtract]], the path to the temporary folder where the prebuilt
@@ -93,7 +103,7 @@ object mod {
     /* electronVersion */ String, 
     /* platform */ TargetArch, 
     /* arch */ TargetArch, 
-    /* callback */ js.Function0[Unit], 
+    /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
     Unit
   ]
   
@@ -134,9 +144,13 @@ object mod {
       
       inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
-      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
     }
   }
+  
+  type MakeUniversalOpts = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters</ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof makeUniversalApp * / any>[0] */ js.Any
+  
+  type NotarizeLegacyOptions = LegacyNotarizeCredentials & TransporterOptions
   
   /**
     * Architectures that have been supported by the official Electron prebuilt binaries, past
@@ -268,8 +282,8 @@ object mod {
     /**
       * Whether to package the application's source code into an archive, using [Electron's
       * archive format](https://github.com/electron/asar). Reasons why you may want to enable
-      * this feature are described in [an application packaging tutorial in Electron's
-      * documentation](https://electronjs.org/docs/tutorial/application-packaging/). When the value
+      * this feature include mitigating issues around long path names on Windows, slightly speeding
+      * up `require`, and concealing your source code from cursory inspection. When the value
       * is `true`, it passes the default configuration to the `asar` module. The configuration
       * values can be customized when the value is an `Object`. Supported sub-options include, but
       * are not limited to:
@@ -332,7 +346,7 @@ object mod {
       * **Note:** `download` sub-options will have no effect if the [[electronZipDir]] option is set.
       */
     var download: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ Any
       ] = js.undefined
     
     /**
@@ -362,6 +376,21 @@ object mod {
       */
     var executableName: js.UndefOr[String] = js.undefined
     
+    // eslint-disable-line @typescript-eslint/no-explicit-any
+    /**
+      * When the value is a string, specifies the filename of a `plist` file. Its contents are merged
+      * into all the Helper apps' `Info.plist` files.
+      * When the value is an `Object`, it specifies an already-parsed `plist` data structure that is
+      * merged into all the Helper apps' `Info.plist` files.
+      *
+      * Entries from `extendHelperInfo` override entries in the helper apps' `Info.plist` file supplied by
+      * `electron`, `electron-prebuilt-compile`, or `electron-prebuilt`, but are overridden by other
+      * options such as [[appVersion]] or [[appBundleId]].
+      *
+      * @category macOS
+      */
+    var extendHelperInfo: js.UndefOr[String | StringDictionary[Any]] = js.undefined
+    
     /**
       * When the value is a string, specifies the filename of a `plist` file. Its contents are merged
       * into the app's `Info.plist`.
@@ -374,12 +403,14 @@ object mod {
       *
       * @category macOS
       */
-    var extendInfo: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+    var extendInfo: js.UndefOr[String | StringDictionary[Any]] = js.undefined
     
     // eslint-disable-line @typescript-eslint/no-explicit-any
     /**
       * One or more files to be copied directly into the app's `Contents/Resources` directory for
-      * macOS target platforms, and the `resources` directory for other target platforms.
+      * macOS target platforms, and the `resources` directory for other target platforms. The
+      * resources directory can be referenced in the packaged app via the
+      * [`process.resourcesPath`](https://www.electronjs.org/docs/api/process#processresourcespath-readonly) value.
       */
     var extraResource: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -430,7 +461,7 @@ object mod {
       *
       * **Note:** `ignore` will have no effect if the [[prebuiltAsar]] option is set.
       */
-    var ignore: js.UndefOr[RegExp | js.Array[RegExp] | IgnoreFunction] = js.undefined
+    var ignore: js.UndefOr[js.RegExp | js.Array[js.RegExp] | IgnoreFunction] = js.undefined
     
     /**
       * Ignores [system junk files](https://github.com/sindresorhus/junk) when copying the Electron app,
@@ -472,6 +503,13 @@ object mod {
       * @category macOS
       */
     var osxSign: js.UndefOr[`true` | OsxSignOptions] = js.undefined
+    
+    /**
+      * Used to provide custom options to the internal call to `@electron/universal` when building a macOS
+      * app with the target architecture of "universal".  Unused otherwise, providing a value does not imply
+      * a universal app is built.
+      */
+    var osxUniversal: js.UndefOr[OsxUniversalOptions] = js.undefined
     
     /**
       * The base directory where the finished package(s) are created.
@@ -599,19 +637,19 @@ object mod {
       
       inline def setAfterCopyUndefined: Self = StObject.set(x, "afterCopy", js.undefined)
       
-      inline def setAfterCopyVarargs(value: HookFunction*): Self = StObject.set(x, "afterCopy", js.Array(value :_*))
+      inline def setAfterCopyVarargs(value: HookFunction*): Self = StObject.set(x, "afterCopy", js.Array(value*))
       
       inline def setAfterExtract(value: js.Array[HookFunction]): Self = StObject.set(x, "afterExtract", value.asInstanceOf[js.Any])
       
       inline def setAfterExtractUndefined: Self = StObject.set(x, "afterExtract", js.undefined)
       
-      inline def setAfterExtractVarargs(value: HookFunction*): Self = StObject.set(x, "afterExtract", js.Array(value :_*))
+      inline def setAfterExtractVarargs(value: HookFunction*): Self = StObject.set(x, "afterExtract", js.Array(value*))
       
       inline def setAfterPrune(value: js.Array[HookFunction]): Self = StObject.set(x, "afterPrune", value.asInstanceOf[js.Any])
       
       inline def setAfterPruneUndefined: Self = StObject.set(x, "afterPrune", js.undefined)
       
-      inline def setAfterPruneVarargs(value: HookFunction*): Self = StObject.set(x, "afterPrune", js.Array(value :_*))
+      inline def setAfterPruneVarargs(value: HookFunction*): Self = StObject.set(x, "afterPrune", js.Array(value*))
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -637,7 +675,7 @@ object mod {
       
       inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
       
-      inline def setArchVarargs(value: ArchOption*): Self = StObject.set(x, "arch", js.Array(value :_*))
+      inline def setArchVarargs(value: ArchOption*): Self = StObject.set(x, "arch", js.Array(value*))
       
       inline def setAsar(value: Boolean | CreateOptions): Self = StObject.set(x, "asar", value.asInstanceOf[js.Any])
       
@@ -658,7 +696,7 @@ object mod {
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDownload(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ Any
       ): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
       inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
@@ -675,7 +713,11 @@ object mod {
       
       inline def setExecutableNameUndefined: Self = StObject.set(x, "executableName", js.undefined)
       
-      inline def setExtendInfo(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "extendInfo", value.asInstanceOf[js.Any])
+      inline def setExtendHelperInfo(value: String | StringDictionary[Any]): Self = StObject.set(x, "extendHelperInfo", value.asInstanceOf[js.Any])
+      
+      inline def setExtendHelperInfoUndefined: Self = StObject.set(x, "extendHelperInfo", js.undefined)
+      
+      inline def setExtendInfo(value: String | StringDictionary[Any]): Self = StObject.set(x, "extendInfo", value.asInstanceOf[js.Any])
       
       inline def setExtendInfoUndefined: Self = StObject.set(x, "extendInfo", js.undefined)
       
@@ -683,7 +725,7 @@ object mod {
       
       inline def setExtraResourceUndefined: Self = StObject.set(x, "extraResource", js.undefined)
       
-      inline def setExtraResourceVarargs(value: String*): Self = StObject.set(x, "extraResource", js.Array(value :_*))
+      inline def setExtraResourceVarargs(value: String*): Self = StObject.set(x, "extraResource", js.Array(value*))
       
       inline def setHelperBundleId(value: String): Self = StObject.set(x, "helperBundleId", value.asInstanceOf[js.Any])
       
@@ -693,13 +735,13 @@ object mod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setIgnore(value: RegExp | js.Array[RegExp] | IgnoreFunction): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.RegExp | js.Array[js.RegExp] | IgnoreFunction): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: js.RegExp*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setJunk(value: Boolean): Self = StObject.set(x, "junk", value.asInstanceOf[js.Any])
       
@@ -717,6 +759,10 @@ object mod {
       
       inline def setOsxSignUndefined: Self = StObject.set(x, "osxSign", js.undefined)
       
+      inline def setOsxUniversal(value: OsxUniversalOptions): Self = StObject.set(x, "osxUniversal", value.asInstanceOf[js.Any])
+      
+      inline def setOsxUniversalUndefined: Self = StObject.set(x, "osxUniversal", js.undefined)
+      
       inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
       
       inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
@@ -729,7 +775,7 @@ object mod {
       
       inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      inline def setPlatformVarargs(value: PlatformOption*): Self = StObject.set(x, "platform", js.Array(value :_*))
+      inline def setPlatformVarargs(value: PlatformOption*): Self = StObject.set(x, "platform", js.Array(value*))
       
       inline def setPrebuiltAsar(value: String): Self = StObject.set(x, "prebuiltAsar", value.asInstanceOf[js.Any])
       
@@ -739,7 +785,7 @@ object mod {
       
       inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      inline def setProtocolsVarargs(value: MacOSProtocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: MacOSProtocol*): Self = StObject.set(x, "protocols", js.Array(value*))
       
       inline def setPrune(value: Boolean): Self = StObject.set(x, "prune", value.asInstanceOf[js.Any])
       
@@ -767,7 +813,7 @@ object mod {
     * See the documentation for [`electron-notarize`](https://npm.im/electron-notarize#method-notarizeopts-promisevoid)
     * for details.
     */
-  type OsxNotarizeOptions = NotarizeCredentials & TransporterOptions
+  type OsxNotarizeOptions = (Tool & NotarizeLegacyOptions) | (`0` & NotaryToolCredentials)
   
   /** See the documentation for [`electron-osx-sign`](https://npm.im/electron-osx-sign#opts) for details. */
   /* Inlined std.Omit<electron-osx-sign.electron-osx-sign.SignOptions, 'app' | 'binaries' | 'platform' | 'version'> */
@@ -779,6 +825,10 @@ object mod {
     
     var `entitlements-loginhelper`: js.UndefOr[String] = js.undefined
     
+    var entitlementsForFile: js.UndefOr[
+        js.Function2[/* file */ String, /* codeSignArgs */ js.Array[String], String | Null]
+      ] = js.undefined
+    
     var `gatekeeper-assess`: js.UndefOr[Boolean] = js.undefined
     
     var hardenedRuntime: js.UndefOr[Boolean] = js.undefined
@@ -787,7 +837,7 @@ object mod {
     
     var `identity-validation`: js.UndefOr[Boolean] = js.undefined
     
-    var ignore: js.UndefOr[String] = js.undefined
+    var ignore: js.UndefOr[String | (js.Function1[/* file */ String, Boolean])] = js.undefined
     
     var keychain: js.UndefOr[String] = js.undefined
     
@@ -798,6 +848,8 @@ object mod {
     var `provisioning-profile`: js.UndefOr[String] = js.undefined
     
     var requirements: js.UndefOr[String] = js.undefined
+    
+    var `signature-flags`: js.UndefOr[String | (js.Function1[/* file */ String, js.Array[String]])] = js.undefined
     
     var `signature-size`: js.UndefOr[Double] = js.undefined
     
@@ -822,6 +874,10 @@ object mod {
       
       inline def `setEntitlements-loginhelperUndefined`: Self = StObject.set(x, "entitlements-loginhelper", js.undefined)
       
+      inline def setEntitlementsForFile(value: (/* file */ String, /* codeSignArgs */ js.Array[String]) => String | Null): Self = StObject.set(x, "entitlementsForFile", js.Any.fromFunction2(value))
+      
+      inline def setEntitlementsForFileUndefined: Self = StObject.set(x, "entitlementsForFile", js.undefined)
+      
       inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
       
       inline def `setGatekeeper-assess`(value: Boolean): Self = StObject.set(x, "gatekeeper-assess", value.asInstanceOf[js.Any])
@@ -840,7 +896,9 @@ object mod {
       
       inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | (js.Function1[/* file */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFunction1(value: /* file */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
@@ -864,6 +922,12 @@ object mod {
       
       inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
       
+      inline def `setSignature-flags`(value: String | (js.Function1[/* file */ String, js.Array[String]])): Self = StObject.set(x, "signature-flags", value.asInstanceOf[js.Any])
+      
+      inline def `setSignature-flagsFunction1`(value: /* file */ String => js.Array[String]): Self = StObject.set(x, "signature-flags", js.Any.fromFunction1(value))
+      
+      inline def `setSignature-flagsUndefined`: Self = StObject.set(x, "signature-flags", js.undefined)
+      
       inline def `setSignature-size`(value: Double): Self = StObject.set(x, "signature-size", value.asInstanceOf[js.Any])
       
       inline def `setSignature-sizeUndefined`: Self = StObject.set(x, "signature-size", js.undefined)
@@ -873,6 +937,12 @@ object mod {
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
+  
+  /**
+    * See the documentation for [`@electron/universal`](https://github.com/electron/universal)
+    * for details.
+    */
+  type OsxUniversalOptions = Omit[MakeUniversalOpts, x64AppPath | arm64AppPath | outAppPath | force]
   
   type PlatformOption = TargetPlatform | all
   

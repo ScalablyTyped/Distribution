@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DimensionValues extends StObject {
   
   /**
-    * The names of the metadata types that you can use to filter and group your results. For example, AZ returns a list of Availability Zones.
+    * The names of the metadata types that you can use to filter and group your results. For example, AZ returns a list of Availability Zones. LINK_ACCOUNT_NAME and SERVICE_CODE can only be used in CostCategoryRule.
     */
   var Key: js.UndefOr[Dimension] = js.undefined
   

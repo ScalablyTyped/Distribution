@@ -130,7 +130,7 @@ trait TouchableWithoutFeedbackPAccessibilityElementsHidden extends StObject {
   /**
     * If true, disable all interactions for this component.
     */
-  var disabled: (js.UndefOr[Boolean | Null]) & js.UndefOr[Boolean]
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This defines how far your touch can start away from the button.
@@ -238,18 +238,17 @@ trait TouchableWithoutFeedbackPAccessibilityElementsHidden extends StObject {
     *
     * @platform android
     */
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var underlayColor: js.UndefOr[String] = js.undefined
 }
 object TouchableWithoutFeedbackPAccessibilityElementsHidden {
   
   inline def apply(
-    disabled: (js.UndefOr[Boolean | Null]) & js.UndefOr[Boolean],
     onPress: (js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]]) & (js.UndefOr[js.Function0[Unit | Null]]),
     theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
   ): TouchableWithoutFeedbackPAccessibilityElementsHidden = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], onPress = onPress.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onPress = onPress.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchableWithoutFeedbackPAccessibilityElementsHidden]
   }
   
@@ -335,7 +334,9 @@ object TouchableWithoutFeedbackPAccessibilityElementsHidden {
     
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
-    inline def setDisabled(value: (js.UndefOr[Boolean | Null]) & js.UndefOr[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
@@ -410,8 +411,6 @@ object TouchableWithoutFeedbackPAccessibilityElementsHidden {
     inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

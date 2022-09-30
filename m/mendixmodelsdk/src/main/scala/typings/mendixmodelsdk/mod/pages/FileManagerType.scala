@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.FileManagerType")
 @js.native
-class FileManagerType protected ()
+open class FileManagerType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.FileManagerType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

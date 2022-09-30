@@ -4,11 +4,11 @@ import typings.chromecastApi.anon.BackgroundColor
 import typings.chromecastApi.anon.ContentId
 import typings.chromecastApi.anon.Language
 import typings.chromecastApi.anon.Title
-import typings.chromecastApi.chromecastApiNumbers.`0`
-import typings.chromecastApi.chromecastApiNumbers.`1`
-import typings.chromecastApi.chromecastApiNumbers.`2`
-import typings.chromecastApi.chromecastApiNumbers.`3`
-import typings.chromecastApi.chromecastApiNumbers.`4`
+import typings.chromecastApi.chromecastApiInts.`0`
+import typings.chromecastApi.chromecastApiInts.`1`
+import typings.chromecastApi.chromecastApiInts.`2`
+import typings.chromecastApi.chromecastApiInts.`3`
+import typings.chromecastApi.chromecastApiInts.`4`
 import typings.chromecastApi.chromecastApiStrings.BUFFERING
 import typings.chromecastApi.chromecastApiStrings.CANCELLED
 import typings.chromecastApi.chromecastApiStrings.ERROR

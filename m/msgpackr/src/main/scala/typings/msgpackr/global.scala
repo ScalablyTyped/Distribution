@@ -1,8 +1,8 @@
 package typings.msgpackr
 
 import typings.msgpackr.anon.AllowHalfOpen
-import typings.msgpackr.unpackMod.Extension
-import typings.msgpackr.unpackMod.Options
+import typings.msgpackr.mod.Extension
+import typings.msgpackr.mod.Options
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,15 +35,15 @@ object global {
     object FLOAT32_OPTIONS extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.msgpackr.unpackMod.FLOAT32_OPTIONS & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.msgpackr.mod.FLOAT32_OPTIONS & Double] = js.native
       
-      /* 1 */ val ALWAYS: typings.msgpackr.unpackMod.FLOAT32_OPTIONS.ALWAYS & Double = js.native
+      /* 1 */ val ALWAYS: typings.msgpackr.mod.FLOAT32_OPTIONS.ALWAYS & Double = js.native
       
-      /* 4 */ val DECIMAL_FIT: typings.msgpackr.unpackMod.FLOAT32_OPTIONS.DECIMAL_FIT & Double = js.native
+      /* 4 */ val DECIMAL_FIT: typings.msgpackr.mod.FLOAT32_OPTIONS.DECIMAL_FIT & Double = js.native
       
-      /* 3 */ val DECIMAL_ROUND: typings.msgpackr.unpackMod.FLOAT32_OPTIONS.DECIMAL_ROUND & Double = js.native
+      /* 3 */ val DECIMAL_ROUND: typings.msgpackr.mod.FLOAT32_OPTIONS.DECIMAL_ROUND & Double = js.native
       
-      /* 0 */ val NEVER: typings.msgpackr.unpackMod.FLOAT32_OPTIONS.NEVER & Double = js.native
+      /* 0 */ val NEVER: typings.msgpackr.mod.FLOAT32_OPTIONS.NEVER & Double = js.native
     }
     
     @JSGlobal("msgpackr.Packr")

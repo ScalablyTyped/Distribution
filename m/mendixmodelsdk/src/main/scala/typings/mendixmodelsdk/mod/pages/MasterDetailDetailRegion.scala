@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.MasterDetailDetailRegion")
 @js.native
-class MasterDetailDetailRegion protected ()
+open class MasterDetailDetailRegion protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.MasterDetailDetailRegion {
   def this(
     model: AbstractModel,

@@ -216,22 +216,22 @@ object anon {
   
   trait Fragment extends StObject {
     
-    var fragment: js.Any
+    var fragment: Any
     
-    var target: js.Any
+    var target: Any
   }
   object Fragment {
     
-    inline def apply(fragment: js.Any, target: js.Any): Fragment = {
+    inline def apply(fragment: Any, target: Any): Fragment = {
       val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fragment]
     }
     
     extension [Self <: Fragment](x: Self) {
       
-      inline def setFragment(value: js.Any): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: Any): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,11 +334,11 @@ object anon {
       
       inline def setIn(value: js.Array[LinkGUID]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      inline def setInVarargs(value: LinkGUID*): Self = StObject.set(x, "in", js.Array(value :_*))
+      inline def setInVarargs(value: LinkGUID*): Self = StObject.set(x, "in", js.Array(value*))
       
       inline def setOut(value: js.Array[LinkGUID]): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
       
-      inline def setOutVarargs(value: LinkGUID*): Self = StObject.set(x, "out", js.Array(value :_*))
+      inline def setOutVarargs(value: LinkGUID*): Self = StObject.set(x, "out", js.Array(value*))
     }
   }
   
@@ -393,7 +393,7 @@ object anon {
       
       inline def setMarkup(value: js.Array[MarkUpPortal | MarkUpPlayer | MarkUpText]): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      inline def setMarkupVarargs(value: (MarkUpPortal | MarkUpPlayer | MarkUpText)*): Self = StObject.set(x, "markup", js.Array(value :_*))
+      inline def setMarkupVarargs(value: (MarkUpPortal | MarkUpPlayer | MarkUpText)*): Self = StObject.set(x, "markup", js.Array(value*))
       
       inline def setPlextType(value: SYSTEM_BROADCAST | SYSTEM_NARROWCAST | PLAYER_GENERATED): Self = StObject.set(x, "plextType", value.asInstanceOf[js.Any])
       

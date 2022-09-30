@@ -83,61 +83,61 @@ object chartsMod {
   
   @JSImport("ant-design-pro/lib/Charts", "Bar")
   @js.native
-  class Bar () extends default
+  open class Bar () extends default
   
   @JSImport("ant-design-pro/lib/Charts", "ChartCard")
   @js.native
-  class ChartCard ()
+  open class ChartCard ()
     extends typings.antDesignPro.chartCardMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "Field")
   @js.native
-  class Field ()
+  open class Field ()
     extends typings.antDesignPro.fieldMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "Gauge")
   @js.native
-  class Gauge ()
+  open class Gauge ()
     extends typings.antDesignPro.gaugeMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "MiniArea")
   @js.native
-  class MiniArea ()
+  open class MiniArea ()
     extends typings.antDesignPro.miniAreaMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "MiniBar")
   @js.native
-  class MiniBar ()
+  open class MiniBar ()
     extends typings.antDesignPro.miniBarMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "MiniProgress")
   @js.native
-  class MiniProgress ()
+  open class MiniProgress ()
     extends typings.antDesignPro.miniProgressMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "Pie")
   @js.native
-  class Pie ()
+  open class Pie ()
     extends typings.antDesignPro.pieMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "Radar")
   @js.native
-  class Radar ()
+  open class Radar ()
     extends typings.antDesignPro.radarMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "TagCloud")
   @js.native
-  class TagCloud ()
+  open class TagCloud ()
     extends typings.antDesignPro.tagCloudMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "TimelineChart")
   @js.native
-  class TimelineChart ()
+  open class TimelineChart ()
     extends typings.antDesignPro.timelineChartMod.default
   
   @JSImport("ant-design-pro/lib/Charts", "WaterWave")
   @js.native
-  class WaterWave ()
+  open class WaterWave ()
     extends typings.antDesignPro.waterWaveMod.default
   
   inline def yuan(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("yuan")(value.asInstanceOf[js.Any]).asInstanceOf[String]

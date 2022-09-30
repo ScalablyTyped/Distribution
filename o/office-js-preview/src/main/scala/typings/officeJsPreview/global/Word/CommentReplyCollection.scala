@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of {@link Word.CommentReply} objects. Represents all comment replies in one comment thread.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 @JSGlobal("Word.CommentReplyCollection")
 @js.native

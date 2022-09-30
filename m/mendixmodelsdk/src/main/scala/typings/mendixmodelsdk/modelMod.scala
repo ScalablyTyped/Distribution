@@ -15,12 +15,12 @@ object modelMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.abstractModelMod.IAbstractModel because Already inherited
   - typings.mendixmodelsdk.baseModelMod.IBaseModel because Already inherited
-  - typings.mendixmodelsdk.baseModelMod.IModel because var conflicts: id, metaModelVersion, mxVersionForModel, root, workingCopy. Inlined findModuleByQualifiedName */ @JSImport("mendixmodelsdk/dist/Model", "Model")
+  - typings.mendixmodelsdk.baseModelMod.IModel because var conflicts: id, metaModelVersion, mxVersionForModel, root, workingCopy. Inlined findModuleByQualifiedName */ @JSImport("mendixmodelsdk/src/Model", "Model")
   @js.native
-  class Model protected () extends BaseModel {
+  open class Model protected () extends BaseModel {
     def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
     
-    /* private */ var allModelClasses: js.Any = js.native
+    /* private */ var allModelClasses: Any = js.native
     
     /**
       * Given a qualified name, returns a Module.
@@ -30,7 +30,7 @@ object modelMod {
   /* static members */
   object Model {
     
-    @JSImport("mendixmodelsdk/dist/Model", "Model")
+    @JSImport("mendixmodelsdk/src/Model", "Model")
     @js.native
     val ^ : js.Any = js.native
     

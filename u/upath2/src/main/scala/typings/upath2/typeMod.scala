@@ -3,7 +3,6 @@ package typings.upath2
 import typings.node.pathMod.FormatInputPathObject
 import typings.node.pathMod.ParsedPath
 import typings.node.pathMod.PlatformPath
-import typings.upath2.upath2Strings.Backslash
 import typings.upath2.upath2Strings.Colon
 import typings.upath2.upath2Strings.Semicolon
 import typings.upath2.upath2Strings.Slash
@@ -130,7 +129,7 @@ object typeMod {
     @JSName("resolve")
     var resolve_Original: js.Function1[/* repeated */ String, String] = js.native
     
-    var sep: Backslash | Slash = js.native
+    var sep: String | Slash = js.native
     
     def toNamespacedPath(path: String): String = js.native
     @JSName("toNamespacedPath")
@@ -192,7 +191,7 @@ object typeMod {
     @JSName("resolve")
     var resolve_Original: js.Function1[/* repeated */ String, String]
     
-    var sep: Backslash | Slash
+    var sep: String | Slash
     
     def toNamespacedPath(path: String): String
     @JSName("toNamespacedPath")
@@ -214,7 +213,7 @@ object typeMod {
       parse: /* path */ String => ParsedPath,
       relative: (/* from */ String, /* to */ String) => String,
       resolve: /* repeated */ String => String,
-      sep: Backslash | Slash,
+      sep: String | Slash,
       toNamespacedPath: /* path */ String => String
     ): IPathNode = {
       val __obj = js.Dynamic.literal(basename = js.Any.fromFunction1(basename), delimiter = delimiter.asInstanceOf[js.Any], dirname = js.Any.fromFunction1(dirname), extname = js.Any.fromFunction1(extname), format = js.Any.fromFunction1(format), isAbsolute = js.Any.fromFunction1(isAbsolute), join = js.Any.fromFunction1(join), normalize = js.Any.fromFunction1(normalize), parse = js.Any.fromFunction1(parse), relative = js.Any.fromFunction2(relative), resolve = js.Any.fromFunction1(resolve), sep = sep.asInstanceOf[js.Any], toNamespacedPath = js.Any.fromFunction1(toNamespacedPath))
@@ -249,7 +248,7 @@ object typeMod {
       
       inline def setResolve(value: /* repeated */ String => String): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      inline def setSep(value: Backslash | Slash): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: String | Slash): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
       inline def setToNamespacedPath(value: /* path */ String => String): Self = StObject.set(x, "toNamespacedPath", js.Any.fromFunction1(value))
       

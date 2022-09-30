@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.SynchronizationType")
 @js.native
-class SynchronizationType protected ()
+open class SynchronizationType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.SynchronizationType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
@@ -28,4 +28,10 @@ object SynchronizationType {
   @js.native
   def Specific: typings.mendixmodelsdk.microflowsMod.microflows.SynchronizationType = js.native
   inline def Specific_=(x: typings.mendixmodelsdk.microflowsMod.microflows.SynchronizationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Specific")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.SynchronizationType.Unsynchronized")
+  @js.native
+  def Unsynchronized: typings.mendixmodelsdk.microflowsMod.microflows.SynchronizationType = js.native
+  inline def Unsynchronized_=(x: typings.mendixmodelsdk.microflowsMod.microflows.SynchronizationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unsynchronized")(x.asInstanceOf[js.Any])
 }

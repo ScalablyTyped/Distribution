@@ -1,8 +1,8 @@
 package typings.wegameApi.wx.types
 
-import typings.wegameApi.wegameApiNumbers.`0`
-import typings.wegameApi.wegameApiNumbers.`1`
-import typings.wegameApi.wegameApiNumbers.`2`
+import typings.wegameApi.wegameApiInts.`0`
+import typings.wegameApi.wegameApiInts.`1`
+import typings.wegameApi.wegameApiInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

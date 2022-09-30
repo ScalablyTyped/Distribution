@@ -1,5 +1,6 @@
 package typings.std
 
+import scala.concurrent.Future
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ trait Promise[T] extends StObject {
     */
   /* standard es5 */
   def `catch`[TResult](): js.Promise[T | TResult] = js.native
-  def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[T | TResult] = js.native
+  def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): js.Promise[T | TResult] = js.native
   
   /**
     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
@@ -37,15 +38,24 @@ trait Promise[T] extends StObject {
     */
   /* standard es5 */
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
-    onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-    onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+    onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+    onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
   ): js.Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
   val toStringTag: java.lang.String = js.native
+}
+object Promise {
+  
+  extension [T](promise: Promise[T]) {
+    
+    def toFuture: Future[T] = toPromise.toFuture
+    
+    def toPromise: js.Promise[T] = promise.asInstanceOf[js.Promise[T]]
+  }
 }

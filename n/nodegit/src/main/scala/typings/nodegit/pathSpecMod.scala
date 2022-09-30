@@ -3,13 +3,13 @@ package typings.nodegit
 import typings.nodegit.diffDeltaMod.DiffDelta
 import typings.nodegit.diffMod.Diff
 import typings.nodegit.mod.Index
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`32`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`8`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`32`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`8`
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.strArrayMod.Strarray
 import typings.nodegit.treeMod.Tree
@@ -57,13 +57,13 @@ object pathSpecMod {
     inline def matchListFailedEntrycount(m: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("matchListFailedEntrycount")(m.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`32`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`32`
     */
     trait FLAG extends StObject
     object FLAG {

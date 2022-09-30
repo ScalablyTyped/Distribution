@@ -14,7 +14,7 @@ trait WebXRCamera
   
   /**
     * The last XRViewerPose from the current XRFrame
-    * @hidden
+    * @internal
     */
   var _lastXRViewerPose: js.UndefOr[XRViewerPose] = js.native
   
@@ -28,7 +28,7 @@ trait WebXRCamera
   
   /* private */ var _trackingState: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _updateForDualEyeDebugging(): Unit = js.native
   
   /* private */ var _updateFromXRSession: Any = js.native

@@ -4,6 +4,7 @@ import typings.koa.mod.Context
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +47,7 @@ object mod {
       * the koa context object. It may return a boolean or a promise that
       * will resolve with a boolean.
       */
-    var credentials: js.UndefOr[(js.Function1[/* ctx */ Context, Boolean | js.Thenable[Boolean]]) | Boolean] = js.undefined
+    var credentials: js.UndefOr[(js.Function1[/* ctx */ Context, Boolean | PromiseLike[Boolean]]) | Boolean] = js.undefined
     
     /**
       * `Access-Control-Expose-Headers`
@@ -71,7 +72,7 @@ object mod {
       * the koa context object. It may return a string or a promise that
       * will resolve with a string.
       */
-    var origin: js.UndefOr[(js.Function1[/* ctx */ Context, String | js.Thenable[String]]) | String] = js.undefined
+    var origin: js.UndefOr[(js.Function1[/* ctx */ Context, PromiseLike[String] | String]) | String] = js.undefined
     
     /**
       * Handle `Access-Control-Request-Private-Network` request by return `Access-Control-Allow-Private-Network`
@@ -108,9 +109,9 @@ object mod {
       
       inline def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value*))
       
-      inline def setCredentials(value: (js.Function1[/* ctx */ Context, Boolean | js.Thenable[Boolean]]) | Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: (js.Function1[/* ctx */ Context, Boolean | PromiseLike[Boolean]]) | Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      inline def setCredentialsFunction1(value: /* ctx */ Context => Boolean | js.Thenable[Boolean]): Self = StObject.set(x, "credentials", js.Any.fromFunction1(value))
+      inline def setCredentialsFunction1(value: /* ctx */ Context => Boolean | PromiseLike[Boolean]): Self = StObject.set(x, "credentials", js.Any.fromFunction1(value))
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -128,9 +129,9 @@ object mod {
       
       inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      inline def setOrigin(value: (js.Function1[/* ctx */ Context, String | js.Thenable[String]]) | String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: (js.Function1[/* ctx */ Context, PromiseLike[String] | String]) | String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      inline def setOriginFunction1(value: /* ctx */ Context => String | js.Thenable[String]): Self = StObject.set(x, "origin", js.Any.fromFunction1(value))
+      inline def setOriginFunction1(value: /* ctx */ Context => PromiseLike[String] | String): Self = StObject.set(x, "origin", js.Any.fromFunction1(value))
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       

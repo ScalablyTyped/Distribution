@@ -2,7 +2,6 @@ package typings.reduxBootstrap
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.history.mod.History
-import typings.history.mod.LocationState
 import typings.react.mod.global.JSX.Element
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
@@ -24,20 +23,20 @@ object interfacesMod {
       var container: js.UndefOr[String] = js.undefined
       
       var createHistory: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.CreateHistory<History.HistoryOptions, History.History> */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.CreateHistory<History.HistoryOptions, History.History> */ Any
           ] = js.undefined
       
       var devToolsOptions: js.UndefOr[DevToolsOptions] = js.undefined
       
-      var enhancers: js.UndefOr[js.Array[StoreEnhancer[js.Any, js.Object]]] = js.undefined
+      var enhancers: js.UndefOr[js.Array[StoreEnhancer[Any, js.Object]]] = js.undefined
       
       var historyOptions: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.HistoryOptions */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.HistoryOptions */ Any
           ] = js.undefined
       
-      var initialState: js.UndefOr[js.Any] = js.undefined
+      var initialState: js.UndefOr[Any] = js.undefined
       
-      var middlewares: js.UndefOr[js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]] = js.undefined
+      var middlewares: js.UndefOr[js.Array[Middleware[js.Object, Any, Dispatch[AnyAction]]]] = js.undefined
       
       var reducers: ReducersOption
       
@@ -61,7 +60,7 @@ object interfacesMod {
         inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
         
         inline def setCreateHistory(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.CreateHistory<History.HistoryOptions, History.History> */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.CreateHistory<History.HistoryOptions, History.History> */ Any
         ): Self = StObject.set(x, "createHistory", value.asInstanceOf[js.Any])
         
         inline def setCreateHistoryUndefined: Self = StObject.set(x, "createHistory", js.undefined)
@@ -70,27 +69,27 @@ object interfacesMod {
         
         inline def setDevToolsOptionsUndefined: Self = StObject.set(x, "devToolsOptions", js.undefined)
         
-        inline def setEnhancers(value: js.Array[StoreEnhancer[js.Any, js.Object]]): Self = StObject.set(x, "enhancers", value.asInstanceOf[js.Any])
+        inline def setEnhancers(value: js.Array[StoreEnhancer[Any, js.Object]]): Self = StObject.set(x, "enhancers", value.asInstanceOf[js.Any])
         
         inline def setEnhancersUndefined: Self = StObject.set(x, "enhancers", js.undefined)
         
-        inline def setEnhancersVarargs(value: (StoreEnhancer[js.Any, js.Object])*): Self = StObject.set(x, "enhancers", js.Array(value :_*))
+        inline def setEnhancersVarargs(value: (StoreEnhancer[Any, js.Object])*): Self = StObject.set(x, "enhancers", js.Array(value*))
         
         inline def setHistoryOptions(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.HistoryOptions */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.HistoryOptions */ Any
         ): Self = StObject.set(x, "historyOptions", value.asInstanceOf[js.Any])
         
         inline def setHistoryOptionsUndefined: Self = StObject.set(x, "historyOptions", js.undefined)
         
-        inline def setInitialState(value: js.Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+        inline def setInitialState(value: Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
         
         inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
         
-        inline def setMiddlewares(value: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+        inline def setMiddlewares(value: js.Array[Middleware[js.Object, Any, Dispatch[AnyAction]]]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
         
         inline def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
         
-        inline def setMiddlewaresVarargs(value: (Middleware[js.Object, js.Any, Dispatch[AnyAction]])*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
+        inline def setMiddlewaresVarargs(value: (Middleware[js.Object, Any, Dispatch[AnyAction]])*): Self = StObject.set(x, "middlewares", js.Array(value*))
         
         inline def setReducers(value: ReducersOption): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
         
@@ -108,30 +107,30 @@ object interfacesMod {
     
     trait BootstrapResult extends StObject {
       
-      var history: History[LocationState]
+      var history: History
       
-      var output: js.Any
+      var output: Any
       
       var root: Element
       
-      var store: Store[js.Any, AnyAction]
+      var store: Store[Any, AnyAction]
     }
     object BootstrapResult {
       
-      inline def apply(history: History[LocationState], output: js.Any, root: Element, store: Store[js.Any, AnyAction]): BootstrapResult = {
+      inline def apply(history: History, output: Any, root: Element, store: Store[Any, AnyAction]): BootstrapResult = {
         val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
         __obj.asInstanceOf[BootstrapResult]
       }
       
       extension [Self <: BootstrapResult](x: Self) {
         
-        inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+        inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
         
-        inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+        inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
         
         inline def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
         
-        inline def setStore(value: Store[js.Any, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+        inline def setStore(value: Store[Any, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       }
     }
     
@@ -147,10 +146,10 @@ object interfacesMod {
       extends js.Function {
       
       def apply(
-        middlewares: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]],
+        middlewares: js.Array[Middleware[js.Object, Any, Dispatch[AnyAction]]],
         rootReducer: js.Object,
-        initialState: js.Any
-      ): Store[js.Any, AnyAction] = js.native
+        initialState: Any
+      ): Store[Any, AnyAction] = js.native
     }
     
     @js.native
@@ -164,7 +163,7 @@ object interfacesMod {
       
       var actionBlacklist: js.UndefOr[String | js.Array[String]] = js.undefined
       
-      var actionCreators: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
+      var actionCreators: js.UndefOr[js.Array[Any] | js.Object] = js.undefined
       
       var actionSanitizer: js.UndefOr[js.Function] = js.undefined
       
@@ -205,13 +204,13 @@ object interfacesMod {
         
         inline def setActionBlacklistUndefined: Self = StObject.set(x, "actionBlacklist", js.undefined)
         
-        inline def setActionBlacklistVarargs(value: String*): Self = StObject.set(x, "actionBlacklist", js.Array(value :_*))
+        inline def setActionBlacklistVarargs(value: String*): Self = StObject.set(x, "actionBlacklist", js.Array(value*))
         
-        inline def setActionCreators(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
+        inline def setActionCreators(value: js.Array[Any] | js.Object): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
         
         inline def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
         
-        inline def setActionCreatorsVarargs(value: js.Any*): Self = StObject.set(x, "actionCreators", js.Array(value :_*))
+        inline def setActionCreatorsVarargs(value: Any*): Self = StObject.set(x, "actionCreators", js.Array(value*))
         
         inline def setActionSanitizer(value: js.Function): Self = StObject.set(x, "actionSanitizer", value.asInstanceOf[js.Any])
         
@@ -221,7 +220,7 @@ object interfacesMod {
         
         inline def setActionWhitelistUndefined: Self = StObject.set(x, "actionWhitelist", js.undefined)
         
-        inline def setActionWhitelistVarargs(value: String*): Self = StObject.set(x, "actionWhitelist", js.Array(value :_*))
+        inline def setActionWhitelistVarargs(value: String*): Self = StObject.set(x, "actionWhitelist", js.Array(value*))
         
         inline def setAutoPause(value: Boolean): Self = StObject.set(x, "autoPause", value.asInstanceOf[js.Any])
         
@@ -286,38 +285,38 @@ object interfacesMod {
       }
     }
     
-    type ReducersOption = StringDictionary[Reducer[js.Any, AnyAction]]
+    type ReducersOption = StringDictionary[Reducer[Any, AnyAction]]
     
     trait RootComponentProps extends StObject {
       
-      var history: History[LocationState]
+      var history: History
       
       var routes: Element
       
-      var store: Store[js.Any, AnyAction]
+      var store: Store[Any, AnyAction]
     }
     object RootComponentProps {
       
-      inline def apply(history: History[LocationState], routes: Element, store: Store[js.Any, AnyAction]): RootComponentProps = {
+      inline def apply(history: History, routes: Element, store: Store[Any, AnyAction]): RootComponentProps = {
         val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
         __obj.asInstanceOf[RootComponentProps]
       }
       
       extension [Self <: RootComponentProps](x: Self) {
         
-        inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+        inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
         
         inline def setRoutes(value: Element): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
         
-        inline def setStore(value: Store[js.Any, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+        inline def setStore(value: Store[Any, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       }
     }
     
     trait RouterProps extends StObject {
       
-      var onError: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
+      var onError: js.UndefOr[js.Function1[/* error */ Any, Any]] = js.undefined
       
-      var onUpdate: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var onUpdate: js.UndefOr[js.Function0[Any]] = js.undefined
     }
     object RouterProps {
       
@@ -328,11 +327,11 @@ object interfacesMod {
       
       extension [Self <: RouterProps](x: Self) {
         
-        inline def setOnError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+        inline def setOnError(value: /* error */ Any => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
         
         inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
         
-        inline def setOnUpdate(value: () => js.Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
+        inline def setOnUpdate(value: () => Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
         
         inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       }

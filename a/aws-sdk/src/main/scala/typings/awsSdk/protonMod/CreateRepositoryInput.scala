@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateRepositoryInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of your Amazon Web Services CodeStar connection. For more information, see Setting up for Proton in the Proton Administrator Guide.
+    * The Amazon Resource Name (ARN) of your AWS CodeStar connection that connects Proton to your repository provider account. For more information, see Setting up for Proton in the Proton User Guide.
     */
   var connectionArn: Arn
   
@@ -27,7 +27,7 @@ trait CreateRepositoryInput extends StObject {
   var provider: RepositoryProvider
   
   /**
-    * An optional list of metadata items that you can associate with the Proton repository. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * An optional list of metadata items that you can associate with the Proton repository. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }

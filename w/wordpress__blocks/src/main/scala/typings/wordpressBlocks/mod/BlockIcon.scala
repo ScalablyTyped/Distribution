@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.props
   - typings.wordpressBlocks.wordpressBlocksStrings.migrate
   - typings.wordpressBlocks.wordpressBlocksStrings.archive
+  - typings.wordpressBlocks.wordpressBlocksStrings.`code-standards`
   - typings.wordpressBlocks.wordpressBlocksStrings.html
   - typings.wordpressBlocks.wordpressBlocksStrings.`buddicons-tracking`
   - typings.wordpressBlocks.wordpressBlocksStrings.`welcome-add-page`
+  - typings.wordpressBlocks.wordpressBlocksStrings.printer
   - typings.wordpressBlocks.wordpressBlocksStrings.heading
   - typings.wordpressBlocks.wordpressBlocksStrings.`controls-repeat`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-spellcheck`
@@ -22,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`yes-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.art
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-users`
-  - typings.wordpressBlocks.wordpressBlocksStrings.`plus-light`
+  - typings.wordpressBlocks.wordpressBlocksStrings.beer
   - typings.wordpressBlocks.wordpressBlocksStrings.`controls-play`
   - typings.wordpressBlocks.wordpressBlocksStrings.screenoptions
   - typings.wordpressBlocks.wordpressBlocksStrings.`align-right`
@@ -35,14 +37,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`plus-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`id-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.background
+  - typings.wordpressBlocks.wordpressBlocksStrings.`open-folder`
   - typings.wordpressBlocks.wordpressBlocksStrings.exit
   - typings.wordpressBlocks.wordpressBlocksStrings.redo
+  - typings.wordpressBlocks.wordpressBlocksStrings.pdf
   - typings.wordpressBlocks.wordpressBlocksStrings.shadowColor
+  - typings.wordpressBlocks.wordpressBlocksStrings.`database-view`
   - typings.wordpressBlocks.wordpressBlocksStrings.awards
   - typings.wordpressBlocks.wordpressBlocksStrings.portfolio
   - typings.wordpressBlocks.wordpressBlocksStrings.vault
   - typings.wordpressBlocks.wordpressBlocksStrings.yes
+  - typings.wordpressBlocks.wordpressBlocksStrings.coffee
   - typings.wordpressBlocks.wordpressBlocksStrings.sticky
+  - typings.wordpressBlocks.wordpressBlocksStrings.calculator
   - typings.wordpressBlocks.wordpressBlocksStrings.visibility
   - typings.wordpressBlocks.wordpressBlocksStrings.desktop
   - typings.wordpressBlocks.wordpressBlocksStrings.`chart-area`
@@ -50,12 +57,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-removeformatting`
   - typings.wordpressBlocks.wordpressBlocksStrings.clock
   - typings.wordpressBlocks.wordpressBlocksStrings.`media-code`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`database-remove`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`fullscreen-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.ellipsis
   - typings.wordpressBlocks.wordpressBlocksStrings.upload
+  - typings.wordpressBlocks.wordpressBlocksStrings.pinterest
   - typings.wordpressBlocks.wordpressBlocksStrings.`format-status`
   - typings.wordpressBlocks.wordpressBlocksStrings.`location-alt`
+  - typings.wordpressBlocks.wordpressBlocksStrings.amazon
   - typings.wordpressBlocks.wordpressBlocksStrings.slides
   - typings.wordpressBlocks.wordpressBlocksStrings.key
+  - typings.wordpressBlocks.wordpressBlocksStrings.`twitter-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`table-row-before`
   - typings.wordpressBlocks.wordpressBlocksStrings.`video-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.menu
@@ -75,8 +87,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`wordpress-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.store
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-ol`
-  - typings.wordpressBlocks.wordpressBlocksStrings.googleplus
   - typings.wordpressBlocks.wordpressBlocksStrings.camera
+  - typings.wordpressBlocks.wordpressBlocksStrings.airplane
   - typings.wordpressBlocks.wordpressBlocksStrings.email
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-textcolor`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-paste-text`
@@ -100,6 +112,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.remove
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-up-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-site-alt`
+  - typings.wordpressBlocks.wordpressBlocksStrings.youtube
   - typings.wordpressBlocks.wordpressBlocksStrings.sort
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-right-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.`chart-pie`
@@ -110,9 +123,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.businessman
   - typings.wordpressBlocks.wordpressBlocksStrings.`format-audio`
   - typings.wordpressBlocks.wordpressBlocksStrings.`share-alt2`
+  - typings.wordpressBlocks.wordpressBlocksStrings.car
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-appearance`
   - typings.wordpressBlocks.wordpressBlocksStrings.twitter
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-contract`
+  - typings.wordpressBlocks.wordpressBlocksStrings.bell
   - typings.wordpressBlocks.wordpressBlocksStrings.`image-rotate`
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-comments`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-aligncenter`
@@ -125,50 +140,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`shield-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-bold`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`database-export`
   - typings.wordpressBlocks.wordpressBlocksStrings.feedback
+  - typings.wordpressBlocks.wordpressBlocksStrings.`fullscreen-exit-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-unlink`
   - typings.wordpressBlocks.wordpressBlocksStrings.cart
   - typings.wordpressBlocks.wordpressBlocksStrings.`thumbs-down`
   - typings.wordpressBlocks.wordpressBlocksStrings.`calendar-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.instagram
   - typings.wordpressBlocks.wordpressBlocksStrings.undo
+  - typings.wordpressBlocks.wordpressBlocksStrings.`superhero-alt`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`text-page`
   - typings.wordpressBlocks.wordpressBlocksStrings.info
   - typings.wordpressBlocks.wordpressBlocksStrings.saved
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-left-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.tablet
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-rtl`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`edit-page`
   - typings.wordpressBlocks.wordpressBlocksStrings.rss
   - typings.wordpressBlocks.wordpressBlocksStrings.button
   - typings.wordpressBlocks.wordpressBlocksStrings.propTypes
+  - typings.wordpressBlocks.wordpressBlocksStrings.reddit
   - typings.wordpressBlocks.wordpressBlocksStrings.`email-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.`book-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`buddicons-activity`
   - typings.wordpressBlocks.wordpressBlocksStrings.`table-row-after`
   - typings.wordpressBlocks.wordpressBlocksStrings.`facebook-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.edit
+  - typings.wordpressBlocks.wordpressBlocksStrings.bank
   - typings.wordpressBlocks.wordpressBlocksStrings.`images-alt`
+  - typings.wordpressBlocks.wordpressBlocksStrings.database
   - typings.wordpressBlocks.wordpressBlocksStrings.`post-status`
   - typings.wordpressBlocks.wordpressBlocksStrings.tag
   - typings.wordpressBlocks.wordpressBlocksStrings.money
   - typings.wordpressBlocks.wordpressBlocksStrings.`share-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`align-full-width`
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-down`
+  - typings.wordpressBlocks.wordpressBlocksStrings.whatsapp
   - typings.wordpressBlocks.wordpressBlocksStrings.`table-col-delete`
-  - typings.wordpressBlocks.wordpressBlocksStrings.`keyboard-hide`
+  - typings.wordpressBlocks.wordpressBlocksStrings.superhero
   - typings.wordpressBlocks.wordpressBlocksStrings.move
   - typings.wordpressBlocks.wordpressBlocksStrings.analytics
+  - typings.wordpressBlocks.wordpressBlocksStrings.`database-add`
   - typings.wordpressBlocks.wordpressBlocksStrings.`align-pull-right`
   - typings.wordpressBlocks.wordpressBlocksStrings.unlock
+  - typings.wordpressBlocks.wordpressBlocksStrings.food
   - typings.wordpressBlocks.wordpressBlocksStrings.`embed-post`
   - typings.wordpressBlocks.wordpressBlocksStrings.calendar
   - typings.wordpressBlocks.wordpressBlocksStrings.external
   - typings.wordpressBlocks.wordpressBlocksStrings.sos
   - typings.wordpressBlocks.wordpressBlocksStrings.contextType
+  - typings.wordpressBlocks.wordpressBlocksStrings.pets
   - typings.wordpressBlocks.wordpressBlocksStrings.src
   - typings.wordpressBlocks.wordpressBlocksStrings.album
   - typings.wordpressBlocks.wordpressBlocksStrings.text
   - typings.wordpressBlocks.wordpressBlocksStrings.dismiss
   - typings.wordpressBlocks.wordpressBlocksStrings.`controls-volumeoff`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`plugins-checked`
   - typings.wordpressBlocks.wordpressBlocksStrings.products
   - typings.wordpressBlocks.wordpressBlocksStrings.`media-audio`
   - typings.wordpressBlocks.wordpressBlocksStrings.`media-archive`
@@ -179,6 +207,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-network`
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-collapse`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-ol-rtl`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`database-import`
   - typings.wordpressBlocks.wordpressBlocksStrings.`video-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`star-filled`
   - typings.wordpressBlocks.wordpressBlocksStrings.`format-image`
@@ -191,6 +220,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-plugins`
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-links`
   - typings.wordpressBlocks.wordpressBlocksStrings.lightbulb
+  - typings.wordpressBlocks.wordpressBlocksStrings.google
   - typings.wordpressBlocks.wordpressBlocksStrings.`image-crop`
   - typings.wordpressBlocks.wordpressBlocksStrings.`info-outline`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-underline`
@@ -198,6 +228,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`buddicons-topics`
   - typings.wordpressBlocks.wordpressBlocksStrings.`format-quote`
   - typings.wordpressBlocks.wordpressBlocksStrings.dashboard
+  - typings.wordpressBlocks.wordpressBlocksStrings.spotify
   - typings.wordpressBlocks.wordpressBlocksStrings.laptop
   - typings.wordpressBlocks.wordpressBlocksStrings.flag
   - typings.wordpressBlocks.wordpressBlocksStrings.`align-left`
@@ -208,17 +239,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`align-wide`
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-down-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`controls-forward`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`money-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`embed-audio`
   - typings.wordpressBlocks.wordpressBlocksStrings.carrot
   - typings.wordpressBlocks.wordpressBlocksStrings.pressthis
+  - typings.wordpressBlocks.wordpressBlocksStrings.privacy
   - typings.wordpressBlocks.wordpressBlocksStrings.`embed-photo`
   - typings.wordpressBlocks.wordpressBlocksStrings.`star-empty`
   - typings.wordpressBlocks.wordpressBlocksStrings.displayName
   - typings.wordpressBlocks.wordpressBlocksStrings.foreground
   - typings.wordpressBlocks.wordpressBlocksStrings.`controls-skipforward`
+  - typings.wordpressBlocks.wordpressBlocksStrings.linkedin
+  - typings.wordpressBlocks.wordpressBlocksStrings.businesswoman
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-down-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.randomize
+  - typings.wordpressBlocks.wordpressBlocksStrings.`plus-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.leftright
+  - typings.wordpressBlocks.wordpressBlocksStrings.podio
   - typings.wordpressBlocks.wordpressBlocksStrings.`welcome-comments`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-code`
   - typings.wordpressBlocks.wordpressBlocksStrings.filter
@@ -230,17 +267,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-indent`
   - typings.wordpressBlocks.wordpressBlocksStrings.columns
   - typings.wordpressBlocks.wordpressBlocksStrings.`chart-bar`
+  - typings.wordpressBlocks.wordpressBlocksStrings.games
   - typings.wordpressBlocks.wordpressBlocksStrings.`format-aside`
   - typings.wordpressBlocks.wordpressBlocksStrings.`list-view`
   - typings.wordpressBlocks.wordpressBlocksStrings.`type`
   - typings.wordpressBlocks.wordpressBlocksStrings.`media-interactive`
   - typings.wordpressBlocks.wordpressBlocksStrings.microphone
   - typings.wordpressBlocks.wordpressBlocksStrings.clipboard
+  - typings.wordpressBlocks.wordpressBlocksStrings.`camera-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`media-spreadsheet`
   - typings.wordpressBlocks.wordpressBlocksStrings.`video-alt3`
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-left-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.cloud
   - typings.wordpressBlocks.wordpressBlocksStrings.warning
+  - typings.wordpressBlocks.wordpressBlocksStrings.`color-picker`
+  - typings.wordpressBlocks.wordpressBlocksStrings.businessperson
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-site-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-settings`
   - typings.wordpressBlocks.wordpressBlocksStrings.`table-col-after`
@@ -254,6 +295,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`cover-image`
   - typings.wordpressBlocks.wordpressBlocksStrings.download
   - typings.wordpressBlocks.wordpressBlocksStrings.`index-card`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.`images-alt2`
   - typings.wordpressBlocks.wordpressBlocksStrings.childContextTypes
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-italic`
@@ -262,6 +304,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.hidden
   - typings.wordpressBlocks.wordpressBlocksStrings.testimonial
   - typings.wordpressBlocks.wordpressBlocksStrings.`buddicons-groups`
+  - typings.wordpressBlocks.wordpressBlocksStrings.xing
   - typings.wordpressBlocks.wordpressBlocksStrings.plus
   - typings.wordpressBlocks.wordpressBlocksStrings.`buddicons-replies`
   - typings.wordpressBlocks.wordpressBlocksStrings.nametag
@@ -270,7 +313,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`buddicons-friends`
   - typings.wordpressBlocks.wordpressBlocksStrings.`embed-generic`
   - typings.wordpressBlocks.wordpressBlocksStrings.`cloud-saved`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt3`
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-up-alt`
+  - typings.wordpressBlocks.wordpressBlocksStrings.twitch
   - typings.wordpressBlocks.wordpressBlocksStrings.`controls-pause`
   - typings.wordpressBlocks.wordpressBlocksStrings.`block-default`
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-customizer`
@@ -289,6 +334,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-tools`
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-media`
   - typings.wordpressBlocks.wordpressBlocksStrings.`arrow-up`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`edit-large`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-ltr`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-paragraph`
   - typings.wordpressBlocks.wordpressBlocksStrings.book
@@ -299,14 +345,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.wordpressBlocksStrings.`image-rotate-left`
   - typings.wordpressBlocks.wordpressBlocksStrings.`format-video`
   - typings.wordpressBlocks.wordpressBlocksStrings.`image-rotate-right`
+  - typings.wordpressBlocks.wordpressBlocksStrings.`update-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.`no-alt`
   - typings.wordpressBlocks.wordpressBlocksStrings.tide
+  - typings.wordpressBlocks.wordpressBlocksStrings.hourglass
   - typings.wordpressBlocks.wordpressBlocksStrings.palmtree
   - typings.wordpressBlocks.wordpressBlocksStrings.`admin-site-alt3`
   - typings.wordpressBlocks.wordpressBlocksStrings.megaphone
   - typings.wordpressBlocks.wordpressBlocksStrings.share
   - typings.wordpressBlocks.wordpressBlocksStrings.`universal-access`
   - typings.wordpressBlocks.wordpressBlocksStrings.`editor-alignright`
+  - typings.wordpressBlocks.wordpressBlocksStrings.drumstick
   - typings.wordpressBlocks.wordpressBlocksStrings.smiley
 */
 trait BlockIcon extends StObject
@@ -352,6 +401,8 @@ object BlockIcon {
   
   inline def `admin-users`: typings.wordpressBlocks.wordpressBlocksStrings.`admin-users` = "admin-users".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`admin-users`]
   
+  inline def airplane: typings.wordpressBlocks.wordpressBlocksStrings.airplane = "airplane".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.airplane]
+  
   inline def album: typings.wordpressBlocks.wordpressBlocksStrings.album = "album".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.album]
   
   inline def `align-center`: typings.wordpressBlocks.wordpressBlocksStrings.`align-center` = "align-center".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`align-center`]
@@ -369,6 +420,8 @@ object BlockIcon {
   inline def `align-right`: typings.wordpressBlocks.wordpressBlocksStrings.`align-right` = "align-right".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`align-right`]
   
   inline def `align-wide`: typings.wordpressBlocks.wordpressBlocksStrings.`align-wide` = "align-wide".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`align-wide`]
+  
+  inline def amazon: typings.wordpressBlocks.wordpressBlocksStrings.amazon = "amazon".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.amazon]
   
   inline def analytics: typings.wordpressBlocks.wordpressBlocksStrings.analytics = "analytics".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.analytics]
   
@@ -406,6 +459,12 @@ object BlockIcon {
   
   inline def backup: typings.wordpressBlocks.wordpressBlocksStrings.backup = "backup".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.backup]
   
+  inline def bank: typings.wordpressBlocks.wordpressBlocksStrings.bank = "bank".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.bank]
+  
+  inline def beer: typings.wordpressBlocks.wordpressBlocksStrings.beer = "beer".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.beer]
+  
+  inline def bell: typings.wordpressBlocks.wordpressBlocksStrings.bell = "bell".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.bell]
+  
   inline def `block-default`: typings.wordpressBlocks.wordpressBlocksStrings.`block-default` = "block-default".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`block-default`]
   
   inline def book: typings.wordpressBlocks.wordpressBlocksStrings.book = "book".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.book]
@@ -438,13 +497,23 @@ object BlockIcon {
   
   inline def businessman: typings.wordpressBlocks.wordpressBlocksStrings.businessman = "businessman".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.businessman]
   
+  inline def businessperson: typings.wordpressBlocks.wordpressBlocksStrings.businessperson = "businessperson".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.businessperson]
+  
+  inline def businesswoman: typings.wordpressBlocks.wordpressBlocksStrings.businesswoman = "businesswoman".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.businesswoman]
+  
   inline def button: typings.wordpressBlocks.wordpressBlocksStrings.button = "button".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.button]
+  
+  inline def calculator: typings.wordpressBlocks.wordpressBlocksStrings.calculator = "calculator".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.calculator]
   
   inline def calendar: typings.wordpressBlocks.wordpressBlocksStrings.calendar = "calendar".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.calendar]
   
   inline def `calendar-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`calendar-alt` = "calendar-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`calendar-alt`]
   
   inline def camera: typings.wordpressBlocks.wordpressBlocksStrings.camera = "camera".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.camera]
+  
+  inline def `camera-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`camera-alt` = "camera-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`camera-alt`]
+  
+  inline def car: typings.wordpressBlocks.wordpressBlocksStrings.car = "car".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.car]
   
   inline def carrot: typings.wordpressBlocks.wordpressBlocksStrings.carrot = "carrot".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.carrot]
   
@@ -471,6 +540,12 @@ object BlockIcon {
   inline def `cloud-saved`: typings.wordpressBlocks.wordpressBlocksStrings.`cloud-saved` = "cloud-saved".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`cloud-saved`]
   
   inline def `cloud-upload`: typings.wordpressBlocks.wordpressBlocksStrings.`cloud-upload` = "cloud-upload".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`cloud-upload`]
+  
+  inline def `code-standards`: typings.wordpressBlocks.wordpressBlocksStrings.`code-standards` = "code-standards".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`code-standards`]
+  
+  inline def coffee: typings.wordpressBlocks.wordpressBlocksStrings.coffee = "coffee".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.coffee]
+  
+  inline def `color-picker`: typings.wordpressBlocks.wordpressBlocksStrings.`color-picker` = "color-picker".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`color-picker`]
   
   inline def columns: typings.wordpressBlocks.wordpressBlocksStrings.columns = "columns".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.columns]
   
@@ -500,6 +575,18 @@ object BlockIcon {
   
   inline def dashboard: typings.wordpressBlocks.wordpressBlocksStrings.dashboard = "dashboard".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.dashboard]
   
+  inline def database: typings.wordpressBlocks.wordpressBlocksStrings.database = "database".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.database]
+  
+  inline def `database-add`: typings.wordpressBlocks.wordpressBlocksStrings.`database-add` = "database-add".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`database-add`]
+  
+  inline def `database-export`: typings.wordpressBlocks.wordpressBlocksStrings.`database-export` = "database-export".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`database-export`]
+  
+  inline def `database-import`: typings.wordpressBlocks.wordpressBlocksStrings.`database-import` = "database-import".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`database-import`]
+  
+  inline def `database-remove`: typings.wordpressBlocks.wordpressBlocksStrings.`database-remove` = "database-remove".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`database-remove`]
+  
+  inline def `database-view`: typings.wordpressBlocks.wordpressBlocksStrings.`database-view` = "database-view".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`database-view`]
+  
   inline def defaultProps: typings.wordpressBlocks.wordpressBlocksStrings.defaultProps = "defaultProps".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.defaultProps]
   
   inline def desktop: typings.wordpressBlocks.wordpressBlocksStrings.desktop = "desktop".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.desktop]
@@ -510,7 +597,13 @@ object BlockIcon {
   
   inline def download: typings.wordpressBlocks.wordpressBlocksStrings.download = "download".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.download]
   
+  inline def drumstick: typings.wordpressBlocks.wordpressBlocksStrings.drumstick = "drumstick".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.drumstick]
+  
   inline def edit: typings.wordpressBlocks.wordpressBlocksStrings.edit = "edit".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.edit]
+  
+  inline def `edit-large`: typings.wordpressBlocks.wordpressBlocksStrings.`edit-large` = "edit-large".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`edit-large`]
+  
+  inline def `edit-page`: typings.wordpressBlocks.wordpressBlocksStrings.`edit-page` = "edit-page".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`edit-page`]
   
   inline def `editor-aligncenter`: typings.wordpressBlocks.wordpressBlocksStrings.`editor-aligncenter` = "editor-aligncenter".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`editor-aligncenter`]
   
@@ -612,6 +705,8 @@ object BlockIcon {
   
   inline def flag: typings.wordpressBlocks.wordpressBlocksStrings.flag = "flag".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.flag]
   
+  inline def food: typings.wordpressBlocks.wordpressBlocksStrings.food = "food".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.food]
+  
   inline def foreground: typings.wordpressBlocks.wordpressBlocksStrings.foreground = "foreground".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.foreground]
   
   inline def `format-aside`: typings.wordpressBlocks.wordpressBlocksStrings.`format-aside` = "format-aside".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`format-aside`]
@@ -632,7 +727,13 @@ object BlockIcon {
   
   inline def forms: typings.wordpressBlocks.wordpressBlocksStrings.forms = "forms".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.forms]
   
-  inline def googleplus: typings.wordpressBlocks.wordpressBlocksStrings.googleplus = "googleplus".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.googleplus]
+  inline def `fullscreen-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`fullscreen-alt` = "fullscreen-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`fullscreen-alt`]
+  
+  inline def `fullscreen-exit-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`fullscreen-exit-alt` = "fullscreen-exit-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`fullscreen-exit-alt`]
+  
+  inline def games: typings.wordpressBlocks.wordpressBlocksStrings.games = "games".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.games]
+  
+  inline def google: typings.wordpressBlocks.wordpressBlocksStrings.google = "google".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.google]
   
   inline def `grid-view`: typings.wordpressBlocks.wordpressBlocksStrings.`grid-view` = "grid-view".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`grid-view`]
   
@@ -645,6 +746,8 @@ object BlockIcon {
   inline def heart: typings.wordpressBlocks.wordpressBlocksStrings.heart = "heart".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.heart]
   
   inline def hidden: typings.wordpressBlocks.wordpressBlocksStrings.hidden = "hidden".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.hidden]
+  
+  inline def hourglass: typings.wordpressBlocks.wordpressBlocksStrings.hourglass = "hourglass".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.hourglass]
   
   inline def html: typings.wordpressBlocks.wordpressBlocksStrings.html = "html".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.html]
   
@@ -686,8 +789,6 @@ object BlockIcon {
   
   inline def key: typings.wordpressBlocks.wordpressBlocksStrings.key = "key".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.key]
   
-  inline def `keyboard-hide`: typings.wordpressBlocks.wordpressBlocksStrings.`keyboard-hide` = "keyboard-hide".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`keyboard-hide`]
-  
   inline def laptop: typings.wordpressBlocks.wordpressBlocksStrings.laptop = "laptop".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.laptop]
   
   inline def layout: typings.wordpressBlocks.wordpressBlocksStrings.layout = "layout".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.layout]
@@ -695,6 +796,8 @@ object BlockIcon {
   inline def leftright: typings.wordpressBlocks.wordpressBlocksStrings.leftright = "leftright".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.leftright]
   
   inline def lightbulb: typings.wordpressBlocks.wordpressBlocksStrings.lightbulb = "lightbulb".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.lightbulb]
+  
+  inline def linkedin: typings.wordpressBlocks.wordpressBlocksStrings.linkedin = "linkedin".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.linkedin]
   
   inline def `list-view`: typings.wordpressBlocks.wordpressBlocksStrings.`list-view` = "list-view".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`list-view`]
   
@@ -730,6 +833,10 @@ object BlockIcon {
   
   inline def `menu-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt` = "menu-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt`]
   
+  inline def `menu-alt2`: typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt2` = "menu-alt2".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt2`]
+  
+  inline def `menu-alt3`: typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt3` = "menu-alt3".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`menu-alt3`]
+  
   inline def microphone: typings.wordpressBlocks.wordpressBlocksStrings.microphone = "microphone".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.microphone]
   
   inline def migrate: typings.wordpressBlocks.wordpressBlocksStrings.migrate = "migrate".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.migrate]
@@ -737,6 +844,8 @@ object BlockIcon {
   inline def minus: typings.wordpressBlocks.wordpressBlocksStrings.minus = "minus".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.minus]
   
   inline def money: typings.wordpressBlocks.wordpressBlocksStrings.money = "money".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.money]
+  
+  inline def `money-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`money-alt` = "money-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`money-alt`]
   
   inline def move: typings.wordpressBlocks.wordpressBlocksStrings.move = "move".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.move]
   
@@ -748,29 +857,45 @@ object BlockIcon {
   
   inline def `no-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`no-alt` = "no-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`no-alt`]
   
+  inline def `open-folder`: typings.wordpressBlocks.wordpressBlocksStrings.`open-folder` = "open-folder".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`open-folder`]
+  
   inline def palmtree: typings.wordpressBlocks.wordpressBlocksStrings.palmtree = "palmtree".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.palmtree]
   
   inline def paperclip: typings.wordpressBlocks.wordpressBlocksStrings.paperclip = "paperclip".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.paperclip]
   
+  inline def pdf: typings.wordpressBlocks.wordpressBlocksStrings.pdf = "pdf".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.pdf]
+  
   inline def performance: typings.wordpressBlocks.wordpressBlocksStrings.performance = "performance".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.performance]
   
+  inline def pets: typings.wordpressBlocks.wordpressBlocksStrings.pets = "pets".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.pets]
+  
   inline def phone: typings.wordpressBlocks.wordpressBlocksStrings.phone = "phone".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.phone]
+  
+  inline def pinterest: typings.wordpressBlocks.wordpressBlocksStrings.pinterest = "pinterest".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.pinterest]
   
   inline def `playlist-audio`: typings.wordpressBlocks.wordpressBlocksStrings.`playlist-audio` = "playlist-audio".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`playlist-audio`]
   
   inline def `playlist-video`: typings.wordpressBlocks.wordpressBlocksStrings.`playlist-video` = "playlist-video".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`playlist-video`]
   
+  inline def `plugins-checked`: typings.wordpressBlocks.wordpressBlocksStrings.`plugins-checked` = "plugins-checked".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`plugins-checked`]
+  
   inline def plus: typings.wordpressBlocks.wordpressBlocksStrings.plus = "plus".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.plus]
   
   inline def `plus-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`plus-alt` = "plus-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`plus-alt`]
   
-  inline def `plus-light`: typings.wordpressBlocks.wordpressBlocksStrings.`plus-light` = "plus-light".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`plus-light`]
+  inline def `plus-alt2`: typings.wordpressBlocks.wordpressBlocksStrings.`plus-alt2` = "plus-alt2".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`plus-alt2`]
+  
+  inline def podio: typings.wordpressBlocks.wordpressBlocksStrings.podio = "podio".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.podio]
   
   inline def portfolio: typings.wordpressBlocks.wordpressBlocksStrings.portfolio = "portfolio".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.portfolio]
   
   inline def `post-status`: typings.wordpressBlocks.wordpressBlocksStrings.`post-status` = "post-status".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`post-status`]
   
   inline def pressthis: typings.wordpressBlocks.wordpressBlocksStrings.pressthis = "pressthis".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.pressthis]
+  
+  inline def printer: typings.wordpressBlocks.wordpressBlocksStrings.printer = "printer".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.printer]
+  
+  inline def privacy: typings.wordpressBlocks.wordpressBlocksStrings.privacy = "privacy".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.privacy]
   
   inline def products: typings.wordpressBlocks.wordpressBlocksStrings.products = "products".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.products]
   
@@ -779,6 +904,8 @@ object BlockIcon {
   inline def props: typings.wordpressBlocks.wordpressBlocksStrings.props = "props".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.props]
   
   inline def randomize: typings.wordpressBlocks.wordpressBlocksStrings.randomize = "randomize".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.randomize]
+  
+  inline def reddit: typings.wordpressBlocks.wordpressBlocksStrings.reddit = "reddit".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.reddit]
   
   inline def redo: typings.wordpressBlocks.wordpressBlocksStrings.redo = "redo".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.redo]
   
@@ -820,6 +947,8 @@ object BlockIcon {
   
   inline def sos: typings.wordpressBlocks.wordpressBlocksStrings.sos = "sos".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.sos]
   
+  inline def spotify: typings.wordpressBlocks.wordpressBlocksStrings.spotify = "spotify".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.spotify]
+  
   inline def src: typings.wordpressBlocks.wordpressBlocksStrings.src = "src".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.src]
   
   inline def `star-empty`: typings.wordpressBlocks.wordpressBlocksStrings.`star-empty` = "star-empty".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`star-empty`]
@@ -831,6 +960,10 @@ object BlockIcon {
   inline def sticky: typings.wordpressBlocks.wordpressBlocksStrings.sticky = "sticky".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.sticky]
   
   inline def store: typings.wordpressBlocks.wordpressBlocksStrings.store = "store".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.store]
+  
+  inline def superhero: typings.wordpressBlocks.wordpressBlocksStrings.superhero = "superhero".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.superhero]
+  
+  inline def `superhero-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`superhero-alt` = "superhero-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`superhero-alt`]
   
   inline def `table-col-after`: typings.wordpressBlocks.wordpressBlocksStrings.`table-col-after` = "table-col-after".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`table-col-after`]
   
@@ -854,6 +987,8 @@ object BlockIcon {
   
   inline def text: typings.wordpressBlocks.wordpressBlocksStrings.text = "text".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.text]
   
+  inline def `text-page`: typings.wordpressBlocks.wordpressBlocksStrings.`text-page` = "text-page".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`text-page`]
+  
   inline def `thumbs-down`: typings.wordpressBlocks.wordpressBlocksStrings.`thumbs-down` = "thumbs-down".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`thumbs-down`]
   
   inline def `thumbs-up`: typings.wordpressBlocks.wordpressBlocksStrings.`thumbs-up` = "thumbs-up".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`thumbs-up`]
@@ -868,7 +1003,11 @@ object BlockIcon {
   
   inline def trash: typings.wordpressBlocks.wordpressBlocksStrings.trash = "trash".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.trash]
   
+  inline def twitch: typings.wordpressBlocks.wordpressBlocksStrings.twitch = "twitch".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.twitch]
+  
   inline def twitter: typings.wordpressBlocks.wordpressBlocksStrings.twitter = "twitter".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.twitter]
+  
+  inline def `twitter-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`twitter-alt` = "twitter-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`twitter-alt`]
   
   inline def `type`: typings.wordpressBlocks.wordpressBlocksStrings.`type` = "type".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`type`]
   
@@ -881,6 +1020,8 @@ object BlockIcon {
   inline def unlock: typings.wordpressBlocks.wordpressBlocksStrings.unlock = "unlock".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.unlock]
   
   inline def update: typings.wordpressBlocks.wordpressBlocksStrings.update = "update".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.update]
+  
+  inline def `update-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`update-alt` = "update-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`update-alt`]
   
   inline def upload: typings.wordpressBlocks.wordpressBlocksStrings.upload = "upload".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.upload]
   
@@ -908,11 +1049,17 @@ object BlockIcon {
   
   inline def `welcome-write-blog`: typings.wordpressBlocks.wordpressBlocksStrings.`welcome-write-blog` = "welcome-write-blog".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`welcome-write-blog`]
   
+  inline def whatsapp: typings.wordpressBlocks.wordpressBlocksStrings.whatsapp = "whatsapp".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.whatsapp]
+  
   inline def wordpress: typings.wordpressBlocks.wordpressBlocksStrings.wordpress = "wordpress".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.wordpress]
   
   inline def `wordpress-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`wordpress-alt` = "wordpress-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`wordpress-alt`]
   
+  inline def xing: typings.wordpressBlocks.wordpressBlocksStrings.xing = "xing".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.xing]
+  
   inline def yes: typings.wordpressBlocks.wordpressBlocksStrings.yes = "yes".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.yes]
   
   inline def `yes-alt`: typings.wordpressBlocks.wordpressBlocksStrings.`yes-alt` = "yes-alt".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.`yes-alt`]
+  
+  inline def youtube: typings.wordpressBlocks.wordpressBlocksStrings.youtube = "youtube".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.youtube]
 }

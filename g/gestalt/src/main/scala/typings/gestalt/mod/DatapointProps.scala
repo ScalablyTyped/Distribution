@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.AccesibilityLabel
+import typings.gestalt.anon.AccessibilityLabelValue
 import typings.gestalt.gestaltStrings.auto
 import typings.gestalt.gestaltStrings.bad
 import typings.gestalt.gestaltStrings.good
@@ -23,7 +23,7 @@ trait DatapointProps extends StObject {
   
   var tooltipZIndex: js.UndefOr[Indexable] = js.undefined
   
-  var trend: js.UndefOr[AccesibilityLabel] = js.undefined
+  var trend: js.UndefOr[AccessibilityLabelValue] = js.undefined
   
   var trendSentiment: js.UndefOr[good | bad | neutral | auto] = js.undefined
   
@@ -56,7 +56,7 @@ object DatapointProps {
     
     inline def setTooltipZIndexUndefined: Self = StObject.set(x, "tooltipZIndex", js.undefined)
     
-    inline def setTrend(value: AccesibilityLabel): Self = StObject.set(x, "trend", value.asInstanceOf[js.Any])
+    inline def setTrend(value: AccessibilityLabelValue): Self = StObject.set(x, "trend", value.asInstanceOf[js.Any])
     
     inline def setTrendSentiment(value: good | bad | neutral | auto): Self = StObject.set(x, "trendSentiment", value.asInstanceOf[js.Any])
     

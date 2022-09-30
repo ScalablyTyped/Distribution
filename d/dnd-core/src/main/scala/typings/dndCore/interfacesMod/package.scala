@@ -5,20 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActionCreator[Payload] = js.Function1[/* args */ js.Array[js.Any], typings.dndCore.interfacesMod.Action[Payload]]
+type ActionCreator[Payload] = js.Function1[/* args */ js.Array[Any], Action[Payload]]
 
 type BackendFactory = js.Function3[
-/* manager */ typings.dndCore.interfacesMod.DragDropManager, 
-/* globalContext */ js.UndefOr[js.Any], 
-/* configuration */ js.UndefOr[js.Any], 
-typings.dndCore.interfacesMod.Backend]
+/* manager */ DragDropManager, 
+/* globalContext */ js.UndefOr[Any], 
+/* configuration */ js.UndefOr[Any], 
+Backend]
 
-type Identifier = java.lang.String | js.Symbol
+type Identifier = String | js.Symbol
 
-type Listener = js.Function0[scala.Unit]
+type Listener = js.Function0[Unit]
 
-type SourceType = typings.dndCore.interfacesMod.Identifier
+type SourceType = Identifier
 
-type TargetType = typings.dndCore.interfacesMod.Identifier | js.Array[typings.dndCore.interfacesMod.Identifier]
+type TargetType = Identifier | js.Array[Identifier]
 
-type Unsubscribe = js.Function0[scala.Unit]
+type Unsubscribe = js.Function0[Unit]

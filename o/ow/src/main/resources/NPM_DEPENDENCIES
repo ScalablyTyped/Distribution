@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ow" : "0.17.0"
+      "ow" : "1.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ow" : "0.17.0"
+      "ow" : "1.0.0"
     }
   ],
   "compile-devDependencies" : [

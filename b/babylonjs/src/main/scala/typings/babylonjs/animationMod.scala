@@ -98,15 +98,12 @@ object animationMod {
     /* private */ var _events: Any = js.native
     
     /**
-      * @param value
-      * @hidden Internal use only
+      * @internal Internal use only
       */
     def _getKeyValue(value: Any): Any = js.native
     
     /**
-      * @param currentFrame
-      * @param state
-      * @hidden Internal use only
+      * @internal Internal use only
       */
     def _interpolate(currentFrame: Double, state: IAnimationState): Any = js.native
     
@@ -121,7 +118,7 @@ object animationMod {
     /* private */ var _ranges: Any = js.native
     
     /**
-      * @hidden Internal use only
+      * @internal Internal use only
       */
     var _runtimeAnimations: js.Array[RuntimeAnimation] = js.native
     
@@ -1095,15 +1092,7 @@ object animationMod {
     ): Nullable[Animatable] = (^.asInstanceOf[js.Dynamic].applyDynamic("TransitionTo")(property.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any], host.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any], transition.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onAnimationEnd.asInstanceOf[js.Any])).asInstanceOf[Nullable[Animatable]]
     
     /**
-      * @param name
-      * @param targetProperty
-      * @param framePerSecond
-      * @param totalFrame
-      * @param from
-      * @param to
-      * @param loopMode
-      * @param easingFunction
-      * @hidden Internal use
+      * @internal Internal use
       */
     inline def _PrepareAnimation(
       name: String,
@@ -1149,10 +1138,7 @@ object animationMod {
     inline def _UniqueIdGenerator_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdGenerator")(x.asInstanceOf[js.Any])
     
     /**
-      * @param left
-      * @param right
-      * @param amount
-      * @hidden
+      * @internal
       */
     inline def _UniversalLerp(left: Any, right: Any, amount: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_UniversalLerp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Any]
   }

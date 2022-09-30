@@ -1,10 +1,10 @@
 package typings.microsoftLoadThemedStyles
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`0`
-import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`1`
-import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`2`
-import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`3`
+import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`0`
+import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`1`
+import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`2`
+import typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,9 +45,9 @@ object mod {
   inline def splitStyles(styles: String): ThemableArray = ^.asInstanceOf[js.Dynamic].applyDynamic("splitStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[ThemableArray]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`1`
-    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`2`
-    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`3`
+    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`1`
+    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`2`
+    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`3`
   */
   trait ClearStyleOptions extends StObject
   object ClearStyleOptions {
@@ -96,8 +96,8 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`0`
-    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesNumbers.`1`
+    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`0`
+    - typings.microsoftLoadThemedStyles.microsoftLoadThemedStylesInts.`1`
   */
   trait Mode extends StObject
   object Mode {

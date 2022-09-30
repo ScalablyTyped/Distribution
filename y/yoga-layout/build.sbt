@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yoga-layout"
-version := "1.9-dt-20211202Z-9120a7"
+version := "1.9-dt-20211202Z-a7875c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -139,6 +139,18 @@ object electronStrings {
   inline def `activity-was-continued`: `activity-was-continued` = "activity-was-continued".asInstanceOf[`activity-was-continued`]
   
   @js.native
+  sealed trait adjustSelection extends StObject
+  inline def adjustSelection: adjustSelection = "adjustSelection".asInstanceOf[adjustSelection]
+  
+  @js.native
+  sealed trait adjustSelectionReset extends StObject
+  inline def adjustSelectionReset: adjustSelectionReset = "adjustSelectionReset".asInstanceOf[adjustSelectionReset]
+  
+  @js.native
+  sealed trait allow extends StObject
+  inline def allow: allow = "allow".asInstanceOf[allow]
+  
+  @js.native
   sealed trait alt extends StObject
   inline def alt: alt = "alt".asInstanceOf[alt]
   
@@ -149,6 +161,14 @@ object electronStrings {
   @js.native
   sealed trait `always-on-top-changed` extends StObject
   inline def `always-on-top-changed`: `always-on-top-changed` = "always-on-top-changed".asInstanceOf[`always-on-top-changed`]
+  
+  @js.native
+  sealed trait animate extends StObject
+  inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateOnce extends StObject
+  inline def animateOnce: animateOnce = "animateOnce".asInstanceOf[animateOnce]
   
   @js.native
   sealed trait animationcancel extends StObject
@@ -165,10 +185,6 @@ object electronStrings {
   @js.native
   sealed trait animationstart extends StObject
   inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
-  
-  @js.native
-  sealed trait `app-cache` extends StObject
-  inline def `app-cache`: `app-cache` = "app-cache".asInstanceOf[`app-cache`]
   
   @js.native
   sealed trait `app-command` extends StObject
@@ -197,6 +213,10 @@ object electronStrings {
   @js.native
   sealed trait audio extends StObject
   inline def audio: audio = "audio".asInstanceOf[audio]
+  
+  @js.native
+  sealed trait auto_detect extends StObject
+  inline def auto_detect: auto_detect = "auto_detect".asInstanceOf[auto_detect]
   
   @js.native
   sealed trait automatic extends StObject
@@ -251,8 +271,8 @@ object electronStrings {
   inline def `before-quit-for-update`: `before-quit-for-update` = "before-quit-for-update".asInstanceOf[`before-quit-for-update`]
   
   @js.native
-  sealed trait blob extends StObject
-  inline def blob: blob = "blob".asInstanceOf[blob]
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
   
   @js.native
   sealed trait blue extends StObject
@@ -269,6 +289,14 @@ object electronStrings {
   @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
+  sealed trait `bottom-left` extends StObject
+  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  
+  @js.native
+  sealed trait `bottom-right` extends StObject
+  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
   sealed trait brown extends StObject
@@ -319,16 +347,8 @@ object electronStrings {
   inline def bypassHeatCheckAndEagerCompile: bypassHeatCheckAndEagerCompile = "bypassHeatCheckAndEagerCompile".asInstanceOf[bypassHeatCheckAndEagerCompile]
   
   @js.native
-  sealed trait cache extends StObject
-  inline def cache: cache = "cache".asInstanceOf[cache]
-  
-  @js.native
   sealed trait camera extends StObject
   inline def camera: camera = "camera".asInstanceOf[camera]
-  
-  @js.native
-  sealed trait cancel extends StObject
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait cancelled extends StObject
@@ -443,6 +463,26 @@ object electronStrings {
   inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
+  
+  @js.native
+  sealed trait confirm extends StObject
+  inline def confirm: confirm = "confirm".asInstanceOf[confirm]
+  
+  @js.native
+  sealed trait confirmPin extends StObject
+  inline def confirmPin: confirmPin = "confirmPin".asInstanceOf[confirmPin]
+  
+  @js.native
   sealed trait `console-api` extends StObject
   inline def `console-api`: `console-api` = "console-api".asInstanceOf[`console-api`]
   
@@ -511,6 +551,10 @@ object electronStrings {
   inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
+  sealed trait cspReport extends StObject
+  inline def cspReport: cspReport = "cspReport".asInstanceOf[cspReport]
+  
+  @js.native
   sealed trait ctrl extends StObject
   inline def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
   
@@ -531,6 +575,10 @@ object electronStrings {
   inline def customButtonsOnHover: customButtonsOnHover = "customButtonsOnHover".asInstanceOf[customButtonsOnHover]
   
   @js.native
+  sealed trait customCategoryAccessDeniedError extends StObject
+  inline def customCategoryAccessDeniedError: customCategoryAccessDeniedError = "customCategoryAccessDeniedError".asInstanceOf[customCategoryAccessDeniedError]
+  
+  @js.native
   sealed trait cut extends StObject
   inline def cut: cut = "cut".asInstanceOf[cut]
   
@@ -541,6 +589,10 @@ object electronStrings {
   @js.native
   sealed trait data extends StObject
   inline def data: data = "data".asInstanceOf[data]
+  
+  @js.native
+  sealed trait day extends StObject
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait dblclick extends StObject
@@ -567,16 +619,16 @@ object electronStrings {
   inline def denied: denied = "denied".asInstanceOf[denied]
   
   @js.native
+  sealed trait deny extends StObject
+  inline def deny: deny = "deny".asInstanceOf[deny]
+  
+  @js.native
   sealed trait deprecation extends StObject
   inline def deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
   
   @js.native
   sealed trait desktop extends StObject
   inline def desktop: desktop = "desktop".asInstanceOf[desktop]
-  
-  @js.native
-  sealed trait `desktop-capturer-get-sources` extends StObject
-  inline def `desktop-capturer-get-sources`: `desktop-capturer-get-sources` = "desktop-capturer-get-sources".asInstanceOf[`desktop-capturer-get-sources`]
   
   @js.native
   sealed trait destroyed extends StObject
@@ -607,6 +659,10 @@ object electronStrings {
   inline def dictionary: dictionary = "dictionary".asInstanceOf[dictionary]
   
   @js.native
+  sealed trait `did-attach` extends StObject
+  inline def `did-attach`: `did-attach` = "did-attach".asInstanceOf[`did-attach`]
+  
+  @js.native
   sealed trait `did-attach-webview` extends StObject
   inline def `did-attach-webview`: `did-attach-webview` = "did-attach-webview".asInstanceOf[`did-attach-webview`]
   
@@ -617,6 +673,10 @@ object electronStrings {
   @js.native
   sealed trait `did-change-theme-color` extends StObject
   inline def `did-change-theme-color`: `did-change-theme-color` = "did-change-theme-color".asInstanceOf[`did-change-theme-color`]
+  
+  @js.native
+  sealed trait `did-create-window` extends StObject
+  inline def `did-create-window`: `did-create-window` = "did-create-window".asInstanceOf[`did-create-window`]
   
   @js.native
   sealed trait `did-fail-load` extends StObject
@@ -663,6 +723,10 @@ object electronStrings {
   inline def `did-stop-loading`: `did-stop-loading` = "did-stop-loading".asInstanceOf[`did-stop-loading`]
   
   @js.native
+  sealed trait direct extends StObject
+  inline def direct: direct = "direct".asInstanceOf[direct]
+  
+  @js.native
   sealed trait disable_non_proxied_udp extends StObject
   inline def disable_non_proxied_udp: disable_non_proxied_udp = "disable_non_proxied_udp".asInstanceOf[disable_non_proxied_udp]
   
@@ -677,6 +741,10 @@ object electronStrings {
   @js.native
   sealed trait `display-added` extends StObject
   inline def `display-added`: `display-added` = "display-added".asInstanceOf[`display-added`]
+  
+  @js.native
+  sealed trait `display-capture` extends StObject
+  inline def `display-capture`: `display-capture` = "display-capture".asInstanceOf[`display-capture`]
   
   @js.native
   sealed trait `display-metrics-changed` extends StObject
@@ -743,10 +811,6 @@ object electronStrings {
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   
   @js.native
-  sealed trait dragexit extends StObject
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
-  
-  @js.native
   sealed trait dragleave extends StObject
   inline def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
   
@@ -783,6 +847,18 @@ object electronStrings {
   inline def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
+  sealed trait electronSlashcommon extends StObject
+  inline def electronSlashcommon: electronSlashcommon = "electron/common".asInstanceOf[electronSlashcommon]
+  
+  @js.native
+  sealed trait electronSlashmain extends StObject
+  inline def electronSlashmain: electronSlashmain = "electron/main".asInstanceOf[electronSlashmain]
+  
+  @js.native
+  sealed trait electronSlashrenderer extends StObject
+  inline def electronSlashrenderer: electronSlashrenderer = "electron/renderer".asInstanceOf[electronSlashrenderer]
+  
+  @js.native
   sealed trait emptied extends StObject
   inline def emptied: emptied = "emptied".asInstanceOf[emptied]
   
@@ -811,6 +887,10 @@ object electronStrings {
   inline def everything: everything = "everything".asInstanceOf[everything]
   
   @js.native
+  sealed trait evicted extends StObject
+  inline def evicted: evicted = "evicted".asInstanceOf[evicted]
+  
+  @js.native
   sealed trait exe extends StObject
   inline def exe: exe = "exe".asInstanceOf[exe]
   
@@ -821,6 +901,30 @@ object electronStrings {
   @js.native
   sealed trait existsAndRunning extends StObject
   inline def existsAndRunning: existsAndRunning = "existsAndRunning".asInstanceOf[existsAndRunning]
+  
+  @js.native
+  sealed trait expired extends StObject
+  inline def expired: expired = "expired".asInstanceOf[expired]
+  
+  @js.native
+  sealed trait `expired-overwrite` extends StObject
+  inline def `expired-overwrite`: `expired-overwrite` = "expired-overwrite".asInstanceOf[`expired-overwrite`]
+  
+  @js.native
+  sealed trait explicit extends StObject
+  inline def explicit: explicit = "explicit".asInstanceOf[explicit]
+  
+  @js.native
+  sealed trait `extension-loaded` extends StObject
+  inline def `extension-loaded`: `extension-loaded` = "extension-loaded".asInstanceOf[`extension-loaded`]
+  
+  @js.native
+  sealed trait `extension-ready` extends StObject
+  inline def `extension-ready`: `extension-ready` = "extension-ready".asInstanceOf[`extension-ready`]
+  
+  @js.native
+  sealed trait `extension-unloaded` extends StObject
+  inline def `extension-unloaded`: `extension-unloaded` = "extension-unloaded".asInstanceOf[`extension-unloaded`]
   
   @js.native
   sealed trait failed extends StObject
@@ -835,6 +939,10 @@ object electronStrings {
   inline def fileMenu: fileMenu = "fileMenu".asInstanceOf[fileMenu]
   
   @js.native
+  sealed trait fileTypeRegistrationError extends StObject
+  inline def fileTypeRegistrationError: fileTypeRegistrationError = "fileTypeRegistrationError".asInstanceOf[fileTypeRegistrationError]
+  
+  @js.native
   sealed trait `find-highlight` extends StObject
   inline def `find-highlight`: `find-highlight` = "find-highlight".asInstanceOf[`find-highlight`]
   
@@ -845,6 +953,10 @@ object electronStrings {
   @js.native
   sealed trait fixed extends StObject
   inline def fixed: fixed = "fixed".asInstanceOf[fixed]
+  
+  @js.native
+  sealed trait fixed_servers extends StObject
+  inline def fixed_servers: fixed_servers = "fixed_servers".asInstanceOf[fixed_servers]
   
   @js.native
   sealed trait flexible extends StObject
@@ -871,8 +983,16 @@ object electronStrings {
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
+  sealed trait follow extends StObject
+  inline def follow: follow = "follow".asInstanceOf[follow]
+  
+  @js.native
   sealed trait followWindow extends StObject
   inline def followWindow: followWindow = "followWindow".asInstanceOf[followWindow]
+  
+  @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
   
   @js.native
   sealed trait forceReload extends StObject
@@ -883,12 +1003,24 @@ object electronStrings {
   inline def `foreground-tab`: `foreground-tab` = "foreground-tab".asInstanceOf[`foreground-tab`]
   
   @js.native
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
+  
+  @js.native
   sealed trait `found-in-page` extends StObject
   inline def `found-in-page`: `found-in-page` = "found-in-page".asInstanceOf[`found-in-page`]
   
   @js.native
+  sealed trait `frame-created` extends StObject
+  inline def `frame-created`: `frame-created` = "frame-created".asInstanceOf[`frame-created`]
+  
+  @js.native
   sealed trait free extends StObject
   inline def free: free = "free".asInstanceOf[free]
+  
+  @js.native
+  sealed trait freeTrial extends StObject
+  inline def freeTrial: freeTrial = "freeTrial".asInstanceOf[freeTrial]
   
   @js.native
   sealed trait frequent extends StObject
@@ -957,6 +1089,22 @@ object electronStrings {
   @js.native
   sealed trait help extends StObject
   inline def help: help = "help".asInstanceOf[help]
+  
+  @js.native
+  sealed trait hid extends StObject
+  inline def hid: hid = "hid".asInstanceOf[hid]
+  
+  @js.native
+  sealed trait `hid-device-added` extends StObject
+  inline def `hid-device-added`: `hid-device-added` = "hid-device-added".asInstanceOf[`hid-device-added`]
+  
+  @js.native
+  sealed trait `hid-device-removed` extends StObject
+  inline def `hid-device-removed`: `hid-device-removed` = "hid-device-removed".asInstanceOf[`hid-device-removed`]
+  
+  @js.native
+  sealed trait `hid-device-revoked` extends StObject
+  inline def `hid-device-revoked`: `hid-device-revoked` = "hid-device-revoked".asInstanceOf[`hid-device-revoked`]
   
   @js.native
   sealed trait hidden extends StObject
@@ -1035,6 +1183,10 @@ object electronStrings {
   inline def `inactive-caption-text`: `inactive-caption-text` = "inactive-caption-text".asInstanceOf[`inactive-caption-text`]
   
   @js.native
+  sealed trait include extends StObject
+  inline def include: include = "include".asInstanceOf[include]
+  
+  @js.native
   sealed trait includeSensitive extends StObject
   inline def includeSensitive: includeSensitive = "includeSensitive".asInstanceOf[includeSensitive]
   
@@ -1081,6 +1233,10 @@ object electronStrings {
   @js.native
   sealed trait invalid extends StObject
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
+  
+  @js.native
+  sealed trait invalidSeparatorError extends StObject
+  inline def invalidSeparatorError: invalidSeparatorError = "invalidSeparatorError".asInstanceOf[invalidSeparatorError]
   
   @js.native
   sealed trait `inverted-color-scheme-changed` extends StObject
@@ -1231,6 +1387,14 @@ object electronStrings {
   inline def longEdge: longEdge = "longEdge".asInstanceOf[longEdge]
   
   @js.native
+  sealed trait longPress extends StObject
+  inline def longPress: longPress = "longPress".asInstanceOf[longPress]
+  
+  @js.native
+  sealed trait longTap extends StObject
+  inline def longTap: longTap = "longTap".asInstanceOf[longTap]
+  
+  @js.native
   sealed trait lostpointercapture extends StObject
   inline def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   
@@ -1241,6 +1405,14 @@ object electronStrings {
   @js.native
   sealed trait `main-menu` extends StObject
   inline def `main-menu`: `main-menu` = "main-menu".asInstanceOf[`main-menu`]
+  
+  @js.native
+  sealed trait mainFrame extends StObject
+  inline def mainFrame: mainFrame = "mainFrame".asInstanceOf[mainFrame]
+  
+  @js.native
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
   sealed trait maximize extends StObject
@@ -1349,6 +1521,10 @@ object electronStrings {
   @js.native
   sealed trait monospacedDigit extends StObject
   inline def monospacedDigit: monospacedDigit = "monospacedDigit".asInstanceOf[monospacedDigit]
+  
+  @js.native
+  sealed trait month extends StObject
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait mouse extends StObject
@@ -1479,6 +1655,10 @@ object electronStrings {
   inline def `no-user-gesture-required`: `no-user-gesture-required` = "no-user-gesture-required".asInstanceOf[`no-user-gesture-required`]
   
   @js.native
+  sealed trait noAnimation extends StObject
+  inline def noAnimation: noAnimation = "noAnimation".asInstanceOf[noAnimation]
+  
+  @js.native
   sealed trait noResolveAliases extends StObject
   inline def noResolveAliases: noResolveAliases = "noResolveAliases".asInstanceOf[noResolveAliases]
   
@@ -1507,8 +1687,20 @@ object electronStrings {
   inline def numLock: numLock = "numLock".asInstanceOf[numLock]
   
   @js.native
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
   sealed trait offscreen extends StObject
   inline def offscreen: offscreen = "offscreen".asInstanceOf[offscreen]
+  
+  @js.native
+  sealed trait ok extends StObject
+  inline def ok: ok = "ok".asInstanceOf[ok]
+  
+  @js.native
+  sealed trait omit extends StObject
+  inline def omit: omit = "omit".asInstanceOf[omit]
   
   @js.native
   sealed trait `on-ac` extends StObject
@@ -1567,6 +1759,14 @@ object electronStrings {
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
+  sealed trait overwrite extends StObject
+  inline def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
+  
+  @js.native
+  sealed trait pac_script extends StObject
+  inline def pac_script: pac_script = "pac_script".asInstanceOf[pac_script]
+  
+  @js.native
   sealed trait `page-favicon-updated` extends StObject
   inline def `page-favicon-updated`: `page-favicon-updated` = "page-favicon-updated".asInstanceOf[`page-favicon-updated`]
   
@@ -1595,12 +1795,20 @@ object electronStrings {
   inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait pepperFlashSystemPlugin extends StObject
-  inline def pepperFlashSystemPlugin: pepperFlashSystemPlugin = "pepperFlashSystemPlugin".asInstanceOf[pepperFlashSystemPlugin]
+  sealed trait payAsYouGo extends StObject
+  inline def payAsYouGo: payAsYouGo = "payAsYouGo".asInstanceOf[payAsYouGo]
+  
+  @js.native
+  sealed trait payUpFront extends StObject
+  inline def payUpFront: payUpFront = "payUpFront".asInstanceOf[payUpFront]
   
   @js.native
   sealed trait pictures extends StObject
   inline def pictures: pictures = "pictures".asInstanceOf[pictures]
+  
+  @js.native
+  sealed trait ping extends StObject
+  inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
   sealed trait pink extends StObject
@@ -1675,6 +1883,10 @@ object electronStrings {
   inline def preconnect: preconnect = "preconnect".asInstanceOf[preconnect]
   
   @js.native
+  sealed trait `preferred-size-changed` extends StObject
+  inline def `preferred-size-changed`: `preferred-size-changed` = "preferred-size-changed".asInstanceOf[`preferred-size-changed`]
+  
+  @js.native
   sealed trait `preload-error` extends StObject
   inline def `preload-error`: `preload-error` = "preload-error".asInstanceOf[`preload-error`]
   
@@ -1705,6 +1917,10 @@ object electronStrings {
   @js.native
   sealed trait promptToCreate extends StObject
   inline def promptToCreate: promptToCreate = "promptToCreate".asInstanceOf[promptToCreate]
+  
+  @js.native
+  sealed trait providePin extends StObject
+  inline def providePin: providePin = "providePin".asInstanceOf[providePin]
   
   @js.native
   sealed trait purchased extends StObject
@@ -1747,6 +1963,10 @@ object electronStrings {
   inline def `ready-to-show`: `ready-to-show` = "ready-to-show".asInstanceOf[`ready-to-show`]
   
   @js.native
+  sealed trait `received-apns-notification` extends StObject
+  inline def `received-apns-notification`: `received-apns-notification` = "received-apns-notification".asInstanceOf[`received-apns-notification`]
+  
+  @js.native
   sealed trait recent extends StObject
   inline def recent: recent = "recent".asInstanceOf[recent]
   
@@ -1783,6 +2003,10 @@ object electronStrings {
   inline def redo: redo = "redo".asInstanceOf[redo]
   
   @js.native
+  sealed trait `registration-completed` extends StObject
+  inline def `registration-completed`: `registration-completed` = "registration-completed".asInstanceOf[`registration-completed`]
+  
+  @js.native
   sealed trait regular extends StObject
   inline def regular: regular = "regular".asInstanceOf[regular]
   
@@ -1793,26 +2017,6 @@ object electronStrings {
   @js.native
   sealed trait remote extends StObject
   inline def remote: remote = "remote".asInstanceOf[remote]
-  
-  @js.native
-  sealed trait `remote-get-builtin` extends StObject
-  inline def `remote-get-builtin`: `remote-get-builtin` = "remote-get-builtin".asInstanceOf[`remote-get-builtin`]
-  
-  @js.native
-  sealed trait `remote-get-current-web-contents` extends StObject
-  inline def `remote-get-current-web-contents`: `remote-get-current-web-contents` = "remote-get-current-web-contents".asInstanceOf[`remote-get-current-web-contents`]
-  
-  @js.native
-  sealed trait `remote-get-current-window` extends StObject
-  inline def `remote-get-current-window`: `remote-get-current-window` = "remote-get-current-window".asInstanceOf[`remote-get-current-window`]
-  
-  @js.native
-  sealed trait `remote-get-global` extends StObject
-  inline def `remote-get-global`: `remote-get-global` = "remote-get-global".asInstanceOf[`remote-get-global`]
-  
-  @js.native
-  sealed trait `remote-require` extends StObject
-  inline def `remote-require`: `remote-require` = "remote-require".asInstanceOf[`remote-require`]
   
   @js.native
   sealed trait `render-process-gone` extends StObject
@@ -1919,6 +2123,10 @@ object electronStrings {
   inline def `screen-saver`: `screen-saver` = "screen-saver".asInstanceOf[`screen-saver`]
   
   @js.native
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
+  
+  @js.native
   sealed trait scroll extends StObject
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
@@ -1979,6 +2187,14 @@ object electronStrings {
   inline def `select-client-certificate`: `select-client-certificate` = "select-client-certificate".asInstanceOf[`select-client-certificate`]
   
   @js.native
+  sealed trait `select-hid-device` extends StObject
+  inline def `select-hid-device`: `select-hid-device` = "select-hid-device".asInstanceOf[`select-hid-device`]
+  
+  @js.native
+  sealed trait `select-serial-port` extends StObject
+  inline def `select-serial-port`: `select-serial-port` = "select-serial-port".asInstanceOf[`select-serial-port`]
+  
+  @js.native
   sealed trait selectAll extends StObject
   inline def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
   
@@ -2035,6 +2251,18 @@ object electronStrings {
   inline def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
+  sealed trait serial extends StObject
+  inline def serial: serial = "serial".asInstanceOf[serial]
+  
+  @js.native
+  sealed trait `serial-port-added` extends StObject
+  inline def `serial-port-added`: `serial-port-added` = "serial-port-added".asInstanceOf[`serial-port-added`]
+  
+  @js.native
+  sealed trait `serial-port-removed` extends StObject
+  inline def `serial-port-removed`: `serial-port-removed` = "serial-port-removed".asInstanceOf[`serial-port-removed`]
+  
+  @js.native
   sealed trait services extends StObject
   inline def services: services = "services".asInstanceOf[services]
   
@@ -2047,8 +2275,16 @@ object electronStrings {
   inline def `session-end`: `session-end` = "session-end".asInstanceOf[`session-end`]
   
   @js.native
+  sealed trait sessionData extends StObject
+  inline def sessionData: sessionData = "sessionData".asInstanceOf[sessionData]
+  
+  @js.native
   sealed trait shadow extends StObject
   inline def shadow: shadow = "shadow".asInstanceOf[shadow]
+  
+  @js.native
+  sealed trait shareMenu extends StObject
+  inline def shareMenu: shareMenu = "shareMenu".asInstanceOf[shareMenu]
   
   @js.native
   sealed trait sheet extends StObject
@@ -2083,6 +2319,10 @@ object electronStrings {
   inline def showOverwriteConfirmation: showOverwriteConfirmation = "showOverwriteConfirmation".asInstanceOf[showOverwriteConfirmation]
   
   @js.native
+  sealed trait showSubstitutions extends StObject
+  inline def showSubstitutions: showSubstitutions = "showSubstitutions".asInstanceOf[showSubstitutions]
+  
+  @js.native
   sealed trait shutdown extends StObject
   inline def shutdown: shutdown = "shutdown".asInstanceOf[shutdown]
   
@@ -2097,6 +2337,10 @@ object electronStrings {
   @js.native
   sealed trait single extends StObject
   inline def single: single = "single".asInstanceOf[single]
+  
+  @js.native
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
   
   @js.native
   sealed trait small extends StObject
@@ -2157,6 +2401,18 @@ object electronStrings {
   @js.native
   sealed trait string extends StObject
   inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait stylesheet extends StObject
+  inline def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
+  
+  @js.native
+  sealed trait stylus extends StObject
+  inline def stylus: stylus = "stylus".asInstanceOf[stylus]
+  
+  @js.native
+  sealed trait subFrame extends StObject
+  inline def subFrame: subFrame = "subFrame".asInstanceOf[subFrame]
   
   @js.native
   sealed trait submenu extends StObject
@@ -2231,8 +2487,24 @@ object electronStrings {
   inline def toggleDevTools: toggleDevTools = "toggleDevTools".asInstanceOf[toggleDevTools]
   
   @js.native
+  sealed trait toggleSmartDashes extends StObject
+  inline def toggleSmartDashes: toggleSmartDashes = "toggleSmartDashes".asInstanceOf[toggleSmartDashes]
+  
+  @js.native
+  sealed trait toggleSmartQuotes extends StObject
+  inline def toggleSmartQuotes: toggleSmartQuotes = "toggleSmartQuotes".asInstanceOf[toggleSmartQuotes]
+  
+  @js.native
+  sealed trait toggleSpellChecker extends StObject
+  inline def toggleSpellChecker: toggleSpellChecker = "toggleSpellChecker".asInstanceOf[toggleSpellChecker]
+  
+  @js.native
   sealed trait toggleTabBar extends StObject
   inline def toggleTabBar: toggleTabBar = "toggleTabBar".asInstanceOf[toggleTabBar]
+  
+  @js.native
+  sealed trait toggleTextReplacement extends StObject
+  inline def toggleTextReplacement: toggleTextReplacement = "toggleTextReplacement".asInstanceOf[toggleTextReplacement]
   
   @js.native
   sealed trait togglefullscreen extends StObject
@@ -2243,12 +2515,24 @@ object electronStrings {
   inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
+  sealed trait `top-left` extends StObject
+  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @js.native
+  sealed trait `top-right` extends StObject
+  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  
+  @js.native
   sealed trait `torn-off-menu` extends StObject
   inline def `torn-off-menu`: `torn-off-menu` = "torn-off-menu".asInstanceOf[`torn-off-menu`]
   
   @js.native
   sealed trait touch extends StObject
   inline def touch: touch = "touch".asInstanceOf[touch]
+  
+  @js.native
+  sealed trait touchHandle extends StObject
+  inline def touchHandle: touchHandle = "touchHandle".asInstanceOf[touchHandle]
   
   @js.native
   sealed trait touchMenu extends StObject
@@ -2403,6 +2687,14 @@ object electronStrings {
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
+  sealed trait `user-did-become-active` extends StObject
+  inline def `user-did-become-active`: `user-did-become-active` = "user-did-become-active".asInstanceOf[`user-did-become-active`]
+  
+  @js.native
+  sealed trait `user-did-resign-active` extends StObject
+  inline def `user-did-resign-active`: `user-did-resign-active` = "user-did-resign-active".asInstanceOf[`user-did-resign-active`]
+  
+  @js.native
   sealed trait `user-gesture-required` extends StObject
   inline def `user-gesture-required`: `user-gesture-required` = "user-gesture-required".asInstanceOf[`user-gesture-required`]
   
@@ -2443,8 +2735,32 @@ object electronStrings {
   inline def `web-contents-created`: `web-contents-created` = "web-contents-created".asInstanceOf[`web-contents-created`]
   
   @js.native
+  sealed trait webSocket extends StObject
+  inline def webSocket: webSocket = "webSocket".asInstanceOf[webSocket]
+  
+  @js.native
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
+  
+  @js.native
   sealed trait webview extends StObject
   inline def webview: webview = "webview".asInstanceOf[webview]
+  
+  @js.native
+  sealed trait week extends StObject
+  inline def week: week = "week".asInstanceOf[week]
   
   @js.native
   sealed trait wheel extends StObject
@@ -2523,8 +2839,16 @@ object electronStrings {
   inline def worker: worker = "worker".asInstanceOf[worker]
   
   @js.native
+  sealed trait xhr extends StObject
+  inline def xhr: xhr = "xhr".asInstanceOf[xhr]
+  
+  @js.native
   sealed trait xml extends StObject
   inline def xml: xml = "xml".asInstanceOf[xml]
+  
+  @js.native
+  sealed trait year extends StObject
+  inline def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait yellow extends StObject

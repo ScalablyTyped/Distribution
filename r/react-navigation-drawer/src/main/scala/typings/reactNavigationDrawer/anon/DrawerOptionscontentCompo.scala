@@ -1,10 +1,10 @@
 package typings.reactNavigationDrawer.anon
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
+import typings.react.mod.RefAttributes
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandlerProps_
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
@@ -40,9 +40,7 @@ trait DrawerOptionscontentCompo extends StObject {
   
   var edgeWidth: Double
   
-  var gestureHandlerProps: js.UndefOr[
-    ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]
-  ] = js.undefined
+  var gestureHandlerProps: js.UndefOr[ComponentProps[ComponentType[PanGestureHandlerProps_ & RefAttributes[Any]]]] = js.undefined
   
   var hideStatusBar: js.UndefOr[Boolean] = js.undefined
   
@@ -105,7 +103,7 @@ object DrawerOptionscontentCompo {
     
     inline def setEdgeWidth(value: Double): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
     
-    inline def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
+    inline def setGestureHandlerProps(value: ComponentProps[ComponentType[PanGestureHandlerProps_ & RefAttributes[Any]]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
     
     inline def setGestureHandlerPropsUndefined: Self = StObject.set(x, "gestureHandlerProps", js.undefined)
     

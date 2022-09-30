@@ -11,20 +11,20 @@ object requestHandlingMod {
     
     @JSGlobal("Requests")
     @js.native
-    class Requests_ () extends StObject {
+    open class Requests_ () extends StObject {
       
       def abort(): Unit = js.native
       
-      def add(ajax: jqXHR[js.Any]): Unit = js.native
+      def add(ajax: jqXHR[Any]): Unit = js.native
       
       /**
         * add method here to be notified of auto-refreshes
         */
       def addRefreshFunction(fct: js.Function0[Unit]): Unit = js.native
       
-      def isLastRequest(ajax: jqXHR[js.Any]): Boolean = js.native
+      def isLastRequest(ajax: jqXHR[Any]): Boolean = js.native
       
-      def remove(ajax: jqXHR[js.Any]): Unit = js.native
+      def remove(ajax: jqXHR[Any]): Unit = js.native
       
       /**
         * sets the timer for the next auto refresh. Ensures only one timeout
@@ -37,8 +37,8 @@ object requestHandlingMod {
     
     @JSGlobal("activeRequests")
     @js.native
-    def activeRequests: js.Array[jqXHR[js.Any]] = js.native
-    inline def activeRequests_=(x: js.Array[jqXHR[js.Any]]): Unit = js.Dynamic.global.updateDynamic("activeRequests")(x.asInstanceOf[js.Any])
+    def activeRequests: js.Array[jqXHR[Any]] = js.native
+    inline def activeRequests_=(x: js.Array[jqXHR[Any]]): Unit = js.Dynamic.global.updateDynamic("activeRequests")(x.asInstanceOf[js.Any])
     
     /** failed data requests calls */
     @JSGlobal("failedRequestCount")

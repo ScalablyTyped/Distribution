@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.ReferenceSelector")
 @js.native
-class ReferenceSelector protected ()
+open class ReferenceSelector protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ReferenceSelector {
   def this(
     model: AbstractModel,

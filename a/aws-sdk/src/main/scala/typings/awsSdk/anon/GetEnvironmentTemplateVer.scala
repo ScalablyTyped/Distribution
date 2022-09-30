@@ -24,7 +24,7 @@ trait GetEnvironmentTemplateVer extends StObject {
   var minorVersion: TemplateVersionPart
   
   /**
-    * The name of the environment template a version of which you want to get detailed data for..
+    * The name of the environment template a version of which you want to get detailed data for.
     */
   var templateName: ResourceName
 }

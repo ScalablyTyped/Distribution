@@ -47,20 +47,12 @@ object activexExcelStrings {
   inline def AfterXmlImport: AfterXmlImport = "AfterXmlImport".asInstanceOf[AfterXmlImport]
   
   @js.native
-  sealed trait Apostrophe extends StObject
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  
-  @js.native
   sealed trait Arg1 extends StObject
   inline def Arg1: Arg1 = "Arg1".asInstanceOf[Arg1]
   
   @js.native
   sealed trait Arg2 extends StObject
   inline def Arg2: Arg2 = "Arg2".asInstanceOf[Arg2]
-  
-  @js.native
-  sealed trait Backslash extends StObject
-  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
   
   @js.native
   sealed trait BeforeClose extends StObject

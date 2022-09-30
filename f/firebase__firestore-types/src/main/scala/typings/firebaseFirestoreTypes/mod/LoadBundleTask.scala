@@ -10,7 +10,7 @@ trait LoadBundleTask
   extends StObject
      with PromiseLike[LoadBundleTaskProgress] {
   
-  def `catch`[R](onRejected: js.Function1[/* a */ js.Error, R | js.Thenable[R]]): js.Promise[R | LoadBundleTaskProgress] = js.native
+  def `catch`[R](onRejected: js.Function1[/* a */ js.Error, R | PromiseLike[R]]): js.Promise[R | LoadBundleTaskProgress] = js.native
   
   def onProgress(): Unit = js.native
   def onProgress(next: js.Function1[/* progress */ LoadBundleTaskProgress, Any]): Unit = js.native

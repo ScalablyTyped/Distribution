@@ -1,48 +1,48 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`-2`
-import typings.activexPowerpoint.activexPowerpointNumbers.`10`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11`
-import typings.activexPowerpoint.activexPowerpointNumbers.`12`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16`
-import typings.activexPowerpoint.activexPowerpointNumbers.`17`
-import typings.activexPowerpoint.activexPowerpointNumbers.`18`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3`
-import typings.activexPowerpoint.activexPowerpointNumbers.`4`
-import typings.activexPowerpoint.activexPowerpointNumbers.`5`
-import typings.activexPowerpoint.activexPowerpointNumbers.`6`
-import typings.activexPowerpoint.activexPowerpointNumbers.`7`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9`
+import typings.activexPowerpoint.activexPowerpointInts.`-2`
+import typings.activexPowerpoint.activexPowerpointInts.`10`
+import typings.activexPowerpoint.activexPowerpointInts.`11`
+import typings.activexPowerpoint.activexPowerpointInts.`12`
+import typings.activexPowerpoint.activexPowerpointInts.`13`
+import typings.activexPowerpoint.activexPowerpointInts.`14`
+import typings.activexPowerpoint.activexPowerpointInts.`15`
+import typings.activexPowerpoint.activexPowerpointInts.`16`
+import typings.activexPowerpoint.activexPowerpointInts.`17`
+import typings.activexPowerpoint.activexPowerpointInts.`18`
+import typings.activexPowerpoint.activexPowerpointInts.`1`
+import typings.activexPowerpoint.activexPowerpointInts.`2`
+import typings.activexPowerpoint.activexPowerpointInts.`3`
+import typings.activexPowerpoint.activexPowerpointInts.`4`
+import typings.activexPowerpoint.activexPowerpointInts.`5`
+import typings.activexPowerpoint.activexPowerpointInts.`6`
+import typings.activexPowerpoint.activexPowerpointInts.`7`
+import typings.activexPowerpoint.activexPowerpointInts.`8`
+import typings.activexPowerpoint.activexPowerpointInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-2`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`7`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`18`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`12`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`6`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`17`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`5`
+  - typings.activexPowerpoint.activexPowerpointInts.`9`
+  - typings.activexPowerpoint.activexPowerpointInts.`2`
+  - typings.activexPowerpoint.activexPowerpointInts.`3`
+  - typings.activexPowerpoint.activexPowerpointInts.`8`
+  - typings.activexPowerpoint.activexPowerpointInts.`16`
+  - typings.activexPowerpoint.activexPowerpointInts.`15`
+  - typings.activexPowerpoint.activexPowerpointInts.`14`
+  - typings.activexPowerpoint.activexPowerpointInts.`10`
+  - typings.activexPowerpoint.activexPowerpointInts.`-2`
+  - typings.activexPowerpoint.activexPowerpointInts.`7`
+  - typings.activexPowerpoint.activexPowerpointInts.`11`
+  - typings.activexPowerpoint.activexPowerpointInts.`18`
+  - typings.activexPowerpoint.activexPowerpointInts.`13`
+  - typings.activexPowerpoint.activexPowerpointInts.`4`
+  - typings.activexPowerpoint.activexPowerpointInts.`12`
+  - typings.activexPowerpoint.activexPowerpointInts.`1`
+  - typings.activexPowerpoint.activexPowerpointInts.`6`
+  - typings.activexPowerpoint.activexPowerpointInts.`17`
+  - typings.activexPowerpoint.activexPowerpointInts.`5`
 */
 trait PpPlaceholderType extends StObject
 object PpPlaceholderType {

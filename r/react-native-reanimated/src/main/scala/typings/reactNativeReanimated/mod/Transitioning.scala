@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-reanimated", "Transitioning")
 @js.native
-class Transitioning protected ()
-  extends Component[js.Object, js.Object, js.Any] {
+open class Transitioning protected ()
+  extends Component[js.Object, js.Object, Any] {
   def this(props: js.Object) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Object, context: js.Any) = this()
+  def this(props: js.Object, context: Any) = this()
 }
 /* static members */
 object Transitioning {

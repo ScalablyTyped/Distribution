@@ -2,6 +2,7 @@ package typings.wordpressComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClassAttributes
@@ -9,6 +10,7 @@ import typings.react.mod.ComponentType
 import typings.react.mod.DOMAttributes
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.email
+import typings.react.reactStrings.environment
 import typings.react.reactStrings.inherit
 import typings.react.reactStrings.no
 import typings.react.reactStrings.none
@@ -19,10 +21,15 @@ import typings.react.reactStrings.search
 import typings.react.reactStrings.tel
 import typings.react.reactStrings.text
 import typings.react.reactStrings.url
+import typings.react.reactStrings.user
 import typings.react.reactStrings.yes
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.wordpressComponents.buttonMod.Button.Props
+import typings.wordpressComponents.popoverMod.Popover.Position
+import typings.wordpressComponents.shortcutMod.Shortcut.ShortcutType
+import typings.wordpressComponents.wordpressComponentsStrings.left
+import typings.wordpressComponents.wordpressComponentsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,8 +52,8 @@ object buttonMod {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
-    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, nonce, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, label, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
-    - typings.react.mod.HTMLProps because var conflicts: className, disabled. Inlined  */ trait AnchorProps
+    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled, label. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, nonce, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
+    - typings.react.mod.HTMLProps because var conflicts: className, disabled, label. Inlined  */ trait AnchorProps
       extends StObject
          with BaseProps
          with Props
@@ -92,7 +99,7 @@ object buttonMod {
       
       var autoSave: js.UndefOr[String] = js.undefined
       
-      var capture: js.UndefOr[Boolean | String] = js.undefined
+      var capture: js.UndefOr[Boolean | user | environment] = js.undefined
       
       var cellPadding: js.UndefOr[Double | String] = js.undefined
       
@@ -141,7 +148,7 @@ object buttonMod {
       
       var dir: js.UndefOr[String] = js.undefined
       
-      var download: js.UndefOr[js.Any] = js.undefined
+      var download: js.UndefOr[Any] = js.undefined
       
       var draggable: js.UndefOr[Booleanish] = js.undefined
       
@@ -179,7 +186,7 @@ object buttonMod {
       
       var id: js.UndefOr[String] = js.undefined
       
-      var inlist: js.UndefOr[js.Any] = js.undefined
+      var inlist: js.UndefOr[Any] = js.undefined
       
       // Living Standard
       /**
@@ -211,8 +218,6 @@ object buttonMod {
       var keyType: js.UndefOr[String] = js.undefined
       
       var kind: js.UndefOr[String] = js.undefined
-      
-      var label: js.UndefOr[String] = js.undefined
       
       var lang: js.UndefOr[String] = js.undefined
       
@@ -287,7 +292,7 @@ object buttonMod {
       
       // <command>, <menuitem>
       // WAI-ARIA
-      var role: js.UndefOr[String] = js.undefined
+      var role: js.UndefOr[AriaRole] = js.undefined
       
       var rowSpan: js.UndefOr[Double] = js.undefined
       
@@ -438,7 +443,7 @@ object buttonMod {
         
         inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
         
-        inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+        inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
         inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
         
@@ -530,7 +535,7 @@ object buttonMod {
         
         inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
         
-        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
         
         inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
         
@@ -540,7 +545,7 @@ object buttonMod {
         
         inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
         
-        inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+        inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
         
         inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
         
@@ -616,7 +621,7 @@ object buttonMod {
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+        inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
         
         inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
         
@@ -663,10 +668,6 @@ object buttonMod {
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-        
-        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-        
-        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
         inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
         
@@ -808,7 +809,7 @@ object buttonMod {
         
         inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
         
-        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
         inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         
@@ -948,7 +949,7 @@ object buttonMod {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
         
         inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
         
@@ -970,9 +971,38 @@ object buttonMod {
     
     trait BaseProps extends StObject {
       
+      /**
+        * An optional additional class name to apply to the rendered button.
+        */
       var className: js.UndefOr[String] = js.undefined
       
+      /**
+        * Renders a disabled button.
+        */
       var disabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * The icon to render. Supported values are: Dashicons (specified as
+        * strings), functions, WPComponent instances and `null`.
+        * @defaultValue null
+        */
+      var icon: js.UndefOr[
+            /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['icon'] */ js.Any
+          ] = js.undefined
+      
+      /**
+        * The position of the icon within the button.
+        * @defaultValue `left`
+        */
+      var iconPosition: js.UndefOr[left | right] = js.undefined
+      
+      /**
+        * The size (width and height) of the icon.
+        * @defaultValue `20` (when using Dashicon), `24` otherwise
+        */
+      var iconSize: js.UndefOr[
+            /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['size'] */ js.Any
+          ] = js.undefined
       
       /**
         * Indicates activity while a action is being performed.
@@ -981,7 +1011,7 @@ object buttonMod {
       
       /**
         * Renders a default button style.
-        * @deprecated use `isSecondary`
+        * @deprecated use `variant="secondary"` instead.
         */
       var isDefault: js.UndefOr[Boolean] = js.undefined
       
@@ -992,22 +1022,25 @@ object buttonMod {
       var isDestructive: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * Increases the size of the button.
-        */
-      var isLarge: js.UndefOr[Boolean] = js.undefined
-      
-      /**
         * Renders a button with an anchor style.
+        * @deprecated use `variant="link"` instead.
         */
       var isLink: js.UndefOr[Boolean] = js.undefined
       
       /**
+        * Renders a toggled button style.
+        */
+      var isPressed: js.UndefOr[Boolean] = js.undefined
+      
+      /**
         * Renders a primary button style.
+        * @deprecated use `variant="primary"` instead.
         */
       var isPrimary: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Renders a default button style.
+        * @deprecated use `variant="secondary"` instead.
         */
       var isSecondary: js.UndefOr[Boolean] = js.undefined
       
@@ -1018,13 +1051,52 @@ object buttonMod {
       
       /**
         * Renders a text-based button style.
+        * @deprecated use `variant="tertiary"` instead.
         */
       var isTertiary: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * Renders a toggled button style.
+        * @deprecated Use `isPressed` instead.
         */
-      var isToggled: js.UndefOr[Boolean] = js.undefined
+      var isToggled: js.UndefOr[scala.Nothing] = js.undefined
+      
+      /**
+        * Used as the Tooltip text and `aria-label` if one is not provided.
+        */
+      var label: js.UndefOr[String] = js.undefined
+      
+      /**
+        * If provided with `showTooltip`, appends the Shortcut label to the
+        * tooltip content. If an `Object` is provided, it should contain
+        * `display` and `ariaLabel` keys.
+        */
+      var shortcut: js.UndefOr[ShortcutType] = js.undefined
+      
+      /**
+        * Renders a with the `label` prop when `true`.
+        * @defaultValue false
+        */
+      var showTooltip: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * If provided, displays the given text inside the button. If the button
+        * contains children elements, the text is displayed before them.
+        */
+      var text: js.UndefOr[String] = js.undefined
+      
+      /**
+        * The direction in which the tooltip should open relative to its
+        * parent node.
+        */
+      var tooltipPosition: js.UndefOr[Position] = js.undefined
+      
+      /**
+        * Specifies the button's style. The accepted values are 'primary'
+        * (the primary button styles), 'secondary' (the default button
+        * styles), 'tertiary' (the text-based button styles), and 'link'
+        * (the link button styles).
+        */
+      var variant: js.UndefOr[ButtonVariant] = js.undefined
     }
     object BaseProps {
       
@@ -1043,6 +1115,22 @@ object buttonMod {
         
         inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
+        inline def setIcon(
+          value: /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['icon'] */ js.Any
+        ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        
+        inline def setIconPosition(value: left | right): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+        
+        inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
+        
+        inline def setIconSize(
+          value: /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['size'] */ js.Any
+        ): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+        
+        inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+        
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        
         inline def setIsBusy(value: Boolean): Self = StObject.set(x, "isBusy", value.asInstanceOf[js.Any])
         
         inline def setIsBusyUndefined: Self = StObject.set(x, "isBusy", js.undefined)
@@ -1055,13 +1143,13 @@ object buttonMod {
         
         inline def setIsDestructiveUndefined: Self = StObject.set(x, "isDestructive", js.undefined)
         
-        inline def setIsLarge(value: Boolean): Self = StObject.set(x, "isLarge", value.asInstanceOf[js.Any])
-        
-        inline def setIsLargeUndefined: Self = StObject.set(x, "isLarge", js.undefined)
-        
         inline def setIsLink(value: Boolean): Self = StObject.set(x, "isLink", value.asInstanceOf[js.Any])
         
         inline def setIsLinkUndefined: Self = StObject.set(x, "isLink", js.undefined)
+        
+        inline def setIsPressed(value: Boolean): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
+        
+        inline def setIsPressedUndefined: Self = StObject.set(x, "isPressed", js.undefined)
         
         inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
         
@@ -1079,16 +1167,36 @@ object buttonMod {
         
         inline def setIsTertiaryUndefined: Self = StObject.set(x, "isTertiary", js.undefined)
         
-        inline def setIsToggled(value: Boolean): Self = StObject.set(x, "isToggled", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        inline def setIsToggledUndefined: Self = StObject.set(x, "isToggled", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        
+        inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+        
+        inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+        
+        inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+        
+        inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+        
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        
+        inline def setTooltipPosition(value: Position): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+        
+        inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+        
+        inline def setVariant(value: ButtonVariant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+        
+        inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       }
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
-    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, nonce, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, label, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
-    - typings.react.mod.HTMLProps because var conflicts: className, disabled. Inlined  */ trait ButtonProps
+    - typings.react.mod.AllHTMLAttributes because var conflicts: className, disabled, label. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, nonce, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
+    - typings.react.mod.HTMLProps because var conflicts: className, disabled, label. Inlined  */ trait ButtonProps
       extends StObject
          with BaseProps
          with Props
@@ -1134,7 +1242,7 @@ object buttonMod {
       
       var autoSave: js.UndefOr[String] = js.undefined
       
-      var capture: js.UndefOr[Boolean | String] = js.undefined
+      var capture: js.UndefOr[Boolean | user | environment] = js.undefined
       
       var cellPadding: js.UndefOr[Double | String] = js.undefined
       
@@ -1183,7 +1291,7 @@ object buttonMod {
       
       var dir: js.UndefOr[String] = js.undefined
       
-      var download: js.UndefOr[js.Any] = js.undefined
+      var download: js.UndefOr[Any] = js.undefined
       
       var draggable: js.UndefOr[Booleanish] = js.undefined
       
@@ -1221,7 +1329,7 @@ object buttonMod {
       
       var id: js.UndefOr[String] = js.undefined
       
-      var inlist: js.UndefOr[js.Any] = js.undefined
+      var inlist: js.UndefOr[Any] = js.undefined
       
       // Living Standard
       /**
@@ -1253,8 +1361,6 @@ object buttonMod {
       var keyType: js.UndefOr[String] = js.undefined
       
       var kind: js.UndefOr[String] = js.undefined
-      
-      var label: js.UndefOr[String] = js.undefined
       
       var lang: js.UndefOr[String] = js.undefined
       
@@ -1329,7 +1435,7 @@ object buttonMod {
       
       // <command>, <menuitem>
       // WAI-ARIA
-      var role: js.UndefOr[String] = js.undefined
+      var role: js.UndefOr[AriaRole] = js.undefined
       
       var rowSpan: js.UndefOr[Double] = js.undefined
       
@@ -1480,7 +1586,7 @@ object buttonMod {
         
         inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
         
-        inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+        inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
         inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
         
@@ -1572,7 +1678,7 @@ object buttonMod {
         
         inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
         
-        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
         
         inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
         
@@ -1582,7 +1688,7 @@ object buttonMod {
         
         inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
         
-        inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+        inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
         
         inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
         
@@ -1658,7 +1764,7 @@ object buttonMod {
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+        inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
         
         inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
         
@@ -1705,10 +1811,6 @@ object buttonMod {
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-        
-        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-        
-        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
         inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
         
@@ -1850,7 +1952,7 @@ object buttonMod {
         
         inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
         
-        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
         inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         
@@ -1990,7 +2092,7 @@ object buttonMod {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
         
         inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
         
@@ -2008,6 +2110,24 @@ object buttonMod {
         
         inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
       }
+    }
+    
+    /* Rewritten from type alias, can be one of: 
+      - typings.wordpressComponents.wordpressComponentsStrings.primary
+      - typings.wordpressComponents.wordpressComponentsStrings.secondary
+      - typings.wordpressComponents.wordpressComponentsStrings.tertiary
+      - typings.wordpressComponents.wordpressComponentsStrings.link
+    */
+    trait ButtonVariant extends StObject
+    object ButtonVariant {
+      
+      inline def link: typings.wordpressComponents.wordpressComponentsStrings.link = "link".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.link]
+      
+      inline def primary: typings.wordpressComponents.wordpressComponentsStrings.primary = "primary".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.primary]
+      
+      inline def secondary: typings.wordpressComponents.wordpressComponentsStrings.secondary = "secondary".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.secondary]
+      
+      inline def tertiary: typings.wordpressComponents.wordpressComponentsStrings.tertiary = "tertiary".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.tertiary]
     }
     
     /* Rewritten from type alias, can be one of: 

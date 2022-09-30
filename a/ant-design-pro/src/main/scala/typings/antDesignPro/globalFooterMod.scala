@@ -12,10 +12,9 @@ object globalFooterMod {
   
   @JSImport("ant-design-pro/lib/GlobalFooter", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[GlobalFooterProps, js.Any, js.Any]
+  open class default () extends Component[GlobalFooterProps, Any, Any]
   
-  type GlobalFooter = Component[GlobalFooterProps, js.Any, js.Any]
+  type GlobalFooter = Component[GlobalFooterProps, Any, Any]
   
   trait GlobalFooterProps extends StObject {
     
@@ -48,7 +47,7 @@ object globalFooterMod {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

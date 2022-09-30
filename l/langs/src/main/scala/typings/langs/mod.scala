@@ -73,9 +73,9 @@ object mod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.langs.langsNumbers.`1`
-    - typings.langs.langsNumbers.`2`
-    - typings.langs.langsNumbers.`3`
+    - typings.langs.langsInts.`1`
+    - typings.langs.langsInts.`2`
+    - typings.langs.langsInts.`3`
     - typings.langs.langsStrings.`1`
     - typings.langs.langsStrings.`2`
     - typings.langs.langsStrings.`2T`
@@ -85,15 +85,15 @@ object mod extends Shortcut {
   trait Type extends StObject
   object Type {
     
-    inline def `1`: typings.langs.langsNumbers.`1` = 1.asInstanceOf[typings.langs.langsNumbers.`1`]
+    inline def `1`: typings.langs.langsInts.`1` = 1.asInstanceOf[typings.langs.langsInts.`1`]
     
-    inline def `2`: typings.langs.langsNumbers.`2` = 2.asInstanceOf[typings.langs.langsNumbers.`2`]
+    inline def `2`: typings.langs.langsInts.`2` = 2.asInstanceOf[typings.langs.langsInts.`2`]
     
     inline def `2B`: typings.langs.langsStrings.`2B` = "2B".asInstanceOf[typings.langs.langsStrings.`2B`]
     
     inline def `2T`: typings.langs.langsStrings.`2T` = "2T".asInstanceOf[typings.langs.langsStrings.`2T`]
     
-    inline def `3`: typings.langs.langsNumbers.`3` = 3.asInstanceOf[typings.langs.langsNumbers.`3`]
+    inline def `3`: typings.langs.langsInts.`3` = 3.asInstanceOf[typings.langs.langsInts.`3`]
   }
   
   type _To = Langs

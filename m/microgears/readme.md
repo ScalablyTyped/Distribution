@@ -10,10 +10,10 @@ super lightweight micro framework for reactive services
 | ------------------ | :-------------: |
 | Full name          | microgears |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1506 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 105.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/marcusdb/microGears#readme)

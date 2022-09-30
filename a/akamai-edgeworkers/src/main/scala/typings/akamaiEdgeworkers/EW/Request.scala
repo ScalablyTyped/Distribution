@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Request extends StObject {
   
   /**
+    * The body associated with the incoming request.
+    */
+  val body: ReadableStreamEW[Any]
+  
+  /**
     * The cpcode used for reporting.
     */
   val cpCode: Double
@@ -60,6 +65,7 @@ trait Request extends StObject {
 object Request {
   
   inline def apply(
+    body: ReadableStreamEW[Any],
     cpCode: Double,
     host: String,
     method: String,
@@ -68,11 +74,13 @@ object Request {
     scheme: String,
     url: String
   ): Request = {
-    val __obj = js.Dynamic.literal(cpCode = cpCode.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cpCode = cpCode.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
   
   extension [Self <: Request](x: Self) {
+    
+    inline def setBody(value: ReadableStreamEW[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setCpCode(value: Double): Self = StObject.set(x, "cpCode", value.asInstanceOf[js.Any])
     

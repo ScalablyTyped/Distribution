@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/scroll-container relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ScrollContainer")
 @js.native
-class ScrollContainer protected () extends Widget {
+open class ScrollContainer protected () extends Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -45,6 +45,12 @@ class ScrollContainer protected () extends Widget {
   def left: ScrollContainerRegion | Null = js.native
   def left_=(newValue: ScrollContainerRegion | Null): Unit = js.native
   
+  /**
+    * In version 9.11.0: introduced
+    */
+  def nativeHideScrollbars: Boolean = js.native
+  def nativeHideScrollbars_=(newValue: Boolean): Unit = js.native
+  
   def right: ScrollContainerRegion | Null = js.native
   def right_=(newValue: ScrollContainerRegion | Null): Unit = js.native
   
@@ -63,7 +69,7 @@ class ScrollContainer protected () extends Widget {
 }
 object ScrollContainer {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ScrollContainer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -637,13 +643,13 @@ object ScrollContainer {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): ScrollContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ScrollContainer]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ScrollContainer.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollContainer.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ScrollContainer.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

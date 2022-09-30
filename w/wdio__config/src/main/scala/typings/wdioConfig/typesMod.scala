@@ -1,50 +1,57 @@
 package typings.wdioConfig
 
-import org.scalablytyped.runtime.TopLevel
-import typings.webdriver.WebDriver.DesiredCapabilities
-import typings.webdriver.WebDriver.W3CCapabilities
+import typings.wdioConfig.anon.Paths
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type Capabilities = (js.Array[DesiredCapabilities | W3CCapabilities]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MultiRemoteCapabilities */ js.Any)
-  
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Config * / any, 'capabilities' | keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Hooks * / any> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Config * / any[P]}
-  - Dropped {[ k in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.HookFunctions * / any ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.HookFunctions * / any[k] | std.Array<std.NonNullable</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.HookFunctions * / any[k]>>} */ trait ConfigOptions extends StObject {
+  @js.native
+  trait ModuleRequireService extends StObject {
     
-    var capabilities: js.UndefOr[Capabilities] = js.undefined
+    def require[T](module: String): T = js.native
     
-    var specFileRetryAttempts: js.UndefOr[Double] = js.undefined
-  }
-  object ConfigOptions {
-    
-    inline def apply(): ConfigOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ConfigOptions]
-    }
-    
-    extension [Self <: ConfigOptions](x: Self) {
-      
-      inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
-      
-      inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
-      
-      inline def setCapabilitiesVarargs(value: (DesiredCapabilities | W3CCapabilities)*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
-      
-      inline def setSpecFileRetryAttempts(value: Double): Self = StObject.set(x, "specFileRetryAttempts", value.asInstanceOf[js.Any])
-      
-      inline def setSpecFileRetryAttemptsUndefined: Self = StObject.set(x, "specFileRetryAttempts", js.undefined)
-    }
+    def resolve(request: String): String = js.native
+    def resolve(request: String, options: Paths): String = js.native
   }
   
-  type DefaultOptions[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof T ]: {  type :'string' | 'number' | 'object' | 'boolean' | 'function',   default :T[k] | undefined,   required :boolean | undefined,   validate :(option : k): void | undefined,   match :std.RegExp | undefined}}
-    */ typings.wdioConfig.wdioConfigStrings.DefaultOptions & TopLevel[T]
-  
-  type Hooks = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.HookFunctions * / any ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.HookFunctions * / any[k] | std.Array<std.NonNullable</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.HookFunctions * / any[k]>>}
-    */ typings.wdioConfig.wdioConfigStrings.Hooks & TopLevel[js.Any]
+  trait PathService extends StObject {
+    
+    def ensureAbsolutePath(path: String): String
+    
+    def getcwd(): String
+    
+    def glob(pattern: String): js.Array[String]
+    
+    def isFile(path: String): Boolean
+    
+    def loadFile[T](path: String): T
+  }
+  object PathService {
+    
+    inline def apply(
+      ensureAbsolutePath: String => String,
+      getcwd: () => String,
+      glob: String => js.Array[String],
+      isFile: String => Boolean,
+      loadFile: String => Any
+    ): PathService = {
+      val __obj = js.Dynamic.literal(ensureAbsolutePath = js.Any.fromFunction1(ensureAbsolutePath), getcwd = js.Any.fromFunction0(getcwd), glob = js.Any.fromFunction1(glob), isFile = js.Any.fromFunction1(isFile), loadFile = js.Any.fromFunction1(loadFile))
+      __obj.asInstanceOf[PathService]
+    }
+    
+    extension [Self <: PathService](x: Self) {
+      
+      inline def setEnsureAbsolutePath(value: String => String): Self = StObject.set(x, "ensureAbsolutePath", js.Any.fromFunction1(value))
+      
+      inline def setGetcwd(value: () => String): Self = StObject.set(x, "getcwd", js.Any.fromFunction0(value))
+      
+      inline def setGlob(value: String => js.Array[String]): Self = StObject.set(x, "glob", js.Any.fromFunction1(value))
+      
+      inline def setIsFile(value: String => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction1(value))
+      
+      inline def setLoadFile(value: String => Any): Self = StObject.set(x, "loadFile", js.Any.fromFunction1(value))
+    }
+  }
 }

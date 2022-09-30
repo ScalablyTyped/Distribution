@@ -6,7 +6,6 @@ import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.gaxMod.CallSettings
 import typings.googleGax.streamDescriptorMod.StreamDescriptor
 import typings.googleGax.streamingMod.StreamProxy
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object streamingApiCallerMod {
   
   @JSImport("google-gax/build/src/streamingCalls/streamingApiCaller", "StreamingApiCaller")
   @js.native
-  class StreamingApiCaller protected ()
+  open class StreamingApiCaller protected ()
     extends StObject
        with APICaller {
     /**
@@ -30,6 +29,6 @@ object streamingApiCallerMod {
     
     var descriptor: StreamDescriptor = js.native
     
-    def fail(stream: CancellableStream, err: Error): Unit = js.native
+    def fail(stream: CancellableStream, err: js.Error): Unit = js.native
   }
 }

@@ -1,26 +1,26 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4115`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4118`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4119`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4142`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1`
-import typings.activexPowerpoint.activexPowerpointNumbers.`4`
-import typings.activexPowerpoint.activexPowerpointNumbers.`5`
+import typings.activexPowerpoint.activexPowerpointInts.`-4115`
+import typings.activexPowerpoint.activexPowerpointInts.`-4118`
+import typings.activexPowerpoint.activexPowerpointInts.`-4119`
+import typings.activexPowerpoint.activexPowerpointInts.`-4142`
+import typings.activexPowerpoint.activexPowerpointInts.`13`
+import typings.activexPowerpoint.activexPowerpointInts.`1`
+import typings.activexPowerpoint.activexPowerpointInts.`4`
+import typings.activexPowerpoint.activexPowerpointInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4115`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4118`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4119`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4142`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13`
+  - typings.activexPowerpoint.activexPowerpointInts.`1`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4115`
+  - typings.activexPowerpoint.activexPowerpointInts.`4`
+  - typings.activexPowerpoint.activexPowerpointInts.`5`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4118`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4119`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4142`
+  - typings.activexPowerpoint.activexPowerpointInts.`13`
 */
 trait XlLineStyle extends StObject
 object XlLineStyle {

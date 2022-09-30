@@ -62,7 +62,7 @@ trait ListItem[T]
   def get_item[K /* <: /* keyof T */ String */](fieldInternalName: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any = js.native
   
   /** Get the list in which the item resides. */
-  def get_parentList(): List[Any] = js.native
+  def get_parentList(): typings.sharepoint.SP.List[Any] = js.native
   
   /** Sets the value of the field for the list item based on an implementation specific transformation of the value. */
   def parseAndSetFieldValue(fieldInternalName: String, value: String): Unit = js.native

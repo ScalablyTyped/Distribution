@@ -11,9 +11,14 @@ import typings.leaflet.mod.LatLngExpression
 import typings.leaflet.mod.Layer
 import typings.leaflet.mod.LayerGroup_
 import typings.leaflet.mod.LayerOptions
+import typings.leaflet.mod.LeafletEvent
 import typings.leaflet.mod.MarkerOptions
 import typings.leaflet.mod.Marker_
+import typings.leaflet.mod.Point_
 import typings.leaflet.mod.PolylineOptions
+import typings.leafletMarkercluster.leafletMarkerclusterStrings.animationend
+import typings.leafletMarkercluster.leafletMarkerclusterStrings.spiderfied
+import typings.leafletMarkercluster.leafletMarkerclusterStrings.unspiderfied
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,15 +32,14 @@ object mod {
   
   @JSImport("leaflet", "MarkerCluster")
   @js.native
-  class MarkerCluster protected ()
-    extends Marker_[js.Any] {
+  open class MarkerCluster protected () extends Marker_[Any] {
     def this(latlng: LatLngExpression) = this()
     def this(latlng: LatLngExpression, options: MarkerOptions) = this()
     
     /*
       * Recursively retrieve all child markers of this cluster.
       */
-    def getAllChildMarkers(): js.Array[Marker_[js.Any]] = js.native
+    def getAllChildMarkers(): js.Array[Marker_[Any]] = js.native
     
     /*
       * Returns the cluster bounds.
@@ -48,6 +52,16 @@ object mod {
     def getChildCount(): Double = js.native
     
     /*
+      * Spiderfies the child markers of this cluster.
+      */
+    def spiderfy(): Unit = js.native
+    
+    /*
+      * Unspiderfies a cluster (opposite of spiderfy).
+      */
+    def unspiderfy(): Unit = js.native
+    
+    /*
       * Zoom to the minimum of showing all of the child markers, or the extents of this cluster.
       */
     def zoomToBounds(): Unit = js.native
@@ -56,8 +70,7 @@ object mod {
   
   @JSImport("leaflet", "MarkerClusterGroup")
   @js.native
-  class MarkerClusterGroup_ ()
-    extends FeatureGroup_[js.Any] {
+  open class MarkerClusterGroup_ () extends FeatureGroup_[Any] {
     def this(options: MarkerClusterGroupOptions) = this()
     
     /*
@@ -70,7 +83,7 @@ object mod {
     /*
       * Returns the array of total markers contained within that cluster.
       */
-    def getAllChildMarkers(): js.Array[Marker_[js.Any]] = js.native
+    def getAllChildMarkers(): js.Array[Marker_[Any]] = js.native
     
     /*
       * Returns the total number of markers contained within that cluster.
@@ -81,17 +94,17 @@ object mod {
       * If you have a marker in your MarkerClusterGroup and you want to get the visible
       * parent of it
       */
-    def getVisibleParent(marker: Marker_[js.Any]): Marker_[js.Any] = js.native
+    def getVisibleParent(marker: Marker_[Any]): Marker_[Any] = js.native
     
     /*
       * If you have customized the clusters icon to use some data from the contained markers,
       * and later that data changes, use this method to force a refresh of the cluster icons.
       */
     def refreshClusters(): this.type = js.native
-    def refreshClusters(clusters: js.Array[Marker_[js.Any]]): this.type = js.native
+    def refreshClusters(clusters: js.Array[Marker_[Any]]): this.type = js.native
     def refreshClusters(clusters: StringDictionary[Layer]): this.type = js.native
-    def refreshClusters(clusters: LayerGroup_[js.Any]): this.type = js.native
-    def refreshClusters(clusters: Marker_[js.Any]): this.type = js.native
+    def refreshClusters(clusters: LayerGroup_[Any]): this.type = js.native
+    def refreshClusters(clusters: Marker_[Any]): this.type = js.native
     
     def removeLayers(layers: js.Array[Layer]): this.type = js.native
     
@@ -107,6 +120,139 @@ object mod {
     * Create a marker cluster group, optionally given marker cluster group options.
     */
   inline def markerClusterGroup(options: js.UndefOr[MarkerClusterGroupOptions]): MarkerClusterGroup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("markerClusterGroup")(options.asInstanceOf[js.Any]).asInstanceOf[MarkerClusterGroup_]
+  
+  /*
+    * Cluster-related handler functions.
+    */
+  type AnimationEndEventHandlerFn = js.Function1[/* event */ LeafletEvent, Unit]
+  
+  /*
+    * Extend Evented to include cluster events.
+    */
+  @js.native
+  trait Evented extends StObject {
+    
+    def addEventListener(`type`: spiderfied | unspiderfied): this.type = js.native
+    def addEventListener(`type`: spiderfied | unspiderfied, fn: Unit, context: Any): this.type = js.native
+    def addEventListener(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn): this.type = js.native
+    def addEventListener(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn, context: Any): this.type = js.native
+    @JSName("addEventListener")
+    def addEventListener_animationend(`type`: animationend): this.type = js.native
+    @JSName("addEventListener")
+    def addEventListener_animationend(`type`: animationend, fn: Unit, context: Any): this.type = js.native
+    @JSName("addEventListener")
+    def addEventListener_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn): this.type = js.native
+    @JSName("addEventListener")
+    def addEventListener_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn, context: Any): this.type = js.native
+    
+    def addOneTimeEventListener(`type`: spiderfied | unspiderfied): this.type = js.native
+    def addOneTimeEventListener(`type`: spiderfied | unspiderfied, fn: Unit, context: Any): this.type = js.native
+    def addOneTimeEventListener(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn): this.type = js.native
+    def addOneTimeEventListener(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn, context: Any): this.type = js.native
+    @JSName("addOneTimeEventListener")
+    def addOneTimeEventListener_animationend(`type`: animationend): this.type = js.native
+    @JSName("addOneTimeEventListener")
+    def addOneTimeEventListener_animationend(`type`: animationend, fn: Unit, context: Any): this.type = js.native
+    @JSName("addOneTimeEventListener")
+    def addOneTimeEventListener_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn): this.type = js.native
+    @JSName("addOneTimeEventListener")
+    def addOneTimeEventListener_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn, context: Any): this.type = js.native
+    
+    def off(`type`: spiderfied | unspiderfied): this.type = js.native
+    def off(`type`: spiderfied | unspiderfied, fn: Unit, context: Any): this.type = js.native
+    def off(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn): this.type = js.native
+    def off(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn, context: Any): this.type = js.native
+    @JSName("off")
+    def off_animationend(`type`: animationend): this.type = js.native
+    @JSName("off")
+    def off_animationend(`type`: animationend, fn: Unit, context: Any): this.type = js.native
+    @JSName("off")
+    def off_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn): this.type = js.native
+    @JSName("off")
+    def off_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn, context: Any): this.type = js.native
+    
+    def on(`type`: spiderfied | unspiderfied): this.type = js.native
+    def on(`type`: spiderfied | unspiderfied, fn: Unit, context: Any): this.type = js.native
+    def on(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn): this.type = js.native
+    def on(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn, context: Any): this.type = js.native
+    @JSName("on")
+    def on_animationend(`type`: animationend): this.type = js.native
+    @JSName("on")
+    def on_animationend(`type`: animationend, fn: Unit, context: Any): this.type = js.native
+    @JSName("on")
+    def on_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn): this.type = js.native
+    @JSName("on")
+    def on_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn, context: Any): this.type = js.native
+    
+    def once(`type`: spiderfied | unspiderfied): this.type = js.native
+    def once(`type`: spiderfied | unspiderfied, fn: Unit, context: Any): this.type = js.native
+    def once(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn): this.type = js.native
+    def once(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn, context: Any): this.type = js.native
+    @JSName("once")
+    def once_animationend(`type`: animationend): this.type = js.native
+    @JSName("once")
+    def once_animationend(`type`: animationend, fn: Unit, context: Any): this.type = js.native
+    @JSName("once")
+    def once_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn): this.type = js.native
+    @JSName("once")
+    def once_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn, context: Any): this.type = js.native
+    
+    def removeEventListener(`type`: spiderfied | unspiderfied): this.type = js.native
+    def removeEventListener(`type`: spiderfied | unspiderfied, fn: Unit, context: Any): this.type = js.native
+    def removeEventListener(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn): this.type = js.native
+    def removeEventListener(`type`: spiderfied | unspiderfied, fn: SpiderfyEventHandlerFn, context: Any): this.type = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_animationend(`type`: animationend): this.type = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_animationend(`type`: animationend, fn: Unit, context: Any): this.type = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn): this.type = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_animationend(`type`: animationend, fn: AnimationEndEventHandlerFn, context: Any): this.type = js.native
+  }
+  
+  /*
+    * Extend existing event handler function map to include cluster events.
+    */
+  trait LeafletEventHandlerFnMap extends StObject {
+    
+    /*
+      * Fires when marker clustering/unclustering animation has completed.
+      */
+    var animationend: js.UndefOr[AnimationEndEventHandlerFn] = js.undefined
+    
+    /*
+      * Fires when overlapping markers get spiderified.
+      */
+    var spiderfied: js.UndefOr[SpiderfyEventHandlerFn] = js.undefined
+    
+    /*
+      * Fires when overlapping markers get unspiderified.
+      */
+    var unspiderfied: js.UndefOr[SpiderfyEventHandlerFn] = js.undefined
+  }
+  object LeafletEventHandlerFnMap {
+    
+    inline def apply(): LeafletEventHandlerFnMap = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LeafletEventHandlerFnMap]
+    }
+    
+    extension [Self <: LeafletEventHandlerFnMap](x: Self) {
+      
+      inline def setAnimationend(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "animationend", js.Any.fromFunction1(value))
+      
+      inline def setAnimationendUndefined: Self = StObject.set(x, "animationend", js.undefined)
+      
+      inline def setSpiderfied(value: /* event */ MarkerClusterSpiderfyEvent => Unit): Self = StObject.set(x, "spiderfied", js.Any.fromFunction1(value))
+      
+      inline def setSpiderfiedUndefined: Self = StObject.set(x, "spiderfied", js.undefined)
+      
+      inline def setUnspiderfied(value: /* event */ MarkerClusterSpiderfyEvent => Unit): Self = StObject.set(x, "unspiderfied", js.Any.fromFunction1(value))
+      
+      inline def setUnspiderfiedUndefined: Self = StObject.set(x, "unspiderfied", js.undefined)
+    }
+  }
   
   trait MarkerClusterGroupOptions
     extends StObject
@@ -154,6 +300,12 @@ object mod {
       * Boolean to split the addLayers processing in to small intervals so that the page does not freeze.
       */
     var chunkedLoading: js.UndefOr[Boolean] = js.undefined
+    
+    /*
+      * Map pane where the cluster icons will be added.
+      * Defaults to L.Marker's default (currently 'markerPane')
+      */
+    var clusterPane: js.UndefOr[String] = js.undefined
     
     /*
       * If set, at this zoom level and below markers will not be clustered. This defaults to disabled.
@@ -207,10 +359,21 @@ object mod {
     var spiderfyDistanceMultiplier: js.UndefOr[Double] = js.undefined
     
     /*
+      * When you click a cluster at any zoom level we spiderfy it
+      * so you can see all of its markers.
+      */
+    var spiderfyOnEveryZoom: js.UndefOr[Boolean] = js.undefined
+    
+    /*
       * When you click a cluster at the bottom zoom level we spiderfy it
       * so you can see all of its markers.
       */
     var spiderfyOnMaxZoom: js.UndefOr[Boolean] = js.undefined
+    
+    /*
+      * Custom function to calculate spiderfy shape positions
+      */
+    var spiderfyShapePositions: js.UndefOr[js.Function2[/* count */ Double, /* centerPoint */ Point_, js.Array[Point_]]] = js.undefined
     
     /*
       * When you click a cluster we zoom to its bounds.
@@ -252,6 +415,10 @@ object mod {
       
       inline def setChunkedLoadingUndefined: Self = StObject.set(x, "chunkedLoading", js.undefined)
       
+      inline def setClusterPane(value: String): Self = StObject.set(x, "clusterPane", value.asInstanceOf[js.Any])
+      
+      inline def setClusterPaneUndefined: Self = StObject.set(x, "clusterPane", js.undefined)
+      
       inline def setDisableClusteringAtZoom(value: Double): Self = StObject.set(x, "disableClusteringAtZoom", value.asInstanceOf[js.Any])
       
       inline def setDisableClusteringAtZoomUndefined: Self = StObject.set(x, "disableClusteringAtZoom", js.undefined)
@@ -290,13 +457,67 @@ object mod {
       
       inline def setSpiderfyDistanceMultiplierUndefined: Self = StObject.set(x, "spiderfyDistanceMultiplier", js.undefined)
       
+      inline def setSpiderfyOnEveryZoom(value: Boolean): Self = StObject.set(x, "spiderfyOnEveryZoom", value.asInstanceOf[js.Any])
+      
+      inline def setSpiderfyOnEveryZoomUndefined: Self = StObject.set(x, "spiderfyOnEveryZoom", js.undefined)
+      
       inline def setSpiderfyOnMaxZoom(value: Boolean): Self = StObject.set(x, "spiderfyOnMaxZoom", value.asInstanceOf[js.Any])
       
       inline def setSpiderfyOnMaxZoomUndefined: Self = StObject.set(x, "spiderfyOnMaxZoom", js.undefined)
+      
+      inline def setSpiderfyShapePositions(value: (/* count */ Double, /* centerPoint */ Point_) => js.Array[Point_]): Self = StObject.set(x, "spiderfyShapePositions", js.Any.fromFunction2(value))
+      
+      inline def setSpiderfyShapePositionsUndefined: Self = StObject.set(x, "spiderfyShapePositions", js.undefined)
       
       inline def setZoomToBoundsOnClick(value: Boolean): Self = StObject.set(x, "zoomToBoundsOnClick", value.asInstanceOf[js.Any])
       
       inline def setZoomToBoundsOnClickUndefined: Self = StObject.set(x, "zoomToBoundsOnClick", js.undefined)
     }
   }
+  
+  /*
+    * Event fired on spiderfy cluster actions.
+    */
+  trait MarkerClusterSpiderfyEvent
+    extends StObject
+       with LeafletEvent {
+    
+    /*
+      * The cluster that fired the event.
+      */
+    var cluster: MarkerCluster
+    
+    /*
+      * The markers in the cluster that fired the event.
+      */
+    var markers: js.Array[Marker_[Any]]
+  }
+  object MarkerClusterSpiderfyEvent {
+    
+    inline def apply(
+      cluster: MarkerCluster,
+      layer: Any,
+      markers: js.Array[Marker_[Any]],
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
+      `type`: String
+    ): MarkerClusterSpiderfyEvent = {
+      val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], markers = markers.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MarkerClusterSpiderfyEvent]
+    }
+    
+    extension [Self <: MarkerClusterSpiderfyEvent](x: Self) {
+      
+      inline def setCluster(value: MarkerCluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      
+      inline def setMarkers(value: js.Array[Marker_[Any]]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      
+      inline def setMarkersVarargs(value: Marker_[Any]*): Self = StObject.set(x, "markers", js.Array(value*))
+    }
+  }
+  
+  type SpiderfyEventHandlerFn = js.Function1[/* event */ MarkerClusterSpiderfyEvent, Unit]
 }

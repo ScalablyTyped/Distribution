@@ -1,11 +1,11 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdNumbers.`1`
-import typings.antd.antdNumbers.`2`
-import typings.antd.antdNumbers.`3`
-import typings.antd.antdNumbers.`4`
-import typings.antd.antdNumbers.`5`
+import typings.antd.antdInts.`1`
+import typings.antd.antdInts.`2`
+import typings.antd.antdInts.`3`
+import typings.antd.antdInts.`4`
+import typings.antd.antdInts.`5`
 import typings.antd.baseMod.BaseType
 import typings.antd.baseMod.CopyConfig
 import typings.antd.baseMod.EditConfig

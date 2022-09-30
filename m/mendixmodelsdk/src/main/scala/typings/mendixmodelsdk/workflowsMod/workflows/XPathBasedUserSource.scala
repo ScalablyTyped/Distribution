@@ -12,15 +12,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.XPathBasedUserSource")
+@JSImport("mendixmodelsdk/src/gen/workflows", "workflows.XPathBasedUserSource")
 @js.native
-class XPathBasedUserSource protected () extends UserSource {
+open class XPathBasedUserSource protected () extends UserSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,7 +35,7 @@ class XPathBasedUserSource protected () extends UserSource {
 }
 object XPathBasedUserSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.XPathBasedUserSource")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.XPathBasedUserSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -56,19 +53,19 @@ object XPathBasedUserSource {
     * of the parent UserTask element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: UserTask): XPathBasedUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[XPathBasedUserSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.XPathBasedUserSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.XPathBasedUserSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.XPathBasedUserSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.XPathBasedUserSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

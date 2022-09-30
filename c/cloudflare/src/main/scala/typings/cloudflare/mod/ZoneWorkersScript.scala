@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ZoneWorkersScript extends StObject {
   
-  def del(): ResponseObjectPromise = js.native
+  def del(): js.Promise[js.Object] = js.native
   
-  def read(zone_id: String): ResponseObjectPromise = js.native
-  def read(zone_id: String, script: String): ResponseObjectPromise = js.native
+  def read(zone_id: String): js.Promise[js.Object] = js.native
+  def read(zone_id: String, script: String): js.Promise[js.Object] = js.native
 }

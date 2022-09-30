@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,14 +23,13 @@ object authorizedMod {
   
   @JSImport("ant-design-pro/lib/Authorized", "Authorized")
   @js.native
-  class Authorized protected ()
-    extends Component[IAuthorizedProps, js.Any, js.Any] {
+  open class Authorized protected () extends Component[IAuthorizedProps, Any, Any] {
     def this(props: IAuthorizedProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IAuthorizedProps, context: js.Any) = this()
+    def this(props: IAuthorizedProps, context: Any) = this()
   }
   /* static members */
   object Authorized {
@@ -75,7 +73,7 @@ object authorizedMod {
       
       inline def setAuthorityFunction1(value: /* currentAuthority */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "authority", js.Any.fromFunction1(value))
       
-      inline def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value :_*))
+      inline def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value*))
       
       inline def setNoMatch(value: ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
       
@@ -83,18 +81,18 @@ object authorizedMod {
     }
   }
   
-  type IReactComponent[P] = StatelessComponent[P] | (ComponentClass[P, ComponentState]) | ClassicComponentClass[P]
+  type IReactComponent[P] = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.StatelessComponent<P> */ Any) | (ComponentClass[P, ComponentState]) | ClassicComponentClass[P]
   
   type Secured = js.Function2[
     /* authority */ authority, 
     /* error */ js.UndefOr[ReactNode], 
-    js.Function1[/* target */ IReactComponent[js.Any], IReactComponent[js.Any]]
+    js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any]]
   ]
   
   type check = js.Function3[
     /* authority */ authority, 
-    /* target */ IReactComponent[js.Any], 
-    /* Exception */ IReactComponent[js.Any], 
-    IReactComponent[js.Any]
+    /* target */ IReactComponent[Any], 
+    /* Exception */ IReactComponent[Any], 
+    IReactComponent[Any]
   ]
 }

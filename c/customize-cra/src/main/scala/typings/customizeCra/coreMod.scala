@@ -2,7 +2,7 @@ package typings.customizeCra
 
 import typings.customizeCra.anon.Dest
 import typings.customizeCra.customizeCraBooleans.`false`
-import typings.customizeCra.customizeCraNumbers.`0`
+import typings.customizeCra.customizeCraInts.`0`
 import typings.webpack.mod.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

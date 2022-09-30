@@ -26,7 +26,7 @@ import typings.chrome.chrome.tabs.TabZoomChangeEvent
 import typings.chrome.chrome.tabs.UpdateProperties
 import typings.chrome.chrome.tabs.ZoomSettings
 import typings.chrome.chrome.windows.Window
-import typings.chrome.chromeNumbers.`-1`
+import typings.chrome.chromeInts.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

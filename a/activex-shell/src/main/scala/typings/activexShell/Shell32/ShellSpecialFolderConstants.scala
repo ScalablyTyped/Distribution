@@ -1,43 +1,43 @@
 package typings.activexShell.Shell32
 
-import typings.activexShell.activexShellNumbers.`0`
-import typings.activexShell.activexShellNumbers.`10`
-import typings.activexShell.activexShellNumbers.`11`
-import typings.activexShell.activexShellNumbers.`16`
-import typings.activexShell.activexShellNumbers.`17`
-import typings.activexShell.activexShellNumbers.`18`
-import typings.activexShell.activexShellNumbers.`19`
-import typings.activexShell.activexShellNumbers.`20`
-import typings.activexShell.activexShellNumbers.`21`
-import typings.activexShell.activexShellNumbers.`22`
-import typings.activexShell.activexShellNumbers.`23`
-import typings.activexShell.activexShellNumbers.`24`
-import typings.activexShell.activexShellNumbers.`25`
-import typings.activexShell.activexShellNumbers.`26`
-import typings.activexShell.activexShellNumbers.`27`
-import typings.activexShell.activexShellNumbers.`28`
-import typings.activexShell.activexShellNumbers.`29`
-import typings.activexShell.activexShellNumbers.`2`
-import typings.activexShell.activexShellNumbers.`30`
-import typings.activexShell.activexShellNumbers.`31`
-import typings.activexShell.activexShellNumbers.`32`
-import typings.activexShell.activexShellNumbers.`33`
-import typings.activexShell.activexShellNumbers.`34`
-import typings.activexShell.activexShellNumbers.`35`
-import typings.activexShell.activexShellNumbers.`36`
-import typings.activexShell.activexShellNumbers.`37`
-import typings.activexShell.activexShellNumbers.`38`
-import typings.activexShell.activexShellNumbers.`39`
-import typings.activexShell.activexShellNumbers.`3`
-import typings.activexShell.activexShellNumbers.`40`
-import typings.activexShell.activexShellNumbers.`41`
-import typings.activexShell.activexShellNumbers.`48`
-import typings.activexShell.activexShellNumbers.`4`
-import typings.activexShell.activexShellNumbers.`5`
-import typings.activexShell.activexShellNumbers.`6`
-import typings.activexShell.activexShellNumbers.`7`
-import typings.activexShell.activexShellNumbers.`8`
-import typings.activexShell.activexShellNumbers.`9`
+import typings.activexShell.activexShellInts.`0`
+import typings.activexShell.activexShellInts.`10`
+import typings.activexShell.activexShellInts.`11`
+import typings.activexShell.activexShellInts.`16`
+import typings.activexShell.activexShellInts.`17`
+import typings.activexShell.activexShellInts.`18`
+import typings.activexShell.activexShellInts.`19`
+import typings.activexShell.activexShellInts.`20`
+import typings.activexShell.activexShellInts.`21`
+import typings.activexShell.activexShellInts.`22`
+import typings.activexShell.activexShellInts.`23`
+import typings.activexShell.activexShellInts.`24`
+import typings.activexShell.activexShellInts.`25`
+import typings.activexShell.activexShellInts.`26`
+import typings.activexShell.activexShellInts.`27`
+import typings.activexShell.activexShellInts.`28`
+import typings.activexShell.activexShellInts.`29`
+import typings.activexShell.activexShellInts.`2`
+import typings.activexShell.activexShellInts.`30`
+import typings.activexShell.activexShellInts.`31`
+import typings.activexShell.activexShellInts.`32`
+import typings.activexShell.activexShellInts.`33`
+import typings.activexShell.activexShellInts.`34`
+import typings.activexShell.activexShellInts.`35`
+import typings.activexShell.activexShellInts.`36`
+import typings.activexShell.activexShellInts.`37`
+import typings.activexShell.activexShellInts.`38`
+import typings.activexShell.activexShellInts.`39`
+import typings.activexShell.activexShellInts.`3`
+import typings.activexShell.activexShellInts.`40`
+import typings.activexShell.activexShellInts.`41`
+import typings.activexShell.activexShellInts.`48`
+import typings.activexShell.activexShellInts.`4`
+import typings.activexShell.activexShellInts.`5`
+import typings.activexShell.activexShellInts.`6`
+import typings.activexShell.activexShellInts.`7`
+import typings.activexShell.activexShellInts.`8`
+import typings.activexShell.activexShellInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,44 +45,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Constants for Special Folders for open/Explore */
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShell.activexShellNumbers.`29`
-  - typings.activexShell.activexShellNumbers.`26`
-  - typings.activexShell.activexShellNumbers.`10`
-  - typings.activexShell.activexShellNumbers.`30`
-  - typings.activexShell.activexShellNumbers.`35`
-  - typings.activexShell.activexShellNumbers.`25`
-  - typings.activexShell.activexShellNumbers.`31`
-  - typings.activexShell.activexShellNumbers.`23`
-  - typings.activexShell.activexShellNumbers.`22`
-  - typings.activexShell.activexShellNumbers.`24`
-  - typings.activexShell.activexShellNumbers.`3`
-  - typings.activexShell.activexShellNumbers.`33`
-  - typings.activexShell.activexShellNumbers.`0`
-  - typings.activexShell.activexShellNumbers.`16`
-  - typings.activexShell.activexShellNumbers.`17`
-  - typings.activexShell.activexShellNumbers.`6`
-  - typings.activexShell.activexShellNumbers.`20`
-  - typings.activexShell.activexShellNumbers.`34`
-  - typings.activexShell.activexShellNumbers.`32`
-  - typings.activexShell.activexShellNumbers.`28`
-  - typings.activexShell.activexShellNumbers.`39`
-  - typings.activexShell.activexShellNumbers.`19`
-  - typings.activexShell.activexShellNumbers.`18`
-  - typings.activexShell.activexShellNumbers.`5`
-  - typings.activexShell.activexShellNumbers.`4`
-  - typings.activexShell.activexShellNumbers.`27`
-  - typings.activexShell.activexShellNumbers.`40`
-  - typings.activexShell.activexShellNumbers.`38`
-  - typings.activexShell.activexShellNumbers.`48`
-  - typings.activexShell.activexShellNumbers.`2`
-  - typings.activexShell.activexShellNumbers.`8`
-  - typings.activexShell.activexShellNumbers.`9`
-  - typings.activexShell.activexShellNumbers.`11`
-  - typings.activexShell.activexShellNumbers.`7`
-  - typings.activexShell.activexShellNumbers.`37`
-  - typings.activexShell.activexShellNumbers.`41`
-  - typings.activexShell.activexShellNumbers.`21`
-  - typings.activexShell.activexShellNumbers.`36`
+  - typings.activexShell.activexShellInts.`29`
+  - typings.activexShell.activexShellInts.`26`
+  - typings.activexShell.activexShellInts.`10`
+  - typings.activexShell.activexShellInts.`30`
+  - typings.activexShell.activexShellInts.`35`
+  - typings.activexShell.activexShellInts.`25`
+  - typings.activexShell.activexShellInts.`31`
+  - typings.activexShell.activexShellInts.`23`
+  - typings.activexShell.activexShellInts.`22`
+  - typings.activexShell.activexShellInts.`24`
+  - typings.activexShell.activexShellInts.`3`
+  - typings.activexShell.activexShellInts.`33`
+  - typings.activexShell.activexShellInts.`0`
+  - typings.activexShell.activexShellInts.`16`
+  - typings.activexShell.activexShellInts.`17`
+  - typings.activexShell.activexShellInts.`6`
+  - typings.activexShell.activexShellInts.`20`
+  - typings.activexShell.activexShellInts.`34`
+  - typings.activexShell.activexShellInts.`32`
+  - typings.activexShell.activexShellInts.`28`
+  - typings.activexShell.activexShellInts.`39`
+  - typings.activexShell.activexShellInts.`19`
+  - typings.activexShell.activexShellInts.`18`
+  - typings.activexShell.activexShellInts.`5`
+  - typings.activexShell.activexShellInts.`4`
+  - typings.activexShell.activexShellInts.`27`
+  - typings.activexShell.activexShellInts.`40`
+  - typings.activexShell.activexShellInts.`38`
+  - typings.activexShell.activexShellInts.`48`
+  - typings.activexShell.activexShellInts.`2`
+  - typings.activexShell.activexShellInts.`8`
+  - typings.activexShell.activexShellInts.`9`
+  - typings.activexShell.activexShellInts.`11`
+  - typings.activexShell.activexShellInts.`7`
+  - typings.activexShell.activexShellInts.`37`
+  - typings.activexShell.activexShellInts.`41`
+  - typings.activexShell.activexShellInts.`21`
+  - typings.activexShell.activexShellInts.`36`
 */
 trait ShellSpecialFolderConstants extends StObject
 object ShellSpecialFolderConstants {

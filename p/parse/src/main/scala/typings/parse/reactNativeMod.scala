@@ -99,6 +99,7 @@ import typings.parse.parseStrings.define
 import typings.parse.parseStrings.run
 import typings.std.Parameters
 import typings.std.Partial
+import typings.std.PromiseLike
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -251,13 +252,13 @@ object reactNativeMod {
     inline def afterDelete[T /* <: Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def afterDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[Unit]
-    inline def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def afterDeleteFile(
-      func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+      func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
       validator: js.Function1[/* request */ FunctionRequest[Params], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def afterDeleteFile(
-      func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+      func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
       validator: Validator
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def afterDeleteFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -296,20 +297,20 @@ object reactNativeMod {
     inline def afterLogin(
       func: js.Function1[
           /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
-          js.Thenable[Unit] | Unit
+          PromiseLike[Unit] | Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def afterLogin(
       func: js.Function1[
           /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
-          js.Thenable[Unit] | Unit
+          PromiseLike[Unit] | Unit
         ],
       validator: js.Function1[/* request */ FunctionRequest[Params], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def afterLogin(
       func: js.Function1[
           /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
-          js.Thenable[Unit] | Unit
+          PromiseLike[Unit] | Unit
         ],
       validator: Validator
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -320,20 +321,20 @@ object reactNativeMod {
     inline def afterLogout(
       func: js.Function1[
           /* request */ TriggerRequest[typings.parse.mod.global.Parse.Session[Attributes]], 
-          js.Thenable[Unit] | Unit
+          PromiseLike[Unit] | Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def afterLogout(
       func: js.Function1[
           /* request */ TriggerRequest[typings.parse.mod.global.Parse.Session[Attributes]], 
-          js.Thenable[Unit] | Unit
+          PromiseLike[Unit] | Unit
         ],
       validator: js.Function1[/* request */ FunctionRequest[Params], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def afterLogout(
       func: js.Function1[
           /* request */ TriggerRequest[typings.parse.mod.global.Parse.Session[Attributes]], 
-          js.Thenable[Unit] | Unit
+          PromiseLike[Unit] | Unit
         ],
       validator: Validator
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -377,13 +378,13 @@ object reactNativeMod {
     inline def afterSave[T /* <: Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def afterSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[Unit]
-    inline def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def afterSaveFile(
-      func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+      func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
       validator: js.Function1[/* request */ FunctionRequest[Params], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def afterSaveFile(
-      func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+      func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
       validator: Validator
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def afterSaveFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -426,13 +427,13 @@ object reactNativeMod {
     inline def beforeDelete[T /* <: Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def beforeDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[Unit]
-    inline def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def beforeDeleteFile(
-      func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+      func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
       validator: js.Function1[/* request */ FunctionRequest[Params], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def beforeDeleteFile(
-      func: js.Function1[/* request */ FileTriggerRequest, js.Thenable[Unit] | Unit],
+      func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
       validator: Validator
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def beforeDeleteFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -499,7 +500,7 @@ object reactNativeMod {
     inline def beforeLogin(
       func: js.Function1[
           /* request */ TriggerRequest[typings.parse.mod.global.Parse.User[Attributes]], 
-          js.Thenable[Unit] | Unit
+          PromiseLike[Unit] | Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -543,20 +544,20 @@ object reactNativeMod {
     inline def beforeSaveFile(
       func: js.Function1[
           /* request */ FileTriggerRequest, 
-          js.Thenable[typings.parse.mod.global.Parse.File] | Unit
+          PromiseLike[typings.parse.mod.global.Parse.File] | Unit
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def beforeSaveFile(
       func: js.Function1[
           /* request */ FileTriggerRequest, 
-          js.Thenable[typings.parse.mod.global.Parse.File] | Unit
+          PromiseLike[typings.parse.mod.global.Parse.File] | Unit
         ],
       validator: js.Function1[/* request */ FunctionRequest[Params], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def beforeSaveFile(
       func: js.Function1[
           /* request */ FileTriggerRequest, 
-          js.Thenable[typings.parse.mod.global.Parse.File] | Unit
+          PromiseLike[typings.parse.mod.global.Parse.File] | Unit
         ],
       validator: Validator
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -616,14 +617,14 @@ object reactNativeMod {
       validator: Validator
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def define_T_Function0Any[T /* <: js.Function0[Any] */](
+    inline def define_T[T /* <: js.Function0[Any] */](
       name: String,
       func: js.Function1[
           /* request */ FunctionRequest[js.Object], 
           js.Promise[ReturnType[T]] | ReturnType[T]
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def define_T_Function0Any[T /* <: js.Function0[Any] */](
+    inline def define_T[T /* <: js.Function0[Any] */](
       name: String,
       func: js.Function1[
           /* request */ FunctionRequest[js.Object], 
@@ -631,7 +632,7 @@ object reactNativeMod {
         ],
       validator: js.Function1[/* request */ FunctionRequest[Params], Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def define_T_Function0Any[T /* <: js.Function0[Any] */](
+    inline def define_T[T /* <: js.Function0[Any] */](
       name: String,
       func: js.Function1[
           /* request */ FunctionRequest[js.Object], 
@@ -684,8 +685,8 @@ object reactNativeMod {
       options: RunOptions
     ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
     
-    inline def run_T_Function0Any[T /* <: js.Function0[Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
-    inline def run_T_Function0Any[T /* <: js.Function0[Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+    inline def run_T[T /* <: js.Function0[Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
+    inline def run_T[T /* <: js.Function0[Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
     
     /**
       * Starts a given cloud job, which will process asynchronously.

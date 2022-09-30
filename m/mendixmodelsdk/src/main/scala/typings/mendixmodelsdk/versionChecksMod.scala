@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object versionChecksMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "LifeCycle")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "LifeCycle")
   @js.native
-  class LifeCycle () extends StObject {
+  open class LifeCycle () extends StObject {
     def this(info: ILifeCycle) = this()
     
     var deleted: Version | Null = js.native
@@ -51,7 +51,7 @@ object versionChecksMod {
   
   @js.native
   sealed trait LifeCycleState extends StObject
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "LifeCycleState")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "LifeCycleState")
   @js.native
   object LifeCycleState extends StObject {
     
@@ -77,9 +77,9 @@ object versionChecksMod {
     /* 0 */ val UNAVAILABLE: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.UNAVAILABLE & Double = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "ModifierValueHistory")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "ModifierValueHistory")
   @js.native
-  class ModifierValueHistory protected () extends StObject {
+  open class ModifierValueHistory protected () extends StObject {
     def this(lifecycle: Null, defaultFallback: Boolean) = this()
     def this(lifecycle: Unit, defaultFallback: Boolean) = this()
     /**
@@ -97,9 +97,9 @@ object versionChecksMod {
     var latestValue: Boolean = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "PropertyVersionInfo")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "PropertyVersionInfo")
   @js.native
-  class PropertyVersionInfo protected () extends VersionInfo {
+  open class PropertyVersionInfo protected () extends VersionInfo {
     def this(info: Null, publicByDefault: Boolean) = this()
     def this(info: IPropertyVersionInfo, publicByDefault: Boolean) = this()
     
@@ -112,7 +112,7 @@ object versionChecksMod {
   
   @js.native
   sealed trait StructureType extends StObject
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "StructureType")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "StructureType")
   @js.native
   object StructureType extends StObject {
     
@@ -138,9 +138,9 @@ object versionChecksMod {
     /* 0 */ val StructuralUnit: typings.mendixmodelsdk.versionChecksMod.StructureType.StructuralUnit & Double = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected () extends VersionInfo {
+  open class StructureVersionInfo protected () extends VersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
     
     var availability: LifeCycle = js.native
@@ -160,9 +160,9 @@ object versionChecksMod {
     var structureType: StructureType = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "Version")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "Version")
   @js.native
-  class Version protected () extends StObject {
+  open class Version protected () extends StObject {
     def this(major: Double, minor: Double, patch: Double) = this()
     
     /**
@@ -197,14 +197,14 @@ object versionChecksMod {
   /* static members */
   object Version {
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "Version")
+    @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "Version")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "Version.memoisMap")
+    @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "Version.memoisMap")
     @js.native
-    def memoisMap: js.Any = js.native
-    inline def memoisMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
+    def memoisMap: Any = js.native
+    inline def memoisMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
     
     /**
       * Parses and @returns the given string as a Version object.
@@ -215,7 +215,7 @@ object versionChecksMod {
     inline def parse(versionString: String): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[Version]
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/versionChecks", "VersionInfo")
+  @JSImport("mendixmodelsdk/src/sdk/internal/versionChecks", "VersionInfo")
   @js.native
   abstract class VersionInfo () extends StObject {
     
@@ -297,7 +297,7 @@ object versionChecksMod {
       
       inline def setChangedInUndefined: Self = StObject.set(x, "changedIn", js.undefined)
       
-      inline def setChangedInVarargs(value: String*): Self = StObject.set(x, "changedIn", js.Array(value :_*))
+      inline def setChangedInVarargs(value: String*): Self = StObject.set(x, "changedIn", js.Array(value*))
       
       inline def setCurrentValue(value: Boolean): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 6.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.Type")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.Type")
 @js.native
 abstract class Type protected ()
   extends typings.mendixmodelsdk.javaactionsMod.javaactions.Type {
@@ -29,18 +29,18 @@ abstract class Type protected ()
 }
 object Type {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.Type")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.Type")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.Type.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.Type.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.Type.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.Type.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

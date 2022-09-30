@@ -47,7 +47,7 @@ object mod {
   
   inline def destroy(base: Transporter): js.Function0[ReadonlyPromisevoid] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadonlyPromisevoid]]
   
-  inline def encode(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def encode(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def shuffle[TData](array: js.Array[TData]): js.Array[TData] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[TData]]
   
@@ -87,15 +87,15 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.algoliaClientCommon.algoliaClientCommonNumbers.`0`
-    - typings.algoliaClientCommon.algoliaClientCommonNumbers.`1`
+    - typings.algoliaClientCommon.algoliaClientCommonInts.`0`
+    - typings.algoliaClientCommon.algoliaClientCommonInts.`1`
   */
   trait AuthModeType extends StObject
   object AuthModeType {
     
-    inline def `0`: typings.algoliaClientCommon.algoliaClientCommonNumbers.`0` = 0.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonNumbers.`0`]
+    inline def `0`: typings.algoliaClientCommon.algoliaClientCommonInts.`0` = 0.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonInts.`0`]
     
-    inline def `1`: typings.algoliaClientCommon.algoliaClientCommonNumbers.`1` = 1.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonNumbers.`1`]
+    inline def `1`: typings.algoliaClientCommon.algoliaClientCommonInts.`1` = 1.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonInts.`1`]
   }
   
   type ClientTransporterOptions = (Pick[

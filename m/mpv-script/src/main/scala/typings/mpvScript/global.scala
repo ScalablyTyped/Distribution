@@ -127,7 +127,7 @@ object global {
       
       inline def info(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       
-      inline def log(level: LogLevel, msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(level.asInstanceOf[js.Any]).`++`(msg.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+      inline def log(level: LogLevel, msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(level.asInstanceOf[js.Any]).`++`(msg.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
       
       inline def trace(msg: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(msg.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
       

@@ -49,11 +49,11 @@ object typeCheckerMod {
     var message: js.UndefOr[String] = js.undefined
     
     /** Value that was being validated, either a snapshot or an instance */
-    var value: js.Any
+    var value: Any
   }
   object IValidationError {
     
-    inline def apply(context: IValidationContext, value: js.Any): IValidationError = {
+    inline def apply(context: IValidationContext, value: Any): IValidationError = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IValidationError]
     }
@@ -62,13 +62,13 @@ object typeCheckerMod {
       
       inline def setContext(value: IValidationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setContextVarargs(value: IValidationContextEntry*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: IValidationContextEntry*): Self = StObject.set(x, "context", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.TextArea")
 @js.native
-class TextArea protected ()
+open class TextArea protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.TextArea {
   def this(
     model: AbstractModel,

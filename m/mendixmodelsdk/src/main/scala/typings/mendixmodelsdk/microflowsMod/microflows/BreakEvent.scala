@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/break-event relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BreakEvent")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BreakEvent")
 @js.native
-class BreakEvent protected () extends MicroflowObject {
+open class BreakEvent protected () extends MicroflowObject {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class BreakEvent protected () extends MicroflowObject {
 }
 object BreakEvent {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BreakEvent")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BreakEvent")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object BreakEvent {
   inline def createIn(container: MicroflowObjectCollection): BreakEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BreakEvent]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BreakEvent.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BreakEvent.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BreakEvent.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BreakEvent.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

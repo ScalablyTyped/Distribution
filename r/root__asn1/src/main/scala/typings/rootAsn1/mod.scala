@@ -16,8 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Any(hexType: String, hexBytes: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Any")(List(hexType.asInstanceOf[js.Any]).`++`(hexBytes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-  inline def Any(hexType: Double, hexBytes: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Any")(List(hexType.asInstanceOf[js.Any]).`++`(hexBytes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def Any(hexType: String, hexBytes: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Any")(scala.List(hexType.asInstanceOf[js.Any]).`++`(hexBytes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def Any(hexType: Double, hexBytes: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Any")(scala.List(hexType.asInstanceOf[js.Any]).`++`(hexBytes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def BitStr(hexBitStream: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("BitStr")(hexBitStream.asInstanceOf[js.Any]).asInstanceOf[String]
   

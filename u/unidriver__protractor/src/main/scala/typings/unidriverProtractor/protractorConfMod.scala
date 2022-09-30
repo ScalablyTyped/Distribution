@@ -8,5 +8,5 @@ object protractorConfMod {
   
   @JSImport("@unidriver/protractor/dist/protractor.conf", "port")
   @js.native
-  val port: js.Any = js.native
+  val port: Any = js.native
 }

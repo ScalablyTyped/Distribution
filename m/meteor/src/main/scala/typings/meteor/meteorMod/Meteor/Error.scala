@@ -18,6 +18,9 @@ object Error {
   
   /** User **/
   /** Error **/
+  /**
+    * This class represents a symbolic error thrown by a method.
+    */
   @JSImport("meteor/meteor", "Meteor.Error")
   @js.native
   val ^ : ErrorStatic = js.native

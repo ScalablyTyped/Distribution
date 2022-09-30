@@ -7,6 +7,7 @@ import typings.std.ArrayLike
 import typings.std.IterableIterator
 import typings.std.MapConstructor
 import typings.std.PromiseConstructor
+import typings.std.PromiseLike
 import typings.std.PropertyDescriptorMap
 import typings.std.PropertyKey
 import typings.std.SetConstructor
@@ -29,7 +30,7 @@ object libraryCoreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def concat[T](array: ArrayLike[T], items: (typings.coreJs.Array[T] | T)*): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.coreJs.Array[T]]
+    inline def concat[T](array: ArrayLike[T], items: (typings.coreJs.Array[T] | T)*): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(scala.List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.coreJs.Array[T]]
     
     inline def copyWithin[T](array: ArrayLike[T], target: Double, start: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
     inline def copyWithin[T](array: ArrayLike[T], target: Double, start: Double, end: Double): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
@@ -121,7 +122,7 @@ object libraryCoreMod {
     
     inline def pop[T](array: ArrayLike[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(array.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    inline def push[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+    inline def push[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(scala.List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
     
     inline def reduce[T](
       array: ArrayLike[T],
@@ -213,8 +214,8 @@ object libraryCoreMod {
     inline def sort[T](array: ArrayLike[T]): typings.coreJs.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any]).asInstanceOf[typings.coreJs.Array[T]]
     inline def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(array.asInstanceOf[js.Any], compareFn.asInstanceOf[js.Any])).asInstanceOf[typings.coreJs.Array[T]]
     
-    inline def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.coreJs.Array[T]]
-    inline def splice[T](array: ArrayLike[T], start: Double, deleteCount: Unit, items: T*): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.coreJs.Array[T]]
+    inline def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.coreJs.Array[T]]
+    inline def splice[T](array: ArrayLike[T], start: Double, deleteCount: Unit, items: T*): typings.coreJs.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.coreJs.Array[T]]
     
     inline def turn[T](
       array: ArrayLike[T],
@@ -260,7 +261,7 @@ object libraryCoreMod {
         ]
     ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("turn")(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[U]
     
-    inline def unshift[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unshift")(List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+    inline def unshift[T](array: ArrayLike[T], items: T*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unshift")(scala.List(array.asInstanceOf[js.Any]).`++`(items.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
     
     inline def values[T](array: ArrayLike[T]): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[T]]
   }
@@ -292,9 +293,9 @@ object libraryCoreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def bind(target: typings.coreJs.Function, thisArg: Any, argArray: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")((List(target.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(argArray.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+    inline def bind(target: typings.coreJs.Function, thisArg: Any, argArray: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")((scala.List(target.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(argArray.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
     
-    inline def part(target: typings.coreJs.Function, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("part")(List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def part(target: typings.coreJs.Function, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("part")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -430,7 +431,7 @@ object libraryCoreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def assign(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def assign(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     inline def classof(value: Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("classof")(value.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
     
@@ -495,7 +496,7 @@ object libraryCoreMod {
       */
     /* standard es2015.promise */
     def this(executor: js.Function2[
-            /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
+            /* resolve */ js.Function1[/* value */ T | PromiseLike[T], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
@@ -805,7 +806,7 @@ object libraryCoreMod {
     inline def padStart(text: java.lang.String, length: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     inline def padStart(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillStr.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     
-    inline def raw(template: TemplateStringsArray, substitutions: Any*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(List(template.asInstanceOf[js.Any]).`++`(substitutions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[java.lang.String]
+    inline def raw(template: TemplateStringsArray, substitutions: Any*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(scala.List(template.asInstanceOf[js.Any]).`++`(substitutions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[java.lang.String]
     
     inline def repeat(text: java.lang.String, count: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(text.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     
@@ -870,13 +871,13 @@ object libraryCoreMod {
   inline def locale(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[java.lang.String]
   inline def locale(lang: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(lang.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
-  inline def setImmediate(expression: Any, args: Any*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(List(expression.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def setImmediate(expression: Any, args: Any*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(scala.List(expression.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
-  inline def setInterval(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
-  inline def setInterval(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setInterval(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setInterval(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
-  inline def setTimeout(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
-  inline def setTimeout(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setTimeout(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setTimeout(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
   @JSImport("core-js/library/core", "version")
   @js.native

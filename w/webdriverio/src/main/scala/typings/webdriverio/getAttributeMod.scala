@@ -10,5 +10,5 @@ object getAttributeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(attributeName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(attributeName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def default(attributeName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(attributeName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

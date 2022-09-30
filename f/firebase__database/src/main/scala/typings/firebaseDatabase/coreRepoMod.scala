@@ -10,11 +10,11 @@ import typings.firebaseDatabase.coreServerActionsMod.ServerActions
 import typings.firebaseDatabase.coreSnapshotHolderMod.SnapshotHolder
 import typings.firebaseDatabase.coreSparseSnapshotTreeMod.SparseSnapshotTree
 import typings.firebaseDatabase.coreSyncTreeMod.SyncTree
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`0`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`1`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`2`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`3`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`4`
+import typings.firebaseDatabase.firebaseDatabaseInts.`0`
+import typings.firebaseDatabase.firebaseDatabaseInts.`1`
+import typings.firebaseDatabase.firebaseDatabaseInts.`2`
+import typings.firebaseDatabase.firebaseDatabaseInts.`3`
+import typings.firebaseDatabase.firebaseDatabaseInts.`4`
 import typings.firebaseDatabase.snapNodeMod.Node
 import typings.firebaseDatabase.statsStatsCollectionMod.StatsCollection
 import typings.firebaseDatabase.statsStatsListenerMod.StatsListener
@@ -238,11 +238,11 @@ object coreRepoMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`0`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`1`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`2`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`3`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`4`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`0`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`1`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`2`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`3`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`4`
   */
   trait TransactionStatus extends StObject
   object TransactionStatus {

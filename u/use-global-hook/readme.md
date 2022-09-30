@@ -10,15 +10,15 @@ Easy state management for react using hooks in less than 1kb.
 | ------------------ | :-------------: |
 | Full name          | use-global-hook |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 6 |
-| # downloads        | 244639 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 22822.0 |
+| # stars            | 638.0 |
 
 ## Links
-- [Homepage](https://github.com/andregardi/use-global-hook#readme)
-- [Bugs](https://github.com/andregardi/use-global-hook/issues)
-- [Repository](https://github.com/andregardi/use-global-hook)
+- [Homepage](https://github.com/use-global-hook/use-global-hook#readme)
+- [Bugs](https://github.com/use-global-hook/use-global-hook/issues)
+- [Repository](https://github.com/use-global-hook/use-global-hook)
 - [Npm](https://www.npmjs.com/package/use-global-hook)
     
 

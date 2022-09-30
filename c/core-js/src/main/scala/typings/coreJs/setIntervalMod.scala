@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object setIntervalMod {
   
   /* was `typeof core.setInterval` */
-  inline def apply(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].apply((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
-  inline def apply(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].apply((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def apply(handler: Any, timeout: Any, args: Any*): Double = (^.asInstanceOf[js.Dynamic].apply((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def apply(handler: Any, timeout: Unit, args: Any*): Double = (^.asInstanceOf[js.Dynamic].apply((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
   @JSImport("core-js/fn/set-interval", JSImport.Namespace)
   @js.native

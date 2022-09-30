@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TouchBar extends StObject {
   
+  /**
+    * A `TouchBarItem` that will replace the "esc" button on the touch bar when set.
+    * Setting to `null` restores the default "esc" button. Changing this value
+    * immediately updates the escape item in the touch bar.
+    */
   var escapeItem: TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer | Null
 }
 object TouchBar {

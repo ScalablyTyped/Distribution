@@ -57,9 +57,24 @@ open class ElementDragHelper protected () extends EventHandler {
   
   def _onMouseUpOrTouchEnd(): Unit = js.native
   
-  def _onMove(event: Any): Unit = js.native
+  /**
+    * This method is linked to `_element` events: `mousemove` and `touchmove`
+    *
+    * @param {ElementTouchEvent} event - The event.
+    * @private
+    */
+  /* private */ var _onMove: Any = js.native
   
-  def _screenToLocal(event: Any): Vec3 = js.native
+  /**
+    * This method calculates the `Vec3` intersection point of plane/ray intersection based on
+    * the mouse/touch input event. If there is no intersection, it returns `null`.
+    *
+    * @param {ElementTouchEvent} event - The event.
+    * @returns {Vec3|null} The `Vec3` intersection point of plane/ray intersection, if there
+    * is an intersection, otherwise `null`
+    * @private
+    */
+  /* private */ var _screenToLocal: Any = js.native
   
   def _toggleDragListeners(onOrOff: Any): Unit = js.native
   

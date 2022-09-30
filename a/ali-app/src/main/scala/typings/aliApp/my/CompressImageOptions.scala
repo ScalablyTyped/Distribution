@@ -1,10 +1,10 @@
 package typings.aliApp.my
 
-import typings.aliApp.aliAppNumbers.`0`
-import typings.aliApp.aliAppNumbers.`1`
-import typings.aliApp.aliAppNumbers.`2`
-import typings.aliApp.aliAppNumbers.`3`
-import typings.aliApp.aliAppNumbers.`4`
+import typings.aliApp.aliAppInts.`0`
+import typings.aliApp.aliAppInts.`1`
+import typings.aliApp.aliAppInts.`2`
+import typings.aliApp.aliAppInts.`3`
+import typings.aliApp.aliAppInts.`4`
 import typings.aliApp.anon.ApFilePaths
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

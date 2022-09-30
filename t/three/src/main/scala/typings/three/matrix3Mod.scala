@@ -2,7 +2,7 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.three.matrix4Mod.Matrix4
-import typings.three.threeNumbers.`0`
+import typings.three.threeInts.`0`
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

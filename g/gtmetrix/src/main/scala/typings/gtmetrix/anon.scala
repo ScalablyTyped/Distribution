@@ -1,9 +1,9 @@
 package typings.gtmetrix
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.gtmetrix.gtmetrixNumbers.`-1`
-import typings.gtmetrix.gtmetrixNumbers.`0`
-import typings.gtmetrix.gtmetrixNumbers.`1`
+import typings.gtmetrix.gtmetrixInts.`-1`
+import typings.gtmetrix.gtmetrixInts.`0`
+import typings.gtmetrix.gtmetrixInts.`1`
 import typings.node.anon.Data
 import typings.node.bufferMod.global.Buffer
 import typings.std.ArrayBufferLike

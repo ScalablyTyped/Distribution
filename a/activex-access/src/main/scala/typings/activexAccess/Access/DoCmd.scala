@@ -1,20 +1,19 @@
 package typings.activexAccess.Access
 
 import typings.activexAccess.activexAccessBooleans.`true`
-import typings.activexAccess.activexAccessNumbers.`0`
-import typings.activexAccess.activexAccessNumbers.`11`
-import typings.activexAccess.activexAccessNumbers.`1`
-import typings.activexAccess.activexAccessNumbers.`20`
-import typings.activexAccess.activexAccessNumbers.`2`
-import typings.activexAccess.activexAccessNumbers.`3`
-import typings.activexAccess.activexAccessNumbers.`4`
-import typings.activexAccess.activexAccessNumbers.`5`
-import typings.activexAccess.activexAccessNumbers.`6`
-import typings.activexAccess.activexAccessNumbers.`70`
-import typings.activexAccess.activexAccessNumbers.`7`
-import typings.activexAccess.activexAccessNumbers.`8`
-import typings.activexAccess.activexAccessNumbers.`9`
-import typings.activexAccess.activexAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
+import typings.activexAccess.activexAccessInts.`0`
+import typings.activexAccess.activexAccessInts.`11`
+import typings.activexAccess.activexAccessInts.`1`
+import typings.activexAccess.activexAccessInts.`20`
+import typings.activexAccess.activexAccessInts.`2`
+import typings.activexAccess.activexAccessInts.`3`
+import typings.activexAccess.activexAccessInts.`4`
+import typings.activexAccess.activexAccessInts.`5`
+import typings.activexAccess.activexAccessInts.`6`
+import typings.activexAccess.activexAccessInts.`70`
+import typings.activexAccess.activexAccessInts.`7`
+import typings.activexAccess.activexAccessInts.`8`
+import typings.activexAccess.activexAccessInts.`9`
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -768,7 +767,7 @@ trait DoCmd extends StObject {
   def OutputTo(
     ObjectType: `5`,
     ObjectName: String,
-    OutputFormat: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`,
+    OutputFormat: String,
     OutputFile: String,
     AutoStart: Boolean,
     TemplateFile: String,
@@ -777,7 +776,7 @@ trait DoCmd extends StObject {
   def OutputTo(
     ObjectType: `5`,
     ObjectName: String,
-    OutputFormat: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`,
+    OutputFormat: String,
     OutputFile: String,
     AutoStart: Boolean,
     TemplateFile: String,

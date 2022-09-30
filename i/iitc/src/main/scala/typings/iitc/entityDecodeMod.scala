@@ -18,11 +18,11 @@ object entityDecodeMod {
       */
     @JSGlobal("DecodeArray")
     @js.native
-    class DecodeArray_ () extends StObject {
+    open class DecodeArray_ () extends StObject {
       
-      def portalDetail(data: js.Array[js.Any]): js.UndefOr[PortalDataDetail] = js.native
+      def portalDetail(data: js.Array[Any]): js.UndefOr[PortalDataDetail] = js.native
       
-      def portalSummary(data: js.Array[js.Any]): js.UndefOr[PortalData | PortalDataCore] = js.native
+      def portalSummary(data: js.Array[Any]): js.UndefOr[PortalData | PortalDataCore] = js.native
     }
     
     // private but exposed:

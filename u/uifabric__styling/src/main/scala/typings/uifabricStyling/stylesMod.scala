@@ -435,6 +435,8 @@ object stylesMod {
   @js.native
   val hiddenContentStyle: IRawStyle = js.native
   
+  inline def initializeThemeInCustomizations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeThemeInCustomizations")().asInstanceOf[Unit]
+  
   inline def loadTheme(theme: IPartialTheme): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[ITheme]
   inline def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ITheme]
   

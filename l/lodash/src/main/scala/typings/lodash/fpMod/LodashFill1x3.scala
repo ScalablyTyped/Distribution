@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait LodashFill1x3 extends StObject {
   def apply[T](value: T): LodashFill1x7[T] = js.native
   def apply[U](value: __): LodashFill2x11[U] = js.native
   def apply[U](value: __, array: js.Array[U]): LodashFill1x11[U] = js.native
-  def apply[U](value: __, array: List[U]): LodashFill2x11[U] = js.native
+  def apply[U](value: __, array: typings.lodash.mod.List[U]): LodashFill2x11[U] = js.native
   def apply[T, U](value: T, array: js.Array[U]): js.Array[T | U] = js.native
-  def apply[T, U](value: T, array: List[U]): List[T | U] = js.native
+  def apply[T, U](value: T, array: typings.lodash.mod.List[U]): typings.lodash.mod.List[T | U] = js.native
 }

@@ -1,60 +1,60 @@
 package typings.nodegit
 
-import typings.nodegit.nodegitNumbers.`-10`
-import typings.nodegit.nodegitNumbers.`-11`
-import typings.nodegit.nodegitNumbers.`-12`
-import typings.nodegit.nodegitNumbers.`-13`
-import typings.nodegit.nodegitNumbers.`-14`
-import typings.nodegit.nodegitNumbers.`-15`
-import typings.nodegit.nodegitNumbers.`-16`
-import typings.nodegit.nodegitNumbers.`-17`
-import typings.nodegit.nodegitNumbers.`-18`
-import typings.nodegit.nodegitNumbers.`-19`
-import typings.nodegit.nodegitNumbers.`-1`
-import typings.nodegit.nodegitNumbers.`-20`
-import typings.nodegit.nodegitNumbers.`-21`
-import typings.nodegit.nodegitNumbers.`-22`
-import typings.nodegit.nodegitNumbers.`-23`
-import typings.nodegit.nodegitNumbers.`-30`
-import typings.nodegit.nodegitNumbers.`-31`
-import typings.nodegit.nodegitNumbers.`-3`
-import typings.nodegit.nodegitNumbers.`-4`
-import typings.nodegit.nodegitNumbers.`-5`
-import typings.nodegit.nodegitNumbers.`-6`
-import typings.nodegit.nodegitNumbers.`-7`
-import typings.nodegit.nodegitNumbers.`-8`
-import typings.nodegit.nodegitNumbers.`-9`
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`10`
-import typings.nodegit.nodegitNumbers.`11`
-import typings.nodegit.nodegitNumbers.`12`
-import typings.nodegit.nodegitNumbers.`13`
-import typings.nodegit.nodegitNumbers.`14`
-import typings.nodegit.nodegitNumbers.`15`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`17`
-import typings.nodegit.nodegitNumbers.`18`
-import typings.nodegit.nodegitNumbers.`19`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`20`
-import typings.nodegit.nodegitNumbers.`21`
-import typings.nodegit.nodegitNumbers.`22`
-import typings.nodegit.nodegitNumbers.`23`
-import typings.nodegit.nodegitNumbers.`24`
-import typings.nodegit.nodegitNumbers.`25`
-import typings.nodegit.nodegitNumbers.`26`
-import typings.nodegit.nodegitNumbers.`27`
-import typings.nodegit.nodegitNumbers.`28`
-import typings.nodegit.nodegitNumbers.`29`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`30`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`5`
-import typings.nodegit.nodegitNumbers.`6`
-import typings.nodegit.nodegitNumbers.`7`
-import typings.nodegit.nodegitNumbers.`8`
-import typings.nodegit.nodegitNumbers.`9`
+import typings.nodegit.nodegitInts.`-10`
+import typings.nodegit.nodegitInts.`-11`
+import typings.nodegit.nodegitInts.`-12`
+import typings.nodegit.nodegitInts.`-13`
+import typings.nodegit.nodegitInts.`-14`
+import typings.nodegit.nodegitInts.`-15`
+import typings.nodegit.nodegitInts.`-16`
+import typings.nodegit.nodegitInts.`-17`
+import typings.nodegit.nodegitInts.`-18`
+import typings.nodegit.nodegitInts.`-19`
+import typings.nodegit.nodegitInts.`-1`
+import typings.nodegit.nodegitInts.`-20`
+import typings.nodegit.nodegitInts.`-21`
+import typings.nodegit.nodegitInts.`-22`
+import typings.nodegit.nodegitInts.`-23`
+import typings.nodegit.nodegitInts.`-30`
+import typings.nodegit.nodegitInts.`-31`
+import typings.nodegit.nodegitInts.`-3`
+import typings.nodegit.nodegitInts.`-4`
+import typings.nodegit.nodegitInts.`-5`
+import typings.nodegit.nodegitInts.`-6`
+import typings.nodegit.nodegitInts.`-7`
+import typings.nodegit.nodegitInts.`-8`
+import typings.nodegit.nodegitInts.`-9`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`10`
+import typings.nodegit.nodegitInts.`11`
+import typings.nodegit.nodegitInts.`12`
+import typings.nodegit.nodegitInts.`13`
+import typings.nodegit.nodegitInts.`14`
+import typings.nodegit.nodegitInts.`15`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`17`
+import typings.nodegit.nodegitInts.`18`
+import typings.nodegit.nodegitInts.`19`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`20`
+import typings.nodegit.nodegitInts.`21`
+import typings.nodegit.nodegitInts.`22`
+import typings.nodegit.nodegitInts.`23`
+import typings.nodegit.nodegitInts.`24`
+import typings.nodegit.nodegitInts.`25`
+import typings.nodegit.nodegitInts.`26`
+import typings.nodegit.nodegitInts.`27`
+import typings.nodegit.nodegitInts.`28`
+import typings.nodegit.nodegitInts.`29`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`30`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`5`
+import typings.nodegit.nodegitInts.`6`
+import typings.nodegit.nodegitInts.`7`
+import typings.nodegit.nodegitInts.`8`
+import typings.nodegit.nodegitInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,31 +72,31 @@ object errorMod {
   object Error {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`-1`
-      - typings.nodegit.nodegitNumbers.`-3`
-      - typings.nodegit.nodegitNumbers.`-4`
-      - typings.nodegit.nodegitNumbers.`-5`
-      - typings.nodegit.nodegitNumbers.`-6`
-      - typings.nodegit.nodegitNumbers.`-7`
-      - typings.nodegit.nodegitNumbers.`-8`
-      - typings.nodegit.nodegitNumbers.`-9`
-      - typings.nodegit.nodegitNumbers.`-10`
-      - typings.nodegit.nodegitNumbers.`-11`
-      - typings.nodegit.nodegitNumbers.`-12`
-      - typings.nodegit.nodegitNumbers.`-13`
-      - typings.nodegit.nodegitNumbers.`-14`
-      - typings.nodegit.nodegitNumbers.`-15`
-      - typings.nodegit.nodegitNumbers.`-16`
-      - typings.nodegit.nodegitNumbers.`-17`
-      - typings.nodegit.nodegitNumbers.`-18`
-      - typings.nodegit.nodegitNumbers.`-19`
-      - typings.nodegit.nodegitNumbers.`-20`
-      - typings.nodegit.nodegitNumbers.`-21`
-      - typings.nodegit.nodegitNumbers.`-22`
-      - typings.nodegit.nodegitNumbers.`-23`
-      - typings.nodegit.nodegitNumbers.`-30`
-      - typings.nodegit.nodegitNumbers.`-31`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`-1`
+      - typings.nodegit.nodegitInts.`-3`
+      - typings.nodegit.nodegitInts.`-4`
+      - typings.nodegit.nodegitInts.`-5`
+      - typings.nodegit.nodegitInts.`-6`
+      - typings.nodegit.nodegitInts.`-7`
+      - typings.nodegit.nodegitInts.`-8`
+      - typings.nodegit.nodegitInts.`-9`
+      - typings.nodegit.nodegitInts.`-10`
+      - typings.nodegit.nodegitInts.`-11`
+      - typings.nodegit.nodegitInts.`-12`
+      - typings.nodegit.nodegitInts.`-13`
+      - typings.nodegit.nodegitInts.`-14`
+      - typings.nodegit.nodegitInts.`-15`
+      - typings.nodegit.nodegitInts.`-16`
+      - typings.nodegit.nodegitInts.`-17`
+      - typings.nodegit.nodegitInts.`-18`
+      - typings.nodegit.nodegitInts.`-19`
+      - typings.nodegit.nodegitInts.`-20`
+      - typings.nodegit.nodegitInts.`-21`
+      - typings.nodegit.nodegitInts.`-22`
+      - typings.nodegit.nodegitInts.`-23`
+      - typings.nodegit.nodegitInts.`-30`
+      - typings.nodegit.nodegitInts.`-31`
     */
     trait CODE extends StObject
     object CODE {
@@ -153,37 +153,37 @@ object errorMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`5`
-      - typings.nodegit.nodegitNumbers.`6`
-      - typings.nodegit.nodegitNumbers.`7`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`9`
-      - typings.nodegit.nodegitNumbers.`10`
-      - typings.nodegit.nodegitNumbers.`11`
-      - typings.nodegit.nodegitNumbers.`12`
-      - typings.nodegit.nodegitNumbers.`13`
-      - typings.nodegit.nodegitNumbers.`14`
-      - typings.nodegit.nodegitNumbers.`15`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`17`
-      - typings.nodegit.nodegitNumbers.`18`
-      - typings.nodegit.nodegitNumbers.`19`
-      - typings.nodegit.nodegitNumbers.`20`
-      - typings.nodegit.nodegitNumbers.`21`
-      - typings.nodegit.nodegitNumbers.`22`
-      - typings.nodegit.nodegitNumbers.`23`
-      - typings.nodegit.nodegitNumbers.`24`
-      - typings.nodegit.nodegitNumbers.`25`
-      - typings.nodegit.nodegitNumbers.`26`
-      - typings.nodegit.nodegitNumbers.`27`
-      - typings.nodegit.nodegitNumbers.`28`
-      - typings.nodegit.nodegitNumbers.`29`
-      - typings.nodegit.nodegitNumbers.`30`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`5`
+      - typings.nodegit.nodegitInts.`6`
+      - typings.nodegit.nodegitInts.`7`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`9`
+      - typings.nodegit.nodegitInts.`10`
+      - typings.nodegit.nodegitInts.`11`
+      - typings.nodegit.nodegitInts.`12`
+      - typings.nodegit.nodegitInts.`13`
+      - typings.nodegit.nodegitInts.`14`
+      - typings.nodegit.nodegitInts.`15`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`17`
+      - typings.nodegit.nodegitInts.`18`
+      - typings.nodegit.nodegitInts.`19`
+      - typings.nodegit.nodegitInts.`20`
+      - typings.nodegit.nodegitInts.`21`
+      - typings.nodegit.nodegitInts.`22`
+      - typings.nodegit.nodegitInts.`23`
+      - typings.nodegit.nodegitInts.`24`
+      - typings.nodegit.nodegitInts.`25`
+      - typings.nodegit.nodegitInts.`26`
+      - typings.nodegit.nodegitInts.`27`
+      - typings.nodegit.nodegitInts.`28`
+      - typings.nodegit.nodegitInts.`29`
+      - typings.nodegit.nodegitInts.`30`
     */
     trait ERROR extends StObject
     object ERROR {

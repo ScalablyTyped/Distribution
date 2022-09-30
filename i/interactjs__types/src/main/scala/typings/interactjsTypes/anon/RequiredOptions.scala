@@ -3,8 +3,8 @@ package typings.interactjsTypes.anon
 import typings.interactjsTypes.interactjsAutoScrollPluginMod.AutoScrollOptions
 import typings.interactjsTypes.interactjsDevToolsPluginMod.DevToolsOptions
 import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
-import typings.interactjsTypes.interactjsTypesNumbers.`16`
-import typings.interactjsTypes.interactjsTypesNumbers.`8`
+import typings.interactjsTypes.interactjsTypesInts.`16`
+import typings.interactjsTypes.interactjsTypesInts.`8`
 import typings.interactjsTypes.interactjsTypesStrings.auto
 import typings.interactjsTypes.interactjsTypesStrings.client
 import typings.interactjsTypes.interactjsTypesStrings.never
@@ -58,7 +58,7 @@ trait RequiredOptions extends StObject {
   
   var modifiers: js.Array[Modifier[Any, Any, Any, Any]]
   
-  var mouseButtons: typings.interactjsTypes.interactjsTypesNumbers.`0` | typings.interactjsTypes.interactjsTypesNumbers.`1` | typings.interactjsTypes.interactjsTypesNumbers.`2` | typings.interactjsTypes.interactjsTypesNumbers.`4` | `8` | `16`
+  var mouseButtons: typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16`
   
   var origin: Point | String | typings.interactjsTypes.typesMod.Element
   
@@ -93,7 +93,7 @@ object RequiredOptions {
     max: Double,
     maxPerElement: Double,
     modifiers: js.Array[Modifier[Any, Any, Any, Any]],
-    mouseButtons: typings.interactjsTypes.interactjsTypesNumbers.`0` | typings.interactjsTypes.interactjsTypesNumbers.`1` | typings.interactjsTypes.interactjsTypesNumbers.`2` | typings.interactjsTypes.interactjsTypesNumbers.`4` | `8` | `16`,
+    mouseButtons: typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16`,
     origin: Point | String | typings.interactjsTypes.typesMod.Element,
     pointerEvents: PartialOptions,
     preventDefault: auto | never | String,
@@ -151,7 +151,7 @@ object RequiredOptions {
     inline def setModifiersVarargs(value: (Modifier[Any, Any, Any, Any])*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setMouseButtons(
-      value: typings.interactjsTypes.interactjsTypesNumbers.`0` | typings.interactjsTypes.interactjsTypesNumbers.`1` | typings.interactjsTypes.interactjsTypesNumbers.`2` | typings.interactjsTypes.interactjsTypesNumbers.`4` | `8` | `16`
+      value: typings.interactjsTypes.interactjsTypesInts.`0` | typings.interactjsTypes.interactjsTypesInts.`1` | typings.interactjsTypes.interactjsTypesInts.`2` | typings.interactjsTypes.interactjsTypesInts.`4` | `8` | `16`
     ): Self = StObject.set(x, "mouseButtons", value.asInstanceOf[js.Any])
     
     inline def setOrigin(value: Point | String | typings.interactjsTypes.typesMod.Element): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])

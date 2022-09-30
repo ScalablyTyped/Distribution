@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.NativeTextStyle")
 @js.native
-class NativeTextStyle protected ()
+open class NativeTextStyle protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.NativeTextStyle {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

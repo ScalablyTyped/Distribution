@@ -4,11 +4,8 @@ import org.scalablytyped.runtime.Shortcut
 import typings.antd.affixMod.AffixProps
 import typings.antd.alertMod.AlertInterface
 import typings.antd.anchorMod.AnchorInterface
-import typings.antd.anon.CallDefaultProps
-import typings.antd.anon.CallProps
 import typings.antd.anon.Children
 import typings.antd.anon.DataSource
-import typings.antd.anon.DefaultProps
 import typings.antd.anon.DisplayName
 import typings.antd.anon.DropdownClassName
 import typings.antd.anon.OmitPickerDatePropsMoment
@@ -24,7 +21,7 @@ import typings.antd.anon.SourceSelectedKeys
 import typings.antd.anon.WeakValidationMapConfigPr
 import typings.antd.anon.`1`
 import typings.antd.anon.`2`
-import typings.antd.antdStrings.`4Dot23Dot2`
+import typings.antd.antdStrings.`4Dot23Dot3`
 import typings.antd.autoCompleteMod.AutoCompleteProps
 import typings.antd.avatarMod.CompoundedComponent
 import typings.antd.backTopMod.BackTopProps
@@ -63,7 +60,6 @@ import typings.antd.menuContextMod.MenuContextProps
 import typings.antd.menuDividerMod.MenuDividerProps
 import typings.antd.messageMod.MessageApi
 import typings.antd.modalMod.ModalType
-import typings.antd.nodeMod.SkeletonNodeProps
 import typings.antd.notificationMod.NotificationApi
 import typings.antd.operationMod.TransferOperationProps
 import typings.antd.pageHeaderMod.PageHeaderProps
@@ -73,7 +69,6 @@ import typings.antd.popoverMod.PopoverProps
 import typings.antd.progressProgressMod.ProgressProps
 import typings.antd.rateMod.RateProps
 import typings.antd.resultMod.ResultType
-import typings.antd.skeletonImageMod.SkeletonImageProps
 import typings.antd.skeletonSkeletonMod.SkeletonProps
 import typings.antd.sliderMod.SliderRangeProps
 import typings.antd.sliderMod.SliderSingleProps
@@ -588,41 +583,9 @@ object mod {
   @js.native
   val Select: (js.Function1[/* props */ Children & (SelectProps[Any, DefaultOptionType]), ReactElement]) & OptGroup = js.native
   
-  object Skeleton {
-    
-    inline def apply(props: SkeletonProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
-    
-    @JSImport("antd", "Skeleton")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd", "Skeleton.Avatar")
-    @js.native
-    def Avatar: CallDefaultProps = js.native
-    inline def Avatar_=(x: CallDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd", "Skeleton.Button")
-    @js.native
-    def Button: DefaultProps = js.native
-    inline def Button_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
-    
-    inline def Image(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Image")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("antd", "Skeleton.Input")
-    @js.native
-    def Input: CallProps = js.native
-    inline def Input_=(x: CallProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd", "Skeleton.Node")
-    @js.native
-    def Node: FC[SkeletonNodeProps] = js.native
-    inline def Node_=(x: FC[SkeletonNodeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Node")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd", "Skeleton.defaultProps")
-    @js.native
-    def defaultProps: typings.antd.anon.Avatar = js.native
-    inline def defaultProps_=(x: typings.antd.anon.Avatar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("antd", "Skeleton")
+  @js.native
+  val Skeleton: FC[SkeletonProps] & typings.antd.skeletonSkeletonMod.CompoundedComponent = js.native
   
   @JSImport("antd", "Slider")
   @js.native
@@ -806,5 +769,5 @@ object mod {
   
   @JSImport("antd", "version")
   @js.native
-  val version: `4Dot23Dot2` = js.native
+  val version: `4Dot23Dot3` = js.native
 }

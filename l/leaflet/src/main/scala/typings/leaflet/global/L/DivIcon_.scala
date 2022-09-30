@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.DivIcon")
 @js.native
-class DivIcon_ ()
+open class DivIcon_ ()
   extends typings.leaflet.mod.DivIcon_ {
   def this(options: DivIconOptions) = this()
 }

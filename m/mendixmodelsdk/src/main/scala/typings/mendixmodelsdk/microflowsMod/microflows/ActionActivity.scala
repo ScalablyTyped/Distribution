@@ -11,12 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * See: {@link https://docs.mendix.com/refguide/activities relevant section in reference guide}
-  */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ActionActivity")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ActionActivity")
 @js.native
-class ActionActivity protected () extends Activity {
+open class ActionActivity protected () extends Activity {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,12 +35,18 @@ class ActionActivity protected () extends Activity {
   def caption: String = js.native
   def caption_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.12.0: introduced
+    */
+  def disabled: Boolean = js.native
+  def disabled_=(newValue: Boolean): Unit = js.native
+  
   def documentation: String = js.native
   def documentation_=(newValue: String): Unit = js.native
 }
 object ActionActivity {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ActionActivity")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ActionActivity")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +67,13 @@ object ActionActivity {
   inline def createIn(container: MicroflowObjectCollection): ActionActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ActionActivity]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ActionActivity.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ActionActivity.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ActionActivity.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ActionActivity.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import typings.std.Omit
 import typings.std.Record
 import typings.std.TemplateStringsArray
 import typings.styledComponents.anon.As
-import typings.styledComponents.anon.`348`
+import typings.styledComponents.anon.`172`
 import typings.styledComponents.styledComponentsStrings.$as
 import typings.styledComponents.styledComponentsStrings.as
 import org.scalablytyped.runtime.StObject
@@ -23,7 +23,7 @@ type BaseExtensibleObject = StringDictionary[Any]
 
 type CustomComponentProps[ActualComponent /* <: StyledTarget */, PropsToBeInjectedIntoActualComponent /* <: js.Object */, ActualComponentProps] = (As[ActualComponent] & HTMLAttributes[ActualComponent] & (Omit[
 PropsToBeInjectedIntoActualComponent, 
-(/* keyof ActualComponentProps */ String) | as | $as]) & ActualComponentProps) | (`348`[ActualComponent] & HTMLAttributes[ActualComponent] & (Omit[
+(/* keyof ActualComponentProps */ String) | as | $as]) & ActualComponentProps) | (`172`[ActualComponent] & HTMLAttributes[ActualComponent] & (Omit[
 PropsToBeInjectedIntoActualComponent, 
 (/* keyof ActualComponentProps */ String) | as | $as]) & ActualComponentProps)
 

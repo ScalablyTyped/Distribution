@@ -2,6 +2,7 @@ package typings.pAll
 
 import org.scalablytyped.runtime.TopLevel
 import typings.pMap.mod.Options
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,5 +40,5 @@ object mod {
   // From: https://github.com/microsoft/TypeScript/blob/4f5b3299fee9a54b692aba9df7a9e894bd86e81d/src/lib/es2015.promise.d.ts#L1
   type Awaited[T] = T
   
-  type PromiseFactory[T] = js.Function0[js.Thenable[T]]
+  type PromiseFactory[T] = js.Function0[PromiseLike[T]]
 }

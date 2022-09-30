@@ -7,6 +7,7 @@ import typings.csvtojson.converterMod.PreFileLineCallback
 import typings.csvtojson.converterMod.PreRawDataCallback
 import typings.csvtojson.parametersMod.CellParser
 import typings.node.bufferMod.global.Buffer
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -161,11 +162,11 @@ object parseRuntimeMod {
       
       inline def setParsedLineNumber(value: Double): Self = StObject.set(x, "parsedLineNumber", value.asInstanceOf[js.Any])
       
-      inline def setPreFileLineHook(value: (/* line */ String, /* lineNumber */ Double) => String | js.Thenable[String]): Self = StObject.set(x, "preFileLineHook", js.Any.fromFunction2(value))
+      inline def setPreFileLineHook(value: (/* line */ String, /* lineNumber */ Double) => String | PromiseLike[String]): Self = StObject.set(x, "preFileLineHook", js.Any.fromFunction2(value))
       
       inline def setPreFileLineHookUndefined: Self = StObject.set(x, "preFileLineHook", js.undefined)
       
-      inline def setPreRawDataHook(value: /* csvString */ String => String | js.Thenable[String]): Self = StObject.set(x, "preRawDataHook", js.Any.fromFunction1(value))
+      inline def setPreRawDataHook(value: /* csvString */ String => String | PromiseLike[String]): Self = StObject.set(x, "preRawDataHook", js.Any.fromFunction1(value))
       
       inline def setPreRawDataHookUndefined: Self = StObject.set(x, "preRawDataHook", js.undefined)
       

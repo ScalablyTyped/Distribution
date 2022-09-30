@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 6.8.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue")
 @js.native
-class EntityTypeJavaActionParameterValue protected ()
+open class EntityTypeJavaActionParameterValue protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.EntityTypeJavaActionParameterValue {
   def this(
     model: AbstractModel,
@@ -30,7 +30,7 @@ class EntityTypeJavaActionParameterValue protected ()
 }
 object EntityTypeJavaActionParameterValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -54,13 +54,13 @@ object EntityTypeJavaActionParameterValue {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.EntityTypeJavaActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.EntityTypeJavaActionParameterValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.EntityTypeJavaActionParameterValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

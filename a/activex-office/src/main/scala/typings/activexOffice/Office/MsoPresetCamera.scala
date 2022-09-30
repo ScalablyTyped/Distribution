@@ -1,136 +1,136 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-2`
-import typings.activexOffice.activexOfficeNumbers.`10`
-import typings.activexOffice.activexOfficeNumbers.`11`
-import typings.activexOffice.activexOfficeNumbers.`12`
-import typings.activexOffice.activexOfficeNumbers.`13`
-import typings.activexOffice.activexOfficeNumbers.`14`
-import typings.activexOffice.activexOfficeNumbers.`15`
-import typings.activexOffice.activexOfficeNumbers.`16`
-import typings.activexOffice.activexOfficeNumbers.`17`
-import typings.activexOffice.activexOfficeNumbers.`18`
-import typings.activexOffice.activexOfficeNumbers.`19`
-import typings.activexOffice.activexOfficeNumbers.`1`
-import typings.activexOffice.activexOfficeNumbers.`20`
-import typings.activexOffice.activexOfficeNumbers.`21`
-import typings.activexOffice.activexOfficeNumbers.`22`
-import typings.activexOffice.activexOfficeNumbers.`23`
-import typings.activexOffice.activexOfficeNumbers.`24`
-import typings.activexOffice.activexOfficeNumbers.`25`
-import typings.activexOffice.activexOfficeNumbers.`26`
-import typings.activexOffice.activexOfficeNumbers.`27`
-import typings.activexOffice.activexOfficeNumbers.`28`
-import typings.activexOffice.activexOfficeNumbers.`29`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`30`
-import typings.activexOffice.activexOfficeNumbers.`31`
-import typings.activexOffice.activexOfficeNumbers.`32`
-import typings.activexOffice.activexOfficeNumbers.`33`
-import typings.activexOffice.activexOfficeNumbers.`34`
-import typings.activexOffice.activexOfficeNumbers.`35`
-import typings.activexOffice.activexOfficeNumbers.`36`
-import typings.activexOffice.activexOfficeNumbers.`37`
-import typings.activexOffice.activexOfficeNumbers.`38`
-import typings.activexOffice.activexOfficeNumbers.`39`
-import typings.activexOffice.activexOfficeNumbers.`3`
-import typings.activexOffice.activexOfficeNumbers.`40`
-import typings.activexOffice.activexOfficeNumbers.`41`
-import typings.activexOffice.activexOfficeNumbers.`42`
-import typings.activexOffice.activexOfficeNumbers.`43`
-import typings.activexOffice.activexOfficeNumbers.`44`
-import typings.activexOffice.activexOfficeNumbers.`45`
-import typings.activexOffice.activexOfficeNumbers.`46`
-import typings.activexOffice.activexOfficeNumbers.`47`
-import typings.activexOffice.activexOfficeNumbers.`48`
-import typings.activexOffice.activexOfficeNumbers.`49`
-import typings.activexOffice.activexOfficeNumbers.`4`
-import typings.activexOffice.activexOfficeNumbers.`50`
-import typings.activexOffice.activexOfficeNumbers.`51`
-import typings.activexOffice.activexOfficeNumbers.`52`
-import typings.activexOffice.activexOfficeNumbers.`53`
-import typings.activexOffice.activexOfficeNumbers.`54`
-import typings.activexOffice.activexOfficeNumbers.`55`
-import typings.activexOffice.activexOfficeNumbers.`56`
-import typings.activexOffice.activexOfficeNumbers.`57`
-import typings.activexOffice.activexOfficeNumbers.`58`
-import typings.activexOffice.activexOfficeNumbers.`59`
-import typings.activexOffice.activexOfficeNumbers.`5`
-import typings.activexOffice.activexOfficeNumbers.`60`
-import typings.activexOffice.activexOfficeNumbers.`61`
-import typings.activexOffice.activexOfficeNumbers.`62`
-import typings.activexOffice.activexOfficeNumbers.`6`
-import typings.activexOffice.activexOfficeNumbers.`7`
-import typings.activexOffice.activexOfficeNumbers.`8`
-import typings.activexOffice.activexOfficeNumbers.`9`
+import typings.activexOffice.activexOfficeInts.`-2`
+import typings.activexOffice.activexOfficeInts.`10`
+import typings.activexOffice.activexOfficeInts.`11`
+import typings.activexOffice.activexOfficeInts.`12`
+import typings.activexOffice.activexOfficeInts.`13`
+import typings.activexOffice.activexOfficeInts.`14`
+import typings.activexOffice.activexOfficeInts.`15`
+import typings.activexOffice.activexOfficeInts.`16`
+import typings.activexOffice.activexOfficeInts.`17`
+import typings.activexOffice.activexOfficeInts.`18`
+import typings.activexOffice.activexOfficeInts.`19`
+import typings.activexOffice.activexOfficeInts.`1`
+import typings.activexOffice.activexOfficeInts.`20`
+import typings.activexOffice.activexOfficeInts.`21`
+import typings.activexOffice.activexOfficeInts.`22`
+import typings.activexOffice.activexOfficeInts.`23`
+import typings.activexOffice.activexOfficeInts.`24`
+import typings.activexOffice.activexOfficeInts.`25`
+import typings.activexOffice.activexOfficeInts.`26`
+import typings.activexOffice.activexOfficeInts.`27`
+import typings.activexOffice.activexOfficeInts.`28`
+import typings.activexOffice.activexOfficeInts.`29`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`30`
+import typings.activexOffice.activexOfficeInts.`31`
+import typings.activexOffice.activexOfficeInts.`32`
+import typings.activexOffice.activexOfficeInts.`33`
+import typings.activexOffice.activexOfficeInts.`34`
+import typings.activexOffice.activexOfficeInts.`35`
+import typings.activexOffice.activexOfficeInts.`36`
+import typings.activexOffice.activexOfficeInts.`37`
+import typings.activexOffice.activexOfficeInts.`38`
+import typings.activexOffice.activexOfficeInts.`39`
+import typings.activexOffice.activexOfficeInts.`3`
+import typings.activexOffice.activexOfficeInts.`40`
+import typings.activexOffice.activexOfficeInts.`41`
+import typings.activexOffice.activexOfficeInts.`42`
+import typings.activexOffice.activexOfficeInts.`43`
+import typings.activexOffice.activexOfficeInts.`44`
+import typings.activexOffice.activexOfficeInts.`45`
+import typings.activexOffice.activexOfficeInts.`46`
+import typings.activexOffice.activexOfficeInts.`47`
+import typings.activexOffice.activexOfficeInts.`48`
+import typings.activexOffice.activexOfficeInts.`49`
+import typings.activexOffice.activexOfficeInts.`4`
+import typings.activexOffice.activexOfficeInts.`50`
+import typings.activexOffice.activexOfficeInts.`51`
+import typings.activexOffice.activexOfficeInts.`52`
+import typings.activexOffice.activexOfficeInts.`53`
+import typings.activexOffice.activexOfficeInts.`54`
+import typings.activexOffice.activexOfficeInts.`55`
+import typings.activexOffice.activexOfficeInts.`56`
+import typings.activexOffice.activexOfficeInts.`57`
+import typings.activexOffice.activexOfficeInts.`58`
+import typings.activexOffice.activexOfficeInts.`59`
+import typings.activexOffice.activexOfficeInts.`5`
+import typings.activexOffice.activexOfficeInts.`60`
+import typings.activexOffice.activexOfficeInts.`61`
+import typings.activexOffice.activexOfficeInts.`62`
+import typings.activexOffice.activexOfficeInts.`6`
+import typings.activexOffice.activexOfficeInts.`7`
+import typings.activexOffice.activexOfficeInts.`8`
+import typings.activexOffice.activexOfficeInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`23`
-  - typings.activexOffice.activexOfficeNumbers.`22`
-  - typings.activexOffice.activexOfficeNumbers.`25`
-  - typings.activexOffice.activexOfficeNumbers.`24`
-  - typings.activexOffice.activexOfficeNumbers.`28`
-  - typings.activexOffice.activexOfficeNumbers.`29`
-  - typings.activexOffice.activexOfficeNumbers.`30`
-  - typings.activexOffice.activexOfficeNumbers.`31`
-  - typings.activexOffice.activexOfficeNumbers.`32`
-  - typings.activexOffice.activexOfficeNumbers.`33`
-  - typings.activexOffice.activexOfficeNumbers.`36`
-  - typings.activexOffice.activexOfficeNumbers.`34`
-  - typings.activexOffice.activexOfficeNumbers.`35`
-  - typings.activexOffice.activexOfficeNumbers.`39`
-  - typings.activexOffice.activexOfficeNumbers.`37`
-  - typings.activexOffice.activexOfficeNumbers.`38`
-  - typings.activexOffice.activexOfficeNumbers.`27`
-  - typings.activexOffice.activexOfficeNumbers.`26`
-  - typings.activexOffice.activexOfficeNumbers.`21`
-  - typings.activexOffice.activexOfficeNumbers.`20`
-  - typings.activexOffice.activexOfficeNumbers.`8`
-  - typings.activexOffice.activexOfficeNumbers.`7`
-  - typings.activexOffice.activexOfficeNumbers.`9`
-  - typings.activexOffice.activexOfficeNumbers.`5`
-  - typings.activexOffice.activexOfficeNumbers.`4`
-  - typings.activexOffice.activexOfficeNumbers.`6`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`1`
-  - typings.activexOffice.activexOfficeNumbers.`3`
-  - typings.activexOffice.activexOfficeNumbers.`17`
-  - typings.activexOffice.activexOfficeNumbers.`16`
-  - typings.activexOffice.activexOfficeNumbers.`18`
-  - typings.activexOffice.activexOfficeNumbers.`14`
-  - typings.activexOffice.activexOfficeNumbers.`13`
-  - typings.activexOffice.activexOfficeNumbers.`15`
-  - typings.activexOffice.activexOfficeNumbers.`11`
-  - typings.activexOffice.activexOfficeNumbers.`10`
-  - typings.activexOffice.activexOfficeNumbers.`12`
-  - typings.activexOffice.activexOfficeNumbers.`46`
-  - typings.activexOffice.activexOfficeNumbers.`45`
-  - typings.activexOffice.activexOfficeNumbers.`47`
-  - typings.activexOffice.activexOfficeNumbers.`43`
-  - typings.activexOffice.activexOfficeNumbers.`44`
-  - typings.activexOffice.activexOfficeNumbers.`41`
-  - typings.activexOffice.activexOfficeNumbers.`40`
-  - typings.activexOffice.activexOfficeNumbers.`42`
-  - typings.activexOffice.activexOfficeNumbers.`19`
-  - typings.activexOffice.activexOfficeNumbers.`51`
-  - typings.activexOffice.activexOfficeNumbers.`53`
-  - typings.activexOffice.activexOfficeNumbers.`54`
-  - typings.activexOffice.activexOfficeNumbers.`52`
-  - typings.activexOffice.activexOfficeNumbers.`55`
-  - typings.activexOffice.activexOfficeNumbers.`56`
-  - typings.activexOffice.activexOfficeNumbers.`48`
-  - typings.activexOffice.activexOfficeNumbers.`59`
-  - typings.activexOffice.activexOfficeNumbers.`60`
-  - typings.activexOffice.activexOfficeNumbers.`57`
-  - typings.activexOffice.activexOfficeNumbers.`58`
-  - typings.activexOffice.activexOfficeNumbers.`49`
-  - typings.activexOffice.activexOfficeNumbers.`61`
-  - typings.activexOffice.activexOfficeNumbers.`62`
-  - typings.activexOffice.activexOfficeNumbers.`50`
-  - typings.activexOffice.activexOfficeNumbers.`-2`
+  - typings.activexOffice.activexOfficeInts.`23`
+  - typings.activexOffice.activexOfficeInts.`22`
+  - typings.activexOffice.activexOfficeInts.`25`
+  - typings.activexOffice.activexOfficeInts.`24`
+  - typings.activexOffice.activexOfficeInts.`28`
+  - typings.activexOffice.activexOfficeInts.`29`
+  - typings.activexOffice.activexOfficeInts.`30`
+  - typings.activexOffice.activexOfficeInts.`31`
+  - typings.activexOffice.activexOfficeInts.`32`
+  - typings.activexOffice.activexOfficeInts.`33`
+  - typings.activexOffice.activexOfficeInts.`36`
+  - typings.activexOffice.activexOfficeInts.`34`
+  - typings.activexOffice.activexOfficeInts.`35`
+  - typings.activexOffice.activexOfficeInts.`39`
+  - typings.activexOffice.activexOfficeInts.`37`
+  - typings.activexOffice.activexOfficeInts.`38`
+  - typings.activexOffice.activexOfficeInts.`27`
+  - typings.activexOffice.activexOfficeInts.`26`
+  - typings.activexOffice.activexOfficeInts.`21`
+  - typings.activexOffice.activexOfficeInts.`20`
+  - typings.activexOffice.activexOfficeInts.`8`
+  - typings.activexOffice.activexOfficeInts.`7`
+  - typings.activexOffice.activexOfficeInts.`9`
+  - typings.activexOffice.activexOfficeInts.`5`
+  - typings.activexOffice.activexOfficeInts.`4`
+  - typings.activexOffice.activexOfficeInts.`6`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`1`
+  - typings.activexOffice.activexOfficeInts.`3`
+  - typings.activexOffice.activexOfficeInts.`17`
+  - typings.activexOffice.activexOfficeInts.`16`
+  - typings.activexOffice.activexOfficeInts.`18`
+  - typings.activexOffice.activexOfficeInts.`14`
+  - typings.activexOffice.activexOfficeInts.`13`
+  - typings.activexOffice.activexOfficeInts.`15`
+  - typings.activexOffice.activexOfficeInts.`11`
+  - typings.activexOffice.activexOfficeInts.`10`
+  - typings.activexOffice.activexOfficeInts.`12`
+  - typings.activexOffice.activexOfficeInts.`46`
+  - typings.activexOffice.activexOfficeInts.`45`
+  - typings.activexOffice.activexOfficeInts.`47`
+  - typings.activexOffice.activexOfficeInts.`43`
+  - typings.activexOffice.activexOfficeInts.`44`
+  - typings.activexOffice.activexOfficeInts.`41`
+  - typings.activexOffice.activexOfficeInts.`40`
+  - typings.activexOffice.activexOfficeInts.`42`
+  - typings.activexOffice.activexOfficeInts.`19`
+  - typings.activexOffice.activexOfficeInts.`51`
+  - typings.activexOffice.activexOfficeInts.`53`
+  - typings.activexOffice.activexOfficeInts.`54`
+  - typings.activexOffice.activexOfficeInts.`52`
+  - typings.activexOffice.activexOfficeInts.`55`
+  - typings.activexOffice.activexOfficeInts.`56`
+  - typings.activexOffice.activexOfficeInts.`48`
+  - typings.activexOffice.activexOfficeInts.`59`
+  - typings.activexOffice.activexOfficeInts.`60`
+  - typings.activexOffice.activexOfficeInts.`57`
+  - typings.activexOffice.activexOfficeInts.`58`
+  - typings.activexOffice.activexOfficeInts.`49`
+  - typings.activexOffice.activexOfficeInts.`61`
+  - typings.activexOffice.activexOfficeInts.`62`
+  - typings.activexOffice.activexOfficeInts.`50`
+  - typings.activexOffice.activexOfficeInts.`-2`
 */
 trait MsoPresetCamera extends StObject
 object MsoPresetCamera {

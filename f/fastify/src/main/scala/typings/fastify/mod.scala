@@ -45,6 +45,7 @@ import typings.node.httpMod.ServerResponse
 import typings.node.httpsMod.ServerOptions
 import typings.node.nodeNetMod.Socket
 import typings.std.Error
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -62,8 +63,8 @@ object mod {
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       ServerResponse[IncomingMessage]
     ]
-  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
-  inline def default[Server /* <: Http2Server */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2Options[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  inline def default[Server /* <: Http2Server */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2Options[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   /**
     * Fastify factory function for the standard fastify http, https, or http2 server instance.
     *
@@ -72,21 +73,21 @@ object mod {
     * @param opts Fastify server options
     * @returns Fastify server instance
     */
-  inline def default[Server /* <: Http2SecureServer */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2SecureOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  inline def default[Server /* <: Http2SecureServer */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2SecureOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   inline def default[Server /* <: typings.node.httpsMod.Server[
     Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
     ]
-  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttpsOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttpsOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   inline def default[Server /* <: typings.node.httpMod.Server[
     Instantiable1[/* socket */ Socket, IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       ServerResponse[IncomingMessage]
     ]
-  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyServerOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyServerOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   
   inline def fastify[Server /* <: typings.node.httpMod.Server[
     Instantiable1[/* socket */ Socket, IncomingMessage], 
@@ -94,8 +95,8 @@ object mod {
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       ServerResponse[IncomingMessage]
     ]
-  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")().asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
-  inline def fastify[Server /* <: Http2Server */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2Options[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")().asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  inline def fastify[Server /* <: Http2Server */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2Options[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   /**
     * Fastify factory function for the standard fastify http, https, or http2 server instance.
     *
@@ -104,21 +105,21 @@ object mod {
     * @param opts Fastify server options
     * @returns Fastify server instance
     */
-  inline def fastify[Server /* <: Http2SecureServer */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2SecureOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  inline def fastify[Server /* <: Http2SecureServer */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttp2SecureOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   inline def fastify[Server /* <: typings.node.httpsMod.Server[
     Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
     ]
-  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttpsOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyHttpsOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   inline def fastify[Server /* <: typings.node.httpMod.Server[
     Instantiable1[/* socket */ Socket, IncomingMessage], 
     Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
       ServerResponse[IncomingMessage]
     ]
-  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyServerOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (js.Thenable[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
+  ] */, Request /* <: RawRequestDefaultExpression[Server] */, Reply /* <: RawReplyDefaultExpression[Server] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */](opts: FastifyServerOptions[Server, Logger]): (FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("fastify")(opts.asInstanceOf[js.Any]).asInstanceOf[(FastifyInstance[Server, Request, Reply, Logger, TypeProvider]) & (PromiseLike[FastifyInstance[Server, Request, Reply, Logger, TypeProvider]])]
   
   trait ConnectionError
     extends StObject

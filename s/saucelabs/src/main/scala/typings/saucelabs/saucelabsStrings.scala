@@ -195,12 +195,28 @@ object saucelabsStrings {
   inline def XCUITEST: XCUITEST = "XCUITEST".asInstanceOf[XCUITEST]
   
   @js.native
+  sealed trait active extends StObject
+  inline def active: active = "active".asInstanceOf[active]
+  
+  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
+  sealed trait apac extends StObject
+  inline def apac: apac = "apac".asInstanceOf[apac]
+  
+  @js.native
+  sealed trait `apac-southeast-1` extends StObject
+  inline def `apac-southeast-1`: `apac-southeast-1` = "apac-southeast-1".asInstanceOf[`apac-southeast-1`]
+  
+  @js.native
   sealed trait appium_ extends StObject
   inline def appium_ : appium_ = "appium".asInstanceOf[appium_]
+  
+  @js.native
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait baseline extends StObject
@@ -209,6 +225,10 @@ object saucelabsStrings {
   @js.native
   sealed trait complete extends StObject
   inline def complete: complete = "complete".asInstanceOf[complete]
+  
+  @js.native
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait error_ extends StObject
@@ -227,6 +247,10 @@ object saucelabsStrings {
   inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
+  sealed trait inactive extends StObject
+  inline def inactive: inactive = "inactive".asInstanceOf[inactive]
+  
+  @js.native
   sealed trait marketing extends StObject
   inline def marketing: marketing = "marketing".asInstanceOf[marketing]
   
@@ -239,6 +263,10 @@ object saucelabsStrings {
   inline def passed: passed = "passed".asInstanceOf[passed]
   
   @js.native
+  sealed trait pending extends StObject
+  inline def pending: pending = "pending".asInstanceOf[pending]
+  
+  @js.native
   sealed trait public extends StObject
   inline def public: public = "public".asInstanceOf[public]
   
@@ -247,12 +275,24 @@ object saucelabsStrings {
   inline def `public restricted`: `public restricted` = ("public restricted").asInstanceOf[`public restricted`]
   
   @js.native
+  sealed trait rdc extends StObject
+  inline def rdc: rdc = "rdc".asInstanceOf[rdc]
+  
+  @js.native
+  sealed trait running extends StObject
+  inline def running: running = "running".asInstanceOf[running]
+  
+  @js.native
   sealed trait share extends StObject
   inline def share: share = "share".asInstanceOf[share]
   
   @js.native
   sealed trait staging extends StObject
   inline def staging: staging = "staging".asInstanceOf[staging]
+  
+  @js.native
+  sealed trait success_ extends StObject
+  inline def success_ : success_ = "success".asInstanceOf[success_]
   
   @js.native
   sealed trait team extends StObject
@@ -269,6 +309,10 @@ object saucelabsStrings {
   @js.native
   sealed trait `us-west-1` extends StObject
   inline def `us-west-1`: `us-west-1` = "us-west-1".asInstanceOf[`us-west-1`]
+  
+  @js.native
+  sealed trait vdc extends StObject
+  inline def vdc: vdc = "vdc".asInstanceOf[vdc]
   
   @js.native
   sealed trait webdriver extends StObject

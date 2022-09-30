@@ -10,10 +10,10 @@ Routing for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-routing-machine |
 | Keywords           | leaflet, routing, osrm |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 244427 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 36153.666666666664 |
+| # stars            | 887.0 |
 
 ## Links
 - [Homepage](https://github.com/perliedman/leaflet-routing-machine)

@@ -1,6 +1,5 @@
 package typings.twig.mod
 
-import typings.twig.twigStrings.Rightparenthesis
 import typings.twig.twigStrings.TwigDotexpressionDottypeDotsubexpressionDotend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompiledSubexpressionToken
   extends StObject
-     with CompiledGenericTokenWithMatch[TwigDotexpressionDottypeDotsubexpressionDotend, Rightparenthesis] {
+     with CompiledGenericTokenWithMatch[TwigDotexpressionDottypeDotsubexpressionDotend, String] {
   
   var expression: Boolean
   

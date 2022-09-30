@@ -1,17 +1,12 @@
 package typings.xadesjs.mod.xml
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.xadesjs.mod.xml.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("xadesjs", "xml.SigPolicyHash")
 @js.native
-class SigPolicyHash ()
-  extends typings.xadesjs.xmlMod.SigPolicyHash
-object SigPolicyHash {
-  
-  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SigPolicyHash] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigPolicyHash").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigPolicyHash]]
+open class SigPolicyHash ()
+  extends typings.xadesjs.typesXmlMod.SigPolicyHash {
+  def this(properties: js.Object) = this()
 }

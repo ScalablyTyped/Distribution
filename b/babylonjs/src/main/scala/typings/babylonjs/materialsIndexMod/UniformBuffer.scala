@@ -89,7 +89,7 @@ object UniformBuffer {
   
   inline def _TempBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TempBuffer")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Materials/index", "UniformBuffer._UpdatedUbosInFrame")
   @js.native
   def _UpdatedUbosInFrame: StringDictionary[Double] = js.native

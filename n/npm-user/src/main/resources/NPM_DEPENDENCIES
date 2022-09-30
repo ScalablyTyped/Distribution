@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "npm-user" : "4.1.1"
+      "npm-user" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "npm-user" : "4.1.1"
+      "npm-user" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

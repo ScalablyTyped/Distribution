@@ -1,11 +1,11 @@
 package typings.nodegit
 
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`5`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`5`
 import typings.nodegit.oidMod.Oid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,12 +26,12 @@ object rebaseOperationMod {
   object RebaseOperation {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`5`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`5`
     */
     trait REBASE_OPERATION extends StObject
     object REBASE_OPERATION {

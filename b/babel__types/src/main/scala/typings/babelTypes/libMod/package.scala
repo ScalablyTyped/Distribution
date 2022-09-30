@@ -2196,9 +2196,9 @@ inline def assignmentPattern(left: ArrayPattern_, right: Expression): Assignment
 inline def assignmentPattern(left: Identifier_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
 inline def assignmentPattern(left: MemberExpression_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
 inline def assignmentPattern(left: ObjectPattern_, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
-inline def assignmentPattern(left: TSAsExpression, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
-inline def assignmentPattern(left: TSNonNullExpression, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
-inline def assignmentPattern(left: TSTypeAssertion, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
+inline def assignmentPattern(left: TSAsExpression__, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
+inline def assignmentPattern(left: TSNonNullExpression__, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
+inline def assignmentPattern(left: TSTypeAssertion__, right: Expression): AssignmentPattern_ = (^.asInstanceOf[js.Dynamic].applyDynamic("assignmentPattern")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[AssignmentPattern_]
 
 inline def awaitExpression(argument: Expression): AwaitExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("awaitExpression")(argument.asInstanceOf[js.Any]).asInstanceOf[AwaitExpression_]
 
@@ -2241,15 +2241,15 @@ inline def buildMatchMemberExpression(`match`: String, allowPartial: Boolean): j
 
 inline def callExpression(
   callee: Expression,
-  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]
+  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
 ): CallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("callExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[CallExpression_]
 inline def callExpression(
   callee: Super_,
-  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]
+  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
 ): CallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("callExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[CallExpression_]
 inline def callExpression(
   callee: V8IntrinsicIdentifier_,
-  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]
+  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
 ): CallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("callExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[CallExpression_]
 
 inline def catchClause(param: Null, body: BlockStatement_): CatchClause_ = (^.asInstanceOf[js.Dynamic].applyDynamic("catchClause")(param.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[CatchClause_]
@@ -2261,7 +2261,7 @@ inline def catchClause(param: ObjectPattern_, body: BlockStatement_): CatchClaus
 inline def classAccessorProperty(
   key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression | PrivateName_,
   value: js.UndefOr[Expression | Null],
-  typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null],
+  typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null],
   decorators: js.UndefOr[js.Array[Decorator_] | Null],
   computed: js.UndefOr[Boolean],
   _static: js.UndefOr[Boolean]
@@ -2269,7 +2269,7 @@ inline def classAccessorProperty(
 
 inline def classBody(
   body: js.Array[
-  ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod | TSIndexSignature | StaticBlock_
+  ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod__ | TSIndexSignature__ | StaticBlock_
 ]
 ): ClassBody_ = ^.asInstanceOf[js.Dynamic].applyDynamic("classBody")(body.asInstanceOf[js.Any]).asInstanceOf[ClassBody_]
 
@@ -2305,7 +2305,7 @@ inline def classImplements(id: Identifier_, typeParameters: TypeParameterInstant
 inline def classMethod(
   kind: js.UndefOr[get | set | method_ | constructor],
   key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
-  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_,
   computed: js.UndefOr[Boolean],
   _static: js.UndefOr[Boolean],
@@ -2316,26 +2316,26 @@ inline def classMethod(
 inline def classPrivateMethod(
   kind: get | set | method_,
   key: PrivateName_,
-  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_
 ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
 inline def classPrivateMethod(
   kind: get | set | method_,
   key: PrivateName_,
-  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_,
   _static: Boolean
 ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
 inline def classPrivateMethod(
   kind: Unit,
   key: PrivateName_,
-  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_
 ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
 inline def classPrivateMethod(
   kind: Unit,
   key: PrivateName_,
-  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
   body: BlockStatement_,
   _static: Boolean
 ): ClassPrivateMethod_ = (^.asInstanceOf[js.Dynamic].applyDynamic("classPrivateMethod")(kind.asInstanceOf[js.Any], key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], body.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[ClassPrivateMethod_]
@@ -2358,7 +2358,7 @@ inline def classPrivateProperty(key: PrivateName_, value: Expression, decorators
 inline def classProperty(
   key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
   value: js.UndefOr[Expression | Null],
-  typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null],
+  typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null],
   decorators: js.UndefOr[js.Array[Decorator_] | Null],
   computed: js.UndefOr[Boolean],
   _static: js.UndefOr[Boolean]
@@ -2416,7 +2416,7 @@ inline def createFlowUnionType[T /* <: FlowType */](types: js.Array[T]): T | Uni
   * Takes an array of `types` and flattens them, removing duplicates and
   * returns a `UnionTypeAnnotation` node containing them.
   */
-inline def createTSUnionType(typeAnnotations: js.Array[TSTypeAnnotation | TSType]): TSType = ^.asInstanceOf[js.Dynamic].applyDynamic("createTSUnionType")(typeAnnotations.asInstanceOf[js.Any]).asInstanceOf[TSType]
+inline def createTSUnionType(typeAnnotations: js.Array[TSTypeAnnotation__ | TSType]): TSType = ^.asInstanceOf[js.Dynamic].applyDynamic("createTSUnionType")(typeAnnotations.asInstanceOf[js.Any]).asInstanceOf[TSType]
 
 inline def createTypeAnnotationBasedOnTypeof_bigint(`type`: bigint): AnyTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeAnnotationBasedOnTypeof")(`type`.asInstanceOf[js.Any]).asInstanceOf[AnyTypeAnnotation_]
 
@@ -2619,7 +2619,7 @@ inline def exportAllDeclaration(source: StringLiteral_): ExportAllDeclaration_ =
 inline def exportDefaultDeclaration(declaration: ClassDeclaration_): ExportDefaultDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDefaultDeclaration")(declaration.asInstanceOf[js.Any]).asInstanceOf[ExportDefaultDeclaration_]
 inline def exportDefaultDeclaration(declaration: Expression): ExportDefaultDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDefaultDeclaration")(declaration.asInstanceOf[js.Any]).asInstanceOf[ExportDefaultDeclaration_]
 inline def exportDefaultDeclaration(declaration: FunctionDeclaration_): ExportDefaultDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDefaultDeclaration")(declaration.asInstanceOf[js.Any]).asInstanceOf[ExportDefaultDeclaration_]
-inline def exportDefaultDeclaration(declaration: TSDeclareFunction): ExportDefaultDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDefaultDeclaration")(declaration.asInstanceOf[js.Any]).asInstanceOf[ExportDefaultDeclaration_]
+inline def exportDefaultDeclaration(declaration: TSDeclareFunction__): ExportDefaultDeclaration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDefaultDeclaration")(declaration.asInstanceOf[js.Any]).asInstanceOf[ExportDefaultDeclaration_]
 
 inline def exportDefaultSpecifier(exported: Identifier_): ExportDefaultSpecifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDefaultSpecifier")(exported.asInstanceOf[js.Any]).asInstanceOf[ExportDefaultSpecifier_]
 
@@ -4870,193 +4870,229 @@ inline def isYieldExpression(node: js.Object, opts: js.Object): /* is @babel/typ
 inline def isYieldExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
 inline def isYieldExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
 
-inline def is_P_Node[P /* <: Node */](`type`: String, node: Null, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is_P_Node[P /* <: Node */](`type`: String, node: Unit, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is_P_Node[P /* <: Node */](`type`: String, node: Node, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, node: Null, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, node: Unit, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is_P[P /* <: Node */](`type`: String, node: Node, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
 
-inline def jSXAttribute_(name: JSXIdentifier): JSXAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXIdentifier, value: JSXElement): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXIdentifier, value: JSXExpressionContainer): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXIdentifier, value: JSXFragment): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXIdentifier, value: StringLiteral_): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXNamespacedName): JSXAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXNamespacedName, value: JSXElement): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXNamespacedName, value: JSXExpressionContainer): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXNamespacedName, value: JSXFragment): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jSXAttribute_(name: JSXNamespacedName, value: StringLiteral_): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
+inline def jSXAttribute_(name: JSXIdentifier__): JSXAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXIdentifier__, value: JSXElement__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXIdentifier__, value: JSXExpressionContainer__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXIdentifier__, value: JSXFragment__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXIdentifier__, value: StringLiteral_): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXNamespacedName__): JSXAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXNamespacedName__, value: JSXElement__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXNamespacedName__, value: JSXExpressionContainer__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXNamespacedName__, value: JSXFragment__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jSXAttribute_(name: JSXNamespacedName__, value: StringLiteral_): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
 
-inline def jSXClosingElement_(name: JSXIdentifier): JSXClosingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement]
-inline def jSXClosingElement_(name: JSXMemberExpression): JSXClosingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement]
-inline def jSXClosingElement_(name: JSXNamespacedName): JSXClosingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement]
+inline def jSXClosingElement_(name: JSXIdentifier__): JSXClosingElement__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement__]
+inline def jSXClosingElement_(name: JSXMemberExpression__): JSXClosingElement__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement__]
+inline def jSXClosingElement_(name: JSXNamespacedName__): JSXClosingElement__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement__]
 
-inline def jSXClosingFragment_(): JSXClosingFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingFragment")().asInstanceOf[JSXClosingFragment]
+inline def jSXClosingFragment_(): JSXClosingFragment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXClosingFragment")().asInstanceOf[JSXClosingFragment__]
 
 inline def jSXElement_(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Null,
-  children: js.Array[JSXElement | JSXExpressionContainer | JSXFragment | JSXSpreadChild | JSXText]
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+  children: js.Array[
+  JSXElement__ | JSXExpressionContainer__ | JSXFragment__ | JSXSpreadChild__ | JSXText__
+]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jSXElement_(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Null,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+],
   selfClosing: Boolean
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jSXElement_(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Unit,
-  children: js.Array[JSXElement | JSXExpressionContainer | JSXFragment | JSXSpreadChild | JSXText]
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+  children: js.Array[
+  JSXElement__ | JSXExpressionContainer__ | JSXFragment__ | JSXSpreadChild__ | JSXText__
+]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jSXElement_(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Unit,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+],
   selfClosing: Boolean
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jSXElement_(
-  openingElement: JSXOpeningElement,
-  closingElement: JSXClosingElement,
-  children: js.Array[JSXElement | JSXExpressionContainer | JSXFragment | JSXSpreadChild | JSXText]
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+  openingElement: JSXOpeningElement__,
+  closingElement: JSXClosingElement__,
+  children: js.Array[
+  JSXElement__ | JSXExpressionContainer__ | JSXFragment__ | JSXSpreadChild__ | JSXText__
+]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jSXElement_(
-  openingElement: JSXOpeningElement,
-  closingElement: JSXClosingElement,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+  openingElement: JSXOpeningElement__,
+  closingElement: JSXClosingElement__,
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+],
   selfClosing: Boolean
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 
-inline def jSXEmptyExpression_(): JSXEmptyExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXEmptyExpression")().asInstanceOf[JSXEmptyExpression]
+inline def jSXEmptyExpression_(): JSXEmptyExpression__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXEmptyExpression")().asInstanceOf[JSXEmptyExpression__]
 
-inline def jSXExpressionContainer_(expression: Expression): JSXExpressionContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer]
-inline def jSXExpressionContainer_(expression: JSXEmptyExpression): JSXExpressionContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer]
+inline def jSXExpressionContainer_(expression: Expression): JSXExpressionContainer__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer__]
+inline def jSXExpressionContainer_(expression: JSXEmptyExpression__): JSXExpressionContainer__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer__]
 
 inline def jSXFragment_(
-  openingFragment: JSXOpeningFragment,
-  closingFragment: JSXClosingFragment,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]
-): JSXFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXFragment")(openingFragment.asInstanceOf[js.Any], closingFragment.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXFragment]
+  openingFragment: JSXOpeningFragment__,
+  closingFragment: JSXClosingFragment__,
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+]
+): JSXFragment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXFragment")(openingFragment.asInstanceOf[js.Any], closingFragment.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXFragment__]
 
-inline def jSXIdentifier_(name: String): JSXIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[JSXIdentifier]
+inline def jSXIdentifier_(name: String): JSXIdentifier__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[JSXIdentifier__]
 
-inline def jSXMemberExpression_(`object`: JSXIdentifier, property: JSXIdentifier): JSXMemberExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression]
-inline def jSXMemberExpression_(`object`: JSXMemberExpression, property: JSXIdentifier): JSXMemberExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression]
+inline def jSXMemberExpression_(`object`: JSXIdentifier__, property: JSXIdentifier__): JSXMemberExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression__]
+inline def jSXMemberExpression_(`object`: JSXMemberExpression__, property: JSXIdentifier__): JSXMemberExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression__]
 
-inline def jSXNamespacedName_(namespace: JSXIdentifier, name: JSXIdentifier): JSXNamespacedName = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXNamespacedName")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[JSXNamespacedName]
+inline def jSXNamespacedName_(namespace: JSXIdentifier__, name: JSXIdentifier__): JSXNamespacedName__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXNamespacedName")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[JSXNamespacedName__]
 
-inline def jSXOpeningElement_(name: JSXIdentifier, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
-inline def jSXOpeningElement_(name: JSXIdentifier, attributes: js.Array[JSXAttribute | JSXSpreadAttribute], selfClosing: Boolean): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
-inline def jSXOpeningElement_(name: JSXMemberExpression, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
+inline def jSXOpeningElement_(name: JSXIdentifier__, attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__]): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
 inline def jSXOpeningElement_(
-  name: JSXMemberExpression,
-  attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+  name: JSXIdentifier__,
+  attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__],
   selfClosing: Boolean
-): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
-inline def jSXOpeningElement_(name: JSXNamespacedName, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
+): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
+inline def jSXOpeningElement_(name: JSXMemberExpression__, attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__]): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
 inline def jSXOpeningElement_(
-  name: JSXNamespacedName,
-  attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+  name: JSXMemberExpression__,
+  attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__],
   selfClosing: Boolean
-): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
+): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
+inline def jSXOpeningElement_(name: JSXNamespacedName__, attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__]): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
+inline def jSXOpeningElement_(
+  name: JSXNamespacedName__,
+  attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__],
+  selfClosing: Boolean
+): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
 
-inline def jSXOpeningFragment_(): JSXOpeningFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningFragment")().asInstanceOf[JSXOpeningFragment]
+inline def jSXOpeningFragment_(): JSXOpeningFragment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXOpeningFragment")().asInstanceOf[JSXOpeningFragment__]
 
-inline def jSXSpreadAttribute_(argument: Expression): JSXSpreadAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXSpreadAttribute")(argument.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadAttribute]
+inline def jSXSpreadAttribute_(argument: Expression): JSXSpreadAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXSpreadAttribute")(argument.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadAttribute__]
 
-inline def jSXSpreadChild_(expression: Expression): JSXSpreadChild = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXSpreadChild")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadChild]
+inline def jSXSpreadChild_(expression: Expression): JSXSpreadChild__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXSpreadChild")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadChild__]
 
-inline def jSXText_(value: String): JSXText = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXText")(value.asInstanceOf[js.Any]).asInstanceOf[JSXText]
+inline def jSXText_(value: String): JSXText__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXText")(value.asInstanceOf[js.Any]).asInstanceOf[JSXText__]
 
-inline def jsxAttribute(name: JSXIdentifier): JSXAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXIdentifier, value: JSXElement): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXIdentifier, value: JSXExpressionContainer): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXIdentifier, value: JSXFragment): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXIdentifier, value: StringLiteral_): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXNamespacedName): JSXAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXNamespacedName, value: JSXElement): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXNamespacedName, value: JSXExpressionContainer): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXNamespacedName, value: JSXFragment): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
-inline def jsxAttribute(name: JSXNamespacedName, value: StringLiteral_): JSXAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute]
+inline def jsxAttribute(name: JSXIdentifier__): JSXAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXIdentifier__, value: JSXElement__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXIdentifier__, value: JSXExpressionContainer__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXIdentifier__, value: JSXFragment__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXIdentifier__, value: StringLiteral_): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXNamespacedName__): JSXAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXNamespacedName__, value: JSXElement__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXNamespacedName__, value: JSXExpressionContainer__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXNamespacedName__, value: JSXFragment__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
+inline def jsxAttribute(name: JSXNamespacedName__, value: StringLiteral_): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]
 
-inline def jsxClosingElement(name: JSXIdentifier): JSXClosingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement]
-inline def jsxClosingElement(name: JSXMemberExpression): JSXClosingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement]
-inline def jsxClosingElement(name: JSXNamespacedName): JSXClosingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement]
+inline def jsxClosingElement(name: JSXIdentifier__): JSXClosingElement__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement__]
+inline def jsxClosingElement(name: JSXMemberExpression__): JSXClosingElement__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement__]
+inline def jsxClosingElement(name: JSXNamespacedName__): JSXClosingElement__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingElement")(name.asInstanceOf[js.Any]).asInstanceOf[JSXClosingElement__]
 
-inline def jsxClosingFragment(): JSXClosingFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingFragment")().asInstanceOf[JSXClosingFragment]
+inline def jsxClosingFragment(): JSXClosingFragment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxClosingFragment")().asInstanceOf[JSXClosingFragment__]
 
 inline def jsxElement(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Null,
-  children: js.Array[JSXElement | JSXExpressionContainer | JSXFragment | JSXSpreadChild | JSXText]
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+  children: js.Array[
+  JSXElement__ | JSXExpressionContainer__ | JSXFragment__ | JSXSpreadChild__ | JSXText__
+]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jsxElement(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Null,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+],
   selfClosing: Boolean
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jsxElement(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Unit,
-  children: js.Array[JSXElement | JSXExpressionContainer | JSXFragment | JSXSpreadChild | JSXText]
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+  children: js.Array[
+  JSXElement__ | JSXExpressionContainer__ | JSXFragment__ | JSXSpreadChild__ | JSXText__
+]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jsxElement(
-  openingElement: JSXOpeningElement,
+  openingElement: JSXOpeningElement__,
   closingElement: Unit,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+],
   selfClosing: Boolean
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jsxElement(
-  openingElement: JSXOpeningElement,
-  closingElement: JSXClosingElement,
-  children: js.Array[JSXElement | JSXExpressionContainer | JSXFragment | JSXSpreadChild | JSXText]
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+  openingElement: JSXOpeningElement__,
+  closingElement: JSXClosingElement__,
+  children: js.Array[
+  JSXElement__ | JSXExpressionContainer__ | JSXFragment__ | JSXSpreadChild__ | JSXText__
+]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 inline def jsxElement(
-  openingElement: JSXOpeningElement,
-  closingElement: JSXClosingElement,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
+  openingElement: JSXOpeningElement__,
+  closingElement: JSXClosingElement__,
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+],
   selfClosing: Boolean
-): JSXElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement]
+): JSXElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxElement")(openingElement.asInstanceOf[js.Any], closingElement.asInstanceOf[js.Any], children.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXElement__]
 
-inline def jsxEmptyExpression(): JSXEmptyExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxEmptyExpression")().asInstanceOf[JSXEmptyExpression]
+inline def jsxEmptyExpression(): JSXEmptyExpression__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxEmptyExpression")().asInstanceOf[JSXEmptyExpression__]
 
-inline def jsxExpressionContainer(expression: Expression): JSXExpressionContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer]
-inline def jsxExpressionContainer(expression: JSXEmptyExpression): JSXExpressionContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer]
+inline def jsxExpressionContainer(expression: Expression): JSXExpressionContainer__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer__]
+inline def jsxExpressionContainer(expression: JSXEmptyExpression__): JSXExpressionContainer__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxExpressionContainer")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXExpressionContainer__]
 
 inline def jsxFragment(
-  openingFragment: JSXOpeningFragment,
-  closingFragment: JSXClosingFragment,
-  children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]
-): JSXFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxFragment")(openingFragment.asInstanceOf[js.Any], closingFragment.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXFragment]
+  openingFragment: JSXOpeningFragment__,
+  closingFragment: JSXClosingFragment__,
+  children: js.Array[
+  JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | JSXFragment__
+]
+): JSXFragment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxFragment")(openingFragment.asInstanceOf[js.Any], closingFragment.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[JSXFragment__]
 
-inline def jsxIdentifier(name: String): JSXIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[JSXIdentifier]
+inline def jsxIdentifier(name: String): JSXIdentifier__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxIdentifier")(name.asInstanceOf[js.Any]).asInstanceOf[JSXIdentifier__]
 
-inline def jsxMemberExpression(`object`: JSXIdentifier, property: JSXIdentifier): JSXMemberExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression]
-inline def jsxMemberExpression(`object`: JSXMemberExpression, property: JSXIdentifier): JSXMemberExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression]
+inline def jsxMemberExpression(`object`: JSXIdentifier__, property: JSXIdentifier__): JSXMemberExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression__]
+inline def jsxMemberExpression(`object`: JSXMemberExpression__, property: JSXIdentifier__): JSXMemberExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxMemberExpression")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[JSXMemberExpression__]
 
-inline def jsxNamespacedName(namespace: JSXIdentifier, name: JSXIdentifier): JSXNamespacedName = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxNamespacedName")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[JSXNamespacedName]
+inline def jsxNamespacedName(namespace: JSXIdentifier__, name: JSXIdentifier__): JSXNamespacedName__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxNamespacedName")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[JSXNamespacedName__]
 
-inline def jsxOpeningElement(name: JSXIdentifier, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
-inline def jsxOpeningElement(name: JSXIdentifier, attributes: js.Array[JSXAttribute | JSXSpreadAttribute], selfClosing: Boolean): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
-inline def jsxOpeningElement(name: JSXMemberExpression, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
+inline def jsxOpeningElement(name: JSXIdentifier__, attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__]): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
 inline def jsxOpeningElement(
-  name: JSXMemberExpression,
-  attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+  name: JSXIdentifier__,
+  attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__],
   selfClosing: Boolean
-): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
-inline def jsxOpeningElement(name: JSXNamespacedName, attributes: js.Array[JSXAttribute | JSXSpreadAttribute]): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
+): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
+inline def jsxOpeningElement(name: JSXMemberExpression__, attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__]): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
 inline def jsxOpeningElement(
-  name: JSXNamespacedName,
-  attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
+  name: JSXMemberExpression__,
+  attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__],
   selfClosing: Boolean
-): JSXOpeningElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement]
+): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
+inline def jsxOpeningElement(name: JSXNamespacedName__, attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__]): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
+inline def jsxOpeningElement(
+  name: JSXNamespacedName__,
+  attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__],
+  selfClosing: Boolean
+): JSXOpeningElement__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningElement")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], selfClosing.asInstanceOf[js.Any])).asInstanceOf[JSXOpeningElement__]
 
-inline def jsxOpeningFragment(): JSXOpeningFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningFragment")().asInstanceOf[JSXOpeningFragment]
+inline def jsxOpeningFragment(): JSXOpeningFragment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxOpeningFragment")().asInstanceOf[JSXOpeningFragment__]
 
-inline def jsxSpreadAttribute(argument: Expression): JSXSpreadAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxSpreadAttribute")(argument.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadAttribute]
+inline def jsxSpreadAttribute(argument: Expression): JSXSpreadAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxSpreadAttribute")(argument.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadAttribute__]
 
-inline def jsxSpreadChild(expression: Expression): JSXSpreadChild = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxSpreadChild")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadChild]
+inline def jsxSpreadChild(expression: Expression): JSXSpreadChild__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxSpreadChild")(expression.asInstanceOf[js.Any]).asInstanceOf[JSXSpreadChild__]
 
-inline def jsxText(value: String): JSXText = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxText")(value.asInstanceOf[js.Any]).asInstanceOf[JSXText]
+inline def jsxText(value: String): JSXText__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jsxText")(value.asInstanceOf[js.Any]).asInstanceOf[JSXText__]
 
 inline def labeledStatement(label: Identifier_, body: Statement): LabeledStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("labeledStatement")(label.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[LabeledStatement_]
 
@@ -5119,15 +5155,15 @@ inline def moduleExpression(body: Program_): ModuleExpression_ = ^.asInstanceOf[
 
 inline def newExpression(
   callee: Expression,
-  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]
+  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
 ): NewExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("newExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[NewExpression_]
 inline def newExpression(
   callee: Super_,
-  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]
+  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
 ): NewExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("newExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[NewExpression_]
 inline def newExpression(
   callee: V8IntrinsicIdentifier_,
-  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]
+  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
 ): NewExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("newExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[NewExpression_]
 
 inline def noop(): Noop_ = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Noop_]
@@ -5300,7 +5336,7 @@ inline def opaqueType(
 
 inline def optionalCallExpression(
   callee: Expression,
-  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+  _arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
   optional: Boolean
 ): OptionalCallExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("optionalCallExpression")(callee.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[OptionalCallExpression_]
 
@@ -5423,473 +5459,483 @@ inline def switchStatement(discriminant: Expression, cases: js.Array[SwitchCase_
 
 inline def symbolTypeAnnotation(): SymbolTypeAnnotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("symbolTypeAnnotation")().asInstanceOf[SymbolTypeAnnotation_]
 
-inline def tSAnyKeyword_(): TSAnyKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSAnyKeyword")().asInstanceOf[TSAnyKeyword]
+inline def tSAnyKeyword_(): TSAnyKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSAnyKeyword")().asInstanceOf[TSAnyKeyword__]
 
-inline def tSArrayType_(elementType: TSType): TSArrayType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSArrayType")(elementType.asInstanceOf[js.Any]).asInstanceOf[TSArrayType]
+inline def tSArrayType_(elementType: TSType): TSArrayType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSArrayType")(elementType.asInstanceOf[js.Any]).asInstanceOf[TSArrayType__]
 
-inline def tSAsExpression_(expression: Expression, typeAnnotation: TSType): TSAsExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("tSAsExpression")(expression.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSAsExpression]
+inline def tSAsExpression_(expression: Expression, typeAnnotation: TSType): TSAsExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSAsExpression")(expression.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSAsExpression__]
 
-inline def tSBigIntKeyword_(): TSBigIntKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSBigIntKeyword")().asInstanceOf[TSBigIntKeyword]
+inline def tSBigIntKeyword_(): TSBigIntKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSBigIntKeyword")().asInstanceOf[TSBigIntKeyword__]
 
-inline def tSBooleanKeyword_(): TSBooleanKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSBooleanKeyword")().asInstanceOf[TSBooleanKeyword]
+inline def tSBooleanKeyword_(): TSBooleanKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSBooleanKeyword")().asInstanceOf[TSBooleanKeyword__]
 
-inline def tSCallSignatureDeclaration_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+inline def tSCallSignatureDeclaration_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 inline def tSCallSignatureDeclaration_(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
-inline def tSCallSignatureDeclaration_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
+inline def tSCallSignatureDeclaration_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 inline def tSCallSignatureDeclaration_(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
-inline def tSCallSignatureDeclaration_(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
+inline def tSCallSignatureDeclaration_(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 inline def tSCallSignatureDeclaration_(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 
-inline def tSConditionalType_(checkType: TSType, extendsType: TSType, trueType: TSType, falseType: TSType): TSConditionalType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConditionalType")(checkType.asInstanceOf[js.Any], extendsType.asInstanceOf[js.Any], trueType.asInstanceOf[js.Any], falseType.asInstanceOf[js.Any])).asInstanceOf[TSConditionalType]
+inline def tSConditionalType_(checkType: TSType, extendsType: TSType, trueType: TSType, falseType: TSType): TSConditionalType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConditionalType")(checkType.asInstanceOf[js.Any], extendsType.asInstanceOf[js.Any], trueType.asInstanceOf[js.Any], falseType.asInstanceOf[js.Any])).asInstanceOf[TSConditionalType__]
 
-inline def tSConstructSignatureDeclaration_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+inline def tSConstructSignatureDeclaration_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 inline def tSConstructSignatureDeclaration_(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
-inline def tSConstructSignatureDeclaration_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
+inline def tSConstructSignatureDeclaration_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 inline def tSConstructSignatureDeclaration_(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
-inline def tSConstructSignatureDeclaration_(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
+inline def tSConstructSignatureDeclaration_(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 inline def tSConstructSignatureDeclaration_(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 
-inline def tSConstructorType_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+inline def tSConstructorType_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 inline def tSConstructorType_(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
-inline def tSConstructorType_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
+inline def tSConstructorType_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 inline def tSConstructorType_(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
-inline def tSConstructorType_(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
+inline def tSConstructorType_(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 inline def tSConstructorType_(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 
-inline def tSDeclareFunction_(id: Null, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+inline def tSDeclareFunction_(id: Null, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Null, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Null, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Null, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Null, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_]
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Null,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Unit, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Unit, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Unit, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Unit, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Unit, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Unit, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_]
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Unit,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Identifier_, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Identifier_, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Identifier_, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Identifier_, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tSDeclareFunction_(id: Identifier_, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tSDeclareFunction_(id: Identifier_, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_]
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tSDeclareFunction_(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 
 inline def tSDeclareMethod_(
   decorators: js.UndefOr[js.Array[Decorator_] | Null],
   key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
-  typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop_ | Null],
-  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
-  returnType: js.UndefOr[TSTypeAnnotation | Noop_ | Null]
-): TSDeclareMethod = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareMethod")(decorators.asInstanceOf[js.Any], key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareMethod]
+  typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Noop_ | Null],
+  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
+  returnType: js.UndefOr[TSTypeAnnotation__ | Noop_ | Null]
+): TSDeclareMethod__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSDeclareMethod")(decorators.asInstanceOf[js.Any], key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareMethod__]
 
-inline def tSEnumDeclaration_(id: Identifier_, members: js.Array[TSEnumMember]): TSEnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumDeclaration")(id.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration]
+inline def tSEnumDeclaration_(id: Identifier_, members: js.Array[TSEnumMember__]): TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumDeclaration")(id.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration__]
 
-inline def tSEnumMember_(id: Identifier_): TSEnumMember = ^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember]
-inline def tSEnumMember_(id: Identifier_, initializer: Expression): TSEnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember]
-inline def tSEnumMember_(id: StringLiteral_): TSEnumMember = ^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember]
-inline def tSEnumMember_(id: StringLiteral_, initializer: Expression): TSEnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember]
+inline def tSEnumMember_(id: Identifier_): TSEnumMember__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember__]
+inline def tSEnumMember_(id: Identifier_, initializer: Expression): TSEnumMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember__]
+inline def tSEnumMember_(id: StringLiteral_): TSEnumMember__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember__]
+inline def tSEnumMember_(id: StringLiteral_, initializer: Expression): TSEnumMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember__]
 
-inline def tSExportAssignment_(expression: Expression): TSExportAssignment = ^.asInstanceOf[js.Dynamic].applyDynamic("tSExportAssignment")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExportAssignment]
+inline def tSExportAssignment_(expression: Expression): TSExportAssignment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSExportAssignment")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExportAssignment__]
 
-inline def tSExpressionWithTypeArguments_(expression: TSEntityName): TSExpressionWithTypeArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("tSExpressionWithTypeArguments")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExpressionWithTypeArguments]
-inline def tSExpressionWithTypeArguments_(expression: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSExpressionWithTypeArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("tSExpressionWithTypeArguments")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSExpressionWithTypeArguments]
+inline def tSExpressionWithTypeArguments_(expression: TSEntityName): TSExpressionWithTypeArguments__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSExpressionWithTypeArguments")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExpressionWithTypeArguments__]
+inline def tSExpressionWithTypeArguments_(expression: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSExpressionWithTypeArguments__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSExpressionWithTypeArguments")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSExpressionWithTypeArguments__]
 
-inline def tSExternalModuleReference_(expression: StringLiteral_): TSExternalModuleReference = ^.asInstanceOf[js.Dynamic].applyDynamic("tSExternalModuleReference")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExternalModuleReference]
+inline def tSExternalModuleReference_(expression: StringLiteral_): TSExternalModuleReference__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSExternalModuleReference")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExternalModuleReference__]
 
-inline def tSFunctionType_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+inline def tSFunctionType_(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 inline def tSFunctionType_(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
-inline def tSFunctionType_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+  typeAnnotation: TSTypeAnnotation__
+): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
+inline def tSFunctionType_(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 inline def tSFunctionType_(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
-inline def tSFunctionType_(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+  typeAnnotation: TSTypeAnnotation__
+): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
+inline def tSFunctionType_(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 inline def tSFunctionType_(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+  typeAnnotation: TSTypeAnnotation__
+): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 
-inline def tSImportEqualsDeclaration_(id: Identifier_, moduleReference: TSEntityName): TSImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration]
-inline def tSImportEqualsDeclaration_(id: Identifier_, moduleReference: TSExternalModuleReference): TSImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration]
+inline def tSImportEqualsDeclaration_(id: Identifier_, moduleReference: TSEntityName): TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration__]
+inline def tSImportEqualsDeclaration_(id: Identifier_, moduleReference: TSExternalModuleReference__): TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration__]
 
-inline def tSImportType_(argument: StringLiteral_): TSImportType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any]).asInstanceOf[TSImportType]
-inline def tSImportType_(argument: StringLiteral_, qualifier: Null, typeParameters: TSTypeParameterInstantiation): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
-inline def tSImportType_(argument: StringLiteral_, qualifier: Unit, typeParameters: TSTypeParameterInstantiation): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
-inline def tSImportType_(argument: StringLiteral_, qualifier: TSEntityName): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
-inline def tSImportType_(argument: StringLiteral_, qualifier: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
+inline def tSImportType_(argument: StringLiteral_): TSImportType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any]).asInstanceOf[TSImportType__]
+inline def tSImportType_(argument: StringLiteral_, qualifier: Null, typeParameters: TSTypeParameterInstantiation__): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
+inline def tSImportType_(argument: StringLiteral_, qualifier: Unit, typeParameters: TSTypeParameterInstantiation__): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
+inline def tSImportType_(argument: StringLiteral_, qualifier: TSEntityName): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
+inline def tSImportType_(argument: StringLiteral_, qualifier: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
 
-inline def tSIndexSignature_(parameters: js.Array[Identifier_]): TSIndexSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("tSIndexSignature")(parameters.asInstanceOf[js.Any]).asInstanceOf[TSIndexSignature]
-inline def tSIndexSignature_(parameters: js.Array[Identifier_], typeAnnotation: TSTypeAnnotation): TSIndexSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSIndexSignature")(parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSIndexSignature]
+inline def tSIndexSignature_(parameters: js.Array[Identifier_]): TSIndexSignature__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSIndexSignature")(parameters.asInstanceOf[js.Any]).asInstanceOf[TSIndexSignature__]
+inline def tSIndexSignature_(parameters: js.Array[Identifier_], typeAnnotation: TSTypeAnnotation__): TSIndexSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSIndexSignature")(parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSIndexSignature__]
 
-inline def tSIndexedAccessType_(objectType: TSType, indexType: TSType): TSIndexedAccessType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSIndexedAccessType")(objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[TSIndexedAccessType]
+inline def tSIndexedAccessType_(objectType: TSType, indexType: TSType): TSIndexedAccessType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSIndexedAccessType")(objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[TSIndexedAccessType__]
 
-inline def tSInferType_(typeParameter: TSTypeParameter): TSInferType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSInferType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSInferType]
+inline def tSInferType_(typeParameter: TSTypeParameter__): TSInferType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSInferType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSInferType__]
 
-inline def tSInstantiationExpression_(expression: Expression): TSInstantiationExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("tSInstantiationExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSInstantiationExpression]
-inline def tSInstantiationExpression_(expression: Expression, typeParameters: TSTypeParameterInstantiation): TSInstantiationExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInstantiationExpression")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSInstantiationExpression]
+inline def tSInstantiationExpression_(expression: Expression): TSInstantiationExpression__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSInstantiationExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSInstantiationExpression__]
+inline def tSInstantiationExpression_(expression: Expression, typeParameters: TSTypeParameterInstantiation__): TSInstantiationExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInstantiationExpression")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSInstantiationExpression__]
 
-inline def tSInterfaceBody_(body: js.Array[TSTypeElement]): TSInterfaceBody = ^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceBody")(body.asInstanceOf[js.Any]).asInstanceOf[TSInterfaceBody]
+inline def tSInterfaceBody_(body: js.Array[TSTypeElement]): TSInterfaceBody__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceBody")(body.asInstanceOf[js.Any]).asInstanceOf[TSInterfaceBody__]
 
 inline def tSInterfaceDeclaration_(
   id: Identifier_,
   typeParameters: Null,
-  _extends: js.Array[TSExpressionWithTypeArguments],
-  body: TSInterfaceBody
-): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Null, _extends: Null, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Null, _extends: Unit, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
+  _extends: js.Array[TSExpressionWithTypeArguments__],
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Null, _extends: Null, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Null, _extends: Unit, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
 inline def tSInterfaceDeclaration_(
   id: Identifier_,
   typeParameters: Unit,
-  _extends: js.Array[TSExpressionWithTypeArguments],
-  body: TSInterfaceBody
-): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Unit, _extends: Null, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Unit, _extends: Unit, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
+  _extends: js.Array[TSExpressionWithTypeArguments__],
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Unit, _extends: Null, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: Unit, _extends: Unit, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
 inline def tSInterfaceDeclaration_(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
-  _extends: js.Array[TSExpressionWithTypeArguments],
-  body: TSInterfaceBody
-): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: TSTypeParameterDeclaration, _extends: Null, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tSInterfaceDeclaration_(id: Identifier_, typeParameters: TSTypeParameterDeclaration, _extends: Unit, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
+  typeParameters: TSTypeParameterDeclaration__,
+  _extends: js.Array[TSExpressionWithTypeArguments__],
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tSInterfaceDeclaration_(
+  id: Identifier_,
+  typeParameters: TSTypeParameterDeclaration__,
+  _extends: Null,
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tSInterfaceDeclaration_(
+  id: Identifier_,
+  typeParameters: TSTypeParameterDeclaration__,
+  _extends: Unit,
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
 
-inline def tSIntersectionType_(types: js.Array[TSType]): TSIntersectionType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSIntersectionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSIntersectionType]
+inline def tSIntersectionType_(types: js.Array[TSType]): TSIntersectionType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSIntersectionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSIntersectionType__]
 
-inline def tSIntrinsicKeyword_(): TSIntrinsicKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSIntrinsicKeyword")().asInstanceOf[TSIntrinsicKeyword]
+inline def tSIntrinsicKeyword_(): TSIntrinsicKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSIntrinsicKeyword")().asInstanceOf[TSIntrinsicKeyword__]
 
-inline def tSLiteralType_(literal: BigIntLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tSLiteralType_(literal: BooleanLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tSLiteralType_(literal: NumericLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tSLiteralType_(literal: StringLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tSLiteralType_(literal: TemplateLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tSLiteralType_(literal: UnaryExpression_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
+inline def tSLiteralType_(literal: BigIntLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tSLiteralType_(literal: BooleanLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tSLiteralType_(literal: NumericLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tSLiteralType_(literal: StringLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tSLiteralType_(literal: TemplateLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tSLiteralType_(literal: UnaryExpression_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
 
-inline def tSMappedType_(typeParameter: TSTypeParameter): TSMappedType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSMappedType]
-inline def tSMappedType_(typeParameter: TSTypeParameter, typeAnnotation: Null, nameType: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
-inline def tSMappedType_(typeParameter: TSTypeParameter, typeAnnotation: Unit, nameType: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
-inline def tSMappedType_(typeParameter: TSTypeParameter, typeAnnotation: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
-inline def tSMappedType_(typeParameter: TSTypeParameter, typeAnnotation: TSType, nameType: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
+inline def tSMappedType_(typeParameter: TSTypeParameter__): TSMappedType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSMappedType__]
+inline def tSMappedType_(typeParameter: TSTypeParameter__, typeAnnotation: Null, nameType: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
+inline def tSMappedType_(typeParameter: TSTypeParameter__, typeAnnotation: Unit, nameType: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
+inline def tSMappedType_(typeParameter: TSTypeParameter__, typeAnnotation: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
+inline def tSMappedType_(typeParameter: TSTypeParameter__, typeAnnotation: TSType, nameType: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
 
-inline def tSMethodSignature_(key: Expression, typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+inline def tSMethodSignature_(key: Expression, typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tSMethodSignature_(
   key: Expression,
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
-inline def tSMethodSignature_(key: Expression, typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+  typeAnnotation: TSTypeAnnotation__
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
+inline def tSMethodSignature_(key: Expression, typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tSMethodSignature_(
   key: Expression,
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+  typeAnnotation: TSTypeAnnotation__
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tSMethodSignature_(
   key: Expression,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_]
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tSMethodSignature_(
   key: Expression,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+  typeAnnotation: TSTypeAnnotation__
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 
-inline def tSModuleBlock_(body: js.Array[Statement]): TSModuleBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleBlock")(body.asInstanceOf[js.Any]).asInstanceOf[TSModuleBlock]
+inline def tSModuleBlock_(body: js.Array[Statement]): TSModuleBlock__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleBlock")(body.asInstanceOf[js.Any]).asInstanceOf[TSModuleBlock__]
 
-inline def tSModuleDeclaration_(id: Identifier_, body: TSModuleBlock): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
-inline def tSModuleDeclaration_(id: Identifier_, body: TSModuleDeclaration): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
-inline def tSModuleDeclaration_(id: StringLiteral_, body: TSModuleBlock): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
-inline def tSModuleDeclaration_(id: StringLiteral_, body: TSModuleDeclaration): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
+inline def tSModuleDeclaration_(id: Identifier_, body: TSModuleBlock__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def tSModuleDeclaration_(id: Identifier_, body: TSModuleDeclaration__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def tSModuleDeclaration_(id: StringLiteral_, body: TSModuleBlock__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def tSModuleDeclaration_(id: StringLiteral_, body: TSModuleDeclaration__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
 
-inline def tSNamedTupleMember_(label: Identifier_, elementType: TSType): TSNamedTupleMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tSNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember]
-inline def tSNamedTupleMember_(label: Identifier_, elementType: TSType, optional: Boolean): TSNamedTupleMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tSNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember]
+inline def tSNamedTupleMember_(label: Identifier_, elementType: TSType): TSNamedTupleMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember__]
+inline def tSNamedTupleMember_(label: Identifier_, elementType: TSType, optional: Boolean): TSNamedTupleMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember__]
 
-inline def tSNamespaceExportDeclaration_(id: Identifier_): TSNamespaceExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNamespaceExportDeclaration")(id.asInstanceOf[js.Any]).asInstanceOf[TSNamespaceExportDeclaration]
+inline def tSNamespaceExportDeclaration_(id: Identifier_): TSNamespaceExportDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNamespaceExportDeclaration")(id.asInstanceOf[js.Any]).asInstanceOf[TSNamespaceExportDeclaration__]
 
-inline def tSNeverKeyword_(): TSNeverKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNeverKeyword")().asInstanceOf[TSNeverKeyword]
+inline def tSNeverKeyword_(): TSNeverKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNeverKeyword")().asInstanceOf[TSNeverKeyword__]
 
-inline def tSNonNullExpression_(expression: Expression): TSNonNullExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNonNullExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSNonNullExpression]
+inline def tSNonNullExpression_(expression: Expression): TSNonNullExpression__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNonNullExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSNonNullExpression__]
 
-inline def tSNullKeyword_(): TSNullKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNullKeyword")().asInstanceOf[TSNullKeyword]
+inline def tSNullKeyword_(): TSNullKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNullKeyword")().asInstanceOf[TSNullKeyword__]
 
-inline def tSNumberKeyword_(): TSNumberKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNumberKeyword")().asInstanceOf[TSNumberKeyword]
+inline def tSNumberKeyword_(): TSNumberKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSNumberKeyword")().asInstanceOf[TSNumberKeyword__]
 
-inline def tSObjectKeyword_(): TSObjectKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSObjectKeyword")().asInstanceOf[TSObjectKeyword]
+inline def tSObjectKeyword_(): TSObjectKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSObjectKeyword")().asInstanceOf[TSObjectKeyword__]
 
-inline def tSOptionalType_(typeAnnotation: TSType): TSOptionalType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSOptionalType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSOptionalType]
+inline def tSOptionalType_(typeAnnotation: TSType): TSOptionalType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSOptionalType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSOptionalType__]
 
-inline def tSParameterProperty_(parameter: AssignmentPattern_): TSParameterProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("tSParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty]
-inline def tSParameterProperty_(parameter: Identifier_): TSParameterProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("tSParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty]
+inline def tSParameterProperty_(parameter: AssignmentPattern_): TSParameterProperty__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty__]
+inline def tSParameterProperty_(parameter: Identifier_): TSParameterProperty__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty__]
 
-inline def tSParenthesizedType_(typeAnnotation: TSType): TSParenthesizedType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSParenthesizedType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSParenthesizedType]
+inline def tSParenthesizedType_(typeAnnotation: TSType): TSParenthesizedType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSParenthesizedType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSParenthesizedType__]
 
-inline def tSPropertySignature_(key: Expression): TSPropertySignature = ^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any]).asInstanceOf[TSPropertySignature]
-inline def tSPropertySignature_(key: Expression, typeAnnotation: Null, initializer: Expression): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
-inline def tSPropertySignature_(key: Expression, typeAnnotation: Unit, initializer: Expression): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
-inline def tSPropertySignature_(key: Expression, typeAnnotation: TSTypeAnnotation): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
-inline def tSPropertySignature_(key: Expression, typeAnnotation: TSTypeAnnotation, initializer: Expression): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
+inline def tSPropertySignature_(key: Expression): TSPropertySignature__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any]).asInstanceOf[TSPropertySignature__]
+inline def tSPropertySignature_(key: Expression, typeAnnotation: Null, initializer: Expression): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
+inline def tSPropertySignature_(key: Expression, typeAnnotation: Unit, initializer: Expression): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
+inline def tSPropertySignature_(key: Expression, typeAnnotation: TSTypeAnnotation__): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
+inline def tSPropertySignature_(key: Expression, typeAnnotation: TSTypeAnnotation__, initializer: Expression): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
 
-inline def tSQualifiedName_(left: TSEntityName, right: Identifier_): TSQualifiedName = (^.asInstanceOf[js.Dynamic].applyDynamic("tSQualifiedName")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[TSQualifiedName]
+inline def tSQualifiedName_(left: TSEntityName, right: Identifier_): TSQualifiedName__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSQualifiedName")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[TSQualifiedName__]
 
-inline def tSRestType_(typeAnnotation: TSType): TSRestType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSRestType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSRestType]
+inline def tSRestType_(typeAnnotation: TSType): TSRestType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSRestType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSRestType__]
 
-inline def tSStringKeyword_(): TSStringKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSStringKeyword")().asInstanceOf[TSStringKeyword]
+inline def tSStringKeyword_(): TSStringKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSStringKeyword")().asInstanceOf[TSStringKeyword__]
 
-inline def tSSymbolKeyword_(): TSSymbolKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSSymbolKeyword")().asInstanceOf[TSSymbolKeyword]
+inline def tSSymbolKeyword_(): TSSymbolKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSSymbolKeyword")().asInstanceOf[TSSymbolKeyword__]
 
-inline def tSThisType_(): TSThisType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSThisType")().asInstanceOf[TSThisType]
+inline def tSThisType_(): TSThisType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSThisType")().asInstanceOf[TSThisType__]
 
-inline def tSTupleType_(elementTypes: js.Array[TSType | TSNamedTupleMember]): TSTupleType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTupleType")(elementTypes.asInstanceOf[js.Any]).asInstanceOf[TSTupleType]
+inline def tSTupleType_(elementTypes: js.Array[TSType | TSNamedTupleMember__]): TSTupleType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTupleType")(elementTypes.asInstanceOf[js.Any]).asInstanceOf[TSTupleType__]
 
-inline def tSTypeAliasDeclaration_(id: Identifier_, typeParameters: Null, typeAnnotation: TSType): TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration]
-inline def tSTypeAliasDeclaration_(id: Identifier_, typeParameters: Unit, typeAnnotation: TSType): TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration]
-inline def tSTypeAliasDeclaration_(id: Identifier_, typeParameters: TSTypeParameterDeclaration, typeAnnotation: TSType): TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration]
+inline def tSTypeAliasDeclaration_(id: Identifier_, typeParameters: Null, typeAnnotation: TSType): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
+inline def tSTypeAliasDeclaration_(id: Identifier_, typeParameters: Unit, typeAnnotation: TSType): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
+inline def tSTypeAliasDeclaration_(id: Identifier_, typeParameters: TSTypeParameterDeclaration__, typeAnnotation: TSType): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
 
-inline def tSTypeAnnotation_(typeAnnotation: TSType): TSTypeAnnotation = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAnnotation")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeAnnotation]
+inline def tSTypeAnnotation_(typeAnnotation: TSType): TSTypeAnnotation__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAnnotation")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeAnnotation__]
 
-inline def tSTypeAssertion_(typeAnnotation: TSType, expression: Expression): TSTypeAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAssertion")(typeAnnotation.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[TSTypeAssertion]
+inline def tSTypeAssertion_(typeAnnotation: TSType, expression: Expression): TSTypeAssertion__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeAssertion")(typeAnnotation.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[TSTypeAssertion__]
 
-inline def tSTypeLiteral_(members: js.Array[TSTypeElement]): TSTypeLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeLiteral")(members.asInstanceOf[js.Any]).asInstanceOf[TSTypeLiteral]
+inline def tSTypeLiteral_(members: js.Array[TSTypeElement]): TSTypeLiteral__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeLiteral")(members.asInstanceOf[js.Any]).asInstanceOf[TSTypeLiteral__]
 
-inline def tSTypeOperator_(typeAnnotation: TSType): TSTypeOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeOperator")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeOperator]
+inline def tSTypeOperator_(typeAnnotation: TSType): TSTypeOperator__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeOperator")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeOperator__]
 
-inline def tSTypeParameterDeclaration_(params: js.Array[TSTypeParameter]): TSTypeParameterDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameterDeclaration")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterDeclaration]
+inline def tSTypeParameterDeclaration_(params: js.Array[TSTypeParameter__]): TSTypeParameterDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameterDeclaration")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterDeclaration__]
 
-inline def tSTypeParameterInstantiation_(params: js.Array[TSType]): TSTypeParameterInstantiation = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameterInstantiation")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterInstantiation]
+inline def tSTypeParameterInstantiation_(params: js.Array[TSType]): TSTypeParameterInstantiation__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameterInstantiation")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterInstantiation__]
 
-inline def tSTypeParameter_(constraint: Null, _default: Null, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: Null, _default: Unit, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: Null, _default: TSType, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: Unit, _default: Null, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: Unit, _default: Unit, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: Unit, _default: TSType, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: TSType, _default: Null, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: TSType, _default: Unit, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tSTypeParameter_(constraint: TSType, _default: TSType, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
+inline def tSTypeParameter_(constraint: Null, _default: Null, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: Null, _default: Unit, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: Null, _default: TSType, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: Unit, _default: Null, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: Unit, _default: Unit, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: Unit, _default: TSType, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: TSType, _default: Null, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: TSType, _default: Unit, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tSTypeParameter_(constraint: TSType, _default: TSType, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
 
-inline def tSTypePredicate_(parameterName: Identifier_): TSTypePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: TSThisType): TSTypePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: TSThisType, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: TSThisType, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tSTypePredicate_(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
+inline def tSTypePredicate_(parameterName: Identifier_): TSTypePredicate__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: Null, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation__): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation__, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: TSThisType__): TSTypePredicate__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: TSThisType__, typeAnnotation: Null, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: TSThisType__, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: TSThisType__, typeAnnotation: TSTypeAnnotation__): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tSTypePredicate_(parameterName: TSThisType__, typeAnnotation: TSTypeAnnotation__, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
 
-inline def tSTypeQuery_(exprName: TSEntityName): TSTypeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery]
-inline def tSTypeQuery_(exprName: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSTypeQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery]
-inline def tSTypeQuery_(exprName: TSImportType): TSTypeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery]
-inline def tSTypeQuery_(exprName: TSImportType, typeParameters: TSTypeParameterInstantiation): TSTypeQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery]
+inline def tSTypeQuery_(exprName: TSEntityName): TSTypeQuery__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery__]
+inline def tSTypeQuery_(exprName: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSTypeQuery__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery__]
+inline def tSTypeQuery_(exprName: TSImportType__): TSTypeQuery__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery__]
+inline def tSTypeQuery_(exprName: TSImportType__, typeParameters: TSTypeParameterInstantiation__): TSTypeQuery__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery__]
 
-inline def tSTypeReference_(typeName: TSEntityName): TSTypeReference = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeReference")(typeName.asInstanceOf[js.Any]).asInstanceOf[TSTypeReference]
-inline def tSTypeReference_(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSTypeReference = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeReference")(typeName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeReference]
+inline def tSTypeReference_(typeName: TSEntityName): TSTypeReference__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeReference")(typeName.asInstanceOf[js.Any]).asInstanceOf[TSTypeReference__]
+inline def tSTypeReference_(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSTypeReference__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tSTypeReference")(typeName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeReference__]
 
-inline def tSUndefinedKeyword_(): TSUndefinedKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSUndefinedKeyword")().asInstanceOf[TSUndefinedKeyword]
+inline def tSUndefinedKeyword_(): TSUndefinedKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSUndefinedKeyword")().asInstanceOf[TSUndefinedKeyword__]
 
-inline def tSUnionType_(types: js.Array[TSType]): TSUnionType = ^.asInstanceOf[js.Dynamic].applyDynamic("tSUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSUnionType]
+inline def tSUnionType_(types: js.Array[TSType]): TSUnionType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSUnionType__]
 
-inline def tSUnknownKeyword_(): TSUnknownKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSUnknownKeyword")().asInstanceOf[TSUnknownKeyword]
+inline def tSUnknownKeyword_(): TSUnknownKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSUnknownKeyword")().asInstanceOf[TSUnknownKeyword__]
 
-inline def tSVoidKeyword_(): TSVoidKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tSVoidKeyword")().asInstanceOf[TSVoidKeyword]
+inline def tSVoidKeyword_(): TSVoidKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tSVoidKeyword")().asInstanceOf[TSVoidKeyword__]
 
 inline def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral_): TaggedTemplateExpression_ = (^.asInstanceOf[js.Dynamic].applyDynamic("taggedTemplateExpression")(tag.asInstanceOf[js.Any], quasi.asInstanceOf[js.Any])).asInstanceOf[TaggedTemplateExpression_]
 
@@ -6030,22 +6076,22 @@ inline def toStatement(node: ReturnStatement_): `false` | ReturnStatement_ = ^.a
 inline def toStatement(node: ReturnStatement_, ignore: Boolean): `false` | ReturnStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ReturnStatement_]
 inline def toStatement(node: SwitchStatement_): `false` | SwitchStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | SwitchStatement_]
 inline def toStatement(node: SwitchStatement_, ignore: Boolean): `false` | SwitchStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | SwitchStatement_]
-inline def toStatement(node: TSDeclareFunction): `false` | TSDeclareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSDeclareFunction]
-inline def toStatement(node: TSDeclareFunction, ignore: Boolean): `false` | TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSDeclareFunction]
-inline def toStatement(node: TSEnumDeclaration): `false` | TSEnumDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSEnumDeclaration]
-inline def toStatement(node: TSEnumDeclaration, ignore: Boolean): `false` | TSEnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSEnumDeclaration]
-inline def toStatement(node: TSExportAssignment): `false` | TSExportAssignment = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSExportAssignment]
-inline def toStatement(node: TSExportAssignment, ignore: Boolean): `false` | TSExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSExportAssignment]
-inline def toStatement(node: TSImportEqualsDeclaration): `false` | TSImportEqualsDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSImportEqualsDeclaration]
-inline def toStatement(node: TSImportEqualsDeclaration, ignore: Boolean): `false` | TSImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSImportEqualsDeclaration]
-inline def toStatement(node: TSInterfaceDeclaration): `false` | TSInterfaceDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSInterfaceDeclaration]
-inline def toStatement(node: TSInterfaceDeclaration, ignore: Boolean): `false` | TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSInterfaceDeclaration]
-inline def toStatement(node: TSModuleDeclaration): `false` | TSModuleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSModuleDeclaration]
-inline def toStatement(node: TSModuleDeclaration, ignore: Boolean): `false` | TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSModuleDeclaration]
-inline def toStatement(node: TSNamespaceExportDeclaration): `false` | TSNamespaceExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSNamespaceExportDeclaration]
-inline def toStatement(node: TSNamespaceExportDeclaration, ignore: Boolean): `false` | TSNamespaceExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSNamespaceExportDeclaration]
-inline def toStatement(node: TSTypeAliasDeclaration): `false` | TSTypeAliasDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSTypeAliasDeclaration]
-inline def toStatement(node: TSTypeAliasDeclaration, ignore: Boolean): `false` | TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSTypeAliasDeclaration]
+inline def toStatement(node: TSDeclareFunction__): `false` | TSDeclareFunction__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSDeclareFunction__]
+inline def toStatement(node: TSDeclareFunction__, ignore: Boolean): `false` | TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSDeclareFunction__]
+inline def toStatement(node: TSEnumDeclaration__): `false` | TSEnumDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSEnumDeclaration__]
+inline def toStatement(node: TSEnumDeclaration__, ignore: Boolean): `false` | TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSEnumDeclaration__]
+inline def toStatement(node: TSExportAssignment__): `false` | TSExportAssignment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSExportAssignment__]
+inline def toStatement(node: TSExportAssignment__, ignore: Boolean): `false` | TSExportAssignment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSExportAssignment__]
+inline def toStatement(node: TSImportEqualsDeclaration__): `false` | TSImportEqualsDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSImportEqualsDeclaration__]
+inline def toStatement(node: TSImportEqualsDeclaration__, ignore: Boolean): `false` | TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSImportEqualsDeclaration__]
+inline def toStatement(node: TSInterfaceDeclaration__): `false` | TSInterfaceDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSInterfaceDeclaration__]
+inline def toStatement(node: TSInterfaceDeclaration__, ignore: Boolean): `false` | TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSInterfaceDeclaration__]
+inline def toStatement(node: TSModuleDeclaration__): `false` | TSModuleDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSModuleDeclaration__]
+inline def toStatement(node: TSModuleDeclaration__, ignore: Boolean): `false` | TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSModuleDeclaration__]
+inline def toStatement(node: TSNamespaceExportDeclaration__): `false` | TSNamespaceExportDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSNamespaceExportDeclaration__]
+inline def toStatement(node: TSNamespaceExportDeclaration__, ignore: Boolean): `false` | TSNamespaceExportDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSNamespaceExportDeclaration__]
+inline def toStatement(node: TSTypeAliasDeclaration__): `false` | TSTypeAliasDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TSTypeAliasDeclaration__]
+inline def toStatement(node: TSTypeAliasDeclaration__, ignore: Boolean): `false` | TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | TSTypeAliasDeclaration__]
 inline def toStatement(node: ThrowStatement_): `false` | ThrowStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | ThrowStatement_]
 inline def toStatement(node: ThrowStatement_, ignore: Boolean): `false` | ThrowStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[`false` | ThrowStatement_]
 inline def toStatement(node: TryStatement_): `false` | TryStatement_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any]).asInstanceOf[`false` | TryStatement_]
@@ -6095,14 +6141,14 @@ inline def toStatement_false(node: Node, ignore: `false`): Statement = (^.asInst
 inline def toStatement_false(node: OpaqueType_, ignore: `false`): OpaqueType_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[OpaqueType_]
 inline def toStatement_false(node: ReturnStatement_, ignore: `false`): ReturnStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ReturnStatement_]
 inline def toStatement_false(node: SwitchStatement_, ignore: `false`): SwitchStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[SwitchStatement_]
-inline def toStatement_false(node: TSDeclareFunction, ignore: `false`): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def toStatement_false(node: TSEnumDeclaration, ignore: `false`): TSEnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration]
-inline def toStatement_false(node: TSExportAssignment, ignore: `false`): TSExportAssignment = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSExportAssignment]
-inline def toStatement_false(node: TSImportEqualsDeclaration, ignore: `false`): TSImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration]
-inline def toStatement_false(node: TSInterfaceDeclaration, ignore: `false`): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def toStatement_false(node: TSModuleDeclaration, ignore: `false`): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
-inline def toStatement_false(node: TSNamespaceExportDeclaration, ignore: `false`): TSNamespaceExportDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSNamespaceExportDeclaration]
-inline def toStatement_false(node: TSTypeAliasDeclaration, ignore: `false`): TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration]
+inline def toStatement_false(node: TSDeclareFunction__, ignore: `false`): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def toStatement_false(node: TSEnumDeclaration__, ignore: `false`): TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration__]
+inline def toStatement_false(node: TSExportAssignment__, ignore: `false`): TSExportAssignment__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSExportAssignment__]
+inline def toStatement_false(node: TSImportEqualsDeclaration__, ignore: `false`): TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration__]
+inline def toStatement_false(node: TSInterfaceDeclaration__, ignore: `false`): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def toStatement_false(node: TSModuleDeclaration__, ignore: `false`): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def toStatement_false(node: TSNamespaceExportDeclaration__, ignore: `false`): TSNamespaceExportDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSNamespaceExportDeclaration__]
+inline def toStatement_false(node: TSTypeAliasDeclaration__, ignore: `false`): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
 inline def toStatement_false(node: ThrowStatement_, ignore: `false`): ThrowStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[ThrowStatement_]
 inline def toStatement_false(node: TryStatement_, ignore: `false`): TryStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TryStatement_]
 inline def toStatement_false(node: TypeAlias_, ignore: `false`): TypeAlias_ = (^.asInstanceOf[js.Dynamic].applyDynamic("toStatement")(node.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[TypeAlias_]
@@ -6151,473 +6197,483 @@ inline def tryStatement(block: BlockStatement_, handler: Unit, finalizer: BlockS
 inline def tryStatement(block: BlockStatement_, handler: CatchClause_): TryStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tryStatement")(block.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[TryStatement_]
 inline def tryStatement(block: BlockStatement_, handler: CatchClause_, finalizer: BlockStatement_): TryStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tryStatement")(block.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], finalizer.asInstanceOf[js.Any])).asInstanceOf[TryStatement_]
 
-inline def tsAnyKeyword(): TSAnyKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsAnyKeyword")().asInstanceOf[TSAnyKeyword]
+inline def tsAnyKeyword(): TSAnyKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsAnyKeyword")().asInstanceOf[TSAnyKeyword__]
 
-inline def tsArrayType(elementType: TSType): TSArrayType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsArrayType")(elementType.asInstanceOf[js.Any]).asInstanceOf[TSArrayType]
+inline def tsArrayType(elementType: TSType): TSArrayType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsArrayType")(elementType.asInstanceOf[js.Any]).asInstanceOf[TSArrayType__]
 
-inline def tsAsExpression(expression: Expression, typeAnnotation: TSType): TSAsExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("tsAsExpression")(expression.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSAsExpression]
+inline def tsAsExpression(expression: Expression, typeAnnotation: TSType): TSAsExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsAsExpression")(expression.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSAsExpression__]
 
-inline def tsBigIntKeyword(): TSBigIntKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsBigIntKeyword")().asInstanceOf[TSBigIntKeyword]
+inline def tsBigIntKeyword(): TSBigIntKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsBigIntKeyword")().asInstanceOf[TSBigIntKeyword__]
 
-inline def tsBooleanKeyword(): TSBooleanKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsBooleanKeyword")().asInstanceOf[TSBooleanKeyword]
+inline def tsBooleanKeyword(): TSBooleanKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsBooleanKeyword")().asInstanceOf[TSBooleanKeyword__]
 
-inline def tsCallSignatureDeclaration(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+inline def tsCallSignatureDeclaration(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 inline def tsCallSignatureDeclaration(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
-inline def tsCallSignatureDeclaration(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
+inline def tsCallSignatureDeclaration(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 inline def tsCallSignatureDeclaration(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
-inline def tsCallSignatureDeclaration(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
+inline def tsCallSignatureDeclaration(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 inline def tsCallSignatureDeclaration(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSCallSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSCallSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsCallSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSCallSignatureDeclaration__]
 
-inline def tsConditionalType(checkType: TSType, extendsType: TSType, trueType: TSType, falseType: TSType): TSConditionalType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConditionalType")(checkType.asInstanceOf[js.Any], extendsType.asInstanceOf[js.Any], trueType.asInstanceOf[js.Any], falseType.asInstanceOf[js.Any])).asInstanceOf[TSConditionalType]
+inline def tsConditionalType(checkType: TSType, extendsType: TSType, trueType: TSType, falseType: TSType): TSConditionalType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConditionalType")(checkType.asInstanceOf[js.Any], extendsType.asInstanceOf[js.Any], trueType.asInstanceOf[js.Any], falseType.asInstanceOf[js.Any])).asInstanceOf[TSConditionalType__]
 
-inline def tsConstructSignatureDeclaration(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+inline def tsConstructSignatureDeclaration(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 inline def tsConstructSignatureDeclaration(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
-inline def tsConstructSignatureDeclaration(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
+inline def tsConstructSignatureDeclaration(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 inline def tsConstructSignatureDeclaration(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
-inline def tsConstructSignatureDeclaration(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
+inline def tsConstructSignatureDeclaration(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 inline def tsConstructSignatureDeclaration(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructSignatureDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructSignatureDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructSignatureDeclaration")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructSignatureDeclaration__]
 
-inline def tsConstructorType(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+inline def tsConstructorType(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 inline def tsConstructorType(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
-inline def tsConstructorType(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
+inline def tsConstructorType(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 inline def tsConstructorType(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
-inline def tsConstructorType(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
+inline def tsConstructorType(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 inline def tsConstructorType(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSConstructorType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType]
+  typeAnnotation: TSTypeAnnotation__
+): TSConstructorType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsConstructorType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSConstructorType__]
 
-inline def tsDeclareFunction(id: Null, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+inline def tsDeclareFunction(id: Null, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Null, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Null, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Null, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Null, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_]
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Null,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Unit, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Unit, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Unit, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Unit, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Unit, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Unit, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_]
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Unit,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Identifier_, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Identifier_, typeParameters: Null, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
   typeParameters: Null,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Identifier_, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Identifier_, typeParameters: Unit, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
   typeParameters: Unit,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
-inline def tsDeclareFunction(id: Identifier_, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
+inline def tsDeclareFunction(id: Identifier_, typeParameters: Noop_, params: js.Array[Identifier_ | Pattern | RestElement_]): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
   typeParameters: Noop_,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_]
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
   returnType: Noop_
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 inline def tsDeclareFunction(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   params: js.Array[Identifier_ | Pattern | RestElement_],
-  returnType: TSTypeAnnotation
-): TSDeclareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction]
+  returnType: TSTypeAnnotation__
+): TSDeclareFunction__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareFunction")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareFunction__]
 
 inline def tsDeclareMethod(
   decorators: js.UndefOr[js.Array[Decorator_] | Null],
   key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
-  typeParameters: js.UndefOr[TSTypeParameterDeclaration | Noop_ | Null],
-  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
-  returnType: js.UndefOr[TSTypeAnnotation | Noop_ | Null]
-): TSDeclareMethod = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareMethod")(decorators.asInstanceOf[js.Any], key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareMethod]
+  typeParameters: js.UndefOr[TSTypeParameterDeclaration__ | Noop_ | Null],
+  params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
+  returnType: js.UndefOr[TSTypeAnnotation__ | Noop_ | Null]
+): TSDeclareMethod__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsDeclareMethod")(decorators.asInstanceOf[js.Any], key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], params.asInstanceOf[js.Any], returnType.asInstanceOf[js.Any])).asInstanceOf[TSDeclareMethod__]
 
-inline def tsEnumDeclaration(id: Identifier_, members: js.Array[TSEnumMember]): TSEnumDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumDeclaration")(id.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration]
+inline def tsEnumDeclaration(id: Identifier_, members: js.Array[TSEnumMember__]): TSEnumDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumDeclaration")(id.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[TSEnumDeclaration__]
 
-inline def tsEnumMember(id: Identifier_): TSEnumMember = ^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember]
-inline def tsEnumMember(id: Identifier_, initializer: Expression): TSEnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember]
-inline def tsEnumMember(id: StringLiteral_): TSEnumMember = ^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember]
-inline def tsEnumMember(id: StringLiteral_, initializer: Expression): TSEnumMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember]
+inline def tsEnumMember(id: Identifier_): TSEnumMember__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember__]
+inline def tsEnumMember(id: Identifier_, initializer: Expression): TSEnumMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember__]
+inline def tsEnumMember(id: StringLiteral_): TSEnumMember__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any]).asInstanceOf[TSEnumMember__]
+inline def tsEnumMember(id: StringLiteral_, initializer: Expression): TSEnumMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsEnumMember")(id.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSEnumMember__]
 
-inline def tsExportAssignment(expression: Expression): TSExportAssignment = ^.asInstanceOf[js.Dynamic].applyDynamic("tsExportAssignment")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExportAssignment]
+inline def tsExportAssignment(expression: Expression): TSExportAssignment__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsExportAssignment")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExportAssignment__]
 
-inline def tsExpressionWithTypeArguments(expression: TSEntityName): TSExpressionWithTypeArguments = ^.asInstanceOf[js.Dynamic].applyDynamic("tsExpressionWithTypeArguments")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExpressionWithTypeArguments]
-inline def tsExpressionWithTypeArguments(expression: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSExpressionWithTypeArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("tsExpressionWithTypeArguments")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSExpressionWithTypeArguments]
+inline def tsExpressionWithTypeArguments(expression: TSEntityName): TSExpressionWithTypeArguments__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsExpressionWithTypeArguments")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExpressionWithTypeArguments__]
+inline def tsExpressionWithTypeArguments(expression: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSExpressionWithTypeArguments__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsExpressionWithTypeArguments")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSExpressionWithTypeArguments__]
 
-inline def tsExternalModuleReference(expression: StringLiteral_): TSExternalModuleReference = ^.asInstanceOf[js.Dynamic].applyDynamic("tsExternalModuleReference")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExternalModuleReference]
+inline def tsExternalModuleReference(expression: StringLiteral_): TSExternalModuleReference__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsExternalModuleReference")(expression.asInstanceOf[js.Any]).asInstanceOf[TSExternalModuleReference__]
 
-inline def tsFunctionType(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+inline def tsFunctionType(typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 inline def tsFunctionType(
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
-inline def tsFunctionType(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+  typeAnnotation: TSTypeAnnotation__
+): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
+inline def tsFunctionType(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 inline def tsFunctionType(
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
-inline def tsFunctionType(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+  typeAnnotation: TSTypeAnnotation__
+): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
+inline def tsFunctionType(typeParameters: TSTypeParameterDeclaration__, parameters: js.Array[Identifier_ | RestElement_]): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 inline def tsFunctionType(
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType]
+  typeAnnotation: TSTypeAnnotation__
+): TSFunctionType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsFunctionType")(typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSFunctionType__]
 
-inline def tsImportEqualsDeclaration(id: Identifier_, moduleReference: TSEntityName): TSImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration]
-inline def tsImportEqualsDeclaration(id: Identifier_, moduleReference: TSExternalModuleReference): TSImportEqualsDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration]
+inline def tsImportEqualsDeclaration(id: Identifier_, moduleReference: TSEntityName): TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration__]
+inline def tsImportEqualsDeclaration(id: Identifier_, moduleReference: TSExternalModuleReference__): TSImportEqualsDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportEqualsDeclaration")(id.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[TSImportEqualsDeclaration__]
 
-inline def tsImportType(argument: StringLiteral_): TSImportType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any]).asInstanceOf[TSImportType]
-inline def tsImportType(argument: StringLiteral_, qualifier: Null, typeParameters: TSTypeParameterInstantiation): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
-inline def tsImportType(argument: StringLiteral_, qualifier: Unit, typeParameters: TSTypeParameterInstantiation): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
-inline def tsImportType(argument: StringLiteral_, qualifier: TSEntityName): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
-inline def tsImportType(argument: StringLiteral_, qualifier: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSImportType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType]
+inline def tsImportType(argument: StringLiteral_): TSImportType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any]).asInstanceOf[TSImportType__]
+inline def tsImportType(argument: StringLiteral_, qualifier: Null, typeParameters: TSTypeParameterInstantiation__): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
+inline def tsImportType(argument: StringLiteral_, qualifier: Unit, typeParameters: TSTypeParameterInstantiation__): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
+inline def tsImportType(argument: StringLiteral_, qualifier: TSEntityName): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
+inline def tsImportType(argument: StringLiteral_, qualifier: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSImportType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsImportType")(argument.asInstanceOf[js.Any], qualifier.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSImportType__]
 
-inline def tsIndexSignature(parameters: js.Array[Identifier_]): TSIndexSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("tsIndexSignature")(parameters.asInstanceOf[js.Any]).asInstanceOf[TSIndexSignature]
-inline def tsIndexSignature(parameters: js.Array[Identifier_], typeAnnotation: TSTypeAnnotation): TSIndexSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsIndexSignature")(parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSIndexSignature]
+inline def tsIndexSignature(parameters: js.Array[Identifier_]): TSIndexSignature__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsIndexSignature")(parameters.asInstanceOf[js.Any]).asInstanceOf[TSIndexSignature__]
+inline def tsIndexSignature(parameters: js.Array[Identifier_], typeAnnotation: TSTypeAnnotation__): TSIndexSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsIndexSignature")(parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSIndexSignature__]
 
-inline def tsIndexedAccessType(objectType: TSType, indexType: TSType): TSIndexedAccessType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsIndexedAccessType")(objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[TSIndexedAccessType]
+inline def tsIndexedAccessType(objectType: TSType, indexType: TSType): TSIndexedAccessType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsIndexedAccessType")(objectType.asInstanceOf[js.Any], indexType.asInstanceOf[js.Any])).asInstanceOf[TSIndexedAccessType__]
 
-inline def tsInferType(typeParameter: TSTypeParameter): TSInferType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInferType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSInferType]
+inline def tsInferType(typeParameter: TSTypeParameter__): TSInferType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInferType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSInferType__]
 
-inline def tsInstantiationExpression(expression: Expression): TSInstantiationExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInstantiationExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSInstantiationExpression]
-inline def tsInstantiationExpression(expression: Expression, typeParameters: TSTypeParameterInstantiation): TSInstantiationExpression = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInstantiationExpression")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSInstantiationExpression]
+inline def tsInstantiationExpression(expression: Expression): TSInstantiationExpression__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInstantiationExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSInstantiationExpression__]
+inline def tsInstantiationExpression(expression: Expression, typeParameters: TSTypeParameterInstantiation__): TSInstantiationExpression__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInstantiationExpression")(expression.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSInstantiationExpression__]
 
-inline def tsInterfaceBody(body: js.Array[TSTypeElement]): TSInterfaceBody = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceBody")(body.asInstanceOf[js.Any]).asInstanceOf[TSInterfaceBody]
+inline def tsInterfaceBody(body: js.Array[TSTypeElement]): TSInterfaceBody__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceBody")(body.asInstanceOf[js.Any]).asInstanceOf[TSInterfaceBody__]
 
 inline def tsInterfaceDeclaration(
   id: Identifier_,
   typeParameters: Null,
-  _extends: js.Array[TSExpressionWithTypeArguments],
-  body: TSInterfaceBody
-): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Null, _extends: Null, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Null, _extends: Unit, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
+  _extends: js.Array[TSExpressionWithTypeArguments__],
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Null, _extends: Null, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Null, _extends: Unit, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
 inline def tsInterfaceDeclaration(
   id: Identifier_,
   typeParameters: Unit,
-  _extends: js.Array[TSExpressionWithTypeArguments],
-  body: TSInterfaceBody
-): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Unit, _extends: Null, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Unit, _extends: Unit, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
+  _extends: js.Array[TSExpressionWithTypeArguments__],
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Unit, _extends: Null, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: Unit, _extends: Unit, body: TSInterfaceBody__): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
 inline def tsInterfaceDeclaration(
   id: Identifier_,
-  typeParameters: TSTypeParameterDeclaration,
-  _extends: js.Array[TSExpressionWithTypeArguments],
-  body: TSInterfaceBody
-): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: TSTypeParameterDeclaration, _extends: Null, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
-inline def tsInterfaceDeclaration(id: Identifier_, typeParameters: TSTypeParameterDeclaration, _extends: Unit, body: TSInterfaceBody): TSInterfaceDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration]
+  typeParameters: TSTypeParameterDeclaration__,
+  _extends: js.Array[TSExpressionWithTypeArguments__],
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tsInterfaceDeclaration(
+  id: Identifier_,
+  typeParameters: TSTypeParameterDeclaration__,
+  _extends: Null,
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
+inline def tsInterfaceDeclaration(
+  id: Identifier_,
+  typeParameters: TSTypeParameterDeclaration__,
+  _extends: Unit,
+  body: TSInterfaceBody__
+): TSInterfaceDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsInterfaceDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], _extends.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSInterfaceDeclaration__]
 
-inline def tsIntersectionType(types: js.Array[TSType]): TSIntersectionType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsIntersectionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSIntersectionType]
+inline def tsIntersectionType(types: js.Array[TSType]): TSIntersectionType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsIntersectionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSIntersectionType__]
 
-inline def tsIntrinsicKeyword(): TSIntrinsicKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsIntrinsicKeyword")().asInstanceOf[TSIntrinsicKeyword]
+inline def tsIntrinsicKeyword(): TSIntrinsicKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsIntrinsicKeyword")().asInstanceOf[TSIntrinsicKeyword__]
 
-inline def tsLiteralType(literal: BigIntLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tsLiteralType(literal: BooleanLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tsLiteralType(literal: NumericLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tsLiteralType(literal: StringLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tsLiteralType(literal: TemplateLiteral_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
-inline def tsLiteralType(literal: UnaryExpression_): TSLiteralType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType]
+inline def tsLiteralType(literal: BigIntLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tsLiteralType(literal: BooleanLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tsLiteralType(literal: NumericLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tsLiteralType(literal: StringLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tsLiteralType(literal: TemplateLiteral_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
+inline def tsLiteralType(literal: UnaryExpression_): TSLiteralType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsLiteralType")(literal.asInstanceOf[js.Any]).asInstanceOf[TSLiteralType__]
 
-inline def tsMappedType(typeParameter: TSTypeParameter): TSMappedType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSMappedType]
-inline def tsMappedType(typeParameter: TSTypeParameter, typeAnnotation: Null, nameType: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
-inline def tsMappedType(typeParameter: TSTypeParameter, typeAnnotation: Unit, nameType: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
-inline def tsMappedType(typeParameter: TSTypeParameter, typeAnnotation: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
-inline def tsMappedType(typeParameter: TSTypeParameter, typeAnnotation: TSType, nameType: TSType): TSMappedType = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType]
+inline def tsMappedType(typeParameter: TSTypeParameter__): TSMappedType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any]).asInstanceOf[TSMappedType__]
+inline def tsMappedType(typeParameter: TSTypeParameter__, typeAnnotation: Null, nameType: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
+inline def tsMappedType(typeParameter: TSTypeParameter__, typeAnnotation: Unit, nameType: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
+inline def tsMappedType(typeParameter: TSTypeParameter__, typeAnnotation: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
+inline def tsMappedType(typeParameter: TSTypeParameter__, typeAnnotation: TSType, nameType: TSType): TSMappedType__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMappedType")(typeParameter.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], nameType.asInstanceOf[js.Any])).asInstanceOf[TSMappedType__]
 
-inline def tsMethodSignature(key: Expression, typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+inline def tsMethodSignature(key: Expression, typeParameters: Null, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tsMethodSignature(
   key: Expression,
   typeParameters: Null,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
-inline def tsMethodSignature(key: Expression, typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+  typeAnnotation: TSTypeAnnotation__
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
+inline def tsMethodSignature(key: Expression, typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tsMethodSignature(
   key: Expression,
   typeParameters: Unit,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+  typeAnnotation: TSTypeAnnotation__
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tsMethodSignature(
   key: Expression,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_]
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 inline def tsMethodSignature(
   key: Expression,
-  typeParameters: TSTypeParameterDeclaration,
+  typeParameters: TSTypeParameterDeclaration__,
   parameters: js.Array[Identifier_ | RestElement_],
-  typeAnnotation: TSTypeAnnotation
-): TSMethodSignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature]
+  typeAnnotation: TSTypeAnnotation__
+): TSMethodSignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsMethodSignature")(key.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSMethodSignature__]
 
-inline def tsModuleBlock(body: js.Array[Statement]): TSModuleBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleBlock")(body.asInstanceOf[js.Any]).asInstanceOf[TSModuleBlock]
+inline def tsModuleBlock(body: js.Array[Statement]): TSModuleBlock__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleBlock")(body.asInstanceOf[js.Any]).asInstanceOf[TSModuleBlock__]
 
-inline def tsModuleDeclaration(id: Identifier_, body: TSModuleBlock): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
-inline def tsModuleDeclaration(id: Identifier_, body: TSModuleDeclaration): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
-inline def tsModuleDeclaration(id: StringLiteral_, body: TSModuleBlock): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
-inline def tsModuleDeclaration(id: StringLiteral_, body: TSModuleDeclaration): TSModuleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration]
+inline def tsModuleDeclaration(id: Identifier_, body: TSModuleBlock__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def tsModuleDeclaration(id: Identifier_, body: TSModuleDeclaration__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def tsModuleDeclaration(id: StringLiteral_, body: TSModuleBlock__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
+inline def tsModuleDeclaration(id: StringLiteral_, body: TSModuleDeclaration__): TSModuleDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsModuleDeclaration")(id.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[TSModuleDeclaration__]
 
-inline def tsNamedTupleMember(label: Identifier_, elementType: TSType): TSNamedTupleMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tsNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember]
-inline def tsNamedTupleMember(label: Identifier_, elementType: TSType, optional: Boolean): TSNamedTupleMember = (^.asInstanceOf[js.Dynamic].applyDynamic("tsNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember]
+inline def tsNamedTupleMember(label: Identifier_, elementType: TSType): TSNamedTupleMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember__]
+inline def tsNamedTupleMember(label: Identifier_, elementType: TSType, optional: Boolean): TSNamedTupleMember__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsNamedTupleMember")(label.asInstanceOf[js.Any], elementType.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[TSNamedTupleMember__]
 
-inline def tsNamespaceExportDeclaration(id: Identifier_): TSNamespaceExportDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNamespaceExportDeclaration")(id.asInstanceOf[js.Any]).asInstanceOf[TSNamespaceExportDeclaration]
+inline def tsNamespaceExportDeclaration(id: Identifier_): TSNamespaceExportDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNamespaceExportDeclaration")(id.asInstanceOf[js.Any]).asInstanceOf[TSNamespaceExportDeclaration__]
 
-inline def tsNeverKeyword(): TSNeverKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNeverKeyword")().asInstanceOf[TSNeverKeyword]
+inline def tsNeverKeyword(): TSNeverKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNeverKeyword")().asInstanceOf[TSNeverKeyword__]
 
-inline def tsNonNullExpression(expression: Expression): TSNonNullExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNonNullExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSNonNullExpression]
+inline def tsNonNullExpression(expression: Expression): TSNonNullExpression__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNonNullExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TSNonNullExpression__]
 
-inline def tsNullKeyword(): TSNullKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNullKeyword")().asInstanceOf[TSNullKeyword]
+inline def tsNullKeyword(): TSNullKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNullKeyword")().asInstanceOf[TSNullKeyword__]
 
-inline def tsNumberKeyword(): TSNumberKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNumberKeyword")().asInstanceOf[TSNumberKeyword]
+inline def tsNumberKeyword(): TSNumberKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsNumberKeyword")().asInstanceOf[TSNumberKeyword__]
 
-inline def tsObjectKeyword(): TSObjectKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsObjectKeyword")().asInstanceOf[TSObjectKeyword]
+inline def tsObjectKeyword(): TSObjectKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsObjectKeyword")().asInstanceOf[TSObjectKeyword__]
 
-inline def tsOptionalType(typeAnnotation: TSType): TSOptionalType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsOptionalType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSOptionalType]
+inline def tsOptionalType(typeAnnotation: TSType): TSOptionalType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsOptionalType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSOptionalType__]
 
-inline def tsParameterProperty(parameter: AssignmentPattern_): TSParameterProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("tsParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty]
-inline def tsParameterProperty(parameter: Identifier_): TSParameterProperty = ^.asInstanceOf[js.Dynamic].applyDynamic("tsParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty]
+inline def tsParameterProperty(parameter: AssignmentPattern_): TSParameterProperty__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty__]
+inline def tsParameterProperty(parameter: Identifier_): TSParameterProperty__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsParameterProperty")(parameter.asInstanceOf[js.Any]).asInstanceOf[TSParameterProperty__]
 
-inline def tsParenthesizedType(typeAnnotation: TSType): TSParenthesizedType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsParenthesizedType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSParenthesizedType]
+inline def tsParenthesizedType(typeAnnotation: TSType): TSParenthesizedType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsParenthesizedType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSParenthesizedType__]
 
-inline def tsPropertySignature(key: Expression): TSPropertySignature = ^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any]).asInstanceOf[TSPropertySignature]
-inline def tsPropertySignature(key: Expression, typeAnnotation: Null, initializer: Expression): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
-inline def tsPropertySignature(key: Expression, typeAnnotation: Unit, initializer: Expression): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
-inline def tsPropertySignature(key: Expression, typeAnnotation: TSTypeAnnotation): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
-inline def tsPropertySignature(key: Expression, typeAnnotation: TSTypeAnnotation, initializer: Expression): TSPropertySignature = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature]
+inline def tsPropertySignature(key: Expression): TSPropertySignature__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any]).asInstanceOf[TSPropertySignature__]
+inline def tsPropertySignature(key: Expression, typeAnnotation: Null, initializer: Expression): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
+inline def tsPropertySignature(key: Expression, typeAnnotation: Unit, initializer: Expression): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
+inline def tsPropertySignature(key: Expression, typeAnnotation: TSTypeAnnotation__): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
+inline def tsPropertySignature(key: Expression, typeAnnotation: TSTypeAnnotation__, initializer: Expression): TSPropertySignature__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsPropertySignature")(key.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[TSPropertySignature__]
 
-inline def tsQualifiedName(left: TSEntityName, right: Identifier_): TSQualifiedName = (^.asInstanceOf[js.Dynamic].applyDynamic("tsQualifiedName")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[TSQualifiedName]
+inline def tsQualifiedName(left: TSEntityName, right: Identifier_): TSQualifiedName__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsQualifiedName")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[TSQualifiedName__]
 
-inline def tsRestType(typeAnnotation: TSType): TSRestType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsRestType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSRestType]
+inline def tsRestType(typeAnnotation: TSType): TSRestType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsRestType")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSRestType__]
 
-inline def tsStringKeyword(): TSStringKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsStringKeyword")().asInstanceOf[TSStringKeyword]
+inline def tsStringKeyword(): TSStringKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsStringKeyword")().asInstanceOf[TSStringKeyword__]
 
-inline def tsSymbolKeyword(): TSSymbolKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsSymbolKeyword")().asInstanceOf[TSSymbolKeyword]
+inline def tsSymbolKeyword(): TSSymbolKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsSymbolKeyword")().asInstanceOf[TSSymbolKeyword__]
 
-inline def tsThisType(): TSThisType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsThisType")().asInstanceOf[TSThisType]
+inline def tsThisType(): TSThisType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsThisType")().asInstanceOf[TSThisType__]
 
-inline def tsTupleType(elementTypes: js.Array[TSType | TSNamedTupleMember]): TSTupleType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTupleType")(elementTypes.asInstanceOf[js.Any]).asInstanceOf[TSTupleType]
+inline def tsTupleType(elementTypes: js.Array[TSType | TSNamedTupleMember__]): TSTupleType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTupleType")(elementTypes.asInstanceOf[js.Any]).asInstanceOf[TSTupleType__]
 
-inline def tsTypeAliasDeclaration(id: Identifier_, typeParameters: Null, typeAnnotation: TSType): TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration]
-inline def tsTypeAliasDeclaration(id: Identifier_, typeParameters: Unit, typeAnnotation: TSType): TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration]
-inline def tsTypeAliasDeclaration(id: Identifier_, typeParameters: TSTypeParameterDeclaration, typeAnnotation: TSType): TSTypeAliasDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration]
+inline def tsTypeAliasDeclaration(id: Identifier_, typeParameters: Null, typeAnnotation: TSType): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
+inline def tsTypeAliasDeclaration(id: Identifier_, typeParameters: Unit, typeAnnotation: TSType): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
+inline def tsTypeAliasDeclaration(id: Identifier_, typeParameters: TSTypeParameterDeclaration__, typeAnnotation: TSType): TSTypeAliasDeclaration__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAliasDeclaration")(id.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypeAliasDeclaration__]
 
-inline def tsTypeAnnotation(typeAnnotation: TSType): TSTypeAnnotation = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAnnotation")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeAnnotation]
+inline def tsTypeAnnotation(typeAnnotation: TSType): TSTypeAnnotation__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAnnotation")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeAnnotation__]
 
-inline def tsTypeAssertion(typeAnnotation: TSType, expression: Expression): TSTypeAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAssertion")(typeAnnotation.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[TSTypeAssertion]
+inline def tsTypeAssertion(typeAnnotation: TSType, expression: Expression): TSTypeAssertion__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeAssertion")(typeAnnotation.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[TSTypeAssertion__]
 
-inline def tsTypeLiteral(members: js.Array[TSTypeElement]): TSTypeLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeLiteral")(members.asInstanceOf[js.Any]).asInstanceOf[TSTypeLiteral]
+inline def tsTypeLiteral(members: js.Array[TSTypeElement]): TSTypeLiteral__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeLiteral")(members.asInstanceOf[js.Any]).asInstanceOf[TSTypeLiteral__]
 
-inline def tsTypeOperator(typeAnnotation: TSType): TSTypeOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeOperator")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeOperator]
+inline def tsTypeOperator(typeAnnotation: TSType): TSTypeOperator__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeOperator")(typeAnnotation.asInstanceOf[js.Any]).asInstanceOf[TSTypeOperator__]
 
-inline def tsTypeParameter(constraint: Null, _default: Null, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: Null, _default: Unit, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: Null, _default: TSType, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: Unit, _default: Null, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: Unit, _default: Unit, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: Unit, _default: TSType, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: TSType, _default: Null, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: TSType, _default: Unit, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
-inline def tsTypeParameter(constraint: TSType, _default: TSType, name: String): TSTypeParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter]
+inline def tsTypeParameter(constraint: Null, _default: Null, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: Null, _default: Unit, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: Null, _default: TSType, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: Unit, _default: Null, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: Unit, _default: Unit, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: Unit, _default: TSType, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: TSType, _default: Null, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: TSType, _default: Unit, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
+inline def tsTypeParameter(constraint: TSType, _default: TSType, name: String): TSTypeParameter__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameter")(constraint.asInstanceOf[js.Any], _default.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[TSTypeParameter__]
 
-inline def tsTypeParameterDeclaration(params: js.Array[TSTypeParameter]): TSTypeParameterDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameterDeclaration")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterDeclaration]
+inline def tsTypeParameterDeclaration(params: js.Array[TSTypeParameter__]): TSTypeParameterDeclaration__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameterDeclaration")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterDeclaration__]
 
-inline def tsTypeParameterInstantiation(params: js.Array[TSType]): TSTypeParameterInstantiation = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameterInstantiation")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterInstantiation]
+inline def tsTypeParameterInstantiation(params: js.Array[TSType]): TSTypeParameterInstantiation__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeParameterInstantiation")(params.asInstanceOf[js.Any]).asInstanceOf[TSTypeParameterInstantiation__]
 
-inline def tsTypePredicate(parameterName: Identifier_): TSTypePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: TSThisType): TSTypePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: TSThisType, typeAnnotation: Null, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: TSThisType, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
-inline def tsTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation, asserts: Boolean): TSTypePredicate = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate]
+inline def tsTypePredicate(parameterName: Identifier_): TSTypePredicate__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: Null, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation__): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: Identifier_, typeAnnotation: TSTypeAnnotation__, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: TSThisType__): TSTypePredicate__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any]).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: TSThisType__, typeAnnotation: Null, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: TSThisType__, typeAnnotation: Unit, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: TSThisType__, typeAnnotation: TSTypeAnnotation__): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
+inline def tsTypePredicate(parameterName: TSThisType__, typeAnnotation: TSTypeAnnotation__, asserts: Boolean): TSTypePredicate__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypePredicate")(parameterName.asInstanceOf[js.Any], typeAnnotation.asInstanceOf[js.Any], asserts.asInstanceOf[js.Any])).asInstanceOf[TSTypePredicate__]
 
-inline def tsTypeQuery(exprName: TSEntityName): TSTypeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery]
-inline def tsTypeQuery(exprName: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSTypeQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery]
-inline def tsTypeQuery(exprName: TSImportType): TSTypeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery]
-inline def tsTypeQuery(exprName: TSImportType, typeParameters: TSTypeParameterInstantiation): TSTypeQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery]
+inline def tsTypeQuery(exprName: TSEntityName): TSTypeQuery__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery__]
+inline def tsTypeQuery(exprName: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSTypeQuery__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery__]
+inline def tsTypeQuery(exprName: TSImportType__): TSTypeQuery__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any]).asInstanceOf[TSTypeQuery__]
+inline def tsTypeQuery(exprName: TSImportType__, typeParameters: TSTypeParameterInstantiation__): TSTypeQuery__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeQuery")(exprName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeQuery__]
 
-inline def tsTypeReference(typeName: TSEntityName): TSTypeReference = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeReference")(typeName.asInstanceOf[js.Any]).asInstanceOf[TSTypeReference]
-inline def tsTypeReference(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSTypeReference = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeReference")(typeName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeReference]
+inline def tsTypeReference(typeName: TSEntityName): TSTypeReference__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeReference")(typeName.asInstanceOf[js.Any]).asInstanceOf[TSTypeReference__]
+inline def tsTypeReference(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation__): TSTypeReference__ = (^.asInstanceOf[js.Dynamic].applyDynamic("tsTypeReference")(typeName.asInstanceOf[js.Any], typeParameters.asInstanceOf[js.Any])).asInstanceOf[TSTypeReference__]
 
-inline def tsUndefinedKeyword(): TSUndefinedKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsUndefinedKeyword")().asInstanceOf[TSUndefinedKeyword]
+inline def tsUndefinedKeyword(): TSUndefinedKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsUndefinedKeyword")().asInstanceOf[TSUndefinedKeyword__]
 
-inline def tsUnionType(types: js.Array[TSType]): TSUnionType = ^.asInstanceOf[js.Dynamic].applyDynamic("tsUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSUnionType]
+inline def tsUnionType(types: js.Array[TSType]): TSUnionType__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsUnionType")(types.asInstanceOf[js.Any]).asInstanceOf[TSUnionType__]
 
-inline def tsUnknownKeyword(): TSUnknownKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsUnknownKeyword")().asInstanceOf[TSUnknownKeyword]
+inline def tsUnknownKeyword(): TSUnknownKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsUnknownKeyword")().asInstanceOf[TSUnknownKeyword__]
 
-inline def tsVoidKeyword(): TSVoidKeyword = ^.asInstanceOf[js.Dynamic].applyDynamic("tsVoidKeyword")().asInstanceOf[TSVoidKeyword]
+inline def tsVoidKeyword(): TSVoidKeyword__ = ^.asInstanceOf[js.Dynamic].applyDynamic("tsVoidKeyword")().asInstanceOf[TSVoidKeyword__]
 
 inline def tupleExpression(): TupleExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleExpression")().asInstanceOf[TupleExpression_]
 inline def tupleExpression(elements: js.Array[Expression | SpreadElement_]): TupleExpression_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleExpression")(elements.asInstanceOf[js.Any]).asInstanceOf[TupleExpression_]

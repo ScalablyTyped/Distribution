@@ -3,12 +3,12 @@ package typings.reactNavigationStack
 import typings.react.mod.global.JSX.Element
 import typings.reactNativeGestureHandler.gestureHandlerRootViewMod.GestureHandlerRootViewProps
 import typings.reactNativeGestureHandler.gestureHandlerTypesCompatMod.PanGestureHandlerProperties
-import typings.reactNavigationStack.reactNavigationStackNumbers.`0`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`1`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`2`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`3`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`4`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`5`
+import typings.reactNavigationStack.reactNavigationStackInts.`0`
+import typings.reactNavigationStack.reactNavigationStackInts.`1`
+import typings.reactNavigationStack.reactNavigationStackInts.`2`
+import typings.reactNavigationStack.reactNavigationStackInts.`3`
+import typings.reactNavigationStack.reactNavigationStackInts.`4`
+import typings.reactNavigationStack.reactNavigationStackInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

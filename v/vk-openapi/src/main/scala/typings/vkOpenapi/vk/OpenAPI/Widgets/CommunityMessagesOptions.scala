@@ -1,7 +1,7 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
-import typings.vkOpenapi.vkOpenapiNumbers.`1`
+import typings.vkOpenapi.vkOpenapiInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

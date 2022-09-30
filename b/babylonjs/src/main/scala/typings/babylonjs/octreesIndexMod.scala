@@ -92,15 +92,7 @@ object octreesIndexMod {
     val ^ : js.Any = js.native
     
     /**
-      * @param worldMin
-      * @param worldMax
-      * @param entries
-      * @param maxBlockCapacity
-      * @param currentDepth
-      * @param maxDepth
-      * @param target
-      * @param creationFunc
-      * @hidden
+      * @internal
       */
     inline def _CreateBlocks[T](
       worldMin: Vector3,
@@ -132,7 +124,7 @@ object octreesIndexMod {
     trait AbstractMesh extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing Field
         */
       var _submeshesOctree: typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
@@ -160,7 +152,7 @@ object octreesIndexMod {
     trait Scene extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing Filed
         */
       var _selectionOctree: typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native

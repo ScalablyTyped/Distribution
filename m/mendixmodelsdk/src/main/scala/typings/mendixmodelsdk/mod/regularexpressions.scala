@@ -12,7 +12,7 @@ object regularexpressions {
     */
   @JSImport("mendixmodelsdk", "regularexpressions.RegularExpression")
   @js.native
-  class RegularExpression protected ()
+  open class RegularExpression protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.regularexpressions.RegularExpression {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

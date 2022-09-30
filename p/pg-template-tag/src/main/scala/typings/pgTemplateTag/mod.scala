@@ -11,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(parts: TemplateStringsArray, values: Any*): SqlLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(parts.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SqlLiteral_]
+  inline def default(parts: TemplateStringsArray, values: Any*): SqlLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(parts.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SqlLiteral_]
   
   inline def join(array: js.Array[Any]): SqlLiteral_ = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(array.asInstanceOf[js.Any]).asInstanceOf[SqlLiteral_]
   inline def join(array: js.Array[Any], separator: String): SqlLiteral_ = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(array.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[SqlLiteral_]

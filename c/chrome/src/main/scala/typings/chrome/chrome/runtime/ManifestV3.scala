@@ -3,7 +3,7 @@ package typings.chrome.chrome.runtime
 import typings.chrome.anon.Extensionpages
 import typings.chrome.anon.Resources
 import typings.chrome.anon.Serviceworker
-import typings.chrome.chromeNumbers.`3`
+import typings.chrome.chromeInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

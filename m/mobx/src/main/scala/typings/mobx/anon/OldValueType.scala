@@ -1,37 +1,28 @@
 package typings.mobx.anon
 
-import typings.mobx.mobxStrings.delete
-import typings.mobx.observablesetMod.ISetWillChange
-import typings.mobx.observablesetMod.ObservableSet
+import typings.mobx.mobxStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OldValueType[T]
-  extends StObject
-     with ISetWillChange[T] {
+trait OldValueType extends StObject {
   
-  var `object`: ObservableSet[T]
+  var oldValue: Any
   
-  var oldValue: T
-  
-  var `type`: delete
+  var `type`: remove
 }
 object OldValueType {
   
-  inline def apply[T](`object`: ObservableSet[T], oldValue: T): OldValueType[T] = {
+  inline def apply(oldValue: Any): OldValueType = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("delete")
-    __obj.asInstanceOf[OldValueType[T]]
+    __obj.updateDynamic("type")("remove")
+    __obj.asInstanceOf[OldValueType]
   }
   
-  extension [Self <: OldValueType[?], T](x: Self & OldValueType[T]) {
+  extension [Self <: OldValueType](x: Self) {
     
-    inline def setObject(value: ObservableSet[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
-    
-    inline def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

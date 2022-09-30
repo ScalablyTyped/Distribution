@@ -1,7 +1,7 @@
 package typings.aliApp.my
 
-import typings.aliApp.aliAppNumbers.`10`
-import typings.aliApp.aliAppNumbers.`11`
+import typings.aliApp.aliAppInts.`10`
+import typings.aliApp.aliAppInts.`11`
 import typings.aliApp.anon.Avatar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

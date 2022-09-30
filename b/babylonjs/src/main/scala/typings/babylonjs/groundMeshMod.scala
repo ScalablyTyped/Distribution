@@ -19,32 +19,32 @@ object groundMeshMod {
     
     /* private */ var _getFacetAt: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _height: Double = js.native
     
     /* private */ var _heightQuads: Any = js.native
     
     /* private */ var _initHeightQuads: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _maxX: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _maxZ: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _minX: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _minZ: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _subdivisionsX: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _subdivisionsY: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _width: Double = js.native
     
     /** If octree should be generated */

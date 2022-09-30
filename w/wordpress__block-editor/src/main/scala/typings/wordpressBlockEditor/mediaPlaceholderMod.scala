@@ -145,7 +145,7 @@ object mediaPlaceholderMod {
         
         inline def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
         
-        inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
+        inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value*))
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -205,7 +205,7 @@ object mediaPlaceholderMod {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
   }

@@ -17,6 +17,15 @@ trait NativeTheme
   @JSName("addListener")
   def addListener_updated(event: updated, listener: js.Function): this.type = js.native
   
+  /**
+    * A `boolean` indicating whether Chromium is in forced colors mode, controlled by
+    * system accessibility settings. Currently, Windows high contrast is the only
+    * system setting that triggers forced colors mode.
+    *
+    * @platform win32
+    */
+  val inForcedColorsMode: Boolean = js.native
+  
   // Docs: https://electronjs.org/docs/api/native-theme
   /**
     * Emitted when something in the underlying NativeTheme has changed. This normally
@@ -34,7 +43,7 @@ trait NativeTheme
   def removeListener_updated(event: updated, listener: js.Function): this.type = js.native
   
   /**
-    * A `Boolean` for if the OS / Chromium currently has a dark mode enabled or is
+    * A `boolean` for if the OS / Chromium currently has a dark mode enabled or is
     * being instructed to show a dark-style UI.  If you want to modify this value you
     * should use `themeSource` below.
     *
@@ -42,7 +51,7 @@ trait NativeTheme
   val shouldUseDarkColors: Boolean = js.native
   
   /**
-    * A `Boolean` for if the OS / Chromium currently has high-contrast mode enabled or
+    * A `boolean` for if the OS / Chromium currently has high-contrast mode enabled or
     * is being instructed to show a high-contrast UI.
     *
     * @platform darwin,win32
@@ -50,7 +59,7 @@ trait NativeTheme
   val shouldUseHighContrastColors: Boolean = js.native
   
   /**
-    * A `Boolean` for if the OS / Chromium currently has an inverted color scheme or
+    * A `boolean` for if the OS / Chromium currently has an inverted color scheme or
     * is being instructed to use an inverted color scheme.
     *
     * @platform darwin,win32
@@ -58,7 +67,7 @@ trait NativeTheme
   val shouldUseInvertedColorScheme: Boolean = js.native
   
   /**
-    * A `String` property that can be `system`, `light` or `dark`.  It is used to
+    * A `string` property that can be `system`, `light` or `dark`.  It is used to
     * override and supersede the value that Chromium has chosen to use internally.
     *
     * Setting this property to `system` will remove the override and everything will

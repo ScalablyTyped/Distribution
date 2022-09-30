@@ -57,15 +57,15 @@ object mod {
     
     var borderRadius: js.UndefOr[Double] = js.undefined
     
-    var defaultStyleAppIcon: js.UndefOr[js.Any] = js.undefined
+    var defaultStyleAppIcon: js.UndefOr[Any] = js.undefined
     
-    var defaultStyleClose: js.UndefOr[js.Any] = js.undefined
+    var defaultStyleClose: js.UndefOr[Any] = js.undefined
     
-    var defaultStyleContainer: js.UndefOr[js.Any] = js.undefined
+    var defaultStyleContainer: js.UndefOr[Any] = js.undefined
     
-    var defaultStyleImage: js.UndefOr[js.Any] = js.undefined
+    var defaultStyleImage: js.UndefOr[Any] = js.undefined
     
-    var defaultStyleText: js.UndefOr[js.Any] = js.undefined
+    var defaultStyleText: js.UndefOr[Any] = js.undefined
     
     var defaultWindow: js.UndefOr[BrowserWindowConstructorOptions] = js.undefined
     
@@ -110,23 +110,23 @@ object mod {
       
       inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
-      inline def setDefaultStyleAppIcon(value: js.Any): Self = StObject.set(x, "defaultStyleAppIcon", value.asInstanceOf[js.Any])
+      inline def setDefaultStyleAppIcon(value: Any): Self = StObject.set(x, "defaultStyleAppIcon", value.asInstanceOf[js.Any])
       
       inline def setDefaultStyleAppIconUndefined: Self = StObject.set(x, "defaultStyleAppIcon", js.undefined)
       
-      inline def setDefaultStyleClose(value: js.Any): Self = StObject.set(x, "defaultStyleClose", value.asInstanceOf[js.Any])
+      inline def setDefaultStyleClose(value: Any): Self = StObject.set(x, "defaultStyleClose", value.asInstanceOf[js.Any])
       
       inline def setDefaultStyleCloseUndefined: Self = StObject.set(x, "defaultStyleClose", js.undefined)
       
-      inline def setDefaultStyleContainer(value: js.Any): Self = StObject.set(x, "defaultStyleContainer", value.asInstanceOf[js.Any])
+      inline def setDefaultStyleContainer(value: Any): Self = StObject.set(x, "defaultStyleContainer", value.asInstanceOf[js.Any])
       
       inline def setDefaultStyleContainerUndefined: Self = StObject.set(x, "defaultStyleContainer", js.undefined)
       
-      inline def setDefaultStyleImage(value: js.Any): Self = StObject.set(x, "defaultStyleImage", value.asInstanceOf[js.Any])
+      inline def setDefaultStyleImage(value: Any): Self = StObject.set(x, "defaultStyleImage", value.asInstanceOf[js.Any])
       
       inline def setDefaultStyleImageUndefined: Self = StObject.set(x, "defaultStyleImage", js.undefined)
       
-      inline def setDefaultStyleText(value: js.Any): Self = StObject.set(x, "defaultStyleText", value.asInstanceOf[js.Any])
+      inline def setDefaultStyleText(value: Any): Self = StObject.set(x, "defaultStyleText", value.asInstanceOf[js.Any])
       
       inline def setDefaultStyleTextUndefined: Self = StObject.set(x, "defaultStyleText", js.undefined)
       
@@ -223,18 +223,18 @@ object mod {
     extends StObject
        with ICloseNotificationEvent {
     
-    def closeNotification(reason: js.Any): Unit
+    def closeNotification(reason: Any): Unit
   }
   object INotificationEvent {
     
-    inline def apply(closeNotification: js.Any => Unit, event: close | show | click, id: Double): INotificationEvent = {
+    inline def apply(closeNotification: Any => Unit, event: close | show | click, id: Double): INotificationEvent = {
       val __obj = js.Dynamic.literal(closeNotification = js.Any.fromFunction1(closeNotification), event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[INotificationEvent]
     }
     
     extension [Self <: INotificationEvent](x: Self) {
       
-      inline def setCloseNotification(value: js.Any => Unit): Self = StObject.set(x, "closeNotification", js.Any.fromFunction1(value))
+      inline def setCloseNotification(value: Any => Unit): Self = StObject.set(x, "closeNotification", js.Any.fromFunction1(value))
     }
   }
 }

@@ -1,8 +1,8 @@
 package typings.compareFunction
 
-import typings.compareFunction.compareFunctionNumbers.`-1`
-import typings.compareFunction.compareFunctionNumbers.`0`
-import typings.compareFunction.compareFunctionNumbers.`1`
+import typings.compareFunction.compareFunctionInts.`-1`
+import typings.compareFunction.compareFunctionInts.`0`
+import typings.compareFunction.compareFunctionInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

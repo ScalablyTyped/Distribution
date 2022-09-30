@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ListEquals")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ListEquals")
 @js.native
-class ListEquals protected () extends BinaryListOperation {
+open class ListEquals protected () extends BinaryListOperation {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -25,7 +25,7 @@ class ListEquals protected () extends BinaryListOperation {
 }
 object ListEquals {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ListEquals")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ListEquals")
   @js.native
   val ^ : js.Any = js.native
   
@@ -46,13 +46,13 @@ object ListEquals {
   inline def createIn(container: ListOperationAction): ListEquals = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ListEquals]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ListEquals.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ListEquals.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ListEquals.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ListEquals.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

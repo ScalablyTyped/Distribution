@@ -16,7 +16,7 @@ trait CrashReporterStartOptions extends StObject {
   
   /**
     * If true, crash reports will be compressed and uploaded with `Content-Encoding:
-    * gzip`. Default is `false`.
+    * gzip`. Default is `true`.
     */
   var compress: js.UndefOr[Boolean] = js.undefined
   
@@ -58,9 +58,10 @@ trait CrashReporterStartOptions extends StObject {
   var rateLimit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * URL that crash reports will be sent to as POST.
+    * URL that crash reports will be sent to as POST. Required unless `uploadToServer`
+    * is `false`.
     */
-  var submitURL: String
+  var submitURL: js.UndefOr[String] = js.undefined
   
   /**
     * Whether crash reports should be sent to the server. If false, crash reports will
@@ -71,8 +72,8 @@ trait CrashReporterStartOptions extends StObject {
 }
 object CrashReporterStartOptions {
   
-  inline def apply(submitURL: String): CrashReporterStartOptions = {
-    val __obj = js.Dynamic.literal(submitURL = submitURL.asInstanceOf[js.Any])
+  inline def apply(): CrashReporterStartOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrashReporterStartOptions]
   }
   
@@ -107,6 +108,8 @@ object CrashReporterStartOptions {
     inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     
     inline def setSubmitURL(value: String): Self = StObject.set(x, "submitURL", value.asInstanceOf[js.Any])
+    
+    inline def setSubmitURLUndefined: Self = StObject.set(x, "submitURL", js.undefined)
     
     inline def setUploadToServer(value: Boolean): Self = StObject.set(x, "uploadToServer", value.asInstanceOf[js.Any])
     

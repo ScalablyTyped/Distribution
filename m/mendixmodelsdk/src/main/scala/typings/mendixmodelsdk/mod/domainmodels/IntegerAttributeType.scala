@@ -2,10 +2,12 @@ package typings.mendixmodelsdk.mod.domainmodels
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute
 import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.TensorMappingElement
 import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
@@ -14,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.IntegerAttributeType")
 @js.native
-class IntegerAttributeType protected ()
+open class IntegerAttributeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.IntegerAttributeType {
   def this(
     model: AbstractModel,
@@ -79,6 +81,28 @@ object IntegerAttributeType {
     */
   /* static member */
   inline def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.IntegerAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.IntegerAttributeType]
+  
+  /**
+    * Creates and returns a new IntegerAttributeType instance in the SDK and on the server.
+    * The new IntegerAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent businessevents.PublishedMessageAttribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.14.0 and higher
+    */
+  /* static member */
+  inline def createInPublishedMessageAttributeUnderAttributeType(container: PublishedMessageAttribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.IntegerAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedMessageAttributeUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.IntegerAttributeType]
+  
+  /**
+    * Creates and returns a new IntegerAttributeType instance in the SDK and on the server.
+    * The new IntegerAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent mlmappings.TensorMappingElement element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.17.0 and higher
+    */
+  /* static member */
+  inline def createInTensorMappingElementUnderAttributeType(container: TensorMappingElement): typings.mendixmodelsdk.domainmodelsMod.domainmodels.IntegerAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.IntegerAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.IntegerAttributeType.structureTypeName")

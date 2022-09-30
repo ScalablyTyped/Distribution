@@ -43,12 +43,12 @@ object pbrIridescenceConfigurationMod {
     def this(material: PBRBaseMaterial) = this()
     def this(material: PBRBaseMaterial, addToPluginList: Boolean) = this()
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: Any = js.native
     
     /* private */ var _isEnabled: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
     /* protected */ @JSName("_material")
@@ -105,7 +105,7 @@ object pbrIridescenceConfigurationMod {
     /**
       * The default index of refraction of the thin-film layer.
       * Defaults to 1.3
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/pbrIridescenceConfiguration", "PBRIridescenceConfiguration._DefaultIndexOfRefraction")
     @js.native
@@ -114,7 +114,7 @@ object pbrIridescenceConfigurationMod {
     /**
       * The default maximum thickness of the thin-film layer given in nanometers (nm).
       * Defaults to 400 nm.
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/pbrIridescenceConfiguration", "PBRIridescenceConfiguration._DefaultMaximumThickness")
     @js.native
@@ -123,7 +123,7 @@ object pbrIridescenceConfigurationMod {
     /**
       * The default minimum thickness of the thin-film layer given in nanometers (nm).
       * Defaults to 100 nm.
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/pbrIridescenceConfiguration", "PBRIridescenceConfiguration._DefaultMinimumThickness")
     @js.native

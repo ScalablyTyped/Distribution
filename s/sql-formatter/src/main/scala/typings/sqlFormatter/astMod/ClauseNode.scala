@@ -12,14 +12,14 @@ trait ClauseNode
   
   var children: js.Array[AstNode]
   
-  var name: KeywordNode
+  var nameKw: KeywordNode
   
   var `type`: clause
 }
 object ClauseNode {
   
-  inline def apply(children: js.Array[AstNode], name: KeywordNode, `type`: clause): ClauseNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(children: js.Array[AstNode], nameKw: KeywordNode, `type`: clause): ClauseNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], nameKw = nameKw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClauseNode]
   }
@@ -30,7 +30,7 @@ object ClauseNode {
     
     inline def setChildrenVarargs(value: AstNode*): Self = StObject.set(x, "children", js.Array(value*))
     
-    inline def setName(value: KeywordNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setNameKw(value: KeywordNode): Self = StObject.set(x, "nameKw", value.asInstanceOf[js.Any])
     
     inline def setType(value: clause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

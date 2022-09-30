@@ -10,10 +10,10 @@ A utility library for handling authentication and authorization for redux and re
 | ------------------ | :-------------: |
 | Full name          | redux-auth-wrapper |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 1087805 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 108232.33333333333 |
+| # stars            | 2176.0 |
 
 ## Links
 - [Homepage](https://github.com/mjrussell/redux-auth-wrapper#readme)

@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/sort-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.GridSortBar")
 @js.native
-class GridSortBar protected () extends Element[IModel] {
+open class GridSortBar protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ class GridSortBar protected () extends Element[IModel] {
 }
 object GridSortBar {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridSortBar")
   @js.native
   val ^ : js.Any = js.native
   
@@ -88,13 +88,13 @@ object GridSortBar {
   inline def createInSortableEntityPathSourceUnderSortBar(container: SortableEntityPathSource): GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortableEntityPathSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[GridSortBar]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridSortBar.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortBar.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridSortBar.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

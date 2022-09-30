@@ -9,7 +9,7 @@ import typings.std.anon.CopyWithin
 import typings.wavesurferJs.pluginMod.PluginParams
 import typings.wavesurferJs.pluginMod.WaveSurferPlugin
 import typings.wavesurferJs.spectrogramMod.RGBA
-import typings.wavesurferJs.wavesurferJsNumbers.`256`
+import typings.wavesurferJs.wavesurferJsInts.`256`
 import typings.wavesurferJs.wavesurferMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -82,11 +82,11 @@ object anon {
       */
     /* standard es5 */
     @JSName("every")
-    def every_S_RGBA[S /* <: RGBA */](
+    def every_S[S /* <: RGBA */](
       predicate: js.Function3[/* value */ RGBA, /* index */ Double, /* array */ js.Array[RGBA], /* is S */ Boolean]
     ): /* is std.Array<S> */ Boolean = js.native
     @JSName("every")
-    def every_S_RGBA[S /* <: RGBA */](
+    def every_S[S /* <: RGBA */](
       predicate: js.Function3[/* value */ RGBA, /* index */ Double, /* array */ js.Array[RGBA], /* is S */ Boolean],
       thisArg: Any
     ): /* is std.Array<S> */ Boolean = js.native
@@ -123,11 +123,11 @@ object anon {
       */
     /* standard es5 */
     @JSName("filter")
-    def filter_S_RGBA[S /* <: RGBA */](
+    def filter_S[S /* <: RGBA */](
       predicate: js.Function3[/* value */ RGBA, /* index */ Double, /* array */ js.Array[RGBA], /* is S */ Boolean]
     ): js.Array[S] = js.native
     @JSName("filter")
-    def filter_S_RGBA[S /* <: RGBA */](
+    def filter_S[S /* <: RGBA */](
       predicate: js.Function3[/* value */ RGBA, /* index */ Double, /* array */ js.Array[RGBA], /* is S */ Boolean],
       thisArg: Any
     ): js.Array[S] = js.native

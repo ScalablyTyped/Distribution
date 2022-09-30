@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "array_dot_prototype_dot_flat"
-version := "1.2-dt-20211202Z-c77903"
+version := "1.2-dt-20211202Z-f6aa37"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -34,6 +34,6 @@ object IListSubscriptionsResponse {
     
     inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
-    inline def setSubscriptionsVarargs(value: ISubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: ISubscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
   }
 }

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DeleteClientAction")
 @js.native
-class DeleteClientAction protected ()
+open class DeleteClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DeleteClientAction {
   def this(
     model: AbstractModel,

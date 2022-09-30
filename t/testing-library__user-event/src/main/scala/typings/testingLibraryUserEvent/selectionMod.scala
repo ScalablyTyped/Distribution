@@ -8,8 +8,8 @@ import typings.testingLibraryUserEvent.anon.FocusNode
 import typings.testingLibraryUserEvent.cssPointerEventsMod.global.Element
 import typings.testingLibraryUserEvent.isEditableMod.EditableInputOrTextarea
 import typings.testingLibraryUserEvent.prepareDocumentMod.global.Node
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`-1`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`-1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`1`
 import typings.testingLibraryUserEvent.uIMod.UISelectionRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

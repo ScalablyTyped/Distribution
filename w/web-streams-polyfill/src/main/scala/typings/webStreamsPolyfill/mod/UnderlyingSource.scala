@@ -1,5 +1,6 @@
 package typings.webStreamsPolyfill.mod
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,15 +40,15 @@ object UnderlyingSource {
   
   extension [Self <: UnderlyingSource[?], R](x: Self & UnderlyingSource[R]) {
     
-    inline def setCancel(value: /* reason */ Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* reason */ Any => Unit | PromiseLike[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    inline def setPull(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
+    inline def setPull(value: /* controller */ ReadableStreamDefaultController[R] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
-    inline def setStart(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* controller */ ReadableStreamDefaultController[R] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

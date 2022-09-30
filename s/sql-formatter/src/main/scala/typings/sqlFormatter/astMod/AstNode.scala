@@ -4,6 +4,9 @@ import typings.sqlFormatter.astMod.NodeType.all_columns_asterisk
 import typings.sqlFormatter.astMod.NodeType.array_subscript
 import typings.sqlFormatter.astMod.NodeType.between_predicate
 import typings.sqlFormatter.astMod.NodeType.block_comment
+import typings.sqlFormatter.astMod.NodeType.case_else
+import typings.sqlFormatter.astMod.NodeType.case_expression
+import typings.sqlFormatter.astMod.NodeType.case_when
 import typings.sqlFormatter.astMod.NodeType.clause
 import typings.sqlFormatter.astMod.NodeType.comma
 import typings.sqlFormatter.astMod.NodeType.function_call
@@ -30,6 +33,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sqlFormatter.astMod.PropertyAccessNode
   - typings.sqlFormatter.astMod.ParenthesisNode
   - typings.sqlFormatter.astMod.BetweenPredicateNode
+  - typings.sqlFormatter.astMod.CaseExpressionNode
+  - typings.sqlFormatter.astMod.CaseWhenNode
+  - typings.sqlFormatter.astMod.CaseElseNode
   - typings.sqlFormatter.astMod.LimitClauseNode
   - typings.sqlFormatter.astMod.AllColumnsAsteriskNode
   - typings.sqlFormatter.astMod.LiteralNode
@@ -57,25 +63,55 @@ object AstNode {
   }
   
   inline def BetweenPredicateNode(
-    and: KeywordNode,
-    between: KeywordNode,
+    andKw: KeywordNode,
+    betweenKw: KeywordNode,
     expr1: js.Array[AstNode],
     expr2: js.Array[AstNode],
     `type`: between_predicate
   ): typings.sqlFormatter.astMod.BetweenPredicateNode = {
-    val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], between = between.asInstanceOf[js.Any], expr1 = expr1.asInstanceOf[js.Any], expr2 = expr2.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(andKw = andKw.asInstanceOf[js.Any], betweenKw = betweenKw.asInstanceOf[js.Any], expr1 = expr1.asInstanceOf[js.Any], expr2 = expr2.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sqlFormatter.astMod.BetweenPredicateNode]
   }
   
-  inline def BlockCommentNode(text: String, `type`: block_comment): typings.sqlFormatter.astMod.BlockCommentNode = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+  inline def BlockCommentNode(precedingWhitespace: String, text: String, `type`: block_comment): typings.sqlFormatter.astMod.BlockCommentNode = {
+    val __obj = js.Dynamic.literal(precedingWhitespace = precedingWhitespace.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sqlFormatter.astMod.BlockCommentNode]
   }
   
-  inline def ClauseNode(children: js.Array[AstNode], name: KeywordNode, `type`: clause): typings.sqlFormatter.astMod.ClauseNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def CaseElseNode(elseKw: KeywordNode, result: js.Array[AstNode], `type`: case_else): typings.sqlFormatter.astMod.CaseElseNode = {
+    val __obj = js.Dynamic.literal(elseKw = elseKw.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.sqlFormatter.astMod.CaseElseNode]
+  }
+  
+  inline def CaseExpressionNode(
+    caseKw: KeywordNode,
+    clauses: js.Array[CaseWhenNode | CaseElseNode],
+    endKw: KeywordNode,
+    expr: js.Array[AstNode],
+    `type`: case_expression
+  ): typings.sqlFormatter.astMod.CaseExpressionNode = {
+    val __obj = js.Dynamic.literal(caseKw = caseKw.asInstanceOf[js.Any], clauses = clauses.asInstanceOf[js.Any], endKw = endKw.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.sqlFormatter.astMod.CaseExpressionNode]
+  }
+  
+  inline def CaseWhenNode(
+    condition: js.Array[AstNode],
+    result: js.Array[AstNode],
+    thenKw: KeywordNode,
+    `type`: case_when,
+    whenKw: KeywordNode
+  ): typings.sqlFormatter.astMod.CaseWhenNode = {
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], thenKw = thenKw.asInstanceOf[js.Any], whenKw = whenKw.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.sqlFormatter.astMod.CaseWhenNode]
+  }
+  
+  inline def ClauseNode(children: js.Array[AstNode], nameKw: KeywordNode, `type`: clause): typings.sqlFormatter.astMod.ClauseNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], nameKw = nameKw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sqlFormatter.astMod.ClauseNode]
   }
@@ -86,8 +122,8 @@ object AstNode {
     __obj.asInstanceOf[typings.sqlFormatter.astMod.CommaNode]
   }
   
-  inline def FunctionCallNode(name: KeywordNode, parenthesis: ParenthesisNode, `type`: function_call): typings.sqlFormatter.astMod.FunctionCallNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parenthesis = parenthesis.asInstanceOf[js.Any])
+  inline def FunctionCallNode(nameKw: KeywordNode, parenthesis: ParenthesisNode, `type`: function_call): typings.sqlFormatter.astMod.FunctionCallNode = {
+    val __obj = js.Dynamic.literal(nameKw = nameKw.asInstanceOf[js.Any], parenthesis = parenthesis.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sqlFormatter.astMod.FunctionCallNode]
   }
@@ -104,8 +140,8 @@ object AstNode {
     __obj.asInstanceOf[typings.sqlFormatter.astMod.KeywordNode]
   }
   
-  inline def LimitClauseNode(count: js.Array[AstNode], name: KeywordNode, `type`: limit_clause): typings.sqlFormatter.astMod.LimitClauseNode = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def LimitClauseNode(count: js.Array[AstNode], limitKw: KeywordNode, `type`: limit_clause): typings.sqlFormatter.astMod.LimitClauseNode = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], limitKw = limitKw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sqlFormatter.astMod.LimitClauseNode]
   }
@@ -151,8 +187,8 @@ object AstNode {
     __obj.asInstanceOf[typings.sqlFormatter.astMod.PropertyAccessNode]
   }
   
-  inline def SetOperationNode(children: js.Array[AstNode], name: KeywordNode, `type`: set_operation): typings.sqlFormatter.astMod.SetOperationNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def SetOperationNode(children: js.Array[AstNode], nameKw: KeywordNode, `type`: set_operation): typings.sqlFormatter.astMod.SetOperationNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], nameKw = nameKw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sqlFormatter.astMod.SetOperationNode]
   }

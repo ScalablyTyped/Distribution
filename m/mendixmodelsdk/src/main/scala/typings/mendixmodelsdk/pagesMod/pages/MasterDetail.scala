@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.15.0: deleted
   * In version 7.1.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetail")
 @js.native
-class MasterDetail protected () extends Widget {
+open class MasterDetail protected () extends Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -49,7 +49,7 @@ class MasterDetail protected () extends Widget {
 }
 object MasterDetail {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetail")
   @js.native
   val ^ : js.Any = js.native
   
@@ -304,13 +304,13 @@ object MasterDetail {
   inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): MasterDetail = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[MasterDetail]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetail.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MasterDetail.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MasterDetail.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

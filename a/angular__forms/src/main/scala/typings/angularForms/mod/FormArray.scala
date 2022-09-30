@@ -1,13 +1,17 @@
 package typings.angularForms.mod
 
 import typings.angularForms.anon.EmitEvent
+import typings.angularForms.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormArray")
 @js.native
-class FormArray protected () extends AbstractControl {
+open class FormArray[TControl /* <: AbstractControl[Any, Any] */] protected () extends AbstractControl[
+      ɵTypedOrUntyped[TControl, ɵFormArrayValue[TControl], Any], 
+      ɵTypedOrUntyped[TControl, ɵFormArrayRawValue[TControl], Any]
+    ] {
   /**
     * Creates a new `FormArray` instance.
     *
@@ -21,64 +25,60 @@ class FormArray protected () extends AbstractControl {
     * @param asyncValidator A single async validator or array of async validator functions
     *
     */
-  def this(controls: js.Array[AbstractControl]) = this()
-  def this(controls: js.Array[AbstractControl], validatorOrOpts: js.Array[ValidatorFn]) = this()
-  def this(controls: js.Array[AbstractControl], validatorOrOpts: AbstractControlOptions) = this()
-  def this(controls: js.Array[AbstractControl], validatorOrOpts: ValidatorFn) = this()
+  def this(controls: js.Array[TControl]) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: js.Array[ValidatorFn]) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: AbstractControlOptions) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: ValidatorFn) = this()
   def this(
-    controls: js.Array[AbstractControl],
+    controls: js.Array[TControl],
     validatorOrOpts: js.Array[ValidatorFn],
     asyncValidator: js.Array[AsyncValidatorFn]
   ) = this()
   def this(
-    controls: js.Array[AbstractControl],
+    controls: js.Array[TControl],
     validatorOrOpts: js.Array[ValidatorFn],
     asyncValidator: AsyncValidatorFn
   ) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: Null, asyncValidator: js.Array[AsyncValidatorFn]) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: Unit, asyncValidator: js.Array[AsyncValidatorFn]) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn) = this()
   def this(
-    controls: js.Array[AbstractControl],
-    validatorOrOpts: Null,
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(controls: js.Array[AbstractControl], validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
-  def this(
-    controls: js.Array[AbstractControl],
-    validatorOrOpts: Unit,
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(controls: js.Array[AbstractControl], validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn) = this()
-  def this(
-    controls: js.Array[AbstractControl],
+    controls: js.Array[TControl],
     validatorOrOpts: AbstractControlOptions,
     asyncValidator: js.Array[AsyncValidatorFn]
   ) = this()
   def this(
-    controls: js.Array[AbstractControl],
+    controls: js.Array[TControl],
     validatorOrOpts: AbstractControlOptions,
     asyncValidator: AsyncValidatorFn
   ) = this()
   def this(
-    controls: js.Array[AbstractControl],
+    controls: js.Array[TControl],
     validatorOrOpts: ValidatorFn,
     asyncValidator: js.Array[AsyncValidatorFn]
   ) = this()
-  def this(
-    controls: js.Array[AbstractControl],
-    validatorOrOpts: ValidatorFn,
-    asyncValidator: AsyncValidatorFn
-  ) = this()
+  def this(controls: js.Array[TControl], validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
   
-  /* private */ var _registerControl: js.Any = js.native
+  /* private */ var _registerControl: Any = js.native
   
   /**
     * Get the `AbstractControl` at the given `index` in the array.
     *
-    * @param index Index in the array to retrieve the control
+    * @param index Index in the array to retrieve the control. If `index` is negative, it will wrap
+    *     around from the back, and if index is greatly negative (less than `-length`), the result is
+    * undefined. This behavior is the same as `Array.at(index)`.
     */
-  def at(index: Double): AbstractControl = js.native
+  def at(index: Double): ɵTypedOrUntyped[TControl, TControl, AbstractControl[Any, Any]] = js.native
   
   /**
     * Remove all controls in the `FormArray`.
+    *
+    * @param options Specifies whether this FormArray instance should emit events after all
+    *     controls are removed.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges` observables emit events with the latest status and value when all controls
+    * in this FormArray instance are removed. When false, no events are emitted.
     *
     * @usageNotes
     * ### Remove all elements from a FormArray
@@ -108,24 +108,25 @@ class FormArray protected () extends AbstractControl {
     * ```
     */
   def clear(): Unit = js.native
+  def clear(options: `0`): Unit = js.native
   
-  var controls: js.Array[AbstractControl] = js.native
-  
-  /**
-    * The aggregate value of the array, including any disabled controls.
-    *
-    * Reports all values regardless of disabled status.
-    * For enabled controls only, the `value` property is the best way to get the value of the array.
-    */
-  def getRawValue(): js.Array[js.Any] = js.native
+  var controls: ɵTypedOrUntyped[TControl, js.Array[TControl], js.Array[AbstractControl[Any, Any]]] = js.native
   
   /**
     * Insert a new `AbstractControl` at the given `index` in the array.
     *
-    * @param index Index in the array to insert the control
+    * @param index Index in the array to insert the control. If `index` is negative, wraps around
+    *     from the back. If `index` is greatly negative (less than `-length`), prepends to the array.
+    * This behavior is the same as `Array.splice(index, 0, control)`.
     * @param control Form control to be inserted
+    * @param options Specifies whether this FormArray instance should emit events after a new
+    *     control is inserted.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges` observables emit events with the latest status and value when the control is
+    * inserted. When false, no events are emitted.
     */
-  def insert(index: Double, control: AbstractControl): Unit = js.native
+  def insert(index: Double, control: TControl): Unit = js.native
+  def insert(index: Double, control: TControl, options: `0`): Unit = js.native
   
   /**
     * Length of the control array.
@@ -160,39 +161,59 @@ class FormArray protected () extends AbstractControl {
     * * `onlySelf`: When true, each change only affects this control, and not its parent. Default
     * is false.
     * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
-    * `valueChanges`
-    * observables emit events with the latest status and value when the control value is updated.
-    * When false, no events are emitted.
-    * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
-    * updateValueAndValidity} method.
+    * `valueChanges` observables emit events with the latest status and value when the control
+    * value is updated. When false, no events are emitted. The configuration options are passed to
+    * the {@link AbstractControl#updateValueAndValidity updateValueAndValidity} method.
     */
-  def patchValue(value: js.Array[js.Any]): Unit = js.native
-  def patchValue(value: js.Array[js.Any], options: EmitEvent): Unit = js.native
+  def patchValue(value: ɵFormArrayValue[TControl]): Unit = js.native
+  def patchValue(value: ɵFormArrayValue[TControl], options: EmitEvent): Unit = js.native
   
   /**
     * Insert a new `AbstractControl` at the end of the array.
     *
     * @param control Form control to be inserted
+    * @param options Specifies whether this FormArray instance should emit events after a new
+    *     control is added.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges` observables emit events with the latest status and value when the control is
+    * inserted. When false, no events are emitted.
     */
-  def push(control: AbstractControl): Unit = js.native
+  def push(control: TControl): Unit = js.native
+  def push(control: TControl, options: `0`): Unit = js.native
   
   /**
     * Remove the control at the given `index` in the array.
     *
-    * @param index Index in the array to remove the control
+    * @param index Index in the array to remove the control.  If `index` is negative, wraps around
+    *     from the back. If `index` is greatly negative (less than `-length`), removes the first
+    *     element. This behavior is the same as `Array.splice(index, 1)`.
+    * @param options Specifies whether this FormArray instance should emit events after a
+    *     control is removed.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges` observables emit events with the latest status and value when the control is
+    * removed. When false, no events are emitted.
     */
   def removeAt(index: Double): Unit = js.native
+  def removeAt(index: Double, options: `0`): Unit = js.native
   
-  def reset(value: js.Any, options: EmitEvent): Unit = js.native
   def reset(value: Unit, options: EmitEvent): Unit = js.native
+  def reset(value: ɵTypedOrUntyped[TControl, ɵFormArrayValue[TControl], Any], options: EmitEvent): Unit = js.native
   
   /**
     * Replace an existing control.
     *
-    * @param index Index in the array to replace the control
+    * @param index Index in the array to replace the control. If `index` is negative, wraps around
+    *     from the back. If `index` is greatly negative (less than `-length`), replaces the first
+    *     element. This behavior is the same as `Array.splice(index, 1, control)`.
     * @param control The `AbstractControl` control to replace the existing control
+    * @param options Specifies whether this FormArray instance should emit events after an
+    *     existing control is replaced with a new one.
+    * * `emitEvent`: When true or not supplied (the default), both the `statusChanges` and
+    * `valueChanges` observables emit events with the latest status and value when the control is
+    * replaced with a new one. When false, no events are emitted.
     */
-  def setControl(index: Double, control: AbstractControl): Unit = js.native
+  def setControl(index: Double, control: TControl): Unit = js.native
+  def setControl(index: Double, control: TControl, options: `0`): Unit = js.native
   
   /**
     * Sets the value of the `FormArray`. It accepts an array that matches
@@ -229,6 +250,6 @@ class FormArray protected () extends AbstractControl {
     * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
     * updateValueAndValidity} method.
     */
-  def setValue(value: js.Array[js.Any]): Unit = js.native
-  def setValue(value: js.Array[js.Any], options: EmitEvent): Unit = js.native
+  def setValue(value: ɵFormArrayRawValue[TControl]): Unit = js.native
+  def setValue(value: ɵFormArrayRawValue[TControl], options: EmitEvent): Unit = js.native
 }

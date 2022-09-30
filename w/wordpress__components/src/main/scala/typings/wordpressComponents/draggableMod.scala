@@ -51,11 +51,11 @@ object draggableMod {
       /**
         * Arbitrary data object attached to the drag and drop event.
         */
-      var transferData: js.Any
+      var transferData: Any
     }
     object Props {
       
-      inline def apply(children: OnDraggableEnd => ReactNode, elementId: String, transferData: js.Any): Props = {
+      inline def apply(children: OnDraggableEnd => ReactNode, elementId: String, transferData: Any): Props = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), elementId = elementId.asInstanceOf[js.Any], transferData = transferData.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
@@ -74,7 +74,7 @@ object draggableMod {
         
         inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
         
-        inline def setTransferData(value: js.Any): Self = StObject.set(x, "transferData", value.asInstanceOf[js.Any])
+        inline def setTransferData(value: Any): Self = StObject.set(x, "transferData", value.asInstanceOf[js.Any])
       }
     }
   }

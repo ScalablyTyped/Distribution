@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipld__dag-cbor"
-version := "7.0.3-11cf44"
+version := "7.0.3-3a41e6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

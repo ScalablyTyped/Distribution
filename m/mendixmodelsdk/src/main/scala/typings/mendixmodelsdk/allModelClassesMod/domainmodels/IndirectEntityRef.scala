@@ -14,16 +14,18 @@ import typings.mendixmodelsdk.pagesMod.pages.NewButton
 import typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSelector
 import typings.mendixmodelsdk.pagesMod.pages.SelectorXPathSource
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.workflowsMod.workflows.Parameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.6.0: added public
   * In version 7.11.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IndirectEntityRef")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IndirectEntityRef")
 @js.native
-class IndirectEntityRef protected ()
+open class IndirectEntityRef protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndirectEntityRef {
   def this(
     model: AbstractModel,
@@ -36,7 +38,7 @@ class IndirectEntityRef protected ()
 }
 object IndirectEntityRef {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IndirectEntityRef")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IndirectEntityRef")
   @js.native
   val ^ : js.Any = js.native
   
@@ -105,6 +107,17 @@ object IndirectEntityRef {
   
   /**
     * Creates and returns a new IndirectEntityRef instance in the SDK and on the server.
+    * The new IndirectEntityRef will be automatically stored in the 'entityRef' property
+    * of the parent workflows.Parameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.6.0 to 9.9.0
+    */
+  /* static member */
+  inline def createInParameterUnderEntityRef(container: Parameter): typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParameterUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndirectEntityRef]
+  
+  /**
+    * Creates and returns a new IndirectEntityRef instance in the SDK and on the server.
     * The new IndirectEntityRef will be automatically stored in the 'constrainedByRefs' property
     * of the parent pages.ReferenceSetSelector element passed as argument.
     *
@@ -137,13 +150,13 @@ object IndirectEntityRef {
   inline def createInWidgetValueUnderEntityRef(container: WidgetValue): typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndirectEntityRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderEntityRef")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndirectEntityRef]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IndirectEntityRef.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IndirectEntityRef.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IndirectEntityRef.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IndirectEntityRef.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

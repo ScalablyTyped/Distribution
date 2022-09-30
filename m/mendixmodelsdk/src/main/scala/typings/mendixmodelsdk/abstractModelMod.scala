@@ -9,8 +9,6 @@ import typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent
 import typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent
 import typings.mendixmodelsdk.structuresMod.IStructure
 import typings.mendixmodelsdk.transportInterfacesMod.IAbstractUnitJson
-import typings.mendixmodelsdk.transportInterfacesMod.IDeployJobStatus
-import typings.mendixmodelsdk.transportInterfacesMod.IEnvironmentStatus
 import typings.mendixmodelsdk.transportInterfacesMod.IGetFilesOptions
 import typings.mendixmodelsdk.transportInterfacesMod.IWorkingCopy
 import typings.mendixmodelsdk.unitsMod.IAbstractUnit
@@ -23,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractModelMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/AbstractModel", "AbstractModel")
+  @JSImport("mendixmodelsdk/src/sdk/internal/AbstractModel", "AbstractModel")
   @js.native
   abstract class AbstractModel protected ()
     extends StObject
@@ -50,13 +48,14 @@ object abstractModelMod {
     
     /**
       * Adds the given module json to the project, which will make the module and its units read-only and unloadable.
+      * Returns the added module.
       *
       * Gives **error** if
       * - The JSON isn't an array
       * - The module package is not compatible with the same metamodel version as the project
       */
-    def addModuleUnitInterfaces(moduleJson: String): Unit = js.native
-    def addModuleUnitInterfaces(moduleJson: js.Array[IAbstractUnitJson]): Unit = js.native
+    def addModuleUnitInterfaces(moduleJson: String): IStructuralUnit = js.native
+    def addModuleUnitInterfaces(moduleJson: js.Array[IAbstractUnitJson]): IStructuralUnit = js.native
     
     /**
       * Returns all units in the project, including modules, folders etc.
@@ -94,13 +93,13 @@ object abstractModelMod {
     def exportModuleMpk(moduleId: String, outFilePath: String, callback: IVoidCallback): Unit = js.native
     def exportModuleMpk(moduleId: String, outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     
-    def exportMpk(outFilePath: String): js.Promise[Unit] = js.native
+    def exportMpk(outFilePath: String): js.Promise[IExportMpkResponse] = js.native
     /**
       * Exports this model as MPK.
-      * If outFilePath is empty, the raw response body will be provided in the callback
+      * If outFilePath is empty, the raw response body will be provided.
       */
-    def exportMpk(outFilePath: String, callback: IVoidCallback): Unit = js.native
-    def exportMpk(outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
+    def exportMpk(outFilePath: String, callback: IExportMpkCallback): Unit = js.native
+    def exportMpk(outFilePath: String, callback: IExportMpkCallback, errorCallback: IErrorCallback): Unit = js.native
     
     def filterUnitsByCustomWidgetId(workingCopyId: String, widgetId: String): js.Promise[js.Array[String]] = js.native
     /**
@@ -122,42 +121,15 @@ object abstractModelMod {
     def flushChanges(callback: IVoidCallback): Unit = js.native
     def flushChanges(callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     
-    def getAppEnvironmentStatus(): js.Promise[IEnvironmentStatus] = js.native
-    /**
-      * Get the deployment status of the working copy. Can be STAGING, STARTED, STARTING, UPDATING, STOPPED,
-      * FAILED_STAGING, FAILED and APP_NOT_FOUND.
-      * Contains other deployment info as well.
-      */
-    def getAppEnvironmentStatus(callback: ICallback[IEnvironmentStatus], errorCallback: IErrorCallback): Unit = js.native
-    
-    def getAppEnvironmentStatusV2(): js.Promise[IEnvironmentStatus] = js.native
-    /**
-      * Get the deployment status of the working copy. Can be STAGING, STARTED, STARTING, UPDATING, STOPPED,
-      * FAILED_STAGING, FAILED, APP_NOT_FOUND, INVALID_PROJECTID, INVALID_OPENID, UNKNOWN_DEPLOYER, UNKNOWN_PROJECT,
-      * UNKNOWN_ACCOUNT, BUSY_PROVISIONIN, UNLINKED, NO_WEBMODELER_TARGET_SELECTED.
-      * Contains other deployment info as well.
-      */
-    def getAppEnvironmentStatusV2(callback: ICallback[IEnvironmentStatus], errorCallback: IErrorCallback): Unit = js.native
-    
-    def getAppUpdateStatus(jobId: String): js.Promise[IDeployJobStatus] = js.native
-    /**
-      * Retrieves App Job by jobId. See also `startAppUpdate`.
-      * In the response the most important field is status.
-      *
-      * Polling for job status should stop once it has reeached "started" | "failed" | "consistencyerrors".
-      * Jobs will be cleaned up 10 minutes after the have reached one of this states.
-      */
-    def getAppUpdateStatus(jobId: String, callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
-    
-    def getFile(filePath: String, outFilePath: String): js.Promise[js.Any] = js.native
+    def getFile(filePath: String, outFilePath: String): js.Promise[Any] = js.native
     /**
       * Downloads the file specified by the supplied filepath.
-      * If filePath is empty, the raw response body will be provided in the callback
+      * If outFilePath is empty, the raw response body will be provided in the callback
       */
     def getFile(
       filePath: String,
       outFilePath: String,
-      callback: js.Function1[/* response */ js.UndefOr[js.Any], Unit],
+      callback: js.Function1[/* response */ js.UndefOr[Any], Unit],
       errorCallback: IErrorCallback
     ): Unit = js.native
     
@@ -178,10 +150,10 @@ object abstractModelMod {
       callback: js.Function1[/* response */ js.UndefOr[js.Array[String]], Unit],
       errorCallback: IErrorCallback
     ): Unit = js.native
-    def getFiles(options: IGetFilesOptions): js.Promise[js.Array[String] | js.Any] = js.native
+    def getFiles(options: IGetFilesOptions): js.Promise[js.Array[String] | Any] = js.native
     def getFiles(
       options: IGetFilesOptions,
-      callback: js.Function1[/* response */ js.UndefOr[js.Array[String] | js.Any], Unit],
+      callback: js.Function1[/* response */ js.UndefOr[js.Array[String] | Any], Unit],
       errorCallback: IErrorCallback
     ): Unit = js.native
     
@@ -258,20 +230,6 @@ object abstractModelMod {
       */
     def setErrorHandler(callback: IErrorCallback): Unit = js.native
     
-    def startAppUpdate(): js.Promise[IDeployJobStatus] = js.native
-    /**
-      * Start async deploy flow, creates new app job and returns it.
-      * This call immediately returns after successfully initiating the deployment job, and it's progress
-      * can be tracked using `getAppUpdateStates.
-      *
-      * A start update packs the mpk and sends it to the cloud environment to update the application,
-      * a new application will be provisioned if needed.
-      *
-      * The update job will always converge to a stable state (one of "started" | "failed" | "consistencyerrors").
-      * Use the returned job id to poll for this.
-      */
-    def startAppUpdate(callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
-    
     def startReceivingModelEvents(): Unit = js.native
     
     def startReceivingWorkingCopyEvents(): Unit = js.native
@@ -284,6 +242,31 @@ object abstractModelMod {
       * The meta data of the model.
       */
     var workingCopy: IWorkingCopy = js.native
+  }
+  
+  type IExportMpkCallback = js.Function2[/* data */ Any, /* lastEventId */ Double, Unit]
+  
+  trait IExportMpkResponse extends StObject {
+    
+    var data: js.UndefOr[Any] = js.undefined
+    
+    var lastEventId: Double
+  }
+  object IExportMpkResponse {
+    
+    inline def apply(lastEventId: Double): IExportMpkResponse = {
+      val __obj = js.Dynamic.literal(lastEventId = lastEventId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IExportMpkResponse]
+    }
+    
+    extension [Self <: IExportMpkResponse](x: Self) {
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setLastEventId(value: Double): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
+    }
   }
   
   type ISubResolver = js.Function2[/* parent */ IStructure, /* partName */ String, IStructure]

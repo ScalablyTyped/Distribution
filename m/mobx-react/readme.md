@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-react
 
-Typings are for version 7.0.5
+Typings are for version 7.5.3
 
 ## Library description:
 React bindings for MobX. Create fully reactive components.
@@ -10,13 +10,13 @@ React bindings for MobX. Create fully reactive components.
 | ------------------ | :-------------: |
 | Full name          | mobx-react |
 | Keywords           | mobx, mobservable, react-component, react, reactjs, reactive |
-| # releases         | 34 |
-| # dependents       | 1050 |
-| # downloads        | 18373753 |
-| # stars            | 7 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 2877175.3333333335 |
+| # stars            | 25645.0 |
 
 ## Links
-- [Homepage](http://mobx.js.org/)
+- [Homepage](https://mobx.js.org)
 - [Bugs](https://github.com/mobxjs/mobx/issues)
 - [Repository](https://github.com/mobxjs/mobx)
 - [Npm](https://www.npmjs.com/package/mobx-react)

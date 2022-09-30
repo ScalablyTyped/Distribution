@@ -23,11 +23,10 @@ trait ParagraphData extends StObject {
   var alignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    * Gets the collection of fields in the paragraph. Read-only.
+    * Gets the collection of fields in the paragraph.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
   
@@ -40,7 +39,7 @@ trait ParagraphData extends StObject {
   var firstLineIndent: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -48,7 +47,7 @@ trait ParagraphData extends StObject {
   var font: js.UndefOr[FontData] = js.undefined
   
   /**
-    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -56,7 +55,7 @@ trait ParagraphData extends StObject {
   var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
-    * Indicates the paragraph is the last one inside its parent body. Read-only.
+    * Indicates the paragraph is the last one inside its parent body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -64,7 +63,7 @@ trait ParagraphData extends StObject {
   var isLastParagraph: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Checks whether the paragraph is a list item. Read-only.
+    * Checks whether the paragraph is a list item.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -104,7 +103,7 @@ trait ParagraphData extends StObject {
   var lineUnitBefore: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
+    * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -112,7 +111,7 @@ trait ParagraphData extends StObject {
   var listItem: js.UndefOr[ListItemData] = js.undefined
   
   /**
-    * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
+    * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -170,7 +169,7 @@ trait ParagraphData extends StObject {
   ] = js.undefined
   
   /**
-    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -178,7 +177,7 @@ trait ParagraphData extends StObject {
   var tableNestingLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets the text of the paragraph. Read-only.
+    * Gets the text of the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]

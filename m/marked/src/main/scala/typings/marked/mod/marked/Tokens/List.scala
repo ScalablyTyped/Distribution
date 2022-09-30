@@ -25,13 +25,13 @@ trait List
 }
 object List {
   
-  inline def apply(items: js.Array[ListItem], loose: Boolean, ordered: Boolean, raw: String, start: Double | _empty): List = {
+  inline def apply(items: js.Array[ListItem], loose: Boolean, ordered: Boolean, raw: String, start: Double | _empty): typings.marked.mod.marked.Tokens.List = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], loose = loose.asInstanceOf[js.Any], ordered = ordered.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("list")
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.marked.mod.marked.Tokens.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.marked.mod.marked.Tokens.List](x: Self) {
     
     inline def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

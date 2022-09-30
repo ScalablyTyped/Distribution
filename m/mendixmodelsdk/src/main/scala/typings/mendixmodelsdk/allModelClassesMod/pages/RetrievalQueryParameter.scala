@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQueryParameter")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQueryParameter")
 @js.native
-class RetrievalQueryParameter protected ()
+open class RetrievalQueryParameter protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class RetrievalQueryParameter protected ()
 }
 object RetrievalQueryParameter {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQueryParameter")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQueryParameter")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,19 +47,41 @@ object RetrievalQueryParameter {
     * of the parent RetrievalQuery element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.6.0 and higher
+    *  8.6.0 to 9.16.0
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.RetrievalQuery): typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter]
   
+  /**
+    * Creates and returns a new RetrievalQueryParameter instance in the SDK and on the server.
+    * The new RetrievalQueryParameter will be automatically stored in the 'parameters' property
+    * of the parent RetrievalQuery element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.6.0 and higher
+    */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQueryParameter.structureTypeName")
+  inline def createInRetrievalQueryUnderParameters(container: typings.mendixmodelsdk.pagesMod.pages.RetrievalQuery): typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRetrievalQueryUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter]
+  
+  /**
+    * Creates and returns a new RetrievalQueryParameter instance in the SDK and on the server.
+    * The new RetrievalQueryParameter will be automatically stored in the 'parameters' property
+    * of the parent RuntimeOperation element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.17.0 and higher
+    */
+  /* static member */
+  inline def createInRuntimeOperationUnderParameters(container: typings.mendixmodelsdk.pagesMod.pages.RuntimeOperation): typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuntimeOperationUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQueryParameter.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.RetrievalQueryParameter.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.RetrievalQueryParameter.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

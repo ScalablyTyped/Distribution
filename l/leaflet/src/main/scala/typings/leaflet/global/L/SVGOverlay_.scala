@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.SVGOverlay")
 @js.native
-class SVGOverlay_ protected ()
+open class SVGOverlay_ protected ()
   extends typings.leaflet.mod.SVGOverlay_ {
   /** SVGOverlay doesn't extend ImageOverlay because SVGOverlay.getElement returns SVGElement */
   def this(svgImage: String, bounds: LatLngBoundsExpression) = this()

@@ -20,40 +20,40 @@ object babylonjsSceneAugmentingMod {
   @js.native
   trait Scene extends StObject {
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _boundingBoxRenderer: typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedRayForTransform: typings.babylonjs.rayMod.Ray = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createMultiviewUbo(): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing field
       */
     var _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _depthPeelingRenderer: Nullable[typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _depthRenderer: org.scalablytyped.runtime.StringDictionary[typings.babylonjs.depthRendererMod.DepthRenderer] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _edgeRenderLineShader: Nullable[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _forceShowBoundingBoxes: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gamepadManager: Nullable[typings.babylonjs.gamepadManagerMod.GamepadManager] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _geometryBufferRenderer: Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalMultiPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathVectorMod.Matrix, 
@@ -88,7 +88,7 @@ object babylonjsSceneAugmentingMod {
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalMultiPickSprites(ray: typings.babylonjs.rayMod.Ray): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
     def _internalMultiPickSprites(
       ray: typings.babylonjs.rayMod.Ray,
@@ -101,7 +101,7 @@ object babylonjsSceneAugmentingMod {
     ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
     def _internalMultiPickSprites(ray: typings.babylonjs.rayMod.Ray, predicate: Unit, camera: typings.babylonjs.cameraMod.Camera): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalPick(
       rayFunction: js.Function2[
           /* world */ typings.babylonjs.mathVectorMod.Matrix, 
@@ -264,7 +264,7 @@ object babylonjsSceneAugmentingMod {
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalPickForMesh(
       pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
@@ -475,7 +475,7 @@ object babylonjsSceneAugmentingMod {
       skipBoundingInfo: Boolean
     ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalPickSprites(ray: typings.babylonjs.rayMod.Ray): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
     def _internalPickSprites(
       ray: typings.babylonjs.rayMod.Ray,
@@ -513,75 +513,75 @@ object babylonjsSceneAugmentingMod {
     ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing field
       */
     var _mainSoundTrack: typings.babylonjs.soundTrackMod.SoundTrack = js.native
     
-    /** @hidden */
+    /** @internal */
     var _multiviewSceneUbo: Nullable[typings.babylonjs.uniformBufferMod.UniformBuffer] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _outlineRenderer: typings.babylonjs.outlineRendererMod.OutlineRenderer = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _physicsEngine: Nullable[IPhysicsEngine] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _physicsTimeAccumulator: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pickWithRayInverseMatrix: typings.babylonjs.mathVectorMod.Matrix = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pickedDownSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pointerOverSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _postProcessRenderPipelineManager: typings.babylonjs.postProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager = js.native
     
-    /** @hidden */
+    /** @internal */
     def _processLateAnimationBindings(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: typings.babylonjs.mathVectorMod.Quaternion): typings.babylonjs.mathVectorMod.Quaternion = js.native
     
-    /** @hidden */
+    /** @internal */
     def _registerTargetForLateAnimationBinding(runtimeAnimation: typings.babylonjs.runtimeAnimationMod.RuntimeAnimation, originalValue: Any): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _renderMultiviewToSingleView(camera: typings.babylonjs.cameraMod.Camera): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing Filed
       */
     var _selectionOctree: typings.babylonjs.octreeMod.Octree[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue = js.native
     
-    /** @hidden */
+    /** @internal */
     var _tempPickingRay: Nullable[typings.babylonjs.rayMod.Ray] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _tempSpritePickingRay: Nullable[typings.babylonjs.rayMod.Ray] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _transformMatrixR: typings.babylonjs.mathVectorMod.Matrix = js.native
     
-    /** @hidden */
+    /** @internal */
     def _updateMultiviewUbo(): Unit = js.native
     def _updateMultiviewUbo(viewR: Unit, projectionR: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: typings.babylonjs.mathVectorMod.Matrix, projectionR: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _useOrderIndependentTransparency: Boolean = js.native
     
     /**

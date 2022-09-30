@@ -14,7 +14,7 @@ object touchableItemMod {
   
   @JSImport("react-navigation-drawer/lib/typescript/src/views/TouchableItem", JSImport.Default)
   @js.native
-  class default () extends TouchableItem
+  open class default () extends TouchableItem
   /* static members */
   object default {
     
@@ -32,5 +32,5 @@ object touchableItemMod {
   
   @js.native
   trait TouchableItem
-    extends Component[Props, js.Object, js.Any]
+    extends Component[Props, js.Object, Any]
 }

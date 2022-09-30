@@ -20,10 +20,10 @@ import typings.reactNativeVectorIcons.anon.KinFontAwesome5IconVarian
 import typings.reactNativeVectorIcons.iconMod.Icon.TabBarItem
 import typings.reactNativeVectorIcons.iconMod.Icon.TabBarItemIOS
 import typings.reactNativeVectorIcons.iconMod.ImageSource
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`0`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`1`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`2`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`3`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`0`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`1`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`2`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`3`
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.`no-hide-descendants`
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.all
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.assertive
@@ -255,6 +255,11 @@ object fontAwesome5Mod {
       * By default no data types are detected.
       */
     var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
+    
+    /**
+      * Specifies the disabled state of the text view for testing purposes.
+      */
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This can be one of the following values:
@@ -517,6 +522,10 @@ object fontAwesome5Mod {
       inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
       
       inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
       

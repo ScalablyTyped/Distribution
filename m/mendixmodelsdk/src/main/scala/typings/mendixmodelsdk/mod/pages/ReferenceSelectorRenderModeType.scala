@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ReferenceSelectorRenderModeType")
 @js.native
-class ReferenceSelectorRenderModeType protected ()
+open class ReferenceSelectorRenderModeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ReferenceSelectorRenderModeType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

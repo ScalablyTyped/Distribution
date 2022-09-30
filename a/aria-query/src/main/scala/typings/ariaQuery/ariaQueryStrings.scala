@@ -451,10 +451,6 @@ object ariaQueryStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait `direct descendant of details element with the open attribute defined` extends StObject
-  inline def `direct descendant of details element with the open attribute defined`: `direct descendant of details element with the open attribute defined` = ("direct descendant of details element with the open attribute defined").asInstanceOf[`direct descendant of details element with the open attribute defined`]
-  
-  @js.native
   sealed trait `direct descendant of document` extends StObject
   inline def `direct descendant of document`: `direct descendant of document` = ("direct descendant of document").asInstanceOf[`direct descendant of document`]
   

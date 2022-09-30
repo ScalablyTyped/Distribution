@@ -99,9 +99,7 @@ object khronosTextureContainerMod {
     /**
       * Uploads KTX content to a Babylon Texture.
       * It is assumed that the texture has already been created & is currently bound
-      * @param texture
-      * @param loadMipmaps
-      * @hidden
+      * @internal
       */
     def uploadLevels(texture: InternalTexture, loadMipmaps: Boolean): Unit = js.native
   }

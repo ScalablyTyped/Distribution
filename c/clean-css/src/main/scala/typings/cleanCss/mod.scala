@@ -16,9 +16,9 @@ import typings.cleanCss.anon.Opacity
 import typings.cleanCss.anon.SourceMap
 import typings.cleanCss.cleanCssBooleans.`false`
 import typings.cleanCss.cleanCssBooleans.`true`
-import typings.cleanCss.cleanCssNumbers.`0`
-import typings.cleanCss.cleanCssNumbers.`1`
-import typings.cleanCss.cleanCssNumbers.`2`
+import typings.cleanCss.cleanCssInts.`0`
+import typings.cleanCss.cleanCssInts.`1`
+import typings.cleanCss.cleanCssInts.`2`
 import typings.cleanCss.cleanCssStrings.Asterisk
 import typings.cleanCss.cleanCssStrings.`keep-breaks`
 import typings.cleanCss.cleanCssStrings.beautify

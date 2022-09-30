@@ -8,36 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object dvaStrings {
   
   @js.native
-  sealed trait hashbang extends StObject
-  inline def hashbang: hashbang = "hashbang".asInstanceOf[hashbang]
-  
-  @js.native
-  sealed trait history extends StObject
-  inline def history: history = "history".asInstanceOf[history]
-  
-  @js.native
-  sealed trait location extends StObject
-  inline def location: location = "location".asInstanceOf[location]
-  
-  @js.native
-  sealed trait `match` extends StObject
-  inline def `match`: `match` = "match".asInstanceOf[`match`]
-  
-  @js.native
-  sealed trait matchPath extends StObject
-  inline def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
-  
-  @js.native
-  sealed trait noslash extends StObject
-  inline def noslash: noslash = "noslash".asInstanceOf[noslash]
-  
-  @js.native
-  sealed trait slash extends StObject
-  inline def slash: slash = "slash".asInstanceOf[slash]
-  
-  @js.native
-  sealed trait staticContext extends StObject
-  inline def staticContext: staticContext = "staticContext".asInstanceOf[staticContext]
+  sealed trait generatePath extends StObject
+  inline def generatePath: generatePath = "generatePath".asInstanceOf[generatePath]
   
   @js.native
   sealed trait takeEvery
@@ -56,14 +28,6 @@ object dvaStrings {
     extends StObject
        with EffectType
   inline def throttle: throttle = "throttle".asInstanceOf[throttle]
-  
-  @js.native
-  sealed trait useParams extends StObject
-  inline def useParams: useParams = "useParams".asInstanceOf[useParams]
-  
-  @js.native
-  sealed trait useRouteMatch extends StObject
-  inline def useRouteMatch: useRouteMatch = "useRouteMatch".asInstanceOf[useRouteMatch]
   
   @js.native
   sealed trait watcher

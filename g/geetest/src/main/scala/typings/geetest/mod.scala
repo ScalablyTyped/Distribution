@@ -116,14 +116,14 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.geetest.geetestNumbers.`0`
-    - typings.geetest.geetestNumbers.`1`
+    - typings.geetest.geetestInts.`0`
+    - typings.geetest.geetestInts.`1`
   */
   trait Success extends StObject
   object Success {
     
-    inline def `0`: typings.geetest.geetestNumbers.`0` = 0.asInstanceOf[typings.geetest.geetestNumbers.`0`]
+    inline def `0`: typings.geetest.geetestInts.`0` = 0.asInstanceOf[typings.geetest.geetestInts.`0`]
     
-    inline def `1`: typings.geetest.geetestNumbers.`1` = 1.asInstanceOf[typings.geetest.geetestNumbers.`1`]
+    inline def `1`: typings.geetest.geetestInts.`1` = 1.asInstanceOf[typings.geetest.geetestInts.`1`]
   }
 }

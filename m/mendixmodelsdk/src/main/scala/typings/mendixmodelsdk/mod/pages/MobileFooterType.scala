@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.MobileFooterType")
 @js.native
-class MobileFooterType protected ()
+open class MobileFooterType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.MobileFooterType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

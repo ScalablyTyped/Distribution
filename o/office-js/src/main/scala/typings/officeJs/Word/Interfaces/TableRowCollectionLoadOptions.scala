@@ -19,7 +19,7 @@ trait TableRowCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
+    * For EACH ITEM in the collection: Gets the number of cells in the row.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -43,7 +43,7 @@ trait TableRowCollectionLoadOptions extends StObject {
   var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+    * For EACH ITEM in the collection: Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table object.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -67,7 +67,7 @@ trait TableRowCollectionLoadOptions extends StObject {
   var preferredHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
+    * For EACH ITEM in the collection: Gets the index of the row in its parent table.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -454,7 +454,7 @@ object spritesIndexMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _internalMultiPickSprites(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(
@@ -464,7 +464,7 @@ object spritesIndexMod {
       ): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalPickSprites(ray: Ray): Nullable[PickingInfo] = js.native
       def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]): Nullable[PickingInfo] = js.native
       def _internalPickSprites(
@@ -488,13 +488,13 @@ object spritesIndexMod {
       def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Boolean, camera: Camera): Nullable[PickingInfo] = js.native
       def _internalPickSprites(ray: Ray, predicate: Unit, fastCheck: Unit, camera: Camera): Nullable[PickingInfo] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _pickedDownSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _pointerOverSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _tempSpritePickingRay: Nullable[Ray] = js.native
       
       /**

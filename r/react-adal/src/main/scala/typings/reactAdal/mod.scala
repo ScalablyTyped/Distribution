@@ -8,8 +8,8 @@ import typings.react.mod.global.JSX.Element
 import typings.reactAdal.anon.ACCESSTOKENKEY
 import typings.reactAdal.anon.ERROR
 import typings.reactAdal.anon.`0`
-import typings.reactAdal.reactAdalNumbers.`483`
-import typings.reactAdal.reactAdalNumbers.`600`
+import typings.reactAdal.reactAdalInts.`483`
+import typings.reactAdal.reactAdalInts.`600`
 import typings.reactAdal.reactAdalStrings.Canceled
 import typings.reactAdal.reactAdalStrings.Completed
 import typings.reactAdal.reactAdalStrings.Verticalline
@@ -524,21 +524,21 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactAdal.reactAdalNumbers.`0`
-    - typings.reactAdal.reactAdalNumbers.`1`
-    - typings.reactAdal.reactAdalNumbers.`2`
-    - typings.reactAdal.reactAdalNumbers.`3`
+    - typings.reactAdal.reactAdalInts.`0`
+    - typings.reactAdal.reactAdalInts.`1`
+    - typings.reactAdal.reactAdalInts.`2`
+    - typings.reactAdal.reactAdalInts.`3`
   */
   trait LoggingLevel extends StObject
   object LoggingLevel {
     
-    inline def `0`: typings.reactAdal.reactAdalNumbers.`0` = 0.asInstanceOf[typings.reactAdal.reactAdalNumbers.`0`]
+    inline def `0`: typings.reactAdal.reactAdalInts.`0` = 0.asInstanceOf[typings.reactAdal.reactAdalInts.`0`]
     
-    inline def `1`: typings.reactAdal.reactAdalNumbers.`1` = 1.asInstanceOf[typings.reactAdal.reactAdalNumbers.`1`]
+    inline def `1`: typings.reactAdal.reactAdalInts.`1` = 1.asInstanceOf[typings.reactAdal.reactAdalInts.`1`]
     
-    inline def `2`: typings.reactAdal.reactAdalNumbers.`2` = 2.asInstanceOf[typings.reactAdal.reactAdalNumbers.`2`]
+    inline def `2`: typings.reactAdal.reactAdalInts.`2` = 2.asInstanceOf[typings.reactAdal.reactAdalInts.`2`]
     
-    inline def `3`: typings.reactAdal.reactAdalNumbers.`3` = 3.asInstanceOf[typings.reactAdal.reactAdalNumbers.`3`]
+    inline def `3`: typings.reactAdal.reactAdalInts.`3` = 3.asInstanceOf[typings.reactAdal.reactAdalInts.`3`]
   }
   
   trait RequestInfo extends StObject {

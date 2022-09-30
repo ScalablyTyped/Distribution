@@ -40,7 +40,7 @@ object customwidgets {
     */
   @JSImport("mendixmodelsdk", "customwidgets.CustomWidget")
   @js.native
-  class CustomWidget protected ()
+  open class CustomWidget protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.CustomWidget {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -639,9 +639,35 @@ object customwidgets {
     inline def versionInfo_=(x: typings.mendixmodelsdk.customwidgetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetAssociationType")
+  @js.native
+  open class CustomWidgetAssociationType protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.CustomWidgetAssociationType {
+    def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+  }
+  object CustomWidgetAssociationType {
+    
+    @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetAssociationType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetAssociationType.Reference")
+    @js.native
+    def Reference: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetAssociationType.ReferenceSet")
+    @js.native
+    def ReferenceSet: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType = js.native
+    inline def ReferenceSet_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReferenceSet")(x.asInstanceOf[js.Any])
+    
+    inline def Reference_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidgetAssociationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reference")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetAttributeType")
   @js.native
-  class CustomWidgetAttributeType protected ()
+  open class CustomWidgetAttributeType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.CustomWidgetAttributeType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -729,7 +755,7 @@ object customwidgets {
     */
   @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetDatabaseSource")
   @js.native
-  class CustomWidgetDatabaseSource protected ()
+  open class CustomWidgetDatabaseSource protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.CustomWidgetDatabaseSource {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -791,7 +817,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetType")
   @js.native
-  class CustomWidgetType protected ()
+  open class CustomWidgetType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.CustomWidgetType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -842,7 +868,7 @@ object customwidgets {
     */
   @JSImport("mendixmodelsdk", "customwidgets.CustomWidgetXPathSource")
   @js.native
-  class CustomWidgetXPathSource protected ()
+  open class CustomWidgetXPathSource protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.CustomWidgetXPathSource {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -904,7 +930,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.IsPath")
   @js.native
-  class IsPath protected ()
+  open class IsPath protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.IsPath {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -935,7 +961,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.PathType")
   @js.native
-  class PathType protected ()
+  open class PathType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.PathType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -967,7 +993,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.SystemPropertyEnum")
   @js.native
-  class SystemPropertyEnum protected ()
+  open class SystemPropertyEnum protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.SystemPropertyEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -1010,7 +1036,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetEnumerationValue")
   @js.native
-  class WidgetEnumerationValue protected ()
+  open class WidgetEnumerationValue protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetEnumerationValue {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1058,7 +1084,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetObject")
   @js.native
-  class WidgetObject protected ()
+  open class WidgetObject protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetObject {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1114,7 +1140,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetObjectType")
   @js.native
-  class WidgetObjectType protected ()
+  open class WidgetObjectType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetObjectType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1170,7 +1196,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetProperty")
   @js.native
-  class WidgetProperty protected ()
+  open class WidgetProperty protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetProperty {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1218,7 +1244,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetPropertyType")
   @js.native
-  class WidgetPropertyType protected ()
+  open class WidgetPropertyType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetPropertyType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1266,7 +1292,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetReturnType")
   @js.native
-  class WidgetReturnType protected ()
+  open class WidgetReturnType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetReturnType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1314,7 +1340,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetReturnTypeEnum")
   @js.native
-  class WidgetReturnTypeEnum protected ()
+  open class WidgetReturnTypeEnum protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetReturnTypeEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -1375,7 +1401,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetTranslation")
   @js.native
-  class WidgetTranslation protected ()
+  open class WidgetTranslation protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetTranslation {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1423,7 +1449,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetValue")
   @js.native
-  class WidgetValue protected ()
+  open class WidgetValue protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetValue {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1471,7 +1497,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetValueType")
   @js.native
-  class WidgetValueType protected ()
+  open class WidgetValueType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetValueType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1519,7 +1545,7 @@ object customwidgets {
   
   @JSImport("mendixmodelsdk", "customwidgets.WidgetValueTypeEnum")
   @js.native
-  class WidgetValueTypeEnum protected ()
+  open class WidgetValueTypeEnum protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.customwidgets.WidgetValueTypeEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -1534,6 +1560,12 @@ object customwidgets {
     @js.native
     def Action: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
     inline def Action_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Action")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "customwidgets.WidgetValueTypeEnum.Association")
+    @js.native
+    def Association: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum = js.native
+    inline def Association_=(x: typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValueTypeEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Association")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "customwidgets.WidgetValueTypeEnum.Attribute")

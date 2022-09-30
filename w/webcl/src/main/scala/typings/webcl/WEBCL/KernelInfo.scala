@@ -1,19 +1,19 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1190`
-import typings.webcl.webclNumbers.`0x1191`
-import typings.webcl.webclNumbers.`0x1193`
-import typings.webcl.webclNumbers.`0x1194`
+import typings.webcl.webclInts.`0x1190`
+import typings.webcl.webclInts.`0x1191`
+import typings.webcl.webclInts.`0x1193`
+import typings.webcl.webclInts.`0x1194`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_kernel_info */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1190`
-  - typings.webcl.webclNumbers.`0x1191`
-  - typings.webcl.webclNumbers.`0x1193`
-  - typings.webcl.webclNumbers.`0x1194`
+  - typings.webcl.webclInts.`0x1190`
+  - typings.webcl.webclInts.`0x1191`
+  - typings.webcl.webclInts.`0x1193`
+  - typings.webcl.webclInts.`0x1194`
 */
 trait KernelInfo extends StObject
 object KernelInfo {

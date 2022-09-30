@@ -40,7 +40,7 @@ object JumpListCategory {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: JumpListItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

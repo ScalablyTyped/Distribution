@@ -6,7 +6,7 @@ import typings.activexExcel.Excel.XlBordersIndex
 import typings.activexExcel.Excel.XlCreator
 import typings.activexExcel.Excel.XlDupeUnique
 import typings.activexExcel.Excel.XlPivotConditionScope
-import typings.activexExcel.activexExcelNumbers.`8`
+import typings.activexExcel.activexExcelInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

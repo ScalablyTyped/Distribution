@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.ITemplateType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsPageTemplate */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateType")
+- typings.mendixmodelsdk.pagesMod.pages.ITemplateType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsPageTemplate */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateType")
 @js.native
 abstract class TemplateType protected () extends Element[IModel] {
   def this(
@@ -38,18 +38,18 @@ abstract class TemplateType protected () extends Element[IModel] {
 }
 object TemplateType {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateType")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateType")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplateType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -7,14 +7,14 @@ import typings.director.anon.Method
 import typings.director.anon.Only
 import typings.director.anon.RemoveContentHeaders
 import typings.director.directorBooleans.`false`
-import typings.director.directorNumbers.`304`
-import typings.director.directorNumbers.`400`
-import typings.director.directorNumbers.`401`
-import typings.director.directorNumbers.`403`
-import typings.director.directorNumbers.`404`
-import typings.director.directorNumbers.`405`
-import typings.director.directorNumbers.`406`
-import typings.director.directorNumbers.`501`
+import typings.director.directorInts.`304`
+import typings.director.directorInts.`400`
+import typings.director.directorInts.`401`
+import typings.director.directorInts.`403`
+import typings.director.directorInts.`404`
+import typings.director.directorInts.`405`
+import typings.director.directorInts.`406`
+import typings.director.directorInts.`501`
 import typings.director.directorStrings.`method not allowedDot`
 import typings.director.directorStrings.backward
 import typings.director.directorStrings.forward

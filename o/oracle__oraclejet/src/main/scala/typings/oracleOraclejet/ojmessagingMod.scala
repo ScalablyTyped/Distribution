@@ -1,6 +1,6 @@
 package typings.oracleOraclejet
 
-import typings.oracleOraclejet.oracleOraclejetNumbers.`-1`
+import typings.oracleOraclejet.oracleOraclejetInts.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,24 +72,24 @@ object ojmessagingMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.oracleOraclejet.oracleOraclejetNumbers.`5`
-    - typings.oracleOraclejet.oracleOraclejetNumbers.`4`
-    - typings.oracleOraclejet.oracleOraclejetNumbers.`3`
-    - typings.oracleOraclejet.oracleOraclejetNumbers.`2`
-    - typings.oracleOraclejet.oracleOraclejetNumbers.`1`
+    - typings.oracleOraclejet.oracleOraclejetInts.`5`
+    - typings.oracleOraclejet.oracleOraclejetInts.`4`
+    - typings.oracleOraclejet.oracleOraclejetInts.`3`
+    - typings.oracleOraclejet.oracleOraclejetInts.`2`
+    - typings.oracleOraclejet.oracleOraclejetInts.`1`
   */
   trait SEVERITY_LEVEL extends StObject
   object SEVERITY_LEVEL {
     
-    inline def `1`: typings.oracleOraclejet.oracleOraclejetNumbers.`1` = 1.asInstanceOf[typings.oracleOraclejet.oracleOraclejetNumbers.`1`]
+    inline def `1`: typings.oracleOraclejet.oracleOraclejetInts.`1` = 1.asInstanceOf[typings.oracleOraclejet.oracleOraclejetInts.`1`]
     
-    inline def `2`: typings.oracleOraclejet.oracleOraclejetNumbers.`2` = 2.asInstanceOf[typings.oracleOraclejet.oracleOraclejetNumbers.`2`]
+    inline def `2`: typings.oracleOraclejet.oracleOraclejetInts.`2` = 2.asInstanceOf[typings.oracleOraclejet.oracleOraclejetInts.`2`]
     
-    inline def `3`: typings.oracleOraclejet.oracleOraclejetNumbers.`3` = 3.asInstanceOf[typings.oracleOraclejet.oracleOraclejetNumbers.`3`]
+    inline def `3`: typings.oracleOraclejet.oracleOraclejetInts.`3` = 3.asInstanceOf[typings.oracleOraclejet.oracleOraclejetInts.`3`]
     
-    inline def `4`: typings.oracleOraclejet.oracleOraclejetNumbers.`4` = 4.asInstanceOf[typings.oracleOraclejet.oracleOraclejetNumbers.`4`]
+    inline def `4`: typings.oracleOraclejet.oracleOraclejetInts.`4` = 4.asInstanceOf[typings.oracleOraclejet.oracleOraclejetInts.`4`]
     
-    inline def `5`: typings.oracleOraclejet.oracleOraclejetNumbers.`5` = 5.asInstanceOf[typings.oracleOraclejet.oracleOraclejetNumbers.`5`]
+    inline def `5`: typings.oracleOraclejet.oracleOraclejetInts.`5` = 5.asInstanceOf[typings.oracleOraclejet.oracleOraclejetInts.`5`]
   }
   
   /* Rewritten from type alias, can be one of: 

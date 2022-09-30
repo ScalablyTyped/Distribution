@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Point")
 @js.native
-class Point_ protected () extends StObject {
+open class Point_ protected () extends StObject {
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, round: Boolean) = this()
   
@@ -32,6 +32,8 @@ class Point_ protected () extends StObject {
   
   // non-destructive, returns a new point
   def subtract(otherPoint: PointExpression): Point_ = js.native
+  
+  def trunc(): Point_ = js.native
   
   def unscaleBy(scale: PointExpression): Point_ = js.native
   

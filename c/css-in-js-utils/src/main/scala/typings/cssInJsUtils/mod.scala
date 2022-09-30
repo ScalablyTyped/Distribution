@@ -11,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assignStyle(base: StyleObject, extendingStyles: StyleObject*): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("assignStyle")(List(base.asInstanceOf[js.Any]).`++`(extendingStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StyleObject]
+  inline def assignStyle(base: StyleObject, extendingStyles: StyleObject*): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("assignStyle")(scala.List(base.asInstanceOf[js.Any]).`++`(extendingStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StyleObject]
   
   inline def camelCaseProperty(property: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseProperty")(property.asInstanceOf[js.Any]).asInstanceOf[String]
   

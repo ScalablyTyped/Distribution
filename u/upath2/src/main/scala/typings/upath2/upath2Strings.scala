@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object upath2Strings {
   
   @js.native
-  sealed trait Backslash extends StObject
-  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
-  
-  @js.native
   sealed trait Colon extends StObject
   inline def Colon: Colon = ":".asInstanceOf[Colon]
   

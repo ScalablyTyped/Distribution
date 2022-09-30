@@ -1,16 +1,16 @@
 package typings.nodegit
 
 import typings.nodegit.bufMod.Buf
-import typings.nodegit.nodegitNumbers.`-1`
-import typings.nodegit.nodegitNumbers.`-2`
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`5`
-import typings.nodegit.nodegitNumbers.`6`
-import typings.nodegit.nodegitNumbers.`7`
+import typings.nodegit.nodegitInts.`-1`
+import typings.nodegit.nodegitInts.`-2`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`5`
+import typings.nodegit.nodegitInts.`6`
+import typings.nodegit.nodegitInts.`7`
 import typings.nodegit.objectMod.Object.TYPE
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
@@ -60,16 +60,16 @@ object objectMod {
     inline def typeisloose(`type`: TYPE): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("typeisloose")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`-2`
-      - typings.nodegit.nodegitNumbers.`-1`
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`5`
-      - typings.nodegit.nodegitNumbers.`6`
-      - typings.nodegit.nodegitNumbers.`7`
+      - typings.nodegit.nodegitInts.`-2`
+      - typings.nodegit.nodegitInts.`-1`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`5`
+      - typings.nodegit.nodegitInts.`6`
+      - typings.nodegit.nodegitInts.`7`
     */
     trait TYPE extends StObject
     object TYPE {

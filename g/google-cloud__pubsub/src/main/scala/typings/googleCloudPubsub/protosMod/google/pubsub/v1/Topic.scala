@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Topic.
   * @param [properties] Properties to set
   */
-class Topic ()
+open class Topic ()
   extends StObject
      with ITopic {
   def this(properties: ITopic) = this()
@@ -33,11 +32,15 @@ class Topic ()
   @JSName("name")
   var name_Topic: String = js.native
   
+  /** Topic satisfiesPzs. */
+  @JSName("satisfiesPzs")
+  var satisfiesPzs_Topic: Boolean = js.native
+  
   /**
     * Converts this Topic to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object Topic {
   
@@ -54,6 +57,8 @@ object Topic {
   inline def create(): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Topic]
   inline def create(properties: ITopic): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Topic]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Topic]
   /**
     * Decodes a Topic message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -65,9 +70,8 @@ object Topic {
   /* static member */
   inline def decode(reader: Reader): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
   inline def decode(reader: Reader, length: Double): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Topic]
-  inline def decode(reader: Uint8Array): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
-  inline def decode(reader: Uint8Array, length: Double): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Topic]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
   /**
     * Decodes a Topic message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -77,7 +81,6 @@ object Topic {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
-  inline def decodeDelimited(reader: Uint8Array): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Topic]
   
   /**
     * Encodes the specified Topic message. Does not implicitly {@link google.pubsub.v1.Topic.verify|verify} messages.
@@ -105,7 +108,16 @@ object Topic {
     * @returns Topic
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Topic]
+  inline def fromObject(`object`: StringDictionary[Any]): Topic = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Topic]
+  
+  /**
+    * Gets the default type url for Topic
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a Topic message. Also converts values to other types if specified.
@@ -114,8 +126,8 @@ object Topic {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: Topic): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Topic, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Topic): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: Topic, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a Topic message.
@@ -123,5 +135,5 @@ object Topic {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for unique-string
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Generate a unique random string
@@ -10,15 +10,12 @@ Generate a unique random string
 | ------------------ | :-------------: |
 | Full name          | unique-string |
 | Keywords           | unique, string, random, text, id, identifier, slug, hex |
-| # releases         | 2 |
-| # dependents       | 76 |
-| # downloads        | 417742234 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.9429921666666664E7 |
+| # stars            | 78.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/unique-string#readme)
-- [Bugs](https://github.com/sindresorhus/unique-string/issues)
-- [Repository](https://github.com/sindresorhus/unique-string)
 - [Npm](https://www.npmjs.com/package/unique-string)
     
 

@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/end-event relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EndEvent")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EndEvent")
 @js.native
-class EndEvent protected () extends MicroflowObject {
+open class EndEvent protected () extends MicroflowObject {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,6 +40,7 @@ class EndEvent protected () extends MicroflowObject {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def returnValueModel: Expression = js.native
@@ -49,7 +50,7 @@ class EndEvent protected () extends MicroflowObject {
 }
 object EndEvent {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EndEvent")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EndEvent")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +71,13 @@ object EndEvent {
   inline def createIn(container: MicroflowObjectCollection): EndEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EndEvent]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EndEvent.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EndEvent.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EndEvent.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EndEvent.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

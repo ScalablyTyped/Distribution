@@ -9,14 +9,14 @@ trait Value
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode]
+  var children: typings.cssTree.mod.List[CssNode]
   
   @JSName("type")
   var type_Value: typings.cssTree.cssTreeStrings.Value
 }
 object Value {
   
-  inline def apply(children: List[CssNode]): Value = {
+  inline def apply(children: typings.cssTree.mod.List[CssNode]): Value = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Value")
     __obj.asInstanceOf[Value]
@@ -24,7 +24,7 @@ object Value {
   
   extension [Self <: Value](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

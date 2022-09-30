@@ -9,7 +9,7 @@ import typings.vegaLite.anon.VgValueRefteststringundef
 import typings.vegaLite.channeldefMod.Value
 import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.sortMod.SortOrder
-import typings.vegaLite.vegaLiteNumbers.`1`
+import typings.vegaLite.vegaLiteInts.`1`
 import typings.vegaLite.vegaLiteStrings.cornerRadius
 import typings.vegaLite.vegaLiteStrings.cornerRadiusBottomLeft
 import typings.vegaLite.vegaLiteStrings.cornerRadiusBottomRight

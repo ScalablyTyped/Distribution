@@ -17,17 +17,17 @@ object mod {
   inline def toHex(bytes: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.uint8arrayTools.uint8arrayToolsNumbers.`-1`
-    - typings.uint8arrayTools.uint8arrayToolsNumbers.`0`
-    - typings.uint8arrayTools.uint8arrayToolsNumbers.`1`
+    - typings.uint8arrayTools.uint8arrayToolsInts.`-1`
+    - typings.uint8arrayTools.uint8arrayToolsInts.`0`
+    - typings.uint8arrayTools.uint8arrayToolsInts.`1`
   */
   trait CompareResult extends StObject
   object CompareResult {
     
-    inline def `-1`: typings.uint8arrayTools.uint8arrayToolsNumbers.`-1` = -1.asInstanceOf[typings.uint8arrayTools.uint8arrayToolsNumbers.`-1`]
+    inline def `-1`: typings.uint8arrayTools.uint8arrayToolsInts.`-1` = -1.asInstanceOf[typings.uint8arrayTools.uint8arrayToolsInts.`-1`]
     
-    inline def `0`: typings.uint8arrayTools.uint8arrayToolsNumbers.`0` = 0.asInstanceOf[typings.uint8arrayTools.uint8arrayToolsNumbers.`0`]
+    inline def `0`: typings.uint8arrayTools.uint8arrayToolsInts.`0` = 0.asInstanceOf[typings.uint8arrayTools.uint8arrayToolsInts.`0`]
     
-    inline def `1`: typings.uint8arrayTools.uint8arrayToolsNumbers.`1` = 1.asInstanceOf[typings.uint8arrayTools.uint8arrayToolsNumbers.`1`]
+    inline def `1`: typings.uint8arrayTools.uint8arrayToolsInts.`1` = 1.asInstanceOf[typings.uint8arrayTools.uint8arrayToolsInts.`1`]
   }
 }

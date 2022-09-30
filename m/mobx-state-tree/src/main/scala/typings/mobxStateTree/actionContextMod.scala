@@ -25,7 +25,7 @@ object actionContextMod {
   trait IActionContext extends StObject {
     
     /** Event arguments in an array (action arguments for actions) */
-    val args: js.Array[js.Any]
+    val args: js.Array[Any]
     
     /** Event context (node where the action was invoked) */
     val context: IAnyStateTreeNode
@@ -44,22 +44,16 @@ object actionContextMod {
   }
   object IActionContext {
     
-    inline def apply(
-      args: js.Array[js.Any],
-      context: IAnyStateTreeNode,
-      id: Double,
-      name: String,
-      tree: IAnyStateTreeNode
-    ): IActionContext = {
+    inline def apply(args: js.Array[Any], context: IAnyStateTreeNode, id: Double, name: String, tree: IAnyStateTreeNode): IActionContext = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
       __obj.asInstanceOf[IActionContext]
     }
     
     extension [Self <: IActionContext](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setContext(value: IAnyStateTreeNode): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

@@ -11,18 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object yaDiskStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketnumberRightcurlybracket
-    extends StObject
-       with _PreviewSize
-  inline def $LeftcurlybracketnumberRightcurlybracket: $LeftcurlybracketnumberRightcurlybracket = "${number}".asInstanceOf[$LeftcurlybracketnumberRightcurlybracket]
-  
-  @js.native
-  sealed trait $LeftcurlybracketnumberRightcurlybracketx
-    extends StObject
-       with _PreviewSize
-  inline def $LeftcurlybracketnumberRightcurlybracketx: $LeftcurlybracketnumberRightcurlybracketx = "${number}x".asInstanceOf[$LeftcurlybracketnumberRightcurlybracketx]
-  
-  @js.native
   sealed trait `-created`
     extends StObject
        with Sort
@@ -55,12 +43,6 @@ object yaDiskStrings {
   @js.native
   sealed trait DELETE extends StObject
   inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketnumberRightcurlybracketxDollarLeftcurlybracketnumberRightcurlybracket
-    extends StObject
-       with _PreviewSize
-  inline def DollarLeftcurlybracketnumberRightcurlybracketxDollarLeftcurlybracketnumberRightcurlybracket: DollarLeftcurlybracketnumberRightcurlybracketxDollarLeftcurlybracketnumberRightcurlybracket = "${number}x${number}".asInstanceOf[DollarLeftcurlybracketnumberRightcurlybracketxDollarLeftcurlybracketnumberRightcurlybracket]
   
   @js.native
   sealed trait GET extends StObject
@@ -281,10 +263,4 @@ object yaDiskStrings {
     extends StObject
        with MediaType
   inline def web: web = "web".asInstanceOf[web]
-  
-  @js.native
-  sealed trait x$LeftcurlybracketnumberRightcurlybracket
-    extends StObject
-       with _PreviewSize
-  inline def x$LeftcurlybracketnumberRightcurlybracket: x$LeftcurlybracketnumberRightcurlybracket = "x${number}".asInstanceOf[x$LeftcurlybracketnumberRightcurlybracket]
 }

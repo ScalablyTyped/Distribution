@@ -27,7 +27,7 @@ object mod {
   
   inline def bbox(topology: Topology[Objects[Properties]]): BBox = ^.asInstanceOf[js.Dynamic].applyDynamic("bbox")(topology.asInstanceOf[js.Any]).asInstanceOf[BBox]
   
-  inline def feature[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: String): (Feature[GeometryObject, P]) | (FeatureCollection[GeometryObject, P]) = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[(Feature[GeometryObject, P]) | (FeatureCollection[GeometryObject, P])]
+  inline def feature[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: String): FeatureCollection[GeometryObject, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[FeatureCollection[GeometryObject, P]]
   inline def feature[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: GeometryCollection[P]): FeatureCollection[GeometryObject, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[FeatureCollection[GeometryObject, P]]
   inline def feature[P /* <: Properties */](
     topology: Topology[Objects[Properties]],
@@ -40,9 +40,9 @@ object mod {
   inline def feature[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: Point[P]): Feature[typings.geojson.mod.Point, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Feature[typings.geojson.mod.Point, P]]
   inline def feature[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: Polygon[P]): Feature[typings.geojson.mod.Polygon, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Feature[typings.geojson.mod.Polygon, P]]
   
-  inline def feature_P_Properties_Feature[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: String): Feature[typings.geojson.mod.Point, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Feature[typings.geojson.mod.Point, P]]
+  inline def feature_P_Feature[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: String): Feature[typings.geojson.mod.Point, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Feature[typings.geojson.mod.Point, P]]
   
-  inline def feature_P_Properties_FeatureCollection[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: String): FeatureCollection[GeometryObject, P] = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[FeatureCollection[GeometryObject, P]]
+  inline def feature_P_Union[P /* <: Properties */](topology: Topology[Objects[Properties]], `object`: String): (Feature[GeometryObject, P]) | (FeatureCollection[GeometryObject, P]) = (^.asInstanceOf[js.Dynamic].applyDynamic("feature")(topology.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[(Feature[GeometryObject, P]) | (FeatureCollection[GeometryObject, P])]
   
   inline def merge(
     topology: Topology[Objects[Properties]],

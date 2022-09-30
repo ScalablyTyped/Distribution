@@ -11,6 +11,6 @@ object mixinDeepMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(target: Unit, sources: Any*): ExtensibleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ExtensibleObject]
-  inline def default(target: ExtensibleObject, sources: Any*): ExtensibleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ExtensibleObject]
+  inline def default(target: Unit, sources: Any*): ExtensibleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ExtensibleObject]
+  inline def default(target: ExtensibleObject, sources: Any*): ExtensibleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ExtensibleObject]
 }

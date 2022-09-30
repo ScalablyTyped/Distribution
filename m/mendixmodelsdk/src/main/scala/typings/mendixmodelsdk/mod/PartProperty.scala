@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "PartProperty")
 @js.native
-class PartProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] */] protected ()
+open class PartProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] */] protected ()
   extends typings.mendixmodelsdk.propertiesMod.PartProperty[T] {
   /**
     * parent is the structure that the value of this property attaches to,
@@ -24,13 +24,13 @@ class PartProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractM
     parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: T,
-    moreArgs: js.Any*
+    moreArgs: Any*
   ) = this()
   def this(
     declaredOn: IStructureClass,
     parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: Null,
-    moreArgs: js.Any*
+    moreArgs: Any*
   ) = this()
 }

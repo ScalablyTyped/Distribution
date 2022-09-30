@@ -1,7 +1,7 @@
 
 # Scala.js typings for ansi-escapes
 
-Typings are for version 4.3.1
+Typings are for version 6.0.0
 
 ## Library description:
 ANSI escape codes for manipulating the terminal
@@ -10,10 +10,10 @@ ANSI escape codes for manipulating the terminal
 | ------------------ | :-------------: |
 | Full name          | ansi-escapes |
 | Keywords           | ansi, terminal, console, cli, string, tty, escape, escapes, formatting, shell, xterm, log, logging, command-line, text, vt100, sequence, control, code, codes, cursor, iterm, iterm2 |
-| # releases         | 8 |
-| # dependents       | 528 |
-| # downloads        | 1152792505 |
-| # stars            | 7 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5089924233333334E8 |
+| # stars            | 400.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ansi-escapes#readme)

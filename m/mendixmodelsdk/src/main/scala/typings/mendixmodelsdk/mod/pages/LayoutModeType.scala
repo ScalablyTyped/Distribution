@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.LayoutModeType")
 @js.native
-class LayoutModeType protected ()
+open class LayoutModeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LayoutModeType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

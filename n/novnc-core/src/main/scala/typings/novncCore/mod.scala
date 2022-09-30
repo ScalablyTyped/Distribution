@@ -3,9 +3,9 @@ package typings.novncCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.novncCore.devicesMod.Keyboard
 import typings.novncCore.devicesMod.Mouse
-import typings.novncCore.novncCoreNumbers.`0`
-import typings.novncCore.novncCoreNumbers.`1`
-import typings.novncCore.novncCoreNumbers.`2`
+import typings.novncCore.novncCoreInts.`0`
+import typings.novncCore.novncCoreInts.`1`
+import typings.novncCore.novncCoreInts.`2`
 import typings.novncCore.novncCoreStrings.error
 import typings.novncCore.novncCoreStrings.normal
 import typings.novncCore.novncCoreStrings.warn
@@ -240,9 +240,9 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.novncCore.novncCoreNumbers.`2`
-    - typings.novncCore.novncCoreNumbers.`0`
-    - typings.novncCore.novncCoreNumbers.`1`
+    - typings.novncCore.novncCoreInts.`2`
+    - typings.novncCore.novncCoreInts.`0`
+    - typings.novncCore.novncCoreInts.`1`
   */
   trait NvXvpOperation extends StObject
   object NvXvpOperation {

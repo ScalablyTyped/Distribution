@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.TargetDocumentType")
 @js.native
-class TargetDocumentType protected ()
+open class TargetDocumentType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.TargetDocumentType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

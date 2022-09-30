@@ -46,10 +46,6 @@ object js2coffeeStrings {
   inline def Program: Program = "Program".asInstanceOf[Program]
   
   @js.native
-  sealed trait TildeTildeTildeTildeLinefeed$LeftcurlybracketstringRightcurlybracketLinefeedTildeTildeTildeTilde extends StObject
-  inline def TildeTildeTildeTildeLinefeed$LeftcurlybracketstringRightcurlybracketLinefeedTildeTildeTildeTilde: TildeTildeTildeTildeLinefeed$LeftcurlybracketstringRightcurlybracketLinefeedTildeTildeTildeTilde = "~~~~\n${string}\n~~~~".asInstanceOf[TildeTildeTildeTildeLinefeed$LeftcurlybracketstringRightcurlybracketLinefeedTildeTildeTildeTilde]
-  
-  @js.native
   sealed trait module extends StObject
   inline def module: module = "module".asInstanceOf[module]
   

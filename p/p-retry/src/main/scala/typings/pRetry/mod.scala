@@ -2,6 +2,7 @@ package typings.pRetry
 
 import typings.std.AbortSignal
 import typings.std.Error
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def default[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T], options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def default[T](input: js.Function1[/* attemptCount */ Double, PromiseLike[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def default[T](input: js.Function1[/* attemptCount */ Double, PromiseLike[T] | T], options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("p-retry", "AbortError")
   @js.native

@@ -1,33 +1,40 @@
 package typings.monk
 
-import typings.mongodb.anon.Compressors
-import typings.mongodb.anon.Password
-import typings.mongodb.mod.ClientSession
-import typings.mongodb.mod.LoggerState
-import typings.mongodb.mod.ReadConcern
-import typings.mongodb.mod.ReadPreferenceOrMode
-import typings.mongodb.mod.SocketOptions
-import typings.mongodb.mod.log
+import typings.bson.mod.Document
+import typings.mongodb.mod.Auth
+import typings.mongodb.mod.AuthMechanism
+import typings.mongodb.mod.AuthMechanismProperties
+import typings.mongodb.mod.AutoEncryptionOptions
+import typings.mongodb.mod.CompressorName
+import typings.mongodb.mod.DriverInfo
+import typings.mongodb.mod.Logger
+import typings.mongodb.mod.LoggerLevel
+import typings.mongodb.mod.PkFactory
+import typings.mongodb.mod.ReadConcernLevel
+import typings.mongodb.mod.ReadConcernLike
+import typings.mongodb.mod.ReadPreference
+import typings.mongodb.mod.ReadPreferenceMode
+import typings.mongodb.mod.ServerApi
+import typings.mongodb.mod.ServerApiVersion
+import typings.mongodb.mod.TagSet
+import typings.mongodb.mod.W
+import typings.mongodb.mod.WriteConcern
+import typings.mongodb.mod.WriteConcernSettings
 import typings.monk.mod.CollectionOptions
 import typings.monk.mod.ICollection
 import typings.monk.mod.IMonkManager
 import typings.monk.mod.IObjectID
 import typings.monk.monkBooleans.`false`
 import typings.monk.monkBooleans.`true`
-import typings.monk.monkNumbers.`4`
-import typings.monk.monkNumbers.`6`
-import typings.monk.monkStrings.DEFAULT
-import typings.monk.monkStrings.GSSAPI
-import typings.monk.monkStrings.PLAIN
-import typings.monk.monkStrings.`MONGODB-CR`
-import typings.monk.monkStrings.`MONGODB-X509`
-import typings.monk.monkStrings.`SCRAM-SHA-1`
-import typings.monk.monkStrings.`SCRAM-SHA-256`
-import typings.monk.monkStrings.majority
-import typings.node.Buffer
-import typings.node.tlsMod.PeerCertificate
-import typings.std.Error
-import typings.std.PromiseConstructor
+import typings.monk.monkInts.`1`
+import typings.monk.monkInts.`2`
+import typings.monk.monkInts.`3`
+import typings.monk.monkInts.`4`
+import typings.monk.monkInts.`5`
+import typings.monk.monkInts.`6`
+import typings.monk.monkInts.`7`
+import typings.monk.monkInts.`8`
+import typings.monk.monkInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,18 +43,18 @@ object anon {
   
   trait `0` extends StObject {
     
-    var replaceOne: `true`
+    var replace: `true`
   }
   object `0` {
     
     inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal(replaceOne = true)
+      val __obj = js.Dynamic.literal(replace = true)
       __obj.asInstanceOf[`0`]
     }
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setReplaceOne(value: `true`): Self = StObject.set(x, "replaceOne", value.asInstanceOf[js.Any])
+      inline def setReplace(value: `true`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +85,20 @@ object anon {
   
   trait Collection extends StObject {
     
-    var collection: ICollection[js.Any]
+    var collection: ICollection[Any]
     
     var monkInstance: IMonkManager
   }
   object Collection {
     
-    inline def apply(collection: ICollection[js.Any], monkInstance: IMonkManager): Collection = {
+    inline def apply(collection: ICollection[Any], monkInstance: IMonkManager): Collection = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], monkInstance = monkInstance.asInstanceOf[js.Any])
       __obj.asInstanceOf[Collection]
     }
     
     extension [Self <: Collection](x: Self) {
       
-      inline def setCollection(value: ICollection[js.Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: ICollection[Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
       inline def setMonkInstance(value: IMonkManager): Self = StObject.set(x, "monkInstance", value.asInstanceOf[js.Any])
     }
@@ -117,455 +124,261 @@ object anon {
   /* Inlined mongodb.mongodb.MongoClientOptions & {  collectionOptions :monk.monk.CollectionOptions | undefined} */
   trait MongoClientOptionscollect extends StObject {
     
-    /**
-      * Default: 15; Cutoff latency point in MS for MongoS proxy selection
-      */
-    var acceptableLatencyMS: js.UndefOr[Double] = js.undefined
+    /** The name of the application that created this MongoClient instance. MongoDB 3.4 and newer will print this value in the server log upon establishing each connection. It is also recorded in the slow query log and profile collections */
+    var appName: js.UndefOr[String] = js.undefined
     
-    /**
-      * The name of the application that created this MongoClient instance.
-      */
-    var appname: js.UndefOr[String] = js.undefined
+    /** The auth settings for when connection to server. */
+    var auth: js.UndefOr[Auth] = js.undefined
     
-    /**
-      * Authentication credentials
-      */
-    var auth: js.UndefOr[Password] = js.undefined
+    /** Specify the authentication mechanism that MongoDB will use to authenticate the connection. */
+    var authMechanism: js.UndefOr[AuthMechanism] = js.undefined
     
-    /**
-      * Mechanism for authentication: DEFAULT, GSSAPI, PLAIN, MONGODB-X509, 'MONGODB-CR', SCRAM-SHA-1 or SCRAM-SHA-256
-      */
-    var authMechanism: js.UndefOr[
-        DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String
-      ] = js.undefined
+    /** Specify properties for the specified authMechanism as a comma-separated list of colon-separated key-value pairs. */
+    var authMechanismProperties: js.UndefOr[AuthMechanismProperties] = js.undefined
     
-    /**
-      * If the database authentication is dependent on another databaseName.
-      */
+    /** Specify the database name associated with the user’s credentials. */
     var authSource: js.UndefOr[String] = js.undefined
     
     /**
-      * Reconnect on error.
-      * @default true
+      * Optionally enable client side auto encryption
+      *
+      * @remarks
+      *  Automatic encryption is an enterprise only feature that only applies to operations on a collection. Automatic encryption is not supported for operations on a database or view, and operations that are not bypassed will result in error
+      *  (see [libmongocrypt: Auto Encryption Allow-List](https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/client-side-encryption.rst#libmongocrypt-auto-encryption-allow-list)). To bypass automatic encryption for all operations, set bypassAutoEncryption=true in AutoEncryptionOpts.
+      *
+      *  Automatic encryption requires the authenticated user to have the [listCollections privilege action](https://docs.mongodb.com/manual/reference/command/listCollections/#dbcmd.listCollections).
+      *
+      *  If a MongoClient with a limited connection pool size (i.e a non-zero maxPoolSize) is configured with AutoEncryptionOptions, a separate internal MongoClient is created if any of the following are true:
+      *  - AutoEncryptionOptions.keyVaultClient is not passed.
+      *  - AutoEncryptionOptions.bypassAutomaticEncryption is false.
+      *
+      * If an internal MongoClient is created, it is configured with the same options as the parent MongoClient except minPoolSize is set to 0 and AutoEncryptionOptions is omitted.
       */
-    var autoReconnect: js.UndefOr[Boolean] = js.undefined
+    var autoEncryption: js.UndefOr[AutoEncryptionOptions] = js.undefined
     
-    /**
-      * Sets a cap on how many operations the driver will buffer up before giving up on getting a
-      * working connection, default is -1 which is unlimited.
-      */
-    var bufferMaxEntries: js.UndefOr[Double] = js.undefined
+    var bsonRegExp: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Default: true; Server identity checking during SSL
-      */
-    var checkServerIdentity: js.UndefOr[
-        Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]])
-      ] = js.undefined
-    
-    /**
-      * Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info.
-      */
-    var ciphers: js.UndefOr[String] = js.undefined
+    var checkKeys: js.UndefOr[Boolean] = js.undefined
     
     var collectionOptions: js.UndefOr[CollectionOptions] = js.undefined
     
-    /** Type of compression to use */
-    var compression: js.UndefOr[Compressors] = js.undefined
+    /** An array or comma-delimited string of compressors to enable network compression for communication between this client and a mongod/mongos instance. */
+    var compressors: js.UndefOr[js.Array[CompressorName] | String] = js.undefined
     
-    /**
-      * TCP Connection timeout setting.
-      * @default 10000
-      */
+    /** The time in milliseconds to attempt a connection before timing out. */
     var connectTimeoutMS: js.UndefOr[Double] = js.undefined
     
-    var connectWithNoPrimary: js.UndefOr[Boolean] = js.undefined
+    /** Allow a driver to force a Single topology type with a connection string containing one host */
+    var directConnection: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * @default false
-      */
-    /**
-      * Default: false;
-      */
-    /**
-      * Default: false;
-      */
-    /**
-      * Default: false;
-      */
-    var domainsEnabled: js.UndefOr[Boolean] = js.undefined
+    /** Allows a wrapping driver to amend the client metadata generated by the driver to include information about the wrapping driver */
+    var driverInfo: js.UndefOr[DriverInfo] = js.undefined
     
-    /**
-      * Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info.
-      */
-    var ecdhCurve: js.UndefOr[String] = js.undefined
+    /** Enable utf8 validation when deserializing BSON documents.  Defaults to true. */
+    var enableUtf8Validation: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Version of IP stack. Can be 4, 6 or null.
-      * @default null
-      *
-      * If null, will attempt to connect with IPv6, and will fall back to IPv4 on failure
-      * refer to http://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html
-      */
-    var family: js.UndefOr[`4` | `6` | Null] = js.undefined
+    var fieldsAsRaw: js.UndefOr[Document] = js.undefined
     
-    /**
-      * Default: false; Force server to create _id fields instead of client.
-      */
+    /** Force server to assign `_id` values instead of driver */
     var forceServerObjectId: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Specify a file sync write concern
-      * @default false
-      */
-    var fsync: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Default: true; Turn on high availability monitoring.
-      */
-    var ha: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The High availability period for replicaset inquiry
-      * @default 10000
-      */
-    /**
-      * Default: 10000; The High availability period for replicaset inquiry
-      */
-    /**
-      * Default: 10000; The High availability period for replicaset inquiry
-      */
-    /**
-      * Default: 10000; The High availability period for replicaset inquiry
-      */
-    var haInterval: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * **Only applies to the unified topology**
-      * The frequency with which topology updates are scheduled
-      * @default 10000
-      */
+    /** heartbeatFrequencyMS controls when the driver checks the state of the MongoDB deployment. Specify the interval (in milliseconds) between checks, counted from the end of the previous check until the beginning of the next one. */
     var heartbeatFrequencyMS: js.UndefOr[Double] = js.undefined
     
-    /**
-      * Specify if the BSON serializer should ignore undefined fields.
-      */
     var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * requests acknowledgement from MongoDB that the write operation has
-      * been written to the journal
-      * @default false
+      * The journal write concern
+      * @deprecated Please use the `writeConcern` option instead
       */
-    var j: js.UndefOr[Boolean] = js.undefined
+    var journal: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * TCP KeepAlive enabled on the socket.
-      * @default true
-      */
+    /** TCP Connection keep alive enabled */
     var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * TCP KeepAlive initial delay before sending first keep-alive packet when idle.
-      * @default 30000
-      */
+    /** The number of milliseconds to wait before initiating keepAlive on the TCP socket */
     var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
     
-    /**
-      * **Only applies to the unified topology**
-      * The size of the latency window for selecting among multiple suitable servers
-      * @default 15
-      */
+    /** Instruct the driver it is connecting to a load balancer fronting a mongos like service */
+    var loadBalanced: js.UndefOr[Boolean] = js.undefined
+    
+    /** The size (in milliseconds) of the latency window for selecting among multiple suitable MongoDB instances. */
     var localThresholdMS: js.UndefOr[Double] = js.undefined
     
-    /**
-      * Custom logger object
-      */
-    var logger: js.UndefOr[js.Object | log] = js.undefined
+    /** Custom logger object */
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    /**
-      * The logging level (error/warn/info/debug)
-      */
-    var loggerLevel: js.UndefOr[String] = js.undefined
+    /** The logging level */
+    var loggerLevel: js.UndefOr[LoggerLevel] = js.undefined
     
-    /**
-      * **Only applies to the unified topology**
-      * The maximum amount of time a connection should remain idle in the connection pool before being marked idle.
-      * @default Infinity
-      */
+    /** The maximum number of connections that may be in the process of being established concurrently by the connection pool. */
+    var maxConnecting: js.UndefOr[Double] = js.undefined
+    
+    /** The maximum number of milliseconds that a connection can remain idle in the pool before being removed and closed. */
     var maxIdleTimeMS: js.UndefOr[Double] = js.undefined
     
-    /**
-      *  **Only applies to the unified topology**
-      * The maximum number of connections that may be associated with a pool at a given time.
-      * This includes in use and available connections
-      * @default 10
-      */
+    /** The maximum number of connections in the connection pool. */
     var maxPoolSize: js.UndefOr[Double] = js.undefined
     
-    /**
-      * The max staleness to secondary reads (values under 10 seconds cannot be guaranteed);
-      */
+    /** Specifies, in seconds, how stale a secondary can be before the client stops using it for read operations. */
     var maxStalenessSeconds: js.UndefOr[Double] = js.undefined
     
-    /**
-      * **Only applies to the unified topology**
-      * The minimum number of connections that MUST exist at any moment in a single connection pool.
-      * @default 0
-      */
+    /** Sets the minimum heartbeat frequency. In the event that the driver has to frequently re-check a server's availability, it will wait at least this long since the previous check to avoid wasted effort. */
+    var minHeartbeatFrequencyMS: js.UndefOr[Double] = js.undefined
+    
+    /** The minimum number of connections in the connection pool. */
     var minPoolSize: js.UndefOr[Double] = js.undefined
     
-    /**
-      * If present, the connection pool will be initialized with minSize connections, and will never dip below minSize connections
-      */
-    var minSize: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Enable command monitoring for this client
-      * @default false
-      */
+    /** Enable command monitoring for this client */
     var monitorCommands: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * @default true
-      */
-    var monitoring: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Default: false; Use c++ bson parser.
-      */
-    var native_parser: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * TCP Socket NoDelay option.
-      * @default true
-      */
+    /** TCP Connection no delay */
     var noDelay: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * number of retries for a tailable cursor
-      * @default 5
-      */
-    var numberOfRetries: js.UndefOr[Double] = js.undefined
+    /** A primary key factory function for generation of custom `_id` keys */
+    var pkFactory: js.UndefOr[PkFactory] = js.undefined
     
     /**
-      * Custom primary key factory to generate _id values (see Custom primary keys).
+      * A Promise library class the application wishes to use such as Bluebird, must be ES6 compatible
+      * @deprecated Setting a custom promise library is deprecated the next major version will use the global Promise constructor only.
       */
-    var pkFactory: js.UndefOr[js.Object] = js.undefined
+    var promiseLibrary: js.UndefOr[Any] = js.undefined
     
-    /**
-      * Default:5; Number of connections for each server instance; set to 5 as default for legacy reasons.
-      */
-    var poolSize: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * ES6 compatible promise constructor
-      */
-    var promiseLibrary: js.UndefOr[PromiseConstructor] = js.undefined
-    
-    /**
-      * Default: false; Promotes Binary BSON values to native Node Buffers
-      */
     var promoteBuffers: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Default: true; Promotes Long values to number if they fit inside the 53 bits resolution.
-      */
     var promoteLongs: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Default: true; Promotes BSON values to native types where possible, set to false to only receive wrapper types.
-      */
     var promoteValues: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Return document results as raw BSON buffers.
-      */
+    /** Configures a Socks5 proxy host used for creating TCP connections. */
+    var proxyHost: js.UndefOr[String] = js.undefined
+    
+    /** Configures a Socks5 proxy password when the proxy in proxyHost requires username/password authentication. */
+    var proxyPassword: js.UndefOr[String] = js.undefined
+    
+    /** Configures a Socks5 proxy port used for creating TCP connections. */
+    var proxyPort: js.UndefOr[Double] = js.undefined
+    
+    /** Configures a Socks5 proxy username when the proxy in proxyHost requires username/password authentication. */
+    var proxyUsername: js.UndefOr[String] = js.undefined
+    
+    /** Return document results as raw BSON buffers */
     var raw: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * https://docs.mongodb.com/manual/reference/read-concern/#read-concern
-      */
-    var readConcern: js.UndefOr[ReadConcern | String] = js.undefined
+    /** Specify a read concern for the collection (only MongoDB 3.2 or higher supported) */
+    var readConcern: js.UndefOr[ReadConcernLike] = js.undefined
     
-    /**
-      * the prefered read preference. use 'ReadPreference' class.
-      */
-    /** The ReadPreference mode as listed here: http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html */
-    /** The ReadPreference mode as listed here: http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html */
-    /** The ReadPreference mode as listed here: http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html */
-    var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
+    /** The level of isolation */
+    var readConcernLevel: js.UndefOr[ReadConcernLevel] = js.undefined
     
-    /** An object representing read preference tags, see: http://mongodb.github.io/node-mongodb-native/3.1/api/ReadPreference.html */
-    var readPreferenceTags: js.UndefOr[js.Array[String]] = js.undefined
+    /** Specifies the read preferences for this connection */
+    var readPreference: js.UndefOr[ReadPreferenceMode | ReadPreference] = js.undefined
     
-    /**
-      * Will wait # milliseconds between retries
-      * @default 1000
-      */
-    var reconnectInterval: js.UndefOr[Double] = js.undefined
+    /** Specifies the tags document as a comma-separated list of colon-separated key-value pairs.  */
+    var readPreferenceTags: js.UndefOr[js.Array[TagSet]] = js.undefined
     
-    /**
-      * If you're connected to a single server or mongos proxy (as opposed to a replica set),
-      * the MongoDB driver will try to reconnect every reconnectInterval milliseconds for reconnectTries
-      * times, and give up afterward. When the driver gives up, the mongoose connection emits a
-      * reconnectFailed event.
-      * @default 30
-      */
-    var reconnectTries: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The name of the replicaset to connect to.
-      */
+    /** Specifies the name of the replica set, if the mongod is a member of a replica set. */
     var replicaSet: js.UndefOr[String] = js.undefined
     
-    /**
-      * Default: 15 ; Range of servers to pick when using NEAREST (lowest ping ms + the latency fence, ex: range of 1 to (1 + 15) ms)
-      */
-    var secondaryAcceptableLatencyMS: js.UndefOr[Double] = js.undefined
+    /** Enables retryable reads. */
+    var retryReads: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Serialize functions on any object.
-      */
+    /** Enable retryable writes. */
+    var retryWrites: js.UndefOr[Boolean] = js.undefined
+    
     var serializeFunctions: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * With `useUnifiedTopology`, the MongoDB driver will try to find a server to send any given operation to
-      * and keep retrying for `serverSelectionTimeoutMS` milliseconds.
-      * Default: 30000
-      */
+    /** Server API version */
+    var serverApi: js.UndefOr[ServerApi | ServerApiVersion] = js.undefined
+    
+    /** Specifies how long (in milliseconds) to block for server selection before throwing an exception.  */
     var serverSelectionTimeoutMS: js.UndefOr[Double] = js.undefined
     
-    /**
-      * String containing the server name requested via TLS SNI.
-      */
-    var servername: js.UndefOr[String] = js.undefined
-    
-    var session: js.UndefOr[ClientSession] = js.undefined
-    
-    /**
-      * Socket Options
-      */
-    var socketOptions: js.UndefOr[SocketOptions] = js.undefined
-    
-    /**
-      * TCP Socket timeout setting.
-      * @default 360000
-      */
+    /** The time in milliseconds to attempt a send or receive on a socket before the attempt times out. */
     var socketTimeoutMS: js.UndefOr[Double] = js.undefined
     
+    /** The maximum number of hosts to connect to when using an srv connection string, a setting of `0` means unlimited hosts */
+    var srvMaxHosts: js.UndefOr[Double] = js.undefined
+    
     /**
-      * Use ssl connection (needs to have a mongod server with ssl support)
+      * Modifies the srv URI to look like:
+      *
+      * `_{srvServiceName}._tcp.{hostname}.{domainname}`
+      *
+      * Querying this DNS URI is expected to respond with SRV records
       */
+    var srvServiceName: js.UndefOr[String] = js.undefined
+    
+    /** A boolean to enable or disables TLS/SSL for the connection. (The ssl option is equivalent to the tls option.) */
     var ssl: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Array of valid certificates either as Buffers or Strings
-      */
-    var sslCA: js.UndefOr[js.Array[Buffer | String]] = js.undefined
+    /** SSL Certificate file path. */
+    var sslCA: js.UndefOr[String] = js.undefined
     
-    /**
-      * SSL Certificate revocation list binary buffer
-      */
-    var sslCRL: js.UndefOr[js.Array[Buffer | String]] = js.undefined
+    /** SSL Certificate revocation list file path. */
+    var sslCRL: js.UndefOr[String] = js.undefined
     
-    /**
-      * SSL Certificate binary buffer
-      */
-    var sslCert: js.UndefOr[Buffer | String] = js.undefined
+    /** SSL Certificate file path. */
+    var sslCert: js.UndefOr[String] = js.undefined
     
-    /**
-      * SSL Key file binary buffer
-      */
-    var sslKey: js.UndefOr[Buffer | String] = js.undefined
+    /** SSL Key file file path. */
+    var sslKey: js.UndefOr[String] = js.undefined
     
-    /**
-      * SSL Certificate pass phrase
-      */
-    var sslPass: js.UndefOr[Buffer | String] = js.undefined
+    /** SSL Certificate pass phrase. */
+    var sslPass: js.UndefOr[String] = js.undefined
     
-    /**
-      * Default: true; Validate mongod server certificate against ca (mongod server >=2.4 with ssl support required)
-      */
+    /** Validate mongod server certificate against Certificate Authority */
     var sslValidate: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Enable TLS connections
-      * @default false
-      */
+    /** Enables or disables TLS/SSL for the connection. */
     var tls: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Specifies whether or not the driver should error when the server’s TLS certificate is invalid
-      */
+    /** Bypasses validation of the certificates presented by the mongod/mongos instance */
     var tlsAllowInvalidCertificates: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Specifies whether or not the driver should error when there is a mismatch between the server’s hostname
-      * and the hostname specified by the TLS certificate
-      */
+    /** Disables hostname validation of the certificate presented by the mongod/mongos instance. */
     var tlsAllowInvalidHostnames: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * path to file with either a single or bundle of certificate authorities
-      * to be considered trusted when making a TLS connection
-      */
+    /** Specifies the location of a local .pem file that contains the root certificate chain from the Certificate Authority. This file is used to validate the certificate presented by the mongod/mongos instance. */
     var tlsCAFile: js.UndefOr[String] = js.undefined
     
-    /**
-      * path to the client certificate file or the client private key file;
-      * in the case that they both are needed, the files should be concatenated
-      */
+    /** Specifies the location of a local TLS Certificate */
+    var tlsCertificateFile: js.UndefOr[String] = js.undefined
+    
+    /** Specifies the location of a local .pem file that contains either the client's TLS/SSL certificate and key or only the client's TLS/SSL key when tlsCertificateFile is used to provide the certificate. */
     var tlsCertificateKeyFile: js.UndefOr[String] = js.undefined
     
-    /**
-      * The password to decrypt the client private key to be used for TLS connections
-      */
+    /** Specifies the password to de-crypt the tlsCertificateKeyFile. */
     var tlsCertificateKeyFilePassword: js.UndefOr[String] = js.undefined
     
-    /**
-      * Relax TLS constraints, disabling validation
-      * @default false
-      */
+    /** Disables various certificate validations. */
     var tlsInsecure: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Determines whether or not to use the new url parser. Enables the new, spec-compliant
-      * url parser shipped in the core driver. This url parser fixes a number of problems with
-      * the original parser, and aims to outright replace that parser in the near future.
+      * The write concern w value
+      * @deprecated Please use the `writeConcern` option instead
       */
-    var useNewUrlParser: js.UndefOr[Boolean] = js.undefined
+    var w: js.UndefOr[W] = js.undefined
     
-    /**
-      * Enables the new unified topology layer
-      */
-    var useUnifiedTopology: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Validate MongoClient passed in options for correctness.
-      * Default: false
-      */
-    var validateOptions: js.UndefOr[js.Object | Boolean] = js.undefined
-    
-    /**
-      * requests acknowledgement that the write operation has
-      * propagated to a specified number of mongod hosts
-      * @default 1
-      */
-    var w: js.UndefOr[Double | majority | String] = js.undefined
-    
-    /**
-      * **Only applies to the unified topology**
-      * The maximum amount of time operation execution should wait for a connection to become available.
-      * The default is 0 which means there is no limit.
-      * @default 0
-      */
+    /** The maximum time in milliseconds that a thread can wait for a connection to become available. */
     var waitQueueTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /**
-      * a time limit, in milliseconds, for the write concern
+      * A MongoDB WriteConcern, which describes the level of acknowledgement
+      * requested from MongoDB for write operations.
+      *
+      * @see https://docs.mongodb.com/manual/reference/write-concern/
       */
-    var wtimeout: js.UndefOr[Double] = js.undefined
+    var writeConcern: js.UndefOr[WriteConcern | WriteConcernSettings] = js.undefined
+    
+    /**
+      * The write concern timeout
+      * @deprecated Please use the `writeConcern` option instead
+      */
+    var wtimeoutMS: js.UndefOr[Double] = js.undefined
+    
+    /** An integer that specifies the compression level if using zlib for network compression. */
+    var zlibCompressionLevel: js.UndefOr[typings.monk.monkInts.`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
   }
   object MongoClientOptionscollect {
     
@@ -576,19 +389,17 @@ object anon {
     
     extension [Self <: MongoClientOptionscollect](x: Self) {
       
-      inline def setAcceptableLatencyMS(value: Double): Self = StObject.set(x, "acceptableLatencyMS", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      inline def setAcceptableLatencyMSUndefined: Self = StObject.set(x, "acceptableLatencyMS", js.undefined)
+      inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
       
-      inline def setAppname(value: String): Self = StObject.set(x, "appname", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      inline def setAppnameUndefined: Self = StObject.set(x, "appname", js.undefined)
+      inline def setAuthMechanism(value: AuthMechanism): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
       
-      inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuthMechanismProperties(value: AuthMechanismProperties): Self = StObject.set(x, "authMechanismProperties", value.asInstanceOf[js.Any])
       
-      inline def setAuthMechanism(
-        value: DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String
-      ): Self = StObject.set(x, "authMechanism", value.asInstanceOf[js.Any])
+      inline def setAuthMechanismPropertiesUndefined: Self = StObject.set(x, "authMechanismProperties", js.undefined)
       
       inline def setAuthMechanismUndefined: Self = StObject.set(x, "authMechanism", js.undefined)
       
@@ -598,69 +409,51 @@ object anon {
       
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      inline def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
+      inline def setAutoEncryption(value: AutoEncryptionOptions): Self = StObject.set(x, "autoEncryption", value.asInstanceOf[js.Any])
       
-      inline def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
+      inline def setAutoEncryptionUndefined: Self = StObject.set(x, "autoEncryption", js.undefined)
       
-      inline def setBufferMaxEntries(value: Double): Self = StObject.set(x, "bufferMaxEntries", value.asInstanceOf[js.Any])
+      inline def setBsonRegExp(value: Boolean): Self = StObject.set(x, "bsonRegExp", value.asInstanceOf[js.Any])
       
-      inline def setBufferMaxEntriesUndefined: Self = StObject.set(x, "bufferMaxEntries", js.undefined)
+      inline def setBsonRegExpUndefined: Self = StObject.set(x, "bsonRegExp", js.undefined)
       
-      inline def setCheckServerIdentity(value: Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]])): Self = StObject.set(x, "checkServerIdentity", value.asInstanceOf[js.Any])
+      inline def setCheckKeys(value: Boolean): Self = StObject.set(x, "checkKeys", value.asInstanceOf[js.Any])
       
-      inline def setCheckServerIdentityFunction2(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
-      
-      inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
-      
-      inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
-      
-      inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
+      inline def setCheckKeysUndefined: Self = StObject.set(x, "checkKeys", js.undefined)
       
       inline def setCollectionOptions(value: CollectionOptions): Self = StObject.set(x, "collectionOptions", value.asInstanceOf[js.Any])
       
       inline def setCollectionOptionsUndefined: Self = StObject.set(x, "collectionOptions", js.undefined)
       
-      inline def setCompression(value: Compressors): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompressors(value: js.Array[CompressorName] | String): Self = StObject.set(x, "compressors", value.asInstanceOf[js.Any])
       
-      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressorsUndefined: Self = StObject.set(x, "compressors", js.undefined)
+      
+      inline def setCompressorsVarargs(value: CompressorName*): Self = StObject.set(x, "compressors", js.Array(value*))
       
       inline def setConnectTimeoutMS(value: Double): Self = StObject.set(x, "connectTimeoutMS", value.asInstanceOf[js.Any])
       
       inline def setConnectTimeoutMSUndefined: Self = StObject.set(x, "connectTimeoutMS", js.undefined)
       
-      inline def setConnectWithNoPrimary(value: Boolean): Self = StObject.set(x, "connectWithNoPrimary", value.asInstanceOf[js.Any])
+      inline def setDirectConnection(value: Boolean): Self = StObject.set(x, "directConnection", value.asInstanceOf[js.Any])
       
-      inline def setConnectWithNoPrimaryUndefined: Self = StObject.set(x, "connectWithNoPrimary", js.undefined)
+      inline def setDirectConnectionUndefined: Self = StObject.set(x, "directConnection", js.undefined)
       
-      inline def setDomainsEnabled(value: Boolean): Self = StObject.set(x, "domainsEnabled", value.asInstanceOf[js.Any])
+      inline def setDriverInfo(value: DriverInfo): Self = StObject.set(x, "driverInfo", value.asInstanceOf[js.Any])
       
-      inline def setDomainsEnabledUndefined: Self = StObject.set(x, "domainsEnabled", js.undefined)
+      inline def setDriverInfoUndefined: Self = StObject.set(x, "driverInfo", js.undefined)
       
-      inline def setEcdhCurve(value: String): Self = StObject.set(x, "ecdhCurve", value.asInstanceOf[js.Any])
+      inline def setEnableUtf8Validation(value: Boolean): Self = StObject.set(x, "enableUtf8Validation", value.asInstanceOf[js.Any])
       
-      inline def setEcdhCurveUndefined: Self = StObject.set(x, "ecdhCurve", js.undefined)
+      inline def setEnableUtf8ValidationUndefined: Self = StObject.set(x, "enableUtf8Validation", js.undefined)
       
-      inline def setFamily(value: `4` | `6`): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFieldsAsRaw(value: Document): Self = StObject.set(x, "fieldsAsRaw", value.asInstanceOf[js.Any])
       
-      inline def setFamilyNull: Self = StObject.set(x, "family", null)
-      
-      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFieldsAsRawUndefined: Self = StObject.set(x, "fieldsAsRaw", js.undefined)
       
       inline def setForceServerObjectId(value: Boolean): Self = StObject.set(x, "forceServerObjectId", value.asInstanceOf[js.Any])
       
       inline def setForceServerObjectIdUndefined: Self = StObject.set(x, "forceServerObjectId", js.undefined)
-      
-      inline def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
-      
-      inline def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
-      
-      inline def setHa(value: Boolean): Self = StObject.set(x, "ha", value.asInstanceOf[js.Any])
-      
-      inline def setHaInterval(value: Double): Self = StObject.set(x, "haInterval", value.asInstanceOf[js.Any])
-      
-      inline def setHaIntervalUndefined: Self = StObject.set(x, "haInterval", js.undefined)
-      
-      inline def setHaUndefined: Self = StObject.set(x, "ha", js.undefined)
       
       inline def setHeartbeatFrequencyMS(value: Double): Self = StObject.set(x, "heartbeatFrequencyMS", value.asInstanceOf[js.Any])
       
@@ -670,9 +463,9 @@ object anon {
       
       inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
       
-      inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+      inline def setJournal(value: Boolean): Self = StObject.set(x, "journal", value.asInstanceOf[js.Any])
       
-      inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+      inline def setJournalUndefined: Self = StObject.set(x, "journal", js.undefined)
       
       inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
@@ -682,19 +475,25 @@ object anon {
       
       inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
+      inline def setLoadBalanced(value: Boolean): Self = StObject.set(x, "loadBalanced", value.asInstanceOf[js.Any])
+      
+      inline def setLoadBalancedUndefined: Self = StObject.set(x, "loadBalanced", js.undefined)
+      
       inline def setLocalThresholdMS(value: Double): Self = StObject.set(x, "localThresholdMS", value.asInstanceOf[js.Any])
       
       inline def setLocalThresholdMSUndefined: Self = StObject.set(x, "localThresholdMS", js.undefined)
       
-      inline def setLogger(value: js.Object | log): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      inline def setLoggerFunction2(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction2(value))
-      
-      inline def setLoggerLevel(value: String): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
+      inline def setLoggerLevel(value: LoggerLevel): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
       
       inline def setLoggerLevelUndefined: Self = StObject.set(x, "loggerLevel", js.undefined)
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      
+      inline def setMaxConnecting(value: Double): Self = StObject.set(x, "maxConnecting", value.asInstanceOf[js.Any])
+      
+      inline def setMaxConnectingUndefined: Self = StObject.set(x, "maxConnecting", js.undefined)
       
       inline def setMaxIdleTimeMS(value: Double): Self = StObject.set(x, "maxIdleTimeMS", value.asInstanceOf[js.Any])
       
@@ -708,43 +507,27 @@ object anon {
       
       inline def setMaxStalenessSecondsUndefined: Self = StObject.set(x, "maxStalenessSeconds", js.undefined)
       
+      inline def setMinHeartbeatFrequencyMS(value: Double): Self = StObject.set(x, "minHeartbeatFrequencyMS", value.asInstanceOf[js.Any])
+      
+      inline def setMinHeartbeatFrequencyMSUndefined: Self = StObject.set(x, "minHeartbeatFrequencyMS", js.undefined)
+      
       inline def setMinPoolSize(value: Double): Self = StObject.set(x, "minPoolSize", value.asInstanceOf[js.Any])
       
       inline def setMinPoolSizeUndefined: Self = StObject.set(x, "minPoolSize", js.undefined)
-      
-      inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
-      
-      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
       
       inline def setMonitorCommands(value: Boolean): Self = StObject.set(x, "monitorCommands", value.asInstanceOf[js.Any])
       
       inline def setMonitorCommandsUndefined: Self = StObject.set(x, "monitorCommands", js.undefined)
       
-      inline def setMonitoring(value: Boolean): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
-      
-      inline def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
-      
-      inline def setNative_parser(value: Boolean): Self = StObject.set(x, "native_parser", value.asInstanceOf[js.Any])
-      
-      inline def setNative_parserUndefined: Self = StObject.set(x, "native_parser", js.undefined)
-      
       inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
       
       inline def setNoDelayUndefined: Self = StObject.set(x, "noDelay", js.undefined)
       
-      inline def setNumberOfRetries(value: Double): Self = StObject.set(x, "numberOfRetries", value.asInstanceOf[js.Any])
-      
-      inline def setNumberOfRetriesUndefined: Self = StObject.set(x, "numberOfRetries", js.undefined)
-      
-      inline def setPkFactory(value: js.Object): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
+      inline def setPkFactory(value: PkFactory): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
       
       inline def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
       
-      inline def setPoolSize(value: Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
-      
-      inline def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
-      
-      inline def setPromiseLibrary(value: PromiseConstructor): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
+      inline def setPromiseLibrary(value: Any): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
       
       inline def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
       
@@ -760,87 +543,99 @@ object anon {
       
       inline def setPromoteValuesUndefined: Self = StObject.set(x, "promoteValues", js.undefined)
       
+      inline def setProxyHost(value: String): Self = StObject.set(x, "proxyHost", value.asInstanceOf[js.Any])
+      
+      inline def setProxyHostUndefined: Self = StObject.set(x, "proxyHost", js.undefined)
+      
+      inline def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
+      
+      inline def setProxyPasswordUndefined: Self = StObject.set(x, "proxyPassword", js.undefined)
+      
+      inline def setProxyPort(value: Double): Self = StObject.set(x, "proxyPort", value.asInstanceOf[js.Any])
+      
+      inline def setProxyPortUndefined: Self = StObject.set(x, "proxyPort", js.undefined)
+      
+      inline def setProxyUsername(value: String): Self = StObject.set(x, "proxyUsername", value.asInstanceOf[js.Any])
+      
+      inline def setProxyUsernameUndefined: Self = StObject.set(x, "proxyUsername", js.undefined)
+      
       inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      inline def setReadConcern(value: ReadConcern | String): Self = StObject.set(x, "readConcern", value.asInstanceOf[js.Any])
+      inline def setReadConcern(value: ReadConcernLike): Self = StObject.set(x, "readConcern", value.asInstanceOf[js.Any])
+      
+      inline def setReadConcernLevel(value: ReadConcernLevel): Self = StObject.set(x, "readConcernLevel", value.asInstanceOf[js.Any])
+      
+      inline def setReadConcernLevelUndefined: Self = StObject.set(x, "readConcernLevel", js.undefined)
       
       inline def setReadConcernUndefined: Self = StObject.set(x, "readConcern", js.undefined)
       
-      inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+      inline def setReadPreference(value: ReadPreferenceMode | ReadPreference): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
       
-      inline def setReadPreferenceTags(value: js.Array[String]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
+      inline def setReadPreferenceTags(value: js.Array[TagSet]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
       
       inline def setReadPreferenceTagsUndefined: Self = StObject.set(x, "readPreferenceTags", js.undefined)
       
-      inline def setReadPreferenceTagsVarargs(value: String*): Self = StObject.set(x, "readPreferenceTags", js.Array(value :_*))
+      inline def setReadPreferenceTagsVarargs(value: TagSet*): Self = StObject.set(x, "readPreferenceTags", js.Array(value*))
       
       inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
-      
-      inline def setReconnectInterval(value: Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
-      
-      inline def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
-      
-      inline def setReconnectTries(value: Double): Self = StObject.set(x, "reconnectTries", value.asInstanceOf[js.Any])
-      
-      inline def setReconnectTriesUndefined: Self = StObject.set(x, "reconnectTries", js.undefined)
       
       inline def setReplicaSet(value: String): Self = StObject.set(x, "replicaSet", value.asInstanceOf[js.Any])
       
       inline def setReplicaSetUndefined: Self = StObject.set(x, "replicaSet", js.undefined)
       
-      inline def setSecondaryAcceptableLatencyMS(value: Double): Self = StObject.set(x, "secondaryAcceptableLatencyMS", value.asInstanceOf[js.Any])
+      inline def setRetryReads(value: Boolean): Self = StObject.set(x, "retryReads", value.asInstanceOf[js.Any])
       
-      inline def setSecondaryAcceptableLatencyMSUndefined: Self = StObject.set(x, "secondaryAcceptableLatencyMS", js.undefined)
+      inline def setRetryReadsUndefined: Self = StObject.set(x, "retryReads", js.undefined)
+      
+      inline def setRetryWrites(value: Boolean): Self = StObject.set(x, "retryWrites", value.asInstanceOf[js.Any])
+      
+      inline def setRetryWritesUndefined: Self = StObject.set(x, "retryWrites", js.undefined)
       
       inline def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
       
       inline def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
       
+      inline def setServerApi(value: ServerApi | ServerApiVersion): Self = StObject.set(x, "serverApi", value.asInstanceOf[js.Any])
+      
+      inline def setServerApiUndefined: Self = StObject.set(x, "serverApi", js.undefined)
+      
       inline def setServerSelectionTimeoutMS(value: Double): Self = StObject.set(x, "serverSelectionTimeoutMS", value.asInstanceOf[js.Any])
       
       inline def setServerSelectionTimeoutMSUndefined: Self = StObject.set(x, "serverSelectionTimeoutMS", js.undefined)
-      
-      inline def setServername(value: String): Self = StObject.set(x, "servername", value.asInstanceOf[js.Any])
-      
-      inline def setServernameUndefined: Self = StObject.set(x, "servername", js.undefined)
-      
-      inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
-      
-      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
-      
-      inline def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
-      
-      inline def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
       
       inline def setSocketTimeoutMS(value: Double): Self = StObject.set(x, "socketTimeoutMS", value.asInstanceOf[js.Any])
       
       inline def setSocketTimeoutMSUndefined: Self = StObject.set(x, "socketTimeoutMS", js.undefined)
       
+      inline def setSrvMaxHosts(value: Double): Self = StObject.set(x, "srvMaxHosts", value.asInstanceOf[js.Any])
+      
+      inline def setSrvMaxHostsUndefined: Self = StObject.set(x, "srvMaxHosts", js.undefined)
+      
+      inline def setSrvServiceName(value: String): Self = StObject.set(x, "srvServiceName", value.asInstanceOf[js.Any])
+      
+      inline def setSrvServiceNameUndefined: Self = StObject.set(x, "srvServiceName", js.undefined)
+      
       inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      inline def setSslCA(value: js.Array[Buffer | String]): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
+      inline def setSslCA(value: String): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
       
       inline def setSslCAUndefined: Self = StObject.set(x, "sslCA", js.undefined)
       
-      inline def setSslCAVarargs(value: (Buffer | String)*): Self = StObject.set(x, "sslCA", js.Array(value :_*))
-      
-      inline def setSslCRL(value: js.Array[Buffer | String]): Self = StObject.set(x, "sslCRL", value.asInstanceOf[js.Any])
+      inline def setSslCRL(value: String): Self = StObject.set(x, "sslCRL", value.asInstanceOf[js.Any])
       
       inline def setSslCRLUndefined: Self = StObject.set(x, "sslCRL", js.undefined)
       
-      inline def setSslCRLVarargs(value: (Buffer | String)*): Self = StObject.set(x, "sslCRL", js.Array(value :_*))
-      
-      inline def setSslCert(value: Buffer | String): Self = StObject.set(x, "sslCert", value.asInstanceOf[js.Any])
+      inline def setSslCert(value: String): Self = StObject.set(x, "sslCert", value.asInstanceOf[js.Any])
       
       inline def setSslCertUndefined: Self = StObject.set(x, "sslCert", js.undefined)
       
-      inline def setSslKey(value: Buffer | String): Self = StObject.set(x, "sslKey", value.asInstanceOf[js.Any])
+      inline def setSslKey(value: String): Self = StObject.set(x, "sslKey", value.asInstanceOf[js.Any])
       
       inline def setSslKeyUndefined: Self = StObject.set(x, "sslKey", js.undefined)
       
-      inline def setSslPass(value: Buffer | String): Self = StObject.set(x, "sslPass", value.asInstanceOf[js.Any])
+      inline def setSslPass(value: String): Self = StObject.set(x, "sslPass", value.asInstanceOf[js.Any])
       
       inline def setSslPassUndefined: Self = StObject.set(x, "sslPass", js.undefined)
       
@@ -864,6 +659,10 @@ object anon {
       
       inline def setTlsCAFileUndefined: Self = StObject.set(x, "tlsCAFile", js.undefined)
       
+      inline def setTlsCertificateFile(value: String): Self = StObject.set(x, "tlsCertificateFile", value.asInstanceOf[js.Any])
+      
+      inline def setTlsCertificateFileUndefined: Self = StObject.set(x, "tlsCertificateFile", js.undefined)
+      
       inline def setTlsCertificateKeyFile(value: String): Self = StObject.set(x, "tlsCertificateKeyFile", value.asInstanceOf[js.Any])
       
       inline def setTlsCertificateKeyFilePassword(value: String): Self = StObject.set(x, "tlsCertificateKeyFilePassword", value.asInstanceOf[js.Any])
@@ -878,19 +677,7 @@ object anon {
       
       inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      inline def setUseNewUrlParser(value: Boolean): Self = StObject.set(x, "useNewUrlParser", value.asInstanceOf[js.Any])
-      
-      inline def setUseNewUrlParserUndefined: Self = StObject.set(x, "useNewUrlParser", js.undefined)
-      
-      inline def setUseUnifiedTopology(value: Boolean): Self = StObject.set(x, "useUnifiedTopology", value.asInstanceOf[js.Any])
-      
-      inline def setUseUnifiedTopologyUndefined: Self = StObject.set(x, "useUnifiedTopology", js.undefined)
-      
-      inline def setValidateOptions(value: js.Object | Boolean): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
-      
-      inline def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
-      
-      inline def setW(value: Double | majority | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: W): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
       inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
       
@@ -898,9 +685,77 @@ object anon {
       
       inline def setWaitQueueTimeoutMSUndefined: Self = StObject.set(x, "waitQueueTimeoutMS", js.undefined)
       
-      inline def setWtimeout(value: Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
+      inline def setWriteConcern(value: WriteConcern | WriteConcernSettings): Self = StObject.set(x, "writeConcern", value.asInstanceOf[js.Any])
       
-      inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
+      inline def setWriteConcernUndefined: Self = StObject.set(x, "writeConcern", js.undefined)
+      
+      inline def setWtimeoutMS(value: Double): Self = StObject.set(x, "wtimeoutMS", value.asInstanceOf[js.Any])
+      
+      inline def setWtimeoutMSUndefined: Self = StObject.set(x, "wtimeoutMS", js.undefined)
+      
+      inline def setZlibCompressionLevel(value: typings.monk.monkInts.`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "zlibCompressionLevel", value.asInstanceOf[js.Any])
+      
+      inline def setZlibCompressionLevelUndefined: Self = StObject.set(x, "zlibCompressionLevel", js.undefined)
+    }
+  }
+  
+  trait Multi extends StObject {
+    
+    var multi: js.UndefOr[`false`] = js.undefined
+    
+    var replace: js.UndefOr[`false`] = js.undefined
+    
+    var single: js.UndefOr[`true`] = js.undefined
+  }
+  object Multi {
+    
+    inline def apply(): Multi = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Multi]
+    }
+    
+    extension [Self <: Multi](x: Self) {
+      
+      inline def setMulti(value: `false`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      
+      inline def setReplace(value: `false`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
+      inline def setSingle(value: `true`): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      
+      inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    }
+  }
+  
+  trait MultiReplace extends StObject {
+    
+    var multi: js.UndefOr[`true`] = js.undefined
+    
+    var replace: js.UndefOr[`false`] = js.undefined
+    
+    var single: `false`
+  }
+  object MultiReplace {
+    
+    inline def apply(): MultiReplace = {
+      val __obj = js.Dynamic.literal(single = false)
+      __obj.asInstanceOf[MultiReplace]
+    }
+    
+    extension [Self <: MultiReplace](x: Self) {
+      
+      inline def setMulti(value: `true`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      
+      inline def setReplace(value: `false`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
+      inline def setSingle(value: `false`): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     }
   }
   
@@ -921,22 +776,80 @@ object anon {
     }
   }
   
-  trait ReplaceOne extends StObject {
+  trait Replace extends StObject {
     
-    var replaceOne: js.UndefOr[`false`] = js.undefined
+    var replace: js.UndefOr[`false`] = js.undefined
   }
-  object ReplaceOne {
+  object Replace {
     
-    inline def apply(): ReplaceOne = {
+    inline def apply(): Replace = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ReplaceOne]
+      __obj.asInstanceOf[Replace]
     }
     
-    extension [Self <: ReplaceOne](x: Self) {
+    extension [Self <: Replace](x: Self) {
       
-      inline def setReplaceOne(value: `false`): Self = StObject.set(x, "replaceOne", value.asInstanceOf[js.Any])
+      inline def setReplace(value: `false`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      inline def setReplaceOneUndefined: Self = StObject.set(x, "replaceOne", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    }
+  }
+  
+  trait ReplaceSingle extends StObject {
+    
+    var multi: js.UndefOr[`false`] = js.undefined
+    
+    var replace: `true`
+    
+    var single: js.UndefOr[`true`] = js.undefined
+  }
+  object ReplaceSingle {
+    
+    inline def apply(): ReplaceSingle = {
+      val __obj = js.Dynamic.literal(replace = true)
+      __obj.asInstanceOf[ReplaceSingle]
+    }
+    
+    extension [Self <: ReplaceSingle](x: Self) {
+      
+      inline def setMulti(value: `false`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      
+      inline def setReplace(value: `true`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setSingle(value: `true`): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      
+      inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    }
+  }
+  
+  trait Single extends StObject {
+    
+    var multi: `true`
+    
+    var replace: js.UndefOr[`false`] = js.undefined
+    
+    var single: js.UndefOr[`false`] = js.undefined
+  }
+  object Single {
+    
+    inline def apply(): Single = {
+      val __obj = js.Dynamic.literal(multi = true)
+      __obj.asInstanceOf[Single]
+    }
+    
+    extension [Self <: Single](x: Self) {
+      
+      inline def setMulti(value: `true`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      
+      inline def setReplace(value: `false`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
+      inline def setSingle(value: `false`): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      
+      inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
     }
   }
 }

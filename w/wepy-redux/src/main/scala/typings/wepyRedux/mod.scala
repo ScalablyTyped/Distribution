@@ -16,11 +16,11 @@ object mod {
   
   inline def connect(mapStateToProps: MapStateToProps, mapDispatchToProps: MapDispatchToProps): js.Function1[/* original */ Component, Component] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], mapDispatchToProps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* original */ Component, Component]]
   
-  inline def getStore(): Store[js.Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStore")().asInstanceOf[Store[js.Any, AnyAction]]
+  inline def getStore(): Store[Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStore")().asInstanceOf[Store[Any, AnyAction]]
   
-  inline def setStore(store: Store[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setStore(store: Store[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type MapDispatchToProps = StringDictionary[(js.Function2[/* store */ js.Any, /* repeated */ js.Any, Unit]) | String]
+  type MapDispatchToProps = StringDictionary[(js.Function2[/* store */ Any, /* repeated */ Any, Unit]) | String]
   
-  type MapStateToProps = StringDictionary[(js.Function1[/* state */ js.Any, js.Any]) | String]
+  type MapStateToProps = StringDictionary[(js.Function1[/* state */ Any, Any]) | String]
 }

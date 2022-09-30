@@ -1,11 +1,11 @@
 package typings.domutils
 
 import typings.domhandler.libNodeMod.AnyNode
-import typings.domutils.domutilsNumbers.`16`
-import typings.domutils.domutilsNumbers.`1`
-import typings.domutils.domutilsNumbers.`2`
-import typings.domutils.domutilsNumbers.`4`
-import typings.domutils.domutilsNumbers.`8`
+import typings.domutils.domutilsInts.`16`
+import typings.domutils.domutilsInts.`1`
+import typings.domutils.domutilsInts.`2`
+import typings.domutils.domutilsInts.`4`
+import typings.domutils.domutilsInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,11 +23,11 @@ object libHelpersMod {
   inline def uniqueSort[T /* <: AnyNode */](nodes: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueSort")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.domutils.domutilsNumbers.`1`
-    - typings.domutils.domutilsNumbers.`2`
-    - typings.domutils.domutilsNumbers.`4`
-    - typings.domutils.domutilsNumbers.`8`
-    - typings.domutils.domutilsNumbers.`16`
+    - typings.domutils.domutilsInts.`1`
+    - typings.domutils.domutilsInts.`2`
+    - typings.domutils.domutilsInts.`4`
+    - typings.domutils.domutilsInts.`8`
+    - typings.domutils.domutilsInts.`16`
   */
   trait DocumentPosition extends StObject
   object DocumentPosition {

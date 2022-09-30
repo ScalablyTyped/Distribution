@@ -37,9 +37,9 @@ trait ObjectMethod_
   
   var params: js.Array[Identifier_ | Pattern | RestElement_]
   
-  var returnType: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null] = js.undefined
+  var returnType: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_ | Null] = js.undefined
+  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
   var type_ObjectMethod_ : ObjectMethod
@@ -86,7 +86,7 @@ object ObjectMethod_ {
     
     inline def setParamsVarargs(value: (Identifier_ | Pattern | RestElement_)*): Self = StObject.set(x, "params", js.Array(value*))
     
-    inline def setReturnType(value: TypeAnnotation_ | TSTypeAnnotation | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     inline def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
@@ -94,7 +94,7 @@ object ObjectMethod_ {
     
     inline def setType(value: ObjectMethod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     

@@ -206,9 +206,7 @@ object Camera {
   val RIG_MODE_WEBVR: /* 21 */ Double = js.native
   
   /**
-    * @param name
-    * @param scene
-    * @hidden
+    * @internal
     */
   inline def _CreateDefaultParsedCamera(name: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.Camera = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultParsedCamera")(name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Camera]
 }

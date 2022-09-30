@@ -37,7 +37,7 @@ object mod {
     
     def filter(callback: js.Function1[/* value */ T, Boolean]): Observable[T] = js.native
     @JSName("filter")
-    def filter_S_T[S /* <: T */](callback: js.Function1[/* value */ T, /* is S */ Boolean]): Observable[S] = js.native
+    def filter_S[S /* <: T */](callback: js.Function1[/* value */ T, /* is S */ Boolean]): Observable[S] = js.native
     
     def flatMap[R](callback: js.Function1[/* value */ T, ObservableLike[R]]): Observable[R] = js.native
     

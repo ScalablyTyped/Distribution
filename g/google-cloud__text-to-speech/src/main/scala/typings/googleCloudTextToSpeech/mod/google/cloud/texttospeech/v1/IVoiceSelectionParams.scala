@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Properties of a VoiceSelectionParams. */
 trait IVoiceSelectionParams extends StObject {
   
+  /** VoiceSelectionParams customVoice */
+  var customVoice: js.UndefOr[ICustomVoiceParams | Null] = js.undefined
+  
   /** VoiceSelectionParams languageCode */
   var languageCode: js.UndefOr[String | Null] = js.undefined
   
@@ -26,6 +29,12 @@ object IVoiceSelectionParams {
   }
   
   extension [Self <: IVoiceSelectionParams](x: Self) {
+    
+    inline def setCustomVoice(value: ICustomVoiceParams): Self = StObject.set(x, "customVoice", value.asInstanceOf[js.Any])
+    
+    inline def setCustomVoiceNull: Self = StObject.set(x, "customVoice", null)
+    
+    inline def setCustomVoiceUndefined: Self = StObject.set(x, "customVoice", js.undefined)
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

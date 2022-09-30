@@ -6,10 +6,10 @@ import typings.oracleOraclejet.anon.`10`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentEventMap
 import typings.oracleOraclejet.ojgaugeMod.ojLedGauge.Threshold
-import typings.oracleOraclejet.oracleOraclejetNumbers.`0`
-import typings.oracleOraclejet.oracleOraclejetNumbers.`180`
-import typings.oracleOraclejet.oracleOraclejetNumbers.`270`
-import typings.oracleOraclejet.oracleOraclejetNumbers.`90`
+import typings.oracleOraclejet.oracleOraclejetInts.`0`
+import typings.oracleOraclejet.oracleOraclejetInts.`180`
+import typings.oracleOraclejet.oracleOraclejetInts.`270`
+import typings.oracleOraclejet.oracleOraclejetInts.`90`
 import typings.oracleOraclejet.oracleOraclejetStrings.arrow
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.circle

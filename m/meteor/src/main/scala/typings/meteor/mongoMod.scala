@@ -5,27 +5,30 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import typings.bson.mod.Document
 import typings.meteor.Meteor.LiveQueryHandle
 import typings.meteor.anon.AddToSet
 import typings.meteor.anon.And
 import typings.meteor.anon.ArrayFilters
 import typings.meteor.anon.CaseSensitive
+import typings.meteor.anon.DefineMutationMethods
 import typings.meteor.anon.Fetch
 import typings.meteor.anon.Id
-import typings.meteor.anon.IdGeneration
 import typings.meteor.anon.InsertedId
 import typings.meteor.anon.Multi
 import typings.meteor.anon.NonMutatingCallbacks
 import typings.meteor.meteorStrings._id
 import typings.meteor.meteorStrings.limit
+import typings.mongodb.mod.CreateIndexesOptions
 import typings.mongodb.mod.Db
+import typings.mongodb.mod.Hint
+import typings.mongodb.mod.IndexSpecification
 import typings.std.Exclude
 import typings.std.Number
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.Record
-import typings.std.RegExp
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,20 +43,44 @@ object mongoMod {
     val ^ : js.Any = js.native
     
     @js.native
-    trait Collection[T, U] extends StObject {
+    trait Collection[T /* <: Document */, U] extends StObject {
       
-      def _dropIndex(keys: String): Unit = js.native
-      def _dropIndex(keys: StringDictionary[Double | String]): Unit = js.native
+      def _createCappedCollection(): Unit = js.native
+      def _createCappedCollection(byteSize: Double): Unit = js.native
+      def _createCappedCollection(byteSize: Double, maxDocuments: Double): Unit = js.native
+      def _createCappedCollection(byteSize: Unit, maxDocuments: Double): Unit = js.native
       
-      def _ensureIndex(keys: String): Unit = js.native
-      def _ensureIndex(keys: String, options: StringDictionary[js.Any]): Unit = js.native
-      def _ensureIndex(keys: StringDictionary[Double | String]): Unit = js.native
-      def _ensureIndex(keys: StringDictionary[Double | String], options: StringDictionary[js.Any]): Unit = js.native
+      def _dropCollection(): js.Promise[Unit] = js.native
+      
+      def _dropIndex(indexName: String): Unit = js.native
+      
+      /** @deprecated */
+      def _ensureIndex(indexSpec: IndexSpecification): Unit = js.native
+      def _ensureIndex(indexSpec: IndexSpecification, options: CreateIndexesOptions): Unit = js.native
       
       def allow[Fn /* <: Transform[T] */](options: Fetch[Fn, T, U]): Boolean = js.native
       
+      def createCappedCollectionAsync(): js.Promise[Unit] = js.native
+      def createCappedCollectionAsync(byteSize: Double): js.Promise[Unit] = js.native
+      def createCappedCollectionAsync(byteSize: Double, maxDocuments: Double): js.Promise[Unit] = js.native
+      def createCappedCollectionAsync(byteSize: Unit, maxDocuments: Double): js.Promise[Unit] = js.native
+      
+      def createIndex(indexSpec: IndexSpecification): Unit = js.native
+      def createIndex(indexSpec: IndexSpecification, options: CreateIndexesOptions): Unit = js.native
+      
+      def createIndexAsync(indexSpec: IndexSpecification): js.Promise[Unit] = js.native
+      def createIndexAsync(indexSpec: IndexSpecification, options: CreateIndexesOptions): js.Promise[Unit] = js.native
+      
       def deny[Fn /* <: Transform[T] */](options: Fetch[Fn, T, U]): Boolean = js.native
       
+      def dropCollectionAsync(): js.Promise[Unit] = js.native
+      
+      def dropIndexAsync(indexName: String): Unit = js.native
+      
+      /**
+        * Find the documents in a collection that match the selector.
+        * @param selector A query describing the documents to find
+        */
       def find(): Cursor[T, U] = js.native
       def find(selector: String): Cursor[T, U] = js.native
       def find(selector: ObjectID): Cursor[T, U] = js.native
@@ -91,6 +118,10 @@ object mongoMod {
             ]
           ] = js.native
       
+      /**
+        * Finds the first document that matches the selector, as ordered by sort and skip options. Returns `undefined` if no matching document is found.
+        * @param selector A query describing the documents to find
+        */
       def findOne(): js.UndefOr[U] = js.native
       def findOne(selector: String): js.UndefOr[U] = js.native
       def findOne(selector: ObjectID): js.UndefOr[U] = js.native
@@ -123,8 +154,102 @@ object mongoMod {
               U
             ]
           ] = js.native
+      
+      /**
+        * Finds the first document that matches the selector, as ordered by sort and skip options. Returns `undefined` if no matching document is found.
+        * @param selector A query describing the documents to find
+        */
+      def findOneAsync(): js.Promise[js.UndefOr[U]] = js.native
+      def findOneAsync(selector: String): js.Promise[js.UndefOr[U]] = js.native
+      def findOneAsync(selector: ObjectID): js.Promise[js.UndefOr[U]] = js.native
+      def findOneAsync(selector: Selector[T]): js.Promise[js.UndefOr[U]] = js.native
+      def findOneAsync[O /* <: Omit[Options[T], limit] */](selector: String, options: O): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      def findOneAsync[O /* <: Omit[Options[T], limit] */](selector: Unit, options: O): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      def findOneAsync[O /* <: Omit[Options[T], limit] */](selector: ObjectID, options: O): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      def findOneAsync[O /* <: Omit[Options[T], limit] */](selector: Selector[T], options: O): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      /**
+        * Finds the first document that matches the selector, as ordered by sort and skip options. Returns `undefined` if no matching document is found.
+        * @param selector A query describing the documents to find
+        */
+      @JSName("findOneAsync")
+      def findOneAsync_O[O /* <: Omit[Options[T], limit] */](): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      @JSName("findOneAsync")
+      def findOneAsync_O[O /* <: Omit[Options[T], limit] */](selector: String): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      @JSName("findOneAsync")
+      def findOneAsync_O[O /* <: Omit[Options[T], limit] */](selector: ObjectID): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      @JSName("findOneAsync")
+      def findOneAsync_O[O /* <: Omit[Options[T], limit] */](selector: Selector[T]): js.Promise[
+            js.UndefOr[
+              DispatchTransform[
+                /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
+                T, 
+                U
+              ]
+            ]
+          ] = js.native
+      
+      /**
+        * Finds the first document that matches the selector, as ordered by sort and skip options. Returns `undefined` if no matching document is found.
+        * @param selector A query describing the documents to find
+        */
       @JSName("findOne")
-      def findOne_O_OmitOptionsTlimit[O /* <: Omit[Options[T], limit] */](): js.UndefOr[
+      def findOne_O[O /* <: Omit[Options[T], limit] */](): js.UndefOr[
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
               T, 
@@ -132,7 +257,7 @@ object mongoMod {
             ]
           ] = js.native
       @JSName("findOne")
-      def findOne_O_OmitOptionsTlimit[O /* <: Omit[Options[T], limit] */](selector: String): js.UndefOr[
+      def findOne_O[O /* <: Omit[Options[T], limit] */](selector: String): js.UndefOr[
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
               T, 
@@ -140,7 +265,7 @@ object mongoMod {
             ]
           ] = js.native
       @JSName("findOne")
-      def findOne_O_OmitOptionsTlimit[O /* <: Omit[Options[T], limit] */](selector: ObjectID): js.UndefOr[
+      def findOne_O[O /* <: Omit[Options[T], limit] */](selector: ObjectID): js.UndefOr[
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
               T, 
@@ -148,7 +273,7 @@ object mongoMod {
             ]
           ] = js.native
       @JSName("findOne")
-      def findOne_O_OmitOptionsTlimit[O /* <: Omit[Options[T], limit] */](selector: Selector[T]): js.UndefOr[
+      def findOne_O[O /* <: Omit[Options[T], limit] */](selector: Selector[T]): js.UndefOr[
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
               T, 
@@ -156,8 +281,12 @@ object mongoMod {
             ]
           ] = js.native
       
+      /**
+        * Find the documents in a collection that match the selector.
+        * @param selector A query describing the documents to find
+        */
       @JSName("find")
-      def find_O_OptionsT[O /* <: Options[T] */](): Cursor[
+      def find_O[O /* <: Options[T] */](): Cursor[
             T, 
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
@@ -166,7 +295,7 @@ object mongoMod {
             ]
           ] = js.native
       @JSName("find")
-      def find_O_OptionsT[O /* <: Options[T] */](selector: String): Cursor[
+      def find_O[O /* <: Options[T] */](selector: String): Cursor[
             T, 
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
@@ -175,7 +304,7 @@ object mongoMod {
             ]
           ] = js.native
       @JSName("find")
-      def find_O_OptionsT[O /* <: Options[T] */](selector: ObjectID): Cursor[
+      def find_O[O /* <: Options[T] */](selector: ObjectID): Cursor[
             T, 
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
@@ -184,7 +313,7 @@ object mongoMod {
             ]
           ] = js.native
       @JSName("find")
-      def find_O_OptionsT[O /* <: Options[T] */](selector: Selector[T]): Cursor[
+      def find_O[O /* <: Options[T] */](selector: Selector[T]): Cursor[
             T, 
             DispatchTransform[
               /* import warning: importer.ImportType#apply Failed type conversion: O['transform'] */ js.Any, 
@@ -193,19 +322,57 @@ object mongoMod {
             ]
           ] = js.native
       
+      /**
+        * Insert a document in the collection.  Returns its unique _id.
+        * @param doc The document to insert. May not yet have an _id attribute, in which case Meteor will generate one for you.
+        * @param callback If present, called with an error object as the first argument and, if no error, the _id as the second.
+        */
       def insert(doc: OptionalId[T]): String = js.native
       def insert(doc: OptionalId[T], callback: js.Function): String = js.native
       
+      /**
+        * Insert a document in the collection.  Returns its unique _id.
+        * @param doc The document to insert. May not yet have an _id attribute, in which case Meteor will generate one for you.
+        * @param callback If present, called with an error object as the first argument and, if no error, the _id as the second.
+        */
+      def insertAsync(doc: OptionalId[T]): js.Promise[String] = js.native
+      def insertAsync(doc: OptionalId[T], callback: js.Function): js.Promise[String] = js.native
+      
+      /**
+        * Returns the [`Collection`](http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html) object corresponding to this collection from the
+        * [npm `mongodb` driver module](https://www.npmjs.com/package/mongodb) which is wrapped by `Mongo.Collection`.
+        */
       def rawCollection(): typings.mongodb.mod.Collection[T] = js.native
       
+      /**
+        * Returns the [`Db`](http://mongodb.github.io/node-mongodb-native/3.0/api/Db.html) object corresponding to this collection's database connection from the
+        * [npm `mongodb` driver module](https://www.npmjs.com/package/mongodb) which is wrapped by `Mongo.Collection`.
+        */
       def rawDatabase(): Db = js.native
       
       def remove(selector: String): Double = js.native
       def remove(selector: String, callback: js.Function): Double = js.native
       def remove(selector: ObjectID): Double = js.native
       def remove(selector: ObjectID, callback: js.Function): Double = js.native
+      /**
+        * Remove documents from the collection
+        * @param selector Specifies which documents to remove
+        * @param callback If present, called with an error object as its argument.
+        */
       def remove(selector: Selector[T]): Double = js.native
       def remove(selector: Selector[T], callback: js.Function): Double = js.native
+      
+      def removeAsync(selector: String): js.Promise[Double] = js.native
+      def removeAsync(selector: String, callback: js.Function): js.Promise[Double] = js.native
+      def removeAsync(selector: ObjectID): js.Promise[Double] = js.native
+      def removeAsync(selector: ObjectID, callback: js.Function): js.Promise[Double] = js.native
+      /**
+        * Remove documents from the collection
+        * @param selector Specifies which documents to remove
+        * @param callback If present, called with an error object as its argument.
+        */
+      def removeAsync(selector: Selector[T]): js.Promise[Double] = js.native
+      def removeAsync(selector: Selector[T], callback: js.Function): js.Promise[Double] = js.native
       
       def update(selector: String, modifier: Modifier[T]): Double = js.native
       def update(selector: String, modifier: Modifier[T], options: Unit, callback: js.Function): Double = js.native
@@ -215,10 +382,35 @@ object mongoMod {
       def update(selector: ObjectID, modifier: Modifier[T], options: Unit, callback: js.Function): Double = js.native
       def update(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters): Double = js.native
       def update(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
+      /**
+        * Modify one or more documents in the collection. Returns the number of matched documents.
+        * @param selector Specifies which documents to modify
+        * @param modifier Specifies how to modify the documents
+        * @param callback If present, called with an error object as the first argument and, if no error, the number of affected documents as the second.
+        */
       def update(selector: Selector[T], modifier: Modifier[T]): Double = js.native
       def update(selector: Selector[T], modifier: Modifier[T], options: Unit, callback: js.Function): Double = js.native
       def update(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters): Double = js.native
       def update(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters, callback: js.Function): Double = js.native
+      
+      def updateAsync(selector: String, modifier: Modifier[T]): js.Promise[Double] = js.native
+      def updateAsync(selector: String, modifier: Modifier[T], options: Unit, callback: js.Function): js.Promise[Double] = js.native
+      def updateAsync(selector: String, modifier: Modifier[T], options: ArrayFilters): js.Promise[Double] = js.native
+      def updateAsync(selector: String, modifier: Modifier[T], options: ArrayFilters, callback: js.Function): js.Promise[Double] = js.native
+      def updateAsync(selector: ObjectID, modifier: Modifier[T]): js.Promise[Double] = js.native
+      def updateAsync(selector: ObjectID, modifier: Modifier[T], options: Unit, callback: js.Function): js.Promise[Double] = js.native
+      def updateAsync(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters): js.Promise[Double] = js.native
+      def updateAsync(selector: ObjectID, modifier: Modifier[T], options: ArrayFilters, callback: js.Function): js.Promise[Double] = js.native
+      /**
+        * Modify one or more documents in the collection. Returns the number of matched documents.
+        * @param selector Specifies which documents to modify
+        * @param modifier Specifies how to modify the documents
+        * @param callback If present, called with an error object as the first argument and, if no error, the number of affected documents as the second.
+        */
+      def updateAsync(selector: Selector[T], modifier: Modifier[T]): js.Promise[Double] = js.native
+      def updateAsync(selector: Selector[T], modifier: Modifier[T], options: Unit, callback: js.Function): js.Promise[Double] = js.native
+      def updateAsync(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters): js.Promise[Double] = js.native
+      def updateAsync(selector: Selector[T], modifier: Modifier[T], options: ArrayFilters, callback: js.Function): js.Promise[Double] = js.native
       
       def upsert(selector: String, modifier: Modifier[T]): InsertedId = js.native
       def upsert(selector: String, modifier: Modifier[T], options: Unit, callback: js.Function): InsertedId = js.native
@@ -228,10 +420,37 @@ object mongoMod {
       def upsert(selector: ObjectID, modifier: Modifier[T], options: Unit, callback: js.Function): InsertedId = js.native
       def upsert(selector: ObjectID, modifier: Modifier[T], options: Multi): InsertedId = js.native
       def upsert(selector: ObjectID, modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
+      /**
+        * Modify one or more documents in the collection, or insert one if no matching documents were found. Returns an object with keys `numberAffected` (the number of documents modified) and
+        * `insertedId` (the unique _id of the document that was inserted, if any).
+        * @param selector Specifies which documents to modify
+        * @param modifier Specifies how to modify the documents
+        * @param callback If present, called with an error object as the first argument and, if no error, the number of affected documents as the second.
+        */
       def upsert(selector: Selector[T], modifier: Modifier[T]): InsertedId = js.native
       def upsert(selector: Selector[T], modifier: Modifier[T], options: Unit, callback: js.Function): InsertedId = js.native
       def upsert(selector: Selector[T], modifier: Modifier[T], options: Multi): InsertedId = js.native
       def upsert(selector: Selector[T], modifier: Modifier[T], options: Multi, callback: js.Function): InsertedId = js.native
+      
+      def upsertAsync(selector: String, modifier: Modifier[T]): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: String, modifier: Modifier[T], options: Unit, callback: js.Function): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: String, modifier: Modifier[T], options: Multi): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: String, modifier: Modifier[T], options: Multi, callback: js.Function): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: ObjectID, modifier: Modifier[T]): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: ObjectID, modifier: Modifier[T], options: Unit, callback: js.Function): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: ObjectID, modifier: Modifier[T], options: Multi): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: ObjectID, modifier: Modifier[T], options: Multi, callback: js.Function): js.Promise[InsertedId] = js.native
+      /**
+        * Modify one or more documents in the collection, or insert one if no matching documents were found. Returns an object with keys `numberAffected` (the number of documents modified) and
+        * `insertedId` (the unique _id of the document that was inserted, if any).
+        * @param selector Specifies which documents to modify
+        * @param modifier Specifies how to modify the documents
+        * @param callback If present, called with an error object as the first argument and, if no error, the number of affected documents as the second.
+        */
+      def upsertAsync(selector: Selector[T], modifier: Modifier[T]): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: Selector[T], modifier: Modifier[T], options: Unit, callback: js.Function): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: Selector[T], modifier: Modifier[T], options: Multi): js.Promise[InsertedId] = js.native
+      def upsertAsync(selector: Selector[T], modifier: Modifier[T], options: Multi, callback: js.Function): js.Promise[InsertedId] = js.native
     }
     @JSImport("meteor/mongo", "Mongo.Collection")
     @js.native
@@ -240,12 +459,16 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.Collection")
     @js.native
-    class CollectionCls[T, U] ()
+    /**
+      * Constructor for a Collection
+      * @param name The name of the collection. If null, creates an unmanaged (unsynchronized) local collection.
+      */
+    open class CollectionCls[T /* <: Document */, U] ()
       extends StObject
          with Collection[T, U] {
       def this(name: String) = this()
-      def this(name: String, options: IdGeneration[T, U]) = this()
-      def this(name: Null, options: IdGeneration[T, U]) = this()
+      def this(name: String, options: DefineMutationMethods[T, U]) = this()
+      def this(name: Null, options: DefineMutationMethods[T, U]) = this()
     }
     
     inline def Collection_=(x: CollectionStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
@@ -253,25 +476,89 @@ object mongoMod {
     @js.native
     trait Cursor[T, U] extends StObject {
       
+      /**
+        * Returns the number of documents that match a query.
+        * @param applySkipLimit If set to `false`, the value returned will reflect the total number of matching documents, ignoring any value supplied for limit. (Default: true)
+        */
       def count(): Double = js.native
       def count(applySkipLimit: Boolean): Double = js.native
       
+      /**
+        * Returns the number of documents that match a query.
+        * @param applySkipLimit If set to `false`, the value returned will reflect the total number of matching documents, ignoring any value supplied for limit. (Default: true)
+        */
+      def countAsync(): js.Promise[Double] = js.native
+      def countAsync(applySkipLimit: Boolean): js.Promise[Double] = js.native
+      
+      /**
+        * Return all matching documents as an Array.
+        */
       def fetch(): js.Array[U] = js.native
       
+      /**
+        * Return all matching documents as an Array.
+        */
+      def fetchAsync(): js.Promise[js.Array[U]] = js.native
+      
+      /**
+        * Call `callback` once for each matching document, sequentially and
+        *          synchronously.
+        * @param callback Function to call. It will be called with three arguments: the document, a 0-based index, and <em>cursor</em> itself.
+        * @param thisArg An object which will be the value of `this` inside `callback`.
+        */
       def forEach(callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], Unit]): Unit = js.native
       def forEach(
         callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], Unit],
-        thisArg: js.Any
+        thisArg: Any
       ): Unit = js.native
       
+      /**
+        * Call `callback` once for each matching document, sequentially and
+        *          synchronously.
+        * @param callback Function to call. It will be called with three arguments: the document, a 0-based index, and <em>cursor</em> itself.
+        * @param thisArg An object which will be the value of `this` inside `callback`.
+        */
+      def forEachAsync(callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], Unit]): js.Promise[Unit] = js.native
+      def forEachAsync(
+        callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], Unit],
+        thisArg: Any
+      ): js.Promise[Unit] = js.native
+      
+      @JSName(js.Symbol.iterator)
+      var iterator: js.Function0[js.Iterator[T]] = js.native
+      
+      /**
+        * Map callback over all matching documents. Returns an Array.
+        * @param callback Function to call. It will be called with three arguments: the document, a 0-based index, and <em>cursor</em> itself.
+        * @param thisArg An object which will be the value of `this` inside `callback`.
+        */
       def map[M](callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], M]): js.Array[M] = js.native
       def map[M](
         callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], M],
-        thisArg: js.Any
+        thisArg: Any
       ): js.Array[M] = js.native
       
+      /**
+        * Map callback over all matching documents. Returns an Array.
+        * @param callback Function to call. It will be called with three arguments: the document, a 0-based index, and <em>cursor</em> itself.
+        * @param thisArg An object which will be the value of `this` inside `callback`.
+        */
+      def mapAsync[M](callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], M]): js.Promise[js.Array[M]] = js.native
+      def mapAsync[M](
+        callback: js.Function3[/* doc */ U, /* index */ Double, /* cursor */ Cursor[T, U], M],
+        thisArg: Any
+      ): js.Promise[js.Array[M]] = js.native
+      
+      /**
+        * Watch a query. Receive callbacks as the result set changes.
+        * @param callbacks Functions to call to deliver the result set as it changes
+        */
       def observe(callbacks: ObserveCallbacks[U]): LiveQueryHandle = js.native
       
+      /**
+        * Watch a query. Receive callbacks as the result set changes. Only the differences between the old and new documents are passed to the callbacks.
+        * @param callbacks Functions to call to deliver the result set as it changes
+        */
       def observeChanges(callbacks: ObserveChangesCallbacks[T]): LiveQueryHandle = js.native
       def observeChanges(callbacks: ObserveChangesCallbacks[T], options: NonMutatingCallbacks): LiveQueryHandle = js.native
     }
@@ -282,7 +569,10 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.Cursor")
     @js.native
-    class CursorCls[T, U] ()
+    /**
+      * To create a cursor, use find. To access the documents in a cursor, use forEach, map, or fetch.
+      */
+    open class CursorCls[T, U] ()
       extends StObject
          with Cursor[T, U]
     
@@ -311,7 +601,11 @@ object mongoMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/mongo", "Mongo.ObjectID")
     @js.native
-    class ObjectIDCls ()
+    /**
+      * Create a Mongo-style `ObjectID`.  If you don't specify a `hexString`, the `ObjectID` will generated randomly (not using MongoDB's ID construction rules).
+      * @param hexString The 24-character hexadecimal contents of the ObjectID to create
+      */
+    open class ObjectIDCls ()
       extends StObject
          with ObjectID {
       def this(hexString: String) = this()
@@ -323,24 +617,24 @@ object mongoMod {
       override def toHexString(): String = js.native
     }
     
-    inline def setConnectionOptions(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConnectionOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setConnectionOptions(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConnectionOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     trait AllowDenyOptions extends StObject {
       
       var fetch: js.UndefOr[js.Array[String]] = js.undefined
       
-      var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.undefined
+      var insert: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Any, Boolean]] = js.undefined
       
-      var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ js.Any, Boolean]] = js.undefined
+      var remove: js.UndefOr[js.Function2[/* userId */ String, /* doc */ Any, Boolean]] = js.undefined
       
       var transform: js.UndefOr[js.Function | Null] = js.undefined
       
       var update: js.UndefOr[
             js.Function4[
               /* userId */ String, 
-              /* doc */ js.Any, 
+              /* doc */ Any, 
               /* fieldNames */ js.Array[String], 
-              /* modifier */ js.Any, 
+              /* modifier */ Any, 
               Boolean
             ]
           ] = js.undefined
@@ -358,13 +652,13 @@ object mongoMod {
         
         inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
         
-        inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+        inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value*))
         
-        inline def setInsert(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+        inline def setInsert(value: (/* userId */ String, /* doc */ Any) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
         
         inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
         
-        inline def setRemove(value: (/* userId */ String, /* doc */ js.Any) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+        inline def setRemove(value: (/* userId */ String, /* doc */ Any) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
         
         inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
         
@@ -375,7 +669,7 @@ object mongoMod {
         inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
         
         inline def setUpdate(
-          value: (/* userId */ String, /* doc */ js.Any, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
+          value: (/* userId */ String, /* doc */ Any, /* fieldNames */ js.Array[String], /* modifier */ Any) => Boolean
         ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
         
         inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
@@ -384,30 +678,31 @@ object mongoMod {
     
     type ArraysOrEach[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P]}}
-      */ typings.meteor.meteorStrings.ArraysOrEach & TopLevel[js.Any]
+      */ typings.meteor.meteorStrings.ArraysOrEach & TopLevel[Any]
     
+    // prettier-ignore
     /* Rewritten from type alias, can be one of: 
-      - typings.meteor.meteorNumbers.`1`
-      - typings.meteor.meteorNumbers.`2`
-      - typings.meteor.meteorNumbers.`3`
-      - typings.meteor.meteorNumbers.`4`
-      - typings.meteor.meteorNumbers.`5`
-      - typings.meteor.meteorNumbers.`6`
-      - typings.meteor.meteorNumbers.`7`
-      - typings.meteor.meteorNumbers.`8`
-      - typings.meteor.meteorNumbers.`9`
-      - typings.meteor.meteorNumbers.`10`
-      - typings.meteor.meteorNumbers.`11`
-      - typings.meteor.meteorNumbers.`12`
-      - typings.meteor.meteorNumbers.`13`
-      - typings.meteor.meteorNumbers.`14`
-      - typings.meteor.meteorNumbers.`15`
-      - typings.meteor.meteorNumbers.`16`
-      - typings.meteor.meteorNumbers.`17`
-      - typings.meteor.meteorNumbers.`18`
-      - typings.meteor.meteorNumbers.`19`
-      - typings.meteor.meteorNumbers.`-1`
-      - typings.meteor.meteorNumbers.`127`
+      - typings.meteor.meteorInts.`1`
+      - typings.meteor.meteorInts.`2`
+      - typings.meteor.meteorInts.`3`
+      - typings.meteor.meteorInts.`4`
+      - typings.meteor.meteorInts.`5`
+      - typings.meteor.meteorInts.`6`
+      - typings.meteor.meteorInts.`7`
+      - typings.meteor.meteorInts.`8`
+      - typings.meteor.meteorInts.`9`
+      - typings.meteor.meteorInts.`10`
+      - typings.meteor.meteorInts.`11`
+      - typings.meteor.meteorInts.`12`
+      - typings.meteor.meteorInts.`13`
+      - typings.meteor.meteorInts.`14`
+      - typings.meteor.meteorInts.`15`
+      - typings.meteor.meteorInts.`16`
+      - typings.meteor.meteorInts.`17`
+      - typings.meteor.meteorInts.`18`
+      - typings.meteor.meteorInts.`19`
+      - typings.meteor.meteorInts.`-1`
+      - typings.meteor.meteorInts.`127`
       - typings.meteor.meteorStrings.double
       - typings.meteor.meteorStrings.string
       - typings.meteor.meteorStrings.`object`
@@ -434,47 +729,47 @@ object mongoMod {
     trait BsonType extends StObject
     object BsonType {
       
-      inline def `-1`: typings.meteor.meteorNumbers.`-1` = -1.asInstanceOf[typings.meteor.meteorNumbers.`-1`]
+      inline def `-1`: typings.meteor.meteorInts.`-1` = -1.asInstanceOf[typings.meteor.meteorInts.`-1`]
       
-      inline def `1`: typings.meteor.meteorNumbers.`1` = 1.asInstanceOf[typings.meteor.meteorNumbers.`1`]
+      inline def `1`: typings.meteor.meteorInts.`1` = 1.asInstanceOf[typings.meteor.meteorInts.`1`]
       
-      inline def `10`: typings.meteor.meteorNumbers.`10` = 10.asInstanceOf[typings.meteor.meteorNumbers.`10`]
+      inline def `10`: typings.meteor.meteorInts.`10` = 10.asInstanceOf[typings.meteor.meteorInts.`10`]
       
-      inline def `11`: typings.meteor.meteorNumbers.`11` = 11.asInstanceOf[typings.meteor.meteorNumbers.`11`]
+      inline def `11`: typings.meteor.meteorInts.`11` = 11.asInstanceOf[typings.meteor.meteorInts.`11`]
       
-      inline def `12`: typings.meteor.meteorNumbers.`12` = 12.asInstanceOf[typings.meteor.meteorNumbers.`12`]
+      inline def `12`: typings.meteor.meteorInts.`12` = 12.asInstanceOf[typings.meteor.meteorInts.`12`]
       
-      inline def `127`: typings.meteor.meteorNumbers.`127` = 127.asInstanceOf[typings.meteor.meteorNumbers.`127`]
+      inline def `127`: typings.meteor.meteorInts.`127` = 127.asInstanceOf[typings.meteor.meteorInts.`127`]
       
-      inline def `13`: typings.meteor.meteorNumbers.`13` = 13.asInstanceOf[typings.meteor.meteorNumbers.`13`]
+      inline def `13`: typings.meteor.meteorInts.`13` = 13.asInstanceOf[typings.meteor.meteorInts.`13`]
       
-      inline def `14`: typings.meteor.meteorNumbers.`14` = 14.asInstanceOf[typings.meteor.meteorNumbers.`14`]
+      inline def `14`: typings.meteor.meteorInts.`14` = 14.asInstanceOf[typings.meteor.meteorInts.`14`]
       
-      inline def `15`: typings.meteor.meteorNumbers.`15` = 15.asInstanceOf[typings.meteor.meteorNumbers.`15`]
+      inline def `15`: typings.meteor.meteorInts.`15` = 15.asInstanceOf[typings.meteor.meteorInts.`15`]
       
-      inline def `16`: typings.meteor.meteorNumbers.`16` = 16.asInstanceOf[typings.meteor.meteorNumbers.`16`]
+      inline def `16`: typings.meteor.meteorInts.`16` = 16.asInstanceOf[typings.meteor.meteorInts.`16`]
       
-      inline def `17`: typings.meteor.meteorNumbers.`17` = 17.asInstanceOf[typings.meteor.meteorNumbers.`17`]
+      inline def `17`: typings.meteor.meteorInts.`17` = 17.asInstanceOf[typings.meteor.meteorInts.`17`]
       
-      inline def `18`: typings.meteor.meteorNumbers.`18` = 18.asInstanceOf[typings.meteor.meteorNumbers.`18`]
+      inline def `18`: typings.meteor.meteorInts.`18` = 18.asInstanceOf[typings.meteor.meteorInts.`18`]
       
-      inline def `19`: typings.meteor.meteorNumbers.`19` = 19.asInstanceOf[typings.meteor.meteorNumbers.`19`]
+      inline def `19`: typings.meteor.meteorInts.`19` = 19.asInstanceOf[typings.meteor.meteorInts.`19`]
       
-      inline def `2`: typings.meteor.meteorNumbers.`2` = 2.asInstanceOf[typings.meteor.meteorNumbers.`2`]
+      inline def `2`: typings.meteor.meteorInts.`2` = 2.asInstanceOf[typings.meteor.meteorInts.`2`]
       
-      inline def `3`: typings.meteor.meteorNumbers.`3` = 3.asInstanceOf[typings.meteor.meteorNumbers.`3`]
+      inline def `3`: typings.meteor.meteorInts.`3` = 3.asInstanceOf[typings.meteor.meteorInts.`3`]
       
-      inline def `4`: typings.meteor.meteorNumbers.`4` = 4.asInstanceOf[typings.meteor.meteorNumbers.`4`]
+      inline def `4`: typings.meteor.meteorInts.`4` = 4.asInstanceOf[typings.meteor.meteorInts.`4`]
       
-      inline def `5`: typings.meteor.meteorNumbers.`5` = 5.asInstanceOf[typings.meteor.meteorNumbers.`5`]
+      inline def `5`: typings.meteor.meteorInts.`5` = 5.asInstanceOf[typings.meteor.meteorInts.`5`]
       
-      inline def `6`: typings.meteor.meteorNumbers.`6` = 6.asInstanceOf[typings.meteor.meteorNumbers.`6`]
+      inline def `6`: typings.meteor.meteorInts.`6` = 6.asInstanceOf[typings.meteor.meteorInts.`6`]
       
-      inline def `7`: typings.meteor.meteorNumbers.`7` = 7.asInstanceOf[typings.meteor.meteorNumbers.`7`]
+      inline def `7`: typings.meteor.meteorInts.`7` = 7.asInstanceOf[typings.meteor.meteorInts.`7`]
       
-      inline def `8`: typings.meteor.meteorNumbers.`8` = 8.asInstanceOf[typings.meteor.meteorNumbers.`8`]
+      inline def `8`: typings.meteor.meteorInts.`8` = 8.asInstanceOf[typings.meteor.meteorInts.`8`]
       
-      inline def `9`: typings.meteor.meteorNumbers.`9` = 9.asInstanceOf[typings.meteor.meteorNumbers.`9`]
+      inline def `9`: typings.meteor.meteorInts.`9` = 9.asInstanceOf[typings.meteor.meteorInts.`9`]
       
       inline def array: typings.meteor.meteorStrings.array = "array".asInstanceOf[typings.meteor.meteorStrings.array]
       
@@ -524,12 +819,16 @@ object mongoMod {
     @js.native
     trait CollectionStatic
       extends StObject
-         with Instantiable0[Collection[js.Object, js.Object]]
-         with Instantiable1[/* name */ String, Collection[js.Object, js.Object]]
+         with /**
+      * Constructor for a Collection
+      * @param name The name of the collection. If null, creates an unmanaged (unsynchronized) local collection.
+      */
+    Instantiable0[Collection[Document, js.Object]]
+         with Instantiable1[/* name */ String, Collection[Document, js.Object]]
          with Instantiable2[
               (/* name */ Null) | (/* name */ String), 
-              /* options */ IdGeneration[js.Object, js.Object], 
-              Collection[js.Object, js.Object]
+              /* options */ DefineMutationMethods[Document, js.Object], 
+              Collection[Document, js.Object]
             ]
     
     /* Rewritten from type alias, can be one of: 
@@ -541,7 +840,10 @@ object mongoMod {
     @js.native
     trait CursorStatic
       extends StObject
-         with Instantiable0[Cursor[js.Object, js.Object]]
+         with /**
+      * To create a cursor, use find. To access the documents in a cursor, use forEach, map, or fetch.
+      */
+    Instantiable0[Cursor[js.Object, js.Object]]
     
     type Dictionary[T] = StringDictionary[T]
     
@@ -557,16 +859,16 @@ object mongoMod {
       var $all: js.UndefOr[js.Array[T]] = js.undefined
       
       @JSName("$bitsAllClear")
-      var $bitsAllClear: js.UndefOr[js.Any] = js.undefined
+      var $bitsAllClear: js.UndefOr[Any] = js.undefined
       
       @JSName("$bitsAllSet")
-      var $bitsAllSet: js.UndefOr[js.Any] = js.undefined
+      var $bitsAllSet: js.UndefOr[Any] = js.undefined
       
       @JSName("$bitsAnyClear")
-      var $bitsAnyClear: js.UndefOr[js.Any] = js.undefined
+      var $bitsAnyClear: js.UndefOr[Any] = js.undefined
       
       @JSName("$bitsAnySet")
-      var $bitsAnySet: js.UndefOr[js.Any] = js.undefined
+      var $bitsAnySet: js.UndefOr[Any] = js.undefined
       
       @JSName("$comment")
       var $comment: js.UndefOr[String] = js.undefined
@@ -584,10 +886,10 @@ object mongoMod {
       var $expr: js.UndefOr[FieldExpression[T]] = js.undefined
       
       @JSName("$geoIntersects")
-      var $geoIntersects: js.UndefOr[js.Any] = js.undefined
+      var $geoIntersects: js.UndefOr[Any] = js.undefined
       
       @JSName("$geoWithin")
-      var $geoWithin: js.UndefOr[js.Any] = js.undefined
+      var $geoWithin: js.UndefOr[Any] = js.undefined
       
       @JSName("$gt")
       var $gt: js.UndefOr[T] = js.undefined
@@ -599,7 +901,7 @@ object mongoMod {
       var $in: js.UndefOr[js.Array[T]] = js.undefined
       
       @JSName("$jsonSchema")
-      var $jsonSchema: js.UndefOr[js.Any] = js.undefined
+      var $jsonSchema: js.UndefOr[Any] = js.undefined
       
       @JSName("$lt")
       var $lt: js.UndefOr[T] = js.undefined
@@ -614,10 +916,10 @@ object mongoMod {
       var $ne: js.UndefOr[T] = js.undefined
       
       @JSName("$near")
-      var $near: js.UndefOr[js.Any] = js.undefined
+      var $near: js.UndefOr[Any] = js.undefined
       
       @JSName("$nearSphere")
-      var $nearSphere: js.UndefOr[js.Any] = js.undefined
+      var $nearSphere: js.UndefOr[Any] = js.undefined
       
       @JSName("$nin")
       var $nin: js.UndefOr[js.Array[T]] = js.undefined
@@ -629,7 +931,7 @@ object mongoMod {
       var $options: js.UndefOr[String] = js.undefined
       
       @JSName("$regex")
-      var $regex: js.UndefOr[RegExp | String] = js.undefined
+      var $regex: js.UndefOr[js.RegExp | String] = js.undefined
       
       @JSName("$size")
       var $size: js.UndefOr[Double] = js.undefined
@@ -656,21 +958,21 @@ object mongoMod {
         
         inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
         
-        inline def set$allVarargs(value: T*): Self = StObject.set(x, "$all", js.Array(value :_*))
+        inline def set$allVarargs(value: T*): Self = StObject.set(x, "$all", js.Array(value*))
         
-        inline def set$bitsAllClear(value: js.Any): Self = StObject.set(x, "$bitsAllClear", value.asInstanceOf[js.Any])
+        inline def set$bitsAllClear(value: Any): Self = StObject.set(x, "$bitsAllClear", value.asInstanceOf[js.Any])
         
         inline def set$bitsAllClearUndefined: Self = StObject.set(x, "$bitsAllClear", js.undefined)
         
-        inline def set$bitsAllSet(value: js.Any): Self = StObject.set(x, "$bitsAllSet", value.asInstanceOf[js.Any])
+        inline def set$bitsAllSet(value: Any): Self = StObject.set(x, "$bitsAllSet", value.asInstanceOf[js.Any])
         
         inline def set$bitsAllSetUndefined: Self = StObject.set(x, "$bitsAllSet", js.undefined)
         
-        inline def set$bitsAnyClear(value: js.Any): Self = StObject.set(x, "$bitsAnyClear", value.asInstanceOf[js.Any])
+        inline def set$bitsAnyClear(value: Any): Self = StObject.set(x, "$bitsAnyClear", value.asInstanceOf[js.Any])
         
         inline def set$bitsAnyClearUndefined: Self = StObject.set(x, "$bitsAnyClear", js.undefined)
         
-        inline def set$bitsAnySet(value: js.Any): Self = StObject.set(x, "$bitsAnySet", value.asInstanceOf[js.Any])
+        inline def set$bitsAnySet(value: Any): Self = StObject.set(x, "$bitsAnySet", value.asInstanceOf[js.Any])
         
         inline def set$bitsAnySetUndefined: Self = StObject.set(x, "$bitsAnySet", js.undefined)
         
@@ -694,11 +996,11 @@ object mongoMod {
         
         inline def set$exprUndefined: Self = StObject.set(x, "$expr", js.undefined)
         
-        inline def set$geoIntersects(value: js.Any): Self = StObject.set(x, "$geoIntersects", value.asInstanceOf[js.Any])
+        inline def set$geoIntersects(value: Any): Self = StObject.set(x, "$geoIntersects", value.asInstanceOf[js.Any])
         
         inline def set$geoIntersectsUndefined: Self = StObject.set(x, "$geoIntersects", js.undefined)
         
-        inline def set$geoWithin(value: js.Any): Self = StObject.set(x, "$geoWithin", value.asInstanceOf[js.Any])
+        inline def set$geoWithin(value: Any): Self = StObject.set(x, "$geoWithin", value.asInstanceOf[js.Any])
         
         inline def set$geoWithinUndefined: Self = StObject.set(x, "$geoWithin", js.undefined)
         
@@ -714,9 +1016,9 @@ object mongoMod {
         
         inline def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
         
-        inline def set$inVarargs(value: T*): Self = StObject.set(x, "$in", js.Array(value :_*))
+        inline def set$inVarargs(value: T*): Self = StObject.set(x, "$in", js.Array(value*))
         
-        inline def set$jsonSchema(value: js.Any): Self = StObject.set(x, "$jsonSchema", value.asInstanceOf[js.Any])
+        inline def set$jsonSchema(value: Any): Self = StObject.set(x, "$jsonSchema", value.asInstanceOf[js.Any])
         
         inline def set$jsonSchemaUndefined: Self = StObject.set(x, "$jsonSchema", js.undefined)
         
@@ -732,15 +1034,15 @@ object mongoMod {
         
         inline def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
         
-        inline def set$modVarargs(value: Double*): Self = StObject.set(x, "$mod", js.Array(value :_*))
+        inline def set$modVarargs(value: Double*): Self = StObject.set(x, "$mod", js.Array(value*))
         
         inline def set$ne(value: T): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
         
         inline def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
         
-        inline def set$near(value: js.Any): Self = StObject.set(x, "$near", value.asInstanceOf[js.Any])
+        inline def set$near(value: Any): Self = StObject.set(x, "$near", value.asInstanceOf[js.Any])
         
-        inline def set$nearSphere(value: js.Any): Self = StObject.set(x, "$nearSphere", value.asInstanceOf[js.Any])
+        inline def set$nearSphere(value: Any): Self = StObject.set(x, "$nearSphere", value.asInstanceOf[js.Any])
         
         inline def set$nearSphereUndefined: Self = StObject.set(x, "$nearSphere", js.undefined)
         
@@ -750,7 +1052,7 @@ object mongoMod {
         
         inline def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
         
-        inline def set$ninVarargs(value: T*): Self = StObject.set(x, "$nin", js.Array(value :_*))
+        inline def set$ninVarargs(value: T*): Self = StObject.set(x, "$nin", js.Array(value*))
         
         inline def set$not(value: FieldExpression[T]): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
         
@@ -760,7 +1062,7 @@ object mongoMod {
         
         inline def set$optionsUndefined: Self = StObject.set(x, "$options", js.undefined)
         
-        inline def set$regex(value: RegExp | String): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
+        inline def set$regex(value: js.RegExp | String): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
         
         inline def set$regexUndefined: Self = StObject.set(x, "$regex", js.undefined)
         
@@ -776,7 +1078,7 @@ object mongoMod {
         
         inline def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
         
-        inline def set$typeVarargs(value: BsonType*): Self = StObject.set(x, "$type", js.Array(value :_*))
+        inline def set$typeVarargs(value: BsonType*): Self = StObject.set(x, "$type", js.Array(value*))
         
         inline def set$where(value: String | js.Function): Self = StObject.set(x, "$where", value.asInstanceOf[js.Any])
         
@@ -793,7 +1095,11 @@ object mongoMod {
     @js.native
     trait ObjectIDStatic
       extends StObject
-         with Instantiable0[ObjectID]
+         with /**
+      * Create a Mongo-style `ObjectID`.  If you don't specify a `hexString`, the `ObjectID` will generated randomly (not using MongoDB's ID construction rules).
+      * @param hexString The 24-character hexadecimal contents of the ObjectID to create
+      */
+    Instantiable0[ObjectID]
          with Instantiable1[/* hexString */ String, ObjectID]
     
     trait ObserveCallbacks[T] extends StObject {
@@ -920,16 +1226,25 @@ object mongoMod {
     
     trait Options[T] extends StObject {
       
+      /** Dictionary of fields to return or exclude. */
       var fields: js.UndefOr[FieldSpecifier] = js.undefined
       
+      /** (Server only) Overrides MongoDB's default index selection and query optimization process. Specify an index to force its use, either by its name or index specification. */
+      var hint: js.UndefOr[Hint] = js.undefined
+      
+      /** Maximum number of results to return */
       var limit: js.UndefOr[Double] = js.undefined
       
+      /** (Client only) Default `true`; pass `false` to disable reactivity */
       var reactive: js.UndefOr[Boolean] = js.undefined
       
+      /** Number of results to skip at the beginning */
       var skip: js.UndefOr[Double] = js.undefined
       
+      /** Sort order (default: natural order) */
       var sort: js.UndefOr[SortSpecifier] = js.undefined
       
+      /**  Overrides `transform` on the  [`Collection`](#collections) for this cursor.  Pass `null` to disable transformation. */
       var transform: js.UndefOr[Transform[T]] = js.undefined
     }
     object Options {
@@ -944,6 +1259,10 @@ object mongoMod {
         inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        
+        inline def setHint(value: Hint): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+        
+        inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
         
         inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
@@ -961,7 +1280,7 @@ object mongoMod {
         
         inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
         
-        inline def setTransform(value: T => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+        inline def setTransform(value: T => Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
         
         inline def setTransformNull: Self = StObject.set(x, "transform", null)
         
@@ -973,9 +1292,9 @@ object mongoMod {
     
     type PushModifier[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? meteor.meteor/mongo.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P] | undefined,   $position :number | undefined,   $slice :number | undefined,   $sort :1 | -1 | meteor.meteor/mongo.Mongo.Dictionary<number> | undefined}}
-      */ typings.meteor.meteorStrings.PushModifier & TopLevel[js.Any]
+      */ typings.meteor.meteorStrings.PushModifier & TopLevel[Any]
     
-    type Query[T] = typings.meteor.meteorStrings.Query & TopLevel[js.Any] & And & Dictionary[js.Any]
+    type Query[T] = typings.meteor.meteorStrings.Query & TopLevel[Any] & And[T] & Dictionary[Any]
     
     trait QueryWithModifiers[T] extends StObject {
       
@@ -983,37 +1302,37 @@ object mongoMod {
       var $comment: js.UndefOr[String] = js.undefined
       
       @JSName("$explain")
-      var $explain: js.UndefOr[js.Any] = js.undefined
+      var $explain: js.UndefOr[Any] = js.undefined
       
       @JSName("$hint")
-      var $hint: js.UndefOr[js.Any] = js.undefined
+      var $hint: js.UndefOr[Hint] = js.undefined
       
       @JSName("$max")
-      var $max: js.UndefOr[js.Any] = js.undefined
+      var $max: js.UndefOr[Any] = js.undefined
       
       @JSName("$maxScan")
-      var $maxScan: js.UndefOr[js.Any] = js.undefined
+      var $maxScan: js.UndefOr[Any] = js.undefined
       
       @JSName("$maxTimeMS")
-      var $maxTimeMS: js.UndefOr[js.Any] = js.undefined
+      var $maxTimeMS: js.UndefOr[Any] = js.undefined
       
       @JSName("$min")
-      var $min: js.UndefOr[js.Any] = js.undefined
+      var $min: js.UndefOr[Any] = js.undefined
       
       @JSName("$natural")
-      var $natural: js.UndefOr[js.Any] = js.undefined
+      var $natural: js.UndefOr[Any] = js.undefined
       
       @JSName("$orderby")
-      var $orderby: js.UndefOr[js.Any] = js.undefined
+      var $orderby: js.UndefOr[Any] = js.undefined
       
       @JSName("$query")
       var $query: Query[T]
       
       @JSName("$returnKey")
-      var $returnKey: js.UndefOr[js.Any] = js.undefined
+      var $returnKey: js.UndefOr[Any] = js.undefined
       
       @JSName("$showDiskLoc")
-      var $showDiskLoc: js.UndefOr[js.Any] = js.undefined
+      var $showDiskLoc: js.UndefOr[Any] = js.undefined
     }
     object QueryWithModifiers {
       
@@ -1028,45 +1347,45 @@ object mongoMod {
         
         inline def set$commentUndefined: Self = StObject.set(x, "$comment", js.undefined)
         
-        inline def set$explain(value: js.Any): Self = StObject.set(x, "$explain", value.asInstanceOf[js.Any])
+        inline def set$explain(value: Any): Self = StObject.set(x, "$explain", value.asInstanceOf[js.Any])
         
         inline def set$explainUndefined: Self = StObject.set(x, "$explain", js.undefined)
         
-        inline def set$hint(value: js.Any): Self = StObject.set(x, "$hint", value.asInstanceOf[js.Any])
+        inline def set$hint(value: Hint): Self = StObject.set(x, "$hint", value.asInstanceOf[js.Any])
         
         inline def set$hintUndefined: Self = StObject.set(x, "$hint", js.undefined)
         
-        inline def set$max(value: js.Any): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
+        inline def set$max(value: Any): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
         
-        inline def set$maxScan(value: js.Any): Self = StObject.set(x, "$maxScan", value.asInstanceOf[js.Any])
+        inline def set$maxScan(value: Any): Self = StObject.set(x, "$maxScan", value.asInstanceOf[js.Any])
         
         inline def set$maxScanUndefined: Self = StObject.set(x, "$maxScan", js.undefined)
         
-        inline def set$maxTimeMS(value: js.Any): Self = StObject.set(x, "$maxTimeMS", value.asInstanceOf[js.Any])
+        inline def set$maxTimeMS(value: Any): Self = StObject.set(x, "$maxTimeMS", value.asInstanceOf[js.Any])
         
         inline def set$maxTimeMSUndefined: Self = StObject.set(x, "$maxTimeMS", js.undefined)
         
         inline def set$maxUndefined: Self = StObject.set(x, "$max", js.undefined)
         
-        inline def set$min(value: js.Any): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
+        inline def set$min(value: Any): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
         
         inline def set$minUndefined: Self = StObject.set(x, "$min", js.undefined)
         
-        inline def set$natural(value: js.Any): Self = StObject.set(x, "$natural", value.asInstanceOf[js.Any])
+        inline def set$natural(value: Any): Self = StObject.set(x, "$natural", value.asInstanceOf[js.Any])
         
         inline def set$naturalUndefined: Self = StObject.set(x, "$natural", js.undefined)
         
-        inline def set$orderby(value: js.Any): Self = StObject.set(x, "$orderby", value.asInstanceOf[js.Any])
+        inline def set$orderby(value: Any): Self = StObject.set(x, "$orderby", value.asInstanceOf[js.Any])
         
         inline def set$orderbyUndefined: Self = StObject.set(x, "$orderby", js.undefined)
         
         inline def set$query(value: Query[T]): Self = StObject.set(x, "$query", value.asInstanceOf[js.Any])
         
-        inline def set$returnKey(value: js.Any): Self = StObject.set(x, "$returnKey", value.asInstanceOf[js.Any])
+        inline def set$returnKey(value: Any): Self = StObject.set(x, "$returnKey", value.asInstanceOf[js.Any])
         
         inline def set$returnKeyUndefined: Self = StObject.set(x, "$returnKey", js.undefined)
         
-        inline def set$showDiskLoc(value: js.Any): Self = StObject.set(x, "$showDiskLoc", value.asInstanceOf[js.Any])
+        inline def set$showDiskLoc(value: Any): Self = StObject.set(x, "$showDiskLoc", value.asInstanceOf[js.Any])
         
         inline def set$showDiskLocUndefined: Self = StObject.set(x, "$showDiskLoc", js.undefined)
       }
@@ -1076,7 +1395,7 @@ object mongoMod {
     
     trait SortSpecifier extends StObject
     
-    type Transform[T] = js.UndefOr[(js.Function1[/* doc */ T, js.Any]) | Null]
+    type Transform[T] = js.UndefOr[(js.Function1[/* doc */ T, Any]) | Null]
   }
   
   // Based on https://github.com/microsoft/TypeScript/issues/28791#issuecomment-443520161

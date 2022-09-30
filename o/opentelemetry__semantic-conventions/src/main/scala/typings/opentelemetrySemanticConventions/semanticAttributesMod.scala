@@ -1,22 +1,22 @@
 package typings.opentelemetrySemanticConventions
 
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`0`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`10`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`11`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`12`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`13`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`14`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`15`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`16`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`1`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`2`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`3`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`4`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`5`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`6`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`7`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`8`
-import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`9`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`0`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`10`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`11`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`12`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`13`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`14`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`15`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`16`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`1`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`2`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`3`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`4`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`5`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`6`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`7`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`8`
+import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`9`
 import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsStrings.`1Dot0`
 import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsStrings.`1Dot1`
 import typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsStrings.`2Dot0`
@@ -902,23 +902,23 @@ object semanticAttributesMod {
   
   /* Inlined { readonly OK :0,  readonly CANCELLED :1,  readonly UNKNOWN :2,  readonly INVALID_ARGUMENT :3,  readonly DEADLINE_EXCEEDED :4,  readonly NOT_FOUND :5,  readonly ALREADY_EXISTS :6,  readonly PERMISSION_DENIED :7,  readonly RESOURCE_EXHAUSTED :8,  readonly FAILED_PRECONDITION :9,  readonly ABORTED :10,  readonly OUT_OF_RANGE :11,  readonly UNIMPLEMENTED :12,  readonly INTERNAL :13,  readonly UNAVAILABLE :14,  readonly DATA_LOSS :15,  readonly UNAUTHENTICATED :16}[keyof { readonly OK :0,  readonly CANCELLED :1,  readonly UNKNOWN :2,  readonly INVALID_ARGUMENT :3,  readonly DEADLINE_EXCEEDED :4,  readonly NOT_FOUND :5,  readonly ALREADY_EXISTS :6,  readonly PERMISSION_DENIED :7,  readonly RESOURCE_EXHAUSTED :8,  readonly FAILED_PRECONDITION :9,  readonly ABORTED :10,  readonly OUT_OF_RANGE :11,  readonly UNIMPLEMENTED :12,  readonly INTERNAL :13,  readonly UNAVAILABLE :14,  readonly DATA_LOSS :15,  readonly UNAUTHENTICATED :16}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`16`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`3`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`13`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`2`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`4`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`0`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`7`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`5`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`15`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`12`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`11`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`6`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`10`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`9`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`8`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`1`
-    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsNumbers.`14`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`16`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`3`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`13`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`2`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`4`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`0`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`7`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`5`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`15`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`12`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`11`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`6`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`10`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`9`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`8`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`1`
+    - typings.opentelemetrySemanticConventions.opentelemetrySemanticConventionsInts.`14`
   */
   trait RpcGrpcStatusCodeValues extends StObject
   object RpcGrpcStatusCodeValues {

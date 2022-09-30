@@ -1,51 +1,42 @@
 package typings.catalog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HintSpecimenProps extends js.Object {
-  var directive: js.UndefOr[Boolean] = js.native
-  var important: js.UndefOr[Boolean] = js.native
-  var neutral: js.UndefOr[Boolean] = js.native
-  var warning: js.UndefOr[Boolean] = js.native
+trait HintSpecimenProps extends StObject {
+  
+  var directive: js.UndefOr[Boolean] = js.undefined
+  
+  var important: js.UndefOr[Boolean] = js.undefined
+  
+  var neutral: js.UndefOr[Boolean] = js.undefined
+  
+  var warning: js.UndefOr[Boolean] = js.undefined
 }
-
 object HintSpecimenProps {
-  @scala.inline
-  def apply(): HintSpecimenProps = {
+  
+  inline def apply(): HintSpecimenProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HintSpecimenProps]
   }
-  @scala.inline
-  implicit class HintSpecimenPropsOps[Self <: HintSpecimenProps] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setDirective(value: Boolean): Self = this.set("directive", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteDirective: Self = this.set("directive", js.undefined)
-    @scala.inline
-    def setImportant(value: Boolean): Self = this.set("important", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteImportant: Self = this.set("important", js.undefined)
-    @scala.inline
-    def setNeutral(value: Boolean): Self = this.set("neutral", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteNeutral: Self = this.set("neutral", js.undefined)
-    @scala.inline
-    def setWarning(value: Boolean): Self = this.set("warning", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
-  }
   
+  extension [Self <: HintSpecimenProps](x: Self) {
+    
+    inline def setDirective(value: Boolean): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
+    
+    inline def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
+    
+    inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
+    
+    inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
+    
+    inline def setNeutral(value: Boolean): Self = StObject.set(x, "neutral", value.asInstanceOf[js.Any])
+    
+    inline def setNeutralUndefined: Self = StObject.set(x, "neutral", js.undefined)
+    
+    inline def setWarning(value: Boolean): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+  }
 }
-

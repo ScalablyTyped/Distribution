@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.RequestHandlingType")
 @js.native
-class RequestHandlingType protected ()
+open class RequestHandlingType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.RequestHandlingType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

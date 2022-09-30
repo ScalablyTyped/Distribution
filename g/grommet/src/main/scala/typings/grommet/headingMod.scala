@@ -6,6 +6,8 @@ import typings.grommet.grommetStrings.`3`
 import typings.grommet.grommetStrings.`4`
 import typings.grommet.grommetStrings.`5`
 import typings.grommet.grommetStrings.`6`
+import typings.grommet.grommetStrings.`break-word`
+import typings.grommet.grommetStrings.anywhere
 import typings.grommet.grommetStrings.bold
 import typings.grommet.grommetStrings.bolder
 import typings.grommet.grommetStrings.color
@@ -64,10 +66,12 @@ object headingMod {
     var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
     var level: js.UndefOr[
-        `1` | `2` | `3` | `4` | `5` | `6` | typings.grommet.grommetNumbers.`1` | typings.grommet.grommetNumbers.`2` | typings.grommet.grommetNumbers.`3` | typings.grommet.grommetNumbers.`4` | typings.grommet.grommetNumbers.`5` | typings.grommet.grommetNumbers.`6`
+        `1` | `2` | `3` | `4` | `5` | `6` | typings.grommet.grommetInts.`1` | typings.grommet.grommetInts.`2` | typings.grommet.grommetInts.`3` | typings.grommet.grommetInts.`4` | typings.grommet.grommetInts.`5` | typings.grommet.grommetInts.`6`
       ] = js.undefined
     
     var margin: js.UndefOr[MarginType] = js.undefined
+    
+    var overflowWrap: js.UndefOr[normal | `break-word` | anywhere | String] = js.undefined
     
     var responsive: js.UndefOr[Boolean] = js.undefined
     
@@ -113,7 +117,7 @@ object headingMod {
       inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
       inline def setLevel(
-        value: `1` | `2` | `3` | `4` | `5` | `6` | typings.grommet.grommetNumbers.`1` | typings.grommet.grommetNumbers.`2` | typings.grommet.grommetNumbers.`3` | typings.grommet.grommetNumbers.`4` | typings.grommet.grommetNumbers.`5` | typings.grommet.grommetNumbers.`6`
+        value: `1` | `2` | `3` | `4` | `5` | `6` | typings.grommet.grommetInts.`1` | typings.grommet.grommetInts.`2` | typings.grommet.grommetInts.`3` | typings.grommet.grommetInts.`4` | typings.grommet.grommetInts.`5` | typings.grommet.grommetInts.`6`
       ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
@@ -121,6 +125,10 @@ object headingMod {
       inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      
+      inline def setOverflowWrap(value: normal | `break-word` | anywhere | String): Self = StObject.set(x, "overflowWrap", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowWrapUndefined: Self = StObject.set(x, "overflowWrap", js.undefined)
       
       inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       

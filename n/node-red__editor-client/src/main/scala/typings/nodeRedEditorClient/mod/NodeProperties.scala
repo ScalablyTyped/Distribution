@@ -1,7 +1,7 @@
 package typings.nodeRedEditorClient.mod
 
-import typings.nodeRedEditorClient.nodeRedEditorClientNumbers.`0`
-import typings.nodeRedEditorClient.nodeRedEditorClientNumbers.`1`
+import typings.nodeRedEditorClient.nodeRedEditorClientInts.`0`
+import typings.nodeRedEditorClient.nodeRedEditorClientInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

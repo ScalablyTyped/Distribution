@@ -316,6 +316,8 @@ object configServicePlaceholdersMod {
     
     var iotfleethub: js.UndefOr[typings.awsSdk.iotfleethubMod.ClientConfiguration] = js.native
     
+    var iotfleetwise: js.UndefOr[typings.awsSdk.iotfleetwiseMod.ClientConfiguration] = js.native
+    
     var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration] = js.native
     
     var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.ClientConfiguration] = js.native
@@ -423,6 +425,8 @@ object configServicePlaceholdersMod {
     var migrationhub: js.UndefOr[typings.awsSdk.migrationhubMod.ClientConfiguration] = js.native
     
     var migrationhubconfig: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ClientConfiguration] = js.native
+    
+    var migrationhuborchestrator: js.UndefOr[typings.awsSdk.migrationhuborchestratorMod.ClientConfiguration] = js.native
     
     var migrationhubrefactorspaces: js.UndefOr[typings.awsSdk.migrationhubrefactorspacesMod.ClientConfiguration] = js.native
     
@@ -951,6 +955,8 @@ object configServicePlaceholdersMod {
     
     var iotfleethub: js.UndefOr[typings.awsSdk.iotfleethubMod.apiVersion] = js.undefined
     
+    var iotfleetwise: js.UndefOr[typings.awsSdk.iotfleetwiseMod.apiVersion] = js.undefined
+    
     var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.apiVersion] = js.undefined
     
     var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.apiVersion] = js.undefined
@@ -1058,6 +1064,8 @@ object configServicePlaceholdersMod {
     var migrationhub: js.UndefOr[typings.awsSdk.migrationhubMod.apiVersion] = js.undefined
     
     var migrationhubconfig: js.UndefOr[typings.awsSdk.migrationhubconfigMod.apiVersion] = js.undefined
+    
+    var migrationhuborchestrator: js.UndefOr[typings.awsSdk.migrationhuborchestratorMod.apiVersion] = js.undefined
     
     var migrationhubrefactorspaces: js.UndefOr[typings.awsSdk.migrationhubrefactorspacesMod.apiVersion] = js.undefined
     
@@ -1896,6 +1904,10 @@ object configServicePlaceholdersMod {
       
       inline def setIotfleethubUndefined: Self = StObject.set(x, "iotfleethub", js.undefined)
       
+      inline def setIotfleetwise(value: typings.awsSdk.iotfleetwiseMod.apiVersion): Self = StObject.set(x, "iotfleetwise", value.asInstanceOf[js.Any])
+      
+      inline def setIotfleetwiseUndefined: Self = StObject.set(x, "iotfleetwise", js.undefined)
+      
       inline def setIotjobsdataplane(value: typings.awsSdk.iotjobsdataplaneMod.apiVersion): Self = StObject.set(x, "iotjobsdataplane", value.asInstanceOf[js.Any])
       
       inline def setIotjobsdataplaneUndefined: Self = StObject.set(x, "iotjobsdataplane", js.undefined)
@@ -2111,6 +2123,10 @@ object configServicePlaceholdersMod {
       inline def setMigrationhubconfig(value: typings.awsSdk.migrationhubconfigMod.apiVersion): Self = StObject.set(x, "migrationhubconfig", value.asInstanceOf[js.Any])
       
       inline def setMigrationhubconfigUndefined: Self = StObject.set(x, "migrationhubconfig", js.undefined)
+      
+      inline def setMigrationhuborchestrator(value: typings.awsSdk.migrationhuborchestratorMod.apiVersion): Self = StObject.set(x, "migrationhuborchestrator", value.asInstanceOf[js.Any])
+      
+      inline def setMigrationhuborchestratorUndefined: Self = StObject.set(x, "migrationhuborchestrator", js.undefined)
       
       inline def setMigrationhubrefactorspaces(value: typings.awsSdk.migrationhubrefactorspacesMod.apiVersion): Self = StObject.set(x, "migrationhubrefactorspaces", value.asInstanceOf[js.Any])
       

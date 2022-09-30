@@ -3,6 +3,7 @@ package typings.maximMazurokGapiClientDataflow
 import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.ProjectsResource
 import typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.dataflow
 import typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.v1b3
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object global {
       }
       
       /** Load Dataflow API v1b3 */
-      inline def load(name: dataflow, version: v1b3): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: dataflow, version: v1b3): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: dataflow, version: v1b3, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }

@@ -1,16 +1,16 @@
 package typings.amqp
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.amqp.amqpNumbers.`0`
-import typings.amqp.amqpNumbers.`1`
-import typings.amqp.amqpNumbers.`2`
-import typings.amqp.amqpNumbers.`3`
-import typings.amqp.amqpNumbers.`4`
-import typings.amqp.amqpNumbers.`5`
-import typings.amqp.amqpNumbers.`6`
-import typings.amqp.amqpNumbers.`7`
-import typings.amqp.amqpNumbers.`8`
-import typings.amqp.amqpNumbers.`9`
+import typings.amqp.amqpInts.`0`
+import typings.amqp.amqpInts.`1`
+import typings.amqp.amqpInts.`2`
+import typings.amqp.amqpInts.`3`
+import typings.amqp.amqpInts.`4`
+import typings.amqp.amqpInts.`5`
+import typings.amqp.amqpInts.`6`
+import typings.amqp.amqpInts.`7`
+import typings.amqp.amqpInts.`8`
+import typings.amqp.amqpInts.`9`
 import typings.amqp.amqpStrings.ack
 import typings.amqp.amqpStrings.direct
 import typings.amqp.amqpStrings.error

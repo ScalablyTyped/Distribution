@@ -1,15 +1,15 @@
 package typings.firebasePerformance
 
-import typings.firebasePerformance.firebasePerformanceNumbers.`0`
-import typings.firebasePerformance.firebasePerformanceNumbers.`1`
-import typings.firebasePerformance.firebasePerformanceNumbers.`2`
-import typings.firebasePerformance.firebasePerformanceNumbers.`3`
-import typings.firebasePerformance.firebasePerformanceNumbers.`4`
-import typings.firebasePerformance.firebasePerformanceNumbers.`5`
-import typings.firebasePerformance.firebasePerformanceNumbers.`6`
-import typings.firebasePerformance.firebasePerformanceNumbers.`7`
-import typings.firebasePerformance.firebasePerformanceNumbers.`8`
-import typings.firebasePerformance.firebasePerformanceNumbers.`9`
+import typings.firebasePerformance.firebasePerformanceInts.`0`
+import typings.firebasePerformance.firebasePerformanceInts.`1`
+import typings.firebasePerformance.firebasePerformanceInts.`2`
+import typings.firebasePerformance.firebasePerformanceInts.`3`
+import typings.firebasePerformance.firebasePerformanceInts.`4`
+import typings.firebasePerformance.firebasePerformanceInts.`5`
+import typings.firebasePerformance.firebasePerformanceInts.`6`
+import typings.firebasePerformance.firebasePerformanceInts.`7`
+import typings.firebasePerformance.firebasePerformanceInts.`8`
+import typings.firebasePerformance.firebasePerformanceInts.`9`
 import typings.firebasePerformance.perfMod.PerformanceController
 import typings.std.PerformanceEntry
 import org.scalablytyped.runtime.StObject
@@ -25,16 +25,16 @@ object networkRequestMod {
   inline def createNetworkRequestEntry(performanceController: PerformanceController, entry: PerformanceEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createNetworkRequestEntry")(performanceController.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebasePerformance.firebasePerformanceNumbers.`0`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`1`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`2`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`3`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`4`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`5`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`6`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`7`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`8`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`9`
+    - typings.firebasePerformance.firebasePerformanceInts.`0`
+    - typings.firebasePerformance.firebasePerformanceInts.`1`
+    - typings.firebasePerformance.firebasePerformanceInts.`2`
+    - typings.firebasePerformance.firebasePerformanceInts.`3`
+    - typings.firebasePerformance.firebasePerformanceInts.`4`
+    - typings.firebasePerformance.firebasePerformanceInts.`5`
+    - typings.firebasePerformance.firebasePerformanceInts.`6`
+    - typings.firebasePerformance.firebasePerformanceInts.`7`
+    - typings.firebasePerformance.firebasePerformanceInts.`8`
+    - typings.firebasePerformance.firebasePerformanceInts.`9`
   */
   trait HttpMethod extends StObject
   object HttpMethod {

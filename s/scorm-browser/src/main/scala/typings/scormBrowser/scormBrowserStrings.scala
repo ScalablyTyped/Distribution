@@ -17,10 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object scormBrowserStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def $LeftcurlybracketstringRightcurlybracket: $LeftcurlybracketstringRightcurlybracket = "${string}".asInstanceOf[$LeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
   sealed trait `0`
     extends StObject
        with CMIFeedbackTrueFalse
@@ -121,18 +117,6 @@ object scormBrowserStrings {
     extends StObject
        with Char
   inline def `9`: `9` = "9".asInstanceOf[`9`]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketApostropheexitApostrophe Verticalline ApostrophecontinueApostropheRightcurlybracketCommaDollarLeftcurlybracketApostrophemessageApostrophe Verticalline Apostropheno messageApostropheRightcurlybracket` extends StObject
-  inline def `DollarLeftcurlybracketApostropheexitApostrophe Verticalline ApostrophecontinueApostropheRightcurlybracketCommaDollarLeftcurlybracketApostrophemessageApostrophe Verticalline Apostropheno messageApostropheRightcurlybracket`: `DollarLeftcurlybracketApostropheexitApostrophe Verticalline ApostrophecontinueApostropheRightcurlybracketCommaDollarLeftcurlybracketApostrophemessageApostrophe Verticalline Apostropheno messageApostropheRightcurlybracket` = ("${'exit' | 'continue'},${'message' | 'no message'}").asInstanceOf[`DollarLeftcurlybracketApostropheexitApostrophe Verticalline ApostrophecontinueApostropheRightcurlybracketCommaDollarLeftcurlybracketApostrophemessageApostrophe Verticalline Apostropheno messageApostropheRightcurlybracket`]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket: DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket = "${string}:${string}:${string}".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
-  sealed trait Leftcurlybracket$LeftcurlybracketstringRightcurlybracketRightcurlybracket extends StObject
-  inline def Leftcurlybracket$LeftcurlybracketstringRightcurlybracketRightcurlybracket: Leftcurlybracket$LeftcurlybracketstringRightcurlybracketRightcurlybracket = "{${string}}".asInstanceOf[Leftcurlybracket$LeftcurlybracketstringRightcurlybracketRightcurlybracket]
   
   @js.native
   sealed trait _empty
@@ -256,50 +240,6 @@ object scormBrowserStrings {
   inline def cmiDotcoreDottotal_time: cmiDotcoreDottotal_time = "cmi.core.total_time".asInstanceOf[cmiDotcoreDottotal_time]
   
   @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotcorrect_responsesDot_count extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotcorrect_responsesDot_count: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotcorrect_responsesDot_count = "cmi.interactions.${n}.correct_responses._count".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotcorrect_responsesDot_count]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotid extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotid: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotid = "cmi.interactions.${n}.id".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotid]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotlatency extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotlatency: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotlatency = "cmi.interactions.${n}.latency".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotlatency]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotobjectivesDot_count extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotobjectivesDot_count: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotobjectivesDot_count = "cmi.interactions.${n}.objectives._count".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotobjectivesDot_count]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotresult extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotresult: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotresult = "cmi.interactions.${n}.result".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotresult]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotstudent_response extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotstudent_response: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotstudent_response = "cmi.interactions.${n}.student_response".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotstudent_response]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottime extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottime: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottime = "cmi.interactions.${n}.time".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottime]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottype extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottype: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottype = "cmi.interactions.${n}.type".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDottype]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotweighting extends StObject
-  inline def cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotweighting: cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotweighting = "cmi.interactions.${n}.weighting".asInstanceOf[cmiDotinteractionsDot$LeftcurlybracketnRightcurlybracketDotweighting]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotcorrect_responsesDotDollarLeftcurlybracketnRightcurlybracketDotpattern extends StObject
-  inline def cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotcorrect_responsesDotDollarLeftcurlybracketnRightcurlybracketDotpattern: cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotcorrect_responsesDotDollarLeftcurlybracketnRightcurlybracketDotpattern = "cmi.interactions.${n}.correct_responses.${n}.pattern".asInstanceOf[cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotcorrect_responsesDotDollarLeftcurlybracketnRightcurlybracketDotpattern]
-  
-  @js.native
-  sealed trait cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotobjectivesDotDollarLeftcurlybracketnRightcurlybracketDotid extends StObject
-  inline def cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotobjectivesDotDollarLeftcurlybracketnRightcurlybracketDotid: cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotobjectivesDotDollarLeftcurlybracketnRightcurlybracketDotid = "cmi.interactions.${n}.objectives.${n}.id".asInstanceOf[cmiDotinteractionsDotDollarLeftcurlybracketnRightcurlybracketDotobjectivesDotDollarLeftcurlybracketnRightcurlybracketDotid]
-  
-  @js.native
   sealed trait cmiDotinteractionsDot_children extends StObject
   inline def cmiDotinteractionsDot_children: cmiDotinteractionsDot_children = "cmi.interactions._children".asInstanceOf[cmiDotinteractionsDot_children]
   
@@ -310,30 +250,6 @@ object scormBrowserStrings {
   @js.native
   sealed trait cmiDotlaunch_data extends StObject
   inline def cmiDotlaunch_data: cmiDotlaunch_data = "cmi.launch_data".asInstanceOf[cmiDotlaunch_data]
-  
-  @js.native
-  sealed trait cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotid extends StObject
-  inline def cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotid: cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotid = "cmi.objectives.${n}.id".asInstanceOf[cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotid]
-  
-  @js.native
-  sealed trait cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDot_children extends StObject
-  inline def cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDot_children: cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDot_children = "cmi.objectives.${n}.score._children".asInstanceOf[cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDot_children]
-  
-  @js.native
-  sealed trait cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmax extends StObject
-  inline def cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmax: cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmax = "cmi.objectives.${n}.score.max".asInstanceOf[cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmax]
-  
-  @js.native
-  sealed trait cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmin extends StObject
-  inline def cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmin: cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmin = "cmi.objectives.${n}.score.min".asInstanceOf[cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotmin]
-  
-  @js.native
-  sealed trait cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotraw extends StObject
-  inline def cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotraw: cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotraw = "cmi.objectives.${n}.score.raw".asInstanceOf[cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotscoreDotraw]
-  
-  @js.native
-  sealed trait cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotstatus extends StObject
-  inline def cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotstatus: cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotstatus = "cmi.objectives.${n}.status".asInstanceOf[cmiDotobjectivesDot$LeftcurlybracketnRightcurlybracketDotstatus]
   
   @js.native
   sealed trait cmiDotobjectivesDot_children extends StObject

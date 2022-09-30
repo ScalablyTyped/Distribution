@@ -26,10 +26,26 @@ object NodeJS {
     def addListener_loaded(event: loaded, listener: js.Function): this.type = js.native
     
     /**
-      * A `String` representing Chrome's version string.
+      * A `string` representing Chrome's version string.
       *
       */
     val chrome: String = js.native
+    
+    /**
+      * A `string` (optional) representing a globally unique ID of the current
+      * JavaScript context. Each frame has its own JavaScript context. When
+      * contextIsolation is enabled, the isolated world also has a separate JavaScript
+      * context. This property is only available in the renderer process.
+      *
+      */
+    val contextId: js.UndefOr[String] = js.native
+    
+    /**
+      * A `boolean` that indicates whether the current renderer context has
+      * `contextIsolation` enabled. It is `undefined` in the main process.
+      *
+      */
+    val contextIsolated: Boolean = js.native
     
     /**
       * Causes the main thread of the current process crash.
@@ -37,21 +53,20 @@ object NodeJS {
     def crash(): Unit = js.native
     
     /**
-      * A `Boolean`. When app is started by being passed as parameter to the default
+      * A `boolean`. When app is started by being passed as parameter to the default
       * app, this property is `true` in the main process, otherwise it is `undefined`.
       *
       */
     val defaultApp: Boolean = js.native
     
     /**
-      * A `String` representing Electron's version string.
+      * A `string` representing Electron's version string.
       *
       */
     val electron: String = js.native
     
     /**
       * * `allocated` Integer - Size of all allocated objects in Kilobytes.
-      * * `marked` Integer - Size of all marked objects in Kilobytes.
       * * `total` Integer - Total allocated space in Kilobytes.
       * 
       * Returns an object with Blink memory information. It can be useful for debugging
@@ -81,7 +96,7 @@ object NodeJS {
       * * `heapSizeLimit` Integer
       * * `mallocedMemory` Integer
       * * `peakMallocedMemory` Integer
-      * * `doesZapGarbage` Boolean
+      * * `doesZapGarbage` boolean
       * 
       * Returns an object with V8 heap statistics. Note that all statistics are reported
       * in Kilobytes.
@@ -136,7 +151,7 @@ object NodeJS {
     def hang(): Unit = js.native
     
     /**
-      * A `Boolean`, `true` when the current renderer context is the "main" renderer
+      * A `boolean`, `true` when the current renderer context is the "main" renderer
       * frame. If you want the ID of the current frame you should use
       * `webFrame.routingId`.
       *
@@ -144,20 +159,20 @@ object NodeJS {
     val isMainFrame: Boolean = js.native
     
     /**
-      * A `Boolean`. For Mac App Store build, this property is `true`, for other builds
+      * A `boolean`. For Mac App Store build, this property is `true`, for other builds
       * it is `undefined`.
       *
       */
     val mas: Boolean = js.native
     
     /**
-      * A `Boolean` that controls ASAR support inside your application. Setting this to
+      * A `boolean` that controls ASAR support inside your application. Setting this to
       * `true` will disable the support for `asar` archives in Node's built-in modules.
       */
     var noAsar: Boolean = js.native
     
     /**
-      * A `Boolean` that controls whether or not deprecation warnings are printed to
+      * A `boolean` that controls whether or not deprecation warnings are printed to
       * `stderr`. Setting this to `true` will silence deprecation warnings. This
       * property is used instead of the `--no-deprecation` command line flag.
       */
@@ -167,9 +182,6 @@ object NodeJS {
     /**
       * Emitted when Electron has loaded its internal initialization script and is
       * beginning to load the web page or the main script.
-      * 
-      * It can be used by the preload script to add removed Node global symbols back to
-      * the global scope when node integration is turned off:
       */
     @JSName("on")
     def on_loaded(event: loaded, listener: js.Function): this.type = js.native
@@ -181,13 +193,13 @@ object NodeJS {
     def removeListener_loaded(event: loaded, listener: js.Function): this.type = js.native
     
     /**
-      * A `String` representing the path to the resources directory.
+      * A `string` representing the path to the resources directory.
       *
       */
     val resourcesPath: String = js.native
     
     /**
-      * A `Boolean`. When the renderer process is sandboxed, this property is `true`,
+      * A `boolean`. When the renderer process is sandboxed, this property is `true`,
       * otherwise it is `undefined`.
       *
       */
@@ -204,19 +216,19 @@ object NodeJS {
     /**
       * Indicates whether the snapshot has been created successfully.
       * 
-    Takes a V8 heap snapshot and saves it to `filePath`.
+      * Takes a V8 heap snapshot and saves it to `filePath`.
       */
     def takeHeapSnapshot(filePath: String): Boolean = js.native
     
     /**
-      * A `Boolean` that controls whether or not deprecation warnings will be thrown as
+      * A `boolean` that controls whether or not deprecation warnings will be thrown as
       * exceptions. Setting this to `true` will throw errors for deprecations. This
       * property is used instead of the `--throw-deprecation` command line flag.
       */
     var throwDeprecation: Boolean = js.native
     
     /**
-      * A `Boolean` that controls whether or not deprecations printed to `stderr`
+      * A `boolean` that controls whether or not deprecations printed to `stderr`
       * include their stack trace. Setting this to `true` will print stack traces for
       * deprecations. This property is instead of the `--trace-deprecation` command line
       * flag.
@@ -224,7 +236,7 @@ object NodeJS {
     var traceDeprecation: Boolean = js.native
     
     /**
-      * A `Boolean` that controls whether or not process warnings printed to `stderr`
+      * A `boolean` that controls whether or not process warnings printed to `stderr`
       * include their stack trace. Setting this to `true` will print stack traces for
       * process warnings (including deprecations). This property is instead of the
       * `--trace-warnings` command line flag.
@@ -232,17 +244,17 @@ object NodeJS {
     var traceProcessWarnings: Boolean = js.native
     
     /**
-      * A `String` representing the current process's type, can be:
+      * A `string` representing the current process's type, can be:
       * 
       * * `browser` - The main process
       * * `renderer` - A renderer process
-    * `worker` - In a web worker
+      * * `worker` - In a web worker
       *
       */
     val `type`: browser_ | renderer | worker = js.native
     
     /**
-      * A `Boolean`. If the app is running as a Windows Store app (appx), this property
+      * A `boolean`. If the app is running as a Windows Store app (appx), this property
       * is `true`, for otherwise it is `undefined`.
       *
       */

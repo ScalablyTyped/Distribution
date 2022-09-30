@@ -15,8 +15,16 @@ object serviceConfigurationMod {
     
     @JSImport("meteor/service-configuration", "ServiceConfiguration.configurations")
     @js.native
-    def configurations: Collection[Configuration, Configuration] = js.native
-    inline def configurations_=(x: Collection[Configuration, Configuration]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configurations")(x.asInstanceOf[js.Any])
+    def configurations: Collection[
+        typings.meteor.serviceConfigurationMod.Configuration, 
+        typings.meteor.serviceConfigurationMod.Configuration
+      ] = js.native
+    inline def configurations_=(
+      x: Collection[
+          typings.meteor.serviceConfigurationMod.Configuration, 
+          typings.meteor.serviceConfigurationMod.Configuration
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configurations")(x.asInstanceOf[js.Any])
   }
   
   trait Configuration extends StObject {
@@ -27,12 +35,12 @@ object serviceConfigurationMod {
   }
   object Configuration {
     
-    inline def apply(appId: String, secret: String): Configuration = {
+    inline def apply(appId: String, secret: String): typings.meteor.serviceConfigurationMod.Configuration = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Configuration]
+      __obj.asInstanceOf[typings.meteor.serviceConfigurationMod.Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    extension [Self <: typings.meteor.serviceConfigurationMod.Configuration](x: Self) {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

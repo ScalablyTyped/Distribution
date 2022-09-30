@@ -1,6 +1,6 @@
 package typings.syncRequest
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,9 +14,9 @@ object formDataMod {
   
   @JSImport("sync-request/lib/FormData", "FormData")
   @js.native
-  class FormData () extends StObject {
+  open class FormData () extends StObject {
     
-    /* private */ var _entries: js.Any = js.native
+    /* private */ var _entries: Any = js.native
     
     def append(key: String, value: String): Unit = js.native
     def append(key: String, value: String, fileName: String): Unit = js.native

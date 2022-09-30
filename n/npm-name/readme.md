@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-name
 
-Typings are for version 6.0.1
+Typings are for version 7.1.0
 
 ## Library description:
 Check whether a package or organization name is available on npm
@@ -10,10 +10,10 @@ Check whether a package or organization name is available on npm
 | ------------------ | :-------------: |
 | Full name          | npm-name |
 | Keywords           | name, available, package, organization, npm, pkg, app, check, taken |
-| # releases         | 7 |
-| # dependents       | 118 |
-| # downloads        | 1762313 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 342563.0 |
+| # stars            | 153.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/npm-name#readme)

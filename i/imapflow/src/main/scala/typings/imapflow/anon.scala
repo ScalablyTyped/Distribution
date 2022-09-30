@@ -66,12 +66,14 @@ object anon {
     
     var disposition: js.UndefOr[String] = js.undefined
     
+    var expectedSize: Double
+    
     var filename: js.UndefOr[String] = js.undefined
   }
   object Charset {
     
-    inline def apply(contentType: String): Charset = {
-      val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any])
+    inline def apply(contentType: String, expectedSize: Double): Charset = {
+      val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], expectedSize = expectedSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[Charset]
     }
     
@@ -86,6 +88,8 @@ object anon {
       inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
       
       inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
+      
+      inline def setExpectedSize(value: Double): Self = StObject.set(x, "expectedSize", value.asInstanceOf[js.Any])
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

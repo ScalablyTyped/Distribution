@@ -1,7 +1,7 @@
 
 # Scala.js typings for joi
 
-Typings are for version 17.6.0
+Typings are for version 17.6.2
 
 ## Library description:
 Object schema validation

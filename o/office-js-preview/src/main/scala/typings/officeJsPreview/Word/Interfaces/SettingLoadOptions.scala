@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a setting of the add-in.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 trait SettingLoadOptions extends StObject {
   
@@ -20,11 +19,10 @@ trait SettingLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the key of the setting. Read only.
+    * Gets the key of the setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var key: js.UndefOr[Boolean] = js.undefined
   
@@ -32,8 +30,7 @@ trait SettingLoadOptions extends StObject {
     * Gets or sets the value of the setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var value: js.UndefOr[Boolean] = js.undefined
 }

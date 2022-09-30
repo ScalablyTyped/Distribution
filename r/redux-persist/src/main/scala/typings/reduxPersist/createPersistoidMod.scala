@@ -12,5 +12,5 @@ object createPersistoidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(config: PersistConfig[js.Any, js.Any, js.Any, js.Any]): Persistoid = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Persistoid]
+  inline def default(config: PersistConfig[Any, Any, Any, Any]): Persistoid = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Persistoid]
 }

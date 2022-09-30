@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax/build/src/fallback", "protobufMinimal.BufferReader")
 @js.native
-class BufferReader protected ()
+open class BufferReader protected ()
   extends typings.protobufjs.minimalMod.BufferReader {
   /**
     * Constructs a new buffer reader instance.

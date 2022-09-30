@@ -70,7 +70,7 @@ trait Paragraph
     * @param listId Required. The ID of an existing list.
     * @param level Required. The level in the list.
     */
-  def attachToList(listId: Double, level: Double): List = js.native
+  def attachToList(listId: Double, level: Double): typings.officeJs.Word.List = js.native
   
   /**
     * Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content.
@@ -81,7 +81,7 @@ trait Paragraph
   def clear(): Unit = js.native
   
   /**
-    * Gets the collection of content control objects in the paragraph. Read-only.
+    * Gets the collection of content control objects in the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -109,12 +109,20 @@ trait Paragraph
   def detachFromList(): Unit = js.native
   
   /**
-    * Gets the collection of endnotes in the paragraph. Read-only.
+    * Gets the collection of endnotes in the paragraph.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
     */
   val endnotes: NoteItemCollection = js.native
+  
+  /**
+    * Gets the collection of fields in the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val fields: FieldCollection = js.native
   
   /**
     * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
@@ -125,7 +133,7 @@ trait Paragraph
   var firstLineIndent: Double = js.native
   
   /**
-    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -133,7 +141,7 @@ trait Paragraph
   val font: Font = js.native
   
   /**
-    * Gets the collection of footnotes in the paragraph. Read-only.
+    * Gets the collection of footnotes in the paragraph.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -144,7 +152,7 @@ trait Paragraph
     * Gets comments associated with the paragraph.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getComments(): CommentCollection = js.native
   
@@ -157,7 +165,7 @@ trait Paragraph
   def getHtml(): ClientResult[String] = js.native
   
   /**
-    * Gets the next paragraph. Throws an error if the paragraph is the last one.
+    * Gets the next paragraph. Throws an `ItemNotFound` error if the paragraph is the last one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -165,7 +173,7 @@ trait Paragraph
   def getNext(): Paragraph = js.native
   
   /**
-    * Gets the next paragraph. Returns a null object if the paragraph is the last one.
+    * Gets the next paragraph. If the paragraph is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -181,7 +189,7 @@ trait Paragraph
   def getOoxml(): ClientResult[String] = js.native
   
   /**
-    * Gets the previous paragraph. Throws an error if the paragraph is the first one.
+    * Gets the previous paragraph. Throws an `ItemNotFound` error if the paragraph is the first one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -189,7 +197,7 @@ trait Paragraph
   def getPrevious(): Paragraph = js.native
   
   /**
-    * Gets the previous paragraph. Returns a null object if the paragraph is the first one.
+    * Gets the previous paragraph. If the paragraph is the first one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -216,7 +224,7 @@ trait Paragraph
     * Gets reviewed text based on ChangeTrackingVersion selection.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     *
     * @param changeTrackingVersion Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
     */
@@ -237,7 +245,7 @@ trait Paragraph
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   
   /**
-    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -278,7 +286,13 @@ trait Paragraph
   def insertContentControl(): ContentControl = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
+  def insertFileFromBase64(
+    base64File: String,
+    insertLocation: typings.officeJs.Word.InsertLocation.end,
+    asNewParagraph: Boolean
+  ): Range = js.native
   /**
     * Inserts a document into the paragraph at the specified location.
     *
@@ -287,9 +301,16 @@ trait Paragraph
     *
     * @param base64File Required. The base64 encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: replace): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
+  def insertFileFromBase64(
+    base64File: String,
+    insertLocation: typings.officeJs.Word.InsertLocation.start,
+    asNewParagraph: Boolean
+  ): Range = js.native
   
   def insertHtml(html: String, insertLocation: Replace | Start | End): Range = js.native
   def insertHtml(html: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
@@ -320,7 +341,9 @@ trait Paragraph
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: typings.officeJs.Word.InsertLocation.start): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.end, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML into the paragraph at the specified location.
     *
@@ -329,9 +352,12 @@ trait Paragraph
     *
     * @param ooxml Required. The OOXML to be inserted in the paragraph.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: replace): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.start, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Before | After): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: typings.officeJs.Word.InsertLocation.after): Paragraph = js.native
@@ -389,7 +415,7 @@ trait Paragraph
   def insertText(text: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
   
   /**
-    * Indicates the paragraph is the last one inside its parent body. Read-only.
+    * Indicates the paragraph is the last one inside its parent body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -397,7 +423,7 @@ trait Paragraph
   val isLastParagraph: Boolean = js.native
   
   /**
-    * Checks whether the paragraph is a list item. Read-only.
+    * Checks whether the paragraph is a list item.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -437,15 +463,15 @@ trait Paragraph
   var lineUnitBefore: Double = js.native
   
   /**
-    * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list. Read-only.
+    * Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  val list: List = js.native
+  val list: typings.officeJs.Word.List = js.native
   
   /**
-    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
+    * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -453,7 +479,7 @@ trait Paragraph
   val listItem: ListItem = js.native
   
   /**
-    * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
+    * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -461,12 +487,12 @@ trait Paragraph
   val listItemOrNullObject: ListItem = js.native
   
   /**
-    * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
+    * Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  val listOrNullObject: List = js.native
+  val listOrNullObject: typings.officeJs.Word.List = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -488,7 +514,7 @@ trait Paragraph
   var outlineLevel: Double = js.native
   
   /**
-    * Gets the parent body of the paragraph. Read-only.
+    * Gets the parent body of the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -496,7 +522,7 @@ trait Paragraph
   val parentBody: Body = js.native
   
   /**
-    * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -504,7 +530,7 @@ trait Paragraph
   val parentContentControl: ContentControl = js.native
   
   /**
-    * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -512,7 +538,7 @@ trait Paragraph
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    * Gets the table that contains the paragraph. Throws an error if it is not contained in a table. Read-only.
+    * Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -520,7 +546,7 @@ trait Paragraph
   val parentTable: Table = js.native
   
   /**
-    * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -528,7 +554,7 @@ trait Paragraph
   val parentTableCell: TableCell = js.native
   
   /**
-    * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -536,7 +562,7 @@ trait Paragraph
   val parentTableCellOrNullObject: TableCell = js.native
   
   /**
-    * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
+    * Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -623,7 +649,7 @@ trait Paragraph
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  def startNewList(): List = js.native
+  def startNewList(): typings.officeJs.Word.List = js.native
   
   /**
     * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -642,7 +668,7 @@ trait Paragraph
   var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ Any = js.native
   
   /**
-    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -650,7 +676,7 @@ trait Paragraph
   val tableNestingLevel: Double = js.native
   
   /**
-    * Gets the text of the paragraph. Read-only.
+    * Gets the text of the paragraph.
     *
     * @remarks
     * [Api set: WordApi 1.1]

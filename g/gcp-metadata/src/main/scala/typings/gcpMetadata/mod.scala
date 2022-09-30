@@ -1,6 +1,7 @@
 package typings.gcpMetadata
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.gcpMetadata.gcpMetadataStrings.Google
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,12 +17,12 @@ object mod {
   @js.native
   val BASE_PATH: /* "/computeMetadata/v1" */ String = js.native
   
-  /* Inlined std.Readonly<{  Metadata-Flavor :string}> */
+  /* Inlined std.Readonly<{  Metadata-Flavor :'Google'}> */
   object HEADERS {
     
     @JSImport("gcp-metadata", "HEADERS.Metadata-Flavor")
     @js.native
-    val MetadataFlavor: String = js.native
+    val MetadataFlavor: Google = js.native
   }
   
   @JSImport("gcp-metadata", "HEADER_NAME")

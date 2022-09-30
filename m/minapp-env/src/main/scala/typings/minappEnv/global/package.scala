@@ -138,11 +138,11 @@ inline def parseInt(s: java.lang.String): Double = js.Dynamic.global.applyDynami
 inline def parseInt(s: java.lang.String, radix: Double): Double = (js.Dynamic.global.applyDynamic("parseInt")(s.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
 
 inline def setInterval(handler: js.Function1[/* repeated */ Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def setInterval(handler: Any, timeout: Any, args: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
-inline def setInterval(handler: Any, timeout: Unit, args: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+inline def setInterval(handler: Any, timeout: Any, args: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+inline def setInterval(handler: Any, timeout: Unit, args: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 
 inline def setTimeout(handler: js.Function1[/* repeated */ Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
-inline def setTimeout(handler: Any, timeout: Any, args: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
-inline def setTimeout(handler: Any, timeout: Unit, args: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+inline def setTimeout(handler: Any, timeout: Any, args: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+inline def setTimeout(handler: Any, timeout: Unit, args: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 
 inline def wx: Wx = js.Dynamic.global.selectDynamic("wx").asInstanceOf[Wx]

@@ -1,9 +1,9 @@
 package typings.formatjsEcma402Abstract
 
 import typings.formatjsEcma402Abstract.anon.CompactDisplay
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`-1`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`0`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`-1`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`1`
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatLocaleInternalData
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart
 import typings.std.Intl.PluralRules

@@ -1,6 +1,7 @@
 package typings.fullcalendarCore.mod.BASE_OPTION_REFINERS
 
 import typings.fullcalendarCore.mod.BASE_OPTION_REFINERS.^
+import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /* standard es5 */
 open class progressiveEventRendering ()
-  extends typings.fullcalendarCommon.mod.BASE_OPTION_REFINERS.progressiveEventRendering {
+  extends StObject
+     with Boolean {
   def this(value: Any) = this()
 }
 object progressiveEventRendering {
   
   /* standard es5 */
-  inline def apply[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("progressiveEventRendering")().asInstanceOf[Boolean]
-  inline def apply[T](value: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("progressiveEventRendering")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply[T](): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("progressiveEventRendering")().asInstanceOf[scala.Boolean]
+  inline def apply[T](value: T): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("progressiveEventRendering")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 }

@@ -80,19 +80,6 @@ object mod {
   
   type CodeToken = Token[Descriptors | Delimiters]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Comma
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Semicolon
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Colon
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Leftcurlybracket
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Rightcurlybracket
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.`[`
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.`]`
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Leftparenthesis
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Rightparenthesis
-    - typings.tokeyImportsParser.tokeyImportsParserStrings.Asterisk
-  */
-  trait Delimiters extends StObject
   object Delimiters {
     
     inline def Asterisk: typings.tokeyImportsParser.tokeyImportsParserStrings.Asterisk = "*".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Asterisk]
@@ -103,11 +90,11 @@ object mod {
     
     inline def Leftcurlybracket: typings.tokeyImportsParser.tokeyImportsParserStrings.Leftcurlybracket = "{".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Leftcurlybracket]
     
-    inline def Leftparenthesis: typings.tokeyImportsParser.tokeyImportsParserStrings.Leftparenthesis = "(".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Leftparenthesis]
+    inline def Leftparenthesis: String = String.asInstanceOf[String]
     
     inline def Rightcurlybracket: typings.tokeyImportsParser.tokeyImportsParserStrings.Rightcurlybracket = "}".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Rightcurlybracket]
     
-    inline def Rightparenthesis: typings.tokeyImportsParser.tokeyImportsParserStrings.Rightparenthesis = ")".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Rightparenthesis]
+    inline def Rightparenthesis: String = String.asInstanceOf[String]
     
     inline def Semicolon: typings.tokeyImportsParser.tokeyImportsParserStrings.Semicolon = ";".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.Semicolon]
     
@@ -115,6 +102,18 @@ object mod {
     
     inline def `]`: typings.tokeyImportsParser.tokeyImportsParserStrings.`]` = "]".asInstanceOf[typings.tokeyImportsParser.tokeyImportsParserStrings.`]`]
   }
+  /* Rewritten from type alias, can be one of: 
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.Comma
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.Semicolon
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.Colon
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.Leftcurlybracket
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.Rightcurlybracket
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.`[`
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.`]`
+    - java.lang.String
+    - typings.tokeyImportsParser.tokeyImportsParserStrings.Asterisk
+  */
+  type Delimiters = _Delimiters | String
   
   trait ImportValue extends StObject {
     
@@ -170,4 +169,6 @@ object mod {
       inline def setTaggedUndefined: Self = StObject.set(x, "tagged", js.undefined)
     }
   }
+  
+  trait _Delimiters extends StObject
 }

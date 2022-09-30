@@ -33,7 +33,7 @@ trait FlexProps extends StObject {
   
   var flex: js.UndefOr[grow | shrink | none] = js.undefined
   
-  var gap: js.UndefOr[UnsignedUpTo12] = js.undefined
+  var gap: js.UndefOr[UnsignedUpTo12 | typings.gestalt.anon.Column] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
@@ -84,7 +84,7 @@ object FlexProps {
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    inline def setGap(value: UnsignedUpTo12): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: UnsignedUpTo12 | typings.gestalt.anon.Column): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     

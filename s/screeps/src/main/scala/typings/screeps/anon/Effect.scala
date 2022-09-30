@@ -1,6 +1,6 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsNumbers.`50`
+import typings.screeps.screepsInts.`50`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,37 +13,37 @@ trait Effect extends StObject {
   var cooldown: `50`
   
   var effect: js.Tuple5[
-    typings.screeps.screepsNumbers.`1`, 
-    typings.screeps.screepsNumbers.`2`, 
-    typings.screeps.screepsNumbers.`4`, 
-    typings.screeps.screepsNumbers.`6`, 
-    typings.screeps.screepsNumbers.`8`
+    typings.screeps.screepsInts.`1`, 
+    typings.screeps.screepsInts.`2`, 
+    typings.screeps.screepsInts.`4`, 
+    typings.screeps.screepsInts.`6`, 
+    typings.screeps.screepsInts.`8`
   ]
   
   var level: js.Tuple5[
-    typings.screeps.screepsNumbers.`0`, 
-    typings.screeps.screepsNumbers.`2`, 
-    typings.screeps.screepsNumbers.`7`, 
-    typings.screeps.screepsNumbers.`14`, 
-    typings.screeps.screepsNumbers.`22`
+    typings.screeps.screepsInts.`0`, 
+    typings.screeps.screepsInts.`2`, 
+    typings.screeps.screepsInts.`7`, 
+    typings.screeps.screepsInts.`14`, 
+    typings.screeps.screepsInts.`22`
   ]
 }
 object Effect {
   
   inline def apply(
     effect: js.Tuple5[
-      typings.screeps.screepsNumbers.`1`, 
-      typings.screeps.screepsNumbers.`2`, 
-      typings.screeps.screepsNumbers.`4`, 
-      typings.screeps.screepsNumbers.`6`, 
-      typings.screeps.screepsNumbers.`8`
+      typings.screeps.screepsInts.`1`, 
+      typings.screeps.screepsInts.`2`, 
+      typings.screeps.screepsInts.`4`, 
+      typings.screeps.screepsInts.`6`, 
+      typings.screeps.screepsInts.`8`
     ],
     level: js.Tuple5[
-      typings.screeps.screepsNumbers.`0`, 
-      typings.screeps.screepsNumbers.`2`, 
-      typings.screeps.screepsNumbers.`7`, 
-      typings.screeps.screepsNumbers.`14`, 
-      typings.screeps.screepsNumbers.`22`
+      typings.screeps.screepsInts.`0`, 
+      typings.screeps.screepsInts.`2`, 
+      typings.screeps.screepsInts.`7`, 
+      typings.screeps.screepsInts.`14`, 
+      typings.screeps.screepsInts.`22`
     ]
   ): Effect = {
     val __obj = js.Dynamic.literal(className = "operator", cooldown = 50, effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
@@ -58,21 +58,21 @@ object Effect {
     
     inline def setEffect(
       value: js.Tuple5[
-          typings.screeps.screepsNumbers.`1`, 
-          typings.screeps.screepsNumbers.`2`, 
-          typings.screeps.screepsNumbers.`4`, 
-          typings.screeps.screepsNumbers.`6`, 
-          typings.screeps.screepsNumbers.`8`
+          typings.screeps.screepsInts.`1`, 
+          typings.screeps.screepsInts.`2`, 
+          typings.screeps.screepsInts.`4`, 
+          typings.screeps.screepsInts.`6`, 
+          typings.screeps.screepsInts.`8`
         ]
     ): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     inline def setLevel(
       value: js.Tuple5[
-          typings.screeps.screepsNumbers.`0`, 
-          typings.screeps.screepsNumbers.`2`, 
-          typings.screeps.screepsNumbers.`7`, 
-          typings.screeps.screepsNumbers.`14`, 
-          typings.screeps.screepsNumbers.`22`
+          typings.screeps.screepsInts.`0`, 
+          typings.screeps.screepsInts.`2`, 
+          typings.screeps.screepsInts.`7`, 
+          typings.screeps.screepsInts.`14`, 
+          typings.screeps.screepsInts.`22`
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }

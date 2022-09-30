@@ -27,7 +27,7 @@ trait AssignPrivateIpAddressesRequest extends StObject {
   var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId
   
   /**
-    * One or more IP addresses to be assigned as a secondary private IP address to the network interface. You can't specify this parameter when also specifying a number of secondary IP addresses. If you don't specify an IP address, Amazon EC2 automatically selects an IP address within the subnet range.
+    * The IP addresses to be assigned as a secondary private IP address to the network interface. You can't specify this parameter when also specifying a number of secondary IP addresses. If you don't specify an IP address, Amazon EC2 automatically selects an IP address within the subnet range.
     */
   var PrivateIpAddresses: js.UndefOr[PrivateIpAddressStringList] = js.undefined
   

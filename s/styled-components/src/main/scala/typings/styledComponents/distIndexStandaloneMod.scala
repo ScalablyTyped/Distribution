@@ -2,7 +2,7 @@ package typings.styledComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.styledComponents.anon.A
-import typings.styledComponents.anon.`168`
+import typings.styledComponents.anon.Attrs
 import typings.styledComponents.nativeDistTypesMod.WebTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,10 +12,10 @@ object distIndexStandaloneMod extends Shortcut {
   
   @JSImport("styled-components/native/dist/index-standalone", JSImport.Default)
   @js.native
-  val default: (js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A = js.native
+  val default: (js.Function1[/* tag */ WebTarget, Attrs[WebTarget]]) & A = js.native
   
-  type _To = (js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A
+  type _To = (js.Function1[/* tag */ WebTarget, Attrs[WebTarget]]) & A
   
   /* This means you don't have to write `default`, but can instead just say `distIndexStandaloneMod.foo` */
-  override def _to: (js.Function1[/* tag */ WebTarget, `168`[WebTarget]]) & A = default
+  override def _to: (js.Function1[/* tag */ WebTarget, Attrs[WebTarget]]) & A = default
 }

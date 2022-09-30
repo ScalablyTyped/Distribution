@@ -27,6 +27,26 @@ object playcanvasStrings {
   inline def `1Dot56`: `1Dot56` = "1.56".asInstanceOf[`1Dot56`]
   
   @js.native
+  sealed trait `1Dot57` extends StObject
+  inline def `1Dot57`: `1Dot57` = "1.57".asInstanceOf[`1Dot57`]
+  
+  @js.native
+  sealed trait `1d` extends StObject
+  inline def `1d`: `1d` = "1d".asInstanceOf[`1d`]
+  
+  @js.native
+  sealed trait `2d` extends StObject
+  inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
+  
+  @js.native
+  sealed trait `2d-array` extends StObject
+  inline def `2d-array`: `2d-array` = "2d-array".asInstanceOf[`2d-array`]
+  
+  @js.native
+  sealed trait `3d` extends StObject
+  inline def `3d`: `3d` = "3d".asInstanceOf[`3d`]
+  
+  @js.native
   sealed trait ATTR extends StObject
   inline def ATTR: ATTR = "ATTR".asInstanceOf[ATTR]
   
@@ -75,6 +95,14 @@ object playcanvasStrings {
   inline def css: css = "css".asInstanceOf[css]
   
   @js.native
+  sealed trait cube extends StObject
+  inline def cube: cube = "cube".asInstanceOf[cube]
+  
+  @js.native
+  sealed trait `cube-array` extends StObject
+  inline def `cube-array`: `cube-array` = "cube-array".asInstanceOf[`cube-array`]
+  
+  @js.native
   sealed trait cubemap extends StObject
   inline def cubemap: cubemap = "cubemap".asInstanceOf[cubemap]
   
@@ -83,8 +111,16 @@ object playcanvasStrings {
   inline def curve: curve = "curve".asInstanceOf[curve]
   
   @js.native
+  sealed trait depth extends StObject
+  inline def depth: depth = "depth".asInstanceOf[depth]
+  
+  @js.native
   sealed trait entity extends StObject
   inline def entity: entity = "entity".asInstanceOf[entity]
+  
+  @js.native
+  sealed trait float extends StObject
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait font extends StObject
@@ -233,6 +269,10 @@ object playcanvasStrings {
   @js.native
   sealed trait texture extends StObject
   inline def texture: texture = "texture".asInstanceOf[texture]
+  
+  @js.native
+  sealed trait `unfilterable-float` extends StObject
+  inline def `unfilterable-float`: `unfilterable-float` = "unfilterable-float".asInstanceOf[`unfilterable-float`]
   
   @js.native
   sealed trait vec2 extends StObject

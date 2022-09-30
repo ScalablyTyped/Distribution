@@ -379,7 +379,7 @@ open class Vec3 () extends StObject {
   /**
     * Subtracts a 3-dimensional vector from another in place.
     *
-    * @param {Vec3} rhs - The vector to add to the specified vector.
+    * @param {Vec3} rhs - The vector to subtract from the specified vector.
     * @returns {Vec3} Self for chaining.
     * @example
     * var a = new pc.Vec3(10, 10, 10);
@@ -395,8 +395,8 @@ open class Vec3 () extends StObject {
   /**
     * Subtracts two 3-dimensional vectors from one another and returns the result.
     *
-    * @param {Vec3} lhs - The first vector operand for the addition.
-    * @param {Vec3} rhs - The second vector operand for the addition.
+    * @param {Vec3} lhs - The first vector operand for the subtraction.
+    * @param {Vec3} rhs - The second vector operand for the subtraction.
     * @returns {Vec3} Self for chaining.
     * @example
     * var a = new pc.Vec3(10, 10, 10);

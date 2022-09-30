@@ -13,6 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.1.0: deleted
   * In version 6.0.0: deprecated
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -24,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IDecimalAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IFloatAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.ICurrencyAttributeType because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.ICurrencyAttributeType because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CurrencyAttributeType")
 @js.native
-class CurrencyAttributeType protected () extends FloatAttributeTypeBase {
+open class CurrencyAttributeType protected () extends FloatAttributeTypeBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -47,7 +48,7 @@ class CurrencyAttributeType protected () extends FloatAttributeTypeBase {
 }
 object CurrencyAttributeType {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CurrencyAttributeType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -74,6 +75,9 @@ object CurrencyAttributeType {
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
     * The new CurrencyAttributeType will be automatically stored in the 'type' property
     * of the parent Attribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.0.5
     */
   /* static member */
   inline def createInAttributeUnderType(container: Attribute): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
@@ -84,7 +88,7 @@ object CurrencyAttributeType {
     * of the parent EntityKeyPart element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.9.0 to 9.0.5
     */
   /* static member */
   inline def createInEntityKeyPartUnderType(container: EntityKeyPart): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
@@ -95,19 +99,19 @@ object CurrencyAttributeType {
     * of the parent rest.ODataKeyPart element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.9.0 to 9.0.5
     */
   /* static member */
   inline def createInODataKeyPartUnderType(container: ODataKeyPart): CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[CurrencyAttributeType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CurrencyAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CurrencyAttributeType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CurrencyAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-some" : "5.0.0"
+      "p-some" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-some" : "5.0.0"
+      "p-some" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

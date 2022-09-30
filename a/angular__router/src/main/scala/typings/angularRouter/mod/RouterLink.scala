@@ -8,7 +8,6 @@ import typings.angularCore.mod.SimpleChanges
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularRouter.angularRouterBooleans.`true`
-import typings.angularRouter.angularRouterStrings.`ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]`
 import typings.angularRouter.anon.Attribute
 import typings.angularRouter.anon.Fragment
 import org.scalablytyped.runtime.StObject
@@ -169,27 +168,9 @@ object RouterLink {
   
   @JSImport("@angular/router", "RouterLink.\u0275dir")
   @js.native
-  def ɵdir: ɵɵDirectiveDeclaration[
-    RouterLink, 
-    `ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]`, 
-    scala.Nothing, 
-    Fragment, 
-    js.Object, 
-    scala.Nothing, 
-    scala.Nothing, 
-    `true`
-  ] = js.native
+  def ɵdir: ɵɵDirectiveDeclaration[RouterLink, String, scala.Nothing, Fragment, js.Object, scala.Nothing, scala.Nothing, `true`] = js.native
   inline def ɵdir_=(
-    x: ɵɵDirectiveDeclaration[
-      RouterLink, 
-      `ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]`, 
-      scala.Nothing, 
-      Fragment, 
-      js.Object, 
-      scala.Nothing, 
-      scala.Nothing, 
-      `true`
-    ]
+    x: ɵɵDirectiveDeclaration[RouterLink, String, scala.Nothing, Fragment, js.Object, scala.Nothing, scala.Nothing, `true`]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/router", "RouterLink.\u0275fac")

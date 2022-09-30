@@ -1,31 +1,48 @@
 package typings.jestTypes.anon
 
-import typings.jestTypes.circusMod.Exception
-import typings.jestTypes.circusMod.SyncEvent
-import typings.jestTypes.jestTypesStrings.error_
+import typings.jestTypes.jestTypesStrings.hook_failure
+import typings.jestTypes.mod.AsyncEvent
+import typings.jestTypes.mod.Exception
+import typings.jestTypes.mod.TestEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Error
   extends StObject
-     with SyncEvent {
+     with AsyncEvent {
   
-  var error: Exception
+  var describeBlock: js.UndefOr[typings.jestTypes.mod.DescribeBlock] = js.undefined
   
-  var name: error_
+  var error: String | Exception
+  
+  var hook: typings.jestTypes.mod.Hook
+  
+  var name: hook_failure
+  
+  var test: js.UndefOr[TestEntry] = js.undefined
 }
 object Error {
   
-  inline def apply(error: Exception): Error = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = "error")
+  inline def apply(error: String | Exception, hook: typings.jestTypes.mod.Hook): Error = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], name = "hook_failure")
     __obj.asInstanceOf[Error]
   }
   
   extension [Self <: Error](x: Self) {
     
-    inline def setError(value: Exception): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setDescribeBlock(value: typings.jestTypes.mod.DescribeBlock): Self = StObject.set(x, "describeBlock", value.asInstanceOf[js.Any])
     
-    inline def setName(value: error_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setDescribeBlockUndefined: Self = StObject.set(x, "describeBlock", js.undefined)
+    
+    inline def setError(value: String | Exception): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setHook(value: typings.jestTypes.mod.Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: hook_failure): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

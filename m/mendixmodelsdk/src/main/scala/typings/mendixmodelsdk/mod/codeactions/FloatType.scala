@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.FloatType")
 @js.native
-class FloatType protected ()
+open class FloatType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.FloatType {
   def this(
     model: AbstractModel,

@@ -17,7 +17,7 @@ trait DeleteSecurityGroupRequest extends StObject {
   var GroupId: js.UndefOr[SecurityGroupId] = js.undefined
   
   /**
-    * [EC2-Classic, default VPC] The name of the security group. You can specify either the security group name or the security group ID.
+    * [EC2-Classic, default VPC] The name of the security group. You can specify either the security group name or the security group ID. For security groups in a nondefault VPC, you must specify the security group ID.
     */
   var GroupName: js.UndefOr[SecurityGroupName] = js.undefined
 }

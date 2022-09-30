@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.WinJS.Binding.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ trait ToolBar extends StObject {
   /**
     * Gets or sets the Binding List of ICommand for the ToolBar.
     **/
-  var data: List[ICommand] = js.native
+  var data: typings.winjs.WinJS.Binding.List[ICommand] = js.native
   
   /**
     * Raises an event of the specified type and with additional properties.

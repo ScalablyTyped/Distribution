@@ -25,6 +25,6 @@ object IPublishResponse {
     
     inline def setMessageIdsUndefined: Self = StObject.set(x, "messageIds", js.undefined)
     
-    inline def setMessageIdsVarargs(value: String*): Self = StObject.set(x, "messageIds", js.Array(value :_*))
+    inline def setMessageIdsVarargs(value: String*): Self = StObject.set(x, "messageIds", js.Array(value*))
   }
 }

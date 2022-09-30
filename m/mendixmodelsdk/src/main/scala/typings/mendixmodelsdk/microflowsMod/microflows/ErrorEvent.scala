@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/error-event relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorEvent")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ErrorEvent")
 @js.native
-class ErrorEvent protected () extends MicroflowObject {
+open class ErrorEvent protected () extends MicroflowObject {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class ErrorEvent protected () extends MicroflowObject {
 }
 object ErrorEvent {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorEvent")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ErrorEvent")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object ErrorEvent {
   inline def createIn(container: MicroflowObjectCollection): ErrorEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ErrorEvent]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorEvent.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ErrorEvent.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorEvent.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ErrorEvent.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

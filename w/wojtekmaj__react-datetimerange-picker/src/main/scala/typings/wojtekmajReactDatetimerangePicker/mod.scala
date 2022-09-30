@@ -67,6 +67,8 @@ object mod {
     
     var formatYear: js.UndefOr[FormatterCallback] = js.undefined
     
+    var goToRangeStartOnSelect: js.UndefOr[Boolean] = js.undefined
+    
     var inputRef: js.UndefOr[
         (js.Function1[/* ref */ HTMLInputElement | Null, Unit]) | RefObject[HTMLInputElement] | (MutableRefObject[HTMLInputElement | Null])
       ] = js.undefined
@@ -211,6 +213,10 @@ object mod {
       inline def setFormatYear(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction2(value))
       
       inline def setFormatYearUndefined: Self = StObject.set(x, "formatYear", js.undefined)
+      
+      inline def setGoToRangeStartOnSelect(value: Boolean): Self = StObject.set(x, "goToRangeStartOnSelect", value.asInstanceOf[js.Any])
+      
+      inline def setGoToRangeStartOnSelectUndefined: Self = StObject.set(x, "goToRangeStartOnSelect", js.undefined)
       
       inline def setInputRef(
         value: (js.Function1[/* ref */ HTMLInputElement | Null, Unit]) | RefObject[HTMLInputElement] | (MutableRefObject[HTMLInputElement | Null])

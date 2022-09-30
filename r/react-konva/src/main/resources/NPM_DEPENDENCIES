@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-konva" : "17.0.0-0"
+      "react-konva" : "18.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-konva" : "17.0.0-0"
+      "react-konva" : "18.2.2"
     }
   ],
   "compile-devDependencies" : [

@@ -41,12 +41,12 @@ trait WebviewTagPrintOptions extends StObject {
   var duplexMode: js.UndefOr[simplex | shortEdge | longEdge] = js.undefined
   
   /**
-    * String to be printed as page footer.
+    * string to be printed as page footer.
     */
   var footer: js.UndefOr[String] = js.undefined
   
   /**
-    * String to be printed as page header.
+    * string to be printed as page header.
     */
   var header: js.UndefOr[String] = js.undefined
   
@@ -64,7 +64,7 @@ trait WebviewTagPrintOptions extends StObject {
   
   /**
     * Specify page size of the printed document. Can be `A3`, `A4`, `A5`, `Legal`,
-    * `Letter`, `Tabloid` or an Object containing `height`.
+    * `Letter`, `Tabloid` or an Object containing `height` in microns.
     */
   var pageSize: js.UndefOr[String | Size] = js.undefined
   
@@ -141,7 +141,7 @@ object WebviewTagPrintOptions {
     
     inline def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
     
-    inline def setPageRangesVarargs(value: PageRanges*): Self = StObject.set(x, "pageRanges", js.Array(value :_*))
+    inline def setPageRangesVarargs(value: PageRanges*): Self = StObject.set(x, "pageRanges", js.Array(value*))
     
     inline def setPageSize(value: String | Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

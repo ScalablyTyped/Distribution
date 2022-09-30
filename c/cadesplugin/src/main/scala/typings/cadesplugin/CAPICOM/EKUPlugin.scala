@@ -1,8 +1,8 @@
 package typings.cadesplugin.CAPICOM
 
-import typings.cadesplugin.cadespluginNumbers.`0`
-import typings.cadesplugin.cadespluginNumbers.`2`
-import typings.cadesplugin.cadespluginNumbers.`5`
+import typings.cadesplugin.cadespluginInts.`0`
+import typings.cadesplugin.cadespluginInts.`2`
+import typings.cadesplugin.cadespluginInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,7 +9,7 @@ import typings.geojson.mod.Polygon
 import typings.leaflet.mod.Canvas_
 import typings.leaflet.mod.Class
 import typings.leaflet.mod.Evented
-import typings.leaflet.mod.GeoJSON_
+import typings.leaflet.mod.GeoJSON__
 import typings.leaflet.mod.ImageOverlayOptions
 import typings.leaflet.mod.ImageOverlay_
 import typings.leaflet.mod.LatLngBoundsExpression
@@ -27,7 +27,6 @@ import typings.leaflet.mod.PopupOptions
 import typings.leaflet.mod.SVG_
 import typings.leaflet.mod.TileLayerOptions
 import typings.leaflet.mod.TileLayer_
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +46,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.BasemapLayer")
     @js.native
-    class BasemapLayer_ protected () extends TileLayer_ {
+    open class BasemapLayer_ protected () extends TileLayer_ {
       def this(key: Basemaps) = this()
       def this(key: Basemaps, options: BasemapLayerOptions) = this()
     }
@@ -62,7 +61,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.DynamicMapLayer")
     @js.native
-    class DynamicMapLayer_ protected ()
+    open class DynamicMapLayer_ protected ()
       extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.RasterLayer {
       def this(options: DynamicMapLayerOptions) = this()
       
@@ -84,22 +83,22 @@ object leafletAugmentingMod {
       /**
         * Returns a JSON object representing the modified layer symbology being requested from the map service.
         */
-      def getDynamicLayers(): js.Any = js.native
+      def getDynamicLayers(): Any = js.native
       
       /**
         * Returns the current layer definition(s) being used for rendering.
         */
-      def getLayerDefs(): js.Any = js.native
+      def getLayerDefs(): Any = js.native
       
       /**
         * Returns the array of visible layers specified in the layer constructor.
         */
-      def getLayers(): js.Array[js.Any] = js.native
+      def getLayers(): js.Array[Any] = js.native
       
       /**
         * Returns the current time options being used for rendering.
         */
-      def getTimeOptions(): js.Any = js.native
+      def getTimeOptions(): Any = js.native
       
       /**
         * Returns a new `L.esri.services.IdentifyFeatures` object that can be used to identify features on this
@@ -116,23 +115,23 @@ object leafletAugmentingMod {
         * Used to insert raw dynamicLayers JSON in situations where you'd like to modify layer symbology defined in
         * the service itself.
         */
-      def setDynamicLayers(layers: js.Any): this.type = js.native
+      def setDynamicLayers(layers: Any): this.type = js.native
       
       /**
         * Redraws the layer with the new layer definitions. Corresponds to the layerDefs option on the export API.
         */
-      def setLayerDefs(layerDefs: js.Any): this.type = js.native
+      def setLayerDefs(layerDefs: Any): this.type = js.native
       
       /**
         * Redraws the layer to show the passed array of layer ids.
         */
-      def setLayers(layers: js.Array[js.Any]): this.type = js.native
+      def setLayers(layers: js.Array[Any]): this.type = js.native
       
       /**
         * Sets the current time options being used to render the layer. Corresponds to the layerTimeOptions option
         * on the export API.
         */
-      def setTimeOptions(timeOptions: js.Any): this.type = js.native
+      def setTimeOptions(timeOptions: Any): this.type = js.native
     }
     
     /**
@@ -142,7 +141,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.FeatureLayerService")
     @js.native
-    class FeatureLayerService_ protected ()
+    open class FeatureLayerService_ protected ()
       extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service {
       def this(options: FeatureLayerServiceOptions) = this()
       
@@ -156,10 +155,10 @@ object leafletAugmentingMod {
         * the metadata of your service under capabilities.
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
-      def addFeature(feature: js.Any): this.type = js.native
-      def addFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
-      def addFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
-      def addFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def addFeature(feature: Any): this.type = js.native
+      def addFeature(feature: Any, callback: Unit, context: Any): this.type = js.native
+      def addFeature(feature: Any, callback: ResponseCallbackHandler): this.type = js.native
+      def addFeature(feature: Any, callback: ResponseCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Remove the feature with the provided id from the feature layer. This will also remove the feature from
@@ -172,13 +171,13 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeature(id: String): this.type = js.native
-      def deleteFeature(id: String, callback: Unit, context: js.Any): this.type = js.native
+      def deleteFeature(id: String, callback: Unit, context: Any): this.type = js.native
       def deleteFeature(id: String, callback: ResponseCallbackHandler): this.type = js.native
-      def deleteFeature(id: String, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def deleteFeature(id: String, callback: ResponseCallbackHandler, context: Any): this.type = js.native
       def deleteFeature(id: Double): this.type = js.native
-      def deleteFeature(id: Double, callback: Unit, context: js.Any): this.type = js.native
+      def deleteFeature(id: Double, callback: Unit, context: Any): this.type = js.native
       def deleteFeature(id: Double, callback: ResponseCallbackHandler): this.type = js.native
-      def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Removes an array of features with the provided ids from the feature layer. This will also remove the
@@ -191,9 +190,9 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeatures(ids: js.Array[Double | String]): this.type = js.native
-      def deleteFeatures(ids: js.Array[Double | String], callback: Unit, context: js.Any): this.type = js.native
+      def deleteFeatures(ids: js.Array[Double | String], callback: Unit, context: Any): this.type = js.native
       def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler): this.type = js.native
-      def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Returns a new `L.esri.Query` object that can be used to query this layer.
@@ -210,10 +209,10 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
-      def updateFeature(feature: js.Any): this.type = js.native
-      def updateFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
-      def updateFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
-      def updateFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def updateFeature(feature: Any): this.type = js.native
+      def updateFeature(feature: Any, callback: Unit, context: Any): this.type = js.native
+      def updateFeature(feature: Any, callback: ResponseCallbackHandler): this.type = js.native
+      def updateFeature(feature: Any, callback: ResponseCallbackHandler, context: Any): this.type = js.native
     }
     
     // TODO: VirtualGrid extends support
@@ -241,7 +240,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.FeatureLayer")
     @js.native
-    class FeatureLayer_ protected () extends Layer {
+    open class FeatureLayer_ protected () extends Layer {
       def this(options: FeatureLayerOptions) = this()
       
       /**
@@ -254,10 +253,10 @@ object leafletAugmentingMod {
         * the metadata of your service under capabilities.
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
-      def addFeature(feature: js.Any): this.type = js.native
-      def addFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
-      def addFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
-      def addFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def addFeature(feature: Any): this.type = js.native
+      def addFeature(feature: Any, callback: Unit, context: Any): this.type = js.native
+      def addFeature(feature: Any, callback: ResponseCallbackHandler): this.type = js.native
+      def addFeature(feature: Any, callback: ResponseCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Authenticates this service with a new token and runs any pending requests that required a token.
@@ -275,13 +274,13 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeature(id: String): this.type = js.native
-      def deleteFeature(id: String, callback: Unit, context: js.Any): this.type = js.native
+      def deleteFeature(id: String, callback: Unit, context: Any): this.type = js.native
       def deleteFeature(id: String, callback: ResponseCallbackHandler): this.type = js.native
-      def deleteFeature(id: String, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def deleteFeature(id: String, callback: ResponseCallbackHandler, context: Any): this.type = js.native
       def deleteFeature(id: Double): this.type = js.native
-      def deleteFeature(id: Double, callback: Unit, context: js.Any): this.type = js.native
+      def deleteFeature(id: Double, callback: Unit, context: Any): this.type = js.native
       def deleteFeature(id: Double, callback: ResponseCallbackHandler): this.type = js.native
-      def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def deleteFeature(id: Double, callback: ResponseCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Removes an array of features with the provided ids from the feature layer. This will also remove the
@@ -294,15 +293,15 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       def deleteFeatures(ids: js.Array[Double | String]): this.type = js.native
-      def deleteFeatures(ids: js.Array[Double | String], callback: Unit, context: js.Any): this.type = js.native
+      def deleteFeatures(ids: js.Array[Double | String], callback: Unit, context: Any): this.type = js.native
       def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler): this.type = js.native
-      def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def deleteFeatures(ids: js.Array[Double | String], callback: ResponseCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Calls the passed function against every feature that is currently being displayed.
         */
-      def eachActiveFeature(fn: js.Function1[/* feature */ js.Any, Unit]): this.type = js.native
-      def eachActiveFeature(fn: js.Function1[/* feature */ js.Any, Unit], context: js.Any): this.type = js.native
+      def eachActiveFeature(fn: js.Function1[/* feature */ Any, Unit]): this.type = js.native
+      def eachActiveFeature(fn: js.Function1[/* feature */ Any, Unit], context: Any): this.type = js.native
       
       /**
         * Calls the passed function against every feature. The function will be passed the layer that represents
@@ -310,8 +309,8 @@ object leafletAugmentingMod {
         *
         * featureLayer.eachFeature(function(layer){ console.log(layer.feature.properties.NAME); });
         */
-      def eachFeature(fn: js.Function1[/* feature */ js.Any, Unit]): this.type = js.native
-      def eachFeature(fn: js.Function1[/* feature */ js.Any, Unit], context: js.Any): this.type = js.native
+      def eachFeature(fn: js.Function1[/* feature */ Any, Unit]): this.type = js.native
+      def eachFeature(fn: js.Function1[/* feature */ Any, Unit], context: Any): this.type = js.native
       
       /**
         * Returns a new `L.esri.services.Find` object that can be used to find features. Your callback function
@@ -329,7 +328,7 @@ object leafletAugmentingMod {
       /**
         *     Returns the current time range as an array like [from, to]
         */
-      def getTimeRange(): js.Array[Date] = js.native
+      def getTimeRange(): js.Array[js.Date] = js.native
       
       /**
         * Returns the current where setting
@@ -346,7 +345,7 @@ object leafletAugmentingMod {
         * Requests metadata about this Feature Layer. Callback will be called with error and metadata.
         */
       def metadata(callback: CallbackHandler): this.type = js.native
-      def metadata(callback: CallbackHandler, context: js.Any): this.type = js.native
+      def metadata(callback: CallbackHandler, context: Any): this.type = js.native
       
       /**
         * Returns a new `L.esri.Query` object that can be used to query this service.
@@ -391,19 +390,19 @@ object leafletAugmentingMod {
         * Sets the current time filter applied to features. An optional callback is run upon completion if
         * timeFilterMode is set to 'server'. Also accepts function context as the last argument.
         */
-      def setTimeRange(from: Date, to: Date): this.type = js.native
-      def setTimeRange(from: Date, to: Date, callback: Unit, context: js.Any): this.type = js.native
-      def setTimeRange(from: Date, to: Date, callback: FeatureCallbackHandler): this.type = js.native
-      def setTimeRange(from: Date, to: Date, callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def setTimeRange(from: js.Date, to: js.Date): this.type = js.native
+      def setTimeRange(from: js.Date, to: js.Date, callback: Unit, context: Any): this.type = js.native
+      def setTimeRange(from: js.Date, to: js.Date, callback: FeatureCallbackHandler): this.type = js.native
+      def setTimeRange(from: js.Date, to: js.Date, callback: FeatureCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Sets the new where option and refreshes the layer to reflect the new where filter. Accepts an optional
         * callback and function context.
         */
       def setWhere(where: String): this.type = js.native
-      def setWhere(where: String, callback: Unit, context: js.Any): this.type = js.native
+      def setWhere(where: String, callback: Unit, context: Any): this.type = js.native
       def setWhere(where: String, callback: FeatureCallbackHandler): this.type = js.native
-      def setWhere(where: String, callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def setWhere(where: String, callback: FeatureCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Update the provided feature on the Feature Layer. This also updates the feature on the map.
@@ -415,10 +414,10 @@ object leafletAugmentingMod {
         * checking the metadata of your service under capabilities.
         */
       // TODO: GeoJSONFeature<GeoJSON.GeometryObject>
-      def updateFeature(feature: js.Any): this.type = js.native
-      def updateFeature(feature: js.Any, callback: Unit, context: js.Any): this.type = js.native
-      def updateFeature(feature: js.Any, callback: ResponseCallbackHandler): this.type = js.native
-      def updateFeature(feature: js.Any, callback: ResponseCallbackHandler, context: js.Any): this.type = js.native
+      def updateFeature(feature: Any): this.type = js.native
+      def updateFeature(feature: Any, callback: Unit, context: Any): this.type = js.native
+      def updateFeature(feature: Any, callback: ResponseCallbackHandler): this.type = js.native
+      def updateFeature(feature: Any, callback: ResponseCallbackHandler, context: Any): this.type = js.native
     }
     
     /**
@@ -427,7 +426,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.Find")
     @js.native
-    class Find_ protected ()
+    open class Find_ protected ()
       extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ {
       def this(options: FindOptions) = this()
       def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_) = this()
@@ -442,7 +441,7 @@ object leafletAugmentingMod {
         * Property used for adding new layers or modifying the data source of existing ones in the current map
         * service.
         */
-      def dynamicLayers(dynamicLayers: js.Any): this.type = js.native
+      def dynamicLayers(dynamicLayers: Any): this.type = js.native
       
       /**
         *     An array or comma-separated list of field names to search. If not specified, all fields are searched.
@@ -493,7 +492,7 @@ object leafletAugmentingMod {
         * FeatureCollection. Accepts an optional function context.
         */
       def run(callback: FeatureCallbackHandler): this.type = js.native
-      def run(callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def run(callback: FeatureCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Simplify the geometries of the output features for the current map view. the factor parameter controls
@@ -519,7 +518,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.IdentifyFeatures")
     @js.native
-    class IdentifyFeatures_ protected ()
+    open class IdentifyFeatures_ protected ()
       extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ {
       def this(options: IdentifyFeaturesOptions) = this()
       def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_) = this()
@@ -533,7 +532,7 @@ object leafletAugmentingMod {
       /**
         * Identifies features within a given time range.
         */
-      def between(from: Date, to: Date): this.type = js.native
+      def between(from: js.Date, to: js.Date): this.type = js.native
       
       /**
         * Add a layer definition to the query.
@@ -570,7 +569,7 @@ object leafletAugmentingMod {
         * as a GeoJSON FeatureCollection. Accepts an optional function context
         */
       def run(callback: FeatureCallbackHandler): this.type = js.native
-      def run(callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def run(callback: FeatureCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Simplify the geometries of the output features for the current map view. the factor parameter controls
@@ -591,7 +590,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.ImageService")
     @js.native
-    class ImageService_ protected ()
+    open class ImageService_ protected ()
       extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service {
       def this(options: ImageServiceOptions) = this()
       
@@ -607,7 +606,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.MapService")
     @js.native
-    class MapService_ protected ()
+    open class MapService_ protected ()
       extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service {
       def this(options: MapServiceOptions) = this()
       
@@ -638,7 +637,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.Query")
     @js.native
-    class Query_ protected ()
+    open class Query_ protected ()
       extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ {
       def this(options: QueryOptions) = this()
       
@@ -654,7 +653,7 @@ object leafletAugmentingMod {
         * Queries features within a given time range. Only available for Layers/Services with timeInfo in their
         * metadata.
         */
-      def between(from: Date, to: Date): this.type = js.native
+      def between(from: js.Date, to: js.Date): this.type = js.native
       
       /**
         * Executes the query request with the current parameters, passing only the LatLngBounds of all features
@@ -662,7 +661,7 @@ object leafletAugmentingMod {
         * Layers hosted on ArcGIS Online or ArcGIS Server 10.3.1.
         */
       def bounds(callback: FeatureCallbackHandler): this.type = js.native
-      def bounds(callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def bounds(callback: FeatureCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Queries features from the service that fully contain the passed geometry object. geometry can be an
@@ -677,12 +676,17 @@ object leafletAugmentingMod {
         * query to callback as an Integer. Accepts an optional function context.
         */
       def count(callback: FeatureCallbackHandler): this.type = js.native
-      def count(callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def count(callback: FeatureCallbackHandler, context: Any): this.type = js.native
+      
+      /**
+        * Ensures that no geometry or duplicate field values will be returned in the subsequent request.
+        */
+      def distinct(): this.type = js.native
       
       /**
         * Return only specific feature IDs if they match other query parameters.
         */
-      def featureIds(ids: js.Array[js.Any]): this.type = js.native
+      def featureIds(ids: js.Array[Any]): this.type = js.native
       
       /**
         * An array of associated fields to request for each feature.
@@ -695,7 +699,7 @@ object leafletAugmentingMod {
         * the query to callbackcallback. Accepts an optional function context.
         */
       def ids(callback: FeatureCallbackHandler): this.type = js.native
-      def ids(callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def ids(callback: FeatureCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Queries features from the service that intersect (touch anywhere) the passed geometry object. geometry
@@ -772,7 +776,7 @@ object leafletAugmentingMod {
         * FeatureCollection. Accepts an optional function context.
         */
       def run(callback: FeatureCallbackHandler): this.type = js.native
-      def run(callback: FeatureCallbackHandler, context: js.Any): this.type = js.native
+      def run(callback: FeatureCallbackHandler, context: Any): this.type = js.native
       
       /**
         * Simplify the geometries of the output features for the current map view. the factor parameter controls
@@ -825,13 +829,13 @@ object leafletAugmentingMod {
       /**
         * Returns the current time range being used for rendering. Array [from, to];
         */
-      def getTimeRange(): js.Array[Date] = js.native
+      def getTimeRange(): js.Array[js.Date] = js.native
       
       /**
         * Requests metadata about this Feature Layer. Callback will be called with error and metadata.
         */
       def metadata(callback: CallbackHandler): this.type = js.native
-      def metadata(callback: CallbackHandler, context: js.Any): this.type = js.native
+      def metadata(callback: CallbackHandler, context: Any): this.type = js.native
       
       /**
         * Used to make a fresh request to the service and draw the response.
@@ -841,7 +845,7 @@ object leafletAugmentingMod {
       /**
         * Redraws the layer with the passed time range.
         */
-      def setTimeRange(from: Date, to: Date): this.type = js.native
+      def setTimeRange(from: js.Date, to: js.Date): this.type = js.native
     }
     
     /**
@@ -862,32 +866,32 @@ object leafletAugmentingMod {
         * parameters will be serialized to a query string. Accepts an optional function context for the callback.
         */
       def get(url: String): this.type = js.native
-      def get(url: String, params: js.Any): this.type = js.native
-      def get(url: String, params: js.Any, callback: Unit, context: js.Any): this.type = js.native
-      def get(url: String, params: js.Any, callback: CallbackHandler): this.type = js.native
-      def get(url: String, params: js.Any, callback: CallbackHandler, context: js.Any): this.type = js.native
-      def get(url: String, params: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def get(url: String, params: Any): this.type = js.native
+      def get(url: String, params: Any, callback: Unit, context: Any): this.type = js.native
+      def get(url: String, params: Any, callback: CallbackHandler): this.type = js.native
+      def get(url: String, params: Any, callback: CallbackHandler, context: Any): this.type = js.native
+      def get(url: String, params: Unit, callback: Unit, context: Any): this.type = js.native
       def get(url: String, params: Unit, callback: CallbackHandler): this.type = js.native
-      def get(url: String, params: Unit, callback: CallbackHandler, context: js.Any): this.type = js.native
+      def get(url: String, params: Unit, callback: CallbackHandler, context: Any): this.type = js.native
       
       /**
         * Requests metadata about this Feature Layer. Callback will be called with error and metadata.
         */
       def metadata(callback: CallbackHandler): this.type = js.native
-      def metadata(callback: CallbackHandler, context: js.Any): this.type = js.native
+      def metadata(callback: CallbackHandler, context: Any): this.type = js.native
       
       /**
         * Makes a POST request to the service. The service's URL will be combined with the path option and
         * parameters will be serialized. Accepts an optional function context for the callback.
         */
       def post(url: String): this.type = js.native
-      def post(url: String, params: js.Any): this.type = js.native
-      def post(url: String, params: js.Any, callback: Unit, context: js.Any): this.type = js.native
-      def post(url: String, params: js.Any, callback: CallbackHandler): this.type = js.native
-      def post(url: String, params: js.Any, callback: CallbackHandler, context: js.Any): this.type = js.native
-      def post(url: String, params: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def post(url: String, params: Any): this.type = js.native
+      def post(url: String, params: Any, callback: Unit, context: Any): this.type = js.native
+      def post(url: String, params: Any, callback: CallbackHandler): this.type = js.native
+      def post(url: String, params: Any, callback: CallbackHandler, context: Any): this.type = js.native
+      def post(url: String, params: Unit, callback: Unit, context: Any): this.type = js.native
       def post(url: String, params: Unit, callback: CallbackHandler): this.type = js.native
-      def post(url: String, params: Unit, callback: CallbackHandler, context: js.Any): this.type = js.native
+      def post(url: String, params: Unit, callback: CallbackHandler, context: Any): this.type = js.native
     }
     
     /**
@@ -896,7 +900,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.Task")
     @js.native
-    class Task_ protected () extends Class {
+    open class Task_ protected () extends Class {
       def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service) = this()
       def this(options: TaskOptions) = this()
       
@@ -907,13 +911,13 @@ object leafletAugmentingMod {
         * parameters will be serialized. Accepts an optional function context for the callback.
         */
       def request(url: String): this.type = js.native
-      def request(url: String, params: js.Any): this.type = js.native
-      def request(url: String, params: js.Any, callback: js.Any): this.type = js.native
-      def request(url: String, params: js.Any, callback: js.Any, context: js.Any): this.type = js.native
-      def request(url: String, params: js.Any, callback: Unit, context: js.Any): this.type = js.native
-      def request(url: String, params: Unit, callback: js.Any): this.type = js.native
-      def request(url: String, params: Unit, callback: js.Any, context: js.Any): this.type = js.native
-      def request(url: String, params: Unit, callback: Unit, context: js.Any): this.type = js.native
+      def request(url: String, params: Any): this.type = js.native
+      def request(url: String, params: Any, callback: Any): this.type = js.native
+      def request(url: String, params: Any, callback: Any, context: Any): this.type = js.native
+      def request(url: String, params: Any, callback: Unit, context: Any): this.type = js.native
+      def request(url: String, params: Unit, callback: Any): this.type = js.native
+      def request(url: String, params: Unit, callback: Any, context: Any): this.type = js.native
+      def request(url: String, params: Unit, callback: Unit, context: Any): this.type = js.native
       
       /**
         * Adds a token to this request if the service requires authentication. Will be added automatically if used
@@ -928,7 +932,7 @@ object leafletAugmentingMod {
       */
     @JSImport("leaflet", "esri.TiledMapLayer")
     @js.native
-    class TiledMapLayer_ protected () extends TileLayer_ {
+    open class TiledMapLayer_ protected () extends TileLayer_ {
       def this(options: TiledMapLayerOptions) = this()
       
       /**
@@ -952,7 +956,7 @@ object leafletAugmentingMod {
         * Requests metadata about this Feature Layer. Callback will be called with error and metadata.
         */
       def metadata(callback: CallbackHandler): this.type = js.native
-      def metadata(callback: CallbackHandler, context: js.Any): this.type = js.native
+      def metadata(callback: CallbackHandler, context: Any): this.type = js.native
       
       /**
         * Returns a new `L.esri.Query` object that can be used to query this service.
@@ -1145,7 +1149,7 @@ object leafletAugmentingMod {
       inline def USATopo: typings.esriLeaflet.esriLeafletStrings.USATopo = "USATopo".asInstanceOf[typings.esriLeaflet.esriLeafletStrings.USATopo]
     }
     
-    type CallbackHandler = js.Function2[/* error */ js.Any, /* metadata */ js.Any, Unit]
+    type CallbackHandler = js.Function2[/* error */ Any, /* metadata */ Any, Unit]
     
     /**
       * Options for `L.esri.DynamicMapLayer`
@@ -1164,7 +1168,7 @@ object leafletAugmentingMod {
         * JSON object literal used to manipulate the layer symbology defined in the service itself. Requires a 10.1
         * (or above) map service which supports dynamicLayers requests.
         */
-      var dynamicLayers: js.UndefOr[js.Any] = js.undefined
+      var dynamicLayers: js.UndefOr[Any] = js.undefined
       
       /**
         * Output format of the image.
@@ -1178,12 +1182,12 @@ object leafletAugmentingMod {
         *
         * { 3: "STATE_NAME='Kansas'", 9: "POP2007>25000" }
         */
-      var layerDefs: js.UndefOr[js.Any] = js.undefined
+      var layerDefs: js.UndefOr[Any] = js.undefined
       
       /**
         * An array of Layer IDs like [3,4,5] to show from the service.
         */
-      var layers: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var layers: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Allow the server to produce transparent images.
@@ -1203,7 +1207,7 @@ object leafletAugmentingMod {
         
         inline def setDisableCacheUndefined: Self = StObject.set(x, "disableCache", js.undefined)
         
-        inline def setDynamicLayers(value: js.Any): Self = StObject.set(x, "dynamicLayers", value.asInstanceOf[js.Any])
+        inline def setDynamicLayers(value: Any): Self = StObject.set(x, "dynamicLayers", value.asInstanceOf[js.Any])
         
         inline def setDynamicLayersUndefined: Self = StObject.set(x, "dynamicLayers", js.undefined)
         
@@ -1211,15 +1215,15 @@ object leafletAugmentingMod {
         
         inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        inline def setLayerDefs(value: js.Any): Self = StObject.set(x, "layerDefs", value.asInstanceOf[js.Any])
+        inline def setLayerDefs(value: Any): Self = StObject.set(x, "layerDefs", value.asInstanceOf[js.Any])
         
         inline def setLayerDefsUndefined: Self = StObject.set(x, "layerDefs", js.undefined)
         
-        inline def setLayers(value: js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        inline def setLayers(value: js.Array[Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
         inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
         
-        inline def setLayersVarargs(value: js.Any*): Self = StObject.set(x, "layers", js.Array(value :_*))
+        inline def setLayersVarargs(value: Any*): Self = StObject.set(x, "layers", js.Array(value*))
         
         inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
         
@@ -1228,9 +1232,9 @@ object leafletAugmentingMod {
     }
     
     type FeatureCallbackHandler = js.Function3[
-        /* error */ js.UndefOr[js.Any], 
-        /* featureCollection */ js.UndefOr[js.Any], 
-        /* response */ js.UndefOr[js.Any], 
+        /* error */ js.UndefOr[Any], 
+        /* featureCollection */ js.UndefOr[Any], 
+        /* response */ js.UndefOr[Any], 
         Unit
       ]
     
@@ -1256,7 +1260,7 @@ object leafletAugmentingMod {
         *     When paired with to defines the time range of features to display. Requires the Feature Layer to be time
         *     enabled.
         */
-      var from: js.UndefOr[Date] = js.undefined
+      var from: js.UndefOr[js.Date] = js.undefined
       
       /**
         * When utilizing esri-leaflet-renderers '2.0.2' or above, this option makes it possible to override the
@@ -1283,13 +1287,13 @@ object leafletAugmentingMod {
       /**
         *     Provides an opportunity to introspect individual GeoJSON features in the layer.
         */
-      var onEachFeature: js.UndefOr[js.Function2[/* feature */ js.Any, /* layer */ Layer, Unit]] = js.undefined
+      var onEachFeature: js.UndefOr[js.Function2[/* feature */ Any, /* layer */ Layer, Unit]] = js.undefined
       
       /**
         * Function that will be used for creating layers for GeoJSON points. If the option is not specified, simple
         * markers will be created). For point layers, custom panes should be passed through pointToLayer (example here).
         */
-      var pointToLayer: js.UndefOr[js.Function2[/* feature */ js.Any, /* latLng */ LatLngExpression, Unit]] = js.undefined
+      var pointToLayer: js.UndefOr[js.Function2[/* feature */ Any, /* latLng */ LatLngExpression, Unit]] = js.undefined
       
       /**
         * How many digits of precision to request from the server. Wikipedia has a great reference of digit
@@ -1312,13 +1316,13 @@ object leafletAugmentingMod {
       /**
         * Function that will be used to get style options for vector layers created for GeoJSON features.
         */
-      var style: js.UndefOr[js.Function2[/* feature */ js.Any, /* layer */ Layer, Unit]] = js.undefined
+      var style: js.UndefOr[js.Function2[/* feature */ Any, /* layer */ Layer, Unit]] = js.undefined
       
       /**
         * The name of the field to lookup the time of the feature. Can be an object like
         * {start:'startTime', end:'endTime'} or a string like 'created'.
         */
-      var timeField: js.UndefOr[js.Any] = js.undefined
+      var timeField: js.UndefOr[Any] = js.undefined
       
       /**
         * Determines where features are filtered by time. By default features will be filtered by the server. If
@@ -1330,7 +1334,7 @@ object leafletAugmentingMod {
         * When paired with from defines the time range of features to display. Requires the Feature Layer to be
         * time enabled.
         */
-      var to: js.UndefOr[Date] = js.undefined
+      var to: js.UndefOr[js.Date] = js.undefined
       
       /**
         * An optional expression to filter features server side. String values should be denoted using single
@@ -1355,9 +1359,9 @@ object leafletAugmentingMod {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
-        inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+        inline def setFrom(value: js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         
         inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
         
@@ -1377,11 +1381,11 @@ object leafletAugmentingMod {
         
         inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
         
-        inline def setOnEachFeature(value: (/* feature */ js.Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
+        inline def setOnEachFeature(value: (/* feature */ Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
         
         inline def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
         
-        inline def setPointToLayer(value: (/* feature */ js.Any, /* latLng */ LatLngExpression) => Unit): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
+        inline def setPointToLayer(value: (/* feature */ Any, /* latLng */ LatLngExpression) => Unit): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
         
         inline def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
         
@@ -1397,11 +1401,11 @@ object leafletAugmentingMod {
         
         inline def setSimplifyFactorUndefined: Self = StObject.set(x, "simplifyFactor", js.undefined)
         
-        inline def setStyle(value: (/* feature */ js.Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
+        inline def setStyle(value: (/* feature */ Any, /* layer */ Layer) => Unit): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
         
         inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        inline def setTimeField(value: js.Any): Self = StObject.set(x, "timeField", value.asInstanceOf[js.Any])
+        inline def setTimeField(value: Any): Self = StObject.set(x, "timeField", value.asInstanceOf[js.Any])
         
         inline def setTimeFieldUndefined: Self = StObject.set(x, "timeField", js.undefined)
         
@@ -1409,7 +1413,7 @@ object leafletAugmentingMod {
         
         inline def setTimeFilterModeUndefined: Self = StObject.set(x, "timeFilterMode", js.undefined)
         
-        inline def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+        inline def setTo(value: js.Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
         
         inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
         
@@ -1490,7 +1494,7 @@ object leafletAugmentingMod {
       }
     }
     
-    type LeafletGeometry = Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | LatLngExpression | LatLngBounds_ | GeoJSON_[js.Any]
+    type LeafletGeometry = Marker_[Any] | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any]) | LatLngExpression | LatLngBounds_ | GeoJSON__[Any]
     
     /**
       * Options for MapService
@@ -1558,7 +1562,7 @@ object leafletAugmentingMod {
       }
     }
     
-    type ResponseCallbackHandler = js.Function2[/* error */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], Unit]
+    type ResponseCallbackHandler = js.Function2[/* error */ js.UndefOr[Any], /* response */ js.UndefOr[Any], Unit]
     
     /**
       * Options for `L.esri.Service`
@@ -1584,6 +1588,11 @@ object leafletAugmentingMod {
         * If this service should use CORS when making GET requests.
         */
       var useCors: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * Will include credentials for CORS requests
+        */
+      var withCredentials: js.UndefOr[Boolean] = js.undefined
     }
     object ServiceOptions {
       
@@ -1609,6 +1618,10 @@ object leafletAugmentingMod {
         inline def setUseCors(value: Boolean): Self = StObject.set(x, "useCors", value.asInstanceOf[js.Any])
         
         inline def setUseCorsUndefined: Self = StObject.set(x, "useCors", js.undefined)
+        
+        inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+        
+        inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
       }
     }
     
@@ -1639,7 +1652,7 @@ object leafletAugmentingMod {
     
     type SpatialReferenceExpression = Double | SpatialReference
     
-    type StyleCallback = js.Function1[/* feature */ js.Any, js.Any]
+    type StyleCallback = js.Function1[/* feature */ Any, Any]
     
     /**
       * Options for Task

@@ -1,7 +1,7 @@
 package typings.rsmq
 
-import typings.rsmq.rsmqNumbers.`0`
-import typings.rsmq.rsmqNumbers.`1`
+import typings.rsmq.rsmqInts.`0`
+import typings.rsmq.rsmqInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -226,6 +226,13 @@ type IpRuleList = js.Array[IpRuleItem]
 
 type Limit = Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type LogUploadEnum = _LogUploadEnum | String
+
 type LoginMessage = StringDictionary[ClientLoginMessage]
 
 type ManagementCidrRangeConstraint = String

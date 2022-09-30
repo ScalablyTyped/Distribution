@@ -23,13 +23,13 @@ trait List
 }
 object List {
   
-  inline def apply(children: js.Array[ListContent]): List = {
+  inline def apply(children: js.Array[ListContent]): typings.mdast.mod.List = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("list")
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.mdast.mod.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.mdast.mod.List](x: Self) {
     
     inline def setChildren(value: js.Array[ListContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

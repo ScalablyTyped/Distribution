@@ -1,6 +1,6 @@
 package typings.schematicsAngular.typescriptMod
 
-import typings.schematicsAngular.schematicsAngularNumbers.`-1`
+import typings.schematicsAngular.schematicsAngularInts.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

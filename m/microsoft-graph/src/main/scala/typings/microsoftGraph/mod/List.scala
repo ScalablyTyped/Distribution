@@ -40,12 +40,12 @@ trait List
 }
 object List {
   
-  inline def apply(): List = {
+  inline def apply(): typings.microsoftGraph.mod.List = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.microsoftGraph.mod.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.microsoftGraph.mod.List](x: Self) {
     
     inline def setColumns(value: NullableOption[js.Array[ColumnDefinition]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

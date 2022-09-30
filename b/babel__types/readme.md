@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel__types
 
-Typings are for version 7.19.0
+Typings are for version 7.19.3
 
 
 

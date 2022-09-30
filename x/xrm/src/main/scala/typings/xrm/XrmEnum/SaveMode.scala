@@ -1,16 +1,16 @@
 package typings.xrm.XrmEnum
 
-import typings.xrm.xrmNumbers.`15`
-import typings.xrm.xrmNumbers.`16`
-import typings.xrm.xrmNumbers.`1`
-import typings.xrm.xrmNumbers.`2`
-import typings.xrm.xrmNumbers.`47`
-import typings.xrm.xrmNumbers.`58`
-import typings.xrm.xrmNumbers.`59`
-import typings.xrm.xrmNumbers.`5`
-import typings.xrm.xrmNumbers.`6`
-import typings.xrm.xrmNumbers.`70`
-import typings.xrm.xrmNumbers.`7`
+import typings.xrm.xrmInts.`15`
+import typings.xrm.xrmInts.`16`
+import typings.xrm.xrmInts.`1`
+import typings.xrm.xrmInts.`2`
+import typings.xrm.xrmInts.`47`
+import typings.xrm.xrmInts.`58`
+import typings.xrm.xrmInts.`59`
+import typings.xrm.xrmInts.`5`
+import typings.xrm.xrmInts.`6`
+import typings.xrm.xrmInts.`70`
+import typings.xrm.xrmInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,17 +19,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Enumeration of entity form save modes.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.xrm.xrmNumbers.`1`
-  - typings.xrm.xrmNumbers.`2`
-  - typings.xrm.xrmNumbers.`59`
-  - typings.xrm.xrmNumbers.`70`
-  - typings.xrm.xrmNumbers.`58`
-  - typings.xrm.xrmNumbers.`5`
-  - typings.xrm.xrmNumbers.`6`
-  - typings.xrm.xrmNumbers.`47`
-  - typings.xrm.xrmNumbers.`7`
-  - typings.xrm.xrmNumbers.`16`
-  - typings.xrm.xrmNumbers.`15`
+  - typings.xrm.xrmInts.`1`
+  - typings.xrm.xrmInts.`2`
+  - typings.xrm.xrmInts.`59`
+  - typings.xrm.xrmInts.`70`
+  - typings.xrm.xrmInts.`58`
+  - typings.xrm.xrmInts.`5`
+  - typings.xrm.xrmInts.`6`
+  - typings.xrm.xrmInts.`47`
+  - typings.xrm.xrmInts.`7`
+  - typings.xrm.xrmInts.`16`
+  - typings.xrm.xrmInts.`15`
 */
 trait SaveMode extends StObject
 object SaveMode {

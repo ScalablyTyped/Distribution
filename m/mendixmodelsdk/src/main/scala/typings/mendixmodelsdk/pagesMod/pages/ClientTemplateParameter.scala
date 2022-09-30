@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplateParameter")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ClientTemplateParameter")
 @js.native
-class ClientTemplateParameter protected () extends Element[IModel] {
+open class ClientTemplateParameter protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -42,6 +42,14 @@ class ClientTemplateParameter protected () extends Element[IModel] {
   def containerAsClientTemplate: ClientTemplate = js.native
   
   /**
+    * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+    *
+    * In version 9.0.1: introduced
+    */
+  def expression: String = js.native
+  def expression_=(newValue: String): Unit = js.native
+  
+  /**
     * In version 7.15.0: introduced
     */
   def formattingInfo: FormattingInfo = js.native
@@ -49,7 +57,7 @@ class ClientTemplateParameter protected () extends Element[IModel] {
 }
 object ClientTemplateParameter {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplateParameter")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ClientTemplateParameter")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +78,13 @@ object ClientTemplateParameter {
   inline def createIn(container: ClientTemplate): ClientTemplateParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplateParameter]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplateParameter.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ClientTemplateParameter.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplateParameter.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ClientTemplateParameter.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -29,6 +29,6 @@ object ReadOptions {
     
     inline def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
-    inline def setFieldMaskVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "fieldMask", js.Array(value :_*))
+    inline def setFieldMaskVarargs(value: (String | FieldPath)*): Self = StObject.set(x, "fieldMask", js.Array(value*))
   }
 }

@@ -3,7 +3,7 @@ package typings.naverWhale.whale.runtime
 import typings.chrome.anon.Extensionpages
 import typings.chrome.anon.Resources
 import typings.chrome.anon.Serviceworker
-import typings.naverWhale.naverWhaleNumbers.`3`
+import typings.naverWhale.naverWhaleInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

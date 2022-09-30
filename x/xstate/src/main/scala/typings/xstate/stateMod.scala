@@ -125,13 +125,11 @@ object stateMod {
         StateMachine[TContext, Any, TEvent, TTypestate, BaseActionObject, Any, TResolvedTypesMeta]
       ] = js.native
     
-    def matches[TSV /* <: /* import warning: importer.ImportType#apply Failed type conversion: TTypestate['value'] */ js.Any */](parentStateValue: TSV): Boolean = js.native
     /**
       * Whether the current state value is a subset of the given parent state value.
       * @param parentStateValue
       */
-    @JSName("matches")
-    def matches_TSV_PropPropTResolvedTypesMetaresolvedmatchesStates[TSV /* <: Prop[Prop[TResolvedTypesMeta, resolved], matchesStates] */](parentStateValue: TSV): Boolean = js.native
+    def matches[TSV /* <: Prop[Prop[TResolvedTypesMeta, resolved], matchesStates] */](parentStateValue: TSV): Boolean = js.native
     
     var meta: Any = js.native
     

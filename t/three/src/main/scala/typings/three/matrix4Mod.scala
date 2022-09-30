@@ -5,7 +5,7 @@ import typings.three.eulerMod.Euler
 import typings.three.matrix3Mod.Matrix
 import typings.three.matrix3Mod.Matrix3
 import typings.three.quaternionMod.Quaternion
-import typings.three.threeNumbers.`0`
+import typings.three.threeInts.`0`
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

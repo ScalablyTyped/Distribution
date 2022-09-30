@@ -41,9 +41,9 @@ object utilUtilMod {
   inline def bindCallback(callback: js.Function1[/* a */ Any, Unit]): js.Function1[/* a */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ Any, Unit]]
   inline def bindCallback(callback: js.Function1[/* a */ Any, Unit], context: js.Object): js.Function1[/* a */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindCallback")(callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ Any, Unit]]
   
-  inline def callUserCallback(callback: js.Function, varArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callUserCallback")(List(callback.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def callUserCallback(callback: Null, varArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callUserCallback")(List(callback.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def callUserCallback(callback: Unit, varArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callUserCallback")(List(callback.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def callUserCallback(callback: js.Function, varArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callUserCallback")(scala.List(callback.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def callUserCallback(callback: Null, varArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callUserCallback")(scala.List(callback.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def callUserCallback(callback: Unit, varArgs: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callUserCallback")(scala.List(callback.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def doubleToIEEE754String(v: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleToIEEE754String")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   

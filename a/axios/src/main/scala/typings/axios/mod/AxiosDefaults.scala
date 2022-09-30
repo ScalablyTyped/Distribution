@@ -93,7 +93,7 @@ object AxiosDefaults {
   
   extension [Self <: AxiosDefaults[?], D](x: Self & AxiosDefaults[D]) {
     
-    inline def setAdapter(value: /* config */ AxiosRequestConfig[Any] => AxiosPromise[Any]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
+    inline def setAdapter(value: /* config */ AxiosRequestConfig[Any] => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
     
     inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
     

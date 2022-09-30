@@ -59,9 +59,9 @@ object resultMod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdNumbers.`403`
-    - typings.antd.antdNumbers.`404`
-    - typings.antd.antdNumbers.`500`
+    - typings.antd.antdInts.`403`
+    - typings.antd.antdInts.`404`
+    - typings.antd.antdInts.`500`
     - typings.antd.antdStrings.`403`
     - typings.antd.antdStrings.`404`
     - typings.antd.antdStrings.`500`
@@ -71,11 +71,11 @@ object resultMod extends Shortcut {
        with ResultStatusType
   object ExceptionStatusType {
     
-    inline def `403`: typings.antd.antdNumbers.`403` = 403.asInstanceOf[typings.antd.antdNumbers.`403`]
+    inline def `403`: typings.antd.antdInts.`403` = 403.asInstanceOf[typings.antd.antdInts.`403`]
     
-    inline def `404`: typings.antd.antdNumbers.`404` = 404.asInstanceOf[typings.antd.antdNumbers.`404`]
+    inline def `404`: typings.antd.antdInts.`404` = 404.asInstanceOf[typings.antd.antdInts.`404`]
     
-    inline def `500`: typings.antd.antdNumbers.`500` = 500.asInstanceOf[typings.antd.antdNumbers.`500`]
+    inline def `500`: typings.antd.antdInts.`500` = 500.asInstanceOf[typings.antd.antdInts.`500`]
   }
   
   trait ResultProps extends StObject {

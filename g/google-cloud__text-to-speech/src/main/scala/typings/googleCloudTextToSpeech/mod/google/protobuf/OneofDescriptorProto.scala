@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new OneofDescriptorProto.
   * @param [properties] Properties to set
   */
-class OneofDescriptorProto ()
+open class OneofDescriptorProto ()
   extends StObject
      with IOneofDescriptorProto {
   def this(properties: IOneofDescriptorProto) = this()
@@ -29,7 +28,7 @@ class OneofDescriptorProto ()
     * Converts this OneofDescriptorProto to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object OneofDescriptorProto {
   
@@ -46,6 +45,8 @@ object OneofDescriptorProto {
   inline def create(): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OneofDescriptorProto]
   inline def create(properties: IOneofDescriptorProto): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
   
+  inline def decode(reader: js.typedarray.Uint8Array): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): OneofDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OneofDescriptorProto]
   /**
     * Decodes an OneofDescriptorProto message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object OneofDescriptorProto {
   /* static member */
   inline def decode(reader: Reader): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
   inline def decode(reader: Reader, length: Double): OneofDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OneofDescriptorProto]
-  inline def decode(reader: Uint8Array): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
-  inline def decode(reader: Uint8Array, length: Double): OneofDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OneofDescriptorProto]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
   /**
     * Decodes an OneofDescriptorProto message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object OneofDescriptorProto {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
-  inline def decodeDelimited(reader: Uint8Array): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
   
   /**
     * Encodes the specified OneofDescriptorProto message. Does not implicitly {@link google.protobuf.OneofDescriptorProto.verify|verify} messages.
@@ -97,7 +96,16 @@ object OneofDescriptorProto {
     * @returns OneofDescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
+  inline def fromObject(`object`: StringDictionary[Any]): OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OneofDescriptorProto]
+  
+  /**
+    * Gets the default type url for OneofDescriptorProto
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from an OneofDescriptorProto message. Also converts values to other types if specified.
@@ -106,8 +114,8 @@ object OneofDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: OneofDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: OneofDescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: OneofDescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: OneofDescriptorProto, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an OneofDescriptorProto message.
@@ -115,5 +123,5 @@ object OneofDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

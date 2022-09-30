@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnVisibilityToggleData
+trait OnVisibilityToggleData[T]
   extends StObject
-     with FullTree
-     with TreeNode {
+     with FullTree[T]
+     with TreeNode[T] {
   
   var expanded: Boolean
 }
 object OnVisibilityToggleData {
   
-  inline def apply(expanded: Boolean, node: TreeItem, treeData: js.Array[TreeItem]): OnVisibilityToggleData = {
+  inline def apply[T](expanded: Boolean, node: TreeItem[T], treeData: js.Array[TreeItem[T]]): OnVisibilityToggleData[T] = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], treeData = treeData.asInstanceOf[js.Any])
-    __obj.asInstanceOf[OnVisibilityToggleData]
+    __obj.asInstanceOf[OnVisibilityToggleData[T]]
   }
   
-  extension [Self <: OnVisibilityToggleData](x: Self) {
+  extension [Self <: OnVisibilityToggleData[?], T](x: Self & OnVisibilityToggleData[T]) {
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }

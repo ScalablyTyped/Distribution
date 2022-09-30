@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.CommitEnum")
 @js.native
-class CommitEnum protected ()
+open class CommitEnum protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.CommitEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

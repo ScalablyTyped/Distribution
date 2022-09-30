@@ -9,12 +9,12 @@ import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.helpersMod.HelpersPropsOverrides
 import typings.rbx.imageContainerMod.ImageContainerProps
-import typings.rbx.rbxNumbers.`1`
-import typings.rbx.rbxNumbers.`2`
-import typings.rbx.rbxNumbers.`3`
-import typings.rbx.rbxNumbers.`4`
-import typings.rbx.rbxNumbers.`5`
-import typings.rbx.rbxNumbers.`7`
+import typings.rbx.rbxInts.`1`
+import typings.rbx.rbxInts.`2`
+import typings.rbx.rbxInts.`3`
+import typings.rbx.rbxInts.`4`
+import typings.rbx.rbxInts.`5`
+import typings.rbx.rbxInts.`7`
 import typings.rbx.rbxStrings.`black-bis`
 import typings.rbx.rbxStrings.`black-ter`
 import typings.rbx.rbxStrings.`grey-dark`
@@ -218,7 +218,7 @@ object imageImageMod {
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
       ] = js.undefined
     
-    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | typings.rbx.rbxNumbers.`6` | `7`] = js.undefined
+    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | typings.rbx.rbxInts.`6` | `7`] = js.undefined
     
     var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
     
@@ -349,7 +349,7 @@ object imageImageMod {
       
       inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      inline def setTextSize(value: `1` | `2` | `3` | `4` | `5` | typings.rbx.rbxNumbers.`6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+      inline def setTextSize(value: `1` | `2` | `3` | `4` | `5` | typings.rbx.rbxInts.`6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
       
       inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
       

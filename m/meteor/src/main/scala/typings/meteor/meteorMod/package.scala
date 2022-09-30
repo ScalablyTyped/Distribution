@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type globalError = typings.std.Error
+type globalError = js.Error

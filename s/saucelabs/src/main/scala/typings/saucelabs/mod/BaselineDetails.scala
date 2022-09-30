@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaselineDetails
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var baseline: js.UndefOr[Double] = js.undefined
   
@@ -42,6 +42,6 @@ object BaselineDetails {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: BaselineValues*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: BaselineValues*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

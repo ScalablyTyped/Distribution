@@ -1,17 +1,17 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32000`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32001`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32002`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32096`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32097`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32098`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32099`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32600`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32601`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32602`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32603`
-import typings.vscodeLanguageserver.vscodeLanguageserverNumbers.`-32700`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32000`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32001`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32002`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32096`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32097`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32098`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32099`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32600`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32601`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32602`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32603`
+import typings.vscodeLanguageserver.vscodeLanguageserverInts.`-32700`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

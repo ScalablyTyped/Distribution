@@ -251,7 +251,7 @@ object swipeableMod {
     /**
       * Called when action panel is closed.
       */
-    var onSwipeableClose: js.UndefOr[js.Function1[/* direction */ left | right, Unit]] = js.undefined
+    var onSwipeableClose: js.UndefOr[js.Function2[/* direction */ left | right, /* swipeable */ Swipeable, Unit]] = js.undefined
     
     /**
       * @deprecated Use `direction` argument of onSwipeableOpen()
@@ -270,7 +270,7 @@ object swipeableMod {
     /**
       * Called when action panel gets open (either right or left).
       */
-    var onSwipeableOpen: js.UndefOr[js.Function1[/* direction */ left | right, Unit]] = js.undefined
+    var onSwipeableOpen: js.UndefOr[js.Function2[/* direction */ left | right, /* swipeable */ Swipeable, Unit]] = js.undefined
     
     /**
       * @deprecated Use `direction` argument of onSwipeableOpen()
@@ -344,9 +344,10 @@ object swipeableMod {
       * To support `rtl` flexbox layouts use `flexDirection` styling.
       * */
     var renderRightActions: js.UndefOr[
-        js.Function2[
+        js.Function3[
           /* progressAnimatedValue */ AnimatedInterpolation[Double | String], 
           /* dragAnimatedValue */ AnimatedInterpolation[Double | String], 
+          /* swipeable */ Swipeable, 
           ReactNode
         ]
       ] = js.undefined
@@ -501,7 +502,7 @@ object swipeableMod {
       
       inline def setOnFailedUndefined: Self = StObject.set(x, "onFailed", js.undefined)
       
-      inline def setOnSwipeableClose(value: /* direction */ left | right => Unit): Self = StObject.set(x, "onSwipeableClose", js.Any.fromFunction1(value))
+      inline def setOnSwipeableClose(value: (/* direction */ left | right, /* swipeable */ Swipeable) => Unit): Self = StObject.set(x, "onSwipeableClose", js.Any.fromFunction2(value))
       
       inline def setOnSwipeableCloseUndefined: Self = StObject.set(x, "onSwipeableClose", js.undefined)
       
@@ -513,7 +514,7 @@ object swipeableMod {
       
       inline def setOnSwipeableLeftWillOpenUndefined: Self = StObject.set(x, "onSwipeableLeftWillOpen", js.undefined)
       
-      inline def setOnSwipeableOpen(value: /* direction */ left | right => Unit): Self = StObject.set(x, "onSwipeableOpen", js.Any.fromFunction1(value))
+      inline def setOnSwipeableOpen(value: (/* direction */ left | right, /* swipeable */ Swipeable) => Unit): Self = StObject.set(x, "onSwipeableOpen", js.Any.fromFunction2(value))
       
       inline def setOnSwipeableOpenUndefined: Self = StObject.set(x, "onSwipeableOpen", js.undefined)
       
@@ -552,8 +553,8 @@ object swipeableMod {
       inline def setRenderLeftActionsUndefined: Self = StObject.set(x, "renderLeftActions", js.undefined)
       
       inline def setRenderRightActions(
-        value: (/* progressAnimatedValue */ AnimatedInterpolation[Double | String], /* dragAnimatedValue */ AnimatedInterpolation[Double | String]) => ReactNode
-      ): Self = StObject.set(x, "renderRightActions", js.Any.fromFunction2(value))
+        value: (/* progressAnimatedValue */ AnimatedInterpolation[Double | String], /* dragAnimatedValue */ AnimatedInterpolation[Double | String], /* swipeable */ Swipeable) => ReactNode
+      ): Self = StObject.set(x, "renderRightActions", js.Any.fromFunction3(value))
       
       inline def setRenderRightActionsUndefined: Self = StObject.set(x, "renderRightActions", js.undefined)
       

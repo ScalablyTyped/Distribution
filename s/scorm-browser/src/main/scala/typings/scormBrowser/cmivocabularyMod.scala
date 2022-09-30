@@ -1,7 +1,6 @@
 package typings.scormBrowser
 
 import typings.scormBrowser.cmidatatypesMod.CMIDecimal
-import typings.scormBrowser.scormBrowserStrings.`DollarLeftcurlybracketApostropheexitApostrophe Verticalline ApostrophecontinueApostropheRightcurlybracketCommaDollarLeftcurlybracketApostrophemessageApostrophe Verticalline Apostropheno messageApostropheRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,7 +130,7 @@ object cmivocabularyMod {
     inline def passed: typings.scormBrowser.scormBrowserStrings.passed = "passed".asInstanceOf[typings.scormBrowser.scormBrowserStrings.passed]
   }
   
-  type CMIVocabularyTimeLimitAction = `DollarLeftcurlybracketApostropheexitApostrophe Verticalline ApostrophecontinueApostropheRightcurlybracketCommaDollarLeftcurlybracketApostrophemessageApostrophe Verticalline Apostropheno messageApostropheRightcurlybracket`
+  type CMIVocabularyTimeLimitAction = /* template literal string: ${exit|continue},${message|no message} */ String
   
   trait _CMIVocabularyResult extends StObject
 }

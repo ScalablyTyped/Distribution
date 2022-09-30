@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import typings.bluebird.anon.AsyncHooks
 import typings.bluebird.anon.FnCall
-import typings.bluebird.bluebirdStrings.$LeftcurlybracketTRightcurlybracketAsync
 import typings.bluebird.bluebirdStrings.Object
 import typings.std.ArrayLike
 import typings.std.Error
@@ -1037,13 +1036,12 @@ object mod {
     options: PromisifyOptions
   ): js.Function0[Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Bluebird[T]]]
   
-  // trusted promise for object
-  /* static member */
-  inline def props[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
   // object
   /* static member */
   inline def props[T](`object`: ResolvableProps[T]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
-  
+  // trusted promise for object
+  /* static member */
+  inline def props[T](`object`: PromiseLike[ResolvableProps[T]]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
   /**
     * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
     *
@@ -1057,7 +1055,7 @@ object mod {
     */
   // map
   /* static member */
-  inline def props_KV[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
+  inline def props[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
   
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
@@ -1156,19 +1154,19 @@ object mod {
     *  necessary because there is no standard interface in node for disposing resources.
     */
   /* static member */
-  inline def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
+  inline def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, PromiseLike[T]]): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   /* static member */
   inline def `using`[R1, R2, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
-    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
+    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, PromiseLike[T]]
   ): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], disposer2.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   /* static member */
   inline def `using`[R1, R2, R3, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
     disposer3: Disposer[R3],
-    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
+    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, PromiseLike[T]]
   ): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], disposer2.asInstanceOf[js.Any], disposer3.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   
   /**
@@ -3905,7 +3903,7 @@ object mod {
   {[ K in keyof T as bluebird.bluebird.PromisifyAllKeys<K> ]: bluebird.bluebird.ExtractAsyncMethod<T[K]>}
     */ typings.bluebird.bluebirdStrings.PromisifyAllItems & TopLevel[T]
   
-  type PromisifyAllKeys[T] = $LeftcurlybracketTRightcurlybracketAsync
+  type PromisifyAllKeys[T] = /* template literal string: ${T}Async */ String
   
   trait PromisifyAllOptions[T]
     extends StObject
@@ -3927,7 +3925,7 @@ object mod {
           /* this */ T, 
           /* originalMethod */ js.Function1[/* repeated */ Any, Any], 
           /* defaultPromisifer */ js.Function1[/* repeated */ Any, js.Function1[/* repeated */ Any, Bluebird[Any]]], 
-          js.Function0[js.Thenable[Any]]
+          js.Function0[PromiseLike[Any]]
         ]
       ] = js.undefined
     
@@ -3953,7 +3951,7 @@ object mod {
               /* this */ T, 
               /* originalMethod */ js.Function1[/* repeated */ Any, Any], 
               /* defaultPromisifer */ js.Function1[/* repeated */ Any, js.Function1[/* repeated */ Any, Bluebird[Any]]], 
-              js.Function0[js.Thenable[Any]]
+              js.Function0[PromiseLike[Any]]
             ]
       ): Self = StObject.set(x, "promisifier", value.asInstanceOf[js.Any])
       
@@ -3993,7 +3991,7 @@ object mod {
     }
   }
   
-  type Resolvable[R] = R | js.Thenable[R]
+  type Resolvable[R] = R | PromiseLike[R]
   
   type ResolvableProps[T] = js.Object & typings.bluebird.bluebirdStrings.ResolvableProps & TopLevel[T]
   
@@ -4044,7 +4042,7 @@ object mod {
   }
   
   /** @deprecated Use PromiseLike<T> directly. */
-  type Thenable[T] = js.Thenable[T]
+  type Thenable[T] = PromiseLike[T]
   
   type WithoutLast[T] = js.Array[Any]
 }

@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaActionParameter")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaActionParameter")
 @js.native
-class JavaActionParameter protected ()
+open class JavaActionParameter protected ()
   extends typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter {
   def this(
     model: AbstractModel,
@@ -27,7 +27,7 @@ class JavaActionParameter protected ()
 }
 object JavaActionParameter {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaActionParameter")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaActionParameter")
   @js.native
   val ^ : js.Any = js.native
   
@@ -62,13 +62,13 @@ object JavaActionParameter {
   inline def createInJavaActionUnderParameters(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaActionParameter.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaActionParameter.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaActionParameter.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaActionParameter.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -18,7 +18,7 @@ import typings.mobxStateTree.anon.FnCallType
 import typings.mobxStateTree.anon.FnCallTypeDefaultValueOrFunctionOptionalValues
 import typings.mobxStateTree.anon.FnCallTypeProcessorsName
 import typings.mobxStateTree.anon.FnCallValue
-import typings.mobxStateTree.anon.`0`
+import typings.mobxStateTree.anon.OnInvalidated
 import typings.mobxStateTree.arrayMod.IArrayType
 import typings.mobxStateTree.customMod.CustomTypeOptions
 import typings.mobxStateTree.enumerationMod.UnionStringArray
@@ -48,7 +48,6 @@ import typings.mobxStateTree.typeMod.ISimpleType
 import typings.mobxStateTree.typeMod.IType
 import typings.mobxStateTree.unionMod.ITypeUnion
 import typings.mobxStateTree.unionMod.UnionOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,8 +62,8 @@ object typesMod {
     
     @JSImport("mobx-state-tree/dist/types", "types.Date")
     @js.native
-    def Date: IType[Double | typings.std.Date, Double, typings.std.Date] = js.native
-    inline def Date_=(x: IType[Double | Date, Double, Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+    def Date: IType[Double | js.Date, Double, js.Date] = js.native
+    inline def Date_=(x: IType[Double | js.Date, Double, js.Date]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-state-tree/dist/types", "types.array")
     @js.native
@@ -498,7 +497,7 @@ object typesMod {
     
     inline def frozen[T](): IType[T, T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")().asInstanceOf[IType[T, T, T]]
     inline def frozen[T](defaultValue: T): IType[js.UndefOr[T | Null], T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[IType[js.UndefOr[T | Null], T, T]]
-    inline def frozen[C](subType: IType[C, js.Any, js.Any]): IType[C, C, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")(subType.asInstanceOf[js.Any]).asInstanceOf[IType[C, C, C]]
+    inline def frozen[C](subType: IType[C, Any, Any]): IType[C, C, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("frozen")(subType.asInstanceOf[js.Any]).asInstanceOf[IType[C, C, C]]
     @JSImport("mobx-state-tree/dist/types", "types.frozen")
     @js.native
     def frozen_Ftypes: FnCallDefaultValue = js.native
@@ -532,11 +531,11 @@ object typesMod {
     @js.native
     def literal: FnCallValue = js.native
     inline def literal(value: String): ISimpleType[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[String]]
+    inline def literal(value: js.Date): ISimpleType[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[js.Date]]
     inline def literal(value: Boolean): ISimpleType[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Boolean]]
     inline def literal(value: Double): ISimpleType[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Double]]
     inline def literal(value: Null): ISimpleType[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Null]]
     inline def literal(value: Unit): ISimpleType[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Unit]]
-    inline def literal(value: Date): ISimpleType[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleType[Date]]
     inline def literal_=(x: FnCallValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("literal")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-state-tree/dist/types", "types.map")
@@ -660,10 +659,14 @@ object typesMod {
     @js.native
     def safeReference: Fn0 = js.native
     inline def safeReference[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any]).asInstanceOf[IMaybe[IReferenceType[IT]]]
-    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & AcceptsUndefined): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
+    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptionsGetSet[IT] & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+    inline def safeReference[IT /* <: IAnyComplexType */](subType: IT, options: js.Object & OnInvalidated[IT]): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
     inline def safeReference_=(x: Fn0): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("safeReference")(x.asInstanceOf[js.Any])
     
-    inline def safeReference_IT_IAnyComplexType_IReferenceType[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & `0`): IReferenceType[IT] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IReferenceType[IT]]
+    inline def safeReference_IT_IMaybe[IT /* <: IAnyComplexType */](
+      subType: IT,
+      options: (ReferenceOptionsGetSet[IT] & AcceptsUndefined[IT]) | (js.Object & AcceptsUndefined[IT])
+    ): IMaybe[IReferenceType[IT]] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeReference")(subType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IMaybe[IReferenceType[IT]]]
     
     @JSImport("mobx-state-tree/dist/types", "types.snapshotProcessor")
     @js.native
@@ -702,9 +705,9 @@ object typesMod {
     @JSImport("mobx-state-tree/dist/types", "types.union")
     @js.native
     def union: FnCallOptionsABCDEFGHI = js.native
-    inline def union(dispatchOrType: IAnyType, otherTypes: IAnyType*): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(dispatchOrType.asInstanceOf[js.Any], otherTypes.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
-    inline def union(dispatchOrType: UnionOptions, otherTypes: IAnyType*): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(dispatchOrType.asInstanceOf[js.Any], otherTypes.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
-    inline def union(types: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(types.asInstanceOf[js.Any]).asInstanceOf[IAnyType]
+    inline def union(dispatchOrType: IAnyType, otherTypes: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(scala.List(dispatchOrType.asInstanceOf[js.Any]).`++`(otherTypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IAnyType]
+    inline def union(dispatchOrType: UnionOptions, otherTypes: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(scala.List(dispatchOrType.asInstanceOf[js.Any]).`++`(otherTypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IAnyType]
+    inline def union(types: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IAnyType]
     inline def union[CA, SA, TA, CB, SB, TB](A: IType[CA, SA, TA], B: IType[CB, SB, TB]): ITypeUnion[CA | CB, SA | SB, TA | TB] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB, SA | SB, TA | TB]]
     inline def union[CA, SA, TA, CB, SB, TB](options: UnionOptions, A: IType[CA, SA, TA], B: IType[CB, SB, TB]): ITypeUnion[CA | CB, SA | SB, TA | TB] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB, SA | SB, TA | TB]]
     inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): ITypeUnion[

@@ -1,6 +1,5 @@
 package typings.mdastUtilToHast
 
-import typings.mdast.mod.List
 import typings.mdastUtilToHast.libMod.H
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ object listMod {
   
   type Handler = typings.mdastUtilToHast.libMod.Handler
   
-  type List_ = List
+  type List_ = typings.mdast.mod.List
   
   type Properties = typings.hast.mod.Properties
 }

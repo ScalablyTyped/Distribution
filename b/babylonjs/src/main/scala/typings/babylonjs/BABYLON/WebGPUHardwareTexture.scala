@@ -18,37 +18,37 @@ trait WebGPUHardwareTexture
   /**
     * List of bundles collected in the snapshot rendering mode when the texture is a render target texture
     * The index in this array is the current layer we are rendering into
-    * @hidden
+    * @internal
     */
   var _bundleLists: js.Array[WebGPUBundleList] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _copyInvertYBindGroup: GPUBindGroup = js.native
   
-  /** @hidden */
+  /** @internal */
   var _copyInvertYBindGroupWithOfst: GPUBindGroup = js.native
   
-  /** @hidden */
+  /** @internal */
   var _copyInvertYRenderPassDescr: GPURenderPassDescriptor = js.native
   
   /**
     * Cache for the invertYPreMultiplyAlpha function (see WebGPUTextureHelper)
-    * @hidden
+    * @internal
     */
   var _copyInvertYTempTexture: js.UndefOr[GPUTexture] = js.native
   
   /**
     * Current layer we are rendering into when in snapshot rendering mode (if the texture is a render target texture)
-    * @hidden
+    * @internal
     */
   var _currentLayer: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _mipmapGenBindGroup: js.Array[js.Array[GPUBindGroup]] = js.native
   
   /**
     * Cache of RenderPassDescriptor and BindGroup used when generating mipmaps (see WebGPUTextureHelper.generateMipmaps)
-    * @hidden
+    * @internal
     */
   var _mipmapGenRenderPassDescr: js.Array[js.Array[GPURenderPassDescriptor]] = js.native
   

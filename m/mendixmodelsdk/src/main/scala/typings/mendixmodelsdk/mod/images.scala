@@ -4,6 +4,7 @@ import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ object images {
   
   @JSImport("mendixmodelsdk", "images.Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.images.Image {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -63,7 +64,7 @@ object images {
     */
   @JSImport("mendixmodelsdk", "images.ImageCollection")
   @js.native
-  class ImageCollection protected ()
+  open class ImageCollection protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.images.ImageCollection {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -97,5 +98,54 @@ object images {
     @js.native
     def versionInfo: typings.mendixmodelsdk.imagesMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.imagesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("mendixmodelsdk", "images.MxImageFormat")
+  @js.native
+  open class MxImageFormat protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.images.MxImageFormat {
+    def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+  }
+  object MxImageFormat {
+    
+    @JSImport("mendixmodelsdk", "images.MxImageFormat")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "images.MxImageFormat.Bmp")
+    @js.native
+    def Bmp: typings.mendixmodelsdk.imagesMod.images.MxImageFormat = js.native
+    inline def Bmp_=(x: typings.mendixmodelsdk.imagesMod.images.MxImageFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bmp")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "images.MxImageFormat.Gif")
+    @js.native
+    def Gif: typings.mendixmodelsdk.imagesMod.images.MxImageFormat = js.native
+    inline def Gif_=(x: typings.mendixmodelsdk.imagesMod.images.MxImageFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Gif")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "images.MxImageFormat.Jpg")
+    @js.native
+    def Jpg: typings.mendixmodelsdk.imagesMod.images.MxImageFormat = js.native
+    inline def Jpg_=(x: typings.mendixmodelsdk.imagesMod.images.MxImageFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Jpg")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "images.MxImageFormat.Png")
+    @js.native
+    def Png: typings.mendixmodelsdk.imagesMod.images.MxImageFormat = js.native
+    inline def Png_=(x: typings.mendixmodelsdk.imagesMod.images.MxImageFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Png")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "images.MxImageFormat.Svg")
+    @js.native
+    def Svg: typings.mendixmodelsdk.imagesMod.images.MxImageFormat = js.native
+    inline def Svg_=(x: typings.mendixmodelsdk.imagesMod.images.MxImageFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Svg")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "images.MxImageFormat.Unknown")
+    @js.native
+    def Unknown: typings.mendixmodelsdk.imagesMod.images.MxImageFormat = js.native
+    inline def Unknown_=(x: typings.mendixmodelsdk.imagesMod.images.MxImageFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unknown")(x.asInstanceOf[js.Any])
   }
 }

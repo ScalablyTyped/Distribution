@@ -1,160 +1,87 @@
 package typings.jsSdsl
 
+import typings.jsSdsl.jsSdslInts.`0`
+import typings.jsSdsl.jsSdslInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeNodeMod {
   
-  @JSImport("js-sdsl/dist/cjs/container/TreeContainer/Base/TreeNode", JSImport.Default)
+  @JSImport("js-sdsl/dist/cjs/container/TreeContainer/Base/TreeNode", "TreeNode")
   @js.native
-  open class default[K, V] ()
-    extends StObject
-       with TreeNode[K, V] {
+  open class TreeNode[K, V] () extends StObject {
     def this(key: K) = this()
     def this(key: K, value: V) = this()
     def this(key: Unit, value: V) = this()
     
-    /* CompleteClass */
-    var color: Boolean = js.native
+    var color: TreeNodeColor = js.native
+    
+    var key: js.UndefOr[K] = js.native
+    
+    var left: js.UndefOr[TreeNode[K, V]] = js.native
     
     /**
       * @description Get the next node.
       * @return TreeNode about the next node.
       */
-    /* CompleteClass */
-    override def next(): TreeNode[K, V] = js.native
+    def next(): TreeNode[K, V] = js.native
+    
+    var parent: js.UndefOr[TreeNode[K, V]] = js.native
     
     /**
       * @description Get the pre node.
       * @return TreeNode about the pre node.
       */
-    /* CompleteClass */
-    override def pre(): TreeNode[K, V] = js.native
+    def pre(): TreeNode[K, V] = js.native
     
-    /**
-      * @description Remove this.
-      */
-    /* CompleteClass */
-    override def remove(): Unit = js.native
+    var right: js.UndefOr[TreeNode[K, V]] = js.native
     
     /**
       * @description Rotate left.
       * @return TreeNode about moved to original position after rotation.
       */
-    /* CompleteClass */
-    override def rotateLeft(): TreeNode[K, V] = js.native
+    def rotateLeft(): TreeNode[K, V] = js.native
     
     /**
-      * @description Rotate left.
+      * @description Rotate right.
       * @return TreeNode about moved to original position after rotation.
       */
-    /* CompleteClass */
-    override def rotateRight(): TreeNode[K, V] = js.native
-  }
-  object default {
+    def rotateRight(): TreeNode[K, V] = js.native
     
-    /* static member */
-    @JSImport("js-sdsl/dist/cjs/container/TreeContainer/Base/TreeNode", "default.BLACK")
-    @js.native
-    val BLACK: /* false */ Boolean = js.native
-    
-    /* static member */
-    @JSImport("js-sdsl/dist/cjs/container/TreeContainer/Base/TreeNode", "default.RED")
-    @js.native
-    val RED: /* true */ Boolean = js.native
+    var value: js.UndefOr[V] = js.native
   }
   
-  trait TreeNode[K, V] extends StObject {
+  @JSImport("js-sdsl/dist/cjs/container/TreeContainer/Base/TreeNode", "TreeNodeEnableIndex")
+  @js.native
+  open class TreeNodeEnableIndex[K, V] () extends TreeNode[K, V] {
+    def this(key: K) = this()
+    def this(key: K, value: V) = this()
+    def this(key: Unit, value: V) = this()
     
-    var color: Boolean
+    @JSName("left")
+    var left_TreeNodeEnableIndex: js.UndefOr[TreeNodeEnableIndex[K, V]] = js.native
     
-    var key: js.UndefOr[K] = js.undefined
+    @JSName("parent")
+    var parent_TreeNodeEnableIndex: js.UndefOr[TreeNodeEnableIndex[K, V]] = js.native
     
-    var left: js.UndefOr[TreeNode[K, V]] = js.undefined
+    def recount(): Unit = js.native
     
-    /**
-      * @description Get the next node.
-      * @return TreeNode about the next node.
-      */
-    def next(): TreeNode[K, V]
+    @JSName("right")
+    var right_TreeNodeEnableIndex: js.UndefOr[TreeNodeEnableIndex[K, V]] = js.native
     
-    var parent: js.UndefOr[TreeNode[K, V]] = js.undefined
-    
-    /**
-      * @description Get the pre node.
-      * @return TreeNode about the pre node.
-      */
-    def pre(): TreeNode[K, V]
-    
-    /**
-      * @description Remove this.
-      */
-    def remove(): Unit
-    
-    var right: js.UndefOr[TreeNode[K, V]] = js.undefined
-    
-    /**
-      * @description Rotate left.
-      * @return TreeNode about moved to original position after rotation.
-      */
-    def rotateLeft(): TreeNode[K, V]
-    
-    /**
-      * @description Rotate left.
-      * @return TreeNode about moved to original position after rotation.
-      */
-    def rotateRight(): TreeNode[K, V]
-    
-    var value: js.UndefOr[V] = js.undefined
+    var subTreeSize: Double = js.native
   }
-  object TreeNode {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.jsSdsl.jsSdslInts.`1`
+    - typings.jsSdsl.jsSdslInts.`0`
+  */
+  trait TreeNodeColor extends StObject
+  object TreeNodeColor {
     
-    inline def apply[K, V](
-      color: Boolean,
-      next: () => TreeNode[K, V],
-      pre: () => TreeNode[K, V],
-      remove: () => Unit,
-      rotateLeft: () => TreeNode[K, V],
-      rotateRight: () => TreeNode[K, V]
-    ): TreeNode[K, V] = {
-      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), pre = js.Any.fromFunction0(pre), remove = js.Any.fromFunction0(remove), rotateLeft = js.Any.fromFunction0(rotateLeft), rotateRight = js.Any.fromFunction0(rotateRight))
-      __obj.asInstanceOf[TreeNode[K, V]]
-    }
+    inline def BLACK: `0` = 0.asInstanceOf[`0`]
     
-    extension [Self <: TreeNode[?, ?], K, V](x: Self & (TreeNode[K, V])) {
-      
-      inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-      
-      inline def setLeft(value: TreeNode[K, V]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
-      
-      inline def setNext(value: () => TreeNode[K, V]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
-      
-      inline def setParent(value: TreeNode[K, V]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-      
-      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
-      
-      inline def setPre(value: () => TreeNode[K, V]): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
-      
-      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
-      
-      inline def setRight(value: TreeNode[K, V]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
-      
-      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-      
-      inline def setRotateLeft(value: () => TreeNode[K, V]): Self = StObject.set(x, "rotateLeft", js.Any.fromFunction0(value))
-      
-      inline def setRotateRight(value: () => TreeNode[K, V]): Self = StObject.set(x, "rotateRight", js.Any.fromFunction0(value))
-      
-      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
+    inline def RED: `1` = 1.asInstanceOf[`1`]
   }
 }

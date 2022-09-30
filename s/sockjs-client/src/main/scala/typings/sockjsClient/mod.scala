@@ -1,9 +1,9 @@
 package typings.sockjsClient
 
-import typings.sockjsClient.sockjsClientNumbers.`0`
-import typings.sockjsClient.sockjsClientNumbers.`1`
-import typings.sockjsClient.sockjsClientNumbers.`2`
-import typings.sockjsClient.sockjsClientNumbers.`3`
+import typings.sockjsClient.sockjsClientInts.`0`
+import typings.sockjsClient.sockjsClientInts.`1`
+import typings.sockjsClient.sockjsClientInts.`2`
+import typings.sockjsClient.sockjsClientInts.`3`
 import typings.std.Event
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject

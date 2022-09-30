@@ -1,20 +1,20 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`0`
-import typings.mfiles.mfilesNumbers.`1`
-import typings.mfiles.mfilesNumbers.`2`
-import typings.mfiles.mfilesNumbers.`3`
-import typings.mfiles.mfilesNumbers.`4`
+import typings.mfiles.mfilesInts.`0`
+import typings.mfiles.mfilesInts.`1`
+import typings.mfiles.mfilesInts.`2`
+import typings.mfiles.mfilesInts.`3`
+import typings.mfiles.mfilesInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`0`
-  - typings.mfiles.mfilesNumbers.`1`
-  - typings.mfiles.mfilesNumbers.`2`
-  - typings.mfiles.mfilesNumbers.`3`
-  - typings.mfiles.mfilesNumbers.`4`
+  - typings.mfiles.mfilesInts.`0`
+  - typings.mfiles.mfilesInts.`1`
+  - typings.mfiles.mfilesInts.`2`
+  - typings.mfiles.mfilesInts.`3`
+  - typings.mfiles.mfilesInts.`4`
 */
 trait MFUserOrUserGroupType extends StObject
 object MFUserOrUserGroupType {

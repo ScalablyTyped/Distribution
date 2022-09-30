@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 6.7.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewActionButton")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewActionButton")
 @js.native
-class DataViewActionButton protected () extends DataViewControlBarButton {
+open class DataViewActionButton protected () extends DataViewControlBarButton {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ class DataViewActionButton protected () extends DataViewControlBarButton {
 }
 object DataViewActionButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewActionButton")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewActionButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,13 +57,13 @@ object DataViewActionButton {
   inline def createIn(container: ControlBar): DataViewActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewActionButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewActionButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewActionButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewActionButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewActionButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

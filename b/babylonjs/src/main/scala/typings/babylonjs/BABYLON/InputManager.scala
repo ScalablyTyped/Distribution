@@ -32,13 +32,13 @@ trait InputManager extends StObject {
   
   /**
     * @param mesh - Mesh to invalidate
-    * @hidden
+    * @internal
     */
   def _invalidateMesh(mesh: AbstractMesh): Unit = js.native
   
   /**
-    * @hidden
-    * @returns Boolean if delta for pointer exceeds drag movement threshold
+    * @internal
+    * @internals Boolean if delta for pointer exceeds drag movement threshold
     */
   def _isPointerSwiping(): Boolean = js.native
   

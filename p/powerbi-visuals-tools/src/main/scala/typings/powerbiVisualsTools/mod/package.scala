@@ -1,7 +1,7 @@
 package typings.powerbiVisualsTools.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`0`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

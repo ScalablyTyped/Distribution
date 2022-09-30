@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlternativesSchema
   extends StObject
      with AnySchema[Any]
+     with _ObjectPropertiesSchema[Any]
      with _Schema[Any] {
   
   def conditional(ref: String, options: js.Array[WhenOptions]): this.type = js.native

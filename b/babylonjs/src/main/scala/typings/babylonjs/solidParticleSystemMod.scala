@@ -68,7 +68,7 @@ object solidParticleSystemMod {
       * @param idxInShape index of the particle in the current model
       * @param bInfo model bounding info object
       * @param storage target storage array, if any
-      * @hidden
+      * @internal
       */
     /* private */ var _addParticle: Any = js.native
     
@@ -80,13 +80,13 @@ object solidParticleSystemMod {
     
     /**
       * If the particle intersection must be computed only with the bounding sphere (no bounding box computation, so faster). (Internal use only)
-      * @hidden
+      * @internal
       */
     var _bSphereOnly: Boolean = js.native
     
     /**
       * A number to multiply the bounding sphere radius by in order to reduce it for instance. (Internal use only)
-      * @hidden
+      * @internal
       */
     var _bSphereRadiusFactor: Double = js.native
     
@@ -123,7 +123,7 @@ object solidParticleSystemMod {
     /**
       * Returns an array with unique values of Materials from the passed array
       * @param array the material array to be checked and filtered
-      * @hidden
+      * @internal
       */
     /* private */ var _filterUniqueMaterialId: Any = js.native
     
@@ -156,7 +156,7 @@ object solidParticleSystemMod {
       * @param storage target particle storage
       * @param options
       * @options addShape() passed options
-      * @hidden
+      * @internal
       */
     /* private */ var _insertNewParticle: Any = js.native
     
@@ -193,7 +193,7 @@ object solidParticleSystemMod {
       * @param options the addShape() method  passed options
       * @param model
       * @model the particle model
-      * @hidden
+      * @internal
       */
     /* private */ var _meshBuilder: Any = js.native
     
@@ -217,7 +217,7 @@ object solidParticleSystemMod {
       * Returns a shape Vector3 array from positions float array
       * @param positions float array
       * @returns a vector3 array
-      * @hidden
+      * @internal
       */
     /* private */ var _posToShape: Any = js.native
     
@@ -227,9 +227,7 @@ object solidParticleSystemMod {
     
     /**
       * Rebuilds a particle back to its just built status : if needed, recomputes the custom positions and vertices
-      * @param particle
-      * @param reset
-      * @hidden
+      * @internal
       */
     /* private */ var _rebuildParticle: Any = js.native
     
@@ -237,7 +235,7 @@ object solidParticleSystemMod {
     
     /**
       * Resets the temporary working copy particle
-      * @hidden
+      * @internal
       */
     /* private */ var _resetCopy: Any = js.native
     
@@ -245,13 +243,13 @@ object solidParticleSystemMod {
     
     /**
       * Sets a new Standard Material as _defaultMaterial if not already set.
-      * @hidden
+      * @internal
       */
     /* private */ var _setDefaultMaterial: Any = js.native
     
     /**
       * Sets the material indexes by id materialIndexesById[id] = materialIndex
-      * @hidden
+      * @internal
       */
     /* private */ var _setMaterialIndexesById: Any = js.native
     
@@ -263,7 +261,7 @@ object solidParticleSystemMod {
       * Updates the indicesByMaterial array.
       * Updates the mesh indices array.
       * @returns the SPS
-      * @hidden
+      * @internal
       */
     /* private */ var _sortParticlesByMaterial: Any = js.native
     
@@ -271,7 +269,7 @@ object solidParticleSystemMod {
     
     /**
       * Unrotate the fixed normals in case the mesh was built with pre-rotated particles, ex : use of positionFunction in addShape()
-      * @hidden
+      * @internal
       */
     /* private */ var _unrotateFixedNormals: Any = js.native
     
@@ -287,7 +285,7 @@ object solidParticleSystemMod {
       * Returns a shapeUV array from a float uvs (array deep copy)
       * @param uvs as a float array
       * @returns a shapeUV array
-      * @hidden
+      * @internal
       */
     /* private */ var _uvsToShapeUV: Any = js.native
     

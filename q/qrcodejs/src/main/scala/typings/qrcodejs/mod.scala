@@ -1,9 +1,9 @@
 package typings.qrcodejs
 
-import typings.qrcodejs.qrcodejsNumbers.`0`
-import typings.qrcodejs.qrcodejsNumbers.`1`
-import typings.qrcodejs.qrcodejsNumbers.`2`
-import typings.qrcodejs.qrcodejsNumbers.`3`
+import typings.qrcodejs.qrcodejsInts.`0`
+import typings.qrcodejs.qrcodejsInts.`1`
+import typings.qrcodejs.qrcodejsInts.`2`
+import typings.qrcodejs.qrcodejsInts.`3`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

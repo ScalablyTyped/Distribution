@@ -1,52 +1,34 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DexiePopulateEvent extends js.Object {
+trait DexiePopulateEvent extends StObject {
   
-  def fire(trans: Transaction): js.Any = js.native
+  def fire(trans: Transaction): Any
   
-  def subscribe(fn: js.Function1[/* trans */ Transaction, _]): Unit = js.native
+  def subscribe(fn: js.Function1[/* trans */ Transaction, Any]): Unit
   
-  def unsubscribe(fn: js.Function1[/* trans */ Transaction, _]): Unit = js.native
+  def unsubscribe(fn: js.Function1[/* trans */ Transaction, Any]): Unit
 }
 object DexiePopulateEvent {
   
-  @scala.inline
-  def apply(
-    fire: Transaction => js.Any,
-    subscribe: js.Function1[/* trans */ Transaction, _] => Unit,
-    unsubscribe: js.Function1[/* trans */ Transaction, _] => Unit
+  inline def apply(
+    fire: Transaction => Any,
+    subscribe: js.Function1[/* trans */ Transaction, Any] => Unit,
+    unsubscribe: js.Function1[/* trans */ Transaction, Any] => Unit
   ): DexiePopulateEvent = {
     val __obj = js.Dynamic.literal(fire = js.Any.fromFunction1(fire), subscribe = js.Any.fromFunction1(subscribe), unsubscribe = js.Any.fromFunction1(unsubscribe))
     __obj.asInstanceOf[DexiePopulateEvent]
   }
   
-  @scala.inline
-  implicit class DexiePopulateEventOps[Self <: DexiePopulateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DexiePopulateEvent](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setFire(value: Transaction => Any): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setSubscribe(value: js.Function1[/* trans */ Transaction, Any] => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFire(value: Transaction => js.Any): Self = this.set("fire", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubscribe(value: js.Function1[/* trans */ Transaction, _] => Unit): Self = this.set("subscribe", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnsubscribe(value: js.Function1[/* trans */ Transaction, _] => Unit): Self = this.set("unsubscribe", js.Any.fromFunction1(value))
+    inline def setUnsubscribe(value: js.Function1[/* trans */ Transaction, Any] => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
   }
 }

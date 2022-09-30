@@ -9,6 +9,7 @@ import typings.promiseBreaker.mod.PromiseBreaker.Callback
 import typings.promiseBreaker.mod.PromiseBreaker.MakeBreakOptions
 import typings.promiseBreaker.mod.PromiseBreaker.PromiseBreaker
 import typings.std.PromiseConstructor
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +50,10 @@ object mod {
   inline def apply(fn: js.Function, thisArg: Any, args: Unit, done: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], args.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(fn: js.Function, thisArg: Unit, args: js.Array[Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def call(fn: js.Function, thisArg: Any, parameters: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")((List(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
-  inline def call(fn: js.Function, thisArg: Unit, parameters: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")((List(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
+  inline def call(fn: js.Function, thisArg: Any, parameters: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")((scala.List(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
+  inline def call(fn: js.Function, thisArg: Unit, parameters: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")((scala.List(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(parameters.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
   
-  inline def callWithCb(fn: js.Function, thisArg: Any, parametersAndCallback: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callWithCb")((List(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(parametersAndCallback.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def callWithCb(fn: js.Function, thisArg: Any, parametersAndCallback: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callWithCb")((scala.List(fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(parametersAndCallback.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   inline def make[R](asyncFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, js.Promise[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(asyncFn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, js.Promise[R]]]
   inline def make[R](options: MakeBreakOptions, asyncFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, js.Promise[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(options.asInstanceOf[js.Any], asyncFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, js.Promise[R]]]
@@ -158,21 +159,21 @@ object mod {
       @JSName("apply")
       def apply(fn: js.Function, thisArg: Unit, args: js.Array[Any]): js.Promise[Any] = js.native
       
-      def break[R](options: MakeBreakOptions, promiseFn: js.Function0[js.Thenable[R]]): BrokenFn0[R] = js.native
+      def break[R](options: MakeBreakOptions, promiseFn: js.Function0[PromiseLike[R]]): BrokenFn0[R] = js.native
       def break[R](options: MakeBreakOptions, promiseFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, js.Promise[R]] = js.native
-      def break[R](promiseFn: js.Function0[js.Thenable[R]]): BrokenFn0[R] = js.native
+      def break[R](promiseFn: js.Function0[PromiseLike[R]]): BrokenFn0[R] = js.native
       def break[R](promiseFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, js.Promise[R]] = js.native
-      def break[T1, T2, R](options: MakeBreakOptions, promiseFn: js.Function2[/* p1 */ T1, /* p2 */ T2, js.Thenable[R]]): BrokenFn2[T1, T2, R] = js.native
-      def break[T1, T2, R](promiseFn: js.Function2[/* p1 */ T1, /* p2 */ T2, js.Thenable[R]]): BrokenFn2[T1, T2, R] = js.native
+      def break[T1, T2, R](options: MakeBreakOptions, promiseFn: js.Function2[/* p1 */ T1, /* p2 */ T2, PromiseLike[R]]): BrokenFn2[T1, T2, R] = js.native
+      def break[T1, T2, R](promiseFn: js.Function2[/* p1 */ T1, /* p2 */ T2, PromiseLike[R]]): BrokenFn2[T1, T2, R] = js.native
       def break[T1, T2, T3, R](
         options: MakeBreakOptions,
-        promiseFn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, js.Thenable[R]]
+        promiseFn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, PromiseLike[R]]
       ): BrokenFn3[T1, T2, T3, R] = js.native
-      def break[T1, T2, T3, R](promiseFn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, js.Thenable[R]]): BrokenFn3[T1, T2, T3, R] = js.native
+      def break[T1, T2, T3, R](promiseFn: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, PromiseLike[R]]): BrokenFn3[T1, T2, T3, R] = js.native
       @JSName("break")
-      def break_T1R_BrokenFn1[T1, R](options: MakeBreakOptions, promiseFn: js.Function1[/* p1 */ T1, js.Thenable[R]]): BrokenFn1[T1, R] = js.native
+      def break_T1R_BrokenFn1[T1, R](options: MakeBreakOptions, promiseFn: js.Function1[/* p1 */ T1, PromiseLike[R]]): BrokenFn1[T1, R] = js.native
       @JSName("break")
-      def break_T1R_BrokenFn1[T1, R](promiseFn: js.Function1[/* p1 */ T1, js.Thenable[R]]): BrokenFn1[T1, R] = js.native
+      def break_T1R_BrokenFn1[T1, R](promiseFn: js.Function1[/* p1 */ T1, PromiseLike[R]]): BrokenFn1[T1, R] = js.native
       
       def call(fn: js.Function, thisArg: Any, parameters: Any*): js.Promise[Any] = js.native
       def call(fn: js.Function, thisArg: Unit, parameters: Any*): js.Promise[Any] = js.native

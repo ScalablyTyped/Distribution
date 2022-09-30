@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("electron-builder", "AppInfo")
   @js.native
-  class AppInfo protected ()
+  open class AppInfo protected ()
     extends typings.appBuilderLib.mod.AppInfo {
     def this(info: typings.appBuilderLib.packagerMod.Packager) = this()
     def this(info: typings.appBuilderLib.packagerMod.Packager, buildVersion: String) = this()
@@ -53,12 +53,14 @@ object mod {
     
     /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 & Double = js.native
     
+    /* 4 */ val universal: typings.builderUtil.archMod.Arch.universal & Double = js.native
+    
     /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
   }
   
   @JSImport("electron-builder", "CancellationToken")
   @js.native
-  class CancellationToken ()
+  open class CancellationToken ()
     extends typings.builderUtilRuntime.mod.CancellationToken {
     def this(parent: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken) = this()
   }
@@ -73,7 +75,7 @@ object mod {
   
   @JSImport("electron-builder", "Packager")
   @js.native
-  class Packager protected ()
+  open class Packager protected ()
     extends typings.appBuilderLib.mod.Packager {
     def this(options: PackagerOptions) = this()
     def this(options: PackagerOptions, cancellationToken: typings.builderUtilRuntime.mod.CancellationToken) = this()
@@ -81,7 +83,7 @@ object mod {
   
   @JSImport("electron-builder", "Platform")
   @js.native
-  class Platform protected ()
+  open class Platform protected ()
     extends typings.appBuilderLib.mod.Platform {
     def this(
       name: String,
@@ -118,7 +120,7 @@ object mod {
   
   @JSImport("electron-builder", "PublishManager")
   @js.native
-  class PublishManager protected ()
+  open class PublishManager protected ()
     extends typings.appBuilderLib.mod.PublishManager {
     def this(packager: typings.appBuilderLib.packagerMod.Packager, publishOptions: PublishOptions) = this()
     def this(
@@ -150,4 +152,5 @@ object mod {
   inline def createTargets(platforms: js.Array[typings.appBuilderLib.mod.Platform], `type`: Unit, arch: String): Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[typings.appBuilderLib.mod.Platform, Map[Arch, js.Array[String]]]]
   
   inline def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getArchSuffix(arch: Arch, defaultArch: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any], defaultArch.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,10 +2,10 @@ package typings.firemonkeyBrowser
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firemonkeyBrowser.anon.Mimetype
-import typings.firemonkeyBrowser.firemonkeyBrowserNumbers.`1`
-import typings.firemonkeyBrowser.firemonkeyBrowserNumbers.`2`
-import typings.firemonkeyBrowser.firemonkeyBrowserNumbers.`3`
-import typings.firemonkeyBrowser.firemonkeyBrowserNumbers.`4`
+import typings.firemonkeyBrowser.firemonkeyBrowserInts.`1`
+import typings.firemonkeyBrowser.firemonkeyBrowserInts.`2`
+import typings.firemonkeyBrowser.firemonkeyBrowserInts.`3`
+import typings.firemonkeyBrowser.firemonkeyBrowserInts.`4`
 import typings.firemonkeyBrowser.firemonkeyBrowserStrings.Firefox
 import typings.firemonkeyBrowser.firemonkeyBrowserStrings.Mozilla
 import typings.firemonkeyBrowser.firemonkeyBrowserStrings.OK

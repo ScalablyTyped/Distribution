@@ -47,6 +47,7 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -2168,7 +2169,7 @@ object dxTreeList {
   object RowInsertingEvent {
     
     inline def apply[TRowData, TKey](
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxTreeList[TRowData, TKey],
       data: TRowData,
       element: DxElement_[HTMLElement]
@@ -2288,7 +2289,7 @@ object dxTreeList {
   object RowRemovingEvent {
     
     inline def apply[TRowData, TKey](
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxTreeList[TRowData, TKey],
       data: TRowData,
       element: DxElement_[HTMLElement],
@@ -2324,7 +2325,7 @@ object dxTreeList {
   object RowUpdatingEvent {
     
     inline def apply[TRowData, TKey](
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxTreeList[TRowData, TKey],
       element: DxElement_[HTMLElement],
       key: TKey,

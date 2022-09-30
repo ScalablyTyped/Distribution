@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ReferenceSetSource")
 @js.native
-class ReferenceSetSource protected ()
+open class ReferenceSetSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ReferenceSetSource {
   def this(
     model: AbstractModel,

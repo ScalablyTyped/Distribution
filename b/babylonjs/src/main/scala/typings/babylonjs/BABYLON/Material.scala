@@ -51,14 +51,14 @@ trait Material
     */
   /* private */ var _cachedDepthWriteState: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventBindForSubMesh(eventData: MaterialPluginBindForSubMesh): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventFillRenderTargetTextures(eventData: MaterialPluginFillRenderTargetTextures): Unit = js.native
   
   def _callbackPluginEventGeneric(id: Double, info: MaterialPluginDisposed): Unit = js.native
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventGeneric(id: Double, info: MaterialPluginGetActiveTextures): Unit = js.native
   def _callbackPluginEventGeneric(id: Double, info: MaterialPluginGetAnimatables): Unit = js.native
   def _callbackPluginEventGeneric(id: Double, info: MaterialPluginGetDefineNames): Unit = js.native
@@ -66,19 +66,19 @@ trait Material
   def _callbackPluginEventGeneric(id: Double, info: MaterialPluginPrepareEffect): Unit = js.native
   def _callbackPluginEventGeneric(id: Double, info: MaterialPluginPrepareUniformBuffer): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventHardBindForSubMesh(eventData: MaterialPluginHardBindForSubMesh): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventHasRenderTargetTextures(eventData: MaterialPluginHasRenderTargetTextures): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventIsReadyForSubMesh(eventData: MaterialPluginIsReadyForSubMesh): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventPrepareDefines(eventData: MaterialPluginPrepareDefines): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _callbackPluginEventPrepareDefinesBeforeAttributes(eventData: MaterialPluginPrepareDefines): Unit = js.native
   
   /**
@@ -86,7 +86,7 @@ trait Material
     */
   /* protected */ var _cullBackFaces: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _dirtyCallbacks: NumberDictionary[js.Function0[Unit]] = js.native
   
   /**
@@ -113,13 +113,13 @@ trait Material
     */
   /* protected */ var _forceAlphaTest: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   def _getDrawWrapper(): DrawWrapper = js.native
   
-  /** @hidden */
+  /** @internal */
   var _indexInSceneMaterialArray: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _loadedUniqueId: String = js.native
   
   /**
@@ -184,7 +184,7 @@ trait Material
   /* protected */ def _markScenePrePassDirty(): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     * Stores the effects for the material
     */
   /* protected */ var _materialContext: js.UndefOr[IMaterialContext] = js.native
@@ -212,13 +212,11 @@ trait Material
   
   /* private */ var _onUnBindObservable: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _parentContainer: Nullable[AbstractScene] = js.native
   
   /**
-    * @param effect
-    * @param overrideOrientation
-    * @hidden
+    * @internal
     */
   def _preBind(): Boolean = js.native
   def _preBind(effect: Unit, overrideOrientation: Nullable[Double]): Boolean = js.native
@@ -233,8 +231,7 @@ trait Material
   /* private */ var _scene: Any = js.native
   
   /**
-    * @param drawWrapper
-    * @hidden
+    * @internal
     */
   def _setDrawWrapper(drawWrapper: DrawWrapper): Unit = js.native
   
@@ -245,7 +242,7 @@ trait Material
   /* protected */ def _shouldTurnAlphaTestOn(mesh: AbstractMesh): Boolean = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _storeEffectOnSubMeshes: Boolean = js.native
   
@@ -256,11 +253,11 @@ trait Material
   
   /**
     * Stores the uniform buffer
-    * @hidden
+    * @internal
     */
   var _uniformBuffer: UniformBuffer = js.native
   
-  /** @hidden */
+  /** @internal */
   var _uniformBufferLayoutBuilt: Boolean = js.native
   
   /**
@@ -690,7 +687,7 @@ trait Material
     */
   def markDirty(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var meshMap: Nullable[org.scalablytyped.runtime.StringDictionary[js.UndefOr[AbstractMesh]]] = js.native
   
   /**
@@ -791,9 +788,7 @@ trait Material
   def pointsCloud_=(value: Boolean): Unit = js.native
   
   /**
-    * @param mesh
-    * @param forceDisposeEffect
-    * @hidden
+    * @internal
     */
   /* private */ var releaseVertexArrayObject: Any = js.native
   

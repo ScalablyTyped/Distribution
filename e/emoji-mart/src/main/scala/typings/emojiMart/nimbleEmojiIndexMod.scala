@@ -196,27 +196,27 @@ object nimbleEmojiIndexMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.emojiMart.emojiMartNumbers.`1`
-    - typings.emojiMart.emojiMartNumbers.`2`
-    - typings.emojiMart.emojiMartNumbers.`3`
-    - typings.emojiMart.emojiMartNumbers.`4`
-    - typings.emojiMart.emojiMartNumbers.`5`
-    - typings.emojiMart.emojiMartNumbers.`6`
+    - typings.emojiMart.emojiMartInts.`1`
+    - typings.emojiMart.emojiMartInts.`2`
+    - typings.emojiMart.emojiMartInts.`3`
+    - typings.emojiMart.emojiMartInts.`4`
+    - typings.emojiMart.emojiMartInts.`5`
+    - typings.emojiMart.emojiMartInts.`6`
   */
   trait EmojiSkin extends StObject
   object EmojiSkin {
     
-    inline def `1`: typings.emojiMart.emojiMartNumbers.`1` = 1.asInstanceOf[typings.emojiMart.emojiMartNumbers.`1`]
+    inline def `1`: typings.emojiMart.emojiMartInts.`1` = 1.asInstanceOf[typings.emojiMart.emojiMartInts.`1`]
     
-    inline def `2`: typings.emojiMart.emojiMartNumbers.`2` = 2.asInstanceOf[typings.emojiMart.emojiMartNumbers.`2`]
+    inline def `2`: typings.emojiMart.emojiMartInts.`2` = 2.asInstanceOf[typings.emojiMart.emojiMartInts.`2`]
     
-    inline def `3`: typings.emojiMart.emojiMartNumbers.`3` = 3.asInstanceOf[typings.emojiMart.emojiMartNumbers.`3`]
+    inline def `3`: typings.emojiMart.emojiMartInts.`3` = 3.asInstanceOf[typings.emojiMart.emojiMartInts.`3`]
     
-    inline def `4`: typings.emojiMart.emojiMartNumbers.`4` = 4.asInstanceOf[typings.emojiMart.emojiMartNumbers.`4`]
+    inline def `4`: typings.emojiMart.emojiMartInts.`4` = 4.asInstanceOf[typings.emojiMart.emojiMartInts.`4`]
     
-    inline def `5`: typings.emojiMart.emojiMartNumbers.`5` = 5.asInstanceOf[typings.emojiMart.emojiMartNumbers.`5`]
+    inline def `5`: typings.emojiMart.emojiMartInts.`5` = 5.asInstanceOf[typings.emojiMart.emojiMartInts.`5`]
     
-    inline def `6`: typings.emojiMart.emojiMartNumbers.`6` = 6.asInstanceOf[typings.emojiMart.emojiMartNumbers.`6`]
+    inline def `6`: typings.emojiMart.emojiMartInts.`6` = 6.asInstanceOf[typings.emojiMart.emojiMartInts.`6`]
   }
   
   @js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mendixmodelsdk" : "4.43.0"
+      "mendixmodelsdk" : "4.67.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mendixmodelsdk" : "4.43.0"
+      "mendixmodelsdk" : "4.67.0"
     }
   ],
   "compile-devDependencies" : [

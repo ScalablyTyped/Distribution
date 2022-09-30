@@ -1,8 +1,8 @@
 package typings.naturalCompareLite
 
-import typings.naturalCompareLite.naturalCompareLiteNumbers.`-1`
-import typings.naturalCompareLite.naturalCompareLiteNumbers.`0`
-import typings.naturalCompareLite.naturalCompareLiteNumbers.`1`
+import typings.naturalCompareLite.naturalCompareLiteInts.`-1`
+import typings.naturalCompareLite.naturalCompareLiteInts.`0`
+import typings.naturalCompareLite.naturalCompareLiteInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

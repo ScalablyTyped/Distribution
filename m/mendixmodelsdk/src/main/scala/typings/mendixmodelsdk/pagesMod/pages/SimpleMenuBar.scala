@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/simple-menu-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBar")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SimpleMenuBar")
 @js.native
-class SimpleMenuBar protected () extends MenuWidget {
+open class SimpleMenuBar protected () extends MenuWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ class SimpleMenuBar protected () extends MenuWidget {
 }
 object SimpleMenuBar {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBar")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SimpleMenuBar")
   @js.native
   val ^ : js.Any = js.native
   
@@ -609,13 +609,13 @@ object SimpleMenuBar {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBar.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SimpleMenuBar.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBar.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SimpleMenuBar.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

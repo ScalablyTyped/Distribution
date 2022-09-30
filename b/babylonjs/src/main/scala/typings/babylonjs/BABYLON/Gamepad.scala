@@ -12,7 +12,7 @@ trait Gamepad extends StObject {
     */
   /* protected */ var _invertLeftStickY: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _isConnected: Boolean = js.native
   
   /* private */ var _leftStick: Any = js.native

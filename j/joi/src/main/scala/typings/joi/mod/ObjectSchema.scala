@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectSchema[TSchema]
   extends StObject
      with AnySchema[TSchema]
+     with _ObjectPropertiesSchema[TSchema]
      with _Schema[TSchema] {
   
   /**

@@ -10,33 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object signerRoleMod {
   
-  @JSImport("xadesjs/build/types/xml/signer_role", "CertifiedRole")
+  @JSImport("xadesjs/build/types/src/xml/signer_role", "CertifiedRole")
   @js.native
-  class CertifiedRole () extends EncapsulatedPKIData {
+  open class CertifiedRole () extends EncapsulatedPKIData {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signer_role", "CertifiedRoles")
+  @JSImport("xadesjs/build/types/src/xml/signer_role", "CertifiedRoles")
   @js.native
-  class CertifiedRoles () extends XadesCollection[CertifiedRole] {
+  open class CertifiedRoles () extends XadesCollection[CertifiedRole] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signer_role", "ClaimedRole")
+  @JSImport("xadesjs/build/types/src/xml/signer_role", "ClaimedRole")
   @js.native
-  class ClaimedRole () extends Any {
+  open class ClaimedRole () extends Any {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signer_role", "ClaimedRoles")
+  @JSImport("xadesjs/build/types/src/xml/signer_role", "ClaimedRoles")
   @js.native
-  class ClaimedRoles () extends XadesCollection[ClaimedRole] {
+  open class ClaimedRoles () extends XadesCollection[ClaimedRole] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signer_role", "SignerRole")
+  @JSImport("xadesjs/build/types/src/xml/signer_role", "SignerRole")
   @js.native
-  class SignerRole () extends XadesObject {
+  open class SignerRole () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var CertifiedRoles: typings.xadesjs.signerRoleMod.CertifiedRoles = js.native

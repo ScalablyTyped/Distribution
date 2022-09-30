@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.21.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.IntegerType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.IntegerType")
 @js.native
-class IntegerType protected ()
+open class IntegerType protected ()
   extends typings.mendixmodelsdk.codeactionsMod.codeactions.IntegerType {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class IntegerType protected ()
 }
 object IntegerType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.IntegerType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.IntegerType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +64,13 @@ object IntegerType {
   inline def createInCodeActionUnderActionReturnType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.codeactionsMod.codeactions.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.IntegerType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.IntegerType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.IntegerType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.IntegerType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.IntegerType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

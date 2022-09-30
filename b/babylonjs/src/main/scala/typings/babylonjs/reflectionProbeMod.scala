@@ -94,7 +94,7 @@ object reflectionProbeMod {
     
     /* private */ var _invertYAxis: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _parentContainer: Nullable[AbstractScene] = js.native
     
     /* private */ var _projectionMatrix: Any = js.native

@@ -3,9 +3,12 @@ package typings.electron.Electron
 import typings.electron.electronStrings.`document-user-activation-required`
 import typings.electron.electronStrings.`no-user-gesture-required`
 import typings.electron.electronStrings.`user-gesture-required`
+import typings.electron.electronStrings.animate
+import typings.electron.electronStrings.animateOnce
 import typings.electron.electronStrings.bypassHeatCheck
 import typings.electron.electronStrings.bypassHeatCheckAndEagerCompile
 import typings.electron.electronStrings.code
+import typings.electron.electronStrings.noAnimation
 import typings.electron.electronStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,16 +28,6 @@ trait WebPreferences extends StObject {
     * process preload scripts.
     */
   var additionalArguments: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * When specified, web pages with the same `affinity` will run in the same renderer
-    * process. Note that due to reusing the renderer process, certain `webPreferences`
-    * options will also be shared between the web pages even when you specified
-    * different values for them, including but not limited to `preload`, `sandbox` and
-    * `nodeIntegration`. So it is suggested to use exact same `webPreferences` for web
-    * pages with the same `affinity`. _Deprecated_
-    */
-  var affinity: js.UndefOr[String] = js.undefined
   
   /**
     * Allow an https page to run JavaScript, CSS or plugins from http URLs. Default is
@@ -59,17 +52,17 @@ trait WebPreferences extends StObject {
   
   /**
     * Whether to run Electron APIs and the specified `preload` script in a separate
-    * JavaScript context. Defaults to `false`. The context that the `preload` script
-    * runs in will still have full access to the `document` and `window` globals but
-    * it will use its own set of JavaScript builtins (`Array`, `Object`, `JSON`, etc.)
-    * and will be isolated from any changes made to the global environment by the
-    * loaded page. The Electron API will only be available in the `preload` script and
-    * not the loaded page. This option should be used when loading potentially
-    * untrusted remote content to ensure the loaded content cannot tamper with the
-    * `preload` script and any Electron APIs being used. This option uses the same
-    * technique used by Chrome Content Scripts. You can access this context in the dev
-    * tools by selecting the 'Electron Isolated Context' entry in the combo box at the
-    * top of the Console tab.
+    * JavaScript context. Defaults to `true`. The context that the `preload` script
+    * runs in will only have access to its own dedicated `document` and `window`
+    * globals, as well as its own set of JavaScript builtins (`Array`, `Object`,
+    * `JSON`, etc.), which are all invisible to the loaded content. The Electron API
+    * will only be available in the `preload` script and not the loaded page. This
+    * option should be used when loading potentially untrusted remote content to
+    * ensure the loaded content cannot tamper with the `preload` script and any
+    * Electron APIs being used.  This option uses the same technique used by Chrome
+    * Content Scripts.  You can access this context in the dev tools by selecting the
+    * 'Electron Isolated Context' entry in the combo box at the top of the Console
+    * tab.
     */
   var contextIsolation: js.UndefOr[Boolean] = js.undefined
   
@@ -126,9 +119,12 @@ trait WebPreferences extends StObject {
   var enableBlinkFeatures: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to enable the `remote` module. Default is `false`.
+    * Whether to enable preferred size mode. The preferred size is the minimum size
+    * needed to contain the layout of the document—without requiring scrolling.
+    * Enabling this will cause the `preferred-size-changed` event to be emitted on the
+    * `WebContents` when the preferred size changes. Default is `false`.
     */
-  var enableRemoteModule: js.UndefOr[Boolean] = js.undefined
+  var enablePreferredSizeMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable the WebSQL api. Default is `true`.
@@ -139,6 +135,12 @@ trait WebPreferences extends StObject {
     * Enables Chromium's experimental features. Default is `false`.
     */
   var experimentalFeatures: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies how to run image animations (E.g. GIFs).  Can be `animate`,
+    * `animateOnce` or `noAnimation`.  Default is `animate`.
+    */
+  var imageAnimationPolicy: js.UndefOr[animate | animateOnce | noAnimation] = js.undefined
   
   /**
     * Enables image support. Default is `true`.
@@ -154,13 +156,6 @@ trait WebPreferences extends StObject {
     * Defaults to `0`.
     */
   var minimumFontSize: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * Whether to use native `window.open()`. Defaults to `false`. Child windows will
-    * always have node integration disabled unless `nodeIntegrationInSubFrames` is
-    * true. **Note:** This option is currently experimental.
-    */
-  var nativeWindowOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether dragging and dropping a file or link onto the page causes a navigation.
@@ -239,6 +234,8 @@ trait WebPreferences extends StObject {
   
   /**
     * Enables scroll bounce (rubber banding) effect on macOS. Default is `false`.
+    *
+    * @platform darwin
     */
   var scrollBounce: js.UndefOr[Boolean] = js.undefined
   
@@ -288,14 +285,6 @@ trait WebPreferences extends StObject {
   var webviewTag: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If true, values returned from `webFrame.executeJavaScript` will be sanitized to
-    * ensure JS values can't unsafely cross between worlds when using
-    * `contextIsolation`.  The default is `false`. In Electron 12, the default will be
-    * changed to `true`. _Deprecated_
-    */
-  var worldSafeExecuteJavaScript: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * The default zoom factor of the page, `3.0` represents `300%`. Default is `1.0`.
     */
   var zoomFactor: js.UndefOr[Double] = js.undefined
@@ -317,11 +306,7 @@ object WebPreferences {
     
     inline def setAdditionalArgumentsUndefined: Self = StObject.set(x, "additionalArguments", js.undefined)
     
-    inline def setAdditionalArgumentsVarargs(value: String*): Self = StObject.set(x, "additionalArguments", js.Array(value :_*))
-    
-    inline def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
-    
-    inline def setAffinityUndefined: Self = StObject.set(x, "affinity", js.undefined)
+    inline def setAdditionalArgumentsVarargs(value: String*): Self = StObject.set(x, "additionalArguments", js.Array(value*))
     
     inline def setAllowRunningInsecureContent(value: Boolean): Self = StObject.set(x, "allowRunningInsecureContent", value.asInstanceOf[js.Any])
     
@@ -375,9 +360,9 @@ object WebPreferences {
     
     inline def setEnableBlinkFeaturesUndefined: Self = StObject.set(x, "enableBlinkFeatures", js.undefined)
     
-    inline def setEnableRemoteModule(value: Boolean): Self = StObject.set(x, "enableRemoteModule", value.asInstanceOf[js.Any])
+    inline def setEnablePreferredSizeMode(value: Boolean): Self = StObject.set(x, "enablePreferredSizeMode", value.asInstanceOf[js.Any])
     
-    inline def setEnableRemoteModuleUndefined: Self = StObject.set(x, "enableRemoteModule", js.undefined)
+    inline def setEnablePreferredSizeModeUndefined: Self = StObject.set(x, "enablePreferredSizeMode", js.undefined)
     
     inline def setEnableWebSQL(value: Boolean): Self = StObject.set(x, "enableWebSQL", value.asInstanceOf[js.Any])
     
@@ -386,6 +371,10 @@ object WebPreferences {
     inline def setExperimentalFeatures(value: Boolean): Self = StObject.set(x, "experimentalFeatures", value.asInstanceOf[js.Any])
     
     inline def setExperimentalFeaturesUndefined: Self = StObject.set(x, "experimentalFeatures", js.undefined)
+    
+    inline def setImageAnimationPolicy(value: animate | animateOnce | noAnimation): Self = StObject.set(x, "imageAnimationPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setImageAnimationPolicyUndefined: Self = StObject.set(x, "imageAnimationPolicy", js.undefined)
     
     inline def setImages(value: Boolean): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
@@ -398,10 +387,6 @@ object WebPreferences {
     inline def setMinimumFontSize(value: Double): Self = StObject.set(x, "minimumFontSize", value.asInstanceOf[js.Any])
     
     inline def setMinimumFontSizeUndefined: Self = StObject.set(x, "minimumFontSize", js.undefined)
-    
-    inline def setNativeWindowOpen(value: Boolean): Self = StObject.set(x, "nativeWindowOpen", value.asInstanceOf[js.Any])
-    
-    inline def setNativeWindowOpenUndefined: Self = StObject.set(x, "nativeWindowOpen", js.undefined)
     
     inline def setNavigateOnDragDrop(value: Boolean): Self = StObject.set(x, "navigateOnDragDrop", value.asInstanceOf[js.Any])
     
@@ -478,10 +463,6 @@ object WebPreferences {
     inline def setWebviewTag(value: Boolean): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
     
     inline def setWebviewTagUndefined: Self = StObject.set(x, "webviewTag", js.undefined)
-    
-    inline def setWorldSafeExecuteJavaScript(value: Boolean): Self = StObject.set(x, "worldSafeExecuteJavaScript", value.asInstanceOf[js.Any])
-    
-    inline def setWorldSafeExecuteJavaScriptUndefined: Self = StObject.set(x, "worldSafeExecuteJavaScript", js.undefined)
     
     inline def setZoomFactor(value: Double): Self = StObject.set(x, "zoomFactor", value.asInstanceOf[js.Any])
     

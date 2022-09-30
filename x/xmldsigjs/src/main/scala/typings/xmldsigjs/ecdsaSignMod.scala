@@ -29,17 +29,17 @@ object ecdsaSignMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/ecdsa_sign", "EcdsaSha1")
   @js.native
-  class EcdsaSha1 () extends SignatureAlgorithm
+  open class EcdsaSha1 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/ecdsa_sign", "EcdsaSha256")
   @js.native
-  class EcdsaSha256 () extends SignatureAlgorithm
+  open class EcdsaSha256 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/ecdsa_sign", "EcdsaSha384")
   @js.native
-  class EcdsaSha384 () extends SignatureAlgorithm
+  open class EcdsaSha384 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/ecdsa_sign", "EcdsaSha512")
   @js.native
-  class EcdsaSha512 () extends SignatureAlgorithm
+  open class EcdsaSha512 () extends SignatureAlgorithm
 }

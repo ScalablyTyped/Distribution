@@ -38,11 +38,6 @@ object hashContainerHashMapMod {
       */
     def getElementByKey(key: K): js.UndefOr[V] = js.native
     
-    /* protected */ @JSName("hashTable")
-    var hashTable_HashMap: js.Array[
-        (typings.jsSdsl.sequentialContainerVectorMod.default[js.Tuple2[K, V]]) | (typings.jsSdsl.treeContainerOrderedMapMod.default[K, V])
-      ] = js.native
-    
     @JSName(js.Symbol.iterator)
     var iterator_HashMap: js.Function0[Generator[js.Tuple2[K, V], Unit, Any]] = js.native
     

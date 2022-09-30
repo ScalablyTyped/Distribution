@@ -46,6 +46,7 @@ import typings.mocha.mochaStrings.suite
 import typings.mocha.mochaStrings.test
 import typings.mocha.mochaStrings.waiting
 import typings.std.HTMLLIElement
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -446,7 +447,7 @@ object Mocha {
   /**
     * Async callback function used for tests and hooks.
     */
-  type AsyncFunc = js.ThisFunction0[/* this */ Context, js.Thenable[Any]]
+  type AsyncFunc = js.ThisFunction0[/* this */ Context, PromiseLike[Any]]
   
   // #endregion Runnable untyped events
   /**

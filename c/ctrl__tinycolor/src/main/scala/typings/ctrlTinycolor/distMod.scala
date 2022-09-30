@@ -266,14 +266,14 @@ object distMod {
       */
     def toRgbString(): String = js.native
     
+    def toString[T /* <: ColorFormats */](format: T): String = js.native
     /**
       * String representation of the color.
       *
       * @param format - The format to be used when displaying the string representation.
       */
-    def toString[T /* <: name */](format: T): Boolean | String = js.native
     @JSName("toString")
-    def toString_T_ColorFormats_String[T /* <: ColorFormats */](format: T): String = js.native
+    def toString_T_Union[T /* <: name */](format: T): Boolean | String = js.native
     
     /**
       * Alias for `polyad(3)`

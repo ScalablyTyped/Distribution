@@ -27,7 +27,7 @@ trait CreateEnvironmentTemplateVersionInput extends StObject {
   var source: TemplateVersionSourceInput
   
   /**
-    * An optional list of metadata items that you can associate with the Proton environment template version. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * An optional list of metadata items that you can associate with the Proton environment template version. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   

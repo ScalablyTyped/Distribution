@@ -1,36 +1,36 @@
 package typings.activexInfopath.InfoPath
 
-import typings.activexInfopath.activexInfopathNumbers.`0`
-import typings.activexInfopath.activexInfopathNumbers.`10`
-import typings.activexInfopath.activexInfopathNumbers.`11`
-import typings.activexInfopath.activexInfopathNumbers.`12`
-import typings.activexInfopath.activexInfopathNumbers.`1`
-import typings.activexInfopath.activexInfopathNumbers.`2`
-import typings.activexInfopath.activexInfopathNumbers.`3`
-import typings.activexInfopath.activexInfopathNumbers.`4`
-import typings.activexInfopath.activexInfopathNumbers.`5`
-import typings.activexInfopath.activexInfopathNumbers.`6`
-import typings.activexInfopath.activexInfopathNumbers.`7`
-import typings.activexInfopath.activexInfopathNumbers.`8`
-import typings.activexInfopath.activexInfopathNumbers.`9`
+import typings.activexInfopath.activexInfopathInts.`0`
+import typings.activexInfopath.activexInfopathInts.`10`
+import typings.activexInfopath.activexInfopathInts.`11`
+import typings.activexInfopath.activexInfopathInts.`12`
+import typings.activexInfopath.activexInfopathInts.`1`
+import typings.activexInfopath.activexInfopathInts.`2`
+import typings.activexInfopath.activexInfopathInts.`3`
+import typings.activexInfopath.activexInfopathInts.`4`
+import typings.activexInfopath.activexInfopathInts.`5`
+import typings.activexInfopath.activexInfopathInts.`6`
+import typings.activexInfopath.activexInfopathInts.`7`
+import typings.activexInfopath.activexInfopathInts.`8`
+import typings.activexInfopath.activexInfopathInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexInfopath.activexInfopathNumbers.`9`
-  - typings.activexInfopath.activexInfopathNumbers.`5`
-  - typings.activexInfopath.activexInfopathNumbers.`2`
-  - typings.activexInfopath.activexInfopathNumbers.`1`
-  - typings.activexInfopath.activexInfopathNumbers.`6`
-  - typings.activexInfopath.activexInfopathNumbers.`8`
-  - typings.activexInfopath.activexInfopathNumbers.`4`
-  - typings.activexInfopath.activexInfopathNumbers.`0`
-  - typings.activexInfopath.activexInfopathNumbers.`12`
-  - typings.activexInfopath.activexInfopathNumbers.`11`
-  - typings.activexInfopath.activexInfopathNumbers.`7`
-  - typings.activexInfopath.activexInfopathNumbers.`3`
-  - typings.activexInfopath.activexInfopathNumbers.`10`
+  - typings.activexInfopath.activexInfopathInts.`9`
+  - typings.activexInfopath.activexInfopathInts.`5`
+  - typings.activexInfopath.activexInfopathInts.`2`
+  - typings.activexInfopath.activexInfopathInts.`1`
+  - typings.activexInfopath.activexInfopathInts.`6`
+  - typings.activexInfopath.activexInfopathInts.`8`
+  - typings.activexInfopath.activexInfopathInts.`4`
+  - typings.activexInfopath.activexInfopathInts.`0`
+  - typings.activexInfopath.activexInfopathInts.`12`
+  - typings.activexInfopath.activexInfopathInts.`11`
+  - typings.activexInfopath.activexInfopathInts.`7`
+  - typings.activexInfopath.activexInfopathInts.`3`
+  - typings.activexInfopath.activexInfopathInts.`10`
 */
 trait XdTaskPaneType extends StObject
 object XdTaskPaneType {

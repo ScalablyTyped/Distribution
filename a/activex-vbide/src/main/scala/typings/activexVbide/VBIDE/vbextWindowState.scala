@@ -1,16 +1,16 @@
 package typings.activexVbide.VBIDE
 
-import typings.activexVbide.activexVbideNumbers.`0`
-import typings.activexVbide.activexVbideNumbers.`1`
-import typings.activexVbide.activexVbideNumbers.`2`
+import typings.activexVbide.activexVbideInts.`0`
+import typings.activexVbide.activexVbideInts.`1`
+import typings.activexVbide.activexVbideInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexVbide.activexVbideNumbers.`2`
-  - typings.activexVbide.activexVbideNumbers.`1`
-  - typings.activexVbide.activexVbideNumbers.`0`
+  - typings.activexVbide.activexVbideInts.`2`
+  - typings.activexVbide.activexVbideInts.`1`
+  - typings.activexVbide.activexVbideInts.`0`
 */
 trait vbextWindowState extends StObject
 object vbextWindowState {

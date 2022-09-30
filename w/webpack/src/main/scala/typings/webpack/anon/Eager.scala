@@ -12,7 +12,7 @@ trait Eager extends StObject {
   
   def get(): js.Promise[Any]
   
-  var loaded: js.UndefOr[typings.webpack.webpackNumbers.`1`] = js.undefined
+  var loaded: js.UndefOr[typings.webpack.webpackInts.`1`] = js.undefined
 }
 object Eager {
   
@@ -29,7 +29,7 @@ object Eager {
     
     inline def setGet(value: () => js.Promise[Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    inline def setLoaded(value: typings.webpack.webpackNumbers.`1`): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: typings.webpack.webpackInts.`1`): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
   }

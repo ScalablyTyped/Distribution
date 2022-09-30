@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "codeactions.StringTemplateParameterGrammar")
 @js.native
-class StringTemplateParameterGrammar protected ()
+open class StringTemplateParameterGrammar protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.StringTemplateParameterGrammar {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

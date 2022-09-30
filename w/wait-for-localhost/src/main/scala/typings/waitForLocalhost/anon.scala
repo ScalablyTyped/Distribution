@@ -1,7 +1,7 @@
 package typings.waitForLocalhost
 
-import typings.waitForLocalhost.waitForLocalhostNumbers.`4`
-import typings.waitForLocalhost.waitForLocalhostNumbers.`6`
+import typings.waitForLocalhost.waitForLocalhostInts.`4`
+import typings.waitForLocalhost.waitForLocalhostInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

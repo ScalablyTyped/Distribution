@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "p-memoize"
-version := "4.0.1-2a17ff"
-scalaVersion := "3.0.1"
+version := "7.1.0-f839bc"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "mem" % "8.0.0-0e69ad",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "type-fest" % "3.0.0-e72bbe")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

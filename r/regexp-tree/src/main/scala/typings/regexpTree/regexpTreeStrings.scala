@@ -39,14 +39,6 @@ object regexpTreeStrings {
   inline def Backreference: Backreference = "Backreference".asInstanceOf[Backreference]
   
   @js.native
-  sealed trait BackslashB extends StObject
-  inline def BackslashB: BackslashB = "\\B".asInstanceOf[BackslashB]
-  
-  @js.native
-  sealed trait Backslashb extends StObject
-  inline def Backslashb: Backslashb = "\\b".asInstanceOf[Backslashb]
-  
-  @js.native
   sealed trait Char
     extends StObject
        with AstClass

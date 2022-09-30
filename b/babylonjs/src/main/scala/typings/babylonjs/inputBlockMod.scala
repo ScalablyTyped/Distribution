@@ -44,28 +44,21 @@ object inputBlockMod {
     
     /* private */ var _mode: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _noContextSwitch: Boolean = js.native
     
     /* private */ var _storedValue: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _systemValue: Nullable[NodeMaterialSystemValues] = js.native
     
     /**
-      * @param effect
-      * @param scene
-      * @param material
-      * @hidden
+      * @internal
       */
     def _transmit(effect: Effect, scene: Scene, material: NodeMaterial): Unit = js.native
     
     /**
-      * @param effect
-      * @param world
-      * @param worldView
-      * @param worldViewProjection
-      * @hidden
+      * @internal
       */
     def _transmitWorld(effect: Effect, world: Matrix, worldView: Matrix, worldViewProjection: Matrix): Unit = js.native
     

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "lru-memoizer"
-version := "2.1.4-e96329"
+version := "2.1.4-6223c6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "lru-cache" % "7.14.0-460dbe",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "lru-cache" % "7.14.0-2df53c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

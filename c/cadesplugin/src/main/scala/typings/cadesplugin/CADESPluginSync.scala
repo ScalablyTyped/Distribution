@@ -22,7 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait CADESPluginSync
-  extends CADESPluginBase
+  extends StObject
+     with CADESPluginBase
      with CADESPlugin {
   
   @JSName("CreateObject")
@@ -41,12 +42,4 @@ trait CADESPluginSync
   def CreateObject_CAdESCOMRawSignature(objName: CAdESCOMDotRawSignature): RawSignature = js.native
   @JSName("CreateObject")
   def CreateObject_CAdESCOMSignedXML(objName: CAdESCOMDotSignedXML): SignedXML = js.native
-  
-  /* InferMemberOverrides */
-  override def `then`[B](
-    onFulfilled: js.Function1[scala.Nothing, B | js.Thenable[B]],
-    onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
-  ): js.Promise[B] & js.Thenable[B] = js.native
-  /* InferMemberOverrides */
-  override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] & js.Thenable[B] = js.native
 }

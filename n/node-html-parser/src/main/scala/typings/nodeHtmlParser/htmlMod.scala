@@ -55,6 +55,42 @@ object htmlMod {
       range: js.Tuple2[Double, Double],
       voidTag: typings.nodeHtmlParser.voidTagMod.default
     ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: Null,
+      range: js.Tuple2[Double, Double],
+      voidTag: Unit,
+      _parseOptions: PartialOptions
+    ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: Null,
+      range: js.Tuple2[Double, Double],
+      voidTag: typings.nodeHtmlParser.voidTagMod.default,
+      _parseOptions: PartialOptions
+    ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: HTMLElement,
+      range: js.Tuple2[Double, Double],
+      voidTag: Unit,
+      _parseOptions: PartialOptions
+    ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: HTMLElement,
+      range: js.Tuple2[Double, Double],
+      voidTag: typings.nodeHtmlParser.voidTagMod.default,
+      _parseOptions: PartialOptions
+    ) = this()
   }
   
   inline def baseParse(data: String): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("base_parse")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
@@ -96,6 +132,8 @@ object htmlMod {
     extends typings.nodeHtmlParser.nodeMod.default {
     
     /* private */ var _attrs: Any = js.native
+    
+    /* private */ var _parseOptions: Any = js.native
     
     /* private */ var _rawAttrs: Any = js.native
     
@@ -338,14 +376,14 @@ object htmlMod {
     
     var blockTextElements: StringDictionary[Boolean]
     
-    var comment: Boolean
+    var comment: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @see PR #215 for explanation
       */
     var fixNestedATags: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseTagName: Boolean
+    var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
     
     var parseNoneClosedTags: js.UndefOr[Boolean] = js.undefined
     
@@ -353,8 +391,8 @@ object htmlMod {
   }
   object Options {
     
-    inline def apply(blockTextElements: StringDictionary[Boolean], comment: Boolean, lowerCaseTagName: Boolean): Options = {
-      val __obj = js.Dynamic.literal(blockTextElements = blockTextElements.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], lowerCaseTagName = lowerCaseTagName.asInstanceOf[js.Any])
+    inline def apply(blockTextElements: StringDictionary[Boolean]): Options = {
+      val __obj = js.Dynamic.literal(blockTextElements = blockTextElements.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
@@ -364,11 +402,15 @@ object htmlMod {
       
       inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      
       inline def setFixNestedATags(value: Boolean): Self = StObject.set(x, "fixNestedATags", value.asInstanceOf[js.Any])
       
       inline def setFixNestedATagsUndefined: Self = StObject.set(x, "fixNestedATags", js.undefined)
       
       inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
+      
+      inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
       
       inline def setParseNoneClosedTags(value: Boolean): Self = StObject.set(x, "parseNoneClosedTags", value.asInstanceOf[js.Any])
       

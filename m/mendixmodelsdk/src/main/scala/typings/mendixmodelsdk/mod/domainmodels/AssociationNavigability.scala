@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.AssociationNavigability")
 @js.native
-class AssociationNavigability protected ()
+open class AssociationNavigability protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AssociationNavigability {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

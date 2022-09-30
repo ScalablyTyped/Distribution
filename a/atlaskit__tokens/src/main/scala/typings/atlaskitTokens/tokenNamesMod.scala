@@ -291,297 +291,6 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-warning-inverse`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldBlueRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldGreenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldRedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldTealRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleRedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleTealRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blueRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-greenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magentaRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orangeRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purpleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-redRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-tealRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellowRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-blanketRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brandRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-cardRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-dangerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-defaultRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-disabledRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discoveryRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-informationRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inputRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverseRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutralRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-overlayRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selectedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-successRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-sunkenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warningRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-dangerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-selectedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanketRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-blueRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-grayRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-greenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-magentaRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-orangeRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-purpleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-redRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-tealRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-yellowRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-boldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-brandRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-dangerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-disabledRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-discoveryRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-informationRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inputRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inverseRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-neutralRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-selectedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-successRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-warningRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-borderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-cardRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-blueRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-grayRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-greenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-magentaRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-orangeRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-purpleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-redRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-tealRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-yellowRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-brandRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-dangerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-disabledRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-discoveryRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-informationRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-inverseRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-selectedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-successRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warning-inverseRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warningRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-brandRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-successRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-warningRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-link-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-linkRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-disabledRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-loadingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-hoverRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlayRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overflowRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overlayRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-raisedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeleton-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeletonRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlayRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raisedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-sunkenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surfaceRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blueRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-grayRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-greenRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magentaRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orangeRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purpleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-redRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-tealRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellowRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-brandRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-dangerRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-disabledRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-discoveryRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-highEmphasisRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-informationRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-inverseRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-pressedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-restingRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-selectedRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtleRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtlestRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-successRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warning-inverseRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warningRightparenthesis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-textRightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1755,1760 +1464,1467 @@ object tokenNamesMod {
     val utilityUNSAFEUtilTransparent: `--ds-UNSAFE_util-transparent` = js.native
   }
   
-  /* Inlined @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap[keyof @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-grayRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purpleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleTealRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-selectedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-greenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-brandRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-loadingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-inverseRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-successRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discoveryRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-tealRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magentaRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellowRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-orangeRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overflowRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-redRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warning-inverseRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-tealRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-successRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-redRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutralRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-disabledRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purpleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-successRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-blueRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raisedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-successRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-dangerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-dangerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-magentaRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warningRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-grayRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-purpleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-defaultRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-textRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-discoveryRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-greenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlayRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeletonRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-dangerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverseRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-blueRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldRedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-dangerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-grayRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-discoveryRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldGreenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selectedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inputRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-cardRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-sunkenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-overlayRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-informationRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-tealRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-highEmphasisRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleRedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanketRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-sunkenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-blanketRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warningRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brandRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-redRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-purpleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldTealRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-brandRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-neutralRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-selectedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-linkRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inputRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-disabledRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-disabledRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-borderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldBlueRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-yellowRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-yellowRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-cardRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-discoveryRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-magentaRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magentaRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warning-inverseRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-selectedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orangeRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellowRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-tealRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-disabledRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-redRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overlayRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-raisedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-link-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-selectedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-brandRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-informationRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlayRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-dangerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surfaceRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orangeRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-warningRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeleton-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blueRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-warningRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blueRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-informationRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-successRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtlestRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-brandRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warningRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inverseRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-greenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-inverseRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-orangeRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-greenRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-disabledRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-informationRightparenthesis`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis`
-  */
-  trait CSSToken extends StObject
   object CSSToken {
     
-    inline def `varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis` = "var(--ds-UNSAFE_util-MISSING_TOKEN)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`]
+    inline def `varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis` = "var(--ds-UNSAFE_util-transparent)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`]
+    inline def `varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-boldBlueRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldBlueRightparenthesis` = "var(--ds-accent-boldBlue)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldBlueRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-boldBlueRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-boldGreenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldGreenRightparenthesis` = "var(--ds-accent-boldGreen)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldGreenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-boldGreenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldOrangeRightparenthesis` = "var(--ds-accent-boldOrange)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldPurpleRightparenthesis` = "var(--ds-accent-boldPurple)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-boldRedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldRedRightparenthesis` = "var(--ds-accent-boldRed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldRedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-boldRedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-boldTealRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldTealRightparenthesis` = "var(--ds-accent-boldTeal)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-boldTealRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-boldTealRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleBlueRightparenthesis` = "var(--ds-accent-subtleBlue)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleGreenRightparenthesis` = "var(--ds-accent-subtleGreen)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis` = "var(--ds-accent-subtleMagenta)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis` = "var(--ds-accent-subtleOrange)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis` = "var(--ds-accent-subtlePurple)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-subtleRedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleRedRightparenthesis` = "var(--ds-accent-subtleRed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleRedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-subtleRedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-accent-subtleTealRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleTealRightparenthesis` = "var(--ds-accent-subtleTeal)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-accent-subtleTealRightparenthesis`]
+    inline def `varLeftparenthesis--ds-accent-subtleTealRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis` = "var(--ds-background-accent-blue-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis` = "var(--ds-background-accent-blue-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis` = "var(--ds-background-accent-blue-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis` = "var(--ds-background-accent-blue-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis` = "var(--ds-background-accent-blue-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-blueRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blueRightparenthesis` = "var(--ds-background-accent-blue)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-blueRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-blueRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis` = "var(--ds-background-accent-gray-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis` = "var(--ds-background-accent-gray-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis` = "var(--ds-background-accent-gray-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis` = "var(--ds-background-accent-gray-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-boldRightparenthesis` = "var(--ds-background-accent-green-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis` = "var(--ds-background-accent-green-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis` = "var(--ds-background-accent-green-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis` = "var(--ds-background-accent-green-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis` = "var(--ds-background-accent-green-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-greenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-greenRightparenthesis` = "var(--ds-background-accent-green)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-greenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-greenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis` = "var(--ds-background-accent-magenta-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis` = "var(--ds-background-accent-magenta-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis` = "var(--ds-background-accent-magenta-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis` = "var(--ds-background-accent-magenta-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis` = "var(--ds-background-accent-magenta-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-magentaRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magentaRightparenthesis` = "var(--ds-background-accent-magenta)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-magentaRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-magentaRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis` = "var(--ds-background-accent-orange-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis` = "var(--ds-background-accent-orange-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis` = "var(--ds-background-accent-orange-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis` = "var(--ds-background-accent-orange-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis` = "var(--ds-background-accent-orange-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-orangeRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orangeRightparenthesis` = "var(--ds-background-accent-orange)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-orangeRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-orangeRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis` = "var(--ds-background-accent-purple-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis` = "var(--ds-background-accent-purple-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis` = "var(--ds-background-accent-purple-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis` = "var(--ds-background-accent-purple-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis` = "var(--ds-background-accent-purple-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-purpleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purpleRightparenthesis` = "var(--ds-background-accent-purple)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-purpleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-purpleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-boldRightparenthesis` = "var(--ds-background-accent-red-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis` = "var(--ds-background-accent-red-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis` = "var(--ds-background-accent-red-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis` = "var(--ds-background-accent-red-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis` = "var(--ds-background-accent-red-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-redRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-redRightparenthesis` = "var(--ds-background-accent-red)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-redRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-redRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis` = "var(--ds-background-accent-teal-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis` = "var(--ds-background-accent-teal-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis` = "var(--ds-background-accent-teal-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis` = "var(--ds-background-accent-teal-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis` = "var(--ds-background-accent-teal-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-tealRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-tealRightparenthesis` = "var(--ds-background-accent-teal)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-tealRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-tealRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis` = "var(--ds-background-accent-yellow-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis` = "var(--ds-background-accent-yellow-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis` = "var(--ds-background-accent-yellow-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis` = "var(--ds-background-accent-yellow-subtler)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis` = "var(--ds-background-accent-yellow-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-accent-yellowRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellowRightparenthesis` = "var(--ds-background-accent-yellow)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-accent-yellowRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-accent-yellowRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-blanketRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-blanketRightparenthesis` = "var(--ds-background-blanket)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-blanketRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-blanketRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis` = "var(--ds-background-boldBrand-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis` = "var(--ds-background-boldBrand-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis` = "var(--ds-background-boldBrand-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis` = "var(--ds-background-boldDanger-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis` = "var(--ds-background-boldDanger-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis` = "var(--ds-background-boldDanger-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis` = "var(--ds-background-boldDiscovery-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis` = "var(--ds-background-boldDiscovery-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis` = "var(--ds-background-boldDiscovery-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis` = "var(--ds-background-boldNeutral-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis` = "var(--ds-background-boldNeutral-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis` = "var(--ds-background-boldNeutral-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis` = "var(--ds-background-boldSuccess-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis` = "var(--ds-background-boldSuccess-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis` = "var(--ds-background-boldSuccess-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis` = "var(--ds-background-boldWarning-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis` = "var(--ds-background-boldWarning-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis` = "var(--ds-background-boldWarning-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis` = "var(--ds-background-brand-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis` = "var(--ds-background-brand-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-brand-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-boldRightparenthesis` = "var(--ds-background-brand-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-brand-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-hoveredRightparenthesis` = "var(--ds-background-brand-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-brand-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-pressedRightparenthesis` = "var(--ds-background-brand-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brand-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-brand-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-brandRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brandRightparenthesis` = "var(--ds-background-brand)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-brandRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-brandRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-cardRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-cardRightparenthesis` = "var(--ds-background-card)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-cardRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-cardRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis` = "var(--ds-background-danger-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis` = "var(--ds-background-danger-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-danger-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-boldRightparenthesis` = "var(--ds-background-danger-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-danger-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-danger-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-hoveredRightparenthesis` = "var(--ds-background-danger-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-danger-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-danger-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-pressedRightparenthesis` = "var(--ds-background-danger-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-danger-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-danger-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-dangerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-dangerRightparenthesis` = "var(--ds-background-danger)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-dangerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-dangerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-defaultRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-defaultRightparenthesis` = "var(--ds-background-default)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-defaultRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-defaultRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-disabledRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-disabledRightparenthesis` = "var(--ds-background-disabled)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-disabledRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-disabledRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis` = "var(--ds-background-discovery-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis` = "var(--ds-background-discovery-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-discovery-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-boldRightparenthesis` = "var(--ds-background-discovery-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-discovery-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis` = "var(--ds-background-discovery-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-discovery-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-pressedRightparenthesis` = "var(--ds-background-discovery-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discovery-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-discovery-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-discoveryRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discoveryRightparenthesis` = "var(--ds-background-discovery)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-discoveryRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-discoveryRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis` = "var(--ds-background-information-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis` = "var(--ds-background-information-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-information-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-boldRightparenthesis` = "var(--ds-background-information-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-information-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-information-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-hoveredRightparenthesis` = "var(--ds-background-information-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-information-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-information-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-pressedRightparenthesis` = "var(--ds-background-information-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-information-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-information-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-informationRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-informationRightparenthesis` = "var(--ds-background-information)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-informationRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-informationRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-input-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-hoveredRightparenthesis` = "var(--ds-background-input-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-input-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-input-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-pressedRightparenthesis` = "var(--ds-background-input-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-input-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-input-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-inputRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inputRightparenthesis` = "var(--ds-background-input)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inputRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-inputRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis` = "var(--ds-background-inverse-subtle-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis` = "var(--ds-background-inverse-subtle-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtleRightparenthesis` = "var(--ds-background-inverse-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-inverseRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverseRightparenthesis` = "var(--ds-background-inverse)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-inverseRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-inverseRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis` = "var(--ds-background-neutral-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis` = "var(--ds-background-neutral-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-boldRightparenthesis` = "var(--ds-background-neutral-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis` = "var(--ds-background-neutral-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-pressedRightparenthesis` = "var(--ds-background-neutral-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis` = "var(--ds-background-neutral-subtle-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis` = "var(--ds-background-neutral-subtle-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutral-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtleRightparenthesis` = "var(--ds-background-neutral-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutral-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutral-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-neutralRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutralRightparenthesis` = "var(--ds-background-neutral)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-neutralRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-neutralRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-overlayRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-overlayRightparenthesis` = "var(--ds-background-overlay)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-overlayRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-overlayRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis` = "var(--ds-background-selected-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis` = "var(--ds-background-selected-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selected-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-boldRightparenthesis` = "var(--ds-background-selected-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selected-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selected-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoverRightparenthesis` = "var(--ds-background-selected-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selected-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoveredRightparenthesis` = "var(--ds-background-selected-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selected-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-pressedRightparenthesis` = "var(--ds-background-selected-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selected-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selected-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-restingRightparenthesis` = "var(--ds-background-selected-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selected-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selected-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-selectedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selectedRightparenthesis` = "var(--ds-background-selected)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-selectedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-selectedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis` = "var(--ds-background-subtleBorderedNeutral-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis` = "var(--ds-background-subtleBorderedNeutral-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis` = "var(--ds-background-subtleBrand-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis` = "var(--ds-background-subtleBrand-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis` = "var(--ds-background-subtleBrand-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis` = "var(--ds-background-subtleDanger-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis` = "var(--ds-background-subtleDanger-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis` = "var(--ds-background-subtleDanger-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis` = "var(--ds-background-subtleDiscovery-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis` = "var(--ds-background-subtleDiscovery-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis` = "var(--ds-background-subtleDiscovery-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis` = "var(--ds-background-subtleNeutral-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis` = "var(--ds-background-subtleNeutral-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis` = "var(--ds-background-subtleNeutral-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis` = "var(--ds-background-subtleSuccess-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis` = "var(--ds-background-subtleSuccess-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis` = "var(--ds-background-subtleSuccess-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis` = "var(--ds-background-subtleWarning-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis` = "var(--ds-background-subtleWarning-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis` = "var(--ds-background-subtleWarning-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis` = "var(--ds-background-success-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis` = "var(--ds-background-success-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-success-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-boldRightparenthesis` = "var(--ds-background-success-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-success-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-success-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-hoveredRightparenthesis` = "var(--ds-background-success-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-success-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-success-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-pressedRightparenthesis` = "var(--ds-background-success-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-success-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-success-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-successRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-successRightparenthesis` = "var(--ds-background-success)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-successRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-successRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-sunkenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-sunkenRightparenthesis` = "var(--ds-background-sunken)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-sunkenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-sunkenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis` = "var(--ds-background-transparentNeutral-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis` = "var(--ds-background-transparentNeutral-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis` = "var(--ds-background-warning-bold-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis` = "var(--ds-background-warning-bold-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-warning-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-boldRightparenthesis` = "var(--ds-background-warning-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-warning-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-warning-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-hoveredRightparenthesis` = "var(--ds-background-warning-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-warning-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-warning-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-pressedRightparenthesis` = "var(--ds-background-warning-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warning-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-warning-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-background-warningRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warningRightparenthesis` = "var(--ds-background-warning)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-background-warningRightparenthesis`]
+    inline def `varLeftparenthesis--ds-background-warningRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-blanket-dangerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-dangerRightparenthesis` = "var(--ds-blanket-danger)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-dangerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-blanket-dangerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-blanket-selectedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-selectedRightparenthesis` = "var(--ds-blanket-selected)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanket-selectedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-blanket-selectedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-blanketRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanketRightparenthesis` = "var(--ds-blanket)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-blanketRightparenthesis`]
+    inline def `varLeftparenthesis--ds-blanketRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-blueRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-blueRightparenthesis` = "var(--ds-border-accent-blue)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-blueRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-blueRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-grayRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-grayRightparenthesis` = "var(--ds-border-accent-gray)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-grayRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-grayRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-greenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-greenRightparenthesis` = "var(--ds-border-accent-green)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-greenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-greenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-magentaRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-magentaRightparenthesis` = "var(--ds-border-accent-magenta)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-magentaRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-magentaRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-orangeRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-orangeRightparenthesis` = "var(--ds-border-accent-orange)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-orangeRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-orangeRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-purpleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-purpleRightparenthesis` = "var(--ds-border-accent-purple)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-purpleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-purpleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-redRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-redRightparenthesis` = "var(--ds-border-accent-red)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-redRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-redRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-tealRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-tealRightparenthesis` = "var(--ds-border-accent-teal)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-tealRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-tealRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-accent-yellowRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-yellowRightparenthesis` = "var(--ds-border-accent-yellow)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-accent-yellowRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-accent-yellowRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-boldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-boldRightparenthesis` = "var(--ds-border-bold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-boldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-boldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-brandRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-brandRightparenthesis` = "var(--ds-border-brand)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-brandRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-brandRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-dangerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-dangerRightparenthesis` = "var(--ds-border-danger)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-dangerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-dangerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-disabledRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-disabledRightparenthesis` = "var(--ds-border-disabled)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-disabledRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-disabledRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-discoveryRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-discoveryRightparenthesis` = "var(--ds-border-discovery)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-discoveryRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-discoveryRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-focusRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusRightparenthesis` = "var(--ds-border-focus)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-focusRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-focusedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusedRightparenthesis` = "var(--ds-border-focused)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-focusedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-focusedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-informationRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-informationRightparenthesis` = "var(--ds-border-information)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-informationRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-informationRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-inputRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inputRightparenthesis` = "var(--ds-border-input)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inputRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-inputRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-inverseRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inverseRightparenthesis` = "var(--ds-border-inverse)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-inverseRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-inverseRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-neutralRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-neutralRightparenthesis` = "var(--ds-border-neutral)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-neutralRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-neutralRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-selectedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-selectedRightparenthesis` = "var(--ds-border-selected)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-selectedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-selectedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-successRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-successRightparenthesis` = "var(--ds-border-success)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-successRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-successRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-border-warningRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-warningRightparenthesis` = "var(--ds-border-warning)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-border-warningRightparenthesis`]
+    inline def `varLeftparenthesis--ds-border-warningRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-borderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-borderRightparenthesis` = "var(--ds-border)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-borderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-borderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-cardRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-cardRightparenthesis` = "var(--ds-card)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-cardRightparenthesis`]
+    inline def `varLeftparenthesis--ds-cardRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-blueRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-blueRightparenthesis` = "var(--ds-icon-accent-blue)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-blueRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-blueRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-grayRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-grayRightparenthesis` = "var(--ds-icon-accent-gray)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-grayRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-grayRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-greenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-greenRightparenthesis` = "var(--ds-icon-accent-green)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-greenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-greenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-magentaRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-magentaRightparenthesis` = "var(--ds-icon-accent-magenta)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-magentaRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-magentaRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-orangeRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-orangeRightparenthesis` = "var(--ds-icon-accent-orange)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-orangeRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-orangeRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-purpleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-purpleRightparenthesis` = "var(--ds-icon-accent-purple)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-purpleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-purpleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-redRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-redRightparenthesis` = "var(--ds-icon-accent-red)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-redRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-redRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-tealRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-tealRightparenthesis` = "var(--ds-icon-accent-teal)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-tealRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-tealRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-accent-yellowRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-yellowRightparenthesis` = "var(--ds-icon-accent-yellow)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-accent-yellowRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-accent-yellowRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-brandRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-brandRightparenthesis` = "var(--ds-icon-brand)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-brandRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-brandRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-dangerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-dangerRightparenthesis` = "var(--ds-icon-danger)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-dangerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-dangerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-disabledRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-disabledRightparenthesis` = "var(--ds-icon-disabled)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-disabledRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-disabledRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-discoveryRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-discoveryRightparenthesis` = "var(--ds-icon-discovery)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-discoveryRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-discoveryRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-informationRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-informationRightparenthesis` = "var(--ds-icon-information)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-informationRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-informationRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-inverseRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-inverseRightparenthesis` = "var(--ds-icon-inverse)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-inverseRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-inverseRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-selectedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-selectedRightparenthesis` = "var(--ds-icon-selected)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-selectedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-selectedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-subtleRightparenthesis` = "var(--ds-icon-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-successRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-successRightparenthesis` = "var(--ds-icon-success)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-successRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-successRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-warning-inverseRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warning-inverseRightparenthesis` = "var(--ds-icon-warning-inverse)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warning-inverseRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-warning-inverseRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-icon-warningRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warningRightparenthesis` = "var(--ds-icon-warning)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-icon-warningRightparenthesis`]
+    inline def `varLeftparenthesis--ds-icon-warningRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-iconBorder-brandRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-brandRightparenthesis` = "var(--ds-iconBorder-brand)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-brandRightparenthesis`]
+    inline def `varLeftparenthesis--ds-iconBorder-brandRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-dangerRightparenthesis` = "var(--ds-iconBorder-danger)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis` = "var(--ds-iconBorder-discovery)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`]
+    inline def `varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-iconBorder-successRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-successRightparenthesis` = "var(--ds-iconBorder-success)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-successRightparenthesis`]
+    inline def `varLeftparenthesis--ds-iconBorder-successRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-iconBorder-warningRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-warningRightparenthesis` = "var(--ds-iconBorder-warning)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconBorder-warningRightparenthesis`]
+    inline def `varLeftparenthesis--ds-iconBorder-warningRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-iconRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconRightparenthesis` = "var(--ds-icon)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-iconRightparenthesis`]
+    inline def `varLeftparenthesis--ds-iconRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-interaction-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-hoveredRightparenthesis` = "var(--ds-interaction-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-interaction-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis` = "var(--ds-interaction-inverse-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis` = "var(--ds-interaction-inverse-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-interaction-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-pressedRightparenthesis` = "var(--ds-interaction-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-interaction-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-interaction-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-link-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-link-pressedRightparenthesis` = "var(--ds-link-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-link-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-link-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-linkRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-linkRightparenthesis` = "var(--ds-link)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-linkRightparenthesis`]
+    inline def `varLeftparenthesis--ds-linkRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-opacity-disabledRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-disabledRightparenthesis` = "var(--ds-opacity-disabled)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-disabledRightparenthesis`]
+    inline def `varLeftparenthesis--ds-opacity-disabledRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-opacity-loadingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-loadingRightparenthesis` = "var(--ds-opacity-loading)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-opacity-loadingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-opacity-loadingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-overlay-hoverRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-hoverRightparenthesis` = "var(--ds-overlay-hover)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-hoverRightparenthesis`]
+    inline def `varLeftparenthesis--ds-overlay-hoverRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-overlay-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-pressedRightparenthesis` = "var(--ds-overlay-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlay-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-overlay-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-overlayRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlayRightparenthesis` = "var(--ds-overlay)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-overlayRightparenthesis`]
+    inline def `varLeftparenthesis--ds-overlayRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-shadow-overflowRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overflowRightparenthesis` = "var(--ds-shadow-overflow)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overflowRightparenthesis`]
+    inline def `varLeftparenthesis--ds-shadow-overflowRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-shadow-overlayRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overlayRightparenthesis` = "var(--ds-shadow-overlay)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-overlayRightparenthesis`]
+    inline def `varLeftparenthesis--ds-shadow-overlayRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-shadow-raisedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-raisedRightparenthesis` = "var(--ds-shadow-raised)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-shadow-raisedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-shadow-raisedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-skeleton-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeleton-subtleRightparenthesis` = "var(--ds-skeleton-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeleton-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-skeleton-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-skeletonRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeletonRightparenthesis` = "var(--ds-skeleton)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-skeletonRightparenthesis`]
+    inline def `varLeftparenthesis--ds-skeletonRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-hoveredRightparenthesis` = "var(--ds-surface-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis` = "var(--ds-surface-overlay-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis` = "var(--ds-surface-overlay-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-overlayRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlayRightparenthesis` = "var(--ds-surface-overlay)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-overlayRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-overlayRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-pressedRightparenthesis` = "var(--ds-surface-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis` = "var(--ds-surface-raised-hovered)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-raised-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-pressedRightparenthesis` = "var(--ds-surface-raised-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raised-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-raised-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-raisedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raisedRightparenthesis` = "var(--ds-surface-raised)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-raisedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-raisedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surface-sunkenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-sunkenRightparenthesis` = "var(--ds-surface-sunken)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surface-sunkenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surface-sunkenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-surfaceRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surfaceRightparenthesis` = "var(--ds-surface)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-surfaceRightparenthesis`]
+    inline def `varLeftparenthesis--ds-surfaceRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis` = "var(--ds-text-accent-blue-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-blueRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blueRightparenthesis` = "var(--ds-text-accent-blue)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-blueRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-blueRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis` = "var(--ds-text-accent-gray-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-grayRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-grayRightparenthesis` = "var(--ds-text-accent-gray)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-grayRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-grayRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis` = "var(--ds-text-accent-green-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-greenRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-greenRightparenthesis` = "var(--ds-text-accent-green)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-greenRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-greenRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis` = "var(--ds-text-accent-magenta-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-magentaRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magentaRightparenthesis` = "var(--ds-text-accent-magenta)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-magentaRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-magentaRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis` = "var(--ds-text-accent-orange-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-orangeRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orangeRightparenthesis` = "var(--ds-text-accent-orange)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-orangeRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-orangeRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis` = "var(--ds-text-accent-purple-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-purpleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purpleRightparenthesis` = "var(--ds-text-accent-purple)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-purpleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-purpleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis` = "var(--ds-text-accent-red-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-redRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-redRightparenthesis` = "var(--ds-text-accent-red)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-redRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-redRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis` = "var(--ds-text-accent-teal-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-tealRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-tealRightparenthesis` = "var(--ds-text-accent-teal)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-tealRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-tealRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis` = "var(--ds-text-accent-yellow-bolder)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-accent-yellowRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellowRightparenthesis` = "var(--ds-text-accent-yellow)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-accent-yellowRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-accent-yellowRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-brandRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-brandRightparenthesis` = "var(--ds-text-brand)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-brandRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-brandRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-dangerRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-dangerRightparenthesis` = "var(--ds-text-danger)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-dangerRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-dangerRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-disabledRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-disabledRightparenthesis` = "var(--ds-text-disabled)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-disabledRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-disabledRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-discoveryRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-discoveryRightparenthesis` = "var(--ds-text-discovery)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-discoveryRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-discoveryRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-highEmphasisRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-highEmphasisRightparenthesis` = "var(--ds-text-highEmphasis)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-highEmphasisRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-highEmphasisRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-informationRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-informationRightparenthesis` = "var(--ds-text-information)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-informationRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-informationRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-inverseRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-inverseRightparenthesis` = "var(--ds-text-inverse)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-inverseRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-inverseRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-link-pressedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-pressedRightparenthesis` = "var(--ds-text-link-pressed)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-pressedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-link-pressedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-link-restingRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-restingRightparenthesis` = "var(--ds-text-link-resting)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-link-restingRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-link-restingRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-lowEmphasisRightparenthesis` = "var(--ds-text-lowEmphasis)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis` = "var(--ds-text-mediumEmphasis)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-onBoldRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldRightparenthesis` = "var(--ds-text-onBold)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-onBoldRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldWarningRightparenthesis` = "var(--ds-text-onBoldWarning)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-selectedRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-selectedRightparenthesis` = "var(--ds-text-selected)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-selectedRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-selectedRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-subtleRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtleRightparenthesis` = "var(--ds-text-subtle)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtleRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-subtleRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-subtlestRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtlestRightparenthesis` = "var(--ds-text-subtlest)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-subtlestRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-subtlestRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-successRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-successRightparenthesis` = "var(--ds-text-success)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-successRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-successRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-warning-inverseRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warning-inverseRightparenthesis` = "var(--ds-text-warning-inverse)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warning-inverseRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-warning-inverseRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-text-warningRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warningRightparenthesis` = "var(--ds-text-warning)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-text-warningRightparenthesis`]
+    inline def `varLeftparenthesis--ds-text-warningRightparenthesis`: String = String.asInstanceOf[String]
     
-    inline def `varLeftparenthesis--ds-textRightparenthesis`: typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-textRightparenthesis` = "var(--ds-text)".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`varLeftparenthesis--ds-textRightparenthesis`]
+    inline def `varLeftparenthesis--ds-textRightparenthesis`: String = String.asInstanceOf[String]
   }
+  /* Inlined @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap[keyof @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap] */
+  type CSSToken = String
   
   trait CSSTokenMap extends StObject {
     
     @JSName("color.accent.boldBlue")
-    var colorDotaccentDotboldBlue: `varLeftparenthesis--ds-accent-boldBlueRightparenthesis`
+    var colorDotaccentDotboldBlue: String
     
     @JSName("color.accent.boldGreen")
-    var colorDotaccentDotboldGreen: `varLeftparenthesis--ds-accent-boldGreenRightparenthesis`
+    var colorDotaccentDotboldGreen: String
     
     @JSName("color.accent.boldOrange")
-    var colorDotaccentDotboldOrange: `varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`
+    var colorDotaccentDotboldOrange: String
     
     @JSName("color.accent.boldPurple")
-    var colorDotaccentDotboldPurple: `varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`
+    var colorDotaccentDotboldPurple: String
     
     @JSName("color.accent.boldRed")
-    var colorDotaccentDotboldRed: `varLeftparenthesis--ds-accent-boldRedRightparenthesis`
+    var colorDotaccentDotboldRed: String
     
     @JSName("color.accent.boldTeal")
-    var colorDotaccentDotboldTeal: `varLeftparenthesis--ds-accent-boldTealRightparenthesis`
+    var colorDotaccentDotboldTeal: String
     
     @JSName("color.accent.subtleBlue")
-    var colorDotaccentDotsubtleBlue: `varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`
+    var colorDotaccentDotsubtleBlue: String
     
     @JSName("color.accent.subtleGreen")
-    var colorDotaccentDotsubtleGreen: `varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`
+    var colorDotaccentDotsubtleGreen: String
     
     @JSName("color.accent.subtleMagenta")
-    var colorDotaccentDotsubtleMagenta: `varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`
+    var colorDotaccentDotsubtleMagenta: String
     
     @JSName("color.accent.subtleOrange")
-    var colorDotaccentDotsubtleOrange: `varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`
+    var colorDotaccentDotsubtleOrange: String
     
     @JSName("color.accent.subtlePurple")
-    var colorDotaccentDotsubtlePurple: `varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`
+    var colorDotaccentDotsubtlePurple: String
     
     @JSName("color.accent.subtleRed")
-    var colorDotaccentDotsubtleRed: `varLeftparenthesis--ds-accent-subtleRedRightparenthesis`
+    var colorDotaccentDotsubtleRed: String
     
     @JSName("color.accent.subtleTeal")
-    var colorDotaccentDotsubtleTeal: `varLeftparenthesis--ds-accent-subtleTealRightparenthesis`
+    var colorDotaccentDotsubtleTeal: String
     
     @JSName("color.background.accent.blue")
-    var colorDotbackgroundDotaccentDotblue: `varLeftparenthesis--ds-background-accent-blueRightparenthesis`
+    var colorDotbackgroundDotaccentDotblue: String
     
     @JSName("color.background.accent.blue.bold")
-    var colorDotbackgroundDotaccentDotblueDotbold: `varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDotblueDotbold: String
     
     @JSName("color.background.accent.blue.bolder")
-    var colorDotbackgroundDotaccentDotblueDotbolder: `varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotblueDotbolder: String
     
     @JSName("color.background.accent.blue.subtle")
-    var colorDotbackgroundDotaccentDotblueDotsubtle: `varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotblueDotsubtle: String
     
     @JSName("color.background.accent.blue.subtler")
-    var colorDotbackgroundDotaccentDotblueDotsubtler: `varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotblueDotsubtler: String
     
     @JSName("color.background.accent.blue.subtlest")
-    var colorDotbackgroundDotaccentDotblueDotsubtlest: `varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotblueDotsubtlest: String
     
     @JSName("color.background.accent.gray.bolder")
-    var colorDotbackgroundDotaccentDotgrayDotbolder: `varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotgrayDotbolder: String
     
     @JSName("color.background.accent.gray.subtle")
-    var colorDotbackgroundDotaccentDotgrayDotsubtle: `varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotgrayDotsubtle: String
     
     @JSName("color.background.accent.gray.subtler")
-    var colorDotbackgroundDotaccentDotgrayDotsubtler: `varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotgrayDotsubtler: String
     
     @JSName("color.background.accent.gray.subtlest")
-    var colorDotbackgroundDotaccentDotgrayDotsubtlest: `varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotgrayDotsubtlest: String
     
     @JSName("color.background.accent.green")
-    var colorDotbackgroundDotaccentDotgreen: `varLeftparenthesis--ds-background-accent-greenRightparenthesis`
+    var colorDotbackgroundDotaccentDotgreen: String
     
     @JSName("color.background.accent.green.bold")
-    var colorDotbackgroundDotaccentDotgreenDotbold: `varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDotgreenDotbold: String
     
     @JSName("color.background.accent.green.bolder")
-    var colorDotbackgroundDotaccentDotgreenDotbolder: `varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotgreenDotbolder: String
     
     @JSName("color.background.accent.green.subtle")
-    var colorDotbackgroundDotaccentDotgreenDotsubtle: `varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotgreenDotsubtle: String
     
     @JSName("color.background.accent.green.subtler")
-    var colorDotbackgroundDotaccentDotgreenDotsubtler: `varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotgreenDotsubtler: String
     
     @JSName("color.background.accent.green.subtlest")
-    var colorDotbackgroundDotaccentDotgreenDotsubtlest: `varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotgreenDotsubtlest: String
     
     @JSName("color.background.accent.magenta")
-    var colorDotbackgroundDotaccentDotmagenta: `varLeftparenthesis--ds-background-accent-magentaRightparenthesis`
+    var colorDotbackgroundDotaccentDotmagenta: String
     
     @JSName("color.background.accent.magenta.bold")
-    var colorDotbackgroundDotaccentDotmagentaDotbold: `varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDotmagentaDotbold: String
     
     @JSName("color.background.accent.magenta.bolder")
-    var colorDotbackgroundDotaccentDotmagentaDotbolder: `varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotmagentaDotbolder: String
     
     @JSName("color.background.accent.magenta.subtle")
-    var colorDotbackgroundDotaccentDotmagentaDotsubtle: `varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotmagentaDotsubtle: String
     
     @JSName("color.background.accent.magenta.subtler")
-    var colorDotbackgroundDotaccentDotmagentaDotsubtler: `varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotmagentaDotsubtler: String
     
     @JSName("color.background.accent.magenta.subtlest")
-    var colorDotbackgroundDotaccentDotmagentaDotsubtlest: `varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotmagentaDotsubtlest: String
     
     @JSName("color.background.accent.orange")
-    var colorDotbackgroundDotaccentDotorange: `varLeftparenthesis--ds-background-accent-orangeRightparenthesis`
+    var colorDotbackgroundDotaccentDotorange: String
     
     @JSName("color.background.accent.orange.bold")
-    var colorDotbackgroundDotaccentDotorangeDotbold: `varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDotorangeDotbold: String
     
     @JSName("color.background.accent.orange.bolder")
-    var colorDotbackgroundDotaccentDotorangeDotbolder: `varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotorangeDotbolder: String
     
     @JSName("color.background.accent.orange.subtle")
-    var colorDotbackgroundDotaccentDotorangeDotsubtle: `varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotorangeDotsubtle: String
     
     @JSName("color.background.accent.orange.subtler")
-    var colorDotbackgroundDotaccentDotorangeDotsubtler: `varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotorangeDotsubtler: String
     
     @JSName("color.background.accent.orange.subtlest")
-    var colorDotbackgroundDotaccentDotorangeDotsubtlest: `varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotorangeDotsubtlest: String
     
     @JSName("color.background.accent.purple")
-    var colorDotbackgroundDotaccentDotpurple: `varLeftparenthesis--ds-background-accent-purpleRightparenthesis`
+    var colorDotbackgroundDotaccentDotpurple: String
     
     @JSName("color.background.accent.purple.bold")
-    var colorDotbackgroundDotaccentDotpurpleDotbold: `varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDotpurpleDotbold: String
     
     @JSName("color.background.accent.purple.bolder")
-    var colorDotbackgroundDotaccentDotpurpleDotbolder: `varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotpurpleDotbolder: String
     
     @JSName("color.background.accent.purple.subtle")
-    var colorDotbackgroundDotaccentDotpurpleDotsubtle: `varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotpurpleDotsubtle: String
     
     @JSName("color.background.accent.purple.subtler")
-    var colorDotbackgroundDotaccentDotpurpleDotsubtler: `varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotpurpleDotsubtler: String
     
     @JSName("color.background.accent.purple.subtlest")
-    var colorDotbackgroundDotaccentDotpurpleDotsubtlest: `varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotpurpleDotsubtlest: String
     
     @JSName("color.background.accent.red")
-    var colorDotbackgroundDotaccentDotred: `varLeftparenthesis--ds-background-accent-redRightparenthesis`
+    var colorDotbackgroundDotaccentDotred: String
     
     @JSName("color.background.accent.red.bold")
-    var colorDotbackgroundDotaccentDotredDotbold: `varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDotredDotbold: String
     
     @JSName("color.background.accent.red.bolder")
-    var colorDotbackgroundDotaccentDotredDotbolder: `varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotredDotbolder: String
     
     @JSName("color.background.accent.red.subtle")
-    var colorDotbackgroundDotaccentDotredDotsubtle: `varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotredDotsubtle: String
     
     @JSName("color.background.accent.red.subtler")
-    var colorDotbackgroundDotaccentDotredDotsubtler: `varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotredDotsubtler: String
     
     @JSName("color.background.accent.red.subtlest")
-    var colorDotbackgroundDotaccentDotredDotsubtlest: `varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotredDotsubtlest: String
     
     @JSName("color.background.accent.teal")
-    var colorDotbackgroundDotaccentDotteal: `varLeftparenthesis--ds-background-accent-tealRightparenthesis`
+    var colorDotbackgroundDotaccentDotteal: String
     
     @JSName("color.background.accent.teal.bold")
-    var colorDotbackgroundDotaccentDottealDotbold: `varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDottealDotbold: String
     
     @JSName("color.background.accent.teal.bolder")
-    var colorDotbackgroundDotaccentDottealDotbolder: `varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDottealDotbolder: String
     
     @JSName("color.background.accent.teal.subtle")
-    var colorDotbackgroundDotaccentDottealDotsubtle: `varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDottealDotsubtle: String
     
     @JSName("color.background.accent.teal.subtler")
-    var colorDotbackgroundDotaccentDottealDotsubtler: `varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDottealDotsubtler: String
     
     @JSName("color.background.accent.teal.subtlest")
-    var colorDotbackgroundDotaccentDottealDotsubtlest: `varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDottealDotsubtlest: String
     
     @JSName("color.background.accent.yellow")
-    var colorDotbackgroundDotaccentDotyellow: `varLeftparenthesis--ds-background-accent-yellowRightparenthesis`
+    var colorDotbackgroundDotaccentDotyellow: String
     
     @JSName("color.background.accent.yellow.bold")
-    var colorDotbackgroundDotaccentDotyellowDotbold: `varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`
+    var colorDotbackgroundDotaccentDotyellowDotbold: String
     
     @JSName("color.background.accent.yellow.bolder")
-    var colorDotbackgroundDotaccentDotyellowDotbolder: `varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`
+    var colorDotbackgroundDotaccentDotyellowDotbolder: String
     
     @JSName("color.background.accent.yellow.subtle")
-    var colorDotbackgroundDotaccentDotyellowDotsubtle: `varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis`
+    var colorDotbackgroundDotaccentDotyellowDotsubtle: String
     
     @JSName("color.background.accent.yellow.subtler")
-    var colorDotbackgroundDotaccentDotyellowDotsubtler: `varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis`
+    var colorDotbackgroundDotaccentDotyellowDotsubtler: String
     
     @JSName("color.background.accent.yellow.subtlest")
-    var colorDotbackgroundDotaccentDotyellowDotsubtlest: `varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`
+    var colorDotbackgroundDotaccentDotyellowDotsubtlest: String
     
     @JSName("color.background.blanket")
-    var colorDotbackgroundDotblanket: `varLeftparenthesis--ds-background-blanketRightparenthesis`
+    var colorDotbackgroundDotblanket: String
     
     @JSName("color.background.boldBrand.hover")
-    var colorDotbackgroundDotboldBrandDothover: `varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`
+    var colorDotbackgroundDotboldBrandDothover: String
     
     @JSName("color.background.boldBrand.pressed")
-    var colorDotbackgroundDotboldBrandDotpressed: `varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`
+    var colorDotbackgroundDotboldBrandDotpressed: String
     
     @JSName("color.background.boldBrand.resting")
-    var colorDotbackgroundDotboldBrandDotresting: `varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`
+    var colorDotbackgroundDotboldBrandDotresting: String
     
     @JSName("color.background.boldDanger.hover")
-    var colorDotbackgroundDotboldDangerDothover: `varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`
+    var colorDotbackgroundDotboldDangerDothover: String
     
     @JSName("color.background.boldDanger.pressed")
-    var colorDotbackgroundDotboldDangerDotpressed: `varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`
+    var colorDotbackgroundDotboldDangerDotpressed: String
     
     @JSName("color.background.boldDanger.resting")
-    var colorDotbackgroundDotboldDangerDotresting: `varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`
+    var colorDotbackgroundDotboldDangerDotresting: String
     
     @JSName("color.background.boldDiscovery.hover")
-    var colorDotbackgroundDotboldDiscoveryDothover: `varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`
+    var colorDotbackgroundDotboldDiscoveryDothover: String
     
     @JSName("color.background.boldDiscovery.pressed")
-    var colorDotbackgroundDotboldDiscoveryDotpressed: `varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`
+    var colorDotbackgroundDotboldDiscoveryDotpressed: String
     
     @JSName("color.background.boldDiscovery.resting")
-    var colorDotbackgroundDotboldDiscoveryDotresting: `varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`
+    var colorDotbackgroundDotboldDiscoveryDotresting: String
     
     @JSName("color.background.boldNeutral.hover")
-    var colorDotbackgroundDotboldNeutralDothover: `varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`
+    var colorDotbackgroundDotboldNeutralDothover: String
     
     @JSName("color.background.boldNeutral.pressed")
-    var colorDotbackgroundDotboldNeutralDotpressed: `varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`
+    var colorDotbackgroundDotboldNeutralDotpressed: String
     
     @JSName("color.background.boldNeutral.resting")
-    var colorDotbackgroundDotboldNeutralDotresting: `varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`
+    var colorDotbackgroundDotboldNeutralDotresting: String
     
     @JSName("color.background.boldSuccess.hover")
-    var colorDotbackgroundDotboldSuccessDothover: `varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`
+    var colorDotbackgroundDotboldSuccessDothover: String
     
     @JSName("color.background.boldSuccess.pressed")
-    var colorDotbackgroundDotboldSuccessDotpressed: `varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`
+    var colorDotbackgroundDotboldSuccessDotpressed: String
     
     @JSName("color.background.boldSuccess.resting")
-    var colorDotbackgroundDotboldSuccessDotresting: `varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`
+    var colorDotbackgroundDotboldSuccessDotresting: String
     
     @JSName("color.background.boldWarning.hover")
-    var colorDotbackgroundDotboldWarningDothover: `varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`
+    var colorDotbackgroundDotboldWarningDothover: String
     
     @JSName("color.background.boldWarning.pressed")
-    var colorDotbackgroundDotboldWarningDotpressed: `varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`
+    var colorDotbackgroundDotboldWarningDotpressed: String
     
     @JSName("color.background.boldWarning.resting")
-    var colorDotbackgroundDotboldWarningDotresting: `varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`
+    var colorDotbackgroundDotboldWarningDotresting: String
     
     @JSName("color.background.brand")
-    var colorDotbackgroundDotbrand: `varLeftparenthesis--ds-background-brandRightparenthesis`
+    var colorDotbackgroundDotbrand: String
     
     @JSName("color.background.brand.bold")
-    var colorDotbackgroundDotbrandDotbold: `varLeftparenthesis--ds-background-brand-boldRightparenthesis`
+    var colorDotbackgroundDotbrandDotbold: String
     
     @JSName("color.background.brand.bold.hovered")
-    var colorDotbackgroundDotbrandDotboldDothovered: `varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotbrandDotboldDothovered: String
     
     @JSName("color.background.brand.bold.pressed")
-    var colorDotbackgroundDotbrandDotboldDotpressed: `varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotbrandDotboldDotpressed: String
     
     @JSName("color.background.brand.hovered")
-    var colorDotbackgroundDotbrandDothovered: `varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`
+    var colorDotbackgroundDotbrandDothovered: String
     
     @JSName("color.background.brand.pressed")
-    var colorDotbackgroundDotbrandDotpressed: `varLeftparenthesis--ds-background-brand-pressedRightparenthesis`
+    var colorDotbackgroundDotbrandDotpressed: String
     
     @JSName("color.background.card")
-    var colorDotbackgroundDotcard: `varLeftparenthesis--ds-background-cardRightparenthesis`
+    var colorDotbackgroundDotcard: String
     
     @JSName("color.background.danger")
-    var colorDotbackgroundDotdanger: `varLeftparenthesis--ds-background-dangerRightparenthesis`
+    var colorDotbackgroundDotdanger: String
     
     @JSName("color.background.danger.bold")
-    var colorDotbackgroundDotdangerDotbold: `varLeftparenthesis--ds-background-danger-boldRightparenthesis`
+    var colorDotbackgroundDotdangerDotbold: String
     
     @JSName("color.background.danger.bold.hovered")
-    var colorDotbackgroundDotdangerDotboldDothovered: `varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotdangerDotboldDothovered: String
     
     @JSName("color.background.danger.bold.pressed")
-    var colorDotbackgroundDotdangerDotboldDotpressed: `varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotdangerDotboldDotpressed: String
     
     @JSName("color.background.danger.hovered")
-    var colorDotbackgroundDotdangerDothovered: `varLeftparenthesis--ds-background-danger-hoveredRightparenthesis`
+    var colorDotbackgroundDotdangerDothovered: String
     
     @JSName("color.background.danger.pressed")
-    var colorDotbackgroundDotdangerDotpressed: `varLeftparenthesis--ds-background-danger-pressedRightparenthesis`
+    var colorDotbackgroundDotdangerDotpressed: String
     
     @JSName("color.background.default")
-    var colorDotbackgroundDotdefault: `varLeftparenthesis--ds-background-defaultRightparenthesis`
+    var colorDotbackgroundDotdefault: String
     
     @JSName("color.background.disabled")
-    var colorDotbackgroundDotdisabled: `varLeftparenthesis--ds-background-disabledRightparenthesis`
+    var colorDotbackgroundDotdisabled: String
     
     @JSName("color.background.discovery")
-    var colorDotbackgroundDotdiscovery: `varLeftparenthesis--ds-background-discoveryRightparenthesis`
+    var colorDotbackgroundDotdiscovery: String
     
     @JSName("color.background.discovery.bold")
-    var colorDotbackgroundDotdiscoveryDotbold: `varLeftparenthesis--ds-background-discovery-boldRightparenthesis`
+    var colorDotbackgroundDotdiscoveryDotbold: String
     
     @JSName("color.background.discovery.bold.hovered")
-    var colorDotbackgroundDotdiscoveryDotboldDothovered: `varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotdiscoveryDotboldDothovered: String
     
     @JSName("color.background.discovery.bold.pressed")
-    var colorDotbackgroundDotdiscoveryDotboldDotpressed: `varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotdiscoveryDotboldDotpressed: String
     
     @JSName("color.background.discovery.hovered")
-    var colorDotbackgroundDotdiscoveryDothovered: `varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis`
+    var colorDotbackgroundDotdiscoveryDothovered: String
     
     @JSName("color.background.discovery.pressed")
-    var colorDotbackgroundDotdiscoveryDotpressed: `varLeftparenthesis--ds-background-discovery-pressedRightparenthesis`
+    var colorDotbackgroundDotdiscoveryDotpressed: String
     
     @JSName("color.background.information")
-    var colorDotbackgroundDotinformation: `varLeftparenthesis--ds-background-informationRightparenthesis`
+    var colorDotbackgroundDotinformation: String
     
     @JSName("color.background.information.bold")
-    var colorDotbackgroundDotinformationDotbold: `varLeftparenthesis--ds-background-information-boldRightparenthesis`
+    var colorDotbackgroundDotinformationDotbold: String
     
     @JSName("color.background.information.bold.hovered")
-    var colorDotbackgroundDotinformationDotboldDothovered: `varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotinformationDotboldDothovered: String
     
     @JSName("color.background.information.bold.pressed")
-    var colorDotbackgroundDotinformationDotboldDotpressed: `varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotinformationDotboldDotpressed: String
     
     @JSName("color.background.information.hovered")
-    var colorDotbackgroundDotinformationDothovered: `varLeftparenthesis--ds-background-information-hoveredRightparenthesis`
+    var colorDotbackgroundDotinformationDothovered: String
     
     @JSName("color.background.information.pressed")
-    var colorDotbackgroundDotinformationDotpressed: `varLeftparenthesis--ds-background-information-pressedRightparenthesis`
+    var colorDotbackgroundDotinformationDotpressed: String
     
     @JSName("color.background.input")
-    var colorDotbackgroundDotinput: `varLeftparenthesis--ds-background-inputRightparenthesis`
+    var colorDotbackgroundDotinput: String
     
     @JSName("color.background.input.hovered")
-    var colorDotbackgroundDotinputDothovered: `varLeftparenthesis--ds-background-input-hoveredRightparenthesis`
+    var colorDotbackgroundDotinputDothovered: String
     
     @JSName("color.background.input.pressed")
-    var colorDotbackgroundDotinputDotpressed: `varLeftparenthesis--ds-background-input-pressedRightparenthesis`
+    var colorDotbackgroundDotinputDotpressed: String
     
     @JSName("color.background.inverse")
-    var colorDotbackgroundDotinverse: `varLeftparenthesis--ds-background-inverseRightparenthesis`
+    var colorDotbackgroundDotinverse: String
     
     @JSName("color.background.inverse.subtle")
-    var colorDotbackgroundDotinverseDotsubtle: `varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`
+    var colorDotbackgroundDotinverseDotsubtle: String
     
     @JSName("color.background.inverse.subtle.hovered")
-    var colorDotbackgroundDotinverseDotsubtleDothovered: `varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis`
+    var colorDotbackgroundDotinverseDotsubtleDothovered: String
     
     @JSName("color.background.inverse.subtle.pressed")
-    var colorDotbackgroundDotinverseDotsubtleDotpressed: `varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis`
+    var colorDotbackgroundDotinverseDotsubtleDotpressed: String
     
     @JSName("color.background.neutral")
-    var colorDotbackgroundDotneutral: `varLeftparenthesis--ds-background-neutralRightparenthesis`
+    var colorDotbackgroundDotneutral: String
     
     @JSName("color.background.neutral.bold")
-    var colorDotbackgroundDotneutralDotbold: `varLeftparenthesis--ds-background-neutral-boldRightparenthesis`
+    var colorDotbackgroundDotneutralDotbold: String
     
     @JSName("color.background.neutral.bold.hovered")
-    var colorDotbackgroundDotneutralDotboldDothovered: `varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotneutralDotboldDothovered: String
     
     @JSName("color.background.neutral.bold.pressed")
-    var colorDotbackgroundDotneutralDotboldDotpressed: `varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotneutralDotboldDotpressed: String
     
     @JSName("color.background.neutral.hovered")
-    var colorDotbackgroundDotneutralDothovered: `varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis`
+    var colorDotbackgroundDotneutralDothovered: String
     
     @JSName("color.background.neutral.pressed")
-    var colorDotbackgroundDotneutralDotpressed: `varLeftparenthesis--ds-background-neutral-pressedRightparenthesis`
+    var colorDotbackgroundDotneutralDotpressed: String
     
     @JSName("color.background.neutral.subtle")
-    var colorDotbackgroundDotneutralDotsubtle: `varLeftparenthesis--ds-background-neutral-subtleRightparenthesis`
+    var colorDotbackgroundDotneutralDotsubtle: String
     
     @JSName("color.background.neutral.subtle.hovered")
-    var colorDotbackgroundDotneutralDotsubtleDothovered: `varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis`
+    var colorDotbackgroundDotneutralDotsubtleDothovered: String
     
     @JSName("color.background.neutral.subtle.pressed")
-    var colorDotbackgroundDotneutralDotsubtleDotpressed: `varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis`
+    var colorDotbackgroundDotneutralDotsubtleDotpressed: String
     
     @JSName("color.background.overlay")
-    var colorDotbackgroundDotoverlay: `varLeftparenthesis--ds-background-overlayRightparenthesis`
+    var colorDotbackgroundDotoverlay: String
     
     @JSName("color.background.selected")
-    var colorDotbackgroundDotselected: `varLeftparenthesis--ds-background-selectedRightparenthesis`
+    var colorDotbackgroundDotselected: String
     
     @JSName("color.background.selected.bold")
-    var colorDotbackgroundDotselectedDotbold: `varLeftparenthesis--ds-background-selected-boldRightparenthesis`
+    var colorDotbackgroundDotselectedDotbold: String
     
     @JSName("color.background.selected.bold.hovered")
-    var colorDotbackgroundDotselectedDotboldDothovered: `varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotselectedDotboldDothovered: String
     
     @JSName("color.background.selected.bold.pressed")
-    var colorDotbackgroundDotselectedDotboldDotpressed: `varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotselectedDotboldDotpressed: String
     
     @JSName("color.background.selected.hover")
-    var colorDotbackgroundDotselectedDothover: `varLeftparenthesis--ds-background-selected-hoverRightparenthesis`
+    var colorDotbackgroundDotselectedDothover: String
     
     @JSName("color.background.selected.hovered")
-    var colorDotbackgroundDotselectedDothovered: `varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`
+    var colorDotbackgroundDotselectedDothovered: String
     
     @JSName("color.background.selected.pressed")
-    var colorDotbackgroundDotselectedDotpressed: `varLeftparenthesis--ds-background-selected-pressedRightparenthesis`
+    var colorDotbackgroundDotselectedDotpressed: String
     
     @JSName("color.background.selected.resting")
-    var colorDotbackgroundDotselectedDotresting: `varLeftparenthesis--ds-background-selected-restingRightparenthesis`
+    var colorDotbackgroundDotselectedDotresting: String
     
     @JSName("color.background.subtleBorderedNeutral.pressed")
-    var colorDotbackgroundDotsubtleBorderedNeutralDotpressed: `varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`
+    var colorDotbackgroundDotsubtleBorderedNeutralDotpressed: String
     
     @JSName("color.background.subtleBorderedNeutral.resting")
-    var colorDotbackgroundDotsubtleBorderedNeutralDotresting: `varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`
+    var colorDotbackgroundDotsubtleBorderedNeutralDotresting: String
     
     @JSName("color.background.subtleBrand.hover")
-    var colorDotbackgroundDotsubtleBrandDothover: `varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`
+    var colorDotbackgroundDotsubtleBrandDothover: String
     
     @JSName("color.background.subtleBrand.pressed")
-    var colorDotbackgroundDotsubtleBrandDotpressed: `varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`
+    var colorDotbackgroundDotsubtleBrandDotpressed: String
     
     @JSName("color.background.subtleBrand.resting")
-    var colorDotbackgroundDotsubtleBrandDotresting: `varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`
+    var colorDotbackgroundDotsubtleBrandDotresting: String
     
     @JSName("color.background.subtleDanger.hover")
-    var colorDotbackgroundDotsubtleDangerDothover: `varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`
+    var colorDotbackgroundDotsubtleDangerDothover: String
     
     @JSName("color.background.subtleDanger.pressed")
-    var colorDotbackgroundDotsubtleDangerDotpressed: `varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`
+    var colorDotbackgroundDotsubtleDangerDotpressed: String
     
     @JSName("color.background.subtleDanger.resting")
-    var colorDotbackgroundDotsubtleDangerDotresting: `varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`
+    var colorDotbackgroundDotsubtleDangerDotresting: String
     
     @JSName("color.background.subtleDiscovery.hover")
-    var colorDotbackgroundDotsubtleDiscoveryDothover: `varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`
+    var colorDotbackgroundDotsubtleDiscoveryDothover: String
     
     @JSName("color.background.subtleDiscovery.pressed")
-    var colorDotbackgroundDotsubtleDiscoveryDotpressed: `varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`
+    var colorDotbackgroundDotsubtleDiscoveryDotpressed: String
     
     @JSName("color.background.subtleDiscovery.resting")
-    var colorDotbackgroundDotsubtleDiscoveryDotresting: `varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`
+    var colorDotbackgroundDotsubtleDiscoveryDotresting: String
     
     @JSName("color.background.subtleNeutral.hover")
-    var colorDotbackgroundDotsubtleNeutralDothover: `varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`
+    var colorDotbackgroundDotsubtleNeutralDothover: String
     
     @JSName("color.background.subtleNeutral.pressed")
-    var colorDotbackgroundDotsubtleNeutralDotpressed: `varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`
+    var colorDotbackgroundDotsubtleNeutralDotpressed: String
     
     @JSName("color.background.subtleNeutral.resting")
-    var colorDotbackgroundDotsubtleNeutralDotresting: `varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`
+    var colorDotbackgroundDotsubtleNeutralDotresting: String
     
     @JSName("color.background.subtleSuccess.hover")
-    var colorDotbackgroundDotsubtleSuccessDothover: `varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`
+    var colorDotbackgroundDotsubtleSuccessDothover: String
     
     @JSName("color.background.subtleSuccess.pressed")
-    var colorDotbackgroundDotsubtleSuccessDotpressed: `varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`
+    var colorDotbackgroundDotsubtleSuccessDotpressed: String
     
     @JSName("color.background.subtleSuccess.resting")
-    var colorDotbackgroundDotsubtleSuccessDotresting: `varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`
+    var colorDotbackgroundDotsubtleSuccessDotresting: String
     
     @JSName("color.background.subtleWarning.hover")
-    var colorDotbackgroundDotsubtleWarningDothover: `varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`
+    var colorDotbackgroundDotsubtleWarningDothover: String
     
     @JSName("color.background.subtleWarning.pressed")
-    var colorDotbackgroundDotsubtleWarningDotpressed: `varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`
+    var colorDotbackgroundDotsubtleWarningDotpressed: String
     
     @JSName("color.background.subtleWarning.resting")
-    var colorDotbackgroundDotsubtleWarningDotresting: `varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`
+    var colorDotbackgroundDotsubtleWarningDotresting: String
     
     @JSName("color.background.success")
-    var colorDotbackgroundDotsuccess: `varLeftparenthesis--ds-background-successRightparenthesis`
+    var colorDotbackgroundDotsuccess: String
     
     @JSName("color.background.success.bold")
-    var colorDotbackgroundDotsuccessDotbold: `varLeftparenthesis--ds-background-success-boldRightparenthesis`
+    var colorDotbackgroundDotsuccessDotbold: String
     
     @JSName("color.background.success.bold.hovered")
-    var colorDotbackgroundDotsuccessDotboldDothovered: `varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotsuccessDotboldDothovered: String
     
     @JSName("color.background.success.bold.pressed")
-    var colorDotbackgroundDotsuccessDotboldDotpressed: `varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotsuccessDotboldDotpressed: String
     
     @JSName("color.background.success.hovered")
-    var colorDotbackgroundDotsuccessDothovered: `varLeftparenthesis--ds-background-success-hoveredRightparenthesis`
+    var colorDotbackgroundDotsuccessDothovered: String
     
     @JSName("color.background.success.pressed")
-    var colorDotbackgroundDotsuccessDotpressed: `varLeftparenthesis--ds-background-success-pressedRightparenthesis`
+    var colorDotbackgroundDotsuccessDotpressed: String
     
     @JSName("color.background.sunken")
-    var colorDotbackgroundDotsunken: `varLeftparenthesis--ds-background-sunkenRightparenthesis`
+    var colorDotbackgroundDotsunken: String
     
     @JSName("color.background.transparentNeutral.hover")
-    var colorDotbackgroundDottransparentNeutralDothover: `varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`
+    var colorDotbackgroundDottransparentNeutralDothover: String
     
     @JSName("color.background.transparentNeutral.pressed")
-    var colorDotbackgroundDottransparentNeutralDotpressed: `varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`
+    var colorDotbackgroundDottransparentNeutralDotpressed: String
     
     @JSName("color.background.warning")
-    var colorDotbackgroundDotwarning: `varLeftparenthesis--ds-background-warningRightparenthesis`
+    var colorDotbackgroundDotwarning: String
     
     @JSName("color.background.warning.bold")
-    var colorDotbackgroundDotwarningDotbold: `varLeftparenthesis--ds-background-warning-boldRightparenthesis`
+    var colorDotbackgroundDotwarningDotbold: String
     
     @JSName("color.background.warning.bold.hovered")
-    var colorDotbackgroundDotwarningDotboldDothovered: `varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`
+    var colorDotbackgroundDotwarningDotboldDothovered: String
     
     @JSName("color.background.warning.bold.pressed")
-    var colorDotbackgroundDotwarningDotboldDotpressed: `varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis`
+    var colorDotbackgroundDotwarningDotboldDotpressed: String
     
     @JSName("color.background.warning.hovered")
-    var colorDotbackgroundDotwarningDothovered: `varLeftparenthesis--ds-background-warning-hoveredRightparenthesis`
+    var colorDotbackgroundDotwarningDothovered: String
     
     @JSName("color.background.warning.pressed")
-    var colorDotbackgroundDotwarningDotpressed: `varLeftparenthesis--ds-background-warning-pressedRightparenthesis`
+    var colorDotbackgroundDotwarningDotpressed: String
     
     @JSName("color.blanket")
-    var colorDotblanket: `varLeftparenthesis--ds-blanketRightparenthesis`
+    var colorDotblanket: String
     
     @JSName("color.blanket.danger")
-    var colorDotblanketDotdanger: `varLeftparenthesis--ds-blanket-dangerRightparenthesis`
+    var colorDotblanketDotdanger: String
     
     @JSName("color.blanket.selected")
-    var colorDotblanketDotselected: `varLeftparenthesis--ds-blanket-selectedRightparenthesis`
+    var colorDotblanketDotselected: String
     
     @JSName("color.border")
-    var colorDotborder: `varLeftparenthesis--ds-borderRightparenthesis`
+    var colorDotborder: String
     
     @JSName("color.border.accent.blue")
-    var colorDotborderDotaccentDotblue: `varLeftparenthesis--ds-border-accent-blueRightparenthesis`
+    var colorDotborderDotaccentDotblue: String
     
     @JSName("color.border.accent.gray")
-    var colorDotborderDotaccentDotgray: `varLeftparenthesis--ds-border-accent-grayRightparenthesis`
+    var colorDotborderDotaccentDotgray: String
     
     @JSName("color.border.accent.green")
-    var colorDotborderDotaccentDotgreen: `varLeftparenthesis--ds-border-accent-greenRightparenthesis`
+    var colorDotborderDotaccentDotgreen: String
     
     @JSName("color.border.accent.magenta")
-    var colorDotborderDotaccentDotmagenta: `varLeftparenthesis--ds-border-accent-magentaRightparenthesis`
+    var colorDotborderDotaccentDotmagenta: String
     
     @JSName("color.border.accent.orange")
-    var colorDotborderDotaccentDotorange: `varLeftparenthesis--ds-border-accent-orangeRightparenthesis`
+    var colorDotborderDotaccentDotorange: String
     
     @JSName("color.border.accent.purple")
-    var colorDotborderDotaccentDotpurple: `varLeftparenthesis--ds-border-accent-purpleRightparenthesis`
+    var colorDotborderDotaccentDotpurple: String
     
     @JSName("color.border.accent.red")
-    var colorDotborderDotaccentDotred: `varLeftparenthesis--ds-border-accent-redRightparenthesis`
+    var colorDotborderDotaccentDotred: String
     
     @JSName("color.border.accent.teal")
-    var colorDotborderDotaccentDotteal: `varLeftparenthesis--ds-border-accent-tealRightparenthesis`
+    var colorDotborderDotaccentDotteal: String
     
     @JSName("color.border.accent.yellow")
-    var colorDotborderDotaccentDotyellow: `varLeftparenthesis--ds-border-accent-yellowRightparenthesis`
+    var colorDotborderDotaccentDotyellow: String
     
     @JSName("color.border.bold")
-    var colorDotborderDotbold: `varLeftparenthesis--ds-border-boldRightparenthesis`
+    var colorDotborderDotbold: String
     
     @JSName("color.border.brand")
-    var colorDotborderDotbrand: `varLeftparenthesis--ds-border-brandRightparenthesis`
+    var colorDotborderDotbrand: String
     
     @JSName("color.border.danger")
-    var colorDotborderDotdanger: `varLeftparenthesis--ds-border-dangerRightparenthesis`
+    var colorDotborderDotdanger: String
     
     @JSName("color.border.disabled")
-    var colorDotborderDotdisabled: `varLeftparenthesis--ds-border-disabledRightparenthesis`
+    var colorDotborderDotdisabled: String
     
     @JSName("color.border.discovery")
-    var colorDotborderDotdiscovery: `varLeftparenthesis--ds-border-discoveryRightparenthesis`
+    var colorDotborderDotdiscovery: String
     
     @JSName("color.border.focus")
-    var colorDotborderDotfocus: `varLeftparenthesis--ds-border-focusRightparenthesis`
+    var colorDotborderDotfocus: String
     
     @JSName("color.border.focused")
-    var colorDotborderDotfocused: `varLeftparenthesis--ds-border-focusedRightparenthesis`
+    var colorDotborderDotfocused: String
     
     @JSName("color.border.information")
-    var colorDotborderDotinformation: `varLeftparenthesis--ds-border-informationRightparenthesis`
+    var colorDotborderDotinformation: String
     
     @JSName("color.border.input")
-    var colorDotborderDotinput: `varLeftparenthesis--ds-border-inputRightparenthesis`
+    var colorDotborderDotinput: String
     
     @JSName("color.border.inverse")
-    var colorDotborderDotinverse: `varLeftparenthesis--ds-border-inverseRightparenthesis`
+    var colorDotborderDotinverse: String
     
     @JSName("color.border.neutral")
-    var colorDotborderDotneutral: `varLeftparenthesis--ds-border-neutralRightparenthesis`
+    var colorDotborderDotneutral: String
     
     @JSName("color.border.selected")
-    var colorDotborderDotselected: `varLeftparenthesis--ds-border-selectedRightparenthesis`
+    var colorDotborderDotselected: String
     
     @JSName("color.border.success")
-    var colorDotborderDotsuccess: `varLeftparenthesis--ds-border-successRightparenthesis`
+    var colorDotborderDotsuccess: String
     
     @JSName("color.border.warning")
-    var colorDotborderDotwarning: `varLeftparenthesis--ds-border-warningRightparenthesis`
+    var colorDotborderDotwarning: String
     
     @JSName("color.icon")
-    var colorDoticon: `varLeftparenthesis--ds-iconRightparenthesis`
+    var colorDoticon: String
     
     @JSName("color.iconBorder.brand")
-    var colorDoticonBorderDotbrand: `varLeftparenthesis--ds-iconBorder-brandRightparenthesis`
+    var colorDoticonBorderDotbrand: String
     
     @JSName("color.iconBorder.danger")
-    var colorDoticonBorderDotdanger: `varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`
+    var colorDoticonBorderDotdanger: String
     
     @JSName("color.iconBorder.discovery")
-    var colorDoticonBorderDotdiscovery: `varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`
+    var colorDoticonBorderDotdiscovery: String
     
     @JSName("color.iconBorder.success")
-    var colorDoticonBorderDotsuccess: `varLeftparenthesis--ds-iconBorder-successRightparenthesis`
+    var colorDoticonBorderDotsuccess: String
     
     @JSName("color.iconBorder.warning")
-    var colorDoticonBorderDotwarning: `varLeftparenthesis--ds-iconBorder-warningRightparenthesis`
+    var colorDoticonBorderDotwarning: String
     
     @JSName("color.icon.accent.blue")
-    var colorDoticonDotaccentDotblue: `varLeftparenthesis--ds-icon-accent-blueRightparenthesis`
+    var colorDoticonDotaccentDotblue: String
     
     @JSName("color.icon.accent.gray")
-    var colorDoticonDotaccentDotgray: `varLeftparenthesis--ds-icon-accent-grayRightparenthesis`
+    var colorDoticonDotaccentDotgray: String
     
     @JSName("color.icon.accent.green")
-    var colorDoticonDotaccentDotgreen: `varLeftparenthesis--ds-icon-accent-greenRightparenthesis`
+    var colorDoticonDotaccentDotgreen: String
     
     @JSName("color.icon.accent.magenta")
-    var colorDoticonDotaccentDotmagenta: `varLeftparenthesis--ds-icon-accent-magentaRightparenthesis`
+    var colorDoticonDotaccentDotmagenta: String
     
     @JSName("color.icon.accent.orange")
-    var colorDoticonDotaccentDotorange: `varLeftparenthesis--ds-icon-accent-orangeRightparenthesis`
+    var colorDoticonDotaccentDotorange: String
     
     @JSName("color.icon.accent.purple")
-    var colorDoticonDotaccentDotpurple: `varLeftparenthesis--ds-icon-accent-purpleRightparenthesis`
+    var colorDoticonDotaccentDotpurple: String
     
     @JSName("color.icon.accent.red")
-    var colorDoticonDotaccentDotred: `varLeftparenthesis--ds-icon-accent-redRightparenthesis`
+    var colorDoticonDotaccentDotred: String
     
     @JSName("color.icon.accent.teal")
-    var colorDoticonDotaccentDotteal: `varLeftparenthesis--ds-icon-accent-tealRightparenthesis`
+    var colorDoticonDotaccentDotteal: String
     
     @JSName("color.icon.accent.yellow")
-    var colorDoticonDotaccentDotyellow: `varLeftparenthesis--ds-icon-accent-yellowRightparenthesis`
+    var colorDoticonDotaccentDotyellow: String
     
     @JSName("color.icon.brand")
-    var colorDoticonDotbrand: `varLeftparenthesis--ds-icon-brandRightparenthesis`
+    var colorDoticonDotbrand: String
     
     @JSName("color.icon.danger")
-    var colorDoticonDotdanger: `varLeftparenthesis--ds-icon-dangerRightparenthesis`
+    var colorDoticonDotdanger: String
     
     @JSName("color.icon.disabled")
-    var colorDoticonDotdisabled: `varLeftparenthesis--ds-icon-disabledRightparenthesis`
+    var colorDoticonDotdisabled: String
     
     @JSName("color.icon.discovery")
-    var colorDoticonDotdiscovery: `varLeftparenthesis--ds-icon-discoveryRightparenthesis`
+    var colorDoticonDotdiscovery: String
     
     @JSName("color.icon.information")
-    var colorDoticonDotinformation: `varLeftparenthesis--ds-icon-informationRightparenthesis`
+    var colorDoticonDotinformation: String
     
     @JSName("color.icon.inverse")
-    var colorDoticonDotinverse: `varLeftparenthesis--ds-icon-inverseRightparenthesis`
+    var colorDoticonDotinverse: String
     
     @JSName("color.icon.selected")
-    var colorDoticonDotselected: `varLeftparenthesis--ds-icon-selectedRightparenthesis`
+    var colorDoticonDotselected: String
     
     @JSName("color.icon.subtle")
-    var colorDoticonDotsubtle: `varLeftparenthesis--ds-icon-subtleRightparenthesis`
+    var colorDoticonDotsubtle: String
     
     @JSName("color.icon.success")
-    var colorDoticonDotsuccess: `varLeftparenthesis--ds-icon-successRightparenthesis`
+    var colorDoticonDotsuccess: String
     
     @JSName("color.icon.warning")
-    var colorDoticonDotwarning: `varLeftparenthesis--ds-icon-warningRightparenthesis`
+    var colorDoticonDotwarning: String
     
     @JSName("color.icon.warning.inverse")
-    var colorDoticonDotwarningDotinverse: `varLeftparenthesis--ds-icon-warning-inverseRightparenthesis`
+    var colorDoticonDotwarningDotinverse: String
     
     @JSName("color.interaction.hovered")
-    var colorDotinteractionDothovered: `varLeftparenthesis--ds-interaction-hoveredRightparenthesis`
+    var colorDotinteractionDothovered: String
     
     @JSName("color.interaction.inverse.hovered")
-    var colorDotinteractionDotinverseDothovered: `varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`
+    var colorDotinteractionDotinverseDothovered: String
     
     @JSName("color.interaction.inverse.pressed")
-    var colorDotinteractionDotinverseDotpressed: `varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`
+    var colorDotinteractionDotinverseDotpressed: String
     
     @JSName("color.interaction.pressed")
-    var colorDotinteractionDotpressed: `varLeftparenthesis--ds-interaction-pressedRightparenthesis`
+    var colorDotinteractionDotpressed: String
     
     @JSName("color.link")
-    var colorDotlink: `varLeftparenthesis--ds-linkRightparenthesis`
+    var colorDotlink: String
     
     @JSName("color.link.pressed")
-    var colorDotlinkDotpressed: `varLeftparenthesis--ds-link-pressedRightparenthesis`
+    var colorDotlinkDotpressed: String
     
     @JSName("color.overlay.hover")
-    var colorDotoverlayDothover: `varLeftparenthesis--ds-overlay-hoverRightparenthesis`
+    var colorDotoverlayDothover: String
     
     @JSName("color.overlay.pressed")
-    var colorDotoverlayDotpressed: `varLeftparenthesis--ds-overlay-pressedRightparenthesis`
+    var colorDotoverlayDotpressed: String
     
     @JSName("color.skeleton")
-    var colorDotskeleton: `varLeftparenthesis--ds-skeletonRightparenthesis`
+    var colorDotskeleton: String
     
     @JSName("color.skeleton.subtle")
-    var colorDotskeletonDotsubtle: `varLeftparenthesis--ds-skeleton-subtleRightparenthesis`
+    var colorDotskeletonDotsubtle: String
     
     @JSName("color.text")
-    var colorDottext: `varLeftparenthesis--ds-textRightparenthesis`
+    var colorDottext: String
     
     @JSName("color.text.accent.blue")
-    var colorDottextDotaccentDotblue: `varLeftparenthesis--ds-text-accent-blueRightparenthesis`
+    var colorDottextDotaccentDotblue: String
     
     @JSName("color.text.accent.blue.bolder")
-    var colorDottextDotaccentDotblueDotbolder: `varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis`
+    var colorDottextDotaccentDotblueDotbolder: String
     
     @JSName("color.text.accent.gray")
-    var colorDottextDotaccentDotgray: `varLeftparenthesis--ds-text-accent-grayRightparenthesis`
+    var colorDottextDotaccentDotgray: String
     
     @JSName("color.text.accent.gray.bolder")
-    var colorDottextDotaccentDotgrayDotbolder: `varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis`
+    var colorDottextDotaccentDotgrayDotbolder: String
     
     @JSName("color.text.accent.green")
-    var colorDottextDotaccentDotgreen: `varLeftparenthesis--ds-text-accent-greenRightparenthesis`
+    var colorDottextDotaccentDotgreen: String
     
     @JSName("color.text.accent.green.bolder")
-    var colorDottextDotaccentDotgreenDotbolder: `varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis`
+    var colorDottextDotaccentDotgreenDotbolder: String
     
     @JSName("color.text.accent.magenta")
-    var colorDottextDotaccentDotmagenta: `varLeftparenthesis--ds-text-accent-magentaRightparenthesis`
+    var colorDottextDotaccentDotmagenta: String
     
     @JSName("color.text.accent.magenta.bolder")
-    var colorDottextDotaccentDotmagentaDotbolder: `varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis`
+    var colorDottextDotaccentDotmagentaDotbolder: String
     
     @JSName("color.text.accent.orange")
-    var colorDottextDotaccentDotorange: `varLeftparenthesis--ds-text-accent-orangeRightparenthesis`
+    var colorDottextDotaccentDotorange: String
     
     @JSName("color.text.accent.orange.bolder")
-    var colorDottextDotaccentDotorangeDotbolder: `varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis`
+    var colorDottextDotaccentDotorangeDotbolder: String
     
     @JSName("color.text.accent.purple")
-    var colorDottextDotaccentDotpurple: `varLeftparenthesis--ds-text-accent-purpleRightparenthesis`
+    var colorDottextDotaccentDotpurple: String
     
     @JSName("color.text.accent.purple.bolder")
-    var colorDottextDotaccentDotpurpleDotbolder: `varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis`
+    var colorDottextDotaccentDotpurpleDotbolder: String
     
     @JSName("color.text.accent.red")
-    var colorDottextDotaccentDotred: `varLeftparenthesis--ds-text-accent-redRightparenthesis`
+    var colorDottextDotaccentDotred: String
     
     @JSName("color.text.accent.red.bolder")
-    var colorDottextDotaccentDotredDotbolder: `varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis`
+    var colorDottextDotaccentDotredDotbolder: String
     
     @JSName("color.text.accent.teal")
-    var colorDottextDotaccentDotteal: `varLeftparenthesis--ds-text-accent-tealRightparenthesis`
+    var colorDottextDotaccentDotteal: String
     
     @JSName("color.text.accent.teal.bolder")
-    var colorDottextDotaccentDottealDotbolder: `varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis`
+    var colorDottextDotaccentDottealDotbolder: String
     
     @JSName("color.text.accent.yellow")
-    var colorDottextDotaccentDotyellow: `varLeftparenthesis--ds-text-accent-yellowRightparenthesis`
+    var colorDottextDotaccentDotyellow: String
     
     @JSName("color.text.accent.yellow.bolder")
-    var colorDottextDotaccentDotyellowDotbolder: `varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis`
+    var colorDottextDotaccentDotyellowDotbolder: String
     
     @JSName("color.text.brand")
-    var colorDottextDotbrand: `varLeftparenthesis--ds-text-brandRightparenthesis`
+    var colorDottextDotbrand: String
     
     @JSName("color.text.danger")
-    var colorDottextDotdanger: `varLeftparenthesis--ds-text-dangerRightparenthesis`
+    var colorDottextDotdanger: String
     
     @JSName("color.text.disabled")
-    var colorDottextDotdisabled: `varLeftparenthesis--ds-text-disabledRightparenthesis`
+    var colorDottextDotdisabled: String
     
     @JSName("color.text.discovery")
-    var colorDottextDotdiscovery: `varLeftparenthesis--ds-text-discoveryRightparenthesis`
+    var colorDottextDotdiscovery: String
     
     @JSName("color.text.highEmphasis")
-    var colorDottextDothighEmphasis: `varLeftparenthesis--ds-text-highEmphasisRightparenthesis`
+    var colorDottextDothighEmphasis: String
     
     @JSName("color.text.information")
-    var colorDottextDotinformation: `varLeftparenthesis--ds-text-informationRightparenthesis`
+    var colorDottextDotinformation: String
     
     @JSName("color.text.inverse")
-    var colorDottextDotinverse: `varLeftparenthesis--ds-text-inverseRightparenthesis`
+    var colorDottextDotinverse: String
     
     @JSName("color.text.link.pressed")
-    var colorDottextDotlinkDotpressed: `varLeftparenthesis--ds-text-link-pressedRightparenthesis`
+    var colorDottextDotlinkDotpressed: String
     
     @JSName("color.text.link.resting")
-    var colorDottextDotlinkDotresting: `varLeftparenthesis--ds-text-link-restingRightparenthesis`
+    var colorDottextDotlinkDotresting: String
     
     @JSName("color.text.lowEmphasis")
-    var colorDottextDotlowEmphasis: `varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`
+    var colorDottextDotlowEmphasis: String
     
     @JSName("color.text.mediumEmphasis")
-    var colorDottextDotmediumEmphasis: `varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`
+    var colorDottextDotmediumEmphasis: String
     
     @JSName("color.text.onBold")
-    var colorDottextDotonBold: `varLeftparenthesis--ds-text-onBoldRightparenthesis`
+    var colorDottextDotonBold: String
     
     @JSName("color.text.onBoldWarning")
-    var colorDottextDotonBoldWarning: `varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`
+    var colorDottextDotonBoldWarning: String
     
     @JSName("color.text.selected")
-    var colorDottextDotselected: `varLeftparenthesis--ds-text-selectedRightparenthesis`
+    var colorDottextDotselected: String
     
     @JSName("color.text.subtle")
-    var colorDottextDotsubtle: `varLeftparenthesis--ds-text-subtleRightparenthesis`
+    var colorDottextDotsubtle: String
     
     @JSName("color.text.subtlest")
-    var colorDottextDotsubtlest: `varLeftparenthesis--ds-text-subtlestRightparenthesis`
+    var colorDottextDotsubtlest: String
     
     @JSName("color.text.success")
-    var colorDottextDotsuccess: `varLeftparenthesis--ds-text-successRightparenthesis`
+    var colorDottextDotsuccess: String
     
     @JSName("color.text.warning")
-    var colorDottextDotwarning: `varLeftparenthesis--ds-text-warningRightparenthesis`
+    var colorDottextDotwarning: String
     
     @JSName("color.text.warning.inverse")
-    var colorDottextDotwarningDotinverse: `varLeftparenthesis--ds-text-warning-inverseRightparenthesis`
+    var colorDottextDotwarningDotinverse: String
     
     @JSName("elevation.shadow.overflow")
-    var elevationDotshadowDotoverflow: `varLeftparenthesis--ds-shadow-overflowRightparenthesis`
+    var elevationDotshadowDotoverflow: String
     
     @JSName("elevation.shadow.overlay")
-    var elevationDotshadowDotoverlay: `varLeftparenthesis--ds-shadow-overlayRightparenthesis`
+    var elevationDotshadowDotoverlay: String
     
     @JSName("elevation.shadow.raised")
-    var elevationDotshadowDotraised: `varLeftparenthesis--ds-shadow-raisedRightparenthesis`
+    var elevationDotshadowDotraised: String
     
     @JSName("elevation.surface")
-    var elevationDotsurface: `varLeftparenthesis--ds-surfaceRightparenthesis`
+    var elevationDotsurface: String
     
     @JSName("elevation.surface.hovered")
-    var elevationDotsurfaceDothovered: `varLeftparenthesis--ds-surface-hoveredRightparenthesis`
+    var elevationDotsurfaceDothovered: String
     
     @JSName("elevation.surface.overlay")
-    var elevationDotsurfaceDotoverlay: `varLeftparenthesis--ds-surface-overlayRightparenthesis`
+    var elevationDotsurfaceDotoverlay: String
     
     @JSName("elevation.surface.overlay.hovered")
-    var elevationDotsurfaceDotoverlayDothovered: `varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis`
+    var elevationDotsurfaceDotoverlayDothovered: String
     
     @JSName("elevation.surface.overlay.pressed")
-    var elevationDotsurfaceDotoverlayDotpressed: `varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis`
+    var elevationDotsurfaceDotoverlayDotpressed: String
     
     @JSName("elevation.surface.pressed")
-    var elevationDotsurfaceDotpressed: `varLeftparenthesis--ds-surface-pressedRightparenthesis`
+    var elevationDotsurfaceDotpressed: String
     
     @JSName("elevation.surface.raised")
-    var elevationDotsurfaceDotraised: `varLeftparenthesis--ds-surface-raisedRightparenthesis`
+    var elevationDotsurfaceDotraised: String
     
     @JSName("elevation.surface.raised.hovered")
-    var elevationDotsurfaceDotraisedDothovered: `varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis`
+    var elevationDotsurfaceDotraisedDothovered: String
     
     @JSName("elevation.surface.raised.pressed")
-    var elevationDotsurfaceDotraisedDotpressed: `varLeftparenthesis--ds-surface-raised-pressedRightparenthesis`
+    var elevationDotsurfaceDotraisedDotpressed: String
     
     @JSName("elevation.surface.sunken")
-    var elevationDotsurfaceDotsunken: `varLeftparenthesis--ds-surface-sunkenRightparenthesis`
+    var elevationDotsurfaceDotsunken: String
     
     @JSName("opacity.disabled")
-    var opacityDotdisabled: `varLeftparenthesis--ds-opacity-disabledRightparenthesis`
+    var opacityDotdisabled: String
     
     @JSName("opacity.loading")
-    var opacityDotloading: `varLeftparenthesis--ds-opacity-loadingRightparenthesis`
+    var opacityDotloading: String
     
     @JSName("shadow.card")
-    var shadowDotcard: `varLeftparenthesis--ds-cardRightparenthesis`
+    var shadowDotcard: String
     
     @JSName("shadow.overlay")
-    var shadowDotoverlay: `varLeftparenthesis--ds-overlayRightparenthesis`
+    var shadowDotoverlay: String
     
     @JSName("utility.UNSAFE_util.MISSING_TOKEN")
-    var utilityDotUNSAFE_utilDotMISSING_TOKEN: `varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`
+    var utilityDotUNSAFE_utilDotMISSING_TOKEN: String
     
     @JSName("utility.UNSAFE_util.transparent")
-    var utilityDotUNSAFE_utilDottransparent: `varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`
+    var utilityDotUNSAFE_utilDottransparent: String
   }
   object CSSTokenMap {
     
@@ -3773,587 +3189,587 @@ object tokenNamesMod {
     
     extension [Self <: CSSTokenMap](x: Self) {
       
-      inline def setColorDotaccentDotboldBlue(value: `varLeftparenthesis--ds-accent-boldBlueRightparenthesis`): Self = StObject.set(x, "color.accent.boldBlue", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotboldBlue(value: String): Self = StObject.set(x, "color.accent.boldBlue", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotboldGreen(value: `varLeftparenthesis--ds-accent-boldGreenRightparenthesis`): Self = StObject.set(x, "color.accent.boldGreen", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotboldGreen(value: String): Self = StObject.set(x, "color.accent.boldGreen", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotboldOrange(value: `varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`): Self = StObject.set(x, "color.accent.boldOrange", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotboldOrange(value: String): Self = StObject.set(x, "color.accent.boldOrange", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotboldPurple(value: `varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`): Self = StObject.set(x, "color.accent.boldPurple", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotboldPurple(value: String): Self = StObject.set(x, "color.accent.boldPurple", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotboldRed(value: `varLeftparenthesis--ds-accent-boldRedRightparenthesis`): Self = StObject.set(x, "color.accent.boldRed", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotboldRed(value: String): Self = StObject.set(x, "color.accent.boldRed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotboldTeal(value: `varLeftparenthesis--ds-accent-boldTealRightparenthesis`): Self = StObject.set(x, "color.accent.boldTeal", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotboldTeal(value: String): Self = StObject.set(x, "color.accent.boldTeal", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotsubtleBlue(value: `varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`): Self = StObject.set(x, "color.accent.subtleBlue", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotsubtleBlue(value: String): Self = StObject.set(x, "color.accent.subtleBlue", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotsubtleGreen(value: `varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`): Self = StObject.set(x, "color.accent.subtleGreen", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotsubtleGreen(value: String): Self = StObject.set(x, "color.accent.subtleGreen", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotsubtleMagenta(value: `varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`): Self = StObject.set(x, "color.accent.subtleMagenta", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotsubtleMagenta(value: String): Self = StObject.set(x, "color.accent.subtleMagenta", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotsubtleOrange(value: `varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`): Self = StObject.set(x, "color.accent.subtleOrange", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotsubtleOrange(value: String): Self = StObject.set(x, "color.accent.subtleOrange", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotsubtlePurple(value: `varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`): Self = StObject.set(x, "color.accent.subtlePurple", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotsubtlePurple(value: String): Self = StObject.set(x, "color.accent.subtlePurple", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotsubtleRed(value: `varLeftparenthesis--ds-accent-subtleRedRightparenthesis`): Self = StObject.set(x, "color.accent.subtleRed", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotsubtleRed(value: String): Self = StObject.set(x, "color.accent.subtleRed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotaccentDotsubtleTeal(value: `varLeftparenthesis--ds-accent-subtleTealRightparenthesis`): Self = StObject.set(x, "color.accent.subtleTeal", value.asInstanceOf[js.Any])
+      inline def setColorDotaccentDotsubtleTeal(value: String): Self = StObject.set(x, "color.accent.subtleTeal", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotblue(value: `varLeftparenthesis--ds-background-accent-blueRightparenthesis`): Self = StObject.set(x, "color.background.accent.blue", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotblue(value: String): Self = StObject.set(x, "color.background.accent.blue", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotblueDotbold(value: `varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.blue.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotblueDotbold(value: String): Self = StObject.set(x, "color.background.accent.blue.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotblueDotbolder(value: `varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.blue.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotblueDotbolder(value: String): Self = StObject.set(x, "color.background.accent.blue.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotblueDotsubtle(value: `varLeftparenthesis--ds-background-accent-blue-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.blue.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotblueDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.blue.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotblueDotsubtler(value: `varLeftparenthesis--ds-background-accent-blue-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.blue.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotblueDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.blue.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotblueDotsubtlest(value: `varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.blue.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotblueDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.blue.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgrayDotbolder(value: `varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.gray.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgrayDotbolder(value: String): Self = StObject.set(x, "color.background.accent.gray.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgrayDotsubtle(value: `varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.gray.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgrayDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.gray.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgrayDotsubtler(value: `varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.gray.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgrayDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.gray.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgrayDotsubtlest(value: `varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.gray.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgrayDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.gray.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgreen(value: `varLeftparenthesis--ds-background-accent-greenRightparenthesis`): Self = StObject.set(x, "color.background.accent.green", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgreen(value: String): Self = StObject.set(x, "color.background.accent.green", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgreenDotbold(value: `varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.green.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgreenDotbold(value: String): Self = StObject.set(x, "color.background.accent.green.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgreenDotbolder(value: `varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.green.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgreenDotbolder(value: String): Self = StObject.set(x, "color.background.accent.green.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgreenDotsubtle(value: `varLeftparenthesis--ds-background-accent-green-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.green.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgreenDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.green.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgreenDotsubtler(value: `varLeftparenthesis--ds-background-accent-green-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.green.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgreenDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.green.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotgreenDotsubtlest(value: `varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.green.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotgreenDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.green.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotmagenta(value: `varLeftparenthesis--ds-background-accent-magentaRightparenthesis`): Self = StObject.set(x, "color.background.accent.magenta", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotmagenta(value: String): Self = StObject.set(x, "color.background.accent.magenta", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotmagentaDotbold(value: `varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.magenta.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotmagentaDotbold(value: String): Self = StObject.set(x, "color.background.accent.magenta.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotmagentaDotbolder(value: `varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.magenta.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotmagentaDotbolder(value: String): Self = StObject.set(x, "color.background.accent.magenta.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtle(value: `varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.magenta.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.magenta.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtler(value: `varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.magenta.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.magenta.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtlest(value: `varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.magenta.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.magenta.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotorange(value: `varLeftparenthesis--ds-background-accent-orangeRightparenthesis`): Self = StObject.set(x, "color.background.accent.orange", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotorange(value: String): Self = StObject.set(x, "color.background.accent.orange", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotorangeDotbold(value: `varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.orange.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotorangeDotbold(value: String): Self = StObject.set(x, "color.background.accent.orange.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotorangeDotbolder(value: `varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.orange.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotorangeDotbolder(value: String): Self = StObject.set(x, "color.background.accent.orange.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotorangeDotsubtle(value: `varLeftparenthesis--ds-background-accent-orange-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.orange.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotorangeDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.orange.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotorangeDotsubtler(value: `varLeftparenthesis--ds-background-accent-orange-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.orange.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotorangeDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.orange.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotorangeDotsubtlest(value: `varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.orange.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotorangeDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.orange.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotpurple(value: `varLeftparenthesis--ds-background-accent-purpleRightparenthesis`): Self = StObject.set(x, "color.background.accent.purple", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotpurple(value: String): Self = StObject.set(x, "color.background.accent.purple", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotpurpleDotbold(value: `varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.purple.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotpurpleDotbold(value: String): Self = StObject.set(x, "color.background.accent.purple.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotpurpleDotbolder(value: `varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.purple.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotpurpleDotbolder(value: String): Self = StObject.set(x, "color.background.accent.purple.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtle(value: `varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.purple.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.purple.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtler(value: `varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.purple.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.purple.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtlest(value: `varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.purple.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.purple.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotred(value: `varLeftparenthesis--ds-background-accent-redRightparenthesis`): Self = StObject.set(x, "color.background.accent.red", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotred(value: String): Self = StObject.set(x, "color.background.accent.red", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotredDotbold(value: `varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.red.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotredDotbold(value: String): Self = StObject.set(x, "color.background.accent.red.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotredDotbolder(value: `varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.red.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotredDotbolder(value: String): Self = StObject.set(x, "color.background.accent.red.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotredDotsubtle(value: `varLeftparenthesis--ds-background-accent-red-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.red.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotredDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.red.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotredDotsubtler(value: `varLeftparenthesis--ds-background-accent-red-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.red.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotredDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.red.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotredDotsubtlest(value: `varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.red.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotredDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.red.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotteal(value: `varLeftparenthesis--ds-background-accent-tealRightparenthesis`): Self = StObject.set(x, "color.background.accent.teal", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotteal(value: String): Self = StObject.set(x, "color.background.accent.teal", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDottealDotbold(value: `varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.teal.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDottealDotbold(value: String): Self = StObject.set(x, "color.background.accent.teal.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDottealDotbolder(value: `varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.teal.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDottealDotbolder(value: String): Self = StObject.set(x, "color.background.accent.teal.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDottealDotsubtle(value: `varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.teal.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDottealDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.teal.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDottealDotsubtler(value: `varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.teal.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDottealDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.teal.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDottealDotsubtlest(value: `varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.teal.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDottealDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.teal.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotyellow(value: `varLeftparenthesis--ds-background-accent-yellowRightparenthesis`): Self = StObject.set(x, "color.background.accent.yellow", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotyellow(value: String): Self = StObject.set(x, "color.background.accent.yellow", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotyellowDotbold(value: `varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`): Self = StObject.set(x, "color.background.accent.yellow.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotyellowDotbold(value: String): Self = StObject.set(x, "color.background.accent.yellow.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotyellowDotbolder(value: `varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`): Self = StObject.set(x, "color.background.accent.yellow.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotyellowDotbolder(value: String): Self = StObject.set(x, "color.background.accent.yellow.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotyellowDotsubtle(value: `varLeftparenthesis--ds-background-accent-yellow-subtleRightparenthesis`): Self = StObject.set(x, "color.background.accent.yellow.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotyellowDotsubtle(value: String): Self = StObject.set(x, "color.background.accent.yellow.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotyellowDotsubtler(value: `varLeftparenthesis--ds-background-accent-yellow-subtlerRightparenthesis`): Self = StObject.set(x, "color.background.accent.yellow.subtler", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotyellowDotsubtler(value: String): Self = StObject.set(x, "color.background.accent.yellow.subtler", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotaccentDotyellowDotsubtlest(value: `varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`): Self = StObject.set(x, "color.background.accent.yellow.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotaccentDotyellowDotsubtlest(value: String): Self = StObject.set(x, "color.background.accent.yellow.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotblanket(value: `varLeftparenthesis--ds-background-blanketRightparenthesis`): Self = StObject.set(x, "color.background.blanket", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotblanket(value: String): Self = StObject.set(x, "color.background.blanket", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldBrandDothover(value: `varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`): Self = StObject.set(x, "color.background.boldBrand.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldBrandDothover(value: String): Self = StObject.set(x, "color.background.boldBrand.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldBrandDotpressed(value: `varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`): Self = StObject.set(x, "color.background.boldBrand.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldBrandDotpressed(value: String): Self = StObject.set(x, "color.background.boldBrand.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldBrandDotresting(value: `varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`): Self = StObject.set(x, "color.background.boldBrand.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldBrandDotresting(value: String): Self = StObject.set(x, "color.background.boldBrand.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldDangerDothover(value: `varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`): Self = StObject.set(x, "color.background.boldDanger.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldDangerDothover(value: String): Self = StObject.set(x, "color.background.boldDanger.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldDangerDotpressed(value: `varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`): Self = StObject.set(x, "color.background.boldDanger.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldDangerDotpressed(value: String): Self = StObject.set(x, "color.background.boldDanger.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldDangerDotresting(value: `varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`): Self = StObject.set(x, "color.background.boldDanger.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldDangerDotresting(value: String): Self = StObject.set(x, "color.background.boldDanger.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldDiscoveryDothover(value: `varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`): Self = StObject.set(x, "color.background.boldDiscovery.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldDiscoveryDothover(value: String): Self = StObject.set(x, "color.background.boldDiscovery.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldDiscoveryDotpressed(value: `varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`): Self = StObject.set(x, "color.background.boldDiscovery.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldDiscoveryDotpressed(value: String): Self = StObject.set(x, "color.background.boldDiscovery.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldDiscoveryDotresting(value: `varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`): Self = StObject.set(x, "color.background.boldDiscovery.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldDiscoveryDotresting(value: String): Self = StObject.set(x, "color.background.boldDiscovery.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldNeutralDothover(value: `varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`): Self = StObject.set(x, "color.background.boldNeutral.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldNeutralDothover(value: String): Self = StObject.set(x, "color.background.boldNeutral.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldNeutralDotpressed(value: `varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`): Self = StObject.set(x, "color.background.boldNeutral.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldNeutralDotpressed(value: String): Self = StObject.set(x, "color.background.boldNeutral.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldNeutralDotresting(value: `varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`): Self = StObject.set(x, "color.background.boldNeutral.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldNeutralDotresting(value: String): Self = StObject.set(x, "color.background.boldNeutral.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldSuccessDothover(value: `varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`): Self = StObject.set(x, "color.background.boldSuccess.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldSuccessDothover(value: String): Self = StObject.set(x, "color.background.boldSuccess.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldSuccessDotpressed(value: `varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`): Self = StObject.set(x, "color.background.boldSuccess.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldSuccessDotpressed(value: String): Self = StObject.set(x, "color.background.boldSuccess.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldSuccessDotresting(value: `varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`): Self = StObject.set(x, "color.background.boldSuccess.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldSuccessDotresting(value: String): Self = StObject.set(x, "color.background.boldSuccess.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldWarningDothover(value: `varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`): Self = StObject.set(x, "color.background.boldWarning.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldWarningDothover(value: String): Self = StObject.set(x, "color.background.boldWarning.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldWarningDotpressed(value: `varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`): Self = StObject.set(x, "color.background.boldWarning.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldWarningDotpressed(value: String): Self = StObject.set(x, "color.background.boldWarning.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotboldWarningDotresting(value: `varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`): Self = StObject.set(x, "color.background.boldWarning.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotboldWarningDotresting(value: String): Self = StObject.set(x, "color.background.boldWarning.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotbrand(value: `varLeftparenthesis--ds-background-brandRightparenthesis`): Self = StObject.set(x, "color.background.brand", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotbrand(value: String): Self = StObject.set(x, "color.background.brand", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotbrandDotbold(value: `varLeftparenthesis--ds-background-brand-boldRightparenthesis`): Self = StObject.set(x, "color.background.brand.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotbrandDotbold(value: String): Self = StObject.set(x, "color.background.brand.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotbrandDotboldDothovered(value: `varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.brand.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotbrandDotboldDothovered(value: String): Self = StObject.set(x, "color.background.brand.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotbrandDotboldDotpressed(value: `varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.brand.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotbrandDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.brand.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotbrandDothovered(value: `varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.brand.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotbrandDothovered(value: String): Self = StObject.set(x, "color.background.brand.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotbrandDotpressed(value: `varLeftparenthesis--ds-background-brand-pressedRightparenthesis`): Self = StObject.set(x, "color.background.brand.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotbrandDotpressed(value: String): Self = StObject.set(x, "color.background.brand.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotcard(value: `varLeftparenthesis--ds-background-cardRightparenthesis`): Self = StObject.set(x, "color.background.card", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotcard(value: String): Self = StObject.set(x, "color.background.card", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdanger(value: `varLeftparenthesis--ds-background-dangerRightparenthesis`): Self = StObject.set(x, "color.background.danger", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdanger(value: String): Self = StObject.set(x, "color.background.danger", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdangerDotbold(value: `varLeftparenthesis--ds-background-danger-boldRightparenthesis`): Self = StObject.set(x, "color.background.danger.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdangerDotbold(value: String): Self = StObject.set(x, "color.background.danger.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdangerDotboldDothovered(value: `varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.danger.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdangerDotboldDothovered(value: String): Self = StObject.set(x, "color.background.danger.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdangerDotboldDotpressed(value: `varLeftparenthesis--ds-background-danger-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.danger.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdangerDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.danger.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdangerDothovered(value: `varLeftparenthesis--ds-background-danger-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.danger.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdangerDothovered(value: String): Self = StObject.set(x, "color.background.danger.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdangerDotpressed(value: `varLeftparenthesis--ds-background-danger-pressedRightparenthesis`): Self = StObject.set(x, "color.background.danger.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdangerDotpressed(value: String): Self = StObject.set(x, "color.background.danger.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdefault(value: `varLeftparenthesis--ds-background-defaultRightparenthesis`): Self = StObject.set(x, "color.background.default", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdefault(value: String): Self = StObject.set(x, "color.background.default", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdisabled(value: `varLeftparenthesis--ds-background-disabledRightparenthesis`): Self = StObject.set(x, "color.background.disabled", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdisabled(value: String): Self = StObject.set(x, "color.background.disabled", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdiscovery(value: `varLeftparenthesis--ds-background-discoveryRightparenthesis`): Self = StObject.set(x, "color.background.discovery", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdiscovery(value: String): Self = StObject.set(x, "color.background.discovery", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdiscoveryDotbold(value: `varLeftparenthesis--ds-background-discovery-boldRightparenthesis`): Self = StObject.set(x, "color.background.discovery.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdiscoveryDotbold(value: String): Self = StObject.set(x, "color.background.discovery.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdiscoveryDotboldDothovered(value: `varLeftparenthesis--ds-background-discovery-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.discovery.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdiscoveryDotboldDothovered(value: String): Self = StObject.set(x, "color.background.discovery.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdiscoveryDotboldDotpressed(value: `varLeftparenthesis--ds-background-discovery-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.discovery.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdiscoveryDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.discovery.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdiscoveryDothovered(value: `varLeftparenthesis--ds-background-discovery-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.discovery.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdiscoveryDothovered(value: String): Self = StObject.set(x, "color.background.discovery.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotdiscoveryDotpressed(value: `varLeftparenthesis--ds-background-discovery-pressedRightparenthesis`): Self = StObject.set(x, "color.background.discovery.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotdiscoveryDotpressed(value: String): Self = StObject.set(x, "color.background.discovery.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinformation(value: `varLeftparenthesis--ds-background-informationRightparenthesis`): Self = StObject.set(x, "color.background.information", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinformation(value: String): Self = StObject.set(x, "color.background.information", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinformationDotbold(value: `varLeftparenthesis--ds-background-information-boldRightparenthesis`): Self = StObject.set(x, "color.background.information.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinformationDotbold(value: String): Self = StObject.set(x, "color.background.information.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinformationDotboldDothovered(value: `varLeftparenthesis--ds-background-information-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.information.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinformationDotboldDothovered(value: String): Self = StObject.set(x, "color.background.information.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinformationDotboldDotpressed(value: `varLeftparenthesis--ds-background-information-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.information.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinformationDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.information.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinformationDothovered(value: `varLeftparenthesis--ds-background-information-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.information.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinformationDothovered(value: String): Self = StObject.set(x, "color.background.information.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinformationDotpressed(value: `varLeftparenthesis--ds-background-information-pressedRightparenthesis`): Self = StObject.set(x, "color.background.information.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinformationDotpressed(value: String): Self = StObject.set(x, "color.background.information.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinput(value: `varLeftparenthesis--ds-background-inputRightparenthesis`): Self = StObject.set(x, "color.background.input", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinput(value: String): Self = StObject.set(x, "color.background.input", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinputDothovered(value: `varLeftparenthesis--ds-background-input-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.input.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinputDothovered(value: String): Self = StObject.set(x, "color.background.input.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinputDotpressed(value: `varLeftparenthesis--ds-background-input-pressedRightparenthesis`): Self = StObject.set(x, "color.background.input.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinputDotpressed(value: String): Self = StObject.set(x, "color.background.input.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinverse(value: `varLeftparenthesis--ds-background-inverseRightparenthesis`): Self = StObject.set(x, "color.background.inverse", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinverse(value: String): Self = StObject.set(x, "color.background.inverse", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinverseDotsubtle(value: `varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`): Self = StObject.set(x, "color.background.inverse.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinverseDotsubtle(value: String): Self = StObject.set(x, "color.background.inverse.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinverseDotsubtleDothovered(value: `varLeftparenthesis--ds-background-inverse-subtle-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.inverse.subtle.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinverseDotsubtleDothovered(value: String): Self = StObject.set(x, "color.background.inverse.subtle.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotinverseDotsubtleDotpressed(value: `varLeftparenthesis--ds-background-inverse-subtle-pressedRightparenthesis`): Self = StObject.set(x, "color.background.inverse.subtle.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotinverseDotsubtleDotpressed(value: String): Self = StObject.set(x, "color.background.inverse.subtle.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutral(value: `varLeftparenthesis--ds-background-neutralRightparenthesis`): Self = StObject.set(x, "color.background.neutral", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutral(value: String): Self = StObject.set(x, "color.background.neutral", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDotbold(value: `varLeftparenthesis--ds-background-neutral-boldRightparenthesis`): Self = StObject.set(x, "color.background.neutral.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDotbold(value: String): Self = StObject.set(x, "color.background.neutral.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDotboldDothovered(value: `varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.neutral.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDotboldDothovered(value: String): Self = StObject.set(x, "color.background.neutral.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDotboldDotpressed(value: `varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.neutral.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.neutral.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDothovered(value: `varLeftparenthesis--ds-background-neutral-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.neutral.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDothovered(value: String): Self = StObject.set(x, "color.background.neutral.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDotpressed(value: `varLeftparenthesis--ds-background-neutral-pressedRightparenthesis`): Self = StObject.set(x, "color.background.neutral.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDotpressed(value: String): Self = StObject.set(x, "color.background.neutral.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDotsubtle(value: `varLeftparenthesis--ds-background-neutral-subtleRightparenthesis`): Self = StObject.set(x, "color.background.neutral.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDotsubtle(value: String): Self = StObject.set(x, "color.background.neutral.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDotsubtleDothovered(value: `varLeftparenthesis--ds-background-neutral-subtle-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.neutral.subtle.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDotsubtleDothovered(value: String): Self = StObject.set(x, "color.background.neutral.subtle.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotneutralDotsubtleDotpressed(value: `varLeftparenthesis--ds-background-neutral-subtle-pressedRightparenthesis`): Self = StObject.set(x, "color.background.neutral.subtle.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotneutralDotsubtleDotpressed(value: String): Self = StObject.set(x, "color.background.neutral.subtle.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotoverlay(value: `varLeftparenthesis--ds-background-overlayRightparenthesis`): Self = StObject.set(x, "color.background.overlay", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotoverlay(value: String): Self = StObject.set(x, "color.background.overlay", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselected(value: `varLeftparenthesis--ds-background-selectedRightparenthesis`): Self = StObject.set(x, "color.background.selected", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselected(value: String): Self = StObject.set(x, "color.background.selected", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselectedDotbold(value: `varLeftparenthesis--ds-background-selected-boldRightparenthesis`): Self = StObject.set(x, "color.background.selected.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselectedDotbold(value: String): Self = StObject.set(x, "color.background.selected.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselectedDotboldDothovered(value: `varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.selected.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselectedDotboldDothovered(value: String): Self = StObject.set(x, "color.background.selected.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselectedDotboldDotpressed(value: `varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.selected.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselectedDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.selected.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselectedDothover(value: `varLeftparenthesis--ds-background-selected-hoverRightparenthesis`): Self = StObject.set(x, "color.background.selected.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselectedDothover(value: String): Self = StObject.set(x, "color.background.selected.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselectedDothovered(value: `varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.selected.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselectedDothovered(value: String): Self = StObject.set(x, "color.background.selected.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselectedDotpressed(value: `varLeftparenthesis--ds-background-selected-pressedRightparenthesis`): Self = StObject.set(x, "color.background.selected.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselectedDotpressed(value: String): Self = StObject.set(x, "color.background.selected.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotselectedDotresting(value: `varLeftparenthesis--ds-background-selected-restingRightparenthesis`): Self = StObject.set(x, "color.background.selected.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotselectedDotresting(value: String): Self = StObject.set(x, "color.background.selected.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleBorderedNeutralDotpressed(value: `varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`): Self = StObject.set(x, "color.background.subtleBorderedNeutral.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleBorderedNeutralDotpressed(value: String): Self = StObject.set(x, "color.background.subtleBorderedNeutral.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleBorderedNeutralDotresting(value: `varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`): Self = StObject.set(x, "color.background.subtleBorderedNeutral.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleBorderedNeutralDotresting(value: String): Self = StObject.set(x, "color.background.subtleBorderedNeutral.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleBrandDothover(value: `varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`): Self = StObject.set(x, "color.background.subtleBrand.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleBrandDothover(value: String): Self = StObject.set(x, "color.background.subtleBrand.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleBrandDotpressed(value: `varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`): Self = StObject.set(x, "color.background.subtleBrand.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleBrandDotpressed(value: String): Self = StObject.set(x, "color.background.subtleBrand.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleBrandDotresting(value: `varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`): Self = StObject.set(x, "color.background.subtleBrand.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleBrandDotresting(value: String): Self = StObject.set(x, "color.background.subtleBrand.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleDangerDothover(value: `varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`): Self = StObject.set(x, "color.background.subtleDanger.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleDangerDothover(value: String): Self = StObject.set(x, "color.background.subtleDanger.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleDangerDotpressed(value: `varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`): Self = StObject.set(x, "color.background.subtleDanger.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleDangerDotpressed(value: String): Self = StObject.set(x, "color.background.subtleDanger.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleDangerDotresting(value: `varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`): Self = StObject.set(x, "color.background.subtleDanger.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleDangerDotresting(value: String): Self = StObject.set(x, "color.background.subtleDanger.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleDiscoveryDothover(value: `varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`): Self = StObject.set(x, "color.background.subtleDiscovery.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleDiscoveryDothover(value: String): Self = StObject.set(x, "color.background.subtleDiscovery.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleDiscoveryDotpressed(value: `varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`): Self = StObject.set(x, "color.background.subtleDiscovery.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleDiscoveryDotpressed(value: String): Self = StObject.set(x, "color.background.subtleDiscovery.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleDiscoveryDotresting(value: `varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`): Self = StObject.set(x, "color.background.subtleDiscovery.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleDiscoveryDotresting(value: String): Self = StObject.set(x, "color.background.subtleDiscovery.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleNeutralDothover(value: `varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`): Self = StObject.set(x, "color.background.subtleNeutral.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleNeutralDothover(value: String): Self = StObject.set(x, "color.background.subtleNeutral.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleNeutralDotpressed(value: `varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`): Self = StObject.set(x, "color.background.subtleNeutral.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleNeutralDotpressed(value: String): Self = StObject.set(x, "color.background.subtleNeutral.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleNeutralDotresting(value: `varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`): Self = StObject.set(x, "color.background.subtleNeutral.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleNeutralDotresting(value: String): Self = StObject.set(x, "color.background.subtleNeutral.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleSuccessDothover(value: `varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`): Self = StObject.set(x, "color.background.subtleSuccess.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleSuccessDothover(value: String): Self = StObject.set(x, "color.background.subtleSuccess.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleSuccessDotpressed(value: `varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`): Self = StObject.set(x, "color.background.subtleSuccess.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleSuccessDotpressed(value: String): Self = StObject.set(x, "color.background.subtleSuccess.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleSuccessDotresting(value: `varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`): Self = StObject.set(x, "color.background.subtleSuccess.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleSuccessDotresting(value: String): Self = StObject.set(x, "color.background.subtleSuccess.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleWarningDothover(value: `varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`): Self = StObject.set(x, "color.background.subtleWarning.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleWarningDothover(value: String): Self = StObject.set(x, "color.background.subtleWarning.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleWarningDotpressed(value: `varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`): Self = StObject.set(x, "color.background.subtleWarning.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleWarningDotpressed(value: String): Self = StObject.set(x, "color.background.subtleWarning.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsubtleWarningDotresting(value: `varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`): Self = StObject.set(x, "color.background.subtleWarning.resting", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsubtleWarningDotresting(value: String): Self = StObject.set(x, "color.background.subtleWarning.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsuccess(value: `varLeftparenthesis--ds-background-successRightparenthesis`): Self = StObject.set(x, "color.background.success", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsuccess(value: String): Self = StObject.set(x, "color.background.success", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsuccessDotbold(value: `varLeftparenthesis--ds-background-success-boldRightparenthesis`): Self = StObject.set(x, "color.background.success.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsuccessDotbold(value: String): Self = StObject.set(x, "color.background.success.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsuccessDotboldDothovered(value: `varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.success.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsuccessDotboldDothovered(value: String): Self = StObject.set(x, "color.background.success.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsuccessDotboldDotpressed(value: `varLeftparenthesis--ds-background-success-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.success.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsuccessDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.success.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsuccessDothovered(value: `varLeftparenthesis--ds-background-success-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.success.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsuccessDothovered(value: String): Self = StObject.set(x, "color.background.success.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsuccessDotpressed(value: `varLeftparenthesis--ds-background-success-pressedRightparenthesis`): Self = StObject.set(x, "color.background.success.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsuccessDotpressed(value: String): Self = StObject.set(x, "color.background.success.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotsunken(value: `varLeftparenthesis--ds-background-sunkenRightparenthesis`): Self = StObject.set(x, "color.background.sunken", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotsunken(value: String): Self = StObject.set(x, "color.background.sunken", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDottransparentNeutralDothover(value: `varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`): Self = StObject.set(x, "color.background.transparentNeutral.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDottransparentNeutralDothover(value: String): Self = StObject.set(x, "color.background.transparentNeutral.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDottransparentNeutralDotpressed(value: `varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`): Self = StObject.set(x, "color.background.transparentNeutral.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDottransparentNeutralDotpressed(value: String): Self = StObject.set(x, "color.background.transparentNeutral.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotwarning(value: `varLeftparenthesis--ds-background-warningRightparenthesis`): Self = StObject.set(x, "color.background.warning", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotwarning(value: String): Self = StObject.set(x, "color.background.warning", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotwarningDotbold(value: `varLeftparenthesis--ds-background-warning-boldRightparenthesis`): Self = StObject.set(x, "color.background.warning.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotwarningDotbold(value: String): Self = StObject.set(x, "color.background.warning.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotwarningDotboldDothovered(value: `varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.warning.bold.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotwarningDotboldDothovered(value: String): Self = StObject.set(x, "color.background.warning.bold.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotwarningDotboldDotpressed(value: `varLeftparenthesis--ds-background-warning-bold-pressedRightparenthesis`): Self = StObject.set(x, "color.background.warning.bold.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotwarningDotboldDotpressed(value: String): Self = StObject.set(x, "color.background.warning.bold.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotwarningDothovered(value: `varLeftparenthesis--ds-background-warning-hoveredRightparenthesis`): Self = StObject.set(x, "color.background.warning.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotwarningDothovered(value: String): Self = StObject.set(x, "color.background.warning.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotbackgroundDotwarningDotpressed(value: `varLeftparenthesis--ds-background-warning-pressedRightparenthesis`): Self = StObject.set(x, "color.background.warning.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotbackgroundDotwarningDotpressed(value: String): Self = StObject.set(x, "color.background.warning.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotblanket(value: `varLeftparenthesis--ds-blanketRightparenthesis`): Self = StObject.set(x, "color.blanket", value.asInstanceOf[js.Any])
+      inline def setColorDotblanket(value: String): Self = StObject.set(x, "color.blanket", value.asInstanceOf[js.Any])
       
-      inline def setColorDotblanketDotdanger(value: `varLeftparenthesis--ds-blanket-dangerRightparenthesis`): Self = StObject.set(x, "color.blanket.danger", value.asInstanceOf[js.Any])
+      inline def setColorDotblanketDotdanger(value: String): Self = StObject.set(x, "color.blanket.danger", value.asInstanceOf[js.Any])
       
-      inline def setColorDotblanketDotselected(value: `varLeftparenthesis--ds-blanket-selectedRightparenthesis`): Self = StObject.set(x, "color.blanket.selected", value.asInstanceOf[js.Any])
+      inline def setColorDotblanketDotselected(value: String): Self = StObject.set(x, "color.blanket.selected", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborder(value: `varLeftparenthesis--ds-borderRightparenthesis`): Self = StObject.set(x, "color.border", value.asInstanceOf[js.Any])
+      inline def setColorDotborder(value: String): Self = StObject.set(x, "color.border", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotblue(value: `varLeftparenthesis--ds-border-accent-blueRightparenthesis`): Self = StObject.set(x, "color.border.accent.blue", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotblue(value: String): Self = StObject.set(x, "color.border.accent.blue", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotgray(value: `varLeftparenthesis--ds-border-accent-grayRightparenthesis`): Self = StObject.set(x, "color.border.accent.gray", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotgray(value: String): Self = StObject.set(x, "color.border.accent.gray", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotgreen(value: `varLeftparenthesis--ds-border-accent-greenRightparenthesis`): Self = StObject.set(x, "color.border.accent.green", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotgreen(value: String): Self = StObject.set(x, "color.border.accent.green", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotmagenta(value: `varLeftparenthesis--ds-border-accent-magentaRightparenthesis`): Self = StObject.set(x, "color.border.accent.magenta", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotmagenta(value: String): Self = StObject.set(x, "color.border.accent.magenta", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotorange(value: `varLeftparenthesis--ds-border-accent-orangeRightparenthesis`): Self = StObject.set(x, "color.border.accent.orange", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotorange(value: String): Self = StObject.set(x, "color.border.accent.orange", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotpurple(value: `varLeftparenthesis--ds-border-accent-purpleRightparenthesis`): Self = StObject.set(x, "color.border.accent.purple", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotpurple(value: String): Self = StObject.set(x, "color.border.accent.purple", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotred(value: `varLeftparenthesis--ds-border-accent-redRightparenthesis`): Self = StObject.set(x, "color.border.accent.red", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotred(value: String): Self = StObject.set(x, "color.border.accent.red", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotteal(value: `varLeftparenthesis--ds-border-accent-tealRightparenthesis`): Self = StObject.set(x, "color.border.accent.teal", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotteal(value: String): Self = StObject.set(x, "color.border.accent.teal", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotaccentDotyellow(value: `varLeftparenthesis--ds-border-accent-yellowRightparenthesis`): Self = StObject.set(x, "color.border.accent.yellow", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotaccentDotyellow(value: String): Self = StObject.set(x, "color.border.accent.yellow", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotbold(value: `varLeftparenthesis--ds-border-boldRightparenthesis`): Self = StObject.set(x, "color.border.bold", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotbold(value: String): Self = StObject.set(x, "color.border.bold", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotbrand(value: `varLeftparenthesis--ds-border-brandRightparenthesis`): Self = StObject.set(x, "color.border.brand", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotbrand(value: String): Self = StObject.set(x, "color.border.brand", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotdanger(value: `varLeftparenthesis--ds-border-dangerRightparenthesis`): Self = StObject.set(x, "color.border.danger", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotdanger(value: String): Self = StObject.set(x, "color.border.danger", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotdisabled(value: `varLeftparenthesis--ds-border-disabledRightparenthesis`): Self = StObject.set(x, "color.border.disabled", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotdisabled(value: String): Self = StObject.set(x, "color.border.disabled", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotdiscovery(value: `varLeftparenthesis--ds-border-discoveryRightparenthesis`): Self = StObject.set(x, "color.border.discovery", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotdiscovery(value: String): Self = StObject.set(x, "color.border.discovery", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotfocus(value: `varLeftparenthesis--ds-border-focusRightparenthesis`): Self = StObject.set(x, "color.border.focus", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotfocus(value: String): Self = StObject.set(x, "color.border.focus", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotfocused(value: `varLeftparenthesis--ds-border-focusedRightparenthesis`): Self = StObject.set(x, "color.border.focused", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotfocused(value: String): Self = StObject.set(x, "color.border.focused", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotinformation(value: `varLeftparenthesis--ds-border-informationRightparenthesis`): Self = StObject.set(x, "color.border.information", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotinformation(value: String): Self = StObject.set(x, "color.border.information", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotinput(value: `varLeftparenthesis--ds-border-inputRightparenthesis`): Self = StObject.set(x, "color.border.input", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotinput(value: String): Self = StObject.set(x, "color.border.input", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotinverse(value: `varLeftparenthesis--ds-border-inverseRightparenthesis`): Self = StObject.set(x, "color.border.inverse", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotinverse(value: String): Self = StObject.set(x, "color.border.inverse", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotneutral(value: `varLeftparenthesis--ds-border-neutralRightparenthesis`): Self = StObject.set(x, "color.border.neutral", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotneutral(value: String): Self = StObject.set(x, "color.border.neutral", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotselected(value: `varLeftparenthesis--ds-border-selectedRightparenthesis`): Self = StObject.set(x, "color.border.selected", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotselected(value: String): Self = StObject.set(x, "color.border.selected", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotsuccess(value: `varLeftparenthesis--ds-border-successRightparenthesis`): Self = StObject.set(x, "color.border.success", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotsuccess(value: String): Self = StObject.set(x, "color.border.success", value.asInstanceOf[js.Any])
       
-      inline def setColorDotborderDotwarning(value: `varLeftparenthesis--ds-border-warningRightparenthesis`): Self = StObject.set(x, "color.border.warning", value.asInstanceOf[js.Any])
+      inline def setColorDotborderDotwarning(value: String): Self = StObject.set(x, "color.border.warning", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticon(value: `varLeftparenthesis--ds-iconRightparenthesis`): Self = StObject.set(x, "color.icon", value.asInstanceOf[js.Any])
+      inline def setColorDoticon(value: String): Self = StObject.set(x, "color.icon", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonBorderDotbrand(value: `varLeftparenthesis--ds-iconBorder-brandRightparenthesis`): Self = StObject.set(x, "color.iconBorder.brand", value.asInstanceOf[js.Any])
+      inline def setColorDoticonBorderDotbrand(value: String): Self = StObject.set(x, "color.iconBorder.brand", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonBorderDotdanger(value: `varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`): Self = StObject.set(x, "color.iconBorder.danger", value.asInstanceOf[js.Any])
+      inline def setColorDoticonBorderDotdanger(value: String): Self = StObject.set(x, "color.iconBorder.danger", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonBorderDotdiscovery(value: `varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`): Self = StObject.set(x, "color.iconBorder.discovery", value.asInstanceOf[js.Any])
+      inline def setColorDoticonBorderDotdiscovery(value: String): Self = StObject.set(x, "color.iconBorder.discovery", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonBorderDotsuccess(value: `varLeftparenthesis--ds-iconBorder-successRightparenthesis`): Self = StObject.set(x, "color.iconBorder.success", value.asInstanceOf[js.Any])
+      inline def setColorDoticonBorderDotsuccess(value: String): Self = StObject.set(x, "color.iconBorder.success", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonBorderDotwarning(value: `varLeftparenthesis--ds-iconBorder-warningRightparenthesis`): Self = StObject.set(x, "color.iconBorder.warning", value.asInstanceOf[js.Any])
+      inline def setColorDoticonBorderDotwarning(value: String): Self = StObject.set(x, "color.iconBorder.warning", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotblue(value: `varLeftparenthesis--ds-icon-accent-blueRightparenthesis`): Self = StObject.set(x, "color.icon.accent.blue", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotblue(value: String): Self = StObject.set(x, "color.icon.accent.blue", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotgray(value: `varLeftparenthesis--ds-icon-accent-grayRightparenthesis`): Self = StObject.set(x, "color.icon.accent.gray", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotgray(value: String): Self = StObject.set(x, "color.icon.accent.gray", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotgreen(value: `varLeftparenthesis--ds-icon-accent-greenRightparenthesis`): Self = StObject.set(x, "color.icon.accent.green", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotgreen(value: String): Self = StObject.set(x, "color.icon.accent.green", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotmagenta(value: `varLeftparenthesis--ds-icon-accent-magentaRightparenthesis`): Self = StObject.set(x, "color.icon.accent.magenta", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotmagenta(value: String): Self = StObject.set(x, "color.icon.accent.magenta", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotorange(value: `varLeftparenthesis--ds-icon-accent-orangeRightparenthesis`): Self = StObject.set(x, "color.icon.accent.orange", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotorange(value: String): Self = StObject.set(x, "color.icon.accent.orange", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotpurple(value: `varLeftparenthesis--ds-icon-accent-purpleRightparenthesis`): Self = StObject.set(x, "color.icon.accent.purple", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotpurple(value: String): Self = StObject.set(x, "color.icon.accent.purple", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotred(value: `varLeftparenthesis--ds-icon-accent-redRightparenthesis`): Self = StObject.set(x, "color.icon.accent.red", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotred(value: String): Self = StObject.set(x, "color.icon.accent.red", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotteal(value: `varLeftparenthesis--ds-icon-accent-tealRightparenthesis`): Self = StObject.set(x, "color.icon.accent.teal", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotteal(value: String): Self = StObject.set(x, "color.icon.accent.teal", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotaccentDotyellow(value: `varLeftparenthesis--ds-icon-accent-yellowRightparenthesis`): Self = StObject.set(x, "color.icon.accent.yellow", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotaccentDotyellow(value: String): Self = StObject.set(x, "color.icon.accent.yellow", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotbrand(value: `varLeftparenthesis--ds-icon-brandRightparenthesis`): Self = StObject.set(x, "color.icon.brand", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotbrand(value: String): Self = StObject.set(x, "color.icon.brand", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotdanger(value: `varLeftparenthesis--ds-icon-dangerRightparenthesis`): Self = StObject.set(x, "color.icon.danger", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotdanger(value: String): Self = StObject.set(x, "color.icon.danger", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotdisabled(value: `varLeftparenthesis--ds-icon-disabledRightparenthesis`): Self = StObject.set(x, "color.icon.disabled", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotdisabled(value: String): Self = StObject.set(x, "color.icon.disabled", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotdiscovery(value: `varLeftparenthesis--ds-icon-discoveryRightparenthesis`): Self = StObject.set(x, "color.icon.discovery", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotdiscovery(value: String): Self = StObject.set(x, "color.icon.discovery", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotinformation(value: `varLeftparenthesis--ds-icon-informationRightparenthesis`): Self = StObject.set(x, "color.icon.information", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotinformation(value: String): Self = StObject.set(x, "color.icon.information", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotinverse(value: `varLeftparenthesis--ds-icon-inverseRightparenthesis`): Self = StObject.set(x, "color.icon.inverse", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotinverse(value: String): Self = StObject.set(x, "color.icon.inverse", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotselected(value: `varLeftparenthesis--ds-icon-selectedRightparenthesis`): Self = StObject.set(x, "color.icon.selected", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotselected(value: String): Self = StObject.set(x, "color.icon.selected", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotsubtle(value: `varLeftparenthesis--ds-icon-subtleRightparenthesis`): Self = StObject.set(x, "color.icon.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotsubtle(value: String): Self = StObject.set(x, "color.icon.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotsuccess(value: `varLeftparenthesis--ds-icon-successRightparenthesis`): Self = StObject.set(x, "color.icon.success", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotsuccess(value: String): Self = StObject.set(x, "color.icon.success", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotwarning(value: `varLeftparenthesis--ds-icon-warningRightparenthesis`): Self = StObject.set(x, "color.icon.warning", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotwarning(value: String): Self = StObject.set(x, "color.icon.warning", value.asInstanceOf[js.Any])
       
-      inline def setColorDoticonDotwarningDotinverse(value: `varLeftparenthesis--ds-icon-warning-inverseRightparenthesis`): Self = StObject.set(x, "color.icon.warning.inverse", value.asInstanceOf[js.Any])
+      inline def setColorDoticonDotwarningDotinverse(value: String): Self = StObject.set(x, "color.icon.warning.inverse", value.asInstanceOf[js.Any])
       
-      inline def setColorDotinteractionDothovered(value: `varLeftparenthesis--ds-interaction-hoveredRightparenthesis`): Self = StObject.set(x, "color.interaction.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotinteractionDothovered(value: String): Self = StObject.set(x, "color.interaction.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotinteractionDotinverseDothovered(value: `varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`): Self = StObject.set(x, "color.interaction.inverse.hovered", value.asInstanceOf[js.Any])
+      inline def setColorDotinteractionDotinverseDothovered(value: String): Self = StObject.set(x, "color.interaction.inverse.hovered", value.asInstanceOf[js.Any])
       
-      inline def setColorDotinteractionDotinverseDotpressed(value: `varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`): Self = StObject.set(x, "color.interaction.inverse.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotinteractionDotinverseDotpressed(value: String): Self = StObject.set(x, "color.interaction.inverse.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotinteractionDotpressed(value: `varLeftparenthesis--ds-interaction-pressedRightparenthesis`): Self = StObject.set(x, "color.interaction.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotinteractionDotpressed(value: String): Self = StObject.set(x, "color.interaction.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotlink(value: `varLeftparenthesis--ds-linkRightparenthesis`): Self = StObject.set(x, "color.link", value.asInstanceOf[js.Any])
+      inline def setColorDotlink(value: String): Self = StObject.set(x, "color.link", value.asInstanceOf[js.Any])
       
-      inline def setColorDotlinkDotpressed(value: `varLeftparenthesis--ds-link-pressedRightparenthesis`): Self = StObject.set(x, "color.link.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotlinkDotpressed(value: String): Self = StObject.set(x, "color.link.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotoverlayDothover(value: `varLeftparenthesis--ds-overlay-hoverRightparenthesis`): Self = StObject.set(x, "color.overlay.hover", value.asInstanceOf[js.Any])
+      inline def setColorDotoverlayDothover(value: String): Self = StObject.set(x, "color.overlay.hover", value.asInstanceOf[js.Any])
       
-      inline def setColorDotoverlayDotpressed(value: `varLeftparenthesis--ds-overlay-pressedRightparenthesis`): Self = StObject.set(x, "color.overlay.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDotoverlayDotpressed(value: String): Self = StObject.set(x, "color.overlay.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDotskeleton(value: `varLeftparenthesis--ds-skeletonRightparenthesis`): Self = StObject.set(x, "color.skeleton", value.asInstanceOf[js.Any])
+      inline def setColorDotskeleton(value: String): Self = StObject.set(x, "color.skeleton", value.asInstanceOf[js.Any])
       
-      inline def setColorDotskeletonDotsubtle(value: `varLeftparenthesis--ds-skeleton-subtleRightparenthesis`): Self = StObject.set(x, "color.skeleton.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDotskeletonDotsubtle(value: String): Self = StObject.set(x, "color.skeleton.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDottext(value: `varLeftparenthesis--ds-textRightparenthesis`): Self = StObject.set(x, "color.text", value.asInstanceOf[js.Any])
+      inline def setColorDottext(value: String): Self = StObject.set(x, "color.text", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotblue(value: `varLeftparenthesis--ds-text-accent-blueRightparenthesis`): Self = StObject.set(x, "color.text.accent.blue", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotblue(value: String): Self = StObject.set(x, "color.text.accent.blue", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotblueDotbolder(value: `varLeftparenthesis--ds-text-accent-blue-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.blue.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotblueDotbolder(value: String): Self = StObject.set(x, "color.text.accent.blue.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotgray(value: `varLeftparenthesis--ds-text-accent-grayRightparenthesis`): Self = StObject.set(x, "color.text.accent.gray", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotgray(value: String): Self = StObject.set(x, "color.text.accent.gray", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotgrayDotbolder(value: `varLeftparenthesis--ds-text-accent-gray-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.gray.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotgrayDotbolder(value: String): Self = StObject.set(x, "color.text.accent.gray.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotgreen(value: `varLeftparenthesis--ds-text-accent-greenRightparenthesis`): Self = StObject.set(x, "color.text.accent.green", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotgreen(value: String): Self = StObject.set(x, "color.text.accent.green", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotgreenDotbolder(value: `varLeftparenthesis--ds-text-accent-green-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.green.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotgreenDotbolder(value: String): Self = StObject.set(x, "color.text.accent.green.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotmagenta(value: `varLeftparenthesis--ds-text-accent-magentaRightparenthesis`): Self = StObject.set(x, "color.text.accent.magenta", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotmagenta(value: String): Self = StObject.set(x, "color.text.accent.magenta", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotmagentaDotbolder(value: `varLeftparenthesis--ds-text-accent-magenta-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.magenta.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotmagentaDotbolder(value: String): Self = StObject.set(x, "color.text.accent.magenta.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotorange(value: `varLeftparenthesis--ds-text-accent-orangeRightparenthesis`): Self = StObject.set(x, "color.text.accent.orange", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotorange(value: String): Self = StObject.set(x, "color.text.accent.orange", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotorangeDotbolder(value: `varLeftparenthesis--ds-text-accent-orange-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.orange.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotorangeDotbolder(value: String): Self = StObject.set(x, "color.text.accent.orange.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotpurple(value: `varLeftparenthesis--ds-text-accent-purpleRightparenthesis`): Self = StObject.set(x, "color.text.accent.purple", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotpurple(value: String): Self = StObject.set(x, "color.text.accent.purple", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotpurpleDotbolder(value: `varLeftparenthesis--ds-text-accent-purple-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.purple.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotpurpleDotbolder(value: String): Self = StObject.set(x, "color.text.accent.purple.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotred(value: `varLeftparenthesis--ds-text-accent-redRightparenthesis`): Self = StObject.set(x, "color.text.accent.red", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotred(value: String): Self = StObject.set(x, "color.text.accent.red", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotredDotbolder(value: `varLeftparenthesis--ds-text-accent-red-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.red.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotredDotbolder(value: String): Self = StObject.set(x, "color.text.accent.red.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotteal(value: `varLeftparenthesis--ds-text-accent-tealRightparenthesis`): Self = StObject.set(x, "color.text.accent.teal", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotteal(value: String): Self = StObject.set(x, "color.text.accent.teal", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDottealDotbolder(value: `varLeftparenthesis--ds-text-accent-teal-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.teal.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDottealDotbolder(value: String): Self = StObject.set(x, "color.text.accent.teal.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotyellow(value: `varLeftparenthesis--ds-text-accent-yellowRightparenthesis`): Self = StObject.set(x, "color.text.accent.yellow", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotyellow(value: String): Self = StObject.set(x, "color.text.accent.yellow", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotaccentDotyellowDotbolder(value: `varLeftparenthesis--ds-text-accent-yellow-bolderRightparenthesis`): Self = StObject.set(x, "color.text.accent.yellow.bolder", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotaccentDotyellowDotbolder(value: String): Self = StObject.set(x, "color.text.accent.yellow.bolder", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotbrand(value: `varLeftparenthesis--ds-text-brandRightparenthesis`): Self = StObject.set(x, "color.text.brand", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotbrand(value: String): Self = StObject.set(x, "color.text.brand", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotdanger(value: `varLeftparenthesis--ds-text-dangerRightparenthesis`): Self = StObject.set(x, "color.text.danger", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotdanger(value: String): Self = StObject.set(x, "color.text.danger", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotdisabled(value: `varLeftparenthesis--ds-text-disabledRightparenthesis`): Self = StObject.set(x, "color.text.disabled", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotdisabled(value: String): Self = StObject.set(x, "color.text.disabled", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotdiscovery(value: `varLeftparenthesis--ds-text-discoveryRightparenthesis`): Self = StObject.set(x, "color.text.discovery", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotdiscovery(value: String): Self = StObject.set(x, "color.text.discovery", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDothighEmphasis(value: `varLeftparenthesis--ds-text-highEmphasisRightparenthesis`): Self = StObject.set(x, "color.text.highEmphasis", value.asInstanceOf[js.Any])
+      inline def setColorDottextDothighEmphasis(value: String): Self = StObject.set(x, "color.text.highEmphasis", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotinformation(value: `varLeftparenthesis--ds-text-informationRightparenthesis`): Self = StObject.set(x, "color.text.information", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotinformation(value: String): Self = StObject.set(x, "color.text.information", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotinverse(value: `varLeftparenthesis--ds-text-inverseRightparenthesis`): Self = StObject.set(x, "color.text.inverse", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotinverse(value: String): Self = StObject.set(x, "color.text.inverse", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotlinkDotpressed(value: `varLeftparenthesis--ds-text-link-pressedRightparenthesis`): Self = StObject.set(x, "color.text.link.pressed", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotlinkDotpressed(value: String): Self = StObject.set(x, "color.text.link.pressed", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotlinkDotresting(value: `varLeftparenthesis--ds-text-link-restingRightparenthesis`): Self = StObject.set(x, "color.text.link.resting", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotlinkDotresting(value: String): Self = StObject.set(x, "color.text.link.resting", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotlowEmphasis(value: `varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`): Self = StObject.set(x, "color.text.lowEmphasis", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotlowEmphasis(value: String): Self = StObject.set(x, "color.text.lowEmphasis", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotmediumEmphasis(value: `varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`): Self = StObject.set(x, "color.text.mediumEmphasis", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotmediumEmphasis(value: String): Self = StObject.set(x, "color.text.mediumEmphasis", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotonBold(value: `varLeftparenthesis--ds-text-onBoldRightparenthesis`): Self = StObject.set(x, "color.text.onBold", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotonBold(value: String): Self = StObject.set(x, "color.text.onBold", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotonBoldWarning(value: `varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`): Self = StObject.set(x, "color.text.onBoldWarning", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotonBoldWarning(value: String): Self = StObject.set(x, "color.text.onBoldWarning", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotselected(value: `varLeftparenthesis--ds-text-selectedRightparenthesis`): Self = StObject.set(x, "color.text.selected", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotselected(value: String): Self = StObject.set(x, "color.text.selected", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotsubtle(value: `varLeftparenthesis--ds-text-subtleRightparenthesis`): Self = StObject.set(x, "color.text.subtle", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotsubtle(value: String): Self = StObject.set(x, "color.text.subtle", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotsubtlest(value: `varLeftparenthesis--ds-text-subtlestRightparenthesis`): Self = StObject.set(x, "color.text.subtlest", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotsubtlest(value: String): Self = StObject.set(x, "color.text.subtlest", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotsuccess(value: `varLeftparenthesis--ds-text-successRightparenthesis`): Self = StObject.set(x, "color.text.success", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotsuccess(value: String): Self = StObject.set(x, "color.text.success", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotwarning(value: `varLeftparenthesis--ds-text-warningRightparenthesis`): Self = StObject.set(x, "color.text.warning", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotwarning(value: String): Self = StObject.set(x, "color.text.warning", value.asInstanceOf[js.Any])
       
-      inline def setColorDottextDotwarningDotinverse(value: `varLeftparenthesis--ds-text-warning-inverseRightparenthesis`): Self = StObject.set(x, "color.text.warning.inverse", value.asInstanceOf[js.Any])
+      inline def setColorDottextDotwarningDotinverse(value: String): Self = StObject.set(x, "color.text.warning.inverse", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotshadowDotoverflow(value: `varLeftparenthesis--ds-shadow-overflowRightparenthesis`): Self = StObject.set(x, "elevation.shadow.overflow", value.asInstanceOf[js.Any])
+      inline def setElevationDotshadowDotoverflow(value: String): Self = StObject.set(x, "elevation.shadow.overflow", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotshadowDotoverlay(value: `varLeftparenthesis--ds-shadow-overlayRightparenthesis`): Self = StObject.set(x, "elevation.shadow.overlay", value.asInstanceOf[js.Any])
+      inline def setElevationDotshadowDotoverlay(value: String): Self = StObject.set(x, "elevation.shadow.overlay", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotshadowDotraised(value: `varLeftparenthesis--ds-shadow-raisedRightparenthesis`): Self = StObject.set(x, "elevation.shadow.raised", value.asInstanceOf[js.Any])
+      inline def setElevationDotshadowDotraised(value: String): Self = StObject.set(x, "elevation.shadow.raised", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurface(value: `varLeftparenthesis--ds-surfaceRightparenthesis`): Self = StObject.set(x, "elevation.surface", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurface(value: String): Self = StObject.set(x, "elevation.surface", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDothovered(value: `varLeftparenthesis--ds-surface-hoveredRightparenthesis`): Self = StObject.set(x, "elevation.surface.hovered", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDothovered(value: String): Self = StObject.set(x, "elevation.surface.hovered", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotoverlay(value: `varLeftparenthesis--ds-surface-overlayRightparenthesis`): Self = StObject.set(x, "elevation.surface.overlay", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotoverlay(value: String): Self = StObject.set(x, "elevation.surface.overlay", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotoverlayDothovered(value: `varLeftparenthesis--ds-surface-overlay-hoveredRightparenthesis`): Self = StObject.set(x, "elevation.surface.overlay.hovered", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotoverlayDothovered(value: String): Self = StObject.set(x, "elevation.surface.overlay.hovered", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotoverlayDotpressed(value: `varLeftparenthesis--ds-surface-overlay-pressedRightparenthesis`): Self = StObject.set(x, "elevation.surface.overlay.pressed", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotoverlayDotpressed(value: String): Self = StObject.set(x, "elevation.surface.overlay.pressed", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotpressed(value: `varLeftparenthesis--ds-surface-pressedRightparenthesis`): Self = StObject.set(x, "elevation.surface.pressed", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotpressed(value: String): Self = StObject.set(x, "elevation.surface.pressed", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotraised(value: `varLeftparenthesis--ds-surface-raisedRightparenthesis`): Self = StObject.set(x, "elevation.surface.raised", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotraised(value: String): Self = StObject.set(x, "elevation.surface.raised", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotraisedDothovered(value: `varLeftparenthesis--ds-surface-raised-hoveredRightparenthesis`): Self = StObject.set(x, "elevation.surface.raised.hovered", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotraisedDothovered(value: String): Self = StObject.set(x, "elevation.surface.raised.hovered", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotraisedDotpressed(value: `varLeftparenthesis--ds-surface-raised-pressedRightparenthesis`): Self = StObject.set(x, "elevation.surface.raised.pressed", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotraisedDotpressed(value: String): Self = StObject.set(x, "elevation.surface.raised.pressed", value.asInstanceOf[js.Any])
       
-      inline def setElevationDotsurfaceDotsunken(value: `varLeftparenthesis--ds-surface-sunkenRightparenthesis`): Self = StObject.set(x, "elevation.surface.sunken", value.asInstanceOf[js.Any])
+      inline def setElevationDotsurfaceDotsunken(value: String): Self = StObject.set(x, "elevation.surface.sunken", value.asInstanceOf[js.Any])
       
-      inline def setOpacityDotdisabled(value: `varLeftparenthesis--ds-opacity-disabledRightparenthesis`): Self = StObject.set(x, "opacity.disabled", value.asInstanceOf[js.Any])
+      inline def setOpacityDotdisabled(value: String): Self = StObject.set(x, "opacity.disabled", value.asInstanceOf[js.Any])
       
-      inline def setOpacityDotloading(value: `varLeftparenthesis--ds-opacity-loadingRightparenthesis`): Self = StObject.set(x, "opacity.loading", value.asInstanceOf[js.Any])
+      inline def setOpacityDotloading(value: String): Self = StObject.set(x, "opacity.loading", value.asInstanceOf[js.Any])
       
-      inline def setShadowDotcard(value: `varLeftparenthesis--ds-cardRightparenthesis`): Self = StObject.set(x, "shadow.card", value.asInstanceOf[js.Any])
+      inline def setShadowDotcard(value: String): Self = StObject.set(x, "shadow.card", value.asInstanceOf[js.Any])
       
-      inline def setShadowDotoverlay(value: `varLeftparenthesis--ds-overlayRightparenthesis`): Self = StObject.set(x, "shadow.overlay", value.asInstanceOf[js.Any])
+      inline def setShadowDotoverlay(value: String): Self = StObject.set(x, "shadow.overlay", value.asInstanceOf[js.Any])
       
-      inline def setUtilityDotUNSAFE_utilDotMISSING_TOKEN(value: `varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`): Self = StObject.set(x, "utility.UNSAFE_util.MISSING_TOKEN", value.asInstanceOf[js.Any])
+      inline def setUtilityDotUNSAFE_utilDotMISSING_TOKEN(value: String): Self = StObject.set(x, "utility.UNSAFE_util.MISSING_TOKEN", value.asInstanceOf[js.Any])
       
-      inline def setUtilityDotUNSAFE_utilDottransparent(value: `varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`): Self = StObject.set(x, "utility.UNSAFE_util.transparent", value.asInstanceOf[js.Any])
+      inline def setUtilityDotUNSAFE_utilDottransparent(value: String): Self = StObject.set(x, "utility.UNSAFE_util.transparent", value.asInstanceOf[js.Any])
     }
   }
 }

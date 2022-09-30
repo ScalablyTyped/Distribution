@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("react-tether/lib/react-tether", JSImport.Default)
+  @JSImport("react-tether", JSImport.Default)
   @js.native
   open class default () extends ReactTether
   

@@ -11,7 +11,7 @@ trait CategoryLevel extends StObject {
   
   var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(context: js.Any): String
+  def text(context: Any): String
   
   var `type`: typings.gatsbyCli.structuredErrorsTypesMod.Type
 }
@@ -20,7 +20,7 @@ object CategoryLevel {
   inline def apply(
     category: ErrorCategory,
     level: typings.gatsbyCli.structuredErrorsTypesMod.Level,
-    text: js.Any => String,
+    text: Any => String,
     `type`: typings.gatsbyCli.structuredErrorsTypesMod.Type
   ): CategoryLevel = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
@@ -34,7 +34,7 @@ object CategoryLevel {
     
     inline def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
     inline def setType(value: typings.gatsbyCli.structuredErrorsTypesMod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

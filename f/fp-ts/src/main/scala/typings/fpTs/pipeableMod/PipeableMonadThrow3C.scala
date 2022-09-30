@@ -17,7 +17,7 @@ trait PipeableMonadThrow3C[F /* <: /* import warning: transforms.QualifyReferenc
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
   ] = js.native
   @JSName("filterOrElse")
-  def filterOrElse_AB_A[A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
+  def filterOrElse_AB[A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ /* ma */ Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ Any
   ] = js.native
@@ -34,7 +34,7 @@ trait PipeableMonadThrow3C[F /* <: /* import warning: transforms.QualifyReferenc
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
   ] = js.native
   @JSName("fromPredicate")
-  def fromPredicate_AB_A[A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
+  def fromPredicate_AB[A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
     /* a */ A, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, U, E, B> */ Any
   ] = js.native

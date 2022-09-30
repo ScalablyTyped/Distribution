@@ -163,7 +163,7 @@ object MapOptions {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setMarkerZoomAnimation(value: Boolean): Self = StObject.set(x, "markerZoomAnimation", value.asInstanceOf[js.Any])
     
@@ -173,7 +173,7 @@ object MapOptions {
     
     inline def setMaxBoundsUndefined: Self = StObject.set(x, "maxBounds", js.undefined)
     
-    inline def setMaxBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "maxBounds", js.Array(value :_*))
+    inline def setMaxBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "maxBounds", js.Array(value*))
     
     inline def setMaxBoundsViscosity(value: Double): Self = StObject.set(x, "maxBoundsViscosity", value.asInstanceOf[js.Any])
     

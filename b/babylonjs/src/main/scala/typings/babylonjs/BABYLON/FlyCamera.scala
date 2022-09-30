@@ -10,8 +10,7 @@ trait FlyCamera
      with TargetCamera {
   
   /**
-    * @param displacement
-    * @hidden
+    * @internal
     */
   def _collideWithWorld(displacement: Vector3): Unit = js.native
   
@@ -21,7 +20,7 @@ trait FlyCamera
   
   /* private */ var _diffPosition: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _localDirection: Vector3 = js.native
   
   /* private */ var _needMoveForGravity: Any = js.native
@@ -31,10 +30,7 @@ trait FlyCamera
   /* private */ var _oldPosition: Any = js.native
   
   /**
-    * @param collisionId
-    * @param newPosition
-    * @param collidedMesh
-    * @hidden
+    * @internal
     */
   /* private */ var _onCollisionPositionChange: Any = js.native
   
@@ -43,7 +39,7 @@ trait FlyCamera
     */
   var _trackRoll: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _transformedDirection: Vector3 = js.native
   
   /**
@@ -172,7 +168,7 @@ trait FlyCamera
   /**
     * Restore the Roll to its target value at the rate specified.
     * @param rate - Higher means slower restoring.
-    * @hidden
+    * @internal
     */
   def restoreRoll(rate: Double): Unit = js.native
   

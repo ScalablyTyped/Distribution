@@ -14,5 +14,5 @@ object partialMod {
   /**
     * partial :: (((*) -> c), *) -> (*) -> c
     */
-  inline def default(fn: VariadicFunction, args: Any*): VariadicFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VariadicFunction]
+  inline def default(fn: VariadicFunction, args: Any*): VariadicFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VariadicFunction]
 }

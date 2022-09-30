@@ -9,11 +9,11 @@ import typings.jqueryFancytree.JQuery
 import typings.jqueryFancytree.anon.Bottom
 import typings.jqueryFancytree.anon.Cache
 import typings.jqueryFancytree.jqueryFancytreeBooleans.`false`
-import typings.jqueryFancytree.jqueryFancytreeNumbers.`0`
-import typings.jqueryFancytree.jqueryFancytreeNumbers.`1`
-import typings.jqueryFancytree.jqueryFancytreeNumbers.`2`
-import typings.jqueryFancytree.jqueryFancytreeNumbers.`3`
-import typings.jqueryFancytree.jqueryFancytreeNumbers.`4`
+import typings.jqueryFancytree.jqueryFancytreeInts.`0`
+import typings.jqueryFancytree.jqueryFancytreeInts.`1`
+import typings.jqueryFancytree.jqueryFancytreeInts.`2`
+import typings.jqueryFancytree.jqueryFancytreeInts.`3`
+import typings.jqueryFancytree.jqueryFancytreeInts.`4`
 import typings.jqueryFancytree.jqueryFancytreeStrings.dnd5
 import typings.jqueryFancytree.jqueryFancytreeStrings.filter
 import typings.jqueryFancytree.jqueryFancytreeStrings.table

@@ -5,6 +5,7 @@ import typings.devextreme.anon.`3`
 import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.std.Blob
 import typings.std.File
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ object fileManagement {
           /* file */ File, 
           /* uploadInfo */ UploadInfo, 
           /* destinationDirectory */ FileSystemItem, 
-          js.Thenable[Any] | Any
+          PromiseLike[Any] | Any
         ]
       ] = js.undefined
     
@@ -40,7 +41,7 @@ object fileManagement {
         js.Function2[
           /* item */ FileSystemItem, 
           /* destinationDirectory */ FileSystemItem, 
-          js.Thenable[Any] | Any
+          PromiseLike[Any] | Any
         ]
       ] = js.undefined
     
@@ -48,13 +49,13 @@ object fileManagement {
       * A function that creates a directory.
       */
     var createDirectory: js.UndefOr[
-        js.Function2[/* parentDirectory */ FileSystemItem, /* name */ String, js.Thenable[Any] | Any]
+        js.Function2[/* parentDirectory */ FileSystemItem, /* name */ String, PromiseLike[Any] | Any]
       ] = js.undefined
     
     /**
       * A function that deletes a file or directory.
       */
-    var deleteItem: js.UndefOr[js.Function1[/* item */ FileSystemItem, js.Thenable[Any] | Any]] = js.undefined
+    var deleteItem: js.UndefOr[js.Function1[/* item */ FileSystemItem, PromiseLike[Any] | Any]] = js.undefined
     
     /**
       * A function that downloads files.
@@ -65,13 +66,13 @@ object fileManagement {
       * A function that gets file system items.
       */
     var getItems: js.UndefOr[
-        js.Function1[/* parentDirectory */ FileSystemItem, js.Thenable[js.Array[Any]] | js.Array[Any]]
+        js.Function1[/* parentDirectory */ FileSystemItem, PromiseLike[js.Array[Any]] | js.Array[Any]]
       ] = js.undefined
     
     /**
       * A function that get items content.
       */
-    var getItemsContent: js.UndefOr[js.Function1[/* items */ js.Array[FileSystemItem], js.Thenable[Any] | Any]] = js.undefined
+    var getItemsContent: js.UndefOr[js.Function1[/* items */ js.Array[FileSystemItem], PromiseLike[Any] | Any]] = js.undefined
     
     /**
       * A function or the name of a data source field that provides information on whether a file or directory contains sub directories.
@@ -85,7 +86,7 @@ object fileManagement {
         js.Function2[
           /* item */ FileSystemItem, 
           /* destinationDirectory */ FileSystemItem, 
-          js.Thenable[Any] | Any
+          PromiseLike[Any] | Any
         ]
       ] = js.undefined
     
@@ -93,7 +94,7 @@ object fileManagement {
       * A function that renames files and directories.
       */
     var renameItem: js.UndefOr[
-        js.Function2[/* item */ FileSystemItem, /* newName */ String, js.Thenable[Any] | Any]
+        js.Function2[/* item */ FileSystemItem, /* newName */ String, PromiseLike[Any] | Any]
       ] = js.undefined
     
     /**
@@ -104,7 +105,7 @@ object fileManagement {
           /* file */ File, 
           /* uploadInfo */ UploadInfo, 
           /* destinationDirectory */ FileSystemItem, 
-          js.Thenable[Any] | Any
+          PromiseLike[Any] | Any
         ]
       ] = js.undefined
   }
@@ -118,22 +119,22 @@ object fileManagement {
     extension [Self <: CustomFileSystemProviderOptions](x: Self) {
       
       inline def setAbortFileUpload(
-        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
+        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => PromiseLike[Any] | Any
       ): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
       
       inline def setAbortFileUploadUndefined: Self = StObject.set(x, "abortFileUpload", js.undefined)
       
       inline def setCopyItem(
-        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
+        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => PromiseLike[Any] | Any
       ): Self = StObject.set(x, "copyItem", js.Any.fromFunction2(value))
       
       inline def setCopyItemUndefined: Self = StObject.set(x, "copyItem", js.undefined)
       
-      inline def setCreateDirectory(value: (/* parentDirectory */ FileSystemItem, /* name */ String) => js.Thenable[Any] | Any): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
+      inline def setCreateDirectory(value: (/* parentDirectory */ FileSystemItem, /* name */ String) => PromiseLike[Any] | Any): Self = StObject.set(x, "createDirectory", js.Any.fromFunction2(value))
       
       inline def setCreateDirectoryUndefined: Self = StObject.set(x, "createDirectory", js.undefined)
       
-      inline def setDeleteItem(value: /* item */ FileSystemItem => js.Thenable[Any] | Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
+      inline def setDeleteItem(value: /* item */ FileSystemItem => PromiseLike[Any] | Any): Self = StObject.set(x, "deleteItem", js.Any.fromFunction1(value))
       
       inline def setDeleteItemUndefined: Self = StObject.set(x, "deleteItem", js.undefined)
       
@@ -141,9 +142,9 @@ object fileManagement {
       
       inline def setDownloadItemsUndefined: Self = StObject.set(x, "downloadItems", js.undefined)
       
-      inline def setGetItems(value: /* parentDirectory */ FileSystemItem => js.Thenable[js.Array[Any]] | js.Array[Any]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
+      inline def setGetItems(value: /* parentDirectory */ FileSystemItem => PromiseLike[js.Array[Any]] | js.Array[Any]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      inline def setGetItemsContent(value: /* items */ js.Array[FileSystemItem] => js.Thenable[Any] | Any): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
+      inline def setGetItemsContent(value: /* items */ js.Array[FileSystemItem] => PromiseLike[Any] | Any): Self = StObject.set(x, "getItemsContent", js.Any.fromFunction1(value))
       
       inline def setGetItemsContentUndefined: Self = StObject.set(x, "getItemsContent", js.undefined)
       
@@ -154,17 +155,17 @@ object fileManagement {
       inline def setHasSubDirectoriesExprUndefined: Self = StObject.set(x, "hasSubDirectoriesExpr", js.undefined)
       
       inline def setMoveItem(
-        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
+        value: (/* item */ FileSystemItem, /* destinationDirectory */ FileSystemItem) => PromiseLike[Any] | Any
       ): Self = StObject.set(x, "moveItem", js.Any.fromFunction2(value))
       
       inline def setMoveItemUndefined: Self = StObject.set(x, "moveItem", js.undefined)
       
-      inline def setRenameItem(value: (/* item */ FileSystemItem, /* newName */ String) => js.Thenable[Any] | Any): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
+      inline def setRenameItem(value: (/* item */ FileSystemItem, /* newName */ String) => PromiseLike[Any] | Any): Self = StObject.set(x, "renameItem", js.Any.fromFunction2(value))
       
       inline def setRenameItemUndefined: Self = StObject.set(x, "renameItem", js.undefined)
       
       inline def setUploadFileChunk(
-        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => js.Thenable[Any] | Any
+        value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => PromiseLike[Any] | Any
       ): Self = StObject.set(x, "uploadFileChunk", js.Any.fromFunction3(value))
       
       inline def setUploadFileChunkUndefined: Self = StObject.set(x, "uploadFileChunk", js.undefined)

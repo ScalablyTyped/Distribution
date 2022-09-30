@@ -135,13 +135,13 @@ object eventMod {
   }
   object List {
     
-    inline def apply(events: js.Array[Event], pages: Next, total_count: Double): List = {
+    inline def apply(events: js.Array[Event], pages: Next, total_count: Double): typings.intercomClient.eventMod.List = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("event.list")
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.intercomClient.eventMod.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.intercomClient.eventMod.List](x: Self) {
       
       inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       

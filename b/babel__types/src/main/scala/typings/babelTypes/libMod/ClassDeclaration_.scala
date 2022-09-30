@@ -25,15 +25,15 @@ trait ClassDeclaration_
   
   var id: Identifier_
   
-  var implements: js.UndefOr[(js.Array[TSExpressionWithTypeArguments | ClassImplements_]) | Null] = js.undefined
+  var implements: js.UndefOr[(js.Array[TSExpressionWithTypeArguments__ | ClassImplements_]) | Null] = js.undefined
   
   var mixins: js.UndefOr[InterfaceExtends_ | Null] = js.undefined
   
   var superClass: js.UndefOr[Expression | Null] = js.undefined
   
-  var superTypeParameters: js.UndefOr[TypeParameterInstantiation_ | TSTypeParameterInstantiation | Null] = js.undefined
+  var superTypeParameters: js.UndefOr[TypeParameterInstantiation_ | TSTypeParameterInstantiation__ | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_ | Null] = js.undefined
+  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
   var type_ClassDeclaration_ : ClassDeclaration
@@ -72,13 +72,13 @@ object ClassDeclaration_ {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setImplements(value: js.Array[TSExpressionWithTypeArguments | ClassImplements_]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
+    inline def setImplements(value: js.Array[TSExpressionWithTypeArguments__ | ClassImplements_]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
     
     inline def setImplementsNull: Self = StObject.set(x, "implements", null)
     
     inline def setImplementsUndefined: Self = StObject.set(x, "implements", js.undefined)
     
-    inline def setImplementsVarargs(value: (TSExpressionWithTypeArguments | ClassImplements_)*): Self = StObject.set(x, "implements", js.Array(value*))
+    inline def setImplementsVarargs(value: (TSExpressionWithTypeArguments__ | ClassImplements_)*): Self = StObject.set(x, "implements", js.Array(value*))
     
     inline def setMixins(value: InterfaceExtends_): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object ClassDeclaration_ {
     
     inline def setSuperClassUndefined: Self = StObject.set(x, "superClass", js.undefined)
     
-    inline def setSuperTypeParameters(value: TypeParameterInstantiation_ | TSTypeParameterInstantiation): Self = StObject.set(x, "superTypeParameters", value.asInstanceOf[js.Any])
+    inline def setSuperTypeParameters(value: TypeParameterInstantiation_ | TSTypeParameterInstantiation__): Self = StObject.set(x, "superTypeParameters", value.asInstanceOf[js.Any])
     
     inline def setSuperTypeParametersNull: Self = StObject.set(x, "superTypeParameters", null)
     
@@ -100,7 +100,7 @@ object ClassDeclaration_ {
     
     inline def setType(value: ClassDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     

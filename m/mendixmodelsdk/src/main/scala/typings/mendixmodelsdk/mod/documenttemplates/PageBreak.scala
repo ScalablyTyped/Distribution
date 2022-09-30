@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.PageBreak")
 @js.native
-class PageBreak protected ()
+open class PageBreak protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.PageBreak {
   def this(
     model: AbstractModel,

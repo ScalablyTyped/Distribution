@@ -12,7 +12,7 @@ object anon {
   trait TypeofPromise extends StObject {
     
     /* static member */
-    def all[T1](values: js.Array[T1 | Thenable[T1]]): Promise[js.Array[T1]] = js.native
+    def all[TAll](values: js.Array[TAll | Thenable[TAll]]): Promise[js.Array[TAll]] = js.native
     /* static member */
     def all[T1, T2](values: js.Tuple2[T1 | Thenable[T1], T2 | Thenable[T2]]): Promise[js.Tuple2[T1, T2]] = js.native
     /* static member */
@@ -101,7 +101,7 @@ object anon {
     ): Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
     /* static member */
     @JSName("all")
-    def all_TAll[TAll](values: js.Array[TAll | Thenable[TAll]]): Promise[js.Array[TAll]] = js.native
+    def all_T1[T1](values: js.Array[T1 | Thenable[T1]]): Promise[js.Array[T1]] = js.native
     
     /**
       * Make a Promise that fulfills when any item fulfills, and rejects if any item rejects.

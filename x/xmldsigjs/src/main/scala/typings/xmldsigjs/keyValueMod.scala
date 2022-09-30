@@ -9,7 +9,7 @@ object keyValueMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/key_value", "KeyValue")
   @js.native
-  class KeyValue () extends KeyInfoClause {
+  open class KeyValue () extends KeyInfoClause {
     def this(value: KeyInfoClause) = this()
     
     def Value: KeyInfoClause = js.native

@@ -12,15 +12,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/complete-task relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SetTaskOutcomeAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SetTaskOutcomeAction")
 @js.native
-class SetTaskOutcomeAction protected ()
+open class SetTaskOutcomeAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.SetTaskOutcomeAction {
   def this(
     model: AbstractModel,
@@ -33,7 +32,7 @@ class SetTaskOutcomeAction protected ()
 }
 object SetTaskOutcomeAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SetTaskOutcomeAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SetTaskOutcomeAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -51,19 +50,19 @@ object SetTaskOutcomeAction {
     * of the parent ActionActivity element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.SetTaskOutcomeAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SetTaskOutcomeAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SetTaskOutcomeAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SetTaskOutcomeAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SetTaskOutcomeAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SetTaskOutcomeAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

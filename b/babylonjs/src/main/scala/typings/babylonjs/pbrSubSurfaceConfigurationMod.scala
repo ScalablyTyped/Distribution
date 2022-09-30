@@ -92,10 +92,10 @@ object pbrSubSurfaceConfigurationMod {
       */
     /* private */ var _getRefractionTexture: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _indexOfRefraction: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: Any = js.native
     
     /* private */ var _internalMarkScenePrePassDirty: Any = js.native
@@ -108,13 +108,13 @@ object pbrSubSurfaceConfigurationMod {
     
     /* private */ var _isTranslucencyEnabled: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _linkRefractionWithTransparency: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markScenePrePassDirty(): Unit = js.native
     
     /* protected */ @JSName("_material")

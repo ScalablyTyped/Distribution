@@ -38,6 +38,7 @@ import typings.react.mod.ReactNode
 import typings.std.Blob
 import typings.std.File
 import typings.std.HTMLDivElement
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -77,7 +78,7 @@ object uploadInterfaceMod {
     ReactNode
   ]
   
-  type PreviewFileHandler = js.Function1[/* file */ File | Blob, js.Thenable[String]]
+  type PreviewFileHandler = js.Function1[/* file */ File | Blob, PromiseLike[String]]
   
   @js.native
   trait RcFile
@@ -142,7 +143,7 @@ object uploadInterfaceMod {
     }
   }
   
-  type TransformFileHandler = js.Function1[/* file */ RcFile, String | Blob | File | (js.Thenable[String | Blob | File])]
+  type TransformFileHandler = js.Function1[/* file */ RcFile, String | Blob | File | (PromiseLike[String | Blob | File])]
   
   trait UploadChangeParam[T] extends StObject {
     
@@ -546,7 +547,7 @@ object uploadInterfaceMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setPreviewFile(value: /* file */ File | Blob => js.Thenable[String]): Self = StObject.set(x, "previewFile", js.Any.fromFunction1(value))
+      inline def setPreviewFile(value: /* file */ File | Blob => PromiseLike[String]): Self = StObject.set(x, "previewFile", js.Any.fromFunction1(value))
       
       inline def setPreviewFileUndefined: Self = StObject.set(x, "previewFile", js.undefined)
       
@@ -643,7 +644,7 @@ object uploadInterfaceMod {
     
     var accept: js.UndefOr[String] = js.undefined
     
-    var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])] = js.undefined
+    var action: js.UndefOr[String | (js.Function1[/* file */ RcFile, PromiseLike[String] | String])] = js.undefined
     
     var beforeUpload: js.UndefOr[
         js.Function2[
@@ -747,9 +748,9 @@ object uploadInterfaceMod {
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setAction(value: String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String | (js.Function1[/* file */ RcFile, PromiseLike[String] | String])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setActionFunction1(value: /* file */ RcFile => String | js.Thenable[String]): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setActionFunction1(value: /* file */ RcFile => PromiseLike[String] | String): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -880,7 +881,7 @@ object uploadInterfaceMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setPreviewFile(value: /* file */ File | Blob => js.Thenable[String]): Self = StObject.set(x, "previewFile", js.Any.fromFunction1(value))
+      inline def setPreviewFile(value: /* file */ File | Blob => PromiseLike[String]): Self = StObject.set(x, "previewFile", js.Any.fromFunction1(value))
       
       inline def setPreviewFileUndefined: Self = StObject.set(x, "previewFile", js.undefined)
       
@@ -900,7 +901,7 @@ object uploadInterfaceMod {
       
       inline def setSupportServerRenderUndefined: Self = StObject.set(x, "supportServerRender", js.undefined)
       
-      inline def setTransformFile(value: /* file */ RcFile => String | Blob | File | (js.Thenable[String | Blob | File])): Self = StObject.set(x, "transformFile", js.Any.fromFunction1(value))
+      inline def setTransformFile(value: /* file */ RcFile => String | Blob | File | (PromiseLike[String | Blob | File])): Self = StObject.set(x, "transformFile", js.Any.fromFunction1(value))
       
       inline def setTransformFileUndefined: Self = StObject.set(x, "transformFile", js.undefined)
       

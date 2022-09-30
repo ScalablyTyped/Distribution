@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angular.JQLite
 import typings.angular.JQuery
 import typings.angular.JQueryStatic
-import typings.angular.angularNumbers.`-1`
-import typings.angular.angularNumbers.`0`
-import typings.angular.angularNumbers.`1`
+import typings.angular.angularInts.`-1`
+import typings.angular.angularInts.`0`
+import typings.angular.angularInts.`1`
 import typings.angular.mod.global.Function
 import typings.std.Element
 import org.scalablytyped.runtime.StObject

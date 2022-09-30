@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deep-extend"
-version := "0.4-dt-20220624Z-87d95b"
+version := "0.4-dt-20220624Z-d199a0"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

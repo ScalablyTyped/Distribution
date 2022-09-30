@@ -1,35 +1,33 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreTable extends js.Object {
+trait DBCoreTable extends StObject {
   
-  def count(req: DBCoreCountRequest): js.Promise[Double] = js.native
+  def count(req: DBCoreCountRequest): js.Promise[Double]
   
-  def get(req: DBCoreGetRequest): js.Promise[_] = js.native
+  def get(req: DBCoreGetRequest): js.Promise[Any]
   
-  def getMany(req: DBCoreGetManyRequest): js.Promise[js.Array[_]] = js.native
+  def getMany(req: DBCoreGetManyRequest): js.Promise[js.Array[Any]]
   
-  def mutate(req: DBCoreMutateRequest): js.Promise[DBCoreMutateResponse] = js.native
+  def mutate(req: DBCoreMutateRequest): js.Promise[DBCoreMutateResponse]
   
-  val name: String = js.native
+  val name: String
   
-  def openCursor(req: DBCoreOpenCursorRequest): js.Promise[DBCoreCursor | Null] = js.native
+  def openCursor(req: DBCoreOpenCursorRequest): js.Promise[DBCoreCursor | Null]
   
-  def query(req: DBCoreQueryRequest): js.Promise[DBCoreQueryResponse] = js.native
+  def query(req: DBCoreQueryRequest): js.Promise[DBCoreQueryResponse]
   
-  val schema: DBCoreTableSchema = js.native
+  val schema: DBCoreTableSchema
 }
 object DBCoreTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: DBCoreCountRequest => js.Promise[Double],
-    get: DBCoreGetRequest => js.Promise[_],
-    getMany: DBCoreGetManyRequest => js.Promise[js.Array[_]],
+    get: DBCoreGetRequest => js.Promise[Any],
+    getMany: DBCoreGetManyRequest => js.Promise[js.Array[Any]],
     mutate: DBCoreMutateRequest => js.Promise[DBCoreMutateResponse],
     name: String,
     openCursor: DBCoreOpenCursorRequest => js.Promise[DBCoreCursor | Null],
@@ -40,43 +38,22 @@ object DBCoreTable {
     __obj.asInstanceOf[DBCoreTable]
   }
   
-  @scala.inline
-  implicit class DBCoreTableOps[Self <: DBCoreTable] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreTable](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setCount(value: DBCoreCountRequest => js.Promise[Double]): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setGet(value: DBCoreGetRequest => js.Promise[Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setGetMany(value: DBCoreGetManyRequest => js.Promise[js.Array[Any]]): Self = StObject.set(x, "getMany", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: DBCoreCountRequest => js.Promise[Double]): Self = this.set("count", js.Any.fromFunction1(value))
+    inline def setMutate(value: DBCoreMutateRequest => js.Promise[DBCoreMutateResponse]): Self = StObject.set(x, "mutate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: DBCoreGetRequest => js.Promise[_]): Self = this.set("get", js.Any.fromFunction1(value))
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMany(value: DBCoreGetManyRequest => js.Promise[js.Array[_]]): Self = this.set("getMany", js.Any.fromFunction1(value))
+    inline def setOpenCursor(value: DBCoreOpenCursorRequest => js.Promise[DBCoreCursor | Null]): Self = StObject.set(x, "openCursor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMutate(value: DBCoreMutateRequest => js.Promise[DBCoreMutateResponse]): Self = this.set("mutate", js.Any.fromFunction1(value))
+    inline def setQuery(value: DBCoreQueryRequest => js.Promise[DBCoreQueryResponse]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenCursor(value: DBCoreOpenCursorRequest => js.Promise[DBCoreCursor | Null]): Self = this.set("openCursor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQuery(value: DBCoreQueryRequest => js.Promise[DBCoreQueryResponse]): Self = this.set("query", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSchema(value: DBCoreTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: DBCoreTableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

@@ -11,13 +11,13 @@ object componentRippleMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/ripple/component.ripple", "WorksRipple")
   @js.native
-  class WorksRipple protected () extends HomeworksManager {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+  open class WorksRipple protected () extends HomeworksManager {
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
     def ngOnInit(): Unit = js.native
     

@@ -1,22 +1,22 @@
 package typings.angularCompilerCli.srcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`1`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`2`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`3`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`4`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`5`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`1`
+import typings.angularCompilerCli.angularCompilerCliInts.`2`
+import typings.angularCompilerCli.angularCompilerCliInts.`3`
+import typings.angularCompilerCli.angularCompilerCliInts.`4`
+import typings.angularCompilerCli.angularCompilerCliInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-  - typings.angularCompilerCli.angularCompilerCliNumbers.`1`
-  - typings.angularCompilerCli.angularCompilerCliNumbers.`2`
-  - typings.angularCompilerCli.angularCompilerCliNumbers.`3`
-  - typings.angularCompilerCli.angularCompilerCliNumbers.`4`
-  - typings.angularCompilerCli.angularCompilerCliNumbers.`5`
+  - typings.angularCompilerCli.angularCompilerCliInts.`0`
+  - typings.angularCompilerCli.angularCompilerCliInts.`1`
+  - typings.angularCompilerCli.angularCompilerCliInts.`2`
+  - typings.angularCompilerCli.angularCompilerCliInts.`3`
+  - typings.angularCompilerCli.angularCompilerCliInts.`4`
+  - typings.angularCompilerCli.angularCompilerCliInts.`5`
 */
 trait ValueUnavailableKind extends StObject
 object ValueUnavailableKind {

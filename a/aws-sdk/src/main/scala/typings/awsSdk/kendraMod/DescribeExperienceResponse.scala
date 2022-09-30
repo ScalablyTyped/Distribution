@@ -47,7 +47,7 @@ trait DescribeExperienceResponse extends StObject {
   var Name: js.UndefOr[ExperienceName] = js.undefined
   
   /**
-    * Shows the Amazon Resource Name (ARN) of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and Amazon Web Services SSO that stores your user and group information.
+    * Shows the Amazon Resource Name (ARN) of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and IAM Identity Center that stores your user and group information.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
   

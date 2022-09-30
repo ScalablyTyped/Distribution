@@ -16,7 +16,7 @@ trait CheckBox extends StObject {
   
   var border: js.UndefOr[BorderType & Error] = js.undefined
   
-  var checkBox: PadPadType
+  var checkBox: js.UndefOr[`8`] = js.undefined
   
   var content: js.UndefOr[Margin] = js.undefined
   
@@ -26,7 +26,7 @@ trait CheckBox extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var focus: js.UndefOr[`8`] = js.undefined
+  var focus: js.UndefOr[`9`] = js.undefined
   
   var help: js.UndefOr[ColorMargin] = js.undefined
   
@@ -40,8 +40,8 @@ trait CheckBox extends StObject {
 }
 object CheckBox {
   
-  inline def apply(checkBox: PadPadType): CheckBox = {
-    val __obj = js.Dynamic.literal(checkBox = checkBox.asInstanceOf[js.Any])
+  inline def apply(): CheckBox = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckBox]
   }
   
@@ -51,7 +51,9 @@ object CheckBox {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setCheckBox(value: PadPadType): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
+    inline def setCheckBox(value: `8`): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
+    
+    inline def setCheckBoxUndefined: Self = StObject.set(x, "checkBox", js.undefined)
     
     inline def setContent(value: Margin): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -71,7 +73,7 @@ object CheckBox {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFocus(value: `8`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: `9`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     

@@ -1,6 +1,5 @@
 package typings.xadesjs
 
-import typings.std.Uint8Array
 import typings.xadesjs.xmlBaseMod.XadesCollection
 import typings.xadesjs.xmlBaseMod.XadesObject
 import typings.xmldsigjs.mod.X509IssuerSerial
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object signingCertificateMod {
   
-  @JSImport("xadesjs/build/types/xml/signing_certificate", "Cert")
+  @JSImport("xadesjs/build/types/src/xml/signing_certificate", "Cert")
   @js.native
-  class Cert () extends XadesObject {
+  open class Cert () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var CertDigest: DigestAlgAndValueType = js.native
@@ -22,31 +21,31 @@ object signingCertificateMod {
     var Uri: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/signing_certificate", "CertIDList")
+  @JSImport("xadesjs/build/types/src/xml/signing_certificate", "CertIDList")
   @js.native
-  class CertIDList () extends XadesCollection[Cert] {
+  open class CertIDList () extends XadesCollection[Cert] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signing_certificate", "DigestAlgAndValueType")
+  @JSImport("xadesjs/build/types/src/xml/signing_certificate", "DigestAlgAndValueType")
   @js.native
-  class DigestAlgAndValueType () extends XadesObject {
+  open class DigestAlgAndValueType () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var DigestMethod: typings.xmldsigjs.mod.DigestMethod = js.native
     
-    var DigestValue: Uint8Array = js.native
+    var DigestValue: js.typedarray.Uint8Array = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/signing_certificate", "IssuerSerial")
+  @JSImport("xadesjs/build/types/src/xml/signing_certificate", "IssuerSerial")
   @js.native
-  class IssuerSerial () extends X509IssuerSerial {
+  open class IssuerSerial () extends X509IssuerSerial {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signing_certificate", "SigningCertificate")
+  @JSImport("xadesjs/build/types/src/xml/signing_certificate", "SigningCertificate")
   @js.native
-  class SigningCertificate () extends CertIDList {
+  open class SigningCertificate () extends CertIDList {
     def this(properties: js.Object) = this()
   }
 }

@@ -13,8 +13,8 @@ open class Network protected () extends StObject {
   
   def connect(): js.Promise[Any] = js.native
   def connect(callback: Callback[Any]): Unit = js.native
-  def connect(options: js.Object): js.Promise[Any] = js.native
-  def connect(options: js.Object, callback: Callback[Any]): Unit = js.native
+  def connect(options: NetworkConnectOptions): js.Promise[Any] = js.native
+  def connect(options: NetworkConnectOptions, callback: Callback[Any]): Unit = js.native
   
   def disconnect(): js.Promise[Any] = js.native
   def disconnect(callback: Callback[Any]): Unit = js.native

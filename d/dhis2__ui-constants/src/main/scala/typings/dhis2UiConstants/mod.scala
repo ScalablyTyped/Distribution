@@ -1,29 +1,16 @@
 package typings.dhis2UiConstants
 
+import typings.dhis2UiConstants.dhis2UiConstantsStrings.white
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /* Inlined std.Record<@dhis2/ui-constants.@dhis2/ui-constants.ColorProp, string> */
-  object colors {
-    
-    @JSImport("@dhis2/ui-constants", "colors")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@dhis2/ui-constants", "colors.${ColorBase}${ColorVariant}")
-    @js.native
-    def ColorBaseColorVariant: String = js.native
-    
-    inline def ColorBaseColorVariant_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("${ColorBase}${ColorVariant}")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@dhis2/ui-constants", "colors.white")
-    @js.native
-    def white: String = js.native
-    inline def white_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("white")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@dhis2/ui-constants", "colors")
+  @js.native
+  val colors: Record[ColorProp, String] = js.native
   
   /* Inlined std.Record<@dhis2/ui-constants.@dhis2/ui-constants.ElevantionVariant, string> */
   object elevations {
@@ -248,55 +235,9 @@ object mod {
     inline def dp96_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dp96")(x.asInstanceOf[js.Any])
   }
   
-  /* Inlined std.Record<@dhis2/ui-constants.@dhis2/ui-constants.ThemeProp, string> */
-  object theme {
-    
-    @JSImport("@dhis2/ui-constants", "theme")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@dhis2/ui-constants", "theme.default")
-    @js.native
-    def default: String = js.native
-    
-    @JSImport("@dhis2/ui-constants", "theme.${ThemeBase}${ThemeVariant}")
-    @js.native
-    def ThemeBaseThemeVariant: String = js.native
-    
-    inline def ThemeBaseThemeVariant_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("${ThemeBase}${ThemeVariant}")(x.asInstanceOf[js.Any])
-    
-    inline def default_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@dhis2/ui-constants", "theme.disabled")
-    @js.native
-    def disabled: String = js.native
-    inline def disabled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@dhis2/ui-constants", "theme.error")
-    @js.native
-    def error: String = js.native
-    inline def error_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@dhis2/ui-constants", "theme.focus")
-    @js.native
-    def focus: String = js.native
-    inline def focus_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focus")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@dhis2/ui-constants", "theme.fonts")
-    @js.native
-    def fonts: String = js.native
-    inline def fonts_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fonts")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@dhis2/ui-constants", "theme.valid")
-    @js.native
-    def valid: String = js.native
-    inline def valid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@dhis2/ui-constants", "theme.warning")
-    @js.native
-    def warning: String = js.native
-    inline def warning_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@dhis2/ui-constants", "theme")
+  @js.native
+  val theme: Record[ThemeProp, String] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.blue
@@ -322,17 +263,7 @@ object mod {
     inline def yellow: typings.dhis2UiConstants.dhis2UiConstantsStrings.yellow = "yellow".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.yellow]
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.dhis2UiConstants.dhis2UiConstantsStrings.DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket
-    - typings.dhis2UiConstants.dhis2UiConstantsStrings.white
-  */
-  trait ColorProp extends StObject
-  object ColorProp {
-    
-    inline def DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket: typings.dhis2UiConstants.dhis2UiConstantsStrings.DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket = "${ColorBase}${ColorVariant}".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.DollarLeftcurlybracketColorBaseRightcurlybracketDollarLeftcurlybracketColorVariantRightcurlybracket]
-    
-    inline def white: typings.dhis2UiConstants.dhis2UiConstantsStrings.white = "white".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.white]
-  }
+  type ColorProp = (/* template literal string: ${ColorBase}${ColorVariant} */ String) | white
   
   /* Rewritten from type alias, can be one of: 
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.`900`
@@ -467,7 +398,7 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.dhis2UiConstants.dhis2UiConstantsStrings.DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket
+    - / * template literal string: ${ThemeBase}${ThemeVariant} * / java.lang.String
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.default
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.error
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.valid
@@ -476,25 +407,7 @@ object mod {
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.focus
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.fonts
   */
-  trait ThemeProp extends StObject
-  object ThemeProp {
-    
-    inline def default: typings.dhis2UiConstants.dhis2UiConstantsStrings.default = "default".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.default]
-    
-    inline def DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket: typings.dhis2UiConstants.dhis2UiConstantsStrings.DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket = "${ThemeBase}${ThemeVariant}".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.DollarLeftcurlybracketThemeBaseRightcurlybracketDollarLeftcurlybracketThemeVariantRightcurlybracket]
-    
-    inline def disabled: typings.dhis2UiConstants.dhis2UiConstantsStrings.disabled = "disabled".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.disabled]
-    
-    inline def error: typings.dhis2UiConstants.dhis2UiConstantsStrings.error = "error".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.error]
-    
-    inline def focus: typings.dhis2UiConstants.dhis2UiConstantsStrings.focus = "focus".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.focus]
-    
-    inline def fonts: typings.dhis2UiConstants.dhis2UiConstantsStrings.fonts = "fonts".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.fonts]
-    
-    inline def valid: typings.dhis2UiConstants.dhis2UiConstantsStrings.valid = "valid".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.valid]
-    
-    inline def warning: typings.dhis2UiConstants.dhis2UiConstantsStrings.warning = "warning".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.warning]
-  }
+  type ThemeProp = _ThemeProp | (/* template literal string: ${ThemeBase}${ThemeVariant} */ String)
   
   /* Rewritten from type alias, can be one of: 
     - typings.dhis2UiConstants.dhis2UiConstantsStrings.`900`
@@ -531,4 +444,6 @@ object mod {
     
     inline def `900`: typings.dhis2UiConstants.dhis2UiConstantsStrings.`900` = "900".asInstanceOf[typings.dhis2UiConstants.dhis2UiConstantsStrings.`900`]
   }
+  
+  trait _ThemeProp extends StObject
 }

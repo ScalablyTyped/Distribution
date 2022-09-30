@@ -214,15 +214,15 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.cacheableLookup.cacheableLookupNumbers.`4`
-    - typings.cacheableLookup.cacheableLookupNumbers.`6`
+    - typings.cacheableLookup.cacheableLookupInts.`4`
+    - typings.cacheableLookup.cacheableLookupInts.`6`
   */
   trait IPFamily extends StObject
   object IPFamily {
     
-    inline def `4`: typings.cacheableLookup.cacheableLookupNumbers.`4` = 4.asInstanceOf[typings.cacheableLookup.cacheableLookupNumbers.`4`]
+    inline def `4`: typings.cacheableLookup.cacheableLookupInts.`4` = 4.asInstanceOf[typings.cacheableLookup.cacheableLookupInts.`4`]
     
-    inline def `6`: typings.cacheableLookup.cacheableLookupNumbers.`6` = 6.asInstanceOf[typings.cacheableLookup.cacheableLookupNumbers.`6`]
+    inline def `6`: typings.cacheableLookup.cacheableLookupInts.`6` = 6.asInstanceOf[typings.cacheableLookup.cacheableLookupInts.`6`]
   }
   
   trait LookupOptions extends StObject {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-selection-container" : "36.6.7"
+      "victory-selection-container" : "36.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-selection-container" : "36.6.7"
+      "victory-selection-container" : "36.6.8"
     }
   ],
   "compile-devDependencies" : [

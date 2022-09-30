@@ -3,6 +3,7 @@ package typings.wordpressComponents
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
+import typings.std.KeyboardEvent
 import typings.std.Record
 import typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.Props
 import typings.wordpressComponents.wordpressComponentsBooleans.`true`
@@ -59,11 +60,11 @@ object keyboardShortcutsMod {
         * separate `KeyboardShortcuts` element, which can be achieved by
         * assigning a unique `key` prop.
         */
-      var shortcuts: Record[String, js.Function0[Unit]]
+      var shortcuts: Record[String, js.Function2[/* event */ KeyboardEvent, /* combo */ String, Unit]]
     }
     object BaseProps {
       
-      inline def apply(shortcuts: Record[String, js.Function0[Unit]]): BaseProps = {
+      inline def apply(shortcuts: Record[String, js.Function2[/* event */ KeyboardEvent, /* combo */ String, Unit]]): BaseProps = {
         val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseProps]
       }
@@ -78,7 +79,7 @@ object keyboardShortcutsMod {
         
         inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
         
-        inline def setShortcuts(value: Record[String, js.Function0[Unit]]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+        inline def setShortcuts(value: Record[String, js.Function2[/* event */ KeyboardEvent, /* combo */ String, Unit]]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       }
     }
     
@@ -89,12 +90,12 @@ object keyboardShortcutsMod {
     trait Props extends StObject
     object Props {
       
-      inline def PropsWithChildren(shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithChildren = {
+      inline def PropsWithChildren(shortcuts: Record[String, js.Function2[/* event */ KeyboardEvent, /* combo */ String, Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithChildren = {
         val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithChildren]
       }
       
-      inline def PropsWithoutChildren(shortcuts: Record[String, js.Function0[Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren = {
+      inline def PropsWithoutChildren(shortcuts: Record[String, js.Function2[/* event */ KeyboardEvent, /* combo */ String, Unit]]): typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren = {
         val __obj = js.Dynamic.literal(bindGlobal = true, shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.keyboardShortcutsMod.KeyboardShortcuts.PropsWithoutChildren]
       }
@@ -109,7 +110,7 @@ object keyboardShortcutsMod {
     }
     object PropsWithChildren {
       
-      inline def apply(shortcuts: Record[String, js.Function0[Unit]]): PropsWithChildren = {
+      inline def apply(shortcuts: Record[String, js.Function2[/* event */ KeyboardEvent, /* combo */ String, Unit]]): PropsWithChildren = {
         val __obj = js.Dynamic.literal(shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[PropsWithChildren]
       }
@@ -134,7 +135,7 @@ object keyboardShortcutsMod {
     }
     object PropsWithoutChildren {
       
-      inline def apply(shortcuts: Record[String, js.Function0[Unit]]): PropsWithoutChildren = {
+      inline def apply(shortcuts: Record[String, js.Function2[/* event */ KeyboardEvent, /* combo */ String, Unit]]): PropsWithoutChildren = {
         val __obj = js.Dynamic.literal(bindGlobal = true, shortcuts = shortcuts.asInstanceOf[js.Any])
         __obj.asInstanceOf[PropsWithoutChildren]
       }

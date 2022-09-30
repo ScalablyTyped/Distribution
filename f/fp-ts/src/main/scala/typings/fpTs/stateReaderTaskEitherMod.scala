@@ -523,7 +523,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[Any, Any, Any | E2, A]
   ]]
   
-  inline def filterOrElseW_AB_AE2[A, B /* <: A */, E2](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E2]): js.Function1[
+  inline def filterOrElseW_ABE2[A, B /* <: A */, E2](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E2]): js.Function1[
     /* ma */ StateReaderTaskEither_[Any, Any, Any, A], 
     StateReaderTaskEither_[Any, Any, Any | E2, B]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElseW")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -531,7 +531,7 @@ object stateReaderTaskEitherMod {
     StateReaderTaskEither_[Any, Any, Any | E2, B]
   ]]
   
-  inline def filterOrElse_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
+  inline def filterOrElse_EAB[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[
     /* ma */ StateReaderTaskEither_[Any, Any, E, A], 
     StateReaderTaskEither_[Any, Any, E, B]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -581,7 +581,7 @@ object stateReaderTaskEitherMod {
   
   inline def fromPredicate[E, A](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* b */ A, StateReaderTaskEither_[Any, Any, E, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ A, StateReaderTaskEither_[Any, Any, E, A]]]
   
-  inline def fromPredicate_EAB_A[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, StateReaderTaskEither_[Any, Any, E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[Any, Any, E, B]]]
+  inline def fromPredicate_EAB[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, StateReaderTaskEither_[Any, Any, E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[Any, Any, E, B]]]
   
   @JSImport("fp-ts/lib/StateReaderTaskEither", "fromReader")
   @js.native

@@ -23,6 +23,6 @@ object ILoadUnitInterfacesResponse {
     
     inline def setUnits(value: js.Array[IAbstractUnitJson]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    inline def setUnitsVarargs(value: IAbstractUnitJson*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: IAbstractUnitJson*): Self = StObject.set(x, "units", js.Array(value*))
   }
 }

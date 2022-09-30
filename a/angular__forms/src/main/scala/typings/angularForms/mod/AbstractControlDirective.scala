@@ -1,6 +1,5 @@
 package typings.angularForms.mod
 
-import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +12,15 @@ abstract class AbstractControlDirective () extends StObject {
     * Contains the result of merging asynchronous validators into a single validator function
     * (combined using `Validators.composeAsync`).
     */
-  /* private */ var _composedAsyncValidatorFn: js.Any = js.native
+  /* private */ var _composedAsyncValidatorFn: Any = js.native
   
   /**
     * Contains the result of merging synchronous validators into a single validator function
     * (combined using `Validators.compose`).
     */
-  /* private */ var _composedValidatorFn: js.Any = js.native
+  /* private */ var _composedValidatorFn: Any = js.native
   
-  /* private */ var _onDestroyCallbacks: js.Any = js.native
+  /* private */ var _onDestroyCallbacks: Any = js.native
   
   /**
     * @description
@@ -36,7 +35,7 @@ abstract class AbstractControlDirective () extends StObject {
     *
     * @returns the control that backs this directive. Most properties fall through to that instance.
     */
-  def control: AbstractControl | Null = js.native
+  def control: (AbstractControl[Any, Any]) | Null = js.native
   
   /**
     * @description
@@ -93,9 +92,9 @@ abstract class AbstractControlDirective () extends StObject {
     * @returns error data for that particular error. If the control or error is not present,
     * null is returned.
     */
-  def getError(errorCode: String): js.Any = js.native
-  def getError(errorCode: String, path: String): js.Any = js.native
-  def getError(errorCode: String, path: js.Array[String | Double]): js.Any = js.native
+  def getError(errorCode: String): Any = js.native
+  def getError(errorCode: String, path: String): Any = js.native
+  def getError(errorCode: String, path: js.Array[String | Double]): Any = js.native
   
   /**
     * @description
@@ -165,7 +164,7 @@ abstract class AbstractControlDirective () extends StObject {
     * Resets the control with the provided value if the control is present.
     */
   def reset(): Unit = js.native
-  def reset(value: js.Any): Unit = js.native
+  def reset(value: Any): Unit = js.native
   
   /**
     * @description
@@ -180,7 +179,7 @@ abstract class AbstractControlDirective () extends StObject {
     * Returns a multicasting observable that emits a validation status whenever it is
     * calculated for the control. If the control is not present, null is returned.
     */
-  def statusChanges: Observable_[js.Any] | Null = js.native
+  def statusChanges: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any) | Null = js.native
   
   /**
     * @description
@@ -215,7 +214,7 @@ abstract class AbstractControlDirective () extends StObject {
     * @description
     * Reports the value of the control if it is present, otherwise null.
     */
-  def value: js.Any = js.native
+  def value: Any = js.native
   
   /**
     * @description
@@ -223,5 +222,5 @@ abstract class AbstractControlDirective () extends StObject {
     * value of the control changes in the UI or programmatically.
     * If the control is not present, null is returned.
     */
-  def valueChanges: Observable_[js.Any] | Null = js.native
+  def valueChanges: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any) | Null = js.native
 }

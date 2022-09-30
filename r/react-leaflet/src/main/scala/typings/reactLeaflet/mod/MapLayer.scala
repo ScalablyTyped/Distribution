@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "MapLayer")
 @js.native
-class MapLayer[P /* <: MapLayerProps */, E /* <: Layer */] protected () extends MapComponent[P, E] {
+open class MapLayer[P /* <: MapLayerProps */, E /* <: Layer */] protected () extends MapComponent[P, E] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   var contextValue: js.UndefOr[LeafletContext | Null] = js.native
   

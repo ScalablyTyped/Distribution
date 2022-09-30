@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "javaactions.ConcreteEntityType")
 @js.native
-class ConcreteEntityType protected ()
+open class ConcreteEntityType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.javaactions.ConcreteEntityType {
   def this(
     model: AbstractModel,

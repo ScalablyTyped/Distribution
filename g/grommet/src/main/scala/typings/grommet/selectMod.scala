@@ -28,31 +28,13 @@ object selectMod {
   @js.native
   val Select: FC[SelectExtendedProps] = js.native
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'a11yTitle' | 'alignSelf' | 'gridArea' | 'children' | 'clear' | 'closeOnChange' | 'defaultValue' | 'disabled' | 'disabledKey' | 'dropAlign' | 'dropHeight' | 'dropTarget' | 'dropProps' | 'focusIndicator' | 'icon' | 'id' | 'labelKey' | 'margin' | 'messages' | 'multiple' | 'name' | 'onChange' | 'onClose' | 'onMore' | 'onOpen' | 'onSearch' | 'options' | 'open' | 'placeholder' | 'plain' | 'replace' | 'searchPlaceholder' | 'selected' | 'size' | 'value' | 'valueLabel' | 'valueKey' | 'emptySearchMessage'> ]: react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>[P]} */ trait SelectExtendedProps
-    extends StObject
-       with SelectProps
-  object SelectExtendedProps {
-    
-    inline def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): SelectExtendedProps = {
-      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectExtendedProps]
-    }
-  }
-  
-  trait SelectProps extends StObject {
+  trait BasicSelectProps extends StObject {
     
     var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
     var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
     var children: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
-    
-    var clear: js.UndefOr[Boolean | Position] = js.undefined
-    
-    var closeOnChange: js.UndefOr[Boolean] = js.undefined
-    
-    var defaultValue: js.UndefOr[String | Double | js.Object | (js.Array[String | Double | js.Object])] = js.undefined
     
     var disabled: js.UndefOr[Boolean | (js.Array[Double | String | js.Object])] = js.undefined
     
@@ -82,8 +64,6 @@ object selectMod {
     
     var messages: js.UndefOr[Multiple] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.undefined
-    
     var name: js.UndefOr[String] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
@@ -108,24 +88,20 @@ object selectMod {
     
     var searchPlaceholder: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[Double | js.Array[Double]] = js.undefined
-    
     var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
-    
-    var value: js.UndefOr[String | Element | js.Object | (js.Array[String | Double | js.Object])] = js.undefined
     
     var valueKey: js.UndefOr[String | Key | (js.Function1[/* repeated */ Any, String])] = js.undefined
     
     var valueLabel: js.UndefOr[ReactNode | (js.Function1[/* repeated */ Any, String | ReactNode])] = js.undefined
   }
-  object SelectProps {
+  object BasicSelectProps {
     
-    inline def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): SelectProps = {
+    inline def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): BasicSelectProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectProps]
+      __obj.asInstanceOf[BasicSelectProps]
     }
     
-    extension [Self <: SelectProps](x: Self) {
+    extension [Self <: BasicSelectProps](x: Self) {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
@@ -138,20 +114,6 @@ object selectMod {
       inline def setChildren(value: /* repeated */ Any => Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setClear(value: Boolean | Position): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
-      
-      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
-      
-      inline def setCloseOnChange(value: Boolean): Self = StObject.set(x, "closeOnChange", value.asInstanceOf[js.Any])
-      
-      inline def setCloseOnChangeUndefined: Self = StObject.set(x, "closeOnChange", js.undefined)
-      
-      inline def setDefaultValue(value: String | Double | js.Object | (js.Array[String | Double | js.Object])): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
-      
-      inline def setDefaultValueVarargs(value: (String | Double | js.Object)*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDisabled(value: Boolean | (js.Array[Double | String | js.Object])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -217,10 +179,6 @@ object selectMod {
       
       inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
-      
-      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
-      
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -269,17 +227,9 @@ object selectMod {
       
       inline def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
       
-      inline def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
-      
-      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
-      
-      inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value*))
-      
       inline def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setValue(value: String | Element | js.Object | (js.Array[String | Double | js.Object])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueKey(value: String | Key | (js.Function1[/* repeated */ Any, String])): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
       
@@ -292,6 +242,71 @@ object selectMod {
       inline def setValueLabelFunction1(value: /* repeated */ Any => String | ReactNode): Self = StObject.set(x, "valueLabel", js.Any.fromFunction1(value))
       
       inline def setValueLabelUndefined: Self = StObject.set(x, "valueLabel", js.undefined)
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'clear' | 'closeOnChange' | 'defaultValue' | 'multiple' | 'selected' | 'value'> ]: react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>[P]} */ trait SelectExtendedProps
+    extends StObject
+       with SelectProps
+  object SelectExtendedProps {
+    
+    inline def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): SelectExtendedProps = {
+      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SelectExtendedProps]
+    }
+  }
+  
+  trait SelectProps
+    extends StObject
+       with BasicSelectProps {
+    
+    var clear: js.UndefOr[Boolean | Position] = js.undefined
+    
+    var closeOnChange: js.UndefOr[Boolean] = js.undefined
+    
+    var defaultValue: js.UndefOr[String | Double | js.Object | (js.Array[String | Double | js.Object])] = js.undefined
+    
+    var multiple: js.UndefOr[Boolean] = js.undefined
+    
+    var selected: js.UndefOr[Double | js.Array[Double]] = js.undefined
+    
+    var value: js.UndefOr[String | Element | js.Object | (js.Array[String | Double | js.Object])] = js.undefined
+  }
+  object SelectProps {
+    
+    inline def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): SelectProps = {
+      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SelectProps]
+    }
+    
+    extension [Self <: SelectProps](x: Self) {
+      
+      inline def setClear(value: Boolean | Position): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      
+      inline def setCloseOnChange(value: Boolean): Self = StObject.set(x, "closeOnChange", value.asInstanceOf[js.Any])
+      
+      inline def setCloseOnChangeUndefined: Self = StObject.set(x, "closeOnChange", js.undefined)
+      
+      inline def setDefaultValue(value: String | Double | js.Object | (js.Array[String | Double | js.Object])): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      
+      inline def setDefaultValueVarargs(value: (String | Double | js.Object)*): Self = StObject.set(x, "defaultValue", js.Array(value*))
+      
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      
+      inline def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      
+      inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value*))
+      
+      inline def setValue(value: String | Element | js.Object | (js.Array[String | Double | js.Object])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       

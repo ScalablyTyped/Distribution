@@ -1,7 +1,7 @@
 package typings.googleCloudPubsub
 
 import typings.googleCloudPubsub.publisherMod.PublishCallback
-import typings.googleCloudPubsub.publisherMod.PubsubMessage
+import typings.googleCloudPubsub.pubsubMessageMod.PubsubMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object messageBatchMod {
   
   @JSImport("@google-cloud/pubsub/build/src/publisher/message-batch", "MessageBatch")
   @js.native
-  class MessageBatch protected () extends StObject {
+  open class MessageBatch protected () extends StObject {
     def this(options: BatchPublishOptions) = this()
     
     /**
@@ -31,7 +31,7 @@ object messageBatchMod {
       * @param {object} message The message in question.
       * @returns {boolean}
       */
-    def canFit(hasData: PubsubMessage): Boolean = js.native
+    def canFit(message: PubsubMessage): Boolean = js.native
     
     var created: Double = js.native
     
@@ -54,6 +54,13 @@ object messageBatchMod {
     var messages: js.Array[PubsubMessage] = js.native
     
     var options: BatchPublishOptions = js.native
+    
+    /**
+      * Updates our options from new values.
+      *
+      * @param {BatchPublishOptions} options The new options.
+      */
+    def setOptions(options: BatchPublishOptions): Unit = js.native
   }
   
   trait BatchPublishOptions extends StObject {

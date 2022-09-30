@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new OperationInfo.
   * @param [properties] Properties to set
   */
-class OperationInfo ()
+open class OperationInfo ()
   extends StObject
      with IOperationInfo {
   def this(properties: IOperationInfo) = this()
@@ -33,7 +32,7 @@ class OperationInfo ()
     * Converts this OperationInfo to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object OperationInfo {
   
@@ -50,6 +49,8 @@ object OperationInfo {
   inline def create(): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OperationInfo]
   inline def create(properties: IOperationInfo): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
   
+  inline def decode(reader: js.typedarray.Uint8Array): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): OperationInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OperationInfo]
   /**
     * Decodes an OperationInfo message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object OperationInfo {
   /* static member */
   inline def decode(reader: Reader): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
   inline def decode(reader: Reader, length: Double): OperationInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OperationInfo]
-  inline def decode(reader: Uint8Array): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
-  inline def decode(reader: Uint8Array, length: Double): OperationInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[OperationInfo]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
   /**
     * Decodes an OperationInfo message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object OperationInfo {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
-  inline def decodeDelimited(reader: Uint8Array): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
   
   /**
     * Encodes the specified OperationInfo message. Does not implicitly {@link google.longrunning.OperationInfo.verify|verify} messages.
@@ -101,7 +100,7 @@ object OperationInfo {
     * @returns OperationInfo
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
+  inline def fromObject(`object`: StringDictionary[Any]): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
   
   /**
     * Creates a plain object from an OperationInfo message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object OperationInfo {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: OperationInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: OperationInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: OperationInfo): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: OperationInfo, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an OperationInfo message.
@@ -119,5 +118,5 @@ object OperationInfo {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

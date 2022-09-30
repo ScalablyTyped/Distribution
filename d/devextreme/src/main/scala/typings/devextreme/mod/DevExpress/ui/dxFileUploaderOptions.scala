@@ -16,6 +16,7 @@ import typings.devextreme.mod.DevExpress.ui.dxFileUploader.UploadedEvent
 import typings.devextreme.mod.DevExpress.ui.dxFileUploader.ValueChangedEvent
 import typings.std.Element
 import typings.std.File
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ trait dxFileUploaderOptions
     * A function that cancels the file upload.
     */
   var abortUpload: js.UndefOr[
-    js.Function2[/* file */ File, /* uploadInfo */ js.UndefOr[UploadInfo], js.Thenable[Any] | Any]
+    js.Function2[/* file */ File, /* uploadInfo */ js.UndefOr[UploadInfo], PromiseLike[Any] | Any]
   ] = js.undefined
   
   /**
@@ -191,7 +192,7 @@ trait dxFileUploaderOptions
     * A function that uploads a file in chunks.
     */
   var uploadChunk: js.UndefOr[
-    js.Function2[/* file */ File, /* uploadInfo */ UploadInfo, js.Thenable[Any] | Any]
+    js.Function2[/* file */ File, /* uploadInfo */ UploadInfo, PromiseLike[Any] | Any]
   ] = js.undefined
   
   /**
@@ -208,7 +209,7 @@ trait dxFileUploaderOptions
     * A function that uploads a file.
     */
   var uploadFile: js.UndefOr[
-    js.Function2[/* file */ File, /* progressCallback */ js.Function, js.Thenable[Any] | Any]
+    js.Function2[/* file */ File, /* progressCallback */ js.Function, PromiseLike[Any] | Any]
   ] = js.undefined
   
   /**
@@ -251,7 +252,7 @@ object dxFileUploaderOptions {
   
   extension [Self <: dxFileUploaderOptions](x: Self) {
     
-    inline def setAbortUpload(value: (/* file */ File, /* uploadInfo */ js.UndefOr[UploadInfo]) => js.Thenable[Any] | Any): Self = StObject.set(x, "abortUpload", js.Any.fromFunction2(value))
+    inline def setAbortUpload(value: (/* file */ File, /* uploadInfo */ js.UndefOr[UploadInfo]) => PromiseLike[Any] | Any): Self = StObject.set(x, "abortUpload", js.Any.fromFunction2(value))
     
     inline def setAbortUploadUndefined: Self = StObject.set(x, "abortUpload", js.undefined)
     
@@ -381,7 +382,7 @@ object dxFileUploaderOptions {
     
     inline def setUploadButtonTextUndefined: Self = StObject.set(x, "uploadButtonText", js.undefined)
     
-    inline def setUploadChunk(value: (/* file */ File, /* uploadInfo */ UploadInfo) => js.Thenable[Any] | Any): Self = StObject.set(x, "uploadChunk", js.Any.fromFunction2(value))
+    inline def setUploadChunk(value: (/* file */ File, /* uploadInfo */ UploadInfo) => PromiseLike[Any] | Any): Self = StObject.set(x, "uploadChunk", js.Any.fromFunction2(value))
     
     inline def setUploadChunkUndefined: Self = StObject.set(x, "uploadChunk", js.undefined)
     
@@ -393,7 +394,7 @@ object dxFileUploaderOptions {
     
     inline def setUploadFailedMessageUndefined: Self = StObject.set(x, "uploadFailedMessage", js.undefined)
     
-    inline def setUploadFile(value: (/* file */ File, /* progressCallback */ js.Function) => js.Thenable[Any] | Any): Self = StObject.set(x, "uploadFile", js.Any.fromFunction2(value))
+    inline def setUploadFile(value: (/* file */ File, /* progressCallback */ js.Function) => PromiseLike[Any] | Any): Self = StObject.set(x, "uploadFile", js.Any.fromFunction2(value))
     
     inline def setUploadFileUndefined: Self = StObject.set(x, "uploadFile", js.undefined)
     

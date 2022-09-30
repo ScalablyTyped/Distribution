@@ -11,10 +11,10 @@ object babylonjsAbstractSceneAugmentingMod {
   
   trait AbstractScene extends StObject {
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _prePassRenderer: Nullable[typings.babylonjs.prePassRendererMod.PrePassRenderer]
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _subSurfaceConfiguration: Nullable[SubSurfaceConfiguration]
     
     /**

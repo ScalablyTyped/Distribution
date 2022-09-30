@@ -37,9 +37,19 @@ trait Input extends StObject {
   var key: String
   
   /**
+    * Equivalent to KeyboardEvent.location.
+    */
+  var location: Double
+  
+  /**
     * Equivalent to KeyboardEvent.metaKey.
     */
   var meta: Boolean
+  
+  /**
+    * See InputEvent.modifiers.
+    */
+  var modifiers: js.Array[String]
   
   /**
     * Equivalent to KeyboardEvent.shiftKey.
@@ -60,11 +70,13 @@ object Input {
     isAutoRepeat: Boolean,
     isComposing: Boolean,
     key: String,
+    location: Double,
     meta: Boolean,
+    modifiers: js.Array[String],
     shift: Boolean,
     `type`: String
   ): Input = {
-    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], isAutoRepeat = isAutoRepeat.asInstanceOf[js.Any], isComposing = isComposing.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], isAutoRepeat = isAutoRepeat.asInstanceOf[js.Any], isComposing = isComposing.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Input]
   }
@@ -83,7 +95,13 @@ object Input {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
+    inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
     inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    
+    inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     

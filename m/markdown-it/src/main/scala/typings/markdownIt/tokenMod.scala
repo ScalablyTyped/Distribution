@@ -1,8 +1,8 @@
 package typings.markdownIt
 
-import typings.markdownIt.markdownItNumbers.`-1`
-import typings.markdownIt.markdownItNumbers.`0`
-import typings.markdownIt.markdownItNumbers.`1`
+import typings.markdownIt.markdownItInts.`-1`
+import typings.markdownIt.markdownItInts.`0`
+import typings.markdownIt.markdownItInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,18 +138,18 @@ object tokenMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.markdownIt.markdownItNumbers.`1`
-    - typings.markdownIt.markdownItNumbers.`0`
-    - typings.markdownIt.markdownItNumbers.`-1`
+    - typings.markdownIt.markdownItInts.`1`
+    - typings.markdownIt.markdownItInts.`0`
+    - typings.markdownIt.markdownItInts.`-1`
   */
   trait Nesting extends StObject
   object Nesting {
     
-    inline def `-1`: typings.markdownIt.markdownItNumbers.`-1` = -1.asInstanceOf[typings.markdownIt.markdownItNumbers.`-1`]
+    inline def `-1`: typings.markdownIt.markdownItInts.`-1` = -1.asInstanceOf[typings.markdownIt.markdownItInts.`-1`]
     
-    inline def `0`: typings.markdownIt.markdownItNumbers.`0` = 0.asInstanceOf[typings.markdownIt.markdownItNumbers.`0`]
+    inline def `0`: typings.markdownIt.markdownItInts.`0` = 0.asInstanceOf[typings.markdownIt.markdownItInts.`0`]
     
-    inline def `1`: typings.markdownIt.markdownItNumbers.`1` = 1.asInstanceOf[typings.markdownIt.markdownItNumbers.`1`]
+    inline def `1`: typings.markdownIt.markdownItInts.`1` = 1.asInstanceOf[typings.markdownIt.markdownItInts.`1`]
   }
   
   /**

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.Label")
 @js.native
-class Label protected ()
+open class Label protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.Label {
   def this(
     model: AbstractModel,

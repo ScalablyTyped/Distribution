@@ -10,7 +10,7 @@ object kobitonMod {
   
   @JSImport("protractor/built/driverProviders/kobiton", "Kobiton")
   @js.native
-  class Kobiton protected () extends DriverProvider {
+  open class Kobiton protected () extends DriverProvider {
     def this(config: Config) = this()
   }
 }

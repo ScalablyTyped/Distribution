@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.ValidationMessage")
 @js.native
-class ValidationMessage protected ()
+open class ValidationMessage protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ValidationMessage {
   def this(
     model: AbstractModel,

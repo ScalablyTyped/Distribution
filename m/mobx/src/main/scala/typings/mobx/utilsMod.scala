@@ -1,85 +1,80 @@
 package typings.mobx
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mobx.mobxBooleans.`false`
-import typings.mobx.mobxBooleans.`true`
-import typings.std.Map
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
+import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("mobx/lib/utils/utils", JSImport.Namespace)
+  @JSImport("mobx/dist/utils/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/utils/utils", "EMPTY_ARRAY")
+  @JSImport("mobx/dist/utils/utils", "EMPTY_ARRAY")
   @js.native
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
   
-  @JSImport("mobx/lib/utils/utils", "OBFUSCATED_ERROR")
-  @js.native
-  val OBFUSCATED_ERROR: /* "An invariant failed, however the error is obfuscated because this is a production build." */ String = js.native
+  inline def addHiddenFinalProp(`object`: Any, propName: PropertyKey, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHiddenFinalProp")(`object`.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addHiddenFinalProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHiddenFinalProp")(`object`.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addHiddenProp(`object`: Any, propName: PropertyKey, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHiddenProp")(`object`.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addHiddenProp(`object`: js.Any, propName: PropertyKey, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHiddenProp")(`object`.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assertProxies(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertProxies")().asInstanceOf[Unit]
   
-  inline def assertPropertyConfigurable(`object`: js.Any, prop: PropertyKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertPropertyConfigurable")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assign(target: js.Object, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def assign[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
+  inline def assign[T_1, U_1, V](target: T_1, source1: U_1, source2: V): T_1 & U_1 & V = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T_1 & U_1 & V]
+  inline def assign[T_2, U_2, V_1, W](target: T_2, source1: U_2, source2: V_1, source3: W): T_2 & U_2 & V_1 & W = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[T_2 & U_2 & V_1 & W]
   
-  inline def convertToMap(dataStructure: js.Any): Map[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToMap")(dataStructure.asInstanceOf[js.Any]).asInstanceOf[Map[js.Any, js.Any]]
+  inline def createInstanceofPredicate[T](name: String, theClass: Instantiable1[/* args (repeated) */ Any, T]): js.Function1[/* x */ Any, /* is T */ Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstanceofPredicate")(name.asInstanceOf[js.Any], theClass.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ Any, /* is T */ Boolean]]
   
-  inline def createInstanceofPredicate[T](name: String, clazz: Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* x */ js.Any, /* is T */ Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstanceofPredicate")(name.asInstanceOf[js.Any], clazz.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ js.Any, /* is T */ Boolean]]
+  inline def defineProperty[T](o: T, p: PropertyKey, attributes: js.PropertyDescriptor & ThisType[Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(o.asInstanceOf[js.Any], p.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def deprecated(msg: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(msg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def deprecated(thing: String, replacement: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(thing.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def fail(message: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-  inline def fail(message: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def getDescriptor(o: Any, p: PropertyKey): js.UndefOr[js.PropertyDescriptor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDescriptor")(o.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.PropertyDescriptor]]
   
   inline def getNextId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextId")().asInstanceOf[Double]
   
-  inline def getPlainObjectKeys(`object`: js.Any): js.Array[String | Double | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlainObjectKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String | Double | js.Symbol]]
+  inline def getOwnPropertyDescriptors[T](o: T): typings.mobx.mobxStrings.getOwnPropertyDescriptors & TopLevel[T] & StringDictionary[js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertyDescriptors")(o.asInstanceOf[js.Any]).asInstanceOf[typings.mobx.mobxStrings.getOwnPropertyDescriptors & TopLevel[T] & StringDictionary[js.PropertyDescriptor]]
   
-  inline def invariant(check: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def invariant(check: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def invariant(check: js.Any, message: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getPlainObjectKeys(`object`: Any): js.Array[String | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlainObjectKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String | js.Symbol]]
   
-  inline def invariant_false(check: `false`): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-  inline def invariant_false(check: `false`, message: String): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
-  inline def invariant_false(check: `false`, message: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  inline def hasProp(target: js.Object, prop: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProp")(target.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def invariant_true(check: `true`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def invariant_true(check: `true`, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def invariant_true(check: `true`, message: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(check.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isES6Map(thing: Any): /* is std.Map<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isES6Map")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is std.Map<any, any> */ Boolean]
   
-  inline def isArrayLike(x: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayLike")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isES6Set(thing: Any): /* is std.Set<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isES6Set")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is std.Set<any> */ Boolean]
   
-  inline def isES6Map(thing: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isES6Map")(thing.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFunction(fn: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(fn.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  inline def isES6Set(thing: js.Any): /* is std.Set<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isES6Set")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is std.Set<any> */ Boolean]
+  inline def isGenerator(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGenerator")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isObject(value: Any): /* is std.Object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Object */ Boolean]
   
-  inline def isPlainObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPlainObject(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isPropertyConfigurable(`object`: js.Any, prop: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyConfigurable")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isString(value: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  inline def makeNonEnumerable(`object`: js.Any, propNames: js.Array[PropertyKey]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("makeNonEnumerable")(`object`.asInstanceOf[js.Any], propNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def isStringish(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringish")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
+  @JSImport("mobx/dist/utils/utils", "objectPrototype")
+  @js.native
+  val objectPrototype: js.Object = js.native
+  
   inline def once(func: Lambda): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(func.asInstanceOf[js.Any]).asInstanceOf[Lambda]
   
-  inline def ownKeys(target: js.Any): js.Array[PropertyKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("ownKeys")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[PropertyKey]]
+  inline def ownKeys(target: Any): js.Array[String | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("ownKeys")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[String | js.Symbol]]
   
-  inline def stringifyKey(key: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyKey")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyKey(key: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyKey")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def toPrimitive(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toPrimitive")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toPrimitive(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toPrimitive")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def unique[T](list: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def warnAboutProxyRequirement(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnAboutProxyRequirement")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait Lambda extends StObject {

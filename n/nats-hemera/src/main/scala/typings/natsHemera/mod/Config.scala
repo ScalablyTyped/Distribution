@@ -1,6 +1,6 @@
 package typings.natsHemera.mod
 
-import typings.natsHemera.natsHemeraNumbers.`2000`
+import typings.natsHemera.natsHemeraInts.`2000`
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

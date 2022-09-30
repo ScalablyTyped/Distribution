@@ -1,138 +1,138 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`3000`
-import typings.activexAdodb.activexAdodbNumbers.`3001`
-import typings.activexAdodb.activexAdodbNumbers.`3002`
-import typings.activexAdodb.activexAdodbNumbers.`3003`
-import typings.activexAdodb.activexAdodbNumbers.`3004`
-import typings.activexAdodb.activexAdodbNumbers.`3021`
-import typings.activexAdodb.activexAdodbNumbers.`3219`
-import typings.activexAdodb.activexAdodbNumbers.`3220`
-import typings.activexAdodb.activexAdodbNumbers.`3246`
-import typings.activexAdodb.activexAdodbNumbers.`3251`
-import typings.activexAdodb.activexAdodbNumbers.`3265`
-import typings.activexAdodb.activexAdodbNumbers.`3367`
-import typings.activexAdodb.activexAdodbNumbers.`3420`
-import typings.activexAdodb.activexAdodbNumbers.`3421`
-import typings.activexAdodb.activexAdodbNumbers.`3704`
-import typings.activexAdodb.activexAdodbNumbers.`3705`
-import typings.activexAdodb.activexAdodbNumbers.`3706`
-import typings.activexAdodb.activexAdodbNumbers.`3707`
-import typings.activexAdodb.activexAdodbNumbers.`3708`
-import typings.activexAdodb.activexAdodbNumbers.`3709`
-import typings.activexAdodb.activexAdodbNumbers.`3710`
-import typings.activexAdodb.activexAdodbNumbers.`3711`
-import typings.activexAdodb.activexAdodbNumbers.`3712`
-import typings.activexAdodb.activexAdodbNumbers.`3713`
-import typings.activexAdodb.activexAdodbNumbers.`3714`
-import typings.activexAdodb.activexAdodbNumbers.`3715`
-import typings.activexAdodb.activexAdodbNumbers.`3716`
-import typings.activexAdodb.activexAdodbNumbers.`3717`
-import typings.activexAdodb.activexAdodbNumbers.`3718`
-import typings.activexAdodb.activexAdodbNumbers.`3719`
-import typings.activexAdodb.activexAdodbNumbers.`3720`
-import typings.activexAdodb.activexAdodbNumbers.`3721`
-import typings.activexAdodb.activexAdodbNumbers.`3722`
-import typings.activexAdodb.activexAdodbNumbers.`3723`
-import typings.activexAdodb.activexAdodbNumbers.`3724`
-import typings.activexAdodb.activexAdodbNumbers.`3725`
-import typings.activexAdodb.activexAdodbNumbers.`3726`
-import typings.activexAdodb.activexAdodbNumbers.`3727`
-import typings.activexAdodb.activexAdodbNumbers.`3728`
-import typings.activexAdodb.activexAdodbNumbers.`3729`
-import typings.activexAdodb.activexAdodbNumbers.`3730`
-import typings.activexAdodb.activexAdodbNumbers.`3731`
-import typings.activexAdodb.activexAdodbNumbers.`3732`
-import typings.activexAdodb.activexAdodbNumbers.`3733`
-import typings.activexAdodb.activexAdodbNumbers.`3734`
-import typings.activexAdodb.activexAdodbNumbers.`3735`
-import typings.activexAdodb.activexAdodbNumbers.`3736`
-import typings.activexAdodb.activexAdodbNumbers.`3737`
-import typings.activexAdodb.activexAdodbNumbers.`3738`
-import typings.activexAdodb.activexAdodbNumbers.`3739`
-import typings.activexAdodb.activexAdodbNumbers.`3740`
-import typings.activexAdodb.activexAdodbNumbers.`3741`
-import typings.activexAdodb.activexAdodbNumbers.`3742`
-import typings.activexAdodb.activexAdodbNumbers.`3743`
-import typings.activexAdodb.activexAdodbNumbers.`3744`
-import typings.activexAdodb.activexAdodbNumbers.`3745`
-import typings.activexAdodb.activexAdodbNumbers.`3746`
-import typings.activexAdodb.activexAdodbNumbers.`3747`
-import typings.activexAdodb.activexAdodbNumbers.`3748`
-import typings.activexAdodb.activexAdodbNumbers.`3749`
-import typings.activexAdodb.activexAdodbNumbers.`3750`
-import typings.activexAdodb.activexAdodbNumbers.`3751`
-import typings.activexAdodb.activexAdodbNumbers.`3753`
-import typings.activexAdodb.activexAdodbNumbers.`3754`
+import typings.activexAdodb.activexAdodbInts.`3000`
+import typings.activexAdodb.activexAdodbInts.`3001`
+import typings.activexAdodb.activexAdodbInts.`3002`
+import typings.activexAdodb.activexAdodbInts.`3003`
+import typings.activexAdodb.activexAdodbInts.`3004`
+import typings.activexAdodb.activexAdodbInts.`3021`
+import typings.activexAdodb.activexAdodbInts.`3219`
+import typings.activexAdodb.activexAdodbInts.`3220`
+import typings.activexAdodb.activexAdodbInts.`3246`
+import typings.activexAdodb.activexAdodbInts.`3251`
+import typings.activexAdodb.activexAdodbInts.`3265`
+import typings.activexAdodb.activexAdodbInts.`3367`
+import typings.activexAdodb.activexAdodbInts.`3420`
+import typings.activexAdodb.activexAdodbInts.`3421`
+import typings.activexAdodb.activexAdodbInts.`3704`
+import typings.activexAdodb.activexAdodbInts.`3705`
+import typings.activexAdodb.activexAdodbInts.`3706`
+import typings.activexAdodb.activexAdodbInts.`3707`
+import typings.activexAdodb.activexAdodbInts.`3708`
+import typings.activexAdodb.activexAdodbInts.`3709`
+import typings.activexAdodb.activexAdodbInts.`3710`
+import typings.activexAdodb.activexAdodbInts.`3711`
+import typings.activexAdodb.activexAdodbInts.`3712`
+import typings.activexAdodb.activexAdodbInts.`3713`
+import typings.activexAdodb.activexAdodbInts.`3714`
+import typings.activexAdodb.activexAdodbInts.`3715`
+import typings.activexAdodb.activexAdodbInts.`3716`
+import typings.activexAdodb.activexAdodbInts.`3717`
+import typings.activexAdodb.activexAdodbInts.`3718`
+import typings.activexAdodb.activexAdodbInts.`3719`
+import typings.activexAdodb.activexAdodbInts.`3720`
+import typings.activexAdodb.activexAdodbInts.`3721`
+import typings.activexAdodb.activexAdodbInts.`3722`
+import typings.activexAdodb.activexAdodbInts.`3723`
+import typings.activexAdodb.activexAdodbInts.`3724`
+import typings.activexAdodb.activexAdodbInts.`3725`
+import typings.activexAdodb.activexAdodbInts.`3726`
+import typings.activexAdodb.activexAdodbInts.`3727`
+import typings.activexAdodb.activexAdodbInts.`3728`
+import typings.activexAdodb.activexAdodbInts.`3729`
+import typings.activexAdodb.activexAdodbInts.`3730`
+import typings.activexAdodb.activexAdodbInts.`3731`
+import typings.activexAdodb.activexAdodbInts.`3732`
+import typings.activexAdodb.activexAdodbInts.`3733`
+import typings.activexAdodb.activexAdodbInts.`3734`
+import typings.activexAdodb.activexAdodbInts.`3735`
+import typings.activexAdodb.activexAdodbInts.`3736`
+import typings.activexAdodb.activexAdodbInts.`3737`
+import typings.activexAdodb.activexAdodbInts.`3738`
+import typings.activexAdodb.activexAdodbInts.`3739`
+import typings.activexAdodb.activexAdodbInts.`3740`
+import typings.activexAdodb.activexAdodbInts.`3741`
+import typings.activexAdodb.activexAdodbInts.`3742`
+import typings.activexAdodb.activexAdodbInts.`3743`
+import typings.activexAdodb.activexAdodbInts.`3744`
+import typings.activexAdodb.activexAdodbInts.`3745`
+import typings.activexAdodb.activexAdodbInts.`3746`
+import typings.activexAdodb.activexAdodbInts.`3747`
+import typings.activexAdodb.activexAdodbInts.`3748`
+import typings.activexAdodb.activexAdodbInts.`3749`
+import typings.activexAdodb.activexAdodbInts.`3750`
+import typings.activexAdodb.activexAdodbInts.`3751`
+import typings.activexAdodb.activexAdodbInts.`3753`
+import typings.activexAdodb.activexAdodbInts.`3754`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`3707`
-  - typings.activexAdodb.activexAdodbNumbers.`3732`
-  - typings.activexAdodb.activexAdodbNumbers.`3748`
-  - typings.activexAdodb.activexAdodbNumbers.`3220`
-  - typings.activexAdodb.activexAdodbNumbers.`3724`
-  - typings.activexAdodb.activexAdodbNumbers.`3725`
-  - typings.activexAdodb.activexAdodbNumbers.`3747`
-  - typings.activexAdodb.activexAdodbNumbers.`3726`
-  - typings.activexAdodb.activexAdodbNumbers.`3754`
-  - typings.activexAdodb.activexAdodbNumbers.`3421`
-  - typings.activexAdodb.activexAdodbNumbers.`3721`
-  - typings.activexAdodb.activexAdodbNumbers.`3738`
-  - typings.activexAdodb.activexAdodbNumbers.`3750`
-  - typings.activexAdodb.activexAdodbNumbers.`3751`
-  - typings.activexAdodb.activexAdodbNumbers.`3251`
-  - typings.activexAdodb.activexAdodbNumbers.`3749`
-  - typings.activexAdodb.activexAdodbNumbers.`3219`
-  - typings.activexAdodb.activexAdodbNumbers.`3719`
-  - typings.activexAdodb.activexAdodbNumbers.`3246`
-  - typings.activexAdodb.activexAdodbNumbers.`3001`
-  - typings.activexAdodb.activexAdodbNumbers.`3709`
-  - typings.activexAdodb.activexAdodbNumbers.`3708`
-  - typings.activexAdodb.activexAdodbNumbers.`3714`
-  - typings.activexAdodb.activexAdodbNumbers.`3729`
-  - typings.activexAdodb.activexAdodbNumbers.`3265`
-  - typings.activexAdodb.activexAdodbNumbers.`3021`
-  - typings.activexAdodb.activexAdodbNumbers.`3715`
-  - typings.activexAdodb.activexAdodbNumbers.`3710`
-  - typings.activexAdodb.activexAdodbNumbers.`3704`
-  - typings.activexAdodb.activexAdodbNumbers.`3367`
-  - typings.activexAdodb.activexAdodbNumbers.`3420`
-  - typings.activexAdodb.activexAdodbNumbers.`3705`
-  - typings.activexAdodb.activexAdodbNumbers.`3002`
-  - typings.activexAdodb.activexAdodbNumbers.`3712`
-  - typings.activexAdodb.activexAdodbNumbers.`3734`
-  - typings.activexAdodb.activexAdodbNumbers.`3720`
-  - typings.activexAdodb.activexAdodbNumbers.`3742`
-  - typings.activexAdodb.activexAdodbNumbers.`3739`
-  - typings.activexAdodb.activexAdodbNumbers.`3740`
-  - typings.activexAdodb.activexAdodbNumbers.`3741`
-  - typings.activexAdodb.activexAdodbNumbers.`3743`
-  - typings.activexAdodb.activexAdodbNumbers.`3744`
-  - typings.activexAdodb.activexAdodbNumbers.`3745`
-  - typings.activexAdodb.activexAdodbNumbers.`3746`
-  - typings.activexAdodb.activexAdodbNumbers.`3000`
-  - typings.activexAdodb.activexAdodbNumbers.`3706`
-  - typings.activexAdodb.activexAdodbNumbers.`3753`
-  - typings.activexAdodb.activexAdodbNumbers.`3003`
-  - typings.activexAdodb.activexAdodbNumbers.`3731`
-  - typings.activexAdodb.activexAdodbNumbers.`3730`
-  - typings.activexAdodb.activexAdodbNumbers.`3735`
-  - typings.activexAdodb.activexAdodbNumbers.`3722`
-  - typings.activexAdodb.activexAdodbNumbers.`3723`
-  - typings.activexAdodb.activexAdodbNumbers.`3713`
-  - typings.activexAdodb.activexAdodbNumbers.`3711`
-  - typings.activexAdodb.activexAdodbNumbers.`3728`
-  - typings.activexAdodb.activexAdodbNumbers.`3736`
-  - typings.activexAdodb.activexAdodbNumbers.`3716`
-  - typings.activexAdodb.activexAdodbNumbers.`3727`
-  - typings.activexAdodb.activexAdodbNumbers.`3737`
-  - typings.activexAdodb.activexAdodbNumbers.`3733`
-  - typings.activexAdodb.activexAdodbNumbers.`3004`
-  - typings.activexAdodb.activexAdodbNumbers.`3717`
-  - typings.activexAdodb.activexAdodbNumbers.`3718`
+  - typings.activexAdodb.activexAdodbInts.`3707`
+  - typings.activexAdodb.activexAdodbInts.`3732`
+  - typings.activexAdodb.activexAdodbInts.`3748`
+  - typings.activexAdodb.activexAdodbInts.`3220`
+  - typings.activexAdodb.activexAdodbInts.`3724`
+  - typings.activexAdodb.activexAdodbInts.`3725`
+  - typings.activexAdodb.activexAdodbInts.`3747`
+  - typings.activexAdodb.activexAdodbInts.`3726`
+  - typings.activexAdodb.activexAdodbInts.`3754`
+  - typings.activexAdodb.activexAdodbInts.`3421`
+  - typings.activexAdodb.activexAdodbInts.`3721`
+  - typings.activexAdodb.activexAdodbInts.`3738`
+  - typings.activexAdodb.activexAdodbInts.`3750`
+  - typings.activexAdodb.activexAdodbInts.`3751`
+  - typings.activexAdodb.activexAdodbInts.`3251`
+  - typings.activexAdodb.activexAdodbInts.`3749`
+  - typings.activexAdodb.activexAdodbInts.`3219`
+  - typings.activexAdodb.activexAdodbInts.`3719`
+  - typings.activexAdodb.activexAdodbInts.`3246`
+  - typings.activexAdodb.activexAdodbInts.`3001`
+  - typings.activexAdodb.activexAdodbInts.`3709`
+  - typings.activexAdodb.activexAdodbInts.`3708`
+  - typings.activexAdodb.activexAdodbInts.`3714`
+  - typings.activexAdodb.activexAdodbInts.`3729`
+  - typings.activexAdodb.activexAdodbInts.`3265`
+  - typings.activexAdodb.activexAdodbInts.`3021`
+  - typings.activexAdodb.activexAdodbInts.`3715`
+  - typings.activexAdodb.activexAdodbInts.`3710`
+  - typings.activexAdodb.activexAdodbInts.`3704`
+  - typings.activexAdodb.activexAdodbInts.`3367`
+  - typings.activexAdodb.activexAdodbInts.`3420`
+  - typings.activexAdodb.activexAdodbInts.`3705`
+  - typings.activexAdodb.activexAdodbInts.`3002`
+  - typings.activexAdodb.activexAdodbInts.`3712`
+  - typings.activexAdodb.activexAdodbInts.`3734`
+  - typings.activexAdodb.activexAdodbInts.`3720`
+  - typings.activexAdodb.activexAdodbInts.`3742`
+  - typings.activexAdodb.activexAdodbInts.`3739`
+  - typings.activexAdodb.activexAdodbInts.`3740`
+  - typings.activexAdodb.activexAdodbInts.`3741`
+  - typings.activexAdodb.activexAdodbInts.`3743`
+  - typings.activexAdodb.activexAdodbInts.`3744`
+  - typings.activexAdodb.activexAdodbInts.`3745`
+  - typings.activexAdodb.activexAdodbInts.`3746`
+  - typings.activexAdodb.activexAdodbInts.`3000`
+  - typings.activexAdodb.activexAdodbInts.`3706`
+  - typings.activexAdodb.activexAdodbInts.`3753`
+  - typings.activexAdodb.activexAdodbInts.`3003`
+  - typings.activexAdodb.activexAdodbInts.`3731`
+  - typings.activexAdodb.activexAdodbInts.`3730`
+  - typings.activexAdodb.activexAdodbInts.`3735`
+  - typings.activexAdodb.activexAdodbInts.`3722`
+  - typings.activexAdodb.activexAdodbInts.`3723`
+  - typings.activexAdodb.activexAdodbInts.`3713`
+  - typings.activexAdodb.activexAdodbInts.`3711`
+  - typings.activexAdodb.activexAdodbInts.`3728`
+  - typings.activexAdodb.activexAdodbInts.`3736`
+  - typings.activexAdodb.activexAdodbInts.`3716`
+  - typings.activexAdodb.activexAdodbInts.`3727`
+  - typings.activexAdodb.activexAdodbInts.`3737`
+  - typings.activexAdodb.activexAdodbInts.`3733`
+  - typings.activexAdodb.activexAdodbInts.`3004`
+  - typings.activexAdodb.activexAdodbInts.`3717`
+  - typings.activexAdodb.activexAdodbInts.`3718`
 */
 trait ErrorValueEnum extends StObject
 object ErrorValueEnum {

@@ -23,7 +23,7 @@ type ExpandType = _ExpandType | Null
 
 type FilterKey = js.Array[Key] | Null
 
-type FilterSearchType = Boolean | (js.Function2[/* input */ String, /* record */ js.Object, Boolean])
+type FilterSearchType[RecordType] = Boolean | (js.Function2[/* input */ String, /* record */ RecordType, Boolean])
 
 type FilterValue = js.Array[Key | Boolean]
 

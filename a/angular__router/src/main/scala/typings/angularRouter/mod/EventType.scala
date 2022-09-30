@@ -1,42 +1,42 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterNumbers.`0`
-import typings.angularRouter.angularRouterNumbers.`10`
-import typings.angularRouter.angularRouterNumbers.`11`
-import typings.angularRouter.angularRouterNumbers.`12`
-import typings.angularRouter.angularRouterNumbers.`13`
-import typings.angularRouter.angularRouterNumbers.`14`
-import typings.angularRouter.angularRouterNumbers.`15`
-import typings.angularRouter.angularRouterNumbers.`1`
-import typings.angularRouter.angularRouterNumbers.`2`
-import typings.angularRouter.angularRouterNumbers.`3`
-import typings.angularRouter.angularRouterNumbers.`4`
-import typings.angularRouter.angularRouterNumbers.`5`
-import typings.angularRouter.angularRouterNumbers.`6`
-import typings.angularRouter.angularRouterNumbers.`7`
-import typings.angularRouter.angularRouterNumbers.`8`
-import typings.angularRouter.angularRouterNumbers.`9`
+import typings.angularRouter.angularRouterInts.`0`
+import typings.angularRouter.angularRouterInts.`10`
+import typings.angularRouter.angularRouterInts.`11`
+import typings.angularRouter.angularRouterInts.`12`
+import typings.angularRouter.angularRouterInts.`13`
+import typings.angularRouter.angularRouterInts.`14`
+import typings.angularRouter.angularRouterInts.`15`
+import typings.angularRouter.angularRouterInts.`1`
+import typings.angularRouter.angularRouterInts.`2`
+import typings.angularRouter.angularRouterInts.`3`
+import typings.angularRouter.angularRouterInts.`4`
+import typings.angularRouter.angularRouterInts.`5`
+import typings.angularRouter.angularRouterInts.`6`
+import typings.angularRouter.angularRouterInts.`7`
+import typings.angularRouter.angularRouterInts.`8`
+import typings.angularRouter.angularRouterInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularRouter.angularRouterNumbers.`0`
-  - typings.angularRouter.angularRouterNumbers.`1`
-  - typings.angularRouter.angularRouterNumbers.`2`
-  - typings.angularRouter.angularRouterNumbers.`3`
-  - typings.angularRouter.angularRouterNumbers.`4`
-  - typings.angularRouter.angularRouterNumbers.`5`
-  - typings.angularRouter.angularRouterNumbers.`6`
-  - typings.angularRouter.angularRouterNumbers.`7`
-  - typings.angularRouter.angularRouterNumbers.`8`
-  - typings.angularRouter.angularRouterNumbers.`9`
-  - typings.angularRouter.angularRouterNumbers.`10`
-  - typings.angularRouter.angularRouterNumbers.`11`
-  - typings.angularRouter.angularRouterNumbers.`12`
-  - typings.angularRouter.angularRouterNumbers.`13`
-  - typings.angularRouter.angularRouterNumbers.`14`
-  - typings.angularRouter.angularRouterNumbers.`15`
+  - typings.angularRouter.angularRouterInts.`0`
+  - typings.angularRouter.angularRouterInts.`1`
+  - typings.angularRouter.angularRouterInts.`2`
+  - typings.angularRouter.angularRouterInts.`3`
+  - typings.angularRouter.angularRouterInts.`4`
+  - typings.angularRouter.angularRouterInts.`5`
+  - typings.angularRouter.angularRouterInts.`6`
+  - typings.angularRouter.angularRouterInts.`7`
+  - typings.angularRouter.angularRouterInts.`8`
+  - typings.angularRouter.angularRouterInts.`9`
+  - typings.angularRouter.angularRouterInts.`10`
+  - typings.angularRouter.angularRouterInts.`11`
+  - typings.angularRouter.angularRouterInts.`12`
+  - typings.angularRouter.angularRouterInts.`13`
+  - typings.angularRouter.angularRouterInts.`14`
+  - typings.angularRouter.angularRouterInts.`15`
 */
 trait EventType extends StObject
 object EventType {

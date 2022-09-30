@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EspressoTestReport
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var appVersionId: js.UndefOr[Double] = js.undefined
   
@@ -167,7 +167,7 @@ object EspressoTestReport {
     
     inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    inline def setScreenshotsVarargs(value: Double*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
+    inline def setScreenshotsVarargs(value: Double*): Self = StObject.set(x, "screenshots", js.Array(value*))
     
     inline def setSharedLinkCode(value: String): Self = StObject.set(x, "sharedLinkCode", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NoCase")
 @js.native
-class NoCase protected () extends CaseValue {
+open class NoCase protected () extends CaseValue {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -25,7 +25,7 @@ class NoCase protected () extends CaseValue {
 }
 object NoCase {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NoCase")
   @js.native
   val ^ : js.Any = js.native
   
@@ -46,13 +46,13 @@ object NoCase {
   inline def createIn(container: SequenceFlow): NoCase = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NoCase]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NoCase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NoCase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

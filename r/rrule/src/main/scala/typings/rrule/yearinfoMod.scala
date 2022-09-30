@@ -1,7 +1,7 @@
 package typings.rrule
 
-import typings.rrule.rruleNumbers.`365`
-import typings.rrule.rruleNumbers.`366`
+import typings.rrule.rruleInts.`365`
+import typings.rrule.rruleInts.`366`
 import typings.rrule.typesMod.ParsedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

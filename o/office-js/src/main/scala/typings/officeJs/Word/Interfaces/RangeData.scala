@@ -8,7 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RangeData extends StObject {
   
   /**
-    * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the collection of field objects in the range.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
+  
+  /**
+    * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -24,7 +32,7 @@ trait RangeData extends StObject {
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the collection of inline picture objects in the range. Read-only.
+    * Gets the collection of inline picture objects in the range.
     *
     * @remarks
     * [Api set: WordApi 1.2]
@@ -32,7 +40,7 @@ trait RangeData extends StObject {
   var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
-    * Checks whether the range length is zero. Read-only.
+    * Checks whether the range length is zero.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -58,7 +66,7 @@ trait RangeData extends StObject {
   ] = js.undefined
   
   /**
-    * Gets the text of the range. Read-only.
+    * Gets the text of the range.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -73,6 +81,12 @@ object RangeData {
   }
   
   extension [Self <: RangeData](x: Self) {
+    
+    inline def setFields(value: js.Array[FieldData]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: FieldData*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

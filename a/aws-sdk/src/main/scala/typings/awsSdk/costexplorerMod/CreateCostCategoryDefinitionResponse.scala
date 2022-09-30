@@ -12,7 +12,7 @@ trait CreateCostCategoryDefinitionResponse extends StObject {
   var CostCategoryArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The Cost Category's effective start date. 
+    * The Cost Category's effective start date. It can only be a billing start date (first day of the month).
     */
   var EffectiveStart: js.UndefOr[ZonedDateTime] = js.undefined
 }

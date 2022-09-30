@@ -3,30 +3,30 @@ package typings.nodegit
 import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.commitMod.Commit
 import typings.nodegit.mod.Index
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1024`
-import typings.nodegit.nodegitNumbers.`1048576`
-import typings.nodegit.nodegitNumbers.`128`
-import typings.nodegit.nodegitNumbers.`131072`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2048`
-import typings.nodegit.nodegitNumbers.`2097152`
-import typings.nodegit.nodegitNumbers.`256`
-import typings.nodegit.nodegitNumbers.`262144`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`32`
-import typings.nodegit.nodegitNumbers.`4096`
-import typings.nodegit.nodegitNumbers.`4194304`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`512`
-import typings.nodegit.nodegitNumbers.`524288`
-import typings.nodegit.nodegitNumbers.`64`
-import typings.nodegit.nodegitNumbers.`65535`
-import typings.nodegit.nodegitNumbers.`65536`
-import typings.nodegit.nodegitNumbers.`8192`
-import typings.nodegit.nodegitNumbers.`8388608`
-import typings.nodegit.nodegitNumbers.`8`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1024`
+import typings.nodegit.nodegitInts.`1048576`
+import typings.nodegit.nodegitInts.`128`
+import typings.nodegit.nodegitInts.`131072`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2048`
+import typings.nodegit.nodegitInts.`2097152`
+import typings.nodegit.nodegitInts.`256`
+import typings.nodegit.nodegitInts.`262144`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`32`
+import typings.nodegit.nodegitInts.`4096`
+import typings.nodegit.nodegitInts.`4194304`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`512`
+import typings.nodegit.nodegitInts.`524288`
+import typings.nodegit.nodegitInts.`64`
+import typings.nodegit.nodegitInts.`65535`
+import typings.nodegit.nodegitInts.`65536`
+import typings.nodegit.nodegitInts.`8192`
+import typings.nodegit.nodegitInts.`8388608`
+import typings.nodegit.nodegitInts.`8`
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository
@@ -74,13 +74,13 @@ object checkoutMod {
     inline def tree(repo: Repository, treeish: Tree, options: CheckoutOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("tree")(repo.asInstanceOf[js.Any], treeish.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`65535`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`65535`
     */
     trait NOTIFY extends StObject
     object NOTIFY {
@@ -101,28 +101,28 @@ object checkoutMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`32`
-      - typings.nodegit.nodegitNumbers.`64`
-      - typings.nodegit.nodegitNumbers.`128`
-      - typings.nodegit.nodegitNumbers.`256`
-      - typings.nodegit.nodegitNumbers.`512`
-      - typings.nodegit.nodegitNumbers.`1024`
-      - typings.nodegit.nodegitNumbers.`2048`
-      - typings.nodegit.nodegitNumbers.`4096`
-      - typings.nodegit.nodegitNumbers.`8192`
-      - typings.nodegit.nodegitNumbers.`262144`
-      - typings.nodegit.nodegitNumbers.`524288`
-      - typings.nodegit.nodegitNumbers.`1048576`
-      - typings.nodegit.nodegitNumbers.`2097152`
-      - typings.nodegit.nodegitNumbers.`4194304`
-      - typings.nodegit.nodegitNumbers.`8388608`
-      - typings.nodegit.nodegitNumbers.`65536`
-      - typings.nodegit.nodegitNumbers.`131072`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`32`
+      - typings.nodegit.nodegitInts.`64`
+      - typings.nodegit.nodegitInts.`128`
+      - typings.nodegit.nodegitInts.`256`
+      - typings.nodegit.nodegitInts.`512`
+      - typings.nodegit.nodegitInts.`1024`
+      - typings.nodegit.nodegitInts.`2048`
+      - typings.nodegit.nodegitInts.`4096`
+      - typings.nodegit.nodegitInts.`8192`
+      - typings.nodegit.nodegitInts.`262144`
+      - typings.nodegit.nodegitInts.`524288`
+      - typings.nodegit.nodegitInts.`1048576`
+      - typings.nodegit.nodegitInts.`2097152`
+      - typings.nodegit.nodegitInts.`4194304`
+      - typings.nodegit.nodegitInts.`8388608`
+      - typings.nodegit.nodegitInts.`65536`
+      - typings.nodegit.nodegitInts.`131072`
     */
     trait STRATEGY extends StObject
     object STRATEGY {

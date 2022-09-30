@@ -9,7 +9,7 @@ object signedInfoMod {
   
   @JSImport("xmldsigjs/build/types/xml/signed_info", "SignedInfo")
   @js.native
-  class SignedInfo () extends XmlSignatureObject {
+  open class SignedInfo () extends XmlSignatureObject {
     def this(properties: js.Object) = this()
     
     /**

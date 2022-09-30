@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InterpolationConfig extends StObject {
   
-  var extrapolate: js.UndefOr[Extrapolate] = js.undefined
+  var extrapolate: js.UndefOr[ExtrapolateParameter] = js.undefined
   
   var extrapolateLeft: js.UndefOr[Extrapolate] = js.undefined
   
@@ -25,7 +25,7 @@ object InterpolationConfig {
   
   extension [Self <: InterpolationConfig](x: Self) {
     
-    inline def setExtrapolate(value: Extrapolate): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
+    inline def setExtrapolate(value: ExtrapolateParameter): Self = StObject.set(x, "extrapolate", value.asInstanceOf[js.Any])
     
     inline def setExtrapolateLeft(value: Extrapolate): Self = StObject.set(x, "extrapolateLeft", value.asInstanceOf[js.Any])
     
@@ -39,10 +39,10 @@ object InterpolationConfig {
     
     inline def setInputRange(value: js.Array[Adaptable[Double]]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
     
-    inline def setInputRangeVarargs(value: Adaptable[Double]*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
+    inline def setInputRangeVarargs(value: Adaptable[Double]*): Self = StObject.set(x, "inputRange", js.Array(value*))
     
     inline def setOutputRange(value: js.Array[Adaptable[Double | String]]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
     
-    inline def setOutputRangeVarargs(value: (Adaptable[Double | String])*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
+    inline def setOutputRangeVarargs(value: (Adaptable[Double | String])*): Self = StObject.set(x, "outputRange", js.Array(value*))
   }
 }

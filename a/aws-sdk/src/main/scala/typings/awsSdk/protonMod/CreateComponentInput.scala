@@ -42,7 +42,7 @@ trait CreateComponentInput extends StObject {
   var serviceSpec: js.UndefOr[SpecContents] = js.undefined
   
   /**
-    * An optional list of metadata items that you can associate with the Proton component. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * An optional list of metadata items that you can associate with the Proton component. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   

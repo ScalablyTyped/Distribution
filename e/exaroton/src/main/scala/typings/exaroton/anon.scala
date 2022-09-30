@@ -1,15 +1,15 @@
 package typings.exaroton
 
-import typings.exaroton.exarotonNumbers.`0`
-import typings.exaroton.exarotonNumbers.`10`
-import typings.exaroton.exarotonNumbers.`1`
-import typings.exaroton.exarotonNumbers.`2`
-import typings.exaroton.exarotonNumbers.`3`
-import typings.exaroton.exarotonNumbers.`4`
-import typings.exaroton.exarotonNumbers.`5`
-import typings.exaroton.exarotonNumbers.`6`
-import typings.exaroton.exarotonNumbers.`7`
-import typings.exaroton.exarotonNumbers.`8`
+import typings.exaroton.exarotonInts.`0`
+import typings.exaroton.exarotonInts.`10`
+import typings.exaroton.exarotonInts.`1`
+import typings.exaroton.exarotonInts.`2`
+import typings.exaroton.exarotonInts.`3`
+import typings.exaroton.exarotonInts.`4`
+import typings.exaroton.exarotonInts.`5`
+import typings.exaroton.exarotonInts.`6`
+import typings.exaroton.exarotonInts.`7`
+import typings.exaroton.exarotonInts.`8`
 import typings.exaroton.mod.ConsoleStream
 import typings.exaroton.mod.HeapStream
 import typings.exaroton.mod.StatsStream

@@ -19,6 +19,11 @@ trait PointerInfoPre
   var nearInteractionPickingInfo: Nullable[PickingInfo]
   
   /**
+    * The original picking info that was used to trigger the pointer event
+    */
+  var originalPickingInfo: Nullable[PickingInfo]
+  
+  /**
     * Ray from a pointer if available (eg. 6dof controller)
     */
   var ray: Nullable[Ray]
@@ -31,7 +36,7 @@ trait PointerInfoPre
 object PointerInfoPre {
   
   inline def apply(event: IMouseEvent, localPosition: Vector2, skipOnPointerObservable: Boolean, `type`: Double): PointerInfoPre = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], localPosition = localPosition.asInstanceOf[js.Any], skipOnPointerObservable = skipOnPointerObservable.asInstanceOf[js.Any], nearInteractionPickingInfo = null, ray = null)
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], localPosition = localPosition.asInstanceOf[js.Any], skipOnPointerObservable = skipOnPointerObservable.asInstanceOf[js.Any], nearInteractionPickingInfo = null, originalPickingInfo = null, ray = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerInfoPre]
   }
@@ -43,6 +48,10 @@ object PointerInfoPre {
     inline def setNearInteractionPickingInfo(value: Nullable[PickingInfo]): Self = StObject.set(x, "nearInteractionPickingInfo", value.asInstanceOf[js.Any])
     
     inline def setNearInteractionPickingInfoNull: Self = StObject.set(x, "nearInteractionPickingInfo", null)
+    
+    inline def setOriginalPickingInfo(value: Nullable[PickingInfo]): Self = StObject.set(x, "originalPickingInfo", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalPickingInfoNull: Self = StObject.set(x, "originalPickingInfo", null)
     
     inline def setRay(value: Nullable[Ray]): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
     

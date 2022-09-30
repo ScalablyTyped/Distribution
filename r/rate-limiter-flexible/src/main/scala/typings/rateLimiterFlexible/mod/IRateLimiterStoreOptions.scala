@@ -10,8 +10,18 @@ trait IRateLimiterStoreOptions
   
   var dbName: js.UndefOr[String] = js.undefined
   
+  var inMemoryBlockDuration: js.UndefOr[Double] = js.undefined
+  
+  var inMemoryBlockOnConsumed: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * @deprecated Use camelCased inMemoryBlockOnConsumed option
+    */
   var inmemoryBlockDuration: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @deprecated Use camelCased inMemoryBlockOnConsumed option
+    */
   var inmemoryBlockOnConsumed: js.UndefOr[Double] = js.undefined
   
   var insuranceLimiter: js.UndefOr[RateLimiterAbstract] = js.undefined
@@ -37,13 +47,13 @@ object IRateLimiterStoreOptions {
     
     inline def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
     
-    inline def setInmemoryBlockDuration(value: Double): Self = StObject.set(x, "inmemoryBlockDuration", value.asInstanceOf[js.Any])
+    inline def setInMemoryBlockDuration(value: Double): Self = StObject.set(x, "inMemoryBlockDuration", value.asInstanceOf[js.Any])
     
-    inline def setInmemoryBlockDurationUndefined: Self = StObject.set(x, "inmemoryBlockDuration", js.undefined)
+    inline def setInMemoryBlockDurationUndefined: Self = StObject.set(x, "inMemoryBlockDuration", js.undefined)
     
-    inline def setInmemoryBlockOnConsumed(value: Double): Self = StObject.set(x, "inmemoryBlockOnConsumed", value.asInstanceOf[js.Any])
+    inline def setInMemoryBlockOnConsumed(value: Double): Self = StObject.set(x, "inMemoryBlockOnConsumed", value.asInstanceOf[js.Any])
     
-    inline def setInmemoryBlockOnConsumedUndefined: Self = StObject.set(x, "inmemoryBlockOnConsumed", js.undefined)
+    inline def setInMemoryBlockOnConsumedUndefined: Self = StObject.set(x, "inMemoryBlockOnConsumed", js.undefined)
     
     inline def setInsuranceLimiter(value: RateLimiterAbstract): Self = StObject.set(x, "insuranceLimiter", value.asInstanceOf[js.Any])
     

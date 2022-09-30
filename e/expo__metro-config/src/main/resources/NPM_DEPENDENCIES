@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/metro-config" : "0.3.22"
+      "@expo/metro-config" : "0.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/metro-config" : "0.3.22"
+      "@expo/metro-config" : "0.4.0"
     }
   ],
   "compile-devDependencies" : [

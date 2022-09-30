@@ -54,7 +54,7 @@ object LaunchItems {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

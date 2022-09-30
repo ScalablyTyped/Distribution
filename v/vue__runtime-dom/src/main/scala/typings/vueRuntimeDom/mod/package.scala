@@ -86,9 +86,9 @@ import typings.vueRuntimeCore.mod.RendererNode
 import typings.vueRuntimeCore.mod.RendererOptions
 import typings.vueRuntimeCore.mod.RootHydrateFunction
 import typings.vueRuntimeCore.mod.RootRenderFunction
+import typings.vueRuntimeCore.mod.SSRSlot
 import typings.vueRuntimeCore.mod.SchedulerJobs
 import typings.vueRuntimeCore.mod.SetupContext
-import typings.vueRuntimeCore.mod.Slot
 import typings.vueRuntimeCore.mod.Slots
 import typings.vueRuntimeCore.mod.SuspenseProps
 import typings.vueRuntimeCore.mod.TeleportProps
@@ -370,9 +370,9 @@ inline def createRenderer[HostNode, HostElement](options: RendererOptions[HostNo
 inline def createSSRApp: CreateAppFunction[Element] = ^.asInstanceOf[js.Dynamic].selectDynamic("createSSRApp").asInstanceOf[CreateAppFunction[Element]]
 
 inline def createSlots(
-  slots: Record[String, Slot],
+  slots: Record[String, SSRSlot],
   dynamicSlots: js.Array[js.UndefOr[CompiledSlotDescriptor | js.Array[CompiledSlotDescriptor]]]
-): Record[String, Slot] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlots")(slots.asInstanceOf[js.Any], dynamicSlots.asInstanceOf[js.Any])).asInstanceOf[Record[String, Slot]]
+): Record[String, SSRSlot] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlots")(slots.asInstanceOf[js.Any], dynamicSlots.asInstanceOf[js.Any])).asInstanceOf[Record[String, SSRSlot]]
 
 inline def createStaticVNode(content: String, numberOfNodes: Double): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticVNode")(content.asInstanceOf[js.Any], numberOfNodes.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
 
@@ -1212,7 +1212,7 @@ inline def shallowReadonly[T /* <: js.Object */](target: T): T = ^.asInstanceOf[
 inline def shallowRef[T](): ShallowRef_[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")().asInstanceOf[ShallowRef_[js.UndefOr[T]]]
 inline def shallowRef[T](value: T): ShallowRef_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T]]
 
-inline def shallowRef_T_Object_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T] | T]
+inline def shallowRef_T_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T] | T]
 
 inline def ssrContextKey: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("ssrContextKey").asInstanceOf[js.Symbol]
 
@@ -1291,7 +1291,7 @@ inline def vShow: ObjectDirective[VShowElement, Any] = ^.asInstanceOf[js.Dynamic
 
 inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-inline def warn(msg: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def warn(msg: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
 inline def watchEffect(effect: WatchEffect_): WatchStopHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[WatchStopHandle]
 inline def watchEffect(effect: WatchEffect_, options: WatchOptionsBase): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]

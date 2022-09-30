@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object underscoreMod {
   
-  @JSImport("meteor/underscore", "_")
+  @JSImport("meteor/globals/underscore", "_")
   @js.native
   val _underscore: UnderscoreStatic = js.native
 }

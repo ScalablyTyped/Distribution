@@ -14,9 +14,9 @@ import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.fluentuiTheme.themeMod.PartialTheme
 import typings.fluentuiTheme.themeMod.Theme
 import typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`1`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`2`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.absolute
 import typings.officeUiFabricReact.officeUiFabricReactStrings.border
 import typings.officeUiFabricReact.officeUiFabricReactStrings.borderBottom
@@ -714,7 +714,7 @@ object stylingMod {
   inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: Null, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
   inline def concatStyleSets[TStyleSet1, TStyleSet2](styleSet1: Unit, styleSet2: TStyleSet2): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any], styleSet2.asInstanceOf[js.Any])).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
   
-  inline def concatStyleSetsWithProps[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](styleProps: TStyleProps, allStyles: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): DeepPartial[TStyleSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSetsWithProps")(List(styleProps.asInstanceOf[js.Any]).`++`(allStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[DeepPartial[TStyleSet]]
+  inline def concatStyleSetsWithProps[TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](styleProps: TStyleProps, allStyles: (js.UndefOr[IStyleFunctionOrObject[TStyleProps, TStyleSet]])*): DeepPartial[TStyleSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSetsWithProps")(scala.List(styleProps.asInstanceOf[js.Any]).`++`(allStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[DeepPartial[TStyleSet]]
   
   inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
   inline def concatStyleSets_TStyleSet1TStyleSet2[TStyleSet1, TStyleSet2](styleSet1: TStyleSet1): IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet1.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet1] & ObjectOnly[TStyleSet2]]]
@@ -859,6 +859,8 @@ object stylingMod {
   @JSImport("office-ui-fabric-react/lib/Styling", "hiddenContentStyle")
   @js.native
   val hiddenContentStyle: IRawStyle = js.native
+  
+  inline def initializeThemeInCustomizations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeThemeInCustomizations")().asInstanceOf[Unit]
   
   inline def keyframes(timeline: IKeyframes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(timeline.asInstanceOf[js.Any]).asInstanceOf[String]
   

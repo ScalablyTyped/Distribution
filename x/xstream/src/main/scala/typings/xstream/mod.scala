@@ -1,6 +1,7 @@
 package typings.xstream
 
 import typings.std.Partial
+import typings.std.PromiseLike
 import typings.xstream.anon.Subscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -475,7 +476,7 @@ object mod {
       * @param {Array|PromiseLike|Observable} input The input to make a stream from.
       * @return {Stream}
       */
-    inline def from[T](input: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: PromiseLike[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     inline def from[T](input: Observable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     inline def from[T](input: Stream[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
@@ -521,7 +522,7 @@ object mod {
       * @param {PromiseLike} promise The promise to be converted as a stream.
       * @return {Stream}
       */
-    inline def fromPromise[T](promise: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromPromise[T](promise: PromiseLike[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Blends multiple streams together, emitting events from all of them
@@ -1062,7 +1063,7 @@ object mod {
     
     def filter(passes: js.Function1[/* t */ T, Boolean]): Stream[T] = js.native
     @JSName("filter")
-    def filter_S_T[S /* <: T */](passes: js.Function1[/* t */ T, /* is S */ Boolean]): Stream[S] = js.native
+    def filter_S[S /* <: T */](passes: js.Function1[/* t */ T, /* is S */ Boolean]): Stream[S] = js.native
     
     /**
       * Flattens a "stream of streams", handling only one nested stream at a time
@@ -1844,7 +1845,7 @@ object mod {
       * @param {Array|PromiseLike|Observable} input The input to make a stream from.
       * @return {Stream}
       */
-    inline def from[T](input: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def from[T](input: PromiseLike[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     inline def from[T](input: Observable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     inline def from[T](input: Stream[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(input.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
@@ -1890,7 +1891,7 @@ object mod {
       * @param {PromiseLike} promise The promise to be converted as a stream.
       * @return {Stream}
       */
-    inline def fromPromise[T](promise: js.Thenable[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+    inline def fromPromise[T](promise: PromiseLike[T]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
     
     /**
       * Blends multiple streams together, emitting events from all of them

@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MemberAccess")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MemberAccess")
 @js.native
-class MemberAccess protected ()
+open class MemberAccess protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class MemberAccess protected ()
 }
 object MemberAccess {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MemberAccess")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MemberAccess")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object MemberAccess {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MemberAccess.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MemberAccess.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MemberAccess.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MemberAccess.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

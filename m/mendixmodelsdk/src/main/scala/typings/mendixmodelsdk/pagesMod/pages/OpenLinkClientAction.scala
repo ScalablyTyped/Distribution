@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.3.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenLinkClientAction")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.OpenLinkClientAction")
 @js.native
-class OpenLinkClientAction protected () extends ClientAction {
+open class OpenLinkClientAction protected () extends ClientAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ class OpenLinkClientAction protected () extends ClientAction {
 }
 object OpenLinkClientAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenLinkClientAction")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OpenLinkClientAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -237,13 +237,13 @@ object OpenLinkClientAction {
   inline def createInWidgetValueUnderAction(container: WidgetValue): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenLinkClientAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OpenLinkClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenLinkClientAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OpenLinkClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

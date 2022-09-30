@@ -217,10 +217,6 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
-  var MozColumnGap: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.undefined
-  
   var MozColumnRule: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -693,10 +689,6 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
-  var WebkitColumnGap: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.undefined
-  
   var WebkitColumnRule: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -773,7 +765,15 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
+  var WebkitHyphenateCharacter: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
   var WebkitHyphens: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var WebkitInitialLetter: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -802,6 +802,30 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var WebkitMaskAttachment: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var WebkitMaskBoxImage: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var WebkitMaskBoxImageOutset: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var WebkitMaskBoxImageRepeat: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var WebkitMaskBoxImageSlice: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var WebkitMaskBoxImageSource: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var WebkitMaskBoxImageWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -1017,6 +1041,10 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
+  var accentColor: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
   var alignContent: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -1045,6 +1073,10 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
+  var animationComposition: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
   var animationDelay: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -1070,6 +1102,10 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var animationPlayState: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var animationTimeline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -1501,6 +1537,10 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
+  var colorScheme: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
   var columnCount: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -1546,6 +1586,10 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var content: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var contentVisibility: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -1721,6 +1765,10 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
+  var forcedColorAdjust: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
   var gap: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -1813,6 +1861,10 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
+  var hyphenateCharacter: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
   var hyphens: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -1838,6 +1890,10 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var inlineSize: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var inputSecurity: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -2061,7 +2117,11 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
-  var masonryAutoFlow: js.UndefOr[
+  var mathDepth: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var mathShift: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -2126,10 +2186,6 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var msAccelerator: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.undefined
-  
-  var msAlignSelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -2226,10 +2282,6 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var msImeMode: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.undefined
-  
-  var msJustifySelf: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -2513,6 +2565,10 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
+  var overflowClipMargin: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
   var overflowInline: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -2634,6 +2690,10 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var position: js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+  ] = js.undefined
+  
+  var printColorAdjust: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -2829,10 +2889,6 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
-  var scrollbarTrackColor: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.undefined
-  
   var scrollbarWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -2913,10 +2969,6 @@ trait propertyinkeyofCSSPropert extends StObject {
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
-  var textCombineHorizontal: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.undefined
-  
   var textCombineUpright: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
@@ -2946,10 +2998,6 @@ trait propertyinkeyofCSSPropert extends StObject {
   ] = js.undefined
   
   var textDecorationThickness: js.UndefOr[
-    (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-  ] = js.undefined
-  
-  var textDecorationWidth: js.UndefOr[
     (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
   ] = js.undefined
   
@@ -3126,6 +3174,12 @@ object propertyinkeyofCSSPropert {
   
   extension [Self <: propertyinkeyofCSSPropert](x: Self) {
     
+    inline def setAccentColor(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+    
+    inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+    
     inline def setAlignContent(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
@@ -3165,6 +3219,12 @@ object propertyinkeyofCSSPropert {
     inline def setAnimation(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationComposition(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
     
     inline def setAnimationDelay(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -3207,6 +3267,12 @@ object propertyinkeyofCSSPropert {
     ): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
     
     inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+    
+    inline def setAnimationTimeline(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "animationTimeline", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationTimelineUndefined: Self = StObject.set(x, "animationTimeline", js.undefined)
     
     inline def setAnimationTimingFunction(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -3850,6 +3916,12 @@ object propertyinkeyofCSSPropert {
     
     inline def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
     
+    inline def setColorScheme(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setColumnCount(
@@ -3923,6 +3995,12 @@ object propertyinkeyofCSSPropert {
     ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setContentVisibility(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
     
     inline def setCounterIncrement(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -4182,6 +4260,12 @@ object propertyinkeyofCSSPropert {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
+    inline def setForcedColorAdjust(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "forcedColorAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setForcedColorAdjustUndefined: Self = StObject.set(x, "forcedColorAdjust", js.undefined)
+    
     inline def setGap(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
@@ -4320,6 +4404,12 @@ object propertyinkeyofCSSPropert {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
+    inline def setHyphenateCharacter(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+    
     inline def setHyphens(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
@@ -4361,6 +4451,12 @@ object propertyinkeyofCSSPropert {
     ): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
     
     inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
+    
+    inline def setInputSecurity(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "inputSecurity", value.asInstanceOf[js.Any])
+    
+    inline def setInputSecurityUndefined: Self = StObject.set(x, "inputSecurity", js.undefined)
     
     inline def setInset(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -4758,11 +4854,17 @@ object propertyinkeyofCSSPropert {
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    inline def setMasonryAutoFlow(
+    inline def setMathDepth(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "masonryAutoFlow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mathDepth", value.asInstanceOf[js.Any])
     
-    inline def setMasonryAutoFlowUndefined: Self = StObject.set(x, "masonryAutoFlow", js.undefined)
+    inline def setMathDepthUndefined: Self = StObject.set(x, "mathDepth", js.undefined)
+    
+    inline def setMathShift(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "mathShift", value.asInstanceOf[js.Any])
+    
+    inline def setMathShiftUndefined: Self = StObject.set(x, "mathShift", js.undefined)
     
     inline def setMathStyle(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -5100,12 +5202,6 @@ object propertyinkeyofCSSPropert {
     
     inline def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
     
-    inline def setMozColumnGap(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "MozColumnGap", value.asInstanceOf[js.Any])
-    
-    inline def setMozColumnGapUndefined: Self = StObject.set(x, "MozColumnGap", js.undefined)
-    
     inline def setMozColumnRule(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "MozColumnRule", value.asInstanceOf[js.Any])
@@ -5424,12 +5520,6 @@ object propertyinkeyofCSSPropert {
     
     inline def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
     
-    inline def setMsAlignSelf(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "msAlignSelf", value.asInstanceOf[js.Any])
-    
-    inline def setMsAlignSelfUndefined: Self = StObject.set(x, "msAlignSelf", js.undefined)
-    
     inline def setMsBlockProgression(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
@@ -5573,12 +5663,6 @@ object propertyinkeyofCSSPropert {
     ): Self = StObject.set(x, "msImeMode", value.asInstanceOf[js.Any])
     
     inline def setMsImeModeUndefined: Self = StObject.set(x, "msImeMode", js.undefined)
-    
-    inline def setMsJustifySelf(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "msJustifySelf", value.asInstanceOf[js.Any])
-    
-    inline def setMsJustifySelfUndefined: Self = StObject.set(x, "msJustifySelf", js.undefined)
     
     inline def setMsLineBreak(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -6130,6 +6214,12 @@ object propertyinkeyofCSSPropert {
     
     inline def setOverflowClipBoxUndefined: Self = StObject.set(x, "overflowClipBox", js.undefined)
     
+    inline def setOverflowClipMargin(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "overflowClipMargin", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowClipMarginUndefined: Self = StObject.set(x, "overflowClipMargin", js.undefined)
+    
     inline def setOverflowInline(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
@@ -6317,6 +6407,12 @@ object propertyinkeyofCSSPropert {
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setPrintColorAdjust(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "printColorAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setPrintColorAdjustUndefined: Self = StObject.set(x, "printColorAdjust", js.undefined)
     
     inline def setQuotes(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -6606,12 +6702,6 @@ object propertyinkeyofCSSPropert {
     
     inline def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
     
-    inline def setScrollbarTrackColor(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "scrollbarTrackColor", value.asInstanceOf[js.Any])
-    
-    inline def setScrollbarTrackColorUndefined: Self = StObject.set(x, "scrollbarTrackColor", js.undefined)
-    
     inline def setScrollbarWidth(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
@@ -6732,12 +6822,6 @@ object propertyinkeyofCSSPropert {
     
     inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
-    inline def setTextCombineHorizontal(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "textCombineHorizontal", value.asInstanceOf[js.Any])
-    
-    inline def setTextCombineHorizontalUndefined: Self = StObject.set(x, "textCombineHorizontal", js.undefined)
-    
     inline def setTextCombineUpright(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
@@ -6785,12 +6869,6 @@ object propertyinkeyofCSSPropert {
     inline def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
     
     inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
-    
-    inline def setTextDecorationWidth(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "textDecorationWidth", value.asInstanceOf[js.Any])
-    
-    inline def setTextDecorationWidthUndefined: Self = StObject.set(x, "textDecorationWidth", js.undefined)
     
     inline def setTextEmphasis(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -7242,12 +7320,6 @@ object propertyinkeyofCSSPropert {
     
     inline def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
     
-    inline def setWebkitColumnGap(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
-    ): Self = StObject.set(x, "WebkitColumnGap", value.asInstanceOf[js.Any])
-    
-    inline def setWebkitColumnGapUndefined: Self = StObject.set(x, "WebkitColumnGap", js.undefined)
-    
     inline def setWebkitColumnRule(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "WebkitColumnRule", value.asInstanceOf[js.Any])
@@ -7362,11 +7434,23 @@ object propertyinkeyofCSSPropert {
     
     inline def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
     
+    inline def setWebkitHyphenateCharacter(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitHyphenateCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitHyphenateCharacterUndefined: Self = StObject.set(x, "WebkitHyphenateCharacter", js.undefined)
+    
     inline def setWebkitHyphens(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
     ): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
     
     inline def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
+    
+    inline def setWebkitInitialLetter(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitInitialLetter", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitInitialLetterUndefined: Self = StObject.set(x, "WebkitInitialLetter", js.undefined)
     
     inline def setWebkitJustifyContent(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
@@ -7407,6 +7491,42 @@ object propertyinkeyofCSSPropert {
     ): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
     
     inline def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
+    
+    inline def setWebkitMaskBoxImage(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitMaskBoxImage", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageOutset(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitMaskBoxImageOutset", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageOutsetUndefined: Self = StObject.set(x, "WebkitMaskBoxImageOutset", js.undefined)
+    
+    inline def setWebkitMaskBoxImageRepeat(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitMaskBoxImageRepeat", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageRepeatUndefined: Self = StObject.set(x, "WebkitMaskBoxImageRepeat", js.undefined)
+    
+    inline def setWebkitMaskBoxImageSlice(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitMaskBoxImageSlice", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageSliceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSlice", js.undefined)
+    
+    inline def setWebkitMaskBoxImageSource(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitMaskBoxImageSource", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageSourceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSource", js.undefined)
+    
+    inline def setWebkitMaskBoxImageUndefined: Self = StObject.set(x, "WebkitMaskBoxImage", js.undefined)
+    
+    inline def setWebkitMaskBoxImageWidth(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]
+    ): Self = StObject.set(x, "WebkitMaskBoxImageWidth", value.asInstanceOf[js.Any])
+    
+    inline def setWebkitMaskBoxImageWidthUndefined: Self = StObject.set(x, "WebkitMaskBoxImageWidth", js.undefined)
     
     inline def setWebkitMaskClip(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]

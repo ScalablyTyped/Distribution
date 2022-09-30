@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.bluebird.mod.Resolvable
 import typings.lodash.mod.Collection
 import typings.lodash.mod.Function
-import typings.lodash.mod.List
 import typings.lodash.mod.Object
 import typings.lodash.mod.Primitive
 import typings.lodash.mod.String
@@ -35,21 +34,19 @@ trait Utils extends StObject {
   @JSName("_")
   def _underscore(value: java.lang.String): String = js.native
   @JSName("_")
-  def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
+  def _underscore[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
   @JSName("_")
-  def _underscore[T](value: List[T]): Collection[T] = js.native
+  def _underscore[T](value: typings.lodash.mod.List[T]): Collection[T] = js.native
   @JSName("_")
   var _underscore_Original: SequelizeLoDash = js.native
   @JSName("_")
   def _underscore_T_Collection[T](): Collection[T] = js.native
   @JSName("_")
-  def _underscore_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+  def _underscore_T_Object[T /* <: js.Object */](): Object[T] = js.native
   @JSName("_")
-  def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  def _underscore_T_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   @JSName("_")
-  def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
-  @JSName("_")
-  def `_underscore_T_UnionNull<undefined>_Primitive`[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
+  def _underscore_T_Primitive[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -119,7 +116,7 @@ trait Utils extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("_")
-  def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
+  def _underscore_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
   
   def addTicks(s: java.lang.String): java.lang.String = js.native
   def addTicks(s: java.lang.String, tickChar: java.lang.String): java.lang.String = js.native

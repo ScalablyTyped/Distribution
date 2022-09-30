@@ -14,7 +14,7 @@ object mod {
     
     @JSImport("leaflet", "Control.MousePosition")
     @js.native
-    class MousePosition ()
+    open class MousePosition ()
       extends typings.leaflet.mod.Control_ {
       def this(options: MousePositionControlOptions) = this()
       

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-dec-router"
-version := "0.0-dt-20211202Z-f4b03c"
+version := "0.0-dt-20211202Z-cb48c4"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

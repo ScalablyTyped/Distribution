@@ -10,5 +10,5 @@ object cacheGettersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cacheGetters[T](target: T, props: (/* keyof T */ String)*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheGetters")(List(target.asInstanceOf[js.Any]).`++`(props.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def cacheGetters[T](target: T, props: (/* keyof T */ String)*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheGetters")(scala.List(target.asInstanceOf[js.Any]).`++`(props.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
 }

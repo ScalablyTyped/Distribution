@@ -1,7 +1,7 @@
 
 # Scala.js typings for create-banner
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Create a banner from a package.json file.
@@ -10,10 +10,10 @@ Create a banner from a package.json file.
 | ------------------ | :-------------: |
 | Full name          | create-banner |
 | Keywords           | create, banner, banner-generator, package, package.json |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 11876 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1912.3333333333333 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/fengyuanchen/create-banner/#readme)
@@ -24,7 +24,7 @@ Create a banner from a package.json file.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -10,8 +10,6 @@ trait TooltipOptions
   
   var direction: js.UndefOr[Direction] = js.undefined
   
-  var interactive: js.UndefOr[Boolean] = js.undefined
-  
   var opacity: js.UndefOr[Double] = js.undefined
   
   var permanent: js.UndefOr[Boolean] = js.undefined
@@ -30,10 +28,6 @@ object TooltipOptions {
     inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
-    
-    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
-    
-    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

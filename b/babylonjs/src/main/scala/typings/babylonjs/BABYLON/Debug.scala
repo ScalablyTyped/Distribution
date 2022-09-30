@@ -120,24 +120,24 @@ object Debug {
     
     /* private */ var _getDebugSphereMesh: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _impostors: js.Array[Nullable[PhysicsImpostor]] = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _meshes: js.Array[Nullable[AbstractMesh]] = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _numMeshes: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _physicsEnginePlugin: Nullable[IPhysicsEnginePlugin] = js.native
     
     /* private */ var _renderFunction: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _scene: Nullable[Scene] = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ def _updateDebugMeshes(): Unit = js.native
     
     /* private */ var _utilityLayer: Any = js.native

@@ -11,14 +11,11 @@ Factory functions for reducing action creator boilerplate
 | Full name          | redux-action-utils |
 | Keywords           | redux, action, creators |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 6943 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 219.0 |
+| # stars            | 48.0 |
 
 ## Links
-- [Homepage](https://github.com/insin/redux-action-utils#readme)
-- [Bugs](https://github.com/insin/redux-action-utils/issues)
-- [Repository](https://github.com/insin/redux-action-utils)
 - [Npm](https://www.npmjs.com/package/redux-action-utils)
     
 

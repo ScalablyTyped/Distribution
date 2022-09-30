@@ -874,7 +874,7 @@ object mod {
     var fs: Null | TypeofFS
     
     /* Read method */
-    var method: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ Any
+    var method: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ Any
     
     /* If true it disables files sorting */
     var noSort: Boolean
@@ -885,7 +885,7 @@ object mod {
   object InitOptions {
     
     inline def apply(
-      method: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ Any,
+      method: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ Any,
       noSort: Boolean,
       readEntries: Boolean
     ): InitOptions = {
@@ -899,7 +899,7 @@ object mod {
       
       inline def setFsNull: Self = StObject.set(x, "fs", null)
       
-      inline def setMethod(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ Any): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 60 */ Any): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setNoSort(value: Boolean): Self = StObject.set(x, "noSort", value.asInstanceOf[js.Any])
       

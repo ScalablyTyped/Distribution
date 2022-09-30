@@ -3,9 +3,9 @@ package typings.nodegit
 import typings.nodegit.annotatedCommitMod.AnnotatedCommit
 import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.commitMod.Commit
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.strArrayMod.Strarray
 import typings.nodegit.tagMod.Tag
@@ -49,9 +49,9 @@ object resetMod {
     inline def reset(repo: Repository, target: Tag, resetType: Double, checkoutOpts: CheckoutOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
     */
     trait TYPE extends StObject
     object TYPE {

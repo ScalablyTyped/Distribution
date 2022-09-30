@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.0.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowCallParameterMapping")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NanoflowCallParameterMapping")
 @js.native
-class NanoflowCallParameterMapping protected () extends Element[IModel] {
+open class NanoflowCallParameterMapping protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,6 +37,8 @@ class NanoflowCallParameterMapping protected () extends Element[IModel] {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * @ignore
+    *
+    * In version 9.8.0: deleted
     */
   def argumentModel: Expression = js.native
   def argumentModel_=(newValue: Expression): Unit = js.native
@@ -53,7 +55,7 @@ class NanoflowCallParameterMapping protected () extends Element[IModel] {
 }
 object NanoflowCallParameterMapping {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowCallParameterMapping")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NanoflowCallParameterMapping")
   @js.native
   val ^ : js.Any = js.native
   
@@ -77,13 +79,13 @@ object NanoflowCallParameterMapping {
   inline def createIn(container: NanoflowCall): NanoflowCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NanoflowCallParameterMapping]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowCallParameterMapping.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NanoflowCallParameterMapping.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NanoflowCallParameterMapping.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.NanoflowCallParameterMapping.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

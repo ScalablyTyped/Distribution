@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ValidationErrorCls protected ()
   extends StObject
      with ValidationError {
-  def this(message: String, details: Any, original: Any) = this()
+  def this(message: String, details: js.Array[ValidationErrorItem], original: Any) = this()
   
   /* standard es5 */
   /* CompleteClass */

@@ -1,30 +1,30 @@
 package typings.infernoVnodeFlags
 
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`-16385`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`0`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`1024`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`128`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`12`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`14`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`1521`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`16384`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`16`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`1`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`2048`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`256`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`2`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`32768`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`32776`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`32`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`4096`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`448`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`481`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`4`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`64`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`65536`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`81920`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`8192`
-import typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`8`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`-16385`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`0`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1024`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`128`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`12`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`14`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1521`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`16384`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`16`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`2048`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`256`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`2`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`32768`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`32776`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`32`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`4096`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`448`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`481`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`4`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`64`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`65536`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`81920`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`8192`
+import typings.infernoVnodeFlags.infernoVnodeFlagsInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,13 +32,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`0`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`1`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`2`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`4`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`8`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`16`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`12`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`0`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`2`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`4`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`8`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`16`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`12`
   */
   trait ChildFlags extends StObject
   object ChildFlags {
@@ -59,30 +59,30 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`1`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`2`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`4`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`8`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`16`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`32`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`64`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`128`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`256`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`1024`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`2048`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`4096`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`8192`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`16384`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`32768`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`65536`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`32776`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`448`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`481`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`14`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`1521`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`81920`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`-16385`
-    - typings.infernoVnodeFlags.infernoVnodeFlagsNumbers.`12`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`2`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`4`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`8`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`16`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`32`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`64`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`128`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`256`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1024`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`2048`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`4096`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`8192`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`16384`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`32768`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`65536`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`32776`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`448`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`481`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`14`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1521`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`81920`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`-16385`
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`12`
   */
   trait VNodeFlags extends StObject
   object VNodeFlags {

@@ -17,6 +17,7 @@ import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
 import typings.mendixmodelsdk.microflowsMod.microflows.CustomRange
 import typings.mendixmodelsdk.microflowsMod.microflows.DocumentTemplateParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.EndEvent
+import typings.mendixmodelsdk.microflowsMod.microflows.ExpressionListOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.ExpressionSplitCondition
 import typings.mendixmodelsdk.microflowsMod.microflows.FormDataPart
 import typings.mendixmodelsdk.microflowsMod.microflows.GenerateDocumentAction
@@ -46,11 +47,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.FunctionCallExpression")
+@JSImport("mendixmodelsdk/src/gen/expressions", "expressions.FunctionCallExpression")
 @js.native
-class FunctionCallExpression protected () extends Expression {
+open class FunctionCallExpression protected () extends Expression {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -72,7 +74,7 @@ class FunctionCallExpression protected () extends Expression {
 }
 object FunctionCallExpression {
   
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.FunctionCallExpression")
+  @JSImport("mendixmodelsdk/src/gen/expressions", "expressions.FunctionCallExpression")
   @js.native
   val ^ : js.Any = js.native
   
@@ -90,7 +92,7 @@ object FunctionCallExpression {
     * of the parent microflows.AppServiceCallParameterMapping element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.0.1
     */
   /* static member */
   inline def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -101,7 +103,7 @@ object FunctionCallExpression {
     * of the parent microflows.BasicCodeActionParameterValue element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.21.0 and higher
+    *  7.21.0 to 9.7.0
     */
   /* static member */
   inline def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicCodeActionParameterValueUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -123,7 +125,7 @@ object FunctionCallExpression {
     * of the parent BinaryExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInBinaryExpressionUnderLeft(container: BinaryExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderLeft")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -134,7 +136,7 @@ object FunctionCallExpression {
     * of the parent BinaryExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInBinaryExpressionUnderRight(container: BinaryExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryExpressionUnderRight")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -145,7 +147,7 @@ object FunctionCallExpression {
     * of the parent microflows.BinaryRequestHandling element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBinaryRequestHandlingUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -156,7 +158,7 @@ object FunctionCallExpression {
     * of the parent microflows.ChangeListAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInChangeListActionUnderValueModel(container: ChangeListAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeListActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -167,7 +169,7 @@ object FunctionCallExpression {
     * of the parent microflows.ChangeVariableAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInChangeVariableActionUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -178,7 +180,7 @@ object FunctionCallExpression {
     * of the parent pages.ConditionalSettings element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -189,7 +191,7 @@ object FunctionCallExpression {
     * of the parent rest.ConsumedODataService element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.5.0 and higher
+    *  8.5.0 to 9.7.0
     */
   /* static member */
   inline def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderTimeoutModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -200,7 +202,7 @@ object FunctionCallExpression {
     * of the parent microflows.CreateVariableAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderInitialValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -211,7 +213,7 @@ object FunctionCallExpression {
     * of the parent microflows.CustomRange element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderLimitExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -222,7 +224,7 @@ object FunctionCallExpression {
     * of the parent microflows.CustomRange element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomRangeUnderOffsetExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -233,7 +235,7 @@ object FunctionCallExpression {
     * of the parent microflows.DocumentTemplateParameterMapping element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -244,7 +246,7 @@ object FunctionCallExpression {
     * of the parent microflows.EndEvent element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInEndEventUnderReturnValueModel(container: EndEvent): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEndEventUnderReturnValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -252,10 +254,21 @@ object FunctionCallExpression {
   /**
     * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
     * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
+    * of the parent microflows.ExpressionListOperation element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.0.3 to 9.7.0
+    */
+  /* static member */
+  inline def createInExpressionListOperationUnderExpressionModel(container: ExpressionListOperation): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionListOperationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
+  
+  /**
+    * Creates and returns a new FunctionCallExpression instance in the SDK and on the server.
+    * The new FunctionCallExpression will be automatically stored in the 'expressionModel' property
     * of the parent microflows.ExpressionSplitCondition element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInExpressionSplitConditionUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -266,7 +279,7 @@ object FunctionCallExpression {
     * of the parent microflows.FormDataPart element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.0.0 and higher
+    *  8.0.0 to 9.7.0
     */
   /* static member */
   inline def createInFormDataPartUnderValueModel(container: FormDataPart): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -277,7 +290,7 @@ object FunctionCallExpression {
     * of the parent FunctionCallExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFunctionCallExpressionUnderArguments")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -288,7 +301,7 @@ object FunctionCallExpression {
     * of the parent microflows.GenerateDocumentAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginBottomInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -299,7 +312,7 @@ object FunctionCallExpression {
     * of the parent microflows.GenerateDocumentAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginLeftInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -310,7 +323,7 @@ object FunctionCallExpression {
     * of the parent microflows.GenerateDocumentAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginRightInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -321,7 +334,7 @@ object FunctionCallExpression {
     * of the parent microflows.GenerateDocumentAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGenerateDocumentActionUnderMarginTopInInchModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -332,7 +345,7 @@ object FunctionCallExpression {
     * of the parent microflows.HttpConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderCustomLocationModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -343,7 +356,7 @@ object FunctionCallExpression {
     * of the parent microflows.HttpConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInHttpConfigurationUnderPassword(container: HttpConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderPassword")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -354,7 +367,7 @@ object FunctionCallExpression {
     * of the parent microflows.HttpConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInHttpConfigurationUnderUsername(container: HttpConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderUsername")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -365,7 +378,7 @@ object FunctionCallExpression {
     * of the parent microflows.HttpHeaderEntry element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpHeaderEntryUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -376,7 +389,7 @@ object FunctionCallExpression {
     * of the parent IfExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInIfExpressionUnderCondition(container: IfExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderCondition")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -387,7 +400,7 @@ object FunctionCallExpression {
     * of the parent IfExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInIfExpressionUnderIfFalse(container: IfExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfFalse")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -398,7 +411,7 @@ object FunctionCallExpression {
     * of the parent IfExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInIfExpressionUnderIfTrue(container: IfExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInIfExpressionUnderIfTrue")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -409,7 +422,7 @@ object FunctionCallExpression {
     * of the parent microflows.InspectAttribute element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInspectAttributeUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -420,7 +433,7 @@ object FunctionCallExpression {
     * of the parent microflows.LogMessageAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInLogMessageActionUnderNodeModel(container: LogMessageAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLogMessageActionUnderNodeModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -431,7 +444,7 @@ object FunctionCallExpression {
     * of the parent microflows.MemberChange element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInMemberChangeUnderValueModel(container: MemberChange): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberChangeUnderValueModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -442,7 +455,7 @@ object FunctionCallExpression {
     * of the parent microflows.MicroflowCallParameterMapping element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -453,7 +466,7 @@ object FunctionCallExpression {
     * of the parent microflows.NanoflowCallParameterMapping element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.0.0 and higher
+    *  8.0.0 to 9.7.0
     */
   /* static member */
   inline def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -464,7 +477,7 @@ object FunctionCallExpression {
     * of the parent ParenthesisExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInParenthesisExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -475,7 +488,7 @@ object FunctionCallExpression {
     * of the parent microflows.ProxyConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.15.0 and higher
+    *  7.15.0 to 9.7.0
     */
   /* static member */
   inline def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderHostExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -486,7 +499,7 @@ object FunctionCallExpression {
     * of the parent microflows.ProxyConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.15.0 and higher
+    *  7.15.0 to 9.7.0
     */
   /* static member */
   inline def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPasswordExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -497,7 +510,7 @@ object FunctionCallExpression {
     * of the parent microflows.ProxyConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.15.0 and higher
+    *  7.15.0 to 9.7.0
     */
   /* static member */
   inline def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderPortExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -508,7 +521,7 @@ object FunctionCallExpression {
     * of the parent microflows.ProxyConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.15.0 and higher
+    *  7.15.0 to 9.7.0
     */
   /* static member */
   inline def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUseConfigurationExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -519,7 +532,7 @@ object FunctionCallExpression {
     * of the parent microflows.ProxyConfiguration element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.15.0 and higher
+    *  7.15.0 to 9.7.0
     */
   /* static member */
   inline def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInProxyConfigurationUnderUsernameExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -530,7 +543,7 @@ object FunctionCallExpression {
     * of the parent microflows.RestCallAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.15.0 and higher
+    *  7.15.0 to 9.7.0
     */
   /* static member */
   inline def createInRestCallActionUnderTimeOutModel(container: RestCallAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -541,7 +554,7 @@ object FunctionCallExpression {
     * of the parent microflows.RuleCallParameterMapping element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRuleCallParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -552,7 +565,7 @@ object FunctionCallExpression {
     * of the parent microflows.TemplateArgument element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateArgumentUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -563,7 +576,7 @@ object FunctionCallExpression {
     * of the parent UnaryExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInUnaryExpressionUnderExpression(container: UnaryExpression): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUnaryExpressionUnderExpression")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -574,7 +587,7 @@ object FunctionCallExpression {
     * of the parent microflows.WebServiceCallAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.15.0 and higher
+    *  7.15.0 to 9.7.0
     */
   /* static member */
   inline def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderTimeOutModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -585,7 +598,7 @@ object FunctionCallExpression {
     * of the parent microflows.WebServiceOperationParameterMapping element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceOperationParameterMappingUnderArgumentModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
@@ -596,19 +609,19 @@ object FunctionCallExpression {
     * of the parent pages.WidgetValidation element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): FunctionCallExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValidationUnderExpressionModel")(container.asInstanceOf[js.Any]).asInstanceOf[FunctionCallExpression]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.FunctionCallExpression.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/expressions", "expressions.FunctionCallExpression.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.FunctionCallExpression.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/expressions", "expressions.FunctionCallExpression.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

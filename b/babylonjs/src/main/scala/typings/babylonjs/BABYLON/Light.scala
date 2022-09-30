@@ -33,7 +33,7 @@ trait Light
   /* private */ var _excludedMeshes: Any = js.native
   
   /**
-    * @hidden Internal use only.
+    * @internal Internal use only.
     */
   var _excludedMeshesIds: js.Array[String] = js.native
   
@@ -51,7 +51,7 @@ trait Light
   /* private */ var _includedOnlyMeshes: Any = js.native
   
   /**
-    * @hidden Internal use only.
+    * @internal Internal use only.
     */
   var _includedOnlyMeshesIds: js.Array[String] = js.native
   
@@ -59,7 +59,7 @@ trait Light
   
   /* protected */ var _inverseSquaredRange: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   val _isLight: /* true */ Boolean = js.native
   
   /* private */ var _lastUseSpecular: Any = js.native
@@ -68,7 +68,7 @@ trait Light
   
   /**
     * Forces the meshes to update their light related information in their rendering used effects
-    * @hidden Internal Use Only
+    * @internal Internal Use Only
     */
   def _markMeshesAsLightDirty(): Unit = js.native
   
@@ -82,14 +82,14 @@ trait Light
   
   /* private */ var _range: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _renderId: Double = js.native
   
   /* private */ var _renderPriority: Any = js.native
   
   /**
     * Reorder the light in the scene according to their defined priority.
-    * @hidden Internal Use Only
+    * @internal Internal Use Only
     */
   def _reorderLightsInScene(): Unit = js.native
   
@@ -99,13 +99,13 @@ trait Light
   
   /**
     * Shadow generator associated to the light.
-    * @hidden Internal use only.
+    * @internal Internal use only.
     */
   var _shadowGenerator: Nullable[IShadowGenerator] = js.native
   
   /**
     * The current light uniform buffer.
-    * @hidden Internal use only.
+    * @internal Internal use only.
     */
   var _uniformBuffer: UniformBuffer = js.native
   

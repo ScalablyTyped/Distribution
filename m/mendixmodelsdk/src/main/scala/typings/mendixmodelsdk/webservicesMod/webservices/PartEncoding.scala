@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PartEncoding")
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PartEncoding")
 @js.native
-class PartEncoding protected () extends Element[IModel] {
+open class PartEncoding protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,7 @@ class PartEncoding protected () extends Element[IModel] {
 }
 object PartEncoding {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PartEncoding")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PartEncoding")
   @js.native
   val ^ : js.Any = js.native
   
@@ -63,13 +63,13 @@ object PartEncoding {
   inline def createInOperationInfoUnderRequestHeaderPartEncoding(container: OperationInfo): PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestHeaderPartEncoding")(container.asInstanceOf[js.Any]).asInstanceOf[PartEncoding]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PartEncoding.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PartEncoding.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PartEncoding.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PartEncoding.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

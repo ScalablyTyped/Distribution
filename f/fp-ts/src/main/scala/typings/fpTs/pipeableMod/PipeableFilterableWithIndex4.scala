@@ -24,7 +24,7 @@ trait PipeableFilterableWithIndex4[F /* <: /* import warning: transforms.Qualify
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
   ] = js.native
   @JSName("filterWithIndex")
-  def filterWithIndex_AB_A[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
+  def filterWithIndex_AB[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fa */ Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, B> */ Any
   ] = js.native
@@ -45,7 +45,7 @@ trait PipeableFilterableWithIndex4[F /* <: /* import warning: transforms.Qualify
     ]
   ] = js.native
   @JSName("partitionWithIndex")
-  def partitionWithIndex_AB_A[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
+  def partitionWithIndex_AB[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ /* fa */ Any, 
     Separated[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, 

@@ -249,11 +249,9 @@ object mod {
       
       def zonesForCountry(country: String): js.Array[MomentZoneOffset | String] = js.native
       def zonesForCountry(country: String, with_offset: Boolean): js.Array[MomentZoneOffset | String] = js.native
-      def zonesForCountry[T /* <: `false` */](country: String, with_offset: T): js.Array[String] = js.native
+      def zonesForCountry[T /* <: `true` */](country: String, with_offset: T): js.Array[MomentZoneOffset] = js.native
       @JSName("zonesForCountry")
-      def zonesForCountry_T_false[T /* <: `false` */](country: String): js.Array[String] = js.native
-      @JSName("zonesForCountry")
-      def zonesForCountry_T_true[T /* <: `true` */](country: String, with_offset: T): js.Array[MomentZoneOffset] = js.native
+      def zonesForCountry_T[T /* <: `false` */](country: String): js.Array[String] = js.native
     }
     
     trait MomentZone extends StObject {

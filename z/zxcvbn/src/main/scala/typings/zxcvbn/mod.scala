@@ -97,25 +97,6 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.zxcvbn.zxcvbnStrings.`Straight rows of keys are easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`Short keyboard patterns are easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`Use a longer keyboard pattern with more turns`
-    - typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`
-    - typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`Recent years are easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`Dates are often easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`This is a top-10 common password`
-    - typings.zxcvbn.zxcvbnStrings.`This is a top-100 common password`
-    - typings.zxcvbn.zxcvbnStrings.`This is a very common password`
-    - typings.zxcvbn.zxcvbnStrings.`This is similar to a commonly used password`
-    - typings.zxcvbn.zxcvbnStrings.`A word by itself is easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`Names and surnames by themselves are easy to guess`
-    - typings.zxcvbn.zxcvbnStrings.`Common names and surnames are easy to guess`
-    - typings.zxcvbn.zxcvbnStrings._empty
-  */
-  trait ZXCVBNFeedbackWarning extends StObject
   object ZXCVBNFeedbackWarning {
     
     inline def `A word by itself is easy to guess`: typings.zxcvbn.zxcvbnStrings.`A word by itself is easy to guess` = ("A word by itself is easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`A word by itself is easy to guess`]
@@ -130,7 +111,7 @@ object mod {
     
     inline def `Repeats like QuotationmarkaaaQuotationmark are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess` = ("Repeats like \"aaa\" are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess`]
     
-    inline def `Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`: typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark` = ("Repeats like \"abcabcabc\" are only slightly harder to guess than \"abc\"").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`]
+    inline def `Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`: String = String.asInstanceOf[String]
     
     inline def `Sequences like abc or 6543 are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess` = ("Sequences like abc or 6543 are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess`]
     
@@ -150,6 +131,25 @@ object mod {
     
     inline def _empty: typings.zxcvbn.zxcvbnStrings._empty = "".asInstanceOf[typings.zxcvbn.zxcvbnStrings._empty]
   }
+  /* Rewritten from type alias, can be one of: 
+    - typings.zxcvbn.zxcvbnStrings.`Straight rows of keys are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Short keyboard patterns are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Use a longer keyboard pattern with more turns`
+    - typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess`
+    - java.lang.String
+    - typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Recent years are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Dates are often easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`This is a top-10 common password`
+    - typings.zxcvbn.zxcvbnStrings.`This is a top-100 common password`
+    - typings.zxcvbn.zxcvbnStrings.`This is a very common password`
+    - typings.zxcvbn.zxcvbnStrings.`This is similar to a commonly used password`
+    - typings.zxcvbn.zxcvbnStrings.`A word by itself is easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Names and surnames by themselves are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Common names and surnames are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings._empty
+  */
+  type ZXCVBNFeedbackWarning = _ZXCVBNFeedbackWarning | String
   
   trait ZXCVBNResult extends StObject {
     
@@ -242,24 +242,24 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.zxcvbn.zxcvbnNumbers.`0`
-    - typings.zxcvbn.zxcvbnNumbers.`1`
-    - typings.zxcvbn.zxcvbnNumbers.`2`
-    - typings.zxcvbn.zxcvbnNumbers.`3`
-    - typings.zxcvbn.zxcvbnNumbers.`4`
+    - typings.zxcvbn.zxcvbnInts.`0`
+    - typings.zxcvbn.zxcvbnInts.`1`
+    - typings.zxcvbn.zxcvbnInts.`2`
+    - typings.zxcvbn.zxcvbnInts.`3`
+    - typings.zxcvbn.zxcvbnInts.`4`
   */
   trait ZXCVBNScore extends StObject
   object ZXCVBNScore {
     
-    inline def `0`: typings.zxcvbn.zxcvbnNumbers.`0` = 0.asInstanceOf[typings.zxcvbn.zxcvbnNumbers.`0`]
+    inline def `0`: typings.zxcvbn.zxcvbnInts.`0` = 0.asInstanceOf[typings.zxcvbn.zxcvbnInts.`0`]
     
-    inline def `1`: typings.zxcvbn.zxcvbnNumbers.`1` = 1.asInstanceOf[typings.zxcvbn.zxcvbnNumbers.`1`]
+    inline def `1`: typings.zxcvbn.zxcvbnInts.`1` = 1.asInstanceOf[typings.zxcvbn.zxcvbnInts.`1`]
     
-    inline def `2`: typings.zxcvbn.zxcvbnNumbers.`2` = 2.asInstanceOf[typings.zxcvbn.zxcvbnNumbers.`2`]
+    inline def `2`: typings.zxcvbn.zxcvbnInts.`2` = 2.asInstanceOf[typings.zxcvbn.zxcvbnInts.`2`]
     
-    inline def `3`: typings.zxcvbn.zxcvbnNumbers.`3` = 3.asInstanceOf[typings.zxcvbn.zxcvbnNumbers.`3`]
+    inline def `3`: typings.zxcvbn.zxcvbnInts.`3` = 3.asInstanceOf[typings.zxcvbn.zxcvbnInts.`3`]
     
-    inline def `4`: typings.zxcvbn.zxcvbnNumbers.`4` = 4.asInstanceOf[typings.zxcvbn.zxcvbnNumbers.`4`]
+    inline def `4`: typings.zxcvbn.zxcvbnInts.`4` = 4.asInstanceOf[typings.zxcvbn.zxcvbnInts.`4`]
   }
   
   trait ZXCVBNSequence extends StObject {
@@ -435,4 +435,6 @@ object mod {
       inline def setUppercase_variations(value: Double): Self = StObject.set(x, "uppercase_variations", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait _ZXCVBNFeedbackWarning extends StObject
 }

@@ -11,5 +11,5 @@ object utilsGenerateDisplayNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(target: StyledTarget): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(target: StyledTarget[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("web3", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Web3 {
     def this(provider: typings.web3Core.mod.provider) = this()
@@ -47,10 +47,10 @@ object mod {
     var eth: Eth = js.native
     
     /* CompleteClass */
-    override def extend(`extension`: Extension): js.Any = js.native
+    override def extend(`extension`: Extension): Any = js.native
     
     /* CompleteClass */
-    override val givenProvider: js.Any = js.native
+    override val givenProvider: Any = js.native
     
     /* CompleteClass */
     override def setProvider(provider: typings.web3Core.mod.provider): Boolean = js.native
@@ -73,7 +73,7 @@ object mod {
     
     @JSImport("web3", "default.givenProvider")
     @js.native
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
     
     @JSImport("web3", "default.modules")
     @js.native
@@ -146,9 +146,9 @@ object mod {
     
     var eth: Eth
     
-    def extend(`extension`: Extension): js.Any
+    def extend(`extension`: Extension): Any
     
-    val givenProvider: js.Any
+    val givenProvider: Any
     
     def setProvider(provider: provider): Boolean
     
@@ -165,8 +165,8 @@ object mod {
       bzz: Bzz,
       defaultBlock: String | Double,
       eth: Eth,
-      extend: Extension => js.Any,
-      givenProvider: js.Any,
+      extend: Extension => Any,
+      givenProvider: Any,
       setProvider: provider => Boolean,
       shh: Shh,
       utils: Utils,
@@ -194,9 +194,9 @@ object mod {
       
       inline def setEth(value: Eth): Self = StObject.set(x, "eth", value.asInstanceOf[js.Any])
       
-      inline def setExtend(value: Extension => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+      inline def setExtend(value: Extension => Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       
-      inline def setGivenProvider(value: js.Any): Self = StObject.set(x, "givenProvider", value.asInstanceOf[js.Any])
+      inline def setGivenProvider(value: Any): Self = StObject.set(x, "givenProvider", value.asInstanceOf[js.Any])
       
       inline def setSetProvider(value: provider => Boolean): Self = StObject.set(x, "setProvider", js.Any.fromFunction1(value))
       

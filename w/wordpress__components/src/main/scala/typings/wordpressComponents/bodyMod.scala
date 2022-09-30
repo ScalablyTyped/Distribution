@@ -200,6 +200,6 @@ object bodyMod {
   
   object CardBody {
     
-    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = As[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
+    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] = As[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
   }
 }

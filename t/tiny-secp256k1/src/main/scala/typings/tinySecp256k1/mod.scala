@@ -1,7 +1,7 @@
 package typings.tinySecp256k1
 
-import typings.tinySecp256k1.tinySecp256k1Numbers.`0`
-import typings.tinySecp256k1.tinySecp256k1Numbers.`1`
+import typings.tinySecp256k1.tinySecp256k1Ints.`0`
+import typings.tinySecp256k1.tinySecp256k1Ints.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,33 +110,33 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.tinySecp256k1.tinySecp256k1Numbers.`0`
-    - typings.tinySecp256k1.tinySecp256k1Numbers.`1`
-    - typings.tinySecp256k1.tinySecp256k1Numbers.`2`
-    - typings.tinySecp256k1.tinySecp256k1Numbers.`3`
+    - typings.tinySecp256k1.tinySecp256k1Ints.`0`
+    - typings.tinySecp256k1.tinySecp256k1Ints.`1`
+    - typings.tinySecp256k1.tinySecp256k1Ints.`2`
+    - typings.tinySecp256k1.tinySecp256k1Ints.`3`
   */
   trait RecoveryIdType extends StObject
   object RecoveryIdType {
     
-    inline def `0`: typings.tinySecp256k1.tinySecp256k1Numbers.`0` = 0.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Numbers.`0`]
+    inline def `0`: typings.tinySecp256k1.tinySecp256k1Ints.`0` = 0.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Ints.`0`]
     
-    inline def `1`: typings.tinySecp256k1.tinySecp256k1Numbers.`1` = 1.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Numbers.`1`]
+    inline def `1`: typings.tinySecp256k1.tinySecp256k1Ints.`1` = 1.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Ints.`1`]
     
-    inline def `2`: typings.tinySecp256k1.tinySecp256k1Numbers.`2` = 2.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Numbers.`2`]
+    inline def `2`: typings.tinySecp256k1.tinySecp256k1Ints.`2` = 2.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Ints.`2`]
     
-    inline def `3`: typings.tinySecp256k1.tinySecp256k1Numbers.`3` = 3.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Numbers.`3`]
+    inline def `3`: typings.tinySecp256k1.tinySecp256k1Ints.`3` = 3.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Ints.`3`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.tinySecp256k1.tinySecp256k1Numbers.`1`
-    - typings.tinySecp256k1.tinySecp256k1Numbers.`0`
+    - typings.tinySecp256k1.tinySecp256k1Ints.`1`
+    - typings.tinySecp256k1.tinySecp256k1Ints.`0`
   */
   trait TweakParity extends StObject
   object TweakParity {
     
-    inline def `0`: typings.tinySecp256k1.tinySecp256k1Numbers.`0` = 0.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Numbers.`0`]
+    inline def `0`: typings.tinySecp256k1.tinySecp256k1Ints.`0` = 0.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Ints.`0`]
     
-    inline def `1`: typings.tinySecp256k1.tinySecp256k1Numbers.`1` = 1.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Numbers.`1`]
+    inline def `1`: typings.tinySecp256k1.tinySecp256k1Ints.`1` = 1.asInstanceOf[typings.tinySecp256k1.tinySecp256k1Ints.`1`]
   }
   
   trait XOnlyPointAddTweakResult extends StObject {

@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.baseuiBooleans.`false`
-import typings.baseui.baseuiNumbers.`900`
+import typings.baseui.baseuiInts.`900`
 import typings.baseui.baseuiStrings.`12`
 import typings.baseui.baseuiStrings.`24`
 import typings.baseui.inputTypesMod.Size

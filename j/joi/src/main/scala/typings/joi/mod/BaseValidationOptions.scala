@@ -27,6 +27,13 @@ trait BaseValidationOptions extends StObject {
   var allowUnknown: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * when true, return artifacts alongside the value.
+    *
+    * @default false
+    */
+  var artifacts: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * when true, schema caching is enabled (for schemas with explicit caching rules).
     *
     * @default false
@@ -79,7 +86,7 @@ trait BaseValidationOptions extends StObject {
   var noDefaults: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * when true, inputs are shallow cloned to include non-enumerables properties.
+    * when true, inputs are shallow cloned to include non-enumerable properties.
     *
     * @default false
     */
@@ -125,6 +132,10 @@ object BaseValidationOptions {
     inline def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
     
     inline def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
+    
+    inline def setArtifacts(value: Boolean): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    
+    inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

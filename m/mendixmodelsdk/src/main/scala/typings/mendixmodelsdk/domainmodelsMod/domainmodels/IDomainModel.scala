@@ -18,5 +18,10 @@ trait IDomainModel
   
   val crossAssociations: IList[ICrossAssociation] = js.native
   
+  /**
+    * In version 9.10.0: added public
+    */
+  val documentation: String = js.native
+  
   val entities: IList[IEntity] = js.native
 }

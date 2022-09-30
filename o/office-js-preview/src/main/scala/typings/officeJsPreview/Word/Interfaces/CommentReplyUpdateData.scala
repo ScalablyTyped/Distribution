@@ -11,7 +11,7 @@ trait CommentReplyUpdateData extends StObject {
     * Gets or sets the comment reply's content. The string is plain text.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var content: js.UndefOr[String] = js.undefined
   
@@ -19,7 +19,7 @@ trait CommentReplyUpdateData extends StObject {
     * Gets or sets the commentReply's content range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var contentRange: js.UndefOr[CommentContentRangeUpdateData] = js.undefined
   
@@ -27,7 +27,7 @@ trait CommentReplyUpdateData extends StObject {
     * Gets the parent comment of this reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var parentComment: js.UndefOr[CommentUpdateData] = js.undefined
 }

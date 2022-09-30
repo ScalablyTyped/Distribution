@@ -5,15 +5,15 @@ import typings.reactBulmaComponents.anon.Column
 import typings.reactBulmaComponents.componentsMod.Breakpoint
 import typings.reactBulmaComponents.componentsMod.BulmaComponent
 import typings.reactBulmaComponents.componentsMod.ResponsiveModifiers
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`0`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`2`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`3`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`4`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`5`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`6`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`7`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`8`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`0`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`1`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`2`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`3`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`4`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`5`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`6`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`7`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`8`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.div
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
@@ -198,19 +198,19 @@ object columnsMod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`0`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`2`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`3`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`4`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`5`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`6`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`7`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`8`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`9`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`10`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`11`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`12`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`0`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`1`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`2`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`3`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`4`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`5`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`6`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`7`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`8`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`9`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`10`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`11`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`12`
     - typings.reactBulmaComponents.reactBulmaComponentsStrings.`three-quarters`
     - typings.reactBulmaComponents.reactBulmaComponentsStrings.`two-thirds`
     - typings.reactBulmaComponents.reactBulmaComponentsStrings.half
@@ -224,31 +224,31 @@ object columnsMod extends Shortcut {
   trait ColumnSize extends StObject
   object ColumnSize {
     
-    inline def `0`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`0` = 0.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`0`]
+    inline def `0`: typings.reactBulmaComponents.reactBulmaComponentsInts.`0` = 0.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`0`]
     
-    inline def `1`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1` = 1.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1`]
+    inline def `1`: typings.reactBulmaComponents.reactBulmaComponentsInts.`1` = 1.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`1`]
     
-    inline def `10`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`10` = 10.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`10`]
+    inline def `10`: typings.reactBulmaComponents.reactBulmaComponentsInts.`10` = 10.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`10`]
     
-    inline def `11`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`11` = 11.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`11`]
+    inline def `11`: typings.reactBulmaComponents.reactBulmaComponentsInts.`11` = 11.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`11`]
     
-    inline def `12`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`12` = 12.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`12`]
+    inline def `12`: typings.reactBulmaComponents.reactBulmaComponentsInts.`12` = 12.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`12`]
     
-    inline def `2`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`2` = 2.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`2`]
+    inline def `2`: typings.reactBulmaComponents.reactBulmaComponentsInts.`2` = 2.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`2`]
     
-    inline def `3`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`3` = 3.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`3`]
+    inline def `3`: typings.reactBulmaComponents.reactBulmaComponentsInts.`3` = 3.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`3`]
     
-    inline def `4`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`4` = 4.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`4`]
+    inline def `4`: typings.reactBulmaComponents.reactBulmaComponentsInts.`4` = 4.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`4`]
     
-    inline def `5`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`5` = 5.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`5`]
+    inline def `5`: typings.reactBulmaComponents.reactBulmaComponentsInts.`5` = 5.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`5`]
     
-    inline def `6`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`6` = 6.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`6`]
+    inline def `6`: typings.reactBulmaComponents.reactBulmaComponentsInts.`6` = 6.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`6`]
     
-    inline def `7`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`7` = 7.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`7`]
+    inline def `7`: typings.reactBulmaComponents.reactBulmaComponentsInts.`7` = 7.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`7`]
     
-    inline def `8`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`8` = 8.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`8`]
+    inline def `8`: typings.reactBulmaComponents.reactBulmaComponentsInts.`8` = 8.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`8`]
     
-    inline def `9`: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`9` = 9.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsNumbers.`9`]
+    inline def `9`: typings.reactBulmaComponents.reactBulmaComponentsInts.`9` = 9.asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsInts.`9`]
     
     inline def `four-fifths`: typings.reactBulmaComponents.reactBulmaComponentsStrings.`four-fifths` = "four-fifths".asInstanceOf[typings.reactBulmaComponents.reactBulmaComponentsStrings.`four-fifths`]
     

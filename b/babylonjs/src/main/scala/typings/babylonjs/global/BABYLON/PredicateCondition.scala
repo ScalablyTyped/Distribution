@@ -22,46 +22,37 @@ open class PredicateCondition protected ()
   
   /**
     * Internal only - manager for action
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   var _actionManager: typings.babylonjs.BABYLON.ActionManager = js.native
   
   /**
-    * Internal only
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   var _currentResult: Boolean = js.native
   
   /**
-    * Internal only
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   var _evaluationId: Double = js.native
   
   /**
-    * Internal only
-    * @param target
-    * @param propertyPath
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
   
   /**
-    * Internal only
-    * @param propertyPath
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def _getProperty(propertyPath: String): String = js.native
   
   /**
-    * Internal only
-    * @param serializedCondition
-    * @hidden
+    * @internal
     */
   /* protected */ /* CompleteClass */
   override def _serialize(serializedCondition: Any): Any = js.native

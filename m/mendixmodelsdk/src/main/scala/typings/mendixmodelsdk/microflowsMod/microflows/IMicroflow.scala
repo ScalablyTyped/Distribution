@@ -26,4 +26,9 @@ trait IMicroflow
     * In version 8.0.0: introduced
     */
   val microflowActionInfo: IMicroflowActionInfo | Null = js.native
+  
+  /**
+    * In version 9.0.2: introduced
+    */
+  val workflowActionInfo: IMicroflowActionInfo | Null = js.native
 }

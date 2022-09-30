@@ -8,7 +8,7 @@ trait CodeProps extends StObject {
   
   var children: js.UndefOr[js.Function0[AnimatedNode[Double]]] = js.undefined
   
-  var dependencies: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var dependencies: js.UndefOr[js.Array[Any]] = js.undefined
   
   var exec: js.UndefOr[AnimatedNode[Double]] = js.undefined
 }
@@ -25,11 +25,11 @@ object CodeProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setDependencies(value: js.Array[js.Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: js.Array[Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: js.Any*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: Any*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setExec(value: AnimatedNode[Double]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     

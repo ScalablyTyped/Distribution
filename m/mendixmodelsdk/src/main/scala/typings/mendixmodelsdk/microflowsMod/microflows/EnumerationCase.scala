@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EnumerationCase")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EnumerationCase")
 @js.native
-class EnumerationCase protected () extends CaseValue {
+open class EnumerationCase protected () extends CaseValue {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class EnumerationCase protected () extends CaseValue {
 }
 object EnumerationCase {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EnumerationCase")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EnumerationCase")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object EnumerationCase {
   inline def createIn(container: SequenceFlow): EnumerationCase = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationCase]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EnumerationCase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EnumerationCase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.EnumerationCase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.EnumerationCase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

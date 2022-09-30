@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.anon.Action
 import typings.mendixmodelsdk.deltaManagerMod.IDeltaManager
 import typings.mendixmodelsdk.deltasDeltasMod.Delta
 import org.scalablytyped.runtime.StObject
@@ -9,29 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object undoManagerMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/UndoManager", "UndoManager")
+  @JSImport("mendixmodelsdk/src/sdk/internal/UndoManager", "UndoManager")
   @js.native
-  class UndoManager protected () extends StObject {
+  open class UndoManager protected () extends StObject {
     def this(_model: IAbstractModel) = this()
     
-    /* private */ val deltaManager: js.Any = js.native
+    /* private */ val deltaManager: Any = js.native
     
     def getUndoState(modelUnitId: String): UndoState = js.native
     
-    /* private */ var onChangeCompleted: js.Any = js.native
+    /* private */ var onChangeCompleted: Any = js.native
     
-    /* private */ var onChangeDiscarded: js.Any = js.native
+    /* private */ var onChangeDiscarded: Any = js.native
     
-    /* private */ var onNewDelta: js.Any = js.native
+    /* private */ var onNewDelta: Any = js.native
     
-    /* private */ var onUnitLoaded: js.Any = js.native
+    /* private */ var onUnitLoaded: Any = js.native
+    
+    def withCustomUndoRedo[T](unitId: String, customAction: Action[T]): T = js.native
     
     def withoutUndo[T](performAction: js.Function0[T]): T = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/UndoManager", "UndoState")
+  @JSImport("mendixmodelsdk/src/sdk/internal/UndoManager", "UndoState")
   @js.native
-  class UndoState protected () extends StObject {
+  open class UndoState protected () extends StObject {
     def this(deltaManager: IDeltaManager) = this()
     
     def canRedo: Boolean = js.native
@@ -40,14 +43,41 @@ object undoManagerMod {
     
     def clear(): Unit = js.native
     
-    /* private */ var deltaManager: js.Any = js.native
+    /* private */ var deltaManager: Any = js.native
+    
+    /* private */ var processRedo: Any = js.native
+    
+    /* private */ var processUndo: Any = js.native
     
     def redo(): Unit = js.native
+    
+    /* private */ var runAction: Any = js.native
     
     def undo(): Unit = js.native
   }
   
-  type Change = js.Array[IDeltaChange]
+  type Change = js.Array[IDeltaChange] | ICustomActionChange
+  
+  trait ICustomActionChange extends StObject {
+    
+    def redoAction(): Unit
+    
+    def undoAction(): Unit
+  }
+  object ICustomActionChange {
+    
+    inline def apply(redoAction: () => Unit, undoAction: () => Unit): ICustomActionChange = {
+      val __obj = js.Dynamic.literal(redoAction = js.Any.fromFunction0(redoAction), undoAction = js.Any.fromFunction0(undoAction))
+      __obj.asInstanceOf[ICustomActionChange]
+    }
+    
+    extension [Self <: ICustomActionChange](x: Self) {
+      
+      inline def setRedoAction(value: () => Unit): Self = StObject.set(x, "redoAction", js.Any.fromFunction0(value))
+      
+      inline def setUndoAction(value: () => Unit): Self = StObject.set(x, "undoAction", js.Any.fromFunction0(value))
+    }
+  }
   
   trait IDeltaChange extends StObject {
     

@@ -62,10 +62,6 @@ object firebaseFunctionsStrings {
   inline def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
   
   @js.native
-  sealed trait functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket extends StObject
-  inline def functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket: functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket = "functions/${FunctionsErrorCodeCore}".asInstanceOf[functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket]
-  
-  @js.native
   sealed trait internal
     extends StObject
        with FunctionsErrorCodeCore

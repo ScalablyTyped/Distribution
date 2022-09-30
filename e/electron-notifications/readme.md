@@ -10,15 +10,12 @@ A node module for sending notifications in electron applications
 | ------------------ | :-------------: |
 | Full name          | electron-notifications |
 | Keywords           | electron, notification, notification center, toaster, growl, notify-send, terminal-notifier, notify |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 11445 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 264.6666666666667 |
+| # stars            | 136.0 |
 
 ## Links
-- [Homepage](https://github.com/blainesch/electron-notifications#readme)
-- [Bugs](https://github.com/blainesch/electron-notifications/issues)
-- [Repository](https://github.com/blainesch/electron-notifications)
 - [Npm](https://www.npmjs.com/package/electron-notifications)
     
 

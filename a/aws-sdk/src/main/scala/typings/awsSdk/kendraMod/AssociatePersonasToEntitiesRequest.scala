@@ -17,7 +17,7 @@ trait AssociatePersonasToEntitiesRequest extends StObject {
   var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
-    * The personas that define the specific permissions of users or groups in your Amazon Web Services SSO identity source. The available personas or access roles are Owner and Viewer. For more information on these personas, see Providing access to your search page.
+    * The personas that define the specific permissions of users or groups in your IAM Identity Center identity source. The available personas or access roles are Owner and Viewer. For more information on these personas, see Providing access to your search page.
     */
   var Personas: EntityPersonaConfigurationList
 }

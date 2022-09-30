@@ -20,9 +20,9 @@ object promiseMod {
     
     def asyncReject(error: Any): this.type = js.native
     
-    def `catch`[Y](onError: js.Function1[/* error */ Any, Y]): ZalgoPromise[Y] = js.native
+    def `catch`[X](onError: js.Function1[/* error */ Any, ZalgoPromise[X]]): ZalgoPromise[X] = js.native
     @JSName("catch")
-    def catch_X[X](onError: js.Function1[/* error */ Any, ZalgoPromise[X]]): ZalgoPromise[X] = js.native
+    def catch_Y[Y](onError: js.Function1[/* error */ Any, Y]): ZalgoPromise[Y] = js.native
     
     def dispatch(): Unit = js.native
     
@@ -34,27 +34,27 @@ object promiseMod {
     
     def resolve(result: R): this.type = js.native
     
-    def `then`[Y](): ZalgoPromise[Y] = js.native
-    def `then`[Y](onSuccess: js.Function1[/* result */ R, Y]): ZalgoPromise[Y] = js.native
-    def `then`[Y](onSuccess: js.Function1[/* result */ R, Y], onError: js.Function1[/* error */ Any, Y]): ZalgoPromise[Y] = js.native
-    def `then`[Y](onSuccess: Unit, onError: js.Function1[/* error */ Any, Y]): ZalgoPromise[Y] = js.native
-    @JSName("then")
-    def then_X[X](): ZalgoPromise[X] = js.native
-    @JSName("then")
-    def then_X[X](onSuccess: js.Function1[/* result */ R, ZalgoPromise[X]]): ZalgoPromise[X] = js.native
-    @JSName("then")
-    def then_X[X](
+    def `then`[X](): ZalgoPromise[X] = js.native
+    def `then`[X](onSuccess: js.Function1[/* result */ R, ZalgoPromise[X]]): ZalgoPromise[X] = js.native
+    def `then`[X](
       onSuccess: js.Function1[/* result */ R, ZalgoPromise[X]],
       onError: js.Function1[/* error */ Any, ZalgoPromise[X]]
     ): ZalgoPromise[X] = js.native
-    @JSName("then")
-    def then_X[X](onSuccess: Unit, onError: js.Function1[/* error */ Any, ZalgoPromise[X]]): ZalgoPromise[X] = js.native
+    def `then`[X](onSuccess: Unit, onError: js.Function1[/* error */ Any, ZalgoPromise[X]]): ZalgoPromise[X] = js.native
     // to support mixed promise/non-promise return types
     @JSName("then")
     def then_XY[X, Y](
       onSuccess: js.Function1[/* result */ R, ZalgoPromise[X] | Y],
       onError: js.Function1[/* error */ Any, ZalgoPromise[X] | Y]
     ): ZalgoPromise[X | Y] = js.native
+    @JSName("then")
+    def then_Y[Y](): ZalgoPromise[Y] = js.native
+    @JSName("then")
+    def then_Y[Y](onSuccess: js.Function1[/* result */ R, Y]): ZalgoPromise[Y] = js.native
+    @JSName("then")
+    def then_Y[Y](onSuccess: js.Function1[/* result */ R, Y], onError: js.Function1[/* error */ Any, Y]): ZalgoPromise[Y] = js.native
+    @JSName("then")
+    def then_Y[Y](onSuccess: Unit, onError: js.Function1[/* error */ Any, Y]): ZalgoPromise[Y] = js.native
     
     def timeout(time: Double): this.type = js.native
     def timeout(time: Double, err: js.Error): this.type = js.native
@@ -96,10 +96,10 @@ object promiseMod {
     inline def `try`[X, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, js.UndefOr[ZalgoPromise[X]]], context: Any, args: Partial[A]): ZalgoPromise[js.UndefOr[X]] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[js.UndefOr[X]]]
     inline def `try`[X, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, js.UndefOr[ZalgoPromise[X]]], context: Unit, args: Partial[A]): ZalgoPromise[js.UndefOr[X]] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[js.UndefOr[X]]]
     
-    inline def try_YA_ArrayAny[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y]): ZalgoPromise[Y] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Y]]
-    inline def try_YA_ArrayAny[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y], context: Any): ZalgoPromise[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Y]]
-    inline def try_YA_ArrayAny[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y], context: Any, args: Partial[A]): ZalgoPromise[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Y]]
-    inline def try_YA_ArrayAny[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y], context: Unit, args: Partial[A]): ZalgoPromise[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Y]]
+    inline def try_YA[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y]): ZalgoPromise[Y] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Y]]
+    inline def try_YA[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y], context: Any): ZalgoPromise[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Y]]
+    inline def try_YA[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y], context: Any, args: Partial[A]): ZalgoPromise[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Y]]
+    inline def try_YA[Y, A /* <: js.Array[Any] */](method: js.Function1[/* args */ A, Y], context: Unit, args: Partial[A]): ZalgoPromise[Y] = (^.asInstanceOf[js.Dynamic].applyDynamic("try")(method.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Y]]
   }
   
   type FlattenPromises[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

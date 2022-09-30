@@ -8,9 +8,9 @@ import typings.std.Partial
 import typings.std.Record
 import typings.traceryGrammar.anon.A
 import typings.traceryGrammar.anon.Node
-import typings.traceryGrammar.traceryGrammarNumbers.`0`
-import typings.traceryGrammar.traceryGrammarNumbers.`1`
-import typings.traceryGrammar.traceryGrammarNumbers.`2`
+import typings.traceryGrammar.traceryGrammarInts.`0`
+import typings.traceryGrammar.traceryGrammarInts.`1`
+import typings.traceryGrammar.traceryGrammarInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

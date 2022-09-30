@@ -1,9 +1,9 @@
 package typings.qbittorrentApiV2.mod
 
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`0`
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`1`
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`6`
-import typings.qbittorrentApiV2.qbittorrentApiV2Numbers.`7`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`0`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`1`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`6`
+import typings.qbittorrentApiV2.qbittorrentApiV2Ints.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -102,8 +102,8 @@ inline def devices: DevicesMap = ^.asInstanceOf[js.Dynamic].selectDynamic("devic
 
 inline def downloadBrowser(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadBrowser")().asInstanceOf[js.Promise[Unit]]
 
-inline def evaluationString(fun: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-inline def evaluationString(fun: js.Function, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+inline def evaluationString(fun: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+inline def evaluationString(fun: js.Function, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
 inline def executablePathForChannel(channel: ChromeReleaseChannel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("executablePathForChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[String]
 
@@ -140,7 +140,7 @@ inline def isTargetClosedError(err: js.Error): Boolean = ^.asInstanceOf[js.Dynam
 
 inline def logPolitely(toBeLogged: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPolitely")(toBeLogged.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def packageVersion: /* "18.0.4" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("packageVersion").asInstanceOf[/* "18.0.4" */ String]
+inline def packageVersion: /* "18.0.5" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("packageVersion").asInstanceOf[/* "18.0.5" */ String]
 
 inline def pageBindingDeliverErrorString(name: String, seq: Double, message: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pageBindingDeliverErrorString")(name.asInstanceOf[js.Any], seq.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def pageBindingDeliverErrorString(name: String, seq: Double, message: String, stack: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pageBindingDeliverErrorString")(name.asInstanceOf[js.Any], seq.asInstanceOf[js.Any], message.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[String]

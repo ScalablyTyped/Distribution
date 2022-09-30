@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FailedEntity extends StObject {
   
   /**
-    * The identifier of the user or group in your Amazon Web Services SSO identity source. For example, a user ID could be an email.
+    * The identifier of the user or group in your IAM Identity Center identity source. For example, a user ID could be an email.
     */
   var EntityId: js.UndefOr[typings.awsSdk.kendraMod.EntityId] = js.undefined
   
   /**
-    * The reason the user or group in your Amazon Web Services SSO identity source failed to properly configure with your Amazon Kendra experience.
+    * The reason the user or group in your IAM Identity Center identity source failed to properly configure with your Amazon Kendra experience.
     */
   var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.undefined
 }

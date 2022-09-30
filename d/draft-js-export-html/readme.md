@@ -10,10 +10,10 @@ DraftJS: Export ContentState to HTML
 | ------------------ | :-------------: |
 | Full name          | draft-js-export-html |
 | Keywords           | draft-js, export-html |
-| # releases         | 6 |
-| # dependents       | 169 |
-| # downloads        | 3999233 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 561002.6666666666 |
+| # stars            | 868.0 |
 
 ## Links
 - [Homepage](https://github.com/sstur/draft-js-utils/blob/master/packages/draft-js-export-html/README.md)

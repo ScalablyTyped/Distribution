@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Bounds")
 @js.native
-class Bounds_ protected ()
+open class Bounds_ ()
   extends typings.leaflet.mod.Bounds_ {
   def this(points: js.Array[typings.leaflet.mod.Point_]) = this()
   def this(points: BoundsLiteral) = this()

@@ -9,7 +9,12 @@ trait IpcMessageEvent
   extends StObject
      with Event {
   
-  var args: js.Array[js.Any] = js.native
+  var args: js.Array[Any] = js.native
   
   var channel: String = js.native
+  
+  /**
+    * pair of `[processId, frameId]`.
+    */
+  var frameId: js.Tuple2[Double, Double] = js.native
 }

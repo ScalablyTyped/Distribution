@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/tab-container relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.TabPage")
 @js.native
-class TabPage protected () extends Element[IModel] {
+open class TabPage protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -62,7 +62,7 @@ class TabPage protected () extends Element[IModel] {
 }
 object TabPage {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TabPage")
   @js.native
   val ^ : js.Any = js.native
   
@@ -83,13 +83,13 @@ object TabPage {
   inline def createIn(container: TabContainer): TabPage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[TabPage]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TabPage.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TabPage.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

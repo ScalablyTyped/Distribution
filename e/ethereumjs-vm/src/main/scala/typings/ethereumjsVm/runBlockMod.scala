@@ -1,7 +1,7 @@
 package typings.ethereumjsVm
 
-import typings.ethereumjsVm.ethereumjsVmNumbers.`0`
-import typings.ethereumjsVm.ethereumjsVmNumbers.`1`
+import typings.ethereumjsVm.ethereumjsVmInts.`0`
+import typings.ethereumjsVm.ethereumjsVmInts.`1`
 import typings.ethereumjsVm.runTxMod.RunTxResult
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject

@@ -1,6 +1,6 @@
 package typings.msRestAzure.mod
 
-import typings.msRestAzure.msRestAzureNumbers.`50342`
+import typings.msRestAzure.msRestAzureInts.`50342`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

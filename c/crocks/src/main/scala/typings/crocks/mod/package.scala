@@ -1,7 +1,6 @@
 package typings.crocks.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.crocks.listListMod.List
 import typings.crocks.mod.^
 import typings.crocks.predMod.default
 import typings.crocks.typesMod.BinaryFunction
@@ -66,13 +65,13 @@ inline def compose2[A, B, C, D, E](
   f: js.Function2[/* c */ C, /* d */ D, E],
   d: js.Function1[/* a */ A, C],
   h: js.Function1[/* b */ B, D]
-): js.Function1[/* x */ A, js.Function1[/* y */ B, E]] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose2")(f.asInstanceOf[js.Any], d.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, js.Function1[/* y */ B, E]]]
+): js.Function2[/* x */ A, /* y */ B, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose2")(f.asInstanceOf[js.Any], d.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ B, E]]
 
-inline def compose2_ABCDE_Function2[A, B, C, D, E](
+inline def compose2_ABCDE_Function1[A, B, C, D, E](
   f: js.Function2[/* c */ C, /* d */ D, E],
   d: js.Function1[/* a */ A, C],
   h: js.Function1[/* b */ B, D]
-): js.Function2[/* x */ A, /* y */ B, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose2")(f.asInstanceOf[js.Any], d.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ B, E]]
+): js.Function1[/* x */ A, js.Function1[/* y */ B, E]] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose2")(f.asInstanceOf[js.Any], d.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, js.Function1[/* y */ B, E]]]
 
 inline def composeB[A, B, C](f: js.Function1[/* b */ B, C]): js.Function1[/* g */ js.Function1[/* a */ A, B], js.Function1[/* x */ A, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeB")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* g */ js.Function1[/* a */ A, B], js.Function1[/* x */ A, C]]]
 inline def composeB[A, B, C](f: js.Function1[/* b */ B, C], g: js.Function1[/* a */ A, B]): js.Function1[/* x */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("composeB")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, C]]
@@ -113,15 +112,15 @@ inline def defaultProps(a: js.Object, b: js.Object): js.Object = (^.asInstanceOf
 inline def defaultTo[A](a: A): js.Function1[/* b */ scala.Any, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTo")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ scala.Any, A]]
 inline def defaultTo[A](a: A, b: scala.Any): A = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTo")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[A]
 
-inline def flip[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function2[/* y */ B, /* x */ A, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* y */ B, /* x */ A, C]]
+inline def flip[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function1[/* y */ B, js.Function1[/* x */ A, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* y */ B, js.Function1[/* x */ A, C]]]
 
-inline def flip_ABC_Function1[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function1[/* y */ B, js.Function1[/* x */ A, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* y */ B, js.Function1[/* x */ A, C]]]
+inline def flip_ABC_Function2[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function2[/* y */ B, /* x */ A, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* y */ B, /* x */ A, C]]
 
 /**
   * fromPairs :: Foldable f => f (Pair String a) -> Object
   */
 inline def fromPairs(`val`: js.Array[typings.crocks.pairMod.default]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPairs")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-inline def fromPairs(`val`: List): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPairs")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+inline def fromPairs(`val`: typings.crocks.listListMod.List): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPairs")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 
 inline def getPathOr[A /* <: scala.Any */](a: A): js.Function1[/* p */ js.Array[String | Double], js.Function1[/* b */ scala.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathOr")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* p */ js.Array[String | Double], js.Function1[/* b */ scala.Any, A]]]
 inline def getPathOr[A /* <: scala.Any */](a: A, p: js.Array[String | Double]): js.Function1[/* b */ scala.Any, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathOr")(a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ scala.Any, A]]
@@ -433,9 +432,9 @@ inline def psi[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C]): js.Function1[
 js.Function1[/* x */ A, js.Function1[/* y */ A, C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("psi")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* g */ js.Function1[/* a */ A, B], 
 js.Function1[/* x */ A, js.Function1[/* y */ A, C]]]]
-inline def psi[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function2[/* x */ A, /* y */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("psi")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, C]]
+inline def psi[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function1[/* x */ A, js.Function1[/* y */ A, C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("psi")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, js.Function1[/* y */ A, C]]]
 
-inline def psi_ABC_Function1[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function1[/* x */ A, js.Function1[/* y */ A, C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("psi")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, js.Function1[/* y */ A, C]]]
+inline def psi_ABC_Function2[A, B, C](f: js.Function2[/* x */ B, /* y */ B, C], g: js.Function1[/* a */ A, B]): js.Function2[/* x */ A, /* y */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("psi")(f.asInstanceOf[js.Any], g.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, C]]
 
 inline def setPath(path: js.Array[String | Double], `val`: scala.Any): js.Function1[/* obj */ js.Object, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* obj */ js.Object, js.Object]]
 inline def setPath(path: js.Array[String | Double], `val`: scala.Any, obj: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(path.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Object]

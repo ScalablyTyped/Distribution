@@ -5,7 +5,6 @@ import typings.googleGax.operationsMod.google.protobuf.IOneofOptions
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new OneofOptions.
   * @param [properties] Properties to set
   */
-class OneofOptions ()
+open class OneofOptions ()
   extends typings.googleGax.operationsMod.google.protobuf.OneofOptions {
   def this(properties: IOneofOptions) = this()
 }
@@ -36,6 +35,8 @@ object OneofOptions {
   inline def create(): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   inline def create(properties: IOneofOptions): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.operationsMod.google.protobuf.OneofOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   /**
     * Decodes an OneofOptions message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -47,9 +48,8 @@ object OneofOptions {
   /* static member */
   inline def decode(reader: Reader): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   inline def decode(reader: Reader, length: Double): typings.googleGax.operationsMod.google.protobuf.OneofOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
-  inline def decode(reader: Uint8Array): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
-  inline def decode(reader: Uint8Array, length: Double): typings.googleGax.operationsMod.google.protobuf.OneofOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   /**
     * Decodes an OneofOptions message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,7 +59,6 @@ object OneofOptions {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
-  inline def decodeDelimited(reader: Uint8Array): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   
   /**
     * Encodes the specified OneofOptions message. Does not implicitly {@link google.protobuf.OneofOptions.verify|verify} messages.
@@ -87,7 +86,7 @@ object OneofOptions {
     * @returns OneofOptions
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): typings.googleGax.operationsMod.google.protobuf.OneofOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.operationsMod.google.protobuf.OneofOptions]
   
   /**
     * Creates a plain object from an OneofOptions message. Also converts values to other types if specified.
@@ -96,8 +95,8 @@ object OneofOptions {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.googleGax.operationsMod.google.protobuf.OneofOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: typings.googleGax.operationsMod.google.protobuf.OneofOptions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.googleGax.operationsMod.google.protobuf.OneofOptions): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: typings.googleGax.operationsMod.google.protobuf.OneofOptions, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies an OneofOptions message.
@@ -105,5 +104,5 @@ object OneofOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

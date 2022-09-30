@@ -8,22 +8,10 @@ trait ValueCondition
   extends StObject
      with Condition {
   
-  /**
-    * Internal only
-    * @hidden
-    */
   /* private */ var _effectiveTarget: Any
   
-  /**
-    * Internal only
-    * @hidden
-    */
   /* private */ var _property: Any
   
-  /**
-    * Internal only
-    * @hidden
-    */
   /* private */ var _target: Any
   
   /** the conditional operator, default ValueCondition.IsEqual */

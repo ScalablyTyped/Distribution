@@ -1,9 +1,9 @@
 package typings.uapiJson
 
-import typings.uapiJson.uapiJsonNumbers.`0`
-import typings.uapiJson.uapiJsonNumbers.`1`
-import typings.uapiJson.uapiJsonNumbers.`2`
-import typings.uapiJson.uapiJsonNumbers.`3`
+import typings.uapiJson.uapiJsonInts.`0`
+import typings.uapiJson.uapiJsonInts.`1`
+import typings.uapiJson.uapiJsonInts.`2`
+import typings.uapiJson.uapiJsonInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

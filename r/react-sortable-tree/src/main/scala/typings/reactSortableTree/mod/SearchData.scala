@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchData
+trait SearchData[T]
   extends StObject
-     with NodeData {
+     with NodeData[T] {
   
-  var searchQuery: js.Any
+  var searchQuery: Any
 }
 object SearchData {
   
-  inline def apply(node: TreeItem, path: NumberOrStringArray, searchQuery: js.Any, treeIndex: Double): SearchData = {
+  inline def apply[T](node: TreeItem[T], path: NumberOrStringArray, searchQuery: Any, treeIndex: Double): SearchData[T] = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], searchQuery = searchQuery.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SearchData]
+    __obj.asInstanceOf[SearchData[T]]
   }
   
-  extension [Self <: SearchData](x: Self) {
+  extension [Self <: SearchData[?], T](x: Self & SearchData[T]) {
     
-    inline def setSearchQuery(value: js.Any): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
+    inline def setSearchQuery(value: Any): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
   }
 }

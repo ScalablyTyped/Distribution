@@ -17,8 +17,6 @@ trait TransformRawSchema extends StObject {
   
   var address: js.UndefOr[Classes] = js.undefined
   
-  var applet: js.UndefOr[Classes] = js.undefined
-  
   var area: js.UndefOr[Classes] = js.undefined
   
   var article: js.UndefOr[Classes] = js.undefined
@@ -30,8 +28,6 @@ trait TransformRawSchema extends StObject {
   var b: js.UndefOr[Classes] = js.undefined
   
   var base: js.UndefOr[Classes] = js.undefined
-  
-  var basefont: js.UndefOr[Classes] = js.undefined
   
   var bdi: js.UndefOr[Classes] = js.undefined
   
@@ -71,8 +67,6 @@ trait TransformRawSchema extends StObject {
   
   var dialog: js.UndefOr[Classes] = js.undefined
   
-  var dir: js.UndefOr[Classes] = js.undefined
-  
   var div: js.UndefOr[Classes] = js.undefined
   
   var dl: js.UndefOr[Classes] = js.undefined
@@ -89,15 +83,9 @@ trait TransformRawSchema extends StObject {
   
   var figure: js.UndefOr[Classes] = js.undefined
   
-  var font: js.UndefOr[Classes] = js.undefined
-  
   var footer: js.UndefOr[Classes] = js.undefined
   
   var form: js.UndefOr[Classes] = js.undefined
-  
-  var frame: js.UndefOr[Classes] = js.undefined
-  
-  var frameset: js.UndefOr[Classes] = js.undefined
   
   var h1: js.UndefOr[Classes] = js.undefined
   
@@ -147,8 +135,6 @@ trait TransformRawSchema extends StObject {
   
   var mark: js.UndefOr[Classes] = js.undefined
   
-  var marquee: js.UndefOr[Classes] = js.undefined
-  
   var menu: js.UndefOr[Classes] = js.undefined
   
   var meta: js.UndefOr[Classes] = js.undefined
@@ -170,8 +156,6 @@ trait TransformRawSchema extends StObject {
   var output: js.UndefOr[Classes] = js.undefined
   
   var p: js.UndefOr[Classes] = js.undefined
-  
-  var param: js.UndefOr[Classes] = js.undefined
   
   var picture: js.UndefOr[Classes] = js.undefined
   
@@ -270,10 +254,6 @@ object TransformRawSchema {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    inline def setApplet(value: Classes): Self = StObject.set(x, "applet", value.asInstanceOf[js.Any])
-    
-    inline def setAppletUndefined: Self = StObject.set(x, "applet", js.undefined)
-    
     inline def setArea(value: Classes): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
@@ -297,10 +277,6 @@ object TransformRawSchema {
     inline def setBase(value: Classes): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
-    
-    inline def setBasefont(value: Classes): Self = StObject.set(x, "basefont", value.asInstanceOf[js.Any])
-    
-    inline def setBasefontUndefined: Self = StObject.set(x, "basefont", js.undefined)
     
     inline def setBdi(value: Classes): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
     
@@ -378,10 +354,6 @@ object TransformRawSchema {
     
     inline def setDialogUndefined: Self = StObject.set(x, "dialog", js.undefined)
     
-    inline def setDir(value: Classes): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
-    
-    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
-    
     inline def setDiv(value: Classes): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     
     inline def setDivUndefined: Self = StObject.set(x, "div", js.undefined)
@@ -414,10 +386,6 @@ object TransformRawSchema {
     
     inline def setFigureUndefined: Self = StObject.set(x, "figure", js.undefined)
     
-    inline def setFont(value: Classes): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-    
-    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
-    
     inline def setFooter(value: Classes): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
@@ -425,14 +393,6 @@ object TransformRawSchema {
     inline def setForm(value: Classes): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
-    
-    inline def setFrame(value: Classes): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-    
-    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
-    
-    inline def setFrameset(value: Classes): Self = StObject.set(x, "frameset", value.asInstanceOf[js.Any])
-    
-    inline def setFramesetUndefined: Self = StObject.set(x, "frameset", js.undefined)
     
     inline def setH1(value: Classes): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
     
@@ -530,10 +490,6 @@ object TransformRawSchema {
     
     inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
-    inline def setMarquee(value: Classes): Self = StObject.set(x, "marquee", value.asInstanceOf[js.Any])
-    
-    inline def setMarqueeUndefined: Self = StObject.set(x, "marquee", js.undefined)
-    
     inline def setMenu(value: Classes): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
@@ -581,10 +537,6 @@ object TransformRawSchema {
     inline def setP(value: Classes): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
-    
-    inline def setParam(value: Classes): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
-    
-    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
     inline def setPicture(value: Classes): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     

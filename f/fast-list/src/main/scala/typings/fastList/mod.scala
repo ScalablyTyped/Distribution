@@ -13,7 +13,7 @@ object mod extends Shortcut {
   @js.native
   open class ^[T] ()
     extends StObject
-       with List[T]
+       with typings.fastList.mod.List[T]
   @JSImport("fast-list", JSImport.Namespace)
   @js.native
   val ^ : FastListFactory = js.native
@@ -21,9 +21,9 @@ object mod extends Shortcut {
   @js.native
   trait FastListFactory
     extends StObject
-       with Instantiable0[List[js.Object]] {
+       with Instantiable0[typings.fastList.mod.List[js.Object]] {
     
-    def apply[T](): List[T] = js.native
+    def apply[T](): typings.fastList.mod.List[T] = js.native
   }
   
   @js.native
@@ -33,11 +33,11 @@ object mod extends Shortcut {
     
     def filter[U](
       callbackfn: js.ThisFunction3[/* this */ U, /* value */ T, /* index */ Double, /* list */ this.type, Boolean]
-    ): List[T] = js.native
+    ): typings.fastList.mod.List[T] = js.native
     def filter[U](
       callbackfn: js.ThisFunction3[/* this */ U, /* value */ T, /* index */ Double, /* list */ this.type, Boolean],
       thisArg: U
-    ): List[T] = js.native
+    ): typings.fastList.mod.List[T] = js.native
     
     def forEach[U](
       callbackfn: js.ThisFunction3[/* this */ U, /* value */ T, /* index */ Double, /* list */ this.type, Unit]
@@ -53,11 +53,11 @@ object mod extends Shortcut {
     
     def map[U, V](
       callbackfn: js.ThisFunction3[/* this */ V, /* value */ T, /* index */ Double, /* list */ this.type, U]
-    ): List[U] = js.native
+    ): typings.fastList.mod.List[U] = js.native
     def map[U, V](
       callbackfn: js.ThisFunction3[/* this */ V, /* value */ T, /* index */ Double, /* list */ this.type, U],
       thisArg: V
-    ): List[U] = js.native
+    ): typings.fastList.mod.List[U] = js.native
     
     def pop(): js.UndefOr[T] = js.native
     

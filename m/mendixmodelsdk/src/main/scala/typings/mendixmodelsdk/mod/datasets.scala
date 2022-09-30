@@ -16,7 +16,7 @@ object datasets {
     */
   @JSImport("mendixmodelsdk", "datasets.DataSet")
   @js.native
-  class DataSet protected ()
+  open class DataSet protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSet {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -54,7 +54,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetAccess")
   @js.native
-  class DataSetAccess protected ()
+  open class DataSetAccess protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetAccess {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -102,7 +102,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetColumn")
   @js.native
-  class DataSetColumn protected ()
+  open class DataSetColumn protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetColumn {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -150,7 +150,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetConstraintAccess")
   @js.native
-  class DataSetConstraintAccess protected ()
+  open class DataSetConstraintAccess protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetConstraintAccess {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -198,7 +198,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetDateTimeConstraint")
   @js.native
-  class DataSetDateTimeConstraint protected ()
+  open class DataSetDateTimeConstraint protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetDateTimeConstraint {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -246,7 +246,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetModuleRoleAccess")
   @js.native
-  class DataSetModuleRoleAccess protected ()
+  open class DataSetModuleRoleAccess protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetModuleRoleAccess {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -294,7 +294,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetNumericConstraint")
   @js.native
-  class DataSetNumericConstraint protected ()
+  open class DataSetNumericConstraint protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetNumericConstraint {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -342,7 +342,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetObjectConstraint")
   @js.native
-  class DataSetObjectConstraint protected ()
+  open class DataSetObjectConstraint protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetObjectConstraint {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -390,7 +390,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetParameter")
   @js.native
-  class DataSetParameter protected ()
+  open class DataSetParameter protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetParameter {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -438,7 +438,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DataSetParameterAccess")
   @js.native
-  class DataSetParameterAccess protected ()
+  open class DataSetParameterAccess protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetParameterAccess {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -550,7 +550,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength")
   @js.native
-  class DateTimeIntervalLength protected ()
+  open class DateTimeIntervalLength protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DateTimeIntervalLength {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -599,7 +599,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier")
   @js.native
-  class DateTimeIntervalModifier protected ()
+  open class DateTimeIntervalModifier protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.DateTimeIntervalModifier {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -648,7 +648,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.JavaDataSetSource")
   @js.native
-  class JavaDataSetSource protected ()
+  open class JavaDataSetSource protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.JavaDataSetSource {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -696,7 +696,7 @@ object datasets {
   
   @JSImport("mendixmodelsdk", "datasets.OqlDataSetSource")
   @js.native
-  class OqlDataSetSource protected ()
+  open class OqlDataSetSource protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datasets.OqlDataSetSource {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

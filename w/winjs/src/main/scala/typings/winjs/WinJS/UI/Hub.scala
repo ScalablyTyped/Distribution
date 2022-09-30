@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.WinJS.Binding.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,7 +116,7 @@ trait Hub extends StObject {
   /**
     * Gets or sets the List that contains the HubSection objects that belong to this Hub.
     **/
-  var sections: List[HubSection] = js.native
+  var sections: typings.winjs.WinJS.Binding.List[HubSection] = js.native
   
   /**
     * This API supports the SemanticZoom infrastructure and is not intended to be used directly from your code.

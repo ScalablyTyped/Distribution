@@ -1,7 +1,7 @@
 package typings.vueTemplateCompiler.mod
 
 import typings.std.Record
-import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`2`
+import typings.vueTemplateCompiler.vueTemplateCompilerInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

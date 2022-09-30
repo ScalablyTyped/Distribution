@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "stacktrace-gps"
-version := "3.1.2-710c1f"
+version := "3.1.2-0bc374"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "source-map" % "0.7.4-e0c113",
-  "org.scalablytyped" %%% "stackframe" % "1.3.4-6b3e55",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "source-map" % "0.7.4-09b2a8",
+  "org.scalablytyped" %%% "stackframe" % "1.3.4-d27475",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

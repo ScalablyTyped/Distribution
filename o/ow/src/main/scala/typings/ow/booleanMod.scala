@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object booleanMod {
   
-  @JSImport("ow/dist/source/predicates/boolean", "BooleanPredicate")
+  @JSImport("ow/dist/predicates/boolean", "BooleanPredicate")
   @js.native
   /**
     @hidden
     */
-  class BooleanPredicate () extends Predicate[Boolean] {
+  open class BooleanPredicate () extends Predicate[Boolean] {
     def this(options: PredicateOptions) = this()
     
     /**

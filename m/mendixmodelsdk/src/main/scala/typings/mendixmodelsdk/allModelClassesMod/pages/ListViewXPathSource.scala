@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewXPathSource")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewXPathSource")
 @js.native
-class ListViewXPathSource protected ()
+open class ListViewXPathSource protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.ListViewXPathSource {
   def this(
     model: AbstractModel,
@@ -27,7 +27,7 @@ class ListViewXPathSource protected ()
 }
 object ListViewXPathSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewXPathSource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewXPathSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +70,13 @@ object ListViewXPathSource {
   inline def createInWidgetValueUnderDataSource(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.ListViewXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ListViewXPathSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewXPathSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewXPathSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ListViewXPathSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ListViewXPathSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

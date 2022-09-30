@@ -5,9 +5,9 @@ import typings.codemirrorState.anon.Changes
 import typings.codemirrorState.anon.Effects
 import typings.codemirrorState.anon.PickTransactionSpeceffect
 import typings.codemirrorState.codemirrorStateBooleans.`false`
-import typings.codemirrorState.codemirrorStateNumbers.`-1`
-import typings.codemirrorState.codemirrorStateNumbers.`0`
-import typings.codemirrorState.codemirrorStateNumbers.`1`
+import typings.codemirrorState.codemirrorStateInts.`-1`
+import typings.codemirrorState.codemirrorStateInts.`0`
+import typings.codemirrorState.codemirrorStateInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

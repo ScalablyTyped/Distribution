@@ -115,6 +115,10 @@ object iconsMod {
   @js.native
   val siAdidas: I = js.native
   
+  @JSImport("simple-icons/icons", "siAdminer")
+  @js.native
+  val siAdminer: I = js.native
+  
   @JSImport("simple-icons/icons", "siAdobe")
   @js.native
   val siAdobe: I = js.native
@@ -406,6 +410,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siAmazonfiretv")
   @js.native
   val siAmazonfiretv: I = js.native
+  
+  @JSImport("simple-icons/icons", "siAmazongames")
+  @js.native
+  val siAmazongames: I = js.native
   
   @JSImport("simple-icons/icons", "siAmazonlumberyard")
   @js.native
@@ -1334,6 +1342,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siCachet")
   @js.native
   val siCachet: I = js.native
+  
+  @JSImport("simple-icons/icons", "siCafepress")
+  @js.native
+  val siCafepress: I = js.native
   
   @JSImport("simple-icons/icons", "siCaffeine")
   @js.native
@@ -2475,6 +2487,10 @@ object iconsMod {
   @js.native
   val siElectronbuilder: I = js.native
   
+  @JSImport("simple-icons/icons", "siElectronfiddle")
+  @js.native
+  val siElectronfiddle: I = js.native
+  
   @JSImport("simple-icons/icons", "siElement")
   @js.native
   val siElement: I = js.native
@@ -2702,6 +2718,14 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siFandom")
   @js.native
   val siFandom: I = js.native
+  
+  @JSImport("simple-icons/icons", "siFanfou")
+  @js.native
+  val siFanfou: I = js.native
+  
+  @JSImport("simple-icons/icons", "siFantom")
+  @js.native
+  val siFantom: I = js.native
   
   @JSImport("simple-icons/icons", "siFarfetch")
   @js.native
@@ -3046,6 +3070,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siGameandwatch")
   @js.native
   val siGameandwatch: I = js.native
+  
+  @JSImport("simple-icons/icons", "siGamedeveloper")
+  @js.native
+  val siGamedeveloper: I = js.native
   
   @JSImport("simple-icons/icons", "siGamejolt")
   @js.native
@@ -3975,6 +4003,10 @@ object iconsMod {
   @js.native
   val siIntellijidea: I = js.native
   
+  @JSImport("simple-icons/icons", "siInteractiondesignfoundation")
+  @js.native
+  val siInteractiondesignfoundation: I = js.native
+  
   @JSImport("simple-icons/icons", "siInteractjs")
   @js.native
   val siInteractjs: I = js.native
@@ -4198,6 +4230,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siJss")
   @js.native
   val siJss: I = js.native
+  
+  @JSImport("simple-icons/icons", "siJuke")
+  @js.native
+  val siJuke: I = js.native
   
   @JSImport("simple-icons/icons", "siJulia")
   @js.native
@@ -4798,6 +4834,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siMacos")
   @js.native
   val siMacos: I = js.native
+  
+  @JSImport("simple-icons/icons", "siMacpaw")
+  @js.native
+  val siMacpaw: I = js.native
   
   @JSImport("simple-icons/icons", "siMacys")
   @js.native
@@ -6815,6 +6855,10 @@ object iconsMod {
   @js.native
   val siReebok: I = js.native
   
+  @JSImport("simple-icons/icons", "siRelay")
+  @js.native
+  val siRelay: I = js.native
+  
   @JSImport("simple-icons/icons", "siRelianceindustrieslimited")
   @js.native
   val siRelianceindustrieslimited: I = js.native
@@ -6862,6 +6906,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siResearchgate")
   @js.native
   val siResearchgate: I = js.native
+  
+  @JSImport("simple-icons/icons", "siResharper")
+  @js.native
+  val siResharper: I = js.native
   
   @JSImport("simple-icons/icons", "siResurrectionremixos")
   @js.native
@@ -7279,6 +7327,10 @@ object iconsMod {
   @js.native
   val siSessionize: I = js.native
   
+  @JSImport("simple-icons/icons", "siSetapp")
+  @js.native
+  val siSetapp: I = js.native
+  
   @JSImport("simple-icons/icons", "siSfml")
   @js.native
   val siSfml: I = js.native
@@ -7319,6 +7371,10 @@ object iconsMod {
   @js.native
   val siShikimori: I = js.native
   
+  @JSImport("simple-icons/icons", "siShopee")
+  @js.native
+  val siShopee: I = js.native
+  
   @JSImport("simple-icons/icons", "siShopify")
   @js.native
   val siShopify: I = js.native
@@ -7350,6 +7406,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siSignal")
   @js.native
   val siSignal: I = js.native
+  
+  @JSImport("simple-icons/icons", "siSimilarweb")
+  @js.native
+  val siSimilarweb: I = js.native
   
   @JSImport("simple-icons/icons", "siSimkl")
   @js.native
@@ -7518,6 +7578,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siSolus")
   @js.native
   val siSolus: I = js.native
+  
+  @JSImport("simple-icons/icons", "siSonar")
+  @js.native
+  val siSonar: I = js.native
   
   @JSImport("simple-icons/icons", "siSonarcloud")
   @js.native
@@ -7995,6 +8059,14 @@ object iconsMod {
   @js.native
   val siTado: I = js.native
   
+  @JSImport("simple-icons/icons", "siTaichigraphics")
+  @js.native
+  val siTaichigraphics: I = js.native
+  
+  @JSImport("simple-icons/icons", "siTaichilang")
+  @js.native
+  val siTaichilang: I = js.native
+  
   @JSImport("simple-icons/icons", "siTails")
   @js.native
   val siTails: I = js.native
@@ -8010,6 +8082,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siTalenthouse")
   @js.native
   val siTalenthouse: I = js.native
+  
+  @JSImport("simple-icons/icons", "siTamiya")
+  @js.native
+  val siTamiya: I = js.native
   
   @JSImport("simple-icons/icons", "siTampermonkey")
   @js.native
@@ -8222,6 +8298,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siTide")
   @js.native
   val siTide: I = js.native
+  
+  @JSImport("simple-icons/icons", "siTidyverse")
+  @js.native
+  val siTidyverse: I = js.native
   
   @JSImport("simple-icons/icons", "siTietoevry")
   @js.native
@@ -8759,6 +8839,10 @@ object iconsMod {
   @js.native
   val siVitess: I = js.native
   
+  @JSImport("simple-icons/icons", "siVitest")
+  @js.native
+  val siVitest: I = js.native
+  
   @JSImport("simple-icons/icons", "siVivaldi")
   @js.native
   val siVivaldi: I = js.native
@@ -8806,6 +8890,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siVsco")
   @js.native
   val siVsco: I = js.native
+  
+  @JSImport("simple-icons/icons", "siVscodium")
+  @js.native
+  val siVscodium: I = js.native
   
   @JSImport("simple-icons/icons", "siVtex")
   @js.native
@@ -8862,6 +8950,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siWarnerbros")
   @js.native
   val siWarnerbros: I = js.native
+  
+  @JSImport("simple-icons/icons", "siWarp")
+  @js.native
+  val siWarp: I = js.native
   
   @JSImport("simple-icons/icons", "siWasmcloud")
   @js.native
@@ -9366,6 +9458,10 @@ object iconsMod {
   @JSImport("simple-icons/icons", "siZillow")
   @js.native
   val siZillow: I = js.native
+  
+  @JSImport("simple-icons/icons", "siZincsearch")
+  @js.native
+  val siZincsearch: I = js.native
   
   @JSImport("simple-icons/icons", "siZingat")
   @js.native

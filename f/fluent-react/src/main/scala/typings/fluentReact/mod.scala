@@ -3,7 +3,7 @@ package typings.fluentReact
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.fluent.mod.FluentBundle
-import typings.fluentReact.fluentReactNumbers.`3`
+import typings.fluentReact.fluentReactInts.`3`
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState

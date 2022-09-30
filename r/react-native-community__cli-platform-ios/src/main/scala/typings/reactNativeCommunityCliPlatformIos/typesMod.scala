@@ -19,6 +19,8 @@ object typesMod {
     
     var isAvailable: js.UndefOr[Boolean] = js.undefined
     
+    var lastBootedAt: js.UndefOr[String] = js.undefined
+    
     var name: String
     
     var state: js.UndefOr[String] = js.undefined
@@ -53,6 +55,10 @@ object typesMod {
       inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
       
       inline def setIsAvailableUndefined: Self = StObject.set(x, "isAvailable", js.undefined)
+      
+      inline def setLastBootedAt(value: String): Self = StObject.set(x, "lastBootedAt", value.asInstanceOf[js.Any])
+      
+      inline def setLastBootedAtUndefined: Self = StObject.set(x, "lastBootedAt", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

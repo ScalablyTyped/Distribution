@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a field.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @JSGlobal("Word.Field")
 @js.native

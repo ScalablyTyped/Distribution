@@ -1,9 +1,9 @@
 package typings.activexLibreoffice.com_.sun.star
 
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
 import typings.activexLibreoffice.com_.sun.star.datatransfer.XTransferable
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
@@ -144,9 +144,9 @@ object mail {
   
   /** @since OOo 2.0 */
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`0`
   */
   trait MailServiceType extends StObject
   object MailServiceType {

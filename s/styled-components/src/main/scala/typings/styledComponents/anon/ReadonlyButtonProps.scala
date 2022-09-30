@@ -16,7 +16,7 @@ trait ReadonlyButtonProps extends StObject {
   
   val color: js.UndefOr[ColorValue] = js.undefined
   
-  val disabled: js.UndefOr[Boolean | Null] = js.undefined
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
   val hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -36,7 +36,7 @@ trait ReadonlyButtonProps extends StObject {
   
   val title: String
   
-  val touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  val touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyButtonProps {
   
@@ -60,8 +60,6 @@ object ReadonlyButtonProps {
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
-    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
@@ -100,8 +98,6 @@ object ReadonlyButtonProps {
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
   }

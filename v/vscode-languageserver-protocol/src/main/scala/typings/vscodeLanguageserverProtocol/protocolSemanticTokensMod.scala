@@ -18,7 +18,6 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokensSlashfull
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokensSlashfullSlashdelta
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsemanticTokensSlashrange
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashsemanticTokensSlashrefresh
 import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.SemanticTokens
 import typings.vscodeLanguageserverTypes.mod.SemanticTokensDelta
@@ -96,7 +95,7 @@ object protocolSemanticTokensMod {
     
     @JSImport("vscode-languageserver-protocol/lib/common/protocol.semanticTokens", "SemanticTokensRefreshRequest.method")
     @js.native
-    val method: workspaceSlashsemanticTokensSlashrefresh = js.native
+    val method: /* template literal string: workspace/semanticTokens/refresh */ String = js.native
     
     @JSImport("vscode-languageserver-protocol/lib/common/protocol.semanticTokens", "SemanticTokensRefreshRequest.type")
     @js.native

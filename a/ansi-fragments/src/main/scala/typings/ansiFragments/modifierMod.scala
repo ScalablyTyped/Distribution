@@ -26,7 +26,7 @@ object modifierMod {
     /* private */ val modifier: Any = js.native
   }
   
-  inline def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("modifier")(List(ansiModifier.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Modifier_]
+  inline def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("modifier")(scala.List(ansiModifier.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Modifier_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.dim

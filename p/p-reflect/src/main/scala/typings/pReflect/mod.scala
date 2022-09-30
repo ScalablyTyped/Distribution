@@ -4,6 +4,7 @@ import typings.pReflect.pReflectBooleans.`false`
 import typings.pReflect.pReflectBooleans.`true`
 import typings.pReflect.pReflectStrings.fulfilled
 import typings.pReflect.pReflectStrings.rejected
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ValueType](promise: js.Thenable[ValueType]): js.Promise[PromiseResult[ValueType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseResult[ValueType]]]
+  inline def default[ValueType](promise: PromiseLike[ValueType]): js.Promise[PromiseResult[ValueType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseResult[ValueType]]]
   
   inline def isFulfilled[T](promiseResult: PromiseResult[T]): /* is p-reflect.p-reflect.PromiseFulfilledResult<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFulfilled")(promiseResult.asInstanceOf[js.Any]).asInstanceOf[/* is p-reflect.p-reflect.PromiseFulfilledResult<T> */ Boolean]
   

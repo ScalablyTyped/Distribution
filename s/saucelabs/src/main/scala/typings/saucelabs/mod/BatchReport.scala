@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchReport
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var batchId: js.UndefOr[Id] = js.undefined
   
@@ -71,7 +71,7 @@ object BatchReport {
     
     inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    inline def setDevicesVarargs(value: DeviceView*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: DeviceView*): Self = StObject.set(x, "devices", js.Array(value*))
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object BatchReport {
     
     inline def setNotificationEmailsUndefined: Self = StObject.set(x, "notificationEmails", js.undefined)
     
-    inline def setNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "notificationEmails", js.Array(value :_*))
+    inline def setNotificationEmailsVarargs(value: String*): Self = StObject.set(x, "notificationEmails", js.Array(value*))
     
     inline def setNotificationEnabled(value: Boolean): Self = StObject.set(x, "notificationEnabled", value.asInstanceOf[js.Any])
     
@@ -103,7 +103,7 @@ object BatchReport {
     
     inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    inline def setReportsVarargs(value: ReportEntry*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: ReportEntry*): Self = StObject.set(x, "reports", js.Array(value*))
     
     inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
@@ -125,6 +125,6 @@ object BatchReport {
     
     inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
     
-    inline def setTestsVarargs(value: TestView*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: TestView*): Self = StObject.set(x, "tests", js.Array(value*))
   }
 }

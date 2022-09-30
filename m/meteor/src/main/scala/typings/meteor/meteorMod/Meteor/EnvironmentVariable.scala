@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("meteor/meteor", "Meteor.EnvironmentVariable")
 @js.native
-class EnvironmentVariable[T] () extends StObject {
+open class EnvironmentVariable[T] () extends StObject {
   
   def get(): T = js.native
   

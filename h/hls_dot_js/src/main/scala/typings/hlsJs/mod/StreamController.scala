@@ -69,7 +69,7 @@ trait StreamController
   
   /* private */ var getBufferedFrag: Any = js.native
   
-  /* private */ var getMainFwdBufferInfo: Any = js.native
+  def getMainFwdBufferInfo(): BufferInfo | Null = js.native
   
   def immediateLevelSwitch(): Unit = js.native
   

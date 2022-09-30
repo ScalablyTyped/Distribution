@@ -4,27 +4,27 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.athenajs.athenajsBooleans.`false`
-import typings.athenajs.athenajsNumbers.`10`
-import typings.athenajs.athenajsNumbers.`11`
-import typings.athenajs.athenajsNumbers.`12`
-import typings.athenajs.athenajsNumbers.`13`
-import typings.athenajs.athenajsNumbers.`14`
-import typings.athenajs.athenajsNumbers.`15`
-import typings.athenajs.athenajsNumbers.`17`
-import typings.athenajs.athenajsNumbers.`1`
-import typings.athenajs.athenajsNumbers.`27`
-import typings.athenajs.athenajsNumbers.`2`
-import typings.athenajs.athenajsNumbers.`37`
-import typings.athenajs.athenajsNumbers.`38`
-import typings.athenajs.athenajsNumbers.`39`
-import typings.athenajs.athenajsNumbers.`3`
-import typings.athenajs.athenajsNumbers.`40`
-import typings.athenajs.athenajsNumbers.`4`
-import typings.athenajs.athenajsNumbers.`5`
-import typings.athenajs.athenajsNumbers.`6`
-import typings.athenajs.athenajsNumbers.`7`
-import typings.athenajs.athenajsNumbers.`8`
-import typings.athenajs.athenajsNumbers.`9`
+import typings.athenajs.athenajsInts.`10`
+import typings.athenajs.athenajsInts.`11`
+import typings.athenajs.athenajsInts.`12`
+import typings.athenajs.athenajsInts.`13`
+import typings.athenajs.athenajsInts.`14`
+import typings.athenajs.athenajsInts.`15`
+import typings.athenajs.athenajsInts.`17`
+import typings.athenajs.athenajsInts.`1`
+import typings.athenajs.athenajsInts.`27`
+import typings.athenajs.athenajsInts.`2`
+import typings.athenajs.athenajsInts.`37`
+import typings.athenajs.athenajsInts.`38`
+import typings.athenajs.athenajsInts.`39`
+import typings.athenajs.athenajsInts.`3`
+import typings.athenajs.athenajsInts.`40`
+import typings.athenajs.athenajsInts.`4`
+import typings.athenajs.athenajsInts.`5`
+import typings.athenajs.athenajsInts.`6`
+import typings.athenajs.athenajsInts.`7`
+import typings.athenajs.athenajsInts.`8`
+import typings.athenajs.athenajsInts.`9`
 import typings.athenajs.mod.Behavior
 import typings.athenajs.mod.Display
 import typings.athenajs.mod.Drawable
@@ -168,7 +168,7 @@ object anon {
     
     var RIGHT: `39`
     
-    var SPACE: typings.athenajs.athenajsNumbers.`32`
+    var SPACE: typings.athenajs.athenajsInts.`32`
     
     var UP: `38`
   }
@@ -193,7 +193,7 @@ object anon {
       
       inline def setRIGHT(value: `39`): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
       
-      inline def setSPACE(value: typings.athenajs.athenajsNumbers.`32`): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
+      inline def setSPACE(value: typings.athenajs.athenajsInts.`32`): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
       
       inline def setUP(value: `38`): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
     }

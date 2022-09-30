@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-leaflet-markercluster
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 React wrapper of Leaflet.markercluster for react-laeflet
@@ -11,9 +11,9 @@ React wrapper of Leaflet.markercluster for react-laeflet
 | Full name          | react-leaflet-markercluster |
 | Keywords           | react, leaflet, react-leaflet, markercluster, marker, cluster |
 | # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 805144 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 146190.0 |
+| # stars            | 265.0 |
 
 ## Links
 - [Homepage](https://github.com/YUzhva/react-leaflet-markercluster#readme)

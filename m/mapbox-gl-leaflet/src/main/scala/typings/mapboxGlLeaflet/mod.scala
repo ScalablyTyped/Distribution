@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("leaflet", "MapboxGL")
   @js.native
-  class MapboxGL_ protected () extends Layer {
+  open class MapboxGL_ protected () extends Layer {
     def this(options: MapboxGLOptions) = this()
   }
   

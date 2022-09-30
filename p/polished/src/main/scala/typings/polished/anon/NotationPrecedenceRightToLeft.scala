@@ -1,7 +1,7 @@
 package typings.polished.anon
 
-import typings.polished.polishedNumbers.`0`
-import typings.polished.polishedNumbers.`1`
+import typings.polished.polishedInts.`0`
+import typings.polished.polishedInts.`1`
 import typings.polished.polishedStrings.func
 import typings.polished.polishedStrings.sqrt
 import org.scalablytyped.runtime.StObject

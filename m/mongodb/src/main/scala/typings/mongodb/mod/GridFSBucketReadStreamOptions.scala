@@ -6,12 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridFSBucketReadStreamOptions extends StObject {
   
+  /** 0-based offset in bytes to stop streaming before */
   var end: js.UndefOr[scala.Double] = js.undefined
   
   var skip: js.UndefOr[scala.Double] = js.undefined
   
-  var sort: js.UndefOr[scala.Double] = js.undefined
+  var sort: js.UndefOr[Sort] = js.undefined
   
+  /** 0-based offset in bytes to start streaming from */
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 object GridFSBucketReadStreamOptions {
@@ -31,9 +33,11 @@ object GridFSBucketReadStreamOptions {
     
     inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    inline def setSort(value: scala.Double): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Sort): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortVarargs(value: (String | (js.Tuple2[String, SortDirection]))*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setStart(value: scala.Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ trait DescribeMapResponse extends StObject {
   /**
     * The Amazon Resource Name (ARN) for the map resource. Used to specify a resource across all AWS.   Format example: arn:aws:geo:region:account-id:maps/ExampleMap   
     */
-  var MapArn: Arn
+  var MapArn: GeoArn
   
   /**
     * The map style selected from an available provider.
@@ -58,7 +58,7 @@ object DescribeMapResponse {
     CreateTime: js.Date,
     DataSource: String,
     Description: ResourceDescription,
-    MapArn: Arn,
+    MapArn: GeoArn,
     MapName: ResourceName,
     UpdateTime: js.Date
   ): DescribeMapResponse = {
@@ -76,7 +76,7 @@ object DescribeMapResponse {
     
     inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    inline def setMapArn(value: Arn): Self = StObject.set(x, "MapArn", value.asInstanceOf[js.Any])
+    inline def setMapArn(value: GeoArn): Self = StObject.set(x, "MapArn", value.asInstanceOf[js.Any])
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,10 @@ import typings.express.mod.Response_
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import typings.yogLog.yogLogBooleans.`false`
-import typings.yogLog.yogLogNumbers.`-1`
-import typings.yogLog.yogLogNumbers.`0`
-import typings.yogLog.yogLogNumbers.`16`
-import typings.yogLog.yogLogNumbers.`1`
+import typings.yogLog.yogLogInts.`-1`
+import typings.yogLog.yogLogInts.`0`
+import typings.yogLog.yogLogInts.`16`
+import typings.yogLog.yogLogInts.`1`
 import typings.yogLog.yogLogStrings.ACCESS
 import typings.yogLog.yogLogStrings.ACCESS_ERROR
 import typings.yogLog.yogLogStrings.DEBUG
@@ -216,13 +216,13 @@ object mod {
     - typings.yogLog.yogLogStrings.`4`
     - typings.yogLog.yogLogStrings.`8`
     - typings.yogLog.yogLogStrings.`16`
-    - typings.yogLog.yogLogNumbers.`0`
-    - typings.yogLog.yogLogNumbers.`3`
-    - typings.yogLog.yogLogNumbers.`1`
-    - typings.yogLog.yogLogNumbers.`2`
-    - typings.yogLog.yogLogNumbers.`4`
-    - typings.yogLog.yogLogNumbers.`8`
-    - typings.yogLog.yogLogNumbers.`16`
+    - typings.yogLog.yogLogInts.`0`
+    - typings.yogLog.yogLogInts.`3`
+    - typings.yogLog.yogLogInts.`1`
+    - typings.yogLog.yogLogInts.`2`
+    - typings.yogLog.yogLogInts.`4`
+    - typings.yogLog.yogLogInts.`8`
+    - typings.yogLog.yogLogInts.`16`
   */
   trait LevelInt extends StObject
   

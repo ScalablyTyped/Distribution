@@ -124,7 +124,7 @@ object readonlyRecord {
   
   inline def every[A](predicate: Predicate[A]): Predicate[ReadonlyRecord_[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[Predicate[ReadonlyRecord_[String, A]]]
   
-  inline def every_AB_A_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]]
+  inline def every_AB_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]]
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* fb */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, A]]]
   
@@ -134,9 +134,9 @@ object readonlyRecord {
   
   inline def filterWithIndex[K /* <: String */, A](predicateWithIndex: PredicateWithIndex[K, A]): js.Function1[/* fb */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, A]]]
   
-  inline def filterWithIndex_K_StringAB_A[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]]]
+  inline def filterWithIndex_KAB[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[K, A], ReadonlyRecord_[String, B]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ Record[String, js.Function1[/* a */ A, Any]], Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Record[String, js.Function1[/* a */ A, Any]], Record[String, Any]]]
   
@@ -338,7 +338,7 @@ object readonlyRecord {
     Separated_[ReadonlyRecord_[String, A], ReadonlyRecord_[String, A]]
   ]]
   
-  inline def partitionWithIndex_K_StringAB_A[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[
+  inline def partitionWithIndex_KAB[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[
     /* fa */ ReadonlyRecord_[K, A], 
     Separated_[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -346,7 +346,7 @@ object readonlyRecord {
     Separated_[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]
   ]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
     /* fa */ ReadonlyRecord_[String, A], 
     Separated_[ReadonlyRecord_[String, A], ReadonlyRecord_[String, B]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

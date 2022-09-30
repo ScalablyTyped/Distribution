@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.HeaderAuthentication")
 @js.native
-class HeaderAuthentication protected ()
+open class HeaderAuthentication protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.HeaderAuthentication {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

@@ -330,6 +330,7 @@ import typings.std.HTMLVideoElement
 import typings.std.Iterable
 import typings.std.Partial
 import typings.std.Pick
+import typings.std.PromiseLike
 import typings.std.SVGAnimateElement
 import typings.std.SVGAnimateMotionElement
 import typings.std.SVGAnimateTransformElement
@@ -22617,7 +22618,7 @@ object JQuery {
     - typings.jquery.jqueryBooleans.`false`
     - scala.Null
     - scala.Unit
-    - typings.jquery.jqueryNumbers.`0`
+    - typings.jquery.jqueryInts.`0`
     - typings.jquery.jqueryStrings._empty
     - typings.std.HTMLAllCollection
   */
@@ -26313,7 +26314,7 @@ object JQuery {
   /**
     * Any object that has a then method.
     */
-  type Thenable[T] = js.Thenable[T]
+  type Thenable[T] = PromiseLike[T]
   
   @js.native
   trait TickFunction[TElement] extends StObject {

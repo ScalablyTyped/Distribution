@@ -48,26 +48,26 @@ trait CollectionChain[T]
   /**
     * @see _.difference
     */
-  def difference(values: List[T]*): CollectionChain[T] = js.native
+  def difference(values: typings.lodash.mod.List[T]*): CollectionChain[T] = js.native
   
   /**
     * @see _.differenceBy
     */
-  def differenceBy(values: (List[Any] | ValueIteratee[T])*): CollectionChain[T] = js.native
+  def differenceBy(values: (typings.lodash.mod.List[Any] | ValueIteratee[T])*): CollectionChain[T] = js.native
   /**
     * @see _.differenceBy
     */
-  def differenceBy[T2](values1: List[T2]): CollectionChain[T] = js.native
-  def differenceBy[T2](values1: List[T2], iteratee: ValueIteratee[T | T2]): CollectionChain[T] = js.native
+  def differenceBy[T2](values1: typings.lodash.mod.List[T2]): CollectionChain[T] = js.native
+  def differenceBy[T2](values1: typings.lodash.mod.List[T2], iteratee: ValueIteratee[T | T2]): CollectionChain[T] = js.native
   
   /**
     * @see _.differenceWith
     */
-  def differenceWith[T2](values: List[T2], comparator: Comparator2[T, T2]): CollectionChain[T] = js.native
+  def differenceWith[T2](values: typings.lodash.mod.List[T2], comparator: Comparator2[T, T2]): CollectionChain[T] = js.native
   /**
     * @see _.differenceWith
     */
-  def differenceWith[T2, T3, T4](values: (List[Any] | (Comparator2[T, scala.Nothing]))*): CollectionChain[T] = js.native
+  def differenceWith[T2, T3, T4](values: (typings.lodash.mod.List[Any] | (Comparator2[T, scala.Nothing]))*): CollectionChain[T] = js.native
   
   /**
     * @see _.drop
@@ -310,25 +310,25 @@ trait CollectionChain[T]
   /**
     * @see _.intersection
     */
-  def intersection(arrays: (js.UndefOr[List[T] | Null])*): CollectionChain[T] = js.native
+  def intersection(arrays: (js.UndefOr[typings.lodash.mod.List[T] | Null])*): CollectionChain[T] = js.native
   
   /**
     * @see _.intersectionBy
     */
-  def intersectionBy(values: (List[Any] | ValueIteratee[T])*): CollectionChain[T] = js.native
+  def intersectionBy(values: (typings.lodash.mod.List[Any] | ValueIteratee[T])*): CollectionChain[T] = js.native
   /**
     * @see _.intersectionBy
     */
-  def intersectionBy[T2](values: List[T2], iteratee: ValueIteratee[T | T2]): CollectionChain[T] = js.native
+  def intersectionBy[T2](values: typings.lodash.mod.List[T2], iteratee: ValueIteratee[T | T2]): CollectionChain[T] = js.native
   
   /**
     * @see _.intersectionWith
     */
-  def intersectionWith(values: (List[Any] | (Comparator2[T, scala.Nothing]))*): CollectionChain[T] = js.native
+  def intersectionWith(values: (typings.lodash.mod.List[Any] | (Comparator2[T, scala.Nothing]))*): CollectionChain[T] = js.native
   /**
     * @see _.intersectionWith
     */
-  def intersectionWith[T2](values: List[T2], comparator: Comparator2[T, T2]): CollectionChain[T] = js.native
+  def intersectionWith[T2](values: typings.lodash.mod.List[T2], comparator: Comparator2[T, T2]): CollectionChain[T] = js.native
   
   /**
     * @see _.invertBy
@@ -419,7 +419,7 @@ trait CollectionChain[T]
     * @see _.map
     */
   @JSName("map")
-  def map_K_String[K /* <: /* keyof T */ java.lang.String */](key: K): CollectionChain[
+  def map_K[K /* <: /* keyof T */ java.lang.String */](key: K): CollectionChain[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = js.native
   
@@ -524,23 +524,23 @@ trait CollectionChain[T]
     * @see _.pullAll
     */
   def pullAll(): CollectionChain[T] = js.native
-  def pullAll(values: List[T]): CollectionChain[T] = js.native
+  def pullAll(values: typings.lodash.mod.List[T]): CollectionChain[T] = js.native
   
   /**
     * @see _.pullAllBy
     */
   def pullAllBy[T2](): CollectionChain[T] = js.native
   def pullAllBy[T2](values: Unit, iteratee: ValueIteratee[T | T2]): CollectionChain[T] = js.native
-  def pullAllBy[T2](values: List[T2]): CollectionChain[T] = js.native
-  def pullAllBy[T2](values: List[T2], iteratee: ValueIteratee[T | T2]): CollectionChain[T] = js.native
+  def pullAllBy[T2](values: typings.lodash.mod.List[T2]): CollectionChain[T] = js.native
+  def pullAllBy[T2](values: typings.lodash.mod.List[T2], iteratee: ValueIteratee[T | T2]): CollectionChain[T] = js.native
   
   /**
     * @see _.pullAllWith
     */
   def pullAllWith[T2](): CollectionChain[T] = js.native
   def pullAllWith[T2](values: Unit, comparator: Comparator2[T, T2]): CollectionChain[T] = js.native
-  def pullAllWith[T2](values: List[T2]): CollectionChain[T] = js.native
-  def pullAllWith[T2](values: List[T2], comparator: Comparator2[T, T2]): CollectionChain[T] = js.native
+  def pullAllWith[T2](values: typings.lodash.mod.List[T2]): CollectionChain[T] = js.native
+  def pullAllWith[T2](values: typings.lodash.mod.List[T2], comparator: Comparator2[T, T2]): CollectionChain[T] = js.native
   
   /**
     * @see _.pullAt
@@ -552,20 +552,20 @@ trait CollectionChain[T]
   /**
     * @see _.reduce
     */
-  def reduce(callback: MemoListIterator[T, T, List[T]]): ExpChain[js.UndefOr[T]] = js.native
+  def reduce(callback: MemoListIterator[T, T, typings.lodash.mod.List[T]]): ExpChain[js.UndefOr[T]] = js.native
   /**
     * @see _.reduce
     */
-  def reduce[TResult](callback: MemoListIterator[T, TResult, List[T]], accumulator: TResult): ExpChain[TResult] = js.native
+  def reduce[TResult](callback: MemoListIterator[T, TResult, typings.lodash.mod.List[T]], accumulator: TResult): ExpChain[TResult] = js.native
   
   /**
     * @see _.reduceRight
     */
-  def reduceRight(callback: MemoListIterator[T, T, List[T]]): ExpChain[js.UndefOr[T]] = js.native
+  def reduceRight(callback: MemoListIterator[T, T, typings.lodash.mod.List[T]]): ExpChain[js.UndefOr[T]] = js.native
   /**
     * @see _.reduceRight
     */
-  def reduceRight[TResult](callback: MemoListIterator[T, TResult, List[T]], accumulator: TResult): ExpChain[TResult] = js.native
+  def reduceRight[TResult](callback: MemoListIterator[T, TResult, typings.lodash.mod.List[T]], accumulator: TResult): ExpChain[TResult] = js.native
   
   /**
     * @see _.reject
@@ -717,7 +717,7 @@ trait CollectionChain[T]
   /**
     * @see _.union
     */
-  def union(arrays: (js.UndefOr[List[T] | Null])*): CollectionChain[T] = js.native
+  def union(arrays: (js.UndefOr[typings.lodash.mod.List[T] | Null])*): CollectionChain[T] = js.native
   
   /**
     * @see _.unionBy
@@ -725,12 +725,12 @@ trait CollectionChain[T]
   def unionBy(): CollectionChain[T] = js.native
   def unionBy(arrays2: Null, iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
   def unionBy(arrays2: Unit, iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
-  def unionBy(arrays2: List[T]): CollectionChain[T] = js.native
-  def unionBy(arrays2: List[T], iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
+  def unionBy(arrays2: typings.lodash.mod.List[T]): CollectionChain[T] = js.native
+  def unionBy(arrays2: typings.lodash.mod.List[T], iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
   /**
     * @see _.unionBy
     */
-  def unionBy(iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): CollectionChain[T] = js.native
+  def unionBy(iteratee: (js.UndefOr[ValueIteratee[T] | typings.lodash.mod.List[T] | Null])*): CollectionChain[T] = js.native
   
   /**
     * @see _.unionWith
@@ -738,12 +738,12 @@ trait CollectionChain[T]
   def unionWith(): CollectionChain[T] = js.native
   def unionWith(arrays2: Null, comparator: Comparator[T]): CollectionChain[T] = js.native
   def unionWith(arrays2: Unit, comparator: Comparator[T]): CollectionChain[T] = js.native
-  def unionWith(arrays2: List[T]): CollectionChain[T] = js.native
-  def unionWith(arrays2: List[T], comparator: Comparator[T]): CollectionChain[T] = js.native
+  def unionWith(arrays2: typings.lodash.mod.List[T]): CollectionChain[T] = js.native
+  def unionWith(arrays2: typings.lodash.mod.List[T], comparator: Comparator[T]): CollectionChain[T] = js.native
   /**
     * @see _.unionWith
     */
-  def unionWith(comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): CollectionChain[T] = js.native
+  def unionWith(comparator: (js.UndefOr[Comparator[T] | typings.lodash.mod.List[T] | Null])*): CollectionChain[T] = js.native
   
   /**
     * @see _.uniq
@@ -785,7 +785,7 @@ trait CollectionChain[T]
   /**
     * @see _.xor
     */
-  def xor(arrays: (js.UndefOr[List[T] | Null])*): CollectionChain[T] = js.native
+  def xor(arrays: (js.UndefOr[typings.lodash.mod.List[T] | Null])*): CollectionChain[T] = js.native
   
   /**
     * @see _.xorBy
@@ -793,12 +793,12 @@ trait CollectionChain[T]
   def xorBy(): CollectionChain[T] = js.native
   def xorBy(arrays2: Null, iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
   def xorBy(arrays2: Unit, iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
-  def xorBy(arrays2: List[T]): CollectionChain[T] = js.native
-  def xorBy(arrays2: List[T], iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
+  def xorBy(arrays2: typings.lodash.mod.List[T]): CollectionChain[T] = js.native
+  def xorBy(arrays2: typings.lodash.mod.List[T], iteratee: ValueIteratee[T]): CollectionChain[T] = js.native
   /**
     * @see _.xorBy
     */
-  def xorBy(iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): CollectionChain[T] = js.native
+  def xorBy(iteratee: (js.UndefOr[ValueIteratee[T] | typings.lodash.mod.List[T] | Null])*): CollectionChain[T] = js.native
   
   /**
     * @see _.xorWith
@@ -806,21 +806,21 @@ trait CollectionChain[T]
   def xorWith(): CollectionChain[T] = js.native
   def xorWith(arrays2: Null, comparator: Comparator[T]): CollectionChain[T] = js.native
   def xorWith(arrays2: Unit, comparator: Comparator[T]): CollectionChain[T] = js.native
-  def xorWith(arrays2: List[T]): CollectionChain[T] = js.native
-  def xorWith(arrays2: List[T], comparator: Comparator[T]): CollectionChain[T] = js.native
+  def xorWith(arrays2: typings.lodash.mod.List[T]): CollectionChain[T] = js.native
+  def xorWith(arrays2: typings.lodash.mod.List[T], comparator: Comparator[T]): CollectionChain[T] = js.native
   /**
     * @see _.xorWith
     */
-  def xorWith(comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): CollectionChain[T] = js.native
+  def xorWith(comparator: (js.UndefOr[Comparator[T] | typings.lodash.mod.List[T] | Null])*): CollectionChain[T] = js.native
   
   /**
     * @see _.zip
     */
-  def zip(arrays: (js.UndefOr[List[T] | Null])*): CollectionChain[js.Array[js.UndefOr[T]]] = js.native
+  def zip(arrays: (js.UndefOr[typings.lodash.mod.List[T] | Null])*): CollectionChain[js.Array[js.UndefOr[T]]] = js.native
   /**
     * @see _.zip
     */
-  def zip[T2](arrays2: List[T2]): CollectionChain[js.Tuple2[js.UndefOr[T], js.UndefOr[T2]]] = js.native
+  def zip[T2](arrays2: typings.lodash.mod.List[T2]): CollectionChain[js.Tuple2[js.UndefOr[T], js.UndefOr[T2]]] = js.native
   
   /**
     * @see _.zipObject
@@ -829,28 +829,33 @@ trait CollectionChain[T]
   /**
     * @see _.zipObject
     */
-  def zipObject[U](values: List[U]): ObjectChain[Dictionary[U]] = js.native
+  def zipObject[U](values: typings.lodash.mod.List[U]): ObjectChain[Dictionary[U]] = js.native
   
   /**
     * @see _.zipObjectDeep
     */
   def zipObjectDeep(): ObjectChain[js.Object] = js.native
-  def zipObjectDeep(values: List[Any]): ObjectChain[js.Object] = js.native
+  def zipObjectDeep(values: typings.lodash.mod.List[Any]): ObjectChain[js.Object] = js.native
   
   /**
     * @see _.zipWith
     */
-  def zipWith[TResult](iteratee: (js.UndefOr[(js.Function1[/* repeated */ T, TResult]) | List[T] | Null])*): CollectionChain[TResult] = js.native
+  def zipWith[TResult](
+    iteratee: (js.UndefOr[(js.Function1[/* repeated */ T, TResult]) | typings.lodash.mod.List[T] | Null])*
+  ): CollectionChain[TResult] = js.native
   /**
     * @see _.zipWith
     */
-  def zipWith[T2, TResult](arrays2: List[T2], iteratee: js.Function2[/* value1 */ T, /* value2 */ T2, TResult]): CollectionChain[TResult] = js.native
+  def zipWith[T2, TResult](
+    arrays2: typings.lodash.mod.List[T2],
+    iteratee: js.Function2[/* value1 */ T, /* value2 */ T2, TResult]
+  ): CollectionChain[TResult] = js.native
   /**
     * @see _.zipWith
     */
   def zipWith[T2, T3, TResult](
-    arrays2: List[T2],
-    arrays3: List[T3],
+    arrays2: typings.lodash.mod.List[T2],
+    arrays3: typings.lodash.mod.List[T3],
     iteratee: js.Function3[/* value1 */ T, /* value2 */ T2, /* value3 */ T3, TResult]
   ): CollectionChain[TResult] = js.native
 }

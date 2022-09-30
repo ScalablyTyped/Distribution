@@ -4,39 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The Point object represents a location in a two-dimensional coordinate system, where x represents
-  * the horizontal axis and y represents the vertical axis.
-  *
-  * An ObservablePoint is a point that triggers a callback when the point's position is changed.
-  *
-  * @class
-  * @memberof PIXI
-  * @implements IPoint
-  */
 @JSImport("pixi.js", "ObservablePoint")
 @js.native
-class ObservablePoint protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.ObservablePoint {
-  def this(cb: js.Function1[/* repeated */ js.Any, js.Any], scope: js.Any) = this()
-  def this(cb: js.Function1[/* repeated */ js.Any, js.Any], scope: js.Any, x: Double) = this()
-  def this(cb: js.Function1[/* repeated */ js.Any, js.Any], scope: js.Any, x: Double, y: Double) = this()
-  def this(cb: js.Function1[/* repeated */ js.Any, js.Any], scope: js.Any, x: Unit, y: Double) = this()
-  
+open class ObservablePoint[T] protected ()
+  extends typings.pixiMath.mod.ObservablePoint[T] {
   /**
-    * X coord
-    * @memberof PIXI.IPointData#
-    * @member {number} x
+    * Creates a new `ObservablePoint`
+    * @param cb - callback function triggered when `x` and/or `y` are changed
+    * @param scope - owner of callback
+    * @param {number} [x=0] - position of the point on the x axis
+    * @param {number} [y=0] - position of the point on the y axis
     */
-  /* CompleteClass */
-  var x: Double = js.native
-  
-  /**
-    * Y coord
-    * @memberof PIXI.IPointData#
-    * @member {number} y
-    */
-  /* CompleteClass */
-  var y: Double = js.native
+  def this(cb: js.ThisFunction0[/* this */ T, Any], scope: T) = this()
+  def this(cb: js.ThisFunction0[/* this */ T, Any], scope: T, x: Double) = this()
+  def this(cb: js.ThisFunction0[/* this */ T, Any], scope: T, x: Double, y: Double) = this()
+  def this(cb: js.ThisFunction0[/* this */ T, Any], scope: T, x: Unit, y: Double) = this()
 }

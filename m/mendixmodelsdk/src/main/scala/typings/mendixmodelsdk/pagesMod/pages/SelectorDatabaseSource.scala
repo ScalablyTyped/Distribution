@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 6.1.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectorDatabaseSource")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectorDatabaseSource")
 @js.native
-class SelectorDatabaseSource protected () extends SelectorSource {
+open class SelectorDatabaseSource protected () extends SelectorSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ class SelectorDatabaseSource protected () extends SelectorSource {
 }
 object SelectorDatabaseSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectorDatabaseSource")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectorDatabaseSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -61,13 +61,13 @@ object SelectorDatabaseSource {
   inline def createIn(container: AssociationWidget): SelectorDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SelectorDatabaseSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectorDatabaseSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectorDatabaseSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectorDatabaseSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectorDatabaseSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

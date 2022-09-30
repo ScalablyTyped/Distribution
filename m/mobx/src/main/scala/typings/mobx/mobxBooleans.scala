@@ -1,5 +1,6 @@
 package typings.mobx
 
+import typings.mobx.annotationMod.AnnotationMapEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mobxBooleans {
   
   @js.native
-  sealed trait `false` extends StObject
+  sealed trait `false`
+    extends StObject
+       with AnnotationMapEntry
   inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
-  sealed trait `true` extends StObject
+  sealed trait `true`
+    extends StObject
+       with AnnotationMapEntry
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

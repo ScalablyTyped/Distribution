@@ -34,9 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IConsumedODataService because var conflicts: applicationId, containerAsFolderBase, endpointId, environmentType, icon, id, isLoaded, minimumMxVersion, model, recommendedMxVersion, serviceName, structureTypeName, unit, version. Inlined lastUpdated */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
+- typings.mendixmodelsdk.restMod.rest.IConsumedODataService because var conflicts: applicationId, containerAsFolderBase, endpointId, environmentType, icon, id, isLoaded, metadataHash, minimumMxVersion, model, recommendedMxVersion, serviceName, structureTypeName, unit, validated, validatedEntities, version. Inlined lastUpdated */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.ConsumedODataService")
 @js.native
-class ConsumedODataService protected () extends RemoteEntitySourceDocument {
+open class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -47,6 +47,15 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MConsumedODataService: FolderBase = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  def errorHandlingMicroflow: IMicroflow | Null = js.native
+  
+  def errorHandlingMicroflowQualifiedName: String | Null = js.native
+  
+  def errorHandlingMicroflow_=(newValue: IMicroflow | Null): Unit = js.native
   
   /**
     * In version 8.4.0: introduced
@@ -132,10 +141,17 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 8.5.0: introduced
     */
   def timeoutModel: Expression = js.native
   def timeoutModel_=(newValue: Expression): Unit = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  def useQuerySegment: Boolean = js.native
+  def useQuerySegment_=(newValue: Boolean): Unit = js.native
   
   /**
     * In version 8.14.0: deleted
@@ -146,7 +162,7 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
 }
 object ConsumedODataService {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ConsumedODataService")
   @js.native
   val ^ : js.Any = js.native
   
@@ -158,13 +174,13 @@ object ConsumedODataService {
   inline def createIn(container: IFolderBase): ConsumedODataService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConsumedODataService]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ConsumedODataService.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ConsumedODataService.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

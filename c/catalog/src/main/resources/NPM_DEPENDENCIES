@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "catalog" : "3.6.0"
+      "catalog" : "3.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "catalog" : "3.6.0"
+      "catalog" : "3.6.2"
     }
   ],
   "compile-devDependencies" : [

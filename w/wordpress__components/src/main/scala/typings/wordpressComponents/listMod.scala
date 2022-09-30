@@ -54,7 +54,7 @@ object listMod {
         
         inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
         
-        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -105,7 +105,7 @@ object listMod {
         
         inline def setNotices(value: js.Array[Notice]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
         
-        inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value :_*))
+        inline def setNoticesVarargs(value: Notice*): Self = StObject.set(x, "notices", js.Array(value*))
         
         inline def setOnRemove(value: /* noticeId */ String => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
         

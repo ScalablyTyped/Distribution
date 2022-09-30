@@ -26,5 +26,5 @@ object mod {
   @js.native
   val Headers: typings.std.Headers = js.native
   
-  inline def default_D_DatasetCoreOutQuadInQuadOutQuad_BaseQuadInQuad_BaseQuad[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](url: String): js.Promise[DatasetResponse[D, OutQuad, InQuad]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DatasetResponse[D, OutQuad, InQuad]]]
+  inline def default_DOutQuadInQuad[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](url: String): js.Promise[DatasetResponse[D, OutQuad, InQuad]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DatasetResponse[D, OutQuad, InQuad]]]
 }

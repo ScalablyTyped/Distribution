@@ -30,14 +30,6 @@ object n3Strings {
   inline def DefaultGraph: DefaultGraph = "DefaultGraph".asInstanceOf[DefaultGraph]
   
   @js.native
-  sealed trait DollarLeftcurlybracketBaseFormatVariantRightcurlybracketDollarLeftcurlybracketStarRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketBaseFormatVariantRightcurlybracketDollarLeftcurlybracketStarRightcurlybracket: DollarLeftcurlybracketBaseFormatVariantRightcurlybracketDollarLeftcurlybracketStarRightcurlybracket = "${BaseFormatVariant}${Star}".asInstanceOf[DollarLeftcurlybracketBaseFormatVariantRightcurlybracketDollarLeftcurlybracketStarRightcurlybracket]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketMimeTypeRightcurlybracketSlashDollarLeftcurlybracketMimeSubtypeRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketMimeTypeRightcurlybracketSlashDollarLeftcurlybracketMimeSubtypeRightcurlybracket: DollarLeftcurlybracketMimeTypeRightcurlybracketSlashDollarLeftcurlybracketMimeSubtypeRightcurlybracket = "${MimeType}/${MimeSubtype}".asInstanceOf[DollarLeftcurlybracketMimeTypeRightcurlybracketSlashDollarLeftcurlybracketMimeSubtypeRightcurlybracket]
-  
-  @js.native
   sealed trait Literal extends StObject
   inline def Literal: Literal = "Literal".asInstanceOf[Literal]
   

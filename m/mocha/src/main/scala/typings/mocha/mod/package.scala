@@ -1,6 +1,7 @@
 package typings.mocha.mod
 
 import typings.mocha.Mocha.HookFunction
+import typings.mocha.Mocha.PendingSuiteFunction
 import typings.mocha.Mocha.PendingTestFunction
 import typings.mocha.Mocha.SuiteFunction
 import typings.mocha.Mocha.TestFunction
@@ -133,6 +134,14 @@ inline def teardown_=(x: HookFunction): Unit = ^.asInstanceOf[js.Dynamic].update
   */
 inline def test: TestFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("test").asInstanceOf[TestFunction]
 inline def test_=(x: TestFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("test")(x.asInstanceOf[js.Any])
+
+/**
+  * Describe a pending suite.
+  *
+  * - _Only available when invoked via the mocha CLI._
+  */
+inline def xdescribe: PendingSuiteFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("xdescribe").asInstanceOf[PendingSuiteFunction]
+inline def xdescribe_=(x: PendingSuiteFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xdescribe")(x.asInstanceOf[js.Any])
 
 /**
   * Describes a pending test case.

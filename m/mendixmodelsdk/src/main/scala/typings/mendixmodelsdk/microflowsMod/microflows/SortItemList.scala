@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SortItemList")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SortItemList")
 @js.native
-class SortItemList protected () extends Element[IModel] {
+open class SortItemList protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ class SortItemList protected () extends Element[IModel] {
 }
 object SortItemList {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SortItemList")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SortItemList")
   @js.native
   val ^ : js.Any = js.native
   
@@ -62,13 +62,13 @@ object SortItemList {
   inline def createInSortUnderSortItemList(container: Sort): SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[SortItemList]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SortItemList.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SortItemList.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SortItemList.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SortItemList.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

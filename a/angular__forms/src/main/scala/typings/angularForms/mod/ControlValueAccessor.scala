@@ -39,7 +39,7 @@ trait ControlValueAccessor extends StObject {
     *
     * @param fn The callback function to register
     */
-  def registerOnChange(fn: js.Any): Unit
+  def registerOnChange(fn: Any): Unit
   
   /**
     * @description
@@ -72,7 +72,7 @@ trait ControlValueAccessor extends StObject {
     *
     * @param fn The callback function to register
     */
-  def registerOnTouched(fn: js.Any): Unit
+  def registerOnTouched(fn: Any): Unit
   
   /**
     * @description
@@ -113,25 +113,25 @@ trait ControlValueAccessor extends StObject {
     *
     * @param obj The new value for the element
     */
-  def writeValue(obj: js.Any): Unit
+  def writeValue(obj: Any): Unit
 }
 object ControlValueAccessor {
   
-  inline def apply(registerOnChange: js.Any => Unit, registerOnTouched: js.Any => Unit, writeValue: js.Any => Unit): ControlValueAccessor = {
+  inline def apply(registerOnChange: Any => Unit, registerOnTouched: Any => Unit, writeValue: Any => Unit): ControlValueAccessor = {
     val __obj = js.Dynamic.literal(registerOnChange = js.Any.fromFunction1(registerOnChange), registerOnTouched = js.Any.fromFunction1(registerOnTouched), writeValue = js.Any.fromFunction1(writeValue))
     __obj.asInstanceOf[ControlValueAccessor]
   }
   
   extension [Self <: ControlValueAccessor](x: Self) {
     
-    inline def setRegisterOnChange(value: js.Any => Unit): Self = StObject.set(x, "registerOnChange", js.Any.fromFunction1(value))
+    inline def setRegisterOnChange(value: Any => Unit): Self = StObject.set(x, "registerOnChange", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnTouched(value: js.Any => Unit): Self = StObject.set(x, "registerOnTouched", js.Any.fromFunction1(value))
+    inline def setRegisterOnTouched(value: Any => Unit): Self = StObject.set(x, "registerOnTouched", js.Any.fromFunction1(value))
     
     inline def setSetDisabledState(value: /* isDisabled */ Boolean => Unit): Self = StObject.set(x, "setDisabledState", js.Any.fromFunction1(value))
     
     inline def setSetDisabledStateUndefined: Self = StObject.set(x, "setDisabledState", js.undefined)
     
-    inline def setWriteValue(value: js.Any => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction1(value))
+    inline def setWriteValue(value: Any => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction1(value))
   }
 }

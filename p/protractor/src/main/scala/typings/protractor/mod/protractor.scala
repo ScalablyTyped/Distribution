@@ -19,7 +19,7 @@ object protractor extends Shortcut {
   /**
     * @constructor
     */
-  class BuilderCls ()
+  open class BuilderCls ()
     extends typings.seleniumWebdriver.mod.Builder
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -30,7 +30,7 @@ object protractor extends Shortcut {
     * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
     *     capabilities to initialize this instance from.
     */
-  class CapabilitiesCls ()
+  open class CapabilitiesCls ()
     extends typings.seleniumWebdriver.mod.Capabilities
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -40,20 +40,20 @@ object protractor extends Shortcut {
   /**
     * @constructor
     */
-  class EventEmitterCls ()
+  open class EventEmitterCls ()
     extends typings.seleniumWebdriver.mod.EventEmitter
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("protractor", "protractor.FileDetector")
   @js.native
   /** @constructor */
-  class FileDetectorCls ()
+  open class FileDetectorCls ()
     extends typings.seleniumWebdriver.mod.FileDetector
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("protractor", "protractor.Session")
   @js.native
-  class SessionCls protected ()
+  open class SessionCls protected ()
     extends typings.seleniumWebdriver.mod.Session {
     // region Constructors
     /**
@@ -68,7 +68,7 @@ object protractor extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("protractor", "protractor.WebDriver")
   @js.native
-  class WebDriverCls protected ()
+  open class WebDriverCls protected ()
     extends typings.seleniumWebdriver.mod.WebDriver {
     // region Constructors
     /**
@@ -83,7 +83,7 @@ object protractor extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("protractor", "protractor.WebElement")
   @js.native
-  class WebElementCls protected ()
+  open class WebElementCls protected ()
     extends typings.seleniumWebdriver.mod.WebElement {
     /**
       * @param {!WebDriver} driver the parent WebDriver instance for this element.
@@ -96,7 +96,7 @@ object protractor extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("protractor", "protractor.WebElementPromise")
   @js.native
-  class WebElementPromiseCls protected ()
+  open class WebElementPromiseCls protected ()
     extends typings.seleniumWebdriver.mod.WebElementPromise {
     /**
       * @param {!WebDriver} driver The parent WebDriver instance for this

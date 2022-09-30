@@ -5,27 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.pico8parse.pico8parseStrings.Plussign
-  - typings.pico8parse.pico8parseStrings.`-_`
-  - typings.pico8parse.pico8parseStrings.Asterisk
-  - typings.pico8parse.pico8parseStrings.Percentsign
-  - typings.pico8parse.pico8parseStrings.^
-  - typings.pico8parse.pico8parseStrings.Slash
-  - typings.pico8parse.pico8parseStrings.SlashSlash
-  - typings.pico8parse.pico8parseStrings.Ampersand
-  - typings.pico8parse.pico8parseStrings.Verticalline
-  - typings.pico8parse.pico8parseStrings.Tilde
-  - typings.pico8parse.pico8parseStrings.LessthansignLessthansign
-  - typings.pico8parse.pico8parseStrings.GreaterthansignGreaterthansign
-  - typings.pico8parse.pico8parseStrings.DotDot
-  - typings.pico8parse.pico8parseStrings.GreaterthansignGreaterthansignGreaterthansign
-  - typings.pico8parse.pico8parseStrings.LessthansignLessthansignGreaterthansign
-  - typings.pico8parse.pico8parseStrings.GreaterthansignGreaterthansignLessthansign
-  - typings.pico8parse.pico8parseStrings.`^^`
-  - typings.pico8parse.pico8parseStrings.Backslash
-*/
-trait BinaryOperator extends StObject
 object BinaryOperator {
   
   inline def ^ : typings.pico8parse.pico8parseStrings.^ = "^".asInstanceOf[typings.pico8parse.pico8parseStrings.^]
@@ -34,7 +13,7 @@ object BinaryOperator {
   
   inline def Asterisk: typings.pico8parse.pico8parseStrings.Asterisk = "*".asInstanceOf[typings.pico8parse.pico8parseStrings.Asterisk]
   
-  inline def Backslash: typings.pico8parse.pico8parseStrings.Backslash = "\\".asInstanceOf[typings.pico8parse.pico8parseStrings.Backslash]
+  inline def Backslash: String = String.asInstanceOf[String]
   
   inline def DotDot: typings.pico8parse.pico8parseStrings.DotDot = "..".asInstanceOf[typings.pico8parse.pico8parseStrings.DotDot]
   

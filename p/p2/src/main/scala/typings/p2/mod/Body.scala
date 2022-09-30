@@ -4,8 +4,8 @@ import typings.p2.anon.OptimalDecomp
 import typings.p2.anon.Type
 import typings.p2.anon.`0`
 import typings.p2.anon.`1`
-import typings.p2.p2Numbers.`2`
-import typings.p2.p2Numbers.`4`
+import typings.p2.p2Ints.`2`
+import typings.p2.p2Ints.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,13 +170,13 @@ object Body {
   
   @JSImport("p2", "Body.AWAKE")
   @js.native
-  def AWAKE: typings.p2.p2Numbers.`0` = js.native
-  inline def AWAKE_=(x: typings.p2.p2Numbers.`0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAKE")(x.asInstanceOf[js.Any])
+  def AWAKE: typings.p2.p2Ints.`0` = js.native
+  inline def AWAKE_=(x: typings.p2.p2Ints.`0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAKE")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.DYNAMIC")
   @js.native
-  def DYNAMIC: typings.p2.p2Numbers.`1` = js.native
-  inline def DYNAMIC_=(x: typings.p2.p2Numbers.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DYNAMIC")(x.asInstanceOf[js.Any])
+  def DYNAMIC: typings.p2.p2Ints.`1` = js.native
+  inline def DYNAMIC_=(x: typings.p2.p2Ints.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DYNAMIC")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.KINEMATIC")
   @js.native
@@ -190,8 +190,8 @@ object Body {
   
   @JSImport("p2", "Body.SLEEPY")
   @js.native
-  def SLEEPY: typings.p2.p2Numbers.`1` = js.native
-  inline def SLEEPY_=(x: typings.p2.p2Numbers.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPY")(x.asInstanceOf[js.Any])
+  def SLEEPY: typings.p2.p2Ints.`1` = js.native
+  inline def SLEEPY_=(x: typings.p2.p2Ints.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPY")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.STATIC")
   @js.native

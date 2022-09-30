@@ -1,6 +1,5 @@
 package typings.storybookTheming
 
-import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.AdvancedPseudos
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.AtRule.FontDisplay
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.AtRule.Inherits
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.AtRule.Orientation
@@ -404,9 +403,10 @@ import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.Property.
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.Property._WordSpacing
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.Property._ZIndex
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.Property._Zoom
-import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.Pseudos
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.SimplePseudos
 import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod.SvgAttributes
+import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod._AdvancedPseudos
+import typings.storybookTheming.emotionReactNodeModulesCsstypeIndexMod._Pseudos
 import typings.storybookTheming.mod.ReactClassPropKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -1107,878 +1107,857 @@ object storybookThemingStrings {
   @js.native
   sealed trait `Colon-khtml-any-link`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-khtml-any-link`: `Colon-khtml-any-link` = ":-khtml-any-link".asInstanceOf[`Colon-khtml-any-link`]
   
   @js.native
   sealed trait `Colon-moz-any-link`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-any-link`: `Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[`Colon-moz-any-link`]
-  
-  @js.native
-  sealed trait `Colon-moz-anyLeftparenthesisRightparenthesis`
-    extends StObject
-       with AdvancedPseudos
-       with Pseudos
-  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: `Colon-moz-anyLeftparenthesisRightparenthesis` = ":-moz-any()".asInstanceOf[`Colon-moz-anyLeftparenthesisRightparenthesis`]
   
   @js.native
   sealed trait `Colon-moz-dir`
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def `Colon-moz-dir`: `Colon-moz-dir` = ":-moz-dir".asInstanceOf[`Colon-moz-dir`]
   
   @js.native
   sealed trait `Colon-moz-focusring`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-focusring`: `Colon-moz-focusring` = ":-moz-focusring".asInstanceOf[`Colon-moz-focusring`]
   
   @js.native
   sealed trait `Colon-moz-full-screen`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-full-screen`: `Colon-moz-full-screen` = ":-moz-full-screen".asInstanceOf[`Colon-moz-full-screen`]
   
   @js.native
   sealed trait `Colon-moz-placeholder`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-placeholder`: `Colon-moz-placeholder` = ":-moz-placeholder".asInstanceOf[`Colon-moz-placeholder`]
   
   @js.native
   sealed trait `Colon-moz-read-only`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-read-only`: `Colon-moz-read-only` = ":-moz-read-only".asInstanceOf[`Colon-moz-read-only`]
   
   @js.native
   sealed trait `Colon-moz-read-write`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-read-write`: `Colon-moz-read-write` = ":-moz-read-write".asInstanceOf[`Colon-moz-read-write`]
   
   @js.native
   sealed trait `Colon-moz-ui-invalid`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-ui-invalid`: `Colon-moz-ui-invalid` = ":-moz-ui-invalid".asInstanceOf[`Colon-moz-ui-invalid`]
   
   @js.native
   sealed trait `Colon-moz-ui-valid`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-moz-ui-valid`: `Colon-moz-ui-valid` = ":-moz-ui-valid".asInstanceOf[`Colon-moz-ui-valid`]
   
   @js.native
   sealed trait `Colon-ms-fullscreen`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-ms-fullscreen`: `Colon-ms-fullscreen` = ":-ms-fullscreen".asInstanceOf[`Colon-ms-fullscreen`]
   
   @js.native
   sealed trait `Colon-ms-input-placeholder`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-ms-input-placeholder`: `Colon-ms-input-placeholder` = ":-ms-input-placeholder".asInstanceOf[`Colon-ms-input-placeholder`]
   
   @js.native
   sealed trait `Colon-webkit-any-link`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-webkit-any-link`: `Colon-webkit-any-link` = ":-webkit-any-link".asInstanceOf[`Colon-webkit-any-link`]
-  
-  @js.native
-  sealed trait `Colon-webkit-anyLeftparenthesisRightparenthesis`
-    extends StObject
-       with AdvancedPseudos
-       with Pseudos
-  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: `Colon-webkit-anyLeftparenthesisRightparenthesis` = ":-webkit-any()".asInstanceOf[`Colon-webkit-anyLeftparenthesisRightparenthesis`]
   
   @js.native
   sealed trait `Colon-webkit-full-screen`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colon-webkit-full-screen`: `Colon-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[`Colon-webkit-full-screen`]
   
   @js.native
   sealed trait `ColonColon-moz-placeholder`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-moz-placeholder`: `ColonColon-moz-placeholder` = "::-moz-placeholder".asInstanceOf[`ColonColon-moz-placeholder`]
   
   @js.native
   sealed trait `ColonColon-moz-progress-bar`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-moz-progress-bar`: `ColonColon-moz-progress-bar` = "::-moz-progress-bar".asInstanceOf[`ColonColon-moz-progress-bar`]
   
   @js.native
   sealed trait `ColonColon-moz-range-progress`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-moz-range-progress`: `ColonColon-moz-range-progress` = "::-moz-range-progress".asInstanceOf[`ColonColon-moz-range-progress`]
   
   @js.native
   sealed trait `ColonColon-moz-range-thumb`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-moz-range-thumb`: `ColonColon-moz-range-thumb` = "::-moz-range-thumb".asInstanceOf[`ColonColon-moz-range-thumb`]
   
   @js.native
   sealed trait `ColonColon-moz-range-track`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-moz-range-track`: `ColonColon-moz-range-track` = "::-moz-range-track".asInstanceOf[`ColonColon-moz-range-track`]
   
   @js.native
   sealed trait `ColonColon-moz-selection`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-moz-selection`: `ColonColon-moz-selection` = "::-moz-selection".asInstanceOf[`ColonColon-moz-selection`]
   
   @js.native
   sealed trait `ColonColon-ms-backdrop`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-backdrop`: `ColonColon-ms-backdrop` = "::-ms-backdrop".asInstanceOf[`ColonColon-ms-backdrop`]
   
   @js.native
   sealed trait `ColonColon-ms-browse`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-browse`: `ColonColon-ms-browse` = "::-ms-browse".asInstanceOf[`ColonColon-ms-browse`]
   
   @js.native
   sealed trait `ColonColon-ms-check`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-check`: `ColonColon-ms-check` = "::-ms-check".asInstanceOf[`ColonColon-ms-check`]
   
   @js.native
   sealed trait `ColonColon-ms-clear`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-clear`: `ColonColon-ms-clear` = "::-ms-clear".asInstanceOf[`ColonColon-ms-clear`]
   
   @js.native
   sealed trait `ColonColon-ms-fill`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-fill`: `ColonColon-ms-fill` = "::-ms-fill".asInstanceOf[`ColonColon-ms-fill`]
   
   @js.native
   sealed trait `ColonColon-ms-fill-lower`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-fill-lower`: `ColonColon-ms-fill-lower` = "::-ms-fill-lower".asInstanceOf[`ColonColon-ms-fill-lower`]
   
   @js.native
   sealed trait `ColonColon-ms-fill-upper`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-fill-upper`: `ColonColon-ms-fill-upper` = "::-ms-fill-upper".asInstanceOf[`ColonColon-ms-fill-upper`]
   
   @js.native
   sealed trait `ColonColon-ms-input-placeholder`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-input-placeholder`: `ColonColon-ms-input-placeholder` = "::-ms-input-placeholder".asInstanceOf[`ColonColon-ms-input-placeholder`]
   
   @js.native
   sealed trait `ColonColon-ms-reveal`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-reveal`: `ColonColon-ms-reveal` = "::-ms-reveal".asInstanceOf[`ColonColon-ms-reveal`]
   
   @js.native
   sealed trait `ColonColon-ms-thumb`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-thumb`: `ColonColon-ms-thumb` = "::-ms-thumb".asInstanceOf[`ColonColon-ms-thumb`]
   
   @js.native
   sealed trait `ColonColon-ms-ticks-after`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-ticks-after`: `ColonColon-ms-ticks-after` = "::-ms-ticks-after".asInstanceOf[`ColonColon-ms-ticks-after`]
   
   @js.native
   sealed trait `ColonColon-ms-ticks-before`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-ticks-before`: `ColonColon-ms-ticks-before` = "::-ms-ticks-before".asInstanceOf[`ColonColon-ms-ticks-before`]
   
   @js.native
   sealed trait `ColonColon-ms-tooltip`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-tooltip`: `ColonColon-ms-tooltip` = "::-ms-tooltip".asInstanceOf[`ColonColon-ms-tooltip`]
   
   @js.native
   sealed trait `ColonColon-ms-track`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-track`: `ColonColon-ms-track` = "::-ms-track".asInstanceOf[`ColonColon-ms-track`]
   
   @js.native
   sealed trait `ColonColon-ms-value`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-ms-value`: `ColonColon-ms-value` = "::-ms-value".asInstanceOf[`ColonColon-ms-value`]
   
   @js.native
   sealed trait `ColonColon-webkit-backdrop`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-webkit-backdrop`: `ColonColon-webkit-backdrop` = "::-webkit-backdrop".asInstanceOf[`ColonColon-webkit-backdrop`]
   
   @js.native
   sealed trait `ColonColon-webkit-input-placeholder`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-webkit-input-placeholder`: `ColonColon-webkit-input-placeholder` = "::-webkit-input-placeholder".asInstanceOf[`ColonColon-webkit-input-placeholder`]
   
   @js.native
   sealed trait `ColonColon-webkit-progress-bar`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-webkit-progress-bar`: `ColonColon-webkit-progress-bar` = "::-webkit-progress-bar".asInstanceOf[`ColonColon-webkit-progress-bar`]
   
   @js.native
   sealed trait `ColonColon-webkit-progress-inner-value`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-webkit-progress-inner-value`: `ColonColon-webkit-progress-inner-value` = "::-webkit-progress-inner-value".asInstanceOf[`ColonColon-webkit-progress-inner-value`]
   
   @js.native
   sealed trait `ColonColon-webkit-progress-value`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-webkit-progress-value`: `ColonColon-webkit-progress-value` = "::-webkit-progress-value".asInstanceOf[`ColonColon-webkit-progress-value`]
   
   @js.native
   sealed trait `ColonColon-webkit-slider-runnable-track`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-webkit-slider-runnable-track`: `ColonColon-webkit-slider-runnable-track` = "::-webkit-slider-runnable-track".asInstanceOf[`ColonColon-webkit-slider-runnable-track`]
   
   @js.native
   sealed trait `ColonColon-webkit-slider-thumb`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColon-webkit-slider-thumb`: `ColonColon-webkit-slider-thumb` = "::-webkit-slider-thumb".asInstanceOf[`ColonColon-webkit-slider-thumb`]
   
   @js.native
   sealed trait ColonColonafter
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def ColonColonafter: ColonColonafter = "::after".asInstanceOf[ColonColonafter]
   
   @js.native
   sealed trait ColonColonbackdrop
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def ColonColonbackdrop: ColonColonbackdrop = "::backdrop".asInstanceOf[ColonColonbackdrop]
   
   @js.native
   sealed trait ColonColonbefore
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def ColonColonbefore: ColonColonbefore = "::before".asInstanceOf[ColonColonbefore]
   
   @js.native
   sealed trait ColonColoncue
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
        with SimplePseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def ColonColoncue: ColonColoncue = "::cue".asInstanceOf[ColonColoncue]
   
   @js.native
   sealed trait `ColonColoncue-region`
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
        with SimplePseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def `ColonColoncue-region`: `ColonColoncue-region` = "::cue-region".asInstanceOf[`ColonColoncue-region`]
   
   @js.native
   sealed trait `ColonColonfirst-letter`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColonfirst-letter`: `ColonColonfirst-letter` = "::first-letter".asInstanceOf[`ColonColonfirst-letter`]
   
   @js.native
   sealed trait `ColonColonfirst-line`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColonfirst-line`: `ColonColonfirst-line` = "::first-line".asInstanceOf[`ColonColonfirst-line`]
   
   @js.native
   sealed trait `ColonColongrammar-error`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColongrammar-error`: `ColonColongrammar-error` = "::grammar-error".asInstanceOf[`ColonColongrammar-error`]
   
   @js.native
   sealed trait ColonColonmarker
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def ColonColonmarker: ColonColonmarker = "::marker".asInstanceOf[ColonColonmarker]
   
   @js.native
   sealed trait ColonColonpart
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def ColonColonpart: ColonColonpart = "::part".asInstanceOf[ColonColonpart]
   
   @js.native
   sealed trait ColonColonplaceholder
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def ColonColonplaceholder: ColonColonplaceholder = "::placeholder".asInstanceOf[ColonColonplaceholder]
   
   @js.native
   sealed trait ColonColonselection
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def ColonColonselection: ColonColonselection = "::selection".asInstanceOf[ColonColonselection]
   
   @js.native
   sealed trait ColonColonslotted
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def ColonColonslotted: ColonColonslotted = "::slotted".asInstanceOf[ColonColonslotted]
   
   @js.native
   sealed trait `ColonColonspelling-error`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColonspelling-error`: `ColonColonspelling-error` = "::spelling-error".asInstanceOf[`ColonColonspelling-error`]
   
   @js.native
   sealed trait `ColonColontarget-text`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `ColonColontarget-text`: `ColonColontarget-text` = "::target-text".asInstanceOf[`ColonColontarget-text`]
   
   @js.native
   sealed trait Colonactive
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonactive: Colonactive = ":active".asInstanceOf[Colonactive]
   
   @js.native
   sealed trait Colonafter
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonafter: Colonafter = ":after".asInstanceOf[Colonafter]
   
   @js.native
   sealed trait `Colonany-link`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonany-link`: `Colonany-link` = ":any-link".asInstanceOf[`Colonany-link`]
   
   @js.native
   sealed trait Colonbefore
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonbefore: Colonbefore = ":before".asInstanceOf[Colonbefore]
   
   @js.native
   sealed trait Colonblank
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonblank: Colonblank = ":blank".asInstanceOf[Colonblank]
   
   @js.native
   sealed trait Colonchecked
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonchecked: Colonchecked = ":checked".asInstanceOf[Colonchecked]
   
   @js.native
   sealed trait Coloncurrent
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Coloncurrent: Coloncurrent = ":current".asInstanceOf[Coloncurrent]
   
   @js.native
   sealed trait Colondefault
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colondefault: Colondefault = ":default".asInstanceOf[Colondefault]
   
   @js.native
   sealed trait Colondefined
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colondefined: Colondefined = ":defined".asInstanceOf[Colondefined]
   
   @js.native
   sealed trait Colondir
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def Colondir: Colondir = ":dir".asInstanceOf[Colondir]
   
   @js.native
   sealed trait Colondisabled
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colondisabled: Colondisabled = ":disabled".asInstanceOf[Colondisabled]
   
   @js.native
   sealed trait Colonempty
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonempty: Colonempty = ":empty".asInstanceOf[Colonempty]
   
   @js.native
   sealed trait Colonenabled
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonenabled: Colonenabled = ":enabled".asInstanceOf[Colonenabled]
   
   @js.native
   sealed trait Colonfirst
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonfirst: Colonfirst = ":first".asInstanceOf[Colonfirst]
   
   @js.native
   sealed trait `Colonfirst-child`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonfirst-child`: `Colonfirst-child` = ":first-child".asInstanceOf[`Colonfirst-child`]
   
   @js.native
   sealed trait `Colonfirst-letter`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonfirst-letter`: `Colonfirst-letter` = ":first-letter".asInstanceOf[`Colonfirst-letter`]
   
   @js.native
   sealed trait `Colonfirst-line`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonfirst-line`: `Colonfirst-line` = ":first-line".asInstanceOf[`Colonfirst-line`]
   
   @js.native
   sealed trait `Colonfirst-of-type`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonfirst-of-type`: `Colonfirst-of-type` = ":first-of-type".asInstanceOf[`Colonfirst-of-type`]
   
   @js.native
   sealed trait Colonfocus
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonfocus: Colonfocus = ":focus".asInstanceOf[Colonfocus]
   
   @js.native
   sealed trait `Colonfocus-visible`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonfocus-visible`: `Colonfocus-visible` = ":focus-visible".asInstanceOf[`Colonfocus-visible`]
   
   @js.native
   sealed trait `Colonfocus-within`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonfocus-within`: `Colonfocus-within` = ":focus-within".asInstanceOf[`Colonfocus-within`]
   
   @js.native
   sealed trait Colonfullscreen
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonfullscreen: Colonfullscreen = ":fullscreen".asInstanceOf[Colonfullscreen]
   
   @js.native
   sealed trait Colonfuture
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonfuture: Colonfuture = ":future".asInstanceOf[Colonfuture]
   
   @js.native
   sealed trait Colonhas
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def Colonhas: Colonhas = ":has".asInstanceOf[Colonhas]
   
   @js.native
   sealed trait Colonhost
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def Colonhost: Colonhost = ":host".asInstanceOf[Colonhost]
   
   @js.native
   sealed trait `Colonhost-context`
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def `Colonhost-context`: `Colonhost-context` = ":host-context".asInstanceOf[`Colonhost-context`]
   
   @js.native
   sealed trait Colonhover
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonhover: Colonhover = ":hover".asInstanceOf[Colonhover]
   
   @js.native
   sealed trait `Colonin-range`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonin-range`: `Colonin-range` = ":in-range".asInstanceOf[`Colonin-range`]
   
   @js.native
   sealed trait Colonindeterminate
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonindeterminate: Colonindeterminate = ":indeterminate".asInstanceOf[Colonindeterminate]
   
   @js.native
   sealed trait Coloninvalid
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Coloninvalid: Coloninvalid = ":invalid".asInstanceOf[Coloninvalid]
   
   @js.native
   sealed trait Colonis
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def Colonis: Colonis = ":is".asInstanceOf[Colonis]
   
   @js.native
   sealed trait Colonlang
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def Colonlang: Colonlang = ":lang".asInstanceOf[Colonlang]
   
   @js.native
   sealed trait `Colonlast-child`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonlast-child`: `Colonlast-child` = ":last-child".asInstanceOf[`Colonlast-child`]
   
   @js.native
   sealed trait `Colonlast-of-type`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonlast-of-type`: `Colonlast-of-type` = ":last-of-type".asInstanceOf[`Colonlast-of-type`]
   
   @js.native
   sealed trait Colonleft
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonleft: Colonleft = ":left".asInstanceOf[Colonleft]
   
   @js.native
   sealed trait Colonlink
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonlink: Colonlink = ":link".asInstanceOf[Colonlink]
   
   @js.native
   sealed trait `Colonlocal-link`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonlocal-link`: `Colonlocal-link` = ":local-link".asInstanceOf[`Colonlocal-link`]
-  
-  @js.native
-  sealed trait ColonmatchesLeftparenthesisRightparenthesis
-    extends StObject
-       with AdvancedPseudos
-       with Pseudos
-  inline def ColonmatchesLeftparenthesisRightparenthesis: ColonmatchesLeftparenthesisRightparenthesis = ":matches()".asInstanceOf[ColonmatchesLeftparenthesisRightparenthesis]
   
   @js.native
   sealed trait Colonnot
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def Colonnot: Colonnot = ":not".asInstanceOf[Colonnot]
   
   @js.native
   sealed trait `Colonnth-child`
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def `Colonnth-child`: `Colonnth-child` = ":nth-child".asInstanceOf[`Colonnth-child`]
   
   @js.native
   sealed trait `Colonnth-col`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonnth-col`: `Colonnth-col` = ":nth-col".asInstanceOf[`Colonnth-col`]
   
   @js.native
   sealed trait `Colonnth-last-child`
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def `Colonnth-last-child`: `Colonnth-last-child` = ":nth-last-child".asInstanceOf[`Colonnth-last-child`]
   
   @js.native
   sealed trait `Colonnth-last-col`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonnth-last-col`: `Colonnth-last-col` = ":nth-last-col".asInstanceOf[`Colonnth-last-col`]
   
   @js.native
   sealed trait `Colonnth-last-of-type`
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def `Colonnth-last-of-type`: `Colonnth-last-of-type` = ":nth-last-of-type".asInstanceOf[`Colonnth-last-of-type`]
   
   @js.native
   sealed trait `Colonnth-of-type`
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def `Colonnth-of-type`: `Colonnth-of-type` = ":nth-of-type".asInstanceOf[`Colonnth-of-type`]
   
   @js.native
   sealed trait `Colononly-child`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colononly-child`: `Colononly-child` = ":only-child".asInstanceOf[`Colononly-child`]
   
   @js.native
   sealed trait `Colononly-of-type`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colononly-of-type`: `Colononly-of-type` = ":only-of-type".asInstanceOf[`Colononly-of-type`]
   
   @js.native
   sealed trait Colonoptional
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonoptional: Colonoptional = ":optional".asInstanceOf[Colonoptional]
   
   @js.native
   sealed trait `Colonout-of-range`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonout-of-range`: `Colonout-of-range` = ":out-of-range".asInstanceOf[`Colonout-of-range`]
   
   @js.native
   sealed trait Colonpast
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonpast: Colonpast = ":past".asInstanceOf[Colonpast]
   
   @js.native
   sealed trait Colonpaused
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonpaused: Colonpaused = ":paused".asInstanceOf[Colonpaused]
   
   @js.native
   sealed trait `Colonpicture-in-picture`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonpicture-in-picture`: `Colonpicture-in-picture` = ":picture-in-picture".asInstanceOf[`Colonpicture-in-picture`]
   
   @js.native
   sealed trait `Colonplaceholder-shown`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonplaceholder-shown`: `Colonplaceholder-shown` = ":placeholder-shown".asInstanceOf[`Colonplaceholder-shown`]
   
   @js.native
   sealed trait `Colonread-only`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonread-only`: `Colonread-only` = ":read-only".asInstanceOf[`Colonread-only`]
   
   @js.native
   sealed trait `Colonread-write`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonread-write`: `Colonread-write` = ":read-write".asInstanceOf[`Colonread-write`]
   
   @js.native
   sealed trait Colonrequired
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonrequired: Colonrequired = ":required".asInstanceOf[Colonrequired]
   
   @js.native
   sealed trait Colonright
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonright: Colonright = ":right".asInstanceOf[Colonright]
   
   @js.native
   sealed trait Colonroot
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonroot: Colonroot = ":root".asInstanceOf[Colonroot]
   
   @js.native
   sealed trait Colonscope
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonscope: Colonscope = ":scope".asInstanceOf[Colonscope]
   
   @js.native
   sealed trait Colontarget
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colontarget: Colontarget = ":target".asInstanceOf[Colontarget]
   
   @js.native
   sealed trait `Colontarget-within`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colontarget-within`: `Colontarget-within` = ":target-within".asInstanceOf[`Colontarget-within`]
   
   @js.native
   sealed trait `Colonuser-invalid`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonuser-invalid`: `Colonuser-invalid` = ":user-invalid".asInstanceOf[`Colonuser-invalid`]
   
   @js.native
   sealed trait `Colonuser-valid`
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def `Colonuser-valid`: `Colonuser-valid` = ":user-valid".asInstanceOf[`Colonuser-valid`]
   
   @js.native
   sealed trait Colonvalid
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonvalid: Colonvalid = ":valid".asInstanceOf[Colonvalid]
   
   @js.native
   sealed trait Colonvisited
     extends StObject
-       with Pseudos
        with SimplePseudos
+       with _Pseudos
   inline def Colonvisited: Colonvisited = ":visited".asInstanceOf[Colonvisited]
   
   @js.native
   sealed trait Colonwhere
     extends StObject
-       with AdvancedPseudos
-       with Pseudos
+       with _AdvancedPseudos
+       with _Pseudos
   inline def Colonwhere: Colonwhere = ":where".asInstanceOf[Colonwhere]
   
   @js.native

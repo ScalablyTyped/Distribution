@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet-editable
 
-Typings are for version 0.7
+Typings are for version 1.2
 
 ## Library description:
 Make geometries editable in Leaflet
@@ -11,9 +11,9 @@ Make geometries editable in Leaflet
 | Full name          | leaflet-editable |
 | Keywords           | leaflet, map |
 | # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 183493 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 32085.666666666668 |
+| # stars            | 475.0 |
 
 ## Links
 - [Homepage](https://github.com/Leaflet/Leaflet.Editable/)

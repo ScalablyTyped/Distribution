@@ -42,7 +42,7 @@ object actionMod {
     
     inline def apply(
       allParentIds: js.Array[Double],
-      args: js.Array[js.Any],
+      args: js.Array[Any],
       context: IAnyStateTreeNode,
       id: Double,
       name: String,
@@ -60,7 +60,7 @@ object actionMod {
       
       inline def setAllParentIds(value: js.Array[Double]): Self = StObject.set(x, "allParentIds", value.asInstanceOf[js.Any])
       
-      inline def setAllParentIdsVarargs(value: Double*): Self = StObject.set(x, "allParentIds", js.Array(value :_*))
+      inline def setAllParentIdsVarargs(value: Double*): Self = StObject.set(x, "allParentIds", js.Array(value*))
       
       inline def setParentEvent(value: IMiddlewareEvent): Self = StObject.set(x, "parentEvent", value.asInstanceOf[js.Any])
       
@@ -102,10 +102,10 @@ object actionMod {
     /* actionCall */ IMiddlewareEvent, 
     /* next */ js.Function2[
       /* actionCall */ IMiddlewareEvent, 
-      /* callback */ js.UndefOr[js.Function1[/* value */ js.Any, js.Any]], 
+      /* callback */ js.UndefOr[js.Function1[/* value */ Any, Any]], 
       Unit
     ], 
-    /* abort */ js.Function1[/* value */ js.Any, Unit], 
-    js.Any
+    /* abort */ js.Function1[/* value */ Any, Unit], 
+    Any
   ]
 }

@@ -1,6 +1,7 @@
 package typings.recurlyRecurlyJs
 
-import typings.recurlyRecurlyJs.errorMod.RecurlyError
+import typings.std.Promise
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +10,8 @@ object promiseMod {
   
   @js.native
   trait PricingPromise[T, PricingMethods]
-    extends js.Promise[T] {
-    
-    /**
-      * Attaches a callback for only the rejection of the PricingPromise.
-      * @param onrejected The callback to execute when the PricingPromise is rejected.
-      * @returns A PricingPromise for the completion of the callback.
-      */
-    def `catch`[TResult](): (PricingPromise[T | TResult, PricingMethods]) & PricingMethods = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ RecurlyError, TResult | js.Thenable[TResult]]): (PricingPromise[T | TResult, PricingMethods]) & PricingMethods = js.native
+    extends StObject
+       with Promise[T] {
     
     // Extensions specific to then/promise
     /**
@@ -30,24 +24,10 @@ object promiseMod {
     def done(onfulfilled: js.Function1[/* value */ T, Any], onrejected: js.Function1[/* reason */ Any, Any]): T = js.native
     def done(onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, Any]): T = js.native
     
-    /**
-      * Attaches callbacks for the resolution and/or rejection of the PricingPromise.
-      * @param onfulfilled The callback to execute when the PricingPromise is resolved.
-      * @param onrejected The callback to execute when the PricingPromise is rejected.
-      * @returns A PricingPromise for the completion of which ever callback is executed.
-      */
-    def `then`[TResult1, TResult2](): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
     def `then`[TResult1, TResult2](onfulfilled: PricingMethods): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: PricingMethods,
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
-    ): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): (PricingPromise[TResult1 | TResult2, PricingMethods]) & PricingMethods = js.native
   }
 }

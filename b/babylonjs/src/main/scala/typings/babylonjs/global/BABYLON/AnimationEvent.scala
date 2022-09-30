@@ -30,7 +30,7 @@ open class AnimationEvent protected ()
   onlyOnce: Boolean
   ) = this()
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   override def _clone(): typings.babylonjs.BABYLON.AnimationEvent = js.native
   

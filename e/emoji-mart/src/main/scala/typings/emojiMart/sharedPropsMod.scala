@@ -227,21 +227,21 @@ object sharedPropsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.emojiMart.emojiMartNumbers.`16`
-    - typings.emojiMart.emojiMartNumbers.`20`
-    - typings.emojiMart.emojiMartNumbers.`32`
-    - typings.emojiMart.emojiMartNumbers.`64`
+    - typings.emojiMart.emojiMartInts.`16`
+    - typings.emojiMart.emojiMartInts.`20`
+    - typings.emojiMart.emojiMartInts.`32`
+    - typings.emojiMart.emojiMartInts.`64`
   */
   trait EmojiSheetSize extends StObject
   object EmojiSheetSize {
     
-    inline def `16`: typings.emojiMart.emojiMartNumbers.`16` = 16.asInstanceOf[typings.emojiMart.emojiMartNumbers.`16`]
+    inline def `16`: typings.emojiMart.emojiMartInts.`16` = 16.asInstanceOf[typings.emojiMart.emojiMartInts.`16`]
     
-    inline def `20`: typings.emojiMart.emojiMartNumbers.`20` = 20.asInstanceOf[typings.emojiMart.emojiMartNumbers.`20`]
+    inline def `20`: typings.emojiMart.emojiMartInts.`20` = 20.asInstanceOf[typings.emojiMart.emojiMartInts.`20`]
     
-    inline def `32`: typings.emojiMart.emojiMartNumbers.`32` = 32.asInstanceOf[typings.emojiMart.emojiMartNumbers.`32`]
+    inline def `32`: typings.emojiMart.emojiMartInts.`32` = 32.asInstanceOf[typings.emojiMart.emojiMartInts.`32`]
     
-    inline def `64`: typings.emojiMart.emojiMartNumbers.`64` = 64.asInstanceOf[typings.emojiMart.emojiMartNumbers.`64`]
+    inline def `64`: typings.emojiMart.emojiMartInts.`64` = 64.asInstanceOf[typings.emojiMart.emojiMartInts.`64`]
   }
   
   trait I18n extends StObject {

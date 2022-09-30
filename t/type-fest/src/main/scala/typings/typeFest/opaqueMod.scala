@@ -6,5 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object opaqueMod {
   
-  type Opaque[Type] = Type & typings.typeFest.anon.Opaque
+  @JSImport("type-fest/source/opaque", "tag")
+  @js.native
+  val tag: js.Symbol = js.native
+  
+  type Opaque[Type, Token] = Type & Tagged[Token]
+  
+  @js.native
+  trait Tagged[Token] extends StObject
+  
+  type UnwrapOpaque[OpaqueType /* <: Tagged[Any] */] = OpaqueType
 }

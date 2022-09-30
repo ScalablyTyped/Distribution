@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def apiFetch(options: APIFetchOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("apiFetch")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apiFetch(options: APIFetchOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("apiFetch")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   object controls {
     
@@ -20,14 +20,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def API_FETCH(action: AnyAction): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("API_FETCH")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def API_FETCH(action: AnyAction): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("API_FETCH")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
     inline def DISPATCH(action: AnyAction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DISPATCH")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def SELECT(action: AnyAction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("SELECT")(action.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def SELECT(action: AnyAction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("SELECT")(action.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
-  inline def dispatch(storeKey: String, actionName: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(storeKey.asInstanceOf[js.Any], actionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatch(storeKey: String, actionName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")((scala.List(storeKey.asInstanceOf[js.Any], actionName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
-  inline def select(storeKey: String, selectorName: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(storeKey.asInstanceOf[js.Any], selectorName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def select(storeKey: String, selectorName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")((scala.List(storeKey.asInstanceOf[js.Any], selectorName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 }

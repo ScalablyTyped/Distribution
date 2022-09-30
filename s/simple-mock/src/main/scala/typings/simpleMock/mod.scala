@@ -3,6 +3,7 @@ package typings.simpleMock
 import org.scalablytyped.runtime.Shortcut
 import typings.std.ArrayLike
 import typings.std.PromiseConstructorLike
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -250,13 +251,13 @@ object mod extends Shortcut {
       * Configures the stub to return a Promise (where available) rejecting with this error. Same as stub.returnWith(Promise.reject(val)).
       * You can use a custom Promise-conforming library, i.e. simple.Promise = require('bluebird') or simple.Promise = $q.
       */
-    def rejectWith[V](`val`: V): Stub[js.Thenable[V]] = js.native
+    def rejectWith[V](`val`: V): Stub[PromiseLike[V]] = js.native
     
     /**
       * Configures the stub to return a Promise (where available] resolving to this value. Same as stub.returnWith(Promise.resolve(val)).
       * You can use a custom Promise-conforming library, i.e. simple.Promise = require('bluebird') or simple.Promise = $q.
       */
-    def resolveWith[V](`val`: V): Stub[js.Thenable[V]] = js.native
+    def resolveWith[V](`val`: V): Stub[PromiseLike[V]] = js.native
     
     /**
       * Configures this stub to return with this value.

@@ -5,11 +5,9 @@ import typings.react.mod.Component
 import typings.reactModalVideo.anon.DismissBtnMessage
 import typings.reactModalVideo.reactModalVideoBooleans.`false`
 import typings.reactModalVideo.reactModalVideoBooleans.`true`
-import typings.reactModalVideo.reactModalVideoNumbers.`0`
-import typings.reactModalVideo.reactModalVideoNumbers.`1`
-import typings.reactModalVideo.reactModalVideoNumbers.`300`
-import typings.reactModalVideo.reactModalVideoStrings.DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
-import typings.reactModalVideo.reactModalVideoStrings.DollarLeftcurlybracketstringRightcurlybracketCommaDollarLeftcurlybracketstringRightcurlybracket
+import typings.reactModalVideo.reactModalVideoInts.`0`
+import typings.reactModalVideo.reactModalVideoInts.`1`
+import typings.reactModalVideo.reactModalVideoInts.`300`
 import typings.reactModalVideo.reactModalVideoStrings.`16Colon9`
 import typings.reactModalVideo.reactModalVideoStrings.`red Verticalline white`
 import typings.reactModalVideo.reactModalVideoStrings.custom
@@ -211,7 +209,7 @@ object mod {
     /**
       * @default '16:9'
       */
-    var ratio: DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
+    var ratio: /* template literal string: ${number}:${number} */ String
   }
   object ModalVideoBaseProps {
     
@@ -220,9 +218,10 @@ object mod {
       animationSpeed: Double,
       aria: Aria,
       classNames: ClassNames,
-      isOpen: Boolean
+      isOpen: Boolean,
+      ratio: /* template literal string: ${number}:${number} */ String
     ): ModalVideoBaseProps = {
-      val __obj = js.Dynamic.literal(allowFullScreen = allowFullScreen.asInstanceOf[js.Any], animationSpeed = animationSpeed.asInstanceOf[js.Any], aria = aria.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], ratio = "${number}:${number}")
+      val __obj = js.Dynamic.literal(allowFullScreen = allowFullScreen.asInstanceOf[js.Any], animationSpeed = animationSpeed.asInstanceOf[js.Any], aria = aria.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModalVideoBaseProps]
     }
     
@@ -242,9 +241,7 @@ object mod {
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setRatio(
-        value: DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
-      ): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: /* template literal string: ${number}:${number} */ String): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     }
   }
   
@@ -526,9 +523,7 @@ object mod {
     
     var origin: js.UndefOr[String] = js.undefined
     
-    var playlist: js.UndefOr[
-        DollarLeftcurlybracketstringRightcurlybracketCommaDollarLeftcurlybracketstringRightcurlybracket
-      ] = js.undefined
+    var playlist: js.UndefOr[/* template literal string: ${string},${string} */ String] = js.undefined
     
     var playsinline: js.UndefOr[`0` | `1`] = js.undefined
     
@@ -615,9 +610,7 @@ object mod {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      inline def setPlaylist(
-        value: DollarLeftcurlybracketstringRightcurlybracketCommaDollarLeftcurlybracketstringRightcurlybracket
-      ): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
+      inline def setPlaylist(value: /* template literal string: ${string},${string} */ String): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
       
       inline def setPlaylistUndefined: Self = StObject.set(x, "playlist", js.undefined)
       

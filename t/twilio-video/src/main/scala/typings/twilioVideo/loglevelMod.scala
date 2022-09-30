@@ -1,12 +1,12 @@
 package typings.twilioVideo
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.twilioVideo.twilioVideoNumbers.`0`
-import typings.twilioVideo.twilioVideoNumbers.`1`
-import typings.twilioVideo.twilioVideoNumbers.`2`
-import typings.twilioVideo.twilioVideoNumbers.`3`
-import typings.twilioVideo.twilioVideoNumbers.`4`
-import typings.twilioVideo.twilioVideoNumbers.`5`
+import typings.twilioVideo.twilioVideoInts.`0`
+import typings.twilioVideo.twilioVideoInts.`1`
+import typings.twilioVideo.twilioVideoInts.`2`
+import typings.twilioVideo.twilioVideoInts.`3`
+import typings.twilioVideo.twilioVideoInts.`4`
+import typings.twilioVideo.twilioVideoInts.`5`
 import typings.twilioVideo.twilioVideoStrings.debug_
 import typings.twilioVideo.twilioVideoStrings.error_
 import typings.twilioVideo.twilioVideoStrings.info_
@@ -66,12 +66,12 @@ object loglevelMod {
       */
     /* Inlined twilio-video.twilio-video/tsdef/loglevel.Log.LogLevelNumbers | 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'silent' | keyof twilio-video.twilio-video/tsdef/loglevel.Log.LogLevel */
     /* Rewritten from type alias, can be one of: 
-      - typings.twilioVideo.twilioVideoNumbers.`3`
-      - typings.twilioVideo.twilioVideoNumbers.`2`
-      - typings.twilioVideo.twilioVideoNumbers.`4`
-      - typings.twilioVideo.twilioVideoNumbers.`0`
-      - typings.twilioVideo.twilioVideoNumbers.`5`
-      - typings.twilioVideo.twilioVideoNumbers.`1`
+      - typings.twilioVideo.twilioVideoInts.`3`
+      - typings.twilioVideo.twilioVideoInts.`2`
+      - typings.twilioVideo.twilioVideoInts.`4`
+      - typings.twilioVideo.twilioVideoInts.`0`
+      - typings.twilioVideo.twilioVideoInts.`5`
+      - typings.twilioVideo.twilioVideoInts.`1`
       - typings.twilioVideo.twilioVideoStrings.DEBUG
       - typings.twilioVideo.twilioVideoStrings.info_
       - typings.twilioVideo.twilioVideoStrings.INFO
@@ -88,17 +88,17 @@ object loglevelMod {
     trait LogLevelDesc extends StObject
     object LogLevelDesc {
       
-      inline def `0`: typings.twilioVideo.twilioVideoNumbers.`0` = 0.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`0`]
+      inline def `0`: typings.twilioVideo.twilioVideoInts.`0` = 0.asInstanceOf[typings.twilioVideo.twilioVideoInts.`0`]
       
-      inline def `1`: typings.twilioVideo.twilioVideoNumbers.`1` = 1.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`1`]
+      inline def `1`: typings.twilioVideo.twilioVideoInts.`1` = 1.asInstanceOf[typings.twilioVideo.twilioVideoInts.`1`]
       
-      inline def `2`: typings.twilioVideo.twilioVideoNumbers.`2` = 2.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`2`]
+      inline def `2`: typings.twilioVideo.twilioVideoInts.`2` = 2.asInstanceOf[typings.twilioVideo.twilioVideoInts.`2`]
       
-      inline def `3`: typings.twilioVideo.twilioVideoNumbers.`3` = 3.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`3`]
+      inline def `3`: typings.twilioVideo.twilioVideoInts.`3` = 3.asInstanceOf[typings.twilioVideo.twilioVideoInts.`3`]
       
-      inline def `4`: typings.twilioVideo.twilioVideoNumbers.`4` = 4.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`4`]
+      inline def `4`: typings.twilioVideo.twilioVideoInts.`4` = 4.asInstanceOf[typings.twilioVideo.twilioVideoInts.`4`]
       
-      inline def `5`: typings.twilioVideo.twilioVideoNumbers.`5` = 5.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`5`]
+      inline def `5`: typings.twilioVideo.twilioVideoInts.`5` = 5.asInstanceOf[typings.twilioVideo.twilioVideoInts.`5`]
       
       inline def DEBUG: typings.twilioVideo.twilioVideoStrings.DEBUG = "DEBUG".asInstanceOf[typings.twilioVideo.twilioVideoStrings.DEBUG]
       
@@ -130,27 +130,27 @@ object loglevelMod {
       */
     /* Inlined twilio-video.twilio-video/tsdef/loglevel.Log.LogLevel[keyof twilio-video.twilio-video/tsdef/loglevel.Log.LogLevel] */
     /* Rewritten from type alias, can be one of: 
-      - typings.twilioVideo.twilioVideoNumbers.`3`
-      - typings.twilioVideo.twilioVideoNumbers.`2`
-      - typings.twilioVideo.twilioVideoNumbers.`4`
-      - typings.twilioVideo.twilioVideoNumbers.`0`
-      - typings.twilioVideo.twilioVideoNumbers.`5`
-      - typings.twilioVideo.twilioVideoNumbers.`1`
+      - typings.twilioVideo.twilioVideoInts.`3`
+      - typings.twilioVideo.twilioVideoInts.`2`
+      - typings.twilioVideo.twilioVideoInts.`4`
+      - typings.twilioVideo.twilioVideoInts.`0`
+      - typings.twilioVideo.twilioVideoInts.`5`
+      - typings.twilioVideo.twilioVideoInts.`1`
     */
     trait LogLevelNumbers extends StObject
     object LogLevelNumbers {
       
-      inline def `0`: typings.twilioVideo.twilioVideoNumbers.`0` = 0.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`0`]
+      inline def `0`: typings.twilioVideo.twilioVideoInts.`0` = 0.asInstanceOf[typings.twilioVideo.twilioVideoInts.`0`]
       
-      inline def `1`: typings.twilioVideo.twilioVideoNumbers.`1` = 1.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`1`]
+      inline def `1`: typings.twilioVideo.twilioVideoInts.`1` = 1.asInstanceOf[typings.twilioVideo.twilioVideoInts.`1`]
       
-      inline def `2`: typings.twilioVideo.twilioVideoNumbers.`2` = 2.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`2`]
+      inline def `2`: typings.twilioVideo.twilioVideoInts.`2` = 2.asInstanceOf[typings.twilioVideo.twilioVideoInts.`2`]
       
-      inline def `3`: typings.twilioVideo.twilioVideoNumbers.`3` = 3.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`3`]
+      inline def `3`: typings.twilioVideo.twilioVideoInts.`3` = 3.asInstanceOf[typings.twilioVideo.twilioVideoInts.`3`]
       
-      inline def `4`: typings.twilioVideo.twilioVideoNumbers.`4` = 4.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`4`]
+      inline def `4`: typings.twilioVideo.twilioVideoInts.`4` = 4.asInstanceOf[typings.twilioVideo.twilioVideoInts.`4`]
       
-      inline def `5`: typings.twilioVideo.twilioVideoNumbers.`5` = 5.asInstanceOf[typings.twilioVideo.twilioVideoNumbers.`5`]
+      inline def `5`: typings.twilioVideo.twilioVideoInts.`5` = 5.asInstanceOf[typings.twilioVideo.twilioVideoInts.`5`]
     }
     
     @js.native

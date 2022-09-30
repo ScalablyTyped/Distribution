@@ -28,7 +28,7 @@ object mod {
       `object`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSObject */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InterpolationFunction<any> */ Any
     ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
     /* static member */
-    inline def styled(strings: TemplateStringsArray, interpolations: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(List(strings.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def styled(strings: TemplateStringsArray, interpolations: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(scala.List(strings.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
   @JSImport("styled-react-modal", "BaseModalBackground")

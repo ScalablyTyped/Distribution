@@ -1,6 +1,6 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.firebaseAuthNumbers.`2000`
+import typings.firebaseAuth.firebaseAuthInts.`2000`
 import typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.Auth
 import typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.AuthProvider
 import typings.firebaseAuth.nodeEsmSrcModelPublicTypesMod.PopupRedirectResolver

@@ -7,7 +7,6 @@ import typings.wordpressComponents.buttonMod.Button.ButtonProps
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressComponents.iconButtonMod.IconButton.Props
 import typings.wordpressComponents.popoverMod.Popover.Position
-import typings.wordpressComponents.shortcutMod.Shortcut.ShortcutType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,15 +34,14 @@ object iconButtonMod {
       /**
         * Icon to use. Either a Dashicon slug or a custom component.
         */
-      var icon: Icon | Element
+      @JSName("icon")
+      var icon_Props: Icon | Element
       
       /**
         * Position for the label.
         * @defaultValue "top"
         */
       var labelPosition: js.UndefOr[Position] = js.undefined
-      
-      var shortcut: js.UndefOr[ShortcutType] = js.undefined
       
       /**
         * Tooltip text to display.
@@ -65,10 +63,6 @@ object iconButtonMod {
         inline def setLabelPosition(value: Position): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
         
         inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
-        
-        inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
-        
-        inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
         
         inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
         

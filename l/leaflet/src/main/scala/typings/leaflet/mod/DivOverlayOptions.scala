@@ -8,11 +8,11 @@ trait DivOverlayOptions extends StObject {
   
   var className: js.UndefOr[String] = js.undefined
   
+  var interactive: js.UndefOr[Boolean] = js.undefined
+  
   var offset: js.UndefOr[PointExpression] = js.undefined
   
   var pane: js.UndefOr[String] = js.undefined
-  
-  var zoomAnimation: js.UndefOr[Boolean] = js.undefined
 }
 object DivOverlayOptions {
   
@@ -27,6 +27,10 @@ object DivOverlayOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    
     inline def setOffset(value: PointExpression): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
@@ -34,9 +38,5 @@ object DivOverlayOptions {
     inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
-    
-    inline def setZoomAnimation(value: Boolean): Self = StObject.set(x, "zoomAnimation", value.asInstanceOf[js.Any])
-    
-    inline def setZoomAnimationUndefined: Self = StObject.set(x, "zoomAnimation", js.undefined)
   }
 }

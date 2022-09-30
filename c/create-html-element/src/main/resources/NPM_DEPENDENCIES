@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "create-html-element" : "3.0.0"
+      "create-html-element" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "create-html-element" : "3.0.0"
+      "create-html-element" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

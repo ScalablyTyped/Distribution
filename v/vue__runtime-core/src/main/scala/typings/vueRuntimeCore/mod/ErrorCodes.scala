@@ -1,40 +1,40 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`0`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`10`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`11`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`12`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`13`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`14`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`1`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`2`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`3`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`4`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`5`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`6`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`7`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`8`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`9`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`0`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`10`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`11`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`12`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`13`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`14`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`1`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`2`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`3`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`4`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`5`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`6`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`7`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`8`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`0`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`1`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`2`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`3`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`4`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`5`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`6`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`7`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`8`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`9`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`10`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`11`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`12`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`13`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`14`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`0`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`1`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`2`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`3`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`4`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`5`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`6`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`7`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`8`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`9`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`10`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`11`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`12`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`13`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`14`
 */
 trait ErrorCodes
   extends StObject

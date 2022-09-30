@@ -1,13 +1,14 @@
 organization := "org.scalablytyped"
 name := "stylelint"
-version := "9.10-dt-20200515Z-f22ce4"
-scalaVersion := "3.0.1"
+version := "14.13.0-4921e8"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "postcss" % "7.0.35-7d3225",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-081b8e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "cosmiconfig" % "7.0.1-ae51ff",
+  "org.scalablytyped" %%% "postcss" % "8.4.16-57c149",
+  "org.scalablytyped" %%% "source-map-js" % "1.0.2-70367f",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

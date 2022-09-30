@@ -121,7 +121,7 @@ object mod extends Shortcut {
   trait MaxAge extends StObject {
     
     def apply[MaxAge /* <: Double */](maxAge: MaxAge): Moizer[MaxAgeMaxAge[MaxAge]] = js.native
-    def apply[MaxAge /* <: Double */, ExpireHandler /* <: OnExpire */](maxAge: MaxAge, expireOptions: ExpireHandler): Moizer[typings.moize.anon.OnExpire[MaxAge, ExpireHandler]] = js.native
+    def apply[MaxAge /* <: Double */, UpdateExpire /* <: Boolean */](maxAge: MaxAge, expireOptions: UpdateExpire): Moizer[MaxAgeUpdateExpire[MaxAge, UpdateExpire]] = js.native
   }
   
   type Memoized[OriginalFn /* <: Moizeable */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MicroMemoize.Memoized<OriginalFn> */ Any
@@ -144,17 +144,7 @@ object mod extends Shortcut {
     def deep[PassedOptions /* <: Options */](options: PassedOptions): Moizer[PassedOptions] = js.native
     def deep[Fn /* <: Moizeable */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[Fn, Options & IsDeepEqual & PassedOptions] = js.native
     @JSName("deep")
-    def deep_Fn_Moizeable_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsDeepEqual] = js.native
-    @JSName("deep")
-    def deep_Fn_MoizedMoizeableOptionsPassedOptions_Options[Fn /* <: Moized[Moizeable, Options] */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsDeepEqual & PassedOptions
-      ] = js.native
-    @JSName("deep")
-    def deep_Fn_MoizedMoizeableOptions_Moized[Fn /* <: Moized[Moizeable, Options] */](fn: Fn): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsDeepEqual
-      ] = js.native
+    def deep_Fn_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsDeepEqual] = js.native
     @JSName("deep")
     var deep_Original: Moizer[IsDeepEqual] = js.native
     
@@ -164,17 +154,7 @@ object mod extends Shortcut {
     def infinite[PassedOptions /* <: Options */](options: PassedOptions): Moizer[PassedOptions] = js.native
     def infinite[Fn /* <: Moizeable */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[Fn, Options & PassedOptions] = js.native
     @JSName("infinite")
-    def infinite_Fn_Moizeable_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options] = js.native
-    @JSName("infinite")
-    def infinite_Fn_MoizedMoizeableOptionsPassedOptions_Options[Fn /* <: Moized[Moizeable, Options] */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & PassedOptions
-      ] = js.native
-    @JSName("infinite")
-    def infinite_Fn_MoizedMoizeableOptions_Moized[Fn /* <: Moized[Moizeable, Options] */](fn: Fn): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options
-      ] = js.native
+    def infinite_Fn_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options] = js.native
     @JSName("infinite")
     var infinite_Original: Moizer[Options] = js.native
     
@@ -187,15 +167,15 @@ object mod extends Shortcut {
     def matchesKey[Matcher /* <: IsMatchingKey */](keyMatcher: Matcher): Moizer[MatchesKey[Matcher]] = js.native
     
     def maxAge[MaxAge /* <: Double */](maxAge: MaxAge): Moizer[MaxAgeMaxAge[MaxAge]] = js.native
-    def maxAge[MaxAge /* <: Double */, ExpireHandler /* <: OnExpire */](maxAge: MaxAge, expireOptions: ExpireHandler): Moizer[typings.moize.anon.OnExpire[MaxAge, ExpireHandler]] = js.native
+    def maxAge[MaxAge /* <: Double */, UpdateExpire /* <: Boolean */](maxAge: MaxAge, expireOptions: UpdateExpire): Moizer[MaxAgeUpdateExpire[MaxAge, UpdateExpire]] = js.native
     @JSName("maxAge")
-    def maxAge_MaxAge_DoubleExpireHandler_OnExpireExpireOptions_OnExpireExpireHandlerExpireHandler[MaxAge /* <: Double */, ExpireHandler /* <: OnExpire */, ExpireOptions /* <: OnExpireExpireHandler[ExpireHandler] */](maxAge: MaxAge, expireOptions: ExpireOptions): Moizer[MaxAgeOnExpire[MaxAge, ExpireOptions, ExpireHandler]] = js.native
+    def maxAge_MaxAgeExpireHandler[MaxAge /* <: Double */, ExpireHandler /* <: OnExpire */](maxAge: MaxAge, expireOptions: ExpireHandler): Moizer[typings.moize.anon.OnExpire[MaxAge, ExpireHandler]] = js.native
     @JSName("maxAge")
-    def maxAge_MaxAge_DoubleExpireHandler_OnExpireUpdateExpire_BooleanExpireOptions_OnExpireUpdateExpireExpireHandlerUpdateExpire[MaxAge /* <: Double */, ExpireHandler /* <: OnExpire */, UpdateExpire /* <: Boolean */, ExpireOptions /* <: OnExpireUpdateExpire[ExpireHandler, UpdateExpire] */](maxAge: MaxAge, expireOptions: ExpireOptions): Moizer[MaxAgeOnExpireUpdateExpire[MaxAge, ExpireHandler, UpdateExpire]] = js.native
+    def maxAge_MaxAgeExpireHandlerExpireOptions[MaxAge /* <: Double */, ExpireHandler /* <: OnExpire */, ExpireOptions /* <: OnExpireExpireHandler[ExpireHandler] */](maxAge: MaxAge, expireOptions: ExpireOptions): Moizer[MaxAgeOnExpire[MaxAge, ExpireOptions, ExpireHandler]] = js.native
     @JSName("maxAge")
-    def maxAge_MaxAge_DoubleUpdateExpire_Boolean[MaxAge /* <: Double */, UpdateExpire /* <: Boolean */](maxAge: MaxAge, expireOptions: UpdateExpire): Moizer[MaxAgeUpdateExpire[MaxAge, UpdateExpire]] = js.native
+    def maxAge_MaxAgeExpireHandlerUpdateExpireExpireOptions[MaxAge /* <: Double */, ExpireHandler /* <: OnExpire */, UpdateExpire /* <: Boolean */, ExpireOptions /* <: OnExpireUpdateExpire[ExpireHandler, UpdateExpire] */](maxAge: MaxAge, expireOptions: ExpireOptions): Moizer[MaxAgeOnExpireUpdateExpire[MaxAge, ExpireHandler, UpdateExpire]] = js.native
     @JSName("maxAge")
-    def maxAge_MaxAge_DoubleUpdateExpire_BooleanExpireOptions_UpdateExpireUpdateExpireUpdateExpire[MaxAge /* <: Double */, UpdateExpire /* <: Boolean */, ExpireOptions /* <: UpdateExpireUpdateExpire[UpdateExpire] */](maxAge: MaxAge, expireOptions: ExpireOptions): Moizer[MaxAgeUpdateExpire[MaxAge, UpdateExpire]] = js.native
+    def maxAge_MaxAgeUpdateExpireExpireOptions[MaxAge /* <: Double */, UpdateExpire /* <: Boolean */, ExpireOptions /* <: UpdateExpireUpdateExpire[UpdateExpire] */](maxAge: MaxAge, expireOptions: ExpireOptions): Moizer[MaxAgeUpdateExpire[MaxAge, UpdateExpire]] = js.native
     @JSName("maxAge")
     var maxAge_Original: MaxAge = js.native
     
@@ -208,34 +188,14 @@ object mod extends Shortcut {
     def promise[PassedOptions /* <: Options */](options: PassedOptions): Moizer[PassedOptions] = js.native
     def promise[Fn /* <: Moizeable */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[Fn, Options & IsPromise & PassedOptions] = js.native
     @JSName("promise")
-    def promise_Fn_Moizeable_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsPromise] = js.native
-    @JSName("promise")
-    def promise_Fn_MoizedMoizeableOptionsPassedOptions_Options[Fn /* <: Moized[Moizeable, Options] */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsPromise & PassedOptions
-      ] = js.native
-    @JSName("promise")
-    def promise_Fn_MoizedMoizeableOptions_Moized[Fn /* <: Moized[Moizeable, Options] */](fn: Fn): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsPromise
-      ] = js.native
+    def promise_Fn_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsPromise] = js.native
     @JSName("promise")
     var promise_Original: Moizer[IsPromise] = js.native
     
     def react[PassedOptions /* <: Options */](options: PassedOptions): Moizer[PassedOptions] = js.native
     def react[Fn /* <: Moizeable */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[Fn, Options & IsReact & PassedOptions] = js.native
     @JSName("react")
-    def react_Fn_Moizeable_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsReact] = js.native
-    @JSName("react")
-    def react_Fn_MoizedMoizeableOptionsPassedOptions_Options[Fn /* <: Moized[Moizeable, Options] */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsReact & PassedOptions
-      ] = js.native
-    @JSName("react")
-    def react_Fn_MoizedMoizeableOptions_Moized[Fn /* <: Moized[Moizeable, Options] */](fn: Fn): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsReact
-      ] = js.native
+    def react_Fn_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsReact] = js.native
     @JSName("react")
     var react_Original: Moizer[IsReact] = js.native
     
@@ -245,34 +205,14 @@ object mod extends Shortcut {
     def serializeWith[Serializer /* <: Serialize */](serializer: Serializer): Moizer[IsSerializedSerializer[Serializer]] = js.native
     
     @JSName("serialize")
-    def serialize_Fn_Moizeable_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsSerialized] = js.native
-    @JSName("serialize")
-    def serialize_Fn_MoizedMoizeableOptionsPassedOptions_Options[Fn /* <: Moized[Moizeable, Options] */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsSerialized & PassedOptions
-      ] = js.native
-    @JSName("serialize")
-    def serialize_Fn_MoizedMoizeableOptions_Moized[Fn /* <: Moized[Moizeable, Options] */](fn: Fn): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsSerialized
-      ] = js.native
+    def serialize_Fn_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsSerialized] = js.native
     @JSName("serialize")
     var serialize_Original: Moizer[IsSerialized] = js.native
     
     def shallow[PassedOptions /* <: Options */](options: PassedOptions): Moizer[PassedOptions] = js.native
     def shallow[Fn /* <: Moizeable */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[Fn, Options & IsShallowEqual & PassedOptions] = js.native
     @JSName("shallow")
-    def shallow_Fn_Moizeable_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsShallowEqual] = js.native
-    @JSName("shallow")
-    def shallow_Fn_MoizedMoizeableOptionsPassedOptions_Options[Fn /* <: Moized[Moizeable, Options] */, PassedOptions /* <: Options */](fn: Fn, options: PassedOptions): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsShallowEqual & PassedOptions
-      ] = js.native
-    @JSName("shallow")
-    def shallow_Fn_MoizedMoizeableOptions_Moized[Fn /* <: Moized[Moizeable, Options] */](fn: Fn): Moized[
-        /* import warning: importer.ImportType#apply Failed type conversion: Fn['fn'] */ js.Any, 
-        Options & IsShallowEqual
-      ] = js.native
+    def shallow_Fn_Moized[Fn /* <: Moizeable */](fn: Fn): Moized[Fn, Options & IsShallowEqual] = js.native
     @JSName("shallow")
     var shallow_Original: Moizer[IsShallowEqual] = js.native
     

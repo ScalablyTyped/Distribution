@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.importmappingsMod.importmappings.IImportMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowBase
 import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowParameterBase
+import typings.mendixmodelsdk.pagesMod.pages.IPageParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,6 +43,8 @@ trait IDataType
   val containerAsMicroflowBase: IMicroflowBase = js.native
   
   val containerAsMicroflowParameterBase: IMicroflowParameterBase = js.native
+  
+  val containerAsPageParameter: IPageParameter = js.native
   
   @JSName("model")
   val model_IDataType: IModel = js.native

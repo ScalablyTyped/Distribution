@@ -1,9 +1,9 @@
 package typings.flowjs
 
 import typings.flowjs.flowjsBooleans.`false`
-import typings.flowjs.flowjsNumbers.`0`
-import typings.flowjs.flowjsNumbers.`1`
-import typings.flowjs.flowjsNumbers.`2`
+import typings.flowjs.flowjsInts.`0`
+import typings.flowjs.flowjsInts.`1`
+import typings.flowjs.flowjsInts.`2`
 import typings.flowjs.flowjsStrings.catchAll
 import typings.flowjs.flowjsStrings.complete
 import typings.flowjs.flowjsStrings.error

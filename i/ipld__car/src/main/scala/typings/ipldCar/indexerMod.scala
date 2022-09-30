@@ -1,6 +1,5 @@
 package typings.ipldCar
 
-import typings.multiformats.linkInterfaceMod.Version
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
@@ -24,7 +23,7 @@ object indexerMod {
     
     var _iterator: AsyncGenerator[typings.ipldCar.apiMod.BlockIndex, Any, Any] = js.native
     
-    var _roots: js.Array[typings.multiformats.mod.CID[Any, Double, Double, Version]] = js.native
+    var _roots: js.Array[typings.multiformats.mod.CID] = js.native
     
     var _version: Double = js.native
     
@@ -81,7 +80,7 @@ object indexerMod {
   
   type BytesReader = typings.ipldCar.codingMod.BytesReader
   
-  type CID = typings.multiformats.mod.CID[Any, Double, Double, Version]
+  type CID = typings.multiformats.mod.CID
   
   type RootsReader = typings.ipldCar.apiMod.RootsReader
 }

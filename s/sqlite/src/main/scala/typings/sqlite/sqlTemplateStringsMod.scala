@@ -10,9 +10,9 @@ object sqlTemplateStringsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(strings: Any, values: Any*): SQLStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SQLStatement]
+  inline def default(strings: Any, values: Any*): SQLStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SQLStatement]
   
-  inline def SQL(strings: Any, values: Any*): SQLStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("SQL")(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SQLStatement]
+  inline def SQL(strings: Any, values: Any*): SQLStatement = ^.asInstanceOf[js.Dynamic].applyDynamic("SQL")(scala.List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SQLStatement]
   
   @JSImport("sql-template-strings", "SQLStatement")
   @js.native

@@ -17,7 +17,7 @@ trait DescribeNetworkInterfacePermissionsRequest extends StObject {
   var MaxResults: js.UndefOr[DescribeNetworkInterfacePermissionsMaxResults] = js.undefined
   
   /**
-    * One or more network interface permission IDs.
+    * The network interface permission IDs.
     */
   var NetworkInterfacePermissionIds: js.UndefOr[NetworkInterfacePermissionIdList] = js.undefined
   

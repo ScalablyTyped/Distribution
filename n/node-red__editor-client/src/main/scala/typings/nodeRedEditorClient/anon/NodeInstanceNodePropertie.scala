@@ -1,7 +1,7 @@
 package typings.nodeRedEditorClient.anon
 
-import typings.nodeRedEditorClient.nodeRedEditorClientNumbers.`0`
-import typings.nodeRedEditorClient.nodeRedEditorClientNumbers.`1`
+import typings.nodeRedEditorClient.nodeRedEditorClientInts.`0`
+import typings.nodeRedEditorClient.nodeRedEditorClientInts.`1`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

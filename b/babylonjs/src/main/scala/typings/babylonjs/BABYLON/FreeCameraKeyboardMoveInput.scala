@@ -19,7 +19,7 @@ trait FreeCameraKeyboardMoveInput
   
   /* private */ var _onKeyboardObserver: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _onLostFocus(): Unit = js.native
   
   /* private */ var _scene: Any = js.native

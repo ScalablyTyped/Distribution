@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object registrationMod {
   
-  @JSImport("react-dnd/lib/common/registration", JSImport.Namespace)
+  @JSImport("react-dnd/dist/internals/registration", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

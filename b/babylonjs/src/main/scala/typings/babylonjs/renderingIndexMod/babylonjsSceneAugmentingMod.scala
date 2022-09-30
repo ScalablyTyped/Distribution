@@ -14,28 +14,28 @@ object babylonjsSceneAugmentingMod {
   @js.native
   trait Scene extends StObject {
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _boundingBoxRenderer: typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _depthPeelingRenderer: Nullable[typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _depthRenderer: StringDictionary[typings.babylonjs.depthRendererMod.DepthRenderer] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _edgeRenderLineShader: Nullable[ShaderMaterial] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _forceShowBoundingBoxes: Boolean = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _geometryBufferRenderer: Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _outlineRenderer: typings.babylonjs.outlineRendererMod.OutlineRenderer = js.native
     
-    /** @hidden */
+    /** @internal */
     var _useOrderIndependentTransparency: Boolean = js.native
     
     /**

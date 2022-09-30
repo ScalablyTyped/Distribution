@@ -22,95 +22,95 @@ object babylonjsEnginesEngineAugmentingMod {
   @js.native
   trait Engine extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var _captureGPUFrameTime: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createTimeQuery(): WebGLQuery = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentNonTimestampToken: Nullable[typings.babylonjs.timeTokenMod.TimeToken] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _deleteTimeQuery(query: WebGLQuery): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _excludedCompressedTextures: js.Array[String] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getGlAlgorithmType(algorithmType: Double): Double = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getTimeQueryAvailability(query: WebGLQuery): Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getTimeQueryResult(query: WebGLQuery): Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gpuFrameTime: typings.babylonjs.perfCounterMod.PerfCounter = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gpuFrameTimeToken: Nullable[typings.babylonjs.timeTokenMod.TimeToken] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _inputElement: Nullable[HTMLElement] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _oldHardwareScaleFactor: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _oldSize: typings.babylonjs.mathSizeMod.Size = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onBeginFrameObserver: Nullable[
         typings.babylonjs.observableMod.Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
       ] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onEndFrameObserver: Nullable[
         typings.babylonjs.observableMod.Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
       ] = js.native
     
     /**
       * Observable to handle when a change to inputElement occurs
-      * @hidden
+      * @internal
       */
     var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _onVRDisplayPointerRestricted(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _onVRDisplayPointerUnrestricted(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _onVRFullScreenTriggered(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _textureFormatInUse: String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _vrDisplay: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _vrExclusivePointerMode: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _vrSupported: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _webVRInitPromise: js.Promise[IDisplayChangedEventArgs] = js.native
     
     /**

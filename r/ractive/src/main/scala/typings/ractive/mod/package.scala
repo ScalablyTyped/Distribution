@@ -2,9 +2,9 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ractive.anon.Teardown
-import typings.ractive.ractiveNumbers.`-1`
-import typings.ractive.ractiveNumbers.`0`
-import typings.ractive.ractiveNumbers.`1`
+import typings.ractive.ractiveInts.`-1`
+import typings.ractive.ractiveInts.`0`
+import typings.ractive.ractiveInts.`1`
 import typings.std.ArrayLike
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@expo/dev-server" : "0.1.120"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@expo/dev-server" : "0.1.120"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

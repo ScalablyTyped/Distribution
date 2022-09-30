@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useCollectorMod {
   
-  @JSImport("react-dnd/lib/hooks/internal/useCollector", JSImport.Namespace)
+  @JSImport("react-dnd/dist/hooks/useCollector", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

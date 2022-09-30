@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.WebServiceOperationSimpleParameterMapping")
 @js.native
-class WebServiceOperationSimpleParameterMapping protected ()
+open class WebServiceOperationSimpleParameterMapping protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.WebServiceOperationSimpleParameterMapping {
   def this(
     model: AbstractModel,

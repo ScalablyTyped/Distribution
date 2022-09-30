@@ -12,7 +12,7 @@ trait Row extends StObject {
   
   var header: js.UndefOr[VerticalAlign] = js.undefined
   
-  var row: js.UndefOr[`24`] = js.undefined
+  var row: js.UndefOr[`25`] = js.undefined
 }
 object Row {
   
@@ -35,7 +35,7 @@ object Row {
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    inline def setRow(value: `24`): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: `25`): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }

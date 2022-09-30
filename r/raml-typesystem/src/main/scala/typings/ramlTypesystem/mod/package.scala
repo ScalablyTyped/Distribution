@@ -26,7 +26,7 @@ inline def builtInTypes(): ITypeRegistry = ^.asInstanceOf[js.Dynamic].applyDynam
 
 inline def checkACStatus(t: IParsedType): IStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("checkACStatus")(t.asInstanceOf[js.Any]).asInstanceOf[IStatus]
 
-inline def derive(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("derive")(List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
+inline def derive(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("derive")(scala.List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
 
 inline def dump(ts: IParsedType): ITypeCollection | IType = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(ts.asInstanceOf[js.Any]).asInstanceOf[ITypeCollection | IType]
 inline def dump(ts: IParsedTypeCollection): ITypeCollection | IType = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(ts.asInstanceOf[js.Any]).asInstanceOf[ITypeCollection | IType]
@@ -180,7 +180,7 @@ inline def toNominal(t: IParsedType, bt: js.Function1[/* name */ String, ITypeDe
 
 inline def toValidationPath(p: String): typings.ramlTypesystem.typesystemInterfacesMod.IValidationPath = ^.asInstanceOf[js.Dynamic].applyDynamic("toValidationPath")(p.asInstanceOf[js.Any]).asInstanceOf[typings.ramlTypesystem.typesystemInterfacesMod.IValidationPath]
 
-inline def unify(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("unify")(List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
+inline def unify(name: String, types: IParsedType*): IParsedType = ^.asInstanceOf[js.Dynamic].applyDynamic("unify")(scala.List(name.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IParsedType]
 
 inline def validate(i: Any, t: IParsedType): IStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(i.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IStatus]
 inline def validate(i: Any, t: IParsedType, autoClose: Boolean): IStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(i.asInstanceOf[js.Any], t.asInstanceOf[js.Any], autoClose.asInstanceOf[js.Any])).asInstanceOf[IStatus]

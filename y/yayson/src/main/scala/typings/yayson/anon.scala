@@ -1,5 +1,6 @@
 package typings.yayson
 
+import typings.std.PromiseLike
 import typings.yayson.mod.JsonOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,8 +18,8 @@ object anon {
     def render(instanceOrCollection: js.Object): Any = js.native
     def render(instanceOrCollection: js.Object, options: JsonOptions): Any = js.native
     /* static member */
-    def render[T](instanceOrCollection: js.Thenable[T]): js.Thenable[T] = js.native
-    def render[T](instanceOrCollection: js.Thenable[T], options: JsonOptions): js.Thenable[T] = js.native
+    def render[T](instanceOrCollection: PromiseLike[T]): PromiseLike[T] = js.native
+    def render[T](instanceOrCollection: PromiseLike[T], options: JsonOptions): PromiseLike[T] = js.native
     
     /* static member */
     def toJSON(instanceOrCollection: js.Object): Any = js.native

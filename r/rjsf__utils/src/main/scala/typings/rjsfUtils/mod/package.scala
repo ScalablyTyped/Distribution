@@ -1020,7 +1020,7 @@ type IdSchema[T] = FieldId & typings.rjsfUtils.rjsfUtilsStrings.IdSchema & TopLe
 
 /** This type remaps the keys of `Type` to prepend `ui:` onto them. As a result it does not need to be exported */
 type MakeUIType[Type] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Property in keyof Type as 'ui:${string & Property}' ]: Type[Property]}
+{[ Property in keyof Type as / * template literal string: ui:${string&Property} * / string ]: Type[Property]}
   */ typings.rjsfUtils.rjsfUtilsStrings.MakeUIType & TopLevel[Type]
 
 /** Type describing a recursive structure of `FieldPath`s for an object with a non-empty set of keys */

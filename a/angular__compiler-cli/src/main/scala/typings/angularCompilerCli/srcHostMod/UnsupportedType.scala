@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.srcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`5`
+import typings.angularCompilerCli.angularCompilerCliInts.`5`
 import typings.typescript.mod.TypeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

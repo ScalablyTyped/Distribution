@@ -6,29 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Response extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  /**
+    * `false` should be passed in if the dialog is canceled. If the `pairingKind` is
+    * `confirm` or `confirmPin`, this value should indicate if the pairing is
+    * confirmed.  If the `pairingKind` is `providePin` the value should be `true` when
+    * a value is provided.
+    */
+  var confirmed: Boolean
   
   /**
-    * The original request is prevented from being sent or completed and is instead
-    * redirected to the given URL.
+    * When the `pairingKind` is `providePin` this value should be the required pin for
+    * the Bluetooth device.
     */
-  var redirectURL: js.UndefOr[String] = js.undefined
+  var pin: js.UndefOr[String | Null] = js.undefined
 }
 object Response {
   
-  inline def apply(): Response = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(confirmed: Boolean): Response = {
+    val __obj = js.Dynamic.literal(confirmed = confirmed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
   
   extension [Self <: Response](x: Self) {
     
-    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
     
-    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    inline def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
+    inline def setPinNull: Self = StObject.set(x, "pin", null)
     
-    inline def setRedirectURLUndefined: Self = StObject.set(x, "redirectURL", js.undefined)
+    inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
   }
 }

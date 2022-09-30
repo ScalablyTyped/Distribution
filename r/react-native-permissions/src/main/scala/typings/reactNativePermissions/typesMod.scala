@@ -50,6 +50,7 @@ object typesMod {
     - typings.reactNativePermissions.reactNativePermissionsStrings.carPlay
     - typings.reactNativePermissions.reactNativePermissionsStrings.criticalAlert
     - typings.reactNativePermissions.reactNativePermissionsStrings.provisional
+    - typings.reactNativePermissions.reactNativePermissionsStrings.providesAppSettings
   */
   trait NotificationOption extends StObject
   object NotificationOption {
@@ -61,6 +62,8 @@ object typesMod {
     inline def carPlay: typings.reactNativePermissions.reactNativePermissionsStrings.carPlay = "carPlay".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.carPlay]
     
     inline def criticalAlert: typings.reactNativePermissions.reactNativePermissionsStrings.criticalAlert = "criticalAlert".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.criticalAlert]
+    
+    inline def providesAppSettings: typings.reactNativePermissions.reactNativePermissionsStrings.providesAppSettings = "providesAppSettings".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.providesAppSettings]
     
     inline def provisional: typings.reactNativePermissions.reactNativePermissionsStrings.provisional = "provisional".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.provisional]
     
@@ -80,6 +83,8 @@ object typesMod {
     var lockScreen: js.UndefOr[Boolean] = js.undefined
     
     var notificationCenter: js.UndefOr[Boolean] = js.undefined
+    
+    var providesAppSettings: js.UndefOr[Boolean] = js.undefined
     
     var provisional: js.UndefOr[Boolean] = js.undefined
     
@@ -117,6 +122,10 @@ object typesMod {
       inline def setNotificationCenter(value: Boolean): Self = StObject.set(x, "notificationCenter", value.asInstanceOf[js.Any])
       
       inline def setNotificationCenterUndefined: Self = StObject.set(x, "notificationCenter", js.undefined)
+      
+      inline def setProvidesAppSettings(value: Boolean): Self = StObject.set(x, "providesAppSettings", value.asInstanceOf[js.Any])
+      
+      inline def setProvidesAppSettingsUndefined: Self = StObject.set(x, "providesAppSettings", js.undefined)
       
       inline def setProvisional(value: Boolean): Self = StObject.set(x, "provisional", value.asInstanceOf[js.Any])
       

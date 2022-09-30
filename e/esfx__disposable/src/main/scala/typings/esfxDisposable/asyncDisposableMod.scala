@@ -4,6 +4,7 @@ import typings.esfxDisposable.asyncDisposableStackMod._AsyncDisposableLike
 import typings.esfxDisposable.disposableMod.Disposable
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object asyncDisposableMod {
       * Creates an `AsyncDisposable` wrapper around a callback used to dispose resources.
       * @deprecated Use `AsyncDisposableStack` or `{ [AsyncDisposable.asyncDispose]() { ... } }` instead.
       */
-    def this(disposeAsync: js.Function0[Unit | js.Thenable[Unit]]) = this()
+    def this(disposeAsync: js.Function0[Unit | PromiseLike[Unit]]) = this()
   }
   object AsyncDisposable {
     
@@ -42,7 +43,7 @@ object asyncDisposableMod {
       * NOTE: This is not spec-compliant and will not be standardized. It is preferred to use an `AsyncDisposableStack`
       * or to implement `AsyncDisposable.asyncDispose` yourself instead.
       */
-    inline def create(disposeAsync: js.Function0[Unit | js.Thenable[Unit]]): AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposeAsync.asInstanceOf[js.Any]).asInstanceOf[AsyncDisposable]
+    inline def create(disposeAsync: js.Function0[Unit | PromiseLike[Unit]]): AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposeAsync.asInstanceOf[js.Any]).asInstanceOf[AsyncDisposable]
     
     /**
       * Determines whether a value is `AsyncDisposable`.
@@ -83,7 +84,7 @@ object asyncDisposableMod {
     inline def usingEach(
       iterable: js.Iterable[
           js.UndefOr[
-            AsyncDisposable | Disposable | Null | (js.Thenable[js.UndefOr[AsyncDisposable | Disposable | Null]])
+            AsyncDisposable | Disposable | Null | (PromiseLike[js.UndefOr[AsyncDisposable | Disposable | Null]])
           ]
         ]
     ): AsyncGenerator[js.UndefOr[AsyncDisposable | Disposable | Null], Unit, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("usingEach")(iterable.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[js.UndefOr[AsyncDisposable | Disposable | Null], Unit, Any]]

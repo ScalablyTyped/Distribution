@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.AggregateFunction")
 @js.native
-class AggregateFunction protected ()
+open class AggregateFunction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.AggregateFunction {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

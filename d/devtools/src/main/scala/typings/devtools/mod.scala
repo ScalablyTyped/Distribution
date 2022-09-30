@@ -1,120 +1,86 @@
 package typings.devtools
 
-import typings.devtools.DevTools.Client
+import typings.devtools.typesMod.AttachOptions
+import typings.devtools.typesMod.Client
+import typings.std.Map
+import typings.wdioTypes.optionsMod.WebDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("devtools", JSImport.Default)
+  @js.native
+  open class default ()
+    extends StObject
+       with DevTools
+  /* static members */
   object default {
     
     @JSImport("devtools", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    inline def newSession(): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")().asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any
-    ): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
-      modifier: js.Function1[/* repeated */ js.Any, js.Any]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
-      modifier: js.Function1[/* repeated */ js.Any, js.Any],
-      proto: js.Object
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
-      modifier: js.Function1[/* repeated */ js.Any, js.Any],
-      proto: js.Object,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
-      modifier: js.Function1[/* repeated */ js.Any, js.Any],
-      proto: Unit,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
+    /**
+      * allows user to attach to existing sessions
+      */
+    inline def attachToSession(options: AttachOptions): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    inline def attachToSession(options: AttachOptions, modifier: js.Function): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def attachToSession(options: AttachOptions, modifier: js.Function, userPrototype: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def attachToSession(
+      options: AttachOptions,
+      modifier: js.Function,
+      userPrototype: js.Object,
+      customCommandWrapper: js.Function
+    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def attachToSession(
+      options: AttachOptions,
+      modifier: js.Function,
+      userPrototype: Unit,
+      customCommandWrapper: js.Function
+    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def attachToSession(options: AttachOptions, modifier: Unit, userPrototype: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def attachToSession(
+      options: AttachOptions,
       modifier: Unit,
-      proto: js.Object
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
-      modifier: Unit,
-      proto: js.Object,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Options */ js.Any,
-      modifier: Unit,
-      proto: Unit,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any], proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: Unit,
-      modifier: js.Function1[/* repeated */ js.Any, js.Any],
-      proto: js.Object,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: Unit,
-      modifier: js.Function1[/* repeated */ js.Any, js.Any],
-      proto: Unit,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(options: Unit, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: Unit,
-      modifier: Unit,
-      proto: js.Object,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-    inline def newSession(
-      options: Unit,
-      modifier: Unit,
-      proto: Unit,
-      commandWrapper: js.Function2[
-          /* commandName */ String, 
-          /* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-          js.Any
-        ]
-    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+      userPrototype: js.Object,
+      customCommandWrapper: js.Function
+    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def attachToSession(options: AttachOptions, modifier: Unit, userPrototype: Unit, customCommandWrapper: js.Function): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     
-    inline def reloadSession(instance: Client): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: WebDriver): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: WebDriver, modifier: js.Function): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: WebDriver, modifier: js.Function, userPrototype: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(
+      options: WebDriver,
+      modifier: js.Function,
+      userPrototype: js.Object,
+      customCommandWrapper: js.Function
+    ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: WebDriver, modifier: js.Function, userPrototype: Unit, customCommandWrapper: js.Function): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: WebDriver, modifier: Unit, userPrototype: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: WebDriver, modifier: Unit, userPrototype: js.Object, customCommandWrapper: js.Function): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def newSession(options: WebDriver, modifier: Unit, userPrototype: Unit, customCommandWrapper: js.Function): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], userPrototype.asInstanceOf[js.Any], customCommandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    
+    inline def reloadSession(instance: Any): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  }
+  
+  @JSImport("devtools", "SUPPORTED_BROWSER")
+  @js.native
+  val SUPPORTED_BROWSER: js.Array[String] = js.native
+  
+  @JSImport("devtools", "sessionMap")
+  @js.native
+  val sessionMap: Map[Any, Any] = js.native
+  
+  trait DevTools extends StObject
+  
+  object global {
+    
+    object WebdriverIO {
+      
+      type WDIODevtoolsOptions = typings.devtools.typesMod.WDIODevtoolsOptions
+    }
   }
 }

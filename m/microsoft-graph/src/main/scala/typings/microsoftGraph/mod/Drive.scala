@@ -24,7 +24,7 @@ trait Drive
   var items: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // For drives in SharePoint, the underlying document library list. Read-only. Nullable.
-  var list: js.UndefOr[NullableOption[List]] = js.undefined
+  var list: js.UndefOr[NullableOption[typings.microsoftGraph.mod.List]] = js.undefined
   
   // Optional. The user account that owns the drive. Read-only.
   var owner: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
@@ -82,7 +82,7 @@ object Drive {
     
     inline def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setList(value: NullableOption[List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: NullableOption[typings.microsoftGraph.mod.List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setListNull: Self = StObject.set(x, "list", null)
     

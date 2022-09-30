@@ -80,15 +80,15 @@ object optionalMod {
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* sa */ Optional_[Any, A], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, A], Optional_[Any, A]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Optional_[Any, A], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, A], Optional_[Any, B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Optional_[Any, A], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, A], Optional_[Any, B]]]
   
   inline def findFirst[A](predicate: Predicate[A]): js.Function1[/* sa */ Optional_[Any, js.Array[A]], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, js.Array[A]], Optional_[Any, A]]]
   
   inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[/* sa */ Optional_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, A]]]
   
-  inline def findFirstNonEmpty_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Optional_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]]]
+  inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Optional_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]]]
   
-  inline def findFirst_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Optional_[Any, js.Array[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, js.Array[A]], Optional_[Any, B]]]
+  inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Optional_[Any, js.Array[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Optional_[Any, js.Array[A]], Optional_[Any, B]]]
   
   inline def fromNullable[S, A](sa: Optional_[S, A]): Optional_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[Optional_[S, NonNullable[A]]]
   
@@ -236,7 +236,7 @@ object optionalMod {
   {[ K in P ]: A[K]}
     */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
     ]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((scala.List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
     /* sa */ Optional_[Any, A], 
     Optional_[
       Any, 

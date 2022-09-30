@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Union")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Union")
 @js.native
-class Union protected ()
+open class Union protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.Union {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class Union protected ()
 }
 object Union {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Union")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Union")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object Union {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ListOperationAction): typings.mendixmodelsdk.microflowsMod.microflows.Union = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.Union]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Union.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Union.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Union.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Union.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

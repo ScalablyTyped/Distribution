@@ -1,6 +1,5 @@
 package typings.wixUiTestUtils.anon
 
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,11 @@ trait Element extends StObject {
   
   var eventTrigger: TypeofSimulate
   
-  var wrapper: HTMLElement
+  var wrapper: typings.std.Element
 }
 object Element {
   
-  inline def apply(dataHook: String, eventTrigger: TypeofSimulate, wrapper: HTMLElement): Element = {
+  inline def apply(dataHook: String, eventTrigger: TypeofSimulate, wrapper: typings.std.Element): Element = {
     val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any], eventTrigger = eventTrigger.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
@@ -32,6 +31,6 @@ object Element {
     
     inline def setEventTrigger(value: TypeofSimulate): Self = StObject.set(x, "eventTrigger", value.asInstanceOf[js.Any])
     
-    inline def setWrapper(value: HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: typings.std.Element): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
   }
 }

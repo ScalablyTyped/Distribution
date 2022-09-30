@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Any.
   * @param [properties] Properties to set
   */
-class Any ()
+open class Any ()
   extends StObject
      with IAny {
   def this(properties: IAny) = this()
@@ -25,7 +24,7 @@ class Any ()
     * Converts this Any to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
   
   /** Any type_url. */
   @JSName("type_url")
@@ -33,7 +32,7 @@ class Any ()
   
   /** Any value. */
   @JSName("value")
-  var value_Any: Uint8Array = js.native
+  var value_Any: js.typedarray.Uint8Array = js.native
 }
 object Any {
   
@@ -50,6 +49,8 @@ object Any {
   inline def create(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Any]
   inline def create(properties: IAny): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
   /**
     * Decodes an Any message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object Any {
   /* static member */
   inline def decode(reader: Reader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def decode(reader: Reader, length: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def decode(reader: Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def decode(reader: Uint8Array, length: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Any]
   /**
     * Decodes an Any message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object Any {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def decodeDelimited(reader: Uint8Array): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Encodes the specified Any message. Does not implicitly {@link google.protobuf.Any.verify|verify} messages.
@@ -101,7 +100,7 @@ object Any {
     * @returns Any
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Creates a plain object from an Any message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object Any {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: Any): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Any, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Any): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: Any, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies an Any message.
@@ -119,5 +118,5 @@ object Any {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

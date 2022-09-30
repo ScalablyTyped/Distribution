@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object registryMod {
   
-  @JSImport("dnd-core/lib/actions/registry", JSImport.Namespace)
+  @JSImport("dnd-core/dist/actions/registry", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("dnd-core/lib/actions/registry", "ADD_SOURCE")
+  @JSImport("dnd-core/dist/actions/registry", "ADD_SOURCE")
   @js.native
   val ADD_SOURCE: /* "dnd-core/ADD_SOURCE" */ String = js.native
   
-  @JSImport("dnd-core/lib/actions/registry", "ADD_TARGET")
+  @JSImport("dnd-core/dist/actions/registry", "ADD_TARGET")
   @js.native
   val ADD_TARGET: /* "dnd-core/ADD_TARGET" */ String = js.native
   
-  @JSImport("dnd-core/lib/actions/registry", "REMOVE_SOURCE")
+  @JSImport("dnd-core/dist/actions/registry", "REMOVE_SOURCE")
   @js.native
   val REMOVE_SOURCE: /* "dnd-core/REMOVE_SOURCE" */ String = js.native
   
-  @JSImport("dnd-core/lib/actions/registry", "REMOVE_TARGET")
+  @JSImport("dnd-core/dist/actions/registry", "REMOVE_TARGET")
   @js.native
   val REMOVE_TARGET: /* "dnd-core/REMOVE_TARGET" */ String = js.native
   

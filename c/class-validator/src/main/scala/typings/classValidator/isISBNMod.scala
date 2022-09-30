@@ -25,16 +25,16 @@ object isISBNMod {
   inline def isISBN(value: Any, version: IsISBNVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isISBN")(value.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.classValidator.classValidatorNumbers.`10`
-    - typings.classValidator.classValidatorNumbers.`13`
+    - typings.classValidator.classValidatorInts.`10`
+    - typings.classValidator.classValidatorInts.`13`
     - typings.classValidator.classValidatorStrings.`10`
     - typings.classValidator.classValidatorStrings.`13`
   */
   trait IsISBNVersion extends StObject
   object IsISBNVersion {
     
-    inline def `10`: typings.classValidator.classValidatorNumbers.`10` = 10.asInstanceOf[typings.classValidator.classValidatorNumbers.`10`]
+    inline def `10`: typings.classValidator.classValidatorInts.`10` = 10.asInstanceOf[typings.classValidator.classValidatorInts.`10`]
     
-    inline def `13`: typings.classValidator.classValidatorNumbers.`13` = 13.asInstanceOf[typings.classValidator.classValidatorNumbers.`13`]
+    inline def `13`: typings.classValidator.classValidatorInts.`13` = 13.asInstanceOf[typings.classValidator.classValidatorInts.`13`]
   }
 }

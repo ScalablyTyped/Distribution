@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.CastAction")
 @js.native
-class CastAction protected ()
+open class CastAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.CastAction {
   def this(
     model: AbstractModel,

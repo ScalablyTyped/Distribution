@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.Head")
 @js.native
-class Head protected ()
+open class Head protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.Head {
   def this(
     model: AbstractModel,

@@ -1,8 +1,8 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`1`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`2`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`4`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`1`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`2`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

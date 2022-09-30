@@ -6,7 +6,7 @@ import typings.geojson.mod.Feature
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Point
 import typings.supercluster.superclusterBooleans.`true`
-import typings.supercluster.superclusterNumbers.`1`
+import typings.supercluster.superclusterInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

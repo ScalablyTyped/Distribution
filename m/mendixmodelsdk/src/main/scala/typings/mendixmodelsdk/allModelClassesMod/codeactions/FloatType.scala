@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.21.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.FloatType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.FloatType")
 @js.native
-class FloatType protected ()
+open class FloatType protected ()
   extends typings.mendixmodelsdk.codeactionsMod.codeactions.FloatType {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class FloatType protected ()
 }
 object FloatType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.FloatType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.FloatType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +64,13 @@ object FloatType {
   inline def createInCodeActionUnderActionReturnType(container: typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.codeactionsMod.codeactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.FloatType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.FloatType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.FloatType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "codeactions.FloatType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "codeactions.FloatType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

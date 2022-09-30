@@ -1,20 +1,26 @@
 package typings.sass
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.sass.anon.Duration
-import typings.sass.mod.types.SassType
+import typings.immutable.mod.OrderedMap
+import typings.sass.anon.Alpha
+import typings.sass.anon.Blackness
+import typings.sass.anon.Brackets
+import typings.sass.anon.DenominatorUnits
+import typings.sass.anon.Hue
+import typings.sass.anon.Quotes
+import typings.sass.compileMod.CompileResult
+import typings.sass.functionMod.types.Boolean
+import typings.sass.functionMod.types.Null
+import typings.sass.legacyExceptionMod.LegacyException
+import typings.sass.listMod.ListSeparator
+import typings.sass.optionsMod.LegacyOptions
+import typings.sass.renderMod.LegacyResult
 import typings.sass.sassBooleans.`false`
 import typings.sass.sassBooleans.`true`
-import typings.sass.sassStrings.compressed
-import typings.sass.sassStrings.cr
-import typings.sass.sassStrings.crlf
-import typings.sass.sassStrings.expanded
-import typings.sass.sassStrings.lf
-import typings.sass.sassStrings.lfcr
-import typings.sass.sassStrings.space
-import typings.sass.sassStrings.tab
-import typings.std.Error
+import typings.sass.sassStrings.async
+import typings.sass.sassStrings.sync
+import typings.sass.typesOptionsMod.Options
+import typings.sass.typesOptionsMod.StringOptions
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,451 +31,457 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def render(options: Options, callback: js.Function2[/* exception */ SassException, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @JSImport("sass", "Exception")
+  @js.native
+  /* private */ open class Exception ()
+    extends typings.sass.exceptionMod.Exception
   
-  inline def renderSync(options: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[Result]
+  @JSImport("sass", "FALSE")
+  @js.native
+  val FALSE: Boolean[`false`] = js.native
+  
+  object Logger {
+    
+    @JSImport("sass", "Logger.silent")
+    @js.native
+    val silent: typings.sass.loggerMod.Logger = js.native
+  }
+  
+  @JSImport("sass", "NULL")
+  @js.native
+  val NULL: Null = js.native
+  
+  @JSImport("sass", "SassArgumentList")
+  @js.native
+  open class SassArgumentList protected ()
+    extends typings.sass.valueMod.SassArgumentList {
+    def this(
+      contents: js.Array[typings.sass.valueMod.Value],
+      keywords: OrderedMap[String, typings.sass.valueMod.Value]
+    ) = this()
+    /**
+      * Creates a new argument list.
+      *
+      * @param contents - The positional arguments that make up the primary
+      * contents of the list. This may be either a plain JavaScript array or an
+      * immutable [[List]] from the [`immutable`
+      * package](https://immutable-js.com/).
+      *
+      * @param keywords - The keyword arguments attached to this argument list,
+      * whose names should exclude `$`. This can be either a plain JavaScript
+      * object with argument names as fields, or an immutable [[OrderedMap]] from
+      * the [`immutable` package](https://immutable-js.com/)
+      *
+      * @param separator - The separator for this list. Defaults to `','`.
+      */
+    def this(
+      contents: js.Array[typings.sass.valueMod.Value],
+      keywords: Record[String, typings.sass.valueMod.Value]
+    ) = this()
+    def this(
+      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
+      keywords: OrderedMap[String, typings.sass.valueMod.Value]
+    ) = this()
+    def this(
+      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
+      keywords: Record[String, typings.sass.valueMod.Value]
+    ) = this()
+    def this(
+      contents: js.Array[typings.sass.valueMod.Value],
+      keywords: OrderedMap[String, typings.sass.valueMod.Value],
+      separator: ListSeparator
+    ) = this()
+    def this(
+      contents: js.Array[typings.sass.valueMod.Value],
+      keywords: Record[String, typings.sass.valueMod.Value],
+      separator: ListSeparator
+    ) = this()
+    def this(
+      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
+      keywords: OrderedMap[String, typings.sass.valueMod.Value],
+      separator: ListSeparator
+    ) = this()
+    def this(
+      contents: typings.immutable.mod.List[typings.sass.valueMod.Value],
+      keywords: Record[String, typings.sass.valueMod.Value],
+      separator: ListSeparator
+    ) = this()
+  }
+  
+  @JSImport("sass", "SassBoolean")
+  @js.native
+  /* private */ open class SassBoolean ()
+    extends typings.sass.booleanMod.SassBoolean
+  
+  @JSImport("sass", "SassColor")
+  @js.native
+  open class SassColor protected ()
+    extends typings.sass.colorMod.SassColor {
+    /**
+      * Creates an RGB color.
+      *
+      * @throws `Error` if `red`, `green`, and `blue` aren't between `0` and
+      * `255`, or if `alpha` isn't between `0` and `1`.
+      */
+    def this(options: Alpha) = this()
+    /**
+      * Creates an HWB color.
+      *
+      * @throws `Error` if `whiteness` or `blackness` aren't between `0` and `100`,
+      * or if `alpha` isn't between `0` and `1`.
+      */
+    def this(options: Blackness) = this()
+    /**
+      * Creates an HSL color.
+      *
+      * @throws `Error` if `saturation` or `lightness` aren't between `0` and
+      * `100`, or if `alpha` isn't between `0` and `1`.
+      */
+    def this(options: Hue) = this()
+  }
+  
+  @JSImport("sass", "SassFunction")
+  @js.native
+  open class SassFunction protected ()
+    extends typings.sass.valueFunctionMod.SassFunction {
+    /**
+      * Creates a new first-class function that can be invoked using
+      * [`meta.call()`](https://sass-lang.com/documentation/modules/meta#call).
+      *
+      * @param signature - The function signature, like you'd write for the
+      * [`@function rule`](https://sass-lang.com/documentation/at-rules/function).
+      * @param callback - The callback that's invoked when this function is called,
+      * just like for a [[CustomFunction]].
+      */
+    def this(
+      signature: String,
+      callback: js.Function1[/* args */ js.Array[typings.sass.valueMod.Value], typings.sass.valueMod.Value]
+    ) = this()
+  }
+  
+  @JSImport("sass", "SassList")
+  @js.native
+  /**
+    * Creates an empty list.
+    *
+    * @param options.separator - The separator to use between elements of this
+    * list. Defaults to `','`.
+    *
+    * @param options.brackets - Whether the list has square brackets. Defaults to
+    * `false`.
+    */
+  open class SassList ()
+    extends typings.sass.valueMod.SassList {
+    /**
+      * Creates a new list.
+      *
+      * @param contents - The contents of the list. This may be either a plain
+      * JavaScript array or an immutable [[List]] from the [`immutable`
+      * package](https://immutable-js.com/).
+      *
+      * @param options.separator - The separator to use between elements of this
+      * list. Defaults to `','`.
+      *
+      * @param options.brackets - Whether the list has square brackets. Defaults to
+      * `false`.
+      */
+    def this(contents: js.Array[typings.sass.valueMod.Value]) = this()
+    def this(contents: typings.immutable.mod.List[typings.sass.valueMod.Value]) = this()
+    def this(options: Brackets) = this()
+    def this(contents: js.Array[typings.sass.valueMod.Value], options: Brackets) = this()
+    def this(contents: typings.immutable.mod.List[typings.sass.valueMod.Value], options: Brackets) = this()
+  }
+  
+  @JSImport("sass", "SassMap")
+  @js.native
+  /**
+    * Creates a new map.
+    *
+    * @param contents - The contents of the map. This is an immutable
+    * [[OrderedMap]] from the [`immutable` package](https://immutable-js.com/).
+    * Defaults to an empty map.
+    */
+  open class SassMap ()
+    extends typings.sass.mapMod.SassMap {
+    def this(contents: OrderedMap[typings.sass.valueMod.Value, typings.sass.valueMod.Value]) = this()
+  }
+  
+  @JSImport("sass", "SassNumber")
+  @js.native
+  open class SassNumber protected ()
+    extends typings.sass.numberMod.SassNumber {
+    /**
+      * Creates a new number with more complex units than just a single numerator.
+      *
+      * Upon construction, any compatible numerator and denominator units are
+      * simplified away according to the conversion factor between them.
+      *
+      * @param value - The number's numeric value.
+      *
+      * @param unit - If this is a string, it's used as the single numerator unit
+      * for the number.
+      *
+      * @param unit.numeratorUnits - If passed, these are the numerator units to
+      * use for the number. This may be either a plain JavaScript array or an
+      * immutable [[List]] from the [`immutable`
+      * package](https://immutable-js.com/).
+      *
+      * @param unit.denominatorUnits - If passed, these are the denominator units
+      * to use for the number. This may be either a plain JavaScript array or an
+      * immutable [[List]] from the [`immutable`
+      * package](https://immutable-js.com/).
+      */
+    def this(value: Double) = this()
+    def this(value: Double, unit: String) = this()
+    def this(value: Double, unit: DenominatorUnits) = this()
+  }
+  
+  @JSImport("sass", "SassString")
+  @js.native
+  /**
+    * Creates an empty string.
+    *
+    * @param options.quotes - Whether the string is quoted. Defaults to `true`.
+    */
+  open class SassString ()
+    extends typings.sass.stringMod.SassString {
+    def this(options: Quotes) = this()
+    /**
+      * Creates a new string.
+      *
+      * @param text - The contents of the string. For quoted strings, this is the
+      * semantic content—any escape sequences that were been written in the source
+      * text are resolved to their Unicode values. For unquoted strings, though,
+      * escape sequences are preserved as literal backslashes.
+      *
+      * @param options.quotes - Whether the string is quoted. Defaults to `true`.
+      */
+    def this(text: String) = this()
+    def this(text: String, options: Quotes) = this()
+  }
+  
+  @JSImport("sass", "TRUE")
+  @js.native
+  val TRUE: Boolean[`true`] = js.native
+  
+  @JSImport("sass", "Value")
+  @js.native
+  /* protected */ abstract class Value ()
+    extends typings.sass.valueMod.Value
+  
+  inline def compile(path: String): CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(path.asInstanceOf[js.Any]).asInstanceOf[CompileResult]
+  
+  inline def compileAsync(path: String): js.Promise[CompileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileAsync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CompileResult]]
+  
+  inline def compileAsync_async(path: String, options: Options[async]): js.Promise[CompileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileAsync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompileResult]]
+  
+  inline def compileString(source: String): CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("compileString")(source.asInstanceOf[js.Any]).asInstanceOf[CompileResult]
+  
+  inline def compileStringAsync(source: String): js.Promise[CompileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileStringAsync")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CompileResult]]
+  
+  inline def compileStringAsync_async(source: String, options: StringOptions[async]): js.Promise[CompileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileStringAsync")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CompileResult]]
+  
+  inline def compileString_sync(source: String, options: StringOptions[sync]): CompileResult = (^.asInstanceOf[js.Dynamic].applyDynamic("compileString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompileResult]
+  
+  inline def compile_sync(path: String, options: Options[sync]): CompileResult = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompileResult]
+  
+  @JSImport("sass", "info")
+  @js.native
+  val info: String = js.native
+  
+  inline def renderSync_sync(options: LegacyOptions[sync]): LegacyResult = ^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[LegacyResult]
+  
+  inline def render_async(
+    options: LegacyOptions[async],
+    callback: js.Function2[
+      /* exception */ js.UndefOr[LegacyException], 
+      /* result */ js.UndefOr[LegacyResult], 
+      Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("sass", "sassFalse")
+  @js.native
+  val sassFalse: typings.sass.booleanMod.SassBoolean = js.native
+  
+  @JSImport("sass", "sassNull")
+  @js.native
+  val sassNull: typings.sass.valueMod.Value = js.native
+  
+  @JSImport("sass", "sassTrue")
+  @js.native
+  val sassTrue: typings.sass.booleanMod.SassBoolean = js.native
   
   object types {
     
     @JSImport("sass", "types.Boolean")
     @js.native
-    class Boolean[T /* <: scala.Boolean */] protected () extends SassType {
-      def this(value: T) = this()
-      
-      def getValue(): T = js.native
-    }
+    open class Boolean[T /* <: scala.Boolean */] ()
+      extends typings.sass.functionMod.types.Boolean[T]
+    /* static members */
     object Boolean {
       
-      /* static member */
+      /** Sass's `false` value. */
       @JSImport("sass", "types.Boolean.FALSE")
       @js.native
-      val FALSE: Boolean[`false`] = js.native
+      val FALSE: typings.sass.functionMod.types.Boolean[`false`] = js.native
       
-      /* static member */
+      /** Sass's `true` value. */
       @JSImport("sass", "types.Boolean.TRUE")
       @js.native
-      val TRUE: Boolean[`true`] = js.native
+      val TRUE: typings.sass.functionMod.types.Boolean[`true`] = js.native
     }
     
     @JSImport("sass", "types.Color")
     @js.native
-    class Color protected () extends SassType {
+    open class Color protected ()
+      extends typings.sass.functionMod.types.Color {
+      /**
+        * Creates a new Sass color with alpha, red, green, and blue channels taken
+        * from respective two-byte chunks of a hexidecimal number.
+        *
+        * @example
+        *
+        * ```js
+        * new sass.types.Color(0xff6b717f); // #6b717f
+        * new sass.types.Color(0x00000000); // rgba(0, 0, 0, 0)
+        * ```
+        */
+      def this(argb: Double) = this()
+      /**
+        * Creates a new Sass color with the given red, green, blue, and alpha
+        * channels. The red, green, and blue channels must be integers between 0
+        * and 255 (inclusive), and alpha must be between 0 and 1 (inclusive).
+        *
+        * @example
+        *
+        * ```js
+        * new sass.types.Color(107, 113, 127); // #6b717f
+        * new sass.types.Color(0, 0, 0, 0); // rgba(0, 0, 0, 0)
+        * ```
+        */
       def this(r: Double, g: Double, b: Double) = this()
       def this(r: Double, g: Double, b: Double, a: Double) = this()
-      
-      def getA(): Double = js.native
-      
-      def getB(): Double = js.native
-      
-      def getG(): Double = js.native
-      
-      def getR(): Double = js.native
-      
-      def setA(value: Double): Unit = js.native
-      
-      def setB(value: Double): Unit = js.native
-      
-      def setG(value: Double): Unit = js.native
-      
-      def setR(value: Double): Unit = js.native
+    }
+    
+    @JSImport("sass", "types.Error")
+    @js.native
+    open class Error protected ()
+      extends typings.sass.functionMod.types.Error {
+      def this(message: java.lang.String) = this()
     }
     
     @JSImport("sass", "types.List")
     @js.native
-    class List[T /* <: SassType */] protected () extends SassType {
+    open class List protected ()
+      extends typings.sass.functionMod.types.List {
+      /**
+        * Creates a new Sass list.
+        *
+        * **Heads up!** The initial values of the list elements are undefined.
+        * These elements must be set using [[setValue]] before accessing them or
+        * passing the list back to Sass.
+        *
+        * @example
+        *
+        * ```js
+        * const list = new sass.types.List(3);
+        * list.setValue(0, new sass.types.Number(10, "px"));
+        * list.setValue(1, new sass.types.Number(15, "px"));
+        * list.setValue(2, new sass.types.Number(32, "px"));
+        * list; // 10px, 15px, 32px
+        * ```
+        *
+        * @param length - The number of (initially undefined) elements in the list.
+        * @param commaSeparator - If `true`, the list is comma-separated; otherwise,
+        * it's space-separated. Defaults to `true`.
+        */
       def this(length: Double) = this()
       def this(length: Double, commaSeparator: scala.Boolean) = this()
-      
-      def getLength(): Double = js.native
-      
-      def getSeparator(): scala.Boolean = js.native
-      
-      def getValue(index: Double): js.UndefOr[T] = js.native
-      
-      def setSeparator(isComma: scala.Boolean): Unit = js.native
-      
-      def setValue(index: Double, value: T): Unit = js.native
     }
     
     @JSImport("sass", "types.Map")
     @js.native
-    class Map[K /* <: SassType */, V /* <: SassType */] protected () extends SassType {
+    open class Map protected ()
+      extends typings.sass.functionMod.types.Map {
+      /**
+        * Creates a new Sass map.
+        *
+        * **Heads up!** The initial keys and values of the map are undefined. They
+        * must be set using [[setKey]] and [[setValue]] before accessing them or
+        * passing the map back to Sass.
+        *
+        * @example
+        *
+        * ```js
+        * const map = new sass.types.Map(2);
+        * map.setKey(0, new sass.types.String("width"));
+        * map.setValue(0, new sass.types.Number(300, "px"));
+        * map.setKey(1, new sass.types.String("height"));
+        * map.setValue(1, new sass.types.Number(100, "px"));
+        * map; // (width: 300px, height: 100px)
+        * ```
+        *
+        * @param length - The number of (initially undefined) key/value pairs in the map.
+        */
       def this(length: Double) = this()
-      
-      def getKey(index: Double): K = js.native
-      
-      def getLength(): Double = js.native
-      
-      def getValue(index: Double): V = js.native
-      
-      def setKey(index: Double, key: K): Unit = js.native
-      
-      def setValue(index: Double, value: V): Unit = js.native
     }
     
-    @js.native
-    trait Null extends SassType {
-      
-      var NULL: typings.sass.mod.types.Null = js.native
-    }
     @JSImport("sass", "types.Null")
     @js.native
-    val Null: typings.sass.mod.types.Null = js.native
+    open class Null ()
+      extends typings.sass.functionMod.types.Null
+    /* static members */
+    object Null {
+      
+      /** Sass's singleton `null` value. */
+      @JSImport("sass", "types.Null.NULL")
+      @js.native
+      val NULL: typings.sass.functionMod.types.Null = js.native
+    }
     
     @JSImport("sass", "types.Number")
     @js.native
-    class Number protected () extends SassType {
+    open class Number protected ()
+      extends typings.sass.functionMod.types.Number {
+      /**
+        * @param value - The numeric value of the number.
+        *
+        * @param unit - If passed, the number's unit.
+        *
+        * Complex units can be represented as
+        * `<unit>*<unit>*.../<unit>*<unit>*...`, with numerator units on the
+        * left-hand side of the `/` and denominator units on the right. A number
+        * with only numerator units may omit the `/` and the units after it, and a
+        * number with only denominator units may be represented
+        * with no units before the `/`.
+        *
+        * @example
+        *
+        * ```scss
+        * new sass.types.Number(0.5); // == 0.5
+        * new sass.types.Number(10, "px"); // == 10px
+        * new sass.types.Number(10, "px*px"); // == 10px * 1px
+        * new sass.types.Number(10, "px/s"); // == math.div(10px, 1s)
+        * new sass.types.Number(10, "px*px/s*s"); // == 10px * math.div(math.div(1px, 1s), 1s)
+        * ```
+        */
       def this(value: Double) = this()
       def this(value: Double, unit: java.lang.String) = this()
-      
-      def getUnit(): java.lang.String = js.native
-      
-      def getValue(): Double = js.native
-      
-      def setUnit(unit: java.lang.String): Unit = js.native
-      
-      def setValue(value: Double): Unit = js.native
     }
-    
-    @JSImport("sass", "types.SassType")
-    @js.native
-    abstract class SassType () extends StObject
     
     @JSImport("sass", "types.String")
     @js.native
-    class String protected () extends SassType {
+    open class String protected ()
+      extends typings.sass.functionMod.types.String {
+      /**
+        * Creates an unquoted string with the given contents.
+        *
+        * **Heads up!** This API currently provides no way of creating a
+        * [quoted](https://sass-lang.com/documentation/values/strings#quoted)
+        * string.
+        */
       def this(value: java.lang.String) = this()
-      
-      def getValue(): java.lang.String = js.native
-      
-      def setValue(value: java.lang.String): Unit = js.native
-    }
-  }
-  
-  type Importer = js.Function3[
-    /* url */ String, 
-    /* prev */ String, 
-    /* done */ js.Function1[/* data */ ImporterReturnType, Unit], 
-    ImporterReturnType | Unit
-  ]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.sass.anon.File
-    - typings.sass.anon.Contents
-    - typings.std.Error
-    - scala.Null
-  */
-  type ImporterReturnType = _ImporterReturnType | Error | Null
-  
-  trait Options extends StObject {
-    
-    /**
-      * A string to pass to compile.
-      *
-      * It is recommended that you use `includePaths` in conjunction with this so that sass can find files when using the @import directive.
-      *
-      * @default null
-      */
-    var data: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Path to a file to compile.
-      *
-      * @default null
-      */
-    var file: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Holds a collection of custom functions that may be invoked by the sass files being compiled.
-      *
-      * @default undefined
-      */
-    var functions: js.UndefOr[StringDictionary[js.Function1[/* repeated */ SassType, SassType | Unit]]] = js.undefined
-    
-    /**
-      * Handles when the @import directive is encountered.
-      *
-      * A custom importer allows extension of the sass engine in both a synchronous and asynchronous manner.
-      *
-      * @default undefined
-      */
-    var importer: js.UndefOr[Importer | js.Array[Importer]] = js.undefined
-    
-    /**
-      * An array of paths that should be looked in to attempt to resolve your @import declarations.
-      * When using `data`, it is recommended that you use this.
-      *
-      * @default []
-      */
-    var includePaths: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
-      * Used to determine whether to use space or tab character for indentation.
-      *
-      * @default 'space'
-      */
-    var indentType: js.UndefOr[space | tab] = js.undefined
-    
-    /**
-      * Used to determine the number of spaces or tabs to be used for indentation.
-      *
-      * @default 2
-      */
-    var indentWidth: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Enable Sass Indented Syntax for parsing the data string or file.
-      *
-      * @default false
-      */
-    var indentedSyntax: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Used to determine which sequence to use for line breaks.
-      *
-      * @default 'lf'
-      */
-    var linefeed: js.UndefOr[cr | crlf | lf | lfcr] = js.undefined
-    
-    /**
-      * Disable the inclusion of source map information in the output file.
-      *
-      * @default false
-      */
-    var omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specify the intended location of the output file.
-      * Strongly recommended when outputting source maps so that they can properly refer back to their intended files.
-      *
-      * @default null
-      */
-    var outFile: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Determines the output format of the final CSS style.
-      *
-      * @default 'expanded'
-      */
-    var outputStyle: js.UndefOr[compressed | expanded] = js.undefined
-    
-    /**
-      * Enables the outputting of a source map.
-      *
-      * @default undefined
-      */
-    var sourceMap: js.UndefOr[Boolean | String] = js.undefined
-    
-    /**
-      * Includes the contents in the source map information.
-      *
-      * @default false
-      */
-    var sourceMapContents: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Embeds the source map as a data URI.
-      *
-      * @default false
-      */
-    var sourceMapEmbed: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The value will be emitted as `sourceRoot` in the source map information.
-      *
-      * @default undefined
-      */
-    var sourceMapRoot: js.UndefOr[String] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-    
-    extension [Self <: Options](x: Self) {
-      
-      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-      
-      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
-      
-      inline def setFunctions(value: StringDictionary[js.Function1[/* repeated */ SassType, SassType | Unit]]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
-      
-      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
-      
-      inline def setImporter(value: Importer | js.Array[Importer]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
-      
-      inline def setImporterFunction3(
-        value: (/* url */ String, /* prev */ String, /* done */ js.Function1[/* data */ ImporterReturnType, Unit]) => ImporterReturnType | Unit
-      ): Self = StObject.set(x, "importer", js.Any.fromFunction3(value))
-      
-      inline def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
-      
-      inline def setImporterVarargs(value: Importer*): Self = StObject.set(x, "importer", js.Array(value :_*))
-      
-      inline def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
-      
-      inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
-      
-      inline def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
-      
-      inline def setIndentType(value: space | tab): Self = StObject.set(x, "indentType", value.asInstanceOf[js.Any])
-      
-      inline def setIndentTypeUndefined: Self = StObject.set(x, "indentType", js.undefined)
-      
-      inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
-      
-      inline def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
-      
-      inline def setIndentedSyntax(value: Boolean): Self = StObject.set(x, "indentedSyntax", value.asInstanceOf[js.Any])
-      
-      inline def setIndentedSyntaxUndefined: Self = StObject.set(x, "indentedSyntax", js.undefined)
-      
-      inline def setLinefeed(value: cr | crlf | lf | lfcr): Self = StObject.set(x, "linefeed", value.asInstanceOf[js.Any])
-      
-      inline def setLinefeedUndefined: Self = StObject.set(x, "linefeed", js.undefined)
-      
-      inline def setOmitSourceMapUrl(value: Boolean): Self = StObject.set(x, "omitSourceMapUrl", value.asInstanceOf[js.Any])
-      
-      inline def setOmitSourceMapUrlUndefined: Self = StObject.set(x, "omitSourceMapUrl", js.undefined)
-      
-      inline def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
-      
-      inline def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
-      
-      inline def setOutputStyle(value: compressed | expanded): Self = StObject.set(x, "outputStyle", value.asInstanceOf[js.Any])
-      
-      inline def setOutputStyleUndefined: Self = StObject.set(x, "outputStyle", js.undefined)
-      
-      inline def setSourceMap(value: Boolean | String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
-      
-      inline def setSourceMapContents(value: Boolean): Self = StObject.set(x, "sourceMapContents", value.asInstanceOf[js.Any])
-      
-      inline def setSourceMapContentsUndefined: Self = StObject.set(x, "sourceMapContents", js.undefined)
-      
-      inline def setSourceMapEmbed(value: Boolean): Self = StObject.set(x, "sourceMapEmbed", value.asInstanceOf[js.Any])
-      
-      inline def setSourceMapEmbedUndefined: Self = StObject.set(x, "sourceMapEmbed", js.undefined)
-      
-      inline def setSourceMapRoot(value: String): Self = StObject.set(x, "sourceMapRoot", value.asInstanceOf[js.Any])
-      
-      inline def setSourceMapRootUndefined: Self = StObject.set(x, "sourceMapRoot", js.undefined)
-      
-      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
-    }
-  }
-  
-  trait Result extends StObject {
-    
-    /**
-      * The compiled CSS.
-      *
-      * Write this to a file, or serve it out as needed.
-      */
-    var css: Buffer
-    
-    /**
-      * The source map.
-      */
-    var map: js.UndefOr[Buffer] = js.undefined
-    
-    var stats: Duration
-  }
-  object Result {
-    
-    inline def apply(css: Buffer, stats: Duration): Result = {
-      val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Result]
-    }
-    
-    extension [Self <: Result](x: Self) {
-      
-      inline def setCss(value: Buffer): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
-      
-      inline def setMap(value: Buffer): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
-      
-      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
-      
-      inline def setStats(value: Duration): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait SassException
-    extends StObject
-       with Error {
-    
-    /**
-      * The column number of error.
-      */
-    var column: Double
-    
-    /**
-      * The filename of error.
-      *
-      * In case file option was not set (in favour of `data`), this will reflect the value `stdin`.
-      */
-    var file: String
-    
-    /**
-      * The formatted error.
-      */
-    var formatted: String
-    
-    /**
-      * The line number of error.
-      */
-    var line: Double
-    
-    /**
-      * The status code.
-      */
-    var status: Double
-  }
-  object SassException {
-    
-    inline def apply(
-      column: Double,
-      file: String,
-      formatted: String,
-      line: Double,
-      message: String,
-      name: String,
-      status: Double
-    ): SassException = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SassException]
-    }
-    
-    extension [Self <: SassException](x: Self) {
-      
-      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-      
-      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-      
-      inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
-      
-      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
-      
-      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait _ImporterReturnType extends StObject
-  object _ImporterReturnType {
-    
-    inline def Contents(contents: String): typings.sass.anon.Contents = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.sass.anon.Contents]
-    }
-    
-    inline def File(file: String): typings.sass.anon.File = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.sass.anon.File]
     }
   }
 }

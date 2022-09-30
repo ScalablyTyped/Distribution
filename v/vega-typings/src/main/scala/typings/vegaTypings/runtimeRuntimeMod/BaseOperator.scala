@@ -1,7 +1,6 @@
 package typings.vegaTypings.runtimeRuntimeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vegaTypings.vegaTypingsStrings.indexColon$LeftcurlybracketstringRightcurlybracket
 import typings.vegaTypings.vegaTypingsStrings.input
 import typings.vegaTypings.vegaTypingsStrings.output
 import typings.vegaTypings.vegaTypingsStrings.values
@@ -16,7 +15,9 @@ trait BaseOperator extends StObject {
     */
   var data: js.UndefOr[
     StringDictionary[
-      js.Array[input | output | values | indexColon$LeftcurlybracketstringRightcurlybracket]
+      js.Array[
+        input | output | values | (/* template literal string: index:${string} */ String)
+      ]
     ]
   ] = js.undefined
   
@@ -86,7 +87,9 @@ object BaseOperator {
     
     inline def setData(
       value: StringDictionary[
-          js.Array[input | output | values | indexColon$LeftcurlybracketstringRightcurlybracket]
+          js.Array[
+            input | output | values | (/* template literal string: index:${string} */ String)
+          ]
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

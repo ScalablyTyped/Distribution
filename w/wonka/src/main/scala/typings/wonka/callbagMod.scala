@@ -1,9 +1,9 @@
 package typings.wonka
 
 import typings.wonka.typesMod.Source
-import typings.wonka.wonkaNumbers.`0`
-import typings.wonka.wonkaNumbers.`1`
-import typings.wonka.wonkaNumbers.`2`
+import typings.wonka.wonkaInts.`0`
+import typings.wonka.wonkaInts.`1`
+import typings.wonka.wonkaInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

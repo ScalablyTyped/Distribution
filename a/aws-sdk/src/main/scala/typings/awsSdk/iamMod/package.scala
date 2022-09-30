@@ -36,7 +36,7 @@ type ContextKeyNamesResultListType = js.Array[ContextKeyNameType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.string__
-  - typings.awsSdk.awsSdkStrings.stringList_
+  - typings.awsSdk.awsSdkStrings.stringList__
   - typings.awsSdk.awsSdkStrings.numeric_
   - typings.awsSdk.awsSdkStrings.numericList
   - typings.awsSdk.awsSdkStrings.boolean__

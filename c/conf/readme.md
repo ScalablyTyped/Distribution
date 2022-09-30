@@ -1,7 +1,7 @@
 
 # Scala.js typings for conf
 
-Typings are for version 7.1.2
+Typings are for version 10.2.0
 
 ## Library description:
 Simple config handling for your app or module
@@ -10,10 +10,10 @@ Simple config handling for your app or module
 | ------------------ | :-------------: |
 | Full name          | conf |
 | Keywords           | config, store, app, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save, load, read, write, cache |
-| # releases         | 22 |
-| # dependents       | 541 |
-| # downloads        | 20314116 |
-| # stars            | 13 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1927868.0 |
+| # stars            | 946.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/conf#readme)

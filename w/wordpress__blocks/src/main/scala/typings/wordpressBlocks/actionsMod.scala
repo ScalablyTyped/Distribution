@@ -17,8 +17,8 @@ object actionsMod {
   inline def addBlockStyles(blockName: String, styles: js.Array[BlockStyle]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addBlockStyles(blockName: String, styles: BlockStyle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addBlockTypes(blockTypes: js.Array[BlockConfiguration[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addBlockTypes(blockTypes: BlockConfiguration[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBlockTypes(blockTypes: js.Array[BlockConfiguration[Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBlockTypes(blockTypes: BlockConfiguration[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def removeBlockStyles(blockName: String, styleNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeBlockStyles(blockName: String, styleNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]

@@ -1,19 +1,19 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`131072`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`196608`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`65536`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`131072`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`196608`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`65536`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`131072`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`196608`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`65536`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`131072`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`196608`
 */
 trait FAX_SERVER_APIVERSION_ENUM extends StObject
 object FAX_SERVER_APIVERSION_ENUM {

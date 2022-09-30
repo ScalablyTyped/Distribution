@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/tasks", JSImport.Default)
 @js.native
-class default protected ()
+open class default protected ()
   extends StObject
      with CloudTasksClient {
   /**

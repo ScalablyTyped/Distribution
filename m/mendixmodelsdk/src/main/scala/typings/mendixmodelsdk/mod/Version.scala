@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "Version")
 @js.native
-class Version protected ()
+open class Version protected ()
   extends typings.mendixmodelsdk.internalMod.Version {
   def this(major: Double, minor: Double, patch: Double) = this()
 }
@@ -19,8 +19,8 @@ object Version {
   
   @JSImport("mendixmodelsdk", "Version.memoisMap")
   @js.native
-  def memoisMap: js.Any = js.native
-  inline def memoisMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
+  def memoisMap: Any = js.native
+  inline def memoisMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
   
   /**
     * Parses and @returns the given string as a Version object.

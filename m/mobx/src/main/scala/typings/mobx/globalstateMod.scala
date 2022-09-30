@@ -1,22 +1,23 @@
 package typings.mobx
 
+import typings.mobx.computedvalueMod.ComputedValue
 import typings.mobx.coreObservableMod.IObservable
 import typings.mobx.derivationMod.IDerivation
 import typings.mobx.internalMod.Reaction_
-import typings.mobx.mobxStrings.strict
+import typings.mobx.mobxStrings.always
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalstateMod {
   
-  @JSImport("mobx/lib/core/globalstate", JSImport.Namespace)
+  @JSImport("mobx/dist/core/globalstate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/core/globalstate", "MobXGlobals")
+  @JSImport("mobx/dist/core/globalstate", "MobXGlobals")
   @js.native
-  class MobXGlobals () extends StObject {
+  open class MobXGlobals () extends StObject {
     
     /**
       * globally unique token to signal unchanged
@@ -37,17 +38,6 @@ object globalstateMod {
     var allowStateReads: Boolean = js.native
     
     /**
-      * Are we running a computation currently? (not a reaction)
-      */
-    var computationDepth: Double = js.native
-    
-    /**
-      * Allows overwriting of computed properties, useful in tests but not prod as it can cause
-      * memory leaks. See https://github.com/mobxjs/mobx/issues/1867
-      */
-    var computedConfigurable: Boolean = js.native
-    
-    /**
       * Warn if computed values are accessed outside a reactive context
       */
     var computedRequiresReaction: Boolean = js.native
@@ -57,12 +47,12 @@ object globalstateMod {
     /**
       * If strict mode is enabled, state changes are by default not allowed
       */
-    var enforceActions: Boolean | strict = js.native
+    var enforceActions: Boolean | always = js.native
     
     /**
       * Globally attached error handlers that react specifically to errors in reactions
       */
-    var globalReactionErrorHandlers: js.Array[js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]] = js.native
+    var globalReactionErrorHandlers: js.Array[js.Function2[/* error */ Any, /* derivation */ IDerivation, Unit]] = js.native
     
     /**
       * Are we in a batch block? (and how many of them)
@@ -110,16 +100,34 @@ object globalstateMod {
     var runId: Double = js.native
     
     /**
+      * False forces all object's descriptors to
+      * writable: true
+      * configurable: true
+      */
+    var safeDescriptors: Boolean = js.native
+    
+    /**
       * Spy callbacks
       */
-    var spyListeners: js.Array[js.Function1[/* change */ js.Any, Unit]] = js.native
+    var spyListeners: js.Array[js.Function1[/* change */ Any, Unit]] = js.native
     
     var suppressReactionErrors: Boolean = js.native
+    
+    /**
+      * Currently running reaction. This determines if we currently have a reactive context.
+      * (Tracking derivation is also set for temporal tracking of computed values inside actions,
+      * but trackingReaction can only be set by a form of Reaction)
+      */
+    var trackingContext: Reaction_ | ComputedValue[Any] | Null = js.native
     
     /**
       * Currently running derivation
       */
     var trackingDerivation: IDerivation | Null = js.native
+    
+    var useProxies: Boolean = js.native
+    
+    var verifyProxies: Boolean = js.native
     
     /**
       * MobXGlobals version.
@@ -132,11 +140,9 @@ object globalstateMod {
     var version: Double = js.native
   }
   
-  inline def getGlobal(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")().asInstanceOf[js.Any]
+  inline def getGlobalState(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalState")().asInstanceOf[Any]
   
-  inline def getGlobalState(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalState")().asInstanceOf[js.Any]
-  
-  @JSImport("mobx/lib/core/globalstate", "globalState")
+  @JSImport("mobx/dist/core/globalstate", "globalState")
   @js.native
   def globalState: MobXGlobals = js.native
   inline def globalState_=(x: MobXGlobals): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalState")(x.asInstanceOf[js.Any])

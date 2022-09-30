@@ -137,7 +137,7 @@ object formTokenFieldMod {
         
         inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        inline def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+        inline def setOnFocus(value: FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
         
         inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
         
@@ -153,7 +153,7 @@ object formTokenFieldMod {
         
         inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
         
-        inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+        inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value*))
         
         inline def setTokenizeOnSpace(value: Boolean): Self = StObject.set(x, "tokenizeOnSpace", value.asInstanceOf[js.Any])
         
@@ -163,7 +163,7 @@ object formTokenFieldMod {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: Value*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Value*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
     

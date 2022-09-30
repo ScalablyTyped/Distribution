@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-chart" : "36.6.7"
+      "victory-chart" : "36.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-chart" : "36.6.7"
+      "victory-chart" : "36.6.8"
     }
   ],
   "compile-devDependencies" : [

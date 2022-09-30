@@ -13,6 +13,7 @@ import typings.sentryTypes.envelopeMod.EnvelopeItemType
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.miscMod.ExtractedNodeRequestData
 import typings.sentryTypes.miscMod.Primitive
+import typings.sentryTypes.polymorphicsMod.PolymorphicRequest
 import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.severityMod.SeverityLevel
 import typings.sentryTypes.stackframeMod.StackFrame
@@ -42,7 +43,6 @@ import typings.sentryUtils.normalizeMod.ObjOrArray
 import typings.sentryUtils.promisebufferMod.PromiseBuffer
 import typings.sentryUtils.ratelimitMod.RateLimits
 import typings.sentryUtils.requestdataMod.AddRequestDataToEventOptions
-import typings.sentryUtils.requestdataMod.CrossPlatformRequest
 import typings.sentryUtils.requestdataMod.InjectedNodeDeps
 import typings.sentryUtils.sentryUtilsStrings.assert
 import typings.sentryUtils.sentryUtilsStrings.debug
@@ -53,6 +53,7 @@ import typings.sentryUtils.sentryUtilsStrings.trace
 import typings.sentryUtils.sentryUtilsStrings.warn
 import typings.sentryUtils.stacktraceMod.GetModuleFn
 import typings.std.ObjectConstructor
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -105,7 +106,7 @@ object mod {
   open class SyncPromise[T] protected ()
     extends typings.sentryUtils.syncpromiseMod.SyncPromise[T] {
     def this(executor: js.Function2[
-            /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T] | Null], Unit], 
+            /* resolve */ js.Function1[/* value */ js.UndefOr[T | PromiseLike[T] | Null], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
@@ -135,13 +136,13 @@ object mod {
   
   inline def addNonEnumerableProperty(obj: StringDictionary[Any], name: String, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNonEnumerableProperty")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def addRequestDataToEvent(event: Event, req: CrossPlatformRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
-  inline def addRequestDataToEvent(event: Event, req: CrossPlatformRequest, options: AddRequestDataToEventOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def addRequestDataToEvent(event: Event, req: PolymorphicRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def addRequestDataToEvent(event: Event, req: PolymorphicRequest, options: AddRequestDataToEventOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
   
-  inline def addRequestDataToTransaction(transaction: Unit, req: CrossPlatformRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addRequestDataToTransaction(transaction: Unit, req: CrossPlatformRequest, deps: InjectedNodeDeps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addRequestDataToTransaction(transaction: Transaction, req: CrossPlatformRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addRequestDataToTransaction(transaction: Transaction, req: CrossPlatformRequest, deps: InjectedNodeDeps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addRequestDataToTransaction(transaction: Unit, req: PolymorphicRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addRequestDataToTransaction(transaction: Unit, req: PolymorphicRequest, deps: InjectedNodeDeps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addRequestDataToTransaction(transaction: Transaction, req: PolymorphicRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addRequestDataToTransaction(transaction: Transaction, req: PolymorphicRequest, deps: InjectedNodeDeps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToTransaction")(transaction.asInstanceOf[js.Any], req.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def arrayify[T](maybeArray: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(maybeArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def arrayify[T](maybeArray: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(maybeArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
@@ -212,11 +213,11 @@ object mod {
   inline def extractExceptionKeysForMessage(exception: Record[String, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractExceptionKeysForMessage")(exception.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def extractExceptionKeysForMessage(exception: Record[String, Any], maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractExceptionKeysForMessage")(exception.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def extractPathForTransaction(req: CrossPlatformRequest): js.Tuple2[String, TransactionSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPathForTransaction")(req.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, TransactionSource]]
-  inline def extractPathForTransaction(req: CrossPlatformRequest, options: CustomRoute): js.Tuple2[String, TransactionSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractPathForTransaction")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, TransactionSource]]
+  inline def extractPathForTransaction(req: PolymorphicRequest): js.Tuple2[String, TransactionSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractPathForTransaction")(req.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, TransactionSource]]
+  inline def extractPathForTransaction(req: PolymorphicRequest, options: CustomRoute): js.Tuple2[String, TransactionSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractPathForTransaction")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, TransactionSource]]
   
-  inline def extractRequestData(req: CrossPlatformRequest): ExtractedNodeRequestData = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any]).asInstanceOf[ExtractedNodeRequestData]
-  inline def extractRequestData(req: CrossPlatformRequest, options: Deps): ExtractedNodeRequestData = (^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtractedNodeRequestData]
+  inline def extractRequestData(req: PolymorphicRequest): ExtractedNodeRequestData = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any]).asInstanceOf[ExtractedNodeRequestData]
+  inline def extractRequestData(req: PolymorphicRequest, options: Deps): ExtractedNodeRequestData = (^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtractedNodeRequestData]
   
   inline def extractTraceparentData(traceparent: String): js.UndefOr[TraceparentData] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTraceparentData")(traceparent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TraceparentData]]
   
@@ -346,16 +347,16 @@ object mod {
   
   inline def parseUrl(url: String): Host = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Host]
   
-  inline def rejectedSyncPromise[T](): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")().asInstanceOf[js.Thenable[T]]
-  inline def rejectedSyncPromise[T](reason: Any): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+  inline def rejectedSyncPromise[T](): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")().asInstanceOf[PromiseLike[T]]
+  inline def rejectedSyncPromise[T](reason: Any): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")(reason.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[T]]
   
   inline def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def resolve(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  inline def resolvedSyncPromise(): js.Thenable[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")().asInstanceOf[js.Thenable[Unit]]
-  inline def resolvedSyncPromise[T](value: T): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
-  inline def resolvedSyncPromise[T](value: js.Thenable[T]): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+  inline def resolvedSyncPromise(): PromiseLike[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")().asInstanceOf[PromiseLike[Unit]]
+  inline def resolvedSyncPromise[T](value: T): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[T]]
+  inline def resolvedSyncPromise[T](value: PromiseLike[T]): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[T]]
   
   inline def safeJoin(input: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeJoin")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def safeJoin(input: js.Array[Any], delimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeJoin")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[String]

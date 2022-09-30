@@ -6,8 +6,8 @@ import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApiIndoorMap.AMap.IndoorMap.Building
 import typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchResult
 import typings.amapJsApiIndoorMap.amapJsApiIndoorMapBooleans.`false`
-import typings.amapJsApiIndoorMap.amapJsApiIndoorMapNumbers.`0`
-import typings.amapJsApiIndoorMap.amapJsApiIndoorMapNumbers.`1`
+import typings.amapJsApiIndoorMap.amapJsApiIndoorMapInts.`0`
+import typings.amapJsApiIndoorMap.amapJsApiIndoorMapInts.`1`
 import typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.click
 import typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.complete
 import typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.floor_complete

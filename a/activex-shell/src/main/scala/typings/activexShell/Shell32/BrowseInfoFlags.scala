@@ -1,45 +1,45 @@
 package typings.activexShell.Shell32
 
-import typings.activexShell.activexShellNumbers.`0x00000001`
-import typings.activexShell.activexShellNumbers.`0x00000002`
-import typings.activexShell.activexShellNumbers.`0x00000004`
-import typings.activexShell.activexShellNumbers.`0x00000008`
-import typings.activexShell.activexShellNumbers.`0x00000010`
-import typings.activexShell.activexShellNumbers.`0x00000020`
-import typings.activexShell.activexShellNumbers.`0x00000040`
-import typings.activexShell.activexShellNumbers.`0x00000080`
-import typings.activexShell.activexShellNumbers.`0x00000090`
-import typings.activexShell.activexShellNumbers.`0x00000100`
-import typings.activexShell.activexShellNumbers.`0x00000200`
-import typings.activexShell.activexShellNumbers.`0x00000400`
-import typings.activexShell.activexShellNumbers.`0x00001000`
-import typings.activexShell.activexShellNumbers.`0x00002000`
-import typings.activexShell.activexShellNumbers.`0x00004000`
-import typings.activexShell.activexShellNumbers.`0x00008000`
-import typings.activexShell.activexShellNumbers.`0x00010000`
+import typings.activexShell.activexShellInts.`0x00000001`
+import typings.activexShell.activexShellInts.`0x00000002`
+import typings.activexShell.activexShellInts.`0x00000004`
+import typings.activexShell.activexShellInts.`0x00000008`
+import typings.activexShell.activexShellInts.`0x00000010`
+import typings.activexShell.activexShellInts.`0x00000020`
+import typings.activexShell.activexShellInts.`0x00000040`
+import typings.activexShell.activexShellInts.`0x00000080`
+import typings.activexShell.activexShellInts.`0x00000090`
+import typings.activexShell.activexShellInts.`0x00000100`
+import typings.activexShell.activexShellInts.`0x00000200`
+import typings.activexShell.activexShellInts.`0x00000400`
+import typings.activexShell.activexShellInts.`0x00001000`
+import typings.activexShell.activexShellInts.`0x00002000`
+import typings.activexShell.activexShellInts.`0x00004000`
+import typings.activexShell.activexShellInts.`0x00008000`
+import typings.activexShell.activexShellInts.`0x00010000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShell.activexShellNumbers.`0x00010000`
-  - typings.activexShell.activexShellNumbers.`0x00001000`
-  - typings.activexShell.activexShellNumbers.`0x00002000`
-  - typings.activexShell.activexShellNumbers.`0x00004000`
-  - typings.activexShell.activexShellNumbers.`0x00000080`
-  - typings.activexShell.activexShellNumbers.`0x00000002`
-  - typings.activexShell.activexShellNumbers.`0x00000010`
-  - typings.activexShell.activexShellNumbers.`0x00000040`
-  - typings.activexShell.activexShellNumbers.`0x00000200`
-  - typings.activexShell.activexShellNumbers.`0x00000400`
-  - typings.activexShell.activexShellNumbers.`0x00000008`
-  - typings.activexShell.activexShellNumbers.`0x00000001`
-  - typings.activexShell.activexShellNumbers.`0x00008000`
-  - typings.activexShell.activexShellNumbers.`0x00000004`
-  - typings.activexShell.activexShellNumbers.`0x00000100`
-  - typings.activexShell.activexShellNumbers.`0x00000090`
-  - typings.activexShell.activexShellNumbers.`0x00000020`
+  - typings.activexShell.activexShellInts.`0x00010000`
+  - typings.activexShell.activexShellInts.`0x00001000`
+  - typings.activexShell.activexShellInts.`0x00002000`
+  - typings.activexShell.activexShellInts.`0x00004000`
+  - typings.activexShell.activexShellInts.`0x00000080`
+  - typings.activexShell.activexShellInts.`0x00000002`
+  - typings.activexShell.activexShellInts.`0x00000010`
+  - typings.activexShell.activexShellInts.`0x00000040`
+  - typings.activexShell.activexShellInts.`0x00000200`
+  - typings.activexShell.activexShellInts.`0x00000400`
+  - typings.activexShell.activexShellInts.`0x00000008`
+  - typings.activexShell.activexShellInts.`0x00000001`
+  - typings.activexShell.activexShellInts.`0x00008000`
+  - typings.activexShell.activexShellInts.`0x00000004`
+  - typings.activexShell.activexShellInts.`0x00000100`
+  - typings.activexShell.activexShellInts.`0x00000090`
+  - typings.activexShell.activexShellInts.`0x00000020`
 */
 trait BrowseInfoFlags extends StObject
 object BrowseInfoFlags {

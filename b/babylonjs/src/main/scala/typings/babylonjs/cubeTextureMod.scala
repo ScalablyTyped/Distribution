@@ -68,7 +68,7 @@ object cubeTextureMod {
     
     /* private */ var _extensions: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _files: Nullable[js.Array[String]] = js.native
     
     /* protected */ var _forcedExtension: Nullable[String] = js.native

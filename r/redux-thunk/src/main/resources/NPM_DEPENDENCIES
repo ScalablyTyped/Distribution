@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redux-thunk" : "2.3.0"
+      "redux-thunk" : "2.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "redux-thunk" : "2.3.0"
+      "redux-thunk" : "2.4.1"
     }
   ],
   "compile-devDependencies" : [

@@ -68,7 +68,7 @@ object postProcessMod {
     
     /**
       * The index in _textures that corresponds to the output texture.
-      * @hidden
+      * @internal
       */
     var _currentRenderTextureInd: Double = js.native
     
@@ -82,7 +82,7 @@ object postProcessMod {
     
     /* private */ var _flushTextureCache: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _forcedOutputTexture: Nullable[RenderTargetWrapper] = js.native
     
     /* private */ var _fragmentUrl: Any = js.native
@@ -103,20 +103,20 @@ object postProcessMod {
     
     /**
       * Internal, reference to the location where this postprocess was output to. (Typically the texture on the next postprocess in the chain)
-      * @hidden
+      * @internal
       */
     var _outputTexture: Nullable[RenderTargetWrapper] = js.native
     
     /* private */ var _parameters: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _parentContainer: Nullable[AbstractScene] = js.native
     
     /* protected */ var _postProcessDefines: Nullable[String] = js.native
     
     /**
       * Prepass configuration in case this post process needs a texture from prepass
-      * @hidden
+      * @internal
       */
     var _prePassEffectConfiguration: PrePassEffectConfiguration = js.native
     
@@ -140,7 +140,7 @@ object postProcessMod {
     
     /**
       * Smart array of input and output textures for the post process.
-      * @hidden
+      * @internal
       */
     /* private */ var _textureCache: Any = js.native
     
@@ -150,7 +150,7 @@ object postProcessMod {
     
     /**
       * Smart array of input and output textures for the post process.
-      * @hidden
+      * @internal
       */
     var _textures: SmartArray[RenderTargetWrapper] = js.native
     
@@ -479,11 +479,7 @@ object postProcessMod {
     inline def Parse(parsedPostProcess: Any, scene: Scene, rootUrl: String): Nullable[PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[PostProcess]]
     
     /**
-      * @param parsedPostProcess
-      * @param targetCamera
-      * @param scene
-      * @param rootUrl
-      * @hidden
+      * @internal
       */
     inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[PostProcess]]
   }

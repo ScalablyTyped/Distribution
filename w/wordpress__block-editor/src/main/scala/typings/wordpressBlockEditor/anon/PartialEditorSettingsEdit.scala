@@ -25,7 +25,7 @@ trait PartialEditorSettingsEdit extends StObject {
   
   var availableLegacyWidgets: js.UndefOr[js.Array[Description]] = js.undefined
   
-  var availableTemplates: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var availableTemplates: js.UndefOr[js.Array[Any]] = js.undefined
   
   var bodyPlaceholder: js.UndefOr[String] = js.undefined
   
@@ -86,13 +86,13 @@ object PartialEditorSettingsEdit {
     
     inline def setAllowedBlockTypesUndefined: Self = StObject.set(x, "allowedBlockTypes", js.undefined)
     
-    inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value :_*))
+    inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value*))
     
     inline def setAllowedBlocks(value: js.Array[String]): Self = StObject.set(x, "allowedBlocks", value.asInstanceOf[js.Any])
     
     inline def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
     
-    inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
+    inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value*))
     
     inline def setAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "allowedMimeTypes", value.asInstanceOf[js.Any])
     
@@ -108,13 +108,13 @@ object PartialEditorSettingsEdit {
     
     inline def setAvailableLegacyWidgetsUndefined: Self = StObject.set(x, "availableLegacyWidgets", js.undefined)
     
-    inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
+    inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value*))
     
-    inline def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+    inline def setAvailableTemplates(value: js.Array[Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
     
     inline def setAvailableTemplatesUndefined: Self = StObject.set(x, "availableTemplates", js.undefined)
     
-    inline def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
+    inline def setAvailableTemplatesVarargs(value: Any*): Self = StObject.set(x, "availableTemplates", js.Array(value*))
     
     inline def setBodyPlaceholder(value: String): Self = StObject.set(x, "bodyPlaceholder", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object PartialEditorSettingsEdit {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
     
@@ -154,7 +154,7 @@ object PartialEditorSettingsEdit {
     
     inline def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
     
-    inline def setFontSizesVarargs(value: EditorFontSize*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+    inline def setFontSizesVarargs(value: EditorFontSize*): Self = StObject.set(x, "fontSizes", js.Array(value*))
     
     inline def setHasFixedToolbar(value: Boolean): Self = StObject.set(x, "hasFixedToolbar", value.asInstanceOf[js.Any])
     
@@ -168,7 +168,7 @@ object PartialEditorSettingsEdit {
     
     inline def setImageSizesUndefined: Self = StObject.set(x, "imageSizes", js.undefined)
     
-    inline def setImageSizesVarargs(value: EditorImageSize*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
+    inline def setImageSizesVarargs(value: EditorImageSize*): Self = StObject.set(x, "imageSizes", js.Array(value*))
     
     inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
     
@@ -198,7 +198,7 @@ object PartialEditorSettingsEdit {
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: EditorStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: EditorStyle*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setTemplateLock(value: EditorTemplateLock): Self = StObject.set(x, "templateLock", value.asInstanceOf[js.Any])
     

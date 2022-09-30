@@ -159,7 +159,7 @@ object util {
       * @param values String... The values to replace token {0}, {1}, etc.
       * @returns String The formatted string.
       */
-    inline def format(string: java.lang.String, values: Any*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(string.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[java.lang.String]
+    inline def format(string: java.lang.String, values: Any*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(string.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[java.lang.String]
     
     /** [Method] Returns the initial configuration passed to constructor
       * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.

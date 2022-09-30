@@ -48,7 +48,7 @@ trait ErrorFormattingOptions extends StObject {
   var stack: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * overrides the way values are wrapped (e.g. `[]` arround arrays, `""` around labels).
+    * overrides the way values are wrapped (e.g. `[]` around arrays, `""` around labels).
     * Each key can be set to a string with one (same character before and after the value) or two characters (first character
     * before and second character after), or `false` to disable wrapping.
     */

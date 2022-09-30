@@ -82,10 +82,6 @@ object twigStrings {
   inline def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
   
   @js.native
-  sealed trait Rightparenthesis extends StObject
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
-  
-  @js.native
   sealed trait Slash
     extends StObject
        with BinaryOperator

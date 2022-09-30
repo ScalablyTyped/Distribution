@@ -1,6 +1,5 @@
 package typings.xmldsigjs
 
-import typings.std.Uint8Array
 import typings.xmldsigjs.pkiMod.X509Certificate
 import typings.xmldsigjs.rsaKeyMod.RsaPSSSignParams
 import typings.xmldsigjs.x509DataMod.X509IncludeOption
@@ -12,21 +11,21 @@ object keyInfosMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "DomainParameters")
   @js.native
-  class DomainParameters ()
+  open class DomainParameters ()
     extends typings.xmldsigjs.ecdsaKeyMod.DomainParameters {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "EcdsaKeyValue")
   @js.native
-  class EcdsaKeyValue ()
+  open class EcdsaKeyValue ()
     extends typings.xmldsigjs.ecdsaKeyMod.EcdsaKeyValue {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "EcdsaPublicKey")
   @js.native
-  class EcdsaPublicKey ()
+  open class EcdsaPublicKey ()
     extends typings.xmldsigjs.ecdsaKeyMod.EcdsaPublicKey {
     def this(properties: js.Object) = this()
   }
@@ -40,37 +39,37 @@ object keyInfosMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "KeyInfoX509Data")
   @js.native
-  class KeyInfoX509Data ()
+  open class KeyInfoX509Data ()
     extends typings.xmldsigjs.x509DataMod.KeyInfoX509Data {
     def this(cert: X509Certificate) = this()
-    def this(rgbCert: Uint8Array) = this()
+    def this(rgbCert: js.typedarray.Uint8Array) = this()
     def this(cert: X509Certificate, includeOptions: X509IncludeOption) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "KeyValue")
   @js.native
-  class KeyValue ()
+  open class KeyValue ()
     extends typings.xmldsigjs.keyValueMod.KeyValue {
     def this(value: typings.xmldsigjs.keyInfoClauseMod.KeyInfoClause) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "MaskGenerationFunction")
   @js.native
-  class MaskGenerationFunction ()
+  open class MaskGenerationFunction ()
     extends typings.xmldsigjs.rsaKeyMod.MaskGenerationFunction {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "NamedCurve")
   @js.native
-  class NamedCurve ()
+  open class NamedCurve ()
     extends typings.xmldsigjs.ecdsaKeyMod.NamedCurve {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "PssAlgorithmParams")
   @js.native
-  class PssAlgorithmParams ()
+  open class PssAlgorithmParams ()
     extends typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams {
     def this(algorithm: RsaPSSSignParams) = this()
   }
@@ -86,14 +85,14 @@ object keyInfosMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "RsaKeyValue")
   @js.native
-  class RsaKeyValue ()
+  open class RsaKeyValue ()
     extends typings.xmldsigjs.rsaKeyMod.RsaKeyValue {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "SPKIData")
   @js.native
-  class SPKIData ()
+  open class SPKIData ()
     extends typings.xmldsigjs.spkiDataMod.SPKIData {
     def this(properties: js.Object) = this()
   }
@@ -116,7 +115,7 @@ object keyInfosMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos", "X509IssuerSerial")
   @js.native
-  class X509IssuerSerial ()
+  open class X509IssuerSerial ()
     extends typings.xmldsigjs.x509DataMod.X509IssuerSerial {
     def this(properties: js.Object) = this()
   }

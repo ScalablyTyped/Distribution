@@ -25,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.11.0: removed experimental
   * In version 7.7.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation")
+@JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceOperation")
 @js.native
-class PublishedRestServiceOperation protected () extends Element[IModel] {
+open class PublishedRestServiceOperation protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -100,7 +100,7 @@ class PublishedRestServiceOperation protected () extends Element[IModel] {
 }
 object PublishedRestServiceOperation {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceOperation")
   @js.native
   val ^ : js.Any = js.native
   
@@ -124,13 +124,13 @@ object PublishedRestServiceOperation {
   inline def createIn(container: PublishedRestServiceResource): PublishedRestServiceOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedRestServiceOperation]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceOperation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestServiceOperation.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestServiceOperation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

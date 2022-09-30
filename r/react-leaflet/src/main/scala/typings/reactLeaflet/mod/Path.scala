@@ -14,7 +14,7 @@ abstract class Path[P /* <: PathProps */, E /* <: typings.leaflet.mod.Path */] p
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   def getChildContext(): PopupContainer[E] = js.native
   

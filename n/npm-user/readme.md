@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-user
 
-Typings are for version 4.1.1
+Typings are for version 5.0.0
 
 ## Library description:
 Get user info of an npm user
@@ -10,10 +10,10 @@ Get user info of an npm user
 | ------------------ | :-------------: |
 | Full name          | npm-user |
 | Keywords           | npm, user, username, homepage, email, get, website, scrape, info, profile |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 5560 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 628.0 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/npm-user#readme)

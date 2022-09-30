@@ -1,22 +1,22 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`3`
-import typings.mfiles.mfilesNumbers.`4`
-import typings.mfiles.mfilesNumbers.`5`
-import typings.mfiles.mfilesNumbers.`6`
-import typings.mfiles.mfilesNumbers.`7`
-import typings.mfiles.mfilesNumbers.`8`
+import typings.mfiles.mfilesInts.`3`
+import typings.mfiles.mfilesInts.`4`
+import typings.mfiles.mfilesInts.`5`
+import typings.mfiles.mfilesInts.`6`
+import typings.mfiles.mfilesInts.`7`
+import typings.mfiles.mfilesInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`3`
-  - typings.mfiles.mfilesNumbers.`4`
-  - typings.mfiles.mfilesNumbers.`5`
-  - typings.mfiles.mfilesNumbers.`6`
-  - typings.mfiles.mfilesNumbers.`7`
-  - typings.mfiles.mfilesNumbers.`8`
+  - typings.mfiles.mfilesInts.`3`
+  - typings.mfiles.mfilesInts.`4`
+  - typings.mfiles.mfilesInts.`5`
+  - typings.mfiles.mfilesInts.`6`
+  - typings.mfiles.mfilesInts.`7`
+  - typings.mfiles.mfilesInts.`8`
 */
 trait MFNamedValueType extends StObject
 object MFNamedValueType {

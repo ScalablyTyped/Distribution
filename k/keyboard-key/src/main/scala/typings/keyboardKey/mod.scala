@@ -3,119 +3,119 @@ package typings.keyboardKey
 import org.scalablytyped.runtime.Shortcut
 import typings.keyboardKey.anon.PickKeyboardEventkeykeyCo
 import typings.keyboardKey.anon.PickKeyboardEventkeykeyCoKey
-import typings.keyboardKey.keyboardKeyNumbers.`112`
-import typings.keyboardKey.keyboardKeyNumbers.`113`
-import typings.keyboardKey.keyboardKeyNumbers.`114`
-import typings.keyboardKey.keyboardKeyNumbers.`115`
-import typings.keyboardKey.keyboardKeyNumbers.`116`
-import typings.keyboardKey.keyboardKeyNumbers.`117`
-import typings.keyboardKey.keyboardKeyNumbers.`118`
-import typings.keyboardKey.keyboardKeyNumbers.`119`
-import typings.keyboardKey.keyboardKeyNumbers.`120`
-import typings.keyboardKey.keyboardKeyNumbers.`121`
-import typings.keyboardKey.keyboardKeyNumbers.`122`
-import typings.keyboardKey.keyboardKeyNumbers.`123`
-import typings.keyboardKey.keyboardKeyNumbers.`124`
-import typings.keyboardKey.keyboardKeyNumbers.`125`
-import typings.keyboardKey.keyboardKeyNumbers.`126`
-import typings.keyboardKey.keyboardKeyNumbers.`127`
-import typings.keyboardKey.keyboardKeyNumbers.`128`
-import typings.keyboardKey.keyboardKeyNumbers.`129`
-import typings.keyboardKey.keyboardKeyNumbers.`12`
-import typings.keyboardKey.keyboardKeyNumbers.`130`
-import typings.keyboardKey.keyboardKeyNumbers.`131`
-import typings.keyboardKey.keyboardKeyNumbers.`132`
-import typings.keyboardKey.keyboardKeyNumbers.`133`
-import typings.keyboardKey.keyboardKeyNumbers.`134`
-import typings.keyboardKey.keyboardKeyNumbers.`135`
-import typings.keyboardKey.keyboardKeyNumbers.`13`
-import typings.keyboardKey.keyboardKeyNumbers.`144`
-import typings.keyboardKey.keyboardKeyNumbers.`145`
-import typings.keyboardKey.keyboardKeyNumbers.`16`
-import typings.keyboardKey.keyboardKeyNumbers.`17`
-import typings.keyboardKey.keyboardKeyNumbers.`181`
-import typings.keyboardKey.keyboardKeyNumbers.`182`
-import typings.keyboardKey.keyboardKeyNumbers.`183`
-import typings.keyboardKey.keyboardKeyNumbers.`186`
-import typings.keyboardKey.keyboardKeyNumbers.`187`
-import typings.keyboardKey.keyboardKeyNumbers.`188`
-import typings.keyboardKey.keyboardKeyNumbers.`189`
-import typings.keyboardKey.keyboardKeyNumbers.`18`
-import typings.keyboardKey.keyboardKeyNumbers.`190`
-import typings.keyboardKey.keyboardKeyNumbers.`191`
-import typings.keyboardKey.keyboardKeyNumbers.`192`
-import typings.keyboardKey.keyboardKeyNumbers.`19`
-import typings.keyboardKey.keyboardKeyNumbers.`20`
-import typings.keyboardKey.keyboardKeyNumbers.`219`
-import typings.keyboardKey.keyboardKeyNumbers.`220`
-import typings.keyboardKey.keyboardKeyNumbers.`221`
-import typings.keyboardKey.keyboardKeyNumbers.`222`
-import typings.keyboardKey.keyboardKeyNumbers.`224`
-import typings.keyboardKey.keyboardKeyNumbers.`225`
-import typings.keyboardKey.keyboardKeyNumbers.`246`
-import typings.keyboardKey.keyboardKeyNumbers.`247`
-import typings.keyboardKey.keyboardKeyNumbers.`248`
-import typings.keyboardKey.keyboardKeyNumbers.`249`
-import typings.keyboardKey.keyboardKeyNumbers.`250`
-import typings.keyboardKey.keyboardKeyNumbers.`251`
-import typings.keyboardKey.keyboardKeyNumbers.`27`
-import typings.keyboardKey.keyboardKeyNumbers.`28`
-import typings.keyboardKey.keyboardKeyNumbers.`29`
-import typings.keyboardKey.keyboardKeyNumbers.`30`
-import typings.keyboardKey.keyboardKeyNumbers.`31`
-import typings.keyboardKey.keyboardKeyNumbers.`32`
-import typings.keyboardKey.keyboardKeyNumbers.`33`
-import typings.keyboardKey.keyboardKeyNumbers.`34`
-import typings.keyboardKey.keyboardKeyNumbers.`35`
-import typings.keyboardKey.keyboardKeyNumbers.`36`
-import typings.keyboardKey.keyboardKeyNumbers.`37`
-import typings.keyboardKey.keyboardKeyNumbers.`38`
-import typings.keyboardKey.keyboardKeyNumbers.`39`
-import typings.keyboardKey.keyboardKeyNumbers.`40`
-import typings.keyboardKey.keyboardKeyNumbers.`41`
-import typings.keyboardKey.keyboardKeyNumbers.`42`
-import typings.keyboardKey.keyboardKeyNumbers.`43`
-import typings.keyboardKey.keyboardKeyNumbers.`44`
-import typings.keyboardKey.keyboardKeyNumbers.`45`
-import typings.keyboardKey.keyboardKeyNumbers.`46`
-import typings.keyboardKey.keyboardKeyNumbers.`48`
-import typings.keyboardKey.keyboardKeyNumbers.`49`
-import typings.keyboardKey.keyboardKeyNumbers.`50`
-import typings.keyboardKey.keyboardKeyNumbers.`51`
-import typings.keyboardKey.keyboardKeyNumbers.`52`
-import typings.keyboardKey.keyboardKeyNumbers.`53`
-import typings.keyboardKey.keyboardKeyNumbers.`54`
-import typings.keyboardKey.keyboardKeyNumbers.`55`
-import typings.keyboardKey.keyboardKeyNumbers.`56`
-import typings.keyboardKey.keyboardKeyNumbers.`57`
-import typings.keyboardKey.keyboardKeyNumbers.`65`
-import typings.keyboardKey.keyboardKeyNumbers.`66`
-import typings.keyboardKey.keyboardKeyNumbers.`67`
-import typings.keyboardKey.keyboardKeyNumbers.`68`
-import typings.keyboardKey.keyboardKeyNumbers.`69`
-import typings.keyboardKey.keyboardKeyNumbers.`70`
-import typings.keyboardKey.keyboardKeyNumbers.`71`
-import typings.keyboardKey.keyboardKeyNumbers.`72`
-import typings.keyboardKey.keyboardKeyNumbers.`73`
-import typings.keyboardKey.keyboardKeyNumbers.`74`
-import typings.keyboardKey.keyboardKeyNumbers.`75`
-import typings.keyboardKey.keyboardKeyNumbers.`76`
-import typings.keyboardKey.keyboardKeyNumbers.`77`
-import typings.keyboardKey.keyboardKeyNumbers.`78`
-import typings.keyboardKey.keyboardKeyNumbers.`79`
-import typings.keyboardKey.keyboardKeyNumbers.`80`
-import typings.keyboardKey.keyboardKeyNumbers.`81`
-import typings.keyboardKey.keyboardKeyNumbers.`82`
-import typings.keyboardKey.keyboardKeyNumbers.`83`
-import typings.keyboardKey.keyboardKeyNumbers.`84`
-import typings.keyboardKey.keyboardKeyNumbers.`85`
-import typings.keyboardKey.keyboardKeyNumbers.`86`
-import typings.keyboardKey.keyboardKeyNumbers.`87`
-import typings.keyboardKey.keyboardKeyNumbers.`88`
-import typings.keyboardKey.keyboardKeyNumbers.`89`
-import typings.keyboardKey.keyboardKeyNumbers.`90`
-import typings.keyboardKey.keyboardKeyNumbers.`91`
-import typings.keyboardKey.keyboardKeyNumbers.`93`
+import typings.keyboardKey.keyboardKeyInts.`112`
+import typings.keyboardKey.keyboardKeyInts.`113`
+import typings.keyboardKey.keyboardKeyInts.`114`
+import typings.keyboardKey.keyboardKeyInts.`115`
+import typings.keyboardKey.keyboardKeyInts.`116`
+import typings.keyboardKey.keyboardKeyInts.`117`
+import typings.keyboardKey.keyboardKeyInts.`118`
+import typings.keyboardKey.keyboardKeyInts.`119`
+import typings.keyboardKey.keyboardKeyInts.`120`
+import typings.keyboardKey.keyboardKeyInts.`121`
+import typings.keyboardKey.keyboardKeyInts.`122`
+import typings.keyboardKey.keyboardKeyInts.`123`
+import typings.keyboardKey.keyboardKeyInts.`124`
+import typings.keyboardKey.keyboardKeyInts.`125`
+import typings.keyboardKey.keyboardKeyInts.`126`
+import typings.keyboardKey.keyboardKeyInts.`127`
+import typings.keyboardKey.keyboardKeyInts.`128`
+import typings.keyboardKey.keyboardKeyInts.`129`
+import typings.keyboardKey.keyboardKeyInts.`12`
+import typings.keyboardKey.keyboardKeyInts.`130`
+import typings.keyboardKey.keyboardKeyInts.`131`
+import typings.keyboardKey.keyboardKeyInts.`132`
+import typings.keyboardKey.keyboardKeyInts.`133`
+import typings.keyboardKey.keyboardKeyInts.`134`
+import typings.keyboardKey.keyboardKeyInts.`135`
+import typings.keyboardKey.keyboardKeyInts.`13`
+import typings.keyboardKey.keyboardKeyInts.`144`
+import typings.keyboardKey.keyboardKeyInts.`145`
+import typings.keyboardKey.keyboardKeyInts.`16`
+import typings.keyboardKey.keyboardKeyInts.`17`
+import typings.keyboardKey.keyboardKeyInts.`181`
+import typings.keyboardKey.keyboardKeyInts.`182`
+import typings.keyboardKey.keyboardKeyInts.`183`
+import typings.keyboardKey.keyboardKeyInts.`186`
+import typings.keyboardKey.keyboardKeyInts.`187`
+import typings.keyboardKey.keyboardKeyInts.`188`
+import typings.keyboardKey.keyboardKeyInts.`189`
+import typings.keyboardKey.keyboardKeyInts.`18`
+import typings.keyboardKey.keyboardKeyInts.`190`
+import typings.keyboardKey.keyboardKeyInts.`191`
+import typings.keyboardKey.keyboardKeyInts.`192`
+import typings.keyboardKey.keyboardKeyInts.`19`
+import typings.keyboardKey.keyboardKeyInts.`20`
+import typings.keyboardKey.keyboardKeyInts.`219`
+import typings.keyboardKey.keyboardKeyInts.`220`
+import typings.keyboardKey.keyboardKeyInts.`221`
+import typings.keyboardKey.keyboardKeyInts.`222`
+import typings.keyboardKey.keyboardKeyInts.`224`
+import typings.keyboardKey.keyboardKeyInts.`225`
+import typings.keyboardKey.keyboardKeyInts.`246`
+import typings.keyboardKey.keyboardKeyInts.`247`
+import typings.keyboardKey.keyboardKeyInts.`248`
+import typings.keyboardKey.keyboardKeyInts.`249`
+import typings.keyboardKey.keyboardKeyInts.`250`
+import typings.keyboardKey.keyboardKeyInts.`251`
+import typings.keyboardKey.keyboardKeyInts.`27`
+import typings.keyboardKey.keyboardKeyInts.`28`
+import typings.keyboardKey.keyboardKeyInts.`29`
+import typings.keyboardKey.keyboardKeyInts.`30`
+import typings.keyboardKey.keyboardKeyInts.`31`
+import typings.keyboardKey.keyboardKeyInts.`32`
+import typings.keyboardKey.keyboardKeyInts.`33`
+import typings.keyboardKey.keyboardKeyInts.`34`
+import typings.keyboardKey.keyboardKeyInts.`35`
+import typings.keyboardKey.keyboardKeyInts.`36`
+import typings.keyboardKey.keyboardKeyInts.`37`
+import typings.keyboardKey.keyboardKeyInts.`38`
+import typings.keyboardKey.keyboardKeyInts.`39`
+import typings.keyboardKey.keyboardKeyInts.`40`
+import typings.keyboardKey.keyboardKeyInts.`41`
+import typings.keyboardKey.keyboardKeyInts.`42`
+import typings.keyboardKey.keyboardKeyInts.`43`
+import typings.keyboardKey.keyboardKeyInts.`44`
+import typings.keyboardKey.keyboardKeyInts.`45`
+import typings.keyboardKey.keyboardKeyInts.`46`
+import typings.keyboardKey.keyboardKeyInts.`48`
+import typings.keyboardKey.keyboardKeyInts.`49`
+import typings.keyboardKey.keyboardKeyInts.`50`
+import typings.keyboardKey.keyboardKeyInts.`51`
+import typings.keyboardKey.keyboardKeyInts.`52`
+import typings.keyboardKey.keyboardKeyInts.`53`
+import typings.keyboardKey.keyboardKeyInts.`54`
+import typings.keyboardKey.keyboardKeyInts.`55`
+import typings.keyboardKey.keyboardKeyInts.`56`
+import typings.keyboardKey.keyboardKeyInts.`57`
+import typings.keyboardKey.keyboardKeyInts.`65`
+import typings.keyboardKey.keyboardKeyInts.`66`
+import typings.keyboardKey.keyboardKeyInts.`67`
+import typings.keyboardKey.keyboardKeyInts.`68`
+import typings.keyboardKey.keyboardKeyInts.`69`
+import typings.keyboardKey.keyboardKeyInts.`70`
+import typings.keyboardKey.keyboardKeyInts.`71`
+import typings.keyboardKey.keyboardKeyInts.`72`
+import typings.keyboardKey.keyboardKeyInts.`73`
+import typings.keyboardKey.keyboardKeyInts.`74`
+import typings.keyboardKey.keyboardKeyInts.`75`
+import typings.keyboardKey.keyboardKeyInts.`76`
+import typings.keyboardKey.keyboardKeyInts.`77`
+import typings.keyboardKey.keyboardKeyInts.`78`
+import typings.keyboardKey.keyboardKeyInts.`79`
+import typings.keyboardKey.keyboardKeyInts.`80`
+import typings.keyboardKey.keyboardKeyInts.`81`
+import typings.keyboardKey.keyboardKeyInts.`82`
+import typings.keyboardKey.keyboardKeyInts.`83`
+import typings.keyboardKey.keyboardKeyInts.`84`
+import typings.keyboardKey.keyboardKeyInts.`85`
+import typings.keyboardKey.keyboardKeyInts.`86`
+import typings.keyboardKey.keyboardKeyInts.`87`
+import typings.keyboardKey.keyboardKeyInts.`88`
+import typings.keyboardKey.keyboardKeyInts.`89`
+import typings.keyboardKey.keyboardKeyInts.`90`
+import typings.keyboardKey.keyboardKeyInts.`91`
+import typings.keyboardKey.keyboardKeyInts.`93`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -263,8 +263,8 @@ object mod extends Shortcut {
   
   @JSImport("keyboard-key", "Backspace")
   @js.native
-  def Backspace: typings.keyboardKey.keyboardKeyNumbers.`8` = js.native
-  inline def Backspace_=(x: typings.keyboardKey.keyboardKeyNumbers.`8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Backspace")(x.asInstanceOf[js.Any])
+  def Backspace: typings.keyboardKey.keyboardKeyInts.`8` = js.native
+  inline def Backspace_=(x: typings.keyboardKey.keyboardKeyInts.`8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Backspace")(x.asInstanceOf[js.Any])
   
   @JSImport("keyboard-key", "C")
   @js.native
@@ -274,8 +274,8 @@ object mod extends Shortcut {
   
   @JSImport("keyboard-key", "Cancel")
   @js.native
-  def Cancel: typings.keyboardKey.keyboardKeyNumbers.`3` = js.native
-  inline def Cancel_=(x: typings.keyboardKey.keyboardKeyNumbers.`3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cancel")(x.asInstanceOf[js.Any])
+  def Cancel: typings.keyboardKey.keyboardKeyInts.`3` = js.native
+  inline def Cancel_=(x: typings.keyboardKey.keyboardKeyInts.`3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cancel")(x.asInstanceOf[js.Any])
   
   @JSImport("keyboard-key", "CapsLock")
   @js.native
@@ -634,8 +634,8 @@ object mod extends Shortcut {
   
   @JSImport("keyboard-key", "Help")
   @js.native
-  def Help: typings.keyboardKey.keyboardKeyNumbers.`6` = js.native
-  inline def Help_=(x: typings.keyboardKey.keyboardKeyNumbers.`6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Help")(x.asInstanceOf[js.Any])
+  def Help: typings.keyboardKey.keyboardKeyInts.`6` = js.native
+  inline def Help_=(x: typings.keyboardKey.keyboardKeyInts.`6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Help")(x.asInstanceOf[js.Any])
   
   @JSImport("keyboard-key", "Home")
   @js.native
@@ -959,8 +959,8 @@ object mod extends Shortcut {
   
   @JSImport("keyboard-key", "Tab")
   @js.native
-  def Tab: typings.keyboardKey.keyboardKeyNumbers.`9` = js.native
-  inline def Tab_=(x: typings.keyboardKey.keyboardKeyNumbers.`9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
+  def Tab: typings.keyboardKey.keyboardKeyInts.`9` = js.native
+  inline def Tab_=(x: typings.keyboardKey.keyboardKeyInts.`9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
   
   @JSImport("keyboard-key", "Tilde")
   @js.native

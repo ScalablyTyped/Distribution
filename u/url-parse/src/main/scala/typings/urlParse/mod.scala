@@ -96,9 +96,9 @@ object mod {
     ): URLParse[T] = js.native
     def set[Part /* <: URLPart */, T](part: Part, value: Unit, fn: QueryParser[T]): URLParse[T] = js.native
     @JSName("set")
-    def set_Part_URLPartT[Part /* <: URLPart */, T](part: Part): URLParse[T] = js.native
+    def set_PartT[Part /* <: URLPart */, T](part: Part): URLParse[T] = js.native
     @JSName("set")
-    def set_Part_URLPartT[Part /* <: URLPart */, T](
+    def set_PartT[Part /* <: URLPart */, T](
       part: Part,
       value: /* import warning: importer.ImportType#apply Failed type conversion: url-parse.url-parse.URLParse<T>[Part] */ js.Any
     ): URLParse[T] = js.native

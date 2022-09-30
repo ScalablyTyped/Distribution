@@ -6,6 +6,7 @@ import typings.matrixAppservice.matrixAppserviceStrings.`http-log`
 import typings.matrixAppservice.matrixAppserviceStrings.ephemeral
 import typings.matrixAppservice.matrixAppserviceStrings.event
 import typings.node.eventsMod.EventEmitter
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -69,7 +70,7 @@ object appServiceMod {
       * @param {Function} callback The callback to invoke when complete.
       * @return {Promise} A promise to resolve when complete (if callback isn't supplied)
       */
-    def onAliasQuery(alias: String, callback: js.Function0[Unit]): js.Thenable[Unit] | Null = js.native
+    def onAliasQuery(alias: String, callback: js.Function0[Unit]): PromiseLike[Unit] | Null = js.native
     
     /* private */ var onGetRoomAlias: Any = js.native
     
@@ -87,7 +88,7 @@ object appServiceMod {
       * @param {Function} callback The callback to invoke when complete.
       * @return {Promise} A promise to resolve when complete (if callback isn't supplied)
       */
-    def onUserQuery(userId: String, callback: js.Function0[Unit]): js.Thenable[Unit] | Null = js.native
+    def onUserQuery(userId: String, callback: js.Function0[Unit]): PromiseLike[Unit] | Null = js.native
     
     /**
       * Emitted when an ephemeral event is pushed to the appservice.

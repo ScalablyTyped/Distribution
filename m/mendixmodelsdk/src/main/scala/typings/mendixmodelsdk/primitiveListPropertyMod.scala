@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object primitiveListPropertyMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/PrimitiveListProperty", "PrimitiveListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/PrimitiveListProperty", "PrimitiveListProperty")
   @js.native
-  class PrimitiveListProperty[T] protected ()
+  open class PrimitiveListProperty[T] protected ()
     extends AbstractProperty[js.Array[T], IList[T]] {
     /**
       * parent is the structure that the value of this property attaches to,
@@ -29,12 +29,12 @@ object primitiveListPropertyMod {
       parent: Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: js.Array[T],
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
     
     def deepCopyInto(clone: Structure[IAbstractModel, IContainer | Null]): Unit = js.native
     
-    /* private */ var primitiveType: js.Any = js.native
+    /* private */ var primitiveType: Any = js.native
     
     def updateWithRawValue(value: js.Array[T]): Unit = js.native
   }

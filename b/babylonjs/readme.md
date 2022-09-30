@@ -1,7 +1,7 @@
 
 # Scala.js typings for babylonjs
 
-Typings are for version 5.24.0
+Typings are for version 5.26.1
 
 
 

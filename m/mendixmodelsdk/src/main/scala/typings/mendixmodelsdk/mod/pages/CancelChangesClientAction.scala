@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.CancelChangesClientAction")
 @js.native
-class CancelChangesClientAction protected ()
+open class CancelChangesClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.CancelChangesClientAction {
   def this(
     model: AbstractModel,

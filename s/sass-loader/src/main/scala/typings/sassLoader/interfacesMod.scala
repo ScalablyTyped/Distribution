@@ -3,6 +3,8 @@ package typings.sassLoader
 import typings.nodeSass.mod.Options
 import typings.sassLoader.interfacesMod.LoaderOptions.Callback
 import typings.sassLoader.interfacesMod.LoaderOptions.SassOptions
+import typings.sassLoader.sassLoaderStrings.async
+import typings.sassLoader.sassLoaderStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,81 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object interfacesMod {
   
   trait LoaderOptions extends StObject {
+    
+    /**
+      * Prepends `Sass`/`SCSS` code before the actual entry file. In this case, the
+      * `sass-loader` will not override the `data` option but just append the entry's
+      * content.
+      *
+      * This is especially useful when some of your Sass variables depend on the
+      * environment:
+      *
+      * > ℹ Since you're injecting code, this will break the source mappings in your
+      *   entry file. Often there's a simpler solution than this, like multiple Sass
+      *   entry files.
+      *
+      * #### `String`
+      *
+      * ```js
+      * module.exports = {
+      *  module: {
+      *    rules: [
+      *      {
+      *        test: /\.s[ac]ss$/i,
+      *        use: [
+      *          'style-loader',
+      *          'css-loader',
+      *          {
+      *            loader: 'sass-loader',
+      *            options: {
+      *              prependData: '$env: ' + process.env.NODE_ENV + ';',
+      *            },
+      *          },
+      *        ],
+      *      },
+      *    ],
+      *  },
+      * };
+      * ```
+      *
+      * #### `Function`
+      *
+      * ```js
+      * module.exports = {
+      *  module: {
+      *    rules: [
+      *      {
+      *        test: /\.s[ac]ss$/i,
+      *        use: [
+      *          'style-loader',
+      *          'css-loader',
+      *          {
+      *            loader: 'sass-loader',
+      *            options: {
+      *              prependData: (loaderContext) => {
+      *                // More information about available properties https://webpack.js.org/api/loaders/
+      *                const { resourcePath, rootContext } = loaderContext;
+      *                const relativePath = path.relative(rootContext, resourcePath);
+      *
+      *                if (relativePath === 'styles/foo.scss') {
+      *                  return '$value: 100px;';
+      *                }
+      *
+      *                return '$value: 200px;';
+      *              },
+      *            },
+      *          },
+      *        ],
+      *      },
+      *    ],
+      *  },
+      * };
+      * ```
+      *
+      * @default
+      * undefined
+      */
+    var additionalData: js.UndefOr[String | Callback[String]] = js.undefined
     
     /**
       * The special `implementation` option determines which implementation of Sass
@@ -158,82 +235,7 @@ object interfacesMod {
       * };
       * ```
       */
-    var implementation: js.UndefOr[js.Any] = js.undefined
-    
-    /**
-      * Prepends `Sass`/`SCSS` code before the actual entry file. In this case, the
-      * `sass-loader` will not override the `data` option but just append the entry's
-      * content.
-      *
-      * This is especially useful when some of your Sass variables depend on the
-      * environment:
-      *
-      * > ℹ Since you're injecting code, this will break the source mappings in your
-      *   entry file. Often there's a simpler solution than this, like multiple Sass
-      *   entry files.
-      *
-      * #### `String`
-      *
-      * ```js
-      * module.exports = {
-      *  module: {
-      *    rules: [
-      *      {
-      *        test: /\.s[ac]ss$/i,
-      *        use: [
-      *          'style-loader',
-      *          'css-loader',
-      *          {
-      *            loader: 'sass-loader',
-      *            options: {
-      *              prependData: '$env: ' + process.env.NODE_ENV + ';',
-      *            },
-      *          },
-      *        ],
-      *      },
-      *    ],
-      *  },
-      * };
-      * ```
-      *
-      * #### `Function`
-      *
-      * ```js
-      * module.exports = {
-      *  module: {
-      *    rules: [
-      *      {
-      *        test: /\.s[ac]ss$/i,
-      *        use: [
-      *          'style-loader',
-      *          'css-loader',
-      *          {
-      *            loader: 'sass-loader',
-      *            options: {
-      *              prependData: (loaderContext) => {
-      *                // More information about available properties https://webpack.js.org/api/loaders/
-      *                const { resourcePath, rootContext } = loaderContext;
-      *                const relativePath = path.relative(rootContext, resourcePath);
-      *
-      *                if (relativePath === 'styles/foo.scss') {
-      *                  return '$value: 100px;';
-      *                }
-      *
-      *                return '$value: 200px;';
-      *              },
-      *            },
-      *          },
-      *        ],
-      *      },
-      *    ],
-      *  },
-      * };
-      * ```
-      *
-      * @default
-      * undefined
-      */
-    var prependData: js.UndefOr[String | Callback[String]] = js.undefined
+    var implementation: js.UndefOr[Any] = js.undefined
     
     /**
       * Options for [Node Sass](https://github.com/sass/node-sass) or [Dart Sass](http://sass-lang.com/dart-sass)
@@ -376,6 +378,37 @@ object interfacesMod {
     var sourceMap: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Treats the @warn rule as a webpack warning.
+      *
+      * Note: It will be true by default in the next major release.
+      *
+      * **webpack.config.js**
+      *
+      * ```js
+      * module.exports = {
+      *  module: {
+      *    rules: [
+      *      {
+      *        test: /\.s[ac]ss$/i,
+      *        use: [
+      *          'style-loader',
+      *          'css-loader',
+      *          {
+      *            loader: 'sass-loader',
+      *            options: {
+      *              warnRuleAsWarning: false,
+      *            },
+      *          },
+      *        ],
+      *      },
+      *    ],
+      *  },
+      * };
+      * ```
+      */
+    var warnRuleAsWarning: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Enables/Disables the default Webpack importer.
       *
       * This can improve performance in some cases. Use it with caution because
@@ -419,28 +452,28 @@ object interfacesMod {
     }
     
     type Callback[T] = js.Function1[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ Any, 
         T
       ]
     
     extension [Self <: LoaderOptions](x: Self) {
       
-      inline def setImplementation(value: js.Any): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setAdditionalData(value: String | Callback[String]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+      
+      inline def setAdditionalDataFunction1(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ Any => String
+      ): Self = StObject.set(x, "additionalData", js.Any.fromFunction1(value))
+      
+      inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
+      
+      inline def setImplementation(value: Any): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
       inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
-      
-      inline def setPrependData(value: String | Callback[String]): Self = StObject.set(x, "prependData", value.asInstanceOf[js.Any])
-      
-      inline def setPrependDataFunction1(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ js.Any => String
-      ): Self = StObject.set(x, "prependData", js.Any.fromFunction1(value))
-      
-      inline def setPrependDataUndefined: Self = StObject.set(x, "prependData", js.undefined)
       
       inline def setSassOptions(value: SassOptions | Callback[SassOptions]): Self = StObject.set(x, "sassOptions", value.asInstanceOf[js.Any])
       
       inline def setSassOptionsFunction1(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ js.Any => SassOptions
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.loader.LoaderContext */ /* loaderContext */ Any => SassOptions
       ): Self = StObject.set(x, "sassOptions", js.Any.fromFunction1(value))
       
       inline def setSassOptionsUndefined: Self = StObject.set(x, "sassOptions", js.undefined)
@@ -449,11 +482,15 @@ object interfacesMod {
       
       inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
+      inline def setWarnRuleAsWarning(value: Boolean): Self = StObject.set(x, "warnRuleAsWarning", value.asInstanceOf[js.Any])
+      
+      inline def setWarnRuleAsWarningUndefined: Self = StObject.set(x, "warnRuleAsWarning", js.undefined)
+      
       inline def setWebpackImporter(value: Boolean): Self = StObject.set(x, "webpackImporter", value.asInstanceOf[js.Any])
       
       inline def setWebpackImporterUndefined: Self = StObject.set(x, "webpackImporter", js.undefined)
     }
     
-    type SassOptions = Options | typings.sass.mod.Options
+    type SassOptions = Options | (typings.sass.typesOptionsMod.Options[sync | async])
   }
 }

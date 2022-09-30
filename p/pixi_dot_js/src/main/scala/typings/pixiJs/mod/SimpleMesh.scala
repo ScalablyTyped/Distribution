@@ -1,100 +1,174 @@
 package typings.pixiJs.mod
 
-import typings.std.Float32Array
-import typings.std.Uint16Array
+import typings.pixiCore.mod.IArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The Simple Mesh class mimics Mesh in PixiJS v4, providing easy-to-use constructor arguments.
-  * For more robust customization, use {@link PIXI.Mesh}.
-  *
-  * @class
-  * @extends PIXI.Mesh
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "SimpleMesh")
 @js.native
-class SimpleMesh ()
-  extends StObject
-     with typings.pixiJs.PIXI.SimpleMesh {
-  def this(texture: typings.pixiJs.PIXI.Texture) = this()
-  def this(texture: Unit, vertices: Float32Array) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, vertices: Float32Array) = this()
-  def this(texture: Unit, vertices: Unit, uvs: Float32Array) = this()
-  def this(texture: Unit, vertices: Float32Array, uvs: Float32Array) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, vertices: Unit, uvs: Float32Array) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, vertices: Float32Array, uvs: Float32Array) = this()
-  def this(texture: Unit, vertices: Unit, uvs: Unit, indices: Uint16Array) = this()
-  def this(texture: Unit, vertices: Unit, uvs: Float32Array, indices: Uint16Array) = this()
-  def this(texture: Unit, vertices: Float32Array, uvs: Unit, indices: Uint16Array) = this()
-  def this(texture: Unit, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, vertices: Unit, uvs: Unit, indices: Uint16Array) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, vertices: Unit, uvs: Float32Array, indices: Uint16Array) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, vertices: Float32Array, uvs: Unit, indices: Uint16Array) = this()
+/**
+  * @param texture - The texture to use
+  * @param {Float32Array} [vertices] - if you want to specify the vertices
+  * @param {Float32Array} [uvs] - if you want to specify the uvs
+  * @param {Uint16Array} [indices] - if you want to specify the indices
+  * @param drawMode - the drawMode, can be any of the Mesh.DRAW_MODES consts
+  */
+open class SimpleMesh ()
+  extends typings.pixiMeshExtras.mod.SimpleMesh {
+  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource]) = this()
+  def this(texture: Unit, vertices: IArrayBuffer) = this()
+  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource], vertices: IArrayBuffer) = this()
+  def this(texture: Unit, vertices: Unit, uvs: IArrayBuffer) = this()
+  def this(texture: Unit, vertices: IArrayBuffer, uvs: IArrayBuffer) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    vertices: Float32Array,
-    uvs: Float32Array,
-    indices: Uint16Array
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: Unit,
+    uvs: IArrayBuffer
   ) = this()
-  def this(texture: Unit, vertices: Unit, uvs: Unit, indices: Unit, drawMode: Double) = this()
-  def this(texture: Unit, vertices: Unit, uvs: Unit, indices: Uint16Array, drawMode: Double) = this()
-  def this(texture: Unit, vertices: Unit, uvs: Float32Array, indices: Unit, drawMode: Double) = this()
-  def this(texture: Unit, vertices: Unit, uvs: Float32Array, indices: Uint16Array, drawMode: Double) = this()
-  def this(texture: Unit, vertices: Float32Array, uvs: Unit, indices: Unit, drawMode: Double) = this()
-  def this(texture: Unit, vertices: Float32Array, uvs: Unit, indices: Uint16Array, drawMode: Double) = this()
-  def this(texture: Unit, vertices: Float32Array, uvs: Float32Array, indices: Unit, drawMode: Double) = this()
-  def this(texture: Unit, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array, drawMode: Double) = this()
-  def this(texture: typings.pixiJs.PIXI.Texture, vertices: Unit, uvs: Unit, indices: Unit, drawMode: Double) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: IArrayBuffer,
+    uvs: IArrayBuffer
+  ) = this()
+  def this(texture: Unit, vertices: Unit, uvs: Unit, indices: IArrayBuffer) = this()
+  def this(texture: Unit, vertices: Unit, uvs: IArrayBuffer, indices: IArrayBuffer) = this()
+  def this(texture: Unit, vertices: IArrayBuffer, uvs: Unit, indices: IArrayBuffer) = this()
+  def this(texture: Unit, vertices: IArrayBuffer, uvs: IArrayBuffer, indices: IArrayBuffer) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
     vertices: Unit,
     uvs: Unit,
-    indices: Uint16Array,
-    drawMode: Double
+    indices: IArrayBuffer
   ) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
     vertices: Unit,
-    uvs: Float32Array,
-    indices: Unit,
-    drawMode: Double
+    uvs: IArrayBuffer,
+    indices: IArrayBuffer
   ) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: IArrayBuffer,
+    uvs: Unit,
+    indices: IArrayBuffer
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: IArrayBuffer,
+    uvs: IArrayBuffer,
+    indices: IArrayBuffer
+  ) = this()
+  def this(
+    texture: Unit,
     vertices: Unit,
-    uvs: Float32Array,
-    indices: Uint16Array,
-    drawMode: Double
-  ) = this()
-  def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    vertices: Float32Array,
     uvs: Unit,
     indices: Unit,
-    drawMode: Double
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    vertices: Float32Array,
+    texture: Unit,
+    vertices: Unit,
     uvs: Unit,
-    indices: Uint16Array,
-    drawMode: Double
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    vertices: Float32Array,
-    uvs: Float32Array,
+    texture: Unit,
+    vertices: Unit,
+    uvs: IArrayBuffer,
     indices: Unit,
-    drawMode: Double
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    vertices: Float32Array,
-    uvs: Float32Array,
-    indices: Uint16Array,
-    drawMode: Double
+    texture: Unit,
+    vertices: Unit,
+    uvs: IArrayBuffer,
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: Unit,
+    vertices: IArrayBuffer,
+    uvs: Unit,
+    indices: Unit,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: Unit,
+    vertices: IArrayBuffer,
+    uvs: Unit,
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: Unit,
+    vertices: IArrayBuffer,
+    uvs: IArrayBuffer,
+    indices: Unit,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: Unit,
+    vertices: IArrayBuffer,
+    uvs: IArrayBuffer,
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: Unit,
+    uvs: Unit,
+    indices: Unit,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: Unit,
+    uvs: Unit,
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: Unit,
+    uvs: IArrayBuffer,
+    indices: Unit,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: Unit,
+    uvs: IArrayBuffer,
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: IArrayBuffer,
+    uvs: Unit,
+    indices: Unit,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: IArrayBuffer,
+    uvs: Unit,
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: IArrayBuffer,
+    uvs: IArrayBuffer,
+    indices: Unit,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    vertices: IArrayBuffer,
+    uvs: IArrayBuffer,
+    indices: IArrayBuffer,
+    drawMode: typings.pixiConstants.mod.DRAW_MODES
   ) = this()
 }

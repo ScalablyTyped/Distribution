@@ -12,16 +12,16 @@ object fieldArrayMod {
   
   @JSImport("redux-form/lib/FieldArray", "FieldArray")
   @js.native
-  class FieldArray[P, FieldValue] protected () extends GenericFieldArray[FieldValue, P] {
+  open class FieldArray[P, FieldValue] protected () extends GenericFieldArray[FieldValue, P] {
     def this(props: BaseFieldArrayProps[P, FieldValue]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BaseFieldArrayProps[P, FieldValue], context: js.Any) = this()
+    def this(props: BaseFieldArrayProps[P, FieldValue], context: Any) = this()
   }
   
-  type BaseFieldArrayProps[P, FieldValue] = (P | Props[P]) & (_BaseFieldArrayProps[P, FieldValue])
+  type BaseFieldArrayProps[P, FieldValue] = (P & (_BaseFieldArrayProps[P, FieldValue])) | (Props[P] & (_BaseFieldArrayProps[P, FieldValue]))
   
   @js.native
   trait FieldArrayFieldsProps[FieldValue] extends StObject {
@@ -64,7 +64,7 @@ object fieldArrayMod {
     
     var dirty: Boolean
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     var form: String
     
@@ -78,7 +78,7 @@ object fieldArrayMod {
     
     var valid: Boolean
     
-    var warning: js.UndefOr[js.Any] = js.undefined
+    var warning: js.UndefOr[Any] = js.undefined
   }
   object FieldArrayMetaProps {
     
@@ -99,7 +99,7 @@ object fieldArrayMod {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -115,7 +115,7 @@ object fieldArrayMod {
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      inline def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
       inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
@@ -130,9 +130,9 @@ object fieldArrayMod {
   
   @js.native
   trait GenericFieldArray[FieldValue, P]
-    extends Component[BaseFieldArrayProps[P, FieldValue], js.Object, js.Any] {
+    extends Component[BaseFieldArrayProps[P, FieldValue], js.Object, Any] {
     
-    def getRenderedComponent(): Component[WrappedFieldArrayProps[FieldValue] & P, js.Object, js.Any] = js.native
+    def getRenderedComponent(): Component[WrappedFieldArrayProps[FieldValue] & P, js.Object, Any] = js.native
     
     var name: String = js.native
     
@@ -194,22 +194,22 @@ object fieldArrayMod {
       inline def setValidate(value: Validator | js.Array[Validator]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       inline def setValidateFunction4(
-        value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
+        value: (/* value */ Any, /* allValues */ js.UndefOr[Any], /* props */ js.UndefOr[Any], /* name */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value*))
       
       inline def setWarn(value: Validator | js.Array[Validator]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
       inline def setWarnFunction4(
-        value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
+        value: (/* value */ Any, /* allValues */ js.UndefOr[Any], /* props */ js.UndefOr[Any], /* name */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "warn", js.Any.fromFunction4(value))
       
       inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value*))
       
       inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
       

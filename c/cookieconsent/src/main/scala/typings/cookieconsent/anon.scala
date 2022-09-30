@@ -106,7 +106,7 @@ object anon {
   trait Background extends StObject {
     
     var background: js.UndefOr[
-        typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentNumbers.`0`]
+        typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
       ] = js.undefined
     
     var link: js.UndefOr[Color] = js.undefined
@@ -123,7 +123,7 @@ object anon {
     extension [Self <: Background](x: Self) {
       
       inline def setBackground(
-        value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentNumbers.`0`]
+        value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
       ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
@@ -141,7 +141,7 @@ object anon {
   trait Border extends StObject {
     
     var background: js.UndefOr[
-        typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentNumbers.`0`]
+        typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
       ] = js.undefined
     
     var border: js.UndefOr[Color] = js.undefined
@@ -158,7 +158,7 @@ object anon {
     extension [Self <: Border](x: Self) {
       
       inline def setBackground(
-        value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentNumbers.`0`]
+        value: typings.csstype.mod.Property.Background[String | typings.cookieconsent.cookieconsentInts.`0`]
       ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)

@@ -14,6 +14,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterBase
+import typings.mendixmodelsdk.pagesMod.pages.PageParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.datatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.datatypesMod.datatypes.IEntityType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EntityType")
+- typings.mendixmodelsdk.datatypesMod.datatypes.IEntityType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EntityType")
 @js.native
 abstract class EntityType protected () extends DataType {
   def this(
@@ -64,6 +65,9 @@ abstract class EntityType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MEntityType: MicroflowParameterBase = js.native
   
+  @JSName("containerAsPageParameter")
+  def containerAsPageParameter_MEntityType: PageParameter = js.native
+  
   def entity: IEntity = js.native
   
   def entityQualifiedName: String = js.native
@@ -79,18 +83,18 @@ abstract class EntityType protected () extends DataType {
 }
 object EntityType {
   
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EntityType")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EntityType")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EntityType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EntityType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.EntityType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.EntityType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

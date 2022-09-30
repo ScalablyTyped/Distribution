@@ -96,6 +96,7 @@ import typings.node.bufferMod.global.Buffer
 import typings.std.AbortSignal
 import typings.std.Parameters
 import typings.std.Pick
+import typings.std.PromiseLike
 import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -528,7 +529,7 @@ object instanceMod {
     
     def addSchema(schema: Any): FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider] = js.native
     
-    def after(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
+    def after(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
     def after(afterListener: js.Function1[/* err */ js.Error, Unit]): FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider] = js.native
     
     def all[RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, Logger /* <: FastifyBaseLogger */](
@@ -1305,30 +1306,30 @@ object instanceMod {
     @JSName("put")
     var put_Original: RouteShorthandMethod[RawServer, RawRequest, RawReply, TypeProvider] = js.native
     
-    def ready(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
+    def ready(): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
     def ready(readyListener: js.Function1[/* err */ js.Error, Unit]): FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider] = js.native
     
     def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](
       plugin: js.Promise[
           (Default[Options, Server, TypeProvider]) | (DefaultFastifyPluginAsync[Options, Server, TypeProvider])
         ]
-    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
+    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
     def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](
       plugin: js.Promise[
           (Default[Options, Server, TypeProvider]) | (DefaultFastifyPluginAsync[Options, Server, TypeProvider])
         ],
       opts: FastifyRegisterOptions[Options]
-    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
-    def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](plugin: FastifyPluginAsync[Options, Server, TypeProvider]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
-    def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](plugin: FastifyPluginAsync[Options, Server, TypeProvider], opts: FastifyRegisterOptions[Options]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
-    def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](plugin: FastifyPluginCallback[Options, Server, TypeProvider]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
+    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
+    def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](plugin: FastifyPluginAsync[Options, Server, TypeProvider]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
+    def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](plugin: FastifyPluginAsync[Options, Server, TypeProvider], opts: FastifyRegisterOptions[Options]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
+    def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](plugin: FastifyPluginCallback[Options, Server, TypeProvider]): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
     def register[Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](
       plugin: FastifyPluginCallback[Options, Server, TypeProvider],
       opts: FastifyRegisterOptions[Options]
-    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit] = js.native
+    ): (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit] = js.native
     @JSName("register")
     var register_Original: FastifyRegister[
-        (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & js.Thenable[Unit], 
+        (FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider]) & PromiseLike[Unit], 
         RawServerDefault, 
         FastifyTypeProvider
       ] = js.native

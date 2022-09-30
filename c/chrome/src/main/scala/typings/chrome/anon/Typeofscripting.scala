@@ -17,7 +17,7 @@ trait Typeofscripting extends StObject {
     callback: js.Function1[/* results */ js.Array[InjectionResult[Awaited[Result]]], Unit]
   ): Unit = js.native
   @JSName("executeScript")
-  def executeScript_Args_ArrayAnyResult_Unit[Args /* <: js.Array[Any] */, Result](injection: ScriptInjection[Args, Result]): Unit = js.native
+  def executeScript_ArgsResult_Unit[Args /* <: js.Array[Any] */, Result](injection: ScriptInjection[Args, Result]): Unit = js.native
   
   def insertCSS(injection: CSSInjection): Unit = js.native
   def insertCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = js.native

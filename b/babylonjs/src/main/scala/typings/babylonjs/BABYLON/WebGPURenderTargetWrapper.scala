@@ -9,6 +9,6 @@ trait WebGPURenderTargetWrapper
   extends StObject
      with RenderTargetWrapper {
   
-  /** @hidden */
+  /** @internal */
   var _defaultAttachments: js.Array[Double] = js.native
 }

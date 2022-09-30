@@ -2,11 +2,11 @@ package typings.bigJs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.bigJs.bigJsNumbers.`-1`
-import typings.bigJs.bigJsNumbers.`0`
-import typings.bigJs.bigJsNumbers.`1`
-import typings.bigJs.bigJsNumbers.`2`
-import typings.bigJs.bigJsNumbers.`3`
+import typings.bigJs.bigJsInts.`-1`
+import typings.bigJs.bigJsInts.`0`
+import typings.bigJs.bigJsInts.`1`
+import typings.bigJs.bigJsInts.`2`
+import typings.bigJs.bigJsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -413,9 +413,9 @@ object mod extends Shortcut {
   type BigSource = Double | String | typings.bigJs.mod.Big
   
   /* Rewritten from type alias, can be one of: 
-    - typings.bigJs.bigJsNumbers.`1`
-    - typings.bigJs.bigJsNumbers.`0`
-    - typings.bigJs.bigJsNumbers.`-1`
+    - typings.bigJs.bigJsInts.`1`
+    - typings.bigJs.bigJsInts.`0`
+    - typings.bigJs.bigJsInts.`-1`
   */
   trait Comparison extends StObject
   object Comparison {
@@ -443,10 +443,10 @@ object mod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.bigJs.bigJsNumbers.`0`
-    - typings.bigJs.bigJsNumbers.`1`
-    - typings.bigJs.bigJsNumbers.`2`
-    - typings.bigJs.bigJsNumbers.`3`
+    - typings.bigJs.bigJsInts.`0`
+    - typings.bigJs.bigJsInts.`1`
+    - typings.bigJs.bigJsInts.`2`
+    - typings.bigJs.bigJsInts.`3`
   */
   trait RoundingMode extends StObject
   object RoundingMode {

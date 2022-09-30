@@ -1,8 +1,8 @@
 package typings.blake2b
 
-import typings.blake2b.blake2bNumbers.`16`
-import typings.blake2b.blake2bNumbers.`32`
-import typings.blake2b.blake2bNumbers.`64`
+import typings.blake2b.blake2bInts.`16`
+import typings.blake2b.blake2bInts.`32`
+import typings.blake2b.blake2bInts.`64`
 import typings.blake2b.blake2bStrings.binary
 import typings.blake2b.blake2bStrings.hex
 import org.scalablytyped.runtime.StObject

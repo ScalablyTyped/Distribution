@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IType because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IPrimitiveType because Already inherited
-- typings.mendixmodelsdk.javaactionsMod.javaactions.IStringType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.StringType")
+- typings.mendixmodelsdk.javaactionsMod.javaactions.IStringType because var conflicts: containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.StringType")
 @js.native
-class StringType protected () extends PrimitiveType {
+open class StringType protected () extends PrimitiveType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -45,7 +45,7 @@ class StringType protected () extends PrimitiveType {
 }
 object StringType {
   
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.StringType")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.StringType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -91,13 +91,13 @@ object StringType {
   inline def createInJavaActionUnderJavaReturnType(container: JavaAction): StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[StringType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.StringType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.StringType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.StringType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.StringType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.ListEquals")
 @js.native
-class ListEquals protected ()
+open class ListEquals protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ListEquals {
   def this(
     model: AbstractModel,

@@ -3,7 +3,7 @@ package typings.beanstalkdWorker
 import typings.beanstalkd.mod.BeanstalkdJobState
 import typings.beanstalkd.mod.BeanstalkdJobStats
 import typings.beanstalkd.mod.default
-import typings.beanstalkdWorker.beanstalkdWorkerNumbers.`1`
+import typings.beanstalkdWorker.beanstalkdWorkerInts.`1`
 import typings.beanstalkdWorker.beanstalkdWorkerStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

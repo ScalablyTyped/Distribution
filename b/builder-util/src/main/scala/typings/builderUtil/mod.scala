@@ -117,7 +117,7 @@ object mod {
   @js.native
   val debug7z: Debugger = js.native
   
-  inline def deepAssign[T](target: T, objects: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepAssign")(List(target.asInstanceOf[js.Any]).`++`(objects.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def deepAssign[T](target: T, objects: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepAssign")(scala.List(target.asInstanceOf[js.Any]).`++`(objects.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def defaultArchFromString(): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultArchFromString")().asInstanceOf[Arch]
   inline def defaultArchFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultArchFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]

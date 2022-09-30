@@ -54,8 +54,8 @@ object utilMod {
   
   inline def deepMerge[T /* <: js.Object */](target: T, source: Partial[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMerge")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def format(template: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-  inline def format(template: js.Function1[/* repeated */ Any, String], args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(template: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(template: js.Function1[/* repeated */ Any, String], args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def isEmptyObject(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

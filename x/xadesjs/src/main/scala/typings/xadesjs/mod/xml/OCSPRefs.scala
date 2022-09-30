@@ -1,17 +1,12 @@
 package typings.xadesjs.mod.xml
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.xadesjs.mod.xml.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("xadesjs", "xml.OCSPRefs")
 @js.native
-class OCSPRefs ()
-  extends typings.xadesjs.xmlMod.OCSPRefs
-object OCSPRefs {
-  
-  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OCSPRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("OCSPRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OCSPRefs]]
+open class OCSPRefs ()
+  extends typings.xadesjs.typesXmlMod.OCSPRefs {
+  def this(properties: js.Object) = this()
 }

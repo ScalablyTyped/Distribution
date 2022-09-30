@@ -1,6 +1,6 @@
 package typings.googleGax.mod
 
-import typings.googleGax.anon.Encode
+import typings.googleGax.anon.TypeofMessage
 import typings.googleGax.grpcMod.GrpcClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   module in the standard way.
   * @constructor
   */
-class GrpcClient ()
+open class GrpcClient ()
   extends typings.googleGax.grpcMod.GrpcClient {
   def this(options: GrpcClientOptions) = this()
 }
@@ -36,6 +36,12 @@ object GrpcClient {
   inline def _resolveFile(protoPath: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_resolveFile")(protoPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
+    * In rare cases users might need to deallocate all memory consumed by loaded protos.
+    * This method will delete the proto cache content.
+    */
+  inline def clearProtoCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearProtoCache")().asInstanceOf[Unit]
+  
+  /**
     * Creates a 'bytelength' function for a given proto message class.
     *
     * See {@link BundleDescriptor} about the meaning of the return value.
@@ -45,5 +51,29 @@ object GrpcClient {
     * @return {function(Object):number} - a function to compute the byte length
     *   for an object.
     */
-  inline def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
+  inline def createByteLengthFunction(message: TypeofMessage): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
+  
+  @JSImport("google-gax", "GrpcClient.defaultOptions")
+  @js.native
+  def defaultOptions: Any = js.native
+  inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  
+  @JSImport("google-gax", "GrpcClient.protoCache")
+  @js.native
+  def protoCache: Any = js.native
+  
+  /**
+    * Key for proto cache map. We are doing our best to make sure we respect
+    * the options, so if the same proto file is loaded with different set of
+    * options, the cache won't be used.  Since some of the options are
+    * Functions (e.g. `enums: String` - see below in `loadProto()`),
+    * they will be omitted from the cache key.  If the cache breaks anything
+    * for you, use the `ignoreCache` parameter of `loadProto()` to disable it.
+    */
+  @JSImport("google-gax", "GrpcClient.protoCacheKey")
+  @js.native
+  def protoCacheKey: Any = js.native
+  inline def protoCacheKey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protoCacheKey")(x.asInstanceOf[js.Any])
+  
+  inline def protoCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protoCache")(x.asInstanceOf[js.Any])
 }

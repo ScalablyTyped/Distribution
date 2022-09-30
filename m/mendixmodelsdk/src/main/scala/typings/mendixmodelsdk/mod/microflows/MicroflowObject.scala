@@ -10,9 +10,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Interfaces and instance classes for types from the Mendix sub meta model `Microflows`.
-  */
 @JSImport("mendixmodelsdk", "microflows.MicroflowObject")
 @js.native
 abstract class MicroflowObject protected ()

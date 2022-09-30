@@ -10,25 +10,25 @@ object formSectionMod {
   
   @JSImport("redux-form/lib/FormSection", JSImport.Default)
   @js.native
-  class default[P] protected () extends FormSection[P] {
+  open class default[P] protected () extends FormSection[P] {
     def this(props: FormSectionProps[P] & P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FormSectionProps[P] & P, context: js.Any) = this()
+    def this(props: FormSectionProps[P] & P, context: Any) = this()
   }
   
   @JSImport("redux-form/lib/FormSection", "FormSection")
   @js.native
-  class FormSection[P] protected ()
-    extends Component[FormSectionProps[P] & P, js.Object, js.Any] {
+  open class FormSection[P] protected ()
+    extends Component[FormSectionProps[P] & P, js.Object, Any] {
     def this(props: FormSectionProps[P] & P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FormSectionProps[P] & P, context: js.Any) = this()
+    def this(props: FormSectionProps[P] & P, context: Any) = this()
   }
   
   trait FormSectionProps[P] extends StObject {

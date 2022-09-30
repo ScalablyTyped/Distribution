@@ -23,21 +23,21 @@ object global {
     
     @JSGlobal("ReduxApiMiddleware.ApiError")
     @js.native
-    class ApiError[T] protected ()
+    open class ApiError[T] protected ()
       extends typings.reduxApiMiddleware.mod.ApiError[T] {
       def this(status: Double, statusText: String, response: T) = this()
     }
     
     @JSGlobal("ReduxApiMiddleware.InternalError")
     @js.native
-    class InternalError protected ()
+    open class InternalError protected ()
       extends typings.reduxApiMiddleware.mod.InternalError {
       def this(message: String) = this()
     }
     
     @JSGlobal("ReduxApiMiddleware.InvalidRSAA")
     @js.native
-    class InvalidRSAA protected ()
+    open class InvalidRSAA protected ()
       extends typings.reduxApiMiddleware.mod.InvalidRSAA {
       def this(validationErrors: js.Array[String]) = this()
     }
@@ -48,19 +48,19 @@ object global {
     
     @JSGlobal("ReduxApiMiddleware.RequestError")
     @js.native
-    class RequestError protected ()
+    open class RequestError protected ()
       extends typings.reduxApiMiddleware.mod.RequestError {
       def this(message: String) = this()
     }
     
-    inline def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], js.Any]): ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apiMiddleware")(api.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]]
+    inline def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], Any]): ReturnType[Middleware[js.Object, Any, Dispatch[AnyAction]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apiMiddleware")(api.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Middleware[js.Object, Any, Dispatch[AnyAction]]]]
     
     inline def createAction[State, Payload, Meta](clientCall: RSAACall[State, Payload, Meta]): RSAAAction[State, Payload, Meta] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(clientCall.asInstanceOf[js.Any]).asInstanceOf[RSAAAction[State, Payload, Meta]]
     
-    inline def createMiddleware(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-    inline def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+    inline def createMiddleware(): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+    inline def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
     
-    inline def getJSON(res: Response): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def getJSON(res: Response): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
     
     inline def isRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
@@ -82,7 +82,7 @@ object global {
       trait Dispatch extends StObject {
         
         // `Promise<undefined> is returned in case of RSAA validation errors or user bails out
-        def apply(action: RSAAAction[js.Any, js.Any, js.Any]): js.Promise[Unit] = js.native
+        def apply(action: RSAAAction[Any, Any, Any]): js.Promise[Unit] = js.native
       }
     }
   }

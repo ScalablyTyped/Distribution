@@ -1,16 +1,16 @@
 package typings.guacamoleCommonJs.mod
 
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x1`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x2`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x4`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x6`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x8`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x9`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0xa`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0xb`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0xc`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0xe`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0xf`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x1`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x2`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x4`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x6`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x8`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x9`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0xa`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0xb`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0xc`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0xe`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0xf`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

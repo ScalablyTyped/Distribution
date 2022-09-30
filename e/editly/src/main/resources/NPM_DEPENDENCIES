@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "editly" : "0.13.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "editly" : "0.13.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

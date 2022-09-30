@@ -1,16 +1,16 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`11025`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`12000`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`16000`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`22050`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`24000`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`2`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`32000`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`44100`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`48000`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`8000`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`11025`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`12000`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`16000`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`22050`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`24000`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`2`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`32000`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`44100`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`48000`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`8000`
 import typings.wechatMiniprogram.wechatMiniprogramStrings.PCM
 import typings.wechatMiniprogram.wechatMiniprogramStrings.aac
 import typings.wechatMiniprogram.wechatMiniprogramStrings.auto

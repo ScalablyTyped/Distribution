@@ -1,8 +1,8 @@
 package typings.interfaceStore
 
-import typings.interfaceStore.interfaceStoreNumbers.`-1`
-import typings.interfaceStore.interfaceStoreNumbers.`0`
-import typings.interfaceStore.interfaceStoreNumbers.`1`
+import typings.interfaceStore.interfaceStoreInts.`-1`
+import typings.interfaceStore.interfaceStoreInts.`0`
+import typings.interfaceStore.interfaceStoreInts.`1`
 import typings.std.AbortSignal
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject

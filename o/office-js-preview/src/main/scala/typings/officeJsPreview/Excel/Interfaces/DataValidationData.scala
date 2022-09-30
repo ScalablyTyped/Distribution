@@ -8,7 +8,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Custom
 import typings.officeJsPreview.officeJsPreviewStrings.Date
 import typings.officeJsPreview.officeJsPreviewStrings.Decimal
 import typings.officeJsPreview.officeJsPreviewStrings.Inconsistent
-import typings.officeJsPreview.officeJsPreviewStrings.List
 import typings.officeJsPreview.officeJsPreviewStrings.MixedCriteria
 import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.TextLength
@@ -60,7 +59,7 @@ trait DataValidationData extends StObject {
     * [Api set: ExcelApi 1.8]
     */
   var `type`: js.UndefOr[
-    DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
+    DataValidationType | None | WholeNumber | Decimal | typings.officeJsPreview.officeJsPreviewStrings.List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
   ] = js.undefined
   
   /**
@@ -99,7 +98,7 @@ object DataValidationData {
     inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     inline def setType(
-      value: DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
+      value: DataValidationType | None | WholeNumber | Decimal | typings.officeJsPreview.officeJsPreviewStrings.List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)

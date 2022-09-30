@@ -1,90 +1,90 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`0`
-import typings.activexAdodb.activexAdodbNumbers.`10`
-import typings.activexAdodb.activexAdodbNumbers.`11`
-import typings.activexAdodb.activexAdodbNumbers.`128`
-import typings.activexAdodb.activexAdodbNumbers.`129`
-import typings.activexAdodb.activexAdodbNumbers.`12`
-import typings.activexAdodb.activexAdodbNumbers.`130`
-import typings.activexAdodb.activexAdodbNumbers.`131`
-import typings.activexAdodb.activexAdodbNumbers.`132`
-import typings.activexAdodb.activexAdodbNumbers.`133`
-import typings.activexAdodb.activexAdodbNumbers.`134`
-import typings.activexAdodb.activexAdodbNumbers.`135`
-import typings.activexAdodb.activexAdodbNumbers.`136`
-import typings.activexAdodb.activexAdodbNumbers.`138`
-import typings.activexAdodb.activexAdodbNumbers.`139`
-import typings.activexAdodb.activexAdodbNumbers.`13`
-import typings.activexAdodb.activexAdodbNumbers.`14`
-import typings.activexAdodb.activexAdodbNumbers.`16`
-import typings.activexAdodb.activexAdodbNumbers.`17`
-import typings.activexAdodb.activexAdodbNumbers.`18`
-import typings.activexAdodb.activexAdodbNumbers.`19`
-import typings.activexAdodb.activexAdodbNumbers.`200`
-import typings.activexAdodb.activexAdodbNumbers.`201`
-import typings.activexAdodb.activexAdodbNumbers.`202`
-import typings.activexAdodb.activexAdodbNumbers.`203`
-import typings.activexAdodb.activexAdodbNumbers.`204`
-import typings.activexAdodb.activexAdodbNumbers.`205`
-import typings.activexAdodb.activexAdodbNumbers.`20`
-import typings.activexAdodb.activexAdodbNumbers.`21`
-import typings.activexAdodb.activexAdodbNumbers.`2`
-import typings.activexAdodb.activexAdodbNumbers.`3`
-import typings.activexAdodb.activexAdodbNumbers.`4`
-import typings.activexAdodb.activexAdodbNumbers.`5`
-import typings.activexAdodb.activexAdodbNumbers.`64`
-import typings.activexAdodb.activexAdodbNumbers.`6`
-import typings.activexAdodb.activexAdodbNumbers.`72`
-import typings.activexAdodb.activexAdodbNumbers.`7`
-import typings.activexAdodb.activexAdodbNumbers.`8192`
-import typings.activexAdodb.activexAdodbNumbers.`8`
-import typings.activexAdodb.activexAdodbNumbers.`9`
+import typings.activexAdodb.activexAdodbInts.`0`
+import typings.activexAdodb.activexAdodbInts.`10`
+import typings.activexAdodb.activexAdodbInts.`11`
+import typings.activexAdodb.activexAdodbInts.`128`
+import typings.activexAdodb.activexAdodbInts.`129`
+import typings.activexAdodb.activexAdodbInts.`12`
+import typings.activexAdodb.activexAdodbInts.`130`
+import typings.activexAdodb.activexAdodbInts.`131`
+import typings.activexAdodb.activexAdodbInts.`132`
+import typings.activexAdodb.activexAdodbInts.`133`
+import typings.activexAdodb.activexAdodbInts.`134`
+import typings.activexAdodb.activexAdodbInts.`135`
+import typings.activexAdodb.activexAdodbInts.`136`
+import typings.activexAdodb.activexAdodbInts.`138`
+import typings.activexAdodb.activexAdodbInts.`139`
+import typings.activexAdodb.activexAdodbInts.`13`
+import typings.activexAdodb.activexAdodbInts.`14`
+import typings.activexAdodb.activexAdodbInts.`16`
+import typings.activexAdodb.activexAdodbInts.`17`
+import typings.activexAdodb.activexAdodbInts.`18`
+import typings.activexAdodb.activexAdodbInts.`19`
+import typings.activexAdodb.activexAdodbInts.`200`
+import typings.activexAdodb.activexAdodbInts.`201`
+import typings.activexAdodb.activexAdodbInts.`202`
+import typings.activexAdodb.activexAdodbInts.`203`
+import typings.activexAdodb.activexAdodbInts.`204`
+import typings.activexAdodb.activexAdodbInts.`205`
+import typings.activexAdodb.activexAdodbInts.`20`
+import typings.activexAdodb.activexAdodbInts.`21`
+import typings.activexAdodb.activexAdodbInts.`2`
+import typings.activexAdodb.activexAdodbInts.`3`
+import typings.activexAdodb.activexAdodbInts.`4`
+import typings.activexAdodb.activexAdodbInts.`5`
+import typings.activexAdodb.activexAdodbInts.`64`
+import typings.activexAdodb.activexAdodbInts.`6`
+import typings.activexAdodb.activexAdodbInts.`72`
+import typings.activexAdodb.activexAdodbInts.`7`
+import typings.activexAdodb.activexAdodbInts.`8192`
+import typings.activexAdodb.activexAdodbInts.`8`
+import typings.activexAdodb.activexAdodbInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`8192`
-  - typings.activexAdodb.activexAdodbNumbers.`20`
-  - typings.activexAdodb.activexAdodbNumbers.`128`
-  - typings.activexAdodb.activexAdodbNumbers.`11`
-  - typings.activexAdodb.activexAdodbNumbers.`8`
-  - typings.activexAdodb.activexAdodbNumbers.`136`
-  - typings.activexAdodb.activexAdodbNumbers.`129`
-  - typings.activexAdodb.activexAdodbNumbers.`6`
-  - typings.activexAdodb.activexAdodbNumbers.`7`
-  - typings.activexAdodb.activexAdodbNumbers.`133`
-  - typings.activexAdodb.activexAdodbNumbers.`134`
-  - typings.activexAdodb.activexAdodbNumbers.`135`
-  - typings.activexAdodb.activexAdodbNumbers.`14`
-  - typings.activexAdodb.activexAdodbNumbers.`5`
-  - typings.activexAdodb.activexAdodbNumbers.`0`
-  - typings.activexAdodb.activexAdodbNumbers.`10`
-  - typings.activexAdodb.activexAdodbNumbers.`64`
-  - typings.activexAdodb.activexAdodbNumbers.`72`
-  - typings.activexAdodb.activexAdodbNumbers.`9`
-  - typings.activexAdodb.activexAdodbNumbers.`3`
-  - typings.activexAdodb.activexAdodbNumbers.`13`
-  - typings.activexAdodb.activexAdodbNumbers.`205`
-  - typings.activexAdodb.activexAdodbNumbers.`201`
-  - typings.activexAdodb.activexAdodbNumbers.`203`
-  - typings.activexAdodb.activexAdodbNumbers.`131`
-  - typings.activexAdodb.activexAdodbNumbers.`138`
-  - typings.activexAdodb.activexAdodbNumbers.`4`
-  - typings.activexAdodb.activexAdodbNumbers.`2`
-  - typings.activexAdodb.activexAdodbNumbers.`16`
-  - typings.activexAdodb.activexAdodbNumbers.`21`
-  - typings.activexAdodb.activexAdodbNumbers.`19`
-  - typings.activexAdodb.activexAdodbNumbers.`18`
-  - typings.activexAdodb.activexAdodbNumbers.`17`
-  - typings.activexAdodb.activexAdodbNumbers.`132`
-  - typings.activexAdodb.activexAdodbNumbers.`204`
-  - typings.activexAdodb.activexAdodbNumbers.`200`
-  - typings.activexAdodb.activexAdodbNumbers.`12`
-  - typings.activexAdodb.activexAdodbNumbers.`139`
-  - typings.activexAdodb.activexAdodbNumbers.`202`
-  - typings.activexAdodb.activexAdodbNumbers.`130`
+  - typings.activexAdodb.activexAdodbInts.`8192`
+  - typings.activexAdodb.activexAdodbInts.`20`
+  - typings.activexAdodb.activexAdodbInts.`128`
+  - typings.activexAdodb.activexAdodbInts.`11`
+  - typings.activexAdodb.activexAdodbInts.`8`
+  - typings.activexAdodb.activexAdodbInts.`136`
+  - typings.activexAdodb.activexAdodbInts.`129`
+  - typings.activexAdodb.activexAdodbInts.`6`
+  - typings.activexAdodb.activexAdodbInts.`7`
+  - typings.activexAdodb.activexAdodbInts.`133`
+  - typings.activexAdodb.activexAdodbInts.`134`
+  - typings.activexAdodb.activexAdodbInts.`135`
+  - typings.activexAdodb.activexAdodbInts.`14`
+  - typings.activexAdodb.activexAdodbInts.`5`
+  - typings.activexAdodb.activexAdodbInts.`0`
+  - typings.activexAdodb.activexAdodbInts.`10`
+  - typings.activexAdodb.activexAdodbInts.`64`
+  - typings.activexAdodb.activexAdodbInts.`72`
+  - typings.activexAdodb.activexAdodbInts.`9`
+  - typings.activexAdodb.activexAdodbInts.`3`
+  - typings.activexAdodb.activexAdodbInts.`13`
+  - typings.activexAdodb.activexAdodbInts.`205`
+  - typings.activexAdodb.activexAdodbInts.`201`
+  - typings.activexAdodb.activexAdodbInts.`203`
+  - typings.activexAdodb.activexAdodbInts.`131`
+  - typings.activexAdodb.activexAdodbInts.`138`
+  - typings.activexAdodb.activexAdodbInts.`4`
+  - typings.activexAdodb.activexAdodbInts.`2`
+  - typings.activexAdodb.activexAdodbInts.`16`
+  - typings.activexAdodb.activexAdodbInts.`21`
+  - typings.activexAdodb.activexAdodbInts.`19`
+  - typings.activexAdodb.activexAdodbInts.`18`
+  - typings.activexAdodb.activexAdodbInts.`17`
+  - typings.activexAdodb.activexAdodbInts.`132`
+  - typings.activexAdodb.activexAdodbInts.`204`
+  - typings.activexAdodb.activexAdodbInts.`200`
+  - typings.activexAdodb.activexAdodbInts.`12`
+  - typings.activexAdodb.activexAdodbInts.`139`
+  - typings.activexAdodb.activexAdodbInts.`202`
+  - typings.activexAdodb.activexAdodbInts.`130`
 */
 trait DataTypeEnum extends StObject
 object DataTypeEnum {

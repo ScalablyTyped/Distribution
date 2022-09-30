@@ -1,11 +1,11 @@
 package typings.sindresorhusFnv1a
 
-import typings.sindresorhusFnv1a.sindresorhusFnv1aNumbers.`1024`
-import typings.sindresorhusFnv1a.sindresorhusFnv1aNumbers.`128`
-import typings.sindresorhusFnv1a.sindresorhusFnv1aNumbers.`256`
-import typings.sindresorhusFnv1a.sindresorhusFnv1aNumbers.`32`
-import typings.sindresorhusFnv1a.sindresorhusFnv1aNumbers.`512`
-import typings.sindresorhusFnv1a.sindresorhusFnv1aNumbers.`64`
+import typings.sindresorhusFnv1a.sindresorhusFnv1aInts.`1024`
+import typings.sindresorhusFnv1a.sindresorhusFnv1aInts.`128`
+import typings.sindresorhusFnv1a.sindresorhusFnv1aInts.`256`
+import typings.sindresorhusFnv1a.sindresorhusFnv1aInts.`32`
+import typings.sindresorhusFnv1a.sindresorhusFnv1aInts.`512`
+import typings.sindresorhusFnv1a.sindresorhusFnv1aInts.`64`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

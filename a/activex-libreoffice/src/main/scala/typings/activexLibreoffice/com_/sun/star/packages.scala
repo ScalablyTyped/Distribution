@@ -2,35 +2,35 @@ package typings.activexLibreoffice.com_.sun.star
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`101010256`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`10`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`12`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`134695760`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`14`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`18`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`20`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`22`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`24`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`26`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`28`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`30`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`32`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`33639248`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`34`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`36`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`38`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`42`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`46`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`67324752`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
+import typings.activexLibreoffice.activexLibreofficeInts.`-1`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`101010256`
+import typings.activexLibreoffice.activexLibreofficeInts.`10`
+import typings.activexLibreoffice.activexLibreofficeInts.`12`
+import typings.activexLibreoffice.activexLibreofficeInts.`134695760`
+import typings.activexLibreoffice.activexLibreofficeInts.`14`
+import typings.activexLibreoffice.activexLibreofficeInts.`16`
+import typings.activexLibreoffice.activexLibreofficeInts.`18`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`20`
+import typings.activexLibreoffice.activexLibreofficeInts.`22`
+import typings.activexLibreoffice.activexLibreofficeInts.`24`
+import typings.activexLibreoffice.activexLibreofficeInts.`26`
+import typings.activexLibreoffice.activexLibreofficeInts.`28`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`30`
+import typings.activexLibreoffice.activexLibreofficeInts.`32`
+import typings.activexLibreoffice.activexLibreofficeInts.`33639248`
+import typings.activexLibreoffice.activexLibreofficeInts.`34`
+import typings.activexLibreoffice.activexLibreofficeInts.`36`
+import typings.activexLibreoffice.activexLibreofficeInts.`38`
+import typings.activexLibreoffice.activexLibreofficeInts.`42`
+import typings.activexLibreoffice.activexLibreofficeInts.`46`
+import typings.activexLibreoffice.activexLibreofficeInts.`4`
+import typings.activexLibreoffice.activexLibreofficeInts.`67324752`
+import typings.activexLibreoffice.activexLibreofficeInts.`6`
+import typings.activexLibreoffice.activexLibreofficeInts.`8`
+import typings.activexLibreoffice.activexLibreofficeInts.`9`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
@@ -451,35 +451,35 @@ object packages {
     object ZipConstants {
       
       /* Rewritten from type alias, can be one of: 
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`9`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`36`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`38`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`32`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`14`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`34`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`30`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`46`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`10`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`24`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`28`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`42`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`33639248`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`20`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`12`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`-1`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`22`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`101010256`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`134695760`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`26`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`67324752`
-        - typings.activexLibreoffice.activexLibreofficeNumbers.`18`
+        - typings.activexLibreoffice.activexLibreofficeInts.`9`
+        - typings.activexLibreoffice.activexLibreofficeInts.`1`
+        - typings.activexLibreoffice.activexLibreofficeInts.`36`
+        - typings.activexLibreoffice.activexLibreofficeInts.`38`
+        - typings.activexLibreoffice.activexLibreofficeInts.`32`
+        - typings.activexLibreoffice.activexLibreofficeInts.`16`
+        - typings.activexLibreoffice.activexLibreofficeInts.`14`
+        - typings.activexLibreoffice.activexLibreofficeInts.`34`
+        - typings.activexLibreoffice.activexLibreofficeInts.`30`
+        - typings.activexLibreoffice.activexLibreofficeInts.`8`
+        - typings.activexLibreoffice.activexLibreofficeInts.`46`
+        - typings.activexLibreoffice.activexLibreofficeInts.`10`
+        - typings.activexLibreoffice.activexLibreofficeInts.`24`
+        - typings.activexLibreoffice.activexLibreofficeInts.`28`
+        - typings.activexLibreoffice.activexLibreofficeInts.`42`
+        - typings.activexLibreoffice.activexLibreofficeInts.`33639248`
+        - typings.activexLibreoffice.activexLibreofficeInts.`20`
+        - typings.activexLibreoffice.activexLibreofficeInts.`12`
+        - typings.activexLibreoffice.activexLibreofficeInts.`4`
+        - typings.activexLibreoffice.activexLibreofficeInts.`6`
+        - typings.activexLibreoffice.activexLibreofficeInts.`-1`
+        - typings.activexLibreoffice.activexLibreofficeInts.`0`
+        - typings.activexLibreoffice.activexLibreofficeInts.`22`
+        - typings.activexLibreoffice.activexLibreofficeInts.`101010256`
+        - typings.activexLibreoffice.activexLibreofficeInts.`134695760`
+        - typings.activexLibreoffice.activexLibreofficeInts.`2`
+        - typings.activexLibreoffice.activexLibreofficeInts.`26`
+        - typings.activexLibreoffice.activexLibreofficeInts.`67324752`
+        - typings.activexLibreoffice.activexLibreofficeInts.`18`
       */
       trait Constants extends StObject
       object Constants {

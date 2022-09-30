@@ -12,14 +12,14 @@ trait SetOperationNode
   
   var children: js.Array[AstNode]
   
-  var name: KeywordNode
+  var nameKw: KeywordNode
   
   var `type`: set_operation
 }
 object SetOperationNode {
   
-  inline def apply(children: js.Array[AstNode], name: KeywordNode, `type`: set_operation): SetOperationNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(children: js.Array[AstNode], nameKw: KeywordNode, `type`: set_operation): SetOperationNode = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], nameKw = nameKw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetOperationNode]
   }
@@ -30,7 +30,7 @@ object SetOperationNode {
     
     inline def setChildrenVarargs(value: AstNode*): Self = StObject.set(x, "children", js.Array(value*))
     
-    inline def setName(value: KeywordNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setNameKw(value: KeywordNode): Self = StObject.set(x, "nameKw", value.asInstanceOf[js.Any])
     
     inline def setType(value: set_operation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

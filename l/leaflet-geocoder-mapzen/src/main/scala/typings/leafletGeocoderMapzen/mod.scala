@@ -93,7 +93,7 @@ object mod {
         *
         * Default value: null.
         */
-      var layers: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+      var layers: js.UndefOr[String | js.Array[Any]] = js.undefined
       
       /**
         * If true, search results drops Leaflet's default blue markers onto the map.
@@ -165,7 +165,7 @@ object mod {
         * Default value: 'topleft'.
         */
       var position: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ Any
           ] = js.undefined
       
       /**
@@ -215,11 +215,11 @@ object mod {
         
         inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
         
-        inline def setLayers(value: String | js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        inline def setLayers(value: String | js.Array[Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
         inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
         
-        inline def setLayersVarargs(value: js.Any*): Self = StObject.set(x, "layers", js.Array(value :_*))
+        inline def setLayersVarargs(value: Any*): Self = StObject.set(x, "layers", js.Array(value*))
         
         inline def setMarkers(value: MarkerOptions | Boolean): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
         
@@ -246,7 +246,7 @@ object mod {
         inline def setPolygonIconUndefined: Self = StObject.set(x, "polygonIcon", js.undefined)
         
         inline def setPosition(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ Any
         ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
         inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)

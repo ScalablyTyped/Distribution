@@ -23,23 +23,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("lmdb", "ArrayLikeIterable")
-  @js.native
-  open class ArrayLikeIterable[T] ()
-    extends StObject
-       with Iterable[T] {
-    
-    def apply(): js.Iterator[T] = js.native
-    
-    var asArray: js.Array[T] = js.native
-    
-    def filter(callback: js.Function1[/* entry */ T, Any]): /* import warning: importer.ImportType#apply Failed type conversion: lmdb.lmdb.ArrayLikeIterable<T>[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
-    
-    def forEach(callback: js.Function1[/* entry */ T, Any]): Unit = js.native
-    
-    def map[U](callback: js.Function1[/* entry */ T, U]): ArrayLikeIterable[U] = js.native
-  }
-  
   @JSImport("lmdb", "Binary")
   @js.native
   open class Binary () extends StObject
@@ -50,8 +33,10 @@ object mod {
     
     /**
     		* Make a snapshot copy of the current database at the indicated path
+    	  * @param path Path to store the backup
+    		* @param compact Apply compaction while making the backup (slower and smaller)
     		**/
-    def backup(path: String): js.Promise[Unit] = js.native
+    def backup(path: String, compact: Boolean): js.Promise[Unit] = js.native
     
     /**
     		* Execute a set of write operations that will all be batched together in next queued asynchronous transaction.
@@ -131,6 +116,7 @@ object mod {
     		* @param id The key for the entry
     		**/
     def get(id: K): js.UndefOr[V] = js.native
+    def get(id: K, options: GetOptions): js.UndefOr[V] = js.native
     
     /**
     		* Get the value stored by given id/key in binary format, as a Buffer
@@ -164,8 +150,8 @@ object mod {
     		* existing version
     		* @param options The options for the range/iterator
     		**/
-    def getKeys(): ArrayLikeIterable[K] = js.native
-    def getKeys(options: RangeOptions): ArrayLikeIterable[K] = js.native
+    def getKeys(): RangeIterable[K] = js.native
+    def getKeys(options: RangeOptions): RangeIterable[K] = js.native
     
     /**
     		* Get the count of all the unique keys for the given range
@@ -188,8 +174,8 @@ object mod {
     		* existing version
     		* @param options The options for the range/iterator
     		**/
-    def getRange(): ArrayLikeIterable[typings.lmdb.anon.Key[K, V]] = js.native
-    def getRange(options: RangeOptions): ArrayLikeIterable[typings.lmdb.anon.Key[K, V]] = js.native
+    def getRange(): RangeIterable[typings.lmdb.anon.Key[K, V]] = js.native
+    def getRange(options: RangeOptions): RangeIterable[typings.lmdb.anon.Key[K, V]] = js.native
     
     /**
     		* Returns statistics about the current database
@@ -202,8 +188,8 @@ object mod {
     		* @param key The key for the entry to remove
     		* @param options The options for the iterator
     		**/
-    def getValues(key: K): ArrayLikeIterable[V] = js.native
-    def getValues(key: K, options: RangeOptions): ArrayLikeIterable[V] = js.native
+    def getValues(key: K): RangeIterable[V] = js.native
+    def getValues(key: K, options: RangeOptions): RangeIterable[V] = js.native
     
     /**
     		* Get the count of all the values for the given key (for dupsort databases)
@@ -384,6 +370,27 @@ object mod {
   @js.native
   val IF_EXISTS: Double = js.native
   
+  @JSImport("lmdb", "RangeIterable")
+  @js.native
+  open class RangeIterable[T] ()
+    extends StObject
+       with Iterable[T] {
+    
+    def apply(): js.Iterator[T] = js.native
+    
+    var asArray: js.Array[T] = js.native
+    
+    def filter(callback: js.Function1[/* entry */ T, Any]): /* import warning: importer.ImportType#apply Failed type conversion: lmdb.lmdb.RangeIterable<T>[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.iterator * / any] */ js.Any = js.native
+    
+    def flatMap[U](callback: js.Function1[/* entry */ T, js.Array[U]]): RangeIterable[U] = js.native
+    
+    def forEach(callback: js.Function1[/* entry */ T, Any]): Unit = js.native
+    
+    def map[U](callback: js.Function1[/* entry */ T, U]): RangeIterable[U] = js.native
+    
+    def slice(start: Double, end: Double): RangeIterable[T] = js.native
+  }
+  
   @JSImport("lmdb", "RootDatabase")
   @js.native
   open class RootDatabase[V, K /* <: Key */] () extends Database[V, K] {
@@ -548,6 +555,8 @@ object mod {
     }
   }
   
+  trait GetOptions extends StObject
+  
   type Key = js.Array[Any] | String | js.Symbol | Double | Boolean | js.typedarray.Uint8Array
   
   trait PutOptions extends StObject {
@@ -619,15 +628,15 @@ object mod {
     var start: js.UndefOr[Key] = js.undefined
     
     /** Use the provided transaction for this range query */
-    var transaction: Transaction
+    var transaction: js.UndefOr[Transaction] = js.undefined
     
     /** Include version numbers in each entry returned **/
     var versions: js.UndefOr[Boolean] = js.undefined
   }
   object RangeOptions {
     
-    inline def apply(transaction: Transaction): RangeOptions = {
-      val __obj = js.Dynamic.literal(transaction = transaction.asInstanceOf[js.Any])
+    inline def apply(): RangeOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RangeOptions]
     }
     
@@ -662,6 +671,8 @@ object mod {
       inline def setStartVarargs(value: Any*): Self = StObject.set(x, "start", js.Array(value*))
       
       inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      
+      inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
       
       inline def setVersions(value: Boolean): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
       

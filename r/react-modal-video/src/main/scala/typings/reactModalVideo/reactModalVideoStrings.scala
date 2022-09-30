@@ -15,14 +15,6 @@ object reactModalVideoStrings {
   inline def `Close the modal by clicking here`: `Close the modal by clicking here` = ("Close the modal by clicking here").asInstanceOf[`Close the modal by clicking here`]
   
   @js.native
-  sealed trait DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket: DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket = "${number}:${number}".asInstanceOf[DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketstringRightcurlybracketCommaDollarLeftcurlybracketstringRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketstringRightcurlybracketCommaDollarLeftcurlybracketstringRightcurlybracket: DollarLeftcurlybracketstringRightcurlybracketCommaDollarLeftcurlybracketstringRightcurlybracket = "${string},${string}".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketCommaDollarLeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
   sealed trait `You just opened the modal video` extends StObject
   inline def `You just opened the modal video`: `You just opened the modal video` = ("You just opened the modal video").asInstanceOf[`You just opened the modal video`]
   

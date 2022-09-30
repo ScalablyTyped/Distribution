@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "Polygon")
 @js.native
-class Polygon[P /* <: PolygonProps */, E /* <: Polygon_[js.Any] */] protected () extends Path[P, E] {
+open class Polygon[P /* <: PolygonProps */, E /* <: Polygon_[Any] */] protected () extends Path[P, E] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
 }

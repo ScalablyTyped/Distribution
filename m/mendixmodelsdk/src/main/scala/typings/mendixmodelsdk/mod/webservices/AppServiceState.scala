@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.AppServiceState")
 @js.native
-class AppServiceState protected ()
+open class AppServiceState protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.AppServiceState {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

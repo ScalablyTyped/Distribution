@@ -13,7 +13,7 @@ object adaptCreateElementMod {
   
   inline def default(h: CreateElementFunction): CreateElementFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(h.asInstanceOf[js.Any]).asInstanceOf[CreateElementFunction]
   
-  inline def concatenate(src: StringDictionary[Any], otherObj: StringDictionary[Any]*): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(List(src.asInstanceOf[js.Any]).`++`(otherObj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[Any]]
+  inline def concatenate(src: StringDictionary[Any], otherObj: StringDictionary[Any]*): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(scala.List(src.asInstanceOf[js.Any]).`++`(otherObj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[Any]]
   
   type CreateElementFunction = js.Function3[
     /* component */ String | js.Object, 

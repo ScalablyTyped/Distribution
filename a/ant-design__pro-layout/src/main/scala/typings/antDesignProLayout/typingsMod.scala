@@ -243,7 +243,7 @@ object typingsMod {
     }
   }
   
-  /* Inlined std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem, 'routes'> & {  children :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> | undefined,   routes :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> | undefined} */
+  /* Inlined std.Omit<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.MenuDataItem, 'routes'> & {  children :std.Array<@ant-design/pro-layout.@ant-design/pro-layout/es/typings.Route> | undefined} */
   trait Route extends StObject {
     
     var children: js.UndefOr[js.Array[MenuDataItem]] & js.UndefOr[js.Array[Route]]
@@ -267,8 +267,6 @@ object typingsMod {
     var parentKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
-    
-    var routes: js.UndefOr[js.Array[Route]] = js.undefined
     
     var target: js.UndefOr[String] = js.undefined
     
@@ -326,12 +324,6 @@ object typingsMod {
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
-      
-      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
-      
-      inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

@@ -1,9 +1,9 @@
 package typings.tpdirect.anon
 
-import typings.tpdirect.tpdirectNumbers.`0`
-import typings.tpdirect.tpdirectNumbers.`1`
-import typings.tpdirect.tpdirectNumbers.`2`
-import typings.tpdirect.tpdirectNumbers.`3`
+import typings.tpdirect.tpdirectInts.`0`
+import typings.tpdirect.tpdirectInts.`1`
+import typings.tpdirect.tpdirectInts.`2`
+import typings.tpdirect.tpdirectInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

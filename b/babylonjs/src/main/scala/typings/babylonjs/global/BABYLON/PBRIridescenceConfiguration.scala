@@ -18,7 +18,7 @@ object PBRIridescenceConfiguration {
   /**
     * The default index of refraction of the thin-film layer.
     * Defaults to 1.3
-    * @hidden
+    * @internal
     */
   @JSGlobal("BABYLON.PBRIridescenceConfiguration._DefaultIndexOfRefraction")
   @js.native
@@ -27,7 +27,7 @@ object PBRIridescenceConfiguration {
   /**
     * The default maximum thickness of the thin-film layer given in nanometers (nm).
     * Defaults to 400 nm.
-    * @hidden
+    * @internal
     */
   @JSGlobal("BABYLON.PBRIridescenceConfiguration._DefaultMaximumThickness")
   @js.native
@@ -36,7 +36,7 @@ object PBRIridescenceConfiguration {
   /**
     * The default minimum thickness of the thin-film layer given in nanometers (nm).
     * Defaults to 100 nm.
-    * @hidden
+    * @internal
     */
   @JSGlobal("BABYLON.PBRIridescenceConfiguration._DefaultMinimumThickness")
   @js.native

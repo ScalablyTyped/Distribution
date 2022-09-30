@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * In version 8.15.0: introduced
+  * In version 9.0.2: introduced
   */
 @JSImport("mendixmodelsdk", "pages.WorkflowTemplateType")
 @js.native

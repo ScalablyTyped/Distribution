@@ -13,22 +13,22 @@ object mod {
   
   @JSImport("redux-first-router-link", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LinkProps, js.Object, js.Any]
+  open class default ()
+    extends Component[LinkProps, js.Object, Any]
   
   @JSImport("redux-first-router-link", "NavLink")
   @js.native
-  class NavLink protected ()
-    extends Component[NavLinkProps, js.Object, js.Any] {
+  open class NavLink protected ()
+    extends Component[NavLinkProps, js.Object, Any] {
     def this(props: NavLinkProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: NavLinkProps, context: js.Any) = this()
+    def this(props: NavLinkProps, context: Any) = this()
   }
   
-  type Link = Component[LinkProps, js.Object, js.Any]
+  type Link = Component[LinkProps, js.Object, Any]
   
   trait LinkProps
     extends StObject
@@ -83,7 +83,7 @@ object mod {
       
       inline def setTo(value: To): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   

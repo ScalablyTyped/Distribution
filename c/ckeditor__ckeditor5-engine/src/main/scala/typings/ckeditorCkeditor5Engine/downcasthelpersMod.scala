@@ -9,11 +9,7 @@ import typings.ckeditorCkeditor5Engine.anon.ModelView
 import typings.ckeditorCkeditor5Engine.anon.TriggerBy
 import typings.ckeditorCkeditor5Engine.anon.View
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.addMarker
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.addMarkerColon$LeftcurlybracketstringRightcurlybracket
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributeColon$LeftcurlybracketstringRightcurlybracket
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.attributeColonDollarLeftcurlybracketstringRightcurlybracketColonDollartext
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.insert
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.insertColon$LeftcurlybracketstringRightcurlybracket
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.insertColon$text
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.selection
 import typings.ckeditorCkeditor5Engine.downcastdispatcherMod.DowncastConversionApi
@@ -75,11 +71,11 @@ object downcasthelpersMod {
       typings.ckeditorCkeditor5Engine.viewElementMod.default | Unit | Null
     ]
   ): DowncastDispatcherCallback[
-    insert | insertColon$LeftcurlybracketstringRightcurlybracket, 
+    insert | (/* template literal string: insert:${string} */ String), 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertElement")(elementCreator.asInstanceOf[js.Any]).asInstanceOf[DowncastDispatcherCallback[
-    insert | insertColon$LeftcurlybracketstringRightcurlybracket, 
+    insert | (/* template literal string: insert:${string} */ String), 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ]]
@@ -101,20 +97,20 @@ object downcasthelpersMod {
       typings.ckeditorCkeditor5Engine.uielementMod.default | Unit | Null
     ]
   ): DowncastDispatcherCallback[
-    addMarker | addMarkerColon$LeftcurlybracketstringRightcurlybracket, 
+    addMarker | (/* template literal string: addMarker:${string} */ String), 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertUIElement")(elementOrElementCreator.asInstanceOf[js.Any]).asInstanceOf[DowncastDispatcherCallback[
-    addMarker | addMarkerColon$LeftcurlybracketstringRightcurlybracket, 
+    addMarker | (/* template literal string: addMarker:${string} */ String), 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ]]
   inline def insertUIElement(elementOrElementCreator: typings.ckeditorCkeditor5Engine.uielementMod.default): DowncastDispatcherCallback[
-    addMarker | addMarkerColon$LeftcurlybracketstringRightcurlybracket, 
+    addMarker | (/* template literal string: addMarker:${string} */ String), 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertUIElement")(elementOrElementCreator.asInstanceOf[js.Any]).asInstanceOf[DowncastDispatcherCallback[
-    addMarker | addMarkerColon$LeftcurlybracketstringRightcurlybracket, 
+    addMarker | (/* template literal string: addMarker:${string} */ String), 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ]]
@@ -136,11 +132,11 @@ object downcasthelpersMod {
       typings.ckeditorCkeditor5Engine.viewElementMod.default | Unit | Null
     ]
   ): DowncastDispatcherCallback[
-    attributeColonDollarLeftcurlybracketstringRightcurlybracketColonDollartext | attributeColon$LeftcurlybracketstringRightcurlybracket, 
+    /* template literal string: attribute:${string}:$text */ String, 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(elementCreator.asInstanceOf[js.Any]).asInstanceOf[DowncastDispatcherCallback[
-    attributeColonDollarLeftcurlybracketstringRightcurlybracketColonDollartext | attributeColon$LeftcurlybracketstringRightcurlybracket, 
+    /* template literal string: attribute:${string}:$text */ String, 
     js.Object, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ]]

@@ -21,8 +21,7 @@ object leafletMod {
   // tslint:disable-next-line:no-empty-interface
   @JSImport("leaflet", "GeodesicCircle")
   @js.native
-  class GeodesicCircle protected ()
-    extends Polyline_[LineString | MultiLineString, js.Any] {
+  open class GeodesicCircle protected () extends Polyline_[LineString | MultiLineString, Any] {
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
   }
@@ -30,15 +29,14 @@ object leafletMod {
   // tslint:disable-next-line:no-empty-interface
   @JSImport("leaflet", "GeodesicPolygon")
   @js.native
-  class GeodesicPolygon_ protected () extends GeodesicPolyline_ {
+  open class GeodesicPolygon_ protected () extends GeodesicPolyline_ {
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
   }
   
   @JSImport("leaflet", "GeodesicPolyline")
   @js.native
-  class GeodesicPolyline_ protected ()
-    extends Polyline_[LineString | MultiLineString, js.Any] {
+  open class GeodesicPolyline_ protected () extends Polyline_[LineString | MultiLineString, Any] {
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
   }

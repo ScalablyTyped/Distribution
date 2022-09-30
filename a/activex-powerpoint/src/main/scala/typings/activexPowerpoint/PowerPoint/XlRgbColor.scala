@@ -1,280 +1,280 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`0`
-import typings.activexPowerpoint.activexPowerpointNumbers.`10025880`
-import typings.activexPowerpoint.activexPowerpointNumbers.`10061943`
-import typings.activexPowerpoint.activexPowerpointNumbers.`10156544`
-import typings.activexPowerpoint.activexPowerpointNumbers.`10526303`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11119017`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11186720`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11206502`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11394815`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11788021`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11823615`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11829830`
-import typings.activexPowerpoint.activexPowerpointNumbers.`11920639`
-import typings.activexPowerpoint.activexPowerpointNumbers.`12180223`
-import typings.activexPowerpoint.activexPowerpointNumbers.`12632256`
-import typings.activexPowerpoint.activexPowerpointNumbers.`12695295`
-import typings.activexPowerpoint.activexPowerpointNumbers.`128`
-import typings.activexPowerpoint.activexPowerpointNumbers.`12903679`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13353215`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13382297`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13422920`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13434880`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13458026`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13495295`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13499135`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13688896`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13749760`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13826810`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13828244`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13850042`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13882323`
-import typings.activexPowerpoint.activexPowerpointNumbers.`13959039`
-import typings.activexPowerpoint.activexPowerpointNumbers.`139`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14020607`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14053594`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14150650`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14204888`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14381203`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14474460`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14480885`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14481663`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14524637`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14599344`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14745599`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14772545`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14804223`
-import typings.activexPowerpoint.activexPowerpointNumbers.`14822282`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15128749`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15130800`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15134970`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15136253`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15453831`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15570276`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15624315`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15631086`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15658671`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15660543`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15792895`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15794160`
-import typings.activexPowerpoint.activexPowerpointNumbers.`15794175`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16118015`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16119285`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16436871`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16443110`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16448255`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16449525`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16711680`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16711935`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16748574`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16760576`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16775408`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16775416`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16776960`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16777200`
-import typings.activexPowerpoint.activexPowerpointNumbers.`16777215`
-import typings.activexPowerpoint.activexPowerpointNumbers.`17919`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2139610`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2237106`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2263842`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2330219`
-import typings.activexPowerpoint.activexPowerpointNumbers.`255`
-import typings.activexPowerpoint.activexPowerpointNumbers.`25600`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2763429`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2970272`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3107669`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3145645`
-import typings.activexPowerpoint.activexPowerpointNumbers.`32768`
-import typings.activexPowerpoint.activexPowerpointNumbers.`32896`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3329330`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3329434`
-import typings.activexPowerpoint.activexPowerpointNumbers.`36095`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3937500`
-import typings.activexPowerpoint.activexPowerpointNumbers.`4163021`
-import typings.activexPowerpoint.activexPowerpointNumbers.`42495`
-import typings.activexPowerpoint.activexPowerpointNumbers.`4678655`
-import typings.activexPowerpoint.activexPowerpointNumbers.`5197615`
-import typings.activexPowerpoint.activexPowerpointNumbers.`5275647`
-import typings.activexPowerpoint.activexPowerpointNumbers.`55295`
-import typings.activexPowerpoint.activexPowerpointNumbers.`5737262`
-import typings.activexPowerpoint.activexPowerpointNumbers.`6053069`
-import typings.activexPowerpoint.activexPowerpointNumbers.`6333684`
-import typings.activexPowerpoint.activexPowerpointNumbers.`64636`
-import typings.activexPowerpoint.activexPowerpointNumbers.`65280`
-import typings.activexPowerpoint.activexPowerpointNumbers.`65407`
-import typings.activexPowerpoint.activexPowerpointNumbers.`65535`
-import typings.activexPowerpoint.activexPowerpointNumbers.`6908265`
-import typings.activexPowerpoint.activexPowerpointNumbers.`7059389`
-import typings.activexPowerpoint.activexPowerpointNumbers.`7071982`
-import typings.activexPowerpoint.activexPowerpointNumbers.`7346457`
-import typings.activexPowerpoint.activexPowerpointNumbers.`7451452`
-import typings.activexPowerpoint.activexPowerpointNumbers.`7504122`
-import typings.activexPowerpoint.activexPowerpointNumbers.`755384`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8034025`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8036607`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8388352`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8388608`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8388736`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8421376`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8421504`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8421616`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8519755`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8721863`
-import typings.activexPowerpoint.activexPowerpointNumbers.`8894686`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9109504`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9109643`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9125192`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9145088`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9221330`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9234160`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9408444`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9419919`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9470064`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9498256`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9639167`
-import typings.activexPowerpoint.activexPowerpointNumbers.`9662683`
+import typings.activexPowerpoint.activexPowerpointInts.`0`
+import typings.activexPowerpoint.activexPowerpointInts.`10025880`
+import typings.activexPowerpoint.activexPowerpointInts.`10061943`
+import typings.activexPowerpoint.activexPowerpointInts.`10156544`
+import typings.activexPowerpoint.activexPowerpointInts.`10526303`
+import typings.activexPowerpoint.activexPowerpointInts.`11119017`
+import typings.activexPowerpoint.activexPowerpointInts.`11186720`
+import typings.activexPowerpoint.activexPowerpointInts.`11206502`
+import typings.activexPowerpoint.activexPowerpointInts.`11394815`
+import typings.activexPowerpoint.activexPowerpointInts.`11788021`
+import typings.activexPowerpoint.activexPowerpointInts.`11823615`
+import typings.activexPowerpoint.activexPowerpointInts.`11829830`
+import typings.activexPowerpoint.activexPowerpointInts.`11920639`
+import typings.activexPowerpoint.activexPowerpointInts.`12180223`
+import typings.activexPowerpoint.activexPowerpointInts.`12632256`
+import typings.activexPowerpoint.activexPowerpointInts.`12695295`
+import typings.activexPowerpoint.activexPowerpointInts.`128`
+import typings.activexPowerpoint.activexPowerpointInts.`12903679`
+import typings.activexPowerpoint.activexPowerpointInts.`13353215`
+import typings.activexPowerpoint.activexPowerpointInts.`13382297`
+import typings.activexPowerpoint.activexPowerpointInts.`13422920`
+import typings.activexPowerpoint.activexPowerpointInts.`13434880`
+import typings.activexPowerpoint.activexPowerpointInts.`13458026`
+import typings.activexPowerpoint.activexPowerpointInts.`13495295`
+import typings.activexPowerpoint.activexPowerpointInts.`13499135`
+import typings.activexPowerpoint.activexPowerpointInts.`13688896`
+import typings.activexPowerpoint.activexPowerpointInts.`13749760`
+import typings.activexPowerpoint.activexPowerpointInts.`13826810`
+import typings.activexPowerpoint.activexPowerpointInts.`13828244`
+import typings.activexPowerpoint.activexPowerpointInts.`13850042`
+import typings.activexPowerpoint.activexPowerpointInts.`13882323`
+import typings.activexPowerpoint.activexPowerpointInts.`13959039`
+import typings.activexPowerpoint.activexPowerpointInts.`139`
+import typings.activexPowerpoint.activexPowerpointInts.`14020607`
+import typings.activexPowerpoint.activexPowerpointInts.`14053594`
+import typings.activexPowerpoint.activexPowerpointInts.`14150650`
+import typings.activexPowerpoint.activexPowerpointInts.`14204888`
+import typings.activexPowerpoint.activexPowerpointInts.`14381203`
+import typings.activexPowerpoint.activexPowerpointInts.`14474460`
+import typings.activexPowerpoint.activexPowerpointInts.`14480885`
+import typings.activexPowerpoint.activexPowerpointInts.`14481663`
+import typings.activexPowerpoint.activexPowerpointInts.`14524637`
+import typings.activexPowerpoint.activexPowerpointInts.`14599344`
+import typings.activexPowerpoint.activexPowerpointInts.`14745599`
+import typings.activexPowerpoint.activexPowerpointInts.`14772545`
+import typings.activexPowerpoint.activexPowerpointInts.`14804223`
+import typings.activexPowerpoint.activexPowerpointInts.`14822282`
+import typings.activexPowerpoint.activexPowerpointInts.`15128749`
+import typings.activexPowerpoint.activexPowerpointInts.`15130800`
+import typings.activexPowerpoint.activexPowerpointInts.`15134970`
+import typings.activexPowerpoint.activexPowerpointInts.`15136253`
+import typings.activexPowerpoint.activexPowerpointInts.`15453831`
+import typings.activexPowerpoint.activexPowerpointInts.`15570276`
+import typings.activexPowerpoint.activexPowerpointInts.`15624315`
+import typings.activexPowerpoint.activexPowerpointInts.`15631086`
+import typings.activexPowerpoint.activexPowerpointInts.`15658671`
+import typings.activexPowerpoint.activexPowerpointInts.`15660543`
+import typings.activexPowerpoint.activexPowerpointInts.`15792895`
+import typings.activexPowerpoint.activexPowerpointInts.`15794160`
+import typings.activexPowerpoint.activexPowerpointInts.`15794175`
+import typings.activexPowerpoint.activexPowerpointInts.`16118015`
+import typings.activexPowerpoint.activexPowerpointInts.`16119285`
+import typings.activexPowerpoint.activexPowerpointInts.`16436871`
+import typings.activexPowerpoint.activexPowerpointInts.`16443110`
+import typings.activexPowerpoint.activexPowerpointInts.`16448255`
+import typings.activexPowerpoint.activexPowerpointInts.`16449525`
+import typings.activexPowerpoint.activexPowerpointInts.`16711680`
+import typings.activexPowerpoint.activexPowerpointInts.`16711935`
+import typings.activexPowerpoint.activexPowerpointInts.`16748574`
+import typings.activexPowerpoint.activexPowerpointInts.`16760576`
+import typings.activexPowerpoint.activexPowerpointInts.`16775408`
+import typings.activexPowerpoint.activexPowerpointInts.`16775416`
+import typings.activexPowerpoint.activexPowerpointInts.`16776960`
+import typings.activexPowerpoint.activexPowerpointInts.`16777200`
+import typings.activexPowerpoint.activexPowerpointInts.`16777215`
+import typings.activexPowerpoint.activexPowerpointInts.`17919`
+import typings.activexPowerpoint.activexPowerpointInts.`2139610`
+import typings.activexPowerpoint.activexPowerpointInts.`2237106`
+import typings.activexPowerpoint.activexPowerpointInts.`2263842`
+import typings.activexPowerpoint.activexPowerpointInts.`2330219`
+import typings.activexPowerpoint.activexPowerpointInts.`255`
+import typings.activexPowerpoint.activexPowerpointInts.`25600`
+import typings.activexPowerpoint.activexPowerpointInts.`2763429`
+import typings.activexPowerpoint.activexPowerpointInts.`2970272`
+import typings.activexPowerpoint.activexPowerpointInts.`3107669`
+import typings.activexPowerpoint.activexPowerpointInts.`3145645`
+import typings.activexPowerpoint.activexPowerpointInts.`32768`
+import typings.activexPowerpoint.activexPowerpointInts.`32896`
+import typings.activexPowerpoint.activexPowerpointInts.`3329330`
+import typings.activexPowerpoint.activexPowerpointInts.`3329434`
+import typings.activexPowerpoint.activexPowerpointInts.`36095`
+import typings.activexPowerpoint.activexPowerpointInts.`3937500`
+import typings.activexPowerpoint.activexPowerpointInts.`4163021`
+import typings.activexPowerpoint.activexPowerpointInts.`42495`
+import typings.activexPowerpoint.activexPowerpointInts.`4678655`
+import typings.activexPowerpoint.activexPowerpointInts.`5197615`
+import typings.activexPowerpoint.activexPowerpointInts.`5275647`
+import typings.activexPowerpoint.activexPowerpointInts.`55295`
+import typings.activexPowerpoint.activexPowerpointInts.`5737262`
+import typings.activexPowerpoint.activexPowerpointInts.`6053069`
+import typings.activexPowerpoint.activexPowerpointInts.`6333684`
+import typings.activexPowerpoint.activexPowerpointInts.`64636`
+import typings.activexPowerpoint.activexPowerpointInts.`65280`
+import typings.activexPowerpoint.activexPowerpointInts.`65407`
+import typings.activexPowerpoint.activexPowerpointInts.`65535`
+import typings.activexPowerpoint.activexPowerpointInts.`6908265`
+import typings.activexPowerpoint.activexPowerpointInts.`7059389`
+import typings.activexPowerpoint.activexPowerpointInts.`7071982`
+import typings.activexPowerpoint.activexPowerpointInts.`7346457`
+import typings.activexPowerpoint.activexPowerpointInts.`7451452`
+import typings.activexPowerpoint.activexPowerpointInts.`7504122`
+import typings.activexPowerpoint.activexPowerpointInts.`755384`
+import typings.activexPowerpoint.activexPowerpointInts.`8034025`
+import typings.activexPowerpoint.activexPowerpointInts.`8036607`
+import typings.activexPowerpoint.activexPowerpointInts.`8388352`
+import typings.activexPowerpoint.activexPowerpointInts.`8388608`
+import typings.activexPowerpoint.activexPowerpointInts.`8388736`
+import typings.activexPowerpoint.activexPowerpointInts.`8421376`
+import typings.activexPowerpoint.activexPowerpointInts.`8421504`
+import typings.activexPowerpoint.activexPowerpointInts.`8421616`
+import typings.activexPowerpoint.activexPowerpointInts.`8519755`
+import typings.activexPowerpoint.activexPowerpointInts.`8721863`
+import typings.activexPowerpoint.activexPowerpointInts.`8894686`
+import typings.activexPowerpoint.activexPowerpointInts.`9109504`
+import typings.activexPowerpoint.activexPowerpointInts.`9109643`
+import typings.activexPowerpoint.activexPowerpointInts.`9125192`
+import typings.activexPowerpoint.activexPowerpointInts.`9145088`
+import typings.activexPowerpoint.activexPowerpointInts.`9221330`
+import typings.activexPowerpoint.activexPowerpointInts.`9234160`
+import typings.activexPowerpoint.activexPowerpointInts.`9408444`
+import typings.activexPowerpoint.activexPowerpointInts.`9419919`
+import typings.activexPowerpoint.activexPowerpointInts.`9470064`
+import typings.activexPowerpoint.activexPowerpointInts.`9498256`
+import typings.activexPowerpoint.activexPowerpointInts.`9639167`
+import typings.activexPowerpoint.activexPowerpointInts.`9662683`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16775408`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14150650`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16776960`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13959039`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16777200`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14480885`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`12903679`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13495295`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16711680`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14822282`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2763429`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8894686`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`10526303`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`65407`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`5275647`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15570276`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14481663`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3937500`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9109504`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9145088`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`755384`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11119017`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`25600`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`7059389`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9109643`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3107669`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`36095`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13382297`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`139`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8034025`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9419919`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9125192`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`5197615`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13749760`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13828244`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9639167`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16760576`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`6908265`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16748574`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2237106`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15792895`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2263842`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16711935`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14474460`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16775416`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`55295`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2139610`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8421504`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`32768`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3145645`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15794160`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11823615`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`6053069`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8519755`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15794175`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9234160`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16443110`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16118015`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`64636`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13499135`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15128749`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8421616`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13826810`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13882323`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9498256`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`12695295`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8036607`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11186720`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16436871`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`10061943`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14599344`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14745599`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`65280`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3329330`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15134970`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`128`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11206502`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13434880`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13850042`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14381203`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`7451452`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15624315`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`10156544`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13422920`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8721863`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`7346457`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16449525`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14804223`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11920639`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11394815`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8388608`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15136253`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`32896`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2330219`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`42495`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`17919`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14053594`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`7071982`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`10025880`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15658671`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9662683`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14020607`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`12180223`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`4163021`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13353215`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14524637`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15130800`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8388736`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`255`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9408444`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14772545`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`7504122`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`6333684`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`5737262`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15660543`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2970272`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`12632256`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15453831`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13458026`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9470064`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16448255`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8388352`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11829830`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`9221330`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`8421376`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`14204888`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`4678655`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`13688896`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`15631086`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`11788021`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16777215`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`16119285`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`65535`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3329434`
+  - typings.activexPowerpoint.activexPowerpointInts.`16775408`
+  - typings.activexPowerpoint.activexPowerpointInts.`14150650`
+  - typings.activexPowerpoint.activexPowerpointInts.`16776960`
+  - typings.activexPowerpoint.activexPowerpointInts.`13959039`
+  - typings.activexPowerpoint.activexPowerpointInts.`16777200`
+  - typings.activexPowerpoint.activexPowerpointInts.`14480885`
+  - typings.activexPowerpoint.activexPowerpointInts.`12903679`
+  - typings.activexPowerpoint.activexPowerpointInts.`0`
+  - typings.activexPowerpoint.activexPowerpointInts.`13495295`
+  - typings.activexPowerpoint.activexPowerpointInts.`16711680`
+  - typings.activexPowerpoint.activexPowerpointInts.`14822282`
+  - typings.activexPowerpoint.activexPowerpointInts.`2763429`
+  - typings.activexPowerpoint.activexPowerpointInts.`8894686`
+  - typings.activexPowerpoint.activexPowerpointInts.`10526303`
+  - typings.activexPowerpoint.activexPowerpointInts.`65407`
+  - typings.activexPowerpoint.activexPowerpointInts.`5275647`
+  - typings.activexPowerpoint.activexPowerpointInts.`15570276`
+  - typings.activexPowerpoint.activexPowerpointInts.`14481663`
+  - typings.activexPowerpoint.activexPowerpointInts.`3937500`
+  - typings.activexPowerpoint.activexPowerpointInts.`9109504`
+  - typings.activexPowerpoint.activexPowerpointInts.`9145088`
+  - typings.activexPowerpoint.activexPowerpointInts.`755384`
+  - typings.activexPowerpoint.activexPowerpointInts.`11119017`
+  - typings.activexPowerpoint.activexPowerpointInts.`25600`
+  - typings.activexPowerpoint.activexPowerpointInts.`7059389`
+  - typings.activexPowerpoint.activexPowerpointInts.`9109643`
+  - typings.activexPowerpoint.activexPowerpointInts.`3107669`
+  - typings.activexPowerpoint.activexPowerpointInts.`36095`
+  - typings.activexPowerpoint.activexPowerpointInts.`13382297`
+  - typings.activexPowerpoint.activexPowerpointInts.`139`
+  - typings.activexPowerpoint.activexPowerpointInts.`8034025`
+  - typings.activexPowerpoint.activexPowerpointInts.`9419919`
+  - typings.activexPowerpoint.activexPowerpointInts.`9125192`
+  - typings.activexPowerpoint.activexPowerpointInts.`5197615`
+  - typings.activexPowerpoint.activexPowerpointInts.`13749760`
+  - typings.activexPowerpoint.activexPowerpointInts.`13828244`
+  - typings.activexPowerpoint.activexPowerpointInts.`9639167`
+  - typings.activexPowerpoint.activexPowerpointInts.`16760576`
+  - typings.activexPowerpoint.activexPowerpointInts.`6908265`
+  - typings.activexPowerpoint.activexPowerpointInts.`16748574`
+  - typings.activexPowerpoint.activexPowerpointInts.`2237106`
+  - typings.activexPowerpoint.activexPowerpointInts.`15792895`
+  - typings.activexPowerpoint.activexPowerpointInts.`2263842`
+  - typings.activexPowerpoint.activexPowerpointInts.`16711935`
+  - typings.activexPowerpoint.activexPowerpointInts.`14474460`
+  - typings.activexPowerpoint.activexPowerpointInts.`16775416`
+  - typings.activexPowerpoint.activexPowerpointInts.`55295`
+  - typings.activexPowerpoint.activexPowerpointInts.`2139610`
+  - typings.activexPowerpoint.activexPowerpointInts.`8421504`
+  - typings.activexPowerpoint.activexPowerpointInts.`32768`
+  - typings.activexPowerpoint.activexPowerpointInts.`3145645`
+  - typings.activexPowerpoint.activexPowerpointInts.`15794160`
+  - typings.activexPowerpoint.activexPowerpointInts.`11823615`
+  - typings.activexPowerpoint.activexPowerpointInts.`6053069`
+  - typings.activexPowerpoint.activexPowerpointInts.`8519755`
+  - typings.activexPowerpoint.activexPowerpointInts.`15794175`
+  - typings.activexPowerpoint.activexPowerpointInts.`9234160`
+  - typings.activexPowerpoint.activexPowerpointInts.`16443110`
+  - typings.activexPowerpoint.activexPowerpointInts.`16118015`
+  - typings.activexPowerpoint.activexPowerpointInts.`64636`
+  - typings.activexPowerpoint.activexPowerpointInts.`13499135`
+  - typings.activexPowerpoint.activexPowerpointInts.`15128749`
+  - typings.activexPowerpoint.activexPowerpointInts.`8421616`
+  - typings.activexPowerpoint.activexPowerpointInts.`13826810`
+  - typings.activexPowerpoint.activexPowerpointInts.`13882323`
+  - typings.activexPowerpoint.activexPowerpointInts.`9498256`
+  - typings.activexPowerpoint.activexPowerpointInts.`12695295`
+  - typings.activexPowerpoint.activexPowerpointInts.`8036607`
+  - typings.activexPowerpoint.activexPowerpointInts.`11186720`
+  - typings.activexPowerpoint.activexPowerpointInts.`16436871`
+  - typings.activexPowerpoint.activexPowerpointInts.`10061943`
+  - typings.activexPowerpoint.activexPowerpointInts.`14599344`
+  - typings.activexPowerpoint.activexPowerpointInts.`14745599`
+  - typings.activexPowerpoint.activexPowerpointInts.`65280`
+  - typings.activexPowerpoint.activexPowerpointInts.`3329330`
+  - typings.activexPowerpoint.activexPowerpointInts.`15134970`
+  - typings.activexPowerpoint.activexPowerpointInts.`128`
+  - typings.activexPowerpoint.activexPowerpointInts.`11206502`
+  - typings.activexPowerpoint.activexPowerpointInts.`13434880`
+  - typings.activexPowerpoint.activexPowerpointInts.`13850042`
+  - typings.activexPowerpoint.activexPowerpointInts.`14381203`
+  - typings.activexPowerpoint.activexPowerpointInts.`7451452`
+  - typings.activexPowerpoint.activexPowerpointInts.`15624315`
+  - typings.activexPowerpoint.activexPowerpointInts.`10156544`
+  - typings.activexPowerpoint.activexPowerpointInts.`13422920`
+  - typings.activexPowerpoint.activexPowerpointInts.`8721863`
+  - typings.activexPowerpoint.activexPowerpointInts.`7346457`
+  - typings.activexPowerpoint.activexPowerpointInts.`16449525`
+  - typings.activexPowerpoint.activexPowerpointInts.`14804223`
+  - typings.activexPowerpoint.activexPowerpointInts.`11920639`
+  - typings.activexPowerpoint.activexPowerpointInts.`11394815`
+  - typings.activexPowerpoint.activexPowerpointInts.`8388608`
+  - typings.activexPowerpoint.activexPowerpointInts.`15136253`
+  - typings.activexPowerpoint.activexPowerpointInts.`32896`
+  - typings.activexPowerpoint.activexPowerpointInts.`2330219`
+  - typings.activexPowerpoint.activexPowerpointInts.`42495`
+  - typings.activexPowerpoint.activexPowerpointInts.`17919`
+  - typings.activexPowerpoint.activexPowerpointInts.`14053594`
+  - typings.activexPowerpoint.activexPowerpointInts.`7071982`
+  - typings.activexPowerpoint.activexPowerpointInts.`10025880`
+  - typings.activexPowerpoint.activexPowerpointInts.`15658671`
+  - typings.activexPowerpoint.activexPowerpointInts.`9662683`
+  - typings.activexPowerpoint.activexPowerpointInts.`14020607`
+  - typings.activexPowerpoint.activexPowerpointInts.`12180223`
+  - typings.activexPowerpoint.activexPowerpointInts.`4163021`
+  - typings.activexPowerpoint.activexPowerpointInts.`13353215`
+  - typings.activexPowerpoint.activexPowerpointInts.`14524637`
+  - typings.activexPowerpoint.activexPowerpointInts.`15130800`
+  - typings.activexPowerpoint.activexPowerpointInts.`8388736`
+  - typings.activexPowerpoint.activexPowerpointInts.`255`
+  - typings.activexPowerpoint.activexPowerpointInts.`9408444`
+  - typings.activexPowerpoint.activexPowerpointInts.`14772545`
+  - typings.activexPowerpoint.activexPowerpointInts.`7504122`
+  - typings.activexPowerpoint.activexPowerpointInts.`6333684`
+  - typings.activexPowerpoint.activexPowerpointInts.`5737262`
+  - typings.activexPowerpoint.activexPowerpointInts.`15660543`
+  - typings.activexPowerpoint.activexPowerpointInts.`2970272`
+  - typings.activexPowerpoint.activexPowerpointInts.`12632256`
+  - typings.activexPowerpoint.activexPowerpointInts.`15453831`
+  - typings.activexPowerpoint.activexPowerpointInts.`13458026`
+  - typings.activexPowerpoint.activexPowerpointInts.`9470064`
+  - typings.activexPowerpoint.activexPowerpointInts.`16448255`
+  - typings.activexPowerpoint.activexPowerpointInts.`8388352`
+  - typings.activexPowerpoint.activexPowerpointInts.`11829830`
+  - typings.activexPowerpoint.activexPowerpointInts.`9221330`
+  - typings.activexPowerpoint.activexPowerpointInts.`8421376`
+  - typings.activexPowerpoint.activexPowerpointInts.`14204888`
+  - typings.activexPowerpoint.activexPowerpointInts.`4678655`
+  - typings.activexPowerpoint.activexPowerpointInts.`13688896`
+  - typings.activexPowerpoint.activexPowerpointInts.`15631086`
+  - typings.activexPowerpoint.activexPowerpointInts.`11788021`
+  - typings.activexPowerpoint.activexPowerpointInts.`16777215`
+  - typings.activexPowerpoint.activexPowerpointInts.`16119285`
+  - typings.activexPowerpoint.activexPowerpointInts.`65535`
+  - typings.activexPowerpoint.activexPowerpointInts.`3329434`
 */
 trait XlRgbColor extends StObject
 object XlRgbColor {

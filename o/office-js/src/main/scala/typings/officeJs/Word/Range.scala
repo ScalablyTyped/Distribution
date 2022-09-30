@@ -65,7 +65,7 @@ trait Range
   def compareLocationWith(range: Range): ClientResult[LocationRelation] = js.native
   
   /**
-    * Gets the collection of content control objects in the range. Read-only.
+    * Gets the collection of content control objects in the range.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -85,7 +85,7 @@ trait Range
   def delete(): Unit = js.native
   
   /**
-    * Gets the collection of endnotes in the range. Read-only.
+    * Gets the collection of endnotes in the range.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -93,7 +93,7 @@ trait Range
   val endnotes: NoteItemCollection = js.native
   
   /**
-    * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws an error if the two ranges do not have a union.
+    * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -103,7 +103,7 @@ trait Range
   def expandTo(range: Range): Range = js.native
   
   /**
-    * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Returns a null object if the two ranges do not have a union.
+    * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. If the two ranges do not have a union, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -113,7 +113,15 @@ trait Range
   def expandToOrNullObject(range: Range): Range = js.native
   
   /**
-    * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the collection of field objects in the range.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val fields: FieldCollection = js.native
+  
+  /**
+    * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -121,7 +129,7 @@ trait Range
   val font: Font = js.native
   
   /**
-    * Gets the collection of footnotes in the range. Read-only.
+    * Gets the collection of footnotes in the range.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -129,10 +137,24 @@ trait Range
   val footnotes: NoteItemCollection = js.native
   
   /**
+    * Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the underscore character.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param includeHidden Optional. Indicates whether to include hidden bookmarks. Default is false which indicates that the hidden bookmarks are excluded.
+    * @param includeAdjacent Optional. Indicates whether to include bookmarks that are adjacent to the range. Default is false which indicates that the adjacent bookmarks are excluded.
+    */
+  def getBookmarks(): ClientResult[js.Array[String]] = js.native
+  def getBookmarks(includeHidden: Boolean): ClientResult[js.Array[String]] = js.native
+  def getBookmarks(includeHidden: Boolean, includeAdjacent: Boolean): ClientResult[js.Array[String]] = js.native
+  def getBookmarks(includeHidden: Unit, includeAdjacent: Boolean): ClientResult[js.Array[String]] = js.native
+  
+  /**
     * Gets comments associated with the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     * @returns
     */
   def getComments(): CommentCollection = js.native
@@ -154,7 +176,7 @@ trait Range
   def getHyperlinkRanges(): RangeCollection = js.native
   
   /**
-    * Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range is the last one.
+    * Gets the next text range by using punctuation marks and/or other ending marks. Throws an `ItemNotFound` error if this text range is the last one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -166,7 +188,7 @@ trait Range
   def getNextTextRange(endingMarks: js.Array[String], trimSpacing: Boolean): Range = js.native
   
   /**
-    * Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text range is the last one.
+    * Gets the next text range by using punctuation marks and/or other ending marks. If this text range is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -205,7 +227,7 @@ trait Range
     * Gets reviewed text based on ChangeTrackingVersion selection.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     *
     * @param changeTrackingVersion Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
     */
@@ -234,12 +256,22 @@ trait Range
   var hyperlink: String = js.native
   
   /**
-    * Gets the collection of inline picture objects in the range. Read-only.
+    * Gets the collection of inline picture objects in the range.
     *
     * @remarks
     * [Api set: WordApi 1.2]
     */
   val inlinePictures: InlinePictureCollection = js.native
+  
+  /**
+    * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param name Required. The bookmark name, which is case-insensitive. If the name starts with an underscore character, the bookmark is an hidden one.
+    */
+  def insertBookmark(name: String): Unit = js.native
   
   def insertBreak(
     breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
@@ -270,7 +302,7 @@ trait Range
     * Insert a comment on the range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     *
     * @param commentText Required. The comment text to be inserted.
     * @returns comment object
@@ -297,6 +329,11 @@ trait Range
   def insertEndnote(insertText: String): NoteItem = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End | Before | After): Range = js.native
+  def insertFileFromBase64(
+    base64File: String,
+    insertLocation: Replace | Start | End | Before | After,
+    asNewParagraph: Boolean
+  ): Range = js.native
   /**
     * Inserts a document at the specified location.
     *
@@ -305,8 +342,10 @@ trait Range
     *
     * @param base64File Required. The base64 encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: InsertLocation): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: InsertLocation, asNewParagraph: Boolean): Range = js.native
   
   /**
     * Inserts a footnote. The footnote reference is placed after the range.
@@ -344,6 +383,7 @@ trait Range
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: InsertLocation): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End | Before | After): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End | Before | After, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML at the specified location.
     *
@@ -352,8 +392,10 @@ trait Range
     *
     * @param ooxml Required. The OOXML to be inserted.
     * @param insertLocation Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: InsertLocation): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: InsertLocation, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Before | After): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: typings.officeJs.Word.InsertLocation.after): Paragraph = js.native
@@ -409,7 +451,7 @@ trait Range
   def insertText(text: String, insertLocation: InsertLocation): Range = js.native
   
   /**
-    * Returns a new range as the intersection of this range with another range. This range is not changed. Throws an error if the two ranges are not overlapped or adjacent.
+    * Returns a new range as the intersection of this range with another range. This range is not changed. Throws an `ItemNotFound` error if the two ranges are not overlapped or adjacent.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -419,7 +461,7 @@ trait Range
   def intersectWith(range: Range): Range = js.native
   
   /**
-    * Returns a new range as the intersection of this range with another range. This range is not changed. Returns a null object if the two ranges are not overlapped or adjacent.
+    * Returns a new range as the intersection of this range with another range. This range is not changed. If the two ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -429,7 +471,7 @@ trait Range
   def intersectWithOrNullObject(range: Range): Range = js.native
   
   /**
-    * Checks whether the range length is zero. Read-only.
+    * Checks whether the range length is zero.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -437,7 +479,7 @@ trait Range
   val isEmpty: Boolean = js.native
   
   /**
-    * Gets the collection of list objects in the range. Read-only.
+    * Gets the collection of list objects in the range.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -456,7 +498,7 @@ trait Range
   def load(propertyNames: js.Array[String]): Range = js.native
   
   /**
-    * Gets the collection of paragraph objects in the range. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+    * Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -464,7 +506,7 @@ trait Range
   val paragraphs: ParagraphCollection = js.native
   
   /**
-    * Gets the parent body of the range. Read-only.
+    * Gets the parent body of the range.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -472,7 +514,7 @@ trait Range
   val parentBody: Body = js.native
   
   /**
-    * Gets the content control that contains the range. Throws an error if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -480,7 +522,7 @@ trait Range
   val parentContentControl: ContentControl = js.native
   
   /**
-    * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -488,7 +530,7 @@ trait Range
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    * Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.
+    * Gets the table that contains the range. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -496,7 +538,7 @@ trait Range
   val parentTable: Table = js.native
   
   /**
-    * Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the range. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -504,7 +546,7 @@ trait Range
   val parentTableCell: TableCell = js.native
   
   /**
-    * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -512,7 +554,7 @@ trait Range
   val parentTableCellOrNullObject: TableCell = js.native
   
   /**
-    * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
+    * Gets the table that contains the range. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -596,7 +638,7 @@ trait Range
   var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ Any = js.native
   
   /**
-    * Gets the collection of table objects in the range. Read-only.
+    * Gets the collection of table objects in the range.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -604,7 +646,7 @@ trait Range
   val tables: TableCollection = js.native
   
   /**
-    * Gets the text of the range. Read-only.
+    * Gets the text of the range.
     *
     * @remarks
     * [Api set: WordApi 1.1]

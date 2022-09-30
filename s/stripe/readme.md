@@ -1,7 +1,7 @@
 
 # Scala.js typings for stripe
 
-Typings are for version 10.10.0
+Typings are for version 10.12.0
 
 ## Library description:
 Stripe API wrapper

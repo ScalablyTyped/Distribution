@@ -207,7 +207,7 @@ object typesMod {
   
   inline def enumtype(values: StringDictionary[String | Double]): TEnumType = ^.asInstanceOf[js.Dynamic].applyDynamic("enumtype")(values.asInstanceOf[js.Any]).asInstanceOf[TEnumType]
   
-  inline def func(resultSpec: TypeSpec, params: TParam*): TFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(List(resultSpec.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TFunc]
+  inline def func(resultSpec: TypeSpec, params: TParam*): TFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(scala.List(resultSpec.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TFunc]
   
   inline def iface(bases: js.Array[String], props: StringDictionary[TOptional | TypeSpec]): TIface = (^.asInstanceOf[js.Dynamic].applyDynamic("iface")(bases.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[TIface]
   

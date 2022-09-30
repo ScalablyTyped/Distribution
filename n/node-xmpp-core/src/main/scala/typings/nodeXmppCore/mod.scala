@@ -128,9 +128,9 @@ object mod {
     var `type`: String = js.native
   }
   
-  inline def createElement(name: String, attrs: String, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
-  inline def createElement(name: String, attrs: StringDictionary[Any], children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
-  inline def createElement(name: String, attrs: Unit, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: String, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: StringDictionary[Any], children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: Unit, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
   
   inline def createStanza(name: String): typings.ltx.mod.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createStanza")(name.asInstanceOf[js.Any]).asInstanceOf[typings.ltx.mod.Element]
   inline def createStanza(name: String, attrs: Any): typings.ltx.mod.Element = (^.asInstanceOf[js.Dynamic].applyDynamic("createStanza")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[typings.ltx.mod.Element]

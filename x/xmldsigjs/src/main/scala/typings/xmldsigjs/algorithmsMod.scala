@@ -28,22 +28,22 @@ object algorithmsMod {
   
   @JSImport("xmldsigjs/build/types/algorithms", "EcdsaSha1")
   @js.native
-  class EcdsaSha1 ()
+  open class EcdsaSha1 ()
     extends typings.xmldsigjs.ecdsaSignMod.EcdsaSha1
   
   @JSImport("xmldsigjs/build/types/algorithms", "EcdsaSha256")
   @js.native
-  class EcdsaSha256 ()
+  open class EcdsaSha256 ()
     extends typings.xmldsigjs.ecdsaSignMod.EcdsaSha256
   
   @JSImport("xmldsigjs/build/types/algorithms", "EcdsaSha384")
   @js.native
-  class EcdsaSha384 ()
+  open class EcdsaSha384 ()
     extends typings.xmldsigjs.ecdsaSignMod.EcdsaSha384
   
   @JSImport("xmldsigjs/build/types/algorithms", "EcdsaSha512")
   @js.native
-  class EcdsaSha512 ()
+  open class EcdsaSha512 ()
     extends typings.xmldsigjs.ecdsaSignMod.EcdsaSha512
   
   @JSImport("xmldsigjs/build/types/algorithms", "HMAC")
@@ -68,22 +68,22 @@ object algorithmsMod {
   
   @JSImport("xmldsigjs/build/types/algorithms", "HmacSha1")
   @js.native
-  class HmacSha1 ()
+  open class HmacSha1 ()
     extends typings.xmldsigjs.hmacSignMod.HmacSha1
   
   @JSImport("xmldsigjs/build/types/algorithms", "HmacSha256")
   @js.native
-  class HmacSha256 ()
+  open class HmacSha256 ()
     extends typings.xmldsigjs.hmacSignMod.HmacSha256
   
   @JSImport("xmldsigjs/build/types/algorithms", "HmacSha384")
   @js.native
-  class HmacSha384 ()
+  open class HmacSha384 ()
     extends typings.xmldsigjs.hmacSignMod.HmacSha384
   
   @JSImport("xmldsigjs/build/types/algorithms", "HmacSha512")
   @js.native
-  class HmacSha512 ()
+  open class HmacSha512 ()
     extends typings.xmldsigjs.hmacSignMod.HmacSha512
   
   @JSImport("xmldsigjs/build/types/algorithms", "RSA_PKCS1")
@@ -132,82 +132,82 @@ object algorithmsMod {
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPkcs1Sha1")
   @js.native
-  class RsaPkcs1Sha1 ()
+  open class RsaPkcs1Sha1 ()
     extends typings.xmldsigjs.rsaPkcs1SignMod.RsaPkcs1Sha1
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPkcs1Sha256")
   @js.native
-  class RsaPkcs1Sha256 ()
+  open class RsaPkcs1Sha256 ()
     extends typings.xmldsigjs.rsaPkcs1SignMod.RsaPkcs1Sha256
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPkcs1Sha384")
   @js.native
-  class RsaPkcs1Sha384 ()
+  open class RsaPkcs1Sha384 ()
     extends typings.xmldsigjs.rsaPkcs1SignMod.RsaPkcs1Sha384
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPkcs1Sha512")
   @js.native
-  class RsaPkcs1Sha512 ()
+  open class RsaPkcs1Sha512 ()
     extends typings.xmldsigjs.rsaPkcs1SignMod.RsaPkcs1Sha512
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssBase")
   @js.native
-  class RsaPssBase ()
+  open class RsaPssBase ()
     extends typings.xmldsigjs.rsaPssSignMod.RsaPssBase {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssSha1")
   @js.native
-  class RsaPssSha1 ()
+  open class RsaPssSha1 ()
     extends typings.xmldsigjs.rsaPssSignMod.RsaPssSha1 {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssSha256")
   @js.native
-  class RsaPssSha256 ()
+  open class RsaPssSha256 ()
     extends typings.xmldsigjs.rsaPssSignMod.RsaPssSha256 {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssSha384")
   @js.native
-  class RsaPssSha384 ()
+  open class RsaPssSha384 ()
     extends typings.xmldsigjs.rsaPssSignMod.RsaPssSha384 {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssSha512")
   @js.native
-  class RsaPssSha512 ()
+  open class RsaPssSha512 ()
     extends typings.xmldsigjs.rsaPssSignMod.RsaPssSha512 {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssWithoutParamsBase")
   @js.native
-  class RsaPssWithoutParamsBase ()
+  open class RsaPssWithoutParamsBase ()
     extends typings.xmldsigjs.rsaPssWithoutParamsSignMod.RsaPssWithoutParamsBase
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssWithoutParamsSha1")
   @js.native
-  class RsaPssWithoutParamsSha1 ()
+  open class RsaPssWithoutParamsSha1 ()
     extends typings.xmldsigjs.rsaPssWithoutParamsSignMod.RsaPssWithoutParamsSha1
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssWithoutParamsSha256")
   @js.native
-  class RsaPssWithoutParamsSha256 ()
+  open class RsaPssWithoutParamsSha256 ()
     extends typings.xmldsigjs.rsaPssWithoutParamsSignMod.RsaPssWithoutParamsSha256
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssWithoutParamsSha384")
   @js.native
-  class RsaPssWithoutParamsSha384 ()
+  open class RsaPssWithoutParamsSha384 ()
     extends typings.xmldsigjs.rsaPssWithoutParamsSignMod.RsaPssWithoutParamsSha384
   
   @JSImport("xmldsigjs/build/types/algorithms", "RsaPssWithoutParamsSha512")
   @js.native
-  class RsaPssWithoutParamsSha512 ()
+  open class RsaPssWithoutParamsSha512 ()
     extends typings.xmldsigjs.rsaPssWithoutParamsSignMod.RsaPssWithoutParamsSha512
   
   @JSImport("xmldsigjs/build/types/algorithms", "SHA1")
@@ -244,21 +244,21 @@ object algorithmsMod {
   
   @JSImport("xmldsigjs/build/types/algorithms", "Sha1")
   @js.native
-  class Sha1 ()
+  open class Sha1 ()
     extends typings.xmldsigjs.rsaHashMod.Sha1
   
   @JSImport("xmldsigjs/build/types/algorithms", "Sha256")
   @js.native
-  class Sha256 ()
+  open class Sha256 ()
     extends typings.xmldsigjs.rsaHashMod.Sha256
   
   @JSImport("xmldsigjs/build/types/algorithms", "Sha384")
   @js.native
-  class Sha384 ()
+  open class Sha384 ()
     extends typings.xmldsigjs.rsaHashMod.Sha384
   
   @JSImport("xmldsigjs/build/types/algorithms", "Sha512")
   @js.native
-  class Sha512 ()
+  open class Sha512 ()
     extends typings.xmldsigjs.rsaHashMod.Sha512
 }

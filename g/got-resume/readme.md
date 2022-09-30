@@ -1,7 +1,7 @@
 
 # Scala.js typings for got-resume
 
-Typings are for version 1.4
+Typings are for version 2.0
 
 ## Library description:
 Fetch via HTTP/HTTPS using got with automatic resume after network failures
@@ -10,10 +10,10 @@ Fetch via HTTP/HTTPS using got with automatic resume after network failures
 | ------------------ | :-------------: |
 | Full name          | got-resume |
 | Keywords           | download, resume, stream, http, https, got, url, get, fetch |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 540 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 208.66666666666666 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/overlookmotel/got-resume#readme)

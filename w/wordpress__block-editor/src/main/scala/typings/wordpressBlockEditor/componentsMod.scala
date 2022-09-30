@@ -17,19 +17,18 @@ import typings.wordpressBlockEditor.anon.PickEditorColorcolor
 import typings.wordpressBlockEditor.mod.EditorColor
 import typings.wordpressBlockEditor.mod.EditorFontSize
 import typings.wordpressBlockEditor.richTextMod.RichText.ContentProps
+import typings.wordpressBlockEditor.useBlockPropsMod.UseBlockProps_
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`object`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`var`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.a
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.abbr
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.address
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.applet
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.area
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.article
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.aside
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.audio
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.b
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.base
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.basefont
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.bdi
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.bdo
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.blockquote
@@ -50,7 +49,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.del
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.details
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dfn
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dialog
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dir
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.disableCustomColors
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.div
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dl
@@ -60,11 +58,8 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.embed
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.fieldset
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.figcaption
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.figure
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.font
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.footer
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.form
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.frame
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.frameset
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h1
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h2
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h3
@@ -90,7 +85,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.link
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.main
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.map
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.mark
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.marquee
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.menu
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.meta
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.meter
@@ -101,7 +95,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.optgroup
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.option
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.output
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.p
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.param
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.picture
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.pre
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.progress
@@ -248,9 +241,9 @@ object componentsMod {
     typings.wordpressBlockEditor.blockVerticalAlignmentToolbarMod.BlockVerticalAlignmentToolbar.Props
   ] = js.native
   
-  @JSImport("@wordpress/block-editor/components", "ButtonBlockerAppender")
+  @JSImport("@wordpress/block-editor/components", "ButtonBlockAppender")
   @js.native
-  val ButtonBlockerAppender: ComponentType[typings.wordpressBlockEditor.buttonBlockAppenderMod.ButtonBlockAppender.Props] = js.native
+  val ButtonBlockAppender: ComponentType[typings.wordpressBlockEditor.buttonBlockAppenderMod.ButtonBlockAppender.Props] = js.native
   
   @JSImport("@wordpress/block-editor/components", "ColorPalette")
   @js.native
@@ -284,10 +277,10 @@ object componentsMod {
       * display a `+` (plus) icon button that, when clicked, displays the block picker menu. No
       * default Block is inserted.
       */
-    @JSImport("@wordpress/block-editor/components", "InnerBlocks.ButtonBlockerAppender")
+    @JSImport("@wordpress/block-editor/components", "InnerBlocks.ButtonBlockAppender")
     @js.native
-    def ButtonBlockerAppender: ComponentType[Children] = js.native
-    inline def ButtonBlockerAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ButtonBlockerAppender")(x.asInstanceOf[js.Any])
+    def ButtonBlockAppender: ComponentType[Children] = js.native
+    inline def ButtonBlockAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ButtonBlockAppender")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/block-editor/components", "InnerBlocks.Content")
     @js.native
@@ -380,7 +373,7 @@ object componentsMod {
     
     inline def apply(
       props: typings.wordpressBlockEditor.richTextMod.RichText.Props[
-          a | abbr | address | applet | area | article | aside | audio | b | base | basefont | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | dir | div | dl | dt | em | embed | fieldset | figcaption | figure | font | footer | form | frame | frameset | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | marquee | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | param | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
+          a | abbr | address | area | article | aside | audio | b | base | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | div | dl | dt | em | embed | fieldset | figcaption | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
         ]
     ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -397,8 +390,6 @@ object componentsMod {
     
     inline def Content_address(props: ContentProps[address]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_applet(props: ContentProps[applet]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_area(props: ContentProps[area]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_article(props: ContentProps[article]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -410,8 +401,6 @@ object componentsMod {
     inline def Content_b(props: ContentProps[b]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_base(props: ContentProps[base]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_basefont(props: ContentProps[basefont]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_bdi(props: ContentProps[bdi]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -451,8 +440,6 @@ object componentsMod {
     
     inline def Content_dialog(props: ContentProps[dialog]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_dir(props: ContentProps[dir]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_div(props: ContentProps[div]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_dl(props: ContentProps[dl]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -469,15 +456,9 @@ object componentsMod {
     
     inline def Content_figure(props: ContentProps[figure]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_font(props: ContentProps[font]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_footer(props: ContentProps[footer]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_form(props: ContentProps[form]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_frame(props: ContentProps[frame]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_frameset(props: ContentProps[frameset]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_h1(props: ContentProps[h1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -527,8 +508,6 @@ object componentsMod {
     
     inline def Content_mark(props: ContentProps[mark]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_marquee(props: ContentProps[marquee]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_menu(props: ContentProps[menu]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_meta(props: ContentProps[meta]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -550,8 +529,6 @@ object componentsMod {
     inline def Content_output(props: ContentProps[output]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_p(props: ContentProps[p]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_param(props: ContentProps[param]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_picture(props: ContentProps[picture]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -667,10 +644,10 @@ object componentsMod {
   
   inline def createCustomColorsHOC[T /* <: js.Array[String] */](colorsArray: js.Array[EditorColor]): js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomColorsHOC")(colorsArray.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ]]
   
   inline def getColorClassName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")().asInstanceOf[js.UndefOr[String]]
@@ -691,19 +668,23 @@ object componentsMod {
   
   inline def getFontSizeClass(fontSizeSlug: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontSizeClass")(fontSizeSlug.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  @JSImport("@wordpress/block-editor/components", "useBlockProps")
+  @js.native
+  val useBlockProps: UseBlockProps_ = js.native
+  
   // prettier-ignore
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ]]
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ]]
   
-  inline def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColors")(colorTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColors")(colorTypes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
   
-  inline def withFontSizes(attributeNames: String*): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFontSizes")(attributeNames.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def withFontSizes(attributeNames: String*): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFontSizes")(attributeNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AxiosAdapter = js.Function1[/* config */ AxiosRequestConfig[Any], AxiosPromise[Any]]
+type AxiosAdapter = js.Function1[/* config */ AxiosRequestConfig[Any], js.Promise[AxiosResponse[Any, Any]]]
 
 type AxiosPromise[T] = js.Promise[AxiosResponse[T, Any]]
 

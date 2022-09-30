@@ -268,7 +268,7 @@ object DrawOptions {
       * This is the FeatureGroup that stores all editable shapes
       * THIS IS REQUIRED FOR THE EDIT TOOLBAR TO WORK
       */
-    var featureGroup: FeatureGroup_[js.Any]
+    var featureGroup: FeatureGroup_[Any]
     
     /**
       * Set polygon editing options
@@ -278,16 +278,16 @@ object DrawOptions {
     /**
       * Delete handler options. Set to false to disable handler.
       */
-    var remove: js.Any
+    var remove: Any
   }
   object EditPolyOptions {
     
     inline def apply(
       allowIntersection: Boolean,
       edit: EditHandlerOptions,
-      featureGroup: FeatureGroup_[js.Any],
+      featureGroup: FeatureGroup_[Any],
       poly: EditPolyOptions,
-      remove: js.Any
+      remove: Any
     ): EditPolyOptions = {
       val __obj = js.Dynamic.literal(allowIntersection = allowIntersection.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], featureGroup = featureGroup.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditPolyOptions]
@@ -299,11 +299,11 @@ object DrawOptions {
       
       inline def setEdit(value: EditHandlerOptions): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      inline def setFeatureGroup(value: FeatureGroup_[js.Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
+      inline def setFeatureGroup(value: FeatureGroup_[Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
       
       inline def setPoly(value: EditPolyOptions): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
       
-      inline def setRemove(value: js.Any): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Any): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     }
   }
   

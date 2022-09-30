@@ -18,7 +18,7 @@ object unitsMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
-  - typings.mendixmodelsdk.unitsMod.IAbstractUnit because var conflicts: container, id, isLoaded, model, structureTypeName, unit. Inlined isLoadable, isReadOnly */ @JSImport("mendixmodelsdk/dist/sdk/internal/units", "AbstractUnit")
+  - typings.mendixmodelsdk.unitsMod.IAbstractUnit because var conflicts: container, id, isLoaded, model, structureTypeName, unit. Inlined isLoadable, isReadOnly */ @JSImport("mendixmodelsdk/src/sdk/internal/units", "AbstractUnit")
   @js.native
   abstract class AbstractUnit[TModel /* <: IAbstractModel */] protected () extends Structure[TModel, StructuralUnit[IAbstractModel]] {
     def this(
@@ -58,7 +58,7 @@ object unitsMod {
   - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
   - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
   - typings.mendixmodelsdk.unitsMod.IAbstractUnit because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined isLoadable, isReadOnly
-  - typings.mendixmodelsdk.unitsMod.IModelUnit because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/sdk/internal/units", "ModelUnit")
+  - typings.mendixmodelsdk.unitsMod.IModelUnit because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/sdk/internal/units", "ModelUnit")
   @js.native
   abstract class ModelUnit[TModel /* <: IAbstractModel */] protected () extends AbstractElement[TModel, StructuralUnit[IAbstractModel]] {
     def this(model: AbstractModel, structureTypeName: String, id: String, isPartial: Boolean) = this()
@@ -94,7 +94,7 @@ object unitsMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
   - typings.mendixmodelsdk.unitsMod.IAbstractUnit because Already inherited
-  - typings.mendixmodelsdk.unitsMod.IStructuralUnit because var conflicts: id, isLoadable, isLoaded, isReadOnly, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/sdk/internal/units", "StructuralUnit")
+  - typings.mendixmodelsdk.unitsMod.IStructuralUnit because var conflicts: id, isLoadable, isLoaded, isReadOnly, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/sdk/internal/units", "StructuralUnit")
   @js.native
   abstract class StructuralUnit[TModel /* <: IAbstractModel */] protected ()
     extends AbstractUnit[TModel]
@@ -139,20 +139,20 @@ object unitsMod {
   object IAbstractUnit {
     
     inline def apply(
-      allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      allProperties: () => js.Array[AbstractProperty[Any, Any]],
       container: IStructuralUnit,
       delete: () => Unit,
       id: String,
       isLoadable: Boolean,
       isLoaded: Boolean,
       isReadOnly: Boolean,
-      loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      loadedProperties: () => js.Array[AbstractProperty[Any, Any]],
       model: IAbstractModel,
-      publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      publicProperties: () => js.Array[AbstractProperty[Any, Any]],
       structureTypeName: String,
       toJSON: () => js.Object,
       traverse: js.Function1[IAbstractUnit, Unit] => Unit,
-      traverseFind: js.Function1[IAbstractUnit, js.Any] => js.Any | Null,
+      traverseFind: js.Function1[IAbstractUnit, Any] => Any | Null,
       traversePublicParts: js.Function1[IAbstractUnit, Unit] => Unit,
       unit: IAbstractUnit
     ): IAbstractUnit = {
@@ -176,20 +176,22 @@ object unitsMod {
   trait IAbstractUnitConstructor
     extends StObject
        with Instantiable1[
-          /* args (repeated) */ js.Any, 
+          /* args (repeated) */ Any, 
           ModelUnit[IAbstractModel] | StructuralUnit[IAbstractModel]
         ]
        with InstanceConstructor
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
-  - typings.mendixmodelsdk.elementsMod.IAbstractElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded */ @js.native
+  - typings.mendixmodelsdk.elementsMod.IAbstractElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded, findElementById */ @js.native
   trait IModelUnit
     extends StObject
        with IAbstractUnit
        with IContainer {
     
     def asLoaded(): IAbstractElement = js.native
+    
+    def findElementById(id: String): IAbstractElement | Null = js.native
     
     def load(): js.Promise[IAbstractElement] = js.native
     def load(callback: js.Function1[/* element */ this.type, Unit]): Unit = js.native
@@ -204,20 +206,20 @@ object unitsMod {
   object IStructuralUnit {
     
     inline def apply(
-      allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      allProperties: () => js.Array[AbstractProperty[Any, Any]],
       container: IStructuralUnit,
       delete: () => Unit,
       id: String,
       isLoadable: Boolean,
       isLoaded: Boolean,
       isReadOnly: Boolean,
-      loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      loadedProperties: () => js.Array[AbstractProperty[Any, Any]],
       model: IAbstractModel,
-      publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      publicProperties: () => js.Array[AbstractProperty[Any, Any]],
       structureTypeName: String,
       toJSON: () => js.Object,
       traverse: js.Function1[IStructuralUnit, Unit] => Unit,
-      traverseFind: js.Function1[IStructuralUnit, js.Any] => js.Any | Null,
+      traverseFind: js.Function1[IStructuralUnit, Any] => Any | Null,
       traversePublicParts: js.Function1[IStructuralUnit, Unit] => Unit,
       unit: IAbstractUnit
     ): IStructuralUnit = {

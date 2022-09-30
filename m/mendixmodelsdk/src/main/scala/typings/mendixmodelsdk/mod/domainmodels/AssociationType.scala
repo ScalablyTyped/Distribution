@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.AssociationType")
 @js.native
-class AssociationType protected ()
+open class AssociationType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AssociationType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

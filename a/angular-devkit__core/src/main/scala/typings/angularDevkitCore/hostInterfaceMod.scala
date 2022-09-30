@@ -1,9 +1,9 @@
 package typings.angularDevkitCore
 
-import typings.angularDevkitCore.angularDevkitCoreNumbers.`0`
-import typings.angularDevkitCore.angularDevkitCoreNumbers.`1`
-import typings.angularDevkitCore.angularDevkitCoreNumbers.`2`
-import typings.angularDevkitCore.angularDevkitCoreNumbers.`3`
+import typings.angularDevkitCore.angularDevkitCoreInts.`0`
+import typings.angularDevkitCore.angularDevkitCoreInts.`1`
+import typings.angularDevkitCore.angularDevkitCoreInts.`2`
+import typings.angularDevkitCore.angularDevkitCoreInts.`3`
 import typings.angularDevkitCore.anon.Atime
 import typings.angularDevkitCore.pathMod.Path_
 import typings.std.ArrayBufferLike
@@ -76,10 +76,10 @@ object hostInterfaceMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitCore.angularDevkitCoreNumbers.`0`
-    - typings.angularDevkitCore.angularDevkitCoreNumbers.`1`
-    - typings.angularDevkitCore.angularDevkitCoreNumbers.`2`
-    - typings.angularDevkitCore.angularDevkitCoreNumbers.`3`
+    - typings.angularDevkitCore.angularDevkitCoreInts.`0`
+    - typings.angularDevkitCore.angularDevkitCoreInts.`1`
+    - typings.angularDevkitCore.angularDevkitCoreInts.`2`
+    - typings.angularDevkitCore.angularDevkitCoreInts.`3`
   */
   trait HostWatchEventType extends StObject
   object HostWatchEventType {

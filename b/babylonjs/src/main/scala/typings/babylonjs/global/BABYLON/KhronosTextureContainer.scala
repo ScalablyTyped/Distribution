@@ -114,9 +114,7 @@ open class KhronosTextureContainer protected ()
   /**
     * Uploads KTX content to a Babylon Texture.
     * It is assumed that the texture has already been created & is currently bound
-    * @param texture
-    * @param loadMipmaps
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def uploadLevels(texture: typings.babylonjs.BABYLON.InternalTexture, loadMipmaps: Boolean): Unit = js.native

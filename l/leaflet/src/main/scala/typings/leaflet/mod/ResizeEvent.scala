@@ -15,15 +15,16 @@ trait ResizeEvent
 object ResizeEvent {
   
   inline def apply(
-    layer: js.Any,
+    layer: Any,
     newSize: Point_,
     oldSize: Point_,
-    propagatedFrom: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
+    popup: Any,
+    propagatedFrom: Any,
+    sourceTarget: Any,
+    target: Any,
     `type`: String
   ): ResizeEvent = {
-    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], newSize = newSize.asInstanceOf[js.Any], oldSize = oldSize.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], newSize = newSize.asInstanceOf[js.Any], oldSize = oldSize.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeEvent]
   }

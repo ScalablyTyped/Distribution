@@ -11,9 +11,9 @@ Removes the need to move the map to be able to see the content of a L.Popup
 | Full name          | leaflet-responsive-popup |
 | Keywords           | leaflet, popup |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 372730 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 47386.0 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/yafred/leaflet-responsive-popup#readme)

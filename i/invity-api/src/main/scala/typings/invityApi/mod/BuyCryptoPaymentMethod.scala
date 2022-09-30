@@ -17,6 +17,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.poli
   - typings.invityApi.invityApiStrings.dcinterac
   - typings.invityApi.invityApiStrings.applePay
+  - typings.invityApi.invityApiStrings.paynow
+  - typings.invityApi.invityApiStrings.fps
+  - typings.invityApi.invityApiStrings.promptpay
+  - typings.invityApi.invityApiStrings.instapay
+  - typings.invityApi.invityApiStrings.upi
+  - typings.invityApi.invityApiStrings.gojekid
+  - typings.invityApi.invityApiStrings.viettelpay
+  - typings.invityApi.invityApiStrings.duitnow
+  - typings.invityApi.invityApiStrings.payid
+  - typings.invityApi.invityApiStrings.toss
 */
 trait BuyCryptoPaymentMethod extends StObject
 object BuyCryptoPaymentMethod {
@@ -35,13 +45,33 @@ object BuyCryptoPaymentMethod {
   
   inline def dcinterac: typings.invityApi.invityApiStrings.dcinterac = "dcinterac".asInstanceOf[typings.invityApi.invityApiStrings.dcinterac]
   
+  inline def duitnow: typings.invityApi.invityApiStrings.duitnow = "duitnow".asInstanceOf[typings.invityApi.invityApiStrings.duitnow]
+  
   inline def eps: typings.invityApi.invityApiStrings.eps = "eps".asInstanceOf[typings.invityApi.invityApiStrings.eps]
+  
+  inline def fps: typings.invityApi.invityApiStrings.fps = "fps".asInstanceOf[typings.invityApi.invityApiStrings.fps]
   
   inline def giropay: typings.invityApi.invityApiStrings.giropay = "giropay".asInstanceOf[typings.invityApi.invityApiStrings.giropay]
   
+  inline def gojekid: typings.invityApi.invityApiStrings.gojekid = "gojekid".asInstanceOf[typings.invityApi.invityApiStrings.gojekid]
+  
   inline def iDeal: typings.invityApi.invityApiStrings.iDeal = "iDeal".asInstanceOf[typings.invityApi.invityApiStrings.iDeal]
+  
+  inline def instapay: typings.invityApi.invityApiStrings.instapay = "instapay".asInstanceOf[typings.invityApi.invityApiStrings.instapay]
+  
+  inline def payid: typings.invityApi.invityApiStrings.payid = "payid".asInstanceOf[typings.invityApi.invityApiStrings.payid]
+  
+  inline def paynow: typings.invityApi.invityApiStrings.paynow = "paynow".asInstanceOf[typings.invityApi.invityApiStrings.paynow]
   
   inline def poli: typings.invityApi.invityApiStrings.poli = "poli".asInstanceOf[typings.invityApi.invityApiStrings.poli]
   
+  inline def promptpay: typings.invityApi.invityApiStrings.promptpay = "promptpay".asInstanceOf[typings.invityApi.invityApiStrings.promptpay]
+  
   inline def sofort: typings.invityApi.invityApiStrings.sofort = "sofort".asInstanceOf[typings.invityApi.invityApiStrings.sofort]
+  
+  inline def toss: typings.invityApi.invityApiStrings.toss = "toss".asInstanceOf[typings.invityApi.invityApiStrings.toss]
+  
+  inline def upi: typings.invityApi.invityApiStrings.upi = "upi".asInstanceOf[typings.invityApi.invityApiStrings.upi]
+  
+  inline def viettelpay: typings.invityApi.invityApiStrings.viettelpay = "viettelpay".asInstanceOf[typings.invityApi.invityApiStrings.viettelpay]
 }

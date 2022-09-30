@@ -52,10 +52,10 @@ object mod {
     
     var Random: MockjsRandom
     
-    def mock(rurl: js.RegExp, rtype: S, template: Any): Mockjs
-    def mock(rurl: js.RegExp, template: Any): Mockjs
-    def mock(rurl: S, rtype: S, template: Any): Mockjs
-    def mock(rurl: S, template: Any): Mockjs
+    def mock(rurl: js.RegExp, rtype: S, template: templateOrFn): Mockjs
+    def mock(rurl: js.RegExp, template: templateOrFn): Mockjs
+    def mock(rurl: S, rtype: S, template: templateOrFn): Mockjs
+    def mock(rurl: S, template: templateOrFn): Mockjs
     def mock(template: Any): Any
     @JSName("mock")
     var mock_Original: MockjsMock
@@ -109,10 +109,10 @@ object mod {
   @js.native
   trait MockjsMock extends StObject {
     
-    def apply(rurl: js.RegExp, rtype: S, template: Any): Mockjs = js.native
-    def apply(rurl: js.RegExp, template: Any): Mockjs = js.native
-    def apply(rurl: S, rtype: S, template: Any): Mockjs = js.native
-    def apply(rurl: S, template: Any): Mockjs = js.native
+    def apply(rurl: js.RegExp, rtype: S, template: templateOrFn): Mockjs = js.native
+    def apply(rurl: js.RegExp, template: templateOrFn): Mockjs = js.native
+    def apply(rurl: S, rtype: S, template: templateOrFn): Mockjs = js.native
+    def apply(rurl: S, template: templateOrFn): Mockjs = js.native
     def apply(template: Any): Any = js.native
   }
   
@@ -529,6 +529,32 @@ object mod {
     def url(protocol: S, host: S): S = js.native
   }
   
+  trait MockjsRequestOptions extends StObject {
+    
+    var body: Any
+    
+    var `type`: String
+    
+    var url: String
+  }
+  object MockjsRequestOptions {
+    
+    inline def apply(body: Any, `type`: String, url: String): MockjsRequestOptions = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MockjsRequestOptions]
+    }
+    
+    extension [Self <: MockjsRequestOptions](x: Self) {
+      
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
   // Mockjs.setup()
   // see https://github.com/nuysoft/Mock/wiki/Mock.setup()
   type MockjsSetup = js.Function1[/* settings */ MockjsSetupSettings, Unit]
@@ -750,4 +776,6 @@ object mod {
   }
   
   type S = String
+  
+  type templateOrFn = (js.Function1[/* options */ MockjsRequestOptions, Any]) | js.Object
 }

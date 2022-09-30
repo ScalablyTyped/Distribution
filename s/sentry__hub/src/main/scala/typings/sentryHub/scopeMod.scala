@@ -15,6 +15,7 @@ import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.severityMod.SeverityLevel
 import typings.sentryTypes.spanMod.Span
 import typings.sentryTypes.userMod.User
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,13 +59,13 @@ object scopeMod {
     /** Severity */
     /* protected */ var _level: js.UndefOr[Severity | SeverityLevel] = js.native
     
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint, index: Double): js.Thenable[Event | Null] = js.native
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint): PromiseLike[Event | Null] = js.native
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint, index: Double): PromiseLike[Event | Null] = js.native
     /**
       * This will be called after {@link applyToEvent} is finished.
       */
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint, index: Double): js.Thenable[Event | Null] = js.native
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint): PromiseLike[Event | Null] = js.native
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint, index: Double): PromiseLike[Event | Null] = js.native
     
     /**
       * This will be called on every set call.
@@ -114,8 +115,8 @@ object scopeMod {
       * @param hint Object containing additional information about the original exception, for use by the event processors.
       * @hidden
       */
-    def applyToEvent(event: Event): js.Thenable[Event | Null] = js.native
-    def applyToEvent(event: Event, hint: EventHint): js.Thenable[Event | Null] = js.native
+    def applyToEvent(event: Event): PromiseLike[Event | Null] = js.native
+    def applyToEvent(event: Event, hint: EventHint): PromiseLike[Event | Null] = js.native
     
     /**
       * Add data which will be accessible during event processing but won't get sent to Sentry

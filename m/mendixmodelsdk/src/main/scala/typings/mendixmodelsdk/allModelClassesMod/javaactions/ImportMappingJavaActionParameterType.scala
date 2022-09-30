@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.21.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType")
 @js.native
-class ImportMappingJavaActionParameterType protected ()
+open class ImportMappingJavaActionParameterType protected ()
   extends typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingJavaActionParameterType {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class ImportMappingJavaActionParameterType protected ()
 }
 object ImportMappingJavaActionParameterType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -42,13 +42,13 @@ object ImportMappingJavaActionParameterType {
   inline def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingJavaActionParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingJavaActionParameterType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingJavaActionParameterType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

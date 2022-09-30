@@ -3,22 +3,28 @@ package typings.angularForms.mod
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.Renderer2
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularForms.angularFormsBooleans.`false`
+import typings.angularForms.angularFormsStrings.option
+import typings.angularForms.anon.HostOptional
+import typings.angularForms.anon.NgValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "NgSelectOption")
 @js.native
-class NgSelectOption protected ()
+open class NgSelectOption protected ()
   extends StObject
      with OnDestroy {
-  def this(_element: ElementRef[js.Any], _renderer: Renderer2, _select: SelectControlValueAccessor) = this()
+  def this(_element: ElementRef[Any], _renderer: Renderer2, _select: SelectControlValueAccessor) = this()
   
-  /* private */ var _element: js.Any = js.native
+  /* private */ var _element: Any = js.native
   
-  /* private */ var _renderer: js.Any = js.native
+  /* private */ var _renderer: Any = js.native
   
-  /* private */ var _select: js.Any = js.native
+  /* private */ var _select: Any = js.native
   
   /**
     * @description
@@ -38,12 +44,49 @@ class NgSelectOption protected ()
     * Tracks the value bound to the option element. Unlike the value binding,
     * ngValue supports binding to objects.
     */
-  def ngValue_=(value: js.Any): Unit = js.native
+  def ngValue_=(value: Any): Unit = js.native
   
   /**
     * @description
     * Tracks simple string values bound to the option element.
     * For objects, use the `ngValue` input binding.
     */
-  def value_=(value: js.Any): Unit = js.native
+  def value_=(value: Any): Unit = js.native
+}
+/* static members */
+object NgSelectOption {
+  
+  @JSImport("@angular/forms", "NgSelectOption")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "NgSelectOption.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    NgSelectOption, 
+    option, 
+    scala.Nothing, 
+    NgValue, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      NgSelectOption, 
+      option, 
+      scala.Nothing, 
+      NgValue, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "NgSelectOption.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[NgSelectOption, js.Tuple3[Null, Null, HostOptional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgSelectOption, js.Tuple3[Null, Null, HostOptional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

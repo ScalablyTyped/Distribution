@@ -10,10 +10,10 @@ Cloud Tasks API client for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/tasks |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google cloud-tasks, cloud-tasks, Cloud Tasks API |
-| # releases         | 28 |
-| # dependents       | 19 |
-| # downloads        | 2310837 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 563260.3333333334 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/nodejs-tasks#readme)

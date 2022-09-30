@@ -12,11 +12,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.0.1: deleted
   * In version 8.13.0: introduced
   */
 @JSImport("mendixmodelsdk", "domainmodels.AttributeCapabilities")
 @js.native
-class AttributeCapabilities protected ()
+open class AttributeCapabilities protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AttributeCapabilities {
   def this(
     model: AbstractModel,
@@ -47,7 +48,7 @@ object AttributeCapabilities {
     * of the parent Attribute element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.13.0 and higher
+    *  8.13.0 to 9.0.0
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeCapabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeCapabilities]

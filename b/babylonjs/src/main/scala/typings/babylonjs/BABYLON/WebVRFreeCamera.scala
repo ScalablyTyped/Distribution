@@ -13,7 +13,7 @@ trait WebVRFreeCamera
   /* private */ var _attached: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * Get current device position in babylon world
     */
   def _computeDevicePosition(): Unit = js.native
@@ -28,7 +28,7 @@ trait WebVRFreeCamera
   
   /* private */ var _deviceRoomPosition: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _deviceRoomRotationQuaternion: Quaternion = js.native
   
   /* private */ var _deviceToWorld: Any = js.native
@@ -64,7 +64,7 @@ trait WebVRFreeCamera
   /* private */ var _updateCacheWhenTrackingDisabledObserver: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * The vrDisplay tied to the camera. See https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay
     */
   var _vrDevice: Any = js.native

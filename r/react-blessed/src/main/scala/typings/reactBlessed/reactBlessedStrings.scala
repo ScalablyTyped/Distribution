@@ -1,9 +1,7 @@
 package typings.reactBlessed
 
 import typings.reactBlessed.mod.GenericContentPrefix
-import typings.reactBlessed.mod.GenericEventNames
 import typings.reactBlessed.mod.ScreenElement
-import typings.reactBlessed.mod.ScreenEventNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactBlessedStrings {
   
   @js.native
-  sealed trait DollarLeftcurlybracketTRightcurlybracketDollarLeftcurlybracketPRightcurlybracket
-    extends StObject
-       with GenericEventNames
-       with ScreenEventNames
-  inline def DollarLeftcurlybracketTRightcurlybracketDollarLeftcurlybracketPRightcurlybracket: DollarLeftcurlybracketTRightcurlybracketDollarLeftcurlybracketPRightcurlybracket = "${T}${P}".asInstanceOf[DollarLeftcurlybracketTRightcurlybracketDollarLeftcurlybracketPRightcurlybracket]
+  sealed trait EventHandlerProp extends StObject
+  inline def EventHandlerProp: EventHandlerProp = "EventHandlerProp".asInstanceOf[EventHandlerProp]
   
   @js.native
   sealed trait KnownKeys extends StObject
@@ -28,12 +23,6 @@ object reactBlessedStrings {
   @js.native
   sealed trait bg extends StObject
   inline def bg: bg = "bg".asInstanceOf[bg]
-  
-  @js.native
-  sealed trait blur
-    extends StObject
-       with ScreenEventNames
-  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
   sealed trait bottom extends StObject
@@ -51,7 +40,6 @@ object reactBlessedStrings {
   sealed trait click
     extends StObject
        with ScreenElement
-       with ScreenEventNames
   inline def click: click = "click".asInstanceOf[click]
   
   @js.native
@@ -63,54 +51,12 @@ object reactBlessedStrings {
   inline def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait destroy
-    extends StObject
-       with GenericEventNames
-  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
-  
-  @js.native
   sealed trait element extends StObject
   inline def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait `element click`
-    extends StObject
-       with ScreenEventNames
-  inline def `element click`: `element click` = ("element click").asInstanceOf[`element click`]
-  
-  @js.native
-  sealed trait `element mouseout`
-    extends StObject
-       with ScreenEventNames
-  inline def `element mouseout`: `element mouseout` = ("element mouseout").asInstanceOf[`element mouseout`]
-  
-  @js.native
-  sealed trait `element mouseover`
-    extends StObject
-       with ScreenEventNames
-  inline def `element mouseover`: `element mouseover` = ("element mouseover").asInstanceOf[`element mouseover`]
-  
-  @js.native
-  sealed trait `element mouseup`
-    extends StObject
-       with ScreenEventNames
-  inline def `element mouseup`: `element mouseup` = ("element mouseup").asInstanceOf[`element mouseup`]
-  
-  @js.native
-  sealed trait focus
-    extends StObject
-       with ScreenEventNames
-  inline def focus: focus = "focus".asInstanceOf[focus]
-  
-  @js.native
   sealed trait grid extends StObject
   inline def grid: grid = "grid".asInstanceOf[grid]
-  
-  @js.native
-  sealed trait hide
-    extends StObject
-       with GenericEventNames
-  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait `inline` extends StObject
@@ -155,44 +101,14 @@ object reactBlessedStrings {
   inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait move
-    extends StObject
-       with GenericEventNames
-  inline def move: move = "move".asInstanceOf[move]
-  
-  @js.native
   sealed trait parsed
     extends StObject
        with GenericContentPrefix
   inline def parsed: parsed = "parsed".asInstanceOf[parsed]
   
   @js.native
-  sealed trait `parsed content`
-    extends StObject
-       with GenericEventNames
-  inline def `parsed content`: `parsed content` = ("parsed content").asInstanceOf[`parsed content`]
-  
-  @js.native
-  sealed trait prerender
-    extends StObject
-       with GenericEventNames
-  inline def prerender: prerender = "prerender".asInstanceOf[prerender]
-  
-  @js.native
-  sealed trait render
-    extends StObject
-       with GenericEventNames
-  inline def render: render = "render".asInstanceOf[render]
-  
-  @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
-  
-  @js.native
-  sealed trait resize
-    extends StObject
-       with GenericEventNames
-  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
   sealed trait right extends StObject
@@ -207,18 +123,6 @@ object reactBlessedStrings {
     extends StObject
        with GenericContentPrefix
   inline def set: set = "set".asInstanceOf[set]
-  
-  @js.native
-  sealed trait `set content`
-    extends StObject
-       with GenericEventNames
-  inline def `set content`: `set content` = ("set content").asInstanceOf[`set content`]
-  
-  @js.native
-  sealed trait show
-    extends StObject
-       with GenericEventNames
-  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
   sealed trait style extends StObject

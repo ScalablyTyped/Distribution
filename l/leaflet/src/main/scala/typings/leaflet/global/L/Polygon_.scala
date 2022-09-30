@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Polygon")
 @js.native
-class Polygon_[P] protected ()
+open class Polygon_[P] protected ()
   extends typings.leaflet.mod.Polygon_[P] {
   def this(latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]) = this()
   def this(

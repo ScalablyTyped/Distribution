@@ -17,7 +17,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalSettings")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalSettings")
 @js.native
 abstract class ConditionalSettings protected () extends Element[IModel] {
   def this(
@@ -65,6 +65,7 @@ abstract class ConditionalSettings protected () extends Element[IModel] {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def expressionModel: Expression = js.native
@@ -74,18 +75,18 @@ abstract class ConditionalSettings protected () extends Element[IModel] {
 }
 object ConditionalSettings {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalSettings")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalSettings")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalSettings.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalSettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalSettings.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalSettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

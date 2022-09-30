@@ -1,7 +1,6 @@
 package typings.firebaseFunctions
 
 import typings.firebaseApp.mod.FirebaseApp
-import typings.firebaseFunctions.firebaseFunctionsStrings.functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket
 import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,7 +62,7 @@ object srcPublicTypesMod {
     val details: js.UndefOr[Any] = js.native
   }
   
-  type FunctionsErrorCode = functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket
+  type FunctionsErrorCode = /* template literal string: functions/${FunctionsErrorCodeCore} */ String
   
   /* Rewritten from type alias, can be one of: 
     - typings.firebaseFunctions.firebaseFunctionsStrings.ok

@@ -5,6 +5,7 @@ import typings.maximMazurokGapiClientGenomics.gapi.client.genomics.ProjectsResou
 import typings.maximMazurokGapiClientGenomics.gapi.client.genomics.WorkersResource
 import typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.genomics
 import typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.v2alpha1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +36,7 @@ object global {
       }
       
       /** Load Genomics API v2alpha1 */
-      inline def load(name: genomics, version: v2alpha1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: genomics, version: v2alpha1): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: genomics, version: v2alpha1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }

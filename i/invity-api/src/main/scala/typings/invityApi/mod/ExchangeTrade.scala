@@ -46,6 +46,8 @@ trait ExchangeTrade extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   // internal DB id
+  var infoNote: js.UndefOr[String] = js.undefined
+  
   // DEX extra fields
   var isDex: js.UndefOr[Boolean] = js.undefined
   
@@ -71,7 +73,7 @@ trait ExchangeTrade extends StObject {
   // which exchange this trade belongs to, used for discrimination in ExchangeService
   var quoteToken: js.UndefOr[String] = js.undefined
   
-  // users address for receive tx
+  // user's address for receive tx
   var rate: js.UndefOr[Double] = js.undefined
   
   // coinswitch only
@@ -174,6 +176,10 @@ object ExchangeTrade {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setInfoNote(value: String): Self = StObject.set(x, "infoNote", value.asInstanceOf[js.Any])
+    
+    inline def setInfoNoteUndefined: Self = StObject.set(x, "infoNote", js.undefined)
     
     inline def setIsDex(value: Boolean): Self = StObject.set(x, "isDex", value.asInstanceOf[js.Any])
     

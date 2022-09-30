@@ -104,7 +104,7 @@ object nodeMaterialMod {
     
     /**
       * Specifies the mode of the node material
-      * @hidden
+      * @internal
       */
     var _mode: NodeMaterialModes = js.native
     

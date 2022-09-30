@@ -24,7 +24,8 @@ object listMod {
   
   @JSImport("react-movable/lib/List", JSImport.Default)
   @js.native
-  open class default[Value] protected () extends List[Value] {
+  open class default[Value] protected ()
+    extends typings.reactMovable.listMod.List[Value] {
     def this(props: IProps[Value]) = this()
   }
   object default {

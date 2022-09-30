@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/merge relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExclusiveMerge")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExclusiveMerge")
 @js.native
-class ExclusiveMerge protected () extends MicroflowObject {
+open class ExclusiveMerge protected () extends MicroflowObject {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class ExclusiveMerge protected () extends MicroflowObject {
 }
 object ExclusiveMerge {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExclusiveMerge")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExclusiveMerge")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object ExclusiveMerge {
   inline def createIn(container: MicroflowObjectCollection): ExclusiveMerge = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExclusiveMerge]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExclusiveMerge.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExclusiveMerge.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExclusiveMerge.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExclusiveMerge.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

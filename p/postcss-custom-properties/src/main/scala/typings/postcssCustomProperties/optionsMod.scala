@@ -84,5 +84,5 @@ object optionsMod {
   
   type ImportFromSource = From | String
   
-  type ImportOptions = ImportFromSource | ImportCustomProperties | ImportAsFunction | ImportAsPromise | ImportAsFunctionPromise
+  type ImportOptions = ImportFromSource | ImportCustomProperties | ImportAsFunction | (js.Promise[ImportFromSource | ImportCustomProperties]) | ImportAsFunctionPromise
 }

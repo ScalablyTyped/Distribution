@@ -1,12 +1,12 @@
 package typings.screeps.global
 
-import typings.screeps.screepsNumbers.`100000000`
-import typings.screeps.screepsNumbers.`10000000`
-import typings.screeps.screepsNumbers.`1000000`
-import typings.screeps.screepsNumbers.`300000000`
-import typings.screeps.screepsNumbers.`30000000`
-import typings.screeps.screepsNumbers.`3000000`
-import typings.screeps.screepsNumbers.`300000`
+import typings.screeps.screepsInts.`100000000`
+import typings.screeps.screepsInts.`10000000`
+import typings.screeps.screepsInts.`1000000`
+import typings.screeps.screepsInts.`300000000`
+import typings.screeps.screepsInts.`30000000`
+import typings.screeps.screepsInts.`3000000`
+import typings.screeps.screepsInts.`300000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

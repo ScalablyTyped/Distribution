@@ -1,6 +1,5 @@
 package typings.leafletLocatecontrol
 
-import typings.leaflet.mod.ControlOptions
 import typings.leaflet.mod.Layer
 import typings.leaflet.mod.Map_
 import typings.leaflet.mod.MarkerOptions
@@ -19,9 +18,9 @@ object mod {
     
     @JSImport("leaflet", "Control.Locate")
     @js.native
-    class Locate ()
+    open class Locate ()
       extends typings.leaflet.mod.Control_ {
-      def this(options: ControlOptions) = this()
+      def this(locateOptions: LocateOptions) = this()
       
       @JSName("onAdd")
       def onAdd_MLocate(map: Map_): HTMLElement = js.native
@@ -41,7 +40,13 @@ object mod {
       
       var circleStyle: js.UndefOr[PathOptions] = js.undefined
       
-      var clickBehavior: js.UndefOr[js.Any] = js.undefined
+      var clickBehavior: js.UndefOr[Any] = js.undefined
+      
+      var compassClass: js.UndefOr[Any] = js.undefined
+      
+      var compassStyle: js.UndefOr[PathOptions] = js.undefined
+      
+      var createButtonCallback: js.UndefOr[Any] = js.undefined
       
       var drawCircle: js.UndefOr[Boolean] = js.undefined
       
@@ -59,19 +64,23 @@ object mod {
       
       var iconLoading: js.UndefOr[String] = js.undefined
       
+      var initialZoomLevel: js.UndefOr[Double | Boolean] = js.undefined
+      
       var keepCurrentZoomLevel: js.UndefOr[Boolean] = js.undefined
       
       var layer: js.UndefOr[Layer] = js.undefined
       
       var locateOptions: js.UndefOr[typings.leaflet.mod.LocateOptions] = js.undefined
       
-      var markerClass: js.UndefOr[js.Any] = js.undefined
+      var markerClass: js.UndefOr[Any] = js.undefined
       
       var markerStyle: js.UndefOr[PathOptions | MarkerOptions] = js.undefined
       
-      var onLocationError: js.UndefOr[js.Any] = js.undefined
+      var metric: js.UndefOr[Boolean] = js.undefined
       
-      var onLocationOutsideMapBounds: js.UndefOr[js.Any] = js.undefined
+      var onLocationError: js.UndefOr[Any] = js.undefined
+      
+      var onLocationOutsideMapBounds: js.UndefOr[Any] = js.undefined
       
       var position: js.UndefOr[String] = js.undefined
       
@@ -79,9 +88,13 @@ object mod {
       
       var setView: js.UndefOr[Boolean | String] = js.undefined
       
+      var showCompass: js.UndefOr[Boolean] = js.undefined
+      
       var showPopup: js.UndefOr[Boolean] = js.undefined
       
-      var strings: js.UndefOr[js.Any] = js.undefined
+      var strings: js.UndefOr[Any] = js.undefined
+      
+      var textElementTag: js.UndefOr[String] = js.undefined
     }
     object LocateOptions {
       
@@ -100,15 +113,27 @@ object mod {
         
         inline def setCirclePaddingUndefined: Self = StObject.set(x, "circlePadding", js.undefined)
         
-        inline def setCirclePaddingVarargs(value: Double*): Self = StObject.set(x, "circlePadding", js.Array(value :_*))
+        inline def setCirclePaddingVarargs(value: Double*): Self = StObject.set(x, "circlePadding", js.Array(value*))
         
         inline def setCircleStyle(value: PathOptions): Self = StObject.set(x, "circleStyle", value.asInstanceOf[js.Any])
         
         inline def setCircleStyleUndefined: Self = StObject.set(x, "circleStyle", js.undefined)
         
-        inline def setClickBehavior(value: js.Any): Self = StObject.set(x, "clickBehavior", value.asInstanceOf[js.Any])
+        inline def setClickBehavior(value: Any): Self = StObject.set(x, "clickBehavior", value.asInstanceOf[js.Any])
         
         inline def setClickBehaviorUndefined: Self = StObject.set(x, "clickBehavior", js.undefined)
+        
+        inline def setCompassClass(value: Any): Self = StObject.set(x, "compassClass", value.asInstanceOf[js.Any])
+        
+        inline def setCompassClassUndefined: Self = StObject.set(x, "compassClass", js.undefined)
+        
+        inline def setCompassStyle(value: PathOptions): Self = StObject.set(x, "compassStyle", value.asInstanceOf[js.Any])
+        
+        inline def setCompassStyleUndefined: Self = StObject.set(x, "compassStyle", js.undefined)
+        
+        inline def setCreateButtonCallback(value: Any): Self = StObject.set(x, "createButtonCallback", value.asInstanceOf[js.Any])
+        
+        inline def setCreateButtonCallbackUndefined: Self = StObject.set(x, "createButtonCallback", js.undefined)
         
         inline def setDrawCircle(value: Boolean): Self = StObject.set(x, "drawCircle", value.asInstanceOf[js.Any])
         
@@ -142,6 +167,10 @@ object mod {
         
         inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
+        inline def setInitialZoomLevel(value: Double | Boolean): Self = StObject.set(x, "initialZoomLevel", value.asInstanceOf[js.Any])
+        
+        inline def setInitialZoomLevelUndefined: Self = StObject.set(x, "initialZoomLevel", js.undefined)
+        
         inline def setKeepCurrentZoomLevel(value: Boolean): Self = StObject.set(x, "keepCurrentZoomLevel", value.asInstanceOf[js.Any])
         
         inline def setKeepCurrentZoomLevelUndefined: Self = StObject.set(x, "keepCurrentZoomLevel", js.undefined)
@@ -154,7 +183,7 @@ object mod {
         
         inline def setLocateOptionsUndefined: Self = StObject.set(x, "locateOptions", js.undefined)
         
-        inline def setMarkerClass(value: js.Any): Self = StObject.set(x, "markerClass", value.asInstanceOf[js.Any])
+        inline def setMarkerClass(value: Any): Self = StObject.set(x, "markerClass", value.asInstanceOf[js.Any])
         
         inline def setMarkerClassUndefined: Self = StObject.set(x, "markerClass", js.undefined)
         
@@ -162,11 +191,15 @@ object mod {
         
         inline def setMarkerStyleUndefined: Self = StObject.set(x, "markerStyle", js.undefined)
         
-        inline def setOnLocationError(value: js.Any): Self = StObject.set(x, "onLocationError", value.asInstanceOf[js.Any])
+        inline def setMetric(value: Boolean): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+        
+        inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+        
+        inline def setOnLocationError(value: Any): Self = StObject.set(x, "onLocationError", value.asInstanceOf[js.Any])
         
         inline def setOnLocationErrorUndefined: Self = StObject.set(x, "onLocationError", js.undefined)
         
-        inline def setOnLocationOutsideMapBounds(value: js.Any): Self = StObject.set(x, "onLocationOutsideMapBounds", value.asInstanceOf[js.Any])
+        inline def setOnLocationOutsideMapBounds(value: Any): Self = StObject.set(x, "onLocationOutsideMapBounds", value.asInstanceOf[js.Any])
         
         inline def setOnLocationOutsideMapBoundsUndefined: Self = StObject.set(x, "onLocationOutsideMapBounds", js.undefined)
         
@@ -182,13 +215,21 @@ object mod {
         
         inline def setSetViewUndefined: Self = StObject.set(x, "setView", js.undefined)
         
+        inline def setShowCompass(value: Boolean): Self = StObject.set(x, "showCompass", value.asInstanceOf[js.Any])
+        
+        inline def setShowCompassUndefined: Self = StObject.set(x, "showCompass", js.undefined)
+        
         inline def setShowPopup(value: Boolean): Self = StObject.set(x, "showPopup", value.asInstanceOf[js.Any])
         
         inline def setShowPopupUndefined: Self = StObject.set(x, "showPopup", js.undefined)
         
-        inline def setStrings(value: js.Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+        inline def setStrings(value: Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
         
         inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+        
+        inline def setTextElementTag(value: String): Self = StObject.set(x, "textElementTag", value.asInstanceOf[js.Any])
+        
+        inline def setTextElementTagUndefined: Self = StObject.set(x, "textElementTag", js.undefined)
       }
     }
   }

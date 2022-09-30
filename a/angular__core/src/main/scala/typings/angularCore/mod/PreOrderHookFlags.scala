@@ -1,19 +1,19 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreNumbers._4294901760
-import typings.angularCore.angularCoreNumbers.`16`
-import typings.angularCore.angularCoreNumbers.`65535`
-import typings.angularCore.angularCoreNumbers.`65536`
+import typings.angularCore.angularCoreDoubles.`4294901760`
+import typings.angularCore.angularCoreInts.`16`
+import typings.angularCore.angularCoreInts.`65535`
+import typings.angularCore.angularCoreInts.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** More flags associated with an LView (saved in LView[PREORDER_HOOK_FLAGS]) */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreNumbers.`65535`
-  - typings.angularCore.angularCoreNumbers.`65536`
-  - typings.angularCore.angularCoreNumbers.`16`
-  - typings.angularCore.angularCoreNumbers._4294901760
+  - typings.angularCore.angularCoreInts.`65535`
+  - typings.angularCore.angularCoreInts.`65536`
+  - typings.angularCore.angularCoreInts.`16`
+  - typings.angularCore.angularCoreDoubles.`4294901760`
 */
 trait PreOrderHookFlags extends StObject
 object PreOrderHookFlags {
@@ -29,7 +29,7 @@ object PreOrderHookFlags {
     */
   inline def NumberOfInitHooksCalledIncrementer: `65536` = 65536.asInstanceOf[`65536`]
   
-  inline def NumberOfInitHooksCalledMask: _4294901760 = 4294901760.0.asInstanceOf[_4294901760]
+  inline def NumberOfInitHooksCalledMask: `4294901760` = 4294901760d.asInstanceOf[`4294901760`]
   
   inline def NumberOfInitHooksCalledShift: `16` = 16.asInstanceOf[`16`]
 }

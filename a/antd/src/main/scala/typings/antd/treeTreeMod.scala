@@ -498,6 +498,8 @@ object treeTreeMod extends Shortcut {
   
   type SwitcherIcon = ReactNode | (js.Function1[/* props */ AntTreeNodeProps, ReactNode])
   
+  type TreeLeafIcon = ReactNode | (js.Function1[/* props */ AntTreeNodeProps, ReactNode])
+  
   type TreeNodeNormal = DataNode
   
   /* Inlined parent std.Omit<rc-tree.rc-tree.TreeProps<T>, 'prefixCls' | 'showLine' | 'direction' | 'draggable' | 'icon' | 'switcherIcon'> */

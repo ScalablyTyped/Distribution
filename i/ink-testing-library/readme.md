@@ -10,10 +10,10 @@ Utilities for testing Ink apps
 | ------------------ | :-------------: |
 | Full name          | ink-testing-library |
 | Keywords           | ink, cli, test |
-| # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 45461 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 31362.666666666668 |
+| # stars            | 98.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/ink-testing-library#readme)

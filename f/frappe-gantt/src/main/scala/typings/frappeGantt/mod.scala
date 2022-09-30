@@ -1,5 +1,9 @@
 package typings.frappeGantt
 
+import typings.frappeGantt.frappeGanttStrings.Day_
+import typings.frappeGantt.frappeGanttStrings.Month_
+import typings.frappeGantt.frappeGanttStrings.Week_
+import typings.frappeGantt.frappeGanttStrings.Year_
 import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -27,6 +31,44 @@ object mod {
     override def refresh(tasks: js.Array[Task]): Unit = js.native
   }
   
+  /* Inlined std.Record<frappe-gantt.frappe-gantt.viewModeKey, frappe-gantt.frappe-gantt.viewMode> */
+  object VIEW_MODE {
+    
+    @JSImport("frappe-gantt", "VIEW_MODE")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("frappe-gantt", "VIEW_MODE.DAY")
+    @js.native
+    def DAY: viewMode = js.native
+    inline def DAY_=(x: viewMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("frappe-gantt", "VIEW_MODE.HALF_DAY")
+    @js.native
+    def HALF_DAY: viewMode = js.native
+    inline def HALF_DAY_=(x: viewMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HALF_DAY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("frappe-gantt", "VIEW_MODE.MONTH")
+    @js.native
+    def MONTH: viewMode = js.native
+    inline def MONTH_=(x: viewMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MONTH")(x.asInstanceOf[js.Any])
+    
+    @JSImport("frappe-gantt", "VIEW_MODE.QUARTER_DAY")
+    @js.native
+    def QUARTER_DAY: viewMode = js.native
+    inline def QUARTER_DAY_=(x: viewMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUARTER_DAY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("frappe-gantt", "VIEW_MODE.WEEK")
+    @js.native
+    def WEEK: viewMode = js.native
+    inline def WEEK_=(x: viewMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEEK")(x.asInstanceOf[js.Any])
+    
+    @JSImport("frappe-gantt", "VIEW_MODE.YEAR")
+    @js.native
+    def YEAR: viewMode = js.native
+    inline def YEAR_=(x: viewMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YEAR")(x.asInstanceOf[js.Any])
+  }
+  
   trait EnrichedTask
     extends StObject
        with Task {
@@ -36,6 +78,8 @@ object mod {
     var _index: Double
     
     var _start: js.Date
+    
+    var invalid: js.UndefOr[Boolean] = js.undefined
   }
   object EnrichedTask {
     
@@ -55,6 +99,10 @@ object mod {
     }
     
     extension [Self <: EnrichedTask](x: Self) {
+      
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
       inline def set_end(value: js.Date): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
       
@@ -246,21 +294,48 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.frappeGantt.frappeGanttStrings.`Quarter Day`
     - typings.frappeGantt.frappeGanttStrings.`Half Day`
-    - typings.frappeGantt.frappeGanttStrings.Day
-    - typings.frappeGantt.frappeGanttStrings.Week
-    - typings.frappeGantt.frappeGanttStrings.Month
+    - typings.frappeGantt.frappeGanttStrings.Day_
+    - typings.frappeGantt.frappeGanttStrings.Week_
+    - typings.frappeGantt.frappeGanttStrings.Month_
+    - typings.frappeGantt.frappeGanttStrings.Year_
   */
   trait viewMode extends StObject
   object viewMode {
     
-    inline def Day: typings.frappeGantt.frappeGanttStrings.Day = "Day".asInstanceOf[typings.frappeGantt.frappeGanttStrings.Day]
+    inline def Day: Day_ = "Day".asInstanceOf[Day_]
     
     inline def `Half Day`: typings.frappeGantt.frappeGanttStrings.`Half Day` = ("Half Day").asInstanceOf[typings.frappeGantt.frappeGanttStrings.`Half Day`]
     
-    inline def Month: typings.frappeGantt.frappeGanttStrings.Month = "Month".asInstanceOf[typings.frappeGantt.frappeGanttStrings.Month]
+    inline def Month: Month_ = "Month".asInstanceOf[Month_]
     
     inline def `Quarter Day`: typings.frappeGantt.frappeGanttStrings.`Quarter Day` = ("Quarter Day").asInstanceOf[typings.frappeGantt.frappeGanttStrings.`Quarter Day`]
     
-    inline def Week: typings.frappeGantt.frappeGanttStrings.Week = "Week".asInstanceOf[typings.frappeGantt.frappeGanttStrings.Week]
+    inline def Week: Week_ = "Week".asInstanceOf[Week_]
+    
+    inline def Year: Year_ = "Year".asInstanceOf[Year_]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.frappeGantt.frappeGanttStrings.QUARTER_DAY
+    - typings.frappeGantt.frappeGanttStrings.HALF_DAY
+    - typings.frappeGantt.frappeGanttStrings.DAY
+    - typings.frappeGantt.frappeGanttStrings.WEEK
+    - typings.frappeGantt.frappeGanttStrings.MONTH
+    - typings.frappeGantt.frappeGanttStrings.YEAR
+  */
+  trait viewModeKey extends StObject
+  object viewModeKey {
+    
+    inline def DAY: typings.frappeGantt.frappeGanttStrings.DAY = "DAY".asInstanceOf[typings.frappeGantt.frappeGanttStrings.DAY]
+    
+    inline def HALF_DAY: typings.frappeGantt.frappeGanttStrings.HALF_DAY = "HALF_DAY".asInstanceOf[typings.frappeGantt.frappeGanttStrings.HALF_DAY]
+    
+    inline def MONTH: typings.frappeGantt.frappeGanttStrings.MONTH = "MONTH".asInstanceOf[typings.frappeGantt.frappeGanttStrings.MONTH]
+    
+    inline def QUARTER_DAY: typings.frappeGantt.frappeGanttStrings.QUARTER_DAY = "QUARTER_DAY".asInstanceOf[typings.frappeGantt.frappeGanttStrings.QUARTER_DAY]
+    
+    inline def WEEK: typings.frappeGantt.frappeGanttStrings.WEEK = "WEEK".asInstanceOf[typings.frappeGantt.frappeGanttStrings.WEEK]
+    
+    inline def YEAR: typings.frappeGantt.frappeGanttStrings.YEAR = "YEAR".asInstanceOf[typings.frappeGantt.frappeGanttStrings.YEAR]
   }
 }

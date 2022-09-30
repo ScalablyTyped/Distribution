@@ -28,7 +28,7 @@ trait GeoJSONSourceOptions extends StObject {
   var clusterRadius: js.UndefOr[Double] = js.undefined
   
   var data: js.UndefOr[
-    (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
+    (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | Geometry | String
   ] = js.undefined
   
   var filter: js.UndefOr[Any] = js.undefined
@@ -81,7 +81,7 @@ object GeoJSONSourceOptions {
     inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     inline def setData(
-      value: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String
+      value: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | Geometry | String
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

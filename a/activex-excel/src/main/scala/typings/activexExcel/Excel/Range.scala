@@ -2,25 +2,23 @@ package typings.activexExcel.Excel
 
 import typings.activexAdodb.ADODB.Recordset
 import typings.activexExcel.activexExcelBooleans.`false`
-import typings.activexExcel.activexExcelNumbers.`-4123`
-import typings.activexExcel.activexExcelNumbers.`0`
-import typings.activexExcel.activexExcelNumbers.`10`
-import typings.activexExcel.activexExcelNumbers.`11`
-import typings.activexExcel.activexExcelNumbers.`12`
-import typings.activexExcel.activexExcelNumbers.`13`
-import typings.activexExcel.activexExcelNumbers.`14`
-import typings.activexExcel.activexExcelNumbers.`15`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`3`
-import typings.activexExcel.activexExcelNumbers.`4`
-import typings.activexExcel.activexExcelNumbers.`5`
-import typings.activexExcel.activexExcelNumbers.`6`
-import typings.activexExcel.activexExcelNumbers.`7`
-import typings.activexExcel.activexExcelNumbers.`8`
-import typings.activexExcel.activexExcelNumbers.`9`
-import typings.activexExcel.activexExcelStrings.Apostrophe
-import typings.activexExcel.activexExcelStrings.Backslash
+import typings.activexExcel.activexExcelInts.`-4123`
+import typings.activexExcel.activexExcelInts.`0`
+import typings.activexExcel.activexExcelInts.`10`
+import typings.activexExcel.activexExcelInts.`11`
+import typings.activexExcel.activexExcelInts.`12`
+import typings.activexExcel.activexExcelInts.`13`
+import typings.activexExcel.activexExcelInts.`14`
+import typings.activexExcel.activexExcelInts.`15`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`3`
+import typings.activexExcel.activexExcelInts.`4`
+import typings.activexExcel.activexExcelInts.`5`
+import typings.activexExcel.activexExcelInts.`6`
+import typings.activexExcel.activexExcelInts.`7`
+import typings.activexExcel.activexExcelInts.`8`
+import typings.activexExcel.activexExcelInts.`9`
 import typings.activexExcel.activexExcelStrings.Quotationmark
 import typings.activexExcel.activexExcelStrings.^
 import typings.activexExcel.activexExcelStrings._empty
@@ -1315,7 +1313,7 @@ trait Range extends StObject {
   @JSName("Precedents")
   val Precedents_Original: Range = js.native
   
-  val PrefixCharacter: Apostrophe | Quotationmark | ^ | Backslash | _empty = js.native
+  val PrefixCharacter: String | Quotationmark | ^ | _empty = js.native
   
   def Previous(Address: String): Range = js.native
   def Previous(RowIndex: Double): Range = js.native

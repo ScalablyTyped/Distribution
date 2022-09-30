@@ -49,7 +49,8 @@ trait TouchBarScrubberConstructorOptions extends StObject {
   var selectedStyle: js.UndefOr[background | outline | none] = js.undefined
   
   /**
-    * Defaults to `false`.
+    * Whether to show arrow buttons. Defaults to `false` and is only shown if `items`
+    * is non-empty.
     */
   var showArrowButtons: js.UndefOr[Boolean] = js.undefined
 }
@@ -72,7 +73,7 @@ object TouchBarScrubberConstructorOptions {
     
     inline def setItems(value: js.Array[ScrubberItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ScrubberItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ScrubberItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMode(value: fixed | free): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

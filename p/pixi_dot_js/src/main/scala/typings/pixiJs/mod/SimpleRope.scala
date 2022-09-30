@@ -1,33 +1,25 @@
 package typings.pixiJs.mod
 
+import typings.pixiMath.mod.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The rope allows you to draw a texture across several points and then manipulate these points
-  *
-  *```js
-  * for (let i = 0; i < 20; i++) {
-  *     points.push(new PIXI.Point(i * 50, 0));
-  * };
-  * let rope = new PIXI.SimpleRope(PIXI.Texture.from("snake.png"), points);
-  *  ```
-  *
-  * @class
-  * @extends PIXI.Mesh
-  * @memberof PIXI
-  *
-  */
 @JSImport("pixi.js", "SimpleRope")
 @js.native
-class SimpleRope protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.SimpleRope {
-  def this(texture: typings.pixiJs.PIXI.Texture, points: js.Array[typings.pixiJs.PIXI.Point]) = this()
+open class SimpleRope protected ()
+  extends typings.pixiMeshExtras.mod.SimpleRope {
+  /**
+    * @param texture - The texture to use on the rope.
+    * @param points - An array of {@link PIXI.Point} objects to construct this rope.
+    * @param {number} textureScale - Optional. Positive values scale rope texture
+    * keeping its aspect ratio. You can reduce alpha channel artifacts by providing a larger texture
+    * and downsampling here. If set to zero, texture will be stretched instead.
+    */
+  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource], points: js.Array[IPoint]) = this()
   def this(
-    texture: typings.pixiJs.PIXI.Texture,
-    points: js.Array[typings.pixiJs.PIXI.Point],
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    points: js.Array[IPoint],
     textureScale: Double
   ) = this()
 }

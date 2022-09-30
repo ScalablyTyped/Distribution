@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "testcafe-hammerhead" : "24.7.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "testcafe-hammerhead" : "24.7.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

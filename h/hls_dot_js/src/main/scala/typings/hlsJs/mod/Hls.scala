@@ -198,6 +198,8 @@ trait Hls
     */
   def lowLatencyMode_=(mode: Boolean): Unit = js.native
   
+  def mainForwardBufferInfo: BufferInfo | Null = js.native
+  
   /**
     * Level set manually (if any)
     * @type {number}

@@ -30,20 +30,20 @@ object anon {
   
   trait Results extends StObject {
     
-    var results: js.Array[js.Any]
+    var results: js.Array[Any]
   }
   object Results {
     
-    inline def apply(results: js.Array[js.Any]): Results = {
+    inline def apply(results: js.Array[Any]): Results = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
     extension [Self <: Results](x: Self) {
       
-      inline def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Any*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
 }

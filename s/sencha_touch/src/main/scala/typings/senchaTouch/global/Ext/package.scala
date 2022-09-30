@@ -95,7 +95,7 @@ inline def create(name: java.lang.String): Any = ^.asInstanceOf[js.Dynamic].appl
 inline def create(name: java.lang.String, args: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def create(name: Unit, args: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def createByAlias(alias: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createByAlias")(List(alias.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def createByAlias(alias: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createByAlias")(scala.List(alias.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def createInterceptor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterceptor")().asInstanceOf[Any]
 inline def createInterceptor(origFn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterceptor")(origFn.asInstanceOf[js.Any]).asInstanceOf[Any]

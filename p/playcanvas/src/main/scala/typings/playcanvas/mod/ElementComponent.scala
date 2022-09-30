@@ -253,7 +253,23 @@ open class ElementComponent protected () extends Component {
   
   def _calculateLocalAnchors(): Unit = js.native
   
-  def _calculateSize(propagateCalculatedWidth: Any, propagateCalculatedHeight: Any): Unit = js.native
+  /**
+    * Recalculates these properties:
+    *   - `_localAnchor`
+    *   - `width`
+    *   - `height`
+    *   - Local position is updated if anchors are split
+    *
+    * Assumes these properties are up to date:
+    *   - `_margin`
+    *
+    * @param {boolean} propagateCalculatedWidth - If true, call `_setWidth` instead
+    * of `_setCalculatedWidth`
+    * @param {boolean} propagateCalculatedHeight - If true, call `_setHeight` instead
+    * of `_setCalculatedHeight`
+    * @private
+    */
+  /* private */ var _calculateSize: Any = js.native
   
   var _calculatedHeight: Double = js.native
   
@@ -331,19 +347,61 @@ open class ElementComponent protected () extends Component {
   
   var _screenTransform: Mat4 = js.native
   
-  def _setCalculatedHeight(value: Any, updateMargins: Any): Unit = js.native
+  /**
+    * This method sets the calculated height value and optionally updates the margins.
+    *
+    * @param {number} value - The new calculated height.
+    * @param {boolean} updateMargins - Update margins or not.
+    * @private
+    */
+  /* private */ var _setCalculatedHeight: Any = js.native
   
-  def _setCalculatedWidth(value: Any, updateMargins: Any): Unit = js.native
+  /**
+    * This method sets the calculated width value and optionally updates the margins.
+    *
+    * @param {number} value - The new calculated width.
+    * @param {boolean} updateMargins - Update margins or not.
+    * @private
+    */
+  /* private */ var _setCalculatedWidth: Any = js.native
   
-  def _setHeight(h: Any): Unit = js.native
+  /**
+    * Internal set height without updating margin.
+    *
+    * @param {number} h - The new height.
+    * @private
+    */
+  /* private */ var _setHeight: Any = js.native
   
-  def _setLocalPosition(x: Any, y: Any, z: Any): Unit = js.native
+  /**
+    * Patched method for setting the local position.
+    *
+    * @param {number|Vec3} x - The x coordinate or Vec3
+    * @param {number} y - The y coordinate
+    * @param {number} z - The z coordinate
+    * @private
+    */
+  /* private */ var _setLocalPosition: Any = js.native
   
   def _setMaskedBy(mask: Any): Unit = js.native
   
-  def _setPosition(x: Any, y: Any, z: Any): Any = js.native
+  /**
+    * Patched method for setting the position.
+    *
+    * @param {number|Vec3} x - The x coordinate or Vec3
+    * @param {number} y - The y coordinate
+    * @param {number} z - The z coordinate
+    * @private
+    */
+  /* private */ var _setPosition: Any = js.native
   
-  def _setWidth(w: Any): Unit = js.native
+  /**
+    * Internal set width without updating margin.
+    *
+    * @param {number} w - The new width.
+    * @private
+    */
+  /* private */ var _setWidth: Any = js.native
   
   var _sizeDirty: Boolean = js.native
   
@@ -385,7 +443,12 @@ open class ElementComponent protected () extends Component {
     * of the anchor are not equal. In that case the component will be resized to cover that entire
     * area. e.g. a value of [0, 0, 1, 1] will make the component resize exactly as its parent.
     *
-    * @type {Vec4}
+    * @example
+    * pc.app.root.findByName("Inventory").element.anchor = new pc.Vec4(Math.random() * 0.1, 0, 1, 0);
+    * @example
+    * pc.app.root.findByName("Inventory").element.anchor = [Math.random() * 0.1, 0, 1, 0];
+    *
+    * @type {Vec4 | number[]}
     */
   def anchor_=(arg: Vec4): Unit = js.native
   
@@ -589,7 +652,12 @@ open class ElementComponent protected () extends Component {
     * The position of the pivot of the component relative to its anchor. Each value ranges from 0
     * to 1 where [0,0] is the bottom left and [1,1] is the top right.
     *
-    * @type {Vec2}
+    * @example
+    * pc.app.root.findByName("Inventory").element.pivot = [Math.random() * 0.1, Math.random() * 0.1];
+    * @example
+    * pc.app.root.findByName("Inventory").element.pivot = new pc.Vec2(Math.random() * 0.1, Math.random() * 0.1);
+    *
+    * @type {Vec2 | number[]}
     */
   def pivot_=(arg: Vec2): Unit = js.native
   

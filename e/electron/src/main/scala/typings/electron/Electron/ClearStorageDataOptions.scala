@@ -41,12 +41,12 @@ object ClearStorageDataOptions {
     
     inline def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
     
-    inline def setQuotasVarargs(value: String*): Self = StObject.set(x, "quotas", js.Array(value :_*))
+    inline def setQuotasVarargs(value: String*): Self = StObject.set(x, "quotas", js.Array(value*))
     
     inline def setStorages(value: js.Array[String]): Self = StObject.set(x, "storages", value.asInstanceOf[js.Any])
     
     inline def setStoragesUndefined: Self = StObject.set(x, "storages", js.undefined)
     
-    inline def setStoragesVarargs(value: String*): Self = StObject.set(x, "storages", js.Array(value :_*))
+    inline def setStoragesVarargs(value: String*): Self = StObject.set(x, "storages", js.Array(value*))
   }
 }

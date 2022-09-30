@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `38` extends StObject {
   
-  var radius: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[`37`] = js.undefined
 }
 object `38` {
   
@@ -17,8 +17,8 @@ object `38` {
   
   extension [Self <: `38`](x: Self) {
     
-    inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setSize(value: `37`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

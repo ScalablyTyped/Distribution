@@ -13,7 +13,7 @@ object redeemingMod {
     
     inline def formatPasscodeShort(data: ResultData): Unit = js.Dynamic.global.applyDynamic("formatPasscodeShort")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def handleRedeemResponse(data: ResultData, textStatus: js.Any, jqXHR: jqXHR[js.Any]): Unit = (js.Dynamic.global.applyDynamic("handleRedeemResponse")(data.asInstanceOf[js.Any], textStatus.asInstanceOf[js.Any], jqXHR.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def handleRedeemResponse(data: ResultData, textStatus: Any, jqXHR: jqXHR[Any]): Unit = (js.Dynamic.global.applyDynamic("handleRedeemResponse")(data.asInstanceOf[js.Any], textStatus.asInstanceOf[js.Any], jqXHR.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setupRedeem(): Unit = js.Dynamic.global.applyDynamic("setupRedeem")().asInstanceOf[Unit]
     
@@ -21,7 +21,7 @@ object redeemingMod {
       
       var ap: String
       
-      var inventory: js.Any
+      var inventory: Any
       
       var other: js.Array[String]
       
@@ -29,7 +29,7 @@ object redeemingMod {
     }
     object ResultData {
       
-      inline def apply(ap: String, inventory: js.Any, other: js.Array[String], xm: String): ResultData = {
+      inline def apply(ap: String, inventory: Any, other: js.Array[String], xm: String): ResultData = {
         val __obj = js.Dynamic.literal(ap = ap.asInstanceOf[js.Any], inventory = inventory.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], xm = xm.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResultData]
       }
@@ -38,11 +38,11 @@ object redeemingMod {
         
         inline def setAp(value: String): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
         
-        inline def setInventory(value: js.Any): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+        inline def setInventory(value: Any): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
         
         inline def setOther(value: js.Array[String]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
         
-        inline def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value :_*))
+        inline def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value*))
         
         inline def setXm(value: String): Self = StObject.set(x, "xm", value.asInstanceOf[js.Any])
       }

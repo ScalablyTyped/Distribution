@@ -1,5 +1,6 @@
 package typings.tarn
 
+import typings.std.PromiseLike
 import typings.tarn.promiseInspectionMod.PromiseInspection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +27,7 @@ object utilsMod {
   
   inline def reflect[T](promise: js.Promise[T]): js.Promise[PromiseInspection[Any | T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reflect")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseInspection[Any | T]]]
   
-  inline def tryPromise[T](cb: js.Function0[T | js.Thenable[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryPromise")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def tryPromise[T](cb: js.Function0[T | PromiseLike[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryPromise")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   trait Deferred[T] extends StObject {
     

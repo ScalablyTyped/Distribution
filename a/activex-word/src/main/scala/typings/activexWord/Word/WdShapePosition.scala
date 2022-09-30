@@ -1,24 +1,24 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-999993`
-import typings.activexWord.activexWordNumbers.`-999994`
-import typings.activexWord.activexWordNumbers.`-999995`
-import typings.activexWord.activexWordNumbers.`-999996`
-import typings.activexWord.activexWordNumbers.`-999997`
-import typings.activexWord.activexWordNumbers.`-999998`
-import typings.activexWord.activexWordNumbers.`-999999`
+import typings.activexWord.activexWordInts.`-999993`
+import typings.activexWord.activexWordInts.`-999994`
+import typings.activexWord.activexWordInts.`-999995`
+import typings.activexWord.activexWordInts.`-999996`
+import typings.activexWord.activexWordInts.`-999997`
+import typings.activexWord.activexWordInts.`-999998`
+import typings.activexWord.activexWordInts.`-999999`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`-999997`
-  - typings.activexWord.activexWordNumbers.`-999995`
-  - typings.activexWord.activexWordNumbers.`-999994`
-  - typings.activexWord.activexWordNumbers.`-999998`
-  - typings.activexWord.activexWordNumbers.`-999993`
-  - typings.activexWord.activexWordNumbers.`-999996`
-  - typings.activexWord.activexWordNumbers.`-999999`
+  - typings.activexWord.activexWordInts.`-999997`
+  - typings.activexWord.activexWordInts.`-999995`
+  - typings.activexWord.activexWordInts.`-999994`
+  - typings.activexWord.activexWordInts.`-999998`
+  - typings.activexWord.activexWordInts.`-999993`
+  - typings.activexWord.activexWordInts.`-999996`
+  - typings.activexWord.activexWordInts.`-999999`
 */
 trait WdShapePosition extends StObject
 object WdShapePosition {

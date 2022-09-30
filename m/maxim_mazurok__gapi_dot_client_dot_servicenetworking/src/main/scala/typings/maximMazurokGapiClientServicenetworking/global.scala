@@ -4,6 +4,7 @@ import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwor
 import typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking.ServicesResource
 import typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.servicenetworking
 import typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.v1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object global {
       val ^ : js.Any = js.native
       
       /** Load Service Networking API v1 */
-      inline def load(name: servicenetworking, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: servicenetworking, version: v1): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: servicenetworking, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object servicenetworking {

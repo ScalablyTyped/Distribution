@@ -1,21 +1,21 @@
 package typings.tablestore.mod
 
-import typings.tablestore.tablestoreNumbers.`10`
-import typings.tablestore.tablestoreNumbers.`11`
-import typings.tablestore.tablestoreNumbers.`12`
-import typings.tablestore.tablestoreNumbers.`13`
-import typings.tablestore.tablestoreNumbers.`14`
-import typings.tablestore.tablestoreNumbers.`15`
-import typings.tablestore.tablestoreNumbers.`16`
-import typings.tablestore.tablestoreNumbers.`1`
-import typings.tablestore.tablestoreNumbers.`2`
-import typings.tablestore.tablestoreNumbers.`3`
-import typings.tablestore.tablestoreNumbers.`4`
-import typings.tablestore.tablestoreNumbers.`5`
-import typings.tablestore.tablestoreNumbers.`6`
-import typings.tablestore.tablestoreNumbers.`7`
-import typings.tablestore.tablestoreNumbers.`8`
-import typings.tablestore.tablestoreNumbers.`9`
+import typings.tablestore.tablestoreInts.`10`
+import typings.tablestore.tablestoreInts.`11`
+import typings.tablestore.tablestoreInts.`12`
+import typings.tablestore.tablestoreInts.`13`
+import typings.tablestore.tablestoreInts.`14`
+import typings.tablestore.tablestoreInts.`15`
+import typings.tablestore.tablestoreInts.`16`
+import typings.tablestore.tablestoreInts.`1`
+import typings.tablestore.tablestoreInts.`2`
+import typings.tablestore.tablestoreInts.`3`
+import typings.tablestore.tablestoreInts.`4`
+import typings.tablestore.tablestoreInts.`5`
+import typings.tablestore.tablestoreInts.`6`
+import typings.tablestore.tablestoreInts.`7`
+import typings.tablestore.tablestoreInts.`8`
+import typings.tablestore.tablestoreInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

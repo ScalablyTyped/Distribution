@@ -1,17 +1,17 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1`
-import typings.webcl.webclNumbers.`0x2`
-import typings.webcl.webclNumbers.`0x4`
+import typings.webcl.webclInts.`0x1`
+import typings.webcl.webclInts.`0x2`
+import typings.webcl.webclInts.`0x4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_mem_flags - bitfield */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1`
-  - typings.webcl.webclNumbers.`0x2`
-  - typings.webcl.webclNumbers.`0x4`
+  - typings.webcl.webclInts.`0x1`
+  - typings.webcl.webclInts.`0x2`
+  - typings.webcl.webclInts.`0x4`
 */
 trait MemFlagsBits extends StObject
 object MemFlagsBits {

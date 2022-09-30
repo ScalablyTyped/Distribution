@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponseListUserOrganization200
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var count: js.UndefOr[Double] = js.undefined
   
@@ -36,6 +36,6 @@ object ResponseListUserOrganization200 {
     
     inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value*))
   }
 }

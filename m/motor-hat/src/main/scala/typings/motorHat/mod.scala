@@ -3,8 +3,8 @@ package typings.motorHat
 import typings.motorHat.anon.M1
 import typings.motorHat.anon.W1
 import typings.motorHat.anon.W2
-import typings.motorHat.motorHatNumbers.`16`
-import typings.motorHat.motorHatNumbers.`8`
+import typings.motorHat.motorHatInts.`16`
+import typings.motorHat.motorHatInts.`8`
 import typings.motorHat.motorHatStrings.double
 import typings.motorHat.motorHatStrings.interleaved
 import typings.motorHat.motorHatStrings.microstep

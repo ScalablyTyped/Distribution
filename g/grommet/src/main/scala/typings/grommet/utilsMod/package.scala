@@ -3,7 +3,7 @@ package typings.grommet.utilsMod
 import org.scalablytyped.runtime.TopLevel
 import typings.grommet.anon.ColorError
 import typings.grommet.anon.Dark
-import typings.grommet.anon.`39`
+import typings.grommet.anon.`40`
 import typings.grommet.utilsMod.^
 import typings.react.mod.ComponentType
 import typings.react.mod.KeyboardEvent
@@ -138,7 +138,7 @@ type FillType = _FillType | Boolean
 */
 type GapType = _GapType | String
 
-type GraphColorsType = js.Array[String] | `39`
+type GraphColorsType = js.Array[String] | `40`
 
 type GridAreaType = String
 

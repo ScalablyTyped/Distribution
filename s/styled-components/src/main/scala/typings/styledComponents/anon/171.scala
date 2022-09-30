@@ -1,31 +1,20 @@
 package typings.styledComponents.anon
 
-import typings.std.ReturnType
-import typings.styledComponents.distTypesMod.IStyledComponentFactory
-import typings.styledComponents.distTypesMod.IStyledNativeComponentFactory
+import typings.styledComponents.distTypesMod.IStyledNativeComponent
 import typings.styledComponents.distTypesMod.Interpolation
+import typings.styledComponents.distTypesMod.NativeTarget
 import typings.styledComponents.distTypesMod.StyledNativeOptions
-import typings.styledComponents.distTypesMod.StyledOptions
 import typings.styledComponents.distTypesMod.Styles
-import typings.styledComponents.styledComponentsStrings.address
-import typings.styledComponents.styledComponentsStrings.native
-import typings.styledComponents.styledComponentsStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `171`[OuterProps, Environment /* <: web | native */, // used for styled<{}>().attrs() so attrs() gets the generic prop context
-OuterStatics] extends StObject {
+trait `171`[Target /* <: NativeTarget */] extends StObject {
   
-  def apply[Props, Statics](initialStyles: Styles[OuterProps & Props], interpolations: (Interpolation[OuterProps & Props])*): ReturnType[
-    (IStyledNativeComponentFactory[address, OuterProps & Props, OuterStatics & Statics]) | (IStyledComponentFactory[address, OuterProps & Props, OuterStatics & Statics])
-  ] = js.native
+  def apply[Props, Statics](initialStyles: Styles[Props], interpolations: Interpolation[Props]*): (IStyledNativeComponent[Target, Props]) & Statics = js.native
   
-  def attrs(attrs: typings.styledComponents.distTypesMod.Attrs[OuterProps]): Any = js.native
+  def attrs(attrs: typings.styledComponents.distTypesMod.Attrs[Any]): Any = js.native
   
-  /**
-    * If config methods are called, wrap up a new template function and merge options */
-  @JSName("withConfig")
-  def withConfig_web(config: StyledNativeOptions[OuterProps] | StyledOptions[OuterProps]): Any = js.native
+  def withConfig(config: StyledNativeOptions[Any]): Any = js.native
 }

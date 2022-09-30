@@ -1,37 +1,50 @@
 package typings.reactNativeWindows
 
+import typings.reactNative.mod.EmitterSubscription
+import typings.reactNativeWindows.reactNativeWindowsStrings.highContrastChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appThemeTypesMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeWindows.reactNativeWindowsStrings.light
-    - typings.reactNativeWindows.reactNativeWindowsStrings.dark
-  */
-  trait AppThemeTypes extends StObject
-  object AppThemeTypes {
+  trait AppTheme extends StObject {
     
-    inline def dark: typings.reactNativeWindows.reactNativeWindowsStrings.dark = "dark".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.dark]
+    @JSName("addListener")
+    def addListener_highContrastChanged(
+      eventName: highContrastChanged,
+      listener: js.Function1[/* nativeEvent */ IHighContrastChangedEvent, Unit]
+    ): EmitterSubscription
     
-    inline def light: typings.reactNativeWindows.reactNativeWindowsStrings.light = "light".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.light]
+    var currentHighContrastColors: IHighContrastColors
+    
+    var isHighContrast: Boolean
+    
+    @JSName("removeListener")
+    def removeListener_highContrastChanged(
+      eventName: highContrastChanged,
+      listener: js.Function1[/* nativeEvent */ IHighContrastChangedEvent, Unit]
+    ): Unit
   }
-  
-  trait IAppThemeChangedEvent extends StObject {
+  object AppTheme {
     
-    var currentTheme: AppThemeTypes
-  }
-  object IAppThemeChangedEvent {
+    @JSImport("react-native-windows/Libraries/AppTheme/AppThemeTypes", "AppTheme")
+    @js.native
+    val ^ : AppTheme = js.native
     
-    inline def apply(currentTheme: AppThemeTypes): IAppThemeChangedEvent = {
-      val __obj = js.Dynamic.literal(currentTheme = currentTheme.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IAppThemeChangedEvent]
-    }
-    
-    extension [Self <: IAppThemeChangedEvent](x: Self) {
+    extension [Self <: AppTheme](x: Self) {
       
-      inline def setCurrentTheme(value: AppThemeTypes): Self = StObject.set(x, "currentTheme", value.asInstanceOf[js.Any])
+      inline def setAddListener(
+        value: (highContrastChanged, js.Function1[/* nativeEvent */ IHighContrastChangedEvent, Unit]) => EmitterSubscription
+      ): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      
+      inline def setCurrentHighContrastColors(value: IHighContrastColors): Self = StObject.set(x, "currentHighContrastColors", value.asInstanceOf[js.Any])
+      
+      inline def setIsHighContrast(value: Boolean): Self = StObject.set(x, "isHighContrast", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveListener(
+        value: (highContrastChanged, js.Function1[/* nativeEvent */ IHighContrastChangedEvent, Unit]) => Unit
+      ): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
   

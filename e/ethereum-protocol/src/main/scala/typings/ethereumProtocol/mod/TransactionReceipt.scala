@@ -1,7 +1,7 @@
 package typings.ethereumProtocol.mod
 
-import typings.ethereumProtocol.ethereumProtocolNumbers.`0`
-import typings.ethereumProtocol.ethereumProtocolNumbers.`1`
+import typings.ethereumProtocol.ethereumProtocolInts.`0`
+import typings.ethereumProtocol.ethereumProtocolInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

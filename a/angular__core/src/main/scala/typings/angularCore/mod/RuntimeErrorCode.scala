@@ -1,44 +1,44 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreNumbers.`-100`
-import typings.angularCore.angularCoreNumbers.`-200`
-import typings.angularCore.angularCoreNumbers.`-201`
-import typings.angularCore.angularCoreNumbers.`-203`
-import typings.angularCore.angularCoreNumbers.`-300`
-import typings.angularCore.angularCoreNumbers.`-301`
-import typings.angularCore.angularCoreNumbers.`-302`
-import typings.angularCore.angularCoreNumbers.`101`
-import typings.angularCore.angularCoreNumbers.`202`
-import typings.angularCore.angularCoreNumbers.`204`
-import typings.angularCore.angularCoreNumbers.`205`
-import typings.angularCore.angularCoreNumbers.`207`
-import typings.angularCore.angularCoreNumbers.`208`
-import typings.angularCore.angularCoreNumbers.`209`
-import typings.angularCore.angularCoreNumbers.`303`
-import typings.angularCore.angularCoreNumbers.`304`
-import typings.angularCore.angularCoreNumbers.`305`
-import typings.angularCore.angularCoreNumbers.`306`
-import typings.angularCore.angularCoreNumbers.`400`
-import typings.angularCore.angularCoreNumbers.`401`
-import typings.angularCore.angularCoreNumbers.`402`
-import typings.angularCore.angularCoreNumbers.`403`
-import typings.angularCore.angularCoreNumbers.`404`
-import typings.angularCore.angularCoreNumbers.`405`
-import typings.angularCore.angularCoreNumbers.`406`
-import typings.angularCore.angularCoreNumbers.`407`
-import typings.angularCore.angularCoreNumbers.`700`
-import typings.angularCore.angularCoreNumbers.`701`
-import typings.angularCore.angularCoreNumbers.`800`
-import typings.angularCore.angularCoreNumbers.`900`
-import typings.angularCore.angularCoreNumbers.`901`
-import typings.angularCore.angularCoreNumbers.`902`
-import typings.angularCore.angularCoreNumbers.`903`
-import typings.angularCore.angularCoreNumbers.`904`
-import typings.angularCore.angularCoreNumbers.`905`
-import typings.angularCore.angularCoreNumbers.`906`
-import typings.angularCore.angularCoreNumbers.`907`
-import typings.angularCore.angularCoreNumbers.`908`
-import typings.angularCore.angularCoreNumbers.`909`
+import typings.angularCore.angularCoreInts.`-100`
+import typings.angularCore.angularCoreInts.`-200`
+import typings.angularCore.angularCoreInts.`-201`
+import typings.angularCore.angularCoreInts.`-203`
+import typings.angularCore.angularCoreInts.`-300`
+import typings.angularCore.angularCoreInts.`-301`
+import typings.angularCore.angularCoreInts.`-302`
+import typings.angularCore.angularCoreInts.`101`
+import typings.angularCore.angularCoreInts.`202`
+import typings.angularCore.angularCoreInts.`204`
+import typings.angularCore.angularCoreInts.`205`
+import typings.angularCore.angularCoreInts.`207`
+import typings.angularCore.angularCoreInts.`208`
+import typings.angularCore.angularCoreInts.`209`
+import typings.angularCore.angularCoreInts.`303`
+import typings.angularCore.angularCoreInts.`304`
+import typings.angularCore.angularCoreInts.`305`
+import typings.angularCore.angularCoreInts.`306`
+import typings.angularCore.angularCoreInts.`400`
+import typings.angularCore.angularCoreInts.`401`
+import typings.angularCore.angularCoreInts.`402`
+import typings.angularCore.angularCoreInts.`403`
+import typings.angularCore.angularCoreInts.`404`
+import typings.angularCore.angularCoreInts.`405`
+import typings.angularCore.angularCoreInts.`406`
+import typings.angularCore.angularCoreInts.`407`
+import typings.angularCore.angularCoreInts.`700`
+import typings.angularCore.angularCoreInts.`701`
+import typings.angularCore.angularCoreInts.`800`
+import typings.angularCore.angularCoreInts.`900`
+import typings.angularCore.angularCoreInts.`901`
+import typings.angularCore.angularCoreInts.`902`
+import typings.angularCore.angularCoreInts.`903`
+import typings.angularCore.angularCoreInts.`904`
+import typings.angularCore.angularCoreInts.`905`
+import typings.angularCore.angularCoreInts.`906`
+import typings.angularCore.angularCoreInts.`907`
+import typings.angularCore.angularCoreInts.`908`
+import typings.angularCore.angularCoreInts.`909`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,45 +54,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Full list of available error guides can be found at https://angular.io/errors.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreNumbers.`-100`
-  - typings.angularCore.angularCoreNumbers.`101`
-  - typings.angularCore.angularCoreNumbers.`-200`
-  - typings.angularCore.angularCoreNumbers.`-201`
-  - typings.angularCore.angularCoreNumbers.`202`
-  - typings.angularCore.angularCoreNumbers.`-203`
-  - typings.angularCore.angularCoreNumbers.`204`
-  - typings.angularCore.angularCoreNumbers.`205`
-  - typings.angularCore.angularCoreNumbers.`207`
-  - typings.angularCore.angularCoreNumbers.`208`
-  - typings.angularCore.angularCoreNumbers.`209`
-  - typings.angularCore.angularCoreNumbers.`-300`
-  - typings.angularCore.angularCoreNumbers.`-301`
-  - typings.angularCore.angularCoreNumbers.`-302`
-  - typings.angularCore.angularCoreNumbers.`303`
-  - typings.angularCore.angularCoreNumbers.`304`
-  - typings.angularCore.angularCoreNumbers.`305`
-  - typings.angularCore.angularCoreNumbers.`306`
-  - typings.angularCore.angularCoreNumbers.`400`
-  - typings.angularCore.angularCoreNumbers.`401`
-  - typings.angularCore.angularCoreNumbers.`402`
-  - typings.angularCore.angularCoreNumbers.`403`
-  - typings.angularCore.angularCoreNumbers.`404`
-  - typings.angularCore.angularCoreNumbers.`405`
-  - typings.angularCore.angularCoreNumbers.`406`
-  - typings.angularCore.angularCoreNumbers.`407`
-  - typings.angularCore.angularCoreNumbers.`700`
-  - typings.angularCore.angularCoreNumbers.`701`
-  - typings.angularCore.angularCoreNumbers.`800`
-  - typings.angularCore.angularCoreNumbers.`900`
-  - typings.angularCore.angularCoreNumbers.`901`
-  - typings.angularCore.angularCoreNumbers.`902`
-  - typings.angularCore.angularCoreNumbers.`903`
-  - typings.angularCore.angularCoreNumbers.`904`
-  - typings.angularCore.angularCoreNumbers.`905`
-  - typings.angularCore.angularCoreNumbers.`906`
-  - typings.angularCore.angularCoreNumbers.`907`
-  - typings.angularCore.angularCoreNumbers.`908`
-  - typings.angularCore.angularCoreNumbers.`909`
+  - typings.angularCore.angularCoreInts.`-100`
+  - typings.angularCore.angularCoreInts.`101`
+  - typings.angularCore.angularCoreInts.`-200`
+  - typings.angularCore.angularCoreInts.`-201`
+  - typings.angularCore.angularCoreInts.`202`
+  - typings.angularCore.angularCoreInts.`-203`
+  - typings.angularCore.angularCoreInts.`204`
+  - typings.angularCore.angularCoreInts.`205`
+  - typings.angularCore.angularCoreInts.`207`
+  - typings.angularCore.angularCoreInts.`208`
+  - typings.angularCore.angularCoreInts.`209`
+  - typings.angularCore.angularCoreInts.`-300`
+  - typings.angularCore.angularCoreInts.`-301`
+  - typings.angularCore.angularCoreInts.`-302`
+  - typings.angularCore.angularCoreInts.`303`
+  - typings.angularCore.angularCoreInts.`304`
+  - typings.angularCore.angularCoreInts.`305`
+  - typings.angularCore.angularCoreInts.`306`
+  - typings.angularCore.angularCoreInts.`400`
+  - typings.angularCore.angularCoreInts.`401`
+  - typings.angularCore.angularCoreInts.`402`
+  - typings.angularCore.angularCoreInts.`403`
+  - typings.angularCore.angularCoreInts.`404`
+  - typings.angularCore.angularCoreInts.`405`
+  - typings.angularCore.angularCoreInts.`406`
+  - typings.angularCore.angularCoreInts.`407`
+  - typings.angularCore.angularCoreInts.`700`
+  - typings.angularCore.angularCoreInts.`701`
+  - typings.angularCore.angularCoreInts.`800`
+  - typings.angularCore.angularCoreInts.`900`
+  - typings.angularCore.angularCoreInts.`901`
+  - typings.angularCore.angularCoreInts.`902`
+  - typings.angularCore.angularCoreInts.`903`
+  - typings.angularCore.angularCoreInts.`904`
+  - typings.angularCore.angularCoreInts.`905`
+  - typings.angularCore.angularCoreInts.`906`
+  - typings.angularCore.angularCoreInts.`907`
+  - typings.angularCore.angularCoreInts.`908`
+  - typings.angularCore.angularCoreInts.`909`
 */
 trait RuntimeErrorCode extends StObject
 object RuntimeErrorCode {

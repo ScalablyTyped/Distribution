@@ -10,7 +10,7 @@ trait Map_
   
   var featureLayer: FeatureLayer_ = js.native
   
-  def getTileJSON(): js.Any = js.native
+  def getTileJSON(): Any = js.native
   
   var gridControl: GridControl_ = js.native
   

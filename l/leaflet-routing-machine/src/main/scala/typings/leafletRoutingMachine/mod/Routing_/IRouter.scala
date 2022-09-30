@@ -10,22 +10,22 @@ trait IRouter extends StObject {
   
   def route(
     waypoints: js.Array[Waypoint_],
-    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], js.Any]
+    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], Any]
   ): Unit = js.native
   def route(
     waypoints: js.Array[Waypoint_],
-    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], js.Any],
+    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], Any],
     context: js.Object
   ): Unit = js.native
   def route(
     waypoints: js.Array[Waypoint_],
-    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], js.Any],
+    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], Any],
     context: js.Object,
     options: RoutingOptions
   ): Unit = js.native
   def route(
     waypoints: js.Array[Waypoint_],
-    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], js.Any],
+    callback: js.Function2[/* error */ js.UndefOr[IError], /* routes */ js.UndefOr[js.Array[IRoute]], Any],
     context: Unit,
     options: RoutingOptions
   ): Unit = js.native

@@ -1,6 +1,6 @@
 package typings.ampprojectRemapping
 
-import typings.ampprojectRemapping.ampprojectRemappingNumbers.`3`
+import typings.ampprojectRemapping.ampprojectRemappingInts.`3`
 import typings.ampprojectRemapping.typesMod.Options
 import typings.jridgewellGenMapping.mod.GenMapping
 import typings.jridgewellTraceMapping.sourcemapSegmentMod.SourceMapSegment

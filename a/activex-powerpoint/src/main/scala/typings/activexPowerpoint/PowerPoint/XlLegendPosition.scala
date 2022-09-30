@@ -1,22 +1,22 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4107`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4131`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4152`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4160`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4161`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2`
+import typings.activexPowerpoint.activexPowerpointInts.`-4107`
+import typings.activexPowerpoint.activexPowerpointInts.`-4131`
+import typings.activexPowerpoint.activexPowerpointInts.`-4152`
+import typings.activexPowerpoint.activexPowerpointInts.`-4160`
+import typings.activexPowerpoint.activexPowerpointInts.`-4161`
+import typings.activexPowerpoint.activexPowerpointInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4107`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4161`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4131`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4152`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4160`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4107`
+  - typings.activexPowerpoint.activexPowerpointInts.`2`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4161`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4131`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4152`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4160`
 */
 trait XlLegendPosition extends StObject
 object XlLegendPosition {

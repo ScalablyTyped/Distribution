@@ -4,9 +4,9 @@ import typings.firebaseFirestore.coreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.coreTargetMod.Target
 import typings.firebaseFirestore.coreTypesMod.ListenSequenceNumber
 import typings.firebaseFirestore.coreTypesMod.TargetId
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
 import typings.firebaseFirestore.utilByteStringMod.ByteString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -270,9 +270,9 @@ object localTargetDataMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
   */
   trait TargetPurpose extends StObject
   object TargetPurpose {

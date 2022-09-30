@@ -861,7 +861,7 @@ object constantsMod {
     /**
       * Prefixes used by the engine for sub mesh draw wrappers
       */
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Engines/constants", "Constants.RENDERPASS_MAIN")
     @js.native
     val RENDERPASS_MAIN: Double = js.native

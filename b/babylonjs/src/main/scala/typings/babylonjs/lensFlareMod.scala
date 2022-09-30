@@ -39,7 +39,7 @@ object lensFlareMod {
       system: LensFlareSystem
     ) = this()
     
-    /** @hidden */
+    /** @internal */
     var _drawWrapper: DrawWrapper = js.native
     
     /* private */ var _system: Any = js.native

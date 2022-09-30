@@ -10,7 +10,7 @@ trait FunctionCallNode
      with BaseNode
      with AstNode {
   
-  var name: KeywordNode
+  var nameKw: KeywordNode
   
   var parenthesis: ParenthesisNode
   
@@ -18,15 +18,15 @@ trait FunctionCallNode
 }
 object FunctionCallNode {
   
-  inline def apply(name: KeywordNode, parenthesis: ParenthesisNode, `type`: function_call): FunctionCallNode = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parenthesis = parenthesis.asInstanceOf[js.Any])
+  inline def apply(nameKw: KeywordNode, parenthesis: ParenthesisNode, `type`: function_call): FunctionCallNode = {
+    val __obj = js.Dynamic.literal(nameKw = nameKw.asInstanceOf[js.Any], parenthesis = parenthesis.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionCallNode]
   }
   
   extension [Self <: FunctionCallNode](x: Self) {
     
-    inline def setName(value: KeywordNode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setNameKw(value: KeywordNode): Self = StObject.set(x, "nameKw", value.asInstanceOf[js.Any])
     
     inline def setParenthesis(value: ParenthesisNode): Self = StObject.set(x, "parenthesis", value.asInstanceOf[js.Any])
     

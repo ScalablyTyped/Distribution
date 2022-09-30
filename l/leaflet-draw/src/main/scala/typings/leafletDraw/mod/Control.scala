@@ -19,7 +19,7 @@ object Control {
   
   @JSImport("leaflet", "Control.Draw")
   @js.native
-  class Draw () extends Control_ {
+  open class Draw () extends Control_ {
     def this(options: DrawConstructorOptions) = this()
     
     def initialize(): Unit = js.native
@@ -169,18 +169,18 @@ object Control {
       *
       * @default null
       */
-    var featureGroup: FeatureGroup_[js.Any]
+    var featureGroup: FeatureGroup_[Any]
     
     /**
       * Delete handler options. Set to false to disable handler.
       *
       * Default value: null
       */
-    var remove: js.UndefOr[Null | `false`] = js.undefined
+    var remove: js.UndefOr[Boolean | Null] = js.undefined
   }
   object EditOptions {
     
-    inline def apply(featureGroup: FeatureGroup_[js.Any]): typings.leafletDraw.mod.Control.EditOptions = {
+    inline def apply(featureGroup: FeatureGroup_[Any]): typings.leafletDraw.mod.Control.EditOptions = {
       val __obj = js.Dynamic.literal(featureGroup = featureGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.leafletDraw.mod.Control.EditOptions]
     }
@@ -191,9 +191,9 @@ object Control {
       
       inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
-      inline def setFeatureGroup(value: FeatureGroup_[js.Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
+      inline def setFeatureGroup(value: FeatureGroup_[Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
       
-      inline def setRemove(value: `false`): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
       inline def setRemoveNull: Self = StObject.set(x, "remove", null)
       

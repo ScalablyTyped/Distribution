@@ -6,13 +6,12 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Capitalize
 import typings.std.Exclude
 import typings.std.Extract
+import typings.std.PromiseLike
 import typings.std.PropertyKey
 import typings.yargs.anon.DictargName
 import typings.yargs.anon.PartialParserConfiguratio
 import typings.yargs.yargsBooleans.`false`
 import typings.yargs.yargsBooleans.`true`
-import typings.yargs.yargsStrings.DollarLeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracketDollarLeftcurlybracketPascalCaseLessthansignUGreaterthansignRightcurlybracket
-import typings.yargs.yargsStrings.DollarLeftcurlybracketTRightcurlybracketDollarLeftcurlybracketPascalCaseLessthansignUGreaterthansignRightcurlybracket
 import typings.yargs.yargsStrings._empty
 import typings.yargs.yargsStrings.array
 import typings.yargs.yargsStrings.count
@@ -1449,14 +1448,14 @@ object mod extends Shortcut {
     def demandOption[K /* <: /* keyof T */ String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
     def demandOption[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
     @JSName("demandOption")
-    def demandOption_K_String[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+    def demandOption_K[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
     @JSName("demandOption")
     def demandOption_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
     @JSName("demandOption")
     def demandOption_true[K /* <: /* keyof T */ String */](key: js.Array[K], msg: `true`): Argv[Defined[T, K]] = js.native
     
     @JSName("demand")
-    def demand_K_String[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+    def demand_K[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
     @JSName("demand")
     def demand_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
     @JSName("demand")
@@ -1845,7 +1844,7 @@ object mod extends Shortcut {
     def require[K /* <: /* keyof T */ String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
     def require[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
     @JSName("require")
-    def require_K_String[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
+    def require_K[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
     @JSName("require")
     def require_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
     @JSName("require")
@@ -1865,7 +1864,7 @@ object mod extends Shortcut {
     def required[K /* <: /* keyof T */ String */](key: K, msg: String): Argv[Defined[T, K]] = js.native
     def required[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
     @JSName("required")
-    def required_K_String[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
+    def required_K[K /* <: /* keyof T */ String */](key: js.Array[K], msg: String): Argv[Defined[T, K]] = js.native
     @JSName("required")
     def required_true[K /* <: /* keyof T */ String */](key: K, msg: `true`): Argv[Defined[T, K]] = js.native
     @JSName("required")
@@ -2134,17 +2133,17 @@ object mod extends Shortcut {
     Unit
   ]
   
-  type BuilderCallback[T, R] = js.Function1[/* args */ Argv[T], Argv[R] | js.Thenable[Argv[R]] | Unit]
+  type BuilderCallback[T, R] = js.Function1[/* args */ Argv[T], Argv[R] | PromiseLike[Argv[R]] | Unit]
   
   /** Convert literal string types like 'foo-bar' to 'fooBar' */
-  type CamelCase[S /* <: String */] = S | DollarLeftcurlybracketTRightcurlybracketDollarLeftcurlybracketPascalCaseLessthansignUGreaterthansignRightcurlybracket | String
+  type CamelCase[S /* <: String */] = S | (/* template literal string: ${T}${PascalCase<U>} */ String)
   
   /** Convert literal string types like 'foo-bar' to 'fooBar', allowing all `PropertyKey` types */
   type CamelCaseKey[K /* <: PropertyKey */] = K | (Exclude[CamelCase[K], _empty])
   
   type Choices = js.Array[js.UndefOr[String | Double | `true`]]
   
-  type CommandBuilder[T, U] = StringDictionary[Options] | (js.Function1[/* args */ Argv[T], Argv[U] | js.Thenable[Argv[U]]])
+  type CommandBuilder[T, U] = StringDictionary[Options] | (js.Function1[/* args */ Argv[T], Argv[U] | PromiseLike[Argv[U]]])
   
   trait CommandModule[T, U] extends StObject {
     
@@ -2183,7 +2182,7 @@ object mod extends Shortcut {
       
       inline def setBuilder(value: CommandBuilder[T, U]): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
-      inline def setBuilderFunction1(value: /* args */ Argv[T] => Argv[U] | js.Thenable[Argv[U]]): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
+      inline def setBuilderFunction1(value: /* args */ Argv[T] => Argv[U] | PromiseLike[Argv[U]]): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
       
       inline def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
       
@@ -2540,7 +2539,7 @@ object mod extends Shortcut {
   // not implemented: yargs camelizes '_', but only if there's a '-' in the arg name
   // not implemented: yargs decamelizes (converts fooBar to foo-bar)
   /** Convert literal string types like 'foo-bar' to 'FooBar' */
-  type PascalCase[S /* <: String */] = Capitalize[S] | DollarLeftcurlybracketCapitalizeLessthansignTGreaterthansignRightcurlybracketDollarLeftcurlybracketPascalCaseLessthansignUGreaterthansignRightcurlybracket | String
+  type PascalCase[S /* <: String */] = Capitalize[S] | (/* template literal string: ${Capitalize<T>}${PascalCase<U>} */ String)
   
   trait PositionalOptions extends StObject {
     

@@ -17,19 +17,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("redux-shortcuts", "Mousetrap")
-  @js.native
-  class Mousetrap_ ()
-    extends typings.mousetrap.mod.^ {
-    def this(el: Element) = this()
-  }
   object Mousetrap_ extends Shortcut {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("redux-shortcuts", "Mousetrap")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends StObject
          with MousetrapInstance {
       def this(el: Element) = this()
@@ -45,16 +38,16 @@ object mod {
     override def _to: js.Object & MousetrapStatic = ^
   }
   
-  inline def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
-  inline def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings, preventDefault: Boolean): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
+  inline def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings): js.Function1[/* dispatch */ Dispatch[Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[Any], Unit]]
+  inline def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings, preventDefault: Boolean): js.Function1[/* dispatch */ Dispatch[Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[Any], Unit]]
   
-  inline def bindShortcuts(shortcut: ShortcutDefinition*): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcuts")(shortcut.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
+  inline def bindShortcuts(shortcut: ShortcutDefinition*): js.Function1[/* dispatch */ Dispatch[Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcuts")(shortcut.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* dispatch */ Dispatch[Any], Unit]]
   
   @JSImport("redux-shortcuts", "mousetrap")
   @js.native
   val mousetrap: MousetrapInstance = js.native
   
-  type ActionBindings = ActionCreator[Action[js.Any]] | js.Array[ActionCreator[Action[js.Any]]]
+  type ActionBindings = ActionCreator[Action[Any]] | js.Array[ActionCreator[Action[Any]]]
   
   type BasicShortcutDefinition = js.Tuple2[KeyBindings, ActionBindings]
   

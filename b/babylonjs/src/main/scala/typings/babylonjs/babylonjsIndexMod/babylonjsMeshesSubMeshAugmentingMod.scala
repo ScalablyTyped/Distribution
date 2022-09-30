@@ -11,7 +11,7 @@ object babylonjsMeshesSubMeshAugmentingMod {
   
   trait SubMesh extends StObject {
     
-    /** @hidden */
+    /** @internal */
     def _projectOnTrianglesToRef(
       vector: Vector3,
       positions: js.Array[Vector3],
@@ -21,7 +21,7 @@ object babylonjsMeshesSubMeshAugmentingMod {
       ref: Vector3
     ): Double
     
-    /** @hidden */
+    /** @internal */
     def _projectOnUnIndexedTrianglesToRef(vector: Vector3, positions: js.Array[Vector3], indices: IndicesArray, ref: Vector3): Double
     
     /**

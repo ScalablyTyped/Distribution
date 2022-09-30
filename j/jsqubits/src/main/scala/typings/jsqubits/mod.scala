@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import typings.jsqubits.anon.DecimalPlaces
 import typings.jsqubits.jsqubitsBooleans.`false`
-import typings.jsqubits.jsqubitsNumbers.`0.0000001`
+import typings.jsqubits.jsqubitsDoubles.`0.0000001`
 import typings.jsqubits.mod.jsqubits.Complex
 import typings.jsqubits.mod.jsqubits.Measurement
 import typings.jsqubits.mod.jsqubits.QState

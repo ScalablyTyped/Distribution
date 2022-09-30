@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("leaflet", "Curve")
   @js.native
-  class Curve_ () extends Path {
+  open class Curve_ () extends Path {
     def this(options: LayerOptions) = this()
     
     /*
@@ -34,7 +34,7 @@ object mod {
     /*
       * Return path
       */
-    def getPath(): js.Array[String | js.Array[js.Array[js.Any]]] = js.native
+    def getPath(): js.Array[String | js.Array[js.Array[Any]]] = js.native
     
     /*
       * Set path
@@ -45,5 +45,5 @@ object mod {
   /*
     * Drawing Bezier curves and other complex shapes.
     */
-  inline def curve(path: js.Array[js.Any], options: js.UndefOr[PathOptions]): Curve_ = (^.asInstanceOf[js.Dynamic].applyDynamic("curve")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Curve_]
+  inline def curve(path: js.Array[Any], options: js.UndefOr[PathOptions]): Curve_ = (^.asInstanceOf[js.Dynamic].applyDynamic("curve")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Curve_]
 }

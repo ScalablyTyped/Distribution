@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `updateDoc()`.
   */ inline def arrayUnion(t: Any*): Cn_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Cn_]
 
-inline def collection(t: Any, e: Any, n: Any*): pn = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[pn]
+inline def collection(t: Any, e: Any, n: Any*): pn = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[pn]
 
 /**
   * Creates and returns a new `Query` instance that includes all documents in the
@@ -111,7 +111,7 @@ inline def connectFirestoreEmulator(t: Any, e: Any, n: Any, r: js.Object): Unit 
   * {@link @firebase/firestore/lite#(setDoc:1)} with `{merge: true}` to mark a field for deletion.
   */ inline def deleteField(): qn = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteField")().asInstanceOf[qn]
 
-inline def doc(t: Any, e: Any, n: Any*): wn = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[wn]
+inline def doc(t: Any, e: Any, n: Any*): wn = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[wn]
 
 /**
   * Returns a special sentinel `FieldPath` to refer to the ID of a document.
@@ -209,7 +209,7 @@ inline def orderBy(t: Any, e: String): cr = (^.asInstanceOf[js.Dynamic].applyDyn
   * @param queryConstraints - The list of {@link QueryConstraint}s to apply.
   * @throws if any of the provided query constraints cannot be combined with the
   * existing or new constraints.
-  */ inline def query(t: Any, e: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  */ inline def query(t: Any, e: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 /**
   * Returns true if the provided queries point to the same collection and apply
@@ -304,7 +304,7 @@ inline def startAt(t: Any*): dr = ^.asInstanceOf[js.Dynamic].applyDynamic("start
   * terminated.
   */ inline def terminate(t: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(t.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def updateDoc(t: Any, e: Any, n: Any, r: Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).`++`(r.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
+inline def updateDoc(t: Any, e: Any, n: Any, r: Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).`++`(r.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
 
 /**
   * Creates a {@link QueryConstraint} that enforces that documents must contain the

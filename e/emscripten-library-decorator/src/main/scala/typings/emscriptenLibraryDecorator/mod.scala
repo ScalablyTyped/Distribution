@@ -21,7 +21,7 @@ object mod {
   
   inline def `extends`(Class: ClassType, Parent: ClassType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__extends")(Class.asInstanceOf[js.Any], Parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def prepareNamespace(name: String, depList: String*): js.Function1[/* target */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareNamespace")(List(name.asInstanceOf[js.Any]).`++`(depList.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* target */ Any, Unit]]
+  inline def prepareNamespace(name: String, depList: String*): js.Function1[/* target */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareNamespace")(scala.List(name.asInstanceOf[js.Any]).`++`(depList.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* target */ Any, Unit]]
   
   inline def publishNamespace(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("publishNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

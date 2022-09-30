@@ -11,7 +11,7 @@ object asyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[State, Raw](config: AsyncEncryptorConfig): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](config: AsyncEncryptorConfig): Transform[State, Raw, Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, Any, Any]]
   
   trait AsyncEncryptorConfig extends StObject {
     

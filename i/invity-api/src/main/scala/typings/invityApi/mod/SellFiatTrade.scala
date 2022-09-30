@@ -45,7 +45,7 @@ trait SellFiatTrade extends StObject {
   // true for cryptoAmount, false for fiatAmount
   var fiatStringAmount: js.UndefOr[String] = js.undefined
   
-  // arbitrary data specific for the partner
+  // list of available bank accounts
   var id: js.UndefOr[String] = js.undefined
   
   var infoNote: js.UndefOr[String] = js.undefined
@@ -65,7 +65,7 @@ trait SellFiatTrade extends StObject {
   // ID of the payment assigned by the partner
   var originalPaymentId: js.UndefOr[String] = js.undefined
   
-  // list of available bank accounts
+  // internal DB id
   var partnerData: js.UndefOr[String] = js.undefined
   
   // arbitrary data specific for the partner

@@ -1,8 +1,8 @@
 package typings.handsontable
 
-import typings.handsontable.handsontableNumbers.`-1`
-import typings.handsontable.handsontableNumbers.`0`
-import typings.handsontable.handsontableNumbers.`1`
+import typings.handsontable.handsontableInts.`-1`
+import typings.handsontable.handsontableInts.`0`
+import typings.handsontable.handsontableInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

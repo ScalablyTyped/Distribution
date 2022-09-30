@@ -9,45 +9,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object revocationValuesMod {
   
-  @JSImport("xadesjs/build/types/xml/revocation_values", "CRLValues")
+  @JSImport("xadesjs/build/types/src/xml/revocation_values", "CRLValues")
   @js.native
-  class CRLValues () extends XadesCollection[EncapsulatedCRLValue] {
+  open class CRLValues () extends XadesCollection[EncapsulatedCRLValue] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/revocation_values", "EncapsulatedCRLValue")
+  @JSImport("xadesjs/build/types/src/xml/revocation_values", "EncapsulatedCRLValue")
   @js.native
-  class EncapsulatedCRLValue () extends EncapsulatedPKIData {
+  open class EncapsulatedCRLValue () extends EncapsulatedPKIData {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/revocation_values", "EncapsulatedOCSPValue")
+  @JSImport("xadesjs/build/types/src/xml/revocation_values", "EncapsulatedOCSPValue")
   @js.native
-  class EncapsulatedOCSPValue () extends EncapsulatedPKIData {
+  open class EncapsulatedOCSPValue () extends EncapsulatedPKIData {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/revocation_values", "OCSPValues")
+  @JSImport("xadesjs/build/types/src/xml/revocation_values", "OCSPValues")
   @js.native
-  class OCSPValues () extends XadesCollection[EncapsulatedOCSPValue] {
+  open class OCSPValues () extends XadesCollection[EncapsulatedOCSPValue] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/revocation_values", "OtherValue")
+  @JSImport("xadesjs/build/types/src/xml/revocation_values", "OtherValue")
   @js.native
-  class OtherValue () extends EncapsulatedPKIData {
+  open class OtherValue () extends EncapsulatedPKIData {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/revocation_values", "OtherValues")
+  @JSImport("xadesjs/build/types/src/xml/revocation_values", "OtherValues")
   @js.native
-  class OtherValues () extends XadesCollection[OtherValue] {
+  open class OtherValues () extends XadesCollection[OtherValue] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/revocation_values", "RevocationValues")
+  @JSImport("xadesjs/build/types/src/xml/revocation_values", "RevocationValues")
   @js.native
-  class RevocationValues () extends XadesObject {
+  open class RevocationValues () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var CRLValues: typings.xadesjs.revocationValuesMod.CRLValues = js.native

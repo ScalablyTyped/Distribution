@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.libMod.BlockStatement_
   - typings.babelTypes.libMod.Program_
-  - typings.babelTypes.libMod.TSModuleBlock
+  - typings.babelTypes.libMod.TSModuleBlock__
 */
 trait Block extends StObject
 object Block {
@@ -31,9 +31,9 @@ object Block {
     __obj.asInstanceOf[typings.babelTypes.libMod.Program_]
   }
   
-  inline def TSModuleBlock(body: js.Array[Statement]): typings.babelTypes.libMod.TSModuleBlock = {
+  inline def TSModuleBlock__(body: js.Array[Statement]): typings.babelTypes.libMod.TSModuleBlock__ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSModuleBlock")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSModuleBlock]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSModuleBlock__]
   }
 }

@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("leaflet", "ResponsivePopup")
   @js.native
-  class ResponsivePopup_ () extends Popup_ {
+  open class ResponsivePopup_ () extends Popup_ {
     def this(options: ResponsivePopupOptions) = this()
     def this(options: Unit, source: Layer) = this()
     def this(options: ResponsivePopupOptions, source: Layer) = this()

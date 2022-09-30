@@ -159,7 +159,7 @@ object popoverMod {
         *
         * Defaults to `onClose` when not provided.
         */
-      var onFocusOutside: js.UndefOr[js.Function1[/* event */ FocusEvent[Element], Unit]] = js.undefined
+      var onFocusOutside: js.UndefOr[js.Function1[/* event */ FocusEvent[Element, Element], Unit]] = js.undefined
       
       /**
         * The direction in which the popover should open relative to its
@@ -217,7 +217,7 @@ object popoverMod {
         
         inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
         
-        inline def setOnFocusOutside(value: /* event */ FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocusOutside", js.Any.fromFunction1(value))
+        inline def setOnFocusOutside(value: /* event */ FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onFocusOutside", js.Any.fromFunction1(value))
         
         inline def setOnFocusOutsideUndefined: Self = StObject.set(x, "onFocusOutside", js.undefined)
         

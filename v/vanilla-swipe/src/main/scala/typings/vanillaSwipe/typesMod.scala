@@ -3,8 +3,8 @@ package typings.vanillaSwipe
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.vanillaSwipe.vanillaSwipeNumbers.`0`
-import typings.vanillaSwipe.vanillaSwipeNumbers.`10`
+import typings.vanillaSwipe.vanillaSwipeInts.`0`
+import typings.vanillaSwipe.vanillaSwipeInts.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

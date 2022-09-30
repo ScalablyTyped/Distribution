@@ -1,6 +1,5 @@
 package typings.typedoc.jsxElementsMod
 
-import typings.typedoc.typedocStrings.`DollarLeftcurlybracketQuotationmarknoneQuotationmark Verticalline QuotationmarkxMinYMinQuotationmark Verticalline QuotationmarkxMaxYMinQuotationmark Verticalline QuotationmarkxMinYMidQuotationmark Verticalline QuotationmarkxMaxYMidQuotationmark Verticalline QuotationmarkxMinYMaxQuotationmark Verticalline QuotationmarkxMidYMaxQuotationmark Verticalline QuotationmarkxMaxYMaxQuotationmarkRightcurlybracketDollarLeftcurlybracketQuotationmarkQuotationmark Verticalline Quotationmark meetQuotationmark V`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait JsxSvgElementProps
   var height: js.UndefOr[String | Double] = js.undefined
   
   var preserveAspectRatio: js.UndefOr[
-    `DollarLeftcurlybracketQuotationmarknoneQuotationmark Verticalline QuotationmarkxMinYMinQuotationmark Verticalline QuotationmarkxMaxYMinQuotationmark Verticalline QuotationmarkxMinYMidQuotationmark Verticalline QuotationmarkxMaxYMidQuotationmark Verticalline QuotationmarkxMinYMaxQuotationmark Verticalline QuotationmarkxMidYMaxQuotationmark Verticalline QuotationmarkxMaxYMaxQuotationmarkRightcurlybracketDollarLeftcurlybracketQuotationmarkQuotationmark Verticalline Quotationmark meetQuotationmark V`
+    /* template literal string: ${none|xMinYMin|xMaxYMin|xMinYMid|xMaxYMid|xMinYMax|xMidYMax|xMaxYMax}${| meet| slice} */ String
   ] = js.undefined
   
   var viewBox: js.UndefOr[String] = js.undefined
@@ -39,7 +38,7 @@ object JsxSvgElementProps {
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setPreserveAspectRatio(
-      value: `DollarLeftcurlybracketQuotationmarknoneQuotationmark Verticalline QuotationmarkxMinYMinQuotationmark Verticalline QuotationmarkxMaxYMinQuotationmark Verticalline QuotationmarkxMinYMidQuotationmark Verticalline QuotationmarkxMaxYMidQuotationmark Verticalline QuotationmarkxMinYMaxQuotationmark Verticalline QuotationmarkxMidYMaxQuotationmark Verticalline QuotationmarkxMaxYMaxQuotationmarkRightcurlybracketDollarLeftcurlybracketQuotationmarkQuotationmark Verticalline Quotationmark meetQuotationmark V`
+      value: /* template literal string: ${none|xMinYMin|xMaxYMin|xMinYMid|xMaxYMid|xMinYMax|xMidYMax|xMaxYMax}${| meet| slice} */ String
     ): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
     inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)

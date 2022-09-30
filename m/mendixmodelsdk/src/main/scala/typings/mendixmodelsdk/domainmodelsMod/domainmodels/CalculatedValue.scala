@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IValueType because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.ICalculatedValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CalculatedValue")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.ICalculatedValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CalculatedValue")
 @js.native
-class CalculatedValue protected () extends ValueType {
+open class CalculatedValue protected () extends ValueType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -47,7 +47,7 @@ class CalculatedValue protected () extends ValueType {
 }
 object CalculatedValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CalculatedValue")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CalculatedValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -68,13 +68,13 @@ object CalculatedValue {
   inline def createIn(container: Attribute): CalculatedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CalculatedValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CalculatedValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CalculatedValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.CalculatedValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.CalculatedValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

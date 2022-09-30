@@ -3,8 +3,6 @@ package typings.hyperdeckJsLib
 import org.scalablytyped.runtime.StringDictionary
 import typings.hyperdeckJsLib.anon.Connected
 import typings.hyperdeckJsLib.anon.Ip
-import typings.hyperdeckJsLib.hyperdeckJsLibStrings.DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
-import typings.hyperdeckJsLib.hyperdeckJsLibStrings.`DollarLeftcurlybracketstringRightcurlybracket DollarLeftcurlybracketTimecodeRightcurlybracket DollarLeftcurlybracketTimecodeRightcurlybracket`
 import typings.hyperdeckJsLib.hyperdeckJsLibStrings.`false`
 import typings.hyperdeckJsLib.hyperdeckJsLibStrings.`true`
 import typings.hyperdeckJsLib.hyperdeckJsLibStrings.asynchronousEvent
@@ -95,9 +93,7 @@ object mod {
       def once_connectionStateChange(event: connectionStateChange, callback: js.Function1[/* response */ Connected, Unit]): this.type = js.native
     }
     
-    type ClipList = StringDictionary[
-        `DollarLeftcurlybracketstringRightcurlybracket DollarLeftcurlybracketTimecodeRightcurlybracket DollarLeftcurlybracketTimecodeRightcurlybracket`
-      ]
+    type ClipList = StringDictionary[/* template literal string: ${string} ${Timecode} ${Timecode} */ String]
     
     type Config = String | Ip
     
@@ -263,7 +259,7 @@ object mod {
     }
     
     /** Format is `hours:minutes:seconds:frames` */
-    type Timecode = DollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
+    type Timecode = /* template literal string: ${number}:${number}:${number}:${number} */ String
     
     trait TransportInfo extends StObject {
       

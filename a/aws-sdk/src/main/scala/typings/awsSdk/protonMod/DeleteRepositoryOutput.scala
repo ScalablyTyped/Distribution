@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRepositoryOutput extends StObject {
   
   /**
-    * The repository detail data that's returned by Proton.
+    * The deleted repository link's detail data that's returned by Proton.
     */
   var repository: js.UndefOr[Repository] = js.undefined
 }

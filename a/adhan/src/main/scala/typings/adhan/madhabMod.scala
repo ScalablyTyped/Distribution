@@ -1,7 +1,7 @@
 package typings.adhan
 
-import typings.adhan.adhanNumbers.`1`
-import typings.adhan.adhanNumbers.`2`
+import typings.adhan.adhanInts.`1`
+import typings.adhan.adhanInts.`2`
 import typings.adhan.adhanStrings.hanafi
 import typings.adhan.adhanStrings.shafi
 import typings.adhan.anon.Hanafi

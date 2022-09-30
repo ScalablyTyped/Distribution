@@ -20,16 +20,13 @@ type MultiSize = js.Array[SingleSize]
   * Named sizes that a slot can have. In most cases size is a fixed-size
   * rectangle but there are some cases when we need other kinds of size
   * specifications. Only the following are valid named sizes:
-  *  <ul>
-  *   <li><b>'fluid'</b>: the ad container takes 100% width of parent div and
-  *       then resizes its height to fit creative content. Similar to how
-  *       regular block elements on a page behave. Used for native ads (see
-  *       [related
-  *       article](https://support.google.com/admanager/answer/6366845)). Note
-  *       that both 'fluid' and ['fluid'] are acceptable forms to declare a slot
-  *       size as fluid.
-  *   </li>
-  * </ul>
+  *
+  * - **fluid**: the ad container takes 100% width of parent div and then
+  *   resizes its height to fit creative content. Similar to how regular block
+  *   elements on a page behave. Used for native ads (see
+  *   [related article](https://support.google.com/admanager/answer/6366845)).
+  *   Note that both `fluid` and `['fluid']` are acceptable forms to declare a
+  *   slot size as fluid.
   */
 type NamedSize = fluid | js.Array[fluid]
 

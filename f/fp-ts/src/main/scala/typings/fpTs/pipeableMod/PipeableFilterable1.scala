@@ -25,7 +25,7 @@ trait PipeableFilterable1[F /* <: /* import warning: transforms.QualifyReference
   ] = js.native
   
   @JSName("filter")
-  def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
+  def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ Any
   ] = js.native
@@ -47,7 +47,7 @@ trait PipeableFilterable1[F /* <: /* import warning: transforms.QualifyReference
   ] = js.native
   
   @JSName("partition")
-  def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
+  def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ Any, 
     Separated[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, 

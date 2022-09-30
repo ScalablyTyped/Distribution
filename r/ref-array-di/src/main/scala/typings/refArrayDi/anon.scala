@@ -30,6 +30,7 @@ object anon {
     
     def apply[T](`type`: TypeLike): ArrayType[T] = js.native
     def apply[T](`type`: TypeLike, length: Double): ArrayType[T] = js.native
-    def apply[TType /* <: TypeLike */, TLength /* <: Double */](`type`: TType, length: TLength): FixedLengthArrayType[UnderlyingType[TType], TLength] = js.native
+    // NOTE: The `ref.NamedType` overload is a subset of the `ref.TypeLike` overload, but provides better completions.
+    def apply[TType /* <: NamedType */, TLength /* <: Double */](`type`: TType, length: TLength): FixedLengthArrayType[UnderlyingType[TType], TLength] = js.native
   }
 }

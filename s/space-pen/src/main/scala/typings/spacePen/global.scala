@@ -390,7 +390,7 @@ object global {
     inline def table(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("table")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
     
     /* static member */
-    inline def tag(tagName: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tag")(List(tagName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def tag(tagName: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tag")(scala.List(tagName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     /* static member */
     inline def tbody(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tbody")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]

@@ -80,7 +80,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -88,7 +88,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -130,7 +130,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -138,7 +138,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -497,7 +497,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -590,7 +590,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -598,7 +598,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -640,7 +640,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -648,7 +648,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1007,7 +1007,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -1100,7 +1100,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1108,7 +1108,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1150,7 +1150,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1158,7 +1158,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1517,7 +1517,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -1613,7 +1613,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1621,7 +1621,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1663,7 +1663,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -1671,7 +1671,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2030,7 +2030,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -2123,7 +2123,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2131,7 +2131,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2173,7 +2173,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2181,7 +2181,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2540,7 +2540,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -2633,7 +2633,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2641,7 +2641,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2683,7 +2683,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -2691,7 +2691,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3050,7 +3050,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -3143,7 +3143,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3151,7 +3151,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3193,7 +3193,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3201,7 +3201,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3560,7 +3560,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -3653,7 +3653,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3661,7 +3661,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3703,7 +3703,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -3711,7 +3711,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4070,7 +4070,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -4163,7 +4163,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4171,7 +4171,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4213,7 +4213,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4221,7 +4221,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4580,7 +4580,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -4681,7 +4681,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4689,7 +4689,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4731,7 +4731,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -4739,7 +4739,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5098,7 +5098,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -5191,7 +5191,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5199,7 +5199,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5241,7 +5241,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5249,7 +5249,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5608,7 +5608,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -5701,7 +5701,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5709,7 +5709,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5751,7 +5751,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -5759,7 +5759,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -6118,7 +6118,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.
@@ -6211,7 +6211,7 @@ object mod {
       * If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -6219,7 +6219,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-    inline def every_S_String[S /* <: String */](
+    inline def every_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -6261,7 +6261,7 @@ object mod {
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
     /* standard es5 */
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -6269,7 +6269,7 @@ object mod {
           /* is S */ Boolean
         ]
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
-    inline def filter_S_String[S /* <: String */](
+    inline def filter_S[S /* <: String */](
       predicate: js.Function3[
           /* value */ String, 
           /* index */ Double, 
@@ -6628,7 +6628,7 @@ object mod {
       * @returns An array containing the elements that were deleted.
       */
     /* standard es5 */
-    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+    inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
     
     /**
       * Returns a string representation of an array. The elements are converted to string using their toLocaleString methods.

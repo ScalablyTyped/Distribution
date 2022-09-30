@@ -10,10 +10,10 @@ A simple loading control for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-loading |
 | Keywords           | leaflet, map, maps, gis, geoweb, loading |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 48489 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5120.0 |
+| # stars            | 131.0 |
 
 ## Links
 - [Homepage](https://github.com/ebrelsford/Leaflet.loading)

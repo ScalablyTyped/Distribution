@@ -29,19 +29,19 @@ object TGATools {
   
   /**
     * Uploads TGA content to a Babylon Texture
-    * @hidden
+    * @internal
     */
   @JSImport("babylonjs/Misc/index", "TGATools.UploadContent")
   @js.native
   def UploadContent: js.Function2[/* texture */ InternalTexture, /* data */ js.typedarray.Uint8Array, Unit] = js.native
   /**
     * Uploads TGA content to a Babylon Texture
-    * @hidden
+    * @internal
     */
   inline def UploadContent(texture: InternalTexture, data: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("UploadContent")(texture.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def UploadContent_=(x: js.Function2[/* texture */ InternalTexture, /* data */ js.typedarray.Uint8Array, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UploadContent")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Misc/index", "TGATools._getImageData16bits")
   @js.native
   def getImageData16bits: js.Function9[
@@ -57,7 +57,7 @@ object TGATools {
     js.typedarray.Uint8Array
   ] = js.native
   
-  /** @hidden */
+  /** @internal */
   inline def getImageData16bits(
     header: Any,
     palettes: js.typedarray.Uint8Array,
@@ -84,7 +84,7 @@ object TGATools {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getImageData16bits")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Misc/index", "TGATools._getImageData24bits")
   @js.native
   def getImageData24bits: js.Function9[
@@ -100,7 +100,7 @@ object TGATools {
     js.typedarray.Uint8Array
   ] = js.native
   
-  /** @hidden */
+  /** @internal */
   inline def getImageData24bits(
     header: Any,
     palettes: js.typedarray.Uint8Array,
@@ -127,7 +127,7 @@ object TGATools {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getImageData24bits")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Misc/index", "TGATools._getImageData32bits")
   @js.native
   def getImageData32bits: js.Function9[
@@ -143,7 +143,7 @@ object TGATools {
     js.typedarray.Uint8Array
   ] = js.native
   
-  /** @hidden */
+  /** @internal */
   inline def getImageData32bits(
     header: Any,
     palettes: js.typedarray.Uint8Array,
@@ -170,7 +170,7 @@ object TGATools {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getImageData32bits")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Misc/index", "TGATools._getImageData8bits")
   @js.native
   def getImageData8bits: js.Function9[
@@ -186,7 +186,7 @@ object TGATools {
     js.typedarray.Uint8Array
   ] = js.native
   
-  /** @hidden */
+  /** @internal */
   inline def getImageData8bits(
     header: Any,
     palettes: js.typedarray.Uint8Array,
@@ -213,7 +213,7 @@ object TGATools {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getImageData8bits")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Misc/index", "TGATools._getImageDataGrey16bits")
   @js.native
   def getImageDataGrey16bits: js.Function9[
@@ -229,7 +229,7 @@ object TGATools {
     js.typedarray.Uint8Array
   ] = js.native
   
-  /** @hidden */
+  /** @internal */
   inline def getImageDataGrey16bits(
     header: Any,
     palettes: js.typedarray.Uint8Array,
@@ -256,7 +256,7 @@ object TGATools {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getImageDataGrey16bits")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Misc/index", "TGATools._getImageDataGrey8bits")
   @js.native
   def getImageDataGrey8bits: js.Function9[
@@ -272,7 +272,7 @@ object TGATools {
     js.typedarray.Uint8Array
   ] = js.native
   
-  /** @hidden */
+  /** @internal */
   inline def getImageDataGrey8bits(
     header: Any,
     palettes: js.typedarray.Uint8Array,

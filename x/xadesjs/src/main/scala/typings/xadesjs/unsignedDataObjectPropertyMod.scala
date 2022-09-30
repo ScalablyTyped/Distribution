@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object unsignedDataObjectPropertyMod {
   
-  @JSImport("xadesjs/build/types/xml/unsigned_data_object_property", "UnsignedDataObjectProperties")
+  @JSImport("xadesjs/build/types/src/xml/unsigned_data_object_property", "UnsignedDataObjectProperties")
   @js.native
-  class UnsignedDataObjectProperties () extends XadesCollection[UnsignedDataObjectProperty] {
+  open class UnsignedDataObjectProperties () extends XadesCollection[UnsignedDataObjectProperty] {
     def this(properties: js.Object) = this()
     
     var Id: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/unsigned_data_object_property", "UnsignedDataObjectProperty")
+  @JSImport("xadesjs/build/types/src/xml/unsigned_data_object_property", "UnsignedDataObjectProperty")
   @js.native
-  class UnsignedDataObjectProperty () extends Any {
+  open class UnsignedDataObjectProperty () extends Any {
     def this(properties: js.Object) = this()
   }
 }

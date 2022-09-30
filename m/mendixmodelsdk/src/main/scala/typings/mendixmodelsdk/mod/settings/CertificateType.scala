@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.CertificateType")
 @js.native
-class CertificateType protected ()
+open class CertificateType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.CertificateType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

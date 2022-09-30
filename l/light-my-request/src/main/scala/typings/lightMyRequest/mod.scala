@@ -20,6 +20,7 @@ import typings.node.httpMod.RequestListener
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import typings.node.nodeNetMod.Socket
+import typings.std.Promise
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -61,7 +62,8 @@ object mod {
   
   @js.native
   trait Chain
-    extends js.Promise[Response] {
+    extends StObject
+       with Promise[Response] {
     
     def body(body: InjectPayload): Chain = js.native
     

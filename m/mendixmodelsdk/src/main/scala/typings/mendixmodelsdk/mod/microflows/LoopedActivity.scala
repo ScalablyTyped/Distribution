@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.LoopedActivity")
 @js.native
-class LoopedActivity protected ()
+open class LoopedActivity protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.LoopedActivity {
   def this(
     model: AbstractModel,

@@ -1,5 +1,6 @@
 package typings.sentryUtils
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +18,11 @@ object promisebufferMod {
   trait PromiseBuffer[T] extends StObject {
     
     @JSName("$")
-    var $: js.Array[js.Thenable[T]] = js.native
+    var $: js.Array[PromiseLike[T]] = js.native
     
-    def add(taskProducer: js.Function0[js.Thenable[T]]): js.Thenable[T] = js.native
+    def add(taskProducer: js.Function0[PromiseLike[T]]): PromiseLike[T] = js.native
     
-    def drain(): js.Thenable[Boolean] = js.native
-    def drain(timeout: Double): js.Thenable[Boolean] = js.native
+    def drain(): PromiseLike[Boolean] = js.native
+    def drain(timeout: Double): PromiseLike[Boolean] = js.native
   }
 }

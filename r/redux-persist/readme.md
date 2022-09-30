@@ -10,15 +10,12 @@ persist and rehydrate redux stores
 | ------------------ | :-------------: |
 | Full name          | redux-persist |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 388 |
-| # downloads        | 21587800 |
-| # stars            | 34 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2988479.3333333335 |
+| # stars            | 12164.0 |
 
 ## Links
-- [Homepage](https://github.com/rt2zz/redux-persist#readme)
-- [Bugs](https://github.com/rt2zz/redux-persist/issues)
-- [Repository](https://github.com/rt2zz/redux-persist)
 - [Npm](https://www.npmjs.com/package/redux-persist)
     
 

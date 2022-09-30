@@ -27,7 +27,7 @@ trait BodyLoadOptions extends StObject {
   var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body.
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an `ItemNotFound` error if there isn't a parent body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -35,7 +35,7 @@ trait BodyLoadOptions extends StObject {
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body.
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a parent body, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -43,7 +43,7 @@ trait BodyLoadOptions extends StObject {
   var parentBodyOrNullObject: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the body. Throws an error if there isn't a parent content control.
+    * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -51,7 +51,7 @@ trait BodyLoadOptions extends StObject {
   var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
+    * Gets the content control that contains the body. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -59,7 +59,7 @@ trait BodyLoadOptions extends StObject {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the parent section of the body. Throws an error if there isn't a parent section.
+    * Gets the parent section of the body. Throws an `ItemNotFound` error if there isn't a parent section.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -67,7 +67,7 @@ trait BodyLoadOptions extends StObject {
   var parentSection: js.UndefOr[SectionLoadOptions] = js.undefined
   
   /**
-    * Gets the parent section of the body. Returns a null object if there isn't a parent section.
+    * Gets the parent section of the body. If there isn't a parent section, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait BodyLoadOptions extends StObject {
   var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the text of the body. Use the insertText method to insert text. Read-only.
+    * Gets the text of the body. Use the insertText method to insert text.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -99,7 +99,7 @@ trait BodyLoadOptions extends StObject {
   var text: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
     *
     * @remarks
     * [Api set: WordApi 1.3]

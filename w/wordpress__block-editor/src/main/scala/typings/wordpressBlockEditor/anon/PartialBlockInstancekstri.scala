@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.BlockInstance<{[k: string] : any}>> */
 trait PartialBlockInstancekstri extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var clientId: js.UndefOr[String] = js.undefined
   
-  var innerBlocks: js.UndefOr[js.Array[BlockInstance[StringDictionary[js.Any]]]] = js.undefined
+  var innerBlocks: js.UndefOr[js.Array[BlockInstance[StringDictionary[Any]]]] = js.undefined
   
   var isValid: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +30,7 @@ object PartialBlockInstancekstri {
   
   extension [Self <: PartialBlockInstancekstri](x: Self) {
     
-    inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
@@ -38,11 +38,11 @@ object PartialBlockInstancekstri {
     
     inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+    inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
     
     inline def setInnerBlocksUndefined: Self = StObject.set(x, "innerBlocks", js.undefined)
     
-    inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
+    inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value*))
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

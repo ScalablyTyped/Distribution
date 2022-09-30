@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-reconciler
 
-Typings are for version 0.18
+Typings are for version 0.28
 
 ## Library description:
 React package for creating custom renderers.
@@ -10,10 +10,10 @@ React package for creating custom renderers.
 | ------------------ | :-------------: |
 | Full name          | react-reconciler |
 | Keywords           | react |
-| # releases         | 133 |
-| # dependents       | 244 |
-| # downloads        | 38748812 |
-| # stars            | 1 |
+| # releases         | 763 |
+| # dependents       | 0.0 |
+| # downloads        | 4420534.666666667 |
+| # stars            | 195364.0 |
 
 ## Links
 - [Homepage](https://reactjs.org/)

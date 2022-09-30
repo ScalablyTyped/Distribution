@@ -1,8 +1,8 @@
 package typings.reduxForm
 
 import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.reduxForm.anon.Form
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,11 +12,11 @@ object formNameMod extends Shortcut {
   
   @JSImport("redux-form/lib/FormName", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FormNameProps] = js.native
+  val default: FunctionComponent[FormNameProps] = js.native
   
   @JSImport("redux-form/lib/FormName", "FormName")
   @js.native
-  val FormName: StatelessComponent[FormNameProps] = js.native
+  val FormName: FunctionComponent[FormNameProps] = js.native
   
   trait FormNameProps extends StObject {
     
@@ -35,8 +35,8 @@ object formNameMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FormNameProps]
+  type _To = FunctionComponent[FormNameProps]
   
   /* This means you don't have to write `default`, but can instead just say `formNameMod.foo` */
-  override def _to: StatelessComponent[FormNameProps] = default
+  override def _to: FunctionComponent[FormNameProps] = default
 }

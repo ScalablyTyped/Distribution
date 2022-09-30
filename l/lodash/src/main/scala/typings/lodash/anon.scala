@@ -2,11 +2,10 @@ package typings.lodash
 
 import typings.lodash.mod.ArrayIterator
 import typings.lodash.mod.Collection
-import typings.lodash.mod.List
+import typings.lodash.mod.Function
 import typings.lodash.mod.ListIterator
 import typings.lodash.mod.MapCacheConstructor
 import typings.lodash.mod.MemoizedFunction
-import typings.lodash.mod.Object
 import typings.lodash.mod.ObjectIterator
 import typings.lodash.mod.StringIterator
 import typings.std.Parameters
@@ -31,16 +30,16 @@ object anon {
     def apply(collection: String): String = js.native
     def apply(collection: String, iteratee: StringIterator[Any]): String = js.native
     def apply[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
-    def apply[TString /* <: js.UndefOr[String | Null] */](collection: TString): TString = js.native
-    def apply[TString /* <: js.UndefOr[String | Null] */](collection: TString, iteratee: StringIterator[Any]): TString = js.native
+    def apply[T /* <: js.Object */](collection: T): js.UndefOr[T | Null] = js.native
+    def apply[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, Any]): js.UndefOr[T | Null] = js.native
     def apply[T](collection: js.Array[T]): js.Array[T] = js.native
     def apply[T](collection: js.Array[T], iteratee: ArrayIterator[T, Any]): js.Array[T] = js.native
     def apply[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, Any]): js.UndefOr[T | Null] = js.native
     def apply[T /* <: js.Object */](collection: Unit, iteratee: ObjectIterator[T, Any]): js.UndefOr[T | Null] = js.native
-    def apply[T](collection: List[T]): List[T] = js.native
-    def apply[T](collection: List[T], iteratee: ListIterator[T, Any]): List[T] = js.native
-    def apply[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: Unit & TList): TList = js.native
-    def apply[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: Null & TList): TList = js.native
+    def apply[T](collection: typings.lodash.mod.List[T]): typings.lodash.mod.List[T] = js.native
+    def apply[T](collection: typings.lodash.mod.List[T], iteratee: ListIterator[T, Any]): typings.lodash.mod.List[T] = js.native
+    def apply[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: Unit & TArray): TArray = js.native
+    def apply[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: Null & TArray): TArray = js.native
   }
   
   trait Length extends StObject {
@@ -99,7 +98,7 @@ object anon {
     
     def apply(): typings.lodash.mod.String = js.native
     def apply(value: String): typings.lodash.mod.String = js.native
-    def apply[T /* <: js.Object */](value: T): Object[T] = js.native
-    def apply[T](value: List[T]): Collection[T] = js.native
+    def apply[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+    def apply[T](value: typings.lodash.mod.List[T]): Collection[T] = js.native
   }
 }

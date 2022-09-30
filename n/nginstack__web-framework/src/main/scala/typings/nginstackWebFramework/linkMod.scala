@@ -6,38 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object linkMod {
   
-  inline def apply(name: String, target: String, processKey: Double, newTab: Boolean, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def apply(name: String, target: String, processKey: Double, newTab: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def apply(name: String, target: String, processKey: Unit, newTab: Boolean, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def apply(name: String, target: String, processKey: Unit, newTab: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def apply(name: String, target: String, processKey: Double, newTab: Boolean, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def apply(name: String, target: String, processKey: Double, newTab: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def apply(name: String, target: String, processKey: Unit, newTab: Boolean, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def apply(name: String, target: String, processKey: Unit, newTab: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     name: String,
     target: js.Function1[/* arg0 */ Any, Any],
     processKey: Double,
     newTab: Boolean,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     name: String,
     target: js.Function1[/* arg0 */ Any, Any],
     processKey: Double,
     newTab: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     name: String,
     target: js.Function1[/* arg0 */ Any, Any],
     processKey: Unit,
     newTab: Boolean,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   inline def apply(
     name: String,
     target: js.Function1[/* arg0 */ Any, Any],
     processKey: Unit,
     newTab: Unit,
     args: Any*
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], processKey.asInstanceOf[js.Any], newTab.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   @JSImport("@nginstack/web-framework/lib/anchor/Link", JSImport.Namespace)
   @js.native

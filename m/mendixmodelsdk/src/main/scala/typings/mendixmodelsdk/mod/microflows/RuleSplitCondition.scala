@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.RuleSplitCondition")
 @js.native
-class RuleSplitCondition protected ()
+open class RuleSplitCondition protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.RuleSplitCondition {
   def this(
     model: AbstractModel,

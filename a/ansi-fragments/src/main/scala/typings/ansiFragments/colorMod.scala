@@ -26,7 +26,7 @@ object colorMod {
     /* private */ val color: Any = js.native
   }
   
-  inline def color(ansiColor: AnsiColor, children: (String | IFragment)*): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(List(ansiColor.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Color_]
+  inline def color(ansiColor: AnsiColor, children: (String | IFragment)*): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(scala.List(ansiColor.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Color_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.black

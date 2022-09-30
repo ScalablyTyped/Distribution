@@ -23,10 +23,6 @@ object tslintStrings {
   inline def `Shorthand method assignments have been disallowedDot`: `Shorthand method assignments have been disallowedDot` = ("Shorthand method assignments have been disallowed.").asInstanceOf[`Shorthand method assignments have been disallowedDot`]
   
   @js.native
-  sealed trait `Shorthand property and method assignments have been disallowedDot` extends StObject
-  inline def `Shorthand property and method assignments have been disallowedDot`: `Shorthand property and method assignments have been disallowedDot` = ("Shorthand property and method assignments have been disallowed.").asInstanceOf[`Shorthand property and method assignments have been disallowedDot`]
-  
-  @js.native
   sealed trait `Shorthand property assignments have been disallowedDot` extends StObject
   inline def `Shorthand property assignments have been disallowedDot`: `Shorthand property assignments have been disallowedDot` = ("Shorthand property assignments have been disallowed.").asInstanceOf[`Shorthand property assignments have been disallowedDot`]
   

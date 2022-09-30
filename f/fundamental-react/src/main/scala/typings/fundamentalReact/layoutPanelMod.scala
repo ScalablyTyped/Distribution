@@ -4,11 +4,11 @@ import typings.fundamentalReact.anon.PartialHTMLAttributesHTML
 import typings.fundamentalReact.anon.PartialLayoutPanelHeadPro
 import typings.fundamentalReact.anon.WeakValidationMapHTMLAttr
 import typings.fundamentalReact.anon.WeakValidationMapLayoutPa
-import typings.fundamentalReact.fundamentalReactNumbers.`2`
-import typings.fundamentalReact.fundamentalReactNumbers.`3`
-import typings.fundamentalReact.fundamentalReactNumbers.`4`
-import typings.fundamentalReact.fundamentalReactNumbers.`5`
-import typings.fundamentalReact.fundamentalReactNumbers.`6`
+import typings.fundamentalReact.fundamentalReactInts.`2`
+import typings.fundamentalReact.fundamentalReactInts.`3`
+import typings.fundamentalReact.fundamentalReactInts.`4`
+import typings.fundamentalReact.fundamentalReactInts.`5`
+import typings.fundamentalReact.fundamentalReactInts.`6`
 import typings.fundamentalReact.fundamentalReactStrings.LayoutPanelDotActions
 import typings.fundamentalReact.fundamentalReactStrings.LayoutPanelDotBody
 import typings.fundamentalReact.fundamentalReactStrings.LayoutPanelDotFilters

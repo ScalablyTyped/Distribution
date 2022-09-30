@@ -10,9 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addMod32(uint32val0: Double, optionalValues: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("addMod32")(List(uint32val0.asInstanceOf[js.Any]).`++`(optionalValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def addMod32(uint32val0: Double, optionalValues: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("addMod32")(scala.List(uint32val0.asInstanceOf[js.Any]).`++`(optionalValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
-  inline def and(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def and(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(scala.List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
   inline def choose(x: Double, y: Double, z: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -32,7 +32,7 @@ object mod {
   
   inline def not(uint32val: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(uint32val.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def or(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def or(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(scala.List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
   inline def rotateLeft(uint32val: Double, numBits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateLeft")(uint32val.asInstanceOf[js.Any], numBits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -47,5 +47,5 @@ object mod {
   
   inline def toUint32(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toUint32")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def xor(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def xor(uint32val0: Double, argv: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(scala.List(uint32val0.asInstanceOf[js.Any]).`++`(argv.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
 }

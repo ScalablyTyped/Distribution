@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Activity
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var ccy_exec_peak: js.Array[Double]
   
@@ -33,18 +33,18 @@ object Activity {
     
     inline def setCcy_exec_peak(value: js.Array[Double]): Self = StObject.set(x, "ccy_exec_peak", value.asInstanceOf[js.Any])
     
-    inline def setCcy_exec_peakVarargs(value: Double*): Self = StObject.set(x, "ccy_exec_peak", js.Array(value :_*))
+    inline def setCcy_exec_peakVarargs(value: Double*): Self = StObject.set(x, "ccy_exec_peak", js.Array(value*))
     
     inline def setDatestamp(value: js.Array[String]): Self = StObject.set(x, "datestamp", value.asInstanceOf[js.Any])
     
-    inline def setDatestampVarargs(value: String*): Self = StObject.set(x, "datestamp", js.Array(value :_*))
+    inline def setDatestampVarargs(value: String*): Self = StObject.set(x, "datestamp", js.Array(value*))
     
     inline def setJobs(value: js.Array[Double]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    inline def setJobsVarargs(value: Double*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Double*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setMinutes(value: js.Array[Double]): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    inline def setMinutesVarargs(value: Double*): Self = StObject.set(x, "minutes", js.Array(value :_*))
+    inline def setMinutesVarargs(value: Double*): Self = StObject.set(x, "minutes", js.Array(value*))
   }
 }

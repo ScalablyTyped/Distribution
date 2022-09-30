@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object enumPropertyMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/EnumProperty", "EnumProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/EnumProperty", "EnumProperty")
   @js.native
-  class EnumProperty[T /* <: AbstractEnum */] protected () extends PrimitiveProperty[T] {
+  open class EnumProperty[T /* <: AbstractEnum */] protected () extends PrimitiveProperty[T] {
     def this(
       declaredOn: IStructureClass,
       parent: Structure[IAbstractModel, IContainer | Null],
@@ -27,6 +27,6 @@ object enumPropertyMod {
     
     /* protected */ var enumType: Instantiable2[/* key */ String, /* lifeCycle */ ILifeCycle, AbstractEnum] = js.native
     
-    /* private */ var initialValue: js.Any = js.native
+    /* private */ var initialValue: Any = js.native
   }
 }

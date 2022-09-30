@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-resource
 
-Typings are for version 1.5.1
+Typings are for version 1.5.3
 
 ## Library description:
 The HTTP client for Vue.js
@@ -10,13 +10,13 @@ The HTTP client for Vue.js
 | ------------------ | :-------------: |
 | Full name          | vue-resource |
 | Keywords           | vue, xhr, http, ajax |
-| # releases         | 0 |
-| # dependents       | 391 |
-| # downloads        | 3435198 |
-| # stars            | 41 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 280672.0 |
+| # stars            | 10131.0 |
 
 ## Links
-- [Homepage](https://github.com/pagekit/vue-resource#readme)
+- [Homepage](https://github.com/pagekit/vue-resource)
 - [Bugs](https://github.com/pagekit/vue-resource/issues)
 - [Repository](https://github.com/pagekit/vue-resource)
 - [Npm](https://www.npmjs.com/package/vue-resource)

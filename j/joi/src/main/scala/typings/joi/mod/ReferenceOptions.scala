@@ -48,7 +48,7 @@ trait ReferenceOptions
   var prefix: js.UndefOr[Global] = js.undefined
   
   /**
-    * when true, the value of the reference is used instead of its name in error messages 
+    * when true, the value of the reference is used instead of its name in error messages
     * and template rendering. Defaults to false.
     */
   var render: js.UndefOr[Boolean] = js.undefined

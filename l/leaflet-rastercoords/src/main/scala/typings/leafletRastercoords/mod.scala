@@ -1,5 +1,6 @@
 package typings.leafletRastercoords
 
+import typings.leaflet.mod.LatLngBounds_
 import typings.leaflet.mod.LatLngExpression
 import typings.leaflet.mod.LatLng_
 import typings.leaflet.mod.Map_
@@ -14,9 +15,11 @@ object mod {
   
   @JSImport("leaflet", "RasterCoords")
   @js.native
-  class RasterCoords protected () extends StObject {
+  open class RasterCoords protected () extends StObject {
     def this(map: Map_, imgsize: js.Array[Double]) = this()
     def this(map: Map_, imgsize: js.Array[Double], tilesize: Double) = this()
+    
+    def getMaxBounds(): LatLngBounds_ = js.native
     
     def project(coords: LatLngExpression): Point_ = js.native
     

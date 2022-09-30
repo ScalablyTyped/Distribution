@@ -10,15 +10,12 @@ A request library that returns promises, inspired by request
 | ------------------ | :-------------: |
 | Full name          | then-request |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 79 |
-| # downloads        | 12824432 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1851735.0 |
+| # stars            | 238.0 |
 
 ## Links
-- [Homepage](https://github.com/then/then-request#readme)
-- [Bugs](https://github.com/then/then-request/issues)
-- [Repository](https://github.com/then/then-request)
 - [Npm](https://www.npmjs.com/package/then-request)
     
 

@@ -1,15 +1,15 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`10`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`11`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`12`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`13`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`4`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`5`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`6`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`7`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`8`
-import typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`9`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`10`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`11`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`12`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`13`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`4`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`5`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`6`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`7`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`8`
+import typings.orbitUiReactComponents.orbitUiReactComponentsInts.`9`
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.end
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.group
 import typings.orbitUiReactComponents.orbitUiReactComponentsStrings.horizontal
@@ -35,7 +35,7 @@ trait Align extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var gap: js.UndefOr[
-    typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`0` | typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`1` | typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`2` | typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | String
+    typings.orbitUiReactComponents.orbitUiReactComponentsInts.`0` | typings.orbitUiReactComponents.orbitUiReactComponentsInts.`1` | typings.orbitUiReactComponents.orbitUiReactComponentsInts.`2` | typings.orbitUiReactComponents.orbitUiReactComponentsInts.`3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | String
   ] = js.undefined
   
   var `inline`: js.UndefOr[Boolean] = js.undefined
@@ -82,7 +82,7 @@ object Align {
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     inline def setGap(
-      value: typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`0` | typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`1` | typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`2` | typings.orbitUiReactComponents.orbitUiReactComponentsNumbers.`3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | String
+      value: typings.orbitUiReactComponents.orbitUiReactComponentsInts.`0` | typings.orbitUiReactComponents.orbitUiReactComponentsInts.`1` | typings.orbitUiReactComponents.orbitUiReactComponentsInts.`2` | typings.orbitUiReactComponents.orbitUiReactComponentsInts.`3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `13` | String
     ): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)

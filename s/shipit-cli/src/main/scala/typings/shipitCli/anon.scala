@@ -4,6 +4,7 @@ import typings.node.childProcessMod.ExecOptions
 import typings.shipitCli.mod.EmptyCallback
 import typings.shipitCli.mod.ShipitLocal
 import typings.shipitCli.mod.Tasks_
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +19,11 @@ object anon {
     def blTask(name: String, depsOrFn: EmptyCallback): Any = js.native
     def blTask(name: String, depsOrFn: EmptyCallback, fn: js.Function0[Unit]): Any = js.native
     
-    def copyFromRemote(src: String, dest: String): js.Thenable[ShipitLocal] = js.native
-    def copyFromRemote(src: String, dest: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
+    def copyFromRemote(src: String, dest: String): PromiseLike[ShipitLocal] = js.native
+    def copyFromRemote(src: String, dest: String, options: ExecOptions): PromiseLike[ShipitLocal] = js.native
     
-    def copyToRemote(src: String, dest: String): js.Thenable[ShipitLocal] = js.native
-    def copyToRemote(src: String, dest: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
+    def copyToRemote(src: String, dest: String): PromiseLike[ShipitLocal] = js.native
+    def copyToRemote(src: String, dest: String, options: ExecOptions): PromiseLike[ShipitLocal] = js.native
     
     val domain: Any = js.native
     
@@ -36,51 +37,51 @@ object anon {
     
     val isRunning: Boolean = js.native
     
-    def local(command: String): js.Thenable[ShipitLocal] = js.native
+    def local(command: String): PromiseLike[ShipitLocal] = js.native
     def local(
       command: String,
       options: Unit,
       callback: js.Function3[/* error */ js.Error, /* stdout */ String, /* stderr */ String, Unit]
-    ): js.Thenable[ShipitLocal] = js.native
-    def local(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
+    ): PromiseLike[ShipitLocal] = js.native
+    def local(command: String, options: ExecOptions): PromiseLike[ShipitLocal] = js.native
     def local(
       command: String,
       options: ExecOptions,
       callback: js.Function3[/* error */ js.Error, /* stdout */ String, /* stderr */ String, Unit]
-    ): js.Thenable[ShipitLocal] = js.native
+    ): PromiseLike[ShipitLocal] = js.native
     
     def log(log: Any*): Unit = js.native
     def log(log: Any): Unit = js.native
     
     def on(name: String, callback: js.Function1[/* e */ Any, Unit]): Any = js.native
     
-    def remote(command: String): js.Thenable[ShipitLocal] = js.native
+    def remote(command: String): PromiseLike[ShipitLocal] = js.native
     def remote(
       command: String,
       options: Unit,
       callback: js.Function3[/* error */ js.Error, /* stdout */ String, /* stderr */ String, Unit]
-    ): js.Thenable[ShipitLocal] = js.native
-    def remote(command: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
+    ): PromiseLike[ShipitLocal] = js.native
+    def remote(command: String, options: ExecOptions): PromiseLike[ShipitLocal] = js.native
     def remote(
       command: String,
       options: ExecOptions,
       callback: js.Function3[/* error */ js.Error, /* stdout */ String, /* stderr */ String, Unit]
-    ): js.Thenable[ShipitLocal] = js.native
+    ): PromiseLike[ShipitLocal] = js.native
     
-    def remoteCopy(src: String, dest: String): js.Thenable[ShipitLocal] = js.native
+    def remoteCopy(src: String, dest: String): PromiseLike[ShipitLocal] = js.native
     def remoteCopy(
       src: String,
       dest: String,
       options: Unit,
       callback: js.Function3[/* error */ js.Error, /* stdout */ String, /* stderr */ String, Unit]
-    ): js.Thenable[ShipitLocal] = js.native
-    def remoteCopy(src: String, dest: String, options: ExecOptions): js.Thenable[ShipitLocal] = js.native
+    ): PromiseLike[ShipitLocal] = js.native
+    def remoteCopy(src: String, dest: String, options: ExecOptions): PromiseLike[ShipitLocal] = js.native
     def remoteCopy(
       src: String,
       dest: String,
       options: ExecOptions,
       callback: js.Function3[/* error */ js.Error, /* stdout */ String, /* stderr */ String, Unit]
-    ): js.Thenable[ShipitLocal] = js.native
+    ): PromiseLike[ShipitLocal] = js.native
     
     val seq: js.Array[Any] = js.native
     

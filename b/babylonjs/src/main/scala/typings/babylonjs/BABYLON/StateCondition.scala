@@ -8,10 +8,6 @@ trait StateCondition
   extends StObject
      with Condition {
   
-  /**
-    * Internal only
-    * @hidden
-    */
   /* private */ var _target: Any
   
   /** Value to compare with target state  */

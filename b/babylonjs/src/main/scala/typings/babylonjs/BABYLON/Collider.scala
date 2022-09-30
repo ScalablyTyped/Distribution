@@ -9,42 +9,23 @@ trait Collider extends StObject {
   
   /* private */ var _basePoint: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _basePointWorld: Vector3 = js.native
   
   /* private */ var _baseToVertex: Any = js.native
   
   /**
-    * @param sphereCenter
-    * @param sphereRadius
-    * @param vecMin
-    * @param vecMax
-    * @hidden
+    * @internal
     */
   def _canDoCollision(sphereCenter: Vector3, sphereRadius: Double, vecMin: Vector3, vecMax: Vector3): Boolean = js.native
   
   /**
-    * @param point
-    * @param pa
-    * @param pb
-    * @param pc
-    * @param n
-    * @hidden
+    * @internal
     */
   def _checkPointInTriangle(point: Vector3, pa: Vector3, pb: Vector3, pc: Vector3, n: Vector3): Boolean = js.native
   
   /**
-    * @param trianglePlaneArray
-    * @param pts
-    * @param indices
-    * @param indexStart
-    * @param indexEnd
-    * @param decal
-    * @param hasMaterial
-    * @param hostMesh
-    * @param invertTriangles
-    * @param triangleStrip
-    * @hidden
+    * @internal
     */
   def _collide(
     trianglePlaneArray: js.Array[Plane],
@@ -105,23 +86,18 @@ trait Collider extends StObject {
   /* private */ var _epsilon: Any = js.native
   
   /**
-    * @param pos
-    * @param vel
-    * @hidden
+    * @internal
     */
   def _getResponse(pos: Vector3, vel: Vector3): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _initialPosition: Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   var _initialVelocity: Vector3 = js.native
   
   /**
-    * @param source
-    * @param dir
-    * @param e
-    * @hidden
+    * @internal
     */
   def _initialize(source: Vector3, dir: Vector3, e: Double): Unit = js.native
   
@@ -133,10 +109,10 @@ trait Collider extends StObject {
   
   /* private */ var _planeIntersectionPoint: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _radius: Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   var _retry: Double = js.native
   
   /* private */ var _slidePlaneNormal: Any = js.native
@@ -150,14 +126,7 @@ trait Collider extends StObject {
   /* private */ var _tempVector4: Any = js.native
   
   /**
-    * @param faceIndex
-    * @param trianglePlaneArray
-    * @param p1
-    * @param p2
-    * @param p3
-    * @param hasMaterial
-    * @param hostMesh
-    * @hidden
+    * @internal
     */
   def _testTriangle(
     faceIndex: Double,
@@ -175,7 +144,7 @@ trait Collider extends StObject {
   
   /* private */ var _velocityWorld: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _velocityWorldLength: Double = js.native
   
   /**

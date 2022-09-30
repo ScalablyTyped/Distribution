@@ -87,12 +87,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.cloneWith
     */
-  def cloneWith[TResult](customizer: CloneWithCustomizer[TValue, js.UndefOr[TResult]]): TResult | TValue = js.native
+  def cloneWith[TResult /* <: js.Object | java.lang.String | Double | Boolean | Null */](customizer: CloneWithCustomizer[TValue, TResult]): TResult = js.native
   /**
     * @see _.cloneWith
     */
   @JSName("cloneWith")
-  def cloneWith_TResult_UnionObjectStringDoubleBooleanNull_TResult[TResult /* <: js.Object | java.lang.String | Double | Boolean | Null */](customizer: CloneWithCustomizer[TValue, TResult]): TResult = js.native
+  def cloneWith_TResult_Union[TResult](customizer: CloneWithCustomizer[TValue, js.UndefOr[TResult]]): TResult | TValue = js.native
   
   /**
     * @see _.commit

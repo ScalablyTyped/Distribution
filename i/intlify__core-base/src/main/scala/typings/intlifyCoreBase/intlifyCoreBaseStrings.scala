@@ -7,20 +7,11 @@ import typings.intlifyCoreBase.mod.DateTimeHumanReadable
 import typings.intlifyCoreBase.mod.FormatMatcher
 import typings.intlifyCoreBase.mod.FormattedNumberPartType
 import typings.intlifyCoreBase.mod.LocaleMatcher
-import typings.intlifyCoreBase.mod.__ResourcePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intlifyCoreBaseStrings {
-  
-  @js.native
-  sealed trait $LeftcurlybracketKeyRightcurlybracket extends StObject
-  inline def $LeftcurlybracketKeyRightcurlybracket: $LeftcurlybracketKeyRightcurlybracket = "${Key}".asInstanceOf[$LeftcurlybracketKeyRightcurlybracket]
-  
-  @js.native
-  sealed trait `$LeftcurlybracketT[number]RightcurlybracketExclamationmark` extends StObject
-  inline def `$LeftcurlybracketT[number]RightcurlybracketExclamationmark`: `$LeftcurlybracketT[number]RightcurlybracketExclamationmark` = "${T[number]}!".asInstanceOf[`$LeftcurlybracketT[number]RightcurlybracketExclamationmark`]
   
   @js.native
   sealed trait `2-digit`
@@ -43,18 +34,6 @@ object intlifyCoreBaseStrings {
   @js.native
   sealed trait CoreTranslationContext extends StObject
   inline def CoreTranslationContext: CoreTranslationContext = "CoreTranslationContext".asInstanceOf[CoreTranslationContext]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracketExcludeLessthansignkeyof T[Key]Comma keyof any[]Greaterthansign Ampersand stringRightcurlybracket`
-    extends StObject
-       with __ResourcePath[Any, Any]
-  inline def `DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracketExcludeLessthansignkeyof T[Key]Comma keyof any[]Greaterthansign Ampersand stringRightcurlybracket`: `DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracketExcludeLessthansignkeyof T[Key]Comma keyof any[]Greaterthansign Ampersand stringRightcurlybracket` = ("${Key}.${Exclude<keyof T[Key], keyof any[]> & string}").asInstanceOf[`DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracketExcludeLessthansignkeyof T[Key]Comma keyof any[]Greaterthansign Ampersand stringRightcurlybracket`]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracket__ResourcePathLessthansignT[Key]Comma ExcludeLessthansignkeyof T[Key]Comma keyof any[]GreaterthansignGreaterthansign Ampersand stringRightcurlybracket`
-    extends StObject
-       with __ResourcePath[Any, Any]
-  inline def `DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracket__ResourcePathLessthansignT[Key]Comma ExcludeLessthansignkeyof T[Key]Comma keyof any[]GreaterthansignGreaterthansign Ampersand stringRightcurlybracket`: `DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracket__ResourcePathLessthansignT[Key]Comma ExcludeLessthansignkeyof T[Key]Comma keyof any[]GreaterthansignGreaterthansign Ampersand stringRightcurlybracket` = ("${Key}.${__ResourcePath<T[Key], Exclude<keyof T[Key], keyof any[]>> & string}").asInstanceOf[`DollarLeftcurlybracketKeyRightcurlybracketDotDollarLeftcurlybracket__ResourcePathLessthansignT[Key]Comma ExcludeLessthansignkeyof T[Key]Comma keyof any[]GreaterthansignGreaterthansign Ampersand stringRightcurlybracket`]
   
   @js.native
   sealed trait FallbackLocale extends StObject

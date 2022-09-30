@@ -1,9 +1,8 @@
 package typings.quadstore
 
-import typings.quadstore.quadstoreNumbers.`-1`
-import typings.quadstore.quadstoreNumbers.`0`
-import typings.quadstore.quadstoreNumbers.`1`
-import typings.quadstore.typesMod.Binding
+import typings.quadstore.quadstoreInts.`-1`
+import typings.quadstore.quadstoreInts.`0`
+import typings.quadstore.quadstoreInts.`1`
 import typings.quadstore.typesMod.StoreOpts
 import typings.quadstore.typesMod.TermName
 import typings.rdfjsTypes.dataModelMod.Quad
@@ -38,9 +37,6 @@ object mod {
     
     /* "void" */ val VOID: typings.quadstore.typesMod.ResultType.VOID & String = js.native
   }
-  
-  inline def getBindingComparator(): js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBindingComparator")().asInstanceOf[js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`]]
-  inline def getBindingComparator(_termNames: js.Array[String]): js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBindingComparator")(_termNames.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ Binding, /* b */ Binding, `-1` | `0` | `1`]]
   
   inline def getQuadComparator(): js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuadComparator")().asInstanceOf[js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`]]
   inline def getQuadComparator(_termNames: js.Array[TermName]): js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuadComparator")(_termNames.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ Quad, /* b */ Quad, `-1` | `0` | `1`]]

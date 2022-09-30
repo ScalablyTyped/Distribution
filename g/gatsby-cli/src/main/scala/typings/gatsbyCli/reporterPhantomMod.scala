@@ -1,5 +1,6 @@
 package typings.gatsbyCli
 
+import typings.gatsbyCli.anon.TypeofreporterActionsForT
 import typings.opentracing.mod.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +12,13 @@ object reporterPhantomMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createPhantomReporter(hasTextIdSpan: ICreatePhantomReporterArguments): IPhantomReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPhantomReporter")(hasTextIdSpan.asInstanceOf[js.Any]).asInstanceOf[IPhantomReporter]
+  inline def createPhantomReporter(hasTextIdSpanReporterActions: ICreatePhantomReporterArguments): IPhantomReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPhantomReporter")(hasTextIdSpanReporterActions.asInstanceOf[js.Any]).asInstanceOf[IPhantomReporter]
   
   trait ICreatePhantomReporterArguments extends StObject {
     
     var id: String
+    
+    var reporterActions: TypeofreporterActionsForT
     
     var span: Span
     
@@ -23,14 +26,16 @@ object reporterPhantomMod {
   }
   object ICreatePhantomReporterArguments {
     
-    inline def apply(id: String, span: Span, text: String): ICreatePhantomReporterArguments = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    inline def apply(id: String, reporterActions: TypeofreporterActionsForT, span: Span, text: String): ICreatePhantomReporterArguments = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reporterActions = reporterActions.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICreatePhantomReporterArguments]
     }
     
     extension [Self <: ICreatePhantomReporterArguments](x: Self) {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setReporterActions(value: TypeofreporterActionsForT): Self = StObject.set(x, "reporterActions", value.asInstanceOf[js.Any])
       
       inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       

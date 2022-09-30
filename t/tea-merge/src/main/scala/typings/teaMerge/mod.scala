@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(destination: js.Object, sources: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].apply(List(destination.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def apply(destination: js.Object, sources: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].apply(scala.List(destination.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   
   @JSImport("tea-merge", JSImport.Namespace)
   @js.native

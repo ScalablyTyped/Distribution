@@ -316,7 +316,7 @@ object listMod {
     
     inline def initByValue[T](numElements: Double, initValue: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("initByValue")(numElements.asInstanceOf[js.Any], initValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    inline def joinLists[T, TRes](converter: js.Function1[/* list */ js.Array[T], js.Array[TRes]], lists: js.Array[T]*): js.Array[TRes] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinLists")(List(converter.asInstanceOf[js.Any]).`++`(lists.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[TRes]]
+    inline def joinLists[T, TRes](converter: js.Function1[/* list */ js.Array[T], js.Array[TRes]], lists: js.Array[T]*): js.Array[TRes] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinLists")(scala.List(converter.asInstanceOf[js.Any]).`++`(lists.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[TRes]]
     
     inline def last[T](list: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(list.asInstanceOf[js.Any]).asInstanceOf[T]
     

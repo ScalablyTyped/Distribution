@@ -25,11 +25,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.6.0: added public
   * In version 7.11.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
+- typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
+- typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
+- typings.mendixmodelsdk.elementsMod.IElement because Already inherited
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IMemberRef because Already inherited
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeRef because var conflicts: entityRef, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeRef")
 @js.native
-class AttributeRef protected () extends MemberRef {
+open class AttributeRef protected () extends MemberRef {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -47,7 +54,7 @@ class AttributeRef protected () extends MemberRef {
 }
 object AttributeRef {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeRef")
   @js.native
   val ^ : js.Any = js.native
   
@@ -208,7 +215,7 @@ object AttributeRef {
     * of the parent expressions.VariableRefExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.11.0 and higher
+    *  7.11.0 to 9.7.0
     */
   /* static member */
   inline def createInVariableRefExpressionUnderMember(container: VariableRefExpression): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVariableRefExpressionUnderMember")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
@@ -225,13 +232,13 @@ object AttributeRef {
   inline def createInWidgetValueUnderAttributeRef(container: WidgetValue): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeRef.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeRef.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -56,7 +56,9 @@ open class ElementInput protected () extends StObject {
   
   def _fireEvent(name: Any, evt: Any): Unit = js.native
   
-  def _getTargetElement(camera: Any, x: Any, y: Any): Any = js.native
+  def _getTargetElement(camera: Any, rayScreen: Any, ray3d: Any): Any = js.native
+  
+  def _getTargetElementByCoords(camera: Any, x: Any, y: Any): Any = js.native
   
   def _getTargetElementByRay(ray: Any, camera: Any): Any = js.native
   

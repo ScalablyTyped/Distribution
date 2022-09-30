@@ -130,17 +130,17 @@ object symspellMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.mnemonist.mnemonistNumbers.`0`
-    - typings.mnemonist.mnemonistNumbers.`1`
-    - typings.mnemonist.mnemonistNumbers.`2`
+    - typings.mnemonist.mnemonistInts.`0`
+    - typings.mnemonist.mnemonistInts.`1`
+    - typings.mnemonist.mnemonistInts.`2`
   */
   trait SymSpellVerbosity extends StObject
   object SymSpellVerbosity {
     
-    inline def `0`: typings.mnemonist.mnemonistNumbers.`0` = 0.asInstanceOf[typings.mnemonist.mnemonistNumbers.`0`]
+    inline def `0`: typings.mnemonist.mnemonistInts.`0` = 0.asInstanceOf[typings.mnemonist.mnemonistInts.`0`]
     
-    inline def `1`: typings.mnemonist.mnemonistNumbers.`1` = 1.asInstanceOf[typings.mnemonist.mnemonistNumbers.`1`]
+    inline def `1`: typings.mnemonist.mnemonistInts.`1` = 1.asInstanceOf[typings.mnemonist.mnemonistInts.`1`]
     
-    inline def `2`: typings.mnemonist.mnemonistNumbers.`2` = 2.asInstanceOf[typings.mnemonist.mnemonistNumbers.`2`]
+    inline def `2`: typings.mnemonist.mnemonistInts.`2` = 2.asInstanceOf[typings.mnemonist.mnemonistInts.`2`]
   }
 }

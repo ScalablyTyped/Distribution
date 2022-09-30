@@ -1,8 +1,8 @@
 package typings.jsts.jsts
 
-import typings.jsts.jstsNumbers.`-1`
-import typings.jsts.jstsNumbers.`0`
-import typings.jsts.jstsNumbers.`1`
+import typings.jsts.jstsInts.`-1`
+import typings.jsts.jstsInts.`0`
+import typings.jsts.jstsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

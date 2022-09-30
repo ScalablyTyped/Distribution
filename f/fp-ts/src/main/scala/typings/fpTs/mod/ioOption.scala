@@ -188,7 +188,7 @@ object ioOption {
   
   inline def filterMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* fga */ IOOption[A], IOOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fga */ IOOption[A], IOOption[B]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ IOOption[A], IOOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ IOOption[A], IOOption[B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ IOOption[A], IOOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ IOOption[A], IOOption[B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ IOOption[js.Function1[/* a */ A, Any]], IOOption[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ IOOption[js.Function1[/* a */ A, Any]], IOOption[Any]]]
   
@@ -224,7 +224,7 @@ object ioOption {
   
   inline def fromPredicate[A](predicate: Predicate[A]): js.Function1[/* b */ A, IOOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ A, IOOption[A]]]
   
-  inline def fromPredicate_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, IOOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, IOOption[B]]]
+  inline def fromPredicate_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, IOOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, IOOption[B]]]
   
   inline def getOrElse[A](onNone: Lazy[IO_[A]]): js.Function1[/* fa */ IOOption[A], IO_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOOption[A], IO_[A]]]
   
@@ -257,7 +257,7 @@ object ioOption {
   
   inline def partitionMap[A, B, C](f: js.Function1[/* a */ A, Either_[B, C]]): js.Function1[/* fa */ IOOption[A], Separated_[IOOption[B], IOOption[C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOOption[A], Separated_[IOOption[B], IOOption[C]]]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ IOOption[A], Separated_[IOOption[A], IOOption[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ IOOption[A], Separated_[IOOption[A], IOOption[B]]]]
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fb */ IOOption[A], Separated_[IOOption[A], IOOption[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ IOOption[A], Separated_[IOOption[A], IOOption[B]]]]
   
   @JSImport("fp-ts", "ioOption.separate")
   @js.native

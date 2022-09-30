@@ -1,14 +1,13 @@
 package typings.meteor.anon
 
-import typings.meteor.meteorNumbers.`-1`
-import typings.meteor.meteorNumbers.`1`
+import typings.meteor.meteorInts.`-1`
+import typings.meteor.meteorInts.`1`
 import typings.meteor.mongoMod.Mongo.ArraysOrEach
 import typings.meteor.mongoMod.Mongo.CurrentDateModifier
 import typings.meteor.mongoMod.Mongo.Dictionary
 import typings.meteor.mongoMod.Mongo.ElementsOf
 import typings.meteor.mongoMod.Mongo.PartialMapTo
 import typings.meteor.mongoMod.Mongo.PushModifier
-import typings.std.Date
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddToSet[T] extends StObject {
   
   @JSName("$addToSet")
-  var $addToSet: js.UndefOr[ArraysOrEach[T] & Dictionary[js.Any]] = js.undefined
+  var $addToSet: js.UndefOr[ArraysOrEach[T] & Dictionary[Any]] = js.undefined
   
   @JSName("$currentDate")
   var $currentDate: js.UndefOr[
@@ -29,10 +28,10 @@ trait AddToSet[T] extends StObject {
   var $inc: js.UndefOr[(PartialMapTo[T, Double]) & Dictionary[Double]] = js.undefined
   
   @JSName("$max")
-  var $max: js.UndefOr[(PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])] = js.undefined
+  var $max: js.UndefOr[(PartialMapTo[T, js.Date | Double]) & (Dictionary[js.Date | Double])] = js.undefined
   
   @JSName("$min")
-  var $min: js.UndefOr[(PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])] = js.undefined
+  var $min: js.UndefOr[(PartialMapTo[T, js.Date | Double]) & (Dictionary[js.Date | Double])] = js.undefined
   
   @JSName("$mul")
   var $mul: js.UndefOr[(PartialMapTo[T, Double]) & Dictionary[Double]] = js.undefined
@@ -41,26 +40,26 @@ trait AddToSet[T] extends StObject {
   var $pop: js.UndefOr[(PartialMapTo[T, `1` | `-1`]) & (Dictionary[`1` | `-1`])] = js.undefined
   
   @JSName("$pull")
-  var $pull: js.UndefOr[ElementsOf[T] & Dictionary[js.Any]] = js.undefined
+  var $pull: js.UndefOr[ElementsOf[T] & Dictionary[Any]] = js.undefined
   
   @JSName("$pullAll")
-  var $pullAll: js.UndefOr[Partial[T] & Dictionary[js.Any]] = js.undefined
+  var $pullAll: js.UndefOr[Partial[T] & Dictionary[Any]] = js.undefined
   
   @JSName("$push")
-  var $push: js.UndefOr[PushModifier[T] & Dictionary[js.Any]] = js.undefined
+  var $push: js.UndefOr[PushModifier[T] & Dictionary[Any]] = js.undefined
   
   @JSName("$rename")
   var $rename: js.UndefOr[(PartialMapTo[T, String]) & Dictionary[String]] = js.undefined
   
   @JSName("$set")
-  var $set: js.UndefOr[Partial[T] & Dictionary[js.Any]] = js.undefined
+  var $set: js.UndefOr[Partial[T] & Dictionary[Any]] = js.undefined
   
   @JSName("$setOnInsert")
-  var $setOnInsert: js.UndefOr[Partial[T] & Dictionary[js.Any]] = js.undefined
+  var $setOnInsert: js.UndefOr[Partial[T] & Dictionary[Any]] = js.undefined
   
   @JSName("$unset")
   var $unset: js.UndefOr[
-    (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorNumbers.`0`]) & Dictionary[js.Any]
+    (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorInts.`0`]) & Dictionary[Any]
   ] = js.undefined
 }
 object AddToSet {
@@ -72,7 +71,7 @@ object AddToSet {
   
   extension [Self <: AddToSet[?], T](x: Self & AddToSet[T]) {
     
-    inline def set$addToSet(value: ArraysOrEach[T] & Dictionary[js.Any]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
+    inline def set$addToSet(value: ArraysOrEach[T] & Dictionary[Any]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
     
     inline def set$addToSetUndefined: Self = StObject.set(x, "$addToSet", js.undefined)
     
@@ -86,11 +85,11 @@ object AddToSet {
     
     inline def set$incUndefined: Self = StObject.set(x, "$inc", js.undefined)
     
-    inline def set$max(value: (PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
+    inline def set$max(value: (PartialMapTo[T, js.Date | Double]) & (Dictionary[js.Date | Double])): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
     
     inline def set$maxUndefined: Self = StObject.set(x, "$max", js.undefined)
     
-    inline def set$min(value: (PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
+    inline def set$min(value: (PartialMapTo[T, js.Date | Double]) & (Dictionary[js.Date | Double])): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
     
     inline def set$minUndefined: Self = StObject.set(x, "$min", js.undefined)
     
@@ -102,15 +101,15 @@ object AddToSet {
     
     inline def set$popUndefined: Self = StObject.set(x, "$pop", js.undefined)
     
-    inline def set$pull(value: ElementsOf[T] & Dictionary[js.Any]): Self = StObject.set(x, "$pull", value.asInstanceOf[js.Any])
+    inline def set$pull(value: ElementsOf[T] & Dictionary[Any]): Self = StObject.set(x, "$pull", value.asInstanceOf[js.Any])
     
-    inline def set$pullAll(value: Partial[T] & Dictionary[js.Any]): Self = StObject.set(x, "$pullAll", value.asInstanceOf[js.Any])
+    inline def set$pullAll(value: Partial[T] & Dictionary[Any]): Self = StObject.set(x, "$pullAll", value.asInstanceOf[js.Any])
     
     inline def set$pullAllUndefined: Self = StObject.set(x, "$pullAll", js.undefined)
     
     inline def set$pullUndefined: Self = StObject.set(x, "$pull", js.undefined)
     
-    inline def set$push(value: PushModifier[T] & Dictionary[js.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
+    inline def set$push(value: PushModifier[T] & Dictionary[Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
     
     inline def set$pushUndefined: Self = StObject.set(x, "$push", js.undefined)
     
@@ -118,17 +117,15 @@ object AddToSet {
     
     inline def set$renameUndefined: Self = StObject.set(x, "$rename", js.undefined)
     
-    inline def set$set(value: Partial[T] & Dictionary[js.Any]): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
+    inline def set$set(value: Partial[T] & Dictionary[Any]): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
     
-    inline def set$setOnInsert(value: Partial[T] & Dictionary[js.Any]): Self = StObject.set(x, "$setOnInsert", value.asInstanceOf[js.Any])
+    inline def set$setOnInsert(value: Partial[T] & Dictionary[Any]): Self = StObject.set(x, "$setOnInsert", value.asInstanceOf[js.Any])
     
     inline def set$setOnInsertUndefined: Self = StObject.set(x, "$setOnInsert", js.undefined)
     
     inline def set$setUndefined: Self = StObject.set(x, "$set", js.undefined)
     
-    inline def set$unset(
-      value: (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorNumbers.`0`]) & Dictionary[js.Any]
-    ): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
+    inline def set$unset(value: (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorInts.`0`]) & Dictionary[Any]): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
     
     inline def set$unsetUndefined: Self = StObject.set(x, "$unset", js.undefined)
   }

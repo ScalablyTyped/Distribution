@@ -8,14 +8,16 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.queuesMod.queues.IQueue
+import typings.mendixmodelsdk.queuesMod.queues.QueueSettings
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowCall")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowCall")
 @js.native
-class MicroflowCall protected () extends Element[IModel] {
+open class MicroflowCall protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,10 +36,26 @@ class MicroflowCall protected () extends Element[IModel] {
   def microflow_=(newValue: IMicroflow | Null): Unit = js.native
   
   def parameterMappings: IList[MicroflowCallParameterMapping] = js.native
+  
+  /**
+    * In version 9.10.0: deleted
+    * In version 8.16.0: introduced
+    */
+  def queue: IQueue | Null = js.native
+  
+  def queueQualifiedName: String | Null = js.native
+  
+  /**
+    * In version 9.10.0: introduced
+    */
+  def queueSettings: QueueSettings | Null = js.native
+  def queueSettings_=(newValue: QueueSettings | Null): Unit = js.native
+  
+  def queue_=(newValue: IQueue | Null): Unit = js.native
 }
 object MicroflowCall {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowCall")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowCall")
   @js.native
   val ^ : js.Any = js.native
   
@@ -58,13 +76,13 @@ object MicroflowCall {
   inline def createIn(container: MicroflowCallAction): MicroflowCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowCall]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowCall.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowCall.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowCall.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowCall.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

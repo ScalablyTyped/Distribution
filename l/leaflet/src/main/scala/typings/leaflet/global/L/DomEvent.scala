@@ -18,9 +18,9 @@ object DomEvent {
   val ^ : js.Any = js.native
   
   inline def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   inline def addListener(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def addListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def addListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
   inline def disableClickPropagation(el: HTMLElement): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("disableClickPropagation")(el.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
@@ -31,24 +31,27 @@ object DomEvent {
   
   inline def getWheelDelta(ev: Event): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDelta")(ev.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  // tslint:disable:unified-signatures
+  inline def off(el: HTMLElement): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   inline def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   inline def off(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def off(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def off(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
   inline def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   inline def on(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def on(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def on(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
   inline def preventDefault(ev: Event): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
   inline def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], eventMap.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   inline def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
-  inline def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
+  inline def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): TypeofDomEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(el.asInstanceOf[js.Any], types.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[TypeofDomEvent]
   
   inline def stop(ev: PropagableEvent): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
   
+  // tslint:enable:unified-signatures
   inline def stopPropagation(ev: PropagableEvent): TypeofDomEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(ev.asInstanceOf[js.Any]).asInstanceOf[TypeofDomEvent]
 }

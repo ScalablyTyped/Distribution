@@ -39,6 +39,8 @@ trait TimelineController
   
   /* private */ var cea608Parser2: Any
   
+  /* private */ var closedCaptionsForLevel: Any
+  
   /* private */ var config: Any
   
   def createCaptionsTrack(trackName: String): Unit
@@ -118,6 +120,7 @@ object TimelineController {
     captionsTracks: Any,
     cea608Parser1: Any,
     cea608Parser2: Any,
+    closedCaptionsForLevel: Any,
     config: Any,
     createCaptionsTrack: String => Unit,
     createNativeTrack: Any,
@@ -152,7 +155,7 @@ object TimelineController {
     unparsedVttFrags: Any,
     vttCCs: Any
   ): TimelineController = {
-    val __obj = js.Dynamic.literal(Cues = Cues.asInstanceOf[js.Any], _appendCues = _appendCues.asInstanceOf[js.Any], _captionsOrSubtitlesFromCharacteristics = _captionsOrSubtitlesFromCharacteristics.asInstanceOf[js.Any], _cleanTracks = _cleanTracks.asInstanceOf[js.Any], _fallbackToIMSC1 = _fallbackToIMSC1.asInstanceOf[js.Any], _parseIMSC1 = _parseIMSC1.asInstanceOf[js.Any], _parseVTTs = _parseVTTs.asInstanceOf[js.Any], addCues = js.Any.fromFunction5(addCues), captionsProperties = captionsProperties.asInstanceOf[js.Any], captionsTracks = captionsTracks.asInstanceOf[js.Any], cea608Parser1 = cea608Parser1.asInstanceOf[js.Any], cea608Parser2 = cea608Parser2.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], createCaptionsTrack = js.Any.fromFunction1(createCaptionsTrack), createNativeTrack = createNativeTrack.asInstanceOf[js.Any], createNonNativeTrack = createNonNativeTrack.asInstanceOf[js.Any], createTextTrack = createTextTrack.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), enabled = enabled.asInstanceOf[js.Any], extractCea608Data = extractCea608Data.asInstanceOf[js.Any], getExistingTrack = getExistingTrack.asInstanceOf[js.Any], hls = hls.asInstanceOf[js.Any], initPTS = initPTS.asInstanceOf[js.Any], lastPartIndex = lastPartIndex.asInstanceOf[js.Any], lastSn = lastSn.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], nonNativeCaptionsTracks = nonNativeCaptionsTracks.asInstanceOf[js.Any], onBufferFlushing = js.Any.fromFunction2(onBufferFlushing), onFragDecrypted = onFragDecrypted.asInstanceOf[js.Any], onFragLoaded = onFragLoaded.asInstanceOf[js.Any], onFragLoading = onFragLoading.asInstanceOf[js.Any], onFragParsingUserdata = onFragParsingUserdata.asInstanceOf[js.Any], onInitPtsFound = onInitPtsFound.asInstanceOf[js.Any], onManifestLoaded = onManifestLoaded.asInstanceOf[js.Any], onManifestLoading = onManifestLoading.asInstanceOf[js.Any], onMediaAttaching = onMediaAttaching.asInstanceOf[js.Any], onMediaDetaching = onMediaDetaching.asInstanceOf[js.Any], onSubtitleTracksCleared = onSubtitleTracksCleared.asInstanceOf[js.Any], onSubtitleTracksUpdated = onSubtitleTracksUpdated.asInstanceOf[js.Any], prevCC = prevCC.asInstanceOf[js.Any], textTracks = textTracks.asInstanceOf[js.Any], timescale = timescale.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any], unparsedVttFrags = unparsedVttFrags.asInstanceOf[js.Any], vttCCs = vttCCs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Cues = Cues.asInstanceOf[js.Any], _appendCues = _appendCues.asInstanceOf[js.Any], _captionsOrSubtitlesFromCharacteristics = _captionsOrSubtitlesFromCharacteristics.asInstanceOf[js.Any], _cleanTracks = _cleanTracks.asInstanceOf[js.Any], _fallbackToIMSC1 = _fallbackToIMSC1.asInstanceOf[js.Any], _parseIMSC1 = _parseIMSC1.asInstanceOf[js.Any], _parseVTTs = _parseVTTs.asInstanceOf[js.Any], addCues = js.Any.fromFunction5(addCues), captionsProperties = captionsProperties.asInstanceOf[js.Any], captionsTracks = captionsTracks.asInstanceOf[js.Any], cea608Parser1 = cea608Parser1.asInstanceOf[js.Any], cea608Parser2 = cea608Parser2.asInstanceOf[js.Any], closedCaptionsForLevel = closedCaptionsForLevel.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], createCaptionsTrack = js.Any.fromFunction1(createCaptionsTrack), createNativeTrack = createNativeTrack.asInstanceOf[js.Any], createNonNativeTrack = createNonNativeTrack.asInstanceOf[js.Any], createTextTrack = createTextTrack.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), enabled = enabled.asInstanceOf[js.Any], extractCea608Data = extractCea608Data.asInstanceOf[js.Any], getExistingTrack = getExistingTrack.asInstanceOf[js.Any], hls = hls.asInstanceOf[js.Any], initPTS = initPTS.asInstanceOf[js.Any], lastPartIndex = lastPartIndex.asInstanceOf[js.Any], lastSn = lastSn.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], nonNativeCaptionsTracks = nonNativeCaptionsTracks.asInstanceOf[js.Any], onBufferFlushing = js.Any.fromFunction2(onBufferFlushing), onFragDecrypted = onFragDecrypted.asInstanceOf[js.Any], onFragLoaded = onFragLoaded.asInstanceOf[js.Any], onFragLoading = onFragLoading.asInstanceOf[js.Any], onFragParsingUserdata = onFragParsingUserdata.asInstanceOf[js.Any], onInitPtsFound = onInitPtsFound.asInstanceOf[js.Any], onManifestLoaded = onManifestLoaded.asInstanceOf[js.Any], onManifestLoading = onManifestLoading.asInstanceOf[js.Any], onMediaAttaching = onMediaAttaching.asInstanceOf[js.Any], onMediaDetaching = onMediaDetaching.asInstanceOf[js.Any], onSubtitleTracksCleared = onSubtitleTracksCleared.asInstanceOf[js.Any], onSubtitleTracksUpdated = onSubtitleTracksUpdated.asInstanceOf[js.Any], prevCC = prevCC.asInstanceOf[js.Any], textTracks = textTracks.asInstanceOf[js.Any], timescale = timescale.asInstanceOf[js.Any], tracks = tracks.asInstanceOf[js.Any], unparsedVttFrags = unparsedVttFrags.asInstanceOf[js.Any], vttCCs = vttCCs.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineController]
   }
   
@@ -167,6 +170,8 @@ object TimelineController {
     inline def setCea608Parser1(value: Any): Self = StObject.set(x, "cea608Parser1", value.asInstanceOf[js.Any])
     
     inline def setCea608Parser2(value: Any): Self = StObject.set(x, "cea608Parser2", value.asInstanceOf[js.Any])
+    
+    inline def setClosedCaptionsForLevel(value: Any): Self = StObject.set(x, "closedCaptionsForLevel", value.asInstanceOf[js.Any])
     
     inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

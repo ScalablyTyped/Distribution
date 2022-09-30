@@ -127,8 +127,8 @@ type UIManager = UIManagerStatic
 inline def Vibration: VibrationStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Vibration").asInstanceOf[VibrationStatic]
 type Vibration = VibrationStatic
 
-inline def createElement[P](`type`: ElementType[Any], props: P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
-inline def createElement[P](`type`: ElementType[Any], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
+inline def createElement[P](`type`: ElementType[Any], props: P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
+inline def createElement[P](`type`: ElementType[Any], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement]
 
 inline def findNodeHandle(): Null | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")().asInstanceOf[Null | Double]
 inline def findNodeHandle(componentOrHandle: Double): Null | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeHandle")(componentOrHandle.asInstanceOf[js.Any]).asInstanceOf[Null | Double]
@@ -141,7 +141,7 @@ inline def processColor(color: ColorValue): js.UndefOr[ProcessedColorValue | Nul
 
 inline def requireNativeComponent[T](viewName: String): HostComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeComponent")(viewName.asInstanceOf[js.Any]).asInstanceOf[HostComponent[T]]
 
-inline def spread(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def spread(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__spread")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def unstableBatchedUpdates(callback: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]

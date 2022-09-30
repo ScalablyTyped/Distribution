@@ -1,9 +1,9 @@
 package typings.hashJs
 
-import typings.hashJs.hashJsNumbers.`192`
-import typings.hashJs.hashJsNumbers.`256`
-import typings.hashJs.hashJsNumbers.`512`
-import typings.hashJs.hashJsNumbers.`64`
+import typings.hashJs.hashJsInts.`192`
+import typings.hashJs.hashJsInts.`256`
+import typings.hashJs.hashJsInts.`512`
+import typings.hashJs.hashJsInts.`64`
 import typings.hashJs.hashJsStrings.big
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

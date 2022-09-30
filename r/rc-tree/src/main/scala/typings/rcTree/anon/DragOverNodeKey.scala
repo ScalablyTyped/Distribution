@@ -1,8 +1,8 @@
 package typings.rcTree.anon
 
-import typings.rcTree.rcTreeNumbers.`-1`
-import typings.rcTree.rcTreeNumbers.`0`
-import typings.rcTree.rcTreeNumbers.`1`
+import typings.rcTree.rcTreeInts.`-1`
+import typings.rcTree.rcTreeInts.`0`
+import typings.rcTree.rcTreeInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

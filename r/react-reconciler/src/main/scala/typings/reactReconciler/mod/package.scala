@@ -1,18 +1,20 @@
 package typings.reactReconciler.mod
 
+import typings.reactReconciler.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply[Type, Props, Container, Instance, TextInstance, HydratableInstance, PublicInstance, HostContext, UpdatePayload, ChildSet, TimeoutHandle, NoTimeout](
-  // tslint:disable-next-line:no-unnecessary-generics
-config: typings.reactReconciler.mod.HostConfig[
-  Type, 
+inline def apply[Type, Props, Container, Instance, TextInstance, SuspenseInstance, HydratableInstance, PublicInstance, HostContext, UpdatePayload, ChildSet, TimeoutHandle, NoTimeout](
+  config: HostConfig[
+  // tslint:disable:no-unnecessary-generics
+Type, 
   Props, 
   Container, 
   Instance, 
   TextInstance, 
+  SuspenseInstance, 
   HydratableInstance, 
   PublicInstance, 
   HostContext, 
@@ -21,27 +23,26 @@ config: typings.reactReconciler.mod.HostConfig[
   TimeoutHandle, 
   NoTimeout
 ]
-): typings.reactReconciler.mod.Reconciler[Instance, TextInstance, Container, PublicInstance] = typings.reactReconciler.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.reactReconciler.mod.Reconciler[Instance, TextInstance, Container, PublicInstance]]
+): Reconciler[Container, Instance, TextInstance, SuspenseInstance, PublicInstance] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Reconciler[Container, Instance, TextInstance, SuspenseInstance, PublicInstance]]
 
-// react-reconciler/ReactFiberExpirationTime
-type ExpirationTime = scala.Double
+type FiberRoot = Any
 
-// react-reconciler/ReactFiberReconciler
-type OpaqueHandle = typings.reactReconciler.mod.Fiber
+type Flags = Double
 
-type OpaqueRoot = typings.reactReconciler.mod.FiberRoot
+type IntersectionObserverOptions = Any
 
-type PendingInteractionMap = typings.std.Map[
-typings.reactReconciler.mod.ExpirationTime, 
-typings.std.Set[typings.reactReconciler.mod.Interaction]]
+type Lane = Double
 
-// shared/ReactTypes
-type ReactEmpty = js.UndefOr[scala.Null | scala.Boolean]
+type Lanes = Double
 
-type ReactNodeList = typings.reactReconciler.mod.ReactEmpty | typings.react.mod.ReactNode
+// Concurrent related struct
+type MutableSource = Any
 
-// shared/ReactSideEffectTags
-type SideEffectTag = scala.Double
+type OpaqueHandle = Any
 
-// react-reconciler/ReactTypeOfMode
-type TypeOfMode = scala.Double
+type OpaqueRoot = Any
+
+// TODO can not find React$AbstractComponent def
+type ReactAbstractComponent[Config, Instance] = Any
+
+type TypeOfMode = Double

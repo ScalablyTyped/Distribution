@@ -2,10 +2,10 @@ package typings.ethersprojectProviders
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
-import typings.ethersprojectProviders.ethersprojectProvidersNumbers.`0`
-import typings.ethersprojectProviders.ethersprojectProvidersNumbers.`1`
-import typings.ethersprojectProviders.ethersprojectProvidersNumbers.`2`
-import typings.ethersprojectProviders.ethersprojectProvidersNumbers.`3`
+import typings.ethersprojectProviders.ethersprojectProvidersInts.`0`
+import typings.ethersprojectProviders.ethersprojectProvidersInts.`1`
+import typings.ethersprojectProviders.ethersprojectProvidersInts.`2`
+import typings.ethersprojectProviders.ethersprojectProvidersInts.`3`
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
@@ -101,10 +101,10 @@ object wsMod {
       ] = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("@ethersproject/providers/lib/ws", "WebSocket.WebSocketServerCls")
+    @JSImport("@ethersproject/providers/lib/ws", "WebSocket.WebSocketServer")
     @js.native
     open class WebSocketServerCls[T /* <: typings.ws.mod.WebSocket */] ()
-      extends typings.ws.mod.WebSocketServerCls[T] {
+      extends typings.ws.mod.Server[T] {
       def this(options: ServerOptions) = this()
       def this(options: Unit, callback: js.Function0[Unit]) = this()
       def this(options: ServerOptions, callback: js.Function0[Unit]) = this()

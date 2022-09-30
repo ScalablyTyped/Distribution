@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expect" : "29.0.3"
+      "expect" : "29.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "expect" : "29.0.3"
+      "expect" : "29.1.2"
     }
   ],
   "compile-devDependencies" : [

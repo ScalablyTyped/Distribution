@@ -1,7 +1,7 @@
 package typings.fileType
 
 import typings.fileType.coreMod.FileExtension
-import typings.fileType.coreMod.MimeType
+import typings.fileType.coreMod._MimeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,331 +89,313 @@ object fileTypeStrings {
   @js.native
   sealed trait applicationSlashdicom
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashdicom: applicationSlashdicom = "application/dicom".asInstanceOf[applicationSlashdicom]
   
   @js.native
   sealed trait applicationSlasheps
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlasheps: applicationSlasheps = "application/eps".asInstanceOf[applicationSlasheps]
   
   @js.native
   sealed trait applicationSlashepubPlussignzip
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashepubPlussignzip: applicationSlashepubPlussignzip = "application/epub+zip".asInstanceOf[applicationSlashepubPlussignzip]
   
   @js.native
   sealed trait applicationSlashgzip
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashgzip: applicationSlashgzip = "application/gzip".asInstanceOf[applicationSlashgzip]
   
   @js.native
   sealed trait applicationSlashmxf
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashmxf: applicationSlashmxf = "application/mxf".asInstanceOf[applicationSlashmxf]
   
   @js.native
   sealed trait applicationSlashogg
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashogg: applicationSlashogg = "application/ogg".asInstanceOf[applicationSlashogg]
   
   @js.native
   sealed trait applicationSlashpdf
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
   
   @js.native
   sealed trait `applicationSlashpgp-encrypted`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashpgp-encrypted`: `applicationSlashpgp-encrypted` = "application/pgp-encrypted".asInstanceOf[`applicationSlashpgp-encrypted`]
   
   @js.native
   sealed trait applicationSlashpostscript
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashpostscript: applicationSlashpostscript = "application/postscript".asInstanceOf[applicationSlashpostscript]
   
   @js.native
   sealed trait applicationSlashrtf
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashrtf: applicationSlashrtf = "application/rtf".asInstanceOf[applicationSlashrtf]
   
   @js.native
   sealed trait `applicationSlashvndDotms-asf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashvndDotms-asf`: `applicationSlashvndDotms-asf` = "application/vnd.ms-asf".asInstanceOf[`applicationSlashvndDotms-asf`]
   
   @js.native
   sealed trait `applicationSlashvndDotms-cab-compressed`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashvndDotms-cab-compressed`: `applicationSlashvndDotms-cab-compressed` = "application/vnd.ms-cab-compressed".asInstanceOf[`applicationSlashvndDotms-cab-compressed`]
   
   @js.native
   sealed trait `applicationSlashvndDotms-fontobject`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashvndDotms-fontobject`: `applicationSlashvndDotms-fontobject` = "application/vnd.ms-fontobject".asInstanceOf[`applicationSlashvndDotms-fontobject`]
   
   @js.native
   sealed trait `applicationSlashvndDotms-htmlhelp`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashvndDotms-htmlhelp`: `applicationSlashvndDotms-htmlhelp` = "application/vnd.ms-htmlhelp".asInstanceOf[`applicationSlashvndDotms-htmlhelp`]
   
   @js.native
   sealed trait applicationSlashvndDotoasisDotopendocumentDotpresentation
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashvndDotoasisDotopendocumentDotpresentation: applicationSlashvndDotoasisDotopendocumentDotpresentation = "application/vnd.oasis.opendocument.presentation".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotpresentation]
   
   @js.native
   sealed trait applicationSlashvndDotoasisDotopendocumentDotspreadsheet
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashvndDotoasisDotopendocumentDotspreadsheet: applicationSlashvndDotoasisDotopendocumentDotspreadsheet = "application/vnd.oasis.opendocument.spreadsheet".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDotspreadsheet]
   
   @js.native
   sealed trait applicationSlashvndDotoasisDotopendocumentDottext
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashvndDotoasisDotopendocumentDottext: applicationSlashvndDotoasisDotopendocumentDottext = "application/vnd.oasis.opendocument.text".asInstanceOf[applicationSlashvndDotoasisDotopendocumentDottext]
-  
-  @js.native
-  sealed trait `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`
-    extends StObject
-       with MimeType
-  inline def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation` = "application/vnd.openxmlformats-officedocument.presentationml.presentation".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`]
-  
-  @js.native
-  sealed trait `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`
-    extends StObject
-       with MimeType
-  inline def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet` = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`]
-  
-  @js.native
-  sealed trait `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`
-    extends StObject
-       with MimeType
-  inline def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`]
   
   @js.native
   sealed trait applicationSlashvndDotsketchupDotskp
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashvndDotsketchupDotskp: applicationSlashvndDotsketchupDotskp = "application/vnd.sketchup.skp".asInstanceOf[applicationSlashvndDotsketchupDotskp]
   
   @js.native
   sealed trait applicationSlashvndDottcpdumpDotpcap
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashvndDottcpdumpDotpcap: applicationSlashvndDottcpdumpDotpcap = "application/vnd.tcpdump.pcap".asInstanceOf[applicationSlashvndDottcpdumpDotpcap]
   
   @js.native
   sealed trait applicationSlashwasm
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashwasm: applicationSlashwasm = "application/wasm".asInstanceOf[applicationSlashwasm]
   
   @js.native
   sealed trait `applicationSlashx-7z-compressed`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-7z-compressed`: `applicationSlashx-7z-compressed` = "application/x-7z-compressed".asInstanceOf[`applicationSlashx-7z-compressed`]
   
   @js.native
   sealed trait `applicationSlashx-apache-arrow`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-apache-arrow`: `applicationSlashx-apache-arrow` = "application/x-apache-arrow".asInstanceOf[`applicationSlashx-apache-arrow`]
   
   @js.native
   sealed trait `applicationSlashx-apple-diskimage`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-apple-diskimage`: `applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[`applicationSlashx-apple-diskimage`]
   
   @js.native
   sealed trait `applicationSlashx-asar`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-asar`: `applicationSlashx-asar` = "application/x-asar".asInstanceOf[`applicationSlashx-asar`]
   
   @js.native
   sealed trait `applicationSlashx-blender`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-blender`: `applicationSlashx-blender` = "application/x-blender".asInstanceOf[`applicationSlashx-blender`]
   
   @js.native
   sealed trait `applicationSlashx-bzip2`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-bzip2`: `applicationSlashx-bzip2` = "application/x-bzip2".asInstanceOf[`applicationSlashx-bzip2`]
   
   @js.native
   sealed trait `applicationSlashx-cfb`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-cfb`: `applicationSlashx-cfb` = "application/x-cfb".asInstanceOf[`applicationSlashx-cfb`]
   
   @js.native
   sealed trait `applicationSlashx-compress`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-compress`: `applicationSlashx-compress` = "application/x-compress".asInstanceOf[`applicationSlashx-compress`]
   
   @js.native
   sealed trait `applicationSlashx-deb`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-deb`: `applicationSlashx-deb` = "application/x-deb".asInstanceOf[`applicationSlashx-deb`]
   
   @js.native
   sealed trait `applicationSlashx-elf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-elf`: `applicationSlashx-elf` = "application/x-elf".asInstanceOf[`applicationSlashx-elf`]
   
   @js.native
   sealed trait `applicationSlashx-esri-shape`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-esri-shape`: `applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[`applicationSlashx-esri-shape`]
   
   @js.native
   sealed trait `applicationSlashx-google-chrome-extension`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-google-chrome-extension`: `applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[`applicationSlashx-google-chrome-extension`]
   
   @js.native
   sealed trait `applicationSlashx-indesign`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-indesign`: `applicationSlashx-indesign` = "application/x-indesign".asInstanceOf[`applicationSlashx-indesign`]
   
   @js.native
   sealed trait `applicationSlashx-lzh-compressed`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-lzh-compressed`: `applicationSlashx-lzh-compressed` = "application/x-lzh-compressed".asInstanceOf[`applicationSlashx-lzh-compressed`]
   
   @js.native
   sealed trait `applicationSlashx-lzip`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-lzip`: `applicationSlashx-lzip` = "application/x-lzip".asInstanceOf[`applicationSlashx-lzip`]
   
   @js.native
   sealed trait `applicationSlashx-mie`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-mie`: `applicationSlashx-mie` = "application/x-mie".asInstanceOf[`applicationSlashx-mie`]
   
   @js.native
   sealed trait `applicationSlashx-mobipocket-ebook`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-mobipocket-ebook`: `applicationSlashx-mobipocket-ebook` = "application/x-mobipocket-ebook".asInstanceOf[`applicationSlashx-mobipocket-ebook`]
   
   @js.native
   sealed trait `applicationSlashx-msdownload`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-msdownload`: `applicationSlashx-msdownload` = "application/x-msdownload".asInstanceOf[`applicationSlashx-msdownload`]
   
   @js.native
   sealed trait `applicationSlashx-nintendo-nes-rom`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-nintendo-nes-rom`: `applicationSlashx-nintendo-nes-rom` = "application/x-nintendo-nes-rom".asInstanceOf[`applicationSlashx-nintendo-nes-rom`]
   
   @js.native
   sealed trait `applicationSlashx-rar-compressed`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-rar-compressed`: `applicationSlashx-rar-compressed` = "application/x-rar-compressed".asInstanceOf[`applicationSlashx-rar-compressed`]
   
   @js.native
   sealed trait `applicationSlashx-rpm`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-rpm`: `applicationSlashx-rpm` = "application/x-rpm".asInstanceOf[`applicationSlashx-rpm`]
   
   @js.native
   sealed trait `applicationSlashx-shockwave-flash`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-shockwave-flash`: `applicationSlashx-shockwave-flash` = "application/x-shockwave-flash".asInstanceOf[`applicationSlashx-shockwave-flash`]
   
   @js.native
   sealed trait `applicationSlashx-sqlite3`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-sqlite3`: `applicationSlashx-sqlite3` = "application/x-sqlite3".asInstanceOf[`applicationSlashx-sqlite3`]
   
   @js.native
   sealed trait `applicationSlashx-tar`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-tar`: `applicationSlashx-tar` = "application/x-tar".asInstanceOf[`applicationSlashx-tar`]
   
   @js.native
   sealed trait `applicationSlashx-unix-archive`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-unix-archive`: `applicationSlashx-unix-archive` = "application/x-unix-archive".asInstanceOf[`applicationSlashx-unix-archive`]
   
   @js.native
   sealed trait `applicationSlashx-xpinstall`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-xpinstall`: `applicationSlashx-xpinstall` = "application/x-xpinstall".asInstanceOf[`applicationSlashx-xpinstall`]
   
   @js.native
   sealed trait `applicationSlashx-xz`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `applicationSlashx-xz`: `applicationSlashx-xz` = "application/x-xz".asInstanceOf[`applicationSlashx-xz`]
   
   @js.native
   sealed trait applicationSlashxDotappleDotalias
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashxDotappleDotalias: applicationSlashxDotappleDotalias = "application/x.apple.alias".asInstanceOf[applicationSlashxDotappleDotalias]
   
   @js.native
   sealed trait applicationSlashxDotmsDotshortcut
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashxDotmsDotshortcut: applicationSlashxDotmsDotshortcut = "application/x.ms.shortcut".asInstanceOf[applicationSlashxDotmsDotshortcut]
   
   @js.native
   sealed trait applicationSlashxml
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
   
   @js.native
   sealed trait applicationSlashzip
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
   
   @js.native
   sealed trait applicationSlashzstd
     extends StObject
-       with MimeType
+       with _MimeType
   inline def applicationSlashzstd: applicationSlashzstd = "application/zstd".asInstanceOf[applicationSlashzstd]
   
   @js.native
@@ -449,133 +431,133 @@ object fileTypeStrings {
   @js.native
   sealed trait audioSlashaac
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashaac: audioSlashaac = "audio/aac".asInstanceOf[audioSlashaac]
   
   @js.native
   sealed trait audioSlashaiff
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashaiff: audioSlashaiff = "audio/aiff".asInstanceOf[audioSlashaiff]
   
   @js.native
   sealed trait audioSlashamr
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashamr: audioSlashamr = "audio/amr".asInstanceOf[audioSlashamr]
   
   @js.native
   sealed trait audioSlashape
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashape: audioSlashape = "audio/ape".asInstanceOf[audioSlashape]
   
   @js.native
   sealed trait audioSlashmidi
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashmidi: audioSlashmidi = "audio/midi".asInstanceOf[audioSlashmidi]
   
   @js.native
   sealed trait audioSlashmp4
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashmp4: audioSlashmp4 = "audio/mp4".asInstanceOf[audioSlashmp4]
   
   @js.native
   sealed trait audioSlashmpeg
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashmpeg: audioSlashmpeg = "audio/mpeg".asInstanceOf[audioSlashmpeg]
   
   @js.native
   sealed trait audioSlashogg
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashogg: audioSlashogg = "audio/ogg".asInstanceOf[audioSlashogg]
   
   @js.native
   sealed trait audioSlashopus
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashopus: audioSlashopus = "audio/opus".asInstanceOf[audioSlashopus]
   
   @js.native
   sealed trait audioSlashqcelp
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashqcelp: audioSlashqcelp = "audio/qcelp".asInstanceOf[audioSlashqcelp]
   
   @js.native
   sealed trait `audioSlashvndDotdolbyDotdd-raw`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashvndDotdolbyDotdd-raw`: `audioSlashvndDotdolbyDotdd-raw` = "audio/vnd.dolby.dd-raw".asInstanceOf[`audioSlashvndDotdolbyDotdd-raw`]
   
   @js.native
   sealed trait audioSlashvndDotwave
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashvndDotwave: audioSlashvndDotwave = "audio/vnd.wave".asInstanceOf[audioSlashvndDotwave]
   
   @js.native
   sealed trait audioSlashwavpack
     extends StObject
-       with MimeType
+       with _MimeType
   inline def audioSlashwavpack: audioSlashwavpack = "audio/wavpack".asInstanceOf[audioSlashwavpack]
   
   @js.native
   sealed trait `audioSlashx-dsf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-dsf`: `audioSlashx-dsf` = "audio/x-dsf".asInstanceOf[`audioSlashx-dsf`]
   
   @js.native
   sealed trait `audioSlashx-flac`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-flac`: `audioSlashx-flac` = "audio/x-flac".asInstanceOf[`audioSlashx-flac`]
   
   @js.native
   sealed trait `audioSlashx-it`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-it`: `audioSlashx-it` = "audio/x-it".asInstanceOf[`audioSlashx-it`]
   
   @js.native
   sealed trait `audioSlashx-m4a`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-m4a`: `audioSlashx-m4a` = "audio/x-m4a".asInstanceOf[`audioSlashx-m4a`]
   
   @js.native
   sealed trait `audioSlashx-ms-asf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-ms-asf`: `audioSlashx-ms-asf` = "audio/x-ms-asf".asInstanceOf[`audioSlashx-ms-asf`]
   
   @js.native
   sealed trait `audioSlashx-musepack`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-musepack`: `audioSlashx-musepack` = "audio/x-musepack".asInstanceOf[`audioSlashx-musepack`]
   
   @js.native
   sealed trait `audioSlashx-s3m`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-s3m`: `audioSlashx-s3m` = "audio/x-s3m".asInstanceOf[`audioSlashx-s3m`]
   
   @js.native
   sealed trait `audioSlashx-voc`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-voc`: `audioSlashx-voc` = "audio/x-voc".asInstanceOf[`audioSlashx-voc`]
   
   @js.native
   sealed trait `audioSlashx-xm`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `audioSlashx-xm`: `audioSlashx-xm` = "audio/x-xm".asInstanceOf[`audioSlashx-xm`]
   
   @js.native
@@ -767,25 +749,25 @@ object fileTypeStrings {
   @js.native
   sealed trait fontSlashotf
     extends StObject
-       with MimeType
+       with _MimeType
   inline def fontSlashotf: fontSlashotf = "font/otf".asInstanceOf[fontSlashotf]
   
   @js.native
   sealed trait fontSlashttf
     extends StObject
-       with MimeType
+       with _MimeType
   inline def fontSlashttf: fontSlashttf = "font/ttf".asInstanceOf[fontSlashttf]
   
   @js.native
   sealed trait fontSlashwoff
     extends StObject
-       with MimeType
+       with _MimeType
   inline def fontSlashwoff: fontSlashwoff = "font/woff".asInstanceOf[fontSlashwoff]
   
   @js.native
   sealed trait fontSlashwoff2
     extends StObject
-       with MimeType
+       with _MimeType
   inline def fontSlashwoff2: fontSlashwoff2 = "font/woff2".asInstanceOf[fontSlashwoff2]
   
   @js.native
@@ -833,199 +815,199 @@ object fileTypeStrings {
   @js.native
   sealed trait imageSlashapng
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashapng: imageSlashapng = "image/apng".asInstanceOf[imageSlashapng]
   
   @js.native
   sealed trait imageSlashavif
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashavif: imageSlashavif = "image/avif".asInstanceOf[imageSlashavif]
   
   @js.native
   sealed trait imageSlashbmp
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   
   @js.native
   sealed trait imageSlashbpg
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashbpg: imageSlashbpg = "image/bpg".asInstanceOf[imageSlashbpg]
   
   @js.native
   sealed trait imageSlashflif
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashflif: imageSlashflif = "image/flif".asInstanceOf[imageSlashflif]
   
   @js.native
   sealed trait imageSlashgif
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashgif: imageSlashgif = "image/gif".asInstanceOf[imageSlashgif]
   
   @js.native
   sealed trait imageSlashheic
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashheic: imageSlashheic = "image/heic".asInstanceOf[imageSlashheic]
   
   @js.native
   sealed trait `imageSlashheic-sequence`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashheic-sequence`: `imageSlashheic-sequence` = "image/heic-sequence".asInstanceOf[`imageSlashheic-sequence`]
   
   @js.native
   sealed trait imageSlashheif
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashheif: imageSlashheif = "image/heif".asInstanceOf[imageSlashheif]
   
   @js.native
   sealed trait `imageSlashheif-sequence`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashheif-sequence`: `imageSlashheif-sequence` = "image/heif-sequence".asInstanceOf[`imageSlashheif-sequence`]
   
   @js.native
   sealed trait imageSlashicns
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashicns: imageSlashicns = "image/icns".asInstanceOf[imageSlashicns]
   
   @js.native
   sealed trait imageSlashjp2
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashjp2: imageSlashjp2 = "image/jp2".asInstanceOf[imageSlashjp2]
   
   @js.native
   sealed trait imageSlashjpeg
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   
   @js.native
   sealed trait imageSlashjpm
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashjpm: imageSlashjpm = "image/jpm".asInstanceOf[imageSlashjpm]
   
   @js.native
   sealed trait imageSlashjpx
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashjpx: imageSlashjpx = "image/jpx".asInstanceOf[imageSlashjpx]
   
   @js.native
   sealed trait imageSlashjxl
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashjxl: imageSlashjxl = "image/jxl".asInstanceOf[imageSlashjxl]
   
   @js.native
   sealed trait imageSlashktx
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashktx: imageSlashktx = "image/ktx".asInstanceOf[imageSlashktx]
   
   @js.native
   sealed trait imageSlashmj2
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashmj2: imageSlashmj2 = "image/mj2".asInstanceOf[imageSlashmj2]
   
   @js.native
   sealed trait imageSlashpng
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   
   @js.native
   sealed trait imageSlashtiff
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
   
   @js.native
   sealed trait imageSlashvndDotadobeDotphotoshop
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashvndDotadobeDotphotoshop: imageSlashvndDotadobeDotphotoshop = "image/vnd.adobe.photoshop".asInstanceOf[imageSlashvndDotadobeDotphotoshop]
   
   @js.native
   sealed trait `imageSlashvndDotms-photo`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashvndDotms-photo`: `imageSlashvndDotms-photo` = "image/vnd.ms-photo".asInstanceOf[`imageSlashvndDotms-photo`]
   
   @js.native
   sealed trait imageSlashwebp
     extends StObject
-       with MimeType
+       with _MimeType
   inline def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
   
   @js.native
   sealed trait `imageSlashx-adobe-dng`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-adobe-dng`: `imageSlashx-adobe-dng` = "image/x-adobe-dng".asInstanceOf[`imageSlashx-adobe-dng`]
   
   @js.native
   sealed trait `imageSlashx-canon-cr2`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-canon-cr2`: `imageSlashx-canon-cr2` = "image/x-canon-cr2".asInstanceOf[`imageSlashx-canon-cr2`]
   
   @js.native
   sealed trait `imageSlashx-canon-cr3`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-canon-cr3`: `imageSlashx-canon-cr3` = "image/x-canon-cr3".asInstanceOf[`imageSlashx-canon-cr3`]
   
   @js.native
   sealed trait `imageSlashx-fujifilm-raf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-fujifilm-raf`: `imageSlashx-fujifilm-raf` = "image/x-fujifilm-raf".asInstanceOf[`imageSlashx-fujifilm-raf`]
   
   @js.native
   sealed trait `imageSlashx-icon`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-icon`: `imageSlashx-icon` = "image/x-icon".asInstanceOf[`imageSlashx-icon`]
   
   @js.native
   sealed trait `imageSlashx-nikon-nef`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-nikon-nef`: `imageSlashx-nikon-nef` = "image/x-nikon-nef".asInstanceOf[`imageSlashx-nikon-nef`]
   
   @js.native
   sealed trait `imageSlashx-olympus-orf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-olympus-orf`: `imageSlashx-olympus-orf` = "image/x-olympus-orf".asInstanceOf[`imageSlashx-olympus-orf`]
   
   @js.native
   sealed trait `imageSlashx-panasonic-rw2`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-panasonic-rw2`: `imageSlashx-panasonic-rw2` = "image/x-panasonic-rw2".asInstanceOf[`imageSlashx-panasonic-rw2`]
   
   @js.native
   sealed trait `imageSlashx-sony-arw`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-sony-arw`: `imageSlashx-sony-arw` = "image/x-sony-arw".asInstanceOf[`imageSlashx-sony-arw`]
   
   @js.native
   sealed trait `imageSlashx-xcf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `imageSlashx-xcf`: `imageSlashx-xcf` = "image/x-xcf".asInstanceOf[`imageSlashx-xcf`]
   
   @js.native
@@ -1157,19 +1139,19 @@ object fileTypeStrings {
   @js.native
   sealed trait modelSlash3mf
     extends StObject
-       with MimeType
+       with _MimeType
   inline def modelSlash3mf: modelSlash3mf = "model/3mf".asInstanceOf[modelSlash3mf]
   
   @js.native
   sealed trait `modelSlashgltf-binary`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `modelSlashgltf-binary`: `modelSlashgltf-binary` = "model/gltf-binary".asInstanceOf[`modelSlashgltf-binary`]
   
   @js.native
   sealed trait modelSlashstl
     extends StObject
-       with MimeType
+       with _MimeType
   inline def modelSlashstl: modelSlashstl = "model/stl".asInstanceOf[modelSlashstl]
   
   @js.native
@@ -1433,13 +1415,13 @@ object fileTypeStrings {
   @js.native
   sealed trait textSlashcalendar
     extends StObject
-       with MimeType
+       with _MimeType
   inline def textSlashcalendar: textSlashcalendar = "text/calendar".asInstanceOf[textSlashcalendar]
   
   @js.native
   sealed trait textSlashvcard
     extends StObject
-       with MimeType
+       with _MimeType
   inline def textSlashvcard: textSlashvcard = "text/vcard".asInstanceOf[textSlashvcard]
   
   @js.native
@@ -1463,91 +1445,91 @@ object fileTypeStrings {
   @js.native
   sealed trait videoSlash3gpp
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlash3gpp: videoSlash3gpp = "video/3gpp".asInstanceOf[videoSlash3gpp]
   
   @js.native
   sealed trait videoSlash3gpp2
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlash3gpp2: videoSlash3gpp2 = "video/3gpp2".asInstanceOf[videoSlash3gpp2]
   
   @js.native
   sealed trait videoSlashMP1S
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashMP1S: videoSlashMP1S = "video/MP1S".asInstanceOf[videoSlashMP1S]
   
   @js.native
   sealed trait videoSlashMP2P
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashMP2P: videoSlashMP2P = "video/MP2P".asInstanceOf[videoSlashMP2P]
   
   @js.native
   sealed trait videoSlashmp2t
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashmp2t: videoSlashmp2t = "video/mp2t".asInstanceOf[videoSlashmp2t]
   
   @js.native
   sealed trait videoSlashmp4
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashmp4: videoSlashmp4 = "video/mp4".asInstanceOf[videoSlashmp4]
   
   @js.native
   sealed trait videoSlashmpeg
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashmpeg: videoSlashmpeg = "video/mpeg".asInstanceOf[videoSlashmpeg]
   
   @js.native
   sealed trait videoSlashogg
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashogg: videoSlashogg = "video/ogg".asInstanceOf[videoSlashogg]
   
   @js.native
   sealed trait videoSlashquicktime
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashquicktime: videoSlashquicktime = "video/quicktime".asInstanceOf[videoSlashquicktime]
   
   @js.native
   sealed trait videoSlashvndDotavi
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashvndDotavi: videoSlashvndDotavi = "video/vnd.avi".asInstanceOf[videoSlashvndDotavi]
   
   @js.native
   sealed trait videoSlashwebm
     extends StObject
-       with MimeType
+       with _MimeType
   inline def videoSlashwebm: videoSlashwebm = "video/webm".asInstanceOf[videoSlashwebm]
   
   @js.native
   sealed trait `videoSlashx-flv`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `videoSlashx-flv`: `videoSlashx-flv` = "video/x-flv".asInstanceOf[`videoSlashx-flv`]
   
   @js.native
   sealed trait `videoSlashx-m4v`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `videoSlashx-m4v`: `videoSlashx-m4v` = "video/x-m4v".asInstanceOf[`videoSlashx-m4v`]
   
   @js.native
   sealed trait `videoSlashx-matroska`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `videoSlashx-matroska`: `videoSlashx-matroska` = "video/x-matroska".asInstanceOf[`videoSlashx-matroska`]
   
   @js.native
   sealed trait `videoSlashx-ms-asf`
     extends StObject
-       with MimeType
+       with _MimeType
   inline def `videoSlashx-ms-asf`: `videoSlashx-ms-asf` = "video/x-ms-asf".asInstanceOf[`videoSlashx-ms-asf`]
   
   @js.native

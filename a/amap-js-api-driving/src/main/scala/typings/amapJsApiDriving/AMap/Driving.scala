@@ -10,8 +10,8 @@ import typings.amapJsApiDriving.AMap.Driving.SearchPoint
 import typings.amapJsApiDriving.AMap.Driving.SearchResultBase
 import typings.amapJsApiDriving.AMap.Driving.SearchResultExt
 import typings.amapJsApiDriving.AMap.Driving.SearchStatus
-import typings.amapJsApiDriving.amapJsApiDrivingNumbers.`0`
-import typings.amapJsApiDriving.amapJsApiDrivingNumbers.`1`
+import typings.amapJsApiDriving.amapJsApiDrivingInts.`0`
+import typings.amapJsApiDriving.amapJsApiDrivingInts.`1`
 import typings.amapJsApiDriving.amapJsApiDrivingStrings.all
 import typings.amapJsApiDriving.amapJsApiDrivingStrings.base
 import typings.amapJsApiDriving.amapJsApiDrivingStrings.complete

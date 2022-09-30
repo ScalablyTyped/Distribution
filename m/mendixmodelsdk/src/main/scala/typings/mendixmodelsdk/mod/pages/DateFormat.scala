@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.DateFormat")
 @js.native
-class DateFormat protected ()
+open class DateFormat protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DateFormat {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

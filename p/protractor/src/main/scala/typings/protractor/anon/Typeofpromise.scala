@@ -14,7 +14,7 @@ trait Typeofpromise extends StObject {
     * argument. The callback will the resolve or reject the returned promise,
     * based on its arguments.
     */
-  def checkedNodeCall[T](fn: js.Function, varArgs: js.Any*): js.Promise[T] = js.native
+  def checkedNodeCall[T](fn: js.Function, varArgs: Any*): js.Promise[T] = js.native
   
   /**
     * Creates a promise that will be resolved at a set time in the future.
@@ -42,7 +42,7 @@ trait Typeofpromise extends StObject {
     arr: js.Array[T],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
     // value
-  optSelf: js.Any
+  optSelf: Any
   ): js.Promise[js.Array[V]] = js.native
   def filter[T, V](
     arr: js.Promise[js.Array[T]],
@@ -52,7 +52,7 @@ trait Typeofpromise extends StObject {
     arr: js.Promise[js.Array[T]],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
     // value
-  optSelf: js.Any
+  optSelf: Any
   ): js.Promise[js.Array[V]] = js.native
   
   /**
@@ -70,7 +70,7 @@ trait Typeofpromise extends StObject {
     *     value['self'] = value;
     *     promise.fullyResolved(value);  // Stack overflow.
     */
-  def fullyResolved(value: js.Any): js.Promise[js.Any] = js.native
+  def fullyResolved(value: Any): js.Promise[Any] = js.native
   
   // region Functions
   /**
@@ -78,7 +78,7 @@ trait Typeofpromise extends StObject {
     * Any object whose 'then' property is a function will be considered a
     * promise.
     */
-  def isPromise(value: js.Any): Boolean = js.native
+  def isPromise(value: Any): Boolean = js.native
   
   /**
     * Calls a function for each element in an array and inserts the result into a
@@ -95,21 +95,21 @@ trait Typeofpromise extends StObject {
     */
   def map[T, V](
     arr: js.Array[T],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
   ): js.Promise[js.Array[V]] = js.native
   def map[T, V](
     arr: js.Array[T],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
-    optSelf: js.Any
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
+    optSelf: Any
   ): js.Promise[js.Array[V]] = js.native
   def map[T, V](
     arr: js.Promise[js.Array[T]],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
   ): js.Promise[js.Array[V]] = js.native
   def map[T, V](
     arr: js.Promise[js.Array[T]],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
-    optSelf: js.Any
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
+    optSelf: Any
   ): js.Promise[js.Array[V]] = js.native
   
   /**
@@ -142,5 +142,5 @@ trait Typeofpromise extends StObject {
     *       throw Error('two');  // Hides Error: one
     *     });
     */
-  def thenFinally[R](promise: js.Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = js.native
+  def thenFinally[R](promise: Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = js.native
 }

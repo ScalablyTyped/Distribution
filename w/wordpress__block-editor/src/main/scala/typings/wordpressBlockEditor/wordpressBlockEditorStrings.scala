@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wordpressBlockEditorStrings {
   
   @js.native
+  sealed trait UseBlockProps extends StObject
+  inline def UseBlockProps: UseBlockProps = "UseBlockProps".asInstanceOf[UseBlockProps]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -50,10 +54,6 @@ object wordpressBlockEditorStrings {
   inline def alt: alt = "alt".asInstanceOf[alt]
   
   @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
-  
-  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -84,10 +84,6 @@ object wordpressBlockEditorStrings {
   @js.native
   sealed trait base extends StObject
   inline def base: base = "base".asInstanceOf[base]
-  
-  @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
   
   @js.native
   sealed trait bdi extends StObject
@@ -215,10 +211,6 @@ object wordpressBlockEditorStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait disableCustomColors extends StObject
   inline def disableCustomColors: disableCustomColors = "disableCustomColors".asInstanceOf[disableCustomColors]
   
@@ -229,6 +221,10 @@ object wordpressBlockEditorStrings {
   @js.native
   sealed trait dl extends StObject
   inline def dl: dl = "dl".asInstanceOf[dl]
+  
+  @js.native
+  sealed trait document extends StObject
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait dt extends StObject
@@ -247,6 +243,10 @@ object wordpressBlockEditorStrings {
   inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
   
@@ -263,24 +263,12 @@ object wordpressBlockEditorStrings {
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
   sealed trait form extends StObject
   inline def form: form = "form".asInstanceOf[form]
-  
-  @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait full
@@ -435,10 +423,6 @@ object wordpressBlockEditorStrings {
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
   
@@ -519,10 +503,6 @@ object wordpressBlockEditorStrings {
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
-  
-  @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
   
@@ -557,6 +537,10 @@ object wordpressBlockEditorStrings {
   @js.native
   sealed trait q extends StObject
   inline def q: q = "q".asInstanceOf[q]
+  
+  @js.native
+  sealed trait ref extends StObject
+  inline def ref: ref = "ref".asInstanceOf[ref]
   
   @js.native
   sealed trait removals extends StObject
@@ -755,6 +739,10 @@ object wordpressBlockEditorStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait `var` extends StObject

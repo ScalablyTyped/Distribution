@@ -22,6 +22,13 @@ trait DomainOptions extends StObject {
   var allowUnicode: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The maximum number of domain segments (e.g. `x.y.z` has 3 segments) allowed. Defaults to no limit.
+    *
+    * @default Infinity
+    */
+  var maxDomainSegments: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Number of segments required for the domain.
     *
     * @default 2
@@ -51,6 +58,10 @@ object DomainOptions {
     inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     
     inline def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
+    
+    inline def setMaxDomainSegments(value: Double): Self = StObject.set(x, "maxDomainSegments", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDomainSegmentsUndefined: Self = StObject.set(x, "maxDomainSegments", js.undefined)
     
     inline def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
     

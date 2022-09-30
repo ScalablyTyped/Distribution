@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "LayersControl")
 @js.native
-class LayersControl[P /* <: LayersControlProps */, E /* <: Layers */] protected () extends MapControl[P, E] {
+open class LayersControl[P /* <: LayersControlProps */, E /* <: Layers */] protected () extends MapControl[P, E] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   def addBaseLayer(layer: Layer, name: String, checked: Boolean): Unit = js.native
   
@@ -33,7 +33,7 @@ object LayersControl {
   
   @JSImport("react-leaflet", "LayersControl.BaseLayer")
   @js.native
-  class BaseLayer[P /* <: ControlledLayerProps */] protected () extends ControlledLayer[P] {
+  open class BaseLayer[P /* <: ControlledLayerProps */] protected () extends ControlledLayer[P] {
     def this(props: ControlledLayerProps) = this()
     
     def addLayer(layer: Layer): Unit = js.native
@@ -41,14 +41,14 @@ object LayersControl {
   
   @JSImport("react-leaflet", "LayersControl.ControlledLayer")
   @js.native
-  class ControlledLayer[P /* <: ControlledLayerProps */] protected ()
-    extends Component[P, js.Object, js.Any] {
+  open class ControlledLayer[P /* <: ControlledLayerProps */] protected ()
+    extends Component[P, js.Object, Any] {
     def this(props: P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
     
     var contextValue: LeafletContext = js.native
     
@@ -59,7 +59,7 @@ object LayersControl {
   
   @JSImport("react-leaflet", "LayersControl.Overlay")
   @js.native
-  class Overlay[P /* <: ControlledLayerProps */] protected () extends ControlledLayer[P] {
+  open class Overlay[P /* <: ControlledLayerProps */] protected () extends ControlledLayer[P] {
     def this(props: ControlledLayerProps) = this()
     
     def addLayer(layer: Layer): Unit = js.native
@@ -108,7 +108,7 @@ object LayersControl {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
       

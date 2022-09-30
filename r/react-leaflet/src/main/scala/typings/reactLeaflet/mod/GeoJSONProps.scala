@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.LayerOptions because Already inherited
-- typings.leaflet.mod.GeoJSONOptions because var conflicts: attribution, pane. Inlined style, pointToLayer, onEachFeature, coordsToLatLng, filter
+- typings.leaflet.mod.InteractiveLayerOptions because Already inherited
+- typings.leaflet.mod.GeoJSONOptions because var conflicts: attribution, bubblingMouseEvents, interactive, pane. Inlined style, pointToLayer, onEachFeature, markersInheritOptions, coordsToLatLng, filter
 - typings.reactLeaflet.mod.FeatureGroupEvents because var conflicts: onclick, oncontextmenu, ondblclick, onmouseout, onmouseover. Inlined onlayeradd, onlayerremove */ trait GeoJSONProps
   extends StObject
      with PathProps {
@@ -43,7 +44,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * }
     * ```
     */
-  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, js.Any], Boolean]] = js.undefined
+  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, Any], Boolean]] = js.undefined
+  
+  var markersInheritOptions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Function that will be called once for each created Feature, after it
@@ -56,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * ```
     */
   var onEachFeature: js.UndefOr[
-    js.Function2[/* feature */ Feature[GeometryObject, js.Any], /* layer */ Layer, Unit]
+    js.Function2[/* feature */ Feature[GeometryObject, Any], /* layer */ Layer, Unit]
   ] = js.undefined
   
   var onlayeradd: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.undefined
@@ -78,7 +81,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     */
   var pointToLayer: js.UndefOr[
     js.Function2[
-      /* geoJsonPoint */ Feature[typings.geojson.mod.Point, js.Any], 
+      /* geoJsonPoint */ Feature[typings.geojson.mod.Point, Any], 
       /* latlng */ LatLng_, 
       Layer
     ]
@@ -97,7 +100,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * }
     * ```
     */
-  var style: js.UndefOr[PathOptions | StyleFunction[js.Any]] = js.undefined
+  var style: js.UndefOr[PathOptions | StyleFunction[Any]] = js.undefined
 }
 object GeoJSONProps {
   
@@ -114,13 +117,17 @@ object GeoJSONProps {
     
     inline def setData(value: GeoJsonObject | js.Array[GeoJsonObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: GeoJsonObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: GeoJsonObject*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, js.Any] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, Any] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, js.Any], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
+    inline def setMarkersInheritOptions(value: Boolean): Self = StObject.set(x, "markersInheritOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMarkersInheritOptionsUndefined: Self = StObject.set(x, "markersInheritOptions", js.undefined)
+    
+    inline def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, Any], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
     
     inline def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
     
@@ -132,15 +139,13 @@ object GeoJSONProps {
     
     inline def setOnlayerremoveUndefined: Self = StObject.set(x, "onlayerremove", js.undefined)
     
-    inline def setPointToLayer(
-      value: (/* geoJsonPoint */ Feature[typings.geojson.mod.Point, js.Any], /* latlng */ LatLng_) => Layer
-    ): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
+    inline def setPointToLayer(value: (/* geoJsonPoint */ Feature[typings.geojson.mod.Point, Any], /* latlng */ LatLng_) => Layer): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
     
     inline def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
     
-    inline def setStyle(value: PathOptions | StyleFunction[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: PathOptions | StyleFunction[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    inline def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, js.Any]] => PathOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
+    inline def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, Any]] => PathOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

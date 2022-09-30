@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typesMod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.geolib.geolibNumbers.`2`
+    - typings.geolib.geolibInts.`2`
     - typings.geolib.geolibStrings.alt
     - typings.geolib.geolibStrings.altitude
     - typings.geolib.geolibStrings.elevation
@@ -17,7 +17,7 @@ object typesMod {
   trait AltitudeKeys extends StObject
   object AltitudeKeys {
     
-    inline def `2`: typings.geolib.geolibNumbers.`2` = 2.asInstanceOf[typings.geolib.geolibNumbers.`2`]
+    inline def `2`: typings.geolib.geolibInts.`2` = 2.asInstanceOf[typings.geolib.geolibInts.`2`]
     
     inline def alt: typings.geolib.geolibStrings.alt = "alt".asInstanceOf[typings.geolib.geolibStrings.alt]
     
@@ -119,14 +119,14 @@ object typesMod {
   type GeolibLongitudeInputValue = Double | String
   
   /* Rewritten from type alias, can be one of: 
-    - typings.geolib.geolibNumbers.`1`
+    - typings.geolib.geolibInts.`1`
     - typings.geolib.geolibStrings.lat
     - typings.geolib.geolibStrings.latitude
   */
   trait LatitudeKeys extends StObject
   object LatitudeKeys {
     
-    inline def `1`: typings.geolib.geolibNumbers.`1` = 1.asInstanceOf[typings.geolib.geolibNumbers.`1`]
+    inline def `1`: typings.geolib.geolibInts.`1` = 1.asInstanceOf[typings.geolib.geolibInts.`1`]
     
     inline def lat: typings.geolib.geolibStrings.lat = "lat".asInstanceOf[typings.geolib.geolibStrings.lat]
     
@@ -134,7 +134,7 @@ object typesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.geolib.geolibNumbers.`0`
+    - typings.geolib.geolibInts.`0`
     - typings.geolib.geolibStrings.lng
     - typings.geolib.geolibStrings.lon
     - typings.geolib.geolibStrings.longitude
@@ -142,7 +142,7 @@ object typesMod {
   trait LongitudeKeys extends StObject
   object LongitudeKeys {
     
-    inline def `0`: typings.geolib.geolibNumbers.`0` = 0.asInstanceOf[typings.geolib.geolibNumbers.`0`]
+    inline def `0`: typings.geolib.geolibInts.`0` = 0.asInstanceOf[typings.geolib.geolibInts.`0`]
     
     inline def lng: typings.geolib.geolibStrings.lng = "lng".asInstanceOf[typings.geolib.geolibStrings.lng]
     

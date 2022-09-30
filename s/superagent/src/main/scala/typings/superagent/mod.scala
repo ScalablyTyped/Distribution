@@ -10,6 +10,7 @@ import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import typings.std.Blob
 import typings.std.Error
+import typings.std.Promise
 import typings.std.ReadableStream
 import typings.std.Record
 import typings.std.WritableStream
@@ -120,7 +121,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Request
-    extends js.Promise[Response] {
+    extends StObject
+       with Promise[Response] {
     
     def abort(): Unit = js.native
     
@@ -411,7 +413,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait SuperAgentRequest extends Request {
+  trait SuperAgentRequest
+    extends StObject
+       with Request {
     
     def agent(): this.type = js.native
     def agent(agent: Agent): this.type = js.native

@@ -26,47 +26,46 @@ object mod {
   
   @JSImport("leaflet", "PolylineDecorator")
   @js.native
-  class PolylineDecorator_ protected ()
-    extends FeatureGroup_[js.Any] {
+  open class PolylineDecorator_ protected () extends FeatureGroup_[Any] {
     def this(paths: js.Array[
-            js.Array[LatLngExpression] | LatLngExpression | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any])
+            js.Array[LatLngExpression] | LatLngExpression | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any])
           ]) = this()
-    def this(paths: Polygon_[js.Any]) = this()
-    def this(paths: Polyline_[LineString | MultiLineString, js.Any]) = this()
+    def this(paths: Polygon_[Any]) = this()
+    def this(paths: Polyline_[LineString | MultiLineString, Any]) = this()
     def this(
       paths: js.Array[
-            js.Array[LatLngExpression] | LatLngExpression | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any])
+            js.Array[LatLngExpression] | LatLngExpression | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any])
           ],
       options: PolylineDecoratorOptions
     ) = this()
-    def this(paths: Polygon_[js.Any], options: PolylineDecoratorOptions) = this()
-    def this(paths: Polyline_[LineString | MultiLineString, js.Any], options: PolylineDecoratorOptions) = this()
+    def this(paths: Polygon_[Any], options: PolylineDecoratorOptions) = this()
+    def this(paths: Polyline_[LineString | MultiLineString, Any], options: PolylineDecoratorOptions) = this()
     
     def initialize(
       paths: js.Array[
-          js.Array[LatLngExpression] | LatLngExpression | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any])
+          js.Array[LatLngExpression] | LatLngExpression | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any])
         ]
     ): Unit = js.native
     def initialize(
       paths: js.Array[
-          js.Array[LatLngExpression] | LatLngExpression | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any])
+          js.Array[LatLngExpression] | LatLngExpression | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any])
         ],
       options: PolylineDecoratorOptions
     ): Unit = js.native
-    def initialize(paths: Polygon_[js.Any]): Unit = js.native
-    def initialize(paths: Polygon_[js.Any], options: PolylineDecoratorOptions): Unit = js.native
-    def initialize(paths: Polyline_[LineString | MultiLineString, js.Any]): Unit = js.native
-    def initialize(paths: Polyline_[LineString | MultiLineString, js.Any], options: PolylineDecoratorOptions): Unit = js.native
+    def initialize(paths: Polygon_[Any]): Unit = js.native
+    def initialize(paths: Polygon_[Any], options: PolylineDecoratorOptions): Unit = js.native
+    def initialize(paths: Polyline_[LineString | MultiLineString, Any]): Unit = js.native
+    def initialize(paths: Polyline_[LineString | MultiLineString, Any], options: PolylineDecoratorOptions): Unit = js.native
     
     def redraw(): Unit = js.native
     
     def setPaths(
       paths: js.Array[
-          js.Array[LatLngExpression] | LatLngExpression | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any])
+          js.Array[LatLngExpression] | LatLngExpression | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any])
         ]
     ): Unit = js.native
-    def setPaths(paths: Polygon_[js.Any]): Unit = js.native
-    def setPaths(paths: Polyline_[LineString | MultiLineString, js.Any]): Unit = js.native
+    def setPaths(paths: Polygon_[Any]): Unit = js.native
+    def setPaths(paths: Polyline_[LineString | MultiLineString, Any]): Unit = js.native
     
     def setPatterns(patterns: js.Array[Pattern]): Unit = js.native
   }
@@ -79,10 +78,10 @@ object mod {
     
     @JSImport("leaflet", "Symbol.ArrowHead")
     @js.native
-    class ArrowHead_ () extends StObject {
+    open class ArrowHead_ () extends StObject {
       def this(options: ArrowHeadOptions) = this()
       
-      def buildSymbol(dirPoint: Point_, latLngs: js.Array[LatLng_], map: Map_, index: Double, total: Double): Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) = js.native
+      def buildSymbol(dirPoint: Point_, latLngs: js.Array[LatLng_], map: Map_, index: Double, total: Double): Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any]) = js.native
       
       def initialize(): Unit = js.native
       def initialize(options: ArrowHeadOptions): Unit = js.native
@@ -90,10 +89,10 @@ object mod {
     
     @JSImport("leaflet", "Symbol.Dash")
     @js.native
-    class Dash_ () extends StObject {
+    open class Dash_ () extends StObject {
       def this(options: DashOptions) = this()
       
-      def buildSymbol(dirPoint: Point_, latLngs: js.Array[LatLng_], map: Map_, index: Double, total: Double): Polyline_[LineString | MultiLineString, js.Any] = js.native
+      def buildSymbol(dirPoint: Point_, latLngs: js.Array[LatLng_], map: Map_, index: Double, total: Double): Polyline_[LineString | MultiLineString, Any] = js.native
       
       def initialize(): Unit = js.native
       def initialize(options: DashOptions): Unit = js.native
@@ -101,7 +100,7 @@ object mod {
     
     @JSImport("leaflet", "Symbol.Marker")
     @js.native
-    class Marker_ () extends StObject {
+    open class Marker_ () extends StObject {
       def this(options: MarkerOptions) = this()
       
       def buildSymbol(dirPoint: Point_, latLngs: js.Array[LatLng_], map: Map_, index: Double, total: Double): Marker_ = js.native
@@ -207,12 +206,12 @@ object mod {
     }
   }
   
-  inline def isCoord(c: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoord")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCoord(c: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoord")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isCoordArray(c: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoordArray")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCoordArray(c: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoordArray")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def polylineDecorator(
-    paths: (Polyline_[LineString | MultiLineString, js.Any]) | (js.Array[Polyline_[LineString | MultiLineString, js.Any]]),
+    paths: (Polyline_[LineString | MultiLineString, Any]) | (js.Array[Polyline_[LineString | MultiLineString, Any]]),
     options: js.UndefOr[PolylineDecoratorOptions]
   ): PolylineDecorator_ = (^.asInstanceOf[js.Dynamic].applyDynamic("polylineDecorator")(paths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PolylineDecorator_]
   
@@ -264,7 +263,7 @@ object mod {
       
       inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value*))
     }
   }
 }

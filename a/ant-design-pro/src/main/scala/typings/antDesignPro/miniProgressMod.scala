@@ -10,8 +10,7 @@ object miniProgressMod {
   
   @JSImport("ant-design-pro/lib/Charts/MiniProgress", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IMiniProgressProps, js.Any, js.Any]
+  open class default () extends Component[IMiniProgressProps, Any, Any]
   
   trait IMiniProgressProps extends StObject {
     
@@ -58,5 +57,5 @@ object miniProgressMod {
     }
   }
   
-  type MiniProgress = Component[IMiniProgressProps, js.Any, js.Any]
+  type MiniProgress = Component[IMiniProgressProps, Any, Any]
 }

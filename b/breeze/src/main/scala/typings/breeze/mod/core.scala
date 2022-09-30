@@ -92,7 +92,7 @@ object core {
   
   inline def extend(target: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  inline def formatString(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatString")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def formatString(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatString")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def getPropertyDescriptor(obj: Any, propertyName: String): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyDescriptor")(obj.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   

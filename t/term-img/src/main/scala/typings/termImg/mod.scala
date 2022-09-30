@@ -1,8 +1,7 @@
 package typings.termImg
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.ansiEscapes.mod.ImageOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,59 +9,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Get the image as a `string` that you can log manually.
-  	@param image - Filepath to an image or an image as a buffer.
-  	@example
-  	```
-  	import termImg = require('term-img');
-  	function fallback() {
-  		// Do something else when not supported
-  	}
-  	termImg('unicorn.jpg', {fallback});
-  	```
-  	*/
-  inline def apply[FallbackType](image: String): String | FallbackType = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[String | FallbackType]
-  inline def apply[FallbackType](image: String, options: Options[FallbackType]): String | FallbackType = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | FallbackType]
-  inline def apply[FallbackType](image: Buffer): String | FallbackType = ^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any]).asInstanceOf[String | FallbackType]
-  inline def apply[FallbackType](image: Buffer, options: Options[FallbackType]): String | FallbackType = (^.asInstanceOf[js.Dynamic].apply(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | FallbackType]
-  
   @JSImport("term-img", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("term-img", "UnsupportedTerminalError")
-  @js.native
-  def UnsupportedTerminalError: Instantiable0[UnsupportedTerminalErrorClass] = js.native
-  type UnsupportedTerminalError = UnsupportedTerminalErrorClass
+  inline def default[FallbackType](image: String): String | FallbackType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(image.asInstanceOf[js.Any]).asInstanceOf[String | FallbackType]
+  inline def default[FallbackType](image: String, options: Options[FallbackType]): String | FallbackType = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | FallbackType]
+  inline def default[FallbackType](image: Buffer): String | FallbackType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(image.asInstanceOf[js.Any]).asInstanceOf[String | FallbackType]
+  inline def default[FallbackType](image: Buffer, options: Options[FallbackType]): String | FallbackType = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | FallbackType]
   
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("term-img", "UnsupportedTerminalError")
   @js.native
-  class UnsupportedTerminalErrorCls ()
+  open class UnsupportedTerminalError ()
     extends StObject
-       with UnsupportedTerminalErrorClass {
+       with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
-    /* CompleteClass */
     @JSName("name")
-    override val name_UnsupportedTerminalErrorClass: typings.termImg.termImgStrings.UnsupportedTerminalError = js.native
+    val name_UnsupportedTerminalError: typings.termImg.termImgStrings.UnsupportedTerminalError = js.native
   }
-  
-  inline def UnsupportedTerminalError_=(x: Instantiable0[UnsupportedTerminalErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnsupportedTerminalError")(x.asInstanceOf[js.Any])
   
   trait Options[FallbackType]
     extends StObject
        with ImageOptions {
     
     /**
-    		Enables you to do something else when the terminal doesn't support images.
-    		@default () => throw new UnsupportedTerminalError()
-    		*/
+    	Enables you to do something else when the terminal doesn't support images.
+    	@default () => throw new UnsupportedTerminalError()
+    	*/
     val fallback: js.UndefOr[js.Function0[FallbackType]] = js.undefined
   }
   object Options {
@@ -77,26 +57,6 @@ object mod {
       inline def setFallback(value: () => FallbackType): Self = StObject.set(x, "fallback", js.Any.fromFunction0(value))
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
-    }
-  }
-  
-  trait UnsupportedTerminalErrorClass
-    extends StObject
-       with Error {
-    
-    @JSName("name")
-    val name_UnsupportedTerminalErrorClass: typings.termImg.termImgStrings.UnsupportedTerminalError
-  }
-  object UnsupportedTerminalErrorClass {
-    
-    inline def apply(message: String): UnsupportedTerminalErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "UnsupportedTerminalError")
-      __obj.asInstanceOf[UnsupportedTerminalErrorClass]
-    }
-    
-    extension [Self <: UnsupportedTerminalErrorClass](x: Self) {
-      
-      inline def setName(value: typings.termImg.termImgStrings.UnsupportedTerminalError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

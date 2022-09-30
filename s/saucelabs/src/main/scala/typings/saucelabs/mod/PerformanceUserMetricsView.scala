@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PerformanceUserMetricsView
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var items: js.UndefOr[js.Array[PerformanceMetricsListViewItems]] = js.undefined
   
@@ -28,7 +28,7 @@ object PerformanceUserMetricsView {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: PerformanceMetricsListViewItems*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PerformanceMetricsListViewItems*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.monacoEditor.mod.languages.css
 
-import typings.monacoEditor.monacoEditorNumbers.`1.1`
-import typings.monacoEditor.monacoEditorNumbers.`1`
+import typings.monacoEditor.monacoEditorDoubles.`1.1`
+import typings.monacoEditor.monacoEditorInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,16 +1,16 @@
 package typings.electronUtil
 
 import typings.electron.Electron.Accelerator
+import typings.electron.Electron.CrossProcessExports.MenuItemConstructorOptions
+import typings.electron.Electron.CrossProcessExports.Rectangle
+import typings.electron.Electron.CrossProcessExports.Session_
+import typings.electron.Electron.CrossProcessExports.Size
 import typings.electron.Electron.KeyboardEvent
 import typings.electron.Electron.Menu
 import typings.electron.Electron.MenuItem
-import typings.electron.Electron.MenuItemConstructorOptions
 import typings.electron.Electron.NativeImage_
-import typings.electron.Electron.Rectangle
-import typings.electron.Electron.Remote
-import typings.electron.Electron.Size
+import typings.electron.Electron.SharingItem
 import typings.electron.mod.BrowserWindow
-import typings.electron.mod.Session_
 import typings.electronUtil.electronUtilStrings.Advanced
 import typings.electronUtil.electronUtilStrings.Captioning
 import typings.electronUtil.electronUtilStrings.Dictation
@@ -76,6 +76,7 @@ import typings.electronUtil.electronUtilStrings.moveTabToNewWindow
 import typings.electronUtil.electronUtilStrings.normal
 import typings.electronUtil.electronUtilStrings.paste
 import typings.electronUtil.electronUtilStrings.pasteAndMatchStyle
+import typings.electronUtil.electronUtilStrings.privacy_
 import typings.electronUtil.electronUtilStrings.quit
 import typings.electronUtil.electronUtilStrings.radio
 import typings.electronUtil.electronUtilStrings.recentDocuments
@@ -88,13 +89,19 @@ import typings.electronUtil.electronUtilStrings.selectNextTab
 import typings.electronUtil.electronUtilStrings.selectPreviousTab
 import typings.electronUtil.electronUtilStrings.separator
 import typings.electronUtil.electronUtilStrings.services
+import typings.electronUtil.electronUtilStrings.shareMenu
 import typings.electronUtil.electronUtilStrings.sharing
+import typings.electronUtil.electronUtilStrings.showSubstitutions
 import typings.electronUtil.electronUtilStrings.speech
 import typings.electronUtil.electronUtilStrings.startSpeaking
 import typings.electronUtil.electronUtilStrings.stopSpeaking
 import typings.electronUtil.electronUtilStrings.submenu
 import typings.electronUtil.electronUtilStrings.toggleDevTools
+import typings.electronUtil.electronUtilStrings.toggleSmartDashes
+import typings.electronUtil.electronUtilStrings.toggleSmartQuotes
+import typings.electronUtil.electronUtilStrings.toggleSpellChecker
 import typings.electronUtil.electronUtilStrings.toggleTabBar
+import typings.electronUtil.electronUtilStrings.toggleTextReplacement
 import typings.electronUtil.electronUtilStrings.togglefullscreen
 import typings.electronUtil.electronUtilStrings.undo
 import typings.electronUtil.electronUtilStrings.unhide
@@ -125,7 +132,7 @@ object mod {
   
   @JSImport("electron-util", "api")
   @js.native
-  val api: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllElectron */ js.Any) | Remote = js.native
+  val api: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllElectron */ Any = js.native
   
   @JSImport("electron-util", "appLaunchTimestamp")
   @js.native
@@ -251,6 +258,7 @@ object mod {
     pane: universalaccess,
     section: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def openSystemPreferences(pane: SystemPreferencesWindowsPane): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def openSystemPreferences_security(pane: security): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
@@ -265,8 +273,8 @@ object mod {
   
   inline def platform[Macos, Windows, Linux, Default](choices: Choices[Macos, Windows, Linux, Default]): Macos | Windows | Linux | Default = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")(choices.asInstanceOf[js.Any]).asInstanceOf[Macos | Windows | Linux | Default]
   
-  inline def runJS(code: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def runJS(code: String, window: BrowserWindow): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def runJS(code: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def runJS(code: String, window: BrowserWindow): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def setContentSecurityPolicy(policy: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setContentSecurityPolicy(policy: String, options: SetContentSecurityPolicyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -294,6 +302,13 @@ object mod {
     val size: js.UndefOr[Size] = js.undefined
     
     /**
+    	Use the full display size when calculating the position.
+    	By default, only the workable screen area is used, which excludes the Windows taskbar and macOS dock.
+    	@default false
+    	*/
+    val useFullBounds: js.UndefOr[Boolean] = js.undefined
+    
+    /**
     	The window to center.
     	Default: Current window
     	*/
@@ -315,6 +330,10 @@ object mod {
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setUseFullBounds(value: Boolean): Self = StObject.set(x, "useFullBounds", value.asInstanceOf[js.Any])
+      
+      inline def setUseFullBoundsUndefined: Self = StObject.set(x, "useFullBounds", js.undefined)
       
       inline def setWindow(value: BrowserWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
@@ -366,6 +385,13 @@ object mod {
     val size: js.UndefOr[Size] = js.undefined
     
     /**
+    	Use the full display size when calculating the position.
+    	By default, only the workable screen area is used, which excludes the Windows taskbar and macOS dock.
+    	@default false
+    	*/
+    val useFullBounds: js.UndefOr[Boolean] = js.undefined
+    
+    /**
     	The window to get the bounds of.
     	Default: Current window
     	*/
@@ -383,6 +409,10 @@ object mod {
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setUseFullBounds(value: Boolean): Self = StObject.set(x, "useFullBounds", value.asInstanceOf[js.Any])
+      
+      inline def setUseFullBoundsUndefined: Self = StObject.set(x, "useFullBounds", js.undefined)
       
       inline def setWindow(value: BrowserWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
@@ -427,12 +457,14 @@ object mod {
     val registerAccelerator: js.UndefOr[Boolean] = js.undefined
     
     val role: js.UndefOr[
-        undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
+        undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | toggleSpellChecker | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | showSubstitutions | toggleSmartQuotes | toggleSmartDashes | toggleTextReplacement | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | shareMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
       ] = js.undefined
+    
+    val sharingItem: js.UndefOr[SharingItem] = js.undefined
     
     val sublabel: js.UndefOr[String] = js.undefined
     
-    val submenu: js.UndefOr[js.Array[MenuItemConstructorOptions] | Menu] = js.undefined
+    val submenu: js.UndefOr[js.Array[typings.electron.Electron.MenuItemConstructorOptions] | Menu] = js.undefined
     
     val toolTip: js.UndefOr[String] = js.undefined
     
@@ -470,11 +502,11 @@ object mod {
       
       inline def setAfterGroupContainingUndefined: Self = StObject.set(x, "afterGroupContaining", js.undefined)
       
-      inline def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value :_*))
+      inline def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value*))
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
       
       inline def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -482,11 +514,11 @@ object mod {
       
       inline def setBeforeGroupContainingUndefined: Self = StObject.set(x, "beforeGroupContaining", js.undefined)
       
-      inline def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value :_*))
+      inline def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value*))
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value*))
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -519,20 +551,24 @@ object mod {
       inline def setRegisterAcceleratorUndefined: Self = StObject.set(x, "registerAccelerator", js.undefined)
       
       inline def setRole(
-        value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
+        value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | toggleSpellChecker | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | showSubstitutions | toggleSmartQuotes | toggleSmartDashes | toggleTextReplacement | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | shareMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
       ): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setSharingItem(value: SharingItem): Self = StObject.set(x, "sharingItem", value.asInstanceOf[js.Any])
+      
+      inline def setSharingItemUndefined: Self = StObject.set(x, "sharingItem", js.undefined)
       
       inline def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
       
       inline def setSublabelUndefined: Self = StObject.set(x, "sublabel", js.undefined)
       
-      inline def setSubmenu(value: js.Array[MenuItemConstructorOptions] | Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
+      inline def setSubmenu(value: js.Array[typings.electron.Electron.MenuItemConstructorOptions] | Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
       
       inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
       
-      inline def setSubmenuVarargs(value: MenuItemConstructorOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
+      inline def setSubmenuVarargs(value: typings.electron.Electron.MenuItemConstructorOptions*): Self = StObject.set(x, "submenu", js.Array(value*))
       
       inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
       
@@ -636,13 +672,12 @@ object mod {
     val icon: js.UndefOr[String] = js.undefined
     
     /**
-    	Some additional text if needed.
-    	Only used on Windows.
+    	Some additional text if needed. Shown below copyright info.
     	*/
     val text: js.UndefOr[String] = js.undefined
     
     /**
-    	Customizable for localization. Used in the menu item label and window title (Windows-only).
+    	Customizable for localization. Used in the menu item label.
     	The app name is automatically appended at runtime.
     	Only used on Linux and Windows.
     	@default 'About'
@@ -686,7 +721,7 @@ object mod {
     }
   }
   
-  trait SystemPreferencesPanes extends StObject {
+  trait SystemPreferencesMacOsPanes extends StObject {
     
     var security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
     
@@ -696,19 +731,19 @@ object mod {
     
     var universalaccess: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
   }
-  object SystemPreferencesPanes {
+  object SystemPreferencesMacOsPanes {
     
     inline def apply(
       security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture,
       sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing,
       speech: Dictation | TTS,
       universalaccess: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
-    ): SystemPreferencesPanes = {
+    ): SystemPreferencesMacOsPanes = {
       val __obj = js.Dynamic.literal(security = security.asInstanceOf[js.Any], sharing = sharing.asInstanceOf[js.Any], speech = speech.asInstanceOf[js.Any], universalaccess = universalaccess.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SystemPreferencesPanes]
+      __obj.asInstanceOf[SystemPreferencesMacOsPanes]
     }
     
-    extension [Self <: SystemPreferencesPanes](x: Self) {
+    extension [Self <: SystemPreferencesMacOsPanes](x: Self) {
       
       inline def setSecurity(
         value: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
@@ -724,6 +759,384 @@ object mod {
         value: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
       ): Self = StObject.set(x, "universalaccess", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.electronUtil.electronUtilStrings.display
+    - typings.electronUtil.electronUtilStrings.sound
+    - typings.electronUtil.electronUtilStrings.notifications
+    - typings.electronUtil.electronUtilStrings.quiethours
+    - typings.electronUtil.electronUtilStrings.powersleep
+    - typings.electronUtil.electronUtilStrings.batterysaver
+    - typings.electronUtil.electronUtilStrings.storagesense
+    - typings.electronUtil.electronUtilStrings.tabletmode
+    - typings.electronUtil.electronUtilStrings.multitasking
+    - typings.electronUtil.electronUtilStrings.project
+    - typings.electronUtil.electronUtilStrings.crossdevice
+    - typings.electronUtil.electronUtilStrings.clipboard
+    - typings.electronUtil.electronUtilStrings.remotedesktop
+    - typings.electronUtil.electronUtilStrings.about
+    - typings.electronUtil.electronUtilStrings.bluetooth
+    - typings.electronUtil.electronUtilStrings.connecteddevices
+    - typings.electronUtil.electronUtilStrings.printers
+    - typings.electronUtil.electronUtilStrings.mousetouchpad
+    - typings.electronUtil.electronUtilStrings.`devices-touchpad`
+    - typings.electronUtil.electronUtilStrings.typing
+    - typings.electronUtil.electronUtilStrings.wheel
+    - typings.electronUtil.electronUtilStrings.pen
+    - typings.electronUtil.electronUtilStrings.autoplay
+    - typings.electronUtil.electronUtilStrings.usb
+    - typings.electronUtil.electronUtilStrings.`mobile-devices`
+    - typings.electronUtil.electronUtilStrings.network
+    - typings.electronUtil.electronUtilStrings.`network-status`
+    - typings.electronUtil.electronUtilStrings.`network-cellular`
+    - typings.electronUtil.electronUtilStrings.`network-wifi`
+    - typings.electronUtil.electronUtilStrings.`network-wificalling`
+    - typings.electronUtil.electronUtilStrings.`network-ethernet`
+    - typings.electronUtil.electronUtilStrings.`network-dialup`
+    - typings.electronUtil.electronUtilStrings.`network-vpn`
+    - typings.electronUtil.electronUtilStrings.`network-airplanemode`
+    - typings.electronUtil.electronUtilStrings.`network-mobilehotspot`
+    - typings.electronUtil.electronUtilStrings.nfctransactions
+    - typings.electronUtil.electronUtilStrings.datausage
+    - typings.electronUtil.electronUtilStrings.`network-proxy`
+    - typings.electronUtil.electronUtilStrings.personalization
+    - typings.electronUtil.electronUtilStrings.`personalization-background`
+    - typings.electronUtil.electronUtilStrings.`personalization-colors`
+    - typings.electronUtil.electronUtilStrings.lockscreen
+    - typings.electronUtil.electronUtilStrings.themes
+    - typings.electronUtil.electronUtilStrings.fonts
+    - typings.electronUtil.electronUtilStrings.`personalization-start`
+    - typings.electronUtil.electronUtilStrings.taskbar
+    - typings.electronUtil.electronUtilStrings.appsfeatures
+    - typings.electronUtil.electronUtilStrings.optionalfeatures
+    - typings.electronUtil.electronUtilStrings.defaultapps
+    - typings.electronUtil.electronUtilStrings.maps
+    - typings.electronUtil.electronUtilStrings.appsforwebsites
+    - typings.electronUtil.electronUtilStrings.videoplayback
+    - typings.electronUtil.electronUtilStrings.startupapps
+    - typings.electronUtil.electronUtilStrings.yourinfo
+    - typings.electronUtil.electronUtilStrings.emailandaccounts
+    - typings.electronUtil.electronUtilStrings.signinoptions
+    - typings.electronUtil.electronUtilStrings.workplace
+    - typings.electronUtil.electronUtilStrings.otherusers
+    - typings.electronUtil.electronUtilStrings.sync
+    - typings.electronUtil.electronUtilStrings.dateandtime
+    - typings.electronUtil.electronUtilStrings.regionformatting
+    - typings.electronUtil.electronUtilStrings.regionlanguage
+    - typings.electronUtil.electronUtilStrings.speech
+    - typings.electronUtil.electronUtilStrings.`gaming-gamebar`
+    - typings.electronUtil.electronUtilStrings.`gaming-gamedvr`
+    - typings.electronUtil.electronUtilStrings.`gaming-broadcasting`
+    - typings.electronUtil.electronUtilStrings.`gaming-gamemode`
+    - typings.electronUtil.electronUtilStrings.`gaming-xboxnetworking`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-display`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-cursorandpointersize`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-cursor`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-magnifier`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-colorfilter`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-highcontrast`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-narrator`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-audio`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-closedcaptioning`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-speechrecognition`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-keyboard`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-mouse`
+    - typings.electronUtil.electronUtilStrings.`easeofaccess-eyecontrol`
+    - typings.electronUtil.electronUtilStrings.`search-permissions`
+    - typings.electronUtil.electronUtilStrings.`cortana-windowssearch`
+    - typings.electronUtil.electronUtilStrings.cortana
+    - typings.electronUtil.electronUtilStrings.`cortana-talktocortana`
+    - typings.electronUtil.electronUtilStrings.`cortana-permissions`
+    - typings.electronUtil.electronUtilStrings.privacy_
+    - typings.electronUtil.electronUtilStrings.`privacy-speech`
+    - typings.electronUtil.electronUtilStrings.`privacy-speechtyping`
+    - typings.electronUtil.electronUtilStrings.`privacy-feedback`
+    - typings.electronUtil.electronUtilStrings.`privacy-activityhistory`
+    - typings.electronUtil.electronUtilStrings.`privacy-location`
+    - typings.electronUtil.electronUtilStrings.`privacy-webcam`
+    - typings.electronUtil.electronUtilStrings.`privacy-microphone`
+    - typings.electronUtil.electronUtilStrings.`privacy-voiceactivation`
+    - typings.electronUtil.electronUtilStrings.`privacy-notifications`
+    - typings.electronUtil.electronUtilStrings.`privacy-accountinfo`
+    - typings.electronUtil.electronUtilStrings.`privacy-contacts`
+    - typings.electronUtil.electronUtilStrings.`privacy-calendar`
+    - typings.electronUtil.electronUtilStrings.`privacy-phonecalls`
+    - typings.electronUtil.electronUtilStrings.`privacy-callhistory`
+    - typings.electronUtil.electronUtilStrings.`privacy-email`
+    - typings.electronUtil.electronUtilStrings.`privacy-eyetracker`
+    - typings.electronUtil.electronUtilStrings.`privacy-tasks`
+    - typings.electronUtil.electronUtilStrings.`privacy-messaging`
+    - typings.electronUtil.electronUtilStrings.`privacy-radios`
+    - typings.electronUtil.electronUtilStrings.`privacy-customdevices`
+    - typings.electronUtil.electronUtilStrings.`privacy-backgroundapps`
+    - typings.electronUtil.electronUtilStrings.`privacy-appdiagnostics`
+    - typings.electronUtil.electronUtilStrings.`privacy-automaticfiledownloads`
+    - typings.electronUtil.electronUtilStrings.`privacy-documents`
+    - typings.electronUtil.electronUtilStrings.`privacy-pictures`
+    - typings.electronUtil.electronUtilStrings.`privacy-videos`
+    - typings.electronUtil.electronUtilStrings.`privacy-broadfilesystemaccess`
+    - typings.electronUtil.electronUtilStrings.windowsupdate
+    - typings.electronUtil.electronUtilStrings.`delivery-optimization`
+    - typings.electronUtil.electronUtilStrings.windowsdefender
+    - typings.electronUtil.electronUtilStrings.backup
+    - typings.electronUtil.electronUtilStrings.troubleshoot
+    - typings.electronUtil.electronUtilStrings.recovery
+    - typings.electronUtil.electronUtilStrings.activation
+    - typings.electronUtil.electronUtilStrings.findmydevice
+    - typings.electronUtil.electronUtilStrings.developers
+    - typings.electronUtil.electronUtilStrings.windowsinsider
+  */
+  trait SystemPreferencesWindowsPane extends StObject
+  object SystemPreferencesWindowsPane {
+    
+    inline def about: typings.electronUtil.electronUtilStrings.about = "about".asInstanceOf[typings.electronUtil.electronUtilStrings.about]
+    
+    inline def activation: typings.electronUtil.electronUtilStrings.activation = "activation".asInstanceOf[typings.electronUtil.electronUtilStrings.activation]
+    
+    inline def appsfeatures: typings.electronUtil.electronUtilStrings.appsfeatures = "appsfeatures".asInstanceOf[typings.electronUtil.electronUtilStrings.appsfeatures]
+    
+    inline def appsforwebsites: typings.electronUtil.electronUtilStrings.appsforwebsites = "appsforwebsites".asInstanceOf[typings.electronUtil.electronUtilStrings.appsforwebsites]
+    
+    inline def autoplay: typings.electronUtil.electronUtilStrings.autoplay = "autoplay".asInstanceOf[typings.electronUtil.electronUtilStrings.autoplay]
+    
+    inline def backup: typings.electronUtil.electronUtilStrings.backup = "backup".asInstanceOf[typings.electronUtil.electronUtilStrings.backup]
+    
+    inline def batterysaver: typings.electronUtil.electronUtilStrings.batterysaver = "batterysaver".asInstanceOf[typings.electronUtil.electronUtilStrings.batterysaver]
+    
+    inline def bluetooth: typings.electronUtil.electronUtilStrings.bluetooth = "bluetooth".asInstanceOf[typings.electronUtil.electronUtilStrings.bluetooth]
+    
+    inline def clipboard: typings.electronUtil.electronUtilStrings.clipboard = "clipboard".asInstanceOf[typings.electronUtil.electronUtilStrings.clipboard]
+    
+    inline def connecteddevices: typings.electronUtil.electronUtilStrings.connecteddevices = "connecteddevices".asInstanceOf[typings.electronUtil.electronUtilStrings.connecteddevices]
+    
+    inline def cortana: typings.electronUtil.electronUtilStrings.cortana = "cortana".asInstanceOf[typings.electronUtil.electronUtilStrings.cortana]
+    
+    inline def `cortana-permissions`: typings.electronUtil.electronUtilStrings.`cortana-permissions` = "cortana-permissions".asInstanceOf[typings.electronUtil.electronUtilStrings.`cortana-permissions`]
+    
+    inline def `cortana-talktocortana`: typings.electronUtil.electronUtilStrings.`cortana-talktocortana` = "cortana-talktocortana".asInstanceOf[typings.electronUtil.electronUtilStrings.`cortana-talktocortana`]
+    
+    inline def `cortana-windowssearch`: typings.electronUtil.electronUtilStrings.`cortana-windowssearch` = "cortana-windowssearch".asInstanceOf[typings.electronUtil.electronUtilStrings.`cortana-windowssearch`]
+    
+    inline def crossdevice: typings.electronUtil.electronUtilStrings.crossdevice = "crossdevice".asInstanceOf[typings.electronUtil.electronUtilStrings.crossdevice]
+    
+    inline def datausage: typings.electronUtil.electronUtilStrings.datausage = "datausage".asInstanceOf[typings.electronUtil.electronUtilStrings.datausage]
+    
+    inline def dateandtime: typings.electronUtil.electronUtilStrings.dateandtime = "dateandtime".asInstanceOf[typings.electronUtil.electronUtilStrings.dateandtime]
+    
+    inline def defaultapps: typings.electronUtil.electronUtilStrings.defaultapps = "defaultapps".asInstanceOf[typings.electronUtil.electronUtilStrings.defaultapps]
+    
+    inline def `delivery-optimization`: typings.electronUtil.electronUtilStrings.`delivery-optimization` = "delivery-optimization".asInstanceOf[typings.electronUtil.electronUtilStrings.`delivery-optimization`]
+    
+    inline def developers: typings.electronUtil.electronUtilStrings.developers = "developers".asInstanceOf[typings.electronUtil.electronUtilStrings.developers]
+    
+    inline def `devices-touchpad`: typings.electronUtil.electronUtilStrings.`devices-touchpad` = "devices-touchpad".asInstanceOf[typings.electronUtil.electronUtilStrings.`devices-touchpad`]
+    
+    inline def display: typings.electronUtil.electronUtilStrings.display = "display".asInstanceOf[typings.electronUtil.electronUtilStrings.display]
+    
+    inline def `easeofaccess-audio`: typings.electronUtil.electronUtilStrings.`easeofaccess-audio` = "easeofaccess-audio".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-audio`]
+    
+    inline def `easeofaccess-closedcaptioning`: typings.electronUtil.electronUtilStrings.`easeofaccess-closedcaptioning` = "easeofaccess-closedcaptioning".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-closedcaptioning`]
+    
+    inline def `easeofaccess-colorfilter`: typings.electronUtil.electronUtilStrings.`easeofaccess-colorfilter` = "easeofaccess-colorfilter".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-colorfilter`]
+    
+    inline def `easeofaccess-cursor`: typings.electronUtil.electronUtilStrings.`easeofaccess-cursor` = "easeofaccess-cursor".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-cursor`]
+    
+    inline def `easeofaccess-cursorandpointersize`: typings.electronUtil.electronUtilStrings.`easeofaccess-cursorandpointersize` = "easeofaccess-cursorandpointersize".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-cursorandpointersize`]
+    
+    inline def `easeofaccess-display`: typings.electronUtil.electronUtilStrings.`easeofaccess-display` = "easeofaccess-display".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-display`]
+    
+    inline def `easeofaccess-eyecontrol`: typings.electronUtil.electronUtilStrings.`easeofaccess-eyecontrol` = "easeofaccess-eyecontrol".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-eyecontrol`]
+    
+    inline def `easeofaccess-highcontrast`: typings.electronUtil.electronUtilStrings.`easeofaccess-highcontrast` = "easeofaccess-highcontrast".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-highcontrast`]
+    
+    inline def `easeofaccess-keyboard`: typings.electronUtil.electronUtilStrings.`easeofaccess-keyboard` = "easeofaccess-keyboard".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-keyboard`]
+    
+    inline def `easeofaccess-magnifier`: typings.electronUtil.electronUtilStrings.`easeofaccess-magnifier` = "easeofaccess-magnifier".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-magnifier`]
+    
+    inline def `easeofaccess-mouse`: typings.electronUtil.electronUtilStrings.`easeofaccess-mouse` = "easeofaccess-mouse".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-mouse`]
+    
+    inline def `easeofaccess-narrator`: typings.electronUtil.electronUtilStrings.`easeofaccess-narrator` = "easeofaccess-narrator".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-narrator`]
+    
+    inline def `easeofaccess-speechrecognition`: typings.electronUtil.electronUtilStrings.`easeofaccess-speechrecognition` = "easeofaccess-speechrecognition".asInstanceOf[typings.electronUtil.electronUtilStrings.`easeofaccess-speechrecognition`]
+    
+    inline def emailandaccounts: typings.electronUtil.electronUtilStrings.emailandaccounts = "emailandaccounts".asInstanceOf[typings.electronUtil.electronUtilStrings.emailandaccounts]
+    
+    inline def findmydevice: typings.electronUtil.electronUtilStrings.findmydevice = "findmydevice".asInstanceOf[typings.electronUtil.electronUtilStrings.findmydevice]
+    
+    inline def fonts: typings.electronUtil.electronUtilStrings.fonts = "fonts".asInstanceOf[typings.electronUtil.electronUtilStrings.fonts]
+    
+    inline def `gaming-broadcasting`: typings.electronUtil.electronUtilStrings.`gaming-broadcasting` = "gaming-broadcasting".asInstanceOf[typings.electronUtil.electronUtilStrings.`gaming-broadcasting`]
+    
+    inline def `gaming-gamebar`: typings.electronUtil.electronUtilStrings.`gaming-gamebar` = "gaming-gamebar".asInstanceOf[typings.electronUtil.electronUtilStrings.`gaming-gamebar`]
+    
+    inline def `gaming-gamedvr`: typings.electronUtil.electronUtilStrings.`gaming-gamedvr` = "gaming-gamedvr".asInstanceOf[typings.electronUtil.electronUtilStrings.`gaming-gamedvr`]
+    
+    inline def `gaming-gamemode`: typings.electronUtil.electronUtilStrings.`gaming-gamemode` = "gaming-gamemode".asInstanceOf[typings.electronUtil.electronUtilStrings.`gaming-gamemode`]
+    
+    inline def `gaming-xboxnetworking`: typings.electronUtil.electronUtilStrings.`gaming-xboxnetworking` = "gaming-xboxnetworking".asInstanceOf[typings.electronUtil.electronUtilStrings.`gaming-xboxnetworking`]
+    
+    inline def lockscreen: typings.electronUtil.electronUtilStrings.lockscreen = "lockscreen".asInstanceOf[typings.electronUtil.electronUtilStrings.lockscreen]
+    
+    inline def maps: typings.electronUtil.electronUtilStrings.maps = "maps".asInstanceOf[typings.electronUtil.electronUtilStrings.maps]
+    
+    inline def `mobile-devices`: typings.electronUtil.electronUtilStrings.`mobile-devices` = "mobile-devices".asInstanceOf[typings.electronUtil.electronUtilStrings.`mobile-devices`]
+    
+    inline def mousetouchpad: typings.electronUtil.electronUtilStrings.mousetouchpad = "mousetouchpad".asInstanceOf[typings.electronUtil.electronUtilStrings.mousetouchpad]
+    
+    inline def multitasking: typings.electronUtil.electronUtilStrings.multitasking = "multitasking".asInstanceOf[typings.electronUtil.electronUtilStrings.multitasking]
+    
+    inline def network: typings.electronUtil.electronUtilStrings.network = "network".asInstanceOf[typings.electronUtil.electronUtilStrings.network]
+    
+    inline def `network-airplanemode`: typings.electronUtil.electronUtilStrings.`network-airplanemode` = "network-airplanemode".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-airplanemode`]
+    
+    inline def `network-cellular`: typings.electronUtil.electronUtilStrings.`network-cellular` = "network-cellular".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-cellular`]
+    
+    inline def `network-dialup`: typings.electronUtil.electronUtilStrings.`network-dialup` = "network-dialup".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-dialup`]
+    
+    inline def `network-ethernet`: typings.electronUtil.electronUtilStrings.`network-ethernet` = "network-ethernet".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-ethernet`]
+    
+    inline def `network-mobilehotspot`: typings.electronUtil.electronUtilStrings.`network-mobilehotspot` = "network-mobilehotspot".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-mobilehotspot`]
+    
+    inline def `network-proxy`: typings.electronUtil.electronUtilStrings.`network-proxy` = "network-proxy".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-proxy`]
+    
+    inline def `network-status`: typings.electronUtil.electronUtilStrings.`network-status` = "network-status".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-status`]
+    
+    inline def `network-vpn`: typings.electronUtil.electronUtilStrings.`network-vpn` = "network-vpn".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-vpn`]
+    
+    inline def `network-wifi`: typings.electronUtil.electronUtilStrings.`network-wifi` = "network-wifi".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-wifi`]
+    
+    inline def `network-wificalling`: typings.electronUtil.electronUtilStrings.`network-wificalling` = "network-wificalling".asInstanceOf[typings.electronUtil.electronUtilStrings.`network-wificalling`]
+    
+    inline def nfctransactions: typings.electronUtil.electronUtilStrings.nfctransactions = "nfctransactions".asInstanceOf[typings.electronUtil.electronUtilStrings.nfctransactions]
+    
+    inline def notifications: typings.electronUtil.electronUtilStrings.notifications = "notifications".asInstanceOf[typings.electronUtil.electronUtilStrings.notifications]
+    
+    inline def optionalfeatures: typings.electronUtil.electronUtilStrings.optionalfeatures = "optionalfeatures".asInstanceOf[typings.electronUtil.electronUtilStrings.optionalfeatures]
+    
+    inline def otherusers: typings.electronUtil.electronUtilStrings.otherusers = "otherusers".asInstanceOf[typings.electronUtil.electronUtilStrings.otherusers]
+    
+    inline def pen: typings.electronUtil.electronUtilStrings.pen = "pen".asInstanceOf[typings.electronUtil.electronUtilStrings.pen]
+    
+    inline def personalization: typings.electronUtil.electronUtilStrings.personalization = "personalization".asInstanceOf[typings.electronUtil.electronUtilStrings.personalization]
+    
+    inline def `personalization-background`: typings.electronUtil.electronUtilStrings.`personalization-background` = "personalization-background".asInstanceOf[typings.electronUtil.electronUtilStrings.`personalization-background`]
+    
+    inline def `personalization-colors`: typings.electronUtil.electronUtilStrings.`personalization-colors` = "personalization-colors".asInstanceOf[typings.electronUtil.electronUtilStrings.`personalization-colors`]
+    
+    inline def `personalization-start`: typings.electronUtil.electronUtilStrings.`personalization-start` = "personalization-start".asInstanceOf[typings.electronUtil.electronUtilStrings.`personalization-start`]
+    
+    inline def powersleep: typings.electronUtil.electronUtilStrings.powersleep = "powersleep".asInstanceOf[typings.electronUtil.electronUtilStrings.powersleep]
+    
+    inline def printers: typings.electronUtil.electronUtilStrings.printers = "printers".asInstanceOf[typings.electronUtil.electronUtilStrings.printers]
+    
+    inline def privacy: privacy_ = "privacy".asInstanceOf[privacy_]
+    
+    inline def `privacy-accountinfo`: typings.electronUtil.electronUtilStrings.`privacy-accountinfo` = "privacy-accountinfo".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-accountinfo`]
+    
+    inline def `privacy-activityhistory`: typings.electronUtil.electronUtilStrings.`privacy-activityhistory` = "privacy-activityhistory".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-activityhistory`]
+    
+    inline def `privacy-appdiagnostics`: typings.electronUtil.electronUtilStrings.`privacy-appdiagnostics` = "privacy-appdiagnostics".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-appdiagnostics`]
+    
+    inline def `privacy-automaticfiledownloads`: typings.electronUtil.electronUtilStrings.`privacy-automaticfiledownloads` = "privacy-automaticfiledownloads".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-automaticfiledownloads`]
+    
+    inline def `privacy-backgroundapps`: typings.electronUtil.electronUtilStrings.`privacy-backgroundapps` = "privacy-backgroundapps".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-backgroundapps`]
+    
+    inline def `privacy-broadfilesystemaccess`: typings.electronUtil.electronUtilStrings.`privacy-broadfilesystemaccess` = "privacy-broadfilesystemaccess".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-broadfilesystemaccess`]
+    
+    inline def `privacy-calendar`: typings.electronUtil.electronUtilStrings.`privacy-calendar` = "privacy-calendar".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-calendar`]
+    
+    inline def `privacy-callhistory`: typings.electronUtil.electronUtilStrings.`privacy-callhistory` = "privacy-callhistory".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-callhistory`]
+    
+    inline def `privacy-contacts`: typings.electronUtil.electronUtilStrings.`privacy-contacts` = "privacy-contacts".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-contacts`]
+    
+    inline def `privacy-customdevices`: typings.electronUtil.electronUtilStrings.`privacy-customdevices` = "privacy-customdevices".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-customdevices`]
+    
+    inline def `privacy-documents`: typings.electronUtil.electronUtilStrings.`privacy-documents` = "privacy-documents".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-documents`]
+    
+    inline def `privacy-email`: typings.electronUtil.electronUtilStrings.`privacy-email` = "privacy-email".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-email`]
+    
+    inline def `privacy-eyetracker`: typings.electronUtil.electronUtilStrings.`privacy-eyetracker` = "privacy-eyetracker".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-eyetracker`]
+    
+    inline def `privacy-feedback`: typings.electronUtil.electronUtilStrings.`privacy-feedback` = "privacy-feedback".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-feedback`]
+    
+    inline def `privacy-location`: typings.electronUtil.electronUtilStrings.`privacy-location` = "privacy-location".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-location`]
+    
+    inline def `privacy-messaging`: typings.electronUtil.electronUtilStrings.`privacy-messaging` = "privacy-messaging".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-messaging`]
+    
+    inline def `privacy-microphone`: typings.electronUtil.electronUtilStrings.`privacy-microphone` = "privacy-microphone".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-microphone`]
+    
+    inline def `privacy-notifications`: typings.electronUtil.electronUtilStrings.`privacy-notifications` = "privacy-notifications".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-notifications`]
+    
+    inline def `privacy-phonecalls`: typings.electronUtil.electronUtilStrings.`privacy-phonecalls` = "privacy-phonecalls".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-phonecalls`]
+    
+    inline def `privacy-pictures`: typings.electronUtil.electronUtilStrings.`privacy-pictures` = "privacy-pictures".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-pictures`]
+    
+    inline def `privacy-radios`: typings.electronUtil.electronUtilStrings.`privacy-radios` = "privacy-radios".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-radios`]
+    
+    inline def `privacy-speech`: typings.electronUtil.electronUtilStrings.`privacy-speech` = "privacy-speech".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-speech`]
+    
+    inline def `privacy-speechtyping`: typings.electronUtil.electronUtilStrings.`privacy-speechtyping` = "privacy-speechtyping".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-speechtyping`]
+    
+    inline def `privacy-tasks`: typings.electronUtil.electronUtilStrings.`privacy-tasks` = "privacy-tasks".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-tasks`]
+    
+    inline def `privacy-videos`: typings.electronUtil.electronUtilStrings.`privacy-videos` = "privacy-videos".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-videos`]
+    
+    inline def `privacy-voiceactivation`: typings.electronUtil.electronUtilStrings.`privacy-voiceactivation` = "privacy-voiceactivation".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-voiceactivation`]
+    
+    inline def `privacy-webcam`: typings.electronUtil.electronUtilStrings.`privacy-webcam` = "privacy-webcam".asInstanceOf[typings.electronUtil.electronUtilStrings.`privacy-webcam`]
+    
+    inline def project: typings.electronUtil.electronUtilStrings.project = "project".asInstanceOf[typings.electronUtil.electronUtilStrings.project]
+    
+    inline def quiethours: typings.electronUtil.electronUtilStrings.quiethours = "quiethours".asInstanceOf[typings.electronUtil.electronUtilStrings.quiethours]
+    
+    inline def recovery: typings.electronUtil.electronUtilStrings.recovery = "recovery".asInstanceOf[typings.electronUtil.electronUtilStrings.recovery]
+    
+    inline def regionformatting: typings.electronUtil.electronUtilStrings.regionformatting = "regionformatting".asInstanceOf[typings.electronUtil.electronUtilStrings.regionformatting]
+    
+    inline def regionlanguage: typings.electronUtil.electronUtilStrings.regionlanguage = "regionlanguage".asInstanceOf[typings.electronUtil.electronUtilStrings.regionlanguage]
+    
+    inline def remotedesktop: typings.electronUtil.electronUtilStrings.remotedesktop = "remotedesktop".asInstanceOf[typings.electronUtil.electronUtilStrings.remotedesktop]
+    
+    inline def `search-permissions`: typings.electronUtil.electronUtilStrings.`search-permissions` = "search-permissions".asInstanceOf[typings.electronUtil.electronUtilStrings.`search-permissions`]
+    
+    inline def signinoptions: typings.electronUtil.electronUtilStrings.signinoptions = "signinoptions".asInstanceOf[typings.electronUtil.electronUtilStrings.signinoptions]
+    
+    inline def sound: typings.electronUtil.electronUtilStrings.sound = "sound".asInstanceOf[typings.electronUtil.electronUtilStrings.sound]
+    
+    inline def speech: typings.electronUtil.electronUtilStrings.speech = "speech".asInstanceOf[typings.electronUtil.electronUtilStrings.speech]
+    
+    inline def startupapps: typings.electronUtil.electronUtilStrings.startupapps = "startupapps".asInstanceOf[typings.electronUtil.electronUtilStrings.startupapps]
+    
+    inline def storagesense: typings.electronUtil.electronUtilStrings.storagesense = "storagesense".asInstanceOf[typings.electronUtil.electronUtilStrings.storagesense]
+    
+    inline def sync: typings.electronUtil.electronUtilStrings.sync = "sync".asInstanceOf[typings.electronUtil.electronUtilStrings.sync]
+    
+    inline def tabletmode: typings.electronUtil.electronUtilStrings.tabletmode = "tabletmode".asInstanceOf[typings.electronUtil.electronUtilStrings.tabletmode]
+    
+    inline def taskbar: typings.electronUtil.electronUtilStrings.taskbar = "taskbar".asInstanceOf[typings.electronUtil.electronUtilStrings.taskbar]
+    
+    inline def themes: typings.electronUtil.electronUtilStrings.themes = "themes".asInstanceOf[typings.electronUtil.electronUtilStrings.themes]
+    
+    inline def troubleshoot: typings.electronUtil.electronUtilStrings.troubleshoot = "troubleshoot".asInstanceOf[typings.electronUtil.electronUtilStrings.troubleshoot]
+    
+    inline def typing: typings.electronUtil.electronUtilStrings.typing = "typing".asInstanceOf[typings.electronUtil.electronUtilStrings.typing]
+    
+    inline def usb: typings.electronUtil.electronUtilStrings.usb = "usb".asInstanceOf[typings.electronUtil.electronUtilStrings.usb]
+    
+    inline def videoplayback: typings.electronUtil.electronUtilStrings.videoplayback = "videoplayback".asInstanceOf[typings.electronUtil.electronUtilStrings.videoplayback]
+    
+    inline def wheel: typings.electronUtil.electronUtilStrings.wheel = "wheel".asInstanceOf[typings.electronUtil.electronUtilStrings.wheel]
+    
+    inline def windowsdefender: typings.electronUtil.electronUtilStrings.windowsdefender = "windowsdefender".asInstanceOf[typings.electronUtil.electronUtilStrings.windowsdefender]
+    
+    inline def windowsinsider: typings.electronUtil.electronUtilStrings.windowsinsider = "windowsinsider".asInstanceOf[typings.electronUtil.electronUtilStrings.windowsinsider]
+    
+    inline def windowsupdate: typings.electronUtil.electronUtilStrings.windowsupdate = "windowsupdate".asInstanceOf[typings.electronUtil.electronUtilStrings.windowsupdate]
+    
+    inline def workplace: typings.electronUtil.electronUtilStrings.workplace = "workplace".asInstanceOf[typings.electronUtil.electronUtilStrings.workplace]
+    
+    inline def yourinfo: typings.electronUtil.electronUtilStrings.yourinfo = "yourinfo".asInstanceOf[typings.electronUtil.electronUtilStrings.yourinfo]
   }
   
   trait _Choices[Macos, Windows, Linux, Default] extends StObject {

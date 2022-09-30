@@ -103,9 +103,7 @@ object planeDragGizmoMod {
     val ^ : js.Any = js.native
     
     /**
-      * @param scene
-      * @param material
-      * @hidden
+      * @internal
       */
     inline def _CreatePlane(scene: Scene, material: StandardMaterial): TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreatePlane")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[TransformNode]
   }

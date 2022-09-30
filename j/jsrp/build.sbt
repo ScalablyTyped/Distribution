@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsrp"
-version := "0.2-dt-20211223Z-94972a"
+version := "0.2-dt-20211223Z-2aaf7c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

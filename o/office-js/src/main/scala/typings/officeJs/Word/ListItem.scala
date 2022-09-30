@@ -26,7 +26,7 @@ trait ListItem
   var context_ListItem: RequestContext = js.native
   
   /**
-    * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an error if the list item has no ancestor.
+    * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an `ItemNotFound` error if the list item has no ancestor.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -37,7 +37,7 @@ trait ListItem
   def getAncestor(parentOnly: Boolean): Paragraph = js.native
   
   /**
-    * Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list item has no ancestor.
+    * Gets the list item parent, or the closest ancestor if the parent does not exist. If the list item has no ancestor, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -67,7 +67,7 @@ trait ListItem
   var level: Double = js.native
   
   /**
-    * Gets the list item bullet, number, or picture as a string. Read-only.
+    * Gets the list item bullet, number, or picture as a string.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -96,7 +96,7 @@ trait ListItem
   def set(properties: ListItem): Unit = js.native
   
   /**
-    * Gets the list item order number in relation to its siblings. Read-only.
+    * Gets the list item order number in relation to its siblings.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for create-html-element
 
-Typings are for version 3.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Create a HTML element string
@@ -11,9 +11,9 @@ Create a HTML element string
 | Full name          | create-html-element |
 | Keywords           | html, element, create, document, string, make, tag |
 | # releases         | 3 |
-| # dependents       | 14 |
-| # downloads        | 115117 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9180.0 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/create-html-element#readme)

@@ -10,6 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Accounts {
   
+  trait HashedStampedLoginToken extends StObject {
+    
+    var hashedToken: String
+    
+    var when: js.Date
+  }
+  object HashedStampedLoginToken {
+    
+    inline def apply(hashedToken: String, when: js.Date): HashedStampedLoginToken = {
+      val __obj = js.Dynamic.literal(hashedToken = hashedToken.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HashedStampedLoginToken]
+    }
+    
+    extension [Self <: HashedStampedLoginToken](x: Self) {
+      
+      inline def setHashedToken(value: String): Self = StObject.set(x, "hashedToken", value.asInstanceOf[js.Any])
+      
+      inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait IValidateLoginAttemptCbOpts extends StObject {
     
     var allowed: Boolean
@@ -18,7 +39,7 @@ object Accounts {
     
     var error: Error
     
-    var methodArguments: js.Array[js.Any]
+    var methodArguments: js.Array[Any]
     
     var methodName: String
     
@@ -32,7 +53,7 @@ object Accounts {
       allowed: Boolean,
       connection: Connection,
       error: Error,
-      methodArguments: js.Array[js.Any],
+      methodArguments: js.Array[Any],
       methodName: String,
       `type`: String,
       user: User
@@ -50,9 +71,9 @@ object Accounts {
       
       inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      inline def setMethodArguments(value: js.Array[Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
-      inline def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
+      inline def setMethodArgumentsVarargs(value: Any*): Self = StObject.set(x, "methodArguments", js.Array(value*))
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
@@ -67,7 +88,7 @@ object Accounts {
     /**
       * The arguments for the method
       */
-    var methodArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var methodArguments: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * The method to call (default 'login')
@@ -78,7 +99,7 @@ object Accounts {
       * Will be called with no arguments once the user is fully
       * logged in, or with the error on error.
       */
-    var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * If provided, will be called with the result of the
@@ -96,17 +117,17 @@ object Accounts {
     
     extension [Self <: LoginMethodOptions](x: Self) {
       
-      inline def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      inline def setMethodArguments(value: js.Array[Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
       inline def setMethodArgumentsUndefined: Self = StObject.set(x, "methodArguments", js.undefined)
       
-      inline def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
+      inline def setMethodArgumentsVarargs(value: Any*): Self = StObject.set(x, "methodArguments", js.Array(value*))
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
       inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
       
-      inline def setUserCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "userCallback", js.Any.fromFunction1(value))
+      inline def setUserCallback(value: /* err */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "userCallback", js.Any.fromFunction1(value))
       
       inline def setUserCallbackUndefined: Self = StObject.set(x, "userCallback", js.undefined)
       
@@ -117,4 +138,25 @@ object Accounts {
   }
   
   type Password = String | Digest
+  
+  trait StampedLoginToken extends StObject {
+    
+    var token: String
+    
+    var when: js.Date
+  }
+  object StampedLoginToken {
+    
+    inline def apply(token: String, when: js.Date): StampedLoginToken = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StampedLoginToken]
+    }
+    
+    extension [Self <: StampedLoginToken](x: Self) {
+      
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    }
+  }
 }

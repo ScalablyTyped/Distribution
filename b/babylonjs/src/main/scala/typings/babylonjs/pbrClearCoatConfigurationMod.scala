@@ -67,14 +67,14 @@ object pbrClearCoatConfigurationMod {
     
     /* private */ var _indexOfRefraction: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: Any = js.native
     
     /* private */ var _isEnabled: Any = js.native
     
     /* private */ var _isTintEnabled: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
     
     /* protected */ @JSName("_material")
@@ -185,7 +185,7 @@ object pbrClearCoatConfigurationMod {
     /**
       * This defaults to 1.5 corresponding to a 0.04 f0 or a 4% reflectance at normal incidence
       * The default fits with a polyurethane material.
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/pbrClearCoatConfiguration", "PBRClearCoatConfiguration._DefaultIndexOfRefraction")
     @js.native

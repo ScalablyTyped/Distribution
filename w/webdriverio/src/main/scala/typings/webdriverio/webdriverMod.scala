@@ -1,5 +1,7 @@
 package typings.webdriverio
 
+import typings.webdriverio.interceptionTypesMod.Matches
+import typings.webdriverio.interceptionTypesMod.MockOverwrite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,44 +10,47 @@ object webdriverMod {
   
   @JSImport("webdriverio/build/utils/interception/webdriver", JSImport.Default)
   @js.native
-  class default () extends WebDriverInterception
+  open class default () extends WebDriverInterception
   
   @js.native
   trait WebDriverInterception
     extends typings.webdriverio.interceptionMod.default {
     
-    def abort(errorReason: String): js.Promise[Unit] = js.native
-    def abort(errorReason: String, sticky: Boolean): js.Promise[Unit] = js.native
+    /**
+      * Abort the request with an error code
+      * @param {string} errorCode  error code of the response
+      */
+    def abort(errorReason: String): js.Promise[js.Promise[Unit] | Unit] = js.native
+    def abort(errorReason: String, sticky: Boolean): js.Promise[js.Promise[Unit] | Unit] = js.native
     
-    def abortOnce(errorReason: String): js.Promise[Unit] = js.native
+    /**
+      * Abort the request once with an error code
+      * @param {string} errorReason  error code of the response
+      */
+    def abortOnce(errorReason: String): js.Promise[js.Promise[Unit] | Unit] = js.native
     
+    /**
+      * allows access to all requests made with given pattern
+      */
     @JSName("calls")
-    def calls_MWebDriverInterception: js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.ProtocolCommandResponse */ js.Any
-      ] = js.native
-    
-    def clear(): js.Promise[Unit] = js.native
+    def calls_MWebDriverInterception: js.Array[Matches] | js.Promise[js.Array[Matches]] = js.native
     
     def init(): js.Promise[Unit] = js.native
     
     var mockId: js.UndefOr[String] = js.native
     
-    def respond(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any
-    ): js.Promise[Unit] = js.native
-    def respond(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any,
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockResponseParams */ js.Any
-    ): js.Promise[Unit] = js.native
+    /**
+      * Always respond with same overwrite
+      * @param {*} overwrites  payload to overwrite the response
+      * @param {*} params      additional respond parameters to overwrite
+      */
+    def respond(overwrite: MockOverwrite): js.Promise[js.Promise[Unit] | Unit] = js.native
     
-    def respondOnce(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any
-    ): js.Promise[Unit] = js.native
-    def respondOnce(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any,
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockResponseParams */ js.Any
-    ): js.Promise[Unit] = js.native
-    
-    def restore(): js.Promise[Unit] = js.native
+    /**
+      * Respond request once with given overwrite
+      * @param {*} overwrites  payload to overwrite the response
+      * @param {*} params      additional respond parameters to overwrite
+      */
+    def respondOnce(overwrite: MockOverwrite): js.Promise[js.Promise[Unit] | Unit] = js.native
   }
 }

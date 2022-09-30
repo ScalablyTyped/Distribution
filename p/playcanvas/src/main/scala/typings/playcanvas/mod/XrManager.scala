@@ -425,9 +425,11 @@ open class XrManager protected () extends EventHandler {
   
   /**
     * @param {*} frame - XRFrame from requestAnimationFrame callback.
+    *
+    * @returns {boolean} True if update was successful, false otherwise.
     * @ignore
     */
-  def update(frame: Any): Unit = js.native
+  def update(frame: Any): Boolean = js.native
   
   /**
     * @type {Array<*>}

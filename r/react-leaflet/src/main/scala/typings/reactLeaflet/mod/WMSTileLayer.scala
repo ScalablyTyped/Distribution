@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "WMSTileLayer")
 @js.native
-class WMSTileLayer[P /* <: WMSTileLayerProps */, E /* <: WMS */] protected () extends GridLayer[P, E] {
+open class WMSTileLayer[P /* <: WMSTileLayerProps */, E /* <: WMS */] protected () extends GridLayer[P, E] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
 }

@@ -1,11 +1,14 @@
 package typings.pmmmwhReactRefreshWebpackPlugin
 
-import typings.pmmmwhReactRefreshWebpackPlugin.anon._empty
+import typings.pmmmwhReactRefreshWebpackPlugin.loaderTypesMod.ESModuleOptions
 import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginBooleans.`false`
+import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginStrings.http
+import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginStrings.https
 import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginStrings.wds
 import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginStrings.whm
 import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginStrings.wps
-import typings.std.RegExp
+import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginStrings.ws
+import typings.pmmmwhReactRefreshWebpackPlugin.pmmmwhReactRefreshWebpackPluginStrings.wss
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +36,7 @@ object typesMod {
     /**
       * Path to a JS file that sets up the Webpack socket integration.
       */
-    var sockIntegration: js.UndefOr[`false` | (String & _empty) | wds | whm | wps] = js.undefined
+    var sockIntegration: js.UndefOr[LiteralUnion[`false` | wds | whm | wps, String]] = js.undefined
     
     /**
       * The socket path to use (WDS only).
@@ -46,9 +49,14 @@ object typesMod {
     var sockPort: js.UndefOr[Double] = js.undefined
     
     /**
-      * Uses a custom SocketJS implementation for older versions of webpack-dev-server.
+      * The socket protocol to use (WDS only).
       */
-    var useLegacyWDSSockets: js.UndefOr[Boolean] = js.undefined
+    var sockProtocol: js.UndefOr[http | https | ws | wss] = js.undefined
+    
+    /**
+      * Uses a polyfill for the DOM URL API (WDS only).
+      */
+    var useURLPolyfill: js.UndefOr[Boolean] = js.undefined
   }
   object ErrorOverlayOptions {
     
@@ -71,7 +79,7 @@ object typesMod {
       
       inline def setSockHostUndefined: Self = StObject.set(x, "sockHost", js.undefined)
       
-      inline def setSockIntegration(value: `false` | (String & _empty) | wds | whm | wps): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
+      inline def setSockIntegration(value: LiteralUnion[`false` | wds | whm | wps, String]): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
       
       inline def setSockIntegrationUndefined: Self = StObject.set(x, "sockIntegration", js.undefined)
       
@@ -83,57 +91,39 @@ object typesMod {
       
       inline def setSockPortUndefined: Self = StObject.set(x, "sockPort", js.undefined)
       
-      inline def setUseLegacyWDSSockets(value: Boolean): Self = StObject.set(x, "useLegacyWDSSockets", value.asInstanceOf[js.Any])
+      inline def setSockProtocol(value: http | https | ws | wss): Self = StObject.set(x, "sockProtocol", value.asInstanceOf[js.Any])
       
-      inline def setUseLegacyWDSSocketsUndefined: Self = StObject.set(x, "useLegacyWDSSockets", js.undefined)
+      inline def setSockProtocolUndefined: Self = StObject.set(x, "sockProtocol", js.undefined)
+      
+      inline def setUseURLPolyfill(value: Boolean): Self = StObject.set(x, "useURLPolyfill", value.asInstanceOf[js.Any])
+      
+      inline def setUseURLPolyfillUndefined: Self = StObject.set(x, "useURLPolyfill", js.undefined)
     }
   }
   
+  /* Inlined type-fest.type-fest.SetRequired<@pmmmwh/react-refresh-webpack-plugin.@pmmmwh/react-refresh-webpack-plugin/types/lib/types.ErrorOverlayOptions, 'entry' | 'module' | 'sockIntegration'> */
   trait NormalizedErrorOverlayOptions extends StObject {
     
-    /**
-      * Path to a JS file that sets up the error overlay integration.
-      */
-    var entry: String | `false`
+    var entry: js.UndefOr[String | `false`] = js.undefined
     
-    /**
-      * The error overlay module to use.
-      */
-    var module: String | `false`
+    var module: js.UndefOr[String | `false`] = js.undefined
     
-    /**
-      * The socket host to use (WDS only).
-      */
     var sockHost: js.UndefOr[String] = js.undefined
     
-    /**
-      * Path to a JS file that sets up the Webpack socket integration.
-      */
-    var sockIntegration: LiteralUnion[wds | whm | wps | `false`, String]
+    var sockIntegration: js.UndefOr[LiteralUnion[`false` | wds | whm | wps, String]] = js.undefined
     
-    /**
-      * The socket path to use (WDS only).
-      */
     var sockPath: js.UndefOr[String] = js.undefined
     
-    /**
-      * The socket port to use (WDS only).
-      */
     var sockPort: js.UndefOr[Double] = js.undefined
     
-    /**
-      * Uses a custom SocketJS implementation for older versions of webpack-dev-server.
-      */
-    var useLegacyWDSSockets: js.UndefOr[Boolean] = js.undefined
+    var sockProtocol: js.UndefOr[http | https | ws | wss] = js.undefined
+    
+    var useURLPolyfill: js.UndefOr[Boolean] = js.undefined
   }
   object NormalizedErrorOverlayOptions {
     
-    inline def apply(
-      entry: String | `false`,
-      module: String | `false`,
-      sockIntegration: LiteralUnion[wds | whm | wps | `false`, String]
-    ): NormalizedErrorOverlayOptions = {
-      val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], sockIntegration = sockIntegration.asInstanceOf[js.Any])
+    inline def apply(): NormalizedErrorOverlayOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NormalizedErrorOverlayOptions]
     }
     
@@ -141,13 +131,19 @@ object typesMod {
       
       inline def setEntry(value: String | `false`): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
+      inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+      
       inline def setModule(value: String | `false`): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
       inline def setSockHost(value: String): Self = StObject.set(x, "sockHost", value.asInstanceOf[js.Any])
       
       inline def setSockHostUndefined: Self = StObject.set(x, "sockHost", js.undefined)
       
-      inline def setSockIntegration(value: LiteralUnion[wds | whm | wps | `false`, String]): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
+      inline def setSockIntegration(value: LiteralUnion[`false` | wds | whm | wps, String]): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
+      
+      inline def setSockIntegrationUndefined: Self = StObject.set(x, "sockIntegration", js.undefined)
       
       inline def setSockPath(value: String): Self = StObject.set(x, "sockPath", value.asInstanceOf[js.Any])
       
@@ -157,52 +153,68 @@ object typesMod {
       
       inline def setSockPortUndefined: Self = StObject.set(x, "sockPort", js.undefined)
       
-      inline def setUseLegacyWDSSockets(value: Boolean): Self = StObject.set(x, "useLegacyWDSSockets", value.asInstanceOf[js.Any])
+      inline def setSockProtocol(value: http | https | ws | wss): Self = StObject.set(x, "sockProtocol", value.asInstanceOf[js.Any])
       
-      inline def setUseLegacyWDSSocketsUndefined: Self = StObject.set(x, "useLegacyWDSSockets", js.undefined)
+      inline def setSockProtocolUndefined: Self = StObject.set(x, "sockProtocol", js.undefined)
+      
+      inline def setUseURLPolyfill(value: Boolean): Self = StObject.set(x, "useURLPolyfill", value.asInstanceOf[js.Any])
+      
+      inline def setUseURLPolyfillUndefined: Self = StObject.set(x, "useURLPolyfill", js.undefined)
     }
   }
   
-  /* Inlined std.Pick<{  forceEnable :boolean | undefined,   include :string | std.RegExp | std.Array<string | std.RegExp>,   exclude :string | std.RegExp | std.Array<string | std.RegExp>}, 'include' | 'exclude' | 'forceEnable'> & @pmmmwh/react-refresh-webpack-plugin.@pmmmwh/react-refresh-webpack-plugin/types/types.OverlayOverrides */
+  /* Inlined type-fest.type-fest.SetRequired<type-fest.type-fest.Except<@pmmmwh/react-refresh-webpack-plugin.@pmmmwh/react-refresh-webpack-plugin/types/lib/types.ReactRefreshPluginOptions, 'overlay'>, 'exclude' | 'include'> & @pmmmwh/react-refresh-webpack-plugin.@pmmmwh/react-refresh-webpack-plugin/types/lib/types.OverlayOverrides */
   trait NormalizedPluginOptions extends StObject {
     
-    var exclude: String | RegExp | (js.Array[String | RegExp])
+    var esModule: js.UndefOr[Boolean | ESModuleOptions] = js.undefined
+    
+    var exclude: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     var forceEnable: js.UndefOr[Boolean] = js.undefined
     
-    var include: String | RegExp | (js.Array[String | RegExp])
+    var include: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
+    
+    var library: js.UndefOr[String] = js.undefined
     
     /**
       * Modifies how the error overlay integration works in the plugin.
       */
-    var overlay: `false` | NormalizedErrorOverlayOptions
+    var overlay: (js.UndefOr[Boolean | ErrorOverlayOptions]) & (`false` | NormalizedErrorOverlayOptions)
   }
   object NormalizedPluginOptions {
     
-    inline def apply(
-      exclude: String | RegExp | (js.Array[String | RegExp]),
-      include: String | RegExp | (js.Array[String | RegExp]),
-      overlay: `false` | NormalizedErrorOverlayOptions
-    ): NormalizedPluginOptions = {
-      val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any])
+    inline def apply(overlay: (js.UndefOr[Boolean | ErrorOverlayOptions]) & (`false` | NormalizedErrorOverlayOptions)): NormalizedPluginOptions = {
+      val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizedPluginOptions]
     }
     
     extension [Self <: NormalizedPluginOptions](x: Self) {
       
-      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setEsModule(value: Boolean | ESModuleOptions): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
+      
+      inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      
+      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setForceEnable(value: Boolean): Self = StObject.set(x, "forceEnable", value.asInstanceOf[js.Any])
       
       inline def setForceEnableUndefined: Self = StObject.set(x, "forceEnable", js.undefined)
       
-      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setOverlay(value: `false` | NormalizedErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
+      
+      inline def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+      
+      inline def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
+      
+      inline def setOverlay(value: (js.UndefOr[Boolean | ErrorOverlayOptions]) & (`false` | NormalizedErrorOverlayOptions)): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,14 +241,14 @@ object typesMod {
   trait ReactRefreshPluginOptions extends StObject {
     
     /**
-      * Disables detection of react-refresh's Babel plugin (Deprecated since v0.3.0).
+      * Enables strict ES Modules compatible runtime.
       */
-    var disableRefreshCheck: js.UndefOr[Boolean] = js.undefined
+    var esModule: js.UndefOr[Boolean | ESModuleOptions] = js.undefined
     
     /**
       * Files to explicitly exclude from processing.
       */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var exclude: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
     
     /**
       * Enables the plugin forcefully.
@@ -246,7 +258,12 @@ object typesMod {
     /**
       * Files to explicitly include for processing.
       */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var include: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
+    
+    /**
+      * Name of the library bundle.
+      */
+    var library: js.UndefOr[String] = js.undefined
     
     /**
       * Modifies how the error overlay integration works in the plugin.
@@ -262,25 +279,29 @@ object typesMod {
     
     extension [Self <: ReactRefreshPluginOptions](x: Self) {
       
-      inline def setDisableRefreshCheck(value: Boolean): Self = StObject.set(x, "disableRefreshCheck", value.asInstanceOf[js.Any])
+      inline def setEsModule(value: Boolean | ESModuleOptions): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
       
-      inline def setDisableRefreshCheckUndefined: Self = StObject.set(x, "disableRefreshCheck", js.undefined)
+      inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
       
-      inline def setExclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setForceEnable(value: Boolean): Self = StObject.set(x, "forceEnable", value.asInstanceOf[js.Any])
       
       inline def setForceEnableUndefined: Self = StObject.set(x, "forceEnable", js.undefined)
       
-      inline def setInclude(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
+      
+      inline def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+      
+      inline def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
       
       inline def setOverlay(value: Boolean | ErrorOverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       

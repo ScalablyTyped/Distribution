@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chance.chanceBooleans.`false`
   - scala.Null
   - scala.Unit
-  - typings.chance.chanceNumbers.`0`
+  - typings.chance.chanceInts.`0`
   - scala.Double
   - typings.chance.chanceStrings._empty
 */

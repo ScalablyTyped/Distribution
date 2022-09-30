@@ -6,14 +6,11 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.mongodb.mod.Db
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.redis.mod.RedisClient
-import typings.std.Error
 import typings.std.IArguments
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,26 +24,26 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("acl", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Acl {
-    def this(backend: Backend[js.Any]) = this()
-    def this(backend: Backend[js.Any], logger: Logger) = this()
-    def this(backend: Backend[js.Any], logger: Unit, options: Option) = this()
-    def this(backend: Backend[js.Any], logger: Logger, options: Option) = this()
+    def this(backend: Backend[Any]) = this()
+    def this(backend: Backend[Any], logger: Logger) = this()
+    def this(backend: Backend[Any], logger: Unit, options: Option) = this()
+    def this(backend: Backend[Any], logger: Logger, options: Option) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("acl", "memoryBackend")
   @js.native
-  class memoryBackend ()
+  open class memoryBackend ()
     extends StObject
        with Backend[js.Array[Action]]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("acl", "mongodbBackend")
   @js.native
-  class mongodbBackend protected ()
+  open class mongodbBackend protected ()
     extends StObject
        with Backend[Callback] {
     def this(db: Db) = this()
@@ -58,11 +55,16 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("acl", "redisBackend")
   @js.native
-  class redisBackend protected ()
+  open class redisBackend protected ()
     extends StObject
-       with Backend[RedisClient] {
-    def this(redis: RedisClient) = this()
-    def this(redis: RedisClient, prefix: String) = this()
+       with Backend[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
+        ] {
+    def this(redis: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any) = this()
+    def this(
+      redis: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any,
+      prefix: String
+    ) = this()
   }
   
   @js.native
@@ -82,27 +84,99 @@ object mod extends Shortcut {
     def allowedPermissions(userId: Value, resources: strings): typings.bluebird.mod.^[Unit] = js.native
     def allowedPermissions(userId: Value, resources: strings, cb: AnyCallback): typings.bluebird.mod.^[Unit] = js.native
     
-    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings): typings.bluebird.mod.^[js.Any] = js.native
-    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings, cb: AllowedCallback): typings.bluebird.mod.^[js.Any] = js.native
+    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings): typings.bluebird.mod.^[Any] = js.native
+    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings, cb: AllowedCallback): typings.bluebird.mod.^[Any] = js.native
     
     def hasRole(userId: Value, role: String): typings.bluebird.mod.^[Boolean] = js.native
-    def hasRole(userId: Value, role: String, cb: js.Function2[/* err */ Error, /* isInRole */ Boolean, js.Any]): typings.bluebird.mod.^[Boolean] = js.native
+    def hasRole(userId: Value, role: String, cb: js.Function2[/* err */ js.Error, /* isInRole */ Boolean, Any]): typings.bluebird.mod.^[Boolean] = js.native
     
     def isAllowed(userId: Value, resources: strings, permissions: strings): typings.bluebird.mod.^[Boolean] = js.native
     def isAllowed(userId: Value, resources: strings, permissions: strings, cb: AllowedCallback): typings.bluebird.mod.^[Boolean] = js.native
     
-    def middleware(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Double): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Double, userId: Unit, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Double, userId: Value): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Double, userId: Value, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Unit, userId: Unit, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Unit, userId: GetUserId): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Unit, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Unit, userId: Value): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def middleware(numPathComponents: Unit, userId: Value, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Double): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Double, userId: Unit, actions: strings): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Double, userId: Value): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Double, userId: Value, actions: strings): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Unit, userId: Unit, actions: strings): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Unit, userId: GetUserId): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Unit, userId: GetUserId, actions: strings): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Unit, userId: Value): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def middleware(numPathComponents: Unit, userId: Value, actions: strings): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     def permittedResources(roles: strings, permissions: strings): typings.bluebird.mod.^[Unit] = js.native
     def permittedResources(roles: strings, permissions: strings, cb: Callback): typings.bluebird.mod.^[Unit] = js.native
@@ -122,16 +196,16 @@ object mod extends Shortcut {
     def removeUserRoles(userId: Value, roles: strings): typings.bluebird.mod.^[Unit] = js.native
     def removeUserRoles(userId: Value, roles: strings, cb: Callback): typings.bluebird.mod.^[Unit] = js.native
     
-    def roleUsers(role: Value): typings.bluebird.mod.^[js.Any] = js.native
-    def roleUsers(role: Value, cb: js.Function2[/* err */ Error, /* users */ Values, js.Any]): typings.bluebird.mod.^[js.Any] = js.native
+    def roleUsers(role: Value): typings.bluebird.mod.^[Any] = js.native
+    def roleUsers(role: Value, cb: js.Function2[/* err */ js.Error, /* users */ Values, Any]): typings.bluebird.mod.^[Any] = js.native
     
     def userRoles(userId: Value): typings.bluebird.mod.^[js.Array[String]] = js.native
-    def userRoles(userId: Value, cb: js.Function2[/* err */ Error, /* roles */ js.Array[String], js.Any]): typings.bluebird.mod.^[js.Array[String]] = js.native
+    def userRoles(userId: Value, cb: js.Function2[/* err */ js.Error, /* roles */ js.Array[String], Any]): typings.bluebird.mod.^[js.Array[String]] = js.native
     
-    def whatResources(roles: strings): typings.bluebird.mod.^[js.Any] = js.native
-    def whatResources(roles: strings, cb: AnyCallback): typings.bluebird.mod.^[js.Any] = js.native
-    def whatResources(roles: strings, permissions: strings): typings.bluebird.mod.^[js.Any] = js.native
-    def whatResources(roles: strings, permissions: strings, cb: AnyCallback): typings.bluebird.mod.^[js.Any] = js.native
+    def whatResources(roles: strings): typings.bluebird.mod.^[Any] = js.native
+    def whatResources(roles: strings, cb: AnyCallback): typings.bluebird.mod.^[Any] = js.native
+    def whatResources(roles: strings, permissions: strings): typings.bluebird.mod.^[Any] = js.native
+    def whatResources(roles: strings, permissions: strings, cb: AnyCallback): typings.bluebird.mod.^[Any] = js.native
   }
   
   trait AclAllow extends StObject {
@@ -151,11 +225,11 @@ object mod extends Shortcut {
       
       inline def setPermissions(value: strings): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
       
       inline def setResources(value: strings): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
     }
   }
   
@@ -176,21 +250,21 @@ object mod extends Shortcut {
       
       inline def setAllows(value: js.Array[AclAllow]): Self = StObject.set(x, "allows", value.asInstanceOf[js.Any])
       
-      inline def setAllowsVarargs(value: AclAllow*): Self = StObject.set(x, "allows", js.Array(value :_*))
+      inline def setAllowsVarargs(value: AclAllow*): Self = StObject.set(x, "allows", js.Array(value*))
       
       inline def setRoles(value: strings): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
     }
   }
   
   @js.native
   trait AclStatic
     extends StObject
-       with Instantiable1[/* backend */ Backend[js.Any], Acl]
-       with Instantiable2[/* backend */ Backend[js.Any], /* logger */ Logger, Acl]
+       with Instantiable1[/* backend */ Backend[Any], Acl]
+       with Instantiable2[/* backend */ Backend[Any], /* logger */ Logger, Acl]
        with Instantiable3[
-          /* backend */ Backend[js.Any], 
+          /* backend */ Backend[Any], 
           (/* logger */ Logger) | (/* logger */ Unit), 
           /* options */ Option, 
           Acl
@@ -203,11 +277,11 @@ object mod extends Shortcut {
     val redisBackend: RedisBackendStatic = js.native
   }
   
-  type Action = js.Function0[js.Any]
+  type Action = js.Function0[Any]
   
-  type AllowedCallback = js.Function2[/* err */ Error, /* allowed */ Boolean, js.Any]
+  type AllowedCallback = js.Function2[/* err */ js.Error, /* allowed */ Boolean, Any]
   
-  type AnyCallback = js.Function2[/* err */ Error, /* obj */ js.Any, js.Any]
+  type AnyCallback = js.Function2[/* err */ js.Error, /* obj */ Any, Any]
   
   //
   // For internal use
@@ -223,7 +297,7 @@ object mod extends Shortcut {
     def clean(cb: Action): Unit = js.native
     
     def cleanAsync(): typings.bluebird.mod.^[Unit] = js.native
-    def cleanAsync(cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): typings.bluebird.mod.^[Unit] = js.native
+    def cleanAsync(cb: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): typings.bluebird.mod.^[Unit] = js.native
     
     def del(transaction: T, bucket: String, keys: js.Array[Value]): Unit = js.native
     
@@ -231,25 +305,25 @@ object mod extends Shortcut {
     def end(transaction: T, cb: Action): Unit = js.native
     
     def endAsync(transaction: T): typings.bluebird.mod.^[Unit] = js.native
-    def endAsync(transaction: T, cb: js.Function1[/* err */ Error | Null, Unit]): typings.bluebird.mod.^[Unit] = js.native
+    def endAsync(transaction: T, cb: js.Function1[/* err */ js.Error | Null, Unit]): typings.bluebird.mod.^[Unit] = js.native
     
     def get(bucket: String, key: Value): Unit = js.native
     def get(bucket: String, key: Value, cb: Action): Unit = js.native
     
-    def getAsync(bucket: String, key: Value): typings.bluebird.mod.^[js.Any] = js.native
-    def getAsync(bucket: String, key: Value, cb: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit]): typings.bluebird.mod.^[js.Any] = js.native
+    def getAsync(bucket: String, key: Value): typings.bluebird.mod.^[Any] = js.native
+    def getAsync(bucket: String, key: Value, cb: js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit]): typings.bluebird.mod.^[Any] = js.native
     
     def remove(transaction: T, bucket: String, key: Value, values: Values): Unit = js.native
     
     def union(bucket: String, keys: js.Array[Value]): Unit = js.native
     def union(bucket: String, keys: js.Array[Value], cb: Action): Unit = js.native
     
-    def unionAsync(bucket: String, keys: js.Array[Value]): typings.bluebird.mod.^[js.Array[js.Any]] = js.native
+    def unionAsync(bucket: String, keys: js.Array[Value]): typings.bluebird.mod.^[js.Array[Any]] = js.native
     def unionAsync(
       bucket: String,
       keys: js.Array[Value],
-      cb: js.Function2[/* error */ js.UndefOr[Error], /* results */ js.Array[js.Any], Unit]
-    ): typings.bluebird.mod.^[js.Array[js.Any]] = js.native
+      cb: js.Function2[/* error */ js.UndefOr[js.Error], /* results */ js.Array[Any], Unit]
+    ): typings.bluebird.mod.^[js.Array[Any]] = js.native
   }
   
   trait BucketsOption extends StObject {
@@ -301,14 +375,14 @@ object mod extends Shortcut {
     }
   }
   
-  type Callback = js.Function1[/* err */ js.UndefOr[Error], js.Any]
+  type Callback = js.Function1[/* err */ js.UndefOr[js.Error], Any]
   
   @js.native
   trait Contract extends StObject {
     
     def apply(args: IArguments): Contract | NoOp = js.native
     
-    var args: js.Array[js.Any] = js.native
+    var args: js.Array[Any] = js.native
     
     var checkedParams: js.Array[String] = js.native
     
@@ -321,22 +395,22 @@ object mod extends Shortcut {
     def params(types: String*): Contract | NoOp = js.native
   }
   
-  type GetUserId = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, Value]
+  type GetUserId = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], Value]
   
   trait Logger extends StObject {
     
-    def debug(msg: String): js.Any
+    def debug(msg: String): Any
   }
   object Logger {
     
-    inline def apply(debug: String => js.Any): Logger = {
+    inline def apply(debug: String => Any): Logger = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug))
       __obj.asInstanceOf[Logger]
     }
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setDebug(value: String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: String => Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     }
   }
   
@@ -403,13 +477,22 @@ object mod extends Shortcut {
   }
   
   // for redis backend
-  type RedisBackend = Backend[RedisClient]
+  type RedisBackend = Backend[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
+  ]
   
   @js.native
   trait RedisBackendStatic
     extends StObject
-       with Instantiable1[/* redis */ RedisClient, RedisBackend]
-       with Instantiable2[/* redis */ RedisClient, /* prefix */ String, RedisBackend]
+       with Instantiable1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ /* redis */ Any, 
+          RedisBackend
+        ]
+       with Instantiable2[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ /* redis */ Any, 
+          /* prefix */ String, 
+          RedisBackend
+        ]
   
   type Value = String | Double
   

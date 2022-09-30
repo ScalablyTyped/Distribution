@@ -12,13 +12,16 @@ object streamDescriptorMod {
   
   @JSImport("google-gax/build/src/streamingCalls/streamDescriptor", "StreamDescriptor")
   @js.native
-  class StreamDescriptor protected ()
+  open class StreamDescriptor protected ()
     extends StObject
        with Descriptor {
     def this(streamType: StreamType) = this()
+    def this(streamType: StreamType, rest: Boolean) = this()
     
     /* CompleteClass */
     override def getApiCaller(settings: CallSettings): APICaller = js.native
+    
+    var rest: js.UndefOr[Boolean] = js.native
     
     var streaming: Boolean = js.native
     

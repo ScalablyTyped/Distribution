@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IParameterType because Already inherited
-- typings.mendixmodelsdk.javaactionsMod.javaactions.IExportMappingParameterType because var conflicts: containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType")
+- typings.mendixmodelsdk.javaactionsMod.javaactions.IExportMappingParameterType because var conflicts: containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ExportMappingParameterType")
 @js.native
-class ExportMappingParameterType protected () extends ParameterType {
+open class ExportMappingParameterType protected () extends ParameterType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,7 +38,7 @@ class ExportMappingParameterType protected () extends ParameterType {
 }
 object ExportMappingParameterType {
   
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ExportMappingParameterType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -62,13 +62,13 @@ object ExportMappingParameterType {
   inline def createIn(container: JavaActionParameter): ExportMappingParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExportMappingParameterType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ExportMappingParameterType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.ExportMappingParameterType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

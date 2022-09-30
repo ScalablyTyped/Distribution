@@ -13,7 +13,7 @@ object listItemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def listItem(h: H, node: ListItem_, parent: List): js.UndefOr[ElementContent | js.Array[ElementContent] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("listItem")(h.asInstanceOf[js.Any], node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ElementContent | js.Array[ElementContent] | Null]]
+  inline def listItem(h: H, node: ListItem_, parent: typings.mdastUtilToHast.listItemMod.List): js.UndefOr[ElementContent | js.Array[ElementContent] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("listItem")(h.asInstanceOf[js.Any], node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ElementContent | js.Array[ElementContent] | Null]]
   
   type Content = typings.mdastUtilToHast.libMod.Content
   

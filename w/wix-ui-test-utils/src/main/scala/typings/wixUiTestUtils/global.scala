@@ -8,9 +8,9 @@ object global {
   
   @JSGlobal("Adapter")
   @js.native
-  val Adapter: js.Any = js.native
+  val Adapter: Any = js.native
   
   @JSGlobal("Enzyme")
   @js.native
-  val Enzyme: js.Any = js.native
+  val Enzyme: Any = js.native
 }

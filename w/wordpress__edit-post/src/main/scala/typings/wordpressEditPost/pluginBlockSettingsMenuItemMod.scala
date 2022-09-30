@@ -72,7 +72,7 @@ object pluginBlockSettingsMenuItemMod {
         
         inline def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
         
-        inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
+        inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value*))
         
         inline def setIcon(value: Element | Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         

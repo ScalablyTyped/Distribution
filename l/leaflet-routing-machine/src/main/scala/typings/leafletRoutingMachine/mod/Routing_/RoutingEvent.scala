@@ -20,6 +20,6 @@ object RoutingEvent {
     
     inline def setWaypoints(value: js.Array[Waypoint_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    inline def setWaypointsVarargs(value: Waypoint_ *): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: Waypoint_ *): Self = StObject.set(x, "waypoints", js.Array(value*))
   }
 }

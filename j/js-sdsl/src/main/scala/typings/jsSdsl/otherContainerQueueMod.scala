@@ -31,7 +31,5 @@ object otherContainerQueueMod {
       * @description Inserts element to queue's end.
       */
     def push(element: T): Unit = js.native
-    
-    /* private */ var queue: Any = js.native
   }
 }

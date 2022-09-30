@@ -22,7 +22,7 @@ trait FreeCameraDeviceOrientationInput
   /* private */ var _gamma: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _onDeviceOrientationChangedObservable: Observable[Unit] = js.native
   
@@ -44,4 +44,7 @@ trait FreeCameraDeviceOrientationInput
     */
   @JSName("checkInputs")
   def checkInputs_MFreeCameraDeviceOrientationInput(): Unit = js.native
+  
+  /** alpha+beta+gamma smoothing. 0: no smoothing, 1: new data ignored, 0.9 recommended for smoothing */
+  var smoothFactor: Double = js.native
 }

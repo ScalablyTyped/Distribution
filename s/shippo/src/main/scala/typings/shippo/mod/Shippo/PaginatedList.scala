@@ -1,13 +1,12 @@
 package typings.shippo.mod.Shippo
 
-import typings.shippo.shippoStrings.$LeftcurlybracketnumberRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PaginatedList[T] extends StObject {
   
-  var count: $LeftcurlybracketnumberRightcurlybracket
+  var count: /* template literal string: ${number} */ String
   
   var next: String | Null
   
@@ -17,14 +16,14 @@ trait PaginatedList[T] extends StObject {
 }
 object PaginatedList {
   
-  inline def apply[T](results: js.Array[T]): PaginatedList[T] = {
-    val __obj = js.Dynamic.literal(count = "${number}", results = results.asInstanceOf[js.Any], next = null, previous = null)
+  inline def apply[T](count: /* template literal string: ${number} */ String, results: js.Array[T]): PaginatedList[T] = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], next = null, previous = null)
     __obj.asInstanceOf[PaginatedList[T]]
   }
   
   extension [Self <: PaginatedList[?], T](x: Self & PaginatedList[T]) {
     
-    inline def setCount(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

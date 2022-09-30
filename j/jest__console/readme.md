@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__console
 
-Typings are for version 24.9.0
+Typings are for version 29.1.2
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/console |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 12 |
-| # downloads        | 459613417 |
-| # stars            | 0 |
+| # releases         | 61 |
+| # dependents       | 0.0 |
+| # downloads        | 8.636089433333333E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

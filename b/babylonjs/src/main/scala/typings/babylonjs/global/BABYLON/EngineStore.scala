@@ -41,7 +41,7 @@ object EngineStore {
   def UseFallbackTexture: Boolean = js.native
   inline def UseFallbackTexture_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UseFallbackTexture")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.EngineStore._LastCreatedScene")
   @js.native
   def _LastCreatedScene: Nullable[typings.babylonjs.BABYLON.Scene] = js.native

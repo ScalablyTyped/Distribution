@@ -9,8 +9,8 @@ import typings.konva.anon.XY
 import typings.konva.canvasMod.Canvas
 import typings.konva.imageMod.Image
 import typings.konva.imageMod.ImageConfig
-import typings.konva.konvaNumbers.`-1`
-import typings.konva.konvaNumbers.`1`
+import typings.konva.konvaInts.`-1`
+import typings.konva.konvaInts.`1`
 import typings.konva.layerMod.LayerConfig
 import typings.konva.lineMod.LineConfig
 import typings.konva.nodeMod.Filter

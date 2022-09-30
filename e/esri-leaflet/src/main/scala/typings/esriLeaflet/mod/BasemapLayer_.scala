@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "BasemapLayer")
 @js.native
-class BasemapLayer_ protected ()
+open class BasemapLayer_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.BasemapLayer_ {
   def this(key: Basemaps) = this()
   def this(key: Basemaps, options: BasemapLayerOptions) = this()

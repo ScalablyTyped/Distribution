@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a comment reply in the document.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait CommentReply
@@ -25,7 +25,7 @@ trait CommentReply
     * Gets the email of the comment reply's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val authorEmail: String = js.native
   
@@ -33,7 +33,7 @@ trait CommentReply
     * Gets the name of the comment reply's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val authorName: String = js.native
   
@@ -41,7 +41,7 @@ trait CommentReply
     * Gets or sets the comment reply's content. The string is plain text.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var content: String = js.native
   
@@ -49,7 +49,7 @@ trait CommentReply
     * Gets or sets the commentReply's content range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var contentRange: CommentContentRange = js.native
   
@@ -61,7 +61,7 @@ trait CommentReply
     * Gets the creation date of the comment reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val creationDate: js.Date = js.native
   
@@ -69,15 +69,15 @@ trait CommentReply
     * Deletes the comment reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def delete(): Unit = js.native
   
   /**
-    * Gets the Id of the comment reply. Read-only.
+    * Gets the ID of the comment reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val id: String = js.native
   
@@ -96,7 +96,7 @@ trait CommentReply
     * Gets the parent comment of this reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val parentComment: Comment = js.native
   

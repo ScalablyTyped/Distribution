@@ -18,7 +18,7 @@ trait FlyCameraKeyboardInput
   /* private */ var _onKeyboardObserver: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   def _onLostFocus(): Unit = js.native
   

@@ -14,7 +14,7 @@ object mod {
   inline def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: InitializerFunction[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
   inline def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: Options[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
   
-  type IProduce = typings.immer.mod.IProduce
+  type IProduce = typings.immer.typesExternalMod.IProduce
   
   type InitializerFunction[S, A] = js.Function1[/* store */ Store[S, A], Unit]
   
@@ -46,18 +46,18 @@ object mod {
   // Use an interface so that different versions of React can be used
   trait ReactInterface extends StObject {
     
-    def useEffect(args: js.Any*): js.Any
+    def useEffect(args: Any*): Any
     
-    def useMemo(args: js.Any*): js.Any
+    def useMemo(args: Any*): Any
     
-    def useState(args: js.Any*): js.Any
+    def useState(args: Any*): Any
   }
   object ReactInterface {
     
     inline def apply(
-      useEffect: /* repeated */ js.Any => js.Any,
-      useMemo: /* repeated */ js.Any => js.Any,
-      useState: /* repeated */ js.Any => js.Any
+      useEffect: /* repeated */ Any => Any,
+      useMemo: /* repeated */ Any => Any,
+      useState: /* repeated */ Any => Any
     ): ReactInterface = {
       val __obj = js.Dynamic.literal(useEffect = js.Any.fromFunction1(useEffect), useMemo = js.Any.fromFunction1(useMemo), useState = js.Any.fromFunction1(useState))
       __obj.asInstanceOf[ReactInterface]
@@ -65,11 +65,11 @@ object mod {
     
     extension [Self <: ReactInterface](x: Self) {
       
-      inline def setUseEffect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useEffect", js.Any.fromFunction1(value))
+      inline def setUseEffect(value: /* repeated */ Any => Any): Self = StObject.set(x, "useEffect", js.Any.fromFunction1(value))
       
-      inline def setUseMemo(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useMemo", js.Any.fromFunction1(value))
+      inline def setUseMemo(value: /* repeated */ Any => Any): Self = StObject.set(x, "useMemo", js.Any.fromFunction1(value))
       
-      inline def setUseState(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useState", js.Any.fromFunction1(value))
+      inline def setUseState(value: /* repeated */ Any => Any): Self = StObject.set(x, "useState", js.Any.fromFunction1(value))
     }
   }
   
@@ -84,13 +84,13 @@ object mod {
     var state: S = js.native
   }
   
-  type UseGlobal[S, A] = (js.Function0[js.Tuple2[S, A]]) & (js.Function1[/* stateFunc */ js.Function1[/* state */ S, js.Any], js.Tuple2[js.Any, A]]) & (js.Function2[
-    /* stateFunc */ js.Function1[/* state */ S, js.Any], 
-    /* actionsFunc */ js.Function1[/* state */ A, js.Any], 
-    js.Tuple2[js.Any, js.Any]
+  type UseGlobal[S, A] = (js.Function0[js.Tuple2[S, A]]) & (js.Function1[/* stateFunc */ js.Function1[/* state */ S, Any], js.Tuple2[Any, A]]) & (js.Function2[
+    /* stateFunc */ js.Function1[/* state */ S, Any], 
+    /* actionsFunc */ js.Function1[/* state */ A, Any], 
+    js.Tuple2[Any, Any]
   ]) & (js.Function2[
     /* stateFunc */ Unit, 
-    /* actionsFunc */ js.Function1[/* state */ A, js.Any], 
-    js.Tuple2[S, js.Any]
+    /* actionsFunc */ js.Function1[/* state */ A, Any], 
+    js.Tuple2[S, Any]
   ])
 }

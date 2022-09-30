@@ -10,6 +10,6 @@ object utilsErrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(code: String, interpolations: Any*): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(code.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Error]
-  inline def default(code: Double, interpolations: Any*): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(code.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Error]
+  inline def default(code: String, interpolations: Any*): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(code.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Error]
+  inline def default(code: Double, interpolations: Any*): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(code.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Error]
 }

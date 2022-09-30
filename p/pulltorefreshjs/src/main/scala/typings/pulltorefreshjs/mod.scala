@@ -1,5 +1,6 @@
 package typings.pulltorefreshjs
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,7 +112,7 @@ object mod {
       *
       * Defaults to `window.location.reload()`
       */
-    var onRefresh: js.UndefOr[js.Function0[js.Thenable[Unit] | Unit]] = js.undefined
+    var onRefresh: js.UndefOr[js.Function0[PromiseLike[Unit] | Unit]] = js.undefined
     
     /**
       * What class will the main element have?
@@ -214,7 +215,7 @@ object mod {
       
       inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      inline def setOnRefresh(value: () => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
+      inline def setOnRefresh(value: () => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
       
       inline def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
       

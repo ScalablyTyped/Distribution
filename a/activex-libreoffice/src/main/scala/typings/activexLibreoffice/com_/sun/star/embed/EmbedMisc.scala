@@ -1,30 +1,30 @@
 package typings.activexLibreoffice.com_.sun.star.embed
 
-import typings.activexLibreoffice.activexLibreofficeNumbers._17179869184
-import typings.activexLibreoffice.activexLibreofficeNumbers._4294967296
-import typings.activexLibreoffice.activexLibreofficeNumbers._8589934592
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`128`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`131072`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16384`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2097152`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`262144`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`32768`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`32`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`524288`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`64`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8192`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
+import typings.activexLibreoffice.activexLibreofficeDoubles.`17179869184`
+import typings.activexLibreoffice.activexLibreofficeDoubles.`4294967296`
+import typings.activexLibreoffice.activexLibreofficeDoubles.`8589934592`
+import typings.activexLibreoffice.activexLibreofficeInts.`1024`
+import typings.activexLibreoffice.activexLibreofficeInts.`1048576`
+import typings.activexLibreoffice.activexLibreofficeInts.`128`
+import typings.activexLibreoffice.activexLibreofficeInts.`131072`
+import typings.activexLibreoffice.activexLibreofficeInts.`16384`
+import typings.activexLibreoffice.activexLibreofficeInts.`16`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2048`
+import typings.activexLibreoffice.activexLibreofficeInts.`2097152`
+import typings.activexLibreoffice.activexLibreofficeInts.`256`
+import typings.activexLibreoffice.activexLibreofficeInts.`262144`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`32768`
+import typings.activexLibreoffice.activexLibreofficeInts.`32`
+import typings.activexLibreoffice.activexLibreofficeInts.`4096`
+import typings.activexLibreoffice.activexLibreofficeInts.`4`
+import typings.activexLibreoffice.activexLibreofficeInts.`512`
+import typings.activexLibreoffice.activexLibreofficeInts.`524288`
+import typings.activexLibreoffice.activexLibreofficeInts.`64`
+import typings.activexLibreoffice.activexLibreofficeInts.`65536`
+import typings.activexLibreoffice.activexLibreofficeInts.`8192`
+import typings.activexLibreoffice.activexLibreofficeInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,40 +32,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object EmbedMisc {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers._4294967296
-    - typings.activexLibreoffice.activexLibreofficeNumbers._17179869184
-    - typings.activexLibreoffice.activexLibreofficeNumbers._8589934592
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`8192`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`32768`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`32`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`524288`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`262144`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`128`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`64`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`16384`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`131072`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2097152`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
+    - typings.activexLibreoffice.activexLibreofficeDoubles.`4294967296`
+    - typings.activexLibreoffice.activexLibreofficeDoubles.`17179869184`
+    - typings.activexLibreoffice.activexLibreofficeDoubles.`8589934592`
+    - typings.activexLibreoffice.activexLibreofficeInts.`256`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4096`
+    - typings.activexLibreoffice.activexLibreofficeInts.`8192`
+    - typings.activexLibreoffice.activexLibreofficeInts.`32768`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2048`
+    - typings.activexLibreoffice.activexLibreofficeInts.`32`
+    - typings.activexLibreoffice.activexLibreofficeInts.`16`
+    - typings.activexLibreoffice.activexLibreofficeInts.`524288`
+    - typings.activexLibreoffice.activexLibreofficeInts.`262144`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4`
+    - typings.activexLibreoffice.activexLibreofficeInts.`128`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1024`
+    - typings.activexLibreoffice.activexLibreofficeInts.`64`
+    - typings.activexLibreoffice.activexLibreofficeInts.`16384`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`512`
+    - typings.activexLibreoffice.activexLibreofficeInts.`131072`
+    - typings.activexLibreoffice.activexLibreofficeInts.`65536`
+    - typings.activexLibreoffice.activexLibreofficeInts.`8`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2097152`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1048576`
   */
   trait Constants extends StObject
   object Constants {
     
-    inline def EMBED_ACTIVATEIMMEDIATELY: _4294967296 = 4294967296.0.asInstanceOf[_4294967296]
+    inline def EMBED_ACTIVATEIMMEDIATELY: `4294967296` = 4294967296d.asInstanceOf[`4294967296`]
     
-    inline def EMBED_NEEDSSIZEONLOAD: _17179869184 = 17179869184.0.asInstanceOf[_17179869184]
+    inline def EMBED_NEEDSSIZEONLOAD: `17179869184` = 17179869184d.asInstanceOf[`17179869184`]
     
-    inline def EMBED_NEVERRESIZE: _8589934592 = 8589934592.0.asInstanceOf[_8589934592]
+    inline def EMBED_NEVERRESIZE: `8589934592` = 8589934592d.asInstanceOf[`8589934592`]
     
     inline def MS_EMBED_ACTIVATEWHENVISIBLE: `256` = 256.asInstanceOf[`256`]
     

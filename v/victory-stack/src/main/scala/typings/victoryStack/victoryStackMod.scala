@@ -11,7 +11,7 @@ object victoryStackMod {
   
   @JSImport("victory-stack/lib/victory-stack", "VictoryStack")
   @js.native
-  val VictoryStack: NamedExoticComponent[Any] & Type & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VictoryComponentConfiguration<VictoryStackProps> */ Any) = js.native
+  val VictoryStack: NamedExoticComponent[VictoryStackProps] & Type & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VictoryComponentConfiguration<VictoryStackProps> */ Any) = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VictoryCommonProps * / any

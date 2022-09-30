@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object publishDragSourceMod {
   
-  @JSImport("dnd-core/lib/actions/dragDrop/publishDragSource", JSImport.Namespace)
+  @JSImport("dnd-core/dist/actions/dragDrop/publishDragSource", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

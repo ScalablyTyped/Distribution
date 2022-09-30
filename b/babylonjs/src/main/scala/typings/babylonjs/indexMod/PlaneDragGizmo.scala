@@ -64,9 +64,7 @@ object PlaneDragGizmo {
   val ^ : js.Any = js.native
   
   /**
-    * @param scene
-    * @param material
-    * @hidden
+    * @internal
     */
   inline def _CreatePlane(
     scene: typings.babylonjs.sceneMod.Scene,

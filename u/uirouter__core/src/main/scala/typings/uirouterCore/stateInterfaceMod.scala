@@ -1,6 +1,7 @@
 package typings.uirouterCore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Promise
 import typings.uirouterCore.commonCommonMod.IInjectable
 import typings.uirouterCore.paramsInterfaceMod.ParamDeclaration
 import typings.uirouterCore.paramsInterfaceMod.RawParams
@@ -820,7 +821,8 @@ object stateInterfaceMod {
   
   @js.native
   trait TransitionPromise
-    extends js.Promise[StateObject] {
+    extends StObject
+       with Promise[StateObject] {
     
     var transition: Transition = js.native
   }

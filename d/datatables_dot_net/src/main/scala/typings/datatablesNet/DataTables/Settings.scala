@@ -218,7 +218,7 @@ trait Settings extends StObject {
   /**
     * Vertical scrolling. Since: 1.10 Exp: "200px"
     */
-  var scrollY: js.UndefOr[String] = js.undefined
+  var scrollY: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Set an initial filter in DataTables and / or filtering options. Since: 1.10
@@ -492,7 +492,7 @@ object Settings {
     
     inline def setScrollXUndefined: Self = StObject.set(x, "scrollX", js.undefined)
     
-    inline def setScrollY(value: String): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
+    inline def setScrollY(value: Double | String): Self = StObject.set(x, "scrollY", value.asInstanceOf[js.Any])
     
     inline def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
     

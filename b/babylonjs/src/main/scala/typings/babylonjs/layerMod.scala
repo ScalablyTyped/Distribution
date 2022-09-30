@@ -65,6 +65,8 @@ object layerMod {
       color: Color4
     ) = this()
     
+    /* private */ var _applyPostProcess: Any = js.native
+    
     /* private */ var _createIndexBuffer: Any = js.native
     
     /* private */ var _drawWrapper: Any = js.native
@@ -79,7 +81,7 @@ object layerMod {
     
     /* private */ var _previousDefines: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
     /* private */ var _scene: Any = js.native
@@ -97,6 +99,13 @@ object layerMod {
       * It will either use the texture color or the background depending on the alpha value of the current pixel.
       */
     var alphaTest: Boolean = js.native
+    
+    def applyPostProcess: Boolean = js.native
+    /**
+      * Determines if the layer is drawn before (true) or after (false) post-processing.
+      * If the layer is background, it is always before.
+      */
+    def applyPostProcess_=(value: Boolean): Unit = js.native
     
     /**
       * Define the color of the layer (instead of texture).

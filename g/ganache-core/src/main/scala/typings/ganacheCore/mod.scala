@@ -1,5 +1,6 @@
 package typings.ganacheCore
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.ganacheCore.anon.Log
 import typings.ganacheCore.ganacheCoreStrings.byzantium
 import typings.ganacheCore.ganacheCoreStrings.constantinople
@@ -10,8 +11,9 @@ import typings.ganacheCore.mod.Ganache.IProviderOptions
 import typings.ganacheCore.mod.Ganache.IServerOptions
 import typings.ganacheCore.mod.Ganache.Provider
 import typings.ganacheCore.mod.Ganache.Server
-import typings.std.Date
-import typings.std.Error
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,9 +77,9 @@ object mod {
       
       var port: js.UndefOr[Double] = js.undefined
       
-      var seed: js.UndefOr[js.Any] = js.undefined
+      var seed: js.UndefOr[Any] = js.undefined
       
-      var time: js.UndefOr[Date] = js.undefined
+      var time: js.UndefOr[js.Date] = js.undefined
       
       var total_accounts: js.UndefOr[Double] = js.undefined
       
@@ -106,7 +108,7 @@ object mod {
         
         inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
         
-        inline def setAccountsVarargs(value: js.Object*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+        inline def setAccountsVarargs(value: js.Object*): Self = StObject.set(x, "accounts", js.Array(value*))
         
         inline def setAllowUnlimitedContractSize(value: Boolean): Self = StObject.set(x, "allowUnlimitedContractSize", value.asInstanceOf[js.Any])
         
@@ -180,11 +182,11 @@ object mod {
         
         inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
         
-        inline def setSeed(value: js.Any): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+        inline def setSeed(value: Any): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
         
         inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
         
-        inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+        inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
         
         inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
         
@@ -196,7 +198,7 @@ object mod {
         
         inline def setUnlocked_accountsUndefined: Self = StObject.set(x, "unlocked_accounts", js.undefined)
         
-        inline def setUnlocked_accountsVarargs(value: String*): Self = StObject.set(x, "unlocked_accounts", js.Array(value :_*))
+        inline def setUnlocked_accountsVarargs(value: String*): Self = StObject.set(x, "unlocked_accounts", js.Array(value*))
         
         inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
         
@@ -247,7 +249,7 @@ object mod {
       
       def send(
         payload: JsonRpcPayload,
-        callback: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
+        callback: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
       ): Unit
     }
     object Provider {
@@ -258,7 +260,7 @@ object mod {
         once: (String, js.Function0[Unit]) => Unit,
         removeAllListeners: String => Unit,
         removeListener: (String, js.Function0[Unit]) => Unit,
-        send: (JsonRpcPayload, js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]) => Unit
+        send: (JsonRpcPayload, js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]) => Unit
       ): Provider = {
         val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), removeAllListeners = js.Any.fromFunction1(removeAllListeners), removeListener = js.Any.fromFunction2(removeListener), send = js.Any.fromFunction2(send))
         __obj.asInstanceOf[Provider]
@@ -277,14 +279,20 @@ object mod {
         inline def setRemoveListener(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
         
         inline def setSend(
-          value: (JsonRpcPayload, js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]) => Unit
+          value: (JsonRpcPayload, js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]) => Unit
         ): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
       }
     }
     
     @js.native
     trait Server
-      extends typings.node.httpMod.Server {
+      extends typings.node.httpMod.Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ] {
       
       var provider: Provider = js.native
     }
@@ -298,11 +306,11 @@ object mod {
     
     var method: String
     
-    var params: js.Array[js.Any]
+    var params: js.Array[Any]
   }
   object JsonRpcPayload {
     
-    inline def apply(jsonrpc: String, method: String, params: js.Array[js.Any]): JsonRpcPayload = {
+    inline def apply(jsonrpc: String, method: String, params: js.Array[Any]): JsonRpcPayload = {
       val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonRpcPayload]
     }
@@ -317,9 +325,9 @@ object mod {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
     }
   }
   
@@ -331,7 +339,7 @@ object mod {
     
     var jsonrpc: String
     
-    var result: js.UndefOr[js.Any] = js.undefined
+    var result: js.UndefOr[Any] = js.undefined
   }
   object JsonRpcResponse {
     
@@ -350,7 +358,7 @@ object mod {
       
       inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }

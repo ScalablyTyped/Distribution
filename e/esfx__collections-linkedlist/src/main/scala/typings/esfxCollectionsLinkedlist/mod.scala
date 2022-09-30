@@ -100,7 +100,7 @@ object mod {
       * @param thisArg The `this` value to use when executing `callback`.
       */
     @JSName("filter")
-    def filter_S_T[S /* <: T */](
+    def filter_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -109,7 +109,7 @@ object mod {
         ]
     ): LinkedList[S] = js.native
     @JSName("filter")
-    def filter_S_T[S /* <: T */](
+    def filter_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -163,7 +163,7 @@ object mod {
       * @param thisArg The `this` value to use when executing `callback`.
       */
     @JSName("findLastNode")
-    def findLastNode_S_T[S /* <: T */](
+    def findLastNode_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -172,7 +172,7 @@ object mod {
         ]
     ): js.UndefOr[LinkedListNode[S]] = js.native
     @JSName("findLastNode")
-    def findLastNode_S_T[S /* <: T */](
+    def findLastNode_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -188,7 +188,7 @@ object mod {
       * @param thisArg The `this` value to use when executing `callback`.
       */
     @JSName("findLast")
-    def findLast_S_T[S /* <: T */](
+    def findLast_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -197,7 +197,7 @@ object mod {
         ]
     ): js.UndefOr[S] = js.native
     @JSName("findLast")
-    def findLast_S_T[S /* <: T */](
+    def findLast_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -225,7 +225,7 @@ object mod {
       * @param thisArg The `this` value to use when executing `callback`.
       */
     @JSName("findNode")
-    def findNode_S_T[S /* <: T */](
+    def findNode_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -234,7 +234,7 @@ object mod {
         ]
     ): js.UndefOr[LinkedListNode[S]] = js.native
     @JSName("findNode")
-    def findNode_S_T[S /* <: T */](
+    def findNode_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -250,7 +250,7 @@ object mod {
       * @param thisArg The `this` value to use when executing `callback`.
       */
     @JSName("find")
-    def find_S_T[S /* <: T */](
+    def find_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 
@@ -259,7 +259,7 @@ object mod {
         ]
     ): js.UndefOr[S] = js.native
     @JSName("find")
-    def find_S_T[S /* <: T */](
+    def find_S[S /* <: T */](
       callback: js.Function3[
           /* value */ T, 
           /* node */ LinkedListNode[T], 

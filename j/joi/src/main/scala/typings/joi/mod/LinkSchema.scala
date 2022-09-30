@@ -18,7 +18,7 @@ trait LinkSchema
   
   /**
     * Initializes the schema after constructions for cases where the schema has to be constructed first and then initialized.
-    * If `ref` was not passed to the constructor, `link.ref()` must be called prior to usaged.
+    * If `ref` was not passed to the constructor, `link.ref()` must be called prior to usage.
     */
   def ref(ref: String): this.type = js.native
 }

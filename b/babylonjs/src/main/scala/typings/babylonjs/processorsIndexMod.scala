@@ -169,7 +169,7 @@ object processorsIndexMod {
       * @param useArrayBuffer defines a boolean indicating that date must be returned as ArrayBuffer
       * @param onError callback called when the file fails to load
       * @returns a file request object
-      * @hidden
+      * @internal
       */
     inline def _FileToolsLoadFile(
       url: String,

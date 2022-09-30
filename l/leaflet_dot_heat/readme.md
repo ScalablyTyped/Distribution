@@ -10,10 +10,10 @@ A tiny and fast Leaflet heatmap plugin.
 | ------------------ | :-------------: |
 | Full name          | leaflet.heat |
 | Keywords           | heatmap, canvas, visualization, gis, leaflet, plugin |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 541412 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 65543.0 |
+| # stars            | 1361.0 |
 
 ## Links
 - [Homepage](https://github.com/Leaflet/Leaflet.heat)

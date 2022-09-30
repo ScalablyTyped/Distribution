@@ -1,6 +1,5 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.plotlyJsStrings.Backslash
 import typings.plotlyJs.plotlyJsStrings.Dot
 import typings.plotlyJs.plotlyJsStrings.Plussign
 import typings.plotlyJs.plotlyJsStrings.Slash
@@ -25,7 +24,7 @@ trait PartialPattern extends StObject {
   
   var fillmode: js.UndefOr[replace | overlay] = js.undefined
   
-  var shape: js.UndefOr[_empty | Slash | Backslash | x | `-_` | Verticalline | Plussign | Dot] = js.undefined
+  var shape: js.UndefOr[_empty | Slash | String | x | `-_` | Verticalline | Plussign | Dot] = js.undefined
   
   var size: js.UndefOr[Double] = js.undefined
   
@@ -57,7 +56,7 @@ object PartialPattern {
     inline def setFillmodeUndefined: Self = StObject.set(x, "fillmode", js.undefined)
     
     inline def setShape(
-      value: _empty | Slash | Backslash | typings.plotlyJs.plotlyJsStrings.x | `-_` | Verticalline | Plussign | Dot
+      value: _empty | Slash | String | typings.plotlyJs.plotlyJsStrings.x | `-_` | Verticalline | Plussign | Dot
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)

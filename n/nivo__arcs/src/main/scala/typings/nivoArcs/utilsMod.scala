@@ -1,7 +1,7 @@
 package typings.nivoArcs
 
-import typings.nivoArcs.nivoArcsNumbers.`0`
-import typings.nivoArcs.nivoArcsNumbers.`1`
+import typings.nivoArcs.nivoArcsInts.`0`
+import typings.nivoArcs.nivoArcsInts.`1`
 import typings.nivoArcs.typesTypesMod.DatumWithArc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

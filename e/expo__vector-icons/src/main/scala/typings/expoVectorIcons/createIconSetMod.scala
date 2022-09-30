@@ -68,9 +68,9 @@ object createIconSetMod {
   - typings.reactNative.mod.AccessibilityProps because Already inherited
   - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
   - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
-  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, style, testID. Inlined onFocus, delayLongPress, onBlur, delayPressOut, disabled, pressRetentionOffset, delayPressIn
+  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, disabled, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, style, testID. Inlined onFocus, delayLongPress, onBlur, delayPressOut, pressRetentionOffset, delayPressIn
   - typings.reactNative.mod.AccessibilityProps because Already inherited
-  - typings.reactNative.mod.TouchableHighlightProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, style, testID. Inlined onShowUnderlay, onHideUnderlay, underlayColor, activeOpacity
+  - typings.reactNative.mod.TouchableHighlightProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, disabled, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, style, testID. Inlined onShowUnderlay, onHideUnderlay, underlayColor, activeOpacity
   - typings.reactNative.mod.ViewProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, importantForAccessibility, nativeID, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID. Inlined pointerEvents, hitSlop, removeClippedSubviews */ trait IconButtonProps[GLYPHS /* <: String */]
     extends StObject
        with IconProps[GLYPHS]
@@ -117,11 +117,6 @@ object createIconSetMod {
       * Delay in ms, from the release of the touch, before onPressOut is called.
       */
     var delayPressOut: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * If true, disable all interactions for this component.
-      */
-    var disabled: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * This defines how far a touch event can start away from the view.
@@ -256,12 +251,6 @@ object createIconSetMod {
       inline def setDelayPressOut(value: Double): Self = StObject.set(x, "delayPressOut", value.asInstanceOf[js.Any])
       
       inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
       

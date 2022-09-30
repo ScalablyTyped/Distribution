@@ -8,11 +8,11 @@ trait Level extends StObject {
   
   var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(context: js.Any): String
+  def text(context: Any): String
 }
 object Level {
   
-  inline def apply(level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: js.Any => String): Level = {
+  inline def apply(level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: Any => String): Level = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
     __obj.asInstanceOf[Level]
   }
@@ -21,6 +21,6 @@ object Level {
     
     inline def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

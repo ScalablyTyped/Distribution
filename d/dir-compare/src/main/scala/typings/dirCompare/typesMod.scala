@@ -1,9 +1,9 @@
 package typings.dirCompare
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dirCompare.dirCompareNumbers.`-1`
-import typings.dirCompare.dirCompareNumbers.`0`
-import typings.dirCompare.dirCompareNumbers.`1`
+import typings.dirCompare.dirCompareInts.`-1`
+import typings.dirCompare.dirCompareInts.`0`
+import typings.dirCompare.dirCompareInts.`1`
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -11,19 +11,19 @@ object babylonjsCamerasCameraAugmentingMod {
   trait Camera extends StObject {
     
     /**
-      * @hidden
+      * @internal
       * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
       */
     var _multiviewTexture: Nullable[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]
     
     /**
-      * @hidden
+      * @internal
       * For WebXR cameras that are rendering to multiview texture arrays.
       */
     var _renderingMultiview: Boolean
     
     /**
-      * @hidden
+      * @internal
       * ensures the multiview texture of the camera exists and has the specified width/height
       * @param width height to set on the multiview texture
       * @param height width to set on the multiview texture
@@ -31,7 +31,7 @@ object babylonjsCamerasCameraAugmentingMod {
     def _resizeOrCreateMultiviewTexture(width: Double, height: Double): Unit
     
     /**
-      * @hidden
+      * @internal
       * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
       */
     var _useMultiviewToSingleView: Boolean

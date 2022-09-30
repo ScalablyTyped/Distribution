@@ -1,36 +1,72 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.tableCellMod.TableCellProps
 import typings.reactToolbox.tableHeadMod.TableHeadProps
 import typings.reactToolbox.tableRowMod.TableRowProps
 import typings.reactToolbox.tableTableMod.TableProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/table", JSImport.Namespace)
-@js.native
-object tableMod extends js.Object {
-  @js.native
-  class Table ()
-    extends Component[TableProps, js.Object, js.Any]
+object tableMod {
   
+  @JSImport("react-toolbox/components/table", JSImport.Default)
   @js.native
-  class TableCell ()
-    extends Component[TableCellProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.tableTableMod.Table {
+    def this(props: TableProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TableProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/table", "Table")
   @js.native
-  class TableHead ()
-    extends Component[TableHeadProps, js.Object, js.Any]
+  open class Table protected ()
+    extends typings.reactToolbox.tableTableMod.Table {
+    def this(props: TableProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TableProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/table", "TableCell")
   @js.native
-  class TableRow ()
-    extends Component[TableRowProps, js.Object, js.Any]
+  open class TableCell protected ()
+    extends typings.reactToolbox.tableCellMod.TableCell {
+    def this(props: TableCellProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TableCellProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/table", "TableHead")
   @js.native
-  class default ()
-    extends Component[TableProps, js.Object, js.Any]
+  open class TableHead protected ()
+    extends typings.reactToolbox.tableHeadMod.TableHead {
+    def this(props: TableHeadProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TableHeadProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/table", "TableRow")
+  @js.native
+  open class TableRow protected ()
+    extends typings.reactToolbox.tableRowMod.TableRow {
+    def this(props: TableRowProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TableRowProps, context: Any) = this()
+  }
 }
-

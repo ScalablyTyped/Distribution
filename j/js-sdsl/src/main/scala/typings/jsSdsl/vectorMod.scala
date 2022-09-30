@@ -1,5 +1,6 @@
 package typings.jsSdsl
 
+import typings.jsSdsl.containerBaseMod.IteratorType
 import typings.jsSdsl.containerBaseMod.initContainer
 import typings.jsSdsl.randomIteratorMod.RandomIterator
 import typings.std.Generator
@@ -37,7 +38,7 @@ object vectorMod {
       size: js.Function0[Double],
       getElementByPos: js.Function1[/* pos */ Double, T],
       setElementByPos: js.Function2[/* pos */ Double, /* element */ T, Unit],
-      iteratorType: Boolean
+      iteratorType: IteratorType
     ) = this()
   }
   
@@ -49,7 +50,5 @@ object vectorMod {
     
     @JSName(js.Symbol.iterator)
     var iterator_Vector: js.Function0[Generator[T, Any, Unit]] = js.native
-    
-    /* private */ val vector: Any = js.native
   }
 }

@@ -95,12 +95,12 @@ object anon {
   }
   object List {
     
-    inline def apply(list: js.Array[Name | Subtitle], useContainer: Boolean): List = {
+    inline def apply(list: js.Array[Name | Subtitle], useContainer: Boolean): typings.reactDraggableList.anon.List = {
       val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], useContainer = useContainer.asInstanceOf[js.Any])
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.reactDraggableList.anon.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.reactDraggableList.anon.List](x: Self) {
       
       inline def setList(value: js.Array[Name | Subtitle]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       

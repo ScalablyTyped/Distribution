@@ -1,7 +1,7 @@
 
 # Scala.js typings for empty-trash
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Empty the trash
@@ -11,9 +11,9 @@ Empty the trash
 | Full name          | empty-trash |
 | Keywords           | trash, recycle, file, files, directory, directories, empty, clear, macos, windows, linux |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 6407 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 300.0 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/empty-trash#readme)

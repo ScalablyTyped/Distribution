@@ -2,6 +2,7 @@ package typings.posterus
 
 import typings.posterus.anon.FnCall
 import typings.posterus.anon.FnCallOnrejected
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ object mod {
   open class Future[T, E /* <: js.Error */] () extends StObject {
     
     def `catch`[TResult](): js.Promise[T | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[T | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): js.Promise[T | TResult] = js.native
     @JSName("catch")
     var catch_Original: FnCallOnrejected[T] = js.native
     
@@ -47,13 +48,13 @@ object mod {
     def settle(error: Unit, result: T): Unit = js.native
     
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: FnCall[T] = js.native
     

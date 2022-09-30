@@ -218,6 +218,8 @@ type CustomPayloadValue = java.lang.String
 */
 type CustomVocabularyStatus = _CustomVocabularyStatus | java.lang.String
 
+type DTMFCharacter = java.lang.String
+
 type Description = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -368,6 +370,8 @@ type LogPrefix = java.lang.String
 
 type MaxResults = Double
 
+type MaxUtteranceDigits = Double
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Overwrite_
   - typings.awsSdk.awsSdkStrings.FailOnConflict
@@ -427,6 +431,19 @@ type PrincipalArn = java.lang.String
 type PrincipalList = js.Array[Principal]
 
 type PriorityValue = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Initial_
+  - typings.awsSdk.awsSdkStrings.Retry1
+  - typings.awsSdk.awsSdkStrings.Retry2
+  - typings.awsSdk.awsSdkStrings.Retry3
+  - typings.awsSdk.awsSdkStrings.Retry4
+  - typings.awsSdk.awsSdkStrings.Retry5
+  - java.lang.String
+*/
+type PromptAttempt = _PromptAttempt | java.lang.String
+
+type PromptAttemptsSpecificationMap = StringDictionary[PromptAttemptSpecification]
 
 type PromptMaxRetries = Double
 
@@ -603,6 +620,8 @@ type TextLogSettingsList = js.Array[TextLogSetting]
   - java.lang.String
 */
 type TimeDimension = _TimeDimension | java.lang.String
+
+type TimeInMilliSeconds = Double
 
 type TimeValue = Double
 

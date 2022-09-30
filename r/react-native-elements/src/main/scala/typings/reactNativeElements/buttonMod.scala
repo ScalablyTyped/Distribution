@@ -88,9 +88,6 @@ object buttonMod extends Shortcut {
     
     var disabledTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    @JSName("disabled")
-    var disabled_ButtonProps: js.UndefOr[Boolean] = js.undefined
-    
     var icon: js.UndefOr[IconNode] = js.undefined
     
     var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -144,8 +141,6 @@ object buttonMod extends Shortcut {
       
       inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
       inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
       
       inline def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
@@ -157,8 +152,6 @@ object buttonMod extends Shortcut {
       inline def setDisabledTitleStyleNull: Self = StObject.set(x, "disabledTitleStyle", null)
       
       inline def setDisabledTitleStyleUndefined: Self = StObject.set(x, "disabledTitleStyle", js.undefined)
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setIcon(value: IconNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

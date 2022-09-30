@@ -1,17 +1,17 @@
 package typings.multiformats.anon
 
-import typings.multiformats.blockInterfaceMod.ByteView
-import typings.multiformats.codecsInterfaceMod.BlockDecoder
-import typings.multiformats.linkInterfaceMod.Link
+import typings.multiformats.blockMod.BlockDecoder
+import typings.multiformats.blockMod.ByteView
+import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Value[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.linkInterfaceMod.Version */] extends StObject {
+trait Value[T, Code /* <: Double */] extends StObject {
   
   var bytes: ByteView[T]
   
-  var cid: Link[T, Code, Alg, V]
+  var cid: CID
   
   var codec: js.UndefOr[BlockDecoder[Code, T]] = js.undefined
   
@@ -19,16 +19,16 @@ trait Value[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: t
 }
 object Value {
   
-  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.linkInterfaceMod.Version */](bytes: ByteView[T], cid: Link[T, Code, Alg, V], value: T): Value[T, Code, Alg, V] = {
+  inline def apply[T, Code /* <: Double */](bytes: ByteView[T], cid: CID, value: T): Value[T, Code] = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Value[T, Code, Alg, V]]
+    __obj.asInstanceOf[Value[T, Code]]
   }
   
-  extension [Self <: Value[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.linkInterfaceMod.Version */](x: Self & (Value[T, Code, Alg, V])) {
+  extension [Self <: Value[?, ?], T, Code /* <: Double */](x: Self & (Value[T, Code])) {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    inline def setCid(value: Link[T, Code, Alg, V]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
     inline def setCodec(value: BlockDecoder[Code, T]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     

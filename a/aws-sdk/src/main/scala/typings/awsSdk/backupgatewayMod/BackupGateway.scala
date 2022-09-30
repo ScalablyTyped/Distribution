@@ -99,6 +99,20 @@ trait BackupGateway extends Service {
   ): Request[GetGatewayOutput, AWSError] = js.native
   
   /**
+    * By providing the ARN (Amazon Resource Name), this API returns the virtual machine.
+    */
+  def getVirtualMachine(): Request[GetVirtualMachineOutput, AWSError] = js.native
+  def getVirtualMachine(callback: js.Function2[/* err */ AWSError, /* data */ GetVirtualMachineOutput, Unit]): Request[GetVirtualMachineOutput, AWSError] = js.native
+  /**
+    * By providing the ARN (Amazon Resource Name), this API returns the virtual machine.
+    */
+  def getVirtualMachine(params: GetVirtualMachineInput): Request[GetVirtualMachineOutput, AWSError] = js.native
+  def getVirtualMachine(
+    params: GetVirtualMachineInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVirtualMachineOutput, Unit]
+  ): Request[GetVirtualMachineOutput, AWSError] = js.native
+  
+  /**
     * Connect to a hypervisor by importing its configuration.
     */
   def importHypervisorConfiguration(): Request[ImportHypervisorConfigurationOutput, AWSError] = js.native

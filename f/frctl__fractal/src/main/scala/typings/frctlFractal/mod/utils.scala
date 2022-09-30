@@ -2,6 +2,7 @@ package typings.frctlFractal.mod
 
 import typings.frctlFractal.anon.Args
 import typings.frctlFractal.anon.Color
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object utils {
   inline def fileExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isPromise(value: Any): /* is std.PromiseLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<any> */ Boolean]
-  inline def isPromise[T](value: js.Thenable[T]): /* is std.PromiseLike<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<T> */ Boolean]
+  inline def isPromise[T](value: PromiseLike[T]): /* is std.PromiseLike<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<T> */ Boolean]
   
   inline def isPromise_T[T](value: T): /* is std.PromiseLike<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<T> */ Boolean]
   

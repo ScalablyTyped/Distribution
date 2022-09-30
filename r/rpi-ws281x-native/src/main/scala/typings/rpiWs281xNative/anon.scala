@@ -1,18 +1,18 @@
 package typings.rpiWs281xNative
 
 import typings.rpiWs281xNative.mod.StripTypeEnum
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1048584`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1050624`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`2064`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402655248`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402657288`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403177488`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403181568`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403701768`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403703808`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`4104`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`524304`
-import typings.rpiWs281xNative.rpiWs281xNativeNumbers.`528384`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`1048584`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`1050624`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`2064`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`402655248`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`402657288`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`403177488`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`403181568`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`403701768`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`403703808`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`4104`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`524304`
+import typings.rpiWs281xNative.rpiWs281xNativeInts.`528384`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

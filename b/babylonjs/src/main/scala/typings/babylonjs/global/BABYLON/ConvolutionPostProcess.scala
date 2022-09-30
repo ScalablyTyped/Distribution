@@ -369,11 +369,7 @@ object ConvolutionPostProcess {
   inline def SharpenKernel_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SharpenKernel")(x.asInstanceOf[js.Any])
   
   /**
-    * @param parsedPostProcess
-    * @param targetCamera
-    * @param scene
-    * @param rootUrl
-    * @hidden
+    * @internal
     */
   inline def _Parse(
     parsedPostProcess: Any,

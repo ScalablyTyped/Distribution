@@ -1,10 +1,10 @@
 package typings.qrcodeTerminal
 
 import typings.qrcodeTerminal.anon.Small
-import typings.qrcodeTerminal.qrcodeTerminalNumbers.`0`
-import typings.qrcodeTerminal.qrcodeTerminalNumbers.`1`
-import typings.qrcodeTerminal.qrcodeTerminalNumbers.`2`
-import typings.qrcodeTerminal.qrcodeTerminalNumbers.`3`
+import typings.qrcodeTerminal.qrcodeTerminalInts.`0`
+import typings.qrcodeTerminal.qrcodeTerminalInts.`1`
+import typings.qrcodeTerminal.qrcodeTerminalInts.`2`
+import typings.qrcodeTerminal.qrcodeTerminalInts.`3`
 import typings.qrcodeTerminal.qrcodeTerminalStrings.H
 import typings.qrcodeTerminal.qrcodeTerminalStrings.L
 import typings.qrcodeTerminal.qrcodeTerminalStrings.M

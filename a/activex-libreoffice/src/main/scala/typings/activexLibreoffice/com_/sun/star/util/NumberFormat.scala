@@ -1,19 +1,19 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`128`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`32`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`64`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1024`
+import typings.activexLibreoffice.activexLibreofficeInts.`128`
+import typings.activexLibreoffice.activexLibreofficeInts.`16`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2048`
+import typings.activexLibreoffice.activexLibreofficeInts.`256`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`32`
+import typings.activexLibreoffice.activexLibreofficeInts.`4096`
+import typings.activexLibreoffice.activexLibreofficeInts.`4`
+import typings.activexLibreoffice.activexLibreofficeInts.`64`
+import typings.activexLibreoffice.activexLibreofficeInts.`6`
+import typings.activexLibreoffice.activexLibreofficeInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,20 +21,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object NumberFormat {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`64`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`128`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`32`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
+    - typings.activexLibreoffice.activexLibreofficeInts.`0`
+    - typings.activexLibreoffice.activexLibreofficeInts.`8`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2`
+    - typings.activexLibreoffice.activexLibreofficeInts.`6`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4096`
+    - typings.activexLibreoffice.activexLibreofficeInts.`64`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1024`
+    - typings.activexLibreoffice.activexLibreofficeInts.`16`
+    - typings.activexLibreoffice.activexLibreofficeInts.`128`
+    - typings.activexLibreoffice.activexLibreofficeInts.`32`
+    - typings.activexLibreoffice.activexLibreofficeInts.`256`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2048`
   */
   trait Constants extends StObject
   object Constants {

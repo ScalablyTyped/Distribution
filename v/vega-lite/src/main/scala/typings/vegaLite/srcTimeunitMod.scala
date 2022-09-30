@@ -1,7 +1,7 @@
 package typings.vegaLite
 
 import typings.vegaLite.anon.End
-import typings.vegaLite.vegaLiteNumbers.`1`
+import typings.vegaLite.vegaLiteInts.`1`
 import typings.vegaLite.vegaLiteStrings.date
 import typings.vegaLite.vegaLiteStrings.day
 import typings.vegaLite.vegaLiteStrings.dayofyear

@@ -64,7 +64,7 @@ trait PointerDragBehavior
   /* private */ var _updateDragPlanePosition: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _useAlternatePickedPointAboveMaxDragAngle: Boolean = js.native
   

@@ -12,7 +12,7 @@ object srcCreateElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(name: String, attrs: String, children: Node*): typings.ltx.srcElementMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.ltx.srcElementMod.default]
-  inline def default(name: String, attrs: StringDictionary[Any], children: Node*): typings.ltx.srcElementMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.ltx.srcElementMod.default]
-  inline def default(name: String, attrs: Unit, children: Node*): typings.ltx.srcElementMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.ltx.srcElementMod.default]
+  inline def default(name: String, attrs: String, children: Node*): typings.ltx.srcElementMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.ltx.srcElementMod.default]
+  inline def default(name: String, attrs: StringDictionary[Any], children: Node*): typings.ltx.srcElementMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.ltx.srcElementMod.default]
+  inline def default(name: String, attrs: Unit, children: Node*): typings.ltx.srcElementMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.ltx.srcElementMod.default]
 }

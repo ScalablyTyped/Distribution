@@ -7,14 +7,15 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.restMod.rest.InteractiveRest
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.HttpConfiguration")
 @js.native
-class HttpConfiguration protected ()
+open class HttpConfiguration protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration {
   def this(
     model: AbstractModel,
@@ -27,7 +28,7 @@ class HttpConfiguration protected ()
 }
 object HttpConfiguration {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.HttpConfiguration")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,6 +65,17 @@ object HttpConfiguration {
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
     * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
+    * of the parent rest.InteractiveRest element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.18.0 and higher
+    */
+  /* static member */
+  inline def createInInteractiveRestUnderHttpConfiguration(container: InteractiveRest): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  
+  /**
+    * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
+    * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
     * of the parent RestCallAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -81,13 +93,13 @@ object HttpConfiguration {
   inline def createInWebServiceCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.HttpConfiguration.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.HttpConfiguration.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

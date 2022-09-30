@@ -134,7 +134,7 @@ object webgpuBundleListMod {
     var y: Double = js.native
   }
   
-  /** @hidden */
+  /** @internal */
   trait IWebGPURenderItem extends StObject {
     
     def run(renderPass: GPURenderPassEncoder): Unit

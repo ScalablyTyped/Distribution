@@ -4,36 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the update priorities used by internal PIXI classes when registered with
-  * the {@link PIXI.Ticker} object. Higher priority items are updated first and lower
-  * priority items, such as render, should go later.
-  *
-  * @static
-  * @constant
-  * @name UPDATE_PRIORITY
-  * @memberof PIXI
-  * @enum {number}
-  * @property {number} INTERACTION=50 Highest priority, used for {@link PIXI.InteractionManager}
-  * @property {number} HIGH=25 High priority updating, {@link PIXI.VideoBaseTexture} and {@link PIXI.AnimatedSprite}
-  * @property {number} NORMAL=0 Default priority for ticker events, see {@link PIXI.Ticker#add}.
-  * @property {number} LOW=-25 Low priority used for {@link PIXI.Application} rendering.
-  * @property {number} UTILITY=-50 Lowest priority used for {@link PIXI.BasePrepare} utility.
-  */
 @JSImport("pixi.js", "UPDATE_PRIORITY")
 @js.native
 object UPDATE_PRIORITY extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.UPDATE_PRIORITY & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiTicker.mod.UPDATE_PRIORITY & Double] = js.native
   
-  /* 1 */ val HIGH: typings.pixiJs.PIXI.UPDATE_PRIORITY.HIGH & Double = js.native
+  /* 25 */ val HIGH: typings.pixiTicker.mod.UPDATE_PRIORITY.HIGH & Double = js.native
   
-  /* 0 */ val INTERACTION: typings.pixiJs.PIXI.UPDATE_PRIORITY.INTERACTION & Double = js.native
+  /* 50 */ val INTERACTION: typings.pixiTicker.mod.UPDATE_PRIORITY.INTERACTION & Double = js.native
   
-  /* 3 */ val LOW: typings.pixiJs.PIXI.UPDATE_PRIORITY.LOW & Double = js.native
+  /* -25 */ val LOW: typings.pixiTicker.mod.UPDATE_PRIORITY.LOW & Double = js.native
   
-  /* 2 */ val NORMAL: typings.pixiJs.PIXI.UPDATE_PRIORITY.NORMAL & Double = js.native
+  /* 0 */ val NORMAL: typings.pixiTicker.mod.UPDATE_PRIORITY.NORMAL & Double = js.native
   
-  /* 4 */ val UTILITY: typings.pixiJs.PIXI.UPDATE_PRIORITY.UTILITY & Double = js.native
+  /* -50 */ val UTILITY: typings.pixiTicker.mod.UPDATE_PRIORITY.UTILITY & Double = js.native
 }

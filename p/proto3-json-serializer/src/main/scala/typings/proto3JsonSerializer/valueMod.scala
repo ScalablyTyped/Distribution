@@ -1,7 +1,7 @@
 package typings.proto3JsonSerializer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.proto3JsonSerializer.proto3JsonSerializerNumbers.`0`
+import typings.proto3JsonSerializer.proto3JsonSerializerInts.`0`
 import typings.proto3JsonSerializer.typesMod.FromObjectValue
 import typings.proto3JsonSerializer.typesMod.JSONObject
 import typings.proto3JsonSerializer.typesMod.JSONValue

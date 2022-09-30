@@ -5,6 +5,7 @@ import typings.sentryTypes.clientreportMod.EventDropReason
 import typings.sentryTypes.datacategoryMod.DataCategory
 import typings.sentryTypes.envelopeMod.Envelope
 import typings.sentryTypes.textencoderMod.TextEncoderInternal
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,10 +63,10 @@ object transportMod {
   @js.native
   trait Transport extends StObject {
     
-    def flush(): js.Thenable[Boolean] = js.native
-    def flush(timeout: Double): js.Thenable[Boolean] = js.native
+    def flush(): PromiseLike[Boolean] = js.native
+    def flush(timeout: Double): PromiseLike[Boolean] = js.native
     
-    def send(request: Envelope): js.Thenable[Unit] = js.native
+    def send(request: Envelope): PromiseLike[Unit] = js.native
   }
   
   trait TransportMakeRequestResponse extends StObject {
@@ -110,5 +111,5 @@ object transportMod {
     }
   }
   
-  type TransportRequestExecutor = js.Function1[/* request */ TransportRequest, js.Thenable[TransportMakeRequestResponse]]
+  type TransportRequestExecutor = js.Function1[/* request */ TransportRequest, PromiseLike[TransportMakeRequestResponse]]
 }

@@ -2,10 +2,10 @@ package typings.gifEncoder
 
 import typings.gifEncoder.anon.HighWaterMark
 import typings.gifEncoder.anon.IndexedPixels
-import typings.gifEncoder.gifEncoderNumbers.`0`
-import typings.gifEncoder.gifEncoderNumbers.`1`
-import typings.gifEncoder.gifEncoderNumbers.`2`
-import typings.gifEncoder.gifEncoderNumbers.`3`
+import typings.gifEncoder.gifEncoderInts.`0`
+import typings.gifEncoder.gifEncoderInts.`1`
+import typings.gifEncoder.gifEncoderInts.`2`
+import typings.gifEncoder.gifEncoderInts.`3`
 import typings.gifEncoder.gifEncoderStrings.close
 import typings.gifEncoder.gifEncoderStrings.data
 import typings.gifEncoder.gifEncoderStrings.end

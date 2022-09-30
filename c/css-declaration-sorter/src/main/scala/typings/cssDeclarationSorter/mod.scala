@@ -2,9 +2,9 @@ package typings.cssDeclarationSorter
 
 import org.scalablytyped.runtime.Shortcut
 import typings.cssDeclarationSorter.anon.KeepOverrides
-import typings.cssDeclarationSorter.cssDeclarationSorterNumbers.`-1`
-import typings.cssDeclarationSorter.cssDeclarationSorterNumbers.`0`
-import typings.cssDeclarationSorter.cssDeclarationSorterNumbers.`1`
+import typings.cssDeclarationSorter.cssDeclarationSorterInts.`-1`
+import typings.cssDeclarationSorter.cssDeclarationSorterInts.`0`
+import typings.cssDeclarationSorter.cssDeclarationSorterInts.`1`
 import typings.postcss.mod.PluginCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

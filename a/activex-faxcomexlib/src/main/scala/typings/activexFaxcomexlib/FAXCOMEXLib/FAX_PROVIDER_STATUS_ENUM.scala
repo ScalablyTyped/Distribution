@@ -1,25 +1,25 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`6`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`0`
 */
 trait FAX_PROVIDER_STATUS_ENUM extends StObject
 object FAX_PROVIDER_STATUS_ENUM {

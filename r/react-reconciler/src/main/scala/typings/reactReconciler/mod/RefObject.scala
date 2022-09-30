@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RefObject extends StObject {
   
-  var current: js.Any
+  var current: Any
 }
 object RefObject {
   
-  inline def apply(current: js.Any): RefObject = {
+  inline def apply(current: Any): RefObject = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefObject]
   }
   
   extension [Self <: RefObject](x: Self) {
     
-    inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }
 }

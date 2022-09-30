@@ -128,6 +128,12 @@ object ammoJSPluginMod {
     
     /* private */ var _tmpContactCallbackResult: Any = js.native
     
+    /* private */ var _tmpContactDistance: Any = js.native
+    
+    /* private */ var _tmpContactImpulse: Any = js.native
+    
+    /* private */ var _tmpContactNormal: Any = js.native
+    
     /* private */ var _tmpContactPoint: Any = js.native
     
     /* private */ var _tmpMatrix: Any = js.native

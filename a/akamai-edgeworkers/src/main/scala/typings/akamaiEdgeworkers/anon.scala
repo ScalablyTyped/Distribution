@@ -1,14 +1,14 @@
 package typings.akamaiEdgeworkers
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.akamaiEdgeworkers.EW.ReadableStreamEW
+import typings.akamaiEdgeworkers.EW.WritableStreamEW
 import typings.akamaiEdgeworkers.akamaiEdgeworkersBooleans.`true`
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.Lax
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.None
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.Strict
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.byob
 import typings.akamaiEdgeworkers.httpRequestMod.RequestBody
-import typings.akamaiEdgeworkers.streamsMod.ReadableStream
-import typings.akamaiEdgeworkers.streamsMod.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -209,22 +209,22 @@ object anon {
   
   trait Readable[R, T] extends StObject {
     
-    var readable: ReadableStream[T]
+    var readable: ReadableStreamEW[T]
     
-    var writable: WritableStream[R]
+    var writable: WritableStreamEW[R]
   }
   object Readable {
     
-    inline def apply[R, T](readable: ReadableStream[T], writable: WritableStream[R]): Readable[R, T] = {
+    inline def apply[R, T](readable: ReadableStreamEW[T], writable: WritableStreamEW[R]): Readable[R, T] = {
       val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Readable[R, T]]
     }
     
     extension [Self <: Readable[?, ?], R, T](x: Self & (Readable[R, T])) {
       
-      inline def setReadable(value: ReadableStream[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: ReadableStreamEW[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      inline def setWritable(value: WritableStream[R]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: WritableStreamEW[R]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
   

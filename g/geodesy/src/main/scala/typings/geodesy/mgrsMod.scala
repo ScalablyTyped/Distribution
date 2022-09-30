@@ -1,11 +1,11 @@
 package typings.geodesy
 
 import typings.geodesy.dmsMod.Precision
-import typings.geodesy.geodesyNumbers.`10`
-import typings.geodesy.geodesyNumbers.`2`
-import typings.geodesy.geodesyNumbers.`4`
-import typings.geodesy.geodesyNumbers.`6`
-import typings.geodesy.geodesyNumbers.`8`
+import typings.geodesy.geodesyInts.`10`
+import typings.geodesy.geodesyInts.`2`
+import typings.geodesy.geodesyInts.`4`
+import typings.geodesy.geodesyInts.`6`
+import typings.geodesy.geodesyInts.`8`
 import typings.geodesy.mod.Datum
 import typings.geodesy.mod.Dp
 import typings.geodesy.mod.Format

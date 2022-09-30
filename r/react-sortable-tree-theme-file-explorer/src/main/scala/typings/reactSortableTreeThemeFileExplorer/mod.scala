@@ -10,10 +10,10 @@ object mod extends Shortcut {
   
   @JSImport("react-sortable-tree-theme-file-explorer", JSImport.Default)
   @js.native
-  val default: ThemeProps = js.native
+  val default: ThemeProps[js.Object] = js.native
   
-  type _To = ThemeProps
+  type _To = ThemeProps[js.Object]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ThemeProps = default
+  override def _to: ThemeProps[js.Object] = default
 }

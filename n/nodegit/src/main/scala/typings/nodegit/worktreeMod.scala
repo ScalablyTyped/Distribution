@@ -1,9 +1,9 @@
 package typings.nodegit
 
 import typings.nodegit.bufMod.Buf
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`4`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`4`
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.worktreeAddOptionsMod.WorktreeAddOptions
 import typings.nodegit.worktreePruneOptionsMod.WorktreePruneOptions
@@ -86,9 +86,9 @@ object worktreeMod {
     inline def openFromRepository(repo: Repository): js.Promise[Worktree] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFromRepository")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Worktree]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
     */
     trait PRUNE extends StObject
     object PRUNE {

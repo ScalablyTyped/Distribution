@@ -76,7 +76,7 @@ object declareMod {
     inline def require(id: String): Any = js.Dynamic.global.applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /* was `typeof _Global.setHrInterval` */
-    inline def setHrInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (js.Dynamic.global.applyDynamic("setHrInterval")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
+    inline def setHrInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (js.Dynamic.global.applyDynamic("setHrInterval")((scala.List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
   }
   
   type GlobalExportsType = Any

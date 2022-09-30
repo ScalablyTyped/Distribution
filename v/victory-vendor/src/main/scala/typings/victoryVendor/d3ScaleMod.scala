@@ -82,8 +82,8 @@ object d3ScaleMod {
   inline def scaleOrdinal[Range](range: js.Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
   inline def scaleOrdinal[Domain /* <: ToString */, Range, Unknown](domain: js.Iterable[Domain], range: js.Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
   
-  inline def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
-  inline def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: ToString */, Range, Unknown](range: js.Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+  inline def scaleOrdinal_DomainRangeUnknown[Domain /* <: ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+  inline def scaleOrdinal_DomainRangeUnknown[Domain /* <: ToString */, Range, Unknown](range: js.Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
   
   inline def scalePoint[Domain /* <: ToString */](): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")().asInstanceOf[ScalePoint_[Domain]]
   inline def scalePoint[Domain /* <: ToString */](domain: js.Iterable[Domain], range: js.Iterable[NumberValue]): ScalePoint_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePoint_[Domain]]

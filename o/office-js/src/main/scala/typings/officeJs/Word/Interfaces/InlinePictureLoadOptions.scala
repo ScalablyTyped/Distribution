@@ -67,7 +67,7 @@ trait InlinePictureLoadOptions extends StObject {
   var paragraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
+    * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -75,7 +75,7 @@ trait InlinePictureLoadOptions extends StObject {
   var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
+    * Gets the content control that contains the inline image. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait InlinePictureLoadOptions extends StObject {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the table that contains the inline image. Throws an error if it is not contained in a table.
+    * Gets the table that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait InlinePictureLoadOptions extends StObject {
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell.
+    * Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -99,7 +99,7 @@ trait InlinePictureLoadOptions extends StObject {
   var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+    * Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -107,7 +107,7 @@ trait InlinePictureLoadOptions extends StObject {
   var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+    * Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]

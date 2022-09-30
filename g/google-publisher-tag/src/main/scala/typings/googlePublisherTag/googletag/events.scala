@@ -287,7 +287,7 @@ object events {
   /**
     * This event is fired when the creative's iframe fires its load event. When
     * rendering rich media ads in sync rendering mode, no iframe is used so no
-    * <code>SlotOnloadEvent</code> will be fired.
+    * `SlotOnloadEvent` will be fired.
     *
     * @example
     *   // This listener is called when a creative iframe load event fires.
@@ -325,15 +325,21 @@ object events {
     *
     *         // Log details of the rendered ad.
     *         console.log('Advertiser ID:', event.advertiserId);
-    *         console.log('Campaign ID: ', event.campaignId);
-    *         console.log('Creative ID: ', event.creativeId);
+    *         console.log('Campaign ID:', event.campaignId);
+    *         console.log('Company IDs:', event.companyIds);
+    *         console.log('Creative ID:', event.creativeId);
+    *         console.log('Creative Template ID:', event.creativeTemplateId);
+    *         console.log('Is backfill?:', event.isBackfill);
     *         console.log('Is empty?:', event.isEmpty);
+    *         console.log('Label IDs:', event.labelIds);
     *         console.log('Line Item ID:', event.lineItemId);
     *         console.log('Size:', event.size);
+    *         console.log('Slot content changed?', event.slotContentChanged);
     *         console.log('Source Agnostic Creative ID:',
     *                     event.sourceAgnosticCreativeId);
     *         console.log('Source Agnostic Line Item ID:',
     *                     event.sourceAgnosticLineItemId);
+    *         console.log('Yield Group IDs:', event.yieldGroupIds);
     *         console.groupEnd();
     *
     *         if (slot === targetSlot) {
@@ -349,34 +355,61 @@ object events {
        with Event {
     
     /**
-      * Advertiser ID of the rendered ad. Value is <code>null</code> for empty
+      * Advertiser ID of the rendered ad. Value is `null` for empty
       * slots, backfill ads, and creatives rendered by services other than
       * {@link PubAdsService}.
       */
     var advertiserId: Double | Null
     
     /**
-      * Campaign ID of the rendered ad. Value is <code>null</code> for empty
+      * Campaign ID of the rendered ad. Value is `null` for empty
       * slots, backfill ads, and creatives rendered by services other than
       * {@link PubAdsService}.
       */
     var campaignId: Double | Null
     
     /**
-      * Creative ID of the rendered reservation ad. Value is <code>null</code>
+      * IDs of the companies that bid on the rendered backfill ad. Value is
+      * `null` for empty slots, reservation ads, and creatives rendered by
+      * services other than {@link PubAdsService}.
+      */
+    var companyIds: js.Array[Double] | Null
+    
+    /**
+      * Creative ID of the rendered reservation ad. Value is `null`
       * for empty slots, backfill ads, and creatives rendered by services other
       * than {@link PubAdsService}.
       */
     var creativeId: Double | Null
     
     /**
-      * Whether an ad was returned for the slot. Value is <code>true</code> if
-      * no ad was returned, <code>false</code> otherwise.
+      * Creative template ID of the rendered reservation ad. Value is
+      * `null` for empty slots, backfill ads, and creatives rendered by
+      * services other than {@link PubAdsService}.
+      */
+    var creativeTemplateId: Double | Null
+    
+    /**
+      * Whether an ad was a backfill ad. Value is `true` if
+      * the ad was a backfill ad, `false` otherwise.
+      */
+    var isBackfill: Boolean
+    
+    /**
+      * Whether an ad was returned for the slot. Value is `true` if
+      * no ad was returned, `false` otherwise.
       */
     var isEmpty: Boolean
     
     /**
-      * Line item ID of the rendered reservation ad. Value is <code>null</code>
+      * Label IDs of the rendered ad. Value is `null` for empty slots,
+      * backfill ads, and creatives rendered by services other than {@link
+      * PubAdsService}.
+      */
+    var labelIds: js.Array[Double] | Null
+    
+    /**
+      * Line item ID of the rendered reservation ad. Value is `null`
       * for empty slots, backfill ads, and creatives rendered by services other
       * than {@link PubAdsService}.
       */
@@ -384,13 +417,19 @@ object events {
     
     /**
       * Indicates the pixel size of the rendered creative. Example:
-      * <code>[728, 90]</code>. Value is <code>null</code> for empty ad slots.
+      * `[728, 90]`. Value is `null` for empty ad slots.
       */
     var size: js.Array[Double] | String | Null
     
     /**
+      * Whether the slot content was changed with the rendered ad. Value is
+      * `true` if the content was changed, `false` otherwise.
+      */
+    var slotContentChanged: Boolean
+    
+    /**
       * Creative ID of the rendered reservation or backfill ad. Value is
-      * <code>null</code> if the ad is not a reservation or line item backfill,
+      * `null` if the ad is not a reservation or line item backfill,
       * or the creative is rendered by services other than
       * {@link PubAdsService}.
       */
@@ -398,16 +437,29 @@ object events {
     
     /**
       * Line item ID of the rendered reservation or backfill ad. Value is
-      * <code>null</code> if the ad is not a reservation or line item backfill,
+      * `null` if the ad is not a reservation or line item backfill,
       * or the creative is rendered by services other than
       * {@link PubAdsService}.
       */
     var sourceAgnosticLineItemId: Double | Null
+    
+    /**
+      * IDs of the yield groups for the rendered backfill ad. Value is
+      * `null` for empty slots, reservation ads, and creatives rendered by
+      * services other than {@link PubAdsService}.
+      */
+    var yieldGroupIds: js.Array[Double] | Null
   }
   object SlotRenderEndedEvent {
     
-    inline def apply(isEmpty: Boolean, serviceName: String, slot: Slot): SlotRenderEndedEvent = {
-      val __obj = js.Dynamic.literal(isEmpty = isEmpty.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], advertiserId = null, campaignId = null, creativeId = null, lineItemId = null, size = null, sourceAgnosticCreativeId = null, sourceAgnosticLineItemId = null)
+    inline def apply(
+      isBackfill: Boolean,
+      isEmpty: Boolean,
+      serviceName: String,
+      slot: Slot,
+      slotContentChanged: Boolean
+    ): SlotRenderEndedEvent = {
+      val __obj = js.Dynamic.literal(isBackfill = isBackfill.asInstanceOf[js.Any], isEmpty = isEmpty.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], slotContentChanged = slotContentChanged.asInstanceOf[js.Any], advertiserId = null, campaignId = null, companyIds = null, creativeId = null, creativeTemplateId = null, labelIds = null, lineItemId = null, size = null, sourceAgnosticCreativeId = null, sourceAgnosticLineItemId = null, yieldGroupIds = null)
       __obj.asInstanceOf[SlotRenderEndedEvent]
     }
     
@@ -421,11 +473,29 @@ object events {
       
       inline def setCampaignIdNull: Self = StObject.set(x, "campaignId", null)
       
+      inline def setCompanyIds(value: js.Array[Double]): Self = StObject.set(x, "companyIds", value.asInstanceOf[js.Any])
+      
+      inline def setCompanyIdsNull: Self = StObject.set(x, "companyIds", null)
+      
+      inline def setCompanyIdsVarargs(value: Double*): Self = StObject.set(x, "companyIds", js.Array(value*))
+      
       inline def setCreativeId(value: Double): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
       
       inline def setCreativeIdNull: Self = StObject.set(x, "creativeId", null)
       
+      inline def setCreativeTemplateId(value: Double): Self = StObject.set(x, "creativeTemplateId", value.asInstanceOf[js.Any])
+      
+      inline def setCreativeTemplateIdNull: Self = StObject.set(x, "creativeTemplateId", null)
+      
+      inline def setIsBackfill(value: Boolean): Self = StObject.set(x, "isBackfill", value.asInstanceOf[js.Any])
+      
       inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      
+      inline def setLabelIds(value: js.Array[Double]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+      
+      inline def setLabelIdsNull: Self = StObject.set(x, "labelIds", null)
+      
+      inline def setLabelIdsVarargs(value: Double*): Self = StObject.set(x, "labelIds", js.Array(value*))
       
       inline def setLineItemId(value: Double): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
       
@@ -437,6 +507,8 @@ object events {
       
       inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
       
+      inline def setSlotContentChanged(value: Boolean): Self = StObject.set(x, "slotContentChanged", value.asInstanceOf[js.Any])
+      
       inline def setSourceAgnosticCreativeId(value: Double): Self = StObject.set(x, "sourceAgnosticCreativeId", value.asInstanceOf[js.Any])
       
       inline def setSourceAgnosticCreativeIdNull: Self = StObject.set(x, "sourceAgnosticCreativeId", null)
@@ -444,6 +516,12 @@ object events {
       inline def setSourceAgnosticLineItemId(value: Double): Self = StObject.set(x, "sourceAgnosticLineItemId", value.asInstanceOf[js.Any])
       
       inline def setSourceAgnosticLineItemIdNull: Self = StObject.set(x, "sourceAgnosticLineItemId", null)
+      
+      inline def setYieldGroupIds(value: js.Array[Double]): Self = StObject.set(x, "yieldGroupIds", value.asInstanceOf[js.Any])
+      
+      inline def setYieldGroupIdsNull: Self = StObject.set(x, "yieldGroupIds", null)
+      
+      inline def setYieldGroupIdsVarargs(value: Double*): Self = StObject.set(x, "yieldGroupIds", js.Array(value*))
     }
   }
   

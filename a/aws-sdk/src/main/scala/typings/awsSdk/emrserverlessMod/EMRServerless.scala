@@ -71,6 +71,20 @@ trait EMRServerless extends Service {
   ): Request[GetApplicationResponse, AWSError] = js.native
   
   /**
+    * Returns a URL to access the job run dashboard.
+    */
+  def getDashboardForJobRun(): Request[GetDashboardForJobRunResponse, AWSError] = js.native
+  def getDashboardForJobRun(callback: js.Function2[/* err */ AWSError, /* data */ GetDashboardForJobRunResponse, Unit]): Request[GetDashboardForJobRunResponse, AWSError] = js.native
+  /**
+    * Returns a URL to access the job run dashboard.
+    */
+  def getDashboardForJobRun(params: GetDashboardForJobRunRequest): Request[GetDashboardForJobRunResponse, AWSError] = js.native
+  def getDashboardForJobRun(
+    params: GetDashboardForJobRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDashboardForJobRunResponse, Unit]
+  ): Request[GetDashboardForJobRunResponse, AWSError] = js.native
+  
+  /**
     * Displays detailed information about a job run.
     */
   def getJobRun(): Request[GetJobRunResponse, AWSError] = js.native

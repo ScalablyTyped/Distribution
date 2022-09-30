@@ -1,7 +1,7 @@
 
 # Scala.js typings for usb
 
-Typings are for version 2.5.1
+Typings are for version 2.5.2
 
 ## Library description:
 Library to access USB devices

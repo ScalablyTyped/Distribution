@@ -1,6 +1,5 @@
 package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait ISynthesizeSpeechResponse extends StObject {
   var audioConfig: js.UndefOr[IAudioConfig | Null] = js.undefined
   
   /** SynthesizeSpeechResponse audioContent */
-  var audioContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var audioContent: js.UndefOr[js.typedarray.Uint8Array | String | Null] = js.undefined
   
   /** SynthesizeSpeechResponse timepoints */
   var timepoints: js.UndefOr[js.Array[ITimepoint] | Null] = js.undefined
@@ -32,7 +31,7 @@ object ISynthesizeSpeechResponse {
     
     inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     
-    inline def setAudioContent(value: Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
+    inline def setAudioContent(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
     
     inline def setAudioContentNull: Self = StObject.set(x, "audioContent", null)
     
@@ -44,6 +43,6 @@ object ISynthesizeSpeechResponse {
     
     inline def setTimepointsUndefined: Self = StObject.set(x, "timepoints", js.undefined)
     
-    inline def setTimepointsVarargs(value: ITimepoint*): Self = StObject.set(x, "timepoints", js.Array(value :_*))
+    inline def setTimepointsVarargs(value: ITimepoint*): Self = StObject.set(x, "timepoints", js.Array(value*))
   }
 }

@@ -1,8 +1,8 @@
 package typings.robustPointInPolygon
 
-import typings.robustPointInPolygon.robustPointInPolygonNumbers.`-1`
-import typings.robustPointInPolygon.robustPointInPolygonNumbers.`0`
-import typings.robustPointInPolygon.robustPointInPolygonNumbers.`1`
+import typings.robustPointInPolygon.robustPointInPolygonInts.`-1`
+import typings.robustPointInPolygon.robustPointInPolygonInts.`0`
+import typings.robustPointInPolygon.robustPointInPolygonInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

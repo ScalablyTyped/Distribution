@@ -2,7 +2,6 @@ package typings.gatsbyCli.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.gatsbyCli.errorMapMod.ErrorId
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,13 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /** All remaining options */
+/* argName */ StringDictionary[Any] {
   
   var context: js.UndefOr[Record[String, String]] = js.undefined
   
-  var error: js.UndefOr[Error] = js.undefined
+  var error: js.UndefOr[js.Error] = js.undefined
   
   var id: js.UndefOr[ErrorId] = js.undefined
+  
+  var pluginName: js.UndefOr[String] = js.undefined
 }
 object Dictkey {
   
@@ -31,12 +33,16 @@ object Dictkey {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setId(value: ErrorId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
+    
+    inline def setPluginNameUndefined: Self = StObject.set(x, "pluginName", js.undefined)
   }
 }

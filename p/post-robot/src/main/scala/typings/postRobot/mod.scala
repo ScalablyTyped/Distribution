@@ -20,27 +20,27 @@ object mod {
   inline def on(name: String, options: ServerOptionsType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
   inline def on(name: String, options: ServerOptionsType, handler: HandlerType): CancelableType = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[CancelableType]
   
-  inline def once(name: String): ZalgoPromise[Origin] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any]).asInstanceOf[ZalgoPromise[Origin]]
-  inline def once(name: String, options: Unit, handler: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
-  inline def once(name: String, options: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
-  inline def once(name: String, options: HandlerType, handler: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
-  inline def once(name: String, options: ServerOptionsType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
-  inline def once(name: String, options: ServerOptionsType, handler: HandlerType): ZalgoPromise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[Origin]]
+  inline def once(name: String): js.Promise[Origin] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Origin]]
+  inline def once(name: String, options: Unit, handler: HandlerType): js.Promise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Origin]]
+  inline def once(name: String, options: HandlerType): js.Promise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Origin]]
+  inline def once(name: String, options: HandlerType, handler: HandlerType): js.Promise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Origin]]
+  inline def once(name: String, options: ServerOptionsType): js.Promise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Origin]]
+  inline def once(name: String, options: ServerOptionsType, handler: HandlerType): js.Promise[Origin] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Origin]]
   
-  inline def send(win: CrossDomainWindowType, name: String): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
-  inline def send(win: CrossDomainWindowType, name: String, data: js.Object): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  inline def send(win: CrossDomainWindowType, name: String): js.Promise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseMessageEvent]]
+  inline def send(win: CrossDomainWindowType, name: String, data: js.Object): js.Promise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseMessageEvent]]
   inline def send(
     win: CrossDomainWindowType,
     name: String,
     data: js.Object,
     options: FireAndForgetRequestOptionsType & RegularRequestOptionsType
-  ): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  ): js.Promise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseMessageEvent]]
   inline def send(
     win: CrossDomainWindowType,
     name: String,
     data: Unit,
     options: FireAndForgetRequestOptionsType & RegularRequestOptionsType
-  ): ZalgoPromise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZalgoPromise[ResponseMessageEvent]]
+  ): js.Promise[ResponseMessageEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseMessageEvent]]
   
   trait CancelableType extends StObject {
     
@@ -99,7 +99,7 @@ object mod {
     }
   }
   
-  type HandlerType = js.Function1[/* event */ Data, ZalgoPromise[Any]]
+  type HandlerType = js.Function1[/* event */ Data, js.Promise[Any]]
   
   trait RegularRequestOptionsType extends StObject {
     
@@ -200,7 +200,7 @@ object mod {
       
       inline def setErrorOnCloseUndefined: Self = StObject.set(x, "errorOnClose", js.undefined)
       
-      inline def setHandler(value: /* event */ Data => ZalgoPromise[Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: /* event */ Data => js.Promise[Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       

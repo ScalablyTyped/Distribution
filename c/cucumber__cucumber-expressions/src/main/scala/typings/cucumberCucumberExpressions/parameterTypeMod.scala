@@ -1,6 +1,7 @@
 package typings.cucumberCucumberExpressions
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object parameterTypeMod {
       name: String,
       regexps: RegExps,
       `type`: Null,
-      transform: js.Function1[/* repeated */ String, T | js.Thenable[T]],
+      transform: js.Function1[/* repeated */ String, T | PromiseLike[T]],
       useForSnippets: Boolean,
       preferForRegexpMatch: Boolean
     ) = this()
@@ -32,7 +33,7 @@ object parameterTypeMod {
       name: String,
       regexps: RegExps,
       `type`: Constructor[T],
-      transform: js.Function1[/* repeated */ String, T | js.Thenable[T]],
+      transform: js.Function1[/* repeated */ String, T | PromiseLike[T]],
       useForSnippets: Boolean,
       preferForRegexpMatch: Boolean
     ) = this()
@@ -40,7 +41,7 @@ object parameterTypeMod {
       name: String,
       regexps: RegExps,
       `type`: Factory[T],
-      transform: js.Function1[/* repeated */ String, T | js.Thenable[T]],
+      transform: js.Function1[/* repeated */ String, T | PromiseLike[T]],
       useForSnippets: Boolean,
       preferForRegexpMatch: Boolean
     ) = this()
@@ -48,7 +49,7 @@ object parameterTypeMod {
       name: Unit,
       regexps: RegExps,
       `type`: Null,
-      transform: js.Function1[/* repeated */ String, T | js.Thenable[T]],
+      transform: js.Function1[/* repeated */ String, T | PromiseLike[T]],
       useForSnippets: Boolean,
       preferForRegexpMatch: Boolean
     ) = this()
@@ -56,7 +57,7 @@ object parameterTypeMod {
       name: Unit,
       regexps: RegExps,
       `type`: Constructor[T],
-      transform: js.Function1[/* repeated */ String, T | js.Thenable[T]],
+      transform: js.Function1[/* repeated */ String, T | PromiseLike[T]],
       useForSnippets: Boolean,
       preferForRegexpMatch: Boolean
     ) = this()
@@ -64,7 +65,7 @@ object parameterTypeMod {
       name: Unit,
       regexps: RegExps,
       `type`: Factory[T],
-      transform: js.Function1[/* repeated */ String, T | js.Thenable[T]],
+      transform: js.Function1[/* repeated */ String, T | PromiseLike[T]],
       useForSnippets: Boolean,
       preferForRegexpMatch: Boolean
     ) = this()

@@ -2,6 +2,7 @@ package typings.pEvent
 
 import typings.pEvent.pEventBooleans.`true`
 import typings.std.AsyncIterableIterator
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,7 +153,8 @@ object mod {
   
   @js.native
   trait CancelablePromise[ResolveType]
-    extends js.Promise[ResolveType] {
+    extends StObject
+       with Promise[ResolveType] {
     
     def cancel(): Unit = js.native
   }

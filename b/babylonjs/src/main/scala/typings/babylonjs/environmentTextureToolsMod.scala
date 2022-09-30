@@ -1,7 +1,7 @@
 package typings.babylonjs
 
-import typings.babylonjs.babylonjsNumbers.`1`
-import typings.babylonjs.babylonjsNumbers.`2`
+import typings.babylonjs.babylonjsInts.`1`
+import typings.babylonjs.babylonjsInts.`2`
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial

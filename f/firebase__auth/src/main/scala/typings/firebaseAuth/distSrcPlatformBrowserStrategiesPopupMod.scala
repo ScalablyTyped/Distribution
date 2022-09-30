@@ -6,7 +6,7 @@ import typings.firebaseAuth.distSrcModelPublicTypesMod.AuthProvider
 import typings.firebaseAuth.distSrcModelPublicTypesMod.PopupRedirectResolver
 import typings.firebaseAuth.distSrcModelPublicTypesMod.User
 import typings.firebaseAuth.distSrcModelPublicTypesMod.UserCredential
-import typings.firebaseAuth.firebaseAuthNumbers.`2000`
+import typings.firebaseAuth.firebaseAuthInts.`2000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

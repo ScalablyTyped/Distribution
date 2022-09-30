@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.LayoutGridRow")
 @js.native
-class LayoutGridRow protected ()
+open class LayoutGridRow protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LayoutGridRow {
   def this(
     model: AbstractModel,

@@ -1,6 +1,6 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

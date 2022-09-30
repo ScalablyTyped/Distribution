@@ -3,10 +3,10 @@ package typings.jasmineReporters
 import typings.jasmine.jasmine.CustomReporter
 import typings.jasmine.jasmine.SpecResult
 import typings.jasmine.jasmine.SuiteResult
-import typings.jasmineReporters.jasmineReportersNumbers.`0`
-import typings.jasmineReporters.jasmineReportersNumbers.`1`
-import typings.jasmineReporters.jasmineReportersNumbers.`2`
-import typings.jasmineReporters.jasmineReportersNumbers.`3`
+import typings.jasmineReporters.jasmineReportersInts.`0`
+import typings.jasmineReporters.jasmineReportersInts.`1`
+import typings.jasmineReporters.jasmineReportersInts.`2`
+import typings.jasmineReporters.jasmineReportersInts.`3`
 import typings.jasmineReporters.mod.AppVeyorReporter.ConstructorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,26 +1,26 @@
 package typings.guacamoleCommonJs
 
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0000`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0100`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0200`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0201`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0202`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0203`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0204`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0205`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0206`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0207`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0208`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0209`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x020a`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x020b`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0300`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0301`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0303`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0308`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x030d`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x030f`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x031d`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0000`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0100`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0200`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0201`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0202`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0203`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0204`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0205`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0206`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0207`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0208`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0209`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x020a`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x020b`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0300`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0301`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0303`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0308`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x030d`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x030f`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x031d`
 import typings.guacamoleCommonJs.statusMod.Status.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -61,27 +61,27 @@ object statusMod {
   object Status {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x031d`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0200`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0301`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x020a`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0201`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0303`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x020b`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0207`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0206`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x030d`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0205`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0308`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0203`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0204`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0209`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0208`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0100`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x030f`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0300`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0000`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0x0202`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x031d`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0200`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0301`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x020a`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0201`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0303`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x020b`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0207`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0206`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x030d`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0205`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0308`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0203`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0204`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0209`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0208`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0100`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x030f`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0300`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0000`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0202`
     */
     trait Code extends StObject
     /* Inlined guacamole-common-js.guacamole-common-js/lib/Status.Status.StatusCode & std.Readonly<{fromHTTPCode (status : number): guacamole-common-js.guacamole-common-js/lib/Status.Status.Code, fromWebSocketCode (code : number): guacamole-common-js.guacamole-common-js/lib/Status.Status.Code}> */

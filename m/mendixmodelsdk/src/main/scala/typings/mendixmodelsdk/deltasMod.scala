@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deltasMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas", "DeltaManager")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas", "DeltaManager")
   @js.native
-  class DeltaManager protected ()
+  open class DeltaManager protected ()
     extends typings.mendixmodelsdk.deltaManagerMod.DeltaManager {
     def this(model: AbstractModel) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas", "DeltaProcessor")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas", "DeltaProcessor")
   @js.native
-  class DeltaProcessor protected ()
+  open class DeltaProcessor protected ()
     extends typings.mendixmodelsdk.deltaProcessorMod.DeltaProcessor {
     def this(model: AbstractModel) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas", "DeltaSender")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas", "DeltaSender")
   @js.native
-  class DeltaSender protected ()
+  open class DeltaSender protected ()
     extends typings.mendixmodelsdk.deltaSenderMod.DeltaSender {
     def this(model: AbstractModel, flushCallback: IVoidCallback, errorCallback: IErrorCallback) = this()
   }

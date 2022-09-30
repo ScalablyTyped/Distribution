@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.ServiceWorkers")
 @js.native
-class ServiceWorkers ()
+open class ServiceWorkers ()
   extends typings.electron.Electron.ServiceWorkers

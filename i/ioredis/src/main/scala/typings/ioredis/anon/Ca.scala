@@ -1,13 +1,12 @@
 package typings.ioredis.anon
 
-import typings.ioredis.ioredisStrings.`-----BEGIN CERTIFICATE-----LinefeedMIIDTzCCAjegAwIBAgIJAKSVpiDswLcwMA0GCSqGSIb3DQEBBQUAMD4xFjAUBgNVLinefeedBAoMDUdhcmFudGlhIERhdGExJDAiBgNVBAMMG1NTTCBDZXJ0aWZpY2F0aW9uIEF1LinefeeddGhvcml0eTAeFw0xMzEwMDExMjE0NTVaFw0yMzA5MjkxMjE0NTVaMD4xFjAUBgNVLinefeedBAoMDUdhcmFudGlhIERhdGExJDAiBgNVBAMMG1NTTCBDZXJ0aWZpY2F0aW9uIEF1LinefeeddGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALZqkhSlashDczWPLinefeedJnxnHLQ7QL0T4B4CDKWBKCcisriGbA6ZePWVNo4hfKQC6JrzfRPlussign081NeD6VcWUizLinefeedrmdPlussignjtPhIY4cPlu`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Ca extends StObject {
   
-  val ca: `-----BEGIN CERTIFICATE-----LinefeedMIIDTzCCAjegAwIBAgIJAKSVpiDswLcwMA0GCSqGSIb3DQEBBQUAMD4xFjAUBgNVLinefeedBAoMDUdhcmFudGlhIERhdGExJDAiBgNVBAMMG1NTTCBDZXJ0aWZpY2F0aW9uIEF1LinefeeddGhvcml0eTAeFw0xMzEwMDExMjE0NTVaFw0yMzA5MjkxMjE0NTVaMD4xFjAUBgNVLinefeedBAoMDUdhcmFudGlhIERhdGExJDAiBgNVBAMMG1NTTCBDZXJ0aWZpY2F0aW9uIEF1LinefeeddGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALZqkhSlashDczWPLinefeedJnxnHLQ7QL0T4B4CDKWBKCcisriGbA6ZePWVNo4hfKQC6JrzfRPlussign081NeD6VcWUizLinefeedrmdPlussignjtPhIY4cPlu`
+  val ca: String
 }
 object Ca {
   
@@ -18,8 +17,6 @@ object Ca {
   
   extension [Self <: Ca](x: Self) {
     
-    inline def setCa(
-      value: `-----BEGIN CERTIFICATE-----LinefeedMIIDTzCCAjegAwIBAgIJAKSVpiDswLcwMA0GCSqGSIb3DQEBBQUAMD4xFjAUBgNVLinefeedBAoMDUdhcmFudGlhIERhdGExJDAiBgNVBAMMG1NTTCBDZXJ0aWZpY2F0aW9uIEF1LinefeeddGhvcml0eTAeFw0xMzEwMDExMjE0NTVaFw0yMzA5MjkxMjE0NTVaMD4xFjAUBgNVLinefeedBAoMDUdhcmFudGlhIERhdGExJDAiBgNVBAMMG1NTTCBDZXJ0aWZpY2F0aW9uIEF1LinefeeddGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALZqkhSlashDczWPLinefeedJnxnHLQ7QL0T4B4CDKWBKCcisriGbA6ZePWVNo4hfKQC6JrzfRPlussign081NeD6VcWUizLinefeedrmdPlussignjtPhIY4cPlu`
-    ): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+    inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
   }
 }

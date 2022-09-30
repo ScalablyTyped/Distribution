@@ -1,26 +1,26 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-4115`
-import typings.activexExcel.activexExcelNumbers.`-4118`
-import typings.activexExcel.activexExcelNumbers.`-4119`
-import typings.activexExcel.activexExcelNumbers.`-4142`
-import typings.activexExcel.activexExcelNumbers.`13`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`4`
-import typings.activexExcel.activexExcelNumbers.`5`
+import typings.activexExcel.activexExcelInts.`-4115`
+import typings.activexExcel.activexExcelInts.`-4118`
+import typings.activexExcel.activexExcelInts.`-4119`
+import typings.activexExcel.activexExcelInts.`-4142`
+import typings.activexExcel.activexExcelInts.`13`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`4`
+import typings.activexExcel.activexExcelInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`-4115`
-  - typings.activexExcel.activexExcelNumbers.`4`
-  - typings.activexExcel.activexExcelNumbers.`5`
-  - typings.activexExcel.activexExcelNumbers.`-4118`
-  - typings.activexExcel.activexExcelNumbers.`-4119`
-  - typings.activexExcel.activexExcelNumbers.`-4142`
-  - typings.activexExcel.activexExcelNumbers.`13`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`-4115`
+  - typings.activexExcel.activexExcelInts.`4`
+  - typings.activexExcel.activexExcelInts.`5`
+  - typings.activexExcel.activexExcelInts.`-4118`
+  - typings.activexExcel.activexExcelInts.`-4119`
+  - typings.activexExcel.activexExcelInts.`-4142`
+  - typings.activexExcel.activexExcelInts.`13`
 */
 trait XlLineStyle
   extends StObject

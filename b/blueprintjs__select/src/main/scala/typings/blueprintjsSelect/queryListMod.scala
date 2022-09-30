@@ -288,7 +288,7 @@ object queryListMod {
       * this element will be used to hide the "Create Item" option if its value
       * matches the current `query`.
       */
-    var createNewItem: js.UndefOr[T] = js.undefined
+    var createNewItem: js.UndefOr[T | js.Array[T]] = js.undefined
     
     /** The original `items` array filtered by `itemListPredicate` or `itemPredicate`. */
     var filteredItems: js.Array[T]
@@ -309,9 +309,11 @@ object queryListMod {
       
       inline def setActiveItemNull: Self = StObject.set(x, "activeItem", null)
       
-      inline def setCreateNewItem(value: T): Self = StObject.set(x, "createNewItem", value.asInstanceOf[js.Any])
+      inline def setCreateNewItem(value: T | js.Array[T]): Self = StObject.set(x, "createNewItem", value.asInstanceOf[js.Any])
       
       inline def setCreateNewItemUndefined: Self = StObject.set(x, "createNewItem", js.undefined)
+      
+      inline def setCreateNewItemVarargs(value: T*): Self = StObject.set(x, "createNewItem", js.Array(value*))
       
       inline def setFilteredItems(value: js.Array[T]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])
       

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.MessageChannelMain")
 @js.native
-class MessageChannelMain ()
+open class MessageChannelMain ()
   extends typings.electron.Electron.MessageChannelMain

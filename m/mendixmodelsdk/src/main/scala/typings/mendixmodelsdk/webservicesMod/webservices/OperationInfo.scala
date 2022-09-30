@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.OperationInfo")
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.OperationInfo")
 @js.native
-class OperationInfo protected () extends Element[IModel] {
+open class OperationInfo protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -73,7 +73,7 @@ class OperationInfo protected () extends Element[IModel] {
 }
 object OperationInfo {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.OperationInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.OperationInfo")
   @js.native
   val ^ : js.Any = js.native
   
@@ -94,13 +94,13 @@ object OperationInfo {
   inline def createIn(container: ServiceInfo): OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OperationInfo]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.OperationInfo.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.OperationInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.OperationInfo.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.OperationInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object contractsMod {
   
-  @JSImport("dnd-core/lib/contracts", JSImport.Namespace)
+  @JSImport("dnd-core/dist/contracts", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

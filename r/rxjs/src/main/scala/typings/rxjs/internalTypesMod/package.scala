@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.rxjs.internalObservableMod.Observable
 import typings.std.ArrayLike
 import typings.std.AsyncIterable
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +18,8 @@ type FactoryOrValue[T] = T | js.Function0[T]
   - scala.Null
   - scala.Unit
   - typings.rxjs.rxjsBooleans.`false`
-  - typings.rxjs.rxjsNumbers.`0`
-  - typings.rxjs.rxjsNumbers.`-0`
+  - typings.rxjs.rxjsInts.`0`
+  - typings.rxjs.rxjsInts.`-0`
   - typings.rxjs.rxjsStrings._empty
 */
 type Falsy = js.UndefOr[_Falsy | Null]
@@ -31,12 +32,12 @@ type MonoTypeOperatorFunction[T] = OperatorFunction[T, T]
   - typings.rxjs.internalObservableMod.Observable[T]
   - typings.rxjs.internalTypesMod.InteropObservable[T]
   - typings.std.AsyncIterable[T]
-  - js.Thenable[T]
+  - typings.std.PromiseLike[T]
   - typings.std.ArrayLike[T]
   - js.Iterable[T]
   - typings.rxjs.internalTypesMod.ReadableStreamLike[T]
 */
-type ObservableInput[T] = _ObservableInput[T] | AsyncIterable[T] | js.Thenable[T] | ArrayLike[T] | js.Iterable[T]
+type ObservableInput[T] = _ObservableInput[T] | AsyncIterable[T] | PromiseLike[T] | ArrayLike[T] | js.Iterable[T]
 
 type ObservableInputTuple[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<T[K]>}
@@ -56,7 +57,7 @@ type ObservedValuesFromArray[X] = ObservedValueUnionFromArray[X]
 
 type OperatorFunction[T, R] = UnaryFunction[Observable[T], Observable[R]]
 
-type SubscribableOrPromise[T] = (Subscribable[scala.Nothing | T]) | js.Thenable[T] | InteropObservable[T]
+type SubscribableOrPromise[T] = (Subscribable[scala.Nothing | T]) | PromiseLike[T] | InteropObservable[T]
 
 type Tail[X /* <: js.Array[Any] */] = Any
 

@@ -13,10 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object shippoStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketnumberRightcurlybracket extends StObject
-  inline def $LeftcurlybracketnumberRightcurlybracket: $LeftcurlybracketnumberRightcurlybracket = "${number}".asInstanceOf[$LeftcurlybracketnumberRightcurlybracket]
-  
-  @js.native
   sealed trait ABANDON extends StObject
   inline def ABANDON: ABANDON = "ABANDON".asInstanceOf[ABANDON]
   

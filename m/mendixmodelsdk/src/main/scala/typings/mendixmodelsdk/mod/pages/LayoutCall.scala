@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.LayoutCall")
 @js.native
-class LayoutCall protected ()
+open class LayoutCall protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LayoutCall {
   def this(
     model: AbstractModel,

@@ -1,16 +1,16 @@
 package typings.pako.mod
 
-import typings.pako.pakoNumbers.`-1`
-import typings.pako.pakoNumbers.`0`
-import typings.pako.pakoNumbers.`1`
-import typings.pako.pakoNumbers.`2`
-import typings.pako.pakoNumbers.`3`
-import typings.pako.pakoNumbers.`4`
-import typings.pako.pakoNumbers.`5`
-import typings.pako.pakoNumbers.`6`
-import typings.pako.pakoNumbers.`7`
-import typings.pako.pakoNumbers.`8`
-import typings.pako.pakoNumbers.`9`
+import typings.pako.pakoInts.`-1`
+import typings.pako.pakoInts.`0`
+import typings.pako.pakoInts.`1`
+import typings.pako.pakoInts.`2`
+import typings.pako.pakoInts.`3`
+import typings.pako.pakoInts.`4`
+import typings.pako.pakoInts.`5`
+import typings.pako.pakoInts.`6`
+import typings.pako.pakoInts.`7`
+import typings.pako.pakoInts.`8`
+import typings.pako.pakoInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

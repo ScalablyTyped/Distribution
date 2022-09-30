@@ -8,6 +8,11 @@ trait CreateCostCategoryDefinitionRequest extends StObject {
   
   var DefaultValue: js.UndefOr[CostCategoryValue] = js.undefined
   
+  /**
+    * The Cost Category's effective start date. It can only be a billing start date (first day of the month). If the date isn't provided, it's the first day of the current month. Dates can't be before the previous twelve months, or in the future.
+    */
+  var EffectiveStart: js.UndefOr[ZonedDateTime] = js.undefined
+  
   var Name: CostCategoryName
   
   /**
@@ -39,6 +44,10 @@ object CreateCostCategoryDefinitionRequest {
     inline def setDefaultValue(value: CostCategoryValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    
+    inline def setEffectiveStart(value: ZonedDateTime): Self = StObject.set(x, "EffectiveStart", value.asInstanceOf[js.Any])
+    
+    inline def setEffectiveStartUndefined: Self = StObject.set(x, "EffectiveStart", js.undefined)
     
     inline def setName(value: CostCategoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

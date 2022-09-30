@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/list-view relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListView")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ListView")
 @js.native
-class ListView protected () extends ListenTargetWidget {
+open class ListView protected () extends ListenTargetWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -73,7 +73,7 @@ class ListView protected () extends ListenTargetWidget {
 }
 object ListView {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListView")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ListView")
   @js.native
   val ^ : js.Any = js.native
   
@@ -647,13 +647,13 @@ object ListView {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): ListView = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ListView]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListView.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ListView.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListView.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ListView.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

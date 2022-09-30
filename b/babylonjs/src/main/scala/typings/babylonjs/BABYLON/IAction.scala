@@ -9,20 +9,20 @@ trait IAction extends StObject {
   
   /**
     * Internal only - manager for action
-    * @hidden
+    * @internal
     */
   var _actionManager: Nullable[AbstractActionManager] = js.native
   
   /**
     * Internal only - executes current action event
-    * @hidden
+    * @internal
     */
   def _executeCurrent(): Unit = js.native
   def _executeCurrent(evt: ActionEvent): Unit = js.native
   
   /**
     * Internal only
-    * @hidden
+    * @internal
     */
   def _prepare(): Unit = js.native
   

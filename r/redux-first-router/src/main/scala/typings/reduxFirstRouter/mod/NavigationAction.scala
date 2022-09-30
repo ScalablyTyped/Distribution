@@ -40,7 +40,7 @@ object NavigationAction {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: NavigationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: NavigationAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setKey(value: Nullable[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

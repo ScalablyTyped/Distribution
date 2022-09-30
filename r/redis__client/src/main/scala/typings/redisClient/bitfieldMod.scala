@@ -4,7 +4,6 @@ import typings.redisClient.redisClientStrings.GET
 import typings.redisClient.redisClientStrings.INCRBY
 import typings.redisClient.redisClientStrings.OVERFLOW
 import typings.redisClient.redisClientStrings.SET
-import typings.redisClient.redisClientStrings.`DollarLeftcurlybracketApostropheiApostrophe Verticalline ApostropheuApostropheRightcurlybracketDollarLeftcurlybracketnumberRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object bitfieldMod {
   
   inline def transformReply(): js.Array[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[js.Array[Double | Null]]
   
-  type BitFieldEncoding = `DollarLeftcurlybracketApostropheiApostrophe Verticalline ApostropheuApostropheRightcurlybracketDollarLeftcurlybracketnumberRightcurlybracket`
+  type BitFieldEncoding = /* template literal string: ${i|u}${number} */ String
   
   trait BitFieldGetOperation
     extends StObject

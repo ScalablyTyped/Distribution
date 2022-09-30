@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "javaactions.IntegerType")
 @js.native
-class IntegerType protected ()
+open class IntegerType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.javaactions.IntegerType {
   def this(
     model: AbstractModel,

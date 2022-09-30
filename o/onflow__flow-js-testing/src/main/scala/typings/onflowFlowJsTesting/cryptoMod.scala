@@ -2,9 +2,9 @@ package typings.onflowFlowJsTesting
 
 import typings.node.bufferMod.global.Buffer
 import typings.onflowFlowJsTesting.accountMod.KeyObject
-import typings.onflowFlowJsTesting.onflowFlowJsTestingNumbers.`1`
-import typings.onflowFlowJsTesting.onflowFlowJsTestingNumbers.`2`
-import typings.onflowFlowJsTesting.onflowFlowJsTestingNumbers.`3`
+import typings.onflowFlowJsTesting.onflowFlowJsTestingInts.`1`
+import typings.onflowFlowJsTesting.onflowFlowJsTestingInts.`2`
+import typings.onflowFlowJsTesting.onflowFlowJsTestingInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

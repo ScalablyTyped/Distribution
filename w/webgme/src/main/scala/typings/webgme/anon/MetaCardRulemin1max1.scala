@@ -1,7 +1,7 @@
 package typings.webgme.anon
 
 import typings.webgme.GmeCommon.Path
-import typings.webgme.webgmeNumbers.`1`
+import typings.webgme.webgmeInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

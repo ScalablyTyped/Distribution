@@ -24,18 +24,18 @@ object mod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.jsQuantities.jsQuantitiesNumbers.`-1`
-    - typings.jsQuantities.jsQuantitiesNumbers.`0`
-    - typings.jsQuantities.jsQuantitiesNumbers.`1`
+    - typings.jsQuantities.jsQuantitiesInts.`-1`
+    - typings.jsQuantities.jsQuantitiesInts.`0`
+    - typings.jsQuantities.jsQuantitiesInts.`1`
   */
   trait ComparisonResult extends StObject
   object ComparisonResult {
     
-    inline def `-1`: typings.jsQuantities.jsQuantitiesNumbers.`-1` = -1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`-1`]
+    inline def `-1`: typings.jsQuantities.jsQuantitiesInts.`-1` = -1.asInstanceOf[typings.jsQuantities.jsQuantitiesInts.`-1`]
     
-    inline def `0`: typings.jsQuantities.jsQuantitiesNumbers.`0` = 0.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`0`]
+    inline def `0`: typings.jsQuantities.jsQuantitiesInts.`0` = 0.asInstanceOf[typings.jsQuantities.jsQuantitiesInts.`0`]
     
-    inline def `1`: typings.jsQuantities.jsQuantitiesNumbers.`1` = 1.asInstanceOf[typings.jsQuantities.jsQuantitiesNumbers.`1`]
+    inline def `1`: typings.jsQuantities.jsQuantitiesInts.`1` = 1.asInstanceOf[typings.jsQuantities.jsQuantitiesInts.`1`]
   }
   
   @js.native

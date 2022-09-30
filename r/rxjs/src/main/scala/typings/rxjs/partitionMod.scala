@@ -20,12 +20,12 @@ object partitionMod {
     thisArg: A
   ): js.Tuple2[Observable[T], Observable[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Observable[T], Observable[T]]]
   
-  inline def partition_TU_T[T, U /* <: T */](
+  inline def partition_TU[T, U /* <: T */](
     source: ObservableInput[T],
     predicate: js.Function2[/* value */ T, /* index */ Double, /* is U */ Boolean]
   ): js.Tuple2[Observable[U], Observable[Exclude[T, U]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Observable[U], Observable[Exclude[T, U]]]]
   
-  inline def partition_TU_TA[T, U /* <: T */, A](
+  inline def partition_TUA[T, U /* <: T */, A](
     source: ObservableInput[T],
     predicate: js.ThisFunction2[/* this */ A, /* value */ T, /* index */ Double, /* is U */ Boolean],
     thisArg: A

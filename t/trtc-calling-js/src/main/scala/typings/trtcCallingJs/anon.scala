@@ -1,7 +1,7 @@
 package typings.trtcCallingJs
 
-import typings.trtcCallingJs.trtcCallingJsNumbers.`1`
-import typings.trtcCallingJs.trtcCallingJsNumbers.`2`
+import typings.trtcCallingJs.trtcCallingJsInts.`1`
+import typings.trtcCallingJs.trtcCallingJsInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.intlifyCoreBase.anon.Number
 import typings.intlifyCoreBase.intlifyCoreBaseBooleans.`false`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`15`
-import typings.intlifyCoreBase.intlifyCoreBaseStrings.$LeftcurlybracketKeyRightcurlybracket
-import typings.intlifyCoreBase.intlifyCoreBaseStrings.`$LeftcurlybracketT[number]RightcurlybracketExclamationmark`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`15`
 import typings.intlifyCoreBase.intlifyCoreBaseStrings.`en-US`
 import typings.intlifyCoreBase.intlifyCoreBaseStrings.toString
 import typings.intlifyCoreBase.mod.^
@@ -85,7 +83,7 @@ PickupLocales[
   /* keyof std.NonNullable<Messages> */ String
 ]) | Locale]]
 
-inline def `createCoreContext_SchemaLocalesMessageOptions_CoreOptionsMessageSchemaParamsSchemaMessageLocaleParamsLocalesen-USUnionLocaleLocaleParamsLocalesen-USUnionLocaleLocaleParamsLocalesen-USUnionLocaleLocaleParamsLocalesen-USLocaleMessageMessageDateTimeFormatNumberFormatLocaleMessagesLocaleMessageMessageUnionLocaleLocaleParamsLocalesen-USMessageDateTimeFormatsDateTimeFormatUnionLocaleLocaleParamsLocalesen-USNumberFormatsNumberFormatUnionLocaleLocaleParamsLocalesen-USMessagesDateTimeFormatsNumberFormats`[Schema, Locales, Message, Options /* <: CoreOptions[
+inline def createCoreContext_SchemaLocalesMessageOptionsMessagesDateTimeFormatsNumberFormats[Schema, Locales, Message, Options /* <: CoreOptions[
 Message, 
 SchemaParams[Schema, Message], 
 LocaleParams[Locales, `en-US`], 
@@ -887,7 +885,7 @@ PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 (PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String]) | Locale]) | Null]
 
-inline def getWarnMessage(code: CoreWarnCodes, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWarnMessage")(List(code.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+inline def getWarnMessage(code: CoreWarnCodes, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWarnMessage")(scala.List(code.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
 inline def initI18nDevTools(i18n: Any, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initI18nDevTools")(i18n.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def initI18nDevTools(i18n: Any, version: String, meta: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initI18nDevTools")(i18n.asInstanceOf[js.Any], version.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2097,7 +2095,7 @@ type Path = String
 
 type PathValue = String | Double | Boolean | js.Function | Null | StringDictionary[Any] | js.Array[Any]
 
-type PickupFallbackLocales[T /* <: js.Array[Any] */] = (/* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any) | `$LeftcurlybracketT[number]RightcurlybracketExclamationmark`
+type PickupFallbackLocales[T /* <: js.Array[Any] */] = (/* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any) | (/* template literal string: ${T[number]}! */ String)
 
 type PickupFormatKeys[T /* <: Record[String, Any] */, K] = ResourceFormatPath[
 /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
@@ -2135,4 +2133,6 @@ type _ResourceFormatPath[T] = (__ResourceFormatPath[T, /* keyof T */ String]) | 
 
 type _ResourcePath[T] = (__ResourcePath[T, /* keyof T */ String]) | (/* keyof T */ String)
 
-type __ResourceFormatPath[T, Key /* <: /* keyof T */ String */] = $LeftcurlybracketKeyRightcurlybracket
+type __ResourceFormatPath[T, Key /* <: /* keyof T */ String */] = /* template literal string: ${Key} */ String
+
+type __ResourcePath[T, Key /* <: /* keyof T */ String */] = /* template literal string: ${Key}.${__ResourcePath<T[Key],Exclude<keyofT[Key],keyofany[]>>&string} */ String

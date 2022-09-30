@@ -34,7 +34,7 @@ object TouchBarColorPickerConstructorOptions {
     
     inline def setAvailableColorsUndefined: Self = StObject.set(x, "availableColors", js.undefined)
     
-    inline def setAvailableColorsVarargs(value: String*): Self = StObject.set(x, "availableColors", js.Array(value :_*))
+    inline def setAvailableColorsVarargs(value: String*): Self = StObject.set(x, "availableColors", js.Array(value*))
     
     inline def setChange(value: /* color */ String => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

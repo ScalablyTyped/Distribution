@@ -6,15 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LoggerOptions extends StObject {
   
-  /**
-    * Override default global log level.
-    */
-  var logger: js.UndefOr[log] = js.undefined
+  var logger: js.UndefOr[LoggerFunction] = js.undefined
   
-  /**
-    * Custom logger function
-    */
-  var loggerLevel: js.UndefOr[String] = js.undefined
+  var loggerLevel: js.UndefOr[LoggerLevel] = js.undefined
 }
 object LoggerOptions {
   
@@ -25,9 +19,9 @@ object LoggerOptions {
   
   extension [Self <: LoggerOptions](x: Self) {
     
-    inline def setLogger(value: (/* message */ js.UndefOr[String], /* state */ js.UndefOr[LoggerState]) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction2(value))
+    inline def setLogger(value: LoggerFunction): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    inline def setLoggerLevel(value: String): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
+    inline def setLoggerLevel(value: LoggerLevel): Self = StObject.set(x, "loggerLevel", value.asInstanceOf[js.Any])
     
     inline def setLoggerLevelUndefined: Self = StObject.set(x, "loggerLevel", js.undefined)
     

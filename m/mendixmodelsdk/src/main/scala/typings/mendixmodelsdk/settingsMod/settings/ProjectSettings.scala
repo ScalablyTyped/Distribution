@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.unitsMod.IAbstractUnit because Already inherited
 - typings.mendixmodelsdk.unitsMod.IModelUnit because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IProjectDocument because Already inherited
-- typings.mendixmodelsdk.settingsMod.settings.IProjectSettings because var conflicts: containerAsProject, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ProjectSettings")
+- typings.mendixmodelsdk.settingsMod.settings.IProjectSettings because var conflicts: containerAsProject, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/settings", "settings.ProjectSettings")
 @js.native
-class ProjectSettings protected () extends ProjectDocument {
+open class ProjectSettings protected () extends ProjectDocument {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,7 +38,7 @@ class ProjectSettings protected () extends ProjectDocument {
 }
 object ProjectSettings {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ProjectSettings")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.ProjectSettings")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object ProjectSettings {
   inline def createIn(container: IProject): ProjectSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ProjectSettings]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ProjectSettings.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.ProjectSettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.ProjectSettings.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.ProjectSettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

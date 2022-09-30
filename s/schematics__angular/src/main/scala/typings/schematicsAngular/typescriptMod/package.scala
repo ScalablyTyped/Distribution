@@ -6127,9 +6127,9 @@ inline def getNodeMajorVersion(): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic
 inline def getOriginalNode(): js.UndefOr[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")().asInstanceOf[js.UndefOr[Node]]
 inline def getOriginalNode(node: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any]).asInstanceOf[Node]
 inline def getOriginalNode[T /* <: Node */](node: Unit, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-inline def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 
-inline def getOriginalNode_T_Node_Union[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def getOriginalNode_T_T[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any], nodeTest.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def getOriginalNode_Union(node: Node): js.UndefOr[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Node]]
 
@@ -6154,7 +6154,7 @@ inline def getParseTreeNode[T /* <: Node */](node: Unit, nodeTest: js.Function1[
   * @param nodeTest A callback used to ensure the correct type of parse tree node is returned.
   * @returns The original parse tree node if found; otherwise, undefined.
   */
-inline def getParseTreeNode_T_Node[T /* <: Node */](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParseTreeNode")().asInstanceOf[js.UndefOr[T]]
+inline def getParseTreeNode_T[T /* <: Node */](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParseTreeNode")().asInstanceOf[js.UndefOr[T]]
 
 inline def getParsedCommandLineOfConfigFile(configFileName: java.lang.String, optionsToExtend: Unit, host: ParseConfigFileHost): js.UndefOr[ParsedCommandLine] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParsedCommandLineOfConfigFile")(configFileName.asInstanceOf[js.Any], optionsToExtend.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParsedCommandLine]]
 inline def getParsedCommandLineOfConfigFile(
@@ -11227,7 +11227,7 @@ inline def versionMajorMinor: /* "4.8" */ java.lang.String = ^.asInstanceOf[js.D
   * @param visitor The callback used to visit each child.
   * @param context A lexical environment context for the visitor.
   */
-inline def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 inline def visitEachChild[T /* <: Node */](
   node: T,
   visitor: Visitor,
@@ -11267,7 +11267,7 @@ inline def visitEachChild[T /* <: Node */](
   * @param visitor The callback used to visit each child.
   * @param context A lexical environment context for the visitor.
   */
-inline def visitEachChild_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def visitEachChild_T_T[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitEachChild")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def visitFunctionBody(node: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitFunctionBody")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[FunctionBody]]
 /**
@@ -11354,32 +11354,24 @@ inline def visitLexicalEnvironment(
   * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
   */
 inline def visitNode[T /* <: Node */](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")().asInstanceOf[js.UndefOr[T]]
-/**
-  * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
-  *
-  * @param node The Node to visit.
-  * @param visitor The callback used to visit the Node.
-  * @param test A callback to execute to verify the Node is valid.
-  * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
-  */
-inline def visitNode[T /* <: Node */](node: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def visitNode[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitNode[T /* <: Node */](node: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+inline def visitNode[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 inline def visitNode[T /* <: Node */](
   node: T,
   visitor: Unit,
   test: js.Function1[/* node */ Node, Boolean],
   lift: js.Function1[/* node */ js.Array[Node], T]
-): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def visitNode[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def visitNode[T /* <: Node */](node: T, visitor: Visitor): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[T]
+): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def visitNode[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def visitNode[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 inline def visitNode[T /* <: Node */](
   node: T,
   visitor: Visitor,
   test: js.Function1[/* node */ Node, Boolean],
   lift: js.Function1[/* node */ js.Array[Node], T]
-): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
+): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+inline def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 inline def visitNode[T /* <: Node */](node: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 inline def visitNode[T /* <: Node */](
   node: Unit,
@@ -11398,24 +11390,32 @@ inline def visitNode[T /* <: Node */](
 ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 inline def visitNode[T /* <: Node */](node: Unit, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
 
-inline def visitNode_T_Node_Union[T /* <: Node */](node: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
-inline def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-inline def visitNode_T_Node_Union[T /* <: Node */](
+/**
+  * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
+  *
+  * @param node The Node to visit.
+  * @param visitor The callback used to visit the Node.
+  * @param test A callback to execute to verify the Node is valid.
+  * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
+  */
+inline def visitNode_T_T[T /* <: Node */](node: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitNode_T_T[T /* <: Node */](
   node: T,
   visitor: Unit,
   test: js.Function1[/* node */ Node, Boolean],
   lift: js.Function1[/* node */ js.Array[Node], T]
-): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-inline def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-inline def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-inline def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-inline def visitNode_T_Node_Union[T /* <: Node */](
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitNode_T_T[T /* <: Node */](
   node: T,
   visitor: Visitor,
   test: js.Function1[/* node */ Node, Boolean],
   lift: js.Function1[/* node */ js.Array[Node], T]
-): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-inline def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], lift.asInstanceOf[js.Any])).asInstanceOf[T]
 
 /**
   * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
@@ -11516,46 +11516,46 @@ inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, te
 inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
 inline def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): NodeArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[NodeArray[T]]
 
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T]): js.UndefOr[NodeArray[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T]): js.UndefOr[NodeArray[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](
   nodes: NodeArray[T],
   visitor: Unit,
   test: js.Function1[/* node */ Node, Boolean],
   start: Double,
   count: Double
 ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](
+inline def visitNodes_T_Union[T /* <: Node */](
   nodes: NodeArray[T],
   visitor: Unit,
   test: js.Function1[/* node */ Node, Boolean],
   start: Unit,
   count: Double
 ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](
   nodes: NodeArray[T],
   visitor: Visitor,
   test: js.Function1[/* node */ Node, Boolean],
   start: Double,
   count: Double
 ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](
+inline def visitNodes_T_Union[T /* <: Node */](
   nodes: NodeArray[T],
   visitor: Visitor,
   test: js.Function1[/* node */ Node, Boolean],
   start: Unit,
   count: Double
 ): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
-inline def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
+inline def visitNodes_T_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitNodes")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], test.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[T]]]
 
 inline def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
 inline def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext, nodesVisitor: NodesVisitor): js.UndefOr[NodeArray[ParameterDeclaration]] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitParameterList")(nodes.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], context.asInstanceOf[js.Any], nodesVisitor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeArray[ParameterDeclaration]]]
@@ -11660,6 +11660,19 @@ type ColonToken = PunctuationToken[typings.schematicsAngular.typescriptMod.Synta
 
 type CompilerOptionsValue = js.UndefOr[
 java.lang.String | Double | Boolean | (js.Array[Double | PluginImport | ProjectReference | java.lang.String]) | MapLike[js.Array[java.lang.String]] | Null]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.schematicsAngular.schematicsAngularStrings.Dot
+  - typings.schematicsAngular.schematicsAngularStrings.Quotationmark
+  - java.lang.String
+  - typings.schematicsAngular.schematicsAngularStrings.Graveaccent
+  - typings.schematicsAngular.schematicsAngularStrings.Slash
+  - typings.schematicsAngular.schematicsAngularStrings.`@`
+  - typings.schematicsAngular.schematicsAngularStrings.Lessthansign
+  - typings.schematicsAngular.schematicsAngularStrings.Numbersign
+  - typings.schematicsAngular.schematicsAngularStrings.Space
+*/
+type CompletionsTriggerCharacter = _CompletionsTriggerCharacter | java.lang.String
 
 type ConciseBody = FunctionBody | Expression
 
@@ -11804,6 +11817,20 @@ Unit]
 type ResolvedConfigFileName = java.lang.String
 
 type ShiftOperatorOrHigher = AdditiveOperatorOrHigher | ShiftOperator
+
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - typings.schematicsAngular.schematicsAngularStrings.Comma
+  - typings.schematicsAngular.schematicsAngularStrings.Lessthansign
+*/
+type SignatureHelpRetriggerCharacter = _SignatureHelpRetriggerCharacter | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.schematicsAngular.schematicsAngularStrings.Comma
+  - java.lang.String
+  - typings.schematicsAngular.schematicsAngularStrings.Lessthansign
+*/
+type SignatureHelpTriggerCharacter = _SignatureHelpTriggerCharacter | java.lang.String
 
 type StaticKeyword = ModifierToken[typings.schematicsAngular.typescriptMod.SyntaxKind.StaticKeyword]
 

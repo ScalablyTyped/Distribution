@@ -29,7 +29,7 @@ object mod {
   inline def forAwaitEach[TCollection /* <: AsyncIterable[Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
-      /* value */ ResolvedOf[TCollection], 
+      (/* value */ Any) | (/* value */ ResolvedOf[TCollection]), 
       /* index */ Double, 
       /* collection */ TCollection, 
       Any
@@ -38,48 +38,18 @@ object mod {
   inline def forAwaitEach[TCollection /* <: AsyncIterable[Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
-      /* value */ ResolvedOf[TCollection], 
+      (/* value */ Any) | (/* value */ ResolvedOf[TCollection]), 
       /* index */ Double, 
       /* collection */ TCollection, 
       Any
     ],
-    thisArg: Any
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def forAwaitEach_TCollection_IterableAny[TCollection /* <: js.Iterable[Any] */](
-    collection: TCollection,
-    callbackFn: js.Function3[
-      /* value */ ResolvedOf[TCollection], 
-      /* index */ Double, 
-      /* collection */ TCollection, 
-      Any
-    ]
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def forAwaitEach_TCollection_IterableAny[TCollection /* <: js.Iterable[Any] */](
-    collection: TCollection,
-    callbackFn: js.Function3[
-      /* value */ ResolvedOf[TCollection], 
-      /* index */ Double, 
-      /* collection */ TCollection, 
-      Any
-    ],
-    thisArg: Any
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def forAwaitEach_TCollection_Length[TCollection /* <: Length */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ Any, /* index */ Double, /* collection */ TCollection, Any]
-  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def forAwaitEach_TCollection_Length[TCollection /* <: Length */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ Any, /* index */ Double, /* collection */ TCollection, Any],
     thisArg: Any
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAwaitEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def forEach[TCollection /* <: js.Iterable[Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
-      /* value */ ValueOf[TCollection], 
+      (/* value */ Any) | (/* value */ ValueOf[TCollection]), 
       /* index */ Double, 
       /* collection */ TCollection, 
       Any
@@ -88,21 +58,11 @@ object mod {
   inline def forEach[TCollection /* <: js.Iterable[Any] */](
     collection: TCollection,
     callbackFn: js.Function3[
-      /* value */ ValueOf[TCollection], 
+      (/* value */ Any) | (/* value */ ValueOf[TCollection]), 
       /* index */ Double, 
       /* collection */ TCollection, 
       Any
     ],
-    thisArg: Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def forEach_TCollection_Length[TCollection /* <: Length */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ Any, /* index */ Double, /* collection */ TCollection, Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def forEach_TCollection_Length[TCollection /* <: Length */](
-    collection: TCollection,
-    callbackFn: js.Function3[/* value */ Any, /* index */ Double, /* collection */ TCollection, Any],
     thisArg: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(collection.asInstanceOf[js.Any], callbackFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

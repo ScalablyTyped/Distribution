@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-three/fiber" : "8.7.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-three/fiber" : "8.7.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

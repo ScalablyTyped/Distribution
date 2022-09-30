@@ -1,18 +1,18 @@
 package typings.nodegit
 
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`10`
-import typings.nodegit.nodegitNumbers.`11`
-import typings.nodegit.nodegitNumbers.`12`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`5`
-import typings.nodegit.nodegitNumbers.`6`
-import typings.nodegit.nodegitNumbers.`7`
-import typings.nodegit.nodegitNumbers.`8`
-import typings.nodegit.nodegitNumbers.`9`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`10`
+import typings.nodegit.nodegitInts.`11`
+import typings.nodegit.nodegitInts.`12`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`5`
+import typings.nodegit.nodegitInts.`6`
+import typings.nodegit.nodegitInts.`7`
+import typings.nodegit.nodegitInts.`8`
+import typings.nodegit.nodegitInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,19 +40,19 @@ object libGit2Mod {
     inline def version(major: Double, minor: Double, rev: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("version")(major.asInstanceOf[js.Any], minor.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`5`
-      - typings.nodegit.nodegitNumbers.`6`
-      - typings.nodegit.nodegitNumbers.`7`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`9`
-      - typings.nodegit.nodegitNumbers.`10`
-      - typings.nodegit.nodegitNumbers.`11`
-      - typings.nodegit.nodegitNumbers.`12`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`5`
+      - typings.nodegit.nodegitInts.`6`
+      - typings.nodegit.nodegitInts.`7`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`9`
+      - typings.nodegit.nodegitInts.`10`
+      - typings.nodegit.nodegitInts.`11`
+      - typings.nodegit.nodegitInts.`12`
     */
     trait OPT extends StObject
     object OPT {

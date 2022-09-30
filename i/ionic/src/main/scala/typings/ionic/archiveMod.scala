@@ -4,16 +4,17 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.tar.anon.CreateOptionsFileOptionss
 import typings.tar.anon.ExtractOptionsFileOptions
-import typings.tar.anon.ListOptionsFileOptionssyn
+import typings.tar.anon.Sync
 import typings.tar.mod.CreateOptions
 import typings.tar.mod.ExtractOptions
 import typings.tar.mod.FileOptions
 import typings.tar.mod.HeaderProperties
 import typings.tar.mod.ListOptions
 import typings.tar.mod.PackStream
-import typings.tar.mod.ParseOptions
+import typings.tar.mod.Parse
 import typings.tar.mod.ParseStream
 import typings.tar.mod.ReplaceOptions
+import typings.tar.mod.RequiredFileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,14 +32,6 @@ object archiveMod {
     
     inline def Pack(): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")().asInstanceOf[PackStream]
     inline def Pack(props: HeaderProperties): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")(props.asInstanceOf[js.Any]).asInstanceOf[PackStream]
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("ionic/lib/utils/archive", "tar.ParseCls")
-    @js.native
-    open class ParseCls ()
-      extends typings.tar.mod.ParseCls {
-      def this(opt: ParseOptions) = this()
-    }
     
     @JSImport("ionic/lib/utils/archive", "tar.blockSize")
     @js.native
@@ -195,31 +188,23 @@ object archiveMod {
       inline def uname_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uname")(x.asInstanceOf[js.Any])
     }
     
-    inline def list(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[Writable]
-    inline def list(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def list(options: ListOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def list(): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[Parse]
+    inline def list(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Parse]
+    inline def list(optionsOrFileList: js.Array[String]): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(optionsOrFileList.asInstanceOf[js.Any]).asInstanceOf[Parse]
+    inline def list(optionsOrFileList: js.Array[String], callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(optionsOrFileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parse]
+    inline def list(optionsOrFileList: ListOptions): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(optionsOrFileList.asInstanceOf[js.Any]).asInstanceOf[Parse]
+    inline def list(optionsOrFileList: ListOptions, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(optionsOrFileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parse]
+    inline def list(options: ListOptions & RequiredFileOptions & Sync): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def list(options: ListOptions & RequiredFileOptions & Sync, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def list(options: ListOptions, fileList: js.Array[String]): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Parse]
     inline def list(
-      options: ListOptions & FileOptions,
+      options: ListOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def list(
-      options: ListOptions & FileOptions,
-      fileList: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def list(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def list(
-      options: Unit,
-      fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def list(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def list(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def list(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    ): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parse]
     
-    inline def list_Writable(options: ListOptions & FileOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
-    inline def list_Writable(options: ListOptions & FileOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    inline def list_Promise(options: ListOptions & RequiredFileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def list_Promise(options: ListOptions & RequiredFileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     object modes {
       
@@ -386,31 +371,23 @@ object archiveMod {
       callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    inline def t(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")().asInstanceOf[Writable]
-    inline def t(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def t(options: ListOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def t(): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("t")().asInstanceOf[Parse]
+    inline def t(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(callback.asInstanceOf[js.Any]).asInstanceOf[Parse]
+    inline def t(optionsOrFileList: js.Array[String]): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(optionsOrFileList.asInstanceOf[js.Any]).asInstanceOf[Parse]
+    inline def t(optionsOrFileList: js.Array[String], callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(optionsOrFileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parse]
+    inline def t(optionsOrFileList: ListOptions): Parse = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(optionsOrFileList.asInstanceOf[js.Any]).asInstanceOf[Parse]
+    inline def t(optionsOrFileList: ListOptions, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(optionsOrFileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parse]
+    inline def t(options: ListOptions & RequiredFileOptions & Sync): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def t(options: ListOptions & RequiredFileOptions & Sync, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def t(options: ListOptions, fileList: js.Array[String]): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Parse]
     inline def t(
-      options: ListOptions & FileOptions,
+      options: ListOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def t(
-      options: ListOptions & FileOptions,
-      fileList: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def t(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def t(
-      options: Unit,
-      fileList: js.Array[String],
-      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
-    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def t(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-    inline def t(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def t(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    ): Parse = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parse]
     
-    inline def t_Writable(options: ListOptions & FileOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
-    inline def t_Writable(options: ListOptions & FileOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    inline def t_Promise(options: ListOptions & RequiredFileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def t_Promise(options: ListOptions & RequiredFileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     object types {
       

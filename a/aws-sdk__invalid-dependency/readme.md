@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__invalid-dependency
 
-Typings are for version 3.171.0
+Typings are for version 3.178.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/invalid-dependency/latest.svg)](https://www.npmjs.com/package/@aws-sdk/invalid-dependency) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/invalid-dependency.svg)](https://www.npmjs.com/packag

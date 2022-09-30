@@ -10,14 +10,15 @@ import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.restMod.rest.InteractiveRest
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.HttpConfiguration")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.HttpConfiguration")
 @js.native
-class HttpConfiguration protected () extends Element[IModel] {
+open class HttpConfiguration protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +34,17 @@ class HttpConfiguration protected () extends Element[IModel] {
   def authenticationPassword: String = js.native
   def authenticationPassword_=(newValue: String): Unit = js.native
   
+  /**
+    * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+    *
+    * In version 8.18.0: introduced
+    */
+  def clientCertificate: String = js.native
+  def clientCertificate_=(newValue: String): Unit = js.native
+  
   def containerAsConsumedODataService: ConsumedODataService = js.native
+  
+  def containerAsInteractiveRest: InteractiveRest = js.native
   
   def containerAsRestCallAction: RestCallAction = js.native
   
@@ -49,6 +60,7 @@ class HttpConfiguration protected () extends Element[IModel] {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def customLocationModel: Expression = js.native
@@ -91,6 +103,7 @@ class HttpConfiguration protected () extends Element[IModel] {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def password: Expression = js.native
@@ -104,6 +117,7 @@ class HttpConfiguration protected () extends Element[IModel] {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def username: Expression = js.native
@@ -111,7 +125,7 @@ class HttpConfiguration protected () extends Element[IModel] {
 }
 object HttpConfiguration {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.HttpConfiguration")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.HttpConfiguration")
   @js.native
   val ^ : js.Any = js.native
   
@@ -148,6 +162,17 @@ object HttpConfiguration {
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
     * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
+    * of the parent rest.InteractiveRest element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.18.0 and higher
+    */
+  /* static member */
+  inline def createInInteractiveRestUnderHttpConfiguration(container: InteractiveRest): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
+  
+  /**
+    * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
+    * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
     * of the parent RestCallAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -165,13 +190,13 @@ object HttpConfiguration {
   inline def createInWebServiceCallActionUnderHttpConfiguration(container: WebServiceCallAction): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.HttpConfiguration.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.HttpConfiguration.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.HttpConfiguration.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.HttpConfiguration.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

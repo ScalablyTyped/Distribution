@@ -23,7 +23,7 @@ trait WindowsMotionController
     * Moves the axis on the controller mesh based on its current state
     * @param axis the index of the axis
     * @param axisValue the value of the axis which determines the meshes new position
-    * @hidden
+    * @internal
     */
   /* protected */ def _lerpAxisTransform(axis: Double, axisValue: Double): Unit = js.native
   

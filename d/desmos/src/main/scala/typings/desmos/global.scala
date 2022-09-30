@@ -6,11 +6,11 @@ import typings.desmos.Desmos.GraphConfiguration
 import typings.desmos.Desmos.GraphSettings
 import typings.desmos.anon.AdditionalFunctions
 import typings.desmos.anon.Autosize
-import typings.desmos.desmosNumbers.`12`
-import typings.desmos.desmosNumbers.`16`
-import typings.desmos.desmosNumbers.`20`
-import typings.desmos.desmosNumbers.`24`
-import typings.desmos.desmosNumbers.`9`
+import typings.desmos.desmosInts.`12`
+import typings.desmos.desmosInts.`16`
+import typings.desmos.desmosInts.`20`
+import typings.desmos.desmosInts.`24`
+import typings.desmos.desmosInts.`9`
 import typings.desmos.desmosStrings.ABOVE
 import typings.desmos.desmosStrings.AUTO
 import typings.desmos.desmosStrings.BELOW

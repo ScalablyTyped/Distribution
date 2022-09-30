@@ -10,7 +10,7 @@ object localMod {
   
   @JSImport("protractor/built/driverProviders/local", "Local")
   @js.native
-  class Local protected () extends DriverProvider {
+  open class Local protected () extends DriverProvider {
     def this(config: Config) = this()
     
     /**
@@ -19,6 +19,6 @@ object localMod {
       */
     def addDefaultBinaryLocs_(): Unit = js.native
     
-    var server_ : js.Any = js.native
+    var server_ : Any = js.native
   }
 }

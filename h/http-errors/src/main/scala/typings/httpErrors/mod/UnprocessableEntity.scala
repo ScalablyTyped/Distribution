@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class UnprocessableEntity ()
   extends StObject
-     with HttpError[typings.httpErrors.httpErrorsNumbers.`422`] {
+     with HttpError[typings.httpErrors.httpErrorsInts.`422`] {
   def this(msg: String) = this()
   
   /* CompleteClass */
@@ -24,8 +24,8 @@ open class UnprocessableEntity ()
   var name: String = js.native
   
   /* CompleteClass */
-  var status: typings.httpErrors.httpErrorsNumbers.`422` = js.native
+  var status: typings.httpErrors.httpErrorsInts.`422` = js.native
   
   /* CompleteClass */
-  var statusCode: typings.httpErrors.httpErrorsNumbers.`422` = js.native
+  var statusCode: typings.httpErrors.httpErrorsInts.`422` = js.native
 }

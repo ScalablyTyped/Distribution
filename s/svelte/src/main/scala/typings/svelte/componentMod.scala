@@ -6,8 +6,8 @@ import typings.std.Map
 import typings.std.Record
 import typings.std.ShadowRoot
 import typings.svelte.svelteBooleans.`false`
-import typings.svelte.svelteNumbers.`0`
-import typings.svelte.svelteNumbers.`1`
+import typings.svelte.svelteInts.`0`
+import typings.svelte.svelteInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

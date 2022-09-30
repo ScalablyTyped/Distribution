@@ -1,6 +1,7 @@
 package typings.basicauthMiddleware
 
 import typings.express.mod.RequestHandler
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -100,7 +101,7 @@ object mod {
     Unit
   ]
   
-  type checkFunctionPromise = js.Function2[/* username */ String, /* password */ String, js.Thenable[Boolean]]
+  type checkFunctionPromise = js.Function2[/* username */ String, /* password */ String, PromiseLike[Boolean]]
   
   type checkFunctionSync = js.Function2[/* username */ String, /* password */ String, Boolean]
 }

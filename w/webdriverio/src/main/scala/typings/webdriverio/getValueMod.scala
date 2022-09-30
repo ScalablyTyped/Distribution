@@ -10,5 +10,5 @@ object getValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[String]]
 }

@@ -3,9 +3,6 @@ package typings.dayjs
 import org.scalablytyped.runtime.Instantiable1
 import typings.dayjs.anon.D
 import typings.dayjs.anon.PartialILocale
-import typings.dayjs.dayjsStrings.LeftparenthesisRightparenthesis
-import typings.dayjs.dayjsStrings.`Leftparenthesis]`
-import typings.dayjs.dayjsStrings.`[Rightparenthesis`
 import typings.dayjs.dayjsStrings.`[]`
 import typings.dayjs.dayjsStrings.d_
 import typings.dayjs.dayjsStrings.long
@@ -276,25 +273,10 @@ object mod {
     def isBefore(date: ConfigType, unit: ISOUnitType): Boolean = js.native
     
     def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-    def isBetween(
-      a: ConfigType,
-      b: ConfigType,
-      c: Null,
-      d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
-    ): Boolean = js.native
-    def isBetween(
-      a: ConfigType,
-      b: ConfigType,
-      c: Unit,
-      d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
-    ): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String | `[]`): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String | `[]`): Boolean = js.native
     def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
-    def isBetween(
-      a: ConfigType,
-      b: ConfigType,
-      c: OpUnitType,
-      d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
-    ): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String | `[]`): Boolean = js.native
     
     def isLeapYear(): Boolean = js.native
     

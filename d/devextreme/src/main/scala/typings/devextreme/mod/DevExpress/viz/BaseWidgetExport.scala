@@ -2,6 +2,7 @@ package typings.devextreme.mod.DevExpress.viz
 
 import typings.devextreme.mod.DevExpress.common.ExportFormat
 import typings.std.HTMLCanvasElement
+import typings.std.PromiseLike
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,7 +50,7 @@ trait BaseWidgetExport extends StObject {
     * A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, markerTemplate).
     */
   var svgToCanvas: js.UndefOr[
-    js.Function2[/* svg */ SVGElement, /* canvas */ HTMLCanvasElement, js.Thenable[Unit]]
+    js.Function2[/* svg */ SVGElement, /* canvas */ HTMLCanvasElement, PromiseLike[Unit]]
   ] = js.undefined
 }
 object BaseWidgetExport {
@@ -91,7 +92,7 @@ object BaseWidgetExport {
     
     inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
-    inline def setSvgToCanvas(value: (/* svg */ SVGElement, /* canvas */ HTMLCanvasElement) => js.Thenable[Unit]): Self = StObject.set(x, "svgToCanvas", js.Any.fromFunction2(value))
+    inline def setSvgToCanvas(value: (/* svg */ SVGElement, /* canvas */ HTMLCanvasElement) => PromiseLike[Unit]): Self = StObject.set(x, "svgToCanvas", js.Any.fromFunction2(value))
     
     inline def setSvgToCanvasUndefined: Self = StObject.set(x, "svgToCanvas", js.undefined)
   }

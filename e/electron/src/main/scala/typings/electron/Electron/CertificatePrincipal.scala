@@ -61,11 +61,11 @@ object CertificatePrincipal {
     
     inline def setOrganizationUnits(value: js.Array[String]): Self = StObject.set(x, "organizationUnits", value.asInstanceOf[js.Any])
     
-    inline def setOrganizationUnitsVarargs(value: String*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
+    inline def setOrganizationUnitsVarargs(value: String*): Self = StObject.set(x, "organizationUnits", js.Array(value*))
     
     inline def setOrganizations(value: js.Array[String]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    inline def setOrganizationsVarargs(value: String*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+    inline def setOrganizationsVarargs(value: String*): Self = StObject.set(x, "organizations", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

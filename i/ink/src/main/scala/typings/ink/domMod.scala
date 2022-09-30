@@ -39,7 +39,7 @@ object domMod {
   trait DOMElement
     extends StObject
        with InkNode
-       with DOMNode[js.Any] {
+       with DOMNode[Any] {
     
     var attributes: StringDictionary[DOMNodeAttribute]
     
@@ -55,7 +55,7 @@ object domMod {
     
     var onRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var staticNode: js.UndefOr[js.Any] = js.undefined
+    var staticNode: js.UndefOr[Any] = js.undefined
   }
   object DOMElement {
     
@@ -75,7 +75,7 @@ object domMod {
       
       inline def setChildNodes(value: js.Array[DOMNode[NodeName]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
-      inline def setChildNodesVarargs(value: DOMNode[NodeName]*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+      inline def setChildNodesVarargs(value: DOMNode[NodeName]*): Self = StObject.set(x, "childNodes", js.Array(value*))
       
       inline def setInternal_transform(value: /* s */ String => String): Self = StObject.set(x, "internal_transform", js.Any.fromFunction1(value))
       
@@ -95,7 +95,7 @@ object domMod {
       
       inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
-      inline def setStaticNode(value: js.Any): Self = StObject.set(x, "staticNode", value.asInstanceOf[js.Any])
+      inline def setStaticNode(value: Any): Self = StObject.set(x, "staticNode", value.asInstanceOf[js.Any])
       
       inline def setStaticNodeUndefined: Self = StObject.set(x, "staticNode", js.undefined)
     }
@@ -186,7 +186,7 @@ object domMod {
   trait TextNode
     extends StObject
        with InkNode
-       with DOMNode[js.Any] {
+       with DOMNode[Any] {
     
     var nodeName: TextName
     

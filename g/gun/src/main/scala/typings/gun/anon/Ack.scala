@@ -1,6 +1,6 @@
 package typings.gun.anon
 
-import typings.gun.gunNumbers.`2`
+import typings.gun.gunInts.`2`
 import typings.gun.mod.Gun.CryptoKeyPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,9 +1,9 @@
 package typings.fflate.mod
 
-import typings.fflate.fflateNumbers.`0`
-import typings.fflate.fflateNumbers.`1`
-import typings.fflate.fflateNumbers.`2`
-import typings.fflate.fflateNumbers.`3`
+import typings.fflate.fflateInts.`0`
+import typings.fflate.fflateInts.`1`
+import typings.fflate.fflateInts.`2`
+import typings.fflate.fflateInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

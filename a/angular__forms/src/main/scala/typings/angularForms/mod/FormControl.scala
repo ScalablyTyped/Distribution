@@ -2,73 +2,22 @@ package typings.angularForms.mod
 
 import typings.angularForms.anon.EmitEvent
 import typings.angularForms.anon.EmitModelToViewChange
+import typings.angularForms.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "FormControl")
 @js.native
-/**
-  * Creates a new `FormControl` instance.
-  *
-  * @param formState Initializes the control with an initial value,
-  * or an object that defines the initial value and disabled state.
-  *
-  * @param validatorOrOpts A synchronous validator function, or an array of
-  * such functions, or an `AbstractControlOptions` object that contains validation functions
-  * and a validation trigger.
-  *
-  * @param asyncValidator A single async validator or array of async validator functions
-  *
-  */
-class FormControl () extends AbstractControl {
-  def this(formState: js.Any) = this()
-  def this(formState: js.Any, validatorOrOpts: js.Array[ValidatorFn]) = this()
-  def this(formState: js.Any, validatorOrOpts: AbstractControlOptions) = this()
-  def this(formState: js.Any, validatorOrOpts: ValidatorFn) = this()
-  def this(formState: Unit, validatorOrOpts: js.Array[ValidatorFn]) = this()
-  def this(formState: Unit, validatorOrOpts: AbstractControlOptions) = this()
-  def this(formState: Unit, validatorOrOpts: ValidatorFn) = this()
-  def this(
-    formState: js.Any,
-    validatorOrOpts: js.Array[ValidatorFn],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(formState: js.Any, validatorOrOpts: js.Array[ValidatorFn], asyncValidator: AsyncValidatorFn) = this()
-  def this(formState: js.Any, validatorOrOpts: Null, asyncValidator: js.Array[AsyncValidatorFn]) = this()
-  def this(formState: js.Any, validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
-  def this(formState: js.Any, validatorOrOpts: Unit, asyncValidator: js.Array[AsyncValidatorFn]) = this()
-  def this(formState: js.Any, validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn) = this()
-  def this(
-    formState: js.Any,
-    validatorOrOpts: AbstractControlOptions,
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(formState: js.Any, validatorOrOpts: AbstractControlOptions, asyncValidator: AsyncValidatorFn) = this()
-  def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]) = this()
-  def this(formState: js.Any, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
-  def this(
-    formState: Unit,
-    validatorOrOpts: js.Array[ValidatorFn],
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(formState: Unit, validatorOrOpts: js.Array[ValidatorFn], asyncValidator: AsyncValidatorFn) = this()
-  def this(formState: Unit, validatorOrOpts: Null, asyncValidator: js.Array[AsyncValidatorFn]) = this()
-  def this(formState: Unit, validatorOrOpts: Null, asyncValidator: AsyncValidatorFn) = this()
-  def this(formState: Unit, validatorOrOpts: Unit, asyncValidator: js.Array[AsyncValidatorFn]) = this()
-  def this(formState: Unit, validatorOrOpts: Unit, asyncValidator: AsyncValidatorFn) = this()
-  def this(
-    formState: Unit,
-    validatorOrOpts: AbstractControlOptions,
-    asyncValidator: js.Array[AsyncValidatorFn]
-  ) = this()
-  def this(formState: Unit, validatorOrOpts: AbstractControlOptions, asyncValidator: AsyncValidatorFn) = this()
-  def this(formState: Unit, validatorOrOpts: ValidatorFn, asyncValidator: js.Array[AsyncValidatorFn]) = this()
-  def this(formState: Unit, validatorOrOpts: ValidatorFn, asyncValidator: AsyncValidatorFn) = this()
+trait FormControl[TValue] extends AbstractControl[TValue, TValue] {
   
-  /* private */ var _applyFormState: js.Any = js.native
+  /**
+    * The default value of this FormControl, used whenever the control is reset without an explicit
+    * value. See {@link FormControlOptions#nonNullable} for more information on configuring
+    * a default value.
+    */
+  val defaultValue: TValue = js.native
   
-  def patchValue(value: js.Any, options: EmitModelToViewChange): Unit = js.native
+  def patchValue(value: TValue, options: EmitModelToViewChange): Unit = js.native
   
   /**
     * Register a listener for change events.
@@ -84,8 +33,14 @@ class FormControl () extends AbstractControl {
     */
   def registerOnDisabledChange(fn: js.Function1[/* isDisabled */ Boolean, Unit]): Unit = js.native
   
-  def reset(formState: js.Any, options: EmitEvent): Unit = js.native
+  def reset(formState: TValue, options: EmitEvent): Unit = js.native
   def reset(formState: Unit, options: EmitEvent): Unit = js.native
+  def reset(formState: FormControlState[TValue]): Unit = js.native
+  def reset(formState: FormControlState[TValue], options: EmitEvent): Unit = js.native
   
-  def setValue(value: js.Any, options: EmitModelToViewChange): Unit = js.native
+  def setValue(value: TValue, options: EmitModelToViewChange): Unit = js.native
+}
+object FormControl {
+  
+  inline def apply: ɵFormControlCtor = ^.asInstanceOf[js.Dynamic].selectDynamic("FormControl").asInstanceOf[ɵFormControlCtor]
 }

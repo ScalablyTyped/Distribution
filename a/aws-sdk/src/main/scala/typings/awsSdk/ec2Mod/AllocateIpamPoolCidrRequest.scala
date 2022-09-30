@@ -22,7 +22,7 @@ trait AllocateIpamPoolCidrRequest extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * Exclude a particular CIDR range from being returned by the pool.
+    * Exclude a particular CIDR range from being returned by the pool. Disallowed CIDRs are only allowed if using netmask length for allocation.
     */
   var DisallowedCidrs: js.UndefOr[IpamPoolAllocationDisallowedCidrs] = js.undefined
   

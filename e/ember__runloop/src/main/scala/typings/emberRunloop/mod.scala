@@ -19,7 +19,7 @@ object mod {
   inline def bind[T, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethod<T> */ Any */](target: T, method: M, args: Any*): js.Function1[
     /* repeated */ Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodReturn<T, M> */ Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")((List(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")((scala.List(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
     /* repeated */ Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EmberMethodReturn<T, M> */ Any
   ]]

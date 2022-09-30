@@ -1,7 +1,7 @@
 package typings.antvComponent
 
-import typings.antvComponent.antvComponentNumbers.`1`
-import typings.antvComponent.antvComponentNumbers.`2`
+import typings.antvComponent.antvComponentInts.`1`
+import typings.antvComponent.antvComponentInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

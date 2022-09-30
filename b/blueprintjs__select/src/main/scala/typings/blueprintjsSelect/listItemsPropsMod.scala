@@ -58,11 +58,11 @@ object listItemsPropsMod {
     
     /**
       * If provided, allows new items to be created using the current query
-      * string. This is invoked when user interaction causes a new item to be
+      * string. This is invoked when user interaction causes one or many items to be
       * created, either by pressing the `Enter` key or by clicking on the "Create
-      * Item" option. It transforms a query string into an item type.
+      * Item" option. It transforms a query string into one or many items type.
       */
-    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, T]] = js.native
+    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, T | js.Array[T]]] = js.native
     
     /**
       * Determines the position of the `createNewItem` within the list: first or

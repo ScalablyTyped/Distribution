@@ -78,5 +78,5 @@ object pipeMod {
     fn8: UnaryFunction[G, H],
     fn9: UnaryFunction[H, I],
     fns: (UnaryFunction[Any, Any])*
-  ): UnaryFunction[T, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")((List(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any])).`++`(fns.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[UnaryFunction[T, Any]]
+  ): UnaryFunction[T, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")((scala.List(fn1.asInstanceOf[js.Any], fn2.asInstanceOf[js.Any], fn3.asInstanceOf[js.Any], fn4.asInstanceOf[js.Any], fn5.asInstanceOf[js.Any], fn6.asInstanceOf[js.Any], fn7.asInstanceOf[js.Any], fn8.asInstanceOf[js.Any], fn9.asInstanceOf[js.Any])).`++`(fns.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[UnaryFunction[T, Any]]
 }

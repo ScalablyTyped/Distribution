@@ -6,16 +6,16 @@ import typings.nodegit.commitMod.Commit
 import typings.nodegit.mergeFileInputMod.MergeFileInput
 import typings.nodegit.mergeOptionsMod.MergeOptions
 import typings.nodegit.mod.Index
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`128`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`32`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`64`
-import typings.nodegit.nodegitNumbers.`8`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`128`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`32`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`64`
+import typings.nodegit.nodegitInts.`8`
 import typings.nodegit.oidArrayMod.Oidarray
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
@@ -61,11 +61,11 @@ object mergeMod {
     inline def trees(repo: Repository, ancestorTree: Tree, ourTree: Tree, theirTree: Tree, opts: MergeOptions): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("trees")(repo.asInstanceOf[js.Any], ancestorTree.asInstanceOf[js.Any], ourTree.asInstanceOf[js.Any], theirTree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
     */
     trait ANALYSIS extends StObject
     object ANALYSIS {
@@ -82,10 +82,10 @@ object mergeMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
     */
     trait FILE_FAVOR extends StObject
     object FILE_FAVOR {
@@ -100,15 +100,15 @@ object mergeMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`32`
-      - typings.nodegit.nodegitNumbers.`64`
-      - typings.nodegit.nodegitNumbers.`128`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`32`
+      - typings.nodegit.nodegitInts.`64`
+      - typings.nodegit.nodegitInts.`128`
     */
     trait FILE_FLAGS extends StObject
     object FILE_FLAGS {
@@ -133,9 +133,9 @@ object mergeMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
     */
     trait PREFERENCE extends StObject
     object PREFERENCE {

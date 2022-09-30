@@ -7,9 +7,9 @@ import typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OSLogLevel
 import typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OSNotificationPayload
 import typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OSPermissionState
 import typings.onesignalCordovaPlugin.OneSignalCordovaPlugin.OSSubscriptionState
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`0`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`1`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

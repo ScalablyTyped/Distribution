@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Class")
 @js.native
-class Class () extends StObject
+open class Class () extends StObject
 /* static members */
 object Class {
   
@@ -16,12 +16,14 @@ object Class {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addInitHook(initHookFn: js.Function0[Unit]): js.Any & TypeofClass = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHook")(initHookFn.asInstanceOf[js.Any]).asInstanceOf[js.Any & TypeofClass]
-  inline def addInitHook(methodName: String, args: js.Any*): js.Any & TypeofClass = (^.asInstanceOf[js.Dynamic].applyDynamic("addInitHook")(methodName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any & TypeofClass]
+  inline def addInitHook(initHookFn: js.Function0[Unit]): Any & TypeofClass = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHook")(initHookFn.asInstanceOf[js.Any]).asInstanceOf[Any & TypeofClass]
+  inline def addInitHook(methodName: String, args: Any*): Any & TypeofClass = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHook")(scala.List(methodName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any & TypeofClass]
   
-  inline def extend(props: js.Any): newargsanyanyextendpropsa = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[newargsanyanyextendpropsa]
+  inline def callInitHooks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callInitHooks")().asInstanceOf[Unit]
   
-  inline def include(props: js.Any): js.Any & TypeofClass = ^.asInstanceOf[js.Dynamic].applyDynamic("include")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any & TypeofClass]
+  inline def extend(props: Any): newargsanyanyextendpropsa = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[newargsanyanyextendpropsa]
   
-  inline def mergeOptions(props: js.Any): js.Any & TypeofClass = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any & TypeofClass]
+  inline def include(props: Any): Any & TypeofClass = ^.asInstanceOf[js.Dynamic].applyDynamic("include")(props.asInstanceOf[js.Any]).asInstanceOf[Any & TypeofClass]
+  
+  inline def mergeOptions(props: Any): Any & TypeofClass = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(props.asInstanceOf[js.Any]).asInstanceOf[Any & TypeofClass]
 }

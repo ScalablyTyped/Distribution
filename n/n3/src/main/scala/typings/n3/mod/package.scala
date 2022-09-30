@@ -2,8 +2,6 @@ package typings.n3.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.n3.mod.^
-import typings.n3.n3Strings.DollarLeftcurlybracketBaseFormatVariantRightcurlybracketDollarLeftcurlybracketStarRightcurlybracket
-import typings.n3.n3Strings.DollarLeftcurlybracketMimeTypeRightcurlybracketSlashDollarLeftcurlybracketMimeSubtypeRightcurlybracket
 import typings.std.Lowercase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,9 +19,9 @@ type BaseFormatVariant = BaseFormat | Lowercase[BaseFormat]
 
 type ErrorCallback = js.Function2[/* err */ js.Error, /* result */ Any, Unit]
 
-type MimeFormat = MimeSubtype | DollarLeftcurlybracketMimeTypeRightcurlybracketSlashDollarLeftcurlybracketMimeSubtypeRightcurlybracket
+type MimeFormat = MimeSubtype | (/* template literal string: ${MimeType}/${MimeSubtype} */ String)
 
-type MimeSubtype = BaseFormatVariant | DollarLeftcurlybracketBaseFormatVariantRightcurlybracketDollarLeftcurlybracketStarRightcurlybracket
+type MimeSubtype = BaseFormatVariant | (/* template literal string: ${BaseFormatVariant}${Star} */ String)
 
 type OTerm = typings.rdfjsTypes.dataModelMod.Term | String | Null
 

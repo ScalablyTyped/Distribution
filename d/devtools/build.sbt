@@ -1,18 +1,22 @@
 organization := "org.scalablytyped"
 name := "devtools"
-version := "6.9.0-d5d4a0"
-scalaVersion := "3.0.1"
+version := "7.25.0-e7fa7e"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "devtools-protocol" % "0.0.818844-f06cd7",
-  "org.scalablytyped" %%% "loglevel" % "1.7.0-18e3de",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "puppeteer-core" % "5.5.0-c95f2d",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "wdio__logger" % "6.8.0-d9cbeb",
-  "org.scalablytyped" %%% "wdio__protocols" % "6.8.0-ffb7d8",
-  "org.scalablytyped" %%% "ws" % "7.4-dt-20201109Z-9be819")
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-96a1cd",
+  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1051614-474004",
+  "org.scalablytyped" %%% "loglevel" % "1.8.0-cbcc55",
+  "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-0be45f",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "puppeteer-core" % "18.0.5-66a42c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "typescript" % "4.8.4-6579b4",
+  "org.scalablytyped" %%% "wdio__logger" % "7.19.0-2248ac",
+  "org.scalablytyped" %%% "wdio__protocols" % "7.22.0-e80fb9",
+  "org.scalablytyped" %%% "wdio__types" % "7.25.0-f94042",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-142b86")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

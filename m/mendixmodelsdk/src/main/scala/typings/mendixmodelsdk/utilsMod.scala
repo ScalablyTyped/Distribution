@@ -9,7 +9,7 @@ object utilsMod {
   
   object utils {
     
-    @JSImport("mendixmodelsdk/dist/sdk/utils", "utils")
+    @JSImport("mendixmodelsdk/src/sdk/utils", "utils")
     @js.native
     val ^ : js.Any = js.native
     
@@ -19,7 +19,7 @@ object utilsMod {
     /**
       * Combines the given `parts` and returns them as an URL, avoiding duplicate slashes.
       */
-    inline def combineUrl(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("combineUrl")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def combineUrl(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("combineUrl")(parts.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
     
     /**
       * Flattens an array of arrays of items of type `T`, returning a single array
@@ -29,7 +29,7 @@ object utilsMod {
     
     inline def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
     
-    inline def isObject(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObject(data: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Generates a random UUID to set the ID of an element or unit to.
@@ -39,7 +39,7 @@ object utilsMod {
     
     inline def removeFromArray[T](list: js.Array[T], item: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFromArray")(list.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def shallowEquals(first: js.Array[js.Any], second: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEquals")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def shallowEquals(first: js.Array[Any], second: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEquals")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     type IMap[T] = StringDictionary[T]
   }

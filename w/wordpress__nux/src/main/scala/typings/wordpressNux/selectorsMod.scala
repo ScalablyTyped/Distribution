@@ -52,7 +52,7 @@ object selectorsMod {
       
       inline def setTipIds(value: js.Array[String]): Self = StObject.set(x, "tipIds", value.asInstanceOf[js.Any])
       
-      inline def setTipIdsVarargs(value: String*): Self = StObject.set(x, "tipIds", js.Array(value :_*))
+      inline def setTipIdsVarargs(value: String*): Self = StObject.set(x, "tipIds", js.Array(value*))
     }
   }
 }

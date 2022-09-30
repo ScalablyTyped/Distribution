@@ -2,6 +2,7 @@ package typings.wordpressComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
+import typings.react.mod.ReactNode
 import typings.wordpressComponents.rowMod.PanelRow.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,6 +26,8 @@ object rowMod {
     
     trait Props extends StObject {
       
+      var children: js.UndefOr[ReactNode] = js.undefined
+      
       /**
         * The class that will be added with `components-panel__row`. to the
         * classes of the wrapper div. If no `className` is passed only
@@ -40,6 +43,10 @@ object rowMod {
       }
       
       extension [Self <: Props](x: Self) {
+        
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Settings **/
 trait Settings_
   extends StObject
-     with /* id */ StringDictionary[js.Any] {
+     with /* id */ StringDictionary[Any] {
   
-  var public: StringDictionary[js.Any]
+  var public: StringDictionary[Any]
 }
 object Settings_ {
   
-  inline def apply(public: StringDictionary[js.Any]): Settings_ = {
+  inline def apply(public: StringDictionary[Any]): Settings_ = {
     val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings_]
   }
   
   extension [Self <: Settings_](x: Self) {
     
-    inline def setPublic(value: StringDictionary[js.Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: StringDictionary[Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
   }
 }

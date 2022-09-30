@@ -1,7 +1,7 @@
 
 # Scala.js typings for serialize-error
 
-Typings are for version 7.0.1
+Typings are for version 11.0.0
 
 ## Library description:
 Serialize/deserialize an error into a plain object
@@ -9,16 +9,13 @@ Serialize/deserialize an error into a plain object
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | serialize-error |
-| Keywords           | error, serialize, stringify, object, convert, process, send, deserialize |
-| # releases         | 7 |
-| # dependents       | 420 |
-| # downloads        | 100925931 |
-| # stars            | 10 |
+| Keywords           | error, serialize, stringify, object, convert, process, send, cause, deserialize |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9090134333333332E7 |
+| # stars            | 398.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/serialize-error#readme)
-- [Bugs](https://github.com/sindresorhus/serialize-error/issues)
-- [Repository](https://github.com/sindresorhus/serialize-error)
 - [Npm](https://www.npmjs.com/package/serialize-error)
     
 

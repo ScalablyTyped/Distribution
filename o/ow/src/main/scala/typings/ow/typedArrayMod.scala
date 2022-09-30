@@ -2,16 +2,16 @@ package typings.ow
 
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
-import typings.typeFest.basicMod.TypedArray
+import typings.typeFest.typedArrayMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typedArrayMod {
   
-  @JSImport("ow/dist/source/predicates/typed-array", "TypedArrayPredicate")
+  @JSImport("ow/dist/predicates/typed-array", "TypedArrayPredicate")
   @js.native
-  class TypedArrayPredicate[T /* <: TypedArray */] protected () extends Predicate[T] {
+  open class TypedArrayPredicate[T /* <: TypedArray */] protected () extends Predicate[T] {
     def this(`type`: String) = this()
     def this(`type`: String, options: PredicateOptions) = this()
     

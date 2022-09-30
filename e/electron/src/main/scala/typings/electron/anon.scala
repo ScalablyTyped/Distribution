@@ -1,92 +1,97 @@
 package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.electron.Electron.Accelerator
-import typings.electron.Electron.App
-import typings.electron.Electron.AutoUpdater
 import typings.electron.Electron.BrowserView
-import typings.electron.Electron.BrowserViewConstructorOptions
 import typings.electron.Electron.BrowserWindow
 import typings.electron.Electron.BrowserWindowConstructorOptions
-import typings.electron.Electron.BrowserWindowProxy
-import typings.electron.Electron.ClientRequest
-import typings.electron.Electron.ClientRequestConstructorOptions
-import typings.electron.Electron.Clipboard
-import typings.electron.Electron.CommandLine
-import typings.electron.Electron.Common.NativeImage_
-import typings.electron.Electron.ContentTracing
-import typings.electron.Electron.ContextBridge
-import typings.electron.Electron.Cookies
-import typings.electron.Electron.CrashReporter
+import typings.electron.Electron.Common.Clipboard
+import typings.electron.Electron.Common.CrashReporter
+import typings.electron.Electron.Common.Shell
 import typings.electron.Electron.CreateFromBitmapOptions
 import typings.electron.Electron.CreateFromBufferOptions
-import typings.electron.Electron.Debugger
-import typings.electron.Electron.DesktopCapturer
-import typings.electron.Electron.Dialog
-import typings.electron.Electron.Dock
-import typings.electron.Electron.DownloadItem
-import typings.electron.Electron.ExtensionInfo
+import typings.electron.Electron.CrossProcessExports.App
+import typings.electron.Electron.CrossProcessExports.AutoUpdater
+import typings.electron.Electron.CrossProcessExports.ContentTracing
+import typings.electron.Electron.CrossProcessExports.ContextBridge
+import typings.electron.Electron.CrossProcessExports.DesktopCapturer
+import typings.electron.Electron.CrossProcessExports.Dialog
+import typings.electron.Electron.CrossProcessExports.GlobalShortcut
+import typings.electron.Electron.CrossProcessExports.InAppPurchase
+import typings.electron.Electron.CrossProcessExports.IpcMain
+import typings.electron.Electron.CrossProcessExports.IpcRenderer
+import typings.electron.Electron.CrossProcessExports.Menu
+import typings.electron.Electron.CrossProcessExports.MenuItem
+import typings.electron.Electron.CrossProcessExports.MessageChannelMain
+import typings.electron.Electron.CrossProcessExports.NativeTheme
+import typings.electron.Electron.CrossProcessExports.Net
+import typings.electron.Electron.CrossProcessExports.NetLog
+import typings.electron.Electron.CrossProcessExports.Notification
+import typings.electron.Electron.CrossProcessExports.PowerMonitor
+import typings.electron.Electron.CrossProcessExports.PowerSaveBlocker
+import typings.electron.Electron.CrossProcessExports.Protocol
+import typings.electron.Electron.CrossProcessExports.PushNotifications
+import typings.electron.Electron.CrossProcessExports.SafeStorage
+import typings.electron.Electron.CrossProcessExports.Screen
+import typings.electron.Electron.CrossProcessExports.ShareMenu
+import typings.electron.Electron.CrossProcessExports.SystemPreferences
+import typings.electron.Electron.CrossProcessExports.TouchBar
+import typings.electron.Electron.CrossProcessExports.Tray
+import typings.electron.Electron.CrossProcessExports.WebFrame
 import typings.electron.Electron.FromPartitionOptions
-import typings.electron.Electron.GlobalShortcut
-import typings.electron.Electron.InAppPurchase
-import typings.electron.Electron.IncomingMessage
-import typings.electron.Electron.IpcMain
-import typings.electron.Electron.IpcRenderer
-import typings.electron.Electron.Menu
-import typings.electron.Electron.MenuItem
 import typings.electron.Electron.MenuItemConstructorOptions
-import typings.electron.Electron.MessageChannelMain
-import typings.electron.Electron.MessagePortMain
-import typings.electron.Electron.NativeTheme
-import typings.electron.Electron.Net
-import typings.electron.Electron.NetLog
-import typings.electron.Electron.Notification
-import typings.electron.Electron.NotificationConstructorOptions
-import typings.electron.Electron.PowerMonitor
-import typings.electron.Electron.PowerSaveBlocker
-import typings.electron.Electron.Protocol
-import typings.electron.Electron.Remote
-import typings.electron.Electron.Screen
-import typings.electron.Electron.ServiceWorkers
+import typings.electron.Electron.NativeImage_
 import typings.electron.Electron.Session_
-import typings.electron.Electron.Shell
 import typings.electron.Electron.Size
-import typings.electron.Electron.SystemPreferences
-import typings.electron.Electron.TouchBar
-import typings.electron.Electron.TouchBarButton
-import typings.electron.Electron.TouchBarButtonConstructorOptions
-import typings.electron.Electron.TouchBarColorPicker
-import typings.electron.Electron.TouchBarColorPickerConstructorOptions
-import typings.electron.Electron.TouchBarConstructorOptions
-import typings.electron.Electron.TouchBarGroup
-import typings.electron.Electron.TouchBarGroupConstructorOptions
-import typings.electron.Electron.TouchBarLabel
-import typings.electron.Electron.TouchBarLabelConstructorOptions
-import typings.electron.Electron.TouchBarOtherItemsProxy
-import typings.electron.Electron.TouchBarPopover
-import typings.electron.Electron.TouchBarPopoverConstructorOptions
-import typings.electron.Electron.TouchBarScrubber
-import typings.electron.Electron.TouchBarScrubberConstructorOptions
-import typings.electron.Electron.TouchBarSegmentedControl
-import typings.electron.Electron.TouchBarSegmentedControlConstructorOptions
-import typings.electron.Electron.TouchBarSlider
-import typings.electron.Electron.TouchBarSliderConstructorOptions
-import typings.electron.Electron.TouchBarSpacer
-import typings.electron.Electron.TouchBarSpacerConstructorOptions
-import typings.electron.Electron.Tray
 import typings.electron.Electron.WebContents_
-import typings.electron.Electron.WebFrame
-import typings.electron.Electron.WebRequest
-import typings.electron.Electron.WebviewTag
-import typings.node.Buffer
-import typings.std.Record
+import typings.electron.Electron.WebFrameMain_
+import typings.electron.electronStrings.allow
+import typings.electron.electronStrings.deny
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Action extends StObject {
+    
+    var action: deny
+  }
+  object Action {
+    
+    inline def apply(): Action = {
+      val __obj = js.Dynamic.literal(action = "deny")
+      __obj.asInstanceOf[Action]
+    }
+    
+    extension [Self <: Action](x: Self) {
+      
+      inline def setAction(value: deny): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait OverrideBrowserWindowOptions extends StObject {
+    
+    var action: allow
+    
+    var overrideBrowserWindowOptions: js.UndefOr[BrowserWindowConstructorOptions] = js.undefined
+  }
+  object OverrideBrowserWindowOptions {
+    
+    inline def apply(): OverrideBrowserWindowOptions = {
+      val __obj = js.Dynamic.literal(action = "allow")
+      __obj.asInstanceOf[OverrideBrowserWindowOptions]
+    }
+    
+    extension [Self <: OverrideBrowserWindowOptions](x: Self) {
+      
+      inline def setAction(value: allow): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setOverrideBrowserWindowOptions(value: BrowserWindowConstructorOptions): Self = StObject.set(x, "overrideBrowserWindowOptions", value.asInstanceOf[js.Any])
+      
+      inline def setOverrideBrowserWindowOptionsUndefined: Self = StObject.set(x, "overrideBrowserWindowOptions", js.undefined)
+    }
+  }
   
   /* Inlined std.Partial<electron.Electron.Rectangle> */
   trait PartialRectangle extends StObject {
@@ -129,43 +134,6 @@ object anon {
   trait TypeofBrowserWindow extends StObject {
     
     /**
-      * Adds DevTools extension located at `path`, and returns extension's name.
-      *
-      * The extension will be remembered so you only need to call this API once, this
-      * API is not for programming use. If you try to add an extension that has already
-      * been loaded, this method will not return and instead log a warning to the
-      * console.
-      *
-      * The method will also not return if the extension's manifest is missing or
-      * incomplete.
-      *
-      * **Note:** This API cannot be called before the `ready` event of the `app` module
-      * is emitted.
-      * 
-    **Note:** This method is deprecated. Instead, use `ses.loadExtension(path)`.
-      *
-      * @deprecated
-      */
-    /* static member */
-    def addDevToolsExtension(path: String): Unit
-    
-    /**
-      * Adds Chrome extension located at `path`, and returns extension's name.
-      *
-      * The method will also not return if the extension's manifest is missing or
-      * incomplete.
-      *
-      * **Note:** This API cannot be called before the `ready` event of the `app` module
-      * is emitted.
-      * 
-    **Note:** This method is deprecated. Instead, use `ses.loadExtension(path)`.
-      *
-      * @deprecated
-      */
-    /* static member */
-    def addExtension(path: String): Unit
-    
-    /**
       * The window that owns the given `browserView`. If the given view is not attached
       * to any window, returns `null`.
       */
@@ -192,93 +160,25 @@ object anon {
     def getAllWindows(): js.Array[BrowserWindow]
     
     /**
-      * The keys are the extension names and each value is an Object containing `name`
-      * and `version` properties.
-      *
-      * To check if a DevTools extension is installed you can run the following:
-      *
-      * **Note:** This API cannot be called before the `ready` event of the `app` module
-      * is emitted.
-      * 
-    **Note:** This method is deprecated. Instead, use `ses.getAllExtensions()`.
-      *
-      * @deprecated
-      */
-    /* static member */
-    def getDevToolsExtensions(): Record[String, ExtensionInfo]
-    
-    /**
-      * The keys are the extension names and each value is an Object containing `name`
-      * and `version` properties.
-      *
-      * **Note:** This API cannot be called before the `ready` event of the `app` module
-      * is emitted.
-      * 
-    **Note:** This method is deprecated. Instead, use `ses.getAllExtensions()`.
-      *
-      * @deprecated
-      */
-    /* static member */
-    def getExtensions(): Record[String, ExtensionInfo]
-    
-    /**
       * The window that is focused in this application, otherwise returns `null`.
       */
     /* static member */
     def getFocusedWindow(): BrowserWindow | Null
-    
-    /**
-      * Remove a DevTools extension by name.
-      *
-      * **Note:** This API cannot be called before the `ready` event of the `app` module
-      * is emitted.
-      *
-      * **Note:** This method is deprecated. Instead, use
-      * `ses.removeExtension(extension_id)`.
-      *
-      * @deprecated
-      */
-    /* static member */
-    def removeDevToolsExtension(name: String): Unit
-    
-    /**
-      * Remove a Chrome extension by name.
-      *
-      * **Note:** This API cannot be called before the `ready` event of the `app` module
-      * is emitted.
-      *
-      * **Note:** This method is deprecated. Instead, use
-      * `ses.removeExtension(extension_id)`.
-      *
-      * @deprecated
-      */
-    /* static member */
-    def removeExtension(name: String): Unit
   }
   object TypeofBrowserWindow {
     
     inline def apply(
-      addDevToolsExtension: String => Unit,
-      addExtension: String => Unit,
       fromBrowserView: BrowserView => BrowserWindow | Null,
       fromId: Double => BrowserWindow | Null,
       fromWebContents: WebContents_ => BrowserWindow | Null,
       getAllWindows: () => js.Array[BrowserWindow],
-      getDevToolsExtensions: () => Record[String, ExtensionInfo],
-      getExtensions: () => Record[String, ExtensionInfo],
-      getFocusedWindow: () => BrowserWindow | Null,
-      removeDevToolsExtension: String => Unit,
-      removeExtension: String => Unit
+      getFocusedWindow: () => BrowserWindow | Null
     ): TypeofBrowserWindow = {
-      val __obj = js.Dynamic.literal(addDevToolsExtension = js.Any.fromFunction1(addDevToolsExtension), addExtension = js.Any.fromFunction1(addExtension), fromBrowserView = js.Any.fromFunction1(fromBrowserView), fromId = js.Any.fromFunction1(fromId), fromWebContents = js.Any.fromFunction1(fromWebContents), getAllWindows = js.Any.fromFunction0(getAllWindows), getDevToolsExtensions = js.Any.fromFunction0(getDevToolsExtensions), getExtensions = js.Any.fromFunction0(getExtensions), getFocusedWindow = js.Any.fromFunction0(getFocusedWindow), removeDevToolsExtension = js.Any.fromFunction1(removeDevToolsExtension), removeExtension = js.Any.fromFunction1(removeExtension))
+      val __obj = js.Dynamic.literal(fromBrowserView = js.Any.fromFunction1(fromBrowserView), fromId = js.Any.fromFunction1(fromId), fromWebContents = js.Any.fromFunction1(fromWebContents), getAllWindows = js.Any.fromFunction0(getAllWindows), getFocusedWindow = js.Any.fromFunction0(getFocusedWindow))
       __obj.asInstanceOf[TypeofBrowserWindow]
     }
     
     extension [Self <: TypeofBrowserWindow](x: Self) {
-      
-      inline def setAddDevToolsExtension(value: String => Unit): Self = StObject.set(x, "addDevToolsExtension", js.Any.fromFunction1(value))
-      
-      inline def setAddExtension(value: String => Unit): Self = StObject.set(x, "addExtension", js.Any.fromFunction1(value))
       
       inline def setFromBrowserView(value: BrowserView => BrowserWindow | Null): Self = StObject.set(x, "fromBrowserView", js.Any.fromFunction1(value))
       
@@ -288,40 +188,22 @@ object anon {
       
       inline def setGetAllWindows(value: () => js.Array[BrowserWindow]): Self = StObject.set(x, "getAllWindows", js.Any.fromFunction0(value))
       
-      inline def setGetDevToolsExtensions(value: () => Record[String, ExtensionInfo]): Self = StObject.set(x, "getDevToolsExtensions", js.Any.fromFunction0(value))
-      
-      inline def setGetExtensions(value: () => Record[String, ExtensionInfo]): Self = StObject.set(x, "getExtensions", js.Any.fromFunction0(value))
-      
       inline def setGetFocusedWindow(value: () => BrowserWindow | Null): Self = StObject.set(x, "getFocusedWindow", js.Any.fromFunction0(value))
-      
-      inline def setRemoveDevToolsExtension(value: String => Unit): Self = StObject.set(x, "removeDevToolsExtension", js.Any.fromFunction1(value))
-      
-      inline def setRemoveExtension(value: String => Unit): Self = StObject.set(x, "removeExtension", js.Any.fromFunction1(value))
     }
   }
   
   trait TypeofCommon extends StObject {
     
-    var NativeImage: Instantiable0[NativeImage_]
-    
     val clipboard: Clipboard
     
     val crashReporter: CrashReporter
-    
-    val desktopCapturer: DesktopCapturer
     
     val shell: Shell
   }
   object TypeofCommon {
     
-    inline def apply(
-      NativeImage: Instantiable0[NativeImage_],
-      clipboard: Clipboard,
-      crashReporter: CrashReporter,
-      desktopCapturer: DesktopCapturer,
-      shell: Shell
-    ): TypeofCommon = {
-      val __obj = js.Dynamic.literal(NativeImage = NativeImage.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+    inline def apply(clipboard: Clipboard, crashReporter: CrashReporter, shell: Shell): TypeofCommon = {
+      val __obj = js.Dynamic.literal(clipboard = clipboard.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofCommon]
     }
     
@@ -331,142 +213,41 @@ object anon {
       
       inline def setCrashReporter(value: CrashReporter): Self = StObject.set(x, "crashReporter", value.asInstanceOf[js.Any])
       
-      inline def setDesktopCapturer(value: DesktopCapturer): Self = StObject.set(x, "desktopCapturer", value.asInstanceOf[js.Any])
-      
-      inline def setNativeImage(value: Instantiable0[NativeImage_]): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
-      
       inline def setShell(value: Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
   
-  trait TypeofElectron extends StObject {
+  trait TypeofCrossProcessExports extends StObject {
     
-    var Accelerator: Instantiable0[typings.electron.Electron.Accelerator]
+    var BrowserView: Instantiable0[typings.electron.Electron.CrossProcessExports.BrowserView]
     
-    var BrowserView: Instantiable1[
-        /* options */ js.UndefOr[BrowserViewConstructorOptions], 
-        typings.electron.Electron.BrowserView
-      ]
+    var BrowserWindow: Instantiable0[typings.electron.Electron.CrossProcessExports.BrowserWindow]
     
-    var BrowserWindow: (Instantiable1[
-        /* options */ js.UndefOr[BrowserWindowConstructorOptions], 
-        typings.electron.Electron.BrowserWindow
-      ]) & TypeofBrowserWindow
+    var Menu: Instantiable0[typings.electron.Electron.CrossProcessExports.Menu]
     
-    var BrowserWindowProxy: Instantiable0[typings.electron.Electron.BrowserWindowProxy]
+    var MenuItem: Instantiable0[typings.electron.Electron.CrossProcessExports.MenuItem]
     
-    var ClientRequest: Instantiable1[
-        /* options */ ClientRequestConstructorOptions | String, 
-        typings.electron.Electron.ClientRequest
-      ]
+    var MessageChannelMain: Instantiable0[typings.electron.Electron.CrossProcessExports.MessageChannelMain]
     
-    var CommandLine: Instantiable0[typings.electron.Electron.CommandLine]
+    var Notification: Instantiable0[typings.electron.Electron.CrossProcessExports.Notification]
     
-    val Common: TypeofCommon
+    var ShareMenu: Instantiable0[typings.electron.Electron.CrossProcessExports.ShareMenu]
     
-    var Cookies: Instantiable0[typings.electron.Electron.Cookies]
+    var TouchBar: Instantiable0[typings.electron.Electron.CrossProcessExports.TouchBar]
     
-    var Debugger: Instantiable0[typings.electron.Electron.Debugger]
-    
-    var Dock: Instantiable0[typings.electron.Electron.Dock]
-    
-    var DownloadItem: Instantiable0[typings.electron.Electron.DownloadItem]
-    
-    var IncomingMessage: Instantiable0[typings.electron.Electron.IncomingMessage]
-    
-    val Main: TypeofMain
-    
-    var Menu: Instantiable0[typings.electron.Electron.Menu] & TypeofMenu
-    
-    var MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, typings.electron.Electron.MenuItem]
-    
-    var MessageChannelMain: Instantiable0[typings.electron.Electron.MessageChannelMain]
-    
-    var MessagePortMain: Instantiable0[typings.electron.Electron.MessagePortMain]
-    
-    var NativeImage: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage
-    
-    var Notification: (Instantiable1[
-        /* options */ js.UndefOr[NotificationConstructorOptions], 
-        typings.electron.Electron.Notification
-      ]) & TypeofNotification
-    
-    val Renderer: TypeofRenderer
-    
-    var ServiceWorkers: Instantiable0[typings.electron.Electron.ServiceWorkers]
-    
-    var Session: Instantiable0[Session_] & TypeofSession
-    
-    var TouchBar: (Instantiable1[/* options */ TouchBarConstructorOptions, typings.electron.Electron.TouchBar]) & TypeofTouchBar
-    
-    var TouchBarButton: Instantiable1[
-        /* options */ TouchBarButtonConstructorOptions, 
-        typings.electron.Electron.TouchBarButton
-      ]
-    
-    var TouchBarColorPicker: Instantiable1[
-        /* options */ TouchBarColorPickerConstructorOptions, 
-        typings.electron.Electron.TouchBarColorPicker
-      ]
-    
-    var TouchBarGroup: Instantiable1[
-        /* options */ TouchBarGroupConstructorOptions, 
-        typings.electron.Electron.TouchBarGroup
-      ]
-    
-    var TouchBarLabel: Instantiable1[
-        /* options */ TouchBarLabelConstructorOptions, 
-        typings.electron.Electron.TouchBarLabel
-      ]
-    
-    var TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.TouchBarOtherItemsProxy]
-    
-    var TouchBarPopover: Instantiable1[
-        /* options */ TouchBarPopoverConstructorOptions, 
-        typings.electron.Electron.TouchBarPopover
-      ]
-    
-    var TouchBarScrubber: Instantiable1[
-        /* options */ TouchBarScrubberConstructorOptions, 
-        typings.electron.Electron.TouchBarScrubber
-      ]
-    
-    var TouchBarSegmentedControl: Instantiable1[
-        /* options */ TouchBarSegmentedControlConstructorOptions, 
-        typings.electron.Electron.TouchBarSegmentedControl
-      ]
-    
-    var TouchBarSlider: Instantiable1[
-        /* options */ TouchBarSliderConstructorOptions, 
-        typings.electron.Electron.TouchBarSlider
-      ]
-    
-    var TouchBarSpacer: Instantiable1[
-        /* options */ TouchBarSpacerConstructorOptions, 
-        typings.electron.Electron.TouchBarSpacer
-      ]
-    
-    var Tray: Instantiable2[
-        /* image */ typings.electron.Electron.NativeImage_ | String, 
-        /* guid */ js.UndefOr[String], 
-        typings.electron.Electron.Tray
-      ]
-    
-    var WebContents: Instantiable0[WebContents_] & TypeofWebContents
-    
-    var WebRequest: Instantiable0[typings.electron.Electron.WebRequest]
+    var Tray: Instantiable0[typings.electron.Electron.CrossProcessExports.Tray]
     
     val app: App
     
     val autoUpdater: AutoUpdater
     
-    val clipboard: Clipboard
+    val clipboard: typings.electron.Electron.CrossProcessExports.Clipboard
     
     val contentTracing: ContentTracing
     
     val contextBridge: ContextBridge
     
-    val crashReporter: CrashReporter
+    val crashReporter: typings.electron.Electron.CrossProcessExports.CrashReporter
     
     val desktopCapturer: DesktopCapturer
     
@@ -492,67 +273,36 @@ object anon {
     
     val protocol: Protocol
     
-    val remote: Remote
+    val pushNotifications: PushNotifications
+    
+    val safeStorage: SafeStorage
     
     val screen: Screen
     
-    val shell: Shell
+    val shell: typings.electron.Electron.CrossProcessExports.Shell
     
     val systemPreferences: SystemPreferences
     
     val webFrame: WebFrame
-    
-    val webviewTag: WebviewTag
   }
-  object TypeofElectron {
+  object TypeofCrossProcessExports {
     
     inline def apply(
-      Accelerator: Instantiable0[Accelerator],
-      BrowserView: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView],
-      BrowserWindow: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) & TypeofBrowserWindow,
-      BrowserWindowProxy: Instantiable0[BrowserWindowProxy],
-      ClientRequest: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest],
-      CommandLine: Instantiable0[CommandLine],
-      Common: TypeofCommon,
-      Cookies: Instantiable0[Cookies],
-      Debugger: Instantiable0[Debugger],
-      Dock: Instantiable0[Dock],
-      DownloadItem: Instantiable0[DownloadItem],
-      IncomingMessage: Instantiable0[IncomingMessage],
-      Main: TypeofMain,
-      Menu: Instantiable0[Menu] & TypeofMenu,
-      MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
+      BrowserView: Instantiable0[typings.electron.Electron.CrossProcessExports.BrowserView],
+      BrowserWindow: Instantiable0[typings.electron.Electron.CrossProcessExports.BrowserWindow],
+      Menu: Instantiable0[Menu],
+      MenuItem: Instantiable0[MenuItem],
       MessageChannelMain: Instantiable0[MessageChannelMain],
-      MessagePortMain: Instantiable0[MessagePortMain],
-      NativeImage: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage,
-      Notification: (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]) & TypeofNotification,
-      Renderer: TypeofRenderer,
-      ServiceWorkers: Instantiable0[ServiceWorkers],
-      Session: Instantiable0[Session_] & TypeofSession,
-      TouchBar: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) & TypeofTouchBar,
-      TouchBarButton: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton],
-      TouchBarColorPicker: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker],
-      TouchBarGroup: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup],
-      TouchBarLabel: Instantiable1[/* options */ TouchBarLabelConstructorOptions, TouchBarLabel],
-      TouchBarOtherItemsProxy: Instantiable0[TouchBarOtherItemsProxy],
-      TouchBarPopover: Instantiable1[/* options */ TouchBarPopoverConstructorOptions, TouchBarPopover],
-      TouchBarScrubber: Instantiable1[/* options */ TouchBarScrubberConstructorOptions, TouchBarScrubber],
-      TouchBarSegmentedControl: Instantiable1[/* options */ TouchBarSegmentedControlConstructorOptions, TouchBarSegmentedControl],
-      TouchBarSlider: Instantiable1[/* options */ TouchBarSliderConstructorOptions, TouchBarSlider],
-      TouchBarSpacer: Instantiable1[/* options */ TouchBarSpacerConstructorOptions, TouchBarSpacer],
-      Tray: Instantiable2[
-          /* image */ typings.electron.Electron.NativeImage_ | String, 
-          /* guid */ js.UndefOr[String], 
-          Tray
-        ],
-      WebContents: Instantiable0[WebContents_] & TypeofWebContents,
-      WebRequest: Instantiable0[WebRequest],
+      Notification: Instantiable0[Notification],
+      ShareMenu: Instantiable0[ShareMenu],
+      TouchBar: Instantiable0[TouchBar],
+      Tray: Instantiable0[Tray],
       app: App,
       autoUpdater: AutoUpdater,
-      clipboard: Clipboard,
+      clipboard: typings.electron.Electron.CrossProcessExports.Clipboard,
       contentTracing: ContentTracing,
       contextBridge: ContextBridge,
-      crashReporter: CrashReporter,
+      crashReporter: typings.electron.Electron.CrossProcessExports.CrashReporter,
       desktopCapturer: DesktopCapturer,
       dialog: Dialog,
       globalShortcut: GlobalShortcut,
@@ -565,80 +315,52 @@ object anon {
       powerMonitor: PowerMonitor,
       powerSaveBlocker: PowerSaveBlocker,
       protocol: Protocol,
-      remote: Remote,
+      pushNotifications: PushNotifications,
+      safeStorage: SafeStorage,
       screen: Screen,
-      shell: Shell,
+      shell: typings.electron.Electron.CrossProcessExports.Shell,
       systemPreferences: SystemPreferences,
-      webFrame: WebFrame,
-      webviewTag: WebviewTag
-    ): TypeofElectron = {
-      val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], BrowserWindowProxy = BrowserWindowProxy.asInstanceOf[js.Any], ClientRequest = ClientRequest.asInstanceOf[js.Any], CommandLine = CommandLine.asInstanceOf[js.Any], Common = Common.asInstanceOf[js.Any], Cookies = Cookies.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], Dock = Dock.asInstanceOf[js.Any], DownloadItem = DownloadItem.asInstanceOf[js.Any], IncomingMessage = IncomingMessage.asInstanceOf[js.Any], Main = Main.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], MessageChannelMain = MessageChannelMain.asInstanceOf[js.Any], MessagePortMain = MessagePortMain.asInstanceOf[js.Any], NativeImage = NativeImage.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Renderer = Renderer.asInstanceOf[js.Any], ServiceWorkers = ServiceWorkers.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], TouchBarButton = TouchBarButton.asInstanceOf[js.Any], TouchBarColorPicker = TouchBarColorPicker.asInstanceOf[js.Any], TouchBarGroup = TouchBarGroup.asInstanceOf[js.Any], TouchBarLabel = TouchBarLabel.asInstanceOf[js.Any], TouchBarOtherItemsProxy = TouchBarOtherItemsProxy.asInstanceOf[js.Any], TouchBarPopover = TouchBarPopover.asInstanceOf[js.Any], TouchBarScrubber = TouchBarScrubber.asInstanceOf[js.Any], TouchBarSegmentedControl = TouchBarSegmentedControl.asInstanceOf[js.Any], TouchBarSlider = TouchBarSlider.asInstanceOf[js.Any], TouchBarSpacer = TouchBarSpacer.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], WebContents = WebContents.asInstanceOf[js.Any], WebRequest = WebRequest.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], contextBridge = contextBridge.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any], webviewTag = webviewTag.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TypeofElectron]
+      webFrame: WebFrame
+    ): TypeofCrossProcessExports = {
+      val __obj = js.Dynamic.literal(BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], MessageChannelMain = MessageChannelMain.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], ShareMenu = ShareMenu.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], contextBridge = contextBridge.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], pushNotifications = pushNotifications.asInstanceOf[js.Any], safeStorage = safeStorage.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TypeofCrossProcessExports]
     }
     
-    extension [Self <: TypeofElectron](x: Self) {
-      
-      inline def setAccelerator(value: Instantiable0[Accelerator]): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
+    extension [Self <: TypeofCrossProcessExports](x: Self) {
       
       inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
       inline def setAutoUpdater(value: AutoUpdater): Self = StObject.set(x, "autoUpdater", value.asInstanceOf[js.Any])
       
-      inline def setBrowserView(value: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView]): Self = StObject.set(x, "BrowserView", value.asInstanceOf[js.Any])
+      inline def setBrowserView(value: Instantiable0[typings.electron.Electron.CrossProcessExports.BrowserView]): Self = StObject.set(x, "BrowserView", value.asInstanceOf[js.Any])
       
-      inline def setBrowserWindow(
-        value: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) & TypeofBrowserWindow
-      ): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
+      inline def setBrowserWindow(value: Instantiable0[typings.electron.Electron.CrossProcessExports.BrowserWindow]): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
       
-      inline def setBrowserWindowProxy(value: Instantiable0[BrowserWindowProxy]): Self = StObject.set(x, "BrowserWindowProxy", value.asInstanceOf[js.Any])
-      
-      inline def setClientRequest(value: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest]): Self = StObject.set(x, "ClientRequest", value.asInstanceOf[js.Any])
-      
-      inline def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
-      
-      inline def setCommandLine(value: Instantiable0[CommandLine]): Self = StObject.set(x, "CommandLine", value.asInstanceOf[js.Any])
-      
-      inline def setCommon(value: TypeofCommon): Self = StObject.set(x, "Common", value.asInstanceOf[js.Any])
+      inline def setClipboard(value: typings.electron.Electron.CrossProcessExports.Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
       
       inline def setContentTracing(value: ContentTracing): Self = StObject.set(x, "contentTracing", value.asInstanceOf[js.Any])
       
       inline def setContextBridge(value: ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
       
-      inline def setCookies(value: Instantiable0[Cookies]): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
-      
-      inline def setCrashReporter(value: CrashReporter): Self = StObject.set(x, "crashReporter", value.asInstanceOf[js.Any])
-      
-      inline def setDebugger(value: Instantiable0[Debugger]): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
+      inline def setCrashReporter(value: typings.electron.Electron.CrossProcessExports.CrashReporter): Self = StObject.set(x, "crashReporter", value.asInstanceOf[js.Any])
       
       inline def setDesktopCapturer(value: DesktopCapturer): Self = StObject.set(x, "desktopCapturer", value.asInstanceOf[js.Any])
       
       inline def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      inline def setDock(value: Instantiable0[Dock]): Self = StObject.set(x, "Dock", value.asInstanceOf[js.Any])
-      
-      inline def setDownloadItem(value: Instantiable0[DownloadItem]): Self = StObject.set(x, "DownloadItem", value.asInstanceOf[js.Any])
-      
       inline def setGlobalShortcut(value: GlobalShortcut): Self = StObject.set(x, "globalShortcut", value.asInstanceOf[js.Any])
       
       inline def setInAppPurchase(value: InAppPurchase): Self = StObject.set(x, "inAppPurchase", value.asInstanceOf[js.Any])
-      
-      inline def setIncomingMessage(value: Instantiable0[IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       
       inline def setIpcMain(value: IpcMain): Self = StObject.set(x, "ipcMain", value.asInstanceOf[js.Any])
       
       inline def setIpcRenderer(value: IpcRenderer): Self = StObject.set(x, "ipcRenderer", value.asInstanceOf[js.Any])
       
-      inline def setMain(value: TypeofMain): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Instantiable0[Menu]): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
       
-      inline def setMenu(value: Instantiable0[Menu] & TypeofMenu): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
-      
-      inline def setMenuItem(value: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem]): Self = StObject.set(x, "MenuItem", value.asInstanceOf[js.Any])
+      inline def setMenuItem(value: Instantiable0[MenuItem]): Self = StObject.set(x, "MenuItem", value.asInstanceOf[js.Any])
       
       inline def setMessageChannelMain(value: Instantiable0[MessageChannelMain]): Self = StObject.set(x, "MessageChannelMain", value.asInstanceOf[js.Any])
-      
-      inline def setMessagePortMain(value: Instantiable0[MessagePortMain]): Self = StObject.set(x, "MessagePortMain", value.asInstanceOf[js.Any])
-      
-      inline def setNativeImage(value: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
       
       inline def setNativeTheme(value: NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
       
@@ -646,9 +368,7 @@ object anon {
       
       inline def setNetLog(value: NetLog): Self = StObject.set(x, "netLog", value.asInstanceOf[js.Any])
       
-      inline def setNotification(
-        value: (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]) & TypeofNotification
-      ): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Instantiable0[Notification]): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
       
       inline def setPowerMonitor(value: PowerMonitor): Self = StObject.set(x, "powerMonitor", value.asInstanceOf[js.Any])
       
@@ -656,59 +376,23 @@ object anon {
       
       inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setRemote(value: Remote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setPushNotifications(value: PushNotifications): Self = StObject.set(x, "pushNotifications", value.asInstanceOf[js.Any])
       
-      inline def setRenderer(value: TypeofRenderer): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
+      inline def setSafeStorage(value: SafeStorage): Self = StObject.set(x, "safeStorage", value.asInstanceOf[js.Any])
       
       inline def setScreen(value: Screen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      inline def setServiceWorkers(value: Instantiable0[ServiceWorkers]): Self = StObject.set(x, "ServiceWorkers", value.asInstanceOf[js.Any])
+      inline def setShareMenu(value: Instantiable0[ShareMenu]): Self = StObject.set(x, "ShareMenu", value.asInstanceOf[js.Any])
       
-      inline def setSession(value: Instantiable0[Session_] & TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
-      
-      inline def setShell(value: Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: typings.electron.Electron.CrossProcessExports.Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
       inline def setSystemPreferences(value: SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
       
-      inline def setTouchBar(value: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) & TypeofTouchBar): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
+      inline def setTouchBar(value: Instantiable0[TouchBar]): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
       
-      inline def setTouchBarButton(value: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton]): Self = StObject.set(x, "TouchBarButton", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarColorPicker(value: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker]): Self = StObject.set(x, "TouchBarColorPicker", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarGroup(value: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup]): Self = StObject.set(x, "TouchBarGroup", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarLabel(value: Instantiable1[/* options */ TouchBarLabelConstructorOptions, TouchBarLabel]): Self = StObject.set(x, "TouchBarLabel", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarOtherItemsProxy(value: Instantiable0[TouchBarOtherItemsProxy]): Self = StObject.set(x, "TouchBarOtherItemsProxy", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarPopover(value: Instantiable1[/* options */ TouchBarPopoverConstructorOptions, TouchBarPopover]): Self = StObject.set(x, "TouchBarPopover", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarScrubber(value: Instantiable1[/* options */ TouchBarScrubberConstructorOptions, TouchBarScrubber]): Self = StObject.set(x, "TouchBarScrubber", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarSegmentedControl(
-        value: Instantiable1[/* options */ TouchBarSegmentedControlConstructorOptions, TouchBarSegmentedControl]
-      ): Self = StObject.set(x, "TouchBarSegmentedControl", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarSlider(value: Instantiable1[/* options */ TouchBarSliderConstructorOptions, TouchBarSlider]): Self = StObject.set(x, "TouchBarSlider", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarSpacer(value: Instantiable1[/* options */ TouchBarSpacerConstructorOptions, TouchBarSpacer]): Self = StObject.set(x, "TouchBarSpacer", value.asInstanceOf[js.Any])
-      
-      inline def setTray(
-        value: Instantiable2[
-              /* image */ typings.electron.Electron.NativeImage_ | String, 
-              /* guid */ js.UndefOr[String], 
-              Tray
-            ]
-      ): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
-      
-      inline def setWebContents(value: Instantiable0[WebContents_] & TypeofWebContents): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
+      inline def setTray(value: Instantiable0[Tray]): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
       
       inline def setWebFrame(value: WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
-      
-      inline def setWebRequest(value: Instantiable0[WebRequest]): Self = StObject.set(x, "WebRequest", value.asInstanceOf[js.Any])
-      
-      inline def setWebviewTag(value: WebviewTag): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -718,178 +402,112 @@ object anon {
     
     var BrowserWindow: Instantiable0[typings.electron.Electron.Main.BrowserWindow]
     
-    var ClientRequest: Instantiable0[typings.electron.Electron.Main.ClientRequest]
-    
-    var CommandLine: Instantiable0[typings.electron.Electron.Main.CommandLine]
-    
-    var Cookies: Instantiable0[typings.electron.Electron.Main.Cookies]
-    
-    var Debugger: Instantiable0[typings.electron.Electron.Main.Debugger]
-    
-    var Dock: Instantiable0[typings.electron.Electron.Main.Dock]
-    
-    var DownloadItem: Instantiable0[typings.electron.Electron.Main.DownloadItem]
-    
-    var IncomingMessage: Instantiable0[typings.electron.Electron.Main.IncomingMessage]
-    
     var Menu: Instantiable0[typings.electron.Electron.Main.Menu]
     
     var MenuItem: Instantiable0[typings.electron.Electron.Main.MenuItem]
     
     var MessageChannelMain: Instantiable0[typings.electron.Electron.Main.MessageChannelMain]
     
-    var MessagePortMain: Instantiable0[typings.electron.Electron.Main.MessagePortMain]
-    
     var Notification: Instantiable0[typings.electron.Electron.Main.Notification]
     
-    var ServiceWorkers: Instantiable0[typings.electron.Electron.Main.ServiceWorkers]
-    
-    var Session: Instantiable0[typings.electron.Electron.Main.Session_]
+    var ShareMenu: Instantiable0[typings.electron.Electron.Main.ShareMenu]
     
     var TouchBar: Instantiable0[typings.electron.Electron.Main.TouchBar]
     
-    var TouchBarButton: Instantiable0[typings.electron.Electron.Main.TouchBarButton]
-    
-    var TouchBarColorPicker: Instantiable0[typings.electron.Electron.Main.TouchBarColorPicker]
-    
-    var TouchBarGroup: Instantiable0[typings.electron.Electron.Main.TouchBarGroup]
-    
-    var TouchBarLabel: Instantiable0[typings.electron.Electron.Main.TouchBarLabel]
-    
-    var TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.Main.TouchBarOtherItemsProxy]
-    
-    var TouchBarPopover: Instantiable0[typings.electron.Electron.Main.TouchBarPopover]
-    
-    var TouchBarScrubber: Instantiable0[typings.electron.Electron.Main.TouchBarScrubber]
-    
-    var TouchBarSegmentedControl: Instantiable0[typings.electron.Electron.Main.TouchBarSegmentedControl]
-    
-    var TouchBarSlider: Instantiable0[typings.electron.Electron.Main.TouchBarSlider]
-    
-    var TouchBarSpacer: Instantiable0[typings.electron.Electron.Main.TouchBarSpacer]
-    
     var Tray: Instantiable0[typings.electron.Electron.Main.Tray]
     
-    var WebContents: Instantiable0[typings.electron.Electron.Main.WebContents_]
+    val app: typings.electron.Electron.Main.App
     
-    var WebRequest: Instantiable0[typings.electron.Electron.Main.WebRequest]
+    val autoUpdater: typings.electron.Electron.Main.AutoUpdater
     
-    val app: App
+    val contentTracing: typings.electron.Electron.Main.ContentTracing
     
-    val autoUpdater: AutoUpdater
+    val desktopCapturer: typings.electron.Electron.Main.DesktopCapturer
     
-    val contentTracing: ContentTracing
+    val dialog: typings.electron.Electron.Main.Dialog
     
-    val dialog: Dialog
+    val globalShortcut: typings.electron.Electron.Main.GlobalShortcut
     
-    val globalShortcut: GlobalShortcut
+    val inAppPurchase: typings.electron.Electron.Main.InAppPurchase
     
-    val inAppPurchase: InAppPurchase
+    val ipcMain: typings.electron.Electron.Main.IpcMain
     
-    val ipcMain: IpcMain
+    val nativeTheme: typings.electron.Electron.Main.NativeTheme
     
-    val nativeTheme: NativeTheme
+    val net: typings.electron.Electron.Main.Net
     
-    val net: Net
+    val netLog: typings.electron.Electron.Main.NetLog
     
-    val netLog: NetLog
+    val powerMonitor: typings.electron.Electron.Main.PowerMonitor
     
-    val powerMonitor: PowerMonitor
+    val powerSaveBlocker: typings.electron.Electron.Main.PowerSaveBlocker
     
-    val powerSaveBlocker: PowerSaveBlocker
+    val protocol: typings.electron.Electron.Main.Protocol
     
-    val protocol: Protocol
+    val pushNotifications: typings.electron.Electron.Main.PushNotifications
     
-    val screen: Screen
+    val safeStorage: typings.electron.Electron.Main.SafeStorage
     
-    val systemPreferences: SystemPreferences
+    val screen: typings.electron.Electron.Main.Screen
+    
+    val systemPreferences: typings.electron.Electron.Main.SystemPreferences
   }
   object TypeofMain {
     
     inline def apply(
       BrowserView: Instantiable0[typings.electron.Electron.Main.BrowserView],
       BrowserWindow: Instantiable0[typings.electron.Electron.Main.BrowserWindow],
-      ClientRequest: Instantiable0[typings.electron.Electron.Main.ClientRequest],
-      CommandLine: Instantiable0[typings.electron.Electron.Main.CommandLine],
-      Cookies: Instantiable0[typings.electron.Electron.Main.Cookies],
-      Debugger: Instantiable0[typings.electron.Electron.Main.Debugger],
-      Dock: Instantiable0[typings.electron.Electron.Main.Dock],
-      DownloadItem: Instantiable0[typings.electron.Electron.Main.DownloadItem],
-      IncomingMessage: Instantiable0[typings.electron.Electron.Main.IncomingMessage],
       Menu: Instantiable0[typings.electron.Electron.Main.Menu],
       MenuItem: Instantiable0[typings.electron.Electron.Main.MenuItem],
       MessageChannelMain: Instantiable0[typings.electron.Electron.Main.MessageChannelMain],
-      MessagePortMain: Instantiable0[typings.electron.Electron.Main.MessagePortMain],
       Notification: Instantiable0[typings.electron.Electron.Main.Notification],
-      ServiceWorkers: Instantiable0[typings.electron.Electron.Main.ServiceWorkers],
-      Session: Instantiable0[typings.electron.Electron.Main.Session_],
+      ShareMenu: Instantiable0[typings.electron.Electron.Main.ShareMenu],
       TouchBar: Instantiable0[typings.electron.Electron.Main.TouchBar],
-      TouchBarButton: Instantiable0[typings.electron.Electron.Main.TouchBarButton],
-      TouchBarColorPicker: Instantiable0[typings.electron.Electron.Main.TouchBarColorPicker],
-      TouchBarGroup: Instantiable0[typings.electron.Electron.Main.TouchBarGroup],
-      TouchBarLabel: Instantiable0[typings.electron.Electron.Main.TouchBarLabel],
-      TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.Main.TouchBarOtherItemsProxy],
-      TouchBarPopover: Instantiable0[typings.electron.Electron.Main.TouchBarPopover],
-      TouchBarScrubber: Instantiable0[typings.electron.Electron.Main.TouchBarScrubber],
-      TouchBarSegmentedControl: Instantiable0[typings.electron.Electron.Main.TouchBarSegmentedControl],
-      TouchBarSlider: Instantiable0[typings.electron.Electron.Main.TouchBarSlider],
-      TouchBarSpacer: Instantiable0[typings.electron.Electron.Main.TouchBarSpacer],
       Tray: Instantiable0[typings.electron.Electron.Main.Tray],
-      WebContents: Instantiable0[typings.electron.Electron.Main.WebContents_],
-      WebRequest: Instantiable0[typings.electron.Electron.Main.WebRequest],
-      app: App,
-      autoUpdater: AutoUpdater,
-      contentTracing: ContentTracing,
-      dialog: Dialog,
-      globalShortcut: GlobalShortcut,
-      inAppPurchase: InAppPurchase,
-      ipcMain: IpcMain,
-      nativeTheme: NativeTheme,
-      net: Net,
-      netLog: NetLog,
-      powerMonitor: PowerMonitor,
-      powerSaveBlocker: PowerSaveBlocker,
-      protocol: Protocol,
-      screen: Screen,
-      systemPreferences: SystemPreferences
+      app: typings.electron.Electron.Main.App,
+      autoUpdater: typings.electron.Electron.Main.AutoUpdater,
+      contentTracing: typings.electron.Electron.Main.ContentTracing,
+      desktopCapturer: typings.electron.Electron.Main.DesktopCapturer,
+      dialog: typings.electron.Electron.Main.Dialog,
+      globalShortcut: typings.electron.Electron.Main.GlobalShortcut,
+      inAppPurchase: typings.electron.Electron.Main.InAppPurchase,
+      ipcMain: typings.electron.Electron.Main.IpcMain,
+      nativeTheme: typings.electron.Electron.Main.NativeTheme,
+      net: typings.electron.Electron.Main.Net,
+      netLog: typings.electron.Electron.Main.NetLog,
+      powerMonitor: typings.electron.Electron.Main.PowerMonitor,
+      powerSaveBlocker: typings.electron.Electron.Main.PowerSaveBlocker,
+      protocol: typings.electron.Electron.Main.Protocol,
+      pushNotifications: typings.electron.Electron.Main.PushNotifications,
+      safeStorage: typings.electron.Electron.Main.SafeStorage,
+      screen: typings.electron.Electron.Main.Screen,
+      systemPreferences: typings.electron.Electron.Main.SystemPreferences
     ): TypeofMain = {
-      val __obj = js.Dynamic.literal(BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], ClientRequest = ClientRequest.asInstanceOf[js.Any], CommandLine = CommandLine.asInstanceOf[js.Any], Cookies = Cookies.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], Dock = Dock.asInstanceOf[js.Any], DownloadItem = DownloadItem.asInstanceOf[js.Any], IncomingMessage = IncomingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], MessageChannelMain = MessageChannelMain.asInstanceOf[js.Any], MessagePortMain = MessagePortMain.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], ServiceWorkers = ServiceWorkers.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], TouchBarButton = TouchBarButton.asInstanceOf[js.Any], TouchBarColorPicker = TouchBarColorPicker.asInstanceOf[js.Any], TouchBarGroup = TouchBarGroup.asInstanceOf[js.Any], TouchBarLabel = TouchBarLabel.asInstanceOf[js.Any], TouchBarOtherItemsProxy = TouchBarOtherItemsProxy.asInstanceOf[js.Any], TouchBarPopover = TouchBarPopover.asInstanceOf[js.Any], TouchBarScrubber = TouchBarScrubber.asInstanceOf[js.Any], TouchBarSegmentedControl = TouchBarSegmentedControl.asInstanceOf[js.Any], TouchBarSlider = TouchBarSlider.asInstanceOf[js.Any], TouchBarSpacer = TouchBarSpacer.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], WebContents = WebContents.asInstanceOf[js.Any], WebRequest = WebRequest.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], MessageChannelMain = MessageChannelMain.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], ShareMenu = ShareMenu.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], pushNotifications = pushNotifications.asInstanceOf[js.Any], safeStorage = safeStorage.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofMain]
     }
     
     extension [Self <: TypeofMain](x: Self) {
       
-      inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: typings.electron.Electron.Main.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      inline def setAutoUpdater(value: AutoUpdater): Self = StObject.set(x, "autoUpdater", value.asInstanceOf[js.Any])
+      inline def setAutoUpdater(value: typings.electron.Electron.Main.AutoUpdater): Self = StObject.set(x, "autoUpdater", value.asInstanceOf[js.Any])
       
       inline def setBrowserView(value: Instantiable0[typings.electron.Electron.Main.BrowserView]): Self = StObject.set(x, "BrowserView", value.asInstanceOf[js.Any])
       
       inline def setBrowserWindow(value: Instantiable0[typings.electron.Electron.Main.BrowserWindow]): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
       
-      inline def setClientRequest(value: Instantiable0[typings.electron.Electron.Main.ClientRequest]): Self = StObject.set(x, "ClientRequest", value.asInstanceOf[js.Any])
+      inline def setContentTracing(value: typings.electron.Electron.Main.ContentTracing): Self = StObject.set(x, "contentTracing", value.asInstanceOf[js.Any])
       
-      inline def setCommandLine(value: Instantiable0[typings.electron.Electron.Main.CommandLine]): Self = StObject.set(x, "CommandLine", value.asInstanceOf[js.Any])
+      inline def setDesktopCapturer(value: typings.electron.Electron.Main.DesktopCapturer): Self = StObject.set(x, "desktopCapturer", value.asInstanceOf[js.Any])
       
-      inline def setContentTracing(value: ContentTracing): Self = StObject.set(x, "contentTracing", value.asInstanceOf[js.Any])
+      inline def setDialog(value: typings.electron.Electron.Main.Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      inline def setCookies(value: Instantiable0[typings.electron.Electron.Main.Cookies]): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
+      inline def setGlobalShortcut(value: typings.electron.Electron.Main.GlobalShortcut): Self = StObject.set(x, "globalShortcut", value.asInstanceOf[js.Any])
       
-      inline def setDebugger(value: Instantiable0[typings.electron.Electron.Main.Debugger]): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
+      inline def setInAppPurchase(value: typings.electron.Electron.Main.InAppPurchase): Self = StObject.set(x, "inAppPurchase", value.asInstanceOf[js.Any])
       
-      inline def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
-      
-      inline def setDock(value: Instantiable0[typings.electron.Electron.Main.Dock]): Self = StObject.set(x, "Dock", value.asInstanceOf[js.Any])
-      
-      inline def setDownloadItem(value: Instantiable0[typings.electron.Electron.Main.DownloadItem]): Self = StObject.set(x, "DownloadItem", value.asInstanceOf[js.Any])
-      
-      inline def setGlobalShortcut(value: GlobalShortcut): Self = StObject.set(x, "globalShortcut", value.asInstanceOf[js.Any])
-      
-      inline def setInAppPurchase(value: InAppPurchase): Self = StObject.set(x, "inAppPurchase", value.asInstanceOf[js.Any])
-      
-      inline def setIncomingMessage(value: Instantiable0[typings.electron.Electron.Main.IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
-      
-      inline def setIpcMain(value: IpcMain): Self = StObject.set(x, "ipcMain", value.asInstanceOf[js.Any])
+      inline def setIpcMain(value: typings.electron.Electron.Main.IpcMain): Self = StObject.set(x, "ipcMain", value.asInstanceOf[js.Any])
       
       inline def setMenu(value: Instantiable0[typings.electron.Electron.Main.Menu]): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
       
@@ -897,57 +515,33 @@ object anon {
       
       inline def setMessageChannelMain(value: Instantiable0[typings.electron.Electron.Main.MessageChannelMain]): Self = StObject.set(x, "MessageChannelMain", value.asInstanceOf[js.Any])
       
-      inline def setMessagePortMain(value: Instantiable0[typings.electron.Electron.Main.MessagePortMain]): Self = StObject.set(x, "MessagePortMain", value.asInstanceOf[js.Any])
+      inline def setNativeTheme(value: typings.electron.Electron.Main.NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
       
-      inline def setNativeTheme(value: NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
+      inline def setNet(value: typings.electron.Electron.Main.Net): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
       
-      inline def setNet(value: Net): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
-      
-      inline def setNetLog(value: NetLog): Self = StObject.set(x, "netLog", value.asInstanceOf[js.Any])
+      inline def setNetLog(value: typings.electron.Electron.Main.NetLog): Self = StObject.set(x, "netLog", value.asInstanceOf[js.Any])
       
       inline def setNotification(value: Instantiable0[typings.electron.Electron.Main.Notification]): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
       
-      inline def setPowerMonitor(value: PowerMonitor): Self = StObject.set(x, "powerMonitor", value.asInstanceOf[js.Any])
+      inline def setPowerMonitor(value: typings.electron.Electron.Main.PowerMonitor): Self = StObject.set(x, "powerMonitor", value.asInstanceOf[js.Any])
       
-      inline def setPowerSaveBlocker(value: PowerSaveBlocker): Self = StObject.set(x, "powerSaveBlocker", value.asInstanceOf[js.Any])
+      inline def setPowerSaveBlocker(value: typings.electron.Electron.Main.PowerSaveBlocker): Self = StObject.set(x, "powerSaveBlocker", value.asInstanceOf[js.Any])
       
-      inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: typings.electron.Electron.Main.Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setScreen(value: Screen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setPushNotifications(value: typings.electron.Electron.Main.PushNotifications): Self = StObject.set(x, "pushNotifications", value.asInstanceOf[js.Any])
       
-      inline def setServiceWorkers(value: Instantiable0[typings.electron.Electron.Main.ServiceWorkers]): Self = StObject.set(x, "ServiceWorkers", value.asInstanceOf[js.Any])
+      inline def setSafeStorage(value: typings.electron.Electron.Main.SafeStorage): Self = StObject.set(x, "safeStorage", value.asInstanceOf[js.Any])
       
-      inline def setSession(value: Instantiable0[typings.electron.Electron.Main.Session_]): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+      inline def setScreen(value: typings.electron.Electron.Main.Screen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      inline def setSystemPreferences(value: SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
+      inline def setShareMenu(value: Instantiable0[typings.electron.Electron.Main.ShareMenu]): Self = StObject.set(x, "ShareMenu", value.asInstanceOf[js.Any])
+      
+      inline def setSystemPreferences(value: typings.electron.Electron.Main.SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
       
       inline def setTouchBar(value: Instantiable0[typings.electron.Electron.Main.TouchBar]): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
       
-      inline def setTouchBarButton(value: Instantiable0[typings.electron.Electron.Main.TouchBarButton]): Self = StObject.set(x, "TouchBarButton", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarColorPicker(value: Instantiable0[typings.electron.Electron.Main.TouchBarColorPicker]): Self = StObject.set(x, "TouchBarColorPicker", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarGroup(value: Instantiable0[typings.electron.Electron.Main.TouchBarGroup]): Self = StObject.set(x, "TouchBarGroup", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarLabel(value: Instantiable0[typings.electron.Electron.Main.TouchBarLabel]): Self = StObject.set(x, "TouchBarLabel", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarOtherItemsProxy(value: Instantiable0[typings.electron.Electron.Main.TouchBarOtherItemsProxy]): Self = StObject.set(x, "TouchBarOtherItemsProxy", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarPopover(value: Instantiable0[typings.electron.Electron.Main.TouchBarPopover]): Self = StObject.set(x, "TouchBarPopover", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarScrubber(value: Instantiable0[typings.electron.Electron.Main.TouchBarScrubber]): Self = StObject.set(x, "TouchBarScrubber", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarSegmentedControl(value: Instantiable0[typings.electron.Electron.Main.TouchBarSegmentedControl]): Self = StObject.set(x, "TouchBarSegmentedControl", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarSlider(value: Instantiable0[typings.electron.Electron.Main.TouchBarSlider]): Self = StObject.set(x, "TouchBarSlider", value.asInstanceOf[js.Any])
-      
-      inline def setTouchBarSpacer(value: Instantiable0[typings.electron.Electron.Main.TouchBarSpacer]): Self = StObject.set(x, "TouchBarSpacer", value.asInstanceOf[js.Any])
-      
       inline def setTray(value: Instantiable0[typings.electron.Electron.Main.Tray]): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
-      
-      inline def setWebContents(value: Instantiable0[typings.electron.Electron.Main.WebContents_]): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
-      
-      inline def setWebRequest(value: Instantiable0[typings.electron.Electron.Main.WebRequest]): Self = StObject.set(x, "WebRequest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -962,7 +556,7 @@ object anon {
       * become properties of the constructed menu items.
       */
     /* static member */
-    def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | MenuItem]): Menu = js.native
+    def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = js.native
     
     /**
       * The application menu, if set, or `null`, if not set.
@@ -971,7 +565,7 @@ object anon {
       * removal of menu items. Instance properties can still be dynamically modified.
       */
     /* static member */
-    def getApplicationMenu(): Menu | Null = js.native
+    def getApplicationMenu(): typings.electron.Electron.Menu | Null = js.native
     
     /**
       * Sends the `action` to the first responder of application. This is used for
@@ -993,8 +587,11 @@ object anon {
       * Also on Windows and Linux, you can use a `&` in the top-level item name to
       * indicate which letter should get a generated accelerator. For example, using
       * `&File` for the file menu would result in a generated `Alt-F` accelerator that
-      * opens the associated menu. The indicated character in the button label gets an
-      * underline. The `&` character is not displayed on the button label.
+      * opens the associated menu. The indicated character in the button label then gets
+      * an underline, and the `&` character is not displayed on the button label.
+      *
+      * In order to escape the `&` character in an item name, add a proceeding `&`. For
+      * example, `&&File` would result in `&File` displayed on the button label.
       *
       * Passing `null` will suppress the default menu. On Windows and Linux, this has
       * the additional effect of removing the menu bar from the window.
@@ -1005,7 +602,7 @@ object anon {
       */
     /* static member */
     def setApplicationMenu(): Unit = js.native
-    def setApplicationMenu(menu: Menu): Unit = js.native
+    def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = js.native
   }
   
   @js.native
@@ -1016,28 +613,28 @@ object anon {
       * Creates an empty `NativeImage` instance.
       */
     /* static member */
-    def createEmpty(): typings.electron.Electron.NativeImage_ = js.native
+    def createEmpty(): NativeImage_ = js.native
     
     /**
       * Creates a new `NativeImage` instance from `buffer` that contains the raw bitmap
       * pixel data returned by `toBitmap()`. The specific format is platform-dependent.
       */
     /* static member */
-    def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): typings.electron.Electron.NativeImage_ = js.native
+    def createFromBitmap(buffer: Buffer, options: CreateFromBitmapOptions): NativeImage_ = js.native
     
     /**
       * Creates a new `NativeImage` instance from `buffer`. Tries to decode as PNG or
       * JPEG first.
       */
     /* static member */
-    def createFromBuffer(buffer: Buffer): typings.electron.Electron.NativeImage_ = js.native
-    def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): typings.electron.Electron.NativeImage_ = js.native
+    def createFromBuffer(buffer: Buffer): NativeImage_ = js.native
+    def createFromBuffer(buffer: Buffer, options: CreateFromBufferOptions): NativeImage_ = js.native
     
     /**
       * Creates a new `NativeImage` instance from `dataURL`.
       */
     /* static member */
-    def createFromDataURL(dataURL: String): typings.electron.Electron.NativeImage_ = js.native
+    def createFromDataURL(dataURL: String): NativeImage_ = js.native
     
     /**
       * Creates a new `NativeImage` instance from the NSImage that maps to the given
@@ -1065,14 +662,14 @@ object anon {
       *
       * `echo -e '#import <Cocoa/Cocoa.h>\nint main() { NSLog(@"%@", SYSTEM_IMAGE_NAME);
       * }' | clang -otest -x objective-c -framework Cocoa - && ./test`
-      * 
-    where `SYSTEM_IMAGE_NAME` should be replaced with any value from this list.
+      *
+      * where `SYSTEM_IMAGE_NAME` should be replaced with any value from this list.
       *
       * @platform darwin
       */
     /* static member */
-    def createFromNamedImage(imageName: String): typings.electron.Electron.NativeImage_ = js.native
-    def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): typings.electron.Electron.NativeImage_ = js.native
+    def createFromNamedImage(imageName: String): NativeImage_ = js.native
+    def createFromNamedImage(imageName: String, hslShift: js.Array[Double]): NativeImage_ = js.native
     
     /**
       * Creates a new `NativeImage` instance from a file located at `path`. This method
@@ -1080,7 +677,7 @@ object anon {
       * valid image.
       */
     /* static member */
-    def createFromPath(path: String): typings.electron.Electron.NativeImage_ = js.native
+    def createFromPath(path: String): NativeImage_ = js.native
     
     /**
       * fulfilled with the file's thumbnail preview image, which is a NativeImage.
@@ -1088,7 +685,7 @@ object anon {
       * @platform darwin,win32
       */
     /* static member */
-    def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[typings.electron.Electron.NativeImage_] = js.native
+    def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[NativeImage_] = js.native
   }
   
   trait TypeofNotification extends StObject {
@@ -1114,45 +711,30 @@ object anon {
   
   trait TypeofRenderer extends StObject {
     
-    var BrowserWindowProxy: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy]
+    val contextBridge: typings.electron.Electron.Renderer.ContextBridge
     
-    val contextBridge: ContextBridge
+    val ipcRenderer: typings.electron.Electron.Renderer.IpcRenderer
     
-    val ipcRenderer: IpcRenderer
-    
-    val remote: Remote
-    
-    val webFrame: WebFrame
-    
-    val webviewTag: WebviewTag
+    val webFrame: typings.electron.Electron.Renderer.WebFrame
   }
   object TypeofRenderer {
     
     inline def apply(
-      BrowserWindowProxy: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy],
-      contextBridge: ContextBridge,
-      ipcRenderer: IpcRenderer,
-      remote: Remote,
-      webFrame: WebFrame,
-      webviewTag: WebviewTag
+      contextBridge: typings.electron.Electron.Renderer.ContextBridge,
+      ipcRenderer: typings.electron.Electron.Renderer.IpcRenderer,
+      webFrame: typings.electron.Electron.Renderer.WebFrame
     ): TypeofRenderer = {
-      val __obj = js.Dynamic.literal(BrowserWindowProxy = BrowserWindowProxy.asInstanceOf[js.Any], contextBridge = contextBridge.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any], webviewTag = webviewTag.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(contextBridge = contextBridge.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofRenderer]
     }
     
     extension [Self <: TypeofRenderer](x: Self) {
       
-      inline def setBrowserWindowProxy(value: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy]): Self = StObject.set(x, "BrowserWindowProxy", value.asInstanceOf[js.Any])
+      inline def setContextBridge(value: typings.electron.Electron.Renderer.ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
       
-      inline def setContextBridge(value: ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
+      inline def setIpcRenderer(value: typings.electron.Electron.Renderer.IpcRenderer): Self = StObject.set(x, "ipcRenderer", value.asInstanceOf[js.Any])
       
-      inline def setIpcRenderer(value: IpcRenderer): Self = StObject.set(x, "ipcRenderer", value.asInstanceOf[js.Any])
-      
-      inline def setRemote(value: Remote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
-      
-      inline def setWebFrame(value: WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
-      
-      inline def setWebviewTag(value: WebviewTag): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
+      inline def setWebFrame(value: typings.electron.Electron.Renderer.WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1191,7 +773,18 @@ object anon {
     
     // Docs: https://electronjs.org/docs/api/web-contents
     /**
-      * A WebContents instance with the given ID.
+      * | undefined - A WebContents instance with the given TargetID, or `undefined` if
+      * there is no WebContents associated with the given TargetID.
+      *
+      * When communicating with the Chrome DevTools Protocol, it can be useful to lookup
+      * a WebContents instance based on its assigned TargetID.
+      */
+    /* static member */
+    def fromDevToolsTargetId(targetId: String): WebContents_
+    
+    /**
+      * | undefined - A WebContents instance with the given ID, or `undefined` if there
+      * is no WebContents associated with the given ID.
       */
     /* static member */
     def fromId(id: Double): WebContents_
@@ -1204,7 +797,8 @@ object anon {
     def getAllWebContents(): js.Array[WebContents_]
     
     /**
-      * The web contents that is focused in this application, otherwise returns `null`.
+      * | null - The web contents that is focused in this application, otherwise returns
+      * `null`.
       */
     /* static member */
     def getFocusedWebContents(): WebContents_
@@ -1212,21 +806,47 @@ object anon {
   object TypeofWebContents {
     
     inline def apply(
+      fromDevToolsTargetId: String => WebContents_,
       fromId: Double => WebContents_,
       getAllWebContents: () => js.Array[WebContents_],
       getFocusedWebContents: () => WebContents_
     ): TypeofWebContents = {
-      val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getAllWebContents = js.Any.fromFunction0(getAllWebContents), getFocusedWebContents = js.Any.fromFunction0(getFocusedWebContents))
+      val __obj = js.Dynamic.literal(fromDevToolsTargetId = js.Any.fromFunction1(fromDevToolsTargetId), fromId = js.Any.fromFunction1(fromId), getAllWebContents = js.Any.fromFunction0(getAllWebContents), getFocusedWebContents = js.Any.fromFunction0(getFocusedWebContents))
       __obj.asInstanceOf[TypeofWebContents]
     }
     
     extension [Self <: TypeofWebContents](x: Self) {
+      
+      inline def setFromDevToolsTargetId(value: String => WebContents_): Self = StObject.set(x, "fromDevToolsTargetId", js.Any.fromFunction1(value))
       
       inline def setFromId(value: Double => WebContents_): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       
       inline def setGetAllWebContents(value: () => js.Array[WebContents_]): Self = StObject.set(x, "getAllWebContents", js.Any.fromFunction0(value))
       
       inline def setGetFocusedWebContents(value: () => WebContents_): Self = StObject.set(x, "getFocusedWebContents", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait TypeofWebFrameMain extends StObject {
+    
+    // Docs: https://electronjs.org/docs/api/web-frame-main
+    /**
+      * A frame with the given process and routing IDs, or `undefined` if there is no
+      * WebFrameMain associated with the given IDs.
+      */
+    /* static member */
+    def fromId(processId: Double, routingId: Double): js.UndefOr[WebFrameMain_]
+  }
+  object TypeofWebFrameMain {
+    
+    inline def apply(fromId: (Double, Double) => js.UndefOr[WebFrameMain_]): TypeofWebFrameMain = {
+      val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction2(fromId))
+      __obj.asInstanceOf[TypeofWebFrameMain]
+    }
+    
+    extension [Self <: TypeofWebFrameMain](x: Self) {
+      
+      inline def setFromId(value: (Double, Double) => js.UndefOr[WebFrameMain_]): Self = StObject.set(x, "fromId", js.Any.fromFunction2(value))
     }
   }
 }

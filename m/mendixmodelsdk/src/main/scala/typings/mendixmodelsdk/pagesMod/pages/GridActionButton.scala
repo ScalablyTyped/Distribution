@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/control-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.GridActionButton")
 @js.native
-class GridActionButton protected () extends GridControlBarButton {
+open class GridActionButton protected () extends GridControlBarButton {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,7 @@ class GridActionButton protected () extends GridControlBarButton {
 }
 object GridActionButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridActionButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object GridActionButton {
   inline def createIn(container: ControlBar): GridActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridActionButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridActionButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GridActionButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

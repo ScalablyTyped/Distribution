@@ -76,7 +76,7 @@ object mediaUploadMod {
         
         inline def setAllowedTypesUndefined: Self = StObject.set(x, "allowedTypes", js.undefined)
         
-        inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value :_*))
+        inline def setAllowedTypesVarargs(value: String*): Self = StObject.set(x, "allowedTypes", js.Array(value*))
         
         inline def setGallery(value: Boolean): Self = StObject.set(x, "gallery", value.asInstanceOf[js.Any])
         
@@ -102,7 +102,7 @@ object mediaUploadMod {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
       }
     }
   }

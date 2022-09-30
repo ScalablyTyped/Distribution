@@ -1,18 +1,22 @@
 package typings.reactDnd
 
-import typings.reactDnd.connectorsMod.ConnectDragPreview
-import typings.reactDnd.connectorsMod.ConnectDragSource
-import typings.reactDnd.hooksApiMod.DragObjectWithType
-import typings.reactDnd.hooksApiMod.DragSourceHookSpec
+import typings.reactDnd.typesConnectorsMod.ConnectDragPreview
+import typings.reactDnd.typesConnectorsMod.ConnectDragSource
+import typings.reactDnd.typesMod.DragSourceHookSpec
+import typings.reactDnd.typesMod.FactoryOrInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useDragMod {
   
-  @JSImport("react-dnd/lib/hooks/useDrag", JSImport.Namespace)
+  @JSImport("react-dnd/dist/hooks/useDrag", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useDrag[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](spec: DragSourceHookSpec[DragObject, DropResult, CollectedProps]): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDrag")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview]]
+  inline def useDrag[DragObject, DropResult, CollectedProps](specArg: FactoryOrInstance[DragSourceHookSpec[DragObject, DropResult, CollectedProps]]): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDrag")(specArg.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview]]
+  inline def useDrag[DragObject, DropResult, CollectedProps](
+    specArg: FactoryOrInstance[DragSourceHookSpec[DragObject, DropResult, CollectedProps]],
+    deps: js.Array[Any]
+  ): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDrag")(specArg.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview]]
 }

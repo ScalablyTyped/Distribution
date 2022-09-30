@@ -55,8 +55,7 @@ trait SubSurfaceConfiguration
   def dispose_MSubSurfaceConfiguration(): Unit = js.native
   
   /**
-    * @param color
-    * @hidden
+    * @internal
     * https://zero-radiance.github.io/post/sampling-diffusion/
     *
     * Importance sample the normalized diffuse reflectance profile for the computed value of 's'.

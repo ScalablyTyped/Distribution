@@ -61,7 +61,7 @@ object v46Mod {
     * @param options - The options on how to customize the merge function.
     * @param rootMetaData - The meta data passed to the root items' being merged.
     */
-  inline def deepmergeCustom_PMF_PartialDeepMergeMergeFuncMetaDataMetaMetaData_DeepMergeBuiltInMetaData[PMF /* <: PartialDeepMergeMergeFunc */, MetaData, MetaMetaData /* <: DeepMergeBuiltInMetaData */](options: DeepMergeOptions[MetaData, MetaMetaData]): js.Function1[
+  inline def deepmergeCustom_PMFMetaDataMetaMetaData[PMF /* <: PartialDeepMergeMergeFunc */, MetaData, MetaMetaData /* <: DeepMergeBuiltInMetaData */](options: DeepMergeOptions[MetaData, MetaMetaData]): js.Function1[
     /* objects */ js.Array[Any], 
     DeepMergeHKT[js.Array[Any], GetDeepMergeMergeFunctionsURIs[PMF], MetaData]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepmergeCustom")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

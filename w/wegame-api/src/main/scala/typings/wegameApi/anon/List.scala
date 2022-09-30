@@ -13,12 +13,12 @@ trait List extends StObject {
 }
 object List {
   
-  inline def apply(list: js.Array[AvatarUrl]): List = {
+  inline def apply(list: js.Array[AvatarUrl]): typings.wegameApi.anon.List = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.wegameApi.anon.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.wegameApi.anon.List](x: Self) {
     
     inline def setList(value: js.Array[AvatarUrl]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

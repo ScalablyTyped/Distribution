@@ -1,6 +1,6 @@
 package typings.qiniuJs
 
-import typings.qiniuJs.helperMod.Response
+import typings.qiniuJs.helperMod.ResponseSuccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ object imageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def exif(key: String, domain: String): Response[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("exif")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Response[Any]]
+  inline def exif(key: String, domain: String): js.Promise[ResponseSuccess[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exif")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Any]]]
   
-  inline def imageInfo(key: String, domain: String): Response[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("imageInfo")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Response[Any]]
+  inline def imageInfo(key: String, domain: String): js.Promise[ResponseSuccess[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("imageInfo")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Any]]]
   
   inline def imageMogr2(op: ImageMogr2_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("imageMogr2")(op.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def imageMogr2(op: ImageMogr2_, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("imageMogr2")(op.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]

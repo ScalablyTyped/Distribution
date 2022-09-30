@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.SortItem")
 @js.native
-class SortItem protected ()
+open class SortItem protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.SortItem {
   def this(
     model: AbstractModel,

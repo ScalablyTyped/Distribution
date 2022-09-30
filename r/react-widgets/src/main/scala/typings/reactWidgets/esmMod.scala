@@ -284,7 +284,7 @@ object esmMod {
         * @type {("month"|"year"|"decade"|"century")}
         * @controllable onViewChange
         */
-      inline def view(props: Any, args: Any*): js.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("view")(List(props.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Error | Null]
+      inline def view(props: Any, args: Any*): js.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("view")(scala.List(props.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Error | Null]
       
       /**
         * Defines a list of views the Calendar can traverse through, starting with the

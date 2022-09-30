@@ -1,8 +1,8 @@
 package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tern.ternNumbers.`5`
-import typings.tern.ternNumbers.`6`
+import typings.tern.ternInts.`5`
+import typings.tern.ternInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

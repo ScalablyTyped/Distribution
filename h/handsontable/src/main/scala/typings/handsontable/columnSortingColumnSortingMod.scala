@@ -1,9 +1,9 @@
 package typings.handsontable
 
 import typings.handsontable.coreMod.default
-import typings.handsontable.handsontableNumbers.`-1`
-import typings.handsontable.handsontableNumbers.`0`
-import typings.handsontable.handsontableNumbers.`1`
+import typings.handsontable.handsontableInts.`-1`
+import typings.handsontable.handsontableInts.`0`
+import typings.handsontable.handsontableInts.`1`
 import typings.handsontable.pluginsBaseMod.BasePlugin
 import typings.handsontable.settingsMod.GridSettings
 import org.scalablytyped.runtime.StObject

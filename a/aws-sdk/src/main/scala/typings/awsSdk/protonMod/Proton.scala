@@ -29,14 +29,14 @@ trait Proton
      with Service {
   
   /**
-    * In a management account, an environment account connection request is accepted. When the environment account connection request is accepted, Proton can use the associated IAM role to provision environment infrastructure resources in the associated environment account. For more information, see Environment account connections in the Proton Administrator guide.
+    * In a management account, an environment account connection request is accepted. When the environment account connection request is accepted, Proton can use the associated IAM role to provision environment infrastructure resources in the associated environment account. For more information, see Environment account connections in the Proton User guide.
     */
   def acceptEnvironmentAccountConnection(): Request[AcceptEnvironmentAccountConnectionOutput, AWSError] = js.native
   def acceptEnvironmentAccountConnection(
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptEnvironmentAccountConnectionOutput, Unit]
   ): Request[AcceptEnvironmentAccountConnectionOutput, AWSError] = js.native
   /**
-    * In a management account, an environment account connection request is accepted. When the environment account connection request is accepted, Proton can use the associated IAM role to provision environment infrastructure resources in the associated environment account. For more information, see Environment account connections in the Proton Administrator guide.
+    * In a management account, an environment account connection request is accepted. When the environment account connection request is accepted, Proton can use the associated IAM role to provision environment infrastructure resources in the associated environment account. For more information, see Environment account connections in the Proton User guide.
     */
   def acceptEnvironmentAccountConnection(params: AcceptEnvironmentAccountConnectionInput): Request[AcceptEnvironmentAccountConnectionOutput, AWSError] = js.native
   def acceptEnvironmentAccountConnection(
@@ -45,12 +45,12 @@ trait Proton
   ): Request[AcceptEnvironmentAccountConnectionOutput, AWSError] = js.native
   
   /**
-    * Attempts to cancel a component deployment (for a component that is in the IN_PROGRESS deployment status). For more information about components, see Proton components in the Proton Administrator Guide.
+    * Attempts to cancel a component deployment (for a component that is in the IN_PROGRESS deployment status). For more information about components, see Proton components in the Proton User Guide.
     */
   def cancelComponentDeployment(): Request[CancelComponentDeploymentOutput, AWSError] = js.native
   def cancelComponentDeployment(callback: js.Function2[/* err */ AWSError, /* data */ CancelComponentDeploymentOutput, Unit]): Request[CancelComponentDeploymentOutput, AWSError] = js.native
   /**
-    * Attempts to cancel a component deployment (for a component that is in the IN_PROGRESS deployment status). For more information about components, see Proton components in the Proton Administrator Guide.
+    * Attempts to cancel a component deployment (for a component that is in the IN_PROGRESS deployment status). For more information about components, see Proton components in the Proton User Guide.
     */
   def cancelComponentDeployment(params: CancelComponentDeploymentInput): Request[CancelComponentDeploymentOutput, AWSError] = js.native
   def cancelComponentDeployment(
@@ -59,12 +59,12 @@ trait Proton
   ): Request[CancelComponentDeploymentOutput, AWSError] = js.native
   
   /**
-    * Attempts to cancel an environment deployment on an UpdateEnvironment action, if the deployment is IN_PROGRESS. For more information, see Update an environment in the Proton Administrator guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateEnvironment action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
+    * Attempts to cancel an environment deployment on an UpdateEnvironment action, if the deployment is IN_PROGRESS. For more information, see Update an environment in the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateEnvironment action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
     */
   def cancelEnvironmentDeployment(): Request[CancelEnvironmentDeploymentOutput, AWSError] = js.native
   def cancelEnvironmentDeployment(callback: js.Function2[/* err */ AWSError, /* data */ CancelEnvironmentDeploymentOutput, Unit]): Request[CancelEnvironmentDeploymentOutput, AWSError] = js.native
   /**
-    * Attempts to cancel an environment deployment on an UpdateEnvironment action, if the deployment is IN_PROGRESS. For more information, see Update an environment in the Proton Administrator guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateEnvironment action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
+    * Attempts to cancel an environment deployment on an UpdateEnvironment action, if the deployment is IN_PROGRESS. For more information, see Update an environment in the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateEnvironment action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
     */
   def cancelEnvironmentDeployment(params: CancelEnvironmentDeploymentInput): Request[CancelEnvironmentDeploymentOutput, AWSError] = js.native
   def cancelEnvironmentDeployment(
@@ -73,12 +73,12 @@ trait Proton
   ): Request[CancelEnvironmentDeploymentOutput, AWSError] = js.native
   
   /**
-    * Attempts to cancel a service instance deployment on an UpdateServiceInstance action, if the deployment is IN_PROGRESS. For more information, see Update a service instance in the Proton Administrator guide or the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServiceInstance action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
+    * Attempts to cancel a service instance deployment on an UpdateServiceInstance action, if the deployment is IN_PROGRESS. For more information, see Update a service instance in the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServiceInstance action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
     */
   def cancelServiceInstanceDeployment(): Request[CancelServiceInstanceDeploymentOutput, AWSError] = js.native
   def cancelServiceInstanceDeployment(callback: js.Function2[/* err */ AWSError, /* data */ CancelServiceInstanceDeploymentOutput, Unit]): Request[CancelServiceInstanceDeploymentOutput, AWSError] = js.native
   /**
-    * Attempts to cancel a service instance deployment on an UpdateServiceInstance action, if the deployment is IN_PROGRESS. For more information, see Update a service instance in the Proton Administrator guide or the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServiceInstance action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
+    * Attempts to cancel a service instance deployment on an UpdateServiceInstance action, if the deployment is IN_PROGRESS. For more information, see Update a service instance in the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServiceInstance action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
     */
   def cancelServiceInstanceDeployment(params: CancelServiceInstanceDeploymentInput): Request[CancelServiceInstanceDeploymentOutput, AWSError] = js.native
   def cancelServiceInstanceDeployment(
@@ -87,12 +87,12 @@ trait Proton
   ): Request[CancelServiceInstanceDeploymentOutput, AWSError] = js.native
   
   /**
-    * Attempts to cancel a service pipeline deployment on an UpdateServicePipeline action, if the deployment is IN_PROGRESS. For more information, see Update a service pipeline in the Proton Administrator guide or the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServicePipeline action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
+    * Attempts to cancel a service pipeline deployment on an UpdateServicePipeline action, if the deployment is IN_PROGRESS. For more information, see Update a service pipeline in the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServicePipeline action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
     */
   def cancelServicePipelineDeployment(): Request[CancelServicePipelineDeploymentOutput, AWSError] = js.native
   def cancelServicePipelineDeployment(callback: js.Function2[/* err */ AWSError, /* data */ CancelServicePipelineDeploymentOutput, Unit]): Request[CancelServicePipelineDeploymentOutput, AWSError] = js.native
   /**
-    * Attempts to cancel a service pipeline deployment on an UpdateServicePipeline action, if the deployment is IN_PROGRESS. For more information, see Update a service pipeline in the Proton Administrator guide or the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServicePipeline action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
+    * Attempts to cancel a service pipeline deployment on an UpdateServicePipeline action, if the deployment is IN_PROGRESS. For more information, see Update a service pipeline in the Proton User guide. The following list includes potential cancellation scenarios.   If the cancellation attempt succeeds, the resulting deployment state is CANCELLED.   If the cancellation attempt fails, the resulting deployment state is FAILED.   If the current UpdateServicePipeline action succeeds before the cancellation attempt starts, the resulting deployment state is SUCCEEDED and the cancellation attempt has no effect.  
     */
   def cancelServicePipelineDeployment(params: CancelServicePipelineDeploymentInput): Request[CancelServicePipelineDeploymentOutput, AWSError] = js.native
   def cancelServicePipelineDeployment(
@@ -103,12 +103,12 @@ trait Proton
   var config: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Create an Proton component. A component is an infrastructure extension for a service instance. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Create an Proton component. A component is an infrastructure extension for a service instance. For more information about components, see Proton components in the Proton User Guide.
     */
   def createComponent(): Request[CreateComponentOutput, AWSError] = js.native
   def createComponent(callback: js.Function2[/* err */ AWSError, /* data */ CreateComponentOutput, Unit]): Request[CreateComponentOutput, AWSError] = js.native
   /**
-    * Create an Proton component. A component is an infrastructure extension for a service instance. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Create an Proton component. A component is an infrastructure extension for a service instance. For more information about components, see Proton components in the Proton User Guide.
     */
   def createComponent(params: CreateComponentInput): Request[CreateComponentOutput, AWSError] = js.native
   def createComponent(
@@ -117,12 +117,12 @@ trait Proton
   ): Request[CreateComponentOutput, AWSError] = js.native
   
   /**
-    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:    Amazon Web Services-managed provisioning: Proton makes direct calls to provision your resources.   Self-managed provisioning: Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.   For more information, see Environments and Provisioning methods in the Proton Administrator Guide.
+    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:    Amazon Web Services-managed provisioning: Proton makes direct calls to provision your resources.   Self-managed provisioning: Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.   For more information, see Environments and Provisioning methods in the Proton User Guide.
     */
   def createEnvironment(): Request[CreateEnvironmentOutput, AWSError] = js.native
   def createEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ CreateEnvironmentOutput, Unit]): Request[CreateEnvironmentOutput, AWSError] = js.native
   /**
-    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:    Amazon Web Services-managed provisioning: Proton makes direct calls to provision your resources.   Self-managed provisioning: Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.   For more information, see Environments and Provisioning methods in the Proton Administrator Guide.
+    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:    Amazon Web Services-managed provisioning: Proton makes direct calls to provision your resources.   Self-managed provisioning: Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.   For more information, see Environments and Provisioning methods in the Proton User Guide.
     */
   def createEnvironment(params: CreateEnvironmentInput): Request[CreateEnvironmentOutput, AWSError] = js.native
   def createEnvironment(
@@ -131,14 +131,14 @@ trait Proton
   ): Request[CreateEnvironmentOutput, AWSError] = js.native
   
   /**
-    * Create an environment account connection in an environment account so that environment infrastructure resources can be provisioned in the environment account from a management account. An environment account connection is a secure bi-directional connection between a management account and an environment account that maintains authorization and permissions. For more information, see Environment account connections in the Proton Administrator guide.
+    * Create an environment account connection in an environment account so that environment infrastructure resources can be provisioned in the environment account from a management account. An environment account connection is a secure bi-directional connection between a management account and an environment account that maintains authorization and permissions. For more information, see Environment account connections in the Proton User guide.
     */
   def createEnvironmentAccountConnection(): Request[CreateEnvironmentAccountConnectionOutput, AWSError] = js.native
   def createEnvironmentAccountConnection(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEnvironmentAccountConnectionOutput, Unit]
   ): Request[CreateEnvironmentAccountConnectionOutput, AWSError] = js.native
   /**
-    * Create an environment account connection in an environment account so that environment infrastructure resources can be provisioned in the environment account from a management account. An environment account connection is a secure bi-directional connection between a management account and an environment account that maintains authorization and permissions. For more information, see Environment account connections in the Proton Administrator guide.
+    * Create an environment account connection in an environment account so that environment infrastructure resources can be provisioned in the environment account from a management account. An environment account connection is a secure bi-directional connection between a management account and an environment account that maintains authorization and permissions. For more information, see Environment account connections in the Proton User guide.
     */
   def createEnvironmentAccountConnection(params: CreateEnvironmentAccountConnectionInput): Request[CreateEnvironmentAccountConnectionOutput, AWSError] = js.native
   def createEnvironmentAccountConnection(
@@ -147,12 +147,12 @@ trait Proton
   ): Request[CreateEnvironmentAccountConnectionOutput, AWSError] = js.native
   
   /**
-    * Create an environment template for Proton. For more information, see Environment Templates in the Proton Administrator Guide. You can create an environment template in one of the two following ways:   Register and publish a standard environment template that instructs Proton to deploy and manage environment infrastructure.   Register and publish a customer managed environment template that connects Proton to your existing provisioned infrastructure that you manage. Proton doesn't manage your existing provisioned infrastructure. To create an environment template for customer provisioned and managed infrastructure, include the provisioning parameter and set the value to CUSTOMER_MANAGED. For more information, see Register and publish an environment template in the Proton Administrator Guide.  
+    * Create an environment template for Proton. For more information, see Environment Templates in the Proton User Guide. You can create an environment template in one of the two following ways:   Register and publish a standard environment template that instructs Proton to deploy and manage environment infrastructure.   Register and publish a customer managed environment template that connects Proton to your existing provisioned infrastructure that you manage. Proton doesn't manage your existing provisioned infrastructure. To create an environment template for customer provisioned and managed infrastructure, include the provisioning parameter and set the value to CUSTOMER_MANAGED. For more information, see Register and publish an environment template in the Proton User Guide.  
     */
   def createEnvironmentTemplate(): Request[CreateEnvironmentTemplateOutput, AWSError] = js.native
   def createEnvironmentTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateEnvironmentTemplateOutput, Unit]): Request[CreateEnvironmentTemplateOutput, AWSError] = js.native
   /**
-    * Create an environment template for Proton. For more information, see Environment Templates in the Proton Administrator Guide. You can create an environment template in one of the two following ways:   Register and publish a standard environment template that instructs Proton to deploy and manage environment infrastructure.   Register and publish a customer managed environment template that connects Proton to your existing provisioned infrastructure that you manage. Proton doesn't manage your existing provisioned infrastructure. To create an environment template for customer provisioned and managed infrastructure, include the provisioning parameter and set the value to CUSTOMER_MANAGED. For more information, see Register and publish an environment template in the Proton Administrator Guide.  
+    * Create an environment template for Proton. For more information, see Environment Templates in the Proton User Guide. You can create an environment template in one of the two following ways:   Register and publish a standard environment template that instructs Proton to deploy and manage environment infrastructure.   Register and publish a customer managed environment template that connects Proton to your existing provisioned infrastructure that you manage. Proton doesn't manage your existing provisioned infrastructure. To create an environment template for customer provisioned and managed infrastructure, include the provisioning parameter and set the value to CUSTOMER_MANAGED. For more information, see Register and publish an environment template in the Proton User Guide.  
     */
   def createEnvironmentTemplate(params: CreateEnvironmentTemplateInput): Request[CreateEnvironmentTemplateOutput, AWSError] = js.native
   def createEnvironmentTemplate(
@@ -177,12 +177,12 @@ trait Proton
   ): Request[CreateEnvironmentTemplateVersionOutput, AWSError] = js.native
   
   /**
-    * Create and register a link to a repository that can be used with self-managed provisioning (infrastructure or pipelines) or for template sync configurations. When you create a repository link, Proton creates a service-linked role for you. For more information, see Self-managed provisioning, Template bundles, and Template sync configurations in the Proton Administrator Guide.
+    * Create and register a link to a repository. Proton uses the link to repeatedly access the repository, to either push to it (self-managed provisioning) or pull from it (template sync). You can share a linked repository across multiple resources (like environments using self-managed provisioning, or synced templates). When you create a repository link, Proton creates a service-linked role for you. For more information, see Self-managed provisioning, Template bundles, and Template sync configurations in the Proton User Guide.
     */
   def createRepository(): Request[CreateRepositoryOutput, AWSError] = js.native
   def createRepository(callback: js.Function2[/* err */ AWSError, /* data */ CreateRepositoryOutput, Unit]): Request[CreateRepositoryOutput, AWSError] = js.native
   /**
-    * Create and register a link to a repository that can be used with self-managed provisioning (infrastructure or pipelines) or for template sync configurations. When you create a repository link, Proton creates a service-linked role for you. For more information, see Self-managed provisioning, Template bundles, and Template sync configurations in the Proton Administrator Guide.
+    * Create and register a link to a repository. Proton uses the link to repeatedly access the repository, to either push to it (self-managed provisioning) or pull from it (template sync). You can share a linked repository across multiple resources (like environments using self-managed provisioning, or synced templates). When you create a repository link, Proton creates a service-linked role for you. For more information, see Self-managed provisioning, Template bundles, and Template sync configurations in the Proton User Guide.
     */
   def createRepository(params: CreateRepositoryInput): Request[CreateRepositoryOutput, AWSError] = js.native
   def createRepository(
@@ -191,12 +191,12 @@ trait Proton
   ): Request[CreateRepositoryOutput, AWSError] = js.native
   
   /**
-    * Create an Proton service. An Proton service is an instantiation of a service template and often includes several service instances and pipeline. For more information, see Services in the Proton Administrator Guide and Services in the Proton User Guide.
+    * Create an Proton service. An Proton service is an instantiation of a service template and often includes several service instances and pipeline. For more information, see Services in the Proton User Guide.
     */
   def createService(): Request[CreateServiceOutput, AWSError] = js.native
   def createService(callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceOutput, Unit]): Request[CreateServiceOutput, AWSError] = js.native
   /**
-    * Create an Proton service. An Proton service is an instantiation of a service template and often includes several service instances and pipeline. For more information, see Services in the Proton Administrator Guide and Services in the Proton User Guide.
+    * Create an Proton service. An Proton service is an instantiation of a service template and often includes several service instances and pipeline. For more information, see Services in the Proton User Guide.
     */
   def createService(params: CreateServiceInput): Request[CreateServiceOutput, AWSError] = js.native
   def createService(
@@ -205,12 +205,12 @@ trait Proton
   ): Request[CreateServiceOutput, AWSError] = js.native
   
   /**
-    * Create a service template. The administrator creates a service template to define standardized infrastructure and an optional CI/CD service pipeline. Developers, in turn, select the service template from Proton. If the selected service template includes a service pipeline definition, they provide a link to their source code repository. Proton then deploys and manages the infrastructure defined by the selected service template. For more information, see Service Templates in the Proton Administrator Guide.
+    * Create a service template. The administrator creates a service template to define standardized infrastructure and an optional CI/CD service pipeline. Developers, in turn, select the service template from Proton. If the selected service template includes a service pipeline definition, they provide a link to their source code repository. Proton then deploys and manages the infrastructure defined by the selected service template. For more information, see Proton templates in the Proton User Guide.
     */
   def createServiceTemplate(): Request[CreateServiceTemplateOutput, AWSError] = js.native
   def createServiceTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceTemplateOutput, Unit]): Request[CreateServiceTemplateOutput, AWSError] = js.native
   /**
-    * Create a service template. The administrator creates a service template to define standardized infrastructure and an optional CI/CD service pipeline. Developers, in turn, select the service template from Proton. If the selected service template includes a service pipeline definition, they provide a link to their source code repository. Proton then deploys and manages the infrastructure defined by the selected service template. For more information, see Service Templates in the Proton Administrator Guide.
+    * Create a service template. The administrator creates a service template to define standardized infrastructure and an optional CI/CD service pipeline. Developers, in turn, select the service template from Proton. If the selected service template includes a service pipeline definition, they provide a link to their source code repository. Proton then deploys and manages the infrastructure defined by the selected service template. For more information, see Proton templates in the Proton User Guide.
     */
   def createServiceTemplate(params: CreateServiceTemplateInput): Request[CreateServiceTemplateOutput, AWSError] = js.native
   def createServiceTemplate(
@@ -233,12 +233,12 @@ trait Proton
   ): Request[CreateServiceTemplateVersionOutput, AWSError] = js.native
   
   /**
-    * Set up a template to create new template versions automatically. When a commit is pushed to your registered repository, Proton checks for changes to your repository template bundles. If it detects a template bundle change, a new major or minor version of its template is created, if the version doesn’t already exist. For more information, see Template sync configurations in the Proton Administrator Guide.
+    * Set up a template to create new template versions automatically by tracking a linked repository. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository. When a commit is pushed to your linked repository, Proton checks for changes to your repository template bundles. If it detects a template bundle change, a new major or minor version of its template is created, if the version doesn’t already exist. For more information, see Template sync configurations in the Proton User Guide.
     */
   def createTemplateSyncConfig(): Request[CreateTemplateSyncConfigOutput, AWSError] = js.native
   def createTemplateSyncConfig(callback: js.Function2[/* err */ AWSError, /* data */ CreateTemplateSyncConfigOutput, Unit]): Request[CreateTemplateSyncConfigOutput, AWSError] = js.native
   /**
-    * Set up a template to create new template versions automatically. When a commit is pushed to your registered repository, Proton checks for changes to your repository template bundles. If it detects a template bundle change, a new major or minor version of its template is created, if the version doesn’t already exist. For more information, see Template sync configurations in the Proton Administrator Guide.
+    * Set up a template to create new template versions automatically by tracking a linked repository. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository. When a commit is pushed to your linked repository, Proton checks for changes to your repository template bundles. If it detects a template bundle change, a new major or minor version of its template is created, if the version doesn’t already exist. For more information, see Template sync configurations in the Proton User Guide.
     */
   def createTemplateSyncConfig(params: CreateTemplateSyncConfigInput): Request[CreateTemplateSyncConfigOutput, AWSError] = js.native
   def createTemplateSyncConfig(
@@ -247,12 +247,12 @@ trait Proton
   ): Request[CreateTemplateSyncConfigOutput, AWSError] = js.native
   
   /**
-    * Delete an Proton component resource. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Delete an Proton component resource. For more information about components, see Proton components in the Proton User Guide.
     */
   def deleteComponent(): Request[DeleteComponentOutput, AWSError] = js.native
   def deleteComponent(callback: js.Function2[/* err */ AWSError, /* data */ DeleteComponentOutput, Unit]): Request[DeleteComponentOutput, AWSError] = js.native
   /**
-    * Delete an Proton component resource. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Delete an Proton component resource. For more information about components, see Proton components in the Proton User Guide.
     */
   def deleteComponent(params: DeleteComponentInput): Request[DeleteComponentOutput, AWSError] = js.native
   def deleteComponent(
@@ -275,14 +275,14 @@ trait Proton
   ): Request[DeleteEnvironmentOutput, AWSError] = js.native
   
   /**
-    * In an environment account, delete an environment account connection. After you delete an environment account connection that’s in use by an Proton environment, Proton can’t manage the environment infrastructure resources until a new environment account connection is accepted for the environment account and associated environment. You're responsible for cleaning up provisioned resources that remain without an environment connection. For more information, see Environment account connections in the Proton Administrator guide.
+    * In an environment account, delete an environment account connection. After you delete an environment account connection that’s in use by an Proton environment, Proton can’t manage the environment infrastructure resources until a new environment account connection is accepted for the environment account and associated environment. You're responsible for cleaning up provisioned resources that remain without an environment connection. For more information, see Environment account connections in the Proton User guide.
     */
   def deleteEnvironmentAccountConnection(): Request[DeleteEnvironmentAccountConnectionOutput, AWSError] = js.native
   def deleteEnvironmentAccountConnection(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEnvironmentAccountConnectionOutput, Unit]
   ): Request[DeleteEnvironmentAccountConnectionOutput, AWSError] = js.native
   /**
-    * In an environment account, delete an environment account connection. After you delete an environment account connection that’s in use by an Proton environment, Proton can’t manage the environment infrastructure resources until a new environment account connection is accepted for the environment account and associated environment. You're responsible for cleaning up provisioned resources that remain without an environment connection. For more information, see Environment account connections in the Proton Administrator guide.
+    * In an environment account, delete an environment account connection. After you delete an environment account connection that’s in use by an Proton environment, Proton can’t manage the environment infrastructure resources until a new environment account connection is accepted for the environment account and associated environment. You're responsible for cleaning up provisioned resources that remain without an environment connection. For more information, see Environment account connections in the Proton User guide.
     */
   def deleteEnvironmentAccountConnection(params: DeleteEnvironmentAccountConnectionInput): Request[DeleteEnvironmentAccountConnectionOutput, AWSError] = js.native
   def deleteEnvironmentAccountConnection(
@@ -335,12 +335,12 @@ trait Proton
   ): Request[DeleteRepositoryOutput, AWSError] = js.native
   
   /**
-    * Delete a service, with its instances and pipeline.  You can't delete a service if it has any service instances that have components attached to them. For more information about components, see Proton components in the Proton Administrator Guide. 
+    * Delete a service, with its instances and pipeline.  You can't delete a service if it has any service instances that have components attached to them. For more information about components, see Proton components in the Proton User Guide. 
     */
   def deleteService(): Request[DeleteServiceOutput, AWSError] = js.native
   def deleteService(callback: js.Function2[/* err */ AWSError, /* data */ DeleteServiceOutput, Unit]): Request[DeleteServiceOutput, AWSError] = js.native
   /**
-    * Delete a service, with its instances and pipeline.  You can't delete a service if it has any service instances that have components attached to them. For more information about components, see Proton components in the Proton Administrator Guide. 
+    * Delete a service, with its instances and pipeline.  You can't delete a service if it has any service instances that have components attached to them. For more information about components, see Proton components in the Proton User Guide. 
     */
   def deleteService(params: DeleteServiceInput): Request[DeleteServiceOutput, AWSError] = js.native
   def deleteService(
@@ -391,12 +391,12 @@ trait Proton
   ): Request[DeleteTemplateSyncConfigOutput, AWSError] = js.native
   
   /**
-    * Get detail data for the Proton pipeline service role.
+    * Get detail data for Proton account-wide settings.
     */
   def getAccountSettings(): Request[GetAccountSettingsOutput, AWSError] = js.native
   def getAccountSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetAccountSettingsOutput, Unit]): Request[GetAccountSettingsOutput, AWSError] = js.native
   /**
-    * Get detail data for the Proton pipeline service role.
+    * Get detail data for Proton account-wide settings.
     */
   def getAccountSettings(params: GetAccountSettingsInput): Request[GetAccountSettingsOutput, AWSError] = js.native
   def getAccountSettings(
@@ -405,12 +405,12 @@ trait Proton
   ): Request[GetAccountSettingsOutput, AWSError] = js.native
   
   /**
-    * Get detailed data for a component. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Get detailed data for a component. For more information about components, see Proton components in the Proton User Guide.
     */
   def getComponent(): Request[GetComponentOutput, AWSError] = js.native
   def getComponent(callback: js.Function2[/* err */ AWSError, /* data */ GetComponentOutput, Unit]): Request[GetComponentOutput, AWSError] = js.native
   /**
-    * Get detailed data for a component. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Get detailed data for a component. For more information about components, see Proton components in the Proton User Guide.
     */
   def getComponent(params: GetComponentInput): Request[GetComponentOutput, AWSError] = js.native
   def getComponent(
@@ -433,12 +433,12 @@ trait Proton
   ): Request[GetEnvironmentOutput, AWSError] = js.native
   
   /**
-    * In an environment account, get the detailed data for an environment account connection. For more information, see Environment account connections in the Proton Administrator guide.
+    * In an environment account, get the detailed data for an environment account connection. For more information, see Environment account connections in the Proton User guide.
     */
   def getEnvironmentAccountConnection(): Request[GetEnvironmentAccountConnectionOutput, AWSError] = js.native
   def getEnvironmentAccountConnection(callback: js.Function2[/* err */ AWSError, /* data */ GetEnvironmentAccountConnectionOutput, Unit]): Request[GetEnvironmentAccountConnectionOutput, AWSError] = js.native
   /**
-    * In an environment account, get the detailed data for an environment account connection. For more information, see Environment account connections in the Proton Administrator guide.
+    * In an environment account, get the detailed data for an environment account connection. For more information, see Environment account connections in the Proton User guide.
     */
   def getEnvironmentAccountConnection(params: GetEnvironmentAccountConnectionInput): Request[GetEnvironmentAccountConnectionOutput, AWSError] = js.native
   def getEnvironmentAccountConnection(
@@ -475,12 +475,12 @@ trait Proton
   ): Request[GetEnvironmentTemplateVersionOutput, AWSError] = js.native
   
   /**
-    * Get detail data for a repository.
+    * Get detail data for a linked repository.
     */
   def getRepository(): Request[GetRepositoryOutput, AWSError] = js.native
   def getRepository(callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryOutput, Unit]): Request[GetRepositoryOutput, AWSError] = js.native
   /**
-    * Get detail data for a repository.
+    * Get detail data for a linked repository.
     */
   def getRepository(params: GetRepositoryInput): Request[GetRepositoryOutput, AWSError] = js.native
   def getRepository(
@@ -489,12 +489,12 @@ trait Proton
   ): Request[GetRepositoryOutput, AWSError] = js.native
   
   /**
-    * Get the sync status of a repository used for Proton template sync. For more information about template sync, see .  A repository sync status isn't tied to the Proton Repository resource (or any other Proton resource). Therefore, tags on an Proton Repository resource have no effect on this action. Specifically, you can't use these tags to control access to this action using Attribute-based access control (ABAC). For more information about ABAC, see ABAC in the Proton Administrator Guide. 
+    * Get the sync status of a repository used for Proton template sync. For more information about template sync, see .  A repository sync status isn't tied to the Proton Repository resource (or any other Proton resource). Therefore, tags on an Proton Repository resource have no effect on this action. Specifically, you can't use these tags to control access to this action using Attribute-based access control (ABAC). For more information about ABAC, see ABAC in the Proton User Guide. 
     */
   def getRepositorySyncStatus(): Request[GetRepositorySyncStatusOutput, AWSError] = js.native
   def getRepositorySyncStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetRepositorySyncStatusOutput, Unit]): Request[GetRepositorySyncStatusOutput, AWSError] = js.native
   /**
-    * Get the sync status of a repository used for Proton template sync. For more information about template sync, see .  A repository sync status isn't tied to the Proton Repository resource (or any other Proton resource). Therefore, tags on an Proton Repository resource have no effect on this action. Specifically, you can't use these tags to control access to this action using Attribute-based access control (ABAC). For more information about ABAC, see ABAC in the Proton Administrator Guide. 
+    * Get the sync status of a repository used for Proton template sync. For more information about template sync, see .  A repository sync status isn't tied to the Proton Repository resource (or any other Proton resource). Therefore, tags on an Proton Repository resource have no effect on this action. Specifically, you can't use these tags to control access to this action using Attribute-based access control (ABAC). For more information about ABAC, see ABAC in the Proton User Guide. 
     */
   def getRepositorySyncStatus(params: GetRepositorySyncStatusInput): Request[GetRepositorySyncStatusOutput, AWSError] = js.native
   def getRepositorySyncStatus(
@@ -587,12 +587,12 @@ trait Proton
   ): Request[GetTemplateSyncStatusOutput, AWSError] = js.native
   
   /**
-    * Get a list of component Infrastructure as Code (IaC) outputs. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Get a list of component Infrastructure as Code (IaC) outputs. For more information about components, see Proton components in the Proton User Guide.
     */
   def listComponentOutputs(): Request[ListComponentOutputsOutput, AWSError] = js.native
   def listComponentOutputs(callback: js.Function2[/* err */ AWSError, /* data */ ListComponentOutputsOutput, Unit]): Request[ListComponentOutputsOutput, AWSError] = js.native
   /**
-    * Get a list of component Infrastructure as Code (IaC) outputs. For more information about components, see Proton components in the Proton Administrator Guide.
+    * Get a list of component Infrastructure as Code (IaC) outputs. For more information about components, see Proton components in the Proton User Guide.
     */
   def listComponentOutputs(params: ListComponentOutputsInput): Request[ListComponentOutputsOutput, AWSError] = js.native
   def listComponentOutputs(
@@ -601,14 +601,14 @@ trait Proton
   ): Request[ListComponentOutputsOutput, AWSError] = js.native
   
   /**
-    * List provisioned resources for a component with details. For more information about components, see Proton components in the Proton Administrator Guide.
+    * List provisioned resources for a component with details. For more information about components, see Proton components in the Proton User Guide.
     */
   def listComponentProvisionedResources(): Request[ListComponentProvisionedResourcesOutput, AWSError] = js.native
   def listComponentProvisionedResources(
     callback: js.Function2[/* err */ AWSError, /* data */ ListComponentProvisionedResourcesOutput, Unit]
   ): Request[ListComponentProvisionedResourcesOutput, AWSError] = js.native
   /**
-    * List provisioned resources for a component with details. For more information about components, see Proton components in the Proton Administrator Guide.
+    * List provisioned resources for a component with details. For more information about components, see Proton components in the Proton User Guide.
     */
   def listComponentProvisionedResources(params: ListComponentProvisionedResourcesInput): Request[ListComponentProvisionedResourcesOutput, AWSError] = js.native
   def listComponentProvisionedResources(
@@ -617,12 +617,12 @@ trait Proton
   ): Request[ListComponentProvisionedResourcesOutput, AWSError] = js.native
   
   /**
-    * List components with summary data. You can filter the result list by environment, service, or a single service instance. For more information about components, see Proton components in the Proton Administrator Guide.
+    * List components with summary data. You can filter the result list by environment, service, or a single service instance. For more information about components, see Proton components in the Proton User Guide.
     */
   def listComponents(): Request[ListComponentsOutput, AWSError] = js.native
   def listComponents(callback: js.Function2[/* err */ AWSError, /* data */ ListComponentsOutput, Unit]): Request[ListComponentsOutput, AWSError] = js.native
   /**
-    * List components with summary data. You can filter the result list by environment, service, or a single service instance. For more information about components, see Proton components in the Proton Administrator Guide.
+    * List components with summary data. You can filter the result list by environment, service, or a single service instance. For more information about components, see Proton components in the Proton User Guide.
     */
   def listComponents(params: ListComponentsInput): Request[ListComponentsOutput, AWSError] = js.native
   def listComponents(
@@ -631,14 +631,14 @@ trait Proton
   ): Request[ListComponentsOutput, AWSError] = js.native
   
   /**
-    * View a list of environment account connections. For more information, see Environment account connections in the Proton Administrator guide.
+    * View a list of environment account connections. For more information, see Environment account connections in the Proton User guide.
     */
   def listEnvironmentAccountConnections(): Request[ListEnvironmentAccountConnectionsOutput, AWSError] = js.native
   def listEnvironmentAccountConnections(
     callback: js.Function2[/* err */ AWSError, /* data */ ListEnvironmentAccountConnectionsOutput, Unit]
   ): Request[ListEnvironmentAccountConnectionsOutput, AWSError] = js.native
   /**
-    * View a list of environment account connections. For more information, see Environment account connections in the Proton Administrator guide.
+    * View a list of environment account connections. For more information, see Environment account connections in the Proton User guide.
     */
   def listEnvironmentAccountConnections(params: ListEnvironmentAccountConnectionsInput): Request[ListEnvironmentAccountConnectionsOutput, AWSError] = js.native
   def listEnvironmentAccountConnections(
@@ -719,12 +719,12 @@ trait Proton
   ): Request[ListEnvironmentsOutput, AWSError] = js.native
   
   /**
-    * List repositories with detail data.
+    * List linked repositories with detail data.
     */
   def listRepositories(): Request[ListRepositoriesOutput, AWSError] = js.native
   def listRepositories(callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesOutput, Unit]): Request[ListRepositoriesOutput, AWSError] = js.native
   /**
-    * List repositories with detail data.
+    * List linked repositories with detail data.
     */
   def listRepositories(params: ListRepositoriesInput): Request[ListRepositoriesOutput, AWSError] = js.native
   def listRepositories(
@@ -863,12 +863,12 @@ trait Proton
   ): Request[ListServicesOutput, AWSError] = js.native
   
   /**
-    * List tags for a resource. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * List tags for a resource. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   def listTagsForResource(): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    * List tags for a resource. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * List tags for a resource. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   def listTagsForResource(params: ListTagsForResourceInput): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(
@@ -877,14 +877,14 @@ trait Proton
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
   
   /**
-    * Notify Proton of status changes to a provisioned resource when you use self-managed provisioning. For more information, see Self-managed provisioning in the Proton Administrator Guide.
+    * Notify Proton of status changes to a provisioned resource when you use self-managed provisioning. For more information, see Self-managed provisioning in the Proton User Guide.
     */
   def notifyResourceDeploymentStatusChange(): Request[NotifyResourceDeploymentStatusChangeOutput, AWSError] = js.native
   def notifyResourceDeploymentStatusChange(
     callback: js.Function2[/* err */ AWSError, /* data */ NotifyResourceDeploymentStatusChangeOutput, Unit]
   ): Request[NotifyResourceDeploymentStatusChangeOutput, AWSError] = js.native
   /**
-    * Notify Proton of status changes to a provisioned resource when you use self-managed provisioning. For more information, see Self-managed provisioning in the Proton Administrator Guide.
+    * Notify Proton of status changes to a provisioned resource when you use self-managed provisioning. For more information, see Self-managed provisioning in the Proton User Guide.
     */
   def notifyResourceDeploymentStatusChange(params: NotifyResourceDeploymentStatusChangeInput): Request[NotifyResourceDeploymentStatusChangeOutput, AWSError] = js.native
   def notifyResourceDeploymentStatusChange(
@@ -893,14 +893,14 @@ trait Proton
   ): Request[NotifyResourceDeploymentStatusChangeOutput, AWSError] = js.native
   
   /**
-    * In a management account, reject an environment account connection from another environment account. After you reject an environment account connection request, you can't accept or use the rejected environment account connection. You can’t reject an environment account connection that's connected to an environment. For more information, see Environment account connections in the Proton Administrator guide.
+    * In a management account, reject an environment account connection from another environment account. After you reject an environment account connection request, you can't accept or use the rejected environment account connection. You can’t reject an environment account connection that's connected to an environment. For more information, see Environment account connections in the Proton User guide.
     */
   def rejectEnvironmentAccountConnection(): Request[RejectEnvironmentAccountConnectionOutput, AWSError] = js.native
   def rejectEnvironmentAccountConnection(
     callback: js.Function2[/* err */ AWSError, /* data */ RejectEnvironmentAccountConnectionOutput, Unit]
   ): Request[RejectEnvironmentAccountConnectionOutput, AWSError] = js.native
   /**
-    * In a management account, reject an environment account connection from another environment account. After you reject an environment account connection request, you can't accept or use the rejected environment account connection. You can’t reject an environment account connection that's connected to an environment. For more information, see Environment account connections in the Proton Administrator guide.
+    * In a management account, reject an environment account connection from another environment account. After you reject an environment account connection request, you can't accept or use the rejected environment account connection. You can’t reject an environment account connection that's connected to an environment. For more information, see Environment account connections in the Proton User guide.
     */
   def rejectEnvironmentAccountConnection(params: RejectEnvironmentAccountConnectionInput): Request[RejectEnvironmentAccountConnectionOutput, AWSError] = js.native
   def rejectEnvironmentAccountConnection(
@@ -909,12 +909,12 @@ trait Proton
   ): Request[RejectEnvironmentAccountConnectionOutput, AWSError] = js.native
   
   /**
-    * Tag a resource. A tag is a key-value pair of metadata that you associate with an Proton resource. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * Tag a resource. A tag is a key-value pair of metadata that you associate with an Proton resource. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   def tagResource(): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]): Request[TagResourceOutput, AWSError] = js.native
   /**
-    * Tag a resource. A tag is a key-value pair of metadata that you associate with an Proton resource. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * Tag a resource. A tag is a key-value pair of metadata that you associate with an Proton resource. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   def tagResource(params: TagResourceInput): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(
@@ -923,12 +923,12 @@ trait Proton
   ): Request[TagResourceOutput, AWSError] = js.native
   
   /**
-    * Remove a customer tag from a resource. A tag is a key-value pair of metadata associated with an Proton resource. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * Remove a customer tag from a resource. A tag is a key-value pair of metadata associated with an Proton resource. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   def untagResource(): Request[UntagResourceOutput, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]): Request[UntagResourceOutput, AWSError] = js.native
   /**
-    * Remove a customer tag from a resource. A tag is a key-value pair of metadata associated with an Proton resource. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * Remove a customer tag from a resource. A tag is a key-value pair of metadata associated with an Proton resource. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   def untagResource(params: UntagResourceInput): Request[UntagResourceOutput, AWSError] = js.native
   def untagResource(
@@ -937,12 +937,12 @@ trait Proton
   ): Request[UntagResourceOutput, AWSError] = js.native
   
   /**
-    * Update the Proton service pipeline role or repository settings.
+    * Update Proton settings that are used for multiple services in the Amazon Web Services account.
     */
   def updateAccountSettings(): Request[UpdateAccountSettingsOutput, AWSError] = js.native
   def updateAccountSettings(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccountSettingsOutput, Unit]): Request[UpdateAccountSettingsOutput, AWSError] = js.native
   /**
-    * Update the Proton service pipeline role or repository settings.
+    * Update Proton settings that are used for multiple services in the Amazon Web Services account.
     */
   def updateAccountSettings(params: UpdateAccountSettingsInput): Request[UpdateAccountSettingsOutput, AWSError] = js.native
   def updateAccountSettings(
@@ -951,12 +951,12 @@ trait Proton
   ): Request[UpdateAccountSettingsOutput, AWSError] = js.native
   
   /**
-    * Update a component. There are a few modes for updating a component. The deploymentType field defines the mode.  You can't update a component while its deployment status, or the deployment status of a service instance attached to it, is IN_PROGRESS.  For more information about components, see Proton components in the Proton Administrator Guide.
+    * Update a component. There are a few modes for updating a component. The deploymentType field defines the mode.  You can't update a component while its deployment status, or the deployment status of a service instance attached to it, is IN_PROGRESS.  For more information about components, see Proton components in the Proton User Guide.
     */
   def updateComponent(): Request[UpdateComponentOutput, AWSError] = js.native
   def updateComponent(callback: js.Function2[/* err */ AWSError, /* data */ UpdateComponentOutput, Unit]): Request[UpdateComponentOutput, AWSError] = js.native
   /**
-    * Update a component. There are a few modes for updating a component. The deploymentType field defines the mode.  You can't update a component while its deployment status, or the deployment status of a service instance attached to it, is IN_PROGRESS.  For more information about components, see Proton components in the Proton Administrator Guide.
+    * Update a component. There are a few modes for updating a component. The deploymentType field defines the mode.  You can't update a component while its deployment status, or the deployment status of a service instance attached to it, is IN_PROGRESS.  For more information about components, see Proton components in the Proton User Guide.
     */
   def updateComponent(params: UpdateComponentInput): Request[UpdateComponentOutput, AWSError] = js.native
   def updateComponent(
@@ -965,12 +965,12 @@ trait Proton
   ): Request[UpdateComponentOutput, AWSError] = js.native
   
   /**
-    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn and provisioningRepository parameter to update or connect to an environment account connection. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either the environmentAccountConnectionId or protonServiceRoleArn parameter and value. You can’t update both. If the environment was configured for Amazon Web Services-managed provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn and environmentAccountConnectionId parameters. For more information, see Environments and Provisioning methods in the Proton Administrator Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
+    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn and provisioningRepository parameter to update or connect to an environment account connection. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either the environmentAccountConnectionId or protonServiceRoleArn parameter and value. You can’t update both. If the environment was configured for Amazon Web Services-managed provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn and environmentAccountConnectionId parameters. For more information, see Environments and Provisioning methods in the Proton User Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
     */
   def updateEnvironment(): Request[UpdateEnvironmentOutput, AWSError] = js.native
   def updateEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEnvironmentOutput, Unit]): Request[UpdateEnvironmentOutput, AWSError] = js.native
   /**
-    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn and provisioningRepository parameter to update or connect to an environment account connection. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either the environmentAccountConnectionId or protonServiceRoleArn parameter and value. You can’t update both. If the environment was configured for Amazon Web Services-managed provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn and environmentAccountConnectionId parameters. For more information, see Environments and Provisioning methods in the Proton Administrator Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
+    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn and provisioningRepository parameter to update or connect to an environment account connection. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either the environmentAccountConnectionId or protonServiceRoleArn parameter and value. You can’t update both. If the environment was configured for Amazon Web Services-managed provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn and environmentAccountConnectionId parameters. For more information, see Environments and Provisioning methods in the Proton User Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
     */
   def updateEnvironment(params: UpdateEnvironmentInput): Request[UpdateEnvironmentOutput, AWSError] = js.native
   def updateEnvironment(
@@ -979,14 +979,14 @@ trait Proton
   ): Request[UpdateEnvironmentOutput, AWSError] = js.native
   
   /**
-    * In an environment account, update an environment account connection to use a new IAM role. For more information, see Environment account connections in the Proton Administrator guide.
+    * In an environment account, update an environment account connection to use a new IAM role. For more information, see Environment account connections in the Proton User guide.
     */
   def updateEnvironmentAccountConnection(): Request[UpdateEnvironmentAccountConnectionOutput, AWSError] = js.native
   def updateEnvironmentAccountConnection(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEnvironmentAccountConnectionOutput, Unit]
   ): Request[UpdateEnvironmentAccountConnectionOutput, AWSError] = js.native
   /**
-    * In an environment account, update an environment account connection to use a new IAM role. For more information, see Environment account connections in the Proton Administrator guide.
+    * In an environment account, update an environment account connection to use a new IAM role. For more information, see Environment account connections in the Proton User guide.
     */
   def updateEnvironmentAccountConnection(params: UpdateEnvironmentAccountConnectionInput): Request[UpdateEnvironmentAccountConnectionOutput, AWSError] = js.native
   def updateEnvironmentAccountConnection(
@@ -1025,12 +1025,12 @@ trait Proton
   ): Request[UpdateEnvironmentTemplateVersionOutput, AWSError] = js.native
   
   /**
-    * Edit a service description or use a spec to add and delete service instances.  Existing service instances and the service pipeline can't be edited using this API. They can only be deleted.  Use the description parameter to modify the description. Edit the spec parameter to add or delete instances.  You can't delete a service instance (remove it from the spec) if it has an attached component. For more information about components, see Proton components in the Proton Administrator Guide. 
+    * Edit a service description or use a spec to add and delete service instances.  Existing service instances and the service pipeline can't be edited using this API. They can only be deleted.  Use the description parameter to modify the description. Edit the spec parameter to add or delete instances.  You can't delete a service instance (remove it from the spec) if it has an attached component. For more information about components, see Proton components in the Proton User Guide. 
     */
   def updateService(): Request[UpdateServiceOutput, AWSError] = js.native
   def updateService(callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceOutput, Unit]): Request[UpdateServiceOutput, AWSError] = js.native
   /**
-    * Edit a service description or use a spec to add and delete service instances.  Existing service instances and the service pipeline can't be edited using this API. They can only be deleted.  Use the description parameter to modify the description. Edit the spec parameter to add or delete instances.  You can't delete a service instance (remove it from the spec) if it has an attached component. For more information about components, see Proton components in the Proton Administrator Guide. 
+    * Edit a service description or use a spec to add and delete service instances.  Existing service instances and the service pipeline can't be edited using this API. They can only be deleted.  Use the description parameter to modify the description. Edit the spec parameter to add or delete instances.  You can't delete a service instance (remove it from the spec) if it has an attached component. For more information about components, see Proton components in the Proton User Guide. 
     */
   def updateService(params: UpdateServiceInput): Request[UpdateServiceOutput, AWSError] = js.native
   def updateService(
@@ -1039,12 +1039,12 @@ trait Proton
   ): Request[UpdateServiceOutput, AWSError] = js.native
   
   /**
-    * Update a service instance. There are a few modes for updating a service instance. The deploymentType field defines the mode.  You can't update a service instance while its deployment status, or the deployment status of a component attached to it, is IN_PROGRESS. For more information about components, see Proton components in the Proton Administrator Guide. 
+    * Update a service instance. There are a few modes for updating a service instance. The deploymentType field defines the mode.  You can't update a service instance while its deployment status, or the deployment status of a component attached to it, is IN_PROGRESS. For more information about components, see Proton components in the Proton User Guide. 
     */
   def updateServiceInstance(): Request[UpdateServiceInstanceOutput, AWSError] = js.native
   def updateServiceInstance(callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceInstanceOutput, Unit]): Request[UpdateServiceInstanceOutput, AWSError] = js.native
   /**
-    * Update a service instance. There are a few modes for updating a service instance. The deploymentType field defines the mode.  You can't update a service instance while its deployment status, or the deployment status of a component attached to it, is IN_PROGRESS. For more information about components, see Proton components in the Proton Administrator Guide. 
+    * Update a service instance. There are a few modes for updating a service instance. The deploymentType field defines the mode.  You can't update a service instance while its deployment status, or the deployment status of a component attached to it, is IN_PROGRESS. For more information about components, see Proton components in the Proton User Guide. 
     */
   def updateServiceInstance(params: UpdateServiceInstanceInput): Request[UpdateServiceInstanceOutput, AWSError] = js.native
   def updateServiceInstance(
@@ -1095,12 +1095,12 @@ trait Proton
   ): Request[UpdateServiceTemplateVersionOutput, AWSError] = js.native
   
   /**
-    * Update template sync configuration parameters, except for the templateName and templateType.
+    * Update template sync configuration parameters, except for the templateName and templateType. Repository details (branch, name, and provider) should be of a linked repository. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository.
     */
   def updateTemplateSyncConfig(): Request[UpdateTemplateSyncConfigOutput, AWSError] = js.native
   def updateTemplateSyncConfig(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTemplateSyncConfigOutput, Unit]): Request[UpdateTemplateSyncConfigOutput, AWSError] = js.native
   /**
-    * Update template sync configuration parameters, except for the templateName and templateType.
+    * Update template sync configuration parameters, except for the templateName and templateType. Repository details (branch, name, and provider) should be of a linked repository. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository.
     */
   def updateTemplateSyncConfig(params: UpdateTemplateSyncConfigInput): Request[UpdateTemplateSyncConfigOutput, AWSError] = js.native
   def updateTemplateSyncConfig(

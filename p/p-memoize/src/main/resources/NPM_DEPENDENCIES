@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-memoize" : "4.0.1"
+      "p-memoize" : "7.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-memoize" : "4.0.1"
+      "p-memoize" : "7.1.0"
     }
   ],
   "compile-devDependencies" : [

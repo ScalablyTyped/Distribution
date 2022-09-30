@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.NanoflowParameter")
 @js.native
-class NanoflowParameter protected ()
+open class NanoflowParameter protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.NanoflowParameter {
   def this(
     model: AbstractModel,

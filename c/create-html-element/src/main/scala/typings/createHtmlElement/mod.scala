@@ -1,6 +1,6 @@
 package typings.createHtmlElement
 
-import typings.stringifyAttributes.mod.Attributes
+import typings.stringifyAttributes.mod.HTMLAttributes
 import typings.typeFest.mergeExclusiveMod.MergeExclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,46 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Create a HTML element string.
-  @example
-  ```
-  import createHtmlElement = require('create-html-element');
-  createHtmlElement({
-  	name: 'h1',
-  	attributes: {
-  		class: 'unicorn',
-  		rainbow: true,
-  		horse: false,
-  		number: 1,
-  		multiple: ['a', 'b']
-  	},
-  	html: '🦄'
-  });
-  //=> '<h1 class="unicorn" rainbow number="1" multiple="a b">🦄</h1>'
-  createHtmlElement({text: 'Hello <em>World</em>'});
-  //=> '<div>Hello &lt;em&gt;World&lt;/em&gt;</div>'
-  ```
-  */
-  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("create-html-element", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait BaseOptions extends StObject {
     
     /**
-    		HTML tag attributes.
-    		*/
-    var attributes: js.UndefOr[Attributes] = js.undefined
+    	HTML tag attributes.
+    	*/
+    val attributes: js.UndefOr[HTMLAttributes] = js.undefined
     
     /**
-    		HTML tag name.
-    		@default 'div'
-    		*/
-    var name: js.UndefOr[String] = js.undefined
+    	HTML tag name.
+    	@default 'div'
+    	*/
+    val name: js.UndefOr[String] = js.undefined
   }
   object BaseOptions {
     
@@ -58,7 +37,7 @@ object mod {
     
     extension [Self <: BaseOptions](x: Self) {
       
-      inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: HTMLAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
@@ -71,9 +50,9 @@ object mod {
   trait HtmlOptions extends StObject {
     
     /**
-    		HTML tag value in unescaped HTML.
-    		*/
-    var html: js.UndefOr[String] = js.undefined
+    	HTML tag value in unescaped HTML.
+    	*/
+    val html: js.UndefOr[String] = js.undefined
   }
   object HtmlOptions {
     
@@ -95,9 +74,9 @@ object mod {
   trait TextOptions extends StObject {
     
     /**
-    		HTML tag value in escaped HTML.
-    		*/
-    var text: js.UndefOr[String] = js.undefined
+    	HTML tag value in escaped HTML.
+    	*/
+    val text: js.UndefOr[String] = js.undefined
   }
   object TextOptions {
     

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Omit
 import typings.std.Partial
+import typings.std.PromiseLike
 import typings.std.Record
 import typings.std.ReturnType
 import typings.xstate.anon.Activities
@@ -184,7 +185,7 @@ TOutputEvent /* <: EventObject */] = js.Function3[
 /* context */ TContext, 
 /* event */ TSourceEvent, 
 /* meta */ InvokeMeta, 
-js.Thenable[TFinalContext] | (StateMachine[TFinalContext, Any, Any, Any, Any, Any, Any]) | Subscribable[EventObject] | (InvokeCallback[TInputEvent, TOutputEvent]) | (Behavior[Any, Any])]
+PromiseLike[TFinalContext] | (StateMachine[TFinalContext, Any, Any, Any, Any, Any, Any]) | Subscribable[EventObject] | (InvokeCallback[TInputEvent, TOutputEvent]) | (Behavior[Any, Any])]
 
 type IsAny[T] = Equals[T, Any]
 
@@ -296,7 +297,7 @@ type SimpleOrStateNodeConfig[TContext, TStateSchema /* <: StateSchema[Any] */, T
 
 type SingleOrArray[T] = js.Array[T] | T
 
-type Spawnable = AnyStateMachine | js.Thenable[Any] | (InvokeCallback[AnyEventObject, AnyEventObject]) | InteropObservable[Any] | Subscribable[Any] | (Behavior[Any, Any])
+type Spawnable = AnyStateMachine | PromiseLike[Any] | (InvokeCallback[AnyEventObject, AnyEventObject]) | InteropObservable[Any] | Subscribable[Any] | (Behavior[Any, Any])
 
 type SpawnedActorRef[TEvent /* <: EventObject */, TEmitted] = ActorRef[TEvent, TEmitted]
 

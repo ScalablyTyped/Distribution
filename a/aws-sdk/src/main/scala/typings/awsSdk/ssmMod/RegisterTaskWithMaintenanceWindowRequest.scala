@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegisterTaskWithMaintenanceWindowRequest extends StObject {
   
   /**
+    * The CloudWatch alarm you want to apply to your maintenance window task.
+    */
+  var AlarmConfiguration: js.UndefOr[typings.awsSdk.ssmMod.AlarmConfiguration] = js.undefined
+  
+  /**
     * User-provided idempotency token.
     */
   var ClientToken: js.UndefOr[typings.awsSdk.ssmMod.ClientToken] = js.undefined
@@ -93,6 +98,10 @@ object RegisterTaskWithMaintenanceWindowRequest {
   }
   
   extension [Self <: RegisterTaskWithMaintenanceWindowRequest](x: Self) {
+    
+    inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "AlarmConfiguration", js.undefined)
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

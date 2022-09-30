@@ -1,22 +1,26 @@
 package typings.terminalImage
 
-import typings.node.Buffer
 import typings.node.anon.Data
+import typings.node.bufferMod.global.Buffer
 import typings.std.ArrayBufferLike
 import typings.std.ArrayLike
 import typings.std.IterableIterator
-import typings.std.Uint8Array
 import typings.terminalImage.mod.RenderFrame
+import typings.terminalImage.terminalImageInts.`-1`
+import typings.terminalImage.terminalImageInts.`0`
+import typings.terminalImage.terminalImageInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Readonly<node.Buffer> */
+  /* Inlined std.Readonly<node.buffer.<global>.Buffer> */
   trait ReadonlyBuffer extends StObject {
     
     val BYTES_PER_ELEMENT: Double
+    
+    def at(index: Double): js.UndefOr[Double]
     
     val buffer: ArrayBufferLike
     
@@ -24,21 +28,21 @@ object anon {
     
     val byteOffset: Double
     
-    def compare(otherBuffer: Uint8Array): Double
+    def compare(target: js.typedarray.Uint8Array): `-1` | `0` | `1`
     
-    def copy(targetBuffer: Uint8Array): Double
+    def copy(target: js.typedarray.Uint8Array): Double
     
     def copyWithin(target: Double, start: Double): this.type
     
     def entries(): IterableIterator[js.Tuple2[Double, Double]]
     
-    def equals(otherBuffer: Uint8Array): Boolean
+    def equals(otherBuffer: js.typedarray.Uint8Array): Boolean
     
-    def every(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Boolean
+    def every(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): Boolean
     
     def fill(value: String): this.type
     
-    def filter(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Uint8Array
+    def filter(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): js.typedarray.Uint8Array
     
     def find(predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, Boolean]): js.UndefOr[Double]
     
@@ -58,7 +62,7 @@ object anon {
     
     val length: Double
     
-    def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Uint8Array
+    def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): js.typedarray.Uint8Array
     
     def readBigInt64BE(): js.BigInt
     
@@ -67,6 +71,10 @@ object anon {
     def readBigUInt64BE(): js.BigInt
     
     def readBigUInt64LE(): js.BigInt
+    
+    def readBigUint64BE(): js.BigInt
+    
+    def readBigUint64LE(): js.BigInt
     
     def readDoubleBE(): Double
     
@@ -104,6 +112,20 @@ object anon {
     
     def readUIntLE(offset: Double, byteLength: Double): Double
     
+    def readUint16BE(): Double
+    
+    def readUint16LE(): Double
+    
+    def readUint32BE(): Double
+    
+    def readUint32LE(): Double
+    
+    def readUint8(): Double
+    
+    def readUintBE(offset: Double, byteLength: Double): Double
+    
+    def readUintLE(offset: Double, byteLength: Double): Double
+    
     def reduce(
       callbackfn: js.Function4[
           /* previousValue */ Double, 
@@ -130,7 +152,7 @@ object anon {
     
     def slice(): Buffer
     
-    def some(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Boolean
+    def some(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): Boolean
     
     def sort(): this.type
     
@@ -155,6 +177,10 @@ object anon {
     def writeBigUInt64BE(value: js.BigInt): Double
     
     def writeBigUInt64LE(value: js.BigInt): Double
+    
+    def writeBigUint64BE(value: js.BigInt): Double
+    
+    def writeBigUint64LE(value: js.BigInt): Double
     
     def writeDoubleBE(value: Double): Double
     
@@ -191,22 +217,37 @@ object anon {
     def writeUIntBE(value: Double, offset: Double, byteLength: Double): Double
     
     def writeUIntLE(value: Double, offset: Double, byteLength: Double): Double
+    
+    def writeUint16BE(value: Double): Double
+    
+    def writeUint16LE(value: Double): Double
+    
+    def writeUint32BE(value: Double): Double
+    
+    def writeUint32LE(value: Double): Double
+    
+    def writeUint8(value: Double): Double
+    
+    def writeUintBE(value: Double, offset: Double, byteLength: Double): Double
+    
+    def writeUintLE(value: Double, offset: Double, byteLength: Double): Double
   }
   object ReadonlyBuffer {
     
     inline def apply(
       BYTES_PER_ELEMENT: Double,
+      at: Double => js.UndefOr[Double],
       buffer: ArrayBufferLike,
       byteLength: Double,
       byteOffset: Double,
-      compare: Uint8Array => Double,
-      copy: Uint8Array => Double,
+      compare: js.typedarray.Uint8Array => `-1` | `0` | `1`,
+      copy: js.typedarray.Uint8Array => Double,
       copyWithin: (Double, Double) => ReadonlyBuffer,
       entries: () => IterableIterator[js.Tuple2[Double, Double]],
-      equals_ : Uint8Array => Boolean,
-      every: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean,
+      equals_ : js.typedarray.Uint8Array => Boolean,
+      every: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Any] => Boolean,
       fill: String => ReadonlyBuffer,
-      filter: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Uint8Array,
+      filter: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Any] => js.typedarray.Uint8Array,
       find: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => js.UndefOr[Double],
       findIndex: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => Double,
       forEach: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Unit] => Unit,
@@ -216,11 +257,13 @@ object anon {
       keys: () => IterableIterator[Double],
       lastIndexOf: String => Double,
       length: Double,
-      map: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Double] => Uint8Array,
+      map: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Double] => js.typedarray.Uint8Array,
       readBigInt64BE: () => js.BigInt,
       readBigInt64LE: () => js.BigInt,
       readBigUInt64BE: () => js.BigInt,
       readBigUInt64LE: () => js.BigInt,
+      readBigUint64BE: () => js.BigInt,
+      readBigUint64LE: () => js.BigInt,
       readDoubleBE: () => Double,
       readDoubleLE: () => Double,
       readFloatBE: () => Double,
@@ -239,6 +282,13 @@ object anon {
       readUInt8: () => Double,
       readUIntBE: (Double, Double) => Double,
       readUIntLE: (Double, Double) => Double,
+      readUint16BE: () => Double,
+      readUint16LE: () => Double,
+      readUint32BE: () => Double,
+      readUint32LE: () => Double,
+      readUint8: () => Double,
+      readUintBE: (Double, Double) => Double,
+      readUintLE: (Double, Double) => Double,
       reduce: js.Function4[
           /* previousValue */ Double, 
           /* currentValue */ Double, 
@@ -256,7 +306,7 @@ object anon {
       reverse: () => ReadonlyBuffer,
       set: ArrayLike[Double] => Unit,
       slice: () => Buffer,
-      some: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean,
+      some: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Any] => Boolean,
       sort: () => ReadonlyBuffer,
       subarray: () => Buffer,
       swap16: () => Buffer,
@@ -269,6 +319,8 @@ object anon {
       writeBigInt64LE: js.BigInt => Double,
       writeBigUInt64BE: js.BigInt => Double,
       writeBigUInt64LE: js.BigInt => Double,
+      writeBigUint64BE: js.BigInt => Double,
+      writeBigUint64LE: js.BigInt => Double,
       writeDoubleBE: Double => Double,
       writeDoubleLE: Double => Double,
       writeFloatBE: Double => Double,
@@ -286,14 +338,23 @@ object anon {
       writeUInt32LE: Double => Double,
       writeUInt8: Double => Double,
       writeUIntBE: (Double, Double, Double) => Double,
-      writeUIntLE: (Double, Double, Double) => Double
+      writeUIntLE: (Double, Double, Double) => Double,
+      writeUint16BE: Double => Double,
+      writeUint16LE: Double => Double,
+      writeUint32BE: Double => Double,
+      writeUint32LE: Double => Double,
+      writeUint8: Double => Double,
+      writeUintBE: (Double, Double, Double) => Double,
+      writeUintLE: (Double, Double, Double) => Double
     ): ReadonlyBuffer = {
-      val __obj = js.Dynamic.literal(BYTES_PER_ELEMENT = BYTES_PER_ELEMENT.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any], byteLength = byteLength.asInstanceOf[js.Any], byteOffset = byteOffset.asInstanceOf[js.Any], compare = js.Any.fromFunction1(compare), copy = js.Any.fromFunction1(copy), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), readBigInt64BE = js.Any.fromFunction0(readBigInt64BE), readBigInt64LE = js.Any.fromFunction0(readBigInt64LE), readBigUInt64BE = js.Any.fromFunction0(readBigUInt64BE), readBigUInt64LE = js.Any.fromFunction0(readBigUInt64LE), readDoubleBE = js.Any.fromFunction0(readDoubleBE), readDoubleLE = js.Any.fromFunction0(readDoubleLE), readFloatBE = js.Any.fromFunction0(readFloatBE), readFloatLE = js.Any.fromFunction0(readFloatLE), readInt16BE = js.Any.fromFunction0(readInt16BE), readInt16LE = js.Any.fromFunction0(readInt16LE), readInt32BE = js.Any.fromFunction0(readInt32BE), readInt32LE = js.Any.fromFunction0(readInt32LE), readInt8 = js.Any.fromFunction0(readInt8), readIntBE = js.Any.fromFunction2(readIntBE), readIntLE = js.Any.fromFunction2(readIntLE), readUInt16BE = js.Any.fromFunction0(readUInt16BE), readUInt16LE = js.Any.fromFunction0(readUInt16LE), readUInt32BE = js.Any.fromFunction0(readUInt32BE), readUInt32LE = js.Any.fromFunction0(readUInt32LE), readUInt8 = js.Any.fromFunction0(readUInt8), readUIntBE = js.Any.fromFunction2(readUIntBE), readUIntLE = js.Any.fromFunction2(readUIntLE), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), set = js.Any.fromFunction1(set), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), subarray = js.Any.fromFunction0(subarray), swap16 = js.Any.fromFunction0(swap16), swap32 = js.Any.fromFunction0(swap32), swap64 = js.Any.fromFunction0(swap64), toJSON = js.Any.fromFunction0(toJSON), values = js.Any.fromFunction0(values), write = js.Any.fromFunction1(write), writeBigInt64BE = js.Any.fromFunction1(writeBigInt64BE), writeBigInt64LE = js.Any.fromFunction1(writeBigInt64LE), writeBigUInt64BE = js.Any.fromFunction1(writeBigUInt64BE), writeBigUInt64LE = js.Any.fromFunction1(writeBigUInt64LE), writeDoubleBE = js.Any.fromFunction1(writeDoubleBE), writeDoubleLE = js.Any.fromFunction1(writeDoubleLE), writeFloatBE = js.Any.fromFunction1(writeFloatBE), writeFloatLE = js.Any.fromFunction1(writeFloatLE), writeInt16BE = js.Any.fromFunction1(writeInt16BE), writeInt16LE = js.Any.fromFunction1(writeInt16LE), writeInt32BE = js.Any.fromFunction1(writeInt32BE), writeInt32LE = js.Any.fromFunction1(writeInt32LE), writeInt8 = js.Any.fromFunction1(writeInt8), writeIntBE = js.Any.fromFunction3(writeIntBE), writeIntLE = js.Any.fromFunction3(writeIntLE), writeUInt16BE = js.Any.fromFunction1(writeUInt16BE), writeUInt16LE = js.Any.fromFunction1(writeUInt16LE), writeUInt32BE = js.Any.fromFunction1(writeUInt32BE), writeUInt32LE = js.Any.fromFunction1(writeUInt32LE), writeUInt8 = js.Any.fromFunction1(writeUInt8), writeUIntBE = js.Any.fromFunction3(writeUIntBE), writeUIntLE = js.Any.fromFunction3(writeUIntLE))
+      val __obj = js.Dynamic.literal(BYTES_PER_ELEMENT = BYTES_PER_ELEMENT.asInstanceOf[js.Any], at = js.Any.fromFunction1(at), buffer = buffer.asInstanceOf[js.Any], byteLength = byteLength.asInstanceOf[js.Any], byteOffset = byteOffset.asInstanceOf[js.Any], compare = js.Any.fromFunction1(compare), copy = js.Any.fromFunction1(copy), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), readBigInt64BE = js.Any.fromFunction0(readBigInt64BE), readBigInt64LE = js.Any.fromFunction0(readBigInt64LE), readBigUInt64BE = js.Any.fromFunction0(readBigUInt64BE), readBigUInt64LE = js.Any.fromFunction0(readBigUInt64LE), readBigUint64BE = js.Any.fromFunction0(readBigUint64BE), readBigUint64LE = js.Any.fromFunction0(readBigUint64LE), readDoubleBE = js.Any.fromFunction0(readDoubleBE), readDoubleLE = js.Any.fromFunction0(readDoubleLE), readFloatBE = js.Any.fromFunction0(readFloatBE), readFloatLE = js.Any.fromFunction0(readFloatLE), readInt16BE = js.Any.fromFunction0(readInt16BE), readInt16LE = js.Any.fromFunction0(readInt16LE), readInt32BE = js.Any.fromFunction0(readInt32BE), readInt32LE = js.Any.fromFunction0(readInt32LE), readInt8 = js.Any.fromFunction0(readInt8), readIntBE = js.Any.fromFunction2(readIntBE), readIntLE = js.Any.fromFunction2(readIntLE), readUInt16BE = js.Any.fromFunction0(readUInt16BE), readUInt16LE = js.Any.fromFunction0(readUInt16LE), readUInt32BE = js.Any.fromFunction0(readUInt32BE), readUInt32LE = js.Any.fromFunction0(readUInt32LE), readUInt8 = js.Any.fromFunction0(readUInt8), readUIntBE = js.Any.fromFunction2(readUIntBE), readUIntLE = js.Any.fromFunction2(readUIntLE), readUint16BE = js.Any.fromFunction0(readUint16BE), readUint16LE = js.Any.fromFunction0(readUint16LE), readUint32BE = js.Any.fromFunction0(readUint32BE), readUint32LE = js.Any.fromFunction0(readUint32LE), readUint8 = js.Any.fromFunction0(readUint8), readUintBE = js.Any.fromFunction2(readUintBE), readUintLE = js.Any.fromFunction2(readUintLE), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), set = js.Any.fromFunction1(set), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), subarray = js.Any.fromFunction0(subarray), swap16 = js.Any.fromFunction0(swap16), swap32 = js.Any.fromFunction0(swap32), swap64 = js.Any.fromFunction0(swap64), toJSON = js.Any.fromFunction0(toJSON), values = js.Any.fromFunction0(values), write = js.Any.fromFunction1(write), writeBigInt64BE = js.Any.fromFunction1(writeBigInt64BE), writeBigInt64LE = js.Any.fromFunction1(writeBigInt64LE), writeBigUInt64BE = js.Any.fromFunction1(writeBigUInt64BE), writeBigUInt64LE = js.Any.fromFunction1(writeBigUInt64LE), writeBigUint64BE = js.Any.fromFunction1(writeBigUint64BE), writeBigUint64LE = js.Any.fromFunction1(writeBigUint64LE), writeDoubleBE = js.Any.fromFunction1(writeDoubleBE), writeDoubleLE = js.Any.fromFunction1(writeDoubleLE), writeFloatBE = js.Any.fromFunction1(writeFloatBE), writeFloatLE = js.Any.fromFunction1(writeFloatLE), writeInt16BE = js.Any.fromFunction1(writeInt16BE), writeInt16LE = js.Any.fromFunction1(writeInt16LE), writeInt32BE = js.Any.fromFunction1(writeInt32BE), writeInt32LE = js.Any.fromFunction1(writeInt32LE), writeInt8 = js.Any.fromFunction1(writeInt8), writeIntBE = js.Any.fromFunction3(writeIntBE), writeIntLE = js.Any.fromFunction3(writeIntLE), writeUInt16BE = js.Any.fromFunction1(writeUInt16BE), writeUInt16LE = js.Any.fromFunction1(writeUInt16LE), writeUInt32BE = js.Any.fromFunction1(writeUInt32BE), writeUInt32LE = js.Any.fromFunction1(writeUInt32LE), writeUInt8 = js.Any.fromFunction1(writeUInt8), writeUIntBE = js.Any.fromFunction3(writeUIntBE), writeUIntLE = js.Any.fromFunction3(writeUIntLE), writeUint16BE = js.Any.fromFunction1(writeUint16BE), writeUint16LE = js.Any.fromFunction1(writeUint16LE), writeUint32BE = js.Any.fromFunction1(writeUint32BE), writeUint32LE = js.Any.fromFunction1(writeUint32LE), writeUint8 = js.Any.fromFunction1(writeUint8), writeUintBE = js.Any.fromFunction3(writeUintBE), writeUintLE = js.Any.fromFunction3(writeUintLE))
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[ReadonlyBuffer]
     }
     
     extension [Self <: ReadonlyBuffer](x: Self) {
+      
+      inline def setAt(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
       inline def setBYTES_PER_ELEMENT(value: Double): Self = StObject.set(x, "BYTES_PER_ELEMENT", value.asInstanceOf[js.Any])
       
@@ -303,21 +364,23 @@ object anon {
       
       inline def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
       
-      inline def setCompare(value: Uint8Array => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
+      inline def setCompare(value: js.typedarray.Uint8Array => `-1` | `0` | `1`): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       
-      inline def setCopy(value: Uint8Array => Double): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+      inline def setCopy(value: js.typedarray.Uint8Array => Double): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       
       inline def setCopyWithin(value: (Double, Double) => ReadonlyBuffer): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[Double, Double]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      inline def setEquals_(value: Uint8Array => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: js.typedarray.Uint8Array => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      inline def setEvery(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
+      inline def setEvery(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Any] => Boolean): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
       
       inline def setFill(value: String => ReadonlyBuffer): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
       
-      inline def setFilter(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Uint8Array): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(
+        value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Any] => js.typedarray.Uint8Array
+      ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFind(
         value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Boolean] => js.UndefOr[Double]
@@ -339,7 +402,9 @@ object anon {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Double] => Uint8Array): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(
+        value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Double] => js.typedarray.Uint8Array
+      ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       inline def setReadBigInt64BE(value: () => js.BigInt): Self = StObject.set(x, "readBigInt64BE", js.Any.fromFunction0(value))
       
@@ -411,7 +476,7 @@ object anon {
       
       inline def setSlice(value: () => Buffer): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
       
-      inline def setSome(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, js.Any] => Boolean): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
+      inline def setSome(value: js.Function3[/* value */ Double, /* index */ Double, ReadonlyBuffer, Any] => Boolean): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
       
       inline def setSort(value: () => ReadonlyBuffer): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
       

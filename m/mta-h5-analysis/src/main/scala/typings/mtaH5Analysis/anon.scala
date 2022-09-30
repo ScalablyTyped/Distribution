@@ -1,7 +1,7 @@
 package typings.mtaH5Analysis
 
-import typings.mtaH5Analysis.mtaH5AnalysisNumbers.`0`
-import typings.mtaH5Analysis.mtaH5AnalysisNumbers.`1`
+import typings.mtaH5Analysis.mtaH5AnalysisInts.`0`
+import typings.mtaH5Analysis.mtaH5AnalysisInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

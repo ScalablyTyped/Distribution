@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.MicroflowJavaActionParameterValue")
 @js.native
-class MicroflowJavaActionParameterValue protected ()
+open class MicroflowJavaActionParameterValue protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.MicroflowJavaActionParameterValue {
   def this(
     model: AbstractModel,

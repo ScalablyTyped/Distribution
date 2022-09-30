@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "domainmodels.ValidationRule")
 @js.native
-class ValidationRule protected ()
+open class ValidationRule protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.ValidationRule {
   def this(
     model: AbstractModel,

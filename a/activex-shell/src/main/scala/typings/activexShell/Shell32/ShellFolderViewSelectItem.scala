@@ -1,23 +1,23 @@
 package typings.activexShell.Shell32
 
-import typings.activexShell.activexShellNumbers.`0`
-import typings.activexShell.activexShellNumbers.`16`
-import typings.activexShell.activexShellNumbers.`1`
-import typings.activexShell.activexShellNumbers.`3`
-import typings.activexShell.activexShellNumbers.`4`
-import typings.activexShell.activexShellNumbers.`8`
+import typings.activexShell.activexShellInts.`0`
+import typings.activexShell.activexShellInts.`16`
+import typings.activexShell.activexShellInts.`1`
+import typings.activexShell.activexShellInts.`3`
+import typings.activexShell.activexShellInts.`4`
+import typings.activexShell.activexShellInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShell.activexShellNumbers.`0`
-  - typings.activexShell.activexShellNumbers.`1`
-  - typings.activexShell.activexShellNumbers.`3`
-  - typings.activexShell.activexShellNumbers.`4`
-  - typings.activexShell.activexShellNumbers.`8`
-  - typings.activexShell.activexShellNumbers.`16`
+  - typings.activexShell.activexShellInts.`0`
+  - typings.activexShell.activexShellInts.`1`
+  - typings.activexShell.activexShellInts.`3`
+  - typings.activexShell.activexShellInts.`4`
+  - typings.activexShell.activexShellInts.`8`
+  - typings.activexShell.activexShellInts.`16`
 */
 trait ShellFolderViewSelectItem extends StObject
 object ShellFolderViewSelectItem {

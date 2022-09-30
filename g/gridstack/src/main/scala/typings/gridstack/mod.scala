@@ -16,8 +16,8 @@ import typings.gridstack.distTypesMod.GridStackPosition
 import typings.gridstack.distTypesMod.GridStackWidget
 import typings.gridstack.distTypesMod.numberOrString
 import typings.gridstack.distUtilsMod.HeightData
-import typings.gridstack.gridstackNumbers.`-1`
-import typings.gridstack.gridstackNumbers.`1`
+import typings.gridstack.gridstackInts.`-1`
+import typings.gridstack.gridstackInts.`1`
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleSheet
 import typings.std.DragEvent
@@ -50,6 +50,10 @@ object mod {
     /** get the global (but static to this code) DD implementation */
     inline def get(): typings.gridstack.ddGridstackMod.DDGridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.gridstack.ddGridstackMod.DDGridStack]
   }
+  
+  @JSImport("gridstack", "GridDefaults")
+  @js.native
+  val GridDefaults: GridStackOptions = js.native
   
   @JSImport("gridstack", "GridStack")
   @js.native
@@ -550,7 +554,7 @@ object mod {
     inline def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
     
     /** copies unset fields in target to use the given default sources values */
-    inline def defaults(target: Any, sources: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+    inline def defaults(target: Any, sources: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
     
     /** convert a potential selector into actual single element */
     inline def getElement(els: GridStackElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(els.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]

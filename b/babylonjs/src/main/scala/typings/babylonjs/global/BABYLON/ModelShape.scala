@@ -13,16 +13,7 @@ open class ModelShape protected ()
   /**
     * Creates a ModelShape object. This is an internal simplified reference to a mesh used as for a model to replicate particles from by the SPS.
     * SPS internal tool, don't use it manually.
-    * @param id
-    * @param shape
-    * @param indices
-    * @param normals
-    * @param colors
-    * @param shapeUV
-    * @param posFunction
-    * @param vtxFunction
-    * @param material
-    * @hidden
+    * @internal
     */
   def this(
     id: Double,

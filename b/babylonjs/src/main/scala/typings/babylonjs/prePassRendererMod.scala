@@ -26,9 +26,7 @@ object prePassRendererMod {
     def this(scene: Scene) = this()
     
     /**
-      * @param faceIndex
-      * @param layer
-      * @hidden
+      * @internal
       */
     def _afterDraw(): Unit = js.native
     def _afterDraw(faceIndex: Double): Unit = js.native
@@ -36,10 +34,7 @@ object prePassRendererMod {
     def _afterDraw(faceIndex: Unit, layer: Double): Unit = js.native
     
     /**
-      * @param camera
-      * @param faceIndex
-      * @param layer
-      * @hidden
+      * @internal
       */
     def _beforeDraw(): Unit = js.native
     def _beforeDraw(camera: Unit, faceIndex: Double): Unit = js.native
@@ -54,7 +49,7 @@ object prePassRendererMod {
     
     /**
       * Clears the current prepass render target (in the sense of settings pixels to the scene clear color value)
-      * @hidden
+      * @internal
       */
     def _clear(): Unit = js.native
     
@@ -68,7 +63,7 @@ object prePassRendererMod {
       * @param name Name of the `PrePassRenderTarget`
       * @param renderTargetTexture RenderTarget the `PrePassRenderTarget` will be attached to.
       * Can be `null` if the created `PrePassRenderTarget` is attached to the scene (default framebuffer).
-      * @hidden
+      * @internal
       */
     def _createRenderTarget(name: String, renderTargetTexture: Nullable[RenderTargetTexture]): PrePassRenderTarget = js.native
     
@@ -143,7 +138,7 @@ object prePassRendererMod {
     /* private */ var _setEnabled: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Managed by the scene component
       * @param prePassRenderTarget
       */
@@ -156,8 +151,7 @@ object prePassRendererMod {
     /* private */ var _textureIndices: Any = js.native
     
     /**
-      * @param prePassRenderTarget
-      * @hidden
+      * @internal
       */
     def _unlinkInternalTexture(prePassRenderTarget: PrePassRenderTarget): Unit = js.native
     
@@ -288,8 +282,7 @@ object prePassRendererMod {
     val ^ : js.Any = js.native
     
     /**
-      * @param _
-      * @hidden
+      * @internal
       */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
     

@@ -1,13 +1,13 @@
 package typings.chenfengyuanVueQrcode
 
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`0`
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`1`
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`2`
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`3`
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`4`
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`5`
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`6`
-import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeNumbers.`7`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`0`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`1`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`2`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`3`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`4`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`5`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`6`
+import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeInts.`7`
 import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeStrings.H
 import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeStrings.L
 import typings.chenfengyuanVueQrcode.chenfengyuanVueQrcodeStrings.M

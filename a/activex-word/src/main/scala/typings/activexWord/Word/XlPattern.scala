@@ -1,54 +1,54 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-4105`
-import typings.activexWord.activexWordNumbers.`-4121`
-import typings.activexWord.activexWordNumbers.`-4124`
-import typings.activexWord.activexWordNumbers.`-4125`
-import typings.activexWord.activexWordNumbers.`-4126`
-import typings.activexWord.activexWordNumbers.`-4128`
-import typings.activexWord.activexWordNumbers.`-4142`
-import typings.activexWord.activexWordNumbers.`-4162`
-import typings.activexWord.activexWordNumbers.`-4166`
-import typings.activexWord.activexWordNumbers.`10`
-import typings.activexWord.activexWordNumbers.`11`
-import typings.activexWord.activexWordNumbers.`12`
-import typings.activexWord.activexWordNumbers.`13`
-import typings.activexWord.activexWordNumbers.`14`
-import typings.activexWord.activexWordNumbers.`15`
-import typings.activexWord.activexWordNumbers.`16`
-import typings.activexWord.activexWordNumbers.`17`
-import typings.activexWord.activexWordNumbers.`18`
-import typings.activexWord.activexWordNumbers.`1`
-import typings.activexWord.activexWordNumbers.`4000`
-import typings.activexWord.activexWordNumbers.`4001`
-import typings.activexWord.activexWordNumbers.`9`
+import typings.activexWord.activexWordInts.`-4105`
+import typings.activexWord.activexWordInts.`-4121`
+import typings.activexWord.activexWordInts.`-4124`
+import typings.activexWord.activexWordInts.`-4125`
+import typings.activexWord.activexWordInts.`-4126`
+import typings.activexWord.activexWordInts.`-4128`
+import typings.activexWord.activexWordInts.`-4142`
+import typings.activexWord.activexWordInts.`-4162`
+import typings.activexWord.activexWordInts.`-4166`
+import typings.activexWord.activexWordInts.`10`
+import typings.activexWord.activexWordInts.`11`
+import typings.activexWord.activexWordInts.`12`
+import typings.activexWord.activexWordInts.`13`
+import typings.activexWord.activexWordInts.`14`
+import typings.activexWord.activexWordInts.`15`
+import typings.activexWord.activexWordInts.`16`
+import typings.activexWord.activexWordInts.`17`
+import typings.activexWord.activexWordInts.`18`
+import typings.activexWord.activexWordInts.`1`
+import typings.activexWord.activexWordInts.`4000`
+import typings.activexWord.activexWordInts.`4001`
+import typings.activexWord.activexWordInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`-4105`
-  - typings.activexWord.activexWordNumbers.`9`
-  - typings.activexWord.activexWordNumbers.`16`
-  - typings.activexWord.activexWordNumbers.`-4121`
-  - typings.activexWord.activexWordNumbers.`17`
-  - typings.activexWord.activexWordNumbers.`-4124`
-  - typings.activexWord.activexWordNumbers.`-4125`
-  - typings.activexWord.activexWordNumbers.`-4126`
-  - typings.activexWord.activexWordNumbers.`18`
-  - typings.activexWord.activexWordNumbers.`15`
-  - typings.activexWord.activexWordNumbers.`-4128`
-  - typings.activexWord.activexWordNumbers.`13`
-  - typings.activexWord.activexWordNumbers.`11`
-  - typings.activexWord.activexWordNumbers.`14`
-  - typings.activexWord.activexWordNumbers.`12`
-  - typings.activexWord.activexWordNumbers.`4000`
-  - typings.activexWord.activexWordNumbers.`-4142`
-  - typings.activexWord.activexWordNumbers.`4001`
-  - typings.activexWord.activexWordNumbers.`10`
-  - typings.activexWord.activexWordNumbers.`1`
-  - typings.activexWord.activexWordNumbers.`-4162`
-  - typings.activexWord.activexWordNumbers.`-4166`
+  - typings.activexWord.activexWordInts.`-4105`
+  - typings.activexWord.activexWordInts.`9`
+  - typings.activexWord.activexWordInts.`16`
+  - typings.activexWord.activexWordInts.`-4121`
+  - typings.activexWord.activexWordInts.`17`
+  - typings.activexWord.activexWordInts.`-4124`
+  - typings.activexWord.activexWordInts.`-4125`
+  - typings.activexWord.activexWordInts.`-4126`
+  - typings.activexWord.activexWordInts.`18`
+  - typings.activexWord.activexWordInts.`15`
+  - typings.activexWord.activexWordInts.`-4128`
+  - typings.activexWord.activexWordInts.`13`
+  - typings.activexWord.activexWordInts.`11`
+  - typings.activexWord.activexWordInts.`14`
+  - typings.activexWord.activexWordInts.`12`
+  - typings.activexWord.activexWordInts.`4000`
+  - typings.activexWord.activexWordInts.`-4142`
+  - typings.activexWord.activexWordInts.`4001`
+  - typings.activexWord.activexWordInts.`10`
+  - typings.activexWord.activexWordInts.`1`
+  - typings.activexWord.activexWordInts.`-4162`
+  - typings.activexWord.activexWordInts.`-4166`
 */
 trait XlPattern extends StObject
 object XlPattern {

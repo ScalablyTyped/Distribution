@@ -1,7 +1,6 @@
 package typings.polished.anon
 
 import typings.polished.polishedStrings.sqrt
-import typings.polished.polishedStrings.sqrtBackslashb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait FuncRegSymbolSymbol extends StObject {
   
   var func: NotationPrecedenceRightToLeft
   
-  var regSymbol: sqrtBackslashb
+  var regSymbol: String
   
   var symbol: sqrt
 }
@@ -25,7 +24,7 @@ object FuncRegSymbolSymbol {
     
     inline def setFunc(value: NotationPrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: sqrtBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: sqrt): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

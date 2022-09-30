@@ -1,6 +1,7 @@
 package typings.googleGax
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleAuthLibrary.googleauthMod.ProjectIdCallback
 import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.OAuth2Client
@@ -22,21 +23,19 @@ object srcIamServiceMod {
   
   @JSImport("google-gax/build/src/iamService", "IamClient")
   @js.native
-  class IamClient protected () extends StObject {
+  open class IamClient protected () extends StObject {
     def this(gaxGrpc: GrpcClient, options: ClientOptions) = this()
     def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, options: ClientOptions) = this()
     
-    /* private */ var _defaults: js.Any = js.native
+    /* private */ var _defaults: Any = js.native
     
-    /* private */ var _gaxGrpc: js.Any = js.native
+    /* private */ var _opts: Any = js.native
     
-    /* private */ var _opts: js.Any = js.native
+    /* private */ var _protos: Any = js.native
     
-    /* private */ var _protos: js.Any = js.native
+    /* private */ var _terminated: Any = js.native
     
-    /* private */ var _terminated: js.Any = js.native
-    
-    var auth: js.UndefOr[GoogleAuth | OAuth2Client] = js.native
+    var auth: js.UndefOr[GoogleAuth[JSONClient] | OAuth2Client] = js.native
     
     /**
       * Terminate the GRPC channel and close the client.

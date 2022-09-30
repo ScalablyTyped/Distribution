@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "standard-http-error"
-version := "2.0-dt-20211202Z-870168"
+version := "2.0-dt-20211202Z-98624d"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "standard-error" % "1.1-dt-20211202Z-cd82ec",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "standard-error" % "1.1-dt-20211202Z-305fe0",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

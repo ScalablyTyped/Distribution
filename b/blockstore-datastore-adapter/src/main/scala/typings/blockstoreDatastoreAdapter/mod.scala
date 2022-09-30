@@ -2,7 +2,6 @@ package typings.blockstoreDatastoreAdapter
 
 import typings.interfaceStore.mod.Store
 import typings.itPushable.mod.Pushable_
-import typings.multiformats.linkInterfaceMod.Version
 import typings.multiformats.mod.CID
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
@@ -17,7 +16,7 @@ object mod {
   @js.native
   open class BlockstoreDatastoreAdapter protected ()
     extends StObject
-       with Store[CID[Any, Double, Double, Version], js.typedarray.Uint8Array] {
+       with Store[CID, js.typedarray.Uint8Array] {
     /**
       * @param {Datastore} datastore
       */

@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
+import typings.mendixmodelsdk.restMod.rest.InteractiveRest
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.HttpConfiguration")
 @js.native
-class HttpConfiguration protected ()
+open class HttpConfiguration protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.HttpConfiguration {
   def this(
     model: AbstractModel,
@@ -60,6 +61,17 @@ object HttpConfiguration {
     */
   /* static member */
   inline def createInConsumedODataServiceUnderHttpConfiguration(container: ConsumedODataService): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
+  
+  /**
+    * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
+    * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
+    * of the parent rest.InteractiveRest element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.18.0 and higher
+    */
+  /* static member */
+  inline def createInInteractiveRestUnderHttpConfiguration(container: InteractiveRest): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.

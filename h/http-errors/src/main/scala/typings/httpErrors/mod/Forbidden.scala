@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Forbidden ()
   extends StObject
-     with HttpError[typings.httpErrors.httpErrorsNumbers.`403`] {
+     with HttpError[typings.httpErrors.httpErrorsInts.`403`] {
   def this(msg: String) = this()
   
   /* CompleteClass */
@@ -24,8 +24,8 @@ open class Forbidden ()
   var name: String = js.native
   
   /* CompleteClass */
-  var status: typings.httpErrors.httpErrorsNumbers.`403` = js.native
+  var status: typings.httpErrors.httpErrorsInts.`403` = js.native
   
   /* CompleteClass */
-  var statusCode: typings.httpErrors.httpErrorsNumbers.`403` = js.native
+  var statusCode: typings.httpErrors.httpErrorsInts.`403` = js.native
 }

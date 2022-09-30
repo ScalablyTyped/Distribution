@@ -1,7 +1,6 @@
 package typings.typedoc.anon
 
 import typings.typedoc.modelsReflectionsMod.Reflection
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import typings.typedoc.typedocStrings.`inline-tag`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait Tag extends StObject {
   
   var kind: `inline-tag`
   
-  var tag: `@$LeftcurlybracketstringRightcurlybracket`
+  var tag: /* template literal string: @${string} */ String
   
   var target: js.UndefOr[String | Reflection] = js.undefined
   
@@ -19,8 +18,8 @@ trait Tag extends StObject {
 }
 object Tag {
   
-  inline def apply(text: String): Tag = {
-    val __obj = js.Dynamic.literal(kind = "inline-tag", tag = "@${string}", text = text.asInstanceOf[js.Any])
+  inline def apply(tag: /* template literal string: @${string} */ String, text: String): Tag = {
+    val __obj = js.Dynamic.literal(kind = "inline-tag", tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
   
@@ -28,7 +27,7 @@ object Tag {
     
     inline def setKind(value: `inline-tag`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setTag(value: `@$LeftcurlybracketstringRightcurlybracket`): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: /* template literal string: @${string} */ String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setTarget(value: String | Reflection): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

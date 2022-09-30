@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/cell-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.TableCell")
 @js.native
-class TableCell protected () extends DropZone {
+open class TableCell protected () extends DropZone {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ class TableCell protected () extends DropZone {
 }
 object TableCell {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.TableCell")
   @js.native
   val ^ : js.Any = js.native
   
@@ -61,13 +61,13 @@ object TableCell {
   inline def createIn(container: TableRow): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[TableCell]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.TableCell.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.TableCell.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.TableCell.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

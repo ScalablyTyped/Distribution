@@ -1,11 +1,11 @@
 package typings.baiduApp.swan
 
 import typings.baiduApp.anon.Color
-import typings.baiduApp.baiduAppNumbers.`0.5`
-import typings.baiduApp.baiduAppNumbers.`0.8`
-import typings.baiduApp.baiduAppNumbers.`1.0`
-import typings.baiduApp.baiduAppNumbers.`1.25`
-import typings.baiduApp.baiduAppNumbers.`1.5`
+import typings.baiduApp.baiduAppDoubles.`0.5`
+import typings.baiduApp.baiduAppDoubles.`0.8`
+import typings.baiduApp.baiduAppDoubles.`1.0`
+import typings.baiduApp.baiduAppDoubles.`1.25`
+import typings.baiduApp.baiduAppDoubles.`1.5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

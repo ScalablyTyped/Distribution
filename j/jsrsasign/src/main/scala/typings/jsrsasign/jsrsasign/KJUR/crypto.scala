@@ -148,6 +148,16 @@ object crypto {
       */
     def generateKeyPairHex(): Ecprvhex = js.native
     
+    /**
+      * generate public key for EC private key
+      * @return associative array of hexadecimal string of private and public key
+      * @example
+      * var ec = new KJUR.crypto.ECDSA({'curve': 'secp256r1', 'prv': prvHex});
+      * var pubhex = ec.generatePublicKeyHex(); // hexadecimal string of EC public key
+      * var pub ec.getPublicKeyXYHex() → { x: '01bacf...', y: 'c3bc22...' }
+      */
+    def generatePublicKeyHex(): String = js.native
+    
     def getBigRandom(limit: Double): BigInteger = js.native
     
     /**

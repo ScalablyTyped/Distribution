@@ -1,8 +1,8 @@
 package typings.reactToastify
 
-import typings.reactToastify.reactToastifyNumbers.`300`
-import typings.reactToastify.reactToastifyNumbers.`50`
-import typings.reactToastify.reactToastifyNumbers.`80`
+import typings.reactToastify.reactToastifyInts.`300`
+import typings.reactToastify.reactToastifyInts.`50`
+import typings.reactToastify.reactToastifyInts.`80`
 import typings.reactToastify.reactToastifyStrings.Toastify
 import typings.reactToastify.reactToastifyStrings.d
 import typings.reactToastify.reactToastifyStrings.x
@@ -87,10 +87,10 @@ object constantMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactToastify.reactToastifyNumbers.`300`
-    - typings.reactToastify.reactToastifyNumbers.`50`
+    - typings.reactToastify.reactToastifyInts.`300`
+    - typings.reactToastify.reactToastifyInts.`50`
     - typings.reactToastify.reactToastifyStrings.Toastify
-    - typings.reactToastify.reactToastifyNumbers.`80`
+    - typings.reactToastify.reactToastifyInts.`80`
   */
   trait Default extends StObject
   object Default {

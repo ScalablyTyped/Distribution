@@ -9,8 +9,8 @@ import typings.p2.anon.Relaxation
 import typings.p2.anon.ShapeA
 import typings.p2.anon.`2`
 import typings.p2.p2Booleans.`false`
-import typings.p2.p2Numbers.`1`
-import typings.p2.p2Numbers.`4`
+import typings.p2.p2Ints.`1`
+import typings.p2.p2Ints.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,7 +70,7 @@ open class World () extends EventEmitter {
   var frictionGravity: Double = js.native
   
   /** @returns The body, or false if it was not found. */
-  def getBodyByID(id: Double): Body | `false` = js.native
+  def getBodyById(id: Double): Body | `false` = js.native
   
   def getContactMaterial(materialA: Material, materialB: Material): ContactMaterial = js.native
   
@@ -145,8 +145,8 @@ object World {
   
   @JSImport("p2", "World.BODY_SLEEPING")
   @js.native
-  def BODY_SLEEPING: typings.p2.p2Numbers.`2` = js.native
-  inline def BODY_SLEEPING_=(x: typings.p2.p2Numbers.`2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BODY_SLEEPING")(x.asInstanceOf[js.Any])
+  def BODY_SLEEPING: typings.p2.p2Ints.`2` = js.native
+  inline def BODY_SLEEPING_=(x: typings.p2.p2Ints.`2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BODY_SLEEPING")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "World.ISLAND_SLEEPING")
   @js.native

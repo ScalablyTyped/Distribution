@@ -1,10 +1,10 @@
 package typings.escpos.mod
 
 import typings.escpos.anon.Encoding
-import typings.escpos.escposNumbers.`1`
-import typings.escpos.escposNumbers.`2`
-import typings.escpos.escposNumbers.`3`
-import typings.escpos.escposNumbers.`4`
+import typings.escpos.escposInts.`1`
+import typings.escpos.escposInts.`2`
+import typings.escpos.escposInts.`3`
+import typings.escpos.escposInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -45,7 +45,7 @@ trait AnisotropyBlock
     */
   def uv: NodeMaterialConnectionPoint = js.native
   
-  /** @hidden */
+  /** @internal */
   var worldNormalConnectionPoint: NodeMaterialConnectionPoint = js.native
   
   /**
@@ -53,7 +53,7 @@ trait AnisotropyBlock
     * This is to avoid having to add them as inputs here whereas they are already inputs of the main block, so already known.
     * It's less burden on the user side in the editor part.
     */
-  /** @hidden */
+  /** @internal */
   var worldPositionConnectionPoint: NodeMaterialConnectionPoint = js.native
   
   /**

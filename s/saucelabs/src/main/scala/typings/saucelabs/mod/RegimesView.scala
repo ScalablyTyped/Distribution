@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegimesView
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var metric_name: js.UndefOr[js.Array[Active]] = js.undefined
 }
@@ -25,6 +25,6 @@ object RegimesView {
     
     inline def setMetric_nameUndefined: Self = StObject.set(x, "metric_name", js.undefined)
     
-    inline def setMetric_nameVarargs(value: Active*): Self = StObject.set(x, "metric_name", js.Array(value :_*))
+    inline def setMetric_nameVarargs(value: Active*): Self = StObject.set(x, "metric_name", js.Array(value*))
   }
 }

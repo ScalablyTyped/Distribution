@@ -1,8 +1,8 @@
 package typings.blake2sJs
 
-import typings.blake2sJs.blake2sJsNumbers.`32`
-import typings.blake2sJs.blake2sJsNumbers.`64`
-import typings.blake2sJs.blake2sJsNumbers.`8`
+import typings.blake2sJs.blake2sJsInts.`32`
+import typings.blake2sJs.blake2sJsInts.`64`
+import typings.blake2sJs.blake2sJsInts.`8`
 import typings.blake2sJs.mod.BLAKE2sConfig
 import typings.blake2sJs.mod.ByteArray
 import typings.blake2sJs.mod.default

@@ -113,7 +113,7 @@ object Activitytotal {
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    inline def setStackVarargs(value: IStructuredStackFrame*): Self = StObject.set(x, "stack", js.Array(value :_*))
+    inline def setStackVarargs(value: IStructuredStackFrame*): Self = StObject.set(x, "stack", js.Array(value*))
     
     inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     

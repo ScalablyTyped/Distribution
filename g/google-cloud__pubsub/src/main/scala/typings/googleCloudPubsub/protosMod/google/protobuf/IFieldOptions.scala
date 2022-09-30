@@ -41,6 +41,9 @@ trait IFieldOptions extends StObject {
   /** FieldOptions uninterpretedOption */
   var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
   
+  /** FieldOptions unverifiedLazy */
+  var unverifiedLazy: js.UndefOr[Boolean | Null] = js.undefined
+  
   /** FieldOptions weak */
   var weak: js.UndefOr[Boolean | Null] = js.undefined
 }
@@ -73,7 +76,7 @@ object IFieldOptions {
     
     inline def setDotgoogleDotapiDotfieldBehaviorUndefined: Self = StObject.set(x, ".google.api.fieldBehavior", js.undefined)
     
-    inline def setDotgoogleDotapiDotfieldBehaviorVarargs(value: FieldBehavior*): Self = StObject.set(x, ".google.api.fieldBehavior", js.Array(value :_*))
+    inline def setDotgoogleDotapiDotfieldBehaviorVarargs(value: FieldBehavior*): Self = StObject.set(x, ".google.api.fieldBehavior", js.Array(value*))
     
     inline def setDotgoogleDotapiDotresourceReference(value: IResourceReference): Self = StObject.set(x, ".google.api.resourceReference", value.asInstanceOf[js.Any])
     
@@ -107,7 +110,13 @@ object IFieldOptions {
     
     inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value*))
+    
+    inline def setUnverifiedLazy(value: Boolean): Self = StObject.set(x, "unverifiedLazy", value.asInstanceOf[js.Any])
+    
+    inline def setUnverifiedLazyNull: Self = StObject.set(x, "unverifiedLazy", null)
+    
+    inline def setUnverifiedLazyUndefined: Self = StObject.set(x, "unverifiedLazy", js.undefined)
     
     inline def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     

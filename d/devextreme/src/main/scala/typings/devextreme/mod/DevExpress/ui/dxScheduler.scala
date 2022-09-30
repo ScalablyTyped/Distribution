@@ -15,6 +15,7 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -174,13 +175,13 @@ object dxScheduler {
     
     val appointmentData: dxSchedulerAppointment
     
-    var cancel: Boolean | js.Thenable[Boolean]
+    var cancel: Boolean | PromiseLike[Boolean]
   }
   object AppointmentAddingEvent {
     
     inline def apply(
       appointmentData: dxSchedulerAppointment,
-      cancel: Boolean | js.Thenable[Boolean],
+      cancel: Boolean | PromiseLike[Boolean],
       component: dxScheduler,
       element: DxElement_[HTMLElement]
     ): AppointmentAddingEvent = {
@@ -192,7 +193,7 @@ object dxScheduler {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
-      inline def setCancel(value: Boolean | js.Thenable[Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | PromiseLike[Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,13 +326,13 @@ object dxScheduler {
     
     val appointmentData: dxSchedulerAppointment
     
-    var cancel: Boolean | js.Thenable[Boolean]
+    var cancel: Boolean | PromiseLike[Boolean]
   }
   object AppointmentDeletingEvent {
     
     inline def apply(
       appointmentData: dxSchedulerAppointment,
-      cancel: Boolean | js.Thenable[Boolean],
+      cancel: Boolean | PromiseLike[Boolean],
       component: dxScheduler,
       element: DxElement_[HTMLElement]
     ): AppointmentDeletingEvent = {
@@ -343,7 +344,7 @@ object dxScheduler {
       
       inline def setAppointmentData(value: dxSchedulerAppointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
-      inline def setCancel(value: Boolean | js.Thenable[Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | PromiseLike[Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -597,13 +598,13 @@ object dxScheduler {
     
     val appointmentData: Appointment
     
-    val color: js.Thenable[String]
+    val color: PromiseLike[String]
     
     val currentAppointmentData: Appointment
   }
   object AppointmentTooltipShowingAppointmentInfo {
     
-    inline def apply(appointmentData: Appointment, color: js.Thenable[String], currentAppointmentData: Appointment): AppointmentTooltipShowingAppointmentInfo = {
+    inline def apply(appointmentData: Appointment, color: PromiseLike[String], currentAppointmentData: Appointment): AppointmentTooltipShowingAppointmentInfo = {
       val __obj = js.Dynamic.literal(appointmentData = appointmentData.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], currentAppointmentData = currentAppointmentData.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppointmentTooltipShowingAppointmentInfo]
     }
@@ -612,7 +613,7 @@ object dxScheduler {
       
       inline def setAppointmentData(value: Appointment): Self = StObject.set(x, "appointmentData", value.asInstanceOf[js.Any])
       
-      inline def setColor(value: js.Thenable[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: PromiseLike[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setCurrentAppointmentData(value: Appointment): Self = StObject.set(x, "currentAppointmentData", value.asInstanceOf[js.Any])
     }
@@ -697,7 +698,7 @@ object dxScheduler {
     extends StObject
        with EventInfo[dxScheduler] {
     
-    var cancel: js.UndefOr[Boolean | js.Thenable[Boolean]] = js.undefined
+    var cancel: js.UndefOr[Boolean | PromiseLike[Boolean]] = js.undefined
     
     val newData: Any
     
@@ -712,7 +713,7 @@ object dxScheduler {
     
     extension [Self <: AppointmentUpdatingEvent](x: Self) {
       
-      inline def setCancel(value: Boolean | js.Thenable[Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | PromiseLike[Boolean]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       

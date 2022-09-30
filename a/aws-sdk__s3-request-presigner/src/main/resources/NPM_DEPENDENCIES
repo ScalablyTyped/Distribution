@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/s3-request-presigner" : "3.173.0"
+      "@aws-sdk/s3-request-presigner" : "3.181.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/s3-request-presigner" : "3.173.0"
+      "@aws-sdk/s3-request-presigner" : "3.181.0"
     }
   ],
   "compile-devDependencies" : [

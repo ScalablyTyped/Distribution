@@ -7,9 +7,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.IterableIterator
 import typings.std.Partial
 import typings.std.Record
-import typings.wordpressApiFetch.mod.Schema.Decontextualize
-import typings.wordpressApiFetch.mod.Schema.PostOrPage
-import typings.wordpressApiFetch.mod.Schema.User
 import typings.wordpressBlockEditor.anon.AjaxUrl
 import typings.wordpressBlockEditor.anon.Children
 import typings.wordpressBlockEditor.anon.Description
@@ -30,22 +27,23 @@ import typings.wordpressBlockEditor.richTextMod.RichText.ContentProps
 import typings.wordpressBlocks.mod.BlockInstance
 import typings.wordpressBlocks.templatesMod.TemplateArray
 import typings.wordpressCoreData.mod.Autosave
-import typings.wordpressEditor.wordpressEditorNumbers.`-1`
-import typings.wordpressEditor.wordpressEditorNumbers.`1`
+import typings.wordpressCoreData.schemaMod.Schema.Decontextualize
+import typings.wordpressCoreData.schemaMod.Schema.PostOrPage
+import typings.wordpressCoreData.schemaMod.Schema.User
+import typings.wordpressEditor.wordpressEditorInts.`-1`
+import typings.wordpressEditor.wordpressEditorInts.`1`
 import typings.wordpressEditor.wordpressEditorStrings.`object`
 import typings.wordpressEditor.wordpressEditorStrings.`private`
 import typings.wordpressEditor.wordpressEditorStrings.`var`
 import typings.wordpressEditor.wordpressEditorStrings.a
 import typings.wordpressEditor.wordpressEditorStrings.abbr
 import typings.wordpressEditor.wordpressEditorStrings.address
-import typings.wordpressEditor.wordpressEditorStrings.applet
 import typings.wordpressEditor.wordpressEditorStrings.area
 import typings.wordpressEditor.wordpressEditorStrings.article
 import typings.wordpressEditor.wordpressEditorStrings.aside
 import typings.wordpressEditor.wordpressEditorStrings.audio
 import typings.wordpressEditor.wordpressEditorStrings.b
 import typings.wordpressEditor.wordpressEditorStrings.base
-import typings.wordpressEditor.wordpressEditorStrings.basefont
 import typings.wordpressEditor.wordpressEditorStrings.bdi
 import typings.wordpressEditor.wordpressEditorStrings.bdo
 import typings.wordpressEditor.wordpressEditorStrings.blockquote
@@ -65,7 +63,6 @@ import typings.wordpressEditor.wordpressEditorStrings.del
 import typings.wordpressEditor.wordpressEditorStrings.details
 import typings.wordpressEditor.wordpressEditorStrings.dfn
 import typings.wordpressEditor.wordpressEditorStrings.dialog
-import typings.wordpressEditor.wordpressEditorStrings.dir
 import typings.wordpressEditor.wordpressEditorStrings.div
 import typings.wordpressEditor.wordpressEditorStrings.dl
 import typings.wordpressEditor.wordpressEditorStrings.dt
@@ -75,11 +72,8 @@ import typings.wordpressEditor.wordpressEditorStrings.embed
 import typings.wordpressEditor.wordpressEditorStrings.fieldset
 import typings.wordpressEditor.wordpressEditorStrings.figcaption
 import typings.wordpressEditor.wordpressEditorStrings.figure
-import typings.wordpressEditor.wordpressEditorStrings.font
 import typings.wordpressEditor.wordpressEditorStrings.footer
 import typings.wordpressEditor.wordpressEditorStrings.form
-import typings.wordpressEditor.wordpressEditorStrings.frame
-import typings.wordpressEditor.wordpressEditorStrings.frameset
 import typings.wordpressEditor.wordpressEditorStrings.h1
 import typings.wordpressEditor.wordpressEditorStrings.h2
 import typings.wordpressEditor.wordpressEditorStrings.h3
@@ -104,7 +98,6 @@ import typings.wordpressEditor.wordpressEditorStrings.link
 import typings.wordpressEditor.wordpressEditorStrings.main
 import typings.wordpressEditor.wordpressEditorStrings.map
 import typings.wordpressEditor.wordpressEditorStrings.mark
-import typings.wordpressEditor.wordpressEditorStrings.marquee
 import typings.wordpressEditor.wordpressEditorStrings.menu
 import typings.wordpressEditor.wordpressEditorStrings.meta
 import typings.wordpressEditor.wordpressEditorStrings.meter
@@ -115,7 +108,6 @@ import typings.wordpressEditor.wordpressEditorStrings.optgroup
 import typings.wordpressEditor.wordpressEditorStrings.option
 import typings.wordpressEditor.wordpressEditorStrings.output
 import typings.wordpressEditor.wordpressEditorStrings.p
-import typings.wordpressEditor.wordpressEditorStrings.param
 import typings.wordpressEditor.wordpressEditorStrings.password
 import typings.wordpressEditor.wordpressEditorStrings.picture
 import typings.wordpressEditor.wordpressEditorStrings.pre
@@ -176,7 +168,7 @@ object anon {
     
     var availableLegacyWidgets: js.UndefOr[js.Array[Description]] = js.undefined
     
-    var availableTemplates: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var availableTemplates: js.UndefOr[js.Array[Any]] = js.undefined
     
     var bodyPlaceholder: js.UndefOr[String] = js.undefined
     
@@ -235,7 +227,7 @@ object anon {
       
       inline def setAllowedBlockTypesUndefined: Self = StObject.set(x, "allowedBlockTypes", js.undefined)
       
-      inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value :_*))
+      inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value*))
       
       inline def setAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "allowedMimeTypes", value.asInstanceOf[js.Any])
       
@@ -251,13 +243,13 @@ object anon {
       
       inline def setAvailableLegacyWidgetsUndefined: Self = StObject.set(x, "availableLegacyWidgets", js.undefined)
       
-      inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
+      inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value*))
       
-      inline def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+      inline def setAvailableTemplates(value: js.Array[Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
       
       inline def setAvailableTemplatesUndefined: Self = StObject.set(x, "availableTemplates", js.undefined)
       
-      inline def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
+      inline def setAvailableTemplatesVarargs(value: Any*): Self = StObject.set(x, "availableTemplates", js.Array(value*))
       
       inline def setBodyPlaceholder(value: String): Self = StObject.set(x, "bodyPlaceholder", value.asInstanceOf[js.Any])
       
@@ -271,7 +263,7 @@ object anon {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
       
@@ -297,7 +289,7 @@ object anon {
       
       inline def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
       
-      inline def setFontSizesVarargs(value: EditorFontSize*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+      inline def setFontSizesVarargs(value: EditorFontSize*): Self = StObject.set(x, "fontSizes", js.Array(value*))
       
       inline def setHasFixedToolbar(value: Boolean): Self = StObject.set(x, "hasFixedToolbar", value.asInstanceOf[js.Any])
       
@@ -311,7 +303,7 @@ object anon {
       
       inline def setImageSizesUndefined: Self = StObject.set(x, "imageSizes", js.undefined)
       
-      inline def setImageSizesVarargs(value: EditorImageSize*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
+      inline def setImageSizesVarargs(value: EditorImageSize*): Self = StObject.set(x, "imageSizes", js.Array(value*))
       
       inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
       
@@ -341,7 +333,7 @@ object anon {
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setStylesVarargs(value: EditorStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: EditorStyle*): Self = StObject.set(x, "styles", js.Array(value*))
       
       inline def setTitlePlaceholder(value: String): Self = StObject.set(x, "titlePlaceholder", value.asInstanceOf[js.Any])
       
@@ -401,7 +393,7 @@ object anon {
   }
   
   @js.native
-  trait TypeofButtonBlockerAppender extends StObject {
+  trait TypeofButtonBlockAppender extends StObject {
     
     def apply(props: typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props): Element = js.native
     
@@ -409,7 +401,7 @@ object anon {
       * display a `+` (plus) icon button that, when clicked, displays the block picker menu. No
       * default Block is inserted.
       */
-    var ButtonBlockerAppender: ComponentType[Children] = js.native
+    var ButtonBlockAppender: ComponentType[Children] = js.native
     
     var Content: ComponentType[Children] = js.native
     
@@ -425,7 +417,7 @@ object anon {
     
     def apply(
       props: typings.wordpressBlockEditor.richTextMod.RichText.Props[
-          a | abbr | address | applet | area | article | aside | audio | b | base | basefont | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | dir | div | dl | dt | em | embed | fieldset | figcaption | figure | font | footer | form | frame | frameset | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | marquee | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | param | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
+          a | abbr | address | area | article | aside | audio | b | base | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | div | dl | dt | em | embed | fieldset | figcaption | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
         ]
     ): Element = js.native
     
@@ -439,8 +431,6 @@ object anon {
     @JSName("Content")
     def Content_address(props: ContentProps[address]): Element = js.native
     @JSName("Content")
-    def Content_applet(props: ContentProps[applet]): Element = js.native
-    @JSName("Content")
     def Content_area(props: ContentProps[area]): Element = js.native
     @JSName("Content")
     def Content_article(props: ContentProps[article]): Element = js.native
@@ -452,8 +442,6 @@ object anon {
     def Content_b(props: ContentProps[b]): Element = js.native
     @JSName("Content")
     def Content_base(props: ContentProps[base]): Element = js.native
-    @JSName("Content")
-    def Content_basefont(props: ContentProps[basefont]): Element = js.native
     @JSName("Content")
     def Content_bdi(props: ContentProps[bdi]): Element = js.native
     @JSName("Content")
@@ -493,8 +481,6 @@ object anon {
     @JSName("Content")
     def Content_dialog(props: ContentProps[dialog]): Element = js.native
     @JSName("Content")
-    def Content_dir(props: ContentProps[dir]): Element = js.native
-    @JSName("Content")
     def Content_div(props: ContentProps[div]): Element = js.native
     @JSName("Content")
     def Content_dl(props: ContentProps[dl]): Element = js.native
@@ -511,15 +497,9 @@ object anon {
     @JSName("Content")
     def Content_figure(props: ContentProps[figure]): Element = js.native
     @JSName("Content")
-    def Content_font(props: ContentProps[font]): Element = js.native
-    @JSName("Content")
     def Content_footer(props: ContentProps[footer]): Element = js.native
     @JSName("Content")
     def Content_form(props: ContentProps[form]): Element = js.native
-    @JSName("Content")
-    def Content_frame(props: ContentProps[frame]): Element = js.native
-    @JSName("Content")
-    def Content_frameset(props: ContentProps[frameset]): Element = js.native
     @JSName("Content")
     def Content_h1(props: ContentProps[h1]): Element = js.native
     @JSName("Content")
@@ -569,8 +549,6 @@ object anon {
     @JSName("Content")
     def Content_mark(props: ContentProps[mark]): Element = js.native
     @JSName("Content")
-    def Content_marquee(props: ContentProps[marquee]): Element = js.native
-    @JSName("Content")
     def Content_menu(props: ContentProps[menu]): Element = js.native
     @JSName("Content")
     def Content_meta(props: ContentProps[meta]): Element = js.native
@@ -592,8 +570,6 @@ object anon {
     def Content_output(props: ContentProps[output]): Element = js.native
     @JSName("Content")
     def Content_p(props: ContentProps[p]): Element = js.native
-    @JSName("Content")
-    def Content_param(props: ContentProps[param]): Element = js.native
     @JSName("Content")
     def Content_picture(props: ContentProps[picture]): Element = js.native
     @JSName("Content")
@@ -695,7 +671,7 @@ object anon {
     
     def disablePublishSidebar(): Unit = js.native
     
-    def editPost(edits: Record[String, js.Any]): Unit = js.native
+    def editPost(edits: Record[String, Any]): Unit = js.native
     
     def enablePublishSidebar(): Unit = js.native
     
@@ -705,59 +681,59 @@ object anon {
     
     def hideInsertionPoint(): Unit = js.native
     
-    def insertBlock(block: BlockInstance[StringDictionary[js.Any]]): Unit = js.native
-    def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double): Unit = js.native
-    def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double, rootClientId: String): Unit = js.native
+    def insertBlock(block: BlockInstance[StringDictionary[Any]]): Unit = js.native
+    def insertBlock(block: BlockInstance[StringDictionary[Any]], index: Double): Unit = js.native
+    def insertBlock(block: BlockInstance[StringDictionary[Any]], index: Double, rootClientId: String): Unit = js.native
     def insertBlock(
-      block: BlockInstance[StringDictionary[js.Any]],
+      block: BlockInstance[StringDictionary[Any]],
       index: Double,
       rootClientId: String,
       updateSelection: Boolean
     ): Unit = js.native
     def insertBlock(
-      block: BlockInstance[StringDictionary[js.Any]],
+      block: BlockInstance[StringDictionary[Any]],
       index: Double,
       rootClientId: Unit,
       updateSelection: Boolean
     ): Unit = js.native
-    def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Unit, rootClientId: String): Unit = js.native
+    def insertBlock(block: BlockInstance[StringDictionary[Any]], index: Unit, rootClientId: String): Unit = js.native
     def insertBlock(
-      block: BlockInstance[StringDictionary[js.Any]],
+      block: BlockInstance[StringDictionary[Any]],
       index: Unit,
       rootClientId: String,
       updateSelection: Boolean
     ): Unit = js.native
     def insertBlock(
-      block: BlockInstance[StringDictionary[js.Any]],
+      block: BlockInstance[StringDictionary[Any]],
       index: Unit,
       rootClientId: Unit,
       updateSelection: Boolean
     ): Unit = js.native
     
-    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = js.native
-    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double): IterableIterator[Unit] = js.native
-    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double, rootClientId: String): IterableIterator[Unit] = js.native
+    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): IterableIterator[Unit] = js.native
+    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]], index: Double): IterableIterator[Unit] = js.native
+    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]], index: Double, rootClientId: String): IterableIterator[Unit] = js.native
     def insertBlocks(
-      blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+      blocks: js.Array[BlockInstance[StringDictionary[Any]]],
       index: Double,
       rootClientId: String,
       updateSelection: Boolean
     ): IterableIterator[Unit] = js.native
     def insertBlocks(
-      blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+      blocks: js.Array[BlockInstance[StringDictionary[Any]]],
       index: Double,
       rootClientId: Unit,
       updateSelection: Boolean
     ): IterableIterator[Unit] = js.native
-    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Unit, rootClientId: String): IterableIterator[Unit] = js.native
+    def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]], index: Unit, rootClientId: String): IterableIterator[Unit] = js.native
     def insertBlocks(
-      blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+      blocks: js.Array[BlockInstance[StringDictionary[Any]]],
       index: Unit,
       rootClientId: String,
       updateSelection: Boolean
     ): IterableIterator[Unit] = js.native
     def insertBlocks(
-      blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+      blocks: js.Array[BlockInstance[StringDictionary[Any]]],
       index: Unit,
       rootClientId: Unit,
       updateSelection: Boolean
@@ -767,10 +743,10 @@ object anon {
     def insertDefaultBlock(attributes: Unit, rootClientId: String): Unit = js.native
     def insertDefaultBlock(attributes: Unit, rootClientId: String, index: Double): Unit = js.native
     def insertDefaultBlock(attributes: Unit, rootClientId: Unit, index: Double): Unit = js.native
-    def insertDefaultBlock(attributes: Record[String, js.Any]): Unit = js.native
-    def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String): Unit = js.native
-    def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String, index: Double): Unit = js.native
-    def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: Unit, index: Double): Unit = js.native
+    def insertDefaultBlock(attributes: Record[String, Any]): Unit = js.native
+    def insertDefaultBlock(attributes: Record[String, Any], rootClientId: String): Unit = js.native
+    def insertDefaultBlock(attributes: Record[String, Any], rootClientId: String, index: Double): Unit = js.native
+    def insertDefaultBlock(attributes: Record[String, Any], rootClientId: Unit, index: Double): Unit = js.native
     
     def lockPostSaving(lockName: String): Unit = js.native
     
@@ -793,7 +769,7 @@ object anon {
     
     def multiSelect(start: String, end: String): Unit = js.native
     
-    def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
+    def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = js.native
     
     def redo(): Unit = js.native
     
@@ -807,55 +783,47 @@ object anon {
     def removeBlocks(clientIds: js.Array[String]): IterableIterator[Unit] = js.native
     def removeBlocks(clientIds: js.Array[String], selectPrevious: Boolean): IterableIterator[Unit] = js.native
     
-    def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
-    def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[js.Any]]): Unit = js.native
-    def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
-    def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[js.Any]]): Unit = js.native
+    def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = js.native
+    def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[Any]]): Unit = js.native
+    def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = js.native
+    def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[Any]]): Unit = js.native
     
-    def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = js.native
-    def replaceBlocks(
-      clientIds: String,
-      blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
-      indexToSelect: Double
-    ): IterableIterator[Unit] = js.native
-    def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = js.native
-    def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]], indexToSelect: Double): IterableIterator[Unit] = js.native
-    def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = js.native
+    def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[Any]]]): IterableIterator[Unit] = js.native
+    def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[Any]]], indexToSelect: Double): IterableIterator[Unit] = js.native
+    def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[Any]]): IterableIterator[Unit] = js.native
+    def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[Any]], indexToSelect: Double): IterableIterator[Unit] = js.native
+    def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[Any]]]): IterableIterator[Unit] = js.native
     def replaceBlocks(
       clientIds: js.Array[String],
-      blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+      blocks: js.Array[BlockInstance[StringDictionary[Any]]],
       indexToSelect: Double
     ): IterableIterator[Unit] = js.native
-    def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = js.native
-    def replaceBlocks(
-      clientIds: js.Array[String],
-      blocks: BlockInstance[StringDictionary[js.Any]],
-      indexToSelect: Double
-    ): IterableIterator[Unit] = js.native
+    def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[Any]]): IterableIterator[Unit] = js.native
+    def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[Any]], indexToSelect: Double): IterableIterator[Unit] = js.native
     
     def resetAutosave(newAutosave: Autosave): IterableIterator[Unit] = js.native
     
-    def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = js.native
+    def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = js.native
     
-    def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = js.native
-    def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], options: Record[String, js.Any]): IterableIterator[Unit] = js.native
+    def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): IterableIterator[Unit] = js.native
+    def resetEditorBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]], options: Record[String, Any]): IterableIterator[Unit] = js.native
     
-    def resetPost(post: Record[String, js.Any]): Unit = js.native
+    def resetPost(post: Record[String, Any]): Unit = js.native
     
     def savePost(): IterableIterator[Unit] = js.native
-    def savePost(options: Record[String, js.Any]): IterableIterator[Unit] = js.native
+    def savePost(options: Record[String, Any]): IterableIterator[Unit] = js.native
     
     def selectBlock(clientId: String): Unit = js.native
     def selectBlock(clientId: String, initialPosition: Double): Unit = js.native
     
     def setTemplateValidity(isValid: Boolean): Unit = js.native
     
-    def setupEditor(post: Record[String, js.Any]): IterableIterator[Unit] = js.native
-    def setupEditor(post: Record[String, js.Any], edits: Unit, template: TemplateArray): IterableIterator[Unit] = js.native
-    def setupEditor(post: Record[String, js.Any], edits: Record[String, js.Any]): IterableIterator[Unit] = js.native
-    def setupEditor(post: Record[String, js.Any], edits: Record[String, js.Any], template: TemplateArray): IterableIterator[Unit] = js.native
+    def setupEditor(post: Record[String, Any]): IterableIterator[Unit] = js.native
+    def setupEditor(post: Record[String, Any], edits: Unit, template: TemplateArray): IterableIterator[Unit] = js.native
+    def setupEditor(post: Record[String, Any], edits: Record[String, Any]): IterableIterator[Unit] = js.native
+    def setupEditor(post: Record[String, Any], edits: Record[String, Any], template: TemplateArray): IterableIterator[Unit] = js.native
     
-    def setupEditorState(post: Record[String, js.Any]): Unit = js.native
+    def setupEditorState(post: Record[String, Any]): Unit = js.native
     
     def showInsertionPoint(): Unit = js.native
     def showInsertionPoint(rootClientId: String): Unit = js.native
@@ -885,13 +853,13 @@ object anon {
     
     def updateBlock(clientId: String, updates: PartialBlockInstancekstri): Unit = js.native
     
-    def updateBlockAttributes(clientId: String, attributes: Record[String, js.Any]): Unit = js.native
+    def updateBlockAttributes(clientId: String, attributes: Record[String, Any]): Unit = js.native
     
     def updateBlockListSettings(clientId: String, settings: EditorBlockListSettings): Unit = js.native
     
     def updateEditorSettings(settings: PartialEditorSettings): Unit = js.native
     
-    def updatePost(edits: Record[String, js.Any]): Unit = js.native
+    def updatePost(edits: Record[String, Any]): Unit = js.native
     
     def updatePostLock(lock: IsLocked): Unit = js.native
   }
@@ -912,23 +880,17 @@ object anon {
     
     def getAdjacentBlockClientId(): String | Null = js.native
     def getAdjacentBlockClientId(startClientId: String): String | Null = js.native
-    @JSName("getAdjacentBlockClientId")
-    def getAdjacentBlockClientId_1(startClientId: String, modifier: `-1`): String | Null = js.native
-    @JSName("getAdjacentBlockClientId")
-    def getAdjacentBlockClientId_1(startClientId: String, modifier: `1`): String | Null = js.native
-    @JSName("getAdjacentBlockClientId")
-    def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `-1`): String | Null = js.native
-    @JSName("getAdjacentBlockClientId")
-    def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `1`): String | Null = js.native
+    def getAdjacentBlockClientId(startClientId: String, modifier: `1` | `-1`): String | Null = js.native
+    def getAdjacentBlockClientId(startClientId: Unit, modifier: `1` | `-1`): String | Null = js.native
     
     def getAutosave(): Autosave | js.Object = js.native
     
     @JSName("getAutosaveAttribute")
     def getAutosaveAttribute_previewlink(attributeName: preview_link): String | js.Object = js.native
     
-    def getBlock(clientId: String): BlockInstance[StringDictionary[js.Any]] | Null = js.native
+    def getBlock(clientId: String): BlockInstance[StringDictionary[Any]] | Null = js.native
     
-    def getBlockAttributes(clientId: String): (Record[String, js.Any]) | Null = js.native
+    def getBlockAttributes(clientId: String): (Record[String, Any]) | Null = js.native
     
     def getBlockCount(): Double = js.native
     def getBlockCount(rootClientId: String): Double = js.native
@@ -956,13 +918,13 @@ object anon {
     
     def getBlockSelectionStart(): js.UndefOr[String] = js.native
     
-    def getBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
-    def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
+    def getBlocks(): js.Array[BlockInstance[StringDictionary[Any]]] = js.native
+    def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[Any]]] = js.native
     
-    def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = js.native
-    def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = js.native
+    def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[Any]] | Null] = js.native
+    def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[Any]] | Null] = js.native
     
-    def getBlocksForSerialization(): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
+    def getBlocksForSerialization(): js.Array[BlockInstance[StringDictionary[Any]]] = js.native
     
     def getClientIdsOfDescendants(clientIds: js.Array[String]): js.Array[String] = js.native
     
@@ -970,8 +932,8 @@ object anon {
     
     def getCurrentPost(): Decontextualize[PostOrPage[edit]] = js.native
     
-    def getCurrentPostAttribute[T /* <: /* keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'> */ String */](attributeName: T): js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Decontextualize<@wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'>>[T] */ js.Any
+    def getCurrentPostAttribute[T /* <: /* keyof @wordpress/core-data.@wordpress/core-data/schema.Schema.PostOrPage<'edit'> */ String */](attributeName: T): js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/core-data.@wordpress/core-data/schema.Schema.Decontextualize<@wordpress/core-data.@wordpress/core-data/schema.Schema.PostOrPage<'edit'>>[T] */ js.Any
       ] = js.native
     
     def getCurrentPostId(): Double = js.native
@@ -982,8 +944,8 @@ object anon {
     
     def getCurrentPostType(): String = js.native
     
-    def getEditedPostAttribute[T /* <: /* keyof @wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'> */ String */](attributeName: T): js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/api-fetch.@wordpress/api-fetch.Schema.Decontextualize<@wordpress/api-fetch.@wordpress/api-fetch.Schema.PostOrPage<'edit'>>[T] */ js.Any
+    def getEditedPostAttribute[T /* <: /* keyof @wordpress/core-data.@wordpress/core-data/schema.Schema.PostOrPage<'edit'> */ String */](attributeName: T): js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/core-data.@wordpress/core-data/schema.Schema.Decontextualize<@wordpress/core-data.@wordpress/core-data/schema.Schema.PostOrPage<'edit'>>[T] */ js.Any
       ] = js.native
     
     def getEditedPostContent(): String = js.native
@@ -992,7 +954,7 @@ object anon {
     
     def getEditedPostVisibility(): password | `private` | public = js.native
     
-    def getEditorBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
+    def getEditorBlocks(): js.Array[BlockInstance[StringDictionary[Any]]] = js.native
     
     def getEditorSettings(): EditorSettings = js.native
     
@@ -1008,7 +970,7 @@ object anon {
     
     def getMultiSelectedBlockClientIds(): js.Array[String] = js.native
     
-    def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
+    def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[Any]]] = js.native
     
     def getMultiSelectedBlocksEndClientId(): String | Null = js.native
     
@@ -1028,9 +990,9 @@ object anon {
     def getPreviousBlockClientId(): String | Null = js.native
     def getPreviousBlockClientId(startClientId: String): String | Null = js.native
     
-    def getReferenceByDistinctEdits(): js.Array[js.Any] = js.native
+    def getReferenceByDistinctEdits(): js.Array[Any] = js.native
     
-    def getSelectedBlock(): BlockInstance[StringDictionary[js.Any]] | Null = js.native
+    def getSelectedBlock(): BlockInstance[StringDictionary[Any]] | Null = js.native
     
     def getSelectedBlockClientId(): String | Null = js.native
     
@@ -1038,11 +1000,11 @@ object anon {
     
     def getSelectedBlocksInitialCaretPosition(): Double | Null = js.native
     
-    def getStateBeforeOptimisticTransaction(transactionId: js.Object): js.Any = js.native
+    def getStateBeforeOptimisticTransaction(transactionId: js.Object): Any = js.native
     
     def getSuggestedPostFormat(): String | Null = js.native
     
-    def getTemplate(): js.Any = js.native
+    def getTemplate(): Any = js.native
     
     def getTemplateLock(): js.UndefOr[String] = js.native
     def getTemplateLock(rootClientId: String): js.UndefOr[String] = js.native
@@ -1065,7 +1027,7 @@ object anon {
     def hasSelectedInnerBlock(clientId: String): Boolean = js.native
     def hasSelectedInnerBlock(clientId: String, deep: Boolean): Boolean = js.native
     
-    def inSomeHistory(predicate: js.Function1[/* state */ Record[String, js.Any], Boolean]): Boolean = js.native
+    def inSomeHistory(predicate: js.Function1[/* state */ Record[String, Any], Boolean]): Boolean = js.native
     
     def isAncestorMultiSelected(clientId: String): Boolean = js.native
     

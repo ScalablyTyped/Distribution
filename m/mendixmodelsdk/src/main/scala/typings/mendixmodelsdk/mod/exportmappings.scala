@@ -17,7 +17,7 @@ object exportmappings {
     */
   @JSImport("mendixmodelsdk", "exportmappings.ExportMapping")
   @js.native
-  class ExportMapping protected ()
+  open class ExportMapping protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.exportmappings.ExportMapping {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -58,7 +58,7 @@ object exportmappings {
     */
   @JSImport("mendixmodelsdk", "exportmappings.ExportObjectMappingElement")
   @js.native
-  class ExportObjectMappingElement protected ()
+  open class ExportObjectMappingElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.exportmappings.ExportObjectMappingElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -117,7 +117,7 @@ object exportmappings {
     */
   @JSImport("mendixmodelsdk", "exportmappings.ExportValueMappingElement")
   @js.native
-  class ExportValueMappingElement protected ()
+  open class ExportValueMappingElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.exportmappings.ExportValueMappingElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

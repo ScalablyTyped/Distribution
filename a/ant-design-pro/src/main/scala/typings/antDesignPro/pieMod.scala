@@ -11,8 +11,7 @@ object pieMod {
   
   @JSImport("ant-design-pro/lib/Charts/Pie", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IPieProps, js.Any, js.Any]
+  open class default () extends Component[IPieProps, Any, Any]
   
   trait IPieProps extends StObject {
     
@@ -63,13 +62,13 @@ object pieMod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setData(value: js.Array[X]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: X*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: X*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHasLegend(value: Boolean): Self = StObject.set(x, "hasLegend", value.asInstanceOf[js.Any])
       
@@ -109,5 +108,5 @@ object pieMod {
     }
   }
   
-  type Pie = Component[IPieProps, js.Any, js.Any]
+  type Pie = Component[IPieProps, Any, Any]
 }

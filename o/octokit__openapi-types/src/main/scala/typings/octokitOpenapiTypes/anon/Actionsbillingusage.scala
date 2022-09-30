@@ -12,7 +12,6 @@ import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.OWNER
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Team
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`false positive`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`used in tests`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`wonApostrophet fix`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.collaborators_only
@@ -340,7 +339,7 @@ trait Actionsbillingusage extends StObject {
     * @description **Required when the state is dismissed.** The reason for dismissing or closing the alert.
     * @enum {string|null}
     */
-  var `code-scanning-alert-dismissed-reason`: Null | (`false positive`) | (`wonApostrophet fix`) | (`used in tests`)
+  var `code-scanning-alert-dismissed-reason`: Null | (`false positive`) | String | (`used in tests`)
   
   /** @description Identifies the variable values associated with the environment in which the analysis that generated this alert instance was performed, such as the language that was analyzed. */
   var `code-scanning-alert-environment`: String
@@ -2571,7 +2570,7 @@ object Actionsbillingusage {
     
     inline def `setCode-scanning-alert-dismissed-commentNull`: Self = StObject.set(x, "code-scanning-alert-dismissed-comment", null)
     
-    inline def `setCode-scanning-alert-dismissed-reason`(value: (`false positive`) | (`wonApostrophet fix`) | (`used in tests`)): Self = StObject.set(x, "code-scanning-alert-dismissed-reason", value.asInstanceOf[js.Any])
+    inline def `setCode-scanning-alert-dismissed-reason`(value: (`false positive`) | String | (`used in tests`)): Self = StObject.set(x, "code-scanning-alert-dismissed-reason", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-alert-dismissed-reasonNull`: Self = StObject.set(x, "code-scanning-alert-dismissed-reason", null)
     

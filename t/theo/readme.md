@@ -10,10 +10,10 @@ Design Tokens formatter
 | ------------------ | :-------------: |
 | Full name          | theo |
 | Keywords           | css, design, properties, tokens, sass, scss, stylus, less, iOS, Android, aura |
-| # releases         | 8 |
-| # dependents       | 12 |
-| # downloads        | 278088 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 49628.0 |
+| # stars            | 1772.0 |
 
 ## Links
 - [Homepage](https://github.com/salesforce-ux/theo)

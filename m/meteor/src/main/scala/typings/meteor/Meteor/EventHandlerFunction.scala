@@ -10,7 +10,7 @@ trait EventHandlerFunction
   extends js.Function {
   
   def apply(): Unit = js.native
-  def apply(event: Unit, templateInstance: TemplateInstance): Unit = js.native
+  def apply(event: Unit, templateInstance: TemplateInstance[Any]): Unit = js.native
   def apply(event: Event): Unit = js.native
-  def apply(event: Event, templateInstance: TemplateInstance): Unit = js.native
+  def apply(event: Event, templateInstance: TemplateInstance[Any]): Unit = js.native
 }

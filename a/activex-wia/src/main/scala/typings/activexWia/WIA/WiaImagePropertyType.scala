@@ -1,20 +1,20 @@
 package typings.activexWia.WIA
 
-import typings.activexWia.activexWiaNumbers.`1000`
-import typings.activexWia.activexWiaNumbers.`1001`
-import typings.activexWia.activexWiaNumbers.`1002`
-import typings.activexWia.activexWiaNumbers.`1003`
-import typings.activexWia.activexWiaNumbers.`1004`
-import typings.activexWia.activexWiaNumbers.`1005`
-import typings.activexWia.activexWiaNumbers.`1006`
-import typings.activexWia.activexWiaNumbers.`1007`
-import typings.activexWia.activexWiaNumbers.`1100`
-import typings.activexWia.activexWiaNumbers.`1101`
-import typings.activexWia.activexWiaNumbers.`1102`
-import typings.activexWia.activexWiaNumbers.`1103`
-import typings.activexWia.activexWiaNumbers.`1104`
-import typings.activexWia.activexWiaNumbers.`1105`
-import typings.activexWia.activexWiaNumbers.`1106`
+import typings.activexWia.activexWiaInts.`1000`
+import typings.activexWia.activexWiaInts.`1001`
+import typings.activexWia.activexWiaInts.`1002`
+import typings.activexWia.activexWiaInts.`1003`
+import typings.activexWia.activexWiaInts.`1004`
+import typings.activexWia.activexWiaInts.`1005`
+import typings.activexWia.activexWiaInts.`1006`
+import typings.activexWia.activexWiaInts.`1007`
+import typings.activexWia.activexWiaInts.`1100`
+import typings.activexWia.activexWiaInts.`1101`
+import typings.activexWia.activexWiaInts.`1102`
+import typings.activexWia.activexWiaInts.`1103`
+import typings.activexWia.activexWiaInts.`1104`
+import typings.activexWia.activexWiaInts.`1105`
+import typings.activexWia.activexWiaInts.`1106`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,21 +24,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of an ImageFile object.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWia.activexWiaNumbers.`1001`
-  - typings.activexWia.activexWiaNumbers.`1004`
-  - typings.activexWia.activexWiaNumbers.`1006`
-  - typings.activexWia.activexWiaNumbers.`1002`
-  - typings.activexWia.activexWiaNumbers.`1000`
-  - typings.activexWia.activexWiaNumbers.`1003`
-  - typings.activexWia.activexWiaNumbers.`1005`
-  - typings.activexWia.activexWiaNumbers.`1007`
-  - typings.activexWia.activexWiaNumbers.`1101`
-  - typings.activexWia.activexWiaNumbers.`1103`
-  - typings.activexWia.activexWiaNumbers.`1105`
-  - typings.activexWia.activexWiaNumbers.`1100`
-  - typings.activexWia.activexWiaNumbers.`1102`
-  - typings.activexWia.activexWiaNumbers.`1104`
-  - typings.activexWia.activexWiaNumbers.`1106`
+  - typings.activexWia.activexWiaInts.`1001`
+  - typings.activexWia.activexWiaInts.`1004`
+  - typings.activexWia.activexWiaInts.`1006`
+  - typings.activexWia.activexWiaInts.`1002`
+  - typings.activexWia.activexWiaInts.`1000`
+  - typings.activexWia.activexWiaInts.`1003`
+  - typings.activexWia.activexWiaInts.`1005`
+  - typings.activexWia.activexWiaInts.`1007`
+  - typings.activexWia.activexWiaInts.`1101`
+  - typings.activexWia.activexWiaInts.`1103`
+  - typings.activexWia.activexWiaInts.`1105`
+  - typings.activexWia.activexWiaInts.`1100`
+  - typings.activexWia.activexWiaInts.`1102`
+  - typings.activexWia.activexWiaInts.`1104`
+  - typings.activexWia.activexWiaInts.`1106`
 */
 trait WiaImagePropertyType extends StObject
 object WiaImagePropertyType {

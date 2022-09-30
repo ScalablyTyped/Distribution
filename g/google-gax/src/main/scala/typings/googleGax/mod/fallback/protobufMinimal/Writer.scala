@@ -1,6 +1,5 @@
 package typings.googleGax.mod.fallback.protobufMinimal
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobufMinimal.Writer")
 @js.native
 /** Constructs a new writer instance. */
-class Writer ()
+open class Writer ()
   extends typings.googleGax.fallbackMod.protobufMinimal.Writer
 /* static members */
 object Writer {
@@ -22,7 +21,7 @@ object Writer {
     * @param size Buffer size
     * @returns Buffer
     */
-  inline def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def alloc(size: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   /**
     * Creates a new writer.

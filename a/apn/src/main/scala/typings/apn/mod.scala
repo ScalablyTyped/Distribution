@@ -1,7 +1,7 @@
 package typings.apn
 
 import typings.apn.anon.Reason
-import typings.apn.apnNumbers.`1`
+import typings.apn.apnInts.`1`
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject

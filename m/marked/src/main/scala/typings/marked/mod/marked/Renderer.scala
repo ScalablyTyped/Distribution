@@ -1,12 +1,12 @@
 package typings.marked.mod.marked
 
 import typings.marked.anon.Align
-import typings.marked.markedNumbers.`1`
-import typings.marked.markedNumbers.`2`
-import typings.marked.markedNumbers.`3`
-import typings.marked.markedNumbers.`4`
-import typings.marked.markedNumbers.`5`
-import typings.marked.markedNumbers.`6`
+import typings.marked.markedInts.`1`
+import typings.marked.markedInts.`2`
+import typings.marked.markedInts.`3`
+import typings.marked.markedInts.`4`
+import typings.marked.markedInts.`5`
+import typings.marked.markedInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

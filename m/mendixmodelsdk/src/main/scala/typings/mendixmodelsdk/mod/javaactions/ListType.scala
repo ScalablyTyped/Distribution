@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "javaactions.ListType")
 @js.native
-class ListType protected ()
+open class ListType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.javaactions.ListType {
   def this(
     model: AbstractModel,

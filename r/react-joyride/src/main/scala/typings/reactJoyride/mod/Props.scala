@@ -14,9 +14,11 @@ trait Props
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, js.Any]] = js.undefined
+  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, Any]] = js.undefined
   
   var run: js.UndefOr[Boolean] = js.undefined
+  
+  var scrollDuration: js.UndefOr[Double] = js.undefined
   
   var scrollOffset: js.UndefOr[Double] = js.undefined
   
@@ -47,13 +49,17 @@ object Props {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setGetHelpers(value: /* helpers */ StoreHelpers => js.Any): Self = StObject.set(x, "getHelpers", js.Any.fromFunction1(value))
+    inline def setGetHelpers(value: /* helpers */ StoreHelpers => Any): Self = StObject.set(x, "getHelpers", js.Any.fromFunction1(value))
     
     inline def setGetHelpersUndefined: Self = StObject.set(x, "getHelpers", js.undefined)
     
     inline def setRun(value: Boolean): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
     inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    
+    inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+    
+    inline def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
     
     inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
@@ -69,6 +75,6 @@ object Props {
     
     inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

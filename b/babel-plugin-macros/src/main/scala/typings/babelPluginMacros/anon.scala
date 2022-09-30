@@ -2618,13 +2618,13 @@ object anon {
     
     def createFlowUnionType(types: js.Array[FlowType]): UnionTypeAnnotation_ = js.native
     @JSName("createFlowUnionType")
-    def createFlowUnionType_T_FlowType_T[T /* <: FlowType */](types: js.Array[T]): T = js.native
+    def createFlowUnionType_T_T[T /* <: FlowType */](types: js.Array[T]): T = js.native
     
     def createTypeAnnotationBasedOnTypeof(`type`: string | number | undefined | boolean | function | `object` | symbol): StringTypeAnnotation_ | VoidTypeAnnotation_ | NumberTypeAnnotation_ | BooleanTypeAnnotation_ | GenericTypeAnnotation_ = js.native
     
     def createUnionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation_ = js.native
     @JSName("createUnionTypeAnnotation")
-    def createUnionTypeAnnotation_T_FlowType_T[T /* <: FlowType */](types: js.Array[T]): T = js.native
+    def createUnionTypeAnnotation_T_T[T /* <: FlowType */](types: js.Array[T]): T = js.native
     
     def debuggerStatement(): DebuggerStatement_ = js.native
     
@@ -4065,7 +4065,7 @@ object anon {
     
     def isNodesEquivalent(a: Any, b: Any): Boolean = js.native
     @JSName("isNodesEquivalent")
-    def isNodesEquivalent_T_PartialNode[T /* <: Partial[typings.babelTypes.mod.Node] */](a: T, b: Any): /* is T */ Boolean = js.native
+    def isNodesEquivalent_T[T /* <: Partial[typings.babelTypes.mod.Node] */](a: T, b: Any): /* is T */ Boolean = js.native
     
     def isNoop(): /* is @babel/types.@babel/types.Noop */ Boolean = js.native
     def isNoop(node: js.Object): /* is @babel/types.@babel/types.Noop */ Boolean = js.native
@@ -5037,11 +5037,11 @@ object anon {
     def isYieldExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types.YieldExpression */ Boolean = js.native
     
     @JSName("is")
-    def is_P_Node[P /* <: typings.babelTypes.mod.Node */](`type`: String, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
+    def is_P[P /* <: typings.babelTypes.mod.Node */](`type`: String, n: Null, required: Partial[P]): /* is P */ Boolean = js.native
     @JSName("is")
-    def is_P_Node[P /* <: typings.babelTypes.mod.Node */](`type`: String, n: Unit, required: Partial[P]): /* is P */ Boolean = js.native
+    def is_P[P /* <: typings.babelTypes.mod.Node */](`type`: String, n: Unit, required: Partial[P]): /* is P */ Boolean = js.native
     @JSName("is")
-    def is_P_Node[P /* <: typings.babelTypes.mod.Node */](`type`: String, n: typings.babelTypes.mod.Node, required: Partial[P]): /* is P */ Boolean = js.native
+    def is_P[P /* <: typings.babelTypes.mod.Node */](`type`: String, n: typings.babelTypes.mod.Node, required: Partial[P]): /* is P */ Boolean = js.native
     
     def jsxAttribute(name: JSXIdentifier_): JSXAttribute_ = js.native
     def jsxAttribute(name: JSXIdentifier_, value: JSXElement_): JSXAttribute_ = js.native

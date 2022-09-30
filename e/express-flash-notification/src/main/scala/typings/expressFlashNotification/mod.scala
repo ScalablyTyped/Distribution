@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(app: Application_, options: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].apply((List(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
-  inline def apply(app: Application_, options: efnOptions, args: Any*): Any = (^.asInstanceOf[js.Dynamic].apply((List(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def apply(app: Application_, options: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].apply((scala.List(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def apply(app: Application_, options: efnOptions, args: Any*): Any = (^.asInstanceOf[js.Dynamic].apply((scala.List(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   @JSImport("express-flash-notification", JSImport.Namespace)
   @js.native

@@ -1,23 +1,23 @@
 package typings.jsoncParser
 
-import typings.jsoncParser.jsoncParserNumbers.`0`
-import typings.jsoncParser.jsoncParserNumbers.`10`
-import typings.jsoncParser.jsoncParserNumbers.`11`
-import typings.jsoncParser.jsoncParserNumbers.`12`
-import typings.jsoncParser.jsoncParserNumbers.`13`
-import typings.jsoncParser.jsoncParserNumbers.`14`
-import typings.jsoncParser.jsoncParserNumbers.`15`
-import typings.jsoncParser.jsoncParserNumbers.`16`
-import typings.jsoncParser.jsoncParserNumbers.`17`
-import typings.jsoncParser.jsoncParserNumbers.`1`
-import typings.jsoncParser.jsoncParserNumbers.`2`
-import typings.jsoncParser.jsoncParserNumbers.`3`
-import typings.jsoncParser.jsoncParserNumbers.`4`
-import typings.jsoncParser.jsoncParserNumbers.`5`
-import typings.jsoncParser.jsoncParserNumbers.`6`
-import typings.jsoncParser.jsoncParserNumbers.`7`
-import typings.jsoncParser.jsoncParserNumbers.`8`
-import typings.jsoncParser.jsoncParserNumbers.`9`
+import typings.jsoncParser.jsoncParserInts.`0`
+import typings.jsoncParser.jsoncParserInts.`10`
+import typings.jsoncParser.jsoncParserInts.`11`
+import typings.jsoncParser.jsoncParserInts.`12`
+import typings.jsoncParser.jsoncParserInts.`13`
+import typings.jsoncParser.jsoncParserInts.`14`
+import typings.jsoncParser.jsoncParserInts.`15`
+import typings.jsoncParser.jsoncParserInts.`16`
+import typings.jsoncParser.jsoncParserInts.`17`
+import typings.jsoncParser.jsoncParserInts.`1`
+import typings.jsoncParser.jsoncParserInts.`2`
+import typings.jsoncParser.jsoncParserInts.`3`
+import typings.jsoncParser.jsoncParserInts.`4`
+import typings.jsoncParser.jsoncParserInts.`5`
+import typings.jsoncParser.jsoncParserInts.`6`
+import typings.jsoncParser.jsoncParserInts.`7`
+import typings.jsoncParser.jsoncParserInts.`8`
+import typings.jsoncParser.jsoncParserInts.`9`
 import typings.jsoncParser.jsoncParserStrings.CloseBraceExpected
 import typings.jsoncParser.jsoncParserStrings.CloseBracketExpected
 import typings.jsoncParser.jsoncParserStrings.ColonExpected
@@ -662,22 +662,22 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.jsoncParser.jsoncParserNumbers.`1`
-    - typings.jsoncParser.jsoncParserNumbers.`2`
-    - typings.jsoncParser.jsoncParserNumbers.`3`
-    - typings.jsoncParser.jsoncParserNumbers.`4`
-    - typings.jsoncParser.jsoncParserNumbers.`5`
-    - typings.jsoncParser.jsoncParserNumbers.`6`
-    - typings.jsoncParser.jsoncParserNumbers.`7`
-    - typings.jsoncParser.jsoncParserNumbers.`8`
-    - typings.jsoncParser.jsoncParserNumbers.`9`
-    - typings.jsoncParser.jsoncParserNumbers.`10`
-    - typings.jsoncParser.jsoncParserNumbers.`11`
-    - typings.jsoncParser.jsoncParserNumbers.`12`
-    - typings.jsoncParser.jsoncParserNumbers.`13`
-    - typings.jsoncParser.jsoncParserNumbers.`14`
-    - typings.jsoncParser.jsoncParserNumbers.`15`
-    - typings.jsoncParser.jsoncParserNumbers.`16`
+    - typings.jsoncParser.jsoncParserInts.`1`
+    - typings.jsoncParser.jsoncParserInts.`2`
+    - typings.jsoncParser.jsoncParserInts.`3`
+    - typings.jsoncParser.jsoncParserInts.`4`
+    - typings.jsoncParser.jsoncParserInts.`5`
+    - typings.jsoncParser.jsoncParserInts.`6`
+    - typings.jsoncParser.jsoncParserInts.`7`
+    - typings.jsoncParser.jsoncParserInts.`8`
+    - typings.jsoncParser.jsoncParserInts.`9`
+    - typings.jsoncParser.jsoncParserInts.`10`
+    - typings.jsoncParser.jsoncParserInts.`11`
+    - typings.jsoncParser.jsoncParserInts.`12`
+    - typings.jsoncParser.jsoncParserInts.`13`
+    - typings.jsoncParser.jsoncParserInts.`14`
+    - typings.jsoncParser.jsoncParserInts.`15`
+    - typings.jsoncParser.jsoncParserInts.`16`
   */
   trait ParseErrorCode extends StObject
   object ParseErrorCode {
@@ -774,13 +774,13 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.jsoncParser.jsoncParserNumbers.`0`
-    - typings.jsoncParser.jsoncParserNumbers.`1`
-    - typings.jsoncParser.jsoncParserNumbers.`2`
-    - typings.jsoncParser.jsoncParserNumbers.`3`
-    - typings.jsoncParser.jsoncParserNumbers.`4`
-    - typings.jsoncParser.jsoncParserNumbers.`5`
-    - typings.jsoncParser.jsoncParserNumbers.`6`
+    - typings.jsoncParser.jsoncParserInts.`0`
+    - typings.jsoncParser.jsoncParserInts.`1`
+    - typings.jsoncParser.jsoncParserInts.`2`
+    - typings.jsoncParser.jsoncParserInts.`3`
+    - typings.jsoncParser.jsoncParserInts.`4`
+    - typings.jsoncParser.jsoncParserInts.`5`
+    - typings.jsoncParser.jsoncParserInts.`6`
   */
   trait ScanError extends StObject
   object ScanError {
@@ -803,23 +803,23 @@ object mod {
   type Segment = String | Double
   
   /* Rewritten from type alias, can be one of: 
-    - typings.jsoncParser.jsoncParserNumbers.`1`
-    - typings.jsoncParser.jsoncParserNumbers.`2`
-    - typings.jsoncParser.jsoncParserNumbers.`3`
-    - typings.jsoncParser.jsoncParserNumbers.`4`
-    - typings.jsoncParser.jsoncParserNumbers.`5`
-    - typings.jsoncParser.jsoncParserNumbers.`6`
-    - typings.jsoncParser.jsoncParserNumbers.`7`
-    - typings.jsoncParser.jsoncParserNumbers.`8`
-    - typings.jsoncParser.jsoncParserNumbers.`9`
-    - typings.jsoncParser.jsoncParserNumbers.`10`
-    - typings.jsoncParser.jsoncParserNumbers.`11`
-    - typings.jsoncParser.jsoncParserNumbers.`12`
-    - typings.jsoncParser.jsoncParserNumbers.`13`
-    - typings.jsoncParser.jsoncParserNumbers.`14`
-    - typings.jsoncParser.jsoncParserNumbers.`15`
-    - typings.jsoncParser.jsoncParserNumbers.`16`
-    - typings.jsoncParser.jsoncParserNumbers.`17`
+    - typings.jsoncParser.jsoncParserInts.`1`
+    - typings.jsoncParser.jsoncParserInts.`2`
+    - typings.jsoncParser.jsoncParserInts.`3`
+    - typings.jsoncParser.jsoncParserInts.`4`
+    - typings.jsoncParser.jsoncParserInts.`5`
+    - typings.jsoncParser.jsoncParserInts.`6`
+    - typings.jsoncParser.jsoncParserInts.`7`
+    - typings.jsoncParser.jsoncParserInts.`8`
+    - typings.jsoncParser.jsoncParserInts.`9`
+    - typings.jsoncParser.jsoncParserInts.`10`
+    - typings.jsoncParser.jsoncParserInts.`11`
+    - typings.jsoncParser.jsoncParserInts.`12`
+    - typings.jsoncParser.jsoncParserInts.`13`
+    - typings.jsoncParser.jsoncParserInts.`14`
+    - typings.jsoncParser.jsoncParserInts.`15`
+    - typings.jsoncParser.jsoncParserInts.`16`
+    - typings.jsoncParser.jsoncParserInts.`17`
   */
   trait SyntaxKind extends StObject
   object SyntaxKind {

@@ -14,7 +14,6 @@ import typings.googleMaps.mod.Language
 import typings.googleMaps.mod.LocationType
 import typings.googleMaps.mod.Maneuver
 import typings.googleMaps.mod.PlaceAutocompleteResponseStatus
-import typings.googleMaps.mod.PlaceAutocompleteType
 import typings.googleMaps.mod.PlaceDetailsRequestField
 import typings.googleMaps.mod.PlaceDetailsResponseStatus
 import typings.googleMaps.mod.PlaceIdScope
@@ -35,6 +34,7 @@ import typings.googleMaps.mod.TravelMode
 import typings.googleMaps.mod.TravelRestriction
 import typings.googleMaps.mod.UnitSystem
 import typings.googleMaps.mod.VehicleType
+import typings.googleMaps.mod._PlaceAutocompleteType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -141,18 +141,6 @@ object googleMapsStrings {
     extends StObject
        with SpeedLimitUnit
   inline def KPH: KPH = "KPH".asInstanceOf[KPH]
-  
-  @js.native
-  sealed trait LeftparenthesiscitiesRightparenthesis
-    extends StObject
-       with PlaceAutocompleteType
-  inline def LeftparenthesiscitiesRightparenthesis: LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[LeftparenthesiscitiesRightparenthesis]
-  
-  @js.native
-  sealed trait LeftparenthesisregionsRightparenthesis
-    extends StObject
-       with PlaceAutocompleteType
-  inline def LeftparenthesisregionsRightparenthesis: LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[LeftparenthesisregionsRightparenthesis]
   
   @js.native
   sealed trait MAX_ELEMENTS_EXCEEDED
@@ -350,7 +338,7 @@ object googleMapsStrings {
   @js.native
   sealed trait address
     extends StObject
-       with PlaceAutocompleteType
+       with _PlaceAutocompleteType
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
@@ -760,8 +748,8 @@ object googleMapsStrings {
   sealed trait establishment
     extends StObject
        with GeocodingAddressComponentType
-       with PlaceAutocompleteType
        with PlaceType2
+       with _PlaceAutocompleteType
   inline def establishment: establishment = "establishment".asInstanceOf[establishment]
   
   @js.native
@@ -907,8 +895,8 @@ object googleMapsStrings {
   @js.native
   sealed trait geocode
     extends StObject
-       with PlaceAutocompleteType
        with PlaceType2
+       with _PlaceAutocompleteType
   inline def geocode: geocode = "geocode".asInstanceOf[geocode]
   
   @js.native

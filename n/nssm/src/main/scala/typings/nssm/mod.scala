@@ -1,5 +1,7 @@
 package typings.nssm
 
+import typings.std.Promise
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,7 +139,7 @@ object mod {
       (js.Function2[
         /* reason */ js.Error, 
         /* stderr */ String, 
-        scala.Nothing | js.Thenable[scala.Nothing]
+        scala.Nothing | PromiseLike[scala.Nothing]
       ]) | Null
     ], 
     NssmPromise[T | scala.Nothing]
@@ -184,40 +186,38 @@ object mod {
   
   @js.native
   trait NssmPromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
-    def `catch`[TResult](): NssmPromise[T | TResult] = js.native
     def `catch`[TResult](
-      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult | js.Thenable[TResult]]
+      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult | PromiseLike[TResult]]
     ): NssmPromise[T | TResult] = js.native
     @JSName("catch")
     var catch_Original: NssmCatch[T] = js.native
     
-    def `then`[TResult1, TResult2](): NssmPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): NssmPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult2 | js.Thenable[TResult2]]
+      onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult2 | PromiseLike[TResult2]]
     ): NssmPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: Null,
-      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult2 | PromiseLike[TResult2]]
     ): NssmPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: Unit,
-      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult2 | js.Thenable[TResult2]]
+      onrejected: js.Function2[/* reason */ js.Error, /* stderr */ String, TResult2 | PromiseLike[TResult2]]
     ): NssmPromise[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: NssmThen[T] = js.native
   }
   
   type NssmThen[T] = js.Function2[
-    /* onfulfilled */ js.UndefOr[(js.Function1[/* value */ T, T | js.Thenable[T]]) | Null], 
+    /* onfulfilled */ js.UndefOr[(js.Function1[/* value */ T, T | PromiseLike[T]]) | Null], 
     /* onrejected */ js.UndefOr[
       (js.Function2[
         /* reason */ js.Error, 
         /* stderr */ String, 
-        scala.Nothing | js.Thenable[scala.Nothing]
+        scala.Nothing | PromiseLike[scala.Nothing]
       ]) | Null
     ], 
     NssmPromise[T | scala.Nothing]

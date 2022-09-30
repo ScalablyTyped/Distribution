@@ -11,10 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object angularRouterStrings {
   
   @js.native
-  sealed trait `ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]` extends StObject
-  inline def `ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]`: `ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]` = ":not(a):not(area)[routerLink]".asInstanceOf[`ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]`]
-  
-  @js.native
   sealed trait `[routerLinkActive]` extends StObject
   inline def `[routerLinkActive]`: `[routerLinkActive]` = "[routerLinkActive]".asInstanceOf[`[routerLinkActive]`]
   

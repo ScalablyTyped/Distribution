@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/show-home-page relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowHomePageAction")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ShowHomePageAction")
 @js.native
-class ShowHomePageAction protected () extends MicroflowAction {
+open class ShowHomePageAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class ShowHomePageAction protected () extends MicroflowAction {
 }
 object ShowHomePageAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowHomePageAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ShowHomePageAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object ShowHomePageAction {
   inline def createIn(container: ActionActivity): ShowHomePageAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ShowHomePageAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowHomePageAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ShowHomePageAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowHomePageAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ShowHomePageAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

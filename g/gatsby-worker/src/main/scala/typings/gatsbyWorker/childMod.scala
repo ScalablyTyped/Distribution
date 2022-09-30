@@ -1,6 +1,6 @@
 package typings.gatsbyWorker
 
-import typings.gatsbyWorker.gatsbyWorkerNumbers.`1`
+import typings.gatsbyWorker.gatsbyWorkerInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

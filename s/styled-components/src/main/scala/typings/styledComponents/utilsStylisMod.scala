@@ -2,6 +2,7 @@ package typings.styledComponents
 
 import typings.styledComponents.anon.Prefix
 import typings.styledComponents.nativeDistTypesMod.Stringifier
+import typings.stylis.mod.Middleware_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +20,7 @@ object utilsStylisMod {
     
     var options: js.UndefOr[Prefix] = js.undefined
     
-    var plugins: js.UndefOr[
-        js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stylis.Middleware */ Any
-        ]
-      ] = js.undefined
+    var plugins: js.UndefOr[js.Array[Middleware_]] = js.undefined
   }
   object StylisInstanceConstructorArgs {
     
@@ -38,17 +35,11 @@ object utilsStylisMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setPlugins(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stylis.Middleware */ Any
-            ]
-      ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Middleware_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stylis.Middleware */ Any)*
-      ): Self = StObject.set(x, "plugins", js.Array(value*))
+      inline def setPluginsVarargs(value: Middleware_ *): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

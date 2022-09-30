@@ -31,34 +31,6 @@ object picomatchStrings {
   inline def AsteriskAsterisk: AsteriskAsterisk = "**".asInstanceOf[AsteriskAsterisk]
   
   @js.native
-  sealed trait `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde` extends StObject
-  inline def `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`: `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde` = "\\-!\"#$%&'()\\*+,./:;<=>?@[\\]^_`{|}~".asInstanceOf[`Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`]
-  
-  @js.native
-  sealed trait `Backslashx00-Backslashx1FBackslashx7F` extends StObject
-  inline def `Backslashx00-Backslashx1FBackslashx7F`: `Backslashx00-Backslashx1FBackslashx7F` = "\\x00-\\x1F\\x7F".asInstanceOf[`Backslashx00-Backslashx1FBackslashx7F`]
-  
-  @js.native
-  sealed trait `Backslashx00-Backslashx7F` extends StObject
-  inline def `Backslashx00-Backslashx7F`: `Backslashx00-Backslashx7F` = "\\x00-\\x7F".asInstanceOf[`Backslashx00-Backslashx7F`]
-  
-  @js.native
-  sealed trait `Backslashx20-Backslashx7E ` extends StObject
-  inline def `Backslashx20-Backslashx7E `: `Backslashx20-Backslashx7E ` = ("\\x20-\\x7E ").asInstanceOf[`Backslashx20-Backslashx7E `]
-  
-  @js.native
-  sealed trait `Backslashx21-Backslashx7E` extends StObject
-  inline def `Backslashx21-Backslashx7E`: `Backslashx21-Backslashx7E` = "\\x21-\\x7E".asInstanceOf[`Backslashx21-Backslashx7E`]
-  
-  @js.native
-  sealed trait SpaceBackslasht extends StObject
-  inline def SpaceBackslasht: SpaceBackslasht = (" \\t").asInstanceOf[SpaceBackslasht]
-  
-  @js.native
-  sealed trait SpaceBackslashtBackslashrBackslashnBackslashvBackslashf extends StObject
-  inline def SpaceBackslashtBackslashrBackslashnBackslashvBackslashf: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf = (" \\t\\r\\n\\v\\f").asInstanceOf[SpaceBackslashtBackslashrBackslashnBackslashvBackslashf]
-  
-  @js.native
   sealed trait `a-zA-Z` extends StObject
   inline def `a-zA-Z`: `a-zA-Z` = "a-zA-Z".asInstanceOf[`a-zA-Z`]
   

@@ -2,24 +2,83 @@ package typings.googleCloudPubsub
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPreciseDate.mod.PreciseDate
+import typings.googleCloudPubsub.googleCloudPubsubStrings.FAILED_PRECONDITION
+import typings.googleCloudPubsub.googleCloudPubsubStrings.INVALID
+import typings.googleCloudPubsub.googleCloudPubsubStrings.OTHER
+import typings.googleCloudPubsub.googleCloudPubsubStrings.PERMISSION_DENIED
+import typings.googleCloudPubsub.googleCloudPubsubStrings.SUCCESS
 import typings.googleCloudPubsub.leaseManagerMod.FlowControlOptions
 import typings.googleCloudPubsub.messageQueuesMod.BatchOptions
 import typings.googleCloudPubsub.messageStreamMod.MessageStreamOptions
-import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IPullResponse
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IReceivedMessage
+import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IStreamingPullResponse
+import typings.googleCloudPubsub.protosMod.google.pubsub.v1.StreamingPullResponse.ISubscriptionProperties
 import typings.googleCloudPubsub.subscriptionMod.Subscription
+import typings.googleCloudPubsub.temporalMod.Duration
 import typings.googleCloudPubsub.v1Mod.SubscriberClient
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriberMod {
   
+  @JSImport("@google-cloud/pubsub/build/src/subscriber", "AckError")
+  @js.native
+  open class AckError protected ()
+    extends StObject
+       with Error {
+    def this(errorCode: AckResponse) = this()
+    def this(errorCode: AckResponse, message: String) = this()
+    
+    var errorCode: AckResponse = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  object AckResponses {
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscriber", "AckResponses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscriber", "AckResponses.FailedPrecondition")
+    @js.native
+    def FailedPrecondition: FAILED_PRECONDITION = js.native
+    inline def FailedPrecondition_=(x: FAILED_PRECONDITION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FailedPrecondition")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscriber", "AckResponses.Invalid")
+    @js.native
+    def Invalid: INVALID = js.native
+    inline def Invalid_=(x: INVALID): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Invalid")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscriber", "AckResponses.Other")
+    @js.native
+    def Other: OTHER = js.native
+    inline def Other_=(x: OTHER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Other")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscriber", "AckResponses.PermissionDenied")
+    @js.native
+    def PermissionDenied: PERMISSION_DENIED = js.native
+    inline def PermissionDenied_=(x: PERMISSION_DENIED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PermissionDenied")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscriber", "AckResponses.Success")
+    @js.native
+    def Success: SUCCESS = js.native
+    inline def Success_=(x: SUCCESS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Success")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("@google-cloud/pubsub/build/src/subscriber", "Message")
   @js.native
-  class Message protected () extends StObject {
+  open class Message protected () extends StObject {
     /**
       * @hideconstructor
       *
@@ -28,23 +87,38 @@ object subscriberMod {
       */
     def this(sub: Subscriber, hasAckIdMessageDeliveryAttempt: IReceivedMessage) = this()
     
-    /* private */ var _handled: js.Any = js.native
+    /* private */ var _handled: Any = js.native
     
-    /* private */ var _length: js.Any = js.native
+    /* private */ var _length: Any = js.native
     
-    /* private */ var _subscriber: js.Any = js.native
+    /* private */ var _subscriber: Any = js.native
     
     /**
       * Acknowledges the message.
       *
       * @example
+      * ```
       * subscription.on('message', message => {
       *   message.ack();
       * });
+      * ```
       */
     def ack(): Unit = js.native
     
     var ackId: String = js.native
+    
+    /**
+      * Acknowledges the message, expecting a response (for exactly-once delivery subscriptions).
+      * If exactly-once delivery is not enabled, this will immediately resolve successfully.
+      *
+      * @example
+      * ```
+      * subscription.on('message', async (message) => {
+      *   const response = await message.ackWithResponse();
+      * });
+      * ```
+      */
+    def ackWithResponse(): js.Promise[AckResponse] = js.native
     
     var attributes: StringDictionary[String] = js.native
     
@@ -70,14 +144,39 @@ object subscriberMod {
     def modAck(deadline: Double): Unit = js.native
     
     /**
+      * Modifies the ack deadline, expecting a response (for exactly-once delivery subscriptions).
+      * If exactly-once delivery is not enabled, this will immediately resolve successfully.
+      *
+      * @param {number} deadline The number of seconds to extend the deadline.
+      * @private
+      */
+    def modAckWithResponse(deadline: Double): js.Promise[AckResponse] = js.native
+    
+    /**
       * Removes the message from our inventory and schedules it to be redelivered.
       *
       * @example
+      * ```
       * subscription.on('message', message => {
       *   message.nack();
       * });
+      * ```
       */
     def nack(): Unit = js.native
+    
+    /**
+      * Removes the message from our inventory and schedules it to be redelivered,
+      * with the modAck response being returned (for exactly-once delivery subscriptions).
+      * If exactly-once delivery is not enabled, this will immediately resolve successfully.
+      *
+      * @example
+      * ```
+      * subscription.on('message', async (message) => {
+      *   const response = await message.nackWithResponse();
+      * });
+      * ```
+      */
+    def nackWithResponse(): js.Promise[AckResponse] = js.native
     
     var orderingKey: js.UndefOr[String] = js.native
     
@@ -88,11 +187,11 @@ object subscriberMod {
   
   @JSImport("@google-cloud/pubsub/build/src/subscriber", "Subscriber")
   @js.native
-  class Subscriber protected () extends EventEmitter {
+  open class Subscriber protected () extends EventEmitter {
     def this(subscription: Subscription) = this()
     def this(subscription: Subscription, options: js.Object) = this()
     
-    /* private */ var _acks: js.Any = js.native
+    /* private */ var _acks: Any = js.native
     
     /**
       * Constructs an OpenTelemetry span from the incoming message.
@@ -100,19 +199,17 @@ object subscriberMod {
       * @param {Message} message One of the received messages
       * @private
       */
-    /* private */ var _constructSpan: js.Any = js.native
+    /* private */ var _constructSpan: Any = js.native
     
-    /* private */ var _histogram: js.Any = js.native
+    /* private */ var _histogram: Any = js.native
     
-    /* private */ var _inventory: js.Any = js.native
+    /* private */ var _inventory: Any = js.native
     
-    /* private */ var _isUserSetDeadline: js.Any = js.native
+    /* private */ var _latencies: Any = js.native
     
-    /* private */ var _latencies: js.Any = js.native
+    /* private */ var _modAcks: Any = js.native
     
-    /* private */ var _modAcks: js.Any = js.native
-    
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
     /**
       * Callback to be invoked when a new message is available.
@@ -131,15 +228,15 @@ object subscriberMod {
       *
       * @private
       */
-    /* private */ var _onData: js.Any = js.native
+    /* private */ var _onData: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _stream: js.Any = js.native
+    /* private */ var _stream: Any = js.native
     
-    /* private */ var _subscription: js.Any = js.native
+    /* private */ var _subscription: Any = js.native
     
-    /* private */ var _tracing: js.Any = js.native
+    /* private */ var _useOpentelemetry: Any = js.native
     
     /**
       * Returns a promise that will resolve once all pending requests have settled.
@@ -148,18 +245,28 @@ object subscriberMod {
       *
       * @returns {Promise}
       */
-    /* private */ var _waitForFlush: js.Any = js.native
+    /* private */ var _waitForFlush: Any = js.native
     
     /**
       * Acknowledges the supplied message.
       *
       * @param {Message} message The message to acknowledge.
-      * @returns {Promise}
+      * @returns {Promise<void>}
       * @private
       */
     def ack(message: Message): js.Promise[Unit] = js.native
     
     var ackDeadline: Double = js.native
+    
+    /**
+      * Acknowledges the supplied message, expecting a response (for exactly
+      * once subscriptions).
+      *
+      * @param {Message} message The message to acknowledge.
+      * @returns {Promise<AckResponse>}
+      * @private
+      */
+    def ackWithResponse(message: Message): js.Promise[AckResponse] = js.native
     
     /**
       * Closes the subscriber. The returned promise will resolve once any pending
@@ -178,6 +285,15 @@ object subscriberMod {
       */
     def getClient(): js.Promise[SubscriberClient] = js.native
     
+    /* private */ var getMinMaxDeadlines: Any = js.native
+    
+    /**
+      * Returns true if an exactly-once delivery subscription has been detected.
+      *
+      * @private
+      */
+    def isExactlyOnceDelivery: Boolean = js.native
+    
     var isOpen: Boolean = js.native
     
     var maxBytes: Double = js.native
@@ -189,7 +305,7 @@ object subscriberMod {
       *
       * @param {Message} message The message to modify.
       * @param {number} deadline The deadline.
-      * @returns {Promise}
+      * @returns {Promise<void>}
       * @private
       */
     def modAck(message: Message, deadline: Double): js.Promise[Unit] = js.native
@@ -203,14 +319,36 @@ object subscriberMod {
     def modAckLatency: Double = js.native
     
     /**
+      * Modifies the acknowledge deadline for the provided message, expecting
+      * a reply (for exactly-once delivery subscriptions).
+      *
+      * @param {Message} message The message to modify.
+      * @param {number} deadline The deadline.
+      * @returns {Promise<AckResponse>}
+      * @private
+      */
+    def modAckWithResponse(message: Message, deadline: Double): js.Promise[AckResponse] = js.native
+    
+    /**
       * Modfies the acknowledge deadline for the provided message and then removes
       * it from our inventory.
       *
       * @param {Message} message The message.
-      * @return {Promise}
+      * @return {Promise<void>}
       * @private
       */
     def nack(message: Message): js.Promise[Unit] = js.native
+    
+    /**
+      * Modfies the acknowledge deadline for the provided message and then removes
+      * it from our inventory, expecting a response from modAck (for
+      * exactly-once delivery subscriptions).
+      *
+      * @param {Message} message The message.
+      * @return {Promise<AckResponse>}
+      * @private
+      */
+    def nackWithResponse(message: Message): js.Promise[AckResponse] = js.native
     
     /**
       * The full name of the Subscription.
@@ -233,12 +371,63 @@ object subscriberMod {
       * @private
       */
     def setOptions(options: SubscriberOptions): Unit = js.native
+    
+    /**
+      * Sets our subscription properties from incoming messages.
+      *
+      * @param {SubscriptionProperties} subscriptionProperties The new properties.
+      * @private
+      */
+    def setSubscriptionProperties(subscriptionProperties: SubscriptionProperties): Unit = js.native
+    
+    var subscriptionProperties: js.UndefOr[SubscriptionProperties] = js.native
+    
+    /**
+      * Update our ack extension time that will be used by the lease manager
+      * for sending modAcks.
+      *
+      * Should not be called from outside this class, except for unit tests.
+      *
+      * @param {number} [ackTimeSeconds] The number of seconds that the last
+      *   ack took after the message was received. If this is undefined, then
+      *   we won't update the histogram, but we will still recalculate the
+      *   ackDeadline based on the situation.
+      *
+      * @private
+      */
+    def updateAckDeadline(): Unit = js.native
+    def updateAckDeadline(ackTimeSeconds: Double): Unit = js.native
+    
+    var useLegacyFlowControl: Boolean = js.native
   }
   
-  type PullResponse = IPullResponse
+  /* Inlined @google-cloud/pubsub.@google-cloud/pubsub/build/src/subscriber.ValueOf<{  PermissionDenied :'PERMISSION_DENIED',   FailedPrecondition :'FAILED_PRECONDITION',   Success :'SUCCESS',   Invalid :'INVALID',   Other :'OTHER'}> */
+  /* Rewritten from type alias, can be one of: 
+    - typings.googleCloudPubsub.googleCloudPubsubStrings.SUCCESS
+    - typings.googleCloudPubsub.googleCloudPubsubStrings.INVALID
+    - typings.googleCloudPubsub.googleCloudPubsubStrings.FAILED_PRECONDITION
+    - typings.googleCloudPubsub.googleCloudPubsubStrings.PERMISSION_DENIED
+    - typings.googleCloudPubsub.googleCloudPubsubStrings.OTHER
+  */
+  trait AckResponse extends StObject
+  object AckResponse {
+    
+    inline def FAILED_PRECONDITION: typings.googleCloudPubsub.googleCloudPubsubStrings.FAILED_PRECONDITION = "FAILED_PRECONDITION".asInstanceOf[typings.googleCloudPubsub.googleCloudPubsubStrings.FAILED_PRECONDITION]
+    
+    inline def INVALID: typings.googleCloudPubsub.googleCloudPubsubStrings.INVALID = "INVALID".asInstanceOf[typings.googleCloudPubsub.googleCloudPubsubStrings.INVALID]
+    
+    inline def OTHER: typings.googleCloudPubsub.googleCloudPubsubStrings.OTHER = "OTHER".asInstanceOf[typings.googleCloudPubsub.googleCloudPubsubStrings.OTHER]
+    
+    inline def PERMISSION_DENIED: typings.googleCloudPubsub.googleCloudPubsubStrings.PERMISSION_DENIED = "PERMISSION_DENIED".asInstanceOf[typings.googleCloudPubsub.googleCloudPubsubStrings.PERMISSION_DENIED]
+    
+    inline def SUCCESS: typings.googleCloudPubsub.googleCloudPubsubStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.googleCloudPubsub.googleCloudPubsubStrings.SUCCESS]
+  }
+  
+  type PullResponse = IStreamingPullResponse
   
   trait SubscriberOptions extends StObject {
     
+    /** @deprecated Use minAckDeadline and maxAckDeadline. */
     var ackDeadline: js.UndefOr[Double] = js.undefined
     
     var batching: js.UndefOr[BatchOptions] = js.undefined
@@ -247,7 +436,13 @@ object subscriberMod {
     
     var flowControl: js.UndefOr[FlowControlOptions] = js.undefined
     
+    var maxAckDeadline: js.UndefOr[Duration] = js.undefined
+    
+    var minAckDeadline: js.UndefOr[Duration] = js.undefined
+    
     var streamingOptions: js.UndefOr[MessageStreamOptions] = js.undefined
+    
+    var useLegacyFlowControl: js.UndefOr[Boolean] = js.undefined
   }
   object SubscriberOptions {
     
@@ -274,9 +469,25 @@ object subscriberMod {
       
       inline def setFlowControlUndefined: Self = StObject.set(x, "flowControl", js.undefined)
       
+      inline def setMaxAckDeadline(value: Duration): Self = StObject.set(x, "maxAckDeadline", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAckDeadlineUndefined: Self = StObject.set(x, "maxAckDeadline", js.undefined)
+      
+      inline def setMinAckDeadline(value: Duration): Self = StObject.set(x, "minAckDeadline", value.asInstanceOf[js.Any])
+      
+      inline def setMinAckDeadlineUndefined: Self = StObject.set(x, "minAckDeadline", js.undefined)
+      
       inline def setStreamingOptions(value: MessageStreamOptions): Self = StObject.set(x, "streamingOptions", value.asInstanceOf[js.Any])
       
       inline def setStreamingOptionsUndefined: Self = StObject.set(x, "streamingOptions", js.undefined)
+      
+      inline def setUseLegacyFlowControl(value: Boolean): Self = StObject.set(x, "useLegacyFlowControl", value.asInstanceOf[js.Any])
+      
+      inline def setUseLegacyFlowControlUndefined: Self = StObject.set(x, "useLegacyFlowControl", js.undefined)
     }
   }
+  
+  type SubscriptionProperties = ISubscriptionProperties
+  
+  type ValueOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }

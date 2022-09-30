@@ -1,6 +1,7 @@
 package typings.storybookComponents.typesPrettierIndexMod
 
 import typings.storybookComponents.storybookComponentsBooleans.`false`
+import typings.storybookComponents.storybookComponentsStrings.Quotationmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,17 +107,13 @@ object util {
   inline def skipWhitespace_false(text: String, index: `false`): Double | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("skipWhitespace")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double | `false`]
   inline def skipWhitespace_false(text: String, index: `false`, opts: SkipOptions): Double | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("skipWhitespace")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double | `false`]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.storybookComponents.storybookComponentsStrings.Apostrophe
-    - typings.storybookComponents.storybookComponentsStrings.Quotationmark
-  */
-  trait Quote extends StObject
   object Quote {
     
-    inline def Apostrophe: typings.storybookComponents.storybookComponentsStrings.Apostrophe = "'".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.Apostrophe]
+    inline def Apostrophe: String = String.asInstanceOf[String]
     
     inline def Quotationmark: typings.storybookComponents.storybookComponentsStrings.Quotationmark = "\"".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.Quotationmark]
   }
+  type Quote = String | Quotationmark
   
   trait SkipOptions extends StObject {
     

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/committing-objects relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CommitAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CommitAction")
 @js.native
-class CommitAction protected ()
+open class CommitAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.CommitAction {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class CommitAction protected ()
 }
 object CommitAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CommitAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CommitAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object CommitAction {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.CommitAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.CommitAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CommitAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CommitAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.CommitAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CommitAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

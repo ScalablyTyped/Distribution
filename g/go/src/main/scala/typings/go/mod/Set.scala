@@ -156,5 +156,5 @@ open class Set[T] () extends Iterable[T] {
   /**
     * Converts the Set to a List.
     */
-  def toList(): List[T] = js.native
+  def toList(): typings.go.mod.List[T] = js.native
 }

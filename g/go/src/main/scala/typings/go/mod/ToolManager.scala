@@ -78,13 +78,13 @@ open class ToolManager () extends Tool {
   var linkingTool: LinkingTool = js.native
   
   /**This read-only property returns the list of Tools that might be started upon a mouse-down event.*/
-  var mouseDownTools: List[Tool] = js.native
+  var mouseDownTools: typings.go.mod.List[Tool] = js.native
   
   /**This read-only property returns the list of Tools that might be started upon a mouse-move event.*/
-  var mouseMoveTools: List[Tool] = js.native
+  var mouseMoveTools: typings.go.mod.List[Tool] = js.native
   
   /**This read-only property returns the list of Tools that might be started upon a mouse-up event.*/
-  var mouseUpTools: List[Tool] = js.native
+  var mouseUpTools: typings.go.mod.List[Tool] = js.native
   
   /**Gets or sets the ToolManager's mouse wheel behavior.*/
   var mouseWheelBehavior: EnumValue = js.native

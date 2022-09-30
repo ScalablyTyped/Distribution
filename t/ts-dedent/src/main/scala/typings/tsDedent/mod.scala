@@ -11,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(templ: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-  inline def default(templ: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def default(templ: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def default(templ: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
-  inline def dedent(templ: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-  inline def dedent(templ: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def dedent(templ: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(scala.List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def dedent(templ: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(scala.List(templ.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

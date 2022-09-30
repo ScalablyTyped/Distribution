@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.FormDataPart")
 @js.native
-class FormDataPart protected ()
+open class FormDataPart protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.FormDataPart {
   def this(
     model: AbstractModel,

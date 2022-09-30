@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Rectangle")
 @js.native
-class Rectangle_[P] protected ()
+open class Rectangle_[P] protected ()
   extends typings.leaflet.mod.Rectangle_[P] {
   def this(latLngBounds: LatLngBoundsExpression) = this()
   def this(latLngBounds: LatLngBoundsExpression, options: PolylineOptions) = this()

@@ -1,8 +1,8 @@
 package typings.rbx.anon
 
 import typings.rbx.columnGroupMod.ColumnGroupBreakpointOptions
-import typings.rbx.rbxNumbers.`7`
-import typings.rbx.rbxNumbers.`8`
+import typings.rbx.rbxInts.`7`
+import typings.rbx.rbxInts.`8`
 import typings.rbx.rbxStrings.`black-bis`
 import typings.rbx.rbxStrings.`black-ter`
 import typings.rbx.rbxStrings.`grey-dark`
@@ -81,7 +81,7 @@ trait ColumnGroupProps extends StObject {
   var fullhd: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
   
   var gapSize: js.UndefOr[
-    typings.rbx.rbxNumbers.`0` | typings.rbx.rbxNumbers.`1` | typings.rbx.rbxNumbers.`2` | typings.rbx.rbxNumbers.`3` | typings.rbx.rbxNumbers.`4` | typings.rbx.rbxNumbers.`5` | typings.rbx.rbxNumbers.`6` | `7` | `8`
+    typings.rbx.rbxInts.`0` | typings.rbx.rbxInts.`1` | typings.rbx.rbxInts.`2` | typings.rbx.rbxInts.`3` | typings.rbx.rbxInts.`4` | typings.rbx.rbxInts.`5` | typings.rbx.rbxInts.`6` | `7` | `8`
   ] = js.undefined
   
   var gapless: js.UndefOr[Boolean] = js.undefined
@@ -123,7 +123,7 @@ trait ColumnGroupProps extends StObject {
   ] = js.undefined
   
   var textSize: js.UndefOr[
-    typings.rbx.rbxNumbers.`1` | typings.rbx.rbxNumbers.`2` | typings.rbx.rbxNumbers.`3` | typings.rbx.rbxNumbers.`4` | typings.rbx.rbxNumbers.`5` | typings.rbx.rbxNumbers.`6` | `7`
+    typings.rbx.rbxInts.`1` | typings.rbx.rbxInts.`2` | typings.rbx.rbxInts.`3` | typings.rbx.rbxInts.`4` | typings.rbx.rbxInts.`5` | typings.rbx.rbxInts.`6` | `7`
   ] = js.undefined
   
   var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
@@ -216,7 +216,7 @@ object ColumnGroupProps {
     inline def setFullhdUndefined: Self = StObject.set(x, "fullhd", js.undefined)
     
     inline def setGapSize(
-      value: typings.rbx.rbxNumbers.`0` | typings.rbx.rbxNumbers.`1` | typings.rbx.rbxNumbers.`2` | typings.rbx.rbxNumbers.`3` | typings.rbx.rbxNumbers.`4` | typings.rbx.rbxNumbers.`5` | typings.rbx.rbxNumbers.`6` | `7` | `8`
+      value: typings.rbx.rbxInts.`0` | typings.rbx.rbxInts.`1` | typings.rbx.rbxInts.`2` | typings.rbx.rbxInts.`3` | typings.rbx.rbxInts.`4` | typings.rbx.rbxInts.`5` | typings.rbx.rbxInts.`6` | `7` | `8`
     ): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
     
     inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
@@ -296,7 +296,7 @@ object ColumnGroupProps {
     inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     inline def setTextSize(
-      value: typings.rbx.rbxNumbers.`1` | typings.rbx.rbxNumbers.`2` | typings.rbx.rbxNumbers.`3` | typings.rbx.rbxNumbers.`4` | typings.rbx.rbxNumbers.`5` | typings.rbx.rbxNumbers.`6` | `7`
+      value: typings.rbx.rbxInts.`1` | typings.rbx.rbxInts.`2` | typings.rbx.rbxInts.`3` | typings.rbx.rbxInts.`4` | typings.rbx.rbxInts.`5` | typings.rbx.rbxInts.`6` | `7`
     ): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
     
     inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)

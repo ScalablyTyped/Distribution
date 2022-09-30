@@ -1,21 +1,33 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.checkboxCheckboxMod.CheckboxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/checkbox", JSImport.Namespace)
-@js.native
-object checkboxMod extends js.Object {
-  @js.native
-  class Checkbox ()
-    extends Component[CheckboxProps, js.Object, js.Any]
+object checkboxMod {
   
+  @JSImport("react-toolbox/components/checkbox", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CheckboxProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.checkboxCheckboxMod.Checkbox {
+    def this(props: CheckboxProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CheckboxProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/checkbox", "Checkbox")
+  @js.native
+  open class Checkbox protected ()
+    extends typings.reactToolbox.checkboxCheckboxMod.Checkbox {
+    def this(props: CheckboxProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CheckboxProps, context: Any) = this()
+  }
 }
-

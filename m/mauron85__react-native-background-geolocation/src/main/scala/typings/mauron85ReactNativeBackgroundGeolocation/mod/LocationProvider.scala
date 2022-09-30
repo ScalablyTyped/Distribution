@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`0`
-  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`1`
-  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`2`
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`0`
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`1`
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`2`
 */
 trait LocationProvider extends StObject
 object LocationProvider {
   
-  inline def `0`: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`0` = 0.asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`0`]
+  inline def `0`: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`0` = 0.asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`0`]
   
-  inline def `1`: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`1` = 1.asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`1`]
+  inline def `1`: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`1` = 1.asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`1`]
   
-  inline def `2`: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`2` = 2.asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`2`]
+  inline def `2`: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`2` = 2.asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`2`]
 }

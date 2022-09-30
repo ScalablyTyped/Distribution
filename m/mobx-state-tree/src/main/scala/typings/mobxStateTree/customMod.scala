@@ -18,7 +18,7 @@ object customMod {
     
     /** given a serialized value and environment, how to turn it into the target type */
     def fromSnapshot(snapshot: S): T = js.native
-    def fromSnapshot(snapshot: S, env: js.Any): T = js.native
+    def fromSnapshot(snapshot: S, env: Any): T = js.native
     
     /** a non empty string is assumed to be a validation error */
     def getValidationMessage(snapshot: S): String = js.native

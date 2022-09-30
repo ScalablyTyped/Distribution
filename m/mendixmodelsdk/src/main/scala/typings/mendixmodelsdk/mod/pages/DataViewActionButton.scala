@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DataViewActionButton")
 @js.native
-class DataViewActionButton protected ()
+open class DataViewActionButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DataViewActionButton {
   def this(
     model: AbstractModel,

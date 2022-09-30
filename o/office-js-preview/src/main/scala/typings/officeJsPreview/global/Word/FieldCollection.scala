@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of {@link Word.Field} objects.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @JSGlobal("Word.FieldCollection")
 @js.native

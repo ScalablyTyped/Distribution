@@ -17,7 +17,7 @@ trait ProvisionedResource extends StObject {
   var name: js.UndefOr[ProvisionedResourceName] = js.undefined
   
   /**
-    * The resource provisioning engine. At this time, CLOUDFORMATION can be used for Amazon Web Services-managed provisioning, and TERRAFORM can be used for self-managed provisioning. For more information, see Self-managed provisioning in the Proton Administrator Guide.
+    * The resource provisioning engine. At this time, CLOUDFORMATION can be used for Amazon Web Services-managed provisioning, and TERRAFORM can be used for self-managed provisioning. For more information, see Self-managed provisioning in the Proton User Guide.
     */
   var provisioningEngine: js.UndefOr[ProvisionedResourceEngine] = js.undefined
 }

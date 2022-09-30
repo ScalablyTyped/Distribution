@@ -4,41 +4,41 @@ import typings.screeps.BodyPartConstant
 import typings.screeps.ColorConstant
 import typings.screeps.InterShardResourceConstant
 import typings.screeps.ResourceConstant
-import typings.screeps.screepsNumbers._2592000000
-import typings.screeps.screepsNumbers.`0.005`
-import typings.screeps.screepsNumbers.`0.01`
-import typings.screeps.screepsNumbers.`0.03`
-import typings.screeps.screepsNumbers.`0.2`
-import typings.screeps.screepsNumbers.`1000000`
-import typings.screeps.screepsNumbers.`10000`
-import typings.screeps.screepsNumbers.`1000`
-import typings.screeps.screepsNumbers.`100`
-import typings.screeps.screepsNumbers.`10`
-import typings.screeps.screepsNumbers.`12`
-import typings.screeps.screepsNumbers.`150000`
-import typings.screeps.screepsNumbers.`15000`
-import typings.screeps.screepsNumbers.`1500`
-import typings.screeps.screepsNumbers.`150`
-import typings.screeps.screepsNumbers.`1`
-import typings.screeps.screepsNumbers.`20000`
-import typings.screeps.screepsNumbers.`25`
-import typings.screeps.screepsNumbers.`28800000`
-import typings.screeps.screepsNumbers.`2`
-import typings.screeps.screepsNumbers.`300000000`
-import typings.screeps.screepsNumbers.`3000`
-import typings.screeps.screepsNumbers.`300`
-import typings.screeps.screepsNumbers.`30`
-import typings.screeps.screepsNumbers.`3`
-import typings.screeps.screepsNumbers.`4000`
-import typings.screeps.screepsNumbers.`4`
-import typings.screeps.screepsNumbers.`50000`
-import typings.screeps.screepsNumbers.`5000`
-import typings.screeps.screepsNumbers.`500`
-import typings.screeps.screepsNumbers.`50`
-import typings.screeps.screepsNumbers.`5`
-import typings.screeps.screepsNumbers.`600`
-import typings.screeps.screepsNumbers.`800`
-import typings.screeps.screepsNumbers.`86400000`
+import typings.screeps.screepsDoubles.`0.005`
+import typings.screeps.screepsDoubles.`0.01`
+import typings.screeps.screepsDoubles.`0.03`
+import typings.screeps.screepsDoubles.`0.2`
+import typings.screeps.screepsDoubles.`2592000000`
+import typings.screeps.screepsInts.`1000000`
+import typings.screeps.screepsInts.`10000`
+import typings.screeps.screepsInts.`1000`
+import typings.screeps.screepsInts.`100`
+import typings.screeps.screepsInts.`10`
+import typings.screeps.screepsInts.`12`
+import typings.screeps.screepsInts.`150000`
+import typings.screeps.screepsInts.`15000`
+import typings.screeps.screepsInts.`1500`
+import typings.screeps.screepsInts.`150`
+import typings.screeps.screepsInts.`1`
+import typings.screeps.screepsInts.`20000`
+import typings.screeps.screepsInts.`25`
+import typings.screeps.screepsInts.`28800000`
+import typings.screeps.screepsInts.`2`
+import typings.screeps.screepsInts.`300000000`
+import typings.screeps.screepsInts.`3000`
+import typings.screeps.screepsInts.`300`
+import typings.screeps.screepsInts.`30`
+import typings.screeps.screepsInts.`3`
+import typings.screeps.screepsInts.`4000`
+import typings.screeps.screepsInts.`4`
+import typings.screeps.screepsInts.`50000`
+import typings.screeps.screepsInts.`5000`
+import typings.screeps.screepsInts.`500`
+import typings.screeps.screepsInts.`50`
+import typings.screeps.screepsInts.`5`
+import typings.screeps.screepsInts.`600`
+import typings.screeps.screepsInts.`800`
+import typings.screeps.screepsInts.`86400000`
 import typings.screeps.screepsStrings.`extension`
 import typings.screeps.screepsStrings.constructedWall
 import typings.screeps.screepsStrings.controller
@@ -402,7 +402,7 @@ inline def LOOK_TOMBSTONES: typings.screeps.LOOK_TOMBSTONES = js.Dynamic.global.
 
 inline def MARKET_MAX_ORDERS: `300` = js.Dynamic.global.selectDynamic("MARKET_MAX_ORDERS").asInstanceOf[`300`]
 
-inline def MARKET_ORDER_LIFE_TIME: _2592000000 = js.Dynamic.global.selectDynamic("MARKET_ORDER_LIFE_TIME").asInstanceOf[_2592000000]
+inline def MARKET_ORDER_LIFE_TIME: `2592000000` = js.Dynamic.global.selectDynamic("MARKET_ORDER_LIFE_TIME").asInstanceOf[`2592000000`]
 
 inline def MAX_CONSTRUCTION_SITES: Double = js.Dynamic.global.selectDynamic("MAX_CONSTRUCTION_SITES").asInstanceOf[Double]
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/runtime-dom" : "3.2.39"
+      "@vue/runtime-dom" : "3.2.40"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/runtime-dom" : "3.2.39"
+      "@vue/runtime-dom" : "3.2.40"
     }
   ],
   "compile-devDependencies" : [

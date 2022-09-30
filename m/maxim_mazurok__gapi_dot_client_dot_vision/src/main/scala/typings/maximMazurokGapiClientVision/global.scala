@@ -7,6 +7,7 @@ import typings.maximMazurokGapiClientVision.gapi.client.vision.OperationsResourc
 import typings.maximMazurokGapiClientVision.gapi.client.vision.ProjectsResource
 import typings.maximMazurokGapiClientVision.maximMazurokGapiClientVisionStrings.v1
 import typings.maximMazurokGapiClientVision.maximMazurokGapiClientVisionStrings.vision
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ object global {
       val ^ : js.Any = js.native
       
       /** Load Cloud Vision API v1 */
-      inline def load(name: vision, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: vision, version: v1): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: vision, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object vision {

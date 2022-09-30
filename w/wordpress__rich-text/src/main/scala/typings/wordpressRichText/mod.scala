@@ -2,7 +2,6 @@ package typings.wordpressRichText
 
 import typings.react.mod.ComponentType
 import typings.std.Record
-import typings.std.RegExp
 import typings.wordpressRichText.anon.Element
 import typings.wordpressRichText.anon.Html
 import typings.wordpressRichText.anon.MultilineTag
@@ -25,7 +24,7 @@ object mod {
   inline def applyFormat(value: Value, format: Format, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   inline def applyFormat(value: Value, format: Format, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  inline def concat(values: Value*): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(values.asInstanceOf[js.Any]).asInstanceOf[Value]
+  inline def concat(values: Value*): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Value]
   
   inline def create(): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Value]
   inline def create(args: Element): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
@@ -69,13 +68,13 @@ object mod {
   inline def replace(
     value: Value,
     pattern: String,
-    replacement: js.Function2[/* match */ String, /* repeated */ js.Any, String]
+    replacement: js.Function2[/* match */ String, /* repeated */ Any, String]
   ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
-  inline def replace(value: Value, pattern: RegExp, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
+  inline def replace(value: Value, pattern: js.RegExp, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
   inline def replace(
     value: Value,
-    pattern: RegExp,
-    replacement: js.Function2[/* match */ String, /* repeated */ js.Any, String]
+    pattern: js.RegExp,
+    replacement: js.Function2[/* match */ String, /* repeated */ Any, String]
   ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
   
   inline def slice(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
@@ -163,7 +162,7 @@ object mod {
     
     var `object`: js.UndefOr[Boolean] = js.undefined
     
-    var tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String
+    var tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String
     
     var title: String
   }
@@ -171,7 +170,7 @@ object mod {
     
     inline def apply(
       edit: ComponentType[FormatProps],
-      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String,
+      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String,
       title: String
     ): FormatConfiguration = {
       val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], className = null)
@@ -194,14 +193,14 @@ object mod {
       
       inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
       inline def setTagName(
-        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String
+        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
@@ -248,7 +247,7 @@ object mod {
     inline def apply(
       edit: ComponentType[FormatProps],
       name: String,
-      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String,
+      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any) & String,
       title: String
     ): NamedFormatConfiguration = {
       val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], className = null)
@@ -292,7 +291,7 @@ object mod {
       
       inline def setActiveFormatsUndefined: Self = StObject.set(x, "activeFormats", js.undefined)
       
-      inline def setActiveFormatsVarargs(value: Format*): Self = StObject.set(x, "activeFormats", js.Array(value :_*))
+      inline def setActiveFormatsVarargs(value: Format*): Self = StObject.set(x, "activeFormats", js.Array(value*))
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -300,11 +299,11 @@ object mod {
       
       inline def setFormats(value: js.Array[js.UndefOr[js.Array[Format]]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      inline def setFormatsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "formats", js.Array(value :_*))
+      inline def setFormatsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "formats", js.Array(value*))
       
       inline def setReplacements(value: js.Array[js.UndefOr[js.Array[Format]]]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
       
-      inline def setReplacementsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+      inline def setReplacementsVarargs(value: js.UndefOr[js.Array[Format]]*): Self = StObject.set(x, "replacements", js.Array(value*))
       
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       

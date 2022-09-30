@@ -1,8 +1,8 @@
 package typings.usb
 
 import typings.node.bufferMod.global.Buffer
+import typings.usb.descriptorsMod.EndpointDescriptor
 import typings.usb.deviceMod.ExtendedDevice
-import typings.usb.usbMod.Device
 import typings.usb.usbMod.DeviceIds
 import typings.usb.usbMod.EventListeners
 import typings.usb.webusbMod.USBOptions
@@ -18,6 +18,69 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("usb/dist", "Capability")
+  @js.native
+  open class Capability protected ()
+    extends typings.usb.capabilityMod.Capability {
+    def this(device: typings.usb.bindingsMod.Device, id: Double) = this()
+  }
+  
+  @JSImport("usb/dist", "Device")
+  @js.native
+  open class Device ()
+    extends typings.usb.usbMod.Device
+  
+  @JSImport("usb/dist", "Endpoint")
+  @js.native
+  abstract class Endpoint protected ()
+    extends typings.usb.endpointMod.Endpoint {
+    def this(device: typings.usb.bindingsMod.Device, descriptor: EndpointDescriptor) = this()
+  }
+  
+  @JSImport("usb/dist", "InEndpoint")
+  @js.native
+  open class InEndpoint protected ()
+    extends typings.usb.endpointMod.InEndpoint {
+    def this(device: typings.usb.bindingsMod.Device, descriptor: EndpointDescriptor) = this()
+  }
+  
+  @JSImport("usb/dist", "Interface")
+  @js.native
+  open class Interface protected ()
+    extends typings.usb.interfaceMod.Interface {
+    def this(device: typings.usb.bindingsMod.Device, id: Double) = this()
+  }
+  
+  @JSImport("usb/dist", "LibUSBException")
+  @js.native
+  open class LibUSBException ()
+    extends typings.usb.usbMod.LibUSBException
+  
+  @JSImport("usb/dist", "OutEndpoint")
+  @js.native
+  open class OutEndpoint protected ()
+    extends typings.usb.endpointMod.OutEndpoint {
+    def this(device: typings.usb.bindingsMod.Device, descriptor: EndpointDescriptor) = this()
+  }
+  
+  @JSImport("usb/dist", "Transfer")
+  @js.native
+  open class Transfer protected ()
+    extends typings.usb.usbMod.Transfer {
+    def this(
+      device: typings.usb.bindingsMod.Device,
+      endpointAddr: Double,
+      `type`: Double,
+      timeout: Double,
+      callback: js.Function3[
+            /* error */ typings.usb.bindingsMod.LibUSBException, 
+            /* buf */ Buffer, 
+            /* actual */ Double, 
+            Unit
+          ]
+    ) = this()
+  }
+  
   @JSImport("usb/dist", "WebUSBDevice")
   @js.native
   /* private */ open class WebUSBDevice ()
@@ -29,7 +92,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createInstance(device: Device): js.Promise[js.UndefOr[typings.usb.webusbDeviceMod.WebUSBDevice]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.usb.webusbDeviceMod.WebUSBDevice]]]
+    inline def createInstance(device: typings.usb.usbMod.Device): js.Promise[typings.usb.webusbDeviceMod.WebUSBDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.usb.webusbDeviceMod.WebUSBDevice]]
   }
   
   @JSImport("usb/dist", "WebUSB")
@@ -43,15 +106,14 @@ object mod {
     * @param vid
     * @param pid
     */
-  inline def findByIds(vid: Double, pid: Double): js.UndefOr[Device] = (^.asInstanceOf[js.Dynamic].applyDynamic("findByIds")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Device]]
+  inline def findByIds(vid: Double, pid: Double): js.UndefOr[typings.usb.usbMod.Device] = (^.asInstanceOf[js.Dynamic].applyDynamic("findByIds")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.usb.usbMod.Device]]
   
   /**
     * Convenience method to get the device with the specified serial number, or `undefined` if no such device is present.
     * @param serialNumber
     */
-  inline def findBySerialNumber(serialNumber: String): js.Promise[js.UndefOr[Device]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findBySerialNumber")(serialNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Device]]]
+  inline def findBySerialNumber(serialNumber: String): js.Promise[js.UndefOr[typings.usb.usbMod.Device]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findBySerialNumber")(serialNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[typings.usb.usbMod.Device]]]
   
-  /* was `typeof usb.getDeviceList` */
   inline def getDeviceList(): js.Array[typings.usb.bindingsMod.Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceList")().asInstanceOf[js.Array[typings.usb.bindingsMod.Device]]
   
   inline def getWebUsb(): USB = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebUsb")().asInstanceOf[USB]
@@ -489,7 +551,6 @@ object mod {
     }
   }
   
-  /* was `typeof usb.useUsbDkBackend` */
   inline def useUsbDkBackend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useUsbDkBackend")().asInstanceOf[Unit]
   
   @JSImport("usb/dist", "webusb")

@@ -9,46 +9,46 @@ trait ReflectionTextureBaseBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /** @hidden */
+  /** @internal */
   var _2DSamplerName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _cubeSamplerName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _define3DName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineCubicName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineEquirectangularFixedName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineEquirectangularName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineExplicitName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineLocalCubicName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineMirroredEquirectangularFixedName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineOppositeZ: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _definePlanarName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineProjectionName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineSkyboxName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineSphericalName: String = js.native
   
   /* protected */ var _directionWName: String = js.native
@@ -59,16 +59,16 @@ trait ReflectionTextureBaseBlock
   
   /* protected */ var _reflectionColorName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _reflectionCoordsName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _reflectionMatrixName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _reflectionPositionName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _reflectionSizeName: String = js.native
   
   /* protected */ var _reflectionVectorName: String = js.native

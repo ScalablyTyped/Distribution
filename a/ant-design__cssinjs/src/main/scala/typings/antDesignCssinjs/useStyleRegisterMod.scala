@@ -546,6 +546,7 @@ import typings.antDesignCssinjs.anon.`98`
 import typings.antDesignCssinjs.anon.`99`
 import typings.antDesignCssinjs.anon.`9`
 import typings.antDesignCssinjs.cacheMod.default
+import typings.antDesignCssinjs.styleContextMod.HashPriority
 import typings.csstype.mod.Property.AccentColor
 import typings.csstype.mod.Property.AlignContent
 import typings.csstype.mod.Property.AlignItems
@@ -30610,6 +30611,8 @@ object useStyleRegisterMod {
     
     var hashId: js.UndefOr[String] = js.undefined
     
+    var hashPriority: js.UndefOr[HashPriority] = js.undefined
+    
     var layer: js.UndefOr[String] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
@@ -30626,6 +30629,10 @@ object useStyleRegisterMod {
       inline def setHashId(value: String): Self = StObject.set(x, "hashId", value.asInstanceOf[js.Any])
       
       inline def setHashIdUndefined: Self = StObject.set(x, "hashId", js.undefined)
+      
+      inline def setHashPriority(value: HashPriority): Self = StObject.set(x, "hashPriority", value.asInstanceOf[js.Any])
+      
+      inline def setHashPriorityUndefined: Self = StObject.set(x, "hashPriority", js.undefined)
       
       inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       

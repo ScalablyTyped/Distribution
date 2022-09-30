@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mirrorx", "Prompt")
 @js.native
-class Prompt protected ()
-  extends Component[PromptProps, js.Any, js.Any] {
+open class Prompt protected () extends Component[PromptProps, Any, Any] {
   def this(props: PromptProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PromptProps, context: js.Any) = this()
+  def this(props: PromptProps, context: Any) = this()
 }

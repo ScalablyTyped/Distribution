@@ -1,94 +1,94 @@
 package typings.activexAccess.Access
 
-import typings.activexAccess.activexAccessNumbers.`10`
-import typings.activexAccess.activexAccessNumbers.`11`
-import typings.activexAccess.activexAccessNumbers.`12`
-import typings.activexAccess.activexAccessNumbers.`13`
-import typings.activexAccess.activexAccessNumbers.`14`
-import typings.activexAccess.activexAccessNumbers.`15`
-import typings.activexAccess.activexAccessNumbers.`16`
-import typings.activexAccess.activexAccessNumbers.`17`
-import typings.activexAccess.activexAccessNumbers.`18`
-import typings.activexAccess.activexAccessNumbers.`19`
-import typings.activexAccess.activexAccessNumbers.`1`
-import typings.activexAccess.activexAccessNumbers.`20`
-import typings.activexAccess.activexAccessNumbers.`21`
-import typings.activexAccess.activexAccessNumbers.`22`
-import typings.activexAccess.activexAccessNumbers.`23`
-import typings.activexAccess.activexAccessNumbers.`24`
-import typings.activexAccess.activexAccessNumbers.`256`
-import typings.activexAccess.activexAccessNumbers.`25`
-import typings.activexAccess.activexAccessNumbers.`26`
-import typings.activexAccess.activexAccessNumbers.`27`
-import typings.activexAccess.activexAccessNumbers.`28`
-import typings.activexAccess.activexAccessNumbers.`29`
-import typings.activexAccess.activexAccessNumbers.`2`
-import typings.activexAccess.activexAccessNumbers.`30`
-import typings.activexAccess.activexAccessNumbers.`31`
-import typings.activexAccess.activexAccessNumbers.`32`
-import typings.activexAccess.activexAccessNumbers.`33`
-import typings.activexAccess.activexAccessNumbers.`34`
-import typings.activexAccess.activexAccessNumbers.`35`
-import typings.activexAccess.activexAccessNumbers.`36`
-import typings.activexAccess.activexAccessNumbers.`37`
-import typings.activexAccess.activexAccessNumbers.`38`
-import typings.activexAccess.activexAccessNumbers.`39`
-import typings.activexAccess.activexAccessNumbers.`3`
-import typings.activexAccess.activexAccessNumbers.`40`
-import typings.activexAccess.activexAccessNumbers.`41`
-import typings.activexAccess.activexAccessNumbers.`4`
-import typings.activexAccess.activexAccessNumbers.`5`
-import typings.activexAccess.activexAccessNumbers.`6`
-import typings.activexAccess.activexAccessNumbers.`7`
-import typings.activexAccess.activexAccessNumbers.`8`
-import typings.activexAccess.activexAccessNumbers.`9`
+import typings.activexAccess.activexAccessInts.`10`
+import typings.activexAccess.activexAccessInts.`11`
+import typings.activexAccess.activexAccessInts.`12`
+import typings.activexAccess.activexAccessInts.`13`
+import typings.activexAccess.activexAccessInts.`14`
+import typings.activexAccess.activexAccessInts.`15`
+import typings.activexAccess.activexAccessInts.`16`
+import typings.activexAccess.activexAccessInts.`17`
+import typings.activexAccess.activexAccessInts.`18`
+import typings.activexAccess.activexAccessInts.`19`
+import typings.activexAccess.activexAccessInts.`1`
+import typings.activexAccess.activexAccessInts.`20`
+import typings.activexAccess.activexAccessInts.`21`
+import typings.activexAccess.activexAccessInts.`22`
+import typings.activexAccess.activexAccessInts.`23`
+import typings.activexAccess.activexAccessInts.`24`
+import typings.activexAccess.activexAccessInts.`256`
+import typings.activexAccess.activexAccessInts.`25`
+import typings.activexAccess.activexAccessInts.`26`
+import typings.activexAccess.activexAccessInts.`27`
+import typings.activexAccess.activexAccessInts.`28`
+import typings.activexAccess.activexAccessInts.`29`
+import typings.activexAccess.activexAccessInts.`2`
+import typings.activexAccess.activexAccessInts.`30`
+import typings.activexAccess.activexAccessInts.`31`
+import typings.activexAccess.activexAccessInts.`32`
+import typings.activexAccess.activexAccessInts.`33`
+import typings.activexAccess.activexAccessInts.`34`
+import typings.activexAccess.activexAccessInts.`35`
+import typings.activexAccess.activexAccessInts.`36`
+import typings.activexAccess.activexAccessInts.`37`
+import typings.activexAccess.activexAccessInts.`38`
+import typings.activexAccess.activexAccessInts.`39`
+import typings.activexAccess.activexAccessInts.`3`
+import typings.activexAccess.activexAccessInts.`40`
+import typings.activexAccess.activexAccessInts.`41`
+import typings.activexAccess.activexAccessInts.`4`
+import typings.activexAccess.activexAccessInts.`5`
+import typings.activexAccess.activexAccessInts.`6`
+import typings.activexAccess.activexAccessInts.`7`
+import typings.activexAccess.activexAccessInts.`8`
+import typings.activexAccess.activexAccessInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAccess.activexAccessNumbers.`16`
-  - typings.activexAccess.activexAccessNumbers.`17`
-  - typings.activexAccess.activexAccessNumbers.`8`
-  - typings.activexAccess.activexAccessNumbers.`9`
-  - typings.activexAccess.activexAccessNumbers.`10`
-  - typings.activexAccess.activexAccessNumbers.`11`
-  - typings.activexAccess.activexAccessNumbers.`12`
-  - typings.activexAccess.activexAccessNumbers.`13`
-  - typings.activexAccess.activexAccessNumbers.`24`
-  - typings.activexAccess.activexAccessNumbers.`25`
-  - typings.activexAccess.activexAccessNumbers.`20`
-  - typings.activexAccess.activexAccessNumbers.`21`
-  - typings.activexAccess.activexAccessNumbers.`22`
-  - typings.activexAccess.activexAccessNumbers.`23`
-  - typings.activexAccess.activexAccessNumbers.`19`
-  - typings.activexAccess.activexAccessNumbers.`33`
-  - typings.activexAccess.activexAccessNumbers.`34`
-  - typings.activexAccess.activexAccessNumbers.`35`
-  - typings.activexAccess.activexAccessNumbers.`29`
-  - typings.activexAccess.activexAccessNumbers.`30`
-  - typings.activexAccess.activexAccessNumbers.`28`
-  - typings.activexAccess.activexAccessNumbers.`31`
-  - typings.activexAccess.activexAccessNumbers.`32`
-  - typings.activexAccess.activexAccessNumbers.`27`
-  - typings.activexAccess.activexAccessNumbers.`36`
-  - typings.activexAccess.activexAccessNumbers.`37`
-  - typings.activexAccess.activexAccessNumbers.`38`
-  - typings.activexAccess.activexAccessNumbers.`26`
-  - typings.activexAccess.activexAccessNumbers.`7`
-  - typings.activexAccess.activexAccessNumbers.`41`
-  - typings.activexAccess.activexAccessNumbers.`40`
-  - typings.activexAccess.activexAccessNumbers.`39`
-  - typings.activexAccess.activexAccessNumbers.`14`
-  - typings.activexAccess.activexAccessNumbers.`4`
-  - typings.activexAccess.activexAccessNumbers.`5`
-  - typings.activexAccess.activexAccessNumbers.`1`
-  - typings.activexAccess.activexAccessNumbers.`2`
-  - typings.activexAccess.activexAccessNumbers.`18`
-  - typings.activexAccess.activexAccessNumbers.`15`
-  - typings.activexAccess.activexAccessNumbers.`6`
-  - typings.activexAccess.activexAccessNumbers.`3`
-  - typings.activexAccess.activexAccessNumbers.`256`
+  - typings.activexAccess.activexAccessInts.`16`
+  - typings.activexAccess.activexAccessInts.`17`
+  - typings.activexAccess.activexAccessInts.`8`
+  - typings.activexAccess.activexAccessInts.`9`
+  - typings.activexAccess.activexAccessInts.`10`
+  - typings.activexAccess.activexAccessInts.`11`
+  - typings.activexAccess.activexAccessInts.`12`
+  - typings.activexAccess.activexAccessInts.`13`
+  - typings.activexAccess.activexAccessInts.`24`
+  - typings.activexAccess.activexAccessInts.`25`
+  - typings.activexAccess.activexAccessInts.`20`
+  - typings.activexAccess.activexAccessInts.`21`
+  - typings.activexAccess.activexAccessInts.`22`
+  - typings.activexAccess.activexAccessInts.`23`
+  - typings.activexAccess.activexAccessInts.`19`
+  - typings.activexAccess.activexAccessInts.`33`
+  - typings.activexAccess.activexAccessInts.`34`
+  - typings.activexAccess.activexAccessInts.`35`
+  - typings.activexAccess.activexAccessInts.`29`
+  - typings.activexAccess.activexAccessInts.`30`
+  - typings.activexAccess.activexAccessInts.`28`
+  - typings.activexAccess.activexAccessInts.`31`
+  - typings.activexAccess.activexAccessInts.`32`
+  - typings.activexAccess.activexAccessInts.`27`
+  - typings.activexAccess.activexAccessInts.`36`
+  - typings.activexAccess.activexAccessInts.`37`
+  - typings.activexAccess.activexAccessInts.`38`
+  - typings.activexAccess.activexAccessInts.`26`
+  - typings.activexAccess.activexAccessInts.`7`
+  - typings.activexAccess.activexAccessInts.`41`
+  - typings.activexAccess.activexAccessInts.`40`
+  - typings.activexAccess.activexAccessInts.`39`
+  - typings.activexAccess.activexAccessInts.`14`
+  - typings.activexAccess.activexAccessInts.`4`
+  - typings.activexAccess.activexAccessInts.`5`
+  - typings.activexAccess.activexAccessInts.`1`
+  - typings.activexAccess.activexAccessInts.`2`
+  - typings.activexAccess.activexAccessInts.`18`
+  - typings.activexAccess.activexAccessInts.`15`
+  - typings.activexAccess.activexAccessInts.`6`
+  - typings.activexAccess.activexAccessInts.`3`
+  - typings.activexAccess.activexAccessInts.`256`
 */
 trait AcPrintPaperSize extends StObject
 object AcPrintPaperSize {

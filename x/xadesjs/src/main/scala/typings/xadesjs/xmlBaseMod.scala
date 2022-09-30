@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object xmlBaseMod {
   
-  @JSImport("xadesjs/build/types/xml/xml_base", "XadesCollection")
+  @JSImport("xadesjs/build/types/src/xml/xml_base", "XadesCollection")
   @js.native
   abstract class XadesCollection[I /* <: XadesObject */] () extends XmlCollection[I] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/xml_base", "XadesObject")
+  @JSImport("xadesjs/build/types/src/xml/xml_base", "XadesObject")
   @js.native
   abstract class XadesObject () extends XmlObject {
     def this(properties: js.Object) = this()

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object structuresMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/structures", "Structure")
+  @JSImport("mendixmodelsdk/src/sdk/internal/structures", "Structure")
   @js.native
   abstract class Structure[TModel /* <: IAbstractModel */, TContainer /* <: IContainer | Null */] protected ()
     extends StObject
@@ -42,7 +42,7 @@ object structuresMod {
     ) = this()
     
     /* CompleteClass */
-    override def allProperties(): js.Array[AbstractProperty[js.Any, js.Any]] = js.native
+    override def allProperties(): js.Array[AbstractProperty[Any, Any]] = js.native
     
     /* CompleteClass */
     override val container: IContainer | Null = js.native
@@ -56,7 +56,7 @@ object structuresMod {
       */
     def delete(): Unit = js.native
     
-    /* protected */ def getContainerAs[T /* <: IContainer */](containerType: js.Any): T = js.native
+    /* protected */ def getContainerAs[T /* <: IContainer */](containerType: Any): T = js.native
     
     /* CompleteClass */
     var id: String = js.native
@@ -70,7 +70,7 @@ object structuresMod {
       * Returns all properties when this structure is loaded, otherwise just the public properties.
       */
     /* CompleteClass */
-    override def loadedProperties(): js.Array[AbstractProperty[js.Any, js.Any]] = js.native
+    override def loadedProperties(): js.Array[AbstractProperty[Any, Any]] = js.native
     
     /* CompleteClass */
     var model: IAbstractModel = js.native
@@ -78,7 +78,7 @@ object structuresMod {
     def model_MStructure: TModel = js.native
     
     /* CompleteClass */
-    override def publicProperties(): js.Array[AbstractProperty[js.Any, js.Any]] = js.native
+    override def publicProperties(): js.Array[AbstractProperty[Any, Any]] = js.native
     
     /* CompleteClass */
     var structureTypeName: String = js.native
@@ -120,7 +120,7 @@ object structuresMod {
     def unit_MStructure: IAbstractUnit = js.native
   }
   
-  type AbstractStructureProperty = PartProperty[js.Any] | PartListProperty[js.Any] | StructuralChildProperty[js.Any] | StructuralChildListProperty[js.Any]
+  type AbstractStructureProperty = PartProperty[Any] | PartListProperty[Any] | StructuralChildProperty[Any] | StructuralChildListProperty[Any]
   
   trait IChildHandle extends StObject {
     
@@ -149,7 +149,7 @@ object structuresMod {
   
   trait IStructure extends StObject {
     
-    def allProperties(): js.Array[AbstractProperty[js.Any, js.Any]]
+    def allProperties(): js.Array[AbstractProperty[Any, Any]]
     
     val container: IContainer | Null
     
@@ -160,11 +160,11 @@ object structuresMod {
     /**
       * Returns all properties when this structure is loaded, otherwise just the public properties.
       */
-    def loadedProperties(): js.Array[AbstractProperty[js.Any, js.Any]]
+    def loadedProperties(): js.Array[AbstractProperty[Any, Any]]
     
     var model: IAbstractModel
     
-    def publicProperties(): js.Array[AbstractProperty[js.Any, js.Any]]
+    def publicProperties(): js.Array[AbstractProperty[Any, Any]]
     
     var structureTypeName: String
     
@@ -200,16 +200,16 @@ object structuresMod {
   object IStructure {
     
     inline def apply(
-      allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      allProperties: () => js.Array[AbstractProperty[Any, Any]],
       id: String,
       isLoaded: Boolean,
-      loadedProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      loadedProperties: () => js.Array[AbstractProperty[Any, Any]],
       model: IAbstractModel,
-      publicProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
+      publicProperties: () => js.Array[AbstractProperty[Any, Any]],
       structureTypeName: String,
       toJSON: () => js.Object,
       traverse: js.Function1[IStructure, Unit] => Unit,
-      traverseFind: js.Function1[IStructure, js.Any] => js.Any | Null,
+      traverseFind: js.Function1[IStructure, Any] => Any | Null,
       traversePublicParts: js.Function1[IStructure, Unit] => Unit,
       unit: IAbstractUnit
     ): IStructure = {
@@ -219,7 +219,7 @@ object structuresMod {
     
     extension [Self <: IStructure](x: Self) {
       
-      inline def setAllProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "allProperties", js.Any.fromFunction0(value))
+      inline def setAllProperties(value: () => js.Array[AbstractProperty[Any, Any]]): Self = StObject.set(x, "allProperties", js.Any.fromFunction0(value))
       
       inline def setContainer(value: IContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -229,11 +229,11 @@ object structuresMod {
       
       inline def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
       
-      inline def setLoadedProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "loadedProperties", js.Any.fromFunction0(value))
+      inline def setLoadedProperties(value: () => js.Array[AbstractProperty[Any, Any]]): Self = StObject.set(x, "loadedProperties", js.Any.fromFunction0(value))
       
       inline def setModel(value: IAbstractModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      inline def setPublicProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "publicProperties", js.Any.fromFunction0(value))
+      inline def setPublicProperties(value: () => js.Array[AbstractProperty[Any, Any]]): Self = StObject.set(x, "publicProperties", js.Any.fromFunction0(value))
       
       inline def setStructureTypeName(value: String): Self = StObject.set(x, "structureTypeName", value.asInstanceOf[js.Any])
       
@@ -241,7 +241,7 @@ object structuresMod {
       
       inline def setTraverse(value: js.Function1[IStructure, Unit] => Unit): Self = StObject.set(x, "traverse", js.Any.fromFunction1(value))
       
-      inline def setTraverseFind(value: js.Function1[IStructure, js.Any] => js.Any | Null): Self = StObject.set(x, "traverseFind", js.Any.fromFunction1(value))
+      inline def setTraverseFind(value: js.Function1[IStructure, Any] => Any | Null): Self = StObject.set(x, "traverseFind", js.Any.fromFunction1(value))
       
       inline def setTraversePublicParts(value: js.Function1[IStructure, Unit] => Unit): Self = StObject.set(x, "traversePublicParts", js.Any.fromFunction1(value))
       
@@ -269,7 +269,7 @@ object structuresMod {
   @js.native
   trait IStructureConstructor[T /* <: IStructure */]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, T]
+       with Instantiable1[/* args (repeated) */ Any, T]
   
   /* Rewritten from type alias, can be one of: 
     - typings.mendixmodelsdk.mendixmodelsdkStrings.`new`
@@ -291,10 +291,7 @@ object structuresMod {
   
   object aliases {
     
-    type Container = StructuralUnit[IAbstractModel] | (AbstractElement[
-        IAbstractModel, 
-        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container */ js.Object
-      ])
+    type Container = StructuralUnit[IAbstractModel] | (AbstractElement[IAbstractModel, Any])
     
     /* Rewritten from type alias, can be one of: 
       - typings.mendixmodelsdk.unitsMod.IStructuralUnit

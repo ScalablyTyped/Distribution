@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.ajv.ajvBooleans.`false`
 import typings.ajv.ajvBooleans.`true`
-import typings.ajv.ajvStrings.`strictNullChecks must be true in tsconfig to use $LeftcurlybracketNameRightcurlybracket`
 import typings.ajv.anon.AdditionalItems
 import typings.ajv.anon.AdditionalProperties
 import typings.ajv.anon.AllOf
@@ -110,7 +109,7 @@ object jsonSchemaMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped ajv.anon.AnyOf<ajv.ajv/dist/types/json-schema.Known, true> & ajv.anon.Dictkeyword | ajv.anon.OneOf<ajv.ajv/dist/types/json-schema.Known, true> & ajv.anon.Dictkeyword | ajv.anon.TypeArray<ajv.ajv/dist/types/json-schema.Known, true> & ajv.ajv/dist/types/json-schema.UnionToIntersection<ajv.ajv/dist/types/json-schema.Known extends number ? ajv.ajv/dist/types/json-schema.NumberKeywords : ajv.ajv/dist/types/json-schema.Known extends string ? ajv.ajv/dist/types/json-schema.StringKeywords : ajv.ajv/dist/types/json-schema.Known extends boolean ? {} : never> & ajv.anon.Dictkeyword | ajv.ajv/dist/types/json-schema.Known extends number ? ajv.anon.TypeJSONType<true> & ajv.ajv/dist/types/json-schema.NumberKeywords : ajv.ajv/dist/types/json-schema.Known extends string ? ajv.anon.0<true> & ajv.ajv/dist/types/json-schema.StringKeywords : ajv.ajv/dist/types/json-schema.Known extends boolean ? ajv.anon.1<true> : ajv.ajv/dist/types/json-schema.Known extends [any, ...std.Array<any>] ? ajv.anon.MaxItems<ajv.ajv/dist/types/json-schema.Known> & ajv.anon.Items<true, ajv.ajv/dist/types/json-schema.Known> | ajv.anon.AdditionalItems & ajv.anon.Items<true, ajv.ajv/dist/types/json-schema.Known> : ajv.ajv/dist/types/json-schema.Known extends std.Array<any> ? ajv.anon.Contains<true, ajv.ajv/dist/types/json-schema.Known> : ajv.ajv/dist/types/json-schema.Known extends std.Record<string, any> ? ajv.anon.AdditionalProperties<true, ajv.ajv/dist/types/json-schema.Known> & true extends true ? ajv.anon.Required<ajv.ajv/dist/types/json-schema.Known> : [ajv.ajv/dist/types/json-schema.UncheckedRequiredMembers<ajv.ajv/dist/types/json-schema.Known>] extends [never] ? ajv.anon.3<ajv.ajv/dist/types/json-schema.Known> : ajv.anon.RequiredReadonly<ajv.ajv/dist/types/json-schema.Known> : ajv.ajv/dist/types/json-schema.Known extends null ? ajv.anon.Nullable<true> : never & ajv.anon.AllOf<ajv.ajv/dist/types/json-schema.Known> & ajv.anon.Dictkeyword */ trait SomeJSONSchema extends StObject
   
-  type StrictNullChecksWrapper[Name /* <: String */, Type] = Type | (`strictNullChecks must be true in tsconfig to use $LeftcurlybracketNameRightcurlybracket`)
+  type StrictNullChecksWrapper[Name /* <: String */, Type] = Type | (/* template literal string: strictNullChecks must be true in tsconfig to use ${Name} */ String)
   
   trait StringKeywords extends StObject {
     

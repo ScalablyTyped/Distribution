@@ -8,7 +8,7 @@ import typings.chrome.chrome.tabGroups.TabGroupMovedEvent
 import typings.chrome.chrome.tabGroups.TabGroupRemovedEvent
 import typings.chrome.chrome.tabGroups.TabGroupUpdated
 import typings.chrome.chrome.tabGroups.UpdateProperties
-import typings.chrome.chromeNumbers.`-1`
+import typings.chrome.chromeInts.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

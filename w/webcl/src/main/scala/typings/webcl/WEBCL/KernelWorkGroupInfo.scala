@@ -1,21 +1,21 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x11B0`
-import typings.webcl.webclNumbers.`0x11B1`
-import typings.webcl.webclNumbers.`0x11B2`
-import typings.webcl.webclNumbers.`0x11B3`
-import typings.webcl.webclNumbers.`0x11B4`
+import typings.webcl.webclInts.`0x11B0`
+import typings.webcl.webclInts.`0x11B1`
+import typings.webcl.webclInts.`0x11B2`
+import typings.webcl.webclInts.`0x11B3`
+import typings.webcl.webclInts.`0x11B4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_kernel_work_group_info */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x11B0`
-  - typings.webcl.webclNumbers.`0x11B1`
-  - typings.webcl.webclNumbers.`0x11B2`
-  - typings.webcl.webclNumbers.`0x11B3`
-  - typings.webcl.webclNumbers.`0x11B4`
+  - typings.webcl.webclInts.`0x11B0`
+  - typings.webcl.webclInts.`0x11B1`
+  - typings.webcl.webclInts.`0x11B2`
+  - typings.webcl.webclInts.`0x11B3`
+  - typings.webcl.webclInts.`0x11B4`
 */
 trait KernelWorkGroupInfo extends StObject
 object KernelWorkGroupInfo {

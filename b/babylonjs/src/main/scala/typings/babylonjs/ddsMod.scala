@@ -38,16 +38,7 @@ object ddsMod {
     
     /**
       * Uploads DDS Levels to a Babylon Texture
-      * @param engine
-      * @param texture
-      * @param data
-      * @param info
-      * @param loadMipmaps
-      * @param faces
-      * @param lodIndex
-      * @param currentFace
-      * @param destTypeMustBeFilterable
-      * @hidden
+      * @internal
       */
     inline def UploadDDSLevels(
       engine: ThinEngine,

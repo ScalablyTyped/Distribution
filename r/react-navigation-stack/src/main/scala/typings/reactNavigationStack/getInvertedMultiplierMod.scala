@@ -1,7 +1,7 @@
 package typings.reactNavigationStack
 
-import typings.reactNavigationStack.reactNavigationStackNumbers.`-1`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`1`
+import typings.reactNavigationStack.reactNavigationStackInts.`-1`
+import typings.reactNavigationStack.reactNavigationStackInts.`1`
 import typings.reactNavigationStack.vendorTypesMod.GestureDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

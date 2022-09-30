@@ -97,7 +97,7 @@ trait ChartAPI extends StObject {
   def groups(): js.Array[js.Array[String]] = js.native
   def groups[T /* <: js.Array[js.Array[String]] */](groups: T): T = js.native
   @JSName("groups")
-  def groups_T_ArrayArrayString_T[T /* <: js.Array[js.Array[String]] */](): T = js.native
+  def groups_T_T[T /* <: js.Array[js.Array[String]] */](): T = js.native
   
   /**
     * This API hides specified targets.

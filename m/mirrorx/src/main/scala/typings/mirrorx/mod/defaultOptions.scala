@@ -6,24 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait defaultOptions extends StObject {
   
-  def addEffect(name: String, handler: js.Function0[js.Any]): js.Any
+  def addEffect(name: String, handler: js.Function0[Any]): Any
   
   var historyMode: js.UndefOr[String] = js.undefined
   
   var initialState: js.UndefOr[js.Object] = js.undefined
   
-  var middlewares: js.Array[js.Any]
+  var middlewares: js.Array[Any]
 }
 object defaultOptions {
   
-  inline def apply(addEffect: (String, js.Function0[js.Any]) => js.Any, middlewares: js.Array[js.Any]): defaultOptions = {
+  inline def apply(addEffect: (String, js.Function0[Any]) => Any, middlewares: js.Array[Any]): defaultOptions = {
     val __obj = js.Dynamic.literal(addEffect = js.Any.fromFunction2(addEffect), middlewares = middlewares.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultOptions]
   }
   
   extension [Self <: defaultOptions](x: Self) {
     
-    inline def setAddEffect(value: (String, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "addEffect", js.Any.fromFunction2(value))
+    inline def setAddEffect(value: (String, js.Function0[Any]) => Any): Self = StObject.set(x, "addEffect", js.Any.fromFunction2(value))
     
     inline def setHistoryMode(value: String): Self = StObject.set(x, "historyMode", value.asInstanceOf[js.Any])
     
@@ -33,8 +33,8 @@ object defaultOptions {
     
     inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    inline def setMiddlewares(value: js.Array[js.Any]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+    inline def setMiddlewares(value: js.Array[Any]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
     
-    inline def setMiddlewaresVarargs(value: js.Any*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
+    inline def setMiddlewaresVarargs(value: Any*): Self = StObject.set(x, "middlewares", js.Array(value*))
   }
 }

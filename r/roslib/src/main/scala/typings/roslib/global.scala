@@ -12,10 +12,10 @@ import typings.roslib.anon.StringString
 import typings.roslib.anon.W
 import typings.roslib.anon.X
 import typings.roslib.anon.Xml
-import typings.roslib.roslibNumbers.`0`
-import typings.roslib.roslibNumbers.`1`
-import typings.roslib.roslibNumbers.`2`
-import typings.roslib.roslibNumbers.`3`
+import typings.roslib.roslibInts.`0`
+import typings.roslib.roslibInts.`1`
+import typings.roslib.roslibInts.`2`
+import typings.roslib.roslibInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

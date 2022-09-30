@@ -1,7 +1,7 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,8 +45,8 @@ object pathMod {
   trait Path extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
   */
   trait PathType extends StObject
   object PathType {

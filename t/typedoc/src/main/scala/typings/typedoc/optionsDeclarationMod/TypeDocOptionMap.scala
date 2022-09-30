@@ -21,7 +21,6 @@ import typings.typedoc.typedocStrings.SomeSignature
 import typings.typedoc.typedocStrings.SomeType
 import typings.typedoc.typedocStrings.SomeValue
 import typings.typedoc.typedocStrings.VariableOrProperty
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait TypeDocOptionMap extends StObject {
   
   var basePath: String
   
-  var blockTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+  var blockTags: js.Array[/* template literal string: @${string} */ String]
   
   var categorizeByGroup: Boolean
   
@@ -70,7 +69,7 @@ trait TypeDocOptionMap extends StObject {
   
   var excludeProtected: Boolean
   
-  var excludeTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+  var excludeTags: js.Array[/* template literal string: @${string} */ String]
   
   var externalPattern: js.Array[String]
   
@@ -94,7 +93,7 @@ trait TypeDocOptionMap extends StObject {
   
   var includes: String
   
-  var inlineTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+  var inlineTags: js.Array[/* template literal string: @${string} */ String]
   
   var intentionallyNotExported: js.Array[String]
   
@@ -110,7 +109,7 @@ trait TypeDocOptionMap extends StObject {
   
   var media: String
   
-  var modifierTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+  var modifierTags: js.Array[/* template literal string: @${string} */ String]
   
   var name: String
   
@@ -160,7 +159,7 @@ object TypeDocOptionMap {
   
   inline def apply(
     basePath: String,
-    blockTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`],
+    blockTags: js.Array[/* template literal string: @${string} */ String],
     categorizeByGroup: Boolean,
     categoryOrder: js.Array[String],
     cleanOutputDir: Boolean,
@@ -180,7 +179,7 @@ object TypeDocOptionMap {
     excludeNotDocumented: Boolean,
     excludePrivate: Boolean,
     excludeProtected: Boolean,
-    excludeTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`],
+    excludeTags: js.Array[/* template literal string: @${string} */ String],
     externalPattern: js.Array[String],
     externalSymbolLinkMappings: ManuallyValidatedOption[Record[String, Record[String, String]]],
     gaID: String,
@@ -192,7 +191,7 @@ object TypeDocOptionMap {
     htmlLang: String,
     includeVersion: Boolean,
     includes: String,
-    inlineTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`],
+    inlineTags: js.Array[/* template literal string: @${string} */ String],
     intentionallyNotExported: js.Array[String],
     json: String,
     lightHighlightTheme: Theme,
@@ -200,7 +199,7 @@ object TypeDocOptionMap {
     logger: Any,
     markedOptions: Any,
     media: String,
-    modifierTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`],
+    modifierTags: js.Array[/* template literal string: @${string} */ String],
     name: String,
     options: String,
     out: String,
@@ -233,9 +232,9 @@ object TypeDocOptionMap {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
-    inline def setBlockTags(value: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]): Self = StObject.set(x, "blockTags", value.asInstanceOf[js.Any])
+    inline def setBlockTags(value: js.Array[/* template literal string: @${string} */ String]): Self = StObject.set(x, "blockTags", value.asInstanceOf[js.Any])
     
-    inline def setBlockTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "blockTags", js.Array(value*))
+    inline def setBlockTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "blockTags", js.Array(value*))
     
     inline def setCategorizeByGroup(value: Boolean): Self = StObject.set(x, "categorizeByGroup", value.asInstanceOf[js.Any])
     
@@ -279,9 +278,9 @@ object TypeDocOptionMap {
     
     inline def setExcludeProtected(value: Boolean): Self = StObject.set(x, "excludeProtected", value.asInstanceOf[js.Any])
     
-    inline def setExcludeTags(value: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
+    inline def setExcludeTags(value: js.Array[/* template literal string: @${string} */ String]): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
     
-    inline def setExcludeTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "excludeTags", js.Array(value*))
+    inline def setExcludeTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "excludeTags", js.Array(value*))
     
     inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
@@ -309,9 +308,9 @@ object TypeDocOptionMap {
     
     inline def setIncludes(value: String): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    inline def setInlineTags(value: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]): Self = StObject.set(x, "inlineTags", value.asInstanceOf[js.Any])
+    inline def setInlineTags(value: js.Array[/* template literal string: @${string} */ String]): Self = StObject.set(x, "inlineTags", value.asInstanceOf[js.Any])
     
-    inline def setInlineTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "inlineTags", js.Array(value*))
+    inline def setInlineTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "inlineTags", js.Array(value*))
     
     inline def setIntentionallyNotExported(value: js.Array[String]): Self = StObject.set(x, "intentionallyNotExported", value.asInstanceOf[js.Any])
     
@@ -329,9 +328,9 @@ object TypeDocOptionMap {
     
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    inline def setModifierTags(value: js.Array[`@$LeftcurlybracketstringRightcurlybracket`]): Self = StObject.set(x, "modifierTags", value.asInstanceOf[js.Any])
+    inline def setModifierTags(value: js.Array[/* template literal string: @${string} */ String]): Self = StObject.set(x, "modifierTags", value.asInstanceOf[js.Any])
     
-    inline def setModifierTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "modifierTags", js.Array(value*))
+    inline def setModifierTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "modifierTags", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

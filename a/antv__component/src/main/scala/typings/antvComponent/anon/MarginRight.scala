@@ -22,7 +22,7 @@ trait MarginRight extends StObject {
   
   var fontSize: Unit
   
-  var height: String
+  var height: Unit
   
   var lineHeight: Unit
   
@@ -44,7 +44,7 @@ trait MarginRight extends StObject {
   
   var visibility: Unit
   
-  var width: Unit
+  var width: String
   
   var zIndex: Unit
 }
@@ -59,7 +59,7 @@ object MarginRight {
     float: Unit,
     fontFamily: Unit,
     fontSize: Unit,
-    height: String,
+    height: Unit,
     lineHeight: Unit,
     listStyleType: Unit,
     margin: Unit,
@@ -70,7 +70,7 @@ object MarginRight {
     position: String,
     transition: Unit,
     visibility: Unit,
-    width: Unit,
+    width: String,
     zIndex: Unit
   ): MarginRight = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], listStyleType = listStyleType.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginBottom = marginBottom.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
@@ -95,7 +95,7 @@ object MarginRight {
     
     inline def setFontSize(value: Unit): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setLineHeight(value: Unit): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
@@ -117,7 +117,7 @@ object MarginRight {
     
     inline def setVisibility(value: Unit): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    inline def setWidth(value: Unit): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setZIndex(value: Unit): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
   }

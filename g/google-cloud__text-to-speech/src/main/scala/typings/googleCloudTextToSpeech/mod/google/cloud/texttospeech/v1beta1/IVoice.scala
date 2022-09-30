@@ -36,7 +36,7 @@ object IVoice {
     
     inline def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
     
-    inline def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
+    inline def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

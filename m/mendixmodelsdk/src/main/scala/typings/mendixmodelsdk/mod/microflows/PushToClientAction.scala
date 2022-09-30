@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.PushToClientAction")
 @js.native
-class PushToClientAction protected ()
+open class PushToClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.PushToClientAction {
   def this(
     model: AbstractModel,

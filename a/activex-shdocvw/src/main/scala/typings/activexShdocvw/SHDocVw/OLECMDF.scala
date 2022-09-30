@@ -1,23 +1,23 @@
 package typings.activexShdocvw.SHDocVw
 
-import typings.activexShdocvw.activexShdocvwNumbers.`16`
-import typings.activexShdocvw.activexShdocvwNumbers.`1`
-import typings.activexShdocvw.activexShdocvwNumbers.`2`
-import typings.activexShdocvw.activexShdocvwNumbers.`32`
-import typings.activexShdocvw.activexShdocvwNumbers.`4`
-import typings.activexShdocvw.activexShdocvwNumbers.`8`
+import typings.activexShdocvw.activexShdocvwInts.`16`
+import typings.activexShdocvw.activexShdocvwInts.`1`
+import typings.activexShdocvw.activexShdocvwInts.`2`
+import typings.activexShdocvw.activexShdocvwInts.`32`
+import typings.activexShdocvw.activexShdocvwInts.`4`
+import typings.activexShdocvw.activexShdocvwInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShdocvw.activexShdocvwNumbers.`32`
-  - typings.activexShdocvw.activexShdocvwNumbers.`2`
-  - typings.activexShdocvw.activexShdocvwNumbers.`16`
-  - typings.activexShdocvw.activexShdocvwNumbers.`4`
-  - typings.activexShdocvw.activexShdocvwNumbers.`8`
-  - typings.activexShdocvw.activexShdocvwNumbers.`1`
+  - typings.activexShdocvw.activexShdocvwInts.`32`
+  - typings.activexShdocvw.activexShdocvwInts.`2`
+  - typings.activexShdocvw.activexShdocvwInts.`16`
+  - typings.activexShdocvw.activexShdocvwInts.`4`
+  - typings.activexShdocvw.activexShdocvwInts.`8`
+  - typings.activexShdocvw.activexShdocvwInts.`1`
 */
 trait OLECMDF extends StObject
 object OLECMDF {

@@ -2,7 +2,6 @@ package typings.reactBulmaComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ReactNode
-import typings.reactBulmaComponents.anon.List
 import typings.reactBulmaComponents.componentsMod.BulmaComponent
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.aside
 import org.scalablytyped.runtime.StObject
@@ -13,7 +12,7 @@ object menuMod extends Shortcut {
   
   @JSImport("react-bulma-components/src/components/menu", JSImport.Default)
   @js.native
-  val default: (BulmaComponent[js.Object, aside]) & List = js.native
+  val default: (BulmaComponent[js.Object, aside]) & typings.reactBulmaComponents.anon.List = js.native
   
   trait MenuListComponentProps extends StObject {
     
@@ -59,8 +58,8 @@ object menuMod extends Shortcut {
     }
   }
   
-  type _To = (BulmaComponent[js.Object, aside]) & List
+  type _To = (BulmaComponent[js.Object, aside]) & typings.reactBulmaComponents.anon.List
   
   /* This means you don't have to write `default`, but can instead just say `menuMod.foo` */
-  override def _to: (BulmaComponent[js.Object, aside]) & List = default
+  override def _to: (BulmaComponent[js.Object, aside]) & typings.reactBulmaComponents.anon.List = default
 }

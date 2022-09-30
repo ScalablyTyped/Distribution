@@ -131,6 +131,14 @@ open class CameraComponent protected () extends Component {
   
   def addCameraToLayers(): Unit = js.native
   
+  def aperture: Double = js.native
+  /**
+    * Set camera aperture in f-stops, the default value is 16.0. Higher value means less exposure.
+    *
+    * @type {number}
+    */
+  def aperture_=(arg: Double): Unit = js.native
+  
   var aspectRatio: Double = js.native
   
   def aspectRatioMode: Double = js.native
@@ -396,6 +404,22 @@ open class CameraComponent protected () extends Component {
     */
   def screenToWorld(screenx: Double, screeny: Double, cameraz: Double): Vec3 = js.native
   def screenToWorld(screenx: Double, screeny: Double, cameraz: Double, worldCoord: Vec3): Vec3 = js.native
+  
+  def sensitivity: Double = js.native
+  /**
+    * Set camera sensitivity in ISO, the default value is 1000. Higher value means more exposure.
+    *
+    * @type {number}
+    */
+  def sensitivity_=(arg: Double): Unit = js.native
+  
+  def shutter: Double = js.native
+  /**
+    * Set camera shutter speed in seconds, the default value is 1/1000s. Longer shutter means more exposure.
+    *
+    * @type {number}
+    */
+  def shutter_=(arg: Double): Unit = js.native
   
   /**
     * Attempt to start XR session with this camera.

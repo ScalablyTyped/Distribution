@@ -1,7 +1,6 @@
 package typings.polished.anon
 
 import typings.polished.polishedStrings.max
-import typings.polished.polishedStrings.maxBackslashb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait FuncRegSymbol extends StObject {
   
   var func: RightToLeftSymbol
   
-  var regSymbol: maxBackslashb
+  var regSymbol: String
   
   var symbol: max
 }
@@ -25,7 +24,7 @@ object FuncRegSymbol {
     
     inline def setFunc(value: RightToLeftSymbol): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: maxBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: max): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

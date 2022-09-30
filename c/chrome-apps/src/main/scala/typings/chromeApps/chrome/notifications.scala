@@ -1,11 +1,11 @@
 package typings.chromeApps.chrome
 
 import typings.chromeApps.anon.BASIC
-import typings.chromeApps.chromeAppsNumbers.`-1`
-import typings.chromeApps.chromeAppsNumbers.`-2`
-import typings.chromeApps.chromeAppsNumbers.`0`
-import typings.chromeApps.chromeAppsNumbers.`1`
-import typings.chromeApps.chromeAppsNumbers.`2`
+import typings.chromeApps.chromeAppsInts.`-1`
+import typings.chromeApps.chromeAppsInts.`-2`
+import typings.chromeApps.chromeAppsInts.`0`
+import typings.chromeApps.chromeAppsInts.`1`
+import typings.chromeApps.chromeAppsInts.`2`
 import typings.chromeApps.chromeAppsStrings.IMAGE
 import typings.chromeApps.chromeAppsStrings.LIST
 import typings.chromeApps.chromeAppsStrings.PROGRESS

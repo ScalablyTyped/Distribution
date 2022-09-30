@@ -131,6 +131,12 @@ object ssh2Strings {
   inline def `aes128-ctr`: `aes128-ctr` = "aes128-ctr".asInstanceOf[`aes128-ctr`]
   
   @js.native
+  sealed trait `aes128-gcm`
+    extends StObject
+       with CipherAlgorithm
+  inline def `aes128-gcm`: `aes128-gcm` = "aes128-gcm".asInstanceOf[`aes128-gcm`]
+  
+  @js.native
   sealed trait `aes128-gcm@opensshDotcom`
     extends StObject
        with CipherAlgorithm
@@ -159,6 +165,12 @@ object ssh2Strings {
     extends StObject
        with CipherAlgorithm
   inline def `aes256-ctr`: `aes256-ctr` = "aes256-ctr".asInstanceOf[`aes256-ctr`]
+  
+  @js.native
+  sealed trait `aes256-gcm`
+    extends StObject
+       with CipherAlgorithm
+  inline def `aes256-gcm`: `aes256-gcm` = "aes256-gcm".asInstanceOf[`aes256-gcm`]
   
   @js.native
   sealed trait `aes256-gcm@opensshDotcom`

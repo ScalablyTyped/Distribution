@@ -1,6 +1,6 @@
 package typings.zwjsbridge.anon
 
-import typings.zwjsbridge.zwjsbridgeNumbers.`1`
+import typings.zwjsbridge.zwjsbridgeInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait IconUrl extends StObject {
   // icon缩放模式： 默认0
   // 0表示 不保持纵横比缩放图片，使图片的宽高完全拉伸至填满image组件
   // 1表示保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。
-  var `type`: js.UndefOr[typings.zwjsbridge.zwjsbridgeNumbers.`0` | `1`] = js.undefined
+  var `type`: js.UndefOr[typings.zwjsbridge.zwjsbridgeInts.`0` | `1`] = js.undefined
 }
 object IconUrl {
   
@@ -42,7 +42,7 @@ object IconUrl {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setType(value: typings.zwjsbridge.zwjsbridgeNumbers.`0` | `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.zwjsbridge.zwjsbridgeInts.`0` | `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

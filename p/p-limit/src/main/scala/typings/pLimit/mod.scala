@@ -1,5 +1,6 @@
 package typings.pLimit
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ object mod {
     	@returns The promise returned by calling `fn(...arguments)`.
     	*/
     def apply[Arguments /* <: js.Array[Any] */, ReturnType](
-      fn: js.Function1[/* arguments */ Arguments, js.Thenable[ReturnType] | ReturnType],
+      fn: js.Function1[/* arguments */ Arguments, PromiseLike[ReturnType] | ReturnType],
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type Arguments is not an array type */ arguments: Arguments
     ): js.Promise[ReturnType] = js.native
     

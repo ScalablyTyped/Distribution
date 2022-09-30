@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transactionMod {
   
-  @JSImport("mobx/lib/api/transaction", JSImport.Namespace)
+  @JSImport("mobx/dist/api/transaction", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

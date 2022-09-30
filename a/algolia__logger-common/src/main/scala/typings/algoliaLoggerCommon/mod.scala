@@ -19,18 +19,18 @@ object mod {
   inline def createNullLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullLogger")().asInstanceOf[Logger]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`1`
-    - typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`2`
-    - typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`3`
+    - typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`1`
+    - typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`2`
+    - typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`3`
   */
   trait LogLevelType extends StObject
   object LogLevelType {
     
-    inline def `1`: typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`1` = 1.asInstanceOf[typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`1`]
+    inline def `1`: typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`1` = 1.asInstanceOf[typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`1`]
     
-    inline def `2`: typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`2` = 2.asInstanceOf[typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`2`]
+    inline def `2`: typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`2` = 2.asInstanceOf[typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`2`]
     
-    inline def `3`: typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`3` = 3.asInstanceOf[typings.algoliaLoggerCommon.algoliaLoggerCommonNumbers.`3`]
+    inline def `3`: typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`3` = 3.asInstanceOf[typings.algoliaLoggerCommon.algoliaLoggerCommonInts.`3`]
   }
   
   @js.native

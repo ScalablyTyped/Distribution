@@ -12,14 +12,14 @@ object protractorConfMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def afterLaunch(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLaunch")().asInstanceOf[js.Promise[js.Object]]
+    inline def afterLaunch(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLaunch")().asInstanceOf[js.Promise[Any]]
     
     @JSImport("wix-ui-test-utils/dist/src/protractor/protractor.conf", "baseProtractorConfig.baseUrl")
     @js.native
     def baseUrl: String = js.native
     inline def baseUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseUrl")(x.asInstanceOf[js.Any])
     
-    inline def beforeLaunch(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLaunch")().asInstanceOf[js.Promise[js.Object]]
+    inline def beforeLaunch(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLaunch")().asInstanceOf[js.Promise[Any]]
     
     inline def onPrepare(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPrepare")().asInstanceOf[Unit]
     

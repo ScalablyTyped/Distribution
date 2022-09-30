@@ -1,50 +1,50 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`10`
-import typings.activexOutlook.activexOutlookNumbers.`11`
-import typings.activexOutlook.activexOutlookNumbers.`12`
-import typings.activexOutlook.activexOutlookNumbers.`13`
-import typings.activexOutlook.activexOutlookNumbers.`16`
-import typings.activexOutlook.activexOutlookNumbers.`18`
-import typings.activexOutlook.activexOutlookNumbers.`19`
-import typings.activexOutlook.activexOutlookNumbers.`20`
-import typings.activexOutlook.activexOutlookNumbers.`21`
-import typings.activexOutlook.activexOutlookNumbers.`22`
-import typings.activexOutlook.activexOutlookNumbers.`23`
-import typings.activexOutlook.activexOutlookNumbers.`25`
-import typings.activexOutlook.activexOutlookNumbers.`28`
-import typings.activexOutlook.activexOutlookNumbers.`29`
-import typings.activexOutlook.activexOutlookNumbers.`30`
-import typings.activexOutlook.activexOutlookNumbers.`3`
-import typings.activexOutlook.activexOutlookNumbers.`4`
-import typings.activexOutlook.activexOutlookNumbers.`5`
-import typings.activexOutlook.activexOutlookNumbers.`6`
-import typings.activexOutlook.activexOutlookNumbers.`9`
+import typings.activexOutlook.activexOutlookInts.`10`
+import typings.activexOutlook.activexOutlookInts.`11`
+import typings.activexOutlook.activexOutlookInts.`12`
+import typings.activexOutlook.activexOutlookInts.`13`
+import typings.activexOutlook.activexOutlookInts.`16`
+import typings.activexOutlook.activexOutlookInts.`18`
+import typings.activexOutlook.activexOutlookInts.`19`
+import typings.activexOutlook.activexOutlookInts.`20`
+import typings.activexOutlook.activexOutlookInts.`21`
+import typings.activexOutlook.activexOutlookInts.`22`
+import typings.activexOutlook.activexOutlookInts.`23`
+import typings.activexOutlook.activexOutlookInts.`25`
+import typings.activexOutlook.activexOutlookInts.`28`
+import typings.activexOutlook.activexOutlookInts.`29`
+import typings.activexOutlook.activexOutlookInts.`30`
+import typings.activexOutlook.activexOutlookInts.`3`
+import typings.activexOutlook.activexOutlookInts.`4`
+import typings.activexOutlook.activexOutlookInts.`5`
+import typings.activexOutlook.activexOutlookInts.`6`
+import typings.activexOutlook.activexOutlookInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`9`
-  - typings.activexOutlook.activexOutlookNumbers.`19`
-  - typings.activexOutlook.activexOutlookNumbers.`10`
-  - typings.activexOutlook.activexOutlookNumbers.`3`
-  - typings.activexOutlook.activexOutlookNumbers.`16`
-  - typings.activexOutlook.activexOutlookNumbers.`6`
-  - typings.activexOutlook.activexOutlookNumbers.`11`
-  - typings.activexOutlook.activexOutlookNumbers.`23`
-  - typings.activexOutlook.activexOutlookNumbers.`21`
-  - typings.activexOutlook.activexOutlookNumbers.`29`
-  - typings.activexOutlook.activexOutlookNumbers.`12`
-  - typings.activexOutlook.activexOutlookNumbers.`4`
-  - typings.activexOutlook.activexOutlookNumbers.`25`
-  - typings.activexOutlook.activexOutlookNumbers.`5`
-  - typings.activexOutlook.activexOutlookNumbers.`22`
-  - typings.activexOutlook.activexOutlookNumbers.`30`
-  - typings.activexOutlook.activexOutlookNumbers.`20`
-  - typings.activexOutlook.activexOutlookNumbers.`13`
-  - typings.activexOutlook.activexOutlookNumbers.`28`
-  - typings.activexOutlook.activexOutlookNumbers.`18`
+  - typings.activexOutlook.activexOutlookInts.`9`
+  - typings.activexOutlook.activexOutlookInts.`19`
+  - typings.activexOutlook.activexOutlookInts.`10`
+  - typings.activexOutlook.activexOutlookInts.`3`
+  - typings.activexOutlook.activexOutlookInts.`16`
+  - typings.activexOutlook.activexOutlookInts.`6`
+  - typings.activexOutlook.activexOutlookInts.`11`
+  - typings.activexOutlook.activexOutlookInts.`23`
+  - typings.activexOutlook.activexOutlookInts.`21`
+  - typings.activexOutlook.activexOutlookInts.`29`
+  - typings.activexOutlook.activexOutlookInts.`12`
+  - typings.activexOutlook.activexOutlookInts.`4`
+  - typings.activexOutlook.activexOutlookInts.`25`
+  - typings.activexOutlook.activexOutlookInts.`5`
+  - typings.activexOutlook.activexOutlookInts.`22`
+  - typings.activexOutlook.activexOutlookInts.`30`
+  - typings.activexOutlook.activexOutlookInts.`20`
+  - typings.activexOutlook.activexOutlookInts.`13`
+  - typings.activexOutlook.activexOutlookInts.`28`
+  - typings.activexOutlook.activexOutlookInts.`18`
 */
 trait OlDefaultFolders extends StObject
 object OlDefaultFolders {

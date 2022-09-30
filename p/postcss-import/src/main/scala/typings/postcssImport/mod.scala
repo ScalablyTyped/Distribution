@@ -2,6 +2,7 @@ package typings.postcssImport
 
 import typings.postcss.mod.AcceptedPlugin
 import typings.postcss.mod.Transformer
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +77,7 @@ object mod {
           /* id */ String, 
           /* basedir */ String, 
           /* importOptions */ this.type, 
-          String | js.Array[String] | (js.Thenable[String | js.Array[String]])
+          String | js.Array[String] | (PromiseLike[String | js.Array[String]])
         ]
       ] = js.undefined
     
@@ -133,7 +134,7 @@ object mod {
       inline def setPluginsVarargs(value: AcceptedPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setResolve(
-        value: (/* id */ String, /* basedir */ String, AtImportOptions) => String | js.Array[String] | (js.Thenable[String | js.Array[String]])
+        value: (/* id */ String, /* basedir */ String, AtImportOptions) => String | js.Array[String] | (PromiseLike[String | js.Array[String]])
       ): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)

@@ -84,30 +84,30 @@ object mod {
   inline def year(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("year")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.dateArithmetic.dateArithmeticNumbers.`0`
-    - typings.dateArithmetic.dateArithmeticNumbers.`1`
-    - typings.dateArithmetic.dateArithmeticNumbers.`2`
-    - typings.dateArithmetic.dateArithmeticNumbers.`3`
-    - typings.dateArithmetic.dateArithmeticNumbers.`4`
-    - typings.dateArithmetic.dateArithmeticNumbers.`5`
-    - typings.dateArithmetic.dateArithmeticNumbers.`6`
+    - typings.dateArithmetic.dateArithmeticInts.`0`
+    - typings.dateArithmetic.dateArithmeticInts.`1`
+    - typings.dateArithmetic.dateArithmeticInts.`2`
+    - typings.dateArithmetic.dateArithmeticInts.`3`
+    - typings.dateArithmetic.dateArithmeticInts.`4`
+    - typings.dateArithmetic.dateArithmeticInts.`5`
+    - typings.dateArithmetic.dateArithmeticInts.`6`
   */
   trait StartOfWeek extends StObject
   object StartOfWeek {
     
-    inline def `0`: typings.dateArithmetic.dateArithmeticNumbers.`0` = 0.asInstanceOf[typings.dateArithmetic.dateArithmeticNumbers.`0`]
+    inline def `0`: typings.dateArithmetic.dateArithmeticInts.`0` = 0.asInstanceOf[typings.dateArithmetic.dateArithmeticInts.`0`]
     
-    inline def `1`: typings.dateArithmetic.dateArithmeticNumbers.`1` = 1.asInstanceOf[typings.dateArithmetic.dateArithmeticNumbers.`1`]
+    inline def `1`: typings.dateArithmetic.dateArithmeticInts.`1` = 1.asInstanceOf[typings.dateArithmetic.dateArithmeticInts.`1`]
     
-    inline def `2`: typings.dateArithmetic.dateArithmeticNumbers.`2` = 2.asInstanceOf[typings.dateArithmetic.dateArithmeticNumbers.`2`]
+    inline def `2`: typings.dateArithmetic.dateArithmeticInts.`2` = 2.asInstanceOf[typings.dateArithmetic.dateArithmeticInts.`2`]
     
-    inline def `3`: typings.dateArithmetic.dateArithmeticNumbers.`3` = 3.asInstanceOf[typings.dateArithmetic.dateArithmeticNumbers.`3`]
+    inline def `3`: typings.dateArithmetic.dateArithmeticInts.`3` = 3.asInstanceOf[typings.dateArithmetic.dateArithmeticInts.`3`]
     
-    inline def `4`: typings.dateArithmetic.dateArithmeticNumbers.`4` = 4.asInstanceOf[typings.dateArithmetic.dateArithmeticNumbers.`4`]
+    inline def `4`: typings.dateArithmetic.dateArithmeticInts.`4` = 4.asInstanceOf[typings.dateArithmetic.dateArithmeticInts.`4`]
     
-    inline def `5`: typings.dateArithmetic.dateArithmeticNumbers.`5` = 5.asInstanceOf[typings.dateArithmetic.dateArithmeticNumbers.`5`]
+    inline def `5`: typings.dateArithmetic.dateArithmeticInts.`5` = 5.asInstanceOf[typings.dateArithmetic.dateArithmeticInts.`5`]
     
-    inline def `6`: typings.dateArithmetic.dateArithmeticNumbers.`6` = 6.asInstanceOf[typings.dateArithmetic.dateArithmeticNumbers.`6`]
+    inline def `6`: typings.dateArithmetic.dateArithmeticInts.`6` = 6.asInstanceOf[typings.dateArithmetic.dateArithmeticInts.`6`]
   }
   
   /* Rewritten from type alias, can be one of: 

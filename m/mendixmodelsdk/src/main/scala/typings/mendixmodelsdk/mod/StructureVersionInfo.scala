@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "StructureVersionInfo")
 @js.native
-class StructureVersionInfo protected ()
+open class StructureVersionInfo protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.StructureVersionInfo {
   def this(info: IStructureVersionInfo, structureType: StructureType) = this()
 }

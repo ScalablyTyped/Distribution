@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DynamicText")
 @js.native
-class DynamicText protected ()
+open class DynamicText protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DynamicText {
   def this(
     model: AbstractModel,

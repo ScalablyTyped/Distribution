@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AssociationDescription extends StObject {
   
+  var AlarmConfiguration: js.UndefOr[typings.awsSdk.ssmMod.AlarmConfiguration] = js.undefined
+  
   /**
     * By default, when you create a new associations, the system runs it immediately after it is created and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you create it. This parameter isn't supported for rate expressions.
     */
@@ -135,6 +137,11 @@ trait AssociationDescription extends StObject {
     * The managed nodes targeted by the request. 
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
+  
+  /**
+    * The CloudWatch alarm that was invoked during the association.
+    */
+  var TriggeredAlarms: js.UndefOr[AlarmStateInformationList] = js.undefined
 }
 object AssociationDescription {
   
@@ -144,6 +151,10 @@ object AssociationDescription {
   }
   
   extension [Self <: AssociationDescription](x: Self) {
+    
+    inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "AlarmConfiguration", js.undefined)
     
     inline def setApplyOnlyAtCronInterval(value: ApplyOnlyAtCronInterval): Self = StObject.set(x, "ApplyOnlyAtCronInterval", value.asInstanceOf[js.Any])
     
@@ -256,5 +267,11 @@ object AssociationDescription {
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
     inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
+    
+    inline def setTriggeredAlarms(value: AlarmStateInformationList): Self = StObject.set(x, "TriggeredAlarms", value.asInstanceOf[js.Any])
+    
+    inline def setTriggeredAlarmsUndefined: Self = StObject.set(x, "TriggeredAlarms", js.undefined)
+    
+    inline def setTriggeredAlarmsVarargs(value: AlarmStateInformation*): Self = StObject.set(x, "TriggeredAlarms", js.Array(value*))
   }
 }

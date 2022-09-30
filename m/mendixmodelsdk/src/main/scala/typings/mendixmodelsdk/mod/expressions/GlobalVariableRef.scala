@@ -16,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
 @JSImport("mendixmodelsdk", "expressions.GlobalVariableRef")
 @js.native
-class GlobalVariableRef protected ()
+open class GlobalVariableRef protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.expressions.GlobalVariableRef {
   def this(
     model: AbstractModel,
@@ -51,7 +52,7 @@ object GlobalVariableRef {
     * of the parent VariableRefExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression): typings.mendixmodelsdk.expressionsMod.expressions.GlobalVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.GlobalVariableRef]

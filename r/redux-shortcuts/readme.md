@@ -11,14 +11,11 @@ Keyboard shortcuts in Redux
 | Full name          | redux-shortcuts |
 | Keywords           | redux, shortcut |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2701 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 157.66666666666666 |
+| # stars            | 6.0 |
 
 ## Links
-- [Homepage](https://github.com/nak2k/node-redux-shortcuts)
-- [Bugs](https://github.com/nak2k/node-redux-shortcuts/issues)
-- [Repository](https://github.com/nak2k/node-redux-shortcuts)
 - [Npm](https://www.npmjs.com/package/redux-shortcuts)
     
 

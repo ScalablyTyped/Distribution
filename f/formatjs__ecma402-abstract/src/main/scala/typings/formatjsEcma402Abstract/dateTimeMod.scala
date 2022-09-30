@@ -8,10 +8,10 @@ import typings.formatjsEcma402Abstract.anon.Medium
 import typings.formatjsEcma402Abstract.anon.Narrow
 import typings.formatjsEcma402Abstract.anon.RecordTABLE2defaultRangeP
 import typings.formatjsEcma402Abstract.anon.Short
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`0`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`2`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`3`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`1`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`2`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`3`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`2-digit`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.full
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long

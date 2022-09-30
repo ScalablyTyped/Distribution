@@ -35,15 +35,7 @@ object OctreeBlock {
   val ^ : js.Any = js.native
   
   /**
-    * @param worldMin
-    * @param worldMax
-    * @param entries
-    * @param maxBlockCapacity
-    * @param currentDepth
-    * @param maxDepth
-    * @param target
-    * @param creationFunc
-    * @hidden
+    * @internal
     */
   inline def _CreateBlocks[T](
     worldMin: typings.babylonjs.mathVectorMod.Vector3,

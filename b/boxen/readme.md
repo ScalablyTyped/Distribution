@@ -1,7 +1,7 @@
 
 # Scala.js typings for boxen
 
-Typings are for version 4.2.0
+Typings are for version 7.0.0
 
 ## Library description:
 Create boxes in the terminal
@@ -10,10 +10,10 @@ Create boxes in the terminal
 | ------------------ | :-------------: |
 | Full name          | boxen |
 | Keywords           | cli, box, boxes, terminal, term, console, ascii, unicode, border, text |
-| # releases         | 8 |
-| # dependents       | 1745 |
-| # downloads        | 446738948 |
-| # stars            | 8 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4260504666666664E7 |
+| # stars            | 1189.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/boxen#readme)

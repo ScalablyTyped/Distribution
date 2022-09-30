@@ -84,8 +84,8 @@ object mod extends Shortcut {
   }
   object DagreLayoutOptions {
     
-    inline def apply(fit: Boolean, nodeDimensionsIncludeLabels: Boolean): DagreLayoutOptions = {
-      val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = "dagre", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any])
+    inline def apply(): DagreLayoutOptions = {
+      val __obj = js.Dynamic.literal(name = "dagre")
       __obj.asInstanceOf[DagreLayoutOptions]
     }
     

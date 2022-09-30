@@ -1,6 +1,6 @@
 package typings.findProjectRoot
 
-import typings.findProjectRoot.findProjectRootNumbers.`9`
+import typings.findProjectRoot.findProjectRootInts.`9`
 import typings.findProjectRoot.findProjectRootStrings.Dotgit
 import typings.findProjectRoot.findProjectRootStrings.Dothg
 import org.scalablytyped.runtime.StObject

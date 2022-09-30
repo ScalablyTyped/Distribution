@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.wordpressApiFetch.mod.Schema.Taxonomy
+import typings.wordpressCoreData.schemaMod.Schema.Taxonomy
 import typings.wordpressEditor.postTaxonomiesMod.PostTaxonomies.Props
 import typings.wordpressEditor.wordpressEditorStrings.edit
 import org.scalablytyped.runtime.StObject

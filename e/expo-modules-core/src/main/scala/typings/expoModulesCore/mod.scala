@@ -36,7 +36,8 @@ object mod {
   @JSImport("expo-modules-core", "DeviceEventEmitter")
   @js.native
   open class DeviceEventEmitter ()
-    extends typings.reactNative.mod.DeviceEventEmitter
+    extends StObject
+       with DeviceEventEmitterStatic
   @JSImport("expo-modules-core", "DeviceEventEmitter")
   @js.native
   val DeviceEventEmitter: DeviceEventEmitterStatic = js.native

@@ -41,7 +41,7 @@ object rngesturehandlermoduleMacosMod {
     
     inline def handleClearJSResponder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleClearJSResponder")().asInstanceOf[Unit]
     
-    inline def handleSetJSResponder(tag: Double, blockNativeResponder: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleSetJSResponder")(tag.asInstanceOf[js.Any], blockNativeResponder.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def handleSetJSResponder(_tag: Double, _blockNativeResponder: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleSetJSResponder")(_tag.asInstanceOf[js.Any], _blockNativeResponder.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def updateGestureHandler(handlerTag: Double, newConfig: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateGestureHandler")(handlerTag.asInstanceOf[js.Any], newConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }

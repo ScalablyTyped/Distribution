@@ -1,7 +1,7 @@
 package typings.amapJsApi.AMap
 
-import typings.amapJsApi.amapJsApiNumbers.`0`
-import typings.amapJsApi.amapJsApiNumbers.`1`
+import typings.amapJsApi.amapJsApiInts.`0`
+import typings.amapJsApi.amapJsApiInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

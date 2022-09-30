@@ -110,6 +110,11 @@ trait RemoteAccessSession extends StObject {
     * The date and time the remote access session was stopped.
     */
   var stopped: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The VPC security groups and subnets that are attached to a project.
+    */
+  var vpcConfig: js.UndefOr[VpcConfig] = js.undefined
 }
 object RemoteAccessSession {
   
@@ -203,5 +208,9 @@ object RemoteAccessSession {
     inline def setStopped(value: js.Date): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     inline def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
+    
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
   }
 }

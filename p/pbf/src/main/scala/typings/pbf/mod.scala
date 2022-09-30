@@ -1,9 +1,9 @@
 package typings.pbf
 
-import typings.pbf.pbfNumbers.`0`
-import typings.pbf.pbfNumbers.`1`
-import typings.pbf.pbfNumbers.`2`
-import typings.pbf.pbfNumbers.`5`
+import typings.pbf.pbfInts.`0`
+import typings.pbf.pbfInts.`1`
+import typings.pbf.pbfInts.`2`
+import typings.pbf.pbfInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

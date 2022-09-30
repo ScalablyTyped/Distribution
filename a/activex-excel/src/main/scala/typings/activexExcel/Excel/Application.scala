@@ -2,10 +2,10 @@ package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelBooleans.`false`
 import typings.activexExcel.activexExcelBooleans.`true`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`3`
-import typings.activexExcel.activexExcelNumbers.`4`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`3`
+import typings.activexExcel.activexExcelInts.`4`
 import typings.activexExcel.activexExcelStrings._empty
 import typings.activexOffice.Office.COMAddIn
 import typings.activexOffice.Office.COMAddIns

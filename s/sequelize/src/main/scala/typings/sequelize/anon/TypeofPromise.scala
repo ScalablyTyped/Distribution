@@ -18,6 +18,7 @@ import typings.bluebird.mod.ResolvableProps
 import typings.bluebird.mod.Resolver
 import typings.std.IterableIterator
 import typings.std.Map
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -686,12 +687,12 @@ trait TypeofPromise extends StObject {
     options: PromisifyOptions
   ): js.Function0[Bluebird[T]] = js.native
   
-  // trusted promise for object
-  /* static member */
-  def props[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = js.native
   // object
   /* static member */
   def props[T](`object`: ResolvableProps[T]): Bluebird[T] = js.native
+  // trusted promise for object
+  /* static member */
+  def props[T](`object`: PromiseLike[ResolvableProps[T]]): Bluebird[T] = js.native
   /**
     * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
     *
@@ -705,8 +706,7 @@ trait TypeofPromise extends StObject {
     */
   // map
   /* static member */
-  @JSName("props")
-  def props_KV[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
+  def props[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
   
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
@@ -805,19 +805,19 @@ trait TypeofPromise extends StObject {
     *  necessary because there is no standard interface in node for disposing resources.
     */
   /* static member */
-  def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = js.native
+  def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, PromiseLike[T]]): Bluebird[T] = js.native
   /* static member */
   def `using`[R1, R2, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
-    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
+    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, PromiseLike[T]]
   ): Bluebird[T] = js.native
   /* static member */
   def `using`[R1, R2, R3, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
     disposer3: Disposer[R3],
-    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
+    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, PromiseLike[T]]
   ): Bluebird[T] = js.native
   
   /**

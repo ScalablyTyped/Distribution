@@ -43,9 +43,7 @@ object assetsManagerMod {
     
     /**
       * Internal only
-      * @param message
-      * @param exception
-      * @hidden
+      * @internal
       */
     def _setErrorObject(): Unit = js.native
     def _setErrorObject(message: String): Unit = js.native

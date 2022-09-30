@@ -1,6 +1,6 @@
 package typings.screeps
 
-import typings.screeps.screepsNumbers.`0`
+import typings.screeps.screepsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

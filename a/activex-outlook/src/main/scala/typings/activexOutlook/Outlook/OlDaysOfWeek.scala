@@ -1,24 +1,24 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`16`
-import typings.activexOutlook.activexOutlookNumbers.`1`
-import typings.activexOutlook.activexOutlookNumbers.`2`
-import typings.activexOutlook.activexOutlookNumbers.`32`
-import typings.activexOutlook.activexOutlookNumbers.`4`
-import typings.activexOutlook.activexOutlookNumbers.`64`
-import typings.activexOutlook.activexOutlookNumbers.`8`
+import typings.activexOutlook.activexOutlookInts.`16`
+import typings.activexOutlook.activexOutlookInts.`1`
+import typings.activexOutlook.activexOutlookInts.`2`
+import typings.activexOutlook.activexOutlookInts.`32`
+import typings.activexOutlook.activexOutlookInts.`4`
+import typings.activexOutlook.activexOutlookInts.`64`
+import typings.activexOutlook.activexOutlookInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`32`
-  - typings.activexOutlook.activexOutlookNumbers.`2`
-  - typings.activexOutlook.activexOutlookNumbers.`64`
-  - typings.activexOutlook.activexOutlookNumbers.`1`
-  - typings.activexOutlook.activexOutlookNumbers.`16`
-  - typings.activexOutlook.activexOutlookNumbers.`4`
-  - typings.activexOutlook.activexOutlookNumbers.`8`
+  - typings.activexOutlook.activexOutlookInts.`32`
+  - typings.activexOutlook.activexOutlookInts.`2`
+  - typings.activexOutlook.activexOutlookInts.`64`
+  - typings.activexOutlook.activexOutlookInts.`1`
+  - typings.activexOutlook.activexOutlookInts.`16`
+  - typings.activexOutlook.activexOutlookInts.`4`
+  - typings.activexOutlook.activexOutlookInts.`8`
 */
 trait OlDaysOfWeek extends StObject
 object OlDaysOfWeek {

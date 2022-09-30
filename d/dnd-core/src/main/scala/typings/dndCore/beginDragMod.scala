@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object beginDragMod {
   
-  @JSImport("dnd-core/lib/actions/dragDrop/beginDrag", JSImport.Namespace)
+  @JSImport("dnd-core/dist/actions/dragDrop/beginDrag", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

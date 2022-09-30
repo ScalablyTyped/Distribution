@@ -1,7 +1,6 @@
 package typings.sentryTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sentryTypes.anon.Id
 import typings.sentryTypes.clientreportMod.ClientReport
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.sdkinfoMod.SdkInfo
@@ -61,7 +60,10 @@ object envelopeMod {
     }
   }
   
-  type BaseEnvelope[EH /* <: BaseEnvelopeHeaders */, I /* <: BaseEnvelopeItem[BaseEnvelopeItemHeaders, Any] */] = js.Tuple2[EH, js.Array[I]]
+  type BaseEnvelope[EnvelopeHeader, Item] = js.Tuple2[
+    EnvelopeHeader & BaseEnvelopeHeaders, 
+    js.Array[Item & (BaseEnvelopeItem[BaseEnvelopeItemHeaders, Any])]
+  ]
   
   trait BaseEnvelopeHeaders
     extends StObject
@@ -90,7 +92,7 @@ object envelopeMod {
     }
   }
   
-  type BaseEnvelopeItem[IH /* <: BaseEnvelopeItemHeaders */, P /* <: Any */] = js.Tuple2[IH, P]
+  type BaseEnvelopeItem[ItemHeader, P /* <: Any */] = js.Tuple2[ItemHeader & BaseEnvelopeItemHeaders, P]
   
   trait BaseEnvelopeItemHeaders
     extends StObject
@@ -259,8 +261,6 @@ object envelopeMod {
   
   trait EventItemHeaders extends StObject {
     
-    var sample_rates: js.UndefOr[js.Array[Id]] = js.undefined
-    
     var `type`: event | transaction
   }
   object EventItemHeaders {
@@ -272,12 +272,6 @@ object envelopeMod {
     }
     
     extension [Self <: EventItemHeaders](x: Self) {
-      
-      inline def setSample_rates(value: js.Array[Id]): Self = StObject.set(x, "sample_rates", value.asInstanceOf[js.Any])
-      
-      inline def setSample_ratesUndefined: Self = StObject.set(x, "sample_rates", js.undefined)
-      
-      inline def setSample_ratesVarargs(value: Id*): Self = StObject.set(x, "sample_rates", js.Array(value*))
       
       inline def setType(value: event | transaction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

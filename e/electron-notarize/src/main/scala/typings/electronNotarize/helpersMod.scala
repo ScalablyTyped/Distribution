@@ -1,7 +1,7 @@
 package typings.electronNotarize
 
-import typings.electronNotarize.electronNotarizeNumbers.`0`
-import typings.electronNotarize.electronNotarizeNumbers.`2`
+import typings.electronNotarize.electronNotarizeInts.`0`
+import typings.electronNotarize.electronNotarizeInts.`2`
 import typings.electronNotarize.electronNotarizeStrings.`in progress`
 import typings.electronNotarize.electronNotarizeStrings.invalid
 import typings.electronNotarize.electronNotarizeStrings.success

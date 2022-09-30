@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Platform
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var api_name: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object Platform {
     
     inline def setDeprecated_backend_versionsUndefined: Self = StObject.set(x, "deprecated_backend_versions", js.undefined)
     
-    inline def setDeprecated_backend_versionsVarargs(value: String*): Self = StObject.set(x, "deprecated_backend_versions", js.Array(value :_*))
+    inline def setDeprecated_backend_versionsVarargs(value: String*): Self = StObject.set(x, "deprecated_backend_versions", js.Array(value*))
     
     inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
@@ -86,6 +86,6 @@ object Platform {
     
     inline def setSupported_backend_versionsUndefined: Self = StObject.set(x, "supported_backend_versions", js.undefined)
     
-    inline def setSupported_backend_versionsVarargs(value: String*): Self = StObject.set(x, "supported_backend_versions", js.Array(value :_*))
+    inline def setSupported_backend_versionsVarargs(value: String*): Self = StObject.set(x, "supported_backend_versions", js.Array(value*))
   }
 }

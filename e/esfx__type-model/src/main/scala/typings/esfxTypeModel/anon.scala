@@ -3,6 +3,7 @@ package typings.esfxTypeModel
 import typings.esfxTypeModel.esfxTypeModelBooleans.`false`
 import typings.esfxTypeModel.esfxTypeModelBooleans.`true`
 import typings.esfxTypeModel.testMod.ExpectType
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,14 +28,14 @@ object anon {
     
     def next(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
-    ): js.Thenable[
+    ): PromiseLike[
         /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
       ]
   }
   object `2` {
     
     inline def apply(
-      next: Any => js.Thenable[
+      next: Any => PromiseLike[
           /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
         ]
     ): `2` = {
@@ -45,7 +46,7 @@ object anon {
     extension [Self <: `2`](x: Self) {
       
       inline def setNext(
-        value: Any => js.Thenable[
+        value: Any => PromiseLike[
               /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
             ]
       ): Self = StObject.set(x, "next", js.Any.fromFunction1(value))

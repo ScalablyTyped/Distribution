@@ -1,24 +1,22 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.antdStrings.circle
-import typings.antd.antdStrings.default
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.round
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
 import typings.react.mod.CSSProperties
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object elementMod {
+object elementMod extends Shortcut {
   
-  @JSImport("antd/lib/skeleton/Element", JSImport.Namespace)
+  @JSImport("antd/lib/skeleton/Element", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: SkeletonElementProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  val default: FC[SkeletonElementProps] = js.native
   
   trait SkeletonElementProps extends StObject {
     
@@ -28,9 +26,9 @@ object elementMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square | round | default] = js.undefined
+    var shape: js.UndefOr[circle | square | round | typings.antd.antdStrings.default] = js.undefined
     
-    var size: js.UndefOr[large | small | default | Double] = js.undefined
+    var size: js.UndefOr[large | small | typings.antd.antdStrings.default | Double] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -55,11 +53,11 @@ object elementMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setShape(value: circle | square | round | default): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: circle | square | round | typings.antd.antdStrings.default): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setSize(value: large | small | default | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small | typings.antd.antdStrings.default | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -68,4 +66,9 @@ object elementMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
+  
+  type _To = FC[SkeletonElementProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `elementMod.foo` */
+  override def _to: FC[SkeletonElementProps] = default
 }

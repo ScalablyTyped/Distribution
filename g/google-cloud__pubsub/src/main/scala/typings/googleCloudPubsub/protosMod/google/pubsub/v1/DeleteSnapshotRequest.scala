@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DeleteSnapshotRequest.
   * @param [properties] Properties to set
   */
-class DeleteSnapshotRequest ()
+open class DeleteSnapshotRequest ()
   extends StObject
      with IDeleteSnapshotRequest {
   def this(properties: IDeleteSnapshotRequest) = this()
@@ -29,7 +28,7 @@ class DeleteSnapshotRequest ()
     * Converts this DeleteSnapshotRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object DeleteSnapshotRequest {
   
@@ -46,6 +45,8 @@ object DeleteSnapshotRequest {
   inline def create(): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeleteSnapshotRequest]
   inline def create(properties: IDeleteSnapshotRequest): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): DeleteSnapshotRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteSnapshotRequest]
   /**
     * Decodes a DeleteSnapshotRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object DeleteSnapshotRequest {
   /* static member */
   inline def decode(reader: Reader): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
   inline def decode(reader: Reader, length: Double): DeleteSnapshotRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteSnapshotRequest]
-  inline def decode(reader: Uint8Array): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
-  inline def decode(reader: Uint8Array, length: Double): DeleteSnapshotRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteSnapshotRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
   /**
     * Decodes a DeleteSnapshotRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object DeleteSnapshotRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
-  inline def decodeDelimited(reader: Uint8Array): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
   
   /**
     * Encodes the specified DeleteSnapshotRequest message. Does not implicitly {@link google.pubsub.v1.DeleteSnapshotRequest.verify|verify} messages.
@@ -97,7 +96,16 @@ object DeleteSnapshotRequest {
     * @returns DeleteSnapshotRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): DeleteSnapshotRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DeleteSnapshotRequest]
+  
+  /**
+    * Gets the default type url for DeleteSnapshotRequest
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a DeleteSnapshotRequest message. Also converts values to other types if specified.
@@ -106,8 +114,8 @@ object DeleteSnapshotRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: DeleteSnapshotRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: DeleteSnapshotRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: DeleteSnapshotRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: DeleteSnapshotRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a DeleteSnapshotRequest message.
@@ -115,5 +123,5 @@ object DeleteSnapshotRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

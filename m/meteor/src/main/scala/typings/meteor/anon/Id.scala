@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Id extends StObject {
   
-  var _id: js.UndefOr[js.Any] = js.undefined
+  var _id: js.UndefOr[Any] = js.undefined
 }
 object Id {
   
@@ -17,7 +17,7 @@ object Id {
   
   extension [Self <: Id](x: Self) {
     
-    inline def set_id(value: js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }

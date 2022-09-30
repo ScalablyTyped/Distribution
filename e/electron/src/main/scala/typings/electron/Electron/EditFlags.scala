@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditFlags extends StObject {
   
   /**
-    * Whether the renderer believes it can copy
+    * Whether the renderer believes it can copy.
     */
   var canCopy: Boolean
   
@@ -20,6 +20,11 @@ trait EditFlags extends StObject {
     * Whether the renderer believes it can delete.
     */
   var canDelete: Boolean
+  
+  /**
+    * Whether the renderer believes it can edit text richly.
+    */
+  var canEditRichly: Boolean
   
   /**
     * Whether the renderer believes it can paste.
@@ -47,12 +52,13 @@ object EditFlags {
     canCopy: Boolean,
     canCut: Boolean,
     canDelete: Boolean,
+    canEditRichly: Boolean,
     canPaste: Boolean,
     canRedo: Boolean,
     canSelectAll: Boolean,
     canUndo: Boolean
   ): EditFlags = {
-    val __obj = js.Dynamic.literal(canCopy = canCopy.asInstanceOf[js.Any], canCut = canCut.asInstanceOf[js.Any], canDelete = canDelete.asInstanceOf[js.Any], canPaste = canPaste.asInstanceOf[js.Any], canRedo = canRedo.asInstanceOf[js.Any], canSelectAll = canSelectAll.asInstanceOf[js.Any], canUndo = canUndo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(canCopy = canCopy.asInstanceOf[js.Any], canCut = canCut.asInstanceOf[js.Any], canDelete = canDelete.asInstanceOf[js.Any], canEditRichly = canEditRichly.asInstanceOf[js.Any], canPaste = canPaste.asInstanceOf[js.Any], canRedo = canRedo.asInstanceOf[js.Any], canSelectAll = canSelectAll.asInstanceOf[js.Any], canUndo = canUndo.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditFlags]
   }
   
@@ -63,6 +69,8 @@ object EditFlags {
     inline def setCanCut(value: Boolean): Self = StObject.set(x, "canCut", value.asInstanceOf[js.Any])
     
     inline def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
+    
+    inline def setCanEditRichly(value: Boolean): Self = StObject.set(x, "canEditRichly", value.asInstanceOf[js.Any])
     
     inline def setCanPaste(value: Boolean): Self = StObject.set(x, "canPaste", value.asInstanceOf[js.Any])
     

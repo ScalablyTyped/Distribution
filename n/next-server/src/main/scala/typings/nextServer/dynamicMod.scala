@@ -75,7 +75,7 @@ object dynamicMod {
       
       inline def setLoader(value: Loader[P] | LoaderMap): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      inline def setLoaderFunction0(value: () => LoaderComponent[P]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
+      inline def setLoaderFunction0(value: () => js.Promise[ComponentType[P] | Default[P]]): Self = StObject.set(x, "loader", js.Any.fromFunction0(value))
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
@@ -139,7 +139,7 @@ object dynamicMod {
     }
   }
   
-  type Loader[P] = js.Function0[LoaderComponent[P]] | LoaderComponent[P]
+  type Loader[P] = (js.Function0[js.Promise[ComponentType[P] | Default[P]]]) | (js.Promise[ComponentType[P] | Default[P]])
   
   type LoaderComponent[P] = js.Promise[ComponentType[P] | Default[P]]
   

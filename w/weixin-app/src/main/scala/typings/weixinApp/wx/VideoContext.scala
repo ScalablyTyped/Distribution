@@ -2,11 +2,11 @@ package typings.weixinApp.wx
 
 import typings.weixinApp.anon.Color
 import typings.weixinApp.anon.Direction
-import typings.weixinApp.weixinAppNumbers.`0.5`
-import typings.weixinApp.weixinAppNumbers.`0.8`
-import typings.weixinApp.weixinAppNumbers.`1.0`
-import typings.weixinApp.weixinAppNumbers.`1.25`
-import typings.weixinApp.weixinAppNumbers.`1.5`
+import typings.weixinApp.weixinAppDoubles.`0.5`
+import typings.weixinApp.weixinAppDoubles.`0.8`
+import typings.weixinApp.weixinAppDoubles.`1.0`
+import typings.weixinApp.weixinAppDoubles.`1.25`
+import typings.weixinApp.weixinAppDoubles.`1.5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.chrome.chrome.runtime
 
 import typings.chrome.anon.Page
-import typings.chrome.chromeNumbers.`2`
+import typings.chrome.chromeInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

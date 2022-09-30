@@ -2,8 +2,8 @@ package typings.reduxForm
 
 import typings.redux.mod.Action
 import typings.reduxForm.anon.FnCall
+import typings.reduxForm.anon.FnCallFormSyncErrorsError
 import typings.reduxForm.anon.FnCallFormSyncWarningsWarning
-import typings.reduxForm.anon.FnCallFromSyncErrorsError
 import typings.reduxForm.anon.PartialInitializeOptions
 import typings.reduxForm.mod.FieldType
 import typings.reduxForm.mod.FormErrors
@@ -26,21 +26,9 @@ object actionsMod {
     
     @JSImport("redux-form/lib/actions", "default.arrayInsert")
     @js.native
-    def arrayInsert: js.Function4[
-        /* form */ String, 
-        /* field */ String, 
-        /* index */ Double, 
-        /* value */ js.Any, 
-        FormAction
-      ] = js.native
+    def arrayInsert: js.Function4[/* form */ String, /* field */ String, /* index */ Double, /* value */ Any, FormAction] = js.native
     inline def arrayInsert_=(
-      x: js.Function4[
-          /* form */ String, 
-          /* field */ String, 
-          /* index */ Double, 
-          /* value */ js.Any, 
-          FormAction
-        ]
+      x: js.Function4[/* form */ String, /* field */ String, /* index */ Double, /* value */ Any, FormAction]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayInsert")(x.asInstanceOf[js.Any])
     
     @JSImport("redux-form/lib/actions", "default.arrayMove")
@@ -57,8 +45,8 @@ object actionsMod {
     
     @JSImport("redux-form/lib/actions", "default.arrayPush")
     @js.native
-    def arrayPush: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction] = js.native
-    inline def arrayPush_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayPush")(x.asInstanceOf[js.Any])
+    def arrayPush: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction] = js.native
+    inline def arrayPush_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayPush")(x.asInstanceOf[js.Any])
     
     @JSImport("redux-form/lib/actions", "default.arrayRemove")
     @js.native
@@ -83,7 +71,7 @@ object actionsMod {
         /* field */ String, 
         /* index */ Double, 
         /* removeNum */ Double, 
-        /* value */ js.Any, 
+        /* value */ Any, 
         FormAction
       ] = js.native
     inline def arraySplice_=(
@@ -92,7 +80,7 @@ object actionsMod {
           /* field */ String, 
           /* index */ Double, 
           /* removeNum */ Double, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           FormAction
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arraySplice")(x.asInstanceOf[js.Any])
@@ -118,20 +106,20 @@ object actionsMod {
     
     @JSImport("redux-form/lib/actions", "default.arrayUnshift")
     @js.native
-    def arrayUnshift: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction] = js.native
-    inline def arrayUnshift_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayUnshift")(x.asInstanceOf[js.Any])
+    def arrayUnshift: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction] = js.native
+    inline def arrayUnshift_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayUnshift")(x.asInstanceOf[js.Any])
     
     @JSImport("redux-form/lib/actions", "default.autofill")
     @js.native
-    def autofill: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction] = js.native
-    inline def autofill_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ js.Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autofill")(x.asInstanceOf[js.Any])
+    def autofill: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction] = js.native
+    inline def autofill_=(x: js.Function3[/* form */ String, /* field */ String, /* value */ Any, FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autofill")(x.asInstanceOf[js.Any])
     
     @JSImport("redux-form/lib/actions", "default.blur")
     @js.native
     def blur: js.Function4[
         /* form */ String, 
         /* field */ String, 
-        /* value */ js.Any, 
+        /* value */ Any, 
         /* touch */ js.UndefOr[Boolean], 
         FormAction
       ] = js.native
@@ -139,7 +127,7 @@ object actionsMod {
       x: js.Function4[
           /* form */ String, 
           /* field */ String, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* touch */ js.UndefOr[Boolean], 
           FormAction
         ]
@@ -150,7 +138,7 @@ object actionsMod {
     def change: js.Function5[
         /* form */ String, 
         /* field */ String, 
-        /* value */ js.Any, 
+        /* value */ Any, 
         /* touch */ js.UndefOr[Boolean], 
         /* persistentSubmitErrors */ js.UndefOr[Boolean], 
         FormAction
@@ -159,7 +147,7 @@ object actionsMod {
       x: js.Function5[
           /* form */ String, 
           /* field */ String, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* touch */ js.UndefOr[Boolean], 
           /* persistentSubmitErrors */ js.UndefOr[Boolean], 
           FormAction
@@ -254,17 +242,13 @@ object actionsMod {
     
     @JSImport("redux-form/lib/actions", "default.stopAsyncValidation")
     @js.native
-    def stopAsyncValidation: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[js.Any, js.Any]], FormAction] = js.native
-    inline def stopAsyncValidation_=(
-      x: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[js.Any, js.Any]], FormAction]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopAsyncValidation")(x.asInstanceOf[js.Any])
+    def stopAsyncValidation: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction] = js.native
+    inline def stopAsyncValidation_=(x: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopAsyncValidation")(x.asInstanceOf[js.Any])
     
     @JSImport("redux-form/lib/actions", "default.stopSubmit")
     @js.native
-    def stopSubmit: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[js.Any, js.Any]], FormAction] = js.native
-    inline def stopSubmit_=(
-      x: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[js.Any, js.Any]], FormAction]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopSubmit")(x.asInstanceOf[js.Any])
+    def stopSubmit: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction] = js.native
+    inline def stopSubmit_=(x: js.Function2[/* form */ String, /* errors */ js.UndefOr[FormErrors[Any, Any]], FormAction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopSubmit")(x.asInstanceOf[js.Any])
     
     @JSImport("redux-form/lib/actions", "default.submit")
     @js.native
@@ -288,8 +272,8 @@ object actionsMod {
     
     @JSImport("redux-form/lib/actions", "default.updateSyncErrors")
     @js.native
-    def updateSyncErrors: FnCallFromSyncErrorsError = js.native
-    inline def updateSyncErrors_=(x: FnCallFromSyncErrorsError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateSyncErrors")(x.asInstanceOf[js.Any])
+    def updateSyncErrors: FnCallFormSyncErrorsError = js.native
+    inline def updateSyncErrors_=(x: FnCallFormSyncErrorsError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateSyncErrors")(x.asInstanceOf[js.Any])
     
     @JSImport("redux-form/lib/actions", "default.updateSyncWarnings")
     @js.native
@@ -297,13 +281,13 @@ object actionsMod {
     inline def updateSyncWarnings_=(x: FnCallFormSyncWarningsWarning): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateSyncWarnings")(x.asInstanceOf[js.Any])
   }
   
-  inline def arrayInsert(form: String, field: String, index: Double, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayInsert")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def arrayInsert(form: String, field: String, index: Double, value: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayInsert")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def arrayMove(form: String, field: String, from: Double, to: Double): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def arrayPop(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPop")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def arrayPush(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPush")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def arrayPush(form: String, field: String, value: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayPush")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def arrayRemove(form: String, field: String, index: Double): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
@@ -311,85 +295,85 @@ object actionsMod {
   
   inline def arrayShift(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayShift")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def arraySplice(form: String, field: String, index: Double, removeNum: Double, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arraySplice")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeNum.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def arraySplice(form: String, field: String, index: Double, removeNum: Double, value: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arraySplice")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeNum.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def arraySwap(form: String, field: String, indexA: Double, indexB: Double): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arraySwap")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], indexA.asInstanceOf[js.Any], indexB.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def arrayUnshift(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnshift")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def arrayUnshift(form: String, field: String, value: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnshift")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def autofill(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("autofill")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def autofill(form: String, field: String, value: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("autofill")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def blur(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def blur(form: String, field: String, value: js.Any, touch: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def blur(form: String, field: String, value: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def blur(form: String, field: String, value: Any, touch: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("blur")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def change(form: String, field: String, value: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def change(form: String, field: String, value: js.Any, touch: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def change(form: String, field: String, value: js.Any, touch: Boolean, persistentSubmitErrors: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def change(form: String, field: String, value: js.Any, touch: Unit, persistentSubmitErrors: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def change(form: String, field: String, value: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def change(form: String, field: String, value: Any, touch: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def change(form: String, field: String, value: Any, touch: Boolean, persistentSubmitErrors: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def change(form: String, field: String, value: Any, touch: Unit, persistentSubmitErrors: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("change")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], touch.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def clearAsyncError(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("clearAsyncError")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def clearFields(form: String, keepTouched: Boolean, persistentSubmitErrors: Boolean, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("clearFields")(form.asInstanceOf[js.Any], keepTouched.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def clearFields(form: String, keepTouched: Boolean, persistentSubmitErrors: Boolean, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("clearFields")((scala.List(form.asInstanceOf[js.Any], keepTouched.asInstanceOf[js.Any], persistentSubmitErrors.asInstanceOf[js.Any])).`++`(fields.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FormAction]
   
   inline def clearSubmit(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSubmit")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
   inline def clearSubmitErrors(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("clearSubmitErrors")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  inline def destroy(form: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
+  inline def destroy(form: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(form.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FormAction]
   
   inline def focus(form: String, field: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("focus")(form.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def initialize(form: String, data: js.Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def initialize(form: String, data: js.Any, keepDirty: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def initialize(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def initialize(form: String, data: js.Any, keepDirty: Unit, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
-  inline def initialize(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def initialize(form: String, data: Any): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def initialize(form: String, data: Any, keepDirty: Boolean): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def initialize(form: String, data: Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def initialize(form: String, data: Any, keepDirty: Unit, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], keepDirty.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def initialize(form: String, data: Any, options: PartialInitializeOptions): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(form.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def registerField(form: String, name: String, `type`: FieldType): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("registerField")(form.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def reset(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  inline def resetSection(form: String, sections: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("resetSection")(form.asInstanceOf[js.Any], sections.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def resetSection(form: String, sections: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("resetSection")(scala.List(form.asInstanceOf[js.Any]).`++`(sections.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FormAction]
   
-  inline def setSubmitFailed(form: String, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setSubmitFailed")(form.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def setSubmitFailed(form: String, fields: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setSubmitFailed")(scala.List(form.asInstanceOf[js.Any]).`++`(fields.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FormAction]
   
-  inline def setSubmitSucceeded(form: String, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setSubmitSucceeded")(form.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def setSubmitSucceeded(form: String, fields: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setSubmitSucceeded")(scala.List(form.asInstanceOf[js.Any]).`++`(fields.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FormAction]
   
   inline def startAsyncValidation(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("startAsyncValidation")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
   inline def startSubmit(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("startSubmit")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
   inline def stopAsyncValidation(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("stopAsyncValidation")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
-  inline def stopAsyncValidation(form: String, errors: FormErrors[js.Any, js.Any]): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("stopAsyncValidation")(form.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def stopAsyncValidation(form: String, errors: FormErrors[Any, Any]): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("stopAsyncValidation")(form.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def stopSubmit(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("stopSubmit")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
-  inline def stopSubmit(form: String, errors: FormErrors[js.Any, js.Any]): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("stopSubmit")(form.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def stopSubmit(form: String, errors: FormErrors[Any, Any]): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("stopSubmit")(form.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   inline def submit(form: String): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("submit")(form.asInstanceOf[js.Any]).asInstanceOf[FormAction]
   
-  inline def touch(form: String, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("touch")(form.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def touch(form: String, fields: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("touch")(scala.List(form.asInstanceOf[js.Any]).`++`(fields.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FormAction]
   
   inline def unregisterField(form: String, name: String): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterField")(form.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def untouch(form: String, fields: String*): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("untouch")(form.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def untouch(form: String, fields: String*): FormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("untouch")(scala.List(form.asInstanceOf[js.Any]).`++`(fields.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FormAction]
   
-  inline def updateSyncErrors[T](from: String, syncErrors: FormErrors[js.Any, T], error: T): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSyncErrors")(from.asInstanceOf[js.Any], syncErrors.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def updateSyncErrors[T](form: String, syncErrors: FormErrors[Any, T], error: T): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSyncErrors")(form.asInstanceOf[js.Any], syncErrors.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
-  inline def updateSyncWarnings[T](form: String, syncWarnings: FormWarnings[js.Any, T], warning: T): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSyncWarnings")(form.asInstanceOf[js.Any], syncWarnings.asInstanceOf[js.Any], warning.asInstanceOf[js.Any])).asInstanceOf[FormAction]
+  inline def updateSyncWarnings[T](form: String, syncWarnings: FormWarnings[Any, T], warning: T): FormAction = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSyncWarnings")(form.asInstanceOf[js.Any], syncWarnings.asInstanceOf[js.Any], warning.asInstanceOf[js.Any])).asInstanceOf[FormAction]
   
   trait FormAction
     extends StObject
-       with Action[js.Any] {
+       with Action[Any] {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
-    var meta: js.UndefOr[js.Any] = js.undefined
+    var meta: js.UndefOr[Any] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
   }
   object FormAction {
     
-    inline def apply(`type`: js.Any): FormAction = {
+    inline def apply(`type`: Any): FormAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormAction]
@@ -397,15 +381,15 @@ object actionsMod {
     
     extension [Self <: FormAction](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }

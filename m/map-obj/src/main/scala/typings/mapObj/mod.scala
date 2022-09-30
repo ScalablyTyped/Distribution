@@ -41,7 +41,7 @@ object mod {
     options: TargetOptions[TargetObjectType]
   ): TargetObjectType & typings.mapObj.mapObjStrings.default & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TargetObjectType & typings.mapObj.mapObjStrings.default & TopLevel[Any]]
   
-  inline def default_SourceObjectType_RecordStringAnyTargetObjectType_RecordStringAnyMappedObjectKeyType_StringMappedObjectValueType_Intersection[SourceObjectType /* <: Record[String, Any] */, TargetObjectType /* <: Record[String, Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
+  inline def default_SourceObjectTypeTargetObjectTypeMappedObjectKeyTypeMappedObjectValueType_Intersection[SourceObjectType /* <: Record[String, Any] */, TargetObjectType /* <: Record[String, Any] */, MappedObjectKeyType /* <: String */, MappedObjectValueType](
     source: SourceObjectType,
     mapper: Mapper[SourceObjectType, MappedObjectKeyType, MappedObjectValueType],
     options: DeepOptions & TargetOptions[TargetObjectType]

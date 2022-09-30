@@ -1,6 +1,6 @@
 package typings.justCurryIt
 
-import typings.justCurryIt.justCurryItNumbers.`0`
+import typings.justCurryIt.justCurryItInts.`0`
 import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject

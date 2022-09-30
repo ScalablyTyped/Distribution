@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("electron-spellchecker", "ContextMenuBuilder")
   @js.native
-  class ContextMenuBuilder () extends StObject {
+  open class ContextMenuBuilder () extends StObject {
     def this(spellCheckHandler: SpellCheckHandler) = this()
     def this(spellCheckHandler: Unit, target: BrowserWindow) = this()
     def this(spellCheckHandler: Unit, target: WebviewTag) = this()
@@ -132,7 +132,7 @@ object mod {
   
   @JSImport("electron-spellchecker", "ContextMenuListener")
   @js.native
-  class ContextMenuListener protected () extends StObject {
+  open class ContextMenuListener protected () extends StObject {
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit]) = this()
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit], target: BrowserWindow) = this()
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit], target: WebviewTag) = this()
@@ -142,7 +142,7 @@ object mod {
   
   @JSImport("electron-spellchecker", "SpellCheckHandler")
   @js.native
-  class SpellCheckHandler () extends StObject {
+  open class SpellCheckHandler () extends StObject {
     
     def addToDictionary(text: String): Unit = js.native
     

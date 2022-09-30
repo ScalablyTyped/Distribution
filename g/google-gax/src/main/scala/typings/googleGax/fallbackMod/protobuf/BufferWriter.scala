@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax/build/src/fallback", "protobuf.BufferWriter")
 @js.native
 /** Constructs a new buffer writer instance. */
-class BufferWriter ()
+open class BufferWriter ()
   extends typings.protobufjs.mod.BufferWriter
 /* static members */
 object BufferWriter {

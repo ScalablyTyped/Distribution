@@ -1,8 +1,8 @@
 package typings.nodegit
 
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`4`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`4`
 import typings.nodegit.objectMod.Object
 import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository
@@ -27,9 +27,9 @@ object revParseMod {
     inline def single(repo: Repository, spec: String): js.Promise[Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("single")(repo.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Object]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
     */
     trait MODE extends StObject
     object MODE {

@@ -13,9 +13,9 @@ trait routeActions extends StObject {
   
   def goForward(): RouterAction = js.native
   
-  def push(location: js.Any): RouterAction = js.native
-  def push(location: js.Any, state: js.Any): RouterAction = js.native
+  def push(location: Any): RouterAction = js.native
+  def push(location: Any, state: Any): RouterAction = js.native
   
-  def replace(location: js.Any): RouterAction = js.native
-  def replace(location: js.Any, state: js.Any): RouterAction = js.native
+  def replace(location: Any): RouterAction = js.native
+  def replace(location: Any, state: Any): RouterAction = js.native
 }

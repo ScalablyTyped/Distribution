@@ -2,7 +2,6 @@ package typings.postcssSelectorParser
 
 import typings.postcssSelectorParser.mod.AttributeOperator
 import typings.postcssSelectorParser.mod.Node
-import typings.postcssSelectorParser.mod._QuoteMark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,6 @@ object postcssSelectorParserStrings {
     extends StObject
        with AttributeOperator
   inline def $Equalssign: $Equalssign = "$=".asInstanceOf[$Equalssign]
-  
-  @js.native
-  sealed trait Apostrophe
-    extends StObject
-       with _QuoteMark
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
   sealed trait AsteriskEqualssign
@@ -34,9 +27,7 @@ object postcssSelectorParserStrings {
   inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait Quotationmark
-    extends StObject
-       with _QuoteMark
+  sealed trait Quotationmark extends StObject
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native

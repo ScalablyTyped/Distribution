@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.LineBreak")
 @js.native
-class LineBreak protected ()
+open class LineBreak protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.LineBreak {
   def this(
     model: AbstractModel,

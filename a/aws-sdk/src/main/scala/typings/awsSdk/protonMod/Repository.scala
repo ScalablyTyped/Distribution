@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Repository extends StObject {
   
   /**
-    * The repository Amazon Resource Name (ARN).
+    * The Amazon Resource Name (ARN) of the linked repository.
     */
   var arn: RepositoryArn
   
   /**
-    * The repository Amazon Web Services CodeStar connection that connects Proton to your repository.
+    * The Amazon Resource Name (ARN) of your AWS CodeStar connection that connects Proton to your repository provider account.
     */
   var connectionArn: Arn
   

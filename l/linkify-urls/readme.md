@@ -1,7 +1,7 @@
 
 # Scala.js typings for linkify-urls
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Linkify URLs in a string
@@ -10,10 +10,10 @@ Linkify URLs in a string
 | ------------------ | :-------------: |
 | Full name          | linkify-urls |
 | Keywords           | linkify, urls, url, link, reference, references, linkifies, href, string, text, dom |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 99855 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4912.666666666667 |
+| # stars            | 149.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/linkify-urls#readme)

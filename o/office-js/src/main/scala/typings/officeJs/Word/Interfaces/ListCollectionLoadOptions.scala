@@ -27,7 +27,7 @@ trait ListCollectionLoadOptions extends StObject {
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+    * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -35,7 +35,7 @@ trait ListCollectionLoadOptions extends StObject {
   var levelExistences: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+    * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'.
     *
     * @remarks
     * [Api set: WordApi 1.3]

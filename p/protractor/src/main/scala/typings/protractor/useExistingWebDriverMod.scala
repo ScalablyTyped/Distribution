@@ -10,7 +10,7 @@ object useExistingWebDriverMod {
   
   @JSImport("protractor/built/driverProviders/useExistingWebDriver", "UseExistingWebDriver")
   @js.native
-  class UseExistingWebDriver protected () extends DriverProvider {
+  open class UseExistingWebDriver protected () extends DriverProvider {
     def this(config: Config) = this()
     
     /**

@@ -77,12 +77,12 @@ object colorPaletteMod {
         * `undefined` if the color selection is the same as the current `value`.
         */
       def onChange(): Unit = js.native
-      def onChange(color: Color): Unit = js.native
+      def onChange(color: String): Unit = js.native
       
       /**
         * Current active color value.
         */
-      var value: Color = js.native
+      var value: String = js.native
     }
   }
 }

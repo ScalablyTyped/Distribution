@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-http-response" : "4.0.0"
+      "ipfs-http-response" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-http-response" : "4.0.0"
+      "ipfs-http-response" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

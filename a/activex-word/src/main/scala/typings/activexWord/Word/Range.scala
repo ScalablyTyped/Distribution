@@ -2,8 +2,8 @@ package typings.activexWord.Word
 
 import typings.activexOffice.Office.Script
 import typings.activexOffice.Office.Scripts
-import typings.activexWord.activexWordNumbers.`9999998`
-import typings.activexWord.activexWordNumbers.`9999999`
+import typings.activexWord.activexWordInts.`9999998`
+import typings.activexWord.activexWordInts.`9999999`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

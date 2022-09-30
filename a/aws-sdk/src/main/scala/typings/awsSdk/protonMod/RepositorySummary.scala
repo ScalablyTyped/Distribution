@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RepositorySummary extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for a repository.
+    * The Amazon Resource Name (ARN) of the linked repository.
     */
   var arn: RepositoryArn
   

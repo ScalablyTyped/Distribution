@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Map")
 @js.native
-class Map_ protected ()
+open class Map_ protected ()
   extends typings.leaflet.mod.Map_ {
   def this(element: String) = this()
   def this(element: HTMLElement) = this()

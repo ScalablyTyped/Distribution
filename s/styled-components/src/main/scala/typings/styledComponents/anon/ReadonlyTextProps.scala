@@ -76,6 +76,8 @@ trait ReadonlyTextProps extends StObject {
   
   val dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
   
+  val disabled: js.UndefOr[Boolean] = js.undefined
+  
   val ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
   val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
@@ -208,6 +210,10 @@ object ReadonlyTextProps {
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
     inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     

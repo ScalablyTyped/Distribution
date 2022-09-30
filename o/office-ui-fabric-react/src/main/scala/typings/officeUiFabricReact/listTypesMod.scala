@@ -1,10 +1,9 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.listListMod.List
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`3`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`1`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`2`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`3`
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClassAttributes
 import typings.react.mod.HTMLAttributes
@@ -23,10 +22,10 @@ object listTypesMod {
   
   /* Inlined {  auto :0,   top :1,   bottom :2,   center :3}[keyof {  auto :0,   top :1,   bottom :2,   center :3}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`3`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`0`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`1`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`2`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`3`
   */
   trait ScrollToMode extends StObject
   object ScrollToMode {
@@ -217,7 +216,7 @@ object listTypesMod {
   
   trait IListProps[T]
     extends StObject
-       with HTMLAttributes[List[T] | HTMLDivElement] {
+       with HTMLAttributes[typings.officeUiFabricReact.listListMod.List[T] | HTMLDivElement] {
     
     /**
       * Optional callback to access the IList interface. Use this instead of ref for accessing

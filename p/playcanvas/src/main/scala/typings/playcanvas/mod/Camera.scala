@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Camera () extends StObject {
   
+  var _aperture: Double = js.native
+  
   var _aspectRatio: Double = js.native
   
   var _aspectRatioMode: Double = js.native
@@ -76,6 +78,10 @@ open class Camera () extends StObject {
   
   var _scissorRectClear: Boolean = js.native
   
+  var _sensitivity: Double = js.native
+  
+  var _shutter: Double = js.native
+  
   def _updateViewProjMat(): Unit = js.native
   
   var _viewMat: Mat4 = js.native
@@ -85,6 +91,9 @@ open class Camera () extends StObject {
   var _viewProjMat: Mat4 = js.native
   
   var _viewProjMatDirty: Boolean = js.native
+  
+  def aperture: Double = js.native
+  def aperture_=(arg: Double): Unit = js.native
   
   def aspectRatio: Double = js.native
   
@@ -153,6 +162,8 @@ open class Camera () extends StObject {
     */
   def fullSizeClearRect: Boolean = js.native
   
+  def getExposure(): Double = js.native
+  
   def getProjectionMatrixSkybox(): Mat4 = js.native
   
   def getScreenSize(sphere: Any): Double = js.native
@@ -203,6 +214,12 @@ open class Camera () extends StObject {
     */
   def screenToWorld(x: Double, y: Double, z: Double, cw: Double, ch: Double): Vec3 = js.native
   def screenToWorld(x: Double, y: Double, z: Double, cw: Double, ch: Double, worldCoord: Vec3): Vec3 = js.native
+  
+  def sensitivity: Double = js.native
+  def sensitivity_=(arg: Double): Unit = js.native
+  
+  def shutter: Double = js.native
+  def shutter_=(arg: Double): Unit = js.native
   
   def viewMatrix: Mat4 = js.native
   

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompiledSlotDescriptor extends StObject {
   
-  def fn(args: Any*): js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
+  def fn(args: Any*): js.UndefOr[js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]]
   @JSName("fn")
-  var fn_Original: Slot
+  var fn_Original: SSRSlot
   
   var key: js.UndefOr[String] = js.undefined
   
@@ -17,14 +17,14 @@ trait CompiledSlotDescriptor extends StObject {
 }
 object CompiledSlotDescriptor {
   
-  inline def apply(fn: Slot, name: String): CompiledSlotDescriptor = {
+  inline def apply(fn: SSRSlot, name: String): CompiledSlotDescriptor = {
     val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompiledSlotDescriptor]
   }
   
   extension [Self <: CompiledSlotDescriptor](x: Self) {
     
-    inline def setFn(value: Slot): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: SSRSlot): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -30,10 +30,6 @@ object plotlyJsStrings {
   inline def B: B = "B".asInstanceOf[B]
   
   @js.native
-  sealed trait Backslash extends StObject
-  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
-  
-  @js.native
   sealed trait Dot extends StObject
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   

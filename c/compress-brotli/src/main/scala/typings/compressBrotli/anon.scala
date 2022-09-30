@@ -2,6 +2,7 @@ package typings.compressBrotli
 
 import typings.node.zlibMod.BrotliOptions
 import typings.node.zlibMod.InputType
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +12,21 @@ object anon {
   @js.native
   trait Compress[SerializeResult, DeserializeResult] extends StObject {
     
-    def compress(data: InputType): CompressResult = js.native
-    def compress(data: InputType, optioins: BrotliOptions): CompressResult = js.native
+    def compress(data: InputType): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<node.zlib.CompressCallback>[1] */ js.Any
+      ] = js.native
+    def compress(data: InputType, optioins: BrotliOptions): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<node.zlib.CompressCallback>[1] */ js.Any
+      ] = js.native
     
-    def decompress(data: InputType): DecompressResult = js.native
-    def decompress(data: InputType, optioins: BrotliOptions): DecompressResult = js.native
+    def decompress(data: InputType): js.Promise[ReturnType[js.Function1[/* s */ String, Any]]] = js.native
+    def decompress(data: InputType, optioins: BrotliOptions): js.Promise[ReturnType[js.Function1[/* s */ String, Any]]] = js.native
     
-    def deserialize(source: CompressResult): DeserializeResult = js.native
+    def deserialize(
+      source: js.Promise[
+          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<node.zlib.CompressCallback>[1] */ js.Any
+        ]
+    ): DeserializeResult = js.native
     @JSName("deserialize")
     var deserialize_Original: Deserialize[DeserializeResult] = js.native
     
@@ -57,7 +66,11 @@ object anon {
       
       inline def setDecompressOptionsUndefined: Self = StObject.set(x, "decompressOptions", js.undefined)
       
-      inline def setDeserialize(value: /* source */ CompressResult => DeserializeResult): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(
+        value: js.Promise[
+              /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<node.zlib.CompressCallback>[1] */ js.Any
+            ] => DeserializeResult
+      ): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
       inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
       

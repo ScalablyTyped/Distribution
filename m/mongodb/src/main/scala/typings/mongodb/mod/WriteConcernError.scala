@@ -1,28 +1,27 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WriteConcernError extends StObject {
+@JSImport("mongodb", "WriteConcernError")
+@js.native
+open class WriteConcernError protected () extends StObject {
+  /* Excluded from this release type: [kServerError] */
+  def this(error: WriteConcernErrorData) = this()
   
-  //Write concern error code.
-  var code: scala.Double
+  /** Write concern error code. */
+  def code: js.UndefOr[scala.Double] = js.native
   
-  //Write concern error message.
-  var errmsg: String
-}
-object WriteConcernError {
+  /** @deprecated The `err` prop that contained a MongoServerError has been deprecated. */
+  def err: WriteConcernErrorData = js.native
   
-  inline def apply(code: scala.Double, errmsg: String): WriteConcernError = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errmsg = errmsg.asInstanceOf[js.Any])
-    __obj.asInstanceOf[WriteConcernError]
-  }
+  /** Write concern error info. */
+  def errInfo: js.UndefOr[Document] = js.native
   
-  extension [Self <: WriteConcernError](x: Self) {
-    
-    inline def setCode(value: scala.Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-    
-    inline def setErrmsg(value: String): Self = StObject.set(x, "errmsg", value.asInstanceOf[js.Any])
-  }
+  /** Write concern error message. */
+  def errmsg: js.UndefOr[String] = js.native
+  
+  def toJSON(): WriteConcernErrorData = js.native
 }

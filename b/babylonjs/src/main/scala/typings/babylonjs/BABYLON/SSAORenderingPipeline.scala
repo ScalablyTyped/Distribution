@@ -40,9 +40,7 @@ trait SSAORenderingPipeline
   var SSAORenderEffect: String = js.native
   
   /**
-    * @param cameras
-    * @param unique
-    * @hidden
+    * @internal
     */
   def _attachCameras(cameras: Any, unique: Boolean): Unit = js.native
   

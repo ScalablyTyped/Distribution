@@ -109,6 +109,18 @@ object `12Mod` {
     def LMSGetLastError(): CMIErrorCode = js.native
     
     /**
+      * The _count keyword is used to determine the current number of records in the cmi.interactions objective id list. The total number of entries is returned. If the SCO does not know the count of
+      * the cmi.interactions.n.objecives records, it can begin the current student count with 0. This would overwrite any information about objective ids currently stored in the first index position.
+      * Overwriting or appending is a decision that is made by the SCO author when he/she creates the SCO.
+      */
+    // tslint:disable-next-line:unified-signatures
+    /**
+      * The _count keyword is used to determine the current number of records in the cmi.interactions correct responses list. The total number of entries is returned. If the SCO does not know the
+      * count of the cmi.interactions.n.correct_responses records, it can begin the current student count with 0. This would overwrite any information about correct responses currently stored in the
+      * first index position. Overwriting or appending is a decision that is made by the SCO author when he/she creates the SCO.
+      */
+    def LMSGetValue(element: CMIElementInteractionsNCorrectResponsesCount | CMIElementInteractionsNObjectivesCount): CMIInteger = js.native
+    /**
       * Freeform feedback from the SCO. For example, the student may have the option of leaving comments at any point in the SCO, or they may be asked for comments at the end of the SCO. The comment
       * may also have an indication of where or when in the SCO it was created. A location may be tagged and embedded in the comment.
       */
@@ -213,20 +225,6 @@ object `12Mod` {
     // tslint:disable-next-line:unified-signatures
     def LMSGetValue(element: CMIElementInteractionsCount): CMIInteger = js.native
     /**
-      * The _count keyword is used to determine the current number of records in the cmi.interactions correct responses list. The total number of entries is returned. If the SCO does not know the
-      * count of the cmi.interactions.n.correct_responses records, it can begin the current student count with 0. This would overwrite any information about correct responses currently stored in the
-      * first index position. Overwriting or appending is a decision that is made by the SCO author when he/she creates the SCO.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementInteractionsNCorrectResponsesCount): CMIInteger = js.native
-    /**
-      * The _count keyword is used to determine the current number of records in the cmi.interactions objective id list. The total number of entries is returned. If the SCO does not know the count of
-      * the cmi.interactions.n.objecives records, it can begin the current student count with 0. This would overwrite any information about objective ids currently stored in the first index position.
-      * Overwriting or appending is a decision that is made by the SCO author when he/she creates the SCO.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementInteractionsNObjectivesCount): CMIInteger = js.native
-    /**
       * Unique information generated at the SCO's creation that is needed for every use. Without this information, a SCO may not execute.
       */
     // tslint:disable-next-line:unified-signatures
@@ -244,44 +242,6 @@ object `12Mod` {
       */
     // tslint:disable-next-line:unified-signatures
     def LMSGetValue(element: CMIElementObjectivesCount): CMIInteger = js.native
-    /**
-      * An internally, developer defined, SCO specific identifier for an objective.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementObjectivesNID): CMIIdentifier = js.native
-    /**
-      * The _children keyword is used to determine all of the elements in the core category that are supported by the LMS. If an element has no children, but is supported, an empty string is returned.
-      * If an element is not supported, an empty string is returned. A subsequent request for last error can verify that the element is not supported.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementObjectivesNScoreChildren): CMIString255 = js.native
-    /**
-      * The maximum score or total number that the student could have achieved on the objective.
-      *
-      * The cmi.objectives.n.score.max must be a normalized value between 0 and 100.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementObjectivesNScoreMax): CMIDecimal | CMIBlank = js.native
-    /**
-      * The minimum score that the student could have achieved on the objective.
-      *
-      * The cmi.objectives.n.score.min must be a normalized value between 0 and 100.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementObjectivesNScoreMin): CMIDecimal | CMIBlank = js.native
-    /**
-      * Numerical representation of student performance after each attempt on the objective. May be unprocessed raw score.
-      *
-      * The cmi.objectives.n.score.raw must be a normalized value between 0 and 100.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementObjectivesNScoreRaw): CMIDecimal | CMIBlank = js.native
-    /**
-      * The status of the SCO's objective obtained by the student after each attempt to master the SCO's objective. Only 6 possible vocabulary values: passed, completed, failed, incomplete, not
-      * attempted or browsed.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSGetValue(element: CMIElementObjectivesNStatus): CMIVocabularyStatus = js.native
     /**
       * The _children keyword is used to determine all of the elements in the core category that are supported by the LMS. If an element has no children, but is supported, an empty string is returned.
       * If an element is not supported, an empty string is returned. A subsequent request for last error can verify that the element is not supported.
@@ -349,6 +309,46 @@ object `12Mod` {
       */
     // tslint:disable-next-line:unified-signatures
     def LMSGetValue(element: CMIElementVersion): CMIString255 = js.native
+    /**
+      * An internally, developer defined, SCO specific identifier for an objective.
+      */
+    // tslint:disable-next-line:unified-signatures
+    @JSName("LMSGetValue")
+    def LMSGetValue_CMIIdentifier(element: CMIElementObjectivesNID): CMIIdentifier = js.native
+    /**
+      * The _children keyword is used to determine all of the elements in the core category that are supported by the LMS. If an element has no children, but is supported, an empty string is returned.
+      * If an element is not supported, an empty string is returned. A subsequent request for last error can verify that the element is not supported.
+      */
+    // tslint:disable-next-line:unified-signatures
+    @JSName("LMSGetValue")
+    def LMSGetValue_CMIString255(element: CMIElementObjectivesNScoreChildren): CMIString255 = js.native
+    /**
+      * The status of the SCO's objective obtained by the student after each attempt to master the SCO's objective. Only 6 possible vocabulary values: passed, completed, failed, incomplete, not
+      * attempted or browsed.
+      */
+    // tslint:disable-next-line:unified-signatures
+    @JSName("LMSGetValue")
+    def LMSGetValue_CMIVocabularyStatus(element: CMIElementObjectivesNStatus): CMIVocabularyStatus = js.native
+    /**
+      * Numerical representation of student performance after each attempt on the objective. May be unprocessed raw score.
+      *
+      * The cmi.objectives.n.score.raw must be a normalized value between 0 and 100.
+      */
+    // tslint:disable-next-line:unified-signatures
+    /**
+      * The maximum score or total number that the student could have achieved on the objective.
+      *
+      * The cmi.objectives.n.score.max must be a normalized value between 0 and 100.
+      */
+    /**
+      * The minimum score that the student could have achieved on the objective.
+      *
+      * The cmi.objectives.n.score.min must be a normalized value between 0 and 100.
+      */
+    @JSName("LMSGetValue")
+    def LMSGetValue_Union(
+      element: CMIElementObjectivesNScoreMax | CMIElementObjectivesNScoreMin | CMIElementObjectivesNScoreRaw
+    ): CMIDecimal | CMIBlank = js.native
     
     // Execution State
     /**
@@ -357,6 +357,64 @@ object `12Mod` {
       */
     def LMSInitialize(param: CMIBlank): CMIBoolean = js.native
     
+    /**
+      * Description of possible student responses to the interaction. There may be more than one correct response, and some responses may be more correct than others.
+      */
+    // tslint:disable-next-line:unified-signatures
+    /**
+      * Description of possible responses to the interaction. There may be more than one correct response, and some responses may be more correct than others.
+      */
+    /**
+      * How the system judges the described response.
+      */
+    def LMSSetValue(
+      element: CMIElementInteractionsNCorrectResponsesNPattern | CMIElementInteractionsNResult | CMIElementInteractionsNStudentResponse,
+      value: CMIFeedback | CMIVocabularyResult
+    ): CMIBoolean = js.native
+    /**
+      * An internally, developer defined, SCO specific identifier for an objective.
+      */
+    // tslint:disable-next-line:unified-signatures
+    /**
+      * Numerical representation of student performance after each attempt on the objective. May be unprocessed raw score.
+      *
+      * The cmi.objectives.n.score.raw must be a normalized value between 0 and 100.
+      */
+    /**
+      * The maximum score or total number that the student could have achieved on the objective.
+      *
+      * The cmi.objectives.n.score.max must be a normalized value between 0 and 100.
+      */
+    /**
+      * The minimum score that the student could have achieved on the objective.
+      *
+      * The cmi.objectives.n.score.min must be a normalized value between 0 and 100.
+      */
+    /**
+      * Unique identifier for an interaction.
+      */
+    /**
+      * Identification of when the student interaction was completed.
+      */
+    /**
+      * Interactions vary in importance. The weighting is a factor which is used to identify the relative importance of one interaction compared to another. For instance, if the first interaction has
+      * a weight of 15 and the second interaction has a weight of 25, then any combined score that reflects weighting would be more influenced by the second interaction.
+      *
+      * If all interactions are equal in importance, then each interaction has the same weight.
+      *
+      * A weight of 0 indicates that the interaction should not be counted in the weighted final score.
+      */
+    /**
+      * The time from the presentation of the stimulus to the completion of the measurable response.
+      */
+    def LMSSetValue(
+      element: CMIElementInteractionsNID | CMIElementInteractionsNLatency | CMIElementInteractionsNTime | CMIElementInteractionsNWeighting | CMIElementObjectivesNID | CMIElementObjectivesNScoreMax | CMIElementObjectivesNScoreMin | CMIElementObjectivesNScoreRaw,
+      value: CMIDecimal | CMIIdentifier | CMITime | CMITimeSpan
+    ): CMIBoolean = js.native
+    def LMSSetValue(
+      element: CMIElementObjectivesNScoreMax | CMIElementObjectivesNScoreMin | CMIElementObjectivesNScoreRaw,
+      value: CMIBlank
+    ): CMIBoolean = js.native
     /**
       * Freeform feedback from the SCO. For example, the student may have the option of leaving comments at any point in the SCO, or they may be asked for comments at the end of the SCO. The comment
       * may also have an indication of where or when in the SCO it was created. A location may be tagged and embedded in the comment.
@@ -412,80 +470,11 @@ object `12Mod` {
     // tslint:disable-next-line:unified-signatures
     def LMSSetValue(element: CMIElementCoreSessionTime, value: CMITimeSpan): CMIBoolean = js.native
     /**
-      * Description of possible student responses to the interaction. There may be more than one correct response, and some responses may be more correct than others.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementInteractionsNCorrectResponsesNPattern, value: CMIFeedback): CMIBoolean = js.native
-    /**
-      * Unique identifier for an interaction.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementInteractionsNID, value: CMIIdentifier): CMIBoolean = js.native
-    /**
-      * The time from the presentation of the stimulus to the completion of the measurable response.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementInteractionsNLatency, value: CMITimeSpan): CMIBoolean = js.native
-    /**
-      * How the system judges the described response.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementInteractionsNResult, value: CMIVocabularyResult): CMIBoolean = js.native
-    /**
-      * Description of possible responses to the interaction. There may be more than one correct response, and some responses may be more correct than others.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementInteractionsNStudentResponse, value: CMIFeedback): CMIBoolean = js.native
-    /**
-      * Identification of when the student interaction was completed.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementInteractionsNTime, value: CMITime): CMIBoolean = js.native
-    /**
       * Indication of which category of interaction is recorded. The type of interction determines how the interaction response should be interpreted. Eight possible question types are defined. They
       * are not meant to be limiting. There are other types of questions. However, if one of these eight types is used, these are the identifiers that match those types.
       */
     // tslint:disable-next-line:unified-signatures
     def LMSSetValue(element: CMIElementInteractionsNType, value: CMIVocabularyInteraction): CMIBoolean = js.native
-    /**
-      * Interactions vary in importance. The weighting is a factor which is used to identify the relative importance of one interaction compared to another. For instance, if the first interaction has
-      * a weight of 15 and the second interaction has a weight of 25, then any combined score that reflects weighting would be more influenced by the second interaction.
-      *
-      * If all interactions are equal in importance, then each interaction has the same weight.
-      *
-      * A weight of 0 indicates that the interaction should not be counted in the weighted final score.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementInteractionsNWeighting, value: CMIDecimal): CMIBoolean = js.native
-    /**
-      * An internally, developer defined, SCO specific identifier for an objective.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementObjectivesNID, value: CMIIdentifier): CMIBoolean = js.native
-    def LMSSetValue(element: CMIElementObjectivesNScoreMax, value: CMIBlank): CMIBoolean = js.native
-    /**
-      * The maximum score or total number that the student could have achieved on the objective.
-      *
-      * The cmi.objectives.n.score.max must be a normalized value between 0 and 100.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementObjectivesNScoreMax, value: CMIDecimal): CMIBoolean = js.native
-    def LMSSetValue(element: CMIElementObjectivesNScoreMin, value: CMIBlank): CMIBoolean = js.native
-    /**
-      * The minimum score that the student could have achieved on the objective.
-      *
-      * The cmi.objectives.n.score.min must be a normalized value between 0 and 100.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementObjectivesNScoreMin, value: CMIDecimal): CMIBoolean = js.native
-    def LMSSetValue(element: CMIElementObjectivesNScoreRaw, value: CMIBlank): CMIBoolean = js.native
-    /**
-      * Numerical representation of student performance after each attempt on the objective. May be unprocessed raw score.
-      *
-      * The cmi.objectives.n.score.raw must be a normalized value between 0 and 100.
-      */
-    // tslint:disable-next-line:unified-signatures
-    def LMSSetValue(element: CMIElementObjectivesNScoreRaw, value: CMIDecimal): CMIBoolean = js.native
     /**
       * The status of the SCO's objective obtained by the student after each attempt to master the SCO's objective. Only 6 possible vocabulary values: passed, completed, failed, incomplete, not
       * attempted or browsed.

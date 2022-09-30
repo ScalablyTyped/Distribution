@@ -1,8 +1,8 @@
 package typings.baseui
 
 import typings.baseui.anon.sizeIconPropssizeIconProp
-import typings.baseui.baseuiNumbers.`1`
-import typings.baseui.baseuiNumbers.`2`
+import typings.baseui.baseuiInts.`1`
+import typings.baseui.baseuiInts.`2`
 import typings.baseui.overridesMod.Override
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode

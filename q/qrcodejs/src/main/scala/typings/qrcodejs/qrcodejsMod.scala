@@ -1,9 +1,9 @@
 package typings.qrcodejs
 
-import typings.qrcodejs.qrcodejsNumbers.`0`
-import typings.qrcodejs.qrcodejsNumbers.`1`
-import typings.qrcodejs.qrcodejsNumbers.`2`
-import typings.qrcodejs.qrcodejsNumbers.`3`
+import typings.qrcodejs.qrcodejsInts.`0`
+import typings.qrcodejs.qrcodejsInts.`1`
+import typings.qrcodejs.qrcodejsInts.`2`
+import typings.qrcodejs.qrcodejsInts.`3`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -66,21 +66,21 @@ object qrcodejsMod {
   
   /* Inlined {  L :1,   M :0,   Q :3,   H :2}[keyof {  L :1,   M :0,   Q :3,   H :2}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.qrcodejs.qrcodejsNumbers.`1`
-    - typings.qrcodejs.qrcodejsNumbers.`0`
-    - typings.qrcodejs.qrcodejsNumbers.`3`
-    - typings.qrcodejs.qrcodejsNumbers.`2`
+    - typings.qrcodejs.qrcodejsInts.`1`
+    - typings.qrcodejs.qrcodejsInts.`0`
+    - typings.qrcodejs.qrcodejsInts.`3`
+    - typings.qrcodejs.qrcodejsInts.`2`
   */
   trait CorrectLevelType extends StObject
   object CorrectLevelType {
     
-    inline def `0`: typings.qrcodejs.qrcodejsNumbers.`0` = 0.asInstanceOf[typings.qrcodejs.qrcodejsNumbers.`0`]
+    inline def `0`: typings.qrcodejs.qrcodejsInts.`0` = 0.asInstanceOf[typings.qrcodejs.qrcodejsInts.`0`]
     
-    inline def `1`: typings.qrcodejs.qrcodejsNumbers.`1` = 1.asInstanceOf[typings.qrcodejs.qrcodejsNumbers.`1`]
+    inline def `1`: typings.qrcodejs.qrcodejsInts.`1` = 1.asInstanceOf[typings.qrcodejs.qrcodejsInts.`1`]
     
-    inline def `2`: typings.qrcodejs.qrcodejsNumbers.`2` = 2.asInstanceOf[typings.qrcodejs.qrcodejsNumbers.`2`]
+    inline def `2`: typings.qrcodejs.qrcodejsInts.`2` = 2.asInstanceOf[typings.qrcodejs.qrcodejsInts.`2`]
     
-    inline def `3`: typings.qrcodejs.qrcodejsNumbers.`3` = 3.asInstanceOf[typings.qrcodejs.qrcodejsNumbers.`3`]
+    inline def `3`: typings.qrcodejs.qrcodejsInts.`3` = 3.asInstanceOf[typings.qrcodejs.qrcodejsInts.`3`]
   }
   
   trait Options extends StObject {

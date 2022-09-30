@@ -91,14 +91,14 @@ object decoratorsMod {
   
   @JSImport("class-validator/types/decorator/decorators", "CONTAINS")
   @js.native
-  val CONTAINS: /* "contains" */ String = js.native
+  val CONTAINS__ : /* "contains" */ String = js.native
   
   inline def Contains_(seed: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(seed.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Contains_(seed: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(seed.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   @JSImport("class-validator/types/decorator/decorators", "EQUALS")
   @js.native
-  val EQUALS: /* "equals" */ String = js.native
+  val EQUALS__ : /* "equals" */ String = js.native
   
   inline def Equals(comparison: Any): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(comparison.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Equals(comparison: Any, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(comparison.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
@@ -738,11 +738,7 @@ object decoratorsMod {
   
   @JSImport("class-validator/types/decorator/decorators", "MATCHES")
   @js.native
-  val MATCHES: /* "matches" */ String = js.native
-  
-  @JSImport("class-validator/types/decorator/decorators", "MAX")
-  @js.native
-  val MAX: /* "max" */ String = js.native
+  val MATCHES__ : /* "matches" */ String = js.native
   
   @JSImport("class-validator/types/decorator/decorators", "MAX_DATE")
   @js.native
@@ -752,9 +748,9 @@ object decoratorsMod {
   @js.native
   val MAX_LENGTH: /* "maxLength" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/decorators", "MIN")
+  @JSImport("class-validator/types/decorator/decorators", "MAX")
   @js.native
-  val MIN: /* "min" */ String = js.native
+  val MAX__ : /* "max" */ String = js.native
   
   @JSImport("class-validator/types/decorator/decorators", "MIN_DATE")
   @js.native
@@ -763,6 +759,10 @@ object decoratorsMod {
   @JSImport("class-validator/types/decorator/decorators", "MIN_LENGTH")
   @js.native
   val MIN_LENGTH: /* "minLength" */ String = js.native
+  
+  @JSImport("class-validator/types/decorator/decorators", "MIN")
+  @js.native
+  val MIN__ : /* "min" */ String = js.native
   
   inline def Matches_(pattern: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Matches_(pattern: String, modifiers: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]

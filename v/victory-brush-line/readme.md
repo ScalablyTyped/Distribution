@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-brush-line
 
-Typings are for version 36.6.7
+Typings are for version 36.6.8
 
 ## Library description:
 Interactive Brush Line Component for Victory

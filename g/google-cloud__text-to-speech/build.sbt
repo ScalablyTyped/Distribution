@@ -1,20 +1,21 @@
 organization := "org.scalablytyped"
 name := "google-cloud__text-to-speech"
-version := "3.1.2-0eeb94"
-scalaVersion := "3.0.1"
+version := "4.0.3-0f3d06"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "gaxios" % "4.0.1-10471b",
-  "org.scalablytyped" %%% "google-auth-library" % "6.1.3-2e31d6",
-  "org.scalablytyped" %%% "google-gax" % "2.9.2-e71c4f",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.1.8-bbf269",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.5.5-5965d4",
-  "org.scalablytyped" %%% "gtoken" % "5.1.0-103072",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20201002Z-fa90ce",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "protobufjs" % "6.10.2-f8699f",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "gaxios" % "5.0.2-3b05d6",
+  "org.scalablytyped" %%% "google-auth-library" % "8.5.2-74358f",
+  "org.scalablytyped" %%% "google-gax" % "3.5.2-4f19ca",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.1-b61edd",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-6ef219",
+  "org.scalablytyped" %%% "gtoken" % "6.1.2-609e4e",
+  "org.scalablytyped" %%% "long" % "5.2.0-9c1ab6",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "proto3-json-serializer" % "1.1.0-ef7a46",
+  "org.scalablytyped" %%% "protobufjs" % "7.1.2-b9b4c1",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

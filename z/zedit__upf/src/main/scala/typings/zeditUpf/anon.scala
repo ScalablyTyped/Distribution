@@ -6,12 +6,10 @@ import typings.zeditUpf.mod.Executor
 import typings.zeditUpf.mod.Helpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Controller[S /* <: js.Object */] extends StObject {
     
     /**
@@ -21,24 +19,24 @@ object anon {
       *
       * @todo what is $scope?
       */
-    var controller: js.UndefOr[js.Function1[/* $scope */ js.Any, Unit]] = js.native
+    var controller: js.UndefOr[js.Function1[/* $scope */ Any, Unit]] = js.undefined
     
     /**
       * Default settings for your patcher.
       */
-    var defaultSettings: PatchFileName with S = js.native
+    var defaultSettings: PatchFileName & S
     
     /**
       * If you set hide to true the settings tab will not be displayed
       *
       * @default false
       */
-    var hide: js.UndefOr[Boolean] = js.native
+    var hide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The label is what gets displayed as the settings tab's label
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * URL to the HTML template to use for the settings tab.
@@ -46,144 +44,118 @@ object anon {
       *
       * @example `${patcherUrl}/partials/settings.html`
       */
-    var templateUrl: String = js.native
+    var templateUrl: String
   }
   object Controller {
     
-    @scala.inline
-    def apply[S /* <: js.Object */](defaultSettings: PatchFileName with S, label: String, templateUrl: String): Controller[S] = {
+    inline def apply[S /* <: js.Object */](defaultSettings: PatchFileName & S, label: String, templateUrl: String): Controller[S] = {
       val __obj = js.Dynamic.literal(defaultSettings = defaultSettings.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Controller[S]]
     }
     
-    @scala.inline
-    implicit class ControllerMutableBuilder[Self <: Controller[_], S /* <: js.Object */] (val x: Self with Controller[S]) extends AnyVal {
+    extension [Self <: Controller[?], S /* <: js.Object */](x: Self & Controller[S]) {
       
-      @scala.inline
-      def setController(value: /* $scope */ js.Any => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+      inline def setController(value: /* $scope */ Any => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+      inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
       
-      @scala.inline
-      def setDefaultSettings(value: PatchFileName with S): Self = StObject.set(x, "defaultSettings", value.asInstanceOf[js.Any])
+      inline def setDefaultSettings(value: PatchFileName & S): Self = StObject.set(x, "defaultSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait Execute[S, L] extends StObject {
+  trait Execute[S /* <: js.Object */, L /* <: js.Object */] extends StObject {
     
     /**
       * @deprecated Use function version
       * @see Patcher.execute
       */
-    var execute: Executor[S, L] = js.native
+    var execute: Executor[S, L]
   }
   object Execute {
     
-    @scala.inline
-    def apply[S, L](execute: Executor[S, L]): Execute[S, L] = {
+    inline def apply[S /* <: js.Object */, L /* <: js.Object */](execute: Executor[S, L]): Execute[S, L] = {
       val __obj = js.Dynamic.literal(execute = execute.asInstanceOf[js.Any])
       __obj.asInstanceOf[Execute[S, L]]
     }
     
-    @scala.inline
-    implicit class ExecuteMutableBuilder[Self <: Execute[_, _], S, L] (val x: Self with (Execute[S, L])) extends AnyVal {
+    extension [Self <: Execute[?, ?], S /* <: js.Object */, L /* <: js.Object */](x: Self & (Execute[S, L])) {
       
-      @scala.inline
-      def setExecute(value: Executor[S, L]): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      inline def setExecute(value: Executor[S, L]): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
     /**
       * Filter function. Called for each loaded record.
       * Return false to skip patching a record.
       */
-    var filter: js.UndefOr[js.Function1[/* record */ RecordHandle, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* record */ RecordHandle, Boolean]] = js.undefined
     
     /**
       * Pass true to include override records.
       *
       * @default false
       */
-    var overrides: js.UndefOr[Boolean] = js.native
+    var overrides: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Record signature to load.
       * You can view record signatures by top level group names
       * on the tree view and in record headers.
       */
-    var signature: String = js.native
+    var signature: String
   }
   object Filter {
     
-    @scala.inline
-    def apply(signature: String): Filter = {
+    inline def apply(signature: String): Filter = {
       val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: /* record */ RecordHandle => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* record */ RecordHandle => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: Boolean): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: Boolean): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Load extends StObject {
     
     /**
       * Loaded records which pass filter will be copied to the patch plugin,
       * and then passed to the patch function.
       */
-    var load: Filter = js.native
+    var load: Filter
   }
   object Load {
     
-    @scala.inline
-    def apply(load: Filter): Load = {
+    inline def apply(load: Filter): Load = {
       val __obj = js.Dynamic.literal(load = load.asInstanceOf[js.Any])
       __obj.asInstanceOf[Load]
     }
     
-    @scala.inline
-    implicit class LoadMutableBuilder[Self <: Load] (val x: Self) extends AnyVal {
+    extension [Self <: Load](x: Self) {
       
-      @scala.inline
-      def setLoad(value: Filter): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+      inline def setLoad(value: Filter): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Patch[S, L] extends StObject {
     
     /**
@@ -192,30 +164,25 @@ object anon {
       */
     var patch: js.UndefOr[
         js.Function4[/* record */ RecordHandle, /* helpers */ Helpers, /* settings */ S, /* locals */ L, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Patch {
     
-    @scala.inline
-    def apply[S, L](): Patch[S, L] = {
+    inline def apply[S, L](): Patch[S, L] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Patch[S, L]]
     }
     
-    @scala.inline
-    implicit class PatchMutableBuilder[Self <: Patch[_, _], S, L] (val x: Self with (Patch[S, L])) extends AnyVal {
+    extension [Self <: Patch[?, ?], S, L](x: Self & (Patch[S, L])) {
       
-      @scala.inline
-      def setPatch(
+      inline def setPatch(
         value: (/* record */ RecordHandle, /* helpers */ Helpers, /* settings */ S, /* locals */ L) => Unit
       ): Self = StObject.set(x, "patch", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+      inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     }
   }
   
-  @js.native
   trait PatchFileName extends StObject {
     
     /**
@@ -225,77 +192,64 @@ object anon {
       *
       * @default zPatch.esp
       */
-    var patchFileName: js.UndefOr[String] = js.native
+    var patchFileName: js.UndefOr[String] = js.undefined
   }
   object PatchFileName {
     
-    @scala.inline
-    def apply(): PatchFileName = {
+    inline def apply(): PatchFileName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatchFileName]
     }
     
-    @scala.inline
-    implicit class PatchFileNameMutableBuilder[Self <: PatchFileName] (val x: Self) extends AnyVal {
+    extension [Self <: PatchFileName](x: Self) {
       
-      @scala.inline
-      def setPatchFileName(value: String): Self = StObject.set(x, "patchFileName", value.asInstanceOf[js.Any])
+      inline def setPatchFileName(value: String): Self = StObject.set(x, "patchFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchFileNameUndefined: Self = StObject.set(x, "patchFileName", js.undefined)
+      inline def setPatchFileNameUndefined: Self = StObject.set(x, "patchFileName", js.undefined)
     }
   }
   
-  @js.native
   trait Records[S, L] extends StObject {
     
     /**
       * A function which can be used instead of load.
       * The records function allows you to return a custom array of records to patch.
       */
-    def records(filesToPatch: js.Array[FileHandle], helpers: Helpers, settings: S, locals: L): js.Array[RecordHandle] = js.native
+    def records(filesToPatch: js.Array[FileHandle], helpers: Helpers, settings: S, locals: L): js.Array[RecordHandle]
   }
   object Records {
     
-    @scala.inline
-    def apply[S, L](records: (js.Array[FileHandle], Helpers, S, L) => js.Array[RecordHandle]): Records[S, L] = {
+    inline def apply[S, L](records: (js.Array[FileHandle], Helpers, S, L) => js.Array[RecordHandle]): Records[S, L] = {
       val __obj = js.Dynamic.literal(records = js.Any.fromFunction4(records))
       __obj.asInstanceOf[Records[S, L]]
     }
     
-    @scala.inline
-    implicit class RecordsMutableBuilder[Self <: Records[_, _], S, L] (val x: Self with (Records[S, L])) extends AnyVal {
+    extension [Self <: Records[?, ?], S, L](x: Self & (Records[S, L])) {
       
-      @scala.inline
-      def setRecords(value: (js.Array[FileHandle], Helpers, S, L) => js.Array[RecordHandle]): Self = StObject.set(x, "records", js.Any.fromFunction4(value))
+      inline def setRecords(value: (js.Array[FileHandle], Helpers, S, L) => js.Array[RecordHandle]): Self = StObject.set(x, "records", js.Any.fromFunction4(value))
     }
   }
   
-  @js.native
   trait RequiredFiles extends StObject {
     
     /**
       * @deprecated Use function version
       * @see Patcher.requiredFiles
       */
-    var requiredFiles: js.Array[String] = js.native
+    var requiredFiles: js.Array[String]
   }
   object RequiredFiles {
     
-    @scala.inline
-    def apply(requiredFiles: js.Array[String]): RequiredFiles = {
+    inline def apply(requiredFiles: js.Array[String]): RequiredFiles = {
       val __obj = js.Dynamic.literal(requiredFiles = requiredFiles.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredFiles]
     }
     
-    @scala.inline
-    implicit class RequiredFilesMutableBuilder[Self <: RequiredFiles] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredFiles](x: Self) {
       
-      @scala.inline
-      def setRequiredFiles(value: js.Array[String]): Self = StObject.set(x, "requiredFiles", value.asInstanceOf[js.Any])
+      inline def setRequiredFiles(value: js.Array[String]): Self = StObject.set(x, "requiredFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredFilesVarargs(value: String*): Self = StObject.set(x, "requiredFiles", js.Array(value :_*))
+      inline def setRequiredFilesVarargs(value: String*): Self = StObject.set(x, "requiredFiles", js.Array(value*))
     }
   }
 }

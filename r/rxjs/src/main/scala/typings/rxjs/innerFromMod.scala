@@ -6,6 +6,7 @@ import typings.rxjs.internalTypesMod.ObservedValueOf
 import typings.rxjs.internalTypesMod.ReadableStreamLike
 import typings.std.ArrayLike
 import typings.std.AsyncIterable
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ object innerFromMod {
   
   inline def fromIterable[T](iterable: js.Iterable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(iterable.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   
-  inline def fromPromise[T](promise: js.Thenable[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def fromPromise[T](promise: PromiseLike[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   
   inline def fromReadableStreamLike[T](readableStream: ReadableStreamLike[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReadableStreamLike")(readableStream.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   

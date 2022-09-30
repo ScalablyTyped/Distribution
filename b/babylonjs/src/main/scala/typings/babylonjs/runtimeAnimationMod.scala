@@ -32,7 +32,7 @@ object runtimeAnimationMod {
       */
     /* private */ var _animation: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _animationState: IAnimationState = js.native
     
     /**
@@ -91,7 +91,7 @@ object runtimeAnimationMod {
       */
     /* private */ var _offsetsCache: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _onLoop(): Unit = js.native
     
     /**
@@ -105,8 +105,7 @@ object runtimeAnimationMod {
     /* private */ var _originalValue: Any = js.native
     
     /**
-      * @param newSpeedRatio
-      * @hidden Internal use only
+      * @internal Internal use only
       */
     def _prepareForSpeedRatioChange(newSpeedRatio: Double): Unit = js.native
     

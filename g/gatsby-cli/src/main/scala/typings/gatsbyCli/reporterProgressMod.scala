@@ -1,5 +1,6 @@
 package typings.gatsbyCli
 
+import typings.gatsbyCli.anon.TypeofreporterActionsForT
 import typings.gatsbyCli.reporterReporterMod.Reporter_
 import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredError
 import typings.opentracing.mod.Span
@@ -13,13 +14,15 @@ object reporterProgressMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createProgressReporter(hasIdTextStartTotalSpanReporter: ICreateProgressReporterArguments): IProgressReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressReporter")(hasIdTextStartTotalSpanReporter.asInstanceOf[js.Any]).asInstanceOf[IProgressReporter]
+  inline def createProgressReporter(hasIdTextStartTotalSpanReporterReporterActions: ICreateProgressReporterArguments): IProgressReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressReporter")(hasIdTextStartTotalSpanReporterReporterActions.asInstanceOf[js.Any]).asInstanceOf[IProgressReporter]
   
   trait ICreateProgressReporterArguments extends StObject {
     
     var id: String
     
     var reporter: Reporter_
+    
+    var reporterActions: TypeofreporterActionsForT
     
     var span: Span
     
@@ -31,8 +34,16 @@ object reporterProgressMod {
   }
   object ICreateProgressReporterArguments {
     
-    inline def apply(id: String, reporter: Reporter_, span: Span, start: Double, text: String, total: Double): ICreateProgressReporterArguments = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    inline def apply(
+      id: String,
+      reporter: Reporter_,
+      reporterActions: TypeofreporterActionsForT,
+      span: Span,
+      start: Double,
+      text: String,
+      total: Double
+    ): ICreateProgressReporterArguments = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterActions = reporterActions.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICreateProgressReporterArguments]
     }
     
@@ -41,6 +52,8 @@ object reporterProgressMod {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setReporter(value: Reporter_): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      
+      inline def setReporterActions(value: TypeofreporterActionsForT): Self = StObject.set(x, "reporterActions", value.asInstanceOf[js.Any])
       
       inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
@@ -59,9 +72,9 @@ object reporterProgressMod {
     
     def end(): Unit = js.native
     
-    def panic(arg: js.Any, otherArgs: js.Any*): Unit = js.native
+    def panic(arg: Any, otherArgs: Any*): Unit = js.native
     
-    def panicOnBuild(arg: js.Any, otherArgs: js.Any*): IStructuredError | js.Array[IStructuredError] = js.native
+    def panicOnBuild(arg: Any, otherArgs: Any*): IStructuredError | js.Array[IStructuredError] = js.native
     
     def setStatus(statusText: String): Unit = js.native
     

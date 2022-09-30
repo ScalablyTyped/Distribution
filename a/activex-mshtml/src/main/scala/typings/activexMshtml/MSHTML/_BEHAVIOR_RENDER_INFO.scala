@@ -1,42 +1,42 @@
 package typings.activexMshtml.MSHTML
 
-import typings.activexMshtml.activexMshtmlNumbers.`1024`
-import typings.activexMshtml.activexMshtmlNumbers.`1048576`
-import typings.activexMshtml.activexMshtmlNumbers.`1`
-import typings.activexMshtml.activexMshtmlNumbers.`2048`
-import typings.activexMshtml.activexMshtmlNumbers.`2097152`
-import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typings.activexMshtml.activexMshtmlNumbers.`255`
-import typings.activexMshtml.activexMshtmlNumbers.`256`
-import typings.activexMshtml.activexMshtmlNumbers.`2`
-import typings.activexMshtml.activexMshtmlNumbers.`32`
-import typings.activexMshtml.activexMshtmlNumbers.`3840`
-import typings.activexMshtml.activexMshtmlNumbers.`4096`
-import typings.activexMshtml.activexMshtmlNumbers.`40`
-import typings.activexMshtml.activexMshtmlNumbers.`4`
-import typings.activexMshtml.activexMshtmlNumbers.`512`
-import typings.activexMshtml.activexMshtmlNumbers.`8`
+import typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typings.activexMshtml.activexMshtmlInts.`1024`
+import typings.activexMshtml.activexMshtmlInts.`1048576`
+import typings.activexMshtml.activexMshtmlInts.`1`
+import typings.activexMshtml.activexMshtmlInts.`2048`
+import typings.activexMshtml.activexMshtmlInts.`2097152`
+import typings.activexMshtml.activexMshtmlInts.`255`
+import typings.activexMshtml.activexMshtmlInts.`256`
+import typings.activexMshtml.activexMshtmlInts.`2`
+import typings.activexMshtml.activexMshtmlInts.`32`
+import typings.activexMshtml.activexMshtmlInts.`3840`
+import typings.activexMshtml.activexMshtmlInts.`4096`
+import typings.activexMshtml.activexMshtmlInts.`40`
+import typings.activexMshtml.activexMshtmlInts.`4`
+import typings.activexMshtml.activexMshtmlInts.`512`
+import typings.activexMshtml.activexMshtmlInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typings.activexMshtml.activexMshtmlNumbers.`2097152`
-  - typings.activexMshtml.activexMshtmlNumbers.`40`
-  - typings.activexMshtml.activexMshtmlNumbers.`2`
-  - typings.activexMshtml.activexMshtmlNumbers.`8`
-  - typings.activexMshtml.activexMshtmlNumbers.`32`
-  - typings.activexMshtml.activexMshtmlNumbers.`255`
-  - typings.activexMshtml.activexMshtmlNumbers.`1`
-  - typings.activexMshtml.activexMshtmlNumbers.`4`
-  - typings.activexMshtml.activexMshtmlNumbers.`3840`
-  - typings.activexMshtml.activexMshtmlNumbers.`256`
-  - typings.activexMshtml.activexMshtmlNumbers.`1024`
-  - typings.activexMshtml.activexMshtmlNumbers.`512`
-  - typings.activexMshtml.activexMshtmlNumbers.`2048`
-  - typings.activexMshtml.activexMshtmlNumbers.`4096`
-  - typings.activexMshtml.activexMshtmlNumbers.`1048576`
+  - typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typings.activexMshtml.activexMshtmlInts.`2097152`
+  - typings.activexMshtml.activexMshtmlInts.`40`
+  - typings.activexMshtml.activexMshtmlInts.`2`
+  - typings.activexMshtml.activexMshtmlInts.`8`
+  - typings.activexMshtml.activexMshtmlInts.`32`
+  - typings.activexMshtml.activexMshtmlInts.`255`
+  - typings.activexMshtml.activexMshtmlInts.`1`
+  - typings.activexMshtml.activexMshtmlInts.`4`
+  - typings.activexMshtml.activexMshtmlInts.`3840`
+  - typings.activexMshtml.activexMshtmlInts.`256`
+  - typings.activexMshtml.activexMshtmlInts.`1024`
+  - typings.activexMshtml.activexMshtmlInts.`512`
+  - typings.activexMshtml.activexMshtmlInts.`2048`
+  - typings.activexMshtml.activexMshtmlInts.`4096`
+  - typings.activexMshtml.activexMshtmlInts.`1048576`
 */
 trait _BEHAVIOR_RENDER_INFO extends StObject
 object _BEHAVIOR_RENDER_INFO {
@@ -71,5 +71,5 @@ object _BEHAVIOR_RENDER_INFO {
   
   inline def BEHAVIORRENDERINFO_SURFACE: `1048576` = 1048576.asInstanceOf[`1048576`]
   
-  inline def BEHAVIOR_RENDER_INFO_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def BEHAVIOR_RENDER_INFO_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }

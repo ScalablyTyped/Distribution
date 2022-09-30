@@ -804,9 +804,9 @@ object global {
     inline def resolve(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  inline def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Any = js.Dynamic.global.applyDynamic("setImmediate")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Any = js.Dynamic.global.applyDynamic("setImmediate")(scala.List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
-  inline def setInterval(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer = (js.Dynamic.global.applyDynamic("setInterval")((List(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Timer]
+  inline def setInterval(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Timer]
   
-  inline def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer = (js.Dynamic.global.applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Timer]
+  inline def setTimeout(callback: js.Function1[/* repeated */ Any, Unit], ms: Double, args: Any*): Timer = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(callback.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Timer]
 }

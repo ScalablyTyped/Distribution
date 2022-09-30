@@ -1,7 +1,7 @@
 
 # Scala.js typings for linkify-issues
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Linkify GitHub issue references
@@ -10,10 +10,10 @@ Linkify GitHub issue references
 | ------------------ | :-------------: |
 | Full name          | linkify-issues |
 | Keywords           | issue, issues, linkify, link, pr, pull, request, reference, references, github, gh, link |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 24775 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 157.33333333333334 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/linkify-issues#readme)

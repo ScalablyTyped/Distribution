@@ -2,8 +2,8 @@ package typings.sequelize.mod
 
 import typings.sequelize.sequelizeBooleans.`false`
 import typings.sequelize.sequelizeStrings.any
-import typings.validator.anon.strongPasswordOptionsretu
-import typings.validator.anon.strongPasswordOptionsretuMinLength
+import typings.validator.anon.StrongPasswordOptionsretu
+import typings.validator.anon.StrongPasswordOptionsretuMinLength
 import typings.validator.isEmailMod.IsEmailOptions
 import typings.validator.isFQDNMod.IsFQDNOptions
 import typings.validator.isURLMod.IsURLOptions
@@ -517,11 +517,9 @@ trait ValidatorJSType extends StObject {
     */
   def isSlug(str: String): Boolean = js.native
   
-  def isStrongPassword(str: String): Double = js.native
-  def isStrongPassword(str: String, options: strongPasswordOptionsretu): Boolean = js.native
-  def isStrongPassword(str: String, options: strongPasswordOptionsretuMinLength): Double = js.native
-  @JSName("isStrongPassword")
-  def isStrongPassword_Boolean(str: String): Boolean = js.native
+  def isStrongPassword(str: String): Boolean = js.native
+  def isStrongPassword(str: String, options: StrongPasswordOptionsretu): Boolean = js.native
+  def isStrongPassword(str: String, options: StrongPasswordOptionsretuMinLength): Double = js.native
   
   /**
     * Check if the string contains any surrogate pairs chars.

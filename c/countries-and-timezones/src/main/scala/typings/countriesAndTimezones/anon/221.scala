@@ -1,6 +1,6 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`-60`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`-60`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.PT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ trait `221` extends StObject {
   
   var c: js.Array[PT]
   
-  var d: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`0`
+  var d: typings.countriesAndTimezones.countriesAndTimezonesInts.`0`
   
   var u: `-60`
 }
@@ -27,7 +27,7 @@ object `221` {
     
     inline def setCVarargs(value: PT*): Self = StObject.set(x, "c", js.Array(value*))
     
-    inline def setD(value: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`0`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     inline def setU(value: `-60`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
   }

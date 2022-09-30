@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Placeholder extends StObject {
   
-  var container: js.UndefOr[`15`] = js.undefined
+  var container: js.UndefOr[`16`] = js.undefined
   
   var disabled: js.UndefOr[OpacityType | OpacityOpacityType] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var placeholder: js.UndefOr[`15`] = js.undefined
+  var placeholder: js.UndefOr[`16`] = js.undefined
   
-  var suggestions: js.UndefOr[`15`] = js.undefined
+  var suggestions: js.UndefOr[`16`] = js.undefined
 }
 object Placeholder {
   
@@ -30,7 +30,7 @@ object Placeholder {
   
   extension [Self <: Placeholder](x: Self) {
     
-    inline def setContainer(value: `15`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -44,11 +44,11 @@ object Placeholder {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setPlaceholder(value: `15`): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: `16`): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setSuggestions(value: `15`): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: `16`): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
   }

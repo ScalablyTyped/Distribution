@@ -1,10 +1,10 @@
 package typings.monacoEditor.mod.languages.typescript
 
 import typings.monacoEditor.anon.FileName
-import typings.monacoEditor.monacoEditorNumbers.`0`
-import typings.monacoEditor.monacoEditorNumbers.`1`
-import typings.monacoEditor.monacoEditorNumbers.`2`
-import typings.monacoEditor.monacoEditorNumbers.`3`
+import typings.monacoEditor.monacoEditorInts.`0`
+import typings.monacoEditor.monacoEditorInts.`1`
+import typings.monacoEditor.monacoEditorInts.`2`
+import typings.monacoEditor.monacoEditorInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -40,8 +40,7 @@ object webXRSessionManagerMod {
     /* private */ var _sessionMode: Any = js.native
     
     /**
-      * @param baseLayerWrapper
-      * @hidden
+      * @internal
       */
     def _setBaseLayerWrapper(baseLayerWrapper: Nullable[WebXRLayerWrapper]): Unit = js.native
     

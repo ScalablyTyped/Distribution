@@ -1,13 +1,13 @@
 package typings.eonasdanBootstrapDatetimepicker
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`0`
-import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`1`
-import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`2`
-import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`3`
-import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`4`
-import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`5`
-import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`6`
+import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`0`
+import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`1`
+import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`2`
+import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`3`
+import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`4`
+import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`5`
+import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`6`
 import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.DateTimePicker
 import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.auto
 import typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerStrings.bottom
@@ -549,13 +549,13 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`0`
-    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`1`
-    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`2`
-    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`3`
-    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`4`
-    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`5`
-    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerNumbers.`6`
+    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`0`
+    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`1`
+    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`2`
+    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`3`
+    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`4`
+    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`5`
+    - typings.eonasdanBootstrapDatetimepicker.eonasdanBootstrapDatetimepickerInts.`6`
   */
   trait DayOfWeek extends StObject
   object DayOfWeek {

@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/static-label-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticLabel")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticLabel")
 @js.native
-class StaticLabel protected () extends Widget {
+open class StaticLabel protected () extends Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ class StaticLabel protected () extends Widget {
 }
 object StaticLabel {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticLabel")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticLabel")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +64,13 @@ object StaticLabel {
   inline def createInDropZoneUnderWidget(container: DropZone): StaticLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[StaticLabel]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticLabel.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticLabel.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticLabel.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticLabel.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

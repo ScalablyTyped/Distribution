@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CloseDrawer extends StObject {
   
-  def closeDrawer(): js.Any
+  def closeDrawer(): Any
   
-  def openDrawer(): js.Any
+  def openDrawer(): Any
   
-  def toggleDrawer(): js.Any
+  def toggleDrawer(): Any
 }
 object CloseDrawer {
   
-  inline def apply(closeDrawer: () => js.Any, openDrawer: () => js.Any, toggleDrawer: () => js.Any): CloseDrawer = {
+  inline def apply(closeDrawer: () => Any, openDrawer: () => Any, toggleDrawer: () => Any): CloseDrawer = {
     val __obj = js.Dynamic.literal(closeDrawer = js.Any.fromFunction0(closeDrawer), openDrawer = js.Any.fromFunction0(openDrawer), toggleDrawer = js.Any.fromFunction0(toggleDrawer))
     __obj.asInstanceOf[CloseDrawer]
   }
   
   extension [Self <: CloseDrawer](x: Self) {
     
-    inline def setCloseDrawer(value: () => js.Any): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
+    inline def setCloseDrawer(value: () => Any): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
     
-    inline def setOpenDrawer(value: () => js.Any): Self = StObject.set(x, "openDrawer", js.Any.fromFunction0(value))
+    inline def setOpenDrawer(value: () => Any): Self = StObject.set(x, "openDrawer", js.Any.fromFunction0(value))
     
-    inline def setToggleDrawer(value: () => js.Any): Self = StObject.set(x, "toggleDrawer", js.Any.fromFunction0(value))
+    inline def setToggleDrawer(value: () => Any): Self = StObject.set(x, "toggleDrawer", js.Any.fromFunction0(value))
   }
 }

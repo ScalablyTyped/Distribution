@@ -33,117 +33,115 @@ object internalTextureMod {
     def this(engine: ThinEngine, source: InternalTextureSource) = this()
     def this(engine: ThinEngine, source: InternalTextureSource, delayAllocation: Boolean) = this()
     
-    /** @hidden */
+    /** @internal */
     var _associatedChannel: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _buffer: Nullable[
         String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
       ] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _bufferView: Nullable[js.typedarray.ArrayBufferView] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _bufferViewArray: Nullable[js.Array[js.typedarray.ArrayBufferView]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _bufferViewArrayArray: Nullable[js.Array[js.Array[js.typedarray.ArrayBufferView]]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedCoordinatesMode: Nullable[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _compression: Nullable[String] = js.native
     
     /* private */ var _engine: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _extension: String = js.native
     
-    /** @hidden */
+    /** @internal */
     var _files: Nullable[js.Array[String]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gammaSpace: Nullable[Boolean] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _hardwareTexture: Nullable[HardwareTextureWrapper] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _invertVScale: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _irradianceTexture: Nullable[BaseTexture] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _isDisabled: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _isRGBD: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _linearSpecularLOD: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _lodGenerationOffset: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _lodGenerationScale: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _lodTextureHigh: Nullable[BaseTexture] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _lodTextureLow: Nullable[BaseTexture] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _lodTextureMid: Nullable[BaseTexture] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _maxLodLevel: Nullable[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _originalUrl: String = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _references: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _size: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _source: InternalTextureSource = js.native
     
-    /** @hidden */
+    /** @internal */
     var _sphericalPolynomial: Nullable[SphericalPolynomial] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _sphericalPolynomialComputed: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _sphericalPolynomialPromise: Nullable[js.Promise[SphericalPolynomial]] = js.native
     
     /**
-      * @param target
-      * @param swapAll
-      * @hidden
+      * @internal
       */
     def _swapAndDie(target: InternalTexture): Unit = js.native
     def _swapAndDie(target: InternalTexture, swapAll: Boolean): Unit = js.native
     
     /* private */ var _uniqueId: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _useSRGBBuffer: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _workingCanvas: Nullable[ICanvas] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _workingContext: Nullable[ICanvasRenderingContext] = js.native
     
     /**
@@ -286,7 +284,7 @@ object internalTextureMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Materials/Textures/internalTexture", "InternalTexture._Counter")
     @js.native
     def _Counter: Double = js.native

@@ -9,12 +9,12 @@ trait PBRAnisotropicConfiguration
   extends StObject
      with MaterialPluginBase {
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: Any = js.native
   
   /* private */ var _isEnabled: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
   
   /* private */ var _texture: Any = js.native

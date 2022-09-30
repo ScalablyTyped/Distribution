@@ -9,11 +9,6 @@ trait WebSource extends StObject {
   // Docs: https://electronjs.org/docs/api/structures/web-source
   var code: String
   
-  /**
-    * Default is 1.
-    */
-  var startLine: js.UndefOr[Double] = js.undefined
-  
   var url: js.UndefOr[String] = js.undefined
 }
 object WebSource {
@@ -26,10 +21,6 @@ object WebSource {
   extension [Self <: WebSource](x: Self) {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-    
-    inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
-    
-    inline def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

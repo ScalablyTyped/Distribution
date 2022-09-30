@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.Waypoint")
 @js.native
-class Waypoint_ protected () extends StObject {
+open class Waypoint_ protected () extends StObject {
   def this(latLng: LatLng_, name: String, options: WaypointOptions) = this()
   
   var latLng: LatLng_ = js.native

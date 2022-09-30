@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk
 
 import typings.eventsource.mod.^
+import typings.mendixmodelsdk.abstractModelMod.IExportMpkResponse
 import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
@@ -8,8 +9,6 @@ import typings.mendixmodelsdk.configurationMod.configuration.ICreateWorkingCopyF
 import typings.mendixmodelsdk.configurationMod.configuration.ICreateWorkingCopyParameters
 import typings.mendixmodelsdk.deltasDeltasMod.Delta
 import typings.mendixmodelsdk.transportInterfacesMod.ICommitToTeamServerOptions
-import typings.mendixmodelsdk.transportInterfacesMod.IDeployJobStatus
-import typings.mendixmodelsdk.transportInterfacesMod.IEnvironmentStatus
 import typings.mendixmodelsdk.transportInterfacesMod.IGetFilesOptions
 import typings.mendixmodelsdk.transportInterfacesMod.ILoadUnitInterfacesResponse
 import typings.mendixmodelsdk.transportInterfacesMod.ILoadUnitResponse
@@ -81,7 +80,12 @@ object imodelserverclientMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    def exportMpk(workingCopyId: String, outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
+    def exportMpk(
+      workingCopyId: String,
+      outFilePath: String,
+      callback: ICallback[IExportMpkResponse],
+      errorCallback: IErrorCallback
+    ): Unit = js.native
     
     /**
       * Returns a list of unitIds that contains a specific custom widget
@@ -90,20 +94,6 @@ object imodelserverclientMod {
       workingCopyId: String,
       widgetId: String,
       callback: ICallback[js.Array[String]],
-      errorCallback: IErrorCallback
-    ): Unit = js.native
-    
-    def getAppEnvironmentStatus(workingCopyId: String, callback: ICallback[IEnvironmentStatus], errorCallback: IErrorCallback): Unit = js.native
-    
-    def getAppEnvironmentStatusV2(workingCopyId: String, callback: ICallback[IEnvironmentStatus], errorCallback: IErrorCallback): Unit = js.native
-    
-    /**
-      * Retrieves App Job by jobId
-      */
-    def getAppUpdateStatus(
-      workingCopyId: String,
-      jobId: String,
-      callback: ICallback[IDeployJobStatus],
       errorCallback: IErrorCallback
     ): Unit = js.native
     
@@ -256,10 +246,12 @@ object imodelserverclientMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    /**
-      * Start async deploy flow, creates new app job and returns it
-      */
-    def startAppUpdate(workingCopyId: String, callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
+    def setWorkingCopyMembers(
+      workingCopyId: String,
+      memberOpenIds: js.Array[String],
+      callback: IVoidCallback,
+      errorCallback: IErrorCallback
+    ): Unit = js.native
     
     def unlockWorkingCopy(workingCopyId: String, lockType: Unit, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
     /**
@@ -279,11 +271,11 @@ object imodelserverclientMod {
     
     var eventId: Double
     
-    var firstError: js.Any
+    var firstError: Any
   }
   object ISendDeltasResult {
     
-    inline def apply(eventId: Double, firstError: js.Any): ISendDeltasResult = {
+    inline def apply(eventId: Double, firstError: Any): ISendDeltasResult = {
       val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], firstError = firstError.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISendDeltasResult]
     }
@@ -292,7 +284,7 @@ object imodelserverclientMod {
       
       inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
-      inline def setFirstError(value: js.Any): Self = StObject.set(x, "firstError", value.asInstanceOf[js.Any])
+      inline def setFirstError(value: Any): Self = StObject.set(x, "firstError", value.asInstanceOf[js.Any])
     }
   }
 }

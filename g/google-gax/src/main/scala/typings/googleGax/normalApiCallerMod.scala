@@ -9,7 +9,7 @@ object normalApiCallerMod {
   
   @JSImport("google-gax/build/src/normalCalls/normalApiCaller", "NormalApiCaller")
   @js.native
-  class NormalApiCaller ()
+  open class NormalApiCaller ()
     extends StObject
        with APICaller
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InsertCSSOptions extends StObject {
   
   /**
-    * Can be either 'user' or 'author'; Specifying 'user' enables you to prevent
-    * websites from overriding the CSS you insert. Default is 'author'.
+    * Can be either 'user' or 'author'. Sets the cascade origin of the inserted
+    * stylesheet. Default is 'author'.
     */
   var cssOrigin: js.UndefOr[String] = js.undefined
 }

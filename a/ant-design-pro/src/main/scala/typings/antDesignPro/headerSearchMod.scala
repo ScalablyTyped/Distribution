@@ -10,10 +10,9 @@ object headerSearchMod {
   
   @JSImport("ant-design-pro/lib/HeaderSearch", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HeaderSearchProps, js.Any, js.Any]
+  open class default () extends Component[HeaderSearchProps, Any, Any]
   
-  type HeaderSearch = Component[HeaderSearchProps, js.Any, js.Any]
+  type HeaderSearch = Component[HeaderSearchProps, Any, Any]
   
   trait HeaderSearchProps extends StObject {
     
@@ -54,7 +53,7 @@ object headerSearchMod {
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: String*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: String*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       

@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object importmappingsMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/importmappings", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/importmappings", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
@@ -44,9 +44,9 @@ object importmappingsMod {
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.mappingsMod.mappings.IMappingDocument because Already inherited
-    - typings.mendixmodelsdk.importmappingsMod.importmappings.IImportMapping because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportMapping")
+    - typings.mendixmodelsdk.importmappingsMod.importmappings.IImportMapping because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportMapping")
     @js.native
-    class ImportMapping protected () extends MappingDocument {
+    open class ImportMapping protected () extends MappingDocument {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -78,7 +78,7 @@ object importmappingsMod {
     }
     object ImportMapping {
       
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportMapping")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportMapping")
       @js.native
       val ^ : js.Any = js.native
       
@@ -90,13 +90,13 @@ object importmappingsMod {
       inline def createIn(container: IFolderBase): ImportMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ImportMapping]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportMapping.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportMapping.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportMapping.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportMapping.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -105,9 +105,9 @@ object importmappingsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/import-mappings relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportObjectMappingElement")
+    @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportObjectMappingElement")
     @js.native
-    class ImportObjectMappingElement protected () extends ObjectMappingElement {
+    open class ImportObjectMappingElement protected () extends ObjectMappingElement {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -119,7 +119,7 @@ object importmappingsMod {
     }
     object ImportObjectMappingElement {
       
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportObjectMappingElement")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportObjectMappingElement")
       @js.native
       val ^ : js.Any = js.native
       
@@ -148,13 +148,13 @@ object importmappingsMod {
       inline def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): ImportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInObjectMappingElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ImportObjectMappingElement]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportObjectMappingElement.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportObjectMappingElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportObjectMappingElement.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportObjectMappingElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -163,9 +163,9 @@ object importmappingsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/import-mappings relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportValueMappingElement")
+    @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportValueMappingElement")
     @js.native
-    class ImportValueMappingElement protected () extends ValueMappingElement {
+    open class ImportValueMappingElement protected () extends ValueMappingElement {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -177,7 +177,7 @@ object importmappingsMod {
     }
     object ImportValueMappingElement {
       
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportValueMappingElement")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportValueMappingElement")
       @js.native
       val ^ : js.Any = js.native
       
@@ -198,13 +198,13 @@ object importmappingsMod {
       inline def createIn(container: ObjectMappingElement): ImportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ImportValueMappingElement]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportValueMappingElement.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportValueMappingElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/importmappings", "importmappings.ImportValueMappingElement.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/importmappings", "importmappings.ImportValueMappingElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

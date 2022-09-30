@@ -43,88 +43,6 @@ object mod {
     /* "right" */ val Right: typings.nukaCarousel.typesMod.Alignment.Right & String = js.native
   }
   
-  @JSImport("nuka-carousel", "D3EasingFunctions")
-  @js.native
-  object D3EasingFunctions extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.nukaCarousel.typesMod.D3EasingFunctions & String] = js.native
-    
-    /* "easeBack" */ val EaseBack: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBack & String = js.native
-    
-    /* "easeBackIn" */ val EaseBackIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBackIn & String = js.native
-    
-    /* "easeBackInOut" */ val EaseBackInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBackInOut & String = js.native
-    
-    /* "easeBackOut" */ val EaseBackOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBackOut & String = js.native
-    
-    /* "easeBounce" */ val EaseBounce: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBounce & String = js.native
-    
-    /* "easeBounceIn" */ val EaseBounceIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBounceIn & String = js.native
-    
-    /* "easeBounceInOut" */ val EaseBounceInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBounceInOut & String = js.native
-    
-    /* "easeBounceOut" */ val EaseBounceOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseBounceOut & String = js.native
-    
-    /* "easeCircle" */ val EaseCircle: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCircle & String = js.native
-    
-    /* "easeCircleIn" */ val EaseCircleIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCircleIn & String = js.native
-    
-    /* "easeCircleInOut" */ val EaseCircleInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCircleInOut & String = js.native
-    
-    /* "easeCircleOut" */ val EaseCircleOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCircleOut & String = js.native
-    
-    /* "easeCubic" */ val EaseCubic: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCubic & String = js.native
-    
-    /* "easeCubicIn" */ val EaseCubicIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCubicIn & String = js.native
-    
-    /* "easeCubicInOut" */ val EaseCubicInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCubicInOut & String = js.native
-    
-    /* "easeCubicOut" */ val EaseCubicOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseCubicOut & String = js.native
-    
-    /* "easeElastic" */ val EaseElastic: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseElastic & String = js.native
-    
-    /* "easeElasticIn" */ val EaseElasticIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseElasticIn & String = js.native
-    
-    /* "easeElasticInOut" */ val EaseElasticInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseElasticInOut & String = js.native
-    
-    /* "easeElasticOut" */ val EaseElasticOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseElasticOut & String = js.native
-    
-    /* "easeExp" */ val EaseExp: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseExp & String = js.native
-    
-    /* "easeExpIn" */ val EaseExpIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseExpIn & String = js.native
-    
-    /* "easeExpInOut" */ val EaseExpInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseExpInOut & String = js.native
-    
-    /* "easeExpOut" */ val EaseExpOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseExpOut & String = js.native
-    
-    /* "easeLinear" */ val EaseLinear: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseLinear & String = js.native
-    
-    /* "easePoly" */ val EasePoly: typings.nukaCarousel.typesMod.D3EasingFunctions.EasePoly & String = js.native
-    
-    /* "easePolyIn" */ val EasePolyIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EasePolyIn & String = js.native
-    
-    /* "easePolyInOut" */ val EasePolyInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EasePolyInOut & String = js.native
-    
-    /* "easePolyOut" */ val EasePolyOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EasePolyOut & String = js.native
-    
-    /* "easeQuad" */ val EaseQuad: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseQuad & String = js.native
-    
-    /* "easeQuadIn" */ val EaseQuadIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseQuadIn & String = js.native
-    
-    /* "easeQuadInOut" */ val EaseQuadInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseQuadInOut & String = js.native
-    
-    /* "easeQuadOut" */ val EaseQuadOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseQuadOut & String = js.native
-    
-    /* "easeSin" */ val EaseSin: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseSin & String = js.native
-    
-    /* "easeSinIn" */ val EaseSinIn: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseSinIn & String = js.native
-    
-    /* "easeSinInOut" */ val EaseSinInOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseSinInOut & String = js.native
-    
-    /* "easeSinOut" */ val EaseSinOut: typings.nukaCarousel.typesMod.D3EasingFunctions.EaseSinOut & String = js.native
-  }
-  
   @JSImport("nuka-carousel", "Directions")
   @js.native
   object Directions extends StObject {
@@ -141,9 +59,13 @@ object mod {
     /* "up" */ val Up: typings.nukaCarousel.typesMod.Directions.Up & String = js.native
   }
   
-  inline def NextButton(props: ControlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NextButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NextButton(
+    hasNextSlideHasNextButtonClassNameNextButtonStyleNextButtonTextNextButtonOnClickDisabledOnUserNavigation: ControlProps
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NextButton")(hasNextSlideHasNextButtonClassNameNextButtonStyleNextButtonTextNextButtonOnClickDisabledOnUserNavigation.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def PagingDots(props: ControlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PagingDots")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PagingDots(
+    hasPagingDotsIndicesHasPagingDotsContainerClassNamePagingDotsClassNamePagingDotsStylePagingDotsOnClickCurrentSlideOnUserNavigationSlideCountGoToSlide: ControlProps
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PagingDots")(hasPagingDotsIndicesHasPagingDotsContainerClassNamePagingDotsClassNamePagingDotsStylePagingDotsOnClickCurrentSlideOnUserNavigationSlideCountGoToSlide.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("nuka-carousel", "Positions")
   @js.native
@@ -171,7 +93,9 @@ object mod {
     /* "TopRight" */ val TopRight: typings.nukaCarousel.typesMod.Positions.TopRight & String = js.native
   }
   
-  inline def PreviousButton(props: ControlProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreviousButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PreviousButton(
+    hasPreviousSlideHasPrevButtonClassNamePrevButtonStylePrevButtonTextPrevButtonOnClickOnUserNavigationDisabled: ControlProps
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PreviousButton")(hasPreviousSlideHasPrevButtonClassNamePrevButtonStylePrevButtonTextPrevButtonOnClickOnUserNavigationDisabled.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("nuka-carousel", "ScrollMode")
   @js.native

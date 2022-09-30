@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Center extends StObject {
   
-  val center: typings.vegaLite.vegaLiteNumbers.`1`
+  val center: typings.vegaLite.vegaLiteInts.`1`
   
-  val normalize: typings.vegaLite.vegaLiteNumbers.`1`
+  val normalize: typings.vegaLite.vegaLiteInts.`1`
   
-  val zero: typings.vegaLite.vegaLiteNumbers.`1`
+  val zero: typings.vegaLite.vegaLiteInts.`1`
 }
 object Center {
   
@@ -21,10 +21,10 @@ object Center {
   
   extension [Self <: Center](x: Self) {
     
-    inline def setCenter(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    inline def setNormalize(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    inline def setNormalize(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
-    inline def setZero(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+    inline def setZero(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
   }
 }

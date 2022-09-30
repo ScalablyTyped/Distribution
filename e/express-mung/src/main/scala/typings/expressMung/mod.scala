@@ -5,6 +5,7 @@ import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.node.bufferMod.global.Buffer
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -184,7 +185,7 @@ object mod {
       Record[String, Any]
     ], 
     /* response */ Response_[Any, Record[String, Any]], 
-    js.Thenable[Any]
+    PromiseLike[Any]
   ]
   
   type TransformChunk = js.Function4[
@@ -222,6 +223,6 @@ object mod {
       Record[String, Any]
     ], 
     /* response */ Response_[Any, Record[String, Any]], 
-    js.Thenable[Any]
+    PromiseLike[Any]
   ]
 }

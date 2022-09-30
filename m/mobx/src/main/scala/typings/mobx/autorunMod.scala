@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object autorunMod {
   
-  @JSImport("mobx/lib/api/autorun", JSImport.Namespace)
+  @JSImport("mobx/dist/api/autorun", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def autorun(view: js.Function1[/* r */ IReactionPublic, js.Any]): IReactionDisposer = ^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any]).asInstanceOf[IReactionDisposer]
-  inline def autorun(view: js.Function1[/* r */ IReactionPublic, js.Any], opts: IAutorunOptions): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
+  inline def autorun(view: js.Function1[/* r */ IReactionPublic, Any]): IReactionDisposer = ^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any]).asInstanceOf[IReactionDisposer]
+  inline def autorun(view: js.Function1[/* r */ IReactionPublic, Any], opts: IAutorunOptions): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(view.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
   
-  inline def reaction[T](
+  inline def reaction_true[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
-    effect: js.Function2[/* arg */ T, /* r */ IReactionPublic, Unit]
+    effect: js.Function3[/* arg */ T, /* prev */ js.UndefOr[T], /* r */ IReactionPublic, Unit]
   ): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("reaction")(expression.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
-  inline def reaction[T](
+  inline def reaction_true[T, FireImmediately /* <: Boolean */](
     expression: js.Function1[/* r */ IReactionPublic, T],
-    effect: js.Function2[/* arg */ T, /* r */ IReactionPublic, Unit],
-    opts: IReactionOptions
+    effect: js.Function3[/* arg */ T, /* prev */ js.UndefOr[T], /* r */ IReactionPublic, Unit],
+    opts: IReactionOptions[T, FireImmediately]
   ): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("reaction")(expression.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
   
   trait IAutorunOptions extends StObject {
@@ -32,7 +32,7 @@ object autorunMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
     
     /**
       * Experimental.
@@ -40,7 +40,7 @@ object autorunMod {
       */
     var requiresObservable: js.UndefOr[Boolean] = js.undefined
     
-    var scheduler: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], js.Any]] = js.undefined
+    var scheduler: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Any]] = js.undefined
   }
   object IAutorunOptions {
     
@@ -59,7 +59,7 @@ object autorunMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
@@ -67,35 +67,35 @@ object autorunMod {
       
       inline def setRequiresObservableUndefined: Self = StObject.set(x, "requiresObservable", js.undefined)
       
-      inline def setScheduler(value: /* callback */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
+      inline def setScheduler(value: /* callback */ js.Function0[Unit] => Any): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
       
       inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
     }
   }
   
-  trait IReactionOptions
+  trait IReactionOptions[T, FireImmediately /* <: Boolean */]
     extends StObject
        with IAutorunOptions {
     
     @JSName("equals")
-    var equals_FIReactionOptions: js.UndefOr[IEqualsComparer[js.Any]] = js.undefined
+    var equals_FIReactionOptions: js.UndefOr[IEqualsComparer[T]] = js.undefined
     
-    var fireImmediately: js.UndefOr[Boolean] = js.undefined
+    var fireImmediately: js.UndefOr[FireImmediately] = js.undefined
   }
   object IReactionOptions {
     
-    inline def apply(): IReactionOptions = {
+    inline def apply[T, FireImmediately /* <: Boolean */](): IReactionOptions[T, FireImmediately] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IReactionOptions]
+      __obj.asInstanceOf[IReactionOptions[T, FireImmediately]]
     }
     
-    extension [Self <: IReactionOptions](x: Self) {
+    extension [Self <: IReactionOptions[?, ?], T, FireImmediately /* <: Boolean */](x: Self & (IReactionOptions[T, FireImmediately])) {
       
-      inline def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (T, T) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
       inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      inline def setFireImmediately(value: Boolean): Self = StObject.set(x, "fireImmediately", value.asInstanceOf[js.Any])
+      inline def setFireImmediately(value: FireImmediately): Self = StObject.set(x, "fireImmediately", value.asInstanceOf[js.Any])
       
       inline def setFireImmediatelyUndefined: Self = StObject.set(x, "fireImmediately", js.undefined)
     }

@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalEditabilitySettings")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalEditabilitySettings")
 @js.native
-class ConditionalEditabilitySettings protected ()
+open class ConditionalEditabilitySettings protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings {
   def this(
     model: AbstractModel,
@@ -27,7 +27,7 @@ class ConditionalEditabilitySettings protected ()
 }
 object ConditionalEditabilitySettings {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalEditabilitySettings")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalEditabilitySettings")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +70,13 @@ object ConditionalEditabilitySettings {
   inline def createInCustomWidgetUnderConditionalEditabilitySettings(container: CustomWidget): typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalEditabilitySettings]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalEditabilitySettings.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalEditabilitySettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalEditabilitySettings.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalEditabilitySettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

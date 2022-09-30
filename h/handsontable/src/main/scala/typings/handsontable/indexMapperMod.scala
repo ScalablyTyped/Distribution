@@ -1,7 +1,7 @@
 package typings.handsontable
 
-import typings.handsontable.handsontableNumbers.`-1`
-import typings.handsontable.handsontableNumbers.`1`
+import typings.handsontable.handsontableInts.`-1`
+import typings.handsontable.handsontableInts.`1`
 import typings.handsontable.handsontableStrings.hiding
 import typings.handsontable.handsontableStrings.insert
 import typings.handsontable.handsontableStrings.remove

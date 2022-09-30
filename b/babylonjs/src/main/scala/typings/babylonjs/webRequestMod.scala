@@ -148,7 +148,7 @@ object webRequestMod {
       listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], Any],
       options: AddEventListenerOptions
     ): Unit = js.native
-    /** @hidden */
+    /** @internal */
     @JSName("addEventListener")
     def addEventListener_readystatechange(
       `type`: readystatechange,
@@ -313,7 +313,7 @@ object webRequestMod {
       listener: js.ThisFunction1[/* this */ XMLHttpRequest, /* ev */ ProgressEvent[XMLHttpRequestEventTarget], Any],
       options: EventListenerOptions
     ): Unit = js.native
-    /** @hidden */
+    /** @internal */
     @JSName("removeEventListener")
     def removeEventListener_readystatechange(
       `type`: readystatechange,

@@ -37,7 +37,7 @@ trait Collection[T]
   
   def filter(callback: ItemTestCallback[T]): Collection[T] = js.native
   @JSName("filter")
-  def filter_S_T[S /* <: T */](callback: js.Function2[/* item */ T, /* index */ Double, /* is S */ Boolean]): Collection[S] = js.native
+  def filter_S[S /* <: T */](callback: js.Function2[/* item */ T, /* index */ Double, /* is S */ Boolean]): Collection[S] = js.native
   
   def find(callback: ItemTestCallback[T]): T = js.native
   

@@ -1,9 +1,7 @@
 package typings.typedQuerySelector
 
 import typings.typedQuerySelector.parserMod.Combinators
-import typings.typedQuerySelector.parserMod.Join
 import typings.typedQuerySelector.parserMod.PseudoClassesFirstChar
-import typings.typedQuerySelector.parserMod.Quotes
 import typings.typedQuerySelector.parserMod.Whitespace
 import typings.typedQuerySelector.strictMod.Digit
 import typings.typedQuerySelector.strictMod.LowerCaseLetter
@@ -81,12 +79,6 @@ object typedQuerySelectorStrings {
   inline def `9`: `9` = "9".asInstanceOf[`9`]
   
   @js.native
-  sealed trait Apostrophe
-    extends StObject
-       with Quotes
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  
-  @js.native
   sealed trait Carriagereturn
     extends StObject
        with Whitespace
@@ -97,12 +89,6 @@ object typedQuerySelectorStrings {
     extends StObject
        with Whitespace
   inline def Charactertabulation: Charactertabulation = "\t".asInstanceOf[Charactertabulation]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketHeadRightcurlybracketDollarLeftcurlybracketJoinLessthansignRestGreaterthansignRightcurlybracket
-    extends StObject
-       with Join[Any]
-  inline def DollarLeftcurlybracketHeadRightcurlybracketDollarLeftcurlybracketJoinLessthansignRestGreaterthansignRightcurlybracket: DollarLeftcurlybracketHeadRightcurlybracketDollarLeftcurlybracketJoinLessthansignRestGreaterthansignRightcurlybracket = "${Head}${Join<Rest>}".asInstanceOf[DollarLeftcurlybracketHeadRightcurlybracketDollarLeftcurlybracketJoinLessthansignRestGreaterthansignRightcurlybracket]
   
   @js.native
   sealed trait Formfeed
@@ -129,9 +115,7 @@ object typedQuerySelectorStrings {
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
-  sealed trait Quotationmark
-    extends StObject
-       with Quotes
+  sealed trait Quotationmark extends StObject
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native
@@ -148,9 +132,7 @@ object typedQuerySelectorStrings {
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
-  sealed trait _empty
-    extends StObject
-       with Join[Any]
+  sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native

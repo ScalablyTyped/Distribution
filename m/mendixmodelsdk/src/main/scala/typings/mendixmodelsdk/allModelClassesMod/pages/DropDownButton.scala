@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/button-widgets relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DropDownButton")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DropDownButton")
 @js.native
-class DropDownButton protected ()
+open class DropDownButton protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.DropDownButton {
   def this(
     model: AbstractModel,
@@ -33,7 +33,7 @@ class DropDownButton protected ()
 }
 object DropDownButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DropDownButton")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DropDownButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -607,13 +607,13 @@ object DropDownButton {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.DropDownButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DropDownButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DropDownButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DropDownButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DropDownButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DropDownButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

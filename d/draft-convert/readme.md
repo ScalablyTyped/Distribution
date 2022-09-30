@@ -1,7 +1,7 @@
 
 # Scala.js typings for draft-convert
 
-Typings are for version v2.1.5
+Typings are for version v2.1.10
 
 ## Library description:
 Extensibly serialize & deserialize Draft.js ContentState
@@ -10,10 +10,10 @@ Extensibly serialize & deserialize Draft.js ContentState
 | ------------------ | :-------------: |
 | Full name          | draft-convert |
 | Keywords           | draft, draftjs, draft-convert, convert |
-| # releases         | 7 |
-| # dependents       | 74 |
-| # downloads        | 2094084 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 322134.6666666667 |
+| # stars            | 470.0 |
 
 ## Links
 - [Homepage](https://github.com/HubSpot/draft-convert#readme)

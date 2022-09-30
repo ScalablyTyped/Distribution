@@ -18,7 +18,7 @@ object websocketConstructorMod {
   @js.native
   val defaultBinaryType: /* "nodebuffer" */ String = js.native
   
-  inline def nextTick(callback: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def nextTick(callback: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(scala.List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("engine.io-client/build/esm/transports/websocket-constructor", "usingBrowserWebSocket")
   @js.native

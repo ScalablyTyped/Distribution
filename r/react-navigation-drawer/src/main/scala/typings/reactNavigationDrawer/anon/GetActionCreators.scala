@@ -39,16 +39,16 @@ trait GetActionCreators extends StObject {
     NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
   ] = js.native
   
-  def getComponentForState(state: js.Any): NavigationComponent[
+  def getComponentForState(state: Any): NavigationComponent[
     js.Object, 
     NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]
   ] = js.native
   
-  def getPathAndParamsForState(state: js.Any): Params = js.native
+  def getPathAndParamsForState(state: Any): Params = js.native
   
-  var getScreenOptions: NavigationScreenOptionsGetter[js.Any] = js.native
+  var getScreenOptions: NavigationScreenOptionsGetter[Any] = js.native
   
-  def getStateForAction(action: NavigationAction): js.Any = js.native
-  def getStateForAction(action: NavigationAction, state: NavigationLeafRouteNaviga): js.Any = js.native
-  def getStateForAction(action: NavigationAction, state: NavigationLeafRouteNavigaIndex): js.Any = js.native
+  def getStateForAction(action: NavigationAction): Any = js.native
+  def getStateForAction(action: NavigationAction, state: NavigationLeafRouteNaviga): Any = js.native
+  def getStateForAction(action: NavigationAction, state: NavigationLeafRouteNavigaIndex): Any = js.native
 }

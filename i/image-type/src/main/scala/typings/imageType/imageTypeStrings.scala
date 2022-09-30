@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object imageTypeStrings {
   
   @js.native
+  sealed trait avif
+    extends StObject
+       with ImageFileExtension
+  inline def avif: avif = "avif".asInstanceOf[avif]
+  
+  @js.native
   sealed trait bmp
     extends StObject
        with ImageFileExtension

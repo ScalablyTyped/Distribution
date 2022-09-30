@@ -1,37 +1,24 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.pixiCore.mod.Buffer2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The Geometry represents a model. It consists of two components:
-  * - GeometryStyle - The structure of the model such as the attributes layout
-  * - GeometryData - the data of the model - this consists of buffers.
-  * This can include anything from positions, uvs, normals, colors etc.
-  *
-  * Geometry can be defined without passing in a style or data if required (thats how I prefer!)
-  *
-  * ```js
-  * let geometry = new PIXI.Geometry();
-  *
-  * geometry.addAttribute('positions', [0, 0, 100, 0, 100, 100, 0, 100], 2);
-  * geometry.addAttribute('uvs', [0,0,1,0,1,1,0,1],2)
-  * geometry.addIndex([0,1,2,1,3,2])
-  *
-  * ```
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Geometry")
 @js.native
-class Geometry ()
-  extends StObject
-     with typings.pixiJs.PIXI.Geometry {
-  def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer]) = this()
-  def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer], attributes: js.Any) = this()
-  def this(buffers: Unit, attributes: js.Any) = this()
+/**
+  * @param buffers - An array of buffers. optional.
+  * @param attributes - Of the geometry, optional structure of the attributes layout
+  */
+open class Geometry ()
+  extends typings.pixiCore.mod.Geometry {
+  def this(buffers: js.Array[Buffer2]) = this()
+  def this(buffers: js.Array[Buffer2], attributes: StringDictionary[typings.pixiCore.mod.Attribute]) = this()
+  def this(buffers: Unit, attributes: StringDictionary[typings.pixiCore.mod.Attribute]) = this()
 }
+/* static members */
 object Geometry {
   
   @JSImport("pixi.js", "Geometry")
@@ -39,12 +26,11 @@ object Geometry {
   val ^ : js.Any = js.native
   
   /**
-    * merges an array of geometries into a new single one
-    * geometry attribute styles must match for this operation to work
+    * Merges an array of geometries into a new single one.
     *
-    * @param {PIXI.Geometry[]} geometries - array of geometries to merge
-    * @returns {PIXI.Geometry} shiny new geometry!
+    * Geometry attribute styles must match for this operation to work.
+    * @param geometries - array of geometries to merge
+    * @returns - Shiny new geometry!
     */
-  /* static member */
-  inline def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Geometry]
+  inline def merge(geometries: js.Array[typings.pixiCore.mod.Geometry]): typings.pixiCore.mod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.Geometry]
 }

@@ -39,15 +39,11 @@ trait DeepEqual extends StObject {
   @JSName("equal")
   var equal_Original: FnCall = js.native
   
-  def ifError(value: Any): js.UndefOr[
-    /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ] = js.native
+  def ifError(value: Any): /* asserts value is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean = js.native
   @JSName("ifError")
   var ifError_Original: js.Function1[
     /* value */ Any, 
-    js.UndefOr[
-      /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-    ]
+    /* asserts value is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean
   ] = js.native
   
   def notDeepEqual(actual: Any, expected: Any): Unit = js.native

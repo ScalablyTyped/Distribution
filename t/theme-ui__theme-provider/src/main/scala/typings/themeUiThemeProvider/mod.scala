@@ -17,10 +17,6 @@ object mod {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    var components: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDXProviderComponents */ Any
-      ] = js.undefined
-    
     var theme: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ Any) | (js.Function1[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ /* outerTheme */ Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ Any
@@ -43,12 +39,6 @@ object mod {
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setComponents(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDXProviderComponents */ Any
-      ): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
-      
-      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
       inline def setTheme(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ Any) | (js.Function1[

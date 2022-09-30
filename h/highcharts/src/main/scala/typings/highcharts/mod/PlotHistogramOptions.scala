@@ -1,8 +1,8 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.highchartsNumbers.`0`
-import typings.highcharts.highchartsNumbers.`100`
+import typings.highcharts.highchartsInts.`0`
+import typings.highcharts.highchartsInts.`100`
 import typings.highcharts.highchartsStrings.`square-root`
 import typings.highcharts.highchartsStrings.rice
 import typings.highcharts.highchartsStrings.sturges

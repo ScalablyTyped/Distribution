@@ -13,11 +13,11 @@ object svgMod {
   object s {
     
     inline def apply(): Root = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Root]
-    inline def apply(selector: String, children: HChild*): Element = ^.asInstanceOf[js.Dynamic].apply(List(selector.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Element]
-    inline def apply(selector: String, properties: Unit, children: HChild*): Element = (^.asInstanceOf[js.Dynamic].apply((List(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Element]
-    inline def apply(selector: String, properties: HProperties, children: HChild*): Element = (^.asInstanceOf[js.Dynamic].apply((List(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Element]
-    inline def apply(selector: Null, children: HChild*): Root = ^.asInstanceOf[js.Dynamic].apply(List(selector.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Root]
-    inline def apply(selector: Unit, children: HChild*): Root = ^.asInstanceOf[js.Dynamic].apply(List(selector.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Root]
+    inline def apply(selector: String, children: HChild*): Element = ^.asInstanceOf[js.Dynamic].apply(scala.List(selector.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Element]
+    inline def apply(selector: String, properties: Unit, children: HChild*): Element = (^.asInstanceOf[js.Dynamic].apply((scala.List(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Element]
+    inline def apply(selector: String, properties: HProperties, children: HChild*): Element = (^.asInstanceOf[js.Dynamic].apply((scala.List(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Element]
+    inline def apply(selector: Null, children: HChild*): Root = ^.asInstanceOf[js.Dynamic].apply(scala.List(selector.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Root]
+    inline def apply(selector: Unit, children: HChild*): Root = ^.asInstanceOf[js.Dynamic].apply(scala.List(selector.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Root]
     
     @JSImport("hastscript/lib/svg", "s")
     @js.native

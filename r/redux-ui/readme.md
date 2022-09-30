@@ -10,10 +10,10 @@ UI state management for Redux and React
 | ------------------ | :-------------: |
 | Full name          | redux-ui |
 | Keywords           | react-component, redux, redux-ui, ui |
-| # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 35482 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1370.6666666666667 |
+| # stars            | 641.0 |
 
 ## Links
 - [Homepage](https://github.com/tonyhb/redux-ui#readme)

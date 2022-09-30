@@ -6,11 +6,11 @@ import typings.appiumAdb.anon.EDGE
 import typings.appiumAdb.anon.GSMACCEPT
 import typings.appiumAdb.anon.GSMVOICEDENIED
 import typings.appiumAdb.anon.POWERACOFF
-import typings.appiumAdb.appiumAdbNumbers.`0`
-import typings.appiumAdb.appiumAdbNumbers.`1`
-import typings.appiumAdb.appiumAdbNumbers.`2`
-import typings.appiumAdb.appiumAdbNumbers.`3`
-import typings.appiumAdb.appiumAdbNumbers.`4`
+import typings.appiumAdb.appiumAdbInts.`0`
+import typings.appiumAdb.appiumAdbInts.`1`
+import typings.appiumAdb.appiumAdbInts.`2`
+import typings.appiumAdb.appiumAdbInts.`3`
+import typings.appiumAdb.appiumAdbInts.`4`
 import typings.appiumAdb.appiumAdbStrings.acceleration
 import typings.appiumAdb.appiumAdbStrings.accept
 import typings.appiumAdb.appiumAdbStrings.call

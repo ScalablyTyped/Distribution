@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-saga__is
 
-Typings are for version 1.1.2
+Typings are for version 1.1.3
 
 ## Library description:
 Runtime type checking helpers
@@ -10,15 +10,15 @@ Runtime type checking helpers
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/is |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 24231140 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3288749.6666666665 |
+| # stars            | 22256.0 |
 
 ## Links
 - [Homepage](https://redux-saga.js.org/)
 - [Bugs](https://github.com/redux-saga/redux-saga/issues)
-- [Repository](https://github.com/redux-saga/redux-saga)
+- [Repository](https://github.com/redux-saga/redux-saga/tree/main)
 - [Npm](https://www.npmjs.com/package/%40redux-saga%2Fis)
     
 

@@ -1,14 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
+import typings.activexLibreoffice.activexLibreofficeInts.`1024`
+import typings.activexLibreoffice.activexLibreofficeInts.`1048576`
+import typings.activexLibreoffice.activexLibreofficeInts.`16`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2048`
+import typings.activexLibreoffice.activexLibreofficeInts.`256`
+import typings.activexLibreoffice.activexLibreofficeInts.`4096`
+import typings.activexLibreoffice.activexLibreofficeInts.`512`
+import typings.activexLibreoffice.activexLibreofficeInts.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SearchFlags {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`65536`
+    - typings.activexLibreoffice.activexLibreofficeInts.`16`
+    - typings.activexLibreoffice.activexLibreofficeInts.`256`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1024`
+    - typings.activexLibreoffice.activexLibreofficeInts.`512`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2048`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4096`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1048576`
   */
   trait Constants extends StObject
   object Constants {

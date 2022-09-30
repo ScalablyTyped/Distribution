@@ -4,11 +4,13 @@ import typings.nukaCarousel.anon.Count
 import typings.nukaCarousel.nukaCarouselStrings.fade
 import typings.nukaCarousel.nukaCarouselStrings.zoom
 import typings.react.mod.CSSProperties
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
+import typings.std.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,9 +53,9 @@ trait CarouselProps extends StObject {
   
   var dragging: js.UndefOr[Boolean] = js.undefined
   
-  var easing: js.UndefOr[D3EasingFunctions] = js.undefined
+  var easing: js.UndefOr[EasingFunction] = js.undefined
   
-  var edgeEasing: js.UndefOr[D3EasingFunctions] = js.undefined
+  var edgeEasing: js.UndefOr[EasingFunction] = js.undefined
   
   var enableKeyboardControls: js.UndefOr[Boolean] = js.undefined
   
@@ -65,21 +67,28 @@ trait CarouselProps extends StObject {
   
   var onDrag: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent])], 
+      /* e */ TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent]), 
       Unit
     ]
   ] = js.undefined
   
   var onDragEnd: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent])], 
+      /* e */ TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent]), 
       Unit
     ]
   ] = js.undefined
   
   var onDragStart: js.UndefOr[
     js.Function1[
-      /* e */ js.UndefOr[TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent])], 
+      /* e */ TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent]), 
+      Unit
+    ]
+  ] = js.undefined
+  
+  var onUserNavigation: js.UndefOr[
+    js.Function1[
+      /* e */ TouchEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], 
       Unit
     ]
   ] = js.undefined
@@ -207,11 +216,11 @@ object CarouselProps {
     
     inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
     
-    inline def setEasing(value: D3EasingFunctions): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: /* normalizedTime */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
     
     inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    inline def setEdgeEasing(value: D3EasingFunctions): Self = StObject.set(x, "edgeEasing", value.asInstanceOf[js.Any])
+    inline def setEdgeEasing(value: /* normalizedTime */ Double => Double): Self = StObject.set(x, "edgeEasing", js.Any.fromFunction1(value))
     
     inline def setEdgeEasingUndefined: Self = StObject.set(x, "edgeEasing", js.undefined)
     
@@ -231,23 +240,23 @@ object CarouselProps {
     
     inline def setKeyCodeConfigUndefined: Self = StObject.set(x, "keyCodeConfig", js.undefined)
     
-    inline def setOnDrag(
-      value: /* e */ js.UndefOr[TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent])] => Unit
-    ): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: /* e */ TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    inline def setOnDragEnd(
-      value: /* e */ js.UndefOr[TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent])] => Unit
-    ): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    inline def setOnDragEnd(value: /* e */ TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
-    inline def setOnDragStart(
-      value: /* e */ js.UndefOr[TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent])] => Unit
-    ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: /* e */ TouchEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+    
+    inline def setOnUserNavigation(
+      value: /* e */ TouchEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element] => Unit
+    ): Self = StObject.set(x, "onUserNavigation", js.Any.fromFunction1(value))
+    
+    inline def setOnUserNavigationUndefined: Self = StObject.set(x, "onUserNavigation", js.undefined)
     
     inline def setPauseOnHover(value: Boolean): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EntityConfiguration extends StObject {
   
   /**
-    * The identifier of a user or group in your Amazon Web Services SSO identity source. For example, a user ID could be an email.
+    * The identifier of a user or group in your IAM Identity Center identity source. For example, a user ID could be an email.
     */
   var EntityId: typings.awsSdk.kendraMod.EntityId
   

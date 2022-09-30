@@ -16,7 +16,7 @@ trait ExportDefaultDeclaration_
      with Standardized
      with Statement {
   
-  var declaration: TSDeclareFunction | FunctionDeclaration_ | ClassDeclaration_ | Expression
+  var declaration: TSDeclareFunction__ | FunctionDeclaration_ | ClassDeclaration_ | Expression
   
   var exportKind: js.UndefOr[value | Null] = js.undefined
   
@@ -25,7 +25,7 @@ trait ExportDefaultDeclaration_
 }
 object ExportDefaultDeclaration_ {
   
-  inline def apply(declaration: TSDeclareFunction | FunctionDeclaration_ | ClassDeclaration_ | Expression): ExportDefaultDeclaration_ = {
+  inline def apply(declaration: TSDeclareFunction__ | FunctionDeclaration_ | ClassDeclaration_ | Expression): ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[ExportDefaultDeclaration_]
@@ -33,7 +33,7 @@ object ExportDefaultDeclaration_ {
   
   extension [Self <: ExportDefaultDeclaration_](x: Self) {
     
-    inline def setDeclaration(value: TSDeclareFunction | FunctionDeclaration_ | ClassDeclaration_ | Expression): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    inline def setDeclaration(value: TSDeclareFunction__ | FunctionDeclaration_ | ClassDeclaration_ | Expression): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
     inline def setExportKind(value: value): Self = StObject.set(x, "exportKind", value.asInstanceOf[js.Any])
     

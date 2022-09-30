@@ -14,7 +14,7 @@ object mod {
     
     @JSImport("leaflet", "Control.Pan")
     @js.native
-    class Pan ()
+    open class Pan ()
       extends typings.leaflet.mod.Control_ {
       def this(options: PanControlOptions) = this()
       

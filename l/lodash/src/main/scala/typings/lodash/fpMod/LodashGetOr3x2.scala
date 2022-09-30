@@ -11,10 +11,7 @@ trait LodashGetOr3x2[TObject, TKey1 /* <: /* keyof TObject */ String */, TKey2 /
   
   def apply(defaultValue: __): LodashGetOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
   def apply(defaultValue: __, `object`: TObject): LodashGetOr3x6[TObject, TKey1, TKey2, TKey3] = js.native
-  def apply[TDefault](defaultValue: TDefault): (Exclude[
-    /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
-    Unit
-  ]) | TDefault = js.native
+  def apply[TDefault](defaultValue: TDefault): LodashGetOr3x3[TObject, TKey1, TKey2, TKey3, TDefault] = js.native
   def apply[TDefault](defaultValue: TDefault, `object`: TObject): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey1][TKey2][TKey3] */ js.Any, 
     Unit

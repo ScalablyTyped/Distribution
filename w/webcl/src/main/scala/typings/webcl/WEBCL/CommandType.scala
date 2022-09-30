@@ -1,41 +1,41 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x11F0`
-import typings.webcl.webclNumbers.`0x11F1`
-import typings.webcl.webclNumbers.`0x11F3`
-import typings.webcl.webclNumbers.`0x11F4`
-import typings.webcl.webclNumbers.`0x11F5`
-import typings.webcl.webclNumbers.`0x11F6`
-import typings.webcl.webclNumbers.`0x11F7`
-import typings.webcl.webclNumbers.`0x11F8`
-import typings.webcl.webclNumbers.`0x11F9`
-import typings.webcl.webclNumbers.`0x11FA`
-import typings.webcl.webclNumbers.`0x11FE`
-import typings.webcl.webclNumbers.`0x1201`
-import typings.webcl.webclNumbers.`0x1202`
-import typings.webcl.webclNumbers.`0x1203`
-import typings.webcl.webclNumbers.`0x1204`
+import typings.webcl.webclInts.`0x11F0`
+import typings.webcl.webclInts.`0x11F1`
+import typings.webcl.webclInts.`0x11F3`
+import typings.webcl.webclInts.`0x11F4`
+import typings.webcl.webclInts.`0x11F5`
+import typings.webcl.webclInts.`0x11F6`
+import typings.webcl.webclInts.`0x11F7`
+import typings.webcl.webclInts.`0x11F8`
+import typings.webcl.webclInts.`0x11F9`
+import typings.webcl.webclInts.`0x11FA`
+import typings.webcl.webclInts.`0x11FE`
+import typings.webcl.webclInts.`0x1201`
+import typings.webcl.webclInts.`0x1202`
+import typings.webcl.webclInts.`0x1203`
+import typings.webcl.webclInts.`0x1204`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_command_type */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x11F0`
-  - typings.webcl.webclNumbers.`0x11F1`
-  - typings.webcl.webclNumbers.`0x11F3`
-  - typings.webcl.webclNumbers.`0x11F4`
-  - typings.webcl.webclNumbers.`0x11F5`
-  - typings.webcl.webclNumbers.`0x11F6`
-  - typings.webcl.webclNumbers.`0x11F7`
-  - typings.webcl.webclNumbers.`0x11F8`
-  - typings.webcl.webclNumbers.`0x11F9`
-  - typings.webcl.webclNumbers.`0x11FA`
-  - typings.webcl.webclNumbers.`0x11FE`
-  - typings.webcl.webclNumbers.`0x1201`
-  - typings.webcl.webclNumbers.`0x1202`
-  - typings.webcl.webclNumbers.`0x1203`
-  - typings.webcl.webclNumbers.`0x1204`
+  - typings.webcl.webclInts.`0x11F0`
+  - typings.webcl.webclInts.`0x11F1`
+  - typings.webcl.webclInts.`0x11F3`
+  - typings.webcl.webclInts.`0x11F4`
+  - typings.webcl.webclInts.`0x11F5`
+  - typings.webcl.webclInts.`0x11F6`
+  - typings.webcl.webclInts.`0x11F7`
+  - typings.webcl.webclInts.`0x11F8`
+  - typings.webcl.webclInts.`0x11F9`
+  - typings.webcl.webclInts.`0x11FA`
+  - typings.webcl.webclInts.`0x11FE`
+  - typings.webcl.webclInts.`0x1201`
+  - typings.webcl.webclInts.`0x1202`
+  - typings.webcl.webclInts.`0x1203`
+  - typings.webcl.webclInts.`0x1204`
 */
 trait CommandType extends StObject
 object CommandType {

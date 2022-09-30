@@ -63,7 +63,7 @@ object webXRControllerPhysicsMod {
     /* private */ var _detachController: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * enable debugging - will show console outputs and the impostor mesh
       */
     def _enablePhysicsDebug(): Unit = js.native

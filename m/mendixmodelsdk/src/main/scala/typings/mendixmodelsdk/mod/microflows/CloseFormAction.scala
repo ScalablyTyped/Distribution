@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.CloseFormAction")
 @js.native
-class CloseFormAction protected ()
+open class CloseFormAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.CloseFormAction {
   def this(
     model: AbstractModel,

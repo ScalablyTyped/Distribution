@@ -36,13 +36,13 @@ object postProcessRenderEffectMod {
     /**
       * Attaches the effect on cameras
       * @param cameras The camera to attach to.
-      * @hidden
+      * @internal
       */
     def _attachCameras(cameras: js.Array[Camera]): Unit = js.native
     /**
       * Attaches the effect on cameras
       * @param cameras The camera to attach to.
-      * @hidden
+      * @internal
       */
     def _attachCameras(cameras: Camera): Unit = js.native
     
@@ -51,39 +51,39 @@ object postProcessRenderEffectMod {
     /**
       * Detaches the effect on cameras
       * @param cameras The camera to detach from.
-      * @hidden
+      * @internal
       */
     def _detachCameras(cameras: js.Array[Camera]): Unit = js.native
     /**
       * Detaches the effect on cameras
       * @param cameras The camera to detach from.
-      * @hidden
+      * @internal
       */
     def _detachCameras(cameras: Camera): Unit = js.native
     
     /**
       * Disables the effect on the given cameras
       * @param cameras The camera to disable.
-      * @hidden
+      * @internal
       */
     def _disable(cameras: Camera): Unit = js.native
     /**
       * Disables the effect on the given cameras
       * @param cameras The camera to disable.
-      * @hidden
+      * @internal
       */
     def _disable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
     
     /**
       * Enables the effect on given cameras
       * @param cameras The camera to enable.
-      * @hidden
+      * @internal
       */
     def _enable(cameras: Camera): Unit = js.native
     /**
       * Enables the effect on given cameras
       * @param cameras The camera to enable.
-      * @hidden
+      * @internal
       */
     def _enable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
     
@@ -93,7 +93,7 @@ object postProcessRenderEffectMod {
     
     /**
       * Name of the effect
-      * @hidden
+      * @internal
       */
     var _name: String = js.native
     
@@ -103,7 +103,7 @@ object postProcessRenderEffectMod {
     
     /**
       * Updates the current state of the effect
-      * @hidden
+      * @internal
       */
     def _update(): Unit = js.native
     

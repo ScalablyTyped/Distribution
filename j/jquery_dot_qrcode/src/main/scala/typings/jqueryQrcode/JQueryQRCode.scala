@@ -1,10 +1,10 @@
 package typings.jqueryQrcode
 
-import typings.jqueryQrcode.jqueryQrcodeNumbers.`0`
-import typings.jqueryQrcode.jqueryQrcodeNumbers.`1`
-import typings.jqueryQrcode.jqueryQrcodeNumbers.`2`
-import typings.jqueryQrcode.jqueryQrcodeNumbers.`3`
-import typings.jqueryQrcode.jqueryQrcodeNumbers.`4`
+import typings.jqueryQrcode.jqueryQrcodeInts.`0`
+import typings.jqueryQrcode.jqueryQrcodeInts.`1`
+import typings.jqueryQrcode.jqueryQrcodeInts.`2`
+import typings.jqueryQrcode.jqueryQrcodeInts.`3`
+import typings.jqueryQrcode.jqueryQrcodeInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object JQueryQRCode {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.jqueryQrcode.jqueryQrcodeNumbers.`0`
-    - typings.jqueryQrcode.jqueryQrcodeNumbers.`1`
-    - typings.jqueryQrcode.jqueryQrcodeNumbers.`2`
-    - typings.jqueryQrcode.jqueryQrcodeNumbers.`3`
-    - typings.jqueryQrcode.jqueryQrcodeNumbers.`4`
+    - typings.jqueryQrcode.jqueryQrcodeInts.`0`
+    - typings.jqueryQrcode.jqueryQrcodeInts.`1`
+    - typings.jqueryQrcode.jqueryQrcodeInts.`2`
+    - typings.jqueryQrcode.jqueryQrcodeInts.`3`
+    - typings.jqueryQrcode.jqueryQrcodeInts.`4`
   */
   trait Mode extends StObject
   object Mode {

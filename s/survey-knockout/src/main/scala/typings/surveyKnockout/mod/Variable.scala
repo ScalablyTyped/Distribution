@@ -15,15 +15,3 @@ open class Variable protected () extends Const {
   
   def variable: String = js.native
 }
-/* static members */
-object Variable {
-  
-  @JSImport("survey-knockout", "Variable")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("survey-knockout", "Variable.DisableConversionChar")
-  @js.native
-  def DisableConversionChar: String = js.native
-  inline def DisableConversionChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisableConversionChar")(x.asInstanceOf[js.Any])
-}

@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.electron.electronStrings.`app-cache`
 import typings.electron.electronStrings.`console-api`
 import typings.electron.electronStrings.deprecation
 import typings.electron.electronStrings.intervention
@@ -38,10 +37,10 @@ trait MessageDetails extends StObject {
   
   /**
     * The type of source for this message.  Can be `javascript`, `xml`, `network`,
-    * `console-api`, `storage`, `app-cache`, `rendering`, `security`, `deprecation`,
-    * `worker`, `violation`, `intervention`, `recommendation` or `other`.
+    * `console-api`, `storage`, `rendering`, `security`, `deprecation`, `worker`,
+    * `violation`, `intervention`, `recommendation` or `other`.
     */
-  var source: javascript | xml | network | `console-api` | storage | `app-cache` | rendering | security | deprecation | worker | violation | intervention | recommendation | other
+  var source: javascript | xml | network | `console-api` | storage | rendering | security | deprecation | worker | violation | intervention | recommendation | other
   
   /**
     * The URL the message came from
@@ -59,7 +58,7 @@ object MessageDetails {
     level: Double,
     lineNumber: Double,
     message: String,
-    source: javascript | xml | network | `console-api` | storage | `app-cache` | rendering | security | deprecation | worker | violation | intervention | recommendation | other,
+    source: javascript | xml | network | `console-api` | storage | rendering | security | deprecation | worker | violation | intervention | recommendation | other,
     sourceUrl: String,
     versionId: Double
   ): MessageDetails = {
@@ -76,7 +75,7 @@ object MessageDetails {
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setSource(
-      value: javascript | xml | network | `console-api` | storage | `app-cache` | rendering | security | deprecation | worker | violation | intervention | recommendation | other
+      value: javascript | xml | network | `console-api` | storage | rendering | security | deprecation | worker | violation | intervention | recommendation | other
     ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])

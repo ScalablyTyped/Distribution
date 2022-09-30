@@ -465,6 +465,20 @@ trait Location extends Service {
   ): Request[GetMapTileResponse, AWSError] = js.native
   
   /**
+    * Finds a place by its unique ID. A PlaceId is returned by other search operations.  A PlaceId is valid only if all of the following are the same in the original search request and the call to GetPlace.   Customer AWS account   AWS Region   Data provider specified in the place index resource   
+    */
+  def getPlace(): Request[GetPlaceResponse, AWSError] = js.native
+  def getPlace(callback: js.Function2[/* err */ AWSError, /* data */ GetPlaceResponse, Unit]): Request[GetPlaceResponse, AWSError] = js.native
+  /**
+    * Finds a place by its unique ID. A PlaceId is returned by other search operations.  A PlaceId is valid only if all of the following are the same in the original search request and the call to GetPlace.   Customer AWS account   AWS Region   Data provider specified in the place index resource   
+    */
+  def getPlace(params: GetPlaceRequest): Request[GetPlaceResponse, AWSError] = js.native
+  def getPlace(
+    params: GetPlaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPlaceResponse, Unit]
+  ): Request[GetPlaceResponse, AWSError] = js.native
+  
+  /**
     * A batch request to retrieve all device positions.
     */
   def listDevicePositions(): Request[ListDevicePositionsResponse, AWSError] = js.native

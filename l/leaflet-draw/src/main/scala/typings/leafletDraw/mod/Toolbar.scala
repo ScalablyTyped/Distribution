@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Toolbar")
 @js.native
-class Toolbar () extends Class {
+open class Toolbar () extends Class {
   def this(options: ToolbarOptions) = this()
   
   def addToolbar(map: DrawMap): HTMLElement | Unit = js.native

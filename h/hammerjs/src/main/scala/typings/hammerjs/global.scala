@@ -1,10 +1,10 @@
 package typings.hammerjs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.hammerjs.hammerjsNumbers.`1`
-import typings.hammerjs.hammerjsNumbers.`2`
-import typings.hammerjs.hammerjsNumbers.`4`
-import typings.hammerjs.hammerjsNumbers.`8`
+import typings.hammerjs.hammerjsInts.`1`
+import typings.hammerjs.hammerjsInts.`2`
+import typings.hammerjs.hammerjsInts.`4`
+import typings.hammerjs.hammerjsInts.`8`
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.MouseEvent

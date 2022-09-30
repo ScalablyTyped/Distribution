@@ -1,6 +1,6 @@
 package typings.rtpParser.anon
 
-import typings.rtpParser.rtpParserNumbers.`90000`
+import typings.rtpParser.rtpParserInts.`90000`
 import typings.rtpParser.rtpParserStrings.A
 import typings.rtpParser.rtpParserStrings.MPA
 import org.scalablytyped.runtime.StObject

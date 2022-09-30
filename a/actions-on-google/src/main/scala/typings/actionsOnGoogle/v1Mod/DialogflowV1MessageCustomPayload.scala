@@ -1,6 +1,6 @@
 package typings.actionsOnGoogle.v1Mod
 
-import typings.actionsOnGoogle.actionsOnGoogleNumbers.`4`
+import typings.actionsOnGoogle.actionsOnGoogleInts.`4`
 import typings.actionsOnGoogle.commonMod.JsonObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

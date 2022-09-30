@@ -8,6 +8,7 @@ import typings.redux.mod.Reducer
 import typings.redux.mod.Store
 import typings.redux.mod.StoreEnhancer
 import typings.redux.mod.StoreEnhancerStoreCreator
+import typings.reduxFirstRouter.mod.Bag
 import typings.reduxFirstRouter.mod.ConfirmLeave
 import typings.reduxFirstRouter.mod.LocationState
 import typings.reduxFirstRouter.mod.Meta
@@ -105,8 +106,8 @@ object anon {
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       inline def setThunk(
-        value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState]) => js.Any | js.Promise[js.Any]
-      ): Self = StObject.set(x, "thunk", js.Any.fromFunction2(value))
+        value: (/* dispatch */ Dispatch[Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Any | js.Promise[Any]
+      ): Self = StObject.set(x, "thunk", js.Any.fromFunction3(value))
       
       inline def setThunkUndefined: Self = StObject.set(x, "thunk", js.undefined)
       
@@ -124,9 +125,9 @@ object anon {
     
     var initialDispatch: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def middleware(api: MiddlewareAPI[Dispatch[AnyAction], js.Any]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+    def middleware(api: MiddlewareAPI[Dispatch[AnyAction], Any]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ Any, Any]]
     @JSName("middleware")
-    var middleware_Original: Middleware[js.Object, js.Any, Dispatch[AnyAction]]
+    var middleware_Original: Middleware[js.Object, Any, Dispatch[AnyAction]]
     
     def reducer(state: Unit, action: AnyAction): LocationState[TKeys, TState]
     def reducer(state: LocationState[TKeys, TState], action: AnyAction): LocationState[TKeys, TState]
@@ -139,7 +140,7 @@ object anon {
     
     inline def apply[TKeys, TState](
       enhancer: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[js.Object, js.Object],
-      middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], js.Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]],
+      middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ Any, Any]],
       reducer: (/* state */ js.UndefOr[LocationState[TKeys, TState]], AnyAction) => LocationState[TKeys, TState],
       thunk: Store[TState, AnyAction] => js.Promise[Nullable[RouteThunk[TState]]]
     ): Enhancer[TKeys, TState] = {
@@ -158,7 +159,7 @@ object anon {
       inline def setInitialDispatchUndefined: Self = StObject.set(x, "initialDispatch", js.undefined)
       
       inline def setMiddleware(
-        value: /* api */ MiddlewareAPI[Dispatch[AnyAction], js.Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+        value: /* api */ MiddlewareAPI[Dispatch[AnyAction], Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ Any, Any]]
       ): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
       
       inline def setReducer(

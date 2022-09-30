@@ -28,7 +28,7 @@ object arangodbGeneralGraphMod {
   
   inline def edgeDefinitions(relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_edgeDefinitions")(relations.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[EdgeDefinition]]
   
-  inline def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_extendEdgeDefinitions")(List(edgeDefinitions.asInstanceOf[js.Any]).`++`(relations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[EdgeDefinition]]
+  inline def extendEdgeDefinitions(edgeDefinitions: js.Array[EdgeDefinition], relations: EdgeDefinition*): js.Array[EdgeDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("_extendEdgeDefinitions")(scala.List(edgeDefinitions.asInstanceOf[js.Any]).`++`(relations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[EdgeDefinition]]
   
   inline def list(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_list")().asInstanceOf[js.Array[String]]
   

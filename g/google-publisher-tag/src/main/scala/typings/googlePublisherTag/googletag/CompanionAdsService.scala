@@ -18,7 +18,7 @@ trait CompanionAdsService
   /**
     * Sets whether companion slots that have not been filled will be
     * automatically backfilled.
-    * <br><br>
+    *
     * This method can be called multiple times during the page's lifetime to
     * turn backfill on and off.
     * Only slots that are also registered with the {@link PubAdsService} will be
@@ -28,8 +28,8 @@ trait CompanionAdsService
     * @example
     *   googletag.companionAds().setRefreshUnfilledSlots(true);
     *
-    * @param value <code>true</code> to automatically backfill unfilled slots,
-    *     <code>false</code> to leave them unchanged.
+    * @param value `true` to automatically backfill unfilled slots,
+    *     `false` to leave them unchanged.
     */
   def setRefreshUnfilledSlots(value: Boolean): Unit = js.native
 }

@@ -1,21 +1,21 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1110`
-import typings.webcl.webclNumbers.`0x1111`
-import typings.webcl.webclNumbers.`0x1112`
-import typings.webcl.webclNumbers.`0x1114`
-import typings.webcl.webclNumbers.`0x1115`
+import typings.webcl.webclInts.`0x1110`
+import typings.webcl.webclInts.`0x1111`
+import typings.webcl.webclInts.`0x1112`
+import typings.webcl.webclInts.`0x1114`
+import typings.webcl.webclInts.`0x1115`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_image_info */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1110`
-  - typings.webcl.webclNumbers.`0x1111`
-  - typings.webcl.webclNumbers.`0x1112`
-  - typings.webcl.webclNumbers.`0x1114`
-  - typings.webcl.webclNumbers.`0x1115`
+  - typings.webcl.webclInts.`0x1110`
+  - typings.webcl.webclInts.`0x1111`
+  - typings.webcl.webclInts.`0x1112`
+  - typings.webcl.webclInts.`0x1114`
+  - typings.webcl.webclInts.`0x1115`
 */
 trait ImageInfo extends StObject
 object ImageInfo {

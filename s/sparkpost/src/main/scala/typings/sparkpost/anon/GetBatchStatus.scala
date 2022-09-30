@@ -3,7 +3,6 @@ package typings.sparkpost.anon
 import typings.sparkpost.mod.Callback
 import typings.sparkpost.mod.Response
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.UpdateWebhook
 import typings.sparkpost.mod.Webhook
 import typings.sparkpost.mod.WebhookLinks
@@ -20,7 +19,7 @@ trait GetBatchStatus extends StObject {
     * @param options a hash of [webhook attributes]{@link https://developers.sparkpost.com/api/webhooks#header-webhooks-object-properties}
     * @returns The webhook id results
     */
-  def create(options: Webhook): ResultsPromise[WebhookLinksidstring] = js.native
+  def create(options: Webhook): js.Promise[Results[WebhookLinksidstring]] = js.native
   /**
     * Create a new webhook
     *
@@ -49,7 +48,7 @@ trait GetBatchStatus extends StObject {
     * @param [options] the timezone to use for the last_successful and last_failure properties
     * @returns The RelayWebhook results
     */
-  def get(id: String): ResultsPromise[WebhookLinks & Webhook] = js.native
+  def get(id: String): js.Promise[Results[WebhookLinks & Webhook]] = js.native
   /**
     * Retrieve details about a specified webhook by its id
     *
@@ -57,7 +56,7 @@ trait GetBatchStatus extends StObject {
     * @param callback The request callback with RelayWebhook results
     */
   def get(id: String, callback: ResultsCallback[WebhookLinks & Webhook]): Unit = js.native
-  def get(id: String, options: Timezone): ResultsPromise[WebhookLinks & Webhook] = js.native
+  def get(id: String, options: Timezone): js.Promise[Results[WebhookLinks & Webhook]] = js.native
   /**
     * Retrieve details about a specified webhook by its id
     *
@@ -81,7 +80,7 @@ trait GetBatchStatus extends StObject {
     * @param Maximum number of results to return. Defaults to 1000
     * @returns The status results
     */
-  def getBatchStatus(id: String, options: Limit): ResultsPromise[js.Array[Attempts]] = js.native
+  def getBatchStatus(id: String, options: Limit): js.Promise[Results[js.Array[Attempts]]] = js.native
   /**
     * Gets recent status information about a webhook.
     *
@@ -96,7 +95,7 @@ trait GetBatchStatus extends StObject {
     *
     * @returns The documentation results
     */
-  def getDocumentation(): ResultsPromise[Any] = js.native
+  def getDocumentation(): js.Promise[Results[Any]] = js.native
   /**
     * Lists descriptions of the events, event types, and event fields that could be included in a Webhooks post to your target URL.
     * @param callback The request callback containing documentation results
@@ -127,13 +126,13 @@ trait GetBatchStatus extends StObject {
     * List currently existing webhooks.the timezone to use for the last_successful and last_failure properties | Default: UTC
     *
     */
-  def list(): ResultsPromise[js.Array[WebhookLinks & Webhook]] = js.native
+  def list(): js.Promise[Results[js.Array[WebhookLinks & Webhook]]] = js.native
   /**
     * List currently existing webhooks.
     * @param callback The request callback with RelayWebhook results array
     */
   def list(callback: ResultsCallback[js.Array[WebhookLinks & Webhook]]): Unit = js.native
-  def list(options: Timezone): ResultsPromise[js.Array[WebhookLinks & Webhook]] = js.native
+  def list(options: Timezone): js.Promise[Results[js.Array[WebhookLinks & Webhook]]] = js.native
   /**
     * List currently existing webhooks.
     * @param options Object containing optional timezone
@@ -145,7 +144,7 @@ trait GetBatchStatus extends StObject {
     * Update an existing webhook
     *
     */
-  def update(id: String, options: UpdateWebhook): ResultsPromise[WebhookLinksidstring] = js.native
+  def update(id: String, options: UpdateWebhook): js.Promise[Results[WebhookLinksidstring]] = js.native
   /**
     * Update an existing webhook
     * @param id the id of the webhook to update
@@ -161,7 +160,7 @@ trait GetBatchStatus extends StObject {
     * @param options The message (payload) to send to the webhook consumer
     * @returns The validation results
     */
-  def validate(id: String, options: MessageAny): ResultsPromise[Msg] = js.native
+  def validate(id: String, options: MessageAny): js.Promise[Results[Msg]] = js.native
   /**
     * Sends an example message event batch from the Webhook API to the target URL
     *

@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DatabaseRetrieveSource")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DatabaseRetrieveSource")
 @js.native
-class DatabaseRetrieveSource protected () extends RetrieveSource {
+open class DatabaseRetrieveSource protected () extends RetrieveSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +44,7 @@ class DatabaseRetrieveSource protected () extends RetrieveSource {
 }
 object DatabaseRetrieveSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DatabaseRetrieveSource")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DatabaseRetrieveSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -65,13 +65,13 @@ object DatabaseRetrieveSource {
   inline def createIn(container: RetrieveAction): DatabaseRetrieveSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DatabaseRetrieveSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DatabaseRetrieveSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DatabaseRetrieveSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DatabaseRetrieveSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DatabaseRetrieveSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -19,22 +19,6 @@ object muiDatatablesStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `@media screen and Leftparenthesismax-widthColon 400pxRightparenthesis` extends StObject
-  inline def `@media screen and Leftparenthesismax-widthColon 400pxRightparenthesis`: `@media screen and Leftparenthesismax-widthColon 400pxRightparenthesis` = ("@media screen and (max-width: 400px)").asInstanceOf[`@media screen and Leftparenthesismax-widthColon 400pxRightparenthesis`]
-  
-  @js.native
-  sealed trait `@media screen and Leftparenthesismax-widthColon 480pxRightparenthesis` extends StObject
-  inline def `@media screen and Leftparenthesismax-widthColon 480pxRightparenthesis`: `@media screen and Leftparenthesismax-widthColon 480pxRightparenthesis` = ("@media screen and (max-width: 480px)").asInstanceOf[`@media screen and Leftparenthesismax-widthColon 480pxRightparenthesis`]
-  
-  @js.native
-  sealed trait `[themeDotbreakpointsDotdownLeftparenthesisApostrophesmApostropheRightparenthesis]` extends StObject
-  inline def `[themeDotbreakpointsDotdownLeftparenthesisApostrophesmApostropheRightparenthesis]`: `[themeDotbreakpointsDotdownLeftparenthesisApostrophesmApostropheRightparenthesis]` = "[theme.breakpoints.down('sm')]".asInstanceOf[`[themeDotbreakpointsDotdownLeftparenthesisApostrophesmApostropheRightparenthesis]`]
-  
-  @js.native
-  sealed trait `[themeDotbreakpointsDotdownLeftparenthesisApostrophexsApostropheRightparenthesis]` extends StObject
-  inline def `[themeDotbreakpointsDotdownLeftparenthesisApostrophexsApostropheRightparenthesis]`: `[themeDotbreakpointsDotdownLeftparenthesisApostrophexsApostropheRightparenthesis]` = "[theme.breakpoints.down('xs')]".asInstanceOf[`[themeDotbreakpointsDotdownLeftparenthesisApostrophexsApostropheRightparenthesis]`]
-  
-  @js.native
   sealed trait above extends StObject
   inline def above: above = "above".asInstanceOf[above]
   

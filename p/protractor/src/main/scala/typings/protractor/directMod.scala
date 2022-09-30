@@ -10,7 +10,7 @@ object directMod {
   
   @JSImport("protractor/built/driverProviders/direct", "Direct")
   @js.native
-  class Direct protected () extends DriverProvider {
+  open class Direct protected () extends DriverProvider {
     def this(config: Config) = this()
   }
 }

@@ -181,7 +181,7 @@ object materialsPbrIndexMod {
     /**
       * This defaults to 1.5 corresponding to a 0.04 f0 or a 4% reflectance at normal incidence
       * The default fits with a polyurethane material.
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/index", "PBRClearCoatConfiguration._DefaultIndexOfRefraction")
     @js.native
@@ -201,7 +201,7 @@ object materialsPbrIndexMod {
     /**
       * The default index of refraction of the thin-film layer.
       * Defaults to 1.3
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/index", "PBRIridescenceConfiguration._DefaultIndexOfRefraction")
     @js.native
@@ -210,7 +210,7 @@ object materialsPbrIndexMod {
     /**
       * The default maximum thickness of the thin-film layer given in nanometers (nm).
       * Defaults to 400 nm.
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/index", "PBRIridescenceConfiguration._DefaultMaximumThickness")
     @js.native
@@ -219,7 +219,7 @@ object materialsPbrIndexMod {
     /**
       * The default minimum thickness of the thin-film layer given in nanometers (nm).
       * Defaults to 100 nm.
-      * @hidden
+      * @internal
       */
     @JSImport("babylonjs/Materials/PBR/index", "PBRIridescenceConfiguration._DefaultMinimumThickness")
     @js.native

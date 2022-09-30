@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(cmp: List, to: List): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(cmp: typings.bufferCompare.mod.List, to: typings.bufferCompare.mod.List): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def apply[T](cmp: T, to: T): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("buffer-compare", JSImport.Namespace)
@@ -22,12 +22,12 @@ object mod {
   }
   object List {
     
-    inline def apply(length: Double): List = {
+    inline def apply(length: Double): typings.bufferCompare.mod.List = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.bufferCompare.mod.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.bufferCompare.mod.List](x: Self) {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

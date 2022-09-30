@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-brush-line" : "36.6.7"
+      "victory-brush-line" : "36.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-brush-line" : "36.6.7"
+      "victory-brush-line" : "36.6.8"
     }
   ],
   "compile-devDependencies" : [

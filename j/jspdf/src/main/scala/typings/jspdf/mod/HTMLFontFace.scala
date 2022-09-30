@@ -1,15 +1,15 @@
 package typings.jspdf.mod
 
 import typings.jspdf.anon.Format
-import typings.jspdf.jspdfNumbers.`100`
-import typings.jspdf.jspdfNumbers.`200`
-import typings.jspdf.jspdfNumbers.`300`
-import typings.jspdf.jspdfNumbers.`400`
-import typings.jspdf.jspdfNumbers.`500`
-import typings.jspdf.jspdfNumbers.`600`
-import typings.jspdf.jspdfNumbers.`700`
-import typings.jspdf.jspdfNumbers.`800`
-import typings.jspdf.jspdfNumbers.`900`
+import typings.jspdf.jspdfInts.`100`
+import typings.jspdf.jspdfInts.`200`
+import typings.jspdf.jspdfInts.`300`
+import typings.jspdf.jspdfInts.`400`
+import typings.jspdf.jspdfInts.`500`
+import typings.jspdf.jspdfInts.`600`
+import typings.jspdf.jspdfInts.`700`
+import typings.jspdf.jspdfInts.`800`
+import typings.jspdf.jspdfInts.`900`
 import typings.jspdf.jspdfStrings.`extra-condensed`
 import typings.jspdf.jspdfStrings.`extra-expanded`
 import typings.jspdf.jspdfStrings.`semi-condensed`

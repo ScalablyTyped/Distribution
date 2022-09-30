@@ -25,6 +25,6 @@ object IFileDescriptorSet {
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    inline def setFileVarargs(value: IFileDescriptorProto*): Self = StObject.set(x, "file", js.Array(value :_*))
+    inline def setFileVarargs(value: IFileDescriptorProto*): Self = StObject.set(x, "file", js.Array(value*))
   }
 }

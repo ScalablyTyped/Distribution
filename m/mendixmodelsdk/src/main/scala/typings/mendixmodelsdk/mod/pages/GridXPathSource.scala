@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.GridXPathSource")
 @js.native
-class GridXPathSource protected ()
+open class GridXPathSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GridXPathSource {
   def this(
     model: AbstractModel,

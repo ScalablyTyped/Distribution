@@ -1,6 +1,6 @@
 package typings.intlifyMessageCompiler.mod
 
-import typings.intlifyMessageCompiler.intlifyMessageCompilerNumbers.`0`
+import typings.intlifyMessageCompiler.intlifyMessageCompilerInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

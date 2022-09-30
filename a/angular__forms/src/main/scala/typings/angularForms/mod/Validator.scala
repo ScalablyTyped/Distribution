@@ -23,11 +23,11 @@ trait Validator extends StObject {
     * @returns A map of validation errors if validation fails,
     * otherwise null.
     */
-  def validate(control: AbstractControl): ValidationErrors | Null
+  def validate(control: AbstractControl[Any, Any]): ValidationErrors | Null
 }
 object Validator {
   
-  inline def apply(validate: AbstractControl => ValidationErrors | Null): Validator = {
+  inline def apply(validate: AbstractControl[Any, Any] => ValidationErrors | Null): Validator = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
     __obj.asInstanceOf[Validator]
   }
@@ -38,6 +38,6 @@ object Validator {
     
     inline def setRegisterOnValidatorChangeUndefined: Self = StObject.set(x, "registerOnValidatorChange", js.undefined)
     
-    inline def setValidate(value: AbstractControl => ValidationErrors | Null): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: AbstractControl[Any, Any] => ValidationErrors | Null): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

@@ -1,28 +1,18 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers._0xFFFFFFFF
-import typings.webcl.webclNumbers.`0x1`
-import typings.webcl.webclNumbers.`0x2`
-import typings.webcl.webclNumbers.`0x4`
-import typings.webcl.webclNumbers.`0x8`
+import typings.webcl.webclInts.`0x1`
+import typings.webcl.webclInts.`0x2`
+import typings.webcl.webclInts.`0x4`
+import typings.webcl.webclInts.`0x8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* cl_device_type - bitfield */
-/* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1`
-  - typings.webcl.webclNumbers.`0x2`
-  - typings.webcl.webclNumbers.`0x4`
-  - typings.webcl.webclNumbers.`0x8`
-  - typings.webcl.webclNumbers._0xFFFFFFFF
-*/
-trait DeviceTypeBits extends StObject
 object DeviceTypeBits {
   
   inline def DEVICE_TYPE_ACCELERATOR: `0x8` = 0x8.asInstanceOf[`0x8`]
   
-  inline def DEVICE_TYPE_ALL: _0xFFFFFFFF = 4294967295.0.asInstanceOf[_0xFFFFFFFF]
+  inline def DEVICE_TYPE_ALL: /* 0xFFFFFFFF */ Double = Double.asInstanceOf[/* 0xFFFFFFFF */ Double]
   
   inline def DEVICE_TYPE_CPU: `0x2` = 0x2.asInstanceOf[`0x2`]
   

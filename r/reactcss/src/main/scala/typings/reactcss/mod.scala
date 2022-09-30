@@ -18,7 +18,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](classes: Classes[T], activations: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(classes.asInstanceOf[js.Any]).`++`(activations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def default[T](classes: Classes[T], activations: Any*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(classes.asInstanceOf[js.Any]).`++`(activations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def hover[A](component: ComponentClass[A, ComponentState]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
   inline def hover[A](component: FunctionComponent[A]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]

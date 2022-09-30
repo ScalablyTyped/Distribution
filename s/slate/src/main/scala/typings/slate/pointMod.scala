@@ -3,9 +3,9 @@ package typings.slate
 import typings.slate.customTypesMod.ExtendedType
 import typings.slate.operationMod.Operation
 import typings.slate.pathMod.Path
-import typings.slate.slateNumbers.`-1`
-import typings.slate.slateNumbers.`0`
-import typings.slate.slateNumbers.`1`
+import typings.slate.slateInts.`-1`
+import typings.slate.slateInts.`0`
+import typings.slate.slateInts.`1`
 import typings.slate.slateStrings.anchor
 import typings.slate.slateStrings.focus
 import typings.slate.typesMod.TextDirection

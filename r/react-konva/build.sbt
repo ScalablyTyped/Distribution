@@ -1,15 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-konva"
-version := "17.0.0-0-afec2f"
-scalaVersion := "3.0.1"
+version := "18.2.2-1e9e7e"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "konva" % "7.1.9-0b5c72",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-0912f8",
+  "org.scalablytyped" %%% "konva" % "8.3.12-c99181",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-975e63",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-fc8273",
+  "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-f8a5d5",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-3fbb8c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

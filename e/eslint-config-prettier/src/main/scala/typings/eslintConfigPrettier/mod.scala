@@ -1,6 +1,6 @@
 package typings.eslintConfigPrettier
 
-import typings.eslintConfigPrettier.eslintConfigPrettierNumbers.`0`
+import typings.eslintConfigPrettier.eslintConfigPrettierInts.`0`
 import typings.eslintConfigPrettier.eslintConfigPrettierStrings.off
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

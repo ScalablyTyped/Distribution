@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object humanSignalsStrings {
   
   @js.native
-  sealed trait SIG$LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def SIG$LeftcurlybracketstringRightcurlybracket: SIG$LeftcurlybracketstringRightcurlybracket = "SIG${string}".asInstanceOf[SIG$LeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
   sealed trait ansi
     extends StObject
        with SignalStandard

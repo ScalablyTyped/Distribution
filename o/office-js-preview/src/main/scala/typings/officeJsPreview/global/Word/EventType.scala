@@ -17,6 +17,16 @@ object EventType extends StObject {
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.Word.EventType & String] = js.native
   
+  /* "CommentAdded" */ val commentAdded: typings.officeJsPreview.Word.EventType.commentAdded & String = js.native
+  
+  /* "CommentChanged" */ val commentChanged: typings.officeJsPreview.Word.EventType.commentChanged & String = js.native
+  
+  /* "CommentDeleted" */ val commentDeleted: typings.officeJsPreview.Word.EventType.commentDeleted & String = js.native
+  
+  /* "CommentDeselected" */ val commentDeselected: typings.officeJsPreview.Word.EventType.commentDeselected & String = js.native
+  
+  /* "CommentSelected" */ val commentSelected: typings.officeJsPreview.Word.EventType.commentSelected & String = js.native
+  
   /* "ContentControlAdded" */ val contentControlAdded: typings.officeJsPreview.Word.EventType.contentControlAdded & String = js.native
   
   /* "ContentControlDataChanged" */ val contentControlDataChanged: typings.officeJsPreview.Word.EventType.contentControlDataChanged & String = js.native

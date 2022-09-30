@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.DownloadItem")
 @js.native
-class DownloadItem ()
+open class DownloadItem ()
   extends typings.electron.Electron.DownloadItem

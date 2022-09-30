@@ -74,6 +74,7 @@ import typings.babylonjs.rayMod.TrianglePickingPredicate
 import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.renderingManagerMod.IRenderingManagerAutoClearSetup
 import typings.babylonjs.renderingManagerMod.RenderingGroupInfo
+import typings.babylonjs.renderingManagerMod.RenderingManager
 import typings.babylonjs.runtimeAnimationMod.RuntimeAnimation
 import typings.babylonjs.sceneComponentMod.CameraStageAction
 import typings.babylonjs.sceneComponentMod.CameraStageFrameBufferAction
@@ -133,33 +134,33 @@ object sceneMod {
     def this(engine: Engine) = this()
     def this(engine: Engine, options: SceneOptions) = this()
     
-    /** @hidden */
+    /** @internal */
     var _activeAnimatables: js.Array[Animatable] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _activeBones: PerfCounter = js.native
     
-    /** @hidden */
+    /** @internal */
     var _activeCamera: Nullable[Camera] = js.native
     
     /* private */ var _activeCameras: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _activeIndices: PerfCounter = js.native
     
     /* private */ var _activeMesh: Any = js.native
     
     /* private */ var _activeMeshes: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _activeMeshesFrozen: Boolean = js.native
     
     var _activeMeshesFrozenButKeepClipping: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _activeParticleSystems: SmartArray[IParticleSystem] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _activeParticles: PerfCounter = js.native
     
     /* private */ var _activeRequests: Any = js.native
@@ -167,7 +168,7 @@ object sceneMod {
     /* private */ var _activeSkeletons: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Add a component to the scene.
       * Note that the ccomponent could be registered on th next frame if this is called after
       * the register component stage.
@@ -176,129 +177,139 @@ object sceneMod {
     def _addComponent(component: ISceneComponent): Unit = js.native
     
     /**
-      * @param step
-      * @hidden
+      * @internal
       */
     def _advancePhysicsEngineStep(step: Double): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening just after the active camera has been drawn.
       */
     var _afterCameraDrawStage: Stage[CameraStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
+      * Defines the actions happening just after the post processing
+      */
+    var _afterCameraPostProcessStage: Stage[CameraStageAction] = js.native
+    
+    /**
+      * @internal
       * Defines the actions happening just after rendering all cameras and computing intersections.
       */
     var _afterRenderStage: Stage[SimpleStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening just after a render target has been drawn.
       */
     var _afterRenderTargetDrawStage: Stage[RenderTargetStageAction] = js.native
     
     /**
-      * @hidden
+      * Defines the actions happening just after the post processing on a render target
+      */
+    var _afterRenderTargetPostProcessStage: Stage[RenderTargetStageAction] = js.native
+    
+    /**
+      * @internal
       * Defines the actions happening just after a rendering group has been drawn.
       */
     var _afterRenderingGroupDrawStage: Stage[RenderingGroupStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening just after a mesh has been drawn.
       */
     var _afterRenderingMeshStage: Stage[RenderingMeshStageAction] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _allowPostProcessClearColor: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     def _animate(): Unit = js.native
     
     /* private */ var _animationPropertiesOverride: Any = js.native
     
     /* private */ var _animationRatio: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _animationTime: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _animationTimeLast: Double = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening just before the active camera is drawing.
       */
     var _beforeCameraDrawStage: Stage[CameraStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening before camera updates.
       */
     var _beforeCameraUpdateStage: Stage[SimpleStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening before clear the canvas.
       */
     var _beforeClearStage: Stage[SimpleStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening before evaluate active mesh checks.
       */
     var _beforeEvaluateActiveMeshStage: Stage[SimpleStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening before clear the canvas.
       */
     var _beforeRenderTargetClearStage: Stage[RenderTargetStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening just before a render target is drawing.
       */
     var _beforeRenderTargetDrawStage: Stage[RenderTargetStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening just before a rendering group is drawing.
       */
     var _beforeRenderingGroupDrawStage: Stage[RenderingGroupStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening just before a mesh is drawing.
       */
     var _beforeRenderingMeshStage: Stage[RenderingMeshStageAction] = js.native
     
     /* private */ var _bindFrameBuffer: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _blockEntityCollection: Boolean = js.native
     
     /* private */ var _blockMaterialDirtyMechanism: Any = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _boundingBoxRenderer: BoundingBoxRenderer = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedEffect: Nullable[Effect] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedMaterial: Nullable[Material] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedRayForTransform: Ray = js.native
     
-    /** @hidden */
+    /** @internal */
     var _cachedVisibility: Nullable[Double] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening during the per camera render target step.
       */
     var _cameraDrawRenderTargetStage: Stage[CameraStageFrameBufferAction] = js.native
@@ -308,8 +319,7 @@ object sceneMod {
     /* private */ var _checkIntersections: Any = js.native
     
     /**
-      * @param checkRenderTargets
-      * @hidden
+      * @internal
       */
     def _checkIsReady(): Unit = js.native
     def _checkIsReady(checkRenderTargets: Boolean): Unit = js.native
@@ -321,14 +331,14 @@ object sceneMod {
     /* private */ var _collisionCoordinator: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing store of defined scene components.
       */
     var _components: js.Array[ISceneComponent] = js.native
     
     /* private */ var _computePressureObserver: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createMultiviewUbo(): Unit = js.native
     
     /* private */ var _createUbo: Any = js.native
@@ -338,7 +348,7 @@ object sceneMod {
     /* private */ var _currentStepId: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing field
       */
     var _debugLayer: DebugLayer = js.native
@@ -351,15 +361,15 @@ object sceneMod {
     
     /* private */ var _defaultSubMeshCandidates: Any = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _depthPeelingRenderer: Nullable[DepthPeelingRenderer] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _depthRenderer: StringDictionary[DepthRenderer] = js.native
     
     /* private */ var _disposeList: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _edgeRenderLineShader: Nullable[ShaderMaterial] = js.native
     
     /* private */ var _engine: Any = js.native
@@ -369,7 +379,7 @@ object sceneMod {
     /* private */ var _evaluateSubMesh: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening during the evaluate sub mesh checks.
       */
     var _evaluateSubMeshStage: Stage[EvaluateSubMeshStageAction] = js.native
@@ -388,30 +398,30 @@ object sceneMod {
     
     /* private */ var _forcePointsCloud: Any = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _forceShowBoundingBoxes: Boolean = js.native
     
     /* private */ var _forceWireframe: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _forcedViewPosition: Nullable[Vector3] = js.native
     
     /* private */ var _frameId: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _frustumPlanes: js.Array[Plane] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gamepadManager: Nullable[GamepadManager] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening for one camera in the frame.
       */
     var _gatherActiveCameraRenderTargetsStage: Stage[RenderTargetsStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions when collecting render targets for the frame.
       */
     var _gatherRenderTargetsStage: Stage[RenderTargetsStageAction] = js.native
@@ -421,13 +431,13 @@ object sceneMod {
       */
     /* private */ var _geometriesByUniqueId: Any = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _geometryBufferRenderer: Nullable[GeometryBufferRenderer] = js.native
     
     /* private */ var _getByTags: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Gets a component from the scene.
       * @param name defines the name of the component to retrieve
       * @returns the component or null if not present
@@ -435,27 +445,26 @@ object sceneMod {
     def _getComponent(name: String): Nullable[ISceneComponent] = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _getDefaultMeshCandidates(): ISmartArrayLike[AbstractMesh] = js.native
     
     /**
-      * @param mesh
-      * @hidden
+      * @internal
       */
     def _getDefaultSubMeshCandidates(mesh: AbstractMesh): ISmartArrayLike[SubMesh] = js.native
     
     /* private */ var _getGeometryByUniqueId: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
     
-    /** @hidden */
+    /** @internal */
     var _inputManager: InputManager = js.native
     
     /* private */ var _intermediateRendering: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalMultiPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
@@ -472,13 +481,13 @@ object sceneMod {
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[js.Array[PickingInfo]] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalMultiPickSprites(ray: Ray): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     def _internalMultiPickSprites(ray: Ray, predicate: Unit, camera: Camera): Nullable[js.Array[PickingInfo]] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): Nullable[PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
@@ -575,7 +584,7 @@ object sceneMod {
       trianglePredicate: TrianglePickingPredicate
     ): Nullable[PickingInfo] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalPickForMesh(
       pickingInfo: Nullable[PickingInfo],
       rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
@@ -722,7 +731,7 @@ object sceneMod {
       skipBoundingInfo: Boolean
     ): Nullable[PickingInfo] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _internalPickSprites(ray: Ray): Nullable[PickingInfo] = js.native
     def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean]): Nullable[PickingInfo] = js.native
     def _internalPickSprites(ray: Ray, predicate: js.Function1[/* sprite */ Sprite, Boolean], fastCheck: Boolean): Nullable[PickingInfo] = js.native
@@ -739,29 +748,22 @@ object sceneMod {
     
     /* private */ var _isDisposed: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _isInIntermediateRendering(): Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening during the per mesh ready checks.
       */
     var _isReadyForMeshStage: Stage[MeshStageAction] = js.native
     
-    /** @hidden */
+    /** @internal */
     val _isScene: Boolean = js.native
     
     /* private */ var _lightsEnabled: Any = js.native
     
     /**
-      * @param fileOrUrl
-      * @param onSuccess
-      * @param onProgress
-      * @param useOfflineSupport
-      * @param useArrayBuffer
-      * @param onError
-      * @param onOpened
-      * @hidden
+      * @internal
       */
     def _loadFile(
       fileOrUrl: File | String,
@@ -858,12 +860,7 @@ object sceneMod {
       onOpened: js.Function1[/* request */ WebRequest, Unit]
     ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     /**
-      * @param fileOrUrl
-      * @param onProgress
-      * @param useOfflineSupport
-      * @param useArrayBuffer
-      * @param onOpened
-      * @hidden
+      * @internal
       */
     def _loadFileAsync(fileOrUrl: File): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _loadFileAsync(fileOrUrl: File, onProgress: js.Function1[/* data */ Any, Unit]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
@@ -941,7 +938,7 @@ object sceneMod {
     ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing field
       */
     var _mainSoundTrack: SoundTrack = js.native
@@ -950,10 +947,10 @@ object sceneMod {
     
     /* private */ var _meshesForIntersections: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _mirroredCameraPosition: Nullable[Vector3] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _multiviewSceneUbo: Nullable[UniformBuffer] = js.native
     
     /* private */ var _onAfterCameraRenderObserver: Any = js.native
@@ -966,10 +963,10 @@ object sceneMod {
     
     /* private */ var _onDisposeObserver: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _outlineRenderer: OutlineRenderer = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pendingData: js.Array[Any] = js.native
     
     /**
@@ -980,75 +977,70 @@ object sceneMod {
     
     /* private */ var _performancePriority: Any = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _physicsEngine: Nullable[IPhysicsEngine] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _physicsTimeAccumulator: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pickWithRayInverseMatrix: Matrix = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pickedDownSprite: Nullable[Sprite] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening when a pointer down event happens.
       */
     var _pointerDownStage: Stage[PointerUpDownStageAction] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening when a pointer move event happens.
       */
     var _pointerMoveStage: Stage[PointerMoveStageAction] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pointerOverSprite: Nullable[Sprite] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening when a pointer up event happens.
       */
     var _pointerUpStage: Stage[PointerUpDownStageAction] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _postProcessRenderPipelineManager: PostProcessRenderPipelineManager = js.native
     
     /**
-      * @hidden
+      * @internal
       * Defines the actions happening during the active mesh stage.
       */
     var _preActiveMeshStage: Stage[PreActiveMeshStageAction] = js.native
     
     /* private */ var _preventFreeActiveMeshesAndRenderingGroups: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _processLateAnimationBindings(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: Quaternion): Quaternion = js.native
     
     /* private */ var _processSubCameras: Any = js.native
     
     /* private */ var _processedMaterials: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _projectionMatrix: Matrix = js.native
     
     /* private */ var _projectionUpdateFlag: Any = js.native
     
     /**
-      * @param file
-      * @param onSuccess
-      * @param onProgress
-      * @param useArrayBuffer
-      * @param onError
-      * @hidden
+      * @internal
       */
     def _readFile(file: File, onSuccess: js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit]): IFileRequest = js.native
     def _readFile(
@@ -1098,10 +1090,7 @@ object sceneMod {
     ): IFileRequest = js.native
     
     /**
-      * @param file
-      * @param onProgress
-      * @param useArrayBuffer
-      * @hidden
+      * @internal
       */
     def _readFileAsync(file: File): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _readFileAsync(file: File, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
@@ -1112,13 +1101,13 @@ object sceneMod {
     ): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _readFileAsync(file: File, onProgress: Unit, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuildGeometries(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuildTextures(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _registerTargetForLateAnimationBinding(runtimeAnimation: RuntimeAnimation, originalValue: Any): Unit = js.native
     
     /**
@@ -1126,14 +1115,11 @@ object sceneMod {
       */
     /* private */ var _registerTransientComponents: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _registeredForLateAnimationBindings: SmartArrayNoDuplicate[Any] = js.native
     
     /**
-      * @param camera
-      * @param rigParent
-      * @param bindFrameBuffer
-      * @hidden
+      * @internal
       */
     def _renderForCamera(camera: Camera): Unit = js.native
     def _renderForCamera(camera: Camera, rigParent: Unit, bindFrameBuffer: Boolean): Unit = js.native
@@ -1142,7 +1128,7 @@ object sceneMod {
     
     /* private */ var _renderId: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _renderMultiviewToSingleView(camera: Camera): Unit = js.native
     
     /* private */ var _renderTargets: Any = js.native
@@ -1150,14 +1136,7 @@ object sceneMod {
     /* private */ var _renderingManager: Any = js.native
     
     /**
-      * @param url
-      * @param onSuccess
-      * @param onProgress
-      * @param useOfflineSupport
-      * @param useArrayBuffer
-      * @param onError
-      * @param onOpened
-      * @hidden
+      * @internal
       */
     def _requestFile(
       url: String,
@@ -1546,12 +1525,7 @@ object sceneMod {
     ): IFileRequest = js.native
     
     /**
-      * @param url
-      * @param onProgress
-      * @param useOfflineSupport
-      * @param useArrayBuffer
-      * @param onOpened
-      * @hidden
+      * @internal
       */
     def _requestFileAsync(url: String): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _requestFileAsync(url: String, onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Unit]): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
@@ -1635,20 +1609,20 @@ object sceneMod {
     /* private */ var _sceneUbo: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing Filed
       */
     var _selectionOctree: Octree[AbstractMesh] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing store of defined scene components.
       */
     var _serializableComponents: js.Array[ISceneSerializableComponent] = js.native
     
     /* private */ var _shadowsEnabled: Any = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _simplificationQueue: SimplificationQueue = js.native
     
     /* private */ var _skeletonsEnabled: Any = js.native
@@ -1659,24 +1633,24 @@ object sceneMod {
     
     /* private */ var _softwareSkinnedMeshes: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _tempPickingRay: Nullable[Ray] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _tempSpritePickingRay: Nullable[Ray] = js.native
     
     /* private */ var _texturesEnabled: Any = js.native
     
     /* private */ var _timeAccumulator: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _toBeDisposed: js.Array[Nullable[IDisposable]] = js.native
     
     /* private */ var _totalVertices: Any = js.native
     
     /* private */ var _transformMatrix: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _transformMatrixR: Matrix = js.native
     
     /**
@@ -1688,18 +1662,18 @@ object sceneMod {
     
     /* private */ var _unObserveActiveCameras: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _updateMultiviewUbo(): Unit = js.native
     def _updateMultiviewUbo(viewR: Unit, projectionR: Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: Matrix, projectionR: Matrix): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _useOrderIndependentTransparency: Boolean = js.native
     
     /* private */ var _useRightHandedSystem: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _viewMatrix: Matrix = js.native
     
     /* private */ var _viewUpdateFlag: Any = js.native
@@ -2809,7 +2783,7 @@ object sceneMod {
     @JSName("clipPlane")
     var clipPlane_Scene: Nullable[Plane] = js.native
     
-    /** @hidden */
+    /** @internal */
     def collisionCoordinator: ICollisionCoordinator = js.native
     
     /**
@@ -5190,6 +5164,11 @@ object sceneMod {
     var renderTargetsEnabled: Boolean = js.native
     
     /**
+      * Gets the scene's rendering manager
+      */
+    def renderingManager: RenderingManager = js.native
+    
+    /**
       * Gets or sets a boolean indicating if lights must be sorted by priority (off by default)
       * This is useful if there are more lights that the maximum simulteanous authorized
       */
@@ -5532,7 +5511,7 @@ object sceneMod {
     def updateTransformMatrix(): Unit = js.native
     def updateTransformMatrix(force: Boolean): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     val useClonedMeshMap: Boolean = js.native
     
     /**
@@ -5547,7 +5526,7 @@ object sceneMod {
       */
     var useDelayedTextureLoading: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     val useMaterialMeshMap: Boolean = js.native
     
     /**

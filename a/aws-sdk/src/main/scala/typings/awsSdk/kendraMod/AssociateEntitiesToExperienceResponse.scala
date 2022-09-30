@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateEntitiesToExperienceResponse extends StObject {
   
   /**
-    * Lists the users or groups in your Amazon Web Services SSO identity source that failed to properly configure with your Amazon Kendra experience.
+    * Lists the users or groups in your IAM Identity Center identity source that failed to properly configure with your Amazon Kendra experience.
     */
   var FailedEntityList: js.UndefOr[AssociateEntitiesToExperienceFailedEntityList] = js.undefined
 }

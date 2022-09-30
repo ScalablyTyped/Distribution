@@ -1,12 +1,12 @@
 package typings.matrixOrgMatrixSdkCryptoNodejs
 
-import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`0`
-import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`1`
-import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`2`
-import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`3`
-import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`4`
-import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`5`
-import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`6`
+import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`0`
+import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`1`
+import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`2`
+import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`3`
+import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`4`
+import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`5`
+import typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`6`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -754,10 +754,10 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`0`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`1`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`2`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`3`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`0`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`1`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`2`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`3`
   */
   trait DeviceKeyAlgorithmName extends StObject
   object DeviceKeyAlgorithmName {
@@ -779,8 +779,8 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`0`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`1`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`0`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`1`
   */
   trait EncryptionAlgorithm extends StObject
   object EncryptionAlgorithm {
@@ -793,10 +793,10 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`0`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`1`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`2`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`3`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`0`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`1`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`2`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`3`
   */
   trait HistoryVisibility extends StObject
   object HistoryVisibility {
@@ -836,13 +836,13 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`0`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`1`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`2`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`3`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`4`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`5`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`6`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`0`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`1`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`2`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`3`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`4`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`5`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`6`
   */
   trait RequestType extends StObject
   object RequestType {
@@ -870,9 +870,9 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`0`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`1`
-    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsNumbers.`2`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`0`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`1`
+    - typings.matrixOrgMatrixSdkCryptoNodejs.matrixOrgMatrixSdkCryptoNodejsInts.`2`
   */
   trait VerificationState extends StObject
   object VerificationState {

@@ -9,6 +9,7 @@ import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.RelativeBy
 import typings.seleniumWebdriver.mod.WebElement
 import typings.std.Omit
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,9 +24,9 @@ inline def globalElement(locator: By, options: Any): Element = (^.asInstanceOf[j
 inline def globalElement(locator: WebElement): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any]).asInstanceOf[Element]
 inline def globalElement(locator: WebElement, options: Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("globalElement")(locator.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Element]
 
-type AsyncFunc = js.ThisFunction1[/* this */ DescribeInstance, /* browser */ NightwatchBrowser, js.Thenable[Any]]
+type AsyncFunc = js.ThisFunction1[/* this */ DescribeInstance, /* browser */ NightwatchBrowser, PromiseLike[Any]]
 
-type Awaitable[T, V] = (Omit[T, `then`]) & js.Thenable[V]
+type Awaitable[T, V] = (Omit[T, `then`]) & PromiseLike[V]
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String

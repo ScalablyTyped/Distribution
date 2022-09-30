@@ -2,6 +2,7 @@ package typings.mendixmodelsdk.workflowsMod.workflows
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
@@ -13,22 +14,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/call-microflow relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
+- typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowActivity because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTask because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.ICallMicroflowTask because var conflicts: containerAsFlow, id, isLoaded, model, outcomes, structureTypeName, unit. Inlined microflow, microflowQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.CallMicroflowTask")
+- typings.mendixmodelsdk.workflowsMod.workflows.IConditionOutcomeActivity because Already inherited
+- typings.mendixmodelsdk.workflowsMod.workflows.ICallMicroflowTask because var conflicts: containerAsFlow, id, isLoaded, model, outcomes, structureTypeName, unit. Inlined microflow, microflowQualifiedName */ @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.CallMicroflowTask")
 @js.native
-class CallMicroflowTask protected () extends WorkflowTask {
+open class CallMicroflowTask protected () extends ConditionOutcomeActivity {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -50,10 +51,12 @@ class CallMicroflowTask protected () extends WorkflowTask {
   def microflow_=(newValue: IMicroflow | Null): Unit = js.native
   @JSName("microflow")
   val microflow_FCallMicroflowTask: IMicroflow | Null = js.native
+  
+  def parameterMappings: IList[MicroflowCallParameterMapping] = js.native
 }
 object CallMicroflowTask {
   
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.CallMicroflowTask")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.CallMicroflowTask")
   @js.native
   val ^ : js.Any = js.native
   
@@ -71,19 +74,19 @@ object CallMicroflowTask {
     * of the parent Flow element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: Flow): CallMicroflowTask = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CallMicroflowTask]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.CallMicroflowTask.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.CallMicroflowTask.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.CallMicroflowTask.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.CallMicroflowTask.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

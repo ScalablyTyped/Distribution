@@ -50,11 +50,7 @@ object BlurPostProcess {
   val ^ : js.Any = js.native
   
   /**
-    * @param parsedPostProcess
-    * @param targetCamera
-    * @param scene
-    * @param rootUrl
-    * @hidden
+    * @internal
     */
   inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.blurPostProcessMod.BlurPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.blurPostProcessMod.BlurPostProcess]]
 }

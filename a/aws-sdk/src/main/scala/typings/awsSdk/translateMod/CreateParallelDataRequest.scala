@@ -27,6 +27,8 @@ trait CreateParallelDataRequest extends StObject {
     * Specifies the format and S3 location of the parallel data input file.
     */
   var ParallelDataConfig: typings.awsSdk.translateMod.ParallelDataConfig
+  
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateParallelDataRequest {
   
@@ -50,5 +52,11 @@ object CreateParallelDataRequest {
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setParallelDataConfig(value: ParallelDataConfig): Self = StObject.set(x, "ParallelDataConfig", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

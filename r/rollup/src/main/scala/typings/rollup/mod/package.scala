@@ -100,8 +100,6 @@ type OptionsPaths = (Record[String, String]) | (js.Function1[/* id */ String, St
 
 type OutputBundle = StringDictionary[OutputAsset | OutputChunk]
 
-type OutputBundleWithPlaceholders = StringDictionary[OutputAsset | OutputChunk | FilePlaceholder]
-
 type PartialNull[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]: T[P] | null}
   */ typings.rollup.rollupStrings.PartialNull & TopLevel[T]

@@ -1,21 +1,20 @@
 package typings.subsume
 
 import typings.std.Map
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("subsume", JSImport.Namespace)
+  @JSImport("subsume", JSImport.Default)
   @js.native
   /**
   	Embed data in other data and easily extract it when needed.
   	@param id - You probably don't need to set this. Can be useful if you need a stable ID.
   	@example
   	```
-  	import Subsume = require('subsume');
+  	import Subsume from 'subsume';
   	const subsume = new Subsume();
   	console.log(subsume.id);
   	//=> '7febcd0b3806fbc48c01d7cea4ed1219'
@@ -33,7 +32,7 @@ object mod {
   	//=> {data: '🦄', rest: 'some random text'}
   	```
   	*/
-  class ^ ()
+  open class default ()
     extends StObject
        with Subsume {
     def this(id: String) = this()
@@ -48,7 +47,7 @@ object mod {
     	Used identifier.
     	*/
     /* CompleteClass */
-    var id: String = js.native
+    override val id: String = js.native
     
     /**
     	Extract your embedded data from `text`.
@@ -61,53 +60,55 @@ object mod {
     	Postfix used in `.compose()`.
     	*/
     /* CompleteClass */
-    var postfix: String = js.native
+    override val postfix: String = js.native
     
     /**
     	Prefix used in `.compose()`.
     	*/
     /* CompleteClass */
-    var prefix: String = js.native
+    override val prefix: String = js.native
     
     /**
     	Regex used in `.parse()`.
     	*/
     /* CompleteClass */
-    var regex: RegExp = js.native
+    override val regex: js.RegExp = js.native
   }
-  @JSImport("subsume", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-  	Extract embedded data with a specific `id` out of `text`.
-  	Useful when `text` comes from an external source.
-  	*/
-  /* static member */
-  inline def parse(string: String, id: String): ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
-  
-  /**
-  	Extract embedded data corresponding to all IDs in `idArray`, if specified. Otherwise it will extract embedded data for all top-level IDs.
-  	@returns An object with a Map with an entry for each parsed ID, and a rest string for what remains after all the required IDs have been parsed, as seen below:
-  	The input:
-  	```
-  	some@@[7febcd0b3806fbc48c01d7cea4ed1219]@@🦄##[7febcd0b3806fbc48c01d7cea4ed1219]## random@@[7febcd0b3806fbc48c01d7cea4ed1218]@@🦄##[7febcd0b3806fbc48c01d7cea4ed1218]## text@@[7febcd0b3806fbc48c01d7cea4ed1217]@@🦄##[7febcd0b3806fbc48c01d7cea4ed1217]##
-  	```
-  	Gives the following output:
-  	```
-  	{
-  		data: Map {
-  			'7febcd0b3806fbc48c01d7cea4ed1219' => '🦄',
-  			'7febcd0b3806fbc48c01d7cea4ed1218' => '🦄',
-  			'7febcd0b3806fbc48c01d7cea4ed1217' => '🦄'
-  		},
-  		rest: 'some random text'
-  	}
-  	```
-  	*/
-  /* static member */
-  inline def parseAll(string: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
-  inline def parseAll(string: String, idArray: js.Array[String]): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any], idArray.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
+  /* static members */
+  object default {
+    
+    @JSImport("subsume", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	Extract embedded data with a specific `id` out of `text`.
+    	Useful when `text` comes from an external source.
+    	*/
+    inline def parse(string: String, id: String): ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
+    
+    /**
+    	Extract embedded data corresponding to all IDs in `idArray`, if specified. Otherwise it will extract embedded data for all top-level IDs.
+    	@returns An object with a Map with an entry for each parsed ID, and a rest string for what remains after all the required IDs have been parsed, as seen below:
+    	The input:
+    	```
+    	some@@[7febcd0b3806fbc48c01d7cea4ed1219]@@🦄##[7febcd0b3806fbc48c01d7cea4ed1219]## random@@[7febcd0b3806fbc48c01d7cea4ed1218]@@🦄##[7febcd0b3806fbc48c01d7cea4ed1218]## text@@[7febcd0b3806fbc48c01d7cea4ed1217]@@🦄##[7febcd0b3806fbc48c01d7cea4ed1217]##
+    	```
+    	Gives the following output:
+    	```
+    	{
+    		data: Map {
+    			'7febcd0b3806fbc48c01d7cea4ed1219' => '🦄',
+    			'7febcd0b3806fbc48c01d7cea4ed1218' => '🦄',
+    			'7febcd0b3806fbc48c01d7cea4ed1217' => '🦄'
+    		},
+    		rest: 'some random text'
+    	}
+    	```
+    	*/
+    inline def parseAll(string: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
+    inline def parseAll(string: String, idArray: js.Array[String]): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any], idArray.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
+  }
   
   trait ParseResult extends StObject {
     
@@ -163,7 +164,7 @@ object mod {
     /**
     	Used identifier.
     	*/
-    var id: String
+    val id: String
     
     /**
     	Extract your embedded data from `text`.
@@ -174,17 +175,17 @@ object mod {
     /**
     	Postfix used in `.compose()`.
     	*/
-    var postfix: String
+    val postfix: String
     
     /**
     	Prefix used in `.compose()`.
     	*/
-    var prefix: String
+    val prefix: String
     
     /**
     	Regex used in `.parse()`.
     	*/
-    var regex: RegExp
+    val regex: js.RegExp
   }
   object Subsume {
     
@@ -194,7 +195,7 @@ object mod {
       parse: String => ParseResult,
       postfix: String,
       prefix: String,
-      regex: RegExp
+      regex: js.RegExp
     ): Subsume = {
       val __obj = js.Dynamic.literal(compose = js.Any.fromFunction1(compose), id = id.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse), postfix = postfix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subsume]
@@ -212,7 +213,7 @@ object mod {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
 }

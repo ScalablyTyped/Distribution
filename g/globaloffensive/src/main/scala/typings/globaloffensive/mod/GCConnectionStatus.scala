@@ -1,10 +1,10 @@
 package typings.globaloffensive.mod
 
-import typings.globaloffensive.globaloffensiveNumbers.`0`
-import typings.globaloffensive.globaloffensiveNumbers.`1`
-import typings.globaloffensive.globaloffensiveNumbers.`2`
-import typings.globaloffensive.globaloffensiveNumbers.`3`
-import typings.globaloffensive.globaloffensiveNumbers.`4`
+import typings.globaloffensive.globaloffensiveInts.`0`
+import typings.globaloffensive.globaloffensiveInts.`1`
+import typings.globaloffensive.globaloffensiveInts.`2`
+import typings.globaloffensive.globaloffensiveInts.`3`
+import typings.globaloffensive.globaloffensiveInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

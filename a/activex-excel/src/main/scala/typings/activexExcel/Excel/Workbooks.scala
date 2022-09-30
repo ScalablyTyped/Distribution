@@ -1,13 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelBooleans.`true`
-import typings.activexExcel.activexExcelNumbers.`0`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`3`
-import typings.activexExcel.activexExcelNumbers.`4`
-import typings.activexExcel.activexExcelNumbers.`5`
-import typings.activexExcel.activexExcelNumbers.`6`
+import typings.activexExcel.activexExcelInts.`0`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`3`
+import typings.activexExcel.activexExcelInts.`4`
+import typings.activexExcel.activexExcelInts.`5`
+import typings.activexExcel.activexExcelInts.`6`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

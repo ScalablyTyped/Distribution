@@ -10,7 +10,7 @@ object regionScoreboardMod {
     
     @JSGlobal("HistoryChart_")
     @js.native
-    class HistoryChart () extends StObject {
+    open class HistoryChart () extends StObject {
       
       def create(_regionScore: RegionScoreboard_, logscale: Boolean): Unit = js.native
     }
@@ -21,7 +21,7 @@ object regionScoreboardMod {
     
     @JSGlobal("RegionScoreboard_")
     @js.native
-    class RegionScoreboard_ () extends StObject {
+    open class RegionScoreboard_ () extends StObject {
       
       var HistoryChart: typings.iitc.regionScoreboardMod.global.HistoryChart = js.native
       

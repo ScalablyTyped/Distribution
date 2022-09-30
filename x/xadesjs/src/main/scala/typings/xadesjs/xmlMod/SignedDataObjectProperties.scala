@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "SignedDataObjectProperties")
+@JSImport("xadesjs/build/types/src/xml", "SignedDataObjectProperties")
 @js.native
-class SignedDataObjectProperties ()
+open class SignedDataObjectProperties ()
   extends typings.xadesjs.signedDataObjectPropertiesMod.SignedDataObjectProperties {
   def this(properties: js.Object) = this()
 }

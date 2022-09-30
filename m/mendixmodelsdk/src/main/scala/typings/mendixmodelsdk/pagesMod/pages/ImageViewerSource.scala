@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageViewerSource")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageViewerSource")
 @js.native
-class ImageViewerSource protected () extends EntityPathSource {
+open class ImageViewerSource protected () extends EntityPathSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -26,7 +26,7 @@ class ImageViewerSource protected () extends EntityPathSource {
 }
 object ImageViewerSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageViewerSource")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageViewerSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -69,13 +69,13 @@ object ImageViewerSource {
   inline def createInWidgetValueUnderDataSource(container: WidgetValue): ImageViewerSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[ImageViewerSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageViewerSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageViewerSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageViewerSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageViewerSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

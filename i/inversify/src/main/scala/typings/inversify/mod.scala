@@ -57,7 +57,7 @@ object mod {
       container1: typings.inversify.interfacesMod.interfaces.Container,
       container2: typings.inversify.interfacesMod.interfaces.Container,
       containers: typings.inversify.interfacesMod.interfaces.Container*
-    ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((List(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).`++`(containers.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]
+    ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")((scala.List(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).`++`(containers.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]
   }
   
   @JSImport("inversify", "ContainerModule")

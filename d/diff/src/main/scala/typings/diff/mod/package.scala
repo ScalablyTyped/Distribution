@@ -1,9 +1,9 @@
 package typings.diff.mod
 
 import typings.diff.anon.Strict
-import typings.diff.diffNumbers.`-1`
-import typings.diff.diffNumbers.`0`
-import typings.diff.diffNumbers.`1`
+import typings.diff.diffInts.`-1`
+import typings.diff.diffInts.`0`
+import typings.diff.diffInts.`1`
 import typings.diff.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

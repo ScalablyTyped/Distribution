@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 7.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ValidationMessage")
 @js.native
-class ValidationMessage protected () extends Widget {
+open class ValidationMessage protected () extends Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ class ValidationMessage protected () extends Widget {
 }
 object ValidationMessage {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ValidationMessage")
   @js.native
   val ^ : js.Any = js.native
   
@@ -585,13 +585,13 @@ object ValidationMessage {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): ValidationMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ValidationMessage]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ValidationMessage.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ValidationMessage.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ValidationMessage.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabulator-tables
 
-Typings are for version 5.3
+Typings are for version 5.32
 
 ## Library description:
 Interactive table generation JavaScript library

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "fallback.protobuf.Enum")
 @js.native
-class Enum protected ()
+open class Enum protected ()
   extends typings.googleGax.fallbackMod.protobuf.Enum {
   /**
     * Constructs a new enum instance.
@@ -17,26 +17,27 @@ class Enum protected ()
     * @param [options] Declared options
     * @param [comment] The comment for this enum
     * @param [comments] The value comments for this enum
+    * @param [valuesOptions] The value options for this enum
     */
   def this(name: String) = this()
   def this(name: String, values: StringDictionary[Double]) = this()
-  def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any]) = this()
-  def this(name: String, values: Unit, options: StringDictionary[js.Any]) = this()
-  def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any], comment: String) = this()
+  def this(name: String, values: StringDictionary[Double], options: StringDictionary[Any]) = this()
+  def this(name: String, values: Unit, options: StringDictionary[Any]) = this()
+  def this(name: String, values: StringDictionary[Double], options: StringDictionary[Any], comment: String) = this()
   def this(name: String, values: StringDictionary[Double], options: Unit, comment: String) = this()
-  def this(name: String, values: Unit, options: StringDictionary[js.Any], comment: String) = this()
+  def this(name: String, values: Unit, options: StringDictionary[Any], comment: String) = this()
   def this(name: String, values: Unit, options: Unit, comment: String) = this()
   def this(
     name: String,
     values: StringDictionary[Double],
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     comment: String,
     comments: StringDictionary[String]
   ) = this()
   def this(
     name: String,
     values: StringDictionary[Double],
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     comment: Unit,
     comments: StringDictionary[String]
   ) = this()
@@ -57,19 +58,147 @@ class Enum protected ()
   def this(
     name: String,
     values: Unit,
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     comment: String,
     comments: StringDictionary[String]
   ) = this()
   def this(
     name: String,
     values: Unit,
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     comment: Unit,
     comments: StringDictionary[String]
   ) = this()
   def this(name: String, values: Unit, options: Unit, comment: String, comments: StringDictionary[String]) = this()
   def this(name: String, values: Unit, options: Unit, comment: Unit, comments: StringDictionary[String]) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[Any],
+    comment: String,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[Any],
+    comment: String,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[Any],
+    comment: Unit,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[Any],
+    comment: Unit,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: String,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: String,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: Unit,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: Unit,
+    comment: Unit,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[Any],
+    comment: String,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[Any],
+    comment: String,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[Any],
+    comment: Unit,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: StringDictionary[Any],
+    comment: Unit,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: Unit,
+    comment: String,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: Unit,
+    comment: String,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: Unit,
+    comment: Unit,
+    comments: StringDictionary[String],
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
+  def this(
+    name: String,
+    values: Unit,
+    options: Unit,
+    comment: Unit,
+    comments: Unit,
+    valuesOptions: StringDictionary[StringDictionary[Any]]
+  ) = this()
 }
 /* static members */
 object Enum {

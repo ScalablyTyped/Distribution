@@ -27,7 +27,7 @@ object PartialProps {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
     

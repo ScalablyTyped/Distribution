@@ -1,8 +1,8 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.firebaseAuthNumbers.`3000`
-import typings.firebaseAuth.firebaseAuthNumbers.`50`
-import typings.firebaseAuth.firebaseAuthNumbers.`800`
+import typings.firebaseAuth.firebaseAuthInts.`3000`
+import typings.firebaseAuth.firebaseAuthInts.`50`
+import typings.firebaseAuth.firebaseAuthInts.`800`
 import typings.firebaseAuth.firebaseAuthStrings.ack_
 import typings.firebaseAuth.firebaseAuthStrings.connection_closed
 import typings.firebaseAuth.firebaseAuthStrings.connection_unavailable
@@ -197,9 +197,9 @@ object nodeSrcPlatformBrowserMessagechannelMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseAuth.firebaseAuthNumbers.`50`
-    - typings.firebaseAuth.firebaseAuthNumbers.`3000`
-    - typings.firebaseAuth.firebaseAuthNumbers.`800`
+    - typings.firebaseAuth.firebaseAuthInts.`50`
+    - typings.firebaseAuth.firebaseAuthInts.`3000`
+    - typings.firebaseAuth.firebaseAuthInts.`800`
   */
   trait TimeoutDuration extends StObject
   object TimeoutDuration {

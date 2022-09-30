@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.RegExp]
-  
   @JSImport("emoji-regex", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.RegExp]
 }

@@ -1,8 +1,8 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
 import typings.firebaseFirestore.srcCoreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.srcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.srcModelDocumentMod.Document
@@ -181,9 +181,9 @@ object srcModelFieldIndexMod {
   inline def newIndexOffsetSuccessorFromReadTime(readTime: SnapshotVersion, largestBatchId: Double): IndexOffset = (^.asInstanceOf[js.Dynamic].applyDynamic("newIndexOffsetSuccessorFromReadTime")(readTime.asInstanceOf[js.Any], largestBatchId.asInstanceOf[js.Any])).asInstanceOf[IndexOffset]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
   */
   trait IndexKind extends StObject
   object IndexKind {

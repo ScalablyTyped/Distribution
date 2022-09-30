@@ -1,7 +1,7 @@
 
 # Scala.js typings for dnd-core
 
-Typings are for version 11.1.3
+Typings are for version 16.0.1
 
 ## Library description:
 Drag and drop sans the GUI
@@ -10,10 +10,10 @@ Drag and drop sans the GUI
 | ------------------ | :-------------: |
 | Full name          | dnd-core |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 72 |
-| # downloads        | 35929634 |
-| # stars            | 1 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 6081101.0 |
+| # stars            | 17866.0 |
 
 ## Links
 - [Homepage](https://github.com/react-dnd/react-dnd#readme)

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "domainmodels.Attribute")
 @js.native
-class Attribute protected ()
+open class Attribute protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.Attribute {
   def this(
     model: AbstractModel,

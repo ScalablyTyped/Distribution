@@ -10,7 +10,6 @@ import typings.js2coffee.anon.Type
 import typings.js2coffee.js2coffeeBooleans.`true`
 import typings.js2coffee.js2coffeeStrings.Linefeed
 import typings.js2coffee.js2coffeeStrings.Program
-import typings.js2coffee.js2coffeeStrings.TildeTildeTildeTildeLinefeed$LeftcurlybracketstringRightcurlybracketLinefeedTildeTildeTildeTilde
 import typings.js2coffee.js2coffeeStrings.module
 import typings.js2coffee.js2coffeeStrings.script
 import typings.js2coffee.js2coffeeStrings.t
@@ -448,7 +447,7 @@ object mod {
     		 * @param node Node to inspect.
     		 * @returns String representation bounded by `~~~~`.
     		 */
-    def inspect(node: BaseNode): TildeTildeTildeTildeLinefeed$LeftcurlybracketstringRightcurlybracketLinefeedTildeTildeTildeTilde = js.native
+    def inspect(node: BaseNode): /* template literal string: ~~~~\n${string}\n~~~~ */ String = js.native
     
     /**
     		 * ESTree comment node assertion.

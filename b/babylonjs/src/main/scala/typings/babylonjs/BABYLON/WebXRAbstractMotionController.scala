@@ -14,7 +14,7 @@ trait WebXRAbstractMotionController
   /* private */ var _controllerCache: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _doNotLoadControllerMesh: Boolean = js.native
   
@@ -46,8 +46,7 @@ trait WebXRAbstractMotionController
     * Moves the axis on the controller mesh based on its current state
     * @param axisMap
     * @param axisValue the value of the axis which determines the meshes new position
-    * @param fixValueCoordinates
-    * @hidden
+    * @internal
     */
   /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double): Unit = js.native
   /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double, fixValueCoordinates: Boolean): Unit = js.native

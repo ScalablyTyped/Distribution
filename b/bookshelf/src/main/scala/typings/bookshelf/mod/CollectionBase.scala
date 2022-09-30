@@ -3,7 +3,6 @@ package typings.bookshelf.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.lodash.mod.Dictionary
 import typings.lodash.mod.DictionaryIterator
-import typings.lodash.mod.List
 import typings.lodash.mod.ListIterator
 import typings.lodash.mod.MemoIterator
 import typings.lodash.mod.ObjectIterator
@@ -32,7 +31,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def countBy(predicate: Unit, thisArg: Any): Dictionary[Double] = js.native
   def countBy[R /* <: js.Object */](predicate: R): Dictionary[Double] = js.native
   @JSName("countBy")
-  def countBy_R_Object[R /* <: js.Object */](): Dictionary[Double] = js.native
+  def countBy_R[R /* <: js.Object */](): Dictionary[Double] = js.native
   
   def every(): Boolean = js.native
   def every(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): Boolean = js.native
@@ -42,7 +41,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def every(predicate: Unit, thisArg: Any): Boolean = js.native
   def every[R /* <: js.Object */](predicate: R): Boolean = js.native
   @JSName("every")
-  def every_R_Object[R /* <: js.Object */](): Boolean = js.native
+  def every_R[R /* <: js.Object */](): Boolean = js.native
   
   def fetch(): typings.bluebird.mod.^[Collection[T]] = js.native
   def fetch(options: CollectionFetchOptions): typings.bluebird.mod.^[Collection[T]] = js.native
@@ -55,7 +54,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def filter(predicate: Unit, thisArg: Any): js.Array[T] = js.native
   def filter[R /* <: js.Object */](predicate: R): js.Array[T] = js.native
   @JSName("filter")
-  def filter_R_Object[R /* <: js.Object */](): js.Array[T] = js.native
+  def filter_R[R /* <: js.Object */](): js.Array[T] = js.native
   
   def find(): T = js.native
   def find(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): T = js.native
@@ -68,7 +67,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def findWhere(`match`: StringDictionary[Any]): T = js.native
   
   @JSName("find")
-  def find_R_Object[R /* <: js.Object */](): T = js.native
+  def find_R[R /* <: js.Object */](): T = js.native
   
   def first(): T = js.native
   
@@ -85,13 +84,13 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   @JSName("forEach")
   def forEach_Dictionary(callback: DictionaryIterator[T, Unit], thisArg: Any): Dictionary[T] = js.native
   @JSName("forEach")
-  def forEach_List(): List[T] = js.native
+  def forEach_List(): typings.lodash.mod.List[T] = js.native
   @JSName("forEach")
-  def forEach_List(callback: Unit, thisArg: Any): List[T] = js.native
+  def forEach_List(callback: Unit, thisArg: Any): typings.lodash.mod.List[T] = js.native
   @JSName("forEach")
-  def forEach_List(callback: ListIterator[T, Unit]): List[T] = js.native
+  def forEach_List(callback: ListIterator[T, Unit]): typings.lodash.mod.List[T] = js.native
   @JSName("forEach")
-  def forEach_List(callback: ListIterator[T, Unit], thisArg: Any): List[T] = js.native
+  def forEach_List(callback: ListIterator[T, Unit], thisArg: Any): typings.lodash.mod.List[T] = js.native
   
   def get(id: Any): T = js.native
   
@@ -103,7 +102,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def groupBy(predicate: Unit, thisArg: Any): Dictionary[js.Array[T]] = js.native
   def groupBy[R /* <: js.Object */](predicate: R): Dictionary[js.Array[T]] = js.native
   @JSName("groupBy")
-  def groupBy_R_Object[R /* <: js.Object */](): Dictionary[js.Array[T]] = js.native
+  def groupBy_R[R /* <: js.Object */](): Dictionary[js.Array[T]] = js.native
   
   // lodash methods
   def includes(value: Any): Boolean = js.native
@@ -174,7 +173,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def reject(predicate: Unit, thisArg: Any): js.Array[T] = js.native
   def reject[R /* <: js.Object */](predicate: R): js.Array[T] = js.native
   @JSName("reject")
-  def reject_R_Object[R /* <: js.Object */](): js.Array[T] = js.native
+  def reject_R[R /* <: js.Object */](): js.Array[T] = js.native
   
   def remove(model: T): T = js.native
   def remove(model: T, options: EventOptions): T = js.native
@@ -206,7 +205,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def some(predicate: Unit, thisArg: Any): Boolean = js.native
   def some[R /* <: js.Object */](predicate: R): Boolean = js.native
   @JSName("some")
-  def some_R_Object[R /* <: js.Object */](): Boolean = js.native
+  def some_R[R /* <: js.Object */](): Boolean = js.native
   
   def sortBy(): js.Array[T] = js.native
   def sortBy(predicate: (DictionaryIterator[T, Boolean]) | (ListIterator[T, Boolean])): js.Array[T] = js.native
@@ -216,7 +215,7 @@ abstract class CollectionBase[T /* <: Model[Any] */] () extends Events[T] {
   def sortBy(predicate: Unit, thisArg: Any): js.Array[T] = js.native
   def sortBy[R /* <: js.Object */](predicate: R): js.Array[T] = js.native
   @JSName("sortBy")
-  def sortBy_R_Object[R /* <: js.Object */](): js.Array[T] = js.native
+  def sortBy_R[R /* <: js.Object */](): js.Array[T] = js.native
   
   def tail(): js.Array[T] = js.native
   

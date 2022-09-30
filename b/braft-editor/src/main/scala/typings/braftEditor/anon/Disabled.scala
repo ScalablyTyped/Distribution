@@ -5,88 +5,70 @@ import typings.braftEditor.mod.ExtendControlType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Disabled extends ExtendControlType {
+trait Disabled
+  extends StObject
+     with ExtendControlType {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var html: js.UndefOr[String | Null] = js.native
+  var html: js.UndefOr[String | Null] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var modal: BottomText = js.native
+  var modal: BottomText
   
-  var onClick: js.UndefOr[js.Function] = js.native
+  var onClick: js.UndefOr[js.Function] = js.undefined
   
-  var text: js.UndefOr[String | ReactNode] = js.native
+  var text: js.UndefOr[String | ReactNode] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: modal = js.native
+  var `type`: modal
 }
 object Disabled {
   
-  @scala.inline
-  def apply(key: String, modal: BottomText, `type`: modal): Disabled = {
+  inline def apply(key: String, modal: BottomText): Disabled = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], modal = modal.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("modal")
     __obj.asInstanceOf[Disabled]
   }
   
-  @scala.inline
-  implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+  extension [Self <: Disabled](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlNull: Self = StObject.set(x, "html", null)
+    inline def setHtmlNull: Self = StObject.set(x, "html", null)
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModal(value: BottomText): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: BottomText): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setText(value: String | ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: modal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: modal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

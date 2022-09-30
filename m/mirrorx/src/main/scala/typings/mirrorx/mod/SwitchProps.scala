@@ -1,7 +1,6 @@
 package typings.mirrorx.mod
 
 import typings.history.mod.Location
-import typings.history.mod.LocationState
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait SwitchProps extends StObject {
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
-  var location: js.UndefOr[Location[LocationState]] = js.undefined
+  var location: js.UndefOr[Location] = js.undefined
 }
 object SwitchProps {
   
@@ -26,7 +25,7 @@ object SwitchProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }

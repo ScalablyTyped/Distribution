@@ -1,6 +1,5 @@
 package typings.shippo.mod.Shippo
 
-import typings.shippo.shippoStrings.$LeftcurlybracketnumberRightcurlybracket
 import typings.shippo.shippoStrings.BESTVALUE
 import typings.shippo.shippoStrings.CHEAPEST
 import typings.shippo.shippoStrings.FASTEST
@@ -13,9 +12,9 @@ trait Rate
   extends StObject
      with Metadata {
   
-  var amount: $LeftcurlybracketnumberRightcurlybracket
+  var amount: /* template literal string: ${number} */ String
   
-  var amount_local: $LeftcurlybracketnumberRightcurlybracket
+  var amount_local: /* template literal string: ${number} */ String
   
   var attributes: js.Array[CHEAPEST | FASTEST | BESTVALUE]
   
@@ -27,7 +26,7 @@ trait Rate
   
   var duration_terms: String
   
-  var estimated_days: $LeftcurlybracketnumberRightcurlybracket
+  var estimated_days: /* template literal string: ${number} */ String
   
   var messages: js.Array[Message]
   
@@ -46,11 +45,14 @@ trait Rate
 object Rate {
   
   inline def apply(
+    amount: /* template literal string: ${number} */ String,
+    amount_local: /* template literal string: ${number} */ String,
     attributes: js.Array[CHEAPEST | FASTEST | BESTVALUE],
     carrier_account: String,
     currency: String,
     currency_local: String,
     duration_terms: String,
+    estimated_days: /* template literal string: ${number} */ String,
     messages: js.Array[Message],
     object_created: String,
     object_id: String,
@@ -63,15 +65,15 @@ object Rate {
     test: Boolean,
     zone: String
   ): Rate = {
-    val __obj = js.Dynamic.literal(amount = "${number}", amount_local = "${number}", attributes = attributes.asInstanceOf[js.Any], carrier_account = carrier_account.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], currency_local = currency_local.asInstanceOf[js.Any], duration_terms = duration_terms.asInstanceOf[js.Any], estimated_days = "${number}", messages = messages.asInstanceOf[js.Any], object_created = object_created.asInstanceOf[js.Any], object_id = object_id.asInstanceOf[js.Any], object_owner = object_owner.asInstanceOf[js.Any], object_updated = object_updated.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], provider_image_200 = provider_image_200.asInstanceOf[js.Any], provider_image_75 = provider_image_75.asInstanceOf[js.Any], servicelevel = servicelevel.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_local = amount_local.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], carrier_account = carrier_account.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], currency_local = currency_local.asInstanceOf[js.Any], duration_terms = duration_terms.asInstanceOf[js.Any], estimated_days = estimated_days.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], object_created = object_created.asInstanceOf[js.Any], object_id = object_id.asInstanceOf[js.Any], object_owner = object_owner.asInstanceOf[js.Any], object_updated = object_updated.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], provider_image_200 = provider_image_200.asInstanceOf[js.Any], provider_image_75 = provider_image_75.asInstanceOf[js.Any], servicelevel = servicelevel.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rate]
   }
   
   extension [Self <: Rate](x: Self) {
     
-    inline def setAmount(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    inline def setAmount_local(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "amount_local", value.asInstanceOf[js.Any])
+    inline def setAmount_local(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "amount_local", value.asInstanceOf[js.Any])
     
     inline def setAttributes(value: js.Array[CHEAPEST | FASTEST | BESTVALUE]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
@@ -85,7 +87,7 @@ object Rate {
     
     inline def setDuration_terms(value: String): Self = StObject.set(x, "duration_terms", value.asInstanceOf[js.Any])
     
-    inline def setEstimated_days(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "estimated_days", value.asInstanceOf[js.Any])
+    inline def setEstimated_days(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "estimated_days", value.asInstanceOf[js.Any])
     
     inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

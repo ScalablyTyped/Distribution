@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dragDropMonitorImplMod {
   
-  @JSImport("dnd-core/lib/DragDropMonitorImpl", "DragDropMonitorImpl")
+  @JSImport("dnd-core/dist/classes/DragDropMonitorImpl", "DragDropMonitorImpl")
   @js.native
-  class DragDropMonitorImpl protected ()
+  open class DragDropMonitorImpl protected ()
     extends StObject
        with DragDropMonitor {
     def this(store: Store[State, AnyAction], registry: HandlerRegistry) = this()
@@ -34,7 +34,7 @@ object dragDropMonitorImplMod {
     
     val registry: HandlerRegistry = js.native
     
-    /* private */ var store: js.Any = js.native
+    /* private */ var store: Any = js.native
     
     def subscribeToStateChange(listener: Listener, options: HandlerIds): Unsubscribe = js.native
   }

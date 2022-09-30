@@ -9,9 +9,9 @@ import typings.rcTree.interfaceMod.EventDataNode
 import typings.rcTree.interfaceMod.IconType
 import typings.rcTree.interfaceMod.Key
 import typings.rcTree.interfaceMod.NodeInstance
-import typings.rcTree.rcTreeNumbers.`-1`
-import typings.rcTree.rcTreeNumbers.`0`
-import typings.rcTree.rcTreeNumbers.`1`
+import typings.rcTree.rcTreeInts.`-1`
+import typings.rcTree.rcTreeInts.`0`
+import typings.rcTree.rcTreeInts.`1`
 import typings.rcTree.treeMod.DraggableConfig
 import typings.rcTree.treeNodeMod.TreeNodeProps
 import typings.react.mod.Context

@@ -13,18 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object handlerRegistryImplMod {
   
-  @JSImport("dnd-core/lib/HandlerRegistryImpl", "HandlerRegistryImpl")
+  @JSImport("dnd-core/dist/classes/HandlerRegistryImpl", "HandlerRegistryImpl")
   @js.native
-  class HandlerRegistryImpl protected ()
+  open class HandlerRegistryImpl protected ()
     extends StObject
        with HandlerRegistry {
     def this(store: Store[State, AnyAction]) = this()
     
-    /* private */ var addHandler: js.Any = js.native
+    /* private */ var addHandler: Any = js.native
     
-    /* private */ var dragSources: js.Any = js.native
+    /* private */ var dragSources: Any = js.native
     
-    /* private */ var dropTargets: js.Any = js.native
+    /* private */ var dropTargets: Any = js.native
     
     def getSource(sourceId: String): DragSource = js.native
     def getSource(sourceId: String, includePinned: Boolean): DragSource = js.native
@@ -41,16 +41,16 @@ object handlerRegistryImplMod {
     
     def pinSource(sourceId: String): Unit = js.native
     
-    /* private */ var pinnedSource: js.Any = js.native
+    /* private */ var pinnedSource: Any = js.native
     
-    /* private */ var pinnedSourceId: js.Any = js.native
+    /* private */ var pinnedSourceId: Any = js.native
     
     def removeSource(sourceId: String): Unit = js.native
     
     def removeTarget(targetId: String): Unit = js.native
     
-    /* private */ var store: js.Any = js.native
+    /* private */ var store: Any = js.native
     
-    /* private */ var types: js.Any = js.native
+    /* private */ var types: Any = js.native
   }
 }

@@ -385,7 +385,7 @@ object boneMod {
     /* private */ var _getNegativeRotationToRef: Any = js.native
     
     /**
-      * @hidden Internal only
+      * @internal Internal only
       * Set this value to map this bone to a different index in the transform matrices
       * Set this value to -1 to exclude the bone from the transform matrices
       */
@@ -393,7 +393,7 @@ object boneMod {
     
     /* private */ var _invertedAbsoluteTransform: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _linkedTransformNode: Nullable[TransformNode] = js.native
     
     /* private */ var _localMatrix: Any = js.native
@@ -404,14 +404,14 @@ object boneMod {
     
     /* private */ var _localScaling: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAsDirtyAndCompose(): Unit = js.native
     
     /* private */ var _markAsDirtyAndDecompose: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _matrix: Matrix = js.native
-    /** @hidden */
+    /** @internal */
     def _matrix_=(value: Matrix): Unit = js.native
     
     /* private */ var _needToCompose: Any = js.native
@@ -427,16 +427,14 @@ object boneMod {
     /* private */ var _skeleton: Any = js.native
     
     /**
-      * @param rootMatrix
-      * @param updateChildren
-      * @hidden
+      * @internal
       */
     def _updateDifferenceMatrix(): Unit = js.native
     def _updateDifferenceMatrix(rootMatrix: Unit, updateChildren: Boolean): Unit = js.native
     def _updateDifferenceMatrix(rootMatrix: Matrix): Unit = js.native
     def _updateDifferenceMatrix(rootMatrix: Matrix, updateChildren: Boolean): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _waitingTransformNodeId: Nullable[String] = js.native
     
     /* private */ var _worldTransform: Any = js.native

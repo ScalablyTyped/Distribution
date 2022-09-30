@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tether
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 A positioning engine to make overlays, tooltips and dropdowns better

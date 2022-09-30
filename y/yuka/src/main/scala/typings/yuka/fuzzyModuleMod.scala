@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import typings.yuka.fuzzyRuleMod.FuzzyRule
 import typings.yuka.fuzzyVariableMod.FuzzyVariable
-import typings.yuka.yukaNumbers.`0`
-import typings.yuka.yukaNumbers.`1`
+import typings.yuka.yukaInts.`0`
+import typings.yuka.yukaInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

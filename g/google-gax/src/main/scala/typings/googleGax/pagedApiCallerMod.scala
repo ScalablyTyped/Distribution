@@ -14,7 +14,7 @@ object pagedApiCallerMod {
   
   @JSImport("google-gax/build/src/paginationCalls/pagedApiCaller", "PagedApiCaller")
   @js.native
-  class PagedApiCaller protected ()
+  open class PagedApiCaller protected ()
     extends StObject
        with APICaller {
     /**
@@ -34,8 +34,7 @@ object pagedApiCallerMod {
       * It's supposed to be a gRPC service stub function wrapped into several layers of wrappers that make it
       * accept just two parameters: (request, callback).
       * @param request A request object that came from the user.
-      * @param settings Call settings. We are interested in `maxResults`, autoPaginate`, `pageToken`, and `pageSize`
-      * (they are all optional).
+      * @param settings Call settings. We are interested in `maxResults` and `autoPaginate` (they are optional).
       * @param ongoingCall An instance of OngoingCall or OngoingCallPromise that can be used for call cancellation,
       * and is used to return results to the user.
       */
@@ -59,7 +58,7 @@ object pagedApiCallerMod {
       * (the main content of the request object stays unchanged, only the next page token changes)
       * @param callback The user's callback that expects the page content, next page request, and raw response.
       */
-    /* private */ var generateParseResponseCallback: js.Any = js.native
+    /* private */ var generateParseResponseCallback: Any = js.native
     
     var pageDescriptor: PageDescriptor = js.native
   }

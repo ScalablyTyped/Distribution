@@ -168,7 +168,7 @@ object global {
       * @param {...String} keys
       * @return {Object}
       */
-    inline def dig(obj: ObjStatic, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dig")(List(obj.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def dig(obj: ObjStatic, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dig")(scala.List(obj.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     /**
       * Safe encodeURIComponent, won't throw any error.
@@ -383,9 +383,9 @@ object global {
       * @see https://github.com/node-modules/utility#timers
       * -------------------0^0-------------------
       */
-    inline def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Immediate = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Immediate]
+    inline def setImmediate(callback: js.Function1[/* repeated */ Any, Unit], args: Any*): Immediate = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(scala.List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Immediate]
     
-    inline def setImmediate_Unit(fn: js.Function1[/* repeated */ Any, Any], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def setImmediate_Unit(fn: js.Function1[/* repeated */ Any, Any], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(scala.List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     /**
       * sha1 hash

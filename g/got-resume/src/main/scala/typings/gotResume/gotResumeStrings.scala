@@ -25,4 +25,20 @@ object gotResumeStrings {
   @js.native
   sealed trait GotResumeTransferError extends StObject
   inline def GotResumeTransferError: GotResumeTransferError = "GotResumeTransferError".asInstanceOf[GotResumeTransferError]
+  
+  @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
+  
+  @js.native
+  sealed trait response extends StObject
+  inline def response: response = "response".asInstanceOf[response]
 }

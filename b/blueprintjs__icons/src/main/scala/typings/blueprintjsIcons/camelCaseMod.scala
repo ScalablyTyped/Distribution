@@ -1,6 +1,6 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.blueprintjsIconsStrings.`DollarLeftcurlybracketFirstPartRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`
+import typings.blueprintjsIcons.blueprintjsIconsStrings._empty
 import typings.blueprintjsIcons.sourceUtilitiesMod.WordSeparators
 import typings.blueprintjsIcons.utilitiesMod.Split
 import typings.std.Lowercase
@@ -19,7 +19,7 @@ object camelCaseMod {
   @see Split
   */
   type CamelCaseStringArray[Parts /* <: js.Array[String] */] = Uncapitalize[
-    `DollarLeftcurlybracketFirstPartRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`
+    /* template literal string: ${FirstPart}${InnerCamelCaseStringArray<RemainingParts,FirstPart>} */ String
   ]
   
   /**
@@ -27,9 +27,5 @@ object camelCaseMod {
   Only to be used by `CamelCaseStringArray<>`.
   @see CamelCaseStringArray
   */
-  /* Rewritten from type alias, can be one of: 
-    - typings.blueprintjsIcons.blueprintjsIconsStrings._empty
-    - typings.blueprintjsIcons.blueprintjsIconsStrings.`DollarLeftcurlybracketPreviousPart extends QuotationmarkQuotationmark Questionmark FirstPart Colon CapitalizeLessthansignFirstPartGreaterthansignRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`
-  */
-  trait InnerCamelCaseStringArray[Parts /* <: js.Array[Any] */, PreviousPart] extends StObject
+  type InnerCamelCaseStringArray[Parts /* <: js.Array[Any] */, PreviousPart] = _empty | (/* template literal string: ${PreviousPartextends?FirstPart:Capitalize<FirstPart>}${InnerCamelCaseStringArray<RemainingParts,FirstPart>} */ String)
 }

@@ -9,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object weakMapMod {
   
-  @JSImport("ow/dist/source/predicates/weak-map", "WeakMapPredicate")
+  @JSImport("ow/dist/predicates/weak-map", "WeakMapPredicate")
   @js.native
   /**
     @hidden
     */
-  class WeakMapPredicate[KeyType /* <: js.Object */] ()
-    extends Predicate[WeakMap[KeyType, js.Any]] {
+  open class WeakMapPredicate[KeyType /* <: js.Object */] () extends Predicate[WeakMap[KeyType, Any]] {
     def this(options: PredicateOptions) = this()
     
     /**

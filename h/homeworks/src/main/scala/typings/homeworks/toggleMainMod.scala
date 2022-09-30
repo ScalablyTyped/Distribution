@@ -11,8 +11,8 @@ object toggleMainMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/toggle/main", "WorksToggle")
   @js.native
-  class WorksToggle protected ()
+  open class WorksToggle protected ()
     extends typings.homeworks.componentToggleMod.WorksToggle {
-    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[Any]) = this()
   }
 }

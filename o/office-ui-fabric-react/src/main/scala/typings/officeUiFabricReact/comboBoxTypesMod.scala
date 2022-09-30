@@ -15,6 +15,7 @@ import typings.officeUiFabricReact.selectableDroppableTextTypesMod.ISelectableDr
 import typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption
 import typings.react.mod.FormEvent
 import typings.react.mod.global.JSX.Element
+import typings.std.PromiseLike
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
@@ -392,7 +393,7 @@ object comboBoxTypesMod {
     var onResolveOptions: js.UndefOr[
         js.Function1[
           /* options */ js.Array[IComboBoxOption], 
-          js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]]
+          js.Array[IComboBoxOption] | PromiseLike[js.Array[IComboBoxOption]]
         ]
       ] = js.undefined
     
@@ -568,7 +569,7 @@ object comboBoxTypesMod {
       inline def setOnRenderUpperContentUndefined: Self = StObject.set(x, "onRenderUpperContent", js.undefined)
       
       inline def setOnResolveOptions(
-        value: /* options */ js.Array[IComboBoxOption] => js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]]
+        value: /* options */ js.Array[IComboBoxOption] => js.Array[IComboBoxOption] | PromiseLike[js.Array[IComboBoxOption]]
       ): Self = StObject.set(x, "onResolveOptions", js.Any.fromFunction1(value))
       
       inline def setOnResolveOptionsUndefined: Self = StObject.set(x, "onResolveOptions", js.undefined)

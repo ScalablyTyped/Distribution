@@ -14,5 +14,5 @@ object withSpokenMessagesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, speak | debouncedSpeak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, speak | debouncedSpeak]]]
+  inline def default[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, speak | debouncedSpeak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, speak | debouncedSpeak]]]
 }

@@ -59,7 +59,7 @@ open class PathFigure () extends StObject {
   var isShadowed: Boolean = js.native
   
   /**Gets or sets the List of PathSegments that define this PathFigure.*/
-  var segments: List[PathSegment] = js.native
+  var segments: typings.go.mod.List[PathSegment] = js.native
   
   /**Gets or sets the starting point X coordinate of the PathFigure.*/
   var startX: Double = js.native

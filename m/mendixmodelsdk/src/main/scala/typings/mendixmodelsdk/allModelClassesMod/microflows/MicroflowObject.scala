@@ -10,10 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Interfaces and instance classes for types from the Mendix sub meta model `Microflows`.
-  */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowObject")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowObject")
 @js.native
 abstract class MicroflowObject protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObject {
@@ -28,18 +25,18 @@ abstract class MicroflowObject protected ()
 }
 object MicroflowObject {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowObject")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowObject")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowObject.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowObject.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.MicroflowObject.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.MicroflowObject.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

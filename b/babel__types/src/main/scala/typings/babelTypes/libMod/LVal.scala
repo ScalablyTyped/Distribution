@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.libMod.AssignmentPattern_
   - typings.babelTypes.libMod.ArrayPattern_
   - typings.babelTypes.libMod.ObjectPattern_
-  - typings.babelTypes.libMod.TSParameterProperty
-  - typings.babelTypes.libMod.TSAsExpression
-  - typings.babelTypes.libMod.TSTypeAssertion
-  - typings.babelTypes.libMod.TSNonNullExpression
+  - typings.babelTypes.libMod.TSParameterProperty__
+  - typings.babelTypes.libMod.TSAsExpression__
+  - typings.babelTypes.libMod.TSTypeAssertion__
+  - typings.babelTypes.libMod.TSNonNullExpression__
 */
 trait LVal extends StObject
 object LVal {
@@ -26,7 +26,7 @@ object LVal {
   }
   
   inline def AssignmentPattern_(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression | TSTypeAssertion | TSNonNullExpression,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
     right: Expression
   ): typings.babelTypes.libMod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
@@ -63,27 +63,27 @@ object LVal {
     __obj.asInstanceOf[typings.babelTypes.libMod.RestElement_]
   }
   
-  inline def TSAsExpression(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSAsExpression = {
+  inline def TSAsExpression__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSAsExpression__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSAsExpression")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSAsExpression]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSAsExpression__]
   }
   
-  inline def TSNonNullExpression(expression: Expression): typings.babelTypes.libMod.TSNonNullExpression = {
+  inline def TSNonNullExpression__(expression: Expression): typings.babelTypes.libMod.TSNonNullExpression__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSNonNullExpression")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSNonNullExpression]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSNonNullExpression__]
   }
   
-  inline def TSParameterProperty(parameter: Identifier_ | AssignmentPattern_): typings.babelTypes.libMod.TSParameterProperty = {
+  inline def TSParameterProperty__(parameter: Identifier_ | AssignmentPattern_): typings.babelTypes.libMod.TSParameterProperty__ = {
     val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSParameterProperty")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSParameterProperty]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSParameterProperty__]
   }
   
-  inline def TSTypeAssertion(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAssertion = {
+  inline def TSTypeAssertion__(expression: Expression, typeAnnotation: TSType): typings.babelTypes.libMod.TSTypeAssertion__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeAssertion")
-    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeAssertion]
+    __obj.asInstanceOf[typings.babelTypes.libMod.TSTypeAssertion__]
   }
 }

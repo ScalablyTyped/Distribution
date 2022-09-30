@@ -35,7 +35,7 @@ trait Scope extends StObject {
   def bind[T](fn: js.Promise[T]): js.Promise[T] = js.native
   def bind[T](fn: js.Promise[T], span: Span): js.Promise[T] = js.native
   @JSName("bind")
-  def bind_VT_Function1AnyV[V, T /* <: js.Function1[/* repeated */ Any, V] */](fn: T): T = js.native
+  def bind_VT[V, T /* <: js.Function1[/* repeated */ Any, V] */](fn: T): T = js.native
   @JSName("bind")
-  def bind_VT_Function1AnyV[V, T /* <: js.Function1[/* repeated */ Any, V] */](fn: T, span: Span): T = js.native
+  def bind_VT[V, T /* <: js.Function1[/* repeated */ Any, V] */](fn: T, span: Span): T = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-sdsl
 
-Typings are for version 4.1.4
+Typings are for version 4.1.5-beta.1
 
 ## Library description:
 javascript standard data structure library which benchmark against C++ STL

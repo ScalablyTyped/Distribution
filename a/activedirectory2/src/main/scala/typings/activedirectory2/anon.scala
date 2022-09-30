@@ -10,9 +10,7 @@ import typings.activedirectory2.activedirectory2Strings.dn
 import typings.activedirectory2.activedirectory2Strings.employeeID
 import typings.activedirectory2.activedirectory2Strings.givenName
 import typings.activedirectory2.activedirectory2Strings.initials
-import typings.activedirectory2.activedirectory2Strings.ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk
 import typings.activedirectory2.activedirectory2Strings.ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
-import typings.activedirectory2.activedirectory2Strings.ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk
 import typings.activedirectory2.activedirectory2Strings.lockoutTime
 import typings.activedirectory2.activedirectory2Strings.mail
 import typings.activedirectory2.activedirectory2Strings.objectCategory
@@ -74,8 +72,8 @@ object anon {
     var enabled: `false`
     
     var exclude: js.Tuple3[
-        ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
-        ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
+        String, 
+        String, 
         ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
       ]
   }
@@ -83,8 +81,8 @@ object anon {
     
     inline def apply(
       exclude: js.Tuple3[
-          ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
-          ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
+          String, 
+          String, 
           ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
         ]
     ): Enabled = {
@@ -98,8 +96,8 @@ object anon {
       
       inline def setExclude(
         value: js.Tuple3[
-              ldapsQuestionmarkColonSlashSlashForestDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
-              ldapsQuestionmarkColonSlashSlashDomainDnsZonesBackslashDotDotAsteriskSlashDotAsterisk, 
+              String, 
+              String, 
               ldapsQuestionmarkColonSlashSlashDotAsteriskSlashCNEqualssignConfigurationCommaDotAsterisk
             ]
       ): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])

@@ -2,11 +2,11 @@ package typings.rcGesture
 
 import typings.rcGesture.anon.Angle
 import typings.rcGesture.anon.Time
-import typings.rcGesture.rcGestureNumbers.`16`
-import typings.rcGesture.rcGestureNumbers.`1`
-import typings.rcGesture.rcGestureNumbers.`2`
-import typings.rcGesture.rcGestureNumbers.`4`
-import typings.rcGesture.rcGestureNumbers.`8`
+import typings.rcGesture.rcGestureInts.`16`
+import typings.rcGesture.rcGestureInts.`1`
+import typings.rcGesture.rcGestureInts.`2`
+import typings.rcGesture.rcGestureInts.`4`
+import typings.rcGesture.rcGestureInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -11,7 +11,7 @@ trait TileLayer_
   /**
     * Returns this layer's TileJSON object which determines its tile source, zoom bounds and other metadata.
     */
-  def getTileJSON(): js.Any = js.native
+  def getTileJSON(): Any = js.native
   
   /**
     * Set the image format of tiles in this layer. You can use lower-quality tiles in order to load maps faster

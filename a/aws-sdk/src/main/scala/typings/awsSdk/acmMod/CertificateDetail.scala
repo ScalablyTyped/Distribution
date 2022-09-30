@@ -12,7 +12,7 @@ trait CertificateDetail extends StObject {
   var CertificateArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the ACM PCA private certificate authority (CA) that issued the certificate. This has the following format:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 
+    * The Amazon Resource Name (ARN) of the private certificate authority (CA) that issued the certificate. This has the following format:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 
     */
   var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
   
@@ -37,12 +37,12 @@ trait CertificateDetail extends StObject {
   var ExtendedKeyUsages: js.UndefOr[ExtendedKeyUsageList] = js.undefined
   
   /**
-    * The reason the certificate request failed. This value exists only when the certificate status is FAILED. For more information, see Certificate Request Failed in the Amazon Web Services Certificate Manager User Guide. 
+    * The reason the certificate request failed. This value exists only when the certificate status is FAILED. For more information, see Certificate Request Failed in the Certificate Manager User Guide. 
     */
   var FailureReason: js.UndefOr[typings.awsSdk.acmMod.FailureReason] = js.undefined
   
   /**
-    * The date and time at which the certificate was imported. This value exists only when the certificate type is IMPORTED. 
+    * The date and time when the certificate was imported. This value exists only when the certificate type is IMPORTED. 
     */
   var ImportedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -117,7 +117,7 @@ trait CertificateDetail extends StObject {
   var SignatureAlgorithm: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the certificate.
+    * The status of the certificate. A certificate enters status PENDING_VALIDATION upon being requested, unless it fails for any of the reasons given in the troubleshooting topic Certificate request fails. ACM makes repeated attempts to validate a certificate for 72 hours and then times out. If a certificate shows status FAILED or VALIDATION_TIMED_OUT, delete the request, correct the issue with DNS validation or Email validation, and try again. If validation succeeds, the certificate enters status ISSUED. 
     */
   var Status: js.UndefOr[CertificateStatus] = js.undefined
   
@@ -132,7 +132,7 @@ trait CertificateDetail extends StObject {
   var SubjectAlternativeNames: js.UndefOr[DomainList] = js.undefined
   
   /**
-    * The source of the certificate. For certificates provided by ACM, this value is AMAZON_ISSUED. For certificates that you imported with ImportCertificate, this value is IMPORTED. ACM does not provide managed renewal for imported certificates. For more information about the differences between certificates that you import and those that ACM provides, see Importing Certificates in the Amazon Web Services Certificate Manager User Guide. 
+    * The source of the certificate. For certificates provided by ACM, this value is AMAZON_ISSUED. For certificates that you imported with ImportCertificate, this value is IMPORTED. ACM does not provide managed renewal for imported certificates. For more information about the differences between certificates that you import and those that ACM provides, see Importing Certificates in the Certificate Manager User Guide. 
     */
   var Type: js.UndefOr[CertificateType] = js.undefined
 }

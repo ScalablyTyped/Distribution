@@ -31,7 +31,7 @@ trait Filterable3[F /* <: /* import warning: transforms.QualifyReferences#resolv
   ): Any = js.native
   
   @JSName("filter")
-  def filter_REAB_A[R, E, A, B /* <: A */](
+  def filter_REAB[R, E, A, B /* <: A */](
     fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     refinement: Refinement[A, B]
   ): Any = js.native
@@ -53,7 +53,7 @@ trait Filterable3[F /* <: /* import warning: transforms.QualifyReferences#resolv
   ] = js.native
   
   @JSName("partition")
-  def partition_REAB_A[R, E, A, B /* <: A */](
+  def partition_REAB[R, E, A, B /* <: A */](
     fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
     refinement: Refinement[A, B]
   ): Separated_[

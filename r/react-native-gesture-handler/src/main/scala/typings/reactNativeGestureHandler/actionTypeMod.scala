@@ -1,9 +1,9 @@
 package typings.reactNativeGestureHandler
 
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`3`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +12,10 @@ object actionTypeMod {
   
   /* Inlined { readonly REANIMATED_WORKLET :1,  readonly NATIVE_ANIMATED_EVENT :2,  readonly JS_FUNCTION_OLD_API :3,  readonly JS_FUNCTION_NEW_API :4}[keyof { readonly REANIMATED_WORKLET :1,  readonly NATIVE_ANIMATED_EVENT :2,  readonly JS_FUNCTION_OLD_API :3,  readonly JS_FUNCTION_NEW_API :4}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`3`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
   */
   trait ActionType extends StObject
   object ActionType {

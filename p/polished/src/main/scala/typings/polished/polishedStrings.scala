@@ -23,26 +23,6 @@ object polishedStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait BackslashAsterisk extends StObject
-  inline def BackslashAsterisk: BackslashAsterisk = "\\*".asInstanceOf[BackslashAsterisk]
-  
-  @js.native
-  sealed trait BackslashLeftparenthesis extends StObject
-  inline def BackslashLeftparenthesis: BackslashLeftparenthesis = "\\(".asInstanceOf[BackslashLeftparenthesis]
-  
-  @js.native
-  sealed trait BackslashPlussign extends StObject
-  inline def BackslashPlussign: BackslashPlussign = "\\+".asInstanceOf[BackslashPlussign]
-  
-  @js.native
-  sealed trait BackslashRightparenthesis extends StObject
-  inline def BackslashRightparenthesis: BackslashRightparenthesis = "\\)".asInstanceOf[BackslashRightparenthesis]
-  
-  @js.native
-  sealed trait `Backslash^` extends StObject
-  inline def `Backslash^`: `Backslash^` = "\\^".asInstanceOf[`Backslash^`]
-  
-  @js.native
   sealed trait Comma extends StObject
   inline def Comma: Comma = ",".asInstanceOf[Comma]
   
@@ -51,16 +31,8 @@ object polishedStrings {
   inline def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   
   @js.native
-  sealed trait Leftparenthesis extends StObject
-  inline def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
-  
-  @js.native
   sealed trait Plussign extends StObject
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
-  
-  @js.native
-  sealed trait Rightparenthesis extends StObject
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   
   @js.native
   sealed trait Slash extends StObject
@@ -325,16 +297,8 @@ object polishedStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait maxBackslashb extends StObject
-  inline def maxBackslashb: maxBackslashb = "max\\b".asInstanceOf[maxBackslashb]
-  
-  @js.native
   sealed trait min extends StObject
   inline def min: min = "min".asInstanceOf[min]
-  
-  @js.native
-  sealed trait minBackslashb extends StObject
-  inline def minBackslashb: minBackslashb = "min\\b".asInstanceOf[minBackslashb]
   
   @js.native
   sealed trait minorSecond
@@ -395,10 +359,6 @@ object polishedStrings {
   @js.native
   sealed trait sqrt extends StObject
   inline def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
-  
-  @js.native
-  sealed trait sqrtBackslashb extends StObject
-  inline def sqrtBackslashb: sqrtBackslashb = "sqrt\\b".asInstanceOf[sqrtBackslashb]
   
   @js.native
   sealed trait top

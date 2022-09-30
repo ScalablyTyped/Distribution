@@ -15,5 +15,5 @@ object deprecationWarningMod {
   
   inline def resetWarned(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_resetWarned")().asInstanceOf[Unit]
   
-  inline def wrapper(Component: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapper")(List(Component.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def wrapper(Component: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapper")(scala.List(Component.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

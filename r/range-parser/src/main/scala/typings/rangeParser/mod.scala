@@ -1,7 +1,7 @@
 package typings.rangeParser
 
-import typings.rangeParser.rangeParserNumbers.`-1`
-import typings.rangeParser.rangeParserNumbers.`-2`
+import typings.rangeParser.rangeParserInts.`-1`
+import typings.rangeParser.rangeParserInts.`-2`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

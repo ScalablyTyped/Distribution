@@ -2,14 +2,6 @@ package typings.tabulatorTables.mod
 
 import typings.std.Element
 import typings.std.UIEvent
-import typings.tabulatorTables.mod.Tabulator.CellComponent
-import typings.tabulatorTables.mod.Tabulator.ColumnComponent
-import typings.tabulatorTables.mod.Tabulator.Filter
-import typings.tabulatorTables.mod.Tabulator.GroupComponent
-import typings.tabulatorTables.mod.Tabulator.HistoryAction
-import typings.tabulatorTables.mod.Tabulator.RowComponent
-import typings.tabulatorTables.mod.Tabulator.SorterFromTable
-import typings.tabulatorTables.mod.Tabulator.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

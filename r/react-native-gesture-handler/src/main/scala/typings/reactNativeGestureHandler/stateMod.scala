@@ -1,12 +1,12 @@
 package typings.reactNativeGestureHandler
 
 import typings.reactNativeGestureHandler.interfacesMod._TouchNativeArgs
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`3`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`5`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +15,12 @@ object stateMod {
   
   /* Inlined { readonly UNDETERMINED :0,  readonly FAILED :1,  readonly BEGAN :2,  readonly CANCELLED :3,  readonly ACTIVE :4,  readonly END :5}[keyof { readonly UNDETERMINED :0,  readonly FAILED :1,  readonly BEGAN :2,  readonly CANCELLED :3,  readonly ACTIVE :4,  readonly END :5}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`3`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`5`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
   */
   trait State
     extends StObject

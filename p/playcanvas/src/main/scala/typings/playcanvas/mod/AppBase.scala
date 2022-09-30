@@ -100,8 +100,6 @@ open class AppBase protected () extends EventHandler {
     */
   /* private */ var _getScriptReferences: Any = js.native
   
-  def _handleAreaLightDataProperty(prop: Any): Unit = js.native
-  
   var _height: Any = js.native
   
   var _hiddenAttr: String = js.native
@@ -238,6 +236,7 @@ open class AppBase protected () extends EventHandler {
     * @param {number|null} [settings.render.skybox] - The asset ID of the cube map texture to be
     * used as the scene's skybox. Defaults to null.
     * @param {number} settings.render.skyboxIntensity - Multiplier for skybox intensity.
+    * @param {number} settings.render.skyboxLuminance - Lux (lm/m^2) value for skybox intensity when physical light units are enabled.
     * @param {number} settings.render.skyboxMip - The mip level of the skybox to be displayed.
     * Only valid for prefiltered cubemap skyboxes.
     * @param {number[]} settings.render.skyboxRotation - Rotation of skybox.
@@ -253,6 +252,7 @@ open class AppBase protected () extends EventHandler {
     * @param {number} settings.render.ambientBakeSpherePart - How much of the sphere to include when baking ambient light.
     * @param {number} settings.render.ambientBakeOcclusionBrightness - Brighness of the baked ambient occlusion.
     * @param {number} settings.render.ambientBakeOcclusionContrast - Contrast of the baked ambient occlusion.
+    * @param {number} settings.render.ambientLuminance - Lux (lm/m^2) value for ambient light intensity.
     *
     * @param {boolean} settings.render.clusteredLightingEnabled - Enable clustered lighting.
     * @param {boolean} settings.render.lightingShadowsEnabled - If set to true, the clustered lighting will support shadows.
@@ -901,11 +901,12 @@ open class AppBase protected () extends EventHandler {
   var scriptsOrder: js.Array[String] = js.native
   
   /**
-    * Sets the area light LUT asset for this app.
+    * Sets the area light LUT tables for this app.
     *
-    * @param {Asset} asset - LUT asset of type `binary` to be set.
+    * @param {number[]} ltcMat1 - LUT table of type `array` to be set.
+    * @param {number[]} ltcMat2 - LUT table of type `array` to be set.
     */
-  def setAreaLightLuts(asset: Asset_): Unit = js.native
+  def setAreaLightLuts(ltcMat1: js.Array[Double], ltcMat2: js.Array[Double]): Unit = js.native
   
   /**
     * Controls how the canvas fills the window and resizes when the window changes.

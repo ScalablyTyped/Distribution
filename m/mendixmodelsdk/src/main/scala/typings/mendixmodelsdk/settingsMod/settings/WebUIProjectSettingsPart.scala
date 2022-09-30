@@ -2,6 +2,7 @@ package typings.mendixmodelsdk.settingsMod.settings
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
@@ -11,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.WebUIProjectSettingsPart")
+@JSImport("mendixmodelsdk/src/gen/settings", "settings.WebUIProjectSettingsPart")
 @js.native
-class WebUIProjectSettingsPart protected () extends ProjectSettingsPart {
+open class WebUIProjectSettingsPart protected () extends ProjectSettingsPart {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,25 +45,41 @@ class WebUIProjectSettingsPart protected () extends ProjectSettingsPart {
   def feedbackWidgetUpdated: Boolean = js.native
   def feedbackWidgetUpdated_=(newValue: Boolean): Unit = js.native
   
+  /**
+    * In version 9.2.0: deleted
+    */
   def theme: String = js.native
   
   /**
+    * In version 9.0.1: deleted
     * In version 8.0.0: introduced
     */
   def themeConversionStatus: ThemeConversionStatusEnum = js.native
   def themeConversionStatus_=(newValue: ThemeConversionStatusEnum): Unit = js.native
   
   /**
+    * In version 9.2.0: deleted
     * In version 7.9.0: introduced
     */
   def themeModuleName: String = js.native
   def themeModuleName_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.3.0: introduced
+    */
+  def themeModuleOrder: IList[ThemeModuleEntry] = js.native
+  
   def theme_=(newValue: String): Unit = js.native
+  
+  /**
+    * In version 9.10.0: introduced
+    */
+  def useOptimizedClient: UseOptimizedClient = js.native
+  def useOptimizedClient_=(newValue: UseOptimizedClient): Unit = js.native
 }
 object WebUIProjectSettingsPart {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.WebUIProjectSettingsPart")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.WebUIProjectSettingsPart")
   @js.native
   val ^ : js.Any = js.native
   
@@ -83,13 +100,13 @@ object WebUIProjectSettingsPart {
   inline def createIn(container: ProjectSettings): WebUIProjectSettingsPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WebUIProjectSettingsPart]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.WebUIProjectSettingsPart.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.WebUIProjectSettingsPart.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.WebUIProjectSettingsPart.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.WebUIProjectSettingsPart.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

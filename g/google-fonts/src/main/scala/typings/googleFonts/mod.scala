@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(list: List): String = ^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(list: typings.googleFonts.mod.List): String = ^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("google-fonts", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def add(list: List): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def add(list: typings.googleFonts.mod.List): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type List = StringDictionary[Boolean | String | js.Array[String]]
 }

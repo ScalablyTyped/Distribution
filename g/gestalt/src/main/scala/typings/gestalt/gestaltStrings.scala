@@ -543,6 +543,10 @@ object gestaltStrings {
   inline def div: div = "div".asInstanceOf[div]
   
   @js.native
+  sealed trait done extends StObject
+  inline def done: done = "done".asInstanceOf[done]
+  
+  @js.native
   sealed trait dot extends StObject
   inline def dot: dot = "dot".asInstanceOf[dot]
   
@@ -615,6 +619,10 @@ object gestaltStrings {
   @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait enter extends StObject
+  inline def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
   sealed trait envelope
@@ -805,6 +813,10 @@ object gestaltStrings {
     extends StObject
        with Icons
   inline def gmail: gmail = "gmail".asInstanceOf[gmail]
+  
+  @js.native
+  sealed trait go extends StObject
+  inline def go: go = "go".asInstanceOf[go]
   
   @js.native
   sealed trait good extends StObject
@@ -1147,6 +1159,10 @@ object gestaltStrings {
   inline def `new-password`: `new-password` = "new-password".asInstanceOf[`new-password`]
   
   @js.native
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
   sealed trait noDrop extends StObject
   inline def noDrop: noDrop = "noDrop".asInstanceOf[noDrop]
   
@@ -1281,6 +1297,10 @@ object gestaltStrings {
   @js.native
   sealed trait presentation extends StObject
   inline def presentation: presentation = "presentation".asInstanceOf[presentation]
+  
+  @js.native
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
   sealed trait primary extends StObject
@@ -1597,6 +1617,10 @@ object gestaltStrings {
   @js.native
   sealed trait sync extends StObject
   inline def sync: sync = "sync".asInstanceOf[sync]
+  
+  @js.native
+  sealed trait tableHeaderGroup extends StObject
+  inline def tableHeaderGroup: tableHeaderGroup = "tableHeaderGroup".asInstanceOf[tableHeaderGroup]
   
   @js.native
   sealed trait tag

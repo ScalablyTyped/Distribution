@@ -47,6 +47,7 @@ trait IJavaAction
   val typeParameters: IList[ITypeParameter] = js.native
   
   /**
+    * In version 9.0.3: deleted
     * In version 8.0.0: introduced
     */
   val useLegacyCodeGeneration: Boolean = js.native

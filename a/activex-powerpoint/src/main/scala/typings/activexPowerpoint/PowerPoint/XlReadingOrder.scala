@@ -1,16 +1,16 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`-5002`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-5003`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-5004`
+import typings.activexPowerpoint.activexPowerpointInts.`-5002`
+import typings.activexPowerpoint.activexPowerpointInts.`-5003`
+import typings.activexPowerpoint.activexPowerpointInts.`-5004`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-5002`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-5003`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-5004`
+  - typings.activexPowerpoint.activexPowerpointInts.`-5002`
+  - typings.activexPowerpoint.activexPowerpointInts.`-5003`
+  - typings.activexPowerpoint.activexPowerpointInts.`-5004`
 */
 trait XlReadingOrder extends StObject
 object XlReadingOrder {

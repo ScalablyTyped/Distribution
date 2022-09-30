@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Multi extends StObject {
   
+  /** True to modify all matching documents; false to only modify one of the matching documents (the default). */
   var multi: js.UndefOr[Boolean] = js.undefined
 }
 object Multi {

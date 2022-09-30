@@ -6,208 +6,237 @@ import typings.theo.mod.Transform
 import typings.theo.mod.ValueTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object theoStrings {
   
   @js.native
   sealed trait aliases extends StObject
-  @scala.inline
-  def aliases: aliases = "aliases".asInstanceOf[aliases]
+  inline def aliases: aliases = "aliases".asInstanceOf[aliases]
   
   @js.native
-  sealed trait android extends Transform
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
+  sealed trait android
+    extends StObject
+       with Transform
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait androidDotxml extends Format
-  @scala.inline
-  def androidDotxml: androidDotxml = "android.xml".asInstanceOf[androidDotxml]
+  sealed trait androidDotxml
+    extends StObject
+       with Format
+  inline def androidDotxml: androidDotxml = "android.xml".asInstanceOf[androidDotxml]
   
   @js.native
-  sealed trait auraDottokens extends Format
-  @scala.inline
-  def auraDottokens: auraDottokens = "aura.tokens".asInstanceOf[auraDottokens]
+  sealed trait auraDottokens
+    extends StObject
+       with Format
+  inline def auraDottokens: auraDottokens = "aura.tokens".asInstanceOf[auraDottokens]
   
   @js.native
-  sealed trait category extends StyleProperty
-  @scala.inline
-  def category: category = "category".asInstanceOf[category]
+  sealed trait category
+    extends StObject
+       with StyleProperty
+  inline def category: category = "category".asInstanceOf[category]
   
   @js.native
-  sealed trait colorSlashhex extends ValueTransform
-  @scala.inline
-  def colorSlashhex: colorSlashhex = "color/hex".asInstanceOf[colorSlashhex]
+  sealed trait colorSlashhex
+    extends StObject
+       with ValueTransform
+  inline def colorSlashhex: colorSlashhex = "color/hex".asInstanceOf[colorSlashhex]
   
   @js.native
-  sealed trait colorSlashhex8argb extends ValueTransform
-  @scala.inline
-  def colorSlashhex8argb: colorSlashhex8argb = "color/hex8argb".asInstanceOf[colorSlashhex8argb]
+  sealed trait colorSlashhex8argb
+    extends StObject
+       with ValueTransform
+  inline def colorSlashhex8argb: colorSlashhex8argb = "color/hex8argb".asInstanceOf[colorSlashhex8argb]
   
   @js.native
-  sealed trait colorSlashhex8rgba extends ValueTransform
-  @scala.inline
-  def colorSlashhex8rgba: colorSlashhex8rgba = "color/hex8rgba".asInstanceOf[colorSlashhex8rgba]
+  sealed trait colorSlashhex8rgba
+    extends StObject
+       with ValueTransform
+  inline def colorSlashhex8rgba: colorSlashhex8rgba = "color/hex8rgba".asInstanceOf[colorSlashhex8rgba]
   
   @js.native
-  sealed trait colorSlashrgb extends ValueTransform
-  @scala.inline
-  def colorSlashrgb: colorSlashrgb = "color/rgb".asInstanceOf[colorSlashrgb]
+  sealed trait colorSlashrgb
+    extends StObject
+       with ValueTransform
+  inline def colorSlashrgb: colorSlashrgb = "color/rgb".asInstanceOf[colorSlashrgb]
   
   @js.native
-  sealed trait comment extends StyleProperty
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
+  sealed trait comment
+    extends StObject
+       with StyleProperty
+  inline def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
-  sealed trait commonDotjs extends Format
-  @scala.inline
-  def commonDotjs: commonDotjs = "common.js".asInstanceOf[commonDotjs]
+  sealed trait commonDotjs
+    extends StObject
+       with Format
+  inline def commonDotjs: commonDotjs = "common.js".asInstanceOf[commonDotjs]
   
   @js.native
-  sealed trait cssmodulesDotcss extends Format
-  @scala.inline
-  def cssmodulesDotcss: cssmodulesDotcss = "cssmodules.css".asInstanceOf[cssmodulesDotcss]
+  sealed trait cssmodulesDotcss
+    extends StObject
+       with Format
+  inline def cssmodulesDotcss: cssmodulesDotcss = "cssmodules.css".asInstanceOf[cssmodulesDotcss]
   
   @js.native
-  sealed trait `custom-propertiesDotcss` extends Format
-  @scala.inline
-  def `custom-propertiesDotcss`: `custom-propertiesDotcss` = "custom-properties.css".asInstanceOf[`custom-propertiesDotcss`]
+  sealed trait `custom-propertiesDotcss`
+    extends StObject
+       with Format
+  inline def `custom-propertiesDotcss`: `custom-propertiesDotcss` = "custom-properties.css".asInstanceOf[`custom-propertiesDotcss`]
   
   @js.native
   sealed trait global extends StObject
-  @scala.inline
-  def global: global = "global".asInstanceOf[global]
+  inline def global: global = "global".asInstanceOf[global]
   
   @js.native
-  sealed trait html extends Format
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  sealed trait html
+    extends StObject
+       with Format
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait imports extends StObject
-  @scala.inline
-  def imports: imports = "imports".asInstanceOf[imports]
+  inline def imports: imports = "imports".asInstanceOf[imports]
   
   @js.native
-  sealed trait ios extends Transform
-  @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
+  sealed trait ios
+    extends StObject
+       with Transform
+  inline def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
-  sealed trait iosDotjson extends Format
-  @scala.inline
-  def iosDotjson: iosDotjson = "ios.json".asInstanceOf[iosDotjson]
+  sealed trait iosDotjson
+    extends StObject
+       with Format
+  inline def iosDotjson: iosDotjson = "ios.json".asInstanceOf[iosDotjson]
   
   @js.native
-  sealed trait json extends Format
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  sealed trait json
+    extends StObject
+       with Format
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait less extends Format
-  @scala.inline
-  def less: less = "less".asInstanceOf[less]
+  sealed trait less
+    extends StObject
+       with Format
+  inline def less: less = "less".asInstanceOf[less]
   
   @js.native
-  sealed trait listDotscss extends Format
-  @scala.inline
-  def listDotscss: listDotscss = "list.scss".asInstanceOf[listDotscss]
+  sealed trait listDotscss
+    extends StObject
+       with Format
+  inline def listDotscss: listDotscss = "list.scss".asInstanceOf[listDotscss]
   
   @js.native
-  sealed trait mapDotcss extends Format
-  @scala.inline
-  def mapDotcss: mapDotcss = "map.css".asInstanceOf[mapDotcss]
+  sealed trait mapDotcss
+    extends StObject
+       with Format
+  inline def mapDotcss: mapDotcss = "map.css".asInstanceOf[mapDotcss]
   
   @js.native
-  sealed trait mapDotvariableDotscss extends Format
-  @scala.inline
-  def mapDotvariableDotscss: mapDotvariableDotscss = "map.variable.scss".asInstanceOf[mapDotvariableDotscss]
+  sealed trait mapDotvariableDotscss
+    extends StObject
+       with Format
+  inline def mapDotvariableDotscss: mapDotvariableDotscss = "map.variable.scss".asInstanceOf[mapDotvariableDotscss]
   
   @js.native
-  sealed trait meta extends StyleProperty
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
+  sealed trait meta
+    extends StObject
+       with StyleProperty
+  inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
-  sealed trait moduleDotjs extends Format
-  @scala.inline
-  def moduleDotjs: moduleDotjs = "module.js".asInstanceOf[moduleDotjs]
+  sealed trait moduleDotjs
+    extends StObject
+       with Format
+  inline def moduleDotjs: moduleDotjs = "module.js".asInstanceOf[moduleDotjs]
   
   @js.native
-  sealed trait name extends StyleProperty
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  sealed trait name
+    extends StObject
+       with StyleProperty
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait options extends StObject
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
-  sealed trait originalValue extends StyleProperty
-  @scala.inline
-  def originalValue: originalValue = "originalValue".asInstanceOf[originalValue]
+  sealed trait originalValue
+    extends StObject
+       with StyleProperty
+  inline def originalValue: originalValue = "originalValue".asInstanceOf[originalValue]
   
   @js.native
-  sealed trait percentageSlashfloat extends ValueTransform
-  @scala.inline
-  def percentageSlashfloat: percentageSlashfloat = "percentage/float".asInstanceOf[percentageSlashfloat]
+  sealed trait percentageSlashfloat
+    extends StObject
+       with ValueTransform
+  inline def percentageSlashfloat: percentageSlashfloat = "percentage/float".asInstanceOf[percentageSlashfloat]
   
   @js.native
   sealed trait props extends StObject
-  @scala.inline
-  def props: props = "props".asInstanceOf[props]
+  inline def props: props = "props".asInstanceOf[props]
   
   @js.native
-  sealed trait raw extends Transform
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
+  sealed trait raw
+    extends StObject
+       with Transform
+  inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
-  sealed trait rawDotjson extends Format
-  @scala.inline
-  def rawDotjson: rawDotjson = "raw.json".asInstanceOf[rawDotjson]
+  sealed trait rawDotjson
+    extends StObject
+       with Format
+  inline def rawDotjson: rawDotjson = "raw.json".asInstanceOf[rawDotjson]
   
   @js.native
-  sealed trait relativeSlashpixel extends ValueTransform
-  @scala.inline
-  def relativeSlashpixel: relativeSlashpixel = "relative/pixel".asInstanceOf[relativeSlashpixel]
+  sealed trait relativeSlashpixel
+    extends StObject
+       with ValueTransform
+  inline def relativeSlashpixel: relativeSlashpixel = "relative/pixel".asInstanceOf[relativeSlashpixel]
   
   @js.native
-  sealed trait relativeSlashpixelValue extends ValueTransform
-  @scala.inline
-  def relativeSlashpixelValue: relativeSlashpixelValue = "relative/pixelValue".asInstanceOf[relativeSlashpixelValue]
+  sealed trait relativeSlashpixelValue
+    extends StObject
+       with ValueTransform
+  inline def relativeSlashpixelValue: relativeSlashpixelValue = "relative/pixelValue".asInstanceOf[relativeSlashpixelValue]
   
   @js.native
-  sealed trait sass extends Format
-  @scala.inline
-  def sass: sass = "sass".asInstanceOf[sass]
+  sealed trait sass
+    extends StObject
+       with Format
+  inline def sass: sass = "sass".asInstanceOf[sass]
   
   @js.native
-  sealed trait scss extends Format
-  @scala.inline
-  def scss: scss = "scss".asInstanceOf[scss]
+  sealed trait scss
+    extends StObject
+       with Format
+  inline def scss: scss = "scss".asInstanceOf[scss]
   
   @js.native
-  sealed trait styl extends Format
-  @scala.inline
-  def styl: styl = "styl".asInstanceOf[styl]
+  sealed trait styl
+    extends StObject
+       with Format
+  inline def styl: styl = "styl".asInstanceOf[styl]
   
   @js.native
-  sealed trait `type` extends StyleProperty
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
+  sealed trait `type`
+    extends StObject
+       with StyleProperty
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
-  sealed trait value extends StyleProperty
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  sealed trait value
+    extends StObject
+       with StyleProperty
+  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait web extends Transform
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
+  sealed trait web
+    extends StObject
+       with Transform
+  inline def web: web = "web".asInstanceOf[web]
 }

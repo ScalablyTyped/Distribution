@@ -15,6 +15,11 @@ trait CreateProjectRequest extends StObject {
     * The project's name.
     */
   var name: Name
+  
+  /**
+    * The VPC security groups and subnets that are attached to a project.
+    */
+  var vpcConfig: js.UndefOr[VpcConfig] = js.undefined
 }
 object CreateProjectRequest {
   
@@ -30,5 +35,9 @@ object CreateProjectRequest {
     inline def setDefaultJobTimeoutMinutesUndefined: Self = StObject.set(x, "defaultJobTimeoutMinutes", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
   }
 }

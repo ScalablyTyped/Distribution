@@ -1,6 +1,7 @@
 package typings.awsSdkTypes
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdkTypes.anon.AuthSchemes
 import typings.std.Record
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -169,7 +170,7 @@ object endpointMod {
     
     var headers: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
     
-    var properties: js.UndefOr[Record[String, EndpointObjectProperty]] = js.undefined
+    var properties: js.UndefOr[AuthSchemes & (Record[String, EndpointObjectProperty])] = js.undefined
     
     var url: URL
   }
@@ -186,7 +187,7 @@ object endpointMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setProperties(value: Record[String, EndpointObjectProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: AuthSchemes & (Record[String, EndpointObjectProperty])): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       

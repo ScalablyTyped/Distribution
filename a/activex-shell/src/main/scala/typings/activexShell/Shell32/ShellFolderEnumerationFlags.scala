@@ -1,35 +1,35 @@
 package typings.activexShell.Shell32
 
-import typings.activexShell.activexShellNumbers.`0x00010`
-import typings.activexShell.activexShellNumbers.`0x00020`
-import typings.activexShell.activexShellNumbers.`0x00040`
-import typings.activexShell.activexShellNumbers.`0x00080`
-import typings.activexShell.activexShellNumbers.`0x00200`
-import typings.activexShell.activexShellNumbers.`0x00400`
-import typings.activexShell.activexShellNumbers.`0x00800`
-import typings.activexShell.activexShellNumbers.`0x01000`
-import typings.activexShell.activexShellNumbers.`0x02000`
-import typings.activexShell.activexShellNumbers.`0x04000`
-import typings.activexShell.activexShellNumbers.`0x08000`
-import typings.activexShell.activexShellNumbers.`0x10000`
+import typings.activexShell.activexShellInts.`0x00010`
+import typings.activexShell.activexShellInts.`0x00020`
+import typings.activexShell.activexShellInts.`0x00040`
+import typings.activexShell.activexShellInts.`0x00080`
+import typings.activexShell.activexShellInts.`0x00200`
+import typings.activexShell.activexShellInts.`0x00400`
+import typings.activexShell.activexShellInts.`0x00800`
+import typings.activexShell.activexShellInts.`0x01000`
+import typings.activexShell.activexShellInts.`0x02000`
+import typings.activexShell.activexShellInts.`0x04000`
+import typings.activexShell.activexShellInts.`0x08000`
+import typings.activexShell.activexShellInts.`0x10000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShell.activexShellNumbers.`0x00010`
-  - typings.activexShell.activexShellNumbers.`0x00020`
-  - typings.activexShell.activexShellNumbers.`0x00040`
-  - typings.activexShell.activexShellNumbers.`0x00080`
-  - typings.activexShell.activexShellNumbers.`0x00200`
-  - typings.activexShell.activexShellNumbers.`0x00400`
-  - typings.activexShell.activexShellNumbers.`0x00800`
-  - typings.activexShell.activexShellNumbers.`0x01000`
-  - typings.activexShell.activexShellNumbers.`0x02000`
-  - typings.activexShell.activexShellNumbers.`0x04000`
-  - typings.activexShell.activexShellNumbers.`0x08000`
-  - typings.activexShell.activexShellNumbers.`0x10000`
+  - typings.activexShell.activexShellInts.`0x00010`
+  - typings.activexShell.activexShellInts.`0x00020`
+  - typings.activexShell.activexShellInts.`0x00040`
+  - typings.activexShell.activexShellInts.`0x00080`
+  - typings.activexShell.activexShellInts.`0x00200`
+  - typings.activexShell.activexShellInts.`0x00400`
+  - typings.activexShell.activexShellInts.`0x00800`
+  - typings.activexShell.activexShellInts.`0x01000`
+  - typings.activexShell.activexShellInts.`0x02000`
+  - typings.activexShell.activexShellInts.`0x04000`
+  - typings.activexShell.activexShellInts.`0x08000`
+  - typings.activexShell.activexShellInts.`0x10000`
 */
 trait ShellFolderEnumerationFlags extends StObject
 object ShellFolderEnumerationFlags {

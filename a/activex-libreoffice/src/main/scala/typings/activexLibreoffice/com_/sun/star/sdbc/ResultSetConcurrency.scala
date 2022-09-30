@@ -1,7 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.sdbc
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1007`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1008`
+import typings.activexLibreoffice.activexLibreofficeInts.`1007`
+import typings.activexLibreoffice.activexLibreofficeInts.`1008`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ResultSetConcurrency {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1007`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1008`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1007`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1008`
   */
   trait Constants extends StObject
   object Constants {

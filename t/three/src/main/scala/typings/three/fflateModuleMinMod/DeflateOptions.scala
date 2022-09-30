@@ -1,18 +1,18 @@
 package typings.three.fflateModuleMinMod
 
-import typings.three.threeNumbers.`0`
-import typings.three.threeNumbers.`10`
-import typings.three.threeNumbers.`11`
-import typings.three.threeNumbers.`12`
-import typings.three.threeNumbers.`1`
-import typings.three.threeNumbers.`2`
-import typings.three.threeNumbers.`3`
-import typings.three.threeNumbers.`4`
-import typings.three.threeNumbers.`5`
-import typings.three.threeNumbers.`6`
-import typings.three.threeNumbers.`7`
-import typings.three.threeNumbers.`8`
-import typings.three.threeNumbers.`9`
+import typings.three.threeInts.`0`
+import typings.three.threeInts.`10`
+import typings.three.threeInts.`11`
+import typings.three.threeInts.`12`
+import typings.three.threeInts.`1`
+import typings.three.threeInts.`2`
+import typings.three.threeInts.`3`
+import typings.three.threeInts.`4`
+import typings.three.threeInts.`5`
+import typings.three.threeInts.`6`
+import typings.three.threeInts.`7`
+import typings.three.threeInts.`8`
+import typings.three.threeInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

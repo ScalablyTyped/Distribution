@@ -31,8 +31,8 @@ trait InAppPurchase
   
   /**
     * Resolves with an array of `Product` objects.
-    * 
-  Retrieves the product descriptions.
+    *
+    * Retrieves the product descriptions.
     */
   def getProducts(productIDs: js.Array[String]): js.Promise[js.Array[Product]] = js.native
   

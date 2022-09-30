@@ -1,8 +1,8 @@
 package typings.gitlab
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.gitlab.gitlabNumbers.`3`
-import typings.gitlab.gitlabNumbers.`4`
+import typings.gitlab.gitlabInts.`3`
+import typings.gitlab.gitlabInts.`4`
 import typings.gitlab.gitlabStrings.execution
 import typings.gitlab.gitlabStrings.memory
 import org.scalablytyped.runtime.StObject

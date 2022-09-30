@@ -20,6 +20,7 @@ import typings.ssri.anon.Strict
 import typings.ssri.anon.`0`
 import typings.ssri.anon.`1`
 import typings.ssri.ssriBooleans.`false`
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,19 +138,19 @@ object mod {
   inline def checkData(data: Buffer, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   
-  inline def checkStream(stream: Readable, sri: String): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  inline def checkStream(stream: Readable, sri: String, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: String): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: String, opts: OptionsPickAlgorithm): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   inline def checkStream(stream: Readable, sri: String, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  inline def checkStream(stream: Readable, sri: HashLike): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  inline def checkStream(stream: Readable, sri: HashLike, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: HashLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: HashLike, opts: OptionsPickAlgorithm): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   inline def checkStream(stream: Readable, sri: HashLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  inline def checkStream(stream: Readable, sri: IntegrityLike): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
-  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
+  inline def checkStream(stream: Readable, sri: IntegrityLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: OptionsPickAlgorithm): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   inline def checkStream(stream: Readable, sri: IntegrityLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
   
-  inline def checkStream_Promise(stream: Readable, sri: String): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  inline def checkStream_Promise(stream: Readable, sri: HashLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  inline def checkStream_Promise(stream: Readable, sri: IntegrityLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream_PromiseLike(stream: Readable, sri: String): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
+  inline def checkStream_PromiseLike(stream: Readable, sri: HashLike): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
+  inline def checkStream_PromiseLike(stream: Readable, sri: IntegrityLike): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   
   inline def create(): typings.node.cryptoMod.Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.node.cryptoMod.Hash]
   inline def create(opts: Algorithms): typings.node.cryptoMod.Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.node.cryptoMod.Hash]
@@ -177,11 +178,11 @@ object mod {
   
   inline def fromHex_Union(hexDigest: String, algorithm: String): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
   
-  inline def fromStream(stream: Readable): js.Thenable[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[IntegrityMap]]
+  inline def fromStream(stream: Readable): js.Promise[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IntegrityMap]]
   inline def fromStream(stream: Readable, opts: Algorithms): js.Promise[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntegrityMap]]
-  inline def fromStream(stream: Readable, opts: Promise): js.Thenable[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[IntegrityMap]]
+  inline def fromStream(stream: Readable, opts: Promise): PromiseLike[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[IntegrityMap]]
   
-  inline def fromStream_Promise(stream: Readable): js.Promise[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IntegrityMap]]
+  inline def fromStream_PromiseLike(stream: Readable): PromiseLike[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[IntegrityMap]]
   
   inline def integrityStream(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("integrityStream")().asInstanceOf[Transform]
   inline def integrityStream(opts: typings.ssri.anon.Integrity): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("integrityStream")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]

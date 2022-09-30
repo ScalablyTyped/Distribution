@@ -1151,10 +1151,6 @@ object octokitOpenapiTypesStrings {
   inline def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait `wonApostrophet fix` extends StObject
-  inline def `wonApostrophet fix`: `wonApostrophet fix` = ("won't fix").asInstanceOf[`wonApostrophet fix`]
-  
-  @js.native
   sealed trait wont_fix extends StObject
   inline def wont_fix: wont_fix = "wont_fix".asInstanceOf[wont_fix]
   

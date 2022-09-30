@@ -10,10 +10,10 @@ object instancesMod extends Shortcut {
   
   @JSImport("ink/build/instances", JSImport.Default)
   @js.native
-  val default: WeakMap[js.Object, js.Any] = js.native
+  val default: WeakMap[js.Object, Any] = js.native
   
-  type _To = WeakMap[js.Object, js.Any]
+  type _To = WeakMap[js.Object, Any]
   
   /* This means you don't have to write `default`, but can instead just say `instancesMod.foo` */
-  override def _to: WeakMap[js.Object, js.Any] = default
+  override def _to: WeakMap[js.Object, Any] = default
 }

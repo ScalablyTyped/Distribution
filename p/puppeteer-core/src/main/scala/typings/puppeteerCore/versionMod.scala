@@ -8,5 +8,5 @@ object versionMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/generated/version", "packageVersion")
   @js.native
-  val packageVersion: /* "18.0.4" */ String = js.native
+  val packageVersion: /* "18.0.5" */ String = js.native
 }

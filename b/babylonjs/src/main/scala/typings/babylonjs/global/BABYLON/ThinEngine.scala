@@ -167,7 +167,7 @@ object ThinEngine {
     * @param useArrayBuffer defines a boolean indicating that date must be returned as ArrayBuffer
     * @param onError callback called when the file fails to load
     * @returns a file request object
-    * @hidden
+    * @internal
     */
   inline def _FileToolsLoadFile(
     url: String,
@@ -388,7 +388,7 @@ object ThinEngine {
     * @param mimeType optional mime type
     * @param imageBitmapOptions optional the options to use when creating an ImageBitmap
     * @returns the HTMLImageElement of the loaded image
-    * @hidden
+    * @internal
     */
   inline def _FileToolsLoadImage(
     input: String,
@@ -517,7 +517,7 @@ object ThinEngine {
   def _IsSupported: Any = js.native
   inline def _IsSupported_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsSupported")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.ThinEngine._TextureLoaders")
   @js.native
   def _TextureLoaders: js.Array[IInternalTextureLoader] = js.native

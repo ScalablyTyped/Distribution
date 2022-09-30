@@ -34,6 +34,6 @@ object IListTopicSnapshotsResponse {
     
     inline def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
     
-    inline def setSnapshotsVarargs(value: String*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
+    inline def setSnapshotsVarargs(value: String*): Self = StObject.set(x, "snapshots", js.Array(value*))
   }
 }

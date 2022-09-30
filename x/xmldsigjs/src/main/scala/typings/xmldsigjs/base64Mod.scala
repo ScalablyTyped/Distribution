@@ -9,7 +9,7 @@ object base64Mod {
   
   @JSImport("xmldsigjs/build/types/xml/transforms/base64", "XmlDsigBase64Transform")
   @js.native
-  class XmlDsigBase64Transform () extends Transform {
+  open class XmlDsigBase64Transform () extends Transform {
     def this(properties: js.Object) = this()
   }
 }

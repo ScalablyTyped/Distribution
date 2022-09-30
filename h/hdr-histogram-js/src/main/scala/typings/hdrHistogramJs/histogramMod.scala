@@ -19,22 +19,22 @@ object histogramMod {
   inline def toSummary(histogram: Histogram): HistogramSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("toSummary")(histogram.asInstanceOf[js.Any]).asInstanceOf[HistogramSummary]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.hdrHistogramJs.hdrHistogramJsNumbers.`8`
-    - typings.hdrHistogramJs.hdrHistogramJsNumbers.`16`
-    - typings.hdrHistogramJs.hdrHistogramJsNumbers.`32`
-    - typings.hdrHistogramJs.hdrHistogramJsNumbers.`64`
+    - typings.hdrHistogramJs.hdrHistogramJsInts.`8`
+    - typings.hdrHistogramJs.hdrHistogramJsInts.`16`
+    - typings.hdrHistogramJs.hdrHistogramJsInts.`32`
+    - typings.hdrHistogramJs.hdrHistogramJsInts.`64`
     - typings.hdrHistogramJs.hdrHistogramJsStrings.packed
   */
   trait BitBucketSize extends StObject
   object BitBucketSize {
     
-    inline def `16`: typings.hdrHistogramJs.hdrHistogramJsNumbers.`16` = 16.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsNumbers.`16`]
+    inline def `16`: typings.hdrHistogramJs.hdrHistogramJsInts.`16` = 16.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsInts.`16`]
     
-    inline def `32`: typings.hdrHistogramJs.hdrHistogramJsNumbers.`32` = 32.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsNumbers.`32`]
+    inline def `32`: typings.hdrHistogramJs.hdrHistogramJsInts.`32` = 32.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsInts.`32`]
     
-    inline def `64`: typings.hdrHistogramJs.hdrHistogramJsNumbers.`64` = 64.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsNumbers.`64`]
+    inline def `64`: typings.hdrHistogramJs.hdrHistogramJsInts.`64` = 64.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsInts.`64`]
     
-    inline def `8`: typings.hdrHistogramJs.hdrHistogramJsNumbers.`8` = 8.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsNumbers.`8`]
+    inline def `8`: typings.hdrHistogramJs.hdrHistogramJsInts.`8` = 8.asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsInts.`8`]
     
     inline def packed: typings.hdrHistogramJs.hdrHistogramJsStrings.packed = "packed".asInstanceOf[typings.hdrHistogramJs.hdrHistogramJsStrings.packed]
   }

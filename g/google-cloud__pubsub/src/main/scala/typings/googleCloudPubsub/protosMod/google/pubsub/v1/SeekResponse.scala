@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SeekResponse.
   * @param [properties] Properties to set
   */
-class SeekResponse ()
+open class SeekResponse ()
   extends StObject
      with ISeekResponse {
   def this(properties: ISeekResponse) = this()
@@ -25,7 +24,7 @@ class SeekResponse ()
     * Converts this SeekResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object SeekResponse {
   
@@ -42,6 +41,8 @@ object SeekResponse {
   inline def create(): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SeekResponse]
   inline def create(properties: ISeekResponse): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SeekResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SeekResponse]
   /**
     * Decodes a SeekResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -53,9 +54,8 @@ object SeekResponse {
   /* static member */
   inline def decode(reader: Reader): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
   inline def decode(reader: Reader, length: Double): SeekResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SeekResponse]
-  inline def decode(reader: Uint8Array): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
-  inline def decode(reader: Uint8Array, length: Double): SeekResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SeekResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
   /**
     * Decodes a SeekResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -65,7 +65,6 @@ object SeekResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
-  inline def decodeDelimited(reader: Uint8Array): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
   
   /**
     * Encodes the specified SeekResponse message. Does not implicitly {@link google.pubsub.v1.SeekResponse.verify|verify} messages.
@@ -93,7 +92,16 @@ object SeekResponse {
     * @returns SeekResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): SeekResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SeekResponse]
+  
+  /**
+    * Gets the default type url for SeekResponse
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a SeekResponse message. Also converts values to other types if specified.
@@ -102,8 +110,8 @@ object SeekResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SeekResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SeekResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SeekResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SeekResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SeekResponse message.
@@ -111,5 +119,5 @@ object SeekResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

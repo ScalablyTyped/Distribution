@@ -4,6 +4,8 @@ import typings.electron.electronStrings.`lock-screen`
 import typings.electron.electronStrings.`on-ac`
 import typings.electron.electronStrings.`on-battery`
 import typings.electron.electronStrings.`unlock-screen`
+import typings.electron.electronStrings.`user-did-become-active`
+import typings.electron.electronStrings.`user-did-resign-active`
 import typings.electron.electronStrings.active
 import typings.electron.electronStrings.idle
 import typings.electron.electronStrings.locked
@@ -35,6 +37,10 @@ trait PowerMonitor
   def addListener_suspend(event: suspend, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  def addListener_userdidbecomeactive(event: `user-did-become-active`, listener: js.Function): this.type = js.native
+  @JSName("addListener")
+  def addListener_userdidresignactive(event: `user-did-resign-active`, listener: js.Function): this.type = js.native
   
   /**
     * The system's current state. Can be `active`, `idle`, `locked` or `unknown`.
@@ -47,9 +53,25 @@ trait PowerMonitor
   
   /**
     * Idle time in seconds
-  Calculate system idle time in seconds.
+    *
+    * Calculate system idle time in seconds.
     */
   def getSystemIdleTime(): Double = js.native
+  
+  /**
+    * Whether the system is on battery power.
+    *
+    * To monitor for changes in this property, use the `on-battery` and `on-ac`
+    * events.
+    */
+  def isOnBatteryPower(): Boolean = js.native
+  
+  /**
+    * A `boolean` property. True if the system is on battery power.
+    *
+    * See `powerMonitor.isOnBatteryPower()`.
+    */
+  var onBatteryPower: Boolean = js.native
   
   // Docs: https://electronjs.org/docs/api/power-monitor
   /**
@@ -75,8 +97,6 @@ trait PowerMonitor
   def on_onbattery(event: `on-battery`, listener: js.Function): this.type = js.native
   /**
     * Emitted when system is resuming.
-    *
-    * @platform darwin,win32
     */
   @JSName("on")
   def on_resume(event: resume, listener: js.Function): this.type = js.native
@@ -92,8 +112,6 @@ trait PowerMonitor
   def on_shutdown(event: shutdown, listener: js.Function): this.type = js.native
   /**
     * Emitted when the system is suspending.
-    *
-    * @platform darwin,win32
     */
   @JSName("on")
   def on_suspend(event: suspend, listener: js.Function): this.type = js.native
@@ -104,6 +122,22 @@ trait PowerMonitor
     */
   @JSName("on")
   def on_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  /**
+    * Emitted when a login session is activated. See documentation for more
+    * information.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  def on_userdidbecomeactive(event: `user-did-become-active`, listener: js.Function): this.type = js.native
+  /**
+    * Emitted when a login session is deactivated. See documentation for more
+    * information.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  def on_userdidresignactive(event: `user-did-resign-active`, listener: js.Function): this.type = js.native
   
   @JSName("once")
   def once_lockscreen(event: `lock-screen`, listener: js.Function): this.type = js.native
@@ -119,6 +153,10 @@ trait PowerMonitor
   def once_suspend(event: suspend, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def once_userdidbecomeactive(event: `user-did-become-active`, listener: js.Function): this.type = js.native
+  @JSName("once")
+  def once_userdidresignactive(event: `user-did-resign-active`, listener: js.Function): this.type = js.native
   
   @JSName("removeListener")
   def removeListener_lockscreen(event: `lock-screen`, listener: js.Function): this.type = js.native
@@ -134,4 +172,8 @@ trait PowerMonitor
   def removeListener_suspend(event: suspend, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_unlockscreen(event: `unlock-screen`, listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_userdidbecomeactive(event: `user-did-become-active`, listener: js.Function): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_userdidresignactive(event: `user-did-resign-active`, listener: js.Function): this.type = js.native
 }

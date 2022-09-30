@@ -250,8 +250,8 @@ object Structs {
       * Removes all the items.
       * @param skipCallback Skip calling the List.removeCallback. Default false.
       */
-    def removeAll(): List[T] = js.native
-    def removeAll(skipCallback: Boolean): List[T] = js.native
+    def removeAll(): typings.phaser.Phaser.Structs.List[T] = js.native
+    def removeAll(skipCallback: Boolean): typings.phaser.Phaser.Structs.List[T] = js.native
     
     /**
       * Removes the item at the given position in the List.
@@ -291,7 +291,7 @@ object Structs {
     /**
       * Reverses the order of all children in this List.
       */
-    def reverse(): List[T] = js.native
+    def reverse(): typings.phaser.Phaser.Structs.List[T] = js.native
     
     /**
       * Sends the given child to the bottom of this List.
@@ -314,7 +314,7 @@ object Structs {
     /**
       * Shuffles the items in the list.
       */
-    def shuffle(): List[T] = js.native
+    def shuffle(): typings.phaser.Phaser.Structs.List[T] = js.native
     
     /**
       * Clears the List and recreates its internal array.

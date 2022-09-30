@@ -176,7 +176,7 @@ object mod {
   inline def many1[TToken, TOptions, TValue](p: Parser[TToken, TOptions, TValue]): Parser[TToken, TOptions, Array[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("many1")(p.asInstanceOf[js.Any]).asInstanceOf[Parser[TToken, TOptions, Array[TValue]]]
   
   inline def map[TToken, TOptions, TValue1, TValue2](
-    p: Matcher[TToken, TOptions, TValue1],
+    p: Parser[TToken, TOptions, TValue1],
     /**
     * @param v - A value matched by the base parser.
     * @param data - Data object (tokens and options).
@@ -190,7 +190,7 @@ object mod {
       /* j */ Double, 
       TValue2
     ]
-  ): Matcher[TToken, TOptions, TValue2] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(p.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValue2]]
+  ): Parser[TToken, TOptions, TValue2] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(p.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValue2]]
   
   inline def map1[TToken, TOptions, TValue1, TValue2](
     p: Parser[TToken, TOptions, TValue1],
@@ -208,8 +208,8 @@ object mod {
     ]
   ): Parser[TToken, TOptions, TValue2] = (^.asInstanceOf[js.Dynamic].applyDynamic("map1")(p.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValue2]]
   
-  inline def map_TTokenTOptionsTValue1TValue2_Parser[TToken, TOptions, TValue1, TValue2](
-    p: Parser[TToken, TOptions, TValue1],
+  inline def map_TTokenTOptionsTValue1TValue2_Matcher[TToken, TOptions, TValue1, TValue2](
+    p: Matcher[TToken, TOptions, TValue1],
     /**
     * @param v - A value matched by the base parser.
     * @param data - Data object (tokens and options).
@@ -223,7 +223,7 @@ object mod {
       /* j */ Double, 
       TValue2
     ]
-  ): Parser[TToken, TOptions, TValue2] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(p.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Parser[TToken, TOptions, TValue2]]
+  ): Matcher[TToken, TOptions, TValue2] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(p.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Matcher[TToken, TOptions, TValue2]]
   
   inline def `match`[TToken, TOptions, TValue](matcher: Matcher[TToken, TOptions, TValue], tokens: js.Array[TToken], options: TOptions): TValue = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(matcher.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TValue]
   

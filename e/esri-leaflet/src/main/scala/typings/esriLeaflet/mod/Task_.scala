@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "Task")
 @js.native
-class Task_ protected ()
+open class Task_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Task_ {
   def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.Service) = this()
   def this(options: TaskOptions) = this()

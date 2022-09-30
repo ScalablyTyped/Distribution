@@ -1,5 +1,6 @@
 package typings.xstate.typesMod
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,7 +105,7 @@ object InvokeConfig {
     ): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     inline def setSrcFunction3(
-      value: (TContext, TEvent, /* meta */ InvokeMeta) => js.Thenable[Any] | (StateMachine[Any, Any, Any, Any, Any, Any, Any]) | Subscribable[EventObject] | (InvokeCallback[Any, TEvent]) | (Behavior[Any, Any])
+      value: (TContext, TEvent, /* meta */ InvokeMeta) => PromiseLike[Any] | (StateMachine[Any, Any, Any, Any, Any, Any, Any]) | Subscribable[EventObject] | (InvokeCallback[Any, TEvent]) | (Behavior[Any, Any])
     ): Self = StObject.set(x, "src", js.Any.fromFunction3(value))
   }
 }

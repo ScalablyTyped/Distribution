@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.ClientRequest")
 @js.native
-class ClientRequest protected ()
+open class ClientRequest protected ()
   extends typings.electron.Electron.ClientRequest {
   def this(options: String) = this()
   /**

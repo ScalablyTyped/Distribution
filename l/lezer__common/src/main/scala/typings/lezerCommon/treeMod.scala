@@ -6,12 +6,12 @@ import typings.lezerCommon.anon.Enter
 import typings.lezerCommon.anon.Error
 import typings.lezerCommon.anon.From
 import typings.lezerCommon.anon.MakeTree
-import typings.lezerCommon.lezerCommonNumbers.`-1`
-import typings.lezerCommon.lezerCommonNumbers.`-2`
-import typings.lezerCommon.lezerCommonNumbers.`0`
-import typings.lezerCommon.lezerCommonNumbers.`1`
-import typings.lezerCommon.lezerCommonNumbers.`2`
-import typings.lezerCommon.lezerCommonNumbers.`4`
+import typings.lezerCommon.lezerCommonInts.`-1`
+import typings.lezerCommon.lezerCommonInts.`-2`
+import typings.lezerCommon.lezerCommonInts.`0`
+import typings.lezerCommon.lezerCommonInts.`1`
+import typings.lezerCommon.lezerCommonInts.`2`
+import typings.lezerCommon.lezerCommonInts.`4`
 import typings.lezerCommon.parseMod.Parser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -614,12 +614,12 @@ object treeMod {
   type NodePropSource = js.Function1[/* type */ NodeType, Null | (js.Tuple2[NodeProp[Any], Any])]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.lezerCommon.lezerCommonNumbers.`-2`
-    - typings.lezerCommon.lezerCommonNumbers.`-1`
-    - typings.lezerCommon.lezerCommonNumbers.`0`
-    - typings.lezerCommon.lezerCommonNumbers.`1`
-    - typings.lezerCommon.lezerCommonNumbers.`2`
-    - typings.lezerCommon.lezerCommonNumbers.`4`
+    - typings.lezerCommon.lezerCommonInts.`-2`
+    - typings.lezerCommon.lezerCommonInts.`-1`
+    - typings.lezerCommon.lezerCommonInts.`0`
+    - typings.lezerCommon.lezerCommonInts.`1`
+    - typings.lezerCommon.lezerCommonInts.`2`
+    - typings.lezerCommon.lezerCommonInts.`4`
   */
   trait Side extends StObject
   object Side {

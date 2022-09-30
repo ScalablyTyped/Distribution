@@ -16,7 +16,7 @@ object utilMod {
     
     inline def defer(callback: TimedCallback): OneOffTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(callback.asInstanceOf[js.Any]).asInstanceOf[OneOffTimer]
     
-    inline def method(name: String, args: Any*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function]
+    inline def method(name: String, args: Any*): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(scala.List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function]
     
     inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   }

@@ -1,6 +1,5 @@
 package typings.awsLambda.lexV2Mod
 
-import typings.awsLambda.awsLambdaStrings.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait LexV2ListSlotValue
   extends StObject
      with LexV2Slot {
   
-  var shape: List
+  var shape: typings.awsLambda.awsLambdaStrings.List
   
   var value: LexV2SlotValue
   
@@ -24,7 +23,7 @@ object LexV2ListSlotValue {
   
   extension [Self <: LexV2ListSlotValue](x: Self) {
     
-    inline def setShape(value: List): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: typings.awsLambda.awsLambdaStrings.List): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setValue(value: LexV2SlotValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

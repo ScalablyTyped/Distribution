@@ -1,40 +1,40 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`10`
-import typings.activexAdodb.activexAdodbNumbers.`11`
-import typings.activexAdodb.activexAdodbNumbers.`12`
-import typings.activexAdodb.activexAdodbNumbers.`13`
-import typings.activexAdodb.activexAdodbNumbers.`14`
-import typings.activexAdodb.activexAdodbNumbers.`15`
-import typings.activexAdodb.activexAdodbNumbers.`1`
-import typings.activexAdodb.activexAdodbNumbers.`2`
-import typings.activexAdodb.activexAdodbNumbers.`3`
-import typings.activexAdodb.activexAdodbNumbers.`4`
-import typings.activexAdodb.activexAdodbNumbers.`5`
-import typings.activexAdodb.activexAdodbNumbers.`6`
-import typings.activexAdodb.activexAdodbNumbers.`7`
-import typings.activexAdodb.activexAdodbNumbers.`8`
-import typings.activexAdodb.activexAdodbNumbers.`9`
+import typings.activexAdodb.activexAdodbInts.`10`
+import typings.activexAdodb.activexAdodbInts.`11`
+import typings.activexAdodb.activexAdodbInts.`12`
+import typings.activexAdodb.activexAdodbInts.`13`
+import typings.activexAdodb.activexAdodbInts.`14`
+import typings.activexAdodb.activexAdodbInts.`15`
+import typings.activexAdodb.activexAdodbInts.`1`
+import typings.activexAdodb.activexAdodbInts.`2`
+import typings.activexAdodb.activexAdodbInts.`3`
+import typings.activexAdodb.activexAdodbInts.`4`
+import typings.activexAdodb.activexAdodbInts.`5`
+import typings.activexAdodb.activexAdodbInts.`6`
+import typings.activexAdodb.activexAdodbInts.`7`
+import typings.activexAdodb.activexAdodbInts.`8`
+import typings.activexAdodb.activexAdodbInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`1`
-  - typings.activexAdodb.activexAdodbNumbers.`9`
-  - typings.activexAdodb.activexAdodbNumbers.`2`
-  - typings.activexAdodb.activexAdodbNumbers.`11`
-  - typings.activexAdodb.activexAdodbNumbers.`10`
-  - typings.activexAdodb.activexAdodbNumbers.`12`
-  - typings.activexAdodb.activexAdodbNumbers.`15`
-  - typings.activexAdodb.activexAdodbNumbers.`13`
-  - typings.activexAdodb.activexAdodbNumbers.`14`
-  - typings.activexAdodb.activexAdodbNumbers.`7`
-  - typings.activexAdodb.activexAdodbNumbers.`8`
-  - typings.activexAdodb.activexAdodbNumbers.`5`
-  - typings.activexAdodb.activexAdodbNumbers.`6`
-  - typings.activexAdodb.activexAdodbNumbers.`4`
-  - typings.activexAdodb.activexAdodbNumbers.`3`
+  - typings.activexAdodb.activexAdodbInts.`1`
+  - typings.activexAdodb.activexAdodbInts.`9`
+  - typings.activexAdodb.activexAdodbInts.`2`
+  - typings.activexAdodb.activexAdodbInts.`11`
+  - typings.activexAdodb.activexAdodbInts.`10`
+  - typings.activexAdodb.activexAdodbInts.`12`
+  - typings.activexAdodb.activexAdodbInts.`15`
+  - typings.activexAdodb.activexAdodbInts.`13`
+  - typings.activexAdodb.activexAdodbInts.`14`
+  - typings.activexAdodb.activexAdodbInts.`7`
+  - typings.activexAdodb.activexAdodbInts.`8`
+  - typings.activexAdodb.activexAdodbInts.`5`
+  - typings.activexAdodb.activexAdodbInts.`6`
+  - typings.activexAdodb.activexAdodbInts.`4`
+  - typings.activexAdodb.activexAdodbInts.`3`
 */
 trait EventReasonEnum extends StObject
 object EventReasonEnum {

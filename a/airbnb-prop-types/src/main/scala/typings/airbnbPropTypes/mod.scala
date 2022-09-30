@@ -59,9 +59,9 @@ object mod {
   inline def keysOf[T, P](propType: Validator[P]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("keysOf")(propType.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   inline def keysOf[T, P](propType: Validator[P], name: String): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("keysOf")(propType.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
   
-  inline def mutuallyExclusiveProps[T](propType: Requireable[T], propNames: String*): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveProps")(List(propType.asInstanceOf[js.Any]).`++`(propNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Requireable[T]]
+  inline def mutuallyExclusiveProps[T](propType: Requireable[T], propNames: String*): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveProps")(scala.List(propType.asInstanceOf[js.Any]).`++`(propNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Requireable[T]]
   inline def mutuallyExclusiveProps[T](// tslint:disable-next-line:unified-signatures
-  propType: Validator[T], propNames: String*): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveProps")(List(propType.asInstanceOf[js.Any]).`++`(propNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Requireable[T]]
+  propType: Validator[T], propNames: String*): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveProps")(scala.List(propType.asInstanceOf[js.Any]).`++`(propNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Requireable[T]]
   
   inline def mutuallyExclusiveTrueProps(propNames: String*): Requireable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutuallyExclusiveTrueProps")(propNames.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Requireable[Boolean]]
   
@@ -93,10 +93,10 @@ object mod {
   inline def range(min: Double, max: Double): Requireable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[Double]]
   inline def range(min: Unit, max: Double): Requireable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[Double]]
   
-  inline def range_T_Double[T /* <: Double */](): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[Requireable[T]]
-  inline def range_T_Double[T /* <: Double */](min: Double): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
-  inline def range_T_Double[T /* <: Double */](min: Double, max: Double): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
-  inline def range_T_Double[T /* <: Double */](min: Unit, max: Double): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  inline def range_T[T /* <: Double */](): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")().asInstanceOf[Requireable[T]]
+  inline def range_T[T /* <: Double */](min: Double): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  inline def range_T[T /* <: Double */](min: Double, max: Double): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
+  inline def range_T[T /* <: Double */](min: Unit, max: Double): Requireable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Requireable[T]]
   
   inline def ref[T](): Requireable[ReactLegacyRefLike[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")().asInstanceOf[Requireable[ReactLegacyRefLike[T]]]
   

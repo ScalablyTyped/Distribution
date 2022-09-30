@@ -273,7 +273,7 @@ object global {
     * @param {number} Profit
     * @param {*[]} args
     */
-  inline def LogProfit(Profit: Double, args: Any*): Unit = js.Dynamic.global.applyDynamic("LogProfit")(List(Profit.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def LogProfit(Profit: Double, args: Any*): Unit = js.Dynamic.global.applyDynamic("LogProfit")(scala.List(Profit.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /**
     * 清空所有收益日志, 可以带一个数字参数, 指定保留的条数
@@ -653,7 +653,7 @@ object global {
     * @param args
     * @return {T}
     */
-  inline def _C[T](func: js.Function1[/* repeated */ Any, T], args: Any*): T = js.Dynamic.global.applyDynamic("_C")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def _C[T](func: js.Function1[/* repeated */ Any, T], args: Any*): T = js.Dynamic.global.applyDynamic("_C")(scala.List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   /**
     * 返回指定时间戳(ms)字符串, 不传任何参数就返回当前时间,

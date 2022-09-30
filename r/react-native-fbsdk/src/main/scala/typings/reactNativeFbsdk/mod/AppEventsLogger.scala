@@ -45,7 +45,7 @@ object AppEventsLogger {
     * logEvent(eventName: string, valueToSum: number, parameters: {[key:string]:string|number});
     * See https://developers.facebook.com/docs/app-events/android for detail.
     */
-  inline def logEvent(eventName: String, args: (Double | Params)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def logEvent(eventName: String, args: (Double | Params)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(scala.List(eventName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /**
     * Logs a purchase. See http://en.wikipedia.org/wiki/ISO_4217 for currencyCode.

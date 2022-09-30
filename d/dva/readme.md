@@ -10,15 +10,12 @@ React and redux based, lightweight and elm-style framework.
 | ------------------ | :-------------: |
 | Full name          | dva |
 | Keywords           | dva, alibaba, react, react-native, redux, redux-saga, elm, framework, frontend |
-| # releases         | 23 |
-| # dependents       | 280 |
-| # downloads        | 997979 |
-| # stars            | 8 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 109355.66666666667 |
+| # stars            | 16041.0 |
 
 ## Links
-- [Homepage](https://github.com/dvajs/dva)
-- [Bugs](https://github.com/dvajs/dva/issues)
-- [Repository](https://github.com/dvajs/dva)
 - [Npm](https://www.npmjs.com/package/dva)
     
 

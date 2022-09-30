@@ -31,7 +31,7 @@ object serializerMod {
     def toObject[T /* <: ToObject[T] */](): js.UndefOr[ModelToObject[T]] = js.native
     def toObject[T /* <: ToObject[T] */](value: T): js.UndefOr[ModelToObject[T]] = js.native
     @JSName("toObject")
-    def toObject_T_ToObjectT_ModelToObject[T /* <: ToObject[T] */](value: T): ModelToObject[T] = js.native
+    def toObject_T_ModelToObject[T /* <: ToObject[T] */](value: T): ModelToObject[T] = js.native
     
     def toObjectsOptional[T /* <: ToObject[T] */](): js.UndefOr[js.Array[ModelToObject[T]]] = js.native
     def toObjectsOptional[T /* <: ToObject[T] */](value: js.Array[T]): js.UndefOr[js.Array[ModelToObject[T]]] = js.native

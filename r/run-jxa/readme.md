@@ -1,7 +1,7 @@
 
 # Scala.js typings for run-jxa
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Run JXAcode and get the result
@@ -10,15 +10,12 @@ Run JXAcode and get the result
 | ------------------ | :-------------: |
 | Full name          | run-jxa |
 | Keywords           | macos, jxa, javascript, osascript, run, mac, execute, code, script, automation |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 2021 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 408.6666666666667 |
+| # stars            | 116.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/run-jxa#readme)
-- [Bugs](https://github.com/sindresorhus/run-jxa/issues)
-- [Repository](https://github.com/sindresorhus/run-jxa)
 - [Npm](https://www.npmjs.com/package/run-jxa)
     
 

@@ -1,5 +1,8 @@
 package typings.wordpressBlocks.mod
 
+import typings.wordpressBlocks.anon.PartialColorProps
+import typings.wordpressBlocks.anon.PartialSpacingProps
+import typings.wordpressBlocks.anon.PartialTypographyProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +43,17 @@ trait BlockSupports extends StObject {
   val className: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * This value signals that a block supports some of the properties
+    * related to color. When it does, the block editor will show
+    * UI controls for the user to set their values.
+    *
+    * @note The `background` and `text` keys have a default value
+    * of `true`, so if the color property is present they’ll also
+    * be considered enabled.
+    */
+  val color: js.UndefOr[PartialColorProps] = js.undefined
+  
+  /**
     * This property adds a field to define a custom className for the
     * block's wrapper.
     *
@@ -65,6 +79,15 @@ trait BlockSupports extends StObject {
   val inserter: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * A block may want to disable the ability to toggle the lock state.
+    * It can be locked/unlocked by a user from the block “Options”
+    * dropdown by default. To disable this behavior, set `lock` to `false`.
+    *
+    * @defaultValue true
+    */
+  val lock: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * A non-multiple block can be inserted into each post, one time only.
     *
     * @defaultValue true
@@ -77,6 +100,22 @@ trait BlockSupports extends StObject {
     * @defaultValue true
     */
   val reusable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * This value signals that a block supports some of the CSS style
+    * properties related to spacing.
+    *
+    * When the block declares support for a specific spacing property,
+    * the attributes definition is extended to include the `style` attribute.
+    */
+  val spacing: js.UndefOr[PartialSpacingProps] = js.undefined
+  
+  /**
+    * A block may want to disable the ability to toggle the lock state.
+    * It can be locked/unlocked by a user from the block “Options”
+    * dropdown by default. To disable this behavior, set `lock` to `false`.
+    */
+  val typography: js.UndefOr[PartialTypographyProps] = js.undefined
 }
 object BlockSupports {
   
@@ -91,7 +130,7 @@ object BlockSupports {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setAlignVarargs(value: BlockAlignment*): Self = StObject.set(x, "align", js.Array(value :_*))
+    inline def setAlignVarargs(value: BlockAlignment*): Self = StObject.set(x, "align", js.Array(value*))
     
     inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
     
@@ -105,6 +144,10 @@ object BlockSupports {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
+    inline def setColor(value: PartialColorProps): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
     inline def setCustomClassName(value: Boolean): Self = StObject.set(x, "customClassName", value.asInstanceOf[js.Any])
     
     inline def setCustomClassNameUndefined: Self = StObject.set(x, "customClassName", js.undefined)
@@ -117,6 +160,10 @@ object BlockSupports {
     
     inline def setInserterUndefined: Self = StObject.set(x, "inserter", js.undefined)
     
+    inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    
+    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+    
     inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
@@ -124,5 +171,13 @@ object BlockSupports {
     inline def setReusable(value: Boolean): Self = StObject.set(x, "reusable", value.asInstanceOf[js.Any])
     
     inline def setReusableUndefined: Self = StObject.set(x, "reusable", js.undefined)
+    
+    inline def setSpacing(value: PartialSpacingProps): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    
+    inline def setTypography(value: PartialTypographyProps): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
+    
+    inline def setTypographyUndefined: Self = StObject.set(x, "typography", js.undefined)
   }
 }

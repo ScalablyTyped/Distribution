@@ -9,63 +9,52 @@ trait GeodesicData
      with PolyhedronData {
   
   /**
-    * @hidden
+    * @internal
     */
   var adjacentFaces: js.Array[js.Array[Double]]
   
   /**
-    * @param face
-    * @param primTri
-    * @hidden
+    * @internal
     */
   def innerToData(face: Double, primTri: PrimaryIsoTriangle): Unit
   
   /**
-    * @param faceNb
-    * @param primTri
-    * @hidden
+    * @internal
     */
   def mapABOBtoDATA(faceNb: Double, primTri: PrimaryIsoTriangle): Unit
   
   /**
-    * @param faceNb
-    * @param primTri
-    * @hidden
+    * @internal
     */
   def mapBAOAtoDATA(faceNb: Double, primTri: PrimaryIsoTriangle): Unit
   
   /**
-    * @param faceNb
-    * @param primTri
-    * @hidden
+    * @internal
     */
   def mapOBOAtoDATA(faceNb: Double, primTri: PrimaryIsoTriangle): Unit
   
   /**
-    * @param primTri
-    * @hidden
+    * @internal
     */
   def orderData(primTri: PrimaryIsoTriangle): Unit
   
   /**
-    * @hidden
+    * @internal
     */
   var poleNodes: Double
   
   /**
-    * @param m
-    * @param faces
-    * @hidden
+    * @internal
     */
   def setOrder(m: Double, faces: js.Array[Double]): js.Array[Double]
   
   /**
-    * @hidden
+    * @internal
     */
   var sharedNodes: Double
   
   /**
-    * @hidden
+    * @internal
     */
   def toGoldbergPolyhedronData(): PolyhedronData
 }

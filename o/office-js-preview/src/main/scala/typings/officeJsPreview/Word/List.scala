@@ -117,7 +117,7 @@ trait List
   def insertParagraph(paragraphText: String, insertLocation: start): Paragraph = js.native
   
   /**
-    * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+    * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -125,7 +125,7 @@ trait List
   val levelExistences: js.Array[Boolean] = js.native
   
   /**
-    * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+    * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -137,11 +137,11 @@ trait List
     *
     * @param options Provides options for which properties of the object to load.
     */
-  def load(): List = js.native
-  def load(options: ListLoadOptions): List = js.native
-  def load(propertyNamesAndPaths: Expand): List = js.native
-  def load(propertyNames: String): List = js.native
-  def load(propertyNames: js.Array[String]): List = js.native
+  def load(): typings.officeJsPreview.Word.List = js.native
+  def load(options: ListLoadOptions): typings.officeJsPreview.Word.List = js.native
+  def load(propertyNamesAndPaths: Expand): typings.officeJsPreview.Word.List = js.native
+  def load(propertyNames: String): typings.officeJsPreview.Word.List = js.native
+  def load(propertyNames: js.Array[String]): typings.officeJsPreview.Word.List = js.native
   
   /**
     * Gets paragraphs in the list. Read-only.
@@ -304,10 +304,10 @@ trait List
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
-  def track(): List = js.native
+  def track(): typings.officeJsPreview.Word.List = js.native
   
   /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
-  def untrack(): List = js.native
+  def untrack(): typings.officeJsPreview.Word.List = js.native
 }

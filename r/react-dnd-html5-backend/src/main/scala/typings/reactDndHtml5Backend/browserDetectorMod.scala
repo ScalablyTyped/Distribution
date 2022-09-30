@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object browserDetectorMod {
   
-  @JSImport("react-dnd-html5-backend/lib/BrowserDetector", "isFirefox")
+  @JSImport("react-dnd-html5-backend/dist/BrowserDetector", "isFirefox")
   @js.native
   val isFirefox: Predicate = js.native
   
-  @JSImport("react-dnd-html5-backend/lib/BrowserDetector", "isSafari")
+  @JSImport("react-dnd-html5-backend/dist/BrowserDetector", "isSafari")
   @js.native
   val isSafari: Predicate = js.native
   
@@ -28,11 +28,11 @@ object browserDetectorMod {
          with HTMLElement {
       
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
       
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -41,7 +41,7 @@ object browserDetectorMod {
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
       
-      var safari: js.Any = js.native
+      var safari: Any = js.native
     }
   }
 }

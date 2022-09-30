@@ -1,11 +1,11 @@
 package typings.vscodeTextmate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vscodeTextmate.vscodeTextmateNumbers.`0`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`1`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`2`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`4`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`8`
+import typings.vscodeTextmate.vscodeTextmateInts.`0`
+import typings.vscodeTextmate.vscodeTextmateInts.`1`
+import typings.vscodeTextmate.vscodeTextmateInts.`2`
+import typings.vscodeTextmate.vscodeTextmateInts.`4`
+import typings.vscodeTextmate.vscodeTextmateInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typesMod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`0`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`1`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`2`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`4`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`8`
+    - typings.vscodeTextmate.vscodeTextmateInts.`0`
+    - typings.vscodeTextmate.vscodeTextmateInts.`1`
+    - typings.vscodeTextmate.vscodeTextmateInts.`2`
+    - typings.vscodeTextmate.vscodeTextmateInts.`4`
+    - typings.vscodeTextmate.vscodeTextmateInts.`8`
   */
   trait FindOption extends StObject
   object FindOption {

@@ -1,11 +1,11 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBCoreTableSchema extends js.Object {
+trait DBCoreTableSchema extends StObject {
   
   def getIndexByKeyPath(): js.UndefOr[DBCoreIndex] = js.native
   def getIndexByKeyPath(keyPath: String): js.UndefOr[DBCoreIndex] = js.native

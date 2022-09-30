@@ -2,14 +2,12 @@ package typings.fsPromise
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.fsExtra.anon.BufferBytesWritten
-import typings.fsExtra.anon.BytesWritten
 import typings.fsExtra.anon.Encoding
 import typings.fsExtra.anon.EncodingFlag
 import typings.fsExtra.anon.EncodingWithFileTypes
 import typings.fsExtra.anon.Flag
 import typings.fsExtra.anon.Force
 import typings.fsExtra.anon.WithFileTypes
-import typings.fsExtra.mod.ArrayBufferView
 import typings.fsExtra.mod.CopyOptionsSync
 import typings.fsExtra.mod.EnsureOptions
 import typings.fsExtra.mod.Mode
@@ -2161,7 +2159,7 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any) | Null, 
       /* bytesRead */ Double, 
       /* buffer */ TBuffer, 
       Unit
@@ -2174,7 +2172,7 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any) | Null, 
       /* bytesRead */ Double, 
       /* buffer */ TBuffer, 
       Unit
@@ -2412,35 +2410,6 @@ object mod {
     position: ReadPosition
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def readSync(fd: Double, buffer: js.typedarray.ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def read_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double): js.Promise[typings.fsExtra.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer[TBuffer]]]
-  inline def read_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[typings.fsExtra.anon.Buffer[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.fsExtra.anon.Buffer[TBuffer]]]
-  inline def read_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: TBuffer,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* bytesRead */ Double, 
-      /* buffer */ TBuffer, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def read_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: TBuffer,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* bytesRead */ Double, 
-      /* buffer */ TBuffer, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def readdir(path: PathLike): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   inline def readdir(
@@ -3364,7 +3333,7 @@ object mod {
     offset: Double,
     length: Double,
     callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any) | Null, 
       /* written */ Double, 
       /* buffer */ TBuffer, 
       Unit
@@ -3378,7 +3347,7 @@ object mod {
     length: Double,
     position: Double,
     callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any) | Null, 
       /* written */ Double, 
       /* buffer */ TBuffer, 
       Unit
@@ -3391,7 +3360,7 @@ object mod {
     length: Double,
     position: Null,
     callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any) | Null, 
       /* written */ Double, 
       /* buffer */ TBuffer, 
       Unit
@@ -3888,8 +3857,8 @@ object mod {
   inline def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def writeSync(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](fd: Double, buffer: TBuffer): js.Promise[js.Tuple2[Double, TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](fd: Double, buffer: TBuffer): js.Promise[js.Tuple2[Double, TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, TBuffer]]]
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     callback: js.Function3[
@@ -3899,8 +3868,8 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double): js.Promise[js.Tuple2[Double, TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double): js.Promise[js.Tuple2[Double, TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, TBuffer]]]
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Double,
@@ -3911,47 +3880,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: TBuffer,
-    offset: Double,
-    length: Double,
-    callback: js.Function3[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* written */ Double, 
-      /* buffer */ TBuffer, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: TBuffer,
-    offset: Double,
-    length: Double,
-    position: Double,
-    callback: js.Function3[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* written */ Double, 
-      /* buffer */ TBuffer, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](
-    fd: Double,
-    buffer: TBuffer,
-    offset: Double,
-    length: Double,
-    position: Null,
-    callback: js.Function3[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* written */ Double, 
-      /* buffer */ TBuffer, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Double,
@@ -3963,7 +3892,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Double,
@@ -3975,8 +3904,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Null,
@@ -3987,7 +3915,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Null,
@@ -3999,7 +3927,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Null,
@@ -4011,7 +3939,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Unit,
@@ -4022,9 +3950,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Unit, length: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Unit, length: Double, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Unit,
@@ -4036,7 +3962,7 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: js.typedarray.ArrayBufferView */](
+  inline def write_TBuffer[TBuffer /* <: js.typedarray.ArrayBufferView */](
     fd: Double,
     buffer: TBuffer,
     offset: Unit,
@@ -4048,10 +3974,6 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Unit, length: Unit, position: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
-  
-  inline def write_TBuffer_ArrayBufferView_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
-  inline def write_TBuffer_ArrayBufferView_TBuffer_ArrayBufferView[TBuffer /* <: ArrayBufferView */](fd: Double, buffer: TBuffer, offset: Double): js.Promise[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BytesWritten[TBuffer]]]
   
   inline def writev(fd: Double, buffers: js.Array[js.typedarray.ArrayBufferView]): js.Promise[js.Tuple2[Double, js.Array[js.typedarray.ArrayBufferView]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("writev")(fd.asInstanceOf[js.Any], buffers.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[Double, js.Array[js.typedarray.ArrayBufferView]]]]
   inline def writev(

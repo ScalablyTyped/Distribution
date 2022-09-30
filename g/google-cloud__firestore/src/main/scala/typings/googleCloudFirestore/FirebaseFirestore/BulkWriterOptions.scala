@@ -14,6 +14,8 @@ trait BulkWriterOptions extends StObject {
     * the defaults by setting it to `false` to disable throttling, or by
     * setting the config values to enable throttling with the provided values.
     *
+    * @see https://firebase.google.com/docs/firestore/best-practices#ramping_up_traffic
+    *
     * @param initialOpsPerSecond The initial maximum number of operations per
     * second allowed by the throttler. If this field is not set, the default
     * is 500 operations per second.

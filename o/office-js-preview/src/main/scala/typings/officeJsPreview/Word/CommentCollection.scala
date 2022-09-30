@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Word
 
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import typings.officeJsPreview.Word.Interfaces.CollectionLoadOptions
 import typings.officeJsPreview.Word.Interfaces.CommentCollectionData
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of {@link Word.Comment} objects.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait CommentCollection
@@ -25,18 +26,18 @@ trait CommentCollection
   var context_CommentCollection: RequestContext = js.native
   
   /**
-    * Gets the first comment in the collection. Throws an error if this collection is empty.
+    * Gets the first comment in the collection. Throws an `ItemNotFound` error if this collection is empty.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getFirst(): Comment = js.native
   
   /**
-    * Gets the first comment in the collection. If the collection is empty, returns a null object.
+    * Gets the first comment in the collection. If the collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getFirstOrNullObject(): Comment = js.native
   
@@ -53,6 +54,61 @@ trait CommentCollection
   def load(propertyNamesAndPaths: LoadOption): CommentCollection = js.native
   def load(propertyNames: String): CommentCollection = js.native
   def load(propertyNames: js.Array[String]): CommentCollection = js.native
+  
+  /**
+    * Occurs when new comments are added.
+    *
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentAdded: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment or its reply is changed.
+    *
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentChanged: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when comments are deleted.
+    *
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentDeleted: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment is deselected.
+    *
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentDeselected: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment is selected.
+    *
+    * @remarks
+    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentSelected: EventHandlers[CommentEventArgs] = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

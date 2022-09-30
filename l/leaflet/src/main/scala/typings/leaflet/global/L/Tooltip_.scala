@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Tooltip")
 @js.native
-class Tooltip_ ()
+open class Tooltip_ ()
   extends typings.leaflet.mod.Tooltip_ {
   def this(options: TooltipOptions) = this()
   def this(options: Unit, source: typings.leaflet.mod.Layer) = this()

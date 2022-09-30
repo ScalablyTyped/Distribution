@@ -4,7 +4,6 @@ import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
-import typings.socketIoClient.SocketIOClient.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,16 +14,33 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(socket: Socket, criteria: String): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  inline def default(socket: Socket, criteria: String, options: MiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  inline def default(socket: Socket, criteria: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  inline def default(socket: Socket, criteria: js.Array[String], options: MiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  inline def default(socket: Socket, criteria: js.Function2[/* type */ String, /* action */ Action[js.Any], Boolean]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   inline def default(
-    socket: Socket,
-    criteria: js.Function2[/* type */ String, /* action */ Action[js.Any], Boolean],
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ Any,
+    criteria: String
+  ): Middleware[js.Object, Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def default(
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ Any,
+    criteria: String,
     options: MiddlewareOptions
-  ): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  ): Middleware[js.Object, Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def default(
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ Any,
+    criteria: js.Array[String]
+  ): Middleware[js.Object, Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def default(
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ Any,
+    criteria: js.Array[String],
+    options: MiddlewareOptions
+  ): Middleware[js.Object, Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def default(
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ Any,
+    criteria: js.Function2[/* type */ String, /* action */ Action[Any], Boolean]
+  ): Middleware[js.Object, Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def default(
+    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ Any,
+    criteria: js.Function2[/* type */ String, /* action */ Action[Any], Boolean],
+    options: MiddlewareOptions
+  ): Middleware[js.Object, Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
   
   trait MiddlewareOptions extends StObject {
     
@@ -32,11 +48,11 @@ object mod {
     
     var execute: js.UndefOr[
         js.Function4[
-          /* action */ Action[js.Any], 
-          /* emitBound */ Socket, 
-          /* next */ Dispatch[js.Any], 
-          /* dispatch */ Dispatch[js.Any], 
-          js.Any
+          /* action */ Action[Any], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ /* emitBound */ Any, 
+          /* next */ Dispatch[Any], 
+          /* dispatch */ Dispatch[Any], 
+          Any
         ]
       ] = js.undefined
   }
@@ -54,7 +70,7 @@ object mod {
       inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
       
       inline def setExecute(
-        value: (/* action */ Action[js.Any], /* emitBound */ Socket, /* next */ Dispatch[js.Any], /* dispatch */ Dispatch[js.Any]) => js.Any
+        value: (/* action */ Action[Any], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClient.Socket */ /* emitBound */ Any, /* next */ Dispatch[Any], /* dispatch */ Dispatch[Any]) => Any
       ): Self = StObject.set(x, "execute", js.Any.fromFunction4(value))
       
       inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.ComparisonSearchField")
 @js.native
-class ComparisonSearchField protected ()
+open class ComparisonSearchField protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ComparisonSearchField {
   def this(
     model: AbstractModel,

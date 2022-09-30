@@ -139,7 +139,7 @@ object noticeMod {
         
         inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
         
-        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
         
         inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         

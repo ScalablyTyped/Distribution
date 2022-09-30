@@ -1,18 +1,18 @@
 package typings.cadesplugin.CAPICOM
 
-import typings.cadesplugin.cadespluginNumbers.`0`
-import typings.cadesplugin.cadespluginNumbers.`10`
-import typings.cadesplugin.cadespluginNumbers.`11`
-import typings.cadesplugin.cadespluginNumbers.`12`
-import typings.cadesplugin.cadespluginNumbers.`1`
-import typings.cadesplugin.cadespluginNumbers.`2`
-import typings.cadesplugin.cadespluginNumbers.`3`
-import typings.cadesplugin.cadespluginNumbers.`4`
-import typings.cadesplugin.cadespluginNumbers.`5`
-import typings.cadesplugin.cadespluginNumbers.`6`
-import typings.cadesplugin.cadespluginNumbers.`7`
-import typings.cadesplugin.cadespluginNumbers.`8`
-import typings.cadesplugin.cadespluginNumbers.`9`
+import typings.cadesplugin.cadespluginInts.`0`
+import typings.cadesplugin.cadespluginInts.`10`
+import typings.cadesplugin.cadespluginInts.`11`
+import typings.cadesplugin.cadespluginInts.`12`
+import typings.cadesplugin.cadespluginInts.`1`
+import typings.cadesplugin.cadespluginInts.`2`
+import typings.cadesplugin.cadespluginInts.`3`
+import typings.cadesplugin.cadespluginInts.`4`
+import typings.cadesplugin.cadespluginInts.`5`
+import typings.cadesplugin.cadespluginInts.`6`
+import typings.cadesplugin.cadespluginInts.`7`
+import typings.cadesplugin.cadespluginInts.`8`
+import typings.cadesplugin.cadespluginInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

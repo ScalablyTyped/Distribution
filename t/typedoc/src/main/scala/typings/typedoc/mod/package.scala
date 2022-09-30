@@ -25,7 +25,6 @@ import typings.typedoc.typedocStrings.SomeSignature
 import typings.typedoc.typedocStrings.SomeType
 import typings.typedoc.typedocStrings.SomeValue
 import typings.typedoc.typedocStrings.VariableOrProperty
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import typings.typedoc.typedocStrings.basePath
 import typings.typedoc.typedocStrings.blockTags
 import typings.typedoc.typedocStrings.categorizeByGroup
@@ -111,10 +110,10 @@ Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[
 Unit]]
 
 inline def BindOption_blockTags(name: blockTags): js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit]]
 
@@ -271,10 +270,10 @@ Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[
 Unit]]
 
 inline def BindOption_excludeTags(name: excludeTags): js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit]]
 
@@ -367,10 +366,10 @@ Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[
 Unit]]
 
 inline def BindOption_inlineTags(name: inlineTags): js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit]]
 
@@ -439,10 +438,10 @@ Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[
 Unit]]
 
 inline def BindOption_modifierTags(name: modifierTags): js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+/* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
 /* key */ PropertyKey, 
 Unit]]
 
@@ -617,22 +616,22 @@ Unit]]
 inline def BindOption_visibilityFilters(name: visibilityFilters): js.Function2[
 /* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[
   ManuallyValidatedOption[
-    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
   ]
 ])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[
   ManuallyValidatedOption[
-    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
   ]
 ])), 
 /* key */ PropertyKey, 
 Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
 /* target */ (typings.typedoc.anon.Application & typings.typedoc.typedocStrings.BindOption & (TopLevel[
   ManuallyValidatedOption[
-    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
   ]
 ])) | (typings.typedoc.anon.Options & typings.typedoc.typedocStrings.BindOption & (TopLevel[
   ManuallyValidatedOption[
-    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
   ]
 ])), 
 /* key */ PropertyKey, 

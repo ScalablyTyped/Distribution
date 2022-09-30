@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fullcalendar/vue" : "5.11.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fullcalendar/vue" : "5.11.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

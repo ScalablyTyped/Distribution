@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet_dot_markercluster
 
-Typings are for version 1.4
+Typings are for version 1.5
 
 ## Library description:
 Provides Beautiful Animated Marker Clustering functionality for Leaflet
@@ -10,10 +10,10 @@ Provides Beautiful Animated Marker Clustering functionality for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet.markercluster |
 | Keywords           | gis, map, cluster |
-| # releases         | 1 |
-| # dependents       | 108 |
-| # downloads        | 3456345 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 603013.6666666666 |
+| # stars            | 3457.0 |
 
 ## Links
 - [Homepage](https://github.com/Leaflet/Leaflet.markercluster#readme)

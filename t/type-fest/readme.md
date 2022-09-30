@@ -1,7 +1,7 @@
 
 # Scala.js typings for type-fest
 
-Typings are for version 0.8.1
+Typings are for version 3.0.0
 
 ## Library description:
 A collection of essential TypeScript types
@@ -9,11 +9,11 @@ A collection of essential TypeScript types
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | type-fest |
-| Keywords           | typescript, ts, types, utility, util, utilities, omit, merge, json |
-| # releases         | 34 |
-| # dependents       | 368 |
-| # downloads        | 1614670007 |
-| # stars            | 0 |
+| Keywords           | typescript, ts, types, utility, util, utilities, omit, merge, json, generics |
+| # releases         | 61 |
+| # dependents       | 0.0 |
+| # downloads        | 4.31666964E8 |
+| # stars            | 8834.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/type-fest#readme)

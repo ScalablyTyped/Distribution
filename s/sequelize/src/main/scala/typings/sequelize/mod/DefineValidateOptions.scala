@@ -9,9 +9,9 @@ import typings.sequelize.anon.ArgsNumber
 import typings.sequelize.anon.ArgsString
 import typings.sequelize.anon.MsgString
 import typings.sequelize.anon.`1`
-import typings.sequelize.sequelizeNumbers.`3`
-import typings.sequelize.sequelizeNumbers.`4`
-import typings.sequelize.sequelizeNumbers.`5`
+import typings.sequelize.sequelizeInts.`3`
+import typings.sequelize.sequelizeInts.`4`
+import typings.sequelize.sequelizeInts.`5`
 import typings.sequelize.sequelizeStrings.all
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

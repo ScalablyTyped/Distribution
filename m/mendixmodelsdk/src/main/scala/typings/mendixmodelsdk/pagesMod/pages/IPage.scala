@@ -27,4 +27,9 @@ trait IPage
     * In version 7.17.0: added public
     */
   val layoutCall: ILayoutCall = js.native
+  
+  /**
+    * In version 9.4.0: introduced
+    */
+  val parameters: IList[IPageParameter] = js.native
 }

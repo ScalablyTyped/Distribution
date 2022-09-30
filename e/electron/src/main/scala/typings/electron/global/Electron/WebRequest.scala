@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.WebRequest")
 @js.native
-class WebRequest ()
+open class WebRequest ()
   extends StObject
      with typings.electron.Electron.WebRequest

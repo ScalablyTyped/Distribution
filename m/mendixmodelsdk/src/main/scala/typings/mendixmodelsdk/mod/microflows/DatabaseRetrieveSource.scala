@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.DatabaseRetrieveSource")
 @js.native
-class DatabaseRetrieveSource protected ()
+open class DatabaseRetrieveSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.DatabaseRetrieveSource {
   def this(
     model: AbstractModel,

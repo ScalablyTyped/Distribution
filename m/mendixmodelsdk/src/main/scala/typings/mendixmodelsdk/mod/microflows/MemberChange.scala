@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.MemberChange")
 @js.native
-class MemberChange protected ()
+open class MemberChange protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.MemberChange {
   def this(
     model: AbstractModel,

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.ListView")
 @js.native
-class ListView protected ()
+open class ListView protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ListView {
   def this(
     model: AbstractModel,

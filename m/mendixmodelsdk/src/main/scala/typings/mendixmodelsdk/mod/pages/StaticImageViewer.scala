@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.StaticImageViewer")
 @js.native
-class StaticImageViewer protected ()
+open class StaticImageViewer protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.StaticImageViewer {
   def this(
     model: AbstractModel,

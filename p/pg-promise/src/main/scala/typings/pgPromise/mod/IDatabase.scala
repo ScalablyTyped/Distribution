@@ -31,6 +31,6 @@ trait IDatabase[Ext, C /* <: IClient */]
   @JSName("$pool")
   val $pool: IPool = js.native
   
-  def connect(): XPromise[IConnected[Ext, C]] = js.native
-  def connect(options: IConnectionOptions[C]): XPromise[IConnected[Ext, C]] = js.native
+  def connect(): js.Promise[IConnected[Ext, C]] = js.native
+  def connect(options: IConnectionOptions[C]): js.Promise[IConnected[Ext, C]] = js.native
 }

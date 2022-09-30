@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DesignPropertyValue")
 @js.native
-class DesignPropertyValue protected ()
+open class DesignPropertyValue protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DesignPropertyValue {
   def this(
     model: AbstractModel,

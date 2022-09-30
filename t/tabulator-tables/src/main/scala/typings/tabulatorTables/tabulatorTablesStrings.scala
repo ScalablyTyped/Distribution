@@ -1,23 +1,23 @@
 package typings.tabulatorTables
 
-import typings.tabulatorTables.mod.Tabulator.Align
-import typings.tabulatorTables.mod.Tabulator.ColumnDefinitionAlign
-import typings.tabulatorTables.mod.Tabulator.DownloadType
-import typings.tabulatorTables.mod.Tabulator.FilterType
-import typings.tabulatorTables.mod.Tabulator.HistoryAction
-import typings.tabulatorTables.mod.Tabulator.HttpMethod
-import typings.tabulatorTables.mod.Tabulator.RenderMode
-import typings.tabulatorTables.mod.Tabulator.RowRangeLookup
-import typings.tabulatorTables.mod.Tabulator.ScrollToColumnPosition
-import typings.tabulatorTables.mod.Tabulator.ScrollToRowPosition
-import typings.tabulatorTables.mod.Tabulator.SortDirection
-import typings.tabulatorTables.mod.Tabulator.SortMode
-import typings.tabulatorTables.mod.Tabulator.StandardValidatorType
-import typings.tabulatorTables.mod.Tabulator.TextDirection
-import typings.tabulatorTables.mod.Tabulator.VerticalAlign
-import typings.tabulatorTables.mod.Tabulator._ColumnCalc
-import typings.tabulatorTables.mod.Tabulator._Editor
-import typings.tabulatorTables.mod.Tabulator._Formatter
+import typings.tabulatorTables.mod.Align
+import typings.tabulatorTables.mod.ColumnDefinitionAlign
+import typings.tabulatorTables.mod.DownloadType
+import typings.tabulatorTables.mod.FilterType
+import typings.tabulatorTables.mod.HistoryAction
+import typings.tabulatorTables.mod.HttpMethod
+import typings.tabulatorTables.mod.RenderMode
+import typings.tabulatorTables.mod.RowRangeLookup
+import typings.tabulatorTables.mod.ScrollToColumnPosition
+import typings.tabulatorTables.mod.ScrollToRowPosition
+import typings.tabulatorTables.mod.SortDirection
+import typings.tabulatorTables.mod.SortMode
+import typings.tabulatorTables.mod.StandardValidatorType
+import typings.tabulatorTables.mod.TextDirection
+import typings.tabulatorTables.mod.VerticalAlign
+import typings.tabulatorTables.mod._ColumnCalc
+import typings.tabulatorTables.mod._Editor
+import typings.tabulatorTables.mod._Formatter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,12 +115,6 @@ object tabulatorTablesStrings {
     extends StObject
        with TextDirection
   inline def auto: auto = "auto".asInstanceOf[auto]
-  
-  @js.native
-  sealed trait autocomplete
-    extends StObject
-       with _Editor
-  inline def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
   
   @js.native
   sealed trait avg
@@ -564,10 +558,6 @@ object tabulatorTablesStrings {
   inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
-  sealed trait hover extends StObject
-  inline def hover: hover = "hover".asInstanceOf[hover]
-  
-  @js.native
   sealed trait html
     extends StObject
        with DownloadType
@@ -1008,12 +998,6 @@ object tabulatorTablesStrings {
   @js.native
   sealed trait seconds extends StObject
   inline def seconds: seconds = "seconds".asInstanceOf[seconds]
-  
-  @js.native
-  sealed trait select
-    extends StObject
-       with _Editor
-  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
   sealed trait selected

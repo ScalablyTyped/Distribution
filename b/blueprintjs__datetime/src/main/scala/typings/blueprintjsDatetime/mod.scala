@@ -15,7 +15,7 @@ import typings.blueprintjsDatetime.dateRangeMod.DateRange
 import typings.blueprintjsDatetime.dateRangePickerMod.DateRangePickerProps
 import typings.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePickerProps
-import typings.reactDayPicker.typesModifiersMod.DayModifiers
+import typings.reactDayPicker.mod.DayModifiers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

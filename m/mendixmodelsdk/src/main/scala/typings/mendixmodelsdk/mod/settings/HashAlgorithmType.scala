@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.HashAlgorithmType")
 @js.native
-class HashAlgorithmType protected ()
+open class HashAlgorithmType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.HashAlgorithmType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

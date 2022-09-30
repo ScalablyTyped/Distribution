@@ -40,7 +40,7 @@ trait Filterable[F]
     * Filter a data structure based on a boolean predicate.
     */
   @JSName("filter")
-  def filter_AB_A[A, B /* <: A */](
+  def filter_AB[A, B /* <: A */](
     fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     refinement: Refinement[A, B]
   ): Any = js.native
@@ -71,7 +71,7 @@ trait Filterable[F]
     * Partition a data structure based on a boolean predicate.
     */
   @JSName("partition")
-  def partition_AB_A[A, B /* <: A */](
+  def partition_AB[A, B /* <: A */](
     fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
     refinement: Refinement[A, B]
   ): Separated_[

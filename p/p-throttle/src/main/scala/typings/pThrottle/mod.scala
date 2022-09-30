@@ -77,5 +77,5 @@ object mod {
   // TODO: Use the `Awaited` utility instead when targeting TS 4.5.
   type PromiseResolve[ValueType] = js.Promise[Any]
   
-  type ThrottledFunction[Argument /* <: js.Array[Any] */, ReturnValue] = (js.Function1[/* arguments */ Argument, PromiseResolve[ReturnValue]]) & Abort
+  type ThrottledFunction[Argument /* <: js.Array[Any] */, ReturnValue] = (js.Function1[/* arguments */ Argument, js.Promise[Any]]) & Abort
 }

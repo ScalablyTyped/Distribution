@@ -1,7 +1,7 @@
 package typings.reactNative.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.reactNative.reactNativeNumbers.`0`
+import typings.reactNative.reactNativeInts.`0`
 import typings.reactNative.reactNativeStrings.absolute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

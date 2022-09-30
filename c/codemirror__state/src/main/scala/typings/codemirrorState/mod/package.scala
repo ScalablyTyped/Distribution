@@ -2,8 +2,8 @@ package typings.codemirrorState.mod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.codemirrorState.anon.Dispatch
-import typings.codemirrorState.codemirrorStateNumbers.`1`
-import typings.codemirrorState.codemirrorStateNumbers.`2`
+import typings.codemirrorState.codemirrorStateInts.`1`
+import typings.codemirrorState.codemirrorStateInts.`2`
 import typings.codemirrorState.mod.^
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject

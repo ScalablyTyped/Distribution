@@ -20,15 +20,15 @@ object mod {
   val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.audiosprite.audiospriteNumbers.`1`
-    - typings.audiosprite.audiospriteNumbers.`2`
+    - typings.audiosprite.audiospriteInts.`1`
+    - typings.audiosprite.audiospriteInts.`2`
   */
   trait Channels extends StObject
   object Channels {
     
-    inline def `1`: typings.audiosprite.audiospriteNumbers.`1` = 1.asInstanceOf[typings.audiosprite.audiospriteNumbers.`1`]
+    inline def `1`: typings.audiosprite.audiospriteInts.`1` = 1.asInstanceOf[typings.audiosprite.audiospriteInts.`1`]
     
-    inline def `2`: typings.audiosprite.audiospriteNumbers.`2` = 2.asInstanceOf[typings.audiosprite.audiospriteNumbers.`2`]
+    inline def `2`: typings.audiosprite.audiospriteInts.`2` = 2.asInstanceOf[typings.audiosprite.audiospriteInts.`2`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -249,84 +249,84 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.audiosprite.audiospriteNumbers.`-1`
-    - typings.audiosprite.audiospriteNumbers.`0`
-    - typings.audiosprite.audiospriteNumbers.`1`
-    - typings.audiosprite.audiospriteNumbers.`2`
-    - typings.audiosprite.audiospriteNumbers.`3`
-    - typings.audiosprite.audiospriteNumbers.`4`
-    - typings.audiosprite.audiospriteNumbers.`5`
-    - typings.audiosprite.audiospriteNumbers.`6`
-    - typings.audiosprite.audiospriteNumbers.`7`
-    - typings.audiosprite.audiospriteNumbers.`8`
-    - typings.audiosprite.audiospriteNumbers.`9`
+    - typings.audiosprite.audiospriteInts.`-1`
+    - typings.audiosprite.audiospriteInts.`0`
+    - typings.audiosprite.audiospriteInts.`1`
+    - typings.audiosprite.audiospriteInts.`2`
+    - typings.audiosprite.audiospriteInts.`3`
+    - typings.audiosprite.audiospriteInts.`4`
+    - typings.audiosprite.audiospriteInts.`5`
+    - typings.audiosprite.audiospriteInts.`6`
+    - typings.audiosprite.audiospriteInts.`7`
+    - typings.audiosprite.audiospriteInts.`8`
+    - typings.audiosprite.audiospriteInts.`9`
   */
   trait VBR extends StObject
   object VBR {
     
-    inline def `-1`: typings.audiosprite.audiospriteNumbers.`-1` = -1.asInstanceOf[typings.audiosprite.audiospriteNumbers.`-1`]
+    inline def `-1`: typings.audiosprite.audiospriteInts.`-1` = -1.asInstanceOf[typings.audiosprite.audiospriteInts.`-1`]
     
-    inline def `0`: typings.audiosprite.audiospriteNumbers.`0` = 0.asInstanceOf[typings.audiosprite.audiospriteNumbers.`0`]
+    inline def `0`: typings.audiosprite.audiospriteInts.`0` = 0.asInstanceOf[typings.audiosprite.audiospriteInts.`0`]
     
-    inline def `1`: typings.audiosprite.audiospriteNumbers.`1` = 1.asInstanceOf[typings.audiosprite.audiospriteNumbers.`1`]
+    inline def `1`: typings.audiosprite.audiospriteInts.`1` = 1.asInstanceOf[typings.audiosprite.audiospriteInts.`1`]
     
-    inline def `2`: typings.audiosprite.audiospriteNumbers.`2` = 2.asInstanceOf[typings.audiosprite.audiospriteNumbers.`2`]
+    inline def `2`: typings.audiosprite.audiospriteInts.`2` = 2.asInstanceOf[typings.audiosprite.audiospriteInts.`2`]
     
-    inline def `3`: typings.audiosprite.audiospriteNumbers.`3` = 3.asInstanceOf[typings.audiosprite.audiospriteNumbers.`3`]
+    inline def `3`: typings.audiosprite.audiospriteInts.`3` = 3.asInstanceOf[typings.audiosprite.audiospriteInts.`3`]
     
-    inline def `4`: typings.audiosprite.audiospriteNumbers.`4` = 4.asInstanceOf[typings.audiosprite.audiospriteNumbers.`4`]
+    inline def `4`: typings.audiosprite.audiospriteInts.`4` = 4.asInstanceOf[typings.audiosprite.audiospriteInts.`4`]
     
-    inline def `5`: typings.audiosprite.audiospriteNumbers.`5` = 5.asInstanceOf[typings.audiosprite.audiospriteNumbers.`5`]
+    inline def `5`: typings.audiosprite.audiospriteInts.`5` = 5.asInstanceOf[typings.audiosprite.audiospriteInts.`5`]
     
-    inline def `6`: typings.audiosprite.audiospriteNumbers.`6` = 6.asInstanceOf[typings.audiosprite.audiospriteNumbers.`6`]
+    inline def `6`: typings.audiosprite.audiospriteInts.`6` = 6.asInstanceOf[typings.audiosprite.audiospriteInts.`6`]
     
-    inline def `7`: typings.audiosprite.audiospriteNumbers.`7` = 7.asInstanceOf[typings.audiosprite.audiospriteNumbers.`7`]
+    inline def `7`: typings.audiosprite.audiospriteInts.`7` = 7.asInstanceOf[typings.audiosprite.audiospriteInts.`7`]
     
-    inline def `8`: typings.audiosprite.audiospriteNumbers.`8` = 8.asInstanceOf[typings.audiosprite.audiospriteNumbers.`8`]
+    inline def `8`: typings.audiosprite.audiospriteInts.`8` = 8.asInstanceOf[typings.audiosprite.audiospriteInts.`8`]
     
-    inline def `9`: typings.audiosprite.audiospriteNumbers.`9` = 9.asInstanceOf[typings.audiosprite.audiospriteNumbers.`9`]
+    inline def `9`: typings.audiosprite.audiospriteInts.`9` = 9.asInstanceOf[typings.audiosprite.audiospriteInts.`9`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.audiosprite.audiospriteNumbers.`10`
-    - typings.audiosprite.audiospriteNumbers.`-1`
-    - typings.audiosprite.audiospriteNumbers.`0`
-    - typings.audiosprite.audiospriteNumbers.`1`
-    - typings.audiosprite.audiospriteNumbers.`2`
-    - typings.audiosprite.audiospriteNumbers.`3`
-    - typings.audiosprite.audiospriteNumbers.`4`
-    - typings.audiosprite.audiospriteNumbers.`5`
-    - typings.audiosprite.audiospriteNumbers.`6`
-    - typings.audiosprite.audiospriteNumbers.`7`
-    - typings.audiosprite.audiospriteNumbers.`8`
-    - typings.audiosprite.audiospriteNumbers.`9`
+    - typings.audiosprite.audiospriteInts.`10`
+    - typings.audiosprite.audiospriteInts.`-1`
+    - typings.audiosprite.audiospriteInts.`0`
+    - typings.audiosprite.audiospriteInts.`1`
+    - typings.audiosprite.audiospriteInts.`2`
+    - typings.audiosprite.audiospriteInts.`3`
+    - typings.audiosprite.audiospriteInts.`4`
+    - typings.audiosprite.audiospriteInts.`5`
+    - typings.audiosprite.audiospriteInts.`6`
+    - typings.audiosprite.audiospriteInts.`7`
+    - typings.audiosprite.audiospriteInts.`8`
+    - typings.audiosprite.audiospriteInts.`9`
   */
   trait VBRVorbis extends StObject
   object VBRVorbis {
     
-    inline def `-1`: typings.audiosprite.audiospriteNumbers.`-1` = -1.asInstanceOf[typings.audiosprite.audiospriteNumbers.`-1`]
+    inline def `-1`: typings.audiosprite.audiospriteInts.`-1` = -1.asInstanceOf[typings.audiosprite.audiospriteInts.`-1`]
     
-    inline def `0`: typings.audiosprite.audiospriteNumbers.`0` = 0.asInstanceOf[typings.audiosprite.audiospriteNumbers.`0`]
+    inline def `0`: typings.audiosprite.audiospriteInts.`0` = 0.asInstanceOf[typings.audiosprite.audiospriteInts.`0`]
     
-    inline def `1`: typings.audiosprite.audiospriteNumbers.`1` = 1.asInstanceOf[typings.audiosprite.audiospriteNumbers.`1`]
+    inline def `1`: typings.audiosprite.audiospriteInts.`1` = 1.asInstanceOf[typings.audiosprite.audiospriteInts.`1`]
     
-    inline def `10`: typings.audiosprite.audiospriteNumbers.`10` = 10.asInstanceOf[typings.audiosprite.audiospriteNumbers.`10`]
+    inline def `10`: typings.audiosprite.audiospriteInts.`10` = 10.asInstanceOf[typings.audiosprite.audiospriteInts.`10`]
     
-    inline def `2`: typings.audiosprite.audiospriteNumbers.`2` = 2.asInstanceOf[typings.audiosprite.audiospriteNumbers.`2`]
+    inline def `2`: typings.audiosprite.audiospriteInts.`2` = 2.asInstanceOf[typings.audiosprite.audiospriteInts.`2`]
     
-    inline def `3`: typings.audiosprite.audiospriteNumbers.`3` = 3.asInstanceOf[typings.audiosprite.audiospriteNumbers.`3`]
+    inline def `3`: typings.audiosprite.audiospriteInts.`3` = 3.asInstanceOf[typings.audiosprite.audiospriteInts.`3`]
     
-    inline def `4`: typings.audiosprite.audiospriteNumbers.`4` = 4.asInstanceOf[typings.audiosprite.audiospriteNumbers.`4`]
+    inline def `4`: typings.audiosprite.audiospriteInts.`4` = 4.asInstanceOf[typings.audiosprite.audiospriteInts.`4`]
     
-    inline def `5`: typings.audiosprite.audiospriteNumbers.`5` = 5.asInstanceOf[typings.audiosprite.audiospriteNumbers.`5`]
+    inline def `5`: typings.audiosprite.audiospriteInts.`5` = 5.asInstanceOf[typings.audiosprite.audiospriteInts.`5`]
     
-    inline def `6`: typings.audiosprite.audiospriteNumbers.`6` = 6.asInstanceOf[typings.audiosprite.audiospriteNumbers.`6`]
+    inline def `6`: typings.audiosprite.audiospriteInts.`6` = 6.asInstanceOf[typings.audiosprite.audiospriteInts.`6`]
     
-    inline def `7`: typings.audiosprite.audiospriteNumbers.`7` = 7.asInstanceOf[typings.audiosprite.audiospriteNumbers.`7`]
+    inline def `7`: typings.audiosprite.audiospriteInts.`7` = 7.asInstanceOf[typings.audiosprite.audiospriteInts.`7`]
     
-    inline def `8`: typings.audiosprite.audiospriteNumbers.`8` = 8.asInstanceOf[typings.audiosprite.audiospriteNumbers.`8`]
+    inline def `8`: typings.audiosprite.audiospriteInts.`8` = 8.asInstanceOf[typings.audiosprite.audiospriteInts.`8`]
     
-    inline def `9`: typings.audiosprite.audiospriteNumbers.`9` = 9.asInstanceOf[typings.audiosprite.audiospriteNumbers.`9`]
+    inline def `9`: typings.audiosprite.audiospriteInts.`9` = 9.asInstanceOf[typings.audiosprite.audiospriteInts.`9`]
   }
   
   trait _ExportType extends StObject

@@ -30,7 +30,7 @@ object functionMod {
   
   inline def isFunction(func: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def partial(func: js.Function0[Unit], params: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
+  inline def partial(func: js.Function0[Unit], params: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(scala.List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
   
   inline def pipe(functions: js.Function0[Unit]*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function0[Unit]]
   

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexQuery[T] extends Query[T] {
+trait IndexQuery[T]
+  extends StObject
+     with Query[T] {
   
   def all(): Query[T] = js.native
   

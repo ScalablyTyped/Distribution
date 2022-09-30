@@ -16,7 +16,6 @@ import typings.matrixAppserviceBridge.anon.Type
 import typings.matrixAppserviceBridge.anon.ValidateEditSender
 import typings.matrixAppserviceBridge.appServiceBotMod.AppServiceBot
 import typings.matrixAppserviceBridge.bridgeContextMod.BridgeContext
-import typings.matrixAppserviceBridge.componentsRequestFactoryMod.RequestFactory
 import typings.matrixAppserviceBridge.encryptedIntentMod.EncryptedIntent
 import typings.matrixAppserviceBridge.encryptedIntentMod.EncryptedIntentOpts
 import typings.matrixAppserviceBridge.eventBridgeStoreMod.EventBridgeStore
@@ -29,6 +28,7 @@ import typings.matrixAppserviceBridge.intentMod.IntentOpts
 import typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache
 import typings.matrixAppserviceBridge.prometheusmetricsMod.BridgeGaugesCounts
 import typings.matrixAppserviceBridge.prometheusmetricsMod.PrometheusMetrics
+import typings.matrixAppserviceBridge.requestFactoryMod.RequestFactory
 import typings.matrixAppserviceBridge.requestMod.Request
 import typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStore
 import typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidator

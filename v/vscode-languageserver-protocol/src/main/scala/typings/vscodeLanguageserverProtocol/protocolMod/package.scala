@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`1`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`1`
 import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.uinteger
 import org.scalablytyped.runtime.StObject

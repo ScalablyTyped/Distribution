@@ -15,6 +15,12 @@ object AudioEncoding extends StObject {
   def apply(value: Double): js.UndefOr[AudioEncoding & Double] = js.native
   
   @js.native
+  sealed trait ALAW
+    extends StObject
+       with AudioEncoding
+  /* 6 */ val ALAW: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1.AudioEncoding.ALAW & Double = js.native
+  
+  @js.native
   sealed trait AUDIO_ENCODING_UNSPECIFIED
     extends StObject
        with AudioEncoding

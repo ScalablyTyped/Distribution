@@ -10,15 +10,12 @@ Creates a Leaflet Feature Group that adds its child layers into a parent group w
 | ------------------ | :-------------: |
 | Full name          | leaflet.featuregroup.subgroup |
 | Keywords           | leaflet, leaflet.markercluster, plugins, maps, subgroup |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 80559 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11642.333333333334 |
+| # stars            | 89.0 |
 
 ## Links
-- [Homepage](https://github.com/ghybs/Leaflet.FeatureGroup.SubGroup#readme)
-- [Bugs](https://github.com/ghybs/Leaflet.FeatureGroup.SubGroup/issues)
-- [Repository](https://github.com/ghybs/Leaflet.FeatureGroup.SubGroup)
 - [Npm](https://www.npmjs.com/package/leaflet.featuregroup.subgroup)
     
 

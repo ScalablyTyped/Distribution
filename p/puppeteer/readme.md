@@ -1,7 +1,7 @@
 
 # Scala.js typings for puppeteer
 
-Typings are for version 18.0.4
+Typings are for version 18.0.5
 
 ## Library description:
 A high-level API to control headless Chrome over the DevTools Protocol

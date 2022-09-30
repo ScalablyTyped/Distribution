@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-any" : "3.0.0"
+      "p-any" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-any" : "3.0.0"
+      "p-any" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

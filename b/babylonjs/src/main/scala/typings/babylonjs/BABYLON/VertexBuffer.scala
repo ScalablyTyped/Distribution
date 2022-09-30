@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VertexBuffer extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _buffer: Buffer = js.native
   
   /* private */ var _computeHashCode: Any = js.native
@@ -20,12 +20,12 @@ trait VertexBuffer extends StObject {
   
   /* private */ var _ownsBuffer: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _rebuild(): Unit = js.native
   
   /* private */ var _size: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _validOffsetRange: Boolean = js.native
   
   /**

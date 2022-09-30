@@ -14,7 +14,7 @@ object mod {
   inline def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
   
   inline def render(
-    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any
+    tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ Any
   ): RenderResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(tree.asInstanceOf[js.Any]).asInstanceOf[RenderResponse]
   
   trait RenderResponse extends StObject {
@@ -24,7 +24,7 @@ object mod {
     def lastFrame(): String
     
     def rerender(
-      tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any
+      tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ Any
     ): Unit
     
     var stdin: Write
@@ -36,7 +36,7 @@ object mod {
     inline def apply(
       frames: js.Array[String],
       lastFrame: () => String,
-      rerender: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any => Unit,
+      rerender: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ Any => Unit,
       stdin: Write,
       unmount: () => Unit
     ): RenderResponse = {
@@ -48,12 +48,12 @@ object mod {
       
       inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      inline def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value*))
       
       inline def setLastFrame(value: () => String): Self = StObject.set(x, "lastFrame", js.Any.fromFunction0(value))
       
       inline def setRerender(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any => Unit
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ Any => Unit
       ): Self = StObject.set(x, "rerender", js.Any.fromFunction1(value))
       
       inline def setStdin(value: Write): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])

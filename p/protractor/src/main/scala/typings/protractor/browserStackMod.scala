@@ -10,9 +10,9 @@ object browserStackMod {
   
   @JSImport("protractor/built/driverProviders/browserStack", "BrowserStack")
   @js.native
-  class BrowserStack protected () extends DriverProvider {
+  open class BrowserStack protected () extends DriverProvider {
     def this(config: Config) = this()
     
-    var browserstackClient: js.Any = js.native
+    var browserstackClient: Any = js.native
   }
 }

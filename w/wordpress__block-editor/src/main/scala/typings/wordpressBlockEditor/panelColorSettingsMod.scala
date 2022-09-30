@@ -40,14 +40,14 @@ object panelColorSettingsMod {
       
       var onChange: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit]
       
-      var value: js.UndefOr[Color] & Color
+      var value: js.UndefOr[String] & String
     }
     object ColorSetting {
       
       inline def apply(
         label: String,
         onChange: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit],
-        value: js.UndefOr[Color] & Color
+        value: js.UndefOr[String] & String
       ): ColorSetting = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[ColorSetting]
@@ -67,7 +67,7 @@ object panelColorSettingsMod {
         
         inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
         
-        inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+        inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
         
         inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
         
@@ -77,14 +77,14 @@ object panelColorSettingsMod {
         
         inline def setOnChange(value: js.UndefOr[js.Function0[Unit]] & js.Function0[Unit]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
         
-        inline def setValue(value: js.UndefOr[Color] & Color): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.UndefOr[String] & String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
     /* Inlined parent std.Omit<@wordpress/components.@wordpress/components.PanelBody.Props, 'children'> */
     trait Props extends StObject {
       
-      var className: js.UndefOr[js.Any] = js.undefined
+      var className: js.UndefOr[Any] = js.undefined
       
       var colorSettings: js.Array[ColorSetting]
       
@@ -109,13 +109,13 @@ object panelColorSettingsMod {
       
       extension [Self <: Props](x: Self) {
         
-        inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
         inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
         inline def setColorSettings(value: js.Array[ColorSetting]): Self = StObject.set(x, "colorSettings", value.asInstanceOf[js.Any])
         
-        inline def setColorSettingsVarargs(value: ColorSetting*): Self = StObject.set(x, "colorSettings", js.Array(value :_*))
+        inline def setColorSettingsVarargs(value: ColorSetting*): Self = StObject.set(x, "colorSettings", js.Array(value*))
         
         inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
         

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "babel-plugin-codegen" : "4.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "babel-plugin-codegen" : "4.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

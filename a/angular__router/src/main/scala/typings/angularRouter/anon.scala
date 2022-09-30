@@ -20,7 +20,6 @@ import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectorDeclaration
 import typings.angularCore.mod.ɵɵNgModuleDeclaration
 import typings.angularRouter.angularRouterBooleans.`true`
-import typings.angularRouter.angularRouterStrings.`ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]`
 import typings.angularRouter.angularRouterStrings.`[routerLinkActive]`
 import typings.angularRouter.angularRouterStrings.`a[routerLink]Commaarea[routerLink]`
 import typings.angularRouter.angularRouterStrings.`ng-component`
@@ -337,16 +336,7 @@ object anon {
           RouterLink
         ] {
     
-    var ɵdir: ɵɵDirectiveDeclaration[
-        RouterLink, 
-        `ColonnotLeftparenthesisaRightparenthesisColonnotLeftparenthesisareaRightparenthesis[routerLink]`, 
-        scala.Nothing, 
-        Fragment, 
-        js.Object, 
-        scala.Nothing, 
-        scala.Nothing, 
-        `true`
-      ] = js.native
+    var ɵdir: ɵɵDirectiveDeclaration[RouterLink, String, scala.Nothing, Fragment, js.Object, scala.Nothing, scala.Nothing, `true`] = js.native
     
     var ɵfac: ɵɵFactoryDeclaration[RouterLink, js.Tuple5[Null, Null, Attribute, Null, Null]] = js.native
   }

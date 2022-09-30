@@ -1,5 +1,6 @@
 package typings.webdriverio
 
+import typings.webdriverio.interceptionTypesMod.ThrottleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,5 @@ object throttleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(
-    params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ThrottleOptions */ js.Any
-  ): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def default(params: ThrottleOptions): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
 }

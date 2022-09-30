@@ -2,46 +2,28 @@ package typings.monk
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.mongodb.mod.BulkWriteOpResultObject
-import typings.mongodb.mod.BulkWriteOperation
+import typings.bson.mod.Document
+import typings.bson.mod.ObjectId
 import typings.mongodb.mod.ClientSession
 import typings.mongodb.mod.CollStats
-import typings.mongodb.mod.CollectionAggregationOptions
-import typings.mongodb.mod.CollectionBulkWriteOptions
-import typings.mongodb.mod.CollectionCreateOptions
-import typings.mongodb.mod.CollectionInsertOneOptions
-import typings.mongodb.mod.CollectionMapFunction
-import typings.mongodb.mod.CollectionReduceFunction
-import typings.mongodb.mod.CommonOptions
-import typings.mongodb.mod.Cursor
-import typings.mongodb.mod.DeleteWriteOpResultObject
-import typings.mongodb.mod.FilterQuery
-import typings.mongodb.mod.FindOneAndDeleteOption
-import typings.mongodb.mod.FindOneAndReplaceOption
-import typings.mongodb.mod.FindOneAndUpdateOption
-import typings.mongodb.mod.FindOneOptions
-import typings.mongodb.mod.GeoHaystackSearchOptions
-import typings.mongodb.mod.IndexOptions
 import typings.mongodb.mod.MapReduceOptions
-import typings.mongodb.mod.MongoCountPreferences
-import typings.mongodb.mod.MongoDistinctPreferences
-import typings.mongodb.mod.UpdateOneOptions
-import typings.mongodb.mod.UpdateQuery
-import typings.mongodb.mod.UpdateWriteOpResult
 import typings.monk.anon.Close
 import typings.monk.anon.Collection
 import typings.monk.anon.Id
 import typings.monk.anon.MongoClientOptionscollect
+import typings.monk.anon.Multi
+import typings.monk.anon.MultiReplace
 import typings.monk.anon.RawCursor
-import typings.monk.anon.ReplaceOne
+import typings.monk.anon.Replace
+import typings.monk.anon.ReplaceSingle
+import typings.monk.anon.Single
 import typings.monk.anon.`0`
-import typings.monk.monkNumbers.`-1`
-import typings.monk.monkNumbers.`1`
+import typings.monk.monkInts.`-1`
+import typings.monk.monkInts.`1`
 import typings.monk.monkStrings.closed
 import typings.monk.monkStrings.open
 import typings.monk.monkStrings.opening
 import typings.std.Array
-import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -60,66 +42,122 @@ object mod {
   
   @JSImport("monk", "ICollection")
   @js.native
-  class ICollection[T /* <: StringDictionary[js.Any] */] () extends StObject {
+  open class ICollection[T /* <: StringDictionary[Any] */] () extends StObject {
     
     def aggregate[U](pipeline: js.Array[js.Object]): js.Promise[U] = js.native
-    def aggregate[U](pipeline: js.Array[js.Object], options: CollectionAggregationOptions): js.Promise[U] = js.native
-    def aggregate[U](stages: js.Array[js.Object], options: CollectionAggregationOptions, callback: Callback[U]): Unit = js.native
+    def aggregate[U](
+      pipeline: js.Array[js.Object],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionAggregationOptions */ Any
+    ): js.Promise[U] = js.native
+    def aggregate[U](
+      stages: js.Array[js.Object],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionAggregationOptions */ Any,
+      callback: Callback[U]
+    ): Unit = js.native
     
-    def bulkWrite(operations: js.Array[BulkWriteOperation[T]]): js.Promise[BulkWriteOpResultObject] = js.native
-    def bulkWrite(operations: js.Array[BulkWriteOperation[T]], options: CollectionBulkWriteOptions): js.Promise[BulkWriteOpResultObject] = js.native
     def bulkWrite(
-      operations: js.Array[BulkWriteOperation[T]],
-      options: CollectionBulkWriteOptions,
-      callback: Callback[BulkWriteOpResultObject]
+      operations: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BulkWriteOperation<T> */ Any
+        ]
+    ): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BulkWriteOpResultObject */ Any
+      ] = js.native
+    def bulkWrite(
+      operations: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BulkWriteOperation<T> */ Any
+        ],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionBulkWriteOptions */ Any
+    ): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BulkWriteOpResultObject */ Any
+      ] = js.native
+    def bulkWrite(
+      operations: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BulkWriteOperation<T> */ Any
+        ],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionBulkWriteOptions */ Any,
+      callback: Callback[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BulkWriteOpResultObject */ Any
+        ]
     ): Unit = js.native
     
     /**
-      * http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#count
-      * @deprecated Use countDocuments or estimatedDocumentCount
+      * http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#countDocuments
       */
     def count(): js.Promise[Double] = js.native
-    def count(query: Unit, options: MongoCountPreferences): js.Promise[Double] = js.native
-    def count(query: FilterQuery[T]): js.Promise[Double] = js.native
-    def count(query: FilterQuery[T], options: MongoCountPreferences): Unit = js.native
-    def count(query: FilterQuery[T], options: MongoCountPreferences, callback: Callback[Double]): Unit = js.native
+    def count(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any
+    ): js.Promise[Double] = js.native
+    def count(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MongoCountPreferences */ Any
+    ): Unit = js.native
+    def count(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MongoCountPreferences */ Any,
+      callback: Callback[Double]
+    ): Unit = js.native
+    def count(
+      query: Unit,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MongoCountPreferences */ Any
+    ): js.Promise[Double] = js.native
     @JSName("count")
-    def count_Promise(query: FilterQuery[T], options: MongoCountPreferences): js.Promise[Double] = js.native
+    def count_Promise(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MongoCountPreferences */ Any
+    ): js.Promise[Double] = js.native
     
     def createIndex(fields: CreateIndexInput[T]): js.Promise[String] = js.native
-    def createIndex(fields: CreateIndexInput[T], options: IndexOptions): js.Promise[String] = js.native
-    def createIndex(fields: CreateIndexInput[T], options: IndexOptions, callback: Callback[String]): Unit = js.native
+    def createIndex(
+      fields: CreateIndexInput[T],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndexOptions */ Any
+    ): js.Promise[String] = js.native
+    def createIndex(
+      fields: CreateIndexInput[T],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndexOptions */ Any,
+      callback: Callback[String]
+    ): Unit = js.native
     
     def distinct(field: String): js.Promise[
         js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
         ]
       ] = js.native
-    def distinct(field: String, query: Unit, options: MongoDistinctPreferences): js.Promise[
-        js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
-        ]
-      ] = js.native
-    def distinct(field: String, query: FilterQuery[T]): js.Promise[
-        js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
-        ]
-      ] = js.native
-    def distinct(field: String, query: FilterQuery[T], options: MongoDistinctPreferences): js.Promise[
+    def distinct(
+      field: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any
+    ): js.Promise[
         js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
         ]
       ] = js.native
     def distinct(
       field: String,
-      query: FilterQuery[T],
-      options: MongoDistinctPreferences,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MongoDistinctPreferences */ Any
+    ): js.Promise[
+        js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
+        ]
+      ] = js.native
+    def distinct(
+      field: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MongoDistinctPreferences */ Any,
       callback: Callback[
           js.Array[
             /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
           ]
         ]
     ): Unit = js.native
+    def distinct(
+      field: String,
+      query: Unit,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MongoDistinctPreferences */ Any
+    ): js.Promise[
+        js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[string] */ js.Any
+        ]
+      ] = js.native
     
     def drop(): js.Promise[DropResult] = js.native
     def drop(callback: Callback[DropResult]): Unit = js.native
@@ -135,92 +173,156 @@ object mod {
     
     // Normal
     def find(): js.Promise[FindResult[T]] = js.native
-    def find(query: Unit, options: FindOptions[T]): js.Promise[FindResult[T]] = js.native
-    // Raw
-    def find(query: FilterQuery[T]): js.Promise[FindRawResult[T]] = js.native
-    def find(query: FilterQuery[T], options: FindOptions[T] & RawCursor): js.Promise[FindRawResult[T]] = js.native
     def find(
-      query: FilterQuery[T],
-      options: (FindOneOptions[T] & RawCursor) | FindOneOptions[T],
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any
+    ): js.Promise[FindResult[T]] = js.native
+    // Raw
+    def find(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: FindOptions[T] & RawCursor
+    ): js.Promise[FindRawResult[T]] = js.native
+    def find(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneOptions<T> */ Any) & RawCursor) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneOptions<T> */ Any),
       callback: Callback[FindRawResult[T] | FindResult[T]]
     ): Unit = js.native
-    def find(query: FilterQuery[T], options: FindOptions[T]): js.Promise[FindResult[T]] = js.native
+    def find(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: FindOptions[T]
+    ): js.Promise[FindResult[T]] = js.native
+    def find(query: Unit, options: FindOptions[T]): js.Promise[FindResult[T]] = js.native
     
     def findOne(): js.Promise[FindOneResult[T]] = js.native
-    def findOne(query: Unit, options: FindOneOptions[T]): js.Promise[FindOneResult[T]] = js.native
-    def findOne(query: FilterQuery[T]): js.Promise[FindOneResult[T]] = js.native
-    def findOne(query: FilterQuery[T], options: FindOneOptions[T]): js.Promise[FindOneResult[T]] = js.native
-    def findOne(query: FilterQuery[T], options: FindOneOptions[T], callback: Callback[FindOneResult[T]]): Unit = js.native
-    
-    def findOneAndDelete(query: FilterQuery[T]): js.Promise[FindOneResult[T]] = js.native
-    def findOneAndDelete(query: FilterQuery[T], options: FindOneAndDeleteOption[T]): js.Promise[FindOneResult[T]] = js.native
-    def findOneAndDelete(query: FilterQuery[T], options: FindOneAndDeleteOption[T], callback: Callback[FindOneResult[T]]): Unit = js.native
-    
-    // Replace
-    def findOneAndUpdate(query: FilterQuery[T], update: T): js.Promise[FindOneResult[T]] = js.native
-    def findOneAndUpdate(query: FilterQuery[T], update: T, options: FindOneAndReplaceOption[T] & `0`): js.Promise[FindOneResult[T]] = js.native
-    def findOneAndUpdate(
-      query: FilterQuery[T],
-      update: T,
-      options: FindOneAndReplaceOption[T] & `0`,
+    def findOne(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any
+    ): js.Promise[FindOneResult[T]] = js.native
+    def findOne(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneOptions<T> */ Any
+    ): js.Promise[FindOneResult[T]] = js.native
+    def findOne(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneOptions<T> */ Any,
       callback: Callback[FindOneResult[T]]
     ): Unit = js.native
-    def findOneAndUpdate(query: FilterQuery[T], update: UpdateQuery[T]): Unit = js.native
-    def findOneAndUpdate(query: FilterQuery[T], update: UpdateQuery[T], options: FindOneAndUpdateOption[T] & ReplaceOne): Unit = js.native
-    def findOneAndUpdate(
-      query: FilterQuery[T],
-      update: UpdateQuery[T],
-      options: FindOneAndUpdateOption[T] & ReplaceOne,
+    def findOne(
+      query: Unit,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneOptions<T> */ Any
+    ): js.Promise[FindOneResult[T]] = js.native
+    
+    def findOneAndDelete(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any
+    ): js.Promise[FindOneResult[T]] = js.native
+    def findOneAndDelete(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndDeleteOption<T> */ Any
+    ): js.Promise[FindOneResult[T]] = js.native
+    def findOneAndDelete(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndDeleteOption<T> */ Any,
       callback: Callback[FindOneResult[T]]
     ): Unit = js.native
-    def findOneAndUpdate(query: FilterQuery[T], update: UpdateQuery[T], options: Unit, callback: Callback[FindOneResult[T]]): Unit = js.native
-    def findOneAndUpdate(query: FilterQuery[T], update: Partial[T]): Unit = js.native
-    def findOneAndUpdate(query: FilterQuery[T], update: Partial[T], options: FindOneAndUpdateOption[T] & ReplaceOne): Unit = js.native
+    
     def findOneAndUpdate(
-      query: FilterQuery[T],
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | T,
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace & `0`,
+      callback: Callback[FindOneResult[T]]
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
+      options: Unit,
+      callback: Callback[FindOneResult[T]]
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: Partial[T]
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
       update: Partial[T],
-      options: FindOneAndUpdateOption[T] & ReplaceOne,
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: Partial[T],
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace,
       callback: Callback[FindOneResult[T]]
     ): Unit = js.native
-    def findOneAndUpdate(query: FilterQuery[T], update: Partial[T], options: Unit, callback: Callback[FindOneResult[T]]): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: Partial[T],
+      options: Unit,
+      callback: Callback[FindOneResult[T]]
+    ): Unit = js.native
     // Update
+    // Replace
     @JSName("findOneAndUpdate")
-    def findOneAndUpdate_Promise(query: FilterQuery[T], update: UpdateQuery[T]): js.Promise[FindOneResult[T]] = js.native
+    def findOneAndUpdate_Promise(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | T
+    ): js.Promise[FindOneResult[T]] = js.native
     @JSName("findOneAndUpdate")
-    def findOneAndUpdate_Promise(query: FilterQuery[T], update: UpdateQuery[T], options: FindOneAndUpdateOption[T] & ReplaceOne): js.Promise[FindOneResult[T]] = js.native
+    def findOneAndUpdate_Promise(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | T,
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace & `0`
+    ): js.Promise[FindOneResult[T]] = js.native
     @JSName("findOneAndUpdate")
-    def findOneAndUpdate_Promise(query: FilterQuery[T], update: Partial[T]): js.Promise[FindOneResult[T]] = js.native
+    def findOneAndUpdate_Promise(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: Partial[T]
+    ): js.Promise[FindOneResult[T]] = js.native
     @JSName("findOneAndUpdate")
-    def findOneAndUpdate_Promise(query: FilterQuery[T], update: Partial[T], options: FindOneAndUpdateOption[T] & ReplaceOne): js.Promise[FindOneResult[T]] = js.native
+    def findOneAndUpdate_Promise(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: Partial[T],
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace
+    ): js.Promise[FindOneResult[T]] = js.native
     
     def geoHaystackSearch(x: Double, y: Double): js.Promise[GeoHaystackSearchResult[T]] = js.native
-    def geoHaystackSearch(x: Double, y: Double, options: GeoHaystackSearchOptions): js.Promise[GeoHaystackSearchResult[T]] = js.native
     def geoHaystackSearch(
       x: Double,
       y: Double,
-      options: GeoHaystackSearchOptions,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GeoHaystackSearchOptions */ Any
+    ): js.Promise[GeoHaystackSearchResult[T]] = js.native
+    def geoHaystackSearch(
+      x: Double,
+      y: Double,
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GeoHaystackSearchOptions */ Any,
       callback: Callback[GeoHaystackSearchResult[T]]
     ): Unit = js.native
     
+    /** @deprecated MongoDB 3.6 or higher no longer supports the group command. We recommend rewriting using the aggregation framework. */
     def group[U](
-      keys: js.Any,
+      keys: Any,
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): Unit = js.native
+    ): js.Promise[U] = js.native
     def group[U](
-      keys: js.Any,
+      keys: Any,
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean,
       options: js.Object
-    ): Unit = js.native
+    ): js.Promise[U] = js.native
     def group[U](
-      keys: js.Any,
+      keys: Any,
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
@@ -230,7 +332,7 @@ object mod {
       callback: Callback[U]
     ): Unit = js.native
     def group[U](
-      keys: js.Any,
+      keys: Any,
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
@@ -239,26 +341,25 @@ object mod {
       options: Unit,
       callback: Callback[U]
     ): Unit = js.native
-    /** @deprecated MongoDB 3.6 or higher no longer supports the group command. We recommend rewriting using the aggregation framework. */
     @JSName("group")
-    def group_U_Promise[U](
-      keys: js.Any,
+    def group_U_Unit[U](
+      keys: Any,
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean
-    ): js.Promise[U] = js.native
+    ): Unit = js.native
     @JSName("group")
-    def group_U_Promise[U](
-      keys: js.Any,
+    def group_U_Unit[U](
+      keys: Any,
       condition: js.Object,
       initial: js.Object,
       reduce: js.Function,
       finalize: js.Function,
       command: Boolean,
       options: js.Object
-    ): js.Promise[U] = js.native
+    ): Unit = js.native
     
     def indexes(): js.Promise[IndexesResult[T]] = js.native
     def indexes(callback: Callback[IndexesResult[T]]): Unit = js.native
@@ -274,15 +375,15 @@ object mod {
     val manager: IMonkManager = js.native
     
     def mapReduce[TKey, TValue](
-      map: CollectionMapFunction[T],
-      reduce: CollectionReduceFunction[TKey, TValue],
-      options: MapReduceOptions
-    ): js.Promise[js.Any] = js.native
+      map: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionMapFunction<T> */ Any,
+      reduce: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionReduceFunction<TKey, TValue> */ Any,
+      options: MapReduceOptions[ObjectId, Document]
+    ): js.Promise[Any] = js.native
     def mapReduce[TKey, TValue](
-      map: CollectionMapFunction[T],
-      reduce: CollectionReduceFunction[TKey, TValue],
-      options: MapReduceOptions,
-      callback: Callback[js.Any]
+      map: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionMapFunction<T> */ Any,
+      reduce: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionReduceFunction<TKey, TValue> */ Any,
+      options: MapReduceOptions[ObjectId, Document],
+      callback: Callback[Any]
     ): Unit = js.native
     
     val middlewares: js.Array[TMiddleware] = js.native
@@ -291,81 +392,121 @@ object mod {
     
     var options: js.Object = js.native
     
-    def remove(): js.Promise[DeleteWriteOpResultObject] = js.native
-    def remove(query: Unit, options: RemoveOptions): js.Promise[DeleteWriteOpResultObject] = js.native
-    def remove(query: FilterQuery[T]): js.Promise[DeleteWriteOpResultObject] = js.native
-    def remove(query: FilterQuery[T], options: RemoveOptions): js.Promise[DeleteWriteOpResultObject] = js.native
-    def remove(query: FilterQuery[T], options: RemoveOptions, callback: Callback[DeleteWriteOpResultObject]): Unit = js.native
+    def remove(): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeleteWriteOpResultObject */ Any
+      ] = js.native
+    def remove(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any
+    ): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeleteWriteOpResultObject */ Any
+      ] = js.native
+    def remove(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: RemoveOptions
+    ): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeleteWriteOpResultObject */ Any
+      ] = js.native
+    def remove(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      options: RemoveOptions,
+      callback: Callback[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeleteWriteOpResultObject */ Any
+        ]
+    ): Unit = js.native
+    def remove(query: Unit, options: RemoveOptions): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeleteWriteOpResultObject */ Any
+      ] = js.native
     
     def stats(): js.Promise[CollStats] = js.native
     def stats(options: StatsOptions): js.Promise[CollStats] = js.native
     def stats(options: StatsOptions, callback: Callback[CollStats]): Unit = js.native
     
-    def update(query: FilterQuery[T], update: UpdateQuery[T]): js.Promise[UpdateWriteOpResult] = js.native
-    def update(query: FilterQuery[T], update: UpdateQuery[T], options: UpdateOneOptions): js.Promise[UpdateWriteOpResult] = js.native
+    // single
     def update(
-      query: FilterQuery[T],
-      update: UpdateQuery[T],
-      options: UpdateOneOptions,
-      callback: Callback[UpdateWriteOpResult]
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any
+    ): js.Promise[UpdateResult] = js.native
+    def update(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & Single & MultiReplace & ReplaceSingle,
+      callback: Callback[UpdateResult]
     ): Unit = js.native
-    def update(query: FilterQuery[T], update: Partial[T]): js.Promise[UpdateWriteOpResult] = js.native
-    def update(query: FilterQuery[T], update: Partial[T], options: UpdateOneOptions): js.Promise[UpdateWriteOpResult] = js.native
     def update(
-      query: FilterQuery[T],
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
+      options: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & ReplaceSingle) | (Single & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any)) | (MultiReplace & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any))
+    ): js.Promise[UpdateResult] = js.native
+    def update(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: Partial[T]
+    ): js.Promise[UpdateResult] = js.native
+    def update(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
       update: Partial[T],
-      options: UpdateOneOptions,
-      callback: Callback[UpdateWriteOpResult]
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & Single & MultiReplace & ReplaceSingle,
+      callback: Callback[UpdateResult]
     ): Unit = js.native
+    def update(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: Partial[T],
+      options: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & ReplaceSingle) | (Single & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any)) | (MultiReplace & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any))
+    ): js.Promise[UpdateResult] = js.native
   }
   
   @JSImport("monk", "IMonkManager")
   @js.native
-  class IMonkManager () extends StObject {
+  open class IMonkManager () extends StObject {
     
     val _state: closed | opening | open = js.native
     
-    def addListener(event: String, handler: js.Function1[/* event */ js.Any, js.Any]): Unit = js.native
+    def addListener(event: String, handler: js.Function1[/* event */ Any, Any]): Unit = js.native
     
     def addMiddleware(middleware: TMiddleware): Unit = js.native
     
     def close(): js.Promise[Unit] = js.native
     
     def create[T](name: String): ICollection[T] = js.native
+    def create[T](
+      name: String,
+      creationOption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionCreateOptions */ Any
+    ): ICollection[T] = js.native
+    def create[T](
+      name: String,
+      creationOption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionCreateOptions */ Any,
+      options: CollectionOptions
+    ): ICollection[T] = js.native
     def create[T](name: String, creationOption: Unit, options: CollectionOptions): ICollection[T] = js.native
-    def create[T](name: String, creationOption: CollectionCreateOptions): ICollection[T] = js.native
-    def create[T](name: String, creationOption: CollectionCreateOptions, options: CollectionOptions): ICollection[T] = js.native
     
     def get[T](name: String): ICollection[T] = js.native
     def get[T](name: String, options: CollectionOptions): ICollection[T] = js.native
     
-    def listCollections(): js.Array[ICollection[js.Any]] = js.native
-    def listCollections(query: js.Object): js.Array[ICollection[js.Any]] = js.native
+    def listCollections(): js.Promise[js.Array[ICollection[Any]]] = js.native
+    def listCollections(query: js.Object): js.Promise[js.Array[ICollection[Any]]] = js.native
     
-    def on(event: String, handler: js.Function1[/* event */ js.Any, js.Any]): Unit = js.native
+    def on(event: String, handler: js.Function1[/* event */ Any, Any]): Unit = js.native
     
-    def once(event: String, handler: js.Function1[/* event */ js.Any, js.Any]): Unit = js.native
+    def once(event: String, handler: js.Function1[/* event */ Any, Any]): Unit = js.native
     
-    def removeListener(event: String, handler: js.Function1[/* event */ js.Any, js.Any]): Unit = js.native
+    def removeListener(event: String, handler: js.Function1[/* event */ Any, Any]): Unit = js.native
     
     def setDefaultCollectionOptions(): Unit = js.native
     def setDefaultCollectionOptions(collectionOptions: CollectionOptions): Unit = js.native
   }
   
-  inline def cast(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")().asInstanceOf[js.Any]
-  inline def cast(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def cast(obj: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def cast(obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def cast(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")().asInstanceOf[Any]
+  inline def cast(obj: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def cast(obj: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def cast(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def id(): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[IObjectID]
   inline def id(hexstring: String): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(hexstring.asInstanceOf[js.Any]).asInstanceOf[IObjectID]
   inline def id(obj: IObjectID): IObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(obj.asInstanceOf[js.Any]).asInstanceOf[IObjectID]
   
-  type Callback[T] = js.Function2[/* err */ Error | Null, /* data */ T, Unit]
+  type Callback[T] = js.Function2[/* err */ js.Error | Null, /* data */ T, Unit]
   
-  trait CollectionInsertOneOptionsMonk
-    extends StObject
-       with CollectionInsertOneOptions {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionInsertOneOptions * / any */ trait CollectionInsertOneOptionsMonk extends StObject {
     
     var castIds: Boolean
   }
@@ -399,19 +540,18 @@ object mod {
       
       inline def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
       
-      inline def setMiddlewaresVarargs(value: TMiddleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
+      inline def setMiddlewaresVarargs(value: TMiddleware*): Self = StObject.set(x, "middlewares", js.Array(value*))
     }
   }
   
   type CreateIndexInput[T] = String | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? 1 | -1}
-    */ typings.monk.monkStrings.CreateIndexInput & TopLevel[js.Any])
+    */ typings.monk.monkStrings.CreateIndexInput & TopLevel[Any])
   
   type DropIndexInput[T] = CreateIndexInput[T] & js.Array[String]
   
-  trait DropIndexOptions
-    extends StObject
-       with CommonOptions {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CommonOptions * / any */ trait DropIndexOptions extends StObject {
     
     var maxTimeMS: js.UndefOr[Double] = js.undefined
   }
@@ -434,11 +574,11 @@ object mod {
     
     var nIndexesWas: Double
     
-    var ok: `1` | typings.monk.monkNumbers.`0`
+    var ok: `1` | typings.monk.monkInts.`0`
   }
   object DropIndexResult {
     
-    inline def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkNumbers.`0`): DropIndexResult = {
+    inline def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkInts.`0`): DropIndexResult = {
       val __obj = js.Dynamic.literal(nIndexesWas = nIndexesWas.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropIndexResult]
     }
@@ -447,7 +587,7 @@ object mod {
       
       inline def setNIndexesWas(value: Double): Self = StObject.set(x, "nIndexesWas", value.asInstanceOf[js.Any])
       
-      inline def setOk(value: `1` | typings.monk.monkNumbers.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: `1` | typings.monk.monkInts.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }
   }
   
@@ -459,7 +599,7 @@ object mod {
   }
   object DropIndexesResult {
     
-    inline def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkNumbers.`0`): DropIndexesResult = {
+    inline def apply(nIndexesWas: Double, ok: `1` | typings.monk.monkInts.`0`): DropIndexesResult = {
       val __obj = js.Dynamic.literal(nIndexesWas = nIndexesWas.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropIndexesResult]
     }
@@ -487,9 +627,8 @@ object mod {
   
   type FindOneResult[T] = WithID[T] | Null
   
-  trait FindOptions[T]
-    extends StObject
-       with FindOneOptions[T] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneOptions<T> * / any */ trait FindOptions[T] extends StObject {
     
     var rawCursor: js.UndefOr[Boolean] = js.undefined
   }
@@ -508,14 +647,14 @@ object mod {
     }
   }
   
-  type FindRawResult[T] = Cursor[WithID[T]]
+  type FindRawResult[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Cursor<WithID<T>> */ Any
   
   @js.native
   trait FindResult[T]
     extends StObject
        with Array[WithID[T]] {
     
-    def each(listener: js.Function2[/* record */ T, /* cursor */ Close, js.Any]): js.Any = js.native
+    def each(listener: js.Function2[/* record */ T, /* cursor */ Close, Any]): Any = js.native
   }
   
   type GeoHaystackSearchResult[T] = js.Array[T]
@@ -541,9 +680,9 @@ object mod {
   
   type InsertResult[T] = WithID[T]
   
-  trait RemoveOptions
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CommonOptions * / any */ trait RemoveOptions
     extends StObject
-       with CommonOptions
        with SingleMulti
   object RemoveOptions {
     
@@ -610,28 +749,14 @@ object mod {
   type TMiddleware = js.Function1[
     /* hasCollectionMonkInstance */ Collection, 
     js.Function1[
-      /* next */ js.Function2[/* args */ js.Object, /* method */ String, js.Promise[js.Any]], 
-      js.Function2[/* args */ js.Object, /* method */ String, js.Promise[js.Any]]
+      /* next */ js.Function2[/* args */ js.Object, /* method */ String, js.Promise[Any]], 
+      js.Function2[/* args */ js.Object, /* method */ String, js.Promise[Any]]
     ]
   ]
   
   type TQuery = String | js.Object
   
-  /* Inlined mongodb.mongodb.UpdateWriteOpResult['result'] */
-  /* Rewritten from type alias, can be one of: 
-    - typings.monk.monkStrings.ok
-    - typings.monk.monkStrings.n
-    - typings.monk.monkStrings.nModified
-  */
-  trait UpdateResult extends StObject
-  object UpdateResult {
-    
-    inline def n: typings.monk.monkStrings.n = "n".asInstanceOf[typings.monk.monkStrings.n]
-    
-    inline def nModified: typings.monk.monkStrings.nModified = "nModified".asInstanceOf[typings.monk.monkStrings.nModified]
-    
-    inline def ok: typings.monk.monkStrings.ok = "ok".asInstanceOf[typings.monk.monkStrings.ok]
-  }
+  type UpdateResult = /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateWriteOpResult * / any['result'] */ js.Any
   
   type WithID[T] = Id & T
 }

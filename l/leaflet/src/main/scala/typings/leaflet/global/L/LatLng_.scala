@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.LatLng")
 @js.native
-class LatLng_ protected ()
+open class LatLng_ protected ()
   extends typings.leaflet.mod.LatLng_ {
   def this(latitude: Double, longitude: Double) = this()
   def this(latitude: Double, longitude: Double, altitude: Double) = this()

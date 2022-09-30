@@ -38,9 +38,7 @@ object nativeEngineMod {
     def this(options: NativeEngineOptions) = this()
     
     /**
-      * @param channel
-      * @param texture
-      * @hidden
+      * @internal
       */
     def _bindTexture(channel: Double, texture: InternalTexture): Unit = js.native
     
@@ -105,8 +103,7 @@ object nativeEngineMod {
     ): Unit = js.native
     
     /**
-      * @param framebuffer
-      * @hidden
+      * @internal
       */
     def _releaseFramebufferObjects(framebuffer: Nullable[WebGLFramebuffer]): Unit = js.native
     
@@ -583,7 +580,7 @@ object nativeEngineMod {
     @js.native
     val PROTOCOL_VERSION: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     inline def _createNativeDataStream(): NativeDataStream = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNativeDataStream")().asInstanceOf[NativeDataStream]
   }
   

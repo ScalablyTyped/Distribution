@@ -71,11 +71,7 @@ object subEmitterMod {
     inline def Parse(serializationObject: Any, sceneOrEngine: ThinEngine, rootUrl: String): SubEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[SubEmitter]
     
     /**
-      * @param system
-      * @param sceneOrEngine
-      * @param rootUrl
-      * @param doNotStart
-      * @hidden
+      * @internal
       */
     inline def _ParseParticleSystem(system: Any, sceneOrEngine: Scene, rootUrl: String): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]
     inline def _ParseParticleSystem(system: Any, sceneOrEngine: Scene, rootUrl: String, doNotStart: Boolean): ParticleSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("_ParseParticleSystem")(system.asInstanceOf[js.Any], sceneOrEngine.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], doNotStart.asInstanceOf[js.Any])).asInstanceOf[ParticleSystem]

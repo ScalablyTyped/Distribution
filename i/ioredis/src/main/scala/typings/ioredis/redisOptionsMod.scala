@@ -6,8 +6,8 @@ import typings.ioredis.anon.PartialSentinelAddress
 import typings.ioredis.clusterOptionsMod.NatMap
 import typings.ioredis.commanderMod.CommanderOptions
 import typings.ioredis.connectorConstructorMod.ConnectorConstructor
-import typings.ioredis.ioredisNumbers.`1`
-import typings.ioredis.ioredisNumbers.`2`
+import typings.ioredis.ioredisInts.`1`
+import typings.ioredis.ioredisInts.`2`
 import typings.ioredis.ioredisStrings.master_
 import typings.ioredis.ioredisStrings.slave
 import typings.ioredis.sentinelConnectorMod.AddressFromResponse

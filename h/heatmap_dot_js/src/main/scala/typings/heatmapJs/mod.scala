@@ -1,7 +1,6 @@
 package typings.heatmapJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.heatmapJs.anon.X
 import typings.leaflet.mod.Map_
 import typings.std.HTMLElement
 import typings.std.Record
@@ -17,7 +16,7 @@ object mod {
   
   @JSImport("heatmap.js", "Heatmap")
   @js.native
-  class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extends StObject {
+  open class Heatmap[V /* <: String */, X /* <: String */, Y /* <: String */] () extends StObject {
     
     def addData(dataPoint: js.Array[DataPoint[V, X, Y]]): this.type = js.native
     /**
@@ -98,7 +97,7 @@ object mod {
       * // get the value at x=10, y=10
       * heatmapInstance.getValueAt({ x: 10, y: 10 }); // returns 100
       */
-    def getValueAt(point: X): Double = js.native
+    def getValueAt(point: typings.heatmapJs.anon.X): Double = js.native
     
     /**
       * Repaints the whole heatmap canvas.
@@ -158,7 +157,7 @@ object mod {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Leaflet.ILayer * / any */ @JSGlobal("HeatmapOverlay")
     @js.native
-    class HeatmapOverlay[V /* <: String */, TLat /* <: String */, TLng /* <: String */] protected () extends StObject {
+    open class HeatmapOverlay[V /* <: String */, TLat /* <: String */, TLng /* <: String */] protected () extends StObject {
       /**
         * Initialization function
         */
@@ -189,7 +188,7 @@ object mod {
     }
   }
   
-  inline def register(pluginKey: String, plugin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(pluginKey.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(pluginKey: String, plugin: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(pluginKey.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait BaseHeatmapConfiguration[V /* <: String */] extends StObject {
     
@@ -417,7 +416,7 @@ object mod {
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

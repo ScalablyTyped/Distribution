@@ -1,10 +1,10 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsNumbers.`1000`
-import typings.screeps.screepsNumbers.`200`
-import typings.screeps.screepsNumbers.`400`
-import typings.screeps.screepsNumbers.`600`
-import typings.screeps.screepsNumbers.`800`
+import typings.screeps.screepsInts.`1000`
+import typings.screeps.screepsInts.`200`
+import typings.screeps.screepsInts.`400`
+import typings.screeps.screepsInts.`600`
+import typings.screeps.screepsInts.`800`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,27 +19,27 @@ trait CooldownDuration extends StObject {
   var duration: js.Tuple5[`200`, `400`, `600`, `800`, `1000`]
   
   var level: js.Tuple5[
-    typings.screeps.screepsNumbers.`0`, 
-    typings.screeps.screepsNumbers.`2`, 
-    typings.screeps.screepsNumbers.`7`, 
-    typings.screeps.screepsNumbers.`14`, 
-    typings.screeps.screepsNumbers.`22`
+    typings.screeps.screepsInts.`0`, 
+    typings.screeps.screepsInts.`2`, 
+    typings.screeps.screepsInts.`7`, 
+    typings.screeps.screepsInts.`14`, 
+    typings.screeps.screepsInts.`22`
   ]
   
-  var ops: typings.screeps.screepsNumbers.`10`
+  var ops: typings.screeps.screepsInts.`10`
   
-  var range: typings.screeps.screepsNumbers.`3`
+  var range: typings.screeps.screepsInts.`3`
 }
 object CooldownDuration {
   
   inline def apply(
     duration: js.Tuple5[`200`, `400`, `600`, `800`, `1000`],
     level: js.Tuple5[
-      typings.screeps.screepsNumbers.`0`, 
-      typings.screeps.screepsNumbers.`2`, 
-      typings.screeps.screepsNumbers.`7`, 
-      typings.screeps.screepsNumbers.`14`, 
-      typings.screeps.screepsNumbers.`22`
+      typings.screeps.screepsInts.`0`, 
+      typings.screeps.screepsInts.`2`, 
+      typings.screeps.screepsInts.`7`, 
+      typings.screeps.screepsInts.`14`, 
+      typings.screeps.screepsInts.`22`
     ]
   ): CooldownDuration = {
     val __obj = js.Dynamic.literal(className = "operator", cooldown = 400, duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], ops = 10, range = 3)
@@ -56,16 +56,16 @@ object CooldownDuration {
     
     inline def setLevel(
       value: js.Tuple5[
-          typings.screeps.screepsNumbers.`0`, 
-          typings.screeps.screepsNumbers.`2`, 
-          typings.screeps.screepsNumbers.`7`, 
-          typings.screeps.screepsNumbers.`14`, 
-          typings.screeps.screepsNumbers.`22`
+          typings.screeps.screepsInts.`0`, 
+          typings.screeps.screepsInts.`2`, 
+          typings.screeps.screepsInts.`7`, 
+          typings.screeps.screepsInts.`14`, 
+          typings.screeps.screepsInts.`22`
         ]
     ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setOps(value: typings.screeps.screepsNumbers.`10`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: typings.screeps.screepsInts.`10`): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

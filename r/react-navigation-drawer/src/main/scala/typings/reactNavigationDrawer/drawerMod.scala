@@ -1,14 +1,15 @@
 package typings.reactNavigationDrawer
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ComponentProps
+import typings.react.mod.ComponentType
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.mod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandler
+import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandlerProps_
 import typings.reactNavigationDrawer.anon.DrawerPostion
 import typings.reactNavigationDrawer.anon.Progress
-import typings.reactNavigationDrawer.anon.ReadonlyPanGestureHandler
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.`on-drag`
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.back
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.fade
@@ -25,7 +26,7 @@ object drawerMod {
   
   @JSImport("react-navigation-drawer/lib/typescript/src/views/Drawer", JSImport.Default)
   @js.native
-  class default () extends Drawer
+  open class default () extends Drawer
   /* static members */
   object default {
     
@@ -41,9 +42,9 @@ object drawerMod {
   
   @js.native
   trait Drawer
-    extends PureComponent[Props, js.Object, js.Any] {
+    extends PureComponent[Props, js.Object, Any] {
     
-    /* private */ var clock: js.Any = js.native
+    /* private */ var clock: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDrawer(prevProps: Props): Unit = js.native
@@ -51,69 +52,69 @@ object drawerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDrawer(): Unit = js.native
     
-    /* private */ var containerWidth: js.Any = js.native
+    /* private */ var containerWidth: Any = js.native
     
-    /* private */ var currentOpenValue: js.Any = js.native
+    /* private */ var currentOpenValue: Any = js.native
     
-    /* private */ var dragX: js.Any = js.native
+    /* private */ var dragX: Any = js.native
     
-    /* private */ var drawerOpacity: js.Any = js.native
+    /* private */ var drawerOpacity: Any = js.native
     
-    /* private */ var drawerPosition: js.Any = js.native
+    /* private */ var drawerPosition: Any = js.native
     
-    /* private */ var drawerWidth: js.Any = js.native
+    /* private */ var drawerWidth: Any = js.native
     
-    /* private */ var gestureState: js.Any = js.native
+    /* private */ var gestureState: Any = js.native
     
-    /* private */ var gestureX: js.Any = js.native
+    /* private */ var gestureX: Any = js.native
     
-    /* private */ var handleContainerLayout: js.Any = js.native
+    /* private */ var handleContainerLayout: Any = js.native
     
-    /* private */ var handleDrawerLayout: js.Any = js.native
+    /* private */ var handleDrawerLayout: Any = js.native
     
-    /* private */ var handleGestureEvent: js.Any = js.native
+    /* private */ var handleGestureEvent: Any = js.native
     
-    /* private */ var handleGestureStateChange: js.Any = js.native
+    /* private */ var handleGestureStateChange: Any = js.native
     
-    /* private */ var handleTapStateChange: js.Any = js.native
+    /* private */ var handleTapStateChange: Any = js.native
     
-    /* private */ var isDrawerTypeFront: js.Any = js.native
+    /* private */ var isDrawerTypeFront: Any = js.native
     
-    /* private */ var isOpen: js.Any = js.native
+    /* private */ var isOpen: Any = js.native
     
-    /* private */ var isStatusBarHidden: js.Any = js.native
+    /* private */ var isStatusBarHidden: Any = js.native
     
-    /* private */ var isSwiping: js.Any = js.native
+    /* private */ var isSwiping: Any = js.native
     
-    /* private */ var manuallyTriggerSpring: js.Any = js.native
+    /* private */ var manuallyTriggerSpring: Any = js.native
     
-    /* private */ var nextIsOpen: js.Any = js.native
+    /* private */ var nextIsOpen: Any = js.native
     
-    /* private */ var offsetX: js.Any = js.native
+    /* private */ var offsetX: Any = js.native
     
-    /* private */ var pendingOpenValue: js.Any = js.native
+    /* private */ var pendingOpenValue: Any = js.native
     
-    /* private */ var position: js.Any = js.native
+    /* private */ var position: Any = js.native
     
-    /* private */ var progress: js.Any = js.native
+    /* private */ var progress: Any = js.native
     
-    /* private */ var swipeDistanceThreshold: js.Any = js.native
+    /* private */ var swipeDistanceThreshold: Any = js.native
     
-    /* private */ var swipeVelocityThreshold: js.Any = js.native
+    /* private */ var swipeVelocityThreshold: Any = js.native
     
-    /* private */ var toggleDrawer: js.Any = js.native
+    /* private */ var toggleDrawer: Any = js.native
     
-    /* private */ var toggleStatusBar: js.Any = js.native
+    /* private */ var toggleStatusBar: Any = js.native
     
-    /* private */ var touchDistanceFromDrawer: js.Any = js.native
+    /* private */ var touchDistanceFromDrawer: Any = js.native
     
-    /* private */ var touchX: js.Any = js.native
+    /* private */ var touchX: Any = js.native
     
-    /* private */ var transitionTo: js.Any = js.native
+    /* private */ var transitionTo: Any = js.native
     
-    /* private */ var translateX: js.Any = js.native
+    /* private */ var translateX: Any = js.native
     
-    /* private */ var velocityX: js.Any = js.native
+    /* private */ var velocityX: Any = js.native
   }
   
   trait Props extends StObject {
@@ -126,9 +127,7 @@ object drawerMod {
     
     var gestureEnabled: Boolean
     
-    var gestureHandlerProps: js.UndefOr[
-        ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]
-      ] = js.undefined
+    var gestureHandlerProps: js.UndefOr[ComponentProps[ComponentType[PanGestureHandlerProps_ & RefAttributes[Any]]]] = js.undefined
     
     var hideStatusBar: Boolean
     
@@ -191,7 +190,7 @@ object drawerMod {
       
       inline def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
       
-      inline def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
+      inline def setGestureHandlerProps(value: ComponentProps[ComponentType[PanGestureHandlerProps_ & RefAttributes[Any]]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
       
       inline def setGestureHandlerPropsUndefined: Self = StObject.set(x, "gestureHandlerProps", js.undefined)
       

@@ -1484,10 +1484,6 @@ object handsontableStrings {
   inline def modifyRowHeight: modifyRowHeight = "modifyRowHeight".asInstanceOf[modifyRowHeight]
   
   @js.native
-  sealed trait modifyRowSourceData extends StObject
-  inline def modifyRowSourceData: modifyRowSourceData = "modifyRowSourceData".asInstanceOf[modifyRowSourceData]
-  
-  @js.native
   sealed trait modifySourceData extends StObject
   inline def modifySourceData: modifySourceData = "modifySourceData".asInstanceOf[modifySourceData]
   

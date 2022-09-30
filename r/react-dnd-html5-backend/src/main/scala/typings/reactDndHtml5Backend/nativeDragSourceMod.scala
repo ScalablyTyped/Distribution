@@ -9,24 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nativeDragSourceMod {
   
-  @JSImport("react-dnd-html5-backend/lib/NativeDragSources/NativeDragSource", "NativeDragSource")
+  @JSImport("react-dnd-html5-backend/dist/NativeDragSources/NativeDragSource", "NativeDragSource")
   @js.native
-  class NativeDragSource protected () extends StObject {
+  open class NativeDragSource protected () extends StObject {
     def this(config: NativeItemConfig) = this()
     
-    def beginDrag(): js.Any = js.native
+    def beginDrag(): Any = js.native
     
     def canDrag(): Boolean = js.native
     
-    /* private */ var config: js.Any = js.native
+    /* private */ var config: Any = js.native
     
     def endDrag(): Unit = js.native
     
-    /* private */ var initializeExposedProperties: js.Any = js.native
+    /* private */ var initializeExposedProperties: Any = js.native
     
     def isDragging(monitor: DragDropMonitor, handle: String): Boolean = js.native
     
-    var item: js.Any = js.native
+    var item: Any = js.native
     
     def loadDataTransfer(): Unit = js.native
     def loadDataTransfer(dataTransfer: DataTransfer): Unit = js.native

@@ -107,13 +107,13 @@ object mod {
     */
   inline def element(`type`: String): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
   inline def element(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
-  inline def element[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
-  inline def element[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+  inline def element[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+  inline def element[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("element")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
   
   inline def h(`type`: String): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
   inline def h(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
-  inline def h[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
-  inline def h[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+  inline def h[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+  inline def h[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("h")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
   
   object string {
     
@@ -143,9 +143,9 @@ object mod {
     /* was `typeof element` */
     inline def create(`type`: Thunk): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[VirtualElement]
     /* was `typeof element` */
-    inline def create[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def create[A](`type`: String, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     /* was `typeof element` */
-    inline def create[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def create[A](`type`: Thunk, attributes: A, children: Any*): VirtualElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     
     inline def createEmptyElement(): VirtualElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyElement")().asInstanceOf[VirtualElement]
     

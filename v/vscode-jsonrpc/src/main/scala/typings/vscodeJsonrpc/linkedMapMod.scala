@@ -1,9 +1,9 @@
 package typings.vscodeJsonrpc
 
 import typings.std.Map
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`0`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`1`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`2`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`0`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`1`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,9 +83,9 @@ object linkedMapMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`0`
-    - typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`1`
-    - typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`2`
+    - typings.vscodeJsonrpc.vscodeJsonrpcInts.`0`
+    - typings.vscodeJsonrpc.vscodeJsonrpcInts.`1`
+    - typings.vscodeJsonrpc.vscodeJsonrpcInts.`2`
   */
   trait Touch extends StObject
   object Touch {

@@ -1,8 +1,7 @@
 package typings.yazl
 
 import typings.buffer.mod.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.std.Date
+import typings.std.ReadableStream
 import typings.yazl.anon.PartialDirectoryOptions
 import typings.yazl.anon.PartialOptions
 import typings.yazl.anon.PartialReadStreamOptions
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("yazl", "ZipFile")
   @js.native
-  class ZipFile () extends StObject {
+  open class ZipFile () extends StObject {
     
     def addBuffer(buffer: Buffer, metadataPath: String): Unit = js.native
     def addBuffer(buffer: Buffer, metadataPath: String, options: PartialOptions): Unit = js.native
@@ -25,28 +24,28 @@ object mod {
     def addFile(realPath: String, metadataPath: String): Unit = js.native
     def addFile(realPath: String, metadataPath: String, options: PartialOptions): Unit = js.native
     
-    def addReadStream(input: ReadableStream, metadataPath: String): Unit = js.native
-    def addReadStream(input: ReadableStream, metadataPath: String, options: PartialReadStreamOptions): Unit = js.native
+    def addReadStream(input: ReadableStream[Any], metadataPath: String): Unit = js.native
+    def addReadStream(input: ReadableStream[Any], metadataPath: String, options: PartialReadStreamOptions): Unit = js.native
     
-    def dateToDosDateTime(jsDate: Date): DosDateTime = js.native
+    def dateToDosDateTime(jsDate: js.Date): DosDateTime = js.native
     
     def end(): Unit = js.native
     def end(options: Unit, finalSizeCallback: js.Function0[Unit]): Unit = js.native
     def end(options: EndOptions): Unit = js.native
     def end(options: EndOptions, finalSizeCallback: js.Function0[Unit]): Unit = js.native
     
-    var outputStream: ReadableStream = js.native
+    var outputStream: ReadableStream[Any] = js.native
   }
   
   trait DirectoryOptions extends StObject {
     
     var mode: Double
     
-    var mtime: Date
+    var mtime: js.Date
   }
   object DirectoryOptions {
     
-    inline def apply(mode: Double, mtime: Date): DirectoryOptions = {
+    inline def apply(mode: Double, mtime: js.Date): DirectoryOptions = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectoryOptions]
     }
@@ -55,7 +54,7 @@ object mod {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,11 +104,11 @@ object mod {
     
     var mode: Double
     
-    var mtime: Date
+    var mtime: js.Date
   }
   object Options {
     
-    inline def apply(compress: Boolean, forceZip64Format: Boolean, mode: Double, mtime: Date): Options = {
+    inline def apply(compress: Boolean, forceZip64Format: Boolean, mode: Double, mtime: js.Date): Options = {
       val __obj = js.Dynamic.literal(compress = compress.asInstanceOf[js.Any], forceZip64Format = forceZip64Format.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
@@ -122,7 +121,7 @@ object mod {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,7 +133,7 @@ object mod {
   }
   object ReadStreamOptions {
     
-    inline def apply(compress: Boolean, forceZip64Format: Boolean, mode: Double, mtime: Date, size: Double): ReadStreamOptions = {
+    inline def apply(compress: Boolean, forceZip64Format: Boolean, mode: Double, mtime: js.Date, size: Double): ReadStreamOptions = {
       val __obj = js.Dynamic.literal(compress = compress.asInstanceOf[js.Any], forceZip64Format = forceZip64Format.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadStreamOptions]
     }

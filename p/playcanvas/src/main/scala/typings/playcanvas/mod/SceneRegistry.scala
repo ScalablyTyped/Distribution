@@ -20,6 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
   */
 /**
+  * Callback used by {@link SceneRegistry#changeScene}.
+  *
+  * @callback ChangeSceneCallback
+  * @param {string|null} err - The error message in the case where the loading or parsing fails.
+  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  */
+/**
   * Callback used by {@link SceneRegistry#loadScene}.
   *
   * @callback LoadSceneCallback
@@ -53,6 +60,8 @@ open class SceneRegistry protected () extends StObject {
   
   def _loadSceneData(sceneItem: Any, storeInCache: Any, callback: Any): Unit = js.native
   
+  def _loadSceneHierarchy(sceneItem: Any, onBeforeAddHierarchy: Any, callback: Any): Unit = js.native
+  
   /**
     * Add a new item to the scene registry.
     *
@@ -61,6 +70,28 @@ open class SceneRegistry protected () extends StObject {
     * @returns {boolean} Returns true if the scene was successfully added to the registry, false otherwise.
     */
   def add(name: String, url: String): Boolean = js.native
+  
+  def changeScene(sceneItem: String): Unit = js.native
+  def changeScene(sceneItem: String, callback: ChangeSceneCallback): Unit = js.native
+  /**
+    * Change to a new scene. Calling this function will load the scene data, delete all
+    * entities and graph nodes under `app.root` and load the scene settings and hierarchy.
+    *
+    * @param {SceneRegistryItem | string} sceneItem - The scene item (which can be found with
+    * {@link SceneRegistry#find}, URL of the scene file (e.g."scene_id.json") or name of the scene.
+    * @param {ChangeSceneCallback} [callback] - The function to call after loading,
+    * passed (err, entity) where err is null if no errors occurred.
+    * @example
+    * app.scenes.changeScene("Scene Name", function (err, entity) {
+    *     if (!err) {
+    *         // success
+    *     } else {
+    *         // error
+    *     }
+    * });
+    */
+  def changeScene(sceneItem: SceneRegistryItem): Unit = js.native
+  def changeScene(sceneItem: SceneRegistryItem, callback: ChangeSceneCallback): Unit = js.native
   
   def destroy(): Unit = js.native
   
@@ -108,7 +139,7 @@ open class SceneRegistry protected () extends StObject {
     * scene loading quicker for the user.
     *
     * @param {SceneRegistryItem | string} sceneItem - The scene item (which can be found with
-    * {@link SceneRegistry#find} or URL of the scene file. Usually this will be "scene_id.json".
+    * {@link SceneRegistry#find}, URL of the scene file (e.g."scene_id.json") or name of the scene.
     * @param {LoadSceneDataCallback} callback - The function to call after loading,
     * passed (err, sceneItem) where err is null if no errors occurred.
     * @example
@@ -127,7 +158,7 @@ open class SceneRegistry protected () extends StObject {
     * application root Entity.
     *
     * @param {SceneRegistryItem | string} sceneItem - The scene item (which can be found with
-    * {@link SceneRegistry#find} or URL of the scene file. Usually this will be "scene_id.json".
+    * {@link SceneRegistry#find}, URL of the scene file (e.g."scene_id.json") or name of the scene.
     * @param {LoadHierarchyCallback} callback - The function to call after loading,
     * passed (err, entity) where err is null if no errors occurred.
     * @example
@@ -147,14 +178,14 @@ open class SceneRegistry protected () extends StObject {
     * Load a scene file and apply the scene settings to the current scene.
     *
     * @param {SceneRegistryItem | string} sceneItem - The scene item (which can be found with
-    * {@link SceneRegistry#find} or URL of the scene file. Usually this will be "scene_id.json".
+    * {@link SceneRegistry#find}, URL of the scene file (e.g."scene_id.json") or name of the scene.
     * @param {LoadSettingsCallback} callback - The function called after the settings
     * are applied. Passed (err) where err is null if no error occurred.
     * @example
     * var sceneItem = app.scenes.find("Scene Name");
-    * app.scenes.loadSceneHierarchy(sceneItem, function (err, entity) {
+    * app.scenes.loadSceneSettings(sceneItem, function (err) {
     *     if (!err) {
-    *         var e = app.root.find("My New Entity");
+    *         // success
     *     } else {
     *         // error
     *     }

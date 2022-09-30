@@ -22,6 +22,6 @@ trait IConnected[Ext, C /* <: IClient */]
   // But for direct connections (connect({direct: true})), `kill` flag is ignored, because
   // the connection is always closed physically, which may take time, and so in this case
   // the method returns a Promise, to indicate when the connection finished closing.
-  def done(): Unit | XPromise[Unit] = js.native
-  def done(kill: Boolean): Unit | XPromise[Unit] = js.native
+  def done(): Unit | js.Promise[Unit] = js.native
+  def done(kill: Boolean): Unit | js.Promise[Unit] = js.native
 }

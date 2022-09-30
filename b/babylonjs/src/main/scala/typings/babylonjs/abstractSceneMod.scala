@@ -39,13 +39,13 @@ object abstractSceneMod {
   @js.native
   abstract class AbstractScene () extends StObject {
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _environmentTexture: Nullable[BaseTexture] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _prePassRenderer: Nullable[PrePassRenderer] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _subSurfaceConfiguration: Nullable[SubSurfaceConfiguration] = js.native
     
     /**

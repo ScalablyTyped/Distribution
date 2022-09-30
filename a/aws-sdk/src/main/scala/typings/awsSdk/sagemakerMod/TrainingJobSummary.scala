@@ -35,6 +35,11 @@ trait TrainingJobSummary extends StObject {
     * The status of the training job.
     */
   var TrainingJobStatus: typings.awsSdk.sagemakerMod.TrainingJobStatus
+  
+  /**
+    * The status of the warm pool associated with the training job.
+    */
+  var WarmPoolStatus: js.UndefOr[typings.awsSdk.sagemakerMod.WarmPoolStatus] = js.undefined
 }
 object TrainingJobSummary {
   
@@ -65,5 +70,9 @@ object TrainingJobSummary {
     inline def setTrainingJobName(value: TrainingJobName): Self = StObject.set(x, "TrainingJobName", value.asInstanceOf[js.Any])
     
     inline def setTrainingJobStatus(value: TrainingJobStatus): Self = StObject.set(x, "TrainingJobStatus", value.asInstanceOf[js.Any])
+    
+    inline def setWarmPoolStatus(value: WarmPoolStatus): Self = StObject.set(x, "WarmPoolStatus", value.asInstanceOf[js.Any])
+    
+    inline def setWarmPoolStatusUndefined: Self = StObject.set(x, "WarmPoolStatus", js.undefined)
   }
 }

@@ -15,9 +15,5 @@ object sessionValidateMod {
   
   inline def validateModel(data: Any): /* asserts data is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, session, session)), TsIdentSimple(IModel))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateModel")(data.asInstanceOf[js.Any]).asInstanceOf[/* asserts data is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, session, session)), TsIdentSimple(IModel))),IArray())*/ Boolean]
   
-  inline def validateModels(models: js.Array[IModel]): js.Array[
-    /* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, session, session)), TsIdentSimple(IModel))),IArray())*/ Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateModels")(models.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-    /* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, session, session)), TsIdentSimple(IModel))),IArray())*/ Boolean
-  ]]
+  inline def validateModels(models: js.Array[IModel]): /* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(Array))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, session, session)), TsIdentSimple(IModel))),IArray())))*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateModels")(models.asInstanceOf[js.Any]).asInstanceOf[/* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(Array))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, session, session)), TsIdentSimple(IModel))),IArray())))*/ Boolean]
 }

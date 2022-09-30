@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetOperationRequest.
   * @param [properties] Properties to set
   */
-class GetOperationRequest ()
+open class GetOperationRequest ()
   extends StObject
      with IGetOperationRequest {
   def this(properties: IGetOperationRequest) = this()
@@ -29,7 +28,7 @@ class GetOperationRequest ()
     * Converts this GetOperationRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object GetOperationRequest {
   
@@ -46,6 +45,8 @@ object GetOperationRequest {
   inline def create(): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetOperationRequest]
   inline def create(properties: IGetOperationRequest): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetOperationRequest]
   /**
     * Decodes a GetOperationRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object GetOperationRequest {
   /* static member */
   inline def decode(reader: Reader): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   inline def decode(reader: Reader, length: Double): GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetOperationRequest]
-  inline def decode(reader: Uint8Array): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
-  inline def decode(reader: Uint8Array, length: Double): GetOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetOperationRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   /**
     * Decodes a GetOperationRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object GetOperationRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
-  inline def decodeDelimited(reader: Uint8Array): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   
   /**
     * Encodes the specified GetOperationRequest message. Does not implicitly {@link google.longrunning.GetOperationRequest.verify|verify} messages.
@@ -97,7 +96,7 @@ object GetOperationRequest {
     * @returns GetOperationRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): GetOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetOperationRequest]
   
   /**
     * Creates a plain object from a GetOperationRequest message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object GetOperationRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: GetOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: GetOperationRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GetOperationRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: GetOperationRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a GetOperationRequest message.
@@ -115,5 +114,5 @@ object GetOperationRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

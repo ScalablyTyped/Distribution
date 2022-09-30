@@ -1,6 +1,7 @@
 package typings.ora
 
 import typings.cliSpinners.mod.SpinnerName
+import typings.std.PromiseLike
 import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,12 +17,12 @@ object mod {
   inline def default(options: String): Ora = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
   inline def default(options: Options): Ora = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Ora]
   
-  inline def oraPromise[T](action: js.Function1[/* spinner */ Ora, js.Thenable[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def oraPromise[T](action: js.Function1[/* spinner */ Ora, js.Thenable[T]], options: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def oraPromise[T](action: js.Function1[/* spinner */ Ora, js.Thenable[T]], options: PromiseOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def oraPromise[T](action: js.Thenable[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def oraPromise[T](action: js.Thenable[T], options: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def oraPromise[T](action: js.Thenable[T], options: PromiseOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def oraPromise[T](action: js.Function1[/* spinner */ Ora, PromiseLike[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def oraPromise[T](action: js.Function1[/* spinner */ Ora, PromiseLike[T]], options: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def oraPromise[T](action: js.Function1[/* spinner */ Ora, PromiseLike[T]], options: PromiseOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def oraPromise[T](action: PromiseLike[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def oraPromise[T](action: PromiseLike[T], options: String): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def oraPromise[T](action: PromiseLike[T], options: PromiseOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("oraPromise")(action.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ora.oraStrings.black

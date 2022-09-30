@@ -14,7 +14,7 @@ object runnerMod {
   
   @JSImport("protractor/built/runner", "Runner")
   @js.native
-  class Runner protected () extends EventEmitter {
+  open class Runner protected () extends EventEmitter {
     def this(config: Config) = this()
     
     /**
@@ -33,7 +33,7 @@ object runnerMod {
       * Get the control flow used by this runner.
       * @return {Object} WebDriver control flow.
       */
-    def controlFlow(): js.Any = js.native
+    def controlFlow(): Any = js.native
     
     /**
       * Create a new driver from a driverProvider. Then set up a
@@ -47,8 +47,8 @@ object runnerMod {
       * @return {Protractor} a protractor instance.
       * @public
       */
-    def createBrowser(plugins: js.Any): js.Any = js.native
-    def createBrowser(plugins: js.Any, parentBrowser: ProtractorBrowser): js.Any = js.native
+    def createBrowser(plugins: Any): Any = js.native
+    def createBrowser(plugins: Any, parentBrowser: ProtractorBrowser): Any = js.native
     
     var driverprovider_ : DriverProvider = js.native
     
@@ -57,7 +57,7 @@ object runnerMod {
       * @private
       * @param {int} Standard unix exit code
       */
-    def exit_(exitCode: Double): js.Any = js.native
+    def exit_(exitCode: Double): Any = js.native
     
     var frameworkUsesAfterEach: Boolean = js.native
     
@@ -81,15 +81,15 @@ object runnerMod {
       */
     def loadDriverProvider_(config: Config): Unit = js.native
     
-    var o: js.Any = js.native
+    var o: Any = js.native
     
     var plugins_ : Plugins = js.native
     
-    var preparer_ : js.Any = js.native
+    var preparer_ : Any = js.native
     
     var ready_ : js.UndefOr[js.Promise[Unit]] = js.native
     
-    var restartPromise: Promise[js.Any] = js.native
+    var restartPromise: Promise[Any] = js.native
     
     /**
       * The primary workhorse interface. Kicks off the test running process.
@@ -97,7 +97,7 @@ object runnerMod {
       * @return {q.Promise} A promise which resolves to the exit code of the tests.
       * @public
       */
-    def run(): Promise[js.Any] = js.native
+    def run(): Promise[Any] = js.native
     
     /**
       * Executor of testPreparer
@@ -106,8 +106,8 @@ object runnerMod {
       * @return {q.Promise} A promise that will resolve when the test preparers
       *     are finished.
       */
-    def runTestPreparer(): Promise[js.Any] = js.native
-    def runTestPreparer(extraFlags: js.Array[String]): Promise[js.Any] = js.native
+    def runTestPreparer(): Promise[Any] = js.native
+    def runTestPreparer(extraFlags: js.Array[String]): Promise[Any] = js.native
     
     /**
       * Registrar for testPreparers - executed right before tests run.

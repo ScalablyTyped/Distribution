@@ -21,7 +21,7 @@ trait PromiseConstructor
 /* standard es2015.promise */
 Instantiable1[
       /* executor */ js.Function2[
-        /* resolve */ js.Function1[/* value */ js.Object | js.Thenable[js.Object], Unit], 
+        /* resolve */ js.Function1[/* value */ js.Object | PromiseLike[js.Object], Unit], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
         Unit
       ], 
@@ -47,7 +47,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   /* standard es2015.iterable */
-  def all[T](values: js.Iterable[T | js.Thenable[T]]): js.Promise[js.Array[Awaited[T]]] = js.native
+  def all[T](values: js.Iterable[T | PromiseLike[T]]): js.Promise[js.Array[Awaited[T]]] = js.native
   
   /**
     * Creates a Promise that is resolved with an array of results when all
@@ -68,7 +68,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   /* standard es2020.promise */
-  def allSettled[T](values: js.Iterable[T | js.Thenable[T]]): js.Promise[js.Array[PromiseSettledResult[Awaited[T]]]] = js.native
+  def allSettled[T](values: js.Iterable[T | PromiseLike[T]]): js.Promise[js.Array[PromiseSettledResult[Awaited[T]]]] = js.native
   
   /**
     * The any function returns a promise that is fulfilled by the first given promise to be fulfilled, or rejected with an AggregateError containing an array of rejection reasons if all of the given promises are rejected. It resolves all elements of the passed iterable to promises as it runs this algorithm.
@@ -87,7 +87,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   /* standard es2021.promise */
-  def any[T](values: js.Iterable[T | js.Thenable[T]]): js.Promise[Awaited[T]] = js.native
+  def any[T](values: js.Iterable[T | PromiseLike[T]]): js.Promise[Awaited[T]] = js.native
   
   // see: lib.es2015.iterable.d.ts
   // all<T>(values: Iterable<T | PromiseLike<T>>): Promise<T[]>;
@@ -110,7 +110,7 @@ Instantiable1[
     * @returns A new Promise.
     */
   /* standard es2015.iterable */
-  def race[T](values: js.Iterable[T | js.Thenable[T]]): js.Promise[Awaited[T]] = js.native
+  def race[T](values: js.Iterable[T | PromiseLike[T]]): js.Promise[Awaited[T]] = js.native
   
   // see: lib.es2015.iterable.d.ts
   // race<T>(values: Iterable<T>): Promise<T extends PromiseLike<infer U> ? U : T>;
@@ -136,7 +136,7 @@ Instantiable1[
     */
   /* standard es2015.promise */
   def resolve[T](value: T): js.Promise[T] = js.native
-  def resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
+  def resolve[T](value: PromiseLike[T]): js.Promise[T] = js.native
   
   /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.species)

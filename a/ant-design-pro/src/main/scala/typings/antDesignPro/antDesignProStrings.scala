@@ -46,10 +46,6 @@ object antDesignProStrings {
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait downward extends StObject
-  inline def downward: downward = "downward".asInstanceOf[downward]
-  
-  @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
   
@@ -62,14 +58,6 @@ object antDesignProStrings {
     extends StObject
        with _SizeType
   inline def large: large = "large".asInstanceOf[large]
-  
-  @js.native
-  sealed trait multiple extends StObject
-  inline def multiple: multiple = "multiple".asInstanceOf[multiple]
-  
-  @js.native
-  sealed trait single extends StObject
-  inline def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait small
@@ -98,18 +86,6 @@ object antDesignProStrings {
   inline def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait upward extends StObject
-  inline def upward: upward = "upward".asInstanceOf[upward]
-  
-  @js.native
   sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
-  
-  @js.native
-  sealed trait x extends StObject
-  inline def x: x = "x".asInstanceOf[x]
-  
-  @js.native
-  sealed trait y extends StObject
-  inline def y: y = "y".asInstanceOf[y]
 }

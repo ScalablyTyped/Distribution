@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.AdvancedRequestHandling")
 @js.native
-class AdvancedRequestHandling protected ()
+open class AdvancedRequestHandling protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.AdvancedRequestHandling {
   def this(
     model: AbstractModel,

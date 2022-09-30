@@ -1,8 +1,9 @@
 package typings.jestTypes.anon
 
-import typings.jestTypes.circusMod.BlockMode
-import typings.jestTypes.circusMod.SyncEvent
 import typings.jestTypes.jestTypesStrings.finish_describe_definition
+import typings.jestTypes.mod.BlockMode
+import typings.jestTypes.mod.BlockName2
+import typings.jestTypes.mod.SyncEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait BlockName
   extends StObject
      with SyncEvent {
   
-  var blockName: typings.jestTypes.circusMod.BlockName
+  var blockName: BlockName2
   
   var mode: BlockMode
   
@@ -19,14 +20,14 @@ trait BlockName
 }
 object BlockName {
   
-  inline def apply(blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): BlockName = {
+  inline def apply(blockName: BlockName2, mode: BlockMode): BlockName = {
     val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = "finish_describe_definition")
     __obj.asInstanceOf[BlockName]
   }
   
   extension [Self <: BlockName](x: Self) {
     
-    inline def setBlockName(value: typings.jestTypes.circusMod.BlockName): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
+    inline def setBlockName(value: BlockName2): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     
     inline def setMode(value: BlockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

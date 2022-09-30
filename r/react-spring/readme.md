@@ -1,24 +1,24 @@
 
 # Scala.js typings for react-spring
 
-Typings are for version 8.0.27
+Typings are for version 9.5.4
 
 ## Library description:
-A set of spring-physics based animation primitives
+<p align="center">   <img src="https://i.imgur.com/QZownhg.png" width="240" /> </p>
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-spring |
-| Keywords           | react, motion, animated, animation, spring |
-| # releases         | 199 |
-| # dependents       | 475 |
-| # downloads        | 12320965 |
-| # stars            | 0 |
+| Keywords           | animated, animation, hooks, motion, react, react-native, spring, typescript, velocity |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 3483964.3333333335 |
+| # stars            | 24088.0 |
 
 ## Links
-- [Homepage](https://github.com/drcmda/react-spring#readme)
-- [Bugs](https://github.com/drcmda/react-spring/issues)
-- [Repository](https://github.com/drcmda/react-spring)
+- [Homepage](https://github.com/pmndrs/react-spring#readme)
+- [Bugs](https://github.com/pmndrs/react-spring/issues)
+- [Repository](https://github.com/pmndrs/react-spring)
 - [Npm](https://www.npmjs.com/package/react-spring)
     
 

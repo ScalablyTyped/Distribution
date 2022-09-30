@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.GroupBoxRenderMode")
 @js.native
-class GroupBoxRenderMode protected ()
+open class GroupBoxRenderMode protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GroupBoxRenderMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

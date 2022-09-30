@@ -1,22 +1,22 @@
 package typings.dashjs.mod
 
-import typings.dashjs.dashjsNumbers.`0`
-import typings.dashjs.dashjsNumbers.`1`
-import typings.dashjs.dashjsNumbers.`2`
-import typings.dashjs.dashjsNumbers.`3`
-import typings.dashjs.dashjsNumbers.`4`
-import typings.dashjs.dashjsNumbers.`5`
+import typings.dashjs.dashjsInts.`0`
+import typings.dashjs.dashjsInts.`1`
+import typings.dashjs.dashjsInts.`2`
+import typings.dashjs.dashjsInts.`3`
+import typings.dashjs.dashjsInts.`4`
+import typings.dashjs.dashjsInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.dashjs.dashjsNumbers.`0`
-  - typings.dashjs.dashjsNumbers.`1`
-  - typings.dashjs.dashjsNumbers.`2`
-  - typings.dashjs.dashjsNumbers.`3`
-  - typings.dashjs.dashjsNumbers.`4`
-  - typings.dashjs.dashjsNumbers.`5`
+  - typings.dashjs.dashjsInts.`0`
+  - typings.dashjs.dashjsInts.`1`
+  - typings.dashjs.dashjsInts.`2`
+  - typings.dashjs.dashjsInts.`3`
+  - typings.dashjs.dashjsInts.`4`
+  - typings.dashjs.dashjsInts.`5`
 */
 trait LogLevel extends StObject
 object LogLevel {

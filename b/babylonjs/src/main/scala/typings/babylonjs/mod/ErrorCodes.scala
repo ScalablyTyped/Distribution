@@ -1,12 +1,12 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.babylonjsNumbers.`0`
-import typings.babylonjs.babylonjsNumbers.`1000`
-import typings.babylonjs.babylonjsNumbers.`2000`
-import typings.babylonjs.babylonjsNumbers.`3000`
-import typings.babylonjs.babylonjsNumbers.`4000`
-import typings.babylonjs.babylonjsNumbers.`4001`
-import typings.babylonjs.babylonjsNumbers.`4002`
+import typings.babylonjs.babylonjsInts.`0`
+import typings.babylonjs.babylonjsInts.`1000`
+import typings.babylonjs.babylonjsInts.`2000`
+import typings.babylonjs.babylonjsInts.`3000`
+import typings.babylonjs.babylonjsInts.`4000`
+import typings.babylonjs.babylonjsInts.`4001`
+import typings.babylonjs.babylonjsInts.`4002`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

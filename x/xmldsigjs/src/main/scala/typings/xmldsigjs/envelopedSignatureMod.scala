@@ -9,7 +9,7 @@ object envelopedSignatureMod {
   
   @JSImport("xmldsigjs/build/types/xml/transforms/enveloped_signature", "XmlDsigEnvelopedSignatureTransform")
   @js.native
-  class XmlDsigEnvelopedSignatureTransform () extends Transform {
+  open class XmlDsigEnvelopedSignatureTransform () extends Transform {
     def this(properties: js.Object) = this()
   }
 }

@@ -1,11 +1,11 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.PartialContextSettingsHasConverter
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`4`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`3`
+import typings.firebaseFirestore.firebaseFirestoreInts.`4`
 import typings.firebaseFirestore.firestoreSrcApiParseContextMod.ParseContext
 import typings.firebaseFirestore.firestoreSrcCoreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.firestoreSrcModelDocumentKeyMod.DocumentKey
@@ -312,11 +312,11 @@ object firestoreSrcLiteApiUserDataReaderMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`4`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`3`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`4`
   */
   trait UserDataSource extends StObject
   object UserDataSource {

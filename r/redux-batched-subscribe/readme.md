@@ -11,14 +11,11 @@ redux store enhancer which allows batching subscribe notifications.
 | Full name          | redux-batched-subscribe |
 | Keywords           | redux, batched, react, reactjs, performance, store |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 899732 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 164544.33333333334 |
+| # stars            | 499.0 |
 
 ## Links
-- [Homepage](https://github.com/tappleby/redux-batched-subscribe)
-- [Bugs](https://github.com/tappleby/redux-batched-subscribe/issues)
-- [Repository](https://github.com/tappleby/redux-batched-subscribe)
 - [Npm](https://www.npmjs.com/package/redux-batched-subscribe)
     
 

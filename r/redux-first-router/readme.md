@@ -10,10 +10,10 @@ think of your app in states not routes (and, yes, while keeping the address bar 
 | ------------------ | :-------------: |
 | Full name          | redux-first-router |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 16 |
-| # downloads        | 726162 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 58556.666666666664 |
+| # stars            | 1558.0 |
 
 ## Links
 - [Homepage](https://github.com/faceyspacey/redux-first-router#readme)

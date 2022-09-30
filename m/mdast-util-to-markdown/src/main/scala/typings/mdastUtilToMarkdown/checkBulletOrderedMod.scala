@@ -1,7 +1,6 @@
 package typings.mdastUtilToMarkdown
 
 import typings.mdastUtilToMarkdown.mdastUtilToMarkdownStrings.Dot
-import typings.mdastUtilToMarkdown.mdastUtilToMarkdownStrings.Rightparenthesis
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ object checkBulletOrderedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkBulletOrdered(context: Context): Exclude[js.UndefOr[Dot | Rightparenthesis], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBulletOrdered")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Dot | Rightparenthesis], Unit]]
+  inline def checkBulletOrdered(context: Context): Exclude[js.UndefOr[Dot | String], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBulletOrdered")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Dot | String], Unit]]
   
   type Context = typings.mdastUtilToMarkdown.typesMod.Context
   

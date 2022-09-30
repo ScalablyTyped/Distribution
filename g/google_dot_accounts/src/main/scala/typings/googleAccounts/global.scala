@@ -84,12 +84,12 @@ object global {
         /**
           * Checks if the user granted all the specified scope or scopes.
           */
-        inline def hasGrantedAllScopes(tokenResponse: TokenResponse, firstScope: String, restScopes: String*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasGrantedAllScopes")((List(tokenResponse.asInstanceOf[js.Any], firstScope.asInstanceOf[js.Any])).`++`(restScopes.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+        inline def hasGrantedAllScopes(tokenResponse: TokenResponse, firstScope: String, restScopes: String*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasGrantedAllScopes")((scala.List(tokenResponse.asInstanceOf[js.Any], firstScope.asInstanceOf[js.Any])).`++`(restScopes.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
         
         /**
           * Checks if the user granted any of the specified scope or scopes.
           */
-        inline def hasGrantedAnyScope(tokenResponse: TokenResponse, firstScope: String, restScopes: String*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasGrantedAnyScope")((List(tokenResponse.asInstanceOf[js.Any], firstScope.asInstanceOf[js.Any])).`++`(restScopes.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+        inline def hasGrantedAnyScope(tokenResponse: TokenResponse, firstScope: String, restScopes: String*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasGrantedAnyScope")((scala.List(tokenResponse.asInstanceOf[js.Any], firstScope.asInstanceOf[js.Any])).`++`(restScopes.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
         
         /**
           * Initializes and returns a code client, with the configurations in the

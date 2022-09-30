@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object inkStrings {
   
   @js.native
-  sealed trait ChalkFunctionProps extends StObject
-  inline def ChalkFunctionProps: ChalkFunctionProps = "ChalkFunctionProps".asInstanceOf[ChalkFunctionProps]
-  
-  @js.native
   sealed trait Numbersigntext extends StObject
   inline def Numbersigntext: Numbersigntext = "#text".asInstanceOf[Numbersigntext]
   
   @js.native
   sealed trait absolute extends StObject
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
+  
+  @js.native
+  sealed trait arrow extends StObject
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
   sealed trait auto extends StObject

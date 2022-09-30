@@ -1,7 +1,7 @@
 package typings.umijsSsrDarkreader
 
-import typings.umijsSsrDarkreader.umijsSsrDarkreaderNumbers.`0`
-import typings.umijsSsrDarkreader.umijsSsrDarkreaderNumbers.`1`
+import typings.umijsSsrDarkreader.umijsSsrDarkreaderInts.`0`
+import typings.umijsSsrDarkreader.umijsSsrDarkreaderInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

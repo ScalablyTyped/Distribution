@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.PartEncoding")
 @js.native
-class PartEncoding protected ()
+open class PartEncoding protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.PartEncoding {
   def this(
     model: AbstractModel,

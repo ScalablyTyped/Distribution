@@ -33,9 +33,9 @@ object distSrcCoreUtilLogMod {
   
   inline def getLogLevel(): LogLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("_getLogLevel")().asInstanceOf[LogLevel]
   
-  inline def logDebug(msg: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logDebug")(List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def logDebug(msg: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logDebug")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
-  inline def logError(msg: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logError")(List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def logError(msg: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logError")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def setLogLevel(newLevel: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setLogLevel")(newLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

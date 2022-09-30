@@ -13,8 +13,8 @@ import typings.amapJsApiGeolocation.AMap.Geolocation.CityResult
 import typings.amapJsApiGeolocation.AMap.Geolocation.ErrorStatus
 import typings.amapJsApiGeolocation.AMap.Geolocation.GeolocationResult
 import typings.amapJsApiGeolocation.AMap.Geolocation.SearchStatus
-import typings.amapJsApiGeolocation.amapJsApiGeolocationNumbers.`0`
-import typings.amapJsApiGeolocation.amapJsApiGeolocationNumbers.`1`
+import typings.amapJsApiGeolocation.amapJsApiGeolocationInts.`0`
+import typings.amapJsApiGeolocation.amapJsApiGeolocationInts.`1`
 import typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.all
 import typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.base
 import typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete

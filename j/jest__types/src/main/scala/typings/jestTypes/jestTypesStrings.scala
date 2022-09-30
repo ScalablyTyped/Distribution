@@ -1,15 +1,15 @@
 package typings.jestTypes
 
-import typings.jestTypes.circusMod.HookType
-import typings.jestTypes.circusMod.SharedHookType
-import typings.jestTypes.circusMod.TestStatus
-import typings.jestTypes.circusMod._BlockMode
-import typings.jestTypes.configMod.CoverageProvider
-import typings.jestTypes.configMod.CoverageReporterName
-import typings.jestTypes.configMod.NotifyMode
-import typings.jestTypes.configMod.SnapshotUpdateState
-import typings.jestTypes.configMod.Timers
-import typings.jestTypes.testResultMod.Status
+import typings.jestTypes.mod.CoverageProvider
+import typings.jestTypes.mod.CoverageReporterName
+import typings.jestTypes.mod.FakeableAPI
+import typings.jestTypes.mod.HookType
+import typings.jestTypes.mod.NotifyMode
+import typings.jestTypes.mod.SharedHookType
+import typings.jestTypes.mod.SnapshotUpdateState
+import typings.jestTypes.mod.Status
+import typings.jestTypes.mod.TestStatus
+import typings.jestTypes.mod._BlockMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,156 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jestTypesStrings {
   
   @js.native
-  sealed trait Array extends StObject
-  inline def Array: Array = "Array".asInstanceOf[Array]
-  
-  @js.native
-  sealed trait ArrayBuffer extends StObject
-  inline def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
-  
-  @js.native
-  sealed trait Boolean extends StObject
-  inline def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
-  
-  @js.native
-  sealed trait Buffer extends StObject
-  inline def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
-  
-  @js.native
-  sealed trait DataView extends StObject
-  inline def DataView: DataView = "DataView".asInstanceOf[DataView]
-  
-  @js.native
-  sealed trait Date extends StObject
+  sealed trait Date
+    extends StObject
+       with FakeableAPI
   inline def Date: Date = "Date".asInstanceOf[Date]
-  
-  @js.native
-  sealed trait Error extends StObject
-  inline def Error: Error = "Error".asInstanceOf[Error]
-  
-  @js.native
-  sealed trait EvalError extends StObject
-  inline def EvalError: EvalError = "EvalError".asInstanceOf[EvalError]
-  
-  @js.native
-  sealed trait Float32Array extends StObject
-  inline def Float32Array: Float32Array = "Float32Array".asInstanceOf[Float32Array]
-  
-  @js.native
-  sealed trait Float64Array extends StObject
-  inline def Float64Array: Float64Array = "Float64Array".asInstanceOf[Float64Array]
-  
-  @js.native
-  sealed trait Function extends StObject
-  inline def Function: Function = "Function".asInstanceOf[Function]
-  
-  @js.native
-  sealed trait Infinity extends StObject
-  inline def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
-  
-  @js.native
-  sealed trait Int16Array extends StObject
-  inline def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
-  
-  @js.native
-  sealed trait Int32Array extends StObject
-  inline def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
-  
-  @js.native
-  sealed trait Int8Array extends StObject
-  inline def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
-  
-  @js.native
-  sealed trait Intl extends StObject
-  inline def Intl: Intl = "Intl".asInstanceOf[Intl]
-  
-  @js.native
-  sealed trait JSON extends StObject
-  inline def JSON: JSON = "JSON".asInstanceOf[JSON]
-  
-  @js.native
-  sealed trait Map extends StObject
-  inline def Map: Map = "Map".asInstanceOf[Map]
-  
-  @js.native
-  sealed trait Math extends StObject
-  inline def Math: Math = "Math".asInstanceOf[Math]
-  
-  @js.native
-  sealed trait NaN extends StObject
-  inline def NaN: NaN = "NaN".asInstanceOf[NaN]
-  
-  @js.native
-  sealed trait Number extends StObject
-  inline def Number: Number = "Number".asInstanceOf[Number]
-  
-  @js.native
-  sealed trait Object extends StObject
-  inline def Object: Object = "Object".asInstanceOf[Object]
-  
-  @js.native
-  sealed trait Promise extends StObject
-  inline def Promise: Promise = "Promise".asInstanceOf[Promise]
-  
-  @js.native
-  sealed trait RangeError extends StObject
-  inline def RangeError: RangeError = "RangeError".asInstanceOf[RangeError]
-  
-  @js.native
-  sealed trait ReferenceError extends StObject
-  inline def ReferenceError: ReferenceError = "ReferenceError".asInstanceOf[ReferenceError]
-  
-  @js.native
-  sealed trait RegExp extends StObject
-  inline def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
-  
-  @js.native
-  sealed trait Set extends StObject
-  inline def Set: Set = "Set".asInstanceOf[Set]
-  
-  @js.native
-  sealed trait String extends StObject
-  inline def String: String = "String".asInstanceOf[String]
-  
-  @js.native
-  sealed trait Symbol extends StObject
-  inline def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
-  
-  @js.native
-  sealed trait SyntaxError extends StObject
-  inline def SyntaxError: SyntaxError = "SyntaxError".asInstanceOf[SyntaxError]
-  
-  @js.native
-  sealed trait TypeError extends StObject
-  inline def TypeError: TypeError = "TypeError".asInstanceOf[TypeError]
-  
-  @js.native
-  sealed trait URIError extends StObject
-  inline def URIError: URIError = "URIError".asInstanceOf[URIError]
-  
-  @js.native
-  sealed trait Uint16Array extends StObject
-  inline def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
-  
-  @js.native
-  sealed trait Uint32Array extends StObject
-  inline def Uint32Array: Uint32Array = "Uint32Array".asInstanceOf[Uint32Array]
-  
-  @js.native
-  sealed trait Uint8Array extends StObject
-  inline def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
-  
-  @js.native
-  sealed trait Uint8ClampedArray extends StObject
-  inline def Uint8ClampedArray: Uint8ClampedArray = "Uint8ClampedArray".asInstanceOf[Uint8ClampedArray]
-  
-  @js.native
-  sealed trait WeakMap extends StObject
-  inline def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
-  
-  @js.native
-  sealed trait WeakSet extends StObject
-  inline def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
   
   @js.native
   sealed trait add_hook extends StObject
@@ -221,10 +75,40 @@ object jestTypesStrings {
   inline def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
   
   @js.native
+  sealed trait cancelAnimationFrame
+    extends StObject
+       with FakeableAPI
+  inline def cancelAnimationFrame: cancelAnimationFrame = "cancelAnimationFrame".asInstanceOf[cancelAnimationFrame]
+  
+  @js.native
+  sealed trait cancelIdleCallback
+    extends StObject
+       with FakeableAPI
+  inline def cancelIdleCallback: cancelIdleCallback = "cancelIdleCallback".asInstanceOf[cancelIdleCallback]
+  
+  @js.native
   sealed trait change
     extends StObject
        with NotifyMode
   inline def change: change = "change".asInstanceOf[change]
+  
+  @js.native
+  sealed trait clearImmediate
+    extends StObject
+       with FakeableAPI
+  inline def clearImmediate: clearImmediate = "clearImmediate".asInstanceOf[clearImmediate]
+  
+  @js.native
+  sealed trait clearInterval
+    extends StObject
+       with FakeableAPI
+  inline def clearInterval: clearInterval = "clearInterval".asInstanceOf[clearInterval]
+  
+  @js.native
+  sealed trait clearTimeout
+    extends StObject
+       with FakeableAPI
+  inline def clearTimeout: clearTimeout = "clearTimeout".asInstanceOf[clearTimeout]
   
   @js.native
   sealed trait clover
@@ -237,14 +121,6 @@ object jestTypesStrings {
     extends StObject
        with CoverageReporterName
   inline def cobertura: cobertura = "cobertura".asInstanceOf[cobertura]
-  
-  @js.native
-  sealed trait decodeURI extends StObject
-  inline def decodeURI: decodeURI = "decodeURI".asInstanceOf[decodeURI]
-  
-  @js.native
-  sealed trait decodeURIComponent extends StObject
-  inline def decodeURIComponent: decodeURIComponent = "decodeURIComponent".asInstanceOf[decodeURIComponent]
   
   @js.native
   sealed trait describeBlock extends StObject
@@ -263,20 +139,8 @@ object jestTypesStrings {
   inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait encodeURI extends StObject
-  inline def encodeURI: encodeURI = "encodeURI".asInstanceOf[encodeURI]
-  
-  @js.native
-  sealed trait encodeURIComponent extends StObject
-  inline def encodeURIComponent: encodeURIComponent = "encodeURIComponent".asInstanceOf[encodeURIComponent]
-  
-  @js.native
-  sealed trait error_ extends StObject
-  inline def error_ : error_ = "error".asInstanceOf[error_]
-  
-  @js.native
-  sealed trait eval extends StObject
-  inline def eval: eval = "eval".asInstanceOf[eval]
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait failed
@@ -297,18 +161,8 @@ object jestTypesStrings {
   inline def `failure-change`: `failure-change` = "failure-change".asInstanceOf[`failure-change`]
   
   @js.native
-  sealed trait fake
-    extends StObject
-       with Timers
-  inline def fake: fake = "fake".asInstanceOf[fake]
-  
-  @js.native
   sealed trait finish_describe_definition extends StObject
   inline def finish_describe_definition: finish_describe_definition = "finish_describe_definition".asInstanceOf[finish_describe_definition]
-  
-  @js.native
-  sealed trait global extends StObject
-  inline def global: global = "global".asInstanceOf[global]
   
   @js.native
   sealed trait hook_failure extends StObject
@@ -321,6 +175,12 @@ object jestTypesStrings {
   @js.native
   sealed trait hook_success extends StObject
   inline def hook_success: hook_success = "hook_success".asInstanceOf[hook_success]
+  
+  @js.native
+  sealed trait hrtime
+    extends StObject
+       with FakeableAPI
+  inline def hrtime: hrtime = "hrtime".asInstanceOf[hrtime]
   
   @js.native
   sealed trait html
@@ -339,28 +199,16 @@ object jestTypesStrings {
   inline def include_test_location_in_result: include_test_location_in_result = "include_test_location_in_result".asInstanceOf[include_test_location_in_result]
   
   @js.native
-  sealed trait isFinite extends StObject
-  inline def isFinite: isFinite = "isFinite".asInstanceOf[isFinite]
-  
-  @js.native
-  sealed trait isNaN extends StObject
-  inline def isNaN: isNaN = "isNaN".asInstanceOf[isNaN]
-  
-  @js.native
-  sealed trait `jest-runner` extends StObject
-  inline def `jest-runner`: `jest-runner` = "jest-runner".asInstanceOf[`jest-runner`]
+  sealed trait json
+    extends StObject
+       with CoverageReporterName
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait `json-summary`
     extends StObject
        with CoverageReporterName
   inline def `json-summary`: `json-summary` = "json-summary".asInstanceOf[`json-summary`]
-  
-  @js.native
-  sealed trait json_
-    extends StObject
-       with CoverageReporterName
-  inline def json_ : json_ = "json".asInstanceOf[json_]
   
   @js.native
   sealed trait lcov
@@ -375,22 +223,16 @@ object jestTypesStrings {
   inline def lcovonly: lcovonly = "lcovonly".asInstanceOf[lcovonly]
   
   @js.native
-  sealed trait legacy
-    extends StObject
-       with Timers
-  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
-  
-  @js.native
-  sealed trait modern
-    extends StObject
-       with Timers
-  inline def modern: modern = "modern".asInstanceOf[modern]
-  
-  @js.native
   sealed trait `new`
     extends StObject
        with SnapshotUpdateState
   inline def `new`: `new` = "new".asInstanceOf[`new`]
+  
+  @js.native
+  sealed trait nextTick
+    extends StObject
+       with FakeableAPI
+  inline def nextTick: nextTick = "nextTick".asInstanceOf[nextTick]
   
   @js.native
   sealed trait none
@@ -405,14 +247,6 @@ object jestTypesStrings {
   inline def only: only = "only".asInstanceOf[only]
   
   @js.native
-  sealed trait parseFloat extends StObject
-  inline def parseFloat: parseFloat = "parseFloat".asInstanceOf[parseFloat]
-  
-  @js.native
-  sealed trait parseInt extends StObject
-  inline def parseInt: parseInt = "parseInt".asInstanceOf[parseInt]
-  
-  @js.native
   sealed trait passed
     extends StObject
        with Status
@@ -425,14 +259,28 @@ object jestTypesStrings {
   inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait queueMicrotask extends StObject
+  sealed trait performance
+    extends StObject
+       with FakeableAPI
+  inline def performance: performance = "performance".asInstanceOf[performance]
+  
+  @js.native
+  sealed trait queueMicrotask
+    extends StObject
+       with FakeableAPI
   inline def queueMicrotask: queueMicrotask = "queueMicrotask".asInstanceOf[queueMicrotask]
   
   @js.native
-  sealed trait real
+  sealed trait requestAnimationFrame
     extends StObject
-       with Timers
-  inline def real: real = "real".asInstanceOf[real]
+       with FakeableAPI
+  inline def requestAnimationFrame: requestAnimationFrame = "requestAnimationFrame".asInstanceOf[requestAnimationFrame]
+  
+  @js.native
+  sealed trait requestIdleCallback
+    extends StObject
+       with FakeableAPI
+  inline def requestIdleCallback: requestIdleCallback = "requestIdleCallback".asInstanceOf[requestIdleCallback]
   
   @js.native
   sealed trait run_describe_finish extends StObject
@@ -449,6 +297,24 @@ object jestTypesStrings {
   @js.native
   sealed trait run_start extends StObject
   inline def run_start: run_start = "run_start".asInstanceOf[run_start]
+  
+  @js.native
+  sealed trait setImmediate
+    extends StObject
+       with FakeableAPI
+  inline def setImmediate: setImmediate = "setImmediate".asInstanceOf[setImmediate]
+  
+  @js.native
+  sealed trait setInterval
+    extends StObject
+       with FakeableAPI
+  inline def setInterval: setInterval = "setInterval".asInstanceOf[setInterval]
+  
+  @js.native
+  sealed trait setTimeout
+    extends StObject
+       with FakeableAPI
+  inline def setTimeout: setTimeout = "setTimeout".asInstanceOf[setTimeout]
   
   @js.native
   sealed trait setup extends StObject
@@ -556,16 +422,8 @@ object jestTypesStrings {
   inline def todo: todo = "todo".asInstanceOf[todo]
   
   @js.native
-  sealed trait undefined extends StObject
-  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
-  
-  @js.native
   sealed trait v8
     extends StObject
        with CoverageProvider
   inline def v8: v8 = "v8".asInstanceOf[v8]
-  
-  @js.native
-  sealed trait v8debug extends StObject
-  inline def v8debug: v8debug = "v8debug".asInstanceOf[v8debug]
 }

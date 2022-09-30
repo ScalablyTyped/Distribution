@@ -1,6 +1,6 @@
 package typings.cspotcodeSourceMapSupport
 
-import typings.cspotcodeSourceMapSupport.cspotcodeSourceMapSupportNumbers.`3`
+import typings.cspotcodeSourceMapSupport.cspotcodeSourceMapSupportInts.`3`
 import typings.cspotcodeSourceMapSupport.cspotcodeSourceMapSupportStrings.auto
 import typings.cspotcodeSourceMapSupport.cspotcodeSourceMapSupportStrings.browser
 import typings.cspotcodeSourceMapSupport.cspotcodeSourceMapSupportStrings.node

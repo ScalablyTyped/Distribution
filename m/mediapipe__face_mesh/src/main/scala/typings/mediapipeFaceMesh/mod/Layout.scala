@@ -1,7 +1,7 @@
 package typings.mediapipeFaceMesh.mod
 
-import typings.mediapipeFaceMesh.mediapipeFaceMeshNumbers.`0`
-import typings.mediapipeFaceMesh.mediapipeFaceMeshNumbers.`1`
+import typings.mediapipeFaceMesh.mediapipeFaceMeshInts.`0`
+import typings.mediapipeFaceMesh.mediapipeFaceMeshInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

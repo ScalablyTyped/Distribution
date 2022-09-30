@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anyMod {
   
-  @JSImport("ow/dist/source/predicates/any", "AnyPredicate")
+  @JSImport("ow/dist/predicates/any", "AnyPredicate")
   @js.native
-  class AnyPredicate[T] protected ()
+  open class AnyPredicate[T] protected ()
     extends StObject
        with BasePredicate[T] {
-    def this(predicates: js.Array[BasePredicate[js.Any]]) = this()
-    def this(predicates: js.Array[BasePredicate[js.Any]], options: PredicateOptions) = this()
+    def this(predicates: js.Array[BasePredicate[Any]]) = this()
+    def this(predicates: js.Array[BasePredicate[Any]], options: PredicateOptions) = this()
     
-    /* private */ val options: js.Any = js.native
+    /* private */ val options: Any = js.native
     
-    /* private */ val predicates: js.Any = js.native
+    /* private */ val predicates: Any = js.native
   }
 }

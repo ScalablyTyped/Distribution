@@ -1,16 +1,16 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`10`
-import typings.activexOutlook.activexOutlookNumbers.`8`
-import typings.activexOutlook.activexOutlookNumbers.`9`
+import typings.activexOutlook.activexOutlookInts.`10`
+import typings.activexOutlook.activexOutlookInts.`8`
+import typings.activexOutlook.activexOutlookInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`8`
-  - typings.activexOutlook.activexOutlookNumbers.`10`
-  - typings.activexOutlook.activexOutlookNumbers.`9`
+  - typings.activexOutlook.activexOutlookInts.`8`
+  - typings.activexOutlook.activexOutlookInts.`10`
+  - typings.activexOutlook.activexOutlookInts.`9`
 */
 trait OlOfficeDocItemsType extends StObject
 object OlOfficeDocItemsType {

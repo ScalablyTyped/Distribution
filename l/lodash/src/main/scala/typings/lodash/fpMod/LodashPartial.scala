@@ -6,7 +6,6 @@ import typings.lodash.mod.Function1
 import typings.lodash.mod.Function2
 import typings.lodash.mod.Function3
 import typings.lodash.mod.Function4
-import typings.lodash.mod.List
 import typings.lodash.mod.Object
 import typings.lodash.mod.Primitive
 import typings.lodash.mod.String
@@ -22,17 +21,14 @@ trait LodashPartial extends StObject {
   def apply[T2](func: __, plc1: js.Tuple2[__, T2]): LodashPartial1x2[T2] = js.native
   def apply[T3](func: __, plc1: js.Tuple3[__, __, T3]): LodashPartial3x2[T3] = js.native
   def apply[T4](func: __, plc1: js.Tuple4[__, __, __, T4]): LodashPartial11x2[T4] = js.native
+  def apply[TS /* <: js.Array[Any] */, T1, R](func: js.Function2[/* t1 */ T1, /* ts */ TS, R]): LodashPartial18x1[TS, T1, R] = js.native
   def apply[TS /* <: js.Array[Any] */, T1, R](func: js.Function2[/* t1 */ T1, /* ts */ TS, R], arg1: js.Array[T1]): js.Function1[/* ts */ TS, R] = js.native
-  def apply[T1, T2, R](func: Function2[T1, T2, R]): LodashPartial1x1[T1, T2, R] = js.native
   def apply[T1, T2, R](func: Function2[T1, T2, R], plc1: js.Tuple2[__, T2]): Function1[T1, R] = js.native
   def apply[TS /* <: js.Array[Any] */, T1, T2, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* ts */ TS, R]): LodashPartial19x1[TS, T1, T2, R] = js.native
   def apply[TS /* <: js.Array[Any] */, T1, T2, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* ts */ TS, R], t1: js.Tuple2[T1, T2]): js.Function1[/* ts */ TS, R] = js.native
-  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: js.Tuple3[T1 | __, T2 | __, T3]): Function1[T2, R] = js.native
-  def apply[TS /* <: js.Array[Any] */, T1, T2, T3, R](func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* ts */ TS, R]): LodashPartial20x1[TS, T1, T2, T3, R] = js.native
-  def apply[TS /* <: js.Array[Any] */, T1, T2, T3, R](
-    func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* ts */ TS, R],
-    t1: js.Tuple3[T1, T2, T3]
-  ): js.Function1[/* ts */ TS, R] = js.native
+  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: js.Tuple3[__, __, T3]): Function2[T1, T2, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R]): LodashPartial6x1[T1, T2, T3, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple3[T1 | __, T2 | __, T3]): Function2[T2, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: js.Tuple4[T1 | __, T2 | __, T3 | __, T4]): Function2[T2, T3, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: js.Tuple2[__, T2]): Function3[T1, T3, T4, R] = js.native
   def apply[TS /* <: js.Array[Any] */, T1, T2, T3, T4, R](func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* ts */ TS, R]): LodashPartial21x1[TS, T1, T2, T3, T4, R] = js.native
@@ -43,20 +39,18 @@ trait LodashPartial extends StObject {
   
   def placeholder(): String = js.native
   def placeholder(value: java.lang.String): String = js.native
-  def placeholder[T /* <: js.Object */](value: T): Object[T] = js.native
-  def placeholder[T](value: List[T]): Collection[T] = js.native
+  def placeholder[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+  def placeholder[T](value: typings.lodash.mod.List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   @JSName("placeholder")
   def placeholder_T_Collection[T](): Collection[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+  def placeholder_T_Object[T /* <: js.Object */](): Object[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  def placeholder_T_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Primitive[T](value: T): Primitive[T] = js.native
-  @JSName("placeholder")
-  def `placeholder_T_UnionNull<undefined>_Primitive`[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
+  def placeholder_T_Primitive[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -126,5 +120,5 @@ trait LodashPartial extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
+  def placeholder_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
 }

@@ -348,6 +348,30 @@ object Quaternion {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromAxisToRef")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Creates the rotation quaternion needed to rotate from one Vector3 onto another Vector3
+    * @param fromVector the starting vector
+    * @param toVector the ending vector
+    * @returns the rotation quaternion needed
+    */
+  inline def RotationQuaternionFromOnto(
+    fromVector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
+    toVector: DeepImmutable[typings.babylonjs.BABYLON.Vector3]
+  ): typings.babylonjs.BABYLON.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromOnto")(fromVector.asInstanceOf[js.Any], toVector.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Quaternion]
+  
+  /**
+    * Creates the rotation quaternion needed to rotate from one Vector3 onto another Vector3 and stores in a result Quaternion
+    * @param fromVector the starting vector
+    * @param toVector the ending vector
+    * @param result the rotation quaternion needed
+    * @returns the result
+    */
+  inline def RotationQuaternionFromOntoToRef(
+    fromVector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
+    toVector: DeepImmutable[typings.babylonjs.BABYLON.Vector3],
+    result: DeepImmutable[typings.babylonjs.BABYLON.Quaternion]
+  ): typings.babylonjs.BABYLON.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromOntoToRef")(fromVector.asInstanceOf[js.Any], toVector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Quaternion]
+  
+  /**
     * Creates a new quaternion from the given Euler float angles (y, x, z)
     * @param yaw defines the rotation around Y axis
     * @param pitch defines the rotation around X axis

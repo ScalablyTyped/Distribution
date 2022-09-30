@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4CryptoInit
 import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4Init
 import typings.awsSdkTypes.anon.ForceRefresh
+import typings.awsSdkTypes.authMod.AuthScheme
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.loggerMod.Logger
@@ -37,7 +38,9 @@ object configurationsMod {
     /**
       * The signer to use when signing requests.
       */
-    var signer: js.UndefOr[RequestSigner | Provider[RequestSigner]] = js.undefined
+    var signer: js.UndefOr[
+        RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ] = js.undefined
     
     /**
       * The injectable SigV4-compatible signer class constructor. If not supplied,
@@ -79,13 +82,15 @@ object configurationsMod {
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(
+        value: RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructor(value: Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]): Self = StObject.set(x, "signerConstructor", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructorUndefined: Self = StObject.set(x, "signerConstructor", js.undefined)
       
-      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction1(value: /* authScheme */ js.UndefOr[AuthScheme] => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction1(value))
       
       inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
@@ -103,6 +108,7 @@ object configurationsMod {
     }
   }
   
+  @js.native
   trait AwsAuthResolvedConfig extends StObject {
     
     /**
@@ -110,58 +116,31 @@ object configurationsMod {
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
-    def credentials(): js.Promise[Credentials]
-    def credentials(options: ForceRefresh): js.Promise[Credentials]
+    def credentials(): js.Promise[Credentials] = js.native
+    def credentials(options: ForceRefresh): js.Promise[Credentials] = js.native
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.credentials}
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
     @JSName("credentials")
-    var credentials_Original: MemoizedProvider[Credentials]
+    var credentials_Original: MemoizedProvider[Credentials] = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.signer}
       */
-    def signer(): js.Promise[RequestSigner]
-    /**
-      * Resolved value for input config {@link AwsAuthInputConfig.signer}
-      */
-    @JSName("signer")
-    var signer_Original: Provider[RequestSigner]
+    def signer(): js.Promise[RequestSigner] = js.native
+    def signer(authScheme: AuthScheme): js.Promise[RequestSigner] = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.signingEscapePath}
       */
-    var signingEscapePath: Boolean
+    var signingEscapePath: Boolean = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.systemClockOffset}
       */
-    var systemClockOffset: Double
-  }
-  object AwsAuthResolvedConfig {
-    
-    inline def apply(
-      credentials: /* options */ js.UndefOr[ForceRefresh] => js.Promise[Credentials],
-      signer: () => js.Promise[RequestSigner],
-      signingEscapePath: Boolean,
-      systemClockOffset: Double
-    ): AwsAuthResolvedConfig = {
-      val __obj = js.Dynamic.literal(credentials = js.Any.fromFunction1(credentials), signer = js.Any.fromFunction0(signer), signingEscapePath = signingEscapePath.asInstanceOf[js.Any], systemClockOffset = systemClockOffset.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AwsAuthResolvedConfig]
-    }
-    
-    extension [Self <: AwsAuthResolvedConfig](x: Self) {
-      
-      inline def setCredentials(value: /* options */ js.UndefOr[ForceRefresh] => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction1(value))
-      
-      inline def setSigner(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
-      
-      inline def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
-      
-      inline def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
-    }
+    var systemClockOffset: Double = js.native
   }
   
   trait PreviouslyResolved extends StObject {
@@ -170,10 +149,7 @@ object configurationsMod {
     
     var region: String | Provider[String]
     
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]]
-    def regionInfoProvider(region: String, options: RegionInfoProviderOptions): js.Promise[js.UndefOr[RegionInfo]]
-    @JSName("regionInfoProvider")
-    var regionInfoProvider_Original: RegionInfoProvider
+    var regionInfoProvider: js.UndefOr[RegionInfoProvider] = js.undefined
     
     var serviceId: String
     
@@ -194,13 +170,12 @@ object configurationsMod {
     inline def apply(
       credentialDefaultProvider: Any => MemoizedProvider[Credentials],
       region: String | Provider[String],
-      regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]],
       serviceId: String,
       sha256: HashConstructor,
       useDualstackEndpoint: () => js.Promise[Boolean],
       useFipsEndpoint: () => js.Promise[Boolean]
     ): PreviouslyResolved = {
-      val __obj = js.Dynamic.literal(credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), region = region.asInstanceOf[js.Any], regionInfoProvider = js.Any.fromFunction2(regionInfoProvider), serviceId = serviceId.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], useDualstackEndpoint = js.Any.fromFunction0(useDualstackEndpoint), useFipsEndpoint = js.Any.fromFunction0(useFipsEndpoint))
+      val __obj = js.Dynamic.literal(credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), region = region.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], useDualstackEndpoint = js.Any.fromFunction0(useDualstackEndpoint), useFipsEndpoint = js.Any.fromFunction0(useFipsEndpoint))
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
@@ -215,6 +190,8 @@ object configurationsMod {
       inline def setRegionInfoProvider(
         value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
+      
+      inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
       
       inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
@@ -240,7 +217,9 @@ object configurationsMod {
     /**
       * The signer to use when signing requests.
       */
-    var signer: js.UndefOr[RequestSigner | Provider[RequestSigner]] = js.undefined
+    var signer: js.UndefOr[
+        RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ] = js.undefined
     
     /**
       * Whether to escape request path when signing the request.
@@ -267,9 +246,11 @@ object configurationsMod {
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(
+        value: RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
-      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction1(value: /* authScheme */ js.UndefOr[AuthScheme] => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction1(value))
       
       inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       

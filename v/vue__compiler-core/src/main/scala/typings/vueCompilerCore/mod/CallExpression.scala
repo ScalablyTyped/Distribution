@@ -1,6 +1,6 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
+import typings.vueCompilerCore.vueCompilerCoreInts.`14`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

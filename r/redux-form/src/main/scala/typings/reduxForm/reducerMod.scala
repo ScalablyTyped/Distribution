@@ -58,7 +58,7 @@ object reducerMod extends Shortcut {
   
   type FormReducerMapObject = // and `<any>` to make it compatible with redux@3
   // tslint:disable-next-line use-default-type-parameter
-  StringDictionary[Reducer[js.Any, AnyAction]]
+  StringDictionary[Reducer[Any, AnyAction]]
   
   trait FormState extends StObject {
     
@@ -66,7 +66,7 @@ object reducerMod extends Shortcut {
     
     var anyTouched: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     var fields: js.UndefOr[StringDictionary[FieldState]] = js.undefined
     
@@ -78,7 +78,7 @@ object reducerMod extends Shortcut {
     
     var submitting: js.UndefOr[Boolean] = js.undefined
     
-    var values: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var values: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object FormState {
     
@@ -97,7 +97,7 @@ object reducerMod extends Shortcut {
       
       inline def setAnyTouchedUndefined: Self = StObject.set(x, "anyTouched", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -107,7 +107,7 @@ object reducerMod extends Shortcut {
       
       inline def setRegisteredFields(value: js.Array[RegisteredFieldState]): Self = StObject.set(x, "registeredFields", value.asInstanceOf[js.Any])
       
-      inline def setRegisteredFieldsVarargs(value: RegisteredFieldState*): Self = StObject.set(x, "registeredFields", js.Array(value :_*))
+      inline def setRegisteredFieldsVarargs(value: RegisteredFieldState*): Self = StObject.set(x, "registeredFields", js.Array(value*))
       
       inline def setSubmitErrors(value: StringDictionary[String]): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
       
@@ -121,7 +121,7 @@ object reducerMod extends Shortcut {
       
       inline def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
       
-      inline def setValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: StringDictionary[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }

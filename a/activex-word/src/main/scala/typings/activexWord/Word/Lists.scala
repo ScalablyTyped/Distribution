@@ -12,7 +12,7 @@ trait Lists extends StObject {
   
   val Creator: Double
   
-  def Item(Index: Double): List
+  def Item(Index: Double): typings.activexWord.Word.List
   
   val Parent: Any
   
@@ -25,7 +25,7 @@ object Lists {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: Double => List,
+    Item: Double => typings.activexWord.Word.List,
     Parent: Any,
     WordDotLists_typekey: Lists
   ): Lists = {
@@ -42,7 +42,7 @@ object Lists {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: Double => List): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => typings.activexWord.Word.List): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     

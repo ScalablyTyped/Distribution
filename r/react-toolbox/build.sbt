@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-toolbox"
-version := "2.0.0-beta.13-65b881"
-scalaVersion := "2.13.3"
+version := "2.0.0-beta.13-7f1a11"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "react-css-themr" % "2.1.2-b66f3e",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-0912f8",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-975e63",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-fc8273",
+  "org.scalablytyped" %%% "react-css-themr" % "2.1.2-48896f",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-3fbb8c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

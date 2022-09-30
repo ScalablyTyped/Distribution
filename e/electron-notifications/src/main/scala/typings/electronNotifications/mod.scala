@@ -1,6 +1,5 @@
 package typings.electronNotifications
 
-import typings.electron.Electron.BrowserWindowConstructorOptions
 import typings.electron.mod.BrowserWindow
 import typings.electronNotifications.electronNotificationsStrings.buttonClicked
 import typings.electronNotifications.electronNotificationsStrings.clicked
@@ -17,11 +16,7 @@ object mod {
   
   @JSImport("electron-notifications", "NotificationWindow")
   @js.native
-  /**
-    * BrowserWindow
-    */
-  class NotificationWindow () extends BrowserWindow {
-    def this(options: BrowserWindowConstructorOptions) = this()
+  open class NotificationWindow () extends BrowserWindow {
     
     def on(event: String, listener: js.Function): this.type = js.native
     /** When any one of the buttons are clicked, it will trigger a buttonClicked event, and pass the text that was clicked to the handler. */
@@ -62,7 +57,7 @@ object mod {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

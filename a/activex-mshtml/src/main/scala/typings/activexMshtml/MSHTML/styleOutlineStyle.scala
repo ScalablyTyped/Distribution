@@ -1,34 +1,34 @@
 package typings.activexMshtml.MSHTML
 
-import typings.activexMshtml.activexMshtmlNumbers.`0`
-import typings.activexMshtml.activexMshtmlNumbers.`10`
-import typings.activexMshtml.activexMshtmlNumbers.`1`
-import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typings.activexMshtml.activexMshtmlNumbers.`2`
-import typings.activexMshtml.activexMshtmlNumbers.`3`
-import typings.activexMshtml.activexMshtmlNumbers.`4`
-import typings.activexMshtml.activexMshtmlNumbers.`5`
-import typings.activexMshtml.activexMshtmlNumbers.`6`
-import typings.activexMshtml.activexMshtmlNumbers.`7`
-import typings.activexMshtml.activexMshtmlNumbers.`8`
-import typings.activexMshtml.activexMshtmlNumbers.`9`
+import typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typings.activexMshtml.activexMshtmlInts.`0`
+import typings.activexMshtml.activexMshtmlInts.`10`
+import typings.activexMshtml.activexMshtmlInts.`1`
+import typings.activexMshtml.activexMshtmlInts.`2`
+import typings.activexMshtml.activexMshtmlInts.`3`
+import typings.activexMshtml.activexMshtmlInts.`4`
+import typings.activexMshtml.activexMshtmlInts.`5`
+import typings.activexMshtml.activexMshtmlInts.`6`
+import typings.activexMshtml.activexMshtmlInts.`7`
+import typings.activexMshtml.activexMshtmlInts.`8`
+import typings.activexMshtml.activexMshtmlInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typings.activexMshtml.activexMshtmlNumbers.`2`
-  - typings.activexMshtml.activexMshtmlNumbers.`1`
-  - typings.activexMshtml.activexMshtmlNumbers.`4`
-  - typings.activexMshtml.activexMshtmlNumbers.`5`
-  - typings.activexMshtml.activexMshtmlNumbers.`7`
-  - typings.activexMshtml.activexMshtmlNumbers.`10`
-  - typings.activexMshtml.activexMshtmlNumbers.`0`
-  - typings.activexMshtml.activexMshtmlNumbers.`8`
-  - typings.activexMshtml.activexMshtmlNumbers.`6`
-  - typings.activexMshtml.activexMshtmlNumbers.`3`
-  - typings.activexMshtml.activexMshtmlNumbers.`9`
+  - typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typings.activexMshtml.activexMshtmlInts.`2`
+  - typings.activexMshtml.activexMshtmlInts.`1`
+  - typings.activexMshtml.activexMshtmlInts.`4`
+  - typings.activexMshtml.activexMshtmlInts.`5`
+  - typings.activexMshtml.activexMshtmlInts.`7`
+  - typings.activexMshtml.activexMshtmlInts.`10`
+  - typings.activexMshtml.activexMshtmlInts.`0`
+  - typings.activexMshtml.activexMshtmlInts.`8`
+  - typings.activexMshtml.activexMshtmlInts.`6`
+  - typings.activexMshtml.activexMshtmlInts.`3`
+  - typings.activexMshtml.activexMshtmlInts.`9`
 */
 trait styleOutlineStyle extends StObject
 object styleOutlineStyle {
@@ -55,5 +55,5 @@ object styleOutlineStyle {
   
   inline def styleOutlineStyleWindowInset: `9` = 9.asInstanceOf[`9`]
   
-  inline def styleOutlineStyle_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleOutlineStyle_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }

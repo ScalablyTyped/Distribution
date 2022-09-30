@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object javaScriptSerializerMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/extras/JavaScriptSerializer", "JavaScriptSerializer")
+  @JSImport("mendixmodelsdk/src/sdk/extras/JavaScriptSerializer", "JavaScriptSerializer")
   @js.native
-  class JavaScriptSerializer protected () extends StObject {
+  open class JavaScriptSerializer protected () extends StObject {
     def this(_unit: IAbstractUnit) = this()
     
-    /* private */ var schedule: js.Any = js.native
+    /* private */ var schedule: Any = js.native
     
-    /* private */ var source: js.Any = js.native
+    /* private */ var source: Any = js.native
   }
   /* static members */
   object JavaScriptSerializer {
     
-    @JSImport("mendixmodelsdk/dist/sdk/extras/JavaScriptSerializer", "JavaScriptSerializer")
+    @JSImport("mendixmodelsdk/src/sdk/extras/JavaScriptSerializer", "JavaScriptSerializer")
     @js.native
     val ^ : js.Any = js.native
     

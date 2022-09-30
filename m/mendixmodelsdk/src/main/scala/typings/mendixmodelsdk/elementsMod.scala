@@ -18,7 +18,7 @@ object elementsMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
-  - typings.mendixmodelsdk.elementsMod.IAbstractElement because var conflicts: container, id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded */ @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "AbstractElement")
+  - typings.mendixmodelsdk.elementsMod.IAbstractElement because var conflicts: container, id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded, findElementById */ @JSImport("mendixmodelsdk/src/sdk/internal/elements", "AbstractElement")
   @js.native
   abstract class AbstractElement[TModel /* <: IAbstractModel */, TContainer /* <: Container */] protected ()
     extends Structure[TModel, TContainer]
@@ -72,7 +72,7 @@ object elementsMod {
   - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
   - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
   - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
-  - typings.mendixmodelsdk.elementsMod.IElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "Element")
+  - typings.mendixmodelsdk.elementsMod.IElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/sdk/internal/elements", "Element")
   @js.native
   abstract class Element[TModel /* <: IAbstractModel */] protected () extends AbstractElement[TModel, AbstractElement[IAbstractModel, Container]] {
     def this(
@@ -84,7 +84,7 @@ object elementsMod {
       container: AbstractElement[IAbstractModel, Container]
     ) = this()
     
-    /* private */ var _deepCopyElement: js.Any = js.native
+    /* private */ var _deepCopyElement: Any = js.native
     
     /**
       * Creates a deep copy of this element and its children.
@@ -119,6 +119,8 @@ object elementsMod {
        with IContainer {
     
     def asLoaded(): IAbstractElement = js.native
+    
+    def findElementById(id: String): IAbstractElement | Null = js.native
     
     def load(): js.Promise[IAbstractElement] = js.native
     def load(callback: js.Function1[/* element */ this.type, Unit]): Unit = js.native
@@ -163,6 +165,6 @@ object elementsMod {
   @js.native
   trait IElementConstructor
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, Element[IAbstractModel]]
+       with Instantiable1[/* args (repeated) */ Any, Element[IAbstractModel]]
        with InstanceConstructor
 }

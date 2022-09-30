@@ -1,7 +1,7 @@
 package typings.electronProgressbar
 
-import typings.electron.Electron.App
-import typings.electron.Electron.BrowserWindowConstructorOptions
+import typings.electron.Electron.CrossProcessExports.App
+import typings.electron.Electron.CrossProcessExports.BrowserWindowConstructorOptions
 import typings.electronProgressbar.electronProgressbarStrings.aborted
 import typings.electronProgressbar.electronProgressbarStrings.completed
 import typings.electronProgressbar.electronProgressbarStrings.progress
@@ -14,40 +14,97 @@ object mod {
   
   @JSImport("electron-progressbar", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ProgressBar {
     def this(options: ProgressBarOptions) = this()
     def this(options: ProgressBarOptions, electronApp: App) = this()
-  }
-  
-  @js.native
-  trait ProgressBar extends StObject {
     
-    def close(): Unit = js.native
+    /* CompleteClass */
+    override def close(): Unit = js.native
     
+    /* CompleteClass */
     var detail: String = js.native
     
-    def getOptions(): ProgressBarOptions = js.native
+    /* CompleteClass */
+    override def getOptions(): ProgressBarOptions = js.native
     
-    def isCompleted(): Boolean = js.native
+    /* CompleteClass */
+    override def isCompleted(): Boolean = js.native
     
-    def isInProgress(): Boolean = js.native
+    /* CompleteClass */
+    override def isInProgress(): Boolean = js.native
     
-    @JSName("on")
-    def on_aborted(eventName: aborted, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_completed(eventName: completed, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_progress(eventName: progress, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_ready(eventName: ready, listener: js.Function0[Unit]): this.type = js.native
+    /* CompleteClass */
+    override def on(eventName: ready | progress | completed | aborted, listener: js.Function0[Unit]): this.type = js.native
     
-    def setCompleted(): Unit = js.native
+    /* CompleteClass */
+    override def setCompleted(): Unit = js.native
     
+    /* CompleteClass */
     var text: String = js.native
     
+    /* CompleteClass */
     var value: Double = js.native
+  }
+  
+  trait ProgressBar extends StObject {
+    
+    def close(): Unit
+    
+    var detail: String
+    
+    def getOptions(): ProgressBarOptions
+    
+    def isCompleted(): Boolean
+    
+    def isInProgress(): Boolean
+    
+    def on(eventName: ready | progress | completed | aborted, listener: js.Function0[Unit]): this.type
+    
+    def setCompleted(): Unit
+    
+    var text: String
+    
+    var value: Double
+  }
+  object ProgressBar {
+    
+    inline def apply(
+      close: () => Unit,
+      detail: String,
+      getOptions: () => ProgressBarOptions,
+      isCompleted: () => Boolean,
+      isInProgress: () => Boolean,
+      on: (ready | progress | completed | aborted, js.Function0[Unit]) => ProgressBar,
+      setCompleted: () => Unit,
+      text: String,
+      value: Double
+    ): ProgressBar = {
+      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), detail = detail.asInstanceOf[js.Any], getOptions = js.Any.fromFunction0(getOptions), isCompleted = js.Any.fromFunction0(isCompleted), isInProgress = js.Any.fromFunction0(isInProgress), on = js.Any.fromFunction2(on), setCompleted = js.Any.fromFunction0(setCompleted), text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProgressBar]
+    }
+    
+    extension [Self <: ProgressBar](x: Self) {
+      
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      
+      inline def setGetOptions(value: () => ProgressBarOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+      
+      inline def setIsCompleted(value: () => Boolean): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
+      
+      inline def setIsInProgress(value: () => Boolean): Self = StObject.set(x, "isInProgress", js.Any.fromFunction0(value))
+      
+      inline def setOn(value: (ready | progress | completed | aborted, js.Function0[Unit]) => ProgressBar): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      inline def setSetCompleted(value: () => Unit): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
   }
   
   trait ProgressBarOptions extends StObject {

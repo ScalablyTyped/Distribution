@@ -45,7 +45,7 @@ trait QuickFormControl
     * @remarks Constituent controls in a quick view control are read only.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](controlName: String): T = js.native
+  def getControl_T_T[T /* <: Control */](controlName: String): T = js.native
   /**
     * Gets a control by index.
     * @param T A Control type
@@ -54,7 +54,7 @@ trait QuickFormControl
     * @remarks Constituent controls in a quick view control are read only.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](index: Double): T = js.native
+  def getControl_T_T[T /* <: Control */](index: Double): T = js.native
   
   /**
     * Returns whether the data binding for the constituent controls in a quick view control is complete.

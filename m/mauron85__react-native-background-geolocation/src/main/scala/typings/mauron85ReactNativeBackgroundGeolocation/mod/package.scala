@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def default: BackgroundGeolocationPlugin = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[BackgroundGeolocationPlugin]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`0`
-  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`100`
-  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`1000`
-  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationNumbers.`10000`
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`0`
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`100`
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`1000`
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationInts.`10000`
   - scala.Double
 */
 type AccuracyLevel = _AccuracyLevel | Double

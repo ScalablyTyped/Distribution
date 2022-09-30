@@ -11,7 +11,7 @@ object artifactMod {
     
     @JSGlobal("Artifact")
     @js.native
-    class Artifact_ () extends StObject {
+    open class Artifact_ () extends StObject {
       
       // 60 minutes on success
       var REFRESH_FAILURE: Double = js.native
@@ -22,7 +22,7 @@ object artifactMod {
       // 2 minute random period so not all users refresh at once
       var REFRESH_SUCCESS: Double = js.native
       
-      var artifactTypes: StringDictionary[js.Any] = js.native
+      var artifactTypes: StringDictionary[Any] = js.native
       
       // private handleSuccess(data): void;
       // private handleFailure(data): void;
@@ -30,17 +30,17 @@ object artifactMod {
       // private processResult(portals): void;
       def clearData(): Unit = js.native
       
-      var entities: js.Array[js.Any] = js.native
+      var entities: js.Array[Any] = js.native
       
       /** used to render portals that would otherwise be below the visible level */
-      def getArtifactEntities(): js.Array[js.Any] = js.native
+      def getArtifactEntities(): js.Array[Any] = js.native
       
       def getArtifactTypes(): js.Array[String] = js.native
       
       def getInterestingPortals(): js.Array[String] = js.native
       
       /** get the artifact data for a specified artifact id (e.g. 'jarvis'), if it exists - otherwise returns something 'false' */
-      def getPortalData(guid: String, artifactId: js.Any): js.Any = js.native
+      def getPortalData(guid: String, artifactId: Any): Any = js.native
       
       def idleResume(): Unit = js.native
       

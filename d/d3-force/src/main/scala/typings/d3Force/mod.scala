@@ -99,8 +99,8 @@ object mod {
   inline def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](): Simulation[NodeDatum, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")().asInstanceOf[Simulation[NodeDatum, Unit]]
   inline def forceSimulation[NodeDatum /* <: SimulationNodeDatum */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")(nodesData.asInstanceOf[js.Any]).asInstanceOf[Simulation[NodeDatum, Unit]]
   
-  inline def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")().asInstanceOf[Simulation[NodeDatum, LinkDatum]]
-  inline def forceSimulation_NodeDatum_SimulationNodeDatumLinkDatum_SimulationLinkDatumNodeDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")(nodesData.asInstanceOf[js.Any]).asInstanceOf[Simulation[NodeDatum, LinkDatum]]
+  inline def forceSimulation_NodeDatumLinkDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")().asInstanceOf[Simulation[NodeDatum, LinkDatum]]
+  inline def forceSimulation_NodeDatumLinkDatum[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: SimulationLinkDatum[NodeDatum] */](nodesData: js.Array[NodeDatum]): Simulation[NodeDatum, LinkDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceSimulation")(nodesData.asInstanceOf[js.Any]).asInstanceOf[Simulation[NodeDatum, LinkDatum]]
   
   inline def forceX[NodeDatum /* <: SimulationNodeDatum */](): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")().asInstanceOf[ForceX_[NodeDatum]]
   inline def forceX[NodeDatum /* <: SimulationNodeDatum */](x: js.Function3[/* d */ NodeDatum, /* i */ Double, /* data */ js.Array[NodeDatum], Double]): ForceX_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceX")(x.asInstanceOf[js.Any]).asInstanceOf[ForceX_[NodeDatum]]
@@ -690,7 +690,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("force")
-    def force_F_ForceNodeDatumLinkDatum_Union[F /* <: Force[NodeDatum, LinkDatum] */](name: String): js.UndefOr[F] = js.native
+    def force_F_Union[F /* <: Force[NodeDatum, LinkDatum] */](name: String): js.UndefOr[F] = js.native
     
     /**
       * Returns the simulation’s array of nodes as specified to the constructor.

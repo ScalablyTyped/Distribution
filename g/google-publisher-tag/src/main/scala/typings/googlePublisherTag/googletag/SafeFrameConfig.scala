@@ -28,20 +28,20 @@ trait SafeFrameConfig extends StObject {
   /**
     * Whether SafeFrame should use the HTML5 sandbox attribute to prevent top
     * level navigation without user interaction. The only valid value is
-    * <code>true</code> (cannot be forced to <code>false</code>). Note that the
+    * `true` (cannot be forced to `false`). Note that the
     * sandbox attribute disables plugins (e.g. Flash).
     */
   var sandbox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether SafeFrame should use randomized subdomains for
-    * Reservation creatives. Pass in <code>null</code> to clear the stored
+    * Reservation creatives. Pass in `null` to clear the stored
     * value.
     *
     * Note: this feature is enabled by default.
     *
     * @deprecated It is no longer possible to disable this feature. Setting
-    * <code>useUniqueDomain</code> has no effect.
+    * `useUniqueDomain` has no effect.
     * @see [Render creatives using SafeFrame](https://support.google.com/admanager/answer/9999596)
     */
   var useUniqueDomain: js.UndefOr[Boolean | Null] = js.undefined

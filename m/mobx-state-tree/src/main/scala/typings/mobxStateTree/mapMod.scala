@@ -6,11 +6,11 @@ import typings.mobx.observablemapMod.IMapDidChange
 import typings.mobx.observablemapMod.IMapWillChange
 import typings.mobx.utilsMod.Lambda
 import typings.mobxStateTree.hookMod.IHooksGetter
+import typings.mobxStateTree.mobxStateTreeStrings.Map
 import typings.mobxStateTree.typeMod.ExtractCSTWithSTN
 import typings.mobxStateTree.typeMod.IAnyType
 import typings.mobxStateTree.typeMod.IType
 import typings.std.IterableIterator
-import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +56,7 @@ object mapMod {
           /* map */ this.type, 
           Unit
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     def get(key: String): js.UndefOr[
@@ -87,15 +87,15 @@ object mapMod {
     
     def keys(): IterableIterator[String] = js.native
     
-    def merge(other: js.Any): this.type = js.native
+    def merge(other: Any): this.type = js.native
     def merge(other: IKeyValueMap[ExtractCSTWithSTN[IT]]): this.type = js.native
     /** Merge another object into this map, returns self. */
     @JSName("merge")
     def merge_TypeWithoutSTN(
       other: IMSTMap[
           IType[
-            js.Any, 
-            js.Any, 
+            Any, 
+            Any, 
             /* import warning: importer.ImportType#apply Failed type conversion: IT['TypeWithoutSTN'] */ js.Any
           ]
         ]
@@ -130,14 +130,14 @@ object mapMod {
     
     def put(value: ExtractCSTWithSTN[IT]): /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any = js.native
     
-    def replace(values: js.Any): this.type = js.native
+    def replace(values: Any): this.type = js.native
     def replace(values: IKeyValueMap[ExtractCSTWithSTN[IT]]): this.type = js.native
     @JSName("replace")
     def replace_TypeWithoutSTN(
       values: IMSTMap[
           IType[
-            js.Any, 
-            js.Any, 
+            Any, 
+            Any, 
             /* import warning: importer.ImportType#apply Failed type conversion: IT['TypeWithoutSTN'] */ js.Any
           ]
         ]
@@ -147,30 +147,12 @@ object mapMod {
     
     val size: Double = js.native
     
-    /**
-      * Returns a shallow non observable object clone of this map.
-      * Note that the values might still be observable. For a deep clone use mobx.toJS.
-      */
-    def toJS(): Map[
-        String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any
-      ] = js.native
-    
     def toJSON(): IKeyValueMap[
         /* import warning: importer.ImportType#apply Failed type conversion: IT['SnapshotType'] */ js.Any
       ] = js.native
     
-    /**
-      * Returns a plain object that represents this map.
-      * Note that all the keys being stringified.
-      * If there are duplicating keys after converting them to strings, behaviour is undetermined.
-      */
-    def toPOJO(): IKeyValueMap[
-        /* import warning: importer.ImportType#apply Failed type conversion: IT['SnapshotType'] */ js.Any
-      ] = js.native
-    
     @JSName(js.Symbol.toStringTag)
-    var toStringTag: typings.mobxStateTree.mobxStateTreeStrings.Map = js.native
+    var toStringTag: Map = js.native
     
     def values(): IterableIterator[
         /* import warning: importer.ImportType#apply Failed type conversion: IT['Type'] */ js.Any

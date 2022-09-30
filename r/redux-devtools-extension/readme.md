@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-devtools-extension
 
-Typings are for version 2.13.8
+Typings are for version 2.13.9
 
 ## Library description:
 Wrappers for Redux DevTools Extension.
@@ -10,15 +10,12 @@ Wrappers for Redux DevTools Extension.
 | ------------------ | :-------------: |
 | Full name          | redux-devtools-extension |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 470 |
-| # downloads        | 33280671 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4369657.666666667 |
+| # stars            | 13413.0 |
 
 ## Links
-- [Homepage](https://github.com/zalmoxisus/redux-devtools-extension)
-- [Bugs](https://github.com/zalmoxisus/redux-devtools-extension/issues)
-- [Repository](https://github.com/zalmoxisus/redux-devtools-extension)
 - [Npm](https://www.npmjs.com/package/redux-devtools-extension)
     
 

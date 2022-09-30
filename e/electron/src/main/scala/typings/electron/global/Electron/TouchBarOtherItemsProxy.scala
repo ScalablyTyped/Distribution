@@ -11,4 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * TouchBarOtherItemsProxy
   */
-class TouchBarOtherItemsProxy () extends EventEmitter
+open class TouchBarOtherItemsProxy () extends EventEmitter

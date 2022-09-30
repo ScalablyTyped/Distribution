@@ -2,8 +2,8 @@ package typings.reactMic
 
 import typings.react.mod.PureComponent
 import typings.reactMic.anon.AudioBitsPerSecond
-import typings.reactMic.reactMicNumbers.`1`
-import typings.reactMic.reactMicNumbers.`2`
+import typings.reactMic.reactMicInts.`1`
+import typings.reactMic.reactMicInts.`2`
 import typings.reactMic.reactMicStrings.audioSlashwav
 import typings.reactMic.reactMicStrings.audioSlashwebm
 import typings.reactMic.reactMicStrings.frequencyBars

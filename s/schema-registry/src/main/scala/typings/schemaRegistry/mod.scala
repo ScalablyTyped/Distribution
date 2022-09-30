@@ -12,8 +12,8 @@ object mod {
   open class LivingAvroSchema protected () extends RegistryClient {
     def this(subject: String, version: String, config: RegistryClientConfig) = this()
     
-    def fetch(): RegistryRequest = js.native
-    def fetch(poll: Boolean): RegistryRequest = js.native
+    def fetch(): js.Promise[AvroSchemaResponseInterface] = js.native
+    def fetch(poll: Boolean): js.Promise[AvroSchemaResponseInterface] = js.native
     
     def fromBuffer(buffer: Buffer): Any = js.native
     
@@ -31,25 +31,25 @@ object mod {
   open class RegistryClient protected () extends StObject {
     def this(config: RegistryClientConfig) = this()
     
-    def checkSubjectRegistration(subject: String, schema: js.Object): RegistryRequest = js.native
+    def checkSubjectRegistration(subject: String, schema: js.Object): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def getConfig(): RegistryRequest = js.native
+    def getConfig(): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def getLatestSubjectSchema(subject: String): RegistryRequest = js.native
+    def getLatestSubjectSchema(subject: String): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def getSchemaById(id: Double): RegistryRequest = js.native
+    def getSchemaById(id: Double): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def getSubjectConfig(subject: String): RegistryRequest = js.native
+    def getSubjectConfig(subject: String): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def getSubjectSchemaForVersion(subject: String, version: Double): RegistryRequest = js.native
+    def getSubjectSchemaForVersion(subject: String, version: Double): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def getSubjects(): RegistryRequest = js.native
+    def getSubjects(): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def getVersionsForSubject(subject: String): RegistryRequest = js.native
+    def getVersionsForSubject(subject: String): js.Promise[AvroSchemaResponseInterface] = js.native
     
     var host: String = js.native
     
-    def isAlive(): RegistryRequest = js.native
+    def isAlive(): js.Promise[AvroSchemaResponseInterface] = js.native
     
     var logger: js.Object = js.native
     
@@ -57,13 +57,13 @@ object mod {
     
     var protocol: String = js.native
     
-    def registerSubjectVersion(subject: String, schema: js.Object): RegistryRequest = js.native
+    def registerSubjectVersion(subject: String, schema: js.Object): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def request(options: js.Object, expectedStatusCode: Double): RegistryRequest = js.native
+    def request(options: js.Object, expectedStatusCode: Double): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def setConfig(config: js.Object): RegistryRequest = js.native
+    def setConfig(config: js.Object): js.Promise[AvroSchemaResponseInterface] = js.native
     
-    def setSubjectConfig(subject: String, config: js.Object): RegistryRequest = js.native
+    def setSubjectConfig(subject: String, config: js.Object): js.Promise[AvroSchemaResponseInterface] = js.native
     
     var `type`: String = js.native
   }

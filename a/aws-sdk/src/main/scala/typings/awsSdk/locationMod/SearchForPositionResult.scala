@@ -15,6 +15,11 @@ trait SearchForPositionResult extends StObject {
     * Details about the search result, such as its address and position.
     */
   var Place: typings.awsSdk.locationMod.Place
+  
+  /**
+    * The unique identifier of the place. You can use this with the GetPlace operation to find the place again later.  For SearchPlaceIndexForPosition operations, the PlaceId is returned only by place indexes that use HERE as a data provider. 
+    */
+  var PlaceId: js.UndefOr[typings.awsSdk.locationMod.PlaceId] = js.undefined
 }
 object SearchForPositionResult {
   
@@ -28,5 +33,9 @@ object SearchForPositionResult {
     inline def setDistance(value: SearchForPositionResultDistanceDouble): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
     inline def setPlace(value: Place): Self = StObject.set(x, "Place", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceId(value: PlaceId): Self = StObject.set(x, "PlaceId", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceIdUndefined: Self = StObject.set(x, "PlaceId", js.undefined)
   }
 }

@@ -12,8 +12,8 @@ import typings.reactMentions.iterateMentionsMarkupMod.MarkupIterateeFunction
 import typings.reactMentions.iterateMentionsMarkupMod.TextIterateeFunction
 import typings.reactMentions.reactMentionsBooleans.`false`
 import typings.reactMentions.reactMentionsBooleans.`true`
-import typings.reactMentions.reactMentionsNumbers.`0`
-import typings.reactMentions.reactMentionsNumbers.`1`
+import typings.reactMentions.reactMentionsInts.`0`
+import typings.reactMentions.reactMentionsInts.`1`
 import typings.reactMentions.reactMentionsStrings.END
 import typings.reactMentions.reactMentionsStrings.NULL
 import typings.reactMentions.reactMentionsStrings.START
@@ -92,7 +92,7 @@ object utilsMod {
   
   inline def markupToRegex(markup: String): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("markupToRegex")(markup.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
-  inline def merge(target: js.Object, sources: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def merge(target: js.Object, sources: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   
   inline def mergeDeep[T, S](target: T, source: S): T & S = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & S]
   

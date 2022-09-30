@@ -44,7 +44,7 @@ object objectMod {
   inline def isObjectEqual(object1: js.Object, object2: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObjectEqual")(object1.asInstanceOf[js.Any], object2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isObjectEqual(object1: js.Object, object2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObjectEqual")(object1.asInstanceOf[js.Any], object2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def mixin(Base: js.Object, mixins: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(List(Base.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def mixin(Base: js.Object, mixins: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(scala.List(Base.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   
   inline def objectEach(
     `object`: js.Object,

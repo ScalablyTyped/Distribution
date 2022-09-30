@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("saucelabs", JSImport.Default)
 @js.native
-class default protected ()
+open class default ()
   extends StObject
      with SauceLabs {
   def this(options: SauceLabsOptions) = this()

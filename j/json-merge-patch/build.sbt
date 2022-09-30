@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-merge-patch"
-version := "0.0-unknown-dt-20220818Z-033c36"
+version := "0.0-unknown-dt-20220818Z-3d2937"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

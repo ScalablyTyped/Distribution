@@ -13,4 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wordpressBlocks.mod.TransformRaw[T]
   - typings.wordpressBlocks.mod.TransformShortcode[T]
 */
-trait Transform[T /* <: Record[String, js.Any] */] extends StObject
+trait Transform[T /* <: Record[String, Any] */] extends StObject

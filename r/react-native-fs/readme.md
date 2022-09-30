@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-fs
 
-Typings are for version 2.16.6
+Typings are for version 2.20.0
 
 ## Library description:
 Native filesystem access for react-native
@@ -10,10 +10,10 @@ Native filesystem access for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-fs |
 | Keywords           | react-component, react-native, ios, android, fs, filesystem, download, upload, file-transfer |
-| # releases         | 13 |
-| # dependents       | 116 |
-| # downloads        | 3966471 |
-| # stars            | 8 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 706624.3333333334 |
+| # stars            | 4451.0 |
 
 ## Links
 - [Homepage](https://github.com/itinance/react-native-fs#readme)

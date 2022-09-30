@@ -1,13 +1,12 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Displayname extends StObject {
   
-  var avatar_url: js.UndefOr[mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket] = js.undefined
+  var avatar_url: js.UndefOr[/* template literal string: mxc://${string} */ String] = js.undefined
   
   var displayname: js.UndefOr[String] = js.undefined
   
@@ -24,7 +23,7 @@ object Displayname {
   
   extension [Self <: Displayname](x: Self) {
     
-    inline def setAvatar_url(value: mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+    inline def setAvatar_url(value: /* template literal string: mxc://${string} */ String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     
     inline def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
     

@@ -264,87 +264,87 @@ object gridGridMod extends Shortcut {
   type GridProps[D /* <: ElementType[Any] */, P] = OverrideProps[GridTypeMap[P, D], D]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreNumbers.`1`
-    - typings.materialUiCore.materialUiCoreNumbers.`2`
-    - typings.materialUiCore.materialUiCoreNumbers.`3`
-    - typings.materialUiCore.materialUiCoreNumbers.`4`
-    - typings.materialUiCore.materialUiCoreNumbers.`5`
-    - typings.materialUiCore.materialUiCoreNumbers.`6`
-    - typings.materialUiCore.materialUiCoreNumbers.`7`
-    - typings.materialUiCore.materialUiCoreNumbers.`8`
-    - typings.materialUiCore.materialUiCoreNumbers.`9`
-    - typings.materialUiCore.materialUiCoreNumbers.`10`
-    - typings.materialUiCore.materialUiCoreNumbers.`11`
-    - typings.materialUiCore.materialUiCoreNumbers.`12`
+    - typings.materialUiCore.materialUiCoreInts.`1`
+    - typings.materialUiCore.materialUiCoreInts.`2`
+    - typings.materialUiCore.materialUiCoreInts.`3`
+    - typings.materialUiCore.materialUiCoreInts.`4`
+    - typings.materialUiCore.materialUiCoreInts.`5`
+    - typings.materialUiCore.materialUiCoreInts.`6`
+    - typings.materialUiCore.materialUiCoreInts.`7`
+    - typings.materialUiCore.materialUiCoreInts.`8`
+    - typings.materialUiCore.materialUiCoreInts.`9`
+    - typings.materialUiCore.materialUiCoreInts.`10`
+    - typings.materialUiCore.materialUiCoreInts.`11`
+    - typings.materialUiCore.materialUiCoreInts.`12`
     - typings.materialUiCore.materialUiCoreStrings.auto
   */
   trait GridSize extends StObject
   object GridSize {
     
-    inline def `1`: typings.materialUiCore.materialUiCoreNumbers.`1` = 1.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`1`]
+    inline def `1`: typings.materialUiCore.materialUiCoreInts.`1` = 1.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`1`]
     
-    inline def `10`: typings.materialUiCore.materialUiCoreNumbers.`10` = 10.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`10`]
+    inline def `10`: typings.materialUiCore.materialUiCoreInts.`10` = 10.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`10`]
     
-    inline def `11`: typings.materialUiCore.materialUiCoreNumbers.`11` = 11.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`11`]
+    inline def `11`: typings.materialUiCore.materialUiCoreInts.`11` = 11.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`11`]
     
-    inline def `12`: typings.materialUiCore.materialUiCoreNumbers.`12` = 12.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`12`]
+    inline def `12`: typings.materialUiCore.materialUiCoreInts.`12` = 12.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`12`]
     
-    inline def `2`: typings.materialUiCore.materialUiCoreNumbers.`2` = 2.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`2`]
+    inline def `2`: typings.materialUiCore.materialUiCoreInts.`2` = 2.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`2`]
     
-    inline def `3`: typings.materialUiCore.materialUiCoreNumbers.`3` = 3.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`3`]
+    inline def `3`: typings.materialUiCore.materialUiCoreInts.`3` = 3.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`3`]
     
-    inline def `4`: typings.materialUiCore.materialUiCoreNumbers.`4` = 4.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`4`]
+    inline def `4`: typings.materialUiCore.materialUiCoreInts.`4` = 4.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`4`]
     
-    inline def `5`: typings.materialUiCore.materialUiCoreNumbers.`5` = 5.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`5`]
+    inline def `5`: typings.materialUiCore.materialUiCoreInts.`5` = 5.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`5`]
     
-    inline def `6`: typings.materialUiCore.materialUiCoreNumbers.`6` = 6.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`6`]
+    inline def `6`: typings.materialUiCore.materialUiCoreInts.`6` = 6.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`6`]
     
-    inline def `7`: typings.materialUiCore.materialUiCoreNumbers.`7` = 7.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`7`]
+    inline def `7`: typings.materialUiCore.materialUiCoreInts.`7` = 7.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`7`]
     
-    inline def `8`: typings.materialUiCore.materialUiCoreNumbers.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`8`]
+    inline def `8`: typings.materialUiCore.materialUiCoreInts.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`8`]
     
-    inline def `9`: typings.materialUiCore.materialUiCoreNumbers.`9` = 9.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`9`]
+    inline def `9`: typings.materialUiCore.materialUiCoreInts.`9` = 9.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`9`]
     
     inline def auto: typings.materialUiCore.materialUiCoreStrings.auto = "auto".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.auto]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreNumbers.`0`
-    - typings.materialUiCore.materialUiCoreNumbers.`1`
-    - typings.materialUiCore.materialUiCoreNumbers.`2`
-    - typings.materialUiCore.materialUiCoreNumbers.`3`
-    - typings.materialUiCore.materialUiCoreNumbers.`4`
-    - typings.materialUiCore.materialUiCoreNumbers.`5`
-    - typings.materialUiCore.materialUiCoreNumbers.`6`
-    - typings.materialUiCore.materialUiCoreNumbers.`7`
-    - typings.materialUiCore.materialUiCoreNumbers.`8`
-    - typings.materialUiCore.materialUiCoreNumbers.`9`
-    - typings.materialUiCore.materialUiCoreNumbers.`10`
+    - typings.materialUiCore.materialUiCoreInts.`0`
+    - typings.materialUiCore.materialUiCoreInts.`1`
+    - typings.materialUiCore.materialUiCoreInts.`2`
+    - typings.materialUiCore.materialUiCoreInts.`3`
+    - typings.materialUiCore.materialUiCoreInts.`4`
+    - typings.materialUiCore.materialUiCoreInts.`5`
+    - typings.materialUiCore.materialUiCoreInts.`6`
+    - typings.materialUiCore.materialUiCoreInts.`7`
+    - typings.materialUiCore.materialUiCoreInts.`8`
+    - typings.materialUiCore.materialUiCoreInts.`9`
+    - typings.materialUiCore.materialUiCoreInts.`10`
   */
   trait GridSpacing extends StObject
   object GridSpacing {
     
-    inline def `0`: typings.materialUiCore.materialUiCoreNumbers.`0` = 0.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`0`]
+    inline def `0`: typings.materialUiCore.materialUiCoreInts.`0` = 0.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`0`]
     
-    inline def `1`: typings.materialUiCore.materialUiCoreNumbers.`1` = 1.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`1`]
+    inline def `1`: typings.materialUiCore.materialUiCoreInts.`1` = 1.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`1`]
     
-    inline def `10`: typings.materialUiCore.materialUiCoreNumbers.`10` = 10.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`10`]
+    inline def `10`: typings.materialUiCore.materialUiCoreInts.`10` = 10.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`10`]
     
-    inline def `2`: typings.materialUiCore.materialUiCoreNumbers.`2` = 2.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`2`]
+    inline def `2`: typings.materialUiCore.materialUiCoreInts.`2` = 2.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`2`]
     
-    inline def `3`: typings.materialUiCore.materialUiCoreNumbers.`3` = 3.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`3`]
+    inline def `3`: typings.materialUiCore.materialUiCoreInts.`3` = 3.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`3`]
     
-    inline def `4`: typings.materialUiCore.materialUiCoreNumbers.`4` = 4.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`4`]
+    inline def `4`: typings.materialUiCore.materialUiCoreInts.`4` = 4.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`4`]
     
-    inline def `5`: typings.materialUiCore.materialUiCoreNumbers.`5` = 5.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`5`]
+    inline def `5`: typings.materialUiCore.materialUiCoreInts.`5` = 5.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`5`]
     
-    inline def `6`: typings.materialUiCore.materialUiCoreNumbers.`6` = 6.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`6`]
+    inline def `6`: typings.materialUiCore.materialUiCoreInts.`6` = 6.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`6`]
     
-    inline def `7`: typings.materialUiCore.materialUiCoreNumbers.`7` = 7.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`7`]
+    inline def `7`: typings.materialUiCore.materialUiCoreInts.`7` = 7.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`7`]
     
-    inline def `8`: typings.materialUiCore.materialUiCoreNumbers.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`8`]
+    inline def `8`: typings.materialUiCore.materialUiCoreInts.`8` = 8.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`8`]
     
-    inline def `9`: typings.materialUiCore.materialUiCoreNumbers.`9` = 9.asInstanceOf[typings.materialUiCore.materialUiCoreNumbers.`9`]
+    inline def `9`: typings.materialUiCore.materialUiCoreInts.`9` = 9.asInstanceOf[typings.materialUiCore.materialUiCoreInts.`9`]
   }
   
   trait GridTypeMap[P, D /* <: ElementType[Any] */] extends StObject {

@@ -1,7 +1,7 @@
 package typings.reactMentions
 
-import typings.reactMentions.reactMentionsNumbers.`0`
-import typings.reactMentions.reactMentionsNumbers.`1`
+import typings.reactMentions.reactMentionsInts.`0`
+import typings.reactMentions.reactMentionsInts.`1`
 import typings.reactMentions.reactMentionsStrings.display
 import typings.reactMentions.reactMentionsStrings.id
 import org.scalablytyped.runtime.StObject

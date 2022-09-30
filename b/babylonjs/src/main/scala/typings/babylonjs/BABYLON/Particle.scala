@@ -6,97 +6,96 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Particle extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _attachedSubEmitters: Nullable[js.Array[SubEmitter]]
   
-  /** @hidden */
+  /** @internal */
   var _currentAngularSpeed1: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentAngularSpeed2: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentAngularSpeedGradient: Nullable[FactorGradient]
   
-  /** @hidden */
+  /** @internal */
   var _currentColor1: Color4
   
-  /** @hidden */
+  /** @internal */
   var _currentColor2: Color4
   
-  /** @hidden */
+  /** @internal */
   var _currentColorGradient: Nullable[ColorGradient]
   
-  /** @hidden */
+  /** @internal */
   var _currentDrag1: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentDrag2: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentDragGradient: Nullable[FactorGradient]
   
-  /** @hidden */
+  /** @internal */
   var _currentLimitVelocity1: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentLimitVelocity2: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentLimitVelocityGradient: Nullable[FactorGradient]
   
-  /** @hidden */
+  /** @internal */
   var _currentSize1: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentSize2: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentSizeGradient: Nullable[FactorGradient]
   
-  /** @hidden */
+  /** @internal */
   var _currentVelocity1: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentVelocity2: Double
   
-  /** @hidden */
+  /** @internal */
   var _currentVelocityGradient: Nullable[FactorGradient]
   
   /**
-    * @param subEmitter
-    * @hidden
+    * @internal
     */
   def _inheritParticleInfoToSubEmitter(subEmitter: SubEmitter): Unit
   
-  /** @hidden */
+  /** @internal */
   def _inheritParticleInfoToSubEmitters(): Unit
   
-  /** @hidden */
+  /** @internal */
   var _initialDirection: Nullable[Vector3]
   
-  /** @hidden */
+  /** @internal */
   var _initialEndSpriteCellID: Double
   
-  /** @hidden */
+  /** @internal */
   var _initialSpriteCellLoop: Boolean
   
-  /** @hidden */
+  /** @internal */
   var _initialStartSpriteCellID: Double
   
-  /** @hidden */
+  /** @internal */
   var _localPosition: js.UndefOr[Vector3] = js.undefined
   
-  /** @hidden */
+  /** @internal */
   var _randomCellOffset: js.UndefOr[Double] = js.undefined
   
-  /** @hidden */
+  /** @internal */
   var _randomNoiseCoordinates1: Vector3
   
-  /** @hidden */
+  /** @internal */
   var _randomNoiseCoordinates2: Vector3
   
-  /** @hidden */
+  /** @internal */
   def _reset(): Unit
   
   /* private */ var _updateCellInfoFromSystem: Any

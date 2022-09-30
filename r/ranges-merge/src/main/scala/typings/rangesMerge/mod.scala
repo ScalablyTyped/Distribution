@@ -2,8 +2,8 @@ package typings.rangesMerge
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.rangesMerge.anon.PartialOpts
-import typings.rangesMerge.rangesMergeNumbers.`1`
-import typings.rangesMerge.rangesMergeNumbers.`2`
+import typings.rangesMerge.rangesMergeInts.`1`
+import typings.rangesMerge.rangesMergeInts.`2`
 import typings.rangesSort.mod.Ranges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

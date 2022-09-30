@@ -10,5 +10,5 @@ object appendFunctionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
+  inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(scala.List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
 }

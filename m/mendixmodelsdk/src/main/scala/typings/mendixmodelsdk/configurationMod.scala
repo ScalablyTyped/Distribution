@@ -8,6 +8,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object configurationMod {
   
+  @js.native
+  sealed trait Priority extends StObject
+  @JSImport("mendixmodelsdk/src/sdk/configuration", "Priority")
+  @js.native
+  object Priority extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Priority & Double] = js.native
+    
+    @js.native
+    sealed trait High
+      extends StObject
+         with Priority
+    /* 2 */ val High: typings.mendixmodelsdk.configurationMod.Priority.High & Double = js.native
+    
+    @js.native
+    sealed trait Low
+      extends StObject
+         with Priority
+    /* 0 */ val Low: typings.mendixmodelsdk.configurationMod.Priority.Low & Double = js.native
+    
+    @js.native
+    sealed trait Medium
+      extends StObject
+         with Priority
+    /* 1 */ val Medium: typings.mendixmodelsdk.configurationMod.Priority.Medium & Double = js.native
+  }
+  
   object configuration {
     
     trait IBackendCredentials extends StObject {
@@ -118,6 +146,8 @@ object configurationMod {
       
       var name: String
       
+      var priority: js.UndefOr[Priority] = js.undefined
+      
       /**
         * Mendix project id. Needed for deployment and team server commits
         */
@@ -178,6 +208,10 @@ object configurationMod {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
+        inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+        
+        inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+        
         inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
         inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
@@ -200,11 +234,28 @@ object configurationMod {
       }
     }
     
+    trait IPATCredentials extends StObject {
+      
+      var personalAccessToken: String
+    }
+    object IPATCredentials {
+      
+      inline def apply(personalAccessToken: String): IPATCredentials = {
+        val __obj = js.Dynamic.literal(personalAccessToken = personalAccessToken.asInstanceOf[js.Any])
+        __obj.asInstanceOf[IPATCredentials]
+      }
+      
+      extension [Self <: IPATCredentials](x: Self) {
+        
+        inline def setPersonalAccessToken(value: String): Self = StObject.set(x, "personalAccessToken", value.asInstanceOf[js.Any])
+      }
+    }
+    
     trait ISdkConfig extends StObject {
       
       var client: js.UndefOr[IModelServerClient] = js.undefined
       
-      var credentials: js.UndefOr[IBackendCredentials | ISdkCredentials] = js.undefined
+      var credentials: js.UndefOr[IBackendCredentials | ISdkCredentials | IPATCredentials] = js.undefined
       
       var endPoint: js.UndefOr[String] = js.undefined
       
@@ -223,7 +274,7 @@ object configurationMod {
         
         inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
         
-        inline def setCredentials(value: IBackendCredentials | ISdkCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+        inline def setCredentials(value: IBackendCredentials | ISdkCredentials | IPATCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
         
         inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
         

@@ -9,51 +9,51 @@ import typings.nodegit.diffOptionsMod.DiffOptions
 import typings.nodegit.diffPerfDataMod.DiffPerfdata
 import typings.nodegit.diffStatsMod.DiffStats
 import typings.nodegit.indexMod.Index
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1024`
-import typings.nodegit.nodegitNumbers.`1048576`
-import typings.nodegit.nodegitNumbers.`1073741824`
-import typings.nodegit.nodegitNumbers.`10`
-import typings.nodegit.nodegitNumbers.`128`
-import typings.nodegit.nodegitNumbers.`131072`
-import typings.nodegit.nodegitNumbers.`16384`
-import typings.nodegit.nodegitNumbers.`16777216`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2048`
-import typings.nodegit.nodegitNumbers.`2097152`
-import typings.nodegit.nodegitNumbers.`255`
-import typings.nodegit.nodegitNumbers.`256`
-import typings.nodegit.nodegitNumbers.`268435456`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`32768`
-import typings.nodegit.nodegitNumbers.`32`
-import typings.nodegit.nodegitNumbers.`33554432`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4096`
-import typings.nodegit.nodegitNumbers.`4194304`
-import typings.nodegit.nodegitNumbers.`43`
-import typings.nodegit.nodegitNumbers.`45`
-import typings.nodegit.nodegitNumbers.`48`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`512`
-import typings.nodegit.nodegitNumbers.`536870912`
-import typings.nodegit.nodegitNumbers.`5`
-import typings.nodegit.nodegitNumbers.`60`
-import typings.nodegit.nodegitNumbers.`61`
-import typings.nodegit.nodegitNumbers.`62`
-import typings.nodegit.nodegitNumbers.`64`
-import typings.nodegit.nodegitNumbers.`65536`
-import typings.nodegit.nodegitNumbers.`66`
-import typings.nodegit.nodegitNumbers.`67108864`
-import typings.nodegit.nodegitNumbers.`6`
-import typings.nodegit.nodegitNumbers.`70`
-import typings.nodegit.nodegitNumbers.`72`
-import typings.nodegit.nodegitNumbers.`7`
-import typings.nodegit.nodegitNumbers.`8192`
-import typings.nodegit.nodegitNumbers.`8388608`
-import typings.nodegit.nodegitNumbers.`8`
-import typings.nodegit.nodegitNumbers.`9`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1024`
+import typings.nodegit.nodegitInts.`1048576`
+import typings.nodegit.nodegitInts.`1073741824`
+import typings.nodegit.nodegitInts.`10`
+import typings.nodegit.nodegitInts.`128`
+import typings.nodegit.nodegitInts.`131072`
+import typings.nodegit.nodegitInts.`16384`
+import typings.nodegit.nodegitInts.`16777216`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2048`
+import typings.nodegit.nodegitInts.`2097152`
+import typings.nodegit.nodegitInts.`255`
+import typings.nodegit.nodegitInts.`256`
+import typings.nodegit.nodegitInts.`268435456`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`32768`
+import typings.nodegit.nodegitInts.`32`
+import typings.nodegit.nodegitInts.`33554432`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4096`
+import typings.nodegit.nodegitInts.`4194304`
+import typings.nodegit.nodegitInts.`43`
+import typings.nodegit.nodegitInts.`45`
+import typings.nodegit.nodegitInts.`48`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`512`
+import typings.nodegit.nodegitInts.`536870912`
+import typings.nodegit.nodegitInts.`5`
+import typings.nodegit.nodegitInts.`60`
+import typings.nodegit.nodegitInts.`61`
+import typings.nodegit.nodegitInts.`62`
+import typings.nodegit.nodegitInts.`64`
+import typings.nodegit.nodegitInts.`65536`
+import typings.nodegit.nodegitInts.`66`
+import typings.nodegit.nodegitInts.`67108864`
+import typings.nodegit.nodegitInts.`6`
+import typings.nodegit.nodegitInts.`70`
+import typings.nodegit.nodegitInts.`72`
+import typings.nodegit.nodegitInts.`7`
+import typings.nodegit.nodegitInts.`8192`
+import typings.nodegit.nodegitInts.`8388608`
+import typings.nodegit.nodegitInts.`8`
+import typings.nodegit.nodegitInts.`9`
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
@@ -154,17 +154,17 @@ object diffMod {
     inline def treeToWorkdirWithIndex(repo: Repository, oldTree: Tree, opts: DiffOptions): js.Promise[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("treeToWorkdirWithIndex")(repo.asInstanceOf[js.Any], oldTree.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Diff]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`5`
-      - typings.nodegit.nodegitNumbers.`6`
-      - typings.nodegit.nodegitNumbers.`7`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`9`
-      - typings.nodegit.nodegitNumbers.`10`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`5`
+      - typings.nodegit.nodegitInts.`6`
+      - typings.nodegit.nodegitInts.`7`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`9`
+      - typings.nodegit.nodegitInts.`10`
     */
     trait DELTA extends StObject
     object DELTA {
@@ -193,21 +193,21 @@ object diffMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`32`
-      - typings.nodegit.nodegitNumbers.`48`
-      - typings.nodegit.nodegitNumbers.`64`
-      - typings.nodegit.nodegitNumbers.`255`
-      - typings.nodegit.nodegitNumbers.`4096`
-      - typings.nodegit.nodegitNumbers.`8192`
-      - typings.nodegit.nodegitNumbers.`16384`
-      - typings.nodegit.nodegitNumbers.`32768`
-      - typings.nodegit.nodegitNumbers.`65536`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`32`
+      - typings.nodegit.nodegitInts.`48`
+      - typings.nodegit.nodegitInts.`64`
+      - typings.nodegit.nodegitInts.`255`
+      - typings.nodegit.nodegitInts.`4096`
+      - typings.nodegit.nodegitInts.`8192`
+      - typings.nodegit.nodegitInts.`16384`
+      - typings.nodegit.nodegitInts.`32768`
+      - typings.nodegit.nodegitInts.`65536`
     */
     trait FIND extends StObject
     object FIND {
@@ -246,10 +246,10 @@ object diffMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
     */
     trait FLAG extends StObject
     object FLAG {
@@ -264,11 +264,11 @@ object diffMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`5`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`5`
     */
     trait FORMAT extends StObject
     object FORMAT {
@@ -285,8 +285,8 @@ object diffMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
     */
     trait FORMAT_EMAIL_FLAGS extends StObject
     object FORMAT_EMAIL_FLAGS {
@@ -297,15 +297,15 @@ object diffMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`32`
-      - typings.nodegit.nodegitNumbers.`43`
-      - typings.nodegit.nodegitNumbers.`45`
-      - typings.nodegit.nodegitNumbers.`61`
-      - typings.nodegit.nodegitNumbers.`62`
-      - typings.nodegit.nodegitNumbers.`60`
-      - typings.nodegit.nodegitNumbers.`70`
-      - typings.nodegit.nodegitNumbers.`72`
-      - typings.nodegit.nodegitNumbers.`66`
+      - typings.nodegit.nodegitInts.`32`
+      - typings.nodegit.nodegitInts.`43`
+      - typings.nodegit.nodegitInts.`45`
+      - typings.nodegit.nodegitInts.`61`
+      - typings.nodegit.nodegitInts.`62`
+      - typings.nodegit.nodegitInts.`60`
+      - typings.nodegit.nodegitInts.`70`
+      - typings.nodegit.nodegitInts.`72`
+      - typings.nodegit.nodegitInts.`66`
     */
     trait LINE extends StObject
     object LINE {
@@ -330,35 +330,35 @@ object diffMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`32`
-      - typings.nodegit.nodegitNumbers.`64`
-      - typings.nodegit.nodegitNumbers.`128`
-      - typings.nodegit.nodegitNumbers.`256`
-      - typings.nodegit.nodegitNumbers.`512`
-      - typings.nodegit.nodegitNumbers.`1024`
-      - typings.nodegit.nodegitNumbers.`2048`
-      - typings.nodegit.nodegitNumbers.`4096`
-      - typings.nodegit.nodegitNumbers.`8192`
-      - typings.nodegit.nodegitNumbers.`16384`
-      - typings.nodegit.nodegitNumbers.`32768`
-      - typings.nodegit.nodegitNumbers.`65536`
-      - typings.nodegit.nodegitNumbers.`131072`
-      - typings.nodegit.nodegitNumbers.`1048576`
-      - typings.nodegit.nodegitNumbers.`2097152`
-      - typings.nodegit.nodegitNumbers.`4194304`
-      - typings.nodegit.nodegitNumbers.`8388608`
-      - typings.nodegit.nodegitNumbers.`16777216`
-      - typings.nodegit.nodegitNumbers.`33554432`
-      - typings.nodegit.nodegitNumbers.`67108864`
-      - typings.nodegit.nodegitNumbers.`268435456`
-      - typings.nodegit.nodegitNumbers.`536870912`
-      - typings.nodegit.nodegitNumbers.`1073741824`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`32`
+      - typings.nodegit.nodegitInts.`64`
+      - typings.nodegit.nodegitInts.`128`
+      - typings.nodegit.nodegitInts.`256`
+      - typings.nodegit.nodegitInts.`512`
+      - typings.nodegit.nodegitInts.`1024`
+      - typings.nodegit.nodegitInts.`2048`
+      - typings.nodegit.nodegitInts.`4096`
+      - typings.nodegit.nodegitInts.`8192`
+      - typings.nodegit.nodegitInts.`16384`
+      - typings.nodegit.nodegitInts.`32768`
+      - typings.nodegit.nodegitInts.`65536`
+      - typings.nodegit.nodegitInts.`131072`
+      - typings.nodegit.nodegitInts.`1048576`
+      - typings.nodegit.nodegitInts.`2097152`
+      - typings.nodegit.nodegitInts.`4194304`
+      - typings.nodegit.nodegitInts.`8388608`
+      - typings.nodegit.nodegitInts.`16777216`
+      - typings.nodegit.nodegitInts.`33554432`
+      - typings.nodegit.nodegitInts.`67108864`
+      - typings.nodegit.nodegitInts.`268435456`
+      - typings.nodegit.nodegitInts.`536870912`
+      - typings.nodegit.nodegitInts.`1073741824`
     */
     trait OPTION extends StObject
     object OPTION {
@@ -423,11 +423,11 @@ object diffMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
     */
     trait STATS_FORMAT extends StObject
     object STATS_FORMAT {

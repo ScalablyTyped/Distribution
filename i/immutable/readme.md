@@ -1,7 +1,7 @@
 
 # Scala.js typings for immutable
 
-Typings are for version 4.0.0-rc.12
+Typings are for version 4.1.0
 
 ## Library description:
 Immutable Data Collections
@@ -10,15 +10,15 @@ Immutable Data Collections
 | ------------------ | :-------------: |
 | Full name          | immutable |
 | Keywords           | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
-| # releases         | 4 |
-| # dependents       | 4501 |
-| # downloads        | 152944854 |
-| # stars            | 136 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8631788E7 |
+| # stars            | 32101.0 |
 
 ## Links
-- [Homepage](https://github.com/facebook/immutable-js#readme)
-- [Bugs](https://github.com/facebook/immutable-js/issues)
-- [Repository](https://github.com/facebook/immutable-js)
+- [Homepage](https://immutable-js.com)
+- [Bugs](https://github.com/immutable-js/immutable-js/issues)
+- [Repository](https://github.com/immutable-js/immutable-js)
 - [Npm](https://www.npmjs.com/package/immutable)
     
 

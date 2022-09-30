@@ -13,8 +13,8 @@ import typings.socketclusterServer.anon.Algorithms
 import typings.socketclusterServer.anon.Error
 import typings.socketclusterServer.anon.Socket
 import typings.socketclusterServer.anon.Warning
-import typings.socketclusterServer.socketclusterServerNumbers.`1`
-import typings.socketclusterServer.socketclusterServerNumbers.`2`
+import typings.socketclusterServer.socketclusterServerInts.`1`
+import typings.socketclusterServer.socketclusterServerInts.`2`
 import typings.socketclusterServer.socketclusterServerStrings.authentication
 import typings.socketclusterServer.socketclusterServerStrings.authenticationStateChange
 import typings.socketclusterServer.socketclusterServerStrings.badSocketAuthToken

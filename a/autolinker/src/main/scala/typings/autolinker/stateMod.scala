@@ -1,26 +1,26 @@
 package typings.autolinker
 
-import typings.autolinker.autolinkerNumbers.`0`
-import typings.autolinker.autolinkerNumbers.`10`
-import typings.autolinker.autolinkerNumbers.`11`
-import typings.autolinker.autolinkerNumbers.`12`
-import typings.autolinker.autolinkerNumbers.`13`
-import typings.autolinker.autolinkerNumbers.`14`
-import typings.autolinker.autolinkerNumbers.`15`
-import typings.autolinker.autolinkerNumbers.`16`
-import typings.autolinker.autolinkerNumbers.`17`
-import typings.autolinker.autolinkerNumbers.`18`
-import typings.autolinker.autolinkerNumbers.`19`
-import typings.autolinker.autolinkerNumbers.`1`
-import typings.autolinker.autolinkerNumbers.`20`
-import typings.autolinker.autolinkerNumbers.`2`
-import typings.autolinker.autolinkerNumbers.`3`
-import typings.autolinker.autolinkerNumbers.`4`
-import typings.autolinker.autolinkerNumbers.`5`
-import typings.autolinker.autolinkerNumbers.`6`
-import typings.autolinker.autolinkerNumbers.`7`
-import typings.autolinker.autolinkerNumbers.`8`
-import typings.autolinker.autolinkerNumbers.`9`
+import typings.autolinker.autolinkerInts.`0`
+import typings.autolinker.autolinkerInts.`10`
+import typings.autolinker.autolinkerInts.`11`
+import typings.autolinker.autolinkerInts.`12`
+import typings.autolinker.autolinkerInts.`13`
+import typings.autolinker.autolinkerInts.`14`
+import typings.autolinker.autolinkerInts.`15`
+import typings.autolinker.autolinkerInts.`16`
+import typings.autolinker.autolinkerInts.`17`
+import typings.autolinker.autolinkerInts.`18`
+import typings.autolinker.autolinkerInts.`19`
+import typings.autolinker.autolinkerInts.`1`
+import typings.autolinker.autolinkerInts.`20`
+import typings.autolinker.autolinkerInts.`2`
+import typings.autolinker.autolinkerInts.`3`
+import typings.autolinker.autolinkerInts.`4`
+import typings.autolinker.autolinkerInts.`5`
+import typings.autolinker.autolinkerInts.`6`
+import typings.autolinker.autolinkerInts.`7`
+import typings.autolinker.autolinkerInts.`8`
+import typings.autolinker.autolinkerInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,27 +28,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object stateMod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.autolinker.autolinkerNumbers.`0`
-    - typings.autolinker.autolinkerNumbers.`1`
-    - typings.autolinker.autolinkerNumbers.`2`
-    - typings.autolinker.autolinkerNumbers.`3`
-    - typings.autolinker.autolinkerNumbers.`4`
-    - typings.autolinker.autolinkerNumbers.`5`
-    - typings.autolinker.autolinkerNumbers.`6`
-    - typings.autolinker.autolinkerNumbers.`7`
-    - typings.autolinker.autolinkerNumbers.`8`
-    - typings.autolinker.autolinkerNumbers.`9`
-    - typings.autolinker.autolinkerNumbers.`10`
-    - typings.autolinker.autolinkerNumbers.`11`
-    - typings.autolinker.autolinkerNumbers.`12`
-    - typings.autolinker.autolinkerNumbers.`13`
-    - typings.autolinker.autolinkerNumbers.`14`
-    - typings.autolinker.autolinkerNumbers.`15`
-    - typings.autolinker.autolinkerNumbers.`16`
-    - typings.autolinker.autolinkerNumbers.`17`
-    - typings.autolinker.autolinkerNumbers.`18`
-    - typings.autolinker.autolinkerNumbers.`19`
-    - typings.autolinker.autolinkerNumbers.`20`
+    - typings.autolinker.autolinkerInts.`0`
+    - typings.autolinker.autolinkerInts.`1`
+    - typings.autolinker.autolinkerInts.`2`
+    - typings.autolinker.autolinkerInts.`3`
+    - typings.autolinker.autolinkerInts.`4`
+    - typings.autolinker.autolinkerInts.`5`
+    - typings.autolinker.autolinkerInts.`6`
+    - typings.autolinker.autolinkerInts.`7`
+    - typings.autolinker.autolinkerInts.`8`
+    - typings.autolinker.autolinkerInts.`9`
+    - typings.autolinker.autolinkerInts.`10`
+    - typings.autolinker.autolinkerInts.`11`
+    - typings.autolinker.autolinkerInts.`12`
+    - typings.autolinker.autolinkerInts.`13`
+    - typings.autolinker.autolinkerInts.`14`
+    - typings.autolinker.autolinkerInts.`15`
+    - typings.autolinker.autolinkerInts.`16`
+    - typings.autolinker.autolinkerInts.`17`
+    - typings.autolinker.autolinkerInts.`18`
+    - typings.autolinker.autolinkerInts.`19`
+    - typings.autolinker.autolinkerInts.`20`
   */
   trait State extends StObject
   object State {

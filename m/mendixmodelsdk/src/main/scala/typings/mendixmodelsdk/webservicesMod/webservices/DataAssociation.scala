@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataAssociation")
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataAssociation")
 @js.native
-class DataAssociation protected () extends DataEntityBase {
+open class DataAssociation protected () extends DataEntityBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -27,6 +27,9 @@ class DataAssociation protected () extends DataEntityBase {
   
   def association: IAssociationBase | Null = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def associationByContract: MsdAssociation | Null = js.native
   def associationByContract_=(newValue: MsdAssociation | Null): Unit = js.native
   
@@ -54,7 +57,7 @@ class DataAssociation protected () extends DataEntityBase {
 }
 object DataAssociation {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataAssociation")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataAssociation")
   @js.native
   val ^ : js.Any = js.native
   
@@ -75,13 +78,13 @@ object DataAssociation {
   inline def createIn(container: DataEntityBase): DataAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataAssociation]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataAssociation.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataAssociation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataAssociation.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataAssociation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

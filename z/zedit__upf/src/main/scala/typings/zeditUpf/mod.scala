@@ -1,9 +1,8 @@
 package typings.zeditUpf
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.electron.Electron.FileFilter
+import typings.electron.Electron.CrossProcessExports.FileFilter
 import typings.fsJetpack.typesMod.FSJetpack
-import typings.std.Date
 import typings.xelib.mod.FileHandle
 import typings.xelib.mod.GameMode
 import typings.xelib.mod.RecordHandle
@@ -16,7 +15,6 @@ import typings.zeditUpf.anon.Records
 import typings.zeditUpf.anon.RequiredFiles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -75,15 +73,14 @@ object mod {
       * @see LegacyPatcher
       */
     // tslint:disable-next-line no-unnecessary-generics
+    inline def registerPatcher[L /* <: js.Object */, S /* <: js.Object */](patcher: LegacyPatcher[S, L]): Unit = js.Dynamic.global.applyDynamic("registerPatcher")(patcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Function for registering a patcher with UPF
       *
       * Generics are needed for inference within Patcher interface to work
       */
     // tslint:disable-next-line no-unnecessary-generics unified-signatures
-    @JSGlobal("registerPatcher")
-    @js.native
-    def registerPatcher[L, S](patcher: (LegacyPatcher[S, L]) | (Patcher[S, L])): Unit = js.native
+    inline def registerPatcher[L /* <: js.Object */, S /* <: js.Object */](patcher: Patcher[S, L]): Unit = js.Dynamic.global.applyDynamic("registerPatcher")(patcher.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * xelib wrapper instance exposed to zEdit modules
@@ -97,7 +94,6 @@ object mod {
   
   type ExectuteCTX[S, L] = js.Tuple4[FileHandle, Helpers, S, L]
   
-  @js.native
   trait Executor[S, L] extends StObject {
     
     /**
@@ -109,7 +105,7 @@ object mod {
       * so you don't need to do that here.
       */
     @JSName("finalize")
-    var finalize_FExecutor: js.UndefOr[js.Function1[/* args */ ExectuteCTX[S, L], Unit]] = js.native
+    var finalize_FExecutor: js.UndefOr[js.Function1[/* args */ ExectuteCTX[S, L], Unit]] = js.undefined
     
     /**
       * Perform anything that needs to be done once at the beginning of the
@@ -117,43 +113,35 @@ object mod {
       * This can be used to cache records which don't need to be patched,
       * but need to be referred to later on.  Store values
       */
-    var initialize: js.UndefOr[js.Function1[/* args */ ExectuteCTX[S, L], Unit]] = js.native
+    var initialize: js.UndefOr[js.Function1[/* args */ ExectuteCTX[S, L], Unit]] = js.undefined
     
     /**
       * Array of process blocks.
       *
       * The blocks are run sequentially
       */
-    var process: js.Array[ProcessBlock[S, L]] = js.native
+    var process: js.Array[ProcessBlock[S, L]]
   }
   object Executor {
     
-    @scala.inline
-    def apply[S, L](process: js.Array[ProcessBlock[S, L]]): Executor[S, L] = {
+    inline def apply[S, L](process: js.Array[ProcessBlock[S, L]]): Executor[S, L] = {
       val __obj = js.Dynamic.literal(process = process.asInstanceOf[js.Any])
       __obj.asInstanceOf[Executor[S, L]]
     }
     
-    @scala.inline
-    implicit class ExecutorMutableBuilder[Self <: Executor[_, _], S, L] (val x: Self with (Executor[S, L])) extends AnyVal {
+    extension [Self <: Executor[?, ?], S, L](x: Self & (Executor[S, L])) {
       
-      @scala.inline
-      def setFinalize_(value: /* args */ ExectuteCTX[S, L] => Unit): Self = StObject.set(x, "finalize", js.Any.fromFunction1(value))
+      inline def setFinalize_(value: /* args */ ExectuteCTX[S, L] => Unit): Self = StObject.set(x, "finalize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFinalize_Undefined: Self = StObject.set(x, "finalize", js.undefined)
+      inline def setFinalize_Undefined: Self = StObject.set(x, "finalize", js.undefined)
       
-      @scala.inline
-      def setInitialize(value: /* args */ ExectuteCTX[S, L] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: /* args */ ExectuteCTX[S, L] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
+      inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
       
-      @scala.inline
-      def setProcess(value: js.Array[ProcessBlock[S, L]]): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+      inline def setProcess(value: js.Array[ProcessBlock[S, L]]): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessVarargs(value: (ProcessBlock[S, L])*): Self = StObject.set(x, "process", js.Array(value :_*))
+      inline def setProcessVarargs(value: (ProcessBlock[S, L])*): Self = StObject.set(x, "process", js.Array(value*))
     }
   }
   
@@ -189,7 +177,7 @@ object mod {
     /**
       * @returns Date modified for the file at `filePath`.
       */
-    def getDateModified(filePath: String): Date = js.native
+    def getDateModified(filePath: String): js.Date = js.native
     
     /**
       * @returns array of paths for all directories in the folder at `path`.
@@ -342,21 +330,16 @@ object mod {
     def logMessage(message: String): Unit = js.native
   }
   
-  type JSONAble = Double | Boolean | String | Null | (js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @zedit/upf.@zedit/upf.JSONAble */ js.Object
-  ]) | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @zedit/upf.@zedit/upf.JSONAble */ js.Object
-  ])
+  type JSONAble = Double | Boolean | String | Null | js.Array[Any] | StringDictionary[Any]
   
-  type LegacyPatcher[S, L] = (Patcher[S, L]) with (RequiredFiles | (Execute[S, L]))
+  type LegacyPatcher[S /* <: js.Object */, L /* <: js.Object */] = (RequiredFiles & (Patcher[S, L])) | ((Execute[S, L]) & (Patcher[S, L]))
   
-  @js.native
   trait ModuleInfo extends StObject {
     
     /**
       * The author(s) of the module.
       */
-    var author: String = js.native
+    var author: String
     
     /**
       * boolean specifying whether or not the module can be hot loaded.
@@ -365,57 +348,56 @@ object mod {
       *
       * @default false
       */
-    var canHotLoad: js.UndefOr[Boolean] = js.native
+    var canHotLoad: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Short description of the module.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * The module's unique identifier.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * string specifying the module loader your module should be loaded with.
       *
       * @default default
       */
-    var moduleLoader: js.UndefOr[String] = js.native
+    var moduleLoader: js.UndefOr[String] = js.undefined
     
     /**
       * The module's display name.
       * This is the name displayed in the Manage Extensions Modal.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * `MM/DD/YYYY` date string corresponding to when the module was initially released.
       */
-    var released: String = js.native
+    var released: String
     
     /**
       * array of the module id strings which your module requires to function properly.
       *
       * @default []
       */
-    var requires: js.UndefOr[js.Array[String]] = js.native
+    var requires: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * `MM/DD/YYYY` date string corresponding to when the module was last updated.
       */
-    var updated: String = js.native
+    var updated: String
     
     /**
       * Version string for the module.
       */
-    var version: String = js.native
+    var version: String
   }
   object ModuleInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: String,
       description: String,
       id: String,
@@ -428,54 +410,38 @@ object mod {
       __obj.asInstanceOf[ModuleInfo]
     }
     
-    @scala.inline
-    implicit class ModuleInfoMutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ModuleInfo](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanHotLoad(value: Boolean): Self = StObject.set(x, "canHotLoad", value.asInstanceOf[js.Any])
+      inline def setCanHotLoad(value: Boolean): Self = StObject.set(x, "canHotLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanHotLoadUndefined: Self = StObject.set(x, "canHotLoad", js.undefined)
+      inline def setCanHotLoadUndefined: Self = StObject.set(x, "canHotLoad", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleLoader(value: String): Self = StObject.set(x, "moduleLoader", value.asInstanceOf[js.Any])
+      inline def setModuleLoader(value: String): Self = StObject.set(x, "moduleLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleLoaderUndefined: Self = StObject.set(x, "moduleLoader", js.undefined)
+      inline def setModuleLoaderUndefined: Self = StObject.set(x, "moduleLoader", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleased(value: String): Self = StObject.set(x, "released", value.asInstanceOf[js.Any])
+      inline def setReleased(value: String): Self = StObject.set(x, "released", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+      inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+      inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
       
-      @scala.inline
-      def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+      inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
       
-      @scala.inline
-      def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Patcher[S /* <: js.Object */, L /* <: js.Object */] extends StObject {
     
     /**
@@ -485,25 +451,25 @@ object mod {
       * @param settings @see defaultSettings
       * @param locals Store values to refer to them later in the patching process.
       */
-    var execute: (js.Function1[/* args */ ExectuteCTX[S, L], Executor[S, L]]) | (Executor[S, L]) = js.native
+    var execute: (js.Function1[/* args */ ExectuteCTX[S, L], Executor[S, L]]) | (Executor[S, L])
     
     /**
       * Array of the game modes your patcher works with
       */
-    var gameModes: js.Array[GameMode] = js.native
+    var gameModes: js.Array[GameMode]
     
     /**
       * You can program strict exclusions here.
       * These exclusions cannot be overridden by the user.
       * This function can be removed if you don't want to hard-exclude any files.
       */
-    var getFilesToPatch: js.UndefOr[js.Function1[/* filenames */ js.Array[String], js.Array[String]]] = js.native
+    var getFilesToPatch: js.UndefOr[js.Function1[/* filenames */ js.Array[String], js.Array[String]]] = js.undefined
     
     /**
       * Your patcher module information.
       * You should use the `info` variable as the value here.
       */
-    var info: ModuleInfo = js.native
+    var info: ModuleInfo
     
     /**
       * Optional array of required filenames.
@@ -511,14 +477,13 @@ object mod {
       *
       * @default []
       */
-    var requiredFiles: js.UndefOr[js.Function0[js.Array[String]] | js.Array[String]] = js.native
+    var requiredFiles: js.UndefOr[js.Function0[js.Array[String]] | js.Array[String]] = js.undefined
     
-    var settings: Controller[S] = js.native
+    var settings: Controller[S]
   }
   object Patcher {
     
-    @scala.inline
-    def apply[S /* <: js.Object */, L /* <: js.Object */](
+    inline def apply[S /* <: js.Object */, L /* <: js.Object */](
       execute: (js.Function1[/* args */ ExectuteCTX[S, L], Executor[S, L]]) | (Executor[S, L]),
       gameModes: js.Array[GameMode],
       info: ModuleInfo,
@@ -528,49 +493,35 @@ object mod {
       __obj.asInstanceOf[Patcher[S, L]]
     }
     
-    @scala.inline
-    implicit class PatcherMutableBuilder[Self <: Patcher[_, _], S /* <: js.Object */, L /* <: js.Object */] (val x: Self with (Patcher[S, L])) extends AnyVal {
+    extension [Self <: Patcher[?, ?], S /* <: js.Object */, L /* <: js.Object */](x: Self & (Patcher[S, L])) {
       
-      @scala.inline
-      def setExecute(value: (js.Function1[/* args */ ExectuteCTX[S, L], Executor[S, L]]) | (Executor[S, L])): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      inline def setExecute(value: (js.Function1[/* args */ ExectuteCTX[S, L], Executor[S, L]]) | (Executor[S, L])): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecuteFunction1(value: /* args */ ExectuteCTX[S, L] => Executor[S, L]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecuteFunction1(value: /* args */ ExectuteCTX[S, L] => Executor[S, L]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGameModes(value: js.Array[GameMode]): Self = StObject.set(x, "gameModes", value.asInstanceOf[js.Any])
+      inline def setGameModes(value: js.Array[GameMode]): Self = StObject.set(x, "gameModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameModesVarargs(value: GameMode*): Self = StObject.set(x, "gameModes", js.Array(value :_*))
+      inline def setGameModesVarargs(value: GameMode*): Self = StObject.set(x, "gameModes", js.Array(value*))
       
-      @scala.inline
-      def setGetFilesToPatch(value: /* filenames */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "getFilesToPatch", js.Any.fromFunction1(value))
+      inline def setGetFilesToPatch(value: /* filenames */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "getFilesToPatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFilesToPatchUndefined: Self = StObject.set(x, "getFilesToPatch", js.undefined)
+      inline def setGetFilesToPatchUndefined: Self = StObject.set(x, "getFilesToPatch", js.undefined)
       
-      @scala.inline
-      def setInfo(value: ModuleInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: ModuleInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredFiles(value: js.Function0[js.Array[String]] | js.Array[String]): Self = StObject.set(x, "requiredFiles", value.asInstanceOf[js.Any])
+      inline def setRequiredFiles(value: js.Function0[js.Array[String]] | js.Array[String]): Self = StObject.set(x, "requiredFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredFilesFunction0(value: () => js.Array[String]): Self = StObject.set(x, "requiredFiles", js.Any.fromFunction0(value))
+      inline def setRequiredFilesFunction0(value: () => js.Array[String]): Self = StObject.set(x, "requiredFiles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequiredFilesUndefined: Self = StObject.set(x, "requiredFiles", js.undefined)
+      inline def setRequiredFilesUndefined: Self = StObject.set(x, "requiredFiles", js.undefined)
       
-      @scala.inline
-      def setRequiredFilesVarargs(value: String*): Self = StObject.set(x, "requiredFiles", js.Array(value :_*))
+      inline def setRequiredFilesVarargs(value: String*): Self = StObject.set(x, "requiredFiles", js.Array(value*))
       
-      @scala.inline
-      def setSettings(value: Controller[S]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Controller[S]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   
-  type ProcessBlock[S, L] = (Load | (Records[S, L])) with (Patch[S, L])
+  type ProcessBlock[S, L] = (Load & (Patch[S, L])) | ((Records[S, L]) & (Patch[S, L]))
   
-  @js.native
-  trait XELibModule extends XELib
+  type XELibModule = XELib
 }

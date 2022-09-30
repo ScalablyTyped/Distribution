@@ -28,20 +28,19 @@ object boundingBoxMod {
     def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3]) = this()
     def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3], worldMatrix: DeepImmutable[Matrix]) = this()
     
-    /** @hidden */
+    /** @internal */
     var _drawWrapperBack: Nullable[DrawWrapper] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _drawWrapperFront: Nullable[DrawWrapper] = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var _tag: Double = js.native
     
     /**
-      * @param world
-      * @hidden
+      * @internal
       */
     def _update(world: DeepImmutable[Matrix]): Unit = js.native
     

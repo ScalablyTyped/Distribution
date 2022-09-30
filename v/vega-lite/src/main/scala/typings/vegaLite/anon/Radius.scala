@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Radius extends StObject {
   
-  val radius: typings.vegaLite.vegaLiteNumbers.`1`
+  val radius: typings.vegaLite.vegaLiteInts.`1`
   
-  val radius2: typings.vegaLite.vegaLiteNumbers.`1`
+  val radius2: typings.vegaLite.vegaLiteInts.`1`
   
-  val theta: typings.vegaLite.vegaLiteNumbers.`1`
+  val theta: typings.vegaLite.vegaLiteInts.`1`
   
-  val theta2: typings.vegaLite.vegaLiteNumbers.`1`
+  val theta2: typings.vegaLite.vegaLiteInts.`1`
 }
 object Radius {
   
@@ -23,12 +23,12 @@ object Radius {
   
   extension [Self <: Radius](x: Self) {
     
-    inline def setRadius(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    inline def setRadius2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "radius2", value.asInstanceOf[js.Any])
+    inline def setRadius2(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "radius2", value.asInstanceOf[js.Any])
     
-    inline def setTheta(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+    inline def setTheta(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
-    inline def setTheta2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "theta2", value.asInstanceOf[js.Any])
+    inline def setTheta2(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "theta2", value.asInstanceOf[js.Any])
   }
 }

@@ -4,7 +4,6 @@ import typings.atlaskitMotion.typesMod.Direction
 import typings.atlaskitMotion.typesMod.Distance
 import typings.atlaskitMotion.typesMod.Fade
 import typings.atlaskitMotion.typesMod.Transition
-import typings.atlaskitMotion.utilsCurvesMod.AnimationCurve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +21,6 @@ object atlaskitMotionStrings {
     extends StObject
        with Distance
   inline def constant: constant = "constant".asInstanceOf[constant]
-  
-  @js.native
-  sealed trait `cubic-bezierLeftparenthesis0Dot15Comma1Comma0Dot3Comma1Rightparenthesis`
-    extends StObject
-       with AnimationCurve
-  inline def `cubic-bezierLeftparenthesis0Dot15Comma1Comma0Dot3Comma1Rightparenthesis`: `cubic-bezierLeftparenthesis0Dot15Comma1Comma0Dot3Comma1Rightparenthesis` = "cubic-bezier(0.15,1,0.3,1)".asInstanceOf[`cubic-bezierLeftparenthesis0Dot15Comma1Comma0Dot3Comma1Rightparenthesis`]
-  
-  @js.native
-  sealed trait `cubic-bezierLeftparenthesis0Dot2Comma0Comma0Comma1Rightparenthesis`
-    extends StObject
-       with AnimationCurve
-  inline def `cubic-bezierLeftparenthesis0Dot2Comma0Comma0Comma1Rightparenthesis`: `cubic-bezierLeftparenthesis0Dot2Comma0Comma0Comma1Rightparenthesis` = "cubic-bezier(0.2,0,0,1)".asInstanceOf[`cubic-bezierLeftparenthesis0Dot2Comma0Comma0Comma1Rightparenthesis`]
-  
-  @js.native
-  sealed trait `cubic-bezierLeftparenthesis0Dot8Comma0Comma0Comma0Dot8Rightparenthesis`
-    extends StObject
-       with AnimationCurve
-  inline def `cubic-bezierLeftparenthesis0Dot8Comma0Comma0Comma0Dot8Rightparenthesis`: `cubic-bezierLeftparenthesis0Dot8Comma0Comma0Comma0Dot8Rightparenthesis` = "cubic-bezier(0.8,0,0,0.8)".asInstanceOf[`cubic-bezierLeftparenthesis0Dot8Comma0Comma0Comma0Dot8Rightparenthesis`]
   
   @js.native
   sealed trait entering

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "LocalByNameReferenceProperty")
 @js.native
-class LocalByNameReferenceProperty[T /* <: INamedElement */] protected ()
+open class LocalByNameReferenceProperty[T /* <: INamedElement */] protected ()
   extends typings.mendixmodelsdk.propertiesMod.LocalByNameReferenceProperty[T] {
   def this(
     declaredOn: IStructureClass,

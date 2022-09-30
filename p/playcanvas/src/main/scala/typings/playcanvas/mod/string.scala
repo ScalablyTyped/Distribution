@@ -10,7 +10,7 @@ object string {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def format(s: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(s.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(s: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(s.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def fromCodePoint(args: Double*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCodePoint")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   

@@ -25,8 +25,8 @@ object assertMod {
     @JSImport("@noble/hashes/_assert", "default.bytes")
     @js.native
     def bytes: js.Function2[/* b */ js.UndefOr[js.typedarray.Uint8Array], /* repeated */ Double, Unit] = js.native
-    inline def bytes(b: js.typedarray.Uint8Array, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-    inline def bytes(b: Unit, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def bytes(b: js.typedarray.Uint8Array, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(scala.List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def bytes(b: Unit, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(scala.List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     inline def bytes_=(x: js.Function2[/* b */ js.UndefOr[js.typedarray.Uint8Array], /* repeated */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytes")(x.asInstanceOf[js.Any])
     
     @JSImport("@noble/hashes/_assert", "default.exists")
@@ -56,8 +56,8 @@ object assertMod {
   
   inline def bool(b: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")(b.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def bytes(b: js.typedarray.Uint8Array, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def bytes(b: Unit, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def bytes(b: js.typedarray.Uint8Array, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(scala.List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def bytes(b: Unit, lengths: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(scala.List(b.asInstanceOf[js.Any]).`++`(lengths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def exists(instance: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def exists(instance: Any, checkFinished: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(instance.asInstanceOf[js.Any], checkFinished.asInstanceOf[js.Any])).asInstanceOf[Unit]

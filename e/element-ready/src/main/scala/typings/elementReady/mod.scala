@@ -4,6 +4,7 @@ import typings.std.AsyncIterable
 import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLElement
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,7 +108,8 @@ object mod {
   
   @js.native
   trait StoppablePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     /**
     	Stop checking for the element to be ready. The stop is synchronous and the original promise is then resolved to `undefined`.

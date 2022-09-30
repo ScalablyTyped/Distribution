@@ -1,9 +1,9 @@
 package typings.tokeyCssSelectorParser
 
 import typings.tokeyCssSelectorParser.astTypesMod.ImmutableSelectorNode
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserNumbers.`-1`
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserNumbers.`0`
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserNumbers.`1`
+import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`-1`
+import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`0`
+import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

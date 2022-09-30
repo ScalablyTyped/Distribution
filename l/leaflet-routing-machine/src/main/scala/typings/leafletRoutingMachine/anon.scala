@@ -174,7 +174,7 @@ object anon {
     
     var inputWaypoints: Waypoint_
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
     var waypoints: Waypoint_
   }
@@ -189,7 +189,7 @@ object anon {
       
       inline def setInputWaypoints(value: Waypoint_): Self = StObject.set(x, "inputWaypoints", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       

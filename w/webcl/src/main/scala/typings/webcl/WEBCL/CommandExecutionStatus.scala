@@ -1,19 +1,19 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x0`
-import typings.webcl.webclNumbers.`0x1`
-import typings.webcl.webclNumbers.`0x2`
-import typings.webcl.webclNumbers.`0x3`
+import typings.webcl.webclInts.`0x0`
+import typings.webcl.webclInts.`0x1`
+import typings.webcl.webclInts.`0x2`
+import typings.webcl.webclInts.`0x3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* command execution status */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x0`
-  - typings.webcl.webclNumbers.`0x1`
-  - typings.webcl.webclNumbers.`0x2`
-  - typings.webcl.webclNumbers.`0x3`
+  - typings.webcl.webclInts.`0x0`
+  - typings.webcl.webclInts.`0x1`
+  - typings.webcl.webclInts.`0x2`
+  - typings.webcl.webclInts.`0x3`
 */
 trait CommandExecutionStatus extends StObject
 object CommandExecutionStatus {

@@ -4,21 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vscodeTextmate.anon.Background
 import typings.vscodeTextmate.typesMod.IOnigLib
 import typings.vscodeTextmate.typesMod.IRawGrammar
-import typings.vscodeTextmate.vscodeTextmateNumbers._4278190080
-import typings.vscodeTextmate.vscodeTextmateNumbers.`0`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`1024`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`10`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`11`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`15`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`16744448`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`1`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`24`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`255`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`2`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`30720`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`3`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`768`
-import typings.vscodeTextmate.vscodeTextmateNumbers.`8`
+import typings.vscodeTextmate.vscodeTextmateDoubles.`4278190080`
+import typings.vscodeTextmate.vscodeTextmateInts.`0`
+import typings.vscodeTextmate.vscodeTextmateInts.`1024`
+import typings.vscodeTextmate.vscodeTextmateInts.`10`
+import typings.vscodeTextmate.vscodeTextmateInts.`11`
+import typings.vscodeTextmate.vscodeTextmateInts.`15`
+import typings.vscodeTextmate.vscodeTextmateInts.`16744448`
+import typings.vscodeTextmate.vscodeTextmateInts.`1`
+import typings.vscodeTextmate.vscodeTextmateInts.`24`
+import typings.vscodeTextmate.vscodeTextmateInts.`255`
+import typings.vscodeTextmate.vscodeTextmateInts.`2`
+import typings.vscodeTextmate.vscodeTextmateInts.`30720`
+import typings.vscodeTextmate.vscodeTextmateInts.`3`
+import typings.vscodeTextmate.vscodeTextmateInts.`768`
+import typings.vscodeTextmate.vscodeTextmateInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -347,23 +347,23 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`255`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`768`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`1024`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`30720`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`16744448`
-    - typings.vscodeTextmate.vscodeTextmateNumbers._4278190080
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`0`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`8`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`10`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`11`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`15`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`24`
+    - typings.vscodeTextmate.vscodeTextmateInts.`255`
+    - typings.vscodeTextmate.vscodeTextmateInts.`768`
+    - typings.vscodeTextmate.vscodeTextmateInts.`1024`
+    - typings.vscodeTextmate.vscodeTextmateInts.`30720`
+    - typings.vscodeTextmate.vscodeTextmateInts.`16744448`
+    - typings.vscodeTextmate.vscodeTextmateDoubles.`4278190080`
+    - typings.vscodeTextmate.vscodeTextmateInts.`0`
+    - typings.vscodeTextmate.vscodeTextmateInts.`8`
+    - typings.vscodeTextmate.vscodeTextmateInts.`10`
+    - typings.vscodeTextmate.vscodeTextmateInts.`11`
+    - typings.vscodeTextmate.vscodeTextmateInts.`15`
+    - typings.vscodeTextmate.vscodeTextmateInts.`24`
   */
   trait MetadataConsts extends StObject
   object MetadataConsts {
     
-    inline def BACKGROUND_MASK: _4278190080 = 4278190080.0.asInstanceOf[_4278190080]
+    inline def BACKGROUND_MASK: `4278190080` = 4278190080d.asInstanceOf[`4278190080`]
     
     inline def BACKGROUND_OFFSET: `24` = 24.asInstanceOf[`24`]
     
@@ -456,10 +456,10 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`0`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`1`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`2`
-    - typings.vscodeTextmate.vscodeTextmateNumbers.`3`
+    - typings.vscodeTextmate.vscodeTextmateInts.`0`
+    - typings.vscodeTextmate.vscodeTextmateInts.`1`
+    - typings.vscodeTextmate.vscodeTextmateInts.`2`
+    - typings.vscodeTextmate.vscodeTextmateInts.`3`
   */
   trait StandardTokenType extends StObject
   object StandardTokenType {

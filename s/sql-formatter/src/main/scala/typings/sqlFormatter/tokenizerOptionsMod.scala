@@ -174,8 +174,6 @@ object tokenizerOptionsMod {
     
     var reservedCommands: js.Array[String]
     
-    var reservedDependentClauses: js.Array[String]
-    
     var reservedFunctionNames: js.Array[String]
     
     var reservedJoins: js.Array[String]
@@ -199,7 +197,6 @@ object tokenizerOptionsMod {
     inline def apply(
       identTypes: js.Array[QuoteType],
       reservedCommands: js.Array[String],
-      reservedDependentClauses: js.Array[String],
       reservedFunctionNames: js.Array[String],
       reservedJoins: js.Array[String],
       reservedKeywords: js.Array[String],
@@ -207,7 +204,7 @@ object tokenizerOptionsMod {
       reservedSetOperations: js.Array[String],
       stringTypes: js.Array[QuoteType]
     ): TokenizerOptions = {
-      val __obj = js.Dynamic.literal(identTypes = identTypes.asInstanceOf[js.Any], reservedCommands = reservedCommands.asInstanceOf[js.Any], reservedDependentClauses = reservedDependentClauses.asInstanceOf[js.Any], reservedFunctionNames = reservedFunctionNames.asInstanceOf[js.Any], reservedJoins = reservedJoins.asInstanceOf[js.Any], reservedKeywords = reservedKeywords.asInstanceOf[js.Any], reservedSelect = reservedSelect.asInstanceOf[js.Any], reservedSetOperations = reservedSetOperations.asInstanceOf[js.Any], stringTypes = stringTypes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(identTypes = identTypes.asInstanceOf[js.Any], reservedCommands = reservedCommands.asInstanceOf[js.Any], reservedFunctionNames = reservedFunctionNames.asInstanceOf[js.Any], reservedJoins = reservedJoins.asInstanceOf[js.Any], reservedKeywords = reservedKeywords.asInstanceOf[js.Any], reservedSelect = reservedSelect.asInstanceOf[js.Any], reservedSetOperations = reservedSetOperations.asInstanceOf[js.Any], stringTypes = stringTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenizerOptions]
     }
     
@@ -258,10 +255,6 @@ object tokenizerOptionsMod {
       inline def setReservedCommands(value: js.Array[String]): Self = StObject.set(x, "reservedCommands", value.asInstanceOf[js.Any])
       
       inline def setReservedCommandsVarargs(value: String*): Self = StObject.set(x, "reservedCommands", js.Array(value*))
-      
-      inline def setReservedDependentClauses(value: js.Array[String]): Self = StObject.set(x, "reservedDependentClauses", value.asInstanceOf[js.Any])
-      
-      inline def setReservedDependentClausesVarargs(value: String*): Self = StObject.set(x, "reservedDependentClauses", js.Array(value*))
       
       inline def setReservedFunctionNames(value: js.Array[String]): Self = StObject.set(x, "reservedFunctionNames", value.asInstanceOf[js.Any])
       

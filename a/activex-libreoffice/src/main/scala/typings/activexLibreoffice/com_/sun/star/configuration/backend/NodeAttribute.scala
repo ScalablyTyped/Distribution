@@ -1,10 +1,10 @@
 package typings.activexLibreoffice.com_.sun.star.configuration.backend
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`32512`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`512`
+import typings.activexLibreoffice.activexLibreofficeInts.`1024`
+import typings.activexLibreoffice.activexLibreofficeInts.`2048`
+import typings.activexLibreoffice.activexLibreofficeInts.`256`
+import typings.activexLibreoffice.activexLibreofficeInts.`32512`
+import typings.activexLibreoffice.activexLibreofficeInts.`512`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object NodeAttribute {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`32512`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
+    - typings.activexLibreoffice.activexLibreofficeInts.`256`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2048`
+    - typings.activexLibreoffice.activexLibreofficeInts.`512`
+    - typings.activexLibreoffice.activexLibreofficeInts.`32512`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1024`
   */
   trait Constants extends StObject
   object Constants {

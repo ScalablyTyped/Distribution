@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntityKeyPart because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEntityKey, name, `type` */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityKeyPart")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntityKeyPart because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEntityKey, name, `type` */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityKeyPart")
 @js.native
-class EntityKeyPart protected ()
+open class EntityKeyPart protected ()
   extends Element[IModel]
      with IByNameReferrable {
   def this(
@@ -65,7 +65,7 @@ class EntityKeyPart protected ()
 }
 object EntityKeyPart {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityKeyPart")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityKeyPart")
   @js.native
   val ^ : js.Any = js.native
   
@@ -89,13 +89,13 @@ object EntityKeyPart {
   inline def createIn(container: EntityKey): EntityKeyPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EntityKeyPart]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityKeyPart.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityKeyPart.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EntityKeyPart.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityKeyPart.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

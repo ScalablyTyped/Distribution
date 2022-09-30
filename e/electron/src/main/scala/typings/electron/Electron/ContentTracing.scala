@@ -24,8 +24,8 @@ trait ContentTracing extends StObject {
     * Resolves with an object containing the `value` and `percentage` of trace buffer
     * maximum usage
     *
-    * * `value` Number
-    * * `percentage` Number
+    * * `value` number
+    * * `percentage` number
     *
     * Get the maximum usage across processes of trace buffer as a percentage of the
     * full state.

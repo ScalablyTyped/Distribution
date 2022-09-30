@@ -43,9 +43,9 @@ object mod {
     ): AnyPointer[T, D] = js.native
     def addIn(predicates: SingleOrArrayOfTerms[Term], callback: AddCallback[D, BlankNode]): AnyPointer[T, D] = js.native
     @JSName("addIn")
-    def addIn_X_Term[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], subjects: SingleOrArrayOfTermsOrLiterals[X]): AnyPointer[T, D] = js.native
+    def addIn_X[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], subjects: SingleOrArrayOfTermsOrLiterals[X]): AnyPointer[T, D] = js.native
     @JSName("addIn")
-    def addIn_X_Term[X /* <: Term */](
+    def addIn_X[X /* <: Term */](
       predicates: SingleOrArrayOfTerms[Term],
       subjects: SingleOrArrayOfTermsOrLiterals[X],
       callback: AddCallback[D, X]
@@ -69,9 +69,9 @@ object mod {
     ): AnyPointer[T, D] = js.native
     def addOut(predicates: SingleOrArrayOfTerms[Term], callback: AddCallback[D, BlankNode]): AnyPointer[T, D] = js.native
     @JSName("addOut")
-    def addOut_X_Term[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): AnyPointer[T, D] = js.native
+    def addOut_X[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): AnyPointer[T, D] = js.native
     @JSName("addOut")
-    def addOut_X_Term[X /* <: Term */](
+    def addOut_X[X /* <: Term */](
       predicates: SingleOrArrayOfTerms[Term],
       objects: SingleOrArrayOfTermsOrLiterals[X],
       callback: AddCallback[D, X]
@@ -110,7 +110,7 @@ object mod {
         ]
     ): AnyPointer[T, D] = js.native
     @JSName("filter")
-    def filter_S_T[S /* <: T */](cb: FilterCallback[T, D, S]): AnyPointer[S, D] = js.native
+    def filter_S[S /* <: T */](cb: FilterCallback[T, D, S]): AnyPointer[S, D] = js.native
     
     def forEach(cb: js.Function1[/* quad */ Iteratee[T, D], Unit]): this.type = js.native
     
@@ -164,21 +164,17 @@ object mod {
     def node[X /* <: Term */](value: (AnyPointer[X, D]) | (MultiPointer[X, D])): AnyPointer[X, D] = js.native
     def node[X /* <: Term */](value: (AnyPointer[X, D]) | (MultiPointer[X, D]), options: NodeOptions): AnyPointer[X, D] = js.native
     @JSName("node")
-    def node_X_ArrayTerm[X /* <: js.Array[Term] */](values: X): AnyPointer[X, D] = js.native
+    def node_X[X /* <: Term */](value: SingleOrOneElementArray[X] | X): AnyPointer[X, D] = js.native
     @JSName("node")
-    def node_X_ArrayTerm[X /* <: js.Array[Term] */](values: X, options: NodeOptions): AnyPointer[X, D] = js.native
+    def node_X[X /* <: Term */](value: SingleOrOneElementArray[X] | X, options: NodeOptions): AnyPointer[X, D] = js.native
     @JSName("node")
-    def node_X_Term[X /* <: Term */](value: js.Iterable[X]): AnyPointer[js.Array[X], D] = js.native
+    def node_X[X /* <: Term */](value: js.Iterable[X]): AnyPointer[js.Array[X], D] = js.native
     @JSName("node")
-    def node_X_Term[X /* <: Term */](value: js.Iterable[X], options: NodeOptions): AnyPointer[js.Array[X], D] = js.native
+    def node_X[X /* <: Term */](value: js.Iterable[X], options: NodeOptions): AnyPointer[js.Array[X], D] = js.native
     @JSName("node")
-    def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X]): AnyPointer[X, D] = js.native
+    def node_X_MultiPointer[X /* <: Term */](value: js.Iterable[GraphPointer[X, D]]): MultiPointer[X, D] = js.native
     @JSName("node")
-    def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X], options: NodeOptions): AnyPointer[X, D] = js.native
-    @JSName("node")
-    def node_X_Term_MultiPointer[X /* <: Term */](value: js.Iterable[GraphPointer[X, D]]): MultiPointer[X, D] = js.native
-    @JSName("node")
-    def node_X_Term_MultiPointer[X /* <: Term */](value: js.Iterable[GraphPointer[X, D]], options: NodeOptions): MultiPointer[X, D] = js.native
+    def node_X_MultiPointer[X /* <: Term */](value: js.Iterable[GraphPointer[X, D]], options: NodeOptions): MultiPointer[X, D] = js.native
     
     def out(): MultiPointer[Term, D] = js.native
     def out(predicates: Unit, options: OutOptions): MultiPointer[Literal, D] = js.native

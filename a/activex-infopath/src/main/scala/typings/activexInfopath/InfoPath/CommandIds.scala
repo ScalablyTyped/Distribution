@@ -1,368 +1,368 @@
 package typings.activexInfopath.InfoPath
 
-import typings.activexInfopath.activexInfopathNumbers.`0`
-import typings.activexInfopath.activexInfopathNumbers.`100`
-import typings.activexInfopath.activexInfopathNumbers.`101`
-import typings.activexInfopath.activexInfopathNumbers.`102`
-import typings.activexInfopath.activexInfopathNumbers.`103`
-import typings.activexInfopath.activexInfopathNumbers.`104`
-import typings.activexInfopath.activexInfopathNumbers.`105`
-import typings.activexInfopath.activexInfopathNumbers.`106`
-import typings.activexInfopath.activexInfopathNumbers.`107`
-import typings.activexInfopath.activexInfopathNumbers.`108`
-import typings.activexInfopath.activexInfopathNumbers.`109`
-import typings.activexInfopath.activexInfopathNumbers.`10`
-import typings.activexInfopath.activexInfopathNumbers.`110`
-import typings.activexInfopath.activexInfopathNumbers.`111`
-import typings.activexInfopath.activexInfopathNumbers.`112`
-import typings.activexInfopath.activexInfopathNumbers.`113`
-import typings.activexInfopath.activexInfopathNumbers.`114`
-import typings.activexInfopath.activexInfopathNumbers.`115`
-import typings.activexInfopath.activexInfopathNumbers.`116`
-import typings.activexInfopath.activexInfopathNumbers.`117`
-import typings.activexInfopath.activexInfopathNumbers.`118`
-import typings.activexInfopath.activexInfopathNumbers.`119`
-import typings.activexInfopath.activexInfopathNumbers.`11`
-import typings.activexInfopath.activexInfopathNumbers.`120`
-import typings.activexInfopath.activexInfopathNumbers.`121`
-import typings.activexInfopath.activexInfopathNumbers.`122`
-import typings.activexInfopath.activexInfopathNumbers.`123`
-import typings.activexInfopath.activexInfopathNumbers.`124`
-import typings.activexInfopath.activexInfopathNumbers.`125`
-import typings.activexInfopath.activexInfopathNumbers.`126`
-import typings.activexInfopath.activexInfopathNumbers.`127`
-import typings.activexInfopath.activexInfopathNumbers.`128`
-import typings.activexInfopath.activexInfopathNumbers.`129`
-import typings.activexInfopath.activexInfopathNumbers.`12`
-import typings.activexInfopath.activexInfopathNumbers.`130`
-import typings.activexInfopath.activexInfopathNumbers.`131`
-import typings.activexInfopath.activexInfopathNumbers.`132`
-import typings.activexInfopath.activexInfopathNumbers.`133`
-import typings.activexInfopath.activexInfopathNumbers.`134`
-import typings.activexInfopath.activexInfopathNumbers.`135`
-import typings.activexInfopath.activexInfopathNumbers.`136`
-import typings.activexInfopath.activexInfopathNumbers.`137`
-import typings.activexInfopath.activexInfopathNumbers.`138`
-import typings.activexInfopath.activexInfopathNumbers.`139`
-import typings.activexInfopath.activexInfopathNumbers.`13`
-import typings.activexInfopath.activexInfopathNumbers.`140`
-import typings.activexInfopath.activexInfopathNumbers.`141`
-import typings.activexInfopath.activexInfopathNumbers.`142`
-import typings.activexInfopath.activexInfopathNumbers.`143`
-import typings.activexInfopath.activexInfopathNumbers.`144`
-import typings.activexInfopath.activexInfopathNumbers.`145`
-import typings.activexInfopath.activexInfopathNumbers.`146`
-import typings.activexInfopath.activexInfopathNumbers.`147`
-import typings.activexInfopath.activexInfopathNumbers.`148`
-import typings.activexInfopath.activexInfopathNumbers.`149`
-import typings.activexInfopath.activexInfopathNumbers.`14`
-import typings.activexInfopath.activexInfopathNumbers.`150`
-import typings.activexInfopath.activexInfopathNumbers.`151`
-import typings.activexInfopath.activexInfopathNumbers.`152`
-import typings.activexInfopath.activexInfopathNumbers.`153`
-import typings.activexInfopath.activexInfopathNumbers.`154`
-import typings.activexInfopath.activexInfopathNumbers.`155`
-import typings.activexInfopath.activexInfopathNumbers.`156`
-import typings.activexInfopath.activexInfopathNumbers.`157`
-import typings.activexInfopath.activexInfopathNumbers.`158`
-import typings.activexInfopath.activexInfopathNumbers.`159`
-import typings.activexInfopath.activexInfopathNumbers.`15`
-import typings.activexInfopath.activexInfopathNumbers.`160`
-import typings.activexInfopath.activexInfopathNumbers.`161`
-import typings.activexInfopath.activexInfopathNumbers.`162`
-import typings.activexInfopath.activexInfopathNumbers.`163`
-import typings.activexInfopath.activexInfopathNumbers.`164`
-import typings.activexInfopath.activexInfopathNumbers.`165`
-import typings.activexInfopath.activexInfopathNumbers.`166`
-import typings.activexInfopath.activexInfopathNumbers.`167`
-import typings.activexInfopath.activexInfopathNumbers.`168`
-import typings.activexInfopath.activexInfopathNumbers.`169`
-import typings.activexInfopath.activexInfopathNumbers.`16`
-import typings.activexInfopath.activexInfopathNumbers.`170`
-import typings.activexInfopath.activexInfopathNumbers.`171`
-import typings.activexInfopath.activexInfopathNumbers.`172`
-import typings.activexInfopath.activexInfopathNumbers.`173`
-import typings.activexInfopath.activexInfopathNumbers.`174`
-import typings.activexInfopath.activexInfopathNumbers.`175`
-import typings.activexInfopath.activexInfopathNumbers.`176`
-import typings.activexInfopath.activexInfopathNumbers.`177`
-import typings.activexInfopath.activexInfopathNumbers.`178`
-import typings.activexInfopath.activexInfopathNumbers.`17`
-import typings.activexInfopath.activexInfopathNumbers.`18`
-import typings.activexInfopath.activexInfopathNumbers.`19`
-import typings.activexInfopath.activexInfopathNumbers.`1`
-import typings.activexInfopath.activexInfopathNumbers.`20`
-import typings.activexInfopath.activexInfopathNumbers.`21`
-import typings.activexInfopath.activexInfopathNumbers.`22`
-import typings.activexInfopath.activexInfopathNumbers.`23`
-import typings.activexInfopath.activexInfopathNumbers.`24`
-import typings.activexInfopath.activexInfopathNumbers.`25`
-import typings.activexInfopath.activexInfopathNumbers.`26`
-import typings.activexInfopath.activexInfopathNumbers.`27`
-import typings.activexInfopath.activexInfopathNumbers.`28`
-import typings.activexInfopath.activexInfopathNumbers.`29`
-import typings.activexInfopath.activexInfopathNumbers.`2`
-import typings.activexInfopath.activexInfopathNumbers.`30`
-import typings.activexInfopath.activexInfopathNumbers.`31`
-import typings.activexInfopath.activexInfopathNumbers.`32`
-import typings.activexInfopath.activexInfopathNumbers.`33`
-import typings.activexInfopath.activexInfopathNumbers.`34`
-import typings.activexInfopath.activexInfopathNumbers.`35`
-import typings.activexInfopath.activexInfopathNumbers.`36`
-import typings.activexInfopath.activexInfopathNumbers.`37`
-import typings.activexInfopath.activexInfopathNumbers.`38`
-import typings.activexInfopath.activexInfopathNumbers.`39`
-import typings.activexInfopath.activexInfopathNumbers.`3`
-import typings.activexInfopath.activexInfopathNumbers.`40`
-import typings.activexInfopath.activexInfopathNumbers.`41`
-import typings.activexInfopath.activexInfopathNumbers.`42`
-import typings.activexInfopath.activexInfopathNumbers.`43`
-import typings.activexInfopath.activexInfopathNumbers.`44`
-import typings.activexInfopath.activexInfopathNumbers.`45`
-import typings.activexInfopath.activexInfopathNumbers.`46`
-import typings.activexInfopath.activexInfopathNumbers.`47`
-import typings.activexInfopath.activexInfopathNumbers.`48`
-import typings.activexInfopath.activexInfopathNumbers.`49`
-import typings.activexInfopath.activexInfopathNumbers.`4`
-import typings.activexInfopath.activexInfopathNumbers.`50`
-import typings.activexInfopath.activexInfopathNumbers.`51`
-import typings.activexInfopath.activexInfopathNumbers.`52`
-import typings.activexInfopath.activexInfopathNumbers.`53`
-import typings.activexInfopath.activexInfopathNumbers.`54`
-import typings.activexInfopath.activexInfopathNumbers.`55`
-import typings.activexInfopath.activexInfopathNumbers.`56`
-import typings.activexInfopath.activexInfopathNumbers.`57`
-import typings.activexInfopath.activexInfopathNumbers.`58`
-import typings.activexInfopath.activexInfopathNumbers.`59`
-import typings.activexInfopath.activexInfopathNumbers.`5`
-import typings.activexInfopath.activexInfopathNumbers.`60`
-import typings.activexInfopath.activexInfopathNumbers.`61`
-import typings.activexInfopath.activexInfopathNumbers.`62`
-import typings.activexInfopath.activexInfopathNumbers.`63`
-import typings.activexInfopath.activexInfopathNumbers.`64`
-import typings.activexInfopath.activexInfopathNumbers.`65`
-import typings.activexInfopath.activexInfopathNumbers.`66`
-import typings.activexInfopath.activexInfopathNumbers.`67`
-import typings.activexInfopath.activexInfopathNumbers.`68`
-import typings.activexInfopath.activexInfopathNumbers.`69`
-import typings.activexInfopath.activexInfopathNumbers.`6`
-import typings.activexInfopath.activexInfopathNumbers.`70`
-import typings.activexInfopath.activexInfopathNumbers.`71`
-import typings.activexInfopath.activexInfopathNumbers.`72`
-import typings.activexInfopath.activexInfopathNumbers.`73`
-import typings.activexInfopath.activexInfopathNumbers.`74`
-import typings.activexInfopath.activexInfopathNumbers.`75`
-import typings.activexInfopath.activexInfopathNumbers.`76`
-import typings.activexInfopath.activexInfopathNumbers.`77`
-import typings.activexInfopath.activexInfopathNumbers.`78`
-import typings.activexInfopath.activexInfopathNumbers.`79`
-import typings.activexInfopath.activexInfopathNumbers.`7`
-import typings.activexInfopath.activexInfopathNumbers.`80`
-import typings.activexInfopath.activexInfopathNumbers.`81`
-import typings.activexInfopath.activexInfopathNumbers.`82`
-import typings.activexInfopath.activexInfopathNumbers.`83`
-import typings.activexInfopath.activexInfopathNumbers.`84`
-import typings.activexInfopath.activexInfopathNumbers.`85`
-import typings.activexInfopath.activexInfopathNumbers.`86`
-import typings.activexInfopath.activexInfopathNumbers.`87`
-import typings.activexInfopath.activexInfopathNumbers.`88`
-import typings.activexInfopath.activexInfopathNumbers.`89`
-import typings.activexInfopath.activexInfopathNumbers.`8`
-import typings.activexInfopath.activexInfopathNumbers.`90`
-import typings.activexInfopath.activexInfopathNumbers.`91`
-import typings.activexInfopath.activexInfopathNumbers.`92`
-import typings.activexInfopath.activexInfopathNumbers.`93`
-import typings.activexInfopath.activexInfopathNumbers.`94`
-import typings.activexInfopath.activexInfopathNumbers.`95`
-import typings.activexInfopath.activexInfopathNumbers.`96`
-import typings.activexInfopath.activexInfopathNumbers.`97`
-import typings.activexInfopath.activexInfopathNumbers.`98`
-import typings.activexInfopath.activexInfopathNumbers.`99`
-import typings.activexInfopath.activexInfopathNumbers.`9`
+import typings.activexInfopath.activexInfopathInts.`0`
+import typings.activexInfopath.activexInfopathInts.`100`
+import typings.activexInfopath.activexInfopathInts.`101`
+import typings.activexInfopath.activexInfopathInts.`102`
+import typings.activexInfopath.activexInfopathInts.`103`
+import typings.activexInfopath.activexInfopathInts.`104`
+import typings.activexInfopath.activexInfopathInts.`105`
+import typings.activexInfopath.activexInfopathInts.`106`
+import typings.activexInfopath.activexInfopathInts.`107`
+import typings.activexInfopath.activexInfopathInts.`108`
+import typings.activexInfopath.activexInfopathInts.`109`
+import typings.activexInfopath.activexInfopathInts.`10`
+import typings.activexInfopath.activexInfopathInts.`110`
+import typings.activexInfopath.activexInfopathInts.`111`
+import typings.activexInfopath.activexInfopathInts.`112`
+import typings.activexInfopath.activexInfopathInts.`113`
+import typings.activexInfopath.activexInfopathInts.`114`
+import typings.activexInfopath.activexInfopathInts.`115`
+import typings.activexInfopath.activexInfopathInts.`116`
+import typings.activexInfopath.activexInfopathInts.`117`
+import typings.activexInfopath.activexInfopathInts.`118`
+import typings.activexInfopath.activexInfopathInts.`119`
+import typings.activexInfopath.activexInfopathInts.`11`
+import typings.activexInfopath.activexInfopathInts.`120`
+import typings.activexInfopath.activexInfopathInts.`121`
+import typings.activexInfopath.activexInfopathInts.`122`
+import typings.activexInfopath.activexInfopathInts.`123`
+import typings.activexInfopath.activexInfopathInts.`124`
+import typings.activexInfopath.activexInfopathInts.`125`
+import typings.activexInfopath.activexInfopathInts.`126`
+import typings.activexInfopath.activexInfopathInts.`127`
+import typings.activexInfopath.activexInfopathInts.`128`
+import typings.activexInfopath.activexInfopathInts.`129`
+import typings.activexInfopath.activexInfopathInts.`12`
+import typings.activexInfopath.activexInfopathInts.`130`
+import typings.activexInfopath.activexInfopathInts.`131`
+import typings.activexInfopath.activexInfopathInts.`132`
+import typings.activexInfopath.activexInfopathInts.`133`
+import typings.activexInfopath.activexInfopathInts.`134`
+import typings.activexInfopath.activexInfopathInts.`135`
+import typings.activexInfopath.activexInfopathInts.`136`
+import typings.activexInfopath.activexInfopathInts.`137`
+import typings.activexInfopath.activexInfopathInts.`138`
+import typings.activexInfopath.activexInfopathInts.`139`
+import typings.activexInfopath.activexInfopathInts.`13`
+import typings.activexInfopath.activexInfopathInts.`140`
+import typings.activexInfopath.activexInfopathInts.`141`
+import typings.activexInfopath.activexInfopathInts.`142`
+import typings.activexInfopath.activexInfopathInts.`143`
+import typings.activexInfopath.activexInfopathInts.`144`
+import typings.activexInfopath.activexInfopathInts.`145`
+import typings.activexInfopath.activexInfopathInts.`146`
+import typings.activexInfopath.activexInfopathInts.`147`
+import typings.activexInfopath.activexInfopathInts.`148`
+import typings.activexInfopath.activexInfopathInts.`149`
+import typings.activexInfopath.activexInfopathInts.`14`
+import typings.activexInfopath.activexInfopathInts.`150`
+import typings.activexInfopath.activexInfopathInts.`151`
+import typings.activexInfopath.activexInfopathInts.`152`
+import typings.activexInfopath.activexInfopathInts.`153`
+import typings.activexInfopath.activexInfopathInts.`154`
+import typings.activexInfopath.activexInfopathInts.`155`
+import typings.activexInfopath.activexInfopathInts.`156`
+import typings.activexInfopath.activexInfopathInts.`157`
+import typings.activexInfopath.activexInfopathInts.`158`
+import typings.activexInfopath.activexInfopathInts.`159`
+import typings.activexInfopath.activexInfopathInts.`15`
+import typings.activexInfopath.activexInfopathInts.`160`
+import typings.activexInfopath.activexInfopathInts.`161`
+import typings.activexInfopath.activexInfopathInts.`162`
+import typings.activexInfopath.activexInfopathInts.`163`
+import typings.activexInfopath.activexInfopathInts.`164`
+import typings.activexInfopath.activexInfopathInts.`165`
+import typings.activexInfopath.activexInfopathInts.`166`
+import typings.activexInfopath.activexInfopathInts.`167`
+import typings.activexInfopath.activexInfopathInts.`168`
+import typings.activexInfopath.activexInfopathInts.`169`
+import typings.activexInfopath.activexInfopathInts.`16`
+import typings.activexInfopath.activexInfopathInts.`170`
+import typings.activexInfopath.activexInfopathInts.`171`
+import typings.activexInfopath.activexInfopathInts.`172`
+import typings.activexInfopath.activexInfopathInts.`173`
+import typings.activexInfopath.activexInfopathInts.`174`
+import typings.activexInfopath.activexInfopathInts.`175`
+import typings.activexInfopath.activexInfopathInts.`176`
+import typings.activexInfopath.activexInfopathInts.`177`
+import typings.activexInfopath.activexInfopathInts.`178`
+import typings.activexInfopath.activexInfopathInts.`17`
+import typings.activexInfopath.activexInfopathInts.`18`
+import typings.activexInfopath.activexInfopathInts.`19`
+import typings.activexInfopath.activexInfopathInts.`1`
+import typings.activexInfopath.activexInfopathInts.`20`
+import typings.activexInfopath.activexInfopathInts.`21`
+import typings.activexInfopath.activexInfopathInts.`22`
+import typings.activexInfopath.activexInfopathInts.`23`
+import typings.activexInfopath.activexInfopathInts.`24`
+import typings.activexInfopath.activexInfopathInts.`25`
+import typings.activexInfopath.activexInfopathInts.`26`
+import typings.activexInfopath.activexInfopathInts.`27`
+import typings.activexInfopath.activexInfopathInts.`28`
+import typings.activexInfopath.activexInfopathInts.`29`
+import typings.activexInfopath.activexInfopathInts.`2`
+import typings.activexInfopath.activexInfopathInts.`30`
+import typings.activexInfopath.activexInfopathInts.`31`
+import typings.activexInfopath.activexInfopathInts.`32`
+import typings.activexInfopath.activexInfopathInts.`33`
+import typings.activexInfopath.activexInfopathInts.`34`
+import typings.activexInfopath.activexInfopathInts.`35`
+import typings.activexInfopath.activexInfopathInts.`36`
+import typings.activexInfopath.activexInfopathInts.`37`
+import typings.activexInfopath.activexInfopathInts.`38`
+import typings.activexInfopath.activexInfopathInts.`39`
+import typings.activexInfopath.activexInfopathInts.`3`
+import typings.activexInfopath.activexInfopathInts.`40`
+import typings.activexInfopath.activexInfopathInts.`41`
+import typings.activexInfopath.activexInfopathInts.`42`
+import typings.activexInfopath.activexInfopathInts.`43`
+import typings.activexInfopath.activexInfopathInts.`44`
+import typings.activexInfopath.activexInfopathInts.`45`
+import typings.activexInfopath.activexInfopathInts.`46`
+import typings.activexInfopath.activexInfopathInts.`47`
+import typings.activexInfopath.activexInfopathInts.`48`
+import typings.activexInfopath.activexInfopathInts.`49`
+import typings.activexInfopath.activexInfopathInts.`4`
+import typings.activexInfopath.activexInfopathInts.`50`
+import typings.activexInfopath.activexInfopathInts.`51`
+import typings.activexInfopath.activexInfopathInts.`52`
+import typings.activexInfopath.activexInfopathInts.`53`
+import typings.activexInfopath.activexInfopathInts.`54`
+import typings.activexInfopath.activexInfopathInts.`55`
+import typings.activexInfopath.activexInfopathInts.`56`
+import typings.activexInfopath.activexInfopathInts.`57`
+import typings.activexInfopath.activexInfopathInts.`58`
+import typings.activexInfopath.activexInfopathInts.`59`
+import typings.activexInfopath.activexInfopathInts.`5`
+import typings.activexInfopath.activexInfopathInts.`60`
+import typings.activexInfopath.activexInfopathInts.`61`
+import typings.activexInfopath.activexInfopathInts.`62`
+import typings.activexInfopath.activexInfopathInts.`63`
+import typings.activexInfopath.activexInfopathInts.`64`
+import typings.activexInfopath.activexInfopathInts.`65`
+import typings.activexInfopath.activexInfopathInts.`66`
+import typings.activexInfopath.activexInfopathInts.`67`
+import typings.activexInfopath.activexInfopathInts.`68`
+import typings.activexInfopath.activexInfopathInts.`69`
+import typings.activexInfopath.activexInfopathInts.`6`
+import typings.activexInfopath.activexInfopathInts.`70`
+import typings.activexInfopath.activexInfopathInts.`71`
+import typings.activexInfopath.activexInfopathInts.`72`
+import typings.activexInfopath.activexInfopathInts.`73`
+import typings.activexInfopath.activexInfopathInts.`74`
+import typings.activexInfopath.activexInfopathInts.`75`
+import typings.activexInfopath.activexInfopathInts.`76`
+import typings.activexInfopath.activexInfopathInts.`77`
+import typings.activexInfopath.activexInfopathInts.`78`
+import typings.activexInfopath.activexInfopathInts.`79`
+import typings.activexInfopath.activexInfopathInts.`7`
+import typings.activexInfopath.activexInfopathInts.`80`
+import typings.activexInfopath.activexInfopathInts.`81`
+import typings.activexInfopath.activexInfopathInts.`82`
+import typings.activexInfopath.activexInfopathInts.`83`
+import typings.activexInfopath.activexInfopathInts.`84`
+import typings.activexInfopath.activexInfopathInts.`85`
+import typings.activexInfopath.activexInfopathInts.`86`
+import typings.activexInfopath.activexInfopathInts.`87`
+import typings.activexInfopath.activexInfopathInts.`88`
+import typings.activexInfopath.activexInfopathInts.`89`
+import typings.activexInfopath.activexInfopathInts.`8`
+import typings.activexInfopath.activexInfopathInts.`90`
+import typings.activexInfopath.activexInfopathInts.`91`
+import typings.activexInfopath.activexInfopathInts.`92`
+import typings.activexInfopath.activexInfopathInts.`93`
+import typings.activexInfopath.activexInfopathInts.`94`
+import typings.activexInfopath.activexInfopathInts.`95`
+import typings.activexInfopath.activexInfopathInts.`96`
+import typings.activexInfopath.activexInfopathInts.`97`
+import typings.activexInfopath.activexInfopathInts.`98`
+import typings.activexInfopath.activexInfopathInts.`99`
+import typings.activexInfopath.activexInfopathInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexInfopath.activexInfopathNumbers.`131`
-  - typings.activexInfopath.activexInfopathNumbers.`33`
-  - typings.activexInfopath.activexInfopathNumbers.`35`
-  - typings.activexInfopath.activexInfopathNumbers.`32`
-  - typings.activexInfopath.activexInfopathNumbers.`34`
-  - typings.activexInfopath.activexInfopathNumbers.`85`
-  - typings.activexInfopath.activexInfopathNumbers.`59`
-  - typings.activexInfopath.activexInfopathNumbers.`109`
-  - typings.activexInfopath.activexInfopathNumbers.`58`
-  - typings.activexInfopath.activexInfopathNumbers.`4`
-  - typings.activexInfopath.activexInfopathNumbers.`53`
-  - typings.activexInfopath.activexInfopathNumbers.`134`
-  - typings.activexInfopath.activexInfopathNumbers.`133`
-  - typings.activexInfopath.activexInfopathNumbers.`52`
-  - typings.activexInfopath.activexInfopathNumbers.`117`
-  - typings.activexInfopath.activexInfopathNumbers.`60`
-  - typings.activexInfopath.activexInfopathNumbers.`135`
-  - typings.activexInfopath.activexInfopathNumbers.`68`
-  - typings.activexInfopath.activexInfopathNumbers.`67`
-  - typings.activexInfopath.activexInfopathNumbers.`66`
-  - typings.activexInfopath.activexInfopathNumbers.`50`
-  - typings.activexInfopath.activexInfopathNumbers.`51`
-  - typings.activexInfopath.activexInfopathNumbers.`132`
-  - typings.activexInfopath.activexInfopathNumbers.`119`
-  - typings.activexInfopath.activexInfopathNumbers.`23`
-  - typings.activexInfopath.activexInfopathNumbers.`25`
-  - typings.activexInfopath.activexInfopathNumbers.`24`
-  - typings.activexInfopath.activexInfopathNumbers.`172`
-  - typings.activexInfopath.activexInfopathNumbers.`139`
-  - typings.activexInfopath.activexInfopathNumbers.`98`
-  - typings.activexInfopath.activexInfopathNumbers.`97`
-  - typings.activexInfopath.activexInfopathNumbers.`94`
-  - typings.activexInfopath.activexInfopathNumbers.`171`
-  - typings.activexInfopath.activexInfopathNumbers.`87`
-  - typings.activexInfopath.activexInfopathNumbers.`102`
-  - typings.activexInfopath.activexInfopathNumbers.`101`
-  - typings.activexInfopath.activexInfopathNumbers.`104`
-  - typings.activexInfopath.activexInfopathNumbers.`103`
-  - typings.activexInfopath.activexInfopathNumbers.`159`
-  - typings.activexInfopath.activexInfopathNumbers.`158`
-  - typings.activexInfopath.activexInfopathNumbers.`169`
-  - typings.activexInfopath.activexInfopathNumbers.`167`
-  - typings.activexInfopath.activexInfopathNumbers.`170`
-  - typings.activexInfopath.activexInfopathNumbers.`168`
-  - typings.activexInfopath.activexInfopathNumbers.`89`
-  - typings.activexInfopath.activexInfopathNumbers.`151`
-  - typings.activexInfopath.activexInfopathNumbers.`150`
-  - typings.activexInfopath.activexInfopathNumbers.`152`
-  - typings.activexInfopath.activexInfopathNumbers.`149`
-  - typings.activexInfopath.activexInfopathNumbers.`148`
-  - typings.activexInfopath.activexInfopathNumbers.`142`
-  - typings.activexInfopath.activexInfopathNumbers.`140`
-  - typings.activexInfopath.activexInfopathNumbers.`127`
-  - typings.activexInfopath.activexInfopathNumbers.`124`
-  - typings.activexInfopath.activexInfopathNumbers.`125`
-  - typings.activexInfopath.activexInfopathNumbers.`123`
-  - typings.activexInfopath.activexInfopathNumbers.`126`
-  - typings.activexInfopath.activexInfopathNumbers.`138`
-  - typings.activexInfopath.activexInfopathNumbers.`137`
-  - typings.activexInfopath.activexInfopathNumbers.`9`
-  - typings.activexInfopath.activexInfopathNumbers.`77`
-  - typings.activexInfopath.activexInfopathNumbers.`75`
-  - typings.activexInfopath.activexInfopathNumbers.`107`
-  - typings.activexInfopath.activexInfopathNumbers.`10`
-  - typings.activexInfopath.activexInfopathNumbers.`130`
-  - typings.activexInfopath.activexInfopathNumbers.`129`
-  - typings.activexInfopath.activexInfopathNumbers.`118`
-  - typings.activexInfopath.activexInfopathNumbers.`61`
-  - typings.activexInfopath.activexInfopathNumbers.`22`
-  - typings.activexInfopath.activexInfopathNumbers.`48`
-  - typings.activexInfopath.activexInfopathNumbers.`47`
-  - typings.activexInfopath.activexInfopathNumbers.`49`
-  - typings.activexInfopath.activexInfopathNumbers.`64`
-  - typings.activexInfopath.activexInfopathNumbers.`65`
-  - typings.activexInfopath.activexInfopathNumbers.`78`
-  - typings.activexInfopath.activexInfopathNumbers.`81`
-  - typings.activexInfopath.activexInfopathNumbers.`80`
-  - typings.activexInfopath.activexInfopathNumbers.`21`
-  - typings.activexInfopath.activexInfopathNumbers.`43`
-  - typings.activexInfopath.activexInfopathNumbers.`44`
-  - typings.activexInfopath.activexInfopathNumbers.`42`
-  - typings.activexInfopath.activexInfopathNumbers.`45`
-  - typings.activexInfopath.activexInfopathNumbers.`46`
-  - typings.activexInfopath.activexInfopathNumbers.`13`
-  - typings.activexInfopath.activexInfopathNumbers.`62`
-  - typings.activexInfopath.activexInfopathNumbers.`63`
-  - typings.activexInfopath.activexInfopathNumbers.`128`
-  - typings.activexInfopath.activexInfopathNumbers.`175`
-  - typings.activexInfopath.activexInfopathNumbers.`174`
-  - typings.activexInfopath.activexInfopathNumbers.`73`
-  - typings.activexInfopath.activexInfopathNumbers.`54`
-  - typings.activexInfopath.activexInfopathNumbers.`178`
-  - typings.activexInfopath.activexInfopathNumbers.`176`
-  - typings.activexInfopath.activexInfopathNumbers.`177`
-  - typings.activexInfopath.activexInfopathNumbers.`57`
-  - typings.activexInfopath.activexInfopathNumbers.`160`
-  - typings.activexInfopath.activexInfopathNumbers.`95`
-  - typings.activexInfopath.activexInfopathNumbers.`96`
-  - typings.activexInfopath.activexInfopathNumbers.`5`
-  - typings.activexInfopath.activexInfopathNumbers.`6`
-  - typings.activexInfopath.activexInfopathNumbers.`55`
-  - typings.activexInfopath.activexInfopathNumbers.`72`
-  - typings.activexInfopath.activexInfopathNumbers.`71`
-  - typings.activexInfopath.activexInfopathNumbers.`82`
-  - typings.activexInfopath.activexInfopathNumbers.`146`
-  - typings.activexInfopath.activexInfopathNumbers.`144`
-  - typings.activexInfopath.activexInfopathNumbers.`147`
-  - typings.activexInfopath.activexInfopathNumbers.`145`
-  - typings.activexInfopath.activexInfopathNumbers.`70`
-  - typings.activexInfopath.activexInfopathNumbers.`69`
-  - typings.activexInfopath.activexInfopathNumbers.`40`
-  - typings.activexInfopath.activexInfopathNumbers.`83`
-  - typings.activexInfopath.activexInfopathNumbers.`84`
-  - typings.activexInfopath.activexInfopathNumbers.`41`
-  - typings.activexInfopath.activexInfopathNumbers.`91`
-  - typings.activexInfopath.activexInfopathNumbers.`93`
-  - typings.activexInfopath.activexInfopathNumbers.`92`
-  - typings.activexInfopath.activexInfopathNumbers.`90`
-  - typings.activexInfopath.activexInfopathNumbers.`86`
-  - typings.activexInfopath.activexInfopathNumbers.`26`
-  - typings.activexInfopath.activexInfopathNumbers.`110`
-  - typings.activexInfopath.activexInfopathNumbers.`111`
-  - typings.activexInfopath.activexInfopathNumbers.`112`
-  - typings.activexInfopath.activexInfopathNumbers.`113`
-  - typings.activexInfopath.activexInfopathNumbers.`114`
-  - typings.activexInfopath.activexInfopathNumbers.`115`
-  - typings.activexInfopath.activexInfopathNumbers.`27`
-  - typings.activexInfopath.activexInfopathNumbers.`116`
-  - typings.activexInfopath.activexInfopathNumbers.`31`
-  - typings.activexInfopath.activexInfopathNumbers.`30`
-  - typings.activexInfopath.activexInfopathNumbers.`29`
-  - typings.activexInfopath.activexInfopathNumbers.`28`
-  - typings.activexInfopath.activexInfopathNumbers.`166`
-  - typings.activexInfopath.activexInfopathNumbers.`164`
-  - typings.activexInfopath.activexInfopathNumbers.`161`
-  - typings.activexInfopath.activexInfopathNumbers.`162`
-  - typings.activexInfopath.activexInfopathNumbers.`163`
-  - typings.activexInfopath.activexInfopathNumbers.`165`
-  - typings.activexInfopath.activexInfopathNumbers.`88`
-  - typings.activexInfopath.activexInfopathNumbers.`156`
-  - typings.activexInfopath.activexInfopathNumbers.`154`
-  - typings.activexInfopath.activexInfopathNumbers.`155`
-  - typings.activexInfopath.activexInfopathNumbers.`153`
-  - typings.activexInfopath.activexInfopathNumbers.`143`
-  - typings.activexInfopath.activexInfopathNumbers.`141`
-  - typings.activexInfopath.activexInfopathNumbers.`122`
-  - typings.activexInfopath.activexInfopathNumbers.`106`
-  - typings.activexInfopath.activexInfopathNumbers.`121`
-  - typings.activexInfopath.activexInfopathNumbers.`105`
-  - typings.activexInfopath.activexInfopathNumbers.`120`
-  - typings.activexInfopath.activexInfopathNumbers.`39`
-  - typings.activexInfopath.activexInfopathNumbers.`136`
-  - typings.activexInfopath.activexInfopathNumbers.`76`
-  - typings.activexInfopath.activexInfopathNumbers.`74`
-  - typings.activexInfopath.activexInfopathNumbers.`36`
-  - typings.activexInfopath.activexInfopathNumbers.`37`
-  - typings.activexInfopath.activexInfopathNumbers.`38`
-  - typings.activexInfopath.activexInfopathNumbers.`18`
-  - typings.activexInfopath.activexInfopathNumbers.`11`
-  - typings.activexInfopath.activexInfopathNumbers.`108`
-  - typings.activexInfopath.activexInfopathNumbers.`20`
-  - typings.activexInfopath.activexInfopathNumbers.`7`
-  - typings.activexInfopath.activexInfopathNumbers.`173`
-  - typings.activexInfopath.activexInfopathNumbers.`2`
-  - typings.activexInfopath.activexInfopathNumbers.`17`
-  - typings.activexInfopath.activexInfopathNumbers.`1`
-  - typings.activexInfopath.activexInfopathNumbers.`19`
-  - typings.activexInfopath.activexInfopathNumbers.`79`
-  - typings.activexInfopath.activexInfopathNumbers.`14`
-  - typings.activexInfopath.activexInfopathNumbers.`0`
-  - typings.activexInfopath.activexInfopathNumbers.`12`
-  - typings.activexInfopath.activexInfopathNumbers.`99`
-  - typings.activexInfopath.activexInfopathNumbers.`100`
-  - typings.activexInfopath.activexInfopathNumbers.`15`
-  - typings.activexInfopath.activexInfopathNumbers.`16`
-  - typings.activexInfopath.activexInfopathNumbers.`157`
-  - typings.activexInfopath.activexInfopathNumbers.`8`
-  - typings.activexInfopath.activexInfopathNumbers.`56`
-  - typings.activexInfopath.activexInfopathNumbers.`3`
+  - typings.activexInfopath.activexInfopathInts.`131`
+  - typings.activexInfopath.activexInfopathInts.`33`
+  - typings.activexInfopath.activexInfopathInts.`35`
+  - typings.activexInfopath.activexInfopathInts.`32`
+  - typings.activexInfopath.activexInfopathInts.`34`
+  - typings.activexInfopath.activexInfopathInts.`85`
+  - typings.activexInfopath.activexInfopathInts.`59`
+  - typings.activexInfopath.activexInfopathInts.`109`
+  - typings.activexInfopath.activexInfopathInts.`58`
+  - typings.activexInfopath.activexInfopathInts.`4`
+  - typings.activexInfopath.activexInfopathInts.`53`
+  - typings.activexInfopath.activexInfopathInts.`134`
+  - typings.activexInfopath.activexInfopathInts.`133`
+  - typings.activexInfopath.activexInfopathInts.`52`
+  - typings.activexInfopath.activexInfopathInts.`117`
+  - typings.activexInfopath.activexInfopathInts.`60`
+  - typings.activexInfopath.activexInfopathInts.`135`
+  - typings.activexInfopath.activexInfopathInts.`68`
+  - typings.activexInfopath.activexInfopathInts.`67`
+  - typings.activexInfopath.activexInfopathInts.`66`
+  - typings.activexInfopath.activexInfopathInts.`50`
+  - typings.activexInfopath.activexInfopathInts.`51`
+  - typings.activexInfopath.activexInfopathInts.`132`
+  - typings.activexInfopath.activexInfopathInts.`119`
+  - typings.activexInfopath.activexInfopathInts.`23`
+  - typings.activexInfopath.activexInfopathInts.`25`
+  - typings.activexInfopath.activexInfopathInts.`24`
+  - typings.activexInfopath.activexInfopathInts.`172`
+  - typings.activexInfopath.activexInfopathInts.`139`
+  - typings.activexInfopath.activexInfopathInts.`98`
+  - typings.activexInfopath.activexInfopathInts.`97`
+  - typings.activexInfopath.activexInfopathInts.`94`
+  - typings.activexInfopath.activexInfopathInts.`171`
+  - typings.activexInfopath.activexInfopathInts.`87`
+  - typings.activexInfopath.activexInfopathInts.`102`
+  - typings.activexInfopath.activexInfopathInts.`101`
+  - typings.activexInfopath.activexInfopathInts.`104`
+  - typings.activexInfopath.activexInfopathInts.`103`
+  - typings.activexInfopath.activexInfopathInts.`159`
+  - typings.activexInfopath.activexInfopathInts.`158`
+  - typings.activexInfopath.activexInfopathInts.`169`
+  - typings.activexInfopath.activexInfopathInts.`167`
+  - typings.activexInfopath.activexInfopathInts.`170`
+  - typings.activexInfopath.activexInfopathInts.`168`
+  - typings.activexInfopath.activexInfopathInts.`89`
+  - typings.activexInfopath.activexInfopathInts.`151`
+  - typings.activexInfopath.activexInfopathInts.`150`
+  - typings.activexInfopath.activexInfopathInts.`152`
+  - typings.activexInfopath.activexInfopathInts.`149`
+  - typings.activexInfopath.activexInfopathInts.`148`
+  - typings.activexInfopath.activexInfopathInts.`142`
+  - typings.activexInfopath.activexInfopathInts.`140`
+  - typings.activexInfopath.activexInfopathInts.`127`
+  - typings.activexInfopath.activexInfopathInts.`124`
+  - typings.activexInfopath.activexInfopathInts.`125`
+  - typings.activexInfopath.activexInfopathInts.`123`
+  - typings.activexInfopath.activexInfopathInts.`126`
+  - typings.activexInfopath.activexInfopathInts.`138`
+  - typings.activexInfopath.activexInfopathInts.`137`
+  - typings.activexInfopath.activexInfopathInts.`9`
+  - typings.activexInfopath.activexInfopathInts.`77`
+  - typings.activexInfopath.activexInfopathInts.`75`
+  - typings.activexInfopath.activexInfopathInts.`107`
+  - typings.activexInfopath.activexInfopathInts.`10`
+  - typings.activexInfopath.activexInfopathInts.`130`
+  - typings.activexInfopath.activexInfopathInts.`129`
+  - typings.activexInfopath.activexInfopathInts.`118`
+  - typings.activexInfopath.activexInfopathInts.`61`
+  - typings.activexInfopath.activexInfopathInts.`22`
+  - typings.activexInfopath.activexInfopathInts.`48`
+  - typings.activexInfopath.activexInfopathInts.`47`
+  - typings.activexInfopath.activexInfopathInts.`49`
+  - typings.activexInfopath.activexInfopathInts.`64`
+  - typings.activexInfopath.activexInfopathInts.`65`
+  - typings.activexInfopath.activexInfopathInts.`78`
+  - typings.activexInfopath.activexInfopathInts.`81`
+  - typings.activexInfopath.activexInfopathInts.`80`
+  - typings.activexInfopath.activexInfopathInts.`21`
+  - typings.activexInfopath.activexInfopathInts.`43`
+  - typings.activexInfopath.activexInfopathInts.`44`
+  - typings.activexInfopath.activexInfopathInts.`42`
+  - typings.activexInfopath.activexInfopathInts.`45`
+  - typings.activexInfopath.activexInfopathInts.`46`
+  - typings.activexInfopath.activexInfopathInts.`13`
+  - typings.activexInfopath.activexInfopathInts.`62`
+  - typings.activexInfopath.activexInfopathInts.`63`
+  - typings.activexInfopath.activexInfopathInts.`128`
+  - typings.activexInfopath.activexInfopathInts.`175`
+  - typings.activexInfopath.activexInfopathInts.`174`
+  - typings.activexInfopath.activexInfopathInts.`73`
+  - typings.activexInfopath.activexInfopathInts.`54`
+  - typings.activexInfopath.activexInfopathInts.`178`
+  - typings.activexInfopath.activexInfopathInts.`176`
+  - typings.activexInfopath.activexInfopathInts.`177`
+  - typings.activexInfopath.activexInfopathInts.`57`
+  - typings.activexInfopath.activexInfopathInts.`160`
+  - typings.activexInfopath.activexInfopathInts.`95`
+  - typings.activexInfopath.activexInfopathInts.`96`
+  - typings.activexInfopath.activexInfopathInts.`5`
+  - typings.activexInfopath.activexInfopathInts.`6`
+  - typings.activexInfopath.activexInfopathInts.`55`
+  - typings.activexInfopath.activexInfopathInts.`72`
+  - typings.activexInfopath.activexInfopathInts.`71`
+  - typings.activexInfopath.activexInfopathInts.`82`
+  - typings.activexInfopath.activexInfopathInts.`146`
+  - typings.activexInfopath.activexInfopathInts.`144`
+  - typings.activexInfopath.activexInfopathInts.`147`
+  - typings.activexInfopath.activexInfopathInts.`145`
+  - typings.activexInfopath.activexInfopathInts.`70`
+  - typings.activexInfopath.activexInfopathInts.`69`
+  - typings.activexInfopath.activexInfopathInts.`40`
+  - typings.activexInfopath.activexInfopathInts.`83`
+  - typings.activexInfopath.activexInfopathInts.`84`
+  - typings.activexInfopath.activexInfopathInts.`41`
+  - typings.activexInfopath.activexInfopathInts.`91`
+  - typings.activexInfopath.activexInfopathInts.`93`
+  - typings.activexInfopath.activexInfopathInts.`92`
+  - typings.activexInfopath.activexInfopathInts.`90`
+  - typings.activexInfopath.activexInfopathInts.`86`
+  - typings.activexInfopath.activexInfopathInts.`26`
+  - typings.activexInfopath.activexInfopathInts.`110`
+  - typings.activexInfopath.activexInfopathInts.`111`
+  - typings.activexInfopath.activexInfopathInts.`112`
+  - typings.activexInfopath.activexInfopathInts.`113`
+  - typings.activexInfopath.activexInfopathInts.`114`
+  - typings.activexInfopath.activexInfopathInts.`115`
+  - typings.activexInfopath.activexInfopathInts.`27`
+  - typings.activexInfopath.activexInfopathInts.`116`
+  - typings.activexInfopath.activexInfopathInts.`31`
+  - typings.activexInfopath.activexInfopathInts.`30`
+  - typings.activexInfopath.activexInfopathInts.`29`
+  - typings.activexInfopath.activexInfopathInts.`28`
+  - typings.activexInfopath.activexInfopathInts.`166`
+  - typings.activexInfopath.activexInfopathInts.`164`
+  - typings.activexInfopath.activexInfopathInts.`161`
+  - typings.activexInfopath.activexInfopathInts.`162`
+  - typings.activexInfopath.activexInfopathInts.`163`
+  - typings.activexInfopath.activexInfopathInts.`165`
+  - typings.activexInfopath.activexInfopathInts.`88`
+  - typings.activexInfopath.activexInfopathInts.`156`
+  - typings.activexInfopath.activexInfopathInts.`154`
+  - typings.activexInfopath.activexInfopathInts.`155`
+  - typings.activexInfopath.activexInfopathInts.`153`
+  - typings.activexInfopath.activexInfopathInts.`143`
+  - typings.activexInfopath.activexInfopathInts.`141`
+  - typings.activexInfopath.activexInfopathInts.`122`
+  - typings.activexInfopath.activexInfopathInts.`106`
+  - typings.activexInfopath.activexInfopathInts.`121`
+  - typings.activexInfopath.activexInfopathInts.`105`
+  - typings.activexInfopath.activexInfopathInts.`120`
+  - typings.activexInfopath.activexInfopathInts.`39`
+  - typings.activexInfopath.activexInfopathInts.`136`
+  - typings.activexInfopath.activexInfopathInts.`76`
+  - typings.activexInfopath.activexInfopathInts.`74`
+  - typings.activexInfopath.activexInfopathInts.`36`
+  - typings.activexInfopath.activexInfopathInts.`37`
+  - typings.activexInfopath.activexInfopathInts.`38`
+  - typings.activexInfopath.activexInfopathInts.`18`
+  - typings.activexInfopath.activexInfopathInts.`11`
+  - typings.activexInfopath.activexInfopathInts.`108`
+  - typings.activexInfopath.activexInfopathInts.`20`
+  - typings.activexInfopath.activexInfopathInts.`7`
+  - typings.activexInfopath.activexInfopathInts.`173`
+  - typings.activexInfopath.activexInfopathInts.`2`
+  - typings.activexInfopath.activexInfopathInts.`17`
+  - typings.activexInfopath.activexInfopathInts.`1`
+  - typings.activexInfopath.activexInfopathInts.`19`
+  - typings.activexInfopath.activexInfopathInts.`79`
+  - typings.activexInfopath.activexInfopathInts.`14`
+  - typings.activexInfopath.activexInfopathInts.`0`
+  - typings.activexInfopath.activexInfopathInts.`12`
+  - typings.activexInfopath.activexInfopathInts.`99`
+  - typings.activexInfopath.activexInfopathInts.`100`
+  - typings.activexInfopath.activexInfopathInts.`15`
+  - typings.activexInfopath.activexInfopathInts.`16`
+  - typings.activexInfopath.activexInfopathInts.`157`
+  - typings.activexInfopath.activexInfopathInts.`8`
+  - typings.activexInfopath.activexInfopathInts.`56`
+  - typings.activexInfopath.activexInfopathInts.`3`
 */
 trait CommandIds extends StObject
 object CommandIds {

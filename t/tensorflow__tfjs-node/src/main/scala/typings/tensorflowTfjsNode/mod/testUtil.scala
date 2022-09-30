@@ -6,8 +6,8 @@ import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.testUtilMod.DoneFn
-import typings.tensorflowTfjsNode.tensorflowTfjsNodeNumbers.`0.001`
-import typings.tensorflowTfjsNode.tensorflowTfjsNodeNumbers.`0.1`
+import typings.tensorflowTfjsNode.tensorflowTfjsNodeDoubles.`0.001`
+import typings.tensorflowTfjsNode.tensorflowTfjsNodeDoubles.`0.1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

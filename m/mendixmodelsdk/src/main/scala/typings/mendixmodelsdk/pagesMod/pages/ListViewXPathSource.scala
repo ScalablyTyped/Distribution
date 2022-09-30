@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewXPathSource")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ListViewXPathSource")
 @js.native
-class ListViewXPathSource protected () extends XPathSourceBase {
+open class ListViewXPathSource protected () extends XPathSourceBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -29,7 +29,7 @@ class ListViewXPathSource protected () extends XPathSourceBase {
 }
 object ListViewXPathSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewXPathSource")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ListViewXPathSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -72,13 +72,13 @@ object ListViewXPathSource {
   inline def createInWidgetValueUnderDataSource(container: WidgetValue): ListViewXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewXPathSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewXPathSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ListViewXPathSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewXPathSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ListViewXPathSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

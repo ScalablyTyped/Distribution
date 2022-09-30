@@ -1,5 +1,6 @@
 package typings.pLocate
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +12,12 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[ValueType](
-    input: js.Iterable[js.Thenable[ValueType] | ValueType],
-    tester: js.Function1[/* element */ ValueType, js.Thenable[Boolean] | Boolean]
+    input: js.Iterable[PromiseLike[ValueType] | ValueType],
+    tester: js.Function1[/* element */ ValueType, PromiseLike[Boolean] | Boolean]
   ): js.Promise[js.UndefOr[ValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], tester.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ValueType]]]
   inline def default[ValueType](
-    input: js.Iterable[js.Thenable[ValueType] | ValueType],
-    tester: js.Function1[/* element */ ValueType, js.Thenable[Boolean] | Boolean],
+    input: js.Iterable[PromiseLike[ValueType] | ValueType],
+    tester: js.Function1[/* element */ ValueType, PromiseLike[Boolean] | Boolean],
     options: Options
   ): js.Promise[js.UndefOr[ValueType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], tester.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ValueType]]]
   

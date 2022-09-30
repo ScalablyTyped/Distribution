@@ -1,8 +1,8 @@
 package typings.activexLibreoffice.com_.sun.star.sdbc
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1000`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1001`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1002`
+import typings.activexLibreoffice.activexLibreofficeInts.`1000`
+import typings.activexLibreoffice.activexLibreofficeInts.`1001`
+import typings.activexLibreoffice.activexLibreofficeInts.`1002`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FetchDirection {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1000`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1001`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1002`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1000`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1001`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1002`
   */
   trait Constants extends StObject
   object Constants {

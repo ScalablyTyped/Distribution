@@ -26,12 +26,14 @@ trait Auth extends StObject {
     * 
     * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     * 
-    * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from version 2111 (build 14701.20000).
+    * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
     * To retrieve an access token in older builds, use 
     * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) | 
     * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.
     *
+    * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+    * 
     * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
     * @returns Promise to the access token.
     */
@@ -43,7 +45,7 @@ trait Auth extends StObject {
     * Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the
     * {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
     *
-    * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+    * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     *
     * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
     *

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TestReportWithArtifacts
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var deviceContextId: js.UndefOr[String] = js.undefined
   
@@ -54,7 +54,7 @@ object TestReportWithArtifacts {
     
     inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    inline def setScreenshotsVarargs(value: Entity*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
+    inline def setScreenshotsVarargs(value: Entity*): Self = StObject.set(x, "screenshots", js.Array(value*))
     
     inline def setTestResult(value: String): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
     

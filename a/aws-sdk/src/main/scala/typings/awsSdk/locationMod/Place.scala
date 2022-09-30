@@ -62,6 +62,16 @@ trait Place extends StObject {
     * The time zone in which the Place is located. Returned only when using Here as the selected partner.
     */
   var TimeZone: js.UndefOr[typings.awsSdk.locationMod.TimeZone] = js.undefined
+  
+  /**
+    * For addresses with multiple units, the unit identifier. Can include numbers and letters, for example 3B or Unit 123.  Returned only for a place index that uses Esri as a data provider. Is not returned for SearchPlaceIndexForPosition. 
+    */
+  var UnitNumber: js.UndefOr[String] = js.undefined
+  
+  /**
+    * For addresses with a UnitNumber, the type of unit. For example, Apartment.
+    */
+  var UnitType: js.UndefOr[String] = js.undefined
 }
 object Place {
   
@@ -117,5 +127,13 @@ object Place {
     inline def setTimeZone(value: TimeZone): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
     
     inline def setTimeZoneUndefined: Self = StObject.set(x, "TimeZone", js.undefined)
+    
+    inline def setUnitNumber(value: String): Self = StObject.set(x, "UnitNumber", value.asInstanceOf[js.Any])
+    
+    inline def setUnitNumberUndefined: Self = StObject.set(x, "UnitNumber", js.undefined)
+    
+    inline def setUnitType(value: String): Self = StObject.set(x, "UnitType", value.asInstanceOf[js.Any])
+    
+    inline def setUnitTypeUndefined: Self = StObject.set(x, "UnitType", js.undefined)
   }
 }

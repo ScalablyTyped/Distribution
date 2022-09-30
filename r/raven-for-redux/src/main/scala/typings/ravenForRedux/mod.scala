@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(raven: RavenStatic): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  inline def apply(raven: RavenStatic, options: RavenMiddlewareOptions[js.Any]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def apply(raven: RavenStatic): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def apply(raven: RavenStatic, options: RavenMiddlewareOptions[Any]): Middleware[js.Object, Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
   
   @JSImport("raven-for-redux", JSImport.Namespace)
   @js.native
@@ -20,13 +20,13 @@ object mod {
   
   trait RavenMiddlewareOptions[T] extends StObject {
     
-    var actionTransformer: js.UndefOr[js.Function1[/* action */ Action[js.Any], Action[js.Any]]] = js.undefined
+    var actionTransformer: js.UndefOr[js.Function1[/* action */ Action[Any], Action[Any]]] = js.undefined
     
     var breadcrumbCategory: js.UndefOr[String] = js.undefined
     
-    var breadcrumbDataFromAction: js.UndefOr[js.Function1[/* action */ Action[js.Any], js.Any]] = js.undefined
+    var breadcrumbDataFromAction: js.UndefOr[js.Function1[/* action */ Action[Any], Any]] = js.undefined
     
-    var filterBreadcrumbActions: js.UndefOr[js.Function1[/* action */ Action[js.Any], Boolean]] = js.undefined
+    var filterBreadcrumbActions: js.UndefOr[js.Function1[/* action */ Action[Any], Boolean]] = js.undefined
     
     var getUserContext: js.UndefOr[js.Function1[/* state */ T, RavenUserContext]] = js.undefined
     
@@ -41,7 +41,7 @@ object mod {
     
     extension [Self <: RavenMiddlewareOptions[?], T](x: Self & RavenMiddlewareOptions[T]) {
       
-      inline def setActionTransformer(value: /* action */ Action[js.Any] => Action[js.Any]): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
+      inline def setActionTransformer(value: /* action */ Action[Any] => Action[Any]): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       
       inline def setActionTransformerUndefined: Self = StObject.set(x, "actionTransformer", js.undefined)
       
@@ -49,11 +49,11 @@ object mod {
       
       inline def setBreadcrumbCategoryUndefined: Self = StObject.set(x, "breadcrumbCategory", js.undefined)
       
-      inline def setBreadcrumbDataFromAction(value: /* action */ Action[js.Any] => js.Any): Self = StObject.set(x, "breadcrumbDataFromAction", js.Any.fromFunction1(value))
+      inline def setBreadcrumbDataFromAction(value: /* action */ Action[Any] => Any): Self = StObject.set(x, "breadcrumbDataFromAction", js.Any.fromFunction1(value))
       
       inline def setBreadcrumbDataFromActionUndefined: Self = StObject.set(x, "breadcrumbDataFromAction", js.undefined)
       
-      inline def setFilterBreadcrumbActions(value: /* action */ Action[js.Any] => Boolean): Self = StObject.set(x, "filterBreadcrumbActions", js.Any.fromFunction1(value))
+      inline def setFilterBreadcrumbActions(value: /* action */ Action[Any] => Boolean): Self = StObject.set(x, "filterBreadcrumbActions", js.Any.fromFunction1(value))
       
       inline def setFilterBreadcrumbActionsUndefined: Self = StObject.set(x, "filterBreadcrumbActions", js.undefined)
       

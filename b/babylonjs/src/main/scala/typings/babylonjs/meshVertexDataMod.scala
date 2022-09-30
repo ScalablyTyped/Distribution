@@ -41,10 +41,7 @@ object meshVertexDataMod {
     /* private */ val _applyTo: Any = js.native
     
     /**
-      * @param meshOrGeometry
-      * @param updatable
-      * @param isAsync
-      * @hidden
+      * @internal
       */
     def _applyToCoroutine(meshOrGeometry: IGetSetVerticesData, updatable: Boolean, isAsync: Boolean): Coroutine[VertexData] = js.native
     def _applyToCoroutine(meshOrGeometry: IGetSetVerticesData, updatable: Unit, isAsync: Boolean): Coroutine[VertexData] = js.native
@@ -64,12 +61,7 @@ object meshVertexDataMod {
       forceCloneIndices: Boolean
     ): Coroutine[VertexData] = js.native
     /**
-      * @param transform
-      * @param vertexDatas
-      * @param use32BitsIndices
-      * @param isAsync
-      * @param forceCloneIndices
-      * @hidden
+      * @internal
       */
     def _mergeCoroutine(
       transform: Matrix,
@@ -984,14 +976,7 @@ object meshVertexDataMod {
     inline def ImportVertexData(parsedVertexData: Any, geometry: Geometry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportVertexData")(parsedVertexData.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * @param sideOrientation
-      * @param positions
-      * @param indices
-      * @param normals
-      * @param uvs
-      * @param frontUVs
-      * @param backUVs
-      * @hidden
+      * @internal
       */
     inline def _ComputeSides(
       sideOrientation: Double,

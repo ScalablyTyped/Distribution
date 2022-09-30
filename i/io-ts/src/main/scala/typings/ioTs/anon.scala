@@ -3,8 +3,8 @@ package typings.ioTs
 import typings.ioTs.decodeErrorMod.DecodeError
 import typings.ioTs.decodeErrorMod.Kind
 import typings.ioTs.freeSemigroupMod.FreeSemigroup
-import typings.ioTs.ioTsNumbers.`4`
-import typings.ioTs.ioTsNumbers.`5`
+import typings.ioTs.ioTsInts.`4`
+import typings.ioTs.ioTsInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object anon {
   
   trait `0` extends StObject {
     
-    var length: typings.ioTs.ioTsNumbers.`3`
+    var length: typings.ioTs.ioTsInts.`3`
   }
   object `0` {
     
@@ -24,7 +24,7 @@ object anon {
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setLength(value: typings.ioTs.ioTsNumbers.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.ioTs.ioTsInts.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,7 +64,7 @@ object anon {
   
   trait `3` extends StObject {
     
-    var length: typings.ioTs.ioTsNumbers.`1`
+    var length: typings.ioTs.ioTsInts.`1`
   }
   object `3` {
     
@@ -75,7 +75,7 @@ object anon {
     
     extension [Self <: `3`](x: Self) {
       
-      inline def setLength(value: typings.ioTs.ioTsNumbers.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.ioTs.ioTsInts.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,7 +125,7 @@ object anon {
   
   trait Length extends StObject {
     
-    var length: typings.ioTs.ioTsNumbers.`2`
+    var length: typings.ioTs.ioTsInts.`2`
   }
   object Length {
     
@@ -136,7 +136,7 @@ object anon {
     
     extension [Self <: Length](x: Self) {
       
-      inline def setLength(value: typings.ioTs.ioTsNumbers.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.ioTs.ioTsInts.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,9 +1,9 @@
 package typings.canvg
 
 import typings.canvg.anon.Offset
-import typings.canvg.canvgNumbers.`128`
-import typings.canvg.canvgNumbers.`16`
-import typings.canvg.canvgNumbers.`32`
+import typings.canvg.canvgInts.`128`
+import typings.canvg.canvgInts.`16`
+import typings.canvg.canvgInts.`32`
 import typings.canvg.distTypesMod.RenderingContext2D
 import typings.canvg.documentDocumentMod.Document
 import typings.canvg.pathElementMod.PathElement

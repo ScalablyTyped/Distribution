@@ -1,7 +1,7 @@
 
 # Scala.js typings for log-update
 
-Typings are for version 4.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Log by overwriting the previous output in the terminal. Useful for rendering progress bars, animations, etc.
@@ -10,10 +10,10 @@ Log by overwriting the previous output in the terminal. Useful for rendering pro
 | ------------------ | :-------------: |
 | Full name          | log-update |
 | Keywords           | log, logger, logging, cli, terminal, term, console, shell, update, refresh, overwrite, output, stdout, progress, bar, animation |
-| # releases         | 8 |
-| # dependents       | 684 |
-| # downloads        | 267471392 |
-| # stars            | 26 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.6533523E7 |
+| # stars            | 941.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/log-update#readme)

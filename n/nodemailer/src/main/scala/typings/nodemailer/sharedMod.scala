@@ -15,7 +15,7 @@ object sharedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assign(target: js.Object, sources: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def assign(target: js.Object, sources: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   
   inline def callbackPromise(resolve: js.Function1[/* repeated */ Any, Unit], reject: js.Function1[/* err */ js.Error, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("callbackPromise")(resolve.asInstanceOf[js.Any], reject.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   

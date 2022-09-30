@@ -1,6 +1,5 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait Timestamp extends StObject {
     * @return JavaScript `Date` object representing the same point in time as
     * this `Timestamp`, with millisecond precision.
     */
-  def toDate(): Date
+  def toDate(): js.Date
   
   /**
     * Returns the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
@@ -46,7 +45,7 @@ object Timestamp {
     isEqual: Timestamp => Boolean,
     nanoseconds: Double,
     seconds: Double,
-    toDate: () => Date,
+    toDate: () => js.Date,
     toMillis: () => Double
   ): Timestamp = {
     val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual), nanoseconds = nanoseconds.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], toDate = js.Any.fromFunction0(toDate), toMillis = js.Any.fromFunction0(toMillis))
@@ -61,7 +60,7 @@ object Timestamp {
     
     inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    inline def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
+    inline def setToDate(value: () => js.Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
     
     inline def setToMillis(value: () => Double): Self = StObject.set(x, "toMillis", js.Any.fromFunction0(value))
   }

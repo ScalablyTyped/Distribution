@@ -16,7 +16,7 @@ object mapDataRenderMod {
   
   @JSImport("iitc/core/map_data_render", "Render")
   @js.native
-  class Render () extends StObject {
+  open class Render () extends StObject {
     
     /** add the portal to the visible map layer */
     def addPortalToMapLayer(portal: Portal): Unit = js.native
@@ -40,12 +40,7 @@ object mapDataRenderMod {
       * having the guid, at least, allows the portal details to be loaded once it's selected. however,
       * no highlighters, portal level numbers, portal names, useful counts of portals, etc are possible
       */
-    @JSName("createPlaceholderPortalEntity")
-    def createPlaceholderPortalEntity_E(guid: String, latE6: Double, lngE6: Double, team: E): Unit = js.native
-    @JSName("createPlaceholderPortalEntity")
-    def createPlaceholderPortalEntity_N(guid: String, latE6: Double, lngE6: Double, team: N): Unit = js.native
-    @JSName("createPlaceholderPortalEntity")
-    def createPlaceholderPortalEntity_R(guid: String, latE6: Double, lngE6: Double, team: R): Unit = js.native
+    def createPlaceholderPortalEntity(guid: String, latE6: Double, lngE6: Double, team: E | R | N): Unit = js.native
     
     def createPortalEntity(ent: PortalDetails): Unit = js.native
     
@@ -74,7 +69,7 @@ object mapDataRenderMod {
     def processGameEntities(entities: js.Object): Unit = js.native
     
     /** process deleted entity list and entity data */
-    def processTileData(tiledata: js.Any): Unit = js.native
+    def processTileData(tiledata: Any): Unit = js.native
     
     def removePortalFromMapLayer(portal: Portal): Unit = js.native
     

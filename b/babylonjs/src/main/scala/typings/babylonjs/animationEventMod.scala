@@ -30,7 +30,7 @@ object animationEventMod {
     onlyOnce: Boolean
     ) = this()
     
-    /** @hidden */
+    /** @internal */
     def _clone(): AnimationEvent = js.native
     
     /** The event to perform when triggered **/

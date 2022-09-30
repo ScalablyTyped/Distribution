@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet-geosearch
 
-Typings are for version 2.7
+Typings are for version 3.6.1
 
 ## Library description:
 Adds support for address lookup (a.k.a. geocoding / geoseaching) to Leaflet.
@@ -10,10 +10,10 @@ Adds support for address lookup (a.k.a. geocoding / geoseaching) to Leaflet.
 | ------------------ | :-------------: |
 | Full name          | leaflet-geosearch |
 | Keywords           | geolocation, geocoding, plugins, leaflet, geo, map |
-| # releases         | 16 |
-| # dependents       | 20 |
-| # downloads        | 499176 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 129869.66666666667 |
+| # stars            | 820.0 |
 
 ## Links
 - [Homepage](https://github.com/smeijer/leaflet-geosearch#readme)
@@ -24,7 +24,7 @@ Adds support for address lookup (a.k.a. geocoding / geoseaching) to Leaflet.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

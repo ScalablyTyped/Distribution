@@ -5,12 +5,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import typings.uidGenerator.uidGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`
-import typings.uidGenerator.uidGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde`
-import typings.uidGenerator.uidGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde`
-import typings.uidGenerator.uidGeneratorStrings.`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`
 import typings.uidGenerator.uidGeneratorStrings.`0123456789abcdef`
 import typings.uidGenerator.uidGeneratorStrings.`123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz`
-import typings.uidGenerator.uidGeneratorStrings.`ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,13 +45,13 @@ object mod extends Shortcut {
     
     val BASE58: `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz` = js.native
     
-    val BASE62: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz` = js.native
+    val BASE62: String = js.native
     
-    val BASE66: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-Dot_Tilde` = js.native
+    val BASE66: String = js.native
     
-    val BASE71: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzExclamationmarkApostropheLeftparenthesisRightparenthesisAsterisk-Dot_Tilde` = js.native
+    val BASE71: String = js.native
     
-    val BASE94: `ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisAsteriskPlussignComma-DotSlash0123456789ColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Backslash]^_GraveaccentabcdefghijklmnopqrstuvwxyzLeftcurlybracketVerticallineRightcurlybracketTilde` = js.native
+    val BASE94: String = js.native
   }
   
   @js.native

@@ -1,7 +1,6 @@
 package typings.reactDraggableList
 
 import typings.react.mod.Component
-import typings.reactDraggableList.anon.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object exampleMod {
     /* private */ var _togglePluto: Any = js.native
     
     @JSName("state")
-    var state_Example: List = js.native
+    var state_Example: typings.reactDraggableList.anon.List = js.native
   }
   
   trait ExampleState extends StObject {

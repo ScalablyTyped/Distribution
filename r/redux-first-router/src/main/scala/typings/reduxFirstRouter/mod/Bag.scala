@@ -8,12 +8,12 @@ trait Bag extends StObject {
   
   var action: ReceivedAction | Action
   
-  var extra: js.Any
+  var extra: js.UndefOr[Any] = js.undefined
 }
 object Bag {
   
-  inline def apply(action: ReceivedAction | Action, extra: js.Any): Bag = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any])
+  inline def apply(action: ReceivedAction | Action): Bag = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bag]
   }
   
@@ -21,6 +21,8 @@ object Bag {
     
     inline def setAction(value: ReceivedAction | Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
   }
 }

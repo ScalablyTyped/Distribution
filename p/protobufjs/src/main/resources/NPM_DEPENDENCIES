@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "protobufjs" : "7.1.1"
+      "protobufjs" : "7.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "protobufjs" : "7.1.1"
+      "protobufjs" : "7.1.2"
     }
   ],
   "compile-devDependencies" : [

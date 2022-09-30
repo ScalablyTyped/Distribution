@@ -1,10 +1,10 @@
 package typings.primerOcticons
 
-import typings.primerOcticons.primerOcticonsNumbers.`12`
-import typings.primerOcticons.primerOcticonsNumbers.`16`
-import typings.primerOcticons.primerOcticonsNumbers.`24`
-import typings.primerOcticons.primerOcticonsNumbers.`48`
-import typings.primerOcticons.primerOcticonsNumbers.`96`
+import typings.primerOcticons.primerOcticonsInts.`12`
+import typings.primerOcticons.primerOcticonsInts.`16`
+import typings.primerOcticons.primerOcticonsInts.`24`
+import typings.primerOcticons.primerOcticonsInts.`48`
+import typings.primerOcticons.primerOcticonsInts.`96`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1703,15 +1703,15 @@ object mod {
   /* Inlined {readonly [ K in @primer/octicons.@primer/octicons.IconSize ]:? @primer/octicons.@primer/octicons.IconHeight<K>} */
   trait IconHeights extends StObject {
     
-    val `12`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsNumbers.`12`]] = js.undefined
+    val `12`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsInts.`12`]] = js.undefined
     
-    val `16`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsNumbers.`16`]] = js.undefined
+    val `16`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsInts.`16`]] = js.undefined
     
-    val `24`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsNumbers.`24`]] = js.undefined
+    val `24`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsInts.`24`]] = js.undefined
     
-    val `48`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsNumbers.`48`]] = js.undefined
+    val `48`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsInts.`48`]] = js.undefined
     
-    val `96`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsNumbers.`96`]] = js.undefined
+    val `96`: js.UndefOr[IconHeight[typings.primerOcticons.primerOcticonsInts.`96`]] = js.undefined
   }
   object IconHeights {
     
@@ -2594,24 +2594,24 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.primerOcticons.primerOcticonsNumbers.`12`
-    - typings.primerOcticons.primerOcticonsNumbers.`16`
-    - typings.primerOcticons.primerOcticonsNumbers.`24`
-    - typings.primerOcticons.primerOcticonsNumbers.`48`
-    - typings.primerOcticons.primerOcticonsNumbers.`96`
+    - typings.primerOcticons.primerOcticonsInts.`12`
+    - typings.primerOcticons.primerOcticonsInts.`16`
+    - typings.primerOcticons.primerOcticonsInts.`24`
+    - typings.primerOcticons.primerOcticonsInts.`48`
+    - typings.primerOcticons.primerOcticonsInts.`96`
   */
   trait IconSize extends StObject
   object IconSize {
     
-    inline def `12`: typings.primerOcticons.primerOcticonsNumbers.`12` = 12.asInstanceOf[typings.primerOcticons.primerOcticonsNumbers.`12`]
+    inline def `12`: typings.primerOcticons.primerOcticonsInts.`12` = 12.asInstanceOf[typings.primerOcticons.primerOcticonsInts.`12`]
     
-    inline def `16`: typings.primerOcticons.primerOcticonsNumbers.`16` = 16.asInstanceOf[typings.primerOcticons.primerOcticonsNumbers.`16`]
+    inline def `16`: typings.primerOcticons.primerOcticonsInts.`16` = 16.asInstanceOf[typings.primerOcticons.primerOcticonsInts.`16`]
     
-    inline def `24`: typings.primerOcticons.primerOcticonsNumbers.`24` = 24.asInstanceOf[typings.primerOcticons.primerOcticonsNumbers.`24`]
+    inline def `24`: typings.primerOcticons.primerOcticonsInts.`24` = 24.asInstanceOf[typings.primerOcticons.primerOcticonsInts.`24`]
     
-    inline def `48`: typings.primerOcticons.primerOcticonsNumbers.`48` = 48.asInstanceOf[typings.primerOcticons.primerOcticonsNumbers.`48`]
+    inline def `48`: typings.primerOcticons.primerOcticonsInts.`48` = 48.asInstanceOf[typings.primerOcticons.primerOcticonsInts.`48`]
     
-    inline def `96`: typings.primerOcticons.primerOcticonsNumbers.`96` = 96.asInstanceOf[typings.primerOcticons.primerOcticonsNumbers.`96`]
+    inline def `96`: typings.primerOcticons.primerOcticonsInts.`96` = 96.asInstanceOf[typings.primerOcticons.primerOcticonsInts.`96`]
   }
   
   trait SVGOptions extends StObject {

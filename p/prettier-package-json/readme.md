@@ -1,7 +1,7 @@
 
 # Scala.js typings for prettier-package-json
 
-Typings are for version 2.1
+Typings are for version 2.7.0
 
 ## Library description:
 Prettier formatter for package.json files
@@ -10,10 +10,10 @@ Prettier formatter for package.json files
 | ------------------ | :-------------: |
 | Full name          | prettier-package-json |
 | Keywords           | cleanup, formatter, json, keys, object, package, package.json, prettier, sort |
-| # releases         | 4 |
-| # dependents       | 18 |
-| # downloads        | 845853 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 95860.33333333333 |
+| # stars            | 116.0 |
 
 ## Links
 - [Homepage](https://github.com/cameronhunter/prettier-package-json#readme)
@@ -24,7 +24,7 @@ Prettier formatter for package.json files
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

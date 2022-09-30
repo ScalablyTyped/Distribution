@@ -1,17 +1,12 @@
 package typings.xadesjs.mod.xml
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.xadesjs.mod.xml.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("xadesjs", "xml.ReferenceInfo")
 @js.native
-class ReferenceInfo ()
-  extends typings.xadesjs.xmlMod.ReferenceInfo
-object ReferenceInfo {
-  
-  inline def apply: Instantiable0[typings.xadesjs.xmlMod.ReferenceInfo] = ^.asInstanceOf[js.Dynamic].selectDynamic("ReferenceInfo").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ReferenceInfo]]
+open class ReferenceInfo ()
+  extends typings.xadesjs.typesXmlMod.ReferenceInfo {
+  def this(properties: js.Object) = this()
 }

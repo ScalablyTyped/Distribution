@@ -1,16 +1,16 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`0`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`1`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`2`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`0`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`1`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`0`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`1`
-  - typings.vueRuntimeCore.vueRuntimeCoreNumbers.`2`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`0`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`1`
+  - typings.vueRuntimeCore.vueRuntimeCoreInts.`2`
 */
 trait TeleportMoveTypes extends StObject
 object TeleportMoveTypes {

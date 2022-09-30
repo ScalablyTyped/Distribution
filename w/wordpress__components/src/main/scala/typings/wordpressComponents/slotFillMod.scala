@@ -3,6 +3,7 @@ package typings.wordpressComponents
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactPortal
 import typings.wordpressComponents.anon.Fill
+import typings.wordpressComponents.anon.`1`
 import typings.wordpressComponents.contextMod.SlotFillContext
 import typings.wordpressComponents.fillMod.Fill.Props
 import org.scalablytyped.runtime.StObject
@@ -23,7 +24,7 @@ object slotFillMod {
   
   @JSImport("@wordpress/components/slot-fill", "Provider")
   @js.native
-  val Provider: ComponentType[js.Object] = js.native
+  val Provider: ComponentType[`1`] = js.native
   
   @JSImport("@wordpress/components/slot-fill", "Slot")
   @js.native

@@ -9,6 +9,7 @@ import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4CryptoInit
 import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4Init
 import typings.awsSdkSmithyClient.defaultsModeMod.DefaultsMode
 import typings.awsSdkSmithyClient.defaultsModeMod.ResolvedDefaultsMode
+import typings.awsSdkTypes.authMod.AuthScheme
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.httpMod.Endpoint
@@ -93,7 +94,9 @@ object anon {
     
     var sha256: HashConstructor
     
-    var signer: js.UndefOr[RequestSigner | Provider[RequestSigner]] = js.undefined
+    var signer: js.UndefOr[
+        RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ] = js.undefined
     
     var signerConstructor: js.UndefOr[
         Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]
@@ -225,13 +228,15 @@ object anon {
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(
+        value: RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructor(value: Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]): Self = StObject.set(x, "signerConstructor", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructorUndefined: Self = StObject.set(x, "signerConstructor", js.undefined)
       
-      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction1(value: /* authScheme */ js.UndefOr[AuthScheme] => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction1(value))
       
       inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
@@ -328,7 +333,9 @@ object anon {
     
     var sha256: HashConstructor
     
-    var signer: js.UndefOr[RequestSigner | Provider[RequestSigner]] = js.undefined
+    var signer: js.UndefOr[
+        RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ] = js.undefined
     
     var signerConstructor: js.UndefOr[
         Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]
@@ -460,13 +467,15 @@ object anon {
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(
+        value: RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructor(value: Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]): Self = StObject.set(x, "signerConstructor", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructorUndefined: Self = StObject.set(x, "signerConstructor", js.undefined)
       
-      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction1(value: /* authScheme */ js.UndefOr[AuthScheme] => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction1(value))
       
       inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
@@ -559,7 +568,9 @@ object anon {
     
     var sha256: HashConstructor
     
-    var signer: js.UndefOr[RequestSigner | Provider[RequestSigner]] = js.undefined
+    var signer: js.UndefOr[
+        RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ] = js.undefined
     
     var signerConstructor: js.UndefOr[
         Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]
@@ -693,13 +704,15 @@ object anon {
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(
+        value: RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructor(value: Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]): Self = StObject.set(x, "signerConstructor", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructorUndefined: Self = StObject.set(x, "signerConstructor", js.undefined)
       
-      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction1(value: /* authScheme */ js.UndefOr[AuthScheme] => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction1(value))
       
       inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
@@ -794,17 +807,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeExpire {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeExpire = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeExpire = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeExpire]
     }
     
     extension [Self <: ExceptionOptionTypeExpire](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -813,17 +830,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeIDPCom {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeIDPCom = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeIDPCom = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeIDPCom]
     }
     
     extension [Self <: ExceptionOptionTypeIDPCom](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -832,17 +853,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeIDPRej {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeIDPRej = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeIDPRej = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeIDPRej]
     }
     
     extension [Self <: ExceptionOptionTypeIDPRej](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -851,17 +876,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeInvali {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeInvali = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeInvali = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeInvali]
     }
     
     extension [Self <: ExceptionOptionTypeInvali](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -870,17 +899,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeMalfor {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeMalfor = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeMalfor = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeMalfor]
     }
     
     extension [Self <: ExceptionOptionTypeMalfor](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -889,17 +922,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypePacked {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypePacked = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypePacked = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypePacked]
     }
     
     extension [Self <: ExceptionOptionTypePacked](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -908,17 +945,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeRegion {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeRegion = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeRegion = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeRegion]
     }
     
     extension [Self <: ExceptionOptionTypeRegion](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,6 +1,6 @@
 package typings.rtpParser.anon
 
-import typings.rtpParser.rtpParserNumbers.`22050`
+import typings.rtpParser.rtpParserInts.`22050`
 import typings.rtpParser.rtpParserStrings.A
 import typings.rtpParser.rtpParserStrings.DVI4
 import org.scalablytyped.runtime.StObject
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChannelsClockRate extends StObject {
   
-  var channels: typings.rtpParser.rtpParserNumbers.`1`
+  var channels: typings.rtpParser.rtpParserInts.`1`
   
   var clockRate: `22050`
   
@@ -26,7 +26,7 @@ object ChannelsClockRate {
   
   extension [Self <: ChannelsClockRate](x: Self) {
     
-    inline def setChannels(value: typings.rtpParser.rtpParserNumbers.`1`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: typings.rtpParser.rtpParserInts.`1`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     inline def setClockRate(value: `22050`): Self = StObject.set(x, "clockRate", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.bookshelf.mod
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +40,7 @@ trait Bookshelf extends Events[Any] {
   def transaction[T](
     callback: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify knex.Transaction */ /* transaction */ Any, 
-      js.Thenable[T]
+      PromiseLike[T]
     ]
   ): typings.bluebird.mod.^[T] = js.native
 }

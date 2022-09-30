@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object classDefManagerMod {
   
-  inline def apply(opt_options: Unit, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(List(opt_options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def apply(opt_options: Classes, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(List(opt_options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def apply(opt_options: Record[Any, Any], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(List(opt_options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def apply(opt_options: Unit, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(scala.List(opt_options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def apply(opt_options: Classes, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(scala.List(opt_options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def apply(opt_options: Record[Any, Any], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(scala.List(opt_options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("@nginstack/engine/lib/classdef/ClassDefManager", JSImport.Namespace)
   @js.native

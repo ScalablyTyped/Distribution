@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "twilio__notifications"
-version := "1.0.5-5d1846"
+version := "1.0.5-18ee67"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "loglevel" % "1.8.0-e2e7b2",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
-  "org.scalablytyped" %%% "std" % "4.8-958c79",
-  "org.scalablytyped" %%% "twilsock" % "0.12.2-5b9193")
+  "org.scalablytyped" %%% "loglevel" % "1.8.0-cbcc55",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "twilsock" % "0.12.2-81ded9")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

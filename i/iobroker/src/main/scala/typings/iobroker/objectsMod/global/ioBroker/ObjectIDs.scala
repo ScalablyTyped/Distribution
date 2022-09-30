@@ -1,15 +1,5 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
-import typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket
-import typings.iobroker.iobrokerStrings.`systemDot$LeftcurlybracketQuotationmarkcertificatesQuotationmark Verticalline QuotationmarkconfigQuotationmark Verticalline QuotationmarkrepositoriesQuotationmarkRightcurlybracket`
-import typings.iobroker.iobrokerStrings.enumDot$LeftcurlybracketstringRightcurlybracket
-import typings.iobroker.iobrokerStrings.scriptDotjsDot$LeftcurlybracketstringRightcurlybracket
-import typings.iobroker.iobrokerStrings.systemDotadapterDot$LeftcurlybracketstringRightcurlybracket
-import typings.iobroker.iobrokerStrings.systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket
-import typings.iobroker.iobrokerStrings.systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket
-import typings.iobroker.iobrokerStrings.systemDotgroupDot$LeftcurlybracketstringRightcurlybracket
-import typings.iobroker.iobrokerStrings.systemDothostDot$LeftcurlybracketstringRightcurlybracket
-import typings.iobroker.iobrokerStrings.systemDotuserDot$LeftcurlybracketstringRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,104 +8,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ObjectIDs {
   
   // Guaranteed adapter objects
-  type Adapter = systemDotadapterDot$LeftcurlybracketstringRightcurlybracket
+  type Adapter = /* template literal string: system.adapter.${string} */ String
   
   // Unsure, can be folder, device, channel or state (or whatever an adapter does)
-  type AdapterScoped = DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket
+  type AdapterScoped = /* template literal string: ${string}.${number}.${string} */ String
   
   /** All possible typed object IDs */
-  /* Rewritten from type alias, can be one of: 
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Meta
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Misc
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Channel
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.ScriptOrChannel
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.State
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Enum
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Instance
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Adapter
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Group
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.User
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Host
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.Config
-    - typings.iobroker.objectsMod.global.ioBroker.ObjectIDs.AdapterScoped
-  */
-  type Any = _Any | ScriptOrChannel | State | Enum | Instance | Adapter | Group | User | Host | Config | AdapterScoped
+  type Any = Meta | Misc | Channel | ScriptOrChannel | State | Enum | Instance | Adapter | Group | User | Host | Config | AdapterScoped
   
   // Guaranteed channel objects
-  /* Rewritten from type alias, can be one of: 
-    - typings.iobroker.iobrokerStrings.`scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket`
-    - typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo
-  */
-  trait Channel
-    extends StObject
-       with _Any
-  object Channel {
-    
-    inline def DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo: typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo = "${string}.${number}.info".asInstanceOf[typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotinfo]
-    
-    inline def `scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket`: typings.iobroker.iobrokerStrings.`scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket` = ("script.js.${\"common\" | \"global\"}").asInstanceOf[typings.iobroker.iobrokerStrings.`scriptDotjsDot$LeftcurlybracketQuotationmarkcommonQuotationmark Verticalline QuotationmarkglobalQuotationmarkRightcurlybracket`]
-  }
+  type Channel = /* template literal string: script.js.${common|global} */ String
   
   // Guaranteed config objects
-  type Config = `systemDot$LeftcurlybracketQuotationmarkcertificatesQuotationmark Verticalline QuotationmarkconfigQuotationmark Verticalline QuotationmarkrepositoriesQuotationmarkRightcurlybracket`
+  type Config = /* template literal string: system.${certificates|config|repositories} */ String
   
   // Guaranteed enum objects
-  type Enum = enumDot$LeftcurlybracketstringRightcurlybracket
+  type Enum = /* template literal string: enum.${string} */ String
   
   // Guaranteed group objects
-  type Group = systemDotgroupDot$LeftcurlybracketstringRightcurlybracket
+  type Group = /* template literal string: system.group.${string} */ String
   
   // Guaranteed host objects
-  type Host = systemDothostDot$LeftcurlybracketstringRightcurlybracket
+  type Host = /* template literal string: system.host.${string} */ String
   
   // Guaranteed instance objects
-  type Instance = systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket
+  type Instance = /* template literal string: system.adapter.${string}.${number} */ String
   
   // Guaranteed meta objects
-  /* Rewritten from type alias, can be one of: 
-    - typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket
-    - typings.iobroker.iobrokerStrings.`DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket`
-    - typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket
-    - typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket
-  */
-  trait Meta
-    extends StObject
-       with _Any
-  object Meta {
-    
-    inline def `DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket`: typings.iobroker.iobrokerStrings.`DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket` = ("${string}.${\"meta\" | \"admin\"}").asInstanceOf[typings.iobroker.iobrokerStrings.`DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketQuotationmarkmetaQuotationmark Verticalline QuotationmarkadminQuotationmarkRightcurlybracket`]
-    
-    inline def DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket: typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket = "${string}.${number}".asInstanceOf[typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracket]
-    
-    inline def DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket: typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket = "${string}.${number}.meta.${string}".asInstanceOf[typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket]
-    
-    inline def DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket: typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket = "${string}.meta.${string}".asInstanceOf[typings.iobroker.iobrokerStrings.DollarLeftcurlybracketstringRightcurlybracketDotmetaDotDollarLeftcurlybracketstringRightcurlybracket]
-  }
+  type Meta = /* template literal string: ${string}.${number} */ String
   
   // Unsure, can be folder, device, channel or state
   // --> We need this match to avoid matching the more specific types below
-  /* Rewritten from type alias, can be one of: 
-    - typings.iobroker.iobrokerStrings.systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket
-    - typings.iobroker.iobrokerStrings.`0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket`
-  */
-  trait Misc
-    extends StObject
-       with _Any
-  object Misc {
-    
-    inline def `0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket`: typings.iobroker.iobrokerStrings.`0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket` = "0_userdata.0.${string}".asInstanceOf[typings.iobroker.iobrokerStrings.`0_userdataDot0Dot$LeftcurlybracketstringRightcurlybracket`]
-    
-    inline def systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket: typings.iobroker.iobrokerStrings.systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket = "system.host.${string}.${string}".asInstanceOf[typings.iobroker.iobrokerStrings.systemDothostDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket]
-  }
+  type Misc = /* template literal string: system.host.${string}.${string} */ String
   
   // Either script or channel object
-  type ScriptOrChannel = scriptDotjsDot$LeftcurlybracketstringRightcurlybracket
+  type ScriptOrChannel = /* template literal string: script.js.${string} */ String
   
   // Guaranteed state objects
-  type State = systemDotadapterDotDollarLeftcurlybracketstringRightcurlybracketDotDollarLeftcurlybracketnumberRightcurlybracketDotDollarLeftcurlybracketstringRightcurlybracket
+  type State = /* template literal string: system.adapter.${string}.${number}.${string} */ String
   
   // Guaranteed user objects
-  type User = systemDotuserDot$LeftcurlybracketstringRightcurlybracket
-  
-  trait _Any extends StObject
+  type User = /* template literal string: system.user.${string} */ String
 }

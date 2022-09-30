@@ -13,16 +13,9 @@ object mod {
     extends StObject
        with URLSlugify
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.urlSlugify.urlSlugifyStrings.`-_`
-    - typings.urlSlugify.urlSlugifyStrings._underscore
-    - typings.urlSlugify.urlSlugifyStrings.Tilde
-    - typings.urlSlugify.urlSlugifyStrings.ApostropheApostrophe
-  */
-  trait Separator extends StObject
   object Separator {
     
-    inline def ApostropheApostrophe: typings.urlSlugify.urlSlugifyStrings.ApostropheApostrophe = "''".asInstanceOf[typings.urlSlugify.urlSlugifyStrings.ApostropheApostrophe]
+    inline def ApostropheApostrophe: String = String.asInstanceOf[String]
     
     inline def Tilde: typings.urlSlugify.urlSlugifyStrings.Tilde = "~".asInstanceOf[typings.urlSlugify.urlSlugifyStrings.Tilde]
     
@@ -30,6 +23,13 @@ object mod {
     
     inline def _underscore: typings.urlSlugify.urlSlugifyStrings._underscore = "_".asInstanceOf[typings.urlSlugify.urlSlugifyStrings._underscore]
   }
+  /* Rewritten from type alias, can be one of: 
+    - typings.urlSlugify.urlSlugifyStrings.`-_`
+    - typings.urlSlugify.urlSlugifyStrings._underscore
+    - typings.urlSlugify.urlSlugifyStrings.Tilde
+    - java.lang.String
+  */
+  type Separator = _Separator | String
   
   @js.native
   trait URLSlugify extends StObject {
@@ -37,4 +37,6 @@ object mod {
     def slugify(title: String): String = js.native
     def slugify(title: String, separator: Separator): String = js.native
   }
+  
+  trait _Separator extends StObject
 }

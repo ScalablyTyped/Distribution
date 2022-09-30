@@ -8,9 +8,9 @@ import typings.lokijs.anon.PageSize
 import typings.lokijs.anon.PartialDynamicViewOptions
 import typings.lokijs.anon.PartialLokiConstructorOpt
 import typings.lokijs.lokijsBooleans.`true`
-import typings.lokijs.lokijsNumbers.`-1`
-import typings.lokijs.lokijsNumbers.`0`
-import typings.lokijs.lokijsNumbers.`1`
+import typings.lokijs.lokijsInts.`-1`
+import typings.lokijs.lokijsInts.`0`
+import typings.lokijs.lokijsInts.`1`
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

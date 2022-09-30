@@ -84,7 +84,7 @@ object webgpuShaderProcessingContextMod {
     def _KnownUBOs: StringDictionary[WebGPUBufferDescription] = js.native
     inline def _KnownUBOs_=(x: StringDictionary[WebGPUBufferDescription]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KnownUBOs")(x.asInstanceOf[js.Any])
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Engines/WebGPU/webgpuShaderProcessingContext", "WebGPUShaderProcessingContext._SimplifiedKnownBindings")
     @js.native
     def _SimplifiedKnownBindings: Boolean = js.native

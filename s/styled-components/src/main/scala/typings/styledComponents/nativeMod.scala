@@ -11,7 +11,7 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.TemplateStringsArray
 import typings.styledComponents.anon.ART
 import typings.styledComponents.anon.IsCss
-import typings.styledComponents.anon.`347`
+import typings.styledComponents.anon.`171`
 import typings.styledComponents.distTypesMod.AnyComponent
 import typings.styledComponents.distTypesMod.ExecutionContext
 import typings.styledComponents.distTypesMod.Interpolation
@@ -31,7 +31,7 @@ object nativeMod {
   
   @JSImport("styled-components/native/dist/dist/native", JSImport.Default)
   @js.native
-  val default: (js.Function1[/* tag */ NativeTarget, `347`[NativeTarget]]) & ART = js.native
+  val default: (js.Function1[/* tag */ NativeTarget, `171`[NativeTarget]]) & ART = js.native
   
   @JSImport("styled-components/native/dist/dist/native", "ThemeConsumer")
   @js.native
@@ -43,7 +43,7 @@ object nativeMod {
   
   inline def ThemeProvider(props: Props): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  inline def css[Props](styles: Styles[Props], interpolations: Interpolation[Props]*): TemplateStringsArray | (Interpolation[Props] & IsCss) = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(List(styles.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TemplateStringsArray | (Interpolation[Props] & IsCss)]
+  inline def css[Props](styles: Styles[Props], interpolations: Interpolation[Props]*): TemplateStringsArray | (Interpolation[Props] & IsCss) = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(scala.List(styles.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TemplateStringsArray | (Interpolation[Props] & IsCss)]
   
   inline def isStyledComponent(target: Any): /* is styled-components.styled-components/native/dist/dist/types.IStyledComponent<any, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components/native/dist/dist/types.IStyledComponent<any, unknown> */ Boolean]
   

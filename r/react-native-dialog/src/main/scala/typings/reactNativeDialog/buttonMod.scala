@@ -23,8 +23,6 @@ object buttonMod extends Shortcut {
     
     var color: js.UndefOr[ColorValue] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
     var label: ReactNode
     
     @JSName("onPress")
@@ -46,10 +44,6 @@ object buttonMod extends Shortcut {
       inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

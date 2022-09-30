@@ -1,18 +1,17 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object skeletonImageMod {
+object skeletonImageMod extends Shortcut {
   
-  @JSImport("antd/lib/skeleton/Image", JSImport.Namespace)
+  @JSImport("antd/lib/skeleton/Image", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  val default: FC[SkeletonImageProps] = js.native
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size' | 'shape'> */
   trait SkeletonImageProps extends StObject {
@@ -51,4 +50,9 @@ object skeletonImageMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
+  
+  type _To = FC[SkeletonImageProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `skeletonImageMod.foo` */
+  override def _to: FC[SkeletonImageProps] = default
 }

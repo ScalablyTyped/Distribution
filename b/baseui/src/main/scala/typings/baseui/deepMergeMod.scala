@@ -10,7 +10,7 @@ object deepMergeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(target: js.Object, sources: (js.UndefOr[Null | js.Object])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
-  inline def default(target: Null, sources: (js.UndefOr[Null | js.Object])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
-  inline def default(target: Unit, sources: (js.UndefOr[Null | js.Object])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def default(target: js.Object, sources: (js.UndefOr[Null | js.Object])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def default(target: Null, sources: (js.UndefOr[Null | js.Object])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def default(target: Unit, sources: (js.UndefOr[Null | js.Object])*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

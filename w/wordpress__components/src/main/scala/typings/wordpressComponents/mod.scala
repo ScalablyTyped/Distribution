@@ -19,7 +19,10 @@ import typings.std.SVGSVGElement
 import typings.wordpressComponents.anglePickerControlMod.AnglePickerControl.Props
 import typings.wordpressComponents.anon.ChildrenReactNode
 import typings.wordpressComponents.anon.Fill
+import typings.wordpressComponents.anon.`1`
 import typings.wordpressComponents.baseControlMod.BaseControl.VisualLabelProps
+import typings.wordpressComponents.guideMod.GuideProps
+import typings.wordpressComponents.toolbarGroupMod.ToolbarGroupProps
 import typings.wordpressComponents.withFocusOutsideMod.HFOComponent
 import typings.wordpressComponents.withFocusReturnMod.WFROptions
 import typings.wordpressComponents.wordpressComponentsStrings.`object`
@@ -312,6 +315,10 @@ object mod {
   @js.native
   val ColorPicker: ComponentType[typings.wordpressComponents.colorPickerMod.ColorPicker.Props] = js.native
   
+  @JSImport("@wordpress/components", "ComboboxControl")
+  @js.native
+  val ComboboxControl: ComponentType[typings.wordpressComponents.comboboxControlMod.ComboboxControl.Props] = js.native
+  
   @JSImport("@wordpress/components", "CustomSelectControl")
   @js.native
   val CustomSelectControl: ComponentType[typings.wordpressComponents.customSelectControlMod.CustomSelectControl.Props] = js.native
@@ -411,6 +418,10 @@ object mod {
   @JSImport("@wordpress/components", "G")
   @js.native
   val G: ComponentType[SVGProps[SVGGElement]] = js.native
+  
+  @JSImport("@wordpress/components", "Guide")
+  @js.native
+  val Guide: ComponentType[GuideProps] = js.native
   
   @JSImport("@wordpress/components", "HorizontalRule")
   @js.native
@@ -535,7 +546,7 @@ object mod {
   
   @JSImport("@wordpress/components", "SlotFillProvider")
   @js.native
-  val SlotFillProvider: ComponentType[js.Object] = js.native
+  val SlotFillProvider: ComponentType[`1`] = js.native
   
   @JSImport("@wordpress/components", "Snackbar")
   @js.native
@@ -561,6 +572,10 @@ object mod {
   @js.native
   val TextareaControl: ComponentType[typings.wordpressComponents.textareaControlMod.TextareaControl.Props] = js.native
   
+  @JSImport("@wordpress/components", "Tip")
+  @js.native
+  val Tip: ComponentType[typings.wordpressComponents.tipMod.Tip.Props] = js.native
+  
   @JSImport("@wordpress/components", "ToggleControl")
   @js.native
   val ToggleControl: ComponentType[typings.wordpressComponents.toggleControlMod.ToggleControl.Props] = js.native
@@ -571,7 +586,13 @@ object mod {
   
   @JSImport("@wordpress/components", "ToolbarButton")
   @js.native
-  val ToolbarButton: ComponentType[typings.wordpressComponents.toolbarButtonMod.ToolbarButton.Props] = js.native
+  val ToolbarButton: ComponentType[
+    typings.wordpressComponents.toolbarButtonMod.ToolbarButton.Props | typings.wordpressComponents.buttonMod.Button.Props
+  ] = js.native
+  
+  @JSImport("@wordpress/components", "ToolbarGroup")
+  @js.native
+  val ToolbarGroup: ComponentType[ToolbarGroupProps] = js.native
   
   @JSImport("@wordpress/components", "Tooltip")
   @js.native
@@ -581,36 +602,40 @@ object mod {
   @js.native
   val TreeSelect: ComponentType[typings.wordpressComponents.treeSelectMod.TreeSelect.Props] = js.native
   
+  @JSImport("@wordpress/components", "VisuallyHidden")
+  @js.native
+  val VisuallyHidden: ComponentType[typings.wordpressComponents.visuallyHiddenMod.VisuallyHidden.Props] = js.native
+  
   inline def createSlotFill(name: String): Fill = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlotFill")(name.asInstanceOf[js.Any]).asInstanceOf[Fill]
   
-  inline def navigateRegions[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateRegions")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def navigateRegions[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateRegions")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
   
-  inline def withConstrainedTabbing[T](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConstrainedTabbing")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def withConstrainedTabbing[T](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConstrainedTabbing")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
   
   inline def withFallbackStyles[FSP](
-    mapNodeToProps: js.Function2[/* parentNode */ HTMLDivElement, /* ownProps */ StringDictionary[js.Any], FSP]
+    mapNodeToProps: js.Function2[/* parentNode */ HTMLDivElement, /* ownProps */ StringDictionary[Any], FSP]
   ): js.Function1[
-    /* wrappedComponent */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof FSP */ String]]
+    /* wrappedComponent */ ComponentType[Any], 
+    ComponentType[Omit[Any, /* keyof FSP */ String]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFallbackStyles")(mapNodeToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* wrappedComponent */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof FSP */ String]]
+    /* wrappedComponent */ ComponentType[Any], 
+    ComponentType[Omit[Any, /* keyof FSP */ String]]
   ]]
   
   // prettier-ignore
-  inline def withFilters(hookName: String): js.Function1[/* wrapped */ js.Any, ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFilters")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ js.Any, ComponentType[js.Any]]]
+  inline def withFilters(hookName: String): js.Function1[/* wrapped */ Any, ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFilters")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ Any, ComponentType[Any]]]
   
-  inline def withFilters_P[P](hookName: String): js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFilters")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[P]]]
+  inline def withFilters_P[P](hookName: String): js.Function1[/* wrapped */ ComponentType[Any], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFilters")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[Any], ComponentType[P]]]
   
-  inline def withFocusOutside[T /* <: HFOComponent[js.Any, js.Any] */](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusOutside")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
-  
-  // prettier-ignore
-  inline def withFocusReturn(options: WFROptions): js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[js.Any]]]
-  // prettier-ignore
-  inline def withFocusReturn[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def withFocusOutside[T /* <: HFOComponent[Any, Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusOutside")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
   
   // prettier-ignore
-  inline def withNotices[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNotices")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]]]
+  inline def withFocusReturn(options: WFROptions): js.Function1[/* wrapped */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[Any], ComponentType[Any]]]
+  // prettier-ignore
+  inline def withFocusReturn[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
   
-  inline def withSpokenMessages[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, speak | debouncedSpeak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSpokenMessages")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, speak | debouncedSpeak]]]
+  // prettier-ignore
+  inline def withNotices[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNotices")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, noticeList | noticeOperations | noticeUI]]]
+  
+  inline def withSpokenMessages[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, speak | debouncedSpeak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSpokenMessages")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, speak | debouncedSpeak]]]
 }

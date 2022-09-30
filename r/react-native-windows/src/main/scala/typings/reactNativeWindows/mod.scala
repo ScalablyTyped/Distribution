@@ -1,154 +1,180 @@
 package typings.reactNativeWindows
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.react.mod.ComponentType
-import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.PropsWithoutRef
-import typings.react.mod.RefAttributes
-import typings.reactNativeWindows.anon.Children
-import typings.reactNativeWindows.appThemeMod.AppThemeModule
-import typings.reactNativeWindows.appThemeMod.MissingNativeAppThemeShim
-import typings.reactNativeWindows.datePickerPropsMod.IDatePickerProps
-import typings.reactNativeWindows.flyoutMod.IFlyoutTargetState
-import typings.reactNativeWindows.flyoutPropsMod.IFlyoutProps
-import typings.reactNativeWindows.glyphPropsMod.GlyphProps
-import typings.reactNativeWindows.keyboardExtPropsMod.IKeyboardProps
-import typings.reactNativeWindows.pickerPropsMod.IPickerProps
-import typings.reactNativeWindows.pickerWindowsMod.PickerItem
-import typings.reactNativeWindows.pickerWindowsMod.PickerPropsWithChildren
-import typings.reactNativeWindows.pickerWindowsMod.State
-import typings.reactNativeWindows.popupMod.IPopupTargetState
-import typings.reactNativeWindows.popupPropsMod.IPopupProps
-import typings.reactNativeWindows.viewWindowsMod.ViewWindowsType
+import typings.reactNative.mod.AccessibilityProps
+import typings.reactNative.mod.AccessibilityPropsAndroid
+import typings.reactNative.mod.AccessibilityPropsIOS
+import typings.reactNative.mod.ActivityIndicatorIOSProps
+import typings.reactNative.mod.ActivityIndicatorProps
+import typings.reactNative.mod.ButtonProps
+import typings.reactNative.mod.DatePickerIOSProps
+import typings.reactNative.mod.DefaultSectionT
+import typings.reactNative.mod.DrawerLayoutAndroidProps
+import typings.reactNative.mod.FlatListProps
+import typings.reactNative.mod.ImageBackgroundProps
+import typings.reactNative.mod.ImageProps
+import typings.reactNative.mod.ImagePropsAndroid
+import typings.reactNative.mod.ImagePropsIOS
+import typings.reactNative.mod.ImageSourcePropType
+import typings.reactNative.mod.InputAccessoryViewProps
+import typings.reactNative.mod.ListViewProps
+import typings.reactNative.mod.MaskedViewIOSProps
+import typings.reactNative.mod.ModalProps
+import typings.reactNative.mod.NavigatorIOSProps
+import typings.reactNative.mod.ProgressBarAndroidProps
+import typings.reactNative.mod.ProgressViewIOSProps
+import typings.reactNative.mod.RecyclerViewBackedScrollViewProps
+import typings.reactNative.mod.RefreshControlProps
+import typings.reactNative.mod.RefreshControlPropsAndroid
+import typings.reactNative.mod.RefreshControlPropsIOS
+import typings.reactNative.mod.ScrollViewProps
+import typings.reactNative.mod.ScrollViewPropsAndroid
+import typings.reactNative.mod.ScrollViewPropsIOS
+import typings.reactNative.mod.SectionListProps
+import typings.reactNative.mod.SliderProps
+import typings.reactNative.mod.SliderPropsAndroid
+import typings.reactNative.mod.SliderPropsIOS
+import typings.reactNative.mod.SnapshotViewIOSProps
+import typings.reactNative.mod.StatusBarProps
+import typings.reactNative.mod.StatusBarPropsAndroid
+import typings.reactNative.mod.StatusBarPropsIOS
+import typings.reactNative.mod.SwitchIOSProps
+import typings.reactNative.mod.SwitchProps
+import typings.reactNative.mod.SwitchPropsIOS
+import typings.reactNative.mod.TabBarIOSItemProps
+import typings.reactNative.mod.TabBarIOSProps
+import typings.reactNative.mod.TextInputAndroidProps
+import typings.reactNative.mod.TextInputIOSProps
+import typings.reactNative.mod.TextInputProps
+import typings.reactNative.mod.TextProps
+import typings.reactNative.mod.TextPropsAndroid
+import typings.reactNative.mod.TextPropsIOS
+import typings.reactNative.mod.TouchableHighlightProps
+import typings.reactNative.mod.TouchableNativeFeedbackProps
+import typings.reactNative.mod.TouchableOpacityProps
+import typings.reactNative.mod.TouchableWithoutFeedbackProps
+import typings.reactNative.mod.ViewPagerAndroidProps
+import typings.reactNative.mod.ViewProps
+import typings.reactNative.mod.ViewPropsAndroid
+import typings.reactNative.mod.ViewPropsIOS
+import typings.reactNative.mod.VirtualizedListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* augmented module */
 object mod {
   
-  @JSImport("react-native-windows", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
+  type AccessibilityProperties = AccessibilityProps
   
-  @JSImport("react-native-windows", "AppTheme")
-  @js.native
-  val AppTheme: AppThemeModule | MissingNativeAppThemeShim = js.native
+  type AccessibilityPropertiesAndroid = AccessibilityPropsAndroid
   
-  @JSImport("react-native-windows", "DatePicker")
-  @js.native
-  class DatePicker protected ()
-    extends typings.reactNativeWindows.datePickerMod.DatePicker {
-    def this(props: IDatePickerProps) = this()
-  }
-  /* static members */
-  object DatePicker {
-    
-    @JSImport("react-native-windows", "DatePicker")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-native-windows", "DatePicker.defaultProps")
-    @js.native
-    def defaultProps: IDatePickerProps = js.native
-    inline def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  type AccessibilityPropertiesIOS = AccessibilityPropsIOS
   
-  @JSImport("react-native-windows", "EventPhase")
-  @js.native
-  object EventPhase extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.reactNativeWindows.keyboardExtPropsMod.EventPhase & Double] = js.native
-    
-    /* 2 */ val AtTarget: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.AtTarget & Double = js.native
-    
-    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Bubbling & Double = js.native
-    
-    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.Capturing & Double = js.native
-    
-    /* 0 */ val None: typings.reactNativeWindows.keyboardExtPropsMod.EventPhase.None & Double = js.native
-  }
+  type ActivityIndicatorIOSProperties = ActivityIndicatorIOSProps
   
-  @JSImport("react-native-windows", "Flyout")
-  @js.native
-  class Flyout protected ()
-    extends typings.reactNativeWindows.flyoutMod.Flyout {
-    def this(props: IFlyoutProps) = this()
-  }
-  /* static members */
-  object Flyout {
-    
-    @JSImport("react-native-windows", "Flyout")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def getDerivedStateFromProps(nextProps: IFlyoutProps, prevState: IFlyoutTargetState): IFlyoutTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IFlyoutTargetState]
-  }
+  type ActivityIndicatorProperties = ActivityIndicatorProps
   
-  @JSImport("react-native-windows", "Glyph")
-  @js.native
-  class Glyph protected ()
-    extends typings.reactNativeWindows.glyphMod.Glyph {
-    def this(props: GlyphProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: GlyphProps, context: js.Any) = this()
-  }
+  type ButtonProperties = ButtonProps
   
-  @JSImport("react-native-windows", "HandledEventPhase")
-  @js.native
-  object HandledEventPhase extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase & Double] = js.native
-    
-    /* 3 */ val Bubbling: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Bubbling & Double = js.native
-    
-    /* 1 */ val Capturing: typings.reactNativeWindows.keyboardExtPropsMod.HandledEventPhase.Capturing & Double = js.native
-  }
+  type DatePickerIOSProperties = DatePickerIOSProps
   
-  @JSImport("react-native-windows", "Picker")
-  @js.native
-  class Picker protected ()
-    extends typings.reactNativeWindows.pickerWindowsMod.Picker {
-    def this(props: IPickerProps) = this()
-  }
-  /* static members */
-  object Picker {
-    
-    @JSImport("react-native-windows", "Picker")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-native-windows", "Picker.Item")
-    @js.native
-    def Item: Instantiable0[PickerItem] = js.native
-    inline def Item_=(x: Instantiable0[PickerItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
-    
-    inline def getDerivedStateFromProps(props: PickerPropsWithChildren): State = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[State]
-  }
+  type DrawerLayoutAndroidProperties = DrawerLayoutAndroidProps
   
-  @JSImport("react-native-windows", "Popup")
-  @js.native
-  class Popup protected ()
-    extends typings.reactNativeWindows.popupMod.Popup {
-    def this(props: IPopupProps) = this()
-  }
-  /* static members */
-  object Popup {
-    
-    @JSImport("react-native-windows", "Popup")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def getDerivedStateFromProps(nextProps: IPopupProps, prevState: IPopupTargetState): IPopupTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IPopupTargetState]
-  }
+  type FlatListProperties[ItemT] = FlatListProps[ItemT]
   
-  @JSImport("react-native-windows", "ViewWindows")
-  @js.native
-  val ViewWindows: ViewWindowsType = js.native
+  type ImageBackgroundProperties = ImageBackgroundProps
   
-  inline def supportKeyboard[P /* <: js.Object */](WrappedComponent: ComponentType[P]): ForwardRefExoticComponent[(PropsWithoutRef[P & IKeyboardProps & Children]) & RefAttributes[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportKeyboard")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[(PropsWithoutRef[P & IKeyboardProps & Children]) & RefAttributes[js.Any]]]
+  type ImageProperties = ImageProps
+  
+  type ImagePropertiesAndroid = ImagePropsAndroid
+  
+  type ImagePropertiesIOS = ImagePropsIOS
+  
+  type ImagePropertiesSourceOptions = ImageSourcePropType
+  
+  type InputAccessoryViewProperties = InputAccessoryViewProps
+  
+  type ListViewProperties = ListViewProps
+  
+  type MaskedViewIOSProperties = MaskedViewIOSProps
+  
+  type ModalProperties = ModalProps
+  
+  type NavigatorIOSProperties = NavigatorIOSProps
+  
+  type ProgressBarAndroidProperties = ProgressBarAndroidProps
+  
+  type ProgressViewIOSProperties = ProgressViewIOSProps
+  
+  type RecyclerViewBackedScrollViewProperties = RecyclerViewBackedScrollViewProps
+  
+  type RefreshControlProperties = RefreshControlProps
+  
+  type RefreshControlPropertiesAndroid = RefreshControlPropsAndroid
+  
+  type RefreshControlPropertiesIOS = RefreshControlPropsIOS
+  
+  type ScrollViewProperties = ScrollViewProps
+  
+  type ScrollViewPropertiesAndroid = ScrollViewPropsAndroid
+  
+  type ScrollViewPropertiesIOS = ScrollViewPropsIOS
+  
+  type SectionListProperties[ItemT] = SectionListProps[ItemT, DefaultSectionT]
+  
+  type SegmentedControlIOSProperties = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SegmentedControlIOSProps */ Any
+  
+  type SliderProperties = SliderProps
+  
+  type SliderPropertiesAndroid = SliderPropsAndroid
+  
+  type SliderPropertiesIOS = SliderPropsIOS
+  
+  type SnapshotViewIOSProperties = SnapshotViewIOSProps
+  
+  type StatusBarProperties = StatusBarProps
+  
+  type StatusBarPropertiesAndroid = StatusBarPropsAndroid
+  
+  type StatusBarPropertiesIOS = StatusBarPropsIOS
+  
+  type SwitchIOSProperties = SwitchIOSProps
+  
+  type SwitchProperties = SwitchProps
+  
+  type SwitchPropertiesIOS = SwitchPropsIOS
+  
+  type TabBarIOSItemProperties = TabBarIOSItemProps
+  
+  type TabBarIOSProperties = TabBarIOSProps
+  
+  type TextInputAndroidProperties = TextInputAndroidProps
+  
+  type TextInputIOSProperties = TextInputIOSProps
+  
+  type TextInputProperties = TextInputProps
+  
+  type TextProperties = TextProps
+  
+  type TextPropertiesAndroid = TextPropsAndroid
+  
+  type TextPropertiesIOS = TextPropsIOS
+  
+  type TouchableHighlightProperties = TouchableHighlightProps
+  
+  type TouchableNativeFeedbackProperties = TouchableNativeFeedbackProps
+  
+  type TouchableOpacityProperties = TouchableOpacityProps
+  
+  type TouchableWithoutFeedbackProperties = TouchableWithoutFeedbackProps
+  
+  type ViewPagerAndroidProperties = ViewPagerAndroidProps
+  
+  type ViewProperties = ViewProps
+  
+  type ViewPropertiesAndroid = ViewPropsAndroid
+  
+  type ViewPropertiesIOS = ViewPropsIOS
+  
+  type VirtualizedListProperties[ItemT] = VirtualizedListProps[ItemT]
 }

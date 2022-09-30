@@ -29,7 +29,7 @@ object mod {
     
     @JSImport("leaflet", "AwesomeMarkers.Icon")
     @js.native
-    class Icon_ ()
+    open class Icon_ ()
       extends typings.leaflet.mod.Icon_[AwesomeMarkersIconOptions] {
       def this(options: AwesomeMarkersIconOptions) = this()
     }

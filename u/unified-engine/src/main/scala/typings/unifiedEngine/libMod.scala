@@ -9,8 +9,8 @@ import typings.unified.mod.Pluggable
 import typings.unified.mod.PluggableList
 import typings.unifiedEngine.configurationMod.PluginIdList
 import typings.unifiedEngine.configurationMod.PluginIdObject
-import typings.unifiedEngine.unifiedEngineNumbers.`0`
-import typings.unifiedEngine.unifiedEngineNumbers.`1`
+import typings.unifiedEngine.unifiedEngineInts.`0`
+import typings.unifiedEngine.unifiedEngineInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

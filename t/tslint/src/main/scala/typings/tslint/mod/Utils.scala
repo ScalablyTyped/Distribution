@@ -27,7 +27,7 @@ object Utils {
   
   inline def camelize(stringWithHyphens: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(stringWithHyphens.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def dedent(strings: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def dedent(strings: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(scala.List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def denormalizeWinPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("denormalizeWinPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   

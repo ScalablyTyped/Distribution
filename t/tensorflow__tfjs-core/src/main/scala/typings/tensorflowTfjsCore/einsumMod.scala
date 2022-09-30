@@ -16,5 +16,5 @@ object einsumMod {
   @js.native
   val einsum: js.Function2[/* equation */ String, /* repeated */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  inline def einsum_(equation: String, tensors: Tensor[Rank]*): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("einsum_")(List(equation.asInstanceOf[js.Any]).`++`(tensors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Tensor[Rank]]
+  inline def einsum_(equation: String, tensors: Tensor[Rank]*): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("einsum_")(scala.List(equation.asInstanceOf[js.Any]).`++`(tensors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Tensor[Rank]]
 }

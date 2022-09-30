@@ -59,7 +59,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
+    * For EACH ITEM in the collection: Gets an integer that represents the content control identifier.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -75,7 +75,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
+    * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -83,7 +83,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
+    * For EACH ITEM in the collection: Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table that contains the content control. Throws an error if it is not contained in a table.
+    * For EACH ITEM in the collection: Gets the table that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -99,7 +99,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.
+    * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -107,7 +107,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
+    * For EACH ITEM in the collection: Gets the table cell that contains the content control. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -115,7 +115,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+    * For EACH ITEM in the collection: Gets the table that contains the content control. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -123,8 +123,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-    * **Note**: The set operation for this property is not supported in Word on the web.
+    * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -156,7 +155,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+    * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -172,7 +171,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var tag: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the text of the content control. Read-only.
+    * For EACH ITEM in the collection: Gets the text of the content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -188,7 +187,7 @@ trait ContentControlCollectionLoadOptions extends StObject {
   var title: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+    * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently.
     *
     * @remarks
     * [Api set: WordApi 1.1]

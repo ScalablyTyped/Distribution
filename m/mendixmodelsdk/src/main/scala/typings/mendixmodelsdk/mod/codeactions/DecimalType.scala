@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.DecimalType")
 @js.native
-class DecimalType protected ()
+open class DecimalType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.DecimalType {
   def this(
     model: AbstractModel,

@@ -5,40 +5,34 @@ import typings.braftEditor.mod.ExtendControlType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Component extends ExtendControlType {
+trait Component
+  extends StObject
+     with ExtendControlType {
   
-  var component: ReactNode = js.native
+  var component: ReactNode
   
-  var key: String = js.native
+  var key: String
   
-  var `type`: component = js.native
+  var `type`: component
 }
 object Component {
   
-  @scala.inline
-  def apply(key: String, `type`: component): Component = {
+  inline def apply(key: String): Component = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("component")
     __obj.asInstanceOf[Component]
   }
   
-  @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+  extension [Self <: Component](x: Self) {
     
-    @scala.inline
-    def setComponent(value: ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: component): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: component): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

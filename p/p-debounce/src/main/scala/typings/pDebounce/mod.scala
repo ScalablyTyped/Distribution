@@ -1,6 +1,7 @@
 package typings.pDebounce
 
 import typings.pDebounce.mod.pDebounce.Options
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +29,11 @@ object mod {
     	```
     	*/
     inline def apply[ArgumentsType /* <: js.Array[Any] */, ReturnType](
-      fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType] | ReturnType],
+      fn: js.Function1[/* arguments */ ArgumentsType, PromiseLike[ReturnType] | ReturnType],
       wait: Double
     ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
     inline def apply[ArgumentsType /* <: js.Array[Any] */, ReturnType](
-      fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType] | ReturnType],
+      fn: js.Function1[/* arguments */ ArgumentsType, PromiseLike[ReturnType] | ReturnType],
       wait: Double,
       options: Options
     ): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
@@ -61,7 +62,7 @@ object mod {
     	//=> 3
     	```
     	*/
-    inline def promise[ArgumentsType /* <: js.Array[Any] */, ReturnType](function_ : js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType] | ReturnType]): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(function_.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
+    inline def promise[ArgumentsType /* <: js.Array[Any] */, ReturnType](function_ : js.Function1[/* arguments */ ArgumentsType, PromiseLike[ReturnType] | ReturnType]): js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(function_.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, js.Promise[ReturnType]]]
   }
   
   object pDebounce {

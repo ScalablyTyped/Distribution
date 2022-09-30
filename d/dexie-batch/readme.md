@@ -11,9 +11,9 @@ Fetch DB entries in batches to improve performance while respecting IPC size con
 | Full name          | dexie-batch |
 | Keywords           | batch, bulk, dexie, fetch, get |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 6392 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1597.6666666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/raphinesse/dexie-batch#readme)

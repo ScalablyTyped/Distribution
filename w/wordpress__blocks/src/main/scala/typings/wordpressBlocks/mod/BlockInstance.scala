@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BlockInstance[T /* <: Record[String, js.Any] */] extends StObject {
+trait BlockInstance[T /* <: Record[String, Any] */] extends StObject {
   
   /**
     * Attributes for the block.
@@ -21,7 +21,7 @@ trait BlockInstance[T /* <: Record[String, js.Any] */] extends StObject {
   /**
     * Array of inner blocks, if the block has any.
     */
-  val innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]
+  val innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
   
   /**
     * Indicates whether or not the block is valid.
@@ -40,10 +40,10 @@ trait BlockInstance[T /* <: Record[String, js.Any] */] extends StObject {
 }
 object BlockInstance {
   
-  inline def apply[T /* <: Record[String, js.Any] */](
+  inline def apply[T /* <: Record[String, Any] */](
     attributes: T,
     clientId: String,
-    innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]],
     isValid: Boolean,
     name: String
   ): BlockInstance[T] = {
@@ -51,15 +51,15 @@ object BlockInstance {
     __obj.asInstanceOf[BlockInstance[T]]
   }
   
-  extension [Self <: BlockInstance[?], T /* <: Record[String, js.Any] */](x: Self & BlockInstance[T]) {
+  extension [Self <: BlockInstance[?], T /* <: Record[String, Any] */](x: Self & BlockInstance[T]) {
     
     inline def setAttributes(value: T): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+    inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
     
-    inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
+    inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value*))
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

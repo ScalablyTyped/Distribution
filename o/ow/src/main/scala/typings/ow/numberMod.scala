@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object numberMod {
   
-  @JSImport("ow/dist/source/predicates/number", "NumberPredicate")
+  @JSImport("ow/dist/predicates/number", "NumberPredicate")
   @js.native
   /**
     @hidden
     */
-  class NumberPredicate () extends Predicate[Double] {
+  open class NumberPredicate () extends Predicate[Double] {
     def this(options: PredicateOptions) = this()
     
     /**

@@ -1,9 +1,9 @@
 package typings.iobroker.anon
 
 import typings.iobroker.iobrokerBooleans.`true`
-import typings.iobroker.iobrokerNumbers.`1`
-import typings.iobroker.iobrokerNumbers.`2`
-import typings.iobroker.iobrokerNumbers.`3`
+import typings.iobroker.iobrokerInts.`1`
+import typings.iobroker.iobrokerInts.`2`
+import typings.iobroker.iobrokerInts.`3`
 import typings.iobroker.objectsMod.global.ioBroker.InstanceMode
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import org.scalablytyped.runtime.StObject

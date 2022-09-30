@@ -1,8 +1,11 @@
 package typings.webdriverio
 
-import typings.std.Record
+import typings.devtoolsProtocol.mod.Protocol.Network.ErrorReason
+import typings.puppeteerCore.commonConnectionMod.CDPSession
 import typings.std.Set
-import typings.webdriverio.anon.MockedResponse
+import typings.webdriverio.anon.MatchesmockedResponsestri
+import typings.webdriverio.interceptionTypesMod.Matches
+import typings.webdriverio.interceptionTypesMod.MockOverwrite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +14,7 @@ object devtoolsMod {
   
   @JSImport("webdriverio/build/utils/interception/devtools", JSImport.Default)
   @js.native
-  class default () extends DevtoolsInterception
+  open class default () extends DevtoolsInterception
   /* static members */
   object default {
     
@@ -19,24 +22,7 @@ object devtoolsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def handleRequestInterception(client: Client, mocks: Set[typings.webdriverio.interceptionMod.default]): js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequestInterception")(client.asInstanceOf[js.Any], mocks.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]]]
-  }
-  
-  trait Client extends StObject {
-    
-    def send(requestName: String, requestOptions: RequestOptions): js.Promise[ClientResponse]
-  }
-  object Client {
-    
-    inline def apply(send: (String, RequestOptions) => js.Promise[ClientResponse]): Client = {
-      val __obj = js.Dynamic.literal(send = js.Any.fromFunction2(send))
-      __obj.asInstanceOf[Client]
-    }
-    
-    extension [Self <: Client](x: Self) {
-      
-      inline def setSend(value: (String, RequestOptions) => js.Promise[ClientResponse]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
-    }
+    inline def handleRequestInterception(client: CDPSession, mocks: Set[typings.webdriverio.interceptionMod.default]): js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequestInterception")(client.asInstanceOf[js.Any], mocks.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]]]
   }
   
   trait ClientResponse extends StObject {
@@ -66,69 +52,59 @@ object devtoolsMod {
   trait DevtoolsInterception
     extends typings.webdriverio.interceptionMod.default {
     
-    def abort(errorReason: String): Unit = js.native
-    def abort(errorReason: String, sticky: Boolean): Unit = js.native
+    /**
+      * Abort the request with an error code
+      * @param {string} errorCode  error code of the response
+      */
+    def abort(errorReason: ErrorReason): Unit = js.native
     
-    def abortOnce(errorReason: String): Unit = js.native
-    
+    /**
+      * allows access to all requests made with given pattern
+      */
     @JSName("calls")
-    def calls_MDevtoolsInterception: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webdriverio.Matches */ js.Any
-      ] = js.native
+    def calls_MDevtoolsInterception: js.Array[Matches] = js.native
     
-    def clear(): Unit = js.native
+    /**
+      * Always respond with same overwrite
+      * @param {*} overwrites  payload to overwrite the response
+      * @param {*} params      additional respond parameters to overwrite
+      */
+    def respond(overwrite: MockOverwrite): Unit = js.native
     
-    def respond(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any
-    ): Unit = js.native
-    def respond(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any,
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockResponseParams */ js.Any
-    ): Unit = js.native
-    
-    def respondOnce(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any
-    ): Unit = js.native
-    def respondOnce(
-      overwrite: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockOverwrite */ js.Any,
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.MockResponseParams */ js.Any
-    ): Unit = js.native
-    
-    def restore(): Unit = js.native
+    /**
+      * Respond request once with given overwrite
+      * @param {*} overwrites  payload to overwrite the response
+      * @param {*} params      additional respond parameters to overwrite
+      */
+    def respondOnce(overwrite: MockOverwrite): Unit = js.native
   }
   
   trait Event extends StObject {
     
-    var request: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Matches */ js.Any) & MockedResponse
+    var request: MatchesmockedResponsestri
     
     var requestId: String
     
-    var responseHeaders: js.Array[Record[String, String]]
+    var responseHeaders: js.Array[HeaderEntry]
     
     var responseStatusCode: js.UndefOr[Double] = js.undefined
   }
   object Event {
     
-    inline def apply(
-      request: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Matches */ js.Any) & MockedResponse,
-      requestId: String,
-      responseHeaders: js.Array[Record[String, String]]
-    ): Event = {
+    inline def apply(request: MatchesmockedResponsestri, requestId: String, responseHeaders: js.Array[HeaderEntry]): Event = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
     extension [Self <: Event](x: Self) {
       
-      inline def setRequest(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Matches */ js.Any) & MockedResponse
-      ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: MatchesmockedResponsestri): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      inline def setResponseHeaders(value: js.Array[Record[String, String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+      inline def setResponseHeaders(value: js.Array[HeaderEntry]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
-      inline def setResponseHeadersVarargs(value: (Record[String, String])*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+      inline def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
       
       inline def setResponseStatusCode(value: Double): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
       
@@ -136,50 +112,24 @@ object devtoolsMod {
     }
   }
   
-  trait RequestOptions extends StObject {
+  trait HeaderEntry extends StObject {
     
-    var body: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.JsonCompatible */ js.Any)
-      ] = js.undefined
+    var name: String
     
-    var errorReason: js.UndefOr[String] = js.undefined
-    
-    var requestId: String
-    
-    var responseCode: js.UndefOr[Double] = js.undefined
-    
-    var responseHeaders: js.UndefOr[js.Array[Record[String, String]]] = js.undefined
+    var value: String
   }
-  object RequestOptions {
+  object HeaderEntry {
     
-    inline def apply(requestId: String): RequestOptions = {
-      val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RequestOptions]
+    inline def apply(name: String, value: String): HeaderEntry = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HeaderEntry]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    extension [Self <: HeaderEntry](x: Self) {
       
-      inline def setBody(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.JsonCompatible */ js.Any)
-      ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
-      
-      inline def setErrorReason(value: String): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
-      
-      inline def setErrorReasonUndefined: Self = StObject.set(x, "errorReason", js.undefined)
-      
-      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
-      
-      inline def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
-      
-      inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
-      
-      inline def setResponseHeaders(value: js.Array[Record[String, String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
-      
-      inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
-      
-      inline def setResponseHeadersVarargs(value: (Record[String, String])*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

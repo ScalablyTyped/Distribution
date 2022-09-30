@@ -16,7 +16,7 @@ object mod {
     
     @JSImport("leaflet", "Control.Fullscreen")
     @js.native
-    class Fullscreen ()
+    open class Fullscreen ()
       extends typings.leaflet.mod.Control_ {
       def this(options: FullscreenOptions) = this()
       

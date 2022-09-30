@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(options: AposConstructor[js.Object, js.Object], args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply(options: AposConstructor[js.Object, js.Object], args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("apostrophe", JSImport.Namespace)
   @js.native

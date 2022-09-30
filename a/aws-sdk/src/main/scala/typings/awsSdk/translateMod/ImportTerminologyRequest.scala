@@ -26,6 +26,8 @@ trait ImportTerminologyRequest extends StObject {
     */
   var Name: ResourceName
   
+  var Tags: js.UndefOr[TagList] = js.undefined
+  
   /**
     * The terminology data for the custom terminology being imported.
     */
@@ -51,6 +53,12 @@ object ImportTerminologyRequest {
     inline def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "MergeStrategy", value.asInstanceOf[js.Any])
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTerminologyData(value: TerminologyData): Self = StObject.set(x, "TerminologyData", value.asInstanceOf[js.Any])
   }

@@ -1,5 +1,6 @@
 package typings.pDefer
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +34,6 @@ object mod {
     	*/
     def resolve(): Unit = js.native
     def resolve(value: ValueType): Unit = js.native
-    def resolve(value: js.Thenable[ValueType]): Unit = js.native
+    def resolve(value: PromiseLike[ValueType]): Unit = js.native
   }
 }

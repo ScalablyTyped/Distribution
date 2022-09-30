@@ -10,7 +10,7 @@ object sauceMod {
   
   @JSImport("protractor/built/driverProviders/sauce", "Sauce")
   @js.native
-  class Sauce protected () extends DriverProvider {
+  open class Sauce protected () extends DriverProvider {
     def this(config: Config) = this()
     
     /**
@@ -19,8 +19,8 @@ object sauceMod {
       * @param {string} region
       * @return {string} The endpoint that needs to be used
       */
-    /* private */ def getSauceEndpoint(region: js.Any): js.Any = js.native
+    /* private */ def getSauceEndpoint(region: Any): Any = js.native
     
-    var sauceServer_ : js.Any = js.native
+    var sauceServer_ : Any = js.native
   }
 }

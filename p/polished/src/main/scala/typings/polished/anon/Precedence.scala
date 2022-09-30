@@ -1,8 +1,8 @@
 package typings.polished.anon
 
-import typings.polished.polishedNumbers.`0`
-import typings.polished.polishedNumbers.`1`
-import typings.polished.polishedNumbers.`3`
+import typings.polished.polishedInts.`0`
+import typings.polished.polishedInts.`1`
+import typings.polished.polishedInts.`3`
 import typings.polished.polishedStrings.Plussign
 import typings.polished.polishedStrings.prefix
 import org.scalablytyped.runtime.StObject

@@ -11,6 +11,9 @@ import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.`private`
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.public
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.registeredEqualssigntrue
 import typings.matrixAppserviceBridge.membershipCacheMod.UserMembership
+import typings.matrixBotSdk.matrixProfileMod.MatrixProfileInfo
+import typings.matrixBotSdk.mod.MatrixClient
+import typings.matrixBotSdk.presenceEventMod.PresenceState
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -68,15 +71,8 @@ object intentMod {
       * @param opts.caching.size How many entries should be kept in the cache, before the oldest is dropped.
       * @param opts.getJsSdkClient Create a Matrix JS SDK client on demand for legacy code.
       */
-    def this(
-      botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any,
-      botClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.MatrixClient */ Any
-    ) = this()
-    def this(
-      botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any,
-      botClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.MatrixClient */ Any,
-      opts: IntentOpts
-    ) = this()
+    def this(botSdkIntent: typings.matrixBotSdk.mod.Intent, botClient: MatrixClient) = this()
+    def this(botSdkIntent: typings.matrixBotSdk.mod.Intent, botClient: MatrixClient, opts: IntentOpts) = this()
     
     /**
       * Ensures that the client has the required power level to post the event type.
@@ -124,7 +120,7 @@ object intentMod {
     
     /* private */ val botClient: Any = js.native
     
-    val botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any = js.native
+    val botSdkIntent: typings.matrixBotSdk.mod.Intent = js.native
     
     /**
       * Create a new alias mapping.
@@ -198,18 +194,10 @@ object intentMod {
       * @return A Promise that resolves with the requested user's profile
       * information
       */
-    def getProfileInfo(userId: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any
-      ] = js.native
-    def getProfileInfo(userId: String, info: Unit, useCache: Boolean): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any
-      ] = js.native
-    def getProfileInfo(userId: String, info: UserProfileKeys): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any
-      ] = js.native
-    def getProfileInfo(userId: String, info: UserProfileKeys, useCache: Boolean): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any
-      ] = js.native
+    def getProfileInfo(userId: String): js.Promise[MatrixProfileInfo] = js.native
+    def getProfileInfo(userId: String, info: Unit, useCache: Boolean): js.Promise[MatrixProfileInfo] = js.native
+    def getProfileInfo(userId: String, info: UserProfileKeys): js.Promise[MatrixProfileInfo] = js.native
+    def getProfileInfo(userId: String, info: UserProfileKeys, useCache: Boolean): js.Promise[MatrixProfileInfo] = js.native
     
     /**
       * Get a state event in a room.
@@ -273,7 +261,7 @@ object intentMod {
     
     /* private */ var legacyClient: Any = js.native
     
-    def matrixClient: Any = js.native
+    def matrixClient: MatrixClient = js.native
     
     /**
       * Inform this Intent class of an incoming event. Various optimisations will be
@@ -405,13 +393,8 @@ object intentMod {
       * @param status_msg The status message to attach.
       * @return Resolves if the presence was set or no-oped, rejects otherwise.
       */
-    def setPresence(
-      presence: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PresenceState */ Any
-    ): js.Promise[Any] = js.native
-    def setPresence(
-      presence: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PresenceState */ Any,
-      statusMsg: String
-    ): js.Promise[Any] = js.native
+    def setPresence(presence: PresenceState): js.Promise[Any] = js.native
+    def setPresence(presence: PresenceState, statusMsg: String): js.Promise[Any] = js.native
     
     /**
       * Set the avatar of a room.
@@ -465,10 +448,7 @@ object intentMod {
       */
     def setRoomTopic(roomId: String, topic: String): js.Promise[Eventid] = js.native
     
-    def setRoomUserProfile(
-      roomId: String,
-      profile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any
-    ): js.Promise[Unit] = js.native
+    def setRoomUserProfile(roomId: String, profile: MatrixProfileInfo): js.Promise[Unit] = js.native
     
     /**
       * Unban a user from a room.
@@ -561,28 +541,23 @@ object intentMod {
   
   trait IntentBackingStore extends StObject {
     
-    def getMemberProfile(roomId: String, userid: String): Any
+    def getMemberProfile(roomId: String, userid: String): MatrixProfileInfo
     
     def getMembership(roomId: String, userId: String): UserMembership
     
     def getPowerLevelContent(roomId: String): js.UndefOr[PowerLevelContent]
     
-    def setMembership(
-      roomId: String,
-      userId: String,
-      membership: UserMembership,
-      profile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any
-    ): Unit
+    def setMembership(roomId: String, userId: String, membership: UserMembership, profile: MatrixProfileInfo): Unit
     
     def setPowerLevelContent(roomId: String, content: PowerLevelContent): Unit
   }
   object IntentBackingStore {
     
     inline def apply(
-      getMemberProfile: (String, String) => Any,
+      getMemberProfile: (String, String) => MatrixProfileInfo,
       getMembership: (String, String) => UserMembership,
       getPowerLevelContent: String => js.UndefOr[PowerLevelContent],
-      setMembership: (String, String, UserMembership, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any) => Unit,
+      setMembership: (String, String, UserMembership, MatrixProfileInfo) => Unit,
       setPowerLevelContent: (String, PowerLevelContent) => Unit
     ): IntentBackingStore = {
       val __obj = js.Dynamic.literal(getMemberProfile = js.Any.fromFunction2(getMemberProfile), getMembership = js.Any.fromFunction2(getMembership), getPowerLevelContent = js.Any.fromFunction1(getPowerLevelContent), setMembership = js.Any.fromFunction4(setMembership), setPowerLevelContent = js.Any.fromFunction2(setPowerLevelContent))
@@ -591,15 +566,13 @@ object intentMod {
     
     extension [Self <: IntentBackingStore](x: Self) {
       
-      inline def setGetMemberProfile(value: (String, String) => Any): Self = StObject.set(x, "getMemberProfile", js.Any.fromFunction2(value))
+      inline def setGetMemberProfile(value: (String, String) => MatrixProfileInfo): Self = StObject.set(x, "getMemberProfile", js.Any.fromFunction2(value))
       
       inline def setGetMembership(value: (String, String) => UserMembership): Self = StObject.set(x, "getMembership", js.Any.fromFunction2(value))
       
       inline def setGetPowerLevelContent(value: String => js.UndefOr[PowerLevelContent]): Self = StObject.set(x, "getPowerLevelContent", js.Any.fromFunction1(value))
       
-      inline def setSetMembership(
-        value: (String, String, UserMembership, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixProfileInfo */ Any) => Unit
-      ): Self = StObject.set(x, "setMembership", js.Any.fromFunction4(value))
+      inline def setSetMembership(value: (String, String, UserMembership, MatrixProfileInfo) => Unit): Self = StObject.set(x, "setMembership", js.Any.fromFunction4(value))
       
       inline def setSetPowerLevelContent(value: (String, PowerLevelContent) => Unit): Self = StObject.set(x, "setPowerLevelContent", js.Any.fromFunction2(value))
     }

@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -59,7 +60,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.additions
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.address
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.all
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.alt
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.applet
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.area
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.article
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.ascending
@@ -68,7 +68,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.assertive
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.audio
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.b
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.base
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.basefont
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.bdi
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.bdo
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.blockquote
@@ -95,22 +94,19 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.descending
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.details
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dfn
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dialog
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dir
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.div
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dl
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.dt
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.em
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.email
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.embed
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.environment
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.execute
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.fieldset
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.figcaption
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.figure
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.font
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.footer
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.form
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.frame
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.frameset
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.grammar
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.grid
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.h1
@@ -142,7 +138,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.location
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.main
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.map
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.mark
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.marquee
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.menu
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.meta
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.meter
@@ -162,7 +157,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.other
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.output
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.p
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.page
-import typings.wordpressBlockEditor.wordpressBlockEditorStrings.param
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.picture
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.polite
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.popup
@@ -214,6 +208,7 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.tree
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.u
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.ul
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.url
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.user
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.vertical
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.video
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.wbr
@@ -231,7 +226,7 @@ object richTextMod {
     
     inline def apply(
       props: Props[
-          a | abbr | address | applet | area | article | aside | audio | b | base | basefont | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | dir | div | dl | dt | em | embed | fieldset | figcaption | figure | font | footer | form | frame | frameset | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | marquee | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | param | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
+          a | abbr | address | area | article | aside | audio | b | base | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | div | dl | dt | em | embed | fieldset | figcaption | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
         ]
     ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -248,8 +243,6 @@ object richTextMod {
     
     inline def Content_address(props: ContentProps[address]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_applet(props: ContentProps[applet]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_area(props: ContentProps[area]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_article(props: ContentProps[article]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -261,8 +254,6 @@ object richTextMod {
     inline def Content_b(props: ContentProps[b]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_base(props: ContentProps[base]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_basefont(props: ContentProps[basefont]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_bdi(props: ContentProps[bdi]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -302,8 +293,6 @@ object richTextMod {
     
     inline def Content_dialog(props: ContentProps[dialog]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_dir(props: ContentProps[dir]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_div(props: ContentProps[div]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_dl(props: ContentProps[dl]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -320,15 +309,9 @@ object richTextMod {
     
     inline def Content_figure(props: ContentProps[figure]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_font(props: ContentProps[font]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_footer(props: ContentProps[footer]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_form(props: ContentProps[form]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_frame(props: ContentProps[frame]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_frameset(props: ContentProps[frameset]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_h1(props: ContentProps[h1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -378,8 +361,6 @@ object richTextMod {
     
     inline def Content_mark(props: ContentProps[mark]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    inline def Content_marquee(props: ContentProps[marquee]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
     inline def Content_menu(props: ContentProps[menu]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_meta(props: ContentProps[meta]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -401,8 +382,6 @@ object richTextMod {
     inline def Content_output(props: ContentProps[output]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_p(props: ContentProps[p]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    inline def Content_param(props: ContentProps[param]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     inline def Content_picture(props: ContentProps[picture]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -548,8 +527,8 @@ object richTextMod {
     }
     object Props {
       
-      inline def apply(icon: Icon, onClick: () => Unit, title: String): typings.wordpressBlockEditor.richTextMod.RichTextToolbarButton.Props = {
-        val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), title = title.asInstanceOf[js.Any])
+      inline def apply(icon: Icon | Element, title: String): typings.wordpressBlockEditor.richTextMod.RichTextToolbarButton.Props = {
+        val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressBlockEditor.richTextMod.RichTextToolbarButton.Props]
       }
       
@@ -579,7 +558,7 @@ object richTextMod {
   
   object RichText {
     
-    trait ContentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */]
+    trait ContentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */]
       extends StObject
          with HTMLProps[T] {
       
@@ -595,12 +574,12 @@ object richTextMod {
     }
     object ContentProps {
       
-      inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */](value: String): ContentProps[T] = {
+      inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */](value: String): ContentProps[T] = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[ContentProps[T]]
       }
       
-      extension [Self <: ContentProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */](x: Self & ContentProps[T]) {
+      extension [Self <: ContentProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */](x: Self & ContentProps[T]) {
         
         inline def setMultiline(value: Boolean | p | li): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
         
@@ -615,7 +594,7 @@ object richTextMod {
     }
     
     /* Inlined parent std.Omit<react.react.HTMLProps<T>, 'onChange'> */
-    trait Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */] extends StObject {
+    trait Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */] extends StObject {
       
       var default: js.UndefOr[Boolean] = js.undefined
       
@@ -633,15 +612,21 @@ object richTextMod {
       
       var allowTransparency: js.UndefOr[Boolean] = js.undefined
       
+      /**
+        * By default, all registered formats are allowed. This setting can be used to fine-tune
+        * the allowed formats.
+        */
+      var allowedFormats: js.UndefOr[js.Array[String]] = js.undefined
+      
       var alt: js.UndefOr[String] = js.undefined
       
       var `aria-activedescendant`: js.UndefOr[String] = js.undefined
       
-      var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+      var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
       
-      var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+      var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
       
@@ -659,21 +644,21 @@ object richTextMod {
       
       var `aria-details`: js.UndefOr[String] = js.undefined
       
-      var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+      var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
       
       var `aria-errormessage`: js.UndefOr[String] = js.undefined
       
-      var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+      var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-flowto`: js.UndefOr[String] = js.undefined
       
-      var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+      var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
       
-      var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+      var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
       
@@ -687,11 +672,11 @@ object richTextMod {
       
       var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
       
-      var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+      var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
       
-      var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+      var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
       
-      var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+      var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
       
@@ -703,13 +688,13 @@ object richTextMod {
       
       var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
       
-      var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+      var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-relevant`: js.UndefOr[
             additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
           ] = js.undefined
       
-      var `aria-required`: js.UndefOr[Boolean] = js.undefined
+      var `aria-required`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-roledescription`: js.UndefOr[String] = js.undefined
       
@@ -719,7 +704,7 @@ object richTextMod {
       
       var `aria-rowspan`: js.UndefOr[Double] = js.undefined
       
-      var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+      var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-setsize`: js.UndefOr[Double] = js.undefined
       
@@ -752,9 +737,9 @@ object richTextMod {
       /**
         * A list of autocompleters to use instead of the default.
         */
-      var autocompleters: js.UndefOr[js.Array[Completer[js.Any]]] = js.undefined
+      var autocompleters: js.UndefOr[js.Array[Completer[Any]]] = js.undefined
       
-      var capture: js.UndefOr[Boolean | String] = js.undefined
+      var capture: js.UndefOr[Boolean | user | environment] = js.undefined
       
       var cellPadding: js.UndefOr[Double | String] = js.undefined
       
@@ -810,7 +795,7 @@ object richTextMod {
       
       var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var download: js.UndefOr[js.Any] = js.undefined
+      var download: js.UndefOr[Any] = js.undefined
       
       var draggable: js.UndefOr[Booleanish] = js.undefined
       
@@ -852,7 +837,7 @@ object richTextMod {
       
       var inlineToolbar: js.UndefOr[Boolean] = js.undefined
       
-      var inlist: js.UndefOr[js.Any] = js.undefined
+      var inlist: js.UndefOr[Any] = js.undefined
       
       var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
       
@@ -915,7 +900,7 @@ object richTextMod {
       var minLength: js.UndefOr[Double] = js.undefined
       
       var multiline: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 121 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113 */ Any
           ] = js.undefined
       
       var multiple: js.UndefOr[Boolean] = js.undefined
@@ -1070,9 +1055,7 @@ object richTextMod {
       /**
         * Called when the `RichText` instance can be replaced with the given blocks.
         */
-      var onReplace: js.UndefOr[
-            js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]], Unit]
-          ] = js.undefined
+      var onReplace: js.UndefOr[js.Function1[/* blocks */ js.Array[BlockInstance[StringDictionary[Any]]], Unit]] = js.undefined
       
       var onReset: js.UndefOr[FormEventHandler[T]] = js.undefined
       
@@ -1099,7 +1082,7 @@ object richTextMod {
       
       var onTagNameChange: js.UndefOr[
             js.Function1[
-              /* tagName */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any, 
+              /* tagName */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any, 
               Unit
             ]
           ] = js.undefined
@@ -1161,7 +1144,7 @@ object richTextMod {
       
       var reversed: js.UndefOr[Boolean] = js.undefined
       
-      var role: js.UndefOr[String] = js.undefined
+      var role: js.UndefOr[AriaRole] = js.undefined
       
       var rowSpan: js.UndefOr[Double] = js.undefined
       
@@ -1253,12 +1236,12 @@ object richTextMod {
     }
     object Props {
       
-      inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */](onChange: String => Unit, value: String): Props[T] = {
+      inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */](onChange: String => Unit, value: String): Props[T] = {
         val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props[T]]
       }
       
-      extension [Self <: Props[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */](x: Self & Props[T]) {
+      extension [Self <: Props[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */](x: Self & Props[T]) {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         
@@ -1288,6 +1271,12 @@ object richTextMod {
         
         inline def setAllowTransparencyUndefined: Self = StObject.set(x, "allowTransparency", js.undefined)
         
+        inline def setAllowedFormats(value: js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
+        
+        inline def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
+        
+        inline def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value*))
+        
         inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
         inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -1296,7 +1285,7 @@ object richTextMod {
         
         inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
         
-        inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+        inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
         
         inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
         
@@ -1304,7 +1293,7 @@ object richTextMod {
         
         inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
         
-        inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+        inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
         
         inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
         
@@ -1340,7 +1329,7 @@ object richTextMod {
         
         inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
         
-        inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+        inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
         
         inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
         
@@ -1352,7 +1341,7 @@ object richTextMod {
         
         inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
         
-        inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+        inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
         
         inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
         
@@ -1360,7 +1349,7 @@ object richTextMod {
         
         inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
         
-        inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+        inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
         
         inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
         
@@ -1368,7 +1357,7 @@ object richTextMod {
         
         inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
         
-        inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+        inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
         
         inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
         
@@ -1396,15 +1385,15 @@ object richTextMod {
         
         inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
         
-        inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+        inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
         
         inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
         
-        inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+        inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
         
         inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
         
-        inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+        inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
         
         inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
         
@@ -1428,7 +1417,7 @@ object richTextMod {
         
         inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
         
-        inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+        inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
         
         inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
         
@@ -1438,7 +1427,7 @@ object richTextMod {
         
         inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
         
-        inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+        inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
         
         inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
         
@@ -1458,7 +1447,7 @@ object richTextMod {
         
         inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
         
-        inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+        inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
         
         inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
         
@@ -1518,13 +1507,13 @@ object richTextMod {
         
         inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
         
-        inline def setAutocompleters(value: js.Array[Completer[js.Any]]): Self = StObject.set(x, "autocompleters", value.asInstanceOf[js.Any])
+        inline def setAutocompleters(value: js.Array[Completer[Any]]): Self = StObject.set(x, "autocompleters", value.asInstanceOf[js.Any])
         
         inline def setAutocompletersUndefined: Self = StObject.set(x, "autocompleters", js.undefined)
         
-        inline def setAutocompletersVarargs(value: Completer[js.Any]*): Self = StObject.set(x, "autocompleters", js.Array(value :_*))
+        inline def setAutocompletersVarargs(value: Completer[Any]*): Self = StObject.set(x, "autocompleters", js.Array(value*))
         
-        inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+        inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
         inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
         
@@ -1624,7 +1613,7 @@ object richTextMod {
         
         inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
         
-        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
         
         inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
         
@@ -1638,7 +1627,7 @@ object richTextMod {
         
         inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+        inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
         
         inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
         
@@ -1722,7 +1711,7 @@ object richTextMod {
         
         inline def setInlineToolbarUndefined: Self = StObject.set(x, "inlineToolbar", js.undefined)
         
-        inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+        inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
         
         inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
         
@@ -1840,7 +1829,7 @@ object richTextMod {
         
         inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        inline def setMultiline(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 121 */ js.Any): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+        inline def setMultiline(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113 */ Any): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
         
         inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
         
@@ -1888,7 +1877,7 @@ object richTextMod {
         
         inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
         
-        inline def setOnBlur(value: FocusEvent[T] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+        inline def setOnBlur(value: FocusEvent[T, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
         
         inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
         
@@ -1986,7 +1975,7 @@ object richTextMod {
         
         inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
         
-        inline def setOnFocus(value: FocusEvent[T] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+        inline def setOnFocus(value: FocusEvent[T, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
         
         inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
         
@@ -2118,7 +2107,7 @@ object richTextMod {
         
         inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
         
-        inline def setOnReplace(value: /* blocks */ js.Array[BlockInstance[StringDictionary[js.Any]]] => Unit): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
+        inline def setOnReplace(value: /* blocks */ js.Array[BlockInstance[StringDictionary[Any]]] => Unit): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
         
         inline def setOnReplaceUndefined: Self = StObject.set(x, "onReplace", js.undefined)
         
@@ -2159,7 +2148,7 @@ object richTextMod {
         inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
         
         inline def setOnTagNameChange(
-          value: /* tagName */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any => Unit
+          value: /* tagName */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any => Unit
         ): Self = StObject.set(x, "onTagNameChange", js.Any.fromFunction1(value))
         
         inline def setOnTagNameChangeUndefined: Self = StObject.set(x, "onTagNameChange", js.undefined)
@@ -2272,7 +2261,7 @@ object richTextMod {
         
         inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
         
-        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
         inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         

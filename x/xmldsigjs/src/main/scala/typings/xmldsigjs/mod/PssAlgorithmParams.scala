@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "PssAlgorithmParams")
 @js.native
-class PssAlgorithmParams ()
+open class PssAlgorithmParams ()
   extends typings.xmldsigjs.keyInfosMod.PssAlgorithmParams {
   def this(algorithm: RsaPSSSignParams) = this()
 }

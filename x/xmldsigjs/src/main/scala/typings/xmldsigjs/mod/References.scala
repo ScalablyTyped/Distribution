@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "References")
 @js.native
-class References ()
+open class References ()
   extends typings.xmldsigjs.xmlMod.References {
   def this(properties: js.Object) = this()
 }

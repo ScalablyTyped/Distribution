@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-konva
 
-Typings are for version 17.0.0-0
+Typings are for version 18.2.2
 
 ## Library description:
 React binding to canvas element via Konva framework
@@ -10,10 +10,10 @@ React binding to canvas element via Konva framework
 | ------------------ | :-------------: |
 | Full name          | react-konva |
 | Keywords           | react, canvas, jsx, konva |
-| # releases         | 35 |
-| # dependents       | 77 |
-| # downloads        | 1257948 |
-| # stars            | 7 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 481088.3333333333 |
+| # stars            | 4790.0 |
 
 ## Links
 - [Homepage](https://github.com/konvajs/react-konva#readme)

@@ -71,21 +71,21 @@ object Events {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.chromeApps.chromeAppsNumbers.`-1`
-    - typings.chromeApps.chromeAppsNumbers.`0`
-    - typings.chromeApps.chromeAppsNumbers.`1`
-    - typings.chromeApps.chromeAppsNumbers.`2`
+    - typings.chromeApps.chromeAppsInts.`-1`
+    - typings.chromeApps.chromeAppsInts.`0`
+    - typings.chromeApps.chromeAppsInts.`1`
+    - typings.chromeApps.chromeAppsInts.`2`
   */
   trait ConsoleMessageLevel extends StObject
   object ConsoleMessageLevel {
     
-    inline def `-1`: typings.chromeApps.chromeAppsNumbers.`-1` = -1.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`-1`]
+    inline def `-1`: typings.chromeApps.chromeAppsInts.`-1` = -1.asInstanceOf[typings.chromeApps.chromeAppsInts.`-1`]
     
-    inline def `0`: typings.chromeApps.chromeAppsNumbers.`0` = 0.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`0`]
+    inline def `0`: typings.chromeApps.chromeAppsInts.`0` = 0.asInstanceOf[typings.chromeApps.chromeAppsInts.`0`]
     
-    inline def `1`: typings.chromeApps.chromeAppsNumbers.`1` = 1.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`1`]
+    inline def `1`: typings.chromeApps.chromeAppsInts.`1` = 1.asInstanceOf[typings.chromeApps.chromeAppsInts.`1`]
     
-    inline def `2`: typings.chromeApps.chromeAppsNumbers.`2` = 2.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`2`]
+    inline def `2`: typings.chromeApps.chromeAppsInts.`2` = 2.asInstanceOf[typings.chromeApps.chromeAppsInts.`2`]
   }
   
   /**

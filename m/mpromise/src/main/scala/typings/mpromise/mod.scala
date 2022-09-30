@@ -1,5 +1,6 @@
 package typings.mpromise
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,10 +57,10 @@ object mod {
     def resolve(reason: R, arg: F): Promise[F, R] = js.native
     def resolve(reason: R, args: F*): Promise[F, R] = js.native
     
-    def `then`[TRes](onFulfilled: js.Function1[/* repeated */ F, TRes | js.Thenable[TRes]]): Promise[TRes, R] = js.native
+    def `then`[TRes](onFulfilled: js.Function1[/* repeated */ F, TRes | PromiseLike[TRes]]): Promise[TRes, R] = js.native
     def `then`[TRes](
-      onFulfilled: js.Function1[/* repeated */ F, TRes | js.Thenable[TRes]],
-      onRejected: js.Function1[/* err */ R, TRes | js.Thenable[TRes]]
+      onFulfilled: js.Function1[/* repeated */ F, TRes | PromiseLike[TRes]],
+      onRejected: js.Function1[/* err */ R, TRes | PromiseLike[TRes]]
     ): Promise[TRes, R] = js.native
   }
 }

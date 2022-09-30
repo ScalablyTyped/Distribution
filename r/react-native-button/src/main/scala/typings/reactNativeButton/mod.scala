@@ -155,7 +155,7 @@ object mod {
     /**
       * If true, disable all interactions for this component.
       */
-    var disabled: js.UndefOr[Boolean | Null] = js.undefined
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     var disabledContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
@@ -302,7 +302,7 @@ object mod {
       *
       * @platform android
       */
-    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+    var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * *(Apple TV only)* Object with properties to control Apple TV parallax effects.
@@ -433,8 +433,6 @@ object mod {
       
       inline def setDisabledContainerStyleUndefined: Self = StObject.set(x, "disabledContainerStyle", js.undefined)
       
-      inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
-      
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
@@ -534,8 +532,6 @@ object mod {
       inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
       
       inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-      
-      inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
       
       inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
       

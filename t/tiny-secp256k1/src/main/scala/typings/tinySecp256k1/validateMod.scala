@@ -1,7 +1,7 @@
 package typings.tinySecp256k1
 
-import typings.tinySecp256k1.tinySecp256k1Numbers.`0`
-import typings.tinySecp256k1.tinySecp256k1Numbers.`1`
+import typings.tinySecp256k1.tinySecp256k1Ints.`0`
+import typings.tinySecp256k1.tinySecp256k1Ints.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

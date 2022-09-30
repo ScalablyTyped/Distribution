@@ -2,7 +2,7 @@ package typings.powerbiVisualsTools.mod
 
 import typings.powerbiVisualsTools.mod.data.DataRepetitionSelector
 import typings.powerbiVisualsTools.mod.data.ISQExpr
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`1`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

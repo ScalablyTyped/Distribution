@@ -10,5 +10,5 @@ object formatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def default(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

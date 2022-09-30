@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * In version 8.15.0: introduced
+  * In version 9.0.2: introduced
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.pagesMod.pages.ITemplateType because Already inherited
 - typings.mendixmodelsdk.pagesMod.pages.IWorkflowTemplateType because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.IUserTaskTemplateType because var conflicts: containerAsPageTemplate, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.UserTaskTemplateType")
+- typings.mendixmodelsdk.pagesMod.pages.IUserTaskTemplateType because var conflicts: containerAsPageTemplate, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.UserTaskTemplateType")
 @js.native
-class UserTaskTemplateType protected () extends WorkflowTemplateType {
+open class UserTaskTemplateType protected () extends WorkflowTemplateType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,7 +38,7 @@ class UserTaskTemplateType protected () extends WorkflowTemplateType {
 }
 object UserTaskTemplateType {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.UserTaskTemplateType")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.UserTaskTemplateType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -56,19 +56,19 @@ object UserTaskTemplateType {
     * of the parent PageTemplate element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: PageTemplate): UserTaskTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[UserTaskTemplateType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.UserTaskTemplateType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.UserTaskTemplateType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.UserTaskTemplateType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.UserTaskTemplateType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

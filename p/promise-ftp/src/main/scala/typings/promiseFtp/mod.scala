@@ -5,7 +5,6 @@ import typings.ftp.mod.Options
 import typings.node.bufferMod.global.Buffer
 import typings.promiseFtp.anon.Code
 import typings.promiseFtp.promiseFtpStrings.`Bad sequence of commands`
-import typings.promiseFtp.promiseFtpStrings.`CanApostrophet open data connection`
 import typings.promiseFtp.promiseFtpStrings.`Command not implemented for that parameter`
 import typings.promiseFtp.promiseFtpStrings.`Command not implemented`
 import typings.promiseFtp.promiseFtpStrings.`Connection closedComma transfer aborted`
@@ -14,10 +13,6 @@ import typings.promiseFtp.promiseFtpStrings.`Not logged in`
 import typings.promiseFtp.promiseFtpStrings.`Requested action abortedColon local error in processing`
 import typings.promiseFtp.promiseFtpStrings.`Requested action abortedColon page type unknown`
 import typings.promiseFtp.promiseFtpStrings.`Requested action not taken Slash File name not allowed`
-import typings.promiseFtp.promiseFtpStrings.`Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis`
-import typings.promiseFtp.promiseFtpStrings.`Requested action not taken Slash Insufficient storage space in system`
-import typings.promiseFtp.promiseFtpStrings.`Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis`
-import typings.promiseFtp.promiseFtpStrings.`Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis`
 import typings.promiseFtp.promiseFtpStrings.`Service not availableComma closing control connection`
 import typings.promiseFtp.promiseFtpStrings.`Syntax error Slash Command unrecognized`
 import typings.promiseFtp.promiseFtpStrings.`Syntax error in parameters or arguments`
@@ -39,15 +34,15 @@ object mod {
     
     var `421`: `Service not availableComma closing control connection`
     
-    var `425`: `CanApostrophet open data connection`
+    var `425`: String
     
     var `426`: `Connection closedComma transfer aborted`
     
-    var `450`: `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis`
+    var `450`: String
     
     var `451`: `Requested action abortedColon local error in processing`
     
-    var `452`: `Requested action not taken Slash Insufficient storage space in system`
+    var `452`: String
     
     var `500`: `Syntax error Slash Command unrecognized`
     
@@ -63,11 +58,11 @@ object mod {
     
     var `532`: `Need account for storing files`
     
-    var `550`: `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis`
+    var `550`: String
     
     var `551`: `Requested action abortedColon page type unknown`
     
-    var `552`: `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis`
+    var `552`: String
     
     var `553`: `Requested action not taken Slash File name not allowed`
   }
@@ -81,17 +76,15 @@ object mod {
       
       inline def set421(value: `Service not availableComma closing control connection`): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
       
-      inline def set425(value: `CanApostrophet open data connection`): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
+      inline def set425(value: String): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
       
       inline def set426(value: `Connection closedComma transfer aborted`): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
       
-      inline def set450(
-        value: `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis`
-      ): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
+      inline def set450(value: String): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
       
       inline def set451(value: `Requested action abortedColon local error in processing`): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
       
-      inline def set452(value: `Requested action not taken Slash Insufficient storage space in system`): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
+      inline def set452(value: String): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
       
       inline def set500(value: `Syntax error Slash Command unrecognized`): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
       
@@ -107,15 +100,11 @@ object mod {
       
       inline def set532(value: `Need account for storing files`): Self = StObject.set(x, "532", value.asInstanceOf[js.Any])
       
-      inline def set550(
-        value: `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis`
-      ): Self = StObject.set(x, "550", value.asInstanceOf[js.Any])
+      inline def set550(value: String): Self = StObject.set(x, "550", value.asInstanceOf[js.Any])
       
       inline def set551(value: `Requested action abortedColon page type unknown`): Self = StObject.set(x, "551", value.asInstanceOf[js.Any])
       
-      inline def set552(
-        value: `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis`
-      ): Self = StObject.set(x, "552", value.asInstanceOf[js.Any])
+      inline def set552(value: String): Self = StObject.set(x, "552", value.asInstanceOf[js.Any])
       
       inline def set553(value: `Requested action not taken Slash File name not allowed`): Self = StObject.set(x, "553", value.asInstanceOf[js.Any])
     }

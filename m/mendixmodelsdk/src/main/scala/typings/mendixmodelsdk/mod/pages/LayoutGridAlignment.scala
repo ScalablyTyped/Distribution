@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.LayoutGridAlignment")
 @js.native
-class LayoutGridAlignment protected ()
+open class LayoutGridAlignment protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LayoutGridAlignment {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

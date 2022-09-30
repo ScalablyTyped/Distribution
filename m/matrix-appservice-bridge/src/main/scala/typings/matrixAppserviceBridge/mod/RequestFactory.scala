@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "RequestFactory")
 @js.native
 open class RequestFactory ()
-  extends typings.matrixAppserviceBridge.componentsRequestFactoryMod.RequestFactory
+  extends typings.matrixAppserviceBridge.requestFactoryMod.RequestFactory

@@ -1,5 +1,6 @@
 package typings.pPipe
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,5 +73,5 @@ object mod {
   
   type Pipeline[ValueType, ReturnType] = js.Function1[/* value */ js.UndefOr[ValueType], js.Promise[ReturnType]]
   
-  type UnaryFunction[ValueType, ReturnType] = js.Function1[/* value */ ValueType, ReturnType | js.Thenable[ReturnType]]
+  type UnaryFunction[ValueType, ReturnType] = js.Function1[/* value */ ValueType, ReturnType | PromiseLike[ReturnType]]
 }

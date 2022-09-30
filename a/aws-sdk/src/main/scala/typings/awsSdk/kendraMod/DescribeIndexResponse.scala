@@ -77,7 +77,7 @@ trait DescribeIndexResponse extends StObject {
   var UserContextPolicy: js.UndefOr[typings.awsSdk.kendraMod.UserContextPolicy] = js.undefined
   
   /**
-    * Whether you have enabled the configuration for fetching access levels of groups and users from an Amazon Web Services Single Sign On identity source.
+    * Whether you have enabled the configuration for fetching access levels of groups and users from an IAM Identity Center (successor to Single Sign-On) identity source.
     */
   var UserGroupResolutionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.UserGroupResolutionConfiguration] = js.undefined
   

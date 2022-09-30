@@ -53,7 +53,7 @@ trait CustomPropertyCollection
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does not exist.
+    * Gets a custom property object by its key, which is case-insensitive. Throws an `ItemNotFound` error if the custom property does not exist.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -63,7 +63,7 @@ trait CustomPropertyCollection
   def getItem(key: String): CustomProperty = js.native
   
   /**
-    * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
+    * Gets a custom property object by its key, which is case-insensitive. If the custom property does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]

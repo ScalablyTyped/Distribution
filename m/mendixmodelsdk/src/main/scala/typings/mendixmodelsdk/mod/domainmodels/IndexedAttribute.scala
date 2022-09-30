@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.IndexedAttribute")
 @js.native
-class IndexedAttribute protected ()
+open class IndexedAttribute protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.IndexedAttribute {
   def this(
     model: AbstractModel,

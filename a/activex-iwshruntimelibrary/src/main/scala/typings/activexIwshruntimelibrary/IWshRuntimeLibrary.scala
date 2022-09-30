@@ -1,26 +1,26 @@
 package typings.activexIwshruntimelibrary
 
 import typings.activexIwshruntimelibrary.activexIwshruntimelibraryBooleans.`true`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`-1`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1048576`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`11`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`16`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`256`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`32`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4096`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`48`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`512`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`524288`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`64`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`
-import typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`-1`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1048576`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`10`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`11`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`16`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`256`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`32`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4096`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`48`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`512`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`524288`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`5`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`64`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`6`
+import typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7`
 import typings.activexIwshruntimelibrary.activexIwshruntimelibraryStrings.Process
 import typings.activexIwshruntimelibrary.activexIwshruntimelibraryStrings.REG_BINARY
 import typings.activexIwshruntimelibrary.activexIwshruntimelibraryStrings.REG_DWORD
@@ -37,13 +37,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object IWshRuntimeLibrary {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`5`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`6`
   */
   trait ButtonType extends StObject
   object ButtonType {
@@ -64,12 +64,12 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`5`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`
   */
   trait EventType extends StObject
   object EventType {
@@ -88,10 +88,10 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`16`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`32`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`48`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`64`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`16`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`32`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`48`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`64`
   */
   trait IconType extends StObject
   object IconType {
@@ -106,16 +106,16 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`-1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`11`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`-1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`5`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`6`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`10`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`11`
   */
   trait PopupSelection extends StObject
   object PopupSelection {
@@ -142,11 +142,11 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`256`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`512`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4096`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`524288`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1048576`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`256`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`512`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4096`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`524288`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1048576`
   */
   trait PopupType extends StObject
   object PopupType {
@@ -163,18 +163,18 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7`
   */
   trait ShortcutWindowStyle extends StObject
   object ShortcutWindowStyle {
     
-    inline def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`]
+    inline def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`]
     
-    inline def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`]
+    inline def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`]
     
-    inline def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
+    inline def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7`]
   }
   
   trait TextStreamBase extends StObject {
@@ -354,42 +354,42 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`8`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`9`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`5`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`6`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`8`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`9`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`10`
   */
   trait WindowStyle extends StObject
   object WindowStyle {
     
-    inline def `0`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0` = 0.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`]
+    inline def `0`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0` = 0.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0`]
     
-    inline def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`]
+    inline def `1`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1` = 1.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`]
     
-    inline def `10`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10` = 10.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`10`]
+    inline def `10`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`10` = 10.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`10`]
     
-    inline def `2`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2` = 2.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`]
+    inline def `2`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2` = 2.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`]
     
-    inline def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`]
+    inline def `3`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3` = 3.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`]
     
-    inline def `4`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4` = 4.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`]
+    inline def `4`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4` = 4.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4`]
     
-    inline def `5`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5` = 5.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`5`]
+    inline def `5`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`5` = 5.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`5`]
     
-    inline def `6`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6` = 6.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`]
+    inline def `6`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`6` = 6.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`6`]
     
-    inline def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`7`]
+    inline def `7`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7` = 7.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`7`]
     
-    inline def `8`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`8` = 8.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`8`]
+    inline def `8`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`8` = 8.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`8`]
     
-    inline def `9`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`9` = 9.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`9`]
+    inline def `9`: typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`9` = 9.asInstanceOf[typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`9`]
   }
   
   /** Generic Collection Object */
@@ -478,9 +478,9 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0`
   */
   trait WshExecStatus extends StObject
   object WshExecStatus {
@@ -884,12 +884,12 @@ object IWshRuntimeLibrary {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`0`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`3`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`2`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`6`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`1`
-    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryNumbers.`4`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`0`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`3`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`2`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`6`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`1`
+    - typings.activexIwshruntimelibrary.activexIwshruntimelibraryInts.`4`
   */
   trait WshWindowStyle extends StObject
   object WshWindowStyle {

@@ -1,6 +1,5 @@
 package typings.officeJsPreview.Excel
 
-import typings.officeJsPreview.officeJsPreviewStrings.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait CardLayoutListSection
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var layout: List
+  var layout: typings.officeJsPreview.officeJsPreviewStrings.List
 }
 object CardLayoutListSection {
   
@@ -35,6 +34,6 @@ object CardLayoutListSection {
   
   extension [Self <: CardLayoutListSection](x: Self) {
     
-    inline def setLayout(value: List): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: typings.officeJsPreview.officeJsPreviewStrings.List): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

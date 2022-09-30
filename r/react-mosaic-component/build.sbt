@@ -1,21 +1,25 @@
 organization := "org.scalablytyped"
 name := "react-mosaic-component"
-version := "3.2.0-1b41d8"
-scalaVersion := "2.12.10"
+version := "5.3.0-5c389a"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-3eaa6f",
-  "org.scalablytyped" %%% "dnd-core" % "9.4.0-2b6252",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-202a38",
-  "org.scalablytyped" %%% "immutability-helper" % "3.0.1-34f091",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-8b44d5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191122Z-caf4d8",
-  "org.scalablytyped" %%% "react-dnd" % "9.4.0-684f8a",
-  "org.scalablytyped" %%% "std" % "3.7-1c17cf")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "blueprintjs__core" % "4.10.2-35064b",
+  "org.scalablytyped" %%% "blueprintjs__icons" % "4.6.0-d956de",
+  "org.scalablytyped" %%% "csstype" % "3.1.1-0912f8",
+  "org.scalablytyped" %%% "dnd-core" % "16.0.1-c68bbd",
+  "org.scalablytyped" %%% "immutability-helper" % "3.1.1-0d722d",
+  "org.scalablytyped" %%% "juggle__resize-observer" % "3.4.0-8cd195",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.16.1-34f40d",
+  "org.scalablytyped" %%% "popperjs__core" % "2.11.6-cc30c4",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-975e63",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-fc8273",
+  "org.scalablytyped" %%% "react-dnd" % "16.0.1-489596",
+  "org.scalablytyped" %%% "react-popper" % "2.3.0-f006b3",
+  "org.scalablytyped" %%% "redux" % "4.2.0-0fa2db",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-3fbb8c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

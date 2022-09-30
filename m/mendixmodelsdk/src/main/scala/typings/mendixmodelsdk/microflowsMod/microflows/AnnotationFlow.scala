@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/annotation relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AnnotationFlow")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AnnotationFlow")
 @js.native
-class AnnotationFlow protected () extends Flow {
+open class AnnotationFlow protected () extends Flow {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class AnnotationFlow protected () extends Flow {
 }
 object AnnotationFlow {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AnnotationFlow")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AnnotationFlow")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object AnnotationFlow {
   inline def createIn(container: MicroflowBase): AnnotationFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AnnotationFlow]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AnnotationFlow.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AnnotationFlow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AnnotationFlow.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AnnotationFlow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

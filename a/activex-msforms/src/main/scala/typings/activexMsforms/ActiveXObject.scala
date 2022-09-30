@@ -72,7 +72,6 @@ import typings.activexMsforms.activexMsformsStrings.KeyDown
 import typings.activexMsforms.activexMsformsStrings.KeyPress
 import typings.activexMsforms.activexMsformsStrings.KeyUp
 import typings.activexMsforms.activexMsformsStrings.Layout
-import typings.activexMsforms.activexMsformsStrings.List
 import typings.activexMsforms.activexMsformsStrings.MouseDown
 import typings.activexMsforms.activexMsformsStrings.MouseMove
 import typings.activexMsforms.activexMsformsStrings.MouseUp
@@ -943,29 +942,39 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ UserForm, /* parameter */ ContainerScrollParameter, Unit]
   ): Unit = js.native
   
-  def set(obj: ComboBox, propertyName: Column | List, parameterTypes: js.Array[Double], newValue: Any): Unit = js.native
   def set(
     obj: ComboBox,
-    propertyName: Column | List,
+    propertyName: Column | typings.activexMsforms.activexMsformsStrings.List,
+    parameterTypes: js.Array[Double],
+    newValue: Any
+  ): Unit = js.native
+  def set(
+    obj: ComboBox,
+    propertyName: Column | typings.activexMsforms.activexMsformsStrings.List,
     parameterTypes: js.Array[Double],
     newValue: SafeArray[Any]
   ): Unit = js.native
   def set(
     obj: ComboBox,
-    propertyName: Column | List,
+    propertyName: Column | typings.activexMsforms.activexMsformsStrings.List,
     parameterTypes: js.Tuple2[Double, Double],
     newValue: Any
   ): Unit = js.native
-  def set(obj: ListBox, propertyName: Column | List, parameterTypes: js.Array[Double], newValue: Any): Unit = js.native
   def set(
     obj: ListBox,
-    propertyName: Column | List,
+    propertyName: Column | typings.activexMsforms.activexMsformsStrings.List,
+    parameterTypes: js.Array[Double],
+    newValue: Any
+  ): Unit = js.native
+  def set(
+    obj: ListBox,
+    propertyName: Column | typings.activexMsforms.activexMsformsStrings.List,
     parameterTypes: js.Array[Double],
     newValue: SafeArray[Any]
   ): Unit = js.native
   def set(
     obj: ListBox,
-    propertyName: Column | List,
+    propertyName: Column | typings.activexMsforms.activexMsformsStrings.List,
     parameterTypes: js.Tuple2[Double, Double],
     newValue: Any
   ): Unit = js.native

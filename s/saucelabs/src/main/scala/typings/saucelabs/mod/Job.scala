@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Job
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var assigned_tunnel_id: js.UndefOr[String] = js.undefined
   
@@ -226,7 +226,7 @@ object Job {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVideo_secret(value: String): Self = StObject.set(x, "video_secret", value.asInstanceOf[js.Any])
     

@@ -3,8 +3,8 @@ package typings.gridstack
 import typings.gridstack.distTypesMod.GridStackMoveOpts
 import typings.gridstack.distTypesMod.GridStackNode
 import typings.gridstack.distTypesMod.GridStackPosition
-import typings.gridstack.gridstackNumbers.`-1`
-import typings.gridstack.gridstackNumbers.`1`
+import typings.gridstack.gridstackInts.`-1`
+import typings.gridstack.gridstackInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

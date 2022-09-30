@@ -255,39 +255,39 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.lzmaNative.lzmaNativeNumbers.`0`
-    - typings.lzmaNative.lzmaNativeNumbers.`1`
-    - typings.lzmaNative.lzmaNativeNumbers.`2`
-    - typings.lzmaNative.lzmaNativeNumbers.`3`
-    - typings.lzmaNative.lzmaNativeNumbers.`4`
-    - typings.lzmaNative.lzmaNativeNumbers.`5`
-    - typings.lzmaNative.lzmaNativeNumbers.`6`
-    - typings.lzmaNative.lzmaNativeNumbers.`7`
-    - typings.lzmaNative.lzmaNativeNumbers.`8`
-    - typings.lzmaNative.lzmaNativeNumbers.`9`
+    - typings.lzmaNative.lzmaNativeInts.`0`
+    - typings.lzmaNative.lzmaNativeInts.`1`
+    - typings.lzmaNative.lzmaNativeInts.`2`
+    - typings.lzmaNative.lzmaNativeInts.`3`
+    - typings.lzmaNative.lzmaNativeInts.`4`
+    - typings.lzmaNative.lzmaNativeInts.`5`
+    - typings.lzmaNative.lzmaNativeInts.`6`
+    - typings.lzmaNative.lzmaNativeInts.`7`
+    - typings.lzmaNative.lzmaNativeInts.`8`
+    - typings.lzmaNative.lzmaNativeInts.`9`
   */
   trait Preset extends StObject
   object Preset {
     
-    inline def `0`: typings.lzmaNative.lzmaNativeNumbers.`0` = 0.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`0`]
+    inline def `0`: typings.lzmaNative.lzmaNativeInts.`0` = 0.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`0`]
     
-    inline def `1`: typings.lzmaNative.lzmaNativeNumbers.`1` = 1.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`1`]
+    inline def `1`: typings.lzmaNative.lzmaNativeInts.`1` = 1.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`1`]
     
-    inline def `2`: typings.lzmaNative.lzmaNativeNumbers.`2` = 2.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`2`]
+    inline def `2`: typings.lzmaNative.lzmaNativeInts.`2` = 2.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`2`]
     
-    inline def `3`: typings.lzmaNative.lzmaNativeNumbers.`3` = 3.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`3`]
+    inline def `3`: typings.lzmaNative.lzmaNativeInts.`3` = 3.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`3`]
     
-    inline def `4`: typings.lzmaNative.lzmaNativeNumbers.`4` = 4.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`4`]
+    inline def `4`: typings.lzmaNative.lzmaNativeInts.`4` = 4.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`4`]
     
-    inline def `5`: typings.lzmaNative.lzmaNativeNumbers.`5` = 5.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`5`]
+    inline def `5`: typings.lzmaNative.lzmaNativeInts.`5` = 5.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`5`]
     
-    inline def `6`: typings.lzmaNative.lzmaNativeNumbers.`6` = 6.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`6`]
+    inline def `6`: typings.lzmaNative.lzmaNativeInts.`6` = 6.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`6`]
     
-    inline def `7`: typings.lzmaNative.lzmaNativeNumbers.`7` = 7.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`7`]
+    inline def `7`: typings.lzmaNative.lzmaNativeInts.`7` = 7.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`7`]
     
-    inline def `8`: typings.lzmaNative.lzmaNativeNumbers.`8` = 8.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`8`]
+    inline def `8`: typings.lzmaNative.lzmaNativeInts.`8` = 8.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`8`]
     
-    inline def `9`: typings.lzmaNative.lzmaNativeNumbers.`9` = 9.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`9`]
+    inline def `9`: typings.lzmaNative.lzmaNativeInts.`9` = 9.asInstanceOf[typings.lzmaNative.lzmaNativeInts.`9`]
   }
   
   trait StreamInfo extends StObject {

@@ -3,6 +3,13 @@ package typings.angularForms.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.mod.AfterViewInit
 import typings.angularCore.mod.EventEmitter
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularForms.angularFormsBooleans.`false`
+import typings.angularForms.angularFormsStrings.ngForm
+import typings.angularForms.anon.NgSubmit
+import typings.angularForms.anon.Options
+import typings.angularForms.anon.Self
 import typings.angularForms.anon.UpdateOn
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
@@ -11,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/forms", "NgForm")
 @js.native
-class NgForm protected ()
+open class NgForm protected ()
   extends ControlContainer
      with Form
      with AfterViewInit {
@@ -20,9 +27,11 @@ class NgForm protected ()
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
   ) = this()
   
-  /* private */ var _directives: js.Any = js.native
+  /* private */ var _directives: Any = js.native
   
-  /* private */ var _setUpdateStrategy: js.Any = js.native
+  /* private */ var _findContainer: Any = js.native
+  
+  /* private */ var _setUpdateStrategy: Any = js.native
   
   /**
     * @description
@@ -61,13 +70,13 @@ class NgForm protected ()
     * @description
     * Returns a map of the controls in this group.
     */
-  def controls: StringDictionary[AbstractControl] = js.native
+  def controls: StringDictionary[AbstractControl[Any, Any]] = js.native
   
   /**
     * @description
     * The `FormGroup` instance created for this form.
     */
-  var form: FormGroup = js.native
+  var form: FormGroup[Any] = js.native
   
   /**
     * @description
@@ -76,14 +85,14 @@ class NgForm protected ()
     * @param dir: The control directive.
     */
   /* CompleteClass */
-  override def getControl(dir: NgControl): FormControl = js.native
+  override def getControl(dir: NgControl): FormControl[Any] = js.native
   /**
     * @description
     * Retrieves the `FormControl` instance from the provided `NgModel` directive.
     *
     * @param dir The `NgModel` directive instance.
     */
-  def getControl(dir: NgModel): FormControl = js.native
+  def getControl(dir: NgModel): FormControl[Any] = js.native
   
   /**
     * @description
@@ -92,14 +101,14 @@ class NgForm protected ()
     * @param dir: The form group directive from which to get the `FormGroup`.
     */
   /* CompleteClass */
-  override def getFormGroup(dir: AbstractFormGroupDirective): FormGroup = js.native
+  override def getFormGroup(dir: AbstractFormGroupDirective): FormGroup[Any] = js.native
   /**
     * @description
     * Retrieves the `FormGroup` for a provided `NgModelGroup` directive instance
     *
     * @param dir The `NgModelGroup` directive instance.
     */
-  def getFormGroup(dir: NgModelGroup): FormGroup = js.native
+  def getFormGroup(dir: NgModelGroup): FormGroup[Any] = js.native
   
   /**
     * A callback method that is invoked immediately after
@@ -114,7 +123,7 @@ class NgForm protected ()
     * @description
     * Event emitter for the "ngSubmit" event
     */
-  var ngSubmit: EventEmitter[js.Any] = js.native
+  var ngSubmit: EventEmitter[Any] = js.native
   
   /**
     * @description
@@ -181,7 +190,7 @@ class NgForm protected ()
     * @param value The new value for the form.
     */
   def resetForm(): Unit = js.native
-  def resetForm(value: js.Any): Unit = js.native
+  def resetForm(value: Any): Unit = js.native
   
   /**
     * @description
@@ -189,7 +198,7 @@ class NgForm protected ()
     *
     * @param value The new value
     */
-  def setValue(value: StringDictionary[js.Any]): Unit = js.native
+  def setValue(value: StringDictionary[Any]): Unit = js.native
   
   /**
     * @description
@@ -205,5 +214,24 @@ class NgForm protected ()
     * @param value: The new value for the control.
     */
   /* CompleteClass */
-  override def updateModel(dir: NgControl, value: js.Any): Unit = js.native
+  override def updateModel(dir: NgControl, value: Any): Unit = js.native
+}
+/* static members */
+object NgForm {
+  
+  @JSImport("@angular/forms", "NgForm")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "NgForm.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[NgForm, String, js.Array[ngForm], Options, NgSubmit, scala.Nothing, scala.Nothing, `false`] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[NgForm, String, js.Array[ngForm], Options, NgSubmit, scala.Nothing, scala.Nothing, `false`]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "NgForm.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[NgForm, js.Tuple2[Self, Self]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgForm, js.Tuple2[Self, Self]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

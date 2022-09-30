@@ -15,8 +15,7 @@ object noticeIconMod {
   
   @JSImport("ant-design-pro/lib/NoticeIcon", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[NoticeIconProps, js.Any, js.Any]
+  open class default () extends Component[NoticeIconProps, Any, Any]
   /* static members */
   object default {
     
@@ -30,7 +29,7 @@ object noticeIconMod {
     inline def Tab_=(x: Instantiable0[typings.antDesignPro.noticeIconTabMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
   }
   
-  type NoticeIcon = Component[NoticeIconProps, js.Any, js.Any]
+  type NoticeIcon = Component[NoticeIconProps, Any, Any]
   
   trait NoticeIconProps extends StObject {
     

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactSortableTreeStrings {
   
   @js.native
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
+  
+  @js.native
   sealed trait ltr extends StObject
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   

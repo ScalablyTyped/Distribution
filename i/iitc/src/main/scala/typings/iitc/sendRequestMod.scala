@@ -21,9 +21,9 @@ object sendRequestMod {
       */
     inline def postAjax(
       action: String,
-      data: js.Any,
-      successCallback: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ jqXHR[js.Any], Unit],
-      errorCallback: js.Function3[/* jqXHR */ jqXHR[js.Any], /* textStatus */ String, /* errorThrown */ String, Unit]
-    ): js.Any = (js.Dynamic.global.applyDynamic("postAjax")(action.asInstanceOf[js.Any], data.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      data: Any,
+      successCallback: js.Function3[/* data */ Any, /* textStatus */ String, /* jqXHR */ jqXHR[Any], Unit],
+      errorCallback: js.Function3[/* jqXHR */ jqXHR[Any], /* textStatus */ String, /* errorThrown */ String, Unit]
+    ): Any = (js.Dynamic.global.applyDynamic("postAjax")(action.asInstanceOf[js.Any], data.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

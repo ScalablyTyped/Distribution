@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LensFlare extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _drawWrapper: DrawWrapper
   
   /* private */ var _system: Any

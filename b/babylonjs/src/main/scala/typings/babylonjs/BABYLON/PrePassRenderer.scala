@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrePassRenderer extends StObject {
   
   /**
-    * @param faceIndex
-    * @param layer
-    * @hidden
+    * @internal
     */
   def _afterDraw(): Unit = js.native
   def _afterDraw(faceIndex: Double): Unit = js.native
@@ -18,10 +16,7 @@ trait PrePassRenderer extends StObject {
   def _afterDraw(faceIndex: Unit, layer: Double): Unit = js.native
   
   /**
-    * @param camera
-    * @param faceIndex
-    * @param layer
-    * @hidden
+    * @internal
     */
   def _beforeDraw(): Unit = js.native
   def _beforeDraw(camera: Unit, faceIndex: Double): Unit = js.native
@@ -36,7 +31,7 @@ trait PrePassRenderer extends StObject {
   
   /**
     * Clears the current prepass render target (in the sense of settings pixels to the scene clear color value)
-    * @hidden
+    * @internal
     */
   def _clear(): Unit = js.native
   
@@ -50,7 +45,7 @@ trait PrePassRenderer extends StObject {
     * @param name Name of the `PrePassRenderTarget`
     * @param renderTargetTexture RenderTarget the `PrePassRenderTarget` will be attached to.
     * Can be `null` if the created `PrePassRenderTarget` is attached to the scene (default framebuffer).
-    * @hidden
+    * @internal
     */
   def _createRenderTarget(name: String, renderTargetTexture: Nullable[RenderTargetTexture]): PrePassRenderTarget = js.native
   
@@ -125,7 +120,7 @@ trait PrePassRenderer extends StObject {
   /* private */ var _setEnabled: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * Managed by the scene component
     * @param prePassRenderTarget
     */
@@ -138,8 +133,7 @@ trait PrePassRenderer extends StObject {
   /* private */ var _textureIndices: Any = js.native
   
   /**
-    * @param prePassRenderTarget
-    * @hidden
+    * @internal
     */
   def _unlinkInternalTexture(prePassRenderTarget: PrePassRenderTarget): Unit = js.native
   

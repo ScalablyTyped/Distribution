@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "domainmodels.Index")
 @js.native
-class Index protected ()
+open class Index protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.Index {
   def this(
     model: AbstractModel,

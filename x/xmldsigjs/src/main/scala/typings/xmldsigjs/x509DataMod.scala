@@ -3,7 +3,6 @@ package typings.xmldsigjs
 import typings.std.CryptoKey
 import typings.std.EcKeyImportParams
 import typings.std.RsaHashedImportParams
-import typings.std.Uint8Array
 import typings.xmldsigjs.keyInfoClauseMod.KeyInfoClause
 import typings.xmldsigjs.pkiMod.X509Certificate
 import typings.xmldsigjs.xmlObjectMod.XmlSignatureObject
@@ -15,9 +14,9 @@ object x509DataMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/x509_data", "KeyInfoX509Data")
   @js.native
-  class KeyInfoX509Data () extends KeyInfoClause {
+  open class KeyInfoX509Data () extends KeyInfoClause {
     def this(cert: X509Certificate) = this()
-    def this(rgbCert: Uint8Array) = this()
+    def this(rgbCert: js.typedarray.Uint8Array) = this()
     def this(cert: X509Certificate, includeOptions: X509IncludeOption) = this()
     
     /**
@@ -27,7 +26,7 @@ object x509DataMod {
       */
     def AddCertificate(certificate: X509Certificate): Unit = js.native
     
-    /* private */ var AddCertificatesChainFrom: js.Any = js.native
+    /* private */ var AddCertificatesChainFrom: Any = js.native
     
     /**
       * Adds the specified issuer name and serial number pair to the KeyInfoX509Data object.
@@ -43,7 +42,7 @@ object x509DataMod {
       * @returns void
       */
     def AddSubjectKeyId(subjectKeyId: String): Unit = js.native
-    def AddSubjectKeyId(subjectKeyId: Uint8Array): Unit = js.native
+    def AddSubjectKeyId(subjectKeyId: js.typedarray.Uint8Array): Unit = js.native
     
     /**
       * Adds the subject name of the entity that was issued an X.509v3 certificate to the KeyInfoX509Data object.
@@ -55,15 +54,15 @@ object x509DataMod {
     /**
       * Gets or sets the Certificate Revocation List (CRL) contained within the KeyInfoX509Data object.
       */
-    def CRL: Uint8Array | Null = js.native
-    def CRL_=(value: Uint8Array | Null): Unit = js.native
+    def CRL: js.typedarray.Uint8Array | Null = js.native
+    def CRL_=(value: js.typedarray.Uint8Array | Null): Unit = js.native
     
     /**
       * Gets a list of the X.509v3 certificates contained in the KeyInfoX509Data object.
       */
     def Certificates: js.Array[X509Certificate] = js.native
     
-    /* private */ var IssuerSerialList: js.Any = js.native
+    /* private */ var IssuerSerialList: Any = js.native
     
     /**
       * Gets a list of X509IssuerSerial structures that represent an issuer name and serial number pair.
@@ -76,33 +75,28 @@ object x509DataMod {
     @JSName("Key")
     def Key_MKeyInfoX509Data: CryptoKey | Null = js.native
     
-    /* private */ var SubjectKeyIdList: js.Any = js.native
+    /* private */ var SubjectKeyIdList: Any = js.native
     
     /**
       * Gets a list of the subject key identifiers (SKIs) contained in the KeyInfoX509Data object.
       */
-    def SubjectKeyIds: js.Array[Uint8Array] = js.native
+    def SubjectKeyIds: js.Array[js.typedarray.Uint8Array] = js.native
     
-    /* private */ var SubjectNameList: js.Any = js.native
+    /* private */ var SubjectNameList: Any = js.native
     
     /**
       * Gets a list of the subject names of the entities contained in the KeyInfoX509Data object.
       */
     def SubjectNames: js.Array[String] = js.native
     
-    /* private */ var X509CertificateList: js.Any = js.native
+    /* private */ var X509CertificateList: Any = js.native
     
-    def exportKey(alg: EcKeyImportParams): js.Promise[js.Any] = js.native
-    /**
-      * Exports key from X509Data object
-      * @param  {Algorithm} alg
-      * @returns Promise
-      */
-    def exportKey(alg: RsaHashedImportParams): js.Promise[js.Any] = js.native
+    def exportKey(alg: EcKeyImportParams): js.Promise[Any] = js.native
+    def exportKey(alg: RsaHashedImportParams): js.Promise[Any] = js.native
     
-    /* private */ var key: js.Any = js.native
+    /* private */ var key: Any = js.native
     
-    /* private */ var x509crl: js.Any = js.native
+    /* private */ var x509crl: Any = js.native
   }
   
   @js.native
@@ -141,7 +135,7 @@ object x509DataMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/x509_data", "X509IssuerSerial")
   @js.native
-  class X509IssuerSerial () extends XmlSignatureObject {
+  open class X509IssuerSerial () extends XmlSignatureObject {
     def this(properties: js.Object) = this()
     
     var X509IssuerName: String = js.native

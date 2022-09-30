@@ -1,8 +1,8 @@
 package typings.integer
 
-import typings.integer.integerNumbers.`-1`
-import typings.integer.integerNumbers.`0`
-import typings.integer.integerNumbers.`1`
+import typings.integer.integerInts.`-1`
+import typings.integer.integerInts.`0`
+import typings.integer.integerInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

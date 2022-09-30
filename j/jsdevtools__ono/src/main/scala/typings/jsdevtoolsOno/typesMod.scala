@@ -160,9 +160,9 @@ object typesMod {
       * @param originalError - The original error. This error's stack trace will be added to the error's stack trace.
       */
     @JSName("extend")
-    def extend_E_ErrorLike[E /* <: ErrorLike */](error: js.Error): js.Error & E & (OnoError[js.Error & E]) = js.native
+    def extend_E[E /* <: ErrorLike */](error: js.Error): js.Error & E & (OnoError[js.Error & E]) = js.native
     @JSName("extend")
-    def extend_E_ErrorLike[E /* <: ErrorLike */](error: ErrorPOJO): ErrorPOJO & E & (OnoError[ErrorPOJO & E]) = js.native
+    def extend_E[E /* <: ErrorLike */](error: ErrorPOJO): ErrorPOJO & E & (OnoError[ErrorPOJO & E]) = js.native
     /**
       * Extends the given Error object with enhanced Ono functionality, such as nested stack traces,
       * additional properties, and improved support for `JSON.stringify()`.
@@ -172,13 +172,13 @@ object typesMod {
       * @param props - An object whose properties will be added to the error
       */
     @JSName("extend")
-    def extend_E_ErrorLikeP_Object[E /* <: ErrorLike */, P /* <: js.Object */](error: js.Error): js.Error & E & P & (OnoError[js.Error & E & P]) = js.native
+    def extend_EP[E /* <: ErrorLike */, P /* <: js.Object */](error: js.Error): js.Error & E & P & (OnoError[js.Error & E & P]) = js.native
     @JSName("extend")
-    def extend_E_ErrorLikeP_Object[E /* <: ErrorLike */, P /* <: js.Object */](error: js.Error, originalError: E): js.Error & E & P & (OnoError[js.Error & E & P]) = js.native
+    def extend_EP[E /* <: ErrorLike */, P /* <: js.Object */](error: js.Error, originalError: E): js.Error & E & P & (OnoError[js.Error & E & P]) = js.native
     @JSName("extend")
-    def extend_E_ErrorLikeP_Object[E /* <: ErrorLike */, P /* <: js.Object */](error: ErrorPOJO): ErrorPOJO & E & P & (OnoError[ErrorPOJO & E & P]) = js.native
+    def extend_EP[E /* <: ErrorLike */, P /* <: js.Object */](error: ErrorPOJO): ErrorPOJO & E & P & (OnoError[ErrorPOJO & E & P]) = js.native
     @JSName("extend")
-    def extend_E_ErrorLikeP_Object[E /* <: ErrorLike */, P /* <: js.Object */](error: ErrorPOJO, originalError: E): ErrorPOJO & E & P & (OnoError[ErrorPOJO & E & P]) = js.native
+    def extend_EP[E /* <: ErrorLike */, P /* <: js.Object */](error: ErrorPOJO, originalError: E): ErrorPOJO & E & P & (OnoError[ErrorPOJO & E & P]) = js.native
     /**
       * Extends the given Error object with enhanced Ono functionality, such as additional properties
       * and improved support for `JSON.stringify()`.
@@ -187,13 +187,13 @@ object typesMod {
       * @param props - An object whose properties will be added to the error
       */
     @JSName("extend")
-    def extend_P_Object[P /* <: js.Object */](error: js.Error): js.Error & P & (OnoError[js.Error & P]) = js.native
+    def extend_P[P /* <: js.Object */](error: js.Error): js.Error & P & (OnoError[js.Error & P]) = js.native
     @JSName("extend")
-    def extend_P_Object[P /* <: js.Object */](error: js.Error, props: P): js.Error & P & (OnoError[js.Error & P]) = js.native
+    def extend_P[P /* <: js.Object */](error: js.Error, props: P): js.Error & P & (OnoError[js.Error & P]) = js.native
     @JSName("extend")
-    def extend_P_Object[P /* <: js.Object */](error: ErrorPOJO): ErrorPOJO & P & (OnoError[ErrorPOJO & P]) = js.native
+    def extend_P[P /* <: js.Object */](error: ErrorPOJO): ErrorPOJO & P & (OnoError[ErrorPOJO & P]) = js.native
     @JSName("extend")
-    def extend_P_Object[P /* <: js.Object */](error: ErrorPOJO, props: P): ErrorPOJO & P & (OnoError[ErrorPOJO & P]) = js.native
+    def extend_P[P /* <: js.Object */](error: ErrorPOJO, props: P): ErrorPOJO & P & (OnoError[ErrorPOJO & P]) = js.native
     
     /**
       * Returns an object containing all properties of the given Error object,

@@ -11,6 +11,7 @@ import typings.sentryBrowser.integrationsMod.TryCatch
 import typings.sentryCore.mod.Hub
 import typings.sentryCore.mod.Integrations.FunctionToString
 import typings.sentryCore.mod.Integrations.InboundFilters
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +22,8 @@ object sdkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def close(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Thenable[Boolean]]
-  inline def close(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
+  inline def close(): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[PromiseLike[Boolean]]
+  inline def close(timeout: Double): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Boolean]]
   
   @JSImport("@sentry/browser/types/sdk", "defaultIntegrations")
   @js.native
@@ -30,8 +31,8 @@ object sdkMod {
     GlobalHandlers | TryCatch | Breadcrumbs | LinkedErrors | HttpContext | Dedupe | InboundFilters | FunctionToString
   ] = js.native
   
-  inline def flush(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Thenable[Boolean]]
-  inline def flush(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
+  inline def flush(): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[PromiseLike[Boolean]]
+  inline def flush(timeout: Double): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Boolean]]
   
   inline def forceLoad(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLoad")().asInstanceOf[Unit]
   

@@ -10,7 +10,7 @@ trait Pair extends StObject {
   
   var name: js.UndefOr[WidthString] = js.undefined
   
-  var pair: js.UndefOr[`32`] = js.undefined
+  var pair: js.UndefOr[`33`] = js.undefined
   
   var value: js.UndefOr[WidthString] = js.undefined
 }
@@ -31,7 +31,7 @@ object Pair {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPair(value: `32`): Self = StObject.set(x, "pair", value.asInstanceOf[js.Any])
+    inline def setPair(value: `33`): Self = StObject.set(x, "pair", value.asInstanceOf[js.Any])
     
     inline def setPairUndefined: Self = StObject.set(x, "pair", js.undefined)
     

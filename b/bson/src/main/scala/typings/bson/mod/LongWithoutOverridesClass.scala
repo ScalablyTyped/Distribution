@@ -2,9 +2,9 @@ package typings.bson.mod
 
 import typings.bson.anon.PinExcludekeyofLongTimest
 import typings.bson.bsonBooleans.`true`
-import typings.bson.bsonNumbers.`-1`
-import typings.bson.bsonNumbers.`0`
-import typings.bson.bsonNumbers.`1`
+import typings.bson.bsonInts.`-1`
+import typings.bson.bsonInts.`0`
+import typings.bson.bsonInts.`1`
 import typings.bson.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

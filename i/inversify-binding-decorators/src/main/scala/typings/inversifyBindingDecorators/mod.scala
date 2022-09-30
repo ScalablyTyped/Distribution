@@ -14,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def autoProvide(container: Container, modules: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("autoProvide")(List(container.asInstanceOf[js.Any]).`++`(modules.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def autoProvide(container: Container, modules: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("autoProvide")(scala.List(container.asInstanceOf[js.Any]).`++`(modules.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def buildProviderModule(): ContainerModule = ^.asInstanceOf[js.Dynamic].applyDynamic("buildProviderModule")().asInstanceOf[ContainerModule]
   

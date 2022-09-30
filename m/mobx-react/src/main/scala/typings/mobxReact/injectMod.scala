@@ -13,18 +13,6 @@ object injectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def inject(stores: String*): js.Function1[
-    /* target */ IReactComponent[js.Any], 
-    IReactComponent[js.Any] & IWrappedComponent[js.Any]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(stores.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* target */ IReactComponent[js.Any], 
-    IReactComponent[js.Any] & IWrappedComponent[js.Any]
-  ]]
-  inline def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[
-    /* target */ IReactComponent[js.Any], 
-    IReactComponent[js.Any] & IWrappedComponent[P]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* target */ IReactComponent[js.Any], 
-    IReactComponent[js.Any] & IWrappedComponent[P]
-  ]]
+  inline def inject(stores: String*): js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(stores.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[Any]]]
+  inline def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ IReactComponent[Any], IReactComponent[Any] & IWrappedComponent[P]]]
 }

@@ -20,9 +20,9 @@ object nanoflows {
   /**
     * In version 8.4.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nanoflows.NanoflowParameterValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nanoflows.NanoflowParameterValue")
   @js.native
-  class NanoflowParameterValue protected ()
+  open class NanoflowParameterValue protected ()
     extends typings.mendixmodelsdk.nanoflowsMod.nanoflows.NanoflowParameterValue {
     def this(
       model: AbstractModel,
@@ -35,7 +35,7 @@ object nanoflows {
   }
   object NanoflowParameterValue {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nanoflows.NanoflowParameterValue")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nanoflows.NanoflowParameterValue")
     @js.native
     val ^ : js.Any = js.native
     
@@ -70,13 +70,13 @@ object nanoflows {
     inline def createInJavaScriptActionParameterMappingUnderParameterValue(container: JavaScriptActionParameterMapping): typings.mendixmodelsdk.nanoflowsMod.nanoflows.NanoflowParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaScriptActionParameterMappingUnderParameterValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.nanoflowsMod.nanoflows.NanoflowParameterValue]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nanoflows.NanoflowParameterValue.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nanoflows.NanoflowParameterValue.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nanoflows.NanoflowParameterValue.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nanoflows.NanoflowParameterValue.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.nanoflowsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.nanoflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

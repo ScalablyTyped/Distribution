@@ -38,11 +38,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object internalMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "AbstractElement")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "AbstractElement")
   @js.native
   abstract class AbstractElement[TModel /* <: IAbstractModel */, TContainer /* <: Container */] protected ()
     extends typings.mendixmodelsdk.elementsMod.AbstractElement[TModel, TContainer] {
@@ -61,21 +61,21 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "AbstractEnum")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "AbstractEnum")
   @js.native
   abstract class AbstractEnum protected ()
     extends typings.mendixmodelsdk.instancesMod.AbstractEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "AbstractModel")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "AbstractModel")
   @js.native
   abstract class AbstractModel protected ()
     extends typings.mendixmodelsdk.abstractModelMod.AbstractModel {
     def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "AbstractProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "AbstractProperty")
   @js.native
   abstract class AbstractProperty[T, P] protected ()
     extends typings.mendixmodelsdk.propertiesMod.AbstractProperty[T, P] {
@@ -92,11 +92,11 @@ object internalMod {
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: T,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "AbstractUnit")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "AbstractUnit")
   @js.native
   abstract class AbstractUnit[TModel /* <: IAbstractModel */] protected ()
     extends typings.mendixmodelsdk.unitsMod.AbstractUnit[TModel] {
@@ -109,9 +109,9 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ByIdReference")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ByIdReference")
   @js.native
-  class ByIdReference[T /* <: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container] */] protected ()
+  open class ByIdReference[T /* <: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container] */] protected ()
     extends typings.mendixmodelsdk.byIdReferenceMod.ByIdReference[T] {
     /**
       * Constructs and returns a new reference instance, that is owned (by a property of) an abstract element.
@@ -119,9 +119,9 @@ object internalMod {
     def this(owner: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container]) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ByIdReferenceProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ByIdReferenceProperty")
   @js.native
-  class ByIdReferenceProperty[T /* <: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container] */] protected ()
+  open class ByIdReferenceProperty[T /* <: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container] */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.ByIdReferenceProperty[T] {
     /**
       * parent is the structure that the value of this property attaches to,
@@ -136,20 +136,20 @@ object internalMod {
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: T,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
     def this(
       declaredOn: IStructureClass,
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: Null,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ByNameReferenceListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ByNameReferenceListProperty")
   @js.native
-  class ByNameReferenceListProperty[T /* <: IAbstractElement */] protected ()
+  open class ByNameReferenceListProperty[T /* <: IAbstractElement */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.ByNameReferenceListProperty[T] {
     def this(
       declaredOn: IStructureClass,
@@ -160,9 +160,9 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ByNameReferenceProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ByNameReferenceProperty")
   @js.native
-  class ByNameReferenceProperty[T /* <: IAbstractElement */] protected ()
+  open class ByNameReferenceProperty[T /* <: IAbstractElement */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.ByNameReferenceProperty[T] {
     def this(
       declaredOn: IStructureClass,
@@ -180,14 +180,14 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "DeltaManager")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "DeltaManager")
   @js.native
-  class DeltaManager protected ()
+  open class DeltaManager protected ()
     extends typings.mendixmodelsdk.deltasMod.DeltaManager {
     def this(model: typings.mendixmodelsdk.abstractModelMod.AbstractModel) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "Element")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "Element")
   @js.native
   abstract class Element[TModel /* <: IAbstractModel */] protected ()
     extends typings.mendixmodelsdk.elementsMod.Element[TModel] {
@@ -201,9 +201,9 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "EnumListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "EnumListProperty")
   @js.native
-  class EnumListProperty[T /* <: typings.mendixmodelsdk.instancesMod.AbstractEnum */] protected ()
+  open class EnumListProperty[T /* <: typings.mendixmodelsdk.instancesMod.AbstractEnum */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.EnumListProperty[T] {
     def this(
       declaredOn: IStructureClass,
@@ -218,9 +218,9 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "EnumProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "EnumProperty")
   @js.native
-  class EnumProperty[T /* <: typings.mendixmodelsdk.instancesMod.AbstractEnum */] protected ()
+  open class EnumProperty[T /* <: typings.mendixmodelsdk.instancesMod.AbstractEnum */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.EnumProperty[T] {
     def this(
       declaredOn: IStructureClass,
@@ -235,14 +235,14 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "LifeCycle")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "LifeCycle")
   @js.native
-  class LifeCycle ()
+  open class LifeCycle ()
     extends typings.mendixmodelsdk.versionChecksMod.LifeCycle {
     def this(info: ILifeCycle) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "LifeCycleState")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "LifeCycleState")
   @js.native
   object LifeCycleState extends StObject {
     
@@ -256,9 +256,9 @@ object internalMod {
     /* 0 */ val UNAVAILABLE: typings.mendixmodelsdk.versionChecksMod.LifeCycleState.UNAVAILABLE & Double = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "LocalByNameReferenceProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "LocalByNameReferenceProperty")
   @js.native
-  class LocalByNameReferenceProperty[T /* <: INamedElement */] protected ()
+  open class LocalByNameReferenceProperty[T /* <: INamedElement */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.LocalByNameReferenceProperty[T] {
     def this(
       declaredOn: IStructureClass,
@@ -276,21 +276,21 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ModelEventReceiver")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ModelEventReceiver")
   @js.native
-  class ModelEventReceiver protected ()
+  open class ModelEventReceiver protected ()
     extends typings.mendixmodelsdk.modelEventReceiverMod.ModelEventReceiver {
     def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ModelServerClientImpl")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ModelServerClientImpl")
   @js.native
-  class ModelServerClientImpl protected ()
+  open class ModelServerClientImpl protected ()
     extends typings.mendixmodelsdk.modelServerClientImplMod.ModelServerClientImpl {
     def this(config: ISdkConfig) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ModelUnit")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ModelUnit")
   @js.native
   abstract class ModelUnit[TModel /* <: IAbstractModel */] protected ()
     extends typings.mendixmodelsdk.unitsMod.ModelUnit[TModel] {
@@ -309,9 +309,9 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "ModifierValueHistory")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "ModifierValueHistory")
   @js.native
-  class ModifierValueHistory protected ()
+  open class ModifierValueHistory protected ()
     extends typings.mendixmodelsdk.versionChecksMod.ModifierValueHistory {
     def this(lifecycle: Null, defaultFallback: Boolean) = this()
     def this(lifecycle: Unit, defaultFallback: Boolean) = this()
@@ -321,9 +321,9 @@ object internalMod {
     def this(lifecycle: IModifierValueHistory, defaultFallback: Boolean) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "PartListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "PartListProperty")
   @js.native
-  class PartListProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] */] protected ()
+  open class PartListProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.PartListProperty[T] {
     /**
       * parent is the structure that the value of this property attaches to,
@@ -338,13 +338,13 @@ object internalMod {
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: js.Array[T],
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "PartProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "PartProperty")
   @js.native
-  class PartProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] */] protected ()
+  open class PartProperty[T /* <: typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.PartProperty[T] {
     /**
       * parent is the structure that the value of this property attaches to,
@@ -359,20 +359,20 @@ object internalMod {
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: T,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
     def this(
       declaredOn: IStructureClass,
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: Null,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "PrimitiveListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "PrimitiveListProperty")
   @js.native
-  class PrimitiveListProperty[T] protected ()
+  open class PrimitiveListProperty[T] protected ()
     extends typings.mendixmodelsdk.propertiesMod.PrimitiveListProperty[T] {
     /**
       * parent is the structure that the value of this property attaches to,
@@ -387,13 +387,13 @@ object internalMod {
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: js.Array[T],
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "PrimitiveProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "PrimitiveProperty")
   @js.native
-  class PrimitiveProperty[T] protected ()
+  open class PrimitiveProperty[T] protected ()
     extends typings.mendixmodelsdk.propertiesMod.PrimitiveProperty[T] {
     /**
       * parent is the structure that the value of this property attaches to,
@@ -408,11 +408,11 @@ object internalMod {
       parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: T,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "PrimitiveTypeEnum")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "PrimitiveTypeEnum")
   @js.native
   object PrimitiveTypeEnum extends StObject {
     
@@ -440,24 +440,24 @@ object internalMod {
     /* 1 */ val String: typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum.String & scala.Double = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "PropertyVersionInfo")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "PropertyVersionInfo")
   @js.native
-  class PropertyVersionInfo protected ()
+  open class PropertyVersionInfo protected ()
     extends typings.mendixmodelsdk.versionChecksMod.PropertyVersionInfo {
     def this(info: Null, publicByDefault: Boolean) = this()
     def this(info: IPropertyVersionInfo, publicByDefault: Boolean) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "RestTransportation")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "RestTransportation")
   @js.native
-  class RestTransportation protected ()
+  open class RestTransportation protected ()
     extends typings.mendixmodelsdk.restTransportationMod.RestTransportation {
     def this(config: ISdkConfig) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "StructuralChildListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "StructuralChildListProperty")
   @js.native
-  class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
+  open class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.StructuralChildListProperty[T] {
     def this(
       declaredOn: IStructureClass,
@@ -474,9 +474,9 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "StructuralChildProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "StructuralChildProperty")
   @js.native
-  class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
+  open class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
     extends typings.mendixmodelsdk.propertiesMod.StructuralChildProperty[T] {
     def this(
       declaredOn: IStructureClass,
@@ -505,7 +505,7 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "StructuralUnit")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "StructuralUnit")
   @js.native
   abstract class StructuralUnit[TModel /* <: IAbstractModel */] protected ()
     extends typings.mendixmodelsdk.unitsMod.StructuralUnit[TModel] {
@@ -518,7 +518,7 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "Structure")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "Structure")
   @js.native
   abstract class Structure[TModel /* <: IAbstractModel */, TContainer /* <: IContainer | Null */] protected ()
     extends typings.mendixmodelsdk.structuresMod.Structure[TModel, TContainer] {
@@ -549,7 +549,7 @@ object internalMod {
     ) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "StructureType")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "StructureType")
   @js.native
   object StructureType extends StObject {
     
@@ -563,44 +563,44 @@ object internalMod {
     /* 0 */ val StructuralUnit: typings.mendixmodelsdk.versionChecksMod.StructureType.StructuralUnit & Double = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.versionChecksMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "UndoManager")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "UndoManager")
   @js.native
-  class UndoManager protected ()
+  open class UndoManager protected ()
     extends typings.mendixmodelsdk.undoManagerMod.UndoManager {
     def this(_model: IAbstractModel) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "UndoState")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "UndoState")
   @js.native
-  class UndoState protected ()
+  open class UndoState protected ()
     extends typings.mendixmodelsdk.undoManagerMod.UndoState {
     def this(deltaManager: IDeltaManager) = this()
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "Version")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "Version")
   @js.native
-  class Version protected ()
+  open class Version protected ()
     extends typings.mendixmodelsdk.versionChecksMod.Version {
     def this(major: Double, minor: Double, patch: Double) = this()
   }
   /* static members */
   object Version {
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal", "Version")
+    @JSImport("mendixmodelsdk/src/sdk/internal", "Version")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal", "Version.memoisMap")
+    @JSImport("mendixmodelsdk/src/sdk/internal", "Version.memoisMap")
     @js.native
-    def memoisMap: js.Any = js.native
-    inline def memoisMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
+    def memoisMap: Any = js.native
+    inline def memoisMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoisMap")(x.asInstanceOf[js.Any])
     
     /**
       * Parses and @returns the given string as a Version object.
@@ -611,7 +611,7 @@ object internalMod {
     inline def parse(versionString: String): typings.mendixmodelsdk.versionChecksMod.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(versionString.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.versionChecksMod.Version]
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal", "VersionInfo")
+  @JSImport("mendixmodelsdk/src/sdk/internal", "VersionInfo")
   @js.native
   abstract class VersionInfo ()
     extends typings.mendixmodelsdk.versionChecksMod.VersionInfo
@@ -633,7 +633,7 @@ object internalMod {
   
   object instancehelpers {
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal", "instancehelpers")
+    @JSImport("mendixmodelsdk/src/sdk/internal", "instancehelpers")
     @js.native
     val ^ : js.Any = js.native
     
@@ -693,7 +693,7 @@ object internalMod {
     /**
       * Creates a new unit for a SDK user.
       */
-    inline def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnit")(container.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnit")(container.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def createUnitFromJSON(model: typings.mendixmodelsdk.abstractModelMod.AbstractModel, json: IAbstractUnitJson): IAbstractUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnitFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[IAbstractUnit]
     inline def createUnitFromJSON(
@@ -705,7 +705,7 @@ object internalMod {
     /**
       * Type -> class (the constructor function, technically) lookup, e.g. "DomainModels$Entity" -> DomainModels.Entity
       */
-    inline def lookupClass(qualifiedTypeName: String, classes: js.Any): InstanceConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupClass")(qualifiedTypeName.asInstanceOf[js.Any], classes.asInstanceOf[js.Any])).asInstanceOf[InstanceConstructor]
+    inline def lookupClass(qualifiedTypeName: String, classes: Any): InstanceConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupClass")(qualifiedTypeName.asInstanceOf[js.Any], classes.asInstanceOf[js.Any])).asInstanceOf[InstanceConstructor]
     
     inline def modelElementJsonToInstance(
       model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
@@ -730,7 +730,7 @@ object internalMod {
     
     inline def structureAffectsQualifiedNames(structure: IStructure): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureAffectsQualifiedNames")(structure.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def structureIsByNameReferrable(structure: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureIsByNameReferrable")(structure.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container> */ Boolean]
+    inline def structureIsByNameReferrable(structure: IStructure): /* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/src/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/src/sdk/internal/structures.aliases.Container> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureIsByNameReferrable")(structure.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/src/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/src/sdk/internal/structures.aliases.Container> */ Boolean]
   }
   
   inline def instantiateChildElement(parent: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container]): typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateChildElement")(parent.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.elementsMod.Element[IAbstractModel] | Null]
@@ -741,7 +741,7 @@ object internalMod {
   
   inline def isAtLeast(versionString: String, model: IAbstractModel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAtLeast")(versionString.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean]
+  inline def isNamedElement(element: IStructure): /* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedElement")(element.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/properties/LocalByNameReferenceProperty.INamedElement */ Boolean]
   
   inline def parseAsNormalizedVersion(versionString: String): typings.mendixmodelsdk.versionChecksMod.Version = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAsNormalizedVersion")(versionString.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.versionChecksMod.Version]
   

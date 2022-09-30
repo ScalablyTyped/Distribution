@@ -1,8 +1,8 @@
 package typings.secureToken
 
 import typings.node.bufferMod.global.Buffer
-import typings.secureToken.secureTokenNumbers.`16`
-import typings.secureToken.secureTokenNumbers.`18`
+import typings.secureToken.secureTokenInts.`16`
+import typings.secureToken.secureTokenInts.`18`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

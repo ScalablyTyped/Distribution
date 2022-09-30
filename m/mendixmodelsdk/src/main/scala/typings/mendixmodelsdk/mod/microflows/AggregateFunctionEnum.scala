@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.AggregateFunctionEnum")
 @js.native
-class AggregateFunctionEnum protected ()
+open class AggregateFunctionEnum protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.AggregateFunctionEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

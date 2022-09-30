@@ -17,7 +17,7 @@ trait InstanceRequirements extends StObject {
   var AcceleratorManufacturers: js.UndefOr[AcceleratorManufacturerSet] = js.undefined
   
   /**
-    * The accelerators that must be on the instance type.   For instance types with NVIDIA A100 GPUs, specify a100.   For instance types with NVIDIA V100 GPUs, specify v100.   For instance types with NVIDIA K80 GPUs, specify k80.   For instance types with NVIDIA T4 GPUs, specify t4.   For instance types with NVIDIA M60 GPUs, specify m60.   For instance types with AMD Radeon Pro V520 GPUs, specify radeon-pro-v520.   For instance types with Xilinx VU9P FPGAs, specify vu9p.   For instance types with Amazon Web Services Inferentia GPUs, specify inferentia.   For instance types with NVIDIA GRID K520 GPUs, specify k520.   Default: Any accelerator
+    * The accelerators that must be on the instance type.   For instance types with NVIDIA A100 GPUs, specify a100.   For instance types with NVIDIA V100 GPUs, specify v100.   For instance types with NVIDIA K80 GPUs, specify k80.   For instance types with NVIDIA T4 GPUs, specify t4.   For instance types with NVIDIA M60 GPUs, specify m60.   For instance types with AMD Radeon Pro V520 GPUs, specify radeon-pro-v520.   For instance types with Xilinx VU9P FPGAs, specify vu9p.   For instance types with Amazon Web Services Inferentia chips, specify inferentia.   For instance types with NVIDIA GRID K520 GPUs, specify k520.   Default: Any accelerator
     */
   var AcceleratorNames: js.UndefOr[AcceleratorNameSet] = js.undefined
   

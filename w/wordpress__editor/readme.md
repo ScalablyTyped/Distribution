@@ -1,19 +1,19 @@
 
 # Scala.js typings for wordpress__editor
 
-Typings are for version 9.4
+Typings are for version 11.0
 
 ## Library description:
-Building blocks for WordPress editors.
+Enhanced block editor for WordPress posts.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/editor |
 | Keywords           | wordpress, gutenberg, editor |
-| # releases         | 74 |
-| # dependents       | 14 |
-| # downloads        | 509058 |
-| # stars            | 0 |
+| # releases         | 136 |
+| # dependents       | 0.0 |
+| # downloads        | 52792.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/editor/README.md)

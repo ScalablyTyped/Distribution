@@ -47,7 +47,7 @@ trait UniformBuffer extends StObject {
     */
   /* private */ var _fillAlignment: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _indexBuffer: Double = js.native
   
   /* private */ var _name: Any = js.native
@@ -56,10 +56,10 @@ trait UniformBuffer extends StObject {
   
   /* private */ var _noUBO: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _numBuffers: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   def _rebuild(): Unit = js.native
   
   /* private */ var _uniformArraySizes: Any = js.native

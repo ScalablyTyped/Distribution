@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Settings
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   /**
     * The 'client_email' and 'private_key' properties of the service account
@@ -50,6 +50,16 @@ trait Settings
   
   /** The port to connect to. */
   var port: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Use HTTP for requests that can be served over HTTP and JSON. This reduces
+    * the amount of networking code that is loaded to serve requests within
+    * Firestore.
+    *
+    * This setting does not apply to `onSnapshot` APIs as they cannot be served
+    * over native HTTP.
+    */
+  var preferRest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The project ID from the Google Developer's Console, e.g.
@@ -103,6 +113,10 @@ object Settings {
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setPreferRest(value: Boolean): Self = StObject.set(x, "preferRest", value.asInstanceOf[js.Any])
+    
+    inline def setPreferRestUndefined: Self = StObject.set(x, "preferRest", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

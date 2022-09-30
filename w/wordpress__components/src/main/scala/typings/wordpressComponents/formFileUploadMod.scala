@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
@@ -45,6 +46,7 @@ import typings.std.Event
 import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
 import typings.wordpressComponents.anon.OpenFileDialog
+import typings.wordpressComponents.buttonMod.Button.ButtonVariant
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressComponents.formFileUploadMod.FormFileUpload.Props
 import typings.wordpressComponents.popoverMod.Popover.Position
@@ -67,11 +69,13 @@ import typings.wordpressComponents.wordpressComponentsStrings.decimal
 import typings.wordpressComponents.wordpressComponentsStrings.descending
 import typings.wordpressComponents.wordpressComponentsStrings.dialog
 import typings.wordpressComponents.wordpressComponentsStrings.email
+import typings.wordpressComponents.wordpressComponentsStrings.environment
 import typings.wordpressComponents.wordpressComponentsStrings.execute
 import typings.wordpressComponents.wordpressComponentsStrings.grammar
 import typings.wordpressComponents.wordpressComponentsStrings.grid
 import typings.wordpressComponents.wordpressComponentsStrings.horizontal
 import typings.wordpressComponents.wordpressComponentsStrings.inherit
+import typings.wordpressComponents.wordpressComponentsStrings.left
 import typings.wordpressComponents.wordpressComponentsStrings.link
 import typings.wordpressComponents.wordpressComponentsStrings.list
 import typings.wordpressComponents.wordpressComponentsStrings.listbox
@@ -89,6 +93,7 @@ import typings.wordpressComponents.wordpressComponentsStrings.page
 import typings.wordpressComponents.wordpressComponentsStrings.polite
 import typings.wordpressComponents.wordpressComponentsStrings.popup
 import typings.wordpressComponents.wordpressComponentsStrings.removals
+import typings.wordpressComponents.wordpressComponentsStrings.right
 import typings.wordpressComponents.wordpressComponentsStrings.search
 import typings.wordpressComponents.wordpressComponentsStrings.spelling
 import typings.wordpressComponents.wordpressComponentsStrings.step
@@ -97,6 +102,7 @@ import typings.wordpressComponents.wordpressComponentsStrings.text
 import typings.wordpressComponents.wordpressComponentsStrings.time
 import typings.wordpressComponents.wordpressComponentsStrings.tree
 import typings.wordpressComponents.wordpressComponentsStrings.url
+import typings.wordpressComponents.wordpressComponentsStrings.user
 import typings.wordpressComponents.wordpressComponentsStrings.vertical
 import typings.wordpressComponents.wordpressComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
@@ -192,11 +198,11 @@ object formFileUploadMod {
       
       var `aria-activedescendant`: js.UndefOr[String] = js.undefined
       
-      var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+      var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
       
-      var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+      var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
       
@@ -214,21 +220,21 @@ object formFileUploadMod {
       
       var `aria-details`: js.UndefOr[String] = js.undefined
       
-      var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+      var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
       
       var `aria-errormessage`: js.UndefOr[String] = js.undefined
       
-      var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+      var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-flowto`: js.UndefOr[String] = js.undefined
       
-      var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+      var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
       
-      var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+      var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
       
@@ -242,11 +248,11 @@ object formFileUploadMod {
       
       var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
       
-      var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+      var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
       
-      var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+      var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
       
-      var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+      var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
       
@@ -258,13 +264,13 @@ object formFileUploadMod {
       
       var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
       
-      var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+      var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-relevant`: js.UndefOr[
             additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
           ] = js.undefined
       
-      var `aria-required`: js.UndefOr[Boolean] = js.undefined
+      var `aria-required`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-roledescription`: js.UndefOr[String] = js.undefined
       
@@ -274,7 +280,7 @@ object formFileUploadMod {
       
       var `aria-rowspan`: js.UndefOr[Double] = js.undefined
       
-      var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+      var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
       
       var `aria-setsize`: js.UndefOr[Double] = js.undefined
       
@@ -304,7 +310,7 @@ object formFileUploadMod {
       
       var autoSave: js.UndefOr[String] = js.undefined
       
-      var capture: js.UndefOr[Boolean | String] = js.undefined
+      var capture: js.UndefOr[Boolean | user | environment] = js.undefined
       
       var cellPadding: js.UndefOr[Double | String] = js.undefined
       
@@ -360,7 +366,7 @@ object formFileUploadMod {
       
       var disabled: js.UndefOr[Boolean] = js.undefined
       
-      var download: js.UndefOr[js.Any] = js.undefined
+      var download: js.UndefOr[Any] = js.undefined
       
       var draggable: js.UndefOr[Booleanish] = js.undefined
       
@@ -396,9 +402,15 @@ object formFileUploadMod {
       
       var icon: js.UndefOr[Icon | Element] = js.undefined
       
+      var iconPosition: js.UndefOr[left | right] = js.undefined
+      
+      var iconSize: js.UndefOr[
+            /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['size'] */ js.Any
+          ] = js.undefined
+      
       var id: js.UndefOr[String] = js.undefined
       
-      var inlist: js.UndefOr[js.Any] = js.undefined
+      var inlist: js.UndefOr[Any] = js.undefined
       
       var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
       
@@ -412,9 +424,9 @@ object formFileUploadMod {
       
       var isDestructive: js.UndefOr[Boolean] = js.undefined
       
-      var isLarge: js.UndefOr[Boolean] = js.undefined
-      
       var isLink: js.UndefOr[Boolean] = js.undefined
+      
+      var isPressed: js.UndefOr[Boolean] = js.undefined
       
       var isPrimary: js.UndefOr[Boolean] = js.undefined
       
@@ -423,8 +435,6 @@ object formFileUploadMod {
       var isSmall: js.UndefOr[Boolean] = js.undefined
       
       var isTertiary: js.UndefOr[Boolean] = js.undefined
-      
-      var isToggled: js.UndefOr[Boolean] = js.undefined
       
       var itemID: js.UndefOr[String] = js.undefined
       
@@ -686,7 +696,7 @@ object formFileUploadMod {
       
       var reversed: js.UndefOr[Boolean] = js.undefined
       
-      var role: js.UndefOr[String] = js.undefined
+      var role: js.UndefOr[AriaRole] = js.undefined
       
       var rowSpan: js.UndefOr[Double] = js.undefined
       
@@ -709,6 +719,8 @@ object formFileUploadMod {
       var shape: js.UndefOr[String] = js.undefined
       
       var shortcut: js.UndefOr[ShortcutType] = js.undefined
+      
+      var showTooltip: js.UndefOr[Boolean] = js.undefined
       
       var size: js.UndefOr[Double] = js.undefined
       
@@ -744,9 +756,13 @@ object formFileUploadMod {
       
       var target: js.UndefOr[String] = js.undefined
       
+      var text: js.UndefOr[String] = js.undefined
+      
       var title: js.UndefOr[String] = js.undefined
       
       var tooltip: js.UndefOr[String] = js.undefined
+      
+      var tooltipPosition: js.UndefOr[Position] = js.undefined
       
       var translate: js.UndefOr[yes | no] = js.undefined
       
@@ -759,6 +775,8 @@ object formFileUploadMod {
       var useMap: js.UndefOr[String] = js.undefined
       
       var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+      
+      var variant: js.UndefOr[ButtonVariant] = js.undefined
       
       var vocab: js.UndefOr[String] = js.undefined
       
@@ -813,7 +831,7 @@ object formFileUploadMod {
         
         inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
         
-        inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+        inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
         
         inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
         
@@ -821,7 +839,7 @@ object formFileUploadMod {
         
         inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
         
-        inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+        inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
         
         inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
         
@@ -857,7 +875,7 @@ object formFileUploadMod {
         
         inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
         
-        inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+        inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
         
         inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
         
@@ -869,7 +887,7 @@ object formFileUploadMod {
         
         inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
         
-        inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+        inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
         
         inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
         
@@ -877,7 +895,7 @@ object formFileUploadMod {
         
         inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
         
-        inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+        inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
         
         inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
         
@@ -885,7 +903,7 @@ object formFileUploadMod {
         
         inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
         
-        inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+        inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
         
         inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
         
@@ -913,15 +931,15 @@ object formFileUploadMod {
         
         inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
         
-        inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+        inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
         
         inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
         
-        inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+        inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
         
         inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
         
-        inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+        inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
         
         inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
         
@@ -945,7 +963,7 @@ object formFileUploadMod {
         
         inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
         
-        inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+        inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
         
         inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
         
@@ -955,7 +973,7 @@ object formFileUploadMod {
         
         inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
         
-        inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+        inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
         
         inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
         
@@ -975,7 +993,7 @@ object formFileUploadMod {
         
         inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
         
-        inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+        inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
         
         inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
         
@@ -1035,7 +1053,7 @@ object formFileUploadMod {
         
         inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
         
-        inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+        inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
         inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
         
@@ -1139,7 +1157,7 @@ object formFileUploadMod {
         
         inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
         
-        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+        inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
         
         inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
         
@@ -1153,7 +1171,7 @@ object formFileUploadMod {
         
         inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+        inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
         
         inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
         
@@ -1223,13 +1241,23 @@ object formFileUploadMod {
         
         inline def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
+        inline def setIconPosition(value: left | right): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+        
+        inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
+        
+        inline def setIconSize(
+          value: /* import warning: importer.ImportType#apply Failed type conversion: @wordpress/components.@wordpress/components/icon.Icon.Props<any>['size'] */ js.Any
+        ): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+        
+        inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+        
         inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+        inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
         
         inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
         
@@ -1255,13 +1283,13 @@ object formFileUploadMod {
         
         inline def setIsDestructiveUndefined: Self = StObject.set(x, "isDestructive", js.undefined)
         
-        inline def setIsLarge(value: Boolean): Self = StObject.set(x, "isLarge", value.asInstanceOf[js.Any])
-        
-        inline def setIsLargeUndefined: Self = StObject.set(x, "isLarge", js.undefined)
-        
         inline def setIsLink(value: Boolean): Self = StObject.set(x, "isLink", value.asInstanceOf[js.Any])
         
         inline def setIsLinkUndefined: Self = StObject.set(x, "isLink", js.undefined)
+        
+        inline def setIsPressed(value: Boolean): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
+        
+        inline def setIsPressedUndefined: Self = StObject.set(x, "isPressed", js.undefined)
         
         inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
         
@@ -1278,10 +1306,6 @@ object formFileUploadMod {
         inline def setIsTertiary(value: Boolean): Self = StObject.set(x, "isTertiary", value.asInstanceOf[js.Any])
         
         inline def setIsTertiaryUndefined: Self = StObject.set(x, "isTertiary", js.undefined)
-        
-        inline def setIsToggled(value: Boolean): Self = StObject.set(x, "isToggled", value.asInstanceOf[js.Any])
-        
-        inline def setIsToggledUndefined: Self = StObject.set(x, "isToggled", js.undefined)
         
         inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
         
@@ -1431,7 +1455,7 @@ object formFileUploadMod {
         
         inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
         
-        inline def setOnBlur(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+        inline def setOnBlur(value: FocusEvent[HTMLButtonElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
         
         inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
         
@@ -1529,7 +1553,7 @@ object formFileUploadMod {
         
         inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
         
-        inline def setOnFocus(value: FocusEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+        inline def setOnFocus(value: FocusEvent[HTMLButtonElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
         
         inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
         
@@ -1793,7 +1817,7 @@ object formFileUploadMod {
         
         inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
         
-        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
         inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         
@@ -1840,6 +1864,10 @@ object formFileUploadMod {
         inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
         
         inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+        
+        inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+        
+        inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
         
         inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
@@ -1909,11 +1937,19 @@ object formFileUploadMod {
         
         inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
         inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
         inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+        
+        inline def setTooltipPosition(value: Position): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+        
+        inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
         
         inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
         
@@ -1941,7 +1977,11 @@ object formFileUploadMod {
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
+        
+        inline def setVariant(value: ButtonVariant): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+        
+        inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
         
         inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
         

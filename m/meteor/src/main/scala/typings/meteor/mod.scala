@@ -1,19 +1,22 @@
 package typings.meteor
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.meteor.Meteor.Error
 import typings.meteor.Meteor.TypedError
 import typings.meteor.Meteor.User
+import typings.meteor.Mongo.ObjectID
+import typings.meteor.Mongo.Selector
 import typings.meteor.anon.Algorithm
 import typings.meteor.anon.AmbiguousErrorMessages
 import typings.meteor.anon.Connection
 import typings.meteor.anon.Digest
-import typings.meteor.anon.Email
+import typings.meteor.anon.Fields
 import typings.meteor.anon.ForceApprovalPrompt
 import typings.meteor.anon.Logout
 import typings.meteor.anon.Profile
 import typings.meteor.anon.Stop
 import typings.meteor.anon.`0`
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +65,7 @@ object mod {
     inline def changePassword(
       oldPassword: String,
       newPassword: String,
-      callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changePassword")(oldPassword.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
@@ -77,10 +80,10 @@ object mod {
     
     inline def config(options: AmbiguousErrorMessages): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def createUser(options: Email): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createUser")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createUser(options: typings.meteor.anon.Email): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createUser")(options.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def createUser(
-      options: Email,
-      callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
+      options: typings.meteor.anon.Email,
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUser")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("meteor/accounts-base", "Accounts.emailTemplates")
@@ -89,30 +92,38 @@ object mod {
     inline def emailTemplates_=(x: typings.meteor.mod.EmailTemplates): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emailTemplates")(x.asInstanceOf[js.Any])
     
     inline def findUserByEmail(email: String): js.UndefOr[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[User | Null]]
+    inline def findUserByEmail(email: String, options: Fields): js.UndefOr[User | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByEmail")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[User | Null]]
     
     inline def findUserByUsername(username: String): js.UndefOr[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[User | Null]]
+    inline def findUserByUsername(username: String, options: Fields): js.UndefOr[User | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findUserByUsername")(username.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[User | Null]]
     
     inline def forgotPassword(options: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forgotPassword")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def forgotPassword(
-      options: `0`,
-      callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forgotPassword")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forgotPassword(options: `0`, callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forgotPassword")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def generateStampedLoginToken(): StampedLoginToken = ^.asInstanceOf[js.Dynamic].applyDynamic("_generateStampedLoginToken")().asInstanceOf[StampedLoginToken]
+    
+    inline def hashLoginToken(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_hashLoginToken")(token.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def hashPassword(password: String): Algorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("_hashPassword")(password.asInstanceOf[js.Any]).asInstanceOf[Algorithm]
     
+    inline def hashStampedToken(token: StampedLoginToken): HashedStampedLoginToken = ^.asInstanceOf[js.Dynamic].applyDynamic("_hashStampedToken")(token.asInstanceOf[js.Any]).asInstanceOf[HashedStampedLoginToken]
+    
+    inline def insertHashedLoginToken[T](userId: String, token: HashedStampedLoginToken): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_insertHashedLoginToken")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def insertHashedLoginToken[T](userId: String, token: HashedStampedLoginToken, query: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_insertHashedLoginToken")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def insertHashedLoginToken[T](userId: String, token: HashedStampedLoginToken, query: ObjectID): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_insertHashedLoginToken")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def insertHashedLoginToken[T](userId: String, token: HashedStampedLoginToken, query: Selector[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_insertHashedLoginToken")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def loggingIn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loggingIn")().asInstanceOf[Boolean]
+    
+    inline def loggingOut(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loggingOut")().asInstanceOf[Boolean]
     
     inline def loginServicesConfigured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loginServicesConfigured")().asInstanceOf[Boolean]
     
     inline def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
-    inline def logout(
-      callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def logout(callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def logoutOtherClients(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logoutOtherClients")().asInstanceOf[Unit]
-    inline def logoutOtherClients(
-      callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logoutOtherClients")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def logoutOtherClients(callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logoutOtherClients")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def onCreateUser(func: js.Function2[/* options */ Profile, /* user */ User, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCreateUser")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -146,7 +157,7 @@ object mod {
       * - `undefined`, meaning don't handle;
       * - a login method result object
       **/
-    inline def registerLoginHandler(name: String, handler: js.Function1[/* options */ js.Any, js.UndefOr[js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLoginHandler(name: String, handler: js.Function1[/* options */ Any, js.UndefOr[js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def removeEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -154,17 +165,50 @@ object mod {
     inline def resetPassword(
       token: String,
       newPassword: String,
-      callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(token.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def sendEnrollmentEmail(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def sendEnrollmentEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendEnrollmentEmail(userId: String, email: String, extraTokenData: Unit, extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendEnrollmentEmail(userId: String, email: String, extraTokenData: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendEnrollmentEmail(
+      userId: String,
+      email: String,
+      extraTokenData: Record[String, Any],
+      extraParams: Record[String, Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendEnrollmentEmail(userId: String, email: Unit, extraTokenData: Unit, extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendEnrollmentEmail(userId: String, email: Unit, extraTokenData: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendEnrollmentEmail(userId: String, email: Unit, extraTokenData: Record[String, Any], extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def sendResetPasswordEmail(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def sendResetPasswordEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendResetPasswordEmail(userId: String, email: String, extraTokenData: Unit, extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendResetPasswordEmail(userId: String, email: String, extraTokenData: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendResetPasswordEmail(
+      userId: String,
+      email: String,
+      extraTokenData: Record[String, Any],
+      extraParams: Record[String, Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendResetPasswordEmail(userId: String, email: Unit, extraTokenData: Unit, extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendResetPasswordEmail(userId: String, email: Unit, extraTokenData: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendResetPasswordEmail(userId: String, email: Unit, extraTokenData: Record[String, Any], extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def sendVerificationEmail(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def sendVerificationEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendVerificationEmail(userId: String, email: String, extraTokenData: Unit, extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendVerificationEmail(userId: String, email: String, extraTokenData: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendVerificationEmail(
+      userId: String,
+      email: String,
+      extraTokenData: Record[String, Any],
+      extraParams: Record[String, Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendVerificationEmail(userId: String, email: Unit, extraTokenData: Unit, extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendVerificationEmail(userId: String, email: Unit, extraTokenData: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def sendVerificationEmail(userId: String, email: Unit, extraTokenData: Record[String, Any], extraParams: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any], extraTokenData.asInstanceOf[js.Any], extraParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def setPassword(userId: String, newPassword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setPassword(userId: String, newPassword: String, options: Logout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -186,6 +230,7 @@ object mod {
     inline def urls_=(x: typings.meteor.mod.URLS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urls")(x.asInstanceOf[js.Any])
     
     inline def user(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")().asInstanceOf[User | Null]
+    inline def user(options: Fields): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")(options.asInstanceOf[js.Any]).asInstanceOf[User | Null]
     
     inline def userId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("userId")().asInstanceOf[String | Null]
     
@@ -194,10 +239,28 @@ object mod {
     inline def validateNewUser(func: js.Function): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateNewUser")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def verifyEmail(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEmail")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def verifyEmail(
-      token: String,
-      callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyEmail")(token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def verifyEmail(token: String, callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyEmail")(token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    trait HashedStampedLoginToken extends StObject {
+      
+      var hashedToken: String
+      
+      var when: js.Date
+    }
+    object HashedStampedLoginToken {
+      
+      inline def apply(hashedToken: String, when: js.Date): HashedStampedLoginToken = {
+        val __obj = js.Dynamic.literal(hashedToken = hashedToken.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+        __obj.asInstanceOf[HashedStampedLoginToken]
+      }
+      
+      extension [Self <: HashedStampedLoginToken](x: Self) {
+        
+        inline def setHashedToken(value: String): Self = StObject.set(x, "hashedToken", value.asInstanceOf[js.Any])
+        
+        inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      }
+    }
     
     trait IValidateLoginAttemptCbOpts extends StObject {
       
@@ -205,9 +268,9 @@ object mod {
       
       var connection: typings.meteor.Meteor.Connection
       
-      var error: typings.meteor.Meteor.Error
+      var error: Error
       
-      var methodArguments: js.Array[js.Any]
+      var methodArguments: js.Array[Any]
       
       var methodName: String
       
@@ -220,8 +283,8 @@ object mod {
       inline def apply(
         allowed: Boolean,
         connection: typings.meteor.Meteor.Connection,
-        error: typings.meteor.Meteor.Error,
-        methodArguments: js.Array[js.Any],
+        error: Error,
+        methodArguments: js.Array[Any],
         methodName: String,
         `type`: String,
         user: User
@@ -237,11 +300,11 @@ object mod {
         
         inline def setConnection(value: typings.meteor.Meteor.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
         
-        inline def setError(value: typings.meteor.Meteor.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        inline def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+        inline def setMethodArguments(value: js.Array[Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
         
-        inline def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
+        inline def setMethodArgumentsVarargs(value: Any*): Self = StObject.set(x, "methodArguments", js.Array(value*))
         
         inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
         
@@ -256,7 +319,7 @@ object mod {
       /**
         * The arguments for the method
         */
-      var methodArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var methodArguments: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * The method to call (default 'login')
@@ -267,7 +330,7 @@ object mod {
         * Will be called with no arguments once the user is fully
         * logged in, or with the error on error.
         */
-      var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[Any], Unit]] = js.undefined
       
       /**
         * If provided, will be called with the result of the
@@ -285,17 +348,17 @@ object mod {
       
       extension [Self <: LoginMethodOptions](x: Self) {
         
-        inline def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+        inline def setMethodArguments(value: js.Array[Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
         
         inline def setMethodArgumentsUndefined: Self = StObject.set(x, "methodArguments", js.undefined)
         
-        inline def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
+        inline def setMethodArgumentsVarargs(value: Any*): Self = StObject.set(x, "methodArguments", js.Array(value*))
         
         inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
         
         inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
         
-        inline def setUserCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "userCallback", js.Any.fromFunction1(value))
+        inline def setUserCallback(value: /* err */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "userCallback", js.Any.fromFunction1(value))
         
         inline def setUserCallbackUndefined: Self = StObject.set(x, "userCallback", js.undefined)
         
@@ -306,6 +369,27 @@ object mod {
     }
     
     type Password = String | Digest
+    
+    trait StampedLoginToken extends StObject {
+      
+      var token: String
+      
+      var when: js.Date
+    }
+    object StampedLoginToken {
+      
+      inline def apply(token: String, when: js.Date): StampedLoginToken = {
+        val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+        __obj.asInstanceOf[StampedLoginToken]
+      }
+      
+      extension [Self <: StampedLoginToken](x: Self) {
+        
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        
+        inline def setWhen(value: js.Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      }
+    }
   }
   
   trait EmailFields extends StObject {

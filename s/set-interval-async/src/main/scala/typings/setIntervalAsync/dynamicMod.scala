@@ -28,7 +28,7 @@ object dynamicMod {
   
   inline def clearIntervalAsync(timer: SetIntervalAsyncTimer): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIntervalAsync")(timer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
+  inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((scala.List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
   
   trait SetIntervalAsyncTimer extends StObject {
     

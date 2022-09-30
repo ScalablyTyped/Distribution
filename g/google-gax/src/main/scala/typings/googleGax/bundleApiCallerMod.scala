@@ -13,7 +13,7 @@ object bundleApiCallerMod {
   
   @JSImport("google-gax/build/src/bundlingCalls/bundleApiCaller", "BundleApiCaller")
   @js.native
-  class BundleApiCaller protected ()
+  open class BundleApiCaller protected ()
     extends StObject
        with APICaller {
     def this(bundler: BundleExecutor) = this()

@@ -3,6 +3,7 @@ package typings.maximMazurokGapiClientFirebaserules
 import typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules.ProjectsResource
 import typings.maximMazurokGapiClientFirebaserules.maximMazurokGapiClientFirebaserulesStrings.firebaserules
 import typings.maximMazurokGapiClientFirebaserules.maximMazurokGapiClientFirebaserulesStrings.v1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object global {
       }
       
       /** Load Firebase Rules API v1 */
-      inline def load(name: firebaserules, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: firebaserules, version: v1): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: firebaserules, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }

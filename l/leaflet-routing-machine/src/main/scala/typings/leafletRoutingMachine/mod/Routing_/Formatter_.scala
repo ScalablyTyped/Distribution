@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.Formatter")
 @js.native
-class Formatter_ () extends StObject {
+open class Formatter_ () extends StObject {
   def this(options: FormatterOptions) = this()
   
   def capitalize(s: String): String = js.native

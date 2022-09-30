@@ -85,7 +85,7 @@ object commonMod {
   open class Trace_ ()
     extends typings.uirouterCore.traceMod.Trace_
   
-  inline def _extend(toObj: Obj, fromObjs: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_extend")(List(toObj.asInstanceOf[js.Any]).`++`(fromObjs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def _extend(toObj: Obj, fromObjs: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_extend")(scala.List(toObj.asInstanceOf[js.Any]).`++`(fromObjs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def _inArray(array: js.Array[Any]): js.Function1[/* obj */ Any, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("_inArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ Any, Boolean]]
   inline def _inArray(array: js.Array[Any], obj: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_inArray")(array.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -136,7 +136,7 @@ object commonMod {
   
   inline def curry(fn: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("curry")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  inline def defaults(opts: Any, defaultsList: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(opts.asInstanceOf[js.Any]).`++`(defaultsList.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def defaults(opts: Any, defaultsList: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(scala.List(opts.asInstanceOf[js.Any]).`++`(defaultsList.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def deregAll(functions: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregAll")(functions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

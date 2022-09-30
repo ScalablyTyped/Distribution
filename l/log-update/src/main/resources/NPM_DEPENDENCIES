@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "log-update" : "4.0.0"
+      "log-update" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "log-update" : "4.0.0"
+      "log-update" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

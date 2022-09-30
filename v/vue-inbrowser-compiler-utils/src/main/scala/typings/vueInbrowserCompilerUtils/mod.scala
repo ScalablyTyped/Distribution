@@ -20,7 +20,7 @@ object mod {
   
   inline def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def concatenate(src: StringDictionary[Any], otherObj: StringDictionary[Any]*): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(List(src.asInstanceOf[js.Any]).`++`(otherObj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[Any]]
+  inline def concatenate(src: StringDictionary[Any], otherObj: StringDictionary[Any]*): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(scala.List(src.asInstanceOf[js.Any]).`++`(otherObj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StringDictionary[Any]]
   
   inline def getDefaultExample(doc: ComponentDoc): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExample")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
   

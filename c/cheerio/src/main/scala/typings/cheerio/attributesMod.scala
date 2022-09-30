@@ -63,7 +63,7 @@ object attributesMod {
   ): Cheerio[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Cheerio[T]]
   inline def attr[T /* <: AnyNode */](values: Record[String, String | Null]): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(values.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   
-  inline def attr_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
+  inline def attr_T_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("attr")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   
   inline def data[T /* <: AnyNode */](): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("data")().asInstanceOf[Record[String, Any]]
   inline def data[T /* <: AnyNode */](name: String): js.UndefOr[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Any]]
@@ -89,7 +89,7 @@ object attributesMod {
     ]
   ): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   
-  inline def prop_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
+  inline def prop_T_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[Cheerio[T]]
   
   inline def prop_attribs[T /* <: AnyNode */](name: attribs): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(name.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   inline def prop_attribs[T /* <: AnyNode */](

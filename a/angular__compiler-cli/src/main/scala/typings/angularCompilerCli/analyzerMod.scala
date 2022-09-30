@@ -1,7 +1,7 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`1`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.angularCompilerCli.importsMod.ImportGraph
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
@@ -64,8 +64,8 @@ object analyzerMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`1`
+    - typings.angularCompilerCli.angularCompilerCliInts.`0`
+    - typings.angularCompilerCli.angularCompilerCliInts.`1`
   */
   trait CycleHandlingStrategy extends StObject
   object CycleHandlingStrategy {

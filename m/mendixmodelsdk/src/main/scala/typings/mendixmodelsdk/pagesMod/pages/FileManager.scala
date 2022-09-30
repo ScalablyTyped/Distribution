@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/file-manager relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.FileManager")
 @js.native
-class FileManager protected () extends InputWidget {
+open class FileManager protected () extends InputWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +44,7 @@ class FileManager protected () extends InputWidget {
 }
 object FileManager {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.FileManager")
   @js.native
   val ^ : js.Any = js.native
   
@@ -618,13 +618,13 @@ object FileManager {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.FileManager.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.FileManager.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

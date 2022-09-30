@@ -1,16 +1,16 @@
 package typings.decimalJs
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.decimalJs.decimalJsNumbers.`0`
-import typings.decimalJs.decimalJsNumbers.`1`
-import typings.decimalJs.decimalJsNumbers.`2`
-import typings.decimalJs.decimalJsNumbers.`3`
-import typings.decimalJs.decimalJsNumbers.`4`
-import typings.decimalJs.decimalJsNumbers.`5`
-import typings.decimalJs.decimalJsNumbers.`6`
-import typings.decimalJs.decimalJsNumbers.`7`
-import typings.decimalJs.decimalJsNumbers.`8`
-import typings.decimalJs.decimalJsNumbers.`9`
+import typings.decimalJs.decimalJsInts.`0`
+import typings.decimalJs.decimalJsInts.`1`
+import typings.decimalJs.decimalJsInts.`2`
+import typings.decimalJs.decimalJsInts.`3`
+import typings.decimalJs.decimalJsInts.`4`
+import typings.decimalJs.decimalJsInts.`5`
+import typings.decimalJs.decimalJsInts.`6`
+import typings.decimalJs.decimalJsInts.`7`
+import typings.decimalJs.decimalJsInts.`8`
+import typings.decimalJs.decimalJsInts.`9`
 import typings.decimalJs.mod.Decimal.Config
 import typings.decimalJs.mod.Decimal.Constructor
 import typings.decimalJs.mod.Decimal.Modulo
@@ -819,72 +819,72 @@ object mod {
     type Instance = typings.decimalJs.mod.Decimal
     
     /* Rewritten from type alias, can be one of: 
-      - typings.decimalJs.decimalJsNumbers.`9`
-      - typings.decimalJs.decimalJsNumbers.`0`
-      - typings.decimalJs.decimalJsNumbers.`1`
-      - typings.decimalJs.decimalJsNumbers.`2`
-      - typings.decimalJs.decimalJsNumbers.`3`
-      - typings.decimalJs.decimalJsNumbers.`4`
-      - typings.decimalJs.decimalJsNumbers.`5`
-      - typings.decimalJs.decimalJsNumbers.`6`
-      - typings.decimalJs.decimalJsNumbers.`7`
-      - typings.decimalJs.decimalJsNumbers.`8`
+      - typings.decimalJs.decimalJsInts.`9`
+      - typings.decimalJs.decimalJsInts.`0`
+      - typings.decimalJs.decimalJsInts.`1`
+      - typings.decimalJs.decimalJsInts.`2`
+      - typings.decimalJs.decimalJsInts.`3`
+      - typings.decimalJs.decimalJsInts.`4`
+      - typings.decimalJs.decimalJsInts.`5`
+      - typings.decimalJs.decimalJsInts.`6`
+      - typings.decimalJs.decimalJsInts.`7`
+      - typings.decimalJs.decimalJsInts.`8`
     */
     trait Modulo extends StObject
     object Modulo {
       
-      inline def `0`: typings.decimalJs.decimalJsNumbers.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsNumbers.`0`]
+      inline def `0`: typings.decimalJs.decimalJsInts.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsInts.`0`]
       
-      inline def `1`: typings.decimalJs.decimalJsNumbers.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsNumbers.`1`]
+      inline def `1`: typings.decimalJs.decimalJsInts.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsInts.`1`]
       
-      inline def `2`: typings.decimalJs.decimalJsNumbers.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsNumbers.`2`]
+      inline def `2`: typings.decimalJs.decimalJsInts.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsInts.`2`]
       
-      inline def `3`: typings.decimalJs.decimalJsNumbers.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsNumbers.`3`]
+      inline def `3`: typings.decimalJs.decimalJsInts.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsInts.`3`]
       
-      inline def `4`: typings.decimalJs.decimalJsNumbers.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsNumbers.`4`]
+      inline def `4`: typings.decimalJs.decimalJsInts.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsInts.`4`]
       
-      inline def `5`: typings.decimalJs.decimalJsNumbers.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsNumbers.`5`]
+      inline def `5`: typings.decimalJs.decimalJsInts.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsInts.`5`]
       
-      inline def `6`: typings.decimalJs.decimalJsNumbers.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsNumbers.`6`]
+      inline def `6`: typings.decimalJs.decimalJsInts.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsInts.`6`]
       
-      inline def `7`: typings.decimalJs.decimalJsNumbers.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsNumbers.`7`]
+      inline def `7`: typings.decimalJs.decimalJsInts.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsInts.`7`]
       
-      inline def `8`: typings.decimalJs.decimalJsNumbers.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsNumbers.`8`]
+      inline def `8`: typings.decimalJs.decimalJsInts.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsInts.`8`]
       
-      inline def `9`: typings.decimalJs.decimalJsNumbers.`9` = 9.asInstanceOf[typings.decimalJs.decimalJsNumbers.`9`]
+      inline def `9`: typings.decimalJs.decimalJsInts.`9` = 9.asInstanceOf[typings.decimalJs.decimalJsInts.`9`]
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.decimalJs.decimalJsNumbers.`0`
-      - typings.decimalJs.decimalJsNumbers.`1`
-      - typings.decimalJs.decimalJsNumbers.`2`
-      - typings.decimalJs.decimalJsNumbers.`3`
-      - typings.decimalJs.decimalJsNumbers.`4`
-      - typings.decimalJs.decimalJsNumbers.`5`
-      - typings.decimalJs.decimalJsNumbers.`6`
-      - typings.decimalJs.decimalJsNumbers.`7`
-      - typings.decimalJs.decimalJsNumbers.`8`
+      - typings.decimalJs.decimalJsInts.`0`
+      - typings.decimalJs.decimalJsInts.`1`
+      - typings.decimalJs.decimalJsInts.`2`
+      - typings.decimalJs.decimalJsInts.`3`
+      - typings.decimalJs.decimalJsInts.`4`
+      - typings.decimalJs.decimalJsInts.`5`
+      - typings.decimalJs.decimalJsInts.`6`
+      - typings.decimalJs.decimalJsInts.`7`
+      - typings.decimalJs.decimalJsInts.`8`
     */
     trait Rounding extends StObject
     object Rounding {
       
-      inline def `0`: typings.decimalJs.decimalJsNumbers.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsNumbers.`0`]
+      inline def `0`: typings.decimalJs.decimalJsInts.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsInts.`0`]
       
-      inline def `1`: typings.decimalJs.decimalJsNumbers.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsNumbers.`1`]
+      inline def `1`: typings.decimalJs.decimalJsInts.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsInts.`1`]
       
-      inline def `2`: typings.decimalJs.decimalJsNumbers.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsNumbers.`2`]
+      inline def `2`: typings.decimalJs.decimalJsInts.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsInts.`2`]
       
-      inline def `3`: typings.decimalJs.decimalJsNumbers.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsNumbers.`3`]
+      inline def `3`: typings.decimalJs.decimalJsInts.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsInts.`3`]
       
-      inline def `4`: typings.decimalJs.decimalJsNumbers.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsNumbers.`4`]
+      inline def `4`: typings.decimalJs.decimalJsInts.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsInts.`4`]
       
-      inline def `5`: typings.decimalJs.decimalJsNumbers.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsNumbers.`5`]
+      inline def `5`: typings.decimalJs.decimalJsInts.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsInts.`5`]
       
-      inline def `6`: typings.decimalJs.decimalJsNumbers.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsNumbers.`6`]
+      inline def `6`: typings.decimalJs.decimalJsInts.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsInts.`6`]
       
-      inline def `7`: typings.decimalJs.decimalJsNumbers.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsNumbers.`7`]
+      inline def `7`: typings.decimalJs.decimalJsInts.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsInts.`7`]
       
-      inline def `8`: typings.decimalJs.decimalJsNumbers.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsNumbers.`8`]
+      inline def `8`: typings.decimalJs.decimalJsInts.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsInts.`8`]
     }
     
     type Value = String | Double | typings.decimalJs.mod.Decimal

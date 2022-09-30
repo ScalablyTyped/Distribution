@@ -1,6 +1,6 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`-660`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`-660`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.AS
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.UM
 import org.scalablytyped.runtime.StObject

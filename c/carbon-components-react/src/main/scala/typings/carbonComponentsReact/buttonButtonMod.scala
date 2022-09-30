@@ -313,7 +313,7 @@ object buttonButtonMod {
     ]
   ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def default_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

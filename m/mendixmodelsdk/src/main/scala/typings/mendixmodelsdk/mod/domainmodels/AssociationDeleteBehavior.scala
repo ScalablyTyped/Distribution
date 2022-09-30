@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.AssociationDeleteBehavior")
 @js.native
-class AssociationDeleteBehavior protected ()
+open class AssociationDeleteBehavior protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AssociationDeleteBehavior {
   def this(
     model: AbstractModel,

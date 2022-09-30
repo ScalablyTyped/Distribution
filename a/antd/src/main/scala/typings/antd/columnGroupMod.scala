@@ -73,7 +73,7 @@ object columnGroupMod {
     
     var filterResetToDefaultFilteredValue: js.UndefOr[Boolean] = js.undefined
     
-    var filterSearch: js.UndefOr[FilterSearchType] = js.undefined
+    var filterSearch: js.UndefOr[FilterSearchType[ColumnFilterItem]] = js.undefined
     
     var filtered: js.UndefOr[Boolean] = js.undefined
     
@@ -213,9 +213,9 @@ object columnGroupMod {
       
       inline def setFilterResetToDefaultFilteredValueUndefined: Self = StObject.set(x, "filterResetToDefaultFilteredValue", js.undefined)
       
-      inline def setFilterSearch(value: FilterSearchType): Self = StObject.set(x, "filterSearch", value.asInstanceOf[js.Any])
+      inline def setFilterSearch(value: FilterSearchType[ColumnFilterItem]): Self = StObject.set(x, "filterSearch", value.asInstanceOf[js.Any])
       
-      inline def setFilterSearchFunction2(value: (/* input */ String, /* record */ js.Object) => Boolean): Self = StObject.set(x, "filterSearch", js.Any.fromFunction2(value))
+      inline def setFilterSearchFunction2(value: (/* input */ String, ColumnFilterItem) => Boolean): Self = StObject.set(x, "filterSearch", js.Any.fromFunction2(value))
       
       inline def setFilterSearchUndefined: Self = StObject.set(x, "filterSearch", js.undefined)
       

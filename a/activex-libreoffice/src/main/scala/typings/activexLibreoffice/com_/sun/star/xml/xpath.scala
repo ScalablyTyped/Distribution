@@ -1,16 +1,16 @@
 package typings.activexLibreoffice.com_.sun.star.xml
 
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`3`
+import typings.activexLibreoffice.activexLibreofficeInts.`4`
+import typings.activexLibreoffice.activexLibreofficeInts.`5`
+import typings.activexLibreoffice.activexLibreofficeInts.`6`
+import typings.activexLibreoffice.activexLibreofficeInts.`7`
+import typings.activexLibreoffice.activexLibreofficeInts.`8`
+import typings.activexLibreoffice.activexLibreofficeInts.`9`
 import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xforms.XModel
@@ -92,16 +92,16 @@ object xpath {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`7`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`5`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`9`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2`
+    - typings.activexLibreoffice.activexLibreofficeInts.`7`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`3`
+    - typings.activexLibreoffice.activexLibreofficeInts.`5`
+    - typings.activexLibreoffice.activexLibreofficeInts.`6`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4`
+    - typings.activexLibreoffice.activexLibreofficeInts.`0`
+    - typings.activexLibreoffice.activexLibreofficeInts.`8`
+    - typings.activexLibreoffice.activexLibreofficeInts.`9`
   */
   trait XPathObjectType extends StObject
   object XPathObjectType {

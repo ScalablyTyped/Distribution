@@ -40,12 +40,13 @@ trait CookiesSetDetails extends StObject {
   
   /**
     * The Same Site policy to apply to this cookie.  Can be `unspecified`,
-    * `no_restriction`, `lax` or `strict`.  Default is `no_restriction`.
+    * `no_restriction`, `lax` or `strict`.  Default is `lax`.
     */
   var sameSite: js.UndefOr[unspecified | no_restriction | lax | strict] = js.undefined
   
   /**
-    * Whether the cookie should be marked as Secure. Defaults to false.
+    * Whether the cookie should be marked as Secure. Defaults to false unless Same
+    * Site=None attribute is used.
     */
   var secure: js.UndefOr[Boolean] = js.undefined
   

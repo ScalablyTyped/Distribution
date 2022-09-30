@@ -12,7 +12,7 @@ trait Texture
   extends StObject
      with BaseTexture {
   
-  /** @hidden */
+  /** @internal */
   var _buffer: Nullable[
     String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
   ] = js.native
@@ -57,7 +57,7 @@ trait Texture
   
   /* protected */ var _format: Nullable[Double] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _invertY: Boolean = js.native
   
   /* protected */ var _isBlocking: Boolean = js.native

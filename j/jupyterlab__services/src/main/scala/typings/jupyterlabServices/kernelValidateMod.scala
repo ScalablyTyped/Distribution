@@ -17,9 +17,5 @@ object kernelValidateMod {
   
   inline def validateModel(model: IModel): /* asserts model is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, kernel, restapi)), TsIdentSimple(IModel))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateModel")(model.asInstanceOf[js.Any]).asInstanceOf[/* asserts model is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, kernel, restapi)), TsIdentSimple(IModel))),IArray())*/ Boolean]
   
-  inline def validateModels(models: js.Array[IModel]): js.Array[
-    /* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, kernel, restapi)), TsIdentSimple(IModel))),IArray())*/ Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateModels")(models.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-    /* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, kernel, restapi)), TsIdentSimple(IModel))),IArray())*/ Boolean
-  ]]
+  inline def validateModels(models: js.Array[IModel]): /* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(Array))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, kernel, restapi)), TsIdentSimple(IModel))),IArray())))*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateModels")(models.asInstanceOf[js.Any]).asInstanceOf[/* asserts models is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(Array))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(jupyterlab,services), TsIdentModule(Some(jupyterlab),List(services, lib, kernel, restapi)), TsIdentSimple(IModel))),IArray())))*/ Boolean]
 }

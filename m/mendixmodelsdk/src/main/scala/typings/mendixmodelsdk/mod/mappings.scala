@@ -51,7 +51,7 @@ object mappings {
   
   @JSImport("mendixmodelsdk", "mappings.ElementType")
   @js.native
-  class ElementType protected ()
+  open class ElementType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.mappings.ElementType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -190,7 +190,7 @@ object mappings {
   
   @JSImport("mendixmodelsdk", "mappings.MappingMicroflowCall")
   @js.native
-  class MappingMicroflowCall protected ()
+  open class MappingMicroflowCall protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.mappings.MappingMicroflowCall {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -238,7 +238,7 @@ object mappings {
   
   @JSImport("mendixmodelsdk", "mappings.MappingMicroflowParameter")
   @js.native
-  class MappingMicroflowParameter protected ()
+  open class MappingMicroflowParameter protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.mappings.MappingMicroflowParameter {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -286,7 +286,7 @@ object mappings {
   
   @JSImport("mendixmodelsdk", "mappings.ObjectHandlingBackupEnum")
   @js.native
-  class ObjectHandlingBackupEnum protected ()
+  open class ObjectHandlingBackupEnum protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.mappings.ObjectHandlingBackupEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -317,7 +317,7 @@ object mappings {
   
   @JSImport("mendixmodelsdk", "mappings.ObjectHandlingEnum")
   @js.native
-  class ObjectHandlingEnum protected ()
+  open class ObjectHandlingEnum protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.mappings.ObjectHandlingEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }

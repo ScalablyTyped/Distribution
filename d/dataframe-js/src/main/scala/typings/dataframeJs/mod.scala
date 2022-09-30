@@ -482,7 +482,7 @@ object mod {
     inline def arrayEqual(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def arrayEqual(a: Any, b: Any, byOrder: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], byOrder.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def chain(data: Any, operations: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(List(data.asInstanceOf[js.Any]).`++`(operations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
+    inline def chain(data: Any, operations: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(scala.List(data.asInstanceOf[js.Any]).`++`(operations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
     
     inline def hashCode_(str: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashCode")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
     
@@ -498,11 +498,11 @@ object mod {
     
     inline def transpose(table: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(table.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
-    inline def xContains(stringToFilter: Any, patterns: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("xContains")(List(stringToFilter.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
+    inline def xContains(stringToFilter: Any, patterns: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("xContains")(scala.List(stringToFilter.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
     
-    inline def xReplace(stringToReplace: Any, patterns: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xReplace")(List(stringToReplace.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def xReplace(stringToReplace: Any, patterns: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xReplace")(scala.List(stringToReplace.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
-    inline def xSplit(stringToSplit: Any, patterns: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xSplit")(List(stringToSplit.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def xSplit(stringToSplit: Any, patterns: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("xSplit")(scala.List(stringToSplit.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
   /**

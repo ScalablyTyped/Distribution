@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SnippetCallWidget")
 @js.native
-class SnippetCallWidget protected ()
+open class SnippetCallWidget protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SnippetCallWidget {
   def this(
     model: AbstractModel,

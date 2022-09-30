@@ -2,8 +2,6 @@ package typings.katex
 
 import typings.katex.katexStrings.$
 import typings.katex.katexStrings.DollarDollar
-import typings.katex.katexStrings.Leftparenthesis
-import typings.katex.katexStrings.Rightparenthesis
 import typings.katex.katexStrings.`[`
 import typings.katex.katexStrings.`]`
 import typings.std.DocumentFragment
@@ -24,13 +22,13 @@ object katex2texMod {
     
     var display: js.Tuple2[DollarDollar | `[`, DollarDollar | `]`]
     
-    var `inline`: js.Tuple2[$ | Leftparenthesis, $ | Rightparenthesis]
+    var `inline`: js.Tuple2[$ | String, $ | String]
   }
   object CopyDelimiters {
     
     inline def apply(
       display: js.Tuple2[DollarDollar | `[`, DollarDollar | `]`],
-      `inline`: js.Tuple2[$ | Leftparenthesis, $ | Rightparenthesis]
+      `inline`: js.Tuple2[$ | String, $ | String]
     ): CopyDelimiters = {
       val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any])
       __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
@@ -41,7 +39,7 @@ object katex2texMod {
       
       inline def setDisplay(value: js.Tuple2[DollarDollar | `[`, DollarDollar | `]`]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      inline def setInline(value: js.Tuple2[$ | Leftparenthesis, $ | Rightparenthesis]): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: js.Tuple2[$ | String, $ | String]): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BodyData extends StObject {
   
   /**
-    * Gets the collection of rich text content control objects in the body. Read-only.
+    * Gets the collection of rich text content control objects in the body.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -26,7 +26,15 @@ trait BodyData extends StObject {
   var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   
   /**
-    * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+    * Gets the collection of field objects in the body.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
+  
+  /**
+    * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -34,7 +42,7 @@ trait BodyData extends StObject {
   var font: js.UndefOr[FontData] = js.undefined
   
   /**
-    * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+    * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -42,7 +50,7 @@ trait BodyData extends StObject {
   var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
-    * Gets the collection of list objects in the body. Read-only.
+    * Gets the collection of list objects in the body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -50,7 +58,7 @@ trait BodyData extends StObject {
   var lists: js.UndefOr[js.Array[ListData]] = js.undefined
   
   /**
-    * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+    * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -76,7 +84,7 @@ trait BodyData extends StObject {
   ] = js.undefined
   
   /**
-    * Gets the collection of table objects in the body. Read-only.
+    * Gets the collection of table objects in the body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -84,7 +92,7 @@ trait BodyData extends StObject {
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   
   /**
-    * Gets the text of the body. Use the insertText method to insert text. Read-only.
+    * Gets the text of the body. Use the insertText method to insert text.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -92,7 +100,7 @@ trait BodyData extends StObject {
   var text: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -115,6 +123,12 @@ object BodyData {
     inline def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
     
     inline def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value*))
+    
+    inline def setFields(value: js.Array[FieldData]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: FieldData*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

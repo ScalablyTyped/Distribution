@@ -1,138 +1,107 @@
 package typings.logUpdate
 
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined log-update.log-update.LogUpdate & { readonly stderr :log-update.log-update.LogUpdate, readonly create (stream : node.NodeJS.WritableStream, options : log-update.log-update.Options | undefined): log-update.log-update.LogUpdate} */
 object mod {
-  
-  /**
-  		Log to `stdout` by overwriting the previous output in the terminal.
-  		@param text - The text to log to `stdout`.
-  		@example
-  		```
-  		import logUpdate = require('log-update');
-  		const frames = ['-', '\\', '|', '/'];
-  		let i = 0;
-  		setInterval(() => {
-  			const frame = frames[i = ++i % frames.length];
-  			logUpdate(
-  		`
-  				♥♥
-  		${frame} unicorns ${frame}
-  				♥♥
-  		`
-  			);
-  		}, 80);
-  		```
-  		*/
-  inline def apply(text: String*): Unit = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("log-update", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   /**
-  		Clear the logged output.
-  		*/
-  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
-  
-  /**
-  	Get a `logUpdate` method that logs to the specified stream.
-  	@param stream - The stream to log to.
-  	*/
-  inline def create(stream: WritableStream): LogUpdate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any]).asInstanceOf[LogUpdate]
-  inline def create(stream: WritableStream, options: Options): LogUpdate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LogUpdate]
-  
-  /**
-  		Persist the logged output. Useful if you want to start a new log session below the current one.
-  		*/
-  inline def done(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("done")().asInstanceOf[Unit]
-  
-  /**
-  	Log to `stderr` by overwriting the previous output in the terminal.
-  	@param text - The text to log to `stderr`.
-  	*/
-  @JSImport("log-update", "stderr")
+  Log to `stdout` by overwriting the previous output in the terminal.
+  @param text - The text to log to `stdout`.
+  @example
+  ```
+  import logUpdate from 'log-update';
+  const frames = ['-', '\\', '|', '/'];
+  let index = 0;
+  setInterval(() => {
+  	const frame = frames[index = ++index % frames.length];
+  	logUpdate(
+  `
+  		♥♥
+  ${frame} unicorns ${frame}
+  		♥♥
+  `
+  	);
+  }, 80);
+  ```
+  */
+  @JSImport("log-update", JSImport.Default)
   @js.native
-  val stderr: LogUpdate = js.native
-  /**
-  		Log to `stdout` by overwriting the previous output in the terminal.
-  		@param text - The text to log to `stdout`.
-  		@example
-  		```
-  		import logUpdate = require('log-update');
-  		const frames = ['-', '\\', '|', '/'];
-  		let i = 0;
-  		setInterval(() => {
-  			const frame = frames[i = ++i % frames.length];
-  			logUpdate(
-  		`
-  				♥♥
-  		${frame} unicorns ${frame}
-  				♥♥
-  		`
-  			);
-  		}, 80);
-  		```
-  		*/
-  /**
-  	Log to `stderr` by overwriting the previous output in the terminal.
-  	@param text - The text to log to `stderr`.
-  	*/
-  inline def stderr(text: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  val default: (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = js.native
   
+  inline def createLogUpdate(stream: WritableStream[Any]): (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogUpdate")(stream.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods]
+  inline def createLogUpdate(stream: WritableStream[Any], options: Options): (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogUpdate")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods]
+  
+  /**
+  Log to `stderr` by overwriting the previous output in the terminal.
+  @param text - The text to log to `stderr`.
+  @example
+  ```
+  import {logUpdateStderr} from 'log-update';
+  const frames = ['-', '\\', '|', '/'];
+  let index = 0;
+  setInterval(() => {
+  	const frame = frames[index = ++index % frames.length];
+  	logUpdateStderr(
+  `
+  		♥♥
+  ${frame} unicorns ${frame}
+  		♥♥
+  `
+  	);
+  }, 80);
+  ```
+  */
+  @JSImport("log-update", "logUpdateStderr")
   @js.native
-  trait LogUpdate extends StObject {
+  val logUpdateStderr: (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = js.native
+  
+  trait LogUpdateMethods extends StObject {
     
     /**
-    		Log to `stdout` by overwriting the previous output in the terminal.
-    		@param text - The text to log to `stdout`.
-    		@example
-    		```
-    		import logUpdate = require('log-update');
-    		const frames = ['-', '\\', '|', '/'];
-    		let i = 0;
-    		setInterval(() => {
-    			const frame = frames[i = ++i % frames.length];
-    			logUpdate(
-    		`
-    				♥♥
-    		${frame} unicorns ${frame}
-    				♥♥
-    		`
-    			);
-    		}, 80);
-    		```
-    		*/
-    def apply(text: String*): Unit = js.native
+    	Clear the logged output.
+    	*/
+    def clear(): Unit
     
     /**
-    		Clear the logged output.
-    		*/
-    def clear(): Unit = js.native
+    	Persist the logged output. Useful if you want to start a new log session below the current one.
+    	*/
+    def done(): Unit
+  }
+  object LogUpdateMethods {
     
-    /**
-    		Persist the logged output. Useful if you want to start a new log session below the current one.
-    		*/
-    def done(): Unit = js.native
+    inline def apply(clear: () => Unit, done: () => Unit): LogUpdateMethods = {
+      val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), done = js.Any.fromFunction0(done))
+      __obj.asInstanceOf[LogUpdateMethods]
+    }
+    
+    extension [Self <: LogUpdateMethods](x: Self) {
+      
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      
+      inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+    }
   }
   
   trait Options extends StObject {
     
     /**
-    		Show the cursor. This can be useful when a CLI accepts input from a user.
-    		@example
-    		```
-    		import logUpdate = require('log-update');
-    		// Write output but don't hide the cursor
-    		const log = logUpdate.create(process.stdout, {
-    			showCursor: true
-    		});
-    		```
-    		*/
+    	Show the cursor. This can be useful when a CLI accepts input from a user.
+    	@example
+    	```
+    	import {createLogUpdate} from 'log-update';
+    	// Write output but don't hide the cursor
+    	const log = createLogUpdate(process.stdout, {
+    		showCursor: true
+    	});
+    	```
+    	*/
     val showCursor: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

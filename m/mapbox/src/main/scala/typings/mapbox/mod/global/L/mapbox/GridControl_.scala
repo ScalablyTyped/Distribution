@@ -10,32 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /**
     * If a tooltip is currently shown by the gridControl, hide and close it.
     */
-  def hide(): js.Any
+  def hide(): Any
   
-  def onAdd(map: Map_): js.Any
+  def onAdd(map: Map_): Any
   
-  def onRemove(map: Map_): js.Any
+  def onRemove(map: Map_): Any
   
   /**
     * Change the Mustache template used to transform the UTFGrid data in the map's interactivity into HTML for display.
     */
-  def setTemplate(template: String): js.Any
+  def setTemplate(template: String): Any
 }
 object GridControl_ {
   
-  inline def apply(hide: () => js.Any, onAdd: Map_ => js.Any, onRemove: Map_ => js.Any, setTemplate: String => js.Any): GridControl_ = {
+  inline def apply(hide: () => Any, onAdd: Map_ => Any, onRemove: Map_ => Any, setTemplate: String => Any): GridControl_ = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), onAdd = js.Any.fromFunction1(onAdd), onRemove = js.Any.fromFunction1(onRemove), setTemplate = js.Any.fromFunction1(setTemplate))
     __obj.asInstanceOf[GridControl_]
   }
   
   extension [Self <: GridControl_](x: Self) {
     
-    inline def setHide(value: () => js.Any): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Any): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    inline def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: Map_ => Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    inline def setOnRemove(value: Map_ => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+    inline def setOnRemove(value: Map_ => Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
-    inline def setSetTemplate(value: String => js.Any): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
+    inline def setSetTemplate(value: String => Any): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
   }
 }

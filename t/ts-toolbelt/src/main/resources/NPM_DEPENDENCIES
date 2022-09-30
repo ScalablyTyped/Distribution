@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ts-toolbelt" : "9.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ts-toolbelt" : "9.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,77 +1,75 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dexie.dexie.ExceptionSet & {  DexieError :dexie.dexie.DexieErrorConstructor,   ModifyError :dexie.dexie.ModifyErrorConstructor,   BulkError :dexie.dexie.BulkErrorConstructor} */
-@js.native
-trait DexieExceptionClasses extends js.Object {
+trait DexieExceptionClasses extends StObject {
   
-  var AbortError: DexieErrorConstructor = js.native
+  var AbortError: DexieErrorConstructor
   
-  var BulkError: BulkErrorConstructor = js.native
+  var BulkError: BulkErrorConstructor
   
-  var ConstraintError: DexieErrorConstructor = js.native
+  var ConstraintError: DexieErrorConstructor
   
-  var DataCloneError: DexieErrorConstructor = js.native
+  var DataCloneError: DexieErrorConstructor
   
-  var DataError: DexieErrorConstructor = js.native
+  var DataError: DexieErrorConstructor
   
-  var DatabaseClosedError: DexieErrorConstructor = js.native
+  var DatabaseClosedError: DexieErrorConstructor
   
-  var DexieError: DexieErrorConstructor = js.native
+  var DexieError: DexieErrorConstructor
   
-  var ForeignAwaitError: DexieErrorConstructor = js.native
+  var ForeignAwaitError: DexieErrorConstructor
   
-  var InternalError: DexieErrorConstructor = js.native
+  var InternalError: DexieErrorConstructor
   
-  var InvalidAccessError: DexieErrorConstructor = js.native
+  var InvalidAccessError: DexieErrorConstructor
   
-  var InvalidArgumentError: DexieErrorConstructor = js.native
+  var InvalidArgumentError: DexieErrorConstructor
   
-  var InvalidStateError: DexieErrorConstructor = js.native
+  var InvalidStateError: DexieErrorConstructor
   
-  var InvalidTableError: DexieErrorConstructor = js.native
+  var InvalidTableError: DexieErrorConstructor
   
-  var MissingAPIError: DexieErrorConstructor = js.native
+  var MissingAPIError: DexieErrorConstructor
   
-  var ModifyError: ModifyErrorConstructor = js.native
+  var ModifyError: ModifyErrorConstructor
   
-  var NoSuchDatabaseError: DexieErrorConstructor = js.native
+  var NoSuchDatabaseError: DexieErrorConstructor
   
-  var NotFoundError: DexieErrorConstructor = js.native
+  var NotFoundError: DexieErrorConstructor
   
-  var OpenFailedError: DexieErrorConstructor = js.native
+  var OpenFailedError: DexieErrorConstructor
   
-  var PrematureCommitError: DexieErrorConstructor = js.native
+  var PrematureCommitError: DexieErrorConstructor
   
-  var QuotaExceededError: DexieErrorConstructor = js.native
+  var QuotaExceededError: DexieErrorConstructor
   
-  var ReadOnlyError: DexieErrorConstructor = js.native
+  var ReadOnlyError: DexieErrorConstructor
   
-  var SchemaError: DexieErrorConstructor = js.native
+  var SchemaError: DexieErrorConstructor
   
-  var SubTransactionError: DexieErrorConstructor = js.native
+  var SubTransactionError: DexieErrorConstructor
   
-  var TimeoutError: DexieErrorConstructor = js.native
+  var TimeoutError: DexieErrorConstructor
   
-  var TransactionInactiveError: DexieErrorConstructor = js.native
+  var TransactionInactiveError: DexieErrorConstructor
   
-  var UnknownError: DexieErrorConstructor = js.native
+  var UnknownError: DexieErrorConstructor
   
-  var UnsupportedError: DexieErrorConstructor = js.native
+  var UnsupportedError: DexieErrorConstructor
   
-  var UpgradeError: DexieErrorConstructor = js.native
+  var UpgradeError: DexieErrorConstructor
   
-  var VersionChangeError: DexieErrorConstructor = js.native
+  var VersionChangeError: DexieErrorConstructor
   
-  var VersionError: DexieErrorConstructor = js.native
+  var VersionError: DexieErrorConstructor
 }
 object DexieExceptionClasses {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AbortError: DexieErrorConstructor,
     BulkError: BulkErrorConstructor,
     ConstraintError: DexieErrorConstructor,
@@ -107,109 +105,66 @@ object DexieExceptionClasses {
     __obj.asInstanceOf[DexieExceptionClasses]
   }
   
-  @scala.inline
-  implicit class DexieExceptionClassesOps[Self <: DexieExceptionClasses] (val x: Self) extends AnyVal {
+  extension [Self <: DexieExceptionClasses](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setAbortError(value: DexieErrorConstructor): Self = StObject.set(x, "AbortError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setBulkError(value: BulkErrorConstructor): Self = StObject.set(x, "BulkError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setConstraintError(value: DexieErrorConstructor): Self = StObject.set(x, "ConstraintError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortError(value: DexieErrorConstructor): Self = this.set("AbortError", value.asInstanceOf[js.Any])
+    inline def setDataCloneError(value: DexieErrorConstructor): Self = StObject.set(x, "DataCloneError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkError(value: BulkErrorConstructor): Self = this.set("BulkError", value.asInstanceOf[js.Any])
+    inline def setDataError(value: DexieErrorConstructor): Self = StObject.set(x, "DataError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintError(value: DexieErrorConstructor): Self = this.set("ConstraintError", value.asInstanceOf[js.Any])
+    inline def setDatabaseClosedError(value: DexieErrorConstructor): Self = StObject.set(x, "DatabaseClosedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCloneError(value: DexieErrorConstructor): Self = this.set("DataCloneError", value.asInstanceOf[js.Any])
+    inline def setDexieError(value: DexieErrorConstructor): Self = StObject.set(x, "DexieError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataError(value: DexieErrorConstructor): Self = this.set("DataError", value.asInstanceOf[js.Any])
+    inline def setForeignAwaitError(value: DexieErrorConstructor): Self = StObject.set(x, "ForeignAwaitError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseClosedError(value: DexieErrorConstructor): Self = this.set("DatabaseClosedError", value.asInstanceOf[js.Any])
+    inline def setInternalError(value: DexieErrorConstructor): Self = StObject.set(x, "InternalError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDexieError(value: DexieErrorConstructor): Self = this.set("DexieError", value.asInstanceOf[js.Any])
+    inline def setInvalidAccessError(value: DexieErrorConstructor): Self = StObject.set(x, "InvalidAccessError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignAwaitError(value: DexieErrorConstructor): Self = this.set("ForeignAwaitError", value.asInstanceOf[js.Any])
+    inline def setInvalidArgumentError(value: DexieErrorConstructor): Self = StObject.set(x, "InvalidArgumentError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalError(value: DexieErrorConstructor): Self = this.set("InternalError", value.asInstanceOf[js.Any])
+    inline def setInvalidStateError(value: DexieErrorConstructor): Self = StObject.set(x, "InvalidStateError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidAccessError(value: DexieErrorConstructor): Self = this.set("InvalidAccessError", value.asInstanceOf[js.Any])
+    inline def setInvalidTableError(value: DexieErrorConstructor): Self = StObject.set(x, "InvalidTableError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidArgumentError(value: DexieErrorConstructor): Self = this.set("InvalidArgumentError", value.asInstanceOf[js.Any])
+    inline def setMissingAPIError(value: DexieErrorConstructor): Self = StObject.set(x, "MissingAPIError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidStateError(value: DexieErrorConstructor): Self = this.set("InvalidStateError", value.asInstanceOf[js.Any])
+    inline def setModifyError(value: ModifyErrorConstructor): Self = StObject.set(x, "ModifyError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidTableError(value: DexieErrorConstructor): Self = this.set("InvalidTableError", value.asInstanceOf[js.Any])
+    inline def setNoSuchDatabaseError(value: DexieErrorConstructor): Self = StObject.set(x, "NoSuchDatabaseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingAPIError(value: DexieErrorConstructor): Self = this.set("MissingAPIError", value.asInstanceOf[js.Any])
+    inline def setNotFoundError(value: DexieErrorConstructor): Self = StObject.set(x, "NotFoundError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyError(value: ModifyErrorConstructor): Self = this.set("ModifyError", value.asInstanceOf[js.Any])
+    inline def setOpenFailedError(value: DexieErrorConstructor): Self = StObject.set(x, "OpenFailedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSuchDatabaseError(value: DexieErrorConstructor): Self = this.set("NoSuchDatabaseError", value.asInstanceOf[js.Any])
+    inline def setPrematureCommitError(value: DexieErrorConstructor): Self = StObject.set(x, "PrematureCommitError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundError(value: DexieErrorConstructor): Self = this.set("NotFoundError", value.asInstanceOf[js.Any])
+    inline def setQuotaExceededError(value: DexieErrorConstructor): Self = StObject.set(x, "QuotaExceededError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenFailedError(value: DexieErrorConstructor): Self = this.set("OpenFailedError", value.asInstanceOf[js.Any])
+    inline def setReadOnlyError(value: DexieErrorConstructor): Self = StObject.set(x, "ReadOnlyError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrematureCommitError(value: DexieErrorConstructor): Self = this.set("PrematureCommitError", value.asInstanceOf[js.Any])
+    inline def setSchemaError(value: DexieErrorConstructor): Self = StObject.set(x, "SchemaError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaExceededError(value: DexieErrorConstructor): Self = this.set("QuotaExceededError", value.asInstanceOf[js.Any])
+    inline def setSubTransactionError(value: DexieErrorConstructor): Self = StObject.set(x, "SubTransactionError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyError(value: DexieErrorConstructor): Self = this.set("ReadOnlyError", value.asInstanceOf[js.Any])
+    inline def setTimeoutError(value: DexieErrorConstructor): Self = StObject.set(x, "TimeoutError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaError(value: DexieErrorConstructor): Self = this.set("SchemaError", value.asInstanceOf[js.Any])
+    inline def setTransactionInactiveError(value: DexieErrorConstructor): Self = StObject.set(x, "TransactionInactiveError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTransactionError(value: DexieErrorConstructor): Self = this.set("SubTransactionError", value.asInstanceOf[js.Any])
+    inline def setUnknownError(value: DexieErrorConstructor): Self = StObject.set(x, "UnknownError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutError(value: DexieErrorConstructor): Self = this.set("TimeoutError", value.asInstanceOf[js.Any])
+    inline def setUnsupportedError(value: DexieErrorConstructor): Self = StObject.set(x, "UnsupportedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionInactiveError(value: DexieErrorConstructor): Self = this.set("TransactionInactiveError", value.asInstanceOf[js.Any])
+    inline def setUpgradeError(value: DexieErrorConstructor): Self = StObject.set(x, "UpgradeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownError(value: DexieErrorConstructor): Self = this.set("UnknownError", value.asInstanceOf[js.Any])
+    inline def setVersionChangeError(value: DexieErrorConstructor): Self = StObject.set(x, "VersionChangeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsupportedError(value: DexieErrorConstructor): Self = this.set("UnsupportedError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpgradeError(value: DexieErrorConstructor): Self = this.set("UpgradeError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionChangeError(value: DexieErrorConstructor): Self = this.set("VersionChangeError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionError(value: DexieErrorConstructor): Self = this.set("VersionError", value.asInstanceOf[js.Any])
+    inline def setVersionError(value: DexieErrorConstructor): Self = StObject.set(x, "VersionError", value.asInstanceOf[js.Any])
   }
 }

@@ -1,10 +1,10 @@
 package typings.dogeSeed
 
-import typings.dogeSeed.dogeSeedNumbers.`128`
-import typings.dogeSeed.dogeSeedNumbers.`160`
-import typings.dogeSeed.dogeSeedNumbers.`192`
-import typings.dogeSeed.dogeSeedNumbers.`224`
-import typings.dogeSeed.dogeSeedNumbers.`256`
+import typings.dogeSeed.dogeSeedInts.`128`
+import typings.dogeSeed.dogeSeedInts.`160`
+import typings.dogeSeed.dogeSeedInts.`192`
+import typings.dogeSeed.dogeSeedInts.`224`
+import typings.dogeSeed.dogeSeedInts.`256`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

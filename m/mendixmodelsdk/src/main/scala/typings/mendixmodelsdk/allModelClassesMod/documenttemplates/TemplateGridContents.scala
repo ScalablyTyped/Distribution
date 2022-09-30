@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.TemplateGridContents")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.TemplateGridContents")
 @js.native
-class TemplateGridContents protected ()
+open class TemplateGridContents protected ()
   extends typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class TemplateGridContents protected ()
 }
 object TemplateGridContents {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.TemplateGridContents")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.TemplateGridContents")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object TemplateGridContents {
   inline def createInTemplateGridUnderOddRowsContents(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridUnderOddRowsContents")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.TemplateGridContents]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.TemplateGridContents.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.TemplateGridContents.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.TemplateGridContents.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.TemplateGridContents.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

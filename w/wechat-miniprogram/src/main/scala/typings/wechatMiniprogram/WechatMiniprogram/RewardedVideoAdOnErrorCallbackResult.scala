@@ -1,14 +1,14 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1000`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1001`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1002`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1003`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1004`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1005`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1006`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1007`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1008`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1000`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1001`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1002`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1003`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1004`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1005`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1006`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1007`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1008`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

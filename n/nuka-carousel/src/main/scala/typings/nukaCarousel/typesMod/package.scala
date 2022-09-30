@@ -13,6 +13,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type EasingFunction = js.Function1[/* normalizedTime */ Double, Double]
+
 /* Rewritten from type alias, can be one of: 
   - typings.nukaCarousel.nukaCarouselStrings.nextSlide
   - typings.nukaCarousel.nukaCarouselStrings.previousSlide

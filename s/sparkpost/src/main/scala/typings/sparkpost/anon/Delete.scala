@@ -6,7 +6,6 @@ import typings.sparkpost.mod.RecipientList
 import typings.sparkpost.mod.RecipientListMetadata
 import typings.sparkpost.mod.RecipientListWithRecipients
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.UpdateRecipientList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +22,7 @@ trait Delete extends StObject {
     * @param options The create options
     * @returns Promise metadata results
     */
-  def create(options: CreateRecipientList): ResultsPromise[RecipientListMetadata] = js.native
+  def create(options: CreateRecipientList): js.Promise[Results[RecipientListMetadata]] = js.native
   /**
     * Create a recipient list by providing a recipient list object as the POST request body.
     * At a minimum, the “recipients” array is required, which must contain a valid “address”.
@@ -55,14 +54,14 @@ trait Delete extends StObject {
     *
     * @param [options] specifies whether to retrieve the recipients. Defaults to false
     */
-  def get(id: String): ResultsPromise[RecipientListWithRecipients] = js.native
+  def get(id: String): js.Promise[Results[RecipientListWithRecipients]] = js.native
   /**
     * Retrieve details about a specified recipient list by specifying its id in the URI path.
     * To retrieve the recipients contained in a list, the show_recipients parameter must be set to true.
     *
     */
   def get(id: String, callback: Callback[RecipientListWithRecipients]): Unit = js.native
-  def get(id: String, options: Showrecipients): ResultsPromise[RecipientListWithRecipients] = js.native
+  def get(id: String, options: Showrecipients): js.Promise[Results[RecipientListWithRecipients]] = js.native
   /**
     * Retrieve details about a specified recipient list by specifying its id in the URI path.
     * To retrieve the recipients contained in a list, the show_recipients parameter must be set to true.
@@ -78,7 +77,7 @@ trait Delete extends StObject {
     *
     * @returns Promise The RecipientList results array
     */
-  def list(): ResultsPromise[js.Array[RecipientList]] = js.native
+  def list(): js.Promise[Results[js.Array[RecipientList]]] = js.native
   /**
     * List a summary of all recipient lists. The recipients for each list are not included in the results.
     * To retrieve recipient details, use the [Retrieve a Recipient List endpoint]{@link https://developers.sparkpost.com/api/recipient-lists.html#recipient-lists-retrieve-get},
@@ -94,7 +93,7 @@ trait Delete extends StObject {
     *
     * @param id Identifier of the recipient list
     */
-  def update(id: String, options: UpdateRecipientList): ResultsPromise[RecipientListMetadata] = js.native
+  def update(id: String, options: UpdateRecipientList): js.Promise[Results[RecipientListMetadata]] = js.native
   /**
     * Update an existing recipient list by specifying its ID in the URI path and use a recipient list object as the PUT request body.
     * Use the num_rcpt_errors parameter to limit the number of recipient errors returned.

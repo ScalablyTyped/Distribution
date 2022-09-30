@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.MicroflowActionInfo")
 @js.native
-class MicroflowActionInfo protected ()
+open class MicroflowActionInfo protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.MicroflowActionInfo {
   def this(
     model: AbstractModel,
@@ -74,6 +74,17 @@ object MicroflowActionInfo {
     */
   /* static member */
   inline def createInMicroflowUnderMicroflowActionInfo(container: Microflow): typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderMicroflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo]
+  
+  /**
+    * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
+    * The new MicroflowActionInfo will be automatically stored in the 'workflowActionInfo' property
+    * of the parent microflows.Microflow element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.0.2 and higher
+    */
+  /* static member */
+  inline def createInMicroflowUnderWorkflowActionInfo(container: Microflow): typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderWorkflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk", "codeactions.MicroflowActionInfo.structureTypeName")

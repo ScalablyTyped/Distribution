@@ -16,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
 @JSImport("mendixmodelsdk", "expressions.NoVariableRef")
 @js.native
-class NoVariableRef protected ()
+open class NoVariableRef protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.expressions.NoVariableRef {
   def this(
     model: AbstractModel,
@@ -51,7 +52,7 @@ object NoVariableRef {
     * of the parent VariableRefExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression): typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef]

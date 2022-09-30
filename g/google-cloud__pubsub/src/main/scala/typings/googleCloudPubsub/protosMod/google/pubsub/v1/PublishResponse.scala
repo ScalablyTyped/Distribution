@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new PublishResponse.
   * @param [properties] Properties to set
   */
-class PublishResponse ()
+open class PublishResponse ()
   extends StObject
      with IPublishResponse {
   def this(properties: IPublishResponse) = this()
@@ -29,7 +28,7 @@ class PublishResponse ()
     * Converts this PublishResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object PublishResponse {
   
@@ -46,6 +45,8 @@ object PublishResponse {
   inline def create(): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PublishResponse]
   inline def create(properties: IPublishResponse): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): PublishResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PublishResponse]
   /**
     * Decodes a PublishResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object PublishResponse {
   /* static member */
   inline def decode(reader: Reader): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
   inline def decode(reader: Reader, length: Double): PublishResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PublishResponse]
-  inline def decode(reader: Uint8Array): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
-  inline def decode(reader: Uint8Array, length: Double): PublishResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[PublishResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
   /**
     * Decodes a PublishResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object PublishResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
-  inline def decodeDelimited(reader: Uint8Array): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
   
   /**
     * Encodes the specified PublishResponse message. Does not implicitly {@link google.pubsub.v1.PublishResponse.verify|verify} messages.
@@ -97,7 +96,16 @@ object PublishResponse {
     * @returns PublishResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): PublishResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[PublishResponse]
+  
+  /**
+    * Gets the default type url for PublishResponse
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a PublishResponse message. Also converts values to other types if specified.
@@ -106,8 +114,8 @@ object PublishResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: PublishResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: PublishResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: PublishResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: PublishResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a PublishResponse message.
@@ -115,5 +123,5 @@ object PublishResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

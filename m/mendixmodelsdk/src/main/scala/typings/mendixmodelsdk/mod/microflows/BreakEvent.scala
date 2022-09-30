@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.BreakEvent")
 @js.native
-class BreakEvent protected ()
+open class BreakEvent protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.BreakEvent {
   def this(
     model: AbstractModel,

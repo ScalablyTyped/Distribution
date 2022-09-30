@@ -64,11 +64,7 @@ object PostProcess {
   inline def Parse(parsedPostProcess: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.PostProcess]]
   
   /**
-    * @param parsedPostProcess
-    * @param targetCamera
-    * @param scene
-    * @param rootUrl
-    * @hidden
+    * @internal
     */
   inline def _Parse(
     parsedPostProcess: Any,

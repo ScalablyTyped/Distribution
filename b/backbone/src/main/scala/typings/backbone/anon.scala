@@ -142,6 +142,31 @@ object anon {
     // tslint:disable-next-line:no-unnecessary-generics unified-signatures
     @JSName("$")
     def $[TElement](callback: js.ThisFunction1[/* this */ Document, /* $ */ this.type, Unit]): JQuery[TElement] = js.native
+    /**
+      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+      * @param element_elementArray _&#x40;param_ `element_elementArray`
+      * <br>
+      * * `element` — A DOM element to wrap in a jQuery object. <br>
+      * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+      * @see \`{@link https://api.jquery.com/jQuery/ }\`
+      * @since 1.0
+      * @example ​ ````Set the background color of the page to black.
+    ```javascript
+    $( document.body ).css( "background", "black" );
+    ```
+      * @example ​ ````Hide all the input elements within a form.
+    ```javascript
+    $( myForm.elements ).hide();
+    ```
+      */
+    /**
+      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+      * @param object A plain object to wrap in a jQuery object.
+      * @see \`{@link https://api.jquery.com/jQuery/ }\`
+      * @since 1.0
+      */
+    @JSName("$")
+    def $[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
     @JSName("$")
     def $[T /* <: Element */](element_elementArray: ArrayLike[T]): JQuery[T] = js.native
     /**
@@ -174,36 +199,6 @@ object anon {
     ```
       */
     // tslint:disable-next-line:no-unnecessary-generics
-    @JSName("$")
-    def $[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
-    @JSName("$")
-    def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[Any]): JQuery[TElement] = js.native
-    @JSName("$")
-    def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
-    /**
-      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-      * @param object A plain object to wrap in a jQuery object.
-      * @see \`{@link https://api.jquery.com/jQuery/ }\`
-      * @since 1.0
-      */
-    @JSName("$")
-    def $[T /* <: PlainObject[Any] */](`object`: T): JQuery[T] = js.native
-    /**
-      * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-      * @param selection An existing jQuery object to clone.
-      * @see \`{@link https://api.jquery.com/jQuery/ }\`
-      * @since 1.0
-      */
-    @JSName("$")
-    def $[T](selection: JQuery[T]): JQuery[T] = js.native
-    @JSName("$")
-    def $[TElement /* <: Element */](selector: Selector, context: JQuery[HTMLElement]): JQuery[TElement] = js.native
-    @JSName("$")
-    def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery[TElement] = js.native
-    @JSName("$")
-    def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
-    @JSName("$")
-    var $_Original: JQueryStatic = js.native
     /**
       * Accepts a string containing a CSS selector which is then used to match a set of elements.
       * @param selector A string containing a selector expression
@@ -241,30 +236,28 @@ object anon {
     ```
     ​
       */
-    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("$")
-    def $_TElement_Element[TElement /* <: Element */](selector: Selector): JQuery[TElement] = js.native
+    def $[TElement /* <: HTMLElement */](html: Selector | htmlString): JQuery[TElement] = js.native
     @JSName("$")
-    def $_TElement_Element[TElement /* <: Element */](selector: Selector, context: Document): JQuery[TElement] = js.native
+    def $[TElement /* <: HTMLElement */](html: Selector | htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
+    @JSName("$")
+    def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[Any]): JQuery[TElement] = js.native
     /**
       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-      * @param element_elementArray _&#x40;param_ `element_elementArray`
-      * <br>
-      * * `element` — A DOM element to wrap in a jQuery object. <br>
-      * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+      * @param selection An existing jQuery object to clone.
       * @see \`{@link https://api.jquery.com/jQuery/ }\`
       * @since 1.0
-      * @example ​ ````Set the background color of the page to black.
-    ```javascript
-    $( document.body ).css( "background", "black" );
-    ```
-      * @example ​ ````Hide all the input elements within a form.
-    ```javascript
-    $( myForm.elements ).hide();
-    ```
       */
     @JSName("$")
-    def $_T_Element[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
+    def $[T](selection: JQuery[T]): JQuery[T] = js.native
+    @JSName("$")
+    def $[TElement /* <: Element */](selector: Selector, context: JQuery[HTMLElement]): JQuery[TElement] = js.native
+    @JSName("$")
+    def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery[TElement] = js.native
+    @JSName("$")
+    def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
+    @JSName("$")
+    var $_Original: JQueryStatic = js.native
     
     var Collection: (Instantiable2[
         /* models */ js.UndefOr[

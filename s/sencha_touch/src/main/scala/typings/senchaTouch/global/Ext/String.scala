@@ -57,7 +57,7 @@ object String {
     * @param values String... First param value to replace token {0}, then next param to replace {1} etc.
     * @returns String The formatted string.
     */
-  inline def format(string: java.lang.String, values: Any*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(string.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[java.lang.String]
+  inline def format(string: java.lang.String, values: Any*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(string.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[java.lang.String]
   
   /** [Method] Convert certain characters  amp lt and from their HTML character equivalents
     * @param value String The string to decode.

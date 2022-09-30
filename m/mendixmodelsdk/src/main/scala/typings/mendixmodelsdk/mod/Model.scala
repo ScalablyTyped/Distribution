@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "Model")
 @js.native
-class Model protected ()
+open class Model protected ()
   extends typings.mendixmodelsdk.modelMod.Model {
   def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
 }

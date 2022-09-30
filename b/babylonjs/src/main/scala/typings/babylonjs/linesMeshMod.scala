@@ -60,7 +60,7 @@ object linesMeshMod {
     ) = this()
     
     /**
-      * @hidden
+      * @internal
       */
     def _bind(): Mesh = js.native
     

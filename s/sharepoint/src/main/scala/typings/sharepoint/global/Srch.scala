@@ -8570,7 +8570,7 @@ object Srch {
     inline def trace(c: typings.sharepoint.Srch.ClientControl, method: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(c.asInstanceOf[js.Any], method.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def traceFormatted(c: typings.sharepoint.Srch.ClientControl, method: String, format: String, values: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceFormatted")((List(c.asInstanceOf[js.Any], method.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(values.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+    inline def traceFormatted(c: typings.sharepoint.Srch.ClientControl, method: String, format: String, values: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceFormatted")((scala.List(c.asInstanceOf[js.Any], method.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(values.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
     
     /** Removes trailing spaces and also replaces double spaces inside string to single spaces */
     /* static member */

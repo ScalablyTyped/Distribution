@@ -46,7 +46,7 @@ open class LinkReshapingTool () extends Tool {
   var originalPoint: Point = js.native
   
   /**This read-only property returns the List of Points that was the original route of the Link that is being reshaped.*/
-  var originalPoints: List[Point] = js.native
+  var originalPoints: typings.go.mod.List[Point] = js.native
   
   /**
     * Change the route of the .adornedLink by moving the point corresponding to the current .handle to be at the given Point.

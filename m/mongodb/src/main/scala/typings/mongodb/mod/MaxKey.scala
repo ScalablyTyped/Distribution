@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongodb", "MaxKey")
 @js.native
-class MaxKey ()
+open class MaxKey ()
   extends typings.bson.mod.MaxKey

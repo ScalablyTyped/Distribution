@@ -10,10 +10,10 @@ Labels for leaflet maps
 | ------------------ | :-------------: |
 | Full name          | leaflet-label |
 | Keywords           | gis, map |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 17373 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1064.0 |
+| # stars            | 461.0 |
 
 ## Links
 - [Homepage](https://github.com/Leaflet/Leaflet.label)

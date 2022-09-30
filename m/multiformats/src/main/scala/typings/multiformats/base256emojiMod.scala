@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object base256emojiMod {
   
-  @JSImport("multiformats/dist/types/src/bases/base256emoji", "base256emoji")
+  @JSImport("multiformats/types/src/bases/base256emoji", "base256emoji")
   @js.native
   val base256emoji: Codec[
     typings.multiformats.multiformatsStrings.base256emoji, 

@@ -1,28 +1,58 @@
 package typings.conf
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.conf.mod.default
-import typings.jsonSchemaTyped.mod.JSONSchema
-import typings.node.Buffer
-import typings.node.NodeJS.TypedArray
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.DataView
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
+  type BeforeEachMigrationCallback[T /* <: Record[String, Any] */] = js.Function2[/* store */ default[T], /* context */ BeforeEachMigrationContext, Unit]
+  
+  trait BeforeEachMigrationContext extends StObject {
+    
+    var finalVersion: String
+    
+    var fromVersion: String
+    
+    var toVersion: String
+    
+    var versions: js.Array[String]
+  }
+  object BeforeEachMigrationContext {
+    
+    inline def apply(finalVersion: String, fromVersion: String, toVersion: String, versions: js.Array[String]): BeforeEachMigrationContext = {
+      val __obj = js.Dynamic.literal(finalVersion = finalVersion.asInstanceOf[js.Any], fromVersion = fromVersion.asInstanceOf[js.Any], toVersion = toVersion.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BeforeEachMigrationContext]
+    }
+    
+    extension [Self <: BeforeEachMigrationContext](x: Self) {
+      
+      inline def setFinalVersion(value: String): Self = StObject.set(x, "finalVersion", value.asInstanceOf[js.Any])
+      
+      inline def setFromVersion(value: String): Self = StObject.set(x, "fromVersion", value.asInstanceOf[js.Any])
+      
+      inline def setToVersion(value: String): Self = StObject.set(x, "toVersion", value.asInstanceOf[js.Any])
+      
+      inline def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      
+      inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value*))
+    }
+  }
+  
   type Deserialize[T] = js.Function1[/* text */ String, T]
   
-  type Migrations[T] = StringDictionary[js.Function1[/* store */ default[T], Unit]]
+  type Migrations[T /* <: Record[String, Any] */] = Record[String, js.Function1[/* store */ default[T], Unit]]
   
   type OnDidAnyChangeCallback[T] = js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T], Unit]
   
   type OnDidChangeCallback[T] = js.Function2[/* newValue */ js.UndefOr[T], /* oldValue */ js.UndefOr[T], Unit]
   
-  trait Options[T] extends StObject {
+  trait Options[T /* <: Record[String, Any] */] extends StObject {
     
     /**
       Access nested properties by dot notation.
@@ -54,10 +84,24 @@ object typesMod {
     val accessPropertiesByDotNotation: js.UndefOr[Boolean] = js.undefined
     
     /**
-      The config is cleared if reading the config file causes a `SyntaxError`. This is a good default, as the config file is not intended to be hand-edited, so it usually means the config is corrupt and there's nothing the user can do about it anyway. However, if you let the user edit the config file directly, mistakes might happen and it could be more useful to throw an error when the config is invalid instead of clearing. Disabling this option will make it throw a `SyntaxError` on invalid config instead of clearing.
-      @default true
+      The given callback function will be called before each migration step.
+      This can be useful for logging purposes, preparing migration data, etc.
+      */
+    var beforeEachMigration: js.UndefOr[BeforeEachMigrationCallback[T]] = js.undefined
+    
+    /**
+      The config is cleared if reading the config file causes a `SyntaxError`. This is a good behavior for unimportant data, as the config file is not intended to be hand-edited, so it usually means the config is corrupt and there's nothing the user can do about it anyway. However, if you let the user edit the config file directly, mistakes might happen and it could be more useful to throw an error when the config is invalid instead of clearing.
+      @default false
       */
     var clearInvalidConfig: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      The [mode](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation) that will be used for the config file.
+      You would usually not need this, but it could be useful if you want to restrict the permissions of the config file. Setting a permission such as `0o600` would result in a config file that can only be accessed by the user running the program.
+      Note that setting restrictive permissions can cause problems if different users need to read the file. A common problem is a user running your tool with and without `sudo` and then not being able to access the config the second time.
+      @default 0o666
+      */
+    val configFileMode: js.UndefOr[Double] = js.undefined
     
     /**
       Name of the config file (without extension).
@@ -91,7 +135,9 @@ object typesMod {
       It also has the added bonus of ensuring the config file's integrity. If the file is changed in any way, the decryption will not work, in which case the store will just reset back to its default state.
       When specified, the store will be encrypted using the [`aes-256-cbc`](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation) encryption algorithm.
       */
-    var encryptionKey: js.UndefOr[String | Buffer | TypedArray | DataView] = js.undefined
+    var encryptionKey: js.UndefOr[
+        String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
+      ] = js.undefined
     
     /**
       Extension of the config file.
@@ -186,28 +232,35 @@ object typesMod {
     val serialize: js.UndefOr[Serialize[T]] = js.undefined
     
     /**
-      Watch for any changes in the config file and call the callback for `onDidChange` if set. This is useful if there are multiple processes changing the same config file.
-      __Currently this option doesn't work on Node.js 8 on macOS.__
+      Watch for any changes in the config file and call the callback for `onDidChange` or `onDidAnyChange` if set. This is useful if there are multiple processes changing the same config file.
       @default false
       */
     val watch: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
-    inline def apply[T](): Options[T] = {
+    inline def apply[T /* <: Record[String, Any] */](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    extension [Self <: Options[?], T /* <: Record[String, Any] */](x: Self & Options[T]) {
       
       inline def setAccessPropertiesByDotNotation(value: Boolean): Self = StObject.set(x, "accessPropertiesByDotNotation", value.asInstanceOf[js.Any])
       
       inline def setAccessPropertiesByDotNotationUndefined: Self = StObject.set(x, "accessPropertiesByDotNotation", js.undefined)
       
+      inline def setBeforeEachMigration(value: (/* store */ default[T], /* context */ BeforeEachMigrationContext) => Unit): Self = StObject.set(x, "beforeEachMigration", js.Any.fromFunction2(value))
+      
+      inline def setBeforeEachMigrationUndefined: Self = StObject.set(x, "beforeEachMigration", js.undefined)
+      
       inline def setClearInvalidConfig(value: Boolean): Self = StObject.set(x, "clearInvalidConfig", value.asInstanceOf[js.Any])
       
       inline def setClearInvalidConfigUndefined: Self = StObject.set(x, "clearInvalidConfig", js.undefined)
+      
+      inline def setConfigFileMode(value: Double): Self = StObject.set(x, "configFileMode", value.asInstanceOf[js.Any])
+      
+      inline def setConfigFileModeUndefined: Self = StObject.set(x, "configFileMode", js.undefined)
       
       inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
       
@@ -225,7 +278,9 @@ object typesMod {
       
       inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
       
-      inline def setEncryptionKey(value: String | Buffer | TypedArray | DataView): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(
+        value: String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
+      ): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
       inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
       
@@ -265,11 +320,11 @@ object typesMod {
   
   type Schema[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ Property in keyof T ]: conf.conf/dist/source/types.ValueSchema}
-    */ typings.conf.confStrings.Schema & TopLevel[js.Any]
+    */ typings.conf.confStrings.Schema & TopLevel[Any]
   
   type Serialize[T] = js.Function1[/* value */ T, String]
   
   type Unsubscribe = js.Function0[EventEmitter]
   
-  type ValueSchema = JSONSchema
+  type ValueSchema = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TypedJSONSchema */ Any
 }

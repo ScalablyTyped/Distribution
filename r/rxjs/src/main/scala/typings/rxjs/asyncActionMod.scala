@@ -3,6 +3,7 @@ package typings.rxjs
 import typings.rxjs.actionMod.Action
 import typings.rxjs.asyncSchedulerMod.AsyncScheduler
 import typings.rxjs.internalTypesMod.SchedulerAction
+import typings.rxjs.timerHandleMod.TimerHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,17 +28,19 @@ object asyncActionMod {
       */
     def execute(state: T, delay: Double): Any = js.native
     
-    var id: Any = js.native
+    var id: js.UndefOr[TimerHandle] = js.native
     
     /* protected */ var pending: Boolean = js.native
     
-    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler, id: Any): Any = js.native
-    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler, id: Any, delay: Double): Any = js.native
+    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler): js.UndefOr[TimerHandle] = js.native
+    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler, id: Unit, delay: Double): js.UndefOr[TimerHandle] = js.native
+    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler, id: TimerHandle): js.UndefOr[TimerHandle] = js.native
+    /* protected */ def recycleAsyncId(_scheduler: AsyncScheduler, id: TimerHandle, delay: Double): js.UndefOr[TimerHandle] = js.native
     
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler): Any = js.native
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: Any): Any = js.native
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: Any, delay: Double): Any = js.native
-    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: Unit, delay: Double): Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler): TimerHandle = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: Unit, delay: Double): TimerHandle = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: TimerHandle): TimerHandle = js.native
+    /* protected */ def requestAsyncId(scheduler: AsyncScheduler, _id: TimerHandle, delay: Double): TimerHandle = js.native
     
     /* protected */ var scheduler: AsyncScheduler = js.native
     

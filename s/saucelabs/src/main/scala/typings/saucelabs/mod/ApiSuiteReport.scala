@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ApiSuiteReport
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var id: js.UndefOr[Id] = js.undefined
   
@@ -30,6 +30,6 @@ object ApiSuiteReport {
     
     inline def setTestReportsUndefined: Self = StObject.set(x, "testReports", js.undefined)
     
-    inline def setTestReportsVarargs(value: ApiTestReport*): Self = StObject.set(x, "testReports", js.Array(value :_*))
+    inline def setTestReportsVarargs(value: ApiTestReport*): Self = StObject.set(x, "testReports", js.Array(value*))
   }
 }

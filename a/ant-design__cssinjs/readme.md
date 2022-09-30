@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__cssinjs
 
-Typings are for version 0.0.0-alpha.52
+Typings are for version 0.0.0-alpha.54
 
 ## Library description:
 Component level cssinjs resolution for antd

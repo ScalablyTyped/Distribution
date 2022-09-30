@@ -10,11 +10,11 @@ trait DocsUrl extends StObject {
   
   var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(context: js.Any): String
+  def text(context: Any): String
 }
 object DocsUrl {
   
-  inline def apply(docsUrl: String, level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: js.Any => String): DocsUrl = {
+  inline def apply(docsUrl: String, level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: Any => String): DocsUrl = {
     val __obj = js.Dynamic.literal(docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
     __obj.asInstanceOf[DocsUrl]
   }
@@ -25,6 +25,6 @@ object DocsUrl {
     
     inline def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

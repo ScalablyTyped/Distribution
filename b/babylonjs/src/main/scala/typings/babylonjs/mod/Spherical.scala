@@ -24,6 +24,13 @@ object Spherical {
   val ^ : js.Any = js.native
   
   /**
+    * Converts an array of floats to a spherical
+    * @param array the array to convert
+    * @returns the converted spherical
+    */
+  inline def FromArray(array: js.Array[Double]): typings.babylonjs.mathPolarMod.Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPolarMod.Spherical]
+  
+  /**
     * Gets a Spherical from a Vector3
     * @param vector defines the vector in (x, y, z) coordinate space
     * @returns a new Spherical

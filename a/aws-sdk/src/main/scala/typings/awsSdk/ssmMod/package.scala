@@ -34,6 +34,12 @@ type AgentErrorCode = java.lang.String
 
 type AggregatorSchemaOnly = scala.Boolean
 
+type AlarmList = js.Array[Alarm]
+
+type AlarmName = java.lang.String
+
+type AlarmStateInformationList = js.Array[AlarmStateInformation]
+
 type AllowedPattern = java.lang.String
 
 type ApplyOnlyAtCronInterval = scala.Boolean
@@ -520,7 +526,7 @@ type DocumentParameterName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.String_
-  - typings.awsSdk.awsSdkStrings.StringList
+  - typings.awsSdk.awsSdkStrings.StringList_
   - java.lang.String
 */
 type DocumentParameterType = _DocumentParameterType | java.lang.String
@@ -577,6 +583,8 @@ type DocumentStatusInformation = java.lang.String
   - typings.awsSdk.awsSdkStrings.AutomationDotChangeTemplate
   - typings.awsSdk.awsSdkStrings.ProblemAnalysis
   - typings.awsSdk.awsSdkStrings.ProblemAnalysisTemplate
+  - typings.awsSdk.awsSdkStrings.CloudFormation_
+  - typings.awsSdk.awsSdkStrings.ConformancePackTemplate
   - java.lang.String
 */
 type DocumentType = _DocumentType | java.lang.String
@@ -607,6 +615,13 @@ type ExecutionMode = _ExecutionMode | java.lang.String
 type ExecutionRoleName = java.lang.String
 
 type ExpirationDate = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - typings.awsSdk.awsSdkStrings.ALARM
+  - java.lang.String
+*/
+type ExternalAlarmState = _ExternalAlarmState | java.lang.String
 
 type FailedCreateAssociationList = js.Array[FailedCreateAssociation]
 
@@ -1278,7 +1293,7 @@ type ParameterTier = _ParameterTier | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.String_
-  - typings.awsSdk.awsSdkStrings.StringList
+  - typings.awsSdk.awsSdkStrings.StringList_
   - typings.awsSdk.awsSdkStrings.SecureString
   - java.lang.String
 */
@@ -1736,7 +1751,7 @@ type SharedDocumentVersion = java.lang.String
   - typings.awsSdk.awsSdkStrings.Reject_
   - typings.awsSdk.awsSdkStrings.StartStep
   - typings.awsSdk.awsSdkStrings.StopStep
-  - typings.awsSdk.awsSdkStrings.Resume
+  - typings.awsSdk.awsSdkStrings.Resume_
   - java.lang.String
 */
 type SignalType = _SignalType | java.lang.String

@@ -37,7 +37,7 @@ object global {
         * @param interval - Interval in milliseconds. Must be at least 10 ms.
         * @param args - Any number of arguments to pass on to the handler.
         */
-      inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
+      inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((scala.List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
     }
     
     object fixed {
@@ -57,7 +57,7 @@ object global {
         * @param interval - Interval in milliseconds. Must be at least 10 ms.
         * @param args - Any number of arguments to pass on to the handler.
         */
-      inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
+      inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((scala.List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
     }
     
     object legacy {
@@ -79,7 +79,7 @@ object global {
         * @param interval - Interval in milliseconds. Must be at least 10 ms.
         * @param args - Any number of arguments to pass on to the handler.
         */
-      inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
+      inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((scala.List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
     }
   }
 }

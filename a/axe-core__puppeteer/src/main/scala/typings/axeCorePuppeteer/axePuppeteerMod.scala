@@ -26,7 +26,7 @@ object axePuppeteerMod {
     /* private */ var analyzePromise: Any = js.native
     
     @JSName("analyze")
-    def analyze_T_AnalyzeCB[T /* <: AnalyzeCB */](): js.Promise[AxeResults | Null] = js.native
+    def analyze_T[T /* <: AnalyzeCB */](): js.Promise[AxeResults | Null] = js.native
     
     /* private */ var axeOptions: Any = js.native
     

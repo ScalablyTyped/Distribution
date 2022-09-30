@@ -8,11 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SettingData extends StObject {
   
   /**
-    * Gets the key of the setting. Read only.
+    * Gets the key of the setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var key: js.UndefOr[String] = js.undefined
   
@@ -20,8 +19,7 @@ trait SettingData extends StObject {
     * Gets or sets the value of the setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var value: js.UndefOr[Any] = js.undefined
 }

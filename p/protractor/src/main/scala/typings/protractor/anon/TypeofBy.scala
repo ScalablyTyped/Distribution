@@ -51,9 +51,9 @@ trait TypeofBy
     *     A new JavaScript-based locator function.
     */
   @JSName("js")
-  def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = js.native
+  def js_(script: String, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = js.native
   @JSName("js")
-  def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[js.Any]] = js.native
+  def js_(script: js.Function, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = js.native
   
   /**
     * Locates link elements whose

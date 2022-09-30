@@ -1,23 +1,23 @@
 package typings.nodegit
 
 import typings.nodegit.bufMod.Buf
-import typings.nodegit.nodegitNumbers.`-1`
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1024`
-import typings.nodegit.nodegitNumbers.`128`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2048`
-import typings.nodegit.nodegitNumbers.`256`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`32`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4096`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`512`
-import typings.nodegit.nodegitNumbers.`64`
-import typings.nodegit.nodegitNumbers.`8192`
-import typings.nodegit.nodegitNumbers.`8`
+import typings.nodegit.nodegitInts.`-1`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1024`
+import typings.nodegit.nodegitInts.`128`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2048`
+import typings.nodegit.nodegitInts.`256`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`32`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4096`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`512`
+import typings.nodegit.nodegitInts.`64`
+import typings.nodegit.nodegitInts.`8192`
+import typings.nodegit.nodegitInts.`8`
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.submoduleUpdateOptionsMod.SubmoduleUpdateOptions
@@ -110,11 +110,11 @@ object submoduleMod {
     inline def updateInitOptions(opts: SubmoduleUpdateOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInitOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`-1`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
+      - typings.nodegit.nodegitInts.`-1`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
     */
     trait IGNORE extends StObject
     object IGNORE {
@@ -131,9 +131,9 @@ object submoduleMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
     */
     trait RECURSE extends StObject
     object RECURSE {
@@ -146,20 +146,20 @@ object submoduleMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`32`
-      - typings.nodegit.nodegitNumbers.`64`
-      - typings.nodegit.nodegitNumbers.`128`
-      - typings.nodegit.nodegitNumbers.`256`
-      - typings.nodegit.nodegitNumbers.`512`
-      - typings.nodegit.nodegitNumbers.`1024`
-      - typings.nodegit.nodegitNumbers.`2048`
-      - typings.nodegit.nodegitNumbers.`4096`
-      - typings.nodegit.nodegitNumbers.`8192`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`32`
+      - typings.nodegit.nodegitInts.`64`
+      - typings.nodegit.nodegitInts.`128`
+      - typings.nodegit.nodegitInts.`256`
+      - typings.nodegit.nodegitInts.`512`
+      - typings.nodegit.nodegitInts.`1024`
+      - typings.nodegit.nodegitInts.`2048`
+      - typings.nodegit.nodegitInts.`4096`
+      - typings.nodegit.nodegitInts.`8192`
     */
     trait STATUS extends StObject
     object STATUS {
@@ -194,11 +194,11 @@ object submoduleMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`0`
     */
     trait UPDATE extends StObject
     object UPDATE {

@@ -51,7 +51,7 @@ object homeworks {
       
       inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -94,9 +94,9 @@ object homeworks {
     */
   trait SpinnerOptions extends StObject {
     
-    var empty: js.UndefOr[js.Any] = js.undefined
+    var empty: js.UndefOr[Any] = js.undefined
     
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
   }
   object SpinnerOptions {
     
@@ -107,11 +107,11 @@ object homeworks {
     
     extension [Self <: SpinnerOptions](x: Self) {
       
-      inline def setEmpty(value: js.Any): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: Any): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
       inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
@@ -139,7 +139,7 @@ object homeworks {
       
       inline def setHeader(value: js.Array[JQuery]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setHeaderVarargs(value: JQuery*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: JQuery*): Self = StObject.set(x, "header", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -196,7 +196,7 @@ object homeworks {
       
       inline def setHeader(value: js.Array[JQuery]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setHeaderVarargs(value: JQuery*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: JQuery*): Self = StObject.set(x, "header", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -260,30 +260,30 @@ object homeworks {
     
     var beforeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var complete: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var complete: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var dest: js.UndefOr[String] = js.undefined
     
     var error: js.UndefOr[
         js.Function3[
-          /* xhr */ js.UndefOr[js.Any], 
-          /* state */ js.UndefOr[js.Any], 
-          /* error */ js.UndefOr[js.Any], 
+          /* xhr */ js.UndefOr[Any], 
+          /* state */ js.UndefOr[Any], 
+          /* error */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
     
-    var extensions: js.UndefOr[js.Any] = js.undefined
+    var extensions: js.UndefOr[Any] = js.undefined
     
     var isBtn: js.UndefOr[Boolean] = js.undefined
     
     var success: js.UndefOr[
         js.Function3[
-          /* data */ js.UndefOr[js.Any], 
-          /* state */ js.UndefOr[js.Any], 
-          /* xhr */ js.UndefOr[js.Any], 
+          /* data */ js.UndefOr[Any], 
+          /* state */ js.UndefOr[Any], 
+          /* xhr */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -305,11 +305,11 @@ object homeworks {
       
       inline def setBeforeStartUndefined: Self = StObject.set(x, "beforeStart", js.undefined)
       
-      inline def setComplete(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -318,12 +318,12 @@ object homeworks {
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
       inline def setError(
-        value: (/* xhr */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any], /* error */ js.UndefOr[js.Any]) => Unit
+        value: (/* xhr */ js.UndefOr[Any], /* state */ js.UndefOr[Any], /* error */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setExtensions(value: js.Any): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: Any): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
@@ -332,7 +332,7 @@ object homeworks {
       inline def setIsBtnUndefined: Self = StObject.set(x, "isBtn", js.undefined)
       
       inline def setSuccess(
-        value: (/* data */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any], /* xhr */ js.UndefOr[js.Any]) => Unit
+        value: (/* data */ js.UndefOr[Any], /* state */ js.UndefOr[Any], /* xhr */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)

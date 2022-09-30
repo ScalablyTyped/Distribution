@@ -14,13 +14,13 @@ trait OSRMOptions extends StObject {
   
   var profile: js.UndefOr[String] = js.undefined
   
-  var requestParameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var requestParameters: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var routingOptions: js.UndefOr[js.Any] = js.undefined
+  var routingOptions: js.UndefOr[Any] = js.undefined
   
   var serviceUrl: js.UndefOr[String] = js.undefined
   
-  var stepToText: js.UndefOr[js.Function2[/* step */ js.Any, /* leg */ LegCount, js.Any]] = js.undefined
+  var stepToText: js.UndefOr[js.Function2[/* step */ Any, /* leg */ LegCount, Any]] = js.undefined
   
   var suppressDemoServerWarning: js.UndefOr[Boolean] = js.undefined
   
@@ -49,11 +49,11 @@ object OSRMOptions {
     
     inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    inline def setRequestParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
+    inline def setRequestParameters(value: StringDictionary[Any]): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
     
     inline def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
     
-    inline def setRoutingOptions(value: js.Any): Self = StObject.set(x, "routingOptions", value.asInstanceOf[js.Any])
+    inline def setRoutingOptions(value: Any): Self = StObject.set(x, "routingOptions", value.asInstanceOf[js.Any])
     
     inline def setRoutingOptionsUndefined: Self = StObject.set(x, "routingOptions", js.undefined)
     
@@ -61,7 +61,7 @@ object OSRMOptions {
     
     inline def setServiceUrlUndefined: Self = StObject.set(x, "serviceUrl", js.undefined)
     
-    inline def setStepToText(value: (/* step */ js.Any, /* leg */ LegCount) => js.Any): Self = StObject.set(x, "stepToText", js.Any.fromFunction2(value))
+    inline def setStepToText(value: (/* step */ Any, /* leg */ LegCount) => Any): Self = StObject.set(x, "stepToText", js.Any.fromFunction2(value))
     
     inline def setStepToTextUndefined: Self = StObject.set(x, "stepToText", js.undefined)
     

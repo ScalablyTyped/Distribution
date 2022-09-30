@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object browserUpdateStrings {
   
   @js.native
-  sealed trait `Extended support LeftparenthesisESRRightparenthesis` extends StObject
-  inline def `Extended support LeftparenthesisESRRightparenthesis`: `Extended support LeftparenthesisESRRightparenthesis` = ("Extended support (ESR)").asInstanceOf[`Extended support LeftparenthesisESRRightparenthesis`]
-  
-  @js.native
   sealed trait TV extends StObject
   inline def TV: TV = "TV".asInstanceOf[TV]
   
@@ -82,16 +78,8 @@ object browserUpdateStrings {
   inline def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
-  sealed trait `is embedded browserColon$LeftcurlybracketstringRightcurlybracket` extends StObject
-  inline def `is embedded browserColon$LeftcurlybracketstringRightcurlybracket`: `is embedded browserColon$LeftcurlybracketstringRightcurlybracket` = ("is embedded browser:${string}").asInstanceOf[`is embedded browserColon$LeftcurlybracketstringRightcurlybracket`]
-  
-  @js.native
   sealed trait `is latest version of the browser` extends StObject
   inline def `is latest version of the browser`: `is latest version of the browser` = ("is latest version of the browser").asInstanceOf[`is latest version of the browser`]
-  
-  @js.native
-  sealed trait `is other browserColon$LeftcurlybracketstringRightcurlybracket` extends StObject
-  inline def `is other browserColon$LeftcurlybracketstringRightcurlybracket`: `is other browserColon$LeftcurlybracketstringRightcurlybracket` = ("is other browser:${string}").asInstanceOf[`is other browserColon$LeftcurlybracketstringRightcurlybracket`]
   
   @js.native
   sealed trait `mobile without upgrade path or landing page` extends StObject

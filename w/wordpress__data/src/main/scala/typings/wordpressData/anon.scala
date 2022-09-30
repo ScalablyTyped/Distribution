@@ -7,6 +7,7 @@ import typings.wordpressData.mod.GenericStoreConfig
 import typings.wordpressData.mod.SelectorMap
 import typings.wordpressData.mod.Store
 import typings.wordpressData.mod.StoreConfig
+import typings.wordpressData.mod.StoreDescriptor
 import typings.wordpressData.mod.Subscriber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,13 +24,15 @@ object anon {
   /* Inlined std.Partial<@wordpress/data.@wordpress/data.DataRegistry> */
   trait PartialDataRegistry extends StObject {
     
-    var dispatch: js.UndefOr[js.Function1[/* key */ String, DispatcherMap]] = js.undefined
+    var dispatch: js.UndefOr[
+        js.Function1[/* storeNameOrDescriptor */ String | StoreDescriptor, DispatcherMap]
+      ] = js.undefined
     
-    var registerGenericStore: js.UndefOr[js.Function2[/* key */ String, /* config */ GenericStoreConfig, Unit]] = js.undefined
+    var registerGenericStore: js.UndefOr[js.Function2[/* name */ String, /* config */ GenericStoreConfig, Unit]] = js.undefined
     
     var registerStore: js.UndefOr[FnCall] = js.undefined
     
-    var select: js.UndefOr[js.Function1[/* key */ String, SelectorMap]] = js.undefined
+    var select: js.UndefOr[js.Function1[/* storeNameOrDescriptor */ String | StoreDescriptor, SelectorMap]] = js.undefined
     
     var subscribe: js.UndefOr[Subscriber] = js.undefined
   }
@@ -42,11 +45,11 @@ object anon {
     
     extension [Self <: PartialDataRegistry](x: Self) {
       
-      inline def setDispatch(value: /* key */ String => DispatcherMap): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* storeNameOrDescriptor */ String | StoreDescriptor => DispatcherMap): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      inline def setRegisterGenericStore(value: (/* key */ String, /* config */ GenericStoreConfig) => Unit): Self = StObject.set(x, "registerGenericStore", js.Any.fromFunction2(value))
+      inline def setRegisterGenericStore(value: (/* name */ String, /* config */ GenericStoreConfig) => Unit): Self = StObject.set(x, "registerGenericStore", js.Any.fromFunction2(value))
       
       inline def setRegisterGenericStoreUndefined: Self = StObject.set(x, "registerGenericStore", js.undefined)
       
@@ -54,7 +57,7 @@ object anon {
       
       inline def setRegisterStoreUndefined: Self = StObject.set(x, "registerStore", js.undefined)
       
-      inline def setSelect(value: /* key */ String => SelectorMap): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* storeNameOrDescriptor */ String | StoreDescriptor => SelectorMap): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
@@ -136,18 +139,18 @@ object anon {
   
   trait Select extends StObject {
     
-    var select: js.Function1[/* key */ String, SelectorMap]
+    var select: js.Function1[/* storeNameOrDescriptor */ String | StoreDescriptor, SelectorMap]
   }
   object Select {
     
-    inline def apply(select: /* key */ String => SelectorMap): Select = {
+    inline def apply(select: /* storeNameOrDescriptor */ String | StoreDescriptor => SelectorMap): Select = {
       val __obj = js.Dynamic.literal(select = js.Any.fromFunction1(select))
       __obj.asInstanceOf[Select]
     }
     
     extension [Self <: Select](x: Self) {
       
-      inline def setSelect(value: /* key */ String => SelectorMap): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* storeNameOrDescriptor */ String | StoreDescriptor => SelectorMap): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     }
   }
   

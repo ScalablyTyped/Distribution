@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-sentry-middleware
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Redux middleware for propagating Redux state/actions to use with new @sentry/browser and @sentry/node.
@@ -10,10 +10,10 @@ Redux middleware for propagating Redux state/actions to use with new @sentry/bro
 | ------------------ | :-------------: |
 | Full name          | redux-sentry-middleware |
 | Keywords           | redux, middleware, sentry, logging |
-| # releases         | 13 |
-| # dependents       | 2 |
-| # downloads        | 1523150 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 80888.0 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/ViditIsOnline/redux-sentry-middleware#readme)

@@ -1,20 +1,20 @@
 package typings.activexVbide.VBIDE
 
-import typings.activexVbide.activexVbideNumbers.`100`
-import typings.activexVbide.activexVbideNumbers.`11`
-import typings.activexVbide.activexVbideNumbers.`1`
-import typings.activexVbide.activexVbideNumbers.`2`
-import typings.activexVbide.activexVbideNumbers.`3`
+import typings.activexVbide.activexVbideInts.`100`
+import typings.activexVbide.activexVbideInts.`11`
+import typings.activexVbide.activexVbideInts.`1`
+import typings.activexVbide.activexVbideInts.`2`
+import typings.activexVbide.activexVbideInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexVbide.activexVbideNumbers.`11`
-  - typings.activexVbide.activexVbideNumbers.`2`
-  - typings.activexVbide.activexVbideNumbers.`100`
-  - typings.activexVbide.activexVbideNumbers.`3`
-  - typings.activexVbide.activexVbideNumbers.`1`
+  - typings.activexVbide.activexVbideInts.`11`
+  - typings.activexVbide.activexVbideInts.`2`
+  - typings.activexVbide.activexVbideInts.`100`
+  - typings.activexVbide.activexVbideInts.`3`
+  - typings.activexVbide.activexVbideInts.`1`
 */
 trait vbextComponentType extends StObject
 object vbextComponentType {

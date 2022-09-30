@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EventFactionChatDataAvailable extends StObject {
   
-  var processed: js.Any
+  var processed: Any
   
-  var raw: js.Any
+  var raw: Any
   
   var result: js.Array[ChatLine]
 }
 object EventFactionChatDataAvailable {
   
-  inline def apply(processed: js.Any, raw: js.Any, result: js.Array[ChatLine]): EventFactionChatDataAvailable = {
+  inline def apply(processed: Any, raw: Any, result: js.Array[ChatLine]): EventFactionChatDataAvailable = {
     val __obj = js.Dynamic.literal(processed = processed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventFactionChatDataAvailable]
   }
   
   extension [Self <: EventFactionChatDataAvailable](x: Self) {
     
-    inline def setProcessed(value: js.Any): Self = StObject.set(x, "processed", value.asInstanceOf[js.Any])
+    inline def setProcessed(value: Any): Self = StObject.set(x, "processed", value.asInstanceOf[js.Any])
     
-    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setResult(value: js.Array[ChatLine]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

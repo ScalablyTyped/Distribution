@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "Sha256")
 @js.native
-class Sha256 ()
+open class Sha256 ()
   extends typings.xmldsigjs.algorithmsMod.Sha256

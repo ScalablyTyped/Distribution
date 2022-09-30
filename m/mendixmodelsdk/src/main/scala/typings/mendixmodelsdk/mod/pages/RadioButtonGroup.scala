@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.RadioButtonGroup")
 @js.native
-class RadioButtonGroup protected ()
+open class RadioButtonGroup protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.RadioButtonGroup {
   def this(
     model: AbstractModel,

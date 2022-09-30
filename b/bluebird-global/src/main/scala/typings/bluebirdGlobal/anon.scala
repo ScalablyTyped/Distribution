@@ -16,6 +16,8 @@ import typings.bluebird.mod.ResolvableProps
 import typings.bluebird.mod.Resolver
 import typings.bluebird.mod.SpreadOption
 import typings.std.IterableIterator
+import typings.std.Map
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -545,17 +547,17 @@ object anon {
   @js.native
   trait FnCallDisposerDisposer2Disposer3Executor extends StObject {
     
-    def apply[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = js.native
+    def apply[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, PromiseLike[T]]): Bluebird[T] = js.native
     def apply[R1, R2, T](
       disposer: Disposer[R1],
       disposer2: Disposer[R2],
-      executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
+      executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, PromiseLike[T]]
     ): Bluebird[T] = js.native
     def apply[R1, R2, R3, T](
       disposer: Disposer[R1],
       disposer2: Disposer[R2],
       disposer3: Disposer[R3],
-      executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
+      executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, PromiseLike[T]]
     ): Bluebird[T] = js.native
   }
   
@@ -2146,8 +2148,9 @@ object anon {
   @js.native
   trait FnCallObject extends StObject {
     
-    def apply[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = js.native
     def apply[T](`object`: ResolvableProps[T]): Bluebird[T] = js.native
+    def apply[T](`object`: PromiseLike[ResolvableProps[T]]): Bluebird[T] = js.native
+    def apply[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
   }
   
   @js.native

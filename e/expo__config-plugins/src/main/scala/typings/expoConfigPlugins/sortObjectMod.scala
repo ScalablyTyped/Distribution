@@ -1,8 +1,8 @@
 package typings.expoConfigPlugins
 
-import typings.expoConfigPlugins.expoConfigPluginsNumbers.`-1`
-import typings.expoConfigPlugins.expoConfigPluginsNumbers.`0`
-import typings.expoConfigPlugins.expoConfigPluginsNumbers.`1`
+import typings.expoConfigPlugins.expoConfigPluginsInts.`-1`
+import typings.expoConfigPlugins.expoConfigPluginsInts.`0`
+import typings.expoConfigPlugins.expoConfigPluginsInts.`1`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

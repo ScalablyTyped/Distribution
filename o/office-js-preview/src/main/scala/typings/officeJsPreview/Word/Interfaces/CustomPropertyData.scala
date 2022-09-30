@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomPropertyData extends StObject {
   
   /**
-    * Gets the key of the custom property. Read only.
+    * Gets the key of the custom property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -20,7 +20,7 @@ trait CustomPropertyData extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+    * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.
     *
     * @remarks
     * [Api set: WordApi 1.3]

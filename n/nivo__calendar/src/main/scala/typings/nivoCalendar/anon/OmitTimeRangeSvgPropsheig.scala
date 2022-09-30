@@ -1,12 +1,12 @@
 package typings.nivoCalendar.anon
 
-import typings.nivoCalendar.nivoCalendarNumbers.`0`
-import typings.nivoCalendar.nivoCalendarNumbers.`1`
-import typings.nivoCalendar.nivoCalendarNumbers.`2`
-import typings.nivoCalendar.nivoCalendarNumbers.`3`
-import typings.nivoCalendar.nivoCalendarNumbers.`4`
-import typings.nivoCalendar.nivoCalendarNumbers.`5`
-import typings.nivoCalendar.nivoCalendarNumbers.`6`
+import typings.nivoCalendar.nivoCalendarInts.`0`
+import typings.nivoCalendar.nivoCalendarInts.`1`
+import typings.nivoCalendar.nivoCalendarInts.`2`
+import typings.nivoCalendar.nivoCalendarInts.`3`
+import typings.nivoCalendar.nivoCalendarInts.`4`
+import typings.nivoCalendar.nivoCalendarInts.`5`
+import typings.nivoCalendar.nivoCalendarInts.`6`
 import typings.nivoCalendar.nivoCalendarStrings.after
 import typings.nivoCalendar.nivoCalendarStrings.auto
 import typings.nivoCalendar.nivoCalendarStrings.before

@@ -1,10 +1,10 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`3`
-import typings.html2canvas.html2canvasNumbers.`4`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`3`
+import typings.html2canvas.html2canvasInts.`4`
 import typings.html2canvas.ipropertydescriptorMod.IPropertyListDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object overflowMod {
   val overflow: IPropertyListDescriptor[js.Array[OVERFLOW_]] = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`3`
-    - typings.html2canvas.html2canvasNumbers.`4`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`3`
+    - typings.html2canvas.html2canvasInts.`4`
   */
   trait OVERFLOW_ extends StObject
   object OVERFLOW_ {

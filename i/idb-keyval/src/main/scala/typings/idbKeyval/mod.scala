@@ -5,6 +5,7 @@ import typings.std.IDBRequest
 import typings.std.IDBTransaction
 import typings.std.IDBTransactionMode
 import typings.std.IDBValidKey
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +56,7 @@ object mod {
   
   type UseStore = js.Function2[
     /* txMode */ IDBTransactionMode, 
-    /* callback */ js.Function1[/* store */ IDBObjectStore, Any | js.Thenable[Any]], 
+    /* callback */ js.Function1[/* store */ IDBObjectStore, Any | PromiseLike[Any]], 
     js.Promise[Any]
   ]
 }

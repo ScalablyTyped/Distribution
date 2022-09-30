@@ -27,11 +27,11 @@ object nativeTypesConfigMod {
       
       inline def setMatchesTypes(value: js.Array[String]): Self = StObject.set(x, "matchesTypes", value.asInstanceOf[js.Any])
       
-      inline def setMatchesTypesVarargs(value: String*): Self = StObject.set(x, "matchesTypes", js.Array(value :_*))
+      inline def setMatchesTypesVarargs(value: String*): Self = StObject.set(x, "matchesTypes", js.Array(value*))
     }
   }
   
   type NativeItemConfigExposePropreties = StringDictionary[
-    js.Function2[/* dataTransfer */ DataTransfer, /* matchesTypes */ js.Array[String], js.Any]
+    js.Function2[/* dataTransfer */ DataTransfer, /* matchesTypes */ js.Array[String], Any]
   ]
 }

@@ -11,5 +11,5 @@ object cssModuleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cssModule_false(moduleName: String, values: (`false` | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssModule")(List(moduleName.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def cssModule_false(moduleName: String, values: (`false` | String)*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssModule")(scala.List(moduleName.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

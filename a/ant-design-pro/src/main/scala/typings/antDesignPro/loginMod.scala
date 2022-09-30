@@ -12,7 +12,7 @@ object loginMod {
   
   @JSImport("ant-design-pro/lib/Login", JSImport.Default)
   @js.native
-  class default () extends Login
+  open class default () extends Login
   object default {
     
     @JSImport("ant-design-pro/lib/Login", JSImport.Default)
@@ -40,15 +40,15 @@ object loginMod {
     /* static member */
     @JSImport("ant-design-pro/lib/Login", "default.Submit")
     @js.native
-    def Submit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any = js.native
+    def Submit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ Any = js.native
     inline def Submit_=(
-      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any
+      x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Submit")(x.asInstanceOf[js.Any])
     
     /* was `typeof LoginTab` */
     @JSImport("ant-design-pro/lib/Login", "default.Tab")
     @js.native
-    class Tab ()
+    open class Tab ()
       extends typings.antDesignPro.loginTabMod.default
     
     /* static member */
@@ -60,8 +60,7 @@ object loginMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WrappedFormUtils * / any */ @js.native
-  trait Login
-    extends Component[LoginProps, js.Any, js.Any]
+  trait Login extends Component[LoginProps, Any, Any]
   object Login {
     
     /* was `typeof LoginTab` */
@@ -74,7 +73,7 @@ object loginMod {
     
     var defaultActiveKey: js.UndefOr[String] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function2[/* error */ js.Any, /* values */ js.Any, Unit]] = js.undefined
+    var onSubmit: js.UndefOr[js.Function2[/* error */ Any, /* values */ Any, Unit]] = js.undefined
     
     var onTabChange: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
@@ -97,7 +96,7 @@ object loginMod {
       
       inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
-      inline def setOnSubmit(value: (/* error */ js.Any, /* values */ js.Any) => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
+      inline def setOnSubmit(value: (/* error */ Any, /* values */ Any) => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       

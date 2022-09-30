@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__types
 
-Typings are for version 3.171.0
+Typings are for version 3.178.0
 
 ## Library description:
 Types for the AWS SDK

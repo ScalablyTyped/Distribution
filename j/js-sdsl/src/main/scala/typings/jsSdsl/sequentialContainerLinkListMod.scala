@@ -1,6 +1,7 @@
 package typings.jsSdsl
 
 import typings.jsSdsl.containerContainerBaseMod.ContainerIterator
+import typings.jsSdsl.containerContainerBaseMod.IteratorType
 import typings.jsSdsl.containerContainerBaseMod.initContainer
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
@@ -18,15 +19,10 @@ object sequentialContainerLinkListMod {
   @JSImport("js-sdsl/dist/esm/container/SequentialContainer/LinkList", "LinkListIterator")
   @js.native
   open class LinkListIterator[T] protected () extends ContainerIterator[T] {
-    def this(node: LinkNode[T], header: LinkNode[T]) = this()
-    def this(node: LinkNode[T], header: LinkNode[T], iteratorType: Boolean) = this()
+    def this(_node: LinkNode[T], _header: LinkNode[T]) = this()
+    def this(_node: LinkNode[T], _header: LinkNode[T], iteratorType: IteratorType) = this()
     
     def equals(obj: LinkListIterator[T]): Boolean = js.native
-    
-    /* private */ val header: Any = js.native
-    
-    /* protected */ @JSName("node")
-    var node_LinkListIterator: LinkNode[T] = js.native
   }
   
   @JSImport("js-sdsl/dist/esm/container/SequentialContainer/LinkList", "LinkNode")
@@ -47,10 +43,6 @@ object sequentialContainerLinkListMod {
     
     def eraseElementByIterator(iter: LinkListIterator[T]): LinkListIterator[T] = js.native
     
-    /* private */ var head: Any = js.native
-    
-    /* private */ var header: Any = js.native
-    
     @JSName(js.Symbol.iterator)
     var iterator_LinkList: js.Function0[Generator[T, Unit, Any]] = js.native
     
@@ -70,7 +62,5 @@ object sequentialContainerLinkListMod {
       * @param element The element you want to push.
       */
     def pushFront(element: T): Unit = js.native
-    
-    /* private */ var tail: Any = js.native
   }
 }

@@ -11,7 +11,7 @@ object bundleDescriptorMod {
   
   @JSImport("google-gax/build/src/bundlingCalls/bundleDescriptor", "BundleDescriptor")
   @js.native
-  class BundleDescriptor protected ()
+  open class BundleDescriptor protected ()
     extends StObject
        with Descriptor {
     /**

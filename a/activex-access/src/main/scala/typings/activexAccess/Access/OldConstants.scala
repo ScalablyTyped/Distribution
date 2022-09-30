@@ -1,60 +1,60 @@
 package typings.activexAccess.Access
 
-import typings.activexAccess.activexAccessNumbers.`-1`
-import typings.activexAccess.activexAccessNumbers.`-2147483646`
-import typings.activexAccess.activexAccessNumbers.`0`
-import typings.activexAccess.activexAccessNumbers.`1048575`
-import typings.activexAccess.activexAccessNumbers.`1073741824`
-import typings.activexAccess.activexAccessNumbers.`10`
-import typings.activexAccess.activexAccessNumbers.`112`
-import typings.activexAccess.activexAccessNumbers.`11`
-import typings.activexAccess.activexAccessNumbers.`128`
-import typings.activexAccess.activexAccessNumbers.`12`
-import typings.activexAccess.activexAccessNumbers.`131072`
-import typings.activexAccess.activexAccessNumbers.`144`
-import typings.activexAccess.activexAccessNumbers.`14`
-import typings.activexAccess.activexAccessNumbers.`16777216`
-import typings.activexAccess.activexAccessNumbers.`16`
-import typings.activexAccess.activexAccessNumbers.`1`
-import typings.activexAccess.activexAccessNumbers.`20`
-import typings.activexAccess.activexAccessNumbers.`240`
-import typings.activexAccess.activexAccessNumbers.`256`
-import typings.activexAccess.activexAccessNumbers.`258`
-import typings.activexAccess.activexAccessNumbers.`259`
-import typings.activexAccess.activexAccessNumbers.`260`
-import typings.activexAccess.activexAccessNumbers.`261`
-import typings.activexAccess.activexAccessNumbers.`262144`
-import typings.activexAccess.activexAccessNumbers.`262`
-import typings.activexAccess.activexAccessNumbers.`263`
-import typings.activexAccess.activexAccessNumbers.`264`
-import typings.activexAccess.activexAccessNumbers.`265`
-import typings.activexAccess.activexAccessNumbers.`266`
-import typings.activexAccess.activexAccessNumbers.`267`
-import typings.activexAccess.activexAccessNumbers.`268`
-import typings.activexAccess.activexAccessNumbers.`269`
-import typings.activexAccess.activexAccessNumbers.`270`
-import typings.activexAccess.activexAccessNumbers.`2`
-import typings.activexAccess.activexAccessNumbers.`32`
-import typings.activexAccess.activexAccessNumbers.`33554432`
-import typings.activexAccess.activexAccessNumbers.`3`
-import typings.activexAccess.activexAccessNumbers.`4096`
-import typings.activexAccess.activexAccessNumbers.`4097`
-import typings.activexAccess.activexAccessNumbers.`4098`
-import typings.activexAccess.activexAccessNumbers.`48`
-import typings.activexAccess.activexAccessNumbers.`4`
-import typings.activexAccess.activexAccessNumbers.`524288`
-import typings.activexAccess.activexAccessNumbers.`536870912`
-import typings.activexAccess.activexAccessNumbers.`5`
-import typings.activexAccess.activexAccessNumbers.`64`
-import typings.activexAccess.activexAccessNumbers.`65536`
-import typings.activexAccess.activexAccessNumbers.`65542`
-import typings.activexAccess.activexAccessNumbers.`65548`
-import typings.activexAccess.activexAccessNumbers.`6`
-import typings.activexAccess.activexAccessNumbers.`7`
-import typings.activexAccess.activexAccessNumbers.`80`
-import typings.activexAccess.activexAccessNumbers.`8`
-import typings.activexAccess.activexAccessNumbers.`96`
-import typings.activexAccess.activexAccessNumbers.`9`
+import typings.activexAccess.activexAccessInts.`-1`
+import typings.activexAccess.activexAccessInts.`-2147483646`
+import typings.activexAccess.activexAccessInts.`0`
+import typings.activexAccess.activexAccessInts.`1048575`
+import typings.activexAccess.activexAccessInts.`1073741824`
+import typings.activexAccess.activexAccessInts.`10`
+import typings.activexAccess.activexAccessInts.`112`
+import typings.activexAccess.activexAccessInts.`11`
+import typings.activexAccess.activexAccessInts.`128`
+import typings.activexAccess.activexAccessInts.`12`
+import typings.activexAccess.activexAccessInts.`131072`
+import typings.activexAccess.activexAccessInts.`144`
+import typings.activexAccess.activexAccessInts.`14`
+import typings.activexAccess.activexAccessInts.`16777216`
+import typings.activexAccess.activexAccessInts.`16`
+import typings.activexAccess.activexAccessInts.`1`
+import typings.activexAccess.activexAccessInts.`20`
+import typings.activexAccess.activexAccessInts.`240`
+import typings.activexAccess.activexAccessInts.`256`
+import typings.activexAccess.activexAccessInts.`258`
+import typings.activexAccess.activexAccessInts.`259`
+import typings.activexAccess.activexAccessInts.`260`
+import typings.activexAccess.activexAccessInts.`261`
+import typings.activexAccess.activexAccessInts.`262144`
+import typings.activexAccess.activexAccessInts.`262`
+import typings.activexAccess.activexAccessInts.`263`
+import typings.activexAccess.activexAccessInts.`264`
+import typings.activexAccess.activexAccessInts.`265`
+import typings.activexAccess.activexAccessInts.`266`
+import typings.activexAccess.activexAccessInts.`267`
+import typings.activexAccess.activexAccessInts.`268`
+import typings.activexAccess.activexAccessInts.`269`
+import typings.activexAccess.activexAccessInts.`270`
+import typings.activexAccess.activexAccessInts.`2`
+import typings.activexAccess.activexAccessInts.`32`
+import typings.activexAccess.activexAccessInts.`33554432`
+import typings.activexAccess.activexAccessInts.`3`
+import typings.activexAccess.activexAccessInts.`4096`
+import typings.activexAccess.activexAccessInts.`4097`
+import typings.activexAccess.activexAccessInts.`4098`
+import typings.activexAccess.activexAccessInts.`48`
+import typings.activexAccess.activexAccessInts.`4`
+import typings.activexAccess.activexAccessInts.`524288`
+import typings.activexAccess.activexAccessInts.`536870912`
+import typings.activexAccess.activexAccessInts.`5`
+import typings.activexAccess.activexAccessInts.`64`
+import typings.activexAccess.activexAccessInts.`65536`
+import typings.activexAccess.activexAccessInts.`65542`
+import typings.activexAccess.activexAccessInts.`65548`
+import typings.activexAccess.activexAccessInts.`6`
+import typings.activexAccess.activexAccessInts.`7`
+import typings.activexAccess.activexAccessInts.`80`
+import typings.activexAccess.activexAccessInts.`8`
+import typings.activexAccess.activexAccessInts.`96`
+import typings.activexAccess.activexAccessInts.`9`
 import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
 import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
 import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0
@@ -70,89 +70,10 @@ import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x041
 import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0
 import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
 import typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
-import typings.activexAccess.activexAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
-import typings.activexAccess.activexAccessStrings.`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
-import typings.activexAccess.activexAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.activexAccess.activexAccessNumbers.`0`
-  - typings.activexAccess.activexAccessNumbers.`2`
-  - typings.activexAccess.activexAccessNumbers.`3`
-  - typings.activexAccess.activexAccessNumbers.`1`
-  - typings.activexAccess.activexAccessNumbers.`6`
-  - typings.activexAccess.activexAccessNumbers.`7`
-  - typings.activexAccess.activexAccessNumbers.`4`
-  - typings.activexAccess.activexAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
-  - typings.activexAccess.activexAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
-  - typings.activexAccess.activexAccessStrings.`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
-  - typings.activexAccess.activexAccessNumbers.`11`
-  - typings.activexAccess.activexAccessNumbers.`20`
-  - typings.activexAccess.activexAccessNumbers.`5`
-  - typings.activexAccess.activexAccessNumbers.`14`
-  - typings.activexAccess.activexAccessNumbers.`8`
-  - typings.activexAccess.activexAccessNumbers.`9`
-  - typings.activexAccess.activexAccessNumbers.`536870912`
-  - typings.activexAccess.activexAccessNumbers.`1073741824`
-  - typings.activexAccess.activexAccessNumbers.`65536`
-  - typings.activexAccess.activexAccessNumbers.`131072`
-  - typings.activexAccess.activexAccessNumbers.`16`
-  - typings.activexAccess.activexAccessNumbers.`32`
-  - typings.activexAccess.activexAccessNumbers.`128`
-  - typings.activexAccess.activexAccessNumbers.`256`
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessStrings.SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
-  - typings.activexAccess.activexAccessNumbers.`12`
-  - typings.activexAccess.activexAccessNumbers.`240`
-  - typings.activexAccess.activexAccessNumbers.`64`
-  - typings.activexAccess.activexAccessNumbers.`96`
-  - typings.activexAccess.activexAccessNumbers.`80`
-  - typings.activexAccess.activexAccessNumbers.`144`
-  - typings.activexAccess.activexAccessNumbers.`112`
-  - typings.activexAccess.activexAccessNumbers.`48`
-  - typings.activexAccess.activexAccessNumbers.`4096`
-  - typings.activexAccess.activexAccessNumbers.`16777216`
-  - typings.activexAccess.activexAccessNumbers.`33554432`
-  - typings.activexAccess.activexAccessNumbers.`65548`
-  - typings.activexAccess.activexAccessNumbers.`1048575`
-  - typings.activexAccess.activexAccessNumbers.`10`
-  - typings.activexAccess.activexAccessNumbers.`65542`
-  - typings.activexAccess.activexAccessNumbers.`524288`
-  - typings.activexAccess.activexAccessNumbers.`262144`
-  - typings.activexAccess.activexAccessNumbers.`267`
-  - typings.activexAccess.activexAccessNumbers.`263`
-  - typings.activexAccess.activexAccessNumbers.`264`
-  - typings.activexAccess.activexAccessNumbers.`259`
-  - typings.activexAccess.activexAccessNumbers.`269`
-  - typings.activexAccess.activexAccessNumbers.`268`
-  - typings.activexAccess.activexAccessNumbers.`265`
-  - typings.activexAccess.activexAccessNumbers.`262`
-  - typings.activexAccess.activexAccessNumbers.`261`
-  - typings.activexAccess.activexAccessNumbers.`4098`
-  - typings.activexAccess.activexAccessNumbers.`4097`
-  - typings.activexAccess.activexAccessNumbers.`266`
-  - typings.activexAccess.activexAccessNumbers.`258`
-  - typings.activexAccess.activexAccessNumbers.`260`
-  - typings.activexAccess.activexAccessNumbers.`270`
-  - typings.activexAccess.activexAccessNumbers.`-1`
-  - typings.activexAccess.activexAccessNumbers.`-2147483646`
-*/
-trait OldConstants extends StObject
 object OldConstants {
   
   inline def ALT_MASK: `4` = 4.asInstanceOf[`4`]
@@ -205,11 +126,11 @@ object OldConstants {
   
   inline def A_FORM: `2` = 2.asInstanceOf[`2`]
   
-  inline def A_FORMATRTF: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = ("Rich Text Format (*.rtf)").asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
+  inline def A_FORMATRTF: String = String.asInstanceOf[String]
   
-  inline def A_FORMATTXT: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = ("MS-DOS Text (*.txt)").asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
+  inline def A_FORMATTXT: String = String.asInstanceOf[String]
   
-  inline def A_FORMATXLS: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = ("Microsoft Excel (*.xls)").asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
+  inline def A_FORMATXLS: String = String.asInstanceOf[String]
   
   inline def A_FORMBAR: `0` = 0.asInstanceOf[`0`]
   

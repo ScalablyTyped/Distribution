@@ -1,267 +1,288 @@
 package typings.frisby
 
-import typings.frisby.mod.nodeFetch.Response
-import typings.joi.mod.AlternativesSchema
-import typings.joi.mod.AnySchema
-import typings.joi.mod.ArraySchema
-import typings.joi.mod.BinarySchema
-import typings.joi.mod.BooleanSchema
-import typings.joi.mod.DateSchema
-import typings.joi.mod.DefaultsFunction
-import typings.joi.mod.Description_
-import typings.joi.mod.Extension
-import typings.joi.mod.FunctionSchema
-import typings.joi.mod.LazyOptions
-import typings.joi.mod.LazySchema
-import typings.joi.mod.NumberSchema
-import typings.joi.mod.ObjectSchema
-import typings.joi.mod.Reference
-import typings.joi.mod.ReferenceOptions
+import org.scalablytyped.runtime.Shortcut
 import typings.joi.mod.Root
-import typings.joi.mod.Schema
-import typings.joi.mod.SchemaLike
-import typings.joi.mod.SchemaMap
-import typings.joi.mod.StringSchema
-import typings.joi.mod.SymbolSchema
 import typings.joi.mod.ValidationError
-import typings.joi.mod.ValidationOptions
-import typings.joi.mod.ValidationResult
-import typings.joi.mod.WhenOptions
-import typings.joi.mod.WhenSchemaOptions
-import typings.nodeFetch.anon.Size
-import typings.nodeFetch.mod.BlobOptions
-import typings.nodeFetch.mod.BlobPart
+import typings.joi.mod.ValidationErrorItem
 import typings.nodeFetch.mod.BodyInit
+import typings.nodeFetch.mod.Headers
 import typings.nodeFetch.mod.HeadersInit
 import typings.nodeFetch.mod.RequestInfo
 import typings.nodeFetch.mod.RequestInit
 import typings.nodeFetch.mod.ResponseInit
-import typings.nodeFetch.mod.SystemError
-import typings.std.Error
 import typings.std.FormData
+import typings.std.ReadableStream
+import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("frisby", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("frisby", JSImport.Namespace)
   @js.native
-  class FrisbySpec protected () extends js.Object {
-    def this(args: js.Any*) = this()
-    def `catch`(): FrisbySpec = js.native
-    def `catch`(onRejected: js.Function1[/* error */ Error, Unit]): FrisbySpec = js.native
-    def del(url: String): FrisbySpec = js.native
-    def del(url: String, params: js.Object): FrisbySpec = js.native
-    def done(doneFn: js.Function1[/* repeated */ js.Any, Unit]): FrisbySpec = js.native
-    def expect(expectName: String, args: js.Any*): FrisbySpec = js.native
-    def expectNot(expectName: String, args: js.Any*): FrisbySpec = js.native
-    def fetch(url: String): FrisbySpec = js.native
-    def fetch(url: String, params: js.UndefOr[scala.Nothing], options: js.Object): FrisbySpec = js.native
-    def fetch(url: String, params: js.Object): FrisbySpec = js.native
-    def fetch(url: String, params: js.Object, options: js.Object): FrisbySpec = js.native
-    def fromJSON(json: js.Object): FrisbySpec = js.native
-    def get(url: String): FrisbySpec = js.native
-    def get(url: String, params: js.Object): FrisbySpec = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("frisby", "FrisbySpec")
+  @js.native
+  open class FrisbySpec[TResult] protected () extends StObject {
+    def this(args: Any*) = this()
+    
+    def `catch`(): FrisbySpec[FrisbyResponse] = js.native
+    def `catch`(onRejected: js.Function1[/* error */ js.Error, Unit]): FrisbySpec[FrisbyResponse] = js.native
+    
+    def del(url: String): FrisbySpec[FrisbyResponse] = js.native
+    def del(url: String, params: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    
+    def done(doneFn: js.Function1[/* repeated */ Any, Unit]): FrisbySpec[FrisbyResponse] = js.native
+    
+    def expect(expectName: String, args: Any*): FrisbySpec[FrisbyResponse] = js.native
+    
+    def expectNot(expectName: String, args: Any*): FrisbySpec[FrisbyResponse] = js.native
+    
+    def fetch(url: String): FrisbySpec[FrisbyResponse] = js.native
+    def fetch(url: String, params: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    def fetch(url: String, params: js.Object, options: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    def fetch(url: String, params: Unit, options: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    
+    def fromJSON(json: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    
+    def get(url: String): FrisbySpec[FrisbyResponse] = js.native
+    def get(url: String, params: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    
     def getBaseUrl(): String | Boolean = js.native
-    def inspectBody(): FrisbySpec = js.native
-    def inspectHeaders(): FrisbySpec = js.native
-    def inspectJSON(): FrisbySpec = js.native
-    def inspectLog(args: js.Any*): FrisbySpec = js.native
-    def inspectRequest(): FrisbySpec = js.native
-    def inspectRequestHeaders(): FrisbySpec = js.native
-    def inspectResponse(): FrisbySpec = js.native
-    def inspectStatus(): FrisbySpec = js.native
-    def patch(url: String): FrisbySpec = js.native
-    def patch(url: String, params: js.Object): FrisbySpec = js.native
-    def post(url: String): FrisbySpec = js.native
-    def post(url: String, params: js.Object): FrisbySpec = js.native
-    def promise(): js.Promise[Response] = js.native
-    def put(url: String): FrisbySpec = js.native
-    def put(url: String, params: js.Object): FrisbySpec = js.native
-    def setup(opts: js.Object, replace: Boolean): FrisbySpec = js.native
-    def `then`(onFulfilled: js.Function1[/* repeated */ js.Any, Unit]): FrisbySpec = js.native
-    def `then`(
-      onFulfilled: js.Function1[/* repeated */ js.Any, Unit],
-      onRejected: js.Function1[/* repeated */ js.Any, Unit]
-    ): FrisbySpec = js.native
-    def `then`(onFulfilled: js.Object): FrisbySpec = js.native
-    def `then`(onFulfilled: js.Object, onRejected: js.Function1[/* repeated */ js.Any, Unit]): FrisbySpec = js.native
+    
+    def inspectBody(): FrisbySpec[FrisbyResponse] = js.native
+    
+    def inspectHeaders(): FrisbySpec[FrisbyResponse] = js.native
+    
+    def inspectJSON(): FrisbySpec[FrisbyResponse] = js.native
+    
+    def inspectLog(args: Any*): FrisbySpec[FrisbyResponse] = js.native
+    
+    def inspectRequest(): FrisbySpec[FrisbyResponse] = js.native
+    
+    def inspectRequestHeaders(): FrisbySpec[FrisbyResponse] = js.native
+    
+    def inspectResponse(): FrisbySpec[FrisbyResponse] = js.native
+    
+    def inspectStatus(): FrisbySpec[FrisbyResponse] = js.native
+    
+    def patch(url: String): FrisbySpec[FrisbyResponse] = js.native
+    def patch(url: String, params: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    
+    def post(url: String): FrisbySpec[FrisbyResponse] = js.native
+    def post(url: String, params: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    
+    def promise(): js.Promise[TResult] = js.native
+    
+    def put(url: String): FrisbySpec[FrisbyResponse] = js.native
+    def put(url: String, params: js.Object): FrisbySpec[FrisbyResponse] = js.native
+    
+    def setup(opts: js.Object, replace: Boolean): FrisbySpec[FrisbyResponse] = js.native
+    
+    def `then`[T](onFulfilled: js.Function1[/* response */ TResult, T | js.Promise[T]]): FrisbySpec[Any | T] = js.native
+    def `then`[T](
+      onFulfilled: js.Function1[/* response */ TResult, T | js.Promise[T]],
+      onRejected: js.Function1[/* repeated */ Any, Unit]
+    ): FrisbySpec[Any | T] = js.native
+    def `then`[T](onFulfilled: FrisbySpec[T]): FrisbySpec[T] = js.native
+    
     def timeout(timeout: Double): Double = js.native
-    def use(fn: js.Function1[/* repeated */ js.Any, Unit]): FrisbySpec = js.native
+    
+    def use(fn: js.Function1[/* repeated */ Any, Unit]): FrisbySpec[FrisbyResponse] = js.native
   }
-  
-  val version: String = js.native
-  def addExpectHandler(expectName: String, expectFn: js.Function1[/* repeated */ js.Any, _]): FrisbySpec = js.native
-  def baseUrl(url: String): Unit = js.native
-  def create(name: String): Unit = js.native
-  def del(args: js.Any*): FrisbySpec = js.native
-  def fetch(args: js.Any*): FrisbySpec = js.native
-  def formData(): FormData = js.native
-  def fromJSON(args: js.Any*): FrisbySpec = js.native
-  def get(args: js.Any*): FrisbySpec = js.native
-  def globalSetup(opts: js.Object): Unit = js.native
-  def patch(args: js.Any*): FrisbySpec = js.native
-  def post(args: js.Any*): FrisbySpec = js.native
-  def put(args: js.Any*): FrisbySpec = js.native
-  def removeExpectHandler(expectName: String, expectFn: js.Function1[/* repeated */ js.Any, _]): FrisbySpec = js.native
-  def setup(args: js.Any*): FrisbySpec = js.native
-  def timeout(args: js.Any*): FrisbySpec = js.native
-  def use(args: js.Any*): FrisbySpec = js.native
   /* static members */
-  @js.native
-  object FrisbySpec extends js.Object {
-    def addExpectHandler(expectName: String, expectFn: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
-    def removeExpectHandler(expectName: String): Unit = js.native
+  object FrisbySpec {
+    
+    @JSImport("frisby", "FrisbySpec")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def addExpectHandler(expectName: String, expectFn: js.Function1[/* repeated */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExpectHandler")(expectName.asInstanceOf[js.Any], expectFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeExpectHandler(expectName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeExpectHandler")(expectName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
-  object Joi extends js.Object {
-    val version: String = js.native
-    def allow(value: js.Any, values: js.Any*): Schema = js.native
-    def allow(values: js.Array[_]): Schema = js.native
-    def alt(types: SchemaLike*): AlternativesSchema = js.native
-    def alt(types: js.Array[SchemaLike]): AlternativesSchema = js.native
-    def alternatives(types: SchemaLike*): AlternativesSchema = js.native
-    def alternatives(types: js.Array[SchemaLike]): AlternativesSchema = js.native
-    def any(): AnySchema = js.native
-    def array(): ArraySchema = js.native
-    def assert(value: js.Any, schema: SchemaLike): Unit = js.native
-    def assert(value: js.Any, schema: SchemaLike, message: String): Unit = js.native
-    def assert(value: js.Any, schema: SchemaLike, message: Error): Unit = js.native
-    def attempt[T](value: T, schema: SchemaLike): T = js.native
-    def attempt[T](value: T, schema: SchemaLike, message: String): T = js.native
-    def attempt[T](value: T, schema: SchemaLike, message: Error): T = js.native
-    def binary(): BinarySchema = js.native
-    def bool(): BooleanSchema = js.native
-    def boolean(): BooleanSchema = js.native
-    def compile(schema: SchemaLike): Schema = js.native
-    def concat[T](schema: T): T = js.native
-    def date(): DateSchema = js.native
-    def defaults(fn: DefaultsFunction): Root = js.native
-    def describe(schema: Schema): Description_ = js.native
-    def description(desc: String): Schema = js.native
-    def disallow(value: js.Any, values: js.Any*): Schema = js.native
-    def disallow(values: js.Array[_]): Schema = js.native
-    def empty(): Schema = js.native
-    def empty(schema: js.Any): Schema = js.native
-    def equal(value: js.Any, values: js.Any*): Schema = js.native
-    def equal(values: js.Array[_]): Schema = js.native
-    def example(value: js.Any): Schema = js.native
-    def exist(): Schema = js.native
-    def extend(extension: js.Array[Extension], extensions: (Extension | js.Array[Extension])*): js.Any = js.native
-    def extend(extension: Extension, extensions: (Extension | js.Array[Extension])*): js.Any = js.native
-    def forbidden(): Schema = js.native
-    def func(): FunctionSchema = js.native
-    def invalid(value: js.Any, values: js.Any*): Schema = js.native
-    def invalid(values: js.Array[_]): Schema = js.native
-    def isRef(ref: js.Any): /* is joi.joi.Reference */ Boolean = js.native
-    def label(name: String): Schema = js.native
-    def `lazy`(cb: js.Function0[Schema]): LazySchema = js.native
-    def `lazy`(cb: js.Function0[Schema], options: LazyOptions): LazySchema = js.native
-    def meta(meta: js.Object): Schema = js.native
-    def not(value: js.Any, values: js.Any*): Schema = js.native
-    def not(values: js.Array[_]): Schema = js.native
-    def notes(notes: String): Schema = js.native
-    def notes(notes: js.Array[String]): Schema = js.native
-    def number(): NumberSchema = js.native
-    def `object`(): ObjectSchema = js.native
-    def `object`(schema: SchemaMap): ObjectSchema = js.native
-    def only(value: js.Any, values: js.Any*): Schema = js.native
-    def only(values: js.Array[_]): Schema = js.native
-    def optional(): Schema = js.native
-    def options(options: ValidationOptions): Schema = js.native
-    def raw(): Schema = js.native
-    def raw(isRaw: Boolean): Schema = js.native
-    def reach(schema: ObjectSchema, path: String): Schema = js.native
-    def reach(schema: ObjectSchema, path: js.Array[String]): Schema = js.native
-    def ref(key: String): Reference = js.native
-    def ref(key: String, options: ReferenceOptions): Reference = js.native
-    def required(): Schema = js.native
-    def strict(): Schema = js.native
-    def strict(isStrict: Boolean): Schema = js.native
-    def string(): StringSchema = js.native
-    def strip(): Schema = js.native
-    def symbol(): SymbolSchema = js.native
-    def tags(notes: String): Schema = js.native
-    def tags(notes: js.Array[String]): Schema = js.native
-    def unit(name: String): Schema = js.native
-    def valid(value: js.Any, values: js.Any*): Schema = js.native
-    def valid(values: js.Array[_]): Schema = js.native
-    def validate[T](value: T, schema: SchemaLike): ValidationResult[T] = js.native
-    def validate[T](value: T, schema: SchemaLike, options: ValidationOptions): ValidationResult[T] = js.native
-    def validate[T, R](value: T, schema: SchemaLike, callback: js.Function2[/* err */ ValidationError, /* value */ T, R]): R = js.native
-    def validate[T, R](
-      value: T,
-      schema: SchemaLike,
-      options: ValidationOptions,
-      callback: js.Function2[/* err */ ValidationError, /* value */ T, R]
-    ): R = js.native
-    def when(ref: String, options: WhenOptions): AlternativesSchema = js.native
-    def when(ref: Reference, options: WhenOptions): AlternativesSchema = js.native
-    def when(ref: Schema, options: WhenSchemaOptions): AlternativesSchema = js.native
+  object Joi extends Shortcut {
+    
+    @JSImport("frisby", "Joi")
+    @js.native
+    val ^ : Root = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("frisby", "Joi.ValidationError")
+    @js.native
+    open class ValidationErrorCls protected ()
+      extends StObject
+         with ValidationError {
+      def this(message: String, details: js.Array[ValidationErrorItem], original: Any) = this()
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+    }
+    
+    type _To = Root
+    
+    /* This means you don't have to write `^`, but can instead just say `Joi.foo` */
+    override def _to: Root = ^
   }
   
-  @js.native
-  object nodeFetch extends js.Object {
-    @js.native
-    class Blob ()
-      extends typings.nodeFetch.mod.Blob {
-      def this(blobParts: js.Array[BlobPart]) = this()
-      def this(blobParts: js.UndefOr[scala.Nothing], options: BlobOptions) = this()
-      def this(blobParts: js.Array[BlobPart], options: BlobOptions) = this()
-    }
+  inline def addExpectHandler(expectName: String, expectFn: js.Function1[/* repeated */ Any, Any]): FrisbySpec[FrisbyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("addExpectHandler")(expectName.asInstanceOf[js.Any], expectFn.asInstanceOf[js.Any])).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def baseUrl(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("baseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def create(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def del(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def fetch(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def formData(): FormData = ^.asInstanceOf[js.Dynamic].applyDynamic("formData")().asInstanceOf[FormData]
+  
+  inline def fromJSON(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def get(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def globalSetup(opts: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("globalSetup")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  object nodeFetch {
     
+    @JSImport("frisby", "nodeFetch")
     @js.native
-    class Body ()
-      extends typings.nodeFetch.mod.Body {
-      def this(body: js.Any) = this()
-      def this(body: js.UndefOr[scala.Nothing], opts: Size) = this()
-      def this(body: js.Any, opts: Size) = this()
-    }
+    val ^ : js.Any = js.native
     
+    inline def default(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    inline def default(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    
+    @JSImport("frisby", "nodeFetch.AbortError")
     @js.native
-    class FetchError protected ()
+    open class AbortError ()
+      extends typings.nodeFetch.mod.AbortError
+    
+    @JSImport("frisby", "nodeFetch.Blob")
+    @js.native
+    val Blob: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.Blob */ Any = js.native
+    
+    @JSImport("frisby", "nodeFetch.FetchError")
+    @js.native
+    open class FetchError protected ()
       extends typings.nodeFetch.mod.FetchError {
       def this(message: String, `type`: String) = this()
-      def this(message: String, `type`: String, systemError: SystemError) = this()
+      def this(message: String, `type`: String, systemError: Record[String, Any]) = this()
     }
     
+    @JSImport("frisby", "nodeFetch.File")
     @js.native
-    class Headers ()
+    val File: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.File */ Any = js.native
+    
+    @JSImport("frisby", "nodeFetch.Headers")
+    @js.native
+    open class Headers ()
       extends typings.nodeFetch.mod.Headers {
       def this(init: HeadersInit) = this()
     }
     
+    @JSImport("frisby", "nodeFetch.Request")
     @js.native
-    class Request protected ()
+    open class Request protected ()
       extends typings.nodeFetch.mod.Request {
       def this(input: RequestInfo) = this()
       def this(input: RequestInfo, init: RequestInit) = this()
     }
     
+    @JSImport("frisby", "nodeFetch.Response")
     @js.native
-    class Response ()
+    open class Response ()
       extends typings.nodeFetch.mod.Response {
       def this(body: BodyInit) = this()
-      def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
+      def this(body: Null, init: ResponseInit) = this()
+      def this(body: Unit, init: ResponseInit) = this()
+      def this(body: BodyInit, init: ResponseInit) = this()
     }
-    
     /* static members */
-    @js.native
-    object Response extends js.Object {
-      def error(): typings.nodeFetch.mod.Response = js.native
-      def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = js.native
+    object Response {
+      
+      @JSImport("frisby", "nodeFetch.Response")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def error(): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.nodeFetch.mod.Response]
+      
+      inline def redirect(url: String): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.nodeFetch.mod.Response]
+      inline def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.nodeFetch.mod.Response]
     }
     
-    @js.native
-    object default extends js.Object {
-      def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = js.native
-      def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = js.native
-      def isRedirect(code: Double): Boolean = js.native
-    }
+    inline def blobFrom(path: String): js.Promise[typings.std.Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("blobFrom")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.Blob]]
+    inline def blobFrom(path: String, `type`: String): js.Promise[typings.std.Blob] = (^.asInstanceOf[js.Dynamic].applyDynamic("blobFrom")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.Blob]]
     
+    inline def blobFromSync(path: String): typings.std.Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("blobFromSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.std.Blob]
+    inline def blobFromSync(path: String, `type`: String): typings.std.Blob = (^.asInstanceOf[js.Dynamic].applyDynamic("blobFromSync")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.std.Blob]
+    
+    inline def fileFrom(path: String): js.Promise[typings.std.File] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileFrom")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.File]]
+    inline def fileFrom(path: String, `type`: String): js.Promise[typings.std.File] = (^.asInstanceOf[js.Dynamic].applyDynamic("fileFrom")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.std.File]]
+    
+    inline def fileFromSync(path: String): typings.std.File = ^.asInstanceOf[js.Dynamic].applyDynamic("fileFromSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.std.File]
+    inline def fileFromSync(path: String, `type`: String): typings.std.File = (^.asInstanceOf[js.Dynamic].applyDynamic("fileFromSync")(path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.std.File]
+    
+    inline def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
+  inline def patch(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def post(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def put(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def removeExpectHandler(expectName: String, expectFn: js.Function1[/* repeated */ Any, Any]): FrisbySpec[FrisbyResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeExpectHandler")(expectName.asInstanceOf[js.Any], expectFn.asInstanceOf[js.Any])).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def setup(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def timeout(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  inline def use(args: Any*): FrisbySpec[FrisbyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[FrisbySpec[FrisbyResponse]]
+  
+  @JSImport("frisby", "version")
+  @js.native
+  val version: String = js.native
+  
+  trait FrisbyResponse extends StObject {
+    
+    val body: ReadableStream[Any] | Null
+    
+    val headers: Headers
+    
+    val json: Any
+    
+    val responseTime: Double
+    
+    val status: Double
+  }
+  object FrisbyResponse {
+    
+    inline def apply(headers: Headers, json: Any, responseTime: Double, status: Double): FrisbyResponse = {
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], responseTime = responseTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], body = null)
+      __obj.asInstanceOf[FrisbyResponse]
+    }
+    
+    extension [Self <: FrisbyResponse](x: Self) {
+      
+      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
+      
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      
+      inline def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
+      
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

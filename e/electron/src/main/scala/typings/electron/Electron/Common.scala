@@ -30,11 +30,15 @@ object Common {
   
   type BluetoothDevice = typings.electron.Electron.BluetoothDevice
   
+  type BluetoothPairingHandlerHandlerDetails = typings.electron.Electron.BluetoothPairingHandlerHandlerDetails
+  
   type BrowserViewConstructorOptions = typings.electron.Electron.BrowserViewConstructorOptions
   
   type BrowserWindowConstructorOptions = typings.electron.Electron.BrowserWindowConstructorOptions
   
   type CPUUsage = typings.electron.Electron.CPUUsage
+  
+  type CallbackResponse = typings.electron.Electron.CallbackResponse
   
   type Certificate = typings.electron.Electron.Certificate
   
@@ -42,15 +46,25 @@ object Common {
   
   type CertificateTrustDialogOptions = typings.electron.Electron.CertificateTrustDialogOptions
   
+  type ClearCodeCachesOptions = typings.electron.Electron.ClearCodeCachesOptions
+  
   type ClearStorageDataOptions = typings.electron.Electron.ClearStorageDataOptions
   
   type ClientRequestConstructorOptions = typings.electron.Electron.ClientRequestConstructorOptions
   
+  type Clipboard = typings.electron.Electron.Clipboard
+  
   type Config = typings.electron.Electron.Config
+  
+  type ConfigureHostResolverOptions = typings.electron.Electron.ConfigureHostResolverOptions
   
   type ConsoleMessageEvent = typings.electron.Electron.ConsoleMessageEvent
   
+  type ContextMenuEvent = typings.electron.Electron.ContextMenuEvent
+  
   type ContextMenuParams = typings.electron.Electron.ContextMenuParams
+  
+  type ContinueActivityDetails = typings.electron.Electron.ContinueActivityDetails
   
   type Cookie = typings.electron.Electron.Cookie
   
@@ -59,6 +73,8 @@ object Common {
   type CookiesSetDetails = typings.electron.Electron.CookiesSetDetails
   
   type CrashReport = typings.electron.Electron.CrashReport
+  
+  type CrashReporter = typings.electron.Electron.CrashReporter
   
   type CrashReporterStartOptions = typings.electron.Electron.CrashReporterStartOptions
   
@@ -78,15 +94,25 @@ object Common {
   
   type Details = typings.electron.Electron.Details
   
+  type DevicePermissionHandlerHandlerDetails = typings.electron.Electron.DevicePermissionHandlerHandlerDetails
+  
   type DidChangeThemeColorEvent = typings.electron.Electron.DidChangeThemeColorEvent
+  
+  type DidCreateWindowDetails = typings.electron.Electron.DidCreateWindowDetails
   
   type DidFailLoadEvent = typings.electron.Electron.DidFailLoadEvent
   
   type DidFrameFinishLoadEvent = typings.electron.Electron.DidFrameFinishLoadEvent
   
+  type DidFrameNavigateEvent = typings.electron.Electron.DidFrameNavigateEvent
+  
   type DidNavigateEvent = typings.electron.Electron.DidNavigateEvent
   
   type DidNavigateInPageEvent = typings.electron.Electron.DidNavigateInPageEvent
+  
+  type DidRedirectNavigationEvent = typings.electron.Electron.DidRedirectNavigationEvent
+  
+  type DidStartNavigationEvent = typings.electron.Electron.DidStartNavigationEvent
   
   type Display = typings.electron.Electron.Display
   
@@ -110,8 +136,6 @@ object Common {
   
   type FilePathWithHeaders = typings.electron.Electron.FilePathWithHeaders
   
-  type Filter = typings.electron.Electron.Filter
-  
   type FindInPageOptions = typings.electron.Electron.FindInPageOptions
   
   type FocusOptions = typings.electron.Electron.FocusOptions
@@ -120,13 +144,25 @@ object Common {
   
   type FoundInPageResult = typings.electron.Electron.FoundInPageResult
   
+  type FrameCreatedDetails = typings.electron.Electron.FrameCreatedDetails
+  
   type FromPartitionOptions = typings.electron.Electron.FromPartitionOptions
   
   type GPUFeatureStatus = typings.electron.Electron.GPUFeatureStatus
   
+  type HIDDevice = typings.electron.Electron.HIDDevice
+  
+  type HandlerDetails = typings.electron.Electron.HandlerDetails
+  
   type HeadersReceivedResponse = typings.electron.Electron.HeadersReceivedResponse
   
   type HeapStatistics = typings.electron.Electron.HeapStatistics
+  
+  type HidDeviceAddedDetails = typings.electron.Electron.HidDeviceAddedDetails
+  
+  type HidDeviceRemovedDetails = typings.electron.Electron.HidDeviceRemovedDetails
+  
+  type HidDeviceRevokedDetails = typings.electron.Electron.HidDeviceRevokedDetails
   
   type IOCounters = typings.electron.Electron.IOCounters
   
@@ -165,6 +201,8 @@ object Common {
   type LaunchItems = typings.electron.Electron.LaunchItems
   
   type LoadCommitEvent = typings.electron.Electron.LoadCommitEvent
+  
+  type LoadExtensionOptions = typings.electron.Electron.LoadExtensionOptions
   
   type LoadFileOptions = typings.electron.Electron.LoadFileOptions
   
@@ -212,6 +250,8 @@ object Common {
   
   type NotificationConstructorOptions = typings.electron.Electron.NotificationConstructorOptions
   
+  type NotificationResponse = typings.electron.Electron.NotificationResponse
+  
   type OnBeforeRedirectListenerDetails = typings.electron.Electron.OnBeforeRedirectListenerDetails
   
   type OnBeforeRequestListenerDetails = typings.electron.Electron.OnBeforeRequestListenerDetails
@@ -248,7 +288,11 @@ object Common {
   
   type Parameters = typings.electron.Electron.Parameters
   
+  type Params = typings.electron.Electron.Params
+  
   type Payment = typings.electron.Electron.Payment
+  
+  type PaymentDiscount = typings.electron.Electron.PaymentDiscount
   
   type PermissionCheckHandlerHandlerDetails = typings.electron.Electron.PermissionCheckHandlerHandlerDetails
   
@@ -261,8 +305,6 @@ object Common {
   type PopupOptions = typings.electron.Electron.PopupOptions
   
   type PostBody = typings.electron.Electron.PostBody
-  
-  type PostData = typings.electron.Electron.PostData
   
   type PreconnectOptions = typings.electron.Electron.PreconnectOptions
   
@@ -277,6 +319,10 @@ object Common {
   type ProcessMetric = typings.electron.Electron.ProcessMetric
   
   type Product = typings.electron.Electron.Product
+  
+  type ProductDiscount = typings.electron.Electron.ProductDiscount
+  
+  type ProductSubscriptionPeriod = typings.electron.Electron.ProductSubscriptionPeriod
   
   type ProgressBarOptions = typings.electron.Electron.ProgressBarOptions
   
@@ -294,6 +340,8 @@ object Common {
   
   type Referrer = typings.electron.Electron.Referrer
   
+  type RegistrationCompletedDetails = typings.electron.Electron.RegistrationCompletedDetails
+  
   type RelaunchOptions = typings.electron.Electron.RelaunchOptions
   
   type RenderProcessGoneDetails = typings.electron.Electron.RenderProcessGoneDetails
@@ -308,6 +356,8 @@ object Common {
   
   type Result = typings.electron.Electron.Result
   
+  type SSLConfigConfig = typings.electron.Electron.SSLConfigConfig
+  
   type SaveDialogOptions = typings.electron.Electron.SaveDialogOptions
   
   type SaveDialogReturnValue = typings.electron.Electron.SaveDialogReturnValue
@@ -318,11 +368,19 @@ object Common {
   
   type SegmentedControlSegment = typings.electron.Electron.SegmentedControlSegment
   
+  type SelectHidDeviceDetails = typings.electron.Electron.SelectHidDeviceDetails
+  
+  type SerialPort = typings.electron.Electron.SerialPort
+  
   type ServiceWorkerInfo = typings.electron.Electron.ServiceWorkerInfo
   
   type Settings = typings.electron.Electron.Settings
   
   type SharedWorkerInfo = typings.electron.Electron.SharedWorkerInfo
+  
+  type SharingItem = typings.electron.Electron.SharingItem
+  
+  type Shell = typings.electron.Electron.Shell
   
   type ShortcutDetails = typings.electron.Electron.ShortcutDetails
   
@@ -337,6 +395,10 @@ object Common {
   type Task = typings.electron.Electron.Task
   
   type ThumbarButton = typings.electron.Electron.ThumbarButton
+  
+  type TitleBarOverlay = typings.electron.Electron.TitleBarOverlay
+  
+  type TitleBarOverlayOptions = typings.electron.Electron.TitleBarOverlayOptions
   
   type TitleOptions = typings.electron.Electron.TitleOptions
   
@@ -376,8 +438,6 @@ object Common {
   
   type UpdateTargetUrlEvent = typings.electron.Electron.UpdateTargetUrlEvent
   
-  type UploadBlob = typings.electron.Electron.UploadBlob
-  
   type UploadData = typings.electron.Electron.UploadData
   
   type UploadFile = typings.electron.Electron.UploadFile
@@ -386,11 +446,15 @@ object Common {
   
   type UploadRawData = typings.electron.Electron.UploadRawData
   
+  type UserDefaultTypes = typings.electron.Electron.UserDefaultTypes
+  
   type VisibleOnAllWorkspacesOptions = typings.electron.Electron.VisibleOnAllWorkspacesOptions
   
   type WebContentsPrintOptions = typings.electron.Electron.WebContentsPrintOptions
   
   type WebPreferences = typings.electron.Electron.WebPreferences
+  
+  type WebRequestFilter = typings.electron.Electron.WebRequestFilter
   
   type WebSource = typings.electron.Electron.WebSource
   
@@ -398,6 +462,8 @@ object Common {
   
   type WillNavigateEvent = typings.electron.Electron.WillNavigateEvent
   
+  type WillResizeDetails = typings.electron.Electron.WillResizeDetails
+  
   /* was `typeof NativeImage` */
-  type nativeImage = typings.electron.Electron.Common.NativeImage_
+  type nativeImage = typings.electron.Electron.NativeImage_
 }

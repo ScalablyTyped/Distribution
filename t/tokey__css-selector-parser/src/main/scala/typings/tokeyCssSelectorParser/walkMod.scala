@@ -18,8 +18,8 @@ import typings.tokeyCssSelectorParser.astTypesMod.Selector
 import typings.tokeyCssSelectorParser.astTypesMod.SelectorNode
 import typings.tokeyCssSelectorParser.astTypesMod.Type
 import typings.tokeyCssSelectorParser.astTypesMod.Universal
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserNumbers.`0`
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserNumbers.`1`
+import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`0`
+import typings.tokeyCssSelectorParser.tokeyCssSelectorParserInts.`1`
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`class`
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`type`
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.attribute

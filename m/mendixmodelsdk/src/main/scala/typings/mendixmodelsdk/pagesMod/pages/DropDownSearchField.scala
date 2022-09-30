@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/search-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownSearchField")
 @js.native
-class DropDownSearchField protected () extends SingleSearchField {
+open class DropDownSearchField protected () extends SingleSearchField {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ class DropDownSearchField protected () extends SingleSearchField {
 }
 object DropDownSearchField {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownSearchField")
   @js.native
   val ^ : js.Any = js.native
   
@@ -61,13 +61,13 @@ object DropDownSearchField {
   inline def createIn(container: ControlBar): DropDownSearchField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownSearchField]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownSearchField.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownSearchField.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDownSearchField.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

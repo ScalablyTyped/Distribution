@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.blueprintjsCore.alignmentMod.Alignment
 import typings.blueprintjsCore.anon.Key
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`0`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`1`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`2`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`3`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`4`
+import typings.blueprintjsCore.blueprintjsCoreInts.`0`
+import typings.blueprintjsCore.blueprintjsCoreInts.`1`
+import typings.blueprintjsCore.blueprintjsCoreInts.`2`
+import typings.blueprintjsCore.blueprintjsCoreInts.`3`
+import typings.blueprintjsCore.blueprintjsCoreInts.`4`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-left`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`bottom-right`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`left-bottom`

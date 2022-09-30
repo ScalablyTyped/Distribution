@@ -10,14 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bail(): js.UndefOr[
-    /* asserts error is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bail")().asInstanceOf[js.UndefOr[
-    /* asserts error is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ]]
-  inline def bail(error: js.Error): js.UndefOr[
-    /* asserts error is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bail")(error.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
-    /* asserts error is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ]]
+  inline def bail(): /* asserts error is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("bail")().asInstanceOf[/* asserts error is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean]
+  inline def bail(error: js.Error): /* asserts error is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("bail")(error.asInstanceOf[js.Any]).asInstanceOf[/* asserts error is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean]
 }

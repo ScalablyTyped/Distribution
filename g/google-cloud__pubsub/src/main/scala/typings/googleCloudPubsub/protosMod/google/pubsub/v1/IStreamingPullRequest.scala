@@ -1,6 +1,6 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
-import typings.long.mod.Long
+import typings.long.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +15,10 @@ trait IStreamingPullRequest extends StObject {
   var clientId: js.UndefOr[String | Null] = js.undefined
   
   /** StreamingPullRequest maxOutstandingBytes */
-  var maxOutstandingBytes: js.UndefOr[Double | Long | String | Null] = js.undefined
+  var maxOutstandingBytes: js.UndefOr[Double | ^ | String | Null] = js.undefined
   
   /** StreamingPullRequest maxOutstandingMessages */
-  var maxOutstandingMessages: js.UndefOr[Double | Long | String | Null] = js.undefined
+  var maxOutstandingMessages: js.UndefOr[Double | ^ | String | Null] = js.undefined
   
   /** StreamingPullRequest modifyDeadlineAckIds */
   var modifyDeadlineAckIds: js.UndefOr[js.Array[String] | Null] = js.undefined
@@ -47,7 +47,7 @@ object IStreamingPullRequest {
     
     inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value*))
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
@@ -55,13 +55,13 @@ object IStreamingPullRequest {
     
     inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    inline def setMaxOutstandingBytes(value: Double | Long | String): Self = StObject.set(x, "maxOutstandingBytes", value.asInstanceOf[js.Any])
+    inline def setMaxOutstandingBytes(value: Double | ^ | String): Self = StObject.set(x, "maxOutstandingBytes", value.asInstanceOf[js.Any])
     
     inline def setMaxOutstandingBytesNull: Self = StObject.set(x, "maxOutstandingBytes", null)
     
     inline def setMaxOutstandingBytesUndefined: Self = StObject.set(x, "maxOutstandingBytes", js.undefined)
     
-    inline def setMaxOutstandingMessages(value: Double | Long | String): Self = StObject.set(x, "maxOutstandingMessages", value.asInstanceOf[js.Any])
+    inline def setMaxOutstandingMessages(value: Double | ^ | String): Self = StObject.set(x, "maxOutstandingMessages", value.asInstanceOf[js.Any])
     
     inline def setMaxOutstandingMessagesNull: Self = StObject.set(x, "maxOutstandingMessages", null)
     
@@ -73,7 +73,7 @@ object IStreamingPullRequest {
     
     inline def setModifyDeadlineAckIdsUndefined: Self = StObject.set(x, "modifyDeadlineAckIds", js.undefined)
     
-    inline def setModifyDeadlineAckIdsVarargs(value: String*): Self = StObject.set(x, "modifyDeadlineAckIds", js.Array(value :_*))
+    inline def setModifyDeadlineAckIdsVarargs(value: String*): Self = StObject.set(x, "modifyDeadlineAckIds", js.Array(value*))
     
     inline def setModifyDeadlineSeconds(value: js.Array[Double]): Self = StObject.set(x, "modifyDeadlineSeconds", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object IStreamingPullRequest {
     
     inline def setModifyDeadlineSecondsUndefined: Self = StObject.set(x, "modifyDeadlineSeconds", js.undefined)
     
-    inline def setModifyDeadlineSecondsVarargs(value: Double*): Self = StObject.set(x, "modifyDeadlineSeconds", js.Array(value :_*))
+    inline def setModifyDeadlineSecondsVarargs(value: Double*): Self = StObject.set(x, "modifyDeadlineSeconds", js.Array(value*))
     
     inline def setStreamAckDeadlineSeconds(value: Double): Self = StObject.set(x, "streamAckDeadlineSeconds", value.asInstanceOf[js.Any])
     

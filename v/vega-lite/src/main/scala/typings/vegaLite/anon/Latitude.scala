@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Latitude extends StObject {
   
-  val latitude: typings.vegaLite.vegaLiteNumbers.`1`
+  val latitude: typings.vegaLite.vegaLiteInts.`1`
   
-  val latitude2: typings.vegaLite.vegaLiteNumbers.`1`
+  val latitude2: typings.vegaLite.vegaLiteInts.`1`
   
-  val longitude: typings.vegaLite.vegaLiteNumbers.`1`
+  val longitude: typings.vegaLite.vegaLiteInts.`1`
   
-  val longitude2: typings.vegaLite.vegaLiteNumbers.`1`
+  val longitude2: typings.vegaLite.vegaLiteInts.`1`
 }
 object Latitude {
   
@@ -23,12 +23,12 @@ object Latitude {
   
   extension [Self <: Latitude](x: Self) {
     
-    inline def setLatitude(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    inline def setLatitude2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "latitude2", value.asInstanceOf[js.Any])
+    inline def setLatitude2(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "latitude2", value.asInstanceOf[js.Any])
     
-    inline def setLongitude(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    inline def setLongitude2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "longitude2", value.asInstanceOf[js.Any])
+    inline def setLongitude2(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "longitude2", value.asInstanceOf[js.Any])
   }
 }

@@ -2,8 +2,8 @@ package typings.tensorflowTfjs.indexWithPolyfillsMod
 
 import typings.std.HTMLSourceElement
 import typings.std.HTMLVideoElement
-import typings.tensorflowTfjs.tensorflowTfjsNumbers.`0.001`
-import typings.tensorflowTfjs.tensorflowTfjsNumbers.`0.1`
+import typings.tensorflowTfjs.tensorflowTfjsDoubles.`0.001`
+import typings.tensorflowTfjs.tensorflowTfjsDoubles.`0.1`
 import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray

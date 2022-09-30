@@ -55,7 +55,7 @@ trait InlinePictureData extends StObject {
   var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the format of the inline image. Read-only.
+    * Gets the format of the inline image.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]

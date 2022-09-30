@@ -2,6 +2,7 @@ package typings.uirouterCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.EventListener
+import typings.std.PromiseLike
 import typings.uirouterCore.commonCommonMod.IInjectable
 import typings.uirouterCore.commonCommonMod.Obj
 import typings.uirouterCore.interfaceMod.Disposable
@@ -145,7 +146,7 @@ object coreservicesMod {
     
     def when[T](): js.Promise[T] = js.native
     def when[T](value: T): js.Promise[T] = js.native
-    def when[T](value: js.Thenable[T]): js.Promise[T] = js.native
+    def when[T](value: PromiseLike[T]): js.Promise[T] = js.native
   }
   
   @js.native

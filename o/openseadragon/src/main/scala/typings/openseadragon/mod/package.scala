@@ -54,7 +54,7 @@ inline def cancelEvent(event: OSDEvent[Any]): Unit = ^.asInstanceOf[js.Dynamic].
 
 inline def capitalizeFirstLetter(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalizeFirstLetter")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def createCallback(`object`: js.Object, method: js.Function1[/* repeated */ Any, Unit], args: Any*): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallback")((List(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
+inline def createCallback(`object`: js.Object, method: js.Function1[/* repeated */ Any, Unit], args: Any*): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCallback")((scala.List(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
 
 inline def delegate(`object`: js.Object, method: js.Function1[/* repeated */ Any, Unit]): js.Function2[/* object */ Any, /* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* object */ Any, /* repeated */ Any, Unit]]
 

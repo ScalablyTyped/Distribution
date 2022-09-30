@@ -25,11 +25,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.6.0: added public
   * In version 7.11.0: introduced
   */
 @JSImport("mendixmodelsdk", "domainmodels.AttributeRef")
 @js.native
-class AttributeRef protected ()
+open class AttributeRef protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.AttributeRef {
   def this(
     model: AbstractModel,
@@ -203,7 +204,7 @@ object AttributeRef {
     * of the parent expressions.VariableRefExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.11.0 and higher
+    *  7.11.0 to 9.7.0
     */
   /* static member */
   inline def createInVariableRefExpressionUnderMember(container: VariableRefExpression): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVariableRefExpressionUnderMember")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AttributeRef]

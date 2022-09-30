@@ -1,21 +1,33 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.avatarAvatarMod.AvatarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/avatar", JSImport.Namespace)
-@js.native
-object avatarMod extends js.Object {
-  @js.native
-  class Avatar ()
-    extends Component[AvatarProps, js.Object, js.Any]
+object avatarMod {
   
+  @JSImport("react-toolbox/components/avatar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AvatarProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.avatarAvatarMod.Avatar {
+    def this(props: AvatarProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: AvatarProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/avatar", "Avatar")
+  @js.native
+  open class Avatar protected ()
+    extends typings.reactToolbox.avatarAvatarMod.Avatar {
+    def this(props: AvatarProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: AvatarProps, context: Any) = this()
+  }
 }
-

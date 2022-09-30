@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.WinJS.Binding.List
 import typings.winjs.WinJS.Binding.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +29,7 @@ trait Repeater extends StObject {
   /**
     * Gets or sets the List that provides the Repeater with items to display.
     **/
-  var data: List[Any] = js.native
+  var data: typings.winjs.WinJS.Binding.List[Any] = js.native
   
   /**
     * Raises an event of the specified type and with additional properties.

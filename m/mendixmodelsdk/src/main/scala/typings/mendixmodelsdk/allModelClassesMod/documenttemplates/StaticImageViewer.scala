@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/static-image-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticImageViewer")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticImageViewer")
 @js.native
-class StaticImageViewer protected ()
+open class StaticImageViewer protected ()
   extends typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.StaticImageViewer {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class StaticImageViewer protected ()
 }
 object StaticImageViewer {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticImageViewer")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticImageViewer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -58,13 +58,13 @@ object StaticImageViewer {
   inline def createInDropZoneUnderWidget(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DropZone): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.StaticImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.StaticImageViewer]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticImageViewer.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticImageViewer.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticImageViewer.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticImageViewer.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

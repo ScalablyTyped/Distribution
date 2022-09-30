@@ -69,9 +69,9 @@ object classTransformerMod {
     def plainToClassFromExist[T /* <: Record[String, Any] */, V /* <: js.Array[Any] */](clsObject: T, plain: V): T = js.native
     def plainToClassFromExist[T /* <: Record[String, Any] */, V /* <: js.Array[Any] */](clsObject: T, plain: V, options: ClassTransformOptions): T = js.native
     @JSName("plainToClassFromExist")
-    def plainToClassFromExist_T_RecordStringAnyV_Array[T /* <: Record[String, Any] */, V](clsObject: T, plain: V): js.Array[T] = js.native
+    def plainToClassFromExist_TV_Array[T /* <: Record[String, Any] */, V](clsObject: T, plain: V): js.Array[T] = js.native
     @JSName("plainToClassFromExist")
-    def plainToClassFromExist_T_RecordStringAnyV_Array[T /* <: Record[String, Any] */, V](clsObject: T, plain: V, options: ClassTransformOptions): js.Array[T] = js.native
+    def plainToClassFromExist_TV_Array[T /* <: Record[String, Any] */, V](clsObject: T, plain: V, options: ClassTransformOptions): js.Array[T] = js.native
     
     def plainToInstance[T /* <: Record[String, Any] */, V](cls: ClassConstructor[T], plain: V): T = js.native
     def plainToInstance[T /* <: Record[String, Any] */, V](cls: ClassConstructor[T], plain: V, options: ClassTransformOptions): T = js.native
@@ -79,9 +79,9 @@ object classTransformerMod {
       * Converts plain (literal) object to class (constructor) object. Also works with arrays.
       */
     @JSName("plainToInstance")
-    def plainToInstance_T_RecordStringAnyV_ArrayAny_Array[T /* <: Record[String, Any] */, V /* <: js.Array[Any] */](cls: ClassConstructor[T], plain: V): js.Array[T] = js.native
+    def plainToInstance_TV_Array[T /* <: Record[String, Any] */, V /* <: js.Array[Any] */](cls: ClassConstructor[T], plain: V): js.Array[T] = js.native
     @JSName("plainToInstance")
-    def plainToInstance_T_RecordStringAnyV_ArrayAny_Array[T /* <: Record[String, Any] */, V /* <: js.Array[Any] */](cls: ClassConstructor[T], plain: V, options: ClassTransformOptions): js.Array[T] = js.native
+    def plainToInstance_TV_Array[T /* <: Record[String, Any] */, V /* <: js.Array[Any] */](cls: ClassConstructor[T], plain: V, options: ClassTransformOptions): js.Array[T] = js.native
     
     /**
       * Serializes given object to a JSON string.

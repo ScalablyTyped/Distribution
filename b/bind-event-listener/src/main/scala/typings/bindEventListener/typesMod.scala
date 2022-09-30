@@ -40,7 +40,7 @@ object typesMod {
   type ExtractEventTypeFromHandler[MaybeFn /* <: Any */] = Event
   
   type GetEventType[Target /* <: EventTarget */, EventName /* <: String */] = Event | (ExtractEventTypeFromHandler[
-    /* import warning: importer.ImportType#apply Failed type conversion: Target['on${EventName}'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: Target[/ * template literal string: on${EventName} * / string] */ js.Any
   ])
   
   type Listener[Target /* <: EventTarget */, EventName /* <: String */] = (ListenerObject[GetEventType[Target, EventName]]) | (js.ThisFunction1[/* this */ Target, /* e */ GetEventType[Target, EventName], Unit])

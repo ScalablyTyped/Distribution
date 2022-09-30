@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined sharedb.sharedb/lib/sharedb.ConnectionStateEventMap & {connection error (error : sharedb.sharedb/lib/sharedb.Error): void, doc (doc : sharedb.sharedb/lib/sharedb.Doc<any>): void, error (error : sharedb.sharedb/lib/sharedb.Error): void, receive (request : sharedb.sharedb/lib/sharedb.ConnectionReceiveRequest): void, send (message : any): void, state (newState : sharedb.sharedb/lib/sharedb.ConnectionState, reason : string): void} */
+/* Inlined sharedb.sharedb/lib/sharedb.ConnectionStateEventMap & {connection error (error : sharedb.sharedb/lib/sharedb.Error): void, doc (doc : sharedb.sharedb/lib/sharedb.Doc<any>): void, error (error : sharedb.sharedb/lib/sharedb.Error): void, pong (): void, receive (request : sharedb.sharedb/lib/sharedb.ConnectionReceiveRequest): void, send (message : any): void, state (newState : sharedb.sharedb/lib/sharedb.ConnectionState, reason : string): void} */
 trait ConnectionEventMap extends StObject {
   
   def closed(reason: String): Unit
@@ -29,6 +29,8 @@ trait ConnectionEventMap extends StObject {
   
   def error(error: Error): Unit
   
+  def pong(): Unit
+  
   def receive(request: ConnectionReceiveRequest): Unit
   
   def send(message: Any): Unit
@@ -49,12 +51,13 @@ object ConnectionEventMap {
     disconnected: /* reason */ String => Unit,
     doc: Doc[Any] => Unit,
     error: Error => Unit,
+    pong: () => Unit,
     receive: ConnectionReceiveRequest => Unit,
     send: Any => Unit,
     state: (ConnectionState, String) => Unit,
     stopped: /* reason */ String => Unit
   ): ConnectionEventMap = {
-    val __obj = js.Dynamic.literal(closed = js.Any.fromFunction1(closed), connected = js.Any.fromFunction1(connected), connecting = js.Any.fromFunction1(connecting), disconnected = js.Any.fromFunction1(disconnected), doc = js.Any.fromFunction1(doc), error = js.Any.fromFunction1(error), receive = js.Any.fromFunction1(receive), send = js.Any.fromFunction1(send), state = js.Any.fromFunction2(state), stopped = js.Any.fromFunction1(stopped))
+    val __obj = js.Dynamic.literal(closed = js.Any.fromFunction1(closed), connected = js.Any.fromFunction1(connected), connecting = js.Any.fromFunction1(connecting), disconnected = js.Any.fromFunction1(disconnected), doc = js.Any.fromFunction1(doc), error = js.Any.fromFunction1(error), pong = js.Any.fromFunction0(pong), receive = js.Any.fromFunction1(receive), send = js.Any.fromFunction1(send), state = js.Any.fromFunction2(state), stopped = js.Any.fromFunction1(stopped))
     __obj.updateDynamic("connection error")(js.Any.fromFunction1(`connection error`))
     __obj.asInstanceOf[ConnectionEventMap]
   }
@@ -74,6 +77,8 @@ object ConnectionEventMap {
     inline def setDoc(value: Doc[Any] => Unit): Self = StObject.set(x, "doc", js.Any.fromFunction1(value))
     
     inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    
+    inline def setPong(value: () => Unit): Self = StObject.set(x, "pong", js.Any.fromFunction0(value))
     
     inline def setReceive(value: ConnectionReceiveRequest => Unit): Self = StObject.set(x, "receive", js.Any.fromFunction1(value))
     

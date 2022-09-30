@@ -21,7 +21,7 @@ object syncpromiseMod {
     extends StObject
        with PromiseLike[T] {
     def this(executor: js.Function2[
-            /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T] | Null], Unit], 
+            /* resolve */ js.Function1[/* value */ js.UndefOr[T | PromiseLike[T] | Null], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
@@ -45,18 +45,18 @@ object syncpromiseMod {
     /* private */ var _value: Any = js.native
     
     /** JSDoc */
-    def `catch`[TResult](): js.Thenable[T | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Thenable[T | TResult] = js.native
+    def `catch`[TResult](): PromiseLike[T | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): PromiseLike[T | TResult] = js.native
     
     /** JSDoc */
-    def `finally`[TResult](): js.Thenable[TResult] = js.native
-    def `finally`[TResult](onfinally: js.Function0[Unit]): js.Thenable[TResult] = js.native
+    def `finally`[TResult](): PromiseLike[TResult] = js.native
+    def `finally`[TResult](onfinally: js.Function0[Unit]): PromiseLike[TResult] = js.native
   }
   
-  inline def rejectedSyncPromise[T](): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")().asInstanceOf[js.Thenable[T]]
-  inline def rejectedSyncPromise[T](reason: Any): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+  inline def rejectedSyncPromise[T](): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")().asInstanceOf[PromiseLike[T]]
+  inline def rejectedSyncPromise[T](reason: Any): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rejectedSyncPromise")(reason.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[T]]
   
-  inline def resolvedSyncPromise(): js.Thenable[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")().asInstanceOf[js.Thenable[Unit]]
-  inline def resolvedSyncPromise[T](value: T): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
-  inline def resolvedSyncPromise[T](value: js.Thenable[T]): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+  inline def resolvedSyncPromise(): PromiseLike[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")().asInstanceOf[PromiseLike[Unit]]
+  inline def resolvedSyncPromise[T](value: T): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[T]]
+  inline def resolvedSyncPromise[T](value: PromiseLike[T]): PromiseLike[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvedSyncPromise")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[T]]
 }

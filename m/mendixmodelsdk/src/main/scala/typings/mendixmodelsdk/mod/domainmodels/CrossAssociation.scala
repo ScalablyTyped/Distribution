@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.CrossAssociation")
 @js.native
-class CrossAssociation protected ()
+open class CrossAssociation protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.CrossAssociation {
   def this(
     model: AbstractModel,

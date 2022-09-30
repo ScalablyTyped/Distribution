@@ -1,6 +1,6 @@
 package typings.agoraRtcSdk.mod
 
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`2`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`2`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`active-speaker`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-ecb`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-gcm2`
@@ -1812,7 +1812,7 @@ trait Client extends StObject {
     */
   def setRemoteVideoStreamType(
     stream: Stream,
-    streamType: typings.agoraRtcSdk.agoraRtcSdkNumbers.`0` | typings.agoraRtcSdk.agoraRtcSdkNumbers.`1`
+    streamType: typings.agoraRtcSdk.agoraRtcSdkInts.`0` | typings.agoraRtcSdk.agoraRtcSdkInts.`1`
   ): Unit = js.native
   
   /**
@@ -1844,7 +1844,7 @@ trait Client extends StObject {
     */
   def setStreamFallbackOption(
     stream: Stream,
-    fallbackType: typings.agoraRtcSdk.agoraRtcSdkNumbers.`0` | typings.agoraRtcSdk.agoraRtcSdkNumbers.`1` | `2`
+    fallbackType: typings.agoraRtcSdk.agoraRtcSdkInts.`0` | typings.agoraRtcSdk.agoraRtcSdkInts.`1` | `2`
   ): Unit = js.native
   
   /**

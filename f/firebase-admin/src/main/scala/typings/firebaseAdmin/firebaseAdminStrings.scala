@@ -1,9 +1,17 @@
 package typings.firebaseAdmin
 
-import typings.firebaseAdmin.authMod.auth.HashAlgorithmType
-import typings.firebaseAdmin.authMod.auth.MultiFactorConfigState
-import typings.firebaseAdmin.databaseMod.database.EventType
-import typings.firebaseAdmin.remoteConfigMod.remoteConfig.TagColor
+import typings.firebaseAdmin.apiRequestMod.HttpMethod
+import typings.firebaseAdmin.appCheckApiClientInternalMod.AppCheckErrorCode
+import typings.firebaseAdmin.authConfigMod.MultiFactorConfigState
+import typings.firebaseAdmin.errorMod.ProjectManagementErrorCode
+import typings.firebaseAdmin.eventarcUtilsMod.EventarcErrorCode
+import typings.firebaseAdmin.functionsApiClientInternalMod.FunctionsErrorCode
+import typings.firebaseAdmin.machineLearningUtilsMod.MachineLearningErrorCode
+import typings.firebaseAdmin.remoteConfigApiClientInternalMod.RemoteConfigErrorCode
+import typings.firebaseAdmin.remoteConfigApiMod.ParameterValueType
+import typings.firebaseAdmin.remoteConfigApiMod.TagColor
+import typings.firebaseAdmin.securityRulesInternalMod.SecurityRulesErrorCode
+import typings.firebaseAdmin.userImportBuilderMod.HashAlgorithmType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +21,10 @@ object firebaseAdminStrings {
   @js.native
   sealed trait default extends StObject
   inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait `1Dot0` extends StObject
+  inline def `1Dot0`: `1Dot0` = "1.0".asInstanceOf[`1Dot0`]
   
   @js.native
   sealed trait ADMIN_SDK_NODE extends StObject
@@ -29,6 +41,12 @@ object firebaseAdminStrings {
     extends StObject
        with TagColor
   inline def BLUE: BLUE = "BLUE".asInstanceOf[BLUE]
+  
+  @js.native
+  sealed trait BOOLEAN
+    extends StObject
+       with ParameterValueType
+  inline def BOOLEAN: BOOLEAN = "BOOLEAN".asInstanceOf[BOOLEAN]
   
   @js.native
   sealed trait BROWN
@@ -53,6 +71,12 @@ object firebaseAdminStrings {
   inline def DEEP_ORANGE: DEEP_ORANGE = "DEEP_ORANGE".asInstanceOf[DEEP_ORANGE]
   
   @js.native
+  sealed trait DELETE
+    extends StObject
+       with HttpMethod
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @js.native
   sealed trait DISABLED
     extends StObject
        with MultiFactorConfigState
@@ -69,10 +93,22 @@ object firebaseAdminStrings {
   inline def FORCED_UPDATE: FORCED_UPDATE = "FORCED_UPDATE".asInstanceOf[FORCED_UPDATE]
   
   @js.native
+  sealed trait GET
+    extends StObject
+       with HttpMethod
+  inline def GET: GET = "GET".asInstanceOf[GET]
+  
+  @js.native
   sealed trait GREEN
     extends StObject
        with TagColor
   inline def GREEN: GREEN = "GREEN".asInstanceOf[GREEN]
+  
+  @js.native
+  sealed trait HEAD
+    extends StObject
+       with HttpMethod
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
   sealed trait HMAC_MD5
@@ -109,6 +145,12 @@ object firebaseAdminStrings {
   inline def INDIGO: INDIGO = "INDIGO".asInstanceOf[INDIGO]
   
   @js.native
+  sealed trait JSON
+    extends StObject
+       with ParameterValueType
+  inline def JSON: JSON = "JSON".asInstanceOf[JSON]
+  
+  @js.native
   sealed trait LIME
     extends StObject
        with TagColor
@@ -121,10 +163,22 @@ object firebaseAdminStrings {
   inline def MD5: MD5 = "MD5".asInstanceOf[MD5]
   
   @js.native
+  sealed trait NUMBER
+    extends StObject
+       with ParameterValueType
+  inline def NUMBER: NUMBER = "NUMBER".asInstanceOf[NUMBER]
+  
+  @js.native
   sealed trait ORANGE
     extends StObject
        with TagColor
   inline def ORANGE: ORANGE = "ORANGE".asInstanceOf[ORANGE]
+  
+  @js.native
+  sealed trait PATCH
+    extends StObject
+       with HttpMethod
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
   sealed trait PBKDF2_SHA256
@@ -139,16 +193,32 @@ object firebaseAdminStrings {
   inline def PBKDF_SHA1: PBKDF_SHA1 = "PBKDF_SHA1".asInstanceOf[PBKDF_SHA1]
   
   @js.native
+  sealed trait PHONE_SMS extends StObject
+  inline def PHONE_SMS: PHONE_SMS = "PHONE_SMS".asInstanceOf[PHONE_SMS]
+  
+  @js.native
   sealed trait PINK
     extends StObject
        with TagColor
   inline def PINK: PINK = "PINK".asInstanceOf[PINK]
   
   @js.native
+  sealed trait POST
+    extends StObject
+       with HttpMethod
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
   sealed trait PURPLE
     extends StObject
        with TagColor
   inline def PURPLE: PURPLE = "PURPLE".asInstanceOf[PURPLE]
+  
+  @js.native
+  sealed trait PUT
+    extends StObject
+       with HttpMethod
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
   sealed trait REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED extends StObject
@@ -197,42 +267,126 @@ object firebaseAdminStrings {
   inline def STANDARD_SCRYPT: STANDARD_SCRYPT = "STANDARD_SCRYPT".asInstanceOf[STANDARD_SCRYPT]
   
   @js.native
+  sealed trait STRING
+    extends StObject
+       with ParameterValueType
+  inline def STRING: STRING = "STRING".asInstanceOf[STRING]
+  
+  @js.native
   sealed trait TEAL
     extends StObject
        with TagColor
   inline def TEAL: TEAL = "TEAL".asInstanceOf[TEAL]
   
   @js.native
+  sealed trait aborted
+    extends StObject
+       with AppCheckErrorCode
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with RemoteConfigErrorCode
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
+  
+  @js.native
+  sealed trait `already-exists`
+    extends StObject
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with RemoteConfigErrorCode
+       with SecurityRulesErrorCode
+  inline def `already-exists`: `already-exists` = "already-exists".asInstanceOf[`already-exists`]
+  
+  @js.native
+  sealed trait `app-check-token-expired`
+    extends StObject
+       with AppCheckErrorCode
+  inline def `app-check-token-expired`: `app-check-token-expired` = "app-check-token-expired".asInstanceOf[`app-check-token-expired`]
+  
+  @js.native
+  sealed trait `authentication-error`
+    extends StObject
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with SecurityRulesErrorCode
+  inline def `authentication-error`: `authentication-error` = "authentication-error".asInstanceOf[`authentication-error`]
+  
+  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait child_added
+  sealed trait cancelled
     extends StObject
-       with EventType
-  inline def child_added: child_added = "child_added".asInstanceOf[child_added]
+       with MachineLearningErrorCode
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
-  sealed trait child_changed
+  sealed trait `data-loss`
     extends StObject
-       with EventType
-  inline def child_changed: child_changed = "child_changed".asInstanceOf[child_changed]
+       with MachineLearningErrorCode
+  inline def `data-loss`: `data-loss` = "data-loss".asInstanceOf[`data-loss`]
   
   @js.native
-  sealed trait child_moved
+  sealed trait `deadline-exceeded`
     extends StObject
-       with EventType
-  inline def child_moved: child_moved = "child_moved".asInstanceOf[child_moved]
+       with MachineLearningErrorCode
+  inline def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
   
   @js.native
-  sealed trait child_removed
+  sealed trait `failed-precondition`
     extends StObject
-       with EventType
-  inline def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with RemoteConfigErrorCode
+  inline def `failed-precondition`: `failed-precondition` = "failed-precondition".asInstanceOf[`failed-precondition`]
   
   @js.native
   sealed trait high extends StObject
   inline def high: high = "high".asInstanceOf[high]
+  
+  @js.native
+  sealed trait `internal-error`
+    extends StObject
+       with AppCheckErrorCode
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with RemoteConfigErrorCode
+       with SecurityRulesErrorCode
+  inline def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
+  
+  @js.native
+  sealed trait `invalid-argument`
+    extends StObject
+       with AppCheckErrorCode
+       with EventarcErrorCode
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with RemoteConfigErrorCode
+       with SecurityRulesErrorCode
+  inline def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
+  
+  @js.native
+  sealed trait `invalid-credential`
+    extends StObject
+       with AppCheckErrorCode
+       with FunctionsErrorCode
+  inline def `invalid-credential`: `invalid-credential` = "invalid-credential".asInstanceOf[`invalid-credential`]
+  
+  @js.native
+  sealed trait `invalid-project-id`
+    extends StObject
+       with ProjectManagementErrorCode
+  inline def `invalid-project-id`: `invalid-project-id` = "invalid-project-id".asInstanceOf[`invalid-project-id`]
+  
+  @js.native
+  sealed trait `invalid-server-response`
+    extends StObject
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with SecurityRulesErrorCode
+  inline def `invalid-server-response`: `invalid-server-response` = "invalid-server-response".asInstanceOf[`invalid-server-response`]
   
   @js.native
   sealed trait low extends StObject
@@ -255,8 +409,35 @@ object firebaseAdminStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait `not-found`
+    extends StObject
+       with AppCheckErrorCode
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with RemoteConfigErrorCode
+       with SecurityRulesErrorCode
+  inline def `not-found`: `not-found` = "not-found".asInstanceOf[`not-found`]
+  
+  @js.native
   sealed trait oidc extends StObject
   inline def oidc: oidc = "oidc".asInstanceOf[oidc]
+  
+  @js.native
+  sealed trait `out-of-range`
+    extends StObject
+       with MachineLearningErrorCode
+       with RemoteConfigErrorCode
+  inline def `out-of-range`: `out-of-range` = "out-of-range".asInstanceOf[`out-of-range`]
+  
+  @js.native
+  sealed trait `permission-denied`
+    extends StObject
+       with AppCheckErrorCode
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with RemoteConfigErrorCode
+  inline def `permission-denied`: `permission-denied` = "permission-denied".asInstanceOf[`permission-denied`]
   
   @js.native
   sealed trait phone extends StObject
@@ -271,6 +452,14 @@ object firebaseAdminStrings {
   inline def public: public = "public".asInstanceOf[public]
   
   @js.native
+  sealed trait `resource-exhausted`
+    extends StObject
+       with MachineLearningErrorCode
+       with RemoteConfigErrorCode
+       with SecurityRulesErrorCode
+  inline def `resource-exhausted`: `resource-exhausted` = "resource-exhausted".asInstanceOf[`resource-exhausted`]
+  
+  @js.native
   sealed trait rtl extends StObject
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
@@ -283,6 +472,14 @@ object firebaseAdminStrings {
   inline def secret: secret = "secret".asInstanceOf[secret]
   
   @js.native
+  sealed trait `service-unavailable`
+    extends StObject
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with SecurityRulesErrorCode
+  inline def `service-unavailable`: `service-unavailable` = "service-unavailable".asInstanceOf[`service-unavailable`]
+  
+  @js.native
   sealed trait sha1_ extends StObject
   inline def sha1_ : sha1_ = "sha1".asInstanceOf[sha1_]
   
@@ -291,8 +488,23 @@ object firebaseAdminStrings {
   inline def sha256_ : sha256_ = "sha256".asInstanceOf[sha256_]
   
   @js.native
-  sealed trait value
+  sealed trait unauthenticated
     extends StObject
-       with EventType
-  inline def value: value = "value".asInstanceOf[value]
+       with AppCheckErrorCode
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with RemoteConfigErrorCode
+  inline def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
+  
+  @js.native
+  sealed trait `unknown-error`
+    extends StObject
+       with AppCheckErrorCode
+       with EventarcErrorCode
+       with FunctionsErrorCode
+       with MachineLearningErrorCode
+       with ProjectManagementErrorCode
+       with RemoteConfigErrorCode
+       with SecurityRulesErrorCode
+  inline def `unknown-error`: `unknown-error` = "unknown-error".asInstanceOf[`unknown-error`]
 }

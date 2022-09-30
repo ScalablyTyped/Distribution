@@ -1,10 +1,10 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`-1`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`10001`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`10002`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`10003`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`10004`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`-1`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`10001`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`10002`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`10003`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`10004`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -101,7 +101,7 @@ object tabPanelMod {
         
         inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
         
-        inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+        inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
       }
     }
     
@@ -111,7 +111,7 @@ object tabPanelMod {
       * Other fields may be added to the object and accessed from the child
       * function if desired.
       */
-    /* k */ StringDictionary[js.Any] {
+    /* k */ StringDictionary[Any] {
       
       /**
         * Defines the class to put on the tab.

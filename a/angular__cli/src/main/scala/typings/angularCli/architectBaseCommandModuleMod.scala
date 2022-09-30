@@ -1,6 +1,6 @@
 package typings.angularCli
 
-import typings.angularCli.angularCliNumbers.`1`
+import typings.angularCli.angularCliInts.`1`
 import typings.angularCli.commandModuleMod.CommandContext
 import typings.angularCli.commandModuleMod.CommandModule
 import typings.angularCli.commandModuleMod.OtherOptions

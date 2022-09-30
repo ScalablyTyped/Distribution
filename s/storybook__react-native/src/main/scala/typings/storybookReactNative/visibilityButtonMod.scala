@@ -9,7 +9,7 @@ object visibilityButtonMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/navigation/visibility-button", JSImport.Default)
   @js.native
-  class default () extends VisibilityButton
+  open class default () extends VisibilityButton
   
   trait Props extends StObject {
     
@@ -30,5 +30,5 @@ object visibilityButtonMod {
   
   @js.native
   trait VisibilityButton
-    extends PureComponent[Props, js.Object, js.Any]
+    extends PureComponent[Props, js.Object, Any]
 }

@@ -2,9 +2,9 @@ package typings.uifabricMergeStyles
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.uifabricMergeStyles.istyleMod.IStyle
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`0`
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`1`
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`2`
+import typings.uifabricMergeStyles.uifabricMergeStylesInts.`0`
+import typings.uifabricMergeStyles.uifabricMergeStylesInts.`1`
+import typings.uifabricMergeStyles.uifabricMergeStylesInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +13,9 @@ object stylesheetMod {
   
   /* Inlined {  none :0,   insertNode :1,   appendChild :2}[keyof {  none :0,   insertNode :1,   appendChild :2}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`0`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`1`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`2`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`0`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`1`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`2`
   */
   trait InjectionMode extends StObject
   object InjectionMode {

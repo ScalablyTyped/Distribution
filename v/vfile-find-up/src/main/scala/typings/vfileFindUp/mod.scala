@@ -1,7 +1,7 @@
 package typings.vfileFindUp
 
-import typings.vfileFindUp.vfileFindUpNumbers.`1`
-import typings.vfileFindUp.vfileFindUpNumbers.`4`
+import typings.vfileFindUp.vfileFindUpInts.`1`
+import typings.vfileFindUp.vfileFindUpInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

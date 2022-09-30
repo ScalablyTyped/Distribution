@@ -1,19 +1,19 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x11D0`
-import typings.webcl.webclNumbers.`0x11D1`
-import typings.webcl.webclNumbers.`0x11D3`
-import typings.webcl.webclNumbers.`0x11D4`
+import typings.webcl.webclInts.`0x11D0`
+import typings.webcl.webclInts.`0x11D1`
+import typings.webcl.webclInts.`0x11D3`
+import typings.webcl.webclInts.`0x11D4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_event_info  */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x11D0`
-  - typings.webcl.webclNumbers.`0x11D1`
-  - typings.webcl.webclNumbers.`0x11D3`
-  - typings.webcl.webclNumbers.`0x11D4`
+  - typings.webcl.webclInts.`0x11D0`
+  - typings.webcl.webclInts.`0x11D1`
+  - typings.webcl.webclInts.`0x11D3`
+  - typings.webcl.webclInts.`0x11D4`
 */
 trait EventInfo extends StObject
 object EventInfo {

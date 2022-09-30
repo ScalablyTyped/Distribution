@@ -1,6 +1,6 @@
 package typings.progressbarJs
 
-import typings.progressbarJs.progressbarJsNumbers.`2`
+import typings.progressbarJs.progressbarJsInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

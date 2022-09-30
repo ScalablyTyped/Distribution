@@ -277,10 +277,10 @@ object rayMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _cachedRayForTransform: Ray = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalMultiPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): Nullable[js.Array[PickingInfo]] = js.native
       def _internalMultiPick(
         rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
@@ -297,7 +297,7 @@ object rayMod {
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[js.Array[PickingInfo]] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalPick(rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray]): Nullable[PickingInfo] = js.native
       def _internalPick(
         rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
@@ -394,7 +394,7 @@ object rayMod {
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
         rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, Ray],
@@ -541,10 +541,10 @@ object rayMod {
         skipBoundingInfo: Boolean
       ): Nullable[PickingInfo] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _pickWithRayInverseMatrix: Matrix = js.native
       
-      /** @hidden */
+      /** @internal */
       var _tempPickingRay: Nullable[Ray] = js.native
     }
   }

@@ -15,5 +15,5 @@ object Defer {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def all(args: Any, obj: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(List(args.asInstanceOf[js.Any]).`++`(obj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def all(args: Any, obj: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(scala.List(args.asInstanceOf[js.Any]).`++`(obj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

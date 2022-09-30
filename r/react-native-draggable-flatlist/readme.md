@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-draggable-flatlist
 
-Typings are for version 1.1
+Typings are for version 3.1.2
 
 ## Library description:
 A drag-and-drop-enabled FlatList component for React Native
@@ -10,10 +10,10 @@ A drag-and-drop-enabled FlatList component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-draggable-flatlist |
 | Keywords           | react-native, sortable, draggable, flatlist, drag, drop, sort, list |
-| # releases         | 34 |
-| # dependents       | 9 |
-| # downloads        | 588030 |
-| # stars            | 0 |
+| # releases         | 48 |
+| # dependents       | 0.0 |
+| # downloads        | 151338.66666666666 |
+| # stars            | 1338.0 |
 
 ## Links
 - [Homepage](https://github.com/computerjazz/react-native-draggable-flatlist#readme)
@@ -24,7 +24,7 @@ A drag-and-drop-enabled FlatList component for React Native
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

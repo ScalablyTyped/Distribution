@@ -12,11 +12,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.0.1: deleted
   * In version 8.12.0: introduced
   */
 @JSImport("mendixmodelsdk", "domainmodels.EntityCapabilities")
 @js.native
-class EntityCapabilities protected ()
+open class EntityCapabilities protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.EntityCapabilities {
   def this(
     model: AbstractModel,
@@ -47,7 +48,7 @@ object EntityCapabilities {
     * of the parent Entity element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.12.0 and higher
+    *  8.12.0 to 9.0.0
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityCapabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityCapabilities]

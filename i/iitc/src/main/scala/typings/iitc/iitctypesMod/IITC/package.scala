@@ -18,4 +18,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iitc.iitcStrings.LINK_DEFENSE_BOOST
   - java.lang.String
 */
-type ModStats = typings.iitc.iitctypesMod.IITC._ModStats | java.lang.String
+type ModStats = _ModStats | String

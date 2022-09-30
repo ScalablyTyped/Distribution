@@ -6,16 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/call-microflow relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 @js.native
 trait ICallMicroflowTask
   extends StObject
-     with IWorkflowTask {
+     with IConditionOutcomeActivity {
   
   val microflow: IMicroflow | Null = js.native
   

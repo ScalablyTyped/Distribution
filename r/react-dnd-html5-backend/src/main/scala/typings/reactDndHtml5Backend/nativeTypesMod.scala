@@ -6,15 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nativeTypesMod {
   
-  @JSImport("react-dnd-html5-backend/lib/NativeTypes", "FILE")
+  @JSImport("react-dnd-html5-backend/dist/NativeTypes", "FILE")
   @js.native
   val FILE: /* "__NATIVE_FILE__" */ String = js.native
   
-  @JSImport("react-dnd-html5-backend/lib/NativeTypes", "TEXT")
+  @JSImport("react-dnd-html5-backend/dist/NativeTypes", "HTML")
+  @js.native
+  val HTML: /* "__NATIVE_HTML__" */ String = js.native
+  
+  @JSImport("react-dnd-html5-backend/dist/NativeTypes", "TEXT")
   @js.native
   val TEXT: /* "__NATIVE_TEXT__" */ String = js.native
   
-  @JSImport("react-dnd-html5-backend/lib/NativeTypes", "URL")
+  @JSImport("react-dnd-html5-backend/dist/NativeTypes", "URL")
   @js.native
   val URL: /* "__NATIVE_URL__" */ String = js.native
 }

@@ -1,6 +1,6 @@
 package typings.jestWatcher
 
-import typings.jestWatcher.jestHooksMod.AvailableHooks
+import typings.jestWatcher.mod.AvailableHooks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

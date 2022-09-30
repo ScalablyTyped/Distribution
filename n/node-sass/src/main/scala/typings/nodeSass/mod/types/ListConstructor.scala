@@ -9,9 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ListConstructor
   extends StObject
-     with Instantiable1[/* length */ Double, List]
-     with Instantiable2[/* length */ Double, /* commaSeparator */ scala.Boolean, List] {
+     with Instantiable1[/* length */ Double, typings.nodeSass.mod.types.List]
+     with Instantiable2[
+      /* length */ Double, 
+      /* commaSeparator */ scala.Boolean, 
+      typings.nodeSass.mod.types.List
+    ] {
   
-  def apply(length: Double): List = js.native
-  def apply(length: Double, commaSeparator: scala.Boolean): List = js.native
+  def apply(length: Double): typings.nodeSass.mod.types.List = js.native
+  def apply(length: Double, commaSeparator: scala.Boolean): typings.nodeSass.mod.types.List = js.native
 }

@@ -100,6 +100,8 @@ type LaunchProfileStateList = js.Array[LaunchProfileState]
   - typings.awsSdk.awsSdkStrings.ENCRYPTION_KEY_ACCESS_DENIED
   - typings.awsSdk.awsSdkStrings.ENCRYPTION_KEY_NOT_FOUND
   - typings.awsSdk.awsSdkStrings.INVALID_SUBNETS_PROVIDED
+  - typings.awsSdk.awsSdkStrings.INVALID_INSTANCE_TYPES_PROVIDED
+  - typings.awsSdk.awsSdkStrings.INVALID_SUBNETS_COMBINATION
   - java.lang.String
 */
 type LaunchProfileStatusCode = _LaunchProfileStatusCode | java.lang.String
@@ -224,6 +226,13 @@ type StreamingImageStatusCode = _StreamingImageStatusCode | java.lang.String
   - typings.awsSdk.awsSdkStrings.g4dnDot8xlarge
   - typings.awsSdk.awsSdkStrings.g4dnDot12xlarge
   - typings.awsSdk.awsSdkStrings.g4dnDot16xlarge
+  - typings.awsSdk.awsSdkStrings.g3Dot4xlarge
+  - typings.awsSdk.awsSdkStrings.g3sDotxlarge
+  - typings.awsSdk.awsSdkStrings.g5Dotxlarge
+  - typings.awsSdk.awsSdkStrings.g5Dot2xlarge
+  - typings.awsSdk.awsSdkStrings.g5Dot4xlarge
+  - typings.awsSdk.awsSdkStrings.g5Dot8xlarge
+  - typings.awsSdk.awsSdkStrings.g5Dot16xlarge
   - java.lang.String
 */
 type StreamingInstanceType = _StreamingInstanceType | java.lang.String

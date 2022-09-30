@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ofTypeDeepMod {
   
-  @JSImport("ow/dist/source/utils/of-type-deep", JSImport.Namespace)
+  @JSImport("ow/dist/utils/of-type-deep", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(`object`: js.Any, predicate: Predicate[js.Any]): String | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[String | Boolean]
+  /**
+  Test all the values in the object against a provided predicate.
+  @hidden
+  @param predicate - Predicate to test every value in the given object against.
+  */
+  inline def default(`object`: Any, predicate: Predicate[Any]): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
 }

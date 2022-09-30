@@ -11,5 +11,5 @@ object scriptsExecuteScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(_underscore: HTMLElement, script: String, dataProperty: String, dataFlag: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any], script.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any], dataFlag.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(_underscore: HTMLElement, script: String, dataProperty: String, dataFlag: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(_underscore.asInstanceOf[js.Any], script.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any], dataFlag.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 }

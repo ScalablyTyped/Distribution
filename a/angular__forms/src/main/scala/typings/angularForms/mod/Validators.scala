@@ -1,13 +1,12 @@
 package typings.angularForms.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "Validators")
 @js.native
-class Validators () extends StObject
+open class Validators () extends StObject
 /* static members */
 object Validators {
   
@@ -48,7 +47,7 @@ object Validators {
     *
     * Tests the value using a [regular
     * expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-    * pattern suitable for common usecases. The pattern is based on the definition of a valid email
+    * pattern suitable for common use cases. The pattern is based on the definition of a valid email
     * address in the [WHATWG HTML
     * specification](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address) with
     * some enhancements to incorporate more RFC rules (such as rules related to domain names and the
@@ -78,12 +77,11 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  inline def email(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def email(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
     * Validator that requires the control's value to be less than or equal to the provided number.
-    * The validator exists only as a function and not as a directive.
     *
     * @usageNotes
     *
@@ -135,7 +133,6 @@ object Validators {
   /**
     * @description
     * Validator that requires the control's value to be greater than or equal to the provided number.
-    * The validator exists only as a function and not as a directive.
     *
     * @usageNotes
     *
@@ -180,7 +177,7 @@ object Validators {
     * ```
     *
     * @returns A validator function that returns an error map with the
-    * `minlength` if the validation check fails, otherwise `null`.
+    * `minlength` property if the validation check fails, otherwise `null`.
     *
     * @see `updateValueAndValidity()`
     *
@@ -194,7 +191,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  inline def nullValidator(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullValidator")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def nullValidator(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullValidator")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -246,7 +243,7 @@ object Validators {
     *
     */
   inline def pattern(pattern: String): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
-  inline def pattern(pattern: RegExp): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def pattern(pattern: js.RegExp): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -268,7 +265,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  inline def required(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def required(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -280,7 +277,7 @@ object Validators {
     * ### Validate that the field value is true
     *
     * ```typescript
-    * const control = new FormControl('', Validators.requiredTrue);
+    * const control = new FormControl('some value', Validators.requiredTrue);
     *
     * console.log(control.errors); // {required: true}
     * ```
@@ -291,5 +288,5 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  inline def requiredTrue(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredTrue")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def requiredTrue(control: AbstractControl[Any, Any]): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredTrue")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
 }

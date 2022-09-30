@@ -16,7 +16,7 @@ object mod {
   inline def default(key: String, replacer: Replacer): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
   inline def default(key: String, replacer: Replacer, reviver: Reviver): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
   
-  type Replacer = js.Function2[/* key */ String, /* value */ js.Any, js.Any]
+  type Replacer = js.Function2[/* key */ String, /* value */ Any, Any]
   
   type Reviver = Replacer
 }

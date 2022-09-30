@@ -62,7 +62,7 @@ trait ServiceTemplateVersion extends StObject {
   var statusMessage: js.UndefOr[StatusMessage] = js.undefined
   
   /**
-    * An array of supported component sources. Components with supported sources can be attached to service instances based on this service template version. For more information about components, see Proton components in the Proton Administrator Guide.
+    * An array of supported component sources. Components with supported sources can be attached to service instances based on this service template version. For more information about components, see Proton components in the Proton User Guide.
     */
   var supportedComponentSources: js.UndefOr[ServiceTemplateSupportedComponentSourceInputList] = js.undefined
   

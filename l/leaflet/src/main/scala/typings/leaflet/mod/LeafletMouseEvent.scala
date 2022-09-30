@@ -23,15 +23,16 @@ object LeafletMouseEvent {
   inline def apply(
     containerPoint: Point_,
     latlng: LatLng_,
-    layer: js.Any,
+    layer: Any,
     layerPoint: Point_,
     originalEvent: MouseEvent,
-    propagatedFrom: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
+    popup: Any,
+    propagatedFrom: Any,
+    sourceTarget: Any,
+    target: Any,
     `type`: String
   ): LeafletMouseEvent = {
-    val __obj = js.Dynamic.literal(containerPoint = containerPoint.asInstanceOf[js.Any], latlng = latlng.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], layerPoint = layerPoint.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(containerPoint = containerPoint.asInstanceOf[js.Any], latlng = latlng.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], layerPoint = layerPoint.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafletMouseEvent]
   }

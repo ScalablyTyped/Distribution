@@ -1,9 +1,9 @@
 package typings.formatjsEcma402Abstract
 
 import typings.formatjsEcma402Abstract.anon.Currency
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`-1`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`0`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`-1`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`1`
 import typings.formatjsEcma402Abstract.numberMod.NumberFormatLocaleInternalData
 import typings.formatjsEcma402Abstract.numberMod.NumberFormatPart
 import typings.std.Intl.PluralRules

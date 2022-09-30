@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.VoidType")
 @js.native
-class VoidType protected ()
+open class VoidType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.VoidType {
   def this(
     model: AbstractModel,

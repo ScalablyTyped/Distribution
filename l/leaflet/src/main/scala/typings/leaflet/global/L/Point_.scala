@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Point")
 @js.native
-class Point_ protected ()
+open class Point_ protected ()
   extends typings.leaflet.mod.Point_ {
   def this(x: Double, y: Double) = this()
   def this(x: Double, y: Double, round: Boolean) = this()

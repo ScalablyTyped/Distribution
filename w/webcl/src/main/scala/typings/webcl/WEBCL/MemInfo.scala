@@ -1,23 +1,23 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1100`
-import typings.webcl.webclNumbers.`0x1101`
-import typings.webcl.webclNumbers.`0x1102`
-import typings.webcl.webclNumbers.`0x1106`
-import typings.webcl.webclNumbers.`0x1107`
-import typings.webcl.webclNumbers.`0x1108`
+import typings.webcl.webclInts.`0x1100`
+import typings.webcl.webclInts.`0x1101`
+import typings.webcl.webclInts.`0x1102`
+import typings.webcl.webclInts.`0x1106`
+import typings.webcl.webclInts.`0x1107`
+import typings.webcl.webclInts.`0x1108`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_meinfo */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1100`
-  - typings.webcl.webclNumbers.`0x1101`
-  - typings.webcl.webclNumbers.`0x1102`
-  - typings.webcl.webclNumbers.`0x1106`
-  - typings.webcl.webclNumbers.`0x1107`
-  - typings.webcl.webclNumbers.`0x1108`
+  - typings.webcl.webclInts.`0x1100`
+  - typings.webcl.webclInts.`0x1101`
+  - typings.webcl.webclInts.`0x1102`
+  - typings.webcl.webclInts.`0x1106`
+  - typings.webcl.webclInts.`0x1107`
+  - typings.webcl.webclInts.`0x1108`
 */
 trait MemInfo extends StObject
 object MemInfo {

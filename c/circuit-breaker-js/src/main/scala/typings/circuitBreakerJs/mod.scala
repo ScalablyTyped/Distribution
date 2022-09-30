@@ -1,8 +1,8 @@
 package typings.circuitBreakerJs
 
-import typings.circuitBreakerJs.circuitBreakerJsNumbers.`0`
-import typings.circuitBreakerJs.circuitBreakerJsNumbers.`1`
-import typings.circuitBreakerJs.circuitBreakerJsNumbers.`2`
+import typings.circuitBreakerJs.circuitBreakerJsInts.`0`
+import typings.circuitBreakerJs.circuitBreakerJsInts.`1`
+import typings.circuitBreakerJs.circuitBreakerJsInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

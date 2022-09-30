@@ -1,11 +1,11 @@
 package typings.nbind
 
-import typings.nbind.nbindNumbers.`0`
-import typings.nbind.nbindNumbers.`1`
-import typings.nbind.nbindNumbers.`2`
-import typings.nbind.nbindNumbers.`3`
-import typings.nbind.nbindNumbers.`4`
-import typings.nbind.nbindNumbers.`5`
+import typings.nbind.nbindInts.`0`
+import typings.nbind.nbindInts.`1`
+import typings.nbind.nbindInts.`2`
+import typings.nbind.nbindInts.`3`
+import typings.nbind.nbindInts.`4`
+import typings.nbind.nbindInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +19,12 @@ object commonMod {
   inline def removeAccessorPrefix(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAccessorPrefix")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nbind.nbindNumbers.`0`
-    - typings.nbind.nbindNumbers.`1`
-    - typings.nbind.nbindNumbers.`2`
-    - typings.nbind.nbindNumbers.`3`
-    - typings.nbind.nbindNumbers.`4`
-    - typings.nbind.nbindNumbers.`5`
+    - typings.nbind.nbindInts.`0`
+    - typings.nbind.nbindInts.`1`
+    - typings.nbind.nbindInts.`2`
+    - typings.nbind.nbindInts.`3`
+    - typings.nbind.nbindInts.`4`
+    - typings.nbind.nbindInts.`5`
   */
   trait SignatureType extends StObject
   object SignatureType {

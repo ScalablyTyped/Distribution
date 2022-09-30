@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-native-windows
 
-Typings are for version 0.63.10
+Typings are for version 0.70.2
 
 ## Library description:
-ReactNative Windows implementation using react-native's c++ ReactCommon bridge
+React Native for Windows
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-windows |
 | Keywords           | - |
-| # releases         | 966 |
-| # dependents       | 28 |
-| # downloads        | 2081221 |
-| # stars            | 3 |
+| # releases         | 608 |
+| # dependents       | 0.0 |
+| # downloads        | 118591.66666666667 |
+| # stars            | 14977.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/react-native-windows#readme)

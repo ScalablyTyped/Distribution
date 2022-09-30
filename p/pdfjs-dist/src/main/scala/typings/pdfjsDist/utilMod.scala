@@ -1,8 +1,8 @@
 package typings.pdfjsDist
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pdfjsDist.pdfjsDistNumbers.`0.35`
-import typings.pdfjsDist.pdfjsDistNumbers.`1.35`
+import typings.pdfjsDist.pdfjsDistDoubles.`0.35`
+import typings.pdfjsDist.pdfjsDistDoubles.`1.35`
 import typings.pdfjsDist.pdfjsDistStrings.pdfjs_internal_editor_
 import typings.std.URL
 import org.scalablytyped.runtime.StObject

@@ -1,6 +1,7 @@
 package typings.fullcalendarCore.mod.BASE_OPTION_REFINERS
 
 import typings.fullcalendarCore.mod.BASE_OPTION_REFINERS.^
+import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /* standard es5 */
 open class eventLongPressDelay ()
-  extends typings.fullcalendarCommon.mod.BASE_OPTION_REFINERS.eventLongPressDelay {
+  extends StObject
+     with Number {
   def this(value: Any) = this()
 }
 object eventLongPressDelay {

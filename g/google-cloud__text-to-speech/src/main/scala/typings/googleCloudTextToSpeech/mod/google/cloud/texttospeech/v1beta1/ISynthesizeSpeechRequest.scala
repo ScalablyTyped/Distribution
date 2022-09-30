@@ -41,7 +41,7 @@ object ISynthesizeSpeechRequest {
     
     inline def setEnableTimePointingUndefined: Self = StObject.set(x, "enableTimePointing", js.undefined)
     
-    inline def setEnableTimePointingVarargs(value: TimepointType*): Self = StObject.set(x, "enableTimePointing", js.Array(value :_*))
+    inline def setEnableTimePointingVarargs(value: TimepointType*): Self = StObject.set(x, "enableTimePointing", js.Array(value*))
     
     inline def setInput(value: ISynthesisInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

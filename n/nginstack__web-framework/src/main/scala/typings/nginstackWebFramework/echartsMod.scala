@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object echartsMod {
   
-  inline def apply(options: Unit, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def apply(options: DevicePixelRatio, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def apply(options: Unit, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def apply(options: DevicePixelRatio, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].apply(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("@nginstack/web-framework/lib/chart/ECharts", JSImport.Namespace)
   @js.native

@@ -2,16 +2,16 @@ package typings.gestalt.mod
 
 import typings.gestalt.anon.DangerouslydangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
-import typings.gestalt.gestaltNumbers.`-1`
-import typings.gestalt.gestaltNumbers.`0`
-import typings.gestalt.gestaltNumbers.`1`
-import typings.gestalt.gestaltNumbers.`2`
-import typings.gestalt.gestaltNumbers.`3`
-import typings.gestalt.gestaltNumbers.`4`
-import typings.gestalt.gestaltNumbers.`5`
-import typings.gestalt.gestaltNumbers.`6`
-import typings.gestalt.gestaltNumbers.`7`
-import typings.gestalt.gestaltNumbers.`8`
+import typings.gestalt.gestaltInts.`-1`
+import typings.gestalt.gestaltInts.`0`
+import typings.gestalt.gestaltInts.`1`
+import typings.gestalt.gestaltInts.`2`
+import typings.gestalt.gestaltInts.`3`
+import typings.gestalt.gestaltInts.`4`
+import typings.gestalt.gestaltInts.`5`
+import typings.gestalt.gestaltInts.`6`
+import typings.gestalt.gestaltInts.`7`
+import typings.gestalt.gestaltInts.`8`
 import typings.gestalt.gestaltStrings.blank
 import typings.gestalt.gestaltStrings.button
 import typings.gestalt.gestaltStrings.circle

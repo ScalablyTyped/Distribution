@@ -1,11 +1,11 @@
 package typings.activexDiskquota
 
-import typings.activexDiskquota.activexDiskquotaNumbers.`0`
-import typings.activexDiskquota.activexDiskquotaNumbers.`1`
-import typings.activexDiskquota.activexDiskquotaNumbers.`2`
-import typings.activexDiskquota.activexDiskquotaNumbers.`3`
-import typings.activexDiskquota.activexDiskquotaNumbers.`4`
-import typings.activexDiskquota.activexDiskquotaNumbers.`5`
+import typings.activexDiskquota.activexDiskquotaInts.`0`
+import typings.activexDiskquota.activexDiskquotaInts.`1`
+import typings.activexDiskquota.activexDiskquotaInts.`2`
+import typings.activexDiskquota.activexDiskquotaInts.`3`
+import typings.activexDiskquota.activexDiskquotaInts.`4`
+import typings.activexDiskquota.activexDiskquotaInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +14,12 @@ object DiskQuotaTypeLibrary {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexDiskquota.activexDiskquotaNumbers.`2`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`3`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`0`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`1`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`4`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`5`
+    - typings.activexDiskquota.activexDiskquotaInts.`2`
+    - typings.activexDiskquota.activexDiskquotaInts.`3`
+    - typings.activexDiskquota.activexDiskquotaInts.`0`
+    - typings.activexDiskquota.activexDiskquotaInts.`1`
+    - typings.activexDiskquota.activexDiskquotaInts.`4`
+    - typings.activexDiskquota.activexDiskquotaInts.`5`
   */
   trait AccountStatusConstants extends StObject
   object AccountStatusConstants {
@@ -263,9 +263,9 @@ object DiskQuotaTypeLibrary {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexDiskquota.activexDiskquotaNumbers.`0`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`2`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`1`
+    - typings.activexDiskquota.activexDiskquotaInts.`0`
+    - typings.activexDiskquota.activexDiskquotaInts.`2`
+    - typings.activexDiskquota.activexDiskquotaInts.`1`
   */
   trait QuotaStateConstants extends StObject
   object QuotaStateConstants {
@@ -279,9 +279,9 @@ object DiskQuotaTypeLibrary {
   
   // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
-    - typings.activexDiskquota.activexDiskquotaNumbers.`2`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`0`
-    - typings.activexDiskquota.activexDiskquotaNumbers.`1`
+    - typings.activexDiskquota.activexDiskquotaInts.`2`
+    - typings.activexDiskquota.activexDiskquotaInts.`0`
+    - typings.activexDiskquota.activexDiskquotaInts.`1`
   */
   trait UserNameResolutionConstants extends StObject
   object UserNameResolutionConstants {

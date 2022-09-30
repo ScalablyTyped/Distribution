@@ -53,7 +53,7 @@ object IMethodOptions {
     
     inline def setDotgoogleDotapiDotmethodSignatureUndefined: Self = StObject.set(x, ".google.api.methodSignature", js.undefined)
     
-    inline def setDotgoogleDotapiDotmethodSignatureVarargs(value: String*): Self = StObject.set(x, ".google.api.methodSignature", js.Array(value :_*))
+    inline def setDotgoogleDotapiDotmethodSignatureVarargs(value: String*): Self = StObject.set(x, ".google.api.methodSignature", js.Array(value*))
     
     inline def setIdempotencyLevel(value: IdempotencyLevel): Self = StObject.set(x, "idempotencyLevel", value.asInstanceOf[js.Any])
     
@@ -67,6 +67,6 @@ object IMethodOptions {
     
     inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value*))
   }
 }

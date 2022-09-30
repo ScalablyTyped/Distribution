@@ -1,7 +1,5 @@
 package typings.xstate
 
-import typings.xstate.modelTypesMod._ActionCreator
-import typings.xstate.modelTypesMod._EventCreator
 import typings.xstate.typesMod._StateTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,27 +20,11 @@ object xstateStrings {
   inline def ActionFunctionMap: ActionFunctionMap = "ActionFunctionMap".asInstanceOf[ActionFunctionMap]
   
   @js.native
-  sealed trait `An action creator canApostrophet return an object with a type property`
-    extends StObject
-       with _ActionCreator[Any, Any]
-  inline def `An action creator canApostrophet return an object with a type property`: `An action creator canApostrophet return an object with a type property` = ("An action creator can't return an object with a type property").asInstanceOf[`An action creator canApostrophet return an object with a type property`]
-  
-  @js.native
-  sealed trait `An action creator must return an object`
-    extends StObject
-       with _ActionCreator[Any, Any]
+  sealed trait `An action creator must return an object` extends StObject
   inline def `An action creator must return an object`: `An action creator must return an object` = ("An action creator must return an object").asInstanceOf[`An action creator must return an object`]
   
   @js.native
-  sealed trait `An event creator canApostrophet return an object with a type property`
-    extends StObject
-       with _EventCreator[Any, Any]
-  inline def `An event creator canApostrophet return an object with a type property`: `An event creator canApostrophet return an object with a type property` = ("An event creator can't return an object with a type property").asInstanceOf[`An event creator canApostrophet return an object with a type property`]
-  
-  @js.native
-  sealed trait `An event creator must return an object`
-    extends StObject
-       with _EventCreator[Any, Any]
+  sealed trait `An event creator must return an object` extends StObject
   inline def `An event creator must return an object`: `An event creator must return an object` = ("An event creator must return an object").asInstanceOf[`An event creator must return an object`]
   
   @js.native

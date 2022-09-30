@@ -27,7 +27,7 @@ object selectorsMod {
   inline def getPreference[T](preferenceKey: String): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreference")(preferenceKey.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   inline def getPreference[T](preferenceKey: String, defaultValue: T): T | Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreference")(preferenceKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T | Double | String]
   
-  inline def getPreferences(): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreferences")().asInstanceOf[Record[String, js.Any]]
+  inline def getPreferences(): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreferences")().asInstanceOf[Record[String, Any]]
   
   inline def hasMetaBoxes(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMetaBoxes")().asInstanceOf[Boolean]
   

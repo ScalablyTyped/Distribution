@@ -1,34 +1,34 @@
 package typings.activexLibreoffice.com_.sun.star.sdbc
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-3`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-5`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-6`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-7`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1111`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`12`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2000`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2001`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2002`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2003`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2004`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2005`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2006`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`5`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`91`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`92`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`93`
+import typings.activexLibreoffice.activexLibreofficeInts.`-1`
+import typings.activexLibreoffice.activexLibreofficeInts.`-2`
+import typings.activexLibreoffice.activexLibreofficeInts.`-3`
+import typings.activexLibreoffice.activexLibreofficeInts.`-4`
+import typings.activexLibreoffice.activexLibreofficeInts.`-5`
+import typings.activexLibreoffice.activexLibreofficeInts.`-6`
+import typings.activexLibreoffice.activexLibreofficeInts.`-7`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1111`
+import typings.activexLibreoffice.activexLibreofficeInts.`12`
+import typings.activexLibreoffice.activexLibreofficeInts.`16`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2000`
+import typings.activexLibreoffice.activexLibreofficeInts.`2001`
+import typings.activexLibreoffice.activexLibreofficeInts.`2002`
+import typings.activexLibreoffice.activexLibreofficeInts.`2003`
+import typings.activexLibreoffice.activexLibreofficeInts.`2004`
+import typings.activexLibreoffice.activexLibreofficeInts.`2005`
+import typings.activexLibreoffice.activexLibreofficeInts.`2006`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`3`
+import typings.activexLibreoffice.activexLibreofficeInts.`4`
+import typings.activexLibreoffice.activexLibreofficeInts.`5`
+import typings.activexLibreoffice.activexLibreofficeInts.`6`
+import typings.activexLibreoffice.activexLibreofficeInts.`7`
+import typings.activexLibreoffice.activexLibreofficeInts.`8`
+import typings.activexLibreoffice.activexLibreofficeInts.`91`
+import typings.activexLibreoffice.activexLibreofficeInts.`92`
+import typings.activexLibreoffice.activexLibreofficeInts.`93`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,35 +36,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DataType {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2003`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-5`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-2`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-7`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2004`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`16`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2005`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`91`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2001`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`8`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`6`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-4`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-1`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2000`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1111`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`7`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2006`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`5`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2002`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`92`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`93`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-6`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-3`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`12`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2003`
+    - typings.activexLibreoffice.activexLibreofficeInts.`-5`
+    - typings.activexLibreoffice.activexLibreofficeInts.`-2`
+    - typings.activexLibreoffice.activexLibreofficeInts.`-7`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2004`
+    - typings.activexLibreoffice.activexLibreofficeInts.`16`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2005`
+    - typings.activexLibreoffice.activexLibreofficeInts.`91`
+    - typings.activexLibreoffice.activexLibreofficeInts.`3`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2001`
+    - typings.activexLibreoffice.activexLibreofficeInts.`8`
+    - typings.activexLibreoffice.activexLibreofficeInts.`6`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4`
+    - typings.activexLibreoffice.activexLibreofficeInts.`-4`
+    - typings.activexLibreoffice.activexLibreofficeInts.`-1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2000`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1111`
+    - typings.activexLibreoffice.activexLibreofficeInts.`7`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2006`
+    - typings.activexLibreoffice.activexLibreofficeInts.`5`
+    - typings.activexLibreoffice.activexLibreofficeInts.`0`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2002`
+    - typings.activexLibreoffice.activexLibreofficeInts.`92`
+    - typings.activexLibreoffice.activexLibreofficeInts.`93`
+    - typings.activexLibreoffice.activexLibreofficeInts.`-6`
+    - typings.activexLibreoffice.activexLibreofficeInts.`-3`
+    - typings.activexLibreoffice.activexLibreofficeInts.`12`
   */
   trait Constants extends StObject
   object Constants {

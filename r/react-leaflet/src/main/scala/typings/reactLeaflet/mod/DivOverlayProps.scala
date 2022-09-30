@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.DivOverlayOptions because var conflicts: pane. Inlined zoomAnimation, className, offset */ trait DivOverlayProps
+- typings.leaflet.mod.DivOverlayOptions because var conflicts: pane. Inlined className, offset, interactive */ trait DivOverlayProps
   extends StObject
      with MapComponentProps {
   
@@ -15,13 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var className: js.UndefOr[String] = js.undefined
   
+  var interactive: js.UndefOr[Boolean] = js.undefined
+  
   var offset: js.UndefOr[PointExpression] = js.undefined
   
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
-  
-  var zoomAnimation: js.UndefOr[Boolean] = js.undefined
 }
 object DivOverlayProps {
   
@@ -36,11 +36,15 @@ object DivOverlayProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
     inline def setOffset(value: PointExpression): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -53,9 +57,5 @@ object DivOverlayProps {
     inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
     
     inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
-    
-    inline def setZoomAnimation(value: Boolean): Self = StObject.set(x, "zoomAnimation", value.asInstanceOf[js.Any])
-    
-    inline def setZoomAnimationUndefined: Self = StObject.set(x, "zoomAnimation", js.undefined)
   }
 }

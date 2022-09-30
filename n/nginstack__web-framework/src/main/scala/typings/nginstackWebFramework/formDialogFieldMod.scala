@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formDialogFieldMod {
   
-  inline def apply(name: Any, `type`: Any, size: Any, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((List(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def apply(name: Any, `type`: Any, size: Any, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].apply((scala.List(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   @JSImport("@nginstack/web-framework/lib/dialogs/FormDialogField", JSImport.Namespace)
   @js.native

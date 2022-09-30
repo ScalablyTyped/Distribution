@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "playable"
-version := "2.13.0-92ce07"
+version := "2.13.0-84989a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20220916Z-f8e820",
-  "org.scalablytyped" %%% "chromecast-caf-sender" % "1.0-dt-20211202Z-4c5886",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-9853ae",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20220818Z-dae0e4",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20220818Z-d7bf60",
-  "org.scalablytyped" %%% "har-format" % "1.2-dt-20220624Z-41775b",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20220916Z-990df7",
+  "org.scalablytyped" %%% "chromecast-caf-sender" % "1.0-dt-20211202Z-c0c334",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-b75196",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20220818Z-65d058",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20220818Z-fd6dbd",
+  "org.scalablytyped" %%% "har-format" % "1.2-dt-20220923Z-a2191f",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

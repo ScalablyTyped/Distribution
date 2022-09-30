@@ -16,5 +16,5 @@ object zipMod {
   
   inline def zipAsArray[V](args: (default[V] | js.Array[default[V]])*): default[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAsArray")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[default[js.Array[V]]]
   
-  inline def zipWith[Out](f: js.Function1[/* repeated */ Any, Out], streams: default[Any]*): EventStream[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(List(f.asInstanceOf[js.Any]).`++`(streams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[EventStream[Out]]
+  inline def zipWith[Out](f: js.Function1[/* repeated */ Any, Out], streams: default[Any]*): EventStream[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(scala.List(f.asInstanceOf[js.Any]).`++`(streams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[EventStream[Out]]
 }

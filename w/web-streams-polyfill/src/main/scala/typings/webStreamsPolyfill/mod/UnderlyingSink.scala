@@ -1,5 +1,6 @@
 package typings.webStreamsPolyfill.mod
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,21 +58,21 @@ object UnderlyingSink {
   
   extension [Self <: UnderlyingSink[?], W](x: Self & UnderlyingSink[W]) {
     
-    inline def setAbort(value: /* reason */ Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+    inline def setAbort(value: /* reason */ Any => Unit | PromiseLike[Unit]): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
     inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    inline def setClose(value: () => Unit | js.Thenable[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit | PromiseLike[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    inline def setStart(value: /* controller */ WritableStreamDefaultController[Any] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* controller */ WritableStreamDefaultController[Any] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     inline def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setWrite(value: (W, /* controller */ WritableStreamDefaultController[Any]) => Unit | js.Thenable[Unit]): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+    inline def setWrite(value: (W, /* controller */ WritableStreamDefaultController[Any]) => Unit | PromiseLike[Unit]): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
     
     inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }

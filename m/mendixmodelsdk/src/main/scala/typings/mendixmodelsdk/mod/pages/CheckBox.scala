@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.CheckBox")
 @js.native
-class CheckBox protected ()
+open class CheckBox protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.CheckBox {
   def this(
     model: AbstractModel,

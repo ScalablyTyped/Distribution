@@ -3,9 +3,9 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialEdits
 import typings.plotlyJs.anon.Partialfilenamestringscal
 import typings.plotlyJs.plotlyJsBooleans.`false`
-import typings.plotlyJs.plotlyJsNumbers.`0`
-import typings.plotlyJs.plotlyJsNumbers.`1`
-import typings.plotlyJs.plotlyJsNumbers.`2`
+import typings.plotlyJs.plotlyJsInts.`0`
+import typings.plotlyJs.plotlyJsInts.`1`
+import typings.plotlyJs.plotlyJsInts.`2`
 import typings.plotlyJs.plotlyJsStrings.autosize
 import typings.plotlyJs.plotlyJsStrings.hover
 import typings.plotlyJs.plotlyJsStrings.opaque

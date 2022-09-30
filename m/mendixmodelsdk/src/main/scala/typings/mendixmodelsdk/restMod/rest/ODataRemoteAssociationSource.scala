@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.restMod.rest
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationBase
+import typings.mendixmodelsdk.domainmodelsMod.domainmodels.Navigability
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.RemoteAssociationSource
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
@@ -23,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationSource because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteAssociationSource because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IODataRemoteAssociationSource because var conflicts: containerAsAssociationBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteAssociationSource")
+- typings.mendixmodelsdk.restMod.rest.IODataRemoteAssociationSource because var conflicts: containerAsAssociationBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteAssociationSource")
 @js.native
-class ODataRemoteAssociationSource protected () extends RemoteAssociationSource {
+open class ODataRemoteAssociationSource protected () extends RemoteAssociationSource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,15 +39,53 @@ class ODataRemoteAssociationSource protected () extends RemoteAssociationSource 
   @JSName("containerAsAssociationBase")
   def containerAsAssociationBase_MODataRemoteAssociationSource: AssociationBase = js.native
   
+  /**
+    * In version 9.11.0: introduced
+    */
+  def creatableFromChild: Boolean = js.native
+  def creatableFromChild_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.11.0: introduced
+    */
+  def creatableFromParent: Boolean = js.native
+  def creatableFromParent_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.14.0: deleted
+    * In version 8.16.0: introduced
+    */
+  def navigability: AssociationNavigability = js.native
+  
+  /**
+    * In version 9.14.0: introduced
+    */
+  def navigability2: Navigability = js.native
+  def navigability2_=(newValue: Navigability): Unit = js.native
+  
+  def navigability_=(newValue: AssociationNavigability): Unit = js.native
+  
   def remoteChildNavigationProperty: String = js.native
   def remoteChildNavigationProperty_=(newValue: String): Unit = js.native
   
   def remoteParentNavigationProperty: String = js.native
   def remoteParentNavigationProperty_=(newValue: String): Unit = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  def updatableFromChild: Boolean = js.native
+  def updatableFromChild_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  def updatableFromParent: Boolean = js.native
+  def updatableFromParent_=(newValue: Boolean): Unit = js.native
 }
 object ODataRemoteAssociationSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteAssociationSource")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteAssociationSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +109,13 @@ object ODataRemoteAssociationSource {
   inline def createIn(container: AssociationBase): ODataRemoteAssociationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataRemoteAssociationSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteAssociationSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteAssociationSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteAssociationSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteAssociationSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

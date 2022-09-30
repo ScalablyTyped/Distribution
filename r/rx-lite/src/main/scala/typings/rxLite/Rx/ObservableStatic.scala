@@ -937,13 +937,8 @@ trait ObservableStatic extends StObject {
     context: Any,
     selector: js.Function1[/* results */ js.Array[TC], TR]
   ): js.Function0[Observable[TR]] = js.native
-  def fromNodeCallback[T1, T](
-    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ Any, /* result */ T, Any], Any]
-  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
-  def fromNodeCallback[T1, T](
-    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ Any, /* result */ T, Any], Any],
-    context: Any
-  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
+  def fromNodeCallback[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, Any]): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
+  def fromNodeCallback[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, Any], context: Any): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
   def fromNodeCallback[TC, T](func: js.Function, context: Any, selector: js.Function1[/* results */ js.Array[TC], T]): js.Function1[/* repeated */ Any, Observable[T]] = js.native
   def fromNodeCallback[T1, TC, TR](
     func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, Any],
@@ -975,6 +970,15 @@ trait ObservableStatic extends StObject {
     context: Any
   ): js.Function0[Observable[T]] = js.native
   @JSName("fromNodeCallback")
+  def fromNodeCallback_T1T[T1, T](
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ Any, /* result */ T, Any], Any]
+  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
+  @JSName("fromNodeCallback")
+  def fromNodeCallback_T1T[T1, T](
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function2[/* err */ Any, /* result */ T, Any], Any],
+    context: Any
+  ): js.Function1[/* arg1 */ T1, Observable[T]] = js.native
+  @JSName("fromNodeCallback")
   def fromNodeCallback_T1T2T[T1, T2, T](
     func: js.Function3[
       /* arg1 */ T1, 
@@ -1014,10 +1018,6 @@ trait ObservableStatic extends StObject {
     ],
     context: Any
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[T]] = js.native
-  @JSName("fromNodeCallback")
-  def fromNodeCallback_T1TR[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, Any]): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
-  @JSName("fromNodeCallback")
-  def fromNodeCallback_T1TR[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, Any], context: Any): js.Function1[/* arg1 */ T1, Observable[TR]] = js.native
   
   /**
     * Converts a Promise to an Observable sequence

@@ -1,6 +1,7 @@
 package typings.fullcalendarCore.mod.BASE_OPTION_REFINERS
 
 import typings.fullcalendarCore.mod.BASE_OPTION_REFINERS.^
+import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /* standard es5 */
 open class navLinks ()
-  extends typings.fullcalendarCommon.mod.BASE_OPTION_REFINERS.navLinks {
+  extends StObject
+     with Boolean {
   def this(value: Any) = this()
 }
 object navLinks {
   
   /* standard es5 */
-  inline def apply[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("navLinks")().asInstanceOf[Boolean]
-  inline def apply[T](value: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("navLinks")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply[T](): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("navLinks")().asInstanceOf[scala.Boolean]
+  inline def apply[T](value: T): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("navLinks")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 }

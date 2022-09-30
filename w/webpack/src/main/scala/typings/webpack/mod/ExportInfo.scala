@@ -2,7 +2,6 @@ package typings.webpack.mod
 
 import typings.webpack.anon.Export
 import typings.webpack.webpackBooleans.`false`
-import typings.webpack.webpackStrings.`maybe provided Leftparenthesisruntime-definedRightparenthesis`
 import typings.webpack.webpackStrings.`no provided info`
 import typings.webpack.webpackStrings.`not provided`
 import typings.webpack.webpackStrings.provided
@@ -39,7 +38,7 @@ trait ExportInfo extends StObject {
   
   def getNestedExportsInfo(): js.UndefOr[ExportsInfo] = js.native
   
-  def getProvidedInfo(): (`no provided info`) | (`maybe provided Leftparenthesisruntime-definedRightparenthesis`) | provided | (`not provided`) = js.native
+  def getProvidedInfo(): (`no provided info`) | String | provided | (`not provided`) = js.native
   
   def getRenameInfo(): String = js.native
   

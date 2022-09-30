@@ -11,5 +11,5 @@ object handleQsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(url: String, query: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(url: String, query: StringDictionary[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[String]
 }

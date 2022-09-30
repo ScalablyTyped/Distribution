@@ -1,9 +1,9 @@
 package typings.zipJsZipJs.mod
 
 import typings.std.AbortSignal
-import typings.zipJsZipJs.zipJsZipJsNumbers.`1`
-import typings.zipJsZipJs.zipJsZipJsNumbers.`2`
-import typings.zipJsZipJs.zipJsZipJsNumbers.`3`
+import typings.zipJsZipJs.zipJsZipJsInts.`1`
+import typings.zipJsZipJs.zipJsZipJsInts.`2`
+import typings.zipJsZipJs.zipJsZipJsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,9 +1,9 @@
 package typings.carbonIconsReact
 
-import typings.carbonIconsReact.carbonIconsReactNumbers.`16`
-import typings.carbonIconsReact.carbonIconsReactNumbers.`20`
-import typings.carbonIconsReact.carbonIconsReactNumbers.`24`
-import typings.carbonIconsReact.carbonIconsReactNumbers.`32`
+import typings.carbonIconsReact.carbonIconsReactInts.`16`
+import typings.carbonIconsReact.carbonIconsReactInts.`20`
+import typings.carbonIconsReact.carbonIconsReactInts.`24`
+import typings.carbonIconsReact.carbonIconsReactInts.`32`
 import typings.carbonIconsReact.carbonIconsReactStrings._empty
 import typings.carbonIconsReact.carbonIconsReactStrings.`additions removals`
 import typings.carbonIconsReact.carbonIconsReactStrings.`additions text`

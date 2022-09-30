@@ -2,8 +2,8 @@ package typings.rrule
 
 import typings.rrule.datetimeMod.Time
 import typings.rrule.monthinfoMod.MonthInfo
-import typings.rrule.rruleNumbers.`365`
-import typings.rrule.rruleNumbers.`366`
+import typings.rrule.rruleInts.`365`
+import typings.rrule.rruleInts.`366`
 import typings.rrule.typesMod.Frequency
 import typings.rrule.typesMod.Frequency.HOURLY
 import typings.rrule.typesMod.Frequency.MINUTELY

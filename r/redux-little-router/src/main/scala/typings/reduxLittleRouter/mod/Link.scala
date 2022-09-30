@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("redux-little-router", "Link")
 @js.native
-class Link protected ()
-  extends Component[LinkProps, js.Object, js.Any] {
+open class Link protected ()
+  extends Component[LinkProps, js.Object, Any] {
   def this(props: LinkProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LinkProps, context: js.Any) = this()
+  def this(props: LinkProps, context: Any) = this()
 }

@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Enabled extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: Boolean
 }
 object Enabled {
   
-  inline def apply(): Enabled = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(enabled: Boolean): Enabled = {
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enabled]
   }
   
   extension [Self <: Enabled](x: Self) {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-    
-    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

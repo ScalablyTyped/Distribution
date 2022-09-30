@@ -1,66 +1,35 @@
 package typings.readPkgUp
 
+import typings.readPkg.mod.NormalizedPackageJson
+import typings.readPkg.mod.PackageJson
 import typings.readPkgUp.readPkgUpBooleans.`true`
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	Read the closest `package.json` file.
-  	@example
-  	```
-  	import readPkgUp = require('read-pkg-up');
-  	(async () => {
-  		console.log(await readPkgUp());
-  		// {
-  		// 	packageJson: {
-  		// 		name: 'awesome-package',
-  		// 		version: '1.0.0',
-  		// 		…
-  		// 	},
-  		// 	path: '/Users/sindresorhus/dev/awesome-package/package.json'
-  		// }
-  	})();
-  	```
-  	*/
-  inline def apply(): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
-  inline def apply(options: NormalizeOptions): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
-  inline def apply(options: Options): js.Promise[js.UndefOr[ReadResult]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ReadResult]]]
-  
   @JSImport("read-pkg-up", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Synchronously read the closest `package.json` file.
-  	@example
-  	```
-  	import readPkgUp = require('read-pkg-up');
-  	console.log(readPkgUp.sync());
-  	// {
-  	// 	packageJson: {
-  	// 		name: 'awesome-package',
-  	// 		version: '1.0.0',
-  	// 		…
-  	// 	},
-  	// 	path: '/Users/sindresorhus/dev/awesome-package/package.json'
-  	// }
-  	```
-  	*/
-  inline def sync(): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[NormalizedReadResult]]
-  inline def sync(options: NormalizeOptions): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalizedReadResult]]
-  inline def sync(options: Options): js.UndefOr[ReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReadResult]]
+  inline def readPackageUp(): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUp")().asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
+  inline def readPackageUp(options: NormalizeOptions): js.Promise[js.UndefOr[NormalizedReadResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUp")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[NormalizedReadResult]]]
+  inline def readPackageUp(options: Options): js.Promise[js.UndefOr[ReadResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUp")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ReadResult]]]
   
-  /* Inlined {  cwd :string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.NormalizeOptions, 'cwd'> */
+  inline def readPackageUpSync(): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUpSync")().asInstanceOf[js.UndefOr[NormalizedReadResult]]
+  inline def readPackageUpSync(options: NormalizeOptions): js.UndefOr[NormalizedReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUpSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalizedReadResult]]
+  inline def readPackageUpSync(options: Options): js.UndefOr[ReadResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageUpSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReadResult]]
+  
+  /* Inlined {  cwd :std.URL | string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.NormalizeOptions, 'cwd'> */
   trait NormalizeOptions extends StObject {
     
     /**
-    		Directory to start looking for a package.json file.
-    		@default process.cwd()
-    		*/
-    var cwd: js.UndefOr[String] = js.undefined
+    	The directory to start looking for a package.json file.
+    	@default process.cwd()
+    	*/
+    var cwd: js.UndefOr[URL | String] = js.undefined
     
     var normalize: js.UndefOr[`true`] = js.undefined
   }
@@ -73,7 +42,7 @@ object mod {
     
     extension [Self <: NormalizeOptions](x: Self) {
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -82,8 +51,6 @@ object mod {
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     }
   }
-  
-  type NormalizedPackageJson = typings.readPkg.mod.NormalizedPackageJson
   
   trait NormalizedReadResult extends StObject {
     
@@ -106,14 +73,14 @@ object mod {
     }
   }
   
-  /* Inlined {  cwd :string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.Options, 'cwd'> */
+  /* Inlined {  cwd :std.URL | string | undefined} & type-fest.type-fest.Except<read-pkg.read-pkg.Options, 'cwd'> */
   trait Options extends StObject {
     
     /**
-    		Directory to start looking for a package.json file.
-    		@default process.cwd()
-    		*/
-    var cwd: js.UndefOr[String] = js.undefined
+    	The directory to start looking for a package.json file.
+    	@default process.cwd()
+    	*/
+    var cwd: js.UndefOr[URL | String] = js.undefined
     
     var normalize: js.UndefOr[Boolean] = js.undefined
   }
@@ -126,7 +93,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -135,8 +102,6 @@ object mod {
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     }
   }
-  
-  type PackageJson = typings.readPkg.mod.PackageJson
   
   trait ReadResult extends StObject {
     

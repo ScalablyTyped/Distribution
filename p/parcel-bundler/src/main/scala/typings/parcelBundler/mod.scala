@@ -10,10 +10,10 @@ import typings.node.httpMod.ServerResponse
 import typings.node.nodeNetMod.Socket
 import typings.parcelBundler.parcelBundlerBooleans.`false`
 import typings.parcelBundler.parcelBundlerBooleans.`true`
-import typings.parcelBundler.parcelBundlerNumbers.`0`
-import typings.parcelBundler.parcelBundlerNumbers.`1`
-import typings.parcelBundler.parcelBundlerNumbers.`2`
-import typings.parcelBundler.parcelBundlerNumbers.`3`
+import typings.parcelBundler.parcelBundlerInts.`0`
+import typings.parcelBundler.parcelBundlerInts.`1`
+import typings.parcelBundler.parcelBundlerInts.`2`
+import typings.parcelBundler.parcelBundlerInts.`3`
 import typings.parcelBundler.parcelBundlerStrings.browser
 import typings.parcelBundler.parcelBundlerStrings.buildEnd
 import typings.parcelBundler.parcelBundlerStrings.buildError

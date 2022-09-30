@@ -37,7 +37,7 @@ object ProtocolRequest {
     
     inline def setUploadDataUndefined: Self = StObject.set(x, "uploadData", js.undefined)
     
-    inline def setUploadDataVarargs(value: UploadData*): Self = StObject.set(x, "uploadData", js.Array(value :_*))
+    inline def setUploadDataVarargs(value: UploadData*): Self = StObject.set(x, "uploadData", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

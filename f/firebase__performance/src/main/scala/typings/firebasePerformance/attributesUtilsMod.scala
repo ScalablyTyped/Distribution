@@ -1,10 +1,10 @@
 package typings.firebasePerformance
 
-import typings.firebasePerformance.firebasePerformanceNumbers.`0`
-import typings.firebasePerformance.firebasePerformanceNumbers.`1`
-import typings.firebasePerformance.firebasePerformanceNumbers.`2`
-import typings.firebasePerformance.firebasePerformanceNumbers.`3`
-import typings.firebasePerformance.firebasePerformanceNumbers.`4`
+import typings.firebasePerformance.firebasePerformanceInts.`0`
+import typings.firebasePerformance.firebasePerformanceInts.`1`
+import typings.firebasePerformance.firebasePerformanceInts.`2`
+import typings.firebasePerformance.firebasePerformanceInts.`3`
+import typings.firebasePerformance.firebasePerformanceInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,11 +54,11 @@ object attributesUtilsMod {
   inline def isValidCustomAttributeValue(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidCustomAttributeValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebasePerformance.firebasePerformanceNumbers.`0`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`1`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`2`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`3`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`4`
+    - typings.firebasePerformance.firebasePerformanceInts.`0`
+    - typings.firebasePerformance.firebasePerformanceInts.`1`
+    - typings.firebasePerformance.firebasePerformanceInts.`2`
+    - typings.firebasePerformance.firebasePerformanceInts.`3`
+    - typings.firebasePerformance.firebasePerformanceInts.`4`
   */
   trait EffectiveConnectionType extends StObject
   object EffectiveConnectionType {
@@ -75,10 +75,10 @@ object attributesUtilsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebasePerformance.firebasePerformanceNumbers.`0`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`1`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`2`
-    - typings.firebasePerformance.firebasePerformanceNumbers.`3`
+    - typings.firebasePerformance.firebasePerformanceInts.`0`
+    - typings.firebasePerformance.firebasePerformanceInts.`1`
+    - typings.firebasePerformance.firebasePerformanceInts.`2`
+    - typings.firebasePerformance.firebasePerformanceInts.`3`
   */
   trait ServiceWorkerStatus extends StObject
   object ServiceWorkerStatus {

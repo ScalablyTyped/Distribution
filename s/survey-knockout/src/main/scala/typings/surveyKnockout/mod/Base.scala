@@ -29,12 +29,6 @@ open class Base () extends StObject {
   
   /* protected */ def canRunConditions(): Boolean = js.native
   
-  /*
-    * set property value and before check if new property value is correct by calling JsonProperty onSettingValue function
-    * If onSettingValue is not set in declaration, then this function works as `setPropertyValue`.
-    */
-  def checkAndSetPropertyValue(name: String, `val`: Any): Unit = js.native
-  
   def checkBindings(valueName: String, value: Any): Unit = js.native
   
   /* protected */ def clearPropertyValue(name: String): Unit = js.native
@@ -140,7 +134,7 @@ open class Base () extends StObject {
   /*
     * Returns `true` if the object is included in a survey.
     * 
-    * This method may return `false`, for example, when you [create a survey model dynamically](https://surveyjs.io/form-library/documentation/design-survey-create-a-simple-survey#create-or-change-a-survey-model-dynamically).
+    * This property may return `false`, for example, when you [create a survey model dynamically](https://surveyjs.io/form-library/documentation/design-survey-create-a-simple-survey#create-or-change-a-survey-model-dynamically).
     */
   def inSurvey: Boolean = js.native
   

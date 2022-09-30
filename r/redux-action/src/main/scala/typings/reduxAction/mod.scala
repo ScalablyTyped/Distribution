@@ -14,9 +14,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createAction[Payload](): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+  inline def createAction[Payload](): ActionFunction1[Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[ActionFunction1[Any, ThunkAction[Payload]]]
   inline def createAction[Payload](payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
-  inline def createAction[Payload](`type`: String): ActionFunction1[js.Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[js.Any, ThunkAction[Payload]]]
+  inline def createAction[Payload](`type`: String): ActionFunction1[Any, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Any, ThunkAction[Payload]]]
   inline def createAction[Payload](`type`: String, payloadCreator: ActionFunctionAny[js.Promise[Payload] | Payload]): ActionFunctionAny[ThunkAction[Payload]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(`type`.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[ActionFunctionAny[ThunkAction[Payload]]]
   inline def createAction[Payload, Arg](payloadCreator: ActionFunction1[Arg, js.Promise[Payload] | Payload]): ActionFunction1[Arg, ThunkAction[Payload]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(payloadCreator.asInstanceOf[js.Any]).asInstanceOf[ActionFunction1[Arg, ThunkAction[Payload]]]
   inline def createAction[Payload, Meta](
@@ -71,7 +71,7 @@ object mod {
   @js.native
   trait ActionFunctionAny[R] extends StObject {
     
-    def apply(args: js.Any*): R = js.native
+    def apply(args: Any*): R = js.native
   }
   
   trait BaseAction extends StObject {
@@ -113,7 +113,7 @@ object mod {
   }
   
   type ReducerHandler[State] = js.Function3[
-    /* payload */ js.Any, 
+    /* payload */ Any, 
     /* state */ js.UndefOr[State], 
     /* action */ js.UndefOr[BaseAction], 
     State
@@ -122,14 +122,14 @@ object mod {
   type ReducerHandlers[State] = StringDictionary[ReducerHandler[State]]
   
   type ThunkAction[Payload] = js.Function2[
-    /* dispatch */ Dispatch[js.Any], 
-    /* getState */ js.Function0[js.Any], 
+    /* dispatch */ Dispatch[Any], 
+    /* getState */ js.Function0[Any], 
     js.Promise[Action[Payload]]
   ]
   
   type ThunkMetaAction[Payload, Meta] = js.Function2[
-    /* dispatch */ Dispatch[js.Any], 
-    /* getState */ js.Function0[js.Any], 
+    /* dispatch */ Dispatch[Any], 
+    /* getState */ js.Function0[Any], 
     js.Promise[MetaAction[Payload, Meta]]
   ]
 }

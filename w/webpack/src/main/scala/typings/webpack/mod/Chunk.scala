@@ -3,9 +3,9 @@ package typings.webpack.mod
 import typings.std.Record
 import typings.std.Set
 import typings.webpack.anon.Chunks
-import typings.webpack.webpackNumbers.`-1`
-import typings.webpack.webpackNumbers.`0`
-import typings.webpack.webpackNumbers.`1`
+import typings.webpack.webpackInts.`-1`
+import typings.webpack.webpackInts.`0`
+import typings.webpack.webpackInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

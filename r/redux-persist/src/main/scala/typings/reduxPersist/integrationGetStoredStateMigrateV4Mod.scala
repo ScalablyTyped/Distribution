@@ -12,11 +12,5 @@ object integrationGetStoredStateMigrateV4Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(v4Config: V4Config): js.Function1[
-    /* config */ PersistConfig[js.Any, js.Any, js.Any, js.Any], 
-    js.Promise[js.UndefOr[js.Object]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(v4Config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* config */ PersistConfig[js.Any, js.Any, js.Any, js.Any], 
-    js.Promise[js.UndefOr[js.Object]]
-  ]]
+  inline def default(v4Config: V4Config): js.Function1[/* config */ PersistConfig[Any, Any, Any, Any], js.Promise[js.UndefOr[js.Object]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(v4Config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* config */ PersistConfig[Any, Any, Any, Any], js.Promise[js.UndefOr[js.Object]]]]
 }

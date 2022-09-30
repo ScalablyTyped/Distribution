@@ -34,7 +34,7 @@ trait DescribeNetworkInterfaces extends StObject {
   var MaxResults: js.UndefOr[DescribeNetworkInterfacesMaxResults] = js.undefined
   
   /**
-    * One or more network interface IDs. Default: Describes all your network interfaces.
+    * The network interface IDs. Default: Describes all your network interfaces.
     */
   var NetworkInterfaceIds: js.UndefOr[NetworkInterfaceIdList] = js.undefined
   

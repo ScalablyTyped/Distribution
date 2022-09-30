@@ -22,73 +22,73 @@ import typings.rtpParser.anon.`6`
 import typings.rtpParser.anon.`7`
 import typings.rtpParser.anon.`8`
 import typings.rtpParser.anon.`9`
-import typings.rtpParser.rtpParserNumbers.`100`
-import typings.rtpParser.rtpParserNumbers.`101`
-import typings.rtpParser.rtpParserNumbers.`102`
-import typings.rtpParser.rtpParserNumbers.`103`
-import typings.rtpParser.rtpParserNumbers.`104`
-import typings.rtpParser.rtpParserNumbers.`105`
-import typings.rtpParser.rtpParserNumbers.`106`
-import typings.rtpParser.rtpParserNumbers.`107`
-import typings.rtpParser.rtpParserNumbers.`108`
-import typings.rtpParser.rtpParserNumbers.`109`
-import typings.rtpParser.rtpParserNumbers.`10`
-import typings.rtpParser.rtpParserNumbers.`11025`
-import typings.rtpParser.rtpParserNumbers.`110`
-import typings.rtpParser.rtpParserNumbers.`111`
-import typings.rtpParser.rtpParserNumbers.`112`
-import typings.rtpParser.rtpParserNumbers.`113`
-import typings.rtpParser.rtpParserNumbers.`114`
-import typings.rtpParser.rtpParserNumbers.`115`
-import typings.rtpParser.rtpParserNumbers.`116`
-import typings.rtpParser.rtpParserNumbers.`117`
-import typings.rtpParser.rtpParserNumbers.`118`
-import typings.rtpParser.rtpParserNumbers.`119`
-import typings.rtpParser.rtpParserNumbers.`11`
-import typings.rtpParser.rtpParserNumbers.`120`
-import typings.rtpParser.rtpParserNumbers.`121`
-import typings.rtpParser.rtpParserNumbers.`122`
-import typings.rtpParser.rtpParserNumbers.`123`
-import typings.rtpParser.rtpParserNumbers.`124`
-import typings.rtpParser.rtpParserNumbers.`125`
-import typings.rtpParser.rtpParserNumbers.`126`
-import typings.rtpParser.rtpParserNumbers.`127`
-import typings.rtpParser.rtpParserNumbers.`12`
-import typings.rtpParser.rtpParserNumbers.`13`
-import typings.rtpParser.rtpParserNumbers.`14`
-import typings.rtpParser.rtpParserNumbers.`15`
-import typings.rtpParser.rtpParserNumbers.`16000`
-import typings.rtpParser.rtpParserNumbers.`16`
-import typings.rtpParser.rtpParserNumbers.`17`
-import typings.rtpParser.rtpParserNumbers.`20`
-import typings.rtpParser.rtpParserNumbers.`21`
-import typings.rtpParser.rtpParserNumbers.`22050`
-import typings.rtpParser.rtpParserNumbers.`22`
-import typings.rtpParser.rtpParserNumbers.`23`
-import typings.rtpParser.rtpParserNumbers.`24`
-import typings.rtpParser.rtpParserNumbers.`25`
-import typings.rtpParser.rtpParserNumbers.`26`
-import typings.rtpParser.rtpParserNumbers.`27`
-import typings.rtpParser.rtpParserNumbers.`28`
-import typings.rtpParser.rtpParserNumbers.`29`
-import typings.rtpParser.rtpParserNumbers.`2`
-import typings.rtpParser.rtpParserNumbers.`30`
-import typings.rtpParser.rtpParserNumbers.`31`
-import typings.rtpParser.rtpParserNumbers.`32`
-import typings.rtpParser.rtpParserNumbers.`33`
-import typings.rtpParser.rtpParserNumbers.`34`
-import typings.rtpParser.rtpParserNumbers.`44100`
-import typings.rtpParser.rtpParserNumbers.`72`
-import typings.rtpParser.rtpParserNumbers.`73`
-import typings.rtpParser.rtpParserNumbers.`74`
-import typings.rtpParser.rtpParserNumbers.`75`
-import typings.rtpParser.rtpParserNumbers.`76`
-import typings.rtpParser.rtpParserNumbers.`8000`
-import typings.rtpParser.rtpParserNumbers.`90000`
-import typings.rtpParser.rtpParserNumbers.`96`
-import typings.rtpParser.rtpParserNumbers.`97`
-import typings.rtpParser.rtpParserNumbers.`98`
-import typings.rtpParser.rtpParserNumbers.`99`
+import typings.rtpParser.rtpParserInts.`100`
+import typings.rtpParser.rtpParserInts.`101`
+import typings.rtpParser.rtpParserInts.`102`
+import typings.rtpParser.rtpParserInts.`103`
+import typings.rtpParser.rtpParserInts.`104`
+import typings.rtpParser.rtpParserInts.`105`
+import typings.rtpParser.rtpParserInts.`106`
+import typings.rtpParser.rtpParserInts.`107`
+import typings.rtpParser.rtpParserInts.`108`
+import typings.rtpParser.rtpParserInts.`109`
+import typings.rtpParser.rtpParserInts.`10`
+import typings.rtpParser.rtpParserInts.`11025`
+import typings.rtpParser.rtpParserInts.`110`
+import typings.rtpParser.rtpParserInts.`111`
+import typings.rtpParser.rtpParserInts.`112`
+import typings.rtpParser.rtpParserInts.`113`
+import typings.rtpParser.rtpParserInts.`114`
+import typings.rtpParser.rtpParserInts.`115`
+import typings.rtpParser.rtpParserInts.`116`
+import typings.rtpParser.rtpParserInts.`117`
+import typings.rtpParser.rtpParserInts.`118`
+import typings.rtpParser.rtpParserInts.`119`
+import typings.rtpParser.rtpParserInts.`11`
+import typings.rtpParser.rtpParserInts.`120`
+import typings.rtpParser.rtpParserInts.`121`
+import typings.rtpParser.rtpParserInts.`122`
+import typings.rtpParser.rtpParserInts.`123`
+import typings.rtpParser.rtpParserInts.`124`
+import typings.rtpParser.rtpParserInts.`125`
+import typings.rtpParser.rtpParserInts.`126`
+import typings.rtpParser.rtpParserInts.`127`
+import typings.rtpParser.rtpParserInts.`12`
+import typings.rtpParser.rtpParserInts.`13`
+import typings.rtpParser.rtpParserInts.`14`
+import typings.rtpParser.rtpParserInts.`15`
+import typings.rtpParser.rtpParserInts.`16000`
+import typings.rtpParser.rtpParserInts.`16`
+import typings.rtpParser.rtpParserInts.`17`
+import typings.rtpParser.rtpParserInts.`20`
+import typings.rtpParser.rtpParserInts.`21`
+import typings.rtpParser.rtpParserInts.`22050`
+import typings.rtpParser.rtpParserInts.`22`
+import typings.rtpParser.rtpParserInts.`23`
+import typings.rtpParser.rtpParserInts.`24`
+import typings.rtpParser.rtpParserInts.`25`
+import typings.rtpParser.rtpParserInts.`26`
+import typings.rtpParser.rtpParserInts.`27`
+import typings.rtpParser.rtpParserInts.`28`
+import typings.rtpParser.rtpParserInts.`29`
+import typings.rtpParser.rtpParserInts.`2`
+import typings.rtpParser.rtpParserInts.`30`
+import typings.rtpParser.rtpParserInts.`31`
+import typings.rtpParser.rtpParserInts.`32`
+import typings.rtpParser.rtpParserInts.`33`
+import typings.rtpParser.rtpParserInts.`34`
+import typings.rtpParser.rtpParserInts.`44100`
+import typings.rtpParser.rtpParserInts.`72`
+import typings.rtpParser.rtpParserInts.`73`
+import typings.rtpParser.rtpParserInts.`74`
+import typings.rtpParser.rtpParserInts.`75`
+import typings.rtpParser.rtpParserInts.`76`
+import typings.rtpParser.rtpParserInts.`8000`
+import typings.rtpParser.rtpParserInts.`90000`
+import typings.rtpParser.rtpParserInts.`96`
+import typings.rtpParser.rtpParserInts.`97`
+import typings.rtpParser.rtpParserInts.`98`
+import typings.rtpParser.rtpParserInts.`99`
 import typings.rtpParser.rtpParserStrings.A
 import typings.rtpParser.rtpParserStrings.AV
 import typings.rtpParser.rtpParserStrings.CN
@@ -135,7 +135,7 @@ object mod {
   inline def parseRtpPayloadType(payloadType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ Any): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`1`]
   inline def parseRtpPayloadType(payloadType: Double): ParsedRTPType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPType]
   
-  inline def parseRtpPayloadType_0(payloadType: typings.rtpParser.rtpParserNumbers.`0`): `19` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`19`]
+  inline def parseRtpPayloadType_0(payloadType: typings.rtpParser.rtpParserInts.`0`): `19` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`19`]
   
   inline def parseRtpPayloadType_10(payloadType: `10`): typings.rtpParser.anon.`10` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`10`]
   
@@ -153,10 +153,8 @@ object mod {
   
   inline def parseRtpPayloadType_17(payloadType: `17`): ChannelsClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRate]
   
-  inline def parseRtpPayloadType_18(
-    payloadType: typings.rtpParser.rtpParserNumbers.`1` | `2` | typings.rtpParser.rtpParserNumbers.`19`
-  ): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
-  inline def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserNumbers.`18`): Channels = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Channels]
+  inline def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserInts.`1` | `2` | typings.rtpParser.rtpParserInts.`19`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  inline def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserInts.`18`): Channels = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Channels]
   
   inline def parseRtpPayloadType_25(payloadType: `25`): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`3`]
   
@@ -164,7 +162,7 @@ object mod {
   
   inline def parseRtpPayloadType_28(payloadType: `28`): ClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaTypeName]
   
-  inline def parseRtpPayloadType_3(payloadType: typings.rtpParser.rtpParserNumbers.`3`): typings.rtpParser.anon.`17` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`17`]
+  inline def parseRtpPayloadType_3(payloadType: typings.rtpParser.rtpParserInts.`3`): typings.rtpParser.anon.`17` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`17`]
   
   inline def parseRtpPayloadType_31(payloadType: `31`): MediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaTypeName]
   
@@ -175,18 +173,18 @@ object mod {
   inline def parseRtpPayloadType_34(payloadType: `34`): ClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRate]
   
   inline def parseRtpPayloadType_4(payloadType: `24` | `27` | `29` | `30`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
-  inline def parseRtpPayloadType_4(payloadType: typings.rtpParser.rtpParserNumbers.`4`): typings.rtpParser.anon.`16` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`16`]
+  inline def parseRtpPayloadType_4(payloadType: typings.rtpParser.rtpParserInts.`4`): typings.rtpParser.anon.`16` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`16`]
   
   inline def parseRtpPayloadType_5(payloadType: `20` | `21` | `22` | `23`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
-  inline def parseRtpPayloadType_5(payloadType: typings.rtpParser.rtpParserNumbers.`5`): typings.rtpParser.anon.`15` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`15`]
+  inline def parseRtpPayloadType_5(payloadType: typings.rtpParser.rtpParserInts.`5`): typings.rtpParser.anon.`15` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`15`]
   
-  inline def parseRtpPayloadType_6(payloadType: typings.rtpParser.rtpParserNumbers.`6`): typings.rtpParser.anon.`14` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`14`]
+  inline def parseRtpPayloadType_6(payloadType: typings.rtpParser.rtpParserInts.`6`): typings.rtpParser.anon.`14` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`14`]
   
-  inline def parseRtpPayloadType_7(payloadType: typings.rtpParser.rtpParserNumbers.`7`): typings.rtpParser.anon.`13` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`13`]
+  inline def parseRtpPayloadType_7(payloadType: typings.rtpParser.rtpParserInts.`7`): typings.rtpParser.anon.`13` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`13`]
   
-  inline def parseRtpPayloadType_8(payloadType: typings.rtpParser.rtpParserNumbers.`8`): typings.rtpParser.anon.`12` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`12`]
+  inline def parseRtpPayloadType_8(payloadType: typings.rtpParser.rtpParserInts.`8`): typings.rtpParser.anon.`12` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`12`]
   
-  inline def parseRtpPayloadType_9(payloadType: typings.rtpParser.rtpParserNumbers.`9`): typings.rtpParser.anon.`11` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`11`]
+  inline def parseRtpPayloadType_9(payloadType: typings.rtpParser.rtpParserInts.`9`): typings.rtpParser.anon.`11` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`11`]
   
   inline def parseRtpPayloadType_Name(
     payloadType: `96` | `97` | `98` | `99` | `100` | `101` | `102` | `103` | `104` | `105` | `106` | `107` | `108` | `109` | `110` | `111` | `112` | `113` | `114` | `115` | `116` | `117` | `118` | `119` | `120` | `121` | `122` | `123` | `124` | `125` | `126` | `127`
@@ -270,7 +268,7 @@ object mod {
   
   trait ParsedRTPType extends StObject {
     
-    var channels: js.UndefOr[typings.rtpParser.rtpParserNumbers.`1` | `2`] = js.undefined
+    var channels: js.UndefOr[typings.rtpParser.rtpParserInts.`1` | `2`] = js.undefined
     
     var clockRate: js.UndefOr[`8000` | `16000` | `44100` | `90000` | `11025` | `22050`] = js.undefined
     
@@ -289,7 +287,7 @@ object mod {
     
     extension [Self <: ParsedRTPType](x: Self) {
       
-      inline def setChannels(value: typings.rtpParser.rtpParserNumbers.`1` | `2`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: typings.rtpParser.rtpParserInts.`1` | `2`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
       inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       

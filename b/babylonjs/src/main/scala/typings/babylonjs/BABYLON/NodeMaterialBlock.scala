@@ -14,31 +14,25 @@ trait NodeMaterialBlock extends StObject {
   
   /* private */ var _buildTarget: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _codeVariableName: String = js.native
   
   /* protected */ def _declareOutput(output: NodeMaterialConnectionPoint, state: NodeMaterialBuildState): String = js.native
   
   /**
-    * @param serializationObject
-    * @param scene
-    * @param rootUrl
-    * @hidden
+    * @internal
     */
   def _deserialize(serializationObject: Any, scene: Scene, rootUrl: String): Unit = js.native
   
   /* private */ var _deserializePortDisplayNamesAndExposedOnFrame: Any = js.native
   
   /**
-    * @param uniqueNames
-    * @param alreadyDumped
-    * @hidden
+    * @internal
     */
   def _dumpCode(uniqueNames: js.Array[String], alreadyDumped: js.Array[NodeMaterialBlock]): String = js.native
   
   /**
-    * @param alreadyDumped
-    * @hidden
+    * @internal
     */
   def _dumpCodeForOutputConnections(alreadyDumped: js.Array[NodeMaterialBlock]): String = js.native
   
@@ -46,7 +40,7 @@ trait NodeMaterialBlock extends StObject {
   
   /* protected */ def _inputRename(name: String): String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _inputs: js.Array[NodeMaterialConnectionPoint] = js.native
   
   /* private */ var _isFinalMerger: Any = js.native
@@ -60,15 +54,15 @@ trait NodeMaterialBlock extends StObject {
   
   /* private */ var _name: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   val _originalTargetIsNeutral: Boolean = js.native
   
   /* protected */ def _outputRename(name: String): String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _outputs: js.Array[NodeMaterialConnectionPoint] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _preparationId: Double = js.native
   
   /* private */ var _processBuild: Any = js.native

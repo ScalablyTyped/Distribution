@@ -12,7 +12,7 @@ trait OptionalCallExpression_
      with Node
      with Standardized {
   
-  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]
+  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]
   
   var callee: Expression
   
@@ -20,7 +20,7 @@ trait OptionalCallExpression_
   
   var typeArguments: js.UndefOr[TypeParameterInstantiation_ | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TSTypeParameterInstantiation | Null] = js.undefined
+  var typeParameters: js.UndefOr[TSTypeParameterInstantiation__ | Null] = js.undefined
   
   @JSName("type")
   var type_OptionalCallExpression_ : OptionalCallExpression
@@ -28,7 +28,7 @@ trait OptionalCallExpression_
 object OptionalCallExpression_ {
   
   inline def apply(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
     callee: Expression,
     optional: Boolean
   ): OptionalCallExpression_ = {
@@ -39,9 +39,9 @@ object OptionalCallExpression_ {
   
   extension [Self <: OptionalCallExpression_](x: Self) {
     
-    inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_)*): Self = StObject.set(x, "arguments", js.Array(value*))
+    inline def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_)*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object OptionalCallExpression_ {
     
     inline def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
     
-    inline def setTypeParameters(value: TSTypeParameterInstantiation): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TSTypeParameterInstantiation__): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     

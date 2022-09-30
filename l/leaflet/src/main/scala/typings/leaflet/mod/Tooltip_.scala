@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Tooltip")
 @js.native
-class Tooltip_ () extends DivOverlay {
+open class Tooltip_ () extends DivOverlay {
   def this(options: TooltipOptions) = this()
   def this(options: Unit, source: Layer) = this()
   def this(options: TooltipOptions, source: Layer) = this()

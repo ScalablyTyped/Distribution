@@ -18,13 +18,12 @@ trait Observable[T] extends StObject {
   var _coroutineSchedulerDispose: js.UndefOr[js.Function0[Unit]] = js.native
   
   /**
-    * @param observer
-    * @hidden
+    * @internal
     */
   def _deferUnregister(observer: Observer[T]): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _eventState: EventState = js.native
   

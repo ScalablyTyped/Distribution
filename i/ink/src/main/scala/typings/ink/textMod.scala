@@ -31,7 +31,7 @@ object textMod extends Shortcut {
       */
     val backgroundColor: js.UndefOr[
         LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundColor */ js.Any, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
           String
         ]
       ] = js.undefined
@@ -48,7 +48,7 @@ object textMod extends Shortcut {
       */
     val color: js.UndefOr[
         LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
           String
         ]
       ] = js.undefined
@@ -98,7 +98,7 @@ object textMod extends Shortcut {
       
       inline def setBackgroundColor(
         value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundColor */ js.Any, 
+              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
               String
             ]
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
@@ -115,7 +115,7 @@ object textMod extends Shortcut {
       
       inline def setColor(
         value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
+              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
               String
             ]
       ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])

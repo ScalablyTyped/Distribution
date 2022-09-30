@@ -1,6 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.ucb
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.sdbc.SQLException
 import typings.activexLibreoffice.com_.sun.star.task.ClassifiedInteractionRequest

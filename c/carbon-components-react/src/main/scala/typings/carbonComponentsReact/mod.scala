@@ -802,7 +802,7 @@ object mod {
   @js.native
   val ButtonSkeleton: FC[ButtonSkeletonProps] = js.native
   
-  inline def Button_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Button_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Button_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -1916,7 +1916,7 @@ object mod {
   // tslint:disable:unified-signatures breaks certain usages
   inline def DangerButton(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def DangerButton_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def DangerButton_T[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def DangerButton_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -2301,7 +2301,7 @@ object mod {
     
     /* static member */
     /* was `typeof TableBatchAction` */
-    inline def TableBatchAction_R_HTMLElement[R /* <: HTMLElement */](
+    inline def TableBatchAction_R[R /* <: HTMLElement */](
       props: ForwardRefProps[
           R, 
           ButtonIntrinsicProps[a] & ButtonKindProps & ButtonIntrinsicProps[abbr] & ButtonIntrinsicProps[address] & ButtonIntrinsicProps[area] & ButtonIntrinsicProps[article] & ButtonIntrinsicProps[aside] & ButtonIntrinsicProps[audio] & ButtonIntrinsicProps[b] & ButtonIntrinsicProps[base] & ButtonIntrinsicProps[bdi] & ButtonIntrinsicProps[bdo] & ButtonIntrinsicProps[big] & ButtonIntrinsicProps[blockquote] & ButtonIntrinsicProps[body] & ButtonIntrinsicProps[br] & ButtonIntrinsicProps[button] & ButtonIntrinsicProps[canvas] & ButtonIntrinsicProps[caption] & ButtonIntrinsicProps[cite] & ButtonIntrinsicProps[code] & ButtonIntrinsicProps[col] & ButtonIntrinsicProps[colgroup] & ButtonIntrinsicProps[data] & ButtonIntrinsicProps[datalist] & ButtonIntrinsicProps[dd] & ButtonIntrinsicProps[del] & ButtonIntrinsicProps[details] & ButtonIntrinsicProps[dfn] & ButtonIntrinsicProps[dialog] & ButtonIntrinsicProps[div] & ButtonIntrinsicProps[dl] & ButtonIntrinsicProps[dt] & ButtonIntrinsicProps[em] & ButtonIntrinsicProps[embed] & ButtonIntrinsicProps[fieldset] & ButtonIntrinsicProps[figcaption] & ButtonIntrinsicProps[figure] & ButtonIntrinsicProps[footer] & ButtonIntrinsicProps[form] & ButtonIntrinsicProps[h1] & ButtonIntrinsicProps[h2] & ButtonIntrinsicProps[h3] & ButtonIntrinsicProps[h4] & ButtonIntrinsicProps[h5] & ButtonIntrinsicProps[h6] & ButtonIntrinsicProps[head] & ButtonIntrinsicProps[header] & ButtonIntrinsicProps[hgroup] & ButtonIntrinsicProps[hr] & ButtonIntrinsicProps[html] & ButtonIntrinsicProps[i] & ButtonIntrinsicProps[iframe] & ButtonIntrinsicProps[img] & ButtonIntrinsicProps[input] & ButtonIntrinsicProps[ins] & ButtonIntrinsicProps[kbd] & ButtonIntrinsicProps[keygen] & ButtonIntrinsicProps[label] & ButtonIntrinsicProps[legend] & ButtonIntrinsicProps[li] & ButtonIntrinsicProps[link] & ButtonIntrinsicProps[main] & ButtonIntrinsicProps[map] & ButtonIntrinsicProps[mark] & ButtonIntrinsicProps[menu] & ButtonIntrinsicProps[menuitem] & ButtonIntrinsicProps[meta] & ButtonIntrinsicProps[meter] & ButtonIntrinsicProps[nav] & ButtonIntrinsicProps[noindex] & ButtonIntrinsicProps[noscript] & ButtonIntrinsicProps[`object`] & ButtonIntrinsicProps[ol] & ButtonIntrinsicProps[optgroup] & ButtonIntrinsicProps[option] & ButtonIntrinsicProps[output] & ButtonIntrinsicProps[p] & ButtonIntrinsicProps[param] & ButtonIntrinsicProps[picture] & ButtonIntrinsicProps[pre] & ButtonIntrinsicProps[progress] & ButtonIntrinsicProps[q] & ButtonIntrinsicProps[rp] & ButtonIntrinsicProps[rt] & ButtonIntrinsicProps[ruby] & ButtonIntrinsicProps[s] & ButtonIntrinsicProps[samp] & ButtonIntrinsicProps[slot] & ButtonIntrinsicProps[script] & ButtonIntrinsicProps[section] & ButtonIntrinsicProps[select] & ButtonIntrinsicProps[small] & ButtonIntrinsicProps[source] & ButtonIntrinsicProps[span] & ButtonIntrinsicProps[strong] & ButtonIntrinsicProps[style] & ButtonIntrinsicProps[sub] & ButtonIntrinsicProps[summary] & ButtonIntrinsicProps[sup] & ButtonIntrinsicProps[table] & ButtonIntrinsicProps[template] & ButtonIntrinsicProps[tbody] & ButtonIntrinsicProps[td] & ButtonIntrinsicProps[textarea] & ButtonIntrinsicProps[tfoot] & ButtonIntrinsicProps[th] & ButtonIntrinsicProps[thead] & ButtonIntrinsicProps[time] & ButtonIntrinsicProps[title] & ButtonIntrinsicProps[tr] & ButtonIntrinsicProps[track] & ButtonIntrinsicProps[u] & ButtonIntrinsicProps[ul] & ButtonIntrinsicProps[`var`] & ButtonIntrinsicProps[video] & ButtonIntrinsicProps[wbr] & ButtonIntrinsicProps[webview] & ButtonIntrinsicProps[svg] & ButtonIntrinsicProps[animate] & ButtonIntrinsicProps[animateMotion] & ButtonIntrinsicProps[animateTransform] & ButtonIntrinsicProps[circle] & ButtonIntrinsicProps[clipPath] & ButtonIntrinsicProps[defs] & ButtonIntrinsicProps[desc_] & ButtonIntrinsicProps[ellipse] & ButtonIntrinsicProps[feBlend] & ButtonIntrinsicProps[feColorMatrix] & ButtonIntrinsicProps[feComponentTransfer] & ButtonIntrinsicProps[feComposite] & ButtonIntrinsicProps[feConvolveMatrix] & ButtonIntrinsicProps[feDiffuseLighting] & ButtonIntrinsicProps[feDisplacementMap] & ButtonIntrinsicProps[feDistantLight] & ButtonIntrinsicProps[feDropShadow] & ButtonIntrinsicProps[feFlood] & ButtonIntrinsicProps[feFuncA] & ButtonIntrinsicProps[feFuncB] & ButtonIntrinsicProps[feFuncG] & ButtonIntrinsicProps[feFuncR] & ButtonIntrinsicProps[feGaussianBlur] & ButtonIntrinsicProps[feImage] & ButtonIntrinsicProps[feMerge] & ButtonIntrinsicProps[feMergeNode] & ButtonIntrinsicProps[feMorphology] & ButtonIntrinsicProps[feOffset] & ButtonIntrinsicProps[fePointLight] & ButtonIntrinsicProps[feSpecularLighting] & ButtonIntrinsicProps[feSpotLight] & ButtonIntrinsicProps[feTile] & ButtonIntrinsicProps[feTurbulence] & ButtonIntrinsicProps[filter] & ButtonIntrinsicProps[foreignObject] & ButtonIntrinsicProps[g] & ButtonIntrinsicProps[image] & ButtonIntrinsicProps[line] & ButtonIntrinsicProps[linearGradient] & ButtonIntrinsicProps[marker] & ButtonIntrinsicProps[mask] & ButtonIntrinsicProps[metadata] & ButtonIntrinsicProps[mpath] & ButtonIntrinsicProps[path] & ButtonIntrinsicProps[pattern] & ButtonIntrinsicProps[polygon] & ButtonIntrinsicProps[polyline] & ButtonIntrinsicProps[radialGradient] & ButtonIntrinsicProps[rect] & ButtonIntrinsicProps[stop] & ButtonIntrinsicProps[switch] & ButtonIntrinsicProps[symbol] & ButtonIntrinsicProps[text] & ButtonIntrinsicProps[textPath] & ButtonIntrinsicProps[tspan] & ButtonIntrinsicProps[use] & ButtonIntrinsicProps[view]
@@ -2310,7 +2310,7 @@ object mod {
     
     /* static member */
     /* was `typeof TableBatchAction` */
-    inline def TableBatchAction_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+    inline def TableBatchAction_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
     
     /* static member */
     /* was `typeof TableBatchActions` */
@@ -3051,7 +3051,7 @@ object mod {
   // tslint:disable:unified-signatures breaks certain usages
   inline def PrimaryButton(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def PrimaryButton_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def PrimaryButton_T[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def PrimaryButton_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -3820,7 +3820,7 @@ object mod {
   // tslint:disable:unified-signatures breaks certain usages
   inline def SecondaryButton(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def SecondaryButton_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def SecondaryButton_T[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def SecondaryButton_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -4341,7 +4341,7 @@ object mod {
     ]
   ): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def TableBatchAction_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def TableBatchAction_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def TableBatchAction_a[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[a] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

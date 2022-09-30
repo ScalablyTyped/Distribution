@@ -13,18 +13,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/workflows relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IOutcome because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsExclusiveSplitActivity, containerAsParallelSplitActivity, containerAsWorkflowTask, flow */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Outcome")
+- typings.mendixmodelsdk.workflowsMod.workflows.IOutcome because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConditionOutcomeActivity, containerAsParallelSplitActivity, containerAsUserTask, flow */ @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Outcome")
 @js.native
 abstract class Outcome protected () extends Element[IModel] {
   def this(
@@ -36,49 +35,40 @@ abstract class Outcome protected () extends Element[IModel] {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
-  def containerAsExclusiveSplitActivity: ExclusiveSplitActivity = js.native
-  @JSName("containerAsExclusiveSplitActivity")
-  val containerAsExclusiveSplitActivity_FOutcome: IExclusiveSplitActivity = js.native
+  def containerAsConditionOutcomeActivity: ConditionOutcomeActivity = js.native
+  @JSName("containerAsConditionOutcomeActivity")
+  val containerAsConditionOutcomeActivity_FOutcome: IConditionOutcomeActivity = js.native
   
   def containerAsParallelSplitActivity: ParallelSplitActivity = js.native
   @JSName("containerAsParallelSplitActivity")
   val containerAsParallelSplitActivity_FOutcome: IParallelSplitActivity = js.native
   
-  def containerAsWorkflowTask: WorkflowTask = js.native
-  @JSName("containerAsWorkflowTask")
-  val containerAsWorkflowTask_FOutcome: IWorkflowTask = js.native
+  def containerAsUserTask: UserTask = js.native
+  @JSName("containerAsUserTask")
+  val containerAsUserTask_FOutcome: IUserTask = js.native
   
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
-    */
   def flow: Flow = js.native
   def flow_=(newValue: Flow): Unit = js.native
   /**
     * This property is required and cannot be set to null.
-    *
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
     */
   @JSName("flow")
   val flow_FOutcome: IFlow = js.native
 }
 object Outcome {
   
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Outcome")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Outcome")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Outcome.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Outcome.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Outcome.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Outcome.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

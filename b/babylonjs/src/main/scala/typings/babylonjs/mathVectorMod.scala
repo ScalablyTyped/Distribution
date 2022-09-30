@@ -1777,19 +1777,19 @@ object mathVectorMod {
     def this(x: Unit, y: Unit, z: Double, w: Double) = this()
     def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
     
-    /** @hidden */
+    /** @internal */
     var _isDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _w: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _x: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _y: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _z: Double = js.native
     
     /**
@@ -2314,6 +2314,27 @@ object mathVectorMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromAxisToRef")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * Creates the rotation quaternion needed to rotate from one Vector3 onto another Vector3
+      * @param fromVector the starting vector
+      * @param toVector the ending vector
+      * @returns the rotation quaternion needed
+      */
+    inline def RotationQuaternionFromOnto(fromVector: DeepImmutable[Vector3], toVector: DeepImmutable[Vector3]): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromOnto")(fromVector.asInstanceOf[js.Any], toVector.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    
+    /**
+      * Creates the rotation quaternion needed to rotate from one Vector3 onto another Vector3 and stores in a result Quaternion
+      * @param fromVector the starting vector
+      * @param toVector the ending vector
+      * @param result the rotation quaternion needed
+      * @returns the result
+      */
+    inline def RotationQuaternionFromOntoToRef(
+      fromVector: DeepImmutable[Vector3],
+      toVector: DeepImmutable[Vector3],
+      result: DeepImmutable[Quaternion]
+    ): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationQuaternionFromOntoToRef")(fromVector.asInstanceOf[js.Any], toVector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    
+    /**
       * Creates a new quaternion from the given Euler float angles (y, x, z)
       * @param yaw defines the rotation around Y axis
       * @param pitch defines the rotation around X axis
@@ -2655,7 +2676,7 @@ object mathVectorMod {
     /**
       * Negate the current Vector2 and stores the result in the given vector "result" coordinates
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector2
+      * @returns the result
       */
     def negateToRef(result: Vector2): Vector2 = js.native
     
@@ -3007,16 +3028,24 @@ object mathVectorMod {
     def this(x: Unit, y: Double, z: Double) = this()
     def this(x: Unit, y: Unit, z: Double) = this()
     
-    /** @hidden */
+    /**
+      * Creates a vector normal (perpendicular) to the current Vector3 and stores the result in the given vector
+      * @param result defines the Vector3 object where to store the resultant normal
+      * returns the result
+      * @hidden
+      */
+    def _getNormalToRef(result: DeepImmutable[Vector3]): Vector3 = js.native
+    
+    /** @internal */
     var _isDirty: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _x: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _y: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _z: Double = js.native
     
     /**
@@ -3050,7 +3079,7 @@ object mathVectorMod {
       * Example Playground https://playground.babylonjs.com/#R1F8YU#6
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector3
+      * @returns the result
       */
     def addToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
     
@@ -3075,7 +3104,7 @@ object mathVectorMod {
       * Example Playground https://playground.babylonjs.com/#R1F8YU#9
       * @param q the unit quaternion representing the rotation
       * @param result the output vector
-      * @returns the current Vector3
+      * @returns the result
       */
     def applyRotationQuaternionToRef(q: Quaternion, result: Vector3): Vector3 = js.native
     
@@ -3134,7 +3163,7 @@ object mathVectorMod {
       * Example Playground https://playground.babylonjs.com/#R1F8YU#18
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector3
+      * @returns the result
       */
     def divideToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
     
@@ -3302,7 +3331,7 @@ object mathVectorMod {
       * Example Playground https://playground.babylonjs.com/#R1F8YU#33
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector3
+      * @returns the result
       */
     def multiplyToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
     
@@ -3324,7 +3353,7 @@ object mathVectorMod {
       * Negate the current Vector3 and stores the result in the given vector "result" coordinates
       * Example Playground https://playground.babylonjs.com/#R1F8YU#37
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector3
+      * @returns the result
       */
     def negateToRef(result: Vector3): Vector3 = js.native
     
@@ -3435,7 +3464,7 @@ object mathVectorMod {
       * Example Playground https://playground.babylonjs.com/#R1F8YU#57
       * @param scale defines the multiplier factor
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector3
+      * @returns the result
       */
     def scaleToRef(scale: Double, result: Vector3): Vector3 = js.native
     
@@ -3482,7 +3511,7 @@ object mathVectorMod {
       * @param y defines the y coordinate of the operand
       * @param z defines the z coordinate of the operand
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector3
+      * @returns the result
       */
     def subtractFromFloatsToRef(x: Double, y: Double, z: Double, result: Vector3): Vector3 = js.native
     
@@ -3499,7 +3528,7 @@ object mathVectorMod {
       * Example Playground https://playground.babylonjs.com/#R1F8YU#63
       * @param otherVector defines the second operand
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector3
+      * @returns the result
       */
     def subtractToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
     
@@ -3894,6 +3923,23 @@ object mathVectorMod {
     inline def One(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[Vector3]
     
     /**
+      * Gets the rotation that aligns the roll axis (Y) to the line joining the start point to the target point
+      * @param start the starting point
+      * @param target the target point
+      * @returns the rotation in the form (pitch, yaw, 0)
+      */
+    inline def PitchYawRollToMoveBetweenPoints(start: Vector3, target: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("PitchYawRollToMoveBetweenPoints")(start.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    /**
+      * Gets the rotation that aligns the roll axis (Y) to the line joining the start point to the target point and stores it in the ref Vector3
+      * @param start the starting point
+      * @param target the target point
+      * @param ref the vector3 to store the result
+      * @returns ref in the form (pitch, yaw, 0)
+      */
+    inline def PitchYawRollToMoveBetweenPointsToRef(start: Vector3, target: Vector3, ref: Vector3): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("PitchYawRollToMoveBetweenPointsToRef")(start.asInstanceOf[js.Any], target.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    /**
       * Project a Vector3 onto screen space
       * Example Playground https://playground.babylonjs.com/#R1F8YU#101
       * @param vector defines the Vector3 to project
@@ -4195,10 +4241,7 @@ object mathVectorMod {
     inline def _RightReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RightReadOnly")(x.asInstanceOf[js.Any])
     
     /**
-      * @param source
-      * @param matrix
-      * @param result
-      * @hidden
+      * @internal
       */
     inline def _UnprojectFromInvertedMatrixToRef(source: DeepImmutable[Vector3], matrix: DeepImmutable[Matrix], result: Vector3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_UnprojectFromInvertedMatrixToRef")(source.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -4433,7 +4476,7 @@ object mathVectorMod {
     /**
       * Negate the current Vector4 and stores the result in the given vector "result" coordinates
       * @param result defines the Vector3 object where to store the result
-      * @returns the current Vector4
+      * @returns the result
       */
     def negateToRef(result: Vector4): Vector4 = js.native
     

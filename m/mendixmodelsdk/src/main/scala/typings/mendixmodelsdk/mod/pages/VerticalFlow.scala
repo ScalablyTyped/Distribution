@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.VerticalFlow")
 @js.native
-class VerticalFlow protected ()
+open class VerticalFlow protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.VerticalFlow {
   def this(
     model: AbstractModel,

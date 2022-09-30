@@ -14,7 +14,6 @@ import typings.remixRunRouter.anon.ActionResult
 import typings.remixRunRouter.historyMod.Action
 import typings.remixRunRouter.historyMod.InitialEntry
 import typings.remixRunRouter.historyMod.To
-import typings.remixRunRouter.routerMod.HydrationState
 import typings.remixRunRouter.routerMod.Router
 import typings.remixRunRouter.utilsMod.ActionFunction
 import typings.remixRunRouter.utilsMod.ActionFunctionArgs
@@ -92,65 +91,6 @@ object componentsMod {
   }
   
   type AwaitResolveRenderFunction = js.Function1[/* data */ Awaited[Any], ReactElement]
-  
-  trait DataMemoryRouterProps extends StObject {
-    
-    var basename: js.UndefOr[String] = js.undefined
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var fallbackElement: js.UndefOr[ReactNode] = js.undefined
-    
-    var hydrationData: js.UndefOr[HydrationState] = js.undefined
-    
-    var initialEntries: js.UndefOr[js.Array[InitialEntry]] = js.undefined
-    
-    var initialIndex: js.UndefOr[Double] = js.undefined
-    
-    var routes: js.UndefOr[js.Array[RouteObject]] = js.undefined
-  }
-  object DataMemoryRouterProps {
-    
-    inline def apply(): DataMemoryRouterProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DataMemoryRouterProps]
-    }
-    
-    extension [Self <: DataMemoryRouterProps](x: Self) {
-      
-      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
-      
-      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setFallbackElement(value: ReactNode): Self = StObject.set(x, "fallbackElement", value.asInstanceOf[js.Any])
-      
-      inline def setFallbackElementUndefined: Self = StObject.set(x, "fallbackElement", js.undefined)
-      
-      inline def setHydrationData(value: HydrationState): Self = StObject.set(x, "hydrationData", value.asInstanceOf[js.Any])
-      
-      inline def setHydrationDataUndefined: Self = StObject.set(x, "hydrationData", js.undefined)
-      
-      inline def setInitialEntries(value: js.Array[InitialEntry]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
-      
-      inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
-      
-      inline def setInitialEntriesVarargs(value: InitialEntry*): Self = StObject.set(x, "initialEntries", js.Array(value*))
-      
-      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
-      
-      inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
-      
-      inline def setRoutes(value: js.Array[RouteObject]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
-      
-      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
-      
-      inline def setRoutesVarargs(value: RouteObject*): Self = StObject.set(x, "routes", js.Array(value*))
-    }
-  }
   
   trait DataRouteProps extends StObject {
     

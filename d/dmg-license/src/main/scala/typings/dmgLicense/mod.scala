@@ -86,7 +86,7 @@ object mod {
           /* index */ Double, 
           T
         ]
-    ): typings.dmgLicense.labelsMod.Labels[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fun.asInstanceOf[js.Any]).asInstanceOf[typings.dmgLicense.labelsMod.Labels[T]]
+    ): WithoutLanguageName[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fun.asInstanceOf[js.Any]).asInstanceOf[WithoutLanguageName[T]]
     inline def create[T](
       fun: js.Function2[
           /* keyof dmg-license.dmg-license/lib/Labels.Labels<string> */ /* key */ languageName | agree | disagree | print | save | message, 
@@ -144,13 +144,13 @@ object mod {
       options: CreateOptions
     ): js.Promise[typings.dmgLicense.labelsMod.Labels[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(fun.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.dmgLicense.labelsMod.Labels[T]]]
     
-    inline def create_T_WithoutLanguageName[T](
+    inline def create_T_Labels[T](
       fun: js.Function2[
           /* keyof dmg-license.dmg-license/lib/Labels.Labels<string> */ /* key */ languageName | agree | disagree | print | save | message, 
           /* index */ Double, 
           T
         ]
-    ): WithoutLanguageName[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fun.asInstanceOf[js.Any]).asInstanceOf[WithoutLanguageName[T]]
+    ): typings.dmgLicense.labelsMod.Labels[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fun.asInstanceOf[js.Any]).asInstanceOf[typings.dmgLicense.labelsMod.Labels[T]]
     
     /* Inlined std.Readonly<{  languageName :string,   agree :string,   disagree :string,   print :string,   save :string,   message :string}> */
     object descriptions {

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "IdentifyFeatures")
 @js.native
-class IdentifyFeatures_ protected ()
+open class IdentifyFeatures_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.IdentifyFeatures_ {
   def this(options: IdentifyFeaturesOptions) = this()
   def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_) = this()

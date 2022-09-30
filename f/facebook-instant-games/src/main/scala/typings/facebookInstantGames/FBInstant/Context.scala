@@ -27,7 +27,7 @@ trait Context extends StObject {
     * Attempts to create or switch into a context between a specified player and the current player. The returned promise will reject if the player listed is not a Connected Player of the current
     * player or if the player does not provide permission to enter the new context. Otherwise, the promise will resolve when the game has switched into the new context.
     *
-    * @param playerID ID of the player
+    * @param suggestedPlayerIDs A list of game suggested playerIDs or a single suggested playerID or no input
     * @returns A promise that resolves when the game has switched into the new context, or rejects otherwise.
     * @throws INVALID_PARAM
     * @throws SAME_CONTEXT
@@ -36,7 +36,9 @@ trait Context extends StObject {
     * @throws PENDING_REQUEST
     * @throws CLIENT_UNSUPPORTED_OPERATION
     */
-  def createAsync(playerID: String): js.Promise[Unit] = js.native
+  def createAsync(): js.Promise[Unit] = js.native
+  def createAsync(suggestedPlayerIDs: String): js.Promise[Unit] = js.native
+  def createAsync(suggestedPlayerIDs: js.Array[String]): js.Promise[Unit] = js.native
   
   /**
     * A unique identifier for the current game context. This represents a specific context that the game is being played in

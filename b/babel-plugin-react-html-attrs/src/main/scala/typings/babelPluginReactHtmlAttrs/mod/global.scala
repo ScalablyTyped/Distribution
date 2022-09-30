@@ -1,5 +1,6 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import typings.babelPluginReactHtmlAttrs.HTMLBdoElement
 import typings.babelPluginReactHtmlAttrs.HTMLWebViewElement
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
@@ -166,7 +167,7 @@ object global {
       
       var bdi: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
-      var bdo: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
+      var bdo: typings.react.mod.DetailedHTMLProps[BdoHTMLAttributes[HTMLBdoElement], HTMLBdoElement]
       
       var big: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
       
@@ -514,7 +515,7 @@ object global {
         b: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement],
         base: typings.react.mod.DetailedHTMLProps[typings.react.mod.BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement],
         bdi: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement],
-        bdo: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement],
+        bdo: typings.react.mod.DetailedHTMLProps[BdoHTMLAttributes[HTMLBdoElement], HTMLBdoElement],
         big: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement],
         blockquote: typings.react.mod.DetailedHTMLProps[typings.react.mod.BlockquoteHTMLAttributes[HTMLElement], HTMLElement],
         body: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLBodyElement], HTMLBodyElement],
@@ -737,9 +738,7 @@ object global {
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
         
-        inline def setBdo(
-          value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
-        ): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
+        inline def setBdo(value: typings.react.mod.DetailedHTMLProps[BdoHTMLAttributes[HTMLBdoElement], HTMLBdoElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
         
         inline def setBig(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]

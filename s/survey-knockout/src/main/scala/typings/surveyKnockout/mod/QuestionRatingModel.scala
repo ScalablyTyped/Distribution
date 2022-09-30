@@ -1,8 +1,8 @@
 package typings.surveyKnockout.mod
 
-import typings.surveyKnockout.surveyKnockoutStrings.always
 import typings.surveyKnockout.surveyKnockoutStrings.auto
-import typings.surveyKnockout.surveyKnockoutStrings.never
+import typings.surveyKnockout.surveyKnockoutStrings.buttons
+import typings.surveyKnockout.surveyKnockoutStrings.dropdown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,17 @@ open class QuestionRatingModel protected () extends Question {
   def this(name: String) = this()
   
   def allowClear: Boolean = js.native
+  
+  /*
+    * Specifies how a Rating question displays rate values.
+    * 
+    * Possible values:
+    * 
+    * - `"buttons"` - Displays rate values as buttons in a row.
+    * - `"dropdown"` - Displays rate values as items in a drop-down list.
+    * - `"auto"` (default) - Selects between the `"buttons"` and `"dropdown"` modes based on the available width. When the width is insufficient to display buttons, the question displays a dropdown.
+    */
+  var displayMode: dropdown | auto | buttons = js.native
   
   /*
     * Specifies whether a Rating question displays the [minRateDescription](https://surveyjs.io/Documentation/Library?id=questionratingmodel#minRateDescription) and [maxRateDescription](https://surveyjs.io/Documentation/Library?id=questionratingmodel#maxRateDescription) property texts as buttons that correspond to the extreme (first and last) rate items. If any of these properties is empty, the corresponding rate item's value/text is used for display.
@@ -95,8 +106,6 @@ open class QuestionRatingModel protected () extends Question {
     * Click value again to clear.
     */
   def setValueFromClick(value: Any): Unit = js.native
-  
-  var useDropdown: auto | always | never = js.native
   
   def visibleChoices: Any = js.native
   

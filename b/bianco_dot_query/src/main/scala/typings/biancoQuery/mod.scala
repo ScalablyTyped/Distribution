@@ -305,13 +305,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[W /* <: Window */](selectors: W): js.Array[W] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[W]]
-  inline def default[W /* <: Window */](selectors: W, scope: Scope): js.Array[W] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[W]]
+  inline def default[D /* <: Document */](selectors: D): js.Array[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[D]]
+  inline def default[D /* <: Document */](selectors: D, scope: Scope): js.Array[D] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[D]]
   inline def default[E /* <: Element */](selectors: String): js.Array[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[E]]
   inline def default[E /* <: Element */](selectors: String, scope: Scope): js.Array[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[E]]
   
-  inline def default_D_Document[D /* <: Document */](selectors: D): js.Array[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[D]]
-  inline def default_D_Document[D /* <: Document */](selectors: D, scope: Scope): js.Array[D] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[D]]
+  inline def default_W[W /* <: Window */](selectors: W): js.Array[W] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[W]]
+  inline def default_W[W /* <: Window */](selectors: W, scope: Scope): js.Array[W] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[W]]
   
   // borrowed from DOM querySelectorAll
   inline def default_a(selectors: a): js.Array[SVGAElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[SVGAElement]]

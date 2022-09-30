@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object owStrings {
   
   @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
+  sealed trait TypeOfShape extends StObject
+  inline def TypeOfShape: TypeOfShape = "TypeOfShape".asInstanceOf[TypeOfShape]
 }

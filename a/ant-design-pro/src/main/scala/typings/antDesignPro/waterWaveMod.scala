@@ -11,8 +11,7 @@ object waterWaveMod {
   
   @JSImport("ant-design-pro/lib/Charts/WaterWave", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IWaterWaveProps, js.Any, js.Any]
+  open class default () extends Component[IWaterWaveProps, Any, Any]
   
   trait IWaterWaveProps extends StObject {
     
@@ -53,5 +52,5 @@ object waterWaveMod {
     }
   }
   
-  type WaterWave = Component[IWaterWaveProps, js.Any, js.Any]
+  type WaterWave = Component[IWaterWaveProps, Any, Any]
 }

@@ -1,18 +1,18 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`1`
-import typings.activexOutlook.activexOutlookNumbers.`2`
-import typings.activexOutlook.activexOutlookNumbers.`3`
-import typings.activexOutlook.activexOutlookNumbers.`4`
+import typings.activexOutlook.activexOutlookInts.`1`
+import typings.activexOutlook.activexOutlookInts.`2`
+import typings.activexOutlook.activexOutlookInts.`3`
+import typings.activexOutlook.activexOutlookInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`4`
-  - typings.activexOutlook.activexOutlookNumbers.`2`
-  - typings.activexOutlook.activexOutlookNumbers.`3`
-  - typings.activexOutlook.activexOutlookNumbers.`1`
+  - typings.activexOutlook.activexOutlookInts.`4`
+  - typings.activexOutlook.activexOutlookInts.`2`
+  - typings.activexOutlook.activexOutlookInts.`3`
+  - typings.activexOutlook.activexOutlookInts.`1`
 */
 trait OlFormatYesNo extends StObject
 object OlFormatYesNo {

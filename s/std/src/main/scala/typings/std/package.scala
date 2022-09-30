@@ -298,11 +298,11 @@ type PositionErrorCallback = js.Function1[/* positionError */ GeolocationPositio
 
 type PromiseConstructorLike = Instantiable1[
 /* executor */ js.Function2[
-  /* resolve */ js.Function1[/* value */ js.Object | js.Thenable[js.Object], Unit], 
+  /* resolve */ js.Function1[/* value */ js.Object | PromiseLike[js.Object], Unit], 
   /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
   Unit
 ], 
-js.Thenable[js.Object]]
+PromiseLike[js.Object]]
 
 type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, Unit]
 
@@ -391,14 +391,14 @@ type TimerHandler = java.lang.String | js.Function
 */
 type Transferable = _Transferable | js.typedarray.ArrayBuffer
 
-type TransformerFlushCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Unit | js.Thenable[Unit]]
+type TransformerFlushCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Unit | PromiseLike[Unit]]
 
 type TransformerStartCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Any]
 
 type TransformerTransformCallback[I, O] = js.Function2[
 /* chunk */ I, 
 /* controller */ TransformStreamDefaultController[O], 
-Unit | js.Thenable[Unit]]
+Unit | PromiseLike[Unit]]
 
 type TypeError = js.Error
 
@@ -411,20 +411,20 @@ type Uint32List = js.typedarray.Uint32Array | js.Array[GLuint]
   */
 type Uncapitalize[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ Any
 
-type UnderlyingSinkAbortCallback = js.Function1[/* reason */ js.UndefOr[Any], Unit | js.Thenable[Unit]]
+type UnderlyingSinkAbortCallback = js.Function1[/* reason */ js.UndefOr[Any], Unit | PromiseLike[Unit]]
 
-type UnderlyingSinkCloseCallback = js.Function0[Unit | js.Thenable[Unit]]
+type UnderlyingSinkCloseCallback = js.Function0[Unit | PromiseLike[Unit]]
 
 type UnderlyingSinkStartCallback = js.Function1[/* controller */ WritableStreamDefaultController, Any]
 
 type UnderlyingSinkWriteCallback[W] = js.Function2[
 /* chunk */ W, 
 /* controller */ WritableStreamDefaultController, 
-Unit | js.Thenable[Unit]]
+Unit | PromiseLike[Unit]]
 
-type UnderlyingSourceCancelCallback = js.Function1[/* reason */ js.UndefOr[Any], Unit | js.Thenable[Unit]]
+type UnderlyingSourceCancelCallback = js.Function1[/* reason */ js.UndefOr[Any], Unit | PromiseLike[Unit]]
 
-type UnderlyingSourcePullCallback[R] = js.Function1[/* controller */ ReadableStreamController[R], Unit | js.Thenable[Unit]]
+type UnderlyingSourcePullCallback[R] = js.Function1[/* controller */ ReadableStreamController[R], Unit | PromiseLike[Unit]]
 
 type UnderlyingSourceStartCallback[R] = js.Function1[/* controller */ ReadableStreamController[R], Any]
 

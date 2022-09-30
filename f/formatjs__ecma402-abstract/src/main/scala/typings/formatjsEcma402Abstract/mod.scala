@@ -12,21 +12,21 @@ import typings.formatjsEcma402Abstract.anon.Type
 import typings.formatjsEcma402Abstract.anon.TzData
 import typings.formatjsEcma402Abstract.anon.Value
 import typings.formatjsEcma402Abstract.anon.valueanyThisTypeany
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`10`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`11`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`1`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`2`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`365`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`366`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`3`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`4`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`5`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`6`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`7`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`8`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`9`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractMod.LiteralPart
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`0`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`10`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`11`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`2`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`365`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`366`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`3`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`4`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`5`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`6`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`7`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`8`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`9`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.BigInt
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Null
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.Number
@@ -259,7 +259,7 @@ object mod {
   
   inline def getMagnitude(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMagnitude")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def getMultiInternalSlots[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, fields: Field*): Pick[Internal, Field] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMultiInternalSlots")((List(map.asInstanceOf[js.Any], pl.asInstanceOf[js.Any])).`++`(fields.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Pick[Internal, Field]]
+  inline def getMultiInternalSlots[Instance /* <: js.Object */, Internal /* <: js.Object */, Field /* <: /* keyof Internal */ String */](map: WeakMap[Instance, Internal], pl: Instance, fields: Field*): Pick[Internal, Field] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMultiInternalSlots")((scala.List(map.asInstanceOf[js.Any], pl.asInstanceOf[js.Any])).`++`(fields.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Pick[Internal, Field]]
   
   inline def invariant(condition: Boolean, message: String): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
   inline def invariant(condition: Boolean, message: String, Err: Any): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any], Err.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]

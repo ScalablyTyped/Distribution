@@ -67,6 +67,7 @@ type IncludeAdditionalLanguageCodes = Boolean
   - typings.awsSdk.awsSdkStrings.`en-ZA`
   - typings.awsSdk.awsSdkStrings.`ca-ES`
   - typings.awsSdk.awsSdkStrings.`de-AT`
+  - typings.awsSdk.awsSdkStrings.`yue-CN`
   - java.lang.String
 */
 type LanguageCode = _LanguageCode | String
@@ -224,6 +225,7 @@ type TextType = _TextType | String
   - typings.awsSdk.awsSdkStrings.Liam
   - typings.awsSdk.awsSdkStrings.Pedro
   - typings.awsSdk.awsSdkStrings.Kajal
+  - typings.awsSdk.awsSdkStrings.Hiujin
   - java.lang.String
 */
 type VoiceId = _VoiceId | String

@@ -112,18 +112,18 @@ object transportationMod {
   
   trait IResponse extends StObject {
     
-    var headers: StringDictionary[js.Any]
+    var headers: StringDictionary[Any]
   }
   object IResponse {
     
-    inline def apply(headers: StringDictionary[js.Any]): IResponse = {
+    inline def apply(headers: StringDictionary[Any]): IResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResponse]
     }
     
     extension [Self <: IResponse](x: Self) {
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,10 +152,10 @@ object transportationMod {
   object ITransportation {
     
     inline def apply(
-      request: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit,
-      requestFileDownload: (IRequestFileDownloadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit,
-      requestMultipartBinaryFileUpload: (IRequestMultipartBinaryFileUploadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit,
-      retryableRequest: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit
+      request: (IRequestOptions, IResponseCallback[Any], IErrorCallback) => Unit,
+      requestFileDownload: (IRequestFileDownloadOptions, IResponseCallback[Any], IErrorCallback) => Unit,
+      requestMultipartBinaryFileUpload: (IRequestMultipartBinaryFileUploadOptions, IResponseCallback[Any], IErrorCallback) => Unit,
+      retryableRequest: (IRequestOptions, IResponseCallback[Any], IErrorCallback) => Unit
     ): ITransportation = {
       val __obj = js.Dynamic.literal(request = js.Any.fromFunction3(request), requestFileDownload = js.Any.fromFunction3(requestFileDownload), requestMultipartBinaryFileUpload = js.Any.fromFunction3(requestMultipartBinaryFileUpload), retryableRequest = js.Any.fromFunction3(retryableRequest))
       __obj.asInstanceOf[ITransportation]
@@ -163,15 +163,13 @@ object transportationMod {
     
     extension [Self <: ITransportation](x: Self) {
       
-      inline def setRequest(value: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
+      inline def setRequest(value: (IRequestOptions, IResponseCallback[Any], IErrorCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
-      inline def setRequestFileDownload(value: (IRequestFileDownloadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "requestFileDownload", js.Any.fromFunction3(value))
+      inline def setRequestFileDownload(value: (IRequestFileDownloadOptions, IResponseCallback[Any], IErrorCallback) => Unit): Self = StObject.set(x, "requestFileDownload", js.Any.fromFunction3(value))
       
-      inline def setRequestMultipartBinaryFileUpload(
-        value: (IRequestMultipartBinaryFileUploadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit
-      ): Self = StObject.set(x, "requestMultipartBinaryFileUpload", js.Any.fromFunction3(value))
+      inline def setRequestMultipartBinaryFileUpload(value: (IRequestMultipartBinaryFileUploadOptions, IResponseCallback[Any], IErrorCallback) => Unit): Self = StObject.set(x, "requestMultipartBinaryFileUpload", js.Any.fromFunction3(value))
       
-      inline def setRetryableRequest(value: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "retryableRequest", js.Any.fromFunction3(value))
+      inline def setRetryableRequest(value: (IRequestOptions, IResponseCallback[Any], IErrorCallback) => Unit): Self = StObject.set(x, "retryableRequest", js.Any.fromFunction3(value))
     }
   }
   

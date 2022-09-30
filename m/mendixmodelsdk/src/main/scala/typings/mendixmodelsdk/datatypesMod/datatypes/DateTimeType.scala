@@ -15,10 +15,12 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.mappingsMod.mappings.ValueMappingElement
 import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
+import typings.mendixmodelsdk.microflowsMod.microflows.MLModelCallParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling
+import typings.mendixmodelsdk.pagesMod.pages.PageParameter
 import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
@@ -36,9 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.datatypesMod.datatypes.IDataType because Already inherited
-- typings.mendixmodelsdk.datatypesMod.datatypes.IDateTimeType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType")
+- typings.mendixmodelsdk.datatypesMod.datatypes.IDateTimeType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.DateTimeType")
 @js.native
-class DateTimeType protected () extends DataType {
+open class DateTimeType protected () extends DataType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -71,10 +73,13 @@ class DateTimeType protected () extends DataType {
   
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MDateTimeType: MicroflowParameterBase = js.native
+  
+  @JSName("containerAsPageParameter")
+  def containerAsPageParameter_MDateTimeType: PageParameter = js.native
 }
 object DateTimeType {
   
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.DateTimeType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -92,7 +97,7 @@ object DateTimeType {
     * of the parent appservices.AppServiceActionParameter element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.0.1
     */
   /* static member */
   inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
@@ -103,7 +108,7 @@ object DateTimeType {
     * of the parent appservices.AppServiceAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.0.1
     */
   /* static member */
   inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
@@ -176,6 +181,17 @@ object DateTimeType {
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
+    * The new DateTimeType will be automatically stored in the 'parameterType' property
+    * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.10.0 to 9.17.0
+    */
+  /* static member */
+  inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
+  
+  /**
+    * Creates and returns a new DateTimeType instance in the SDK and on the server.
     * The new DateTimeType will be automatically stored in the 'microflowReturnType' property
     * of the parent microflows.MicroflowBase element passed as argument.
     *
@@ -206,6 +222,17 @@ object DateTimeType {
     */
   /* static member */
   inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
+  
+  /**
+    * Creates and returns a new DateTimeType instance in the SDK and on the server.
+    * The new DateTimeType will be automatically stored in the 'parameterType' property
+    * of the parent pages.PageParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.4.0 and higher
+    */
+  /* static member */
+  inline def createInPageParameterUnderParameterType(container: PageParameter): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -263,13 +290,13 @@ object DateTimeType {
   inline def createInValueMappingElementUnderType(container: ValueMappingElement): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.DateTimeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.DateTimeType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.DateTimeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

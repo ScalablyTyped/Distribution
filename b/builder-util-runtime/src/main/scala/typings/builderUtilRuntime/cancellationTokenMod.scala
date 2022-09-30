@@ -2,6 +2,7 @@ package typings.builderUtilRuntime
 
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ object cancellationTokenMod {
     
     def createPromise[R](
       callback: js.Function3[
-          /* resolve */ js.Function1[/* thenableOrResult */ R | js.Thenable[R], Unit], 
+          /* resolve */ js.Function1[/* thenableOrResult */ R | PromiseLike[R], Unit], 
           /* reject */ js.Function1[/* error */ js.Error, Unit], 
           /* onCancel */ js.Function1[/* callback */ js.Function0[Unit], Unit], 
           Unit

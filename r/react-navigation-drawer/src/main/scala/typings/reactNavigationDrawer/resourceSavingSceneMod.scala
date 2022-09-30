@@ -10,7 +10,7 @@ object resourceSavingSceneMod {
   
   @JSImport("react-navigation-drawer/lib/typescript/src/views/ResourceSavingScene", JSImport.Default)
   @js.native
-  class default () extends ResourceSavingScene
+  open class default () extends ResourceSavingScene
   
   trait Props extends StObject {
     
@@ -20,7 +20,7 @@ object resourceSavingSceneMod {
     
     var isVisible: Boolean
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object Props {
     
@@ -39,7 +39,7 @@ object resourceSavingSceneMod {
       
       inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -47,5 +47,5 @@ object resourceSavingSceneMod {
   
   @js.native
   trait ResourceSavingScene
-    extends Component[Props, js.Object, js.Any]
+    extends Component[Props, js.Object, Any]
 }

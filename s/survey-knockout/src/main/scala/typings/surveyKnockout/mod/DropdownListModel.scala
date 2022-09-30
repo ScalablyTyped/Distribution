@@ -34,6 +34,8 @@ open class DropdownListModel protected () extends Base {
   
   /* protected */ def onHidePopup(): Unit = js.native
   
+  /* protected */ def onSetFilterString(): Unit = js.native
+  
   /* protected */ var popupCssClasses: String = js.native
   
   def popupModel: Any = js.native
@@ -43,6 +45,8 @@ open class DropdownListModel protected () extends Base {
   def scrollToFocusedItem(): Unit = js.native
   
   var searchEnabled: Boolean = js.native
+  
+  def setInputHasValue(newValue: Boolean): Unit = js.native
   
   def setSearchEnabled(newValue: Boolean): Unit = js.native
   

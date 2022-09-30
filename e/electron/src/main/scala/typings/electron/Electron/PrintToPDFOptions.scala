@@ -1,6 +1,5 @@
 package typings.electron.Electron
 
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,46 +7,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintToPDFOptions extends StObject {
   
   /**
-    * the header and footer for the PDF.
+    * Whether to display header and footer. Defaults to false.
     */
-  var headerFooter: js.UndefOr[Record[String, String]] = js.undefined
+  var displayHeaderFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * `true` for landscape, `false` for portrait.
+    * HTML template for the print footer. Should use the same format as the
+    * `headerTemplate`.
+    */
+  var footerTemplate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * HTML template for the print header. Should be valid HTML markup with following
+    * classes used to inject printing values into them: `date` (formatted print date),
+    * `title` (document title), `url` (document location), `pageNumber` (current page
+    * number) and `totalPages` (total pages in the document). For example, `<span
+    * class=title></span>` would generate span containing the title.
+    */
+  var headerTemplate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Paper orientation.`true` for landscape, `false` for portrait. Defaults to false.
     */
   var landscape: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Specifies the type of margins to use. Uses 0 for default margin, 1 for no
-    * margin, and 2 for minimum margin. and `width` in microns.
-    */
-  var marginsType: js.UndefOr[Double] = js.undefined
+  var margins: js.UndefOr[Margins] = js.undefined
   
   /**
-    * The page range to print.
+    * Paper ranges to print, e.g., '1-5, 8, 11-13'. Defaults to the empty string,
+    * which means print all pages.
     */
-  var pageRanges: js.UndefOr[Record[String, Double]] = js.undefined
+  var pageRanges: js.UndefOr[String] = js.undefined
   
   /**
-    * Specify page size of the generated PDF. Can be `A3`, `A4`, `A5`, `Legal`,
-    * `Letter`, `Tabloid` or an Object containing `height`
+    * Specify page size of the generated PDF. Can be `A0`, `A1`, `A2`, `A3`, `A4`,
+    * `A5`, `A6`, `Legal`, `Letter`, `Tabloid`, `Ledger`, or an Object containing
+    * `height` and `width` in inches. Defaults to `Letter`.
     */
   var pageSize: js.UndefOr[String | Size] = js.undefined
   
   /**
-    * Whether to print CSS backgrounds.
+    * Whether or not to prefer page size as defined by css. Defaults to false, in
+    * which case the content will be scaled to fit the paper size.
+    */
+  var preferCSSPageSize: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether to print background graphics. Defaults to false.
     */
   var printBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether to print selection only.
+    * Scale of the webpage rendering. Defaults to 1.
     */
-  var printSelectionOnly: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * The scale factor of the web page. Can range from 0 to 100.
-    */
-  var scaleFactor: js.UndefOr[Double] = js.undefined
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object PrintToPDFOptions {
   
@@ -58,19 +71,27 @@ object PrintToPDFOptions {
   
   extension [Self <: PrintToPDFOptions](x: Self) {
     
-    inline def setHeaderFooter(value: Record[String, String]): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
+    inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
     
-    inline def setHeaderFooterUndefined: Self = StObject.set(x, "headerFooter", js.undefined)
+    inline def setDisplayHeaderFooterUndefined: Self = StObject.set(x, "displayHeaderFooter", js.undefined)
+    
+    inline def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
+    
+    inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
     
     inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
     
     inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
     
-    inline def setMarginsType(value: Double): Self = StObject.set(x, "marginsType", value.asInstanceOf[js.Any])
+    inline def setMargins(value: Margins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
-    inline def setMarginsTypeUndefined: Self = StObject.set(x, "marginsType", js.undefined)
+    inline def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
     
-    inline def setPageRanges(value: Record[String, Double]): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
+    inline def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
     
     inline def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
     
@@ -78,16 +99,16 @@ object PrintToPDFOptions {
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
+    inline def setPreferCSSPageSize(value: Boolean): Self = StObject.set(x, "preferCSSPageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPreferCSSPageSizeUndefined: Self = StObject.set(x, "preferCSSPageSize", js.undefined)
+    
     inline def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
     
     inline def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
     
-    inline def setPrintSelectionOnly(value: Boolean): Self = StObject.set(x, "printSelectionOnly", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    inline def setPrintSelectionOnlyUndefined: Self = StObject.set(x, "printSelectionOnly", js.undefined)
-    
-    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
-    
-    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

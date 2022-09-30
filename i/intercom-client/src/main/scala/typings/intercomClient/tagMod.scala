@@ -23,13 +23,13 @@ object tagMod {
   }
   object List {
     
-    inline def apply(pages: Next, tags: js.Array[Tag], total_count: Double): List = {
+    inline def apply(pages: Next, tags: js.Array[Tag], total_count: Double): typings.intercomClient.tagMod.List = {
       val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("tag.list")
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.intercomClient.tagMod.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.intercomClient.tagMod.List](x: Self) {
       
       inline def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       

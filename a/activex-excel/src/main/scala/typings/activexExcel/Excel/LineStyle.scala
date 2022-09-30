@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexExcel.Excel.XlLineStyle
-  - typings.activexExcel.activexExcelNumbers.`-4124`
-  - typings.activexExcel.activexExcelNumbers.`-4125`
-  - typings.activexExcel.activexExcelNumbers.`-4126`
-  - typings.activexExcel.activexExcelNumbers.`-4105`
+  - typings.activexExcel.activexExcelInts.`-4124`
+  - typings.activexExcel.activexExcelInts.`-4125`
+  - typings.activexExcel.activexExcelInts.`-4126`
+  - typings.activexExcel.activexExcelInts.`-4105`
 */
 trait LineStyle extends StObject

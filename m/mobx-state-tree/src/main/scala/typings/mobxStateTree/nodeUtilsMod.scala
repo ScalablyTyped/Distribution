@@ -13,12 +13,12 @@ object nodeUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isStateTreeNode[IT /* <: IAnyComplexType */](value: js.Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateTreeNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean]
+  inline def isStateTreeNode[IT /* <: IAnyComplexType */](value: Any): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateTreeNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.STNValue<mobx-state-tree.mobx-state-tree/dist/core/type/type.Instance<IT>, IT> */ Boolean]
   
-  type IAnyStateTreeNode = STNValue[js.Any, IAnyType]
+  type IAnyStateTreeNode = STNValue[Any, IAnyType]
   
   @js.native
   trait IStateTreeNode[IT /* <: IAnyType */] extends StObject
   
-  type TypeOfValue[T /* <: IAnyStateTreeNode */] = js.Any
+  type TypeOfValue[T /* <: IAnyStateTreeNode */] = Any
 }

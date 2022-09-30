@@ -10,10 +10,10 @@ a simple but effective <Link /> component for redux-first-router (better for SEO
 | ------------------ | :-------------: |
 | Full name          | redux-first-router-link |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 10 |
-| # downloads        | 589742 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 38593.0 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/faceyspacey/redux-first-router-link#readme)

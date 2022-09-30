@@ -1,24 +1,24 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`16777216`
-import typings.activexDao.activexDaoNumbers.`1`
-import typings.activexDao.activexDaoNumbers.`256`
-import typings.activexDao.activexDaoNumbers.`2`
-import typings.activexDao.activexDaoNumbers.`33554432`
-import typings.activexDao.activexDaoNumbers.`4096`
-import typings.activexDao.activexDaoNumbers.`4`
+import typings.activexDao.activexDaoInts.`16777216`
+import typings.activexDao.activexDaoInts.`1`
+import typings.activexDao.activexDaoInts.`256`
+import typings.activexDao.activexDaoInts.`2`
+import typings.activexDao.activexDaoInts.`33554432`
+import typings.activexDao.activexDaoInts.`4096`
+import typings.activexDao.activexDaoInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`4096`
-  - typings.activexDao.activexDaoNumbers.`2`
-  - typings.activexDao.activexDaoNumbers.`4`
-  - typings.activexDao.activexDaoNumbers.`16777216`
-  - typings.activexDao.activexDaoNumbers.`33554432`
-  - typings.activexDao.activexDaoNumbers.`1`
-  - typings.activexDao.activexDaoNumbers.`256`
+  - typings.activexDao.activexDaoInts.`4096`
+  - typings.activexDao.activexDaoInts.`2`
+  - typings.activexDao.activexDaoInts.`4`
+  - typings.activexDao.activexDaoInts.`16777216`
+  - typings.activexDao.activexDaoInts.`33554432`
+  - typings.activexDao.activexDaoInts.`1`
+  - typings.activexDao.activexDaoInts.`256`
 */
 trait RelationAttributeEnum extends StObject
 object RelationAttributeEnum {

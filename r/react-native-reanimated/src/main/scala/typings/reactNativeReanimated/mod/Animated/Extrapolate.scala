@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Extrapolate extends StObject
+sealed trait Extrapolate
+  extends StObject
+     with ExtrapolateParameter
 @JSImport("react-native-reanimated", "Animated.Extrapolate")
 @js.native
 object Extrapolate extends StObject {

@@ -15,7 +15,7 @@ object generateSwMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateSW(config: GenerateSWConfig): GenerateSWResult = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSW")(config.asInstanceOf[js.Any]).asInstanceOf[GenerateSWResult]
+  inline def generateSW(config: GenerateSWConfig): js.Promise[Count] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSW")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Count]]
   
   trait GenerateSWConfig extends StObject {
     

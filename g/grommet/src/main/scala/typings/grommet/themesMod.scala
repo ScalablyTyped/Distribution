@@ -37,6 +37,7 @@ import typings.grommet.anon.Icons
 import typings.grommet.anon.Item
 import typings.grommet.anon.Line
 import typings.grommet.anon.MaxHeight
+import typings.grommet.anon.MaxInline
 import typings.grommet.anon.Overlay
 import typings.grommet.anon.Pair
 import typings.grommet.anon.Parent
@@ -49,10 +50,10 @@ import typings.grommet.anon.Sticky
 import typings.grommet.anon.Toggle
 import typings.grommet.anon.Track
 import typings.grommet.anon.Xlarge
-import typings.grommet.anon.`14`
 import typings.grommet.anon.`15`
+import typings.grommet.anon.`16`
 import typings.grommet.anon.`2xl`
-import typings.grommet.anon.`30`
+import typings.grommet.anon.`31`
 import typings.grommet.baseMod.ButtonType
 import typings.grommet.baseMod.ThemeType
 import typings.grommet.utilsMod.DeepReadonly
@@ -127,7 +128,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.dateInput")
     @js.native
-    val dateInput: js.UndefOr[`14` | DeepReadonly[js.UndefOr[`14`]]] = js.native
+    val dateInput: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.native
     
     @JSImport("grommet/themes", "base.diagram")
     @js.native
@@ -151,7 +152,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.grommet")
     @js.native
-    val grommet: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.native
+    val grommet: js.UndefOr[`16` | DeepReadonly[js.UndefOr[`16`]]] = js.native
     
     @JSImport("grommet/themes", "base.header")
     @js.native
@@ -163,7 +164,7 @@ object themesMod {
     
     @JSImport("grommet/themes", "base.icon")
     @js.native
-    val icon: js.UndefOr[`30` | DeepReadonly[js.UndefOr[`30`]]] = js.native
+    val icon: js.UndefOr[`31` | DeepReadonly[js.UndefOr[`31`]]] = js.native
     
     @JSImport("grommet/themes", "base.layer")
     @js.native
@@ -234,6 +235,10 @@ object themesMod {
     @JSImport("grommet/themes", "base.select")
     @js.native
     val select: js.UndefOr[Clear | DeepReadonly[js.UndefOr[Clear]]] = js.native
+    
+    @JSImport("grommet/themes", "base.selectMultiple")
+    @js.native
+    val selectMultiple: js.UndefOr[MaxInline | DeepReadonly[js.UndefOr[MaxInline]]] = js.native
     
     @JSImport("grommet/themes", "base.skipLinks")
     @js.native

@@ -44,7 +44,7 @@ object webgpuCacheRenderPipelineTreeMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_GetPipelines")(node.asInstanceOf[js.Any], pipelines.asInstanceOf[js.Any], curPath.asInstanceOf[js.Any], curPathLen.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  /** @hidden */
+  /** @internal */
   trait NodeState extends StObject {
     
     def count(): js.Tuple2[Double, Double]

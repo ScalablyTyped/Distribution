@@ -16,7 +16,7 @@ object anon {
   
   trait `2` extends StObject {
     
-    var const: typings.sinclairTypebox.sinclairTypeboxNumbers.`1`
+    var const: typings.sinclairTypebox.sinclairTypeboxInts.`1`
   }
   object `2` {
     
@@ -27,13 +27,13 @@ object anon {
     
     extension [Self <: `2`](x: Self) {
       
-      inline def setConst(value: typings.sinclairTypebox.sinclairTypeboxNumbers.`1`): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+      inline def setConst(value: typings.sinclairTypebox.sinclairTypeboxInts.`1`): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     }
   }
   
   trait Const extends StObject {
     
-    var const: typings.sinclairTypebox.sinclairTypeboxNumbers.`0`
+    var const: typings.sinclairTypebox.sinclairTypeboxInts.`0`
   }
   object Const {
     
@@ -44,7 +44,7 @@ object anon {
     
     extension [Self <: Const](x: Self) {
       
-      inline def setConst(value: typings.sinclairTypebox.sinclairTypeboxNumbers.`0`): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+      inline def setConst(value: typings.sinclairTypebox.sinclairTypeboxInts.`0`): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
     }
   }
   

@@ -63,7 +63,7 @@ object mod {
   
   object md {
     
-    inline def apply(strings: js.Array[String], params: TemplateInput*): String = ^.asInstanceOf[js.Dynamic].apply(List(strings.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def apply(strings: js.Array[String], params: TemplateInput*): String = ^.asInstanceOf[js.Dynamic].apply(scala.List(strings.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     @JSImport("@parcel/diagnostic", "md")
     @js.native

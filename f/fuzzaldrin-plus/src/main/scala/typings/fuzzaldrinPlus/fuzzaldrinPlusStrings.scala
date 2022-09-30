@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fuzzaldrinPlusStrings {
   
   @js.native
-  sealed trait Backslash extends StObject
-  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
-  
-  @js.native
   sealed trait Slash extends StObject
   inline def Slash: Slash = "/".asInstanceOf[Slash]
 }

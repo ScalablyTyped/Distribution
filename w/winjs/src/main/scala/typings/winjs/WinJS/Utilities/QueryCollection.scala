@@ -36,7 +36,7 @@ trait QueryCollection[T]
     * @param items Additional items to add to the end of array1.
     **/
   @JSName("concat")
-  def concat_U_ArrayT[U /* <: js.Array[T] */](items: U*): js.Array[T] = js.native
+  def concat_U[U /* <: js.Array[T] */](items: U*): js.Array[T] = js.native
   
   /**
     * Creates controls that are attached to the elements in this QueryCollection, if the ctor parameter is a function, or configures the controls that are attached to the elements in this QueryCollection, if the ctor parameter is an object.
@@ -111,24 +111,24 @@ trait QueryCollection[T]
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("map")
-  def map_U_Tuple3[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple3[U, U, U] = js.native
+  def map_U_Tuple2[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple2[U, U] = js.native
   @JSName("map")
-  def map_U_Tuple3[U](
+  def map_U_Tuple2[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
     thisArg: Any
-  ): js.Tuple3[U, U, U] = js.native
+  ): js.Tuple2[U, U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("map")
-  def map_U_Tuple4[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple4[U, U, U, U] = js.native
+  def map_U_Tuple3[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple3[U, U, U] = js.native
   @JSName("map")
-  def map_U_Tuple4[U](
+  def map_U_Tuple3[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
     thisArg: Any
-  ): js.Tuple4[U, U, U, U] = js.native
+  ): js.Tuple3[U, U, U] = js.native
   /**
     * Calls a defined callback function on each element of an array, and returns an array that contains the results.
     * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.

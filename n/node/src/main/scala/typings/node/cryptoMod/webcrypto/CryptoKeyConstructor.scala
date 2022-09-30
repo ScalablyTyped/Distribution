@@ -1,7 +1,7 @@
 package typings.node.cryptoMod.webcrypto
 
 import typings.node.anon._empty
-import typings.node.nodeNumbers.`0`
+import typings.node.nodeInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

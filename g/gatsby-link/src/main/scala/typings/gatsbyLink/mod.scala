@@ -18,24 +18,17 @@ object mod {
   
   @JSImport("gatsby-link", JSImport.Default)
   @js.native
-  class default[TState] ()
-    extends Component[GatsbyLinkProps[TState], js.Any, js.Any]
+  open class default[TState] () extends Component[GatsbyLinkProps[TState], Any, Any]
   
   @JSImport("gatsby-link", "navigate")
   @js.native
   val navigate: NavigateFn = js.native
   
-  inline def navigateTo(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def push(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def replace(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
   inline def withAssetPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withAssetPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def withPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  type GatsbyLink[TState] = Component[GatsbyLinkProps[TState], js.Any, js.Any]
+  type GatsbyLink[TState] = Component[GatsbyLinkProps[TState], Any, Any]
   
   trait GatsbyLinkProps[TState]
     extends StObject

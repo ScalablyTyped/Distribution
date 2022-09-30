@@ -36,6 +36,6 @@ object mod {
   @JSImport("@octokit/plugin-paginate-rest", "paginatingEndpoints")
   @js.native
   val paginatingEndpoints: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any
   ] = js.native
 }

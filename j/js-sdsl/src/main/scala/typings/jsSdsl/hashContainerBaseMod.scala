@@ -1,7 +1,11 @@
 package typings.jsSdsl
 
 import typings.jsSdsl.containerContainerBaseMod.Base
-import typings.jsSdsl.containerContainerBaseMod.Container
+import typings.jsSdsl.jsSdslDoubles.`0.75`
+import typings.jsSdsl.jsSdslInts.`1073741824`
+import typings.jsSdsl.jsSdslInts.`64`
+import typings.jsSdsl.jsSdslInts.`6`
+import typings.jsSdsl.jsSdslInts.`8`
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,40 +20,11 @@ object hashContainerBaseMod {
     /* protected */ def this(initBucketNum: Double, hashFunc: js.Function1[/* x */ K, Double]) = this()
     /* protected */ def this(initBucketNum: Unit, hashFunc: js.Function1[/* x */ K, Double]) = this()
   }
-  object default {
-    
-    /* static member */
-    @JSImport("js-sdsl/dist/esm/container/HashContainer/Base", "default.maxBucketNum")
-    @js.native
-    val maxBucketNum: Double = js.native
-    
-    /* static member */
-    @JSImport("js-sdsl/dist/esm/container/HashContainer/Base", "default.minTreeifySize")
-    @js.native
-    val minTreeifySize: /* 64 */ Double = js.native
-    
-    /* static member */
-    @JSImport("js-sdsl/dist/esm/container/HashContainer/Base", "default.sigma")
-    @js.native
-    val sigma: /* 0.75 */ Double = js.native
-    
-    /* static member */
-    @JSImport("js-sdsl/dist/esm/container/HashContainer/Base", "default.treeifyThreshold")
-    @js.native
-    val treeifyThreshold: /* 8 */ Double = js.native
-    
-    /* static member */
-    @JSImport("js-sdsl/dist/esm/container/HashContainer/Base", "default.untreeifyThreshold")
-    @js.native
-    val untreeifyThreshold: /* 6 */ Double = js.native
-  }
   
   @js.native
   trait HashContainer[K] extends Base {
     
     var `abstract`: Any = js.native
-    
-    /* protected */ var bucketNum: Double = js.native
     
     /**
       * @description Remove the elements of the specified value.
@@ -65,19 +40,28 @@ object hashContainerBaseMod {
     
     def forEach(callback: js.Function2[/* element */ Any, /* index */ Double, Unit]): Unit = js.native
     
-    /* protected */ def hashFunc(x: K): Double = js.native
-    
-    /* protected */ var hashTable: js.Array[Container[Any]] = js.native
-    
-    /* protected */ var initBucketNum: Double = js.native
-    
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[Generator[Any, Unit, Unit]] = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.jsSdsl.jsSdslDoubles.`0.75`
+    - typings.jsSdsl.jsSdslInts.`8`
+    - typings.jsSdsl.jsSdslInts.`6`
+    - typings.jsSdsl.jsSdslInts.`64`
+    - typings.jsSdsl.jsSdslInts.`1073741824`
+  */
+  trait HashContainerConst extends StObject
+  object HashContainerConst {
     
-    /**
-      * @description Growth the hash table.
-      * @protected
-      */
-    /* protected */ def reAllocate(): Unit = js.native
+    inline def maxBucketNum: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
+    
+    inline def minTreeifySize: `64` = 64.asInstanceOf[`64`]
+    
+    inline def sigma: `0.75` = 0.75d.asInstanceOf[`0.75`]
+    
+    inline def treeifyThreshold: `8` = 8.asInstanceOf[`8`]
+    
+    inline def untreeifyThreshold: `6` = 6.asInstanceOf[`6`]
   }
 }

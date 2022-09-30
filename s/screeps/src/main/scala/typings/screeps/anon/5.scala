@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `5` extends StObject {
   
-  var upgradeController: typings.screeps.screepsNumbers.`2`
+  var upgradeController: typings.screeps.screepsInts.`2`
 }
 object `5` {
   
@@ -17,6 +17,6 @@ object `5` {
   
   extension [Self <: `5`](x: Self) {
     
-    inline def setUpgradeController(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "upgradeController", value.asInstanceOf[js.Any])
+    inline def setUpgradeController(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "upgradeController", value.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var children: js.UndefOr[Children] = js.undefined
   
   var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  
+  var preserveAspectRatio: js.UndefOr[String] = js.undefined
+  
+  var viewBox: js.UndefOr[String] = js.undefined
 }
 object SVGOverlayProps {
   
@@ -28,10 +32,18 @@ object SVGOverlayProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
     inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    
+    inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+    
+    inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    
+    inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
   }
 }

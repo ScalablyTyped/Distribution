@@ -1,14 +1,14 @@
 package typings.nodeMicrophone
 
 import typings.node.processMod.global.NodeJS.WriteStream
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`16000`
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`16`
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`1`
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`24`
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`2`
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`44100`
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`8000`
-import typings.nodeMicrophone.nodeMicrophoneNumbers.`8`
+import typings.nodeMicrophone.nodeMicrophoneInts.`16000`
+import typings.nodeMicrophone.nodeMicrophoneInts.`16`
+import typings.nodeMicrophone.nodeMicrophoneInts.`1`
+import typings.nodeMicrophone.nodeMicrophoneInts.`24`
+import typings.nodeMicrophone.nodeMicrophoneInts.`2`
+import typings.nodeMicrophone.nodeMicrophoneInts.`44100`
+import typings.nodeMicrophone.nodeMicrophoneInts.`8000`
+import typings.nodeMicrophone.nodeMicrophoneInts.`8`
 import typings.nodeMicrophone.nodeMicrophoneStrings.`signed-integer`
 import typings.nodeMicrophone.nodeMicrophoneStrings.`unsigned-integer`
 import typings.nodeMicrophone.nodeMicrophoneStrings.big

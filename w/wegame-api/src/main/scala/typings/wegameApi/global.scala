@@ -1860,9 +1860,9 @@ object global {
   
   inline def requestAnimationFrame(callback: js.Function0[Unit]): Double = js.Dynamic.global.applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def setInterval(fn: js.Function0[Unit], delay: Double, rest: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((List(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setInterval(fn: js.Function0[Unit], delay: Double, rest: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
-  inline def setTimeout(fn: js.Function0[Unit], delay: Double, rest: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((List(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setTimeout(fn: js.Function0[Unit], delay: Double, rest: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
   object wx {
     

@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateDataRepositoryTaskRequest extends StObject {
   
+  /**
+    * Specifies the amount of data to release, in GiB, by an Amazon File Cache AUTO_RELEASE_DATA task that automatically releases files from the cache.
+    */
+  var CapacityToRelease: js.UndefOr[typings.awsSdk.fsxMod.CapacityToRelease] = js.undefined
+  
   var ClientRequestToken: js.UndefOr[typings.awsSdk.fsxMod.ClientRequestToken] = js.undefined
   
   var FileSystemId: typings.awsSdk.fsxMod.FileSystemId
@@ -35,6 +40,10 @@ object CreateDataRepositoryTaskRequest {
   }
   
   extension [Self <: CreateDataRepositoryTaskRequest](x: Self) {
+    
+    inline def setCapacityToRelease(value: CapacityToRelease): Self = StObject.set(x, "CapacityToRelease", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityToReleaseUndefined: Self = StObject.set(x, "CapacityToRelease", js.undefined)
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

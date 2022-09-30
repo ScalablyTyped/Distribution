@@ -1,7 +1,7 @@
 package typings.firebaseAuth
 
 import typings.firebaseAuth.coreUtilDelayMod.Delay
-import typings.firebaseAuth.firebaseAuthNumbers.`2000`
+import typings.firebaseAuth.firebaseAuthInts.`2000`
 import typings.firebaseAuth.srcModelPublicTypesMod.Auth
 import typings.firebaseAuth.srcModelPublicTypesMod.AuthProvider
 import typings.firebaseAuth.srcModelPublicTypesMod.PopupRedirectResolver

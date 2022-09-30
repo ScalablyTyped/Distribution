@@ -53,6 +53,6 @@ object InputEvent {
     
     inline def setModifiersVarargs(
       value: (shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right)*
-    ): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    ): Self = StObject.set(x, "modifiers", js.Array(value*))
   }
 }

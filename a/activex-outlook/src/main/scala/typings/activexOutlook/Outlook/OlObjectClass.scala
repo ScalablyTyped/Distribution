@@ -1,306 +1,306 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`0`
-import typings.activexOutlook.activexOutlookNumbers.`100`
-import typings.activexOutlook.activexOutlookNumbers.`101`
-import typings.activexOutlook.activexOutlookNumbers.`102`
-import typings.activexOutlook.activexOutlookNumbers.`103`
-import typings.activexOutlook.activexOutlookNumbers.`104`
-import typings.activexOutlook.activexOutlookNumbers.`105`
-import typings.activexOutlook.activexOutlookNumbers.`106`
-import typings.activexOutlook.activexOutlookNumbers.`107`
-import typings.activexOutlook.activexOutlookNumbers.`108`
-import typings.activexOutlook.activexOutlookNumbers.`109`
-import typings.activexOutlook.activexOutlookNumbers.`110`
-import typings.activexOutlook.activexOutlookNumbers.`111`
-import typings.activexOutlook.activexOutlookNumbers.`112`
-import typings.activexOutlook.activexOutlookNumbers.`113`
-import typings.activexOutlook.activexOutlookNumbers.`114`
-import typings.activexOutlook.activexOutlookNumbers.`115`
-import typings.activexOutlook.activexOutlookNumbers.`116`
-import typings.activexOutlook.activexOutlookNumbers.`117`
-import typings.activexOutlook.activexOutlookNumbers.`118`
-import typings.activexOutlook.activexOutlookNumbers.`119`
-import typings.activexOutlook.activexOutlookNumbers.`120`
-import typings.activexOutlook.activexOutlookNumbers.`121`
-import typings.activexOutlook.activexOutlookNumbers.`122`
-import typings.activexOutlook.activexOutlookNumbers.`123`
-import typings.activexOutlook.activexOutlookNumbers.`124`
-import typings.activexOutlook.activexOutlookNumbers.`125`
-import typings.activexOutlook.activexOutlookNumbers.`126`
-import typings.activexOutlook.activexOutlookNumbers.`127`
-import typings.activexOutlook.activexOutlookNumbers.`128`
-import typings.activexOutlook.activexOutlookNumbers.`129`
-import typings.activexOutlook.activexOutlookNumbers.`130`
-import typings.activexOutlook.activexOutlookNumbers.`131`
-import typings.activexOutlook.activexOutlookNumbers.`132`
-import typings.activexOutlook.activexOutlookNumbers.`133`
-import typings.activexOutlook.activexOutlookNumbers.`134`
-import typings.activexOutlook.activexOutlookNumbers.`135`
-import typings.activexOutlook.activexOutlookNumbers.`136`
-import typings.activexOutlook.activexOutlookNumbers.`137`
-import typings.activexOutlook.activexOutlookNumbers.`138`
-import typings.activexOutlook.activexOutlookNumbers.`139`
-import typings.activexOutlook.activexOutlookNumbers.`140`
-import typings.activexOutlook.activexOutlookNumbers.`141`
-import typings.activexOutlook.activexOutlookNumbers.`142`
-import typings.activexOutlook.activexOutlookNumbers.`144`
-import typings.activexOutlook.activexOutlookNumbers.`145`
-import typings.activexOutlook.activexOutlookNumbers.`146`
-import typings.activexOutlook.activexOutlookNumbers.`147`
-import typings.activexOutlook.activexOutlookNumbers.`148`
-import typings.activexOutlook.activexOutlookNumbers.`149`
-import typings.activexOutlook.activexOutlookNumbers.`150`
-import typings.activexOutlook.activexOutlookNumbers.`151`
-import typings.activexOutlook.activexOutlookNumbers.`152`
-import typings.activexOutlook.activexOutlookNumbers.`153`
-import typings.activexOutlook.activexOutlookNumbers.`154`
-import typings.activexOutlook.activexOutlookNumbers.`155`
-import typings.activexOutlook.activexOutlookNumbers.`156`
-import typings.activexOutlook.activexOutlookNumbers.`157`
-import typings.activexOutlook.activexOutlookNumbers.`158`
-import typings.activexOutlook.activexOutlookNumbers.`159`
-import typings.activexOutlook.activexOutlookNumbers.`15`
-import typings.activexOutlook.activexOutlookNumbers.`160`
-import typings.activexOutlook.activexOutlookNumbers.`161`
-import typings.activexOutlook.activexOutlookNumbers.`162`
-import typings.activexOutlook.activexOutlookNumbers.`163`
-import typings.activexOutlook.activexOutlookNumbers.`164`
-import typings.activexOutlook.activexOutlookNumbers.`165`
-import typings.activexOutlook.activexOutlookNumbers.`166`
-import typings.activexOutlook.activexOutlookNumbers.`167`
-import typings.activexOutlook.activexOutlookNumbers.`168`
-import typings.activexOutlook.activexOutlookNumbers.`169`
-import typings.activexOutlook.activexOutlookNumbers.`16`
-import typings.activexOutlook.activexOutlookNumbers.`170`
-import typings.activexOutlook.activexOutlookNumbers.`171`
-import typings.activexOutlook.activexOutlookNumbers.`172`
-import typings.activexOutlook.activexOutlookNumbers.`173`
-import typings.activexOutlook.activexOutlookNumbers.`174`
-import typings.activexOutlook.activexOutlookNumbers.`175`
-import typings.activexOutlook.activexOutlookNumbers.`176`
-import typings.activexOutlook.activexOutlookNumbers.`177`
-import typings.activexOutlook.activexOutlookNumbers.`178`
-import typings.activexOutlook.activexOutlookNumbers.`179`
-import typings.activexOutlook.activexOutlookNumbers.`17`
-import typings.activexOutlook.activexOutlookNumbers.`180`
-import typings.activexOutlook.activexOutlookNumbers.`181`
-import typings.activexOutlook.activexOutlookNumbers.`182`
-import typings.activexOutlook.activexOutlookNumbers.`18`
-import typings.activexOutlook.activexOutlookNumbers.`1`
-import typings.activexOutlook.activexOutlookNumbers.`20`
-import typings.activexOutlook.activexOutlookNumbers.`21`
-import typings.activexOutlook.activexOutlookNumbers.`26`
-import typings.activexOutlook.activexOutlookNumbers.`28`
-import typings.activexOutlook.activexOutlookNumbers.`29`
-import typings.activexOutlook.activexOutlookNumbers.`2`
-import typings.activexOutlook.activexOutlookNumbers.`30`
-import typings.activexOutlook.activexOutlookNumbers.`32`
-import typings.activexOutlook.activexOutlookNumbers.`33`
-import typings.activexOutlook.activexOutlookNumbers.`34`
-import typings.activexOutlook.activexOutlookNumbers.`35`
-import typings.activexOutlook.activexOutlookNumbers.`36`
-import typings.activexOutlook.activexOutlookNumbers.`37`
-import typings.activexOutlook.activexOutlookNumbers.`38`
-import typings.activexOutlook.activexOutlookNumbers.`39`
-import typings.activexOutlook.activexOutlookNumbers.`40`
-import typings.activexOutlook.activexOutlookNumbers.`41`
-import typings.activexOutlook.activexOutlookNumbers.`42`
-import typings.activexOutlook.activexOutlookNumbers.`43`
-import typings.activexOutlook.activexOutlookNumbers.`44`
-import typings.activexOutlook.activexOutlookNumbers.`45`
-import typings.activexOutlook.activexOutlookNumbers.`46`
-import typings.activexOutlook.activexOutlookNumbers.`47`
-import typings.activexOutlook.activexOutlookNumbers.`48`
-import typings.activexOutlook.activexOutlookNumbers.`49`
-import typings.activexOutlook.activexOutlookNumbers.`4`
-import typings.activexOutlook.activexOutlookNumbers.`50`
-import typings.activexOutlook.activexOutlookNumbers.`51`
-import typings.activexOutlook.activexOutlookNumbers.`52`
-import typings.activexOutlook.activexOutlookNumbers.`53`
-import typings.activexOutlook.activexOutlookNumbers.`54`
-import typings.activexOutlook.activexOutlookNumbers.`55`
-import typings.activexOutlook.activexOutlookNumbers.`56`
-import typings.activexOutlook.activexOutlookNumbers.`57`
-import typings.activexOutlook.activexOutlookNumbers.`5`
-import typings.activexOutlook.activexOutlookNumbers.`60`
-import typings.activexOutlook.activexOutlookNumbers.`61`
-import typings.activexOutlook.activexOutlookNumbers.`62`
-import typings.activexOutlook.activexOutlookNumbers.`63`
-import typings.activexOutlook.activexOutlookNumbers.`64`
-import typings.activexOutlook.activexOutlookNumbers.`65`
-import typings.activexOutlook.activexOutlookNumbers.`66`
-import typings.activexOutlook.activexOutlookNumbers.`67`
-import typings.activexOutlook.activexOutlookNumbers.`68`
-import typings.activexOutlook.activexOutlookNumbers.`69`
-import typings.activexOutlook.activexOutlookNumbers.`70`
-import typings.activexOutlook.activexOutlookNumbers.`71`
-import typings.activexOutlook.activexOutlookNumbers.`72`
-import typings.activexOutlook.activexOutlookNumbers.`73`
-import typings.activexOutlook.activexOutlookNumbers.`74`
-import typings.activexOutlook.activexOutlookNumbers.`75`
-import typings.activexOutlook.activexOutlookNumbers.`76`
-import typings.activexOutlook.activexOutlookNumbers.`77`
-import typings.activexOutlook.activexOutlookNumbers.`78`
-import typings.activexOutlook.activexOutlookNumbers.`79`
-import typings.activexOutlook.activexOutlookNumbers.`7`
-import typings.activexOutlook.activexOutlookNumbers.`80`
-import typings.activexOutlook.activexOutlookNumbers.`8`
-import typings.activexOutlook.activexOutlookNumbers.`98`
-import typings.activexOutlook.activexOutlookNumbers.`99`
+import typings.activexOutlook.activexOutlookInts.`0`
+import typings.activexOutlook.activexOutlookInts.`100`
+import typings.activexOutlook.activexOutlookInts.`101`
+import typings.activexOutlook.activexOutlookInts.`102`
+import typings.activexOutlook.activexOutlookInts.`103`
+import typings.activexOutlook.activexOutlookInts.`104`
+import typings.activexOutlook.activexOutlookInts.`105`
+import typings.activexOutlook.activexOutlookInts.`106`
+import typings.activexOutlook.activexOutlookInts.`107`
+import typings.activexOutlook.activexOutlookInts.`108`
+import typings.activexOutlook.activexOutlookInts.`109`
+import typings.activexOutlook.activexOutlookInts.`110`
+import typings.activexOutlook.activexOutlookInts.`111`
+import typings.activexOutlook.activexOutlookInts.`112`
+import typings.activexOutlook.activexOutlookInts.`113`
+import typings.activexOutlook.activexOutlookInts.`114`
+import typings.activexOutlook.activexOutlookInts.`115`
+import typings.activexOutlook.activexOutlookInts.`116`
+import typings.activexOutlook.activexOutlookInts.`117`
+import typings.activexOutlook.activexOutlookInts.`118`
+import typings.activexOutlook.activexOutlookInts.`119`
+import typings.activexOutlook.activexOutlookInts.`120`
+import typings.activexOutlook.activexOutlookInts.`121`
+import typings.activexOutlook.activexOutlookInts.`122`
+import typings.activexOutlook.activexOutlookInts.`123`
+import typings.activexOutlook.activexOutlookInts.`124`
+import typings.activexOutlook.activexOutlookInts.`125`
+import typings.activexOutlook.activexOutlookInts.`126`
+import typings.activexOutlook.activexOutlookInts.`127`
+import typings.activexOutlook.activexOutlookInts.`128`
+import typings.activexOutlook.activexOutlookInts.`129`
+import typings.activexOutlook.activexOutlookInts.`130`
+import typings.activexOutlook.activexOutlookInts.`131`
+import typings.activexOutlook.activexOutlookInts.`132`
+import typings.activexOutlook.activexOutlookInts.`133`
+import typings.activexOutlook.activexOutlookInts.`134`
+import typings.activexOutlook.activexOutlookInts.`135`
+import typings.activexOutlook.activexOutlookInts.`136`
+import typings.activexOutlook.activexOutlookInts.`137`
+import typings.activexOutlook.activexOutlookInts.`138`
+import typings.activexOutlook.activexOutlookInts.`139`
+import typings.activexOutlook.activexOutlookInts.`140`
+import typings.activexOutlook.activexOutlookInts.`141`
+import typings.activexOutlook.activexOutlookInts.`142`
+import typings.activexOutlook.activexOutlookInts.`144`
+import typings.activexOutlook.activexOutlookInts.`145`
+import typings.activexOutlook.activexOutlookInts.`146`
+import typings.activexOutlook.activexOutlookInts.`147`
+import typings.activexOutlook.activexOutlookInts.`148`
+import typings.activexOutlook.activexOutlookInts.`149`
+import typings.activexOutlook.activexOutlookInts.`150`
+import typings.activexOutlook.activexOutlookInts.`151`
+import typings.activexOutlook.activexOutlookInts.`152`
+import typings.activexOutlook.activexOutlookInts.`153`
+import typings.activexOutlook.activexOutlookInts.`154`
+import typings.activexOutlook.activexOutlookInts.`155`
+import typings.activexOutlook.activexOutlookInts.`156`
+import typings.activexOutlook.activexOutlookInts.`157`
+import typings.activexOutlook.activexOutlookInts.`158`
+import typings.activexOutlook.activexOutlookInts.`159`
+import typings.activexOutlook.activexOutlookInts.`15`
+import typings.activexOutlook.activexOutlookInts.`160`
+import typings.activexOutlook.activexOutlookInts.`161`
+import typings.activexOutlook.activexOutlookInts.`162`
+import typings.activexOutlook.activexOutlookInts.`163`
+import typings.activexOutlook.activexOutlookInts.`164`
+import typings.activexOutlook.activexOutlookInts.`165`
+import typings.activexOutlook.activexOutlookInts.`166`
+import typings.activexOutlook.activexOutlookInts.`167`
+import typings.activexOutlook.activexOutlookInts.`168`
+import typings.activexOutlook.activexOutlookInts.`169`
+import typings.activexOutlook.activexOutlookInts.`16`
+import typings.activexOutlook.activexOutlookInts.`170`
+import typings.activexOutlook.activexOutlookInts.`171`
+import typings.activexOutlook.activexOutlookInts.`172`
+import typings.activexOutlook.activexOutlookInts.`173`
+import typings.activexOutlook.activexOutlookInts.`174`
+import typings.activexOutlook.activexOutlookInts.`175`
+import typings.activexOutlook.activexOutlookInts.`176`
+import typings.activexOutlook.activexOutlookInts.`177`
+import typings.activexOutlook.activexOutlookInts.`178`
+import typings.activexOutlook.activexOutlookInts.`179`
+import typings.activexOutlook.activexOutlookInts.`17`
+import typings.activexOutlook.activexOutlookInts.`180`
+import typings.activexOutlook.activexOutlookInts.`181`
+import typings.activexOutlook.activexOutlookInts.`182`
+import typings.activexOutlook.activexOutlookInts.`18`
+import typings.activexOutlook.activexOutlookInts.`1`
+import typings.activexOutlook.activexOutlookInts.`20`
+import typings.activexOutlook.activexOutlookInts.`21`
+import typings.activexOutlook.activexOutlookInts.`26`
+import typings.activexOutlook.activexOutlookInts.`28`
+import typings.activexOutlook.activexOutlookInts.`29`
+import typings.activexOutlook.activexOutlookInts.`2`
+import typings.activexOutlook.activexOutlookInts.`30`
+import typings.activexOutlook.activexOutlookInts.`32`
+import typings.activexOutlook.activexOutlookInts.`33`
+import typings.activexOutlook.activexOutlookInts.`34`
+import typings.activexOutlook.activexOutlookInts.`35`
+import typings.activexOutlook.activexOutlookInts.`36`
+import typings.activexOutlook.activexOutlookInts.`37`
+import typings.activexOutlook.activexOutlookInts.`38`
+import typings.activexOutlook.activexOutlookInts.`39`
+import typings.activexOutlook.activexOutlookInts.`40`
+import typings.activexOutlook.activexOutlookInts.`41`
+import typings.activexOutlook.activexOutlookInts.`42`
+import typings.activexOutlook.activexOutlookInts.`43`
+import typings.activexOutlook.activexOutlookInts.`44`
+import typings.activexOutlook.activexOutlookInts.`45`
+import typings.activexOutlook.activexOutlookInts.`46`
+import typings.activexOutlook.activexOutlookInts.`47`
+import typings.activexOutlook.activexOutlookInts.`48`
+import typings.activexOutlook.activexOutlookInts.`49`
+import typings.activexOutlook.activexOutlookInts.`4`
+import typings.activexOutlook.activexOutlookInts.`50`
+import typings.activexOutlook.activexOutlookInts.`51`
+import typings.activexOutlook.activexOutlookInts.`52`
+import typings.activexOutlook.activexOutlookInts.`53`
+import typings.activexOutlook.activexOutlookInts.`54`
+import typings.activexOutlook.activexOutlookInts.`55`
+import typings.activexOutlook.activexOutlookInts.`56`
+import typings.activexOutlook.activexOutlookInts.`57`
+import typings.activexOutlook.activexOutlookInts.`5`
+import typings.activexOutlook.activexOutlookInts.`60`
+import typings.activexOutlook.activexOutlookInts.`61`
+import typings.activexOutlook.activexOutlookInts.`62`
+import typings.activexOutlook.activexOutlookInts.`63`
+import typings.activexOutlook.activexOutlookInts.`64`
+import typings.activexOutlook.activexOutlookInts.`65`
+import typings.activexOutlook.activexOutlookInts.`66`
+import typings.activexOutlook.activexOutlookInts.`67`
+import typings.activexOutlook.activexOutlookInts.`68`
+import typings.activexOutlook.activexOutlookInts.`69`
+import typings.activexOutlook.activexOutlookInts.`70`
+import typings.activexOutlook.activexOutlookInts.`71`
+import typings.activexOutlook.activexOutlookInts.`72`
+import typings.activexOutlook.activexOutlookInts.`73`
+import typings.activexOutlook.activexOutlookInts.`74`
+import typings.activexOutlook.activexOutlookInts.`75`
+import typings.activexOutlook.activexOutlookInts.`76`
+import typings.activexOutlook.activexOutlookInts.`77`
+import typings.activexOutlook.activexOutlookInts.`78`
+import typings.activexOutlook.activexOutlookInts.`79`
+import typings.activexOutlook.activexOutlookInts.`7`
+import typings.activexOutlook.activexOutlookInts.`80`
+import typings.activexOutlook.activexOutlookInts.`8`
+import typings.activexOutlook.activexOutlookInts.`98`
+import typings.activexOutlook.activexOutlookInts.`99`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`105`
-  - typings.activexOutlook.activexOutlookNumbers.`135`
-  - typings.activexOutlook.activexOutlookNumbers.`106`
-  - typings.activexOutlook.activexOutlookNumbers.`32`
-  - typings.activexOutlook.activexOutlookNumbers.`33`
-  - typings.activexOutlook.activexOutlookNumbers.`21`
-  - typings.activexOutlook.activexOutlookNumbers.`8`
-  - typings.activexOutlook.activexOutlookNumbers.`7`
-  - typings.activexOutlook.activexOutlookNumbers.`20`
-  - typings.activexOutlook.activexOutlookNumbers.`170`
-  - typings.activexOutlook.activexOutlookNumbers.`0`
-  - typings.activexOutlook.activexOutlookNumbers.`26`
-  - typings.activexOutlook.activexOutlookNumbers.`122`
-  - typings.activexOutlook.activexOutlookNumbers.`5`
-  - typings.activexOutlook.activexOutlookNumbers.`18`
-  - typings.activexOutlook.activexOutlookNumbers.`169`
-  - typings.activexOutlook.activexOutlookNumbers.`147`
-  - typings.activexOutlook.activexOutlookNumbers.`148`
-  - typings.activexOutlook.activexOutlookNumbers.`159`
-  - typings.activexOutlook.activexOutlookNumbers.`151`
-  - typings.activexOutlook.activexOutlookNumbers.`153`
-  - typings.activexOutlook.activexOutlookNumbers.`152`
-  - typings.activexOutlook.activexOutlookNumbers.`130`
-  - typings.activexOutlook.activexOutlookNumbers.`168`
-  - typings.activexOutlook.activexOutlookNumbers.`139`
-  - typings.activexOutlook.activexOutlookNumbers.`138`
-  - typings.activexOutlook.activexOutlookNumbers.`137`
-  - typings.activexOutlook.activexOutlookNumbers.`155`
-  - typings.activexOutlook.activexOutlookNumbers.`136`
-  - typings.activexOutlook.activexOutlookNumbers.`140`
-  - typings.activexOutlook.activexOutlookNumbers.`174`
-  - typings.activexOutlook.activexOutlookNumbers.`175`
-  - typings.activexOutlook.activexOutlookNumbers.`154`
-  - typings.activexOutlook.activexOutlookNumbers.`149`
-  - typings.activexOutlook.activexOutlookNumbers.`150`
-  - typings.activexOutlook.activexOutlookNumbers.`102`
-  - typings.activexOutlook.activexOutlookNumbers.`103`
-  - typings.activexOutlook.activexOutlookNumbers.`40`
-  - typings.activexOutlook.activexOutlookNumbers.`160`
-  - typings.activexOutlook.activexOutlookNumbers.`178`
-  - typings.activexOutlook.activexOutlookNumbers.`182`
-  - typings.activexOutlook.activexOutlookNumbers.`69`
-  - typings.activexOutlook.activexOutlookNumbers.`41`
-  - typings.activexOutlook.activexOutlookNumbers.`30`
-  - typings.activexOutlook.activexOutlookNumbers.`29`
-  - typings.activexOutlook.activexOutlookNumbers.`111`
-  - typings.activexOutlook.activexOutlookNumbers.`110`
-  - typings.activexOutlook.activexOutlookNumbers.`34`
-  - typings.activexOutlook.activexOutlookNumbers.`60`
-  - typings.activexOutlook.activexOutlookNumbers.`2`
-  - typings.activexOutlook.activexOutlookNumbers.`15`
-  - typings.activexOutlook.activexOutlookNumbers.`37`
-  - typings.activexOutlook.activexOutlookNumbers.`131`
-  - typings.activexOutlook.activexOutlookNumbers.`129`
-  - typings.activexOutlook.activexOutlookNumbers.`173`
-  - typings.activexOutlook.activexOutlookNumbers.`132`
-  - typings.activexOutlook.activexOutlookNumbers.`128`
-  - typings.activexOutlook.activexOutlookNumbers.`35`
-  - typings.activexOutlook.activexOutlookNumbers.`61`
-  - typings.activexOutlook.activexOutlookNumbers.`98`
-  - typings.activexOutlook.activexOutlookNumbers.`99`
-  - typings.activexOutlook.activexOutlookNumbers.`16`
-  - typings.activexOutlook.activexOutlookNumbers.`42`
-  - typings.activexOutlook.activexOutlookNumbers.`162`
-  - typings.activexOutlook.activexOutlookNumbers.`75`
-  - typings.activexOutlook.activexOutlookNumbers.`76`
-  - typings.activexOutlook.activexOutlookNumbers.`43`
-  - typings.activexOutlook.activexOutlookNumbers.`158`
-  - typings.activexOutlook.activexOutlookNumbers.`124`
-  - typings.activexOutlook.activexOutlookNumbers.`54`
-  - typings.activexOutlook.activexOutlookNumbers.`181`
-  - typings.activexOutlook.activexOutlookNumbers.`53`
-  - typings.activexOutlook.activexOutlookNumbers.`55`
-  - typings.activexOutlook.activexOutlookNumbers.`56`
-  - typings.activexOutlook.activexOutlookNumbers.`57`
-  - typings.activexOutlook.activexOutlookNumbers.`176`
-  - typings.activexOutlook.activexOutlookNumbers.`118`
-  - typings.activexOutlook.activexOutlookNumbers.`1`
-  - typings.activexOutlook.activexOutlookNumbers.`167`
-  - typings.activexOutlook.activexOutlookNumbers.`166`
-  - typings.activexOutlook.activexOutlookNumbers.`165`
-  - typings.activexOutlook.activexOutlookNumbers.`164`
-  - typings.activexOutlook.activexOutlookNumbers.`157`
-  - typings.activexOutlook.activexOutlookNumbers.`156`
-  - typings.activexOutlook.activexOutlookNumbers.`125`
-  - typings.activexOutlook.activexOutlookNumbers.`44`
-  - typings.activexOutlook.activexOutlookNumbers.`163`
-  - typings.activexOutlook.activexOutlookNumbers.`144`
-  - typings.activexOutlook.activexOutlookNumbers.`145`
-  - typings.activexOutlook.activexOutlookNumbers.`66`
-  - typings.activexOutlook.activexOutlookNumbers.`65`
-  - typings.activexOutlook.activexOutlookNumbers.`63`
-  - typings.activexOutlook.activexOutlookNumbers.`68`
-  - typings.activexOutlook.activexOutlookNumbers.`67`
-  - typings.activexOutlook.activexOutlookNumbers.`64`
-  - typings.activexOutlook.activexOutlookNumbers.`180`
-  - typings.activexOutlook.activexOutlookNumbers.`36`
-  - typings.activexOutlook.activexOutlookNumbers.`62`
-  - typings.activexOutlook.activexOutlookNumbers.`123`
-  - typings.activexOutlook.activexOutlookNumbers.`45`
-  - typings.activexOutlook.activexOutlookNumbers.`112`
-  - typings.activexOutlook.activexOutlookNumbers.`71`
-  - typings.activexOutlook.activexOutlookNumbers.`70`
-  - typings.activexOutlook.activexOutlookNumbers.`4`
-  - typings.activexOutlook.activexOutlookNumbers.`17`
-  - typings.activexOutlook.activexOutlookNumbers.`28`
-  - typings.activexOutlook.activexOutlookNumbers.`101`
-  - typings.activexOutlook.activexOutlookNumbers.`100`
-  - typings.activexOutlook.activexOutlookNumbers.`47`
-  - typings.activexOutlook.activexOutlookNumbers.`46`
-  - typings.activexOutlook.activexOutlookNumbers.`78`
-  - typings.activexOutlook.activexOutlookNumbers.`121`
-  - typings.activexOutlook.activexOutlookNumbers.`115`
-  - typings.activexOutlook.activexOutlookNumbers.`117`
-  - typings.activexOutlook.activexOutlookNumbers.`116`
-  - typings.activexOutlook.activexOutlookNumbers.`127`
-  - typings.activexOutlook.activexOutlookNumbers.`126`
-  - typings.activexOutlook.activexOutlookNumbers.`114`
-  - typings.activexOutlook.activexOutlookNumbers.`77`
-  - typings.activexOutlook.activexOutlookNumbers.`74`
-  - typings.activexOutlook.activexOutlookNumbers.`109`
-  - typings.activexOutlook.activexOutlookNumbers.`133`
-  - typings.activexOutlook.activexOutlookNumbers.`119`
-  - typings.activexOutlook.activexOutlookNumbers.`104`
-  - typings.activexOutlook.activexOutlookNumbers.`179`
-  - typings.activexOutlook.activexOutlookNumbers.`177`
-  - typings.activexOutlook.activexOutlookNumbers.`113`
-  - typings.activexOutlook.activexOutlookNumbers.`107`
-  - typings.activexOutlook.activexOutlookNumbers.`108`
-  - typings.activexOutlook.activexOutlookNumbers.`72`
-  - typings.activexOutlook.activexOutlookNumbers.`73`
-  - typings.activexOutlook.activexOutlookNumbers.`120`
-  - typings.activexOutlook.activexOutlookNumbers.`48`
-  - typings.activexOutlook.activexOutlookNumbers.`49`
-  - typings.activexOutlook.activexOutlookNumbers.`51`
-  - typings.activexOutlook.activexOutlookNumbers.`52`
-  - typings.activexOutlook.activexOutlookNumbers.`50`
-  - typings.activexOutlook.activexOutlookNumbers.`161`
-  - typings.activexOutlook.activexOutlookNumbers.`134`
-  - typings.activexOutlook.activexOutlookNumbers.`172`
-  - typings.activexOutlook.activexOutlookNumbers.`171`
-  - typings.activexOutlook.activexOutlookNumbers.`38`
-  - typings.activexOutlook.activexOutlookNumbers.`39`
-  - typings.activexOutlook.activexOutlookNumbers.`80`
-  - typings.activexOutlook.activexOutlookNumbers.`142`
-  - typings.activexOutlook.activexOutlookNumbers.`141`
-  - typings.activexOutlook.activexOutlookNumbers.`146`
-  - typings.activexOutlook.activexOutlookNumbers.`79`
+  - typings.activexOutlook.activexOutlookInts.`105`
+  - typings.activexOutlook.activexOutlookInts.`135`
+  - typings.activexOutlook.activexOutlookInts.`106`
+  - typings.activexOutlook.activexOutlookInts.`32`
+  - typings.activexOutlook.activexOutlookInts.`33`
+  - typings.activexOutlook.activexOutlookInts.`21`
+  - typings.activexOutlook.activexOutlookInts.`8`
+  - typings.activexOutlook.activexOutlookInts.`7`
+  - typings.activexOutlook.activexOutlookInts.`20`
+  - typings.activexOutlook.activexOutlookInts.`170`
+  - typings.activexOutlook.activexOutlookInts.`0`
+  - typings.activexOutlook.activexOutlookInts.`26`
+  - typings.activexOutlook.activexOutlookInts.`122`
+  - typings.activexOutlook.activexOutlookInts.`5`
+  - typings.activexOutlook.activexOutlookInts.`18`
+  - typings.activexOutlook.activexOutlookInts.`169`
+  - typings.activexOutlook.activexOutlookInts.`147`
+  - typings.activexOutlook.activexOutlookInts.`148`
+  - typings.activexOutlook.activexOutlookInts.`159`
+  - typings.activexOutlook.activexOutlookInts.`151`
+  - typings.activexOutlook.activexOutlookInts.`153`
+  - typings.activexOutlook.activexOutlookInts.`152`
+  - typings.activexOutlook.activexOutlookInts.`130`
+  - typings.activexOutlook.activexOutlookInts.`168`
+  - typings.activexOutlook.activexOutlookInts.`139`
+  - typings.activexOutlook.activexOutlookInts.`138`
+  - typings.activexOutlook.activexOutlookInts.`137`
+  - typings.activexOutlook.activexOutlookInts.`155`
+  - typings.activexOutlook.activexOutlookInts.`136`
+  - typings.activexOutlook.activexOutlookInts.`140`
+  - typings.activexOutlook.activexOutlookInts.`174`
+  - typings.activexOutlook.activexOutlookInts.`175`
+  - typings.activexOutlook.activexOutlookInts.`154`
+  - typings.activexOutlook.activexOutlookInts.`149`
+  - typings.activexOutlook.activexOutlookInts.`150`
+  - typings.activexOutlook.activexOutlookInts.`102`
+  - typings.activexOutlook.activexOutlookInts.`103`
+  - typings.activexOutlook.activexOutlookInts.`40`
+  - typings.activexOutlook.activexOutlookInts.`160`
+  - typings.activexOutlook.activexOutlookInts.`178`
+  - typings.activexOutlook.activexOutlookInts.`182`
+  - typings.activexOutlook.activexOutlookInts.`69`
+  - typings.activexOutlook.activexOutlookInts.`41`
+  - typings.activexOutlook.activexOutlookInts.`30`
+  - typings.activexOutlook.activexOutlookInts.`29`
+  - typings.activexOutlook.activexOutlookInts.`111`
+  - typings.activexOutlook.activexOutlookInts.`110`
+  - typings.activexOutlook.activexOutlookInts.`34`
+  - typings.activexOutlook.activexOutlookInts.`60`
+  - typings.activexOutlook.activexOutlookInts.`2`
+  - typings.activexOutlook.activexOutlookInts.`15`
+  - typings.activexOutlook.activexOutlookInts.`37`
+  - typings.activexOutlook.activexOutlookInts.`131`
+  - typings.activexOutlook.activexOutlookInts.`129`
+  - typings.activexOutlook.activexOutlookInts.`173`
+  - typings.activexOutlook.activexOutlookInts.`132`
+  - typings.activexOutlook.activexOutlookInts.`128`
+  - typings.activexOutlook.activexOutlookInts.`35`
+  - typings.activexOutlook.activexOutlookInts.`61`
+  - typings.activexOutlook.activexOutlookInts.`98`
+  - typings.activexOutlook.activexOutlookInts.`99`
+  - typings.activexOutlook.activexOutlookInts.`16`
+  - typings.activexOutlook.activexOutlookInts.`42`
+  - typings.activexOutlook.activexOutlookInts.`162`
+  - typings.activexOutlook.activexOutlookInts.`75`
+  - typings.activexOutlook.activexOutlookInts.`76`
+  - typings.activexOutlook.activexOutlookInts.`43`
+  - typings.activexOutlook.activexOutlookInts.`158`
+  - typings.activexOutlook.activexOutlookInts.`124`
+  - typings.activexOutlook.activexOutlookInts.`54`
+  - typings.activexOutlook.activexOutlookInts.`181`
+  - typings.activexOutlook.activexOutlookInts.`53`
+  - typings.activexOutlook.activexOutlookInts.`55`
+  - typings.activexOutlook.activexOutlookInts.`56`
+  - typings.activexOutlook.activexOutlookInts.`57`
+  - typings.activexOutlook.activexOutlookInts.`176`
+  - typings.activexOutlook.activexOutlookInts.`118`
+  - typings.activexOutlook.activexOutlookInts.`1`
+  - typings.activexOutlook.activexOutlookInts.`167`
+  - typings.activexOutlook.activexOutlookInts.`166`
+  - typings.activexOutlook.activexOutlookInts.`165`
+  - typings.activexOutlook.activexOutlookInts.`164`
+  - typings.activexOutlook.activexOutlookInts.`157`
+  - typings.activexOutlook.activexOutlookInts.`156`
+  - typings.activexOutlook.activexOutlookInts.`125`
+  - typings.activexOutlook.activexOutlookInts.`44`
+  - typings.activexOutlook.activexOutlookInts.`163`
+  - typings.activexOutlook.activexOutlookInts.`144`
+  - typings.activexOutlook.activexOutlookInts.`145`
+  - typings.activexOutlook.activexOutlookInts.`66`
+  - typings.activexOutlook.activexOutlookInts.`65`
+  - typings.activexOutlook.activexOutlookInts.`63`
+  - typings.activexOutlook.activexOutlookInts.`68`
+  - typings.activexOutlook.activexOutlookInts.`67`
+  - typings.activexOutlook.activexOutlookInts.`64`
+  - typings.activexOutlook.activexOutlookInts.`180`
+  - typings.activexOutlook.activexOutlookInts.`36`
+  - typings.activexOutlook.activexOutlookInts.`62`
+  - typings.activexOutlook.activexOutlookInts.`123`
+  - typings.activexOutlook.activexOutlookInts.`45`
+  - typings.activexOutlook.activexOutlookInts.`112`
+  - typings.activexOutlook.activexOutlookInts.`71`
+  - typings.activexOutlook.activexOutlookInts.`70`
+  - typings.activexOutlook.activexOutlookInts.`4`
+  - typings.activexOutlook.activexOutlookInts.`17`
+  - typings.activexOutlook.activexOutlookInts.`28`
+  - typings.activexOutlook.activexOutlookInts.`101`
+  - typings.activexOutlook.activexOutlookInts.`100`
+  - typings.activexOutlook.activexOutlookInts.`47`
+  - typings.activexOutlook.activexOutlookInts.`46`
+  - typings.activexOutlook.activexOutlookInts.`78`
+  - typings.activexOutlook.activexOutlookInts.`121`
+  - typings.activexOutlook.activexOutlookInts.`115`
+  - typings.activexOutlook.activexOutlookInts.`117`
+  - typings.activexOutlook.activexOutlookInts.`116`
+  - typings.activexOutlook.activexOutlookInts.`127`
+  - typings.activexOutlook.activexOutlookInts.`126`
+  - typings.activexOutlook.activexOutlookInts.`114`
+  - typings.activexOutlook.activexOutlookInts.`77`
+  - typings.activexOutlook.activexOutlookInts.`74`
+  - typings.activexOutlook.activexOutlookInts.`109`
+  - typings.activexOutlook.activexOutlookInts.`133`
+  - typings.activexOutlook.activexOutlookInts.`119`
+  - typings.activexOutlook.activexOutlookInts.`104`
+  - typings.activexOutlook.activexOutlookInts.`179`
+  - typings.activexOutlook.activexOutlookInts.`177`
+  - typings.activexOutlook.activexOutlookInts.`113`
+  - typings.activexOutlook.activexOutlookInts.`107`
+  - typings.activexOutlook.activexOutlookInts.`108`
+  - typings.activexOutlook.activexOutlookInts.`72`
+  - typings.activexOutlook.activexOutlookInts.`73`
+  - typings.activexOutlook.activexOutlookInts.`120`
+  - typings.activexOutlook.activexOutlookInts.`48`
+  - typings.activexOutlook.activexOutlookInts.`49`
+  - typings.activexOutlook.activexOutlookInts.`51`
+  - typings.activexOutlook.activexOutlookInts.`52`
+  - typings.activexOutlook.activexOutlookInts.`50`
+  - typings.activexOutlook.activexOutlookInts.`161`
+  - typings.activexOutlook.activexOutlookInts.`134`
+  - typings.activexOutlook.activexOutlookInts.`172`
+  - typings.activexOutlook.activexOutlookInts.`171`
+  - typings.activexOutlook.activexOutlookInts.`38`
+  - typings.activexOutlook.activexOutlookInts.`39`
+  - typings.activexOutlook.activexOutlookInts.`80`
+  - typings.activexOutlook.activexOutlookInts.`142`
+  - typings.activexOutlook.activexOutlookInts.`141`
+  - typings.activexOutlook.activexOutlookInts.`146`
+  - typings.activexOutlook.activexOutlookInts.`79`
 */
 trait OlObjectClass extends StObject
 object OlObjectClass {

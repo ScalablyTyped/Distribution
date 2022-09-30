@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.VerticalSplitPane")
 @js.native
-class VerticalSplitPane protected ()
+open class VerticalSplitPane protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.VerticalSplitPane {
   def this(
     model: AbstractModel,

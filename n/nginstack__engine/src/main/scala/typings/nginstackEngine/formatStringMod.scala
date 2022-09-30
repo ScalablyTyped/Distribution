@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatStringMod {
   
-  inline def apply(format: String, args: (String | Double)*): String = ^.asInstanceOf[js.Dynamic].apply(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def apply(format: String, args: (String | Double)*): String = ^.asInstanceOf[js.Dynamic].apply(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   @JSImport("@nginstack/engine/lib/string/formatString", JSImport.Namespace)
   @js.native

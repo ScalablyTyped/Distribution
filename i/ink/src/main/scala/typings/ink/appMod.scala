@@ -2,11 +2,11 @@ package typings.ink
 
 import typings.ink.anon.ActiveFocusId
 import typings.ink.anon.AutoFocus
+import typings.ink.anon.Error
 import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object appMod {
   
   @JSImport("ink/build/components/App", JSImport.Default)
   @js.native
-  class default () extends App
+  open class default () extends App
   /* static members */
   object default {
     
@@ -28,19 +28,18 @@ object appMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromError(error: Error): typings.ink.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.ink.anon.Error]
+    inline def getDerivedStateFromError(error: js.Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
   }
   
   @js.native
-  trait App
-    extends PureComponent[Props, State, js.Any] {
+  trait App extends PureComponent[Props, State, Any] {
     
     def activateFocusable(id: String): Unit = js.native
     
     def addFocusable(id: String, hasAutoFocus: AutoFocus): Unit = js.native
     
     @JSName("componentDidCatch")
-    def componentDidCatch_MApp(error: Error): Unit = js.native
+    def componentDidCatch_MApp(error: js.Error): Unit = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MApp(): Unit = js.native
@@ -58,12 +57,14 @@ object appMod {
     
     def findPreviousFocusable(state: State): js.UndefOr[String] = js.native
     
+    def focus(id: String): Unit = js.native
+    
     def focusNext(): Unit = js.native
     
     def focusPrevious(): Unit = js.native
     
     def handleExit(): Unit = js.native
-    def handleExit(error: Error): Unit = js.native
+    def handleExit(error: js.Error): Unit = js.native
     
     def handleInput(input: String): Unit = js.native
     
@@ -108,7 +109,7 @@ object appMod {
     val exitOnCtrlC: Boolean = js.native
     
     def onExit(): Unit = js.native
-    def onExit(error: Error): Unit = js.native
+    def onExit(error: js.Error): Unit = js.native
     
     val stderr: WriteStream = js.native
     
@@ -125,7 +126,7 @@ object appMod {
     
     val activeFocusId: js.UndefOr[String] = js.undefined
     
-    val error: js.UndefOr[Error] = js.undefined
+    val error: js.UndefOr[js.Error] = js.undefined
     
     val focusables: js.Array[Focusable]
     
@@ -144,13 +145,13 @@ object appMod {
       
       inline def setActiveFocusIdUndefined: Self = StObject.set(x, "activeFocusId", js.undefined)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setFocusables(value: js.Array[Focusable]): Self = StObject.set(x, "focusables", value.asInstanceOf[js.Any])
       
-      inline def setFocusablesVarargs(value: Focusable*): Self = StObject.set(x, "focusables", js.Array(value :_*))
+      inline def setFocusablesVarargs(value: Focusable*): Self = StObject.set(x, "focusables", js.Array(value*))
       
       inline def setIsFocusEnabled(value: Boolean): Self = StObject.set(x, "isFocusEnabled", value.asInstanceOf[js.Any])
     }

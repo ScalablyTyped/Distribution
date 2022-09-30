@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object workerbApiStrings {
   
   @js.native
-  sealed trait `by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket` extends StObject
-  inline def `by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket`: `by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket` = ("by_${QueryMethods | 'label' | 'placeholder'}").asInstanceOf[`by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket`]
-  
-  @js.native
-  sealed trait `by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket` extends StObject
-  inline def `by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket`: `by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket` = ("by_${QueryMethods | 'query_selector_all'}").asInstanceOf[`by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket`]
-  
-  @js.native
-  sealed trait by_$LeftcurlybracketQueryMethodsRightcurlybracket extends StObject
-  inline def by_$LeftcurlybracketQueryMethodsRightcurlybracket: by_$LeftcurlybracketQueryMethodsRightcurlybracket = "by_${QueryMethods}".asInstanceOf[by_$LeftcurlybracketQueryMethodsRightcurlybracket]
-  
-  @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
   

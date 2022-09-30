@@ -90,13 +90,13 @@ object engineComputeShaderMod {
     @js.native
     trait ThinEngine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _deleteComputePipelineContext(pipelineContext: IComputePipelineContext): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _executeWhenComputeStateIsCompiled(pipelineContext: IComputePipelineContext, action: js.Function0[Unit]): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _prepareComputePipelineContext(
         pipelineContext: IComputePipelineContext,
         computeSourceCode: String,
@@ -105,10 +105,10 @@ object engineComputeShaderMod {
         entryPoint: String
       ): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _rebuildComputeEffects(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _releaseComputeEffect(effect: ComputeEffect): Unit = js.native
       
       /**

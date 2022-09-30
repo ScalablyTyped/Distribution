@@ -3,11 +3,9 @@ package typings.awsSdkMiddlewareSdkSts
 import org.scalablytyped.runtime.Instantiable1
 import typings.awsSdkMiddlewareSigning.configurationsMod.AwsAuthInputConfig
 import typings.awsSdkMiddlewareSigning.configurationsMod.AwsAuthResolvedConfig
-import typings.awsSdkTypes.anon.ForceRefresh
 import typings.awsSdkTypes.clientMod.Client
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
-import typings.awsSdkTypes.signatureMod.RequestSigner
 import typings.awsSdkTypes.utilMod.Provider
 import typings.awsSdkTypes.utilMod.RegionInfo
 import typings.awsSdkTypes.utilMod.RegionInfoProvider
@@ -112,6 +110,7 @@ object mod {
   
   type StsAuthInputConfig = AwsAuthInputConfig
   
+  @js.native
   trait StsAuthResolvedConfig
     extends StObject
        with AwsAuthResolvedConfig {
@@ -120,24 +119,6 @@ object mod {
       * Reference to STSClient class constructor.
       * @internal
       */
-    var stsClientCtor: Instantiable1[/* clientConfig */ Any, Client[Any, Any, Any]]
-  }
-  object StsAuthResolvedConfig {
-    
-    inline def apply(
-      credentials: /* options */ js.UndefOr[ForceRefresh] => js.Promise[Credentials],
-      signer: () => js.Promise[RequestSigner],
-      signingEscapePath: Boolean,
-      stsClientCtor: Instantiable1[/* clientConfig */ Any, Client[Any, Any, Any]],
-      systemClockOffset: Double
-    ): StsAuthResolvedConfig = {
-      val __obj = js.Dynamic.literal(credentials = js.Any.fromFunction1(credentials), signer = js.Any.fromFunction0(signer), signingEscapePath = signingEscapePath.asInstanceOf[js.Any], stsClientCtor = stsClientCtor.asInstanceOf[js.Any], systemClockOffset = systemClockOffset.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StsAuthResolvedConfig]
-    }
-    
-    extension [Self <: StsAuthResolvedConfig](x: Self) {
-      
-      inline def setStsClientCtor(value: Instantiable1[/* clientConfig */ Any, Client[Any, Any, Any]]): Self = StObject.set(x, "stsClientCtor", value.asInstanceOf[js.Any])
-    }
+    var stsClientCtor: Instantiable1[/* clientConfig */ Any, Client[Any, Any, Any]] = js.native
   }
 }

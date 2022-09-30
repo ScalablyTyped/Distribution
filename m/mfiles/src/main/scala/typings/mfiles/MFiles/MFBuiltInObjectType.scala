@@ -1,18 +1,18 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`-102`
-import typings.mfiles.mfilesNumbers.`0`
-import typings.mfiles.mfilesNumbers.`10`
-import typings.mfiles.mfilesNumbers.`9`
+import typings.mfiles.mfilesInts.`-102`
+import typings.mfiles.mfilesInts.`0`
+import typings.mfiles.mfilesInts.`10`
+import typings.mfiles.mfilesInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`0`
-  - typings.mfiles.mfilesNumbers.`9`
-  - typings.mfiles.mfilesNumbers.`10`
-  - typings.mfiles.mfilesNumbers.`-102`
+  - typings.mfiles.mfilesInts.`0`
+  - typings.mfiles.mfilesInts.`9`
+  - typings.mfiles.mfilesInts.`10`
+  - typings.mfiles.mfilesInts.`-102`
 */
 trait MFBuiltInObjectType extends StObject
 object MFBuiltInObjectType {

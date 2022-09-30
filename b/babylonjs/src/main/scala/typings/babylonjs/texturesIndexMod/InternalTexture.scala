@@ -29,7 +29,7 @@ object InternalTexture {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /** @internal */
   @JSImport("babylonjs/Materials/Textures/index", "InternalTexture._Counter")
   @js.native
   def _Counter: Double = js.native

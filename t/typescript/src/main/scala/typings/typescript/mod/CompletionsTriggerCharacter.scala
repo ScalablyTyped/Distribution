@@ -4,23 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.typescript.typescriptStrings.Dot
-  - typings.typescript.typescriptStrings.Quotationmark
-  - typings.typescript.typescriptStrings.Apostrophe
-  - typings.typescript.typescriptStrings.Graveaccent
-  - typings.typescript.typescriptStrings.Slash
-  - typings.typescript.typescriptStrings.`@`
-  - typings.typescript.typescriptStrings.Lessthansign
-  - typings.typescript.typescriptStrings.Numbersign
-  - typings.typescript.typescriptStrings.Space
-*/
-trait CompletionsTriggerCharacter extends StObject
 object CompletionsTriggerCharacter {
   
   inline def `@`: typings.typescript.typescriptStrings.`@` = "@".asInstanceOf[typings.typescript.typescriptStrings.`@`]
   
-  inline def Apostrophe: typings.typescript.typescriptStrings.Apostrophe = "'".asInstanceOf[typings.typescript.typescriptStrings.Apostrophe]
+  inline def Apostrophe: java.lang.String = java.lang.String.asInstanceOf[java.lang.String]
   
   inline def Dot: typings.typescript.typescriptStrings.Dot = ".".asInstanceOf[typings.typescript.typescriptStrings.Dot]
   

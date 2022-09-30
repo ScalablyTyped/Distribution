@@ -1,13 +1,15 @@
 package typings.rnFetchBlob.mod
 
 import typings.rnFetchBlob.anon.Count
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StatefulPromise[T]
-  extends js.Promise[T] {
+  extends StObject
+     with Promise[T] {
   
   /**
     * Cancel the request when invoke this method.

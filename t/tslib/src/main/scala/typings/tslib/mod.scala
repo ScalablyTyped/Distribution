@@ -22,7 +22,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assign(t: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__assign")(List(t.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def assign(t: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__assign")(scala.List(t.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def asyncDelegator(o: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("__asyncDelegator")(o.asInstanceOf[js.Any]).asInstanceOf[Any]
   

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListVirtualMachinesInput extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) of the hypervisor connected to your virtual machine.
+    */
+  var HypervisorArn: js.UndefOr[ServerArn] = js.undefined
+  
+  /**
     * The maximum number of virtual machines to list.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.backupgatewayMod.MaxResults] = js.undefined
@@ -24,6 +29,10 @@ object ListVirtualMachinesInput {
   }
   
   extension [Self <: ListVirtualMachinesInput](x: Self) {
+    
+    inline def setHypervisorArn(value: ServerArn): Self = StObject.set(x, "HypervisorArn", value.asInstanceOf[js.Any])
+    
+    inline def setHypervisorArnUndefined: Self = StObject.set(x, "HypervisorArn", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TabulatorFull protected () extends Tabulator {
   def this(selector: String) = this()
   def this(selector: HTMLElement) = this()
-  def this(selector: String, options: TabulatorOptions) = this()
-  def this(selector: HTMLElement, options: TabulatorOptions) = this()
+  def this(selector: String, options: Options) = this()
+  def this(selector: HTMLElement, options: Options) = this()
 }

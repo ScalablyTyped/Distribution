@@ -23,7 +23,7 @@ object WaypointsSplicedEvent {
     
     inline def setAdded(value: js.Array[Waypoint_]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    inline def setAddedVarargs(value: Waypoint_ *): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: Waypoint_ *): Self = StObject.set(x, "added", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

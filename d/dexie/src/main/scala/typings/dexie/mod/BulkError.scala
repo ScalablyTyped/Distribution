@@ -1,40 +1,38 @@
 package typings.dexie.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BulkError extends DexieError {
+trait BulkError
+  extends StObject
+     with DexieError {
   
-  var failures: NumberDictionary[Error] = js.native
+  var failures: js.Array[js.Error]
+  
+  var failuresByPos: NumberDictionary[js.Error]
 }
 object BulkError {
   
-  @scala.inline
-  def apply(failures: NumberDictionary[Error], inner: js.Any, message: String, name: String, stack: String): BulkError = {
-    val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], inner = inner.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+  inline def apply(
+    failures: js.Array[js.Error],
+    failuresByPos: NumberDictionary[js.Error],
+    inner: Any,
+    message: String,
+    name: String,
+    stack: String
+  ): BulkError = {
+    val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], failuresByPos = failuresByPos.asInstanceOf[js.Any], inner = inner.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkError]
   }
   
-  @scala.inline
-  implicit class BulkErrorOps[Self <: BulkError] (val x: Self) extends AnyVal {
+  extension [Self <: BulkError](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setFailures(value: js.Array[js.Error]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setFailuresByPos(value: NumberDictionary[js.Error]): Self = StObject.set(x, "failuresByPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailures(value: NumberDictionary[Error]): Self = this.set("failures", value.asInstanceOf[js.Any])
+    inline def setFailuresVarargs(value: js.Error*): Self = StObject.set(x, "failures", js.Array(value*))
   }
 }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "HmacSha512")
 @js.native
-class HmacSha512 ()
+open class HmacSha512 ()
   extends typings.xmldsigjs.algorithmsMod.HmacSha512

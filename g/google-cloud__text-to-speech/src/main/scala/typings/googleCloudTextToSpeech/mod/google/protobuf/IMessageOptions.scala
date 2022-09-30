@@ -1,11 +1,16 @@
 package typings.googleCloudTextToSpeech.mod.google.protobuf
 
+import typings.googleCloudTextToSpeech.mod.google.api.IResourceDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a MessageOptions. */
 trait IMessageOptions extends StObject {
+  
+  /** MessageOptions .google.api.resource */
+  @JSName(".google.api.resource")
+  var DotgoogleDotapiDotresource: js.UndefOr[IResourceDescriptor | Null] = js.undefined
   
   /** MessageOptions deprecated */
   var deprecated: js.UndefOr[Boolean | Null] = js.undefined
@@ -37,6 +42,12 @@ object IMessageOptions {
     
     inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
+    inline def setDotgoogleDotapiDotresource(value: IResourceDescriptor): Self = StObject.set(x, ".google.api.resource", value.asInstanceOf[js.Any])
+    
+    inline def setDotgoogleDotapiDotresourceNull: Self = StObject.set(x, ".google.api.resource", null)
+    
+    inline def setDotgoogleDotapiDotresourceUndefined: Self = StObject.set(x, ".google.api.resource", js.undefined)
+    
     inline def setMapEntry(value: Boolean): Self = StObject.set(x, "mapEntry", value.asInstanceOf[js.Any])
     
     inline def setMapEntryNull: Self = StObject.set(x, "mapEntry", null)
@@ -61,6 +72,6 @@ object IMessageOptions {
     
     inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value*))
   }
 }

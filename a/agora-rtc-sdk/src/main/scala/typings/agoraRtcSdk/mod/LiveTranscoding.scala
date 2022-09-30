@@ -1,16 +1,16 @@
 package typings.agoraRtcSdk.mod
 
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`100`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`1`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`2`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`32000`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`3`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`44100`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`48000`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`4`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`5`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`66`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`77`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`100`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`1`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`2`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`32000`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`3`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`44100`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`48000`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`4`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`5`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`66`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`77`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

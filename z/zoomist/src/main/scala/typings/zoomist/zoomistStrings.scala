@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object zoomistStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketnumberRightcurlybracketPercentsign extends StObject
-  inline def $LeftcurlybracketnumberRightcurlybracketPercentsign: $LeftcurlybracketnumberRightcurlybracketPercentsign = "${number}%".asInstanceOf[$LeftcurlybracketnumberRightcurlybracketPercentsign]
-  
-  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   

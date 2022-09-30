@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping")
 @js.native
-class WebServiceOperationSimpleParameterMapping protected ()
+open class WebServiceOperationSimpleParameterMapping protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class WebServiceOperationSimpleParameterMapping protected ()
 }
 object WebServiceOperationSimpleParameterMapping {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object WebServiceOperationSimpleParameterMapping {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.SimpleRequestHandling): typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationSimpleParameterMapping.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

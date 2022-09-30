@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getNextUniqueIdMod {
   
-  @JSImport("dnd-core/lib/utils/getNextUniqueId", JSImport.Namespace)
+  @JSImport("dnd-core/dist/utils/getNextUniqueId", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -10,10 +10,10 @@ A plugin for LeafletJS to use Google maps basemaps.
 | ------------------ | :-------------: |
 | Full name          | leaflet.gridlayer.googlemutant |
 | Keywords           | leaflet, google maps |
-| # releases         | 9 |
-| # dependents       | 22 |
-| # downloads        | 653380 |
-| # stars            | 1 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 91778.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://gitlab.com/IvanSanchez/Leaflet.GridLayer.GoogleMutant#readme)

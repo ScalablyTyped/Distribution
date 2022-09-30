@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Marker")
 @js.native
-class Marker_[P] protected ()
+open class Marker_[P] protected ()
   extends typings.leaflet.mod.Marker_[P] {
   def this(latlng: LatLngExpression) = this()
   def this(latlng: LatLngExpression, options: MarkerOptions) = this()

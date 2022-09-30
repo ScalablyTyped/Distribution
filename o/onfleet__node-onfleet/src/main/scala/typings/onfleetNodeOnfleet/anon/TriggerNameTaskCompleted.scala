@@ -1,6 +1,6 @@
 package typings.onfleetNodeOnfleet.anon
 
-import typings.onfleetNodeOnfleet.onfleetNodeOnfleetNumbers.`3`
+import typings.onfleetNodeOnfleet.onfleetNodeOnfleetInts.`3`
 import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCompleted
 import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerType
 import org.scalablytyped.runtime.StObject

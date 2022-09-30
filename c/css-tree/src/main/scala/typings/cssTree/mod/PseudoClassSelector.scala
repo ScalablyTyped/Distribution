@@ -9,7 +9,7 @@ trait PseudoClassSelector
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode] | Null
+  var children: typings.cssTree.mod.List[CssNode] | Null
   
   var name: String
   
@@ -26,7 +26,7 @@ object PseudoClassSelector {
   
   extension [Self <: PseudoClassSelector](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenNull: Self = StObject.set(x, "children", null)
     

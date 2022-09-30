@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.17.0: added public
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCall")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCall")
 @js.native
-class LayoutCall protected ()
+open class LayoutCall protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.LayoutCall {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class LayoutCall protected ()
 }
 object LayoutCall {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCall")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCall")
   @js.native
   val ^ : js.Any = js.native
   
@@ -83,13 +83,13 @@ object LayoutCall {
   inline def createInWebLayoutContentUnderLayoutCall(container: typings.mendixmodelsdk.pagesMod.pages.WebLayoutContent): typings.mendixmodelsdk.pagesMod.pages.LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.LayoutCall]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCall.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCall.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCall.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCall.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

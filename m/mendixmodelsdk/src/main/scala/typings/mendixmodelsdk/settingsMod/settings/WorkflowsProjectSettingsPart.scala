@@ -8,20 +8,18 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.workflowsMod.workflows.MicroflowEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
-  * @ignore
-  *
+  * In version 9.0.5: removed experimental
   * In version 8.8.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.WorkflowsProjectSettingsPart")
+@JSImport("mendixmodelsdk/src/gen/settings", "settings.WorkflowsProjectSettingsPart")
 @js.native
-class WorkflowsProjectSettingsPart protected () extends ProjectSettingsPart {
+open class WorkflowsProjectSettingsPart protected () extends ProjectSettingsPart {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,6 +29,15 @@ class WorkflowsProjectSettingsPart protected () extends ProjectSettingsPart {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  /**
+    * In version 9.0.5: introduced
+    */
+  def defaultTaskParallelism: Double = js.native
+  def defaultTaskParallelism_=(newValue: Double): Unit = js.native
+  
+  /**
+    * In version 9.0.5: deleted
+    */
   def enabled: Boolean = js.native
   def enabled_=(newValue: Boolean): Unit = js.native
   
@@ -42,10 +49,28 @@ class WorkflowsProjectSettingsPart protected () extends ProjectSettingsPart {
   def userEntityQualifiedName: String | Null = js.native
   
   def userEntity_=(newValue: IEntity | Null): Unit = js.native
+  
+  /**
+    * In version 9.12.0: introduced
+    */
+  def usertaskOnStateChangeEvent: MicroflowEventHandler | Null = js.native
+  def usertaskOnStateChangeEvent_=(newValue: MicroflowEventHandler | Null): Unit = js.native
+  
+  /**
+    * In version 9.0.5: introduced
+    */
+  def workflowEngineParallelism: Double = js.native
+  def workflowEngineParallelism_=(newValue: Double): Unit = js.native
+  
+  /**
+    * In version 9.12.0: introduced
+    */
+  def workflowOnStateChangeEvent: MicroflowEventHandler | Null = js.native
+  def workflowOnStateChangeEvent_=(newValue: MicroflowEventHandler | Null): Unit = js.native
 }
 object WorkflowsProjectSettingsPart {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.WorkflowsProjectSettingsPart")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.WorkflowsProjectSettingsPart")
   @js.native
   val ^ : js.Any = js.native
   
@@ -69,13 +94,13 @@ object WorkflowsProjectSettingsPart {
   inline def createIn(container: ProjectSettings): WorkflowsProjectSettingsPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WorkflowsProjectSettingsPart]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.WorkflowsProjectSettingsPart.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.WorkflowsProjectSettingsPart.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.WorkflowsProjectSettingsPart.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.WorkflowsProjectSettingsPart.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

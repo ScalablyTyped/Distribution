@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociation because var conflicts: capabilities, containerAsDomainModel, id, isLoaded, model, name, owner, parent, qualifiedName, remoteSourceDocument, remoteSourceDocumentQualifiedName, source, structureTypeName, `type`, unit. Inlined child */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociation because var conflicts: capabilities, containerAsDomainModel, documentation, id, isLoaded, model, name, owner, parent, qualifiedName, remoteSourceDocument, remoteSourceDocumentQualifiedName, source, structureTypeName, `type`, unit. Inlined child */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Association")
 @js.native
-class Association protected () extends AssociationBase {
+open class Association protected () extends AssociationBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -54,7 +54,7 @@ class Association protected () extends AssociationBase {
 }
 object Association {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Association")
   @js.native
   val ^ : js.Any = js.native
   
@@ -75,13 +75,13 @@ object Association {
   inline def createIn(container: DomainModel): Association = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Association]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Association.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Association.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Association.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

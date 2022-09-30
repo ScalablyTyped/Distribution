@@ -1,6 +1,6 @@
 package typings.antvGLite
 
-import typings.antvGLite.displayObjectsMod.DisplayObject
+import typings.antvGLite.displayObjectMod.DisplayObject
 import typings.antvGLite.displayObjectsMod.Group
 import typings.antvGLite.distTypesMod.BaseStyleProps
 import typings.antvGLite.domInterfacesMod.DisplayObjectConfig
@@ -47,17 +47,14 @@ object documentMod {
     def children_MDocument: js.Array[IElement[Any, Any]] = js.native
     
     /**
+      * @example const circle = document.createElement('circle', { style: { r: 10 } });
+      */
+    /**
       * Creates an instance of the element for the specified tag.
       */
     def createElement[T /* <: DisplayObject[StyleProps, Any] */, StyleProps /* <: BaseStyleProps */](tagName: String, options: DisplayObjectConfig[StyleProps]): T = js.native
     
-    def createElementNS[T /* <: typings.antvGLite.displayObjectMod.DisplayObject[StyleProps, Any] */, StyleProps /* <: BaseStyleProps */](namespaceURI: String, tagName: String, options: DisplayObjectConfig[StyleProps]): T = js.native
-    
-    /**
-      * @example const circle = document.createElement('circle', { style: { r: 10 } });
-      */
-    @JSName("createElement")
-    def createElement_T_DisplayObjectStylePropsAnyStyleProps_BaseStyleProps[T /* <: typings.antvGLite.displayObjectMod.DisplayObject[StyleProps, Any] */, StyleProps /* <: BaseStyleProps */](tagName: String, options: DisplayObjectConfig[StyleProps]): T = js.native
+    def createElementNS[T /* <: DisplayObject[StyleProps, Any] */, StyleProps /* <: BaseStyleProps */](namespaceURI: String, tagName: String, options: DisplayObjectConfig[StyleProps]): T = js.native
     
     /**
       * only document has defaultView, points to canvas,
@@ -76,23 +73,23 @@ object documentMod {
       *
       * @see https://developer.mozilla.org/zh-CN/docs/Web/API/Document/elementFromPoint
       */
-    def elementFromPoint(x: Double, y: Double): js.Promise[typings.antvGLite.displayObjectMod.DisplayObject[Any, Any]] = js.native
+    def elementFromPoint(x: Double, y: Double): js.Promise[DisplayObject[Any, Any]] = js.native
     
-    def elementFromPointSync(x: Double, y: Double): typings.antvGLite.displayObjectMod.DisplayObject[Any, Any] = js.native
+    def elementFromPointSync(x: Double, y: Double): DisplayObject[Any, Any] = js.native
     
     /**
       * Picking 2D graphics with RBush based on BBox, fast but inaccurate.
       */
-    def elementsFromBBox(minX: Double, minY: Double, maxX: Double, maxY: Double): js.Array[typings.antvGLite.displayObjectMod.DisplayObject[Any, Any]] = js.native
+    def elementsFromBBox(minX: Double, minY: Double, maxX: Double, maxY: Double): js.Array[DisplayObject[Any, Any]] = js.native
     
     /**
       * Do picking with API instead of triggering interactive events.
       *
       * @see https://developer.mozilla.org/zh-CN/docs/Web/API/Document/elementsFromPoint
       */
-    def elementsFromPoint(x: Double, y: Double): js.Promise[js.Array[typings.antvGLite.displayObjectMod.DisplayObject[Any, Any]]] = js.native
+    def elementsFromPoint(x: Double, y: Double): js.Promise[js.Array[DisplayObject[Any, Any]]] = js.native
     
-    def elementsFromPointSync(x: Double, y: Double): js.Array[typings.antvGLite.displayObjectMod.DisplayObject[Any, Any]] = js.native
+    def elementsFromPointSync(x: Double, y: Double): js.Array[DisplayObject[Any, Any]] = js.native
     
     /**
       * Similar to querySelector, use custom filter instead of selectors.

@@ -2,7 +2,6 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.protosMod.google.protobuf.ITimestamp
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait IPubsubMessage extends StObject {
   var attributes: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /** PubsubMessage data */
-  var data: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var data: js.UndefOr[js.typedarray.Uint8Array | String | Null] = js.undefined
   
   /** PubsubMessage messageId */
   var messageId: js.UndefOr[String | Null] = js.undefined
@@ -40,7 +39,7 @@ object IPubsubMessage {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setData(value: Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataNull: Self = StObject.set(x, "data", null)
     

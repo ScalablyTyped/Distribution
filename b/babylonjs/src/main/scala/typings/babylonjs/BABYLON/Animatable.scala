@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Animatable extends StObject {
   
   /**
-    * @param delay
-    * @hidden
+    * @internal
     */
   def _animate(delay: Double): Boolean = js.native
   

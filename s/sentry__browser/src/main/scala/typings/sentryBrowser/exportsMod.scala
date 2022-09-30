@@ -42,6 +42,7 @@ import typings.sentryTypes.transportMod.Transport
 import typings.sentryTypes.transportMod.TransportRequestExecutor
 import typings.sentryTypes.userMod.User
 import typings.sentryUtils.promisebufferMod.PromiseBuffer
+import typings.std.PromiseLike
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -247,7 +248,7 @@ object exportsMod {
   
   @JSImport("@sentry/browser/types/exports", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.13.0" */ String = js.native
+  val SDK_VERSION: /* "7.14.0" */ String = js.native
   
   @JSImport("@sentry/browser/types/exports", "Scope")
   @js.native
@@ -327,8 +328,8 @@ object exportsMod {
   @js.native
   val chromeStackLineParser: StackLineParser = js.native
   
-  inline def close(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Thenable[Boolean]]
-  inline def close(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
+  inline def close(): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[PromiseLike[Boolean]]
+  inline def close(timeout: Double): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Boolean]]
   
   inline def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.scopeMod.Scope, Unit]): ReturnType[FnCallCallback] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallCallback]]
   
@@ -353,8 +354,8 @@ object exportsMod {
   @js.native
   val defaultStackParser: StackParser = js.native
   
-  inline def flush(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Thenable[Boolean]]
-  inline def flush(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
+  inline def flush(): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[PromiseLike[Boolean]]
+  inline def flush(timeout: Double): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Boolean]]
   
   inline def forceLoad(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLoad")().asInstanceOf[Unit]
   

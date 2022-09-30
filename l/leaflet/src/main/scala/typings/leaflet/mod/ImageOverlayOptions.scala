@@ -12,7 +12,7 @@ trait ImageOverlayOptions
   
   var className: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
+  var crossOrigin: js.UndefOr[CrossOrigin | Boolean] = js.undefined
   
   var errorOverlayUrl: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ object ImageOverlayOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCrossOrigin(value: CrossOrigin): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: CrossOrigin | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Layer")
 @js.native
-class Layer ()
+open class Layer ()
   extends typings.leaflet.mod.Layer {
   def this(options: LayerOptions) = this()
 }

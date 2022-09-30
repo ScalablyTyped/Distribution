@@ -39,17 +39,17 @@ object UtilityLayerRenderer {
   /**
     * Creates an utility layer, and set it as a default utility layer
     * @param scene associated scene
-    * @hidden
+    * @internal
     */
   inline def _CreateDefaultUtilityLayerFromScene(scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.UtilityLayerRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultUtilityLayerFromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.UtilityLayerRenderer]
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
   @js.native
   def _DefaultKeepDepthUtilityLayer: Nullable[typings.babylonjs.BABYLON.UtilityLayerRenderer] = js.native
   inline def _DefaultKeepDepthUtilityLayer_=(x: Nullable[typings.babylonjs.BABYLON.UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.UtilityLayerRenderer._DefaultUtilityLayer")
   @js.native
   def _DefaultUtilityLayer: Nullable[typings.babylonjs.BABYLON.UtilityLayerRenderer] = js.native

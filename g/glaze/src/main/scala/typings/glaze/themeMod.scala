@@ -7,15 +7,15 @@ import typings.glaze.anon.Border
 import typings.glaze.anon.BorderWidth
 import typings.glaze.anon.Inset
 import typings.glaze.anon.propertyinkeyofCSSPropert
-import typings.glaze.glazeNumbers.`1024`
-import typings.glaze.glazeNumbers.`1280`
-import typings.glaze.glazeNumbers.`640`
-import typings.glaze.glazeNumbers.`768`
+import typings.glaze.glazeInts.`1024`
+import typings.glaze.glazeInts.`1280`
+import typings.glaze.glazeInts.`640`
+import typings.glaze.glazeInts.`768`
 import typings.glaze.glazeStrings.hack
 import typings.glaze.glazeStrings.shorthands
 import typings.std.Extract
 import typings.std.NonNullable
-import typings.treat.typesMod.ThemeRef
+import typings.treat.themeMod.ThemeOrAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,13 +26,8 @@ object themeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme
-  ): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[RuntimeTheme]
-  inline def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme,
-    localDebugName: String
-  ): RuntimeTheme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[RuntimeTheme]
+  inline def createTheme(tokens: ThemeOrAny & StaticTheme): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[RuntimeTheme]
+  inline def createTheme(tokens: ThemeOrAny & StaticTheme, localDebugName: String): RuntimeTheme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[RuntimeTheme]
   
   object defaultTokens {
     
@@ -82,7 +77,7 @@ object themeMod {
       
       inline def setBreakpoints(value: js.Array[Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
-      inline def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+      inline def setBreakpointsVarargs(value: Double*): Self = StObject.set(x, "breakpoints", js.Array(value*))
       
       inline def setShorthands(value: StringDictionary[js.Array[hack]]): Self = StObject.set(x, "shorthands", value.asInstanceOf[js.Any])
     }
@@ -92,14 +87,14 @@ object themeMod {
     extends StObject
        with CommonTheme {
     
-    var ref: ThemeRef
+    var ref: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeRef */ Any
   }
   object RuntimeTheme {
     
     inline def apply(
       aliases: StringDictionary[hack | Tokens[shorthands]],
       breakpoints: js.Array[Double],
-      ref: ThemeRef,
+      ref: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeRef */ Any,
       shorthands: StringDictionary[js.Array[hack]]
     ): RuntimeTheme = {
       val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], breakpoints = breakpoints.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], shorthands = shorthands.asInstanceOf[js.Any])
@@ -108,7 +103,9 @@ object themeMod {
     
     extension [Self <: RuntimeTheme](x: Self) {
       
-      inline def setRef(value: ThemeRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeRef */ Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,8 +144,8 @@ object themeMod {
     }
   }
   
-  type Tokens[T /* <: /* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny * / any */ String */] = Extract[
-    /* import warning: importer.ImportType#apply Failed type conversion: keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny * / any[T] */ js.Any, 
+  type Tokens[T /* <: /* keyof treat.treat/theme.ThemeOrAny */ String */] = Extract[
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof treat.treat/theme.ThemeOrAny[T] */ js.Any, 
     String | Double
   ]
 }

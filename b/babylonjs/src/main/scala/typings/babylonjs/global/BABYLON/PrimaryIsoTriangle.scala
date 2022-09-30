@@ -17,9 +17,7 @@ open class PrimaryIsoTriangle ()
   override def MapToFace(faceNb: Double, geodesicData: typings.babylonjs.BABYLON.PolyhedronData): Unit = js.native
   
   /**Creates a primary triangle
-    * @param m
-    * @param n
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def build(m: Double, n: Double): this.type = js.native

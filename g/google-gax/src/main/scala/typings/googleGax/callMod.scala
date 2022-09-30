@@ -8,6 +8,7 @@ import typings.googleGax.apitypesMod.ResponseType
 import typings.googleGax.apitypesMod.ResultTuple
 import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.googleErrorMod.GoogleError
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object callMod {
   
   @JSImport("google-gax/build/src/call", "OngoingCall")
   @js.native
-  class OngoingCall protected () extends StObject {
+  open class OngoingCall protected () extends StObject {
     /**
       * OngoingCall manages callback, API calls, and cancellation
       * of the API calls.
@@ -78,14 +79,15 @@ object callMod {
     * @constructor
     * @private
     */
-  class OngoingCallPromise () extends OngoingCall {
+  open class OngoingCallPromise () extends OngoingCall {
     
     var promise: CancellablePromise[ResultTuple] = js.native
   }
   
   @js.native
   trait CancellablePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def cancel(): Unit = js.native
   }

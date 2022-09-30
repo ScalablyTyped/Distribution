@@ -112,6 +112,8 @@ type ParallelDataStatus = _ParallelDataStatus | java.lang.String
 
 type Profanity = MASK | java.lang.String
 
+type ResourceArn = java.lang.String
+
 type ResourceName = java.lang.String
 
 type ResourceNameList = js.Array[ResourceName]
@@ -119,6 +121,14 @@ type ResourceNameList = js.Array[ResourceName]
 type S3Uri = java.lang.String
 
 type String = java.lang.String
+
+type TagKey = java.lang.String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagList = js.Array[Tag]
+
+type TagValue = java.lang.String
 
 type TargetLanguageCodeStringList = js.Array[LanguageCodeString]
 

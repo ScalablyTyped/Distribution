@@ -10,10 +10,10 @@ Sensible promise handling and middleware for redux
 | ------------------ | :-------------: |
 | Full name          | redux-pack |
 | Keywords           | redux, middleware, promise, async, normalize, normalizr, react |
-| # releases         | 1 |
-| # dependents       | 11 |
-| # downloads        | 380748 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 18662.0 |
+| # stars            | 1344.0 |
 
 ## Links
 - [Homepage](https://github.com/lelandrichardson/redux-pack#readme)

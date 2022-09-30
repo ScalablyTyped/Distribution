@@ -1,9 +1,9 @@
 package typings.ddTrace
 
-import typings.ddTrace.ddTraceNumbers.`-1`
-import typings.ddTrace.ddTraceNumbers.`0`
-import typings.ddTrace.ddTraceNumbers.`1`
-import typings.ddTrace.ddTraceNumbers.`2`
+import typings.ddTrace.ddTraceInts.`-1`
+import typings.ddTrace.ddTraceInts.`0`
+import typings.ddTrace.ddTraceInts.`1`
+import typings.ddTrace.ddTraceInts.`2`
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
 import typings.ddTrace.ddTraceStrings._ddDotmeasured
 import typings.ddTrace.ddTraceStrings.agent

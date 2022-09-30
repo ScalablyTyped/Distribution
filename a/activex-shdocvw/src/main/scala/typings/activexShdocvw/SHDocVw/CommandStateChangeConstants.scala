@@ -1,8 +1,8 @@
 package typings.activexShdocvw.SHDocVw
 
-import typings.activexShdocvw.activexShdocvwNumbers.`-1`
-import typings.activexShdocvw.activexShdocvwNumbers.`1`
-import typings.activexShdocvw.activexShdocvwNumbers.`2`
+import typings.activexShdocvw.activexShdocvwInts.`-1`
+import typings.activexShdocvw.activexShdocvwInts.`1`
+import typings.activexShdocvw.activexShdocvwInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Constants for WebBrowser CommandStateChange */
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShdocvw.activexShdocvwNumbers.`2`
-  - typings.activexShdocvw.activexShdocvwNumbers.`1`
-  - typings.activexShdocvw.activexShdocvwNumbers.`-1`
+  - typings.activexShdocvw.activexShdocvwInts.`2`
+  - typings.activexShdocvw.activexShdocvwInts.`1`
+  - typings.activexShdocvw.activexShdocvwInts.`-1`
 */
 trait CommandStateChangeConstants extends StObject
 object CommandStateChangeConstants {

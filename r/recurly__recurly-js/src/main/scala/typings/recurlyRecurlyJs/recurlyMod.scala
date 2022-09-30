@@ -19,6 +19,9 @@ import typings.recurlyRecurlyJs.emitterMod.Emitter
 import typings.recurlyRecurlyJs.giftCardMod.Done
 import typings.recurlyRecurlyJs.giftCardMod.GiftCard
 import typings.recurlyRecurlyJs.giftCardMod.GiftCardOptions
+import typings.recurlyRecurlyJs.googlePayMod.GooglePay
+import typings.recurlyRecurlyJs.googlePayMod.GooglePayEvent
+import typings.recurlyRecurlyJs.googlePayMod.GooglePayOptions
 import typings.recurlyRecurlyJs.paypalMod.PayPal
 import typings.recurlyRecurlyJs.paypalMod.PayPalConfig
 import typings.recurlyRecurlyJs.paypalMod.PayPalInstance
@@ -83,6 +86,20 @@ object recurlyMod {
       */
     @JSName("Elements")
     var Elements_Original: Elements = js.native
+    
+    /**
+      * Use Recurly.js to process Google Pay transactions.
+      *
+      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#google-pay|GooglePay}
+      */
+    def GooglePay(options: GooglePayOptions): Emitter[GooglePayEvent] = js.native
+    /**
+      * Use Recurly.js to process Google Pay transactions.
+      *
+      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#google-pay|GooglePay}
+      */
+    @JSName("GooglePay")
+    var GooglePay_Original: GooglePay = js.native
     
     /**
       * Use Recurly to process PayPal transactions using PayPal Business or Braintree.

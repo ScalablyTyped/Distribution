@@ -17,6 +17,7 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,7 @@ object dxSelectBox {
   
   trait CustomItemCreatingInfo extends StObject {
     
-    var customItem: js.UndefOr[String | Any | js.Thenable[Any]] = js.undefined
+    var customItem: js.UndefOr[String | Any | PromiseLike[Any]] = js.undefined
     
     val text: js.UndefOr[String] = js.undefined
   }
@@ -58,7 +59,7 @@ object dxSelectBox {
     
     extension [Self <: CustomItemCreatingInfo](x: Self) {
       
-      inline def setCustomItem(value: String | Any | js.Thenable[Any]): Self = StObject.set(x, "customItem", value.asInstanceOf[js.Any])
+      inline def setCustomItem(value: String | Any | PromiseLike[Any]): Self = StObject.set(x, "customItem", value.asInstanceOf[js.Any])
       
       inline def setCustomItemUndefined: Self = StObject.set(x, "customItem", js.undefined)
       

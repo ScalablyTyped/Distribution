@@ -9,7 +9,6 @@ import typings.reactBulmaComponents.anon.Group
 import typings.reactBulmaComponents.anon.GroupBulmaComponentWithoutRenderAs
 import typings.reactBulmaComponents.anon.Header
 import typings.reactBulmaComponents.anon.Item
-import typings.reactBulmaComponents.anon.List
 import typings.reactBulmaComponents.anon.Side
 import typings.reactBulmaComponents.anon.TabBulmaComponent
 import typings.reactBulmaComponents.anon.Text
@@ -205,7 +204,7 @@ object mod {
   
   @JSImport("react-bulma-components", "Menu")
   @js.native
-  val Menu: (BulmaComponent[js.Object, aside]) & List = js.native
+  val Menu: (BulmaComponent[js.Object, aside]) & typings.reactBulmaComponents.anon.List = js.native
   
   @JSImport("react-bulma-components", "Message")
   @js.native

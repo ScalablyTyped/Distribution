@@ -30,6 +30,8 @@ open class MorphTarget protected ()
     * @param {BoundingBox} [options.aabb] - Bounding box. Will be automatically generated, if
     * undefined.
     * @param {number} [options.defaultWeight] - Default blend weight to use for this morph target.
+    * @param {boolean} [options.preserveData] - When true, the morph target keeps its data passed using the options,
+    * allowing the clone operation.
     */
   def this(options: Aabb, args: Any*) = this()
 }

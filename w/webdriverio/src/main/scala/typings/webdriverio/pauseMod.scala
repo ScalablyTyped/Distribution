@@ -10,6 +10,6 @@ object pauseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Any]]
-  inline def default(milliseconds: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def default(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Any]]
+  inline def default(milliseconds: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

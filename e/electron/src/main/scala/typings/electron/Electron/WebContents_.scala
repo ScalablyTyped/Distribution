@@ -1,5 +1,7 @@
 package typings.electron.Electron
 
+import typings.electron.anon.Action
+import typings.electron.anon.OverrideBrowserWindowOptions
 import typings.electron.electronStrings.HTMLComplete
 import typings.electron.electronStrings.HTMLOnly
 import typings.electron.electronStrings.MHTML
@@ -9,13 +11,13 @@ import typings.electron.electronStrings.`certificate-error`
 import typings.electron.electronStrings.`console-message`
 import typings.electron.electronStrings.`context-menu`
 import typings.electron.electronStrings.`cursor-changed`
-import typings.electron.electronStrings.`desktop-capturer-get-sources`
 import typings.electron.electronStrings.`devtools-closed`
 import typings.electron.electronStrings.`devtools-focused`
 import typings.electron.electronStrings.`devtools-opened`
 import typings.electron.electronStrings.`devtools-reload-page`
 import typings.electron.electronStrings.`did-attach-webview`
 import typings.electron.electronStrings.`did-change-theme-color`
+import typings.electron.electronStrings.`did-create-window`
 import typings.electron.electronStrings.`did-fail-load`
 import typings.electron.electronStrings.`did-fail-provisional-load`
 import typings.electron.electronStrings.`did-finish-load`
@@ -31,6 +33,7 @@ import typings.electron.electronStrings.`dom-ready`
 import typings.electron.electronStrings.`enter-html-full-screen`
 import typings.electron.electronStrings.`foreground-tab`
 import typings.electron.electronStrings.`found-in-page`
+import typings.electron.electronStrings.`frame-created`
 import typings.electron.electronStrings.`ipc-message-sync`
 import typings.electron.electronStrings.`ipc-message`
 import typings.electron.electronStrings.`leave-html-full-screen`
@@ -40,12 +43,8 @@ import typings.electron.electronStrings.`new-window`
 import typings.electron.electronStrings.`page-favicon-updated`
 import typings.electron.electronStrings.`page-title-updated`
 import typings.electron.electronStrings.`plugin-crashed`
+import typings.electron.electronStrings.`preferred-size-changed`
 import typings.electron.electronStrings.`preload-error`
-import typings.electron.electronStrings.`remote-get-builtin`
-import typings.electron.electronStrings.`remote-get-current-web-contents`
-import typings.electron.electronStrings.`remote-get-current-window`
-import typings.electron.electronStrings.`remote-get-global`
-import typings.electron.electronStrings.`remote-require`
 import typings.electron.electronStrings.`render-process-gone`
 import typings.electron.electronStrings.`save-to-disk`
 import typings.electron.electronStrings.`select-bluetooth-device`
@@ -57,7 +56,10 @@ import typings.electron.electronStrings.`will-prevent-unload`
 import typings.electron.electronStrings.`will-redirect`
 import typings.electron.electronStrings.`zoom-changed`
 import typings.electron.electronStrings.activateSelection
+import typings.electron.electronStrings.animate
+import typings.electron.electronStrings.animateOnce
 import typings.electron.electronStrings.backgroundPage
+import typings.electron.electronStrings.blur
 import typings.electron.electronStrings.browserView
 import typings.electron.electronStrings.clearSelection
 import typings.electron.electronStrings.crashed
@@ -66,9 +68,11 @@ import typings.electron.electronStrings.default_public_and_private_interfaces
 import typings.electron.electronStrings.default_public_interface_only
 import typings.electron.electronStrings.destroyed
 import typings.electron.electronStrings.disable_non_proxied_udp
+import typings.electron.electronStrings.focus
 import typings.electron.electronStrings.in
 import typings.electron.electronStrings.keepSelection
 import typings.electron.electronStrings.login
+import typings.electron.electronStrings.noAnimation
 import typings.electron.electronStrings.offscreen
 import typings.electron.electronStrings.other
 import typings.electron.electronStrings.out
@@ -78,9 +82,8 @@ import typings.electron.electronStrings.responsive
 import typings.electron.electronStrings.unresponsive
 import typings.electron.electronStrings.webview
 import typings.electron.electronStrings.window
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -110,14 +113,17 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
   @JSName("addListener")
+  def addListener_blur(event: blur, listener: js.Function): this.type = js.native
+  @JSName("addListener")
   def addListener_certificateerror(
     event: `certificate-error`,
-    listener: js.Function5[
+    listener: js.Function6[
       /* event */ Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -154,8 +160,6 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("addListener")
   def addListener_destroyed(event: destroyed, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function): this.type = js.native
@@ -174,6 +178,11 @@ trait WebContents_ extends EventEmitter {
   def addListener_didchangethemecolor(
     event: `did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_didcreatewindow(
+    event: `did-create-window`,
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_didfailload(
@@ -288,16 +297,23 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
+  def addListener_focus(event: focus, listener: js.Function): this.type = js.native
+  @JSName("addListener")
   def addListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  @JSName("addListener")
+  def addListener_framecreated(
+    event: `frame-created`,
+    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
@@ -337,28 +353,14 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def addListener_preferredsizechanged(
+    event: `preferred-size-changed`,
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetcurrentwebcontents(event: `remote-get-current-web-contents`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetcurrentwindow(event: `remote-get-current-window`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remoterequire(
-    event: `remote-require`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_renderprocessgone(
@@ -426,8 +428,16 @@ trait WebContents_ extends EventEmitter {
     */
   def addWorkSpace(path: String): Unit = js.native
   
+  /**
+    * A `boolean` property that determines whether this page is muted.
+    */
   var audioMuted: Boolean = js.native
   
+  /**
+    * A `boolean` property that determines whether or not this WebContents will
+    * throttle animations and timers when the page becomes backgrounded. This also
+    * affects the Page Visibility API.
+    */
   var backgroundThrottling: Boolean = js.native
   
   /**
@@ -507,6 +517,10 @@ trait WebContents_ extends EventEmitter {
     */
   def cut(): Unit = js.native
   
+  /**
+    * A `Debugger` instance for this webContents.
+    *
+    */
   val debugger: Debugger = js.native
   
   /**
@@ -517,12 +531,22 @@ trait WebContents_ extends EventEmitter {
     */
   def decrementCapturerCount(): Unit = js.native
   def decrementCapturerCount(stayHidden: Boolean): Unit = js.native
+  def decrementCapturerCount(stayHidden: Boolean, stayAwake: Boolean): Unit = js.native
+  def decrementCapturerCount(stayHidden: Unit, stayAwake: Boolean): Unit = js.native
   
   /**
     * Executes the editing command `delete` in web page.
     */
   def delete(): Unit = js.native
   
+  /**
+    * A `WebContents | null` property that represents the of DevTools `WebContents`
+    * associated with a given `WebContents`.
+    *
+    * **Note:** Users should never store this object because it may become `null` when
+    * the DevTools has been closed.
+    *
+    */
   val devToolsWebContents: WebContents_ | Null = js.native
   
   /**
@@ -555,19 +579,20 @@ trait WebContents_ extends EventEmitter {
     * In the browser window some HTML APIs like `requestFullScreen` can only be
     * invoked by a gesture from the user. Setting `userGesture` to `true` will remove
     * this limitation.
-  Code execution will be suspended until web page stop loading.
+    *
+    * Code execution will be suspended until web page stop loading.
     */
-  def executeJavaScript(code: String): js.Promise[js.Any] = js.native
-  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[js.Any] = js.native
+  def executeJavaScript(code: String): js.Promise[Any] = js.native
+  def executeJavaScript(code: String, userGesture: Boolean): js.Promise[Any] = js.native
   
   /**
     * A promise that resolves with the result of the executed code or is rejected if
     * the result of the code is a rejected promise.
-    * 
-  Works like `executeJavaScript` but evaluates `scripts` in an isolated context.
+    *
+    * Works like `executeJavaScript` but evaluates `scripts` in an isolated context.
     */
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[js.Any] = js.native
-  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[js.Any] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[Any] = js.native
+  def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[Any] = js.native
   
   /**
     * The request id used for the request.
@@ -596,6 +621,12 @@ trait WebContents_ extends EventEmitter {
     */
   def forcefullyCrashRenderer(): Unit = js.native
   
+  /**
+    * An `Integer` property that sets the frame rate of the web contents to the
+    * specified number. Only values between 1 and 240 are accepted.
+    *
+    * Only applicable if *offscreen rendering* is enabled.
+    */
   var frameRate: Double = js.native
   
   /**
@@ -615,14 +646,34 @@ trait WebContents_ extends EventEmitter {
   def getFrameRate(): Double = js.native
   
   /**
+    * The identifier of a WebContents stream. This identifier can be used with
+    * `navigator.mediaDevices.getUserMedia` using a `chromeMediaSource` of `tab`. The
+    * identifier is restricted to the web contents that it is registered to and is
+    * only valid for 10 seconds.
+    */
+  def getMediaSourceId(requestWebContents: WebContents_): String = js.native
+  
+  /**
     * The operating system `pid` of the associated renderer process.
     */
   def getOSProcessId(): Double = js.native
   
   /**
     * Get the system printer list.
+    *
+    *
+    * **Deprecated:** Should use the new `contents.getPrintersAsync` API.
+    *
+    * @deprecated
     */
   def getPrinters(): js.Array[PrinterInfo] = js.native
+  
+  /**
+    * Get the system printer list.
+    *
+    * Resolves with a `PrinterInfo[]`
+    */
+  def getPrintersAsync(): js.Promise[js.Array[PrinterInfo]] = js.native
   
   /**
     * The Chromium internal `pid` of the associated renderer. Can be compared to the
@@ -687,21 +738,34 @@ trait WebContents_ extends EventEmitter {
     */
   def goToOffset(offset: Double): Unit = js.native
   
+  /**
+    * A `WebContents` instance that might own this `WebContents`.
+    *
+    */
   val hostWebContents: WebContents_ = js.native
   
+  /**
+    * A `Integer` representing the unique ID of this WebContents. Each ID is unique
+    * among all `WebContents` instances of the entire Electron application.
+    *
+    */
   val id: Double = js.native
   
   /**
     * Increase the capturer count by one. The page is considered visible when its
     * browser window is hidden and the capturer count is non-zero. If you would like
     * the page to stay hidden, you should ensure that `stayHidden` is set to true.
-    * 
-  This also affects the Page Visibility API.
+    *
+    * This also affects the Page Visibility API.
     */
   def incrementCapturerCount(): Unit = js.native
   def incrementCapturerCount(size: Unit, stayHidden: Boolean): Unit = js.native
+  def incrementCapturerCount(size: Unit, stayHidden: Boolean, stayAwake: Boolean): Unit = js.native
+  def incrementCapturerCount(size: Unit, stayHidden: Unit, stayAwake: Boolean): Unit = js.native
   def incrementCapturerCount(size: Size): Unit = js.native
   def incrementCapturerCount(size: Size, stayHidden: Boolean): Unit = js.native
+  def incrementCapturerCount(size: Size, stayHidden: Boolean, stayAwake: Boolean): Unit = js.native
+  def incrementCapturerCount(size: Size, stayHidden: Unit, stayAwake: Boolean): Unit = js.native
   
   /**
     * A promise that resolves with a key for the inserted CSS that can later be used
@@ -745,6 +809,36 @@ trait WebContents_ extends EventEmitter {
     * one through the `'paint'` event.
     */
   def invalidate(): Unit = js.native
+  
+  /**
+    * An `IpcMain` scoped to just IPC messages sent from this WebContents.
+    *
+    * IPC messages sent with `ipcRenderer.send`, `ipcRenderer.sendSync` or
+    * `ipcRenderer.postMessage` will be delivered in the following order:
+    *
+    * * `contents.on('ipc-message')`
+    * * `contents.mainFrame.on(channel)`
+    * * `contents.ipc.on(channel)`
+    * * `ipcMain.on(channel)`
+    *
+    * Handlers registered with `invoke` will be checked in the following order. The
+    * first one that is defined will be called, the rest will be ignored.
+    *
+    * * `contents.mainFrame.handle(channel)`
+    * * `contents.handle(channel)`
+    * * `ipcMain.handle(channel)`
+    *
+    * A handler or event listener registered on the WebContents will receive IPC
+    * messages sent from any frame, including child frames. In most cases, only the
+    * main frame can send IPC messages. However, if the `nodeIntegrationInSubFrames`
+    * option is enabled, it is possible for child frames to send IPC messages also. In
+    * that case, handlers should check the `senderFrame` property of the IPC event to
+    * ensure that the message is coming from the expected frame. Alternatively,
+    * register handlers on the appropriate frame directly using the `WebFrameMain.ipc`
+    * interface.
+    *
+    */
+  val ipc: IpcMain = js.native
   
   /**
     * Whether this page has been muted.
@@ -821,7 +915,8 @@ trait WebContents_ extends EventEmitter {
     * Loads the given file in the window, `filePath` should be a path to an HTML file
     * relative to the root of your application.  For instance an app structure like
     * this:
-  Would require code like this
+    *
+    * Would require code like this
     */
   def loadFile(filePath: String): js.Promise[Unit] = js.native
   def loadFile(filePath: String, options: LoadFileOptions): js.Promise[Unit] = js.native
@@ -840,6 +935,15 @@ trait WebContents_ extends EventEmitter {
   def loadURL(url: String, options: LoadURLOptions): js.Promise[Unit] = js.native
   
   /**
+    * A `WebFrameMain` property that represents the top frame of the page's frame
+    * hierarchy.
+    *
+    */
+  val mainFrame: WebFrameMain_ = js.native
+  
+  /**
+    * Deprecated in favor of `webContents.setWindowOpenHandler`.
+    *
     * Emitted when the page requests to open a new window for a `url`. It could be
     * requested by `window.open` or an external link like `<a target='_blank'>`.
     *
@@ -850,6 +954,8 @@ trait WebContents_ extends EventEmitter {
     * manually create a new `BrowserWindow` then you must set `event.newGuest` to
     * reference the new `BrowserWindow` instance, failing to do so may result in
     * unexpected behavior. For example:
+    *
+    * @deprecated
     */
   def on(
     event: `new-window`,
@@ -877,25 +983,31 @@ trait WebContents_ extends EventEmitter {
     * Emitted before dispatching the `keydown` and `keyup` events in the page. Calling
     * `event.preventDefault` will prevent the page `keydown`/`keyup` events and the
     * menu shortcuts.
-    * 
-  To only prevent the menu shortcuts, use `setIgnoreMenuShortcuts`:
+    *
+    * To only prevent the menu shortcuts, use `setIgnoreMenuShortcuts`:
     */
   @JSName("on")
   def on_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
   /**
+    * Emitted when the `WebContents` loses focus.
+    */
+  @JSName("on")
+  def on_blur(event: blur, listener: js.Function): this.type = js.native
+  /**
     * Emitted when failed to verify the `certificate` for `url`.
-    * 
-  The usage is the same with the `certificate-error` event of `app`.
+    *
+    * The usage is the same with the `certificate-error` event of `app`.
     */
   @JSName("on")
   def on_certificateerror(
     event: `certificate-error`,
-    listener: js.Function5[
+    listener: js.Function6[
       /* event */ Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -962,12 +1074,6 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   /**
-    * Emitted when `desktopCapturer.getSources()` is called in the renderer process.
-    * Calling `event.preventDefault()` will make it return empty sources.
-    */
-  @JSName("on")
-  def on_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  /**
     * Emitted when `webContents` is destroyed.
     */
   @JSName("on")
@@ -1008,6 +1114,19 @@ trait WebContents_ extends EventEmitter {
   def on_didchangethemecolor(
     event: `did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted _after_ successful creation of a window via `window.open` in the
+    * renderer. Not emitted if the creation of the window is canceled from
+    * `webContents.setWindowOpenHandler`.
+    *
+    * See `window.open()` for more details and how to use this in conjunction with
+    * `webContents.setWindowOpenHandler`.
+    */
+  @JSName("on")
+  def on_didcreatewindow(
+    event: `did-create-window`,
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
   ): this.type = js.native
   /**
     * This event is like `did-finish-load` but emitted when the load failed. The full
@@ -1149,7 +1268,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_didstartloading(event: `did-start-loading`, listener: js.Function): this.type = js.native
   /**
-    * Emitted when any frame (including main) starts navigating. `isInplace` will be
+    * Emitted when any frame (including main) starts navigating. `isInPlace` will be
     * `true` for in-page navigations.
     */
   @JSName("on")
@@ -1171,7 +1290,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
   /**
-    * Emitted when the document in the given frame is loaded.
+    * Emitted when the document in the top-level frame is loaded.
     */
   @JSName("on")
   def on_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -1181,27 +1300,56 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   /**
+    * Emitted when the `WebContents` gains focus.
+    *
+    * Note that on macOS, having focus means the `WebContents` is the first responder
+    * of window, so switching focus between windows would not trigger the `focus` and
+    * `blur` events of `WebContents`, as the first responder of each window is not
+    * changed.
+    *
+    * The `focus` and `blur` events of `WebContents` should only be used to detect
+    * focus change between different `WebContents` and `BrowserView` in the same
+    * window.
+    */
+  @JSName("on")
+  def on_focus(event: focus, listener: js.Function): this.type = js.native
+  /**
     * Emitted when a result is available for [`webContents.findInPage`] request.
     */
   @JSName("on")
   def on_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
   /**
+    * Emitted when the mainFrame, an `<iframe>`, or a nested `<iframe>` is loaded
+    * within the page.
+    */
+  @JSName("on")
+  def on_framecreated(
+    event: `frame-created`,
+    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
+  ): this.type = js.native
+  /**
     * Emitted when the renderer process sends an asynchronous message via
     * `ipcRenderer.send()`.
+    *
+    * See also `webContents.ipc`, which provides an `IpcMain`-like interface for
+    * responding to IPC messages specifically from this WebContents.
     */
   @JSName("on")
   def on_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   /**
     * Emitted when the renderer process sends a synchronous message via
     * `ipcRenderer.sendSync()`.
+    *
+    * See also `webContents.ipc`, which provides an `IpcMain`-like interface for
+    * responding to IPC messages specifically from this WebContents.
     */
   @JSName("on")
   def on_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   /**
     * Emitted when the window leaves a full-screen state triggered by HTML API.
@@ -1210,8 +1358,8 @@ trait WebContents_ extends EventEmitter {
   def on_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
   /**
     * Emitted when `webContents` wants to do basic auth.
-    * 
-  The usage is the same with the `login` event of `app`.
+    *
+    * The usage is the same with the `login` event of `app`.
     */
   @JSName("on")
   def on_login(
@@ -1269,57 +1417,24 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   /**
+    * Emitted when the `WebContents` preferred size has changed.
+    *
+    * This event will only be emitted when `enablePreferredSizeMode` is set to `true`
+    * in `webPreferences`.
+    */
+  @JSName("on")
+  def on_preferredsizechanged(
+    event: `preferred-size-changed`,
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  /**
     * Emitted when the preload script `preloadPath` throws an unhandled exception
     * `error`.
     */
   @JSName("on")
   def on_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `remote.getBuiltin()` is called in the renderer process. Calling
-    * `event.preventDefault()` will prevent the module from being returned. Custom
-    * value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `remote.getCurrentWebContents()` is called in the renderer process.
-    * Calling `event.preventDefault()` will prevent the object from being returned.
-    * Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetcurrentwebcontents(event: `remote-get-current-web-contents`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  /**
-    * Emitted when `remote.getCurrentWindow()` is called in the renderer process.
-    * Calling `event.preventDefault()` will prevent the object from being returned.
-    * Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetcurrentwindow(event: `remote-get-current-window`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  /**
-    * Emitted when `remote.getGlobal()` is called in the renderer process. Calling
-    * `event.preventDefault()` will prevent the global from being returned. Custom
-    * value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `remote.require()` is called in the renderer process. Calling
-    * `event.preventDefault()` will prevent the module from being returned. Custom
-    * value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remoterequire(
-    event: `remote-require`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
   ): this.type = js.native
   /**
     * Emitted when the renderer process unexpectedly disappears.  This is normally
@@ -1341,6 +1456,9 @@ trait WebContents_ extends EventEmitter {
     * `webBluetooth` should be enabled. If `event.preventDefault` is not called, first
     * available device will be selected. `callback` should be called with `deviceId`
     * to be selected, passing empty string to `callback` will cancel the request.
+    *
+    * If no event listener is added for this event, all bluetooth requests will be
+    * cancelled.
     */
   @JSName("on")
   def on_selectbluetoothdevice(
@@ -1354,8 +1472,8 @@ trait WebContents_ extends EventEmitter {
   ): this.type = js.native
   /**
     * Emitted when a client certificate is requested.
-    * 
-  The usage is the same with the `select-client-certificate` event of `app`.
+    *
+    * The usage is the same with the `select-client-certificate` event of `app`.
     */
   @JSName("on")
   def on_selectclientcertificate(
@@ -1385,9 +1503,6 @@ trait WebContents_ extends EventEmitter {
     * This event can be used to configure `webPreferences` for the `webContents` of a
     * `<webview>` before it's loaded, and provides the ability to set settings that
     * can't be set via `<webview>` attributes.
-    *
-    * **Note:** The specified `preload` script option will appear as `preloadURL` (not
-    * `preload`) in the `webPreferences` object emitted with this event.
     */
   @JSName("on")
   def on_willattachwebview(
@@ -1409,7 +1524,8 @@ trait WebContents_ extends EventEmitter {
     * It is also not emitted for in-page navigations, such as clicking anchor links or
     * updating the `window.location.hash`. Use `did-navigate-in-page` event for this
     * purpose.
-  Calling `event.preventDefault()` will prevent the navigation.
+    *
+    * Calling `event.preventDefault()` will prevent the navigation.
     */
   @JSName("on")
   def on_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
@@ -1419,11 +1535,15 @@ trait WebContents_ extends EventEmitter {
     *
     * Calling `event.preventDefault()` will ignore the `beforeunload` event handler
     * and allow the page to be unloaded.
+    *
+    * **Note:** This will be emitted for `BrowserViews` but will _not_ be respected -
+    * this is because we have chosen not to tie the `BrowserView` lifecycle to its
+    * owning BrowserWindow should one exist per the specification.
     */
   @JSName("on")
   def on_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   /**
-    * Emitted as a server side redirect occurs during navigation.  For example a 302
+    * Emitted when a server side redirect occurs during navigation.  For example a 302
     * redirect.
     *
     * This event will be emitted after `did-start-navigation` and always before the
@@ -1467,14 +1587,17 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
   @JSName("once")
+  def once_blur(event: blur, listener: js.Function): this.type = js.native
+  @JSName("once")
   def once_certificateerror(
     event: `certificate-error`,
-    listener: js.Function5[
+    listener: js.Function6[
       /* event */ Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -1511,8 +1634,6 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("once")
   def once_destroyed(event: destroyed, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_devtoolsclosed(event: `devtools-closed`, listener: js.Function): this.type = js.native
@@ -1531,6 +1652,11 @@ trait WebContents_ extends EventEmitter {
   def once_didchangethemecolor(
     event: `did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_didcreatewindow(
+    event: `did-create-window`,
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_didfailload(
@@ -1645,16 +1771,23 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
+  def once_focus(event: focus, listener: js.Function): this.type = js.native
+  @JSName("once")
   def once_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  @JSName("once")
+  def once_framecreated(
+    event: `frame-created`,
+    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
@@ -1694,28 +1827,14 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_preferredsizechanged(
+    event: `preferred-size-changed`,
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remotegetcurrentwebcontents(event: `remote-get-current-web-contents`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  @JSName("once")
-  def once_remotegetcurrentwindow(event: `remote-get-current-window`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  @JSName("once")
-  def once_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remoterequire(
-    event: `remote-require`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_renderprocessgone(
@@ -1782,6 +1901,9 @@ trait WebContents_ extends EventEmitter {
     *
     * When `contents` is a `<webview>` tag, the `mode` would be `detach` by default,
     * explicitly passing an empty `mode` can force using last used dock state.
+    *
+    * On Windows, if Windows Control Overlay is enabled, Devtools will be opened with
+    * `mode: 'detach'`.
     */
   def openDevTools(): Unit = js.native
   def openDevTools(options: OpenDevToolsOptions): Unit = js.native
@@ -1803,10 +1925,11 @@ trait WebContents_ extends EventEmitter {
     * The transferred `MessagePortMain` objects will be available in the renderer
     * process by accessing the `ports` property of the emitted event. When they arrive
     * in the renderer, they will be native DOM `MessagePort` objects.
-  For example:
+    *
+    * For example:
     */
-  def postMessage(channel: String, message: js.Any): Unit = js.native
-  def postMessage(channel: String, message: js.Any, transfer: js.Array[MessagePortMain]): Unit = js.native
+  def postMessage(channel: String, message: Any): Unit = js.native
+  def postMessage(channel: String, message: Any, transfer: js.Array[MessagePortMain]): Unit = js.native
   
   /**
     * When a custom `pageSize` is passed, Chromium attempts to validate platform
@@ -1819,8 +1942,8 @@ trait WebContents_ extends EventEmitter {
     * printing.
     *
     * Use `page-break-before: always;` CSS style to force to print to a new page.
-    * 
-  Example usage:
+    *
+    * Example usage:
     */
   def print(): Unit = js.native
   def print(options: Unit, callback: js.Function2[/* success */ Boolean, /* failureReason */ String, Unit]): Unit = js.native
@@ -1833,16 +1956,13 @@ trait WebContents_ extends EventEmitter {
   /**
     * Resolves with the generated PDF data.
     *
-    * Prints window's web page as PDF with Chromium's preview printing custom
-    * settings.
+    * Prints the window's web page as PDF.
     *
     * The `landscape` will be ignored if `@page` CSS at-rule is used in the web page.
     *
-    * By default, an empty `options` will be regarded as:
+    * An example of `webContents.printToPDF`:
     *
-    * Use `page-break-before: always; ` CSS style to force to print to a new page.
-    * 
-  An example of `webContents.printToPDF`:
+    * See Page.printToPdf for more information.
     */
   def printToPDF(options: PrintToPDFOptions): js.Promise[Buffer] = js.native
   
@@ -1890,14 +2010,17 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
   @JSName("removeListener")
+  def removeListener_blur(event: blur, listener: js.Function): this.type = js.native
+  @JSName("removeListener")
   def removeListener_certificateerror(
     event: `certificate-error`,
-    listener: js.Function5[
+    listener: js.Function6[
       /* event */ Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -1934,8 +2057,6 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
-  @JSName("removeListener")
   def removeListener_destroyed(event: destroyed, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function): this.type = js.native
@@ -1954,6 +2075,11 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didchangethemecolor(
     event: `did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_didcreatewindow(
+    event: `did-create-window`,
+    listener: js.Function2[/* window */ BrowserWindow, /* details */ DidCreateWindowDetails, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_didfailload(
@@ -2068,16 +2194,23 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
+  def removeListener_focus(event: focus, listener: js.Function): this.type = js.native
+  @JSName("removeListener")
   def removeListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_framecreated(
+    event: `frame-created`,
+    listener: js.Function2[/* event */ Event, /* details */ FrameCreatedDetails, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
@@ -2117,28 +2250,14 @@ trait WebContents_ extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def removeListener_preferredsizechanged(
+    event: `preferred-size-changed`,
+    listener: js.Function2[/* event */ Event, /* preferredSize */ Size, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetcurrentwebcontents(event: `remote-get-current-web-contents`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetcurrentwindow(event: `remote-get-current-window`, listener: js.Function1[/* event */ IpcMainEvent, Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* globalName */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remoterequire(
-    event: `remote-require`,
-    listener: js.Function2[/* event */ IpcMainEvent, /* moduleName */ String, Unit]
+    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ js.Error, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_renderprocessgone(
@@ -2215,15 +2334,10 @@ trait WebContents_ extends EventEmitter {
     */
   def replaceMisspelling(text: String): Unit = js.native
   
-  @JSName("savePage")
-  def savePage_HTMLComplete(fullPath: String, saveType: HTMLComplete): js.Promise[Unit] = js.native
   /**
     * resolves if the page is saved.
     */
-  @JSName("savePage")
-  def savePage_HTMLOnly(fullPath: String, saveType: HTMLOnly): js.Promise[Unit] = js.native
-  @JSName("savePage")
-  def savePage_MHTML(fullPath: String, saveType: MHTML): js.Promise[Unit] = js.native
+  def savePage(fullPath: String, saveType: HTMLOnly | HTMLComplete | MHTML): js.Promise[Unit] = js.native
   
   /**
     * Executes the editing command `selectAll` in web page.
@@ -2237,15 +2351,14 @@ trait WebContents_ extends EventEmitter {
     * Functions, Promises, Symbols, WeakMaps, or WeakSets will throw an exception.
     *
     * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
-    * Electron objects is deprecated, and will begin throwing an exception starting
-    * with Electron 9.
+    * Electron objects will throw an exception.
     *
     * The renderer process can handle the message by listening to `channel` with the
     * `ipcRenderer` module.
-    * 
-  An example of sending messages from the main process to the renderer process:
+    *
+    * An example of sending messages from the main process to the renderer process:
     */
-  def send(channel: String, args: js.Any*): Unit = js.native
+  def send(channel: String, args: Any*): Unit = js.native
   
   def sendInputEvent(inputEvent: KeyboardInputEvent): Unit = js.native
   /**
@@ -2255,6 +2368,7 @@ trait WebContents_ extends EventEmitter {
   def sendInputEvent(inputEvent: MouseInputEvent): Unit = js.native
   def sendInputEvent(inputEvent: MouseWheelInputEvent): Unit = js.native
   
+  def sendToFrame(frameId: js.Tuple2[Double, Double], channel: String, args: Any*): Unit = js.native
   /**
     * Send an asynchronous message to a specific frame in a renderer process via
     * `channel`, along with arguments. Arguments will be serialized with the
@@ -2262,20 +2376,23 @@ trait WebContents_ extends EventEmitter {
     * not be included. Sending Functions, Promises, Symbols, WeakMaps, or WeakSets
     * will throw an exception.
     *
-    * > **NOTE**: Sending non-standard JavaScript types such as DOM objects or special
-    * Electron objects is deprecated, and will begin throwing an exception starting
-    * with Electron 9.
+    * > **NOTE:** Sending non-standard JavaScript types such as DOM objects or special
+    * Electron objects will throw an exception.
     *
     * The renderer process can handle the message by listening to `channel` with the
     * `ipcRenderer` module.
     *
     * If you want to get the `frameId` of a given renderer context you should use the
     * `webFrame.routingId` value.  E.g.
-    * 
-  You can also read `frameId` from all incoming IPC messages in the main process.
+    *
+    * You can also read `frameId` from all incoming IPC messages in the main process.
     */
-  def sendToFrame(frameId: Double, channel: String, args: js.Any*): Unit = js.native
+  def sendToFrame(frameId: Double, channel: String, args: Any*): Unit = js.native
   
+  /**
+    * A `Session` used by this webContents.
+    *
+    */
   val session: Session_ = js.native
   
   /**
@@ -2305,14 +2422,14 @@ trait WebContents_ extends EventEmitter {
     * caller's responsibility to destroy `devToolsWebContents`.
     *
     * An example of showing devtools in a `<webview>` tag:
-    * 
-  An example of showing devtools in a `BrowserWindow`:
+    *
+    * An example of showing devtools in a `BrowserWindow`:
     */
   def setDevToolsWebContents(devToolsWebContents: WebContents_): Unit = js.native
   
   /**
     * If *offscreen rendering* is enabled sets the frame rate to the specified number.
-    * Only values between 1 and 60 are accepted.
+    * Only values between 1 and 240 are accepted.
     */
   def setFrameRate(fps: Double): Unit = js.native
   
@@ -2320,6 +2437,17 @@ trait WebContents_ extends EventEmitter {
     * Ignore application menu shortcuts while this web contents is focused.
     */
   def setIgnoreMenuShortcuts(ignore: Boolean): Unit = js.native
+  
+  /**
+    * Sets the image animation policy for this webContents.  The policy only affects
+    * _new_ images, existing images that are currently being animated are unaffected.
+    * This is a known limitation in Chromium, you can force image animation to be
+    * recalculated with `img.src = img.src` which will result in no network traffic
+    * but will update the animation policy.
+    *
+    * This corresponds to the animationPolicy accessibility feature in Chromium.
+    */
+  def setImageAnimationPolicy(policy: animate | animateOnce | noAnimation): Unit = js.native
   
   /**
     * Overrides the user agent for this web page.
@@ -2338,19 +2466,23 @@ trait WebContents_ extends EventEmitter {
     * Setting the WebRTC IP handling policy allows you to control which IPs are
     * exposed via WebRTC. See BrowserLeaks for more details.
     */
-  @JSName("setWebRTCIPHandlingPolicy")
-  def setWebRTCIPHandlingPolicy_default(policy: default): Unit = js.native
-  @JSName("setWebRTCIPHandlingPolicy")
-  def setWebRTCIPHandlingPolicy_defaultpublicandprivateinterfaces(policy: default_public_and_private_interfaces): Unit = js.native
-  @JSName("setWebRTCIPHandlingPolicy")
-  def setWebRTCIPHandlingPolicy_defaultpublicinterfaceonly(policy: default_public_interface_only): Unit = js.native
-  @JSName("setWebRTCIPHandlingPolicy")
-  def setWebRTCIPHandlingPolicy_disablenonproxiedudp(policy: disable_non_proxied_udp): Unit = js.native
+  def setWebRTCIPHandlingPolicy(
+    policy: default | default_public_interface_only | default_public_and_private_interfaces | disable_non_proxied_udp
+  ): Unit = js.native
+  
+  /**
+    * Called before creating a window a new window is requested by the renderer, e.g.
+    * by `window.open()`, a link with `target="_blank"`, shift+clicking on a link, or
+    * submitting a form with `<form target="_blank">`. See `window.open()` for more
+    * details and how to use this in conjunction with `did-create-window`.
+    */
+  def setWindowOpenHandler(handler: js.Function1[/* details */ HandlerDetails, Action | OverrideBrowserWindowOptions]): Unit = js.native
   
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
     * divided by 100, so 300% = 3.0.
-  The factor must be greater than 0.0.
+    *
+    * The factor must be greater than 0.0.
     */
   def setZoomFactor(factor: Double): Unit = js.native
   
@@ -2359,6 +2491,11 @@ trait WebContents_ extends EventEmitter {
     * increment above or below represents zooming 20% larger or smaller to default
     * limits of 300% and 50% of original size, respectively. The formula for this is
     * `scale := 1.2 ^ level`.
+    *
+    * > **NOTE**: The zoom policy at the Chromium level is same-origin, meaning that
+    * the zoom level for a specific domain propagates across all instances of windows
+    * with the same domain. Differentiating the window URLs will make zoom work
+    * per-window.
     */
   def setZoomLevel(level: Double): Unit = js.native
   
@@ -2386,15 +2523,10 @@ trait WebContents_ extends EventEmitter {
     */
   def stop(): Unit = js.native
   
-  @JSName("stopFindInPage")
-  def stopFindInPage_activateSelection(action: activateSelection): Unit = js.native
   /**
     * Stops any `findInPage` request for the `webContents` with the provided `action`.
     */
-  @JSName("stopFindInPage")
-  def stopFindInPage_clearSelection(action: clearSelection): Unit = js.native
-  @JSName("stopFindInPage")
-  def stopFindInPage_keepSelection(action: keepSelection): Unit = js.native
+  def stopFindInPage(action: clearSelection | keepSelection | activateSelection): Unit = js.native
   
   /**
     * If *offscreen rendering* is enabled and painting, stop painting.
@@ -2403,8 +2535,8 @@ trait WebContents_ extends EventEmitter {
   
   /**
     * Indicates whether the snapshot has been created successfully.
-    * 
-  Takes a V8 heap snapshot and saves it to `filePath`.
+    *
+    * Takes a V8 heap snapshot and saves it to `filePath`.
     */
   def takeHeapSnapshot(filePath: String): js.Promise[Unit] = js.native
   
@@ -2423,9 +2555,24 @@ trait WebContents_ extends EventEmitter {
     */
   def unselect(): Unit = js.native
   
+  /**
+    * A `string` property that determines the user agent for this web page.
+    */
   var userAgent: String = js.native
   
+  /**
+    * A `number` property that determines the zoom factor for this web contents.
+    *
+    * The zoom factor is the zoom percent divided by 100, so 300% = 3.0.
+    */
   var zoomFactor: Double = js.native
   
+  /**
+    * A `number` property that determines the zoom level for this web contents.
+    *
+    * The original size is 0 and each increment above or below represents zooming 20%
+    * larger or smaller to default limits of 300% and 50% of original size,
+    * respectively. The formula for this is `scale := 1.2 ^ level`.
+    */
   var zoomLevel: Double = js.native
 }

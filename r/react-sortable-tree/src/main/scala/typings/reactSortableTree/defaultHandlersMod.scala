@@ -14,5 +14,5 @@ object defaultHandlersMod {
   
   inline def defaultGetNodeKey(data: TreeIndex): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetNodeKey")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def defaultSearchMethod(data: SearchData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSearchMethod")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def defaultSearchMethod[T](data: SearchData[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSearchMethod")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -100,7 +100,7 @@ object assertMod {
     def calls[Func /* <: js.Function1[/* repeated */ Any, Any] */](fn: Func, exact: Double): Func = js.native
     def calls[Func /* <: js.Function1[/* repeated */ Any, Any] */](fn: Unit, exact: Double): Func = js.native
     @JSName("calls")
-    def calls_Func_Function1AnyAny_Func[Func /* <: js.Function1[/* repeated */ Any, Any] */](): Func = js.native
+    def calls_Func_Func[Func /* <: js.Function1[/* repeated */ Any, Any] */](): Func = js.native
     
     /**
       * The arrays contains information about the expected and actual number of calls of
@@ -496,11 +496,7 @@ object assertMod {
     * ```
     * @since v0.1.97
     */
-  inline def ifError(value: Any): js.UndefOr[
-    /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
-    /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())*/ Boolean
-  ]]
+  inline def ifError(value: Any): /* asserts value is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value is TsTypeUnion(IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray()), TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean]
   
   /**
     * Expects the `string` input to match the regular expression.

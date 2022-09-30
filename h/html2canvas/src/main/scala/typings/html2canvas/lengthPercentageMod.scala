@@ -1,8 +1,8 @@
 package typings.html2canvas
 
 import typings.html2canvas.backgroundSizeMod.BackgroundSizeInfo
-import typings.html2canvas.html2canvasNumbers.`16`
-import typings.html2canvas.html2canvasNumbers.`17`
+import typings.html2canvas.html2canvasInts.`16`
+import typings.html2canvas.html2canvasInts.`17`
 import typings.html2canvas.parserMod.CSSValue
 import typings.html2canvas.tokenizerMod.NumberValueToken
 import org.scalablytyped.runtime.StObject

@@ -1,60 +1,60 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerNumbers.`0`
-import typings.angularCompiler.angularCompilerNumbers.`10`
-import typings.angularCompiler.angularCompilerNumbers.`11`
-import typings.angularCompiler.angularCompilerNumbers.`12`
-import typings.angularCompiler.angularCompilerNumbers.`13`
-import typings.angularCompiler.angularCompilerNumbers.`14`
-import typings.angularCompiler.angularCompilerNumbers.`15`
-import typings.angularCompiler.angularCompilerNumbers.`16`
-import typings.angularCompiler.angularCompilerNumbers.`17`
-import typings.angularCompiler.angularCompilerNumbers.`18`
-import typings.angularCompiler.angularCompilerNumbers.`19`
-import typings.angularCompiler.angularCompilerNumbers.`1`
-import typings.angularCompiler.angularCompilerNumbers.`20`
-import typings.angularCompiler.angularCompilerNumbers.`21`
-import typings.angularCompiler.angularCompilerNumbers.`22`
-import typings.angularCompiler.angularCompilerNumbers.`23`
-import typings.angularCompiler.angularCompilerNumbers.`24`
-import typings.angularCompiler.angularCompilerNumbers.`2`
-import typings.angularCompiler.angularCompilerNumbers.`3`
-import typings.angularCompiler.angularCompilerNumbers.`4`
-import typings.angularCompiler.angularCompilerNumbers.`5`
-import typings.angularCompiler.angularCompilerNumbers.`6`
-import typings.angularCompiler.angularCompilerNumbers.`7`
-import typings.angularCompiler.angularCompilerNumbers.`8`
-import typings.angularCompiler.angularCompilerNumbers.`9`
+import typings.angularCompiler.angularCompilerInts.`0`
+import typings.angularCompiler.angularCompilerInts.`10`
+import typings.angularCompiler.angularCompilerInts.`11`
+import typings.angularCompiler.angularCompilerInts.`12`
+import typings.angularCompiler.angularCompilerInts.`13`
+import typings.angularCompiler.angularCompilerInts.`14`
+import typings.angularCompiler.angularCompilerInts.`15`
+import typings.angularCompiler.angularCompilerInts.`16`
+import typings.angularCompiler.angularCompilerInts.`17`
+import typings.angularCompiler.angularCompilerInts.`18`
+import typings.angularCompiler.angularCompilerInts.`19`
+import typings.angularCompiler.angularCompilerInts.`1`
+import typings.angularCompiler.angularCompilerInts.`20`
+import typings.angularCompiler.angularCompilerInts.`21`
+import typings.angularCompiler.angularCompilerInts.`22`
+import typings.angularCompiler.angularCompilerInts.`23`
+import typings.angularCompiler.angularCompilerInts.`24`
+import typings.angularCompiler.angularCompilerInts.`2`
+import typings.angularCompiler.angularCompilerInts.`3`
+import typings.angularCompiler.angularCompilerInts.`4`
+import typings.angularCompiler.angularCompilerInts.`5`
+import typings.angularCompiler.angularCompilerInts.`6`
+import typings.angularCompiler.angularCompilerInts.`7`
+import typings.angularCompiler.angularCompilerInts.`8`
+import typings.angularCompiler.angularCompilerInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCompiler.angularCompilerNumbers.`0`
-  - typings.angularCompiler.angularCompilerNumbers.`1`
-  - typings.angularCompiler.angularCompilerNumbers.`2`
-  - typings.angularCompiler.angularCompilerNumbers.`3`
-  - typings.angularCompiler.angularCompilerNumbers.`4`
-  - typings.angularCompiler.angularCompilerNumbers.`5`
-  - typings.angularCompiler.angularCompilerNumbers.`6`
-  - typings.angularCompiler.angularCompilerNumbers.`7`
-  - typings.angularCompiler.angularCompilerNumbers.`8`
-  - typings.angularCompiler.angularCompilerNumbers.`9`
-  - typings.angularCompiler.angularCompilerNumbers.`10`
-  - typings.angularCompiler.angularCompilerNumbers.`11`
-  - typings.angularCompiler.angularCompilerNumbers.`12`
-  - typings.angularCompiler.angularCompilerNumbers.`13`
-  - typings.angularCompiler.angularCompilerNumbers.`14`
-  - typings.angularCompiler.angularCompilerNumbers.`15`
-  - typings.angularCompiler.angularCompilerNumbers.`16`
-  - typings.angularCompiler.angularCompilerNumbers.`17`
-  - typings.angularCompiler.angularCompilerNumbers.`18`
-  - typings.angularCompiler.angularCompilerNumbers.`19`
-  - typings.angularCompiler.angularCompilerNumbers.`20`
-  - typings.angularCompiler.angularCompilerNumbers.`21`
-  - typings.angularCompiler.angularCompilerNumbers.`22`
-  - typings.angularCompiler.angularCompilerNumbers.`23`
-  - typings.angularCompiler.angularCompilerNumbers.`24`
+  - typings.angularCompiler.angularCompilerInts.`0`
+  - typings.angularCompiler.angularCompilerInts.`1`
+  - typings.angularCompiler.angularCompilerInts.`2`
+  - typings.angularCompiler.angularCompilerInts.`3`
+  - typings.angularCompiler.angularCompilerInts.`4`
+  - typings.angularCompiler.angularCompilerInts.`5`
+  - typings.angularCompiler.angularCompilerInts.`6`
+  - typings.angularCompiler.angularCompilerInts.`7`
+  - typings.angularCompiler.angularCompilerInts.`8`
+  - typings.angularCompiler.angularCompilerInts.`9`
+  - typings.angularCompiler.angularCompilerInts.`10`
+  - typings.angularCompiler.angularCompilerInts.`11`
+  - typings.angularCompiler.angularCompilerInts.`12`
+  - typings.angularCompiler.angularCompilerInts.`13`
+  - typings.angularCompiler.angularCompilerInts.`14`
+  - typings.angularCompiler.angularCompilerInts.`15`
+  - typings.angularCompiler.angularCompilerInts.`16`
+  - typings.angularCompiler.angularCompilerInts.`17`
+  - typings.angularCompiler.angularCompilerInts.`18`
+  - typings.angularCompiler.angularCompilerInts.`19`
+  - typings.angularCompiler.angularCompilerInts.`20`
+  - typings.angularCompiler.angularCompilerInts.`21`
+  - typings.angularCompiler.angularCompilerInts.`22`
+  - typings.angularCompiler.angularCompilerInts.`23`
+  - typings.angularCompiler.angularCompilerInts.`24`
 */
 trait TokenType2 extends StObject
 object TokenType2 {

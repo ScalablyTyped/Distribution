@@ -1,10 +1,10 @@
 package typings.typescript
 
-import typings.typescript.mod.CompletionsTriggerCharacter
 import typings.typescript.mod.RefactorTriggerReason
-import typings.typescript.mod.SignatureHelpRetriggerCharacter
-import typings.typescript.mod.SignatureHelpTriggerCharacter
 import typings.typescript.mod.TypeOfTag
+import typings.typescript.mod._CompletionsTriggerCharacter
+import typings.typescript.mod._SignatureHelpRetriggerCharacter
+import typings.typescript.mod._SignatureHelpTriggerCharacter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,20 +14,14 @@ object typescriptStrings {
   @js.native
   sealed trait `@`
     extends StObject
-       with CompletionsTriggerCharacter
+       with _CompletionsTriggerCharacter
   inline def `@`: `@` = "@".asInstanceOf[`@`]
-  
-  @js.native
-  sealed trait Apostrophe
-    extends StObject
-       with CompletionsTriggerCharacter
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
   sealed trait Comma
     extends StObject
-       with SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
+       with _SignatureHelpRetriggerCharacter
+       with _SignatureHelpTriggerCharacter
   inline def Comma: Comma = ",".asInstanceOf[Comma]
   
   @js.native
@@ -37,58 +31,45 @@ object typescriptStrings {
   @js.native
   sealed trait Dot
     extends StObject
-       with CompletionsTriggerCharacter
+       with _CompletionsTriggerCharacter
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
   sealed trait Graveaccent
     extends StObject
-       with CompletionsTriggerCharacter
+       with _CompletionsTriggerCharacter
   inline def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
-  
-  @js.native
-  sealed trait Leftparenthesis
-    extends StObject
-       with SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
-  inline def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   
   @js.native
   sealed trait Lessthansign
     extends StObject
-       with CompletionsTriggerCharacter
-       with SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
+       with _CompletionsTriggerCharacter
+       with _SignatureHelpRetriggerCharacter
+       with _SignatureHelpTriggerCharacter
   inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
   sealed trait Numbersign
     extends StObject
-       with CompletionsTriggerCharacter
+       with _CompletionsTriggerCharacter
   inline def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   
   @js.native
   sealed trait Quotationmark
     extends StObject
-       with CompletionsTriggerCharacter
+       with _CompletionsTriggerCharacter
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
-  
-  @js.native
-  sealed trait Rightparenthesis
-    extends StObject
-       with SignatureHelpRetriggerCharacter
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   
   @js.native
   sealed trait Slash
     extends StObject
-       with CompletionsTriggerCharacter
+       with _CompletionsTriggerCharacter
   inline def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
   sealed trait Space
     extends StObject
-       with CompletionsTriggerCharacter
+       with _CompletionsTriggerCharacter
   inline def Space: Space = (" ").asInstanceOf[Space]
   
   @js.native

@@ -33,6 +33,14 @@ type LatLngArray = js.Tuple2[Double, Double]
 
 type LatLngString = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.googleMaps.googleMapsStrings.geocode
+  - typings.googleMaps.googleMapsStrings.address
+  - typings.googleMaps.googleMapsStrings.establishment
+  - java.lang.String
+*/
+type PlaceAutocompleteType = _PlaceAutocompleteType | String
+
 type PlaceDetailsAddressComponentType = street_number
 
 type PlacePhotoResponse = String

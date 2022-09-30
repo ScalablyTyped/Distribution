@@ -1,7 +1,7 @@
 package typings.electron.Electron
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
+import typings.std.ReadableStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,10 +18,10 @@ trait ProtocolResponse extends StObject {
   /**
     * The response body. When returning stream as response, this is a Node.js readable
     * stream representing the response body. When returning `Buffer` as response, this
-    * is a `Buffer`. When returning `String` as response, this is a `String`. This is
+    * is a `Buffer`. When returning `string` as response, this is a `string`. This is
     * ignored for other types of responses.
     */
-  var data: js.UndefOr[Buffer | String | ReadableStream] = js.undefined
+  var data: js.UndefOr[Buffer | String | ReadableStream[Any]] = js.undefined
   
   /**
     * When assigned, the `request` will fail with the `error` number . For the
@@ -30,8 +30,8 @@ trait ProtocolResponse extends StObject {
   var error: js.UndefOr[Double] = js.undefined
   
   /**
-    * An object containing the response headers. The keys must be String, and values
-    * must be either String or Array of String.
+    * An object containing the response headers. The keys must be string, and values
+    * must be either string or Array of string.
     */
   var headers: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
   
@@ -95,7 +95,7 @@ object ProtocolResponse {
     
     inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
-    inline def setData(value: Buffer | String | ReadableStream): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer | String | ReadableStream[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

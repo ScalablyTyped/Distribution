@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.4.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.PageVariable")
 @js.native
-class PageVariable protected () extends Element[IModel] {
+open class PageVariable protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,18 @@ class PageVariable protected () extends Element[IModel] {
   
   def containerAsNanoflowParameterMapping: NanoflowParameterMapping = js.native
   
+  def containerAsPageParameterMapping: PageParameterMapping = js.native
+  
   def containerAsWidgetValue: WidgetValue = js.native
+  
+  /**
+    * In version 9.5.0: introduced
+    */
+  def pageParameter: PageParameter | Null = js.native
+  
+  def pageParameterLocalName: String | Null = js.native
+  
+  def pageParameter_=(newValue: PageParameter | Null): Unit = js.native
   
   def useAllPages: Boolean = js.native
   def useAllPages_=(newValue: Boolean): Unit = js.native
@@ -47,7 +58,7 @@ class PageVariable protected () extends Element[IModel] {
 }
 object PageVariable {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.PageVariable")
   @js.native
   val ^ : js.Any = js.native
   
@@ -94,6 +105,17 @@ object PageVariable {
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'variable' property
+    * of the parent PageParameterMapping element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.7.0 and higher
+    */
+  /* static member */
+  inline def createInPageParameterMappingUnderVariable(container: PageParameterMapping): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
+  
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
     * The new PageVariable will be automatically stored in the 'sourceVariable' property
     * of the parent customwidgets.WidgetValue element passed as argument.
     *
@@ -104,13 +126,13 @@ object PageVariable {
   inline def createInWidgetValueUnderSourceVariable(container: WidgetValue): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.PageVariable.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.PageVariable.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

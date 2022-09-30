@@ -1,7 +1,7 @@
 package typings.rangesPush
 
-import typings.rangesPush.rangesPushNumbers.`1`
-import typings.rangesPush.rangesPushNumbers.`2`
+import typings.rangesPush.rangesPushInts.`1`
+import typings.rangesPush.rangesPushInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

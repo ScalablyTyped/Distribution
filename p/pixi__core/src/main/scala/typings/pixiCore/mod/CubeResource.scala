@@ -1,6 +1,6 @@
 package typings.pixiCore.mod
 
-import typings.pixiCore.pixiCoreNumbers.`6`
+import typings.pixiCore.pixiCoreInts.`6`
 import typings.pixiUtils.mod.ArrayFixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

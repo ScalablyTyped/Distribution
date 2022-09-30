@@ -1,5 +1,6 @@
 package typings.semaphoreAsyncAwait
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +42,7 @@ object semaphoreMod {
       * @return  A promise that gets resolved with the return value of the function.
       */
     /* CompleteClass */
-    override def execute[T](func: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
+    override def execute[T](func: js.Function0[T | PromiseLike[T]]): js.Promise[T] = js.native
     
     /**
       * Returns the number of available permits.
@@ -109,7 +110,7 @@ object semaphoreMod {
       * @param func  The function to be executed.
       * @return  A promise that gets resolved with the return value of the function.
       */
-    def execute[T](func: js.Function0[T | js.Thenable[T]]): js.Promise[T]
+    def execute[T](func: js.Function0[T | PromiseLike[T]]): js.Promise[T]
     
     /**
       * Returns the number of available permits.
@@ -153,7 +154,7 @@ object semaphoreMod {
     inline def apply(
       acquire: () => js.Promise[Boolean],
       drainPermits: () => Double,
-      execute: js.Function0[Any | js.Thenable[Any]] => js.Promise[Any],
+      execute: js.Function0[Any | PromiseLike[Any]] => js.Promise[Any],
       getPermits: () => Double,
       permits: Any,
       promiseResolverQueue: Any,
@@ -172,7 +173,7 @@ object semaphoreMod {
       
       inline def setDrainPermits(value: () => Double): Self = StObject.set(x, "drainPermits", js.Any.fromFunction0(value))
       
-      inline def setExecute(value: js.Function0[Any | js.Thenable[Any]] => js.Promise[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: js.Function0[Any | PromiseLike[Any]] => js.Promise[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
       inline def setGetPermits(value: () => Double): Self = StObject.set(x, "getPermits", js.Any.fromFunction0(value))
       

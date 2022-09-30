@@ -23,7 +23,7 @@ object RelaunchOptions {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     

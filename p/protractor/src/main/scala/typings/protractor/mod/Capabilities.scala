@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
   *     capabilities to initialize this instance from.
   */
-class Capabilities ()
+open class Capabilities ()
   extends typings.seleniumWebdriver.mod.Capabilities {
   def this(other: js.Object) = this()
   def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
-  def this(other: Map[String, js.Any]) = this()
+  def this(other: Map[String, Any]) = this()
 }
 /* static members */
 object Capabilities {

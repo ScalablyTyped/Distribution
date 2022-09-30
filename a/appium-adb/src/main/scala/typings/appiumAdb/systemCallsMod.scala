@@ -4,7 +4,7 @@ import typings.appiumAdb.anon.AdbExecOptionsoutputForma
 import typings.appiumAdb.anon.ConnectedDevicesOptionsve
 import typings.appiumAdb.anon.FULL
 import typings.appiumAdb.appiumAdbBooleans.`false`
-import typings.appiumAdb.appiumAdbNumbers.`20000`
+import typings.appiumAdb.appiumAdbInts.`20000`
 import typings.appiumAdb.appiumAdbStrings.`null`
 import typings.appiumAdb.appiumAdbStrings.device
 import typings.appiumAdb.appiumAdbStrings.full

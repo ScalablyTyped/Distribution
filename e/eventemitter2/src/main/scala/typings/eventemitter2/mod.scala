@@ -1,6 +1,7 @@
 package typings.eventemitter2
 
 import typings.eventemitter2.eventemitter2Booleans.`true`
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,7 +131,8 @@ object mod {
   
   @js.native
   trait CancelablePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def cancel(reason: String): Unit = js.native
   }

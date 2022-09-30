@@ -827,6 +827,10 @@ object officeJsPreviewStrings {
   inline def CommentDeleted: CommentDeleted = "CommentDeleted".asInstanceOf[CommentDeleted]
   
   @js.native
+  sealed trait CommentDeselected extends StObject
+  inline def CommentDeselected: CommentDeselected = "CommentDeselected".asInstanceOf[CommentDeselected]
+  
+  @js.native
   sealed trait CommentEdited extends StObject
   inline def CommentEdited: CommentEdited = "CommentEdited".asInstanceOf[CommentEdited]
   
@@ -837,6 +841,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait CommentResolved extends StObject
   inline def CommentResolved: CommentResolved = "CommentResolved".asInstanceOf[CommentResolved]
+  
+  @js.native
+  sealed trait CommentSelected extends StObject
+  inline def CommentSelected: CommentSelected = "CommentSelected".asInstanceOf[CommentSelected]
   
   @js.native
   sealed trait Compact extends StObject
@@ -5215,6 +5223,14 @@ object officeJsPreviewStrings {
   inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
+  sealed trait edited extends StObject
+  inline def edited: edited = "edited".asInstanceOf[edited]
+  
+  @js.native
+  sealed trait none_ extends StObject
+  inline def none_ : none_ = "none".asInstanceOf[none_]
+  
+  @js.native
   sealed trait officeThemeChanged extends StObject
   inline def officeThemeChanged: officeThemeChanged = "officeThemeChanged".asInstanceOf[officeThemeChanged]
   
@@ -5249,6 +5265,26 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait remove extends StObject
   inline def remove: remove = "remove".asInstanceOf[remove]
+  
+  @js.native
+  sealed trait reopened extends StObject
+  inline def reopened: reopened = "reopened".asInstanceOf[reopened]
+  
+  @js.native
+  sealed trait replyAdded_ extends StObject
+  inline def replyAdded_ : replyAdded_ = "replyAdded".asInstanceOf[replyAdded_]
+  
+  @js.native
+  sealed trait replyDeleted_ extends StObject
+  inline def replyDeleted_ : replyDeleted_ = "replyDeleted".asInstanceOf[replyDeleted_]
+  
+  @js.native
+  sealed trait replyEdited_ extends StObject
+  inline def replyEdited_ : replyEdited_ = "replyEdited".asInstanceOf[replyEdited_]
+  
+  @js.native
+  sealed trait resolved extends StObject
+  inline def resolved: resolved = "resolved".asInstanceOf[resolved]
   
   @js.native
   sealed trait restore extends StObject

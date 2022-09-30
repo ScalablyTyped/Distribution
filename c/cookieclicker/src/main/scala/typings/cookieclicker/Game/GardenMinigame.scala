@@ -1,7 +1,7 @@
 package typings.cookieclicker.Game
 
 import typings.cookieclicker.cookieclickerBooleans.`true`
-import typings.cookieclicker.cookieclickerNumbers.`40`
+import typings.cookieclicker.cookieclickerInts.`40`
 import typings.cookieclicker.cookieclickerStrings.Garden
 import typings.std.HTMLDivElement
 import typings.std.Record

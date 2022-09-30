@@ -160,15 +160,6 @@ object secp256k1Mod {
     @JSImport("ethereum-cryptography/secp256k1", "schnorr.Signature")
     @js.native
     def Signature: TypeofSchnorrSignature & (Instantiable2[/* r */ js.BigInt, /* s */ js.BigInt, SchnorrSignature]) = js.native
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("ethereum-cryptography/secp256k1", "schnorr.SignatureCls")
-    @js.native
-    open class SignatureCls protected ()
-      extends typings.nobleSecp256k1.mod.schnorr.SignatureCls {
-      def this(r: js.BigInt, s: js.BigInt) = this()
-    }
-    
     inline def Signature_=(
       x: TypeofSchnorrSignature & (Instantiable2[/* r */ js.BigInt, /* s */ js.BigInt, SchnorrSignature])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signature")(x.asInstanceOf[js.Any])
@@ -273,7 +264,7 @@ object secp256k1Mod {
     inline def hexToBytes(hex: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBytes")(hex.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     inline def hexToBytes_=(x: js.Function1[/* hex */ String, js.typedarray.Uint8Array]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hexToBytes")(x.asInstanceOf[js.Any])
     
-    inline def hmacSha256(key: js.typedarray.Uint8Array, messages: js.typedarray.Uint8Array*): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha256")(List(key.asInstanceOf[js.Any]).`++`(messages.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+    inline def hmacSha256(key: js.typedarray.Uint8Array, messages: js.typedarray.Uint8Array*): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha256")(scala.List(key.asInstanceOf[js.Any]).`++`(messages.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
     
     @JSImport("ethereum-cryptography/secp256k1", "utils.hmacSha256Sync")
     @js.native
@@ -320,9 +311,9 @@ object secp256k1Mod {
     def sha256Sync: Sha256FnSync = js.native
     inline def sha256Sync_=(x: Sha256FnSync): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256Sync")(x.asInstanceOf[js.Any])
     
-    inline def taggedHash(tag: String, messages: js.typedarray.Uint8Array*): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("taggedHash")(List(tag.asInstanceOf[js.Any]).`++`(messages.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+    inline def taggedHash(tag: String, messages: js.typedarray.Uint8Array*): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("taggedHash")(scala.List(tag.asInstanceOf[js.Any]).`++`(messages.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
     
-    inline def taggedHashSync(tag: String, messages: js.typedarray.Uint8Array*): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("taggedHashSync")(List(tag.asInstanceOf[js.Any]).`++`(messages.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.typedarray.Uint8Array]
+    inline def taggedHashSync(tag: String, messages: js.typedarray.Uint8Array*): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("taggedHashSync")(scala.List(tag.asInstanceOf[js.Any]).`++`(messages.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.typedarray.Uint8Array]
   }
   
   inline def verify(signature: Sig, msgHash: Hex, publicKey: PubKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(signature.asInstanceOf[js.Any], msgHash.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]

@@ -965,8 +965,8 @@ object osMod {
   trait NetworkInterfaceInfo extends StObject
   object NetworkInterfaceInfo {
     
-    inline def NetworkInterfaceInfoIPv4(address: String, internal: Boolean, mac: String, netmask: String): typings.node.osMod.NetworkInterfaceInfoIPv4 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
+    inline def NetworkInterfaceInfoIPv4(address: String, internal: Boolean, mac: String, netmask: String, scopeid: Unit): typings.node.osMod.NetworkInterfaceInfoIPv4 = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[typings.node.osMod.NetworkInterfaceInfoIPv4]
     }
     
@@ -982,17 +982,21 @@ object osMod {
        with NetworkInterfaceInfo {
     
     var family: IPv4
+    
+    var scopeid: Unit
   }
   object NetworkInterfaceInfoIPv4 {
     
-    inline def apply(address: String, internal: Boolean, mac: String, netmask: String): NetworkInterfaceInfoIPv4 = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
+    inline def apply(address: String, internal: Boolean, mac: String, netmask: String, scopeid: Unit): NetworkInterfaceInfoIPv4 = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[NetworkInterfaceInfoIPv4]
     }
     
     extension [Self <: NetworkInterfaceInfoIPv4](x: Self) {
       
       inline def setFamily(value: IPv4): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      
+      inline def setScopeid(value: Unit): Self = StObject.set(x, "scopeid", value.asInstanceOf[js.Any])
     }
   }
   

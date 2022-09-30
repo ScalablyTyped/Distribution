@@ -17,25 +17,25 @@ object formMod {
   
   @JSImport("redux-form/lib/Form", "Form")
   @js.native
-  class Form[FormData, P, ErrorType] protected () extends GenericForm[FormData, P, ErrorType] {
+  open class Form[FormData, P, ErrorType] protected () extends GenericForm[FormData, P, ErrorType] {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FormProps[FormData, P, ErrorType], context: js.Any) = this()
+    def this(props: FormProps[FormData, P, ErrorType], context: Any) = this()
   }
   
   @JSImport("redux-form/lib/Form", "GenericForm")
   @js.native
-  class GenericForm[FormData, P, ErrorType] protected ()
-    extends Component[FormProps[FormData, P, ErrorType], js.Object, js.Any] {
+  open class GenericForm[FormData, P, ErrorType] protected ()
+    extends Component[FormProps[FormData, P, ErrorType], js.Object, Any] {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FormProps[FormData, P, ErrorType], context: js.Any) = this()
+    def this(props: FormProps[FormData, P, ErrorType], context: Any) = this()
   }
   
   type FormProps[FormData, P, ErrorType] = (Omit[FormHTMLAttributes[HTMLFormElement], onSubmit]) & (FormSubmitProp[FormData, P, ErrorType])
@@ -54,7 +54,7 @@ object formMod {
     extension [Self <: FormSubmitProp[?, ?, ?], FormData, P, ErrorType](x: Self & (FormSubmitProp[FormData, P, ErrorType])) {
       
       inline def setOnSubmit(
-        value: (FormData, /* dispatch */ Dispatch[js.Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit | (FormErrors[FormData, ErrorType]) | js.Promise[js.Any]
+        value: (FormData, /* dispatch */ Dispatch[Any], /* props */ DecoratedFormProps[FormData, P, ErrorType]) => Unit | (FormErrors[FormData, ErrorType]) | js.Promise[Any]
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)

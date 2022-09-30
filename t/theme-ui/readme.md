@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui
 
-Typings are for version 0.14.7
+Typings are for version 0.15.1
 
 ## Library description:
 The Design Graph Framework

@@ -223,7 +223,7 @@ object constantsMod {
     
     @JSGlobal("fieldsFactionLayers")
     @js.native
-    val fieldsFactionLayers: LayerGroup_[js.Any] = js.native
+    val fieldsFactionLayers: LayerGroup_[Any] = js.native
     
     @JSGlobal("iitcBuildDate")
     @js.native
@@ -231,29 +231,29 @@ object constantsMod {
     
     @JSGlobal("linksFactionLayers")
     @js.native
-    val linksFactionLayers: LayerGroup_[js.Any] = js.native
+    val linksFactionLayers: LayerGroup_[Any] = js.native
     
     // = null;
     @JSGlobal("mapRunsUserAction")
     @js.native
-    def mapRunsUserAction: js.Any = js.native
-    inline def mapRunsUserAction_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("mapRunsUserAction")(x.asInstanceOf[js.Any])
+    def mapRunsUserAction: Any = js.native
+    inline def mapRunsUserAction_=(x: Any): Unit = js.Dynamic.global.updateDynamic("mapRunsUserAction")(x.asInstanceOf[js.Any])
     
     // = null;
     @JSGlobal("portalAccessIndicator")
     @js.native
-    def portalAccessIndicator: js.Any = js.native
-    inline def portalAccessIndicator_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("portalAccessIndicator")(x.asInstanceOf[js.Any])
+    def portalAccessIndicator: Any = js.native
+    inline def portalAccessIndicator_=(x: Any): Unit = js.Dynamic.global.updateDynamic("portalAccessIndicator")(x.asInstanceOf[js.Any])
     
     @JSGlobal("portalRangeIndicator")
     @js.native
-    def portalRangeIndicator: js.Any = js.native
-    inline def portalRangeIndicator_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("portalRangeIndicator")(x.asInstanceOf[js.Any])
+    def portalRangeIndicator: Any = js.native
+    inline def portalRangeIndicator_=(x: Any): Unit = js.Dynamic.global.updateDynamic("portalRangeIndicator")(x.asInstanceOf[js.Any])
     
     // = false;
     @JSGlobal("portalsFactionLayers")
     @js.native
-    val portalsFactionLayers: LayerGroup_[js.Any] = js.native
+    val portalsFactionLayers: LayerGroup_[Any] = js.native
     
     // STORAGE ///////////////////////////////////////////////////////////
     // global constiables used for storage. Most likely READ ONLY. Proper
@@ -261,12 +261,12 @@ object constantsMod {
     // getters/setters, but if you are careful enough, this works.
     @JSGlobal("refreshTimeout")
     @js.native
-    def refreshTimeout: js.Any = js.native
-    inline def refreshTimeout_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("refreshTimeout")(x.asInstanceOf[js.Any])
+    def refreshTimeout: Any = js.native
+    inline def refreshTimeout_=(x: Any): Unit = js.Dynamic.global.updateDynamic("refreshTimeout")(x.asInstanceOf[js.Any])
     
     @JSGlobal("script_info")
     @js.native
-    val scriptInfo: js.Any = js.native
+    val scriptInfo: Any = js.native
     
     // = null;
     /** guid of current selected portal */
@@ -278,14 +278,14 @@ object constantsMod {
     // = undefined;
     @JSGlobal("urlPortal")
     @js.native
-    def urlPortal: js.Any = js.native
+    def urlPortal: Any = js.native
     
     // = null;
     @JSGlobal("urlPortalLL")
     @js.native
-    def urlPortalLL: js.Any = js.native
-    inline def urlPortalLL_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortalLL")(x.asInstanceOf[js.Any])
+    def urlPortalLL: Any = js.native
+    inline def urlPortalLL_=(x: Any): Unit = js.Dynamic.global.updateDynamic("urlPortalLL")(x.asInstanceOf[js.Any])
     
-    inline def urlPortal_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortal")(x.asInstanceOf[js.Any])
+    inline def urlPortal_=(x: Any): Unit = js.Dynamic.global.updateDynamic("urlPortal")(x.asInstanceOf[js.Any])
   }
 }

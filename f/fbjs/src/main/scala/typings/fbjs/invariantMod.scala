@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object invariantMod {
   
-  inline def apply(condition: Any, format: String, args: Any*): String = (^.asInstanceOf[js.Dynamic].apply((List(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+  inline def apply(condition: Any, format: String, args: Any*): String = (^.asInstanceOf[js.Dynamic].apply((scala.List(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
   
   @JSImport("fbjs/lib/invariant", JSImport.Namespace)
   @js.native

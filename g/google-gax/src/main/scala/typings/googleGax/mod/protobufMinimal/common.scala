@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object common {
   
-  inline def apply(name: String, json: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(name: String, json: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("google-gax", "protobufMinimal.common")
   @js.native

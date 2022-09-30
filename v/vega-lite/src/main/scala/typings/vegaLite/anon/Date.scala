@@ -6,27 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Date extends StObject {
   
-  val date: typings.vegaLite.vegaLiteNumbers.`1`
+  val date: typings.vegaLite.vegaLiteInts.`1`
   
-  val day: typings.vegaLite.vegaLiteNumbers.`1`
+  val day: typings.vegaLite.vegaLiteInts.`1`
   
-  val dayofyear: typings.vegaLite.vegaLiteNumbers.`1`
+  val dayofyear: typings.vegaLite.vegaLiteInts.`1`
   
-  val hours: typings.vegaLite.vegaLiteNumbers.`1`
+  val hours: typings.vegaLite.vegaLiteInts.`1`
   
-  val milliseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val milliseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val minutes: typings.vegaLite.vegaLiteNumbers.`1`
+  val minutes: typings.vegaLite.vegaLiteInts.`1`
   
-  val month: typings.vegaLite.vegaLiteNumbers.`1`
+  val month: typings.vegaLite.vegaLiteInts.`1`
   
-  val quarter: typings.vegaLite.vegaLiteNumbers.`1`
+  val quarter: typings.vegaLite.vegaLiteInts.`1`
   
-  val seconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val seconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val week: typings.vegaLite.vegaLiteNumbers.`1`
+  val week: typings.vegaLite.vegaLiteInts.`1`
   
-  val year: typings.vegaLite.vegaLiteNumbers.`1`
+  val year: typings.vegaLite.vegaLiteInts.`1`
 }
 object Date {
   
@@ -37,26 +37,26 @@ object Date {
   
   extension [Self <: Date](x: Self) {
     
-    inline def setDate(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setDay(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    inline def setDayofyear(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "dayofyear", value.asInstanceOf[js.Any])
+    inline def setDayofyear(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "dayofyear", value.asInstanceOf[js.Any])
     
-    inline def setHours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    inline def setHours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
-    inline def setMilliseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+    inline def setMilliseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
     
-    inline def setMinutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    inline def setMonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    inline def setQuarter(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
+    inline def setQuarter(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
     
-    inline def setSeconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    inline def setWeek(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
-    inline def setYear(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

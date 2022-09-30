@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.TableRow")
 @js.native
-class TableRow protected ()
+open class TableRow protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.TableRow {
   def this(
     model: AbstractModel,

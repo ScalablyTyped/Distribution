@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/change-variable relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ChangeVariableAction")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ChangeVariableAction")
 @js.native
-class ChangeVariableAction protected () extends MicroflowAction {
+open class ChangeVariableAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,6 +40,7 @@ class ChangeVariableAction protected () extends MicroflowAction {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def valueModel: Expression = js.native
@@ -49,7 +50,7 @@ class ChangeVariableAction protected () extends MicroflowAction {
 }
 object ChangeVariableAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ChangeVariableAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ChangeVariableAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +71,13 @@ object ChangeVariableAction {
   inline def createIn(container: ActionActivity): ChangeVariableAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ChangeVariableAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ChangeVariableAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ChangeVariableAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ChangeVariableAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ChangeVariableAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

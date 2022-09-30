@@ -933,6 +933,8 @@ object listMod {
     
     var paginate: js.UndefOr[Boolean | PaginationType] = js.undefined
     
+    var pinned: js.UndefOr[js.Array[String | Double]] = js.undefined
+    
     var primaryKey: js.UndefOr[String | (js.Function1[/* item */ ListItemType, ReactElement])] = js.undefined
     
     var secondaryKey: js.UndefOr[String | (js.Function1[/* item */ ListItemType, ReactElement])] = js.undefined
@@ -1039,6 +1041,12 @@ object listMod {
       inline def setPaginate(value: Boolean | PaginationType): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
       
       inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+      
+      inline def setPinned(value: js.Array[String | Double]): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      
+      inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+      
+      inline def setPinnedVarargs(value: (String | Double)*): Self = StObject.set(x, "pinned", js.Array(value*))
       
       inline def setPrimaryKey(value: String | (js.Function1[/* item */ ListItemType, ReactElement])): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       

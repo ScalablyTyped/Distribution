@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SimpleMenuBarOrientation")
 @js.native
-class SimpleMenuBarOrientation protected ()
+open class SimpleMenuBarOrientation protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SimpleMenuBarOrientation {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

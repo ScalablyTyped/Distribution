@@ -6,9 +6,9 @@ import typings.angularCompiler.mod.ParsedTemplate
 import typings.angularCompiler.mod.TmplAstNode
 import typings.angularCompilerCli.angularCompilerCliBooleans.`false`
 import typings.angularCompilerCli.angularCompilerCliBooleans.`true`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`1`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`2`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`1`
+import typings.angularCompilerCli.angularCompilerCliInts.`2`
 import typings.angularCompilerCli.apiApiMod.TemplateSourceMapping
 import typings.angularCompilerCli.incrementalApiMod.DependencyTracker
 import typings.angularCompilerCli.ngtscDiagnosticsMod.FatalDiagnosticError
@@ -306,9 +306,9 @@ object resourcesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`1`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`2`
+    - typings.angularCompilerCli.angularCompilerCliInts.`0`
+    - typings.angularCompilerCli.angularCompilerCliInts.`1`
+    - typings.angularCompilerCli.angularCompilerCliInts.`2`
   */
   trait ResourceTypeForDiagnostics extends StObject
   object ResourceTypeForDiagnostics {

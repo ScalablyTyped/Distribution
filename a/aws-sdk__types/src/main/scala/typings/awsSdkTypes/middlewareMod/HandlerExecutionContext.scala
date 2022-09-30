@@ -1,6 +1,7 @@
 package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdkTypes.endpointMod.EndpointV2
 import typings.awsSdkTypes.loggerMod.Logger
 import typings.awsSdkTypes.utilMod.UserAgent
 import typings.awsSdkTypes.utilMod.UserAgentPair
@@ -11,6 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HandlerExecutionContext
   extends StObject
      with /* key */ StringDictionary[Any] {
+  
+  /**
+    * Resolved by the endpointMiddleware function of @aws-sdk/middleware-endpoint
+    * in the serialization stage.
+    */
+  var endpointV2: js.UndefOr[EndpointV2] = js.undefined
   
   /**
     * A logger that may be invoked by any handler during execution of an
@@ -33,6 +40,10 @@ object HandlerExecutionContext {
   }
   
   extension [Self <: HandlerExecutionContext](x: Self) {
+    
+    inline def setEndpointV2(value: EndpointV2): Self = StObject.set(x, "endpointV2", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointV2Undefined: Self = StObject.set(x, "endpointV2", js.undefined)
     
     inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

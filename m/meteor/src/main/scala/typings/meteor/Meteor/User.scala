@@ -1,6 +1,5 @@
 package typings.meteor.Meteor
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +8,13 @@ trait User extends StObject {
   
   var _id: String
   
-  var createdAt: js.UndefOr[Date] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   var emails: js.UndefOr[js.Array[UserEmail]] = js.undefined
   
-  var profile: js.UndefOr[js.Any] = js.undefined
+  var profile: js.UndefOr[UserProfile] = js.undefined
   
-  var services: js.UndefOr[js.Any] = js.undefined
+  var services: js.UndefOr[Any] = js.undefined
   
   var username: js.UndefOr[String] = js.undefined
 }
@@ -28,7 +27,7 @@ object User {
   
   extension [Self <: User](x: Self) {
     
-    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -36,13 +35,13 @@ object User {
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value*))
     
-    inline def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    inline def setServices(value: js.Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     

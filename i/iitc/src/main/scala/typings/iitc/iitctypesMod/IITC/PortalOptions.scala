@@ -12,7 +12,7 @@ trait PortalOptions
   
   var data: PortalData
   
-  var ent: js.Any
+  var ent: Any
   
   var guid: PortalGUID
   
@@ -24,7 +24,7 @@ trait PortalOptions
 }
 object PortalOptions {
   
-  inline def apply(data: PortalData, ent: js.Any, guid: PortalGUID, level: Double, team: Double, timestamp: Double): PortalOptions = {
+  inline def apply(data: PortalData, ent: Any, guid: PortalGUID, level: Double, team: Double, timestamp: Double): PortalOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], ent = ent.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalOptions]
   }
@@ -33,7 +33,7 @@ object PortalOptions {
     
     inline def setData(value: PortalData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setEnt(value: js.Any): Self = StObject.set(x, "ent", value.asInstanceOf[js.Any])
+    inline def setEnt(value: Any): Self = StObject.set(x, "ent", value.asInstanceOf[js.Any])
     
     inline def setGuid(value: PortalGUID): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

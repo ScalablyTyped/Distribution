@@ -1,17 +1,17 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1181`
-import typings.webcl.webclNumbers.`0x1182`
-import typings.webcl.webclNumbers.`0x1183`
+import typings.webcl.webclInts.`0x1181`
+import typings.webcl.webclInts.`0x1182`
+import typings.webcl.webclInts.`0x1183`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_program_build_info */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1181`
-  - typings.webcl.webclNumbers.`0x1182`
-  - typings.webcl.webclNumbers.`0x1183`
+  - typings.webcl.webclInts.`0x1181`
+  - typings.webcl.webclInts.`0x1182`
+  - typings.webcl.webclInts.`0x1183`
 */
 trait ProgramBuildInfo extends StObject
 object ProgramBuildInfo {

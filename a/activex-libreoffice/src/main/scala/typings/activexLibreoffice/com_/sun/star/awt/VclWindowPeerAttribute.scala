@@ -1,28 +1,28 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`-2147483648`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1073741824`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`134217728`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16384`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`16777216`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2097152`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`262144`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`268435456`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`32768`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`33554432`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`4194304`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`524288`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`536870912`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`67108864`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8192`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`8388608`
+import typings.activexLibreoffice.activexLibreofficeDoubles.`-2147483648`
+import typings.activexLibreoffice.activexLibreofficeInts.`1024`
+import typings.activexLibreoffice.activexLibreofficeInts.`1048576`
+import typings.activexLibreoffice.activexLibreofficeInts.`1073741824`
+import typings.activexLibreoffice.activexLibreofficeInts.`134217728`
+import typings.activexLibreoffice.activexLibreofficeInts.`16384`
+import typings.activexLibreoffice.activexLibreofficeInts.`16777216`
+import typings.activexLibreoffice.activexLibreofficeInts.`2048`
+import typings.activexLibreoffice.activexLibreofficeInts.`2097152`
+import typings.activexLibreoffice.activexLibreofficeInts.`256`
+import typings.activexLibreoffice.activexLibreofficeInts.`262144`
+import typings.activexLibreoffice.activexLibreofficeInts.`268435456`
+import typings.activexLibreoffice.activexLibreofficeInts.`32768`
+import typings.activexLibreoffice.activexLibreofficeInts.`33554432`
+import typings.activexLibreoffice.activexLibreofficeInts.`4096`
+import typings.activexLibreoffice.activexLibreofficeInts.`4194304`
+import typings.activexLibreoffice.activexLibreofficeInts.`512`
+import typings.activexLibreoffice.activexLibreofficeInts.`524288`
+import typings.activexLibreoffice.activexLibreofficeInts.`536870912`
+import typings.activexLibreoffice.activexLibreofficeInts.`65536`
+import typings.activexLibreoffice.activexLibreofficeInts.`67108864`
+import typings.activexLibreoffice.activexLibreofficeInts.`8192`
+import typings.activexLibreoffice.activexLibreofficeInts.`8388608`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,36 +30,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object VclWindowPeerAttribute {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1073741824`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`-2147483648`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`524288`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`268435456`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`134217728`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`536870912`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`32768`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2097152`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`256`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1024`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1048576`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4194304`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`8388608`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`262144`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`67108864`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`4096`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`16384`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`8192`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`512`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`16777216`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`33554432`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1073741824`
+    - typings.activexLibreoffice.activexLibreofficeDoubles.`-2147483648`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2048`
+    - typings.activexLibreoffice.activexLibreofficeInts.`524288`
+    - typings.activexLibreoffice.activexLibreofficeInts.`268435456`
+    - typings.activexLibreoffice.activexLibreofficeInts.`134217728`
+    - typings.activexLibreoffice.activexLibreofficeInts.`536870912`
+    - typings.activexLibreoffice.activexLibreofficeInts.`65536`
+    - typings.activexLibreoffice.activexLibreofficeInts.`32768`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2097152`
+    - typings.activexLibreoffice.activexLibreofficeInts.`256`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1024`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1048576`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4194304`
+    - typings.activexLibreoffice.activexLibreofficeInts.`8388608`
+    - typings.activexLibreoffice.activexLibreofficeInts.`262144`
+    - typings.activexLibreoffice.activexLibreofficeInts.`67108864`
+    - typings.activexLibreoffice.activexLibreofficeInts.`4096`
+    - typings.activexLibreoffice.activexLibreofficeInts.`16384`
+    - typings.activexLibreoffice.activexLibreofficeInts.`8192`
+    - typings.activexLibreoffice.activexLibreofficeInts.`512`
+    - typings.activexLibreoffice.activexLibreofficeInts.`16777216`
+    - typings.activexLibreoffice.activexLibreofficeInts.`33554432`
   */
   trait Constants extends StObject
   object Constants {
     
     inline def AUTOHSCROLL: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
     
-    inline def AUTOVSCROLL: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+    inline def AUTOVSCROLL: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
     
     inline def CENTER: `2048` = 2048.asInstanceOf[`2048`]
     
@@ -69,7 +69,7 @@ object VclWindowPeerAttribute {
     
     inline def DEF_CANCEL: `268435456` = 268435456.asInstanceOf[`268435456`]
     
-    inline def DEF_NO: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+    inline def DEF_NO: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
     
     inline def DEF_OK: `134217728` = 134217728.asInstanceOf[`134217728`]
     

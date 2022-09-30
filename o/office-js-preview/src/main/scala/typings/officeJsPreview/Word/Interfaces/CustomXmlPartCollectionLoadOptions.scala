@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the collection of {@link Word.CustomXmlPart} objects.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 trait CustomXmlPartCollectionLoadOptions extends StObject {
   
@@ -20,20 +19,18 @@ trait CustomXmlPartCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
+    * For EACH ITEM in the collection: Gets the ID of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
+    * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var namespaceUri: js.UndefOr[Boolean] = js.undefined
 }

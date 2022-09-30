@@ -1,6 +1,5 @@
 package typings.leaflet.mod
 
-import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "TileLayer")
 @js.native
-class TileLayer_ protected () extends GridLayer_ {
+open class TileLayer_ protected () extends GridLayer_ {
   def this(urlTemplate: String) = this()
   def this(urlTemplate: String, options: TileLayerOptions) = this()
   
@@ -16,7 +15,7 @@ class TileLayer_ protected () extends GridLayer_ {
   
   /* protected */ def _getZoomForUrl(): Double = js.native
   
-  /* protected */ def _tileOnError(done: DoneCallback, tile: HTMLElement, e: Error): Unit = js.native
+  /* protected */ def _tileOnError(done: DoneCallback, tile: HTMLElement, e: js.Error): Unit = js.native
   
   /* protected */ def _tileOnLoad(done: DoneCallback, tile: HTMLElement): Unit = js.native
   
@@ -31,7 +30,7 @@ object TileLayer_ {
   
   @JSImport("leaflet", "TileLayer.WMS")
   @js.native
-  class WMS protected () extends TileLayer_ {
+  open class WMS protected () extends TileLayer_ {
     def this(baseUrl: String, options: WMSOptions) = this()
     
     @JSName("options")

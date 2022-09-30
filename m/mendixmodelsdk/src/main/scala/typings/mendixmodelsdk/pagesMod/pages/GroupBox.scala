@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/group-box relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.GroupBox")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.GroupBox")
 @js.native
-class GroupBox protected () extends ConditionallyVisibleWidget {
+open class GroupBox protected () extends ConditionallyVisibleWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -56,7 +56,7 @@ class GroupBox protected () extends ConditionallyVisibleWidget {
 }
 object GroupBox {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GroupBox")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GroupBox")
   @js.native
   val ^ : js.Any = js.native
   
@@ -630,13 +630,13 @@ object GroupBox {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): GroupBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[GroupBox]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GroupBox.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GroupBox.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GroupBox.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.GroupBox.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

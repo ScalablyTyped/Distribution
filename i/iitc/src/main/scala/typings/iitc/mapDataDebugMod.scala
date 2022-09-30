@@ -10,7 +10,7 @@ object mapDataDebugMod {
   
   @JSImport("iitc/core/map_data_debug", "RenderDebugTiles")
   @js.native
-  class RenderDebugTiles () extends StObject {
+  open class RenderDebugTiles () extends StObject {
     
     var CLEAR_CHECK_TIME: Double = js.native
     
@@ -20,7 +20,7 @@ object mapDataDebugMod {
     def create(id: String, bounds: LatLngBounds_): Unit = js.native
     
     //  = 1.0;
-    /* private */ var debugTileLayer: LayerGroup_[js.Any] = js.native
+    /* private */ var debugTileLayer: LayerGroup_[Any] = js.native
     
     def reset(): Unit = js.native
     

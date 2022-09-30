@@ -1,13 +1,12 @@
 package typings.escpos.anon
 
-import typings.escpos.escposStrings.InformationseparatorthreeLeftparenthesiskEndoftextNull1E
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OPTIONS extends StObject {
   
-  var CMD: InformationseparatorthreeLeftparenthesiskEndoftextNull1E
+  var CMD: String
   
   var OPTIONS: H
 }
@@ -20,7 +19,7 @@ object OPTIONS {
   
   extension [Self <: OPTIONS](x: Self) {
     
-    inline def setCMD(value: InformationseparatorthreeLeftparenthesiskEndoftextNull1E): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
+    inline def setCMD(value: String): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     
     inline def setOPTIONS(value: H): Self = StObject.set(x, "OPTIONS", value.asInstanceOf[js.Any])
   }

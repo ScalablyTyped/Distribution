@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.TabPage")
 @js.native
-class TabPage protected ()
+open class TabPage protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.TabPage {
   def this(
     model: AbstractModel,

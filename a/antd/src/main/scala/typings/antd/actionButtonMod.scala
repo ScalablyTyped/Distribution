@@ -5,6 +5,7 @@ import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.LegacyButtonType
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ object actionButtonMod extends Shortcut {
   
   trait ActionButtonProps extends StObject {
     
-    var actionFn: js.UndefOr[js.Function1[/* repeated */ Any, Any | js.Thenable[Any]]] = js.undefined
+    var actionFn: js.UndefOr[js.Function1[/* repeated */ Any, Any | PromiseLike[Any]]] = js.undefined
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -44,7 +45,7 @@ object actionButtonMod extends Shortcut {
     
     extension [Self <: ActionButtonProps](x: Self) {
       
-      inline def setActionFn(value: /* repeated */ Any => Any | js.Thenable[Any]): Self = StObject.set(x, "actionFn", js.Any.fromFunction1(value))
+      inline def setActionFn(value: /* repeated */ Any => Any | PromiseLike[Any]): Self = StObject.set(x, "actionFn", js.Any.fromFunction1(value))
       
       inline def setActionFnUndefined: Self = StObject.set(x, "actionFn", js.undefined)
       

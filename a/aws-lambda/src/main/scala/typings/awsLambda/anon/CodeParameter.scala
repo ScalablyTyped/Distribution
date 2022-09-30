@@ -11,14 +11,19 @@ trait CodeParameter extends StObject {
   
   var codeParameter: String
   
+  var linkParameter: String
+  
   var userAttributes: StringMap
   
-  var usernameParameter: String
+  /**
+    * This is null for all events other than the AdminCreateUser action.
+    */
+  var usernameParameter: String | Null
 }
 object CodeParameter {
   
-  inline def apply(codeParameter: String, userAttributes: StringMap, usernameParameter: String): CodeParameter = {
-    val __obj = js.Dynamic.literal(codeParameter = codeParameter.asInstanceOf[js.Any], userAttributes = userAttributes.asInstanceOf[js.Any], usernameParameter = usernameParameter.asInstanceOf[js.Any])
+  inline def apply(codeParameter: String, linkParameter: String, userAttributes: StringMap): CodeParameter = {
+    val __obj = js.Dynamic.literal(codeParameter = codeParameter.asInstanceOf[js.Any], linkParameter = linkParameter.asInstanceOf[js.Any], userAttributes = userAttributes.asInstanceOf[js.Any], usernameParameter = null)
     __obj.asInstanceOf[CodeParameter]
   }
   
@@ -30,8 +35,12 @@ object CodeParameter {
     
     inline def setCodeParameter(value: String): Self = StObject.set(x, "codeParameter", value.asInstanceOf[js.Any])
     
+    inline def setLinkParameter(value: String): Self = StObject.set(x, "linkParameter", value.asInstanceOf[js.Any])
+    
     inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
     inline def setUsernameParameter(value: String): Self = StObject.set(x, "usernameParameter", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameParameterNull: Self = StObject.set(x, "usernameParameter", null)
   }
 }

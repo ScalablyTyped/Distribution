@@ -52,6 +52,12 @@ object constantsMod {
     /* "ACTIVITY_PENDING" */ val PendingActivity: typings.gatsbyCli.constantsMod.Actions.PendingActivity & String = js.native
     
     @js.native
+    sealed trait RenderPageTree
+      extends StObject
+         with Actions
+    /* "RENDER_PAGE_TREE" */ val RenderPageTree: typings.gatsbyCli.constantsMod.Actions.RenderPageTree & String = js.native
+    
+    @js.native
     sealed trait SetLogs
       extends StObject
          with Actions

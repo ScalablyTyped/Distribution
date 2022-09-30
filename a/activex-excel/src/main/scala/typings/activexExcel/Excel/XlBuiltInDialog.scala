@@ -1,526 +1,526 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`103`
-import typings.activexExcel.activexExcelNumbers.`108`
-import typings.activexExcel.activexExcelNumbers.`1107`
-import typings.activexExcel.activexExcelNumbers.`1108`
-import typings.activexExcel.activexExcelNumbers.`1109`
-import typings.activexExcel.activexExcelNumbers.`110`
-import typings.activexExcel.activexExcelNumbers.`111`
-import typings.activexExcel.activexExcelNumbers.`1133`
-import typings.activexExcel.activexExcelNumbers.`1134`
-import typings.activexExcel.activexExcelNumbers.`1135`
-import typings.activexExcel.activexExcelNumbers.`1153`
-import typings.activexExcel.activexExcelNumbers.`1179`
-import typings.activexExcel.activexExcelNumbers.`1182`
-import typings.activexExcel.activexExcelNumbers.`1183`
-import typings.activexExcel.activexExcelNumbers.`1184`
-import typings.activexExcel.activexExcelNumbers.`119`
-import typings.activexExcel.activexExcelNumbers.`1208`
-import typings.activexExcel.activexExcelNumbers.`127`
-import typings.activexExcel.activexExcelNumbers.`128`
-import typings.activexExcel.activexExcelNumbers.`129`
-import typings.activexExcel.activexExcelNumbers.`12`
-import typings.activexExcel.activexExcelNumbers.`130`
-import typings.activexExcel.activexExcelNumbers.`132`
-import typings.activexExcel.activexExcelNumbers.`133`
-import typings.activexExcel.activexExcelNumbers.`134`
-import typings.activexExcel.activexExcelNumbers.`137`
-import typings.activexExcel.activexExcelNumbers.`13`
-import typings.activexExcel.activexExcelNumbers.`142`
-import typings.activexExcel.activexExcelNumbers.`145`
-import typings.activexExcel.activexExcelNumbers.`147`
-import typings.activexExcel.activexExcelNumbers.`14`
-import typings.activexExcel.activexExcelNumbers.`150`
-import typings.activexExcel.activexExcelNumbers.`154`
-import typings.activexExcel.activexExcelNumbers.`159`
-import typings.activexExcel.activexExcelNumbers.`161`
-import typings.activexExcel.activexExcelNumbers.`166`
-import typings.activexExcel.activexExcelNumbers.`170`
-import typings.activexExcel.activexExcelNumbers.`171`
-import typings.activexExcel.activexExcelNumbers.`17`
-import typings.activexExcel.activexExcelNumbers.`185`
-import typings.activexExcel.activexExcelNumbers.`186`
-import typings.activexExcel.activexExcelNumbers.`188`
-import typings.activexExcel.activexExcelNumbers.`189`
-import typings.activexExcel.activexExcelNumbers.`190`
-import typings.activexExcel.activexExcelNumbers.`191`
-import typings.activexExcel.activexExcelNumbers.`192`
-import typings.activexExcel.activexExcelNumbers.`193`
-import typings.activexExcel.activexExcelNumbers.`194`
-import typings.activexExcel.activexExcelNumbers.`195`
-import typings.activexExcel.activexExcelNumbers.`196`
-import typings.activexExcel.activexExcelNumbers.`197`
-import typings.activexExcel.activexExcelNumbers.`198`
-import typings.activexExcel.activexExcelNumbers.`199`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`200`
-import typings.activexExcel.activexExcelNumbers.`201`
-import typings.activexExcel.activexExcelNumbers.`202`
-import typings.activexExcel.activexExcelNumbers.`203`
-import typings.activexExcel.activexExcelNumbers.`204`
-import typings.activexExcel.activexExcelNumbers.`207`
-import typings.activexExcel.activexExcelNumbers.`208`
-import typings.activexExcel.activexExcelNumbers.`212`
-import typings.activexExcel.activexExcelNumbers.`213`
-import typings.activexExcel.activexExcelNumbers.`214`
-import typings.activexExcel.activexExcelNumbers.`217`
-import typings.activexExcel.activexExcelNumbers.`218`
-import typings.activexExcel.activexExcelNumbers.`220`
-import typings.activexExcel.activexExcelNumbers.`222`
-import typings.activexExcel.activexExcelNumbers.`223`
-import typings.activexExcel.activexExcelNumbers.`225`
-import typings.activexExcel.activexExcelNumbers.`226`
-import typings.activexExcel.activexExcelNumbers.`228`
-import typings.activexExcel.activexExcelNumbers.`229`
-import typings.activexExcel.activexExcelNumbers.`23`
-import typings.activexExcel.activexExcelNumbers.`249`
-import typings.activexExcel.activexExcelNumbers.`251`
-import typings.activexExcel.activexExcelNumbers.`256`
-import typings.activexExcel.activexExcelNumbers.`259`
-import typings.activexExcel.activexExcelNumbers.`261`
-import typings.activexExcel.activexExcelNumbers.`262`
-import typings.activexExcel.activexExcelNumbers.`269`
-import typings.activexExcel.activexExcelNumbers.`26`
-import typings.activexExcel.activexExcelNumbers.`272`
-import typings.activexExcel.activexExcelNumbers.`273`
-import typings.activexExcel.activexExcelNumbers.`276`
-import typings.activexExcel.activexExcelNumbers.`27`
-import typings.activexExcel.activexExcelNumbers.`281`
-import typings.activexExcel.activexExcelNumbers.`282`
-import typings.activexExcel.activexExcelNumbers.`283`
-import typings.activexExcel.activexExcelNumbers.`284`
-import typings.activexExcel.activexExcelNumbers.`285`
-import typings.activexExcel.activexExcelNumbers.`288`
-import typings.activexExcel.activexExcelNumbers.`28`
-import typings.activexExcel.activexExcelNumbers.`293`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`300`
-import typings.activexExcel.activexExcelNumbers.`301`
-import typings.activexExcel.activexExcelNumbers.`302`
-import typings.activexExcel.activexExcelNumbers.`305`
-import typings.activexExcel.activexExcelNumbers.`307`
-import typings.activexExcel.activexExcelNumbers.`308`
-import typings.activexExcel.activexExcelNumbers.`311`
-import typings.activexExcel.activexExcelNumbers.`312`
-import typings.activexExcel.activexExcelNumbers.`313`
-import typings.activexExcel.activexExcelNumbers.`318`
-import typings.activexExcel.activexExcelNumbers.`319`
-import typings.activexExcel.activexExcelNumbers.`320`
-import typings.activexExcel.activexExcelNumbers.`321`
-import typings.activexExcel.activexExcelNumbers.`322`
-import typings.activexExcel.activexExcelNumbers.`323`
-import typings.activexExcel.activexExcelNumbers.`325`
-import typings.activexExcel.activexExcelNumbers.`328`
-import typings.activexExcel.activexExcelNumbers.`32`
-import typings.activexExcel.activexExcelNumbers.`330`
-import typings.activexExcel.activexExcelNumbers.`336`
-import typings.activexExcel.activexExcelNumbers.`339`
-import typings.activexExcel.activexExcelNumbers.`342`
-import typings.activexExcel.activexExcelNumbers.`344`
-import typings.activexExcel.activexExcelNumbers.`350`
-import typings.activexExcel.activexExcelNumbers.`354`
-import typings.activexExcel.activexExcelNumbers.`355`
-import typings.activexExcel.activexExcelNumbers.`356`
-import typings.activexExcel.activexExcelNumbers.`35`
-import typings.activexExcel.activexExcelNumbers.`36`
-import typings.activexExcel.activexExcelNumbers.`370`
-import typings.activexExcel.activexExcelNumbers.`378`
-import typings.activexExcel.activexExcelNumbers.`379`
-import typings.activexExcel.activexExcelNumbers.`380`
-import typings.activexExcel.activexExcelNumbers.`381`
-import typings.activexExcel.activexExcelNumbers.`382`
-import typings.activexExcel.activexExcelNumbers.`384`
-import typings.activexExcel.activexExcelNumbers.`386`
-import typings.activexExcel.activexExcelNumbers.`388`
-import typings.activexExcel.activexExcelNumbers.`390`
-import typings.activexExcel.activexExcelNumbers.`392`
-import typings.activexExcel.activexExcelNumbers.`394`
-import typings.activexExcel.activexExcelNumbers.`398`
-import typings.activexExcel.activexExcelNumbers.`39`
-import typings.activexExcel.activexExcelNumbers.`40`
-import typings.activexExcel.activexExcelNumbers.`415`
-import typings.activexExcel.activexExcelNumbers.`417`
-import typings.activexExcel.activexExcelNumbers.`41`
-import typings.activexExcel.activexExcelNumbers.`420`
-import typings.activexExcel.activexExcelNumbers.`421`
-import typings.activexExcel.activexExcelNumbers.`422`
-import typings.activexExcel.activexExcelNumbers.`423`
-import typings.activexExcel.activexExcelNumbers.`42`
-import typings.activexExcel.activexExcelNumbers.`433`
-import typings.activexExcel.activexExcelNumbers.`434`
-import typings.activexExcel.activexExcelNumbers.`435`
-import typings.activexExcel.activexExcelNumbers.`436`
-import typings.activexExcel.activexExcelNumbers.`437`
-import typings.activexExcel.activexExcelNumbers.`438`
-import typings.activexExcel.activexExcelNumbers.`43`
-import typings.activexExcel.activexExcelNumbers.`441`
-import typings.activexExcel.activexExcelNumbers.`445`
-import typings.activexExcel.activexExcelNumbers.`447`
-import typings.activexExcel.activexExcelNumbers.`44`
-import typings.activexExcel.activexExcelNumbers.`450`
-import typings.activexExcel.activexExcelNumbers.`456`
-import typings.activexExcel.activexExcelNumbers.`458`
-import typings.activexExcel.activexExcelNumbers.`45`
-import typings.activexExcel.activexExcelNumbers.`460`
-import typings.activexExcel.activexExcelNumbers.`461`
-import typings.activexExcel.activexExcelNumbers.`462`
-import typings.activexExcel.activexExcelNumbers.`463`
-import typings.activexExcel.activexExcelNumbers.`464`
-import typings.activexExcel.activexExcelNumbers.`465`
-import typings.activexExcel.activexExcelNumbers.`466`
-import typings.activexExcel.activexExcelNumbers.`46`
-import typings.activexExcel.activexExcelNumbers.`470`
-import typings.activexExcel.activexExcelNumbers.`472`
-import typings.activexExcel.activexExcelNumbers.`473`
-import typings.activexExcel.activexExcelNumbers.`474`
-import typings.activexExcel.activexExcelNumbers.`475`
-import typings.activexExcel.activexExcelNumbers.`476`
-import typings.activexExcel.activexExcelNumbers.`478`
-import typings.activexExcel.activexExcelNumbers.`47`
-import typings.activexExcel.activexExcelNumbers.`481`
-import typings.activexExcel.activexExcelNumbers.`485`
-import typings.activexExcel.activexExcelNumbers.`493`
-import typings.activexExcel.activexExcelNumbers.`496`
-import typings.activexExcel.activexExcelNumbers.`504`
-import typings.activexExcel.activexExcelNumbers.`505`
-import typings.activexExcel.activexExcelNumbers.`506`
-import typings.activexExcel.activexExcelNumbers.`509`
-import typings.activexExcel.activexExcelNumbers.`525`
-import typings.activexExcel.activexExcelNumbers.`526`
-import typings.activexExcel.activexExcelNumbers.`527`
-import typings.activexExcel.activexExcelNumbers.`52`
-import typings.activexExcel.activexExcelNumbers.`530`
-import typings.activexExcel.activexExcelNumbers.`538`
-import typings.activexExcel.activexExcelNumbers.`53`
-import typings.activexExcel.activexExcelNumbers.`540`
-import typings.activexExcel.activexExcelNumbers.`541`
-import typings.activexExcel.activexExcelNumbers.`54`
-import typings.activexExcel.activexExcelNumbers.`557`
-import typings.activexExcel.activexExcelNumbers.`55`
-import typings.activexExcel.activexExcelNumbers.`567`
-import typings.activexExcel.activexExcelNumbers.`568`
-import typings.activexExcel.activexExcelNumbers.`570`
-import typings.activexExcel.activexExcelNumbers.`572`
-import typings.activexExcel.activexExcelNumbers.`583`
-import typings.activexExcel.activexExcelNumbers.`58`
-import typings.activexExcel.activexExcelNumbers.`596`
-import typings.activexExcel.activexExcelNumbers.`5`
-import typings.activexExcel.activexExcelNumbers.`61`
-import typings.activexExcel.activexExcelNumbers.`620`
-import typings.activexExcel.activexExcelNumbers.`62`
-import typings.activexExcel.activexExcelNumbers.`63`
-import typings.activexExcel.activexExcelNumbers.`647`
-import typings.activexExcel.activexExcelNumbers.`64`
-import typings.activexExcel.activexExcelNumbers.`653`
-import typings.activexExcel.activexExcelNumbers.`656`
-import typings.activexExcel.activexExcelNumbers.`666`
-import typings.activexExcel.activexExcelNumbers.`667`
-import typings.activexExcel.activexExcelNumbers.`67`
-import typings.activexExcel.activexExcelNumbers.`683`
-import typings.activexExcel.activexExcelNumbers.`684`
-import typings.activexExcel.activexExcelNumbers.`685`
-import typings.activexExcel.activexExcelNumbers.`686`
-import typings.activexExcel.activexExcelNumbers.`687`
-import typings.activexExcel.activexExcelNumbers.`689`
-import typings.activexExcel.activexExcelNumbers.`68`
-import typings.activexExcel.activexExcelNumbers.`69`
-import typings.activexExcel.activexExcelNumbers.`6`
-import typings.activexExcel.activexExcelNumbers.`709`
-import typings.activexExcel.activexExcelNumbers.`70`
-import typings.activexExcel.activexExcelNumbers.`71`
-import typings.activexExcel.activexExcelNumbers.`723`
-import typings.activexExcel.activexExcelNumbers.`724`
-import typings.activexExcel.activexExcelNumbers.`72`
-import typings.activexExcel.activexExcelNumbers.`731`
-import typings.activexExcel.activexExcelNumbers.`732`
-import typings.activexExcel.activexExcelNumbers.`73`
-import typings.activexExcel.activexExcelNumbers.`754`
-import typings.activexExcel.activexExcelNumbers.`76`
-import typings.activexExcel.activexExcelNumbers.`773`
-import typings.activexExcel.activexExcelNumbers.`78`
-import typings.activexExcel.activexExcelNumbers.`796`
-import typings.activexExcel.activexExcelNumbers.`7`
-import typings.activexExcel.activexExcelNumbers.`80`
-import typings.activexExcel.activexExcelNumbers.`832`
-import typings.activexExcel.activexExcelNumbers.`834`
-import typings.activexExcel.activexExcelNumbers.`84`
-import typings.activexExcel.activexExcelNumbers.`85`
-import typings.activexExcel.activexExcelNumbers.`862`
-import typings.activexExcel.activexExcelNumbers.`86`
-import typings.activexExcel.activexExcelNumbers.`87`
-import typings.activexExcel.activexExcelNumbers.`88`
-import typings.activexExcel.activexExcelNumbers.`89`
-import typings.activexExcel.activexExcelNumbers.`8`
-import typings.activexExcel.activexExcelNumbers.`91`
-import typings.activexExcel.activexExcelNumbers.`94`
-import typings.activexExcel.activexExcelNumbers.`95`
-import typings.activexExcel.activexExcelNumbers.`977`
-import typings.activexExcel.activexExcelNumbers.`978`
-import typings.activexExcel.activexExcelNumbers.`9`
+import typings.activexExcel.activexExcelInts.`103`
+import typings.activexExcel.activexExcelInts.`108`
+import typings.activexExcel.activexExcelInts.`1107`
+import typings.activexExcel.activexExcelInts.`1108`
+import typings.activexExcel.activexExcelInts.`1109`
+import typings.activexExcel.activexExcelInts.`110`
+import typings.activexExcel.activexExcelInts.`111`
+import typings.activexExcel.activexExcelInts.`1133`
+import typings.activexExcel.activexExcelInts.`1134`
+import typings.activexExcel.activexExcelInts.`1135`
+import typings.activexExcel.activexExcelInts.`1153`
+import typings.activexExcel.activexExcelInts.`1179`
+import typings.activexExcel.activexExcelInts.`1182`
+import typings.activexExcel.activexExcelInts.`1183`
+import typings.activexExcel.activexExcelInts.`1184`
+import typings.activexExcel.activexExcelInts.`119`
+import typings.activexExcel.activexExcelInts.`1208`
+import typings.activexExcel.activexExcelInts.`127`
+import typings.activexExcel.activexExcelInts.`128`
+import typings.activexExcel.activexExcelInts.`129`
+import typings.activexExcel.activexExcelInts.`12`
+import typings.activexExcel.activexExcelInts.`130`
+import typings.activexExcel.activexExcelInts.`132`
+import typings.activexExcel.activexExcelInts.`133`
+import typings.activexExcel.activexExcelInts.`134`
+import typings.activexExcel.activexExcelInts.`137`
+import typings.activexExcel.activexExcelInts.`13`
+import typings.activexExcel.activexExcelInts.`142`
+import typings.activexExcel.activexExcelInts.`145`
+import typings.activexExcel.activexExcelInts.`147`
+import typings.activexExcel.activexExcelInts.`14`
+import typings.activexExcel.activexExcelInts.`150`
+import typings.activexExcel.activexExcelInts.`154`
+import typings.activexExcel.activexExcelInts.`159`
+import typings.activexExcel.activexExcelInts.`161`
+import typings.activexExcel.activexExcelInts.`166`
+import typings.activexExcel.activexExcelInts.`170`
+import typings.activexExcel.activexExcelInts.`171`
+import typings.activexExcel.activexExcelInts.`17`
+import typings.activexExcel.activexExcelInts.`185`
+import typings.activexExcel.activexExcelInts.`186`
+import typings.activexExcel.activexExcelInts.`188`
+import typings.activexExcel.activexExcelInts.`189`
+import typings.activexExcel.activexExcelInts.`190`
+import typings.activexExcel.activexExcelInts.`191`
+import typings.activexExcel.activexExcelInts.`192`
+import typings.activexExcel.activexExcelInts.`193`
+import typings.activexExcel.activexExcelInts.`194`
+import typings.activexExcel.activexExcelInts.`195`
+import typings.activexExcel.activexExcelInts.`196`
+import typings.activexExcel.activexExcelInts.`197`
+import typings.activexExcel.activexExcelInts.`198`
+import typings.activexExcel.activexExcelInts.`199`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`200`
+import typings.activexExcel.activexExcelInts.`201`
+import typings.activexExcel.activexExcelInts.`202`
+import typings.activexExcel.activexExcelInts.`203`
+import typings.activexExcel.activexExcelInts.`204`
+import typings.activexExcel.activexExcelInts.`207`
+import typings.activexExcel.activexExcelInts.`208`
+import typings.activexExcel.activexExcelInts.`212`
+import typings.activexExcel.activexExcelInts.`213`
+import typings.activexExcel.activexExcelInts.`214`
+import typings.activexExcel.activexExcelInts.`217`
+import typings.activexExcel.activexExcelInts.`218`
+import typings.activexExcel.activexExcelInts.`220`
+import typings.activexExcel.activexExcelInts.`222`
+import typings.activexExcel.activexExcelInts.`223`
+import typings.activexExcel.activexExcelInts.`225`
+import typings.activexExcel.activexExcelInts.`226`
+import typings.activexExcel.activexExcelInts.`228`
+import typings.activexExcel.activexExcelInts.`229`
+import typings.activexExcel.activexExcelInts.`23`
+import typings.activexExcel.activexExcelInts.`249`
+import typings.activexExcel.activexExcelInts.`251`
+import typings.activexExcel.activexExcelInts.`256`
+import typings.activexExcel.activexExcelInts.`259`
+import typings.activexExcel.activexExcelInts.`261`
+import typings.activexExcel.activexExcelInts.`262`
+import typings.activexExcel.activexExcelInts.`269`
+import typings.activexExcel.activexExcelInts.`26`
+import typings.activexExcel.activexExcelInts.`272`
+import typings.activexExcel.activexExcelInts.`273`
+import typings.activexExcel.activexExcelInts.`276`
+import typings.activexExcel.activexExcelInts.`27`
+import typings.activexExcel.activexExcelInts.`281`
+import typings.activexExcel.activexExcelInts.`282`
+import typings.activexExcel.activexExcelInts.`283`
+import typings.activexExcel.activexExcelInts.`284`
+import typings.activexExcel.activexExcelInts.`285`
+import typings.activexExcel.activexExcelInts.`288`
+import typings.activexExcel.activexExcelInts.`28`
+import typings.activexExcel.activexExcelInts.`293`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`300`
+import typings.activexExcel.activexExcelInts.`301`
+import typings.activexExcel.activexExcelInts.`302`
+import typings.activexExcel.activexExcelInts.`305`
+import typings.activexExcel.activexExcelInts.`307`
+import typings.activexExcel.activexExcelInts.`308`
+import typings.activexExcel.activexExcelInts.`311`
+import typings.activexExcel.activexExcelInts.`312`
+import typings.activexExcel.activexExcelInts.`313`
+import typings.activexExcel.activexExcelInts.`318`
+import typings.activexExcel.activexExcelInts.`319`
+import typings.activexExcel.activexExcelInts.`320`
+import typings.activexExcel.activexExcelInts.`321`
+import typings.activexExcel.activexExcelInts.`322`
+import typings.activexExcel.activexExcelInts.`323`
+import typings.activexExcel.activexExcelInts.`325`
+import typings.activexExcel.activexExcelInts.`328`
+import typings.activexExcel.activexExcelInts.`32`
+import typings.activexExcel.activexExcelInts.`330`
+import typings.activexExcel.activexExcelInts.`336`
+import typings.activexExcel.activexExcelInts.`339`
+import typings.activexExcel.activexExcelInts.`342`
+import typings.activexExcel.activexExcelInts.`344`
+import typings.activexExcel.activexExcelInts.`350`
+import typings.activexExcel.activexExcelInts.`354`
+import typings.activexExcel.activexExcelInts.`355`
+import typings.activexExcel.activexExcelInts.`356`
+import typings.activexExcel.activexExcelInts.`35`
+import typings.activexExcel.activexExcelInts.`36`
+import typings.activexExcel.activexExcelInts.`370`
+import typings.activexExcel.activexExcelInts.`378`
+import typings.activexExcel.activexExcelInts.`379`
+import typings.activexExcel.activexExcelInts.`380`
+import typings.activexExcel.activexExcelInts.`381`
+import typings.activexExcel.activexExcelInts.`382`
+import typings.activexExcel.activexExcelInts.`384`
+import typings.activexExcel.activexExcelInts.`386`
+import typings.activexExcel.activexExcelInts.`388`
+import typings.activexExcel.activexExcelInts.`390`
+import typings.activexExcel.activexExcelInts.`392`
+import typings.activexExcel.activexExcelInts.`394`
+import typings.activexExcel.activexExcelInts.`398`
+import typings.activexExcel.activexExcelInts.`39`
+import typings.activexExcel.activexExcelInts.`40`
+import typings.activexExcel.activexExcelInts.`415`
+import typings.activexExcel.activexExcelInts.`417`
+import typings.activexExcel.activexExcelInts.`41`
+import typings.activexExcel.activexExcelInts.`420`
+import typings.activexExcel.activexExcelInts.`421`
+import typings.activexExcel.activexExcelInts.`422`
+import typings.activexExcel.activexExcelInts.`423`
+import typings.activexExcel.activexExcelInts.`42`
+import typings.activexExcel.activexExcelInts.`433`
+import typings.activexExcel.activexExcelInts.`434`
+import typings.activexExcel.activexExcelInts.`435`
+import typings.activexExcel.activexExcelInts.`436`
+import typings.activexExcel.activexExcelInts.`437`
+import typings.activexExcel.activexExcelInts.`438`
+import typings.activexExcel.activexExcelInts.`43`
+import typings.activexExcel.activexExcelInts.`441`
+import typings.activexExcel.activexExcelInts.`445`
+import typings.activexExcel.activexExcelInts.`447`
+import typings.activexExcel.activexExcelInts.`44`
+import typings.activexExcel.activexExcelInts.`450`
+import typings.activexExcel.activexExcelInts.`456`
+import typings.activexExcel.activexExcelInts.`458`
+import typings.activexExcel.activexExcelInts.`45`
+import typings.activexExcel.activexExcelInts.`460`
+import typings.activexExcel.activexExcelInts.`461`
+import typings.activexExcel.activexExcelInts.`462`
+import typings.activexExcel.activexExcelInts.`463`
+import typings.activexExcel.activexExcelInts.`464`
+import typings.activexExcel.activexExcelInts.`465`
+import typings.activexExcel.activexExcelInts.`466`
+import typings.activexExcel.activexExcelInts.`46`
+import typings.activexExcel.activexExcelInts.`470`
+import typings.activexExcel.activexExcelInts.`472`
+import typings.activexExcel.activexExcelInts.`473`
+import typings.activexExcel.activexExcelInts.`474`
+import typings.activexExcel.activexExcelInts.`475`
+import typings.activexExcel.activexExcelInts.`476`
+import typings.activexExcel.activexExcelInts.`478`
+import typings.activexExcel.activexExcelInts.`47`
+import typings.activexExcel.activexExcelInts.`481`
+import typings.activexExcel.activexExcelInts.`485`
+import typings.activexExcel.activexExcelInts.`493`
+import typings.activexExcel.activexExcelInts.`496`
+import typings.activexExcel.activexExcelInts.`504`
+import typings.activexExcel.activexExcelInts.`505`
+import typings.activexExcel.activexExcelInts.`506`
+import typings.activexExcel.activexExcelInts.`509`
+import typings.activexExcel.activexExcelInts.`525`
+import typings.activexExcel.activexExcelInts.`526`
+import typings.activexExcel.activexExcelInts.`527`
+import typings.activexExcel.activexExcelInts.`52`
+import typings.activexExcel.activexExcelInts.`530`
+import typings.activexExcel.activexExcelInts.`538`
+import typings.activexExcel.activexExcelInts.`53`
+import typings.activexExcel.activexExcelInts.`540`
+import typings.activexExcel.activexExcelInts.`541`
+import typings.activexExcel.activexExcelInts.`54`
+import typings.activexExcel.activexExcelInts.`557`
+import typings.activexExcel.activexExcelInts.`55`
+import typings.activexExcel.activexExcelInts.`567`
+import typings.activexExcel.activexExcelInts.`568`
+import typings.activexExcel.activexExcelInts.`570`
+import typings.activexExcel.activexExcelInts.`572`
+import typings.activexExcel.activexExcelInts.`583`
+import typings.activexExcel.activexExcelInts.`58`
+import typings.activexExcel.activexExcelInts.`596`
+import typings.activexExcel.activexExcelInts.`5`
+import typings.activexExcel.activexExcelInts.`61`
+import typings.activexExcel.activexExcelInts.`620`
+import typings.activexExcel.activexExcelInts.`62`
+import typings.activexExcel.activexExcelInts.`63`
+import typings.activexExcel.activexExcelInts.`647`
+import typings.activexExcel.activexExcelInts.`64`
+import typings.activexExcel.activexExcelInts.`653`
+import typings.activexExcel.activexExcelInts.`656`
+import typings.activexExcel.activexExcelInts.`666`
+import typings.activexExcel.activexExcelInts.`667`
+import typings.activexExcel.activexExcelInts.`67`
+import typings.activexExcel.activexExcelInts.`683`
+import typings.activexExcel.activexExcelInts.`684`
+import typings.activexExcel.activexExcelInts.`685`
+import typings.activexExcel.activexExcelInts.`686`
+import typings.activexExcel.activexExcelInts.`687`
+import typings.activexExcel.activexExcelInts.`689`
+import typings.activexExcel.activexExcelInts.`68`
+import typings.activexExcel.activexExcelInts.`69`
+import typings.activexExcel.activexExcelInts.`6`
+import typings.activexExcel.activexExcelInts.`709`
+import typings.activexExcel.activexExcelInts.`70`
+import typings.activexExcel.activexExcelInts.`71`
+import typings.activexExcel.activexExcelInts.`723`
+import typings.activexExcel.activexExcelInts.`724`
+import typings.activexExcel.activexExcelInts.`72`
+import typings.activexExcel.activexExcelInts.`731`
+import typings.activexExcel.activexExcelInts.`732`
+import typings.activexExcel.activexExcelInts.`73`
+import typings.activexExcel.activexExcelInts.`754`
+import typings.activexExcel.activexExcelInts.`76`
+import typings.activexExcel.activexExcelInts.`773`
+import typings.activexExcel.activexExcelInts.`78`
+import typings.activexExcel.activexExcelInts.`796`
+import typings.activexExcel.activexExcelInts.`7`
+import typings.activexExcel.activexExcelInts.`80`
+import typings.activexExcel.activexExcelInts.`832`
+import typings.activexExcel.activexExcelInts.`834`
+import typings.activexExcel.activexExcelInts.`84`
+import typings.activexExcel.activexExcelInts.`85`
+import typings.activexExcel.activexExcelInts.`862`
+import typings.activexExcel.activexExcelInts.`86`
+import typings.activexExcel.activexExcelInts.`87`
+import typings.activexExcel.activexExcelInts.`88`
+import typings.activexExcel.activexExcelInts.`89`
+import typings.activexExcel.activexExcelInts.`8`
+import typings.activexExcel.activexExcelInts.`91`
+import typings.activexExcel.activexExcelInts.`94`
+import typings.activexExcel.activexExcelInts.`95`
+import typings.activexExcel.activexExcelInts.`977`
+import typings.activexExcel.activexExcelInts.`978`
+import typings.activexExcel.activexExcelInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`541`
-  - typings.activexExcel.activexExcelNumbers.`538`
-  - typings.activexExcel.activexExcelNumbers.`103`
-  - typings.activexExcel.activexExcelNumbers.`476`
-  - typings.activexExcel.activexExcelNumbers.`390`
-  - typings.activexExcel.activexExcelNumbers.`321`
-  - typings.activexExcel.activexExcelNumbers.`43`
-  - typings.activexExcel.activexExcelNumbers.`133`
-  - typings.activexExcel.activexExcelNumbers.`212`
-  - typings.activexExcel.activexExcelNumbers.`170`
-  - typings.activexExcel.activexExcelNumbers.`171`
-  - typings.activexExcel.activexExcelNumbers.`12`
-  - typings.activexExcel.activexExcelNumbers.`213`
-  - typings.activexExcel.activexExcelNumbers.`293`
-  - typings.activexExcel.activexExcelNumbers.`80`
-  - typings.activexExcel.activexExcelNumbers.`323`
-  - typings.activexExcel.activexExcelNumbers.`485`
-  - typings.activexExcel.activexExcelNumbers.`78`
-  - typings.activexExcel.activexExcelNumbers.`45`
-  - typings.activexExcel.activexExcelNumbers.`32`
-  - typings.activexExcel.activexExcelNumbers.`46`
-  - typings.activexExcel.activexExcelNumbers.`166`
-  - typings.activexExcel.activexExcelNumbers.`392`
-  - typings.activexExcel.activexExcelNumbers.`527`
-  - typings.activexExcel.activexExcelNumbers.`724`
-  - typings.activexExcel.activexExcelNumbers.`505`
-  - typings.activexExcel.activexExcelNumbers.`506`
-  - typings.activexExcel.activexExcelNumbers.`540`
-  - typings.activexExcel.activexExcelNumbers.`350`
-  - typings.activexExcel.activexExcelNumbers.`526`
-  - typings.activexExcel.activexExcelNumbers.`288`
-  - typings.activexExcel.activexExcelNumbers.`435`
-  - typings.activexExcel.activexExcelNumbers.`52`
-  - typings.activexExcel.activexExcelNumbers.`161`
-  - typings.activexExcel.activexExcelNumbers.`47`
-  - typings.activexExcel.activexExcelNumbers.`73`
-  - typings.activexExcel.activexExcelNumbers.`583`
-  - typings.activexExcel.activexExcelNumbers.`191`
-  - typings.activexExcel.activexExcelNumbers.`147`
-  - typings.activexExcel.activexExcelNumbers.`108`
-  - typings.activexExcel.activexExcelNumbers.`796`
-  - typings.activexExcel.activexExcelNumbers.`62`
-  - typings.activexExcel.activexExcelNumbers.`217`
-  - typings.activexExcel.activexExcelNumbers.`276`
-  - typings.activexExcel.activexExcelNumbers.`493`
-  - typings.activexExcel.activexExcelNumbers.`36`
-  - typings.activexExcel.activexExcelNumbers.`379`
-  - typings.activexExcel.activexExcelNumbers.`723`
-  - typings.activexExcel.activexExcelNumbers.`40`
-  - typings.activexExcel.activexExcelNumbers.`525`
-  - typings.activexExcel.activexExcelNumbers.`61`
-  - typings.activexExcel.activexExcelNumbers.`229`
-  - typings.activexExcel.activexExcelNumbers.`111`
-  - typings.activexExcel.activexExcelNumbers.`110`
-  - typings.activexExcel.activexExcelNumbers.`203`
-  - typings.activexExcel.activexExcelNumbers.`27`
-  - typings.activexExcel.activexExcelNumbers.`862`
-  - typings.activexExcel.activexExcelNumbers.`438`
-  - typings.activexExcel.activexExcelNumbers.`223`
-  - typings.activexExcel.activexExcelNumbers.`54`
-  - typings.activexExcel.activexExcelNumbers.`251`
-  - typings.activexExcel.activexExcelNumbers.`228`
-  - typings.activexExcel.activexExcelNumbers.`463`
-  - typings.activexExcel.activexExcelNumbers.`464`
-  - typings.activexExcel.activexExcelNumbers.`732`
-  - typings.activexExcel.activexExcelNumbers.`709`
-  - typings.activexExcel.activexExcelNumbers.`530`
-  - typings.activexExcel.activexExcelNumbers.`35`
-  - typings.activexExcel.activexExcelNumbers.`6`
-  - typings.activexExcel.activexExcelNumbers.`481`
-  - typings.activexExcel.activexExcelNumbers.`200`
-  - typings.activexExcel.activexExcelNumbers.`301`
-  - typings.activexExcel.activexExcelNumbers.`447`
-  - typings.activexExcel.activexExcelNumbers.`370`
-  - typings.activexExcel.activexExcelNumbers.`475`
-  - typings.activexExcel.activexExcelNumbers.`26`
-  - typings.activexExcel.activexExcelNumbers.`381`
-  - typings.activexExcel.activexExcelNumbers.`269`
-  - typings.activexExcel.activexExcelNumbers.`465`
-  - typings.activexExcel.activexExcelNumbers.`423`
-  - typings.activexExcel.activexExcelNumbers.`150`
-  - typings.activexExcel.activexExcelNumbers.`88`
-  - typings.activexExcel.activexExcelNumbers.`225`
-  - typings.activexExcel.activexExcelNumbers.`128`
-  - typings.activexExcel.activexExcelNumbers.`42`
-  - typings.activexExcel.activexExcelNumbers.`226`
-  - typings.activexExcel.activexExcelNumbers.`129`
-  - typings.activexExcel.activexExcelNumbers.`89`
-  - typings.activexExcel.activexExcelNumbers.`64`
-  - typings.activexExcel.activexExcelNumbers.`63`
-  - typings.activexExcel.activexExcelNumbers.`130`
-  - typings.activexExcel.activexExcelNumbers.`450`
-  - typings.activexExcel.activexExcelNumbers.`193`
-  - typings.activexExcel.activexExcelNumbers.`272`
-  - typings.activexExcel.activexExcelNumbers.`194`
-  - typings.activexExcel.activexExcelNumbers.`195`
-  - typings.activexExcel.activexExcelNumbers.`196`
-  - typings.activexExcel.activexExcelNumbers.`273`
-  - typings.activexExcel.activexExcelNumbers.`67`
-  - typings.activexExcel.activexExcelNumbers.`68`
-  - typings.activexExcel.activexExcelNumbers.`69`
-  - typings.activexExcel.activexExcelNumbers.`388`
-  - typings.activexExcel.activexExcelNumbers.`344`
-  - typings.activexExcel.activexExcelNumbers.`70`
-  - typings.activexExcel.activexExcelNumbers.`71`
-  - typings.activexExcel.activexExcelNumbers.`249`
-  - typings.activexExcel.activexExcelNumbers.`72`
-  - typings.activexExcel.activexExcelNumbers.`198`
-  - typings.activexExcel.activexExcelNumbers.`76`
-  - typings.activexExcel.activexExcelNumbers.`666`
-  - typings.activexExcel.activexExcelNumbers.`55`
-  - typings.activexExcel.activexExcelNumbers.`596`
-  - typings.activexExcel.activexExcelNumbers.`496`
-  - typings.activexExcel.activexExcelNumbers.`259`
-  - typings.activexExcel.activexExcelNumbers.`342`
-  - typings.activexExcel.activexExcelNumbers.`380`
-  - typings.activexExcel.activexExcelNumbers.`436`
-  - typings.activexExcel.activexExcelNumbers.`437`
-  - typings.activexExcel.activexExcelNumbers.`382`
-  - typings.activexExcel.activexExcelNumbers.`470`
-  - typings.activexExcel.activexExcelNumbers.`339`
-  - typings.activexExcel.activexExcelNumbers.`378`
-  - typings.activexExcel.activexExcelNumbers.`85`
-  - typings.activexExcel.activexExcelNumbers.`185`
-  - typings.activexExcel.activexExcelNumbers.`322`
-  - typings.activexExcel.activexExcelNumbers.`262`
-  - typings.activexExcel.activexExcelNumbers.`834`
-  - typings.activexExcel.activexExcelNumbers.`977`
-  - typings.activexExcel.activexExcelNumbers.`119`
-  - typings.activexExcel.activexExcelNumbers.`978`
-  - typings.activexExcel.activexExcelNumbers.`667`
-  - typings.activexExcel.activexExcelNumbers.`154`
-  - typings.activexExcel.activexExcelNumbers.`207`
-  - typings.activexExcel.activexExcelNumbers.`214`
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`2`
-  - typings.activexExcel.activexExcelNumbers.`188`
-  - typings.activexExcel.activexExcelNumbers.`441`
-  - typings.activexExcel.activexExcelNumbers.`318`
-  - typings.activexExcel.activexExcelNumbers.`325`
-  - typings.activexExcel.activexExcelNumbers.`319`
-  - typings.activexExcel.activexExcelNumbers.`356`
-  - typings.activexExcel.activexExcelNumbers.`458`
-  - typings.activexExcel.activexExcelNumbers.`647`
-  - typings.activexExcel.activexExcelNumbers.`355`
-  - typings.activexExcel.activexExcelNumbers.`320`
-  - typings.activexExcel.activexExcelNumbers.`142`
-  - typings.activexExcel.activexExcelNumbers.`86`
-  - typings.activexExcel.activexExcelNumbers.`186`
-  - typings.activexExcel.activexExcelNumbers.`7`
-  - typings.activexExcel.activexExcelNumbers.`91`
-  - typings.activexExcel.activexExcelNumbers.`58`
-  - typings.activexExcel.activexExcelNumbers.`53`
-  - typings.activexExcel.activexExcelNumbers.`84`
-  - typings.activexExcel.activexExcelNumbers.`832`
-  - typings.activexExcel.activexExcelNumbers.`656`
-  - typings.activexExcel.activexExcelNumbers.`570`
-  - typings.activexExcel.activexExcelNumbers.`572`
-  - typings.activexExcel.activexExcelNumbers.`689`
-  - typings.activexExcel.activexExcelNumbers.`433`
-  - typings.activexExcel.activexExcelNumbers.`313`
-  - typings.activexExcel.activexExcelNumbers.`434`
-  - typings.activexExcel.activexExcelNumbers.`421`
-  - typings.activexExcel.activexExcelNumbers.`568`
-  - typings.activexExcel.activexExcelNumbers.`567`
-  - typings.activexExcel.activexExcelNumbers.`1183`
-  - typings.activexExcel.activexExcelNumbers.`1153`
-  - typings.activexExcel.activexExcelNumbers.`312`
-  - typings.activexExcel.activexExcelNumbers.`300`
-  - typings.activexExcel.activexExcelNumbers.`8`
-  - typings.activexExcel.activexExcelNumbers.`9`
-  - typings.activexExcel.activexExcelNumbers.`222`
-  - typings.activexExcel.activexExcelNumbers.`202`
-  - typings.activexExcel.activexExcelNumbers.`474`
-  - typings.activexExcel.activexExcelNumbers.`754`
-  - typings.activexExcel.activexExcelNumbers.`28`
-  - typings.activexExcel.activexExcelNumbers.`620`
-  - typings.activexExcel.activexExcelNumbers.`653`
-  - typings.activexExcel.activexExcelNumbers.`445`
-  - typings.activexExcel.activexExcelNumbers.`134`
-  - typings.activexExcel.activexExcelNumbers.`336`
-  - typings.activexExcel.activexExcelNumbers.`127`
-  - typings.activexExcel.activexExcelNumbers.`17`
-  - typings.activexExcel.activexExcelNumbers.`5`
-  - typings.activexExcel.activexExcelNumbers.`456`
-  - typings.activexExcel.activexExcelNumbers.`208`
-  - typings.activexExcel.activexExcelNumbers.`145`
-  - typings.activexExcel.activexExcelNumbers.`285`
-  - typings.activexExcel.activexExcelNumbers.`87`
-  - typings.activexExcel.activexExcelNumbers.`307`
-  - typings.activexExcel.activexExcelNumbers.`305`
-  - typings.activexExcel.activexExcelNumbers.`308`
-  - typings.activexExcel.activexExcelNumbers.`473`
-  - typings.activexExcel.activexExcelNumbers.`311`
-  - typings.activexExcel.activexExcelNumbers.`420`
-  - typings.activexExcel.activexExcelNumbers.`731`
-  - typings.activexExcel.activexExcelNumbers.`132`
-  - typings.activexExcel.activexExcelNumbers.`189`
-  - typings.activexExcel.activexExcelNumbers.`460`
-  - typings.activexExcel.activexExcelNumbers.`557`
-  - typings.activexExcel.activexExcelNumbers.`466`
-  - typings.activexExcel.activexExcelNumbers.`504`
-  - typings.activexExcel.activexExcelNumbers.`461`
-  - typings.activexExcel.activexExcelNumbers.`462`
-  - typings.activexExcel.activexExcelNumbers.`509`
-  - typings.activexExcel.activexExcelNumbers.`1109`
-  - typings.activexExcel.activexExcelNumbers.`1208`
-  - typings.activexExcel.activexExcelNumbers.`23`
-  - typings.activexExcel.activexExcelNumbers.`1108`
-  - typings.activexExcel.activexExcelNumbers.`1107`
-  - typings.activexExcel.activexExcelNumbers.`159`
-  - typings.activexExcel.activexExcelNumbers.`204`
-  - typings.activexExcel.activexExcelNumbers.`220`
-  - typings.activexExcel.activexExcelNumbers.`261`
-  - typings.activexExcel.activexExcelNumbers.`1182`
-  - typings.activexExcel.activexExcelNumbers.`1184`
-  - typings.activexExcel.activexExcelNumbers.`1179`
-  - typings.activexExcel.activexExcelNumbers.`39`
-  - typings.activexExcel.activexExcelNumbers.`192`
-  - typings.activexExcel.activexExcelNumbers.`1134`
-  - typings.activexExcel.activexExcelNumbers.`1133`
-  - typings.activexExcel.activexExcelNumbers.`1135`
-  - typings.activexExcel.activexExcelNumbers.`137`
-  - typings.activexExcel.activexExcelNumbers.`190`
-  - typings.activexExcel.activexExcelNumbers.`472`
-  - typings.activexExcel.activexExcelNumbers.`44`
-  - typings.activexExcel.activexExcelNumbers.`218`
-  - typings.activexExcel.activexExcelNumbers.`398`
-  - typings.activexExcel.activexExcelNumbers.`41`
-  - typings.activexExcel.activexExcelNumbers.`394`
-  - typings.activexExcel.activexExcelNumbers.`422`
-  - typings.activexExcel.activexExcelNumbers.`94`
-  - typings.activexExcel.activexExcelNumbers.`201`
-  - typings.activexExcel.activexExcelNumbers.`328`
-  - typings.activexExcel.activexExcelNumbers.`478`
-  - typings.activexExcel.activexExcelNumbers.`330`
-  - typings.activexExcel.activexExcelNumbers.`197`
-  - typings.activexExcel.activexExcelNumbers.`773`
-  - typings.activexExcel.activexExcelNumbers.`686`
-  - typings.activexExcel.activexExcelNumbers.`684`
-  - typings.activexExcel.activexExcelNumbers.`687`
-  - typings.activexExcel.activexExcelNumbers.`683`
-  - typings.activexExcel.activexExcelNumbers.`685`
-  - typings.activexExcel.activexExcelNumbers.`14`
-  - typings.activexExcel.activexExcelNumbers.`13`
-  - typings.activexExcel.activexExcelNumbers.`281`
-  - typings.activexExcel.activexExcelNumbers.`283`
-  - typings.activexExcel.activexExcelNumbers.`354`
-  - typings.activexExcel.activexExcelNumbers.`282`
-  - typings.activexExcel.activexExcelNumbers.`386`
-  - typings.activexExcel.activexExcelNumbers.`302`
-  - typings.activexExcel.activexExcelNumbers.`284`
-  - typings.activexExcel.activexExcelNumbers.`417`
-  - typings.activexExcel.activexExcelNumbers.`415`
-  - typings.activexExcel.activexExcelNumbers.`384`
-  - typings.activexExcel.activexExcelNumbers.`199`
-  - typings.activexExcel.activexExcelNumbers.`95`
-  - typings.activexExcel.activexExcelNumbers.`256`
+  - typings.activexExcel.activexExcelInts.`541`
+  - typings.activexExcel.activexExcelInts.`538`
+  - typings.activexExcel.activexExcelInts.`103`
+  - typings.activexExcel.activexExcelInts.`476`
+  - typings.activexExcel.activexExcelInts.`390`
+  - typings.activexExcel.activexExcelInts.`321`
+  - typings.activexExcel.activexExcelInts.`43`
+  - typings.activexExcel.activexExcelInts.`133`
+  - typings.activexExcel.activexExcelInts.`212`
+  - typings.activexExcel.activexExcelInts.`170`
+  - typings.activexExcel.activexExcelInts.`171`
+  - typings.activexExcel.activexExcelInts.`12`
+  - typings.activexExcel.activexExcelInts.`213`
+  - typings.activexExcel.activexExcelInts.`293`
+  - typings.activexExcel.activexExcelInts.`80`
+  - typings.activexExcel.activexExcelInts.`323`
+  - typings.activexExcel.activexExcelInts.`485`
+  - typings.activexExcel.activexExcelInts.`78`
+  - typings.activexExcel.activexExcelInts.`45`
+  - typings.activexExcel.activexExcelInts.`32`
+  - typings.activexExcel.activexExcelInts.`46`
+  - typings.activexExcel.activexExcelInts.`166`
+  - typings.activexExcel.activexExcelInts.`392`
+  - typings.activexExcel.activexExcelInts.`527`
+  - typings.activexExcel.activexExcelInts.`724`
+  - typings.activexExcel.activexExcelInts.`505`
+  - typings.activexExcel.activexExcelInts.`506`
+  - typings.activexExcel.activexExcelInts.`540`
+  - typings.activexExcel.activexExcelInts.`350`
+  - typings.activexExcel.activexExcelInts.`526`
+  - typings.activexExcel.activexExcelInts.`288`
+  - typings.activexExcel.activexExcelInts.`435`
+  - typings.activexExcel.activexExcelInts.`52`
+  - typings.activexExcel.activexExcelInts.`161`
+  - typings.activexExcel.activexExcelInts.`47`
+  - typings.activexExcel.activexExcelInts.`73`
+  - typings.activexExcel.activexExcelInts.`583`
+  - typings.activexExcel.activexExcelInts.`191`
+  - typings.activexExcel.activexExcelInts.`147`
+  - typings.activexExcel.activexExcelInts.`108`
+  - typings.activexExcel.activexExcelInts.`796`
+  - typings.activexExcel.activexExcelInts.`62`
+  - typings.activexExcel.activexExcelInts.`217`
+  - typings.activexExcel.activexExcelInts.`276`
+  - typings.activexExcel.activexExcelInts.`493`
+  - typings.activexExcel.activexExcelInts.`36`
+  - typings.activexExcel.activexExcelInts.`379`
+  - typings.activexExcel.activexExcelInts.`723`
+  - typings.activexExcel.activexExcelInts.`40`
+  - typings.activexExcel.activexExcelInts.`525`
+  - typings.activexExcel.activexExcelInts.`61`
+  - typings.activexExcel.activexExcelInts.`229`
+  - typings.activexExcel.activexExcelInts.`111`
+  - typings.activexExcel.activexExcelInts.`110`
+  - typings.activexExcel.activexExcelInts.`203`
+  - typings.activexExcel.activexExcelInts.`27`
+  - typings.activexExcel.activexExcelInts.`862`
+  - typings.activexExcel.activexExcelInts.`438`
+  - typings.activexExcel.activexExcelInts.`223`
+  - typings.activexExcel.activexExcelInts.`54`
+  - typings.activexExcel.activexExcelInts.`251`
+  - typings.activexExcel.activexExcelInts.`228`
+  - typings.activexExcel.activexExcelInts.`463`
+  - typings.activexExcel.activexExcelInts.`464`
+  - typings.activexExcel.activexExcelInts.`732`
+  - typings.activexExcel.activexExcelInts.`709`
+  - typings.activexExcel.activexExcelInts.`530`
+  - typings.activexExcel.activexExcelInts.`35`
+  - typings.activexExcel.activexExcelInts.`6`
+  - typings.activexExcel.activexExcelInts.`481`
+  - typings.activexExcel.activexExcelInts.`200`
+  - typings.activexExcel.activexExcelInts.`301`
+  - typings.activexExcel.activexExcelInts.`447`
+  - typings.activexExcel.activexExcelInts.`370`
+  - typings.activexExcel.activexExcelInts.`475`
+  - typings.activexExcel.activexExcelInts.`26`
+  - typings.activexExcel.activexExcelInts.`381`
+  - typings.activexExcel.activexExcelInts.`269`
+  - typings.activexExcel.activexExcelInts.`465`
+  - typings.activexExcel.activexExcelInts.`423`
+  - typings.activexExcel.activexExcelInts.`150`
+  - typings.activexExcel.activexExcelInts.`88`
+  - typings.activexExcel.activexExcelInts.`225`
+  - typings.activexExcel.activexExcelInts.`128`
+  - typings.activexExcel.activexExcelInts.`42`
+  - typings.activexExcel.activexExcelInts.`226`
+  - typings.activexExcel.activexExcelInts.`129`
+  - typings.activexExcel.activexExcelInts.`89`
+  - typings.activexExcel.activexExcelInts.`64`
+  - typings.activexExcel.activexExcelInts.`63`
+  - typings.activexExcel.activexExcelInts.`130`
+  - typings.activexExcel.activexExcelInts.`450`
+  - typings.activexExcel.activexExcelInts.`193`
+  - typings.activexExcel.activexExcelInts.`272`
+  - typings.activexExcel.activexExcelInts.`194`
+  - typings.activexExcel.activexExcelInts.`195`
+  - typings.activexExcel.activexExcelInts.`196`
+  - typings.activexExcel.activexExcelInts.`273`
+  - typings.activexExcel.activexExcelInts.`67`
+  - typings.activexExcel.activexExcelInts.`68`
+  - typings.activexExcel.activexExcelInts.`69`
+  - typings.activexExcel.activexExcelInts.`388`
+  - typings.activexExcel.activexExcelInts.`344`
+  - typings.activexExcel.activexExcelInts.`70`
+  - typings.activexExcel.activexExcelInts.`71`
+  - typings.activexExcel.activexExcelInts.`249`
+  - typings.activexExcel.activexExcelInts.`72`
+  - typings.activexExcel.activexExcelInts.`198`
+  - typings.activexExcel.activexExcelInts.`76`
+  - typings.activexExcel.activexExcelInts.`666`
+  - typings.activexExcel.activexExcelInts.`55`
+  - typings.activexExcel.activexExcelInts.`596`
+  - typings.activexExcel.activexExcelInts.`496`
+  - typings.activexExcel.activexExcelInts.`259`
+  - typings.activexExcel.activexExcelInts.`342`
+  - typings.activexExcel.activexExcelInts.`380`
+  - typings.activexExcel.activexExcelInts.`436`
+  - typings.activexExcel.activexExcelInts.`437`
+  - typings.activexExcel.activexExcelInts.`382`
+  - typings.activexExcel.activexExcelInts.`470`
+  - typings.activexExcel.activexExcelInts.`339`
+  - typings.activexExcel.activexExcelInts.`378`
+  - typings.activexExcel.activexExcelInts.`85`
+  - typings.activexExcel.activexExcelInts.`185`
+  - typings.activexExcel.activexExcelInts.`322`
+  - typings.activexExcel.activexExcelInts.`262`
+  - typings.activexExcel.activexExcelInts.`834`
+  - typings.activexExcel.activexExcelInts.`977`
+  - typings.activexExcel.activexExcelInts.`119`
+  - typings.activexExcel.activexExcelInts.`978`
+  - typings.activexExcel.activexExcelInts.`667`
+  - typings.activexExcel.activexExcelInts.`154`
+  - typings.activexExcel.activexExcelInts.`207`
+  - typings.activexExcel.activexExcelInts.`214`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`2`
+  - typings.activexExcel.activexExcelInts.`188`
+  - typings.activexExcel.activexExcelInts.`441`
+  - typings.activexExcel.activexExcelInts.`318`
+  - typings.activexExcel.activexExcelInts.`325`
+  - typings.activexExcel.activexExcelInts.`319`
+  - typings.activexExcel.activexExcelInts.`356`
+  - typings.activexExcel.activexExcelInts.`458`
+  - typings.activexExcel.activexExcelInts.`647`
+  - typings.activexExcel.activexExcelInts.`355`
+  - typings.activexExcel.activexExcelInts.`320`
+  - typings.activexExcel.activexExcelInts.`142`
+  - typings.activexExcel.activexExcelInts.`86`
+  - typings.activexExcel.activexExcelInts.`186`
+  - typings.activexExcel.activexExcelInts.`7`
+  - typings.activexExcel.activexExcelInts.`91`
+  - typings.activexExcel.activexExcelInts.`58`
+  - typings.activexExcel.activexExcelInts.`53`
+  - typings.activexExcel.activexExcelInts.`84`
+  - typings.activexExcel.activexExcelInts.`832`
+  - typings.activexExcel.activexExcelInts.`656`
+  - typings.activexExcel.activexExcelInts.`570`
+  - typings.activexExcel.activexExcelInts.`572`
+  - typings.activexExcel.activexExcelInts.`689`
+  - typings.activexExcel.activexExcelInts.`433`
+  - typings.activexExcel.activexExcelInts.`313`
+  - typings.activexExcel.activexExcelInts.`434`
+  - typings.activexExcel.activexExcelInts.`421`
+  - typings.activexExcel.activexExcelInts.`568`
+  - typings.activexExcel.activexExcelInts.`567`
+  - typings.activexExcel.activexExcelInts.`1183`
+  - typings.activexExcel.activexExcelInts.`1153`
+  - typings.activexExcel.activexExcelInts.`312`
+  - typings.activexExcel.activexExcelInts.`300`
+  - typings.activexExcel.activexExcelInts.`8`
+  - typings.activexExcel.activexExcelInts.`9`
+  - typings.activexExcel.activexExcelInts.`222`
+  - typings.activexExcel.activexExcelInts.`202`
+  - typings.activexExcel.activexExcelInts.`474`
+  - typings.activexExcel.activexExcelInts.`754`
+  - typings.activexExcel.activexExcelInts.`28`
+  - typings.activexExcel.activexExcelInts.`620`
+  - typings.activexExcel.activexExcelInts.`653`
+  - typings.activexExcel.activexExcelInts.`445`
+  - typings.activexExcel.activexExcelInts.`134`
+  - typings.activexExcel.activexExcelInts.`336`
+  - typings.activexExcel.activexExcelInts.`127`
+  - typings.activexExcel.activexExcelInts.`17`
+  - typings.activexExcel.activexExcelInts.`5`
+  - typings.activexExcel.activexExcelInts.`456`
+  - typings.activexExcel.activexExcelInts.`208`
+  - typings.activexExcel.activexExcelInts.`145`
+  - typings.activexExcel.activexExcelInts.`285`
+  - typings.activexExcel.activexExcelInts.`87`
+  - typings.activexExcel.activexExcelInts.`307`
+  - typings.activexExcel.activexExcelInts.`305`
+  - typings.activexExcel.activexExcelInts.`308`
+  - typings.activexExcel.activexExcelInts.`473`
+  - typings.activexExcel.activexExcelInts.`311`
+  - typings.activexExcel.activexExcelInts.`420`
+  - typings.activexExcel.activexExcelInts.`731`
+  - typings.activexExcel.activexExcelInts.`132`
+  - typings.activexExcel.activexExcelInts.`189`
+  - typings.activexExcel.activexExcelInts.`460`
+  - typings.activexExcel.activexExcelInts.`557`
+  - typings.activexExcel.activexExcelInts.`466`
+  - typings.activexExcel.activexExcelInts.`504`
+  - typings.activexExcel.activexExcelInts.`461`
+  - typings.activexExcel.activexExcelInts.`462`
+  - typings.activexExcel.activexExcelInts.`509`
+  - typings.activexExcel.activexExcelInts.`1109`
+  - typings.activexExcel.activexExcelInts.`1208`
+  - typings.activexExcel.activexExcelInts.`23`
+  - typings.activexExcel.activexExcelInts.`1108`
+  - typings.activexExcel.activexExcelInts.`1107`
+  - typings.activexExcel.activexExcelInts.`159`
+  - typings.activexExcel.activexExcelInts.`204`
+  - typings.activexExcel.activexExcelInts.`220`
+  - typings.activexExcel.activexExcelInts.`261`
+  - typings.activexExcel.activexExcelInts.`1182`
+  - typings.activexExcel.activexExcelInts.`1184`
+  - typings.activexExcel.activexExcelInts.`1179`
+  - typings.activexExcel.activexExcelInts.`39`
+  - typings.activexExcel.activexExcelInts.`192`
+  - typings.activexExcel.activexExcelInts.`1134`
+  - typings.activexExcel.activexExcelInts.`1133`
+  - typings.activexExcel.activexExcelInts.`1135`
+  - typings.activexExcel.activexExcelInts.`137`
+  - typings.activexExcel.activexExcelInts.`190`
+  - typings.activexExcel.activexExcelInts.`472`
+  - typings.activexExcel.activexExcelInts.`44`
+  - typings.activexExcel.activexExcelInts.`218`
+  - typings.activexExcel.activexExcelInts.`398`
+  - typings.activexExcel.activexExcelInts.`41`
+  - typings.activexExcel.activexExcelInts.`394`
+  - typings.activexExcel.activexExcelInts.`422`
+  - typings.activexExcel.activexExcelInts.`94`
+  - typings.activexExcel.activexExcelInts.`201`
+  - typings.activexExcel.activexExcelInts.`328`
+  - typings.activexExcel.activexExcelInts.`478`
+  - typings.activexExcel.activexExcelInts.`330`
+  - typings.activexExcel.activexExcelInts.`197`
+  - typings.activexExcel.activexExcelInts.`773`
+  - typings.activexExcel.activexExcelInts.`686`
+  - typings.activexExcel.activexExcelInts.`684`
+  - typings.activexExcel.activexExcelInts.`687`
+  - typings.activexExcel.activexExcelInts.`683`
+  - typings.activexExcel.activexExcelInts.`685`
+  - typings.activexExcel.activexExcelInts.`14`
+  - typings.activexExcel.activexExcelInts.`13`
+  - typings.activexExcel.activexExcelInts.`281`
+  - typings.activexExcel.activexExcelInts.`283`
+  - typings.activexExcel.activexExcelInts.`354`
+  - typings.activexExcel.activexExcelInts.`282`
+  - typings.activexExcel.activexExcelInts.`386`
+  - typings.activexExcel.activexExcelInts.`302`
+  - typings.activexExcel.activexExcelInts.`284`
+  - typings.activexExcel.activexExcelInts.`417`
+  - typings.activexExcel.activexExcelInts.`415`
+  - typings.activexExcel.activexExcelInts.`384`
+  - typings.activexExcel.activexExcelInts.`199`
+  - typings.activexExcel.activexExcelInts.`95`
+  - typings.activexExcel.activexExcelInts.`256`
 */
 trait XlBuiltInDialog extends StObject
 object XlBuiltInDialog {

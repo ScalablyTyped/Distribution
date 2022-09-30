@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.0.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.Appearance")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.Appearance")
 @js.native
-class Appearance protected () extends Element[IModel] {
+open class Appearance protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -70,7 +70,7 @@ class Appearance protected () extends Element[IModel] {
 }
 object Appearance {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Appearance")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Appearance")
   @js.native
   val ^ : js.Any = js.native
   
@@ -215,13 +215,13 @@ object Appearance {
   inline def createInWidgetUnderAppearance(container: Widget): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Appearance.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Appearance.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Appearance.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Appearance.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

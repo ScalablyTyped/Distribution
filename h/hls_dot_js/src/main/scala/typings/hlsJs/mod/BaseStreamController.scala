@@ -1,8 +1,7 @@
 package typings.hlsJs.mod
 
-import typings.hlsJs.anon.End
 import typings.hlsJs.anon.Frag
-import typings.hlsJs.hlsJsNumbers.`0`
+import typings.hlsJs.hlsJsInts.`0`
 import typings.hlsJs.mod.Events.KEY_LOADED
 import typings.hlsJs.mod.Events.LEVEL_SWITCHING
 import typings.hlsJs.mod.Events.MEDIA_ATTACHED
@@ -117,8 +116,8 @@ trait BaseStreamController
   
   /* protected */ def getFragmentAtPosition(bufferEnd: Double, end: Double, levelDetails: LevelDetails): Fragment | Null = js.native
   
-  /* protected */ def getFwdBufferInfo(bufferable: Null, `type`: PlaylistLevelType): End | Null = js.native
-  /* protected */ def getFwdBufferInfo(bufferable: Bufferable, `type`: PlaylistLevelType): End | Null = js.native
+  /* protected */ def getFwdBufferInfo(bufferable: Null, `type`: PlaylistLevelType): BufferInfo | Null = js.native
+  /* protected */ def getFwdBufferInfo(bufferable: Bufferable, `type`: PlaylistLevelType): BufferInfo | Null = js.native
   
   /* protected */ def getInitialLiveFragment(levelDetails: LevelDetails, fragments: js.Array[Fragment]): Fragment | Null = js.native
   

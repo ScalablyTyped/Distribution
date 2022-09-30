@@ -1,9 +1,9 @@
 package typings.fsTreeDiff
 
 import typings.fsTreeDiff.entryMod.default
-import typings.fsTreeDiff.fsTreeDiffNumbers.`-1`
-import typings.fsTreeDiff.fsTreeDiffNumbers.`0`
-import typings.fsTreeDiff.fsTreeDiffNumbers.`1`
+import typings.fsTreeDiff.fsTreeDiffInts.`-1`
+import typings.fsTreeDiff.fsTreeDiffInts.`0`
+import typings.fsTreeDiff.fsTreeDiffInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

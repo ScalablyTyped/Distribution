@@ -9,7 +9,7 @@ object configParserMod {
   
   @JSImport("protractor/built/configParser", "ConfigParser")
   @js.native
-  class ConfigParser () extends StObject {
+  open class ConfigParser () extends StObject {
     
     /**
       * Public function specialized towards merging in config from argv
@@ -17,7 +17,7 @@ object configParserMod {
       * @public
       * @param {Object} argv
       */
-    def addConfig(argv: js.Any): ConfigParser = js.native
+    def addConfig(argv: Any): ConfigParser = js.native
     
     /**
       * Add the options in the parameter config to this runner instance.
@@ -26,7 +26,7 @@ object configParserMod {
       * @param {Object} additionalConfig
       * @param {string} relativeTo the file path to resolve paths against
       */
-    /* private */ def addConfig_(additionalConfig: js.Any, relativeTo: js.Any): js.Any = js.native
+    /* private */ def addConfig_(additionalConfig: Any, relativeTo: Any): Any = js.native
     
     /**
       * Public function specialized towards merging in a file's config
@@ -36,7 +36,7 @@ object configParserMod {
       */
     def addFileConfig(filename: String): ConfigParser = js.native
     
-    /* private */ var config_ : js.Any = js.native
+    /* private */ var config_ : Any = js.native
     
     /**
       * Public getter for the final, computed config object

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.Title")
 @js.native
-class Title protected ()
+open class Title protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.Title {
   def this(
     model: AbstractModel,

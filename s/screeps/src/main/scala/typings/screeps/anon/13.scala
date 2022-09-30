@@ -1,6 +1,6 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsNumbers.`0.3`
+import typings.screeps.screepsDoubles.`0.3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait `13` extends StObject {
 object `13` {
   
   inline def apply(): `13` = {
-    val __obj = js.Dynamic.literal(damage = 0.3)
+    val __obj = js.Dynamic.literal(damage = 0.3d)
     __obj.asInstanceOf[`13`]
   }
   

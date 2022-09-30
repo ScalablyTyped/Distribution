@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mapMod {
   
-  @JSImport("ow/dist/source/predicates/map", "MapPredicate")
+  @JSImport("ow/dist/predicates/map", "MapPredicate")
   @js.native
   /**
     @hidden
     */
-  class MapPredicate[T1, T2] () extends Predicate[Map[T1, T2]] {
+  open class MapPredicate[T1, T2] () extends Predicate[Map[T1, T2]] {
     def this(options: PredicateOptions) = this()
     
     /**

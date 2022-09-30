@@ -23,11 +23,11 @@ trait PostBody extends StObject {
   /**
     * The post data to be sent to the new window.
     */
-  var data: js.Array[PostData]
+  var data: js.Array[UploadRawData | UploadFile]
 }
 object PostBody {
   
-  inline def apply(contentType: String, data: js.Array[PostData]): PostBody = {
+  inline def apply(contentType: String, data: js.Array[UploadRawData | UploadFile]): PostBody = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostBody]
   }
@@ -40,8 +40,8 @@ object PostBody {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Array[PostData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[UploadRawData | UploadFile]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: PostData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (UploadRawData | UploadFile)*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

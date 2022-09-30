@@ -4,8 +4,8 @@ import typings.reactVirtualized.esMasonryMod.emptyObject
 import typings.reactVirtualized.esMasonryMod.identity
 import typings.reactVirtualized.esMasonryMod.noop
 import typings.reactVirtualized.reactVirtualizedBooleans.`false`
-import typings.reactVirtualized.reactVirtualizedNumbers.`0`
-import typings.reactVirtualized.reactVirtualizedNumbers.`20`
+import typings.reactVirtualized.reactVirtualizedInts.`0`
+import typings.reactVirtualized.reactVirtualizedInts.`20`
 import typings.reactVirtualized.reactVirtualizedStrings.grid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

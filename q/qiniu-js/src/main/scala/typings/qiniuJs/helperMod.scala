@@ -60,7 +60,7 @@ object helperMod {
   
   inline def removeLocalFileInfo(localKey: String, logger: default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeLocalFileInfo")(localKey.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def request[T](url: String, options: RequestOptions): Response[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response[T]]
+  inline def request[T](url: String, options: RequestOptions): js.Promise[ResponseSuccess[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[T]]]
   
   inline def setLocalFileInfo(localKey: String, info: LocalInfo, logger: default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLocalFileInfo")(localKey.asInstanceOf[js.Any], info.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

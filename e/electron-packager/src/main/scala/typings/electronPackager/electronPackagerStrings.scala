@@ -19,6 +19,10 @@ object electronPackagerStrings {
   inline def arm64: arm64 = "arm64".asInstanceOf[arm64]
   
   @js.native
+  sealed trait arm64AppPath extends StObject
+  inline def arm64AppPath: arm64AppPath = "arm64AppPath".asInstanceOf[arm64AppPath]
+  
+  @js.native
   sealed trait armv7l
     extends StObject
        with OfficialArch
@@ -35,6 +39,10 @@ object electronPackagerStrings {
   inline def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
+  sealed trait force extends StObject
+  inline def force: force = "force".asInstanceOf[force]
+  
+  @js.native
   sealed trait highestAvailable extends StObject
   inline def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
   
@@ -43,6 +51,10 @@ object electronPackagerStrings {
     extends StObject
        with OfficialArch
   inline def ia32: ia32 = "ia32".asInstanceOf[ia32]
+  
+  @js.native
+  sealed trait legacy extends StObject
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
   sealed trait linux
@@ -63,6 +75,14 @@ object electronPackagerStrings {
   inline def mips64el: mips64el = "mips64el".asInstanceOf[mips64el]
   
   @js.native
+  sealed trait notarytool extends StObject
+  inline def notarytool: notarytool = "notarytool".asInstanceOf[notarytool]
+  
+  @js.native
+  sealed trait outAppPath extends StObject
+  inline def outAppPath: outAppPath = "outAppPath".asInstanceOf[outAppPath]
+  
+  @js.native
   sealed trait requireAdministrator extends StObject
   inline def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
   
@@ -77,4 +97,8 @@ object electronPackagerStrings {
     extends StObject
        with OfficialArch
   inline def x64: x64 = "x64".asInstanceOf[x64]
+  
+  @js.native
+  sealed trait x64AppPath extends StObject
+  inline def x64AppPath: x64AppPath = "x64AppPath".asInstanceOf[x64AppPath]
 }

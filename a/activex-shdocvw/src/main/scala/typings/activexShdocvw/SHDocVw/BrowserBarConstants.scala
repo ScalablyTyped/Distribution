@@ -1,8 +1,8 @@
 package typings.activexShdocvw.SHDocVw
 
-import typings.activexShdocvw.activexShdocvwNumbers.`0x0009`
-import typings.activexShdocvw.activexShdocvwNumbers.`0x000A`
-import typings.activexShdocvw.activexShdocvwNumbers.`0x000B`
+import typings.activexShdocvw.activexShdocvwInts.`0x0009`
+import typings.activexShdocvw.activexShdocvwInts.`0x000A`
+import typings.activexShdocvw.activexShdocvwInts.`0x000B`
 import typings.activexShdocvw.activexShdocvwStrings.`Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket`
 import typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
 import typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShdocvw.activexShdocvwNumbers.`0x0009`
-  - typings.activexShdocvw.activexShdocvwNumbers.`0x000A`
-  - typings.activexShdocvw.activexShdocvwNumbers.`0x000B`
+  - typings.activexShdocvw.activexShdocvwInts.`0x0009`
+  - typings.activexShdocvw.activexShdocvwInts.`0x000A`
+  - typings.activexShdocvw.activexShdocvwInts.`0x000B`
   - typings.activexShdocvw.activexShdocvwStrings.`Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket`
   - typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
   - typings.activexShdocvw.activexShdocvwStrings.`LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`

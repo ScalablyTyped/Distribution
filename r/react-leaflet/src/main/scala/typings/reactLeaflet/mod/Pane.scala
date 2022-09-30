@@ -9,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "Pane")
 @js.native
-class Pane[P /* <: PaneProps */, S /* <: PaneState */] protected ()
-  extends Component[P, S, js.Any] {
+open class Pane[P /* <: PaneProps */, S /* <: PaneState */] protected () extends Component[P, S, Any] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   def createPane(props: P): Unit = js.native
   

@@ -2,85 +2,85 @@ package typings.parse5
 
 import typings.parse5.errorCodesMod.ParserError
 import typings.parse5.errorCodesMod.ParserErrorHandler
-import typings.parse5.parse5Numbers.`0`
-import typings.parse5.parse5Numbers.`10`
-import typings.parse5.parse5Numbers.`11`
-import typings.parse5.parse5Numbers.`12`
-import typings.parse5.parse5Numbers.`13`
-import typings.parse5.parse5Numbers.`14`
-import typings.parse5.parse5Numbers.`15`
-import typings.parse5.parse5Numbers.`16`
-import typings.parse5.parse5Numbers.`17`
-import typings.parse5.parse5Numbers.`18`
-import typings.parse5.parse5Numbers.`19`
-import typings.parse5.parse5Numbers.`1`
-import typings.parse5.parse5Numbers.`20`
-import typings.parse5.parse5Numbers.`21`
-import typings.parse5.parse5Numbers.`22`
-import typings.parse5.parse5Numbers.`23`
-import typings.parse5.parse5Numbers.`24`
-import typings.parse5.parse5Numbers.`25`
-import typings.parse5.parse5Numbers.`26`
-import typings.parse5.parse5Numbers.`27`
-import typings.parse5.parse5Numbers.`28`
-import typings.parse5.parse5Numbers.`29`
-import typings.parse5.parse5Numbers.`2`
-import typings.parse5.parse5Numbers.`30`
-import typings.parse5.parse5Numbers.`31`
-import typings.parse5.parse5Numbers.`32`
-import typings.parse5.parse5Numbers.`33`
-import typings.parse5.parse5Numbers.`34`
-import typings.parse5.parse5Numbers.`35`
-import typings.parse5.parse5Numbers.`36`
-import typings.parse5.parse5Numbers.`37`
-import typings.parse5.parse5Numbers.`38`
-import typings.parse5.parse5Numbers.`39`
-import typings.parse5.parse5Numbers.`3`
-import typings.parse5.parse5Numbers.`40`
-import typings.parse5.parse5Numbers.`41`
-import typings.parse5.parse5Numbers.`42`
-import typings.parse5.parse5Numbers.`43`
-import typings.parse5.parse5Numbers.`44`
-import typings.parse5.parse5Numbers.`45`
-import typings.parse5.parse5Numbers.`46`
-import typings.parse5.parse5Numbers.`47`
-import typings.parse5.parse5Numbers.`48`
-import typings.parse5.parse5Numbers.`49`
-import typings.parse5.parse5Numbers.`4`
-import typings.parse5.parse5Numbers.`50`
-import typings.parse5.parse5Numbers.`51`
-import typings.parse5.parse5Numbers.`52`
-import typings.parse5.parse5Numbers.`53`
-import typings.parse5.parse5Numbers.`54`
-import typings.parse5.parse5Numbers.`55`
-import typings.parse5.parse5Numbers.`56`
-import typings.parse5.parse5Numbers.`57`
-import typings.parse5.parse5Numbers.`58`
-import typings.parse5.parse5Numbers.`59`
-import typings.parse5.parse5Numbers.`5`
-import typings.parse5.parse5Numbers.`60`
-import typings.parse5.parse5Numbers.`61`
-import typings.parse5.parse5Numbers.`62`
-import typings.parse5.parse5Numbers.`63`
-import typings.parse5.parse5Numbers.`64`
-import typings.parse5.parse5Numbers.`65`
-import typings.parse5.parse5Numbers.`66`
-import typings.parse5.parse5Numbers.`67`
-import typings.parse5.parse5Numbers.`68`
-import typings.parse5.parse5Numbers.`69`
-import typings.parse5.parse5Numbers.`6`
-import typings.parse5.parse5Numbers.`70`
-import typings.parse5.parse5Numbers.`71`
-import typings.parse5.parse5Numbers.`72`
-import typings.parse5.parse5Numbers.`73`
-import typings.parse5.parse5Numbers.`74`
-import typings.parse5.parse5Numbers.`75`
-import typings.parse5.parse5Numbers.`76`
-import typings.parse5.parse5Numbers.`77`
-import typings.parse5.parse5Numbers.`78`
-import typings.parse5.parse5Numbers.`7`
-import typings.parse5.parse5Numbers.`8`
-import typings.parse5.parse5Numbers.`9`
+import typings.parse5.parse5Ints.`0`
+import typings.parse5.parse5Ints.`10`
+import typings.parse5.parse5Ints.`11`
+import typings.parse5.parse5Ints.`12`
+import typings.parse5.parse5Ints.`13`
+import typings.parse5.parse5Ints.`14`
+import typings.parse5.parse5Ints.`15`
+import typings.parse5.parse5Ints.`16`
+import typings.parse5.parse5Ints.`17`
+import typings.parse5.parse5Ints.`18`
+import typings.parse5.parse5Ints.`19`
+import typings.parse5.parse5Ints.`1`
+import typings.parse5.parse5Ints.`20`
+import typings.parse5.parse5Ints.`21`
+import typings.parse5.parse5Ints.`22`
+import typings.parse5.parse5Ints.`23`
+import typings.parse5.parse5Ints.`24`
+import typings.parse5.parse5Ints.`25`
+import typings.parse5.parse5Ints.`26`
+import typings.parse5.parse5Ints.`27`
+import typings.parse5.parse5Ints.`28`
+import typings.parse5.parse5Ints.`29`
+import typings.parse5.parse5Ints.`2`
+import typings.parse5.parse5Ints.`30`
+import typings.parse5.parse5Ints.`31`
+import typings.parse5.parse5Ints.`32`
+import typings.parse5.parse5Ints.`33`
+import typings.parse5.parse5Ints.`34`
+import typings.parse5.parse5Ints.`35`
+import typings.parse5.parse5Ints.`36`
+import typings.parse5.parse5Ints.`37`
+import typings.parse5.parse5Ints.`38`
+import typings.parse5.parse5Ints.`39`
+import typings.parse5.parse5Ints.`3`
+import typings.parse5.parse5Ints.`40`
+import typings.parse5.parse5Ints.`41`
+import typings.parse5.parse5Ints.`42`
+import typings.parse5.parse5Ints.`43`
+import typings.parse5.parse5Ints.`44`
+import typings.parse5.parse5Ints.`45`
+import typings.parse5.parse5Ints.`46`
+import typings.parse5.parse5Ints.`47`
+import typings.parse5.parse5Ints.`48`
+import typings.parse5.parse5Ints.`49`
+import typings.parse5.parse5Ints.`4`
+import typings.parse5.parse5Ints.`50`
+import typings.parse5.parse5Ints.`51`
+import typings.parse5.parse5Ints.`52`
+import typings.parse5.parse5Ints.`53`
+import typings.parse5.parse5Ints.`54`
+import typings.parse5.parse5Ints.`55`
+import typings.parse5.parse5Ints.`56`
+import typings.parse5.parse5Ints.`57`
+import typings.parse5.parse5Ints.`58`
+import typings.parse5.parse5Ints.`59`
+import typings.parse5.parse5Ints.`5`
+import typings.parse5.parse5Ints.`60`
+import typings.parse5.parse5Ints.`61`
+import typings.parse5.parse5Ints.`62`
+import typings.parse5.parse5Ints.`63`
+import typings.parse5.parse5Ints.`64`
+import typings.parse5.parse5Ints.`65`
+import typings.parse5.parse5Ints.`66`
+import typings.parse5.parse5Ints.`67`
+import typings.parse5.parse5Ints.`68`
+import typings.parse5.parse5Ints.`69`
+import typings.parse5.parse5Ints.`6`
+import typings.parse5.parse5Ints.`70`
+import typings.parse5.parse5Ints.`71`
+import typings.parse5.parse5Ints.`72`
+import typings.parse5.parse5Ints.`73`
+import typings.parse5.parse5Ints.`74`
+import typings.parse5.parse5Ints.`75`
+import typings.parse5.parse5Ints.`76`
+import typings.parse5.parse5Ints.`77`
+import typings.parse5.parse5Ints.`78`
+import typings.parse5.parse5Ints.`7`
+import typings.parse5.parse5Ints.`8`
+import typings.parse5.parse5Ints.`9`
 import typings.parse5.preprocessorMod.Preprocessor
 import typings.parse5.tokenMod.CharacterToken
 import typings.parse5.tokenMod.CommentToken
@@ -396,85 +396,85 @@ object tokenizerMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.parse5.parse5Numbers.`0`
-    - typings.parse5.parse5Numbers.`1`
-    - typings.parse5.parse5Numbers.`2`
-    - typings.parse5.parse5Numbers.`3`
-    - typings.parse5.parse5Numbers.`4`
-    - typings.parse5.parse5Numbers.`5`
-    - typings.parse5.parse5Numbers.`6`
-    - typings.parse5.parse5Numbers.`7`
-    - typings.parse5.parse5Numbers.`8`
-    - typings.parse5.parse5Numbers.`9`
-    - typings.parse5.parse5Numbers.`10`
-    - typings.parse5.parse5Numbers.`11`
-    - typings.parse5.parse5Numbers.`12`
-    - typings.parse5.parse5Numbers.`13`
-    - typings.parse5.parse5Numbers.`14`
-    - typings.parse5.parse5Numbers.`15`
-    - typings.parse5.parse5Numbers.`16`
-    - typings.parse5.parse5Numbers.`17`
-    - typings.parse5.parse5Numbers.`18`
-    - typings.parse5.parse5Numbers.`19`
-    - typings.parse5.parse5Numbers.`20`
-    - typings.parse5.parse5Numbers.`21`
-    - typings.parse5.parse5Numbers.`22`
-    - typings.parse5.parse5Numbers.`23`
-    - typings.parse5.parse5Numbers.`24`
-    - typings.parse5.parse5Numbers.`25`
-    - typings.parse5.parse5Numbers.`26`
-    - typings.parse5.parse5Numbers.`27`
-    - typings.parse5.parse5Numbers.`28`
-    - typings.parse5.parse5Numbers.`29`
-    - typings.parse5.parse5Numbers.`30`
-    - typings.parse5.parse5Numbers.`31`
-    - typings.parse5.parse5Numbers.`32`
-    - typings.parse5.parse5Numbers.`33`
-    - typings.parse5.parse5Numbers.`34`
-    - typings.parse5.parse5Numbers.`35`
-    - typings.parse5.parse5Numbers.`36`
-    - typings.parse5.parse5Numbers.`37`
-    - typings.parse5.parse5Numbers.`38`
-    - typings.parse5.parse5Numbers.`39`
-    - typings.parse5.parse5Numbers.`40`
-    - typings.parse5.parse5Numbers.`41`
-    - typings.parse5.parse5Numbers.`42`
-    - typings.parse5.parse5Numbers.`43`
-    - typings.parse5.parse5Numbers.`44`
-    - typings.parse5.parse5Numbers.`45`
-    - typings.parse5.parse5Numbers.`46`
-    - typings.parse5.parse5Numbers.`47`
-    - typings.parse5.parse5Numbers.`48`
-    - typings.parse5.parse5Numbers.`49`
-    - typings.parse5.parse5Numbers.`50`
-    - typings.parse5.parse5Numbers.`51`
-    - typings.parse5.parse5Numbers.`52`
-    - typings.parse5.parse5Numbers.`53`
-    - typings.parse5.parse5Numbers.`54`
-    - typings.parse5.parse5Numbers.`55`
-    - typings.parse5.parse5Numbers.`56`
-    - typings.parse5.parse5Numbers.`57`
-    - typings.parse5.parse5Numbers.`58`
-    - typings.parse5.parse5Numbers.`59`
-    - typings.parse5.parse5Numbers.`60`
-    - typings.parse5.parse5Numbers.`61`
-    - typings.parse5.parse5Numbers.`62`
-    - typings.parse5.parse5Numbers.`63`
-    - typings.parse5.parse5Numbers.`64`
-    - typings.parse5.parse5Numbers.`65`
-    - typings.parse5.parse5Numbers.`66`
-    - typings.parse5.parse5Numbers.`67`
-    - typings.parse5.parse5Numbers.`68`
-    - typings.parse5.parse5Numbers.`69`
-    - typings.parse5.parse5Numbers.`70`
-    - typings.parse5.parse5Numbers.`71`
-    - typings.parse5.parse5Numbers.`72`
-    - typings.parse5.parse5Numbers.`73`
-    - typings.parse5.parse5Numbers.`74`
-    - typings.parse5.parse5Numbers.`75`
-    - typings.parse5.parse5Numbers.`76`
-    - typings.parse5.parse5Numbers.`77`
-    - typings.parse5.parse5Numbers.`78`
+    - typings.parse5.parse5Ints.`0`
+    - typings.parse5.parse5Ints.`1`
+    - typings.parse5.parse5Ints.`2`
+    - typings.parse5.parse5Ints.`3`
+    - typings.parse5.parse5Ints.`4`
+    - typings.parse5.parse5Ints.`5`
+    - typings.parse5.parse5Ints.`6`
+    - typings.parse5.parse5Ints.`7`
+    - typings.parse5.parse5Ints.`8`
+    - typings.parse5.parse5Ints.`9`
+    - typings.parse5.parse5Ints.`10`
+    - typings.parse5.parse5Ints.`11`
+    - typings.parse5.parse5Ints.`12`
+    - typings.parse5.parse5Ints.`13`
+    - typings.parse5.parse5Ints.`14`
+    - typings.parse5.parse5Ints.`15`
+    - typings.parse5.parse5Ints.`16`
+    - typings.parse5.parse5Ints.`17`
+    - typings.parse5.parse5Ints.`18`
+    - typings.parse5.parse5Ints.`19`
+    - typings.parse5.parse5Ints.`20`
+    - typings.parse5.parse5Ints.`21`
+    - typings.parse5.parse5Ints.`22`
+    - typings.parse5.parse5Ints.`23`
+    - typings.parse5.parse5Ints.`24`
+    - typings.parse5.parse5Ints.`25`
+    - typings.parse5.parse5Ints.`26`
+    - typings.parse5.parse5Ints.`27`
+    - typings.parse5.parse5Ints.`28`
+    - typings.parse5.parse5Ints.`29`
+    - typings.parse5.parse5Ints.`30`
+    - typings.parse5.parse5Ints.`31`
+    - typings.parse5.parse5Ints.`32`
+    - typings.parse5.parse5Ints.`33`
+    - typings.parse5.parse5Ints.`34`
+    - typings.parse5.parse5Ints.`35`
+    - typings.parse5.parse5Ints.`36`
+    - typings.parse5.parse5Ints.`37`
+    - typings.parse5.parse5Ints.`38`
+    - typings.parse5.parse5Ints.`39`
+    - typings.parse5.parse5Ints.`40`
+    - typings.parse5.parse5Ints.`41`
+    - typings.parse5.parse5Ints.`42`
+    - typings.parse5.parse5Ints.`43`
+    - typings.parse5.parse5Ints.`44`
+    - typings.parse5.parse5Ints.`45`
+    - typings.parse5.parse5Ints.`46`
+    - typings.parse5.parse5Ints.`47`
+    - typings.parse5.parse5Ints.`48`
+    - typings.parse5.parse5Ints.`49`
+    - typings.parse5.parse5Ints.`50`
+    - typings.parse5.parse5Ints.`51`
+    - typings.parse5.parse5Ints.`52`
+    - typings.parse5.parse5Ints.`53`
+    - typings.parse5.parse5Ints.`54`
+    - typings.parse5.parse5Ints.`55`
+    - typings.parse5.parse5Ints.`56`
+    - typings.parse5.parse5Ints.`57`
+    - typings.parse5.parse5Ints.`58`
+    - typings.parse5.parse5Ints.`59`
+    - typings.parse5.parse5Ints.`60`
+    - typings.parse5.parse5Ints.`61`
+    - typings.parse5.parse5Ints.`62`
+    - typings.parse5.parse5Ints.`63`
+    - typings.parse5.parse5Ints.`64`
+    - typings.parse5.parse5Ints.`65`
+    - typings.parse5.parse5Ints.`66`
+    - typings.parse5.parse5Ints.`67`
+    - typings.parse5.parse5Ints.`68`
+    - typings.parse5.parse5Ints.`69`
+    - typings.parse5.parse5Ints.`70`
+    - typings.parse5.parse5Ints.`71`
+    - typings.parse5.parse5Ints.`72`
+    - typings.parse5.parse5Ints.`73`
+    - typings.parse5.parse5Ints.`74`
+    - typings.parse5.parse5Ints.`75`
+    - typings.parse5.parse5Ints.`76`
+    - typings.parse5.parse5Ints.`77`
+    - typings.parse5.parse5Ints.`78`
   */
   trait State extends StObject
   object State {

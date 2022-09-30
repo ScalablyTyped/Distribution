@@ -4,7 +4,6 @@ import typings.tslint.mod.Rules.AbstractRule
 import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import typings.tslint.tslintStrings.`Shorthand method assignments have been disallowedDot`
-import typings.tslint.tslintStrings.`Shorthand property and method assignments have been disallowedDot`
 import typings.tslint.tslintStrings.`Shorthand property assignments have been disallowedDot`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +40,7 @@ object objectLiteralShorthandRuleMod {
     def SHORTHAND_ASSIGNMENT: String = js.native
     inline def SHORTHAND_ASSIGNMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORTHAND_ASSIGNMENT")(x.asInstanceOf[js.Any])
     
-    inline def getDisallowedShorthandErrorMessage(options: Options): (`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisallowedShorthandErrorMessage")(options.asInstanceOf[js.Any]).asInstanceOf[(`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`)]
+    inline def getDisallowedShorthandErrorMessage(options: Options): (`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisallowedShorthandErrorMessage")(options.asInstanceOf[js.Any]).asInstanceOf[(`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | String]
     
     inline def getLonghandMethodErrorMessage(nodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLonghandMethodErrorMessage")(nodeText.asInstanceOf[js.Any]).asInstanceOf[String]
     

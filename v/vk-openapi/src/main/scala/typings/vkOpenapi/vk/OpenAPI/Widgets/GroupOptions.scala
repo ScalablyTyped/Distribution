@@ -1,9 +1,9 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
-import typings.vkOpenapi.vkOpenapiNumbers.`1`
-import typings.vkOpenapi.vkOpenapiNumbers.`3`
-import typings.vkOpenapi.vkOpenapiNumbers.`4`
+import typings.vkOpenapi.vkOpenapiInts.`1`
+import typings.vkOpenapi.vkOpenapiInts.`3`
+import typings.vkOpenapi.vkOpenapiInts.`4`
 import typings.vkOpenapi.vkOpenapiStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

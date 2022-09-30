@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 6.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.FloatType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.FloatType")
 @js.native
-class FloatType protected ()
+open class FloatType protected ()
   extends typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType {
   def this(
     model: AbstractModel,
@@ -30,7 +30,7 @@ class FloatType protected ()
 }
 object FloatType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.FloatType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.FloatType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -76,13 +76,13 @@ object FloatType {
   inline def createInJavaActionUnderJavaReturnType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.FloatType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.FloatType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.FloatType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.FloatType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

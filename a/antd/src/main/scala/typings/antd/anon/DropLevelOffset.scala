@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.antd.antdNumbers.`-1`
+import typings.antd.antdInts.`-1`
 import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ trait DropLevelOffset extends StObject {
   
   var dropLevelOffset: Double
   
-  var dropPosition: `-1` | typings.antd.antdNumbers.`0` | typings.antd.antdNumbers.`1`
+  var dropPosition: `-1` | typings.antd.antdInts.`0` | typings.antd.antdInts.`1`
   
   var indent: Double
   
@@ -24,7 +24,7 @@ object DropLevelOffset {
   inline def apply(
     direction: ltr | rtl,
     dropLevelOffset: Double,
-    dropPosition: `-1` | typings.antd.antdNumbers.`0` | typings.antd.antdNumbers.`1`,
+    dropPosition: `-1` | typings.antd.antdInts.`0` | typings.antd.antdInts.`1`,
     indent: Double,
     prefixCls: String
   ): DropLevelOffset = {
@@ -38,7 +38,7 @@ object DropLevelOffset {
     
     inline def setDropLevelOffset(value: Double): Self = StObject.set(x, "dropLevelOffset", value.asInstanceOf[js.Any])
     
-    inline def setDropPosition(value: `-1` | typings.antd.antdNumbers.`0` | typings.antd.antdNumbers.`1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+    inline def setDropPosition(value: `-1` | typings.antd.antdInts.`0` | typings.antd.antdInts.`1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
     inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     

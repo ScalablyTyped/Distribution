@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/loop relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.LoopedActivity")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.LoopedActivity")
 @js.native
-class LoopedActivity protected () extends Activity {
+open class LoopedActivity protected () extends Activity {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -32,9 +32,21 @@ class LoopedActivity protected () extends Activity {
   def errorHandlingType: ErrorHandlingType = js.native
   def errorHandlingType_=(newValue: ErrorHandlingType): Unit = js.native
   
+  /**
+    * In version 9.0.4: deleted
+    */
   def iteratedListVariableName: String = js.native
   def iteratedListVariableName_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.0.4: introduced
+    */
+  def loopSource: LoopSource = js.native
+  def loopSource_=(newValue: LoopSource): Unit = js.native
+  
+  /**
+    * In version 9.0.4: deleted
+    */
   def loopVariableName: String = js.native
   def loopVariableName_=(newValue: String): Unit = js.native
   
@@ -43,7 +55,7 @@ class LoopedActivity protected () extends Activity {
 }
 object LoopedActivity {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.LoopedActivity")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.LoopedActivity")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +76,13 @@ object LoopedActivity {
   inline def createIn(container: MicroflowObjectCollection): LoopedActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[LoopedActivity]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.LoopedActivity.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.LoopedActivity.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.LoopedActivity.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.LoopedActivity.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -96,8 +96,8 @@ trait DownloadItem extends EventEmitter {
   
   /**
     * The total size in bytes of the download item.
-    * 
-  If the size is unknown, it returns 0.
+    *
+    * If the size is unknown, it returns 0.
     */
   def getTotalBytes(): Double = js.native
   
@@ -183,6 +183,13 @@ trait DownloadItem extends EventEmitter {
     */
   def resume(): Unit = js.native
   
+  /**
+    * A `string` property that determines the save file path of the download item.
+    *
+    * The property is only available in session's `will-download` callback function.
+    * If user doesn't set the save path via the property, Electron will use the
+    * original routine to determine the save path; this usually prompts a save dialog.
+    */
   var savePath: String = js.native
   
   /**
@@ -194,6 +201,7 @@ trait DownloadItem extends EventEmitter {
   
   /**
     * The API is only available in session's `will-download` callback function. If
+    * `path` doesn't exist, Electron will try to make the directory recursively. If
     * user doesn't set the save path via the API, Electron will use the original
     * routine to determine the save path; this usually prompts a save dialog.
     */

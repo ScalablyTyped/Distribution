@@ -944,7 +944,7 @@ object mod {
   
   inline def loopbackInterface(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loopbackInterface")().asInstanceOf[Any]
   
-  inline def makeServiceType(name: String, protocol: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")((List(name.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).`++`(subtypes.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ServiceType]
+  inline def makeServiceType(name: String, protocol: String, subtypes: String*): ServiceType = (^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")((scala.List(name.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).`++`(subtypes.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ServiceType]
   inline def makeServiceType(serviceTypeIdentifier: String): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   inline def makeServiceType(serviceTypeIdentifier: js.Array[String]): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   inline def makeServiceType(serviceTypeIdentifier: Name): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("makeServiceType")(serviceTypeIdentifier.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
@@ -972,9 +972,9 @@ object mod {
   inline def rst_=(x: DefaultResolverSequenceTasks): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rst")(x.asInstanceOf[js.Any])
   
   // static functions
-  inline def tcp(name: String, subtypes: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(List(name.asInstanceOf[js.Any]).`++`(subtypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ServiceType]
+  inline def tcp(name: String, subtypes: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(scala.List(name.asInstanceOf[js.Any]).`++`(subtypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ServiceType]
   
-  inline def udp(name: String, subtypes: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(List(name.asInstanceOf[js.Any]).`++`(subtypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ServiceType]
+  inline def udp(name: String, subtypes: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(scala.List(name.asInstanceOf[js.Any]).`++`(subtypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ServiceType]
   
   @js.native
   trait AdvertisementCreatable

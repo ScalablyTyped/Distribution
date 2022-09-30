@@ -18,7 +18,7 @@ object groupByMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def groupBy[T, K /* <: T */](key: js.Function1[/* value */ T, /* is K */ Boolean]): OperatorFunction[T, GroupedObservable[`true` | `false`, (Exclude[T, K]) | K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[`true` | `false`, (Exclude[T, K]) | K]]]
+  inline def groupBy[T, K /* <: T */](key: js.Function1[/* value */ T, (/* is K */ Boolean) | K]): OperatorFunction[T, GroupedObservable[`true` | `false`, (Exclude[T, K]) | K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[`true` | `false`, (Exclude[T, K]) | K]]]
   inline def groupBy[T, K](
     key: js.Function1[/* value */ T, K],
     element: Unit,
@@ -56,8 +56,6 @@ object groupByMod {
     connector: js.Function0[Subject[R]]
   ): OperatorFunction[T, GroupedObservable[K, R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any], element.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
   inline def groupBy[T, K, E](key: js.Function1[/* value */ T, K], options: GroupByOptionsWithElement[K, E, T]): OperatorFunction[T, GroupedObservable[K, E]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, GroupedObservable[K, E]]]
-  
-  inline def groupBy_TK[T, K](key: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[K, T]]]
   
   inline def groupBy_TKR[T, K, R](key: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(key.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, GroupedObservable[K, R]]]
   inline def groupBy_TKR[T, K, R](

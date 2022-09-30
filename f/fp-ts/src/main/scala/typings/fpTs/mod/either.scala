@@ -264,15 +264,15 @@ object either {
   
   inline def extend[E, A, B](f: js.Function1[/* wa */ Either_[E, A], B]): js.Function1[/* wa */ Either_[E, A], Either_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wa */ Either_[E, A], Either_[E, B]]]
   
-  inline def filterOrElse[A_2, E_2](predicate: Predicate[A_2], onFalse: js.Function1[/* a */ A_2, E_2]): js.Function1[/* ma */ Either_[E_2, A_2], Either_[E_2, A_2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Either_[E_2, A_2], Either_[E_2, A_2]]]
+  inline def filterOrElse[A_1, E_1](predicate: Predicate[A_1], onFalse: js.Function1[/* a */ A_1, E_1]): js.Function1[/* mb */ Either_[E_1, A_1], Either_[E_1, A_1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* mb */ Either_[E_1, A_1], Either_[E_1, A_1]]]
   
   inline def filterOrElseW[A, E2](predicate: Predicate[A], onFalse: js.Function1[/* a */ A, E2]): js.Function1[/* mb */ Either_[Any, A], Either_[Any | E2, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElseW")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* mb */ Either_[Any, A], Either_[Any | E2, A]]]
   
-  inline def filterOrElseW_AB_AE2[A, B /* <: A */, E2](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E2]): js.Function1[/* ma */ Either_[Any, A], Either_[Any | E2, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElseW")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Either_[Any, A], Either_[Any | E2, B]]]
+  inline def filterOrElseW_ABE2[A, B /* <: A */, E2](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E2]): js.Function1[/* ma */ Either_[Any, A], Either_[Any | E2, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElseW")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Either_[Any, A], Either_[Any | E2, B]]]
   
-  inline def filterOrElse_AB_AE[A, B /* <: A */, E](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* ma */ Either_[E, A], Either_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Either_[E, A], Either_[E, B]]]
+  inline def filterOrElse_ABE[A, B /* <: A */, E](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* ma */ Either_[E, A], Either_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Either_[E, A], Either_[E, B]]]
   
-  inline def filterOrElse_A_1E_1[A_1, E_1](predicate: Predicate[A_1], onFalse: js.Function1[/* a */ A_1, E_1]): js.Function1[/* mb */ Either_[E_1, A_1], Either_[E_1, A_1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* mb */ Either_[E_1, A_1], Either_[E_1, A_1]]]
+  inline def filterOrElse_A_2E_2[A_2, E_2](predicate: Predicate[A_2], onFalse: js.Function1[/* a */ A_2, E_2]): js.Function1[/* ma */ Either_[E_2, A_2], Either_[E_2, A_2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Either_[E_2, A_2], Either_[E_2, A_2]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ Either_[Any, js.Function1[/* a */ A, Any]], Either_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Either_[Any, js.Function1[/* a */ A, Any]], Either_[Any, Any]]]
   
@@ -306,11 +306,11 @@ object either {
     js.Function1[/* a */ js.Array[Any], Either_[E, Any]]
   ]]
   
-  inline def fromPredicate[A_2, E_2](predicate: Predicate[A_2], onFalse: js.Function1[/* a */ A_2, E_2]): js.Function1[/* a */ A_2, Either_[E_2, A_2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A_2, Either_[E_2, A_2]]]
+  inline def fromPredicate[A_1, E_1](predicate: Predicate[A_1], onFalse: js.Function1[/* a */ A_1, E_1]): js.Function1[/* b */ A_1, Either_[E_1, A_1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ A_1, Either_[E_1, A_1]]]
   
-  inline def fromPredicate_AB_AE[A, B /* <: A */, E](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, Either_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, Either_[E, B]]]
+  inline def fromPredicate_ABE[A, B /* <: A */, E](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, Either_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, Either_[E, B]]]
   
-  inline def fromPredicate_A_1E_1[A_1, E_1](predicate: Predicate[A_1], onFalse: js.Function1[/* a */ A_1, E_1]): js.Function1[/* b */ A_1, Either_[E_1, A_1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ A_1, Either_[E_1, A_1]]]
+  inline def fromPredicate_A_2E_2[A_2, E_2](predicate: Predicate[A_2], onFalse: js.Function1[/* a */ A_2, E_2]): js.Function1[/* a */ A_2, Either_[E_2, A_2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A_2, Either_[E_2, A_2]]]
   
   inline def getAltValidation[E](SE: Semigroup[E]): Alt2C[Either, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[Alt2C[Either, E]]
   

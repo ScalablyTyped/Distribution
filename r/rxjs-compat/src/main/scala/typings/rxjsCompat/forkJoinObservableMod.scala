@@ -17,12 +17,12 @@ object forkJoinObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T](
-      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ Any)*
+    inline def create[R](
+      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any)*
     ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
-    inline def create[T](
+    inline def create[R](
       sources: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
         ]
     ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def create[R](
@@ -101,12 +101,12 @@ object forkJoinObservableMod {
       project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
     ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def create_R[R](
-      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any)*
+    inline def create_T[T](
+      sources: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ Any)*
     ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
-    inline def create_R[R](
+    inline def create_T[T](
       sources: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ Any
         ]
     ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sources.asInstanceOf[js.Any]).asInstanceOf[Any]
     

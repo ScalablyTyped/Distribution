@@ -6,21 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/parallel-split relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 9.0.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 @js.native
 trait IParallelSplitActivity
   extends StObject
      with IWorkflowActivity {
   
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
-    */
   val outcomes: IList[IParallelSplitOutcome] = js.native
 }

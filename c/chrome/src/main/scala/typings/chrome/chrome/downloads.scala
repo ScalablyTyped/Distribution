@@ -1,8 +1,8 @@
 package typings.chrome.chrome
 
 import typings.chrome.chrome.events.Event
-import typings.chrome.chromeNumbers.`16`
-import typings.chrome.chromeNumbers.`32`
+import typings.chrome.chromeInts.`16`
+import typings.chrome.chromeInts.`32`
 import typings.chrome.chromeStrings.GET
 import typings.chrome.chromeStrings.POST
 import org.scalablytyped.runtime.StObject

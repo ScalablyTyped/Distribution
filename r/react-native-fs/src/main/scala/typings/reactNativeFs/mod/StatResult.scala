@@ -30,7 +30,7 @@ trait StatResult extends StObject {
   var path: String
   
   // The absolute path to the item
-  var size: String
+  var size: Double
 }
 object StatResult {
   
@@ -42,7 +42,7 @@ object StatResult {
     mtime: Double,
     originalFilepath: String,
     path: String,
-    size: String
+    size: Double
   ): StatResult = {
     val __obj = js.Dynamic.literal(ctime = ctime.asInstanceOf[js.Any], isDirectory = js.Any.fromFunction0(isDirectory), isFile = js.Any.fromFunction0(isFile), mode = mode.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], originalFilepath = originalFilepath.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatResult]
@@ -68,6 +68,6 @@ object StatResult {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

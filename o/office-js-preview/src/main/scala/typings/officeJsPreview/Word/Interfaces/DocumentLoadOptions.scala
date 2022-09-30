@@ -30,7 +30,7 @@ trait DocumentLoadOptions extends StObject {
     * Gets or sets the ChangeTracking mode.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var changeTrackingMode: js.UndefOr[Boolean] = js.undefined
   
@@ -43,7 +43,7 @@ trait DocumentLoadOptions extends StObject {
   var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   
   /**
-    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
     *
     * @remarks
     * [Api set: WordApi 1.1]

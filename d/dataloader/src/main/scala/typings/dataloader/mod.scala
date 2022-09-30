@@ -1,6 +1,7 @@
 package typings.dataloader
 
 import typings.std.ArrayLike
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object mod {
     def this(batchLoadFn: BatchLoadFn[K, V], options: Options[K, V, C]) = this()
   }
   
-  type BatchLoadFn[K, V] = js.Function1[/* keys */ js.Array[K], js.Thenable[ArrayLike[V | js.Error]]]
+  type BatchLoadFn[K, V] = js.Function1[/* keys */ js.Array[K], PromiseLike[ArrayLike[V | js.Error]]]
   
   trait CacheMap[K, V] extends StObject {
     

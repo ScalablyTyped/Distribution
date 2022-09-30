@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.LayoutGrid")
 @js.native
-class LayoutGrid protected ()
+open class LayoutGrid protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LayoutGrid {
   def this(
     model: AbstractModel,

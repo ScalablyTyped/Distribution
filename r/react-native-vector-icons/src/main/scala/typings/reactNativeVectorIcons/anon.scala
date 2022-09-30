@@ -20,10 +20,10 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeVectorIcons.iconMod.Icon
 import typings.reactNativeVectorIcons.iconMod.ImageSource
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`0`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`1`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`2`
-import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`3`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`0`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`1`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`2`
+import typings.reactNativeVectorIcons.reactNativeVectorIconsInts.`3`
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.`no-hide-descendants`
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.all
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.assertive
@@ -282,9 +282,15 @@ object anon {
     var delayPressOut: js.UndefOr[Double] = js.undefined
     
     /**
+      * Specifies the disabled state of the text view for testing purposes.
+      */
+    /**
       * If true, disable all interactions for this component.
       */
-    var disabled: js.UndefOr[Boolean | Null] = js.undefined
+    /**
+      * If true, disable all interactions for this component.
+      */
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This can be one of the following values:
@@ -570,7 +576,7 @@ object anon {
       *
       * @platform android
       */
-    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+    var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The color of the underlay that will show through when the touch is active.
@@ -703,8 +709,6 @@ object anon {
       inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
@@ -869,8 +873,6 @@ object anon {
       inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
       
       inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-      
-      inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
       
       inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
       

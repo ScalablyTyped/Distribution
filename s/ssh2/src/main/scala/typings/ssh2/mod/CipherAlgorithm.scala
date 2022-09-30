@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.ssh2.ssh2Strings.`chacha20-poly1305@opensshDotcom`
+  - typings.ssh2.ssh2Strings.`aes128-gcm`
   - typings.ssh2.ssh2Strings.`aes128-gcm@opensshDotcom`
+  - typings.ssh2.ssh2Strings.`aes256-gcm`
   - typings.ssh2.ssh2Strings.`aes256-gcm@opensshDotcom`
   - typings.ssh2.ssh2Strings.`aes128-ctr`
   - typings.ssh2.ssh2Strings.`aes192-ctr`
@@ -30,6 +32,8 @@ object CipherAlgorithm {
   
   inline def `aes128-ctr`: typings.ssh2.ssh2Strings.`aes128-ctr` = "aes128-ctr".asInstanceOf[typings.ssh2.ssh2Strings.`aes128-ctr`]
   
+  inline def `aes128-gcm`: typings.ssh2.ssh2Strings.`aes128-gcm` = "aes128-gcm".asInstanceOf[typings.ssh2.ssh2Strings.`aes128-gcm`]
+  
   inline def `aes128-gcm@opensshDotcom`: typings.ssh2.ssh2Strings.`aes128-gcm@opensshDotcom` = "aes128-gcm@openssh.com".asInstanceOf[typings.ssh2.ssh2Strings.`aes128-gcm@opensshDotcom`]
   
   inline def `aes192-cbc`: typings.ssh2.ssh2Strings.`aes192-cbc` = "aes192-cbc".asInstanceOf[typings.ssh2.ssh2Strings.`aes192-cbc`]
@@ -39,6 +43,8 @@ object CipherAlgorithm {
   inline def `aes256-cbc`: typings.ssh2.ssh2Strings.`aes256-cbc` = "aes256-cbc".asInstanceOf[typings.ssh2.ssh2Strings.`aes256-cbc`]
   
   inline def `aes256-ctr`: typings.ssh2.ssh2Strings.`aes256-ctr` = "aes256-ctr".asInstanceOf[typings.ssh2.ssh2Strings.`aes256-ctr`]
+  
+  inline def `aes256-gcm`: typings.ssh2.ssh2Strings.`aes256-gcm` = "aes256-gcm".asInstanceOf[typings.ssh2.ssh2Strings.`aes256-gcm`]
   
   inline def `aes256-gcm@opensshDotcom`: typings.ssh2.ssh2Strings.`aes256-gcm@opensshDotcom` = "aes256-gcm@openssh.com".asInstanceOf[typings.ssh2.ssh2Strings.`aes256-gcm@opensshDotcom`]
   

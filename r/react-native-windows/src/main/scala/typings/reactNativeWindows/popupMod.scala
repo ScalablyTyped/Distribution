@@ -11,8 +11,7 @@ object popupMod {
   
   @JSImport("react-native-windows/Libraries/Components/Popup/Popup", "Popup")
   @js.native
-  class Popup protected ()
-    extends Component[IPopupProps, IPopupTargetState, js.Any] {
+  open class Popup protected () extends Component[IPopupProps, IPopupTargetState, Any] {
     def this(props: IPopupProps) = this()
   }
   /* static members */

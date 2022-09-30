@@ -4,27 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Bitwise OR of masks that indicate the buffers to be cleared.
-  *
-  * @static
-  * @memberof PIXI
-  * @name BUFFER_BITS
-  * @enum {number}
-  * @property {number} COLOR - Indicates the buffers currently enabled for color writing.
-  * @property {number} DEPTH - Indicates the depth buffer.
-  * @property {number} STENCIL - Indicates the stencil buffer.
-  */
 @JSImport("pixi.js", "BUFFER_BITS")
 @js.native
 object BUFFER_BITS extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.BUFFER_BITS & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiConstants.mod.BUFFER_BITS & Double] = js.native
   
-  /* 0 */ val COLOR: typings.pixiJs.PIXI.BUFFER_BITS.COLOR & Double = js.native
+  /* 16384 */ val COLOR: typings.pixiConstants.mod.BUFFER_BITS.COLOR & Double = js.native
   
-  /* 1 */ val DEPTH: typings.pixiJs.PIXI.BUFFER_BITS.DEPTH & Double = js.native
+  /* 256 */ val DEPTH: typings.pixiConstants.mod.BUFFER_BITS.DEPTH & Double = js.native
   
-  /* 2 */ val STENCIL: typings.pixiJs.PIXI.BUFFER_BITS.STENCIL & Double = js.native
+  /* 1024 */ val STENCIL: typings.pixiConstants.mod.BUFFER_BITS.STENCIL & Double = js.native
 }

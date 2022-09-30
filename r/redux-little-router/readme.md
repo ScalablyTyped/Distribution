@@ -10,10 +10,10 @@ A barebones routing solution for Redux applications.
 | ------------------ | :-------------: |
 | Full name          | redux-little-router |
 | Keywords           | redux, router, middleware |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 195279 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8340.666666666666 |
+| # stars            | 1060.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/redux-little-router#readme)

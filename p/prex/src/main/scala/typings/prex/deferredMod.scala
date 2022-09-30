@@ -1,5 +1,6 @@
 package typings.prex
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +45,6 @@ object deferredMod {
     /**
       * Gets the callback used to resolve the promise.
       */
-    def resolve: js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit] = js.native
+    def resolve: js.Function1[/* value */ js.UndefOr[T | PromiseLike[T]], Unit] = js.native
   }
 }

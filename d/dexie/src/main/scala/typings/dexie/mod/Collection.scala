@@ -3,12 +3,12 @@ package typings.dexie.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.dexie.anon.Key
 import typings.dexie.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collection[T, TKey] extends js.Object {
+trait Collection[T, TKey] extends StObject {
   
   //db: Database;
   def and(filter: js.Function1[/* x */ T, Boolean]): Collection[T, TKey] = js.native
@@ -23,13 +23,13 @@ trait Collection[T, TKey] extends js.Object {
   
   def distinct(): Collection[T, TKey] = js.native
   
-  def each(callback: js.Function2[/* obj */ T, /* cursor */ Key[TKey], _]): PromiseExtended[Unit] = js.native
+  def each(callback: js.Function2[/* obj */ T, /* cursor */ Key[TKey], Any]): PromiseExtended[Unit] = js.native
   
-  def eachKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ Key[TKey], _]): PromiseExtended[Unit] = js.native
+  def eachKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ Key[TKey], Any]): PromiseExtended[Unit] = js.native
   
-  def eachPrimaryKey(callback: js.Function2[/* key */ TKey, /* cursor */ Key[TKey], _]): PromiseExtended[Unit] = js.native
+  def eachPrimaryKey(callback: js.Function2[/* key */ TKey, /* cursor */ Key[TKey], Any]): PromiseExtended[Unit] = js.native
   
-  def eachUniqueKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ Key[TKey], _]): PromiseExtended[Unit] = js.native
+  def eachUniqueKey(callback: js.Function2[/* key */ IndexableType, /* cursor */ Key[TKey], Any]): PromiseExtended[Unit] = js.native
   
   def filter(filter: js.Function1[/* x */ T, Boolean]): Collection[T, TKey] = js.native
   
@@ -45,7 +45,7 @@ trait Collection[T, TKey] extends js.Object {
   def limit(n: Double): Collection[T, TKey] = js.native
   
   def modify(changeCallback: js.Function2[/* obj */ T, /* ctx */ Value[T], Unit | Boolean]): PromiseExtended[Double] = js.native
-  def modify(changes: StringDictionary[js.Any]): PromiseExtended[Double] = js.native
+  def modify(changes: StringDictionary[Any]): PromiseExtended[Double] = js.native
   
   def offset(n: Double): Collection[T, TKey] = js.native
   

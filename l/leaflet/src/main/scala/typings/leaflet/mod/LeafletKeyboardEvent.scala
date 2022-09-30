@@ -15,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LeafletKeyboardEvent {
   
   inline def apply(
-    layer: js.Any,
+    layer: Any,
     originalEvent: KeyboardEvent,
-    propagatedFrom: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
+    popup: Any,
+    propagatedFrom: Any,
+    sourceTarget: Any,
+    target: Any,
     `type`: String
   ): LeafletKeyboardEvent = {
-    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeafletKeyboardEvent]
   }

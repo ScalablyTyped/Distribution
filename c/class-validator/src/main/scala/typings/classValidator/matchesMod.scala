@@ -14,7 +14,7 @@ object matchesMod {
   
   @JSImport("class-validator/types/decorator/string/Matches", "MATCHES")
   @js.native
-  val MATCHES: /* "matches" */ String = js.native
+  val MATCHES__ : /* "matches" */ String = js.native
   
   inline def Matches_(pattern: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Matches_(pattern: String, modifiers: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Matches")(pattern.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]

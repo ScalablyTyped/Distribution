@@ -6,10 +6,10 @@ import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApiDistrictSearch.AMap.DistrictSearch.Level
 import typings.amapJsApiDistrictSearch.AMap.DistrictSearch.SearchResult
 import typings.amapJsApiDistrictSearch.AMap.DistrictSearch.SearchStatus
-import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchNumbers.`0`
-import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchNumbers.`1`
-import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchNumbers.`2`
-import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchNumbers.`3`
+import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchInts.`0`
+import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchInts.`1`
+import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchInts.`2`
+import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchInts.`3`
 import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.all
 import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.base
 import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.complete

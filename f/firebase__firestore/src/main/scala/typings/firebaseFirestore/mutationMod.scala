@@ -4,10 +4,10 @@ import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.Document
 import typings.firebaseFirestore.documentMod.MutableDocument
 import typings.firebaseFirestore.fieldMaskMod.FieldMask
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`3`
 import typings.firebaseFirestore.firestoreProtoApiMod.Value
 import typings.firebaseFirestore.liteApiTimestampMod.Timestamp
 import typings.firebaseFirestore.objectValueMod.ObjectValue
@@ -196,10 +196,10 @@ object mutationMod {
   inline def preconditionIsValidForDocument(precondition: Precondition, document: MutableDocument): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("preconditionIsValidForDocument")(precondition.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`3`
   */
   trait MutationType extends StObject
   object MutationType {

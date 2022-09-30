@@ -3,6 +3,7 @@ package typings.maximMazurokGapiClientCloudkms
 import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.ProjectsResource
 import typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.cloudkms
 import typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.v1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object global {
       }
       
       /** Load Cloud Key Management Service (KMS) API v1 */
-      inline def load(name: cloudkms, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: cloudkms, version: v1): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: cloudkms, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }

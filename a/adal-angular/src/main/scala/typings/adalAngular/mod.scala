@@ -1,8 +1,8 @@
 package typings.adalAngular
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.adalAngular.adalAngularNumbers.`483`
-import typings.adalAngular.adalAngularNumbers.`600`
+import typings.adalAngular.adalAngularInts.`483`
+import typings.adalAngular.adalAngularInts.`600`
 import typings.adalAngular.adalAngularStrings.Canceled
 import typings.adalAngular.adalAngularStrings.Completed
 import typings.adalAngular.adalAngularStrings.Verticalline
@@ -354,21 +354,21 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.adalAngular.adalAngularNumbers.`0`
-    - typings.adalAngular.adalAngularNumbers.`1`
-    - typings.adalAngular.adalAngularNumbers.`2`
-    - typings.adalAngular.adalAngularNumbers.`3`
+    - typings.adalAngular.adalAngularInts.`0`
+    - typings.adalAngular.adalAngularInts.`1`
+    - typings.adalAngular.adalAngularInts.`2`
+    - typings.adalAngular.adalAngularInts.`3`
   */
   trait LoggingLevel extends StObject
   object LoggingLevel {
     
-    inline def `0`: typings.adalAngular.adalAngularNumbers.`0` = 0.asInstanceOf[typings.adalAngular.adalAngularNumbers.`0`]
+    inline def `0`: typings.adalAngular.adalAngularInts.`0` = 0.asInstanceOf[typings.adalAngular.adalAngularInts.`0`]
     
-    inline def `1`: typings.adalAngular.adalAngularNumbers.`1` = 1.asInstanceOf[typings.adalAngular.adalAngularNumbers.`1`]
+    inline def `1`: typings.adalAngular.adalAngularInts.`1` = 1.asInstanceOf[typings.adalAngular.adalAngularInts.`1`]
     
-    inline def `2`: typings.adalAngular.adalAngularNumbers.`2` = 2.asInstanceOf[typings.adalAngular.adalAngularNumbers.`2`]
+    inline def `2`: typings.adalAngular.adalAngularInts.`2` = 2.asInstanceOf[typings.adalAngular.adalAngularInts.`2`]
     
-    inline def `3`: typings.adalAngular.adalAngularNumbers.`3` = 3.asInstanceOf[typings.adalAngular.adalAngularNumbers.`3`]
+    inline def `3`: typings.adalAngular.adalAngularInts.`3` = 3.asInstanceOf[typings.adalAngular.adalAngularInts.`3`]
   }
   
   /**

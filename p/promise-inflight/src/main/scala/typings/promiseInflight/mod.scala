@@ -1,5 +1,6 @@
 package typings.promiseInflight
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,5 +23,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Resolvable[T] = js.Thenable[T] | T
+  type Resolvable[T] = PromiseLike[T] | T
 }

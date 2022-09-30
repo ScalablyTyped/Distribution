@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -14,7 +13,7 @@ trait LodashIsEmpty extends StObject {
   def apply(value: String): Boolean = js.native
   def apply(value: js.Array[Any]): Boolean = js.native
   def apply(value: Any): Boolean = js.native
-  def apply(value: List[Any]): Boolean = js.native
+  def apply(value: typings.lodash.mod.List[Any]): Boolean = js.native
   def apply(value: Map[Any, Any]): Boolean = js.native
   def apply(value: Set[Any]): Boolean = js.native
 }

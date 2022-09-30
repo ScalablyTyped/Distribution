@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "Popup")
 @js.native
-class Popup[P /* <: PopupProps */, E /* <: Popup_ */] protected () extends DivOverlay[P, E] {
+open class Popup[P /* <: PopupProps */, E /* <: Popup_ */] protected () extends DivOverlay[P, E] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   def onPopupClose(arg: typings.reactLeaflet.anon.Popup[E]): Unit = js.native
   

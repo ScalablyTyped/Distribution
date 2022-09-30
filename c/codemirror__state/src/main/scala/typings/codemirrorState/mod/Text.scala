@@ -1,7 +1,7 @@
 package typings.codemirrorState.mod
 
-import typings.codemirrorState.codemirrorStateNumbers.`-1`
-import typings.codemirrorState.codemirrorStateNumbers.`1`
+import typings.codemirrorState.codemirrorStateInts.`-1`
+import typings.codemirrorState.codemirrorStateInts.`1`
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

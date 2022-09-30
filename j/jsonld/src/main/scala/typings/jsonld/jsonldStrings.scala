@@ -86,10 +86,6 @@ object jsonldStrings {
   inline def URDNA2015: URDNA2015 = "URDNA2015".asInstanceOf[URDNA2015]
   
   @js.native
-  sealed trait URGNA2012 extends StObject
-  inline def URGNA2012: URGNA2012 = "URGNA2012".asInstanceOf[URGNA2012]
-  
-  @js.native
   sealed trait `applicationSlashn-quads` extends StObject
   inline def `applicationSlashn-quads`: `applicationSlashn-quads` = "application/n-quads".asInstanceOf[`applicationSlashn-quads`]
   

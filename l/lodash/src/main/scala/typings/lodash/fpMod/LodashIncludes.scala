@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashIncludes extends StObject {
   
-  def apply[T](target: T): Boolean = js.native
+  def apply[T](target: T): LodashIncludes1x1[T] = js.native
   def apply[T](target: T, collection: Dictionary[T]): Boolean = js.native
   def apply[T](target: T, collection: NumericDictionary[T]): Boolean = js.native
   def apply[T](target: __): LodashIncludes1x2[T] = js.native

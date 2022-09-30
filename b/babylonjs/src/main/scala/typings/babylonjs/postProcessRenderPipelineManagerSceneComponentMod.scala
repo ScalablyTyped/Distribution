@@ -59,7 +59,7 @@ object postProcessRenderPipelineManagerSceneComponentMod {
     
     trait Scene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _postProcessRenderPipelineManager: PostProcessRenderPipelineManager
       
       /**

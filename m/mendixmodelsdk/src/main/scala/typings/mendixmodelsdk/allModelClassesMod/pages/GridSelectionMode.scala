@@ -5,43 +5,43 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSelectionMode")
 @js.native
-class GridSelectionMode protected ()
+open class GridSelectionMode protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object GridSelectionMode {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSelectionMode")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.Multi")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSelectionMode.Multi")
   @js.native
   def Multi: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
   inline def Multi_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multi")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.None")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSelectionMode.None")
   @js.native
   def None: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
   inline def None_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.SimpleMulti")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSelectionMode.SimpleMulti")
   @js.native
   def SimpleMulti: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
   inline def SimpleMulti_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SimpleMulti")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.Single")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSelectionMode.Single")
   @js.native
   def Single: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.SingleAndMaintain")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSelectionMode.SingleAndMaintain")
   @js.native
   def SingleAndMaintain: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
   inline def SingleAndMaintain_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleAndMaintain")(x.asInstanceOf[js.Any])

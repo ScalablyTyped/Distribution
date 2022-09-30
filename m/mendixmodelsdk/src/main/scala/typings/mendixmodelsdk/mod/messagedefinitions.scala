@@ -19,7 +19,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.AssociationElement")
   @js.native
-  class AssociationElement protected ()
+  open class AssociationElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.AssociationElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -84,7 +84,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.AttributeElement")
   @js.native
-  class AttributeElement protected ()
+  open class AttributeElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.AttributeElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -149,7 +149,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.EntityElement")
   @js.native
-  class EntityElement protected ()
+  open class EntityElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.EntityElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -216,7 +216,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.EntityMessageDefinition")
   @js.native
-  class EntityMessageDefinition protected ()
+  open class EntityMessageDefinition protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.EntityMessageDefinition {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -272,7 +272,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.ExposedAssociation")
   @js.native
-  class ExposedAssociation protected ()
+  open class ExposedAssociation protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.ExposedAssociation {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -337,7 +337,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.ExposedAttribute")
   @js.native
-  class ExposedAttribute protected ()
+  open class ExposedAttribute protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.ExposedAttribute {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -402,7 +402,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.ExposedEntity")
   @js.native
-  class ExposedEntity protected ()
+  open class ExposedEntity protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.ExposedEntity {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -585,7 +585,7 @@ object messagedefinitions {
     */
   @JSImport("mendixmodelsdk", "messagedefinitions.MessageDefinitionCollection")
   @js.native
-  class MessageDefinitionCollection protected ()
+  open class MessageDefinitionCollection protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.messagedefinitions.MessageDefinitionCollection {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

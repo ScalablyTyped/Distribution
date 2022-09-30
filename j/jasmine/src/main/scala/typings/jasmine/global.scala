@@ -29,6 +29,7 @@ import typings.jasmine.jasmineStrings.objectContaining_
 import typings.jasmine.jasmineStrings.set
 import typings.std.ArrayLike
 import typings.std.Map
+import typings.std.PromiseLike
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -104,7 +105,7 @@ object global {
     * @param actual Actual computed value to test expectations against.
     */
   inline def expectAsync[T, U](actual: T): AsyncMatchers[T, U] = js.Dynamic.global.applyDynamic("expectAsync")(actual.asInstanceOf[js.Any]).asInstanceOf[AsyncMatchers[T, U]]
-  inline def expectAsync[T, U](actual: js.Thenable[T]): AsyncMatchers[T, U] = js.Dynamic.global.applyDynamic("expectAsync")(actual.asInstanceOf[js.Any]).asInstanceOf[AsyncMatchers[T, U]]
+  inline def expectAsync[T, U](actual: PromiseLike[T]): AsyncMatchers[T, U] = js.Dynamic.global.applyDynamic("expectAsync")(actual.asInstanceOf[js.Any]).asInstanceOf[AsyncMatchers[T, U]]
   
   /**
     * Create an expectation for a spec.

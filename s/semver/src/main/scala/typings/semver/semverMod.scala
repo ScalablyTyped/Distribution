@@ -3,9 +3,9 @@ package typings.semver
 import typings.semver.mod.Options
 import typings.semver.mod.RangeOptions
 import typings.semver.mod.ReleaseType
-import typings.semver.semverNumbers.`-1`
-import typings.semver.semverNumbers.`0`
-import typings.semver.semverNumbers.`1`
+import typings.semver.semverInts.`-1`
+import typings.semver.semverInts.`0`
+import typings.semver.semverInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

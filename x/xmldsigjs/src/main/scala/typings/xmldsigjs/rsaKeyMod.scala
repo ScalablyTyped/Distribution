@@ -4,7 +4,6 @@ import typings.std.AlgorithmIdentifier
 import typings.std.CryptoKey
 import typings.std.JsonWebKey
 import typings.std.RsaPssParams
-import typings.std.Uint8Array
 import typings.xmlCore.mod.XmlObject
 import typings.xmldsigjs.keyInfoClauseMod.KeyInfoClause
 import org.scalablytyped.runtime.StObject
@@ -15,7 +14,7 @@ object rsaKeyMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/rsa_key", "MaskGenerationFunction")
   @js.native
-  class MaskGenerationFunction () extends XmlObject {
+  open class MaskGenerationFunction () extends XmlObject {
     def this(properties: js.Object) = this()
     
     var Algorithm: String = js.native
@@ -25,7 +24,7 @@ object rsaKeyMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/rsa_key", "PssAlgorithmParams")
   @js.native
-  class PssAlgorithmParams () extends XmlObject {
+  open class PssAlgorithmParams () extends XmlObject {
     def this(algorithm: RsaPSSSignParams) = this()
     
     var DigestMethod: typings.xmldsigjs.digestMethodMod.DigestMethod = js.native
@@ -50,18 +49,18 @@ object rsaKeyMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/rsa_key", "RsaKeyValue")
   @js.native
-  class RsaKeyValue () extends KeyInfoClause {
+  open class RsaKeyValue () extends KeyInfoClause {
     def this(properties: js.Object) = this()
     
     /**
       * Gets the Exponent of the public key
       */
-    var Exponent: Uint8Array | Null = js.native
+    var Exponent: js.typedarray.Uint8Array | Null = js.native
     
     /**
       * Gets the Modulus of the public key
       */
-    var Modulus: Uint8Array | Null = js.native
+    var Modulus: js.typedarray.Uint8Array | Null = js.native
     
     /* protected */ var jwk: JsonWebKey | Null = js.native
     

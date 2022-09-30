@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IOneOf extends StObject {
+trait IOneOf
+  extends StObject
+     with AnyNestedObject {
   
   /** Oneof field names */
   var oneof: js.Array[String]

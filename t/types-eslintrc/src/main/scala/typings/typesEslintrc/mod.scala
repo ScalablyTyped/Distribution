@@ -174,57 +174,57 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.typesEslintrc.typesEslintrcNumbers.`3`
-    - typings.typesEslintrc.typesEslintrcNumbers.`5`
-    - typings.typesEslintrc.typesEslintrcNumbers.`6`
-    - typings.typesEslintrc.typesEslintrcNumbers.`7`
-    - typings.typesEslintrc.typesEslintrcNumbers.`8`
-    - typings.typesEslintrc.typesEslintrcNumbers.`9`
-    - typings.typesEslintrc.typesEslintrcNumbers.`10`
-    - typings.typesEslintrc.typesEslintrcNumbers.`11`
-    - typings.typesEslintrc.typesEslintrcNumbers.`12`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2015`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2016`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2017`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2018`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2019`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2020`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2021`
+    - typings.typesEslintrc.typesEslintrcInts.`3`
+    - typings.typesEslintrc.typesEslintrcInts.`5`
+    - typings.typesEslintrc.typesEslintrcInts.`6`
+    - typings.typesEslintrc.typesEslintrcInts.`7`
+    - typings.typesEslintrc.typesEslintrcInts.`8`
+    - typings.typesEslintrc.typesEslintrcInts.`9`
+    - typings.typesEslintrc.typesEslintrcInts.`10`
+    - typings.typesEslintrc.typesEslintrcInts.`11`
+    - typings.typesEslintrc.typesEslintrcInts.`12`
+    - typings.typesEslintrc.typesEslintrcInts.`2015`
+    - typings.typesEslintrc.typesEslintrcInts.`2016`
+    - typings.typesEslintrc.typesEslintrcInts.`2017`
+    - typings.typesEslintrc.typesEslintrcInts.`2018`
+    - typings.typesEslintrc.typesEslintrcInts.`2019`
+    - typings.typesEslintrc.typesEslintrcInts.`2020`
+    - typings.typesEslintrc.typesEslintrcInts.`2021`
   */
   trait ESLintECMAVersion extends StObject
   object ESLintECMAVersion {
     
-    inline def `10`: typings.typesEslintrc.typesEslintrcNumbers.`10` = 10.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`10`]
+    inline def `10`: typings.typesEslintrc.typesEslintrcInts.`10` = 10.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`10`]
     
-    inline def `11`: typings.typesEslintrc.typesEslintrcNumbers.`11` = 11.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`11`]
+    inline def `11`: typings.typesEslintrc.typesEslintrcInts.`11` = 11.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`11`]
     
-    inline def `12`: typings.typesEslintrc.typesEslintrcNumbers.`12` = 12.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`12`]
+    inline def `12`: typings.typesEslintrc.typesEslintrcInts.`12` = 12.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`12`]
     
-    inline def `2015`: typings.typesEslintrc.typesEslintrcNumbers.`2015` = 2015.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2015`]
+    inline def `2015`: typings.typesEslintrc.typesEslintrcInts.`2015` = 2015.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2015`]
     
-    inline def `2016`: typings.typesEslintrc.typesEslintrcNumbers.`2016` = 2016.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2016`]
+    inline def `2016`: typings.typesEslintrc.typesEslintrcInts.`2016` = 2016.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2016`]
     
-    inline def `2017`: typings.typesEslintrc.typesEslintrcNumbers.`2017` = 2017.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2017`]
+    inline def `2017`: typings.typesEslintrc.typesEslintrcInts.`2017` = 2017.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2017`]
     
-    inline def `2018`: typings.typesEslintrc.typesEslintrcNumbers.`2018` = 2018.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2018`]
+    inline def `2018`: typings.typesEslintrc.typesEslintrcInts.`2018` = 2018.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2018`]
     
-    inline def `2019`: typings.typesEslintrc.typesEslintrcNumbers.`2019` = 2019.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2019`]
+    inline def `2019`: typings.typesEslintrc.typesEslintrcInts.`2019` = 2019.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2019`]
     
-    inline def `2020`: typings.typesEslintrc.typesEslintrcNumbers.`2020` = 2020.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2020`]
+    inline def `2020`: typings.typesEslintrc.typesEslintrcInts.`2020` = 2020.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2020`]
     
-    inline def `2021`: typings.typesEslintrc.typesEslintrcNumbers.`2021` = 2021.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2021`]
+    inline def `2021`: typings.typesEslintrc.typesEslintrcInts.`2021` = 2021.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2021`]
     
-    inline def `3`: typings.typesEslintrc.typesEslintrcNumbers.`3` = 3.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`3`]
+    inline def `3`: typings.typesEslintrc.typesEslintrcInts.`3` = 3.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`3`]
     
-    inline def `5`: typings.typesEslintrc.typesEslintrcNumbers.`5` = 5.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`5`]
+    inline def `5`: typings.typesEslintrc.typesEslintrcInts.`5` = 5.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`5`]
     
-    inline def `6`: typings.typesEslintrc.typesEslintrcNumbers.`6` = 6.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`6`]
+    inline def `6`: typings.typesEslintrc.typesEslintrcInts.`6` = 6.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`6`]
     
-    inline def `7`: typings.typesEslintrc.typesEslintrcNumbers.`7` = 7.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`7`]
+    inline def `7`: typings.typesEslintrc.typesEslintrcInts.`7` = 7.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`7`]
     
-    inline def `8`: typings.typesEslintrc.typesEslintrcNumbers.`8` = 8.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`8`]
+    inline def `8`: typings.typesEslintrc.typesEslintrcInts.`8` = 8.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`8`]
     
-    inline def `9`: typings.typesEslintrc.typesEslintrcNumbers.`9` = 9.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`9`]
+    inline def `9`: typings.typesEslintrc.typesEslintrcInts.`9` = 9.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`9`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -314,9 +314,9 @@ object mod {
   type ESLintRules = StringDictionary[ESLintRule]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.typesEslintrc.typesEslintrcNumbers.`0`
-    - typings.typesEslintrc.typesEslintrcNumbers.`1`
-    - typings.typesEslintrc.typesEslintrcNumbers.`2`
+    - typings.typesEslintrc.typesEslintrcInts.`0`
+    - typings.typesEslintrc.typesEslintrcInts.`1`
+    - typings.typesEslintrc.typesEslintrcInts.`2`
     - typings.typesEslintrc.typesEslintrcStrings.off
     - typings.typesEslintrc.typesEslintrcStrings.warn
     - typings.typesEslintrc.typesEslintrcStrings.error
@@ -324,11 +324,11 @@ object mod {
   trait ESLintSeverity extends StObject
   object ESLintSeverity {
     
-    inline def `0`: typings.typesEslintrc.typesEslintrcNumbers.`0` = 0.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`0`]
+    inline def `0`: typings.typesEslintrc.typesEslintrcInts.`0` = 0.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`0`]
     
-    inline def `1`: typings.typesEslintrc.typesEslintrcNumbers.`1` = 1.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`1`]
+    inline def `1`: typings.typesEslintrc.typesEslintrcInts.`1` = 1.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`1`]
     
-    inline def `2`: typings.typesEslintrc.typesEslintrcNumbers.`2` = 2.asInstanceOf[typings.typesEslintrc.typesEslintrcNumbers.`2`]
+    inline def `2`: typings.typesEslintrc.typesEslintrcInts.`2` = 2.asInstanceOf[typings.typesEslintrc.typesEslintrcInts.`2`]
     
     inline def error: typings.typesEslintrc.typesEslintrcStrings.error = "error".asInstanceOf[typings.typesEslintrc.typesEslintrcStrings.error]
     

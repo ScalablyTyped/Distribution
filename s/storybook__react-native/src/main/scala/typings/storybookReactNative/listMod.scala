@@ -2,7 +2,7 @@ package typings.storybookReactNative
 
 import typings.react.mod.PureComponent
 import typings.react.mod.global.JSX.Element
-import typings.storybookAddons.distMod.Collection
+import typings.storybookAddons.ts39Mod.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +11,11 @@ object listMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/addons/list", JSImport.Default)
   @js.native
-  class default () extends AddonList
+  open class default () extends AddonList
   
   @js.native
   trait AddonList
-    extends PureComponent[Props, js.Object, js.Any] {
+    extends PureComponent[Props, js.Object, Any] {
     
     def renderTab(id: String, title: String): Element = js.native
   }

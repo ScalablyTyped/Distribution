@@ -35,12 +35,12 @@ object Name {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setUse(value: String | js.Array[String]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    inline def setUseVarargs(value: String*): Self = StObject.set(x, "use", js.Array(value :_*))
+    inline def setUseVarargs(value: String*): Self = StObject.set(x, "use", js.Array(value*))
   }
 }

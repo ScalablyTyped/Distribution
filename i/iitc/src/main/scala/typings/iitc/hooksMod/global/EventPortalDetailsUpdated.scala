@@ -14,11 +14,11 @@ trait EventPortalDetailsUpdated extends StObject {
   
   var portalData: PortalData
   
-  var portalDetails: js.Any
+  var portalDetails: Any
 }
 object EventPortalDetailsUpdated {
   
-  inline def apply(guid: String, portal: Portal, portalData: PortalData, portalDetails: js.Any): EventPortalDetailsUpdated = {
+  inline def apply(guid: String, portal: Portal, portalData: PortalData, portalDetails: Any): EventPortalDetailsUpdated = {
     val __obj = js.Dynamic.literal(guid = guid.asInstanceOf[js.Any], portal = portal.asInstanceOf[js.Any], portalData = portalData.asInstanceOf[js.Any], portalDetails = portalDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPortalDetailsUpdated]
   }
@@ -31,6 +31,6 @@ object EventPortalDetailsUpdated {
     
     inline def setPortalData(value: PortalData): Self = StObject.set(x, "portalData", value.asInstanceOf[js.Any])
     
-    inline def setPortalDetails(value: js.Any): Self = StObject.set(x, "portalDetails", value.asInstanceOf[js.Any])
+    inline def setPortalDetails(value: Any): Self = StObject.set(x, "portalDetails", value.asInstanceOf[js.Any])
   }
 }

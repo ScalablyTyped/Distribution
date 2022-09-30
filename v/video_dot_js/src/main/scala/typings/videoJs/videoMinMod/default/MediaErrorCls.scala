@@ -1,12 +1,12 @@
 package typings.videoJs.videoMinMod.default
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.videoJs.videoJsNumbers.`0`
-import typings.videoJs.videoJsNumbers.`1`
-import typings.videoJs.videoJsNumbers.`2`
-import typings.videoJs.videoJsNumbers.`3`
-import typings.videoJs.videoJsNumbers.`4`
-import typings.videoJs.videoJsNumbers.`5`
+import typings.videoJs.videoJsInts.`0`
+import typings.videoJs.videoJsInts.`1`
+import typings.videoJs.videoJsInts.`2`
+import typings.videoJs.videoJsInts.`3`
+import typings.videoJs.videoJsInts.`4`
+import typings.videoJs.videoJsInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

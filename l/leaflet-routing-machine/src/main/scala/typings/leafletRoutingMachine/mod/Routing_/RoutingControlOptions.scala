@@ -18,12 +18,12 @@ trait RoutingControlOptions
   
   var autoRoute: js.UndefOr[Boolean] = js.undefined
   
-  var defaultErrorHandler: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
+  var defaultErrorHandler: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
   
   // IGeocorder is from other library;
   var fitSelectedRoutes: js.UndefOr[smart | Boolean] = js.undefined
   
-  var geocoder: js.UndefOr[js.Any] = js.undefined
+  var geocoder: js.UndefOr[Any] = js.undefined
   
   var lineOptions: js.UndefOr[LineOptions] = js.undefined
   
@@ -66,7 +66,7 @@ object RoutingControlOptions {
     
     inline def setAutoRouteUndefined: Self = StObject.set(x, "autoRoute", js.undefined)
     
-    inline def setDefaultErrorHandler(value: /* error */ js.Any => Unit): Self = StObject.set(x, "defaultErrorHandler", js.Any.fromFunction1(value))
+    inline def setDefaultErrorHandler(value: /* error */ Any => Unit): Self = StObject.set(x, "defaultErrorHandler", js.Any.fromFunction1(value))
     
     inline def setDefaultErrorHandlerUndefined: Self = StObject.set(x, "defaultErrorHandler", js.undefined)
     
@@ -74,7 +74,7 @@ object RoutingControlOptions {
     
     inline def setFitSelectedRoutesUndefined: Self = StObject.set(x, "fitSelectedRoutes", js.undefined)
     
-    inline def setGeocoder(value: js.Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
+    inline def setGeocoder(value: Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
     
     inline def setGeocoderUndefined: Self = StObject.set(x, "geocoder", js.undefined)
     
@@ -118,6 +118,6 @@ object RoutingControlOptions {
     
     inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
     
-    inline def setWaypointsVarargs(value: (LatLng_ | Waypoint_)*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: (LatLng_ | Waypoint_)*): Self = StObject.set(x, "waypoints", js.Array(value*))
   }
 }

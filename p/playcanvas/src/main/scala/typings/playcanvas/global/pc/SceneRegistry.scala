@@ -20,6 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
   */
 /**
+  * Callback used by {@link SceneRegistry#changeScene}.
+  *
+  * @callback ChangeSceneCallback
+  * @param {string|null} err - The error message in the case where the loading or parsing fails.
+  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  */
+/**
   * Callback used by {@link SceneRegistry#loadScene}.
   *
   * @callback LoadSceneCallback

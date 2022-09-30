@@ -1,84 +1,124 @@
 package typings.mongodb.mod
 
+import typings.node.eventsMod.EventEmitter
+import typings.node.eventsMod.EventEmitterOptions
+import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Type-safe event emitter from https://github.com/andywer/typed-emitter.
-  *
-  * Use it like this:
-  *
-  * interface MyEvents {
-  *   error: (error: Error) => void
-  *   message: (from: string, content: string) => void
-  * }
-  *
-  * const myEmitter = new EventEmitter() as TypedEmitter<MyEvents>
-  *
-  * myEmitter.on("message", (from, content) => {
-  *   // ...
-  * })
-  *
-  * myEmitter.emit("error", "x")  // <- Will catch this type error
-  */
+@JSImport("mongodb", "TypedEventEmitter")
 @js.native
-trait TypedEventEmitter[Events] extends StObject {
+open class TypedEventEmitter[Events /* <: EventsDescription */] () extends EventEmitter {
+  def this(options: EventEmitterOptions) = this()
   
-  def addListener[E /* <: /* keyof Events */ String */](
-    event: E,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def addListener(event: String, listener: GenericListener): this.type = js.native
+  def addListener(event: js.Symbol, listener: GenericListener): this.type = js.native
+  def addListener(
+    event: CommonEvents,
+    listener: js.Function2[/* eventName */ String | js.Symbol, /* listener */ GenericListener, Unit]
+  ): this.type = js.native
+  def addListener[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
   ): this.type = js.native
   
-  def emit[E /* <: /* keyof Events */ String */](
-    event: E,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventArguments<Events[E]> is not an array type */ args: EventArguments[
-      /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def emit[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Events[EventKey]> is not an array type */ args: Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
+    ]
+  ): Boolean = js.native
+  def emit[EventKey /* <: /* keyof Events */ String */](
+    event: js.Symbol,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Events[EventKey]> is not an array type */ args: Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
     ]
   ): Boolean = js.native
   
-  def eventNames(): js.Array[/* keyof Events */ String] = js.native
+  def listenerCount[EventKey /* <: /* keyof Events */ String */](`type`: EventKey): scala.Double = js.native
+  def listenerCount[EventKey /* <: /* keyof Events */ String */](`type`: CommonEvents): scala.Double = js.native
   
-  def getMaxListeners(): scala.Double = js.native
+  def listeners[EventKey /* <: /* keyof Events */ String */](event: EventKey): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
+  ] = js.native
+  def listeners[EventKey /* <: /* keyof Events */ String */](event: CommonEvents): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
+  ] = js.native
   
-  def listenerCount[E /* <: /* keyof Events */ String */](event: E): scala.Double = js.native
-  
-  def listeners[E /* <: /* keyof Events */ String */](event: E): js.Array[js.Function] = js.native
-  
-  def off[E /* <: /* keyof Events */ String */](
-    event: E,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def off(event: String, listener: GenericListener): this.type = js.native
+  def off(event: js.Symbol, listener: GenericListener): this.type = js.native
+  def off(
+    event: CommonEvents,
+    listener: js.Function2[/* eventName */ String | js.Symbol, /* listener */ GenericListener, Unit]
+  ): this.type = js.native
+  def off[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
   ): this.type = js.native
   
-  def on[E /* <: /* keyof Events */ String */](
-    event: E,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def on(event: String, listener: GenericListener): this.type = js.native
+  def on(event: js.Symbol, listener: GenericListener): this.type = js.native
+  def on(
+    event: CommonEvents,
+    listener: js.Function2[/* eventName */ String | js.Symbol, /* listener */ GenericListener, Unit]
+  ): this.type = js.native
+  def on[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
   ): this.type = js.native
   
-  def once[E /* <: /* keyof Events */ String */](
-    event: E,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def once(event: String, listener: GenericListener): this.type = js.native
+  def once(event: js.Symbol, listener: GenericListener): this.type = js.native
+  def once(
+    event: CommonEvents,
+    listener: js.Function2[/* eventName */ String | js.Symbol, /* listener */ GenericListener, Unit]
+  ): this.type = js.native
+  def once[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
   ): this.type = js.native
   
-  def prependListener[E /* <: /* keyof Events */ String */](
-    event: E,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def prependListener(event: String, listener: GenericListener): this.type = js.native
+  def prependListener(event: js.Symbol, listener: GenericListener): this.type = js.native
+  def prependListener(
+    event: CommonEvents,
+    listener: js.Function2[/* eventName */ String | js.Symbol, /* listener */ GenericListener, Unit]
+  ): this.type = js.native
+  def prependListener[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
   ): this.type = js.native
   
-  def prependOnceListener[E /* <: /* keyof Events */ String */](
-    event: E,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def prependOnceListener(event: String, listener: GenericListener): this.type = js.native
+  def prependOnceListener(event: js.Symbol, listener: GenericListener): this.type = js.native
+  def prependOnceListener(
+    event: CommonEvents,
+    listener: js.Function2[/* eventName */ String | js.Symbol, /* listener */ GenericListener, Unit]
+  ): this.type = js.native
+  def prependOnceListener[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
   ): this.type = js.native
   
-  def rawListeners[E /* <: /* keyof Events */ String */](event: E): js.Array[js.Function] = js.native
+  def rawListeners[EventKey /* <: /* keyof Events */ String */](event: EventKey): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
+  ] = js.native
+  def rawListeners[EventKey /* <: /* keyof Events */ String */](event: CommonEvents): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
+  ] = js.native
   
-  def removeAllListeners[E /* <: /* keyof Events */ String */](): this.type = js.native
-  def removeAllListeners[E /* <: /* keyof Events */ String */](event: E): this.type = js.native
+  def removeAllListeners[EventKey /* <: /* keyof Events */ String */](event: EventKey): this.type = js.native
+  def removeAllListeners[EventKey /* <: /* keyof Events */ String */](event: CommonEvents): this.type = js.native
   
-  def removeListener[E /* <: /* keyof Events */ String */](
-    event: E,
-    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[E] */ js.Any
+  def removeListener(event: String, listener: GenericListener): this.type = js.native
+  def removeListener(event: js.Symbol, listener: GenericListener): this.type = js.native
+  def removeListener(
+    event: CommonEvents,
+    listener: js.Function2[/* eventName */ String | js.Symbol, /* listener */ GenericListener, Unit]
   ): this.type = js.native
-  
-  def setMaxListeners(maxListeners: scala.Double): this.type = js.native
+  def removeListener[EventKey /* <: /* keyof Events */ String */](
+    event: EventKey,
+    listener: /* import warning: importer.ImportType#apply Failed type conversion: Events[EventKey] */ js.Any
+  ): this.type = js.native
 }

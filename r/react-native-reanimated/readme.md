@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-reanimated
 
-Typings are for version 1.13.2
+Typings are for version 2.10.0
 
 ## Library description:
 More powerful alternative to Animated library for React Native.
@@ -10,10 +10,10 @@ More powerful alternative to Animated library for React Native.
 | ------------------ | :-------------: |
 | Full name          | react-native-reanimated |
 | Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 346 |
-| # downloads        | 16145739 |
-| # stars            | 0 |
+| # releases         | 47 |
+| # dependents       | 0.0 |
+| # downloads        | 1893891.6666666667 |
+| # stars            | 6502.0 |
 
 ## Links
 - [Homepage](https://github.com/software-mansion/react-native-reanimated#readme)

@@ -1,8 +1,8 @@
 package typings.kbmRobot
 
 import org.scalablytyped.runtime.Shortcut
-import typings.kbmRobot.kbmRobotNumbers.`6`
-import typings.kbmRobot.kbmRobotNumbers.`7`
+import typings.kbmRobot.kbmRobotInts.`6`
+import typings.kbmRobot.kbmRobotInts.`7`
 import typings.kbmRobot.kbmRobotStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,272 +54,15 @@ object mod extends Shortcut {
     def typeString(str: Unit, downDelay: Unit, upDelay: Double): KBMRobot = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.kbmRobot.kbmRobotStrings.VK_ENTER
-    - typings.kbmRobot.kbmRobotStrings.VK_BACK_SPACE
-    - typings.kbmRobot.kbmRobotStrings.VK_TAB
-    - typings.kbmRobot.kbmRobotStrings.VK_CANCEL
-    - typings.kbmRobot.kbmRobotStrings.VK_CLEAR
-    - typings.kbmRobot.kbmRobotStrings.VK_SHIFT
-    - typings.kbmRobot.kbmRobotStrings.VK_CONTROL
-    - typings.kbmRobot.kbmRobotStrings.VK_ALT
-    - typings.kbmRobot.kbmRobotStrings.VK_PAUSE
-    - typings.kbmRobot.kbmRobotStrings.VK_CAPS_LOCK
-    - typings.kbmRobot.kbmRobotStrings.VK_ESCAPE
-    - typings.kbmRobot.kbmRobotStrings.VK_SPACE
-    - typings.kbmRobot.kbmRobotStrings.VK_PAGE_UP
-    - typings.kbmRobot.kbmRobotStrings.VK_PAGE_DOWN
-    - typings.kbmRobot.kbmRobotStrings.VK_END
-    - typings.kbmRobot.kbmRobotStrings.VK_HOME
-    - typings.kbmRobot.kbmRobotStrings.VK_LEFT
-    - typings.kbmRobot.kbmRobotStrings.VK_UP
-    - typings.kbmRobot.kbmRobotStrings.VK_RIGHT
-    - typings.kbmRobot.kbmRobotStrings.VK_DOWN
-    - typings.kbmRobot.kbmRobotStrings.VK_COMMA
-    - typings.kbmRobot.kbmRobotStrings.VK_MINUS
-    - typings.kbmRobot.kbmRobotStrings.VK_PERIOD
-    - typings.kbmRobot.kbmRobotStrings.VK_SLASH
-    - typings.kbmRobot.kbmRobotStrings.VK_0
-    - typings.kbmRobot.kbmRobotStrings.VK_1
-    - typings.kbmRobot.kbmRobotStrings.VK_2
-    - typings.kbmRobot.kbmRobotStrings.VK_3
-    - typings.kbmRobot.kbmRobotStrings.VK_4
-    - typings.kbmRobot.kbmRobotStrings.VK_5
-    - typings.kbmRobot.kbmRobotStrings.VK_6
-    - typings.kbmRobot.kbmRobotStrings.VK_7
-    - typings.kbmRobot.kbmRobotStrings.VK_8
-    - typings.kbmRobot.kbmRobotStrings.VK_9
-    - typings.kbmRobot.kbmRobotStrings.VK_SEMICOLON
-    - typings.kbmRobot.kbmRobotStrings.VK_EQUALS
-    - typings.kbmRobot.kbmRobotStrings.VK_A
-    - typings.kbmRobot.kbmRobotStrings.VK_B
-    - typings.kbmRobot.kbmRobotStrings.VK_C
-    - typings.kbmRobot.kbmRobotStrings.VK_D
-    - typings.kbmRobot.kbmRobotStrings.VK_E
-    - typings.kbmRobot.kbmRobotStrings.VK_F
-    - typings.kbmRobot.kbmRobotStrings.VK_G
-    - typings.kbmRobot.kbmRobotStrings.VK_H
-    - typings.kbmRobot.kbmRobotStrings.VK_I
-    - typings.kbmRobot.kbmRobotStrings.VK_J
-    - typings.kbmRobot.kbmRobotStrings.VK_K
-    - typings.kbmRobot.kbmRobotStrings.VK_L
-    - typings.kbmRobot.kbmRobotStrings.VK_M
-    - typings.kbmRobot.kbmRobotStrings.VK_N
-    - typings.kbmRobot.kbmRobotStrings.VK_O
-    - typings.kbmRobot.kbmRobotStrings.VK_P
-    - typings.kbmRobot.kbmRobotStrings.VK_Q
-    - typings.kbmRobot.kbmRobotStrings.VK_R
-    - typings.kbmRobot.kbmRobotStrings.VK_S
-    - typings.kbmRobot.kbmRobotStrings.VK_T
-    - typings.kbmRobot.kbmRobotStrings.VK_U
-    - typings.kbmRobot.kbmRobotStrings.VK_V
-    - typings.kbmRobot.kbmRobotStrings.VK_W
-    - typings.kbmRobot.kbmRobotStrings.VK_X
-    - typings.kbmRobot.kbmRobotStrings.VK_Y
-    - typings.kbmRobot.kbmRobotStrings.VK_Z
-    - typings.kbmRobot.kbmRobotStrings.VK_OPEN_BRACKET
-    - typings.kbmRobot.kbmRobotStrings.VK_BACK_SLASH
-    - typings.kbmRobot.kbmRobotStrings.VK_CLOSE_BRACKET
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD0
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD1
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD2
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD3
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD4
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD5
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD6
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD7
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD8
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD9
-    - typings.kbmRobot.kbmRobotStrings.VK_MULTIPLY
-    - typings.kbmRobot.kbmRobotStrings.VK_ADD
-    - typings.kbmRobot.kbmRobotStrings.VK_SEPARATER
-    - typings.kbmRobot.kbmRobotStrings.VK_SEPARATOR
-    - typings.kbmRobot.kbmRobotStrings.VK_SUBTRACT
-    - typings.kbmRobot.kbmRobotStrings.VK_DECIMAL
-    - typings.kbmRobot.kbmRobotStrings.VK_DIVIDE
-    - typings.kbmRobot.kbmRobotStrings.VK_DELETE
-    - typings.kbmRobot.kbmRobotStrings.VK_NUM_LOCK
-    - typings.kbmRobot.kbmRobotStrings.VK_SCROLL_LOCK
-    - typings.kbmRobot.kbmRobotStrings.VK_F1
-    - typings.kbmRobot.kbmRobotStrings.VK_F2
-    - typings.kbmRobot.kbmRobotStrings.VK_F3
-    - typings.kbmRobot.kbmRobotStrings.VK_F4
-    - typings.kbmRobot.kbmRobotStrings.VK_F5
-    - typings.kbmRobot.kbmRobotStrings.VK_F6
-    - typings.kbmRobot.kbmRobotStrings.VK_F7
-    - typings.kbmRobot.kbmRobotStrings.VK_F8
-    - typings.kbmRobot.kbmRobotStrings.VK_F9
-    - typings.kbmRobot.kbmRobotStrings.VK_F10
-    - typings.kbmRobot.kbmRobotStrings.VK_F11
-    - typings.kbmRobot.kbmRobotStrings.VK_F12
-    - typings.kbmRobot.kbmRobotStrings.VK_F13
-    - typings.kbmRobot.kbmRobotStrings.VK_F14
-    - typings.kbmRobot.kbmRobotStrings.VK_F15
-    - typings.kbmRobot.kbmRobotStrings.VK_F16
-    - typings.kbmRobot.kbmRobotStrings.VK_F17
-    - typings.kbmRobot.kbmRobotStrings.VK_F18
-    - typings.kbmRobot.kbmRobotStrings.VK_F19
-    - typings.kbmRobot.kbmRobotStrings.VK_F20
-    - typings.kbmRobot.kbmRobotStrings.VK_F21
-    - typings.kbmRobot.kbmRobotStrings.VK_F22
-    - typings.kbmRobot.kbmRobotStrings.VK_F23
-    - typings.kbmRobot.kbmRobotStrings.VK_F24
-    - typings.kbmRobot.kbmRobotStrings.VK_PRINTSCREEN
-    - typings.kbmRobot.kbmRobotStrings.VK_INSERT
-    - typings.kbmRobot.kbmRobotStrings.VK_HELP
-    - typings.kbmRobot.kbmRobotStrings.VK_META
-    - typings.kbmRobot.kbmRobotStrings.VK_BACK_QUOTE
-    - typings.kbmRobot.kbmRobotStrings.VK_QUOTE
-    - typings.kbmRobot.kbmRobotStrings.VK_KP_UP
-    - typings.kbmRobot.kbmRobotStrings.VK_KP_DOWN
-    - typings.kbmRobot.kbmRobotStrings.VK_KP_LEFT
-    - typings.kbmRobot.kbmRobotStrings.VK_KP_RIGHT
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_GRAVE
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_ACUTE
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_CIRCUMFLEX
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_TILDE
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_MACRON
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_BREVE
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_ABOVEDOT
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_DIAERESIS
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_ABOVERING
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_DOUBLEACUTE
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_CARON
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_CEDILLA
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_OGONEK
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_IOTA
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_VOICED_SOUND
-    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_SEMIVOICED_SOUND
-    - typings.kbmRobot.kbmRobotStrings.VK_AMPERSAND
-    - typings.kbmRobot.kbmRobotStrings.VK_ASTERISK
-    - typings.kbmRobot.kbmRobotStrings.VK_QUOTEDBL
-    - typings.kbmRobot.kbmRobotStrings.VK_LESS
-    - typings.kbmRobot.kbmRobotStrings.VK_GREATER
-    - typings.kbmRobot.kbmRobotStrings.VK_BRACELEFT
-    - typings.kbmRobot.kbmRobotStrings.VK_BRACERIGHT
-    - typings.kbmRobot.kbmRobotStrings.VK_AT
-    - typings.kbmRobot.kbmRobotStrings.VK_COLON
-    - typings.kbmRobot.kbmRobotStrings.VK_CIRCUMFLEX
-    - typings.kbmRobot.kbmRobotStrings.VK_DOLLAR
-    - typings.kbmRobot.kbmRobotStrings.VK_EURO_SIGN
-    - typings.kbmRobot.kbmRobotStrings.VK_EXCLAMATION_MARK
-    - typings.kbmRobot.kbmRobotStrings.VK_INVERTED_EXCLAMATION_MARK
-    - typings.kbmRobot.kbmRobotStrings.VK_LEFT_PARENTHESIS
-    - typings.kbmRobot.kbmRobotStrings.VK_NUMBER_SIGN
-    - typings.kbmRobot.kbmRobotStrings.VK_PLUS
-    - typings.kbmRobot.kbmRobotStrings.VK_RIGHT_PARENTHESIS
-    - typings.kbmRobot.kbmRobotStrings.VK_UNDERSCORE
-    - typings.kbmRobot.kbmRobotStrings.VK_WINDOWS
-    - typings.kbmRobot.kbmRobotStrings.VK_CONTEXT_MENU
-    - typings.kbmRobot.kbmRobotStrings.VK_FINAL
-    - typings.kbmRobot.kbmRobotStrings.VK_CONVERT
-    - typings.kbmRobot.kbmRobotStrings.VK_NONCONVERT
-    - typings.kbmRobot.kbmRobotStrings.VK_ACCEPT
-    - typings.kbmRobot.kbmRobotStrings.VK_MODECHANGE
-    - typings.kbmRobot.kbmRobotStrings.VK_KANA
-    - typings.kbmRobot.kbmRobotStrings.VK_KANJI
-    - typings.kbmRobot.kbmRobotStrings.VK_ALPHANUMERIC
-    - typings.kbmRobot.kbmRobotStrings.VK_KATAKANA
-    - typings.kbmRobot.kbmRobotStrings.VK_HIRAGANA
-    - typings.kbmRobot.kbmRobotStrings.VK_FULL_WIDTH
-    - typings.kbmRobot.kbmRobotStrings.VK_HALF_WIDTH
-    - typings.kbmRobot.kbmRobotStrings.VK_ROMAN_CHARACTERS
-    - typings.kbmRobot.kbmRobotStrings.VK_ALL_CANDIDATES
-    - typings.kbmRobot.kbmRobotStrings.VK_PREVIOUS_CANDIDATE
-    - typings.kbmRobot.kbmRobotStrings.VK_CODE_INPUT
-    - typings.kbmRobot.kbmRobotStrings.VK_JAPANESE_KATAKANA
-    - typings.kbmRobot.kbmRobotStrings.VK_JAPANESE_HIRAGANA
-    - typings.kbmRobot.kbmRobotStrings.VK_JAPANESE_ROMAN
-    - typings.kbmRobot.kbmRobotStrings.VK_KANA_LOCK
-    - typings.kbmRobot.kbmRobotStrings.VK_INPUT_METHOD_ON_OFF
-    - typings.kbmRobot.kbmRobotStrings.VK_CUT
-    - typings.kbmRobot.kbmRobotStrings.VK_COPY
-    - typings.kbmRobot.kbmRobotStrings.VK_PASTE
-    - typings.kbmRobot.kbmRobotStrings.VK_UNDO
-    - typings.kbmRobot.kbmRobotStrings.VK_AGAIN
-    - typings.kbmRobot.kbmRobotStrings.VK_FIND
-    - typings.kbmRobot.kbmRobotStrings.VK_PROPS
-    - typings.kbmRobot.kbmRobotStrings.VK_STOP
-    - typings.kbmRobot.kbmRobotStrings.VK_COMPOSE
-    - typings.kbmRobot.kbmRobotStrings.VK_ALT_GRAPH
-    - typings.kbmRobot.kbmRobotStrings.VK_BEGIN
-    - typings.kbmRobot.kbmRobotStrings.VK_UNDEFINED
-    - typings.kbmRobot.kbmRobotStrings.ESC
-    - typings.kbmRobot.kbmRobotStrings.F1
-    - typings.kbmRobot.kbmRobotStrings.F2
-    - typings.kbmRobot.kbmRobotStrings.F3
-    - typings.kbmRobot.kbmRobotStrings.F4
-    - typings.kbmRobot.kbmRobotStrings.F5
-    - typings.kbmRobot.kbmRobotStrings.F6
-    - typings.kbmRobot.kbmRobotStrings.F7
-    - typings.kbmRobot.kbmRobotStrings.F8
-    - typings.kbmRobot.kbmRobotStrings.F9
-    - typings.kbmRobot.kbmRobotStrings.F10
-    - typings.kbmRobot.kbmRobotStrings.F11
-    - typings.kbmRobot.kbmRobotStrings.F12
-    - typings.kbmRobot.kbmRobotStrings.CTRL
-    - typings.kbmRobot.kbmRobotStrings.META
-    - typings.kbmRobot.kbmRobotStrings.SUPER
-    - typings.kbmRobot.kbmRobotStrings.ALT
-    - typings.kbmRobot.kbmRobotStrings.Space
-    - typings.kbmRobot.kbmRobotStrings.SPACE
-    - typings.kbmRobot.kbmRobotStrings.LEFT
-    - typings.kbmRobot.kbmRobotStrings.DOWN
-    - typings.kbmRobot.kbmRobotStrings.RIGHT
-    - typings.kbmRobot.kbmRobotStrings.UP
-    - typings.kbmRobot.kbmRobotStrings.TAB
-    - typings.kbmRobot.kbmRobotStrings.SHIFT
-    - typings.kbmRobot.kbmRobotStrings.ENTER
-    - typings.kbmRobot.kbmRobotStrings.Linefeed
-    - typings.kbmRobot.kbmRobotStrings.CAPS_LOCK
-    - typings.kbmRobot.kbmRobotStrings.PRINT_SCREEN
-    - typings.kbmRobot.kbmRobotStrings.SCROLL_LOCK
-    - typings.kbmRobot.kbmRobotStrings.PAUSE_BREAK
-    - typings.kbmRobot.kbmRobotStrings.BACKSPACE
-    - typings.kbmRobot.kbmRobotStrings.DELETE
-    - typings.kbmRobot.kbmRobotStrings.HOME
-    - typings.kbmRobot.kbmRobotStrings.END
-    - typings.kbmRobot.kbmRobotStrings.INSERT
-    - typings.kbmRobot.kbmRobotStrings.PAGE_UP
-    - typings.kbmRobot.kbmRobotStrings.PAGE_DOWN
-    - typings.kbmRobot.kbmRobotStrings.NUM_LOCK
-    - typings.kbmRobot.kbmRobotStrings.Graveaccent
-    - typings.kbmRobot.kbmRobotStrings.`-_`
-    - typings.kbmRobot.kbmRobotStrings.Equalssign
-    - typings.kbmRobot.kbmRobotStrings.`[`
-    - typings.kbmRobot.kbmRobotStrings.`]`
-    - typings.kbmRobot.kbmRobotStrings.Backslash
-    - typings.kbmRobot.kbmRobotStrings.Semicolon
-    - typings.kbmRobot.kbmRobotStrings.Apostrophe
-    - typings.kbmRobot.kbmRobotStrings.Comma
-    - typings.kbmRobot.kbmRobotStrings.Dot
-    - typings.kbmRobot.kbmRobotStrings.Slash
-    - typings.kbmRobot.kbmRobotStrings.KP_ADD
-    - typings.kbmRobot.kbmRobotStrings.`KP_-`
-    - typings.kbmRobot.kbmRobotStrings.KP_Asterisk
-    - typings.kbmRobot.kbmRobotStrings.KP_Slash
-    - typings.kbmRobot.kbmRobotStrings.KP_0
-    - typings.kbmRobot.kbmRobotStrings.KP_Dot
-    - typings.kbmRobot.kbmRobotStrings.KP_1
-    - typings.kbmRobot.kbmRobotStrings.KP_2
-    - typings.kbmRobot.kbmRobotStrings.KP_3
-    - typings.kbmRobot.kbmRobotStrings.KP_4
-    - typings.kbmRobot.kbmRobotStrings.KP_5
-    - typings.kbmRobot.kbmRobotStrings.KP_6
-    - typings.kbmRobot.kbmRobotStrings.KP_7
-    - typings.kbmRobot.kbmRobotStrings.KP_8
-    - typings.kbmRobot.kbmRobotStrings.KP_9
-  */
-  trait Key extends StObject
   object Key {
     
     inline def ALT: typings.kbmRobot.kbmRobotStrings.ALT = "ALT".asInstanceOf[typings.kbmRobot.kbmRobotStrings.ALT]
     
-    inline def Apostrophe: typings.kbmRobot.kbmRobotStrings.Apostrophe = "'".asInstanceOf[typings.kbmRobot.kbmRobotStrings.Apostrophe]
+    inline def Apostrophe: String = String.asInstanceOf[String]
     
     inline def BACKSPACE: typings.kbmRobot.kbmRobotStrings.BACKSPACE = "BACKSPACE".asInstanceOf[typings.kbmRobot.kbmRobotStrings.BACKSPACE]
     
-    inline def Backslash: typings.kbmRobot.kbmRobotStrings.Backslash = "\\".asInstanceOf[typings.kbmRobot.kbmRobotStrings.Backslash]
+    inline def Backslash: String = String.asInstanceOf[String]
     
     inline def CAPS_LOCK: typings.kbmRobot.kbmRobotStrings.CAPS_LOCK = "CAPS_LOCK".asInstanceOf[typings.kbmRobot.kbmRobotStrings.CAPS_LOCK]
     
@@ -821,27 +564,266 @@ object mod extends Shortcut {
     
     inline def _dash: `-_` = "-".asInstanceOf[`-_`]
   }
-  
   /* Rewritten from type alias, can be one of: 
-    - typings.kbmRobot.kbmRobotStrings.DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket
-    - typings.kbmRobot.kbmRobotStrings.DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket
-    - typings.kbmRobot.kbmRobotStrings.`1`
-    - typings.kbmRobot.kbmRobotStrings.`2`
-    - typings.kbmRobot.kbmRobotStrings.`3`
+    - typings.kbmRobot.kbmRobotStrings.VK_ENTER
+    - typings.kbmRobot.kbmRobotStrings.VK_BACK_SPACE
+    - typings.kbmRobot.kbmRobotStrings.VK_TAB
+    - typings.kbmRobot.kbmRobotStrings.VK_CANCEL
+    - typings.kbmRobot.kbmRobotStrings.VK_CLEAR
+    - typings.kbmRobot.kbmRobotStrings.VK_SHIFT
+    - typings.kbmRobot.kbmRobotStrings.VK_CONTROL
+    - typings.kbmRobot.kbmRobotStrings.VK_ALT
+    - typings.kbmRobot.kbmRobotStrings.VK_PAUSE
+    - typings.kbmRobot.kbmRobotStrings.VK_CAPS_LOCK
+    - typings.kbmRobot.kbmRobotStrings.VK_ESCAPE
+    - typings.kbmRobot.kbmRobotStrings.VK_SPACE
+    - typings.kbmRobot.kbmRobotStrings.VK_PAGE_UP
+    - typings.kbmRobot.kbmRobotStrings.VK_PAGE_DOWN
+    - typings.kbmRobot.kbmRobotStrings.VK_END
+    - typings.kbmRobot.kbmRobotStrings.VK_HOME
+    - typings.kbmRobot.kbmRobotStrings.VK_LEFT
+    - typings.kbmRobot.kbmRobotStrings.VK_UP
+    - typings.kbmRobot.kbmRobotStrings.VK_RIGHT
+    - typings.kbmRobot.kbmRobotStrings.VK_DOWN
+    - typings.kbmRobot.kbmRobotStrings.VK_COMMA
+    - typings.kbmRobot.kbmRobotStrings.VK_MINUS
+    - typings.kbmRobot.kbmRobotStrings.VK_PERIOD
+    - typings.kbmRobot.kbmRobotStrings.VK_SLASH
+    - typings.kbmRobot.kbmRobotStrings.VK_0
+    - typings.kbmRobot.kbmRobotStrings.VK_1
+    - typings.kbmRobot.kbmRobotStrings.VK_2
+    - typings.kbmRobot.kbmRobotStrings.VK_3
+    - typings.kbmRobot.kbmRobotStrings.VK_4
+    - typings.kbmRobot.kbmRobotStrings.VK_5
+    - typings.kbmRobot.kbmRobotStrings.VK_6
+    - typings.kbmRobot.kbmRobotStrings.VK_7
+    - typings.kbmRobot.kbmRobotStrings.VK_8
+    - typings.kbmRobot.kbmRobotStrings.VK_9
+    - typings.kbmRobot.kbmRobotStrings.VK_SEMICOLON
+    - typings.kbmRobot.kbmRobotStrings.VK_EQUALS
+    - typings.kbmRobot.kbmRobotStrings.VK_A
+    - typings.kbmRobot.kbmRobotStrings.VK_B
+    - typings.kbmRobot.kbmRobotStrings.VK_C
+    - typings.kbmRobot.kbmRobotStrings.VK_D
+    - typings.kbmRobot.kbmRobotStrings.VK_E
+    - typings.kbmRobot.kbmRobotStrings.VK_F
+    - typings.kbmRobot.kbmRobotStrings.VK_G
+    - typings.kbmRobot.kbmRobotStrings.VK_H
+    - typings.kbmRobot.kbmRobotStrings.VK_I
+    - typings.kbmRobot.kbmRobotStrings.VK_J
+    - typings.kbmRobot.kbmRobotStrings.VK_K
+    - typings.kbmRobot.kbmRobotStrings.VK_L
+    - typings.kbmRobot.kbmRobotStrings.VK_M
+    - typings.kbmRobot.kbmRobotStrings.VK_N
+    - typings.kbmRobot.kbmRobotStrings.VK_O
+    - typings.kbmRobot.kbmRobotStrings.VK_P
+    - typings.kbmRobot.kbmRobotStrings.VK_Q
+    - typings.kbmRobot.kbmRobotStrings.VK_R
+    - typings.kbmRobot.kbmRobotStrings.VK_S
+    - typings.kbmRobot.kbmRobotStrings.VK_T
+    - typings.kbmRobot.kbmRobotStrings.VK_U
+    - typings.kbmRobot.kbmRobotStrings.VK_V
+    - typings.kbmRobot.kbmRobotStrings.VK_W
+    - typings.kbmRobot.kbmRobotStrings.VK_X
+    - typings.kbmRobot.kbmRobotStrings.VK_Y
+    - typings.kbmRobot.kbmRobotStrings.VK_Z
+    - typings.kbmRobot.kbmRobotStrings.VK_OPEN_BRACKET
+    - typings.kbmRobot.kbmRobotStrings.VK_BACK_SLASH
+    - typings.kbmRobot.kbmRobotStrings.VK_CLOSE_BRACKET
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD0
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD1
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD2
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD3
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD4
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD5
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD6
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD7
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD8
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMPAD9
+    - typings.kbmRobot.kbmRobotStrings.VK_MULTIPLY
+    - typings.kbmRobot.kbmRobotStrings.VK_ADD
+    - typings.kbmRobot.kbmRobotStrings.VK_SEPARATER
+    - typings.kbmRobot.kbmRobotStrings.VK_SEPARATOR
+    - typings.kbmRobot.kbmRobotStrings.VK_SUBTRACT
+    - typings.kbmRobot.kbmRobotStrings.VK_DECIMAL
+    - typings.kbmRobot.kbmRobotStrings.VK_DIVIDE
+    - typings.kbmRobot.kbmRobotStrings.VK_DELETE
+    - typings.kbmRobot.kbmRobotStrings.VK_NUM_LOCK
+    - typings.kbmRobot.kbmRobotStrings.VK_SCROLL_LOCK
+    - typings.kbmRobot.kbmRobotStrings.VK_F1
+    - typings.kbmRobot.kbmRobotStrings.VK_F2
+    - typings.kbmRobot.kbmRobotStrings.VK_F3
+    - typings.kbmRobot.kbmRobotStrings.VK_F4
+    - typings.kbmRobot.kbmRobotStrings.VK_F5
+    - typings.kbmRobot.kbmRobotStrings.VK_F6
+    - typings.kbmRobot.kbmRobotStrings.VK_F7
+    - typings.kbmRobot.kbmRobotStrings.VK_F8
+    - typings.kbmRobot.kbmRobotStrings.VK_F9
+    - typings.kbmRobot.kbmRobotStrings.VK_F10
+    - typings.kbmRobot.kbmRobotStrings.VK_F11
+    - typings.kbmRobot.kbmRobotStrings.VK_F12
+    - typings.kbmRobot.kbmRobotStrings.VK_F13
+    - typings.kbmRobot.kbmRobotStrings.VK_F14
+    - typings.kbmRobot.kbmRobotStrings.VK_F15
+    - typings.kbmRobot.kbmRobotStrings.VK_F16
+    - typings.kbmRobot.kbmRobotStrings.VK_F17
+    - typings.kbmRobot.kbmRobotStrings.VK_F18
+    - typings.kbmRobot.kbmRobotStrings.VK_F19
+    - typings.kbmRobot.kbmRobotStrings.VK_F20
+    - typings.kbmRobot.kbmRobotStrings.VK_F21
+    - typings.kbmRobot.kbmRobotStrings.VK_F22
+    - typings.kbmRobot.kbmRobotStrings.VK_F23
+    - typings.kbmRobot.kbmRobotStrings.VK_F24
+    - typings.kbmRobot.kbmRobotStrings.VK_PRINTSCREEN
+    - typings.kbmRobot.kbmRobotStrings.VK_INSERT
+    - typings.kbmRobot.kbmRobotStrings.VK_HELP
+    - typings.kbmRobot.kbmRobotStrings.VK_META
+    - typings.kbmRobot.kbmRobotStrings.VK_BACK_QUOTE
+    - typings.kbmRobot.kbmRobotStrings.VK_QUOTE
+    - typings.kbmRobot.kbmRobotStrings.VK_KP_UP
+    - typings.kbmRobot.kbmRobotStrings.VK_KP_DOWN
+    - typings.kbmRobot.kbmRobotStrings.VK_KP_LEFT
+    - typings.kbmRobot.kbmRobotStrings.VK_KP_RIGHT
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_GRAVE
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_ACUTE
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_CIRCUMFLEX
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_TILDE
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_MACRON
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_BREVE
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_ABOVEDOT
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_DIAERESIS
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_ABOVERING
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_DOUBLEACUTE
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_CARON
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_CEDILLA
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_OGONEK
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_IOTA
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_VOICED_SOUND
+    - typings.kbmRobot.kbmRobotStrings.VK_DEAD_SEMIVOICED_SOUND
+    - typings.kbmRobot.kbmRobotStrings.VK_AMPERSAND
+    - typings.kbmRobot.kbmRobotStrings.VK_ASTERISK
+    - typings.kbmRobot.kbmRobotStrings.VK_QUOTEDBL
+    - typings.kbmRobot.kbmRobotStrings.VK_LESS
+    - typings.kbmRobot.kbmRobotStrings.VK_GREATER
+    - typings.kbmRobot.kbmRobotStrings.VK_BRACELEFT
+    - typings.kbmRobot.kbmRobotStrings.VK_BRACERIGHT
+    - typings.kbmRobot.kbmRobotStrings.VK_AT
+    - typings.kbmRobot.kbmRobotStrings.VK_COLON
+    - typings.kbmRobot.kbmRobotStrings.VK_CIRCUMFLEX
+    - typings.kbmRobot.kbmRobotStrings.VK_DOLLAR
+    - typings.kbmRobot.kbmRobotStrings.VK_EURO_SIGN
+    - typings.kbmRobot.kbmRobotStrings.VK_EXCLAMATION_MARK
+    - typings.kbmRobot.kbmRobotStrings.VK_INVERTED_EXCLAMATION_MARK
+    - typings.kbmRobot.kbmRobotStrings.VK_LEFT_PARENTHESIS
+    - typings.kbmRobot.kbmRobotStrings.VK_NUMBER_SIGN
+    - typings.kbmRobot.kbmRobotStrings.VK_PLUS
+    - typings.kbmRobot.kbmRobotStrings.VK_RIGHT_PARENTHESIS
+    - typings.kbmRobot.kbmRobotStrings.VK_UNDERSCORE
+    - typings.kbmRobot.kbmRobotStrings.VK_WINDOWS
+    - typings.kbmRobot.kbmRobotStrings.VK_CONTEXT_MENU
+    - typings.kbmRobot.kbmRobotStrings.VK_FINAL
+    - typings.kbmRobot.kbmRobotStrings.VK_CONVERT
+    - typings.kbmRobot.kbmRobotStrings.VK_NONCONVERT
+    - typings.kbmRobot.kbmRobotStrings.VK_ACCEPT
+    - typings.kbmRobot.kbmRobotStrings.VK_MODECHANGE
+    - typings.kbmRobot.kbmRobotStrings.VK_KANA
+    - typings.kbmRobot.kbmRobotStrings.VK_KANJI
+    - typings.kbmRobot.kbmRobotStrings.VK_ALPHANUMERIC
+    - typings.kbmRobot.kbmRobotStrings.VK_KATAKANA
+    - typings.kbmRobot.kbmRobotStrings.VK_HIRAGANA
+    - typings.kbmRobot.kbmRobotStrings.VK_FULL_WIDTH
+    - typings.kbmRobot.kbmRobotStrings.VK_HALF_WIDTH
+    - typings.kbmRobot.kbmRobotStrings.VK_ROMAN_CHARACTERS
+    - typings.kbmRobot.kbmRobotStrings.VK_ALL_CANDIDATES
+    - typings.kbmRobot.kbmRobotStrings.VK_PREVIOUS_CANDIDATE
+    - typings.kbmRobot.kbmRobotStrings.VK_CODE_INPUT
+    - typings.kbmRobot.kbmRobotStrings.VK_JAPANESE_KATAKANA
+    - typings.kbmRobot.kbmRobotStrings.VK_JAPANESE_HIRAGANA
+    - typings.kbmRobot.kbmRobotStrings.VK_JAPANESE_ROMAN
+    - typings.kbmRobot.kbmRobotStrings.VK_KANA_LOCK
+    - typings.kbmRobot.kbmRobotStrings.VK_INPUT_METHOD_ON_OFF
+    - typings.kbmRobot.kbmRobotStrings.VK_CUT
+    - typings.kbmRobot.kbmRobotStrings.VK_COPY
+    - typings.kbmRobot.kbmRobotStrings.VK_PASTE
+    - typings.kbmRobot.kbmRobotStrings.VK_UNDO
+    - typings.kbmRobot.kbmRobotStrings.VK_AGAIN
+    - typings.kbmRobot.kbmRobotStrings.VK_FIND
+    - typings.kbmRobot.kbmRobotStrings.VK_PROPS
+    - typings.kbmRobot.kbmRobotStrings.VK_STOP
+    - typings.kbmRobot.kbmRobotStrings.VK_COMPOSE
+    - typings.kbmRobot.kbmRobotStrings.VK_ALT_GRAPH
+    - typings.kbmRobot.kbmRobotStrings.VK_BEGIN
+    - typings.kbmRobot.kbmRobotStrings.VK_UNDEFINED
+    - typings.kbmRobot.kbmRobotStrings.ESC
+    - typings.kbmRobot.kbmRobotStrings.F1
+    - typings.kbmRobot.kbmRobotStrings.F2
+    - typings.kbmRobot.kbmRobotStrings.F3
+    - typings.kbmRobot.kbmRobotStrings.F4
+    - typings.kbmRobot.kbmRobotStrings.F5
+    - typings.kbmRobot.kbmRobotStrings.F6
+    - typings.kbmRobot.kbmRobotStrings.F7
+    - typings.kbmRobot.kbmRobotStrings.F8
+    - typings.kbmRobot.kbmRobotStrings.F9
+    - typings.kbmRobot.kbmRobotStrings.F10
+    - typings.kbmRobot.kbmRobotStrings.F11
+    - typings.kbmRobot.kbmRobotStrings.F12
+    - typings.kbmRobot.kbmRobotStrings.CTRL
+    - typings.kbmRobot.kbmRobotStrings.META
+    - typings.kbmRobot.kbmRobotStrings.SUPER
+    - typings.kbmRobot.kbmRobotStrings.ALT
+    - typings.kbmRobot.kbmRobotStrings.Space
+    - typings.kbmRobot.kbmRobotStrings.SPACE
+    - typings.kbmRobot.kbmRobotStrings.LEFT
+    - typings.kbmRobot.kbmRobotStrings.DOWN
+    - typings.kbmRobot.kbmRobotStrings.RIGHT
+    - typings.kbmRobot.kbmRobotStrings.UP
+    - typings.kbmRobot.kbmRobotStrings.TAB
+    - typings.kbmRobot.kbmRobotStrings.SHIFT
+    - typings.kbmRobot.kbmRobotStrings.ENTER
+    - typings.kbmRobot.kbmRobotStrings.Linefeed
+    - typings.kbmRobot.kbmRobotStrings.CAPS_LOCK
+    - typings.kbmRobot.kbmRobotStrings.PRINT_SCREEN
+    - typings.kbmRobot.kbmRobotStrings.SCROLL_LOCK
+    - typings.kbmRobot.kbmRobotStrings.PAUSE_BREAK
+    - typings.kbmRobot.kbmRobotStrings.BACKSPACE
+    - typings.kbmRobot.kbmRobotStrings.DELETE
+    - typings.kbmRobot.kbmRobotStrings.HOME
+    - typings.kbmRobot.kbmRobotStrings.END
+    - typings.kbmRobot.kbmRobotStrings.INSERT
+    - typings.kbmRobot.kbmRobotStrings.PAGE_UP
+    - typings.kbmRobot.kbmRobotStrings.PAGE_DOWN
+    - typings.kbmRobot.kbmRobotStrings.NUM_LOCK
+    - typings.kbmRobot.kbmRobotStrings.Graveaccent
+    - typings.kbmRobot.kbmRobotStrings.`-_`
+    - typings.kbmRobot.kbmRobotStrings.Equalssign
+    - typings.kbmRobot.kbmRobotStrings.`[`
+    - typings.kbmRobot.kbmRobotStrings.`]`
+    - java.lang.String
+    - typings.kbmRobot.kbmRobotStrings.Semicolon
+    - typings.kbmRobot.kbmRobotStrings.Comma
+    - typings.kbmRobot.kbmRobotStrings.Dot
+    - typings.kbmRobot.kbmRobotStrings.Slash
+    - typings.kbmRobot.kbmRobotStrings.KP_ADD
+    - typings.kbmRobot.kbmRobotStrings.`KP_-`
+    - typings.kbmRobot.kbmRobotStrings.KP_Asterisk
+    - typings.kbmRobot.kbmRobotStrings.KP_Slash
+    - typings.kbmRobot.kbmRobotStrings.KP_0
+    - typings.kbmRobot.kbmRobotStrings.KP_Dot
+    - typings.kbmRobot.kbmRobotStrings.KP_1
+    - typings.kbmRobot.kbmRobotStrings.KP_2
+    - typings.kbmRobot.kbmRobotStrings.KP_3
+    - typings.kbmRobot.kbmRobotStrings.KP_4
+    - typings.kbmRobot.kbmRobotStrings.KP_5
+    - typings.kbmRobot.kbmRobotStrings.KP_6
+    - typings.kbmRobot.kbmRobotStrings.KP_7
+    - typings.kbmRobot.kbmRobotStrings.KP_8
+    - typings.kbmRobot.kbmRobotStrings.KP_9
   */
-  trait MouseButton extends StObject
-  object MouseButton {
-    
-    inline def `1`: typings.kbmRobot.kbmRobotStrings.`1` = "1".asInstanceOf[typings.kbmRobot.kbmRobotStrings.`1`]
-    
-    inline def `2`: typings.kbmRobot.kbmRobotStrings.`2` = "2".asInstanceOf[typings.kbmRobot.kbmRobotStrings.`2`]
-    
-    inline def `3`: typings.kbmRobot.kbmRobotStrings.`3` = "3".asInstanceOf[typings.kbmRobot.kbmRobotStrings.`3`]
-    
-    inline def DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket: typings.kbmRobot.kbmRobotStrings.DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket = "${_MouseButton}${_MouseButton}".asInstanceOf[typings.kbmRobot.kbmRobotStrings.DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket]
-    
-    inline def DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket: typings.kbmRobot.kbmRobotStrings.DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket = "${_MouseButton}${_MouseButton}${_MouseButton}".asInstanceOf[typings.kbmRobot.kbmRobotStrings.DollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracketDollarLeftcurlybracket_MouseButtonRightcurlybracket]
-  }
+  type Key = _Key | String
+  
+  type MouseButton = _MouseButton | (/* template literal string: ${_MouseButton}${_MouseButton} */ String)
+  
+  trait _Key extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.kbmRobot.kbmRobotStrings.`1`

@@ -15,13 +15,13 @@ object mod {
   
   trait HexbinHoverHandler extends StObject {
     
-    def mouseout(hexLayer: HexbinLayer_, data: js.Any): Unit
+    def mouseout(hexLayer: HexbinLayer_, data: Any): Unit
     
-    def mouseover(hexLayer: HexbinLayer_, data: js.Any): Unit
+    def mouseover(hexLayer: HexbinLayer_, data: Any): Unit
   }
   object HexbinHoverHandler {
     
-    inline def apply(mouseout: (HexbinLayer_, js.Any) => Unit, mouseover: (HexbinLayer_, js.Any) => Unit): HexbinHoverHandler = {
+    inline def apply(mouseout: (HexbinLayer_, Any) => Unit, mouseover: (HexbinLayer_, Any) => Unit): HexbinHoverHandler = {
       val __obj = js.Dynamic.literal(mouseout = js.Any.fromFunction2(mouseout), mouseover = js.Any.fromFunction2(mouseover))
       __obj.asInstanceOf[HexbinHoverHandler]
     }
@@ -57,15 +57,15 @@ object mod {
         
         inline def setHandlers(value: js.Array[HexbinHoverHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
         
-        inline def setHandlersVarargs(value: HexbinHoverHandler*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+        inline def setHandlersVarargs(value: HexbinHoverHandler*): Self = StObject.set(x, "handlers", js.Array(value*))
       }
     }
     
     extension [Self <: HexbinHoverHandler](x: Self) {
       
-      inline def setMouseout(value: (HexbinLayer_, js.Any) => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction2(value))
+      inline def setMouseout(value: (HexbinLayer_, Any) => Unit): Self = StObject.set(x, "mouseout", js.Any.fromFunction2(value))
       
-      inline def setMouseover(value: (HexbinLayer_, js.Any) => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction2(value))
+      inline def setMouseover(value: (HexbinLayer_, Any) => Unit): Self = StObject.set(x, "mouseover", js.Any.fromFunction2(value))
     }
     
     type NoneHoverHandler = HexbinHoverHandler
@@ -95,18 +95,18 @@ object mod {
     
     trait TooltipOptions extends StObject {
       
-      def tooltipContent(d: js.Any): String
+      def tooltipContent(d: Any): String
     }
     object TooltipOptions {
       
-      inline def apply(tooltipContent: js.Any => String): TooltipOptions = {
+      inline def apply(tooltipContent: Any => String): TooltipOptions = {
         val __obj = js.Dynamic.literal(tooltipContent = js.Any.fromFunction1(tooltipContent))
         __obj.asInstanceOf[TooltipOptions]
       }
       
       extension [Self <: TooltipOptions](x: Self) {
         
-        inline def setTooltipContent(value: js.Any => String): Self = StObject.set(x, "tooltipContent", js.Any.fromFunction1(value))
+        inline def setTooltipContent(value: Any => String): Self = StObject.set(x, "tooltipContent", js.Any.fromFunction1(value))
       }
     }
   }
@@ -146,7 +146,7 @@ object mod {
       
       inline def setColorRangeUndefined: Self = StObject.set(x, "colorRange", js.undefined)
       
-      inline def setColorRangeVarargs(value: String*): Self = StObject.set(x, "colorRange", js.Array(value :_*))
+      inline def setColorRangeVarargs(value: String*): Self = StObject.set(x, "colorRange", js.Array(value*))
       
       inline def setColorScaleExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "colorScaleExtent", value.asInstanceOf[js.Any])
       
@@ -187,8 +187,8 @@ object mod {
     def colorRange(): js.Array[String] = js.native
     def colorRange(v: js.Array[String]): this.type = js.native
     
-    def colorScale(): js.Any = js.native
-    def colorScale(v: js.Any): this.type = js.native
+    def colorScale(): Any = js.native
+    def colorScale(v: Any): this.type = js.native
     
     def colorScaleExtent(): js.Tuple2[Double, Double] = js.native
     def colorScaleExtent(v: js.Tuple2[Double, Double]): this.type = js.native
@@ -196,10 +196,10 @@ object mod {
     def colorValue(): ObjectFn[Double] = js.native
     def colorValue(v: ObjectFn[Double]): this.type = js.native
     
-    def data(): js.Array[js.Any] = js.native
-    def data(v: js.Array[js.Any]): this.type = js.native
+    def data(): js.Array[Any] = js.native
+    def data(v: js.Array[Any]): this.type = js.native
     
-    def dispatch(): js.Any = js.native
+    def dispatch(): Any = js.native
     
     def duration(): Double = js.native
     def duration(v: Double): this.type = js.native
@@ -207,7 +207,7 @@ object mod {
     def fill(): ObjectFn[String] = js.native
     def fill(v: ObjectFn[String]): this.type = js.native
     
-    def getLatLngs(): js.Array[js.Any] = js.native
+    def getLatLngs(): js.Array[Any] = js.native
     
     def hoverHandler(): HexbinHoverHandler = js.native
     def hoverHandler(v: HexbinHoverHandler): this.type = js.native
@@ -227,8 +227,8 @@ object mod {
     def radiusRange(): js.Array[Double] = js.native
     def radiusRange(v: js.Array[Double]): this.type = js.native
     
-    def radiusScale(): js.Any = js.native
-    def radiusScale(v: js.Any): this.type = js.native
+    def radiusScale(): Any = js.native
+    def radiusScale(v: Any): this.type = js.native
     
     def radiusScaleExtent(): js.Tuple2[Double, Double] = js.native
     def radiusScaleExtent(v: js.Tuple2[Double, Double]): this.type = js.native
@@ -238,7 +238,7 @@ object mod {
     
     def redraw(): Unit = js.native
     
-    def toGeoJSON(): js.Array[js.Any] = js.native
+    def toGeoJSON(): js.Array[Any] = js.native
   }
   
   trait PingLayerConfig extends StObject {
@@ -272,13 +272,13 @@ object mod {
       
       inline def setOpacityRangeUndefined: Self = StObject.set(x, "opacityRange", js.undefined)
       
-      inline def setOpacityRangeVarargs(value: Double*): Self = StObject.set(x, "opacityRange", js.Array(value :_*))
+      inline def setOpacityRangeVarargs(value: Double*): Self = StObject.set(x, "opacityRange", js.Array(value*))
       
       inline def setRadiusRange(value: js.Array[Double]): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
       
       inline def setRadiusRangeUndefined: Self = StObject.set(x, "radiusRange", js.undefined)
       
-      inline def setRadiusRangeVarargs(value: Double*): Self = StObject.set(x, "radiusRange", js.Array(value :_*))
+      inline def setRadiusRangeVarargs(value: Double*): Self = StObject.set(x, "radiusRange", js.Array(value*))
     }
   }
   
@@ -288,7 +288,7 @@ object mod {
   @js.native
   trait PingLayer_ extends Layer {
     
-    def data(): js.Array[js.Any] = js.native
+    def data(): js.Array[Any] = js.native
     
     def duration(): Double = js.native
     def duration(v: Double): this.type = js.native
@@ -307,17 +307,17 @@ object mod {
     def opacityRange(): js.Array[Double] = js.native
     def opacityRange(v: js.Array[Double]): this.type = js.native
     
-    def opacityScale(): js.Any = js.native
-    def opacityScale(v: js.Any): this.type = js.native
+    def opacityScale(): Any = js.native
+    def opacityScale(v: Any): this.type = js.native
     
-    def ping(data: js.Any): this.type = js.native
-    def ping(data: js.Any, cssClass: String): this.type = js.native
+    def ping(data: Any): this.type = js.native
+    def ping(data: Any, cssClass: String): this.type = js.native
     
     def radiusRange(): js.Array[Double] = js.native
     def radiusRange(v: js.Array[Double]): this.type = js.native
     
-    def radiusScale(): js.Any = js.native
-    def radiusScale(v: js.Any): this.type = js.native
+    def radiusScale(): Any = js.native
+    def radiusScale(v: Any): this.type = js.native
     
     def radiusScaleFactor(): Double = js.native
     def radiusScaleFactor(v: Double): this.type = js.native
@@ -325,15 +325,15 @@ object mod {
   
   object internal {
     
-    type DoubleObjectContextCallback = js.Function3[/* d */ js.Any, /* t */ js.Any, /* th */ js.Any, Unit]
+    type DoubleObjectContextCallback = js.Function3[/* d */ Any, /* t */ Any, /* th */ Any, Unit]
     
     type ObjectCallback = ObjectFn[Unit]
     
-    type ObjectContextCallback = js.Function2[/* d */ js.Any, /* t */ js.Any, Unit]
+    type ObjectContextCallback = js.Function2[/* d */ Any, /* t */ Any, Unit]
     
-    type ObjectFn[T] = js.Function1[/* d */ js.Any, T]
+    type ObjectFn[T] = js.Function1[/* d */ Any, T]
     
-    type ObjectIndexFn[T] = js.Function2[/* d */ js.Any, /* i */ Double, T]
+    type ObjectIndexFn[T] = js.Function2[/* d */ Any, /* i */ Double, T]
     
     type SimpleCallback = SimpleFn[Unit]
     

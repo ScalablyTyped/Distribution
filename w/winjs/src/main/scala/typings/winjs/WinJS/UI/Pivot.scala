@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.winjs.WinJS.Binding.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +62,7 @@ trait Pivot extends StObject {
   /**
     * Gets or sets the Binding.List that contains the PivotItem objects that belong to this Pivot.
     **/
-  var items: List[PivotItem] = js.native
+  var items: typings.winjs.WinJS.Binding.List[PivotItem] = js.native
   
   /**
     * Gets or sets a value that specifies whether the Pivot control is locked to the current item.

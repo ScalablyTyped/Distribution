@@ -5,7 +5,6 @@ import typings.googleGax.iamServiceMod.google.protobuf.IServiceOptions
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ServiceOptions.
   * @param [properties] Properties to set
   */
-class ServiceOptions ()
+open class ServiceOptions ()
   extends typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions {
   def this(properties: IServiceOptions) = this()
 }
@@ -36,6 +35,8 @@ object ServiceOptions {
   inline def create(): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   inline def create(properties: IServiceOptions): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   /**
     * Decodes a ServiceOptions message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -47,9 +48,8 @@ object ServiceOptions {
   /* static member */
   inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
-  inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
-  inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   /**
     * Decodes a ServiceOptions message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -59,7 +59,6 @@ object ServiceOptions {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
-  inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   
   /**
     * Encodes the specified ServiceOptions message. Does not implicitly {@link google.protobuf.ServiceOptions.verify|verify} messages.
@@ -87,7 +86,7 @@ object ServiceOptions {
     * @returns ServiceOptions
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions]
   
   /**
     * Creates a plain object from a ServiceOptions message. Also converts values to other types if specified.
@@ -96,11 +95,11 @@ object ServiceOptions {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
     message: typings.googleGax.iamServiceMod.google.protobuf.ServiceOptions,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ServiceOptions message.
@@ -108,5 +107,5 @@ object ServiceOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

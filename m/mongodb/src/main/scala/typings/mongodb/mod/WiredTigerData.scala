@@ -1,46 +1,49 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.Document
 import typings.mongodb.anon.Allocationsrequiringfileextension
-import typings.mongodb.anon.Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered
-import typings.mongodb.anon.Bloomfilterfalsepositives
-import typings.mongodb.anon.Btreecheckpointgeneration
+import typings.mongodb.anon.Averagedifferencebetweenc
 import typings.mongodb.anon.Bulkloadedcursorinsertcalls
-import typings.mongodb.anon.Bytescurrentlyinthecache
-import typings.mongodb.anon.Compressedpagesread
-import typings.mongodb.anon.Dictionarymatches
+import typings.mongodb.anon.bloomfilterfalsepositives
+import typings.mongodb.anon.btreecheckpointgeneration
+import typings.mongodb.anon.bytescurrentlyinthecachen
+import typings.mongodb.anon.compressedpagesreadnumber
+import typings.mongodb.anon.dictionarymatchesnumberfa
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WiredTigerData extends StObject {
+trait WiredTigerData
+  extends StObject
+     with Document {
   
-  var LSM: Bloomfilterfalsepositives
+  var LSM: bloomfilterfalsepositives
   
   var `block-manager`: Allocationsrequiringfileextension
   
-  var btree: Btreecheckpointgeneration
+  var btree: btreecheckpointgeneration
   
-  var cache: Bytescurrentlyinthecache
+  var cache: bytescurrentlyinthecachen
   
-  var cache_walk: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered
+  var cache_walk: Averagedifferencebetweenc
   
-  var compression: Compressedpagesread
+  var compression: compressedpagesreadnumber
   
   var cursor: Bulkloadedcursorinsertcalls
   
-  var reconciliation: Dictionarymatches
+  var reconciliation: dictionarymatchesnumberfa
 }
 object WiredTigerData {
   
   inline def apply(
-    LSM: Bloomfilterfalsepositives,
+    LSM: bloomfilterfalsepositives,
     `block-manager`: Allocationsrequiringfileextension,
-    btree: Btreecheckpointgeneration,
-    cache: Bytescurrentlyinthecache,
-    cache_walk: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered,
-    compression: Compressedpagesread,
+    btree: btreecheckpointgeneration,
+    cache: bytescurrentlyinthecachen,
+    cache_walk: Averagedifferencebetweenc,
+    compression: compressedpagesreadnumber,
     cursor: Bulkloadedcursorinsertcalls,
-    reconciliation: Dictionarymatches
+    reconciliation: dictionarymatchesnumberfa
   ): WiredTigerData = {
     val __obj = js.Dynamic.literal(LSM = LSM.asInstanceOf[js.Any], btree = btree.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cache_walk = cache_walk.asInstanceOf[js.Any], compression = compression.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], reconciliation = reconciliation.asInstanceOf[js.Any])
     __obj.updateDynamic("block-manager")(`block-manager`.asInstanceOf[js.Any])
@@ -51,18 +54,18 @@ object WiredTigerData {
     
     inline def `setBlock-manager`(value: Allocationsrequiringfileextension): Self = StObject.set(x, "block-manager", value.asInstanceOf[js.Any])
     
-    inline def setBtree(value: Btreecheckpointgeneration): Self = StObject.set(x, "btree", value.asInstanceOf[js.Any])
+    inline def setBtree(value: btreecheckpointgeneration): Self = StObject.set(x, "btree", value.asInstanceOf[js.Any])
     
-    inline def setCache(value: Bytescurrentlyinthecache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: bytescurrentlyinthecachen): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    inline def setCache_walk(value: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered): Self = StObject.set(x, "cache_walk", value.asInstanceOf[js.Any])
+    inline def setCache_walk(value: Averagedifferencebetweenc): Self = StObject.set(x, "cache_walk", value.asInstanceOf[js.Any])
     
-    inline def setCompression(value: Compressedpagesread): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: compressedpagesreadnumber): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     inline def setCursor(value: Bulkloadedcursorinsertcalls): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    inline def setLSM(value: Bloomfilterfalsepositives): Self = StObject.set(x, "LSM", value.asInstanceOf[js.Any])
+    inline def setLSM(value: bloomfilterfalsepositives): Self = StObject.set(x, "LSM", value.asInstanceOf[js.Any])
     
-    inline def setReconciliation(value: Dictionarymatches): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
+    inline def setReconciliation(value: dictionarymatchesnumberfa): Self = StObject.set(x, "reconciliation", value.asInstanceOf[js.Any])
   }
 }

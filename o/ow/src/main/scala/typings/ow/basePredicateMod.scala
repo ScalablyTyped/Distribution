@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object basePredicateMod {
   
-  @JSImport("ow/dist/source/predicates/base-predicate", JSImport.Namespace)
+  @JSImport("ow/dist/predicates/base-predicate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isPredicate(value: js.Any): /* is ow.ow/dist/source/predicates/base-predicate.BasePredicate<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPredicate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is ow.ow/dist/source/predicates/base-predicate.BasePredicate<unknown> */ Boolean]
+  inline def isPredicate(value: Any): /* is ow.ow/dist/predicates/base-predicate.BasePredicate<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPredicate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is ow.ow/dist/predicates/base-predicate.BasePredicate<unknown> */ Boolean]
   
-  @JSImport("ow/dist/source/predicates/base-predicate", "testSymbol")
+  @JSImport("ow/dist/predicates/base-predicate", "testSymbol")
   @js.native
   val testSymbol: js.Symbol = js.native
   

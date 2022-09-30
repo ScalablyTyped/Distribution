@@ -1,6 +1,5 @@
 package typings.devtools
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,20 +36,20 @@ object firefoxMod {
   
   trait Priorities extends StObject {
     
-    var regex: RegExp
+    var regex: js.RegExp
     
     var weight: Double
   }
   object Priorities {
     
-    inline def apply(regex: RegExp, weight: Double): Priorities = {
+    inline def apply(regex: js.RegExp, weight: Double): Priorities = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
       __obj.asInstanceOf[Priorities]
     }
     
     extension [Self <: Priorities](x: Self) {
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }

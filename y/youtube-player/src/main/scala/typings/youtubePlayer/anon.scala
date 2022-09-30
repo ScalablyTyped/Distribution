@@ -11,10 +11,10 @@ import typings.youtubePlayer.typesMod.Options
 import typings.youtubePlayer.typesMod.YouTubePlayer
 import typings.youtubePlayer.youtubePlayerBooleans.`false`
 import typings.youtubePlayer.youtubePlayerBooleans.`true`
-import typings.youtubePlayer.youtubePlayerNumbers.`0`
-import typings.youtubePlayer.youtubePlayerNumbers.`1`
-import typings.youtubePlayer.youtubePlayerNumbers.`3000`
-import typings.youtubePlayer.youtubePlayerNumbers.`3`
+import typings.youtubePlayer.youtubePlayerInts.`0`
+import typings.youtubePlayer.youtubePlayerInts.`1`
+import typings.youtubePlayer.youtubePlayerInts.`3000`
+import typings.youtubePlayer.youtubePlayerInts.`3`
 import typings.youtubePlayer.youtubePlayerStrings.playlist
 import typings.youtubePlayer.youtubePlayerStrings.red
 import typings.youtubePlayer.youtubePlayerStrings.search

@@ -1,7 +1,7 @@
 package typings.onoff
 
-import typings.onoff.onoffNumbers.`0`
-import typings.onoff.onoffNumbers.`1`
+import typings.onoff.onoffInts.`0`
+import typings.onoff.onoffInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

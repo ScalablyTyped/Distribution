@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/indexes relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.Index")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.Index")
 @js.native
-class Index protected ()
+open class Index protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.Index {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class Index protected ()
 }
 object Index {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.Index")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.Index")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object Index {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.domainmodelsMod.domainmodels.Index = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.Index]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.Index.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.Index.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.Index.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.Index.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

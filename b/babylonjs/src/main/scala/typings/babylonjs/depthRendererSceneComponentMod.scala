@@ -65,7 +65,7 @@ object depthRendererSceneComponentMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _depthRenderer: StringDictionary[DepthRenderer] = js.native
       
       /**

@@ -157,6 +157,11 @@ trait Run extends StObject {
   var `type`: js.UndefOr[TestType] = js.undefined
   
   /**
+    * The VPC security groups and subnets that are attached to a project.
+    */
+  var vpcConfig: js.UndefOr[VpcConfig] = js.undefined
+  
+  /**
     * The Device Farm console URL for the recording of the run.
     */
   var webUrl: js.UndefOr[String] = js.undefined
@@ -289,6 +294,10 @@ object Run {
     inline def setType(value: TestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
     
     inline def setWebUrl(value: String): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     

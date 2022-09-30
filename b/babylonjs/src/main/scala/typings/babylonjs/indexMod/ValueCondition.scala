@@ -49,37 +49,21 @@ object ValueCondition {
     */
   inline def GetOperatorName(operator: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperatorName")(operator.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  /**
-    * Internal only
-    * @hidden
-    */
   @JSImport("babylonjs/index", "ValueCondition._IsDifferent")
   @js.native
   def _IsDifferent: Any = js.native
   inline def _IsDifferent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
   
-  /**
-    * Internal only
-    * @hidden
-    */
   @JSImport("babylonjs/index", "ValueCondition._IsEqual")
   @js.native
   def _IsEqual: Any = js.native
   inline def _IsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
   
-  /**
-    * Internal only
-    * @hidden
-    */
   @JSImport("babylonjs/index", "ValueCondition._IsGreater")
   @js.native
   def _IsGreater: Any = js.native
   inline def _IsGreater_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
   
-  /**
-    * Internal only
-    * @hidden
-    */
   @JSImport("babylonjs/index", "ValueCondition._IsLesser")
   @js.native
   def _IsLesser: Any = js.native

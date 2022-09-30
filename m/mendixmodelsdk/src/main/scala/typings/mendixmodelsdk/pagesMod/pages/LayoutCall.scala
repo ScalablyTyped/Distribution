@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.ILayoutCall because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsLayout, containerAsPage, containerAsPageTemplate, containerAsWebLayoutContent, layout, layoutQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall")
+- typings.mendixmodelsdk.pagesMod.pages.ILayoutCall because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsLayout, containerAsPage, containerAsPageTemplate, containerAsWebLayoutContent, layout, layoutQualifiedName */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutCall")
 @js.native
-class LayoutCall protected () extends Element[IModel] {
+open class LayoutCall protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -74,7 +74,7 @@ class LayoutCall protected () extends Element[IModel] {
 }
 object LayoutCall {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutCall")
   @js.native
   val ^ : js.Any = js.native
   
@@ -128,13 +128,13 @@ object LayoutCall {
   inline def createInWebLayoutContentUnderLayoutCall(container: WebLayoutContent): LayoutCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderLayoutCall")(container.asInstanceOf[js.Any]).asInstanceOf[LayoutCall]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutCall.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LayoutCall.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.LayoutCall.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

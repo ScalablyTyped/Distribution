@@ -12,11 +12,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * In version 8.15.0: introduced
+  * In version 9.0.2: introduced
   */
 @JSImport("mendixmodelsdk", "pages.UserTaskTemplateType")
 @js.native
-class UserTaskTemplateType protected ()
+open class UserTaskTemplateType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.UserTaskTemplateType {
   def this(
     model: AbstractModel,
@@ -47,7 +47,7 @@ object UserTaskTemplateType {
     * of the parent PageTemplate element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.PageTemplate): typings.mendixmodelsdk.pagesMod.pages.UserTaskTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.UserTaskTemplateType]

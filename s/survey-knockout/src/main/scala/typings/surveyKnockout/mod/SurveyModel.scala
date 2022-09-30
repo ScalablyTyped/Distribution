@@ -592,11 +592,11 @@ open class SurveyModel ()
   def getPanelByName(name: String, caseInsensitive: Boolean): PanelModel = js.native
   
   /*
-    * Returns survey result data as an array of plain objects: with question `title`, `name`, `value`, and `displayValue`.
+    * Returns survey results as an array of objects in which the question name, title, value, and other parameters are stored as individual properties.
     * 
-    * For complex questions (like matrix, etc.) `isNode` flag is set to `true` and data contains array of nested objects (rows).
+    * If a question can have more than one value (Matrix, Multiple Text), its object enables the `isNode` flag and stores information about these values in the `data` property. Refer to the following help topic for more information: [Access Full Survey Results](https://surveyjs.io/form-library/documentation/handle-survey-results-access#access-full-survey-results).
     * 
-    * Set `options.includeEmpty` to `false` if you want to skip empty answers.
+    * If you want to skip empty answers, pass an object with the `includeEmpty` property set to `false`.
     */
   def getPlainData(): Any = js.native
   def getPlainData(options: Any): Any = js.native
@@ -1218,12 +1218,15 @@ open class SurveyModel ()
   
   /*
     * The event is fired after a user clicks the 'Complete' button and finishes a survey. Use this event to send the survey data to your web server.
+    * 
     * - `sender` - the survey object that fires the event.
     * - `options.showDataSaving(text)` - call this method to show that the survey is saving survey data on your server. The `text` is an optional parameter to show a custom message instead of default.
     * - `options.showDataSavingError(text)` - call this method to show that an error occurred while saving the data on your server. If you want to show a custom error, use an optional `text` parameter.
     * - `options.showDataSavingSuccess(text)` - call this method to show that the data was successfully saved on the server.
     * - `options.showDataSavingClear` - call this method to hide the text about the saving progress.
     * - `options.isCompleteOnTrigger` - returns true if the survey is completed on "complete" trigger.
+    * 
+    * > NOTE: Do not disable the [`showCompletedPage`](https://surveyjs.io/form-library/documentation/surveymodel#showCompletedPage) property if you call one of the `options.showDataSaving...` methods described above. This is required because the UI that indicates data saving progress is integrated into the Complete page. If you hide the Complete page, the UI also becomes invisible.
     */
   var onComplete: EventBase[SurveyModel] = js.native
   
@@ -2071,15 +2074,11 @@ open class SurveyModel ()
   var questionStartIndex_FSurveyModel: String = js.native
   
   /*
-    * Gets or sets the question title location.
+    * Gets or sets question title location relative to the input field: `"top"`, `"bottom"`, or `"left"`.
     * 
-    * The following options are available:
+    * > NOTE: Certain question types (Matrix, Multiple Text) do not support the `"left"` value. For them, the `"top"` value is used.
     * 
-    * - `bottom` - show a question title to bottom
-    * - `left` - show a question title to left
-    * - `top` - show a question title to top.
-    * 
-    * > Some questions, for example matrixes, do not support 'left' value. The title for them will be displayed to the top.
+    * You can override this setting if you specify the `questionTitleLocation` property for an [individual page](https://surveyjs.io/form-library/documentation/pagemodel#questionTitleLocation) or [panel](https://surveyjs.io/form-library/documentation/panelmodel#questionTitleLocation) or set the `titleLocation` property for a [specific question](https://surveyjs.io/form-library/documentation/question#titleLocation).
     */
   def questionTitleLocation: String = js.native
   def questionTitleLocation_=(`val`: String): Unit = js.native
@@ -2097,9 +2096,6 @@ open class SurveyModel ()
   @JSName("questionTitlePattern")
   var questionTitlePattern_FSurveyModel: String = js.native
   
-  /*
-    * Gets or sets a question title template. Obsolete, please use questionTitlePattern
-    */
   def questionTitleTemplate: String = js.native
   def questionTitleTemplate_=(`val`: String): Unit = js.native
   
@@ -2150,6 +2146,8 @@ open class SurveyModel ()
   def renderedHasLogo: Boolean = js.native
   
   def renderedHasTitle: Boolean = js.native
+  
+  def renderedWidth: String = js.native
   
   /*
     * Gets or sets the required question mark. The required question mark is a char or string that is rendered in the required questions' titles.

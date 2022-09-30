@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "airtable" : "0.11.4"
+      "airtable" : "0.11.5"
     }
   ],
   "test-dependencies" : [
     {
-      "airtable" : "0.11.4"
+      "airtable" : "0.11.5"
     }
   ],
   "compile-devDependencies" : [

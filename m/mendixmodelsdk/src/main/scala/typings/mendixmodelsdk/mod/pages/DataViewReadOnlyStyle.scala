@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle")
 @js.native
-class DataViewReadOnlyStyle protected ()
+open class DataViewReadOnlyStyle protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DataViewReadOnlyStyle {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

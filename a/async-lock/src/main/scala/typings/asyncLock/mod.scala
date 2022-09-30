@@ -1,5 +1,6 @@
 package typings.asyncLock
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,8 +54,8 @@ object mod {
       *     // lock released
       * });
       */
-    def acquire[T](key: String, fn: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
-    def acquire[T](key: String, fn: js.Function0[T | js.Thenable[T]], opts: AsyncLockOptions): js.Promise[T] = js.native
+    def acquire[T](key: String, fn: js.Function0[T | PromiseLike[T]]): js.Promise[T] = js.native
+    def acquire[T](key: String, fn: js.Function0[T | PromiseLike[T]], opts: AsyncLockOptions): js.Promise[T] = js.native
     def acquire[T](key: String, fn: js.Function1[/* done */ AsyncLockDoneCallback[T], Any]): js.Promise[T] = js.native
     /**
       * Lock on asynchronous code.
@@ -92,8 +93,8 @@ object mod {
       opts: AsyncLockOptions
     ): Unit = js.native
     def acquire[T](key: String, fn: js.Function1[/* done */ AsyncLockDoneCallback[T], Any], opts: AsyncLockOptions): js.Promise[T] = js.native
-    def acquire[T](key: js.Array[String], fn: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
-    def acquire[T](key: js.Array[String], fn: js.Function0[T | js.Thenable[T]], opts: AsyncLockOptions): js.Promise[T] = js.native
+    def acquire[T](key: js.Array[String], fn: js.Function0[T | PromiseLike[T]]): js.Promise[T] = js.native
+    def acquire[T](key: js.Array[String], fn: js.Function0[T | PromiseLike[T]], opts: AsyncLockOptions): js.Promise[T] = js.native
     def acquire[T](key: js.Array[String], fn: js.Function1[/* done */ AsyncLockDoneCallback[T], Any]): js.Promise[T] = js.native
     def acquire[T](
       key: js.Array[String],

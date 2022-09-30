@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__media-utils
 
-Typings are for version 0.2
+Typings are for version 3.0
 
 ## Library description:
 WordPress Media Upload Utils.
@@ -10,10 +10,10 @@ WordPress Media Upload Utils.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/media-utils |
 | Keywords           | wordpress, gutenberg, media, upload |
-| # releases         | 37 |
-| # dependents       | 6 |
-| # downloads        | 476601 |
-| # stars            | 0 |
+| # releases         | 63 |
+| # dependents       | 0.0 |
+| # downloads        | 63676.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/media-utils/README.md)

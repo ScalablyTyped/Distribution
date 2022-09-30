@@ -94,7 +94,7 @@ object OculusTouchController {
   inline def QUEST_MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEST_MODEL_BASE_URL")(x.asInstanceOf[js.Any])
   
   /**
-    * @hidden
+    * @internal
     * If the controllers are running on a device that needs the updated Quest controller models
     */
   @JSGlobal("BABYLON.OculusTouchController._IsQuest")

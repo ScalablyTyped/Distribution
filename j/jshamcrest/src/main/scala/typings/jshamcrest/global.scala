@@ -310,7 +310,7 @@ object global {
       inline def assert(actual: Any, matcherOrValue: Any, options: AssertOptions): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
       inline def assert(actual: Any, matcherOrValue: Unit, options: AssertOptions): typings.jshamcrest.JsHamcrest.Description = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(actual.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.jshamcrest.JsHamcrest.Description]
       
-      inline def callTo(func: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function0[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("callTo")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Any]]
+      inline def callTo(func: js.Function1[/* repeated */ Any, Any], args: Any*): js.Function0[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("callTo")(scala.List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Any]]
       
       inline def filter(array: js.Array[Any], matcherOrValue: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(array.asInstanceOf[js.Any], matcherOrValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     }

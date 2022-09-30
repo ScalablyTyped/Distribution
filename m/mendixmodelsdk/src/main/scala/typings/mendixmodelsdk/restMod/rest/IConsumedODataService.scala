@@ -6,9 +6,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interfaces and instance classes for types from the Mendix sub meta model `Rest`.
-  */
-/**
   * See: {@link https://docs.mendix.com/refguide/consumed-odata-service-properties relevant section in reference guide}
   *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.

@@ -242,6 +242,10 @@ object `20pxPathsMod` {
   @js.native
   val BringData: js.Array[String] = js.native
   
+  @JSImport("@blueprintjs/icons/lib/esm/generated/20px/paths", "Bug")
+  @js.native
+  val Bug: js.Array[String] = js.native
+  
   @JSImport("@blueprintjs/icons/lib/esm/generated/20px/paths", "Buggy")
   @js.native
   val Buggy: js.Array[String] = js.native

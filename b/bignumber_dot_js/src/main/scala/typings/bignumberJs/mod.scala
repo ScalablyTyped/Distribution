@@ -2,16 +2,16 @@ package typings.bignumberJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bignumberJs.bignumberJsBooleans.`true`
-import typings.bignumberJs.bignumberJsNumbers.`0`
-import typings.bignumberJs.bignumberJsNumbers.`1`
-import typings.bignumberJs.bignumberJsNumbers.`2`
-import typings.bignumberJs.bignumberJsNumbers.`3`
-import typings.bignumberJs.bignumberJsNumbers.`4`
-import typings.bignumberJs.bignumberJsNumbers.`5`
-import typings.bignumberJs.bignumberJsNumbers.`6`
-import typings.bignumberJs.bignumberJsNumbers.`7`
-import typings.bignumberJs.bignumberJsNumbers.`8`
-import typings.bignumberJs.bignumberJsNumbers.`9`
+import typings.bignumberJs.bignumberJsInts.`0`
+import typings.bignumberJs.bignumberJsInts.`1`
+import typings.bignumberJs.bignumberJsInts.`2`
+import typings.bignumberJs.bignumberJsInts.`3`
+import typings.bignumberJs.bignumberJsInts.`4`
+import typings.bignumberJs.bignumberJsInts.`5`
+import typings.bignumberJs.bignumberJsInts.`6`
+import typings.bignumberJs.bignumberJsInts.`7`
+import typings.bignumberJs.bignumberJsInts.`8`
+import typings.bignumberJs.bignumberJsInts.`9`
 import typings.bignumberJs.mod.BigNumber.Config
 import typings.bignumberJs.mod.BigNumber.Constructor
 import typings.bignumberJs.mod.BigNumber.Format
@@ -2343,57 +2343,57 @@ object mod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.bignumberJs.bignumberJsNumbers.`0`
-      - typings.bignumberJs.bignumberJsNumbers.`1`
-      - typings.bignumberJs.bignumberJsNumbers.`3`
-      - typings.bignumberJs.bignumberJsNumbers.`6`
-      - typings.bignumberJs.bignumberJsNumbers.`9`
+      - typings.bignumberJs.bignumberJsInts.`0`
+      - typings.bignumberJs.bignumberJsInts.`1`
+      - typings.bignumberJs.bignumberJsInts.`3`
+      - typings.bignumberJs.bignumberJsInts.`6`
+      - typings.bignumberJs.bignumberJsInts.`9`
     */
     trait ModuloMode extends StObject
     object ModuloMode {
       
-      inline def `0`: typings.bignumberJs.bignumberJsNumbers.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`0`]
+      inline def `0`: typings.bignumberJs.bignumberJsInts.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsInts.`0`]
       
-      inline def `1`: typings.bignumberJs.bignumberJsNumbers.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`1`]
+      inline def `1`: typings.bignumberJs.bignumberJsInts.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsInts.`1`]
       
-      inline def `3`: typings.bignumberJs.bignumberJsNumbers.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`3`]
+      inline def `3`: typings.bignumberJs.bignumberJsInts.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsInts.`3`]
       
-      inline def `6`: typings.bignumberJs.bignumberJsNumbers.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`6`]
+      inline def `6`: typings.bignumberJs.bignumberJsInts.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsInts.`6`]
       
-      inline def `9`: typings.bignumberJs.bignumberJsNumbers.`9` = 9.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`9`]
+      inline def `9`: typings.bignumberJs.bignumberJsInts.`9` = 9.asInstanceOf[typings.bignumberJs.bignumberJsInts.`9`]
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.bignumberJs.bignumberJsNumbers.`0`
-      - typings.bignumberJs.bignumberJsNumbers.`1`
-      - typings.bignumberJs.bignumberJsNumbers.`2`
-      - typings.bignumberJs.bignumberJsNumbers.`3`
-      - typings.bignumberJs.bignumberJsNumbers.`4`
-      - typings.bignumberJs.bignumberJsNumbers.`5`
-      - typings.bignumberJs.bignumberJsNumbers.`6`
-      - typings.bignumberJs.bignumberJsNumbers.`7`
-      - typings.bignumberJs.bignumberJsNumbers.`8`
+      - typings.bignumberJs.bignumberJsInts.`0`
+      - typings.bignumberJs.bignumberJsInts.`1`
+      - typings.bignumberJs.bignumberJsInts.`2`
+      - typings.bignumberJs.bignumberJsInts.`3`
+      - typings.bignumberJs.bignumberJsInts.`4`
+      - typings.bignumberJs.bignumberJsInts.`5`
+      - typings.bignumberJs.bignumberJsInts.`6`
+      - typings.bignumberJs.bignumberJsInts.`7`
+      - typings.bignumberJs.bignumberJsInts.`8`
     */
     trait RoundingMode extends StObject
     object RoundingMode {
       
-      inline def `0`: typings.bignumberJs.bignumberJsNumbers.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`0`]
+      inline def `0`: typings.bignumberJs.bignumberJsInts.`0` = 0.asInstanceOf[typings.bignumberJs.bignumberJsInts.`0`]
       
-      inline def `1`: typings.bignumberJs.bignumberJsNumbers.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`1`]
+      inline def `1`: typings.bignumberJs.bignumberJsInts.`1` = 1.asInstanceOf[typings.bignumberJs.bignumberJsInts.`1`]
       
-      inline def `2`: typings.bignumberJs.bignumberJsNumbers.`2` = 2.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`2`]
+      inline def `2`: typings.bignumberJs.bignumberJsInts.`2` = 2.asInstanceOf[typings.bignumberJs.bignumberJsInts.`2`]
       
-      inline def `3`: typings.bignumberJs.bignumberJsNumbers.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`3`]
+      inline def `3`: typings.bignumberJs.bignumberJsInts.`3` = 3.asInstanceOf[typings.bignumberJs.bignumberJsInts.`3`]
       
-      inline def `4`: typings.bignumberJs.bignumberJsNumbers.`4` = 4.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`4`]
+      inline def `4`: typings.bignumberJs.bignumberJsInts.`4` = 4.asInstanceOf[typings.bignumberJs.bignumberJsInts.`4`]
       
-      inline def `5`: typings.bignumberJs.bignumberJsNumbers.`5` = 5.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`5`]
+      inline def `5`: typings.bignumberJs.bignumberJsInts.`5` = 5.asInstanceOf[typings.bignumberJs.bignumberJsInts.`5`]
       
-      inline def `6`: typings.bignumberJs.bignumberJsNumbers.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`6`]
+      inline def `6`: typings.bignumberJs.bignumberJsInts.`6` = 6.asInstanceOf[typings.bignumberJs.bignumberJsInts.`6`]
       
-      inline def `7`: typings.bignumberJs.bignumberJsNumbers.`7` = 7.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`7`]
+      inline def `7`: typings.bignumberJs.bignumberJsInts.`7` = 7.asInstanceOf[typings.bignumberJs.bignumberJsInts.`7`]
       
-      inline def `8`: typings.bignumberJs.bignumberJsNumbers.`8` = 8.asInstanceOf[typings.bignumberJs.bignumberJsNumbers.`8`]
+      inline def `8`: typings.bignumberJs.bignumberJsInts.`8` = 8.asInstanceOf[typings.bignumberJs.bignumberJsInts.`8`]
     }
     
     type Value = String | Double | Instance

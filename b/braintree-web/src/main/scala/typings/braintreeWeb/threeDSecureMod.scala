@@ -3,8 +3,8 @@ package typings.braintreeWeb
 import typings.braintreeWeb.anon.Bin
 import typings.braintreeWeb.anon.LiabilityShiftPossible
 import typings.braintreeWeb.anon.ThreeDSecureVersion
-import typings.braintreeWeb.braintreeWebNumbers.`1`
-import typings.braintreeWeb.braintreeWebNumbers.`2`
+import typings.braintreeWeb.braintreeWebInts.`1`
+import typings.braintreeWeb.braintreeWebInts.`2`
 import typings.braintreeWeb.braintreeWebStrings.`2-bootstrap3-modal`
 import typings.braintreeWeb.braintreeWebStrings.`2-inline-iframe`
 import typings.braintreeWeb.braintreeWebStrings.`lookup-complete`

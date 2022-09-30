@@ -142,7 +142,7 @@ import typings.csstype.mod.Property.WordWrap
 import typings.csstype.mod.Property.ZIndex
 import typings.propTypes.mod.Validator
 import typings.uiBox.uiBoxBooleans.`false`
-import typings.uiBox.uiBoxNumbers.`0`
+import typings.uiBox.uiBoxInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

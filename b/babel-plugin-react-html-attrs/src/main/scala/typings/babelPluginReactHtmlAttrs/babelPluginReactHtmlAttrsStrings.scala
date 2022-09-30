@@ -633,6 +633,10 @@ object babelPluginReactHtmlAttrsStrings {
   inline def location: location = "location".asInstanceOf[location]
   
   @js.native
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @js.native
   sealed trait main extends StObject
   inline def main: main = "main".asInstanceOf[main]
   
@@ -871,6 +875,10 @@ object babelPluginReactHtmlAttrsStrings {
   @js.native
   sealed trait rt extends StObject
   inline def rt: rt = "rt".asInstanceOf[rt]
+  
+  @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait ruby extends StObject

@@ -29,6 +29,7 @@ import typings.sharp.mod.Sharp
 import typings.sharp.mod.SharpOptions
 import typings.sharp.mod.WebpOptions
 import typings.std.Partial
+import typings.std.PromiseLike
 import typings.std.Record
 import typings.std.RequestInit
 import typings.std.Required
@@ -240,7 +241,7 @@ object mod {
   inline def statsSync(src: ImageSource): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("statsSync")(src.asInstanceOf[js.Any]).asInstanceOf[Metadata]
   inline def statsSync(src: ImageSource, opts: ImageOptions): Metadata = (^.asInstanceOf[js.Dynamic].applyDynamic("statsSync")(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Metadata]
   
-  type Awaitable[T] = js.Thenable[T] | T
+  type Awaitable[T] = PromiseLike[T] | T
   
   trait BaseImageOptions
     extends StObject

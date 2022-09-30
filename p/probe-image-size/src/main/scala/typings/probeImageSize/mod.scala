@@ -60,33 +60,33 @@ object mod {
   inline def sync(data: Buffer): ProbeResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(data.asInstanceOf[js.Any]).asInstanceOf[ProbeResult | Null]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.probeImageSize.probeImageSizeNumbers.`1`
-    - typings.probeImageSize.probeImageSizeNumbers.`2`
-    - typings.probeImageSize.probeImageSizeNumbers.`3`
-    - typings.probeImageSize.probeImageSizeNumbers.`4`
-    - typings.probeImageSize.probeImageSizeNumbers.`5`
-    - typings.probeImageSize.probeImageSizeNumbers.`6`
-    - typings.probeImageSize.probeImageSizeNumbers.`7`
-    - typings.probeImageSize.probeImageSizeNumbers.`8`
+    - typings.probeImageSize.probeImageSizeInts.`1`
+    - typings.probeImageSize.probeImageSizeInts.`2`
+    - typings.probeImageSize.probeImageSizeInts.`3`
+    - typings.probeImageSize.probeImageSizeInts.`4`
+    - typings.probeImageSize.probeImageSizeInts.`5`
+    - typings.probeImageSize.probeImageSizeInts.`6`
+    - typings.probeImageSize.probeImageSizeInts.`7`
+    - typings.probeImageSize.probeImageSizeInts.`8`
   */
   trait Orientation extends StObject
   object Orientation {
     
-    inline def `1`: typings.probeImageSize.probeImageSizeNumbers.`1` = 1.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`1`]
+    inline def `1`: typings.probeImageSize.probeImageSizeInts.`1` = 1.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`1`]
     
-    inline def `2`: typings.probeImageSize.probeImageSizeNumbers.`2` = 2.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`2`]
+    inline def `2`: typings.probeImageSize.probeImageSizeInts.`2` = 2.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`2`]
     
-    inline def `3`: typings.probeImageSize.probeImageSizeNumbers.`3` = 3.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`3`]
+    inline def `3`: typings.probeImageSize.probeImageSizeInts.`3` = 3.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`3`]
     
-    inline def `4`: typings.probeImageSize.probeImageSizeNumbers.`4` = 4.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`4`]
+    inline def `4`: typings.probeImageSize.probeImageSizeInts.`4` = 4.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`4`]
     
-    inline def `5`: typings.probeImageSize.probeImageSizeNumbers.`5` = 5.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`5`]
+    inline def `5`: typings.probeImageSize.probeImageSizeInts.`5` = 5.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`5`]
     
-    inline def `6`: typings.probeImageSize.probeImageSizeNumbers.`6` = 6.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`6`]
+    inline def `6`: typings.probeImageSize.probeImageSizeInts.`6` = 6.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`6`]
     
-    inline def `7`: typings.probeImageSize.probeImageSizeNumbers.`7` = 7.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`7`]
+    inline def `7`: typings.probeImageSize.probeImageSizeInts.`7` = 7.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`7`]
     
-    inline def `8`: typings.probeImageSize.probeImageSizeNumbers.`8` = 8.asInstanceOf[typings.probeImageSize.probeImageSizeNumbers.`8`]
+    inline def `8`: typings.probeImageSize.probeImageSizeInts.`8` = 8.asInstanceOf[typings.probeImageSize.probeImageSizeInts.`8`]
   }
   
   type Parser = js.Function0[ParserStream]

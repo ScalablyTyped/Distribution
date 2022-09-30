@@ -94,12 +94,12 @@ import typings.trezorConnect.nemMod.NEMAddress
 import typings.trezorConnect.nemMod.NEMGetAddress
 import typings.trezorConnect.nemMod.NEMSignTransaction
 import typings.trezorConnect.paramsMod.Bundle
-import typings.trezorConnect.paramsMod.BundledResponse
 import typings.trezorConnect.paramsMod.CommonParams
 import typings.trezorConnect.paramsMod.ConnectSettings
 import typings.trezorConnect.paramsMod.DefaultMessage
 import typings.trezorConnect.paramsMod.Manifest
-import typings.trezorConnect.paramsMod.Response
+import typings.trezorConnect.paramsMod.Success
+import typings.trezorConnect.paramsMod.Unsuccessful
 import typings.trezorConnect.protobufMod.ApplySettings
 import typings.trezorConnect.protobufMod.BinanceSignedTx
 import typings.trezorConnect.protobufMod.EosSignedTx
@@ -107,7 +107,6 @@ import typings.trezorConnect.protobufMod.EthereumTypedDataSignature
 import typings.trezorConnect.protobufMod.Features
 import typings.trezorConnect.protobufMod.MessageSignature
 import typings.trezorConnect.protobufMod.NEMSignedTx
-import typings.trezorConnect.protobufMod.Success
 import typings.trezorConnect.protobufMod.TezosSignedTx
 import typings.trezorConnect.rippleMod.RippleAddress
 import typings.trezorConnect.rippleMod.RippleGetAddress
@@ -137,78 +136,78 @@ object apiMod {
     /**
       * Increment saved flag on device
       */
-    inline def applyFlags(params: CommonParams & ApplyFlags): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyFlags")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def applyFlags(params: CommonParams & ApplyFlags): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyFlags")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Applies device setup
       */
-    inline def applySettings(params: CommonParams & ApplySettings): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def applySettings(params: CommonParams & ApplySettings): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Asks device to initiate seed backup procedure
       */
-    inline def backupDevice(): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("backupDevice")().asInstanceOf[Response[DefaultMessage]]
-    inline def backupDevice(params: CommonParams): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("backupDevice")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def backupDevice(): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("backupDevice")().asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
+    inline def backupDevice(params: CommonParams): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("backupDevice")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     // Binance
-    inline def binanceGetAddress(params: CommonParams & BinanceGetAddress): Response[BinanceAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BinanceAddress]]
-    inline def binanceGetAddress(params: CommonParams & Bundle[BinanceGetAddress]): BundledResponse[BinanceAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[BinanceAddress]]
+    inline def binanceGetAddress(params: CommonParams & BinanceGetAddress): js.Promise[Success[BinanceAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BinanceAddress] | Unsuccessful]]
+    inline def binanceGetAddress(params: CommonParams & Bundle[BinanceGetAddress]): js.Promise[Success[js.Array[BinanceAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[BinanceAddress]] | Unsuccessful]]
     
-    inline def binanceGetPublicKey(params: CommonParams & BinanceGetPublicKey): Response[BinancePublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BinancePublicKey]]
-    inline def binanceGetPublicKey(params: CommonParams & Bundle[BinanceGetPublicKey]): BundledResponse[BinancePublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[BinancePublicKey]]
+    inline def binanceGetPublicKey(params: CommonParams & BinanceGetPublicKey): js.Promise[Success[BinancePublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BinancePublicKey] | Unsuccessful]]
+    inline def binanceGetPublicKey(params: CommonParams & Bundle[BinanceGetPublicKey]): js.Promise[Success[js.Array[BinancePublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[BinancePublicKey]] | Unsuccessful]]
     
-    inline def binanceSignTransaction(params: CommonParams & BinanceSignTransaction): Response[BinanceSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BinanceSignedTx]]
+    inline def binanceSignTransaction(params: CommonParams & BinanceSignTransaction): js.Promise[Success[BinanceSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("binanceSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BinanceSignedTx] | Unsuccessful]]
     
-    inline def blockchainDisconnect(params: CommonParams & BlockchainDisconnect): Response[BlockchainDisconnected] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainDisconnect")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainDisconnected]]
+    inline def blockchainDisconnect(params: CommonParams & BlockchainDisconnect): js.Promise[Success[BlockchainDisconnected] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainDisconnect")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainDisconnected] | Unsuccessful]]
     
     /**
       * Backend operations
       */
-    inline def blockchainEstimateFee(params: CommonParams & BlockchainEstimateFee): Response[BlockchainEstimatedFee] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainEstimateFee")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainEstimatedFee]]
+    inline def blockchainEstimateFee(params: CommonParams & BlockchainEstimateFee): js.Promise[Success[BlockchainEstimatedFee] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainEstimateFee")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainEstimatedFee] | Unsuccessful]]
     
-    inline def blockchainGetAccountBalanceHistory(params: BlockchainGetAccountBalanceHistory): Response[js.Array[BlockchainAccountBalanceHistory]] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetAccountBalanceHistory")(params.asInstanceOf[js.Any]).asInstanceOf[Response[js.Array[BlockchainAccountBalanceHistory]]]
+    inline def blockchainGetAccountBalanceHistory(params: BlockchainGetAccountBalanceHistory): js.Promise[Success[js.Array[BlockchainAccountBalanceHistory]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetAccountBalanceHistory")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[BlockchainAccountBalanceHistory]] | Unsuccessful]]
     
-    inline def blockchainGetCurrentFiatRates(params: BlockchainGetCurrentFiatRates): Response[BlockchainTimestampedFiatRates] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetCurrentFiatRates")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainTimestampedFiatRates]]
+    inline def blockchainGetCurrentFiatRates(params: BlockchainGetCurrentFiatRates): js.Promise[Success[BlockchainTimestampedFiatRates] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetCurrentFiatRates")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainTimestampedFiatRates] | Unsuccessful]]
     
-    inline def blockchainGetFiatRatesForTimestamps(params: BlockchainGetFiatRatesForTimestamps): Response[BlockchainFiatRatesForTimestamps] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetFiatRatesForTimestamps")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainFiatRatesForTimestamps]]
+    inline def blockchainGetFiatRatesForTimestamps(params: BlockchainGetFiatRatesForTimestamps): js.Promise[Success[BlockchainFiatRatesForTimestamps] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetFiatRatesForTimestamps")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainFiatRatesForTimestamps] | Unsuccessful]]
     
-    inline def blockchainGetTransactions(params: CommonParams & BlockchainGetTransactions): Response[BlockchainTransactions] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetTransactions")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainTransactions]]
+    inline def blockchainGetTransactions(params: CommonParams & BlockchainGetTransactions): js.Promise[Success[BlockchainTransactions] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainGetTransactions")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainTransactions] | Unsuccessful]]
     
-    inline def blockchainSetCustomBackend(params: CommonParams & BlockchainSetCustomBackend): Response[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainSetCustomBackend")(params.asInstanceOf[js.Any]).asInstanceOf[Response[Boolean]]
+    inline def blockchainSetCustomBackend(params: CommonParams & BlockchainSetCustomBackend): js.Promise[Success[Boolean] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainSetCustomBackend")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Boolean] | Unsuccessful]]
     
-    inline def blockchainSubscribe(params: CommonParams & BlockchainSubscribe): Response[BlockchainSubscribed] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainSubscribe")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainSubscribed]]
+    inline def blockchainSubscribe(params: CommonParams & BlockchainSubscribe): js.Promise[Success[BlockchainSubscribed] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainSubscribe")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainSubscribed] | Unsuccessful]]
     
-    inline def blockchainSubscribeFiatRates(params: BlockchainSubscribeFiatRates): Response[BlockchainSubscribed] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainSubscribeFiatRates")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainSubscribed]]
+    inline def blockchainSubscribeFiatRates(params: BlockchainSubscribeFiatRates): js.Promise[Success[BlockchainSubscribed] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainSubscribeFiatRates")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainSubscribed] | Unsuccessful]]
     
-    inline def blockchainUnsubscribe(params: CommonParams & BlockchainSubscribe): Response[BlockchainSubscribed] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainUnsubscribe")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainSubscribed]]
+    inline def blockchainUnsubscribe(params: CommonParams & BlockchainSubscribe): js.Promise[Success[BlockchainSubscribed] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainUnsubscribe")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainSubscribed] | Unsuccessful]]
     
-    inline def blockchainUnsubscribeFiatRates(params: BlockchainSubscribeFiatRates): Response[BlockchainSubscribed] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainUnsubscribeFiatRates")(params.asInstanceOf[js.Any]).asInstanceOf[Response[BlockchainSubscribed]]
+    inline def blockchainUnsubscribeFiatRates(params: BlockchainSubscribeFiatRates): js.Promise[Success[BlockchainSubscribed] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("blockchainUnsubscribeFiatRates")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[BlockchainSubscribed] | Unsuccessful]]
     
     inline def cancel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")().asInstanceOf[Unit]
     inline def cancel(params: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def cardanoGetAddress(params: CommonParams & Bundle[CardanoGetAddress]): BundledResponse[CardanoAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[CardanoAddress]]
+    inline def cardanoGetAddress(params: CommonParams & Bundle[CardanoGetAddress]): js.Promise[Success[js.Array[CardanoAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[CardanoAddress]] | Unsuccessful]]
     // Cardano (ADA)
-    inline def cardanoGetAddress(params: CommonParams & CardanoGetAddress): Response[CardanoAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[CardanoAddress]]
+    inline def cardanoGetAddress(params: CommonParams & CardanoGetAddress): js.Promise[Success[CardanoAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CardanoAddress] | Unsuccessful]]
     
-    inline def cardanoGetNativeScriptHash(params: CommonParams & CardanoGetNativeScriptHash): Response[CardanoNativeScriptHash] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetNativeScriptHash")(params.asInstanceOf[js.Any]).asInstanceOf[Response[CardanoNativeScriptHash]]
+    inline def cardanoGetNativeScriptHash(params: CommonParams & CardanoGetNativeScriptHash): js.Promise[Success[CardanoNativeScriptHash] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetNativeScriptHash")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CardanoNativeScriptHash] | Unsuccessful]]
     
-    inline def cardanoGetPublicKey(params: CommonParams & Bundle[CardanoGetPublicKey]): BundledResponse[CardanoPublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[CardanoPublicKey]]
-    inline def cardanoGetPublicKey(params: CommonParams & CardanoGetPublicKey): Response[CardanoPublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[Response[CardanoPublicKey]]
+    inline def cardanoGetPublicKey(params: CommonParams & Bundle[CardanoGetPublicKey]): js.Promise[Success[js.Array[CardanoPublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[CardanoPublicKey]] | Unsuccessful]]
+    inline def cardanoGetPublicKey(params: CommonParams & CardanoGetPublicKey): js.Promise[Success[CardanoPublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CardanoPublicKey] | Unsuccessful]]
     
-    inline def cardanoSignTransaction(params: CommonParams & CardanoSignTransaction): Response[CardanoSignedTxData] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[CardanoSignedTxData]]
+    inline def cardanoSignTransaction(params: CommonParams & CardanoSignTransaction): js.Promise[Success[CardanoSignedTxData] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cardanoSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CardanoSignedTxData] | Unsuccessful]]
     
     /**
       * Change pin
       */
-    inline def changePin(params: CommonParams & ChangePin): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("changePin")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def changePin(params: CommonParams & ChangePin): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("changePin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Asks device to encrypt value using the private key derived by given BIP32
       * path and the given key. IV is always computed automatically.
       */
-    inline def cipherKeyValue(params: CommonParams & CipherKeyValue): Response[CipheredValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[Response[CipheredValue]]
-    inline def cipherKeyValue(params: CommonParams & Bundle[CipherKeyValue]): BundledResponse[CipheredValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[CipheredValue]]
+    inline def cipherKeyValue(params: CommonParams & CipherKeyValue): js.Promise[Success[CipheredValue] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CipheredValue] | Unsuccessful]]
+    inline def cipherKeyValue(params: CommonParams & Bundle[CipherKeyValue]): js.Promise[Success[js.Array[CipheredValue]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("cipherKeyValue")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[CipheredValue]] | Unsuccessful]]
     
     /**
       * Bitcoin and Bitcoin-like
@@ -219,95 +218,95 @@ object apiMod {
       * returned in hexadecimal format. Change output is added automatically, if
       * needed.
       */
-    inline def composeTransaction(params: CommonParams & ComposeParams): Response[SignedTransaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[SignedTransaction]]
-    inline def composeTransaction(params: CommonParams & PrecomposeParams): Response[js.Array[PrecomposedTransaction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[js.Array[PrecomposedTransaction]]]
+    inline def composeTransaction(params: CommonParams & ComposeParams): js.Promise[Success[SignedTransaction] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[SignedTransaction] | Unsuccessful]]
+    inline def composeTransaction(params: CommonParams & PrecomposeParams): js.Promise[Success[js.Array[PrecomposedTransaction]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[PrecomposedTransaction]] | Unsuccessful]]
     
     // // Developer mode
-    inline def customMessage(params: CommonParams & CustomMessage): Response[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customMessage")(params.asInstanceOf[js.Any]).asInstanceOf[Response[Any]]
+    inline def customMessage(params: CommonParams & CustomMessage): js.Promise[Success[Any] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("customMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Any] | Unsuccessful]]
     
     inline def disableWebUSB(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableWebUSB")().asInstanceOf[Unit]
     
     inline def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
     
-    inline def eosGetPublicKey(params: CommonParams & Bundle[EosGetPublicKey]): BundledResponse[EosPublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[EosPublicKey]]
+    inline def eosGetPublicKey(params: CommonParams & Bundle[EosGetPublicKey]): js.Promise[Success[js.Array[EosPublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EosPublicKey]] | Unsuccessful]]
     // EOS
-    inline def eosGetPublicKey(params: CommonParams & EosGetPublicKey): Response[EosPublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[Response[EosPublicKey]]
+    inline def eosGetPublicKey(params: CommonParams & EosGetPublicKey): js.Promise[Success[EosPublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EosPublicKey] | Unsuccessful]]
     
-    inline def eosSignTransaction(params: CommonParams & EosSignTransaction): Response[EosSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[EosSignedTx]]
+    inline def eosSignTransaction(params: CommonParams & EosSignTransaction): js.Promise[Success[EosSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("eosSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EosSignedTx] | Unsuccessful]]
     
-    inline def ethereumGetAddress(params: CommonParams & Bundle[EthereumGetAddress]): BundledResponse[EthereumAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[EthereumAddress]]
+    inline def ethereumGetAddress(params: CommonParams & Bundle[EthereumGetAddress]): js.Promise[Success[js.Array[EthereumAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EthereumAddress]] | Unsuccessful]]
     // Ethereum and Ethereum-like
-    inline def ethereumGetAddress(params: CommonParams & EthereumGetAddress): Response[EthereumAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[EthereumAddress]]
+    inline def ethereumGetAddress(params: CommonParams & EthereumGetAddress): js.Promise[Success[EthereumAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumAddress] | Unsuccessful]]
     
-    inline def ethereumGetPublicKey(params: CommonParams & Bundle[EthereumGetPublicKey]): BundledResponse[HDNodeResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[HDNodeResponse]]
-    inline def ethereumGetPublicKey(params: CommonParams & EthereumGetPublicKey): Response[HDNodeResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[Response[HDNodeResponse]]
+    inline def ethereumGetPublicKey(params: CommonParams & Bundle[EthereumGetPublicKey]): js.Promise[Success[js.Array[HDNodeResponse]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[HDNodeResponse]] | Unsuccessful]]
+    inline def ethereumGetPublicKey(params: CommonParams & EthereumGetPublicKey): js.Promise[Success[HDNodeResponse] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[HDNodeResponse] | Unsuccessful]]
     
-    inline def ethereumSignMessage(params: CommonParams & EthereumSignMessage): Response[MessageSignature] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignMessage")(params.asInstanceOf[js.Any]).asInstanceOf[Response[MessageSignature]]
+    inline def ethereumSignMessage(params: CommonParams & EthereumSignMessage): js.Promise[Success[MessageSignature] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[MessageSignature] | Unsuccessful]]
     
-    inline def ethereumSignTransaction(params: CommonParams & Bundle[EthereumSignTransaction]): BundledResponse[EthereumSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[EthereumSignedTx]]
-    inline def ethereumSignTransaction(params: CommonParams & EthereumSignTransaction): Response[EthereumSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[EthereumSignedTx]]
+    inline def ethereumSignTransaction(params: CommonParams & Bundle[EthereumSignTransaction]): js.Promise[Success[js.Array[EthereumSignedTx]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[EthereumSignedTx]] | Unsuccessful]]
+    inline def ethereumSignTransaction(params: CommonParams & EthereumSignTransaction): js.Promise[Success[EthereumSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumSignedTx] | Unsuccessful]]
     
     /**
       * @param params Passing:
       * - {@link Ethereum.EthereumSignTypedData} is required for Trezor T
       * - {@link Ethereum.EthereumSignTypedHash} is required for Trezor 1 compatability
       */
-    inline def ethereumSignTypedData[T /* <: EthereumSignTypedDataTypes */](params: EthereumSignTypedData[T] & CommonParams): Response[EthereumTypedDataSignature] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTypedData")(params.asInstanceOf[js.Any]).asInstanceOf[Response[EthereumTypedDataSignature]]
-    inline def ethereumSignTypedData[T /* <: EthereumSignTypedDataTypes */](params: EthereumSignTypedHashAndData[T] & CommonParams): Response[EthereumTypedDataSignature] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTypedData")(params.asInstanceOf[js.Any]).asInstanceOf[Response[EthereumTypedDataSignature]]
+    inline def ethereumSignTypedData[T /* <: EthereumSignTypedDataTypes */](params: EthereumSignTypedData[T] & CommonParams): js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTypedData")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful]]
+    inline def ethereumSignTypedData[T /* <: EthereumSignTypedDataTypes */](params: EthereumSignTypedHashAndData[T] & CommonParams): js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumSignTypedData")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[EthereumTypedDataSignature] | Unsuccessful]]
     
-    inline def ethereumVerifyMessage(params: CommonParams & EthereumVerifyMessage): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumVerifyMessage")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def ethereumVerifyMessage(params: CommonParams & EthereumVerifyMessage): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("ethereumVerifyMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Sends FirmwareErase message followed by FirmwareUpdate message
       */
-    inline def firmwareUpdate(params: CommonParams & FirmwareUpdate): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("firmwareUpdate")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
-    inline def firmwareUpdate(params: CommonParams & FirmwareUpdateBinary): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("firmwareUpdate")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def firmwareUpdate(params: CommonParams & FirmwareUpdate): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("firmwareUpdate")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
+    inline def firmwareUpdate(params: CommonParams & FirmwareUpdateBinary): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("firmwareUpdate")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Bitcoin, Bitcoin-like, Ethereum-like, Ripple
       * Gets an info of specified account.
       */
-    inline def getAccountInfo(params: CommonParams & GetAccountInfo): Response[AccountInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountInfo")(params.asInstanceOf[js.Any]).asInstanceOf[Response[AccountInfo]]
-    inline def getAccountInfo(params: CommonParams & Bundle[GetAccountInfo]): BundledResponse[AccountInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountInfo")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[AccountInfo]]
+    inline def getAccountInfo(params: CommonParams & GetAccountInfo): js.Promise[Success[AccountInfo] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountInfo")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[AccountInfo] | Unsuccessful]]
+    inline def getAccountInfo(params: CommonParams & Bundle[GetAccountInfo]): js.Promise[Success[js.Array[AccountInfo]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountInfo")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[AccountInfo]] | Unsuccessful]]
     
     /**
       * Bitcoin and Bitcoin-like
       * Display requested address derived by given BIP32 path on device and
       * returns it to caller. User is asked to confirm the export on Trezor.
       */
-    inline def getAddress(params: CommonParams & GetAddress): Response[Address] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[Address]]
-    inline def getAddress(params: CommonParams & Bundle[GetAddress]): BundledResponse[Address] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[Address]]
+    inline def getAddress(params: CommonParams & GetAddress): js.Promise[Success[Address] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Address] | Unsuccessful]]
+    inline def getAddress(params: CommonParams & Bundle[GetAddress]): js.Promise[Success[js.Array[Address]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[Address]] | Unsuccessful]]
     
     /**
       * Get static coin info
       */
-    inline def getCoinInfo(params: GetCoinInfo): Response[CoinInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoinInfo")(params.asInstanceOf[js.Any]).asInstanceOf[Response[CoinInfo]]
+    inline def getCoinInfo(params: GetCoinInfo): js.Promise[Success[CoinInfo] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoinInfo")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[CoinInfo] | Unsuccessful]]
     
     /**
       * Retrieves device state associated with passphrase.
       */
-    inline def getDeviceState(): Response[DeviceStateResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceState")().asInstanceOf[Response[DeviceStateResponse]]
-    inline def getDeviceState(params: CommonParams): Response[DeviceStateResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceState")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DeviceStateResponse]]
+    inline def getDeviceState(): js.Promise[Success[DeviceStateResponse] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceState")().asInstanceOf[js.Promise[Success[DeviceStateResponse] | Unsuccessful]]
+    inline def getDeviceState(params: CommonParams): js.Promise[Success[DeviceStateResponse] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceState")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DeviceStateResponse] | Unsuccessful]]
     
     /**
       * Retrieves the set of features associated with the device.
       */
-    inline def getFeatures(): Response[Features] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFeatures")().asInstanceOf[Response[Features]]
-    inline def getFeatures(params: CommonParams): Response[Features] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFeatures")(params.asInstanceOf[js.Any]).asInstanceOf[Response[Features]]
+    inline def getFeatures(): js.Promise[Success[Features] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFeatures")().asInstanceOf[js.Promise[Success[Features] | Unsuccessful]]
+    inline def getFeatures(params: CommonParams): js.Promise[Success[Features] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFeatures")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Features] | Unsuccessful]]
     
-    inline def getPublicKey(params: CommonParams & Bundle[GetPublicKey]): BundledResponse[HDNodeResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[HDNodeResponse]]
+    inline def getPublicKey(params: CommonParams & Bundle[GetPublicKey]): js.Promise[Success[js.Array[HDNodeResponse]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[HDNodeResponse]] | Unsuccessful]]
     /**
       * Bitcoin and Bitcoin-like
       * Retrieves BIP32 extended public derived by given BIP32 path.
       * User is presented with a description of the requested key and asked to
       * confirm the export.
       */
-    inline def getPublicKey(params: CommonParams & GetPublicKey): Response[HDNodeResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[Response[HDNodeResponse]]
+    inline def getPublicKey(params: CommonParams & GetPublicKey): js.Promise[Success[HDNodeResponse] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[HDNodeResponse] | Unsuccessful]]
     
     /**
       * Retrieves the settings that TrezorConnect was initialized with.
       */
-    inline def getSettings(): Response[ConnectSettings] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")().asInstanceOf[Response[ConnectSettings]]
+    inline def getSettings(): js.Promise[Success[ConnectSettings] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")().asInstanceOf[js.Promise[Success[ConnectSettings] | Unsuccessful]]
     
     /**
       * Initializes TrezorConnect.
@@ -320,11 +319,11 @@ object apiMod {
       */
     inline def manifest(params: Manifest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("manifest")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def nemGetAddress(params: CommonParams & Bundle[NEMGetAddress]): BundledResponse[NEMAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("nemGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[NEMAddress]]
+    inline def nemGetAddress(params: CommonParams & Bundle[NEMGetAddress]): js.Promise[Success[js.Array[NEMAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("nemGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[NEMAddress]] | Unsuccessful]]
     // NEM
-    inline def nemGetAddress(params: CommonParams & NEMGetAddress): Response[NEMAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("nemGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[NEMAddress]]
+    inline def nemGetAddress(params: CommonParams & NEMGetAddress): js.Promise[Success[NEMAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("nemGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[NEMAddress] | Unsuccessful]]
     
-    inline def nemSignTransaction(params: CommonParams & NEMSignTransaction): Response[NEMSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("nemSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[NEMSignedTx]]
+    inline def nemSignTransaction(params: CommonParams & NEMSignTransaction): js.Promise[Success[NEMSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("nemSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[NEMSignedTx] | Unsuccessful]]
     
     inline def off(`type`: String, cb: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(`type`.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -348,76 +347,76 @@ object apiMod {
       * Bitcoin, Bitcoin-like, Ethereum-like, Ripple
       * Broadcasts the transaction to the selected network.
       */
-    inline def pushTransaction(params: CommonParams & PushTransaction): Response[PushedTransaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[PushedTransaction]]
+    inline def pushTransaction(params: CommonParams & PushTransaction): js.Promise[Success[PushedTransaction] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[PushedTransaction] | Unsuccessful]]
     
     /**
       * Reboots device (currently only T1 with fw >= 1.10.0) in bootloader mode
       */
-    inline def rebootToBootloader(): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("rebootToBootloader")().asInstanceOf[Response[DefaultMessage]]
-    inline def rebootToBootloader(params: CommonParams): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("rebootToBootloader")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def rebootToBootloader(): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rebootToBootloader")().asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
+    inline def rebootToBootloader(params: CommonParams): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rebootToBootloader")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Ask device to initiate recovery procedure
       */
-    inline def recoveryDevice(params: CommonParams & RecoveryDevice): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("recoveryDevice")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def recoveryDevice(params: CommonParams & RecoveryDevice): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("recoveryDevice")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     inline def removeAllListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[Unit]
     
     inline def renderWebUSBButton(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderWebUSBButton")().asInstanceOf[Unit]
     
-    inline def requestLogin(params: LoginChallenge & CommonParams): Response[Login] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[Response[Login]]
+    inline def requestLogin(params: LoginChallenge & CommonParams): js.Promise[Success[Login] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Login] | Unsuccessful]]
     /**
       * Challenge-response authentication via Trezor.
       * To protect against replay attacks you should use a server-side generated
       * and randomized challengeHidden for every attempt. You can also provide a
       * visual challenge that will be shown on the device.
       */
-    inline def requestLogin(params: RequestLoginAsync & CommonParams): Response[Login] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[Response[Login]]
+    inline def requestLogin(params: RequestLoginAsync & CommonParams): js.Promise[Success[Login] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLogin")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[Login] | Unsuccessful]]
     
     /**
       * Performs device setup and generates a new seed.
       */
-    inline def resetDevice(params: CommonParams & ResetDevice): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDevice")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def resetDevice(params: CommonParams & ResetDevice): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDevice")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     // Ripple
-    inline def rippleGetAddress(params: CommonParams & RippleGetAddress): Response[RippleAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[RippleAddress]]
-    inline def rippleGetAddress(params: CommonParams & Bundle[RippleGetAddress]): BundledResponse[RippleAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[RippleAddress]]
+    inline def rippleGetAddress(params: CommonParams & RippleGetAddress): js.Promise[Success[RippleAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[RippleAddress] | Unsuccessful]]
+    inline def rippleGetAddress(params: CommonParams & Bundle[RippleGetAddress]): js.Promise[Success[js.Array[RippleAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[RippleAddress]] | Unsuccessful]]
     
-    inline def rippleSignTransaction(params: CommonParams & RippleSignTransaction): Response[RippleSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[RippleSignedTx]]
+    inline def rippleSignTransaction(params: CommonParams & RippleSignTransaction): js.Promise[Success[RippleSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("rippleSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[RippleSignedTx] | Unsuccessful]]
     
     /**
       * Set tor proxy for @trezor/blockchain-link connections
       */
-    inline def setProxy(params: SetProxy): Response[Success] = ^.asInstanceOf[js.Dynamic].applyDynamic("setProxy")(params.asInstanceOf[js.Any]).asInstanceOf[Response[Success]]
+    inline def setProxy(params: SetProxy): js.Promise[Success[typings.trezorConnect.protobufMod.Success] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("setProxy")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[typings.trezorConnect.protobufMod.Success] | Unsuccessful]]
     
     /**
       * Bitcoin and Bitcoin-like
       * Asks device to sign a message using the private key derived by given BIP32
       * path.
       */
-    inline def signMessage(params: CommonParams & SignMessage): Response[MessageSignature] = ^.asInstanceOf[js.Dynamic].applyDynamic("signMessage")(params.asInstanceOf[js.Any]).asInstanceOf[Response[MessageSignature]]
+    inline def signMessage(params: CommonParams & SignMessage): js.Promise[Success[MessageSignature] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("signMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[MessageSignature] | Unsuccessful]]
     
     /**
       * Bitcoin and Bitcoin-like
       * Asks device to sign given inputs and outputs of pre-composed transaction.
       * User is asked to confirm all transaction details on Trezor.
       */
-    inline def signTransaction(params: CommonParams & SignTransaction): Response[SignedTransaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("signTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[SignedTransaction]]
+    inline def signTransaction(params: CommonParams & SignTransaction): js.Promise[Success[SignedTransaction] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("signTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[SignedTransaction] | Unsuccessful]]
     
     // Stellar
-    inline def stellarGetAddress(params: CommonParams & StellarGetAddress): Response[StellarAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[StellarAddress]]
-    inline def stellarGetAddress(params: CommonParams & Bundle[StellarGetAddress]): BundledResponse[StellarAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[StellarAddress]]
+    inline def stellarGetAddress(params: CommonParams & StellarGetAddress): js.Promise[Success[StellarAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[StellarAddress] | Unsuccessful]]
+    inline def stellarGetAddress(params: CommonParams & Bundle[StellarGetAddress]): js.Promise[Success[js.Array[StellarAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[StellarAddress]] | Unsuccessful]]
     
-    inline def stellarSignTransaction(params: CommonParams & StellarSignTransaction): Response[StellarSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[StellarSignedTx]]
+    inline def stellarSignTransaction(params: CommonParams & StellarSignTransaction): js.Promise[Success[StellarSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("stellarSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[StellarSignedTx] | Unsuccessful]]
     
     // // Tezos
-    inline def tezosGetAddress(params: CommonParams & TezosGetAddress): Response[TezosAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[Response[TezosAddress]]
-    inline def tezosGetAddress(params: CommonParams & Bundle[TezosGetAddress]): BundledResponse[TezosAddress] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[TezosAddress]]
+    inline def tezosGetAddress(params: CommonParams & TezosGetAddress): js.Promise[Success[TezosAddress] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[TezosAddress] | Unsuccessful]]
+    inline def tezosGetAddress(params: CommonParams & Bundle[TezosGetAddress]): js.Promise[Success[js.Array[TezosAddress]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetAddress")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[TezosAddress]] | Unsuccessful]]
     
-    inline def tezosGetPublicKey(params: CommonParams & TezosGetPublicKey): Response[TezosPublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[Response[TezosPublicKey]]
-    inline def tezosGetPublicKey(params: CommonParams & Bundle[TezosGetPublicKey]): BundledResponse[TezosPublicKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[BundledResponse[TezosPublicKey]]
+    inline def tezosGetPublicKey(params: CommonParams & TezosGetPublicKey): js.Promise[Success[TezosPublicKey] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[TezosPublicKey] | Unsuccessful]]
+    inline def tezosGetPublicKey(params: CommonParams & Bundle[TezosGetPublicKey]): js.Promise[Success[js.Array[TezosPublicKey]] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosGetPublicKey")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[js.Array[TezosPublicKey]] | Unsuccessful]]
     
-    inline def tezosSignTransaction(params: CommonParams & TezosSignTransaction): Response[TezosSignedTx] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[Response[TezosSignedTx]]
+    inline def tezosSignTransaction(params: CommonParams & TezosSignTransaction): js.Promise[Success[TezosSignedTx] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("tezosSignTransaction")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[TezosSignedTx] | Unsuccessful]]
     
     inline def uiResponse(response: UiResponse): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uiResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -425,12 +424,12 @@ object apiMod {
       * Bitcoin and Bitcoin-like
       * Asks device to verify a message using the signer address and signature.
       */
-    inline def verifyMessage(params: CommonParams & VerifyMessage): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def verifyMessage(params: CommonParams & VerifyMessage): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
     
     /**
       * Resets device to factory defaults and removes all private data.
       */
-    inline def wipeDevice(): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("wipeDevice")().asInstanceOf[Response[DefaultMessage]]
-    inline def wipeDevice(params: CommonParams): Response[DefaultMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("wipeDevice")(params.asInstanceOf[js.Any]).asInstanceOf[Response[DefaultMessage]]
+    inline def wipeDevice(): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("wipeDevice")().asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
+    inline def wipeDevice(params: CommonParams): js.Promise[Success[DefaultMessage] | Unsuccessful] = ^.asInstanceOf[js.Dynamic].applyDynamic("wipeDevice")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Success[DefaultMessage] | Unsuccessful]]
   }
 }

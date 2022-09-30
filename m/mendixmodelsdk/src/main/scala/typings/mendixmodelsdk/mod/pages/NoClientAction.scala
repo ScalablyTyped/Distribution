@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.NoClientAction")
 @js.native
-class NoClientAction protected ()
+open class NoClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.NoClientAction {
   def this(
     model: AbstractModel,

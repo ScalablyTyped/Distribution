@@ -73,7 +73,7 @@ object FeatureGroupProps {
     
     inline def setDashArrayUndefined: Self = StObject.set(x, "dashArray", js.undefined)
     
-    inline def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value :_*))
+    inline def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value*))
     
     inline def setDashOffset(value: String): Self = StObject.set(x, "dashOffset", value.asInstanceOf[js.Any])
     

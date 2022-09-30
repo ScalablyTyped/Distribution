@@ -23,13 +23,13 @@ trait Toggle extends StObject {
   
   var gap: js.UndefOr[GapType] = js.undefined
   
-  var hover: js.UndefOr[`22`] = js.undefined
+  var hover: js.UndefOr[`23`] = js.undefined
   
-  var icon: js.UndefOr[`35`] = js.undefined
+  var icon: js.UndefOr[`36`] = js.undefined
   
   var icons: js.UndefOr[Checked] = js.undefined
   
-  var label: js.UndefOr[`34`] = js.undefined
+  var label: js.UndefOr[`35`] = js.undefined
   
   var pad: js.UndefOr[PadType] = js.undefined
   
@@ -68,11 +68,11 @@ object Toggle {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setHover(value: `22`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `23`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    inline def setIcon(value: `35`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: `36`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
@@ -80,7 +80,7 @@ object Toggle {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setLabel(value: `34`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: `35`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

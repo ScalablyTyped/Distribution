@@ -1,19 +1,19 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`10`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`11`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`12`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`13`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`3`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`4`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`5`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`10`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`11`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`12`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`13`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`1`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`2`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`3`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`4`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`5`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`6`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`7`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`8`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,20 +22,20 @@ object directionalHintMod {
   
   /* Inlined {  topLeftEdge :0,   topCenter :1,   topRightEdge :2,   topAutoEdge :3,   bottomLeftEdge :4,   bottomCenter :5,   bottomRightEdge :6,   bottomAutoEdge :7,   leftTopEdge :8,   leftCenter :9,   leftBottomEdge :10,   rightTopEdge :11,   rightCenter :12,   rightBottomEdge :13}[keyof {  topLeftEdge :0,   topCenter :1,   topRightEdge :2,   topAutoEdge :3,   bottomLeftEdge :4,   bottomCenter :5,   bottomRightEdge :6,   bottomAutoEdge :7,   leftTopEdge :8,   leftCenter :9,   leftBottomEdge :10,   rightTopEdge :11,   rightCenter :12,   rightBottomEdge :13}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`3`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`13`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`4`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`5`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`12`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`11`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`10`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
-    - typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`3`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`13`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`2`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`4`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`0`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`7`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`5`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`12`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`11`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`6`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`10`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`9`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`8`
+    - typings.officeUiFabricReact.officeUiFabricReactInts.`1`
   */
   trait DirectionalHint extends StObject
   object DirectionalHint {

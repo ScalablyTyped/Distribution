@@ -2,7 +2,7 @@ package typings.justDebounceIt
 
 import typings.justDebounceIt.justDebounceItBooleans.`false`
 import typings.justDebounceIt.justDebounceItBooleans.`true`
-import typings.justDebounceIt.justDebounceItNumbers.`0`
+import typings.justDebounceIt.justDebounceItInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

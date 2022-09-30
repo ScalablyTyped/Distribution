@@ -1,61 +1,39 @@
 package typings.dexie.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreMutateResponse extends js.Object {
+trait DBCoreMutateResponse extends StObject {
   
-  var failures: NumberDictionary[Error] = js.native
+  var failures: NumberDictionary[js.Error]
   
-  var lastResult: js.Any = js.native
+  var lastResult: Any
   
-  var numFailures: Double = js.native
+  var numFailures: Double
   
-  var results: js.UndefOr[js.Array[_]] = js.native
+  var results: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object DBCoreMutateResponse {
   
-  @scala.inline
-  def apply(failures: NumberDictionary[Error], lastResult: js.Any, numFailures: Double): DBCoreMutateResponse = {
+  inline def apply(failures: NumberDictionary[js.Error], lastResult: Any, numFailures: Double): DBCoreMutateResponse = {
     val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], lastResult = lastResult.asInstanceOf[js.Any], numFailures = numFailures.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBCoreMutateResponse]
   }
   
-  @scala.inline
-  implicit class DBCoreMutateResponseOps[Self <: DBCoreMutateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreMutateResponse](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setFailures(value: NumberDictionary[js.Error]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setLastResult(value: Any): Self = StObject.set(x, "lastResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setNumFailures(value: Double): Self = StObject.set(x, "numFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailures(value: NumberDictionary[Error]): Self = this.set("failures", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastResult(value: js.Any): Self = this.set("lastResult", value.asInstanceOf[js.Any])
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setNumFailures(value: Double): Self = this.set("numFailures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: js.Any*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[_]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    inline def setResultsVarargs(value: Any*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

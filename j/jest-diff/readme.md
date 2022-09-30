@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-diff
 
-Typings are for version 29.0.3
+Typings are for version 29.1.2
 
 ## Library description:
 Display differences clearly so people can review changes confidently.

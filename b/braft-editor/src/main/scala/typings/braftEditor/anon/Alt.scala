@@ -2,30 +2,27 @@ package typings.braftEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alt extends StObject {
   
-  var alt: String = js.native
+  var alt: String
   
-  var autoPlay: Boolean = js.native
+  var autoPlay: Boolean
   
-  var controls: Boolean = js.native
+  var controls: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var loop: Boolean = js.native
+  var loop: Boolean
   
-  var poster: String = js.native
+  var poster: String
   
-  var title: String = js.native
+  var title: String
 }
 object Alt {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alt: String,
     autoPlay: Boolean,
     controls: Boolean,
@@ -38,28 +35,20 @@ object Alt {
     __obj.asInstanceOf[Alt]
   }
   
-  @scala.inline
-  implicit class AltMutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
+  extension [Self <: Alt](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
+    inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -1,10 +1,10 @@
 package typings.chrome.chrome.system
 
 import typings.chrome.anon.ManufacturerId
-import typings.chrome.chromeNumbers.`0`
-import typings.chrome.chromeNumbers.`180`
-import typings.chrome.chromeNumbers.`270`
-import typings.chrome.chromeNumbers.`90`
+import typings.chrome.chromeInts.`0`
+import typings.chrome.chromeInts.`180`
+import typings.chrome.chromeInts.`270`
+import typings.chrome.chromeInts.`90`
 import typings.chrome.chromeStrings.bottom
 import typings.chrome.chromeStrings.left
 import typings.chrome.chromeStrings.mixed

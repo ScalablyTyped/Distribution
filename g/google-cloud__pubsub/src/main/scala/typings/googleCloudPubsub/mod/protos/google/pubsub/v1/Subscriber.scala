@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Subscriber */
 @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.Subscriber")
 @js.native
-class Subscriber protected ()
+open class Subscriber protected ()
   extends typings.googleCloudPubsub.protosMod.google.pubsub.v1.Subscriber {
   /**
     * Constructs a new Subscriber service.

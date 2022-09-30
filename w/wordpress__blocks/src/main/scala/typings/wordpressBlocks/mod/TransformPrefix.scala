@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransformPrefix[T /* <: Record[String, js.Any] */]
+trait TransformPrefix[T /* <: Record[String, Any] */]
   extends StObject
      with Transform[T] {
   
@@ -21,13 +21,13 @@ trait TransformPrefix[T /* <: Record[String, js.Any] */]
 }
 object TransformPrefix {
   
-  inline def apply[T /* <: Record[String, js.Any] */](prefix: String, transform: String => BlockInstance[Partial[T]]): TransformPrefix[T] = {
+  inline def apply[T /* <: Record[String, Any] */](prefix: String, transform: String => BlockInstance[Partial[T]]): TransformPrefix[T] = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
     __obj.updateDynamic("type")("prefix")
     __obj.asInstanceOf[TransformPrefix[T]]
   }
   
-  extension [Self <: TransformPrefix[?], T /* <: Record[String, js.Any] */](x: Self & TransformPrefix[T]) {
+  extension [Self <: TransformPrefix[?], T /* <: Record[String, Any] */](x: Self & TransformPrefix[T]) {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

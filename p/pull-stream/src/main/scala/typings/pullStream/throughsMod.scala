@@ -21,7 +21,7 @@ object throughsMod {
   
   inline def filterNot[InOut](test: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterNot")(test.asInstanceOf[js.Any]).asInstanceOf[Through_[InOut, InOut]]
   
-  inline def filter_InOut_In[In, Out /* <: In */](test: js.Function1[/* data */ In, /* is Out */ Boolean]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(test.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]
+  inline def filter_InOut[In, Out /* <: In */](test: js.Function1[/* data */ In, /* is Out */ Boolean]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(test.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]
   
   inline def flatten[Out](): Through_[js.Array[Out | Source[Out] | (Through_[Any, Out])], Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[Through_[js.Array[Out | Source[Out] | (Through_[Any, Out])], Out]]
   

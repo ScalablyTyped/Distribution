@@ -3,9 +3,9 @@ package typings.nodegit
 import typings.nodegit.applyOptionsMod.ApplyOptions
 import typings.nodegit.diffMod.Diff
 import typings.nodegit.indexMod.Index
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
@@ -35,9 +35,9 @@ object applyMod {
     type FLAGS = `1`
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
     */
     trait LOCATION extends StObject
     object LOCATION {

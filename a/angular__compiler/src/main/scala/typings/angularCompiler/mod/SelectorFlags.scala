@@ -1,9 +1,9 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerNumbers.`1`
-import typings.angularCompiler.angularCompilerNumbers.`2`
-import typings.angularCompiler.angularCompilerNumbers.`4`
-import typings.angularCompiler.angularCompilerNumbers.`8`
+import typings.angularCompiler.angularCompilerInts.`1`
+import typings.angularCompiler.angularCompilerInts.`2`
+import typings.angularCompiler.angularCompilerInts.`4`
+import typings.angularCompiler.angularCompilerInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * core/src/render3/projection.ts because they cannot be referenced directly.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCompiler.angularCompilerNumbers.`1`
-  - typings.angularCompiler.angularCompilerNumbers.`2`
-  - typings.angularCompiler.angularCompilerNumbers.`4`
-  - typings.angularCompiler.angularCompilerNumbers.`8`
+  - typings.angularCompiler.angularCompilerInts.`1`
+  - typings.angularCompiler.angularCompilerInts.`2`
+  - typings.angularCompiler.angularCompilerInts.`4`
+  - typings.angularCompiler.angularCompilerInts.`8`
 */
 trait SelectorFlags extends StObject
 object SelectorFlags {

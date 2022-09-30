@@ -58,10 +58,6 @@ object nodeStrings {
   inline def BE: BE = "BE".asInstanceOf[BE]
   
   @js.native
-  sealed trait Backslash extends StObject
-  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
-  
-  @js.native
   sealed trait Buffer extends StObject
   inline def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   
@@ -1818,6 +1814,18 @@ object nodeStrings {
     extends StObject
        with Style
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait testColondiagnostic extends StObject
+  inline def testColondiagnostic: testColondiagnostic = "test:diagnostic".asInstanceOf[testColondiagnostic]
+  
+  @js.native
+  sealed trait testColonfail extends StObject
+  inline def testColonfail: testColonfail = "test:fail".asInstanceOf[testColonfail]
+  
+  @js.native
+  sealed trait testColonpass extends StObject
+  inline def testColonpass: testColonpass = "test:pass".asInstanceOf[testColonpass]
   
   @js.native
   sealed trait timeout extends StObject

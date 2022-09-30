@@ -1,7 +1,7 @@
 package typings.fastbitset
 
-import typings.fastbitset.fastbitsetNumbers.`0`
-import typings.fastbitset.fastbitsetNumbers.`1`
+import typings.fastbitset.fastbitsetInts.`0`
+import typings.fastbitset.fastbitsetInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

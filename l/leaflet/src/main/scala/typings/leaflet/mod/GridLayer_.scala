@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "GridLayer")
 @js.native
-class GridLayer_ () extends Layer {
+open class GridLayer_ () extends Layer {
   def this(options: GridLayerOptions) = this()
   
   /* protected */ def _tileCoordsToKey(coords: Coords): String = js.native
@@ -15,6 +15,8 @@ class GridLayer_ () extends Layer {
   /* protected */ var _tileZoom: js.UndefOr[Double] = js.native
   
   /* protected */ var _tiles: InternalTiles = js.native
+  
+  /* protected */ def _wrapCoords(parameter: Coords): Coords = js.native
   
   def bringToBack(): this.type = js.native
   

@@ -22,7 +22,7 @@ trait SauceConnectOptions extends StObject {
   var capath: js.UndefOr[String] = js.undefined
   
   /**
-    * Path to YAML config file. Please refer to https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Command+Line+Reference for a sample configuration file.
+    * Path to YAML config file.
     */
   var configFile: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait SauceConnectOptions extends StObject {
   var directDomains: js.UndefOr[String] = js.undefined
   
   /**
-    * Use specified name server. To specify multiple servers, separate them with comma. Use IP addresses, optionally with a port number, the two separated by a colon. Example: --dns 8.8.8.8,8.8.4.4:53
+    * Use specified name server(s). Example: --dns 8.8.8.8,8.8.4.4:53
     */
   var dns: js.UndefOr[String] = js.undefined
   
@@ -67,12 +67,12 @@ trait SauceConnectOptions extends StObject {
   var maxLogsize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The maximum amount of keepalive acks that can be missed before the client will trigger a reconnect. (default 30) (default: 30)
+    * The max number of keepalive acks that can be missed before triggering reconnect.
     */
   var maxMissedAcks: js.UndefOr[Double] = js.undefined
   
   /**
-    * host:port for the internal web server used to expose client side metrics. (default "localhost:8888")
+    * host:port server used to expose client-side metrics.
     */
   var metricsAddress: js.UndefOr[String] = js.undefined
   
@@ -122,12 +122,7 @@ trait SauceConnectOptions extends StObject {
   var readyfile: js.UndefOr[String] = js.undefined
   
   /**
-    * Advanced feature: Connect to Sauce REST API at alternative URL. Use only if directed to do so by Sauce Labs support. (default "https://saucelabs.com/rest/v1")
-    */
-  var restUrl: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Specify the Sauce Connect version you want to use. (default: 4.6.2)
+    * Specify the Sauce Connect version you want to use. (default: 4.8.0)
     */
   var scVersion: js.UndefOr[String] = js.undefined
   
@@ -157,6 +152,11 @@ trait SauceConnectOptions extends StObject {
   var sharedTunnel: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * host:port server used to expose client status.
+    */
+  var statusAddress: js.UndefOr[String] = js.undefined
+  
+  /**
     * CA certificate bundle to use for verifying tunnel connections. (default "/usr/local/etc/openssl/cert.pem")
     */
   var tunnelCainfo: js.UndefOr[String] = js.undefined
@@ -177,9 +177,24 @@ trait SauceConnectOptions extends StObject {
   var tunnelDomains: js.UndefOr[String] = js.undefined
   
   /**
-    * Don't automatically assign jobs to this tunnel. Jobs will use it only by explicitly providing the right identifier.
+    * Tunnel name used for this tunnel or the tunnels in the same HA pool.
     */
   var tunnelIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Tunnel name used for this tunnel or the tunnels in the same HA pool.
+    */
+  var tunnelName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The tunnel is a part of a high availability tunnel pool.
+    */
+  var tunnelPool: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Enable verbose logging. Can be used up to two times.
+    */
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object SauceConnectOptions {
   
@@ -282,10 +297,6 @@ object SauceConnectOptions {
     
     inline def setReadyfileUndefined: Self = StObject.set(x, "readyfile", js.undefined)
     
-    inline def setRestUrl(value: String): Self = StObject.set(x, "restUrl", value.asInstanceOf[js.Any])
-    
-    inline def setRestUrlUndefined: Self = StObject.set(x, "restUrl", js.undefined)
-    
     inline def setScVersion(value: String): Self = StObject.set(x, "scVersion", value.asInstanceOf[js.Any])
     
     inline def setScVersionUndefined: Self = StObject.set(x, "scVersion", js.undefined)
@@ -310,6 +321,10 @@ object SauceConnectOptions {
     
     inline def setSharedTunnelUndefined: Self = StObject.set(x, "sharedTunnel", js.undefined)
     
+    inline def setStatusAddress(value: String): Self = StObject.set(x, "statusAddress", value.asInstanceOf[js.Any])
+    
+    inline def setStatusAddressUndefined: Self = StObject.set(x, "statusAddress", js.undefined)
+    
     inline def setTunnelCainfo(value: String): Self = StObject.set(x, "tunnelCainfo", value.asInstanceOf[js.Any])
     
     inline def setTunnelCainfoUndefined: Self = StObject.set(x, "tunnelCainfo", js.undefined)
@@ -329,5 +344,17 @@ object SauceConnectOptions {
     inline def setTunnelIdentifier(value: String): Self = StObject.set(x, "tunnelIdentifier", value.asInstanceOf[js.Any])
     
     inline def setTunnelIdentifierUndefined: Self = StObject.set(x, "tunnelIdentifier", js.undefined)
+    
+    inline def setTunnelName(value: String): Self = StObject.set(x, "tunnelName", value.asInstanceOf[js.Any])
+    
+    inline def setTunnelNameUndefined: Self = StObject.set(x, "tunnelName", js.undefined)
+    
+    inline def setTunnelPool(value: String): Self = StObject.set(x, "tunnelPool", value.asInstanceOf[js.Any])
+    
+    inline def setTunnelPoolUndefined: Self = StObject.set(x, "tunnelPool", js.undefined)
+    
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

@@ -1,6 +1,5 @@
 package typings.vscodeLanguageclient.mod
 
-import typings.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashsemanticTokensSlashrefresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object SemanticTokensRefreshRequest {
   
   @JSImport("vscode-languageclient", "SemanticTokensRefreshRequest.method")
   @js.native
-  val method: workspaceSlashsemanticTokensSlashrefresh = js.native
+  val method: /* template literal string: workspace/semanticTokens/refresh */ String = js.native
   
   @JSImport("vscode-languageclient", "SemanticTokensRefreshRequest.type")
   @js.native

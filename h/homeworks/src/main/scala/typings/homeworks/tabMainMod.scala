@@ -10,22 +10,22 @@ object tabMainMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/main", "WorksTab")
   @js.native
-  class WorksTab protected ()
+  open class WorksTab protected ()
     extends typings.homeworks.componentTabMod.WorksTab {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/main", "WorksTabItem")
   @js.native
-  class WorksTabItem protected ()
+  open class WorksTabItem protected ()
     extends typings.homeworks.componentTabMod.WorksTabItem {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/main", "WorksTabTitle")
   @js.native
-  class WorksTabTitle protected ()
+  open class WorksTabTitle protected ()
     extends typings.homeworks.componentTabMod.WorksTabTitle {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
   }
 }

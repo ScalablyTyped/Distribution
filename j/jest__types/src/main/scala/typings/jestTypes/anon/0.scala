@@ -1,7 +1,7 @@
 package typings.jestTypes.anon
 
-import typings.jestTypes.circusMod.AsyncEvent
 import typings.jestTypes.jestTypesStrings.include_test_location_in_result
+import typings.jestTypes.mod.AsyncEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

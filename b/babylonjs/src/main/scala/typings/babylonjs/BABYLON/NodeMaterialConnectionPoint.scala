@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NodeMaterialConnectionPoint extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _acceptedConnectionPointType: Nullable[NodeMaterialConnectionPoint] = js.native
   
   /* private */ var _associatedVariableName: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _connectedPoint: Nullable[NodeMaterialConnectionPoint] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defaultConnectionPointType: Nullable[NodeMaterialBlockConnectionPointTypes] = js.native
   
   /* private */ var _direction: Any = js.native
   
   /* private */ var _endpoints: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _enforceAssociatedVariableName: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _linkedConnectionSource: Nullable[NodeMaterialConnectionPoint] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _ownerBlock: NodeMaterialBlock = js.native
   
-  /** @hidden */
+  /** @internal */
   var _prioritizeVertex: Boolean = js.native
   
   /* private */ var _target: Any = js.native
   
   /* private */ var _type: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _typeConnectionSource: Nullable[NodeMaterialConnectionPoint] = js.native
   
   /**

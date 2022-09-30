@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DataGridAddButton")
 @js.native
-class DataGridAddButton protected ()
+open class DataGridAddButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DataGridAddButton {
   def this(
     model: AbstractModel,

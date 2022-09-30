@@ -16,7 +16,18 @@ trait IpcMainInvokeEvent
   var frameId: Double = js.native
   
   /**
+    * The internal ID of the renderer process that sent this message
+    */
+  var processId: Double = js.native
+  
+  /**
     * Returns the `webContents` that sent the message
     */
   var sender: WebContents_ = js.native
+  
+  /**
+    * The frame that sent this message
+    *
+    */
+  val senderFrame: WebFrameMain_ = js.native
 }

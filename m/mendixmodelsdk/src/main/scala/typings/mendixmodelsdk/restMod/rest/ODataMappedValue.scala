@@ -23,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IValueType because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IMappedValue because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IODataMappedValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataMappedValue")
+- typings.mendixmodelsdk.restMod.rest.IODataMappedValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined filterable, sortable, representsStream */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataMappedValue")
 @js.native
-class ODataMappedValue protected () extends MappedValue {
+open class ODataMappedValue protected () extends MappedValue {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,6 +38,23 @@ class ODataMappedValue protected () extends MappedValue {
   @JSName("containerAsAttribute")
   def containerAsAttribute_MODataMappedValue: Attribute = js.native
   
+  /**
+    * In version 9.11.0: introduced
+    */
+  def creatable: Boolean = js.native
+  def creatable_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 8.16.0: introduced
+    */
+  def filterable: Boolean = js.native
+  def filterable_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 8.16.0: introduced
+    */
+  @JSName("filterable")
+  val filterable_FODataMappedValue: Boolean = js.native
+  
   def remoteName: String = js.native
   def remoteName_=(newValue: String): Unit = js.native
   
@@ -46,10 +63,38 @@ class ODataMappedValue protected () extends MappedValue {
     */
   def remoteType: String = js.native
   def remoteType_=(newValue: String): Unit = js.native
+  
+  /**
+    * In version 9.11.0: introduced
+    */
+  def representsStream: Boolean = js.native
+  def representsStream_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 9.11.0: introduced
+    */
+  @JSName("representsStream")
+  val representsStream_FODataMappedValue: Boolean = js.native
+  
+  /**
+    * In version 8.16.0: introduced
+    */
+  def sortable: Boolean = js.native
+  def sortable_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 8.16.0: introduced
+    */
+  @JSName("sortable")
+  val sortable_FODataMappedValue: Boolean = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  def updatable: Boolean = js.native
+  def updatable_=(newValue: Boolean): Unit = js.native
 }
 object ODataMappedValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataMappedValue")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataMappedValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -73,13 +118,13 @@ object ODataMappedValue {
   inline def createIn(container: Attribute): ODataMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataMappedValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataMappedValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataMappedValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataMappedValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataMappedValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.ItineraryBuilder")
 @js.native
-class ItineraryBuilder_ () extends StObject {
+open class ItineraryBuilder_ () extends StObject {
   
   def createContainer(): HTMLElement = js.native
   def createContainer(className: String): HTMLElement = js.native

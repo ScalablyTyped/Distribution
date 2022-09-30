@@ -14,6 +14,8 @@ trait MarkerOptions
   /** Whether to pan the map when dragging this marker near its edge or not. */
   var autoPan: js.UndefOr[Boolean] = js.undefined
   
+  var autoPanOnFocus: js.UndefOr[Boolean] = js.undefined
+  
   /** Distance (in pixels to the left/right and to the top/bottom) of the map edge to start panning the map. */
   var autoPanPadding: js.UndefOr[PointExpression] = js.undefined
   
@@ -60,6 +62,10 @@ object MarkerOptions {
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     inline def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanOnFocus(value: Boolean): Self = StObject.set(x, "autoPanOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanOnFocusUndefined: Self = StObject.set(x, "autoPanOnFocus", js.undefined)
     
     inline def setAutoPanPadding(value: PointExpression): Self = StObject.set(x, "autoPanPadding", value.asInstanceOf[js.Any])
     

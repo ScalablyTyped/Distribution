@@ -21,6 +21,7 @@ import typings.jspdf.jspdfStrings.pdfobjectnewwindow
 import typings.jspdf.jspdfStrings.string
 import typings.std.Blob
 import typings.std.HTMLElement
+import typings.std.Promise
 import typings.std.URL
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -29,7 +30,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait HTMLWorker
-  extends js.Promise[Any] {
+  extends StObject
+     with Promise[Any] {
   
   def doCallback(): js.Promise[Unit] = js.native
   

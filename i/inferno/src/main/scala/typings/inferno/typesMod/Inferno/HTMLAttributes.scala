@@ -1,7 +1,7 @@
 package typings.inferno.typesMod.Inferno
 
 import typings.csstype.mod.PropertiesHyphen
-import typings.inferno.infernoNumbers.`0`
+import typings.inferno.infernoInts.`0`
 import typings.inferno.infernoStrings.decimal
 import typings.inferno.infernoStrings.email
 import typings.inferno.infernoStrings.inherit

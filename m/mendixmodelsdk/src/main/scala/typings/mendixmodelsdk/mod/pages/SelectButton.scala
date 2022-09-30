@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SelectButton")
 @js.native
-class SelectButton protected ()
+open class SelectButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SelectButton {
   def this(
     model: AbstractModel,

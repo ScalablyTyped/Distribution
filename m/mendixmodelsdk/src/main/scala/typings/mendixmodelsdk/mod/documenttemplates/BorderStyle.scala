@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "documenttemplates.BorderStyle")
 @js.native
-class BorderStyle protected ()
+open class BorderStyle protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.BorderStyle {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

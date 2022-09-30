@@ -13,9 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any]]
+  inline def default(): js.Function1[/* next */ js.Function1[/* action */ AnyAction, Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* next */ js.Function1[/* action */ AnyAction, Any], Any]]
   
-  trait AsyncQueueAction[T /* <: Action[js.Any] */] extends StObject {
+  trait AsyncQueueAction[T /* <: Action[Any] */] extends StObject {
     
     def callback(next: js.Function0[Unit], dispatch: Dispatch[T]): Unit
     
@@ -23,12 +23,12 @@ object mod {
   }
   object AsyncQueueAction {
     
-    inline def apply[T /* <: Action[js.Any] */](callback: (js.Function0[Unit], Dispatch[T]) => Unit, queue: String): AsyncQueueAction[T] = {
+    inline def apply[T /* <: Action[Any] */](callback: (js.Function0[Unit], Dispatch[T]) => Unit, queue: String): AsyncQueueAction[T] = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncQueueAction[T]]
     }
     
-    extension [Self <: AsyncQueueAction[?], T /* <: Action[js.Any] */](x: Self & AsyncQueueAction[T]) {
+    extension [Self <: AsyncQueueAction[?], T /* <: Action[Any] */](x: Self & AsyncQueueAction[T]) {
       
       inline def setCallback(value: (js.Function0[Unit], Dispatch[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

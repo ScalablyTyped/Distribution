@@ -1,16 +1,16 @@
 package typings.minappEnv.wx
 
-import typings.minappEnv.minappEnvNumbers.`11025`
-import typings.minappEnv.minappEnvNumbers.`12000`
-import typings.minappEnv.minappEnvNumbers.`16000`
-import typings.minappEnv.minappEnvNumbers.`1`
-import typings.minappEnv.minappEnvNumbers.`22050`
-import typings.minappEnv.minappEnvNumbers.`24000`
-import typings.minappEnv.minappEnvNumbers.`2`
-import typings.minappEnv.minappEnvNumbers.`32000`
-import typings.minappEnv.minappEnvNumbers.`44100`
-import typings.minappEnv.minappEnvNumbers.`48000`
-import typings.minappEnv.minappEnvNumbers.`8000`
+import typings.minappEnv.minappEnvInts.`11025`
+import typings.minappEnv.minappEnvInts.`12000`
+import typings.minappEnv.minappEnvInts.`16000`
+import typings.minappEnv.minappEnvInts.`1`
+import typings.minappEnv.minappEnvInts.`22050`
+import typings.minappEnv.minappEnvInts.`24000`
+import typings.minappEnv.minappEnvInts.`2`
+import typings.minappEnv.minappEnvInts.`32000`
+import typings.minappEnv.minappEnvInts.`44100`
+import typings.minappEnv.minappEnvInts.`48000`
+import typings.minappEnv.minappEnvInts.`8000`
 import typings.minappEnv.minappEnvStrings.aac
 import typings.minappEnv.minappEnvStrings.auto
 import typings.minappEnv.minappEnvStrings.buildInMic

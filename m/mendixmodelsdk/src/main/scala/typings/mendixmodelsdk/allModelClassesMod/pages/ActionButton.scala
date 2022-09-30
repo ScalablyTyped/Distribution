@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/button-widgets relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ActionButton")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ActionButton")
 @js.native
-class ActionButton protected ()
+open class ActionButton protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.ActionButton {
   def this(
     model: AbstractModel,
@@ -33,7 +33,7 @@ class ActionButton protected ()
 }
 object ActionButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ActionButton")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ActionButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -607,13 +607,13 @@ object ActionButton {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.ActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ActionButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ActionButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ActionButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ActionButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ActionButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

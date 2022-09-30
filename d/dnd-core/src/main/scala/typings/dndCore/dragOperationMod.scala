@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dragOperationMod {
   
-  @JSImport("dnd-core/lib/reducers/dragOperation", JSImport.Namespace)
+  @JSImport("dnd-core/dist/reducers/dragOperation", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -20,11 +20,11 @@ object dragOperationMod {
     
     var didDrop: Boolean
     
-    var dropResult: js.Any
+    var dropResult: Any
     
     var isSourcePublic: Boolean | Null
     
-    var item: js.Any
+    var item: Any
     
     var itemType: Identifier | js.Array[Identifier] | Null
     
@@ -34,7 +34,7 @@ object dragOperationMod {
   }
   object State {
     
-    inline def apply(didDrop: Boolean, dropResult: js.Any, item: js.Any, targetIds: js.Array[String]): State = {
+    inline def apply(didDrop: Boolean, dropResult: Any, item: Any, targetIds: js.Array[String]): State = {
       val __obj = js.Dynamic.literal(didDrop = didDrop.asInstanceOf[js.Any], dropResult = dropResult.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], targetIds = targetIds.asInstanceOf[js.Any], isSourcePublic = null, itemType = null, sourceId = null)
       __obj.asInstanceOf[State]
     }
@@ -43,19 +43,19 @@ object dragOperationMod {
       
       inline def setDidDrop(value: Boolean): Self = StObject.set(x, "didDrop", value.asInstanceOf[js.Any])
       
-      inline def setDropResult(value: js.Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
+      inline def setDropResult(value: Any): Self = StObject.set(x, "dropResult", value.asInstanceOf[js.Any])
       
       inline def setIsSourcePublic(value: Boolean): Self = StObject.set(x, "isSourcePublic", value.asInstanceOf[js.Any])
       
       inline def setIsSourcePublicNull: Self = StObject.set(x, "isSourcePublic", null)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemType(value: Identifier | js.Array[Identifier]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
       inline def setItemTypeNull: Self = StObject.set(x, "itemType", null)
       
-      inline def setItemTypeVarargs(value: Identifier*): Self = StObject.set(x, "itemType", js.Array(value :_*))
+      inline def setItemTypeVarargs(value: Identifier*): Self = StObject.set(x, "itemType", js.Array(value*))
       
       inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
       
@@ -63,7 +63,7 @@ object dragOperationMod {
       
       inline def setTargetIds(value: js.Array[String]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
       
-      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+      inline def setTargetIdsVarargs(value: String*): Self = StObject.set(x, "targetIds", js.Array(value*))
     }
   }
 }

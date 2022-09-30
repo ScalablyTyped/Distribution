@@ -17,7 +17,7 @@ trait BulkWriterError
   val code: GrpcStatus
   
   /** The document reference the operation was performed on. */
-  val documentRef: DocumentReference[js.Any]
+  val documentRef: DocumentReference[Any]
   
   /** How many times this operation has been attempted unsuccessfully. */
   val failedAttempts: Double
@@ -29,7 +29,7 @@ object BulkWriterError {
   
   inline def apply(
     code: GrpcStatus,
-    documentRef: DocumentReference[js.Any],
+    documentRef: DocumentReference[Any],
     failedAttempts: Double,
     message: String,
     name: String,
@@ -43,7 +43,7 @@ object BulkWriterError {
     
     inline def setCode(value: GrpcStatus): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setDocumentRef(value: DocumentReference[js.Any]): Self = StObject.set(x, "documentRef", value.asInstanceOf[js.Any])
+    inline def setDocumentRef(value: DocumentReference[Any]): Self = StObject.set(x, "documentRef", value.asInstanceOf[js.Any])
     
     inline def setFailedAttempts(value: Double): Self = StObject.set(x, "failedAttempts", value.asInstanceOf[js.Any])
     

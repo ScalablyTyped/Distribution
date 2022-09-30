@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "terminal-link" : "2.1.1"
+      "terminal-link" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "terminal-link" : "2.1.1"
+      "terminal-link" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

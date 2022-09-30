@@ -1,16 +1,16 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-4138`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`3`
+import typings.activexExcel.activexExcelInts.`-4138`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`-4138`
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`3`
+  - typings.activexExcel.activexExcelInts.`-4138`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`3`
 */
 trait XlArrowHeadWidth extends StObject
 object XlArrowHeadWidth {

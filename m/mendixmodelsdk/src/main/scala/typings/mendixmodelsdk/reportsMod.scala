@@ -49,106 +49,106 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object reportsMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/reports", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/reports", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
   object reports {
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AggregateFunctionEnum")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.AggregateFunctionEnum")
     @js.native
-    class AggregateFunctionEnum protected () extends AbstractEnum {
+    open class AggregateFunctionEnum protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object AggregateFunctionEnum {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AggregateFunctionEnum")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AggregateFunctionEnum")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AggregateFunctionEnum.Average")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AggregateFunctionEnum.Average")
       @js.native
       def Average: AggregateFunctionEnum = js.native
       inline def Average_=(x: AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Average")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AggregateFunctionEnum.Count")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AggregateFunctionEnum.Count")
       @js.native
       def Count: AggregateFunctionEnum = js.native
       inline def Count_=(x: AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Count")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AggregateFunctionEnum.Maximum")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AggregateFunctionEnum.Maximum")
       @js.native
       def Maximum: AggregateFunctionEnum = js.native
       inline def Maximum_=(x: AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Maximum")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AggregateFunctionEnum.Minimum")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AggregateFunctionEnum.Minimum")
       @js.native
       def Minimum: AggregateFunctionEnum = js.native
       inline def Minimum_=(x: AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minimum")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AggregateFunctionEnum.Sum")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AggregateFunctionEnum.Sum")
       @js.native
       def Sum: AggregateFunctionEnum = js.native
       inline def Sum_=(x: AggregateFunctionEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sum")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio")
     @js.native
-    class AspectRatio protected () extends AbstractEnum {
+    open class AspectRatio protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object AspectRatio {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio.FourToThree")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio.FourToThree")
       @js.native
       def FourToThree: AspectRatio = js.native
       inline def FourToThree_=(x: AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FourToThree")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio.NineToSixteen")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio.NineToSixteen")
       @js.native
       def NineToSixteen: AspectRatio = js.native
       inline def NineToSixteen_=(x: AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NineToSixteen")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio.OneToOne")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio.OneToOne")
       @js.native
       def OneToOne: AspectRatio = js.native
       inline def OneToOne_=(x: AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneToOne")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio.SixteenToNine")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio.SixteenToNine")
       @js.native
       def SixteenToNine: AspectRatio = js.native
       inline def SixteenToNine_=(x: AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SixteenToNine")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio.ThreeToFour")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio.ThreeToFour")
       @js.native
       def ThreeToFour: AspectRatio = js.native
       inline def ThreeToFour_=(x: AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThreeToFour")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio.ThreeToTwo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio.ThreeToTwo")
       @js.native
       def ThreeToTwo: AspectRatio = js.native
       inline def ThreeToTwo_=(x: AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThreeToTwo")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.AspectRatio.TwoToThree")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.AspectRatio.TwoToThree")
       @js.native
       def TwoToThree: AspectRatio = js.native
       inline def TwoToThree_=(x: AspectRatio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoToThree")(x.asInstanceOf[js.Any])
@@ -157,9 +157,9 @@ object reportsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/report-grid relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReport")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReport")
     @js.native
-    class BasicReport protected () extends ReportWidget {
+    open class BasicReport protected () extends ReportWidget {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -187,7 +187,7 @@ object reportsMod {
     }
     object BasicReport {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReport")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReport")
       @js.native
       val ^ : js.Any = js.native
       
@@ -761,21 +761,21 @@ object reportsMod {
       inline def createInWidgetValueUnderWidgets(container: WidgetValue): BasicReport = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[BasicReport]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReport.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReport.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReport.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReport.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportAggregate")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportAggregate")
     @js.native
-    class BasicReportAggregate protected () extends Element[IModel] {
+    open class BasicReportAggregate protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -797,7 +797,7 @@ object reportsMod {
     }
     object BasicReportAggregate {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportAggregate")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportAggregate")
       @js.native
       val ^ : js.Any = js.native
       
@@ -818,21 +818,21 @@ object reportsMod {
       inline def createIn(container: BasicReport): BasicReportAggregate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BasicReportAggregate]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportAggregate.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportAggregate.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportAggregate.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportAggregate.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportColumn")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportColumn")
     @js.native
-    class BasicReportColumn protected () extends Element[IModel] {
+    open class BasicReportColumn protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -861,7 +861,7 @@ object reportsMod {
     }
     object BasicReportColumn {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportColumn")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportColumn")
       @js.native
       val ^ : js.Any = js.native
       
@@ -882,54 +882,54 @@ object reportsMod {
       inline def createIn(container: BasicReport): BasicReportColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BasicReportColumn]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportColumn.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportColumn.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.BasicReportColumn.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.BasicReportColumn.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ChartType")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ChartType")
     @js.native
-    class ChartType protected () extends AbstractEnum {
+    open class ChartType protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object ChartType {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ChartType")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ChartType")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ChartType.Area")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ChartType.Area")
       @js.native
       def Area: ChartType = js.native
       inline def Area_=(x: ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Area")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ChartType.HorizontalBars")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ChartType.HorizontalBars")
       @js.native
       def HorizontalBars: ChartType = js.native
       inline def HorizontalBars_=(x: ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HorizontalBars")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ChartType.Lines")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ChartType.Lines")
       @js.native
       def Lines: ChartType = js.native
       inline def Lines_=(x: ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lines")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ChartType.VerticalBars")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ChartType.VerticalBars")
       @js.native
       def VerticalBars: ChartType = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ChartType.VerticalBars3D")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ChartType.VerticalBars3D")
       @js.native
       def VerticalBars3D: ChartType = js.native
       inline def VerticalBars3D_=(x: ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VerticalBars3D")(x.asInstanceOf[js.Any])
@@ -937,73 +937,73 @@ object reportsMod {
       inline def VerticalBars_=(x: ChartType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VerticalBars")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ColumnFormat")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ColumnFormat")
     @js.native
-    class ColumnFormat protected () extends AbstractEnum {
+    open class ColumnFormat protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object ColumnFormat {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ColumnFormat")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ColumnFormat")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ColumnFormat.Default")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ColumnFormat.Default")
       @js.native
       def Default: ColumnFormat = js.native
       inline def Default_=(x: ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ColumnFormat.MonthName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ColumnFormat.MonthName")
       @js.native
       def MonthName: ColumnFormat = js.native
       inline def MonthName_=(x: ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MonthName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ColumnFormat.WeekdayName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ColumnFormat.WeekdayName")
       @js.native
       def WeekdayName: ColumnFormat = js.native
       inline def WeekdayName_=(x: ColumnFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WeekdayName")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.DateRangeFieldEnum")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.DateRangeFieldEnum")
     @js.native
-    class DateRangeFieldEnum protected () extends AbstractEnum {
+    open class DateRangeFieldEnum protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object DateRangeFieldEnum {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.DateRangeFieldEnum")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.DateRangeFieldEnum")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.DateRangeFieldEnum.Month")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.DateRangeFieldEnum.Month")
       @js.native
       def Month: DateRangeFieldEnum = js.native
       inline def Month_=(x: DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.DateRangeFieldEnum.Period")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.DateRangeFieldEnum.Period")
       @js.native
       def Period: DateRangeFieldEnum = js.native
       inline def Period_=(x: DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Period")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.DateRangeFieldEnum.Quarter")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.DateRangeFieldEnum.Quarter")
       @js.native
       def Quarter: DateRangeFieldEnum = js.native
       inline def Quarter_=(x: DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quarter")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.DateRangeFieldEnum.Week")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.DateRangeFieldEnum.Week")
       @js.native
       def Week: DateRangeFieldEnum = js.native
       inline def Week_=(x: DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.DateRangeFieldEnum.Year")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.DateRangeFieldEnum.Year")
       @js.native
       def Year: DateRangeFieldEnum = js.native
       inline def Year_=(x: DateRangeFieldEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
@@ -1012,9 +1012,9 @@ object reportsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/report-button relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportButton")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportButton")
     @js.native
-    class ReportButton protected () extends Widget {
+    open class ReportButton protected () extends Widget {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -1029,7 +1029,7 @@ object reportsMod {
     }
     object ReportButton {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportButton")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportButton")
       @js.native
       val ^ : js.Any = js.native
       
@@ -1603,13 +1603,13 @@ object reportsMod {
       inline def createInWidgetValueUnderWidgets(container: WidgetValue): ReportButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportButton]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportButton.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportButton.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportButton.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportButton.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -1617,10 +1617,12 @@ object reportsMod {
     
     /**
       * See: {@link https://docs.mendix.com/refguide7/report-chart relevant document}
+      *
+      * In version 9.0.1: deleted
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChart")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChart")
     @js.native
-    class ReportChart protected () extends ReportWidget {
+    open class ReportChart protected () extends ReportWidget {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -1664,7 +1666,7 @@ object reportsMod {
     }
     object ReportChart {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChart")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChart")
       @js.native
       val ^ : js.Any = js.native
       
@@ -1693,7 +1695,7 @@ object reportsMod {
         * of the parent pages.BuildingBlock element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1715,7 +1717,7 @@ object reportsMod {
         * of the parent pages.DataView element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInDataViewUnderFooterWidgets(container: DataView): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1737,7 +1739,7 @@ object reportsMod {
         * of the parent pages.DataView element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInDataViewUnderWidgets(container: DataView): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1759,7 +1761,7 @@ object reportsMod {
         * of the parent pages.DivContainer element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInDivContainerUnderWidgets(container: DivContainer): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1781,7 +1783,7 @@ object reportsMod {
         * of the parent pages.GroupBox element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInGroupBoxUnderWidgets(container: GroupBox): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1803,7 +1805,7 @@ object reportsMod {
         * of the parent pages.Header element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInHeaderUnderLeftWidgets(container: Header): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1825,7 +1827,7 @@ object reportsMod {
         * of the parent pages.Header element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInHeaderUnderRightWidgets(container: Header): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1847,7 +1849,7 @@ object reportsMod {
         * of the parent pages.LayoutCallArgument element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1869,7 +1871,7 @@ object reportsMod {
         * of the parent pages.LayoutGridColumn element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1913,7 +1915,7 @@ object reportsMod {
         * of the parent pages.ListViewTemplate element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1935,7 +1937,7 @@ object reportsMod {
         * of the parent pages.ListView element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInListViewUnderWidgets(container: ListView): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1968,7 +1970,7 @@ object reportsMod {
         * of the parent pages.NativeLayoutContent element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  8.5.0 and higher
+        *  8.5.0 to 9.0.0
         */
       /* static member */
       inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -1979,7 +1981,7 @@ object reportsMod {
         * of the parent pages.NativeLayoutContent element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  8.0.0 and higher
+        *  8.0.0 to 9.0.0
         */
       /* static member */
       inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2023,7 +2025,7 @@ object reportsMod {
         * of the parent pages.NavigationListItem element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2067,7 +2069,7 @@ object reportsMod {
         * of the parent pages.ScrollContainerRegion element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2089,7 +2091,7 @@ object reportsMod {
         * of the parent pages.Snippet element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInSnippetUnderWidgets(container: Snippet): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2155,7 +2157,7 @@ object reportsMod {
         * of the parent pages.TabPage element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInTabPageUnderWidgets(container: TabPage): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2177,7 +2179,7 @@ object reportsMod {
         * of the parent pages.TableCell element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInTableCellUnderWidgets(container: TableCell): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2199,7 +2201,7 @@ object reportsMod {
         * of the parent pages.TemplateGridContents element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  7.15.0 and higher
+        *  7.15.0 to 9.0.0
         */
       /* static member */
       inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2221,7 +2223,7 @@ object reportsMod {
         * of the parent pages.WebLayoutContent element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  8.0.0 and higher
+        *  8.0.0 to 9.0.0
         */
       /* static member */
       inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
@@ -2232,27 +2234,30 @@ object reportsMod {
         * of the parent customwidgets.WidgetValue element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  8.2.0 and higher
+        *  8.2.0 to 9.0.0
         */
       /* static member */
       inline def createInWidgetValueUnderWidgets(container: WidgetValue): ReportChart = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChart]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChart.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChart.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChart.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChart.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChartSeries")
+    /**
+      * In version 9.0.1: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChartSeries")
     @js.native
-    class ReportChartSeries protected () extends Element[IModel] {
+    open class ReportChartSeries protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -2272,7 +2277,7 @@ object reportsMod {
     }
     object ReportChartSeries {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChartSeries")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChartSeries")
       @js.native
       val ^ : js.Any = js.native
       
@@ -2288,18 +2293,21 @@ object reportsMod {
         * Creates and returns a new ReportChartSeries instance in the SDK and on the server.
         * The new ReportChartSeries will be automatically stored in the 'seriess' property
         * of the parent ReportChart element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.0
         */
       /* static member */
       inline def createIn(container: ReportChart): ReportChartSeries = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ReportChartSeries]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChartSeries.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChartSeries.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportChartSeries.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportChartSeries.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -2308,9 +2316,9 @@ object reportsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/date-range-field relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeField")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeField")
     @js.native
-    class ReportDateRangeField protected () extends Element[IModel] {
+    open class ReportDateRangeField protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -2330,7 +2338,7 @@ object reportsMod {
     }
     object ReportDateRangeField {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeField")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeField")
       @js.native
       val ^ : js.Any = js.native
       
@@ -2351,13 +2359,13 @@ object reportsMod {
       inline def createIn(container: ReportDateRangeSelector): ReportDateRangeField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ReportDateRangeField]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeField.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeField.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeField.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeField.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -2366,9 +2374,9 @@ object reportsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/report-date-parameter relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeSelector")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeSelector")
     @js.native
-    class ReportDateRangeSelector protected () extends ReportParameter {
+    open class ReportDateRangeSelector protected () extends ReportParameter {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -2400,7 +2408,7 @@ object reportsMod {
     }
     object ReportDateRangeSelector {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeSelector")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeSelector")
       @js.native
       val ^ : js.Any = js.native
       
@@ -2974,13 +2982,13 @@ object reportsMod {
       inline def createInWidgetValueUnderWidgets(container: WidgetValue): ReportDateRangeSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportDateRangeSelector]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeSelector.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeSelector.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDateRangeSelector.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDateRangeSelector.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -2989,9 +2997,9 @@ object reportsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/report-parameter relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDropDown")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDropDown")
     @js.native
-    class ReportDropDown protected () extends ReportParameter {
+    open class ReportDropDown protected () extends ReportParameter {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -3009,7 +3017,7 @@ object reportsMod {
     }
     object ReportDropDown {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDropDown")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDropDown")
       @js.native
       val ^ : js.Any = js.native
       
@@ -3583,13 +3591,13 @@ object reportsMod {
       inline def createInWidgetValueUnderWidgets(container: WidgetValue): ReportDropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportDropDown]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDropDown.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDropDown.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportDropDown.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportDropDown.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -3600,9 +3608,9 @@ object reportsMod {
       *
       * In version 6.10.0: deleted
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportPane")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportPane")
     @js.native
-    class ReportPane protected () extends Widget {
+    open class ReportPane protected () extends Widget {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -3623,7 +3631,7 @@ object reportsMod {
     }
     object ReportPane {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportPane")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportPane")
       @js.native
       val ^ : js.Any = js.native
       
@@ -3878,19 +3886,19 @@ object reportsMod {
       inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): ReportPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReportPane]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportPane.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportPane.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportPane.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportPane.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportParameter")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportParameter")
     @js.native
     abstract class ReportParameter protected () extends Widget {
       def this(
@@ -3919,18 +3927,18 @@ object reportsMod {
     }
     object ReportParameter {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportParameter")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportParameter")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportParameter.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportParameter.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportParameter.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportParameter.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -3942,7 +3950,7 @@ object reportsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/report-widgets relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportWidget")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportWidget")
     @js.native
     abstract class ReportWidget protected () extends Widget {
       def this(
@@ -3968,26 +3976,26 @@ object reportsMod {
     }
     object ReportWidget {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportWidget")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportWidget")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportWidget.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportWidget.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportWidget.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportWidget.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomInfo")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomInfo")
     @js.native
-    class ReportZoomInfo protected () extends Element[IModel] {
+    open class ReportZoomInfo protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -4009,7 +4017,7 @@ object reportsMod {
     }
     object ReportZoomInfo {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomInfo")
       @js.native
       val ^ : js.Any = js.native
       
@@ -4030,21 +4038,21 @@ object reportsMod {
       inline def createIn(container: BasicReport): ReportZoomInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ReportZoomInfo]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomInfo.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomInfo.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomInfo.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomInfo.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomMapping")
+    @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomMapping")
     @js.native
-    class ReportZoomMapping protected () extends Element[IModel] {
+    open class ReportZoomMapping protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -4064,7 +4072,7 @@ object reportsMod {
     }
     object ReportZoomMapping {
       
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomMapping")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomMapping")
       @js.native
       val ^ : js.Any = js.native
       
@@ -4085,13 +4093,13 @@ object reportsMod {
       inline def createIn(container: ReportZoomInfo): ReportZoomMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ReportZoomMapping]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomMapping.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomMapping.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/reports", "reports.ReportZoomMapping.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/reports", "reports.ReportZoomMapping.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

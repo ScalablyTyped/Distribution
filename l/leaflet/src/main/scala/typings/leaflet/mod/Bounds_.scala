@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Bounds")
 @js.native
-class Bounds_ protected () extends StObject {
+open class Bounds_ () extends StObject {
   def this(points: js.Array[Point_]) = this()
   def this(points: BoundsLiteral) = this()
   def this(topLeft: PointExpression, bottomRight: PointExpression) = this()
@@ -17,14 +17,20 @@ class Bounds_ protected () extends StObject {
   
   def getBottomLeft(): Point_ = js.native
   
+  def getBottomRight(): Point_ = js.native
+  
   def getCenter(): Point_ = js.native
   def getCenter(round: Boolean): Point_ = js.native
   
   def getSize(): Point_ = js.native
   
+  def getTopLeft(): Point_ = js.native
+  
   def getTopRight(): Point_ = js.native
   
   def intersects(otherBounds: BoundsExpression): Boolean = js.native
+  
+  def isValid(): Boolean = js.native
   
   var max: js.UndefOr[Point_] = js.native
   

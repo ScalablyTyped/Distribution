@@ -111,10 +111,22 @@ object typesMod {
     @JSName("child")
     var child_Original: Child[Z] = js.native
     
+    def debug[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[SprintfArgument | T],
+      c: js.UndefOr[SprintfArgument],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
     @JSName("debug")
     var debug_Original: LogMethod[Z] = js.native
-    @JSName("debug")
-    def debug_stringstring[T /* <: String */](
+    
+    def error[T /* <: String */](
       context: T | Z,
       message: js.UndefOr[SprintfArgument | T],
       c: js.UndefOr[SprintfArgument],
@@ -126,11 +138,10 @@ object typesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
-    
     @JSName("error")
     var error_Original: LogMethod[Z] = js.native
-    @JSName("error")
-    def error_stringstring[T /* <: String */](
+    
+    def fatal[T /* <: String */](
       context: T | Z,
       message: js.UndefOr[SprintfArgument | T],
       c: js.UndefOr[SprintfArgument],
@@ -142,29 +153,27 @@ object typesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
-    
     @JSName("fatal")
     var fatal_Original: LogMethod[Z] = js.native
-    @JSName("fatal")
-    def fatal_stringstring[T /* <: String */](
-      context: T | Z,
-      message: js.UndefOr[SprintfArgument | T],
-      c: js.UndefOr[SprintfArgument],
-      d: js.UndefOr[SprintfArgument],
-      e: js.UndefOr[SprintfArgument],
-      f: js.UndefOr[SprintfArgument],
-      g: js.UndefOr[SprintfArgument],
-      h: js.UndefOr[SprintfArgument],
-      i: js.UndefOr[SprintfArgument],
-      j: js.UndefOr[SprintfArgument]
-    ): Unit = js.native
     
     def getContext(): StringDictionary[JsonValue] = js.native
     
+    def info[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[SprintfArgument | T],
+      c: js.UndefOr[SprintfArgument],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
     @JSName("info")
     var info_Original: LogMethod[Z] = js.native
-    @JSName("info")
-    def info_stringstring[T /* <: String */](
+    
+    def trace[T /* <: String */](
       context: T | Z,
       message: js.UndefOr[SprintfArgument | T],
       c: js.UndefOr[SprintfArgument],
@@ -176,11 +185,10 @@ object typesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
-    
     @JSName("trace")
     var trace_Original: LogMethod[Z] = js.native
-    @JSName("trace")
-    def trace_stringstring[T /* <: String */](
+    
+    def warn[T /* <: String */](
       context: T | Z,
       message: js.UndefOr[SprintfArgument | T],
       c: js.UndefOr[SprintfArgument],
@@ -192,22 +200,8 @@ object typesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
-    
     @JSName("warn")
     var warn_Original: LogMethod[Z] = js.native
-    @JSName("warn")
-    def warn_stringstring[T /* <: String */](
-      context: T | Z,
-      message: js.UndefOr[SprintfArgument | T],
-      c: js.UndefOr[SprintfArgument],
-      d: js.UndefOr[SprintfArgument],
-      e: js.UndefOr[SprintfArgument],
-      f: js.UndefOr[SprintfArgument],
-      g: js.UndefOr[SprintfArgument],
-      h: js.UndefOr[SprintfArgument],
-      i: js.UndefOr[SprintfArgument],
-      j: js.UndefOr[SprintfArgument]
-    ): Unit = js.native
   }
   
   trait Message[T] extends StObject {

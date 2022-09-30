@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "WebDriver")
 @js.native
-class WebDriver protected ()
+open class WebDriver protected ()
   extends typings.seleniumWebdriver.mod.WebDriver {
   def this(session: js.Promise[typings.seleniumWebdriver.mod.Session], executor: Executor) = this()
   // region Constructors
@@ -87,5 +87,5 @@ object WebDriver {
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
-  inline def createSession(var_args: js.Any*): typings.seleniumWebdriver.mod.WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.mod.WebDriver]
+  inline def createSession(var_args: Any*): typings.seleniumWebdriver.mod.WebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(var_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.seleniumWebdriver.mod.WebDriver]
 }

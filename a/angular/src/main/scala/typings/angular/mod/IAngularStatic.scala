@@ -166,7 +166,7 @@ trait IAngularStatic extends StObject {
     * @param context Object to become context (this) for the iterator function.
     */
   @JSName("forEach")
-  def forEach_TU_ArrayLikeT_U[T, U /* <: ArrayLike[T] */](
+  def forEach_TU_U[T, U /* <: ArrayLike[T] */](
     obj: U,
     iterator: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: U[number] */ /* value */ js.Any, 
@@ -176,7 +176,7 @@ trait IAngularStatic extends StObject {
     ]
   ): U = js.native
   @JSName("forEach")
-  def forEach_TU_ArrayLikeT_U[T, U /* <: ArrayLike[T] */](
+  def forEach_TU_U[T, U /* <: ArrayLike[T] */](
     obj: U,
     iterator: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: U[number] */ /* value */ js.Any, 

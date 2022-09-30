@@ -39,6 +39,7 @@ import typings.leaflet.leafletStrings.preclick
 import typings.leaflet.leafletStrings.predrag
 import typings.leaflet.leafletStrings.remove
 import typings.leaflet.leafletStrings.resize
+import typings.leaflet.leafletStrings.tileabort
 import typings.leaflet.leafletStrings.tileerror
 import typings.leaflet.leafletStrings.tileload
 import typings.leaflet.leafletStrings.tileloadstart
@@ -58,7 +59,7 @@ import typings.leaflet.mod.Control_
 import typings.leaflet.mod.DragEndEventHandlerFn
 import typings.leaflet.mod.ErrorEventHandlerFn
 import typings.leaflet.mod.Evented
-import typings.leaflet.mod.GeoJSON_
+import typings.leaflet.mod.GeoJSON__
 import typings.leaflet.mod.LatLngBoundsExpression
 import typings.leaflet.mod.LatLngExpression
 import typings.leaflet.mod.LatLngTuple
@@ -89,7 +90,7 @@ object esri {
     
     @JSImport("leaflet", "esri.Geocoding.ArcgisOnlineProvider")
     @js.native
-    class ArcgisOnlineProvider_ ()
+    open class ArcgisOnlineProvider_ ()
       extends GeocodeService_
          with GeosearchProvider {
       def this(options: ArcgisOnlineProviderOptions) = this()
@@ -98,7 +99,7 @@ object esri {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FeatureLayerService * / any */ @JSImport("leaflet", "esri.Geocoding.FeatureLayerProvider")
     @js.native
-    class FeatureLayerProvider_ ()
+    open class FeatureLayerProvider_ ()
       extends StObject
          with GeosearchProvider {
       def this(options: FeatureLayerProviderOptions) = this()
@@ -106,7 +107,7 @@ object esri {
     
     @JSImport("leaflet", "esri.Geocoding.GeocodeServiceProvider")
     @js.native
-    class GeocodeServiceProvider_ ()
+    open class GeocodeServiceProvider_ ()
       extends GeocodeService_
          with GeosearchProvider {
       def this(options: GeocodeServiceProviderOptions) = this()
@@ -115,7 +116,7 @@ object esri {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service * / any */ @JSImport("leaflet", "esri.Geocoding.GeocodeService")
     @js.native
-    class GeocodeService_ () extends StObject {
+    open class GeocodeService_ () extends StObject {
       def this(options: GeocodeServiceOptions) = this()
       
       def geocode(): Geocode_ = js.native
@@ -128,8 +129,8 @@ object esri {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task * / any */ @JSImport("leaflet", "esri.Geocoding.Geocode")
     @js.native
-    class Geocode_ () extends StObject {
-      def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ js.Any) = this()
+    open class Geocode_ () extends StObject {
+      def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ Any) = this()
       
       def address(text: String): this.type = js.native
       
@@ -149,20 +150,20 @@ object esri {
       
       def run(
         callback: js.Function3[
-              /* error */ js.UndefOr[js.Any], 
+              /* error */ js.UndefOr[Any], 
               /* results */ typings.esriLeafletGeocoder.anon.Results, 
-              /* response */ js.Any, 
+              /* response */ Any, 
               Unit
             ]
       ): this.type = js.native
       def run(
         callback: js.Function3[
-              /* error */ js.UndefOr[js.Any], 
+              /* error */ js.UndefOr[Any], 
               /* results */ typings.esriLeafletGeocoder.anon.Results, 
-              /* response */ js.Any, 
+              /* response */ Any, 
               Unit
             ],
-        context: js.Any
+        context: Any
       ): this.type = js.native
       
       def subregion(text: String): this.type = js.native
@@ -175,14 +176,14 @@ object esri {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("leaflet", "esri.Geocoding.Geosearch")
     @js.native
-    class GeosearchCls ()
+    open class GeosearchCls ()
       extends typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_ {
       def this(options: GeosearchObject) = this()
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.leaflet.mod.Class because Already inherited
-    - typings.leaflet.mod.Evented because Inheritance from two classes. Inlined addEventListener, addEventListener, addEventListener, addEventListener_add, addEventListener_add, addEventListener_autopanstart, addEventListener_autopanstart, addEventListener_baselayerchange, addEventListener_baselayerchange, addEventListener_click, addEventListener_click, addEventListener_contextmenu, addEventListener_contextmenu, addEventListener_dblclick, addEventListener_dblclick, addEventListener_down, addEventListener_down, addEventListener_drag, addEventListener_drag, addEventListener_dragend, addEventListener_dragend, addEventListener_dragstart, addEventListener_dragstart, addEventListener_error, addEventListener_error, addEventListener_keydown, addEventListener_keydown, addEventListener_keypress, addEventListener_keypress, addEventListener_keyup, addEventListener_keyup, addEventListener_layeradd, addEventListener_layeradd, addEventListener_layerremove, addEventListener_layerremove, addEventListener_load, addEventListener_load, addEventListener_loading, addEventListener_loading, addEventListener_locationerror, addEventListener_locationerror, addEventListener_locationfound, addEventListener_locationfound, addEventListener_mousedown, addEventListener_mousedown, addEventListener_mousemove, addEventListener_mousemove, addEventListener_mouseout, addEventListener_mouseout, addEventListener_mouseover, addEventListener_mouseover, addEventListener_mouseup, addEventListener_mouseup, addEventListener_move, addEventListener_move, addEventListener_moveend, addEventListener_moveend, addEventListener_movestart, addEventListener_movestart, addEventListener_overlayadd, addEventListener_overlayadd, addEventListener_overlayremove, addEventListener_overlayremove, addEventListener_popupclose, addEventListener_popupclose, addEventListener_popupopen, addEventListener_popupopen, addEventListener_preclick, addEventListener_preclick, addEventListener_predrag, addEventListener_predrag, addEventListener_remove, addEventListener_remove, addEventListener_resize, addEventListener_resize, addEventListener_tileerror, addEventListener_tileerror, addEventListener_tileload, addEventListener_tileload, addEventListener_tileloadstart, addEventListener_tileloadstart, addEventListener_tileunload, addEventListener_tileunload, addEventListener_tooltipclose, addEventListener_tooltipclose, addEventListener_tooltipopen, addEventListener_tooltipopen, addEventListener_unload, addEventListener_unload, addEventListener_update, addEventListener_update, addEventListener_viewreset, addEventListener_viewreset, addEventListener_zoom, addEventListener_zoom, addEventListener_zoomanim, addEventListener_zoomanim, addEventListener_zoomend, addEventListener_zoomend, addEventListener_zoomlevelschange, addEventListener_zoomlevelschange, addEventListener_zoomstart, addEventListener_zoomstart, addEventParent, addOneTimeEventListener, addOneTimeEventListener, addOneTimeEventListener, addOneTimeEventListener_add, addOneTimeEventListener_add, addOneTimeEventListener_autopanstart, addOneTimeEventListener_autopanstart, addOneTimeEventListener_baselayerchange, addOneTimeEventListener_baselayerchange, addOneTimeEventListener_click, addOneTimeEventListener_click, addOneTimeEventListener_contextmenu, addOneTimeEventListener_contextmenu, addOneTimeEventListener_dblclick, addOneTimeEventListener_dblclick, addOneTimeEventListener_down, addOneTimeEventListener_down, addOneTimeEventListener_drag, addOneTimeEventListener_drag, addOneTimeEventListener_dragend, addOneTimeEventListener_dragend, addOneTimeEventListener_dragstart, addOneTimeEventListener_dragstart, addOneTimeEventListener_error, addOneTimeEventListener_error, addOneTimeEventListener_keydown, addOneTimeEventListener_keydown, addOneTimeEventListener_keypress, addOneTimeEventListener_keypress, addOneTimeEventListener_keyup, addOneTimeEventListener_keyup, addOneTimeEventListener_layeradd, addOneTimeEventListener_layeradd, addOneTimeEventListener_layerremove, addOneTimeEventListener_layerremove, addOneTimeEventListener_load, addOneTimeEventListener_load, addOneTimeEventListener_loading, addOneTimeEventListener_loading, addOneTimeEventListener_locationerror, addOneTimeEventListener_locationerror, addOneTimeEventListener_locationfound, addOneTimeEventListener_locationfound, addOneTimeEventListener_mousedown, addOneTimeEventListener_mousedown, addOneTimeEventListener_mousemove, addOneTimeEventListener_mousemove, addOneTimeEventListener_mouseout, addOneTimeEventListener_mouseout, addOneTimeEventListener_mouseover, addOneTimeEventListener_mouseover, addOneTimeEventListener_mouseup, addOneTimeEventListener_mouseup, addOneTimeEventListener_move, addOneTimeEventListener_move, addOneTimeEventListener_moveend, addOneTimeEventListener_moveend, addOneTimeEventListener_movestart, addOneTimeEventListener_movestart, addOneTimeEventListener_overlayadd, addOneTimeEventListener_overlayadd, addOneTimeEventListener_overlayremove, addOneTimeEventListener_overlayremove, addOneTimeEventListener_popupclose, addOneTimeEventListener_popupclose, addOneTimeEventListener_popupopen, addOneTimeEventListener_popupopen, addOneTimeEventListener_preclick, addOneTimeEventListener_preclick, addOneTimeEventListener_predrag, addOneTimeEventListener_predrag, addOneTimeEventListener_remove, addOneTimeEventListener_remove, addOneTimeEventListener_resize, addOneTimeEventListener_resize, addOneTimeEventListener_tileerror, addOneTimeEventListener_tileerror, addOneTimeEventListener_tileload, addOneTimeEventListener_tileload, addOneTimeEventListener_tileloadstart, addOneTimeEventListener_tileloadstart, addOneTimeEventListener_tileunload, addOneTimeEventListener_tileunload, addOneTimeEventListener_tooltipclose, addOneTimeEventListener_tooltipclose, addOneTimeEventListener_tooltipopen, addOneTimeEventListener_tooltipopen, addOneTimeEventListener_unload, addOneTimeEventListener_unload, addOneTimeEventListener_update, addOneTimeEventListener_update, addOneTimeEventListener_viewreset, addOneTimeEventListener_viewreset, addOneTimeEventListener_zoom, addOneTimeEventListener_zoom, addOneTimeEventListener_zoomanim, addOneTimeEventListener_zoomanim, addOneTimeEventListener_zoomend, addOneTimeEventListener_zoomend, addOneTimeEventListener_zoomlevelschange, addOneTimeEventListener_zoomlevelschange, addOneTimeEventListener_zoomstart, addOneTimeEventListener_zoomstart, clearAllEventListeners, fire, fire, fire, fire, fireEvent, fireEvent, fireEvent, fireEvent, hasEventListeners, listens, off, off, off, off, off, off, off, off_baselayerchange, off_baselayerchange, off_baselayerchange, off_baselayerchange, off_click, off_click, off_click, off_click, off_contextmenu, off_contextmenu, off_contextmenu, off_contextmenu, off_dblclick, off_dblclick, off_dblclick, off_dblclick, off_dragend, off_dragend, off_dragend, off_dragend, off_keydown, off_keydown, off_keydown, off_keydown, off_keypress, off_keypress, off_keypress, off_keypress, off_keyup, off_keyup, off_keyup, off_keyup, off_layeradd, off_layeradd, off_layeradd, off_layeradd, off_layerremove, off_layerremove, off_layerremove, off_layerremove, off_locationerror, off_locationerror, off_locationerror, off_locationerror, off_locationfound, off_locationfound, off_locationfound, off_locationfound, off_mousedown, off_mousedown, off_mousedown, off_mousedown, off_mousemove, off_mousemove, off_mousemove, off_mousemove, off_mouseout, off_mouseout, off_mouseout, off_mouseout, off_mouseover, off_mouseover, off_mouseover, off_mouseover, off_mouseup, off_mouseup, off_mouseup, off_mouseup, off_overlayadd, off_overlayadd, off_overlayadd, off_overlayadd, off_overlayremove, off_overlayremove, off_overlayremove, off_overlayremove, off_popupclose, off_popupclose, off_popupclose, off_popupclose, off_popupopen, off_popupopen, off_popupopen, off_popupopen, off_preclick, off_preclick, off_preclick, off_preclick, off_resize, off_resize, off_resize, off_resize, off_tileerror, off_tileerror, off_tileerror, off_tileerror, off_tileload, off_tileload, off_tileload, off_tileload, off_tileloadstart, off_tileloadstart, off_tileloadstart, off_tileloadstart, off_tileunload, off_tileunload, off_tileunload, off_tileunload, off_tooltipclose, off_tooltipclose, off_tooltipclose, off_tooltipclose, off_tooltipopen, off_tooltipopen, off_tooltipopen, off_tooltipopen, off_zoomanim, off_zoomanim, off_zoomanim, off_zoomanim, on, on, on, on_add, on_add, on_autopanstart, on_autopanstart, on_baselayerchange, on_baselayerchange, on_click, on_click, on_contextmenu, on_contextmenu, on_dblclick, on_dblclick, on_down, on_down, on_drag, on_drag, on_dragend, on_dragend, on_dragstart, on_dragstart, on_error, on_error, on_keydown, on_keydown, on_keypress, on_keypress, on_keyup, on_keyup, on_layeradd, on_layeradd, on_layerremove, on_layerremove, on_load, on_load, on_loading, on_loading, on_locationerror, on_locationerror, on_locationfound, on_locationfound, on_mousedown, on_mousedown, on_mousemove, on_mousemove, on_mouseout, on_mouseout, on_mouseover, on_mouseover, on_mouseup, on_mouseup, on_move, on_move, on_moveend, on_moveend, on_movestart, on_movestart, on_overlayadd, on_overlayadd, on_overlayremove, on_overlayremove, on_popupclose, on_popupclose, on_popupopen, on_popupopen, on_preclick, on_preclick, on_predrag, on_predrag, on_remove, on_remove, on_resize, on_resize, on_tileerror, on_tileerror, on_tileload, on_tileload, on_tileloadstart, on_tileloadstart, on_tileunload, on_tileunload, on_tooltipclose, on_tooltipclose, on_tooltipopen, on_tooltipopen, on_unload, on_unload, on_update, on_update, on_viewreset, on_viewreset, on_zoom, on_zoom, on_zoomanim, on_zoomanim, on_zoomend, on_zoomend, on_zoomlevelschange, on_zoomlevelschange, on_zoomstart, on_zoomstart, once, once, once, once_add, once_add, once_autopanstart, once_autopanstart, once_baselayerchange, once_baselayerchange, once_click, once_click, once_contextmenu, once_contextmenu, once_dblclick, once_dblclick, once_down, once_down, once_drag, once_drag, once_dragend, once_dragend, once_dragstart, once_dragstart, once_error, once_error, once_keydown, once_keydown, once_keypress, once_keypress, once_keyup, once_keyup, once_layeradd, once_layeradd, once_layerremove, once_layerremove, once_load, once_load, once_loading, once_loading, once_locationerror, once_locationerror, once_locationfound, once_locationfound, once_mousedown, once_mousedown, once_mousemove, once_mousemove, once_mouseout, once_mouseout, once_mouseover, once_mouseover, once_mouseup, once_mouseup, once_move, once_move, once_moveend, once_moveend, once_movestart, once_movestart, once_overlayadd, once_overlayadd, once_overlayremove, once_overlayremove, once_popupclose, once_popupclose, once_popupopen, once_popupopen, once_preclick, once_preclick, once_predrag, once_predrag, once_remove, once_remove, once_resize, once_resize, once_tileerror, once_tileerror, once_tileload, once_tileload, once_tileloadstart, once_tileloadstart, once_tileunload, once_tileunload, once_tooltipclose, once_tooltipclose, once_tooltipopen, once_tooltipopen, once_unload, once_unload, once_update, once_update, once_viewreset, once_viewreset, once_zoom, once_zoom, once_zoomanim, once_zoomanim, once_zoomend, once_zoomend, once_zoomlevelschange, once_zoomlevelschange, once_zoomstart, once_zoomstart, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener_baselayerchange, removeEventListener_baselayerchange, removeEventListener_baselayerchange, removeEventListener_baselayerchange, removeEventListener_click, removeEventListener_click, removeEventListener_click, removeEventListener_click, removeEventListener_contextmenu, removeEventListener_contextmenu, removeEventListener_contextmenu, removeEventListener_contextmenu, removeEventListener_dblclick, removeEventListener_dblclick, removeEventListener_dblclick, removeEventListener_dblclick, removeEventListener_dragend, removeEventListener_dragend, removeEventListener_dragend, removeEventListener_dragend, removeEventListener_keydown, removeEventListener_keydown, removeEventListener_keydown, removeEventListener_keydown, removeEventListener_keypress, removeEventListener_keypress, removeEventListener_keypress, removeEventListener_keypress, removeEventListener_keyup, removeEventListener_keyup, removeEventListener_keyup, removeEventListener_keyup, removeEventListener_layeradd, removeEventListener_layeradd, removeEventListener_layeradd, removeEventListener_layeradd, removeEventListener_layerremove, removeEventListener_layerremove, removeEventListener_layerremove, removeEventListener_layerremove, removeEventListener_locationerror, removeEventListener_locationerror, removeEventListener_locationerror, removeEventListener_locationerror, removeEventListener_locationfound, removeEventListener_locationfound, removeEventListener_locationfound, removeEventListener_locationfound, removeEventListener_mousedown, removeEventListener_mousedown, removeEventListener_mousedown, removeEventListener_mousedown, removeEventListener_mousemove, removeEventListener_mousemove, removeEventListener_mousemove, removeEventListener_mousemove, removeEventListener_mouseout, removeEventListener_mouseout, removeEventListener_mouseout, removeEventListener_mouseout, removeEventListener_mouseover, removeEventListener_mouseover, removeEventListener_mouseover, removeEventListener_mouseover, removeEventListener_mouseup, removeEventListener_mouseup, removeEventListener_mouseup, removeEventListener_mouseup, removeEventListener_overlayadd, removeEventListener_overlayadd, removeEventListener_overlayadd, removeEventListener_overlayadd, removeEventListener_overlayremove, removeEventListener_overlayremove, removeEventListener_overlayremove, removeEventListener_overlayremove, removeEventListener_popupclose, removeEventListener_popupclose, removeEventListener_popupclose, removeEventListener_popupclose, removeEventListener_popupopen, removeEventListener_popupopen, removeEventListener_popupopen, removeEventListener_popupopen, removeEventListener_preclick, removeEventListener_preclick, removeEventListener_preclick, removeEventListener_preclick, removeEventListener_resize, removeEventListener_resize, removeEventListener_resize, removeEventListener_resize, removeEventListener_tileerror, removeEventListener_tileerror, removeEventListener_tileerror, removeEventListener_tileerror, removeEventListener_tileload, removeEventListener_tileload, removeEventListener_tileload, removeEventListener_tileload, removeEventListener_tileloadstart, removeEventListener_tileloadstart, removeEventListener_tileloadstart, removeEventListener_tileloadstart, removeEventListener_tileunload, removeEventListener_tileunload, removeEventListener_tileunload, removeEventListener_tileunload, removeEventListener_tooltipclose, removeEventListener_tooltipclose, removeEventListener_tooltipclose, removeEventListener_tooltipclose, removeEventListener_tooltipopen, removeEventListener_tooltipopen, removeEventListener_tooltipopen, removeEventListener_tooltipopen, removeEventListener_zoomanim, removeEventListener_zoomanim, removeEventListener_zoomanim, removeEventListener_zoomanim, removeEventParent */ @js.native
+    - typings.leaflet.mod.Evented because Inheritance from two classes. Inlined addEventListener, addEventListener, addEventListener, addEventListener, addEventListener, addEventListener_dragend, addEventListener_dragend, addEventListener_locationerror, addEventListener_locationerror, addEventListener_locationfound, addEventListener_locationfound, addEventListener_resize, addEventListener_resize, addEventListener_tileerror, addEventListener_tileerror, addEventListener_zoomanim, addEventListener_zoomanim, addEventParent, addOneTimeEventListener, addOneTimeEventListener, addOneTimeEventListener, addOneTimeEventListener, addOneTimeEventListener, addOneTimeEventListener_dragend, addOneTimeEventListener_dragend, addOneTimeEventListener_locationerror, addOneTimeEventListener_locationerror, addOneTimeEventListener_locationfound, addOneTimeEventListener_locationfound, addOneTimeEventListener_resize, addOneTimeEventListener_resize, addOneTimeEventListener_tileerror, addOneTimeEventListener_tileerror, addOneTimeEventListener_zoomanim, addOneTimeEventListener_zoomanim, clearAllEventListeners, fire, fire, fire, fire, fireEvent, fireEvent, fireEvent, fireEvent, hasEventListeners, listens, listens, listens, listens, listens, listens, listens, listens, listens, listens, listens_dragend, listens_dragend, listens_dragend, listens_dragend, listens_locationerror, listens_locationerror, listens_locationerror, listens_locationerror, listens_locationfound, listens_locationfound, listens_locationfound, listens_locationfound, listens_resize, listens_resize, listens_resize, listens_resize, listens_tileerror, listens_tileerror, listens_tileerror, listens_tileerror, listens_zoomanim, listens_zoomanim, listens_zoomanim, listens_zoomanim, off, off, off, off, off, off, off, off, off, off, off_dragend, off_dragend, off_dragend, off_dragend, off_locationerror, off_locationerror, off_locationerror, off_locationerror, off_locationfound, off_locationfound, off_locationfound, off_locationfound, off_resize, off_resize, off_resize, off_resize, off_tileerror, off_tileerror, off_tileerror, off_tileerror, off_zoomanim, off_zoomanim, off_zoomanim, off_zoomanim, on, on, on, on, on, on_dragend, on_dragend, on_locationerror, on_locationerror, on_locationfound, on_locationfound, on_resize, on_resize, on_tileerror, on_tileerror, on_zoomanim, on_zoomanim, once, once, once, once, once, once_dragend, once_dragend, once_locationerror, once_locationerror, once_locationfound, once_locationfound, once_resize, once_resize, once_tileerror, once_tileerror, once_zoomanim, once_zoomanim, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener, removeEventListener_dragend, removeEventListener_dragend, removeEventListener_dragend, removeEventListener_dragend, removeEventListener_locationerror, removeEventListener_locationerror, removeEventListener_locationerror, removeEventListener_locationerror, removeEventListener_locationfound, removeEventListener_locationfound, removeEventListener_locationfound, removeEventListener_locationfound, removeEventListener_resize, removeEventListener_resize, removeEventListener_resize, removeEventListener_resize, removeEventListener_tileerror, removeEventListener_tileerror, removeEventListener_tileerror, removeEventListener_tileerror, removeEventListener_zoomanim, removeEventListener_zoomanim, removeEventListener_zoomanim, removeEventListener_zoomanim, removeEventParent */ @js.native
     trait Geosearch_ extends GeosearchControl {
       
       /**
@@ -200,208 +201,41 @@ object esri {
         * (e.g. 'click dblclick').
         */
       // tslint:disable:unified-signatures
+      def addEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn
+      ): this.type = js.native
+      def addEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any
+      ): this.type = js.native
       def addEventListener(`type`: String, fn: LeafletEventHandlerFn): this.type = js.native
-      def addEventListener(`type`: String, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_add(`type`: add, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_add(`type`: add, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_click(`type`: click, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_click(`type`: click, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_down(`type`: down, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_down(`type`: down, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_drag(`type`: drag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_drag(`type`: drag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addEventListener(`type`: String, fn: LeafletEventHandlerFn, context: Any): this.type = js.native
       @JSName("addEventListener")
       def addEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn): this.type = js.native
       @JSName("addEventListener")
-      def addEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_error(`type`: error, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_error(`type`: error, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_layeradd(`type`: layeradd, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_layeradd(`type`: layeradd, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_layerremove(`type`: layerremove, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_layerremove(`type`: layerremove, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_load(`type`: load, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_load(`type`: load, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_loading(`type`: loading, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_loading(`type`: loading, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any): this.type = js.native
       @JSName("addEventListener")
       def addEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn): this.type = js.native
       @JSName("addEventListener")
-      def addEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: js.Any): this.type = js.native
+      def addEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("addEventListener")
       def addEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn): this.type = js.native
       @JSName("addEventListener")
-      def addEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_move(`type`: move, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_move(`type`: move, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_moveend(`type`: moveend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_moveend(`type`: moveend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_movestart(`type`: movestart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_movestart(`type`: movestart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_popupclose(`type`: popupclose, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_popupclose(`type`: popupclose, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_popupopen(`type`: popupopen, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_popupopen(`type`: popupopen, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_predrag(`type`: predrag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_predrag(`type`: predrag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_remove(`type`: remove, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_remove(`type`: remove, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any): this.type = js.native
       @JSName("addEventListener")
       def addEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn): this.type = js.native
       @JSName("addEventListener")
-      def addEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn, context: js.Any): this.type = js.native
+      def addEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any): this.type = js.native
       @JSName("addEventListener")
       def addEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn): this.type = js.native
       @JSName("addEventListener")
-      def addEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tileload(`type`: tileload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tileload(`type`: tileload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tileunload(`type`: tileunload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tileunload(`type`: tileunload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_unload(`type`: unload, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_unload(`type`: unload, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_update(`type`: update, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_update(`type`: update, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoom(`type`: zoom, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoom(`type`: zoom, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("addEventListener")
       def addEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
       @JSName("addEventListener")
-      def addEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addEventListener")
-      def addEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any): this.type = js.native
       
       // tslint:enable:unified-signatures
       /**
@@ -421,208 +255,41 @@ object esri {
         * Behaves as on(...), except the listener will only get fired once and then removed.
         */
       // tslint:disable:unified-signatures
+      def addOneTimeEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn
+      ): this.type = js.native
+      def addOneTimeEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any
+      ): this.type = js.native
       def addOneTimeEventListener(`type`: String, fn: LeafletEventHandlerFn): this.type = js.native
-      def addOneTimeEventListener(`type`: String, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_add(`type`: add, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_add(`type`: add, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_click(`type`: click, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_click(`type`: click, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_down(`type`: down, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_down(`type`: down, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_drag(`type`: drag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_drag(`type`: drag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addOneTimeEventListener(`type`: String, fn: LeafletEventHandlerFn, context: Any): this.type = js.native
       @JSName("addOneTimeEventListener")
       def addOneTimeEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn): this.type = js.native
       @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_error(`type`: error, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_error(`type`: error, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_layeradd(`type`: layeradd, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_layeradd(`type`: layeradd, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_layerremove(`type`: layerremove, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_layerremove(`type`: layerremove, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_load(`type`: load, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_load(`type`: load, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_loading(`type`: loading, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_loading(`type`: loading, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addOneTimeEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any): this.type = js.native
       @JSName("addOneTimeEventListener")
       def addOneTimeEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn): this.type = js.native
       @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: js.Any): this.type = js.native
+      def addOneTimeEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("addOneTimeEventListener")
       def addOneTimeEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn): this.type = js.native
       @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_move(`type`: move, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_move(`type`: move, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_moveend(`type`: moveend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_moveend(`type`: moveend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_movestart(`type`: movestart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_movestart(`type`: movestart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_popupclose(`type`: popupclose, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_popupclose(`type`: popupclose, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_popupopen(`type`: popupopen, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_popupopen(`type`: popupopen, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_predrag(`type`: predrag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_predrag(`type`: predrag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_remove(`type`: remove, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_remove(`type`: remove, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addOneTimeEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any): this.type = js.native
       @JSName("addOneTimeEventListener")
       def addOneTimeEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn): this.type = js.native
       @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn, context: js.Any): this.type = js.native
+      def addOneTimeEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any): this.type = js.native
       @JSName("addOneTimeEventListener")
       def addOneTimeEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn): this.type = js.native
       @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tileload(`type`: tileload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tileload(`type`: tileload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tileunload(`type`: tileunload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tileunload(`type`: tileunload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_unload(`type`: unload, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_unload(`type`: unload, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_update(`type`: update, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_update(`type`: update, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoom(`type`: zoom, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoom(`type`: zoom, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addOneTimeEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("addOneTimeEventListener")
       def addOneTimeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
       @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("addOneTimeEventListener")
-      def addOneTimeEventListener_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def addOneTimeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any): this.type = js.native
       
       // tslint:enable:unified-signatures
       /**
@@ -639,8 +306,8 @@ object esri {
         * The event might can optionally be propagated to event parents.
         */
       def fire(`type`: String): this.type = js.native
-      def fire(`type`: String, data: js.Any): this.type = js.native
-      def fire(`type`: String, data: js.Any, propagate: Boolean): this.type = js.native
+      def fire(`type`: String, data: Any): this.type = js.native
+      def fire(`type`: String, data: Any, propagate: Boolean): this.type = js.native
       def fire(`type`: String, data: Unit, propagate: Boolean): this.type = js.native
       
       // tslint:enable:unified-signatures
@@ -652,8 +319,8 @@ object esri {
         * The event might can optionally be propagated to event parents.
         */
       def fireEvent(`type`: String): this.type = js.native
-      def fireEvent(`type`: String, data: js.Any): this.type = js.native
-      def fireEvent(`type`: String, data: js.Any, propagate: Boolean): this.type = js.native
+      def fireEvent(`type`: String, data: Any): this.type = js.native
+      def fireEvent(`type`: String, data: Any, propagate: Boolean): this.type = js.native
       def fireEvent(`type`: String, data: Unit, propagate: Boolean): this.type = js.native
       
       /**
@@ -666,7 +333,87 @@ object esri {
       /**
         * Returns true if a particular event type has any listeners attached to it.
         */
-      def listens(`type`: String): Boolean = js.native
+      // tslint:disable:unified-signatures
+      def listens(
+        `type`: baselayerchange | overlayadd | overlayremove | layeradd | layerremove | zoomlevelschange | unload | viewreset | load | zoomstart | movestart | zoom | move | zoomend | moveend | autopanstart | dragstart | drag | add | remove | loading | error | update | down | predrag | resize | popupopen | tooltipopen | tooltipclose | locationerror | locationfound | click | dblclick | mousedown | mouseup | mouseover | mouseout | mousemove | contextmenu | preclick | keypress | keydown | keyup | zoomanim | dragend | tileunload | tileloadstart | tileload | tileabort | tileerror
+      ): Boolean = js.native
+      def listens(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn
+      ): Boolean = js.native
+      def listens(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any
+      ): Boolean = js.native
+      def listens(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any,
+        propagate: Boolean
+      ): Boolean = js.native
+      def listens(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Unit,
+        propagate: Boolean
+      ): Boolean = js.native
+      def listens(
+        `type`: baselayerchange | overlayadd | overlayremove | layeradd | layerremove | zoomlevelschange | unload | viewreset | load | zoomstart | movestart | zoom | move | zoomend | moveend | autopanstart | dragstart | drag | add | remove | loading | error | update | down | predrag | resize | popupopen | tooltipopen | tooltipclose | locationerror | locationfound | click | dblclick | mousedown | mouseup | mouseover | mouseout | mousemove | contextmenu | preclick | keypress | keydown | keyup | zoomanim | dragend | tileunload | tileloadstart | tileload | tileabort | tileerror,
+        propagate: Boolean
+      ): Boolean = js.native
+      def listens(`type`: String, fn: LeafletEventHandlerFn): Boolean = js.native
+      def listens(`type`: String, fn: LeafletEventHandlerFn, context: Any): Boolean = js.native
+      def listens(`type`: String, fn: LeafletEventHandlerFn, context: Any, propagate: Boolean): Boolean = js.native
+      def listens(`type`: String, fn: LeafletEventHandlerFn, context: Unit, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_dragend(`type`: dragend, fn: DragEndEventHandlerFn): Boolean = js.native
+      @JSName("listens")
+      def listens_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any): Boolean = js.native
+      @JSName("listens")
+      def listens_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Unit, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn): Boolean = js.native
+      @JSName("listens")
+      def listens_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any): Boolean = js.native
+      @JSName("listens")
+      def listens_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Unit, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_locationfound(`type`: locationfound, fn: LocationEventHandlerFn): Boolean = js.native
+      @JSName("listens")
+      def listens_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any): Boolean = js.native
+      @JSName("listens")
+      def listens_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Unit, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_resize(`type`: resize, fn: ResizeEventHandlerFn): Boolean = js.native
+      @JSName("listens")
+      def listens_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any): Boolean = js.native
+      @JSName("listens")
+      def listens_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Unit, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_tileerror(`type`: tileerror, fn: TileEventHandlerFn): Boolean = js.native
+      @JSName("listens")
+      def listens_tileerror(`type`: tileerror, fn: TileEventHandlerFn, context: Any): Boolean = js.native
+      @JSName("listens")
+      def listens_tileerror(`type`: tileerror, fn: TileEventHandlerFn, context: Any, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_tileerror(`type`: tileerror, fn: TileEventHandlerFn, context: Unit, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): Boolean = js.native
+      @JSName("listens")
+      def listens_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any): Boolean = js.native
+      @JSName("listens")
+      def listens_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any, propagate: Boolean): Boolean = js.native
+      @JSName("listens")
+      def listens_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Unit, propagate: Boolean): Boolean = js.native
       
       /**
         * Removes all listeners to all events on the object.
@@ -677,11 +424,6 @@ object esri {
         */
       // With an eventMap there are no additional arguments allowed
       def off(eventMap: LeafletEventHandlerFnMap): this.type = js.native
-      def off(
-        `type`: zoomlevelschange | unload | viewreset | load | zoomstart | movestart | zoom | move | zoomend | moveend | autopanstart | dragstart | drag | add | remove | loading | error | update | down | predrag,
-        fn: js.UndefOr[LeafletEventHandlerFn],
-        context: js.UndefOr[js.Any]
-      ): this.type = js.native
       // tslint:enable:unified-signatures
       /**
         * Removes a previously added listener function. If no function is specified,
@@ -690,250 +432,75 @@ object esri {
         * to off in order to remove the listener.
         */
       // tslint:disable:unified-signatures
+      def off(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart
+      ): this.type = js.native
+      def off(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn
+      ): this.type = js.native
+      def off(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any
+      ): this.type = js.native
+      def off(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: Unit,
+        context: Any
+      ): this.type = js.native
       def off(`type`: String): this.type = js.native
-      def off(`type`: String, fn: Unit, context: js.Any): this.type = js.native
+      def off(`type`: String, fn: Unit, context: Any): this.type = js.native
       def off(`type`: String, fn: LeafletEventHandlerFn): this.type = js.native
-      def off(`type`: String, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_baselayerchange(`type`: baselayerchange): this.type = js.native
-      @JSName("off")
-      def off_baselayerchange(`type`: baselayerchange, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_click(`type`: click): this.type = js.native
-      @JSName("off")
-      def off_click(`type`: click, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_click(`type`: click, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_click(`type`: click, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_contextmenu(`type`: contextmenu): this.type = js.native
-      @JSName("off")
-      def off_contextmenu(`type`: contextmenu, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_dblclick(`type`: dblclick): this.type = js.native
-      @JSName("off")
-      def off_dblclick(`type`: dblclick, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
+      def off(`type`: String, fn: LeafletEventHandlerFn, context: Any): this.type = js.native
       @JSName("off")
       def off_dragend(`type`: dragend): this.type = js.native
       @JSName("off")
-      def off_dragend(`type`: dragend, fn: Unit, context: js.Any): this.type = js.native
+      def off_dragend(`type`: dragend, fn: Unit, context: Any): this.type = js.native
       @JSName("off")
       def off_dragend(`type`: dragend, fn: DragEndEventHandlerFn): this.type = js.native
       @JSName("off")
-      def off_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_keydown(`type`: keydown): this.type = js.native
-      @JSName("off")
-      def off_keydown(`type`: keydown, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_keypress(`type`: keypress): this.type = js.native
-      @JSName("off")
-      def off_keypress(`type`: keypress, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_keyup(`type`: keyup): this.type = js.native
-      @JSName("off")
-      def off_keyup(`type`: keyup, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_layeradd(`type`: layeradd): this.type = js.native
-      @JSName("off")
-      def off_layeradd(`type`: layeradd, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_layeradd(`type`: layeradd, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_layeradd(`type`: layeradd, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_layerremove(`type`: layerremove): this.type = js.native
-      @JSName("off")
-      def off_layerremove(`type`: layerremove, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_layerremove(`type`: layerremove, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_layerremove(`type`: layerremove, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
+      def off_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any): this.type = js.native
       @JSName("off")
       def off_locationerror(`type`: locationerror): this.type = js.native
       @JSName("off")
-      def off_locationerror(`type`: locationerror, fn: Unit, context: js.Any): this.type = js.native
+      def off_locationerror(`type`: locationerror, fn: Unit, context: Any): this.type = js.native
       @JSName("off")
       def off_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn): this.type = js.native
       @JSName("off")
-      def off_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: js.Any): this.type = js.native
+      def off_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("off")
       def off_locationfound(`type`: locationfound): this.type = js.native
       @JSName("off")
-      def off_locationfound(`type`: locationfound, fn: Unit, context: js.Any): this.type = js.native
+      def off_locationfound(`type`: locationfound, fn: Unit, context: Any): this.type = js.native
       @JSName("off")
       def off_locationfound(`type`: locationfound, fn: LocationEventHandlerFn): this.type = js.native
       @JSName("off")
-      def off_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mousedown(`type`: mousedown): this.type = js.native
-      @JSName("off")
-      def off_mousedown(`type`: mousedown, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mousemove(`type`: mousemove): this.type = js.native
-      @JSName("off")
-      def off_mousemove(`type`: mousemove, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mouseout(`type`: mouseout): this.type = js.native
-      @JSName("off")
-      def off_mouseout(`type`: mouseout, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mouseover(`type`: mouseover): this.type = js.native
-      @JSName("off")
-      def off_mouseover(`type`: mouseover, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mouseup(`type`: mouseup): this.type = js.native
-      @JSName("off")
-      def off_mouseup(`type`: mouseup, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_overlayadd(`type`: overlayadd): this.type = js.native
-      @JSName("off")
-      def off_overlayadd(`type`: overlayadd, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_overlayremove(`type`: overlayremove): this.type = js.native
-      @JSName("off")
-      def off_overlayremove(`type`: overlayremove, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_popupclose(`type`: popupclose): this.type = js.native
-      @JSName("off")
-      def off_popupclose(`type`: popupclose, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_popupclose(`type`: popupclose, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_popupclose(`type`: popupclose, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_popupopen(`type`: popupopen): this.type = js.native
-      @JSName("off")
-      def off_popupopen(`type`: popupopen, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_popupopen(`type`: popupopen, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_popupopen(`type`: popupopen, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_preclick(`type`: preclick): this.type = js.native
-      @JSName("off")
-      def off_preclick(`type`: preclick, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
+      def off_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any): this.type = js.native
       @JSName("off")
       def off_resize(`type`: resize): this.type = js.native
       @JSName("off")
-      def off_resize(`type`: resize, fn: Unit, context: js.Any): this.type = js.native
+      def off_resize(`type`: resize, fn: Unit, context: Any): this.type = js.native
       @JSName("off")
       def off_resize(`type`: resize, fn: ResizeEventHandlerFn): this.type = js.native
       @JSName("off")
-      def off_resize(`type`: resize, fn: ResizeEventHandlerFn, context: js.Any): this.type = js.native
+      def off_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any): this.type = js.native
       @JSName("off")
       def off_tileerror(`type`: tileerror): this.type = js.native
       @JSName("off")
-      def off_tileerror(`type`: tileerror, fn: Unit, context: js.Any): this.type = js.native
+      def off_tileerror(`type`: tileerror, fn: Unit, context: Any): this.type = js.native
       @JSName("off")
       def off_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn): this.type = js.native
       @JSName("off")
-      def off_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tileload(`type`: tileload): this.type = js.native
-      @JSName("off")
-      def off_tileload(`type`: tileload, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tileload(`type`: tileload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_tileload(`type`: tileload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tileloadstart(`type`: tileloadstart): this.type = js.native
-      @JSName("off")
-      def off_tileloadstart(`type`: tileloadstart, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tileunload(`type`: tileunload): this.type = js.native
-      @JSName("off")
-      def off_tileunload(`type`: tileunload, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tileunload(`type`: tileunload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_tileunload(`type`: tileunload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tooltipclose(`type`: tooltipclose): this.type = js.native
-      @JSName("off")
-      def off_tooltipclose(`type`: tooltipclose, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tooltipopen(`type`: tooltipopen): this.type = js.native
-      @JSName("off")
-      def off_tooltipopen(`type`: tooltipopen, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("off")
-      def off_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("off")
-      def off_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
+      def off_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("off")
       def off_zoomanim(`type`: zoomanim): this.type = js.native
       @JSName("off")
-      def off_zoomanim(`type`: zoomanim, fn: Unit, context: js.Any): this.type = js.native
+      def off_zoomanim(`type`: zoomanim, fn: Unit, context: Any): this.type = js.native
       @JSName("off")
       def off_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
       @JSName("off")
-      def off_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
+      def off_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any): this.type = js.native
       
       /**
         * Adds a set of type/listener pairs, e.g. {click: onClick, mousemove: onMouseMove}
@@ -946,208 +513,41 @@ object esri {
         * (e.g. 'click dblclick').
         */
       // tslint:disable:unified-signatures
+      def on(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn
+      ): this.type = js.native
+      def on(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any
+      ): this.type = js.native
       def on(`type`: String, fn: LeafletEventHandlerFn): this.type = js.native
-      def on(`type`: String, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_add(`type`: add, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_add(`type`: add, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_click(`type`: click, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_click(`type`: click, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_down(`type`: down, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_down(`type`: down, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_drag(`type`: drag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_drag(`type`: drag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def on(`type`: String, fn: LeafletEventHandlerFn, context: Any): this.type = js.native
       @JSName("on")
       def on_dragend(`type`: dragend, fn: DragEndEventHandlerFn): this.type = js.native
       @JSName("on")
-      def on_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_error(`type`: error, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_error(`type`: error, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_layeradd(`type`: layeradd, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_layeradd(`type`: layeradd, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_layerremove(`type`: layerremove, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_layerremove(`type`: layerremove, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_load(`type`: load, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_load(`type`: load, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_loading(`type`: loading, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_loading(`type`: loading, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def on_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any): this.type = js.native
       @JSName("on")
       def on_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn): this.type = js.native
       @JSName("on")
-      def on_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: js.Any): this.type = js.native
+      def on_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("on")
       def on_locationfound(`type`: locationfound, fn: LocationEventHandlerFn): this.type = js.native
       @JSName("on")
-      def on_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_move(`type`: move, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_move(`type`: move, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_moveend(`type`: moveend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_moveend(`type`: moveend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_movestart(`type`: movestart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_movestart(`type`: movestart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_popupclose(`type`: popupclose, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_popupclose(`type`: popupclose, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_popupopen(`type`: popupopen, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_popupopen(`type`: popupopen, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_predrag(`type`: predrag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_predrag(`type`: predrag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_remove(`type`: remove, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_remove(`type`: remove, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def on_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any): this.type = js.native
       @JSName("on")
       def on_resize(`type`: resize, fn: ResizeEventHandlerFn): this.type = js.native
       @JSName("on")
-      def on_resize(`type`: resize, fn: ResizeEventHandlerFn, context: js.Any): this.type = js.native
+      def on_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any): this.type = js.native
       @JSName("on")
       def on_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn): this.type = js.native
       @JSName("on")
-      def on_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_tileload(`type`: tileload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_tileload(`type`: tileload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_tileunload(`type`: tileunload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_tileunload(`type`: tileunload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_unload(`type`: unload, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_unload(`type`: unload, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_update(`type`: update, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_update(`type`: update, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_zoom(`type`: zoom, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_zoom(`type`: zoom, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def on_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("on")
       def on_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
       @JSName("on")
-      def on_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("on")
-      def on_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("on")
-      def on_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def on_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any): this.type = js.native
       
       /**
         * Behaves as on(...), except the listener will only get fired once and then removed.
@@ -1157,208 +557,41 @@ object esri {
         * Behaves as on(...), except the listener will only get fired once and then removed.
         */
       // tslint:disable:unified-signatures
+      def once(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn
+      ): this.type = js.native
+      def once(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any
+      ): this.type = js.native
       def once(`type`: String, fn: LeafletEventHandlerFn): this.type = js.native
-      def once(`type`: String, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_add(`type`: add, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_add(`type`: add, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_autopanstart(`type`: autopanstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_click(`type`: click, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_click(`type`: click, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_down(`type`: down, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_down(`type`: down, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_drag(`type`: drag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_drag(`type`: drag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def once(`type`: String, fn: LeafletEventHandlerFn, context: Any): this.type = js.native
       @JSName("once")
       def once_dragend(`type`: dragend, fn: DragEndEventHandlerFn): this.type = js.native
       @JSName("once")
-      def once_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_dragstart(`type`: dragstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_error(`type`: error, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_error(`type`: error, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_layeradd(`type`: layeradd, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_layeradd(`type`: layeradd, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_layerremove(`type`: layerremove, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_layerremove(`type`: layerremove, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_load(`type`: load, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_load(`type`: load, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_loading(`type`: loading, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_loading(`type`: loading, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def once_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any): this.type = js.native
       @JSName("once")
       def once_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn): this.type = js.native
       @JSName("once")
-      def once_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: js.Any): this.type = js.native
+      def once_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("once")
       def once_locationfound(`type`: locationfound, fn: LocationEventHandlerFn): this.type = js.native
       @JSName("once")
-      def once_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_move(`type`: move, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_move(`type`: move, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_moveend(`type`: moveend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_moveend(`type`: moveend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_movestart(`type`: movestart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_movestart(`type`: movestart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_popupclose(`type`: popupclose, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_popupclose(`type`: popupclose, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_popupopen(`type`: popupopen, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_popupopen(`type`: popupopen, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_predrag(`type`: predrag, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_predrag(`type`: predrag, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_remove(`type`: remove, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_remove(`type`: remove, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def once_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any): this.type = js.native
       @JSName("once")
       def once_resize(`type`: resize, fn: ResizeEventHandlerFn): this.type = js.native
       @JSName("once")
-      def once_resize(`type`: resize, fn: ResizeEventHandlerFn, context: js.Any): this.type = js.native
+      def once_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any): this.type = js.native
       @JSName("once")
       def once_tileerror(`type`: tileerror, fn: TileEventHandlerFn): this.type = js.native
       @JSName("once")
-      def once_tileerror(`type`: tileerror, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_tileload(`type`: tileload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_tileload(`type`: tileload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_tileunload(`type`: tileunload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_tileunload(`type`: tileunload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_unload(`type`: unload, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_unload(`type`: unload, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_update(`type`: update, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_update(`type`: update, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_viewreset(`type`: viewreset, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_zoom(`type`: zoom, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_zoom(`type`: zoom, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def once_tileerror(`type`: tileerror, fn: TileEventHandlerFn, context: Any): this.type = js.native
       @JSName("once")
       def once_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
       @JSName("once")
-      def once_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_zoomend(`type`: zoomend, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_zoomlevelschange(`type`: zoomlevelschange, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("once")
-      def once_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn): this.type = js.native
-      @JSName("once")
-      def once_zoomstart(`type`: zoomstart, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
+      def once_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any): this.type = js.native
       
       /**
         * Alias for off(...)
@@ -1366,11 +599,6 @@ object esri {
         * Removes a set of type/listener pairs.
         */
       def removeEventListener(eventMap: LeafletEventHandlerFnMap): this.type = js.native
-      def removeEventListener(
-        `type`: zoomlevelschange | unload | viewreset | load | zoomstart | movestart | zoom | move | zoomend | moveend | autopanstart | dragstart | drag | add | remove | loading | error | update | down | predrag,
-        fn: js.UndefOr[LeafletEventHandlerFn],
-        context: js.UndefOr[js.Any]
-      ): this.type = js.native
       // tslint:enable:unified-signatures
       /**
         * Alias for off(...)
@@ -1381,250 +609,75 @@ object esri {
         * to off in order to remove the listener.
         */
       // tslint:disable:unified-signatures
+      def removeEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart
+      ): this.type = js.native
+      def removeEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn
+      ): this.type = js.native
+      def removeEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: LayerEventHandlerFn | LayersControlEventHandlerFn | LeafletEventHandlerFn | LeafletKeyboardEventHandlerFn | LeafletMouseEventHandlerFn | PopupEventHandlerFn | TileEventHandlerFn | TooltipEventHandlerFn,
+        context: Any
+      ): this.type = js.native
+      def removeEventListener(
+        `type`: add | autopanstart | baselayerchange | click | contextmenu | dblclick | down | drag | dragstart | error | keydown | keypress | keyup | layeradd | layerremove | load | loading | mousedown | mousemove | mouseout | mouseover | mouseup | move | moveend | movestart | overlayadd | overlayremove | popupclose | popupopen | preclick | predrag | remove | tileabort | tileload | tileloadstart | tileunload | tooltipclose | tooltipopen | unload | update | viewreset | zoom | zoomend | zoomlevelschange | zoomstart,
+        fn: Unit,
+        context: Any
+      ): this.type = js.native
       def removeEventListener(`type`: String): this.type = js.native
-      def removeEventListener(`type`: String, fn: Unit, context: js.Any): this.type = js.native
+      def removeEventListener(`type`: String, fn: Unit, context: Any): this.type = js.native
       def removeEventListener(`type`: String, fn: LeafletEventHandlerFn): this.type = js.native
-      def removeEventListener(`type`: String, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_baselayerchange(`type`: baselayerchange): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_baselayerchange(`type`: baselayerchange, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_baselayerchange(`type`: baselayerchange, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_click(`type`: click): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_click(`type`: click, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_click(`type`: click, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_click(`type`: click, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_contextmenu(`type`: contextmenu): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_contextmenu(`type`: contextmenu, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_contextmenu(`type`: contextmenu, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_dblclick(`type`: dblclick): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_dblclick(`type`: dblclick, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_dblclick(`type`: dblclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
+      def removeEventListener(`type`: String, fn: LeafletEventHandlerFn, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_dragend(`type`: dragend): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_dragend(`type`: dragend, fn: Unit, context: js.Any): this.type = js.native
+      def removeEventListener_dragend(`type`: dragend, fn: Unit, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keydown(`type`: keydown): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keydown(`type`: keydown, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keydown(`type`: keydown, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keypress(`type`: keypress): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keypress(`type`: keypress, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keypress(`type`: keypress, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keyup(`type`: keyup): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keyup(`type`: keyup, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_keyup(`type`: keyup, fn: LeafletKeyboardEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layeradd(`type`: layeradd): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layeradd(`type`: layeradd, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layeradd(`type`: layeradd, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layeradd(`type`: layeradd, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layerremove(`type`: layerremove): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layerremove(`type`: layerremove, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layerremove(`type`: layerremove, fn: LayerEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_layerremove(`type`: layerremove, fn: LayerEventHandlerFn, context: js.Any): this.type = js.native
+      def removeEventListener_dragend(`type`: dragend, fn: DragEndEventHandlerFn, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_locationerror(`type`: locationerror): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_locationerror(`type`: locationerror, fn: Unit, context: js.Any): this.type = js.native
+      def removeEventListener_locationerror(`type`: locationerror, fn: Unit, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: js.Any): this.type = js.native
+      def removeEventListener_locationerror(`type`: locationerror, fn: ErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_locationfound(`type`: locationfound): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_locationfound(`type`: locationfound, fn: Unit, context: js.Any): this.type = js.native
+      def removeEventListener_locationfound(`type`: locationfound, fn: Unit, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousedown(`type`: mousedown): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousedown(`type`: mousedown, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousedown(`type`: mousedown, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousemove(`type`: mousemove): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousemove(`type`: mousemove, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mousemove(`type`: mousemove, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseout(`type`: mouseout): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseout(`type`: mouseout, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseout(`type`: mouseout, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseover(`type`: mouseover): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseover(`type`: mouseover, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseover(`type`: mouseover, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseup(`type`: mouseup): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseup(`type`: mouseup, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_mouseup(`type`: mouseup, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayadd(`type`: overlayadd): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayadd(`type`: overlayadd, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayadd(`type`: overlayadd, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayremove(`type`: overlayremove): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayremove(`type`: overlayremove, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_overlayremove(`type`: overlayremove, fn: LayersControlEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupclose(`type`: popupclose): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupclose(`type`: popupclose, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupclose(`type`: popupclose, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupclose(`type`: popupclose, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupopen(`type`: popupopen): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupopen(`type`: popupopen, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupopen(`type`: popupopen, fn: PopupEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_popupopen(`type`: popupopen, fn: PopupEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_preclick(`type`: preclick): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_preclick(`type`: preclick, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_preclick(`type`: preclick, fn: LeafletMouseEventHandlerFn, context: js.Any): this.type = js.native
+      def removeEventListener_locationfound(`type`: locationfound, fn: LocationEventHandlerFn, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_resize(`type`: resize): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_resize(`type`: resize, fn: Unit, context: js.Any): this.type = js.native
+      def removeEventListener_resize(`type`: resize, fn: Unit, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn, context: js.Any): this.type = js.native
+      def removeEventListener_resize(`type`: resize, fn: ResizeEventHandlerFn, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_tileerror(`type`: tileerror): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_tileerror(`type`: tileerror, fn: Unit, context: js.Any): this.type = js.native
+      def removeEventListener_tileerror(`type`: tileerror, fn: Unit, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileload(`type`: tileload): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileload(`type`: tileload, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileload(`type`: tileload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileload(`type`: tileload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileloadstart(`type`: tileloadstart): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileloadstart(`type`: tileloadstart, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileloadstart(`type`: tileloadstart, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileunload(`type`: tileunload): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileunload(`type`: tileunload, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileunload(`type`: tileunload, fn: TileEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tileunload(`type`: tileunload, fn: TileEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipclose(`type`: tooltipclose): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipclose(`type`: tooltipclose, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipclose(`type`: tooltipclose, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipopen(`type`: tooltipopen): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipopen(`type`: tooltipopen, fn: Unit, context: js.Any): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn): this.type = js.native
-      @JSName("removeEventListener")
-      def removeEventListener_tooltipopen(`type`: tooltipopen, fn: TooltipEventHandlerFn, context: js.Any): this.type = js.native
+      def removeEventListener_tileerror(`type`: tileerror, fn: TileErrorEventHandlerFn, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_zoomanim(`type`: zoomanim): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_zoomanim(`type`: zoomanim, fn: Unit, context: js.Any): this.type = js.native
+      def removeEventListener_zoomanim(`type`: zoomanim, fn: Unit, context: Any): this.type = js.native
       @JSName("removeEventListener")
       def removeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn): this.type = js.native
       @JSName("removeEventListener")
-      def removeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: js.Any): this.type = js.native
+      def removeEventListener_zoomanim(`type`: zoomanim, fn: ZoomAnimEventHandlerFn, context: Any): this.type = js.native
       
       /**
         * Removes an event parent, so it will stop receiving propagated events
@@ -1639,7 +692,7 @@ object esri {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapService * / any */ @JSImport("leaflet", "esri.Geocoding.MapServiceProvider")
     @js.native
-    class MapServiceProvider_ ()
+    open class MapServiceProvider_ ()
       extends StObject
          with GeosearchProvider {
       def this(options: MapServiceProviderOptions) = this()
@@ -1648,8 +701,8 @@ object esri {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task * / any */ @JSImport("leaflet", "esri.Geocoding.ReverseGeocode")
     @js.native
-    class ReverseGeocode_ () extends StObject {
-      def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ js.Any) = this()
+    open class ReverseGeocode_ () extends StObject {
+      def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ Any) = this()
       
       def distance(distance: Double): this.type = js.native
       
@@ -1658,30 +711,28 @@ object esri {
       def latlng(latlng: LatLngExpression): this.type = js.native
       
       def run(
-        callback: js.Function3[/* error */ js.UndefOr[js.Any], /* results */ Address, /* response */ js.Any, Unit]
+        callback: js.Function3[/* error */ js.UndefOr[Any], /* results */ Address, /* response */ Any, Unit]
       ): this.type = js.native
       def run(
-        callback: js.Function3[/* error */ js.UndefOr[js.Any], /* results */ Address, /* response */ js.Any, Unit],
-        context: js.Any
+        callback: js.Function3[/* error */ js.UndefOr[Any], /* results */ Address, /* response */ Any, Unit],
+        context: Any
       ): this.type = js.native
     }
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task * / any */ @JSImport("leaflet", "esri.Geocoding.Suggest")
     @js.native
-    class Suggest_ () extends StObject {
-      def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ js.Any) = this()
+    open class Suggest_ () extends StObject {
+      def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ Any) = this()
       
       def category(text: String): this.type = js.native
       
       def nearby(latlng: LatLngExpression, distance: Double): this.type = js.native
       
+      def run(callback: js.Function3[/* error */ js.UndefOr[Any], /* results */ Any, /* response */ Any, Unit]): this.type = js.native
       def run(
-        callback: js.Function3[/* error */ js.UndefOr[js.Any], /* results */ js.Any, /* response */ js.Any, Unit]
-      ): this.type = js.native
-      def run(
-        callback: js.Function3[/* error */ js.UndefOr[js.Any], /* results */ js.Any, /* response */ js.Any, Unit],
-        context: js.Any
+        callback: js.Function3[/* error */ js.UndefOr[Any], /* results */ Any, /* response */ Any, Unit],
+        context: Any
       ): this.type = js.native
       
       def text(text: String): this.type = js.native
@@ -1697,7 +748,7 @@ object esri {
     
     inline def geocode(): Geocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")().asInstanceOf[Geocode_]
     inline def geocode(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ js.Any
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ Any
     ): Geocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(options.asInstanceOf[js.Any]).asInstanceOf[Geocode_]
     
     inline def geocodeService(): GeocodeService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeService")().asInstanceOf[GeocodeService_]
@@ -1714,12 +765,12 @@ object esri {
     
     inline def reverseGeocode(): ReverseGeocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")().asInstanceOf[ReverseGeocode_]
     inline def reverseGeocode(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ js.Any
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ Any
     ): ReverseGeocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(options.asInstanceOf[js.Any]).asInstanceOf[ReverseGeocode_]
     
     inline def suggest(): Suggest_ = ^.asInstanceOf[js.Dynamic].applyDynamic("suggest")().asInstanceOf[Suggest_]
     inline def suggest(
-      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ js.Any
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ Any
     ): Suggest_ = ^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(options.asInstanceOf[js.Any]).asInstanceOf[Suggest_]
     
     trait ArcgisOnlineProviderOptions
@@ -1745,13 +796,13 @@ object esri {
         
         inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
         
-        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
         
         inline def setCountries(value: String | js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
         
         inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
         
-        inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+        inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
         
         inline def setForStorage(value: Boolean): Self = StObject.set(x, "forStorage", value.asInstanceOf[js.Any])
         
@@ -1804,7 +855,7 @@ object esri {
       
       var bufferRadius: js.UndefOr[Double] = js.undefined
       
-      var formatSuggestion: js.UndefOr[js.Function1[/* featureInformation */ js.Any, String]] = js.undefined
+      var formatSuggestion: js.UndefOr[js.Function1[/* featureInformation */ Any, String]] = js.undefined
       
       var searchFields: js.UndefOr[String | js.Array[String]] = js.undefined
       
@@ -1823,7 +874,7 @@ object esri {
         
         inline def setBufferRadiusUndefined: Self = StObject.set(x, "bufferRadius", js.undefined)
         
-        inline def setFormatSuggestion(value: /* featureInformation */ js.Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
+        inline def setFormatSuggestion(value: /* featureInformation */ Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
         
         inline def setFormatSuggestionUndefined: Self = StObject.set(x, "formatSuggestion", js.undefined)
         
@@ -1831,7 +882,7 @@ object esri {
         
         inline def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
         
-        inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
+        inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value*))
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
@@ -1876,7 +927,7 @@ object esri {
       }
     }
     
-    type GeosearchCallback = js.Function2[/* error */ js.UndefOr[js.Any], /* results */ js.Any, Unit]
+    type GeosearchCallback = js.Function2[/* error */ js.UndefOr[Any], /* results */ Any, Unit]
     
     type GeosearchConstructor = Instantiable1[
         /* options */ js.UndefOr[GeosearchObject], 
@@ -1950,7 +1001,7 @@ object esri {
         
         inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
         
-        inline def setProvidersVarargs(value: GeosearchProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+        inline def setProvidersVarargs(value: GeosearchProvider*): Self = StObject.set(x, "providers", js.Array(value*))
         
         inline def setSearchBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "searchBounds", value.asInstanceOf[js.Any])
         
@@ -1958,7 +1009,7 @@ object esri {
         
         inline def setSearchBoundsUndefined: Self = StObject.set(x, "searchBounds", js.undefined)
         
-        inline def setSearchBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "searchBounds", js.Array(value :_*))
+        inline def setSearchBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "searchBounds", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -1977,13 +1028,13 @@ object esri {
     @js.native
     trait GeosearchProvider extends StObject {
       
-      def results(text: String, key: String, bounds: Null, callback: GeosearchCallback): js.Any = js.native
-      def results(text: String, key: String, bounds: Unit, callback: GeosearchCallback): js.Any = js.native
-      def results(text: String, key: String, bounds: LatLngBoundsExpression, callback: GeosearchCallback): js.Any = js.native
+      def results(text: String, key: String, bounds: Null, callback: GeosearchCallback): Any = js.native
+      def results(text: String, key: String, bounds: Unit, callback: GeosearchCallback): Any = js.native
+      def results(text: String, key: String, bounds: LatLngBoundsExpression, callback: GeosearchCallback): Any = js.native
       
-      def suggestions(text: String, bounds: Null, callback: GeosearchCallback): js.Any = js.native
-      def suggestions(text: String, bounds: Unit, callback: GeosearchCallback): js.Any = js.native
-      def suggestions(text: String, bounds: LatLngBoundsExpression, callback: GeosearchCallback): js.Any = js.native
+      def suggestions(text: String, bounds: Null, callback: GeosearchCallback): Any = js.native
+      def suggestions(text: String, bounds: Unit, callback: GeosearchCallback): Any = js.native
+      def suggestions(text: String, bounds: LatLngBoundsExpression, callback: GeosearchCallback): Any = js.native
     }
     
     trait MapServiceProviderOptions
@@ -1992,7 +1043,7 @@ object esri {
       
       var bufferRadius: Double | js.Array[Double]
       
-      def formatSuggestion(featureInformation: js.Any): String
+      def formatSuggestion(featureInformation: Any): String
       
       var layers: Double | js.Array[Double]
       
@@ -2004,7 +1055,7 @@ object esri {
       
       inline def apply(
         bufferRadius: Double | js.Array[Double],
-        formatSuggestion: js.Any => String,
+        formatSuggestion: Any => String,
         layers: Double | js.Array[Double],
         searchFields: String | js.Array[String],
         url: String
@@ -2017,17 +1068,17 @@ object esri {
         
         inline def setBufferRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "bufferRadius", value.asInstanceOf[js.Any])
         
-        inline def setBufferRadiusVarargs(value: Double*): Self = StObject.set(x, "bufferRadius", js.Array(value :_*))
+        inline def setBufferRadiusVarargs(value: Double*): Self = StObject.set(x, "bufferRadius", js.Array(value*))
         
-        inline def setFormatSuggestion(value: js.Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
+        inline def setFormatSuggestion(value: Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
         
         inline def setLayers(value: Double | js.Array[Double]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
-        inline def setLayersVarargs(value: Double*): Self = StObject.set(x, "layers", js.Array(value :_*))
+        inline def setLayersVarargs(value: Double*): Self = StObject.set(x, "layers", js.Array(value*))
         
         inline def setSearchFields(value: String | js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
         
-        inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
+        inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value*))
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
@@ -2035,15 +1086,15 @@ object esri {
     
     trait ResultObject
       extends StObject
-         with /* key */ StringDictionary[js.Any] {
+         with /* key */ StringDictionary[Any] {
       
       var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
       
-      var geojson: js.UndefOr[GeoJSON_[js.Any]] = js.undefined
+      var geojson: js.UndefOr[GeoJSON__[Any]] = js.undefined
       
       var latlng: js.UndefOr[LatLngExpression] = js.undefined
       
-      var properties: js.UndefOr[js.Any] = js.undefined
+      var properties: js.UndefOr[Any] = js.undefined
       
       var text: js.UndefOr[String] = js.undefined
     }
@@ -2060,9 +1111,9 @@ object esri {
         
         inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
         
-        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
         
-        inline def setGeojson(value: GeoJSON_[js.Any]): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
+        inline def setGeojson(value: GeoJSON__[Any]): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
         
         inline def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
         
@@ -2070,7 +1121,7 @@ object esri {
         
         inline def setLatlngUndefined: Self = StObject.set(x, "latlng", js.undefined)
         
-        inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
         inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         
@@ -2099,13 +1150,13 @@ object esri {
         
         inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
         
         inline def setLatlng(value: LatLngExpression): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
         
         inline def setResults(value: js.Array[ResultObject]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
-        inline def setResultsVarargs(value: ResultObject*): Self = StObject.set(x, "results", js.Array(value :_*))
+        inline def setResultsVarargs(value: ResultObject*): Self = StObject.set(x, "results", js.Array(value*))
       }
     }
   }

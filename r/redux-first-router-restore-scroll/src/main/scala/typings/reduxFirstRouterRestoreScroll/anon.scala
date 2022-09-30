@@ -17,8 +17,8 @@ object anon {
     /** Use to implement custom scroll positioning. */
     var shouldUpdateScroll: js.UndefOr[
         js.Function2[
-          /* prev */ LocationState[js.Object, js.Any], 
-          /* locationState */ LocationState[js.Object, js.Any], 
+          /* prev */ LocationState[js.Object, Any], 
+          /* locationState */ LocationState[js.Object, Any], 
           Boolean | `profile-box` | (js.Tuple2[Double, Double])
         ]
       ] = js.undefined
@@ -45,7 +45,7 @@ object anon {
       inline def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
       
       inline def setShouldUpdateScroll(
-        value: (/* prev */ LocationState[js.Object, js.Any], /* locationState */ LocationState[js.Object, js.Any]) => Boolean | `profile-box` | (js.Tuple2[Double, Double])
+        value: (/* prev */ LocationState[js.Object, Any], /* locationState */ LocationState[js.Object, Any]) => Boolean | `profile-box` | (js.Tuple2[Double, Double])
       ): Self = StObject.set(x, "shouldUpdateScroll", js.Any.fromFunction2(value))
       
       inline def setShouldUpdateScrollUndefined: Self = StObject.set(x, "shouldUpdateScroll", js.undefined)
@@ -59,11 +59,11 @@ object anon {
   @js.native
   trait Read extends StObject {
     
-    def read(location: Location[typings.history.mod.LocationState]): Location[typings.history.mod.LocationState] = js.native
-    def read(location: Location[typings.history.mod.LocationState], key: String): Location[typings.history.mod.LocationState] = js.native
+    def read(location: Location): Location = js.native
+    def read(location: Location, key: String): Location = js.native
     
-    def save(location: Location[typings.history.mod.LocationState], key: String, value: js.Any): Unit = js.native
-    def save(location: Location[typings.history.mod.LocationState], key: Null, value: js.Any): Unit = js.native
+    def save(location: Location, key: String, value: Any): Unit = js.native
+    def save(location: Location, key: Null, value: Any): Unit = js.native
     
     def setPrevKey(): Unit = js.native
     def setPrevKey(key: String): Unit = js.native

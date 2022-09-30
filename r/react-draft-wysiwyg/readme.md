@@ -10,10 +10,10 @@ A wysiwyg on top of DraftJS.
 | ------------------ | :-------------: |
 | Full name          | react-draft-wysiwyg |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 141 |
-| # downloads        | 3906459 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 884122.3333333334 |
+| # stars            | 5708.0 |
 
 ## Links
 - [Homepage](https://github.com/jpuri/react-draft-wysiwyg#readme)

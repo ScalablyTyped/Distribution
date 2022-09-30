@@ -134,7 +134,7 @@ object mod {
   val default: CreateStyled = js.native
   
   inline def css[StyleType /* <: ReactNativeStyle */](args: (CSSInterpolation[ReactNativeStyle] | StyleType)*): StyleType = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StyleType]
-  inline def css[StyleType /* <: ReactNativeStyle */](template: TemplateStringsArray, args: (Interpolation[Any, ReactNativeStyle])*): StyleType = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StyleType]
+  inline def css[StyleType /* <: ReactNativeStyle */](template: TemplateStringsArray, args: (Interpolation[Any, ReactNativeStyle])*): StyleType = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(scala.List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StyleType]
   
   @js.native
   trait CreateStyled

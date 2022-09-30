@@ -12,7 +12,7 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defaults(destination: Any, input: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(destination.asInstanceOf[js.Any]).`++`(input.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def defaults(destination: Any, input: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(scala.List(destination.asInstanceOf[js.Any]).`++`(input.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def getStatic(who: Any): PathWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatic")(who.asInstanceOf[js.Any]).asInstanceOf[PathWrap]
   

@@ -43,7 +43,7 @@ trait StandardControl
     * @returns The attribute.
     */
   @JSName("getAttribute")
-  def getAttribute_T_AttributeAny_T[T /* <: Attribute[Any] */](): T = js.native
+  def getAttribute_T_T[T /* <: Attribute[Any] */](): T = js.native
   
   /**
     * Sets a control-local notification message.

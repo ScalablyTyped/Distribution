@@ -24,18 +24,18 @@ object mod {
     * @template DispatchExts The additional Dispatch signatures for the middlewares applied.
     */
   inline def default[S, DispatchExts](): MockStoreCreator[S, DispatchExts] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MockStoreCreator[S, DispatchExts]]
-  inline def default[S, DispatchExts](middlewares: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]): MockStoreCreator[S, DispatchExts] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(middlewares.asInstanceOf[js.Any]).asInstanceOf[MockStoreCreator[S, DispatchExts]]
+  inline def default[S, DispatchExts](middlewares: js.Array[Middleware[js.Object, Any, Dispatch[AnyAction]]]): MockStoreCreator[S, DispatchExts] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(middlewares.asInstanceOf[js.Any]).asInstanceOf[MockStoreCreator[S, DispatchExts]]
   
   type MockGetState[S] = js.Function1[/* actions */ js.Array[AnyAction], S]
   
   @js.native
-  trait MockStore[S, A /* <: Action[js.Any] */]
+  trait MockStore[S, A /* <: Action[Any] */]
     extends StObject
        with Store[S, A] {
     
     def clearActions(): Unit = js.native
     
-    def getActions(): js.Array[js.Any] = js.native
+    def getActions(): js.Array[Any] = js.native
   }
   
   type MockStoreCreator[S, DispatchExts] = js.Function1[/* state */ js.UndefOr[S | MockGetState[S]], MockStoreEnhanced[S, DispatchExts]]

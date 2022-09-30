@@ -27,11 +27,11 @@ object useFilterMod {
   ): js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 
-    js.Function0[Record[String, FilterValue | Null]]
+    Record[String, FilterValue | Null]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerTableLocale.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 
-    js.Function0[Record[String, FilterValue | Null]]
+    Record[String, FilterValue | Null]
   ]]
   
   inline def flattenKeys(): FilterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenKeys")().asInstanceOf[FilterValue]

@@ -24,6 +24,25 @@ object resizableBoxMod {
   
   object ResizableBox {
     
-    type Props = ResizableProps
+    trait Props
+      extends StObject
+         with ResizableProps {
+      
+      var showHandle: js.UndefOr[Boolean] = js.undefined
+    }
+    object Props {
+      
+      inline def apply(): Props = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Props]
+      }
+      
+      extension [Self <: Props](x: Self) {
+        
+        inline def setShowHandle(value: Boolean): Self = StObject.set(x, "showHandle", value.asInstanceOf[js.Any])
+        
+        inline def setShowHandleUndefined: Self = StObject.set(x, "showHandle", js.undefined)
+      }
+    }
   }
 }

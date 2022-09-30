@@ -41,7 +41,7 @@ trait TableCell
      with ClientObject {
   
   /**
-    * Gets the body object of the cell. Read-only.
+    * Gets the body object of the cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -49,7 +49,7 @@ trait TableCell
   val body: Body = js.native
   
   /**
-    * Gets the index of the cell in its row. Read-only.
+    * Gets the index of the cell in its row.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -125,7 +125,7 @@ trait TableCell
   def getCellPadding(cellPaddingLocation: CellPaddingLocation): ClientResult[Double] = js.native
   
   /**
-    * Gets the next cell. Throws an error if this cell is the last one.
+    * Gets the next cell. Throws an `ItemNotFound` error if this cell is the last one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -133,7 +133,7 @@ trait TableCell
   def getNext(): TableCell = js.native
   
   /**
-    * Gets the next cell. Returns a null object if this cell is the last one.
+    * Gets the next cell. If this cell is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -194,7 +194,7 @@ trait TableCell
   def load(propertyNames: js.Array[String]): TableCell = js.native
   
   /**
-    * Gets the parent row of the cell. Read-only.
+    * Gets the parent row of the cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -202,7 +202,7 @@ trait TableCell
   val parentRow: TableRow = js.native
   
   /**
-    * Gets the parent table of the cell. Read-only.
+    * Gets the parent table of the cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -210,7 +210,7 @@ trait TableCell
   val parentTable: Table = js.native
   
   /**
-    * Gets the index of the cell's row in the table. Read-only.
+    * Gets the index of the cell's row in the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -257,6 +257,17 @@ trait TableCell
   var shadingColor: String = js.native
   
   /**
+    * Splits the cell into the specified number of rows and columns.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param rowCount Required. The number of rows to split into. Must be a divisor of the number of underlying rows.
+    * @param columnCount Required. The number of columns to split into.
+    */
+  def split(rowCount: Double, columnCount: Double): Unit = js.native
+  
+  /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Word.TableCell object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
     */
@@ -289,7 +300,7 @@ trait TableCell
   var verticalAlignment: VerticalAlignment | Mixed | Top | Center | Bottom = js.native
   
   /**
-    * Gets the width of the cell in points. Read-only.
+    * Gets the width of the cell in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]

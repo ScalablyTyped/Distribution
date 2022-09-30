@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @hidden */
+/** @internal */
 trait FacetDataStorage extends StObject {
   
   var bbSize: Vector3

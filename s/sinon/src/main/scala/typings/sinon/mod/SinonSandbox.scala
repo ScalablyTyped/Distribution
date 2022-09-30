@@ -175,12 +175,12 @@ trait SinonSandbox extends StObject {
     */
   def spy(): SinonSpy[js.Array[Any], Any] = js.native
   /**
-    * Spies on the provided function
+    * Spies on all the object’s methods.
     */
   /**
     * Works exactly like sinon.spy
     */
-  def spy[F /* <: js.Function1[/* repeated */ Any, Any] */](func: F): SinonSpy[Parameters[F], ReturnType[F]] = js.native
+  def spy[T](obj: T): SinonSpiedInstance[T] = js.native
   /**
     * Creates a spy for object.method and replaces the original method with the spy.
     * An exception is thrown if the property is not already a function.
@@ -197,18 +197,18 @@ trait SinonSandbox extends StObject {
     */
   def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K, types: js.Array[get | set]): js.PropertyDescriptor & (Get[T, K]) = js.native
   /**
+    * Spies on the provided function
+    */
+  /**
+    * Works exactly like sinon.spy
+    */
+  @JSName("spy")
+  def spy_F_SinonSpy[F /* <: js.Function1[/* repeated */ Any, Any] */](func: F): SinonSpy[Parameters[F], ReturnType[F]] = js.native
+  /**
     * Works exactly like sinon.spy
     */
   @JSName("spy")
   var spy_Original: SinonSpyStatic = js.native
-  /**
-    * Spies on all the object’s methods.
-    */
-  /**
-    * Works exactly like sinon.spy
-    */
-  @JSName("spy")
-  def spy_T_SinonSpiedInstance[T](obj: T): SinonSpiedInstance[T] = js.native
   
   /* tslint:enable:no-unnecessary-generics */
   /**

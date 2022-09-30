@@ -389,77 +389,77 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.staticmaps.staticmapsNumbers.`1`
-    - typings.staticmaps.staticmapsNumbers.`2`
-    - typings.staticmaps.staticmapsNumbers.`3`
-    - typings.staticmaps.staticmapsNumbers.`4`
-    - typings.staticmaps.staticmapsNumbers.`5`
-    - typings.staticmaps.staticmapsNumbers.`6`
-    - typings.staticmaps.staticmapsNumbers.`7`
-    - typings.staticmaps.staticmapsNumbers.`8`
-    - typings.staticmaps.staticmapsNumbers.`9`
-    - typings.staticmaps.staticmapsNumbers.`10`
-    - typings.staticmaps.staticmapsNumbers.`11`
-    - typings.staticmaps.staticmapsNumbers.`12`
-    - typings.staticmaps.staticmapsNumbers.`13`
-    - typings.staticmaps.staticmapsNumbers.`14`
-    - typings.staticmaps.staticmapsNumbers.`15`
-    - typings.staticmaps.staticmapsNumbers.`16`
-    - typings.staticmaps.staticmapsNumbers.`17`
-    - typings.staticmaps.staticmapsNumbers.`18`
-    - typings.staticmaps.staticmapsNumbers.`19`
-    - typings.staticmaps.staticmapsNumbers.`20`
-    - typings.staticmaps.staticmapsNumbers.`21`
-    - typings.staticmaps.staticmapsNumbers.`22`
-    - typings.staticmaps.staticmapsNumbers.`23`
+    - typings.staticmaps.staticmapsInts.`1`
+    - typings.staticmaps.staticmapsInts.`2`
+    - typings.staticmaps.staticmapsInts.`3`
+    - typings.staticmaps.staticmapsInts.`4`
+    - typings.staticmaps.staticmapsInts.`5`
+    - typings.staticmaps.staticmapsInts.`6`
+    - typings.staticmaps.staticmapsInts.`7`
+    - typings.staticmaps.staticmapsInts.`8`
+    - typings.staticmaps.staticmapsInts.`9`
+    - typings.staticmaps.staticmapsInts.`10`
+    - typings.staticmaps.staticmapsInts.`11`
+    - typings.staticmaps.staticmapsInts.`12`
+    - typings.staticmaps.staticmapsInts.`13`
+    - typings.staticmaps.staticmapsInts.`14`
+    - typings.staticmaps.staticmapsInts.`15`
+    - typings.staticmaps.staticmapsInts.`16`
+    - typings.staticmaps.staticmapsInts.`17`
+    - typings.staticmaps.staticmapsInts.`18`
+    - typings.staticmaps.staticmapsInts.`19`
+    - typings.staticmaps.staticmapsInts.`20`
+    - typings.staticmaps.staticmapsInts.`21`
+    - typings.staticmaps.staticmapsInts.`22`
+    - typings.staticmaps.staticmapsInts.`23`
   */
   trait ZoomLevel extends StObject
   object ZoomLevel {
     
-    inline def `1`: typings.staticmaps.staticmapsNumbers.`1` = 1.asInstanceOf[typings.staticmaps.staticmapsNumbers.`1`]
+    inline def `1`: typings.staticmaps.staticmapsInts.`1` = 1.asInstanceOf[typings.staticmaps.staticmapsInts.`1`]
     
-    inline def `10`: typings.staticmaps.staticmapsNumbers.`10` = 10.asInstanceOf[typings.staticmaps.staticmapsNumbers.`10`]
+    inline def `10`: typings.staticmaps.staticmapsInts.`10` = 10.asInstanceOf[typings.staticmaps.staticmapsInts.`10`]
     
-    inline def `11`: typings.staticmaps.staticmapsNumbers.`11` = 11.asInstanceOf[typings.staticmaps.staticmapsNumbers.`11`]
+    inline def `11`: typings.staticmaps.staticmapsInts.`11` = 11.asInstanceOf[typings.staticmaps.staticmapsInts.`11`]
     
-    inline def `12`: typings.staticmaps.staticmapsNumbers.`12` = 12.asInstanceOf[typings.staticmaps.staticmapsNumbers.`12`]
+    inline def `12`: typings.staticmaps.staticmapsInts.`12` = 12.asInstanceOf[typings.staticmaps.staticmapsInts.`12`]
     
-    inline def `13`: typings.staticmaps.staticmapsNumbers.`13` = 13.asInstanceOf[typings.staticmaps.staticmapsNumbers.`13`]
+    inline def `13`: typings.staticmaps.staticmapsInts.`13` = 13.asInstanceOf[typings.staticmaps.staticmapsInts.`13`]
     
-    inline def `14`: typings.staticmaps.staticmapsNumbers.`14` = 14.asInstanceOf[typings.staticmaps.staticmapsNumbers.`14`]
+    inline def `14`: typings.staticmaps.staticmapsInts.`14` = 14.asInstanceOf[typings.staticmaps.staticmapsInts.`14`]
     
-    inline def `15`: typings.staticmaps.staticmapsNumbers.`15` = 15.asInstanceOf[typings.staticmaps.staticmapsNumbers.`15`]
+    inline def `15`: typings.staticmaps.staticmapsInts.`15` = 15.asInstanceOf[typings.staticmaps.staticmapsInts.`15`]
     
-    inline def `16`: typings.staticmaps.staticmapsNumbers.`16` = 16.asInstanceOf[typings.staticmaps.staticmapsNumbers.`16`]
+    inline def `16`: typings.staticmaps.staticmapsInts.`16` = 16.asInstanceOf[typings.staticmaps.staticmapsInts.`16`]
     
-    inline def `17`: typings.staticmaps.staticmapsNumbers.`17` = 17.asInstanceOf[typings.staticmaps.staticmapsNumbers.`17`]
+    inline def `17`: typings.staticmaps.staticmapsInts.`17` = 17.asInstanceOf[typings.staticmaps.staticmapsInts.`17`]
     
-    inline def `18`: typings.staticmaps.staticmapsNumbers.`18` = 18.asInstanceOf[typings.staticmaps.staticmapsNumbers.`18`]
+    inline def `18`: typings.staticmaps.staticmapsInts.`18` = 18.asInstanceOf[typings.staticmaps.staticmapsInts.`18`]
     
-    inline def `19`: typings.staticmaps.staticmapsNumbers.`19` = 19.asInstanceOf[typings.staticmaps.staticmapsNumbers.`19`]
+    inline def `19`: typings.staticmaps.staticmapsInts.`19` = 19.asInstanceOf[typings.staticmaps.staticmapsInts.`19`]
     
-    inline def `2`: typings.staticmaps.staticmapsNumbers.`2` = 2.asInstanceOf[typings.staticmaps.staticmapsNumbers.`2`]
+    inline def `2`: typings.staticmaps.staticmapsInts.`2` = 2.asInstanceOf[typings.staticmaps.staticmapsInts.`2`]
     
-    inline def `20`: typings.staticmaps.staticmapsNumbers.`20` = 20.asInstanceOf[typings.staticmaps.staticmapsNumbers.`20`]
+    inline def `20`: typings.staticmaps.staticmapsInts.`20` = 20.asInstanceOf[typings.staticmaps.staticmapsInts.`20`]
     
-    inline def `21`: typings.staticmaps.staticmapsNumbers.`21` = 21.asInstanceOf[typings.staticmaps.staticmapsNumbers.`21`]
+    inline def `21`: typings.staticmaps.staticmapsInts.`21` = 21.asInstanceOf[typings.staticmaps.staticmapsInts.`21`]
     
-    inline def `22`: typings.staticmaps.staticmapsNumbers.`22` = 22.asInstanceOf[typings.staticmaps.staticmapsNumbers.`22`]
+    inline def `22`: typings.staticmaps.staticmapsInts.`22` = 22.asInstanceOf[typings.staticmaps.staticmapsInts.`22`]
     
-    inline def `23`: typings.staticmaps.staticmapsNumbers.`23` = 23.asInstanceOf[typings.staticmaps.staticmapsNumbers.`23`]
+    inline def `23`: typings.staticmaps.staticmapsInts.`23` = 23.asInstanceOf[typings.staticmaps.staticmapsInts.`23`]
     
-    inline def `3`: typings.staticmaps.staticmapsNumbers.`3` = 3.asInstanceOf[typings.staticmaps.staticmapsNumbers.`3`]
+    inline def `3`: typings.staticmaps.staticmapsInts.`3` = 3.asInstanceOf[typings.staticmaps.staticmapsInts.`3`]
     
-    inline def `4`: typings.staticmaps.staticmapsNumbers.`4` = 4.asInstanceOf[typings.staticmaps.staticmapsNumbers.`4`]
+    inline def `4`: typings.staticmaps.staticmapsInts.`4` = 4.asInstanceOf[typings.staticmaps.staticmapsInts.`4`]
     
-    inline def `5`: typings.staticmaps.staticmapsNumbers.`5` = 5.asInstanceOf[typings.staticmaps.staticmapsNumbers.`5`]
+    inline def `5`: typings.staticmaps.staticmapsInts.`5` = 5.asInstanceOf[typings.staticmaps.staticmapsInts.`5`]
     
-    inline def `6`: typings.staticmaps.staticmapsNumbers.`6` = 6.asInstanceOf[typings.staticmaps.staticmapsNumbers.`6`]
+    inline def `6`: typings.staticmaps.staticmapsInts.`6` = 6.asInstanceOf[typings.staticmaps.staticmapsInts.`6`]
     
-    inline def `7`: typings.staticmaps.staticmapsNumbers.`7` = 7.asInstanceOf[typings.staticmaps.staticmapsNumbers.`7`]
+    inline def `7`: typings.staticmaps.staticmapsInts.`7` = 7.asInstanceOf[typings.staticmaps.staticmapsInts.`7`]
     
-    inline def `8`: typings.staticmaps.staticmapsNumbers.`8` = 8.asInstanceOf[typings.staticmaps.staticmapsNumbers.`8`]
+    inline def `8`: typings.staticmaps.staticmapsInts.`8` = 8.asInstanceOf[typings.staticmaps.staticmapsInts.`8`]
     
-    inline def `9`: typings.staticmaps.staticmapsNumbers.`9` = 9.asInstanceOf[typings.staticmaps.staticmapsNumbers.`9`]
+    inline def `9`: typings.staticmaps.staticmapsInts.`9` = 9.asInstanceOf[typings.staticmaps.staticmapsInts.`9`]
   }
 }

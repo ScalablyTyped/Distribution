@@ -9,14 +9,14 @@ trait Brackets
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode]
+  var children: typings.cssTree.mod.List[CssNode]
   
   @JSName("type")
   var type_Brackets: typings.cssTree.cssTreeStrings.Brackets
 }
 object Brackets {
   
-  inline def apply(children: List[CssNode]): Brackets = {
+  inline def apply(children: typings.cssTree.mod.List[CssNode]): Brackets = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Brackets")
     __obj.asInstanceOf[Brackets]
@@ -24,7 +24,7 @@ object Brackets {
   
   extension [Self <: Brackets](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Brackets): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

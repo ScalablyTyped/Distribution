@@ -1,108 +1,77 @@
 package typings.pixiJs.mod
 
+import typings.pixiAccessibility.mod.IAccessibleTarget
+import typings.pixiCompressedTextures.anon.Compressed
+import typings.pixiCore.anon.Size
+import typings.pixiCore.anon.SyncFunc
+import typings.pixiCore.mod.IRendererOptionsAuto
+import typings.pixiCore.mod.IRenderingContext
+import typings.pixiCore.mod.IResourcePlugin
+import typings.pixiCore.mod.IUniformData
+import typings.pixiCore.mod.IUniformParser
+import typings.pixiGraphics.mod.IGraphicsCurvesSettings
+import typings.pixiInteraction.mod.InteractiveTarget_
+import typings.pixiJs.mod.^
+import typings.pixiSettings.mod.IAdapter
+import typings.pixiSettings.mod.ISettings
+import typings.pixiSettings.mod.isMobileResult
+import typings.pixiUtils.mod.Dict
+import typings.std.WebGL2RenderingContext
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/**
-  * Regexp for data URI.
-  * Based on: {@link https://github.com/ragingwind/data-uri-regex}
-  *
-  * @static
-  * @constant {RegExp|string} DATA_URI
-  * @memberof PIXI
-  * @example data:image/png;base64
-  */
-inline def DATA_URI: typings.std.RegExp | java.lang.String = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DATA_URI").asInstanceOf[typings.std.RegExp | java.lang.String]
-inline def DATA_URI_=(x: typings.std.RegExp | java.lang.String): scala.Unit = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("DATA_URI")(x.asInstanceOf[js.Any])
+inline def BrowserAdapter: IAdapter = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowserAdapter").asInstanceOf[IAdapter]
 
-/**
-  * Conversion factor for converting degrees to radians.
-  *
-  * @static
-  * @constant {number} DEG_TO_RAD
-  * @memberof PIXI
-  */
-inline def DEG_TO_RAD: scala.Double = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DEG_TO_RAD").asInstanceOf[scala.Double]
-inline def DEG_TO_RAD_=(x: scala.Double): scala.Unit = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("DEG_TO_RAD")(x.asInstanceOf[js.Any])
+inline def DEG_TO_RAD: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("DEG_TO_RAD").asInstanceOf[Double]
 
-/**
-  * Two Pi.
-  *
-  * @static
-  * @constant {number} PI_2
-  * @memberof PIXI
-  */
-inline def PI_2: scala.Double = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PI_2").asInstanceOf[scala.Double]
-inline def PI_2_=(x: scala.Double): scala.Unit = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("PI_2")(x.asInstanceOf[js.Any])
+inline def GRAPHICS_CURVES: IGraphicsCurvesSettings = ^.asInstanceOf[js.Dynamic].selectDynamic("GRAPHICS_CURVES").asInstanceOf[IGraphicsCurvesSettings]
 
-/**
-  * Conversion factor for converting radians to degrees.
-  *
-  * @static
-  * @constant {number} RAD_TO_DEG
-  * @memberof PIXI
-  */
-inline def RAD_TO_DEG: scala.Double = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RAD_TO_DEG").asInstanceOf[scala.Double]
-inline def RAD_TO_DEG_=(x: scala.Double): scala.Unit = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("RAD_TO_DEG")(x.asInstanceOf[js.Any])
+inline def INSTALLED: js.Array[IResourcePlugin[Any, Any]] = ^.asInstanceOf[js.Dynamic].selectDynamic("INSTALLED").asInstanceOf[js.Array[IResourcePlugin[Any, Any]]]
 
-/**
-  * String of the current PIXI version.
-  *
-  * @static
-  * @constant
-  * @memberof PIXI
-  * @name VERSION
-  * @type {string}
-  */
-inline def VERSION: java.lang.String = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
-inline def VERSION_=(x: java.lang.String): scala.Unit = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+inline def PI_2: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PI_2").asInstanceOf[Double]
 
-/**
-  * This helper function will automatically detect which renderer you should be using.
-  * WebGL is the preferred renderer as it is a lot faster. If WebGL is not supported by
-  * the browser then this function will return a canvas renderer
-  *
-  * @memberof PIXI
-  * @function autoDetectRenderer
-  * @param {object} [options] - The optional renderer parameters
-  * @param {number} [options.width=800] - the width of the renderers view
-  * @param {number} [options.height=600] - the height of the renderers view
-  * @param {HTMLCanvasElement} [options.view] - the canvas to use as a view, optional
-  * @param {boolean} [options.transparent=false] - If the render view is transparent, default false
-  * @param {boolean} [options.autoDensity=false] - Resizes renderer view in CSS pixels to allow for
-  *   resolutions other than 1
-  * @param {boolean} [options.antialias=false] - sets antialias
-  * @param {boolean} [options.preserveDrawingBuffer=false] - enables drawing buffer preservation, enable this if you
-  *  need to call toDataUrl on the webgl context
-  * @param {number} [options.backgroundColor=0x000000] - The background color of the rendered area
-  *  (shown if not transparent).
-  * @param {boolean} [options.clearBeforeRender=true] - This sets if the renderer will clear the canvas or
-  *   not before the new render pass.
-  * @param {number} [options.resolution=1] - The resolution / device pixel ratio of the renderer, retina would be 2
-  * @param {boolean} [options.forceCanvas=false] - prevents selection of WebGL renderer, even if such is present, this
-  *   option only is available when using **pixi.js-legacy** or **@pixi/canvas-renderer** modules, otherwise
-  *   it is ignored.
-  * @param {string} [options.powerPreference] - Parameter passed to webgl context, set to "high-performance"
-  *  for devices with dual graphics card **webgl only**
-  * @return {PIXI.Renderer|PIXI.CanvasRenderer} Returns WebGL renderer if available, otherwise CanvasRenderer
-  */
-inline def autoDetectRenderer(): typings.pixiJs.PIXI.Renderer = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")().asInstanceOf[typings.pixiJs.PIXI.Renderer]
-inline def autoDetectRenderer(options: typings.pixiJs.anon.ClearBeforeRender): typings.pixiJs.PIXI.Renderer = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Renderer]
+inline def RAD_TO_DEG: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("RAD_TO_DEG").asInstanceOf[Double]
 
-/**
-  * Default filter vertex shader
-  * @memberof PIXI
-  * @member {string} defaultFilterVertex
-  */
-inline def defaultFilterVertex: java.lang.String = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultFilterVertex").asInstanceOf[java.lang.String]
-inline def defaultFilterVertex_=(x: java.lang.String): scala.Unit = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultFilterVertex")(x.asInstanceOf[js.Any])
+inline def VERSION: /* "$_VERSION" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "$_VERSION" */ String]
 
-/**
-  * Default vertex shader
-  * @memberof PIXI
-  * @member {string} defaultVertex
-  */
-inline def defaultVertex: java.lang.String = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultVertex").asInstanceOf[java.lang.String]
-inline def defaultVertex_=(x: java.lang.String): scala.Unit = typings.pixiJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertex")(x.asInstanceOf[js.Any])
+inline def accessibleTarget: IAccessibleTarget = ^.asInstanceOf[js.Dynamic].selectDynamic("accessibleTarget").asInstanceOf[IAccessibleTarget]
+
+inline def autoDetectFormat(data: Any): (/* import warning: importer.ImportType#apply Failed type conversion: typeof TextFormat */ js.Any) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectFormat")(data.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: typeof TextFormat */ js.Any) | Null]
+
+inline def autoDetectRenderer(): typings.pixiCore.mod.AbstractRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")().asInstanceOf[typings.pixiCore.mod.AbstractRenderer]
+inline def autoDetectRenderer(options: IRendererOptionsAuto): typings.pixiCore.mod.AbstractRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.AbstractRenderer]
+
+inline def autoDetectResource[R /* <: typings.pixiCore.mod.Resource */, RO](source: Any): R = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any]).asInstanceOf[R]
+inline def autoDetectResource[R /* <: typings.pixiCore.mod.Resource */, RO](source: Any, options: RO): R = (^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[R]
+
+inline def checkMaxIfStatementsInShader(maxIfs: Double, gl: IRenderingContext): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMaxIfStatementsInShader")(maxIfs.asInstanceOf[js.Any], gl.asInstanceOf[js.Any])).asInstanceOf[Double]
+
+inline def createUBOElements(uniformData: js.Array[IUniformData]): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("createUBOElements")(uniformData.asInstanceOf[js.Any]).asInstanceOf[Size]
+
+inline def defaultFilterVertex: String = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultFilterVertex").asInstanceOf[String]
+
+inline def defaultVertex: String = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultVertex").asInstanceOf[String]
+
+inline def generateProgram(gl: IRenderingContext, program: typings.pixiCore.mod.Program): typings.pixiCore.mod.GLProgram = (^.asInstanceOf[js.Dynamic].applyDynamic("generateProgram")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.GLProgram]
+
+inline def generateUniformBufferSync(group: typings.pixiCore.mod.UniformGroup[Dict[Any]], uniformData: Dict[Any]): SyncFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("generateUniformBufferSync")(group.asInstanceOf[js.Any], uniformData.asInstanceOf[js.Any])).asInstanceOf[SyncFunc]
+
+inline def getTestContext(): WebGLRenderingContext | WebGL2RenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestContext")().asInstanceOf[WebGLRenderingContext | WebGL2RenderingContext]
+
+inline def getUBOData(uniforms: Dict[Any], uniformData: Dict[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUBOData")(uniforms.asInstanceOf[js.Any], uniformData.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+
+inline def interactiveTarget: InteractiveTarget_ = ^.asInstanceOf[js.Dynamic].selectDynamic("interactiveTarget").asInstanceOf[InteractiveTarget_]
+
+inline def isMobile: isMobileResult = ^.asInstanceOf[js.Dynamic].selectDynamic("isMobile").asInstanceOf[isMobileResult]
+
+inline def parseDDS(arrayBuffer: js.typedarray.ArrayBuffer): js.Array[typings.pixiCompressedTextures.mod.CompressedTextureResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDDS")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.pixiCompressedTextures.mod.CompressedTextureResource]]
+
+inline def parseKTX(url: String, arrayBuffer: js.typedarray.ArrayBuffer): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKTX")(url.asInstanceOf[js.Any], arrayBuffer.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+inline def parseKTX(url: String, arrayBuffer: js.typedarray.ArrayBuffer, loadKeyValueData: Boolean): Compressed = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKTX")(url.asInstanceOf[js.Any], arrayBuffer.asInstanceOf[js.Any], loadKeyValueData.asInstanceOf[js.Any])).asInstanceOf[Compressed]
+
+inline def settings: ISettings = ^.asInstanceOf[js.Dynamic].selectDynamic("settings").asInstanceOf[ISettings]
+
+inline def uniformParsers: js.Array[IUniformParser] = ^.asInstanceOf[js.Dynamic].selectDynamic("uniformParsers").asInstanceOf[js.Array[IUniformParser]]

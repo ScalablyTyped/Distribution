@@ -1,5 +1,6 @@
 package typings.musickitJs
 
+import typings.musickitJs.MusicKit.MusicCatalogChartRequestable
 import typings.musickitJs.MusicKit._ContentRating
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +25,9 @@ object musickitJsStrings {
   inline def activities: activities = "activities".asInstanceOf[activities]
   
   @js.native
-  sealed trait albums extends StObject
+  sealed trait albums
+    extends StObject
+       with MusicCatalogChartRequestable
   inline def albums: albums = "albums".asInstanceOf[albums]
   
   @js.native
@@ -116,7 +119,9 @@ object musickitJsStrings {
   inline def `music-recommendations`: `music-recommendations` = "music-recommendations".asInstanceOf[`music-recommendations`]
   
   @js.native
-  sealed trait `music-videos` extends StObject
+  sealed trait `music-videos`
+    extends StObject
+       with MusicCatalogChartRequestable
   inline def `music-videos`: `music-videos` = "music-videos".asInstanceOf[`music-videos`]
   
   @js.native
@@ -164,7 +169,9 @@ object musickitJsStrings {
   inline def playbackVolumeDidChange: playbackVolumeDidChange = "playbackVolumeDidChange".asInstanceOf[playbackVolumeDidChange]
   
   @js.native
-  sealed trait playlists extends StObject
+  sealed trait playlists
+    extends StObject
+       with MusicCatalogChartRequestable
   inline def playlists: playlists = "playlists".asInstanceOf[playlists]
   
   @js.native
@@ -200,7 +207,9 @@ object musickitJsStrings {
   inline def replay: replay = "replay".asInstanceOf[replay]
   
   @js.native
-  sealed trait songs extends StObject
+  sealed trait songs
+    extends StObject
+       with MusicCatalogChartRequestable
   inline def songs: songs = "songs".asInstanceOf[songs]
   
   @js.native

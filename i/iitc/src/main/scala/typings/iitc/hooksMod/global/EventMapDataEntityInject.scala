@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EventMapDataEntityInject extends StObject {
   
-  def callback(ents: js.Any): Unit
+  def callback(ents: Any): Unit
 }
 object EventMapDataEntityInject {
   
-  inline def apply(callback: js.Any => Unit): EventMapDataEntityInject = {
+  inline def apply(callback: Any => Unit): EventMapDataEntityInject = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback))
     __obj.asInstanceOf[EventMapDataEntityInject]
   }
   
   extension [Self <: EventMapDataEntityInject](x: Self) {
     
-    inline def setCallback(value: js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
   }
 }

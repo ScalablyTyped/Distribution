@@ -1,9 +1,9 @@
 package typings.pinyin
 
 import typings.pinyin.mod.Options
-import typings.pinyin.pinyinNumbers.`-1`
-import typings.pinyin.pinyinNumbers.`0`
-import typings.pinyin.pinyinNumbers.`1`
+import typings.pinyin.pinyinInts.`-1`
+import typings.pinyin.pinyinInts.`0`
+import typings.pinyin.pinyinInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

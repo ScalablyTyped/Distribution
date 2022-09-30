@@ -602,8 +602,8 @@ object mod {
   inline def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def writeSync(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def write_TBuffer_UnionBufferUint8Array[TBuffer /* <: Buffer | js.typedarray.Uint8Array */](fd: Double, buffer: TBuffer): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
-  inline def write_TBuffer_UnionBufferUint8Array[TBuffer /* <: Buffer | js.typedarray.Uint8Array */](fd: Double, buffer: TBuffer, offset: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  inline def write_TBuffer[TBuffer /* <: Buffer | js.typedarray.Uint8Array */](fd: Double, buffer: TBuffer): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  inline def write_TBuffer[TBuffer /* <: Buffer | js.typedarray.Uint8Array */](fd: Double, buffer: TBuffer, offset: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
   
   trait AppendFileOptions extends StObject {
     

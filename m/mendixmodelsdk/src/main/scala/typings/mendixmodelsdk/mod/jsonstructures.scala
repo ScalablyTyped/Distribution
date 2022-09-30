@@ -18,7 +18,7 @@ object jsonstructures {
     */
   @JSImport("mendixmodelsdk", "jsonstructures.JsonElement")
   @js.native
-  class JsonElement protected ()
+  open class JsonElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.jsonstructures.JsonElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -86,7 +86,7 @@ object jsonstructures {
     */
   @JSImport("mendixmodelsdk", "jsonstructures.JsonStructure")
   @js.native
-  class JsonStructure protected ()
+  open class JsonStructure protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.jsonstructures.JsonStructure {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

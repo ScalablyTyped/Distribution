@@ -48,6 +48,7 @@ object Intercom {
     - typings.intercomWeb.intercomWebStrings.getVisitorId
     - typings.intercomWeb.intercomWebStrings.startTour
     - typings.intercomWeb.intercomWebStrings.showArticle
+    - typings.intercomWeb.intercomWebStrings.startSurvey
   */
   trait IntercomCommand extends StObject
   
@@ -78,6 +79,8 @@ object Intercom {
     def showNewMessage(prepopulateMessage: String): Unit = js.native
     
     def shutdown(): Unit = js.native
+    
+    def startSurvey(surveyId: Double): Unit = js.native
     
     def startTour(tourId: Double): Unit = js.native
     

@@ -32,9 +32,9 @@ object dataMod {
   val ^ : js.Any = js.native
   
   inline def deserialize[T /* <: js.Object | Double | String */](): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")().asInstanceOf[js.UndefOr[T | Null]]
-  inline def deserialize[T /* <: js.Object | Double | String */](data: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def deserialize[T /* <: js.Object | Double | String */](data: String): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T | Null]]
   
-  inline def deserialize_T_UnionObjectDoubleString_Union[T /* <: js.Object | Double | String */](data: String): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T | Null]]
+  inline def deserialize_T_T[T /* <: js.Object | Double | String */](data: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def getBounds(axisLength: Double, highLow: High, scaleMinSpace: Double): Bounds = (^.asInstanceOf[js.Dynamic].applyDynamic("getBounds")(axisLength.asInstanceOf[js.Any], highLow.asInstanceOf[js.Any], scaleMinSpace.asInstanceOf[js.Any])).asInstanceOf[Bounds]
   inline def getBounds(axisLength: Double, highLow: High, scaleMinSpace: Double, onlyInteger: Boolean): Bounds = (^.asInstanceOf[js.Dynamic].applyDynamic("getBounds")(axisLength.asInstanceOf[js.Any], highLow.asInstanceOf[js.Any], scaleMinSpace.asInstanceOf[js.Any], onlyInteger.asInstanceOf[js.Any])).asInstanceOf[Bounds]

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.StringTemplateParameterType")
 @js.native
-class StringTemplateParameterType protected ()
+open class StringTemplateParameterType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.StringTemplateParameterType {
   def this(
     model: AbstractModel,

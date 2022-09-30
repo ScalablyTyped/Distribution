@@ -1,19 +1,19 @@
 
 # Scala.js typings for npm-keyword
 
-Typings are for version 6.1.0
+Typings are for version 7.0.0
 
 ## Library description:
-Get a list of npm packages with a certain keyword
+Get a list of npm packages with keywords
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | npm-keyword |
 | Keywords           | npm, keyword, package, packages, pkg, registry, find, search |
-| # releases         | 3 |
-| # dependents       | 24 |
-| # downloads        | 4045124 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 573668.3333333334 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/npm-keyword#readme)

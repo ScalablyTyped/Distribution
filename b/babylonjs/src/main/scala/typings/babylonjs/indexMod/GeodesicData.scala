@@ -24,7 +24,7 @@ object GeodesicData {
   
   /**Builds the data for a Geodesic Polyhedron from a primary triangle
     * @param primTri the primary triangle
-    * @hidden
+    * @internal
     */
   inline def BuildGeodesicData(primTri: typings.babylonjs.geodesicMeshMod.PrimaryIsoTriangle): typings.babylonjs.geodesicMeshMod.GeodesicData = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildGeodesicData")(primTri.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.geodesicMeshMod.GeodesicData]
 }

@@ -1,16 +1,16 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`10`
-import typings.activexExcel.activexExcelNumbers.`11`
-import typings.activexExcel.activexExcelNumbers.`12`
+import typings.activexExcel.activexExcelInts.`10`
+import typings.activexExcel.activexExcelInts.`11`
+import typings.activexExcel.activexExcelInts.`12`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`10`
-  - typings.activexExcel.activexExcelNumbers.`12`
-  - typings.activexExcel.activexExcelNumbers.`11`
+  - typings.activexExcel.activexExcelInts.`10`
+  - typings.activexExcel.activexExcelInts.`12`
+  - typings.activexExcel.activexExcelInts.`11`
 */
 trait XlRangeValueDataType extends StObject
 object XlRangeValueDataType {

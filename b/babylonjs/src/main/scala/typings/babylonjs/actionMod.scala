@@ -35,7 +35,7 @@ object actionMod {
     
     /**
       * Internal only - manager for action
-      * @hidden
+      * @internal
       */
     @JSName("_actionManager")
     var _actionManager_Action: ActionManager = js.native
@@ -46,22 +46,18 @@ object actionMod {
     
     /**
       * Internal only - Returns if the current condition allows to run the action
-      * @hidden
+      * @internal
       */
     def _evaluateConditionForCurrentFrame(): Boolean = js.native
     
     /**
-      * Internal only
-      * @param target
-      * @param propertyPath
-      * @hidden
+      * @internal
       */
     def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
     
     /**
       * Internal only
-      * @param propertyPath
-      * @hidden
+      * @internal
       */
     def _getProperty(propertyPath: String): String = js.native
     
@@ -69,9 +65,7 @@ object actionMod {
     
     /**
       * Internal only called by serialize
-      * @param serializedAction
-      * @param parent
-      * @hidden
+      * @internal
       */
     /* protected */ def _serialize(serializedAction: Any): Any = js.native
     /* protected */ def _serialize(serializedAction: Any, parent: Any): Any = js.native
@@ -119,15 +113,13 @@ object actionMod {
     inline def _GetTargetProperty(target: Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     /**
       * Internal only
-      * @param target
-      * @hidden
+      * @internal
       */
     inline def _GetTargetProperty(target: Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
     
     /**
       * Internal only
-      * @param value
-      * @hidden
+      * @internal
       */
     inline def _SerializeValueAsString(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
@@ -137,20 +129,20 @@ object actionMod {
     
     /**
       * Internal only - manager for action
-      * @hidden
+      * @internal
       */
     var _actionManager: Nullable[AbstractActionManager] = js.native
     
     /**
       * Internal only - executes current action event
-      * @hidden
+      * @internal
       */
     def _executeCurrent(): Unit = js.native
     def _executeCurrent(evt: ActionEvent): Unit = js.native
     
     /**
       * Internal only
-      * @hidden
+      * @internal
       */
     def _prepare(): Unit = js.native
     

@@ -2,7 +2,6 @@ package typings.wdioRepl
 
 import typings.node.replMod.REPLEval
 import typings.node.vmMod.Context
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("@wdio/repl", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with WDIORepl {
     def this(config: ReplConfig) = this()
@@ -29,7 +28,7 @@ object mod {
     inline def introMessage_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("introMessage")(x.asInstanceOf[js.Any])
   }
   
-  type ReplCallback = js.Function2[/* err */ Error | Null, /* result */ js.Any, Unit]
+  type ReplCallback = js.Function2[/* err */ js.Error | Null, /* result */ Any, Unit]
   
   trait ReplConfig extends StObject {
     
@@ -39,7 +38,7 @@ object mod {
       evalCmd: String,
       context: Context,
       file: String,
-      cb: js.Function2[/* err */ Error | Null, /* result */ js.Any, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* result */ Any, Unit]
     ): Unit
     @JSName("eval")
     var eval_Original: REPLEval
@@ -74,20 +73,20 @@ object mod {
   @js.native
   trait WDIORepl extends StObject {
     
-    /* private */ var _config: js.Any = js.native
+    /* private */ var _config: Any = js.native
     
-    /* private */ var _handleResult: js.Any = js.native
+    /* private */ var _handleResult: Any = js.native
     
-    /* private */ var _isCommandRunning: js.Any = js.native
+    /* private */ var _isCommandRunning: Any = js.native
     
-    /* private */ var _replServer: js.Any = js.native
+    /* private */ var _replServer: Any = js.native
     
-    /* private */ var _runCmd: js.Any = js.native
+    /* private */ var _runCmd: Any = js.native
     
-    def eval(cmd: String, context: Context, filename: String, callback: ReplCallback): Unit | js.Promise[js.Any] = js.native
-    def eval(cmd: String, context: Context, filename: Unit, callback: ReplCallback): Unit | js.Promise[js.Any] = js.native
+    def eval(cmd: String, context: Context, filename: String, callback: ReplCallback): Unit | js.Promise[Any] = js.native
+    def eval(cmd: String, context: Context, filename: Unit, callback: ReplCallback): Unit | js.Promise[Any] = js.native
     
-    def start(): js.Promise[js.Any] = js.native
-    def start(context: Context): js.Promise[js.Any] = js.native
+    def start(): js.Promise[Any] = js.native
+    def start(context: Context): js.Promise[Any] = js.native
   }
 }

@@ -12,7 +12,6 @@ import typings.sentryTypes.measurementMod.NoneUnit
 import typings.sentryTypes.sessionMod.RequestSessionStatus
 import typings.sentryTypes.sessionMod.SessionStatus
 import typings.sentryTypes.severityMod.SeverityLevel
-import typings.sentryTypes.transactionMod.TransactionSamplingMethod
 import typings.sentryTypes.transactionMod.TransactionSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -64,22 +63,10 @@ object sentryTypesStrings {
   inline def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
-  sealed trait client_rate
-    extends StObject
-       with TransactionSamplingMethod
-  inline def client_rate: client_rate = "client_rate".asInstanceOf[client_rate]
-  
-  @js.native
   sealed trait client_report
     extends StObject
        with EnvelopeItemType
   inline def client_report: client_report = "client_report".asInstanceOf[client_report]
-  
-  @js.native
-  sealed trait client_sampler
-    extends StObject
-       with TransactionSamplingMethod
-  inline def client_sampler: client_sampler = "client_sampler".asInstanceOf[client_sampler]
   
   @js.native
   sealed trait component
@@ -162,12 +149,6 @@ object sentryTypesStrings {
   inline def exited: exited = "exited".asInstanceOf[exited]
   
   @js.native
-  sealed trait explicitly_set
-    extends StObject
-       with TransactionSamplingMethod
-  inline def explicitly_set: explicitly_set = "explicitly_set".asInstanceOf[explicitly_set]
-  
-  @js.native
   sealed trait fatal
     extends StObject
        with SeverityLevel
@@ -202,12 +183,6 @@ object sentryTypesStrings {
     extends StObject
        with SeverityLevel
   inline def info: info = "info".asInstanceOf[info]
-  
-  @js.native
-  sealed trait inheritance
-    extends StObject
-       with TransactionSamplingMethod
-  inline def inheritance: inheritance = "inheritance".asInstanceOf[inheritance]
   
   @js.native
   sealed trait internal

@@ -14,7 +14,7 @@ object selectorsMod {
   inline def getFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
   inline def getFormatTypeForBareElement(
-    bareElementTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+    bareElementTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
   ): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatTypeForBareElement")(bareElementTagName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
   inline def getFormatTypeForClassName(elementClassName: String): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatTypeForClassName")(elementClassName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]

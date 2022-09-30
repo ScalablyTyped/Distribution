@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Icon")
 @js.native
-class Icon_[T /* <: BaseIconOptions */] protected () extends Layer {
+open class Icon_[T /* <: BaseIconOptions */] protected () extends Layer {
   def this(options: T) = this()
   
   def createIcon(): HTMLElement = js.native
@@ -22,7 +22,7 @@ object Icon_ {
   
   @JSImport("leaflet", "Icon.Default")
   @js.native
-  class Default () extends Icon_[DefaultIconOptions] {
+  open class Default () extends Icon_[DefaultIconOptions] {
     def this(options: DefaultIconOptions) = this()
   }
   object Default {

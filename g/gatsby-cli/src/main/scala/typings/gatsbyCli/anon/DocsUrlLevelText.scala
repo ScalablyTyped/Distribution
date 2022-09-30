@@ -1,10 +1,13 @@
 package typings.gatsbyCli.anon
 
+import typings.gatsbyCli.errorMapMod.ErrorCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DocsUrlLevelText extends StObject {
+  
+  var category: ErrorCategory
   
   var docsUrl: String
   
@@ -14,12 +17,19 @@ trait DocsUrlLevelText extends StObject {
 }
 object DocsUrlLevelText {
   
-  inline def apply(docsUrl: String, level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: () => String): DocsUrlLevelText = {
-    val __obj = js.Dynamic.literal(docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
+  inline def apply(
+    category: ErrorCategory,
+    docsUrl: String,
+    level: typings.gatsbyCli.structuredErrorsTypesMod.Level,
+    text: () => String
+  ): DocsUrlLevelText = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
     __obj.asInstanceOf[DocsUrlLevelText]
   }
   
   extension [Self <: DocsUrlLevelText](x: Self) {
+    
+    inline def setCategory(value: ErrorCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setDocsUrl(value: String): Self = StObject.set(x, "docsUrl", value.asInstanceOf[js.Any])
     

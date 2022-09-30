@@ -1,8 +1,8 @@
 package typings.ractive.mod
 
-import typings.ractive.ractiveNumbers.`-1`
-import typings.ractive.ractiveNumbers.`0`
-import typings.ractive.ractiveNumbers.`1`
+import typings.ractive.ractiveInts.`-1`
+import typings.ractive.ractiveInts.`0`
+import typings.ractive.ractiveInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

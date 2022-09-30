@@ -10,15 +10,15 @@ object managerMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/core/manager", "HomeworksManager")
   @js.native
-  class HomeworksManager protected () extends StObject {
+  open class HomeworksManager protected () extends StObject {
     def this(renderer: Renderer2, component: String) = this()
     def this(renderer: Renderer2, component: String, alias: String) = this()
     
     /* protected */ def getSizeClassName(size: String): String = js.native
     
-    /* private */ var m_class: js.Any = js.native
+    /* private */ var m_class: Any = js.native
     
-    /* private */ var m_component: js.Any = js.native
+    /* private */ var m_component: Any = js.native
     
     /* protected */ var renderer: Renderer2 = js.native
     

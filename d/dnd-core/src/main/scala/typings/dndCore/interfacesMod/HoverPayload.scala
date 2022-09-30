@@ -25,6 +25,6 @@ object HoverPayload {
     
     inline def setTargetIds(value: js.Array[Identifier]): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
-    inline def setTargetIdsVarargs(value: Identifier*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: Identifier*): Self = StObject.set(x, "targetIds", js.Array(value*))
   }
 }

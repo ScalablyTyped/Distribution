@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "filesize-parser"
-version := "1.5-dt-20211202Z-7c0436"
+version := "1.5-dt-20211202Z-961da1"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

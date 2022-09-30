@@ -2,26 +2,21 @@ package typings.braftEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Msg extends StObject {
   
-  var msg: String = js.native
+  var msg: String
 }
 object Msg {
   
-  @scala.inline
-  def apply(msg: String): Msg = {
+  inline def apply(msg: String): Msg = {
     val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Msg]
   }
   
-  @scala.inline
-  implicit class MsgMutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
+  extension [Self <: Msg](x: Self) {
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }
 }

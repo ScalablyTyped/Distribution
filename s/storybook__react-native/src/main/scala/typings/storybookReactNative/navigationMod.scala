@@ -10,11 +10,11 @@ object navigationMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/navigation", JSImport.Default)
   @js.native
-  class default () extends Navigation
+  open class default () extends Navigation
   
   @js.native
   trait Navigation
-    extends PureComponent[Props, js.Object, js.Any] {
+    extends PureComponent[Props, js.Object, Any] {
     
     def handleSwipeLeft(): Unit = js.native
     

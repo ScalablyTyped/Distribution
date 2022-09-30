@@ -3,6 +3,7 @@ package typings.fastify
 import typings.fastify.anon.Add
 import typings.fastify.anon.BuildValidator
 import typings.fastify.anon.Error
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -162,7 +163,7 @@ object schemaMod {
   @js.native
   trait FastifyValidationResult extends StObject {
     
-    def apply(data: Any): Boolean | js.Thenable[Any] | Error = js.native
+    def apply(data: Any): Boolean | PromiseLike[Any] | Error = js.native
     
     var errors: js.UndefOr[js.Array[FastifySchemaValidationError] | Null] = js.native
   }

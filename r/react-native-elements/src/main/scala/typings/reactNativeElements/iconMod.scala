@@ -96,9 +96,6 @@ object iconMod extends Shortcut {
     
     var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    @JSName("disabled")
-    var disabled_IconProps: js.UndefOr[Boolean] = js.undefined
-    
     var iconProps: js.UndefOr[typings.reactNativeVectorIcons.iconMod.IconProps] = js.undefined
     
     var raised: js.UndefOr[Boolean] = js.undefined
@@ -139,15 +136,11 @@ object iconMod extends Shortcut {
       
       inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
       inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
       
       inline def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
       
       inline def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setIconProps(value: typings.reactNativeVectorIcons.iconMod.IconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
       

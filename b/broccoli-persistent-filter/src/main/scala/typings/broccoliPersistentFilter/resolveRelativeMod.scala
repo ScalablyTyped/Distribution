@@ -10,5 +10,5 @@ object resolveRelativeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(relativePath: String, otherPaths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(relativePath.asInstanceOf[js.Any]).`++`(otherPaths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def default(relativePath: String, otherPaths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(relativePath.asInstanceOf[js.Any]).`++`(otherPaths.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

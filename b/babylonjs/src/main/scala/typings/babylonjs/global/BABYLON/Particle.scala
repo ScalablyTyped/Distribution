@@ -19,118 +19,117 @@ open class Particle protected ()
     */
   particleSystem: typings.babylonjs.BABYLON.ParticleSystem) = this()
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _attachedSubEmitters: Nullable[js.Array[typings.babylonjs.BABYLON.SubEmitter]] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentAngularSpeed1: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentAngularSpeed2: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentAngularSpeedGradient: Nullable[typings.babylonjs.BABYLON.FactorGradient] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentColor1: typings.babylonjs.BABYLON.Color4 = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentColor2: typings.babylonjs.BABYLON.Color4 = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentColorGradient: Nullable[typings.babylonjs.BABYLON.ColorGradient] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentDrag1: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentDrag2: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentDragGradient: Nullable[typings.babylonjs.BABYLON.FactorGradient] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentLimitVelocity1: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentLimitVelocity2: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentLimitVelocityGradient: Nullable[typings.babylonjs.BABYLON.FactorGradient] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentSize1: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentSize2: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentSizeGradient: Nullable[typings.babylonjs.BABYLON.FactorGradient] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentVelocity1: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentVelocity2: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _currentVelocityGradient: Nullable[typings.babylonjs.BABYLON.FactorGradient] = js.native
   
   /**
-    * @param subEmitter
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def _inheritParticleInfoToSubEmitter(subEmitter: typings.babylonjs.BABYLON.SubEmitter): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   override def _inheritParticleInfoToSubEmitters(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _initialDirection: Nullable[typings.babylonjs.BABYLON.Vector3] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _initialEndSpriteCellID: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _initialSpriteCellLoop: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _initialStartSpriteCellID: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _randomNoiseCoordinates1: typings.babylonjs.BABYLON.Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _randomNoiseCoordinates2: typings.babylonjs.BABYLON.Vector3 = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   override def _reset(): Unit = js.native
   

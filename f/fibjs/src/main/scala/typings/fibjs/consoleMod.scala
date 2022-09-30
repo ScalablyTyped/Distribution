@@ -60,7 +60,7 @@ object consoleMod {
   inline def add(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def alert(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def alert(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def alert(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def assert(value: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def assert(value: Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -71,15 +71,15 @@ object consoleMod {
   inline def clickMouse(button: String, dbclick: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickMouse")(button.asInstanceOf[js.Any], dbclick.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def crit(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crit")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def crit(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crit")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def crit(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crit")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def debug(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def debug(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def debug(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def dir(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def error(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def error(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def error(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("console", "height")
   @js.native
@@ -88,7 +88,7 @@ object consoleMod {
   inline def hideCursor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideCursor")().asInstanceOf[Unit]
   
   inline def info(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def info(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def info(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def keyDown(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def keyDown(key: String, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -103,7 +103,7 @@ object consoleMod {
   inline def keyUp(key: String, modifier: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def log(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def log(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def log(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("console", "loglevel")
   @js.native
@@ -118,10 +118,10 @@ object consoleMod {
   inline def moveTo(row: Double, column: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTo")(row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def notice(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notice")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def notice(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notice")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def notice(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notice")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def print(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def print(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def print(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def readLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readLine")().asInstanceOf[String]
   inline def readLine(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readLine")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -145,7 +145,7 @@ object consoleMod {
   inline def typeString(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("typeString")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def warn(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
-  inline def warn(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def warn(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("console", "width")
   @js.native

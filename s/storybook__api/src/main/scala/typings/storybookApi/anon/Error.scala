@@ -3,7 +3,7 @@ package typings.storybookApi.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Parameters
 import typings.storybookApi.storiesMod.StoriesRaw
-import typings.storybookApi.storybookApiNumbers.`2`
+import typings.storybookApi.storybookApiInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

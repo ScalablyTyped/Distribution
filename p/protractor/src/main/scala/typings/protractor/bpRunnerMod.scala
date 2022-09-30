@@ -11,14 +11,14 @@ object bpRunnerMod {
   
   @JSImport("protractor/built/bpRunner", "BlockingProxyRunner")
   @js.native
-  class BlockingProxyRunner protected () extends StObject {
+  open class BlockingProxyRunner protected () extends StObject {
     def this(config: Config) = this()
     
     var bpProcess: ChildProcess = js.native
     
     def checkSupportedConfig(): Unit = js.native
     
-    /* private */ var config: js.Any = js.native
+    /* private */ var config: Any = js.native
     
     var port: Double = js.native
     

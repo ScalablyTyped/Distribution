@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TypedTemplateArgument")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TypedTemplateArgument")
 @js.native
 abstract class TypedTemplateArgument protected () extends Element[IModel] {
   def this(
@@ -31,18 +31,18 @@ abstract class TypedTemplateArgument protected () extends Element[IModel] {
 }
 object TypedTemplateArgument {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TypedTemplateArgument")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TypedTemplateArgument")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TypedTemplateArgument.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TypedTemplateArgument.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.TypedTemplateArgument.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.TypedTemplateArgument.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

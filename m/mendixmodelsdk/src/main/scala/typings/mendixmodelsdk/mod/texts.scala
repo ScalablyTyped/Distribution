@@ -57,7 +57,7 @@ object texts {
     */
   @JSImport("mendixmodelsdk", "texts.SystemText")
   @js.native
-  class SystemText protected ()
+  open class SystemText protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.texts.SystemText {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -108,7 +108,7 @@ object texts {
     */
   @JSImport("mendixmodelsdk", "texts.SystemTextCollection")
   @js.native
-  class SystemTextCollection protected ()
+  open class SystemTextCollection protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.texts.SystemTextCollection {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -149,7 +149,7 @@ object texts {
     */
   @JSImport("mendixmodelsdk", "texts.Text")
   @js.native
-  class Text protected ()
+  open class Text protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.texts.Text {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -516,6 +516,9 @@ object texts {
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'caption' property
       * of the parent reports.ReportChartSeries element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 9.0.0
       */
     /* static member */
     inline def createInReportChartSeriesUnderCaption(container: ReportChartSeries): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartSeriesUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
@@ -524,6 +527,9 @@ object texts {
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'xAxisCaption' property
       * of the parent reports.ReportChart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 9.0.0
       */
     /* static member */
     inline def createInReportChartUnderXAxisCaption(container: ReportChart): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderXAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
@@ -532,6 +538,9 @@ object texts {
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'yAxisCaption' property
       * of the parent reports.ReportChart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 9.0.0
       */
     /* static member */
     inline def createInReportChartUnderYAxisCaption(container: ReportChart): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderYAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
@@ -677,7 +686,7 @@ object texts {
   
   @JSImport("mendixmodelsdk", "texts.Translation")
   @js.native
-  class Translation protected ()
+  open class Translation protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.texts.Translation {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

@@ -3,52 +3,36 @@ package typings.fpTs.mod
 import typings.fpTs.anon.EURI
 import typings.fpTs.anon.URI
 import typings.fpTs.anon.URIF
-import typings.fpTs.pipeableMod.PipeableAlt
 import typings.fpTs.pipeableMod.PipeableAlt3C
 import typings.fpTs.pipeableMod.PipeableAlt4
-import typings.fpTs.pipeableMod.PipeableApply
 import typings.fpTs.pipeableMod.PipeableApply3C
 import typings.fpTs.pipeableMod.PipeableApply4
-import typings.fpTs.pipeableMod.PipeableBifunctor
 import typings.fpTs.pipeableMod.PipeableBifunctor3C
 import typings.fpTs.pipeableMod.PipeableBifunctor4
-import typings.fpTs.pipeableMod.PipeableChain
 import typings.fpTs.pipeableMod.PipeableChain3C
 import typings.fpTs.pipeableMod.PipeableChain4
-import typings.fpTs.pipeableMod.PipeableCompactable
 import typings.fpTs.pipeableMod.PipeableCompactable3C
 import typings.fpTs.pipeableMod.PipeableCompactable4
-import typings.fpTs.pipeableMod.PipeableContravariant
 import typings.fpTs.pipeableMod.PipeableContravariant3C
 import typings.fpTs.pipeableMod.PipeableContravariant4
-import typings.fpTs.pipeableMod.PipeableExtend
 import typings.fpTs.pipeableMod.PipeableExtend3C
 import typings.fpTs.pipeableMod.PipeableExtend4
-import typings.fpTs.pipeableMod.PipeableFilterable
 import typings.fpTs.pipeableMod.PipeableFilterable3C
 import typings.fpTs.pipeableMod.PipeableFilterable4
-import typings.fpTs.pipeableMod.PipeableFilterableWithIndex
 import typings.fpTs.pipeableMod.PipeableFilterableWithIndex3C
 import typings.fpTs.pipeableMod.PipeableFilterableWithIndex4
-import typings.fpTs.pipeableMod.PipeableFoldable
 import typings.fpTs.pipeableMod.PipeableFoldable3C
 import typings.fpTs.pipeableMod.PipeableFoldable4
-import typings.fpTs.pipeableMod.PipeableFoldableWithIndex
 import typings.fpTs.pipeableMod.PipeableFoldableWithIndex3C
 import typings.fpTs.pipeableMod.PipeableFoldableWithIndex4
-import typings.fpTs.pipeableMod.PipeableFunctor
 import typings.fpTs.pipeableMod.PipeableFunctor3C
 import typings.fpTs.pipeableMod.PipeableFunctor4
-import typings.fpTs.pipeableMod.PipeableFunctorWithIndex
 import typings.fpTs.pipeableMod.PipeableFunctorWithIndex3C
 import typings.fpTs.pipeableMod.PipeableFunctorWithIndex4
-import typings.fpTs.pipeableMod.PipeableMonadThrow
 import typings.fpTs.pipeableMod.PipeableMonadThrow3C
 import typings.fpTs.pipeableMod.PipeableMonadThrow4
-import typings.fpTs.pipeableMod.PipeableProfunctor
 import typings.fpTs.pipeableMod.PipeableProfunctor3C
 import typings.fpTs.pipeableMod.PipeableProfunctor4
-import typings.fpTs.pipeableMod.PipeableSemigroupoid
 import typings.fpTs.pipeableMod.PipeableSemigroupoid3C
 import typings.fpTs.pipeableMod.PipeableSemigroupoid4
 import org.scalablytyped.runtime.StObject
@@ -303,9 +287,7 @@ object pipeable {
     st: js.Function1[/* s */ S, T]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(a.asInstanceOf[js.Any], ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ef.asInstanceOf[js.Any], fg.asInstanceOf[js.Any], gh.asInstanceOf[js.Any], hi.asInstanceOf[js.Any], ij.asInstanceOf[js.Any], jk.asInstanceOf[js.Any], kl.asInstanceOf[js.Any], lm.asInstanceOf[js.Any], mn.asInstanceOf[js.Any], no.asInstanceOf[js.Any], op.asInstanceOf[js.Any], pq.asInstanceOf[js.Any], qr.asInstanceOf[js.Any], rs.asInstanceOf[js.Any], st.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def pipeable[F, I](I: URIF[F] & I): (js.Object | PipeableFunctor[F] | PipeableApply[F] | PipeableChain[F]) & (js.Object | PipeableContravariant[F]) & (js.Object | (PipeableFunctorWithIndex[F, Any])) & (js.Object | PipeableBifunctor[F]) & (js.Object | PipeableExtend[F]) & (js.Object | PipeableFoldable[F] | (PipeableFoldableWithIndex[F, Any])) & (js.Object | PipeableAlt[F]) & (js.Object | PipeableCompactable[F] | PipeableFilterable[F] | (PipeableFilterableWithIndex[F, Any])) & (js.Object | PipeableProfunctor[F]) & (js.Object | PipeableSemigroupoid[F]) & (js.Object | PipeableMonadThrow[F]) = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeable")(I.asInstanceOf[js.Any]).asInstanceOf[(js.Object | PipeableFunctor[F] | PipeableApply[F] | PipeableChain[F]) & (js.Object | PipeableContravariant[F]) & (js.Object | (PipeableFunctorWithIndex[F, Any])) & (js.Object | PipeableBifunctor[F]) & (js.Object | PipeableExtend[F]) & (js.Object | PipeableFoldable[F] | (PipeableFoldableWithIndex[F, Any])) & (js.Object | PipeableAlt[F]) & (js.Object | PipeableCompactable[F] | PipeableFilterable[F] | (PipeableFilterableWithIndex[F, Any])) & (js.Object | PipeableProfunctor[F]) & (js.Object | PipeableSemigroupoid[F]) & (js.Object | PipeableMonadThrow[F])]
+  inline def pipeable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, I](I: URI[F] & I & URIF[F]): (js.Object | PipeableFunctor4[F] | PipeableApply4[F] | PipeableChain4[F]) & (js.Object | PipeableContravariant4[F]) & (js.Object | (PipeableFunctorWithIndex4[F, Any])) & (js.Object | PipeableBifunctor4[F]) & (js.Object | PipeableExtend4[F]) & (js.Object | PipeableFoldable4[F] | (PipeableFoldableWithIndex4[F, Any])) & (js.Object | PipeableAlt4[F]) & (js.Object | PipeableCompactable4[F] | PipeableFilterable4[F] | (PipeableFilterableWithIndex4[F, Any])) & (js.Object | PipeableProfunctor4[F]) & (js.Object | PipeableSemigroupoid4[F]) & (js.Object | PipeableMonadThrow4[F]) = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeable")(I.asInstanceOf[js.Any]).asInstanceOf[(js.Object | PipeableFunctor4[F] | PipeableApply4[F] | PipeableChain4[F]) & (js.Object | PipeableContravariant4[F]) & (js.Object | (PipeableFunctorWithIndex4[F, Any])) & (js.Object | PipeableBifunctor4[F]) & (js.Object | PipeableExtend4[F]) & (js.Object | PipeableFoldable4[F] | (PipeableFoldableWithIndex4[F, Any])) & (js.Object | PipeableAlt4[F]) & (js.Object | PipeableCompactable4[F] | PipeableFilterable4[F] | (PipeableFilterableWithIndex4[F, Any])) & (js.Object | PipeableProfunctor4[F]) & (js.Object | PipeableSemigroupoid4[F]) & (js.Object | PipeableMonadThrow4[F])]
   
-  inline def pipeable_F_AnyI[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, I](I: URI[F] & I): (js.Object | PipeableFunctor4[F] | PipeableApply4[F] | PipeableChain4[F]) & (js.Object | PipeableContravariant4[F]) & (js.Object | (PipeableFunctorWithIndex4[F, Any])) & (js.Object | PipeableBifunctor4[F]) & (js.Object | PipeableExtend4[F]) & (js.Object | PipeableFoldable4[F] | (PipeableFoldableWithIndex4[F, Any])) & (js.Object | PipeableAlt4[F]) & (js.Object | PipeableCompactable4[F] | PipeableFilterable4[F] | (PipeableFilterableWithIndex4[F, Any])) & (js.Object | PipeableProfunctor4[F]) & (js.Object | PipeableSemigroupoid4[F]) & (js.Object | PipeableMonadThrow4[F]) = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeable")(I.asInstanceOf[js.Any]).asInstanceOf[(js.Object | PipeableFunctor4[F] | PipeableApply4[F] | PipeableChain4[F]) & (js.Object | PipeableContravariant4[F]) & (js.Object | (PipeableFunctorWithIndex4[F, Any])) & (js.Object | PipeableBifunctor4[F]) & (js.Object | PipeableExtend4[F]) & (js.Object | PipeableFoldable4[F] | (PipeableFoldableWithIndex4[F, Any])) & (js.Object | PipeableAlt4[F]) & (js.Object | PipeableCompactable4[F] | PipeableFilterable4[F] | (PipeableFilterableWithIndex4[F, Any])) & (js.Object | PipeableProfunctor4[F]) & (js.Object | PipeableSemigroupoid4[F]) & (js.Object | PipeableMonadThrow4[F])]
-  
-  inline def pipeable_F_AnyIE[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, I, E](I: URI[F] & I & (EURI[F, E])): (js.Object | (PipeableFunctor3C[F, E]) | (PipeableApply3C[F, E]) | (PipeableChain3C[F, E])) & (js.Object | (PipeableContravariant3C[F, E])) & (js.Object | (PipeableFunctorWithIndex3C[F, Any, E])) & (js.Object | (PipeableBifunctor3C[F, E])) & (js.Object | (PipeableExtend3C[F, E])) & (js.Object | (PipeableFoldable3C[F, E]) | (PipeableFoldableWithIndex3C[F, Any, E])) & (js.Object | (PipeableAlt3C[F, E])) & (js.Object | (PipeableCompactable3C[F, E]) | (PipeableFilterable3C[F, E]) | (PipeableFilterableWithIndex3C[F, Any, E])) & (js.Object | (PipeableProfunctor3C[F, E])) & (js.Object | (PipeableSemigroupoid3C[F, E])) & (js.Object | (PipeableMonadThrow3C[F, E])) = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeable")(I.asInstanceOf[js.Any]).asInstanceOf[(js.Object | (PipeableFunctor3C[F, E]) | (PipeableApply3C[F, E]) | (PipeableChain3C[F, E])) & (js.Object | (PipeableContravariant3C[F, E])) & (js.Object | (PipeableFunctorWithIndex3C[F, Any, E])) & (js.Object | (PipeableBifunctor3C[F, E])) & (js.Object | (PipeableExtend3C[F, E])) & (js.Object | (PipeableFoldable3C[F, E]) | (PipeableFoldableWithIndex3C[F, Any, E])) & (js.Object | (PipeableAlt3C[F, E])) & (js.Object | (PipeableCompactable3C[F, E]) | (PipeableFilterable3C[F, E]) | (PipeableFilterableWithIndex3C[F, Any, E])) & (js.Object | (PipeableProfunctor3C[F, E])) & (js.Object | (PipeableSemigroupoid3C[F, E])) & (js.Object | (PipeableMonadThrow3C[F, E]))]
+  inline def pipeable_FIE[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, I, E](I: URI[F] & I & (EURI[F, E])): (js.Object | (PipeableFunctor3C[F, E]) | (PipeableApply3C[F, E]) | (PipeableChain3C[F, E])) & (js.Object | (PipeableContravariant3C[F, E])) & (js.Object | (PipeableFunctorWithIndex3C[F, Any, E])) & (js.Object | (PipeableBifunctor3C[F, E])) & (js.Object | (PipeableExtend3C[F, E])) & (js.Object | (PipeableFoldable3C[F, E]) | (PipeableFoldableWithIndex3C[F, Any, E])) & (js.Object | (PipeableAlt3C[F, E])) & (js.Object | (PipeableCompactable3C[F, E]) | (PipeableFilterable3C[F, E]) | (PipeableFilterableWithIndex3C[F, Any, E])) & (js.Object | (PipeableProfunctor3C[F, E])) & (js.Object | (PipeableSemigroupoid3C[F, E])) & (js.Object | (PipeableMonadThrow3C[F, E])) = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeable")(I.asInstanceOf[js.Any]).asInstanceOf[(js.Object | (PipeableFunctor3C[F, E]) | (PipeableApply3C[F, E]) | (PipeableChain3C[F, E])) & (js.Object | (PipeableContravariant3C[F, E])) & (js.Object | (PipeableFunctorWithIndex3C[F, Any, E])) & (js.Object | (PipeableBifunctor3C[F, E])) & (js.Object | (PipeableExtend3C[F, E])) & (js.Object | (PipeableFoldable3C[F, E]) | (PipeableFoldableWithIndex3C[F, Any, E])) & (js.Object | (PipeableAlt3C[F, E])) & (js.Object | (PipeableCompactable3C[F, E]) | (PipeableFilterable3C[F, E]) | (PipeableFilterableWithIndex3C[F, Any, E])) & (js.Object | (PipeableProfunctor3C[F, E])) & (js.Object | (PipeableSemigroupoid3C[F, E])) & (js.Object | (PipeableMonadThrow3C[F, E]))]
 }

@@ -21,16 +21,6 @@ trait MessageBoxSyncOptions extends StObject {
   var cancelId: js.UndefOr[Double] = js.undefined
   
   /**
-    * Initial checked state of the checkbox. `false` by default.
-    */
-  var checkboxChecked: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * If provided, the message box will include a checkbox with the given label.
-    */
-  var checkboxLabel: js.UndefOr[String] = js.undefined
-  
-  /**
     * Index of the button in the buttons array which will be selected by default when
     * the message box opens.
     */
@@ -68,6 +58,13 @@ trait MessageBoxSyncOptions extends StObject {
   var normalizeAccessKeys: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Custom width of the text in the message box.
+    *
+    * @platform darwin
+    */
+  var textWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Title of the message box, some platforms will not show it.
     */
   var title: js.UndefOr[String] = js.undefined
@@ -93,19 +90,11 @@ object MessageBoxSyncOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setCancelId(value: Double): Self = StObject.set(x, "cancelId", value.asInstanceOf[js.Any])
     
     inline def setCancelIdUndefined: Self = StObject.set(x, "cancelId", js.undefined)
-    
-    inline def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
-    
-    inline def setCheckboxCheckedUndefined: Self = StObject.set(x, "checkboxChecked", js.undefined)
-    
-    inline def setCheckboxLabel(value: String): Self = StObject.set(x, "checkboxLabel", value.asInstanceOf[js.Any])
-    
-    inline def setCheckboxLabelUndefined: Self = StObject.set(x, "checkboxLabel", js.undefined)
     
     inline def setDefaultId(value: Double): Self = StObject.set(x, "defaultId", value.asInstanceOf[js.Any])
     
@@ -128,6 +117,10 @@ object MessageBoxSyncOptions {
     inline def setNormalizeAccessKeys(value: Boolean): Self = StObject.set(x, "normalizeAccessKeys", value.asInstanceOf[js.Any])
     
     inline def setNormalizeAccessKeysUndefined: Self = StObject.set(x, "normalizeAccessKeys", js.undefined)
+    
+    inline def setTextWidth(value: Double): Self = StObject.set(x, "textWidth", value.asInstanceOf[js.Any])
+    
+    inline def setTextWidthUndefined: Self = StObject.set(x, "textWidth", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

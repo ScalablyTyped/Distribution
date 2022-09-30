@@ -31,7 +31,7 @@ object storageBufferMod {
     
     /* private */ var _engine: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
     /**

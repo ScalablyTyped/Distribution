@@ -24,12 +24,7 @@ object enzymeEnzymeMod {
   inline def enzymeTestkitFactoryCreator[T /* <: BaseDriver */](driverFactory: EnzymeDriverFactory[T]): js.Function1[/* obj */ WrapperData, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enzymeTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ WrapperData, T]]
   
   inline def enzymeUniTestkitFactoryCreator[T /* <: BaseUniDriver */](
-    driverFactory: js.Function3[
-      /* base */ UniDriver[js.Any], 
-      /* body */ UniDriver[js.Any], 
-      /* data */ DataHookString, 
-      T
-    ]
+    driverFactory: js.Function3[/* base */ UniDriver[Any], /* body */ UniDriver[Any], /* data */ DataHookString, T]
   ): js.Function1[/* obj */ WrapperData, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enzymeUniTestkitFactoryCreator")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ WrapperData, T]]
   
   inline def isEnzymeTestkitExists[T /* <: BaseDriver */](
@@ -61,7 +56,7 @@ object enzymeEnzymeMod {
   type MountFunctionType = js.Function2[
     /* node */ ReactElement, 
     /* options */ js.UndefOr[MountRendererProps], 
-    ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]
+    ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]
   ]
   
   trait Options extends StObject {
@@ -97,13 +92,13 @@ object enzymeEnzymeMod {
     
     var dataHook: String
     
-    var wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]
+    var wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]
   }
   object WrapperData {
     
     inline def apply(
       dataHook: String,
-      wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]
+      wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]
     ): WrapperData = {
       val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperData]
@@ -113,7 +108,7 @@ object enzymeEnzymeMod {
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      inline def setWrapper(value: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

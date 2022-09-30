@@ -405,7 +405,7 @@ object debugLayerMod {
     trait Scene extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing field
         */
       var _debugLayer: DebugLayer

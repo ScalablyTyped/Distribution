@@ -1,9 +1,9 @@
 package typings.musickitJs.MusicKit
 
-import typings.musickitJs.musickitJsNumbers.`0`
-import typings.musickitJs.musickitJsNumbers.`1`
-import typings.musickitJs.musickitJsNumbers.`2`
-import typings.musickitJs.musickitJsNumbers.`3`
+import typings.musickitJs.musickitJsInts.`0`
+import typings.musickitJs.musickitJsInts.`1`
+import typings.musickitJs.musickitJsInts.`2`
+import typings.musickitJs.musickitJsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

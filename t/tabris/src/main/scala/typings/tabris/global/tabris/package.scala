@@ -259,7 +259,7 @@ inline def fetch(url: typings.tabris.Request): js.Promise[typings.tabris.Respons
 inline def fetch(url: typings.tabris.Request, init: RequestInit): js.Promise[typings.tabris.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
 
 inline def format(data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
-inline def format(message: String, data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(message.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+inline def format(message: String, data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(message.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
 inline def fs: typings.tabris.mod.FileSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("fs").asInstanceOf[typings.tabris.mod.FileSystem]
 

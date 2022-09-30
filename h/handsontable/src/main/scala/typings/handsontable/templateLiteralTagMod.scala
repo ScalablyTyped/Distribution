@@ -10,5 +10,5 @@ object templateLiteralTagMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def toSingleLine(strings: js.Array[String], expressions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSingleLine")(List(strings.asInstanceOf[js.Any]).`++`(expressions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def toSingleLine(strings: js.Array[String], expressions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSingleLine")(scala.List(strings.asInstanceOf[js.Any]).`++`(expressions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

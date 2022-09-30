@@ -1,5 +1,6 @@
 package typings.webStreamsPolyfill.mod
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,17 +36,17 @@ object Transformer {
   
   extension [Self <: Transformer[?, ?], I, O](x: Self & (Transformer[I, O])) {
     
-    inline def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+    inline def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
     
     inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
     inline def setReadableType(value: Unit): Self = StObject.set(x, "readableType", value.asInstanceOf[js.Any])
     
-    inline def setStart(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* controller */ TransformStreamDefaultController[O] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    inline def setTransform(value: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | js.Thenable[Unit]): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    inline def setTransform(value: (I, /* controller */ TransformStreamDefaultController[O]) => Unit | PromiseLike[Unit]): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     

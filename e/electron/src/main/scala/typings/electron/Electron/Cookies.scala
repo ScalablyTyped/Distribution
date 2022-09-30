@@ -1,6 +1,11 @@
 package typings.electron.Electron
 
+import typings.electron.electronStrings.`expired-overwrite`
 import typings.electron.electronStrings.changed
+import typings.electron.electronStrings.evicted
+import typings.electron.electronStrings.expired
+import typings.electron.electronStrings.explicit
+import typings.electron.electronStrings.overwrite
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,13 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Cookies extends EventEmitter {
   
-  @JSName("addListener")
-  def addListener_changed(event: changed, listener: js.Function): this.type = js.native
+  def addListener(
+    event: changed,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* cookie */ Cookie, 
+      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* removed */ Boolean, 
+      Unit
+    ]
+  ): this.type = js.native
   
   /**
     * A promise which resolves when the cookie store has been flushed
-    * 
-  Writes any unwritten cookies data to disk.
+    *
+    * Writes any unwritten cookies data to disk.
     */
   def flushStore(): js.Promise[Unit] = js.native
   
@@ -32,26 +45,50 @@ trait Cookies extends EventEmitter {
     * Emitted when a cookie is changed because it was added, edited, removed, or
     * expired.
     */
-  @JSName("on")
-  def on_changed(event: changed, listener: js.Function): this.type = js.native
+  def on(
+    event: changed,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* cookie */ Cookie, 
+      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* removed */ Boolean, 
+      Unit
+    ]
+  ): this.type = js.native
   
-  @JSName("once")
-  def once_changed(event: changed, listener: js.Function): this.type = js.native
+  def once(
+    event: changed,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* cookie */ Cookie, 
+      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* removed */ Boolean, 
+      Unit
+    ]
+  ): this.type = js.native
   
   /**
     * A promise which resolves when the cookie has been removed
-    * 
-  Removes the cookies matching `url` and `name`
+    *
+    * Removes the cookies matching `url` and `name`
     */
   def remove(url: String, name: String): js.Promise[Unit] = js.native
   
-  @JSName("removeListener")
-  def removeListener_changed(event: changed, listener: js.Function): this.type = js.native
+  def removeListener(
+    event: changed,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* cookie */ Cookie, 
+      /* cause */ explicit | overwrite | expired | evicted | `expired-overwrite`, 
+      /* removed */ Boolean, 
+      Unit
+    ]
+  ): this.type = js.native
   
   /**
     * A promise which resolves when the cookie has been set
-    * 
-  Sets a cookie with `details`.
+    *
+    * Sets a cookie with `details`.
     */
   def set(details: CookiesSetDetails): js.Promise[Unit] = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@onfido/active-video-capture" : "0.14.0"
+      "@onfido/active-video-capture" : "0.15.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@onfido/active-video-capture" : "0.14.0"
+      "@onfido/active-video-capture" : "0.15.0"
     }
   ],
   "compile-devDependencies" : [

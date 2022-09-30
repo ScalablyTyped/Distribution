@@ -11,7 +11,7 @@ object mapDataRequestMod {
   
   @JSImport("iitc/core/map_data_request", "MapDataRequest")
   @js.native
-  class MapDataRequest () extends StObject {
+  open class MapDataRequest () extends StObject {
     
     /**
       * delay before processing the queue after failed requests
@@ -124,11 +124,11 @@ object mapDataRequestMod {
     var failedTileCount: Double = js.native
     
     /** store the parameters used for fetching the data. used to prevent unneeded refreshes after move/zoom */
-    /* private */ var fetchedDataParams: js.Any = js.native
+    /* private */ var fetchedDataParams: Any = js.native
     
     def getStatus(): MapDataRequestStatus = js.native
     
-    /* private */ def handleResponse(data: js.Any, tiles: js.Array[String], success: Boolean): Unit = js.native
+    /* private */ def handleResponse(data: Any, tiles: js.Array[String], success: Boolean): Unit = js.native
     
     var idle: Boolean = js.native
     
@@ -144,7 +144,7 @@ object mapDataRequestMod {
     
     def processRequestQueue(): Unit = js.native
     
-    def pushRenderQueue(id: String, data: js.Any, status: js.Any): Unit = js.native
+    def pushRenderQueue(id: String, data: Any, status: Any): Unit = js.native
     
     def refresh(): Unit = js.native
     
@@ -152,7 +152,7 @@ object mapDataRequestMod {
     
     var render: Render = js.native
     
-    var renderQueue: js.Array[js.Any] = js.native
+    var renderQueue: js.Array[Any] = js.native
     
     var renderQueuePaused: Boolean = js.native
     

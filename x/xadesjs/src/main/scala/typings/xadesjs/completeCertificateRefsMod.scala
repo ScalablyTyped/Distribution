@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object completeCertificateRefsMod {
   
-  @JSImport("xadesjs/build/types/xml/complete_certificate_refs", "CompleteCertificateRefs")
+  @JSImport("xadesjs/build/types/src/xml/complete_certificate_refs", "CompleteCertificateRefs")
   @js.native
-  class CompleteCertificateRefs () extends UnsignedSignatureProperty {
+  open class CompleteCertificateRefs () extends UnsignedSignatureProperty {
     def this(properties: js.Object) = this()
     
     var CertRefs: CertIDList = js.native

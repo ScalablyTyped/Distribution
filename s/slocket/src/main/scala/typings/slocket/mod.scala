@@ -2,6 +2,7 @@ package typings.slocket
 
 import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.EventEmitter
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,16 +45,16 @@ object mod extends Shortcut {
     def apply(lockFile: String, cb: js.Function2[/* error */ js.Error | Null, /* lock */ Lock, Unit]): Slocket = js.native
     
     def `catch`[TResult](): js.Promise[Lock | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[Lock | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): js.Promise[Lock | TResult] = js.native
     
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Lock, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Lock, TResult1 | PromiseLike[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ Lock, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onfulfilled: js.Function1[/* value */ Lock, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
   }
   
   type _To = Slocket

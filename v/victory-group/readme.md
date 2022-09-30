@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-group
 
-Typings are for version 36.6.7
+Typings are for version 36.6.8
 
 ## Library description:
 Group Layout Component for Victory

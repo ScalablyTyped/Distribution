@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-unhandled
 
-Typings are for version 3.0.2
+Typings are for version 4.0.1
 
 ## Library description:
 Catch unhandled errors and promise rejections in your Electron app
@@ -10,10 +10,10 @@ Catch unhandled errors and promise rejections in your Electron app
 | ------------------ | :-------------: |
 | Full name          | electron-unhandled |
 | Keywords           | electron, unhandled, error, exception, promise, rejection, uncaught, handler, stack, report, log, logger, debug, debugging |
-| # releases         | 5 |
-| # dependents       | 14 |
-| # downloads        | 165987 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 17320.333333333332 |
+| # stars            | 389.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/electron-unhandled#readme)

@@ -2,8 +2,8 @@ package typings.gridstack
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.gridstack.gridstackNumbers.`-1`
-import typings.gridstack.gridstackNumbers.`1`
+import typings.gridstack.gridstackInts.`-1`
+import typings.gridstack.gridstackInts.`1`
 import typings.gridstack.typesMod.GridStackElement
 import typings.gridstack.typesMod.GridStackNode
 import typings.gridstack.typesMod.GridStackPosition

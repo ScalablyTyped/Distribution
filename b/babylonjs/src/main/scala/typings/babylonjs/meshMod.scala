@@ -267,62 +267,53 @@ object meshMod {
       clonePhysicsImpostor: Boolean
     ) = this()
     
-    /** @hidden */
+    /** @internal */
     var _binaryInfo: Any = js.native
     
     /**
-      * @param subMesh
-      * @param effect
-      * @param fillMode
-      * @hidden
+      * @internal
       */
     def _bind(subMesh: SubMesh, effect: Effect, fillMode: Double): Mesh = js.native
     
-    /** @hidden */
+    /** @internal */
     def _checkDelayState(): Mesh = js.native
     
     /**
-      * @param force
-      * @hidden
+      * @internal
       */
     def _createGlobalSubMesh(force: Boolean): Nullable[SubMesh] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _creationDataStorage: Nullable[CreationDataStorage] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _delayInfo: js.Array[String] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _delayLoadingFunction(any: Any, mesh: Mesh): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _disposeInstanceSpecificData(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _disposeThinInstanceSpecificData(): Unit = js.native
     
     /**
-      * @param subMesh
-      * @param fillMode
-      * @param instancesCount
-      * @hidden
+      * @internal
       */
     def _draw(subMesh: SubMesh, fillMode: Double): Mesh = js.native
     def _draw(subMesh: SubMesh, fillMode: Double, instancesCount: Double): Mesh = js.native
     
-    /** @hidden */
+    /** @internal */
     var _geometry: Nullable[Geometry] = js.native
     
     /**
-      * @param subMeshId
-      * @param isReplacementMode
-      * @hidden
+      * @internal
       */
     def _getInstancesRenderList(subMeshId: Double): InstancesBatch = js.native
     def _getInstancesRenderList(subMeshId: Double, isReplacementMode: Boolean): InstancesBatch = js.native
     
-    /** @hidden */
+    /** @internal */
     var _instanceDataStorage: InstanceDataStorage = js.native
     
     /* private */ var _internalMeshDataInfo: Any = js.native
@@ -332,7 +323,7 @@ object meshMod {
       */
     def _invalidateInstanceVertexArrayObject(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _isMesh: Boolean = js.native
     
     /* private */ var _normalizeSkinFourWeights: Any = js.native
@@ -343,26 +334,16 @@ object meshMod {
     
     /* private */ var _onBeforeDrawObserver: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _originalBuilderSideOrientation: Double = js.native
     
     /**
-      * @param visibleInstances
-      * @param renderSelf
-      * @hidden
+      * @internal
       */
-    def _processInstancedBuffers(visibleInstances: js.Array[InstancedMesh], renderSelf: Boolean): Unit = js.native
+    def _processInstancedBuffers(visibleInstances: Nullable[js.Array[InstancedMesh]], renderSelf: Boolean): Unit = js.native
     
     /**
-      * @param renderingMesh
-      * @param subMesh
-      * @param effect
-      * @param fillMode
-      * @param batch
-      * @param hardwareInstancedRendering
-      * @param onBeforeDraw
-      * @param effectiveMaterial
-      * @hidden
+      * @internal
       */
     def _processRendering(
       renderingMesh: AbstractMesh,
@@ -397,61 +378,49 @@ object meshMod {
     /* private */ var _queueLoad: Any = js.native
     
     /**
-      * @param instance
-      * @param renderId
-      * @hidden
+      * @internal
       */
     def _registerInstanceForRenderId(instance: InstancedMesh, renderId: Double): Mesh = js.native
     
     /**
-      * @param subMesh
-      * @param fillMode
-      * @param batch
-      * @param effect
-      * @param engine
-      * @hidden
+      * @internal
       */
     def _renderWithInstances(subMesh: SubMesh, fillMode: Double, batch: InstancesBatch, effect: Effect, engine: Engine): Mesh = js.native
     
     /**
-      * @param subMesh
-      * @param fillMode
-      * @param effect
-      * @param engine
-      * @hidden
+      * @internal
       */
     def _renderWithThinInstances(subMesh: SubMesh, fillMode: Double, effect: Effect, engine: Engine): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _resetPointsArrayCache(): Mesh = js.native
     
-    /** @hidden */
+    /** @internal */
     var _shouldGenerateFlatShading: Boolean = js.native
     
     /* private */ var _sortLODLevels: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _thinInstanceCreateMatrixBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], staticBuffer: Boolean): Buffer = js.native
     
-    /** @hidden */
+    /** @internal */
     var _thinInstanceDataStorage: ThinInstanceDataStorage = js.native
     
-    /** @hidden */
+    /** @internal */
     def _thinInstanceInitializeUserStorage(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _thinInstanceUpdateBufferSize(kind: String): Unit = js.native
     def _thinInstanceUpdateBufferSize(kind: String, numInstances: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _userInstancedBuffersStorage: Data = js.native
     
-    /** @hidden */
+    /** @internal */
     var _userThinInstanceBuffersStorage: Sizes = js.native
     
     /**
-      * @param instance
-      * @hidden
+      * @internal
       */
     def addInstance(instance: InstancedMesh): Unit = js.native
     
@@ -1081,8 +1050,7 @@ object meshMod {
     def registerInstancedBuffer(kind: String, stride: Double): Unit = js.native
     
     /**
-      * @param instance
-      * @hidden
+      * @internal
       */
     def removeInstance(instance: InstancedMesh): Unit = js.native
     
@@ -1977,29 +1945,23 @@ object meshMod {
       * Gets the default side orientation.
       * @param orientation the orientation to value to attempt to get
       * @returns the default orientation
-      * @hidden
+      * @internal
       */
     inline def _GetDefaultSideOrientation(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetDefaultSideOrientation")().asInstanceOf[Double]
     inline def _GetDefaultSideOrientation(orientation: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetDefaultSideOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
-      * @param parsedMesh
-      * @param scene
-      * @hidden
+      * @internal
       */
     inline def _GoldbergMeshParser(parsedMesh: Any, scene: Scene): GoldbergMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_GoldbergMeshParser")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GoldbergMesh]
     
     /**
-      * @param parsedMesh
-      * @param scene
-      * @hidden
+      * @internal
       */
     inline def _GroundMeshParser(parsedMesh: Any, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_GroundMeshParser")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     
     /**
-      * @param parsedMesh
-      * @param scene
-      * @hidden
+      * @internal
       */
     inline def _LinesMeshParser(parsedMesh: Any, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_LinesMeshParser")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
     
@@ -2009,23 +1971,18 @@ object meshMod {
     inline def _MergeMeshesCoroutine_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MergeMeshesCoroutine")(x.asInstanceOf[js.Any])
     
     /**
-      * @param scene
-      * @param physicObject
-      * @param jsonObject
-      * @hidden
+      * @internal
       */
     inline def _PhysicsImpostorParser(scene: Scene, physicObject: IPhysicsEnabledObject, jsonObject: Any): PhysicsImpostor = (^.asInstanceOf[js.Dynamic].applyDynamic("_PhysicsImpostorParser")(scene.asInstanceOf[js.Any], physicObject.asInstanceOf[js.Any], jsonObject.asInstanceOf[js.Any])).asInstanceOf[PhysicsImpostor]
     
     /**
-      * @param name
-      * @param mesh
-      * @hidden
+      * @internal
       */
     inline def _instancedMeshFactory(name: String, mesh: Mesh): InstancedMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_instancedMeshFactory")(name.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[InstancedMesh]
   }
   
   /**
-    * @hidden
+    * @internal
     **/
   trait InstanceDataStorage extends StObject {
     
@@ -2131,7 +2088,7 @@ object meshMod {
   }
   
   /**
-    * @hidden
+    * @internal
     **/
   trait ThinInstanceDataStorage extends StObject {
     

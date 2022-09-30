@@ -37,3 +37,14 @@ open class LatLngBounds ()
   def this(swOrLatLngBounds: typings.googleMaps.google.maps.LatLng, ne: typings.googleMaps.google.maps.LatLng) = this()
   def this(swOrLatLngBounds: typings.googleMaps.google.maps.LatLng, ne: LatLngLiteral) = this()
 }
+object LatLngBounds {
+  
+  /**
+    * LatLngBounds for the max bounds of the Earth. These bounds will encompass
+    * the entire globe.
+    */
+  /* static member */
+  @JSGlobal("google.maps.LatLngBounds.MAX_BOUNDS")
+  @js.native
+  val MAX_BOUNDS: typings.googleMaps.google.maps.LatLngBounds = js.native
+}

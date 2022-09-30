@@ -1,5 +1,6 @@
 package typings.puppeteer
 
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,8 @@ object deferredPromiseMod {
   
   @js.native
   trait DeferredPromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def finished(): Boolean = js.native
     

@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransformRaw[T /* <: Record[String, js.Any] */]
+trait TransformRaw[T /* <: Record[String, Any] */]
   extends StObject
      with Transform[T] {
   
@@ -31,13 +31,13 @@ trait TransformRaw[T /* <: Record[String, js.Any] */]
 }
 object TransformRaw {
   
-  inline def apply[T /* <: Record[String, js.Any] */](): TransformRaw[T] = {
+  inline def apply[T /* <: Record[String, Any] */](): TransformRaw[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("raw")
     __obj.asInstanceOf[TransformRaw[T]]
   }
   
-  extension [Self <: TransformRaw[?], T /* <: Record[String, js.Any] */](x: Self & TransformRaw[T]) {
+  extension [Self <: TransformRaw[?], T /* <: Record[String, Any] */](x: Self & TransformRaw[T]) {
     
     inline def setIsMatch(value: /* node */ Node => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
     

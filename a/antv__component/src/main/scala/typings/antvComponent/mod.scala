@@ -182,6 +182,10 @@ object mod {
     @js.native
     val CONTAINER_CLASS: /* "g2-tooltip" */ String = js.native
     
+    @JSImport("@antv/component", "TOOLTIP_CSS_CONST.CONTAINER_CLASS_CUSTOM")
+    @js.native
+    val CONTAINER_CLASS_CUSTOM: /* "g2-tooltip-custom" */ String = js.native
+    
     @JSImport("@antv/component", "TOOLTIP_CSS_CONST.CROSSHAIR_X")
     @js.native
     val CROSSHAIR_X: /* "g2-tooltip-crosshair-x" */ String = js.native

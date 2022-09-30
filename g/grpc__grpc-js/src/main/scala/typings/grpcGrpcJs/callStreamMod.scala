@@ -6,9 +6,9 @@ import typings.grpcGrpcJs.constantsMod.Status
 import typings.grpcGrpcJs.filterMod.Filter
 import typings.grpcGrpcJs.filterStackMod.FilterStack
 import typings.grpcGrpcJs.filterStackMod.FilterStackFactory
-import typings.grpcGrpcJs.grpcGrpcJsNumbers.`1`
-import typings.grpcGrpcJs.grpcGrpcJsNumbers.`2`
-import typings.grpcGrpcJs.grpcGrpcJsNumbers.`4`
+import typings.grpcGrpcJs.grpcGrpcJsInts.`1`
+import typings.grpcGrpcJs.grpcGrpcJsInts.`2`
+import typings.grpcGrpcJs.grpcGrpcJsInts.`4`
 import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.grpcGrpcJs.serverCallMod.ServerSurfaceCall
 import typings.grpcGrpcJs.srcSubchannelMod.Subchannel
@@ -534,9 +534,9 @@ object callStreamMod {
   type WriteCallback = js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.grpcGrpcJs.grpcGrpcJsNumbers.`1`
-    - typings.grpcGrpcJs.grpcGrpcJsNumbers.`2`
-    - typings.grpcGrpcJs.grpcGrpcJsNumbers.`4`
+    - typings.grpcGrpcJs.grpcGrpcJsInts.`1`
+    - typings.grpcGrpcJs.grpcGrpcJsInts.`2`
+    - typings.grpcGrpcJs.grpcGrpcJsInts.`4`
   */
   trait WriteFlags extends StObject
   object WriteFlags {

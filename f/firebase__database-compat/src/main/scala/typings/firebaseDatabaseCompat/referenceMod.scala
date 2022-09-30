@@ -8,6 +8,7 @@ import typings.firebaseDatabaseCompat.databaseMod.Database
 import typings.firebaseDatabaseCompat.onDisconnectMod.OnDisconnect
 import typings.firebaseDatabaseCompat.transactionResultMod.TransactionResult
 import typings.firebaseUtil.mod.Compat
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -317,7 +318,7 @@ object referenceMod {
     val _delegate_Reference: DatabaseReference = js.native
     
     def `catch`[TResult](): js.Promise[Reference | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): js.Promise[Reference | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): js.Promise[Reference | TResult] = js.native
     @JSName("catch")
     var catch_Original: FnCallOnrejected = js.native
     
@@ -366,13 +367,13 @@ object referenceMod {
     def setWithPriority(newVal: Any, newPriority: Null, onComplete: js.Function1[/* a */ js.Error | Null, Unit]): js.Promise[Unit] = js.native
     
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onfulfilled: js.Function1[/* value */ Reference, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: FnCall = js.native
     

@@ -52,7 +52,7 @@ object motionControllerIndexMod {
       */
     handedness: MotionControllerHandedness,
       /**
-      * @hidden
+      * @internal
       */
     _doNotLoadControllerMesh: Boolean
     ) = this()
@@ -68,7 +68,7 @@ object motionControllerIndexMod {
       */
     handedness: MotionControllerHandedness,
       /**
-      * @hidden
+      * @internal
       */
     _doNotLoadControllerMesh: Boolean,
       _controllerCache: js.Array[Filename]
@@ -85,7 +85,7 @@ object motionControllerIndexMod {
       */
     handedness: MotionControllerHandedness,
       /**
-      * @hidden
+      * @internal
       */
     _doNotLoadControllerMesh: Unit,
       _controllerCache: js.Array[Filename]

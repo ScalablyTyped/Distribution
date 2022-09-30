@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "extsprintf"
-version := "1.4-dt-20211223Z-d39020"
+version := "1.4-dt-20211223Z-f97ca4"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

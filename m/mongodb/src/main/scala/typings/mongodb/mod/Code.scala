@@ -1,18 +1,20 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Code")
 @js.native
-class Code protected () extends StObject {
+open class Code protected ()
+  extends typings.bson.mod.Code {
+  /**
+    * @param code - a string or function.
+    * @param scope - an optional scope for the function.
+    */
   def this(code: String) = this()
   def this(code: js.Function) = this()
-  def this(code: String, scope: js.Object) = this()
-  def this(code: js.Function, scope: js.Object) = this()
-  
-  var code: String | js.Function = js.native
-  
-  var scope: js.Any = js.native
+  def this(code: String, scope: Document) = this()
+  def this(code: js.Function, scope: Document) = this()
 }

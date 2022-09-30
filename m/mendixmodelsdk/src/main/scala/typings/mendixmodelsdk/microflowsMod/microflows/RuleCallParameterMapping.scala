@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCallParameterMapping")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.RuleCallParameterMapping")
 @js.native
-class RuleCallParameterMapping protected () extends Element[IModel] {
+open class RuleCallParameterMapping protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,6 +35,7 @@ class RuleCallParameterMapping protected () extends Element[IModel] {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def argumentModel: Expression = js.native
@@ -52,7 +53,7 @@ class RuleCallParameterMapping protected () extends Element[IModel] {
 }
 object RuleCallParameterMapping {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCallParameterMapping")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.RuleCallParameterMapping")
   @js.native
   val ^ : js.Any = js.native
   
@@ -73,13 +74,13 @@ object RuleCallParameterMapping {
   inline def createIn(container: RuleCall): RuleCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RuleCallParameterMapping]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCallParameterMapping.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.RuleCallParameterMapping.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCallParameterMapping.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.RuleCallParameterMapping.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

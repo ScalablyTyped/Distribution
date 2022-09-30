@@ -10,37 +10,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transactionManagerMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/TransactionManager", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "Transaction")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/TransactionManager", "Transaction")
   @js.native
-  class Transaction protected () extends StObject {
+  open class Transaction protected () extends StObject {
     def this(transactionType: TransactionType, transactionManager: TransactionManager) = this()
     
-    /* private */ var checkTransaction: js.Any = js.native
+    /* private */ var checkTransaction: Any = js.native
     
     def commit(): Unit = js.native
     
     def rollback(): Unit = js.native
     
-    /* private */ var transactionManager: js.Any = js.native
+    /* private */ var transactionManager: Any = js.native
     
     val transactionType: TransactionType = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "TransactionManager")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/TransactionManager", "TransactionManager")
   @js.native
-  class TransactionManager protected () extends StObject {
+  open class TransactionManager protected () extends StObject {
     def this(model: AbstractModel, errorCallback: IErrorCallback) = this()
     
-    /* private */ var beginImplicitTransaction: js.Any = js.native
+    /* private */ var beginImplicitTransaction: Any = js.native
     
     def beginTransaction(): Transaction = js.native
     def beginTransaction(commitCurrentImplicitTransaction: Boolean): Transaction = js.native
     
-    /* private */ var checkModel: js.Any = js.native
+    /* private */ var checkModel: Any = js.native
     
     def commit(): Unit = js.native
     
@@ -48,13 +48,13 @@ object transactionManagerMod {
     
     def deltaReceived(delta: Delta): Unit = js.native
     
-    /* private */ var detachedRequiredProperties: js.Any = js.native
+    /* private */ var detachedRequiredProperties: Any = js.native
     
-    /* private */ var errorCallback: js.Any = js.native
+    /* private */ var errorCallback: Any = js.native
     
-    /* private */ var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: Any = js.native
     
-    /* private */ var model: js.Any = js.native
+    /* private */ var model: Any = js.native
     
     def onCommitted(callback: js.Function0[Unit]): Unit = js.native
     

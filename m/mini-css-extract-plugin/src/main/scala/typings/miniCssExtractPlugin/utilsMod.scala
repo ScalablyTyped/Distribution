@@ -1,8 +1,8 @@
 package typings.miniCssExtractPlugin
 
-import typings.miniCssExtractPlugin.miniCssExtractPluginNumbers.`-1`
-import typings.miniCssExtractPlugin.miniCssExtractPluginNumbers.`0`
-import typings.miniCssExtractPlugin.miniCssExtractPluginNumbers.`1`
+import typings.miniCssExtractPlugin.miniCssExtractPluginInts.`-1`
+import typings.miniCssExtractPlugin.miniCssExtractPluginInts.`0`
+import typings.miniCssExtractPlugin.miniCssExtractPluginInts.`1`
 import typings.miniCssExtractPlugin.miniCssExtractPluginStrings.__mini_css_extract_plugin_public_path_auto__
 import typings.miniCssExtractPlugin.miniCssExtractPluginStrings.__mini_css_extract_plugin_single_dot_path_segment__
 import typings.miniCssExtractPlugin.miniCssExtractPluginStrings.`cssSlashmini-extract`

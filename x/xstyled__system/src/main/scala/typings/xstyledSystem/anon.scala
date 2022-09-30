@@ -45,8 +45,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactHTMLElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactSVGElement
-import typings.react.mod.Reducer
-import typings.react.mod.ReducerAction
 import typings.react.mod.ReducerState
 import typings.react.mod.ReducerStateWithoutAction
 import typings.react.mod.ReducerWithoutAction
@@ -241,18 +239,18 @@ object anon {
     // DOM Element (has to be the last, because type checking stops at first overload that fits)
     def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = js.native
     def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: Unit, children: ReactNode*): DOMElement[P, T] = js.native
-    // DOM Elements
-    // ReactHTMLElement
-    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
-    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: Unit, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
+    // ReactHTMLElement, less specific
+    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
+    def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: Unit, children: ReactNode*): ReactHTMLElement[T] = js.native
     // SVGElement
     def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: P, children: ReactNode*): ReactSVGElement = js.native
     def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: Unit, children: ReactNode*): ReactSVGElement = js.native
-    // ReactHTMLElement, less specific
+    // DOM Elements
+    // ReactHTMLElement
     @JSName("cloneElement")
-    def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
+    def cloneElement_PT_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
     @JSName("cloneElement")
-    def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: Unit, children: ReactNode*): ReactHTMLElement[T] = js.native
+    def cloneElement_PT_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: Unit, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
     
     def createContext[T](
       // If you thought this should be optional, see
@@ -285,57 +283,57 @@ object anon {
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = js.native
-    def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
-      props: ClassAttributes[T] & P,
-      children: ReactNode*
-    ): ReactSVGElement = js.native
-    def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
-      props: Null,
-      children: ReactNode*
-    ): ReactSVGElement = js.native
-    def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
-      props: Unit,
-      children: ReactNode*
-    ): ReactSVGElement = js.native
-    @JSName("createElement")
-    def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
       `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
       `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
-    @JSName("createElement")
-    def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
       `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = js.native
+    def createElement_PTC_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
+    def createElement_PTC_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = js.native
+    def createElement_PTC_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = js.native
+    def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = js.native
+    def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = js.native
     @JSName("createElement")
-    def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = js.native
+    def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = js.native
+    @JSName("createElement")
+    def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      props: ClassAttributes[T] & P,
+      children: ReactNode*
+    ): ReactSVGElement = js.native
+    @JSName("createElement")
+    def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      props: Null,
+      children: ReactNode*
+    ): ReactSVGElement = js.native
+    @JSName("createElement")
+    def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      props: Unit,
+      children: ReactNode*
+    ): ReactSVGElement = js.native
+    @JSName("createElement")
+    def createElement_P_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = js.native
+    @JSName("createElement")
+    def createElement_P_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = js.native
+    @JSName("createElement")
+    def createElement_P_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = js.native
     // DOM Elements
     // TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
     @JSName("createElement")
@@ -356,17 +354,19 @@ object anon {
     def createFactory[P](`type`: FunctionComponent[P]): FunctionComponentFactory[P] = js.native
     def createFactory[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMFactory[P, T] = js.native
     @JSName("createFactory")
-    def createFactory_PT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CFactory[P, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = js.native
+    def createFactory_PTC_CFactory[P, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = js.native
     //
     // Top Level API
     // ----------------------------------------------------------------------
     // DOM Elements
     @JSName("createFactory")
-    def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any): HTMLFactory[T] = js.native
+    def createFactory_T_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any): HTMLFactory[T] = js.native
     
     def createRef[T](): RefObject[T] = js.native
     
     def experimental_use[T](usable: Usable[T]): T = js.native
+    
+    def experimental_useEvent[T /* <: js.Function */](event: T): T = js.native
     
     def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]] = js.native
     
@@ -497,26 +497,6 @@ object anon {
       * @see https://reactjs.org/docs/hooks-reference.html#usereducer
       */
     // overload where dispatch could accept 0 arguments.
-    def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
-    /**
-      * An alternative to `useState`.
-      *
-      * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
-      * multiple sub-values. It also lets you optimize performance for components that trigger deep
-      * updates because you can pass `dispatch` down instead of callbacks.
-      *
-      * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usereducer
-      */
-    // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
-    // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
-    // the last overload effectively behaves as if the identity function (x => x) is the initializer.
-    // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
-    def useReducer[R /* <: Reducer[Any, Any] */, I](
-      reducer: R,
-      initializerArg: (I & ReducerState[R]) | I,
-      initializer: js.Function1[(/* arg */ I & ReducerState[R]) | (/* arg */ I), ReducerState[R]]
-    ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
     /**
       * An alternative to `useState`.
       *
@@ -534,8 +514,7 @@ object anon {
     // which would prevent autocompletion from ever working.
     // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
     // in older versions, or a regression in newer versions of the typescript completion service.
-    @JSName("useReducer")
-    def useReducer_R_ReducerAnyAny[R /* <: Reducer[Any, Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+    def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerState[R] | ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
     /**
       * An alternative to `useState`.
       *
@@ -547,13 +526,43 @@ object anon {
       * @see https://reactjs.org/docs/hooks-reference.html#usereducer
       */
     // overload where dispatch could accept 0 arguments.
-    @JSName("useReducer")
-    def useReducer_R_ReducerWithoutActionAnyI[R /* <: ReducerWithoutAction[Any] */, I](
+    // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
+    // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
+    // the last overload effectively behaves as if the identity function (x => x) is the initializer.
+    // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
+    def useReducer[R /* <: ReducerWithoutAction[Any] */, I](
       reducer: R,
-      initializerArg: I,
-      initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
+      initializerArg: (I & ReducerState[R]) | I,
+      initializer: js.Function1[
+          (/* arg */ I & ReducerState[R]) | (/* arg */ I), 
+          ReducerState[R] | ReducerStateWithoutAction[R]
+        ]
     ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
     
+    // convenience overload for potentially undefined initialValue / call with 0 arguments
+    // has a default to stop it from defaulting to {} instead
+    /**
+      * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
+      * (`initialValue`). The returned object will persist for the full lifetime of the component.
+      *
+      * Note that `useRef()` is useful for more than the `ref` attribute. It’s handy for keeping any mutable
+      * value around similar to how you’d use instance fields in classes.
+      *
+      * @version 16.8.0
+      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      */
+    def useRef[T](): MutableRefObject[js.UndefOr[T]] = js.native
+    /**
+      * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
+      * (`initialValue`). The returned object will persist for the full lifetime of the component.
+      *
+      * Note that `useRef()` is useful for more than the `ref` attribute. It’s handy for keeping any mutable
+      * value around similar to how you’d use instance fields in classes.
+      *
+      * @version 16.8.0
+      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      */
+    def useRef[T](initialValue: T): MutableRefObject[T] = js.native
     // convenience overload for refs given as a ref prop as they typically start with a null value
     /**
       * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
@@ -568,34 +577,10 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#useref
       */
-    def useRef[T](): RefObject[T] = js.native
-    def useRef[T](initialValue: T): RefObject[T] = js.native
-    // convenience overload for potentially undefined initialValue / call with 0 arguments
-    // has a default to stop it from defaulting to {} instead
-    /**
-      * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
-      * (`initialValue`). The returned object will persist for the full lifetime of the component.
-      *
-      * Note that `useRef()` is useful for more than the `ref` attribute. It’s handy for keeping any mutable
-      * value around similar to how you’d use instance fields in classes.
-      *
-      * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
-      */
     @JSName("useRef")
-    def useRef_T_MutableRefObject[T](): MutableRefObject[js.UndefOr[T]] = js.native
-    /**
-      * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
-      * (`initialValue`). The returned object will persist for the full lifetime of the component.
-      *
-      * Note that `useRef()` is useful for more than the `ref` attribute. It’s handy for keeping any mutable
-      * value around similar to how you’d use instance fields in classes.
-      *
-      * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
-      */
+    def useRef_T_RefObject[T](): RefObject[T] = js.native
     @JSName("useRef")
-    def useRef_T_MutableRefObject[T](initialValue: T): MutableRefObject[T] = js.native
+    def useRef_T_RefObject[T](initialValue: T): RefObject[T] = js.native
     
     // convenience overload when first argument is omitted
     /**

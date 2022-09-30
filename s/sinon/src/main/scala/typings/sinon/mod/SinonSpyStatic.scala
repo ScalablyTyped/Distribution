@@ -3,8 +3,6 @@ package typings.sinon.mod
 import typings.sinon.anon.Get
 import typings.sinon.sinonStrings.get
 import typings.sinon.sinonStrings.set
-import typings.std.Parameters
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +15,9 @@ trait SinonSpyStatic extends StObject {
     */
   def apply(): SinonSpy[js.Array[Any], Any] = js.native
   /**
-    * Spies on the provided function
+    * Spies on all the object’s methods.
     */
-  def apply[F /* <: js.Function1[/* repeated */ Any, Any] */](func: F): SinonSpy[Parameters[F], ReturnType[F]] = js.native
+  def apply[T](obj: T): SinonSpiedInstance[T] = js.native
   /**
     * Creates a spy for object.method and replaces the original method with the spy.
     * An exception is thrown if the property is not already a function.

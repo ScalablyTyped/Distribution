@@ -1,8 +1,8 @@
 package typings.videoReact.mod
 
-import typings.videoReact.videoReactNumbers.`10`
-import typings.videoReact.videoReactNumbers.`30`
-import typings.videoReact.videoReactNumbers.`5`
+import typings.videoReact.videoReactInts.`10`
+import typings.videoReact.videoReactInts.`30`
+import typings.videoReact.videoReactInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

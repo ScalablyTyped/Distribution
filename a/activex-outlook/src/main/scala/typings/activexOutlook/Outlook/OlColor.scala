@@ -1,44 +1,44 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`0`
-import typings.activexOutlook.activexOutlookNumbers.`10`
-import typings.activexOutlook.activexOutlookNumbers.`11`
-import typings.activexOutlook.activexOutlookNumbers.`12`
-import typings.activexOutlook.activexOutlookNumbers.`13`
-import typings.activexOutlook.activexOutlookNumbers.`14`
-import typings.activexOutlook.activexOutlookNumbers.`15`
-import typings.activexOutlook.activexOutlookNumbers.`16`
-import typings.activexOutlook.activexOutlookNumbers.`1`
-import typings.activexOutlook.activexOutlookNumbers.`2`
-import typings.activexOutlook.activexOutlookNumbers.`3`
-import typings.activexOutlook.activexOutlookNumbers.`4`
-import typings.activexOutlook.activexOutlookNumbers.`5`
-import typings.activexOutlook.activexOutlookNumbers.`6`
-import typings.activexOutlook.activexOutlookNumbers.`7`
-import typings.activexOutlook.activexOutlookNumbers.`8`
-import typings.activexOutlook.activexOutlookNumbers.`9`
+import typings.activexOutlook.activexOutlookInts.`0`
+import typings.activexOutlook.activexOutlookInts.`10`
+import typings.activexOutlook.activexOutlookInts.`11`
+import typings.activexOutlook.activexOutlookInts.`12`
+import typings.activexOutlook.activexOutlookInts.`13`
+import typings.activexOutlook.activexOutlookInts.`14`
+import typings.activexOutlook.activexOutlookInts.`15`
+import typings.activexOutlook.activexOutlookInts.`16`
+import typings.activexOutlook.activexOutlookInts.`1`
+import typings.activexOutlook.activexOutlookInts.`2`
+import typings.activexOutlook.activexOutlookInts.`3`
+import typings.activexOutlook.activexOutlookInts.`4`
+import typings.activexOutlook.activexOutlookInts.`5`
+import typings.activexOutlook.activexOutlookInts.`6`
+import typings.activexOutlook.activexOutlookInts.`7`
+import typings.activexOutlook.activexOutlookInts.`8`
+import typings.activexOutlook.activexOutlookInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`0`
-  - typings.activexOutlook.activexOutlookNumbers.`15`
-  - typings.activexOutlook.activexOutlookNumbers.`1`
-  - typings.activexOutlook.activexOutlookNumbers.`13`
-  - typings.activexOutlook.activexOutlookNumbers.`14`
-  - typings.activexOutlook.activexOutlookNumbers.`8`
-  - typings.activexOutlook.activexOutlookNumbers.`3`
-  - typings.activexOutlook.activexOutlookNumbers.`11`
-  - typings.activexOutlook.activexOutlookNumbers.`2`
-  - typings.activexOutlook.activexOutlookNumbers.`5`
-  - typings.activexOutlook.activexOutlookNumbers.`4`
-  - typings.activexOutlook.activexOutlookNumbers.`6`
-  - typings.activexOutlook.activexOutlookNumbers.`10`
-  - typings.activexOutlook.activexOutlookNumbers.`9`
-  - typings.activexOutlook.activexOutlookNumbers.`7`
-  - typings.activexOutlook.activexOutlookNumbers.`16`
-  - typings.activexOutlook.activexOutlookNumbers.`12`
+  - typings.activexOutlook.activexOutlookInts.`0`
+  - typings.activexOutlook.activexOutlookInts.`15`
+  - typings.activexOutlook.activexOutlookInts.`1`
+  - typings.activexOutlook.activexOutlookInts.`13`
+  - typings.activexOutlook.activexOutlookInts.`14`
+  - typings.activexOutlook.activexOutlookInts.`8`
+  - typings.activexOutlook.activexOutlookInts.`3`
+  - typings.activexOutlook.activexOutlookInts.`11`
+  - typings.activexOutlook.activexOutlookInts.`2`
+  - typings.activexOutlook.activexOutlookInts.`5`
+  - typings.activexOutlook.activexOutlookInts.`4`
+  - typings.activexOutlook.activexOutlookInts.`6`
+  - typings.activexOutlook.activexOutlookInts.`10`
+  - typings.activexOutlook.activexOutlookInts.`9`
+  - typings.activexOutlook.activexOutlookInts.`7`
+  - typings.activexOutlook.activexOutlookInts.`16`
+  - typings.activexOutlook.activexOutlookInts.`12`
 */
 trait OlColor extends StObject
 object OlColor {

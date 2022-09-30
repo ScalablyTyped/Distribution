@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ScrollContainerRegion")
 @js.native
-class ScrollContainerRegion protected ()
+open class ScrollContainerRegion protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ScrollContainerRegion {
   def this(
     model: AbstractModel,

@@ -22,6 +22,11 @@ trait ResourceConfig extends StObject {
   var InstanceType: js.UndefOr[TrainingInstanceType] = js.undefined
   
   /**
+    * The duration of time in seconds to retain configured resources in a warm pool for subsequent training jobs.
+    */
+  var KeepAlivePeriodInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.KeepAlivePeriodInSeconds] = js.undefined
+  
+  /**
     * The Amazon Web Services KMS key that SageMaker uses to encrypt data on the storage volume attached to the ML compute instance(s) that run the training job.  Certain Nitro-based instances include local storage, dependent on the instance type. Local storage volumes are encrypted using a hardware module on the instance. You can't request a VolumeKmsKeyId when using an instance type with local storage. For a list of instance types that support local instance storage, see Instance Store Volumes. For more information about local instance storage encryption, see SSD Instance Store Volumes.  The VolumeKmsKeyId can be in any of the following formats:   // KMS Key ID  "1234abcd-12ab-34cd-56ef-1234567890ab"    // Amazon Resource Name (ARN) of a KMS Key  "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
@@ -53,6 +58,10 @@ object ResourceConfig {
     inline def setInstanceType(value: TrainingInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    
+    inline def setKeepAlivePeriodInSeconds(value: KeepAlivePeriodInSeconds): Self = StObject.set(x, "KeepAlivePeriodInSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAlivePeriodInSecondsUndefined: Self = StObject.set(x, "KeepAlivePeriodInSeconds", js.undefined)
     
     inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     

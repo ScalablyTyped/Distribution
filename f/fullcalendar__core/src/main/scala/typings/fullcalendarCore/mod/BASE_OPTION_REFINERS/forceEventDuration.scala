@@ -1,6 +1,7 @@
 package typings.fullcalendarCore.mod.BASE_OPTION_REFINERS
 
 import typings.fullcalendarCore.mod.BASE_OPTION_REFINERS.^
+import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /* standard es5 */
 open class forceEventDuration ()
-  extends typings.fullcalendarCommon.mod.BASE_OPTION_REFINERS.forceEventDuration {
+  extends StObject
+     with Boolean {
   def this(value: Any) = this()
 }
 object forceEventDuration {
   
   /* standard es5 */
-  inline def apply[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("forceEventDuration")().asInstanceOf[Boolean]
-  inline def apply[T](value: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("forceEventDuration")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply[T](): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("forceEventDuration")().asInstanceOf[scala.Boolean]
+  inline def apply[T](value: T): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("forceEventDuration")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 }

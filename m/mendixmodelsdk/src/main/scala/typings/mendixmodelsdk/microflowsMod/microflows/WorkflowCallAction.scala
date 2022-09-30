@@ -13,15 +13,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/workflow-call relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.WorkflowCallAction")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.WorkflowCallAction")
 @js.native
-class WorkflowCallAction protected () extends MicroflowAction {
+open class WorkflowCallAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,11 +36,6 @@ class WorkflowCallAction protected () extends MicroflowAction {
   def useReturnVariable: Boolean = js.native
   def useReturnVariable_=(newValue: Boolean): Unit = js.native
   
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
-    */
   def workflow: IWorkflow | Null = js.native
   
   def workflowContextVariable: String = js.native
@@ -53,7 +47,7 @@ class WorkflowCallAction protected () extends MicroflowAction {
 }
 object WorkflowCallAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.WorkflowCallAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.WorkflowCallAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -71,19 +65,19 @@ object WorkflowCallAction {
     * of the parent ActionActivity element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: ActionActivity): WorkflowCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WorkflowCallAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.WorkflowCallAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.WorkflowCallAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.WorkflowCallAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.WorkflowCallAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

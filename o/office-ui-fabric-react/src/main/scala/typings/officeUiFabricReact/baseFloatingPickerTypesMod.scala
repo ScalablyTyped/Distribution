@@ -9,6 +9,7 @@ import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import typings.react.mod.ClassAttributes
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
+import typings.std.PromiseLike
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -99,8 +100,8 @@ object baseFloatingPickerTypesMod {
       * If used in conjunction with resolveDelay this will only kick off after the delay throttle.
       * Return null if using as a controlled component
       */
-    def onResolveSuggestions(filter: String): js.Array[T] | js.Thenable[js.Array[T]] | Null = js.native
-    def onResolveSuggestions(filter: String, selectedItems: js.Array[T]): js.Array[T] | js.Thenable[js.Array[T]] | Null = js.native
+    def onResolveSuggestions(filter: String): js.Array[T] | PromiseLike[js.Array[T]] | Null = js.native
+    def onResolveSuggestions(filter: String, selectedItems: js.Array[T]): js.Array[T] | PromiseLike[js.Array[T]] | Null = js.native
     
     /**
       * The callback that should be called when the suggestions are hiden
@@ -123,7 +124,7 @@ object baseFloatingPickerTypesMod {
     var onZeroQuerySuggestion: js.UndefOr[
         js.Function1[
           /* selectedItems */ js.UndefOr[js.Array[T]], 
-          js.Array[T] | js.Thenable[js.Array[T]] | Null
+          js.Array[T] | PromiseLike[js.Array[T]] | Null
         ]
       ] = js.native
     

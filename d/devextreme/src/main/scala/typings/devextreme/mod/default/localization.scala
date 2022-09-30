@@ -13,7 +13,7 @@ object localization {
   
   inline def formatDate(value: js.Date, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def formatMessage(key: String, values: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(List(key.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def formatMessage(key: String, values: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMessage")(scala.List(key.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def formatNumber(value: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   

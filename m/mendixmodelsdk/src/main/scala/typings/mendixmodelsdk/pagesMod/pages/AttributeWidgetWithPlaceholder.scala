@@ -11,7 +11,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidgetWithPlaceholder")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidgetWithPlaceholder")
 @js.native
 abstract class AttributeWidgetWithPlaceholder protected () extends AttributeWidget {
   def this(
@@ -28,18 +28,18 @@ abstract class AttributeWidgetWithPlaceholder protected () extends AttributeWidg
 }
 object AttributeWidgetWithPlaceholder {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidgetWithPlaceholder")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidgetWithPlaceholder")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidgetWithPlaceholder.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidgetWithPlaceholder.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.AttributeWidgetWithPlaceholder.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.AttributeWidgetWithPlaceholder.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

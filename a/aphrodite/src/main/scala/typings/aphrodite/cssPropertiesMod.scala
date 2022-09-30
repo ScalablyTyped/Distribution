@@ -1,15 +1,15 @@
 package typings.aphrodite
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.aphrodite.aphroditeNumbers.`100`
-import typings.aphrodite.aphroditeNumbers.`200`
-import typings.aphrodite.aphroditeNumbers.`300`
-import typings.aphrodite.aphroditeNumbers.`400`
-import typings.aphrodite.aphroditeNumbers.`500`
-import typings.aphrodite.aphroditeNumbers.`600`
-import typings.aphrodite.aphroditeNumbers.`700`
-import typings.aphrodite.aphroditeNumbers.`800`
-import typings.aphrodite.aphroditeNumbers.`900`
+import typings.aphrodite.aphroditeInts.`100`
+import typings.aphrodite.aphroditeInts.`200`
+import typings.aphrodite.aphroditeInts.`300`
+import typings.aphrodite.aphroditeInts.`400`
+import typings.aphrodite.aphroditeInts.`500`
+import typings.aphrodite.aphroditeInts.`600`
+import typings.aphrodite.aphroditeInts.`700`
+import typings.aphrodite.aphroditeInts.`800`
+import typings.aphrodite.aphroditeInts.`900`
 import typings.aphrodite.aphroditeStrings.`-ms-autohiding-scrollbar`
 import typings.aphrodite.aphroditeStrings.`after-edge`
 import typings.aphrodite.aphroditeStrings.`allow-end`

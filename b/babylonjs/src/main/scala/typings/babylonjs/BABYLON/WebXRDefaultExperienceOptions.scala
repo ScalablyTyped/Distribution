@@ -1,5 +1,10 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.anon.PartialIWebXRControllerPoCustomLasterPointerMeshGenerator
+import typings.babylonjs.anon.PartialIWebXRInputOptionsControllerOptions
+import typings.babylonjs.anon.PartialIWebXRNearInteractCustomUtilityLayerScene
+import typings.babylonjs.anon.PartialIWebXRTeleportatioCustomUtilityLayerScene
+import typings.babylonjs.anon.PartialWebXREnterExitUIOpCustomButtons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,14 +46,14 @@ trait WebXRDefaultExperienceOptions extends StObject {
   var ignoreNativeCameraTransformation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Disable the controller mesh-loading. Can be used if you want to load your own meshes
+    * Optional configuration for the XR input object
     */
-  var inputOptions: js.UndefOr[IWebXRInputOptions] = js.undefined
+  var inputOptions: js.UndefOr[PartialIWebXRInputOptionsControllerOptions] = js.undefined
   
   /**
     * optional configuration for near interaction
     */
-  var nearInteractionOptions: js.UndefOr[IWebXRNearInteractionOptions] = js.undefined
+  var nearInteractionOptions: js.UndefOr[PartialIWebXRNearInteractCustomUtilityLayerScene] = js.undefined
   
   /**
     * A list of optional features to init the session with
@@ -64,7 +69,7 @@ trait WebXRDefaultExperienceOptions extends StObject {
   /**
     * optional configuration for pointer selection
     */
-  var pointerSelectionOptions: js.UndefOr[IWebXRControllerPointerSelectionOptions] = js.undefined
+  var pointerSelectionOptions: js.UndefOr[PartialIWebXRControllerPoCustomLasterPointerMeshGenerator] = js.undefined
   
   /**
     * An optional rendering group id that will be set globally for teleportation, pointer selection and default controller meshes
@@ -74,12 +79,12 @@ trait WebXRDefaultExperienceOptions extends StObject {
   /**
     * optional configuration for teleportation
     */
-  var teleportationOptions: js.UndefOr[IWebXRTeleportationOptions] = js.undefined
+  var teleportationOptions: js.UndefOr[PartialIWebXRTeleportatioCustomUtilityLayerScene] = js.undefined
   
   /**
     * optional UI options. This can be used among other to change session mode and reference space type
     */
-  var uiOptions: js.UndefOr[WebXREnterExitUIOptions] = js.undefined
+  var uiOptions: js.UndefOr[PartialWebXREnterExitUIOpCustomButtons] = js.undefined
   
   /**
     * When loading teleportation and pointer select, use stable versions instead of latest.
@@ -121,11 +126,11 @@ object WebXRDefaultExperienceOptions {
     
     inline def setIgnoreNativeCameraTransformationUndefined: Self = StObject.set(x, "ignoreNativeCameraTransformation", js.undefined)
     
-    inline def setInputOptions(value: IWebXRInputOptions): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
+    inline def setInputOptions(value: PartialIWebXRInputOptionsControllerOptions): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     
     inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
-    inline def setNearInteractionOptions(value: IWebXRNearInteractionOptions): Self = StObject.set(x, "nearInteractionOptions", value.asInstanceOf[js.Any])
+    inline def setNearInteractionOptions(value: PartialIWebXRNearInteractCustomUtilityLayerScene): Self = StObject.set(x, "nearInteractionOptions", value.asInstanceOf[js.Any])
     
     inline def setNearInteractionOptionsUndefined: Self = StObject.set(x, "nearInteractionOptions", js.undefined)
     
@@ -139,7 +144,7 @@ object WebXRDefaultExperienceOptions {
     
     inline def setOutputCanvasOptionsUndefined: Self = StObject.set(x, "outputCanvasOptions", js.undefined)
     
-    inline def setPointerSelectionOptions(value: IWebXRControllerPointerSelectionOptions): Self = StObject.set(x, "pointerSelectionOptions", value.asInstanceOf[js.Any])
+    inline def setPointerSelectionOptions(value: PartialIWebXRControllerPoCustomLasterPointerMeshGenerator): Self = StObject.set(x, "pointerSelectionOptions", value.asInstanceOf[js.Any])
     
     inline def setPointerSelectionOptionsUndefined: Self = StObject.set(x, "pointerSelectionOptions", js.undefined)
     
@@ -147,11 +152,11 @@ object WebXRDefaultExperienceOptions {
     
     inline def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
     
-    inline def setTeleportationOptions(value: IWebXRTeleportationOptions): Self = StObject.set(x, "teleportationOptions", value.asInstanceOf[js.Any])
+    inline def setTeleportationOptions(value: PartialIWebXRTeleportatioCustomUtilityLayerScene): Self = StObject.set(x, "teleportationOptions", value.asInstanceOf[js.Any])
     
     inline def setTeleportationOptionsUndefined: Self = StObject.set(x, "teleportationOptions", js.undefined)
     
-    inline def setUiOptions(value: WebXREnterExitUIOptions): Self = StObject.set(x, "uiOptions", value.asInstanceOf[js.Any])
+    inline def setUiOptions(value: PartialWebXREnterExitUIOpCustomButtons): Self = StObject.set(x, "uiOptions", value.asInstanceOf[js.Any])
     
     inline def setUiOptionsUndefined: Self = StObject.set(x, "uiOptions", js.undefined)
     

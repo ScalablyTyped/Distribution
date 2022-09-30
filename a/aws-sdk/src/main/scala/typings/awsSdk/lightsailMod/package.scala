@@ -364,6 +364,27 @@ type HeaderForwardList = js.Array[HeaderEnum]
 
 type HostKeysList = js.Array[HostKeyAttributes]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.disabled__
+  - typings.awsSdk.awsSdkStrings.enabled__
+  - java.lang.String
+*/
+type HttpEndpoint = _HttpEndpoint | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.disabled__
+  - typings.awsSdk.awsSdkStrings.enabled__
+  - java.lang.String
+*/
+type HttpProtocolIpv6 = _HttpProtocolIpv6 | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.optional__
+  - typings.awsSdk.awsSdkStrings.required__
+  - java.lang.String
+*/
+type HttpTokens = _HttpTokens | String
+
 type IAMAccessKeyId = String
 
 type InUseResourceCount = Double
@@ -411,6 +432,13 @@ type InstanceHealthSummaryList = js.Array[InstanceHealthSummary]
 type InstanceList = js.Array[Instance]
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.pending__
+  - typings.awsSdk.awsSdkStrings.applied_
+  - java.lang.String
+*/
+type InstanceMetadataState = _InstanceMetadataState | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CPUUtilization
   - typings.awsSdk.awsSdkStrings.NetworkIn
   - typings.awsSdk.awsSdkStrings.NetworkOut
@@ -419,6 +447,7 @@ type InstanceList = js.Array[Instance]
   - typings.awsSdk.awsSdkStrings.StatusCheckFailed_System
   - typings.awsSdk.awsSdkStrings.BurstCapacityTime
   - typings.awsSdk.awsSdkStrings.BurstCapacityPercentage
+  - typings.awsSdk.awsSdkStrings.MetadataNoToken
   - java.lang.String
 */
 type InstanceMetricName = _InstanceMetricName | String
@@ -765,6 +794,7 @@ type OperationStatus = _OperationStatus | String
   - typings.awsSdk.awsSdkStrings.UpdateBucketBundle
   - typings.awsSdk.awsSdkStrings.UpdateBucket
   - typings.awsSdk.awsSdkStrings.SetResourceAccessForBucket
+  - typings.awsSdk.awsSdkStrings.UpdateInstanceMetadataOptions
   - java.lang.String
 */
 type OperationType = _OperationType | String

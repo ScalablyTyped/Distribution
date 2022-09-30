@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fixturify-project" : "1.10.0"
+      "fixturify-project" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "fixturify-project" : "1.10.0"
+      "fixturify-project" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

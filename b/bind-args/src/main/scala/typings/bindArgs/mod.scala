@@ -13,7 +13,7 @@ object mod {
   ): js.Function1[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[number] */ /* repeated */ js.Any, 
     ReturnType[T]
-  ] = ^.asInstanceOf[js.Dynamic].apply(List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[
+  ] = ^.asInstanceOf[js.Dynamic].apply(scala.List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[
     /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[number] */ /* repeated */ js.Any, 
     ReturnType[T]
   ]]

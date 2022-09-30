@@ -1,7 +1,7 @@
 package typings.vegaTypings
 
-import typings.vegaTypings.vegaTypingsNumbers.`0`
-import typings.vegaTypings.vegaTypingsNumbers.`1`
+import typings.vegaTypings.vegaTypingsInts.`0`
+import typings.vegaTypings.vegaTypingsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

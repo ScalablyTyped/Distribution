@@ -1,5 +1,6 @@
 package typings.electron.Electron
 
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +42,7 @@ trait MessageBoxOptions extends StObject {
     */
   var detail: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[NativeImage_] = js.undefined
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   
   /**
     * Content of the message box.
@@ -66,6 +67,21 @@ trait MessageBoxOptions extends StObject {
     * via `Alt-W` on Windows and Linux.
     */
   var normalizeAccessKeys: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Pass an instance of AbortSignal to optionally close the message box, the message
+    * box will behave as if it was cancelled by the user. On macOS, `signal` does not
+    * work with message boxes that do not have a parent window, since those message
+    * boxes run synchronously due to platform limitations.
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
+  /**
+    * Custom width of the text in the message box.
+    *
+    * @platform darwin
+    */
+  var textWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Title of the message box, some platforms will not show it.
@@ -93,7 +109,7 @@ object MessageBoxOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setCancelId(value: Double): Self = StObject.set(x, "cancelId", value.asInstanceOf[js.Any])
     
@@ -115,7 +131,7 @@ object MessageBoxOptions {
     
     inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
@@ -128,6 +144,14 @@ object MessageBoxOptions {
     inline def setNormalizeAccessKeys(value: Boolean): Self = StObject.set(x, "normalizeAccessKeys", value.asInstanceOf[js.Any])
     
     inline def setNormalizeAccessKeysUndefined: Self = StObject.set(x, "normalizeAccessKeys", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setTextWidth(value: Double): Self = StObject.set(x, "textWidth", value.asInstanceOf[js.Any])
+    
+    inline def setTextWidthUndefined: Self = StObject.set(x, "textWidth", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

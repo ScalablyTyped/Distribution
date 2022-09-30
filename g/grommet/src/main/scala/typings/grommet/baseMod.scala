@@ -42,6 +42,7 @@ import typings.grommet.anon.Item
 import typings.grommet.anon.LargeMediumSmall
 import typings.grommet.anon.Line
 import typings.grommet.anon.MaxHeight
+import typings.grommet.anon.MaxInline
 import typings.grommet.anon.Overlay
 import typings.grommet.anon.Pair
 import typings.grommet.anon.Parent
@@ -56,11 +57,11 @@ import typings.grommet.anon.Sticky
 import typings.grommet.anon.Toggle
 import typings.grommet.anon.Track
 import typings.grommet.anon.Xlarge
-import typings.grommet.anon.`14`
 import typings.grommet.anon.`15`
-import typings.grommet.anon.`23`
+import typings.grommet.anon.`16`
+import typings.grommet.anon.`24`
 import typings.grommet.anon.`2xl`
-import typings.grommet.anon.`30`
+import typings.grommet.anon.`31`
 import typings.grommet.textMod.TextProps
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.ColorType
@@ -141,7 +142,7 @@ object baseMod {
     
     @JSImport("grommet/themes/base", "base.dateInput")
     @js.native
-    val dateInput: js.UndefOr[`14` | DeepReadonly[js.UndefOr[`14`]]] = js.native
+    val dateInput: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.native
     
     @JSImport("grommet/themes/base", "base.diagram")
     @js.native
@@ -165,7 +166,7 @@ object baseMod {
     
     @JSImport("grommet/themes/base", "base.grommet")
     @js.native
-    val grommet: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.native
+    val grommet: js.UndefOr[`16` | DeepReadonly[js.UndefOr[`16`]]] = js.native
     
     @JSImport("grommet/themes/base", "base.header")
     @js.native
@@ -177,7 +178,7 @@ object baseMod {
     
     @JSImport("grommet/themes/base", "base.icon")
     @js.native
-    val icon: js.UndefOr[`30` | DeepReadonly[js.UndefOr[`30`]]] = js.native
+    val icon: js.UndefOr[`31` | DeepReadonly[js.UndefOr[`31`]]] = js.native
     
     @JSImport("grommet/themes/base", "base.layer")
     @js.native
@@ -251,6 +252,10 @@ object baseMod {
     @js.native
     val select: js.UndefOr[Clear | DeepReadonly[js.UndefOr[Clear]]] = js.native
     
+    @JSImport("grommet/themes/base", "base.selectMultiple")
+    @js.native
+    val selectMultiple: js.UndefOr[MaxInline | DeepReadonly[js.UndefOr[MaxInline]]] = js.native
+    
     @JSImport("grommet/themes/base", "base.skipLinks")
     @js.native
     val skipLinks: js.UndefOr[ContainerLabel | DeepReadonly[js.UndefOr[ContainerLabel]]] = js.native
@@ -315,7 +320,7 @@ object baseMod {
     
     var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
     
-    var font: js.UndefOr[`23`] = js.undefined
+    var font: js.UndefOr[`24`] = js.undefined
     
     var icon: js.UndefOr[ReactNode | Icon] = js.undefined
     
@@ -350,7 +355,7 @@ object baseMod {
       
       inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
-      inline def setFont(value: `23`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: `24`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
@@ -873,7 +878,7 @@ object baseMod {
     
     var dataTable: js.UndefOr[GroupEnd] = js.undefined
     
-    var dateInput: js.UndefOr[`14`] = js.undefined
+    var dateInput: js.UndefOr[`15`] = js.undefined
     
     var diagram: js.UndefOr[Line] = js.undefined
     
@@ -885,13 +890,13 @@ object baseMod {
     
     var global: js.UndefOr[Animation] = js.undefined
     
-    var grommet: js.UndefOr[`15`] = js.undefined
+    var grommet: js.UndefOr[`16`] = js.undefined
     
     var header: js.UndefOr[Sticky] = js.undefined
     
     var heading: js.UndefOr[Extend] = js.undefined
     
-    var icon: js.UndefOr[`30`] = js.undefined
+    var icon: js.UndefOr[`31`] = js.undefined
     
     var layer: js.UndefOr[Overlay] = js.undefined
     
@@ -926,6 +931,8 @@ object baseMod {
     var rangeSelector: js.UndefOr[Edge] = js.undefined
     
     var select: js.UndefOr[Clear] = js.undefined
+    
+    var selectMultiple: js.UndefOr[MaxInline] = js.undefined
     
     var skipLinks: js.UndefOr[ContainerLabel] = js.undefined
     
@@ -1016,7 +1023,7 @@ object baseMod {
       
       inline def setDataTableUndefined: Self = StObject.set(x, "dataTable", js.undefined)
       
-      inline def setDateInput(value: `14`): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
+      inline def setDateInput(value: `15`): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
       
       inline def setDateInputUndefined: Self = StObject.set(x, "dateInput", js.undefined)
       
@@ -1040,7 +1047,7 @@ object baseMod {
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      inline def setGrommet(value: `15`): Self = StObject.set(x, "grommet", value.asInstanceOf[js.Any])
+      inline def setGrommet(value: `16`): Self = StObject.set(x, "grommet", value.asInstanceOf[js.Any])
       
       inline def setGrommetUndefined: Self = StObject.set(x, "grommet", js.undefined)
       
@@ -1052,7 +1059,7 @@ object baseMod {
       
       inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
-      inline def setIcon(value: `30`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: `31`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -1121,6 +1128,10 @@ object baseMod {
       inline def setRangeSelectorUndefined: Self = StObject.set(x, "rangeSelector", js.undefined)
       
       inline def setSelect(value: Clear): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      
+      inline def setSelectMultiple(value: MaxInline): Self = StObject.set(x, "selectMultiple", value.asInstanceOf[js.Any])
+      
+      inline def setSelectMultipleUndefined: Self = StObject.set(x, "selectMultiple", js.undefined)
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       

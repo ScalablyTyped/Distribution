@@ -3,7 +3,6 @@ package typings.sparkpost.anon
 import typings.sparkpost.mod.Callback
 import typings.sparkpost.mod.CreateOpts
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ trait Create extends StObject {
     * @param domain Domain name
     * @returns Promise The Domain results
     */
-  def get(domain: String): ResultsPromise[typings.sparkpost.mod.Domain] = js.native
+  def get(domain: String): js.Promise[Results[typings.sparkpost.mod.Domain]] = js.native
   /**
     * Retrieve an inbound domain by specifying its domain name in the URI path.
     * @param domain Domain name
@@ -54,7 +53,7 @@ trait Create extends StObject {
     * List all your inbound domains.
     * @returns Promise The Domain results array
     */
-  def list(): ResultsPromise[js.Array[typings.sparkpost.mod.Domain]] = js.native
+  def list(): js.Promise[Results[js.Array[typings.sparkpost.mod.Domain]]] = js.native
   /**
     * List all your inbound domains.
     * @param callback The request callback with Domain results array

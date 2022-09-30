@@ -14,39 +14,22 @@ trait WebGLPipelineContext
      with IPipelineContext {
   
   /**
-    * @param uniformName
-    * @param x
-    * @param y
-    * @hidden
+    * @internal
     */
   def _cacheFloat2(uniformName: String, x: Double, y: Double): Boolean = js.native
   
   /**
-    * @param uniformName
-    * @param x
-    * @param y
-    * @param z
-    * @hidden
+    * @internal
     */
   def _cacheFloat3(uniformName: String, x: Double, y: Double, z: Double): Boolean = js.native
   
   /**
-    * @param uniformName
-    * @param x
-    * @param y
-    * @param z
-    * @param w
-    * @hidden
+    * @internal
     */
   def _cacheFloat4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Boolean = js.native
   
   /**
-    * @param _uniformName
-    * @param _x
-    * @param _y
-    * @param _z
-    * @param _w
-    * @hidden
+    * @internal
     */
   def _cacheFloatN(_uniformName: String, _x: Double): Boolean = js.native
   def _cacheFloatN(_uniformName: String, _x: Double, _y: Double): Boolean = js.native
@@ -58,9 +41,7 @@ trait WebGLPipelineContext
   def _cacheFloatN(_uniformName: String, _x: Double, _y: Unit, _z: Unit, _w: Double): Boolean = js.native
   
   /**
-    * @param uniformName
-    * @param matrix
-    * @hidden
+    * @internal
     */
   def _cacheMatrix(uniformName: String, matrix: IMatrixLike): Boolean = js.native
   

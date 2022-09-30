@@ -1,39 +1,39 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreNumbers.`1024`
-import typings.angularCore.angularCoreNumbers.`11`
-import typings.angularCore.angularCoreNumbers.`128`
-import typings.angularCore.angularCoreNumbers.`16`
-import typings.angularCore.angularCoreNumbers.`1`
-import typings.angularCore.angularCoreNumbers.`2047`
-import typings.angularCore.angularCoreNumbers.`2048`
-import typings.angularCore.angularCoreNumbers.`256`
-import typings.angularCore.angularCoreNumbers.`32`
-import typings.angularCore.angularCoreNumbers.`3`
-import typings.angularCore.angularCoreNumbers.`4`
-import typings.angularCore.angularCoreNumbers.`512`
-import typings.angularCore.angularCoreNumbers.`64`
-import typings.angularCore.angularCoreNumbers.`8`
+import typings.angularCore.angularCoreInts.`1024`
+import typings.angularCore.angularCoreInts.`11`
+import typings.angularCore.angularCoreInts.`128`
+import typings.angularCore.angularCoreInts.`16`
+import typings.angularCore.angularCoreInts.`1`
+import typings.angularCore.angularCoreInts.`2047`
+import typings.angularCore.angularCoreInts.`2048`
+import typings.angularCore.angularCoreInts.`256`
+import typings.angularCore.angularCoreInts.`32`
+import typings.angularCore.angularCoreInts.`3`
+import typings.angularCore.angularCoreInts.`4`
+import typings.angularCore.angularCoreInts.`512`
+import typings.angularCore.angularCoreInts.`64`
+import typings.angularCore.angularCoreInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Flags associated with an LView (saved in LView[FLAGS]) */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreNumbers.`1`
-  - typings.angularCore.angularCoreNumbers.`3`
-  - typings.angularCore.angularCoreNumbers.`4`
-  - typings.angularCore.angularCoreNumbers.`8`
-  - typings.angularCore.angularCoreNumbers.`16`
-  - typings.angularCore.angularCoreNumbers.`32`
-  - typings.angularCore.angularCoreNumbers.`64`
-  - typings.angularCore.angularCoreNumbers.`128`
-  - typings.angularCore.angularCoreNumbers.`256`
-  - typings.angularCore.angularCoreNumbers.`512`
-  - typings.angularCore.angularCoreNumbers.`1024`
-  - typings.angularCore.angularCoreNumbers.`2048`
-  - typings.angularCore.angularCoreNumbers.`11`
-  - typings.angularCore.angularCoreNumbers.`2047`
+  - typings.angularCore.angularCoreInts.`1`
+  - typings.angularCore.angularCoreInts.`3`
+  - typings.angularCore.angularCoreInts.`4`
+  - typings.angularCore.angularCoreInts.`8`
+  - typings.angularCore.angularCoreInts.`16`
+  - typings.angularCore.angularCoreInts.`32`
+  - typings.angularCore.angularCoreInts.`64`
+  - typings.angularCore.angularCoreInts.`128`
+  - typings.angularCore.angularCoreInts.`256`
+  - typings.angularCore.angularCoreInts.`512`
+  - typings.angularCore.angularCoreInts.`1024`
+  - typings.angularCore.angularCoreInts.`2048`
+  - typings.angularCore.angularCoreInts.`11`
+  - typings.angularCore.angularCoreInts.`2047`
 */
 trait LViewFlags extends StObject
 object LViewFlags {

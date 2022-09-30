@@ -11,6 +11,7 @@ import typings.react.mod.FocusEventHandler
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
+import typings.std.PromiseLike
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -166,7 +167,7 @@ object basePickerTypesMod {
     var onEmptyInputFocus: js.UndefOr[
         js.Function1[
           /* selectedItems */ js.UndefOr[js.Array[T]], 
-          js.Array[T] | js.Thenable[js.Array[T]]
+          js.Array[T] | PromiseLike[js.Array[T]]
         ]
       ] = js.native
     
@@ -179,7 +180,7 @@ object basePickerTypesMod {
     var onEmptyResolveSuggestions: js.UndefOr[
         js.Function1[
           /* selectedItems */ js.UndefOr[js.Array[T]], 
-          js.Array[T] | js.Thenable[js.Array[T]]
+          js.Array[T] | PromiseLike[js.Array[T]]
         ]
       ] = js.native
     
@@ -196,7 +197,7 @@ object basePickerTypesMod {
         js.Function2[
           /* filter */ String, 
           /* selectedItems */ js.UndefOr[js.Array[T]], 
-          js.Array[T] | js.Thenable[js.Array[T]]
+          js.Array[T] | PromiseLike[js.Array[T]]
         ]
       ] = js.native
     
@@ -209,7 +210,7 @@ object basePickerTypesMod {
       * A callback to process a selection after the user selects something from the picker. If the callback returns null,
       * the item will not be added to the picker.
       */
-    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T] | Null]] = js.native
+    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | PromiseLike[T] | Null]] = js.native
     
     /**
       * A callback for when an item is removed from the suggestion list
@@ -231,8 +232,8 @@ object basePickerTypesMod {
       * Returns the already selected items so the resolver can filter them out.
       * If used in conjunction with resolveDelay this will only kick off after the delay throttle.
       */
-    def onResolveSuggestions(filter: String): js.Array[T] | js.Thenable[js.Array[T]] = js.native
-    def onResolveSuggestions(filter: String, selectedItems: js.Array[T]): js.Array[T] | js.Thenable[js.Array[T]] = js.native
+    def onResolveSuggestions(filter: String): js.Array[T] | PromiseLike[js.Array[T]] = js.native
+    def onResolveSuggestions(filter: String, selectedItems: js.Array[T]): js.Array[T] | PromiseLike[js.Array[T]] = js.native
     
     /**
       * A function used to validate if raw text entered into the well can be added into the selected items list

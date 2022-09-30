@@ -1,9 +1,9 @@
 package typings.openapiFramework
 
 import typings.openapiFramework.basePathMod.default
-import typings.openapiFramework.openapiFrameworkNumbers.`-1`
-import typings.openapiFramework.openapiFrameworkNumbers.`0`
-import typings.openapiFramework.openapiFrameworkNumbers.`1`
+import typings.openapiFramework.openapiFrameworkInts.`-1`
+import typings.openapiFramework.openapiFrameworkInts.`0`
+import typings.openapiFramework.openapiFrameworkInts.`1`
 import typings.openapiFramework.typesMod.IOpenAPIFramework
 import typings.openapiTypes.mod.OpenAPIV3.ServerObject
 import typings.tsLog.mod.Logger
@@ -108,15 +108,15 @@ object utilMod {
   
   inline def addOperationTagToApiDoc(apiDoc: Any, tag: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOperationTagToApiDoc")(apiDoc.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def allowsCoercionFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsCoercionFeature")(List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def allowsCoercionFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsCoercionFeature")(scala.List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
-  inline def allowsDefaultsFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsDefaultsFeature")(List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def allowsDefaultsFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsDefaultsFeature")(scala.List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
-  inline def allowsFeatures(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsFeatures")(List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def allowsFeatures(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsFeatures")(scala.List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
-  inline def allowsResponseValidationFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsResponseValidationFeature")(List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def allowsResponseValidationFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsResponseValidationFeature")(scala.List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
-  inline def allowsValidationFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsValidationFeature")(List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def allowsValidationFeature(framework: IOpenAPIFramework, docs: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowsValidationFeature")(scala.List(framework.asInstanceOf[js.Any]).`++`(docs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def assertRegExpAndSecurity(framework: Any, tuple: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertRegExpAndSecurity")(framework.asInstanceOf[js.Any], tuple.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -134,7 +134,7 @@ object utilMod {
   
   inline def copy(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getAdditionalFeatures(framework: IOpenAPIFramework, logger: Logger, docs: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdditionalFeatures")((List(framework.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).`++`(docs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
+  inline def getAdditionalFeatures(framework: IOpenAPIFramework, logger: Logger, docs: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdditionalFeatures")((scala.List(framework.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).`++`(docs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
   
   inline def getBasePathsFromServers(servers: js.Array[ServerObject]): js.Array[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBasePathsFromServers")(servers.asInstanceOf[js.Any]).asInstanceOf[js.Array[default]]
   

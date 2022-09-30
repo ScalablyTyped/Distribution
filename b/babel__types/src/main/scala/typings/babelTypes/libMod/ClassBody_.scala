@@ -12,7 +12,7 @@ trait ClassBody_
      with Standardized {
   
   var body: js.Array[
-    ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod | TSIndexSignature | StaticBlock_
+    ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod__ | TSIndexSignature__ | StaticBlock_
   ]
   
   @JSName("type")
@@ -22,7 +22,7 @@ object ClassBody_ {
   
   inline def apply(
     body: js.Array[
-      ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod | TSIndexSignature | StaticBlock_
+      ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod__ | TSIndexSignature__ | StaticBlock_
     ]
   ): ClassBody_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
@@ -34,12 +34,12 @@ object ClassBody_ {
     
     inline def setBody(
       value: js.Array[
-          ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod | TSIndexSignature | StaticBlock_
+          ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod__ | TSIndexSignature__ | StaticBlock_
         ]
     ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyVarargs(
-      value: (ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod | TSIndexSignature | StaticBlock_)*
+      value: (ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod__ | TSIndexSignature__ | StaticBlock_)*
     ): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setType(value: ClassBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

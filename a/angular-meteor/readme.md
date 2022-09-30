@@ -10,10 +10,10 @@ Combining the simplicity and power of AngularJS and Meteor
 | ------------------ | :-------------: |
 | Full name          | angular-meteor |
 | Keywords           | AngularJS, Meteor, angular-meteor, angular |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 9513 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 481.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/angular-meteor)

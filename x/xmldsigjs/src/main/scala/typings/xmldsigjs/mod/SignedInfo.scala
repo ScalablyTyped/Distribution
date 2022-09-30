@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "SignedInfo")
 @js.native
-class SignedInfo ()
+open class SignedInfo ()
   extends typings.xmldsigjs.xmlMod.SignedInfo {
   def this(properties: js.Object) = this()
 }

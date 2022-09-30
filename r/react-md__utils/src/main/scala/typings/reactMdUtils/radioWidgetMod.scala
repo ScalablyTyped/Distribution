@@ -3,8 +3,8 @@ package typings.reactMdUtils
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdUtils.radioTypesMod.RadioWidgetAttributes
-import typings.reactMdUtils.reactMdUtilsNumbers.`-1`
-import typings.reactMdUtils.reactMdUtilsNumbers.`0`
+import typings.reactMdUtils.reactMdUtilsInts.`-1`
+import typings.reactMdUtils.reactMdUtilsInts.`0`
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

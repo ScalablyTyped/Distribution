@@ -10,15 +10,12 @@ Leaflet Plugin to measure distances of simple lines as well as of complex polyli
 | ------------------ | :-------------: |
 | Full name          | leaflet.polylinemeasure |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 6302 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1640.3333333333333 |
+| # stars            | 152.0 |
 
 ## Links
-- [Homepage](https://github.com/ppete2/Leaflet.PolylineMeasure#readme)
-- [Bugs](https://github.com/ppete2/Leaflet.PolylineMeasure/issues)
-- [Repository](https://github.com/ppete2/Leaflet.PolylineMeasure)
 - [Npm](https://www.npmjs.com/package/leaflet.polylinemeasure)
     
 

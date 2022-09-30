@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "new-github-release-url" : "1.0.0"
+      "new-github-release-url" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "new-github-release-url" : "1.0.0"
+      "new-github-release-url" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -13,33 +13,33 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     
     /**
       * Backing filed
-      * @hidden
+      * @internal
       */
     var __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage = js.native
     
-    /** @hidden */
+    /** @internal */
     var _disposePhysicsObserver: Nullable[typings.babylonjs.observableMod.Observer[typings.babylonjs.nodeMod.Node]] = js.native
     
     /**
       * Access property
-      * @hidden
+      * @internal
       */
     var _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage = js.native
     
-    /** @hidden */
+    /** @internal */
     var _physicsImpostor: Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _renderOutline: Boolean = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _renderOverlay: Boolean = js.native
     
-    /** @hidden (Backing field) */
+    /** @internal (Backing field) */
     var _showBoundingBox: Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       * Backing Field
       */
     var _submeshesOctree: typings.babylonjs.octreeMod.Octree[typings.babylonjs.subMeshMod.SubMesh] = js.native

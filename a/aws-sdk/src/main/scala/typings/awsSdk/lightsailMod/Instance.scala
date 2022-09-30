@@ -62,6 +62,11 @@ trait Instance extends StObject {
   var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
+    * The metadata options for the Amazon Lightsail instance.
+    */
+  var metadataOptions: js.UndefOr[InstanceMetadataOptions] = js.undefined
+  
+  /**
     * The name the user gave the instance (e.g., Amazon_Linux-1GB-Ohio-1).
     */
   var name: js.UndefOr[ResourceName] = js.undefined
@@ -167,6 +172,10 @@ object Instance {
     inline def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setMetadataOptions(value: InstanceMetadataOptions): Self = StObject.set(x, "metadataOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataOptionsUndefined: Self = StObject.set(x, "metadataOptions", js.undefined)
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

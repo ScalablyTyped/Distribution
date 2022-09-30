@@ -1,22 +1,22 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-4107`
-import typings.activexExcel.activexExcelNumbers.`-4131`
-import typings.activexExcel.activexExcelNumbers.`-4152`
-import typings.activexExcel.activexExcelNumbers.`-4160`
-import typings.activexExcel.activexExcelNumbers.`-4161`
-import typings.activexExcel.activexExcelNumbers.`2`
+import typings.activexExcel.activexExcelInts.`-4107`
+import typings.activexExcel.activexExcelInts.`-4131`
+import typings.activexExcel.activexExcelInts.`-4152`
+import typings.activexExcel.activexExcelInts.`-4160`
+import typings.activexExcel.activexExcelInts.`-4161`
+import typings.activexExcel.activexExcelInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`-4107`
-  - typings.activexExcel.activexExcelNumbers.`2`
-  - typings.activexExcel.activexExcelNumbers.`-4161`
-  - typings.activexExcel.activexExcelNumbers.`-4131`
-  - typings.activexExcel.activexExcelNumbers.`-4152`
-  - typings.activexExcel.activexExcelNumbers.`-4160`
+  - typings.activexExcel.activexExcelInts.`-4107`
+  - typings.activexExcel.activexExcelInts.`2`
+  - typings.activexExcel.activexExcelInts.`-4161`
+  - typings.activexExcel.activexExcelInts.`-4131`
+  - typings.activexExcel.activexExcelInts.`-4152`
+  - typings.activexExcel.activexExcelInts.`-4160`
 */
 trait XlLegendPosition extends StObject
 object XlLegendPosition {

@@ -16,8 +16,8 @@ object mod {
   
   @JSImport("redux-cablecar", JSImport.Default)
   @js.native
-  def default: (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Connect = js.native
-  inline def default_=(x: (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Connect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  def default: (Middleware[js.Object, Any, Dispatch[AnyAction]]) & Connect = js.native
+  inline def default_=(x: (Middleware[js.Object, Any, Dispatch[AnyAction]]) & Connect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait CableCar extends StObject {
@@ -30,7 +30,7 @@ object mod {
     def getParams(): js.Object = js.native
     
     def perform(method: String): Unit = js.native
-    def perform(method: String, payload: js.Any): Unit = js.native
+    def perform(method: String, payload: Any): Unit = js.native
     
     def send(action: String): Unit = js.native
   }

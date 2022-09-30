@@ -13,9 +13,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallAction")
+/**
+  * In version 9.0.2: deleted
+  */
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AppServiceCallAction")
 @js.native
-class AppServiceCallAction protected () extends MicroflowAction {
+open class AppServiceCallAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -41,7 +44,7 @@ class AppServiceCallAction protected () extends MicroflowAction {
 }
 object AppServiceCallAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AppServiceCallAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,18 +60,21 @@ object AppServiceCallAction {
     * Creates and returns a new AppServiceCallAction instance in the SDK and on the server.
     * The new AppServiceCallAction will be automatically stored in the 'action' property
     * of the parent ActionActivity element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.0.1
     */
   /* static member */
   inline def createIn(container: ActionActivity): AppServiceCallAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceCallAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AppServiceCallAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.AppServiceCallAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

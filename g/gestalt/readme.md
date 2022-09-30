@@ -1,7 +1,7 @@
 
 # Scala.js typings for gestalt
 
-Typings are for version 62.0
+Typings are for version 71.0
 
 ## Library description:
 A set of React UI components which enforce Pinterest’s design language

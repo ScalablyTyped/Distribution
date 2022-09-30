@@ -1,7 +1,7 @@
 
 # Scala.js typings for unidriver__protractor
 
-Typings are for version 1.1.7
+Typings are for version 3.1.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 1.1.7
 | ------------------ | :-------------: |
 | Full name          | @unidriver/protractor |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 1 |
-| # downloads        | 43106 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 3517.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40unidriver%2Fprotractor)

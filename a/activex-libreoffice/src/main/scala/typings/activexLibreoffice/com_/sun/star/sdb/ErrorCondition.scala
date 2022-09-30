@@ -1,14 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.sdb
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`100`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`200`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`300`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`301`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`302`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`303`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`304`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`500`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`550`
+import typings.activexLibreoffice.activexLibreofficeInts.`100`
+import typings.activexLibreoffice.activexLibreofficeInts.`200`
+import typings.activexLibreoffice.activexLibreofficeInts.`300`
+import typings.activexLibreoffice.activexLibreofficeInts.`301`
+import typings.activexLibreoffice.activexLibreofficeInts.`302`
+import typings.activexLibreoffice.activexLibreofficeInts.`303`
+import typings.activexLibreoffice.activexLibreofficeInts.`304`
+import typings.activexLibreoffice.activexLibreofficeInts.`500`
+import typings.activexLibreoffice.activexLibreofficeInts.`550`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ErrorCondition {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`500`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`550`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`301`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`304`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`303`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`300`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`302`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`200`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`100`
+    - typings.activexLibreoffice.activexLibreofficeInts.`500`
+    - typings.activexLibreoffice.activexLibreofficeInts.`550`
+    - typings.activexLibreoffice.activexLibreofficeInts.`301`
+    - typings.activexLibreoffice.activexLibreofficeInts.`304`
+    - typings.activexLibreoffice.activexLibreofficeInts.`303`
+    - typings.activexLibreoffice.activexLibreofficeInts.`300`
+    - typings.activexLibreoffice.activexLibreofficeInts.`302`
+    - typings.activexLibreoffice.activexLibreofficeInts.`200`
+    - typings.activexLibreoffice.activexLibreofficeInts.`100`
   */
   trait Constants extends StObject
   object Constants {

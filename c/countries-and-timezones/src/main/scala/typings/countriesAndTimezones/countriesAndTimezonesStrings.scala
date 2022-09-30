@@ -5919,14 +5919,6 @@ object countriesAndTimezonesStrings {
   inline def Vietnam: Vietnam = "Vietnam".asInstanceOf[Vietnam]
   
   @js.native
-  sealed trait `Virgin Islands LeftparenthesisUKRightparenthesis` extends StObject
-  inline def `Virgin Islands LeftparenthesisUKRightparenthesis`: `Virgin Islands LeftparenthesisUKRightparenthesis` = ("Virgin Islands (UK)").asInstanceOf[`Virgin Islands LeftparenthesisUKRightparenthesis`]
-  
-  @js.native
-  sealed trait `Virgin Islands LeftparenthesisUSRightparenthesis` extends StObject
-  inline def `Virgin Islands LeftparenthesisUSRightparenthesis`: `Virgin Islands LeftparenthesisUSRightparenthesis` = ("Virgin Islands (US)").asInstanceOf[`Virgin Islands LeftparenthesisUSRightparenthesis`]
-  
-  @js.native
   sealed trait `W-SU`
     extends StObject
        with TimezoneName

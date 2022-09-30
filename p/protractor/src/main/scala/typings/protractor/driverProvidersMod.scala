@@ -15,21 +15,21 @@ object driverProvidersMod {
   
   @JSImport("protractor/built/driverProviders", "AttachSession")
   @js.native
-  class AttachSession protected ()
+  open class AttachSession protected ()
     extends typings.protractor.attachSessionMod.AttachSession {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "BrowserStack")
   @js.native
-  class BrowserStack protected ()
+  open class BrowserStack protected ()
     extends typings.protractor.browserStackMod.BrowserStack {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "Direct")
   @js.native
-  class Direct protected ()
+  open class Direct protected ()
     extends typings.protractor.directMod.Direct {
     def this(config: Config) = this()
   }
@@ -57,54 +57,54 @@ object driverProvidersMod {
   
   @JSImport("protractor/built/driverProviders", "Hosted")
   @js.native
-  class Hosted protected ()
+  open class Hosted protected ()
     extends typings.protractor.hostedMod.Hosted {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "Kobiton")
   @js.native
-  class Kobiton protected ()
+  open class Kobiton protected ()
     extends typings.protractor.kobitonMod.Kobiton {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "Local")
   @js.native
-  class Local protected ()
+  open class Local protected ()
     extends typings.protractor.localMod.Local {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "Mock")
   @js.native
-  class Mock ()
+  open class Mock ()
     extends typings.protractor.mockMod.Mock {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "MockExecutor")
   @js.native
-  class MockExecutor ()
+  open class MockExecutor ()
     extends typings.protractor.mockMod.MockExecutor
   
   @JSImport("protractor/built/driverProviders", "Sauce")
   @js.native
-  class Sauce protected ()
+  open class Sauce protected ()
     extends typings.protractor.sauceMod.Sauce {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "TestObject")
   @js.native
-  class TestObject protected ()
+  open class TestObject protected ()
     extends typings.protractor.testObjectMod.TestObject {
     def this(config: Config) = this()
   }
   
   @JSImport("protractor/built/driverProviders", "UseExistingWebDriver")
   @js.native
-  class UseExistingWebDriver protected ()
+  open class UseExistingWebDriver protected ()
     extends typings.protractor.useExistingWebDriverMod.UseExistingWebDriver {
     def this(config: Config) = this()
   }

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/deleting-objects relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DeleteAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DeleteAction")
 @js.native
-class DeleteAction protected ()
+open class DeleteAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.DeleteAction {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class DeleteAction protected ()
 }
 object DeleteAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DeleteAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DeleteAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object DeleteAction {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.DeleteAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.DeleteAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DeleteAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DeleteAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.DeleteAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.DeleteAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

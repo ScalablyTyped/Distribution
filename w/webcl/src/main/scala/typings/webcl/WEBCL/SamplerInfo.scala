@@ -1,19 +1,19 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1151`
-import typings.webcl.webclNumbers.`0x1152`
-import typings.webcl.webclNumbers.`0x1153`
-import typings.webcl.webclNumbers.`0x1154`
+import typings.webcl.webclInts.`0x1151`
+import typings.webcl.webclInts.`0x1152`
+import typings.webcl.webclInts.`0x1153`
+import typings.webcl.webclInts.`0x1154`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_sampler_info */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1151`
-  - typings.webcl.webclNumbers.`0x1152`
-  - typings.webcl.webclNumbers.`0x1153`
-  - typings.webcl.webclNumbers.`0x1154`
+  - typings.webcl.webclInts.`0x1151`
+  - typings.webcl.webclInts.`0x1152`
+  - typings.webcl.webclInts.`0x1153`
+  - typings.webcl.webclInts.`0x1154`
 */
 trait SamplerInfo extends StObject
 object SamplerInfo {

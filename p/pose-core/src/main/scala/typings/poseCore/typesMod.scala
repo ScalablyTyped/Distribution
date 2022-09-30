@@ -2,8 +2,8 @@ package typings.poseCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.poseCore.poseCoreBooleans.`false`
-import typings.poseCore.poseCoreNumbers.`-1`
-import typings.poseCore.poseCoreNumbers.`1`
+import typings.poseCore.poseCoreInts.`-1`
+import typings.poseCore.poseCoreInts.`1`
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject

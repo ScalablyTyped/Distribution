@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.SoapVersion")
 @js.native
-class SoapVersion protected ()
+open class SoapVersion protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.SoapVersion {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

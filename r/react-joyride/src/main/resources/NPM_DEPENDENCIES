@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-joyride" : "2.2.1"
+      "react-joyride" : "2.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-joyride" : "2.2.1"
+      "react-joyride" : "2.5.3"
     }
   ],
   "compile-devDependencies" : [

@@ -1,27 +1,28 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridFSBucketWriteStreamOptions
   extends StObject
-     with WriteConcern {
+     with WriteConcernOptions {
   
-  /**
-    * The chunk size to use, in bytes
-    */
+  /** Array of strings to store in the file document's `aliases` field */
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** Overwrite this bucket's chunkSizeBytes for this file */
   var chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined
   
-  /**
-    * Default false; If true, disables adding an md5 field to file data
-    */
-  var disableMD5: js.UndefOr[Boolean] = js.undefined
+  /** String to store in the file document's `contentType` field */
+  var contentType: js.UndefOr[String] = js.undefined
   
-  /**
-    * Custom file id for the GridFS file.
-    */
-  var id: js.UndefOr[GridFSBucketWriteStreamId] = js.undefined
+  /** Custom file id for the GridFS file. */
+  var id: js.UndefOr[typings.bson.mod.ObjectId] = js.undefined
+  
+  /** Object to store in the file document's `metadata` field */
+  var metadata: js.UndefOr[Document] = js.undefined
 }
 object GridFSBucketWriteStreamOptions {
   
@@ -32,16 +33,26 @@ object GridFSBucketWriteStreamOptions {
   
   extension [Self <: GridFSBucketWriteStreamOptions](x: Self) {
     
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
+    
     inline def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
     inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
-    inline def setDisableMD5(value: Boolean): Self = StObject.set(x, "disableMD5", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    inline def setDisableMD5Undefined: Self = StObject.set(x, "disableMD5", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setId(value: GridFSBucketWriteStreamId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: typings.bson.mod.ObjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setMetadata(value: Document): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

@@ -18,7 +18,7 @@ object anon {
     		@param url - URL to link to.
     		@example
     		```
-    		import terminalLink = require('terminal-link');
+    		import terminalLink from 'terminal-link';
     		const link = terminalLink.stderr('My Website', 'https://sindresorhus.com');
     		console.error(link);
     		```

@@ -14,7 +14,7 @@ object eventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addEventHandlers_false(eventName: String, handlers: (js.Function1[/* payload */ Any, `false` | Unit])*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEventHandlers")(List(eventName.asInstanceOf[js.Any]).`++`(handlers.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def addEventHandlers_false(eventName: String, handlers: (js.Function1[/* payload */ Any, `false` | Unit])*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEventHandlers")(scala.List(eventName.asInstanceOf[js.Any]).`++`(handlers.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def add_false(
     events: StringDictionary[

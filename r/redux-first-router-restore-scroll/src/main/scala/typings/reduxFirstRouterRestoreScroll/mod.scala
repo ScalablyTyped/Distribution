@@ -1,7 +1,6 @@
 package typings.reduxFirstRouterRestoreScroll
 
 import typings.history.mod.History
-import typings.history.mod.LocationState
 import typings.reduxFirstRouterRestoreScroll.anon.Manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,6 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Function1[/* history */ History[LocationState], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* history */ History[LocationState], js.Object]]
-  inline def default(options: Manual): js.Function1[/* history */ History[LocationState], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* history */ History[LocationState], js.Object]]
+  inline def default(): js.Function1[/* history */ History, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* history */ History, js.Object]]
+  inline def default(options: Manual): js.Function1[/* history */ History, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* history */ History, js.Object]]
 }

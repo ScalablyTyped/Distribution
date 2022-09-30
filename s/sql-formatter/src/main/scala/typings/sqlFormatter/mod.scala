@@ -145,6 +145,16 @@ object mod {
     inline def singlestoredb_=(x: Instantiable0[typings.sqlFormatter.singlestoredbFormatterMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("singlestoredb")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("sql-formatter", "formatters.snowflake")
+    @js.native
+    open class snowflake ()
+      extends typings.sqlFormatter.snowflakeFormatterMod.default
+    @JSImport("sql-formatter", "formatters.snowflake")
+    @js.native
+    def snowflake: Instantiable0[typings.sqlFormatter.snowflakeFormatterMod.default] = js.native
+    inline def snowflake_=(x: Instantiable0[typings.sqlFormatter.snowflakeFormatterMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("snowflake")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("sql-formatter", "formatters.spark")
     @js.native
     open class spark ()

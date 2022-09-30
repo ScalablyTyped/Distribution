@@ -1,7 +1,7 @@
 package typings.yaireoTagify.mod
 
-import typings.yaireoTagify.yaireoTagifyNumbers.`1`
-import typings.yaireoTagify.yaireoTagifyNumbers.`2`
+import typings.yaireoTagify.yaireoTagifyInts.`1`
+import typings.yaireoTagify.yaireoTagifyInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

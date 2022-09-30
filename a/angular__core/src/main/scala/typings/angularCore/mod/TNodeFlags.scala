@@ -1,13 +1,13 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreNumbers.`128`
-import typings.angularCore.angularCoreNumbers.`16`
-import typings.angularCore.angularCoreNumbers.`1`
-import typings.angularCore.angularCoreNumbers.`2`
-import typings.angularCore.angularCoreNumbers.`32`
-import typings.angularCore.angularCoreNumbers.`4`
-import typings.angularCore.angularCoreNumbers.`64`
-import typings.angularCore.angularCoreNumbers.`8`
+import typings.angularCore.angularCoreInts.`128`
+import typings.angularCore.angularCoreInts.`16`
+import typings.angularCore.angularCoreInts.`1`
+import typings.angularCore.angularCoreInts.`2`
+import typings.angularCore.angularCoreInts.`32`
+import typings.angularCore.angularCoreInts.`4`
+import typings.angularCore.angularCoreInts.`64`
+import typings.angularCore.angularCoreInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Corresponds to the TNode.flags property.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreNumbers.`1`
-  - typings.angularCore.angularCoreNumbers.`2`
-  - typings.angularCore.angularCoreNumbers.`4`
-  - typings.angularCore.angularCoreNumbers.`8`
-  - typings.angularCore.angularCoreNumbers.`16`
-  - typings.angularCore.angularCoreNumbers.`32`
-  - typings.angularCore.angularCoreNumbers.`64`
-  - typings.angularCore.angularCoreNumbers.`128`
+  - typings.angularCore.angularCoreInts.`1`
+  - typings.angularCore.angularCoreInts.`2`
+  - typings.angularCore.angularCoreInts.`4`
+  - typings.angularCore.angularCoreInts.`8`
+  - typings.angularCore.angularCoreInts.`16`
+  - typings.angularCore.angularCoreInts.`32`
+  - typings.angularCore.angularCoreInts.`64`
+  - typings.angularCore.angularCoreInts.`128`
 */
 trait TNodeFlags extends StObject
 object TNodeFlags {

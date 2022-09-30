@@ -1,7 +1,7 @@
 package typings.chance.anon
 
-import typings.chance.chanceNumbers.`4`
-import typings.chance.chanceNumbers.`5`
+import typings.chance.chanceInts.`4`
+import typings.chance.chanceInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,14 +9,14 @@ trait GeocoderElementOptions extends StObject {
   
   var autocompleteOptions: js.UndefOr[js.Object] = js.undefined
   
-  var createGeocoder: js.UndefOr[js.Function3[/* i */ Double, /* nWps */ Double, /* options */ this.type, js.Any]] = js.undefined
+  var createGeocoder: js.UndefOr[js.Function3[/* i */ Double, /* nWps */ Double, /* options */ this.type, Any]] = js.undefined
   
   var geocoderClass: js.UndefOr[js.Function0[String]] = js.undefined
   
   var geocoderPlaceholder: js.UndefOr[
     js.Function3[
       /* i */ Double, 
-      /* numberWaypoints */ Double, 
+      /* numberOfWaypoints */ Double, 
       /* geocoderElement */ GeocoderElement_, 
       String
     ]
@@ -41,7 +41,7 @@ object GeocoderElementOptions {
     
     inline def setAutocompleteOptionsUndefined: Self = StObject.set(x, "autocompleteOptions", js.undefined)
     
-    inline def setCreateGeocoder(value: (/* i */ Double, /* nWps */ Double, GeocoderElementOptions) => js.Any): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
+    inline def setCreateGeocoder(value: (/* i */ Double, /* nWps */ Double, GeocoderElementOptions) => Any): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
     
     inline def setCreateGeocoderUndefined: Self = StObject.set(x, "createGeocoder", js.undefined)
     
@@ -50,7 +50,7 @@ object GeocoderElementOptions {
     inline def setGeocoderClassUndefined: Self = StObject.set(x, "geocoderClass", js.undefined)
     
     inline def setGeocoderPlaceholder(
-      value: (/* i */ Double, /* numberWaypoints */ Double, /* geocoderElement */ GeocoderElement_) => String
+      value: (/* i */ Double, /* numberOfWaypoints */ Double, /* geocoderElement */ GeocoderElement_) => String
     ): Self = StObject.set(x, "geocoderPlaceholder", js.Any.fromFunction3(value))
     
     inline def setGeocoderPlaceholderUndefined: Self = StObject.set(x, "geocoderPlaceholder", js.undefined)

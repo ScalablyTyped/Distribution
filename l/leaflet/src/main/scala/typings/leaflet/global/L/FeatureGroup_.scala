@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.FeatureGroup")
 @js.native
-class FeatureGroup_[P] ()
+open class FeatureGroup_[P] ()
   extends typings.leaflet.mod.FeatureGroup_[P] {
   def this(layers: js.Array[typings.leaflet.mod.Layer]) = this()
   def this(layers: js.Array[typings.leaflet.mod.Layer], options: LayerOptions) = this()

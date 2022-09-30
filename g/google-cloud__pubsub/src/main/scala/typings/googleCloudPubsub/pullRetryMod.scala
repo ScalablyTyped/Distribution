@@ -10,7 +10,7 @@ object pullRetryMod {
   
   @JSImport("@google-cloud/pubsub/build/src/pull-retry", "PullRetry")
   @js.native
-  class PullRetry () extends StObject {
+  open class PullRetry () extends StObject {
     
     /**
       * Generates a timeout that can be used for applying a backoff based on the
@@ -22,7 +22,7 @@ object pullRetryMod {
       */
     def createTimeout(): Double = js.native
     
-    /* private */ var failures: js.Any = js.native
+    /* private */ var failures: Any = js.native
     
     /**
       * Determines if a request grpc.status should be retried.

@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TableColumn")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TableColumn")
 @js.native
-class TableColumn protected ()
+open class TableColumn protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.TableColumn {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class TableColumn protected ()
 }
 object TableColumn {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TableColumn")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TableColumn")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object TableColumn {
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.Table): typings.mendixmodelsdk.pagesMod.pages.TableColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TableColumn]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TableColumn.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TableColumn.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TableColumn.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TableColumn.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

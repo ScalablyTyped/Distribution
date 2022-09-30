@@ -18,7 +18,7 @@ import typings.regexpMatchIndices.astMod.AstPath.Group
 import typings.regexpMatchIndices.astMod.AstPath.Quantifier
 import typings.regexpMatchIndices.astMod.AstPath.RegExp
 import typings.regexpMatchIndices.astMod.AstPath.Repetition
-import typings.regexpMatchIndices.regexpMatchIndicesNumbers.`0`
+import typings.regexpMatchIndices.regexpMatchIndicesInts.`0`
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.assertion
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.body
 import typings.regexpMatchIndices.regexpMatchIndicesStrings.expression
@@ -348,9 +348,9 @@ object astMod {
       @JSName("setChild")
       def setChild_assertion[T /* <: Expression */](node: T, index: Unit, property: assertion): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_assertion_T_Expression_Union[T /* <: Expression */](node: Null, index: Null, property: assertion): AstPath[T] | Null = js.native
+      def setChild_assertion_T_Union[T /* <: Expression */](node: Null, index: Null, property: assertion): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_assertion_T_Expression_Union[T /* <: Expression */](node: Null, index: Unit, property: assertion): AstPath[T] | Null = js.native
+      def setChild_assertion_T_Union[T /* <: Expression */](node: Null, index: Unit, property: assertion): AstPath[T] | Null = js.native
       
       def update(nodeProps: Partial[typings.regexpTree.astMod.Assertion]): Unit = js.native
     }
@@ -589,7 +589,7 @@ object astMod {
       def appendChild(node: SpecialChar): AstPath[SpecialChar] = js.native
       def appendChild[T /* <: Expression */](node: T): AstPath[T] | Null = js.native
       @JSName("appendChild")
-      def appendChild_T_Expression_Union[T /* <: Expression */](): AstPath[T] | Null = js.native
+      def appendChild_T_Union[T /* <: Expression */](): AstPath[T] | Null = js.native
       @JSName("appendChild")
       def appendChild_expressions(node: Null, property: expressions): Null = js.native
       @JSName("appendChild")
@@ -619,7 +619,7 @@ object astMod {
       @JSName("appendChild")
       def appendChild_expressions[T /* <: Expression */](node: T, property: expressions): AstPath[T] | Null = js.native
       @JSName("appendChild")
-      def appendChild_expressions_T_Expression_Union[T /* <: Expression */](node: Null, property: expressions): AstPath[T] | Null = js.native
+      def appendChild_expressions_T_Union[T /* <: Expression */](node: Null, property: expressions): AstPath[T] | Null = js.native
       
       def getChild(): AstPath[Expression] | Null = js.native
       def getChild(n: Double): AstPath[Expression] | Null = js.native
@@ -688,7 +688,7 @@ object astMod {
       def setChild(node: SpecialChar, index: Double): AstPath[SpecialChar] = js.native
       def setChild[T /* <: Expression */](node: T, index: Double): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_T_Expression_Union[T /* <: Expression */](node: Null, index: Double): AstPath[T] | Null = js.native
+      def setChild_T_Union[T /* <: Expression */](node: Null, index: Double): AstPath[T] | Null = js.native
       @JSName("setChild")
       def setChild_expressions(node: Null, index: Double, property: expressions): Null = js.native
       @JSName("setChild")
@@ -718,7 +718,7 @@ object astMod {
       @JSName("setChild")
       def setChild_expressions[T /* <: Expression */](node: T, index: Double, property: expressions): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_expressions_T_Expression_Union[T /* <: Expression */](node: Null, index: Double, property: expressions): AstPath[T] | Null = js.native
+      def setChild_expressions_T_Union[T /* <: Expression */](node: Null, index: Double, property: expressions): AstPath[T] | Null = js.native
       
       def update(nodeProps: PartialDisjunction): Unit = js.native
     }
@@ -787,7 +787,7 @@ object astMod {
       def setChild(node: SpecialChar): AstPath[SpecialChar] = js.native
       def setChild[T /* <: Expression */](node: T): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_T_Expression_Union[T /* <: Expression */](): AstPath[T] | Null = js.native
+      def setChild_T_Union[T /* <: Expression */](): AstPath[T] | Null = js.native
       @JSName("setChild")
       def setChild_expression(node: Null, index: Null, property: expression): Null = js.native
       @JSName("setChild")
@@ -845,9 +845,9 @@ object astMod {
       @JSName("setChild")
       def setChild_expression[T /* <: Expression */](node: T, index: Unit, property: expression): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_expression_T_Expression_Union[T /* <: Expression */](node: Null, index: Null, property: expression): AstPath[T] | Null = js.native
+      def setChild_expression_T_Union[T /* <: Expression */](node: Null, index: Null, property: expression): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_expression_T_Expression_Union[T /* <: Expression */](node: Null, index: Unit, property: expression): AstPath[T] | Null = js.native
+      def setChild_expression_T_Union[T /* <: Expression */](node: Null, index: Unit, property: expression): AstPath[T] | Null = js.native
       
       def update(nodeProps: Partial[typings.regexpTree.astMod.Group]): Unit = js.native
     }
@@ -974,9 +974,9 @@ object astMod {
       @JSName("setChild")
       def setChild_body[T /* <: Expression */](node: T, index: Unit, property: body): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_body_T_Expression_Union[T /* <: Expression */](node: Null, index: Null, property: body): AstPath[T] | Null = js.native
+      def setChild_body_T_Union[T /* <: Expression */](node: Null, index: Null, property: body): AstPath[T] | Null = js.native
       @JSName("setChild")
-      def setChild_body_T_Expression_Union[T /* <: Expression */](node: Null, index: Unit, property: body): AstPath[T] | Null = js.native
+      def setChild_body_T_Union[T /* <: Expression */](node: Null, index: Unit, property: body): AstPath[T] | Null = js.native
       
       def update(nodeProps: PartialAstRegExp): Unit = js.native
     }

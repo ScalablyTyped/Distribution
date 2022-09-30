@@ -12,7 +12,7 @@ object stylableUnidriverUtilMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("wix-ui-test-utils/dist/src/unidriver/stylable-unidriver-util", "StylableUnidriverUtil")
   @js.native
-  class StylableUnidriverUtil protected () extends StylableCompatUniDriver {
+  open class StylableUnidriverUtil protected () extends StylableCompatUniDriver {
     def this(style: CommonStylesheet) = this()
   }
   @JSImport("wix-ui-test-utils/dist/src/unidriver/stylable-unidriver-util", "StylableUnidriverUtil")

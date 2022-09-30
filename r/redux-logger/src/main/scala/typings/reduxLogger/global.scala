@@ -11,5 +11,5 @@ object global {
   
   @JSGlobal("ReduxLogger")
   @js.native
-  val ReduxLogger: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = js.native
+  val ReduxLogger: Middleware[js.Object, Any, Dispatch[AnyAction]] = js.native
 }

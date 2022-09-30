@@ -1,21 +1,33 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.datePickerDatePickerMod.DatePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/date_picker", JSImport.Namespace)
-@js.native
-object datePickerMod extends js.Object {
-  @js.native
-  class DatePicker ()
-    extends Component[DatePickerProps, js.Object, js.Any]
+object datePickerMod {
   
+  @JSImport("react-toolbox/components/date_picker", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DatePickerProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.datePickerDatePickerMod.DatePicker {
+    def this(props: DatePickerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DatePickerProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/date_picker", "DatePicker")
+  @js.native
+  open class DatePicker protected ()
+    extends typings.reactToolbox.datePickerDatePickerMod.DatePicker {
+    def this(props: DatePickerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DatePickerProps, context: Any) = this()
+  }
 }
-

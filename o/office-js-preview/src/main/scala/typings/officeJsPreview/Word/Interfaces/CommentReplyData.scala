@@ -11,7 +11,7 @@ trait CommentReplyData extends StObject {
     * Gets the email of the comment reply's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var authorEmail: js.UndefOr[String] = js.undefined
   
@@ -19,7 +19,7 @@ trait CommentReplyData extends StObject {
     * Gets the name of the comment reply's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var authorName: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ trait CommentReplyData extends StObject {
     * Gets or sets the comment reply's content. The string is plain text.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var content: js.UndefOr[String] = js.undefined
   
@@ -35,7 +35,7 @@ trait CommentReplyData extends StObject {
     * Gets or sets the commentReply's content range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var contentRange: js.UndefOr[CommentContentRangeData] = js.undefined
   
@@ -43,15 +43,15 @@ trait CommentReplyData extends StObject {
     * Gets the creation date of the comment reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Gets the ID of the comment reply. Read-only.
+    * Gets the ID of the comment reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var id: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ trait CommentReplyData extends StObject {
     * Gets the parent comment of this reply.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var parentComment: js.UndefOr[CommentData] = js.undefined
 }

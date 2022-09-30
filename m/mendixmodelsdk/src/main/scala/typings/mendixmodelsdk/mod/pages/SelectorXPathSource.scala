@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SelectorXPathSource")
 @js.native
-class SelectorXPathSource protected ()
+open class SelectorXPathSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SelectorXPathSource {
   def this(
     model: AbstractModel,

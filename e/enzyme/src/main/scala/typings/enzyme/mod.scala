@@ -291,9 +291,9 @@ object mod {
       * NOTE: can only be called on wrapper of a single non-DOM component element node.
       */
     @JSName("dive")
-    def dive_C2_ComponentObjectObjectAnyP2S2[C2 /* <: Component[js.Object, js.Object, Any] */, P2, S2](): ShallowWrapper[P2, S2, C2] = js.native
+    def dive_C2P2S2[C2 /* <: Component[js.Object, js.Object, Any] */, P2, S2](): ShallowWrapper[P2, S2, C2] = js.native
     @JSName("dive")
-    def dive_C2_ComponentObjectObjectAnyP2S2[C2 /* <: Component[js.Object, js.Object, Any] */, P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, C2] = js.native
+    def dive_C2P2S2[C2 /* <: Component[js.Object, js.Object, Any] */, P2, S2](options: ShallowRendererProps): ShallowWrapper[P2, S2, C2] = js.native
     @JSName("dive")
     def dive_P2S2C2[P2, S2, C2](): ShallowWrapper[P2, S2, C2] = js.native
     @JSName("dive")
@@ -391,8 +391,8 @@ object mod {
   inline def mount[P](node: ReactElement): ReactWrapper[P, Any, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, Any, Component[js.Object, js.Object, Any]]]
   inline def mount[P](node: ReactElement, options: MountRendererProps): ReactWrapper[P, Any, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, Any, Component[js.Object, js.Object, Any]]]
   
-  inline def mount_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
-  inline def mount_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, C]]
+  inline def mount_CPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
+  inline def mount_CPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, C]]
   
   inline def mount_PS[P, S](node: ReactElement): ReactWrapper[P, S, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, Any]]]
   inline def mount_PS[P, S](node: ReactElement, options: MountRendererProps): ReactWrapper[P, S, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[P, S, Component[js.Object, js.Object, Any]]]
@@ -403,8 +403,8 @@ object mod {
   inline def shallow[P](node: ReactElement): ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]]]
   inline def shallow[P](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, Any, Component[js.Object, js.Object, Any]]]
   
-  inline def shallow_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement): ShallowWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, C]]
-  inline def shallow_C_ComponentObjectObjectAnyPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, C]]
+  inline def shallow_CPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement): ShallowWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, C]]
+  inline def shallow_CPS[C /* <: Component[js.Object, js.Object, Any] */, P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, C]]
   
   inline def shallow_PS[P, S](node: ReactElement): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any]).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, Any]]]
   inline def shallow_PS[P, S](node: ReactElement, options: ShallowRendererProps): ShallowWrapper[P, S, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[P, S, Component[js.Object, js.Object, Any]]]

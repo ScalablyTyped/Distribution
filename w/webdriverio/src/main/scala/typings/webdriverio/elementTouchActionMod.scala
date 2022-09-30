@@ -1,5 +1,6 @@
 package typings.webdriverio
 
+import typings.webdriverio.typesMod.TouchActions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,5 +11,5 @@ object elementTouchActionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(actions: TouchActions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(actions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

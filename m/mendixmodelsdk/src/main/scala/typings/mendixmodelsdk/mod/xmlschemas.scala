@@ -49,7 +49,7 @@ object xmlschemas {
     */
   @JSImport("mendixmodelsdk", "xmlschemas.XmlElement")
   @js.native
-  class XmlElement protected ()
+  open class XmlElement protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlElement {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -111,7 +111,7 @@ object xmlschemas {
   
   @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType")
   @js.native
-  class XmlPrimitiveType protected ()
+  open class XmlPrimitiveType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlPrimitiveType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
@@ -200,7 +200,7 @@ object xmlschemas {
     */
   @JSImport("mendixmodelsdk", "xmlschemas.XmlSchema")
   @js.native
-  class XmlSchema protected ()
+  open class XmlSchema protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlSchema {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -238,7 +238,7 @@ object xmlschemas {
   
   @JSImport("mendixmodelsdk", "xmlschemas.XmlSchemaEntry")
   @js.native
-  class XmlSchemaEntry protected ()
+  open class XmlSchemaEntry protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlSchemaEntry {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

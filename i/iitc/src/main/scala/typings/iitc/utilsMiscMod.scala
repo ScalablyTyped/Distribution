@@ -4,7 +4,6 @@ import typings.leaflet.mod.LatLngBounds_
 import typings.leaflet.mod.LatLng_
 import typings.leaflet.mod.LayerGroup_
 import typings.spectrum.JQuery
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,8 +24,8 @@ object utilsMiscMod {
       */
     inline def aboutIITC(): Unit = js.Dynamic.global.applyDynamic("aboutIITC")().asInstanceOf[Unit]
     
-    inline def addLayerGroup(name: String, layerGroup: LayerGroup_[js.Any]): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layerGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def addLayerGroup(name: String, layerGroup: LayerGroup_[js.Any], defaultDisplay: Boolean): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layerGroup.asInstanceOf[js.Any], defaultDisplay.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addLayerGroup(name: String, layerGroup: LayerGroup_[Any]): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layerGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addLayerGroup(name: String, layerGroup: LayerGroup_[Any], defaultDisplay: Boolean): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layerGroup.asInstanceOf[js.Any], defaultDisplay.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def androidCopy(text: String): Boolean = js.Dynamic.global.applyDynamic("androidCopy")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
@@ -51,7 +50,7 @@ object utilsMiscMod {
     inline def digits(d: String): String = js.Dynamic.global.applyDynamic("digits")(d.asInstanceOf[js.Any]).asInstanceOf[String]
     /**
       * add thousand separators to given number.
-      * http://stackoverflow.com/a/1990590/1684530 by Doug Neiner.
+      * https://stackoverflow.com/a/1990590/1684530 by Doug Neiner.
       */
     inline def digits(d: Double): String = js.Dynamic.global.applyDynamic("digits")(d.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -70,9 +69,9 @@ object utilsMiscMod {
     inline def formatInterval(seconds: Double): String = js.Dynamic.global.applyDynamic("formatInterval")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def formatInterval(seconds: Double, maxTerms: Double): String = (js.Dynamic.global.applyDynamic("formatInterval")(seconds.asInstanceOf[js.Any], maxTerms.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def genFourColumnTable(blocks: js.Array[js.Any]): String = js.Dynamic.global.applyDynamic("genFourColumnTable")(blocks.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def genFourColumnTable(blocks: js.Array[Any]): String = js.Dynamic.global.applyDynamic("genFourColumnTable")(blocks.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def getCurrentZoomTileParameters(): js.Any = js.Dynamic.global.applyDynamic("getCurrentZoomTileParameters")().asInstanceOf[js.Any]
+    inline def getCurrentZoomTileParameters(): Any = js.Dynamic.global.applyDynamic("getCurrentZoomTileParameters")().asInstanceOf[Any]
     
     /** retrieves parameter from the URL?query=string. */
     inline def getURLParam(param: String): String = js.Dynamic.global.applyDynamic("getURLParam")(param.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -86,7 +85,7 @@ object utilsMiscMod {
     
     inline def isTouchDevice(): Boolean = js.Dynamic.global.applyDynamic("isTouchDevice")().asInstanceOf[Boolean]
     
-    inline def layerGroupLength(layerGroup: LayerGroup_[js.Any]): Double = js.Dynamic.global.applyDynamic("layerGroupLength")(layerGroup.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def layerGroupLength(layerGroup: LayerGroup_[Any]): Double = js.Dynamic.global.applyDynamic("layerGroupLength")(layerGroup.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Makes the permalink for the portal with specified latlng, possibly including current map view.
@@ -106,11 +105,11 @@ object utilsMiscMod {
     
     /**
       * read cookie by name.
-      * http://stackoverflow.com/a/5639455/1684530 by cwolves
+      * https://stackoverflow.com/a/5639455/1684530 by cwolves
       */
     inline def readCookie(name: String): String = js.Dynamic.global.applyDynamic("readCookie")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def removeLayerGroup(layerGroup: LayerGroup_[js.Any]): Unit = js.Dynamic.global.applyDynamic("removeLayerGroup")(layerGroup.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeLayerGroup(layerGroup: LayerGroup_[Any]): Unit = js.Dynamic.global.applyDynamic("removeLayerGroup")(layerGroup.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // return getMapZoomTileParameters()
     /** returns number of pixels left to scroll down before reaching the bottom. */
@@ -127,10 +126,12 @@ object utilsMiscMod {
     inline def showPortalPosLinks(lat: Double, lng: Double): Unit = (js.Dynamic.global.applyDynamic("showPortalPosLinks")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def showPortalPosLinks(lat: Double, lng: Double, name: String): Unit = (js.Dynamic.global.applyDynamic("showPortalPosLinks")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def uniqueArray(arr: js.Array[js.Any]): js.Array[js.Any] = js.Dynamic.global.applyDynamic("uniqueArray")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def uniqueArray(arr: js.Array[Any]): js.Array[Any] = js.Dynamic.global.applyDynamic("uniqueArray")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
     inline def unixTimeToDateTimeString(ticks: String): String = js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def unixTimeToDateTimeString(ticks: String, millisecond: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def unixTimeToDateTimeString(ticks: js.Date): String = js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def unixTimeToDateTimeString(ticks: js.Date, millisecond: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * convert time to string
       * converts a javascript time to a precise date and time (optionally with millisecond precision)
@@ -138,22 +139,20 @@ object utilsMiscMod {
       */
     inline def unixTimeToDateTimeString(ticks: Double): String = js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def unixTimeToDateTimeString(ticks: Double, millisecond: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def unixTimeToDateTimeString(ticks: Date): String = js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def unixTimeToDateTimeString(ticks: Date, millisecond: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToDateTimeString")(ticks.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def unixTimeToHHmm(time: String): String = js.Dynamic.global.applyDynamic("unixTimeToHHmm")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def unixTimeToHHmm(time: js.Date): String = js.Dynamic.global.applyDynamic("unixTimeToHHmm")(time.asInstanceOf[js.Any]).asInstanceOf[String]
     /** convert time to string */
     inline def unixTimeToHHmm(time: Double): String = js.Dynamic.global.applyDynamic("unixTimeToHHmm")(time.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def unixTimeToHHmm(time: Date): String = js.Dynamic.global.applyDynamic("unixTimeToHHmm")(time.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def unixTimeToString(): String = js.Dynamic.global.applyDynamic("unixTimeToString")().asInstanceOf[String]
     inline def unixTimeToString(time: String): String = js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def unixTimeToString(time: String, full: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any], full.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def unixTimeToString(time: js.Date): String = js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def unixTimeToString(time: js.Date, full: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any], full.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def unixTimeToString(time: Double): String = js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def unixTimeToString(time: Double, full: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any], full.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def unixTimeToString(time: Unit, full: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any], full.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def unixTimeToString(time: Date): String = js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def unixTimeToString(time: Date, full: Boolean): String = (js.Dynamic.global.applyDynamic("unixTimeToString")(time.asInstanceOf[js.Any], full.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Update layerGroups display status to window.overlayStatus and localStorage 'ingress.intelmap.layergroupdisplayed' */
     inline def updateDisplayedLayerGroup(name: String, display: Boolean): Unit = (js.Dynamic.global.applyDynamic("updateDisplayedLayerGroup")(name.asInstanceOf[js.Any], display.asInstanceOf[js.Any])).asInstanceOf[Unit]

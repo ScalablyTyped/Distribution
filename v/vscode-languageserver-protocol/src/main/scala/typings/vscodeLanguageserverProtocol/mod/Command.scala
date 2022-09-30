@@ -13,7 +13,7 @@ object Command {
   /**
     * Creates a new Command literal.
     */
-  inline def create(title: String, command: String, args: Any*): typings.vscodeLanguageserverTypes.mod.Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Command]
+  inline def create(title: String, command: String, args: Any*): typings.vscodeLanguageserverTypes.mod.Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Command]
   
   /**
     * Checks whether the given literal conforms to the [Command](#Command) interface.

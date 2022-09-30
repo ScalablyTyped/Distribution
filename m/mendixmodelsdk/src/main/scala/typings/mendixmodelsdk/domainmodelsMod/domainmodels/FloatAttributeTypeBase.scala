@@ -11,6 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * In version 9.1.0: deleted
+  */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
@@ -19,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeType because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IDecimalAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IFloatAttributeTypeBase because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IFloatAttributeTypeBase because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.FloatAttributeTypeBase")
 @js.native
 abstract class FloatAttributeTypeBase protected () extends DecimalAttributeTypeBase {
   def this(
@@ -42,18 +45,18 @@ abstract class FloatAttributeTypeBase protected () extends DecimalAttributeTypeB
 }
 object FloatAttributeTypeBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.FloatAttributeTypeBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.FloatAttributeTypeBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.FloatAttributeTypeBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.FloatAttributeTypeBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

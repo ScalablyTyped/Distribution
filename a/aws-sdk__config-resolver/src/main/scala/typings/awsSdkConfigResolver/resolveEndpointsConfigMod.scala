@@ -22,7 +22,8 @@ object resolveEndpointsConfigMod {
   trait EndpointsInputConfig extends StObject {
     
     /**
-      * The fully qualified endpoint of the webservice. This is only required when using a custom endpoint (for example, when using a local version of S3).
+      * The fully qualified endpoint of the webservice. This is only required when using
+      * a custom endpoint (for example, when using a local version of S3).
       */
     var endpoint: js.UndefOr[String | Endpoint | Provider[Endpoint]] = js.undefined
     

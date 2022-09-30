@@ -494,7 +494,7 @@ object mod {
     ): this.type = js.native
   }
   
-  inline def call(wrappedFunction: js.Function1[/* repeated */ Any, Unit], args: Any*): FunctionCallAny = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(List(wrappedFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FunctionCallAny]
+  inline def call(wrappedFunction: js.Function1[/* repeated */ Any, Unit], args: Any*): FunctionCallAny = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(scala.List(wrappedFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FunctionCallAny]
   inline def call[E](
     wrappedFunction: js.Function1[/* cb */ js.Function1[/* err */ E, Unit], Unit],
     callback: js.Function1[/* err */ E, Unit]

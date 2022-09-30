@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IAnimatable because var conflicts: animations. Inlined 
-- typings.babylonjs.BABYLON.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @js.native
+- typings.babylonjs.BABYLON.IParticleSystem because var conflicts: _wasDispatched, animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, manualEmitCount, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, snippetId, spriteCellChangeSpeed, spriteCellHeight, spriteCellLoop, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed, useLogarithmicDepth. Inlined isLocal, defaultProjectionMatrix, getCapacity, getActiveCount, isStarted, animate, render, onDisposeObservable, onStoppedObservable, clone, serialize, rebuild, forceRefreshGradients, start, start, stop, reset, isStopping, isReady, getClassName, getCustomEffect, setCustomEffect, fillDefines, fillUniformsAttributesAndSamplerNames, onBeforeDrawParticlesObservable, vertexShaderName, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, addVelocityGradient, addVelocityGradient, removeVelocityGradient, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, addAlphaRemapGradient */ @js.native
 trait GPUParticleSystem
   extends StObject
      with BaseParticleSystem
@@ -20,7 +20,7 @@ trait GPUParticleSystem
   
   /* private */ var _addFactorGradient: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _angularSpeedGradientsTexture: RawTexture = js.native
   
   /* private */ var _attributesStrideSize: Any = js.native
@@ -33,7 +33,7 @@ trait GPUParticleSystem
   
   /* private */ var _capacity: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _colorGradientsTexture: RawTexture = js.native
   
   /* private */ var _createAngularSpeedGradientTexture: Any = js.native
@@ -60,7 +60,7 @@ trait GPUParticleSystem
   
   /* private */ var _customWrappers: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _dragGradientsTexture: RawTexture = js.native
   
   /* private */ var _drawWrappers: Any = js.native
@@ -68,34 +68,33 @@ trait GPUParticleSystem
   /* private */ var _getCustomDrawWrapper: Any = js.native
   
   /**
-    * @param blendMode
-    * @hidden
+    * @internal
     */
   def _getWrapper(blendMode: Double): DrawWrapper = js.native
   
   /* private */ var _initialize: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _limitVelocityGradientsTexture: RawTexture = js.native
   
-  /** @hidden */
+  /** @internal */
   /* protected */ var _onBeforeDrawParticlesObservable: Nullable[Observable[Nullable[Effect]]] = js.native
   
   /* private */ var _platform: Any = js.native
   
   /* private */ var _preWarmDone: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _randomTexture: RawTexture = js.native
   
-  /** @hidden */
+  /** @internal */
   var _randomTexture2: RawTexture = js.native
   
   /* private */ var _randomTextureSize: Any = js.native
   
   /* private */ val _rawTextureWidth: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _recreateUpdateEffect(): Unit = js.native
   
   /* private */ var _refreshColorGradient: Any = js.native
@@ -106,7 +105,7 @@ trait GPUParticleSystem
   
   /* private */ var _render: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _sizeGradientsTexture: RawTexture = js.native
   
   /* private */ var _sourceBuffer: Any = js.native
@@ -125,7 +124,7 @@ trait GPUParticleSystem
   
   /* private */ var _updateBuffer: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _velocityGradientsTexture: RawTexture = js.native
   
   /**

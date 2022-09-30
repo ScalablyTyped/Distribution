@@ -17,15 +17,15 @@ trait Check extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var container: js.UndefOr[`15`] = js.undefined
+  var container: js.UndefOr[`16`] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var font: js.UndefOr[`23`] = js.undefined
+  var font: js.UndefOr[`24`] = js.undefined
   
   var gap: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[`22`] = js.undefined
+  var hover: js.UndefOr[`23`] = js.undefined
   
   var icon: js.UndefOr[ExtendSize] = js.undefined
   
@@ -54,7 +54,7 @@ object Check {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContainer(value: `15`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -64,7 +64,7 @@ object Check {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFont(value: `23`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: `24`): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
@@ -72,7 +72,7 @@ object Check {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setHover(value: `22`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `23`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     

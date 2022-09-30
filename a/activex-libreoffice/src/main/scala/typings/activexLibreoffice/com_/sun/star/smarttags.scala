@@ -2,10 +2,10 @@ package typings.activexLibreoffice.com_.sun.star
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`3`
 import typings.activexLibreoffice.com_.sun.star.container.XStringKeyMap
 import typings.activexLibreoffice.com_.sun.star.frame.XController
 import typings.activexLibreoffice.com_.sun.star.i18n.XBreakIterator
@@ -42,10 +42,10 @@ object smarttags {
     * @since OOo 2.3
     */
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+    - typings.activexLibreoffice.activexLibreofficeInts.`3`
+    - typings.activexLibreoffice.activexLibreofficeInts.`0`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1`
   */
   trait SmartTagRecognizerMode extends StObject
   object SmartTagRecognizerMode {

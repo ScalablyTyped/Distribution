@@ -4,11 +4,11 @@ import typings.std.Record
 import typings.std.Response
 import typings.std.WebAssembly.ImportValue
 import typings.std.WebAssembly.WebAssemblyInstantiatedSource
-import typings.vscodeOniguruma.vscodeOnigurumaNumbers.`0`
-import typings.vscodeOniguruma.vscodeOnigurumaNumbers.`1`
-import typings.vscodeOniguruma.vscodeOnigurumaNumbers.`2`
-import typings.vscodeOniguruma.vscodeOnigurumaNumbers.`4`
-import typings.vscodeOniguruma.vscodeOnigurumaNumbers.`8`
+import typings.vscodeOniguruma.vscodeOnigurumaInts.`0`
+import typings.vscodeOniguruma.vscodeOnigurumaInts.`1`
+import typings.vscodeOniguruma.vscodeOnigurumaInts.`2`
+import typings.vscodeOniguruma.vscodeOnigurumaInts.`4`
+import typings.vscodeOniguruma.vscodeOnigurumaInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,11 +55,11 @@ object mod {
   inline def setDefaultDebugCall(defaultDebugCall: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultDebugCall")(defaultDebugCall.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vscodeOniguruma.vscodeOnigurumaNumbers.`0`
-    - typings.vscodeOniguruma.vscodeOnigurumaNumbers.`1`
-    - typings.vscodeOniguruma.vscodeOnigurumaNumbers.`2`
-    - typings.vscodeOniguruma.vscodeOnigurumaNumbers.`4`
-    - typings.vscodeOniguruma.vscodeOnigurumaNumbers.`8`
+    - typings.vscodeOniguruma.vscodeOnigurumaInts.`0`
+    - typings.vscodeOniguruma.vscodeOnigurumaInts.`1`
+    - typings.vscodeOniguruma.vscodeOnigurumaInts.`2`
+    - typings.vscodeOniguruma.vscodeOnigurumaInts.`4`
+    - typings.vscodeOniguruma.vscodeOnigurumaInts.`8`
   */
   trait FindOption extends StObject
   object FindOption {

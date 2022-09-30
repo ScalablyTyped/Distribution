@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "RsaPssWithoutParamsSha512")
 @js.native
-class RsaPssWithoutParamsSha512 ()
+open class RsaPssWithoutParamsSha512 ()
   extends typings.xmldsigjs.algorithmsMod.RsaPssWithoutParamsSha512

@@ -5,8 +5,8 @@ import typings.oracleOraclejet.anon.`11`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponentEventMap
 import typings.oracleOraclejet.ojgaugeMod.ojRatingGauge.Threshold
-import typings.oracleOraclejet.oracleOraclejetNumbers.`0.5`
-import typings.oracleOraclejet.oracleOraclejetNumbers.`1`
+import typings.oracleOraclejet.oracleOraclejetDoubles.`0.5`
+import typings.oracleOraclejet.oracleOraclejetInts.`1`
 import typings.oracleOraclejet.oracleOraclejetStrings.auto
 import typings.oracleOraclejet.oracleOraclejetStrings.horizontal
 import typings.oracleOraclejet.oracleOraclejetStrings.meet

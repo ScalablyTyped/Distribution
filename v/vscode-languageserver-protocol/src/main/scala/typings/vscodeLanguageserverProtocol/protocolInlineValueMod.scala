@@ -10,7 +10,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistration
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashinlineValue
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashinlineValueSlashrefresh
 import typings.vscodeLanguageserverTypes.mod.InlineValue
 import typings.vscodeLanguageserverTypes.mod.InlineValueContext
 import typings.vscodeLanguageserverTypes.mod.Range
@@ -29,7 +28,7 @@ object protocolInlineValueMod {
     
     @JSImport("vscode-languageserver-protocol/lib/common/protocol.inlineValue", "InlineValueRefreshRequest.method")
     @js.native
-    val method: workspaceSlashinlineValueSlashrefresh = js.native
+    val method: /* template literal string: workspace/inlineValue/refresh */ String = js.native
     
     @JSImport("vscode-languageserver-protocol/lib/common/protocol.inlineValue", "InlineValueRefreshRequest.type")
     @js.native

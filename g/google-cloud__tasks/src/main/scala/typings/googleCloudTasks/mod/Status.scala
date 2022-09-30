@@ -25,7 +25,7 @@ object Status {
     
     inline def setDetails(value: js.Array[js.Object]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    inline def setDetailsVarargs(value: js.Object*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: js.Object*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

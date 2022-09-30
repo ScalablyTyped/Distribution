@@ -17,7 +17,7 @@ trait Queryable[T]
   def select[N1 /* <: String */, T1, N2 /* <: String */, T2](n1: Column[N1, T1], n2: Column[N2, T2]): Query[typings.nodeSql2.nodeSql2Strings.Queryable & TopLevel[Any]] = js.native
   def select[N1 /* <: String */, T1, N2 /* <: String */, T2, N3 /* <: String */, T3](n1: Column[N1, T1], n2: Column[N2, T2], n3: Column[N3, T3]): Query[typings.nodeSql2.nodeSql2Strings.Queryable & TopLevel[Any]] = js.native
   @JSName("select")
-  def select_N1_StringT1[N1 /* <: String */, T1](n1: Column[N1, T1]): Query[
+  def select_N1T1[N1 /* <: String */, T1](n1: Column[N1, T1]): Query[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ N in N1 ]: T1}
     */ typings.nodeSql2.nodeSql2Strings.Queryable & TopLevel[Any]

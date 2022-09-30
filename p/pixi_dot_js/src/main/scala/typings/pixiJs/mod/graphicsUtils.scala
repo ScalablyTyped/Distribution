@@ -1,124 +1,116 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.pixiGraphics.anon.TypeofArcUtils
+import typings.pixiGraphics.anon.TypeofBezierUtils
+import typings.pixiGraphics.anon.TypeofQuadraticUtils
+import typings.pixiGraphics.mod.IShapeBuildCommand
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Generalized convenience utilities for Graphics.
-  *
-  * @namespace graphicsUtils
-  * @memberof PIXI
-  */
 object graphicsUtils {
   
   @JSImport("pixi.js", "graphicsUtils")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Batch pool, stores unused batches for preventing allocations.
-    *
-    * @memberof PIXI.graphicsUtils
-    * @member {Array<PIXI.graphicsUtils.BatchPart>} BATCH_POOL
-    */
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "graphicsUtils.ArcUtils")
+  @js.native
+  open class ArcUtils ()
+    extends StObject
+       with typings.pixiGraphics.mod.ArcUtils
+  @JSImport("pixi.js", "graphicsUtils.ArcUtils")
+  @js.native
+  def ArcUtils: TypeofArcUtils & Instantiable0[typings.pixiGraphics.mod.ArcUtils] = js.native
+  inline def ArcUtils_=(x: TypeofArcUtils & Instantiable0[typings.pixiGraphics.mod.ArcUtils]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArcUtils")(x.asInstanceOf[js.Any])
+  
   @JSImport("pixi.js", "graphicsUtils.BATCH_POOL")
   @js.native
-  def BATCH_POOL: js.Array[typings.pixiJs.PIXI.graphicsUtils.BatchPart] = js.native
-  inline def BATCH_POOL_=(x: js.Array[typings.pixiJs.PIXI.graphicsUtils.BatchPart]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_POOL")(x.asInstanceOf[js.Any])
+  def BATCH_POOL: js.Array[typings.pixiGraphics.mod.BatchPart] = js.native
+  inline def BATCH_POOL_=(x: js.Array[typings.pixiGraphics.mod.BatchPart]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_POOL")(x.asInstanceOf[js.Any])
   
-  /**
-    * A structure to hold interim batch objects for Graphics.
-    * @class
-    * @memberof PIXI.graphicsUtils
-    */
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pixi.js", "graphicsUtils.BatchPart")
   @js.native
-  class BatchPart ()
+  open class BatchPart ()
     extends StObject
-       with typings.pixiJs.PIXI.graphicsUtils.BatchPart
+       with typings.pixiGraphics.mod.BatchPart
+  @JSImport("pixi.js", "graphicsUtils.BatchPart")
+  @js.native
+  def BatchPart: Instantiable0[typings.pixiGraphics.mod.BatchPart] = js.native
+  inline def BatchPart_=(x: Instantiable0[typings.pixiGraphics.mod.BatchPart]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BatchPart")(x.asInstanceOf[js.Any])
   
-  /**
-    * Draw call pool, stores unused draw calls for preventing allocations.
-    *
-    * @memberof PIXI.graphicsUtils
-    * @member {Array<PIXI.BatchDrawCall>} DRAW_CALL_POOL
-    */
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "graphicsUtils.BezierUtils")
+  @js.native
+  open class BezierUtils ()
+    extends StObject
+       with typings.pixiGraphics.mod.BezierUtils
+  @JSImport("pixi.js", "graphicsUtils.BezierUtils")
+  @js.native
+  def BezierUtils: TypeofBezierUtils & Instantiable0[typings.pixiGraphics.mod.BezierUtils] = js.native
+  inline def BezierUtils_=(x: TypeofBezierUtils & Instantiable0[typings.pixiGraphics.mod.BezierUtils]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BezierUtils")(x.asInstanceOf[js.Any])
+  
   @JSImport("pixi.js", "graphicsUtils.DRAW_CALL_POOL")
   @js.native
-  def DRAW_CALL_POOL: js.Array[typings.pixiJs.PIXI.BatchDrawCall] = js.native
-  inline def DRAW_CALL_POOL_=(x: js.Array[typings.pixiJs.PIXI.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAW_CALL_POOL")(x.asInstanceOf[js.Any])
+  def DRAW_CALL_POOL: js.Array[typings.pixiCore.mod.BatchDrawCall] = js.native
+  inline def DRAW_CALL_POOL_=(x: js.Array[typings.pixiCore.mod.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAW_CALL_POOL")(x.asInstanceOf[js.Any])
   
-  /**
-    * Map of fill commands for each shape type.
-    *
-    * @memberof PIXI.graphicsUtils
-    * @member {Object} FILL_COMMANDS
-    */
   @JSImport("pixi.js", "graphicsUtils.FILL_COMMANDS")
   @js.native
-  def FILL_COMMANDS: js.Any = js.native
-  inline def FILL_COMMANDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILL_COMMANDS")(x.asInstanceOf[js.Any])
+  def FILL_COMMANDS: Record[typings.pixiMath.mod.SHAPES, IShapeBuildCommand] = js.native
+  inline def FILL_COMMANDS_=(x: Record[typings.pixiMath.mod.SHAPES, IShapeBuildCommand]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILL_COMMANDS")(x.asInstanceOf[js.Any])
   
-  /**
-    * Draw a star shape with an arbitrary number of points.
-    *
-    * @class
-    * @extends PIXI.Polygon
-    * @memberof PIXI.graphicsUtils
-    * @param {number} x - Center X position of the star
-    * @param {number} y - Center Y position of the star
-    * @param {number} points - The number of points of the star, must be > 1
-    * @param {number} radius - The outer radius of the star
-    * @param {number} [innerRadius] - The inner radius between points, default half `radius`
-    * @param {number} [rotation=0] - The rotation of the star in radians, where 0 is vertical
-    * @return {PIXI.Graphics} This Graphics object. Good for chaining method calls
-    */
-  @JSImport("pixi.js", "graphicsUtils.Star")
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("pixi.js", "graphicsUtils.QuadraticUtils")
   @js.native
-  class Star protected ()
+  open class QuadraticUtils ()
     extends StObject
-       with typings.pixiJs.PIXI.graphicsUtils.Star {
-    def this(x: Double, y: Double, points: Double, radius: Double) = this()
-    def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double) = this()
-    def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Double, rotation: Double) = this()
-    def this(x: Double, y: Double, points: Double, radius: Double, innerRadius: Unit, rotation: Double) = this()
-    
-    /**
-      * `false` after moveTo, `true` after `closePath`. In all other cases it is `true`.
-      * @member {boolean} PIXI.Polygon#closeStroke
-      * @default true
-      */
-    /* CompleteClass */
-    var closeStroke: Boolean = js.native
-    
-    /**
-      * Checks whether the x and y coordinates passed to this function are contained within this polygon
-      *
-      * @param {number} x - The X coordinate of the point to test
-      * @param {number} y - The Y coordinate of the point to test
-      * @return {boolean} Whether the x/y coordinates are within this polygon
-      */
-    /* CompleteClass */
-    override def contains(x: Double, y: Double): Boolean = js.native
-    
-    /**
-      * An array of the points of this polygon
-      *
-      * @member {number[]} PIXI.Polygon#points
-      */
-    /* CompleteClass */
-    var points: js.Array[Double] = js.native
-    
-    /**
-      * The type of the object, mainly used to avoid `instanceof` checks
-      *
-      * @member {number} PIXI.Polygon#type
-      * @readOnly
-      * @default PIXI.SHAPES.POLY
-      * @see PIXI.SHAPES
-      */
-    /* CompleteClass */
-    override val `type`: Double = js.native
-  }
+       with typings.pixiGraphics.mod.QuadraticUtils
+  @JSImport("pixi.js", "graphicsUtils.QuadraticUtils")
+  @js.native
+  def QuadraticUtils: TypeofQuadraticUtils & Instantiable0[typings.pixiGraphics.mod.QuadraticUtils] = js.native
+  inline def QuadraticUtils_=(x: TypeofQuadraticUtils & Instantiable0[typings.pixiGraphics.mod.QuadraticUtils]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuadraticUtils")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "graphicsUtils.buildCircle")
+  @js.native
+  def buildCircle: IShapeBuildCommand = js.native
+  inline def buildCircle_=(x: IShapeBuildCommand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildCircle")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "graphicsUtils.buildLine")
+  @js.native
+  def buildLine: js.Function2[
+    /* graphicsData */ typings.pixiGraphics.mod.GraphicsData, 
+    /* graphicsGeometry */ typings.pixiGraphics.mod.GraphicsGeometry, 
+    Unit
+  ] = js.native
+  inline def buildLine(
+    graphicsData: typings.pixiGraphics.mod.GraphicsData,
+    graphicsGeometry: typings.pixiGraphics.mod.GraphicsGeometry
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLine")(graphicsData.asInstanceOf[js.Any], graphicsGeometry.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def buildLine_=(
+    x: js.Function2[
+      /* graphicsData */ typings.pixiGraphics.mod.GraphicsData, 
+      /* graphicsGeometry */ typings.pixiGraphics.mod.GraphicsGeometry, 
+      Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildLine")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "graphicsUtils.buildPoly")
+  @js.native
+  def buildPoly: IShapeBuildCommand = js.native
+  inline def buildPoly_=(x: IShapeBuildCommand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildPoly")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "graphicsUtils.buildRectangle")
+  @js.native
+  def buildRectangle: IShapeBuildCommand = js.native
+  inline def buildRectangle_=(x: IShapeBuildCommand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildRectangle")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "graphicsUtils.buildRoundedRectangle")
+  @js.native
+  def buildRoundedRectangle: IShapeBuildCommand = js.native
+  inline def buildRoundedRectangle_=(x: IShapeBuildCommand): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildRoundedRectangle")(x.asInstanceOf[js.Any])
 }

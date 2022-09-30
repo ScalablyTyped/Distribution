@@ -1,136 +1,136 @@
 package typings.angularCommon.httpMod
 
-import typings.angularCommon.angularCommonNumbers.`100`
-import typings.angularCommon.angularCommonNumbers.`101`
-import typings.angularCommon.angularCommonNumbers.`102`
-import typings.angularCommon.angularCommonNumbers.`103`
-import typings.angularCommon.angularCommonNumbers.`200`
-import typings.angularCommon.angularCommonNumbers.`201`
-import typings.angularCommon.angularCommonNumbers.`202`
-import typings.angularCommon.angularCommonNumbers.`203`
-import typings.angularCommon.angularCommonNumbers.`204`
-import typings.angularCommon.angularCommonNumbers.`205`
-import typings.angularCommon.angularCommonNumbers.`206`
-import typings.angularCommon.angularCommonNumbers.`207`
-import typings.angularCommon.angularCommonNumbers.`208`
-import typings.angularCommon.angularCommonNumbers.`226`
-import typings.angularCommon.angularCommonNumbers.`300`
-import typings.angularCommon.angularCommonNumbers.`301`
-import typings.angularCommon.angularCommonNumbers.`302`
-import typings.angularCommon.angularCommonNumbers.`303`
-import typings.angularCommon.angularCommonNumbers.`304`
-import typings.angularCommon.angularCommonNumbers.`305`
-import typings.angularCommon.angularCommonNumbers.`306`
-import typings.angularCommon.angularCommonNumbers.`307`
-import typings.angularCommon.angularCommonNumbers.`308`
-import typings.angularCommon.angularCommonNumbers.`400`
-import typings.angularCommon.angularCommonNumbers.`401`
-import typings.angularCommon.angularCommonNumbers.`402`
-import typings.angularCommon.angularCommonNumbers.`403`
-import typings.angularCommon.angularCommonNumbers.`404`
-import typings.angularCommon.angularCommonNumbers.`405`
-import typings.angularCommon.angularCommonNumbers.`406`
-import typings.angularCommon.angularCommonNumbers.`407`
-import typings.angularCommon.angularCommonNumbers.`408`
-import typings.angularCommon.angularCommonNumbers.`409`
-import typings.angularCommon.angularCommonNumbers.`410`
-import typings.angularCommon.angularCommonNumbers.`411`
-import typings.angularCommon.angularCommonNumbers.`412`
-import typings.angularCommon.angularCommonNumbers.`413`
-import typings.angularCommon.angularCommonNumbers.`414`
-import typings.angularCommon.angularCommonNumbers.`415`
-import typings.angularCommon.angularCommonNumbers.`416`
-import typings.angularCommon.angularCommonNumbers.`417`
-import typings.angularCommon.angularCommonNumbers.`418`
-import typings.angularCommon.angularCommonNumbers.`421`
-import typings.angularCommon.angularCommonNumbers.`422`
-import typings.angularCommon.angularCommonNumbers.`423`
-import typings.angularCommon.angularCommonNumbers.`424`
-import typings.angularCommon.angularCommonNumbers.`425`
-import typings.angularCommon.angularCommonNumbers.`426`
-import typings.angularCommon.angularCommonNumbers.`428`
-import typings.angularCommon.angularCommonNumbers.`429`
-import typings.angularCommon.angularCommonNumbers.`431`
-import typings.angularCommon.angularCommonNumbers.`451`
-import typings.angularCommon.angularCommonNumbers.`500`
-import typings.angularCommon.angularCommonNumbers.`501`
-import typings.angularCommon.angularCommonNumbers.`502`
-import typings.angularCommon.angularCommonNumbers.`503`
-import typings.angularCommon.angularCommonNumbers.`504`
-import typings.angularCommon.angularCommonNumbers.`505`
-import typings.angularCommon.angularCommonNumbers.`506`
-import typings.angularCommon.angularCommonNumbers.`507`
-import typings.angularCommon.angularCommonNumbers.`508`
-import typings.angularCommon.angularCommonNumbers.`510`
-import typings.angularCommon.angularCommonNumbers.`511`
+import typings.angularCommon.angularCommonInts.`100`
+import typings.angularCommon.angularCommonInts.`101`
+import typings.angularCommon.angularCommonInts.`102`
+import typings.angularCommon.angularCommonInts.`103`
+import typings.angularCommon.angularCommonInts.`200`
+import typings.angularCommon.angularCommonInts.`201`
+import typings.angularCommon.angularCommonInts.`202`
+import typings.angularCommon.angularCommonInts.`203`
+import typings.angularCommon.angularCommonInts.`204`
+import typings.angularCommon.angularCommonInts.`205`
+import typings.angularCommon.angularCommonInts.`206`
+import typings.angularCommon.angularCommonInts.`207`
+import typings.angularCommon.angularCommonInts.`208`
+import typings.angularCommon.angularCommonInts.`226`
+import typings.angularCommon.angularCommonInts.`300`
+import typings.angularCommon.angularCommonInts.`301`
+import typings.angularCommon.angularCommonInts.`302`
+import typings.angularCommon.angularCommonInts.`303`
+import typings.angularCommon.angularCommonInts.`304`
+import typings.angularCommon.angularCommonInts.`305`
+import typings.angularCommon.angularCommonInts.`306`
+import typings.angularCommon.angularCommonInts.`307`
+import typings.angularCommon.angularCommonInts.`308`
+import typings.angularCommon.angularCommonInts.`400`
+import typings.angularCommon.angularCommonInts.`401`
+import typings.angularCommon.angularCommonInts.`402`
+import typings.angularCommon.angularCommonInts.`403`
+import typings.angularCommon.angularCommonInts.`404`
+import typings.angularCommon.angularCommonInts.`405`
+import typings.angularCommon.angularCommonInts.`406`
+import typings.angularCommon.angularCommonInts.`407`
+import typings.angularCommon.angularCommonInts.`408`
+import typings.angularCommon.angularCommonInts.`409`
+import typings.angularCommon.angularCommonInts.`410`
+import typings.angularCommon.angularCommonInts.`411`
+import typings.angularCommon.angularCommonInts.`412`
+import typings.angularCommon.angularCommonInts.`413`
+import typings.angularCommon.angularCommonInts.`414`
+import typings.angularCommon.angularCommonInts.`415`
+import typings.angularCommon.angularCommonInts.`416`
+import typings.angularCommon.angularCommonInts.`417`
+import typings.angularCommon.angularCommonInts.`418`
+import typings.angularCommon.angularCommonInts.`421`
+import typings.angularCommon.angularCommonInts.`422`
+import typings.angularCommon.angularCommonInts.`423`
+import typings.angularCommon.angularCommonInts.`424`
+import typings.angularCommon.angularCommonInts.`425`
+import typings.angularCommon.angularCommonInts.`426`
+import typings.angularCommon.angularCommonInts.`428`
+import typings.angularCommon.angularCommonInts.`429`
+import typings.angularCommon.angularCommonInts.`431`
+import typings.angularCommon.angularCommonInts.`451`
+import typings.angularCommon.angularCommonInts.`500`
+import typings.angularCommon.angularCommonInts.`501`
+import typings.angularCommon.angularCommonInts.`502`
+import typings.angularCommon.angularCommonInts.`503`
+import typings.angularCommon.angularCommonInts.`504`
+import typings.angularCommon.angularCommonInts.`505`
+import typings.angularCommon.angularCommonInts.`506`
+import typings.angularCommon.angularCommonInts.`507`
+import typings.angularCommon.angularCommonInts.`508`
+import typings.angularCommon.angularCommonInts.`510`
+import typings.angularCommon.angularCommonInts.`511`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCommon.angularCommonNumbers.`100`
-  - typings.angularCommon.angularCommonNumbers.`101`
-  - typings.angularCommon.angularCommonNumbers.`102`
-  - typings.angularCommon.angularCommonNumbers.`103`
-  - typings.angularCommon.angularCommonNumbers.`200`
-  - typings.angularCommon.angularCommonNumbers.`201`
-  - typings.angularCommon.angularCommonNumbers.`202`
-  - typings.angularCommon.angularCommonNumbers.`203`
-  - typings.angularCommon.angularCommonNumbers.`204`
-  - typings.angularCommon.angularCommonNumbers.`205`
-  - typings.angularCommon.angularCommonNumbers.`206`
-  - typings.angularCommon.angularCommonNumbers.`207`
-  - typings.angularCommon.angularCommonNumbers.`208`
-  - typings.angularCommon.angularCommonNumbers.`226`
-  - typings.angularCommon.angularCommonNumbers.`300`
-  - typings.angularCommon.angularCommonNumbers.`301`
-  - typings.angularCommon.angularCommonNumbers.`302`
-  - typings.angularCommon.angularCommonNumbers.`303`
-  - typings.angularCommon.angularCommonNumbers.`304`
-  - typings.angularCommon.angularCommonNumbers.`305`
-  - typings.angularCommon.angularCommonNumbers.`306`
-  - typings.angularCommon.angularCommonNumbers.`307`
-  - typings.angularCommon.angularCommonNumbers.`308`
-  - typings.angularCommon.angularCommonNumbers.`400`
-  - typings.angularCommon.angularCommonNumbers.`401`
-  - typings.angularCommon.angularCommonNumbers.`402`
-  - typings.angularCommon.angularCommonNumbers.`403`
-  - typings.angularCommon.angularCommonNumbers.`404`
-  - typings.angularCommon.angularCommonNumbers.`405`
-  - typings.angularCommon.angularCommonNumbers.`406`
-  - typings.angularCommon.angularCommonNumbers.`407`
-  - typings.angularCommon.angularCommonNumbers.`408`
-  - typings.angularCommon.angularCommonNumbers.`409`
-  - typings.angularCommon.angularCommonNumbers.`410`
-  - typings.angularCommon.angularCommonNumbers.`411`
-  - typings.angularCommon.angularCommonNumbers.`412`
-  - typings.angularCommon.angularCommonNumbers.`413`
-  - typings.angularCommon.angularCommonNumbers.`414`
-  - typings.angularCommon.angularCommonNumbers.`415`
-  - typings.angularCommon.angularCommonNumbers.`416`
-  - typings.angularCommon.angularCommonNumbers.`417`
-  - typings.angularCommon.angularCommonNumbers.`418`
-  - typings.angularCommon.angularCommonNumbers.`421`
-  - typings.angularCommon.angularCommonNumbers.`422`
-  - typings.angularCommon.angularCommonNumbers.`423`
-  - typings.angularCommon.angularCommonNumbers.`424`
-  - typings.angularCommon.angularCommonNumbers.`425`
-  - typings.angularCommon.angularCommonNumbers.`426`
-  - typings.angularCommon.angularCommonNumbers.`428`
-  - typings.angularCommon.angularCommonNumbers.`429`
-  - typings.angularCommon.angularCommonNumbers.`431`
-  - typings.angularCommon.angularCommonNumbers.`451`
-  - typings.angularCommon.angularCommonNumbers.`500`
-  - typings.angularCommon.angularCommonNumbers.`501`
-  - typings.angularCommon.angularCommonNumbers.`502`
-  - typings.angularCommon.angularCommonNumbers.`503`
-  - typings.angularCommon.angularCommonNumbers.`504`
-  - typings.angularCommon.angularCommonNumbers.`505`
-  - typings.angularCommon.angularCommonNumbers.`506`
-  - typings.angularCommon.angularCommonNumbers.`507`
-  - typings.angularCommon.angularCommonNumbers.`508`
-  - typings.angularCommon.angularCommonNumbers.`510`
-  - typings.angularCommon.angularCommonNumbers.`511`
+  - typings.angularCommon.angularCommonInts.`100`
+  - typings.angularCommon.angularCommonInts.`101`
+  - typings.angularCommon.angularCommonInts.`102`
+  - typings.angularCommon.angularCommonInts.`103`
+  - typings.angularCommon.angularCommonInts.`200`
+  - typings.angularCommon.angularCommonInts.`201`
+  - typings.angularCommon.angularCommonInts.`202`
+  - typings.angularCommon.angularCommonInts.`203`
+  - typings.angularCommon.angularCommonInts.`204`
+  - typings.angularCommon.angularCommonInts.`205`
+  - typings.angularCommon.angularCommonInts.`206`
+  - typings.angularCommon.angularCommonInts.`207`
+  - typings.angularCommon.angularCommonInts.`208`
+  - typings.angularCommon.angularCommonInts.`226`
+  - typings.angularCommon.angularCommonInts.`300`
+  - typings.angularCommon.angularCommonInts.`301`
+  - typings.angularCommon.angularCommonInts.`302`
+  - typings.angularCommon.angularCommonInts.`303`
+  - typings.angularCommon.angularCommonInts.`304`
+  - typings.angularCommon.angularCommonInts.`305`
+  - typings.angularCommon.angularCommonInts.`306`
+  - typings.angularCommon.angularCommonInts.`307`
+  - typings.angularCommon.angularCommonInts.`308`
+  - typings.angularCommon.angularCommonInts.`400`
+  - typings.angularCommon.angularCommonInts.`401`
+  - typings.angularCommon.angularCommonInts.`402`
+  - typings.angularCommon.angularCommonInts.`403`
+  - typings.angularCommon.angularCommonInts.`404`
+  - typings.angularCommon.angularCommonInts.`405`
+  - typings.angularCommon.angularCommonInts.`406`
+  - typings.angularCommon.angularCommonInts.`407`
+  - typings.angularCommon.angularCommonInts.`408`
+  - typings.angularCommon.angularCommonInts.`409`
+  - typings.angularCommon.angularCommonInts.`410`
+  - typings.angularCommon.angularCommonInts.`411`
+  - typings.angularCommon.angularCommonInts.`412`
+  - typings.angularCommon.angularCommonInts.`413`
+  - typings.angularCommon.angularCommonInts.`414`
+  - typings.angularCommon.angularCommonInts.`415`
+  - typings.angularCommon.angularCommonInts.`416`
+  - typings.angularCommon.angularCommonInts.`417`
+  - typings.angularCommon.angularCommonInts.`418`
+  - typings.angularCommon.angularCommonInts.`421`
+  - typings.angularCommon.angularCommonInts.`422`
+  - typings.angularCommon.angularCommonInts.`423`
+  - typings.angularCommon.angularCommonInts.`424`
+  - typings.angularCommon.angularCommonInts.`425`
+  - typings.angularCommon.angularCommonInts.`426`
+  - typings.angularCommon.angularCommonInts.`428`
+  - typings.angularCommon.angularCommonInts.`429`
+  - typings.angularCommon.angularCommonInts.`431`
+  - typings.angularCommon.angularCommonInts.`451`
+  - typings.angularCommon.angularCommonInts.`500`
+  - typings.angularCommon.angularCommonInts.`501`
+  - typings.angularCommon.angularCommonInts.`502`
+  - typings.angularCommon.angularCommonInts.`503`
+  - typings.angularCommon.angularCommonInts.`504`
+  - typings.angularCommon.angularCommonInts.`505`
+  - typings.angularCommon.angularCommonInts.`506`
+  - typings.angularCommon.angularCommonInts.`507`
+  - typings.angularCommon.angularCommonInts.`508`
+  - typings.angularCommon.angularCommonInts.`510`
+  - typings.angularCommon.angularCommonInts.`511`
 */
 trait HttpStatusCode extends StObject
 object HttpStatusCode {

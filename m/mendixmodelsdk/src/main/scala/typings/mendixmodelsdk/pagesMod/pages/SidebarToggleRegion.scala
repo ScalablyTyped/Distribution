@@ -6,25 +6,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleRegion")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleRegion")
 @js.native
-class SidebarToggleRegion protected () extends AbstractEnum {
+open class SidebarToggleRegion protected () extends AbstractEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object SidebarToggleRegion {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleRegion")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleRegion")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleRegion.Left")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleRegion.Left")
   @js.native
   def Left: SidebarToggleRegion = js.native
   inline def Left_=(x: SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleRegion.Right")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SidebarToggleRegion.Right")
   @js.native
   def Right: SidebarToggleRegion = js.native
   inline def Right_=(x: SidebarToggleRegion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.Footer")
 @js.native
-class Footer protected ()
+open class Footer protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.Footer {
   def this(
     model: AbstractModel,

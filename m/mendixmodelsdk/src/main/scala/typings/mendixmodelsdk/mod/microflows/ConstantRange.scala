@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.ConstantRange")
 @js.native
-class ConstantRange protected ()
+open class ConstantRange protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ConstantRange {
   def this(
     model: AbstractModel,

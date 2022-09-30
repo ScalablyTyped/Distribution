@@ -77,7 +77,7 @@ object global {
       
       inline def escapeExpression(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeExpression")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      inline def extend(obj: Any, source: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(obj.asInstanceOf[js.Any]).`++`(source.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+      inline def extend(obj: Any, source: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(obj.asInstanceOf[js.Any]).`++`(source.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
       
       inline def isArray(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       

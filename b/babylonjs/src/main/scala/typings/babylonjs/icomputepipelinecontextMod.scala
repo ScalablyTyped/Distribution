@@ -8,10 +8,10 @@ object icomputepipelinecontextMod {
   
   trait IComputePipelineContext extends StObject {
     
-    /** @hidden */
+    /** @internal */
     def _getComputeShaderCode(): String | Null
     
-    /** @hidden */
+    /** @internal */
     var _name: js.UndefOr[String] = js.undefined
     
     /** Releases the resources associated with the pipeline. */

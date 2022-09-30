@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Location
 import typings.storefrontUiVue.storefrontUiVueStrings.`Add to wishlist`
 import typings.storefrontUiVue.storefrontUiVueStrings.`Remove from wishlist`
-import typings.storefrontUiVue.storefrontUiVueStrings.`sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist`
 import typings.storefrontUiVue.storefrontUiVueStrings.`sf-product-card-horizontal__wishlist-icon`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ object SfProductCardHorizontal extends Shortcut {
     
     var linkComponentTag: String
     
-    var wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | (`sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist`)
+    var wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | String
   }
   object Computed {
     
@@ -32,7 +31,7 @@ object SfProductCardHorizontal extends Shortcut {
       ariaLabel: (`Remove from wishlist`) | (`Add to wishlist`),
       currentWishlistIcon: Icon,
       linkComponentTag: String,
-      wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | (`sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist`)
+      wishlistIconClasses: `sf-product-card-horizontal__wishlist-icon` | String
     ): Computed = {
       val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], currentWishlistIcon = currentWishlistIcon.asInstanceOf[js.Any], linkComponentTag = linkComponentTag.asInstanceOf[js.Any], wishlistIconClasses = wishlistIconClasses.asInstanceOf[js.Any])
       __obj.asInstanceOf[Computed]
@@ -46,9 +45,7 @@ object SfProductCardHorizontal extends Shortcut {
       
       inline def setLinkComponentTag(value: String): Self = StObject.set(x, "linkComponentTag", value.asInstanceOf[js.Any])
       
-      inline def setWishlistIconClasses(
-        value: `sf-product-card-horizontal__wishlist-icon` | (`sf-product-card-horizontal__wishlist-icon sf-product-card-horizontal--on-wishlist`)
-      ): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
+      inline def setWishlistIconClasses(value: `sf-product-card-horizontal__wishlist-icon` | String): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,9 +1,9 @@
 package typings.fluentuiMergeStyles
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`0`
-import typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`1`
-import typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`2`
+import typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`0`
+import typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`1`
+import typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`2`
 import typings.fluentuiMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,9 +13,9 @@ object stylesheetMod {
   
   /* Inlined {  none :0,   insertNode :1,   appendChild :2}[keyof {  none :0,   insertNode :1,   appendChild :2}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`0`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`1`
-    - typings.fluentuiMergeStyles.fluentuiMergeStylesNumbers.`2`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`0`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`1`
+    - typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`2`
   */
   trait InjectionMode extends StObject
   object InjectionMode {

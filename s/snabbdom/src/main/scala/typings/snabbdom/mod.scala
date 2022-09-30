@@ -25,8 +25,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Fragment_(data: Null, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
-  inline def Fragment_(data: Key, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
+  inline def Fragment_(data: Null, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(scala.List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
+  inline def Fragment_(data: Key, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(scala.List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
   
   inline def array(arg: Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
@@ -65,10 +65,10 @@ object mod {
   inline def init(modules: js.Array[PartialModule], domApi: DOMAPI): js.Function2[/* oldVnode */ VNode_ | Element | DocumentFragment, /* vnode */ VNode_, VNode_] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(modules.asInstanceOf[js.Any], domApi.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* oldVnode */ VNode_ | Element | DocumentFragment, /* vnode */ VNode_, VNode_]]
   inline def init(modules: js.Array[PartialModule], domApi: DOMAPI, options: Options): js.Function2[/* oldVnode */ VNode_ | Element | DocumentFragment, /* vnode */ VNode_, VNode_] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(modules.asInstanceOf[js.Any], domApi.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* oldVnode */ VNode_ | Element | DocumentFragment, /* vnode */ VNode_, VNode_]]
   
-  inline def jsx(tag: String, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
-  inline def jsx(tag: String, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
-  inline def jsx(tag: FunctionComponent, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
-  inline def jsx(tag: FunctionComponent, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: String, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: String, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: FunctionComponent, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: FunctionComponent, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
   
   inline def primitive(s: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("primitive")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

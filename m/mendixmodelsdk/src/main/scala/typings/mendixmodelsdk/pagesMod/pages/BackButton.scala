@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 7.0.2: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.BackButton")
 @js.native
-class BackButton protected () extends Button {
+open class BackButton protected () extends Button {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,7 +31,7 @@ class BackButton protected () extends Button {
 }
 object BackButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.BackButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -286,13 +286,13 @@ object BackButton {
   inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.BackButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.BackButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

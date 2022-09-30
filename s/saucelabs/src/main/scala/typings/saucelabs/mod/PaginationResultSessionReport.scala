@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PaginationResultSessionReport
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var entities: js.UndefOr[js.Array[SessionReport]] = js.undefined
   
@@ -26,7 +26,7 @@ object PaginationResultSessionReport {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: SessionReport*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: SessionReport*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setMetaData(value: PaginationSettings): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     

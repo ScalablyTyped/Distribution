@@ -127,9 +127,9 @@ object global {
       *    [strings]   - same string array you'd use to set fn.$inject
       *    (...string) - string arguments turned into a string array
       */
-    inline def inject(context: js.Function, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(List(context.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-    inline def inject(context: Unit, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(List(context.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-    inline def inject(context: Context, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(List(context.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def inject(context: js.Function, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(scala.List(context.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def inject(context: Unit, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(scala.List(context.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def inject(context: Context, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(scala.List(context.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     /**
       * Write to console if bard debugging flag is on

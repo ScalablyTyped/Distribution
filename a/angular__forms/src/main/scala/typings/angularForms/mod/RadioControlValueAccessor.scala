@@ -5,40 +5,46 @@ import typings.angularCore.mod.Injector
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.OnInit
 import typings.angularCore.mod.Renderer2
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularForms.angularFormsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "RadioControlValueAccessor")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.angularForms.mod.ControlValueAccessor because var conflicts: setDisabledState. Inlined writeValue */ @JSImport("@angular/forms", "RadioControlValueAccessor")
 @js.native
-class RadioControlValueAccessor protected ()
+open class RadioControlValueAccessor protected ()
   extends StObject
-     with ControlValueAccessor
+     with BaseControlValueAccessor
      with OnDestroy
      with OnInit {
   def this(
-    _renderer: Renderer2,
-    _elementRef: ElementRef[js.Any],
-    _registry: ɵangularPackagesFormsFormsN,
+    renderer: Renderer2,
+    elementRef: ElementRef[Any],
+    _registry: RadioControlRegistry,
     _injector: Injector
   ) = this()
   
-  /* private */ var _checkName: js.Any = js.native
+  /* private */ var _checkName: Any = js.native
   
-  /* private */ var _elementRef: js.Any = js.native
+  /* private */ /* CompleteClass */
+  var _elementRef: Any = js.native
   
-  /* private */ var _injector: js.Any = js.native
+  /* private */ var _injector: Any = js.native
   
-  /* private */ var _registry: js.Any = js.native
+  /* private */ var _registry: Any = js.native
   
-  /* private */ var _renderer: js.Any = js.native
+  /* private */ /* CompleteClass */
+  var _renderer: Any = js.native
   
   /**
     * Sets the "value" on the radio input element and unchecks it.
     *
     * @param value
     */
-  def fireUncheck(value: js.Any): Unit = js.native
+  def fireUncheck(value: Any): Unit = js.native
   
   /**
     * @description
@@ -72,109 +78,66 @@ class RadioControlValueAccessor protected ()
   
   /**
     * The registered callback function called when a change event occurs on the input element.
+    * Note: we declare `onChange` here (also used as host listener) as a function with no arguments
+    * to override the `onChange` function (which expects 1 argument) in the parent
+    * `BaseControlValueAccessor` class.
     * @nodoc
     */
   def onChange(): Unit = js.native
+  /**
+    * The registered callback function called when a change or input event occurs on the input
+    * element.
+    * @nodoc
+    */
+  /* CompleteClass */
+  override def onChange(_underscore: Any): Unit = js.native
   
   /**
     * The registered callback function called when a blur event occurs on the input element.
     * @nodoc
     */
-  def onTouched(): Unit = js.native
-  
-  /**
-    * @description
-    * Registers a callback function that is called when the control's value
-    * changes in the UI.
-    *
-    * This method is called by the forms API on initialization to update the form
-    * model when values propagate from the view to the model.
-    *
-    * When implementing the `registerOnChange` method in your own value accessor,
-    * save the given function so your class calls it at the appropriate time.
-    *
-    * @usageNotes
-    * ### Store the change function
-    *
-    * The following example stores the provided function as an internal method.
-    *
-    * ```ts
-    * registerOnChange(fn: (_: any) => void): void {
-    *   this._onChange = fn;
-    * }
-    * ```
-    *
-    * When the value changes in the UI, call the registered
-    * function to allow the forms API to update itself:
-    *
-    * ```ts
-    * host: {
-    *    '(change)': '_onChange($event.target.value)'
-    * }
-    * ```
-    *
-    * @param fn The callback function to register
-    */
   /* CompleteClass */
-  override def registerOnChange(fn: js.Any): Unit = js.native
+  override def onTouched(): Unit = js.native
+  
   /**
     * Registers a function called when the control value changes.
     * @nodoc
     */
-  def registerOnChange(fn: js.Function1[/* _ */ js.Any, js.Object]): Unit = js.native
-  
-  /**
-    * @description
-    * Registers a callback function that is called by the forms API on initialization
-    * to update the form model on blur.
-    *
-    * When implementing `registerOnTouched` in your own value accessor, save the given
-    * function so your class calls it when the control should be considered
-    * blurred or "touched".
-    *
-    * @usageNotes
-    * ### Store the callback function
-    *
-    * The following example stores the provided function as an internal method.
-    *
-    * ```ts
-    * registerOnTouched(fn: any): void {
-    *   this._onTouched = fn;
-    * }
-    * ```
-    *
-    * On blur (or equivalent), your class should call the registered function to allow
-    * the forms API to update itself:
-    *
-    * ```ts
-    * host: {
-    *    '(blur)': '_onTouched()'
-    * }
-    * ```
-    *
-    * @param fn The callback function to register
-    */
   /* CompleteClass */
-  override def registerOnTouched(fn: js.Any): Unit = js.native
+  override def registerOnChange(fn: js.Function1[/* _ */ Any, js.Object]): Unit = js.native
+  
   /**
     * Registers a function called when the control is touched.
     * @nodoc
     */
-  def registerOnTouched(fn: js.Function0[js.Object]): Unit = js.native
+  /* CompleteClass */
+  override def registerOnTouched(fn: js.Function0[Unit]): Unit = js.native
   
   /**
-    * Sets the "disabled" property on the input element.
+    * Sets the "disabled" property on the range input element.
     * @nodoc
     */
-  @JSName("setDisabledState")
-  def setDisabledState_MRadioControlValueAccessor(isDisabled: Boolean): Unit = js.native
+  /* CompleteClass */
+  override def setDisabledState(isDisabled: Boolean): Unit = js.native
+  
+  /**
+    * Helper method that sets a property on a target element using the current Renderer
+    * implementation.
+    * @nodoc
+    */
+  /* protected */ /* CompleteClass */
+  override def setProperty(key: String, value: Any): Unit = js.native
   
   /**
     * @description
     * Tracks the value of the radio input element
     */
-  var value: js.Any = js.native
+  var value: Any = js.native
   
+  /**
+    * Sets the "checked" property value on the radio input element.
+    * @nodoc
+    */
   /**
     * @description
     * Writes a new value to the element.
@@ -195,6 +158,42 @@ class RadioControlValueAccessor protected ()
     *
     * @param obj The new value for the element
     */
-  /* CompleteClass */
-  override def writeValue(obj: js.Any): Unit = js.native
+  def writeValue(value: Any): Unit = js.native
+}
+/* static members */
+object RadioControlValueAccessor {
+  
+  @JSImport("@angular/forms", "RadioControlValueAccessor")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "RadioControlValueAccessor.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    RadioControlValueAccessor, 
+    String, 
+    scala.Nothing, 
+    typings.angularForms.anon.FormControlName, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      RadioControlValueAccessor, 
+      String, 
+      scala.Nothing, 
+      typings.angularForms.anon.FormControlName, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "RadioControlValueAccessor.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[RadioControlValueAccessor, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[RadioControlValueAccessor, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

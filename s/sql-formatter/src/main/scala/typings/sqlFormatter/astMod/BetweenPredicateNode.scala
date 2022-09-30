@@ -10,9 +10,9 @@ trait BetweenPredicateNode
      with BaseNode
      with AstNode {
   
-  var and: KeywordNode
+  var andKw: KeywordNode
   
-  var between: KeywordNode
+  var betweenKw: KeywordNode
   
   var expr1: js.Array[AstNode]
   
@@ -23,22 +23,22 @@ trait BetweenPredicateNode
 object BetweenPredicateNode {
   
   inline def apply(
-    and: KeywordNode,
-    between: KeywordNode,
+    andKw: KeywordNode,
+    betweenKw: KeywordNode,
     expr1: js.Array[AstNode],
     expr2: js.Array[AstNode],
     `type`: between_predicate
   ): BetweenPredicateNode = {
-    val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], between = between.asInstanceOf[js.Any], expr1 = expr1.asInstanceOf[js.Any], expr2 = expr2.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(andKw = andKw.asInstanceOf[js.Any], betweenKw = betweenKw.asInstanceOf[js.Any], expr1 = expr1.asInstanceOf[js.Any], expr2 = expr2.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BetweenPredicateNode]
   }
   
   extension [Self <: BetweenPredicateNode](x: Self) {
     
-    inline def setAnd(value: KeywordNode): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAndKw(value: KeywordNode): Self = StObject.set(x, "andKw", value.asInstanceOf[js.Any])
     
-    inline def setBetween(value: KeywordNode): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
+    inline def setBetweenKw(value: KeywordNode): Self = StObject.set(x, "betweenKw", value.asInstanceOf[js.Any])
     
     inline def setExpr1(value: js.Array[AstNode]): Self = StObject.set(x, "expr1", value.asInstanceOf[js.Any])
     

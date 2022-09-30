@@ -1,0 +1,26 @@
+package typings.carbonElements.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Productive extends StObject {
+  
+  var expressive: String
+  
+  var productive: String
+}
+object Productive {
+  
+  inline def apply(): Productive = {
+    val __obj = js.Dynamic.literal(expressive = "cubic-bezier(0, 0, 0.3, 1)", productive = "cubic-bezier(0, 0, 0.38, 0.9)")
+    __obj.asInstanceOf[Productive]
+  }
+  
+  extension [Self <: Productive](x: Self) {
+    
+    inline def setExpressive(value: String): Self = StObject.set(x, "expressive", value.asInstanceOf[js.Any])
+    
+    inline def setProductive(value: String): Self = StObject.set(x, "productive", value.asInstanceOf[js.Any])
+  }
+}

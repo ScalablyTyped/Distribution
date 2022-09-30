@@ -9,7 +9,7 @@ import typings.qiniuJs.apiMod.UploadCompleteData
 import typings.qiniuJs.baseMod.UploadInfo
 import typings.qiniuJs.errorsMod.QiniuNetworkError
 import typings.qiniuJs.errorsMod.QiniuRequestError
-import typings.qiniuJs.helperMod.Response
+import typings.qiniuJs.helperMod.ResponseSuccess
 import typings.qiniuJs.qiniuJsStrings.deleteUploadedChunks
 import typings.qiniuJs.qiniuJsStrings.direct
 import typings.qiniuJs.qiniuJsStrings.getUpHosts
@@ -39,7 +39,7 @@ object indexMockMod {
           /* token */ String, 
           /* key */ js.UndefOr[String | Null], 
           /* uploadinfo */ UploadInfo, 
-          Response[Unit]
+          js.Promise[ResponseSuccess[Unit]]
         ]
       ] = js.native
     
@@ -67,7 +67,7 @@ object indexMockMod {
           /* bucket */ String, 
           /* key */ js.UndefOr[String | Null], 
           /* uploadUrl */ String, 
-          Response[InitPartsData]
+          js.Promise[ResponseSuccess[InitPartsData]]
         ]
       ] = js.native
     
@@ -90,7 +90,7 @@ object indexMockMod {
           /* token */ String, 
           /* key */ js.UndefOr[String | Null], 
           /* uploadinfo */ UploadInfo, 
-          Response[Unit]
+          js.Promise[ResponseSuccess[Unit]]
         ]
     ): Unit = js.native
     @JSName("setInterceptor")
@@ -111,7 +111,7 @@ object indexMockMod {
           /* bucket */ String, 
           /* key */ js.UndefOr[String | Null], 
           /* uploadUrl */ String, 
-          Response[InitPartsData]
+          js.Promise[ResponseSuccess[InitPartsData]]
         ]
     ): Unit = js.native
     @JSName("setInterceptor")
@@ -123,7 +123,7 @@ object indexMockMod {
           /* index */ Double, 
           /* uploadInfo */ UploadInfo, 
           /* options */ PartialRequestOptionsmd5s, 
-          Response[UploadChunkData]
+          js.Promise[ResponseSuccess[UploadChunkData]]
         ]
     ): Unit = js.native
     @JSName("setInterceptor")
@@ -134,7 +134,7 @@ object indexMockMod {
           /* key */ js.UndefOr[String | Null], 
           /* uploadInfo */ UploadInfo, 
           /* options */ PartialRequestOptions, 
-          Response[UploadCompleteData]
+          js.Promise[ResponseSuccess[UploadCompleteData]]
         ]
     ): Unit = js.native
     
@@ -145,7 +145,7 @@ object indexMockMod {
           /* index */ Double, 
           /* uploadInfo */ UploadInfo, 
           /* options */ PartialRequestOptionsmd5s, 
-          Response[UploadChunkData]
+          js.Promise[ResponseSuccess[UploadChunkData]]
         ]
       ] = js.native
     
@@ -155,7 +155,7 @@ object indexMockMod {
           /* key */ js.UndefOr[String | Null], 
           /* uploadInfo */ UploadInfo, 
           /* options */ PartialRequestOptions, 
-          Response[UploadCompleteData]
+          js.Promise[ResponseSuccess[UploadCompleteData]]
         ]
       ] = js.native
   }

@@ -1,10 +1,10 @@
 package typings.estimatedReadTime
 
-import typings.estimatedReadTime.estimatedReadTimeNumbers.`1`
-import typings.estimatedReadTime.estimatedReadTimeNumbers.`2`
-import typings.estimatedReadTime.estimatedReadTimeNumbers.`3`
-import typings.estimatedReadTime.estimatedReadTimeNumbers.`4`
-import typings.estimatedReadTime.estimatedReadTimeNumbers.`5`
+import typings.estimatedReadTime.estimatedReadTimeInts.`1`
+import typings.estimatedReadTime.estimatedReadTimeInts.`2`
+import typings.estimatedReadTime.estimatedReadTimeInts.`3`
+import typings.estimatedReadTime.estimatedReadTimeInts.`4`
+import typings.estimatedReadTime.estimatedReadTimeInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

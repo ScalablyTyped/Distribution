@@ -5,7 +5,6 @@ import typings.googleGax.iamServiceMod.google.protobuf.IFieldDescriptorProto
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FieldDescriptorProto.
   * @param [properties] Properties to set
   */
-class FieldDescriptorProto ()
+open class FieldDescriptorProto ()
   extends typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto {
   def this(properties: IFieldDescriptorProto) = this()
 }
@@ -100,6 +99,8 @@ object FieldDescriptorProto {
   inline def create(): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   inline def create(properties: IFieldDescriptorProto): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -111,9 +112,8 @@ object FieldDescriptorProto {
   /* static member */
   inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
-  inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
-  inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -123,7 +123,6 @@ object FieldDescriptorProto {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
-  inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   
   /**
     * Encodes the specified FieldDescriptorProto message. Does not implicitly {@link google.protobuf.FieldDescriptorProto.verify|verify} messages.
@@ -151,7 +150,7 @@ object FieldDescriptorProto {
     * @returns FieldDescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto]
   
   /**
     * Creates a plain object from a FieldDescriptorProto message. Also converts values to other types if specified.
@@ -160,11 +159,11 @@ object FieldDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
     message: typings.googleGax.iamServiceMod.google.protobuf.FieldDescriptorProto,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a FieldDescriptorProto message.
@@ -172,5 +171,5 @@ object FieldDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

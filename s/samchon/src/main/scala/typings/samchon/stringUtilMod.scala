@@ -98,7 +98,7 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the beginning
       */
-    inline def ltrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def ltrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(scala.List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Number to formatted string with &quot;,&quot; sign.
@@ -156,7 +156,7 @@ object stringUtilMod {
     inline def replaceAll(
       str: String,
       pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ Any)*
-    ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(List(str.asInstanceOf[js.Any]).`++`(pairs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(scala.List(str.asInstanceOf[js.Any]).`++`(pairs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the end of the specified string.
@@ -166,7 +166,7 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the end.
       */
-    inline def rtrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def rtrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(scala.List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified string.
@@ -180,7 +180,7 @@ object stringUtilMod {
       *
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    inline def substitute(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def substitute(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified SQL-string.
@@ -194,7 +194,7 @@ object stringUtilMod {
       *
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    inline def substituteSQL(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def substituteSQL(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the beginning and end of the specified string.
@@ -204,6 +204,6 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the beginning and end.
       */
-    inline def trim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def trim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(scala.List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   }
 }

@@ -4,6 +4,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
+import typings.std.PromiseLike
 import typings.wordpressComponents.autocompleteMod.Autocomplete.Props
 import typings.wordpressRichText.mod.Value
 import org.scalablytyped.runtime.StObject
@@ -75,7 +76,7 @@ object autocompleteMod {
         * @param value - the value of the completer option.
         * @param query - the text value of the autocomplete query.
         */
-      def getOptionCompletion(value: js.Any, query: String): OptionCompletion
+      def getOptionCompletion(value: Any, query: String): OptionCompletion
       
       /**
         * A function that returns the keywords for the specified option.
@@ -120,7 +121,7 @@ object autocompleteMod {
         * those options are rendered and what their completions should be when
         * selected.
         */
-      var options: (js.Function1[/* query */ String, js.Thenable[js.Array[T]] | js.Array[T]]) | js.Array[T]
+      var options: (js.Function1[/* query */ String, PromiseLike[js.Array[T]] | js.Array[T]]) | js.Array[T]
       
       /**
         * The string prefix that should trigger the completer. For example,
@@ -132,10 +133,10 @@ object autocompleteMod {
     object Completer {
       
       inline def apply[T](
-        getOptionCompletion: (js.Any, String) => OptionCompletion,
+        getOptionCompletion: (Any, String) => OptionCompletion,
         getOptionLabel: T => ReactNode,
         name: String,
-        options: (js.Function1[/* query */ String, js.Thenable[js.Array[T]] | js.Array[T]]) | js.Array[T],
+        options: (js.Function1[/* query */ String, PromiseLike[js.Array[T]] | js.Array[T]]) | js.Array[T],
         triggerPrefix: String
       ): Completer[T] = {
         val __obj = js.Dynamic.literal(getOptionCompletion = js.Any.fromFunction2(getOptionCompletion), getOptionLabel = js.Any.fromFunction1(getOptionLabel), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], triggerPrefix = triggerPrefix.asInstanceOf[js.Any])
@@ -152,7 +153,7 @@ object autocompleteMod {
         
         inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        inline def setGetOptionCompletion(value: (js.Any, String) => OptionCompletion): Self = StObject.set(x, "getOptionCompletion", js.Any.fromFunction2(value))
+        inline def setGetOptionCompletion(value: (Any, String) => OptionCompletion): Self = StObject.set(x, "getOptionCompletion", js.Any.fromFunction2(value))
         
         inline def setGetOptionKeywords(value: /* option */ T => js.Array[String]): Self = StObject.set(x, "getOptionKeywords", js.Any.fromFunction1(value))
         
@@ -170,11 +171,11 @@ object autocompleteMod {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        inline def setOptions(value: (js.Function1[/* query */ String, js.Thenable[js.Array[T]] | js.Array[T]]) | js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: (js.Function1[/* query */ String, PromiseLike[js.Array[T]] | js.Array[T]]) | js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        inline def setOptionsFunction1(value: /* query */ String => js.Thenable[js.Array[T]] | js.Array[T]): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+        inline def setOptionsFunction1(value: /* query */ String => PromiseLike[js.Array[T]] | js.Array[T]): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
         
-        inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
+        inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value*))
         
         inline def setTriggerPrefix(value: String): Self = StObject.set(x, "triggerPrefix", value.asInstanceOf[js.Any])
       }
@@ -214,7 +215,7 @@ object autocompleteMod {
         
         inline def setCompleters(value: js.Array[Completer[T]]): Self = StObject.set(x, "completers", value.asInstanceOf[js.Any])
         
-        inline def setCompletersVarargs(value: Completer[T]*): Self = StObject.set(x, "completers", js.Array(value :_*))
+        inline def setCompletersVarargs(value: Completer[T]*): Self = StObject.set(x, "completers", js.Array(value*))
         
         inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
         

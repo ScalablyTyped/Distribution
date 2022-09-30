@@ -12,5 +12,5 @@ object keyframesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Props](strings: Styles[Props], interpolations: Interpolation[Props]*): typings.styledComponents.distModelsKeyframesMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(strings.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.styledComponents.distModelsKeyframesMod.default]
+  inline def default[Props](strings: Styles[Props], interpolations: Interpolation[Props]*): typings.styledComponents.distModelsKeyframesMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(strings.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.styledComponents.distModelsKeyframesMod.default]
 }

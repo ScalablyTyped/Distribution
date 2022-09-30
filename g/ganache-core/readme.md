@@ -1,7 +1,7 @@
 
 # Scala.js typings for ganache-core
 
-Typings are for version 2.13.1
+Typings are for version 2.13.2
 
 ## Library description:
 [![npm Version](https://img.shields.io/npm/v/ganache-core.svg)](https://www.npmjs.com/package/ganache-core) [![npm Downloads](https://img.shields.io/npm/dm/ganache-core.svg)](https://www.npmjs.com/package/ganache-core) [![Build Status](https://travis-ci.o
@@ -10,10 +10,10 @@ Typings are for version 2.13.1
 | ------------------ | :-------------: |
 | Full name          | ganache-core |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 86 |
-| # downloads        | 1133048 |
-| # stars            | 0 |
+| # releases         | 30 |
+| # dependents       | 0.0 |
+| # downloads        | 378756.3333333333 |
+| # stars            | 1845.0 |
 
 ## Links
 - [Homepage](https://github.com/trufflesuite/ganache-core#readme)

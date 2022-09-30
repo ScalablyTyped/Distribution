@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object matchesTypeMod {
   
-  @JSImport("dnd-core/lib/utils/matchesType", JSImport.Namespace)
+  @JSImport("dnd-core/dist/utils/matchesType", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

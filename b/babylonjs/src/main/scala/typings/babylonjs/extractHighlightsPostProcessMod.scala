@@ -25,12 +25,12 @@ object extractHighlightsPostProcessMod {
       blockCompilation: js.UndefOr[Boolean]
     ) = this()
     
-    /** @hidden */
+    /** @internal */
     var _exposure: Double = js.native
     
     /**
       * Post process which has the input texture to be used when performing highlight extraction
-      * @hidden
+      * @internal
       */
     var _inputPostProcess: Nullable[PostProcess] = js.native
     

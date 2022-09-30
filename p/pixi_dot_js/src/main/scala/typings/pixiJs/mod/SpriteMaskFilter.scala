@@ -1,38 +1,29 @@
 package typings.pixiJs.mod
 
+import typings.pixiCore.mod.IMaskTarget
+import typings.pixiUtils.mod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This handles a Sprite acting as a mask, as opposed to a Graphic.
-  *
-  * WebGL only.
-  *
-  * @class
-  * @extends PIXI.Filter
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "SpriteMaskFilter")
 @js.native
-class SpriteMaskFilter protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.SpriteMaskFilter {
-  def this(sprite: typings.pixiJs.PIXI.Sprite) = this()
-  
+/**
+  * @param vertexSrc - The source of the vertex shader.
+  * @param fragmentSrc - The source of the fragment shader.
+  * @param uniforms - Custom uniforms to use to augment the built-in ones.
+  */
+open class SpriteMaskFilter ()
+  extends typings.pixiCore.mod.SpriteMaskFilter {
   /**
-    * Program that the shader uses
-    *
-    * @member {PIXI.Program} PIXI.Shader#program
+    * @param {PIXI.Sprite} sprite - The target sprite.
     */
-  /* CompleteClass */
-  var program: typings.pixiJs.PIXI.Program = js.native
-  
-  /**
-    * Shader uniform values, shortcut for `uniformGroup.uniforms`
-    * @readonly
-    * @member {object}
-    */
-  /* CompleteClass */
-  override val uniforms: js.Any = js.native
+  def this(sprite: IMaskTarget) = this()
+  def this(vertexSrc: String) = this()
+  def this(vertexSrc: String, fragmentSrc: String) = this()
+  def this(vertexSrc: Unit, fragmentSrc: String) = this()
+  def this(vertexSrc: String, fragmentSrc: String, uniforms: Dict[Any]) = this()
+  def this(vertexSrc: String, fragmentSrc: Unit, uniforms: Dict[Any]) = this()
+  def this(vertexSrc: Unit, fragmentSrc: String, uniforms: Dict[Any]) = this()
+  def this(vertexSrc: Unit, fragmentSrc: Unit, uniforms: Dict[Any]) = this()
 }

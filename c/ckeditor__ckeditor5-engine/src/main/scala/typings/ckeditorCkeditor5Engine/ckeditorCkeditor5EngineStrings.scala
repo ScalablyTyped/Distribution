@@ -105,10 +105,6 @@ object ckeditorCkeditor5EngineStrings {
   inline def addMarker: addMarker = "addMarker".asInstanceOf[addMarker]
   
   @js.native
-  sealed trait addMarkerColon$LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def addMarkerColon$LeftcurlybracketstringRightcurlybracket: addMarkerColon$LeftcurlybracketstringRightcurlybracket = "addMarker:${string}".asInstanceOf[addMarkerColon$LeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
   sealed trait addRootAttribute extends StObject
   inline def addRootAttribute: addRootAttribute = "addRootAttribute".asInstanceOf[addRootAttribute]
   
@@ -146,14 +142,6 @@ object ckeditorCkeditor5EngineStrings {
   @js.native
   sealed trait attribute extends StObject
   inline def attribute: attribute = "attribute".asInstanceOf[attribute]
-  
-  @js.native
-  sealed trait attributeColon$LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def attributeColon$LeftcurlybracketstringRightcurlybracket: attributeColon$LeftcurlybracketstringRightcurlybracket = "attribute:${string}".asInstanceOf[attributeColon$LeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
-  sealed trait attributeColonDollarLeftcurlybracketstringRightcurlybracketColonDollartext extends StObject
-  inline def attributeColonDollarLeftcurlybracketstringRightcurlybracketColonDollartext: attributeColonDollarLeftcurlybracketstringRightcurlybracketColonDollartext = "attribute:${string}:$text".asInstanceOf[attributeColonDollarLeftcurlybracketstringRightcurlybracketColonDollartext]
   
   @js.native
   sealed trait attributeElement extends StObject
@@ -397,10 +385,6 @@ object ckeditorCkeditor5EngineStrings {
   inline def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait elementColon$LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def elementColon$LeftcurlybracketstringRightcurlybracket: elementColon$LeftcurlybracketstringRightcurlybracket = "element:${string}".asInstanceOf[elementColon$LeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
   sealed trait elementEnd
     extends StObject
        with typings.ckeditorCkeditor5Engine.viewTreewalkerMod.TreeWalkerValueType
@@ -496,10 +480,6 @@ object ckeditorCkeditor5EngineStrings {
   @js.native
   sealed trait insert extends StObject
   inline def insert: insert = "insert".asInstanceOf[insert]
-  
-  @js.native
-  sealed trait insertColon$LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def insertColon$LeftcurlybracketstringRightcurlybracket: insertColon$LeftcurlybracketstringRightcurlybracket = "insert:${string}".asInstanceOf[insertColon$LeftcurlybracketstringRightcurlybracket]
   
   @js.native
   sealed trait insertColon$text extends StObject

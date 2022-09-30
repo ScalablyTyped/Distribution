@@ -1,6 +1,8 @@
 package typings.reduxSagaCore
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferConstructor
+import typings.node.bufferMod.global.BufferEncoding
 import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
@@ -8,9 +10,9 @@ import typings.redux.mod.Middleware
 import typings.reduxSagaCore.anon.Args
 import typings.reduxSagaCore.anon.Effect
 import typings.reduxSagaCore.effectsMod.ForkEffect
-import typings.std.Error
 import typings.std.Parameters
 import typings.std.Partial
+import typings.std.SharedArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,14 +26,75 @@ object typesMod {
   inline def default[C /* <: js.Object */](): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SagaMiddleware[C]]
   inline def default[C /* <: js.Object */](options: SagaMiddlewareOptions[C]): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SagaMiddleware[C]]
   
+  @JSImport("@redux-saga/core/types", "Buffer")
+  @js.native
+  def Buffer: BufferConstructor = js.native
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@redux-saga/core/types", "Buffer")
+  @js.native
+  open class BufferCls protected ()
+    extends StObject
+       with Buffer {
+    /**
+      * Produces a Buffer backed by the same allocated memory as
+      * the given {ArrayBuffer}/{SharedArrayBuffer}.
+      *
+      *
+      * @param arrayBuffer The ArrayBuffer with which to share memory.
+      * @deprecated since v10.0.0 - Use `Buffer.from(arrayBuffer[, byteOffset[, length]])` instead.
+      */
+    def this(arrayBuffer: js.typedarray.ArrayBuffer) = this()
+    def this(arrayBuffer: SharedArrayBuffer) = this()
+    /**
+      * Allocates a new buffer containing the given {array} of octets.
+      *
+      * @param array The octets to store.
+      * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
+      */
+    def this(array: js.Array[Any]) = this()
+    /**
+      * Allocates a new buffer containing the given {array} of octets.
+      *
+      * @param array The octets to store.
+      * @deprecated since v10.0.0 - Use `Buffer.from(array)` instead.
+      */
+    def this(array: js.typedarray.Uint8Array) = this()
+    /**
+      * Copies the passed {buffer} data onto a new {Buffer} instance.
+      *
+      * @param buffer The buffer to copy.
+      * @deprecated since v10.0.0 - Use `Buffer.from(buffer)` instead.
+      */
+    def this(buffer: Buffer) = this()
+    /**
+      * Allocates a new buffer of {size} octets.
+      *
+      * @param size count of octets to allocate.
+      * @deprecated since v10.0.0 - Use `Buffer.alloc()` instead (also see `Buffer.allocUnsafe()`).
+      */
+    def this(size: Double) = this()
+    /**
+      * Allocates a new buffer containing the given {str}.
+      *
+      * @param str String to store in buffer.
+      * @param encoding encoding to use, optional.  Default is 'utf8'
+      * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
+      */
+    def this(str: String) = this()
+    def this(str: String, encoding: BufferEncoding) = this()
+  }
+  
+  inline def Buffer_=(x: BufferConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Buffer")(x.asInstanceOf[js.Any])
+  
   @JSImport("@redux-saga/core/types", "CANCEL")
   @js.native
   val CANCEL: String = js.native
   
   @JSImport("@redux-saga/core/types", "END")
   @js.native
-  val END: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndType */ js.Any = js.native
-  type END = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndType */ js.Any
+  val END: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndType */ Any = js.native
+  type END = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndType */ Any
   
   object buffers {
     
@@ -71,27 +134,27 @@ object typesMod {
     inline def sliding[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sliding")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   }
   
-  inline def channel[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")().asInstanceOf[js.Any]
-  inline def channel[T](buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def channel[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")().asInstanceOf[Any]
+  inline def channel[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](buffer: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def detach(forkEffect: ForkEffect): ForkEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(forkEffect.asInstanceOf[js.Any]).asInstanceOf[ForkEffect]
   
-  inline def eventChannel[T](subscribe: Subscribe[T]): EventChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any]).asInstanceOf[EventChannel_[T]]
-  inline def eventChannel[T](subscribe: Subscribe[T], buffer: Buffer): EventChannel_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[EventChannel_[T]]
+  inline def eventChannel[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](subscribe: Subscribe[T]): EventChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any]).asInstanceOf[EventChannel_[T]]
+  inline def eventChannel[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](subscribe: Subscribe[T], buffer: Buffer): EventChannel_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[EventChannel_[T]]
   
-  inline def multicastChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicastChannel")().asInstanceOf[MulticastChannel_[T]]
+  inline def multicastChannel[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicastChannel")().asInstanceOf[MulticastChannel_[T]]
   
-  inline def runSaga[Action, State, S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any */](
+  inline def runSaga[Action, State, S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ Any */](
     options: RunSagaOptions[Action, State],
     saga: S,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runSaga")(options.asInstanceOf[js.Any], saga.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runSaga")(options.asInstanceOf[js.Any], saga.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def stdChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stdChannel")().asInstanceOf[MulticastChannel_[T]]
+  inline def stdChannel[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stdChannel")().asInstanceOf[MulticastChannel_[T]]
   
   type EffectMiddleware = js.Function1[
-    /* next */ js.Function1[/* effect */ js.Any, Unit], 
-    js.Function1[/* effect */ js.Any, Unit]
+    /* next */ js.Function1[/* effect */ Any, Unit], 
+    js.Function1[/* effect */ Any, Unit]
   ]
   
   trait ErrorInfo extends StObject {
@@ -111,7 +174,7 @@ object typesMod {
     }
   }
   
-  trait EventChannel_[T] extends StObject {
+  trait EventChannel_[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */] extends StObject {
     
     def close(): Unit
     
@@ -121,7 +184,7 @@ object typesMod {
   }
   object EventChannel_ {
     
-    inline def apply[T](
+    inline def apply[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](
       close: () => Unit,
       flush: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit,
       take: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit
@@ -130,7 +193,7 @@ object typesMod {
       __obj.asInstanceOf[EventChannel_[T]]
     }
     
-    extension [Self <: EventChannel_[?], T](x: Self & EventChannel_[T]) {
+    extension [Self <: EventChannel_[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](x: Self & EventChannel_[T]) {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -158,17 +221,16 @@ object typesMod {
   }
   
   @js.native
-  trait MulticastChannel_[T] extends StObject {
+  trait MulticastChannel_[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */] extends StObject {
     
     def close(): Unit = js.native
     
-    def put(message: T): Unit = js.native
-    def put(message: typings.reduxSagaCore.typesMod.END): Unit = js.native
+    def put(message: typings.reduxSagaCore.typesMod.END | T): Unit = js.native
     
     def take(cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit]): Unit = js.native
     def take(
       cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit],
-      matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<T> */ js.Any
+      matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<T> */ Any
     ): Unit = js.native
   }
   
@@ -178,15 +240,14 @@ object typesMod {
     def take(cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit]): Unit = js.native
     def take(
       cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit],
-      matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<T> */ js.Any
+      matcher: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Predicate<T> */ Any
     ): Unit = js.native
   }
   
   @js.native
   trait PuttableChannel[T] extends StObject {
     
-    def put(message: T): Unit = js.native
-    def put(message: typings.reduxSagaCore.typesMod.END): Unit = js.native
+    def put(message: typings.reduxSagaCore.typesMod.END | T): Unit = js.native
   }
   
   trait RunSagaOptions[A, S] extends StObject {
@@ -206,7 +267,7 @@ object typesMod {
       *
       * @param output argument provided by the Saga to the `put` Effect
       */
-    var dispatch: js.UndefOr[js.Function1[/* output */ A, js.Any]] = js.undefined
+    var dispatch: js.UndefOr[js.Function1[/* output */ A, Any]] = js.undefined
     
     /**
       * See docs for `createSagaMiddleware(options)`
@@ -221,7 +282,7 @@ object typesMod {
     /**
       * See docs for `createSagaMiddleware(options)`
       */
-    var onError: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function2[/* error */ js.Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
     
     /**
       * See docs for `createSagaMiddleware(options)`
@@ -245,7 +306,7 @@ object typesMod {
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setDispatch(value: /* output */ A => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* output */ A => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
@@ -253,13 +314,13 @@ object typesMod {
       
       inline def setEffectMiddlewaresUndefined: Self = StObject.set(x, "effectMiddlewares", js.undefined)
       
-      inline def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value :_*))
+      inline def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value*))
       
       inline def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
       inline def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
       
-      inline def setOnError(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
@@ -271,7 +332,7 @@ object typesMod {
   
   @js.native
   trait SagaMiddleware[C /* <: js.Object */]
-    extends Middleware[js.Object, js.Any, Dispatch[AnyAction]] {
+    extends Middleware[js.Object, Any, Dispatch[AnyAction]] {
     
     /**
       * Dynamically run `saga`. Can be used to run Sagas **only after** the
@@ -312,10 +373,10 @@ object typesMod {
       * @param saga a Generator function
       * @param args arguments to be provided to `saga`
       */
-    def run[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any */](
+    def run[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ Any */](
       saga: S,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
-    ): js.Any = js.native
+    ): Any = js.native
     
     def setContext(props: Partial[C]): Unit = js.native
   }
@@ -337,7 +398,7 @@ object typesMod {
       * If provided, the middleware will call it with uncaught errors from Sagas.
       * useful for sending uncaught exceptions to error tracking services.
       */
-    var onError: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function2[/* error */ js.Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
     
     /**
       * If a Saga Monitor is provided, the middleware will deliver monitoring
@@ -362,9 +423,9 @@ object typesMod {
       
       inline def setEffectMiddlewaresUndefined: Self = StObject.set(x, "effectMiddlewares", js.undefined)
       
-      inline def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value :_*))
+      inline def setEffectMiddlewaresVarargs(value: EffectMiddleware*): Self = StObject.set(x, "effectMiddlewares", js.Array(value*))
       
-      inline def setOnError(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
@@ -381,7 +442,7 @@ object typesMod {
       * a Saga then the action will have a property `SAGA_ACTION` set to true
       * (`SAGA_ACTION` can be imported from `@redux-saga/symbols`).
       */
-    var actionDispatched: js.UndefOr[js.Function1[/* action */ Action[js.Any], Unit]] = js.undefined
+    var actionDispatched: js.UndefOr[js.Function1[/* action */ Action[Any], Unit]] = js.undefined
     
     /**
       * @param effectId The ID of the yielded effect
@@ -392,14 +453,14 @@ object typesMod {
       * @param effectId The ID of the yielded effect
       * @param error Error raised with the rejection of the effect
       */
-    var effectRejected: js.UndefOr[js.Function2[/* effectId */ Double, /* error */ js.Any, Unit]] = js.undefined
+    var effectRejected: js.UndefOr[js.Function2[/* effectId */ Double, /* error */ Any, Unit]] = js.undefined
     
     /**
       * @param effectId The ID of the yielded effect
       * @param result The result of the successful resolution of the effect. In
       *   case of `fork` or `spawn` effects, the result will be a `Task` object.
       */
-    var effectResolved: js.UndefOr[js.Function2[/* effectId */ Double, /* result */ js.Any, Unit]] = js.undefined
+    var effectResolved: js.UndefOr[js.Function2[/* effectId */ Double, /* result */ Any, Unit]] = js.undefined
     
     /**
       * @param effectId Unique ID assigned to the yielded effect
@@ -430,7 +491,7 @@ object typesMod {
     
     extension [Self <: SagaMonitor](x: Self) {
       
-      inline def setActionDispatched(value: /* action */ Action[js.Any] => Unit): Self = StObject.set(x, "actionDispatched", js.Any.fromFunction1(value))
+      inline def setActionDispatched(value: /* action */ Action[Any] => Unit): Self = StObject.set(x, "actionDispatched", js.Any.fromFunction1(value))
       
       inline def setActionDispatchedUndefined: Self = StObject.set(x, "actionDispatched", js.undefined)
       
@@ -438,11 +499,11 @@ object typesMod {
       
       inline def setEffectCancelledUndefined: Self = StObject.set(x, "effectCancelled", js.undefined)
       
-      inline def setEffectRejected(value: (/* effectId */ Double, /* error */ js.Any) => Unit): Self = StObject.set(x, "effectRejected", js.Any.fromFunction2(value))
+      inline def setEffectRejected(value: (/* effectId */ Double, /* error */ Any) => Unit): Self = StObject.set(x, "effectRejected", js.Any.fromFunction2(value))
       
       inline def setEffectRejectedUndefined: Self = StObject.set(x, "effectRejected", js.undefined)
       
-      inline def setEffectResolved(value: (/* effectId */ Double, /* result */ js.Any) => Unit): Self = StObject.set(x, "effectResolved", js.Any.fromFunction2(value))
+      inline def setEffectResolved(value: (/* effectId */ Double, /* result */ Any) => Unit): Self = StObject.set(x, "effectResolved", js.Any.fromFunction2(value))
       
       inline def setEffectResolvedUndefined: Self = StObject.set(x, "effectResolved", js.undefined)
       

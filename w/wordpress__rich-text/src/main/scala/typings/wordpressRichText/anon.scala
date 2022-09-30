@@ -14,12 +14,12 @@ object anon {
     var element: typings.std.Element
     
     var multilineTag: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
       ] = js.undefined
     
     var multilineWrapperTags: js.UndefOr[
         js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
         ]
       ] = js.undefined
     
@@ -36,21 +36,19 @@ object anon {
       
       inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      inline def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
+      inline def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
       
       inline def setMultilineTagUndefined: Self = StObject.set(x, "multilineTag", js.undefined)
       
       inline def setMultilineWrapperTags(
         value: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
             ]
       ): Self = StObject.set(x, "multilineWrapperTags", value.asInstanceOf[js.Any])
       
       inline def setMultilineWrapperTagsUndefined: Self = StObject.set(x, "multilineWrapperTags", js.undefined)
       
-      inline def setMultilineWrapperTagsVarargs(
-        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any)*
-      ): Self = StObject.set(x, "multilineWrapperTags", js.Array(value :_*))
+      inline def setMultilineWrapperTagsVarargs(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any)*): Self = StObject.set(x, "multilineWrapperTags", js.Array(value*))
       
       inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
@@ -78,7 +76,7 @@ object anon {
   trait MultilineTag extends StObject {
     
     var multilineTag: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
       ] = js.undefined
     
     var value: Value
@@ -92,7 +90,7 @@ object anon {
     
     extension [Self <: MultilineTag](x: Self) {
       
-      inline def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
+      inline def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
       
       inline def setMultilineTagUndefined: Self = StObject.set(x, "multilineTag", js.undefined)
       
@@ -132,7 +130,7 @@ object anon {
     def getFormatType(name: String): js.UndefOr[NamedFormatConfiguration]
     
     def getFormatTypeForBareElement(
-      bareElementTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+      bareElementTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
     ): js.UndefOr[NamedFormatConfiguration]
     
     def getFormatTypeForClassName(elementClassName: String): js.UndefOr[NamedFormatConfiguration]
@@ -143,7 +141,7 @@ object anon {
     
     inline def apply(
       getFormatType: String => js.UndefOr[NamedFormatConfiguration],
-      getFormatTypeForBareElement: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any => js.UndefOr[NamedFormatConfiguration],
+      getFormatTypeForBareElement: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any => js.UndefOr[NamedFormatConfiguration],
       getFormatTypeForClassName: String => js.UndefOr[NamedFormatConfiguration],
       getFormatTypes: () => js.Array[NamedFormatConfiguration]
     ): TypeofimportedSelectors = {
@@ -156,7 +154,7 @@ object anon {
       inline def setGetFormatType(value: String => js.UndefOr[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatType", js.Any.fromFunction1(value))
       
       inline def setGetFormatTypeForBareElement(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any => js.UndefOr[NamedFormatConfiguration]
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any => js.UndefOr[NamedFormatConfiguration]
       ): Self = StObject.set(x, "getFormatTypeForBareElement", js.Any.fromFunction1(value))
       
       inline def setGetFormatTypeForClassName(value: String => js.UndefOr[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatTypeForClassName", js.Any.fromFunction1(value))

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-query" : "3.39.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-query" : "3.39.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

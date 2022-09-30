@@ -2,8 +2,8 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.monacoEditor.mod.IDisposable
-import typings.monacoEditor.monacoEditorNumbers.`1.1`
-import typings.monacoEditor.monacoEditorNumbers.`1`
+import typings.monacoEditor.monacoEditorDoubles.`1.1`
+import typings.monacoEditor.monacoEditorInts.`1`
 import typings.monacoEditor.monacoEditorStrings.`force-aligned`
 import typings.monacoEditor.monacoEditorStrings.`force-expand-multiline`
 import typings.monacoEditor.monacoEditorStrings.auto

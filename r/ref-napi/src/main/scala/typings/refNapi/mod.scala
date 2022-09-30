@@ -2,12 +2,11 @@ package typings.refNapi
 
 import typings.node.bufferMod.global.BufferEncoding
 import typings.refNapi.mod.global.Buffer
-import typings.refNapi.refNapiNumbers.`0`
+import typings.refNapi.refNapiInts.`0`
 import typings.refNapi.refNapiStrings.BE
 import typings.refNapi.refNapiStrings.CString
 import typings.refNapi.refNapiStrings.LE
 import typings.refNapi.refNapiStrings.Object
-import typings.refNapi.refNapiStrings.`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`
 import typings.refNapi.refNapiStrings.bool
 import typings.refNapi.refNapiStrings.byte
 import typings.refNapi.refNapiStrings.char
@@ -73,8 +72,21 @@ object mod {
   def alignof: AlignofRegistry = js.native
   inline def alignof_=(x: AlignofRegistry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignof")(x.asInstanceOf[js.Any])
   
-  inline def alloc[TType /* <: string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](`type`: TType): (Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType] = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[(Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType]]
-  inline def alloc[TType /* <: string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](`type`: TType, value: UnderlyingType[TType]): (Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType] = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[(Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType]]
+  inline def alloc(`type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String): (Value[
+    Any | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String])
+  ]) | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[(Value[
+    Any | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String])
+  ]) | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String])]
+  inline def alloc(
+    `type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String,
+    value: UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]
+  ): (Value[
+    Any | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String])
+  ]) | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]) = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[(Value[
+    Any | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String])
+  ]) | (UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String])]
+  inline def alloc[TType /* <: string | pointer */](`type`: TType): (Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType] = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[(Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType]]
+  inline def alloc[TType /* <: string | pointer */](`type`: TType, value: UnderlyingType[TType]): (Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType] = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[(Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType]]
   
   inline def allocCString(): Value[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("allocCString")().asInstanceOf[Value[String | Null]]
   inline def allocCString(string: String): Value[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allocCString")(string.asInstanceOf[js.Any]).asInstanceOf[Value[String]]
@@ -86,9 +98,6 @@ object mod {
   
   inline def alloc_Object(`type`: Object): (Value[Any | UnderlyingType[Object]]) | UnderlyingType[Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[(Value[Any | UnderlyingType[Object]]) | UnderlyingType[Object]]
   inline def alloc_Object(`type`: Object, value: UnderlyingType[Object]): (Value[Any | UnderlyingType[Object]]) | UnderlyingType[Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[(Value[Any | UnderlyingType[Object]]) | UnderlyingType[Object]]
-  
-  inline def alloc_TType_TypeLike[TType /* <: TypeLike */](`type`: TType): (Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType] = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[(Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType]]
-  inline def alloc_TType_TypeLike[TType /* <: TypeLike */](`type`: TType, value: UnderlyingType[TType]): (Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType] = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[(Value[Any | UnderlyingType[TType]]) | UnderlyingType[TType]]
   
   inline def alloc_bool(`type`: bool): (Value[Any | UnderlyingType[bool]]) | UnderlyingType[bool] = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[(Value[Any | UnderlyingType[bool]]) | UnderlyingType[bool]]
   inline def alloc_bool(`type`: bool, value: UnderlyingType[bool]): (Value[Any | UnderlyingType[bool]]) | UnderlyingType[bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[(Value[Any | UnderlyingType[bool]]) | UnderlyingType[bool]]
@@ -164,13 +173,16 @@ object mod {
   
   inline def attach(buffer: Buffer, `object`: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_attach")(buffer.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def coerceType[T /* <: TypeLike */](`type`: T): Type[UnderlyingType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[UnderlyingType[T]]]
+  inline def coerceType(`type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String): Type[
+    UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[
+    UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]
+  ]]
+  inline def coerceType[T /* <: string | pointer */](`type`: T): Type[UnderlyingType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[UnderlyingType[T]]]
   
   inline def coerceType_CString(`type`: CString): Type[UnderlyingType[CString]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[UnderlyingType[CString]]]
   
   inline def coerceType_Object(`type`: Object): Type[UnderlyingType[Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[UnderlyingType[Object]]]
-  
-  inline def `coerceType_T_UnionstringpointerDollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`[T /* <: string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](`type`: T): Type[UnderlyingType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[UnderlyingType[T]]]
   
   inline def coerceType_bool(`type`: bool): Type[UnderlyingType[bool]] = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[UnderlyingType[bool]]]
   
@@ -223,15 +235,14 @@ object mod {
   inline def deref(buffer: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deref")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def deref[T](buffer: Pointer[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deref")(buffer.asInstanceOf[js.Any]).asInstanceOf[T]
   
+  inline def derefType(`type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String): DerefType_[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DerefType_[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]]
   inline def derefType(`type`: TypeLike): Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Any]]
   
   inline def derefType_CString(`type`: CString): DerefType_[CString] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DerefType_[CString]]
   
   inline def derefType_Object(`type`: Object): DerefType_[Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DerefType_[Object]]
   
-  inline def derefType_T_TypeLike_DerefType_[T /* <: TypeLike */](`type`: T): DerefType_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DerefType_[T]]
-  
-  inline def `derefType_T_UnionstringpointerDollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket_DerefType_`[T /* <: string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](`type`: T): DerefType_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DerefType_[T]]
+  inline def derefType_T_DerefType_[T /* <: string | pointer */](`type`: T): DerefType_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DerefType_[T]]
   
   inline def derefType_bool(`type`: bool): DerefType_[bool] = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DerefType_[bool]]
   
@@ -288,7 +299,17 @@ object mod {
   
   inline def get(buffer: Buffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def get(buffer: Buffer, offset: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def get(
+    buffer: Buffer,
+    offset: Double,
+    `type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String
+  ): UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]]
   inline def get(buffer: Buffer, offset: Double, `type`: TypeLike): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def get(
+    buffer: Buffer,
+    offset: Unit,
+    `type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String
+  ): UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]]
   inline def get(buffer: Buffer, offset: Unit, `type`: TypeLike): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def get[T](buffer: Pointer[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def get[T](buffer: Value[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any]).asInstanceOf[T]
@@ -305,11 +326,8 @@ object mod {
   inline def get_Object(buffer: Buffer, offset: Double, `type`: Object): UnderlyingType[Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[Object]]
   inline def get_Object(buffer: Buffer, offset: Unit, `type`: Object): UnderlyingType[Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[Object]]
   
-  inline def get_T_TypeLike_UnderlyingType[T /* <: TypeLike */](buffer: Buffer, offset: Double, `type`: T): UnderlyingType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[T]]
-  inline def get_T_TypeLike_UnderlyingType[T /* <: TypeLike */](buffer: Buffer, offset: Unit, `type`: T): UnderlyingType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[T]]
-  
-  inline def `get_T_UnionstringpointerDollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket_UnderlyingType`[T /* <: string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](buffer: Buffer, offset: Double, `type`: T): UnderlyingType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[T]]
-  inline def `get_T_UnionstringpointerDollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket_UnderlyingType`[T /* <: string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](buffer: Buffer, offset: Unit, `type`: T): UnderlyingType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[T]]
+  inline def get_T_UnderlyingType[T /* <: string | pointer */](buffer: Buffer, offset: Double, `type`: T): UnderlyingType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[T]]
+  inline def get_T_UnderlyingType[T /* <: string | pointer */](buffer: Buffer, offset: Unit, `type`: T): UnderlyingType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[T]]
   
   inline def get_bool(buffer: Buffer, offset: Double, `type`: bool): UnderlyingType[bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[bool]]
   inline def get_bool(buffer: Buffer, offset: Unit, `type`: bool): UnderlyingType[bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[UnderlyingType[bool]]
@@ -417,15 +435,22 @@ object mod {
   inline def ref[T](buffer: Pointer[T]): Pointer[Pointer[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(buffer.asInstanceOf[js.Any]).asInstanceOf[Pointer[Pointer[T]]]
   inline def ref[T](buffer: Value[T]): Pointer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(buffer.asInstanceOf[js.Any]).asInstanceOf[Pointer[T]]
   
+  inline def refType(`type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String): Type[
+    Pointer[
+      UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[
+    Pointer[
+      UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String]
+    ]
+  ]]
   inline def refType(`type`: TypeLike): Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Any]]
   
   inline def refType_CString(`type`: CString): Type[Pointer[UnderlyingType[CString]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Pointer[UnderlyingType[CString]]]]
   
   inline def refType_Object(`type`: Object): Type[Pointer[UnderlyingType[Object]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Pointer[UnderlyingType[Object]]]]
   
-  inline def refType_T_TypeLike[T /* <: TypeLike */](`type`: T): Type[Pointer[UnderlyingType[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Pointer[UnderlyingType[T]]]]
-  
-  inline def `refType_T_UnionTypeAnystringpointerDollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`[T /* <: Type[Any] | string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](`type`: T): Type[Pointer[UnderlyingType[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Pointer[UnderlyingType[T]]]]
+  inline def refType_T[T /* <: Type[Any] | string | pointer */](`type`: T): Type[Pointer[UnderlyingType[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Pointer[UnderlyingType[T]]]]
   
   inline def refType_bool(`type`: bool): Type[Pointer[UnderlyingType[bool]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type[Pointer[UnderlyingType[bool]]]]
   
@@ -483,6 +508,12 @@ object mod {
   
   inline def set(buffer: Buffer, offset: Double, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def set(buffer: Buffer, offset: Double, value: Any, `type`: TypeLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(
+    buffer: Buffer,
+    offset: Double,
+    value: UnderlyingType[/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String],
+    `type`: /* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def set_0[T](buffer: Pointer[T], offset: `0`, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def set_0[T](buffer: Value[T], offset: `0`, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -491,9 +522,7 @@ object mod {
   
   inline def set_Object(buffer: Buffer, offset: Double, value: UnderlyingType[Object], `type`: Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def set_T_TypeLike[T /* <: TypeLike */](buffer: Buffer, offset: Double, value: UnderlyingType[T], `type`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def `set_T_UnionstringpointerDollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`[T /* <: string | pointer | (`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`) */](buffer: Buffer, offset: Double, value: UnderlyingType[T], `type`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set_T[T /* <: string | pointer */](buffer: Buffer, offset: Double, value: UnderlyingType[T], `type`: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def set_bool(buffer: Buffer, offset: Double, value: UnderlyingType[bool], `type`: bool): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -715,12 +744,12 @@ object mod {
   
   type CoerceType_[T /* <: TypeLike */] = Type[UnderlyingType[T]]
   
-  /* Inlined std.Extract<{[ P in keyof T ]: P extends '${number}'? ref-napi.ref-napi.CoerceType<std.Extract<T[P], ref-napi.ref-napi.TypeLike>> : T[P]}, std.Array<any>> */
+  /* Inlined std.Extract<{[ P in keyof T ]: P extends / * template literal string: ${number} * / string? ref-napi.ref-napi.CoerceType<std.Extract<T[P], ref-napi.ref-napi.TypeLike>> : T[P]}, std.Array<any>> */
   type CoerceTypes[T /* <: js.Array[TypeLike] */] = scala.Nothing
   
   type DerefType_[T /* <: TypeLike */] = Type[Any]
   
-  /* Inlined std.Extract<{[ P in keyof T ]: P extends '${number}'? ref-napi.ref-napi.DerefType<std.Extract<T[P], ref-napi.ref-napi.TypeLike>> : T[P]}, std.Array<any>> */
+  /* Inlined std.Extract<{[ P in keyof T ]: P extends / * template literal string: ${number} * / string? ref-napi.ref-napi.DerefType<std.Extract<T[P], ref-napi.ref-napi.TypeLike>> : T[P]}, std.Array<any>> */
   type DerefTypes[T /* <: js.Array[TypeLike] */] = scala.Nothing
   
   /* Rewritten from type alias, can be one of: 
@@ -752,9 +781,9 @@ object mod {
     - typings.refNapi.refNapiStrings.size_t
     - typings.refNapi.refNapiStrings.uint32
     - typings.refNapi.refNapiStrings.short
-    - typings.refNapi.refNapiStrings.`DollarLeftcurlybracketkeyof TypesDefaultRegistryRightcurlybracketDollarLeftcurlybracketQuotationmarkAsteriskQuotationmark Verticalline Quotationmark AsteriskQuotationmark Verticalline QuotationmarkAsteriskAsteriskQuotationmark Verticalline Quotationmark AsteriskAsteriskQuotationmarkRightcurlybracket`
+    - / * template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} * / java.lang.String
   */
-  trait NamedType extends StObject
+  type NamedType = _NamedType | (/* template literal string: ${keyofTypesDefaultRegistry}${*| *|**| **} */ String)
   
   type NamedTypeLike = Type[Any] | NamedType
   
@@ -1659,7 +1688,7 @@ object mod {
     }
   }
   
-  /* Inlined std.Extract<{[ P in keyof T ]: P extends '${number}'? ref-napi.ref-napi.UnderlyingType<std.Extract<T[P], ref-napi.ref-napi.TypeLike>> : T[P]}, std.Array<any>> */
+  /* Inlined std.Extract<{[ P in keyof T ]: P extends / * template literal string: ${number} * / string? ref-napi.ref-napi.UnderlyingType<std.Extract<T[P], ref-napi.ref-napi.TypeLike>> : T[P]}, std.Array<any>> */
   type UnderlyingTypes[T /* <: js.Array[TypeLike] */] = scala.Nothing
   
   @js.native
@@ -1670,6 +1699,8 @@ object mod {
     @JSName("type")
     var type_Value: Type[T] = js.native
   }
+  
+  trait _NamedType extends StObject
   
   object global {
     

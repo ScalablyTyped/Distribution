@@ -12,9 +12,9 @@ object keyTypesMod {
   val ^ : js.Any = js.native
   
   inline def getAllNonTextKeyTypes(): js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 245 */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllNonTextKeyTypes")().asInstanceOf[js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 245 */ Any
   ]]
   
   inline def getDefinitionForKeyType(keyType: KeyDefinitionType): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefinitionForKeyType")(keyType.asInstanceOf[js.Any]).asInstanceOf[Key]

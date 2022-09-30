@@ -546,10 +546,10 @@ object physicsIndexMod {
     @js.native
     trait AbstractMesh extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _disposePhysicsObserver: Nullable[Observer[Node]] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _physicsImpostor: Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
       
       /** Apply a physic impulse to the mesh
@@ -593,10 +593,10 @@ object physicsIndexMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _physicsEngine: Nullable[IPhysicsEngine] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _physicsTimeAccumulator: Double = js.native
       
       /**

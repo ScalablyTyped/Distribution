@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.LogLevel")
 @js.native
-class LogLevel protected ()
+open class LogLevel protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.LogLevel {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

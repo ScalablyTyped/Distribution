@@ -45,7 +45,7 @@ object set {
   
   inline def every[A](predicate: Predicate[A]): Predicate[Set[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[Predicate[Set[A]]]
   
-  inline def every_AB_A_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[Set[A], Set[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[Set[A], Set[B]]]
+  inline def every_AB_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[Set[A], Set[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[Set[A], Set[B]]]
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* set */ Set[A], Set[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ Set[A], Set[A]]]
   
@@ -57,7 +57,7 @@ object set {
     js.Function1[/* fa */ Set[Any], Set[B]]
   ]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ Set[A], Set[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ Set[A], Set[B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ Set[A], Set[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ Set[A], Set[B]]]
   
   inline def foldMap[A, M](O: Ord_[A], M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ A, M], js.Function1[/* fa */ Set[A], M]] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(O.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ A, M], js.Function1[/* fa */ Set[A], M]]]
   
@@ -95,7 +95,7 @@ object set {
     js.Function1[/* set */ Set[Any], Separated_[Set[B], Set[C]]]
   ]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ Set[A], Separated_[Set[A], Set[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ Set[A], Separated_[Set[A], Set[B]]]]
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* set */ Set[A], Separated_[Set[A], Set[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* set */ Set[A], Separated_[Set[A], Set[B]]]]
   
   inline def reduce[A](O: Ord_[A]): js.Function2[
     /* b */ Any, 

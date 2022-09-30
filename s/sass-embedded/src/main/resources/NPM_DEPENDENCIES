@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sass-embedded" : "1.54.9"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sass-embedded" : "1.54.9"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

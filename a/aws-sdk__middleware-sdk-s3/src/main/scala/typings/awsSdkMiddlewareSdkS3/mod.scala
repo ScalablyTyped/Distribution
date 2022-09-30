@@ -1,5 +1,7 @@
 package typings.awsSdkMiddlewareSdkS3
 
+import typings.awsSdkMiddlewareSdkS3.configurationMod.S3InputConfig
+import typings.awsSdkMiddlewareSdkS3.configurationMod.S3ResolvedConfig
 import typings.awsSdkMiddlewareSdkS3.throw200ExceptionsMod.PreviouslyResolved
 import typings.awsSdkTypes.middlewareMod.BuildMiddleware
 import typings.awsSdkTypes.middlewareMod.DeserializeMiddleware
@@ -32,6 +34,8 @@ object mod {
   inline def getValidateBucketNamePlugin(unused: Any): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidateBucketNamePlugin")(unused.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
   
   inline def getWriteGetObjectResponseEndpointPlugin(config: typings.awsSdkMiddlewareSdkS3.writeGetObjectResponseEndpointMod.PreviouslyResolved): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriteGetObjectResponseEndpointPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
+  
+  inline def resolveS3Config[T](input: T & S3InputConfig): T & S3ResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveS3Config")(input.asInstanceOf[js.Any]).asInstanceOf[T & S3ResolvedConfig]
   
   inline def throw200ExceptionsMiddleware(config: PreviouslyResolved): DeserializeMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw200ExceptionsMiddleware")(config.asInstanceOf[js.Any]).asInstanceOf[DeserializeMiddleware[Any, Any]]
   

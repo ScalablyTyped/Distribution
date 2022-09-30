@@ -11,16 +11,16 @@ import typings.konva.mod.Konva.Ellipse
 import typings.konva.mod.Konva.EllipseConfig
 import typings.konva.mod.Konva.FastLayer
 import typings.konva.mod.Konva.Group
+import typings.konva.mod.Konva.GroupConfig
 import typings.konva.mod.Konva.Image
 import typings.konva.mod.Konva.ImageConfig
 import typings.konva.mod.Konva.KonvaEventObject
 import typings.konva.mod.Konva.Label
+import typings.konva.mod.Konva.LabelConfig
 import typings.konva.mod.Konva.Layer
 import typings.konva.mod.Konva.LayerConfig
 import typings.konva.mod.Konva.Line
 import typings.konva.mod.Konva.LineConfig
-import typings.konva.mod.Konva.Node
-import typings.konva.mod.Konva.NodeConfig
 import typings.konva.mod.Konva.Path
 import typings.konva.mod.Konva.PathConfig
 import typings.konva.mod.Konva.Rect
@@ -47,11 +47,14 @@ import typings.konva.mod.Konva.TransformerConfig
 import typings.konva.mod.Konva.Wedge
 import typings.konva.mod.Konva.WedgeConfig
 import typings.konva.nodeMod.Filter
+import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.globalCompositeOperationType
 import typings.konva.typesMod.Vector2d
+import typings.react.mod.AriaRole
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClassAttributes
 import typings.react.mod.FunctionComponent
+import typings.reactReconciler.mod.Reconciler
 import typings.std.DragEvent
 import typings.std.Event
 import typings.std.MouseEvent
@@ -96,18 +99,23 @@ object reactKonvaCoreMod {
   
   @JSImport("react-konva/lib/ReactKonvaCore", "Group")
   @js.native
-  def Group: KonvaNodeComponent[typings.konva.mod.Konva.Group, NodeConfig] = js.native
-  inline def Group_=(x: KonvaNodeComponent[Group, NodeConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+  def Group: KonvaNodeComponent[typings.konva.mod.Konva.Group, GroupConfig] = js.native
+  inline def Group_=(x: KonvaNodeComponent[Group, GroupConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
   
   @JSImport("react-konva/lib/ReactKonvaCore", "Image")
   @js.native
   def Image: KonvaNodeComponent[typings.konva.mod.Konva.Image, ImageConfig] = js.native
   inline def Image_=(x: KonvaNodeComponent[Image, ImageConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
   
+  @JSImport("react-konva/lib/ReactKonvaCore", "KonvaRenderer")
+  @js.native
+  def KonvaRenderer: Reconciler[Any, Any, Any, Any, Any] = js.native
+  inline def KonvaRenderer_=(x: Reconciler[Any, Any, Any, Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KonvaRenderer")(x.asInstanceOf[js.Any])
+  
   @JSImport("react-konva/lib/ReactKonvaCore", "Label")
   @js.native
-  def Label: KonvaNodeComponent[typings.konva.mod.Konva.Label, NodeConfig] = js.native
-  inline def Label_=(x: KonvaNodeComponent[Label, NodeConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
+  def Label: KonvaNodeComponent[typings.konva.mod.Konva.Label, LabelConfig] = js.native
+  inline def Label_=(x: KonvaNodeComponent[Label, LabelConfig]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
   
   @JSImport("react-konva/lib/ReactKonvaCore", "Layer")
   @js.native
@@ -191,7 +199,7 @@ object reactKonvaCoreMod {
   inline def useStrictMode_=(x: js.Function1[/* useStrictMode */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useStrictMode")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait KonvaNodeComponent[Node /* <: Node */, Props]
+  trait KonvaNodeComponent[Node /* <: typings.konva.mod.Konva.Node */, Props]
     extends StObject
        with FunctionComponent[Props & KonvaNodeEvents & ClassAttributes[Node]] {
     
@@ -347,16 +355,14 @@ object reactKonvaCoreMod {
   
   /* Inlined parent konva.konva.default.NodeConfig */
   /* Inlined parent react-konva.react-konva/lib/ReactKonvaCore.KonvaNodeEvents */
-  /* Inlined parent std.Pick<react.react.HTMLProps<any>, 'className' | 'role' | 'style' | 'tabIndex' | 'title'> */
+  /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLDivElement>, 'className' | 'role' | 'style' | 'tabIndex' | 'title'> */
   trait StageProps
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var dragBoundFunc: js.UndefOr[
-        js.ThisFunction1[/* this */ typings.konva.nodeMod.Node[this.type], /* pos */ Vector2d, Vector2d]
-      ] = js.undefined
+    var dragBoundFunc: js.UndefOr[js.ThisFunction1[/* this */ Node[this.type], /* pos */ Vector2d, Vector2d]] = js.undefined
     
     var dragDistance: js.UndefOr[Double] = js.undefined
     
@@ -381,32 +387,6 @@ object reactKonvaCoreMod {
     var offsetY: js.UndefOr[Double] = js.undefined
     
     var onClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
-    
-    var onContentClick: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentDblclick: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentDbltap: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentMousedown: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentMousemove: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentMouseout: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentMouseover: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentMouseup: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentTap: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentTouchend: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentTouchmove: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentTouchstart: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
-    
-    var onContentWheel: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
     var onContextMenu: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
     
@@ -454,7 +434,7 @@ object reactKonvaCoreMod {
     
     var preventDefault: js.UndefOr[Boolean] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rotation: js.UndefOr[Double] = js.undefined
     
@@ -493,9 +473,7 @@ object reactKonvaCoreMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setDragBoundFunc(
-        value: js.ThisFunction1[/* this */ typings.konva.nodeMod.Node[StageProps], /* pos */ Vector2d, Vector2d]
-      ): Self = StObject.set(x, "dragBoundFunc", value.asInstanceOf[js.Any])
+      inline def setDragBoundFunc(value: js.ThisFunction1[/* this */ Node[StageProps], /* pos */ Vector2d, Vector2d]): Self = StObject.set(x, "dragBoundFunc", value.asInstanceOf[js.Any])
       
       inline def setDragBoundFuncUndefined: Self = StObject.set(x, "dragBoundFunc", js.undefined)
       
@@ -511,7 +489,7 @@ object reactKonvaCoreMod {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setGlobalCompositeOperation(value: globalCompositeOperationType): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
       
@@ -548,58 +526,6 @@ object reactKonvaCoreMod {
       inline def setOnClick(value: /* evt */ KonvaEventObject[MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
-      
-      inline def setOnContentClick(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentClick", js.Any.fromFunction1(value))
-      
-      inline def setOnContentClickUndefined: Self = StObject.set(x, "onContentClick", js.undefined)
-      
-      inline def setOnContentDblclick(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentDblclick", js.Any.fromFunction1(value))
-      
-      inline def setOnContentDblclickUndefined: Self = StObject.set(x, "onContentDblclick", js.undefined)
-      
-      inline def setOnContentDbltap(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentDbltap", js.Any.fromFunction1(value))
-      
-      inline def setOnContentDbltapUndefined: Self = StObject.set(x, "onContentDbltap", js.undefined)
-      
-      inline def setOnContentMousedown(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentMousedown", js.Any.fromFunction1(value))
-      
-      inline def setOnContentMousedownUndefined: Self = StObject.set(x, "onContentMousedown", js.undefined)
-      
-      inline def setOnContentMousemove(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentMousemove", js.Any.fromFunction1(value))
-      
-      inline def setOnContentMousemoveUndefined: Self = StObject.set(x, "onContentMousemove", js.undefined)
-      
-      inline def setOnContentMouseout(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentMouseout", js.Any.fromFunction1(value))
-      
-      inline def setOnContentMouseoutUndefined: Self = StObject.set(x, "onContentMouseout", js.undefined)
-      
-      inline def setOnContentMouseover(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentMouseover", js.Any.fromFunction1(value))
-      
-      inline def setOnContentMouseoverUndefined: Self = StObject.set(x, "onContentMouseover", js.undefined)
-      
-      inline def setOnContentMouseup(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentMouseup", js.Any.fromFunction1(value))
-      
-      inline def setOnContentMouseupUndefined: Self = StObject.set(x, "onContentMouseup", js.undefined)
-      
-      inline def setOnContentTap(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentTap", js.Any.fromFunction1(value))
-      
-      inline def setOnContentTapUndefined: Self = StObject.set(x, "onContentTap", js.undefined)
-      
-      inline def setOnContentTouchend(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentTouchend", js.Any.fromFunction1(value))
-      
-      inline def setOnContentTouchendUndefined: Self = StObject.set(x, "onContentTouchend", js.undefined)
-      
-      inline def setOnContentTouchmove(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentTouchmove", js.Any.fromFunction1(value))
-      
-      inline def setOnContentTouchmoveUndefined: Self = StObject.set(x, "onContentTouchmove", js.undefined)
-      
-      inline def setOnContentTouchstart(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentTouchstart", js.Any.fromFunction1(value))
-      
-      inline def setOnContentTouchstartUndefined: Self = StObject.set(x, "onContentTouchstart", js.undefined)
-      
-      inline def setOnContentWheel(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onContentWheel", js.Any.fromFunction1(value))
-      
-      inline def setOnContentWheelUndefined: Self = StObject.set(x, "onContentWheel", js.undefined)
       
       inline def setOnContextMenu(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
@@ -693,7 +619,7 @@ object reactKonvaCoreMod {
       
       inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       

@@ -1,34 +1,34 @@
 package typings.exceljs.mod
 
-import typings.exceljs.exceljsNumbers.`119`
-import typings.exceljs.exceljsNumbers.`11`
-import typings.exceljs.exceljsNumbers.`13`
-import typings.exceljs.exceljsNumbers.`20`
-import typings.exceljs.exceljsNumbers.`27`
-import typings.exceljs.exceljsNumbers.`28`
-import typings.exceljs.exceljsNumbers.`34`
-import typings.exceljs.exceljsNumbers.`37`
-import typings.exceljs.exceljsNumbers.`5`
-import typings.exceljs.exceljsNumbers.`7`
-import typings.exceljs.exceljsNumbers.`82`
-import typings.exceljs.exceljsNumbers.`9`
+import typings.exceljs.exceljsInts.`119`
+import typings.exceljs.exceljsInts.`11`
+import typings.exceljs.exceljsInts.`13`
+import typings.exceljs.exceljsInts.`20`
+import typings.exceljs.exceljsInts.`27`
+import typings.exceljs.exceljsInts.`28`
+import typings.exceljs.exceljsInts.`34`
+import typings.exceljs.exceljsInts.`37`
+import typings.exceljs.exceljsInts.`5`
+import typings.exceljs.exceljsInts.`7`
+import typings.exceljs.exceljsInts.`82`
+import typings.exceljs.exceljsInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.exceljs.exceljsNumbers.`5`
-  - typings.exceljs.exceljsNumbers.`7`
-  - typings.exceljs.exceljsNumbers.`9`
-  - typings.exceljs.exceljsNumbers.`11`
-  - typings.exceljs.exceljsNumbers.`13`
-  - typings.exceljs.exceljsNumbers.`20`
-  - typings.exceljs.exceljsNumbers.`27`
-  - typings.exceljs.exceljsNumbers.`28`
-  - typings.exceljs.exceljsNumbers.`34`
-  - typings.exceljs.exceljsNumbers.`37`
-  - typings.exceljs.exceljsNumbers.`82`
-  - typings.exceljs.exceljsNumbers.`119`
+  - typings.exceljs.exceljsInts.`5`
+  - typings.exceljs.exceljsInts.`7`
+  - typings.exceljs.exceljsInts.`9`
+  - typings.exceljs.exceljsInts.`11`
+  - typings.exceljs.exceljsInts.`13`
+  - typings.exceljs.exceljsInts.`20`
+  - typings.exceljs.exceljsInts.`27`
+  - typings.exceljs.exceljsInts.`28`
+  - typings.exceljs.exceljsInts.`34`
+  - typings.exceljs.exceljsInts.`37`
+  - typings.exceljs.exceljsInts.`82`
+  - typings.exceljs.exceljsInts.`119`
 */
 trait PaperSize extends StObject
 object PaperSize {

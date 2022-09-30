@@ -1,8 +1,8 @@
 package typings.simplecrawler
 
 import typings.simplecrawler.anon.ActualDataSize
-import typings.simplecrawler.simplecrawlerNumbers.`0`
-import typings.simplecrawler.simplecrawlerNumbers.`1`
+import typings.simplecrawler.simplecrawlerInts.`0`
+import typings.simplecrawler.simplecrawlerInts.`1`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -27,7 +27,7 @@ trait ListItemLoadOptions extends StObject {
   var level: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the list item bullet, number, or picture as a string. Read-only.
+    * Gets the list item bullet, number, or picture as a string.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -35,7 +35,7 @@ trait ListItemLoadOptions extends StObject {
   var listString: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the list item order number in relation to its siblings. Read-only.
+    * Gets the list item order number in relation to its siblings.
     *
     * @remarks
     * [Api set: WordApi 1.3]

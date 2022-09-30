@@ -18,7 +18,7 @@ object utils {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def addStyle(Component: Any, styleVariant: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addStyle")(List(Component.asInstanceOf[js.Any]).`++`(styleVariant.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def addStyle(Component: Any, styleVariant: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addStyle")(scala.List(Component.asInstanceOf[js.Any]).`++`(styleVariant.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     inline def bsClass(defaultClass: Any, Component: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bsClass")(defaultClass.asInstanceOf[js.Any], Component.asInstanceOf[js.Any])).asInstanceOf[Any]
     

@@ -11,9 +11,9 @@ higher-order reducer to reset the redux state on certain actions
 | Full name          | redux-recycle |
 | Keywords           | redux, flux, recycle, state, higher-order reducer, hor |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 160935 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 41034.333333333336 |
+| # stars            | 147.0 |
 
 ## Links
 - [Homepage](https://github.com/omnidan/redux-recycle)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-resource" : "1.5.1"
+      "vue-resource" : "1.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-resource" : "1.5.1"
+      "vue-resource" : "1.5.3"
     }
   ],
   "compile-devDependencies" : [

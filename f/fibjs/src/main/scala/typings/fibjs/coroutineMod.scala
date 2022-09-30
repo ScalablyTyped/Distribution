@@ -70,7 +70,7 @@ object coroutineMod {
   @js.native
   val spareFibers: Double = js.native
   
-  inline def start(func: js.Function, args: Any*): ClassFiber = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClassFiber]
+  inline def start(func: js.Function, args: Any*): ClassFiber = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(scala.List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClassFiber]
   
   @JSImport("coroutine", "vmid")
   @js.native

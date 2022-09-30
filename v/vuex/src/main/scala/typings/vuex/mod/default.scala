@@ -66,27 +66,21 @@ object default {
   @JSImport("vuex", "default.mapActions")
   @js.native
   def mapActions: Mapper[ActionMethod] & MapperWithNamespace[ActionMethod] & MapperForAction & MapperForActionWithNamespace = js.native
-  inline def mapActions[Map /* <: Record[
-    String, 
-    js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
-  ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Map] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Map]]
+  inline def mapActions[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
+    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
+    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
   inline def mapActions[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
     */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
     */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
-  inline def mapActions[Map /* <: Record[
-    String, 
-    js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
-  ] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Map] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Map]]
+  inline def mapActions[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
+    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
+    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
   inline def mapActions[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
     */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -95,17 +89,6 @@ object default {
   inline def mapActions_=(
     x: Mapper[ActionMethod] & MapperWithNamespace[ActionMethod] & MapperForAction & MapperForActionWithNamespace
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapActions")(x.asInstanceOf[js.Any])
-  
-  inline def mapActions_Map_RecordStringString[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
-  inline def mapActions_Map_RecordStringString[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapActions")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-    */ typings.vuex.vuexStrings.mapActions & TopLevel[Any]]
   
   @JSImport("vuex", "default.mapGetters")
   @js.native
@@ -159,23 +142,6 @@ object default {
     x: Mapper[MutationMethod] & MapperWithNamespace[MutationMethod] & MapperForMutation & MapperForMutationWithNamespace
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapMutations")(x.asInstanceOf[js.Any])
   
-  inline def mapMutations_Map_RecordStringThisFunction2CustomVueCommitAnyAny[Map /* <: Record[
-    String, 
-    js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
-  ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Map] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Map]]
-  inline def mapMutations_Map_RecordStringThisFunction2CustomVueCommitAnyAny[Map /* <: Record[
-    String, 
-    js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
-  ] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Map] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapMutations")(namespace.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-    */ typings.vuex.vuexStrings.mapMutations & TopLevel[Map]]
-  
   @JSImport("vuex", "default.mapState")
   @js.native
   def mapState: Mapper[Computed] & MapperWithNamespace[Computed] & MapperForState & MapperForStateWithNamespace = js.native
@@ -201,7 +167,7 @@ object default {
     */ typings.vuex.vuexStrings.mapState & TopLevel[Any]]
   inline def mapState_=(x: Mapper[Computed] & MapperWithNamespace[Computed] & MapperForState & MapperForStateWithNamespace): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapState")(x.asInstanceOf[js.Any])
   
-  inline def mapState_SMap_RecordStringThisFunction2CustomVueSAnyAny[S, Map /* <: Record[
+  inline def mapState_SMap[S, Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ Any, Any]
   ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -209,7 +175,7 @@ object default {
     */ typings.vuex.vuexStrings.mapState & TopLevel[Map] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapState")(map.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
     */ typings.vuex.vuexStrings.mapState & TopLevel[Map]]
-  inline def mapState_SMap_RecordStringThisFunction2CustomVueSAnyAny[S, Map /* <: Record[
+  inline def mapState_SMap[S, Map /* <: Record[
     String, 
     js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ Any, Any]
   ] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 

@@ -4,24 +4,36 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://mongodb.github.io/node-mongodb-native/3.1/api/global.html#ReadConcern
 /* Rewritten from type alias, can be one of: 
-  - typings.mongodb.mongodbStrings.local
   - typings.mongodb.mongodbStrings.available
-  - typings.mongodb.mongodbStrings.majority
-  - typings.mongodb.mongodbStrings.linearizable
+  - typings.mongodb.mongodbStrings.local
   - typings.mongodb.mongodbStrings.snapshot
+  - typings.mongodb.mongodbStrings.linearizable
+  - typings.mongodb.mongodbStrings.majority
 */
-trait ReadConcernLevel extends StObject
+trait ReadConcernLevel
+  extends StObject
+     with ReadConcernLike
+/* Inlined std.Readonly<{ readonly local :'local',  readonly majority :'majority',  readonly linearizable :'linearizable',  readonly available :'available',  readonly snapshot :'snapshot'}> */
 object ReadConcernLevel {
   
-  inline def available: typings.mongodb.mongodbStrings.available = "available".asInstanceOf[typings.mongodb.mongodbStrings.available]
+  @JSImport("mongodb", "ReadConcernLevel.available")
+  @js.native
+  val available: typings.mongodb.mongodbStrings.available = js.native
   
-  inline def linearizable: typings.mongodb.mongodbStrings.linearizable = "linearizable".asInstanceOf[typings.mongodb.mongodbStrings.linearizable]
+  @JSImport("mongodb", "ReadConcernLevel.linearizable")
+  @js.native
+  val linearizable: typings.mongodb.mongodbStrings.linearizable = js.native
   
-  inline def local: typings.mongodb.mongodbStrings.local = "local".asInstanceOf[typings.mongodb.mongodbStrings.local]
+  @JSImport("mongodb", "ReadConcernLevel.local")
+  @js.native
+  val local: typings.mongodb.mongodbStrings.local = js.native
   
-  inline def majority: typings.mongodb.mongodbStrings.majority = "majority".asInstanceOf[typings.mongodb.mongodbStrings.majority]
+  @JSImport("mongodb", "ReadConcernLevel.majority")
+  @js.native
+  val majority: typings.mongodb.mongodbStrings.majority = js.native
   
-  inline def snapshot: typings.mongodb.mongodbStrings.snapshot = "snapshot".asInstanceOf[typings.mongodb.mongodbStrings.snapshot]
+  @JSImport("mongodb", "ReadConcernLevel.snapshot")
+  @js.native
+  val snapshot: typings.mongodb.mongodbStrings.snapshot = js.native
 }

@@ -1,7 +1,7 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerNumbers.`1`
-import typings.angularCompiler.angularCompilerNumbers.`2`
+import typings.angularCompiler.angularCompilerInts.`1`
+import typings.angularCompiler.angularCompilerInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the creation block be executed separately from the update block (for backwards compat).
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCompiler.angularCompilerNumbers.`1`
-  - typings.angularCompiler.angularCompilerNumbers.`2`
+  - typings.angularCompiler.angularCompilerInts.`1`
+  - typings.angularCompiler.angularCompilerInts.`2`
 */
 trait RenderFlags extends StObject
 object RenderFlags {

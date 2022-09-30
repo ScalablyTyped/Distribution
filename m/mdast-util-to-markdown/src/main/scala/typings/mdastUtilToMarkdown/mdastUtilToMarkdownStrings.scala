@@ -11,10 +11,6 @@ object mdastUtilToMarkdownStrings {
   inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
-  sealed trait Apostrophe extends StObject
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  
-  @js.native
   sealed trait Asterisk extends StObject
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
@@ -33,10 +29,6 @@ object mdastUtilToMarkdownStrings {
   @js.native
   sealed trait Quotationmark extends StObject
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
-  
-  @js.native
-  sealed trait Rightparenthesis extends StObject
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   
   @js.native
   sealed trait Tilde extends StObject

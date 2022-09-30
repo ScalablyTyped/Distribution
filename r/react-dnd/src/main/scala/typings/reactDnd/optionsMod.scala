@@ -6,25 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object optionsMod {
   
-  trait DndOptions[Props] extends StObject {
-    
-    var arePropsEqual: js.UndefOr[js.Function2[/* first */ Props, /* second */ Props, Boolean]] = js.undefined
-  }
-  object DndOptions {
-    
-    inline def apply[Props](): DndOptions[Props] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DndOptions[Props]]
-    }
-    
-    extension [Self <: DndOptions[?], Props](x: Self & DndOptions[Props]) {
-      
-      inline def setArePropsEqual(value: (/* first */ Props, /* second */ Props) => Boolean): Self = StObject.set(x, "arePropsEqual", js.Any.fromFunction2(value))
-      
-      inline def setArePropsEqualUndefined: Self = StObject.set(x, "arePropsEqual", js.undefined)
-    }
-  }
-  
   trait DragPreviewOptions extends StObject {
     
     /**
@@ -117,4 +98,6 @@ object optionsMod {
       inline def setDropEffectUndefined: Self = StObject.set(x, "dropEffect", js.undefined)
     }
   }
+  
+  type DropTargetOptions = Any
 }

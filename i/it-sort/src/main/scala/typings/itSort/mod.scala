@@ -1,8 +1,8 @@
 package typings.itSort
 
-import typings.itSort.itSortNumbers.`-1`
-import typings.itSort.itSortNumbers.`0`
-import typings.itSort.itSortNumbers.`1`
+import typings.itSort.itSortInts.`-1`
+import typings.itSort.itSortInts.`0`
+import typings.itSort.itSortInts.`1`
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject

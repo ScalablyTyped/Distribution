@@ -22,7 +22,7 @@ object TextMetricsEx {
     outBounds: typings.blackEngine.rectangleMod.Rectangle
   ): typings.blackEngine.rectangleMod.Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("__measure")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], outBounds.asInstanceOf[js.Any])).asInstanceOf[typings.blackEngine.rectangleMod.Rectangle]
   
-  inline def measure(text: String, lineHeight: Double, styles: typings.blackEngine.textStyleMod.TextStyle*): typings.blackEngine.textMetricsMod.TextMetricsData = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")((List(text.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).`++`(styles.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.blackEngine.textMetricsMod.TextMetricsData]
+  inline def measure(text: String, lineHeight: Double, styles: typings.blackEngine.textStyleMod.TextStyle*): typings.blackEngine.textMetricsMod.TextMetricsData = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")((scala.List(text.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).`++`(styles.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.blackEngine.textMetricsMod.TextMetricsData]
   
   inline def measureBitmap(
     text: String,

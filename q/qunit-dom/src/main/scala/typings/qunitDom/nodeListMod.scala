@@ -147,5 +147,5 @@ object nodeListMod {
     ]
   ): js.Array[HTMLAnchorElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLAnchorElement]]
   
-  inline def toArray_E_Element[E /* <: Element */](selectors: NodeListOf[E]): js.Array[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[E]]
+  inline def toArray_E[E /* <: Element */](selectors: NodeListOf[E]): js.Array[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(selectors.asInstanceOf[js.Any]).asInstanceOf[js.Array[E]]
 }

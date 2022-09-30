@@ -1,8 +1,8 @@
 package typings.dirCompare
 
-import typings.dirCompare.dirCompareNumbers.`-1`
-import typings.dirCompare.dirCompareNumbers.`0`
-import typings.dirCompare.dirCompareNumbers.`1`
+import typings.dirCompare.dirCompareInts.`-1`
+import typings.dirCompare.dirCompareInts.`0`
+import typings.dirCompare.dirCompareInts.`1`
 import typings.dirCompare.typesMod.CompareFileAsync
 import typings.dirCompare.typesMod.CompareFileSync
 import typings.dirCompare.typesMod.CompareNameHandler

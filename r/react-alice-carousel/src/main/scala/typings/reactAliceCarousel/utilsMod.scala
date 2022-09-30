@@ -9,8 +9,8 @@ import typings.reactAliceCarousel.anon.PaddingLeft
 import typings.reactAliceCarousel.anon.PartialProps
 import typings.reactAliceCarousel.anon.PartialState
 import typings.reactAliceCarousel.anon.Transform
-import typings.reactAliceCarousel.reactAliceCarouselNumbers.`0`
-import typings.reactAliceCarousel.reactAliceCarouselNumbers.`1`
+import typings.reactAliceCarousel.reactAliceCarouselInts.`0`
+import typings.reactAliceCarousel.reactAliceCarouselInts.`1`
 import typings.reactAliceCarousel.typesMod.ItemCoords
 import typings.reactAliceCarousel.typesMod.Props
 import typings.reactAliceCarousel.typesMod.RootElement

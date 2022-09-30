@@ -75,5 +75,5 @@ object event {
     * Triggers the given event. All arguments after eventName are passed as
     * arguments to the listeners.
     */
-  inline def trigger(instance: js.Object, eventName: String, eventArgs: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")((List(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(eventArgs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def trigger(instance: js.Object, eventName: String, eventArgs: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")((scala.List(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(eventArgs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 }

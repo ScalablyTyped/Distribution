@@ -19,6 +19,6 @@ object DecayConfig {
     
     inline def setDeceleration(value: Adaptable[Double]): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
     
-    inline def setDecelerationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "deceleration", js.Array(value :_*))
+    inline def setDecelerationVarargs(value: (Double | AnimatedNode[Double] | (js.Array[Double | AnimatedNode[Double]]))*): Self = StObject.set(x, "deceleration", js.Array(value*))
   }
 }

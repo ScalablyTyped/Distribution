@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.TabContainer")
 @js.native
-class TabContainer protected ()
+open class TabContainer protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.TabContainer {
   def this(
     model: AbstractModel,

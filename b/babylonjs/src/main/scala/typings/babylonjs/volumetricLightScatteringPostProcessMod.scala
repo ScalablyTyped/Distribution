@@ -120,7 +120,7 @@ object volumetricLightScatteringPostProcessMod {
     var useCustomMeshPosition: Boolean = js.native
     
     /**
-      * @hidden
+      * @internal
       * VolumetricLightScatteringPostProcess.useDiffuseColor is no longer used, use the mesh material directly instead
       */
     def useDiffuseColor: Boolean = js.native

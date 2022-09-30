@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-provider
 
-Typings are for version 2.0.3
+Typings are for version 2.0.4
 
 ## Library description:
 @ant-design/pro-provider

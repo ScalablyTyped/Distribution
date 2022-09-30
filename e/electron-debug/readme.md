@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-debug
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 Adds useful debug features to your Electron app
@@ -10,10 +10,10 @@ Adds useful debug features to your Electron app
 | ------------------ | :-------------: |
 | Full name          | electron-debug |
 | Keywords           | electron, debug, debugging, devtools, app, dev, development |
-| # releases         | 7 |
-| # dependents       | 111 |
-| # downloads        | 1295552 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 177756.66666666666 |
+| # stars            | 716.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/electron-debug#readme)

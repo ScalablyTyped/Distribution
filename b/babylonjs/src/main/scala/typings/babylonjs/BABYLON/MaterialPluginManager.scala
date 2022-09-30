@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MaterialPluginManager extends StObject {
   
   /**
-    * @param plugin
-    * @hidden
+    * @internal
     */
   def _activatePlugin(plugin: MaterialPluginBase): Unit = js.native
   
@@ -19,8 +18,7 @@ trait MaterialPluginManager extends StObject {
   /* protected */ var _activePluginsForExtraEvents: js.Array[MaterialPluginBase] = js.native
   
   /**
-    * @param plugin
-    * @hidden
+    * @internal
     */
   def _addPlugin(plugin: MaterialPluginBase): Unit = js.native
   

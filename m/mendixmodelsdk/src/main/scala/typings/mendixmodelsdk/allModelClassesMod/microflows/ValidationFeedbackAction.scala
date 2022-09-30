@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/validation-feedback relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ValidationFeedbackAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ValidationFeedbackAction")
 @js.native
-class ValidationFeedbackAction protected ()
+open class ValidationFeedbackAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.ValidationFeedbackAction {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class ValidationFeedbackAction protected ()
 }
 object ValidationFeedbackAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ValidationFeedbackAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ValidationFeedbackAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object ValidationFeedbackAction {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.ValidationFeedbackAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ValidationFeedbackAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ValidationFeedbackAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ValidationFeedbackAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ValidationFeedbackAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ValidationFeedbackAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

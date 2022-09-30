@@ -296,7 +296,7 @@ trait RecursivePartialPartialAcAccessibilityActions extends StObject {
   
   var textBreakStrategy: js.UndefOr[RecursivePartial[js.UndefOr[simple | highQuality | balanced]]] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | Null]]] = js.undefined
+  var touchSoundDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var transition: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -734,7 +734,7 @@ object RecursivePartialPartialAcAccessibilityActions {
     
     inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
     
-    inline def setTouchSoundDisabled(value: RecursivePartial[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+    inline def setTouchSoundDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

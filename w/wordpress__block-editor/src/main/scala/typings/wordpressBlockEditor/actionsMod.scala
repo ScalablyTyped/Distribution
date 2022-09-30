@@ -25,59 +25,59 @@ object actionsMod {
   
   inline def hideInsertionPoint(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideInsertionPoint")().asInstanceOf[Unit]
   
-  inline def insertBlock(block: BlockInstance[StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Double, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertBlock(block: BlockInstance[StringDictionary[Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def insertBlock(block: BlockInstance[StringDictionary[Any]], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertBlock(block: BlockInstance[StringDictionary[Any]], index: Double, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertBlock(
-    block: BlockInstance[StringDictionary[js.Any]],
+    block: BlockInstance[StringDictionary[Any]],
     index: Double,
     rootClientId: String,
     updateSelection: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertBlock(
-    block: BlockInstance[StringDictionary[js.Any]],
+    block: BlockInstance[StringDictionary[Any]],
     index: Double,
     rootClientId: Unit,
     updateSelection: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertBlock(block: BlockInstance[StringDictionary[js.Any]], index: Unit, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertBlock(block: BlockInstance[StringDictionary[Any]], index: Unit, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertBlock(
-    block: BlockInstance[StringDictionary[js.Any]],
+    block: BlockInstance[StringDictionary[Any]],
     index: Unit,
     rootClientId: String,
     updateSelection: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertBlock(
-    block: BlockInstance[StringDictionary[js.Any]],
+    block: BlockInstance[StringDictionary[Any]],
     index: Unit,
     rootClientId: Unit,
     updateSelection: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlock")(block.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
-  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Double, rootClientId: String): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
+  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]], index: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]], index: Double, rootClientId: String): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   inline def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    blocks: js.Array[BlockInstance[StringDictionary[Any]]],
     index: Double,
     rootClientId: String,
     updateSelection: Boolean
   ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   inline def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    blocks: js.Array[BlockInstance[StringDictionary[Any]]],
     index: Double,
     rootClientId: Unit,
     updateSelection: Boolean
   ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]], index: Unit, rootClientId: String): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def insertBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]], index: Unit, rootClientId: String): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   inline def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    blocks: js.Array[BlockInstance[StringDictionary[Any]]],
     index: Unit,
     rootClientId: String,
     updateSelection: Boolean
   ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBlocks")(blocks.asInstanceOf[js.Any], index.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   inline def insertBlocks(
-    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    blocks: js.Array[BlockInstance[StringDictionary[Any]]],
     index: Unit,
     rootClientId: Unit,
     updateSelection: Boolean
@@ -87,10 +87,10 @@ object actionsMod {
   inline def insertDefaultBlock(attributes: Unit, rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertDefaultBlock(attributes: Unit, rootClientId: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insertDefaultBlock(attributes: Unit, rootClientId: Unit, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertDefaultBlock(attributes: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def insertDefaultBlock(attributes: Record[String, js.Any], rootClientId: Unit, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertDefaultBlock(attributes: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def insertDefaultBlock(attributes: Record[String, Any], rootClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertDefaultBlock(attributes: Record[String, Any], rootClientId: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertDefaultBlock(attributes: Record[String, Any], rootClientId: Unit, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertDefaultBlock")(attributes.asInstanceOf[js.Any], rootClientId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def mergeBlocks(firstBlockClientId: String, secondBlockClientId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeBlocks")(firstBlockClientId.asInstanceOf[js.Any], secondBlockClientId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -111,7 +111,7 @@ object actionsMod {
   
   inline def multiSelect(start: String, end: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("multiSelect")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("receiveBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def receiveBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("receiveBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def removeBlock(clientId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def removeBlock(clientId: String, selectPrevious: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlock")(clientId.asInstanceOf[js.Any], selectPrevious.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -121,40 +121,32 @@ object actionsMod {
   inline def removeBlocks(clientIds: js.Array[String]): IterableIterator[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlocks")(clientIds.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Unit]]
   inline def removeBlocks(clientIds: js.Array[String], selectPrevious: Boolean): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlocks")(clientIds.asInstanceOf[js.Any], selectPrevious.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  inline def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[js.Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[js.Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceBlock(clientId: String, block: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceBlock(clientId: String, block: BlockInstance[StringDictionary[Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceBlock(clientId: js.Array[String], block: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceBlock(clientId: js.Array[String], block: BlockInstance[StringDictionary[Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlock")(clientId.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def replaceBlocks(
-    clientIds: String,
-    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
-    indexToSelect: Double
-  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[js.Any]], indexToSelect: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[Any]]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def replaceBlocks(clientIds: String, blocks: js.Array[BlockInstance[StringDictionary[Any]]], indexToSelect: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[Any]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def replaceBlocks(clientIds: String, blocks: BlockInstance[StringDictionary[Any]], indexToSelect: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def replaceBlocks(clientIds: js.Array[String], blocks: js.Array[BlockInstance[StringDictionary[Any]]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   inline def replaceBlocks(
     clientIds: js.Array[String],
-    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    blocks: js.Array[BlockInstance[StringDictionary[Any]]],
     indexToSelect: Double
   ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[js.Any]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
-  inline def replaceBlocks(
-    clientIds: js.Array[String],
-    blocks: BlockInstance[StringDictionary[js.Any]],
-    indexToSelect: Double
-  ): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[Any]]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def replaceBlocks(clientIds: js.Array[String], blocks: BlockInstance[StringDictionary[Any]], indexToSelect: Double): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceBlocks")(clientIds.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], indexToSelect.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
   
-  inline def replaceInnerBlocks(rootClientId: String, blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInnerBlocks")(rootClientId.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceInnerBlocks(rootClientId: String, blocks: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInnerBlocks")(rootClientId.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def replaceInnerBlocks(
     rootClientId: String,
-    blocks: js.Array[BlockInstance[StringDictionary[js.Any]]],
+    blocks: js.Array[BlockInstance[StringDictionary[Any]]],
     updateSelection: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceInnerBlocks")(rootClientId.asInstanceOf[js.Any], blocks.asInstanceOf[js.Any], updateSelection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetBlocks(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetBlocks")(blocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def selectBlock(clientId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("selectBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def selectBlock(clientId: String, initialPosition: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectBlock")(clientId.asInstanceOf[js.Any], initialPosition.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -189,7 +181,7 @@ object actionsMod {
   
   inline def updateBlock(clientId: String, updates: PartialBlockInstancekstri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlock")(clientId.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def updateBlockAttributes(clientId: String, attributes: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlockAttributes")(clientId.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateBlockAttributes(clientId: String, attributes: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlockAttributes")(clientId.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def updateBlockListSettings(clientId: String, settings: EditorBlockListSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBlockListSettings")(clientId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

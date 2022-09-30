@@ -53,7 +53,7 @@ object packet {
     /**
       * List of packets
       */
-    var packets: List = js.native
+    var packets: typings.openpgp.mod.packet.List = js.native
     
     /**
       * Parsing function for the packet.
@@ -87,12 +87,12 @@ object packet {
       * Concatenates packetlist or array of packets
       */
     def concat(): Unit = js.native
-    def concat(packets: List): Unit = js.native
+    def concat(packets: typings.openpgp.mod.packet.List): Unit = js.native
     
     /**
       * Creates a new PacketList with all packets from the given types
       */
-    def filterByTag(tags: typings.openpgp.mod.enums.packet*): List = js.native
+    def filterByTag(tags: typings.openpgp.mod.enums.packet*): typings.openpgp.mod.packet.List = js.native
     
     /**
       * Traverses packet tree and returns first matching packet
@@ -1264,7 +1264,7 @@ object packet {
     /**
       * Decrypted packets contained within.
       */
-    var packets: List = js.native
+    var packets: typings.openpgp.mod.packet.List = js.native
     
     /**
       * Packet type

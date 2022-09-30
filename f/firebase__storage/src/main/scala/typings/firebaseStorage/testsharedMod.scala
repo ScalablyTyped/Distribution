@@ -35,7 +35,7 @@ object testsharedMod {
   @js.native
   val authToken: /* "totally-legit-auth-token" */ String = js.native
   
-  inline def bind(f: js.Function, ctx: Any, args: Any*): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")((List(f.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function0[Unit]]
+  inline def bind(f: js.Function, ctx: Any, args: Any*): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")((scala.List(f.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@firebase/storage/dist/node-esm/test/unit/testshared", "bucket")
   @js.native

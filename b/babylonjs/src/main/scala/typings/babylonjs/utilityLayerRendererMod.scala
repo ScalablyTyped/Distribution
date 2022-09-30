@@ -34,7 +34,7 @@ object utilityLayerRendererMod {
     /* private */ var _afterRenderObserver: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       * Light which used by gizmos to get light shading
       */
     def _getSharedGizmoLight(): HemisphericLight = js.native
@@ -131,17 +131,17 @@ object utilityLayerRendererMod {
     /**
       * Creates an utility layer, and set it as a default utility layer
       * @param scene associated scene
-      * @hidden
+      * @internal
       */
     inline def _CreateDefaultUtilityLayerFromScene(scene: Scene): UtilityLayerRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("_CreateDefaultUtilityLayerFromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[UtilityLayerRenderer]
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer._DefaultKeepDepthUtilityLayer")
     @js.native
     def _DefaultKeepDepthUtilityLayer: Nullable[UtilityLayerRenderer] = js.native
     inline def _DefaultKeepDepthUtilityLayer_=(x: Nullable[UtilityLayerRenderer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultKeepDepthUtilityLayer")(x.asInstanceOf[js.Any])
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Rendering/utilityLayerRenderer", "UtilityLayerRenderer._DefaultUtilityLayer")
     @js.native
     def _DefaultUtilityLayer: Nullable[UtilityLayerRenderer] = js.native

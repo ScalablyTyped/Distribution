@@ -1,62 +1,62 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`0`
-import typings.mfiles.mfilesNumbers.`1024`
-import typings.mfiles.mfilesNumbers.`1048576`
-import typings.mfiles.mfilesNumbers.`128`
-import typings.mfiles.mfilesNumbers.`131072`
-import typings.mfiles.mfilesNumbers.`134217728`
-import typings.mfiles.mfilesNumbers.`16384`
-import typings.mfiles.mfilesNumbers.`16777216`
-import typings.mfiles.mfilesNumbers.`16`
-import typings.mfiles.mfilesNumbers.`1`
-import typings.mfiles.mfilesNumbers.`2048`
-import typings.mfiles.mfilesNumbers.`256`
-import typings.mfiles.mfilesNumbers.`262144`
-import typings.mfiles.mfilesNumbers.`268435456`
-import typings.mfiles.mfilesNumbers.`2`
-import typings.mfiles.mfilesNumbers.`32`
-import typings.mfiles.mfilesNumbers.`33554432`
-import typings.mfiles.mfilesNumbers.`4194304`
-import typings.mfiles.mfilesNumbers.`4`
-import typings.mfiles.mfilesNumbers.`524288`
-import typings.mfiles.mfilesNumbers.`536870912`
-import typings.mfiles.mfilesNumbers.`64`
-import typings.mfiles.mfilesNumbers.`65536`
-import typings.mfiles.mfilesNumbers.`8192`
-import typings.mfiles.mfilesNumbers.`8388608`
-import typings.mfiles.mfilesNumbers.`8`
+import typings.mfiles.mfilesInts.`0`
+import typings.mfiles.mfilesInts.`1024`
+import typings.mfiles.mfilesInts.`1048576`
+import typings.mfiles.mfilesInts.`128`
+import typings.mfiles.mfilesInts.`131072`
+import typings.mfiles.mfilesInts.`134217728`
+import typings.mfiles.mfilesInts.`16384`
+import typings.mfiles.mfilesInts.`16777216`
+import typings.mfiles.mfilesInts.`16`
+import typings.mfiles.mfilesInts.`1`
+import typings.mfiles.mfilesInts.`2048`
+import typings.mfiles.mfilesInts.`256`
+import typings.mfiles.mfilesInts.`262144`
+import typings.mfiles.mfilesInts.`268435456`
+import typings.mfiles.mfilesInts.`2`
+import typings.mfiles.mfilesInts.`32`
+import typings.mfiles.mfilesInts.`33554432`
+import typings.mfiles.mfilesInts.`4194304`
+import typings.mfiles.mfilesInts.`4`
+import typings.mfiles.mfilesInts.`524288`
+import typings.mfiles.mfilesInts.`536870912`
+import typings.mfiles.mfilesInts.`64`
+import typings.mfiles.mfilesInts.`65536`
+import typings.mfiles.mfilesInts.`8192`
+import typings.mfiles.mfilesInts.`8388608`
+import typings.mfiles.mfilesInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`0`
-  - typings.mfiles.mfilesNumbers.`1`
-  - typings.mfiles.mfilesNumbers.`2`
-  - typings.mfiles.mfilesNumbers.`4`
-  - typings.mfiles.mfilesNumbers.`8`
-  - typings.mfiles.mfilesNumbers.`16`
-  - typings.mfiles.mfilesNumbers.`32`
-  - typings.mfiles.mfilesNumbers.`64`
-  - typings.mfiles.mfilesNumbers.`128`
-  - typings.mfiles.mfilesNumbers.`256`
-  - typings.mfiles.mfilesNumbers.`1024`
-  - typings.mfiles.mfilesNumbers.`2048`
-  - typings.mfiles.mfilesNumbers.`8192`
-  - typings.mfiles.mfilesNumbers.`16384`
-  - typings.mfiles.mfilesNumbers.`65536`
-  - typings.mfiles.mfilesNumbers.`131072`
-  - typings.mfiles.mfilesNumbers.`262144`
-  - typings.mfiles.mfilesNumbers.`524288`
-  - typings.mfiles.mfilesNumbers.`1048576`
-  - typings.mfiles.mfilesNumbers.`4194304`
-  - typings.mfiles.mfilesNumbers.`8388608`
-  - typings.mfiles.mfilesNumbers.`16777216`
-  - typings.mfiles.mfilesNumbers.`33554432`
-  - typings.mfiles.mfilesNumbers.`134217728`
-  - typings.mfiles.mfilesNumbers.`268435456`
-  - typings.mfiles.mfilesNumbers.`536870912`
+  - typings.mfiles.mfilesInts.`0`
+  - typings.mfiles.mfilesInts.`1`
+  - typings.mfiles.mfilesInts.`2`
+  - typings.mfiles.mfilesInts.`4`
+  - typings.mfiles.mfilesInts.`8`
+  - typings.mfiles.mfilesInts.`16`
+  - typings.mfiles.mfilesInts.`32`
+  - typings.mfiles.mfilesInts.`64`
+  - typings.mfiles.mfilesInts.`128`
+  - typings.mfiles.mfilesInts.`256`
+  - typings.mfiles.mfilesInts.`1024`
+  - typings.mfiles.mfilesInts.`2048`
+  - typings.mfiles.mfilesInts.`8192`
+  - typings.mfiles.mfilesInts.`16384`
+  - typings.mfiles.mfilesInts.`65536`
+  - typings.mfiles.mfilesInts.`131072`
+  - typings.mfiles.mfilesInts.`262144`
+  - typings.mfiles.mfilesInts.`524288`
+  - typings.mfiles.mfilesInts.`1048576`
+  - typings.mfiles.mfilesInts.`4194304`
+  - typings.mfiles.mfilesInts.`8388608`
+  - typings.mfiles.mfilesInts.`16777216`
+  - typings.mfiles.mfilesInts.`33554432`
+  - typings.mfiles.mfilesInts.`134217728`
+  - typings.mfiles.mfilesInts.`268435456`
+  - typings.mfiles.mfilesInts.`536870912`
 */
 trait MFVaultAccess extends StObject
 object MFVaultAccess {

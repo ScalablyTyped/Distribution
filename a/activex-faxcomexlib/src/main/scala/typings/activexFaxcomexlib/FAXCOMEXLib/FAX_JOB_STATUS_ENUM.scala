@@ -1,33 +1,33 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1024`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`128`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2048`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`256`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`32`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`512`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`64`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`1024`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`128`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`2048`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`256`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`32`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`512`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`64`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`512`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1024`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`256`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`32`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`128`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`64`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2048`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`512`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`1024`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`256`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`32`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`128`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`64`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`2048`
 */
 trait FAX_JOB_STATUS_ENUM extends StObject
 object FAX_JOB_STATUS_ENUM {

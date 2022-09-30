@@ -7,8 +7,8 @@ import typings.reactVirtualized.esTableMod.TableCellProps
 import typings.reactVirtualized.esTableMod.TableCellRenderer
 import typings.reactVirtualized.esTableMod.TableHeaderProps
 import typings.reactVirtualized.esTableMod.TableHeaderRenderer
-import typings.reactVirtualized.reactVirtualizedNumbers.`0`
-import typings.reactVirtualized.reactVirtualizedNumbers.`1`
+import typings.reactVirtualized.reactVirtualizedInts.`0`
+import typings.reactVirtualized.reactVirtualizedInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

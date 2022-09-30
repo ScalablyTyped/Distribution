@@ -1,5 +1,6 @@
 package typings.rxjsCompat
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +18,9 @@ object promiseObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T](promise: js.Thenable[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def create[T](promise: PromiseLike[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def create[T](
-      promise: js.Thenable[T],
+      promise: PromiseLike[T],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
     ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Any]
   }

@@ -20,6 +20,12 @@ import typings.mendixmodelsdk.appservicesMod.appservices.MsdMicroflow
 import typings.mendixmodelsdk.appservicesMod.appservices.MsdMicroflowParameter
 import typings.mendixmodelsdk.appservicesMod.appservices.MsdText
 import typings.mendixmodelsdk.appservicesMod.appservices.MsdVersion
+import typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEvent
+import typings.mendixmodelsdk.businesseventsMod.businessevents.IConsumedBusinessEventService
+import typings.mendixmodelsdk.businesseventsMod.businessevents.IPublishedBusinessEventService
+import typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedChannel
+import typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessage
+import typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute
 import typings.mendixmodelsdk.codeactionsMod.codeactions.BasicParameterType
 import typings.mendixmodelsdk.codeactionsMod.codeactions.BooleanType
 import typings.mendixmodelsdk.codeactionsMod.codeactions.ConcreteEntityType
@@ -194,6 +200,7 @@ import typings.mendixmodelsdk.kafkaMod.kafka.IPublishedKafkaService
 import typings.mendixmodelsdk.kafkaMod.kafka.KafkaMappedValue
 import typings.mendixmodelsdk.kafkaMod.kafka.KafkaRemoteEntitySource
 import typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResource
+import typings.mendixmodelsdk.kafkaMod.kafka.PublishedKafkaResourceAttribute
 import typings.mendixmodelsdk.mappingsMod.mappings.IMappingDocument
 import typings.mendixmodelsdk.mappingsMod.mappings.MappingMicroflowCall
 import typings.mendixmodelsdk.mappingsMod.mappings.MappingMicroflowParameter
@@ -209,12 +216,14 @@ import typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedAt
 import typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.ExposedEntity
 import typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.IMessageDefinition
 import typings.mendixmodelsdk.messagedefinitionsMod.messagedefinitions.IMessageDefinitionCollection
+import typings.mendixmodelsdk.microflowsMod.microflows.AbortOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity
 import typings.mendixmodelsdk.microflowsMod.microflows.AdvancedRequestHandling
 import typings.mendixmodelsdk.microflowsMod.microflows.AggregateListAction
 import typings.mendixmodelsdk.microflowsMod.microflows.AnnotationFlow
 import typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallAction
 import typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallParameterMapping
+import typings.mendixmodelsdk.microflowsMod.microflows.ApplyJumpToOptionAction
 import typings.mendixmodelsdk.microflowsMod.microflows.AssociationRetrieveSource
 import typings.mendixmodelsdk.microflowsMod.microflows.BasicCodeActionParameterValue
 import typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue
@@ -229,6 +238,8 @@ import typings.mendixmodelsdk.microflowsMod.microflows.CommitAction
 import typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange
 import typings.mendixmodelsdk.microflowsMod.microflows.Contains
 import typings.mendixmodelsdk.microflowsMod.microflows.ContinueEvent
+import typings.mendixmodelsdk.microflowsMod.microflows.ContinueOperation
+import typings.mendixmodelsdk.microflowsMod.microflows.CounterMeterAction
 import typings.mendixmodelsdk.microflowsMod.microflows.CreateListAction
 import typings.mendixmodelsdk.microflowsMod.microflows.CreateObjectAction
 import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
@@ -236,6 +247,7 @@ import typings.mendixmodelsdk.microflowsMod.microflows.CustomRange
 import typings.mendixmodelsdk.microflowsMod.microflows.CustomRequestHandling
 import typings.mendixmodelsdk.microflowsMod.microflows.DatabaseRetrieveSource
 import typings.mendixmodelsdk.microflowsMod.microflows.DeleteAction
+import typings.mendixmodelsdk.microflowsMod.microflows.DeleteExternalObject
 import typings.mendixmodelsdk.microflowsMod.microflows.DocumentTemplateParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.DownloadFileAction
 import typings.mendixmodelsdk.microflowsMod.microflows.EndEvent
@@ -251,10 +263,15 @@ import typings.mendixmodelsdk.microflowsMod.microflows.ExportXmlAction
 import typings.mendixmodelsdk.microflowsMod.microflows.ExpressionSplitCondition
 import typings.mendixmodelsdk.microflowsMod.microflows.FileDocumentExport
 import typings.mendixmodelsdk.microflowsMod.microflows.Filter
+import typings.mendixmodelsdk.microflowsMod.microflows.FilterByExpression
 import typings.mendixmodelsdk.microflowsMod.microflows.Find
+import typings.mendixmodelsdk.microflowsMod.microflows.FindByExpression
 import typings.mendixmodelsdk.microflowsMod.microflows.FormDataPart
 import typings.mendixmodelsdk.microflowsMod.microflows.FormDataRequestHandling
+import typings.mendixmodelsdk.microflowsMod.microflows.GaugeMeterAction
 import typings.mendixmodelsdk.microflowsMod.microflows.GenerateDocumentAction
+import typings.mendixmodelsdk.microflowsMod.microflows.GenerateJumpToOptionsAction
+import typings.mendixmodelsdk.microflowsMod.microflows.GetWorkflowDataAction
 import typings.mendixmodelsdk.microflowsMod.microflows.Head
 import typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration
 import typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry
@@ -270,9 +287,11 @@ import typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingCall
 import typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingJavaActionParameterValue
 import typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingParameterValue
 import typings.mendixmodelsdk.microflowsMod.microflows.ImportXmlAction
+import typings.mendixmodelsdk.microflowsMod.microflows.IncrementCounterMeterAction
 import typings.mendixmodelsdk.microflowsMod.microflows.InheritanceCase
 import typings.mendixmodelsdk.microflowsMod.microflows.InheritanceSplit
 import typings.mendixmodelsdk.microflowsMod.microflows.Intersect
+import typings.mendixmodelsdk.microflowsMod.microflows.IterableList
 import typings.mendixmodelsdk.microflowsMod.microflows.JavaActionCallAction
 import typings.mendixmodelsdk.microflowsMod.microflows.JavaActionParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.JavaScriptActionCallAction
@@ -281,8 +300,12 @@ import typings.mendixmodelsdk.microflowsMod.microflows.ListEquals
 import typings.mendixmodelsdk.microflowsMod.microflows.ListOperationAction
 import typings.mendixmodelsdk.microflowsMod.microflows.LogMessageAction
 import typings.mendixmodelsdk.microflowsMod.microflows.LoopedActivity
+import typings.mendixmodelsdk.microflowsMod.microflows.MLModelCall
+import typings.mendixmodelsdk.microflowsMod.microflows.MLModelCallAction
+import typings.mendixmodelsdk.microflowsMod.microflows.MLModelCallParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.MappingRequestHandling
 import typings.mendixmodelsdk.microflowsMod.microflows.MemberChange
+import typings.mendixmodelsdk.microflowsMod.microflows.MeterTagMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCall
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCallAction
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowCallParameterMapping
@@ -297,17 +320,23 @@ import typings.mendixmodelsdk.microflowsMod.microflows.NanoflowCallParameterMapp
 import typings.mendixmodelsdk.microflowsMod.microflows.NanoflowParameter
 import typings.mendixmodelsdk.microflowsMod.microflows.NoCase
 import typings.mendixmodelsdk.microflowsMod.microflows.OpenUserTaskAction
+import typings.mendixmodelsdk.microflowsMod.microflows.OpenWorkflowAction
+import typings.mendixmodelsdk.microflowsMod.microflows.PauseOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.PrimitiveTypedTemplateArgument
 import typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration
 import typings.mendixmodelsdk.microflowsMod.microflows.PushToClientAction
 import typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction
+import typings.mendixmodelsdk.microflowsMod.microflows.RestartOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling
+import typings.mendixmodelsdk.microflowsMod.microflows.ResumeOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.RetrieveAction
+import typings.mendixmodelsdk.microflowsMod.microflows.RetryOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.RollbackAction
 import typings.mendixmodelsdk.microflowsMod.microflows.RuleCall
 import typings.mendixmodelsdk.microflowsMod.microflows.RuleCallParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.RuleParameter
 import typings.mendixmodelsdk.microflowsMod.microflows.RuleSplitCondition
+import typings.mendixmodelsdk.microflowsMod.microflows.SendExternalObject
 import typings.mendixmodelsdk.microflowsMod.microflows.SequenceFlow
 import typings.mendixmodelsdk.microflowsMod.microflows.SetTaskOutcomeAction
 import typings.mendixmodelsdk.microflowsMod.microflows.ShowHomePageAction
@@ -327,12 +356,20 @@ import typings.mendixmodelsdk.microflowsMod.microflows.TemplateArgument
 import typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate
 import typings.mendixmodelsdk.microflowsMod.microflows.TypedTemplate
 import typings.mendixmodelsdk.microflowsMod.microflows.Union
+import typings.mendixmodelsdk.microflowsMod.microflows.UnpauseOperation
 import typings.mendixmodelsdk.microflowsMod.microflows.ValidationFeedbackAction
 import typings.mendixmodelsdk.microflowsMod.microflows.VariableExport
 import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction
 import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationAdvancedParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationSimpleParameterMapping
+import typings.mendixmodelsdk.microflowsMod.microflows.WhileLoopCondition
 import typings.mendixmodelsdk.microflowsMod.microflows.WorkflowCallAction
+import typings.mendixmodelsdk.microflowsMod.microflows.WorkflowOperationAction
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.IMLMappingDocument
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.MLModelEntityMappings
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.MLModelMappings
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.TensorDimension
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.TensorMappingElement
 import typings.mendixmodelsdk.nanoflowsMod.nanoflows.NanoflowParameterValue
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
 import typings.mendixmodelsdk.nativepagesMod.nativepages.INativeLayout
@@ -343,9 +380,11 @@ import typings.mendixmodelsdk.nativepagesMod.nativepages.NativePlaceholder
 import typings.mendixmodelsdk.navigationMod.navigation.HomePage
 import typings.mendixmodelsdk.navigationMod.navigation.INavigationDocument
 import typings.mendixmodelsdk.navigationMod.navigation.INavigationProfile
+import typings.mendixmodelsdk.navigationMod.navigation.NativeHomePage
 import typings.mendixmodelsdk.navigationMod.navigation.NativeNavigationProfile
 import typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile
 import typings.mendixmodelsdk.navigationMod.navigation.OfflineEntityConfig
+import typings.mendixmodelsdk.navigationMod.navigation.ProgressiveWebAppSettings
 import typings.mendixmodelsdk.navigationMod.navigation.RoleBasedHomePage
 import typings.mendixmodelsdk.navigationMod.navigation.RoleBasedNativeHomePage
 import typings.mendixmodelsdk.pagesMod.pages.ActionButton
@@ -407,6 +446,7 @@ import typings.mendixmodelsdk.pagesMod.pages.IFormBase
 import typings.mendixmodelsdk.pagesMod.pages.ILayout
 import typings.mendixmodelsdk.pagesMod.pages.ILayoutParameter
 import typings.mendixmodelsdk.pagesMod.pages.IPage
+import typings.mendixmodelsdk.pagesMod.pages.IPageParameter
 import typings.mendixmodelsdk.pagesMod.pages.IPageTemplate
 import typings.mendixmodelsdk.pagesMod.pages.ISnippet
 import typings.mendixmodelsdk.pagesMod.pages.ITemplateFormBase
@@ -459,6 +499,8 @@ import typings.mendixmodelsdk.pagesMod.pages.OpenUserTaskClientAction
 import typings.mendixmodelsdk.pagesMod.pages.OpenWorkflowClientAction
 import typings.mendixmodelsdk.pagesMod.pages.PageClientAction
 import typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization
+import typings.mendixmodelsdk.pagesMod.pages.PageParameter
+import typings.mendixmodelsdk.pagesMod.pages.PageParameterMapping
 import typings.mendixmodelsdk.pagesMod.pages.PageSettings
 import typings.mendixmodelsdk.pagesMod.pages.PageVariable
 import typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox
@@ -472,6 +514,7 @@ import typings.mendixmodelsdk.pagesMod.pages.RegularPageTemplateType
 import typings.mendixmodelsdk.pagesMod.pages.RetrievalQuery
 import typings.mendixmodelsdk.pagesMod.pages.RetrievalQueryParameter
 import typings.mendixmodelsdk.pagesMod.pages.RetrievalSchema
+import typings.mendixmodelsdk.pagesMod.pages.RuntimeOperation
 import typings.mendixmodelsdk.pagesMod.pages.SaveButton
 import typings.mendixmodelsdk.pagesMod.pages.SaveChangesClientAction
 import typings.mendixmodelsdk.pagesMod.pages.ScrollContainer
@@ -509,10 +552,16 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolder
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IModule
 import typings.mendixmodelsdk.projectsMod.projects.IModuleDocument
+import typings.mendixmodelsdk.projectsMod.projects.IModuleSettings
 import typings.mendixmodelsdk.projectsMod.projects.IProject
 import typings.mendixmodelsdk.projectsMod.projects.IProjectConversion
 import typings.mendixmodelsdk.projectsMod.projects.IProjectDocument
 import typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker
+import typings.mendixmodelsdk.queuesMod.queues.BasicQueueConfig
+import typings.mendixmodelsdk.queuesMod.queues.IQueue
+import typings.mendixmodelsdk.queuesMod.queues.QueueExponentialRetry
+import typings.mendixmodelsdk.queuesMod.queues.QueueFixedRetry
+import typings.mendixmodelsdk.queuesMod.queues.QueueSettings
 import typings.mendixmodelsdk.regularexpressionsMod.regularexpressions.IRegularExpression
 import typings.mendixmodelsdk.reportsMod.reports.BasicReport
 import typings.mendixmodelsdk.reportsMod.reports.BasicReportAggregate
@@ -526,8 +575,13 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportDropDown
 import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.reportsMod.reports.ReportZoomInfo
 import typings.mendixmodelsdk.reportsMod.reports.ReportZoomMapping
+import typings.mendixmodelsdk.restMod.rest.CallMicroflowToChange
+import typings.mendixmodelsdk.restMod.rest.CallMicroflowToRead
+import typings.mendixmodelsdk.restMod.rest.ChangeNotSupported
+import typings.mendixmodelsdk.restMod.rest.ChangeSource
 import typings.mendixmodelsdk.restMod.rest.CorsConfiguration
 import typings.mendixmodelsdk.restMod.rest.IConsumedODataService
+import typings.mendixmodelsdk.restMod.rest.IInteractiveRest
 import typings.mendixmodelsdk.restMod.rest.IPublishedODataService
 import typings.mendixmodelsdk.restMod.rest.IPublishedRestService
 import typings.mendixmodelsdk.restMod.rest.MetadataReference
@@ -536,11 +590,23 @@ import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.restMod.rest.ODataMappedValue
 import typings.mendixmodelsdk.restMod.rest.ODataRemoteAssociationSource
 import typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource
+import typings.mendixmodelsdk.restMod.rest.PublishedODataContract
 import typings.mendixmodelsdk.restMod.rest.PublishedRestResource
 import typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation
 import typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource
+import typings.mendixmodelsdk.restMod.rest.QueryOptions
+import typings.mendixmodelsdk.restMod.rest.ReadSource
 import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
+import typings.mendixmodelsdk.restMod.rest.ServiceFeed
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySchedule
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.HourSchedule
 import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IScheduledEvent
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MinuteSchedule
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthDateSchedule
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthWeekdaySchedule
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.WeekSchedule
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearDateSchedule
+import typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearWeekdaySchedule
 import typings.mendixmodelsdk.securityMod.security.DemoUser
 import typings.mendixmodelsdk.securityMod.security.FileDocumentAccessRuleContainer
 import typings.mendixmodelsdk.securityMod.security.IModuleRole
@@ -560,11 +626,15 @@ import typings.mendixmodelsdk.settingsMod.settings.ConstantValue
 import typings.mendixmodelsdk.settingsMod.settings.CustomSetting
 import typings.mendixmodelsdk.settingsMod.settings.IProjectSettings
 import typings.mendixmodelsdk.settingsMod.settings.IntegrationProjectSettingsPart
+import typings.mendixmodelsdk.settingsMod.settings.JarDeploymentSettings
 import typings.mendixmodelsdk.settingsMod.settings.JavaActionsSettings
 import typings.mendixmodelsdk.settingsMod.settings.Language
 import typings.mendixmodelsdk.settingsMod.settings.LanguageSettings
 import typings.mendixmodelsdk.settingsMod.settings.ModelerSettings
+import typings.mendixmodelsdk.settingsMod.settings.ProtectedModuleJarLocation
 import typings.mendixmodelsdk.settingsMod.settings.RuntimeSettings
+import typings.mendixmodelsdk.settingsMod.settings.ThemeModuleEntry
+import typings.mendixmodelsdk.settingsMod.settings.UserLibJarLocation
 import typings.mendixmodelsdk.settingsMod.settings.WebUIProjectSettingsPart
 import typings.mendixmodelsdk.settingsMod.settings.WorkflowsProjectSettingsPart
 import typings.mendixmodelsdk.textsMod.texts.ISystemTextCollection
@@ -589,19 +659,31 @@ import typings.mendixmodelsdk.webservicesMod.webservices.SystemIdDataAttribute
 import typings.mendixmodelsdk.webservicesMod.webservices.VersionedService
 import typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription
 import typings.mendixmodelsdk.webservicesMod.webservices.WsdlEntry
-import typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.BooleanConditionOutcome
 import typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask
 import typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity
+import typings.mendixmodelsdk.workflowsMod.workflows.EmptyUserSource
 import typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity
-import typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueConditionOutcome
 import typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity
 import typings.mendixmodelsdk.workflowsMod.workflows.Flow
+import typings.mendixmodelsdk.workflowsMod.workflows.IParameter
+import typings.mendixmodelsdk.workflowsMod.workflows.IUserTaskOutcome
 import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflow
-import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTaskOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.JumpToActivity
+import typings.mendixmodelsdk.workflowsMod.workflows.MicroflowBasedEvent
+import typings.mendixmodelsdk.workflowsMod.workflows.MicroflowBasedUserSource
+import typings.mendixmodelsdk.workflowsMod.workflows.MicroflowEventHandler
+import typings.mendixmodelsdk.workflowsMod.workflows.NoEvent
+import typings.mendixmodelsdk.workflowsMod.workflows.PageReference
 import typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity
 import typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.Parameter
 import typings.mendixmodelsdk.workflowsMod.workflows.UserTask
-import typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.UserTaskOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.VoidConditionOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.WorkflowCallParameterMapping
+import typings.mendixmodelsdk.workflowsMod.workflows.WorkflowType
 import typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IMxSchema
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.IXmlSchema
@@ -615,7 +697,7 @@ object baseModelMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mendixmodelsdk.abstractModelMod.IAbstractModel because Already inherited
-  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined createElement, allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedKafkaServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedKafkaServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allWorkflows, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findConsumedKafkaServiceByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findSnippetByQualifiedName, findRegularExpressionByQualifiedName, findConsumedODataServiceByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findWorkflowByQualifiedName, findWorkflowTaskOutcomeByQualifiedName, findXmlSchemaByQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/base-model", "BaseModel")
+  - typings.mendixmodelsdk.baseModelMod.IBaseModel because var conflicts: id, metaModelVersion, mxVersionForModel, workingCopy. Inlined createElement, allBuildingBlocks, allCodeActions, allConstants, allConsumedAppServices, allConsumedBusinessEventServices, allConsumedKafkaServices, allConsumedODataServices, allDataSets, allDocuments, allDocumentTemplates, allDomainModels, allEnumerations, allExportMappings, allFolders, allFolderBases, allFormBases, allImageCollections, allImportMappings, allImportedWebServices, allInteractiveRests, allJavaActions, allJavaScriptActions, allJsonStructures, allLayouts, allMLMappingDocuments, allMappingDocuments, allMenuDocuments, allMessageDefinitionCollections, allMicroflows, allMicroflowBases, allModules, allModuleDocuments, allModuleSecurities, allModuleSettings, allMxSchemas, allNanoflows, allNativeLayouts, allNativePages, allNavigationDocuments, allPages, allPageTemplates, allProjects, allProjectConversions, allProjectDocuments, allProjectSecurities, allProjectSettings, allPublishedAppServices, allPublishedBusinessEventServices, allPublishedKafkaServices, allPublishedODataServices, allPublishedRestServices, allPublishedServiceBases, allPublishedWebServices, allQueues, allRegularExpressions, allRemoteEntitySourceDocuments, allRules, allScheduledEvents, allServerSideMicroflows, allSnippets, allSystemTextCollections, allTemplateFormBases, allWorkflows, allXmlSchemas, findAppServiceActionByQualifiedName, findAppServiceActionParameterByQualifiedName, findConstantByQualifiedName, findDataSetByQualifiedName, findDataSetParameterByQualifiedName, findDocumentTemplateByQualifiedName, findAssociationBaseByQualifiedName, findAttributeByQualifiedName, findEntityByQualifiedName, findRemoteEntitySourceDocumentByQualifiedName, findEnumerationByQualifiedName, findEnumerationValueByQualifiedName, findExportMappingByQualifiedName, findImageByQualifiedName, findImportMappingByQualifiedName, findJavaActionByQualifiedName, findJavaActionParameterByQualifiedName, findJavaScriptActionByQualifiedName, findJavaScriptActionParameterByQualifiedName, findJsonStructureByQualifiedName, findConsumedKafkaServiceByQualifiedName, findMLMappingDocumentByQualifiedName, findMenuDocumentByQualifiedName, findMessageDefinitionByQualifiedName, findMicroflowByQualifiedName, findMicroflowParameterByQualifiedName, findNanoflowByQualifiedName, findNanoflowParameterByQualifiedName, findRuleByQualifiedName, findRuleParameterByQualifiedName, findNativeLayoutByQualifiedName, findNativePageByQualifiedName, findNavigationProfileByQualifiedName, findLayoutByQualifiedName, findLayoutParameterByQualifiedName, findPageByQualifiedName, findPageParameterByQualifiedName, findSnippetByQualifiedName, findQueueByQualifiedName, findRegularExpressionByQualifiedName, findConsumedODataServiceByQualifiedName, findModuleRoleByQualifiedName, findUserRoleByQualifiedName, findImportedWebServiceByQualifiedName, findParameterByQualifiedName, findUserTaskOutcomeByQualifiedName, findWorkflowByQualifiedName, findXmlSchemaByQualifiedName */ @JSImport("mendixmodelsdk/src/gen/base-model", "BaseModel")
   @js.native
   abstract class BaseModel protected () extends AbstractModel {
     def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
@@ -627,6 +709,8 @@ object baseModelMod {
     def allConstants(): js.Array[IConstant] = js.native
     
     def allConsumedAppServices(): js.Array[IConsumedAppService] = js.native
+    
+    def allConsumedBusinessEventServices(): js.Array[IConsumedBusinessEventService] = js.native
     
     def allConsumedKafkaServices(): js.Array[IConsumedKafkaService] = js.native
     
@@ -656,6 +740,8 @@ object baseModelMod {
     
     def allImportedWebServices(): js.Array[IImportedWebService] = js.native
     
+    def allInteractiveRests(): js.Array[IInteractiveRest] = js.native
+    
     def allJavaActions(): js.Array[IJavaAction] = js.native
     
     def allJavaScriptActions(): js.Array[IJavaScriptAction] = js.native
@@ -663,6 +749,8 @@ object baseModelMod {
     def allJsonStructures(): js.Array[IJsonStructure] = js.native
     
     def allLayouts(): js.Array[ILayout] = js.native
+    
+    def allMLMappingDocuments(): js.Array[IMLMappingDocument] = js.native
     
     def allMappingDocuments(): js.Array[IMappingDocument] = js.native
     
@@ -677,6 +765,8 @@ object baseModelMod {
     def allModuleDocuments(): js.Array[IModuleDocument] = js.native
     
     def allModuleSecurities(): js.Array[IModuleSecurity] = js.native
+    
+    def allModuleSettings(): js.Array[IModuleSettings] = js.native
     
     def allModules(): js.Array[IModule] = js.native
     
@@ -706,6 +796,8 @@ object baseModelMod {
     
     def allPublishedAppServices(): js.Array[IPublishedAppService] = js.native
     
+    def allPublishedBusinessEventServices(): js.Array[IPublishedBusinessEventService] = js.native
+    
     def allPublishedKafkaServices(): js.Array[IPublishedKafkaService] = js.native
     
     def allPublishedODataServices(): js.Array[IPublishedODataService] = js.native
@@ -715,6 +807,8 @@ object baseModelMod {
     def allPublishedServiceBases(): js.Array[IPublishedServiceBase] = js.native
     
     def allPublishedWebServices(): js.Array[IPublishedWebService] = js.native
+    
+    def allQueues(): js.Array[IQueue] = js.native
     
     def allRegularExpressions(): js.Array[IRegularExpression] = js.native
     
@@ -741,7 +835,7 @@ object baseModelMod {
       * After creation, assign or add this instance to a property that accepts this kind of elements.
       * @param typeName `structureTypeName` of the element type you want to create
       */
-    def createElement[T /* <: /* keyof mendixmodelsdk.mendixmodelsdk/dist/gen/base-model.ConcreteModelElements */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 563 */ js.Any */](typeName: T): /* import warning: importer.ImportType#apply Failed type conversion: mendixmodelsdk.mendixmodelsdk/dist/gen/base-model.ConcreteModelElements[T] */ js.Any = js.native
+    def createElement[T /* <: /* keyof mendixmodelsdk.mendixmodelsdk/src/gen/base-model.ConcreteModelElements */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 640 */ Any */](typeName: T): /* import warning: importer.ImportType#apply Failed type conversion: mendixmodelsdk.mendixmodelsdk/src/gen/base-model.ConcreteModelElements[T] */ js.Any = js.native
     
     def findAppServiceActionByQualifiedName(qname: String): IAppServiceAction | Null = js.native
     
@@ -791,6 +885,8 @@ object baseModelMod {
     
     def findLayoutParameterByQualifiedName(qname: String): ILayoutParameter | Null = js.native
     
+    def findMLMappingDocumentByQualifiedName(qname: String): IMLMappingDocument | Null = js.native
+    
     def findMenuDocumentByQualifiedName(qname: String): IMenuDocument | Null = js.native
     
     def findMessageDefinitionByQualifiedName(qname: String): IMessageDefinition | Null = js.native
@@ -813,6 +909,12 @@ object baseModelMod {
     
     def findPageByQualifiedName(qname: String): IPage | Null = js.native
     
+    def findPageParameterByQualifiedName(qname: String): IPageParameter | Null = js.native
+    
+    def findParameterByQualifiedName(qname: String): IParameter | Null = js.native
+    
+    def findQueueByQualifiedName(qname: String): IQueue | Null = js.native
+    
     def findRegularExpressionByQualifiedName(qname: String): IRegularExpression | Null = js.native
     
     def findRemoteEntitySourceDocumentByQualifiedName(qname: String): IRemoteEntitySourceDocument | Null = js.native
@@ -825,9 +927,9 @@ object baseModelMod {
     
     def findUserRoleByQualifiedName(qname: String): IUserRole | Null = js.native
     
-    def findWorkflowByQualifiedName(qname: String): IWorkflow | Null = js.native
+    def findUserTaskOutcomeByQualifiedName(qname: String): IUserTaskOutcome | Null = js.native
     
-    def findWorkflowTaskOutcomeByQualifiedName(qname: String): IWorkflowTaskOutcome | Null = js.native
+    def findWorkflowByQualifiedName(qname: String): IWorkflow | Null = js.native
     
     def findXmlSchemaByQualifiedName(qname: String): IXmlSchema | Null = js.native
   }
@@ -878,6 +980,18 @@ object baseModelMod {
     
     @JSName("AppServices$MsdVersion")
     var AppServices$MsdVersion: MsdVersion
+    
+    @JSName("BusinessEvents$ConsumedBusinessEvent")
+    var BusinessEvents$ConsumedBusinessEvent: ConsumedBusinessEvent
+    
+    @JSName("BusinessEvents$PublishedChannel")
+    var BusinessEvents$PublishedChannel: PublishedChannel
+    
+    @JSName("BusinessEvents$PublishedMessage")
+    var BusinessEvents$PublishedMessage: PublishedMessage
+    
+    @JSName("BusinessEvents$PublishedMessageAttribute")
+    var BusinessEvents$PublishedMessageAttribute: PublishedMessageAttribute
     
     @JSName("CodeActions$BasicParameterType")
     var CodeActions$BasicParameterType: BasicParameterType
@@ -1395,6 +1509,21 @@ object baseModelMod {
     @JSName("Kafka$PublishedKafkaResource")
     var Kafka$PublishedKafkaResource: PublishedKafkaResource
     
+    @JSName("Kafka$PublishedKafkaResourceAttribute")
+    var Kafka$PublishedKafkaResourceAttribute: PublishedKafkaResourceAttribute
+    
+    @JSName("MLMappings$MLModelEntityMappings")
+    var MLMappings$MLModelEntityMappings: MLModelEntityMappings
+    
+    @JSName("MLMappings$MLModelMappings")
+    var MLMappings$MLModelMappings: MLModelMappings
+    
+    @JSName("MLMappings$TensorDimension")
+    var MLMappings$TensorDimension: TensorDimension
+    
+    @JSName("MLMappings$TensorMappingElement")
+    var MLMappings$TensorMappingElement: TensorMappingElement
+    
     @JSName("Mappings$MappingMicroflowCall")
     var Mappings$MappingMicroflowCall: MappingMicroflowCall
     
@@ -1428,6 +1557,9 @@ object baseModelMod {
     @JSName("MessageDefinitions$ExposedEntity")
     var MessageDefinitions$ExposedEntity: ExposedEntity
     
+    @JSName("Microflows$AbortOperation")
+    var Microflows$AbortOperation: AbortOperation
+    
     @JSName("Microflows$ActionActivity")
     var Microflows$ActionActivity: ActionActivity
     
@@ -1448,6 +1580,9 @@ object baseModelMod {
     
     @JSName("Microflows$AppServiceCallParameterMapping")
     var Microflows$AppServiceCallParameterMapping: AppServiceCallParameterMapping
+    
+    @JSName("Microflows$ApplyJumpToOptionAction")
+    var Microflows$ApplyJumpToOptionAction: ApplyJumpToOptionAction
     
     @JSName("Microflows$AssociationRetrieveSource")
     var Microflows$AssociationRetrieveSource: AssociationRetrieveSource
@@ -1491,6 +1626,12 @@ object baseModelMod {
     @JSName("Microflows$ContinueEvent")
     var Microflows$ContinueEvent: ContinueEvent
     
+    @JSName("Microflows$ContinueOperation")
+    var Microflows$ContinueOperation: ContinueOperation
+    
+    @JSName("Microflows$CounterMeterAction")
+    var Microflows$CounterMeterAction: CounterMeterAction
+    
     @JSName("Microflows$CreateListAction")
     var Microflows$CreateListAction: CreateListAction
     
@@ -1511,6 +1652,9 @@ object baseModelMod {
     
     @JSName("Microflows$DeleteAction")
     var Microflows$DeleteAction: DeleteAction
+    
+    @JSName("Microflows$DeleteExternalObject")
+    var Microflows$DeleteExternalObject: DeleteExternalObject
     
     @JSName("Microflows$DocumentTemplateParameterMapping")
     var Microflows$DocumentTemplateParameterMapping: DocumentTemplateParameterMapping
@@ -1557,8 +1701,14 @@ object baseModelMod {
     @JSName("Microflows$Filter")
     var Microflows$Filter: Filter
     
+    @JSName("Microflows$FilterByExpression")
+    var Microflows$FilterByExpression: FilterByExpression
+    
     @JSName("Microflows$Find")
     var Microflows$Find: Find
+    
+    @JSName("Microflows$FindByExpression")
+    var Microflows$FindByExpression: FindByExpression
     
     @JSName("Microflows$FormDataPart")
     var Microflows$FormDataPart: FormDataPart
@@ -1566,8 +1716,17 @@ object baseModelMod {
     @JSName("Microflows$FormDataRequestHandling")
     var Microflows$FormDataRequestHandling: FormDataRequestHandling
     
+    @JSName("Microflows$GaugeMeterAction")
+    var Microflows$GaugeMeterAction: GaugeMeterAction
+    
     @JSName("Microflows$GenerateDocumentAction")
     var Microflows$GenerateDocumentAction: GenerateDocumentAction
+    
+    @JSName("Microflows$GenerateJumpToOptionsAction")
+    var Microflows$GenerateJumpToOptionsAction: GenerateJumpToOptionsAction
+    
+    @JSName("Microflows$GetWorkflowDataAction")
+    var Microflows$GetWorkflowDataAction: GetWorkflowDataAction
     
     @JSName("Microflows$Head")
     var Microflows$Head: Head
@@ -1590,6 +1749,9 @@ object baseModelMod {
     @JSName("Microflows$ImportXmlAction")
     var Microflows$ImportXmlAction: ImportXmlAction
     
+    @JSName("Microflows$IncrementCounterMeterAction")
+    var Microflows$IncrementCounterMeterAction: IncrementCounterMeterAction
+    
     @JSName("Microflows$InheritanceCase")
     var Microflows$InheritanceCase: InheritanceCase
     
@@ -1598,6 +1760,9 @@ object baseModelMod {
     
     @JSName("Microflows$Intersect")
     var Microflows$Intersect: Intersect
+    
+    @JSName("Microflows$IterableList")
+    var Microflows$IterableList: IterableList
     
     @JSName("Microflows$JavaActionCallAction")
     var Microflows$JavaActionCallAction: JavaActionCallAction
@@ -1623,11 +1788,23 @@ object baseModelMod {
     @JSName("Microflows$LoopedActivity")
     var Microflows$LoopedActivity: LoopedActivity
     
+    @JSName("Microflows$MLModelCall")
+    var Microflows$MLModelCall: MLModelCall
+    
+    @JSName("Microflows$MLModelCallAction")
+    var Microflows$MLModelCallAction: MLModelCallAction
+    
+    @JSName("Microflows$MLModelCallParameterMapping")
+    var Microflows$MLModelCallParameterMapping: MLModelCallParameterMapping
+    
     @JSName("Microflows$MappingRequestHandling")
     var Microflows$MappingRequestHandling: MappingRequestHandling
     
     @JSName("Microflows$MemberChange")
     var Microflows$MemberChange: MemberChange
+    
+    @JSName("Microflows$MeterTagMapping")
+    var Microflows$MeterTagMapping: MeterTagMapping
     
     @JSName("Microflows$MicroflowCall")
     var Microflows$MicroflowCall: MicroflowCall
@@ -1671,6 +1848,12 @@ object baseModelMod {
     @JSName("Microflows$OpenUserTaskAction")
     var Microflows$OpenUserTaskAction: OpenUserTaskAction
     
+    @JSName("Microflows$OpenWorkflowAction")
+    var Microflows$OpenWorkflowAction: OpenWorkflowAction
+    
+    @JSName("Microflows$PauseOperation")
+    var Microflows$PauseOperation: PauseOperation
+    
     @JSName("Microflows$PrimitiveTypedTemplateArgument")
     var Microflows$PrimitiveTypedTemplateArgument: PrimitiveTypedTemplateArgument
     
@@ -1683,11 +1866,20 @@ object baseModelMod {
     @JSName("Microflows$RestCallAction")
     var Microflows$RestCallAction: RestCallAction
     
+    @JSName("Microflows$RestartOperation")
+    var Microflows$RestartOperation: RestartOperation
+    
     @JSName("Microflows$ResultHandling")
     var Microflows$ResultHandling: ResultHandling
     
+    @JSName("Microflows$ResumeOperation")
+    var Microflows$ResumeOperation: ResumeOperation
+    
     @JSName("Microflows$RetrieveAction")
     var Microflows$RetrieveAction: RetrieveAction
+    
+    @JSName("Microflows$RetryOperation")
+    var Microflows$RetryOperation: RetryOperation
     
     @JSName("Microflows$RollbackAction")
     var Microflows$RollbackAction: RollbackAction
@@ -1703,6 +1895,9 @@ object baseModelMod {
     
     @JSName("Microflows$RuleSplitCondition")
     var Microflows$RuleSplitCondition: RuleSplitCondition
+    
+    @JSName("Microflows$SendExternalObject")
+    var Microflows$SendExternalObject: SendExternalObject
     
     @JSName("Microflows$SequenceFlow")
     var Microflows$SequenceFlow: SequenceFlow
@@ -1761,6 +1956,9 @@ object baseModelMod {
     @JSName("Microflows$Union")
     var Microflows$Union: Union
     
+    @JSName("Microflows$UnpauseOperation")
+    var Microflows$UnpauseOperation: UnpauseOperation
+    
     @JSName("Microflows$ValidationFeedbackAction")
     var Microflows$ValidationFeedbackAction: ValidationFeedbackAction
     
@@ -1776,8 +1974,14 @@ object baseModelMod {
     @JSName("Microflows$WebServiceOperationSimpleParameterMapping")
     var Microflows$WebServiceOperationSimpleParameterMapping: WebServiceOperationSimpleParameterMapping
     
+    @JSName("Microflows$WhileLoopCondition")
+    var Microflows$WhileLoopCondition: WhileLoopCondition
+    
     @JSName("Microflows$WorkflowCallAction")
     var Microflows$WorkflowCallAction: WorkflowCallAction
+    
+    @JSName("Microflows$WorkflowOperationAction")
+    var Microflows$WorkflowOperationAction: WorkflowOperationAction
     
     @JSName("Nanoflows$NanoflowParameterValue")
     var Nanoflows$NanoflowParameterValue: NanoflowParameterValue
@@ -1797,6 +2001,9 @@ object baseModelMod {
     @JSName("Navigation$HomePage")
     var Navigation$HomePage: HomePage
     
+    @JSName("Navigation$NativeHomePage")
+    var Navigation$NativeHomePage: NativeHomePage
+    
     @JSName("Navigation$NativeNavigationProfile")
     var Navigation$NativeNavigationProfile: NativeNavigationProfile
     
@@ -1805,6 +2012,9 @@ object baseModelMod {
     
     @JSName("Navigation$OfflineEntityConfig")
     var Navigation$OfflineEntityConfig: OfflineEntityConfig
+    
+    @JSName("Navigation$ProgressiveWebAppSettings")
+    var Navigation$ProgressiveWebAppSettings: ProgressiveWebAppSettings
     
     @JSName("Navigation$RoleBasedHomePage")
     var Navigation$RoleBasedHomePage: RoleBasedHomePage
@@ -2139,6 +2349,12 @@ object baseModelMod {
     @JSName("Pages$PageForSpecialization")
     var Pages$PageForSpecialization: PageForSpecialization
     
+    @JSName("Pages$PageParameter")
+    var Pages$PageParameter: PageParameter
+    
+    @JSName("Pages$PageParameterMapping")
+    var Pages$PageParameterMapping: PageParameterMapping
+    
     @JSName("Pages$PageSettings")
     var Pages$PageSettings: PageSettings
     
@@ -2177,6 +2393,9 @@ object baseModelMod {
     
     @JSName("Pages$RetrievalSchema")
     var Pages$RetrievalSchema: RetrievalSchema
+    
+    @JSName("Pages$RuntimeOperation")
+    var Pages$RuntimeOperation: RuntimeOperation
     
     @JSName("Pages$SaveButton")
     var Pages$SaveButton: SaveButton
@@ -2298,6 +2517,18 @@ object baseModelMod {
     @JSName("Projects$OneTimeConversionMarker")
     var Projects$OneTimeConversionMarker: OneTimeConversionMarker
     
+    @JSName("Queues$BasicQueueConfig")
+    var Queues$BasicQueueConfig: BasicQueueConfig
+    
+    @JSName("Queues$QueueExponentialRetry")
+    var Queues$QueueExponentialRetry: QueueExponentialRetry
+    
+    @JSName("Queues$QueueFixedRetry")
+    var Queues$QueueFixedRetry: QueueFixedRetry
+    
+    @JSName("Queues$QueueSettings")
+    var Queues$QueueSettings: QueueSettings
+    
     @JSName("Reports$BasicReport")
     var Reports$BasicReport: BasicReport
     
@@ -2334,6 +2565,18 @@ object baseModelMod {
     @JSName("Reports$ReportZoomMapping")
     var Reports$ReportZoomMapping: ReportZoomMapping
     
+    @JSName("Rest$CallMicroflowToChange")
+    var Rest$CallMicroflowToChange: CallMicroflowToChange
+    
+    @JSName("Rest$CallMicroflowToRead")
+    var Rest$CallMicroflowToRead: CallMicroflowToRead
+    
+    @JSName("Rest$ChangeNotSupported")
+    var Rest$ChangeNotSupported: ChangeNotSupported
+    
+    @JSName("Rest$ChangeSource")
+    var Rest$ChangeSource: ChangeSource
+    
     @JSName("Rest$CorsConfiguration")
     var Rest$CorsConfiguration: CorsConfiguration
     
@@ -2355,6 +2598,9 @@ object baseModelMod {
     @JSName("Rest$ODataRemoteEntitySource")
     var Rest$ODataRemoteEntitySource: ODataRemoteEntitySource
     
+    @JSName("Rest$PublishedODataContract")
+    var Rest$PublishedODataContract: PublishedODataContract
+    
     @JSName("Rest$PublishedRestResource")
     var Rest$PublishedRestResource: PublishedRestResource
     
@@ -2364,8 +2610,41 @@ object baseModelMod {
     @JSName("Rest$PublishedRestServiceResource")
     var Rest$PublishedRestServiceResource: PublishedRestServiceResource
     
+    @JSName("Rest$QueryOptions")
+    var Rest$QueryOptions: QueryOptions
+    
+    @JSName("Rest$ReadSource")
+    var Rest$ReadSource: ReadSource
+    
     @JSName("Rest$RestOperationParameter")
     var Rest$RestOperationParameter: RestOperationParameter
+    
+    @JSName("Rest$ServiceFeed")
+    var Rest$ServiceFeed: ServiceFeed
+    
+    @JSName("ScheduledEvents$DaySchedule")
+    var ScheduledEvents$DaySchedule: DaySchedule
+    
+    @JSName("ScheduledEvents$HourSchedule")
+    var ScheduledEvents$HourSchedule: HourSchedule
+    
+    @JSName("ScheduledEvents$MinuteSchedule")
+    var ScheduledEvents$MinuteSchedule: MinuteSchedule
+    
+    @JSName("ScheduledEvents$MonthDateSchedule")
+    var ScheduledEvents$MonthDateSchedule: MonthDateSchedule
+    
+    @JSName("ScheduledEvents$MonthWeekdaySchedule")
+    var ScheduledEvents$MonthWeekdaySchedule: MonthWeekdaySchedule
+    
+    @JSName("ScheduledEvents$WeekSchedule")
+    var ScheduledEvents$WeekSchedule: WeekSchedule
+    
+    @JSName("ScheduledEvents$YearDateSchedule")
+    var ScheduledEvents$YearDateSchedule: YearDateSchedule
+    
+    @JSName("ScheduledEvents$YearWeekdaySchedule")
+    var ScheduledEvents$YearWeekdaySchedule: YearWeekdaySchedule
     
     @JSName("Security$DemoUser")
     var Security$DemoUser: DemoUser
@@ -2409,6 +2688,9 @@ object baseModelMod {
     @JSName("Settings$IntegrationProjectSettingsPart")
     var Settings$IntegrationProjectSettingsPart: IntegrationProjectSettingsPart
     
+    @JSName("Settings$JarDeploymentSettings")
+    var Settings$JarDeploymentSettings: JarDeploymentSettings
+    
     @JSName("Settings$JavaActionsSettings")
     var Settings$JavaActionsSettings: JavaActionsSettings
     
@@ -2421,8 +2703,17 @@ object baseModelMod {
     @JSName("Settings$ModelerSettings")
     var Settings$ModelerSettings: ModelerSettings
     
+    @JSName("Settings$ProtectedModuleJarLocation")
+    var Settings$ProtectedModuleJarLocation: ProtectedModuleJarLocation
+    
     @JSName("Settings$RuntimeSettings")
     var Settings$RuntimeSettings: RuntimeSettings
+    
+    @JSName("Settings$ThemeModuleEntry")
+    var Settings$ThemeModuleEntry: ThemeModuleEntry
+    
+    @JSName("Settings$UserLibJarLocation")
+    var Settings$UserLibJarLocation: UserLibJarLocation
     
     @JSName("Settings$WebUIProjectSettingsPart")
     var Settings$WebUIProjectSettingsPart: WebUIProjectSettingsPart
@@ -2481,8 +2772,11 @@ object baseModelMod {
     @JSName("WebServices$WsdlEntry")
     var WebServices$WsdlEntry: WsdlEntry
     
-    @JSName("Workflows$BooleanSplitOutcome")
-    var Workflows$BooleanSplitOutcome: BooleanSplitOutcome
+    @JSName("Workflows$Annotation")
+    var Workflows$Annotation: typings.mendixmodelsdk.workflowsMod.workflows.Annotation
+    
+    @JSName("Workflows$BooleanConditionOutcome")
+    var Workflows$BooleanConditionOutcome: BooleanConditionOutcome
     
     @JSName("Workflows$CallMicroflowTask")
     var Workflows$CallMicroflowTask: CallMicroflowTask
@@ -2490,11 +2784,14 @@ object baseModelMod {
     @JSName("Workflows$CallWorkflowActivity")
     var Workflows$CallWorkflowActivity: CallWorkflowActivity
     
+    @JSName("Workflows$EmptyUserSource")
+    var Workflows$EmptyUserSource: EmptyUserSource
+    
     @JSName("Workflows$EndWorkflowActivity")
     var Workflows$EndWorkflowActivity: EndWorkflowActivity
     
-    @JSName("Workflows$EnumerationValueSplitOutcome")
-    var Workflows$EnumerationValueSplitOutcome: EnumerationValueSplitOutcome
+    @JSName("Workflows$EnumerationValueConditionOutcome")
+    var Workflows$EnumerationValueConditionOutcome: EnumerationValueConditionOutcome
     
     @JSName("Workflows$ExclusiveSplitActivity")
     var Workflows$ExclusiveSplitActivity: ExclusiveSplitActivity
@@ -2502,17 +2799,53 @@ object baseModelMod {
     @JSName("Workflows$Flow")
     var Workflows$Flow: Flow
     
+    @JSName("Workflows$JumpToActivity")
+    var Workflows$JumpToActivity: JumpToActivity
+    
+    @JSName("Workflows$MicroflowBasedEvent")
+    var Workflows$MicroflowBasedEvent: MicroflowBasedEvent
+    
+    @JSName("Workflows$MicroflowBasedUserSource")
+    var Workflows$MicroflowBasedUserSource: MicroflowBasedUserSource
+    
+    @JSName("Workflows$MicroflowCallParameterMapping")
+    var Workflows$MicroflowCallParameterMapping: typings.mendixmodelsdk.workflowsMod.workflows.MicroflowCallParameterMapping
+    
+    @JSName("Workflows$MicroflowEventHandler")
+    var Workflows$MicroflowEventHandler: MicroflowEventHandler
+    
+    @JSName("Workflows$NoEvent")
+    var Workflows$NoEvent: NoEvent
+    
+    @JSName("Workflows$PageParameterMapping")
+    var Workflows$PageParameterMapping: typings.mendixmodelsdk.workflowsMod.workflows.PageParameterMapping
+    
+    @JSName("Workflows$PageReference")
+    var Workflows$PageReference: PageReference
+    
     @JSName("Workflows$ParallelSplitActivity")
     var Workflows$ParallelSplitActivity: ParallelSplitActivity
     
     @JSName("Workflows$ParallelSplitOutcome")
     var Workflows$ParallelSplitOutcome: ParallelSplitOutcome
     
+    @JSName("Workflows$Parameter")
+    var Workflows$Parameter: Parameter
+    
     @JSName("Workflows$UserTask")
     var Workflows$UserTask: UserTask
     
-    @JSName("Workflows$WorkflowTaskOutcome")
-    var Workflows$WorkflowTaskOutcome: WorkflowTaskOutcome
+    @JSName("Workflows$UserTaskOutcome")
+    var Workflows$UserTaskOutcome: UserTaskOutcome
+    
+    @JSName("Workflows$VoidConditionOutcome")
+    var Workflows$VoidConditionOutcome: VoidConditionOutcome
+    
+    @JSName("Workflows$WorkflowCallParameterMapping")
+    var Workflows$WorkflowCallParameterMapping: WorkflowCallParameterMapping
+    
+    @JSName("Workflows$WorkflowType")
+    var Workflows$WorkflowType: WorkflowType
     
     @JSName("Workflows$XPathBasedUserSource")
     var Workflows$XPathBasedUserSource: XPathBasedUserSource
@@ -2541,6 +2874,10 @@ object baseModelMod {
       AppServices$MsdMicroflowParameter: MsdMicroflowParameter,
       AppServices$MsdText: MsdText,
       AppServices$MsdVersion: MsdVersion,
+      BusinessEvents$ConsumedBusinessEvent: ConsumedBusinessEvent,
+      BusinessEvents$PublishedChannel: PublishedChannel,
+      BusinessEvents$PublishedMessage: PublishedMessage,
+      BusinessEvents$PublishedMessageAttribute: PublishedMessageAttribute,
       CodeActions$BasicParameterType: BasicParameterType,
       CodeActions$BooleanType: BooleanType,
       CodeActions$ConcreteEntityType: ConcreteEntityType,
@@ -2713,6 +3050,11 @@ object baseModelMod {
       Kafka$KafkaMappedValue: KafkaMappedValue,
       Kafka$KafkaRemoteEntitySource: KafkaRemoteEntitySource,
       Kafka$PublishedKafkaResource: PublishedKafkaResource,
+      Kafka$PublishedKafkaResourceAttribute: PublishedKafkaResourceAttribute,
+      MLMappings$MLModelEntityMappings: MLModelEntityMappings,
+      MLMappings$MLModelMappings: MLModelMappings,
+      MLMappings$TensorDimension: TensorDimension,
+      MLMappings$TensorMappingElement: TensorMappingElement,
       Mappings$MappingMicroflowCall: MappingMicroflowCall,
       Mappings$MappingMicroflowParameter: MappingMicroflowParameter,
       Menus$MenuItem: MenuItem,
@@ -2724,6 +3066,7 @@ object baseModelMod {
       MessageDefinitions$ExposedAssociation: ExposedAssociation,
       MessageDefinitions$ExposedAttribute: ExposedAttribute,
       MessageDefinitions$ExposedEntity: ExposedEntity,
+      Microflows$AbortOperation: AbortOperation,
       Microflows$ActionActivity: ActionActivity,
       Microflows$AdvancedRequestHandling: AdvancedRequestHandling,
       Microflows$AggregateListAction: AggregateListAction,
@@ -2731,6 +3074,7 @@ object baseModelMod {
       Microflows$AnnotationFlow: AnnotationFlow,
       Microflows$AppServiceCallAction: AppServiceCallAction,
       Microflows$AppServiceCallParameterMapping: AppServiceCallParameterMapping,
+      Microflows$ApplyJumpToOptionAction: ApplyJumpToOptionAction,
       Microflows$AssociationRetrieveSource: AssociationRetrieveSource,
       Microflows$BasicCodeActionParameterValue: BasicCodeActionParameterValue,
       Microflows$BasicJavaActionParameterValue: BasicJavaActionParameterValue,
@@ -2745,6 +3089,8 @@ object baseModelMod {
       Microflows$ConstantRange: ConstantRange,
       Microflows$Contains: Contains,
       Microflows$ContinueEvent: ContinueEvent,
+      Microflows$ContinueOperation: ContinueOperation,
+      Microflows$CounterMeterAction: CounterMeterAction,
       Microflows$CreateListAction: CreateListAction,
       Microflows$CreateObjectAction: CreateObjectAction,
       Microflows$CreateVariableAction: CreateVariableAction,
@@ -2752,6 +3098,7 @@ object baseModelMod {
       Microflows$CustomRequestHandling: CustomRequestHandling,
       Microflows$DatabaseRetrieveSource: DatabaseRetrieveSource,
       Microflows$DeleteAction: DeleteAction,
+      Microflows$DeleteExternalObject: DeleteExternalObject,
       Microflows$DocumentTemplateParameterMapping: DocumentTemplateParameterMapping,
       Microflows$DownloadFileAction: DownloadFileAction,
       Microflows$EndEvent: EndEvent,
@@ -2765,23 +3112,9 @@ object baseModelMod {
       Microflows$ExportMappingParameterValue: ExportMappingParameterValue,
       Microflows$ExportXmlAction: ExportXmlAction,
       Microflows$ExpressionSplitCondition: ExpressionSplitCondition,
-      Microflows$FileDocumentExport: FileDocumentExport,
-      Microflows$Filter: Filter,
-      Microflows$Find: Find,
-      Microflows$FormDataPart: FormDataPart,
-      Microflows$FormDataRequestHandling: FormDataRequestHandling,
-      Microflows$GenerateDocumentAction: GenerateDocumentAction,
-      Microflows$Head: Head,
-      Microflows$HttpConfiguration: HttpConfiguration,
-      Microflows$HttpHeaderEntry: HttpHeaderEntry,
-      Microflows$ImportMappingCall: ImportMappingCall,
-      Microflows$ImportMappingJavaActionParameterValue: ImportMappingJavaActionParameterValue,
-      Microflows$ImportMappingParameterValue: ImportMappingParameterValue,
-      Microflows$ImportXmlAction: ImportXmlAction,
-      Microflows$InheritanceCase: InheritanceCase,
-      Microflows$InheritanceSplit: InheritanceSplit
+      Microflows$FileDocumentExport: FileDocumentExport
     ): ConcreteModelElements = {
-      val __obj = js.Dynamic.literal(AppServices$AppServiceAction = AppServices$AppServiceAction.asInstanceOf[js.Any], AppServices$AppServiceActionParameter = AppServices$AppServiceActionParameter.asInstanceOf[js.Any], AppServices$Msd = AppServices$Msd.asInstanceOf[js.Any], AppServices$MsdAssociation = AppServices$MsdAssociation.asInstanceOf[js.Any], AppServices$MsdAttribute = AppServices$MsdAttribute.asInstanceOf[js.Any], AppServices$MsdDomainModel = AppServices$MsdDomainModel.asInstanceOf[js.Any], AppServices$MsdEntity = AppServices$MsdEntity.asInstanceOf[js.Any], AppServices$MsdEnumeration = AppServices$MsdEnumeration.asInstanceOf[js.Any], AppServices$MsdEnumerationContainer = AppServices$MsdEnumerationContainer.asInstanceOf[js.Any], AppServices$MsdEnumerationValue = AppServices$MsdEnumerationValue.asInstanceOf[js.Any], AppServices$MsdMetadata = AppServices$MsdMetadata.asInstanceOf[js.Any], AppServices$MsdMicroflow = AppServices$MsdMicroflow.asInstanceOf[js.Any], AppServices$MsdMicroflowParameter = AppServices$MsdMicroflowParameter.asInstanceOf[js.Any], AppServices$MsdText = AppServices$MsdText.asInstanceOf[js.Any], AppServices$MsdVersion = AppServices$MsdVersion.asInstanceOf[js.Any], CodeActions$BasicParameterType = CodeActions$BasicParameterType.asInstanceOf[js.Any], CodeActions$BooleanType = CodeActions$BooleanType.asInstanceOf[js.Any], CodeActions$ConcreteEntityType = CodeActions$ConcreteEntityType.asInstanceOf[js.Any], CodeActions$DateTimeType = CodeActions$DateTimeType.asInstanceOf[js.Any], CodeActions$DecimalType = CodeActions$DecimalType.asInstanceOf[js.Any], CodeActions$EntityTypeParameterType = CodeActions$EntityTypeParameterType.asInstanceOf[js.Any], CodeActions$EnumerationType = CodeActions$EnumerationType.asInstanceOf[js.Any], CodeActions$FloatType = CodeActions$FloatType.asInstanceOf[js.Any], CodeActions$IntegerType = CodeActions$IntegerType.asInstanceOf[js.Any], CodeActions$ListType = CodeActions$ListType.asInstanceOf[js.Any], CodeActions$MicroflowActionInfo = CodeActions$MicroflowActionInfo.asInstanceOf[js.Any], CodeActions$ParameterizedEntityType = CodeActions$ParameterizedEntityType.asInstanceOf[js.Any], CodeActions$StringTemplateParameterType = CodeActions$StringTemplateParameterType.asInstanceOf[js.Any], CodeActions$StringType = CodeActions$StringType.asInstanceOf[js.Any], CodeActions$TypeParameter = CodeActions$TypeParameter.asInstanceOf[js.Any], CodeActions$VoidType = CodeActions$VoidType.asInstanceOf[js.Any], CustomWidgets$CustomWidget = CustomWidgets$CustomWidget.asInstanceOf[js.Any], CustomWidgets$CustomWidgetDatabaseSource = CustomWidgets$CustomWidgetDatabaseSource.asInstanceOf[js.Any], CustomWidgets$CustomWidgetType = CustomWidgets$CustomWidgetType.asInstanceOf[js.Any], CustomWidgets$CustomWidgetXPathSource = CustomWidgets$CustomWidgetXPathSource.asInstanceOf[js.Any], CustomWidgets$WidgetEnumerationValue = CustomWidgets$WidgetEnumerationValue.asInstanceOf[js.Any], CustomWidgets$WidgetObject = CustomWidgets$WidgetObject.asInstanceOf[js.Any], CustomWidgets$WidgetObjectType = CustomWidgets$WidgetObjectType.asInstanceOf[js.Any], CustomWidgets$WidgetProperty = CustomWidgets$WidgetProperty.asInstanceOf[js.Any], CustomWidgets$WidgetPropertyType = CustomWidgets$WidgetPropertyType.asInstanceOf[js.Any], CustomWidgets$WidgetReturnType = CustomWidgets$WidgetReturnType.asInstanceOf[js.Any], CustomWidgets$WidgetTranslation = CustomWidgets$WidgetTranslation.asInstanceOf[js.Any], CustomWidgets$WidgetValue = CustomWidgets$WidgetValue.asInstanceOf[js.Any], CustomWidgets$WidgetValueType = CustomWidgets$WidgetValueType.asInstanceOf[js.Any], DataSets$DataSetAccess = DataSets$DataSetAccess.asInstanceOf[js.Any], DataSets$DataSetColumn = DataSets$DataSetColumn.asInstanceOf[js.Any], DataSets$DataSetConstraintAccess = DataSets$DataSetConstraintAccess.asInstanceOf[js.Any], DataSets$DataSetDateTimeConstraint = DataSets$DataSetDateTimeConstraint.asInstanceOf[js.Any], DataSets$DataSetModuleRoleAccess = DataSets$DataSetModuleRoleAccess.asInstanceOf[js.Any], DataSets$DataSetNumericConstraint = DataSets$DataSetNumericConstraint.asInstanceOf[js.Any], DataSets$DataSetObjectConstraint = DataSets$DataSetObjectConstraint.asInstanceOf[js.Any], DataSets$DataSetParameter = DataSets$DataSetParameter.asInstanceOf[js.Any], DataSets$DataSetParameterAccess = DataSets$DataSetParameterAccess.asInstanceOf[js.Any], DataSets$JavaDataSetSource = DataSets$JavaDataSetSource.asInstanceOf[js.Any], DataSets$OqlDataSetSource = DataSets$OqlDataSetSource.asInstanceOf[js.Any], DataTypes$BinaryType = DataTypes$BinaryType.asInstanceOf[js.Any], DataTypes$BooleanType = DataTypes$BooleanType.asInstanceOf[js.Any], DataTypes$DateTimeType = DataTypes$DateTimeType.asInstanceOf[js.Any], DataTypes$DecimalType = DataTypes$DecimalType.asInstanceOf[js.Any], DataTypes$EmptyType = DataTypes$EmptyType.asInstanceOf[js.Any], DataTypes$EnumerationType = DataTypes$EnumerationType.asInstanceOf[js.Any], DataTypes$FloatType = DataTypes$FloatType.asInstanceOf[js.Any], DataTypes$IntegerType = DataTypes$IntegerType.asInstanceOf[js.Any], DataTypes$ListType = DataTypes$ListType.asInstanceOf[js.Any], DataTypes$ObjectType = DataTypes$ObjectType.asInstanceOf[js.Any], DataTypes$StringType = DataTypes$StringType.asInstanceOf[js.Any], DataTypes$UnknownType = DataTypes$UnknownType.asInstanceOf[js.Any], DataTypes$VoidType = DataTypes$VoidType.asInstanceOf[js.Any], DocumentTemplates$ConditionSettings = DocumentTemplates$ConditionSettings.asInstanceOf[js.Any], DocumentTemplates$DataGrid = DocumentTemplates$DataGrid.asInstanceOf[js.Any], DocumentTemplates$DataGridCell = DocumentTemplates$DataGridCell.asInstanceOf[js.Any], DocumentTemplates$DataGridColumn = DocumentTemplates$DataGridColumn.asInstanceOf[js.Any], DocumentTemplates$DataView = DocumentTemplates$DataView.asInstanceOf[js.Any], DocumentTemplates$DataViewContents = DocumentTemplates$DataViewContents.asInstanceOf[js.Any], DocumentTemplates$DocumentTemplateParameter = DocumentTemplates$DocumentTemplateParameter.asInstanceOf[js.Any], DocumentTemplates$DynamicImageViewer = DocumentTemplates$DynamicImageViewer.asInstanceOf[js.Any], DocumentTemplates$DynamicLabel = DocumentTemplates$DynamicLabel.asInstanceOf[js.Any], DocumentTemplates$Footer = DocumentTemplates$Footer.asInstanceOf[js.Any], DocumentTemplates$GridSortBar = DocumentTemplates$GridSortBar.asInstanceOf[js.Any], DocumentTemplates$GridSortItem = DocumentTemplates$GridSortItem.asInstanceOf[js.Any], DocumentTemplates$Header = DocumentTemplates$Header.asInstanceOf[js.Any], DocumentTemplates$LineBreak = DocumentTemplates$LineBreak.asInstanceOf[js.Any], DocumentTemplates$PageBreak = DocumentTemplates$PageBreak.asInstanceOf[js.Any], DocumentTemplates$StaticImageViewer = DocumentTemplates$StaticImageViewer.asInstanceOf[js.Any], DocumentTemplates$StaticLabel = DocumentTemplates$StaticLabel.asInstanceOf[js.Any], DocumentTemplates$Style = DocumentTemplates$Style.asInstanceOf[js.Any], DocumentTemplates$Table = DocumentTemplates$Table.asInstanceOf[js.Any], DocumentTemplates$TableCell = DocumentTemplates$TableCell.asInstanceOf[js.Any], DocumentTemplates$TableRow = DocumentTemplates$TableRow.asInstanceOf[js.Any], DocumentTemplates$TemplateGrid = DocumentTemplates$TemplateGrid.asInstanceOf[js.Any], DocumentTemplates$TemplateGridContents = DocumentTemplates$TemplateGridContents.asInstanceOf[js.Any], DocumentTemplates$Title = DocumentTemplates$Title.asInstanceOf[js.Any], DomainModels$AccessRule = DomainModels$AccessRule.asInstanceOf[js.Any], DomainModels$Annotation = DomainModels$Annotation.asInstanceOf[js.Any], DomainModels$Association = DomainModels$Association.asInstanceOf[js.Any], DomainModels$AssociationCapabilities = DomainModels$AssociationCapabilities.asInstanceOf[js.Any], DomainModels$AssociationDeleteBehavior = DomainModels$AssociationDeleteBehavior.asInstanceOf[js.Any], DomainModels$AssociationRef = DomainModels$AssociationRef.asInstanceOf[js.Any], DomainModels$Attribute = DomainModels$Attribute.asInstanceOf[js.Any], DomainModels$AttributeCapabilities = DomainModels$AttributeCapabilities.asInstanceOf[js.Any], DomainModels$AttributeRef = DomainModels$AttributeRef.asInstanceOf[js.Any], DomainModels$AutoNumberAttributeType = DomainModels$AutoNumberAttributeType.asInstanceOf[js.Any], DomainModels$BinaryAttributeType = DomainModels$BinaryAttributeType.asInstanceOf[js.Any], DomainModels$BooleanAttributeType = DomainModels$BooleanAttributeType.asInstanceOf[js.Any], DomainModels$CalculatedValue = DomainModels$CalculatedValue.asInstanceOf[js.Any], DomainModels$CrossAssociation = DomainModels$CrossAssociation.asInstanceOf[js.Any], DomainModels$CurrencyAttributeType = DomainModels$CurrencyAttributeType.asInstanceOf[js.Any], DomainModels$DateTimeAttributeType = DomainModels$DateTimeAttributeType.asInstanceOf[js.Any], DomainModels$DecimalAttributeType = DomainModels$DecimalAttributeType.asInstanceOf[js.Any], DomainModels$DirectEntityRef = DomainModels$DirectEntityRef.asInstanceOf[js.Any], DomainModels$Entity = DomainModels$Entity.asInstanceOf[js.Any], DomainModels$EntityCapabilities = DomainModels$EntityCapabilities.asInstanceOf[js.Any], DomainModels$EntityKey = DomainModels$EntityKey.asInstanceOf[js.Any], DomainModels$EntityKeyPart = DomainModels$EntityKeyPart.asInstanceOf[js.Any], DomainModels$EntityRefStep = DomainModels$EntityRefStep.asInstanceOf[js.Any], DomainModels$EnumerationAttributeType = DomainModels$EnumerationAttributeType.asInstanceOf[js.Any], DomainModels$EqualsToRuleInfo = DomainModels$EqualsToRuleInfo.asInstanceOf[js.Any], DomainModels$EventHandler = DomainModels$EventHandler.asInstanceOf[js.Any], DomainModels$FloatAttributeType = DomainModels$FloatAttributeType.asInstanceOf[js.Any], DomainModels$Generalization = DomainModels$Generalization.asInstanceOf[js.Any], DomainModels$HashedStringAttributeType = DomainModels$HashedStringAttributeType.asInstanceOf[js.Any], DomainModels$Index = DomainModels$Index.asInstanceOf[js.Any], DomainModels$IndexedAttribute = DomainModels$IndexedAttribute.asInstanceOf[js.Any], DomainModels$IndirectEntityRef = DomainModels$IndirectEntityRef.asInstanceOf[js.Any], DomainModels$IntegerAttributeType = DomainModels$IntegerAttributeType.asInstanceOf[js.Any], DomainModels$LongAttributeType = DomainModels$LongAttributeType.asInstanceOf[js.Any], DomainModels$MaxLengthRuleInfo = DomainModels$MaxLengthRuleInfo.asInstanceOf[js.Any], DomainModels$MemberAccess = DomainModels$MemberAccess.asInstanceOf[js.Any], DomainModels$NoGeneralization = DomainModels$NoGeneralization.asInstanceOf[js.Any], DomainModels$RangeRuleInfo = DomainModels$RangeRuleInfo.asInstanceOf[js.Any], DomainModels$RegExRuleInfo = DomainModels$RegExRuleInfo.asInstanceOf[js.Any], DomainModels$RequiredRuleInfo = DomainModels$RequiredRuleInfo.asInstanceOf[js.Any], DomainModels$StoredValue = DomainModels$StoredValue.asInstanceOf[js.Any], DomainModels$StringAttributeType = DomainModels$StringAttributeType.asInstanceOf[js.Any], DomainModels$UniqueRuleInfo = DomainModels$UniqueRuleInfo.asInstanceOf[js.Any], DomainModels$ValidationRule = DomainModels$ValidationRule.asInstanceOf[js.Any], Enumerations$Condition = Enumerations$Condition.asInstanceOf[js.Any], Enumerations$EnumerationValue = Enumerations$EnumerationValue.asInstanceOf[js.Any], ExportMappings$ExportObjectMappingElement = ExportMappings$ExportObjectMappingElement.asInstanceOf[js.Any], ExportMappings$ExportValueMappingElement = ExportMappings$ExportValueMappingElement.asInstanceOf[js.Any], Expressions$BinaryExpression = Expressions$BinaryExpression.asInstanceOf[js.Any], Expressions$BooleanLiteral = Expressions$BooleanLiteral.asInstanceOf[js.Any], Expressions$ConstantRefExpression = Expressions$ConstantRefExpression.asInstanceOf[js.Any], Expressions$EmptyLiteral = Expressions$EmptyLiteral.asInstanceOf[js.Any], Expressions$EnumerationValueRefExpression = Expressions$EnumerationValueRefExpression.asInstanceOf[js.Any], Expressions$FloatLiteral = Expressions$FloatLiteral.asInstanceOf[js.Any], Expressions$FunctionCallExpression = Expressions$FunctionCallExpression.asInstanceOf[js.Any], Expressions$GlobalVariableRef = Expressions$GlobalVariableRef.asInstanceOf[js.Any], Expressions$IfExpression = Expressions$IfExpression.asInstanceOf[js.Any], Expressions$IntegerLiteral = Expressions$IntegerLiteral.asInstanceOf[js.Any], Expressions$NoExpression = Expressions$NoExpression.asInstanceOf[js.Any], Expressions$NoVariableRef = Expressions$NoVariableRef.asInstanceOf[js.Any], Expressions$ParenthesisExpression = Expressions$ParenthesisExpression.asInstanceOf[js.Any], Expressions$StringLiteral = Expressions$StringLiteral.asInstanceOf[js.Any], Expressions$UnaryExpression = Expressions$UnaryExpression.asInstanceOf[js.Any], Expressions$UnparsableExpression = Expressions$UnparsableExpression.asInstanceOf[js.Any], Expressions$VariableRefExpression = Expressions$VariableRefExpression.asInstanceOf[js.Any], Images$Image = Images$Image.asInstanceOf[js.Any], ImportMappings$ImportObjectMappingElement = ImportMappings$ImportObjectMappingElement.asInstanceOf[js.Any], ImportMappings$ImportValueMappingElement = ImportMappings$ImportValueMappingElement.asInstanceOf[js.Any], JavaActions$BasicParameterType = JavaActions$BasicParameterType.asInstanceOf[js.Any], JavaActions$BooleanType = JavaActions$BooleanType.asInstanceOf[js.Any], JavaActions$ConcreteEntityType = JavaActions$ConcreteEntityType.asInstanceOf[js.Any], JavaActions$DateTimeType = JavaActions$DateTimeType.asInstanceOf[js.Any], JavaActions$DecimalType = JavaActions$DecimalType.asInstanceOf[js.Any], JavaActions$EntityTypeParameterType = JavaActions$EntityTypeParameterType.asInstanceOf[js.Any], JavaActions$EnumerationType = JavaActions$EnumerationType.asInstanceOf[js.Any], JavaActions$ExportMappingJavaActionParameterType = JavaActions$ExportMappingJavaActionParameterType.asInstanceOf[js.Any], JavaActions$ExportMappingParameterType = JavaActions$ExportMappingParameterType.asInstanceOf[js.Any], JavaActions$FloatType = JavaActions$FloatType.asInstanceOf[js.Any], JavaActions$ImportMappingJavaActionParameterType = JavaActions$ImportMappingJavaActionParameterType.asInstanceOf[js.Any], JavaActions$ImportMappingParameterType = JavaActions$ImportMappingParameterType.asInstanceOf[js.Any], JavaActions$IntegerType = JavaActions$IntegerType.asInstanceOf[js.Any], JavaActions$JavaActionParameter = JavaActions$JavaActionParameter.asInstanceOf[js.Any], JavaActions$ListType = JavaActions$ListType.asInstanceOf[js.Any], JavaActions$MicroflowActionInfo = JavaActions$MicroflowActionInfo.asInstanceOf[js.Any], JavaActions$MicroflowJavaActionParameterType = JavaActions$MicroflowJavaActionParameterType.asInstanceOf[js.Any], JavaActions$MicroflowParameterType = JavaActions$MicroflowParameterType.asInstanceOf[js.Any], JavaActions$ParameterizedEntityType = JavaActions$ParameterizedEntityType.asInstanceOf[js.Any], JavaActions$StringType = JavaActions$StringType.asInstanceOf[js.Any], JavaActions$TypeParameter = JavaActions$TypeParameter.asInstanceOf[js.Any], JavaScriptActions$JavaScriptActionParameter = JavaScriptActions$JavaScriptActionParameter.asInstanceOf[js.Any], JavaScriptActions$NanoflowJavaScriptActionParameterType = JavaScriptActions$NanoflowJavaScriptActionParameterType.asInstanceOf[js.Any], JsonStructures$JsonElement = JsonStructures$JsonElement.asInstanceOf[js.Any], Kafka$KafkaMappedValue = Kafka$KafkaMappedValue.asInstanceOf[js.Any], Kafka$KafkaRemoteEntitySource = Kafka$KafkaRemoteEntitySource.asInstanceOf[js.Any], Kafka$PublishedKafkaResource = Kafka$PublishedKafkaResource.asInstanceOf[js.Any], Mappings$MappingMicroflowCall = Mappings$MappingMicroflowCall.asInstanceOf[js.Any], Mappings$MappingMicroflowParameter = Mappings$MappingMicroflowParameter.asInstanceOf[js.Any], Menus$MenuItem = Menus$MenuItem.asInstanceOf[js.Any], Menus$MenuItemCollection = Menus$MenuItemCollection.asInstanceOf[js.Any], MessageDefinitions$AssociationElement = MessageDefinitions$AssociationElement.asInstanceOf[js.Any], MessageDefinitions$AttributeElement = MessageDefinitions$AttributeElement.asInstanceOf[js.Any], MessageDefinitions$EntityElement = MessageDefinitions$EntityElement.asInstanceOf[js.Any], MessageDefinitions$EntityMessageDefinition = MessageDefinitions$EntityMessageDefinition.asInstanceOf[js.Any], MessageDefinitions$ExposedAssociation = MessageDefinitions$ExposedAssociation.asInstanceOf[js.Any], MessageDefinitions$ExposedAttribute = MessageDefinitions$ExposedAttribute.asInstanceOf[js.Any], MessageDefinitions$ExposedEntity = MessageDefinitions$ExposedEntity.asInstanceOf[js.Any], Microflows$ActionActivity = Microflows$ActionActivity.asInstanceOf[js.Any], Microflows$AdvancedRequestHandling = Microflows$AdvancedRequestHandling.asInstanceOf[js.Any], Microflows$AggregateListAction = Microflows$AggregateListAction.asInstanceOf[js.Any], Microflows$Annotation = Microflows$Annotation.asInstanceOf[js.Any], Microflows$AnnotationFlow = Microflows$AnnotationFlow.asInstanceOf[js.Any], Microflows$AppServiceCallAction = Microflows$AppServiceCallAction.asInstanceOf[js.Any], Microflows$AppServiceCallParameterMapping = Microflows$AppServiceCallParameterMapping.asInstanceOf[js.Any], Microflows$AssociationRetrieveSource = Microflows$AssociationRetrieveSource.asInstanceOf[js.Any], Microflows$BasicCodeActionParameterValue = Microflows$BasicCodeActionParameterValue.asInstanceOf[js.Any], Microflows$BasicJavaActionParameterValue = Microflows$BasicJavaActionParameterValue.asInstanceOf[js.Any], Microflows$BinaryRequestHandling = Microflows$BinaryRequestHandling.asInstanceOf[js.Any], Microflows$BreakEvent = Microflows$BreakEvent.asInstanceOf[js.Any], Microflows$CastAction = Microflows$CastAction.asInstanceOf[js.Any], Microflows$ChangeListAction = Microflows$ChangeListAction.asInstanceOf[js.Any], Microflows$ChangeObjectAction = Microflows$ChangeObjectAction.asInstanceOf[js.Any], Microflows$ChangeVariableAction = Microflows$ChangeVariableAction.asInstanceOf[js.Any], Microflows$CloseFormAction = Microflows$CloseFormAction.asInstanceOf[js.Any], Microflows$CommitAction = Microflows$CommitAction.asInstanceOf[js.Any], Microflows$ConstantRange = Microflows$ConstantRange.asInstanceOf[js.Any], Microflows$Contains = Microflows$Contains.asInstanceOf[js.Any], Microflows$ContinueEvent = Microflows$ContinueEvent.asInstanceOf[js.Any], Microflows$CreateListAction = Microflows$CreateListAction.asInstanceOf[js.Any], Microflows$CreateObjectAction = Microflows$CreateObjectAction.asInstanceOf[js.Any], Microflows$CreateVariableAction = Microflows$CreateVariableAction.asInstanceOf[js.Any], Microflows$CustomRange = Microflows$CustomRange.asInstanceOf[js.Any], Microflows$CustomRequestHandling = Microflows$CustomRequestHandling.asInstanceOf[js.Any], Microflows$DatabaseRetrieveSource = Microflows$DatabaseRetrieveSource.asInstanceOf[js.Any], Microflows$DeleteAction = Microflows$DeleteAction.asInstanceOf[js.Any], Microflows$DocumentTemplateParameterMapping = Microflows$DocumentTemplateParameterMapping.asInstanceOf[js.Any], Microflows$DownloadFileAction = Microflows$DownloadFileAction.asInstanceOf[js.Any], Microflows$EndEvent = Microflows$EndEvent.asInstanceOf[js.Any], Microflows$EntityTypeCodeActionParameterValue = Microflows$EntityTypeCodeActionParameterValue.asInstanceOf[js.Any], Microflows$EntityTypeJavaActionParameterValue = Microflows$EntityTypeJavaActionParameterValue.asInstanceOf[js.Any], Microflows$EnumerationCase = Microflows$EnumerationCase.asInstanceOf[js.Any], Microflows$ErrorEvent = Microflows$ErrorEvent.asInstanceOf[js.Any], Microflows$ExclusiveMerge = Microflows$ExclusiveMerge.asInstanceOf[js.Any], Microflows$ExclusiveSplit = Microflows$ExclusiveSplit.asInstanceOf[js.Any], Microflows$ExportMappingJavaActionParameterValue = Microflows$ExportMappingJavaActionParameterValue.asInstanceOf[js.Any], Microflows$ExportMappingParameterValue = Microflows$ExportMappingParameterValue.asInstanceOf[js.Any], Microflows$ExportXmlAction = Microflows$ExportXmlAction.asInstanceOf[js.Any], Microflows$ExpressionSplitCondition = Microflows$ExpressionSplitCondition.asInstanceOf[js.Any], Microflows$FileDocumentExport = Microflows$FileDocumentExport.asInstanceOf[js.Any], Microflows$Filter = Microflows$Filter.asInstanceOf[js.Any], Microflows$Find = Microflows$Find.asInstanceOf[js.Any], Microflows$FormDataPart = Microflows$FormDataPart.asInstanceOf[js.Any], Microflows$FormDataRequestHandling = Microflows$FormDataRequestHandling.asInstanceOf[js.Any], Microflows$GenerateDocumentAction = Microflows$GenerateDocumentAction.asInstanceOf[js.Any], Microflows$Head = Microflows$Head.asInstanceOf[js.Any], Microflows$HttpConfiguration = Microflows$HttpConfiguration.asInstanceOf[js.Any], Microflows$HttpHeaderEntry = Microflows$HttpHeaderEntry.asInstanceOf[js.Any], Microflows$ImportMappingCall = Microflows$ImportMappingCall.asInstanceOf[js.Any], Microflows$ImportMappingJavaActionParameterValue = Microflows$ImportMappingJavaActionParameterValue.asInstanceOf[js.Any], Microflows$ImportMappingParameterValue = Microflows$ImportMappingParameterValue.asInstanceOf[js.Any], Microflows$ImportXmlAction = Microflows$ImportXmlAction.asInstanceOf[js.Any], Microflows$InheritanceCase = Microflows$InheritanceCase.asInstanceOf[js.Any], Microflows$InheritanceSplit = Microflows$InheritanceSplit.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AppServices$AppServiceAction = AppServices$AppServiceAction.asInstanceOf[js.Any], AppServices$AppServiceActionParameter = AppServices$AppServiceActionParameter.asInstanceOf[js.Any], AppServices$Msd = AppServices$Msd.asInstanceOf[js.Any], AppServices$MsdAssociation = AppServices$MsdAssociation.asInstanceOf[js.Any], AppServices$MsdAttribute = AppServices$MsdAttribute.asInstanceOf[js.Any], AppServices$MsdDomainModel = AppServices$MsdDomainModel.asInstanceOf[js.Any], AppServices$MsdEntity = AppServices$MsdEntity.asInstanceOf[js.Any], AppServices$MsdEnumeration = AppServices$MsdEnumeration.asInstanceOf[js.Any], AppServices$MsdEnumerationContainer = AppServices$MsdEnumerationContainer.asInstanceOf[js.Any], AppServices$MsdEnumerationValue = AppServices$MsdEnumerationValue.asInstanceOf[js.Any], AppServices$MsdMetadata = AppServices$MsdMetadata.asInstanceOf[js.Any], AppServices$MsdMicroflow = AppServices$MsdMicroflow.asInstanceOf[js.Any], AppServices$MsdMicroflowParameter = AppServices$MsdMicroflowParameter.asInstanceOf[js.Any], AppServices$MsdText = AppServices$MsdText.asInstanceOf[js.Any], AppServices$MsdVersion = AppServices$MsdVersion.asInstanceOf[js.Any], BusinessEvents$ConsumedBusinessEvent = BusinessEvents$ConsumedBusinessEvent.asInstanceOf[js.Any], BusinessEvents$PublishedChannel = BusinessEvents$PublishedChannel.asInstanceOf[js.Any], BusinessEvents$PublishedMessage = BusinessEvents$PublishedMessage.asInstanceOf[js.Any], BusinessEvents$PublishedMessageAttribute = BusinessEvents$PublishedMessageAttribute.asInstanceOf[js.Any], CodeActions$BasicParameterType = CodeActions$BasicParameterType.asInstanceOf[js.Any], CodeActions$BooleanType = CodeActions$BooleanType.asInstanceOf[js.Any], CodeActions$ConcreteEntityType = CodeActions$ConcreteEntityType.asInstanceOf[js.Any], CodeActions$DateTimeType = CodeActions$DateTimeType.asInstanceOf[js.Any], CodeActions$DecimalType = CodeActions$DecimalType.asInstanceOf[js.Any], CodeActions$EntityTypeParameterType = CodeActions$EntityTypeParameterType.asInstanceOf[js.Any], CodeActions$EnumerationType = CodeActions$EnumerationType.asInstanceOf[js.Any], CodeActions$FloatType = CodeActions$FloatType.asInstanceOf[js.Any], CodeActions$IntegerType = CodeActions$IntegerType.asInstanceOf[js.Any], CodeActions$ListType = CodeActions$ListType.asInstanceOf[js.Any], CodeActions$MicroflowActionInfo = CodeActions$MicroflowActionInfo.asInstanceOf[js.Any], CodeActions$ParameterizedEntityType = CodeActions$ParameterizedEntityType.asInstanceOf[js.Any], CodeActions$StringTemplateParameterType = CodeActions$StringTemplateParameterType.asInstanceOf[js.Any], CodeActions$StringType = CodeActions$StringType.asInstanceOf[js.Any], CodeActions$TypeParameter = CodeActions$TypeParameter.asInstanceOf[js.Any], CodeActions$VoidType = CodeActions$VoidType.asInstanceOf[js.Any], CustomWidgets$CustomWidget = CustomWidgets$CustomWidget.asInstanceOf[js.Any], CustomWidgets$CustomWidgetDatabaseSource = CustomWidgets$CustomWidgetDatabaseSource.asInstanceOf[js.Any], CustomWidgets$CustomWidgetType = CustomWidgets$CustomWidgetType.asInstanceOf[js.Any], CustomWidgets$CustomWidgetXPathSource = CustomWidgets$CustomWidgetXPathSource.asInstanceOf[js.Any], CustomWidgets$WidgetEnumerationValue = CustomWidgets$WidgetEnumerationValue.asInstanceOf[js.Any], CustomWidgets$WidgetObject = CustomWidgets$WidgetObject.asInstanceOf[js.Any], CustomWidgets$WidgetObjectType = CustomWidgets$WidgetObjectType.asInstanceOf[js.Any], CustomWidgets$WidgetProperty = CustomWidgets$WidgetProperty.asInstanceOf[js.Any], CustomWidgets$WidgetPropertyType = CustomWidgets$WidgetPropertyType.asInstanceOf[js.Any], CustomWidgets$WidgetReturnType = CustomWidgets$WidgetReturnType.asInstanceOf[js.Any], CustomWidgets$WidgetTranslation = CustomWidgets$WidgetTranslation.asInstanceOf[js.Any], CustomWidgets$WidgetValue = CustomWidgets$WidgetValue.asInstanceOf[js.Any], CustomWidgets$WidgetValueType = CustomWidgets$WidgetValueType.asInstanceOf[js.Any], DataSets$DataSetAccess = DataSets$DataSetAccess.asInstanceOf[js.Any], DataSets$DataSetColumn = DataSets$DataSetColumn.asInstanceOf[js.Any], DataSets$DataSetConstraintAccess = DataSets$DataSetConstraintAccess.asInstanceOf[js.Any], DataSets$DataSetDateTimeConstraint = DataSets$DataSetDateTimeConstraint.asInstanceOf[js.Any], DataSets$DataSetModuleRoleAccess = DataSets$DataSetModuleRoleAccess.asInstanceOf[js.Any], DataSets$DataSetNumericConstraint = DataSets$DataSetNumericConstraint.asInstanceOf[js.Any], DataSets$DataSetObjectConstraint = DataSets$DataSetObjectConstraint.asInstanceOf[js.Any], DataSets$DataSetParameter = DataSets$DataSetParameter.asInstanceOf[js.Any], DataSets$DataSetParameterAccess = DataSets$DataSetParameterAccess.asInstanceOf[js.Any], DataSets$JavaDataSetSource = DataSets$JavaDataSetSource.asInstanceOf[js.Any], DataSets$OqlDataSetSource = DataSets$OqlDataSetSource.asInstanceOf[js.Any], DataTypes$BinaryType = DataTypes$BinaryType.asInstanceOf[js.Any], DataTypes$BooleanType = DataTypes$BooleanType.asInstanceOf[js.Any], DataTypes$DateTimeType = DataTypes$DateTimeType.asInstanceOf[js.Any], DataTypes$DecimalType = DataTypes$DecimalType.asInstanceOf[js.Any], DataTypes$EmptyType = DataTypes$EmptyType.asInstanceOf[js.Any], DataTypes$EnumerationType = DataTypes$EnumerationType.asInstanceOf[js.Any], DataTypes$FloatType = DataTypes$FloatType.asInstanceOf[js.Any], DataTypes$IntegerType = DataTypes$IntegerType.asInstanceOf[js.Any], DataTypes$ListType = DataTypes$ListType.asInstanceOf[js.Any], DataTypes$ObjectType = DataTypes$ObjectType.asInstanceOf[js.Any], DataTypes$StringType = DataTypes$StringType.asInstanceOf[js.Any], DataTypes$UnknownType = DataTypes$UnknownType.asInstanceOf[js.Any], DataTypes$VoidType = DataTypes$VoidType.asInstanceOf[js.Any], DocumentTemplates$ConditionSettings = DocumentTemplates$ConditionSettings.asInstanceOf[js.Any], DocumentTemplates$DataGrid = DocumentTemplates$DataGrid.asInstanceOf[js.Any], DocumentTemplates$DataGridCell = DocumentTemplates$DataGridCell.asInstanceOf[js.Any], DocumentTemplates$DataGridColumn = DocumentTemplates$DataGridColumn.asInstanceOf[js.Any], DocumentTemplates$DataView = DocumentTemplates$DataView.asInstanceOf[js.Any], DocumentTemplates$DataViewContents = DocumentTemplates$DataViewContents.asInstanceOf[js.Any], DocumentTemplates$DocumentTemplateParameter = DocumentTemplates$DocumentTemplateParameter.asInstanceOf[js.Any], DocumentTemplates$DynamicImageViewer = DocumentTemplates$DynamicImageViewer.asInstanceOf[js.Any], DocumentTemplates$DynamicLabel = DocumentTemplates$DynamicLabel.asInstanceOf[js.Any], DocumentTemplates$Footer = DocumentTemplates$Footer.asInstanceOf[js.Any], DocumentTemplates$GridSortBar = DocumentTemplates$GridSortBar.asInstanceOf[js.Any], DocumentTemplates$GridSortItem = DocumentTemplates$GridSortItem.asInstanceOf[js.Any], DocumentTemplates$Header = DocumentTemplates$Header.asInstanceOf[js.Any], DocumentTemplates$LineBreak = DocumentTemplates$LineBreak.asInstanceOf[js.Any], DocumentTemplates$PageBreak = DocumentTemplates$PageBreak.asInstanceOf[js.Any], DocumentTemplates$StaticImageViewer = DocumentTemplates$StaticImageViewer.asInstanceOf[js.Any], DocumentTemplates$StaticLabel = DocumentTemplates$StaticLabel.asInstanceOf[js.Any], DocumentTemplates$Style = DocumentTemplates$Style.asInstanceOf[js.Any], DocumentTemplates$Table = DocumentTemplates$Table.asInstanceOf[js.Any], DocumentTemplates$TableCell = DocumentTemplates$TableCell.asInstanceOf[js.Any], DocumentTemplates$TableRow = DocumentTemplates$TableRow.asInstanceOf[js.Any], DocumentTemplates$TemplateGrid = DocumentTemplates$TemplateGrid.asInstanceOf[js.Any], DocumentTemplates$TemplateGridContents = DocumentTemplates$TemplateGridContents.asInstanceOf[js.Any], DocumentTemplates$Title = DocumentTemplates$Title.asInstanceOf[js.Any], DomainModels$AccessRule = DomainModels$AccessRule.asInstanceOf[js.Any], DomainModels$Annotation = DomainModels$Annotation.asInstanceOf[js.Any], DomainModels$Association = DomainModels$Association.asInstanceOf[js.Any], DomainModels$AssociationCapabilities = DomainModels$AssociationCapabilities.asInstanceOf[js.Any], DomainModels$AssociationDeleteBehavior = DomainModels$AssociationDeleteBehavior.asInstanceOf[js.Any], DomainModels$AssociationRef = DomainModels$AssociationRef.asInstanceOf[js.Any], DomainModels$Attribute = DomainModels$Attribute.asInstanceOf[js.Any], DomainModels$AttributeCapabilities = DomainModels$AttributeCapabilities.asInstanceOf[js.Any], DomainModels$AttributeRef = DomainModels$AttributeRef.asInstanceOf[js.Any], DomainModels$AutoNumberAttributeType = DomainModels$AutoNumberAttributeType.asInstanceOf[js.Any], DomainModels$BinaryAttributeType = DomainModels$BinaryAttributeType.asInstanceOf[js.Any], DomainModels$BooleanAttributeType = DomainModels$BooleanAttributeType.asInstanceOf[js.Any], DomainModels$CalculatedValue = DomainModels$CalculatedValue.asInstanceOf[js.Any], DomainModels$CrossAssociation = DomainModels$CrossAssociation.asInstanceOf[js.Any], DomainModels$CurrencyAttributeType = DomainModels$CurrencyAttributeType.asInstanceOf[js.Any], DomainModels$DateTimeAttributeType = DomainModels$DateTimeAttributeType.asInstanceOf[js.Any], DomainModels$DecimalAttributeType = DomainModels$DecimalAttributeType.asInstanceOf[js.Any], DomainModels$DirectEntityRef = DomainModels$DirectEntityRef.asInstanceOf[js.Any], DomainModels$Entity = DomainModels$Entity.asInstanceOf[js.Any], DomainModels$EntityCapabilities = DomainModels$EntityCapabilities.asInstanceOf[js.Any], DomainModels$EntityKey = DomainModels$EntityKey.asInstanceOf[js.Any], DomainModels$EntityKeyPart = DomainModels$EntityKeyPart.asInstanceOf[js.Any], DomainModels$EntityRefStep = DomainModels$EntityRefStep.asInstanceOf[js.Any], DomainModels$EnumerationAttributeType = DomainModels$EnumerationAttributeType.asInstanceOf[js.Any], DomainModels$EqualsToRuleInfo = DomainModels$EqualsToRuleInfo.asInstanceOf[js.Any], DomainModels$EventHandler = DomainModels$EventHandler.asInstanceOf[js.Any], DomainModels$FloatAttributeType = DomainModels$FloatAttributeType.asInstanceOf[js.Any], DomainModels$Generalization = DomainModels$Generalization.asInstanceOf[js.Any], DomainModels$HashedStringAttributeType = DomainModels$HashedStringAttributeType.asInstanceOf[js.Any], DomainModels$Index = DomainModels$Index.asInstanceOf[js.Any], DomainModels$IndexedAttribute = DomainModels$IndexedAttribute.asInstanceOf[js.Any], DomainModels$IndirectEntityRef = DomainModels$IndirectEntityRef.asInstanceOf[js.Any], DomainModels$IntegerAttributeType = DomainModels$IntegerAttributeType.asInstanceOf[js.Any], DomainModels$LongAttributeType = DomainModels$LongAttributeType.asInstanceOf[js.Any], DomainModels$MaxLengthRuleInfo = DomainModels$MaxLengthRuleInfo.asInstanceOf[js.Any], DomainModels$MemberAccess = DomainModels$MemberAccess.asInstanceOf[js.Any], DomainModels$NoGeneralization = DomainModels$NoGeneralization.asInstanceOf[js.Any], DomainModels$RangeRuleInfo = DomainModels$RangeRuleInfo.asInstanceOf[js.Any], DomainModels$RegExRuleInfo = DomainModels$RegExRuleInfo.asInstanceOf[js.Any], DomainModels$RequiredRuleInfo = DomainModels$RequiredRuleInfo.asInstanceOf[js.Any], DomainModels$StoredValue = DomainModels$StoredValue.asInstanceOf[js.Any], DomainModels$StringAttributeType = DomainModels$StringAttributeType.asInstanceOf[js.Any], DomainModels$UniqueRuleInfo = DomainModels$UniqueRuleInfo.asInstanceOf[js.Any], DomainModels$ValidationRule = DomainModels$ValidationRule.asInstanceOf[js.Any], Enumerations$Condition = Enumerations$Condition.asInstanceOf[js.Any], Enumerations$EnumerationValue = Enumerations$EnumerationValue.asInstanceOf[js.Any], ExportMappings$ExportObjectMappingElement = ExportMappings$ExportObjectMappingElement.asInstanceOf[js.Any], ExportMappings$ExportValueMappingElement = ExportMappings$ExportValueMappingElement.asInstanceOf[js.Any], Expressions$BinaryExpression = Expressions$BinaryExpression.asInstanceOf[js.Any], Expressions$BooleanLiteral = Expressions$BooleanLiteral.asInstanceOf[js.Any], Expressions$ConstantRefExpression = Expressions$ConstantRefExpression.asInstanceOf[js.Any], Expressions$EmptyLiteral = Expressions$EmptyLiteral.asInstanceOf[js.Any], Expressions$EnumerationValueRefExpression = Expressions$EnumerationValueRefExpression.asInstanceOf[js.Any], Expressions$FloatLiteral = Expressions$FloatLiteral.asInstanceOf[js.Any], Expressions$FunctionCallExpression = Expressions$FunctionCallExpression.asInstanceOf[js.Any], Expressions$GlobalVariableRef = Expressions$GlobalVariableRef.asInstanceOf[js.Any], Expressions$IfExpression = Expressions$IfExpression.asInstanceOf[js.Any], Expressions$IntegerLiteral = Expressions$IntegerLiteral.asInstanceOf[js.Any], Expressions$NoExpression = Expressions$NoExpression.asInstanceOf[js.Any], Expressions$NoVariableRef = Expressions$NoVariableRef.asInstanceOf[js.Any], Expressions$ParenthesisExpression = Expressions$ParenthesisExpression.asInstanceOf[js.Any], Expressions$StringLiteral = Expressions$StringLiteral.asInstanceOf[js.Any], Expressions$UnaryExpression = Expressions$UnaryExpression.asInstanceOf[js.Any], Expressions$UnparsableExpression = Expressions$UnparsableExpression.asInstanceOf[js.Any], Expressions$VariableRefExpression = Expressions$VariableRefExpression.asInstanceOf[js.Any], Images$Image = Images$Image.asInstanceOf[js.Any], ImportMappings$ImportObjectMappingElement = ImportMappings$ImportObjectMappingElement.asInstanceOf[js.Any], ImportMappings$ImportValueMappingElement = ImportMappings$ImportValueMappingElement.asInstanceOf[js.Any], JavaActions$BasicParameterType = JavaActions$BasicParameterType.asInstanceOf[js.Any], JavaActions$BooleanType = JavaActions$BooleanType.asInstanceOf[js.Any], JavaActions$ConcreteEntityType = JavaActions$ConcreteEntityType.asInstanceOf[js.Any], JavaActions$DateTimeType = JavaActions$DateTimeType.asInstanceOf[js.Any], JavaActions$DecimalType = JavaActions$DecimalType.asInstanceOf[js.Any], JavaActions$EntityTypeParameterType = JavaActions$EntityTypeParameterType.asInstanceOf[js.Any], JavaActions$EnumerationType = JavaActions$EnumerationType.asInstanceOf[js.Any], JavaActions$ExportMappingJavaActionParameterType = JavaActions$ExportMappingJavaActionParameterType.asInstanceOf[js.Any], JavaActions$ExportMappingParameterType = JavaActions$ExportMappingParameterType.asInstanceOf[js.Any], JavaActions$FloatType = JavaActions$FloatType.asInstanceOf[js.Any], JavaActions$ImportMappingJavaActionParameterType = JavaActions$ImportMappingJavaActionParameterType.asInstanceOf[js.Any], JavaActions$ImportMappingParameterType = JavaActions$ImportMappingParameterType.asInstanceOf[js.Any], JavaActions$IntegerType = JavaActions$IntegerType.asInstanceOf[js.Any], JavaActions$JavaActionParameter = JavaActions$JavaActionParameter.asInstanceOf[js.Any], JavaActions$ListType = JavaActions$ListType.asInstanceOf[js.Any], JavaActions$MicroflowActionInfo = JavaActions$MicroflowActionInfo.asInstanceOf[js.Any], JavaActions$MicroflowJavaActionParameterType = JavaActions$MicroflowJavaActionParameterType.asInstanceOf[js.Any], JavaActions$MicroflowParameterType = JavaActions$MicroflowParameterType.asInstanceOf[js.Any], JavaActions$ParameterizedEntityType = JavaActions$ParameterizedEntityType.asInstanceOf[js.Any], JavaActions$StringType = JavaActions$StringType.asInstanceOf[js.Any], JavaActions$TypeParameter = JavaActions$TypeParameter.asInstanceOf[js.Any], JavaScriptActions$JavaScriptActionParameter = JavaScriptActions$JavaScriptActionParameter.asInstanceOf[js.Any], JavaScriptActions$NanoflowJavaScriptActionParameterType = JavaScriptActions$NanoflowJavaScriptActionParameterType.asInstanceOf[js.Any], JsonStructures$JsonElement = JsonStructures$JsonElement.asInstanceOf[js.Any], Kafka$KafkaMappedValue = Kafka$KafkaMappedValue.asInstanceOf[js.Any], Kafka$KafkaRemoteEntitySource = Kafka$KafkaRemoteEntitySource.asInstanceOf[js.Any], Kafka$PublishedKafkaResource = Kafka$PublishedKafkaResource.asInstanceOf[js.Any], Kafka$PublishedKafkaResourceAttribute = Kafka$PublishedKafkaResourceAttribute.asInstanceOf[js.Any], MLMappings$MLModelEntityMappings = MLMappings$MLModelEntityMappings.asInstanceOf[js.Any], MLMappings$MLModelMappings = MLMappings$MLModelMappings.asInstanceOf[js.Any], MLMappings$TensorDimension = MLMappings$TensorDimension.asInstanceOf[js.Any], MLMappings$TensorMappingElement = MLMappings$TensorMappingElement.asInstanceOf[js.Any], Mappings$MappingMicroflowCall = Mappings$MappingMicroflowCall.asInstanceOf[js.Any], Mappings$MappingMicroflowParameter = Mappings$MappingMicroflowParameter.asInstanceOf[js.Any], Menus$MenuItem = Menus$MenuItem.asInstanceOf[js.Any], Menus$MenuItemCollection = Menus$MenuItemCollection.asInstanceOf[js.Any], MessageDefinitions$AssociationElement = MessageDefinitions$AssociationElement.asInstanceOf[js.Any], MessageDefinitions$AttributeElement = MessageDefinitions$AttributeElement.asInstanceOf[js.Any], MessageDefinitions$EntityElement = MessageDefinitions$EntityElement.asInstanceOf[js.Any], MessageDefinitions$EntityMessageDefinition = MessageDefinitions$EntityMessageDefinition.asInstanceOf[js.Any], MessageDefinitions$ExposedAssociation = MessageDefinitions$ExposedAssociation.asInstanceOf[js.Any], MessageDefinitions$ExposedAttribute = MessageDefinitions$ExposedAttribute.asInstanceOf[js.Any], MessageDefinitions$ExposedEntity = MessageDefinitions$ExposedEntity.asInstanceOf[js.Any], Microflows$AbortOperation = Microflows$AbortOperation.asInstanceOf[js.Any], Microflows$ActionActivity = Microflows$ActionActivity.asInstanceOf[js.Any], Microflows$AdvancedRequestHandling = Microflows$AdvancedRequestHandling.asInstanceOf[js.Any], Microflows$AggregateListAction = Microflows$AggregateListAction.asInstanceOf[js.Any], Microflows$Annotation = Microflows$Annotation.asInstanceOf[js.Any], Microflows$AnnotationFlow = Microflows$AnnotationFlow.asInstanceOf[js.Any], Microflows$AppServiceCallAction = Microflows$AppServiceCallAction.asInstanceOf[js.Any], Microflows$AppServiceCallParameterMapping = Microflows$AppServiceCallParameterMapping.asInstanceOf[js.Any], Microflows$ApplyJumpToOptionAction = Microflows$ApplyJumpToOptionAction.asInstanceOf[js.Any], Microflows$AssociationRetrieveSource = Microflows$AssociationRetrieveSource.asInstanceOf[js.Any], Microflows$BasicCodeActionParameterValue = Microflows$BasicCodeActionParameterValue.asInstanceOf[js.Any], Microflows$BasicJavaActionParameterValue = Microflows$BasicJavaActionParameterValue.asInstanceOf[js.Any], Microflows$BinaryRequestHandling = Microflows$BinaryRequestHandling.asInstanceOf[js.Any], Microflows$BreakEvent = Microflows$BreakEvent.asInstanceOf[js.Any], Microflows$CastAction = Microflows$CastAction.asInstanceOf[js.Any], Microflows$ChangeListAction = Microflows$ChangeListAction.asInstanceOf[js.Any], Microflows$ChangeObjectAction = Microflows$ChangeObjectAction.asInstanceOf[js.Any], Microflows$ChangeVariableAction = Microflows$ChangeVariableAction.asInstanceOf[js.Any], Microflows$CloseFormAction = Microflows$CloseFormAction.asInstanceOf[js.Any], Microflows$CommitAction = Microflows$CommitAction.asInstanceOf[js.Any], Microflows$ConstantRange = Microflows$ConstantRange.asInstanceOf[js.Any], Microflows$Contains = Microflows$Contains.asInstanceOf[js.Any], Microflows$ContinueEvent = Microflows$ContinueEvent.asInstanceOf[js.Any], Microflows$ContinueOperation = Microflows$ContinueOperation.asInstanceOf[js.Any], Microflows$CounterMeterAction = Microflows$CounterMeterAction.asInstanceOf[js.Any], Microflows$CreateListAction = Microflows$CreateListAction.asInstanceOf[js.Any], Microflows$CreateObjectAction = Microflows$CreateObjectAction.asInstanceOf[js.Any], Microflows$CreateVariableAction = Microflows$CreateVariableAction.asInstanceOf[js.Any], Microflows$CustomRange = Microflows$CustomRange.asInstanceOf[js.Any], Microflows$CustomRequestHandling = Microflows$CustomRequestHandling.asInstanceOf[js.Any], Microflows$DatabaseRetrieveSource = Microflows$DatabaseRetrieveSource.asInstanceOf[js.Any], Microflows$DeleteAction = Microflows$DeleteAction.asInstanceOf[js.Any], Microflows$DeleteExternalObject = Microflows$DeleteExternalObject.asInstanceOf[js.Any], Microflows$DocumentTemplateParameterMapping = Microflows$DocumentTemplateParameterMapping.asInstanceOf[js.Any], Microflows$DownloadFileAction = Microflows$DownloadFileAction.asInstanceOf[js.Any], Microflows$EndEvent = Microflows$EndEvent.asInstanceOf[js.Any], Microflows$EntityTypeCodeActionParameterValue = Microflows$EntityTypeCodeActionParameterValue.asInstanceOf[js.Any], Microflows$EntityTypeJavaActionParameterValue = Microflows$EntityTypeJavaActionParameterValue.asInstanceOf[js.Any], Microflows$EnumerationCase = Microflows$EnumerationCase.asInstanceOf[js.Any], Microflows$ErrorEvent = Microflows$ErrorEvent.asInstanceOf[js.Any], Microflows$ExclusiveMerge = Microflows$ExclusiveMerge.asInstanceOf[js.Any], Microflows$ExclusiveSplit = Microflows$ExclusiveSplit.asInstanceOf[js.Any], Microflows$ExportMappingJavaActionParameterValue = Microflows$ExportMappingJavaActionParameterValue.asInstanceOf[js.Any], Microflows$ExportMappingParameterValue = Microflows$ExportMappingParameterValue.asInstanceOf[js.Any], Microflows$ExportXmlAction = Microflows$ExportXmlAction.asInstanceOf[js.Any], Microflows$ExpressionSplitCondition = Microflows$ExpressionSplitCondition.asInstanceOf[js.Any], Microflows$FileDocumentExport = Microflows$FileDocumentExport.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConcreteModelElements]
     }
     
@@ -2816,6 +3149,14 @@ object baseModelMod {
       inline def setAppServices$MsdText(value: MsdText): Self = StObject.set(x, "AppServices$MsdText", value.asInstanceOf[js.Any])
       
       inline def setAppServices$MsdVersion(value: MsdVersion): Self = StObject.set(x, "AppServices$MsdVersion", value.asInstanceOf[js.Any])
+      
+      inline def setBusinessEvents$ConsumedBusinessEvent(value: ConsumedBusinessEvent): Self = StObject.set(x, "BusinessEvents$ConsumedBusinessEvent", value.asInstanceOf[js.Any])
+      
+      inline def setBusinessEvents$PublishedChannel(value: PublishedChannel): Self = StObject.set(x, "BusinessEvents$PublishedChannel", value.asInstanceOf[js.Any])
+      
+      inline def setBusinessEvents$PublishedMessage(value: PublishedMessage): Self = StObject.set(x, "BusinessEvents$PublishedMessage", value.asInstanceOf[js.Any])
+      
+      inline def setBusinessEvents$PublishedMessageAttribute(value: PublishedMessageAttribute): Self = StObject.set(x, "BusinessEvents$PublishedMessageAttribute", value.asInstanceOf[js.Any])
       
       inline def setCodeActions$BasicParameterType(value: BasicParameterType): Self = StObject.set(x, "CodeActions$BasicParameterType", value.asInstanceOf[js.Any])
       
@@ -3161,6 +3502,16 @@ object baseModelMod {
       
       inline def setKafka$PublishedKafkaResource(value: PublishedKafkaResource): Self = StObject.set(x, "Kafka$PublishedKafkaResource", value.asInstanceOf[js.Any])
       
+      inline def setKafka$PublishedKafkaResourceAttribute(value: PublishedKafkaResourceAttribute): Self = StObject.set(x, "Kafka$PublishedKafkaResourceAttribute", value.asInstanceOf[js.Any])
+      
+      inline def setMLMappings$MLModelEntityMappings(value: MLModelEntityMappings): Self = StObject.set(x, "MLMappings$MLModelEntityMappings", value.asInstanceOf[js.Any])
+      
+      inline def setMLMappings$MLModelMappings(value: MLModelMappings): Self = StObject.set(x, "MLMappings$MLModelMappings", value.asInstanceOf[js.Any])
+      
+      inline def setMLMappings$TensorDimension(value: TensorDimension): Self = StObject.set(x, "MLMappings$TensorDimension", value.asInstanceOf[js.Any])
+      
+      inline def setMLMappings$TensorMappingElement(value: TensorMappingElement): Self = StObject.set(x, "MLMappings$TensorMappingElement", value.asInstanceOf[js.Any])
+      
       inline def setMappings$MappingMicroflowCall(value: MappingMicroflowCall): Self = StObject.set(x, "Mappings$MappingMicroflowCall", value.asInstanceOf[js.Any])
       
       inline def setMappings$MappingMicroflowParameter(value: MappingMicroflowParameter): Self = StObject.set(x, "Mappings$MappingMicroflowParameter", value.asInstanceOf[js.Any])
@@ -3183,6 +3534,8 @@ object baseModelMod {
       
       inline def setMessageDefinitions$ExposedEntity(value: ExposedEntity): Self = StObject.set(x, "MessageDefinitions$ExposedEntity", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$AbortOperation(value: AbortOperation): Self = StObject.set(x, "Microflows$AbortOperation", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$ActionActivity(value: ActionActivity): Self = StObject.set(x, "Microflows$ActionActivity", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$AdvancedRequestHandling(value: AdvancedRequestHandling): Self = StObject.set(x, "Microflows$AdvancedRequestHandling", value.asInstanceOf[js.Any])
@@ -3196,6 +3549,8 @@ object baseModelMod {
       inline def setMicroflows$AppServiceCallAction(value: AppServiceCallAction): Self = StObject.set(x, "Microflows$AppServiceCallAction", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$AppServiceCallParameterMapping(value: AppServiceCallParameterMapping): Self = StObject.set(x, "Microflows$AppServiceCallParameterMapping", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$ApplyJumpToOptionAction(value: ApplyJumpToOptionAction): Self = StObject.set(x, "Microflows$ApplyJumpToOptionAction", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$AssociationRetrieveSource(value: AssociationRetrieveSource): Self = StObject.set(x, "Microflows$AssociationRetrieveSource", value.asInstanceOf[js.Any])
       
@@ -3225,6 +3580,10 @@ object baseModelMod {
       
       inline def setMicroflows$ContinueEvent(value: ContinueEvent): Self = StObject.set(x, "Microflows$ContinueEvent", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$ContinueOperation(value: ContinueOperation): Self = StObject.set(x, "Microflows$ContinueOperation", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$CounterMeterAction(value: CounterMeterAction): Self = StObject.set(x, "Microflows$CounterMeterAction", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$CreateListAction(value: CreateListAction): Self = StObject.set(x, "Microflows$CreateListAction", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$CreateObjectAction(value: CreateObjectAction): Self = StObject.set(x, "Microflows$CreateObjectAction", value.asInstanceOf[js.Any])
@@ -3238,6 +3597,8 @@ object baseModelMod {
       inline def setMicroflows$DatabaseRetrieveSource(value: DatabaseRetrieveSource): Self = StObject.set(x, "Microflows$DatabaseRetrieveSource", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$DeleteAction(value: DeleteAction): Self = StObject.set(x, "Microflows$DeleteAction", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$DeleteExternalObject(value: DeleteExternalObject): Self = StObject.set(x, "Microflows$DeleteExternalObject", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$DocumentTemplateParameterMapping(value: DocumentTemplateParameterMapping): Self = StObject.set(x, "Microflows$DocumentTemplateParameterMapping", value.asInstanceOf[js.Any])
       
@@ -3269,13 +3630,23 @@ object baseModelMod {
       
       inline def setMicroflows$Filter(value: Filter): Self = StObject.set(x, "Microflows$Filter", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$FilterByExpression(value: FilterByExpression): Self = StObject.set(x, "Microflows$FilterByExpression", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$Find(value: Find): Self = StObject.set(x, "Microflows$Find", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$FindByExpression(value: FindByExpression): Self = StObject.set(x, "Microflows$FindByExpression", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$FormDataPart(value: FormDataPart): Self = StObject.set(x, "Microflows$FormDataPart", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$FormDataRequestHandling(value: FormDataRequestHandling): Self = StObject.set(x, "Microflows$FormDataRequestHandling", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$GaugeMeterAction(value: GaugeMeterAction): Self = StObject.set(x, "Microflows$GaugeMeterAction", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$GenerateDocumentAction(value: GenerateDocumentAction): Self = StObject.set(x, "Microflows$GenerateDocumentAction", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$GenerateJumpToOptionsAction(value: GenerateJumpToOptionsAction): Self = StObject.set(x, "Microflows$GenerateJumpToOptionsAction", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$GetWorkflowDataAction(value: GetWorkflowDataAction): Self = StObject.set(x, "Microflows$GetWorkflowDataAction", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$Head(value: Head): Self = StObject.set(x, "Microflows$Head", value.asInstanceOf[js.Any])
       
@@ -3291,11 +3662,15 @@ object baseModelMod {
       
       inline def setMicroflows$ImportXmlAction(value: ImportXmlAction): Self = StObject.set(x, "Microflows$ImportXmlAction", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$IncrementCounterMeterAction(value: IncrementCounterMeterAction): Self = StObject.set(x, "Microflows$IncrementCounterMeterAction", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$InheritanceCase(value: InheritanceCase): Self = StObject.set(x, "Microflows$InheritanceCase", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$InheritanceSplit(value: InheritanceSplit): Self = StObject.set(x, "Microflows$InheritanceSplit", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$Intersect(value: Intersect): Self = StObject.set(x, "Microflows$Intersect", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$IterableList(value: IterableList): Self = StObject.set(x, "Microflows$IterableList", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$JavaActionCallAction(value: JavaActionCallAction): Self = StObject.set(x, "Microflows$JavaActionCallAction", value.asInstanceOf[js.Any])
       
@@ -3313,9 +3688,17 @@ object baseModelMod {
       
       inline def setMicroflows$LoopedActivity(value: LoopedActivity): Self = StObject.set(x, "Microflows$LoopedActivity", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$MLModelCall(value: MLModelCall): Self = StObject.set(x, "Microflows$MLModelCall", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$MLModelCallAction(value: MLModelCallAction): Self = StObject.set(x, "Microflows$MLModelCallAction", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$MLModelCallParameterMapping(value: MLModelCallParameterMapping): Self = StObject.set(x, "Microflows$MLModelCallParameterMapping", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$MappingRequestHandling(value: MappingRequestHandling): Self = StObject.set(x, "Microflows$MappingRequestHandling", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$MemberChange(value: MemberChange): Self = StObject.set(x, "Microflows$MemberChange", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$MeterTagMapping(value: MeterTagMapping): Self = StObject.set(x, "Microflows$MeterTagMapping", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$MicroflowCall(value: MicroflowCall): Self = StObject.set(x, "Microflows$MicroflowCall", value.asInstanceOf[js.Any])
       
@@ -3345,6 +3728,10 @@ object baseModelMod {
       
       inline def setMicroflows$OpenUserTaskAction(value: OpenUserTaskAction): Self = StObject.set(x, "Microflows$OpenUserTaskAction", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$OpenWorkflowAction(value: OpenWorkflowAction): Self = StObject.set(x, "Microflows$OpenWorkflowAction", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$PauseOperation(value: PauseOperation): Self = StObject.set(x, "Microflows$PauseOperation", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$PrimitiveTypedTemplateArgument(value: PrimitiveTypedTemplateArgument): Self = StObject.set(x, "Microflows$PrimitiveTypedTemplateArgument", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$ProxyConfiguration(value: ProxyConfiguration): Self = StObject.set(x, "Microflows$ProxyConfiguration", value.asInstanceOf[js.Any])
@@ -3353,9 +3740,15 @@ object baseModelMod {
       
       inline def setMicroflows$RestCallAction(value: RestCallAction): Self = StObject.set(x, "Microflows$RestCallAction", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$RestartOperation(value: RestartOperation): Self = StObject.set(x, "Microflows$RestartOperation", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$ResultHandling(value: ResultHandling): Self = StObject.set(x, "Microflows$ResultHandling", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$ResumeOperation(value: ResumeOperation): Self = StObject.set(x, "Microflows$ResumeOperation", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$RetrieveAction(value: RetrieveAction): Self = StObject.set(x, "Microflows$RetrieveAction", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$RetryOperation(value: RetryOperation): Self = StObject.set(x, "Microflows$RetryOperation", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$RollbackAction(value: RollbackAction): Self = StObject.set(x, "Microflows$RollbackAction", value.asInstanceOf[js.Any])
       
@@ -3366,6 +3759,8 @@ object baseModelMod {
       inline def setMicroflows$RuleParameter(value: RuleParameter): Self = StObject.set(x, "Microflows$RuleParameter", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$RuleSplitCondition(value: RuleSplitCondition): Self = StObject.set(x, "Microflows$RuleSplitCondition", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$SendExternalObject(value: SendExternalObject): Self = StObject.set(x, "Microflows$SendExternalObject", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$SequenceFlow(value: SequenceFlow): Self = StObject.set(x, "Microflows$SequenceFlow", value.asInstanceOf[js.Any])
       
@@ -3405,6 +3800,8 @@ object baseModelMod {
       
       inline def setMicroflows$Union(value: Union): Self = StObject.set(x, "Microflows$Union", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$UnpauseOperation(value: UnpauseOperation): Self = StObject.set(x, "Microflows$UnpauseOperation", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$ValidationFeedbackAction(value: ValidationFeedbackAction): Self = StObject.set(x, "Microflows$ValidationFeedbackAction", value.asInstanceOf[js.Any])
       
       inline def setMicroflows$VariableExport(value: VariableExport): Self = StObject.set(x, "Microflows$VariableExport", value.asInstanceOf[js.Any])
@@ -3415,7 +3812,11 @@ object baseModelMod {
       
       inline def setMicroflows$WebServiceOperationSimpleParameterMapping(value: WebServiceOperationSimpleParameterMapping): Self = StObject.set(x, "Microflows$WebServiceOperationSimpleParameterMapping", value.asInstanceOf[js.Any])
       
+      inline def setMicroflows$WhileLoopCondition(value: WhileLoopCondition): Self = StObject.set(x, "Microflows$WhileLoopCondition", value.asInstanceOf[js.Any])
+      
       inline def setMicroflows$WorkflowCallAction(value: WorkflowCallAction): Self = StObject.set(x, "Microflows$WorkflowCallAction", value.asInstanceOf[js.Any])
+      
+      inline def setMicroflows$WorkflowOperationAction(value: WorkflowOperationAction): Self = StObject.set(x, "Microflows$WorkflowOperationAction", value.asInstanceOf[js.Any])
       
       inline def setNanoflows$NanoflowParameterValue(value: NanoflowParameterValue): Self = StObject.set(x, "Nanoflows$NanoflowParameterValue", value.asInstanceOf[js.Any])
       
@@ -3429,11 +3830,15 @@ object baseModelMod {
       
       inline def setNavigation$HomePage(value: HomePage): Self = StObject.set(x, "Navigation$HomePage", value.asInstanceOf[js.Any])
       
+      inline def setNavigation$NativeHomePage(value: NativeHomePage): Self = StObject.set(x, "Navigation$NativeHomePage", value.asInstanceOf[js.Any])
+      
       inline def setNavigation$NativeNavigationProfile(value: NativeNavigationProfile): Self = StObject.set(x, "Navigation$NativeNavigationProfile", value.asInstanceOf[js.Any])
       
       inline def setNavigation$NavigationProfile(value: NavigationProfile): Self = StObject.set(x, "Navigation$NavigationProfile", value.asInstanceOf[js.Any])
       
       inline def setNavigation$OfflineEntityConfig(value: OfflineEntityConfig): Self = StObject.set(x, "Navigation$OfflineEntityConfig", value.asInstanceOf[js.Any])
+      
+      inline def setNavigation$ProgressiveWebAppSettings(value: ProgressiveWebAppSettings): Self = StObject.set(x, "Navigation$ProgressiveWebAppSettings", value.asInstanceOf[js.Any])
       
       inline def setNavigation$RoleBasedHomePage(value: RoleBasedHomePage): Self = StObject.set(x, "Navigation$RoleBasedHomePage", value.asInstanceOf[js.Any])
       
@@ -3657,6 +4062,10 @@ object baseModelMod {
       
       inline def setPages$PageForSpecialization(value: PageForSpecialization): Self = StObject.set(x, "Pages$PageForSpecialization", value.asInstanceOf[js.Any])
       
+      inline def setPages$PageParameter(value: PageParameter): Self = StObject.set(x, "Pages$PageParameter", value.asInstanceOf[js.Any])
+      
+      inline def setPages$PageParameterMapping(value: PageParameterMapping): Self = StObject.set(x, "Pages$PageParameterMapping", value.asInstanceOf[js.Any])
+      
       inline def setPages$PageSettings(value: PageSettings): Self = StObject.set(x, "Pages$PageSettings", value.asInstanceOf[js.Any])
       
       inline def setPages$PageVariable(value: PageVariable): Self = StObject.set(x, "Pages$PageVariable", value.asInstanceOf[js.Any])
@@ -3682,6 +4091,8 @@ object baseModelMod {
       inline def setPages$RetrievalQueryParameter(value: RetrievalQueryParameter): Self = StObject.set(x, "Pages$RetrievalQueryParameter", value.asInstanceOf[js.Any])
       
       inline def setPages$RetrievalSchema(value: RetrievalSchema): Self = StObject.set(x, "Pages$RetrievalSchema", value.asInstanceOf[js.Any])
+      
+      inline def setPages$RuntimeOperation(value: RuntimeOperation): Self = StObject.set(x, "Pages$RuntimeOperation", value.asInstanceOf[js.Any])
       
       inline def setPages$SaveButton(value: SaveButton): Self = StObject.set(x, "Pages$SaveButton", value.asInstanceOf[js.Any])
       
@@ -3763,6 +4174,14 @@ object baseModelMod {
       
       inline def setProjects$OneTimeConversionMarker(value: OneTimeConversionMarker): Self = StObject.set(x, "Projects$OneTimeConversionMarker", value.asInstanceOf[js.Any])
       
+      inline def setQueues$BasicQueueConfig(value: BasicQueueConfig): Self = StObject.set(x, "Queues$BasicQueueConfig", value.asInstanceOf[js.Any])
+      
+      inline def setQueues$QueueExponentialRetry(value: QueueExponentialRetry): Self = StObject.set(x, "Queues$QueueExponentialRetry", value.asInstanceOf[js.Any])
+      
+      inline def setQueues$QueueFixedRetry(value: QueueFixedRetry): Self = StObject.set(x, "Queues$QueueFixedRetry", value.asInstanceOf[js.Any])
+      
+      inline def setQueues$QueueSettings(value: QueueSettings): Self = StObject.set(x, "Queues$QueueSettings", value.asInstanceOf[js.Any])
+      
       inline def setReports$BasicReport(value: BasicReport): Self = StObject.set(x, "Reports$BasicReport", value.asInstanceOf[js.Any])
       
       inline def setReports$BasicReportAggregate(value: BasicReportAggregate): Self = StObject.set(x, "Reports$BasicReportAggregate", value.asInstanceOf[js.Any])
@@ -3787,6 +4206,14 @@ object baseModelMod {
       
       inline def setReports$ReportZoomMapping(value: ReportZoomMapping): Self = StObject.set(x, "Reports$ReportZoomMapping", value.asInstanceOf[js.Any])
       
+      inline def setRest$CallMicroflowToChange(value: CallMicroflowToChange): Self = StObject.set(x, "Rest$CallMicroflowToChange", value.asInstanceOf[js.Any])
+      
+      inline def setRest$CallMicroflowToRead(value: CallMicroflowToRead): Self = StObject.set(x, "Rest$CallMicroflowToRead", value.asInstanceOf[js.Any])
+      
+      inline def setRest$ChangeNotSupported(value: ChangeNotSupported): Self = StObject.set(x, "Rest$ChangeNotSupported", value.asInstanceOf[js.Any])
+      
+      inline def setRest$ChangeSource(value: ChangeSource): Self = StObject.set(x, "Rest$ChangeSource", value.asInstanceOf[js.Any])
+      
       inline def setRest$CorsConfiguration(value: CorsConfiguration): Self = StObject.set(x, "Rest$CorsConfiguration", value.asInstanceOf[js.Any])
       
       inline def setRest$MetadataReference(value: MetadataReference): Self = StObject.set(x, "Rest$MetadataReference", value.asInstanceOf[js.Any])
@@ -3801,13 +4228,37 @@ object baseModelMod {
       
       inline def setRest$ODataRemoteEntitySource(value: ODataRemoteEntitySource): Self = StObject.set(x, "Rest$ODataRemoteEntitySource", value.asInstanceOf[js.Any])
       
+      inline def setRest$PublishedODataContract(value: PublishedODataContract): Self = StObject.set(x, "Rest$PublishedODataContract", value.asInstanceOf[js.Any])
+      
       inline def setRest$PublishedRestResource(value: PublishedRestResource): Self = StObject.set(x, "Rest$PublishedRestResource", value.asInstanceOf[js.Any])
       
       inline def setRest$PublishedRestServiceOperation(value: PublishedRestServiceOperation): Self = StObject.set(x, "Rest$PublishedRestServiceOperation", value.asInstanceOf[js.Any])
       
       inline def setRest$PublishedRestServiceResource(value: PublishedRestServiceResource): Self = StObject.set(x, "Rest$PublishedRestServiceResource", value.asInstanceOf[js.Any])
       
+      inline def setRest$QueryOptions(value: QueryOptions): Self = StObject.set(x, "Rest$QueryOptions", value.asInstanceOf[js.Any])
+      
+      inline def setRest$ReadSource(value: ReadSource): Self = StObject.set(x, "Rest$ReadSource", value.asInstanceOf[js.Any])
+      
       inline def setRest$RestOperationParameter(value: RestOperationParameter): Self = StObject.set(x, "Rest$RestOperationParameter", value.asInstanceOf[js.Any])
+      
+      inline def setRest$ServiceFeed(value: ServiceFeed): Self = StObject.set(x, "Rest$ServiceFeed", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$DaySchedule(value: DaySchedule): Self = StObject.set(x, "ScheduledEvents$DaySchedule", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$HourSchedule(value: HourSchedule): Self = StObject.set(x, "ScheduledEvents$HourSchedule", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$MinuteSchedule(value: MinuteSchedule): Self = StObject.set(x, "ScheduledEvents$MinuteSchedule", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$MonthDateSchedule(value: MonthDateSchedule): Self = StObject.set(x, "ScheduledEvents$MonthDateSchedule", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$MonthWeekdaySchedule(value: MonthWeekdaySchedule): Self = StObject.set(x, "ScheduledEvents$MonthWeekdaySchedule", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$WeekSchedule(value: WeekSchedule): Self = StObject.set(x, "ScheduledEvents$WeekSchedule", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$YearDateSchedule(value: YearDateSchedule): Self = StObject.set(x, "ScheduledEvents$YearDateSchedule", value.asInstanceOf[js.Any])
+      
+      inline def setScheduledEvents$YearWeekdaySchedule(value: YearWeekdaySchedule): Self = StObject.set(x, "ScheduledEvents$YearWeekdaySchedule", value.asInstanceOf[js.Any])
       
       inline def setSecurity$DemoUser(value: DemoUser): Self = StObject.set(x, "Security$DemoUser", value.asInstanceOf[js.Any])
       
@@ -3837,6 +4288,8 @@ object baseModelMod {
       
       inline def setSettings$IntegrationProjectSettingsPart(value: IntegrationProjectSettingsPart): Self = StObject.set(x, "Settings$IntegrationProjectSettingsPart", value.asInstanceOf[js.Any])
       
+      inline def setSettings$JarDeploymentSettings(value: JarDeploymentSettings): Self = StObject.set(x, "Settings$JarDeploymentSettings", value.asInstanceOf[js.Any])
+      
       inline def setSettings$JavaActionsSettings(value: JavaActionsSettings): Self = StObject.set(x, "Settings$JavaActionsSettings", value.asInstanceOf[js.Any])
       
       inline def setSettings$Language(value: Language): Self = StObject.set(x, "Settings$Language", value.asInstanceOf[js.Any])
@@ -3845,7 +4298,13 @@ object baseModelMod {
       
       inline def setSettings$ModelerSettings(value: ModelerSettings): Self = StObject.set(x, "Settings$ModelerSettings", value.asInstanceOf[js.Any])
       
+      inline def setSettings$ProtectedModuleJarLocation(value: ProtectedModuleJarLocation): Self = StObject.set(x, "Settings$ProtectedModuleJarLocation", value.asInstanceOf[js.Any])
+      
       inline def setSettings$RuntimeSettings(value: RuntimeSettings): Self = StObject.set(x, "Settings$RuntimeSettings", value.asInstanceOf[js.Any])
+      
+      inline def setSettings$ThemeModuleEntry(value: ThemeModuleEntry): Self = StObject.set(x, "Settings$ThemeModuleEntry", value.asInstanceOf[js.Any])
+      
+      inline def setSettings$UserLibJarLocation(value: UserLibJarLocation): Self = StObject.set(x, "Settings$UserLibJarLocation", value.asInstanceOf[js.Any])
       
       inline def setSettings$WebUIProjectSettingsPart(value: WebUIProjectSettingsPart): Self = StObject.set(x, "Settings$WebUIProjectSettingsPart", value.asInstanceOf[js.Any])
       
@@ -3885,27 +4344,55 @@ object baseModelMod {
       
       inline def setWebServices$WsdlEntry(value: WsdlEntry): Self = StObject.set(x, "WebServices$WsdlEntry", value.asInstanceOf[js.Any])
       
-      inline def setWorkflows$BooleanSplitOutcome(value: BooleanSplitOutcome): Self = StObject.set(x, "Workflows$BooleanSplitOutcome", value.asInstanceOf[js.Any])
+      inline def setWorkflows$Annotation(value: typings.mendixmodelsdk.workflowsMod.workflows.Annotation): Self = StObject.set(x, "Workflows$Annotation", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$BooleanConditionOutcome(value: BooleanConditionOutcome): Self = StObject.set(x, "Workflows$BooleanConditionOutcome", value.asInstanceOf[js.Any])
       
       inline def setWorkflows$CallMicroflowTask(value: CallMicroflowTask): Self = StObject.set(x, "Workflows$CallMicroflowTask", value.asInstanceOf[js.Any])
       
       inline def setWorkflows$CallWorkflowActivity(value: CallWorkflowActivity): Self = StObject.set(x, "Workflows$CallWorkflowActivity", value.asInstanceOf[js.Any])
       
+      inline def setWorkflows$EmptyUserSource(value: EmptyUserSource): Self = StObject.set(x, "Workflows$EmptyUserSource", value.asInstanceOf[js.Any])
+      
       inline def setWorkflows$EndWorkflowActivity(value: EndWorkflowActivity): Self = StObject.set(x, "Workflows$EndWorkflowActivity", value.asInstanceOf[js.Any])
       
-      inline def setWorkflows$EnumerationValueSplitOutcome(value: EnumerationValueSplitOutcome): Self = StObject.set(x, "Workflows$EnumerationValueSplitOutcome", value.asInstanceOf[js.Any])
+      inline def setWorkflows$EnumerationValueConditionOutcome(value: EnumerationValueConditionOutcome): Self = StObject.set(x, "Workflows$EnumerationValueConditionOutcome", value.asInstanceOf[js.Any])
       
       inline def setWorkflows$ExclusiveSplitActivity(value: ExclusiveSplitActivity): Self = StObject.set(x, "Workflows$ExclusiveSplitActivity", value.asInstanceOf[js.Any])
       
       inline def setWorkflows$Flow(value: Flow): Self = StObject.set(x, "Workflows$Flow", value.asInstanceOf[js.Any])
       
+      inline def setWorkflows$JumpToActivity(value: JumpToActivity): Self = StObject.set(x, "Workflows$JumpToActivity", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$MicroflowBasedEvent(value: MicroflowBasedEvent): Self = StObject.set(x, "Workflows$MicroflowBasedEvent", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$MicroflowBasedUserSource(value: MicroflowBasedUserSource): Self = StObject.set(x, "Workflows$MicroflowBasedUserSource", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$MicroflowCallParameterMapping(value: typings.mendixmodelsdk.workflowsMod.workflows.MicroflowCallParameterMapping): Self = StObject.set(x, "Workflows$MicroflowCallParameterMapping", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$MicroflowEventHandler(value: MicroflowEventHandler): Self = StObject.set(x, "Workflows$MicroflowEventHandler", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$NoEvent(value: NoEvent): Self = StObject.set(x, "Workflows$NoEvent", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$PageParameterMapping(value: typings.mendixmodelsdk.workflowsMod.workflows.PageParameterMapping): Self = StObject.set(x, "Workflows$PageParameterMapping", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$PageReference(value: PageReference): Self = StObject.set(x, "Workflows$PageReference", value.asInstanceOf[js.Any])
+      
       inline def setWorkflows$ParallelSplitActivity(value: ParallelSplitActivity): Self = StObject.set(x, "Workflows$ParallelSplitActivity", value.asInstanceOf[js.Any])
       
       inline def setWorkflows$ParallelSplitOutcome(value: ParallelSplitOutcome): Self = StObject.set(x, "Workflows$ParallelSplitOutcome", value.asInstanceOf[js.Any])
       
+      inline def setWorkflows$Parameter(value: Parameter): Self = StObject.set(x, "Workflows$Parameter", value.asInstanceOf[js.Any])
+      
       inline def setWorkflows$UserTask(value: UserTask): Self = StObject.set(x, "Workflows$UserTask", value.asInstanceOf[js.Any])
       
-      inline def setWorkflows$WorkflowTaskOutcome(value: WorkflowTaskOutcome): Self = StObject.set(x, "Workflows$WorkflowTaskOutcome", value.asInstanceOf[js.Any])
+      inline def setWorkflows$UserTaskOutcome(value: UserTaskOutcome): Self = StObject.set(x, "Workflows$UserTaskOutcome", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$VoidConditionOutcome(value: VoidConditionOutcome): Self = StObject.set(x, "Workflows$VoidConditionOutcome", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$WorkflowCallParameterMapping(value: WorkflowCallParameterMapping): Self = StObject.set(x, "Workflows$WorkflowCallParameterMapping", value.asInstanceOf[js.Any])
+      
+      inline def setWorkflows$WorkflowType(value: WorkflowType): Self = StObject.set(x, "Workflows$WorkflowType", value.asInstanceOf[js.Any])
       
       inline def setWorkflows$XPathBasedUserSource(value: XPathBasedUserSource): Self = StObject.set(x, "Workflows$XPathBasedUserSource", value.asInstanceOf[js.Any])
       
@@ -3927,6 +4414,8 @@ object baseModelMod {
     def allConstants(): js.Array[IConstant] = js.native
     
     def allConsumedAppServices(): js.Array[IConsumedAppService] = js.native
+    
+    def allConsumedBusinessEventServices(): js.Array[IConsumedBusinessEventService] = js.native
     
     def allConsumedKafkaServices(): js.Array[IConsumedKafkaService] = js.native
     
@@ -3956,6 +4445,8 @@ object baseModelMod {
     
     def allImportedWebServices(): js.Array[IImportedWebService] = js.native
     
+    def allInteractiveRests(): js.Array[IInteractiveRest] = js.native
+    
     def allJavaActions(): js.Array[IJavaAction] = js.native
     
     def allJavaScriptActions(): js.Array[IJavaScriptAction] = js.native
@@ -3963,6 +4454,8 @@ object baseModelMod {
     def allJsonStructures(): js.Array[IJsonStructure] = js.native
     
     def allLayouts(): js.Array[ILayout] = js.native
+    
+    def allMLMappingDocuments(): js.Array[IMLMappingDocument] = js.native
     
     def allMappingDocuments(): js.Array[IMappingDocument] = js.native
     
@@ -3977,6 +4470,8 @@ object baseModelMod {
     def allModuleDocuments(): js.Array[IModuleDocument] = js.native
     
     def allModuleSecurities(): js.Array[IModuleSecurity] = js.native
+    
+    def allModuleSettings(): js.Array[IModuleSettings] = js.native
     
     def allModules(): js.Array[IModule] = js.native
     
@@ -4006,6 +4501,8 @@ object baseModelMod {
     
     def allPublishedAppServices(): js.Array[IPublishedAppService] = js.native
     
+    def allPublishedBusinessEventServices(): js.Array[IPublishedBusinessEventService] = js.native
+    
     def allPublishedKafkaServices(): js.Array[IPublishedKafkaService] = js.native
     
     def allPublishedODataServices(): js.Array[IPublishedODataService] = js.native
@@ -4015,6 +4512,8 @@ object baseModelMod {
     def allPublishedServiceBases(): js.Array[IPublishedServiceBase] = js.native
     
     def allPublishedWebServices(): js.Array[IPublishedWebService] = js.native
+    
+    def allQueues(): js.Array[IQueue] = js.native
     
     def allRegularExpressions(): js.Array[IRegularExpression] = js.native
     
@@ -4041,7 +4540,7 @@ object baseModelMod {
       * After creation, assign or add this instance to a property that accepts this kind of elements.
       * @param typeName `structureTypeName` of the element type you want to create
       */
-    def createElement[T /* <: /* keyof mendixmodelsdk.mendixmodelsdk/dist/gen/base-model.ConcreteModelElements */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 563 */ js.Any */](typeName: T): /* import warning: importer.ImportType#apply Failed type conversion: mendixmodelsdk.mendixmodelsdk/dist/gen/base-model.ConcreteModelElements[T] */ js.Any = js.native
+    def createElement[T /* <: /* keyof mendixmodelsdk.mendixmodelsdk/src/gen/base-model.ConcreteModelElements */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 640 */ Any */](typeName: T): /* import warning: importer.ImportType#apply Failed type conversion: mendixmodelsdk.mendixmodelsdk/src/gen/base-model.ConcreteModelElements[T] */ js.Any = js.native
     
     def findAppServiceActionByQualifiedName(qname: String): IAppServiceAction | Null = js.native
     
@@ -4091,6 +4590,8 @@ object baseModelMod {
     
     def findLayoutParameterByQualifiedName(qname: String): ILayoutParameter | Null = js.native
     
+    def findMLMappingDocumentByQualifiedName(qname: String): IMLMappingDocument | Null = js.native
+    
     def findMenuDocumentByQualifiedName(qname: String): IMenuDocument | Null = js.native
     
     def findMessageDefinitionByQualifiedName(qname: String): IMessageDefinition | Null = js.native
@@ -4113,6 +4614,12 @@ object baseModelMod {
     
     def findPageByQualifiedName(qname: String): IPage | Null = js.native
     
+    def findPageParameterByQualifiedName(qname: String): IPageParameter | Null = js.native
+    
+    def findParameterByQualifiedName(qname: String): IParameter | Null = js.native
+    
+    def findQueueByQualifiedName(qname: String): IQueue | Null = js.native
+    
     def findRegularExpressionByQualifiedName(qname: String): IRegularExpression | Null = js.native
     
     def findRemoteEntitySourceDocumentByQualifiedName(qname: String): IRemoteEntitySourceDocument | Null = js.native
@@ -4125,9 +4632,9 @@ object baseModelMod {
     
     def findUserRoleByQualifiedName(qname: String): IUserRole | Null = js.native
     
-    def findWorkflowByQualifiedName(qname: String): IWorkflow | Null = js.native
+    def findUserTaskOutcomeByQualifiedName(qname: String): IUserTaskOutcome | Null = js.native
     
-    def findWorkflowTaskOutcomeByQualifiedName(qname: String): IWorkflowTaskOutcome | Null = js.native
+    def findWorkflowByQualifiedName(qname: String): IWorkflow | Null = js.native
     
     def findXmlSchemaByQualifiedName(qname: String): IXmlSchema | Null = js.native
   }

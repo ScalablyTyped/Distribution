@@ -44,6 +44,10 @@ object awsSdkSmithyClientStrings {
   inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
+  
+  @js.native
   sealed trait mobile
     extends StObject
        with DefaultsMode

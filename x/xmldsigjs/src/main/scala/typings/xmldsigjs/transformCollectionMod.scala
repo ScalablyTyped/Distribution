@@ -10,7 +10,7 @@ object transformCollectionMod {
   
   @JSImport("xmldsigjs/build/types/xml/transform_collection", "Transforms")
   @js.native
-  class Transforms () extends XmlSignatureCollection[Transform] {
+  open class Transforms () extends XmlSignatureCollection[Transform] {
     def this(properties: js.Object) = this()
   }
 }

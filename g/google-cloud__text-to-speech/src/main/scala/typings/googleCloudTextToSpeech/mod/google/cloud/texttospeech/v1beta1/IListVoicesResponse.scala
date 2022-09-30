@@ -25,6 +25,6 @@ object IListVoicesResponse {
     
     inline def setVoicesUndefined: Self = StObject.set(x, "voices", js.undefined)
     
-    inline def setVoicesVarargs(value: IVoice*): Self = StObject.set(x, "voices", js.Array(value :_*))
+    inline def setVoicesVarargs(value: IVoice*): Self = StObject.set(x, "voices", js.Array(value*))
   }
 }

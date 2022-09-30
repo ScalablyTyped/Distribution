@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.projectsMod.projects.ExportLevel
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttribute because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEntity, name, `type`, value, capabilities */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Attribute")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttribute because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEntity, name, `type`, documentation, value, capabilities */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Attribute")
 @js.native
-class Attribute protected ()
+open class Attribute protected ()
   extends Element[IModel]
      with IByNameReferrable {
   def this(
@@ -36,6 +37,7 @@ class Attribute protected ()
   ) = this()
   
   /**
+    * In version 9.0.1: deleted
     * In version 8.13.0: introduced
     */
   def capabilities: AttributeCapabilities = js.native
@@ -43,6 +45,7 @@ class Attribute protected ()
   /**
     * This property is required and cannot be set to null.
     *
+    * In version 9.0.1: deleted
     * In version 8.13.0: introduced
     */
   @JSName("capabilities")
@@ -55,8 +58,22 @@ class Attribute protected ()
   def dataStorageGuid: String = js.native
   def dataStorageGuid_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.10.0: added public
+    */
   def documentation: String = js.native
   def documentation_=(newValue: String): Unit = js.native
+  /**
+    * In version 9.10.0: added public
+    */
+  @JSName("documentation")
+  val documentation_FAttribute: String = js.native
+  
+  /**
+    * In version 9.3.0: introduced
+    */
+  def exportLevel: ExportLevel = js.native
+  def exportLevel_=(newValue: ExportLevel): Unit = js.native
   
   def name: String = js.native
   def name_=(newValue: String): Unit = js.native
@@ -97,7 +114,7 @@ class Attribute protected ()
 }
 object Attribute {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Attribute")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Attribute")
   @js.native
   val ^ : js.Any = js.native
   
@@ -118,13 +135,13 @@ object Attribute {
   inline def createIn(container: Entity): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Attribute]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Attribute.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Attribute.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.Attribute.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.Attribute.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

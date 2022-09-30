@@ -5,12 +5,12 @@ import typings.node.streamMod.Duplex
 import typings.pngjs.anon.Blue
 import typings.pngjs.anon.FnCall
 import typings.pngjs.anon.Read
-import typings.pngjs.pngjsNumbers.`16`
-import typings.pngjs.pngjsNumbers.`1`
-import typings.pngjs.pngjsNumbers.`2`
-import typings.pngjs.pngjsNumbers.`3`
-import typings.pngjs.pngjsNumbers.`4`
-import typings.pngjs.pngjsNumbers.`8`
+import typings.pngjs.pngjsInts.`16`
+import typings.pngjs.pngjsInts.`1`
+import typings.pngjs.pngjsInts.`2`
+import typings.pngjs.pngjsInts.`3`
+import typings.pngjs.pngjsInts.`4`
+import typings.pngjs.pngjsInts.`8`
 import typings.pngjs.pngjsStrings.close
 import typings.pngjs.pngjsStrings.error
 import typings.pngjs.pngjsStrings.metadata
@@ -121,33 +121,33 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.pngjs.pngjsNumbers.`8`
-    - typings.pngjs.pngjsNumbers.`16`
+    - typings.pngjs.pngjsInts.`8`
+    - typings.pngjs.pngjsInts.`16`
   */
   trait BitDepth extends StObject
   object BitDepth {
     
-    inline def `16`: typings.pngjs.pngjsNumbers.`16` = 16.asInstanceOf[typings.pngjs.pngjsNumbers.`16`]
+    inline def `16`: typings.pngjs.pngjsInts.`16` = 16.asInstanceOf[typings.pngjs.pngjsInts.`16`]
     
-    inline def `8`: typings.pngjs.pngjsNumbers.`8` = 8.asInstanceOf[typings.pngjs.pngjsNumbers.`8`]
+    inline def `8`: typings.pngjs.pngjsInts.`8` = 8.asInstanceOf[typings.pngjs.pngjsInts.`8`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.pngjs.pngjsNumbers.`0`
-    - typings.pngjs.pngjsNumbers.`2`
-    - typings.pngjs.pngjsNumbers.`4`
-    - typings.pngjs.pngjsNumbers.`6`
+    - typings.pngjs.pngjsInts.`0`
+    - typings.pngjs.pngjsInts.`2`
+    - typings.pngjs.pngjsInts.`4`
+    - typings.pngjs.pngjsInts.`6`
   */
   trait ColorType extends StObject
   object ColorType {
     
-    inline def `0`: typings.pngjs.pngjsNumbers.`0` = 0.asInstanceOf[typings.pngjs.pngjsNumbers.`0`]
+    inline def `0`: typings.pngjs.pngjsInts.`0` = 0.asInstanceOf[typings.pngjs.pngjsInts.`0`]
     
-    inline def `2`: typings.pngjs.pngjsNumbers.`2` = 2.asInstanceOf[typings.pngjs.pngjsNumbers.`2`]
+    inline def `2`: typings.pngjs.pngjsInts.`2` = 2.asInstanceOf[typings.pngjs.pngjsInts.`2`]
     
-    inline def `4`: typings.pngjs.pngjsNumbers.`4` = 4.asInstanceOf[typings.pngjs.pngjsNumbers.`4`]
+    inline def `4`: typings.pngjs.pngjsInts.`4` = 4.asInstanceOf[typings.pngjs.pngjsInts.`4`]
     
-    inline def `6`: typings.pngjs.pngjsNumbers.`6` = 6.asInstanceOf[typings.pngjs.pngjsNumbers.`6`]
+    inline def `6`: typings.pngjs.pngjsInts.`6` = 6.asInstanceOf[typings.pngjs.pngjsInts.`6`]
   }
   
   trait Metadata extends StObject {

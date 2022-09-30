@@ -6,7 +6,6 @@ import typings.googleCloudTextToSpeech.googleCloudTextToSpeechStrings.text
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SynthesisInput.
   * @param [properties] Properties to set
   */
-class SynthesisInput ()
+open class SynthesisInput ()
   extends StObject
      with ISynthesisInput {
   def this(properties: ISynthesisInput) = this()
@@ -26,19 +25,11 @@ class SynthesisInput ()
   /** SynthesisInput inputSource. */
   var inputSource: js.UndefOr[text | ssml] = js.native
   
-  /** SynthesisInput ssml. */
-  @JSName("ssml")
-  var ssml_SynthesisInput: String = js.native
-  
-  /** SynthesisInput text. */
-  @JSName("text")
-  var text_SynthesisInput: String = js.native
-  
   /**
     * Converts this SynthesisInput to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object SynthesisInput {
   
@@ -55,6 +46,8 @@ object SynthesisInput {
   inline def create(): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SynthesisInput]
   inline def create(properties: ISynthesisInput): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SynthesisInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesisInput]
   /**
     * Decodes a SynthesisInput message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -66,9 +59,8 @@ object SynthesisInput {
   /* static member */
   inline def decode(reader: Reader): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
   inline def decode(reader: Reader, length: Double): SynthesisInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesisInput]
-  inline def decode(reader: Uint8Array): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
-  inline def decode(reader: Uint8Array, length: Double): SynthesisInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesisInput]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
   /**
     * Decodes a SynthesisInput message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -78,7 +70,6 @@ object SynthesisInput {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
-  inline def decodeDelimited(reader: Uint8Array): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
   
   /**
     * Encodes the specified SynthesisInput message. Does not implicitly {@link google.cloud.texttospeech.v1beta1.SynthesisInput.verify|verify} messages.
@@ -106,7 +97,16 @@ object SynthesisInput {
     * @returns SynthesisInput
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
+  inline def fromObject(`object`: StringDictionary[Any]): SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SynthesisInput]
+  
+  /**
+    * Gets the default type url for SynthesisInput
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a SynthesisInput message. Also converts values to other types if specified.
@@ -115,8 +115,8 @@ object SynthesisInput {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SynthesisInput): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SynthesisInput, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SynthesisInput): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SynthesisInput, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SynthesisInput message.
@@ -124,5 +124,5 @@ object SynthesisInput {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

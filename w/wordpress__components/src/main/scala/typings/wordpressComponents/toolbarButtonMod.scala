@@ -3,7 +3,8 @@ package typings.wordpressComponents
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.wordpressComponents.anon.PartialProps
+import typings.react.mod.global.JSX.Element
+import typings.wordpressComponents.anon.PartialPropsAccept
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressComponents.shortcutMod.Shortcut.ShortcutType
 import typings.wordpressComponents.toolbarButtonMod.ToolbarButton.Props
@@ -17,12 +18,12 @@ object toolbarButtonMod {
     
     @JSImport("@wordpress/components/toolbar-button", JSImport.Default)
     @js.native
-    val ^ : ComponentType[Props] = js.native
+    val ^ : ComponentType[Props | typings.wordpressComponents.buttonMod.Button.Props] = js.native
     
-    type _To = ComponentType[Props]
+    type _To = ComponentType[Props | typings.wordpressComponents.buttonMod.Button.Props]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: ComponentType[Props] = ^
+    override def _to: ComponentType[Props | typings.wordpressComponents.buttonMod.Button.Props] = ^
   }
   
   object ToolbarButton {
@@ -49,12 +50,12 @@ object toolbarButtonMod {
       /**
         * Any additional props to pass down to `IconButton`.
         */
-      var extraProps: js.UndefOr[PartialProps] = js.undefined
+      var extraProps: js.UndefOr[PartialPropsAccept] = js.undefined
       
       /**
         * Dashicon icon slug.
         */
-      var icon: Icon
+      var icon: Icon | Element
       
       /**
         * Describes whether or not the button is active.
@@ -69,7 +70,7 @@ object toolbarButtonMod {
       /**
         * Function to invoke when the option is selected.
         */
-      def onClick(): Unit
+      var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       var shortcut: js.UndefOr[ShortcutType] = js.undefined
       
@@ -85,8 +86,8 @@ object toolbarButtonMod {
     }
     object Props {
       
-      inline def apply(icon: Icon, onClick: () => Unit, title: String): Props = {
-        val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), title = title.asInstanceOf[js.Any])
+      inline def apply(icon: Icon | Element, title: String): Props = {
+        val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
@@ -104,11 +105,11 @@ object toolbarButtonMod {
         
         inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
         
-        inline def setExtraProps(value: PartialProps): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
+        inline def setExtraProps(value: PartialPropsAccept): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
         
         inline def setExtraPropsUndefined: Self = StObject.set(x, "extraProps", js.undefined)
         
-        inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
         inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
         
@@ -119,6 +120,8 @@ object toolbarButtonMod {
         inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
         
         inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+        
+        inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
         
         inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
         

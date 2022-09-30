@@ -33,7 +33,7 @@ trait ArcRotateCamera
   /* protected */ def _onCollisionPositionChange(collisionId: Double, newPosition: Vector3): Unit = js.native
   /* protected */ def _onCollisionPositionChange(collisionId: Double, newPosition: Vector3, collidedMesh: Nullable[AbstractMesh]): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _panningMouseButton: Double = js.native
   
   /* protected */ var _previousAlpha: Double = js.native
@@ -64,7 +64,7 @@ trait ArcRotateCamera
   
   /* protected */ var _upToYMatrix: Matrix = js.native
   
-  /** @hidden */
+  /** @internal */
   var _useCtrlForPanning: Boolean = js.native
   
   /* protected */ var _yToUpMatrix: Matrix = js.native

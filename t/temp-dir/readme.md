@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp-dir
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get the real path of the system temp directory

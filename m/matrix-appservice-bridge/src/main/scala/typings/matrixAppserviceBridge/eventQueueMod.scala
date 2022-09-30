@@ -37,7 +37,7 @@ object eventQueueMod {
       * @param {IMatrixEvent} event The event to enqueue.
       * @param {Promise<object>} dataReady Promise containing data related to the event.
       */
-    def push(event: Roomid, dataReady: DataReady): Unit = js.native
+    def push(event: Roomid, dataReady: js.Promise[Record[String, Any]]): Unit = js.native
     
     /**
       * Private constructor.
@@ -76,7 +76,7 @@ object eventQueueMod {
   open class EventQueueNone protected () extends EventQueue {
     def this(consumeFn: ConsumeCallback) = this()
     
-    def push(event: Any, dataReady: DataReady): Unit = js.native
+    def push(event: Any, dataReady: js.Promise[Record[String, Any]]): Unit = js.native
   }
   
   @JSImport("matrix-appservice-bridge/lib/components/event-queue", "EventQueuePerRoom")

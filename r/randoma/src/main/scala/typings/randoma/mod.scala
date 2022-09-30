@@ -85,22 +85,6 @@ object mod {
     @js.native
     val ^ : js.Object & ColorConstructor = js.native
     
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("randoma", "Color.Class")
-    @js.native
-    open class Class[T /* <: ColorParam */] ()
-      extends typings.color.mod.Class[T] {
-      def this(obj: T) = this()
-      def this(
-        obj: T,
-        model: rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
-      ) = this()
-      def this(
-        obj: Unit,
-        model: rgb | xyz | hcg | ansi256 | ansi16 | hex | lch | cmyk | hsl | keyword | gray | hsv | apple | hwb | lab
-      ) = this()
-    }
-    
     type _To = js.Object & ColorConstructor
     
     /* This means you don't have to write `^`, but can instead just say `Color.foo` */

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.GridActionButton")
 @js.native
-class GridActionButton protected ()
+open class GridActionButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GridActionButton {
   def this(
     model: AbstractModel,

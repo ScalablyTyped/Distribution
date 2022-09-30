@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stylelint" : "14.13.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stylelint" : "14.13.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

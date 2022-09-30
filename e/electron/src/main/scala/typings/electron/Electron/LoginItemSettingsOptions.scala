@@ -33,7 +33,7 @@ object LoginItemSettingsOptions {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

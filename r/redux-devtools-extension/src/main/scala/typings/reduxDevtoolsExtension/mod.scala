@@ -18,21 +18,21 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def composeWithDevTools(options: EnhancerOptions): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(options.asInstanceOf[js.Any]).asInstanceOf[FnCall]
-  inline def composeWithDevTools[StoreExt, StateExt](funcs: (StoreEnhancer[StoreExt, js.Object])*): StoreEnhancer[StoreExt, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[StoreExt, js.Object]]
+  inline def composeWithDevTools[StoreExt, StateExt](funcs: (StoreEnhancer[StoreExt, js.Object])*): StoreEnhancer[StoreExt, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StoreEnhancer[StoreExt, js.Object]]
   
-  inline def devToolsEnhancer(options: EnhancerOptions): StoreEnhancer[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("devToolsEnhancer")(options.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Any, js.Object]]
+  inline def devToolsEnhancer(options: EnhancerOptions): StoreEnhancer[Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("devToolsEnhancer")(options.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[Any, js.Object]]
   
   trait EnhancerOptions extends StObject {
     
     /**
       * action creators functions to be available in the Dispatcher.
       */
-    var actionCreators: js.UndefOr[js.Array[ActionCreator[js.Any]] | StringDictionary[ActionCreator[js.Any]]] = js.undefined
+    var actionCreators: js.UndefOr[js.Array[ActionCreator[Any]] | StringDictionary[ActionCreator[Any]]] = js.undefined
     
     /**
       * function which takes `action` object and id number as arguments, and should return `action` object back.
       */
-    var actionSanitizer: js.UndefOr[js.Function2[/* action */ Action[js.Any], /* id */ Double, Action[js.Any]]] = js.undefined
+    var actionSanitizer: js.UndefOr[js.Function2[/* action */ Action[Any], /* id */ Double, Action[Any]]] = js.undefined
     
     /**
       * *string or array of strings as regex* - actions types to be hidden / shown in the monitors (while passed to the reducers).
@@ -96,7 +96,7 @@ object mod {
       * called for every action before sending, takes `state` and `action` object, and returns `true` in case it allows sending the current data to the monitor.
       * Use it as a more advanced version of `actionsBlacklist`/`actionsWhitelist` parameters.
       */
-    var predicate: js.UndefOr[js.Function2[/* state */ js.Any, /* action */ Action[js.Any], Boolean]] = js.undefined
+    var predicate: js.UndefOr[js.Function2[/* state */ Any, /* action */ Action[Any], Boolean]] = js.undefined
     
     /**
       * - `undefined` - will use regular `JSON.stringify` to send data (it's the fast mode).
@@ -142,13 +142,13 @@ object mod {
     /**
       * function which takes `state` object and index as arguments, and should return `state` object back.
       */
-    var stateSanitizer: js.UndefOr[js.Function2[/* state */ js.Any, /* index */ Double, js.Any]] = js.undefined
+    var stateSanitizer: js.UndefOr[js.Function2[/* state */ Any, /* index */ Double, Any]] = js.undefined
     
     /**
       * Set to true or a stacktrace-returning function to record call stack traces for dispatched actions.
       * Defaults to false.
       */
-    var trace: js.UndefOr[Boolean | (js.Function1[/* action */ Action[js.Any], String])] = js.undefined
+    var trace: js.UndefOr[Boolean | (js.Function1[/* action */ Action[Any], String])] = js.undefined
     
     /**
       * The maximum number of stack trace entries to record per action. Defaults to 10.
@@ -164,13 +164,13 @@ object mod {
     
     extension [Self <: EnhancerOptions](x: Self) {
       
-      inline def setActionCreators(value: js.Array[ActionCreator[js.Any]] | StringDictionary[ActionCreator[js.Any]]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
+      inline def setActionCreators(value: js.Array[ActionCreator[Any]] | StringDictionary[ActionCreator[Any]]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
       
       inline def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
       
-      inline def setActionCreatorsVarargs(value: ActionCreator[js.Any]*): Self = StObject.set(x, "actionCreators", js.Array(value :_*))
+      inline def setActionCreatorsVarargs(value: ActionCreator[Any]*): Self = StObject.set(x, "actionCreators", js.Array(value*))
       
-      inline def setActionSanitizer(value: (/* action */ Action[js.Any], /* id */ Double) => Action[js.Any]): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction2(value))
+      inline def setActionSanitizer(value: (/* action */ Action[Any], /* id */ Double) => Action[Any]): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction2(value))
       
       inline def setActionSanitizerUndefined: Self = StObject.set(x, "actionSanitizer", js.undefined)
       
@@ -178,13 +178,13 @@ object mod {
       
       inline def setActionsBlacklistUndefined: Self = StObject.set(x, "actionsBlacklist", js.undefined)
       
-      inline def setActionsBlacklistVarargs(value: String*): Self = StObject.set(x, "actionsBlacklist", js.Array(value :_*))
+      inline def setActionsBlacklistVarargs(value: String*): Self = StObject.set(x, "actionsBlacklist", js.Array(value*))
       
       inline def setActionsWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "actionsWhitelist", value.asInstanceOf[js.Any])
       
       inline def setActionsWhitelistUndefined: Self = StObject.set(x, "actionsWhitelist", js.undefined)
       
-      inline def setActionsWhitelistVarargs(value: String*): Self = StObject.set(x, "actionsWhitelist", js.Array(value :_*))
+      inline def setActionsWhitelistVarargs(value: String*): Self = StObject.set(x, "actionsWhitelist", js.Array(value*))
       
       inline def setAutoPause(value: Boolean): Self = StObject.set(x, "autoPause", value.asInstanceOf[js.Any])
       
@@ -210,7 +210,7 @@ object mod {
       
       inline def setPauseActionTypeUndefined: Self = StObject.set(x, "pauseActionType", js.undefined)
       
-      inline def setPredicate(value: (/* state */ js.Any, /* action */ Action[js.Any]) => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction2(value))
+      inline def setPredicate(value: (/* state */ Any, /* action */ Action[Any]) => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction2(value))
       
       inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
@@ -234,13 +234,13 @@ object mod {
       
       inline def setShouldStartLockedUndefined: Self = StObject.set(x, "shouldStartLocked", js.undefined)
       
-      inline def setStateSanitizer(value: (/* state */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction2(value))
+      inline def setStateSanitizer(value: (/* state */ Any, /* index */ Double) => Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction2(value))
       
       inline def setStateSanitizerUndefined: Self = StObject.set(x, "stateSanitizer", js.undefined)
       
-      inline def setTrace(value: Boolean | (js.Function1[/* action */ Action[js.Any], String])): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: Boolean | (js.Function1[/* action */ Action[Any], String])): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      inline def setTraceFunction1(value: /* action */ Action[js.Any] => String): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTraceFunction1(value: /* action */ Action[Any] => String): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
       inline def setTraceLimit(value: Double): Self = StObject.set(x, "traceLimit", value.asInstanceOf[js.Any])
       

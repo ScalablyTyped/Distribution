@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayBufferMod {
   
-  @JSImport("ow/dist/source/predicates/array-buffer", "ArrayBufferPredicate")
+  @JSImport("ow/dist/predicates/array-buffer", "ArrayBufferPredicate")
   @js.native
-  class ArrayBufferPredicate[T /* <: ArrayBufferLike */] protected () extends Predicate[T] {
+  open class ArrayBufferPredicate[T /* <: ArrayBufferLike */] protected () extends Predicate[T] {
     def this(`type`: String) = this()
     def this(`type`: String, options: PredicateOptions) = this()
     

@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.keyfilteroptionsMod.KeyFilterType
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -374,6 +375,8 @@ object passwordMod {
     var itemType: js.UndefOr[String] = js.undefined
     
     var key: js.UndefOr[Key | Null] = js.undefined
+    
+    var keyfilter: js.UndefOr[KeyFilterType] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
@@ -1069,6 +1072,10 @@ object passwordMod {
       inline def setKeyNull: Self = StObject.set(x, "key", null)
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setKeyfilter(value: KeyFilterType): Self = StObject.set(x, "keyfilter", value.asInstanceOf[js.Any])
+      
+      inline def setKeyfilterUndefined: Self = StObject.set(x, "keyfilter", js.undefined)
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       

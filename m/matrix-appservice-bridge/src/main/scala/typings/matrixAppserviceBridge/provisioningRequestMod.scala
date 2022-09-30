@@ -1,7 +1,6 @@
 package typings.matrixAppserviceBridge
 
 import typings.express.mod.Request_
-import typings.matrixAppserviceBridge.loggingMod.LogWrapper
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.delete_
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.get_
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.post_
@@ -9,6 +8,7 @@ import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.provisioner
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.put_
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.widget
 import typings.matrixAppserviceBridge.membershipQueueMod.ThinRequest
+import typings.matrixAppserviceBridge.mod.Logger
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -83,7 +83,7 @@ object provisioningRequestMod {
     
     val id: String = js.native
     
-    val log: LogWrapper = js.native
+    val log: Logger = js.native
     
     def params: Params = js.native
     

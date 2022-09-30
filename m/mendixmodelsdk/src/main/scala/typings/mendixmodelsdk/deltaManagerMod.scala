@@ -5,56 +5,55 @@ import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
 import typings.mendixmodelsdk.deltasDeltasMod.Delta
 import typings.mendixmodelsdk.transactionManagerMod.Transaction
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deltaManagerMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaManager", "DeltaManager")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/DeltaManager", "DeltaManager")
   @js.native
-  class DeltaManager protected ()
+  open class DeltaManager protected ()
     extends StObject
        with IDeltaManager {
     def this(model: AbstractModel) = this()
     
-    /* private */ var callErrorCallbacks: js.Any = js.native
+    /* private */ var callErrorCallbacks: Any = js.native
     
-    /* private */ var callFlushCallbacks: js.Any = js.native
+    /* private */ var callFlushCallbacks: Any = js.native
     
-    /* private */ var deltaProcessor: js.Any = js.native
+    /* private */ var deltaProcessor: Any = js.native
     
-    /* private */ var deltaReverser: js.Any = js.native
+    /* private */ var deltaReverser: Any = js.native
     
-    /* private */ var deltaSender: js.Any = js.native
+    /* private */ var deltaSender: Any = js.native
     
-    /* private */ var errorCallbacks: js.Any = js.native
+    /* private */ var errorCallbacks: Any = js.native
     
-    /* private */ var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: Any = js.native
     
-    /* private */ var flushCallbacks: js.Any = js.native
+    /* private */ var flushCallbacks: Any = js.native
     
-    /* private */ var getReverseDelta: js.Any = js.native
+    /* private */ var getReverseDelta: Any = js.native
     
-    /* private */ var handleTransactionCommited: js.Any = js.native
+    /* private */ var handleTransactionCommited: Any = js.native
     
-    /* private */ var handleTransactionRollback: js.Any = js.native
+    /* private */ var handleTransactionRollback: Any = js.native
     
-    /* private */ var model: js.Any = js.native
+    /* private */ var model: Any = js.native
     
-    /* private */ var transactionManager: js.Any = js.native
+    /* private */ var transactionManager: Any = js.native
   }
   
   trait IDeltaChange extends StObject {
     
     var delta: Delta
     
-    var reverseDelta: Delta | Error
+    var reverseDelta: Delta | js.Error
   }
   object IDeltaChange {
     
-    inline def apply(delta: Delta, reverseDelta: Delta | Error): IDeltaChange = {
+    inline def apply(delta: Delta, reverseDelta: Delta | js.Error): IDeltaChange = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], reverseDelta = reverseDelta.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDeltaChange]
     }
@@ -63,7 +62,7 @@ object deltaManagerMod {
       
       inline def setDelta(value: Delta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      inline def setReverseDelta(value: Delta | Error): Self = StObject.set(x, "reverseDelta", value.asInstanceOf[js.Any])
+      inline def setReverseDelta(value: Delta | js.Error): Self = StObject.set(x, "reverseDelta", value.asInstanceOf[js.Any])
     }
   }
   

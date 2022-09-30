@@ -1,7 +1,7 @@
 package typings.nivoBar.typesMod
 
 import typings.nivoBar.nivoBarBooleans.`false`
-import typings.nivoBar.nivoBarNumbers.`0`
+import typings.nivoBar.nivoBarInts.`0`
 import typings.nivoBar.nivoBarStrings._empty
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject

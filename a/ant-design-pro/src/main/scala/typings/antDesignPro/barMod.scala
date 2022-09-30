@@ -12,10 +12,9 @@ object barMod {
   
   @JSImport("ant-design-pro/lib/Charts/Bar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IBarProps, js.Any, js.Any]
+  open class default () extends Component[IBarProps, Any, Any]
   
-  type Bar = Component[IBarProps, js.Any, js.Any]
+  type Bar = Component[IBarProps, Any, Any]
   
   trait IBarProps extends StObject {
     
@@ -52,7 +51,7 @@ object barMod {
       
       inline def setData(value: js.Array[X]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: X*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: X*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -1,11 +1,11 @@
 package typings.testingLibraryUserEvent
 
 import typings.testingLibraryUserEvent.sharedMod.pointerKey
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`0`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`1`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`2`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`3`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`4`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`2`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`3`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,11 +75,11 @@ object buttonsMod {
     
     @JSImport("@testing-library/user-event/dist/types/system/pointer/buttons", "MouseButtonFlip.1")
     @js.native
-    val `1`: typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`2` = js.native
+    val `1`: typings.testingLibraryUserEvent.testingLibraryUserEventInts.`2` = js.native
     
     @JSImport("@testing-library/user-event/dist/types/system/pointer/buttons", "MouseButtonFlip.2")
     @js.native
-    val `2`: typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`1` = js.native
+    val `2`: typings.testingLibraryUserEvent.testingLibraryUserEventInts.`1` = js.native
   }
   
   inline def getMouseButtonId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMouseButtonId")().asInstanceOf[Double]

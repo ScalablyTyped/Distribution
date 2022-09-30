@@ -65,7 +65,7 @@ trait PickTouchableWithoutFeedbAccessibilityLabel extends StObject {
   
   var delayPressOut: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | Null] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
@@ -103,7 +103,7 @@ trait PickTouchableWithoutFeedbAccessibilityLabel extends StObject {
   
   var theme: js.UndefOr[DeepPartialTheme] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var underlayColor: js.UndefOr[String] = js.undefined
 }
@@ -198,8 +198,6 @@ object PickTouchableWithoutFeedbAccessibilityLabel {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
-    
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
@@ -277,8 +275,6 @@ object PickTouchableWithoutFeedbAccessibilityLabel {
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

@@ -119,9 +119,11 @@ object mod {
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgsType<Required<BeanstalkdClient>[K]> is not an array type */ args: ArgsType[
           /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
         ]
-    ): (MergePromise[
-        ReturnType[
-          /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
+    ): (js.Promise[
+        UnPromise[
+          ReturnType[
+            /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
+          ]
         ]
       ]) & BeanstalkdCaller
   }
@@ -130,9 +132,11 @@ object mod {
     inline def apply(
       call: (Any, ArgsType[
           /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
-        ]) => (MergePromise[
-          ReturnType[
-            /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
+        ]) => (js.Promise[
+          UnPromise[
+            ReturnType[
+              /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
+            ]
           ]
         ]) & BeanstalkdCaller
     ): BeanstalkdCaller = {
@@ -145,9 +149,11 @@ object mod {
       inline def setCall(
         value: (Any, ArgsType[
               /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
-            ]) => (MergePromise[
-              ReturnType[
-                /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
+            ]) => (js.Promise[
+              UnPromise[
+                ReturnType[
+                  /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
+                ]
               ]
             ]) & BeanstalkdCaller
       ): Self = StObject.set(x, "call", js.Any.fromFunction2(value))

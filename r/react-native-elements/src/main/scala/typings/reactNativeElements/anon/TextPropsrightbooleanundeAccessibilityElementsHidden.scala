@@ -144,6 +144,11 @@ trait TextPropsrightbooleanundeAccessibilityElementsHidden extends StObject {
   var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
   
   /**
+    * Specifies the disabled state of the text view for testing purposes.
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * This can be one of the following values:
     *
     * - `head` - The line is displayed so that the end fits in the container and the missing text
@@ -385,6 +390,10 @@ object TextPropsrightbooleanundeAccessibilityElementsHidden {
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
     inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     

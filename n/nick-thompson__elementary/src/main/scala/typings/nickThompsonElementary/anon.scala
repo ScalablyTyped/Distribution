@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nickThompsonElementary.childrenMod.Child
 import typings.nickThompsonElementary.childrenMod.ChildrenArray
 import typings.nickThompsonElementary.childrenMod.SizedChildrenArray
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`0`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`1`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`2`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`3`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`6`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`0`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`1`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`2`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`3`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`6`
 import typings.nickThompsonElementary.propsMod.ConstProps
 import typings.nickThompsonElementary.propsMod.ConvolveProps
 import typings.nickThompsonElementary.propsMod.DelayProps

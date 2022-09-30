@@ -1,41 +1,85 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.cardActionsMod.CardActionsProps
 import typings.reactToolbox.cardCardMod.CardProps
 import typings.reactToolbox.cardMediaMod.CardMediaProps
 import typings.reactToolbox.cardTextMod.CardTextProps
 import typings.reactToolbox.cardTitleMod.CardTitleProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/card", JSImport.Namespace)
-@js.native
-object cardMod extends js.Object {
-  @js.native
-  class Card ()
-    extends Component[CardProps, js.Object, js.Any]
+object cardMod {
   
+  @JSImport("react-toolbox/components/card", JSImport.Default)
   @js.native
-  class CardActions ()
-    extends Component[CardActionsProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.cardCardMod.Card {
+    def this(props: CardProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CardProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/card", "Card")
   @js.native
-  class CardMedia ()
-    extends Component[CardMediaProps, js.Object, js.Any]
+  open class Card protected ()
+    extends typings.reactToolbox.cardCardMod.Card {
+    def this(props: CardProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CardProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/card", "CardActions")
   @js.native
-  class CardText ()
-    extends Component[CardTextProps, js.Object, js.Any]
+  open class CardActions protected ()
+    extends typings.reactToolbox.cardActionsMod.CardActions {
+    def this(props: CardActionsProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CardActionsProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/card", "CardMedia")
   @js.native
-  class CardTitle ()
-    extends Component[CardTitleProps, js.Object, js.Any]
+  open class CardMedia protected ()
+    extends typings.reactToolbox.cardMediaMod.CardMedia {
+    def this(props: CardMediaProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CardMediaProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/card", "CardText")
   @js.native
-  class default ()
-    extends Component[CardProps, js.Object, js.Any]
+  open class CardText protected ()
+    extends typings.reactToolbox.cardTextMod.CardText {
+    def this(props: CardTextProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CardTextProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/card", "CardTitle")
+  @js.native
+  open class CardTitle protected ()
+    extends typings.reactToolbox.cardTitleMod.CardTitle {
+    def this(props: CardTitleProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CardTitleProps, context: Any) = this()
+  }
 }
-

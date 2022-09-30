@@ -3,7 +3,6 @@ package typings.sparkpost.anon
 import typings.sparkpost.mod.Callback
 import typings.sparkpost.mod.CreateSendingDomain
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.SendingDomain
 import typings.sparkpost.mod.UpdateSendingDomain
 import typings.sparkpost.mod.VerifyOptions
@@ -21,7 +20,7 @@ trait List extends StObject {
     * @param options The create options
     * @returns Promise The basic info results
     */
-  def create(options: CreateSendingDomain): ResultsPromise[Domain] = js.native
+  def create(options: CreateSendingDomain): js.Promise[Results[Domain]] = js.native
   /**
     * Create a sending domain by providing a sending domain object as the POST request body.
     * @param options The create options
@@ -49,7 +48,7 @@ trait List extends StObject {
     * @param domain The domain
     * @returns Promise The SendingDomain results
     */
-  def get(domain: String): ResultsPromise[SendingDomain] = js.native
+  def get(domain: String): js.Promise[Results[SendingDomain]] = js.native
   /**
     * Retrieve a sending domain by specifying its domain name in the URI path. The response includes details about its DKIM key configuration.
     * @param domain The domain
@@ -62,7 +61,7 @@ trait List extends StObject {
     *
     * @returns The SendingDomain results array
     */
-  def list(): ResultsPromise[js.Array[SendingDomain]] = js.native
+  def list(): js.Promise[Results[js.Array[SendingDomain]]] = js.native
   /**
     * List an overview of all sending domains in the system.
     * @param callback The request callback with SendingDomain results array
@@ -76,7 +75,7 @@ trait List extends StObject {
     * @param updateOpts The update options
     * @returns Promise The basic info results
     */
-  def update(domain: String, updateOpts: UpdateSendingDomain): ResultsPromise[Domain] = js.native
+  def update(domain: String, updateOpts: UpdateSendingDomain): js.Promise[Results[Domain]] = js.native
   /**
     * Update the attributes of an existing sending domain by specifying its domain name in the URI path and use a sending domain object as the PUT request body.
     * @param domain The domain
@@ -92,7 +91,7 @@ trait List extends StObject {
     * @param options a hash of [verify attributes]{@link https://developers.sparkpost.com/api/sending-domains#header-verify-attributes}
     * @returns Promise The verify results
     */
-  def verify(domain: String, options: VerifyOptions): ResultsPromise[VerifyResults] = js.native
+  def verify(domain: String, options: VerifyOptions): js.Promise[Results[VerifyResults]] = js.native
   /**
     * Verify a Sending Domain
     * @param domain The domain

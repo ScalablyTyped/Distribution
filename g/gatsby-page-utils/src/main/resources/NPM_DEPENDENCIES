@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gatsby-page-utils" : "2.24.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gatsby-page-utils" : "2.24.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

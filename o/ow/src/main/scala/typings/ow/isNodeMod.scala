@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isNodeMod extends Shortcut {
   
-  @JSImport("ow/dist/source/utils/node/is-node", JSImport.Default)
+  @JSImport("ow/dist/utils/node/is-node", JSImport.Default)
   @js.native
   val default: Boolean = js.native
   

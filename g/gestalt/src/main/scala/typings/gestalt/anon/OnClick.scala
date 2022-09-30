@@ -6,24 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnClick extends StObject {
   
+  var accessibilityLabel: String
+  
   var href: String
   
-  def onClick(args: `1`): Unit
+  var onClick: js.UndefOr[js.Function1[/* args */ `1`, js.UndefOr[Unit]]] = js.undefined
   
   var text: String
 }
 object OnClick {
   
-  inline def apply(href: String, onClick: `1` => Unit, text: String): OnClick = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), text = text.asInstanceOf[js.Any])
+  inline def apply(accessibilityLabel: String, href: String, text: String): OnClick = {
+    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnClick]
   }
   
   extension [Self <: OnClick](x: Self) {
     
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    inline def setOnClick(value: `1` => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* args */ `1` => js.UndefOr[Unit]): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

@@ -21,9 +21,9 @@ trait CreateDataRepositoryAssociationRequest extends StObject {
   var FileSystemId: typings.awsSdk.fsxMod.FileSystemId
   
   /**
-    * A path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with DataRepositoryPath. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.  If you specify only a forward slash (/) as the file system path, you can link only 1 data repository to the file system. You can only specify "/" as the file system path for the first data repository associated with a file system. 
+    * A path on the file system that points to a high-level directory (such as /ns1/) or subdirectory (such as /ns1/subdir/) that will be mapped 1-1 with DataRepositoryPath. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path /ns1/, then you cannot link another data repository with file system path /ns1/ns2. This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.  If you specify only a forward slash (/) as the file system path, you can link only one data repository to the file system. You can only specify "/" as the file system path for the first data repository associated with a file system. 
     */
-  var FileSystemPath: Namespace
+  var FileSystemPath: js.UndefOr[Namespace] = js.undefined
   
   /**
     * For files imported from a data repository, this value determines the stripe count and maximum amount of data per file (in MiB) stored on a single physical disk. The maximum number of disks that a single file can be striped across is limited by the total number of disks that make up the file system. The default chunk size is 1,024 MiB (1 GiB) and can go as high as 512,000 MiB (500 GiB). Amazon S3 objects have a maximum size of 5 TB.
@@ -39,8 +39,8 @@ trait CreateDataRepositoryAssociationRequest extends StObject {
 }
 object CreateDataRepositoryAssociationRequest {
   
-  inline def apply(DataRepositoryPath: ArchivePath, FileSystemId: FileSystemId, FileSystemPath: Namespace): CreateDataRepositoryAssociationRequest = {
-    val __obj = js.Dynamic.literal(DataRepositoryPath = DataRepositoryPath.asInstanceOf[js.Any], FileSystemId = FileSystemId.asInstanceOf[js.Any], FileSystemPath = FileSystemPath.asInstanceOf[js.Any])
+  inline def apply(DataRepositoryPath: ArchivePath, FileSystemId: FileSystemId): CreateDataRepositoryAssociationRequest = {
+    val __obj = js.Dynamic.literal(DataRepositoryPath = DataRepositoryPath.asInstanceOf[js.Any], FileSystemId = FileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDataRepositoryAssociationRequest]
   }
   
@@ -59,6 +59,8 @@ object CreateDataRepositoryAssociationRequest {
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
     inline def setFileSystemPath(value: Namespace): Self = StObject.set(x, "FileSystemPath", value.asInstanceOf[js.Any])
+    
+    inline def setFileSystemPathUndefined: Self = StObject.set(x, "FileSystemPath", js.undefined)
     
     inline def setImportedFileChunkSize(value: Megabytes): Self = StObject.set(x, "ImportedFileChunkSize", value.asInstanceOf[js.Any])
     

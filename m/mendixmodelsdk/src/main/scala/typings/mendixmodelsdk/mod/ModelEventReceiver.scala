@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "ModelEventReceiver")
 @js.native
-class ModelEventReceiver protected ()
+open class ModelEventReceiver protected ()
   extends typings.mendixmodelsdk.internalMod.ModelEventReceiver {
   def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
 }

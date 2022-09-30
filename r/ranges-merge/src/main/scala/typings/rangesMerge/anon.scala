@@ -1,8 +1,8 @@
 package typings.rangesMerge
 
 import typings.rangesMerge.mod.ProgressFn
-import typings.rangesMerge.rangesMergeNumbers.`1`
-import typings.rangesMerge.rangesMergeNumbers.`2`
+import typings.rangesMerge.rangesMergeInts.`1`
+import typings.rangesMerge.rangesMergeInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

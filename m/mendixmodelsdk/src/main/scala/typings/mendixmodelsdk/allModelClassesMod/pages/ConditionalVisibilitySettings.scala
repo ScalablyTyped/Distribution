@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalVisibilitySettings")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalVisibilitySettings")
 @js.native
-class ConditionalVisibilitySettings protected ()
+open class ConditionalVisibilitySettings protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings {
   def this(
     model: AbstractModel,
@@ -27,7 +27,7 @@ class ConditionalVisibilitySettings protected ()
 }
 object ConditionalVisibilitySettings {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalVisibilitySettings")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalVisibilitySettings")
   @js.native
   val ^ : js.Any = js.native
   
@@ -99,13 +99,13 @@ object ConditionalVisibilitySettings {
   inline def createInTableRowUnderConditionalVisibilitySettings(container: typings.mendixmodelsdk.pagesMod.pages.TableRow): typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ConditionalVisibilitySettings]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalVisibilitySettings.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalVisibilitySettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.ConditionalVisibilitySettings.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.ConditionalVisibilitySettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

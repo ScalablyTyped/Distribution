@@ -1,36 +1,36 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`33`
-import typings.activexExcel.activexExcelNumbers.`34`
-import typings.activexExcel.activexExcelNumbers.`35`
-import typings.activexExcel.activexExcelNumbers.`36`
-import typings.activexExcel.activexExcelNumbers.`37`
-import typings.activexExcel.activexExcelNumbers.`38`
-import typings.activexExcel.activexExcelNumbers.`39`
-import typings.activexExcel.activexExcelNumbers.`40`
-import typings.activexExcel.activexExcelNumbers.`41`
-import typings.activexExcel.activexExcelNumbers.`42`
-import typings.activexExcel.activexExcelNumbers.`43`
-import typings.activexExcel.activexExcelNumbers.`44`
-import typings.activexExcel.activexExcelNumbers.`45`
+import typings.activexExcel.activexExcelInts.`33`
+import typings.activexExcel.activexExcelInts.`34`
+import typings.activexExcel.activexExcelInts.`35`
+import typings.activexExcel.activexExcelInts.`36`
+import typings.activexExcel.activexExcelInts.`37`
+import typings.activexExcel.activexExcelInts.`38`
+import typings.activexExcel.activexExcelInts.`39`
+import typings.activexExcel.activexExcelInts.`40`
+import typings.activexExcel.activexExcelInts.`41`
+import typings.activexExcel.activexExcelInts.`42`
+import typings.activexExcel.activexExcelInts.`43`
+import typings.activexExcel.activexExcelInts.`44`
+import typings.activexExcel.activexExcelInts.`45`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`33`
-  - typings.activexExcel.activexExcelNumbers.`43`
-  - typings.activexExcel.activexExcelNumbers.`37`
-  - typings.activexExcel.activexExcelNumbers.`40`
-  - typings.activexExcel.activexExcelNumbers.`38`
-  - typings.activexExcel.activexExcelNumbers.`36`
-  - typings.activexExcel.activexExcelNumbers.`39`
-  - typings.activexExcel.activexExcelNumbers.`42`
-  - typings.activexExcel.activexExcelNumbers.`44`
-  - typings.activexExcel.activexExcelNumbers.`35`
-  - typings.activexExcel.activexExcelNumbers.`41`
-  - typings.activexExcel.activexExcelNumbers.`34`
-  - typings.activexExcel.activexExcelNumbers.`45`
+  - typings.activexExcel.activexExcelInts.`33`
+  - typings.activexExcel.activexExcelInts.`43`
+  - typings.activexExcel.activexExcelInts.`37`
+  - typings.activexExcel.activexExcelInts.`40`
+  - typings.activexExcel.activexExcelInts.`38`
+  - typings.activexExcel.activexExcelInts.`36`
+  - typings.activexExcel.activexExcelInts.`39`
+  - typings.activexExcel.activexExcelInts.`42`
+  - typings.activexExcel.activexExcelInts.`44`
+  - typings.activexExcel.activexExcelInts.`35`
+  - typings.activexExcel.activexExcelInts.`41`
+  - typings.activexExcel.activexExcelInts.`34`
+  - typings.activexExcel.activexExcelInts.`45`
 */
 trait XlApplicationInternationalBooleans
   extends StObject

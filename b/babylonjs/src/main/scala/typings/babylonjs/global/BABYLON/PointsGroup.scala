@@ -13,9 +13,7 @@ open class PointsGroup protected ()
   /**
     * Creates a points group object. This is an internal reference to produce particles for the PCS.
     * PCS internal tool, don't use it manually.
-    * @param id
-    * @param posFunction
-    * @hidden
+    * @internal
     */
   def this(
     id: Double,

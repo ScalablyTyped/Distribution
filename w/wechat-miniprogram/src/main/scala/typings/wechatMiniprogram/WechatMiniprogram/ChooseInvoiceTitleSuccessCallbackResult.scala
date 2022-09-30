@@ -1,7 +1,7 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`0`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`0`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

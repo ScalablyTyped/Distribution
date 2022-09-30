@@ -10,10 +10,10 @@ Make synchronous web requests
 | ------------------ | :-------------: |
 | Full name          | sync-request |
 | Keywords           | request, http, https, cache, browserify, synchronous, sync |
-| # releases         | 2 |
-| # dependents       | 624 |
-| # downloads        | 14698264 |
-| # stars            | 17 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1673573.3333333333 |
+| # stars            | 309.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/sync-request#readme)

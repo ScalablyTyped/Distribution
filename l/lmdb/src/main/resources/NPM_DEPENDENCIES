@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lmdb" : "2.6.0-beta1"
+      "lmdb" : "2.6.4"
     }
   ],
   "test-dependencies" : [
     {
-      "lmdb" : "2.6.0-beta1"
+      "lmdb" : "2.6.4"
     }
   ],
   "compile-devDependencies" : [

@@ -9,7 +9,7 @@ object mod {
   
   object default {
     
-    inline def apply(strings: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].apply(List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def apply(strings: TemplateStringsArray, values: Any*): String = ^.asInstanceOf[js.Dynamic].apply(scala.List(strings.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     @JSImport("endent", JSImport.Default)
     @js.native

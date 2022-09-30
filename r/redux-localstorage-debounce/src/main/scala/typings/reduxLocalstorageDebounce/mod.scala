@@ -12,13 +12,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(wait: Double): js.Function1[/* adapter */ StorageAdapter[js.Any], StorageAdapter[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wait.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* adapter */ StorageAdapter[js.Any], StorageAdapter[js.Any]]]
-  inline def default(wait: Double, options: Double): js.Function1[/* adapter */ StorageAdapter[js.Any], StorageAdapter[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* adapter */ StorageAdapter[js.Any], StorageAdapter[js.Any]]]
-  inline def default(wait: Double, options: DebounceOptions): js.Function1[/* adapter */ StorageAdapter[js.Any], StorageAdapter[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* adapter */ StorageAdapter[js.Any], StorageAdapter[js.Any]]]
+  inline def default(wait: Double): js.Function1[/* adapter */ StorageAdapter[Any], StorageAdapter[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wait.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* adapter */ StorageAdapter[Any], StorageAdapter[Any]]]
+  inline def default(wait: Double, options: Double): js.Function1[/* adapter */ StorageAdapter[Any], StorageAdapter[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* adapter */ StorageAdapter[Any], StorageAdapter[Any]]]
+  inline def default(wait: Double, options: DebounceOptions): js.Function1[/* adapter */ StorageAdapter[Any], StorageAdapter[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* adapter */ StorageAdapter[Any], StorageAdapter[Any]]]
   
   trait DebounceOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var maxWait: js.UndefOr[Double] = js.undefined
   }

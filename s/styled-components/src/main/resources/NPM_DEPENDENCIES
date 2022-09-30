@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "styled-components" : "5.3.5"
+      "styled-components" : "5.3.6"
     }
   ],
   "test-dependencies" : [
     {
-      "styled-components" : "5.3.5"
+      "styled-components" : "5.3.6"
     }
   ],
   "compile-devDependencies" : [

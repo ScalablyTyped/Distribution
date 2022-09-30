@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ButtonStyle")
 @js.native
-class ButtonStyle protected ()
+open class ButtonStyle protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ButtonStyle {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

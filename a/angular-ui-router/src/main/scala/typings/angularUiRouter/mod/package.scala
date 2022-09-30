@@ -34,7 +34,7 @@ inline def default: uiDotrouter = ^.asInstanceOf[js.Dynamic].selectDynamic("defa
 
 inline def NATIVE_INJECTOR_TOKEN: String = ^.asInstanceOf[js.Dynamic].selectDynamic("NATIVE_INJECTOR_TOKEN").asInstanceOf[String]
 
-inline def _extend(toObj: Obj, fromObjs: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_extend")(List(toObj.asInstanceOf[js.Any]).`++`(fromObjs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def _extend(toObj: Obj, fromObjs: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_extend")(scala.List(toObj.asInstanceOf[js.Any]).`++`(fromObjs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def _inArray(array: js.Array[Any]): js.Function1[/* obj */ Any, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("_inArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ Any, Boolean]]
 inline def _inArray(array: js.Array[Any], obj: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_inArray")(array.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -96,7 +96,7 @@ inline def defaultResolvePolicy_=(x: ResolvePolicy): Unit = ^.asInstanceOf[js.Dy
 inline def defaultTransOpts: TransitionOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTransOpts").asInstanceOf[TransitionOptions]
 inline def defaultTransOpts_=(x: TransitionOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTransOpts")(x.asInstanceOf[js.Any])
 
-inline def defaults(opts: Any, defaultsList: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(opts.asInstanceOf[js.Any]).`++`(defaultsList.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def defaults(opts: Any, defaultsList: Obj*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(scala.List(opts.asInstanceOf[js.Any]).`++`(defaultsList.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def deregAll(functions: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregAll")(functions.asInstanceOf[js.Any]).asInstanceOf[Unit]
 

@@ -7,10 +7,10 @@ import typings.reactNative.codegenTypesMod.Int32
 import typings.reactNative.codegenTypesMod.WithDefault
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.ViewProps
-import typings.reactNativeSvg.reactNativeSvgNumbers.`-1`
-import typings.reactNativeSvg.reactNativeSvgNumbers.`0`
-import typings.reactNativeSvg.reactNativeSvgNumbers.`1.0`
-import typings.reactNativeSvg.reactNativeSvgNumbers.`1`
+import typings.reactNativeSvg.reactNativeSvgDoubles.`1.0`
+import typings.reactNativeSvg.reactNativeSvgInts.`-1`
+import typings.reactNativeSvg.reactNativeSvgInts.`0`
+import typings.reactNativeSvg.reactNativeSvgInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

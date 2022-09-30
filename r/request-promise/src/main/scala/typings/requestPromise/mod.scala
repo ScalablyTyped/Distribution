@@ -15,6 +15,7 @@ import typings.request.mod.UriOptions
 import typings.request.mod.UrlOptions
 import typings.requestPromise.anon.FnCall
 import typings.requestPromise.anon.FnCallFilter1Filter2Filter3Filter4Filter5OnReject
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -536,7 +537,7 @@ object mod extends Shortcut {
       onReject: js.Function1[/* error */ Any, Resolvable[U]]
     ): Bluebird[U] = js.native
     def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: FnCall[T] = js.native
     @JSName("then")
@@ -551,18 +552,18 @@ object mod extends Shortcut {
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_Bluebird[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_PromiseLike[TResult1, TResult2](): PromiseLike[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_PromiseLike[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]]): PromiseLike[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_PromiseLike[TResult1, TResult2](
+      onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
+    ): PromiseLike[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2_PromiseLike[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
   }
   
   type RequestPromiseAPI[T] = RequestAPI[RequestPromise[T], RequestPromiseOptions, RequiredUriUrl]

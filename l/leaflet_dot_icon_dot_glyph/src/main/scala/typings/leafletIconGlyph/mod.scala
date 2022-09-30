@@ -17,7 +17,7 @@ object mod {
     
     @JSImport("leaflet", "Icon.Glyph")
     @js.native
-    class Glyph ()
+    open class Glyph ()
       extends typings.leaflet.mod.Icon_[IconOptions] {
       def this(options: GlyphIconOptions) = this()
       def this(options: GlyphOptions) = this()

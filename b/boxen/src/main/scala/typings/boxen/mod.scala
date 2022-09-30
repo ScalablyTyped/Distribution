@@ -1,5 +1,6 @@
 package typings.boxen
 
+import typings.boxen.boxenStrings.arrow
 import typings.boxen.boxenStrings.black
 import typings.boxen.boxenStrings.blackBright
 import typings.boxen.boxenStrings.blue
@@ -36,100 +37,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Creates a box in the terminal.
-  	@param text - The text inside the box.
-  	@returns The box.
-  	@example
-  	```
-  	import boxen = require('boxen');
-  	console.log(boxen('unicorn', {padding: 1}));
-  	// ┌─────────────┐
-  	// │             │
-  	// │   unicorn   │
-  	// │             │
-  	// └─────────────┘
-  	console.log(boxen('unicorn', {padding: 1, margin: 1, borderStyle: 'double'}));
-  	//
-  	// ╔═════════════╗
-  	// ║             ║
-  	// ║   unicorn   ║
-  	// ║             ║
-  	// ╚═════════════╝
-  	//
-  	```
-  	*/
-  inline def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("boxen", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.boxen.boxenStrings.single
-    - typings.boxen.boxenStrings.double
-    - typings.boxen.boxenStrings.round
-    - typings.boxen.boxenStrings.bold
-    - typings.boxen.boxenStrings.singleDouble
-    - typings.boxen.boxenStrings.doubleSingle
-    - typings.boxen.boxenStrings.classic
-  */
-  trait BorderStyle extends StObject
-  object BorderStyle {
+  inline def default(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  trait CustomBorderStyle
+    extends StObject
+       with BoxStyle {
     
     /**
-    	Border styles from [`cli-boxes`](https://github.com/sindresorhus/cli-boxes).
+    	@deprecated Use `top` and `bottom` instead.
     	*/
-    @JSImport("boxen", "BorderStyle")
-    @js.native
-    val ^ : /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderStyle */ js.Any = js.native
+    var horizontal: js.UndefOr[String] = js.undefined
     
-    inline def Bold: bold = "bold".asInstanceOf[bold]
-    
-    inline def Classic: classic = "classic".asInstanceOf[classic]
-    
-    inline def Double: double = "double".asInstanceOf[double]
-    
-    inline def DoubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
-    
-    inline def Round: round = "round".asInstanceOf[round]
-    
-    inline def Single: single = "single".asInstanceOf[single]
-    
-    inline def SingleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
+    /**
+    	@deprecated Use `left` and `right` instead.
+    	*/
+    var vertical: js.UndefOr[String] = js.undefined
   }
-  
-  /**
-  	Characters used for custom border.
-  	@example
-  	```
-  	// affffb
-  	// e    e
-  	// dffffc
-  	const border: CustomBorderStyle = {
-  		topLeft: 'a',
-  		topRight: 'b',
-  		bottomRight: 'c',
-  		bottomLeft: 'd',
-  		vertical: 'e',
-  		horizontal: 'f'
-  	};
-  	```
-  	*/
-  type CustomBorderStyle = BoxStyle
+  object CustomBorderStyle {
+    
+    inline def apply(
+      bottom: String,
+      bottomLeft: String,
+      bottomRight: String,
+      left: String,
+      right: String,
+      top: String,
+      topLeft: String,
+      topRight: String
+    ): CustomBorderStyle = {
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomBorderStyle]
+    }
+    
+    extension [Self <: CustomBorderStyle](x: Self) {
+      
+      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      
+      inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    }
+  }
   
   trait Options extends StObject {
     
     /**
-    		Align the text in the box based on the widest line.
-    		@default 'left'
-    		*/
+    	Align the text in the box based on the widest line.
+    	@default 'left'
+    	@deprecated Use `textAlignment` instead.
+    	*/
     val align: js.UndefOr[left | right | center] = js.undefined
     
     /**
-    		Color of the background.
-    		*/
+    	Color of the background.
+    	*/
     val backgroundColor: js.UndefOr[
         LiteralUnion[
           black | red | green | yellow | blue | magenta | cyan | white | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
@@ -138,8 +106,8 @@ object mod {
       ] = js.undefined
     
     /**
-    		Color of the box border.
-    		*/
+    	Color of the box border.
+    	*/
     val borderColor: js.UndefOr[
         LiteralUnion[
           black | red | green | yellow | blue | magenta | cyan | white | gray | grey | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
@@ -148,34 +116,121 @@ object mod {
       ] = js.undefined
     
     /**
-    		Style of the box border.
-    		@default BorderStyle.Single
-    		*/
-    val borderStyle: js.UndefOr[BorderStyle | CustomBorderStyle] = js.undefined
+    	Style of the box border.
+    	@default 'single'
+    	*/
+    val borderStyle: js.UndefOr[
+        single | double | round | bold | singleDouble | doubleSingle | classic | arrow | CustomBorderStyle
+      ] = js.undefined
     
     /**
-    		Reduce opacity of the border.
-    		@default false
-    		*/
+    	Reduce opacity of the border.
+    	@default false
+    	*/
     val dimBorder: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Float the box on the available terminal screen space.
-    		@default 'left'
-    		*/
+    	Float the box on the available terminal screen space.
+    	@default 'left'
+    	*/
     val float: js.UndefOr[left | right | center] = js.undefined
     
     /**
-    		Space around the box.
-    		@default 0
-    		*/
+    	__boolean__: Wether or not to fit all available space within the terminal.
+    	__function__: Pass a callback function to control box dimensions.
+    	@example
+    	```
+    	import boxen from 'boxen';
+    	console.log(boxen('foo bar', {
+    		fullscreen: (width, height) => [width, height - 1];
+    	}));
+    	```
+    	*/
+    val fullscreen: js.UndefOr[
+        Boolean | (js.Function2[
+          /* width */ Double, 
+          /* height */ Double, 
+          js.Tuple2[/* width */ Double, /* height */ Double]
+        ])
+      ] = js.undefined
+    
+    /**
+    	Set a fixed height for the box.
+    	__Note__: This option will crop overflowing content.
+    	@example
+    	```
+    	import boxen from 'boxen';
+    	console.log(boxen('foo bar', {height: 5}));
+    	// ┌───────┐
+    	// │foo bar│
+    	// │       │
+    	// │       │
+    	// └───────┘
+    	```
+    	*/
+    val height: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	Space around the box.
+    	@default 0
+    	*/
     val margin: js.UndefOr[Double | Spacing] = js.undefined
     
     /**
-    		Space between the text and box border.
-    		@default 0
-    		*/
+    	Space between the text and box border.
+    	@default 0
+    	*/
     val padding: js.UndefOr[Double | Spacing] = js.undefined
+    
+    /**
+    	Align the text in the box based on the widest line.
+    	@default 'left'
+    	*/
+    val textAlignment: js.UndefOr[left | right | center] = js.undefined
+    
+    /**
+    	Display a title at the top of the box.
+    	If needed, the box will horizontally expand to fit the title.
+    	@example
+    	```
+    	console.log(boxen('foo bar', {title: 'example'}));
+    	// ┌ example ┐
+    	// │foo bar  │
+    	// └─────────┘
+    	```
+    	*/
+    val title: js.UndefOr[String] = js.undefined
+    
+    /**
+    	Align the title in the top bar.
+    	@default 'left'
+    	@example
+    	```
+    	console.log(boxen('foo bar foo bar', {title: 'example', titleAlignment: 'center'}));
+    	// ┌─── example ───┐
+    	// │foo bar foo bar│
+    	// └───────────────┘
+    	console.log(boxen('foo bar foo bar', {title: 'example', titleAlignment: 'right'}));
+    	// ┌────── example ┐
+    	// │foo bar foo bar│
+    	// └───────────────┘
+    	```
+    	*/
+    val titleAlignment: js.UndefOr[left | right | center] = js.undefined
+    
+    /**
+    	Set a fixed width for the box.
+    	__Note__: This disables terminal overflow handling and may cause the box to look broken if the user's terminal is not wide enough.
+    	@example
+    	```
+    	import boxen from 'boxen';
+    	console.log(boxen('foo bar', {width: 15}));
+    	// ┌─────────────┐
+    	// │foo bar      │
+    	// └─────────────┘
+    	```
+    	*/
+    val width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -208,7 +263,9 @@ object mod {
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setBorderStyle(value: BorderStyle | CustomBorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(
+        value: single | double | round | bold | singleDouble | doubleSingle | classic | arrow | CustomBorderStyle
+      ): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
@@ -220,6 +277,24 @@ object mod {
       
       inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
+      inline def setFullscreen(
+        value: Boolean | (js.Function2[
+              /* width */ Double, 
+              /* height */ Double, 
+              js.Tuple2[/* width */ Double, /* height */ Double]
+            ])
+      ): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      
+      inline def setFullscreenFunction2(
+        value: (/* width */ Double, /* height */ Double) => js.Tuple2[/* width */ Double, /* height */ Double]
+      ): Self = StObject.set(x, "fullscreen", js.Any.fromFunction2(value))
+      
+      inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
       inline def setMargin(value: Double | Spacing): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
@@ -227,12 +302,25 @@ object mod {
       inline def setPadding(value: Double | Spacing): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
+      inline def setTextAlignment(value: left | right | center): Self = StObject.set(x, "textAlignment", value.asInstanceOf[js.Any])
+      
+      inline def setTextAlignmentUndefined: Self = StObject.set(x, "textAlignment", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleAlignment(value: left | right | center): Self = StObject.set(x, "titleAlignment", value.asInstanceOf[js.Any])
+      
+      inline def setTitleAlignmentUndefined: Self = StObject.set(x, "titleAlignment", js.undefined)
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
-  /**
-  	Spacing used for `padding` and `margin`.
-  	*/
   trait Spacing extends StObject {
     
     val bottom: Double

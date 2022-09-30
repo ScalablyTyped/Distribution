@@ -3,13 +3,13 @@ package typings.xadesjs
 import typings.std.Algorithm
 import typings.std.AlgorithmIdentifier
 import typings.std.CryptoKey
-import typings.std.Date
 import typings.std.Document
 import typings.std.Element
-import typings.xadesjs.objectIdentifierMod.IdentifierQualifier
-import typings.xadesjs.xmlMod.QualifyingProperties
+import typings.xadesjs.typesXmlMod.QualifyingProperties
+import typings.xadesjs.xmlObjectIdentifierMod.IdentifierQualifier
 import typings.xmldsigjs.mod.Signature
 import typings.xmldsigjs.mod.X509Certificate
+import typings.xmldsigjs.signedXmlMod.DigestReferenceSource
 import typings.xmldsigjs.signedXmlMod.OptionsSign
 import typings.xmldsigjs.signedXmlMod.OptionsSignTransform
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object signedXmlMod {
   
   @JSImport("xadesjs/build/types/signed_xml", "SignedXml")
   @js.native
-  class SignedXml ()
+  open class SignedXml ()
     extends typings.xmldsigjs.mod.SignedXml {
     def this(node: Document) = this()
     def this(node: Element) = this()
@@ -38,10 +38,12 @@ object signedXmlMod {
     /* protected */ def ApplySignerRoles(options: OptionsSignerRole): Unit = js.native
     
     /* protected */ def ApplySigningCertificate(): js.Promise[Unit] = js.native
-    /* protected */ def ApplySigningCertificate(base64string: String): js.Promise[Unit] = js.native
+    /* protected */ def ApplySigningCertificate(value: String): js.Promise[Unit] = js.native
+    /* protected */ def ApplySigningCertificate(value: OptionsSigningCertificate): js.Promise[Unit] = js.native
     
     /* protected */ def ApplySigningCertificateV2(): js.Promise[Unit] = js.native
-    /* protected */ def ApplySigningCertificateV2(base64string: String): js.Promise[Unit] = js.native
+    /* protected */ def ApplySigningCertificateV2(value: String): js.Promise[Unit] = js.native
+    /* protected */ def ApplySigningCertificateV2(value: OptionsSigningCertificateV2): js.Promise[Unit] = js.native
     
     /* protected */ def CreateQualifyingProperties(): Unit = js.native
     
@@ -51,10 +53,11 @@ object signedXmlMod {
     def Properties: QualifyingProperties | Null = js.native
     
     def Sign(algorithm: Algorithm, key: CryptoKey, data: Document, options: OptionsXAdES): js.Promise[Signature] = js.native
+    def Sign(algorithm: Algorithm, key: CryptoKey, data: DigestReferenceSource, options: OptionsXAdES): js.Promise[Signature] = js.native
     
-    def SignedProperties: typings.xadesjs.xmlMod.SignedProperties = js.native
+    def SignedProperties: typings.xadesjs.typesXmlMod.SignedProperties = js.native
     
-    def UnsignedProperties: typings.xadesjs.xmlMod.UnsignedProperties = js.native
+    def UnsignedProperties: typings.xadesjs.typesXmlMod.UnsignedProperties = js.native
     
     /* protected */ def VerifySigningCertificate(): js.Promise[X509Certificate | Null] = js.native
     
@@ -78,7 +81,7 @@ object signedXmlMod {
       
       inline def setNoticeNumbers(value: js.Array[Double]): Self = StObject.set(x, "noticeNumbers", value.asInstanceOf[js.Any])
       
-      inline def setNoticeNumbersVarargs(value: Double*): Self = StObject.set(x, "noticeNumbers", js.Array(value :_*))
+      inline def setNoticeNumbersVarargs(value: Double*): Self = StObject.set(x, "noticeNumbers", js.Array(value*))
       
       inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     }
@@ -117,13 +120,13 @@ object signedXmlMod {
       
       inline def setQualifiersUndefined: Self = StObject.set(x, "qualifiers", js.undefined)
       
-      inline def setQualifiersVarargs(value: (OptionsPolicyUserNotice | String)*): Self = StObject.set(x, "qualifiers", js.Array(value :_*))
+      inline def setQualifiersVarargs(value: (OptionsPolicyUserNotice | String)*): Self = StObject.set(x, "qualifiers", js.Array(value*))
       
       inline def setTransforms(value: js.Array[OptionsSignTransform]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
       inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
       
-      inline def setTransformsVarargs(value: OptionsSignTransform*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+      inline def setTransformsVarargs(value: OptionsSignTransform*): Self = StObject.set(x, "transforms", js.Array(value*))
     }
   }
   
@@ -158,7 +161,7 @@ object signedXmlMod {
       
       inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value*))
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -245,13 +248,59 @@ object signedXmlMod {
       
       inline def setCertifiedUndefined: Self = StObject.set(x, "certified", js.undefined)
       
-      inline def setCertifiedVarargs(value: String*): Self = StObject.set(x, "certified", js.Array(value :_*))
+      inline def setCertifiedVarargs(value: String*): Self = StObject.set(x, "certified", js.Array(value*))
       
       inline def setClaimed(value: js.Array[String]): Self = StObject.set(x, "claimed", value.asInstanceOf[js.Any])
       
       inline def setClaimedUndefined: Self = StObject.set(x, "claimed", js.undefined)
       
-      inline def setClaimedVarargs(value: String*): Self = StObject.set(x, "claimed", js.Array(value :_*))
+      inline def setClaimedVarargs(value: String*): Self = StObject.set(x, "claimed", js.Array(value*))
+    }
+  }
+  
+  trait OptionsSigningCertificate extends StObject {
+    
+    var certificate: String
+    
+    var digestAlgorithm: js.UndefOr[AlgorithmIdentifier] = js.undefined
+  }
+  object OptionsSigningCertificate {
+    
+    inline def apply(certificate: String): OptionsSigningCertificate = {
+      val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsSigningCertificate]
+    }
+    
+    extension [Self <: OptionsSigningCertificate](x: Self) {
+      
+      inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      
+      inline def setDigestAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+      
+      inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+    }
+  }
+  
+  trait OptionsSigningCertificateV2 extends StObject {
+    
+    var certificate: String
+    
+    var digestAlgorithm: js.UndefOr[AlgorithmIdentifier] = js.undefined
+  }
+  object OptionsSigningCertificateV2 {
+    
+    inline def apply(certificate: String): OptionsSigningCertificateV2 = {
+      val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsSigningCertificateV2]
+    }
+    
+    extension [Self <: OptionsSigningCertificateV2](x: Self) {
+      
+      inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      
+      inline def setDigestAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+      
+      inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
     }
   }
   
@@ -265,7 +314,7 @@ object signedXmlMod {
     /**
       * Signing time value. Default value if now
       */
-    var value: js.UndefOr[Date] = js.undefined
+    var value: js.UndefOr[js.Date] = js.undefined
   }
   object OptionsSigningTime {
     
@@ -280,7 +329,7 @@ object signedXmlMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -298,19 +347,13 @@ object signedXmlMod {
     
     /**
       * Sets a certificate of signer for signature. Optional
-      *
-      * @type {string} base64 string of X509 certificate
-      * @memberOf OptionsXAdES
       */
-    var signingCertificate: js.UndefOr[String] = js.undefined
+    var signingCertificate: js.UndefOr[String | OptionsSigningCertificate] = js.undefined
     
     /**
       * Sets a certificate of signer for signature. Optional
-      *
-      * @type {string} base64 string of X509 certificate
-      * @memberOf OptionsXAdES
       */
-    var signingCertificateV2: js.UndefOr[String] = js.undefined
+    var signingCertificateV2: js.UndefOr[String | OptionsSigningCertificateV2] = js.undefined
     
     /**
       * Sets signing time options
@@ -338,11 +381,11 @@ object signedXmlMod {
       
       inline def setSignerRoleUndefined: Self = StObject.set(x, "signerRole", js.undefined)
       
-      inline def setSigningCertificate(value: String): Self = StObject.set(x, "signingCertificate", value.asInstanceOf[js.Any])
+      inline def setSigningCertificate(value: String | OptionsSigningCertificate): Self = StObject.set(x, "signingCertificate", value.asInstanceOf[js.Any])
       
       inline def setSigningCertificateUndefined: Self = StObject.set(x, "signingCertificate", js.undefined)
       
-      inline def setSigningCertificateV2(value: String): Self = StObject.set(x, "signingCertificateV2", value.asInstanceOf[js.Any])
+      inline def setSigningCertificateV2(value: String | OptionsSigningCertificateV2): Self = StObject.set(x, "signingCertificateV2", value.asInstanceOf[js.Any])
       
       inline def setSigningCertificateV2Undefined: Self = StObject.set(x, "signingCertificateV2", js.undefined)
       

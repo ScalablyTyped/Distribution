@@ -13,7 +13,7 @@ object typesMod {
   
   type DeepImmutable[T] = DeepImmutableObject[T] | DeepImmutableArray[Any] | T
   
-  /** @hidden */
+  /** @internal */
   @js.native
   trait DeepImmutableArray[T]
     extends StObject

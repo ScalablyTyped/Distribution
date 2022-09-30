@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SimpleRequestHandling")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SimpleRequestHandling")
 @js.native
-class SimpleRequestHandling protected ()
+open class SimpleRequestHandling protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.SimpleRequestHandling {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class SimpleRequestHandling protected ()
 }
 object SimpleRequestHandling {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SimpleRequestHandling")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SimpleRequestHandling")
   @js.native
   val ^ : js.Any = js.native
   
@@ -66,13 +66,13 @@ object SimpleRequestHandling {
   inline def createInWebServiceCallActionUnderRequestHeaderHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.SimpleRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SimpleRequestHandling]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SimpleRequestHandling.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SimpleRequestHandling.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SimpleRequestHandling.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.SimpleRequestHandling.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

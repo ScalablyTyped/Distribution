@@ -1,7 +1,7 @@
 package typings.syncRequest
 
 import typings.httpBasic.httpVerbMod.HttpVerb
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.syncRequest.optionsMod.MessageOptions
 import org.scalablytyped.runtime.StObject

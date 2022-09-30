@@ -12,7 +12,7 @@ object updateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): Property[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(List(initial.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Property[Out]]
+  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): Property[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(scala.List(initial.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Property[Out]]
   
   type UpdatePattern[O] = (UpdatePattern1[Any, O]) | (UpdatePattern2[Any, Any, O]) | (UpdatePattern3[Any, Any, Any, O]) | (UpdatePattern4[Any, Any, Any, Any, O]) | (UpdatePattern5[Any, Any, Any, Any, Any, O]) | (UpdatePattern6[Any, Any, Any, Any, Any, Any, O])
   

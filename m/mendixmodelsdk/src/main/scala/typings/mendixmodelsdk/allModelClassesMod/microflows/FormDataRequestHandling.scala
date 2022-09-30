@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.0.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.FormDataRequestHandling")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.FormDataRequestHandling")
 @js.native
-class FormDataRequestHandling protected ()
+open class FormDataRequestHandling protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.FormDataRequestHandling {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class FormDataRequestHandling protected ()
 }
 object FormDataRequestHandling {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.FormDataRequestHandling")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.FormDataRequestHandling")
   @js.native
   val ^ : js.Any = js.native
   
@@ -75,13 +75,13 @@ object FormDataRequestHandling {
   inline def createInWebServiceCallActionUnderRequestHeaderHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.FormDataRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.FormDataRequestHandling]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.FormDataRequestHandling.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.FormDataRequestHandling.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.FormDataRequestHandling.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.FormDataRequestHandling.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

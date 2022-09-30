@@ -882,7 +882,7 @@ object mod {
         js.Object
       ] = js.native
     @JSName("getIn")
-    def getIn_K_String[K /* <: /* keyof T */ String */](propertyPath: js.Array[K]): Immutable[
+    def getIn_K[K /* <: /* keyof T */ String */](propertyPath: js.Array[K]): Immutable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
         js.Object
       ] = js.native
@@ -939,16 +939,9 @@ object mod {
       additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     
-    def updateIn[K /* <: /* keyof T */ String */](
-      propertyPath: js.Array[K],
-      updaterFunction: js.Function2[
-          /* value */ Immutable[
-            /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
-            js.Object
-          ], 
-          /* repeated */ Any, 
-          Any
-        ],
+    def updateIn[TValue](
+      propertyPath: js.Array[String],
+      updaterFunction: js.Function2[/* value */ TValue, /* repeated */ Any, Any],
       additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     def updateIn[K /* <: /* keyof T */ String */, L /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](
@@ -1000,9 +993,16 @@ object mod {
       additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     @JSName("updateIn")
-    def updateIn_TValue[TValue](
-      propertyPath: js.Array[String],
-      updaterFunction: js.Function2[/* value */ TValue, /* repeated */ Any, Any],
+    def updateIn_K[K /* <: /* keyof T */ String */](
+      propertyPath: js.Array[K],
+      updaterFunction: js.Function2[
+          /* value */ Immutable[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
+            js.Object
+          ], 
+          /* repeated */ Any, 
+          Any
+        ],
       additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     

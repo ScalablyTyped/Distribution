@@ -12,7 +12,7 @@ trait UtilityLayerRenderer
   /* private */ var _afterRenderObserver: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * Light which used by gizmos to get light shading
     */
   def _getSharedGizmoLight(): HemisphericLight = js.native

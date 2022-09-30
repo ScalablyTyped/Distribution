@@ -4,11 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.httpBasic.cachedResponseMod.CachedResponse
 import typings.httpBasic.icacheMod.ICache
 import typings.httpResponseObject.mod.^
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingHttpHeaders
+import typings.std.ReadableStream
 import typings.thenRequest.thenRequestStrings.file
 import typings.thenRequest.thenRequestStrings.memory
 import org.scalablytyped.runtime.StObject
@@ -23,11 +22,13 @@ object optionsMod {
     
     var allowRedirectHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream[Any]] = js.undefined
     
     var cache: js.UndefOr[file | memory | ICache] = js.undefined
     
-    var canCache: js.UndefOr[js.Function2[/* res */ ^[ReadableStream], /* defaultValue */ Boolean, Boolean]] = js.undefined
+    var canCache: js.UndefOr[
+        js.Function2[/* res */ ^[ReadableStream[Any]], /* defaultValue */ Boolean, Boolean]
+      ] = js.undefined
     
     var followRedirects: js.UndefOr[Boolean] = js.undefined
     
@@ -50,18 +51,18 @@ object optionsMod {
         ]
       ] = js.undefined
     
-    var json: js.UndefOr[js.Any] = js.undefined
+    var json: js.UndefOr[Any] = js.undefined
     
     var maxRedirects: js.UndefOr[Double] = js.undefined
     
     var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var qs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var qs: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var retry: js.UndefOr[
         Boolean | (js.Function3[
-          /* err */ ErrnoException | Null, 
-          /* res */ (^[ReadableStream | Buffer | String]) | Unit, 
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* res */ (^[ReadableStream[Any] | Buffer | String]) | Unit, 
           /* attemptNumber */ Double, 
           Boolean
         ])
@@ -69,8 +70,8 @@ object optionsMod {
     
     var retryDelay: js.UndefOr[
         Double | (js.Function3[
-          /* err */ ErrnoException | Null, 
-          /* res */ (^[ReadableStream | Buffer | String]) | Unit, 
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* res */ (^[ReadableStream[Any] | Buffer | String]) | Unit, 
           /* attemptNumber */ Double, 
           Double
         ])
@@ -97,9 +98,9 @@ object optionsMod {
       
       inline def setAllowRedirectHeadersUndefined: Self = StObject.set(x, "allowRedirectHeaders", js.undefined)
       
-      inline def setAllowRedirectHeadersVarargs(value: String*): Self = StObject.set(x, "allowRedirectHeaders", js.Array(value :_*))
+      inline def setAllowRedirectHeadersVarargs(value: String*): Self = StObject.set(x, "allowRedirectHeaders", js.Array(value*))
       
-      inline def setBody(value: String | Buffer | ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -107,7 +108,7 @@ object optionsMod {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setCanCache(value: (/* res */ ^[ReadableStream], /* defaultValue */ Boolean) => Boolean): Self = StObject.set(x, "canCache", js.Any.fromFunction2(value))
+      inline def setCanCache(value: (/* res */ ^[ReadableStream[Any]], /* defaultValue */ Boolean) => Boolean): Self = StObject.set(x, "canCache", js.Any.fromFunction2(value))
       
       inline def setCanCacheUndefined: Self = StObject.set(x, "canCache", js.undefined)
       
@@ -137,7 +138,7 @@ object optionsMod {
       
       inline def setIsMatchUndefined: Self = StObject.set(x, "isMatch", js.undefined)
       
-      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
@@ -149,14 +150,14 @@ object optionsMod {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setQs(value: StringDictionary[js.Any]): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+      inline def setQs(value: StringDictionary[Any]): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
       
       inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
       
       inline def setRetry(
         value: Boolean | (js.Function3[
-              /* err */ ErrnoException | Null, 
-              /* res */ (^[ReadableStream | Buffer | String]) | Unit, 
+              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+              /* res */ (^[ReadableStream[Any] | Buffer | String]) | Unit, 
               /* attemptNumber */ Double, 
               Boolean
             ])
@@ -164,21 +165,21 @@ object optionsMod {
       
       inline def setRetryDelay(
         value: Double | (js.Function3[
-              /* err */ ErrnoException | Null, 
-              /* res */ (^[ReadableStream | Buffer | String]) | Unit, 
+              /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+              /* res */ (^[ReadableStream[Any] | Buffer | String]) | Unit, 
               /* attemptNumber */ Double, 
               Double
             ])
       ): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
       inline def setRetryDelayFunction3(
-        value: (/* err */ ErrnoException | Null, /* res */ (^[ReadableStream | Buffer | String]) | Unit, /* attemptNumber */ Double) => Double
+        value: (/* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, /* res */ (^[ReadableStream[Any] | Buffer | String]) | Unit, /* attemptNumber */ Double) => Double
       ): Self = StObject.set(x, "retryDelay", js.Any.fromFunction3(value))
       
       inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
       inline def setRetryFunction3(
-        value: (/* err */ ErrnoException | Null, /* res */ (^[ReadableStream | Buffer | String]) | Unit, /* attemptNumber */ Double) => Boolean
+        value: (/* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, /* res */ (^[ReadableStream[Any] | Buffer | String]) | Unit, /* attemptNumber */ Double) => Boolean
       ): Self = StObject.set(x, "retry", js.Any.fromFunction3(value))
       
       inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)

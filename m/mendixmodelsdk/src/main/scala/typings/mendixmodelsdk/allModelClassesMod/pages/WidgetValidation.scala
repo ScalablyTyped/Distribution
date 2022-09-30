@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WidgetValidation")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WidgetValidation")
 @js.native
-class WidgetValidation protected ()
+open class WidgetValidation protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.WidgetValidation {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class WidgetValidation protected ()
 }
 object WidgetValidation {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WidgetValidation")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WidgetValidation")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +64,13 @@ object WidgetValidation {
   inline def createInReferenceSelectorUnderValidation(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelector): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WidgetValidation]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WidgetValidation.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WidgetValidation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.WidgetValidation.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.WidgetValidation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -10,6 +10,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
+import typings.std.PromiseLike
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -130,7 +131,7 @@ object baseExtendedPickerTypesMod {
       * A callback to process a selection after the user selects a suggestion from the picker.
       * The returned item will be added to the selected items list
       */
-    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.undefined
+    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | PromiseLike[T]]] = js.undefined
     
     /**
       * A callback on when an item or items were removed from the selected item list
@@ -239,7 +240,7 @@ object baseExtendedPickerTypesMod {
       
       inline def setOnItemAddedUndefined: Self = StObject.set(x, "onItemAdded", js.undefined)
       
-      inline def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
+      inline def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | PromiseLike[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
       
       inline def setOnItemSelectedUndefined: Self = StObject.set(x, "onItemSelected", js.undefined)
       

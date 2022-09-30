@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.RetrievalSchema")
 @js.native
-class RetrievalSchema protected ()
+open class RetrievalSchema protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.RetrievalSchema {
   def this(
     model: AbstractModel,

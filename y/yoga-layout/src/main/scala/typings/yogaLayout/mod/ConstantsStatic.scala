@@ -1,15 +1,15 @@
 package typings.yogaLayout.mod
 
-import typings.yogaLayout.yogaLayoutNumbers.`0`
-import typings.yogaLayout.yogaLayoutNumbers.`1`
-import typings.yogaLayout.yogaLayoutNumbers.`2`
-import typings.yogaLayout.yogaLayoutNumbers.`3`
-import typings.yogaLayout.yogaLayoutNumbers.`4`
-import typings.yogaLayout.yogaLayoutNumbers.`5`
-import typings.yogaLayout.yogaLayoutNumbers.`6`
-import typings.yogaLayout.yogaLayoutNumbers.`7`
-import typings.yogaLayout.yogaLayoutNumbers.`8`
-import typings.yogaLayout.yogaLayoutNumbers.`9`
+import typings.yogaLayout.yogaLayoutInts.`0`
+import typings.yogaLayout.yogaLayoutInts.`1`
+import typings.yogaLayout.yogaLayoutInts.`2`
+import typings.yogaLayout.yogaLayoutInts.`3`
+import typings.yogaLayout.yogaLayoutInts.`4`
+import typings.yogaLayout.yogaLayoutInts.`5`
+import typings.yogaLayout.yogaLayoutInts.`6`
+import typings.yogaLayout.yogaLayoutInts.`7`
+import typings.yogaLayout.yogaLayoutInts.`8`
+import typings.yogaLayout.yogaLayoutInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

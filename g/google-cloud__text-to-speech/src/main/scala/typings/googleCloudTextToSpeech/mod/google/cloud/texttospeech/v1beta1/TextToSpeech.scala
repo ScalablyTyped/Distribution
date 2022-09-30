@@ -4,7 +4,6 @@ import typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1.Tex
 import typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1.TextToSpeech.SynthesizeSpeechCallback
 import typings.googleGax.mod.protobuf.rpc.Service
 import typings.protobufjs.mod.RPCImpl
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a TextToSpeech */
 @JSImport("@google-cloud/text-to-speech/build/protos/protos", "google.cloud.texttospeech.v1beta1.TextToSpeech")
 @js.native
-class TextToSpeech protected () extends Service {
+open class TextToSpeech protected () extends Service {
   /**
     * Constructs a new TextToSpeech service.
     * @param rpcImpl RPC implementation
@@ -70,16 +69,20 @@ object TextToSpeech {
   inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[TextToSpeech]
   
   /**
-    * Callback as used by {@link google.cloud.texttospeech.v1beta1.TextToSpeech#listVoices}.
+    * Callback as used by {@link google.cloud.texttospeech.v1beta1.TextToSpeech|listVoices}.
     * @param error Error, if any
     * @param [response] ListVoicesResponse
     */
-  type ListVoicesCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListVoicesResponse], Unit]
+  type ListVoicesCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[ListVoicesResponse], Unit]
   
   /**
-    * Callback as used by {@link google.cloud.texttospeech.v1beta1.TextToSpeech#synthesizeSpeech}.
+    * Callback as used by {@link google.cloud.texttospeech.v1beta1.TextToSpeech|synthesizeSpeech}.
     * @param error Error, if any
     * @param [response] SynthesizeSpeechResponse
     */
-  type SynthesizeSpeechCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[SynthesizeSpeechResponse], Unit]
+  type SynthesizeSpeechCallback = js.Function2[
+    /* error */ js.Error | Null, 
+    /* response */ js.UndefOr[SynthesizeSpeechResponse], 
+    Unit
+  ]
 }

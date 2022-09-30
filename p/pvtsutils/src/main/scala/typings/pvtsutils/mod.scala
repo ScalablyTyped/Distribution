@@ -215,7 +215,7 @@ object mod {
     inline def isHex(data: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(data.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   }
   
-  inline def assign(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def assign(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def combine(buf: js.typedarray.ArrayBuffer*): ArrayBufferLike = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(buf.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ArrayBufferLike]
   

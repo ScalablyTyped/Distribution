@@ -21,10 +21,10 @@ object mod {
   inline def default[T /* <: Element */](els: js.Array[T], attr: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(els.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default[T /* <: Element */](els: js.Array[T], attrs: Record[String, Any]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(els.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def default_T_Element_Union[T /* <: Element */](el: T, attr: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def default_T_Element_Union[T /* <: Element */](el: T, attrs: js.Array[String]): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
-  inline def default_T_Element_Union[T /* <: Element */](els: js.Array[T], attr: String): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(els.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
-  inline def default_T_Element_Union[T /* <: Element */](els: js.Array[T], attrs: js.Array[String]): js.Array[js.Array[String]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(els.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String]] | Null]
+  inline def default_T_Union[T /* <: Element */](el: T, attr: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def default_T_Union[T /* <: Element */](el: T, attrs: js.Array[String]): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
+  inline def default_T_Union[T /* <: Element */](els: js.Array[T], attr: String): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(els.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
+  inline def default_T_Union[T /* <: Element */](els: js.Array[T], attrs: js.Array[String]): js.Array[js.Array[String]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(els.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String]] | Null]
   
   inline def get[T /* <: Element */](el: T, attr: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(el.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   inline def get[T /* <: Element */](el: T, attrs: js.Array[String]): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(el.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "term-img" : "5.0.0"
+      "term-img" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "term-img" : "5.0.0"
+      "term-img" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

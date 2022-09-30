@@ -19,7 +19,7 @@ object ipipelinecontextMod {
   @js.native
   trait IPipelineContext extends StObject {
     
-    /** @hidden */
+    /** @internal */
     def _fillEffectInformation(
       effect: Effect,
       uniformBuffersNames: StringDictionary[Double],
@@ -31,16 +31,16 @@ object ipipelinecontextMod {
       attributes: js.Array[Double]
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getFragmentShaderCode(): String | Null = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getVertexShaderCode(): String | Null = js.native
     
-    /** @hidden */
+    /** @internal */
     def _handlesSpectorRebuildCallback(onCompiled: js.Function1[/* compiledObject */ Any, Unit]): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _name: js.UndefOr[String] = js.native
     
     /** Releases the resources associated with the pipeline. */

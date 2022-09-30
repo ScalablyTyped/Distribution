@@ -47,7 +47,7 @@ object postExcerptCheckMod {
         
         inline def setSupportKeysUndefined: Self = StObject.set(x, "supportKeys", js.undefined)
         
-        inline def setSupportKeysVarargs(value: String*): Self = StObject.set(x, "supportKeys", js.Array(value :_*))
+        inline def setSupportKeysVarargs(value: String*): Self = StObject.set(x, "supportKeys", js.Array(value*))
       }
     }
   }

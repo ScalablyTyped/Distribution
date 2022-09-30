@@ -14,7 +14,6 @@ import typings.interactjsTypes.anon.Init
 import typings.interactjsTypes.anon.InteractableConstructor
 import typings.interactjsTypes.anon.InteractableInteractableAllowFrom
 import typings.interactjsTypes.anon.InteractableOptions
-import typings.interactjsTypes.anon.List
 import typings.interactjsTypes.anon.Node
 import typings.interactjsTypes.anon.OmitDoAnyPhaseArgiEvent
 import typings.interactjsTypes.anon.OmitDoPhaseArgActionNamei
@@ -138,7 +137,7 @@ object scopeMod {
     
     var Interaction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InteractionBase */ Any = js.native
     
-    var _plugins: List = js.native
+    var _plugins: typings.interactjsTypes.anon.List = js.native
     
     var _win: Window = js.native
     

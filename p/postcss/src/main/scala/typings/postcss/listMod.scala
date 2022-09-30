@@ -9,7 +9,7 @@ object listMod extends Shortcut {
   
   @JSImport("postcss/lib/list", JSImport.Default)
   @js.native
-  val default: List = js.native
+  val default: typings.postcss.listMod.List = js.native
   
   trait List extends StObject {
     
@@ -66,12 +66,12 @@ object listMod extends Shortcut {
       comma: String => js.Array[String],
       space: String => js.Array[String],
       split: (String, js.Array[String], Boolean) => js.Array[String]
-    ): List = {
+    ): typings.postcss.listMod.List = {
       val __obj = js.Dynamic.literal(comma = js.Any.fromFunction1(comma), space = js.Any.fromFunction1(space), split = js.Any.fromFunction3(split))
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.postcss.listMod.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.postcss.listMod.List](x: Self) {
       
       inline def setComma(value: String => js.Array[String]): Self = StObject.set(x, "comma", js.Any.fromFunction1(value))
       
@@ -81,8 +81,8 @@ object listMod extends Shortcut {
     }
   }
   
-  type _To = List
+  type _To = typings.postcss.listMod.List
   
   /* This means you don't have to write `default`, but can instead just say `listMod.foo` */
-  override def _to: List = default
+  override def _to: typings.postcss.listMod.List = default
 }

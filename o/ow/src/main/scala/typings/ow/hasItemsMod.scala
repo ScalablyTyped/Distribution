@@ -7,10 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hasItemsMod {
   
-  @JSImport("ow/dist/source/utils/has-items", JSImport.Namespace)
+  @JSImport("ow/dist/utils/has-items", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+  Retrieve the missing values in a collection based on an array of items.
+  @hidden
+  @param source - Source collection to search through.
+  @param items - Items to search for.
+  @param maxValues - Maximum number of values after the search process is stopped. Default: 5.
+  */
   inline def default[T](source: CollectionLike[T], items: js.Array[T]): `true` | js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[T]]
   inline def default[T](source: CollectionLike[T], items: js.Array[T], maxValues: Double): `true` | js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], items.asInstanceOf[js.Any], maxValues.asInstanceOf[js.Any])).asInstanceOf[`true` | js.Array[T]]
   

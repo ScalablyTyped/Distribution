@@ -321,8 +321,8 @@ trait Tray extends EventEmitter {
   /**
     * Pops up the context menu of the tray icon. When `menu` is passed, the `menu`
     * will be shown instead of the tray icon's context menu.
-    * 
-  The `position` is only available on Windows, and it is (0, 0) by default.
+    *
+    * The `position` is only available on Windows, and it is (0, 0) by default.
     *
     * @platform darwin,win32
     */
@@ -397,8 +397,8 @@ trait Tray extends EventEmitter {
   /**
     * Sets the option to ignore double click events. Ignoring these events allows you
     * to detect every individual click of the tray icon.
-    * 
-  This value is set to false by default.
+    *
+    * This value is set to false by default.
     *
     * @platform darwin
     */

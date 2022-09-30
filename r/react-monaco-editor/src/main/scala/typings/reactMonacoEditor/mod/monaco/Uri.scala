@@ -51,7 +51,7 @@ object Uri {
     * @param pathFragment The path fragment to add to the Uri path.
     * @returns The resulting Uri.
     */
-  inline def joinPath(uri: typings.monacoEditor.mod.Uri, pathFragment: String*): typings.monacoEditor.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(List(uri.asInstanceOf[js.Any]).`++`(pathFragment.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.monacoEditor.mod.Uri]
+  inline def joinPath(uri: typings.monacoEditor.mod.Uri, pathFragment: String*): typings.monacoEditor.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(scala.List(uri.asInstanceOf[js.Any]).`++`(pathFragment.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.monacoEditor.mod.Uri]
   
   /**
     * Creates a new Uri from a string, e.g. `http://www.example.com/some/path`,

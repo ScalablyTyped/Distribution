@@ -27,6 +27,11 @@ trait PermissionRequestHandlerHandlerDetails extends StObject {
     * The last URL the requesting frame loaded
     */
   var requestingUrl: String
+  
+  /**
+    * The security origin of the `media` request.
+    */
+  var securityOrigin: js.UndefOr[String] = js.undefined
 }
 object PermissionRequestHandlerHandlerDetails {
   
@@ -47,8 +52,12 @@ object PermissionRequestHandlerHandlerDetails {
     
     inline def setMediaTypesUndefined: Self = StObject.set(x, "mediaTypes", js.undefined)
     
-    inline def setMediaTypesVarargs(value: (video | audio)*): Self = StObject.set(x, "mediaTypes", js.Array(value :_*))
+    inline def setMediaTypesVarargs(value: (video | audio)*): Self = StObject.set(x, "mediaTypes", js.Array(value*))
     
     inline def setRequestingUrl(value: String): Self = StObject.set(x, "requestingUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
   }
 }

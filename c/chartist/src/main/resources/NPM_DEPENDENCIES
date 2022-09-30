@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "chartist" : "1.1.2"
+      "chartist" : "1.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "chartist" : "1.1.2"
+      "chartist" : "1.1.3"
     }
   ],
   "compile-devDependencies" : [

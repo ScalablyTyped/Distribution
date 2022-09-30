@@ -1,24 +1,24 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`3`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`4`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`5`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`6`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`0`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`1`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`2`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`3`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`4`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`5`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`3`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`4`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`5`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`6`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`0`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`1`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`2`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`3`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`4`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`5`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`6`
 */
 trait OSLogLevel extends StObject
 object OSLogLevel {

@@ -13,6 +13,7 @@ import typings.hapiBell.hapiBellStrings.oauth2
 import typings.hapiHapi.mod.AuthCredentials
 import typings.hapiHapi.mod.Plugin
 import typings.hapiHapi.mod.Request
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -678,7 +679,7 @@ object mod {
     inline def yahoo: typings.hapiBell.hapiBellStrings.yahoo = "yahoo".asInstanceOf[typings.hapiBell.hapiBellStrings.yahoo]
   }
   
-  type RequestPassThrough = js.Function1[/* request */ Request, js.Thenable[AuthCredentials] | AuthCredentials]
+  type RequestPassThrough = js.Function1[/* request */ Request, PromiseLike[AuthCredentials] | AuthCredentials]
   
   trait RequiredProviderOptions extends StObject {
     

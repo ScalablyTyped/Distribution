@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 8.0.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalSplitPane")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.VerticalSplitPane")
 @js.native
-class VerticalSplitPane protected () extends SplitPane {
+open class VerticalSplitPane protected () extends SplitPane {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ class VerticalSplitPane protected () extends SplitPane {
 }
 object VerticalSplitPane {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalSplitPane")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.VerticalSplitPane")
   @js.native
   val ^ : js.Any = js.native
   
@@ -563,13 +563,13 @@ object VerticalSplitPane {
   inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalSplitPane.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.VerticalSplitPane.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalSplitPane.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.VerticalSplitPane.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

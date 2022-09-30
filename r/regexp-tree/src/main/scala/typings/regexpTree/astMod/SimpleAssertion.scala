@@ -1,8 +1,6 @@
 package typings.regexpTree.astMod
 
 import typings.regexpTree.regexpTreeStrings.$
-import typings.regexpTree.regexpTreeStrings.BackslashB
-import typings.regexpTree.regexpTreeStrings.Backslashb
 import typings.regexpTree.regexpTreeStrings.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,11 +11,11 @@ trait SimpleAssertion
      with Base[typings.regexpTree.regexpTreeStrings.Assertion]
      with Assertion {
   
-  var kind: ^ | $ | Backslashb | BackslashB
+  var kind: ^ | $ | String
 }
 object SimpleAssertion {
   
-  inline def apply(kind: ^ | $ | Backslashb | BackslashB): SimpleAssertion = {
+  inline def apply(kind: ^ | $ | String): SimpleAssertion = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[SimpleAssertion]
@@ -25,6 +23,6 @@ object SimpleAssertion {
   
   extension [Self <: SimpleAssertion](x: Self) {
     
-    inline def setKind(value: ^ | $ | Backslashb | BackslashB): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ^ | $ | String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

@@ -4,29 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined keyof std.Readonly<{ readonly double :1,  readonly string :2,  readonly object :3,  readonly array :4,  readonly binData :5,  readonly undefined :6,  readonly objectId :7,  readonly bool :8,  readonly date :9,  readonly null :10,  readonly regex :11,  readonly dbPointer :12,  readonly javascript :13,  readonly symbol :14,  readonly javascriptWithScope :15,  readonly int :16,  readonly timestamp :17,  readonly long :18,  readonly decimal :19,  readonly minKey :-1,  readonly maxKey :127}> */
 /* Rewritten from type alias, can be one of: 
-  - typings.mongodb.mongodbStrings.number
-  - typings.mongodb.mongodbStrings.double
-  - typings.mongodb.mongodbStrings.string
-  - typings.mongodb.mongodbStrings.`object`
-  - typings.mongodb.mongodbStrings.array
-  - typings.mongodb.mongodbStrings.binData
-  - typings.mongodb.mongodbStrings.undefined
-  - typings.mongodb.mongodbStrings.objectId
-  - typings.mongodb.mongodbStrings.bool
-  - typings.mongodb.mongodbStrings.date
-  - typings.mongodb.mongodbStrings.`null`
-  - typings.mongodb.mongodbStrings.regex
-  - typings.mongodb.mongodbStrings.dbPointer
-  - typings.mongodb.mongodbStrings.javascript
-  - typings.mongodb.mongodbStrings.symbol
-  - typings.mongodb.mongodbStrings.javascriptWithScope
-  - typings.mongodb.mongodbStrings.int
-  - typings.mongodb.mongodbStrings.timestamp
   - typings.mongodb.mongodbStrings.long
+  - typings.mongodb.mongodbStrings.date
+  - typings.mongodb.mongodbStrings.timestamp
+  - typings.mongodb.mongodbStrings.binData
+  - typings.mongodb.mongodbStrings.regex
+  - typings.mongodb.mongodbStrings.maxKey
   - typings.mongodb.mongodbStrings.decimal
   - typings.mongodb.mongodbStrings.minKey
-  - typings.mongodb.mongodbStrings.maxKey
+  - typings.mongodb.mongodbStrings.int
+  - typings.mongodb.mongodbStrings.double
+  - typings.mongodb.mongodbStrings.symbol
+  - typings.mongodb.mongodbStrings.javascriptWithScope
+  - typings.mongodb.mongodbStrings.undefined
+  - typings.mongodb.mongodbStrings.`null`
+  - typings.mongodb.mongodbStrings.objectId
+  - typings.mongodb.mongodbStrings.string
+  - typings.mongodb.mongodbStrings.dbPointer
+  - typings.mongodb.mongodbStrings.array
+  - typings.mongodb.mongodbStrings.javascript
+  - typings.mongodb.mongodbStrings.`object`
+  - typings.mongodb.mongodbStrings.bool
 */
 trait BSONTypeAlias extends StObject
 object BSONTypeAlias {
@@ -58,8 +58,6 @@ object BSONTypeAlias {
   inline def minKey: typings.mongodb.mongodbStrings.minKey = "minKey".asInstanceOf[typings.mongodb.mongodbStrings.minKey]
   
   inline def `null`: typings.mongodb.mongodbStrings.`null` = "null".asInstanceOf[typings.mongodb.mongodbStrings.`null`]
-  
-  inline def number: typings.mongodb.mongodbStrings.number = "number".asInstanceOf[typings.mongodb.mongodbStrings.number]
   
   inline def `object`: typings.mongodb.mongodbStrings.`object` = "object".asInstanceOf[typings.mongodb.mongodbStrings.`object`]
   

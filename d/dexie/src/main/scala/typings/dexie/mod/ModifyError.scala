@@ -1,25 +1,25 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ModifyError extends DexieError {
+trait ModifyError
+  extends StObject
+     with DexieError {
   
-  var failedKeys: IndexableTypeArrayReadonly = js.native
+  var failedKeys: IndexableTypeArrayReadonly
   
-  var failures: js.Array[_] = js.native
+  var failures: js.Array[Any]
   
-  var successCount: Double = js.native
+  var successCount: Double
 }
 object ModifyError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     failedKeys: IndexableTypeArrayReadonly,
-    failures: js.Array[_],
-    inner: js.Any,
+    failures: js.Array[Any],
+    inner: Any,
     message: String,
     name: String,
     stack: String,
@@ -29,34 +29,16 @@ object ModifyError {
     __obj.asInstanceOf[ModifyError]
   }
   
-  @scala.inline
-  implicit class ModifyErrorOps[Self <: ModifyError] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyError](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setFailedKeys(value: IndexableTypeArrayReadonly): Self = StObject.set(x, "failedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setFailedKeysVarargs(value: IndexableTypePart*): Self = StObject.set(x, "failedKeys", js.Array(value*))
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setFailures(value: js.Array[Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedKeysVarargs(value: IndexableTypePart*): Self = this.set("failedKeys", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Any*): Self = StObject.set(x, "failures", js.Array(value*))
     
-    @scala.inline
-    def setFailedKeys(value: IndexableTypeArrayReadonly): Self = this.set("failedKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailuresVarargs(value: js.Any*): Self = this.set("failures", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailures(value: js.Array[_]): Self = this.set("failures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccessCount(value: Double): Self = this.set("successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
   }
 }

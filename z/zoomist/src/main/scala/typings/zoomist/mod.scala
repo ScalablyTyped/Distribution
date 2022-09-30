@@ -16,7 +16,6 @@ import typings.zoomist.anon.Slider
 import typings.zoomist.anon.Width
 import typings.zoomist.anon.X
 import typings.zoomist.zoomistBooleans.`false`
-import typings.zoomist.zoomistStrings.$LeftcurlybracketnumberRightcurlybracketPercentsign
 import typings.zoomist.zoomistStrings.auto
 import typings.zoomist.zoomistStrings.contain
 import typings.zoomist.zoomistStrings.cover
@@ -134,7 +133,7 @@ object mod {
     
     var fill: js.UndefOr[cover | contain | none] = js.undefined
     
-    var height: js.UndefOr[auto | $LeftcurlybracketnumberRightcurlybracketPercentsign | Double | `false`] = js.undefined
+    var height: js.UndefOr[auto | (/* template literal string: ${number}% */ String) | Double | `false`] = js.undefined
     
     var maxRatio: js.UndefOr[Double | `false`] = js.undefined
     
@@ -173,7 +172,7 @@ object mod {
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setHeight(value: auto | $LeftcurlybracketnumberRightcurlybracketPercentsign | Double | `false`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: auto | (/* template literal string: ${number}% */ String) | Double | `false`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       

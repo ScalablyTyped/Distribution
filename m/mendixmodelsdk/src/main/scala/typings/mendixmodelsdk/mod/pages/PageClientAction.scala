@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.PageClientAction")
 @js.native
-class PageClientAction protected ()
+open class PageClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.PageClientAction {
   def this(
     model: AbstractModel,

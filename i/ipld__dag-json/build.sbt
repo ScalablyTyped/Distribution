@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipld__dag-json"
-version := "8.0.11-1b85e2"
+version := "8.0.11-a0b97c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

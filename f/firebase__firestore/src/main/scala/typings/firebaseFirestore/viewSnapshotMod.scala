@@ -3,10 +3,10 @@ package typings.firebaseFirestore
 import typings.firebaseFirestore.collectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.documentMod.Document
 import typings.firebaseFirestore.documentSetMod.DocumentSet
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`3`
 import typings.firebaseFirestore.queryMod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -71,10 +71,10 @@ object viewSnapshotMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`3`
   */
   trait ChangeType extends StObject
   object ChangeType {
@@ -111,8 +111,8 @@ object viewSnapshotMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
   */
   trait SyncState extends StObject
   object SyncState {

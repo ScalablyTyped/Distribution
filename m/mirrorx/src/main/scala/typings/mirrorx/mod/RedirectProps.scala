@@ -1,7 +1,5 @@
 package typings.mirrorx.mod
 
-import typings.history.mod.LocationDescriptor
-import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +16,13 @@ trait RedirectProps extends StObject {
   
   var strict: js.UndefOr[Boolean] = js.undefined
   
-  var to: LocationDescriptor[LocationState]
+  var to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
 }
 object RedirectProps {
   
-  inline def apply(to: LocationDescriptor[LocationState]): RedirectProps = {
+  inline def apply(
+    to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
+  ): RedirectProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectProps]
   }
@@ -49,6 +49,8 @@ object RedirectProps {
     
     inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    inline def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
+    ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

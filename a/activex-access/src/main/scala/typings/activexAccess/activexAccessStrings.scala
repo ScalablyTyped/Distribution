@@ -1,9 +1,7 @@
 package typings.activexAccess
 
-import typings.activexAccess.Access.AcOutputFormat
-import typings.activexAccess.Access.Constants
-import typings.activexAccess.Access.DatabaseType
-import typings.activexAccess.Access.OldConstants
+import typings.activexAccess.Access._DatabaseType
+import typings.activexAccess.Access._OldConstants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -307,13 +305,6 @@ object activexAccessStrings {
   inline def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
   
   @js.native
-  sealed trait `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `HTML LeftparenthesisAsteriskDothtmlRightparenthesis`: `HTML LeftparenthesisAsteriskDothtmlRightparenthesis` = ("HTML (*.html)").asInstanceOf[`HTML LeftparenthesisAsteriskDothtmlRightparenthesis`]
-  
-  @js.native
   sealed trait Headers extends StObject
   inline def Headers: Headers = "Headers".asInstanceOf[Headers]
   
@@ -332,13 +323,13 @@ object activexAccessStrings {
   @js.native
   sealed trait `Jet 2Dotx`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `Jet 2Dotx`: `Jet 2Dotx` = ("Jet 2.x").asInstanceOf[`Jet 2Dotx`]
   
   @js.native
   sealed trait `Jet 3Dotx`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `Jet 3Dotx`: `Jet 3Dotx` = ("Jet 3.x").asInstanceOf[`Jet 3Dotx`]
   
   @js.native
@@ -368,63 +359,6 @@ object activexAccessStrings {
   @js.native
   sealed trait LostFocus extends StObject
   inline def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
-  
-  @js.native
-  sealed trait `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-       with OldConstants
-  inline def `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`: `MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis` = ("MS-DOS Text (*.txt)").asInstanceOf[`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`]
-  
-  @js.native
-  sealed trait `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`: `Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis` = ("Microsoft Access Data Access Page (*.htm; *.html)").asInstanceOf[`Microsoft Access Data Access Page LeftparenthesisAsteriskDothtmSemicolon AsteriskDothtmlRightparenthesis`]
-  
-  @js.native
-  sealed trait `Microsoft Access LeftparenthesisdefaultRightparenthesis`
-    extends StObject
-       with DatabaseType
-  inline def `Microsoft Access LeftparenthesisdefaultRightparenthesis`: `Microsoft Access LeftparenthesisdefaultRightparenthesis` = ("Microsoft Access (default)").asInstanceOf[`Microsoft Access LeftparenthesisdefaultRightparenthesis`]
-  
-  @js.native
-  sealed trait `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`: `Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis` = ("Microsoft Active Server Pages (*.asp)").asInstanceOf[`Microsoft Active Server Pages LeftparenthesisAsteriskDotaspRightparenthesis`]
-  
-  @js.native
-  sealed trait `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`: `Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis` = ("Microsoft Excel Binary Workbook (*.xlsb)").asInstanceOf[`Microsoft Excel Binary Workbook LeftparenthesisAsteriskDotxlsbRightparenthesis`]
-  
-  @js.native
-  sealed trait `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-       with OldConstants
-  inline def `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`: `Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis` = ("Microsoft Excel (*.xls)").asInstanceOf[`Microsoft Excel LeftparenthesisAsteriskDotxlsRightparenthesis`]
-  
-  @js.native
-  sealed trait `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`: `Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis` = ("Microsoft Excel Workbook (*.xlsx)").asInstanceOf[`Microsoft Excel Workbook LeftparenthesisAsteriskDotxlsxRightparenthesis`]
-  
-  @js.native
-  sealed trait `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`: `Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis` = ("Microsoft IIS (*.htx; *.idc)").asInstanceOf[`Microsoft IIS LeftparenthesisAsteriskDothtxSemicolon AsteriskDotidcRightparenthesis`]
   
   @js.native
   sealed trait MouseDown extends StObject
@@ -461,7 +395,7 @@ object activexAccessStrings {
   @js.native
   sealed trait `ODBC Database`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `ODBC Database`: `ODBC Database` = ("ODBC Database").asInstanceOf[`ODBC Database`]
   
   @js.native
@@ -477,13 +411,6 @@ object activexAccessStrings {
   inline def Open: Open = "Open".asInstanceOf[Open]
   
   @js.native
-  sealed trait `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`: `PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis` = ("PDF Format (*.pdf)").asInstanceOf[`PDF Format LeftparenthesisAsteriskDotpdfRightparenthesis`]
-  
-  @js.native
   sealed trait Page extends StObject
   inline def Page: Page = "Page".asInstanceOf[Page]
   
@@ -494,25 +421,25 @@ object activexAccessStrings {
   @js.native
   sealed trait `Paradox 3Dotx`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `Paradox 3Dotx`: `Paradox 3Dotx` = ("Paradox 3.x").asInstanceOf[`Paradox 3Dotx`]
   
   @js.native
   sealed trait `Paradox 4Dotx`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `Paradox 4Dotx`: `Paradox 4Dotx` = ("Paradox 4.x").asInstanceOf[`Paradox 4Dotx`]
   
   @js.native
   sealed trait `Paradox 5Dotx`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `Paradox 5Dotx`: `Paradox 5Dotx` = ("Paradox 5.x").asInstanceOf[`Paradox 5Dotx`]
   
   @js.native
   sealed trait `Paradox 7Dotx`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `Paradox 7Dotx`: `Paradox 7Dotx` = ("Paradox 7.x").asInstanceOf[`Paradox 7Dotx`]
   
   @js.native
@@ -572,14 +499,6 @@ object activexAccessStrings {
   inline def Retreat: Retreat = "Retreat".asInstanceOf[Retreat]
   
   @js.native
-  sealed trait `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-       with OldConstants
-  inline def `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`: `Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis` = ("Rich Text Format (*.rtf)").asInstanceOf[`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`]
-  
-  @js.native
   sealed trait RowText extends StObject
   inline def RowText: RowText = "RowText".asInstanceOf[RowText]
   
@@ -598,103 +517,96 @@ object activexAccessStrings {
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0401;CP=1256;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0401SemicolonCPEqualssign1256SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0405;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0405SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0408;CP=1253;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0408SemicolonCPEqualssign1253SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0409;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0409SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040A;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ASemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040B;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040BSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040D;CP=1255;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040DSemicolonCPEqualssign1255SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040E;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040ESemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x040F;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x040FSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0413;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0413SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0414;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0414SemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0415;CP=1250;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0415SemicolonCPEqualssign1250SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0 = ";LANGID=0x0419;CP=1251;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x0419SemicolonCPEqualssign1251SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041DSemicolonCPEqualssign1252SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0
     extends StObject
-       with OldConstants
+       with _OldConstants
   inline def SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0: SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0 = ";LANGID=0x041F;CP=1254;COUNTRY=0".asInstanceOf[SemicolonLANGIDEqualssign0x041FSemicolonCPEqualssign1254SemicolonCOUNTRYEqualssign0]
   
   @js.native
   sealed trait Shift extends StObject
   inline def Shift: Shift = "Shift".asInstanceOf[Shift]
-  
-  @js.native
-  sealed trait `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`: `Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis` = ("Snapshot Format (*.snp)").asInstanceOf[`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`]
   
   @js.native
   sealed trait SourceCtlName extends StObject
@@ -775,19 +687,12 @@ object activexAccessStrings {
   @js.native
   sealed trait WSS
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def WSS: WSS = "WSS".asInstanceOf[WSS]
   
   @js.native
   sealed trait X extends StObject
   inline def X: X = "X".asInstanceOf[X]
-  
-  @js.native
-  sealed trait `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`
-    extends StObject
-       with AcOutputFormat
-       with Constants
-  inline def `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`: `XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis` = ("XPS Format (*.xps)").asInstanceOf[`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`]
   
   @js.native
   sealed trait Y extends StObject
@@ -808,19 +713,19 @@ object activexAccessStrings {
   @js.native
   sealed trait `dBase 5Dot0`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `dBase 5Dot0`: `dBase 5Dot0` = ("dBase 5.0").asInstanceOf[`dBase 5Dot0`]
   
   @js.native
   sealed trait `dBase III`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `dBase III`: `dBase III` = ("dBase III").asInstanceOf[`dBase III`]
   
   @js.native
   sealed trait `dBase IV`
     extends StObject
-       with DatabaseType
+       with _DatabaseType
   inline def `dBase IV`: `dBase IV` = ("dBase IV").asInstanceOf[`dBase IV`]
   
   @js.native

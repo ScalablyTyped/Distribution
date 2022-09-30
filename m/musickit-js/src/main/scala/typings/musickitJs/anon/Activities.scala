@@ -5,6 +5,7 @@ import typings.musickitJs.MusicKit.Curators
 import typings.musickitJs.MusicKit.MusicVideos
 import typings.musickitJs.MusicKit.RecordLabels
 import typings.musickitJs.MusicKit.SearchResult
+import typings.musickitJs.MusicKit.Songs
 import typings.musickitJs.MusicKit.Stations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +29,7 @@ trait Activities extends StObject {
   
   var `record-labels`: js.UndefOr[SearchResult[RecordLabels]] = js.undefined
   
-  var songs: js.UndefOr[SearchResult[typings.musickitJs.MusicKit.Songs]] = js.undefined
+  var songs: js.UndefOr[SearchResult[Songs]] = js.undefined
   
   var stations: js.UndefOr[SearchResult[Stations]] = js.undefined
   
@@ -75,7 +76,7 @@ object Activities {
     
     inline def `setRecord-labelsUndefined`: Self = StObject.set(x, "record-labels", js.undefined)
     
-    inline def setSongs(value: SearchResult[typings.musickitJs.MusicKit.Songs]): Self = StObject.set(x, "songs", value.asInstanceOf[js.Any])
+    inline def setSongs(value: SearchResult[Songs]): Self = StObject.set(x, "songs", value.asInstanceOf[js.Any])
     
     inline def setSongsUndefined: Self = StObject.set(x, "songs", js.undefined)
     

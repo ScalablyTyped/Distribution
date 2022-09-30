@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/configuration relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.Configuration")
+@JSImport("mendixmodelsdk/src/gen/settings", "settings.Configuration")
 @js.native
-class Configuration protected () extends Element[IModel] {
+open class Configuration protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -84,7 +84,7 @@ class Configuration protected () extends Element[IModel] {
 }
 object Configuration {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Configuration")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.Configuration")
   @js.native
   val ^ : js.Any = js.native
   
@@ -105,13 +105,13 @@ object Configuration {
   inline def createIn(container: ConfigurationSettings): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Configuration]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Configuration.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.Configuration.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Configuration.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.Configuration.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

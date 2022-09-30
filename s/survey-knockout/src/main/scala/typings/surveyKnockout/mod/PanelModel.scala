@@ -51,10 +51,6 @@ open class PanelModel () extends PanelModelBase {
   @JSName("isPanel")
   def isPanel_MPanelModel: Boolean = js.native
   
-  /*
-    * Move panel to a new container Page/Panel. Add as a last element if insertBefore parameter is not used or inserted into the given index,
-    * if insert parameter is number, or before the given element, if the insertBefore parameter is a question or panel
-    */
   def moveTo(container: IPanel): Boolean = js.native
   def moveTo(container: IPanel, insertBefore: Any): Boolean = js.native
   

@@ -172,11 +172,11 @@ object mod {
   ): ZoomInterpolator = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ZoomInterpolator]
   inline def piecewise(values: js.Array[Any]): js.Function1[/* t */ Double, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, Any]]
   
-  inline def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[Any] */](
+  inline def piecewise_A_ArrayInterpolator[A /* <: js.Array[Any] */](
     interpolate: js.Function2[/* a */ js.Array[Any], /* b */ A, ArrayInterpolator[A]],
     values: js.Array[A]
   ): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
-  inline def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[Any] */](values: js.Array[A]): ArrayInterpolator[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ArrayInterpolator[A]]
+  inline def piecewise_A_ArrayInterpolator[A /* <: js.Array[Any] */](values: js.Array[A]): ArrayInterpolator[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ArrayInterpolator[A]]
   
   inline def piecewise_TData_Function1[TData](interpolate: js.Function2[/* a */ TData, /* b */ TData, Any], values: js.Array[TData]): js.Function1[/* t */ Double, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Any]]
   

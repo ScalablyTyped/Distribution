@@ -1,5 +1,6 @@
 package typings.web3Core.mod
 
+import typings.std.Promise
 import typings.web3Core.web3CoreStrings.confirmation
 import typings.web3Core.web3CoreStrings.error
 import typings.web3Core.web3CoreStrings.receipt
@@ -12,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait PromiEvent[T]
-  extends js.Promise[T] {
+  extends StObject
+     with Promise[T] {
   
   def on(
     `type`: error | confirmation | receipt | transactionHash | sent | sending,

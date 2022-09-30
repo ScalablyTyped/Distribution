@@ -16,6 +16,8 @@ object anon {
     
     var defaultCharset: js.UndefOr[String] = js.undefined
     
+    var defaultParamCharset: js.UndefOr[String] = js.undefined
+    
     var fieldNameSize: js.UndefOr[Double] = js.undefined
     
     var fieldSize: js.UndefOr[String | Double] = js.undefined
@@ -56,6 +58,10 @@ object anon {
       inline def setDefaultCharset(value: String): Self = StObject.set(x, "defaultCharset", value.asInstanceOf[js.Any])
       
       inline def setDefaultCharsetUndefined: Self = StObject.set(x, "defaultCharset", js.undefined)
+      
+      inline def setDefaultParamCharset(value: String): Self = StObject.set(x, "defaultParamCharset", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultParamCharsetUndefined: Self = StObject.set(x, "defaultParamCharset", js.undefined)
       
       inline def setFieldNameSize(value: Double): Self = StObject.set(x, "fieldNameSize", value.asInstanceOf[js.Any])
       

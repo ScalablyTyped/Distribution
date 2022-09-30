@@ -1,7 +1,7 @@
 package typings.antDesignPro
 
 import typings.react.mod.Component
-import typings.reactRouter.mod.RouteProps
+import typings.reactRouter.componentsMod.RouteProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +10,9 @@ object authorizedRouteMod {
   
   @JSImport("ant-design-pro/lib/Authorized/AuthorizedRoute", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IAuthorizedRouteProps, js.Any, js.Any]
+  open class default () extends Component[IAuthorizedRouteProps, Any, Any]
   
-  type AuthorizedRoute = Component[IAuthorizedRouteProps, js.Any, js.Any]
+  type AuthorizedRoute = Component[IAuthorizedRouteProps, Any, Any]
   
   trait IAuthorizedRouteProps
     extends StObject
@@ -34,11 +33,11 @@ object authorizedRouteMod {
       
       inline def setAuthorityFunction1(value: /* currentAuthority */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "authority", js.Any.fromFunction1(value))
       
-      inline def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value :_*))
+      inline def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value*))
     }
   }
   
-  type authority = String | js.Array[String] | authorityFN | js.Promise[js.Any]
+  type authority = String | js.Array[String] | authorityFN | js.Promise[Any]
   
   type authorityFN = js.Function1[/* currentAuthority */ js.UndefOr[String], Boolean]
 }

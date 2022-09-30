@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/style relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Style")
 @js.native
-class Style protected () extends Element[IModel] {
+open class Style protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -126,7 +126,7 @@ class Style protected () extends Element[IModel] {
 }
 object Style {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Style")
   @js.native
   val ^ : js.Any = js.native
   
@@ -211,13 +211,13 @@ object Style {
   inline def createInTitleUnderStyle(container: Title): Style = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTitleUnderStyle")(container.asInstanceOf[js.Any]).asInstanceOf[Style]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Style.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Style.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Style.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

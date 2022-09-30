@@ -1,22 +1,15 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.PIXI.ILoaderPlugin
+import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * {@link PIXI.Loader Loader} middleware for loading
-  * bitmap-based fonts suitable for using with {@link PIXI.BitmapText}.
-  * @class
-  * @memberof PIXI
-  * @implements PIXI.ILoaderPlugin
-  */
 @JSImport("pixi.js", "BitmapFontLoader")
 @js.native
-class BitmapFontLoader ()
-  extends StObject
-     with ILoaderPlugin
+open class BitmapFontLoader ()
+  extends typings.pixiTextBitmap.mod.BitmapFontLoader
+/* static members */
 object BitmapFontLoader {
   
   @JSImport("pixi.js", "BitmapFontLoader")
@@ -25,18 +18,40 @@ object BitmapFontLoader {
   
   /**
     * Called when the plugin is installed.
-    *
-    * @see PIXI.Loader.registerPlugin
+    * @see PIXI.extensions.add
     */
-  /* static member */
   inline def add(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Unit]
+  
+  /**
+    * Replacement for NodeJS's path.dirname
+    * @param {string} url - Path to get directory for
+    */
+  @JSImport("pixi.js", "BitmapFontLoader.dirname")
+  @js.native
+  def dirname: Any = js.native
+  inline def dirname_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dirname")(x.asInstanceOf[js.Any])
+  
+  /** @ignore */
+  @JSImport("pixi.js", "BitmapFontLoader.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+  
+  /**
+    * Get folder path from a resource.
+    * @param loader
+    * @param resource
+    */
+  @JSImport("pixi.js", "BitmapFontLoader.getBaseUrl")
+  @js.native
+  def getBaseUrl: Any = js.native
+  inline def getBaseUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getBaseUrl")(x.asInstanceOf[js.Any])
   
   /**
     * Called after a resource is loaded.
     * @see PIXI.Loader.loaderMiddleware
+    * @param this
     * @param {PIXI.LoaderResource} resource
-    * @param {function} next
+    * @param {Function} next
     */
-  /* static member */
-  inline def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def use(resource: typings.pixiLoaders.mod.LoaderResource, next: js.Function1[/* repeated */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

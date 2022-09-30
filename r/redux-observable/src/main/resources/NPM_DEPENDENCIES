@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redux-observable" : "1.2.0"
+      "redux-observable" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "redux-observable" : "1.2.0"
+      "redux-observable" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

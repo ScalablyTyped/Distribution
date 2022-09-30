@@ -5,6 +5,7 @@ import typings.angularDevkitSchematics.mod.Tree
 import typings.schematicsAngular.anon.Existing
 import typings.schematicsAngular.workspaceMod.WorkspaceDefinition
 import typings.schematicsAngular.workspaceModelsMod.Builders
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,7 +91,7 @@ object utilityMod {
   inline def readWorkspace(tree: Tree, path: String): js.Promise[WorkspaceDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("readWorkspace")(tree.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WorkspaceDefinition]]
   
   inline def updateWorkspace(
-    updater: js.Function1[/* workspace */ WorkspaceDefinition, Unit | Rule | (js.Thenable[Unit | Rule])]
+    updater: js.Function1[/* workspace */ WorkspaceDefinition, Unit | Rule | (PromiseLike[Unit | Rule])]
   ): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspace")(updater.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
   inline def writeWorkspace(tree: Tree, workspace: WorkspaceDefinition): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeWorkspace")(tree.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

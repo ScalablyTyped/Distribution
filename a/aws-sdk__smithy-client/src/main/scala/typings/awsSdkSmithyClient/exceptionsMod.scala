@@ -2,6 +2,7 @@ package typings.awsSdkSmithyClient
 
 import typings.awsSdkSmithyClient.awsSdkSmithyClientStrings.$metadata
 import typings.awsSdkSmithyClient.awsSdkSmithyClientStrings.client
+import typings.awsSdkSmithyClient.awsSdkSmithyClientStrings.message
 import typings.awsSdkSmithyClient.awsSdkSmithyClientStrings.server
 import typings.awsSdkTypes.httpMod.HttpResponse
 import typings.awsSdkTypes.responseMod.MetadataBearer
@@ -65,7 +66,7 @@ object exceptionsMod {
   inline def decorateServiceException[E /* <: ServiceException */](exception: E): E = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateServiceException")(exception.asInstanceOf[js.Any]).asInstanceOf[E]
   inline def decorateServiceException[E /* <: ServiceException */](exception: E, additions: Record[String, Any]): E = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateServiceException")(exception.asInstanceOf[js.Any], additions.asInstanceOf[js.Any])).asInstanceOf[E]
   
-  type ExceptionOptionType[ExceptionType /* <: js.Error */, BaseExceptionType /* <: js.Error */] = Omit[ExceptionType, Exclude[/* keyof BaseExceptionType */ String, $metadata]]
+  type ExceptionOptionType[ExceptionType /* <: js.Error */, BaseExceptionType /* <: js.Error */] = Omit[ExceptionType, Exclude[/* keyof BaseExceptionType */ String, $metadata | message]]
   
   trait ServiceExceptionOptions
     extends StObject

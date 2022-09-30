@@ -22,7 +22,7 @@ trait InstanceNetworkInterface extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more security groups.
+    * The security groups.
     */
   var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   
@@ -37,7 +37,7 @@ trait InstanceNetworkInterface extends StObject {
   var Ipv4Prefixes: js.UndefOr[InstanceIpv4PrefixList] = js.undefined
   
   /**
-    * One or more IPv6 addresses associated with the network interface.
+    * The IPv6 addresses associated with the network interface.
     */
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
   
@@ -72,7 +72,7 @@ trait InstanceNetworkInterface extends StObject {
   var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
-    * One or more private IPv4 addresses associated with the network interface.
+    * The private IPv4 addresses associated with the network interface.
     */
   var PrivateIpAddresses: js.UndefOr[InstancePrivateIpAddressList] = js.undefined
   

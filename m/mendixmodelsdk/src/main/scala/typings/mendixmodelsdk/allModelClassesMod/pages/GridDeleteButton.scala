@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.17.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridDeleteButton")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridDeleteButton")
 @js.native
-class GridDeleteButton protected ()
+open class GridDeleteButton protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.GridDeleteButton {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class GridDeleteButton protected ()
 }
 object GridDeleteButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridDeleteButton")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridDeleteButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,13 +53,13 @@ object GridDeleteButton {
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.GridDeleteButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridDeleteButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridDeleteButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridDeleteButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridDeleteButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridDeleteButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

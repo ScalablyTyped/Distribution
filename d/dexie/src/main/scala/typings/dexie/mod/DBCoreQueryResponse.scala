@@ -1,41 +1,24 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreQueryResponse extends js.Object {
+trait DBCoreQueryResponse extends StObject {
   
-  var result: js.Array[_] = js.native
+  var result: js.Array[Any]
 }
 object DBCoreQueryResponse {
   
-  @scala.inline
-  def apply(result: js.Array[_]): DBCoreQueryResponse = {
+  inline def apply(result: js.Array[Any]): DBCoreQueryResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBCoreQueryResponse]
   }
   
-  @scala.inline
-  implicit class DBCoreQueryResponseOps[Self <: DBCoreQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreQueryResponse](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResultVarargs(value: js.Any*): Self = this.set("result", js.Array(value :_*))
-    
-    @scala.inline
-    def setResult(value: js.Array[_]): Self = this.set("result", value.asInstanceOf[js.Any])
+    inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

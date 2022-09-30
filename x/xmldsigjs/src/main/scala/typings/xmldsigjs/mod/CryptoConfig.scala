@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "CryptoConfig")
 @js.native
-class CryptoConfig ()
+open class CryptoConfig ()
   extends typings.xmldsigjs.cryptoConfigMod.CryptoConfig
 /* static members */
 object CryptoConfig {

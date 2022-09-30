@@ -12,8 +12,8 @@ import typings.nwsapi.anon.PartialConfig
 import typings.nwsapi.mod.MatcherMode.MATCH
 import typings.nwsapi.mod.MatcherMode.SELECT
 import typings.nwsapi.mod.MatcherMode.USE_COLLECTION_ITEM
-import typings.nwsapi.nwsapiNumbers.`-1`
-import typings.nwsapi.nwsapiNumbers.`2`
+import typings.nwsapi.nwsapiInts.`-1`
+import typings.nwsapi.nwsapiInts.`2`
 import typings.nwsapi.nwsapiStrings.`false`
 import typings.nwsapi.nwsapiStrings.`true`
 import typings.std.ArrayLike

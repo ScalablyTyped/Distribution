@@ -1,8 +1,8 @@
 package typings.doubleclickGpt
 
 import typings.doubleclickGpt.anon.ChangeCorrelator
-import typings.doubleclickGpt.doubleclickGptNumbers.`0`
-import typings.doubleclickGpt.doubleclickGptNumbers.`1`
+import typings.doubleclickGpt.doubleclickGptInts.`0`
+import typings.doubleclickGpt.doubleclickGptInts.`1`
 import typings.doubleclickGpt.doubleclickGptStrings.slotRenderEnded
 import typings.doubleclickGpt.doubleclickGptStrings.slotRequested
 import typings.doubleclickGpt.doubleclickGptStrings.slotResponseReceived

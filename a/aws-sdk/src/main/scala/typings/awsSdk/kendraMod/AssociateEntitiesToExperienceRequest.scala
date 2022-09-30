@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateEntitiesToExperienceRequest extends StObject {
   
   /**
-    * Lists users or groups in your Amazon Web Services SSO identity source.
+    * Lists users or groups in your IAM Identity Center identity source.
     */
   var EntityList: AssociateEntityList
   

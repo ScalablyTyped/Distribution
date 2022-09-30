@@ -106,7 +106,7 @@ trait ContentControl
   var color: String = js.native
   
   /**
-    * Gets the collection of content control objects in the content control. Read-only.
+    * Gets the collection of content control objects in the content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -128,7 +128,7 @@ trait ContentControl
   def delete(keepContent: Boolean): Unit = js.native
   
   /**
-    * Gets the collection of endnotes in the contentcontrol. Read-only.
+    * Gets the collection of endnotes in the content control.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -136,7 +136,15 @@ trait ContentControl
   val endnotes: NoteItemCollection = js.native
   
   /**
-    * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the collection of field objects in the content control.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val fields: FieldCollection = js.native
+  
+  /**
+    * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -144,7 +152,7 @@ trait ContentControl
   val font: Font = js.native
   
   /**
-    * Gets the collection of footnotes in the contentcontrol. Read-only.
+    * Gets the collection of footnotes in the content control.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -155,7 +163,7 @@ trait ContentControl
     * Gets comments associated with the content control.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getComments(): CommentCollection = js.native
   
@@ -191,7 +199,7 @@ trait ContentControl
     * Gets reviewed text based on ChangeTrackingVersion selection.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     *
     * @param changeTrackingVersion Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
     */
@@ -212,7 +220,7 @@ trait ContentControl
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
   
   /**
-    * Gets an integer that represents the content control identifier. Read-only.
+    * Gets an integer that represents the content control identifier.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -220,7 +228,7 @@ trait ContentControl
   val id: Double = js.native
   
   /**
-    * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+    * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -263,7 +271,9 @@ trait ContentControl
   def insertBreak(breakType: BreakType, insertLocation: start): Unit = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: end): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: end, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts a document into the content control at the specified location.
     *
@@ -272,9 +282,12 @@ trait ContentControl
     *
     * @param base64File Required. The base64 encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: replace): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: start): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: start, asNewParagraph: Boolean): Range = js.native
   
   def insertHtml(html: String, insertLocation: Replace | Start | End): Range = js.native
   def insertHtml(html: String, insertLocation: end): Range = js.native
@@ -305,7 +318,9 @@ trait ContentControl
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: start): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: end): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: end, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML into the content control at the specified location.
     *
@@ -314,9 +329,12 @@ trait ContentControl
     *
     * @param ooxml Required. The OOXML to be inserted in to the content control.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: replace): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: start): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: start, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Start | End | Before | After): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: after): Paragraph = js.native
@@ -375,7 +393,7 @@ trait ContentControl
   def insertText(text: String, insertLocation: start): Range = js.native
   
   /**
-    * Gets the collection of list objects in the content control. Read-only.
+    * Gets the collection of list objects in the content control.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -394,7 +412,7 @@ trait ContentControl
   def load(propertyNames: js.Array[String]): ContentControl = js.native
   
   /**
-    * Gets the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+    * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -402,7 +420,7 @@ trait ContentControl
   val paragraphs: ParagraphCollection = js.native
   
   /**
-    * Gets the parent body of the content control. Read-only.
+    * Gets the parent body of the content control.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -410,7 +428,7 @@ trait ContentControl
   val parentBody: Body = js.native
   
   /**
-    * Gets the content control that contains the content control. Throws an error if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -418,7 +436,7 @@ trait ContentControl
   val parentContentControl: ContentControl = js.native
   
   /**
-    * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -426,7 +444,7 @@ trait ContentControl
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    * Gets the table that contains the content control. Throws an error if it is not contained in a table. Read-only.
+    * Gets the table that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -434,7 +452,7 @@ trait ContentControl
   val parentTable: Table = js.native
   
   /**
-    * Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -442,7 +460,7 @@ trait ContentControl
   val parentTableCell: TableCell = js.native
   
   /**
-    * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the content control. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -450,7 +468,7 @@ trait ContentControl
   val parentTableCellOrNullObject: TableCell = js.native
   
   /**
-    * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.
+    * Gets the table that contains the content control. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -458,8 +476,7 @@ trait ContentControl
   val parentTableOrNullObject: Table = js.native
   
   /**
-    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-    * **Note**: The set operation for this property is not supported in Word on the web.
+    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -551,7 +568,7 @@ trait ContentControl
   var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ Any = js.native
   
   /**
-    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -559,7 +576,7 @@ trait ContentControl
   val subtype: ContentControlType | Unknown_ | RichTextInline | RichTextParagraphs | RichTextTableCell | RichTextTableRow | RichTextTable | PlainTextInline | PlainTextParagraph | Picture | BuildingBlockGallery | CheckBox | ComboBox | DropDownList | DatePicker | RepeatingSection | RichText | PlainText = js.native
   
   /**
-    * Gets the collection of table objects in the content control. Read-only.
+    * Gets the collection of table objects in the content control.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -575,7 +592,7 @@ trait ContentControl
   var tag: String = js.native
   
   /**
-    * Gets the text of the content control. Read-only.
+    * Gets the text of the content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -602,7 +619,7 @@ trait ContentControl
   def track(): ContentControl = js.native
   
   /**
-    * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+    * Gets the content control type. Only rich text content controls are supported currently.
     *
     * @remarks
     * [Api set: WordApi 1.1]

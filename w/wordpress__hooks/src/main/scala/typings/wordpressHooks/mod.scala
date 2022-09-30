@@ -29,7 +29,7 @@ object mod {
   @js.native
   val addFilter: AddHook = js.native
   
-  inline def applyFilters(hookName: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyFilters")(List(hookName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def applyFilters(hookName: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyFilters")(scala.List(hookName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   /** @typedef {_Hooks} Hooks */
   /**
@@ -55,7 +55,7 @@ object mod {
   @js.native
   val didFilter: DidHook = js.native
   
-  inline def doAction(hookName: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("doAction")(List(hookName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def doAction(hookName: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("doAction")(scala.List(hookName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("@wordpress/hooks", "doingAction")
   @js.native

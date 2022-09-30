@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object predicatesMod {
   
-  @JSImport("react-dnd-touch-backend/lib/utils/predicates", JSImport.Namespace)
+  @JSImport("react-dnd-touch-backend/dist/utils/predicates", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

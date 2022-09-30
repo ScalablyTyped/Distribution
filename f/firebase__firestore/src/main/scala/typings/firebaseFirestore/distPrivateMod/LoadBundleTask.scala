@@ -46,7 +46,7 @@ open class LoadBundleTask ()
     *
     * @param onRejected - Called when an error occurs during bundle loading.
     */
-  def `catch`[R](onRejected: js.Function1[/* a */ js.Error, R | js.Thenable[R]]): js.Promise[R | LoadBundleTaskProgress] = js.native
+  def `catch`[R](onRejected: js.Function1[/* a */ js.Error, R | PromiseLike[R]]): js.Promise[R | LoadBundleTaskProgress] = js.native
   
   /**
     * Registers functions to listen to bundle loading progress events.

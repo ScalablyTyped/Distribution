@@ -62,7 +62,7 @@ object hashesInterfaceMod {
       *
       * @param {Uint8Array} input
       */
-    def digest(input: js.typedarray.Uint8Array): js.Promise[MultihashDigest[Code]] | MultihashDigest[Code]
+    def digest(input: js.typedarray.Uint8Array): js.Promise[MultihashDigest[Double]] | MultihashDigest[Double]
     
     /**
       * Name of the multihash
@@ -73,7 +73,7 @@ object hashesInterfaceMod {
     
     inline def apply[Code /* <: Double */](
       code: Code,
-      digest: js.typedarray.Uint8Array => js.Promise[MultihashDigest[Code]] | MultihashDigest[Code],
+      digest: js.typedarray.Uint8Array => js.Promise[MultihashDigest[Double]] | MultihashDigest[Double],
       name: String
     ): MultihashHasher[Code] = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], digest = js.Any.fromFunction1(digest), name = name.asInstanceOf[js.Any])
@@ -84,7 +84,7 @@ object hashesInterfaceMod {
       
       inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[MultihashDigest[Code]] | MultihashDigest[Code]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
+      inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[MultihashDigest[Double]] | MultihashDigest[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -97,7 +97,7 @@ object hashesInterfaceMod {
     
     inline def apply[Code /* <: Double */](
       code: Code,
-      digest: js.typedarray.Uint8Array => js.Promise[MultihashDigest[Code]] | MultihashDigest[Code],
+      digest: js.typedarray.Uint8Array => js.Promise[MultihashDigest[Double]] | MultihashDigest[Double],
       name: String
     ): SyncMultihashHasher[Code] = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], digest = js.Any.fromFunction1(digest), name = name.asInstanceOf[js.Any])

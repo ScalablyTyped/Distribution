@@ -54,11 +54,11 @@ object mod {
   
   @JSImport("redux-pack", "middleware")
   @js.native
-  val middleware: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = js.native
+  val middleware: Middleware[js.Object, Any, Dispatch[AnyAction]] = js.native
   
   trait Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]
     extends StObject
-       with typings.redux.mod.Action[js.Any] {
+       with typings.redux.mod.Action[Any] {
     
     // add optional error key to conform to FSA design: https://github.com/redux-utilities/flux-standard-action
     // note that users of this middleware (using our types) must conform to FSA shaped actions or code will not compile
@@ -74,7 +74,7 @@ object mod {
   }
   object Action {
     
-    inline def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](`type`: js.Any): Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
+    inline def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](`type`: Any): Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
@@ -169,11 +169,11 @@ object mod {
   
   trait Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] extends StObject {
     
-    var always: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[js.Any]]] = js.undefined
+    var always: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[Any]]] = js.undefined
     
     var failure: js.UndefOr[handlerReducer[S, PackActionPayload[TErrorPayload, TMetaPayload]]] = js.undefined
     
-    var finish: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[js.Any]]] = js.undefined
+    var finish: js.UndefOr[handlerReducer[S, typings.redux.mod.Action[Any]]] = js.undefined
     
     var start: js.UndefOr[handlerReducer[S, PackActionPayload[TStartPayload, TMetaPayload]]] = js.undefined
     
@@ -188,7 +188,7 @@ object mod {
     
     extension [Self <: Handlers[?, ?, ?, ?, ?], S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](x: Self & (Handlers[S, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload])) {
       
-      inline def setAlways(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
+      inline def setAlways(value: (S, typings.redux.mod.Action[Any]) => S): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
       
       inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
@@ -196,7 +196,7 @@ object mod {
       
       inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
-      inline def setFinish(value: (S, typings.redux.mod.Action[js.Any]) => S): Self = StObject.set(x, "finish", js.Any.fromFunction2(value))
+      inline def setFinish(value: (S, typings.redux.mod.Action[Any]) => S): Self = StObject.set(x, "finish", js.Any.fromFunction2(value))
       
       inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
       
@@ -229,7 +229,7 @@ object mod {
   
   trait PackActionPayload[Payload, M]
     extends StObject
-       with typings.redux.mod.Action[js.Any] {
+       with typings.redux.mod.Action[Any] {
     
     var meta: MetaPayload[M]
     
@@ -237,7 +237,7 @@ object mod {
   }
   object PackActionPayload {
     
-    inline def apply[Payload, M](meta: MetaPayload[M], payload: Payload, `type`: js.Any): PackActionPayload[Payload, M] = {
+    inline def apply[Payload, M](meta: MetaPayload[M], payload: Payload, `type`: Any): PackActionPayload[Payload, M] = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackActionPayload[Payload, M]]
@@ -255,11 +255,11 @@ object mod {
     
     var error: Boolean
     
-    var payload: js.Any
+    var payload: Any
   }
   object PackError {
     
-    inline def apply(error: Boolean, payload: js.Any): PackError = {
+    inline def apply(error: Boolean, payload: Any): PackError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackError]
     }
@@ -268,11 +268,11 @@ object mod {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
-  type TFullState = StringDictionary[js.Any]
+  type TFullState = StringDictionary[Any]
   
   type handlerReducer[S, A] = js.Function2[/* state */ S, /* action */ A, S]
 }

@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DropDown")
 @js.native
-class DropDown protected ()
+open class DropDown protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DropDown {
   def this(
     model: AbstractModel,

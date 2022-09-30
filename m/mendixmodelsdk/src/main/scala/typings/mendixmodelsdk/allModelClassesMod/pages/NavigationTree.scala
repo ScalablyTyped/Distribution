@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/navigation-tree relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationTree")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationTree")
 @js.native
-class NavigationTree protected ()
+open class NavigationTree protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.NavigationTree {
   def this(
     model: AbstractModel,
@@ -33,7 +33,7 @@ class NavigationTree protected ()
 }
 object NavigationTree {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationTree")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationTree")
   @js.native
   val ^ : js.Any = js.native
   
@@ -607,13 +607,13 @@ object NavigationTree {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.NavigationTree = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.NavigationTree]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationTree.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationTree.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.NavigationTree.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.NavigationTree.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

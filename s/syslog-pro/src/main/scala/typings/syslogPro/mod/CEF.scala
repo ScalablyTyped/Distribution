@@ -71,21 +71,21 @@ open class CEF ()
 object CEF {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.syslogPro.syslogProNumbers.`0`
-    - typings.syslogPro.syslogProNumbers.`1`
-    - typings.syslogPro.syslogProNumbers.`2`
-    - typings.syslogPro.syslogProNumbers.`3`
+    - typings.syslogPro.syslogProInts.`0`
+    - typings.syslogPro.syslogProInts.`1`
+    - typings.syslogPro.syslogProInts.`2`
+    - typings.syslogPro.syslogProInts.`3`
   */
   trait ExtensionType extends StObject
   object ExtensionType {
     
-    inline def `0`: typings.syslogPro.syslogProNumbers.`0` = 0.asInstanceOf[typings.syslogPro.syslogProNumbers.`0`]
+    inline def `0`: typings.syslogPro.syslogProInts.`0` = 0.asInstanceOf[typings.syslogPro.syslogProInts.`0`]
     
-    inline def `1`: typings.syslogPro.syslogProNumbers.`1` = 1.asInstanceOf[typings.syslogPro.syslogProNumbers.`1`]
+    inline def `1`: typings.syslogPro.syslogProInts.`1` = 1.asInstanceOf[typings.syslogPro.syslogProInts.`1`]
     
-    inline def `2`: typings.syslogPro.syslogProNumbers.`2` = 2.asInstanceOf[typings.syslogPro.syslogProNumbers.`2`]
+    inline def `2`: typings.syslogPro.syslogProInts.`2` = 2.asInstanceOf[typings.syslogPro.syslogProInts.`2`]
     
-    inline def `3`: typings.syslogPro.syslogProNumbers.`3` = 3.asInstanceOf[typings.syslogPro.syslogProNumbers.`3`]
+    inline def `3`: typings.syslogPro.syslogProInts.`3` = 3.asInstanceOf[typings.syslogPro.syslogProInts.`3`]
   }
   
   trait Extensions
@@ -1461,17 +1461,17 @@ object CEF {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.syslogPro.syslogProNumbers.`0`
-    - typings.syslogPro.syslogProNumbers.`1`
-    - typings.syslogPro.syslogProNumbers.`2`
-    - typings.syslogPro.syslogProNumbers.`3`
-    - typings.syslogPro.syslogProNumbers.`4`
-    - typings.syslogPro.syslogProNumbers.`5`
-    - typings.syslogPro.syslogProNumbers.`6`
-    - typings.syslogPro.syslogProNumbers.`7`
-    - typings.syslogPro.syslogProNumbers.`8`
-    - typings.syslogPro.syslogProNumbers.`9`
-    - typings.syslogPro.syslogProNumbers.`10`
+    - typings.syslogPro.syslogProInts.`0`
+    - typings.syslogPro.syslogProInts.`1`
+    - typings.syslogPro.syslogProInts.`2`
+    - typings.syslogPro.syslogProInts.`3`
+    - typings.syslogPro.syslogProInts.`4`
+    - typings.syslogPro.syslogProInts.`5`
+    - typings.syslogPro.syslogProInts.`6`
+    - typings.syslogPro.syslogProInts.`7`
+    - typings.syslogPro.syslogProInts.`8`
+    - typings.syslogPro.syslogProInts.`9`
+    - typings.syslogPro.syslogProInts.`10`
     - typings.syslogPro.syslogProStrings.Unknown
     - typings.syslogPro.syslogProStrings.Low
     - typings.syslogPro.syslogProStrings.Medium
@@ -1481,27 +1481,27 @@ object CEF {
   trait Severity extends StObject
   object Severity {
     
-    inline def `0`: typings.syslogPro.syslogProNumbers.`0` = 0.asInstanceOf[typings.syslogPro.syslogProNumbers.`0`]
+    inline def `0`: typings.syslogPro.syslogProInts.`0` = 0.asInstanceOf[typings.syslogPro.syslogProInts.`0`]
     
-    inline def `1`: typings.syslogPro.syslogProNumbers.`1` = 1.asInstanceOf[typings.syslogPro.syslogProNumbers.`1`]
+    inline def `1`: typings.syslogPro.syslogProInts.`1` = 1.asInstanceOf[typings.syslogPro.syslogProInts.`1`]
     
-    inline def `10`: typings.syslogPro.syslogProNumbers.`10` = 10.asInstanceOf[typings.syslogPro.syslogProNumbers.`10`]
+    inline def `10`: typings.syslogPro.syslogProInts.`10` = 10.asInstanceOf[typings.syslogPro.syslogProInts.`10`]
     
-    inline def `2`: typings.syslogPro.syslogProNumbers.`2` = 2.asInstanceOf[typings.syslogPro.syslogProNumbers.`2`]
+    inline def `2`: typings.syslogPro.syslogProInts.`2` = 2.asInstanceOf[typings.syslogPro.syslogProInts.`2`]
     
-    inline def `3`: typings.syslogPro.syslogProNumbers.`3` = 3.asInstanceOf[typings.syslogPro.syslogProNumbers.`3`]
+    inline def `3`: typings.syslogPro.syslogProInts.`3` = 3.asInstanceOf[typings.syslogPro.syslogProInts.`3`]
     
-    inline def `4`: typings.syslogPro.syslogProNumbers.`4` = 4.asInstanceOf[typings.syslogPro.syslogProNumbers.`4`]
+    inline def `4`: typings.syslogPro.syslogProInts.`4` = 4.asInstanceOf[typings.syslogPro.syslogProInts.`4`]
     
-    inline def `5`: typings.syslogPro.syslogProNumbers.`5` = 5.asInstanceOf[typings.syslogPro.syslogProNumbers.`5`]
+    inline def `5`: typings.syslogPro.syslogProInts.`5` = 5.asInstanceOf[typings.syslogPro.syslogProInts.`5`]
     
-    inline def `6`: typings.syslogPro.syslogProNumbers.`6` = 6.asInstanceOf[typings.syslogPro.syslogProNumbers.`6`]
+    inline def `6`: typings.syslogPro.syslogProInts.`6` = 6.asInstanceOf[typings.syslogPro.syslogProInts.`6`]
     
-    inline def `7`: typings.syslogPro.syslogProNumbers.`7` = 7.asInstanceOf[typings.syslogPro.syslogProNumbers.`7`]
+    inline def `7`: typings.syslogPro.syslogProInts.`7` = 7.asInstanceOf[typings.syslogPro.syslogProInts.`7`]
     
-    inline def `8`: typings.syslogPro.syslogProNumbers.`8` = 8.asInstanceOf[typings.syslogPro.syslogProNumbers.`8`]
+    inline def `8`: typings.syslogPro.syslogProInts.`8` = 8.asInstanceOf[typings.syslogPro.syslogProInts.`8`]
     
-    inline def `9`: typings.syslogPro.syslogProNumbers.`9` = 9.asInstanceOf[typings.syslogPro.syslogProNumbers.`9`]
+    inline def `9`: typings.syslogPro.syslogProInts.`9` = 9.asInstanceOf[typings.syslogPro.syslogProInts.`9`]
     
     inline def High: typings.syslogPro.syslogProStrings.High = "High".asInstanceOf[typings.syslogPro.syslogProStrings.High]
     
@@ -1515,42 +1515,42 @@ object CEF {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.syslogPro.syslogProNumbers.`0`
-    - typings.syslogPro.syslogProNumbers.`1`
-    - typings.syslogPro.syslogProNumbers.`2`
-    - typings.syslogPro.syslogProNumbers.`3`
-    - typings.syslogPro.syslogProNumbers.`4`
-    - typings.syslogPro.syslogProNumbers.`5`
-    - typings.syslogPro.syslogProNumbers.`6`
-    - typings.syslogPro.syslogProNumbers.`7`
-    - typings.syslogPro.syslogProNumbers.`8`
-    - typings.syslogPro.syslogProNumbers.`9`
-    - typings.syslogPro.syslogProNumbers.`10`
+    - typings.syslogPro.syslogProInts.`0`
+    - typings.syslogPro.syslogProInts.`1`
+    - typings.syslogPro.syslogProInts.`2`
+    - typings.syslogPro.syslogProInts.`3`
+    - typings.syslogPro.syslogProInts.`4`
+    - typings.syslogPro.syslogProInts.`5`
+    - typings.syslogPro.syslogProInts.`6`
+    - typings.syslogPro.syslogProInts.`7`
+    - typings.syslogPro.syslogProInts.`8`
+    - typings.syslogPro.syslogProInts.`9`
+    - typings.syslogPro.syslogProInts.`10`
   */
   trait SeverityNumber extends StObject
   object SeverityNumber {
     
-    inline def `0`: typings.syslogPro.syslogProNumbers.`0` = 0.asInstanceOf[typings.syslogPro.syslogProNumbers.`0`]
+    inline def `0`: typings.syslogPro.syslogProInts.`0` = 0.asInstanceOf[typings.syslogPro.syslogProInts.`0`]
     
-    inline def `1`: typings.syslogPro.syslogProNumbers.`1` = 1.asInstanceOf[typings.syslogPro.syslogProNumbers.`1`]
+    inline def `1`: typings.syslogPro.syslogProInts.`1` = 1.asInstanceOf[typings.syslogPro.syslogProInts.`1`]
     
-    inline def `10`: typings.syslogPro.syslogProNumbers.`10` = 10.asInstanceOf[typings.syslogPro.syslogProNumbers.`10`]
+    inline def `10`: typings.syslogPro.syslogProInts.`10` = 10.asInstanceOf[typings.syslogPro.syslogProInts.`10`]
     
-    inline def `2`: typings.syslogPro.syslogProNumbers.`2` = 2.asInstanceOf[typings.syslogPro.syslogProNumbers.`2`]
+    inline def `2`: typings.syslogPro.syslogProInts.`2` = 2.asInstanceOf[typings.syslogPro.syslogProInts.`2`]
     
-    inline def `3`: typings.syslogPro.syslogProNumbers.`3` = 3.asInstanceOf[typings.syslogPro.syslogProNumbers.`3`]
+    inline def `3`: typings.syslogPro.syslogProInts.`3` = 3.asInstanceOf[typings.syslogPro.syslogProInts.`3`]
     
-    inline def `4`: typings.syslogPro.syslogProNumbers.`4` = 4.asInstanceOf[typings.syslogPro.syslogProNumbers.`4`]
+    inline def `4`: typings.syslogPro.syslogProInts.`4` = 4.asInstanceOf[typings.syslogPro.syslogProInts.`4`]
     
-    inline def `5`: typings.syslogPro.syslogProNumbers.`5` = 5.asInstanceOf[typings.syslogPro.syslogProNumbers.`5`]
+    inline def `5`: typings.syslogPro.syslogProInts.`5` = 5.asInstanceOf[typings.syslogPro.syslogProInts.`5`]
     
-    inline def `6`: typings.syslogPro.syslogProNumbers.`6` = 6.asInstanceOf[typings.syslogPro.syslogProNumbers.`6`]
+    inline def `6`: typings.syslogPro.syslogProInts.`6` = 6.asInstanceOf[typings.syslogPro.syslogProInts.`6`]
     
-    inline def `7`: typings.syslogPro.syslogProNumbers.`7` = 7.asInstanceOf[typings.syslogPro.syslogProNumbers.`7`]
+    inline def `7`: typings.syslogPro.syslogProInts.`7` = 7.asInstanceOf[typings.syslogPro.syslogProInts.`7`]
     
-    inline def `8`: typings.syslogPro.syslogProNumbers.`8` = 8.asInstanceOf[typings.syslogPro.syslogProNumbers.`8`]
+    inline def `8`: typings.syslogPro.syslogProInts.`8` = 8.asInstanceOf[typings.syslogPro.syslogProInts.`8`]
     
-    inline def `9`: typings.syslogPro.syslogProNumbers.`9` = 9.asInstanceOf[typings.syslogPro.syslogProNumbers.`9`]
+    inline def `9`: typings.syslogPro.syslogProInts.`9` = 9.asInstanceOf[typings.syslogPro.syslogProInts.`9`]
   }
   
   /* Rewritten from type alias, can be one of: 

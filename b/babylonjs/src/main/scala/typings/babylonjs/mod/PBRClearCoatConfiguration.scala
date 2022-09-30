@@ -17,7 +17,7 @@ object PBRClearCoatConfiguration {
   /**
     * This defaults to 1.5 corresponding to a 0.04 f0 or a 4% reflectance at normal incidence
     * The default fits with a polyurethane material.
-    * @hidden
+    * @internal
     */
   @JSImport("babylonjs", "PBRClearCoatConfiguration._DefaultIndexOfRefraction")
   @js.native

@@ -2059,6 +2059,12 @@ object devtoolsProtocolStrings {
   inline def ParentIsAd: ParentIsAd = "ParentIsAd".asInstanceOf[ParentIsAd]
   
   @js.native
+  sealed trait PaymentInstruments
+    extends StObject
+       with DeprecationIssueType
+  inline def PaymentInstruments: PaymentInstruments = "PaymentInstruments".asInstanceOf[PaymentInstruments]
+  
+  @js.native
   sealed trait PaymentManager
     extends StObject
        with BackForwardCacheNotRestoredReason

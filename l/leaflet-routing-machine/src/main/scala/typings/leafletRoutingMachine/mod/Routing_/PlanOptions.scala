@@ -15,14 +15,19 @@ trait PlanOptions extends StObject {
   var addWaypoints: js.UndefOr[Boolean] = js.undefined
   
   var createGeocoder: js.UndefOr[
-    js.Function3[/* waypointIndex */ Double, /* numberWaypoints */ Double, /* plan */ Plan_, js.Object]
+    js.Function3[
+      /* waypointIndex */ Double, 
+      /* numberOfWaypoints */ Double, 
+      /* plan */ Plan_, 
+      js.Object
+    ]
   ] = js.undefined
   
   var createGeocoderElement: js.UndefOr[
     js.Function4[
       /* waypoint */ Waypoint_, 
       /* waypointIndex */ Double, 
-      /* numberWaypoints */ Double, 
+      /* numberOfWaypoints */ Double, 
       /* options */ this.type, 
       GeocoderElement_
     ]
@@ -32,8 +37,8 @@ trait PlanOptions extends StObject {
     js.Function3[
       /* waypointIndex */ Double, 
       /* waypoint */ Waypoint_, 
-      /* numberWaypoints */ Double, 
-      Marker_[js.Any]
+      /* numberOfWaypoints */ Double, 
+      Marker_[Any] | Boolean
     ]
   ] = js.undefined
   
@@ -41,11 +46,11 @@ trait PlanOptions extends StObject {
   
   var draggableWaypoints: js.UndefOr[Boolean] = js.undefined
   
-  var geocoder: js.UndefOr[js.Any] = js.undefined
+  var geocoder: js.UndefOr[Any] = js.undefined
   
-  var geocoderClass: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberWaypoints */ Double, Unit]] = js.undefined
+  var geocoderClass: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberOfWaypoints */ Double, Unit]] = js.undefined
   
-  var geocoderPlaceholder: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberWaypoints */ Double, String]] = js.undefined
+  var geocoderPlaceholder: js.UndefOr[js.Function2[/* waypointIndex */ Double, /* numberOfWaypoints */ Double, String]] = js.undefined
   
   var geocodersClassName: js.UndefOr[String] = js.undefined
   
@@ -76,10 +81,10 @@ object PlanOptions {
     
     inline def setAddWaypointsUndefined: Self = StObject.set(x, "addWaypoints", js.undefined)
     
-    inline def setCreateGeocoder(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double, /* plan */ Plan_) => js.Object): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
+    inline def setCreateGeocoder(value: (/* waypointIndex */ Double, /* numberOfWaypoints */ Double, /* plan */ Plan_) => js.Object): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
     
     inline def setCreateGeocoderElement(
-      value: (/* waypoint */ Waypoint_, /* waypointIndex */ Double, /* numberWaypoints */ Double, PlanOptions) => GeocoderElement_
+      value: (/* waypoint */ Waypoint_, /* waypointIndex */ Double, /* numberOfWaypoints */ Double, PlanOptions) => GeocoderElement_
     ): Self = StObject.set(x, "createGeocoderElement", js.Any.fromFunction4(value))
     
     inline def setCreateGeocoderElementUndefined: Self = StObject.set(x, "createGeocoderElement", js.undefined)
@@ -87,7 +92,7 @@ object PlanOptions {
     inline def setCreateGeocoderUndefined: Self = StObject.set(x, "createGeocoder", js.undefined)
     
     inline def setCreateMarker(
-      value: (/* waypointIndex */ Double, /* waypoint */ Waypoint_, /* numberWaypoints */ Double) => Marker_[js.Any]
+      value: (/* waypointIndex */ Double, /* waypoint */ Waypoint_, /* numberOfWaypoints */ Double) => Marker_[Any] | Boolean
     ): Self = StObject.set(x, "createMarker", js.Any.fromFunction3(value))
     
     inline def setCreateMarkerUndefined: Self = StObject.set(x, "createMarker", js.undefined)
@@ -96,19 +101,19 @@ object PlanOptions {
     
     inline def setDragStylesUndefined: Self = StObject.set(x, "dragStyles", js.undefined)
     
-    inline def setDragStylesVarargs(value: PathOptions*): Self = StObject.set(x, "dragStyles", js.Array(value :_*))
+    inline def setDragStylesVarargs(value: PathOptions*): Self = StObject.set(x, "dragStyles", js.Array(value*))
     
     inline def setDraggableWaypoints(value: Boolean): Self = StObject.set(x, "draggableWaypoints", value.asInstanceOf[js.Any])
     
     inline def setDraggableWaypointsUndefined: Self = StObject.set(x, "draggableWaypoints", js.undefined)
     
-    inline def setGeocoder(value: js.Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
+    inline def setGeocoder(value: Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
     
-    inline def setGeocoderClass(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => Unit): Self = StObject.set(x, "geocoderClass", js.Any.fromFunction2(value))
+    inline def setGeocoderClass(value: (/* waypointIndex */ Double, /* numberOfWaypoints */ Double) => Unit): Self = StObject.set(x, "geocoderClass", js.Any.fromFunction2(value))
     
     inline def setGeocoderClassUndefined: Self = StObject.set(x, "geocoderClass", js.undefined)
     
-    inline def setGeocoderPlaceholder(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => String): Self = StObject.set(x, "geocoderPlaceholder", js.Any.fromFunction2(value))
+    inline def setGeocoderPlaceholder(value: (/* waypointIndex */ Double, /* numberOfWaypoints */ Double) => String): Self = StObject.set(x, "geocoderPlaceholder", js.Any.fromFunction2(value))
     
     inline def setGeocoderPlaceholderUndefined: Self = StObject.set(x, "geocoderPlaceholder", js.undefined)
     

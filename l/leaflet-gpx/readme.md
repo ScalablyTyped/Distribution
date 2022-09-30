@@ -10,10 +10,10 @@ A Leaflet plugin for showing a GPX track on a map
 | ------------------ | :-------------: |
 | Full name          | leaflet-gpx |
 | Keywords           | leaflet, gpx, leaflet-gpx, map, gps |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 8681 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2956.3333333333335 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/mpetazzoni/leaflet-gpx#readme)

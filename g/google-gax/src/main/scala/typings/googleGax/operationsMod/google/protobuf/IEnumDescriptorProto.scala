@@ -50,7 +50,7 @@ object IEnumDescriptorProto {
     
     inline def setReservedNameUndefined: Self = StObject.set(x, "reservedName", js.undefined)
     
-    inline def setReservedNameVarargs(value: String*): Self = StObject.set(x, "reservedName", js.Array(value :_*))
+    inline def setReservedNameVarargs(value: String*): Self = StObject.set(x, "reservedName", js.Array(value*))
     
     inline def setReservedRange(value: js.Array[IEnumReservedRange]): Self = StObject.set(x, "reservedRange", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object IEnumDescriptorProto {
     
     inline def setReservedRangeUndefined: Self = StObject.set(x, "reservedRange", js.undefined)
     
-    inline def setReservedRangeVarargs(value: IEnumReservedRange*): Self = StObject.set(x, "reservedRange", js.Array(value :_*))
+    inline def setReservedRangeVarargs(value: IEnumReservedRange*): Self = StObject.set(x, "reservedRange", js.Array(value*))
     
     inline def setValue(value: js.Array[IEnumValueDescriptorProto]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
@@ -66,6 +66,6 @@ object IEnumDescriptorProto {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: IEnumValueDescriptorProto*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: IEnumValueDescriptorProto*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

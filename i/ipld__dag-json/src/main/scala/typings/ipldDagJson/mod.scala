@@ -1,6 +1,6 @@
 package typings.ipldDagJson
 
-import typings.ipldDagJson.ipldDagJsonNumbers.`297`
+import typings.ipldDagJson.ipldDagJsonInts.`297`
 import typings.ipldDagJson.ipldDagJsonStrings.`dag-json`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

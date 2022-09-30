@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__blocks
 
-Typings are for version 6.4
+Typings are for version 11.0
 
 ## Library description:
 Block API for WordPress.
@@ -10,10 +10,10 @@ Block API for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/blocks |
 | Keywords           | wordpress, gutenberg, blocks |
-| # releases         | 51 |
-| # dependents       | 25 |
-| # downloads        | 814727 |
-| # stars            | 0 |
+| # releases         | 85 |
+| # dependents       | 0.0 |
+| # downloads        | 156926.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/blocks/README.md)

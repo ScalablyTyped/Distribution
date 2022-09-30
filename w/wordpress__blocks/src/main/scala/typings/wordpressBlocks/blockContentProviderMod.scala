@@ -30,7 +30,7 @@ object blockContentProviderMod {
     override def _to: ComponentType[Props] = ^
   }
   
-  inline def withBlockContentContext[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, BlockContent]]]
+  inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, BlockContent]]]
   
   object BlockContentProvider {
     
@@ -38,11 +38,11 @@ object blockContentProviderMod {
       
       var children: ReactNode
       
-      var innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]
+      var innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
     }
     object Props {
       
-      inline def apply(innerBlocks: js.Array[BlockInstance[StringDictionary[js.Any]]]): Props = {
+      inline def apply(innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]): Props = {
         val __obj = js.Dynamic.literal(innerBlocks = innerBlocks.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
@@ -53,9 +53,9 @@ object blockContentProviderMod {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+        inline def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
         
-        inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
+        inline def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value*))
       }
     }
   }

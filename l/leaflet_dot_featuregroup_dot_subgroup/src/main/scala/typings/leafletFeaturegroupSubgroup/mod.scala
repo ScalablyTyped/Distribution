@@ -23,28 +23,28 @@ object mod {
     /**
       * Instantiates a SubGroup.
       */
-    class SubGroup[P] ()
+    open class SubGroup[P] ()
       extends typings.leaflet.mod.FeatureGroup_[P] {
-      def this(parentGroup: LayerGroup_[js.Any]) = this()
+      def this(parentGroup: LayerGroup_[Any]) = this()
       def this(parentGroup: Unit, layers: js.Array[Layer]) = this()
-      def this(parentGroup: LayerGroup_[js.Any], layers: js.Array[Layer]) = this()
+      def this(parentGroup: LayerGroup_[Any], layers: js.Array[Layer]) = this()
       
       /**
         * Returns the current parent group.
         */
-      def getParentGroup(): LayerGroup_[js.Any] = js.native
+      def getParentGroup(): LayerGroup_[Any] = js.native
       
       /**
         * Changes the parent group into which child markers are added to or
         * removed from.
         */
-      def setParentGroup(parentGroup: LayerGroup_[js.Any]): this.type = js.native
+      def setParentGroup(parentGroup: LayerGroup_[Any]): this.type = js.native
       
       /**
         * Removes the current sub-group from map before changing the parent
         * group. Re-adds the sub-group to map if it was before changing.
         */
-      def setParentGroupSafe(parentGroup: LayerGroup_[js.Any]): this.type = js.native
+      def setParentGroupSafe(parentGroup: LayerGroup_[Any]): this.type = js.native
     }
   }
   
@@ -57,9 +57,9 @@ object mod {
     /**
       * Creates a feature subgroup, optionally given an initial parent group and a set of layers.
       */
-    inline def subGroup(): SubGroup[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")().asInstanceOf[SubGroup[js.Any]]
-    inline def subGroup(parentGroup: Unit, layers: js.Array[Layer]): SubGroup[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[js.Any]]
-    inline def subGroup(parentGroup: LayerGroup_[js.Any]): SubGroup[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any]).asInstanceOf[SubGroup[js.Any]]
-    inline def subGroup(parentGroup: LayerGroup_[js.Any], layers: js.Array[Layer]): SubGroup[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[js.Any]]
+    inline def subGroup(): SubGroup[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")().asInstanceOf[SubGroup[Any]]
+    inline def subGroup(parentGroup: Unit, layers: js.Array[Layer]): SubGroup[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[Any]]
+    inline def subGroup(parentGroup: LayerGroup_[Any]): SubGroup[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any]).asInstanceOf[SubGroup[Any]]
+    inline def subGroup(parentGroup: LayerGroup_[Any], layers: js.Array[Layer]): SubGroup[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("subGroup")(parentGroup.asInstanceOf[js.Any], layers.asInstanceOf[js.Any])).asInstanceOf[SubGroup[Any]]
   }
 }

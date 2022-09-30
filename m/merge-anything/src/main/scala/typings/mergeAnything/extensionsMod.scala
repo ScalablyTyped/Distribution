@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object extensionsMod {
   
-  @JSImport("merge-anything/types/extensions", JSImport.Namespace)
+  @JSImport("merge-anything/dist/types/extensions", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def concatArrays(originVal: js.Any, newVal: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("concatArrays")(originVal.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def concatArrays(originVal: Any, newVal: Any): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatArrays")(originVal.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
 }

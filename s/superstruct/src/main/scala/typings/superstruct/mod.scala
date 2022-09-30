@@ -19,7 +19,6 @@ import typings.superstruct.structMod.Infer
 import typings.superstruct.structMod.Refiner
 import typings.superstruct.structMod.Struct
 import typings.superstruct.structMod.Validator
-import typings.superstruct.superstructStrings.enums
 import typings.superstruct.utilsMod.AnyStruct
 import typings.superstruct.utilsMod.Assign
 import typings.superstruct.utilsMod.InferTuple
@@ -100,7 +99,7 @@ object mod {
   
   inline def empty[T /* <: String | js.Array[Any] | (Map[Any, Any]) | Set[Any] */, S /* <: Any */](struct: Struct[T, S]): Struct[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[T, S]]
   
-  inline def enums[U /* <: String */, T /* <: js.Array[U] */](values: T): Struct[
+  inline def enums[U /* <: Double */, T /* <: js.Array[U] */](values: T): Struct[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in T[number] ]: K}
@@ -110,18 +109,6 @@ object mod {
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in T[number] ]: K}
     */ typings.superstruct.superstructStrings.enums & TopLevel[Any]
-  ]]
-  
-  inline def enums_U_DoubleT_ArrayU[U /* <: Double */, T /* <: js.Array[U] */](values: T): Struct[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any, 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: K}
-    */ enums & TopLevel[Any]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("enums")(values.asInstanceOf[js.Any]).asInstanceOf[Struct[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any, 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: K}
-    */ enums & TopLevel[Any]
   ]]
   
   inline def func(): Struct[js.Function, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")().asInstanceOf[Struct[js.Function, Null]]
@@ -146,13 +133,7 @@ object mod {
   
   inline def `lazy`[T](fn: js.Function0[Struct[T, Any]]): Struct[T, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, Null]]
   
-  inline def literal[T /* <: String */](constant: T): Struct[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(constant.asInstanceOf[js.Any]).asInstanceOf[Struct[T, T]]
-  
-  inline def literal_T[T](constant: T): Struct[T, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(constant.asInstanceOf[js.Any]).asInstanceOf[Struct[T, Null]]
-  
-  inline def literal_T_Boolean[T /* <: Boolean */](constant: T): Struct[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(constant.asInstanceOf[js.Any]).asInstanceOf[Struct[T, T]]
-  
-  inline def literal_T_Double[T /* <: Double */](constant: T): Struct[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(constant.asInstanceOf[js.Any]).asInstanceOf[Struct[T, T]]
+  inline def literal[T /* <: Boolean */](constant: T): Struct[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(constant.asInstanceOf[js.Any]).asInstanceOf[Struct[T, T]]
   
   inline def map(): Struct[Map[Any, Any], Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[Struct[Map[Any, Any], Null]]
   inline def map[K, V](Key: Struct[K, Any], Value: Struct[V, Any]): Struct[Map[K, V], Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(Key.asInstanceOf[js.Any], Value.asInstanceOf[js.Any])).asInstanceOf[Struct[Map[K, V], Null]]

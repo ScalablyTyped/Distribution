@@ -8,14 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object tsutilsStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketstringRightcurlybracketn extends StObject
-  inline def $LeftcurlybracketstringRightcurlybracketn: $LeftcurlybracketstringRightcurlybracketn = "${string}n".asInstanceOf[$LeftcurlybracketstringRightcurlybracketn]
-  
-  @js.native
-  sealed trait `-$LeftcurlybracketstringRightcurlybracketn` extends StObject
-  inline def `-$LeftcurlybracketstringRightcurlybracketn`: `-$LeftcurlybracketstringRightcurlybracketn` = "-${string}n".asInstanceOf[`-$LeftcurlybracketstringRightcurlybracketn`]
-  
-  @js.native
   sealed trait CarriagereturnLinefeed extends StObject
   inline def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
   

@@ -10,10 +10,10 @@ Immutable, reactive Flux architecture. UI Agnostic.
 | ------------------ | :-------------: |
 | Full name          | nuclear-js |
 | Keywords           | flux, nuclear, immutable, react, vue, vuejs, functional, stateless |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 166725 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 989.6666666666666 |
+| # stars            | 2192.0 |
 
 ## Links
 - [Homepage](https://github.com/optimizely/nuclear-js)

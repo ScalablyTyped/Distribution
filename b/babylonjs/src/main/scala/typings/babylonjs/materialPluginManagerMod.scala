@@ -41,8 +41,7 @@ object materialPluginManagerMod {
     def this(material: Material) = this()
     
     /**
-      * @param plugin
-      * @hidden
+      * @internal
       */
     def _activatePlugin(plugin: MaterialPluginBase): Unit = js.native
     
@@ -51,8 +50,7 @@ object materialPluginManagerMod {
     /* protected */ var _activePluginsForExtraEvents: js.Array[MaterialPluginBase] = js.native
     
     /**
-      * @param plugin
-      * @hidden
+      * @internal
       */
     def _addPlugin(plugin: MaterialPluginBase): Unit = js.native
     

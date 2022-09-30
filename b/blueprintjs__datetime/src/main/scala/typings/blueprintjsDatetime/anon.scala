@@ -20,7 +20,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
-import typings.reactDayPicker.distDayPickerMod.DayPickerProps
+import typings.reactDayPicker.mod.DayPickerProps
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement

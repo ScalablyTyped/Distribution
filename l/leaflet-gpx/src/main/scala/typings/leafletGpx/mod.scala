@@ -1,10 +1,9 @@
 package typings.leafletGpx
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.leaflet.mod.FeatureGroup_
-import typings.leaflet.mod.MarkerOptions
 import typings.leaflet.mod.PolylineOptions
 import typings.leafletGpx.anon.ParseElements
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +13,7 @@ object mod {
   
   @JSImport("leaflet", "GPX")
   @js.native
-  class GPX protected ()
-    extends FeatureGroup_[js.Any] {
+  open class GPX protected () extends FeatureGroup_[Any] {
     def this(gpx: String) = this()
     def this(gpx: String, options: GPXOptions) = this()
     
@@ -63,7 +61,7 @@ object mod {
     
     def get_elevation_min_imp(): Double = js.native
     
-    def get_end_time(): Date = js.native
+    def get_end_time(): js.Date = js.native
     
     def get_heartrate_data(): js.Array[js.Tuple3[Double, Double, String]] = js.native
     
@@ -81,7 +79,7 @@ object mod {
     
     def get_name(): String = js.native
     
-    def get_start_time(): Date = js.native
+    def get_start_time(): js.Date = js.native
     
     def get_temp_data(): js.Array[js.Tuple3[Double, Double, String]] = js.native
     
@@ -104,13 +102,50 @@ object mod {
     def to_miles(kilometers: Double): Double = js.native
   }
   
+  trait GPXMarkerOptions extends StObject {
+    
+    var endIconUrl: js.UndefOr[String] = js.undefined
+    
+    var shadowUrl: js.UndefOr[String] = js.undefined
+    
+    var startIconUrl: js.UndefOr[String] = js.undefined
+    
+    var wptIconUrls: js.UndefOr[StringDictionary[String]] = js.undefined
+  }
+  object GPXMarkerOptions {
+    
+    inline def apply(): GPXMarkerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GPXMarkerOptions]
+    }
+    
+    extension [Self <: GPXMarkerOptions](x: Self) {
+      
+      inline def setEndIconUrl(value: String): Self = StObject.set(x, "endIconUrl", value.asInstanceOf[js.Any])
+      
+      inline def setEndIconUrlUndefined: Self = StObject.set(x, "endIconUrl", js.undefined)
+      
+      inline def setShadowUrl(value: String): Self = StObject.set(x, "shadowUrl", value.asInstanceOf[js.Any])
+      
+      inline def setShadowUrlUndefined: Self = StObject.set(x, "shadowUrl", js.undefined)
+      
+      inline def setStartIconUrl(value: String): Self = StObject.set(x, "startIconUrl", value.asInstanceOf[js.Any])
+      
+      inline def setStartIconUrlUndefined: Self = StObject.set(x, "startIconUrl", js.undefined)
+      
+      inline def setWptIconUrls(value: StringDictionary[String]): Self = StObject.set(x, "wptIconUrls", value.asInstanceOf[js.Any])
+      
+      inline def setWptIconUrlsUndefined: Self = StObject.set(x, "wptIconUrls", js.undefined)
+    }
+  }
+  
   trait GPXOptions extends StObject {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
     var gpx_options: js.UndefOr[ParseElements] = js.undefined
     
-    var marker_options: js.UndefOr[MarkerOptions] = js.undefined
+    var marker_options: js.UndefOr[GPXMarkerOptions] = js.undefined
     
     var max_point_interval: js.UndefOr[Double] = js.undefined
     
@@ -133,7 +168,7 @@ object mod {
       
       inline def setGpx_optionsUndefined: Self = StObject.set(x, "gpx_options", js.undefined)
       
-      inline def setMarker_options(value: MarkerOptions): Self = StObject.set(x, "marker_options", value.asInstanceOf[js.Any])
+      inline def setMarker_options(value: GPXMarkerOptions): Self = StObject.set(x, "marker_options", value.asInstanceOf[js.Any])
       
       inline def setMarker_optionsUndefined: Self = StObject.set(x, "marker_options", js.undefined)
       

@@ -1,14 +1,14 @@
 package typings.firmata.mod
 
-import typings.firmata.firmataNumbers.`0`
-import typings.firmata.firmataNumbers.`1`
+import typings.firmata.firmataInts.`0`
+import typings.firmata.firmataInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.firmata.firmataNumbers.`1`
-  - typings.firmata.firmataNumbers.`0`
+  - typings.firmata.firmataInts.`1`
+  - typings.firmata.firmataInts.`0`
 */
 trait REPORTING extends StObject
 object REPORTING {

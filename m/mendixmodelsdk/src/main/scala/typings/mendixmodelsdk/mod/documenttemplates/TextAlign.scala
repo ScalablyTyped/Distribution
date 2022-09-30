@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "documenttemplates.TextAlign")
 @js.native
-class TextAlign protected ()
+open class TextAlign protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.TextAlign {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

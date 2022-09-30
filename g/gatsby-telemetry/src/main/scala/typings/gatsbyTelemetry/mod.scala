@@ -2,8 +2,7 @@ package typings.gatsbyTelemetry
 
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.gatsbyTelemetry.anon.BundleStats
 import typings.gatsbyTelemetry.telemetryMod.IAggregateStats
 import typings.gatsbyTelemetry.telemetryMod.IAnalyticsTrackerConstructorParameters
 import typings.gatsbyTelemetry.telemetryMod.IDefaultTelemetryTagsPayload
@@ -22,12 +21,13 @@ object mod {
   
   @JSImport("gatsby-telemetry/lib", "AnalyticsTracker")
   @js.native
-  class AnalyticsTracker ()
+  open class AnalyticsTracker ()
     extends typings.gatsbyTelemetry.telemetryMod.AnalyticsTracker {
     def this(hasComponentIdGatsbyCliVersionTrackingEnabled: IAnalyticsTrackerConstructorParameters) = this()
   }
   
-  inline def addSiteMeasurement(event: String, obj: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSiteMeasurement")(event.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addSiteMeasurement(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSiteMeasurement")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addSiteMeasurement(event: String, obj: BundleStats): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSiteMeasurement")(event.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def aggregateStats(data: js.Array[Double]): IAggregateStats = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregateStats")(data.asInstanceOf[js.Any]).asInstanceOf[IAggregateStats]
   
@@ -41,19 +41,33 @@ object mod {
   inline def captureEvent(input: js.Array[String], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(input.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def decorateEvent(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def decorateEvent(event: String, tags: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateEvent")(event.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decorateEvent(event: String, tags: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateEvent")(event.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def expressMiddleware(source: String): js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* _res */ Response_[js.Any], 
-    /* next */ js.Any, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* _res */ Response_[Any, Record[String, Any]], 
+    /* next */ Any, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("expressMiddleware")(source.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* _res */ Response_[js.Any], 
-    /* next */ js.Any, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* _res */ Response_[Any, Record[String, Any]], 
+    /* next */ Any, 
     Unit
   ]]
+  
+  inline def flush(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Promise[Unit]]
   
   inline def isTrackingEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrackingEnabled")().asInstanceOf[Boolean]
   

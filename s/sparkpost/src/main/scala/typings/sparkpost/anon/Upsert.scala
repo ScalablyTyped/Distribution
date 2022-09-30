@@ -3,7 +3,6 @@ package typings.sparkpost.anon
 import typings.sparkpost.mod.Callback
 import typings.sparkpost.mod.CreateSupressionListEntry
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.SupressionListEntry
 import typings.sparkpost.mod.SupressionSearchParameters
 import org.scalablytyped.runtime.StObject
@@ -33,7 +32,7 @@ trait Upsert extends StObject {
     * @param email address to check
     * @returns void
     */
-  def get(email: String): ResultsPromise[js.Array[SupressionListEntry]] = js.native
+  def get(email: String): js.Promise[Results[js.Array[SupressionListEntry]]] = js.native
   /**
     * Retrieve an entry by recipient email.
     *
@@ -48,14 +47,14 @@ trait Upsert extends StObject {
     * @param [parameters] an object of [search parameters]{@link https://developers.sparkpost.com/api/suppression-list#suppression-list-search-get}
     * @returns Promise The supression lists
     */
-  def list(): ResultsPromise[js.Array[SupressionListEntry]] = js.native
+  def list(): js.Promise[Results[js.Array[SupressionListEntry]]] = js.native
   /**
     * List all entries in your suppression list, filtered by an optional set of search parameters.
     *
     * @param callback The request callback with supression lists.
     */
   def list(callback: ResultsCallback[js.Array[SupressionListEntry]]): Unit = js.native
-  def list(parameters: SupressionSearchParameters): ResultsPromise[js.Array[SupressionListEntry]] = js.native
+  def list(parameters: SupressionSearchParameters): js.Promise[Results[js.Array[SupressionListEntry]]] = js.native
   /**
     * List all entries in your suppression list, filtered by an optional set of search parameters.
     *
@@ -64,14 +63,14 @@ trait Upsert extends StObject {
     */
   def list(parameters: SupressionSearchParameters, callback: ResultsCallback[js.Array[SupressionListEntry]]): Unit = js.native
   
-  def upsert(listEntries: js.Array[CreateSupressionListEntry]): ResultsPromise[Message] = js.native
+  def upsert(listEntries: js.Array[CreateSupressionListEntry]): js.Promise[Results[Message]] = js.native
   def upsert(listEntries: js.Array[CreateSupressionListEntry], callback: ResultsCallback[Message]): Unit = js.native
   /**
     * Insert or update one or many entries.
     *
     * @param listEntries The suppression entry list
     */
-  def upsert(listEntries: CreateSupressionListEntry): ResultsPromise[Message] = js.native
+  def upsert(listEntries: CreateSupressionListEntry): js.Promise[Results[Message]] = js.native
   /**
     * Insert or update one or many entries.
     *

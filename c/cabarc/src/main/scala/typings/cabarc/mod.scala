@@ -1,6 +1,6 @@
 package typings.cabarc
 
-import typings.cabarc.cabarcNumbers.`8`
+import typings.cabarc.cabarcInts.`8`
 import typings.cabarc.mod.Cabinet.COMPRESSION
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject

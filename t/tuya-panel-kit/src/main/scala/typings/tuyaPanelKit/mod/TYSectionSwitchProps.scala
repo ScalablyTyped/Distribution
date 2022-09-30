@@ -357,7 +357,7 @@ trait TYSectionSwitchProps extends StObject {
   
   var title: js.UndefOr[String] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
@@ -691,8 +691,6 @@ object TYSectionSwitchProps {
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

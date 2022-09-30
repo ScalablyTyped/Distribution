@@ -16,7 +16,7 @@ trait SpriteSceneComponent
   
   /* private */ var _pointerUp: Any
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _spritePredicate: Any
 }
 object SpriteSceneComponent {

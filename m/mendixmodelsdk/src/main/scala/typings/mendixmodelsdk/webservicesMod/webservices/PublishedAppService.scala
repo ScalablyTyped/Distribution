@@ -9,7 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide/published-app-services relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide8/published-app-services relevant section in reference guide}
+  *
+  * In version 9.0.2: deleted
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -21,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.webservicesMod.webservices.IPublishedServiceBase because Already inherited
-- typings.mendixmodelsdk.webservicesMod.webservices.IPublishedAppService because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService")
+- typings.mendixmodelsdk.webservicesMod.webservices.IPublishedAppService because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedAppService")
 @js.native
-class PublishedAppService protected () extends PublishedServiceBase {
+open class PublishedAppService protected () extends PublishedServiceBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +39,7 @@ class PublishedAppService protected () extends PublishedServiceBase {
 }
 object PublishedAppService {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedAppService")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +51,13 @@ object PublishedAppService {
   inline def createIn(container: IFolderBase): PublishedAppService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedAppService]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedAppService.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.PublishedAppService.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

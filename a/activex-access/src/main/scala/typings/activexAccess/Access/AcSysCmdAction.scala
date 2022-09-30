@@ -1,36 +1,36 @@
 package typings.activexAccess.Access
 
-import typings.activexAccess.activexAccessNumbers.`10`
-import typings.activexAccess.activexAccessNumbers.`11`
-import typings.activexAccess.activexAccessNumbers.`12`
-import typings.activexAccess.activexAccessNumbers.`13`
-import typings.activexAccess.activexAccessNumbers.`1`
-import typings.activexAccess.activexAccessNumbers.`2`
-import typings.activexAccess.activexAccessNumbers.`3`
-import typings.activexAccess.activexAccessNumbers.`4`
-import typings.activexAccess.activexAccessNumbers.`5`
-import typings.activexAccess.activexAccessNumbers.`6`
-import typings.activexAccess.activexAccessNumbers.`7`
-import typings.activexAccess.activexAccessNumbers.`8`
-import typings.activexAccess.activexAccessNumbers.`9`
+import typings.activexAccess.activexAccessInts.`10`
+import typings.activexAccess.activexAccessInts.`11`
+import typings.activexAccess.activexAccessInts.`12`
+import typings.activexAccess.activexAccessInts.`13`
+import typings.activexAccess.activexAccessInts.`1`
+import typings.activexAccess.activexAccessInts.`2`
+import typings.activexAccess.activexAccessInts.`3`
+import typings.activexAccess.activexAccessInts.`4`
+import typings.activexAccess.activexAccessInts.`5`
+import typings.activexAccess.activexAccessInts.`6`
+import typings.activexAccess.activexAccessInts.`7`
+import typings.activexAccess.activexAccessInts.`8`
+import typings.activexAccess.activexAccessInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAccess.activexAccessNumbers.`9`
-  - typings.activexAccess.activexAccessNumbers.`7`
-  - typings.activexAccess.activexAccessNumbers.`11`
-  - typings.activexAccess.activexAccessNumbers.`5`
-  - typings.activexAccess.activexAccessNumbers.`10`
-  - typings.activexAccess.activexAccessNumbers.`13`
-  - typings.activexAccess.activexAccessNumbers.`8`
-  - typings.activexAccess.activexAccessNumbers.`1`
-  - typings.activexAccess.activexAccessNumbers.`12`
-  - typings.activexAccess.activexAccessNumbers.`3`
-  - typings.activexAccess.activexAccessNumbers.`6`
-  - typings.activexAccess.activexAccessNumbers.`4`
-  - typings.activexAccess.activexAccessNumbers.`2`
+  - typings.activexAccess.activexAccessInts.`9`
+  - typings.activexAccess.activexAccessInts.`7`
+  - typings.activexAccess.activexAccessInts.`11`
+  - typings.activexAccess.activexAccessInts.`5`
+  - typings.activexAccess.activexAccessInts.`10`
+  - typings.activexAccess.activexAccessInts.`13`
+  - typings.activexAccess.activexAccessInts.`8`
+  - typings.activexAccess.activexAccessInts.`1`
+  - typings.activexAccess.activexAccessInts.`12`
+  - typings.activexAccess.activexAccessInts.`3`
+  - typings.activexAccess.activexAccessInts.`6`
+  - typings.activexAccess.activexAccessInts.`4`
+  - typings.activexAccess.activexAccessInts.`2`
 */
 trait AcSysCmdAction extends StObject
 object AcSysCmdAction {

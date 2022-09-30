@@ -1,22 +1,22 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`-2147483646`
-import typings.activexDao.activexDaoNumbers.`1073741824`
-import typings.activexDao.activexDaoNumbers.`131072`
-import typings.activexDao.activexDaoNumbers.`1`
-import typings.activexDao.activexDaoNumbers.`536870912`
-import typings.activexDao.activexDaoNumbers.`65536`
+import typings.activexDao.activexDaoInts.`-2147483646`
+import typings.activexDao.activexDaoInts.`1073741824`
+import typings.activexDao.activexDaoInts.`131072`
+import typings.activexDao.activexDaoInts.`1`
+import typings.activexDao.activexDaoInts.`536870912`
+import typings.activexDao.activexDaoInts.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`536870912`
-  - typings.activexDao.activexDaoNumbers.`1073741824`
-  - typings.activexDao.activexDaoNumbers.`65536`
-  - typings.activexDao.activexDaoNumbers.`131072`
-  - typings.activexDao.activexDaoNumbers.`1`
-  - typings.activexDao.activexDaoNumbers.`-2147483646`
+  - typings.activexDao.activexDaoInts.`536870912`
+  - typings.activexDao.activexDaoInts.`1073741824`
+  - typings.activexDao.activexDaoInts.`65536`
+  - typings.activexDao.activexDaoInts.`131072`
+  - typings.activexDao.activexDaoInts.`1`
+  - typings.activexDao.activexDaoInts.`-2147483646`
 */
 trait TableDefAttributeEnum extends StObject
 object TableDefAttributeEnum {

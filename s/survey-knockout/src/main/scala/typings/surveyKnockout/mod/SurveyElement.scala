@@ -31,7 +31,7 @@ open class SurveyElement protected ()
   def collapse(): Unit = js.native
   
   /*
-    * Returns `true` if the survey element or its child elements have a validation error.
+    * Returns `true` if the survey element or its child elements have validation errors.
     * 
     * This property contains the result of the most recent validation. This result may be outdated. Call the `hasErrors` method to get an up-to-date value.
     */
@@ -150,6 +150,8 @@ open class SurveyElement protected ()
   
   /*
     * Returns `true` if the survey element or its parent element is read-only.
+    * 
+    * If you want to switch a survey element to the read-only state based on a condition, specify the [`enableIf`](https://surveyjs.io/form-library/documentation/question#enableIf) property. Refer to the following help topic for information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   @JSName("isReadOnly")
   def isReadOnly_MSurveyElement: Boolean = js.native
@@ -215,6 +217,8 @@ open class SurveyElement protected ()
   
   /*
     * Makes the survey element read-only.
+    * 
+    * If you want to switch a survey element to the read-only state based on a condition, specify the [`enableIf`](https://surveyjs.io/form-library/documentation/question#enableIf) property. Refer to the following help topic for information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   def readOnly: Boolean = js.native
   
@@ -261,8 +265,9 @@ open class SurveyElement protected ()
     * 
     * Possible values:
     * 
-    * - `"collapsed"` - The survey element displays only `title` and `description`.
-    * - `"expanded"` - The survey element is displayed in full.
+    * - `"default"` (default) - The survey element is displayed in full and cannot be collapsed in the UI.
+    * - `"expanded"` - The survey element is displayed in full and can be collapsed in the UI.
+    * - `"collapsed"` - The survey element displays only `title` and `description` and can be expanded in the UI.
     */
   def state: String = js.native
   

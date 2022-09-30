@@ -46,6 +46,34 @@ object globalsMod {
     override val signal: AbortSignal = js.native
   }
   
+  /** A signal object that allows you to communicate with a DOM request (such as a Fetch) and abort it if required via an AbortController object. */
+  trait AbortSignal extends StObject {
+    
+    /**
+      * Returns true if this AbortSignal's AbortController has signaled to abort, and false otherwise.
+      */
+    val aborted: Boolean
+  }
+  object AbortSignal {
+    
+    inline def apply(aborted: Boolean): AbortSignal = {
+      val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AbortSignal]
+    }
+    
+    @JSImport("node/globals", "AbortSignal")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    // TODO: Add abort() static
+    inline def timeout(milliseconds: Double): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
+    
+    extension [Self <: AbortSignal](x: Self) {
+      
+      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("node/globals", "AbortSignal")
   @js.native
@@ -162,27 +190,6 @@ object globalsMod {
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /** A signal object that allows you to communicate with a DOM request (such as a Fetch) and abort it if required via an AbortController object. */
-  trait AbortSignal extends StObject {
-    
-    /**
-      * Returns true if this AbortSignal's AbortController has signaled to abort, and false otherwise.
-      */
-    val aborted: Boolean
-  }
-  object AbortSignal {
-    
-    inline def apply(aborted: Boolean): AbortSignal = {
-      val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AbortSignal]
-    }
-    
-    extension [Self <: AbortSignal](x: Self) {
-      
-      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -645,6 +652,8 @@ object globalsMod {
     ------------------------------------------------*/
   // For backwards compability
   type NodeRequire = Require
+  
+  type ReadonlyArray[T] = RelativeIndexable[T]
   
   //#endregion borrowed
   //#region ArrayLike.at()

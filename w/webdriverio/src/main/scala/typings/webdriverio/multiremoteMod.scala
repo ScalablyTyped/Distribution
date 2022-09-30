@@ -1,5 +1,10 @@
 package typings.webdriverio
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Element
+import typings.std.Record
+import typings.webdriverio.anon.CommandList
+import typings.webdriverio.webdriverioBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +13,37 @@ object multiremoteMod {
   
   @JSImport("webdriverio/build/multiremote", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with MultiRemote {
     
+    /**
+      * add instance to multibrowser instance
+      */
     /* CompleteClass */
-    override def addInstance(browserName: js.Any, client: js.Any): js.Promise[js.Any] = js.native
+    override def addInstance(browserName: String, client: Any): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+      ] = js.native
+    
+    /**
+      * handle commands for multiremote instances
+      */
+    /* CompleteClass */
+    override def commandWrapper(
+      commandName: /* keyof @wdio/protocols.@wdio/protocols.ProtocolCommands & webdriverio.webdriverio/build/types.BrowserCommandsType */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 269 */ Any
+    ): js.Function1[/* args */ Any, js.Promise[Any]] = js.native
     
     /* CompleteClass */
-    override def commandWrapper(commandName: js.Any): js.Function1[/* args */ js.Any, js.Promise[js.Any]] = js.native
+    var instances: Record[
+        String, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+      ] = js.native
     
+    /**
+      * modifier for multibrowser instance
+      */
     /* CompleteClass */
-    override def modifier(wrapperClient: js.Any): js.Any = js.native
+    override def modifier(wrapperClient: CommandList): Any = js.native
   }
   /* static members */
   object default {
@@ -28,117 +52,183 @@ object multiremoteMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def elementWrapper(instances: js.Any, result: js.Any, propertiesObject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("elementWrapper")(instances.asInstanceOf[js.Any], result.asInstanceOf[js.Any], propertiesObject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    /**
+      * helper method to generate element objects from results, so that we can call, e.g.
+      *
+      * ```
+      * const elem = $('#elem')
+      * elem.getHTML()
+      * ```
+      *
+      * or in case multiremote is used
+      *
+      * ```
+      * const elems = $$('div')
+      * elems[0].getHTML()
+      * ```
+      */
+    inline def elementWrapper(
+      instances: Record[
+          String, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+        ],
+      result: Any,
+      propertiesObject: Record[String, js.PropertyDescriptor],
+      scope: MultiRemote
+    ): MultiRemoteElement = (^.asInstanceOf[js.Dynamic].applyDynamic("elementWrapper")(instances.asInstanceOf[js.Any], result.asInstanceOf[js.Any], propertiesObject.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[MultiRemoteElement]
   }
+  
+  @JSImport("webdriverio/build/multiremote", "MultiRemoteDriver")
+  @js.native
+  open class MultiRemoteDriver protected () extends StObject {
+    def this(
+      instances: Record[
+            String, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+          ],
+      propertiesObject: Record[String, js.PropertyDescriptor]
+    ) = this()
+    
+    var __propertiesObject__ : Record[String, js.PropertyDescriptor] = js.native
+    
+    def emit(eventName: String, emitter: EventEmitter): Boolean = js.native
+    
+    def eventNames(): Any = js.native
+    
+    def getMaxListeners(): Double = js.native
+    
+    var instances: js.Array[String] = js.native
+    
+    var isMultiremote: `true` = js.native
+    
+    def listenerCount(eventName: String): Double = js.native
+    
+    def listeners(eventName: String): js.Array[js.Function] = js.native
+    
+    def on(eventName: String, emitter: EventEmitter): Any = js.native
+    
+    def once(eventName: String, emitter: EventEmitter): Any = js.native
+    
+    def removeAllListeners(eventName: String): Any = js.native
+    
+    def removeListener(eventName: String, emitter: EventEmitter): Any = js.native
+  }
+  
+  type EventEmitter = js.Function1[/* args */ Any, Unit]
   
   trait MultiRemote extends StObject {
     
-    def addInstance(browserName: js.Any, client: js.Any): js.Promise[js.Any]
+    /**
+      * add instance to multibrowser instance
+      */
+    def addInstance(browserName: String, client: Any): js.Promise[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+      ]
     
     var baseInstance: js.UndefOr[MultiRemoteDriver] = js.undefined
     
-    def commandWrapper(commandName: js.Any): js.Function1[/* args */ js.Any, js.Promise[js.Any]]
+    /**
+      * handle commands for multiremote instances
+      */
+    def commandWrapper(
+      commandName: /* keyof @wdio/protocols.@wdio/protocols.ProtocolCommands & webdriverio.webdriverio/build/types.BrowserCommandsType */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 269 */ Any
+    ): js.Function1[/* args */ Any, js.Promise[Any]]
     
-    def modifier(wrapperClient: js.Any): js.Any
+    var instances: Record[
+        String, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+      ]
+    
+    /**
+      * modifier for multibrowser instance
+      */
+    def modifier(wrapperClient: CommandList): Any
+    
+    var sessionId: js.UndefOr[String] = js.undefined
   }
   object MultiRemote {
     
     inline def apply(
-      addInstance: (js.Any, js.Any) => js.Promise[js.Any],
-      commandWrapper: js.Any => js.Function1[/* args */ js.Any, js.Promise[js.Any]],
-      modifier: js.Any => js.Any
+      addInstance: (String, Any) => js.Promise[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+        ],
+      commandWrapper: /* keyof @wdio/protocols.@wdio/protocols.ProtocolCommands & webdriverio.webdriverio/build/types.BrowserCommandsType */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 269 */ Any => js.Function1[/* args */ Any, js.Promise[Any]],
+      instances: Record[
+          String, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+        ],
+      modifier: CommandList => Any
     ): MultiRemote = {
-      val __obj = js.Dynamic.literal(addInstance = js.Any.fromFunction2(addInstance), commandWrapper = js.Any.fromFunction1(commandWrapper), modifier = js.Any.fromFunction1(modifier))
+      val __obj = js.Dynamic.literal(addInstance = js.Any.fromFunction2(addInstance), commandWrapper = js.Any.fromFunction1(commandWrapper), instances = instances.asInstanceOf[js.Any], modifier = js.Any.fromFunction1(modifier))
       __obj.asInstanceOf[MultiRemote]
     }
     
     extension [Self <: MultiRemote](x: Self) {
       
-      inline def setAddInstance(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "addInstance", js.Any.fromFunction2(value))
+      inline def setAddInstance(
+        value: (String, Any) => js.Promise[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+            ]
+      ): Self = StObject.set(x, "addInstance", js.Any.fromFunction2(value))
       
       inline def setBaseInstance(value: MultiRemoteDriver): Self = StObject.set(x, "baseInstance", value.asInstanceOf[js.Any])
       
       inline def setBaseInstanceUndefined: Self = StObject.set(x, "baseInstance", js.undefined)
       
-      inline def setCommandWrapper(value: js.Any => js.Function1[/* args */ js.Any, js.Promise[js.Any]]): Self = StObject.set(x, "commandWrapper", js.Any.fromFunction1(value))
+      inline def setCommandWrapper(
+        value: /* keyof @wdio/protocols.@wdio/protocols.ProtocolCommands & webdriverio.webdriverio/build/types.BrowserCommandsType */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 269 */ Any => js.Function1[/* args */ Any, js.Promise[Any]]
+      ): Self = StObject.set(x, "commandWrapper", js.Any.fromFunction1(value))
       
-      inline def setModifier(value: js.Any => js.Any): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
+      inline def setInstances(
+        value: Record[
+              String, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ Any
+            ]
+      ): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      
+      inline def setModifier(value: CommandList => Any): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
+      
+      inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+      
+      inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     }
   }
   
-  trait MultiRemoteDriver extends StObject {
+  trait MultiRemoteElement
+    extends StObject
+       with /* instanceName */ StringDictionary[Element] {
     
-    var __propertiesObject__ : js.Any
-    
-    def emit(args: js.Any*): Unit
-    
-    def eventNames(args: js.Any*): Unit
-    
-    def getMaxListeners(): Unit
+    var __propertiesObject__ : Record[String, js.PropertyDescriptor]
     
     var instances: js.Array[String]
     
     var isMultiremote: Boolean
     
-    def listenerCount(args: js.Any*): Unit
-    
-    def listeners(args: js.Any*): Unit
-    
-    def on(args: js.Any*): Unit
-    
-    def once(args: js.Any*): Unit
-    
-    def removeAllListeners(args: js.Any*): Unit
-    
-    def removeListener(args: js.Any*): Unit
+    var selector: String
   }
-  object MultiRemoteDriver {
+  object MultiRemoteElement {
     
     inline def apply(
-      __propertiesObject__ : js.Any,
-      emit: /* repeated */ js.Any => Unit,
-      eventNames: /* repeated */ js.Any => Unit,
-      getMaxListeners: () => Unit,
+      __propertiesObject__ : Record[String, js.PropertyDescriptor],
       instances: js.Array[String],
       isMultiremote: Boolean,
-      listenerCount: /* repeated */ js.Any => Unit,
-      listeners: /* repeated */ js.Any => Unit,
-      on: /* repeated */ js.Any => Unit,
-      once: /* repeated */ js.Any => Unit,
-      removeAllListeners: /* repeated */ js.Any => Unit,
-      removeListener: /* repeated */ js.Any => Unit
-    ): MultiRemoteDriver = {
-      val __obj = js.Dynamic.literal(__propertiesObject__ = __propertiesObject__.asInstanceOf[js.Any], emit = js.Any.fromFunction1(emit), eventNames = js.Any.fromFunction1(eventNames), getMaxListeners = js.Any.fromFunction0(getMaxListeners), instances = instances.asInstanceOf[js.Any], isMultiremote = isMultiremote.asInstanceOf[js.Any], listenerCount = js.Any.fromFunction1(listenerCount), listeners = js.Any.fromFunction1(listeners), on = js.Any.fromFunction1(on), once = js.Any.fromFunction1(once), removeAllListeners = js.Any.fromFunction1(removeAllListeners), removeListener = js.Any.fromFunction1(removeListener))
-      __obj.asInstanceOf[MultiRemoteDriver]
+      selector: String
+    ): MultiRemoteElement = {
+      val __obj = js.Dynamic.literal(__propertiesObject__ = __propertiesObject__.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], isMultiremote = isMultiremote.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MultiRemoteElement]
     }
     
-    extension [Self <: MultiRemoteDriver](x: Self) {
-      
-      inline def setEmit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
-      
-      inline def setEventNames(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "eventNames", js.Any.fromFunction1(value))
-      
-      inline def setGetMaxListeners(value: () => Unit): Self = StObject.set(x, "getMaxListeners", js.Any.fromFunction0(value))
+    extension [Self <: MultiRemoteElement](x: Self) {
       
       inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value*))
       
       inline def setIsMultiremote(value: Boolean): Self = StObject.set(x, "isMultiremote", value.asInstanceOf[js.Any])
       
-      inline def setListenerCount(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listenerCount", js.Any.fromFunction1(value))
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      inline def setListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
-      
-      inline def setOn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
-      
-      inline def setOnce(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
-      
-      inline def setRemoveAllListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
-      
-      inline def setRemoveListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
-      
-      inline def set__propertiesObject__(value: js.Any): Self = StObject.set(x, "__propertiesObject__", value.asInstanceOf[js.Any])
+      inline def set__propertiesObject__(value: Record[String, js.PropertyDescriptor]): Self = StObject.set(x, "__propertiesObject__", value.asInstanceOf[js.Any])
     }
   }
 }

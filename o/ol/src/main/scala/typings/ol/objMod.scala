@@ -11,7 +11,7 @@ object objMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assign(target: Any, var_sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(var_sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def assign(target: Any, var_sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(var_sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def clear(`object`: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

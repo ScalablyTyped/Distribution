@@ -73,12 +73,12 @@ object ZC {
   }
   object List {
     
-    inline def apply[T](length: Double): List[T] = {
+    inline def apply[T](length: Double): typings.zeroclipboard.ZC.List[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[List[T]]
+      __obj.asInstanceOf[typings.zeroclipboard.ZC.List[T]]
     }
     
-    extension [Self <: List[?], T](x: Self & List[T]) {
+    extension [Self <: typings.zeroclipboard.ZC.List[?], T](x: Self & typings.zeroclipboard.ZC.List[T]) {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -137,7 +137,7 @@ object ZC {
       * @param  {Element[]} elements
       * @return {ZeroClipboardClient}
       */
-    def clip(elements: List[Element]): ZeroClipboardClient = js.native
+    def clip(elements: typings.zeroclipboard.ZC.List[Element]): ZeroClipboardClient = js.native
     /**
       * Register clipboard actions for new element(s) to the client. This includes automatically invoking
       * ZeroClipboard.focus on the current element when it is hovered over, unless the autoActivate configuration
@@ -196,7 +196,7 @@ object ZC {
       * @param  {Element[]} elements
       * @return {ZeroClipboardClient}
       */
-    def unclip(elements: List[Element]): ZeroClipboardClient = js.native
+    def unclip(elements: typings.zeroclipboard.ZC.List[Element]): ZeroClipboardClient = js.native
   }
   
   @js.native
@@ -818,7 +818,10 @@ object ZC {
     extends StObject
        with ZeroClipboardCommon
        with Instantiable0[ZeroClipboardClient]
-       with Instantiable1[(/* elements */ Element) | (/* elements */ List[Element]), ZeroClipboardClient] {
+       with Instantiable1[
+          (/* elements */ Element) | (/* elements */ typings.zeroclipboard.ZC.List[Element]), 
+          ZeroClipboardClient
+        ] {
     
     /**
       * Focus/"activate" the provided element by moving the Flash SWF object in front of it.

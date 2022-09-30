@@ -9,7 +9,7 @@ object digestMethodMod {
   
   @JSImport("xmldsigjs/build/types/xml/digest_method", "DigestMethod")
   @js.native
-  class DigestMethod () extends XmlSignatureObject {
+  open class DigestMethod () extends XmlSignatureObject {
     def this(hashNamespace: String) = this()
     
     var Algorithm: String = js.native

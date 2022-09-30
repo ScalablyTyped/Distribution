@@ -12,10 +12,10 @@ object engineTextureSelectorMod {
     
     trait Engine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _excludedCompressedTextures: js.Array[String]
       
-      /** @hidden */
+      /** @internal */
       var _textureFormatInUse: String
       
       /**

@@ -8,56 +8,52 @@ object mod {
   
   @JSImport("web3-bzz", "Bzz")
   @js.native
-  class Bzz () extends StObject {
-    def this(provider: js.Any) = this()
+  open class Bzz () extends StObject {
+    def this(provider: Any) = this()
     
-    val currentProvider: js.Any = js.native
+    val currentProvider: Any = js.native
     
-    def download(bzzHash: String): js.Promise[js.Any] = js.native
-    def download(bzzHash: String, localPath: String): js.Promise[js.Any] = js.native
+    def download(bzzHash: String): js.Promise[Any] = js.native
+    def download(bzzHash: String, localPath: String): js.Promise[Any] = js.native
     
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
     
     var pick: Pick = js.native
     
-    def setProvider(provider: js.Any): Boolean = js.native
+    def setProvider(provider: Any): Boolean = js.native
     
-    def upload(data: js.Any): js.Promise[String] = js.native
+    def upload(data: Any): js.Promise[String] = js.native
   }
   /* static members */
   object Bzz {
     
     @JSImport("web3-bzz", "Bzz.givenProvider")
     @js.native
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
   }
   
   trait Pick extends StObject {
     
-    def data(): js.Promise[js.Any]
+    def data(): js.Promise[Any]
     
-    def directory(): js.Promise[js.Any]
+    def directory(): js.Promise[Any]
     
-    def file(): js.Promise[js.Any]
+    def file(): js.Promise[Any]
   }
   object Pick {
     
-    inline def apply(
-      data: () => js.Promise[js.Any],
-      directory: () => js.Promise[js.Any],
-      file: () => js.Promise[js.Any]
-    ): Pick = {
+    inline def apply(data: () => js.Promise[Any], directory: () => js.Promise[Any], file: () => js.Promise[Any]): Pick = {
       val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data), directory = js.Any.fromFunction0(directory), file = js.Any.fromFunction0(file))
       __obj.asInstanceOf[Pick]
     }
     
     extension [Self <: Pick](x: Self) {
       
-      inline def setData(value: () => js.Promise[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setData(value: () => js.Promise[Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      inline def setDirectory(value: () => js.Promise[js.Any]): Self = StObject.set(x, "directory", js.Any.fromFunction0(value))
+      inline def setDirectory(value: () => js.Promise[Any]): Self = StObject.set(x, "directory", js.Any.fromFunction0(value))
       
-      inline def setFile(value: () => js.Promise[js.Any]): Self = StObject.set(x, "file", js.Any.fromFunction0(value))
+      inline def setFile(value: () => js.Promise[Any]): Self = StObject.set(x, "file", js.Any.fromFunction0(value))
     }
   }
 }

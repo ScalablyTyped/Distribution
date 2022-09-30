@@ -1,7 +1,6 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait Query[T] extends StObject {
     * of the query's order by.
     * @return The created Query.
     */
-  def endAt(fieldValues: js.Any*): Query[T] = js.native
+  def endAt(fieldValues: Any*): Query[T] = js.native
   /**
     * Creates and returns a new Query that ends at the provided document
     * (inclusive). The end position is relative to the order of the query. The
@@ -28,7 +27,7 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to end at.
     * @return The created Query.
     */
-  def endAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def endAt(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
   /**
     * Creates and returns a new Query that ends before the provided fields
@@ -39,7 +38,7 @@ trait Query[T] extends StObject {
     * of the query's order by.
     * @return The created Query.
     */
-  def endBefore(fieldValues: js.Any*): Query[T] = js.native
+  def endBefore(fieldValues: Any*): Query[T] = js.native
   /**
     * Creates and returns a new Query that ends before the provided document
     * (exclusive). The end position is relative to the order of the query. The
@@ -49,7 +48,7 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to end before.
     * @return The created Query.
     */
-  def endBefore(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def endBefore(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
   /**
     * The `Firestore` for the Firestore database (useful for performing
@@ -123,7 +122,7 @@ trait Query[T] extends StObject {
   def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): js.Function0[Unit] = js.native
   
   /**
@@ -169,7 +168,7 @@ trait Query[T] extends StObject {
     * of the query's order by.
     * @return The created Query.
     */
-  def startAfter(fieldValues: js.Any*): Query[T] = js.native
+  def startAfter(fieldValues: Any*): Query[T] = js.native
   /**
     * Creates and returns a new Query that starts after the provided document
     * (exclusive). The starting position is relative to the order of the query.
@@ -179,7 +178,7 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to start after.
     * @return The created Query.
     */
-  def startAfter(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def startAfter(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
   /**
     * Creates and returns a new Query that starts at the provided fields
@@ -190,7 +189,7 @@ trait Query[T] extends StObject {
     * of the query's order by.
     * @return The created Query.
     */
-  def startAt(fieldValues: js.Any*): Query[T] = js.native
+  def startAt(fieldValues: Any*): Query[T] = js.native
   /**
     * Creates and returns a new Query that starts at the provided document
     * (inclusive). The starting position is relative to the order of the query.
@@ -200,14 +199,14 @@ trait Query[T] extends StObject {
     * @param snapshot The snapshot of the document to start after.
     * @return The created Query.
     */
-  def startAt(snapshot: DocumentSnapshot[js.Any]): Query[T] = js.native
+  def startAt(snapshot: DocumentSnapshot[Any]): Query[T] = js.native
   
   /*
     * Executes the query and returns the results as Node Stream.
     *
     * @return A stream of QueryDocumentSnapshot.
     */
-  def stream(): ReadableStream = js.native
+  def stream(): ReadableStream[Any] = js.native
   
   /**
     * Creates and returns a new Query with the additional filter that documents
@@ -222,16 +221,18 @@ trait Query[T] extends StObject {
     * @param value The value for comparison
     * @return The created Query.
     */
-  def where(fieldPath: String, opStr: WhereFilterOp, value: js.Any): Query[T] = js.native
-  def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: js.Any): Query[T] = js.native
+  def where(fieldPath: String, opStr: WhereFilterOp, value: Any): Query[T] = js.native
+  def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: Any): Query[T] = js.native
   
+  def withConverter(converter: Null): Query[DocumentData] = js.native
   /**
     * Applies a custom data converter to this Query, allowing you to use your
     * own custom model objects with Firestore. When you call get() on the
     * returned Query, the provided converter will convert between Firestore
     * data and your custom type U.
     *
-    * @param converter Converts objects to and from Firestore.
+    * @param converter Converts objects to and from Firestore. Passing in
+    * `null` removes the current converter.
     * @return A Query<U> that uses the provided converter.
     */
   def withConverter[U](converter: FirestoreDataConverter[U]): Query[U] = js.native

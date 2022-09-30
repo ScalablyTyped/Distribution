@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.Language")
 @js.native
-class Language protected ()
+open class Language protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.Language {
   def this(
     model: AbstractModel,

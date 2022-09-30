@@ -3,7 +3,6 @@ package typings.reselect
 import org.scalablytyped.runtime.StringDictionary
 import typings.reselect.defaultMemoizeMod.DefaultMemoizeOptions
 import typings.reselect.typesMod.EqualityFn
-import typings.reselect.typesMod.List
 import typings.reselect.typesMod.Obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[L1 /* <: List[Any] */, L /* <: List[Any] */] extends StObject {
+  trait `0`[L1 /* <: typings.reselect.typesMod.List[Any] */, L /* <: typings.reselect.typesMod.List[Any] */] extends StObject {
     
     var `0`: L1
     
@@ -19,14 +18,14 @@ object anon {
   }
   object `0` {
     
-    inline def apply[L1 /* <: List[Any] */, L /* <: List[Any] */](`0`: L1, `1`: L): `0`[L1, L] = {
+    inline def apply[L1 /* <: typings.reselect.typesMod.List[Any] */, L /* <: typings.reselect.typesMod.List[Any] */](`0`: L1, `1`: L): `0`[L1, L] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`[L1, L]]
     }
     
-    extension [Self <: `0`[?, ?], L1 /* <: List[Any] */, L /* <: List[Any] */](x: Self & (`0`[L1, L])) {
+    extension [Self <: `0`[?, ?], L1 /* <: typings.reselect.typesMod.List[Any] */, L /* <: typings.reselect.typesMod.List[Any] */](x: Self & (`0`[L1, L])) {
       
       inline def set0(value: L1): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

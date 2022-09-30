@@ -10,10 +10,10 @@ A fullscreen control for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-fullscreen |
 | Keywords           | leaflet, maps, fullscreen, client |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 448240 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 68924.33333333333 |
+| # stars            | 377.0 |
 
 ## Links
 - [Homepage](https://github.com/Leaflet/Leaflet.fullscreen#readme)

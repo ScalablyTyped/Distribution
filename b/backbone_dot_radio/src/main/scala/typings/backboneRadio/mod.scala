@@ -199,7 +199,7 @@ object mod {
       inline def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_]
       
       // Proxy functions for Commands
-      inline def command(channelName: String, commandName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("command")((List(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+      inline def command(channelName: String, commandName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("command")((scala.List(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
       
       inline def comply(channelName: String, commandName: String, callback: js.Function1[/* repeated */ Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
       inline def comply(
@@ -233,7 +233,7 @@ object mod {
       
       inline def listenToOnce(channelName: String, `object`: Any, events: String, callback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listenToOnce")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
       
-      inline def log(channelName: String, eventName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+      inline def log(channelName: String, eventName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((scala.List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
       
       inline def off(channelName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any]).asInstanceOf[Any]
       inline def off(channelName: String, eventName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Any]
@@ -282,7 +282,7 @@ object mod {
       ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
       
       // Proxy functions for Requests
-      inline def request(channelName: String, requestName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("request")((List(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+      inline def request(channelName: String, requestName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("request")((scala.List(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
       
       inline def stopComplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = ^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
       inline def stopComplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
@@ -331,7 +331,7 @@ object mod {
       ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
       inline def stopReplying(channelName: String, commandName: Unit, callback: Unit, context: Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
       
-      inline def trigger(channelName: String, eventName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")((List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+      inline def trigger(channelName: String, eventName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")((scala.List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
       
       inline def tuneIn(channelName: String): Radio = ^.asInstanceOf[js.Dynamic].applyDynamic("tuneIn")(channelName.asInstanceOf[js.Any]).asInstanceOf[Radio]
       
@@ -365,7 +365,7 @@ object mod {
   inline def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_]
   
   // Proxy functions for Commands
-  inline def command(channelName: String, commandName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("command")((List(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def command(channelName: String, commandName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("command")((scala.List(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   inline def comply(channelName: String, commandName: String, callback: js.Function1[/* repeated */ Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
   inline def comply(
@@ -399,7 +399,7 @@ object mod {
   
   inline def listenToOnce(channelName: String, `object`: Any, events: String, callback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listenToOnce")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def log(channelName: String, eventName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def log(channelName: String, eventName: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((scala.List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   inline def off(channelName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def off(channelName: String, eventName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Any]
@@ -448,7 +448,7 @@ object mod {
   ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
   
   // Proxy functions for Requests
-  inline def request(channelName: String, requestName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("request")((List(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def request(channelName: String, requestName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("request")((scala.List(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def stopComplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = ^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
   inline def stopComplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
@@ -497,7 +497,7 @@ object mod {
   ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
   inline def stopReplying(channelName: String, commandName: Unit, callback: Unit, context: Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
   
-  inline def trigger(channelName: String, eventName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")((List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def trigger(channelName: String, eventName: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")((scala.List(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def tuneIn(channelName: String): Radio = ^.asInstanceOf[js.Dynamic].applyDynamic("tuneIn")(channelName.asInstanceOf[js.Any]).asInstanceOf[Radio]
   

@@ -712,18 +712,18 @@ object mod {
   // Types
   //
   /* Rewritten from type alias, can be one of: 
-    - typings.iotaLibJs.iotaLibJsNumbers.`1`
-    - typings.iotaLibJs.iotaLibJsNumbers.`2`
-    - typings.iotaLibJs.iotaLibJsNumbers.`3`
+    - typings.iotaLibJs.iotaLibJsInts.`1`
+    - typings.iotaLibJs.iotaLibJsInts.`2`
+    - typings.iotaLibJs.iotaLibJsInts.`3`
   */
   trait Security extends StObject
   object Security {
     
-    inline def `1`: typings.iotaLibJs.iotaLibJsNumbers.`1` = 1.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`1`]
+    inline def `1`: typings.iotaLibJs.iotaLibJsInts.`1` = 1.asInstanceOf[typings.iotaLibJs.iotaLibJsInts.`1`]
     
-    inline def `2`: typings.iotaLibJs.iotaLibJsNumbers.`2` = 2.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`2`]
+    inline def `2`: typings.iotaLibJs.iotaLibJsInts.`2` = 2.asInstanceOf[typings.iotaLibJs.iotaLibJsInts.`2`]
     
-    inline def `3`: typings.iotaLibJs.iotaLibJsNumbers.`3` = 3.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`3`]
+    inline def `3`: typings.iotaLibJs.iotaLibJsInts.`3` = 3.asInstanceOf[typings.iotaLibJs.iotaLibJsInts.`3`]
   }
   
   //

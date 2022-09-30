@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.postcssValueParser.postcssValueParserBooleans.`false`
 import typings.postcssValueParser.postcssValueParserBooleans.`true`
-import typings.postcssValueParser.postcssValueParserStrings.Apostrophe
 import typings.postcssValueParser.postcssValueParserStrings.Quotationmark
 import typings.postcssValueParser.postcssValueParserStrings.`unicode-range`
 import typings.postcssValueParser.postcssValueParserStrings.comment
@@ -274,7 +273,7 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.postcssValueParser.mod.SpaceNode]
     }
     
-    inline def StringNode(quote: Quotationmark | Apostrophe, sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.StringNode = {
+    inline def StringNode(quote: Quotationmark | String, sourceEndIndex: Double, sourceIndex: Double, value: String): typings.postcssValueParser.mod.StringNode = {
       val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[typings.postcssValueParser.mod.StringNode]
@@ -344,13 +343,13 @@ object mod extends Shortcut {
     /**
       * The quote type delimiting the string
       */
-    var quote: Quotationmark | Apostrophe
+    var quote: Quotationmark | String
     
     var `type`: string
   }
   object StringNode {
     
-    inline def apply(quote: Quotationmark | Apostrophe, sourceEndIndex: Double, sourceIndex: Double, value: String): StringNode = {
+    inline def apply(quote: Quotationmark | String, sourceEndIndex: Double, sourceIndex: Double, value: String): StringNode = {
       val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceEndIndex = sourceEndIndex.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[StringNode]
@@ -358,7 +357,7 @@ object mod extends Shortcut {
     
     extension [Self <: StringNode](x: Self) {
       
-      inline def setQuote(value: Quotationmark | Apostrophe): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: Quotationmark | String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
       inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

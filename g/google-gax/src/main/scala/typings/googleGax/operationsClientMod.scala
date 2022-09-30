@@ -1,6 +1,7 @@
 package typings.googleGax
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleAuthLibrary.googleauthMod.ProjectIdCallback
 import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.OAuth2Client
@@ -19,6 +20,7 @@ import typings.googleGax.operationsMod.google.longrunning.ListOperationsResponse
 import typings.googleGax.operationsMod.google.longrunning.Operation
 import typings.googleGax.operationsMod.google.protobuf.Empty
 import typings.node.streamMod.Transform
+import typings.protobufjs.mod.Root
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,11 +34,11 @@ object operationsClientMod {
   
   @JSImport("google-gax/build/src/operationsClient", "OperationsClient")
   @js.native
-  class OperationsClient protected () extends StObject {
-    def this(gaxGrpc: GrpcClient, operationsProtos: js.Any, options: ClientOptions) = this()
-    def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, operationsProtos: js.Any, options: ClientOptions) = this()
+  open class OperationsClient protected () extends StObject {
+    def this(gaxGrpc: GrpcClient, operationsProtos: Any, options: ClientOptions) = this()
+    def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, operationsProtos: Any, options: ClientOptions) = this()
     
-    var auth: js.UndefOr[GoogleAuth | OAuth2Client] = js.native
+    var auth: js.UndefOr[GoogleAuth[JSONClient] | OAuth2Client] = js.native
     
     /**
       * Starts asynchronous cancellation on a long-running operation.  The server
@@ -89,6 +91,9 @@ object operationsClientMod {
       optionsOrCallback: CallOptions,
       callback: Callback[CancelOperationRequest, Empty, js.UndefOr[js.Object | Null]]
     ): js.Promise[Empty] = js.native
+    
+    /** Closes this operations client. */
+    def close(): Unit = js.native
     
     /**
       * Deletes a long-running operation. This method indicates that the client is
@@ -384,17 +389,21 @@ object operationsClientMod {
       */
     def listOperationsStream(request: ListOperationsRequest): Transform = js.native
     def listOperationsStream(request: ListOperationsRequest, options: CallOptions): Transform = js.native
+    
+    var operationsStub: js.Promise[StringDictionary[js.Function]] = js.native
   }
   
   @JSImport("google-gax/build/src/operationsClient", "OperationsClientBuilder")
   @js.native
-  class OperationsClientBuilder protected () extends StObject {
+  open class OperationsClientBuilder protected () extends StObject {
     def this(gaxGrpc: GrpcClient) = this()
     /**
       * Builds a new Operations Client
       * @param gaxGrpc {GrpcClient}
       */
     def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient) = this()
+    def this(gaxGrpc: GrpcClient, protoJson: Root) = this()
+    def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, protoJson: Root) = this()
     
     def operationsClient(opts: ClientOptions): OperationsClient = js.native
   }

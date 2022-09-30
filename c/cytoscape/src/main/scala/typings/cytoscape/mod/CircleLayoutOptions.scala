@@ -23,15 +23,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var radius: js.UndefOr[Double] = js.undefined
   
   // where nodes start in radians, e.g. 3 / 2 * Math.PI,
-  var startAngle: Double
+  var startAngle: js.UndefOr[Double] = js.undefined
   
   // how many radians should be between the first and last node (defaults to full circle)
   var sweep: js.UndefOr[Double] = js.undefined
 }
 object CircleLayoutOptions {
   
-  inline def apply(fit: Boolean, nodeDimensionsIncludeLabels: Boolean, startAngle: Double): CircleLayoutOptions = {
-    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = "circle", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
+  inline def apply(): CircleLayoutOptions = {
+    val __obj = js.Dynamic.literal(name = "circle")
     __obj.asInstanceOf[CircleLayoutOptions]
   }
   
@@ -48,6 +48,8 @@ object CircleLayoutOptions {
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     inline def setSweep(value: Double): Self = StObject.set(x, "sweep", value.asInstanceOf[js.Any])
     

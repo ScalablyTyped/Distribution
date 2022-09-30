@@ -36,14 +36,6 @@ object mod {
     @js.native
     val ^ : js.Object & FileConstructor = js.native
     
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("gulp-util", "File.Class")
-    @js.native
-    open class Class protected ()
-      extends typings.vinyl.mod.Class {
-      def this(options: ConstructorOptionscontent) = this()
-    }
-    
     type _To = js.Object & FileConstructor
     
     /* This means you don't have to write `^`, but can instead just say `File.foo` */
@@ -166,8 +158,8 @@ object mod {
   @js.native
   val linefeed: String = js.native
   
-  inline def log(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def log(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def log(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def log(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def noop(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Transform]
   inline def noop(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]

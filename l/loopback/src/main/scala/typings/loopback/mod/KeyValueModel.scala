@@ -1,6 +1,7 @@
 package typings.loopback.mod
 
 import typings.loopback.anon.Match
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  inline def expire(key: String, ttl: Double, options: Any, callback: js.Function0[Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("expire")(key.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
+  inline def expire(key: String, ttl: Double, options: Any, callback: js.Function0[Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("expire")(key.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
   
   /**
     * Return the value associated with a given key.
@@ -51,10 +52,10 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  inline def get(key: String): js.Thenable[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Any]]
-  inline def get(key: String, option: Any): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def get(key: String, option: Any, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def get(key: String, option: Unit, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
+  inline def get(key: String): PromiseLike[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Any]]
+  inline def get(key: String, option: Any): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def get(key: String, option: Any, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def get(key: String, option: Unit, callback: js.Function2[/* err */ js.Error, /* result */ Any, Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
   
   /**
     * Asynchronously iterate all keys in the database. Similar to .keys()
@@ -117,7 +118,7 @@ object KeyValueModel {
     * @return {PromiseLike<any>}
     */
   /* static member */
-  inline def keys(filter: Match, callback: js.Function0[Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("keys")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
+  inline def keys(filter: Match, callback: js.Function0[Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("keys")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
   
   /**
     * Persist a value and associate it with the given key.
@@ -135,12 +136,12 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  inline def set(key: String, value: Any): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def set(key: String, value: Any, options: Any): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def set(key: String, value: Any, options: Any, callback: js.Function1[/* err */ js.Error, Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def set(key: String, value: Any, options: Double): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def set(key: String, value: Any, options: Double, callback: js.Function1[/* err */ js.Error, Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def set(key: String, value: Any, options: Unit, callback: js.Function1[/* err */ js.Error, Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
+  inline def set(key: String, value: Any): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def set(key: String, value: Any, options: Any): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def set(key: String, value: Any, options: Any, callback: js.Function1[/* err */ js.Error, Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def set(key: String, value: Any, options: Double): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def set(key: String, value: Any, options: Double, callback: js.Function1[/* err */ js.Error, Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def set(key: String, value: Any, options: Unit, callback: js.Function1[/* err */ js.Error, Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
   
   /**
     * Return the TTL (time to live) for a given key.
@@ -155,8 +156,8 @@ object KeyValueModel {
     * @param {() => void} callback
     */
   /* static member */
-  inline def ttl(key: String): js.Thenable[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Any]]
-  inline def ttl(key: String, options: Any): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def ttl(key: String, options: Any, cb: js.Function1[/* error */ js.Error, Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
-  inline def ttl(key: String, options: Unit, cb: js.Function1[/* error */ js.Error, Unit]): js.Thenable[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Any]]
+  inline def ttl(key: String): PromiseLike[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Any]]
+  inline def ttl(key: String, options: Any): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def ttl(key: String, options: Any, cb: js.Function1[/* error */ js.Error, Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
+  inline def ttl(key: String, options: Unit, cb: js.Function1[/* error */ js.Error, Unit]): PromiseLike[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ttl")(key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Any]]
 }

@@ -6,63 +6,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dayhours extends StObject {
   
-  val dayhours: typings.vegaLite.vegaLiteNumbers.`1`
+  val dayhours: typings.vegaLite.vegaLiteInts.`1`
   
-  val dayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
+  val dayhoursminutes: typings.vegaLite.vegaLiteInts.`1`
   
-  val dayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val dayhoursminutesseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val hoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
+  val hoursminutes: typings.vegaLite.vegaLiteInts.`1`
   
-  val hoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val hoursminutesseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val minutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val minutesseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val monthdate: typings.vegaLite.vegaLiteNumbers.`1`
+  val monthdate: typings.vegaLite.vegaLiteInts.`1`
   
-  val monthdatehours: typings.vegaLite.vegaLiteNumbers.`1`
+  val monthdatehours: typings.vegaLite.vegaLiteInts.`1`
   
-  val monthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
+  val monthdatehoursminutes: typings.vegaLite.vegaLiteInts.`1`
   
-  val monthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val monthdatehoursminutesseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val quartermonth: typings.vegaLite.vegaLiteNumbers.`1`
+  val quartermonth: typings.vegaLite.vegaLiteInts.`1`
   
-  val secondsmilliseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val secondsmilliseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val weekday: typings.vegaLite.vegaLiteNumbers.`1`
+  val weekday: typings.vegaLite.vegaLiteInts.`1`
   
-  val weekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
+  val weekdayhoursminutes: typings.vegaLite.vegaLiteInts.`1`
   
-  val weekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val weekdayhoursminutesseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val weeksdayhours: typings.vegaLite.vegaLiteNumbers.`1`
+  val weeksdayhours: typings.vegaLite.vegaLiteInts.`1`
   
-  val yeardayofyear: typings.vegaLite.vegaLiteNumbers.`1`
+  val yeardayofyear: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearmonth: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearmonth: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearmonthdate: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearmonthdate: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearmonthdatehours: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearmonthdatehours: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearmonthdatehoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearmonthdatehoursminutes: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearmonthdatehoursminutesseconds: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearquarter: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearquarter: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearquartermonth: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearquartermonth: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearweek: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearweek: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearweekday: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearweekday: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearweekdayhours: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearweekdayhours: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearweekdayhoursminutes: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearweekdayhoursminutes: typings.vegaLite.vegaLiteInts.`1`
   
-  val yearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteNumbers.`1`
+  val yearweekdayhoursminutesseconds: typings.vegaLite.vegaLiteInts.`1`
 }
 object Dayhours {
   
@@ -73,62 +73,62 @@ object Dayhours {
   
   extension [Self <: Dayhours](x: Self) {
     
-    inline def setDayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "dayhours", value.asInstanceOf[js.Any])
+    inline def setDayhours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "dayhours", value.asInstanceOf[js.Any])
     
-    inline def setDayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "dayhoursminutes", value.asInstanceOf[js.Any])
+    inline def setDayhoursminutes(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "dayhoursminutes", value.asInstanceOf[js.Any])
     
-    inline def setDayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "dayhoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setDayhoursminutesseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "dayhoursminutesseconds", value.asInstanceOf[js.Any])
     
-    inline def setHoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "hoursminutes", value.asInstanceOf[js.Any])
+    inline def setHoursminutes(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "hoursminutes", value.asInstanceOf[js.Any])
     
-    inline def setHoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "hoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setHoursminutesseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "hoursminutesseconds", value.asInstanceOf[js.Any])
     
-    inline def setMinutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "minutesseconds", value.asInstanceOf[js.Any])
+    inline def setMinutesseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "minutesseconds", value.asInstanceOf[js.Any])
     
-    inline def setMonthdate(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "monthdate", value.asInstanceOf[js.Any])
+    inline def setMonthdate(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "monthdate", value.asInstanceOf[js.Any])
     
-    inline def setMonthdatehours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "monthdatehours", value.asInstanceOf[js.Any])
+    inline def setMonthdatehours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "monthdatehours", value.asInstanceOf[js.Any])
     
-    inline def setMonthdatehoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "monthdatehoursminutes", value.asInstanceOf[js.Any])
+    inline def setMonthdatehoursminutes(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "monthdatehoursminutes", value.asInstanceOf[js.Any])
     
-    inline def setMonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "monthdatehoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setMonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "monthdatehoursminutesseconds", value.asInstanceOf[js.Any])
     
-    inline def setQuartermonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "quartermonth", value.asInstanceOf[js.Any])
+    inline def setQuartermonth(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "quartermonth", value.asInstanceOf[js.Any])
     
-    inline def setSecondsmilliseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "secondsmilliseconds", value.asInstanceOf[js.Any])
+    inline def setSecondsmilliseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "secondsmilliseconds", value.asInstanceOf[js.Any])
     
-    inline def setWeekday(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+    inline def setWeekday(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     
-    inline def setWeekdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "weekdayhoursminutes", value.asInstanceOf[js.Any])
+    inline def setWeekdayhoursminutes(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "weekdayhoursminutes", value.asInstanceOf[js.Any])
     
-    inline def setWeekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "weekdayhoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setWeekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "weekdayhoursminutesseconds", value.asInstanceOf[js.Any])
     
-    inline def setWeeksdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "weeksdayhours", value.asInstanceOf[js.Any])
+    inline def setWeeksdayhours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "weeksdayhours", value.asInstanceOf[js.Any])
     
-    inline def setYeardayofyear(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yeardayofyear", value.asInstanceOf[js.Any])
+    inline def setYeardayofyear(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yeardayofyear", value.asInstanceOf[js.Any])
     
-    inline def setYearmonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearmonth", value.asInstanceOf[js.Any])
+    inline def setYearmonth(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearmonth", value.asInstanceOf[js.Any])
     
-    inline def setYearmonthdate(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearmonthdate", value.asInstanceOf[js.Any])
+    inline def setYearmonthdate(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearmonthdate", value.asInstanceOf[js.Any])
     
-    inline def setYearmonthdatehours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearmonthdatehours", value.asInstanceOf[js.Any])
+    inline def setYearmonthdatehours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearmonthdatehours", value.asInstanceOf[js.Any])
     
-    inline def setYearmonthdatehoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearmonthdatehoursminutes", value.asInstanceOf[js.Any])
+    inline def setYearmonthdatehoursminutes(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearmonthdatehoursminutes", value.asInstanceOf[js.Any])
     
-    inline def setYearmonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearmonthdatehoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setYearmonthdatehoursminutesseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearmonthdatehoursminutesseconds", value.asInstanceOf[js.Any])
     
-    inline def setYearquarter(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearquarter", value.asInstanceOf[js.Any])
+    inline def setYearquarter(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearquarter", value.asInstanceOf[js.Any])
     
-    inline def setYearquartermonth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearquartermonth", value.asInstanceOf[js.Any])
+    inline def setYearquartermonth(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearquartermonth", value.asInstanceOf[js.Any])
     
-    inline def setYearweek(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearweek", value.asInstanceOf[js.Any])
+    inline def setYearweek(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearweek", value.asInstanceOf[js.Any])
     
-    inline def setYearweekday(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearweekday", value.asInstanceOf[js.Any])
+    inline def setYearweekday(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearweekday", value.asInstanceOf[js.Any])
     
-    inline def setYearweekdayhours(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearweekdayhours", value.asInstanceOf[js.Any])
+    inline def setYearweekdayhours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearweekdayhours", value.asInstanceOf[js.Any])
     
-    inline def setYearweekdayhoursminutes(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearweekdayhoursminutes", value.asInstanceOf[js.Any])
+    inline def setYearweekdayhoursminutes(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearweekdayhoursminutes", value.asInstanceOf[js.Any])
     
-    inline def setYearweekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "yearweekdayhoursminutesseconds", value.asInstanceOf[js.Any])
+    inline def setYearweekdayhoursminutesseconds(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "yearweekdayhoursminutesseconds", value.asInstanceOf[js.Any])
   }
 }

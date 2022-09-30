@@ -11,10 +11,5 @@ object stateReconcilerAutoMergeLevel1Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S](
-    inboundState: S,
-    originalState: S,
-    reducedState: S,
-    config: PersistConfig[S, js.Any, js.Any, js.Any]
-  ): S = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(inboundState.asInstanceOf[js.Any], originalState.asInstanceOf[js.Any], reducedState.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[S]
+  inline def default[S](inboundState: S, originalState: S, reducedState: S, config: PersistConfig[S, Any, Any, Any]): S = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(inboundState.asInstanceOf[js.Any], originalState.asInstanceOf[js.Any], reducedState.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[S]
 }

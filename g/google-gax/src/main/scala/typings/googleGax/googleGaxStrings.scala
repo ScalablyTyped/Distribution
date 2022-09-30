@@ -1,10 +1,41 @@
 package typings.googleGax
 
+import typings.googleGax.fallbackServiceStubMod.FetchParametersMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleGaxStrings {
+  
+  @js.native
+  sealed trait DELETE
+    extends StObject
+       with FetchParametersMethod
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @js.native
+  sealed trait GET
+    extends StObject
+       with FetchParametersMethod
+  inline def GET: GET = "GET".asInstanceOf[GET]
+  
+  @js.native
+  sealed trait PATCH
+    extends StObject
+       with FetchParametersMethod
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  
+  @js.native
+  sealed trait POST
+    extends StObject
+       with FetchParametersMethod
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
+  sealed trait PUT
+    extends StObject
+       with FetchParametersMethod
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
   sealed trait bool extends StObject
@@ -19,8 +50,8 @@ object googleGaxStrings {
   inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait delete extends StObject
-  inline def delete: delete = "delete".asInstanceOf[delete]
+  sealed trait delete_ extends StObject
+  inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
   sealed trait double extends StObject
@@ -43,8 +74,8 @@ object googleGaxStrings {
   inline def float: float = "float".asInstanceOf[float]
   
   @js.native
-  sealed trait get extends StObject
-  inline def get: get = "get".asInstanceOf[get]
+  sealed trait get_ extends StObject
+  inline def get_ : get_ = "get".asInstanceOf[get_]
   
   @js.native
   sealed trait int32 extends StObject
@@ -59,16 +90,20 @@ object googleGaxStrings {
   inline def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
-  sealed trait patch extends StObject
-  inline def patch: patch = "patch".asInstanceOf[patch]
+  sealed trait patch_ extends StObject
+  inline def patch_ : patch_ = "patch".asInstanceOf[patch_]
   
   @js.native
-  sealed trait post extends StObject
-  inline def post: post = "post".asInstanceOf[post]
+  sealed trait post_ extends StObject
+  inline def post_ : post_ = "post".asInstanceOf[post_]
   
   @js.native
-  sealed trait put extends StObject
-  inline def put: put = "put".asInstanceOf[put]
+  sealed trait proto extends StObject
+  inline def proto: proto = "proto".asInstanceOf[proto]
+  
+  @js.native
+  sealed trait put_ extends StObject
+  inline def put_ : put_ = "put".asInstanceOf[put_]
   
   @js.native
   sealed trait repeated extends StObject
@@ -81,6 +116,10 @@ object googleGaxStrings {
   @js.native
   sealed trait response extends StObject
   inline def response: response = "response".asInstanceOf[response]
+  
+  @js.native
+  sealed trait rest extends StObject
+  inline def rest: rest = "rest".asInstanceOf[rest]
   
   @js.native
   sealed trait sfixed32 extends StObject

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceDescriptor
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var abiType: js.UndefOr[String] = js.undefined
   
@@ -189,7 +189,7 @@ object DeviceDescriptor {
     
     inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    inline def setManufacturerVarargs(value: String*): Self = StObject.set(x, "manufacturer", js.Array(value :_*))
+    inline def setManufacturerVarargs(value: String*): Self = StObject.set(x, "manufacturer", js.Array(value*))
     
     inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,7 @@ object codeMod {
     def str_M_Code: String = js.native
   }
   
-  inline def _underscore(strs: TemplateStringsArray, args: CodeArg*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("_")(List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
+  inline def _underscore(strs: TemplateStringsArray, args: CodeArg*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("_")(scala.List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
   
   inline def addCodeArg(code: js.Array[CodeItem], arg: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCodeArg")(code.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addCodeArg(code: js.Array[CodeItem], arg: CodeArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCodeArg")(code.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -80,7 +80,7 @@ object codeMod {
   
   inline def safeStringify(x: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeStringify")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def str(strs: TemplateStringsArray, args: (CodeArg | js.Array[String])*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
+  inline def str(strs: TemplateStringsArray, args: (CodeArg | js.Array[String])*): _Code = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(scala.List(strs.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[_Code]
   
   inline def strConcat(c1: Code, c2: Code): Code = (^.asInstanceOf[js.Dynamic].applyDynamic("strConcat")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[Code]
   

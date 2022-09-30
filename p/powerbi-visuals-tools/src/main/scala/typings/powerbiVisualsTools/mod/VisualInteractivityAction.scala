@@ -1,7 +1,7 @@
 package typings.powerbiVisualsTools.mod
 
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`0`
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`1`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`0`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * as that is the default action.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`0`
-  - typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`1`
+  - typings.powerbiVisualsTools.powerbiVisualsToolsInts.`0`
+  - typings.powerbiVisualsTools.powerbiVisualsToolsInts.`1`
 */
 trait VisualInteractivityAction extends StObject
 object VisualInteractivityAction {

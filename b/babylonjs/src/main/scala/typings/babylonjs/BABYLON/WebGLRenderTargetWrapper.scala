@@ -35,7 +35,7 @@ trait WebGLRenderTargetWrapper
   
   /**
     * Shares the depth buffer of this render target with another render target.
-    * @hidden
+    * @internal
     * @param renderTarget Destination renderTarget
     */
   def _shareDepth(renderTarget: WebGLRenderTargetWrapper): Unit = js.native

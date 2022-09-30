@@ -28,7 +28,7 @@ object IAcknowledgeRequest {
     
     inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value*))
     
     inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     

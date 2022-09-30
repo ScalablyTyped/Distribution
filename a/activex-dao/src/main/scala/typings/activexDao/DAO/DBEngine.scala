@@ -1,6 +1,6 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`1024`
+import typings.activexDao.activexDaoInts.`1024`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

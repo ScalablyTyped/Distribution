@@ -68,12 +68,6 @@ object peerConnectionDelegateMod {
     var onsignalingstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
-      * Triggered when when a statistics object being monitored is deleted.
-      * @param event - Event.
-      */
-    var onstatsended: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-    
-    /**
       * Triggered when a new track is signaled by the remote peer, as a result of setRemoteDescription.
       * @param event - Event.
       */
@@ -119,10 +113,6 @@ object peerConnectionDelegateMod {
       inline def setOnsignalingstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onsignalingstatechange", js.Any.fromFunction1(value))
       
       inline def setOnsignalingstatechangeUndefined: Self = StObject.set(x, "onsignalingstatechange", js.undefined)
-      
-      inline def setOnstatsended(value: /* event */ Event => Unit): Self = StObject.set(x, "onstatsended", js.Any.fromFunction1(value))
-      
-      inline def setOnstatsendedUndefined: Self = StObject.set(x, "onstatsended", js.undefined)
       
       inline def setOntrack(value: /* event */ Event => Unit): Self = StObject.set(x, "ontrack", js.Any.fromFunction1(value))
       

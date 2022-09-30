@@ -31,7 +31,7 @@ object imodeleventMod {
       
       inline def setDeltas(value: js.Array[Delta]): Self = StObject.set(x, "deltas", value.asInstanceOf[js.Any])
       
-      inline def setDeltasVarargs(value: Delta*): Self = StObject.set(x, "deltas", js.Array(value :_*))
+      inline def setDeltasVarargs(value: Delta*): Self = StObject.set(x, "deltas", js.Array(value*))
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -61,7 +61,7 @@ object imodeleventMod {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

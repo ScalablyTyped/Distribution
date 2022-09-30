@@ -1,9 +1,9 @@
 package typings.activexStdole
 
-import typings.activexStdole.activexStdoleNumbers.`0`
-import typings.activexStdole.activexStdoleNumbers.`1`
-import typings.activexStdole.activexStdoleNumbers.`2`
-import typings.activexStdole.activexStdoleNumbers.`4`
+import typings.activexStdole.activexStdoleInts.`0`
+import typings.activexStdole.activexStdoleInts.`1`
+import typings.activexStdole.activexStdoleInts.`2`
+import typings.activexStdole.activexStdoleInts.`4`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -133,10 +133,10 @@ object stdole {
   type IPictureDisp = StdPicture
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexStdole.activexStdoleNumbers.`4`
-    - typings.activexStdole.activexStdoleNumbers.`0`
-    - typings.activexStdole.activexStdoleNumbers.`1`
-    - typings.activexStdole.activexStdoleNumbers.`2`
+    - typings.activexStdole.activexStdoleInts.`4`
+    - typings.activexStdole.activexStdoleInts.`0`
+    - typings.activexStdole.activexStdoleInts.`1`
+    - typings.activexStdole.activexStdoleInts.`2`
   */
   trait LoadPictureConstants extends StObject
   object LoadPictureConstants {
@@ -153,9 +153,9 @@ object stdole {
   type OLE_COLOR = Double
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexStdole.activexStdoleNumbers.`1`
-    - typings.activexStdole.activexStdoleNumbers.`2`
-    - typings.activexStdole.activexStdoleNumbers.`0`
+    - typings.activexStdole.activexStdoleInts.`1`
+    - typings.activexStdole.activexStdoleInts.`2`
+    - typings.activexStdole.activexStdoleInts.`0`
   */
   trait OLE_TRISTATE extends StObject
   object OLE_TRISTATE {

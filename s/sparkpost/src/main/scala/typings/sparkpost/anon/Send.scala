@@ -2,7 +2,6 @@ package typings.sparkpost.anon
 
 import typings.sparkpost.mod.CreateTransmission
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.Transmission
 import typings.sparkpost.mod.TransmissionSummary
 import org.scalablytyped.runtime.StObject
@@ -18,7 +17,7 @@ trait Send extends StObject {
     * @param id The id of the transmission you want to look up
     * @returns The Transmission results
     */
-  def get(id: String): ResultsPromise[Transmission] = js.native
+  def get(id: String): js.Promise[Results[Transmission]] = js.native
   /**
     * Retrieve the details about a transmission by its ID
     *
@@ -32,14 +31,14 @@ trait Send extends StObject {
     *
     * @returns The Transmission results array
     */
-  def list(): ResultsPromise[js.Array[TransmissionSummary]] = js.native
+  def list(): js.Promise[Results[js.Array[TransmissionSummary]]] = js.native
   /**
     * List an overview of all transmissions in the account
     *
     * @param callback The request callback with Transmission results array
     */
   def list(callback: ResultsCallback[js.Array[TransmissionSummary]]): Unit = js.native
-  def list(options: Campaignid): ResultsPromise[js.Array[TransmissionSummary]] = js.native
+  def list(options: Campaignid): js.Promise[Results[js.Array[TransmissionSummary]]] = js.native
   /**
     * List an overview of all transmissions in the account
     *
@@ -54,7 +53,7 @@ trait Send extends StObject {
     * @param [options] specify maximum number of recipient errors returned
     * @returns The metadata and id results
     */
-  def send(transmission: CreateTransmission): ResultsPromise[Totalacceptedrecipients] = js.native
+  def send(transmission: CreateTransmission): js.Promise[Results[Totalacceptedrecipients]] = js.native
   /**
     *
     *
@@ -62,7 +61,7 @@ trait Send extends StObject {
     * @param callback The request callback with metadata and id results
     */
   def send(transmission: CreateTransmission, callback: ResultsCallback[Totalacceptedrecipients]): Unit = js.native
-  def send(transmission: CreateTransmission, options: Numrcpterrors): ResultsPromise[Totalacceptedrecipients] = js.native
+  def send(transmission: CreateTransmission, options: Numrcpterrors): js.Promise[Results[Totalacceptedrecipients]] = js.native
   /**
     * Sends a message by creating a new transmission
     *

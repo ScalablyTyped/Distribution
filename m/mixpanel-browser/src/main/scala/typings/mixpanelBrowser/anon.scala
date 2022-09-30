@@ -1,7 +1,7 @@
 package typings.mixpanelBrowser
 
-import typings.mixpanelBrowser.mixpanelBrowserNumbers.`0`
-import typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`
+import typings.mixpanelBrowser.mixpanelBrowserInts.`0`
+import typings.mixpanelBrowser.mixpanelBrowserInts.`1`
 import typings.mixpanelBrowser.mod.Dict
 import typings.mixpanelBrowser.mod.Mixpanel
 import typings.mixpanelBrowser.mod.Persistence

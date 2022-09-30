@@ -60,6 +60,6 @@ trait PaymentRequest
   
   /* standard dom */
   def show(): js.Promise[PaymentResponse] = js.native
-  def show(detailsPromise: js.Thenable[PaymentDetailsUpdate]): js.Promise[PaymentResponse] = js.native
   def show(detailsPromise: PaymentDetailsUpdate): js.Promise[PaymentResponse] = js.native
+  def show(detailsPromise: PromiseLike[PaymentDetailsUpdate]): js.Promise[PaymentResponse] = js.native
 }

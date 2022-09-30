@@ -227,7 +227,7 @@ object mod {
               Arg[T7], 
               Arg[T8], 
               Arg[T9], 
-              T10 | js.Thenable[T10]
+              T10 | PromiseLike[T10]
             ]
       ): typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]]
       inline def race[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
@@ -241,7 +241,7 @@ object mod {
               Arg[T7], 
               Arg[T8], 
               Arg[T9], 
-              T10 | js.Thenable[T10]
+              T10 | PromiseLike[T10]
             ],
         label: String
       ): typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]]
@@ -1036,7 +1036,7 @@ object mod {
           Arg[T7], 
           Arg[T8], 
           Arg[T9], 
-          T10 | js.Thenable[T10]
+          T10 | PromiseLike[T10]
         ]
     ): typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]]
     inline def race[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
@@ -1050,7 +1050,7 @@ object mod {
           Arg[T7], 
           Arg[T8], 
           Arg[T9], 
-          T10 | js.Thenable[T10]
+          T10 | PromiseLike[T10]
         ],
       label: String
     ): typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]]
@@ -1160,7 +1160,7 @@ object mod {
     // you don't end up with `Promise<Promise<Promise<string>>>` if you happen
     // to return another `Promise` from a `.then()` invocation, etc. So all of
     // them can take a type or a promise-like/then-able type.
-    type Arg[T] = T | js.Thenable[T]
+    type Arg[T] = T | PromiseLike[T]
     
     @js.native
     trait Deferred[T] extends StObject {
@@ -1263,40 +1263,40 @@ object mod {
          with PromiseLike[T] {
       
       def `catch`[TResult](): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
-      def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
-      def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]], label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
+      def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
+      def `catch`[TResult](onRejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]], label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
       def `catch`[TResult](onRejected: Null, label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
       def `catch`[TResult](onRejected: Unit, label: String): typings.rsvp.mod.RSVP.Promise[T | TResult] = js.native
       
       def `finally`[U](): typings.rsvp.mod.RSVP.Promise[T] = js.native
       def `finally`[U](onFinally: U): typings.rsvp.mod.RSVP.Promise[T] = js.native
-      def `finally`[U](onFinally: js.Thenable[U]): typings.rsvp.mod.RSVP.Promise[T] = js.native
+      def `finally`[U](onFinally: PromiseLike[U]): typings.rsvp.mod.RSVP.Promise[T] = js.native
       
       def `then`[TResult1, TResult2](
-        onFulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-        onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]],
+        onFulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+        onRejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]],
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
-        onFulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
+        onFulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
         onRejected: Null,
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
-        onFulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
+        onFulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
         onRejected: Unit,
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onFulfilled: Null,
-        onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]],
+        onRejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]],
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](onFulfilled: Null, onRejected: Null, label: String): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](onFulfilled: Null, onRejected: Unit, label: String): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
         onFulfilled: Unit,
-        onRejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]],
+        onRejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]],
         label: String
       ): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](onFulfilled: Unit, onRejected: Null, label: String): typings.rsvp.mod.RSVP.Promise[TResult1 | TResult2] = js.native
@@ -2038,7 +2038,7 @@ object mod {
       Arg[T7], 
       Arg[T8], 
       Arg[T9], 
-      T10 | js.Thenable[T10]
+      T10 | PromiseLike[T10]
     ]
   ): typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]]
   inline def race[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
@@ -2052,7 +2052,7 @@ object mod {
       Arg[T7], 
       Arg[T8], 
       Arg[T9], 
-      T10 | js.Thenable[T10]
+      T10 | PromiseLike[T10]
     ],
     label: String
   ): typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = (^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]]

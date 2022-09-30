@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a field.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 trait FieldLoadOptions extends StObject {
   
@@ -20,11 +19,10 @@ trait FieldLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the field's code instruction. Read-only.
+    * Gets the field's code instruction.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var code: js.UndefOr[Boolean] = js.undefined
   
@@ -32,73 +30,65 @@ trait FieldLoadOptions extends StObject {
     * Gets the parent body of the field.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the field. Throws an error if there isn't a parent content control.
+    * Gets the content control that contains the field. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the field. Returns a null object if there isn't a parent content control.
+    * Gets the content control that contains the field. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the table that contains the field. Throws an error if it is not contained in a table.
+    * Gets the table that contains the field. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * Gets the table cell that contains the field. Throws an error if it is not contained in a table cell.
+    * Gets the table cell that contains the field. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * Gets the table cell that contains the field. Returns a null object if it is not contained in a table cell.
+    * Gets the table cell that contains the field. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * Gets the table that contains the field. Returns a null object if it is not contained in a table.
+    * Gets the table that contains the field. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * Gets the field's result data. Read-only.
+    * Gets the field's result data.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
-  var result: js.UndefOr[Boolean] = js.undefined
+  var result: js.UndefOr[RangeLoadOptions] = js.undefined
 }
 object FieldLoadOptions {
   
@@ -145,7 +135,7 @@ object FieldLoadOptions {
     
     inline def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
     
-    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: RangeLoadOptions): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }

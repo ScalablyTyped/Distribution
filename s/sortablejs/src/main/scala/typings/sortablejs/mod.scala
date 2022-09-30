@@ -12,8 +12,8 @@ import typings.sortablejs.pluginsMod.OnSpillPlugin
 import typings.sortablejs.pluginsMod.SortablePlugin
 import typings.sortablejs.pluginsMod.SwapOptions
 import typings.sortablejs.pluginsMod.SwapPlugin
-import typings.sortablejs.sortablejsNumbers.`-1`
-import typings.sortablejs.sortablejsNumbers.`1`
+import typings.sortablejs.sortablejsInts.`-1`
+import typings.sortablejs.sortablejsInts.`1`
 import typings.sortablejs.sortablejsStrings.animation
 import typings.sortablejs.sortablejsStrings.bubbleScroll
 import typings.sortablejs.sortablejsStrings.chosenClass

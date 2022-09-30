@@ -61,7 +61,7 @@ object geometryBufferRendererSceneComponentMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _geometryBufferRenderer: Nullable[GeometryBufferRenderer] = js.native
       
       /**

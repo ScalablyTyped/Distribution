@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 6.6.0: added public
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.StoredValue")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.StoredValue")
 @js.native
-class StoredValue protected ()
+open class StoredValue protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.StoredValue {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class StoredValue protected ()
 }
 object StoredValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.StoredValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.StoredValue")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object StoredValue {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.StoredValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.StoredValue]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.StoredValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.StoredValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.StoredValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.StoredValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

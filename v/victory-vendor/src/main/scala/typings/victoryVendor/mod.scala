@@ -43,9 +43,9 @@ object mod {
   
   inline def bin(): HistogramGeneratorNumber[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorNumber[Double, Double]]
   
-  inline def `bin_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[js.Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
+  inline def bin_DatumValue[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
   
-  inline def `bin_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
+  inline def bin_DatumValue_HistogramGeneratorDate[Datum, Value /* <: js.UndefOr[js.Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
   
   inline def bisect(array: ArrayLike[String], x: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def bisect(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -133,7 +133,7 @@ object mod {
     ]
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("deviation")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  inline def difference[T](iterable: js.Iterable[T], others: js.Iterable[T]*): typings.d3Array.mod.InternSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(List(iterable.asInstanceOf[js.Any]).`++`(others.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.d3Array.mod.InternSet[T]]
+  inline def difference[T](iterable: js.Iterable[T], others: js.Iterable[T]*): typings.d3Array.mod.InternSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(scala.List(iterable.asInstanceOf[js.Any]).`++`(others.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.d3Array.mod.InternSet[T]]
   
   inline def disjoint[T](a: js.Iterable[T], b: js.Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("disjoint")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -153,12 +153,12 @@ object mod {
     ]
   ): js.Tuple2[String | Unit, String | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String | Unit, String | Unit]]
   
-  inline def extent_TU_Numeric[T, U /* <: Numeric */](
+  inline def extent_T[T /* <: Numeric */](iterable: js.Iterable[T]): js.Tuple2[T | Unit, T | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T | Unit, T | Unit]]
+  
+  inline def extent_TU[T, U /* <: Numeric */](
     iterable: js.Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ js.Iterable[T], js.UndefOr[U | Null]]
   ): js.Tuple2[U | Unit, U | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[U | Unit, U | Unit]]
-  
-  inline def extent_T_Numeric[T /* <: Numeric */](iterable: js.Iterable[T]): js.Tuple2[T | Unit, T | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T | Unit, T | Unit]]
   
   inline def fcumsum(values: js.Iterable[js.UndefOr[Numeric | Null]]): js.typedarray.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fcumsum")(values.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float64Array]
   inline def fcumsum[T](
@@ -277,9 +277,9 @@ object mod {
   
   inline def histogram(): HistogramGeneratorNumber[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorNumber[Double, Double]]
   
-  inline def `histogram_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[js.Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
+  inline def histogram_DatumValue[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
   
-  inline def `histogram_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
+  inline def histogram_DatumValue_HistogramGeneratorDate[Datum, Value /* <: js.UndefOr[js.Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
   
   inline def index[TObject, TKey](iterable: js.Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): typings.d3Array.mod.InternMap[TKey, TObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[TKey, TObject]]
   inline def index[TObject, TKey1, TKey2](
@@ -349,12 +349,12 @@ object mod {
     accessor: js.Function3[/* datum */ TDatum, /* index */ Double, /* array */ js.Iterable[TDatum], Any]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("maxIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def max_TU_Numeric[T, U /* <: Numeric */](
+  inline def max_T[T /* <: Numeric */](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  
+  inline def max_TU[T, U /* <: Numeric */](
     iterable: js.Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ js.Iterable[T], js.UndefOr[U | Null]]
   ): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
-  
-  inline def max_T_Numeric[T /* <: Numeric */](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
   inline def mean(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   inline def mean[T](
@@ -392,12 +392,12 @@ object mod {
     accessor: js.Function3[/* datum */ TDatum, /* index */ Double, /* array */ js.Iterable[TDatum], Any]
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("minIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def min_TU_Numeric[T, U /* <: Numeric */](
+  inline def min_T[T /* <: Numeric */](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  
+  inline def min_TU[T, U /* <: Numeric */](
     iterable: js.Iterable[T],
     accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ js.Iterable[T], js.UndefOr[U | Null]]
   ): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
-  
-  inline def min_T_Numeric[T /* <: Numeric */](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
   
   inline def mode(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mode")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def mode[T](
@@ -621,7 +621,7 @@ object mod {
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(iterable.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def sort[T](iterable: js.Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  inline def sort[T](iterable: js.Iterable[T], accessors: (js.Function1[/* a */ T, Any])*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(List(iterable.asInstanceOf[js.Any]).`++`(accessors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
+  inline def sort[T](iterable: js.Iterable[T], accessors: (js.Function1[/* a */ T, Any])*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(scala.List(iterable.asInstanceOf[js.Any]).`++`(accessors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
   inline def sort[T](iterable: js.Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def subset[T](a: js.Iterable[T], b: js.Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]

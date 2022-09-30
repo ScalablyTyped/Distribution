@@ -5,7 +5,6 @@ import typings.googleGax.iamServiceMod.google.`type`.IExpr
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object `type` {
     * Constructs a new Expr.
     * @param [properties] Properties to set
     */
-  class Expr ()
+  open class Expr ()
     extends typings.googleGax.iamServiceMod.google.`type`.Expr {
     def this(properties: IExpr) = this()
   }
@@ -39,6 +38,8 @@ object `type` {
     inline def create(): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     inline def create(properties: IExpr): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.`type`.Expr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     /**
       * Decodes an Expr message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -50,9 +51,8 @@ object `type` {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.`type`.Expr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.`type`.Expr = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     /**
       * Decodes an Expr message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -62,7 +62,6 @@ object `type` {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     
     /**
       * Encodes the specified Expr message. Does not implicitly {@link google.type.Expr.verify|verify} messages.
@@ -90,7 +89,7 @@ object `type` {
       * @returns Expr
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.`type`.Expr = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.`type`.Expr]
     
     /**
       * Creates a plain object from an Expr message. Also converts values to other types if specified.
@@ -99,8 +98,8 @@ object `type` {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.`type`.Expr): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.`type`.Expr, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.`type`.Expr): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.`type`.Expr, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an Expr message.
@@ -108,6 +107,6 @@ object `type` {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
 }

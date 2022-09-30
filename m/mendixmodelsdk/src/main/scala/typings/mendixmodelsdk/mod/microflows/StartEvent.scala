@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.StartEvent")
 @js.native
-class StartEvent protected ()
+open class StartEvent protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.StartEvent {
   def this(
     model: AbstractModel,

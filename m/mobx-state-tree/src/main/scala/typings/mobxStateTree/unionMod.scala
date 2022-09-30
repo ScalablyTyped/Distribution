@@ -21,9 +21,9 @@ object unionMod {
   
   inline def isUnionType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
-  inline def union(dispatchOrType: IAnyType, otherTypes: IAnyType*): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(dispatchOrType.asInstanceOf[js.Any], otherTypes.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
-  inline def union(dispatchOrType: UnionOptions, otherTypes: IAnyType*): IAnyType = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(dispatchOrType.asInstanceOf[js.Any], otherTypes.asInstanceOf[js.Any])).asInstanceOf[IAnyType]
-  inline def union(types: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(types.asInstanceOf[js.Any]).asInstanceOf[IAnyType]
+  inline def union(dispatchOrType: IAnyType, otherTypes: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(scala.List(dispatchOrType.asInstanceOf[js.Any]).`++`(otherTypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IAnyType]
+  inline def union(dispatchOrType: UnionOptions, otherTypes: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(scala.List(dispatchOrType.asInstanceOf[js.Any]).`++`(otherTypes.asInstanceOf[Seq[js.Any]])*).asInstanceOf[IAnyType]
+  inline def union(types: IAnyType*): IAnyType = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IAnyType]
   inline def union[CA, SA, TA, CB, SB, TB](A: IType[CA, SA, TA], B: IType[CB, SB, TB]): ITypeUnion[CA | CB, SA | SB, TA | TB] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB, SA | SB, TA | TB]]
   inline def union[CA, SA, TA, CB, SB, TB](options: UnionOptions, A: IType[CA, SA, TA], B: IType[CB, SB, TB]): ITypeUnion[CA | CB, SA | SB, TA | TB] = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(options.asInstanceOf[js.Any], A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[ITypeUnion[CA | CB, SA | SB, TA | TB]]
   inline def union[PA /* <: ModelProperties */, OA, FCA, FSA, PB /* <: ModelProperties */, OB, FCB, FSB](A: IModelType[PA, OA, FCA, FSA], B: IModelType[PB, OB, FCB, FSB]): ITypeUnion[
@@ -503,7 +503,7 @@ object unionMod {
   
   type CustomCSProcessor[T] = (Exclude[T, NotCustomized]) | NotCustomized
   
-  type ITypeDispatcher = js.Function1[/* snapshot */ js.Any, IAnyType]
+  type ITypeDispatcher = js.Function1[/* snapshot */ Any, IAnyType]
   
   type ITypeUnion[C, S, T] = IType[CustomCSProcessor[C], CustomCSProcessor[S], T]
   
@@ -522,7 +522,7 @@ object unionMod {
     
     extension [Self <: UnionOptions](x: Self) {
       
-      inline def setDispatcher(value: /* snapshot */ js.Any => IAnyType): Self = StObject.set(x, "dispatcher", js.Any.fromFunction1(value))
+      inline def setDispatcher(value: /* snapshot */ Any => IAnyType): Self = StObject.set(x, "dispatcher", js.Any.fromFunction1(value))
       
       inline def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
       

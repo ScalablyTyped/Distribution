@@ -1,20 +1,19 @@
 package typings.googleGax.mod.protobufMinimal
 
 import typings.protobufjs.mod.Buffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "protobufMinimal.Reader")
 @js.native
-class Reader protected ()
+open class Reader protected ()
   extends typings.protobufjs.minimalMod.Reader {
   /**
     * Constructs a new reader instance using the specified buffer.
     * @param buffer Buffer to read from
     */
-  def this(buffer: Uint8Array) = this()
+  def this(buffer: js.typedarray.Uint8Array) = this()
 }
 /* static members */
 object Reader {
@@ -29,5 +28,5 @@ object Reader {
     * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
     * @throws {Error} If `buffer` is not a valid buffer
     */
-  inline def create(buffer: Buffer | Uint8Array): typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader]
+  inline def create(buffer: Buffer | js.typedarray.Uint8Array): typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Reader | typings.protobufjs.mod.BufferReader]
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Control")
 @js.native
-class Control_ () extends Class {
+open class Control_ () extends Class {
   def this(options: ControlOptions) = this()
   
   def addTo(map: Map_): this.type = js.native
@@ -39,7 +39,7 @@ object Control_ {
   
   @JSImport("leaflet", "Control.Attribution")
   @js.native
-  class Attribution () extends Control_ {
+  open class Attribution () extends Control_ {
     def this(options: AttributionOptions) = this()
     
     def addAttribution(text: String): this.type = js.native
@@ -56,7 +56,7 @@ object Control_ {
   
   @JSImport("leaflet", "Control.Layers")
   @js.native
-  class Layers () extends Control_ {
+  open class Layers () extends Control_ {
     def this(baseLayers: LayersObject) = this()
     def this(baseLayers: Unit, overlays: LayersObject) = this()
     def this(baseLayers: LayersObject, overlays: LayersObject) = this()
@@ -81,7 +81,7 @@ object Control_ {
   
   @JSImport("leaflet", "Control.Scale")
   @js.native
-  class Scale () extends Control_ {
+  open class Scale () extends Control_ {
     def this(options: ScaleOptions) = this()
     
     @JSName("options")
@@ -90,7 +90,7 @@ object Control_ {
   
   @JSImport("leaflet", "Control.Zoom")
   @js.native
-  class Zoom () extends Control_ {
+  open class Zoom () extends Control_ {
     def this(options: typings.leaflet.mod.Control_.ZoomOptions) = this()
     
     @JSName("options")
@@ -131,6 +131,21 @@ object Control_ {
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
     var hideSingleBase: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A [compare function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+      * that will be used for sorting the layers, when `sortLayers` is `true`. The function receives both the
+      * [`L.Layer`](https://leafletjs.com/reference.html#layer) instances and their names, as in
+      * `sortFunction(layerA, layerB, nameA, nameB)`. By default, it sorts layers alphabetically by their name.
+      */
+    var sortFunction: js.UndefOr[
+        js.Function4[/* layerA */ Layer, /* layerB */ Layer, /* nameA */ String, /* nameB */ String, Double]
+      ] = js.undefined
+    
+    /**
+      * Whether to sort the layers. When `false`, layers will keep the order in which they were added to the control.
+      */
+    var sortLayers: js.UndefOr[Boolean] = js.undefined
   }
   object LayersOptions {
     
@@ -152,6 +167,14 @@ object Control_ {
       inline def setHideSingleBase(value: Boolean): Self = StObject.set(x, "hideSingleBase", value.asInstanceOf[js.Any])
       
       inline def setHideSingleBaseUndefined: Self = StObject.set(x, "hideSingleBase", js.undefined)
+      
+      inline def setSortFunction(value: (/* layerA */ Layer, /* layerB */ Layer, /* nameA */ String, /* nameB */ String) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction4(value))
+      
+      inline def setSortFunctionUndefined: Self = StObject.set(x, "sortFunction", js.undefined)
+      
+      inline def setSortLayers(value: Boolean): Self = StObject.set(x, "sortLayers", value.asInstanceOf[js.Any])
+      
+      inline def setSortLayersUndefined: Self = StObject.set(x, "sortLayers", js.undefined)
     }
   }
   

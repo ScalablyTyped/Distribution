@@ -2,6 +2,7 @@ package typings.leaflet.mod
 
 import typings.geojson.mod.Feature
 import typings.geojson.mod.Point
+import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Marker")
 @js.native
-class Marker_[P] protected () extends Layer {
+open class Marker_[P] protected () extends Layer {
   def this(latlng: LatLngExpression) = this()
   def this(latlng: LatLngExpression, options: MarkerOptions) = this()
   
@@ -38,4 +39,7 @@ class Marker_[P] protected () extends Layer {
   def setZIndexOffset(offset: Double): this.type = js.native
   
   def toGeoJSON(): Feature[Point, P] = js.native
+  def toGeoJSON(precision: Double): Feature[Point, P] = js.native
+  @JSName("toGeoJSON")
+  def toGeoJSON_false(precision: `false`): Feature[Point, P] = js.native
 }

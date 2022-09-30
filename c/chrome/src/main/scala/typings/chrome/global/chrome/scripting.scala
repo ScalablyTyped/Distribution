@@ -28,7 +28,7 @@ object scripting {
     callback: js.Function1[/* results */ js.Array[InjectionResult[Awaited[Result]]], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(injection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def executeScript_Args_ArrayAnyResult_Unit[Args /* <: js.Array[Any] */, Result](injection: ScriptInjection[Args, Result]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(injection.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def executeScript_ArgsResult_Unit[Args /* <: js.Array[Any] */, Result](injection: ScriptInjection[Args, Result]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("executeScript")(injection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def insertCSS(injection: CSSInjection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(injection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def insertCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(injection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

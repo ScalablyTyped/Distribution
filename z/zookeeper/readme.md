@@ -1,19 +1,19 @@
 
 # Scala.js typings for zookeeper
 
-Typings are for version 3.4
+Typings are for version 5.5.1
 
 ## Library description:
-apache zookeeper client (zookeeper async API v3.4.x - v3.6.x)
+apache zookeeper client (zookeeper async API v3.5.x - v3.8.x)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zookeeper |
 | Keywords           | apache, zookeeper, client, typescript |
-| # releases         | 19 |
-| # dependents       | 22 |
-| # downloads        | 93793 |
-| # stars            | 13 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 10218.666666666666 |
+| # stars            | 457.0 |
 
 ## Links
 - [Homepage](https://github.com/yfinkelstein/node-zookeeper#readme)
@@ -24,7 +24,7 @@ apache zookeeper client (zookeeper async API v3.4.x - v3.6.x)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

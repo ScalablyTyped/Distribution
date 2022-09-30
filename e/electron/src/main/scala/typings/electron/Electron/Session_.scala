@@ -1,6 +1,17 @@
 package typings.electron.Electron
 
 import typings.electron.electronStrings.`clipboard-read`
+import typings.electron.electronStrings.`display-capture`
+import typings.electron.electronStrings.`extension-loaded`
+import typings.electron.electronStrings.`extension-ready`
+import typings.electron.electronStrings.`extension-unloaded`
+import typings.electron.electronStrings.`hid-device-added`
+import typings.electron.electronStrings.`hid-device-removed`
+import typings.electron.electronStrings.`hid-device-revoked`
+import typings.electron.electronStrings.`select-hid-device`
+import typings.electron.electronStrings.`select-serial-port`
+import typings.electron.electronStrings.`serial-port-added`
+import typings.electron.electronStrings.`serial-port-removed`
 import typings.electron.electronStrings.`spellcheck-dictionary-download-begin`
 import typings.electron.electronStrings.`spellcheck-dictionary-download-failure`
 import typings.electron.electronStrings.`spellcheck-dictionary-download-success`
@@ -16,7 +27,8 @@ import typings.electron.electronStrings.notifications
 import typings.electron.electronStrings.openExternal
 import typings.electron.electronStrings.pointerLock
 import typings.electron.electronStrings.preconnect
-import typings.node.Buffer
+import typings.electron.electronStrings.unknown_
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,9 +38,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Session_ extends EventEmitter {
   
   @JSName("addListener")
+  def addListener_extensionloaded(
+    event: `extension-loaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_extensionready(
+    event: `extension-ready`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_extensionunloaded(
+    event: `extension-unloaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_hiddeviceadded(
+    event: `hid-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_hiddeviceremoved(
+    event: `hid-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_hiddevicerevoked(
+    event: `hid-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_preconnect(
     event: preconnect,
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_selecthiddevice(
+    event: `select-hid-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectHidDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String | Null], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_selectserialport(
+    event: `select-serial-port`,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* portList */ js.Array[SerialPort], 
+      /* webContents */ WebContents_, 
+      /* callback */ js.Function1[/* portId */ String, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_serialportadded(
+    event: `serial-port-added`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_serialportremoved(
+    event: `serial-port-removed`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_spellcheckdictionarydownloadbegin(
@@ -71,6 +144,12 @@ trait Session_ extends EventEmitter {
     */
   def allowNTLMCredentialsForDomains(domains: String): Unit = js.native
   
+  /**
+    * A `string[]` array which consists of all the known available spell checker
+    * languages.  Providing a language code to the `setSpellCheckerLanguages` API that
+    * isn't in this array will result in an error.
+    *
+    */
   val availableSpellCheckerLanguages: js.Array[String] = js.native
   
   /**
@@ -80,14 +159,20 @@ trait Session_ extends EventEmitter {
   
   /**
     * resolves when the cache clear operation is complete.
-    * 
-  Clears the session’s HTTP cache.
+    *
+    * Clears the session’s HTTP cache.
     */
   def clearCache(): js.Promise[Unit] = js.native
   
   /**
+    * resolves when the code cache clear operation is complete.
+    */
+  def clearCodeCaches(options: ClearCodeCachesOptions): js.Promise[Unit] = js.native
+  
+  /**
     * Resolves when the operation is complete.
-  Clears the host resolver cache.
+    *
+    * Clears the host resolver cache.
     */
   def clearHostResolverCache(): js.Promise[Unit] = js.native
   
@@ -97,6 +182,17 @@ trait Session_ extends EventEmitter {
   def clearStorageData(): js.Promise[Unit] = js.native
   def clearStorageData(options: ClearStorageDataOptions): js.Promise[Unit] = js.native
   
+  /**
+    * Resolves when all connections are closed.
+    *
+    * **Note:** It will terminate / fail all requests currently in flight.
+    */
+  def closeAllConnections(): js.Promise[Unit] = js.native
+  
+  /**
+    * A `Cookies` object for this session.
+    *
+    */
   val cookies: Cookies = js.native
   
   /**
@@ -132,6 +228,13 @@ trait Session_ extends EventEmitter {
     * Writes any unwritten DOMStorage data to disk.
     */
   def flushStorageData(): Unit = js.native
+  
+  /**
+    * Resolves when the all internal states of proxy service is reset and the latest
+    * proxy configuration is reapplied if it's already available. The pac script will
+    * be fetched from `pacScript` again if the proxy mode is `pac_script`.
+    */
+  def forceReloadProxyConfig(): js.Promise[Unit] = js.native
   
   /**
     * A list of all loaded extensions.
@@ -171,9 +274,16 @@ trait Session_ extends EventEmitter {
     * the current OS locale.  This setting is persisted across restarts.
     *
     * **Note:** On macOS the OS spellchecker is used and has its own list of
-    * languages.  This API is a no-op on macOS.
+    * languages. On macOS, this API will return whichever languages have been
+    * configured by the OS.
     */
   def getSpellCheckerLanguages(): js.Array[String] = js.native
+  
+  /**
+    * The absolute file system path where data for this session is persisted on disk.
+    * For in memory sessions this returns `null`.
+    */
+  def getStoragePath(): String | Null = js.native
   
   /**
     * The user agent for this session.
@@ -187,6 +297,11 @@ trait Session_ extends EventEmitter {
     * will be temporary.
     */
   def isPersistent(): Boolean = js.native
+  
+  /**
+    * Whether the builtin spell checker is enabled.
+    */
+  def isSpellCheckerEnabled(): Boolean = js.native
   
   /**
     * An array of all words in app's custom dictionary. Resolves when the full
@@ -218,9 +333,80 @@ trait Session_ extends EventEmitter {
     * supported and will throw an error.
     */
   def loadExtension(path: String): js.Promise[Extension] = js.native
+  def loadExtension(path: String, options: LoadExtensionOptions): js.Promise[Extension] = js.native
   
+  /**
+    * A `NetLog` object for this session.
+    *
+    */
   val netLog: NetLog = js.native
   
+  /**
+    * Emitted after an extension is loaded. This occurs whenever an extension is added
+    * to the "enabled" set of extensions. This includes:
+    *
+    * * Extensions being loaded from `Session.loadExtension`.
+    * * Extensions being reloaded:
+    *   * from a crash.
+    *   * if the extension requested it (`chrome.runtime.reload()`).
+    */
+  @JSName("on")
+  def on_extensionloaded(
+    event: `extension-loaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after an extension is loaded and all necessary browser state is
+    * initialized to support the start of the extension's background page.
+    */
+  @JSName("on")
+  def on_extensionready(
+    event: `extension-ready`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after an extension is unloaded. This occurs when
+    * `Session.removeExtension` is called.
+    */
+  @JSName("on")
+  def on_extensionunloaded(
+    event: `extension-unloaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `navigator.hid.requestDevice` has been called and
+    * `select-hid-device` has fired if a new device becomes available before the
+    * callback from `select-hid-device` is called.  This event is intended for use
+    * when using a UI to ask users to pick a device so that the UI can be updated with
+    * the newly added device.
+    */
+  @JSName("on")
+  def on_hiddeviceadded(
+    event: `hid-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `navigator.hid.requestDevice` has been called and
+    * `select-hid-device` has fired if a device has been removed before the callback
+    * from `select-hid-device` is called.  This event is intended for use when using a
+    * UI to ask users to pick a device so that the UI can be updated to remove the
+    * specified device.
+    */
+  @JSName("on")
+  def on_hiddeviceremoved(
+    event: `hid-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `HIDDevice.forget()` has been called.  This event can be used to
+    * help maintain persistent storage of permissions when
+    * `setDevicePermissionHandler` is used.
+    */
+  @JSName("on")
+  def on_hiddevicerevoked(
+    event: `hid-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
+  ): this.type = js.native
   /**
     * Emitted when a render process requests preconnection to a URL, generally due to
     * a resource hint.
@@ -229,6 +415,66 @@ trait Session_ extends EventEmitter {
   def on_preconnect(
     event: preconnect,
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a HID device needs to be selected when a call to
+    * `navigator.hid.requestDevice` is made. `callback` should be called with
+    * `deviceId` to be selected; passing no arguments to `callback` will cancel the
+    * request.  Additionally, permissioning on `navigator.hid` can be further managed
+    * by using ses.setPermissionCheckHandler(handler) and
+    * ses.setDevicePermissionHandler(handler)`.
+    */
+  @JSName("on")
+  def on_selecthiddevice(
+    event: `select-hid-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectHidDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String | Null], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when a serial port needs to be selected when a call to
+    * `navigator.serial.requestPort` is made. `callback` should be called with
+    * `portId` to be selected, passing an empty string to `callback` will cancel the
+    * request.  Additionally, permissioning on `navigator.serial` can be managed by
+    * using ses.setPermissionCheckHandler(handler) with the `serial` permission.
+    */
+  @JSName("on")
+  def on_selectserialport(
+    event: `select-serial-port`,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* portList */ js.Array[SerialPort], 
+      /* webContents */ WebContents_, 
+      /* callback */ js.Function1[/* portId */ String, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted after `navigator.serial.requestPort` has been called and
+    * `select-serial-port` has fired if a new serial port becomes available before the
+    * callback from `select-serial-port` is called.  This event is intended for use
+    * when using a UI to ask users to pick a port so that the UI can be updated with
+    * the newly added port.
+    */
+  @JSName("on")
+  def on_serialportadded(
+    event: `serial-port-added`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted after `navigator.serial.requestPort` has been called and
+    * `select-serial-port` has fired if a serial port has been removed before the
+    * callback from `select-serial-port` is called.  This event is intended for use
+    * when using a UI to ask users to pick a port so that the UI can be updated to
+    * remove the specified port.
+    */
+  @JSName("on")
+  def on_serialportremoved(
+    event: `serial-port-removed`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted when a hunspell dictionary file starts downloading
@@ -277,9 +523,70 @@ trait Session_ extends EventEmitter {
   ): this.type = js.native
   
   @JSName("once")
+  def once_extensionloaded(
+    event: `extension-loaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_extensionready(
+    event: `extension-ready`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_extensionunloaded(
+    event: `extension-unloaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_hiddeviceadded(
+    event: `hid-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_hiddeviceremoved(
+    event: `hid-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_hiddevicerevoked(
+    event: `hid-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_preconnect(
     event: preconnect,
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_selecthiddevice(
+    event: `select-hid-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectHidDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String | Null], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_selectserialport(
+    event: `select-serial-port`,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* portList */ js.Array[SerialPort], 
+      /* webContents */ WebContents_, 
+      /* callback */ js.Function1[/* portId */ String, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_serialportadded(
+    event: `serial-port-added`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_serialportremoved(
+    event: `serial-port-removed`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_spellcheckdictionarydownloadbegin(
@@ -312,6 +619,10 @@ trait Session_ extends EventEmitter {
     */
   def preconnect(options: PreconnectOptions): Unit = js.native
   
+  /**
+    * A `Protocol` object for this session.
+    *
+    */
   val protocol: Protocol = js.native
   
   /**
@@ -323,9 +634,70 @@ trait Session_ extends EventEmitter {
   def removeExtension(extensionId: String): Unit = js.native
   
   @JSName("removeListener")
+  def removeListener_extensionloaded(
+    event: `extension-loaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_extensionready(
+    event: `extension-ready`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_extensionunloaded(
+    event: `extension-unloaded`,
+    listener: js.Function2[/* event */ Event, /* extension */ Extension, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_hiddeviceadded(
+    event: `hid-device-added`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceAddedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_hiddeviceremoved(
+    event: `hid-device-removed`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRemovedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_hiddevicerevoked(
+    event: `hid-device-revoked`,
+    listener: js.Function2[/* event */ Event, /* details */ HidDeviceRevokedDetails, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_preconnect(
     event: preconnect,
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_selecthiddevice(
+    event: `select-hid-device`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* details */ SelectHidDeviceDetails, 
+      /* callback */ js.Function1[/* deviceId */ js.UndefOr[String | Null], Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_selectserialport(
+    event: `select-serial-port`,
+    listener: js.Function4[
+      /* event */ Event, 
+      /* portList */ js.Array[SerialPort], 
+      /* webContents */ WebContents_, 
+      /* callback */ js.Function1[/* portId */ String, Unit], 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_serialportadded(
+    event: `serial-port-added`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_serialportremoved(
+    event: `serial-port-removed`,
+    listener: js.Function3[/* event */ Event, /* port */ SerialPort, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_spellcheckdictionarydownloadbegin(
@@ -367,7 +739,30 @@ trait Session_ extends EventEmitter {
     */
   def resolveProxy(url: String): js.Promise[String] = js.native
   
+  /**
+    * A `ServiceWorkers` object for this session.
+    *
+    */
   val serviceWorkers: ServiceWorkers = js.native
+  
+  /**
+    * Sets a handler to respond to Bluetooth pairing requests. This handler allows
+    * developers to handle devices that require additional validation before pairing.
+    * When a handler is not defined, any pairing on Linux or Windows that requires
+    * additional validation will be automatically cancelled. macOS does not require a
+    * handler because macOS handles the pairing automatically.  To clear the handler,
+    * call `setBluetoothPairingHandler(null)`.
+    *
+    * @platform win32,linux
+    */
+  def setBluetoothPairingHandler(): Unit = js.native
+  def setBluetoothPairingHandler(
+    handler: js.Function2[
+      /* details */ BluetoothPairingHandlerHandlerDetails, 
+      /* callback */ js.Function1[/* response */ Response, Unit], 
+      Unit
+    ]
+  ): Unit = js.native
   
   /**
     * Sets the certificate verify proc for `session`, the `proc` will be called with
@@ -377,6 +772,8 @@ trait Session_ extends EventEmitter {
     *
     * Calling `setCertificateVerifyProc(null)` will revert back to default certificate
     * verify proc.
+    *
+    * > **NOTE:** The result of this procedure is cached by the network service.
     */
   def setCertificateVerifyProc(): Unit = js.native
   def setCertificateVerifyProc(
@@ -388,6 +785,34 @@ trait Session_ extends EventEmitter {
   ): Unit = js.native
   
   /**
+    * Sets the directory to store the generated JS code cache for this session. The
+    * directory is not required to be created by the user before this call, the
+    * runtime will create if it does not exist otherwise will use the existing
+    * directory. If directory cannot be created, then code cache will not be used and
+    * all operations related to code cache will fail silently inside the runtime. By
+    * default, the directory will be `Code Cache` under the respective user data
+    * folder.
+    */
+  def setCodeCachePath(path: String): Unit = js.native
+  
+  /**
+    * Sets the handler which can be used to respond to device permission checks for
+    * the `session`. Returning `true` will allow the device to be permitted and
+    * `false` will reject it. To clear the handler, call
+    * `setDevicePermissionHandler(null)`. This handler can be used to provide default
+    * permissioning to devices without first calling for permission to devices (eg via
+    * `navigator.hid.requestDevice`).  If this handler is not defined, the default
+    * device permissions as granted through device selection (eg via
+    * `navigator.hid.requestDevice`) will be used. Additionally, the default behavior
+    * of Electron is to store granted device permision in memory. If longer term
+    * storage is needed, a developer can store granted device permissions (eg when
+    * handling the `select-hid-device` event) and then read from that storage with
+    * `setDevicePermissionHandler`.
+    */
+  def setDevicePermissionHandler(): Unit = js.native
+  def setDevicePermissionHandler(handler: js.Function1[/* details */ DevicePermissionHandlerHandlerDetails, Boolean]): Unit = js.native
+  
+  /**
     * Sets download saving directory. By default, the download directory will be the
     * `Downloads` under the respective app folder.
     */
@@ -396,12 +821,15 @@ trait Session_ extends EventEmitter {
   /**
     * Sets the handler which can be used to respond to permission checks for the
     * `session`. Returning `true` will allow the permission and `false` will reject
-    * it. To clear the handler, call `setPermissionCheckHandler(null)`.
+    * it.  Please note that you must also implement `setPermissionRequestHandler` to
+    * get complete permission handling. Most web APIs do a permission check and then
+    * make a permission request if the check is denied. To clear the handler, call
+    * `setPermissionCheckHandler(null)`.
     */
   def setPermissionCheckHandler(): Unit = js.native
   def setPermissionCheckHandler(
     handler: js.Function4[
-      /* webContents */ WebContents_, 
+      /* webContents */ WebContents_ | Null, 
       /* permission */ String, 
       /* requestingOrigin */ String, 
       /* details */ PermissionCheckHandlerHandlerDetails, 
@@ -413,13 +841,15 @@ trait Session_ extends EventEmitter {
     * Sets the handler which can be used to respond to permission requests for the
     * `session`. Calling `callback(true)` will allow the permission and
     * `callback(false)` will reject it. To clear the handler, call
-    * `setPermissionRequestHandler(null)`.
+    * `setPermissionRequestHandler(null)`.  Please note that you must also implement
+    * `setPermissionCheckHandler` to get complete permission handling. Most web APIs
+    * do a permission check and then make a permission request if the check is denied.
     */
   def setPermissionRequestHandler(): Unit = js.native
   def setPermissionRequestHandler(
     handler: js.Function4[
       /* webContents */ WebContents_, 
-      /* permission */ `clipboard-read` | media | mediaKeySystem | geolocation | notifications | midi | midiSysex | pointerLock | fullscreen | openExternal, 
+      /* permission */ `clipboard-read` | media | `display-capture` | mediaKeySystem | geolocation | notifications | midi | midiSysex | pointerLock | fullscreen | openExternal | unknown_, 
       /* callback */ js.Function1[/* permissionGranted */ Boolean, Unit], 
       /* details */ PermissionRequestHandlerHandlerDetails, 
       Unit
@@ -437,8 +867,12 @@ trait Session_ extends EventEmitter {
     *
     * Sets the proxy settings.
     *
-    * When `pacScript` and `proxyRules` are provided together, the `proxyRules` option
-    * is ignored and `pacScript` configuration is applied.
+    * When `mode` is unspecified, `pacScript` and `proxyRules` are provided together,
+    * the `proxyRules` option is ignored and `pacScript` configuration is applied.
+    *
+    * You may need `ses.closeAllConnections` to close currently in flight connections
+    * to prevent pooled sockets using previous proxy from being reused by future
+    * requests.
     *
     * The `proxyRules` has to follow the rules below:
     *
@@ -489,13 +923,23 @@ trait Session_ extends EventEmitter {
   def setProxy(config: Config): js.Promise[Unit] = js.native
   
   /**
+    * Sets the SSL configuration for the session. All subsequent network requests will
+    * use the new configuration. Existing network connections (such as WebSocket
+    * connections) will not be terminated, but old sockets in the pool will not be
+    * reused for new connections.
+    */
+  def setSSLConfig(config: SSLConfigConfig): Unit = js.native
+  
+  /**
     * By default Electron will download hunspell dictionaries from the Chromium CDN.
     * If you want to override this behavior you can use this API to point the
     * dictionary downloader at your own hosted version of the hunspell dictionaries.
     * We publish a `hunspell_dictionaries.zip` file with each release which contains
-    * the files you need to host here, the file server must be **case insensitive**
-    * you must upload each file twice, once with the case it has in the ZIP file and
-    * once with the filename as all lower case.
+    * the files you need to host here.
+    *
+    * The file server must be **case insensitive**. If you cannot do this, you must
+    * upload each file twice: once with the case it has in the ZIP file and once with
+    * the filename as all lowercase.
     *
     * If the files present in `hunspell_dictionaries.zip` are available at
     * `https://example.com/dictionaries/language-code.bdic` then you should call this
@@ -508,6 +952,11 @@ trait Session_ extends EventEmitter {
     * any dictionary files.  This API is a no-op on macOS.
     */
   def setSpellCheckerDictionaryDownloadURL(url: String): Unit = js.native
+  
+  /**
+    * Sets whether to enable the builtin spell checker.
+    */
+  def setSpellCheckerEnabled(enable: Boolean): Unit = js.native
   
   /**
     * The built in spellchecker does not automatically detect what language a user is
@@ -532,5 +981,21 @@ trait Session_ extends EventEmitter {
   def setUserAgent(userAgent: String): Unit = js.native
   def setUserAgent(userAgent: String, acceptLanguages: String): Unit = js.native
   
+  /**
+    * A `boolean` indicating whether builtin spell checker is enabled.
+    */
+  var spellCheckerEnabled: Boolean = js.native
+  
+  /**
+    * A `string | null` indicating the absolute file system path where data for this
+    * session is persisted on disk.  For in memory sessions this returns `null`.
+    *
+    */
+  val storagePath: String | Null = js.native
+  
+  /**
+    * A `WebRequest` object for this session.
+    *
+    */
   val webRequest: WebRequest = js.native
 }

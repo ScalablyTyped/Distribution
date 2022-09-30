@@ -35,7 +35,7 @@ object mod {
       * @param specs the array of specs that must all match
       * @returns the constructed Spec
       */
-    inline def and(name: String, specs: SpecInput*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(List(name.asInstanceOf[js.Any]).`++`(specs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
+    inline def and(name: String, specs: SpecInput*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(scala.List(name.asInstanceOf[js.Any]).`++`(specs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is an Array.
@@ -186,7 +186,7 @@ object mod {
       * @param values the emum of values
       * @returns the constructed spec
       */
-    inline def oneOf(name: String, values: Any*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(List(name.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
+    inline def oneOf(name: String, values: Any*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(scala.List(name.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
     
     /**
       * Data must conform to at least one provided spec. The order in which they are validated is not defined.
@@ -253,7 +253,7 @@ object mod {
       * @param specs the specs to test the value array
       * @returns the constructed spec
       */
-    inline def tuple(name: String, specs: SpecInput*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(List(name.asInstanceOf[js.Any]).`++`(specs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
+    inline def tuple(name: String, specs: SpecInput*): Spec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(scala.List(name.asInstanceOf[js.Any]).`++`(specs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is the number zero.

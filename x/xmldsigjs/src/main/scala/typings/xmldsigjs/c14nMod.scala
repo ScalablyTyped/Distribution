@@ -10,7 +10,7 @@ object c14nMod {
   
   @JSImport("xmldsigjs/build/types/xml/transforms/c14n", "XmlDsigC14NTransform")
   @js.native
-  class XmlDsigC14NTransform () extends Transform {
+  open class XmlDsigC14NTransform () extends Transform {
     def this(properties: js.Object) = this()
     
     /* protected */ var xmlCanonicalizer: XmlCanonicalizer = js.native
@@ -18,7 +18,7 @@ object c14nMod {
   
   @JSImport("xmldsigjs/build/types/xml/transforms/c14n", "XmlDsigC14NWithCommentsTransform")
   @js.native
-  class XmlDsigC14NWithCommentsTransform () extends XmlDsigC14NTransform {
+  open class XmlDsigC14NWithCommentsTransform () extends XmlDsigC14NTransform {
     def this(properties: js.Object) = this()
   }
 }

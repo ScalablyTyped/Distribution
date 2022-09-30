@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/date-picker relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatePicker")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DatePicker")
 @js.native
-class DatePicker protected () extends AttributeWidgetWithPlaceholder {
+open class DatePicker protected () extends AttributeWidgetWithPlaceholder {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ class DatePicker protected () extends AttributeWidgetWithPlaceholder {
 }
 object DatePicker {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatePicker")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DatePicker")
   @js.native
   val ^ : js.Any = js.native
   
@@ -609,13 +609,13 @@ object DatePicker {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): DatePicker = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DatePicker]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatePicker.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DatePicker.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatePicker.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DatePicker.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

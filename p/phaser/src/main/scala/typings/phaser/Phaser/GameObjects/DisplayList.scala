@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
-import typings.phaser.Phaser.Structs.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DisplayList
   extends StObject
-     with List[GameObject] {
+     with typings.phaser.Phaser.Structs.List[GameObject] {
   
   /**
     * Immediately sorts the display list if the flag is set.

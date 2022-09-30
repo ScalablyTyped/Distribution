@@ -49,13 +49,13 @@ trait `13` extends StObject {
     * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
     */
   def endpoint[R /* <: Route */, P /* <: RequestParameters */](
-    route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R
+    route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 693 */ Any) | R
   ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
     P, 
     /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
   ]) = js.native
   def endpoint[R /* <: Route */, P /* <: RequestParameters */](
-    route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
+    route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 693 */ Any) | R,
     parameters: P
   ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
     P, 

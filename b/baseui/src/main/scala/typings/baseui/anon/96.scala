@@ -2,7 +2,6 @@ package typings.baseui.anon
 
 import typings.baseui.baseuiStrings.GR
 import typings.baseui.baseuiStrings.Plussign30
-import typings.baseui.baseuiStrings.`Greece LeftparenthesisΕλλάδαRightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait `96` extends StObject {
   
   val id: GR
   
-  val label: `Greece LeftparenthesisΕλλάδαRightparenthesis`
+  val label: String
 }
 object `96` {
   
@@ -28,6 +27,6 @@ object `96` {
     
     inline def setId(value: GR): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: `Greece LeftparenthesisΕλλάδαRightparenthesis`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

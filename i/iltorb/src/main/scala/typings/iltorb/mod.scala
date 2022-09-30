@@ -31,45 +31,45 @@ object mod {
   inline def decompressSync(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.iltorb.iltorbNumbers.`0`
-    - typings.iltorb.iltorbNumbers.`1`
-    - typings.iltorb.iltorbNumbers.`2`
-    - typings.iltorb.iltorbNumbers.`3`
-    - typings.iltorb.iltorbNumbers.`4`
-    - typings.iltorb.iltorbNumbers.`5`
-    - typings.iltorb.iltorbNumbers.`6`
-    - typings.iltorb.iltorbNumbers.`7`
-    - typings.iltorb.iltorbNumbers.`8`
-    - typings.iltorb.iltorbNumbers.`9`
-    - typings.iltorb.iltorbNumbers.`10`
-    - typings.iltorb.iltorbNumbers.`11`
+    - typings.iltorb.iltorbInts.`0`
+    - typings.iltorb.iltorbInts.`1`
+    - typings.iltorb.iltorbInts.`2`
+    - typings.iltorb.iltorbInts.`3`
+    - typings.iltorb.iltorbInts.`4`
+    - typings.iltorb.iltorbInts.`5`
+    - typings.iltorb.iltorbInts.`6`
+    - typings.iltorb.iltorbInts.`7`
+    - typings.iltorb.iltorbInts.`8`
+    - typings.iltorb.iltorbInts.`9`
+    - typings.iltorb.iltorbInts.`10`
+    - typings.iltorb.iltorbInts.`11`
   */
   trait BrotliCompressionQuality extends StObject
   object BrotliCompressionQuality {
     
-    inline def `0`: typings.iltorb.iltorbNumbers.`0` = 0.asInstanceOf[typings.iltorb.iltorbNumbers.`0`]
+    inline def `0`: typings.iltorb.iltorbInts.`0` = 0.asInstanceOf[typings.iltorb.iltorbInts.`0`]
     
-    inline def `1`: typings.iltorb.iltorbNumbers.`1` = 1.asInstanceOf[typings.iltorb.iltorbNumbers.`1`]
+    inline def `1`: typings.iltorb.iltorbInts.`1` = 1.asInstanceOf[typings.iltorb.iltorbInts.`1`]
     
-    inline def `10`: typings.iltorb.iltorbNumbers.`10` = 10.asInstanceOf[typings.iltorb.iltorbNumbers.`10`]
+    inline def `10`: typings.iltorb.iltorbInts.`10` = 10.asInstanceOf[typings.iltorb.iltorbInts.`10`]
     
-    inline def `11`: typings.iltorb.iltorbNumbers.`11` = 11.asInstanceOf[typings.iltorb.iltorbNumbers.`11`]
+    inline def `11`: typings.iltorb.iltorbInts.`11` = 11.asInstanceOf[typings.iltorb.iltorbInts.`11`]
     
-    inline def `2`: typings.iltorb.iltorbNumbers.`2` = 2.asInstanceOf[typings.iltorb.iltorbNumbers.`2`]
+    inline def `2`: typings.iltorb.iltorbInts.`2` = 2.asInstanceOf[typings.iltorb.iltorbInts.`2`]
     
-    inline def `3`: typings.iltorb.iltorbNumbers.`3` = 3.asInstanceOf[typings.iltorb.iltorbNumbers.`3`]
+    inline def `3`: typings.iltorb.iltorbInts.`3` = 3.asInstanceOf[typings.iltorb.iltorbInts.`3`]
     
-    inline def `4`: typings.iltorb.iltorbNumbers.`4` = 4.asInstanceOf[typings.iltorb.iltorbNumbers.`4`]
+    inline def `4`: typings.iltorb.iltorbInts.`4` = 4.asInstanceOf[typings.iltorb.iltorbInts.`4`]
     
-    inline def `5`: typings.iltorb.iltorbNumbers.`5` = 5.asInstanceOf[typings.iltorb.iltorbNumbers.`5`]
+    inline def `5`: typings.iltorb.iltorbInts.`5` = 5.asInstanceOf[typings.iltorb.iltorbInts.`5`]
     
-    inline def `6`: typings.iltorb.iltorbNumbers.`6` = 6.asInstanceOf[typings.iltorb.iltorbNumbers.`6`]
+    inline def `6`: typings.iltorb.iltorbInts.`6` = 6.asInstanceOf[typings.iltorb.iltorbInts.`6`]
     
-    inline def `7`: typings.iltorb.iltorbNumbers.`7` = 7.asInstanceOf[typings.iltorb.iltorbNumbers.`7`]
+    inline def `7`: typings.iltorb.iltorbInts.`7` = 7.asInstanceOf[typings.iltorb.iltorbInts.`7`]
     
-    inline def `8`: typings.iltorb.iltorbNumbers.`8` = 8.asInstanceOf[typings.iltorb.iltorbNumbers.`8`]
+    inline def `8`: typings.iltorb.iltorbInts.`8` = 8.asInstanceOf[typings.iltorb.iltorbInts.`8`]
     
-    inline def `9`: typings.iltorb.iltorbNumbers.`9` = 9.asInstanceOf[typings.iltorb.iltorbNumbers.`9`]
+    inline def `9`: typings.iltorb.iltorbInts.`9` = 9.asInstanceOf[typings.iltorb.iltorbInts.`9`]
   }
   
   trait BrotliEncodeParams extends StObject {
@@ -141,18 +141,18 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.iltorb.iltorbNumbers.`0`
-    - typings.iltorb.iltorbNumbers.`1`
-    - typings.iltorb.iltorbNumbers.`2`
+    - typings.iltorb.iltorbInts.`0`
+    - typings.iltorb.iltorbInts.`1`
+    - typings.iltorb.iltorbInts.`2`
   */
   trait BrotliMode extends StObject
   object BrotliMode {
     
-    inline def `0`: typings.iltorb.iltorbNumbers.`0` = 0.asInstanceOf[typings.iltorb.iltorbNumbers.`0`]
+    inline def `0`: typings.iltorb.iltorbInts.`0` = 0.asInstanceOf[typings.iltorb.iltorbInts.`0`]
     
-    inline def `1`: typings.iltorb.iltorbNumbers.`1` = 1.asInstanceOf[typings.iltorb.iltorbNumbers.`1`]
+    inline def `1`: typings.iltorb.iltorbInts.`1` = 1.asInstanceOf[typings.iltorb.iltorbInts.`1`]
     
-    inline def `2`: typings.iltorb.iltorbNumbers.`2` = 2.asInstanceOf[typings.iltorb.iltorbNumbers.`2`]
+    inline def `2`: typings.iltorb.iltorbInts.`2` = 2.asInstanceOf[typings.iltorb.iltorbInts.`2`]
   }
   
   type IltorbCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* output */ Buffer, Unit]

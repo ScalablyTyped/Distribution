@@ -39,12 +39,12 @@ object OpenDialogReturnValue {
     
     inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    inline def setBookmarksVarargs(value: String*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
+    inline def setBookmarksVarargs(value: String*): Self = StObject.set(x, "bookmarks", js.Array(value*))
     
     inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     inline def setFilePaths(value: js.Array[String]): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
     
-    inline def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value :_*))
+    inline def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value*))
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "globals" : "13.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "globals" : "13.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

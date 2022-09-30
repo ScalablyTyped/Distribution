@@ -1,20 +1,20 @@
 package typings.intlifyCoreBase.mod
 
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`10`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`11`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`12`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`13`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`14`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`15`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`1`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`2`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`3`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`4`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`5`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`6`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`7`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`8`
-import typings.intlifyCoreBase.intlifyCoreBaseNumbers.`9`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`10`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`11`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`12`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`13`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`14`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`15`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`1`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`2`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`3`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`4`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`5`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`6`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`7`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`8`
+import typings.intlifyCoreBase.intlifyCoreBaseInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

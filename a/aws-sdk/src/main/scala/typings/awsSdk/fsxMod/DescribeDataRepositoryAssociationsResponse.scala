@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDataRepositoryAssociationsResponse extends StObject {
   
   /**
-    * An array of one ore more data repository association descriptions.
+    * An array of one or more data repository association descriptions.
     */
   var Associations: js.UndefOr[DataRepositoryAssociations] = js.undefined
   

@@ -1407,6 +1407,8 @@ type JsonContentTypes = js.Array[JsonContentType]
 
 type JsonPath = java.lang.String
 
+type KeepAlivePeriodInSeconds = Double
+
 type KernelDisplayName = java.lang.String
 
 type KernelName = java.lang.String
@@ -2434,6 +2436,8 @@ type ResourcePolicyString = java.lang.String
 
 type ResourcePropertyName = java.lang.String
 
+type ResourceRetainedBillableTimeInSeconds = Double
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TrainingJob
   - typings.awsSdk.awsSdkStrings.Experiment_
@@ -3159,6 +3163,15 @@ type VpcId = java.lang.String
 type VpcSecurityGroupIds = js.Array[SecurityGroupId]
 
 type WaitIntervalInSeconds = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Available_
+  - typings.awsSdk.awsSdkStrings.Terminated_
+  - typings.awsSdk.awsSdkStrings.Reused
+  - typings.awsSdk.awsSdkStrings.InUse
+  - java.lang.String
+*/
+type WarmPoolResourceStatus = _WarmPoolResourceStatus | java.lang.String
 
 type WorkforceArn = java.lang.String
 

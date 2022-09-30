@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.CancelButton")
 @js.native
-class CancelButton protected ()
+open class CancelButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.CancelButton {
   def this(
     model: AbstractModel,

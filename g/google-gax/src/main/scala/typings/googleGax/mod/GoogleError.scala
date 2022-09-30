@@ -6,5 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "GoogleError")
 @js.native
-class GoogleError ()
+open class GoogleError ()
   extends typings.googleGax.googleErrorMod.GoogleError
+/* static members */
+object GoogleError {
+  
+  @JSImport("google-gax", "GoogleError")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def parseGRPCStatusDetails(err: typings.googleGax.googleErrorMod.GoogleError): typings.googleGax.googleErrorMod.GoogleError = ^.asInstanceOf[js.Dynamic].applyDynamic("parseGRPCStatusDetails")(err.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.googleErrorMod.GoogleError]
+  
+  inline def parseHttpError(json: Any): typings.googleGax.googleErrorMod.GoogleError = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHttpError")(json.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.googleErrorMod.GoogleError]
+}

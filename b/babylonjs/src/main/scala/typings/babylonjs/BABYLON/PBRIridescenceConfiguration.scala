@@ -9,12 +9,12 @@ trait PBRIridescenceConfiguration
   extends StObject
      with MaterialPluginBase {
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _internalMarkAllSubMeshesAsTexturesDirty: Any = js.native
   
   /* private */ var _isEnabled: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _markAllSubMeshesAsTexturesDirty(): Unit = js.native
   
   /* protected */ @JSName("_material")

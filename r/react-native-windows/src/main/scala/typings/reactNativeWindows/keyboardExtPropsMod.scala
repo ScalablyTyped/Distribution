@@ -139,13 +139,13 @@ object keyboardExtPropsMod {
       
       inline def setKeyDownEventsUndefined: Self = StObject.set(x, "keyDownEvents", js.undefined)
       
-      inline def setKeyDownEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyDownEvents", js.Array(value :_*))
+      inline def setKeyDownEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyDownEvents", js.Array(value*))
       
       inline def setKeyUpEvents(value: js.Array[IHandledKeyboardEvent]): Self = StObject.set(x, "keyUpEvents", value.asInstanceOf[js.Any])
       
       inline def setKeyUpEventsUndefined: Self = StObject.set(x, "keyUpEvents", js.undefined)
       
-      inline def setKeyUpEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyUpEvents", js.Array(value :_*))
+      inline def setKeyUpEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyUpEvents", js.Array(value*))
       
       inline def setOnKeyDown(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       

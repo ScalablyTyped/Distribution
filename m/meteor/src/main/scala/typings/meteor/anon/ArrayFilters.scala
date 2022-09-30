@@ -7,10 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ArrayFilters extends StObject {
   
-  var arrayFilters: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
+  /**
+    * Used in combination with MongoDB [filtered positional operator](https://docs.mongodb.com/manual/reference/operator/update/positional-filtered/) to specify which elements to
+    * modify in an array field.
+    */
+  var arrayFilters: js.UndefOr[js.Array[StringDictionary[Any]]] = js.undefined
   
+  /** True to modify all matching documents; false to only modify one of the matching documents (the default). */
   var multi: js.UndefOr[Boolean] = js.undefined
   
+  /** True to insert a document if no matching documents are found. */
   var upsert: js.UndefOr[Boolean] = js.undefined
 }
 object ArrayFilters {
@@ -22,11 +28,11 @@ object ArrayFilters {
   
   extension [Self <: ArrayFilters](x: Self) {
     
-    inline def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+    inline def setArrayFilters(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
     inline def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
     
-    inline def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
+    inline def setArrayFiltersVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value*))
     
     inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     

@@ -30,15 +30,10 @@ object mod {
     options: AddEventListenerOptions
   ): Remove = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Remove]
   
-  inline def subscribe[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T]): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Subscription]
-  inline def subscribe[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T], options: SubscribeOptions): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Subscription]
+  inline def subscribe[T /* <: UIEventType */](eventType: T, callback: TouchEventCallback[T] | UIEventCallback[T]): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Subscription]
+  inline def subscribe[T /* <: UIEventType */](eventType: T, callback: TouchEventCallback[T] | UIEventCallback[T], options: SubscribeOptions): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Subscription]
   
-  inline def subscribe_T_UIEventType[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T]): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Subscription]
-  inline def subscribe_T_UIEventType[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T], options: SubscribeOptions): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Subscription]
-  
-  inline def unsubscribe[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def unsubscribe_T_TouchEventType[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unsubscribe[T /* <: UIEventType */](eventType: T, callback: TouchEventCallback[T] | UIEventCallback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ArgmentedEvent[T /* <: EventType */] extends StObject {
     

@@ -1,13 +1,13 @@
 package typings.matchSorter
 
-import typings.matchSorter.matchSorterNumbers.`0`
-import typings.matchSorter.matchSorterNumbers.`1`
-import typings.matchSorter.matchSorterNumbers.`2`
-import typings.matchSorter.matchSorterNumbers.`3`
-import typings.matchSorter.matchSorterNumbers.`4`
-import typings.matchSorter.matchSorterNumbers.`5`
-import typings.matchSorter.matchSorterNumbers.`6`
-import typings.matchSorter.matchSorterNumbers.`7`
+import typings.matchSorter.matchSorterInts.`0`
+import typings.matchSorter.matchSorterInts.`1`
+import typings.matchSorter.matchSorterInts.`2`
+import typings.matchSorter.matchSorterInts.`3`
+import typings.matchSorter.matchSorterInts.`4`
+import typings.matchSorter.matchSorterInts.`5`
+import typings.matchSorter.matchSorterInts.`6`
+import typings.matchSorter.matchSorterInts.`7`
 import typings.matchSorter.mod.BaseSorter
 import typings.matchSorter.mod.MatchSorterOptions
 import org.scalablytyped.runtime.StObject

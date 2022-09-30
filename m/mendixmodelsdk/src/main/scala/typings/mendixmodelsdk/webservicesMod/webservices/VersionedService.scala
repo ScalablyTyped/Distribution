@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/published-web-services relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService")
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.VersionedService")
 @js.native
-class VersionedService protected () extends Element[IModel] {
+open class VersionedService protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,6 +33,9 @@ class VersionedService protected () extends Element[IModel] {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def appServiceState: AppServiceState = js.native
   def appServiceState_=(newValue: AppServiceState): Unit = js.native
   
@@ -47,6 +50,9 @@ class VersionedService protected () extends Element[IModel] {
   def documentation: String = js.native
   def documentation_=(newValue: String): Unit = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def enumerationsByContract: MsdEnumerationContainer | Null = js.native
   def enumerationsByContract_=(newValue: MsdEnumerationContainer | Null): Unit = js.native
   
@@ -71,6 +77,9 @@ class VersionedService protected () extends Element[IModel] {
   
   def image_=(newValue: IImage | Null): Unit = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def isLockedByContract: Boolean = js.native
   def isLockedByContract_=(newValue: Boolean): Unit = js.native
   
@@ -99,7 +108,7 @@ class VersionedService protected () extends Element[IModel] {
 }
 object VersionedService {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.VersionedService")
   @js.native
   val ^ : js.Any = js.native
   
@@ -120,13 +129,13 @@ object VersionedService {
   inline def createIn(container: PublishedServiceBase): VersionedService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[VersionedService]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.VersionedService.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.VersionedService.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

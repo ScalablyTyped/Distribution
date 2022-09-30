@@ -1,9 +1,9 @@
 package typings.rotJs
 
 import typings.rotJs.anon.PartialOptions
-import typings.rotJs.rotJsNumbers.`4`
-import typings.rotJs.rotJsNumbers.`6`
-import typings.rotJs.rotJsNumbers.`8`
+import typings.rotJs.rotJsInts.`4`
+import typings.rotJs.rotJsInts.`6`
+import typings.rotJs.rotJsInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

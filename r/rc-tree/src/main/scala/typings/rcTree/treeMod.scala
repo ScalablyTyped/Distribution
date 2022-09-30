@@ -27,9 +27,9 @@ import typings.rcTree.interfaceMod.Key
 import typings.rcTree.interfaceMod.NodeInstance
 import typings.rcTree.nodeListMod.NodeListRef
 import typings.rcTree.rcTreeBooleans.`false`
-import typings.rcTree.rcTreeNumbers.`-1`
-import typings.rcTree.rcTreeNumbers.`0`
-import typings.rcTree.rcTreeNumbers.`1`
+import typings.rcTree.rcTreeInts.`-1`
+import typings.rcTree.rcTreeInts.`0`
+import typings.rcTree.rcTreeInts.`1`
 import typings.rcTree.rcTreeStrings.check
 import typings.rcTree.treeNodeMod.TreeNodeProps
 import typings.rcVirtualList.listMod.ScrollTo

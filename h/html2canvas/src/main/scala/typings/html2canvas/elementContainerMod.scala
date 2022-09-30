@@ -3,10 +3,10 @@ package typings.html2canvas
 import typings.html2canvas.boundsMod.Bounds
 import typings.html2canvas.contextMod.Context
 import typings.html2canvas.cssMod.CSSParsedDeclaration
-import typings.html2canvas.html2canvasNumbers.`16`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`4`
-import typings.html2canvas.html2canvasNumbers.`8`
+import typings.html2canvas.html2canvasInts.`16`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`4`
+import typings.html2canvas.html2canvasInts.`8`
 import typings.html2canvas.textContainerMod.TextContainer
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -34,10 +34,10 @@ object elementContainerMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`4`
-    - typings.html2canvas.html2canvasNumbers.`8`
-    - typings.html2canvas.html2canvasNumbers.`16`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`4`
+    - typings.html2canvas.html2canvasInts.`8`
+    - typings.html2canvas.html2canvasInts.`16`
   */
   trait FLAGS extends StObject
   object FLAGS {

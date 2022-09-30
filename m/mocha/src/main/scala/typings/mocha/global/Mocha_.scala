@@ -5,6 +5,7 @@ import typings.mocha.Mocha.AsyncFunc
 import typings.mocha.Mocha.Func
 import typings.mocha.Mocha.HookFunction
 import typings.mocha.Mocha.MochaOptions
+import typings.mocha.Mocha.PendingSuiteFunction
 import typings.mocha.Mocha.PendingTestFunction
 import typings.mocha.Mocha.RunnerConstants
 import typings.mocha.Mocha.RunnerOptions
@@ -1994,6 +1995,16 @@ object Mocha_ {
       */
     inline def undefinedError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[js.Error]
   }
+  
+  /**
+    * Describe a pending suite.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  @JSGlobal("Mocha.xdescribe")
+  @js.native
+  def xdescribe: PendingSuiteFunction = js.native
+  inline def xdescribe_=(x: PendingSuiteFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xdescribe")(x.asInstanceOf[js.Any])
   
   /**
     * Describes a pending test case.

@@ -46,6 +46,7 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -742,7 +743,7 @@ object dxDataGrid {
           /* newData */ DeepPartial[TRowData], 
           /* value */ Any, 
           /* currentRowData */ TRowData, 
-          Unit | js.Thenable[Unit]
+          Unit | PromiseLike[Unit]
         ]
       ] = js.undefined
     
@@ -990,7 +991,7 @@ object dxDataGrid {
       inline def setSelectedFilterOperationUndefined: Self = StObject.set(x, "selectedFilterOperation", js.undefined)
       
       inline def setSetCellValue(
-        value: (/* newData */ DeepPartial[TRowData], /* value */ Any, /* currentRowData */ TRowData) => Unit | js.Thenable[Unit]
+        value: (/* newData */ DeepPartial[TRowData], /* value */ Any, /* currentRowData */ TRowData) => Unit | PromiseLike[Unit]
       ): Self = StObject.set(x, "setCellValue", js.Any.fromFunction3(value))
       
       inline def setSetCellValueUndefined: Self = StObject.set(x, "setCellValue", js.undefined)
@@ -1809,7 +1810,7 @@ object dxDataGrid {
     
     val dropInsideItem: Boolean
     
-    var promise: js.UndefOr[js.Thenable[Unit]] = js.undefined
+    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
   }
   object DragReorderInfo {
     
@@ -1822,7 +1823,7 @@ object dxDataGrid {
       
       inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
       
-      inline def setPromise(value: js.Thenable[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     }
@@ -3924,7 +3925,7 @@ object dxDataGrid {
     
     var data: TRowData
     
-    var promise: js.UndefOr[js.Thenable[Unit]] = js.undefined
+    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
   }
   object NewRowInfo {
     
@@ -3937,7 +3938,7 @@ object dxDataGrid {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setPromise(value: js.Thenable[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     }
@@ -4843,7 +4844,7 @@ object dxDataGrid {
   object RowInsertingEvent {
     
     inline def apply[TRowData, TKey](
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxDataGrid[TRowData, TKey],
       data: TRowData,
       element: DxElement_[HTMLElement]
@@ -4855,20 +4856,20 @@ object dxDataGrid {
   
   trait RowInsertingInfo[TRowData] extends StObject {
     
-    var cancel: Boolean | js.Thenable[Unit]
+    var cancel: Boolean | PromiseLike[Unit]
     
     var data: TRowData
   }
   object RowInsertingInfo {
     
-    inline def apply[TRowData](cancel: Boolean | js.Thenable[Unit], data: TRowData): RowInsertingInfo[TRowData] = {
+    inline def apply[TRowData](cancel: Boolean | PromiseLike[Unit], data: TRowData): RowInsertingInfo[TRowData] = {
       val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowInsertingInfo[TRowData]]
     }
     
     extension [Self <: RowInsertingInfo[?], TRowData](x: Self & RowInsertingInfo[TRowData]) {
       
-      inline def setCancel(value: Boolean | js.Thenable[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -5022,7 +5023,7 @@ object dxDataGrid {
   object RowRemovingEvent {
     
     inline def apply[TRowData, TKey](
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxDataGrid[TRowData, TKey],
       data: TRowData,
       element: DxElement_[HTMLElement],
@@ -5035,7 +5036,7 @@ object dxDataGrid {
   
   trait RowRemovingInfo[TRowData, TKey] extends StObject {
     
-    var cancel: Boolean | js.Thenable[Unit]
+    var cancel: Boolean | PromiseLike[Unit]
     
     val data: TRowData
     
@@ -5043,14 +5044,14 @@ object dxDataGrid {
   }
   object RowRemovingInfo {
     
-    inline def apply[TRowData, TKey](cancel: Boolean | js.Thenable[Unit], data: TRowData, key: TKey): RowRemovingInfo[TRowData, TKey] = {
+    inline def apply[TRowData, TKey](cancel: Boolean | PromiseLike[Unit], data: TRowData, key: TKey): RowRemovingInfo[TRowData, TKey] = {
       val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowRemovingInfo[TRowData, TKey]]
     }
     
     extension [Self <: RowRemovingInfo[?, ?], TRowData, TKey](x: Self & (RowRemovingInfo[TRowData, TKey])) {
       
-      inline def setCancel(value: Boolean | js.Thenable[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -5179,7 +5180,7 @@ object dxDataGrid {
   object RowUpdatingEvent {
     
     inline def apply[TRowData, TKey](
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxDataGrid[TRowData, TKey],
       element: DxElement_[HTMLElement],
       key: TKey,
@@ -5193,7 +5194,7 @@ object dxDataGrid {
   
   trait RowUpdatingInfo[TRowData, TKey] extends StObject {
     
-    var cancel: Boolean | js.Thenable[Unit]
+    var cancel: Boolean | PromiseLike[Unit]
     
     val key: TKey
     
@@ -5203,14 +5204,14 @@ object dxDataGrid {
   }
   object RowUpdatingInfo {
     
-    inline def apply[TRowData, TKey](cancel: Boolean | js.Thenable[Unit], key: TKey, newData: DeepPartial[TRowData], oldData: TRowData): RowUpdatingInfo[TRowData, TKey] = {
+    inline def apply[TRowData, TKey](cancel: Boolean | PromiseLike[Unit], key: TKey, newData: DeepPartial[TRowData], oldData: TRowData): RowUpdatingInfo[TRowData, TKey] = {
       val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], newData = newData.asInstanceOf[js.Any], oldData = oldData.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowUpdatingInfo[TRowData, TKey]]
     }
     
     extension [Self <: RowUpdatingInfo[?, ?], TRowData, TKey](x: Self & (RowUpdatingInfo[TRowData, TKey])) {
       
-      inline def setCancel(value: Boolean | js.Thenable[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -5259,7 +5260,7 @@ object dxDataGrid {
     
     val oldData: TRowData
     
-    var promise: js.UndefOr[js.Thenable[Unit]] = js.undefined
+    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
   }
   object RowValidatingInfo {
     
@@ -5299,7 +5300,7 @@ object dxDataGrid {
       
       inline def setOldData(value: TRowData): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
       
-      inline def setPromise(value: js.Thenable[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     }
@@ -5344,7 +5345,7 @@ object dxDataGrid {
     
     var changes: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]
     
-    var promise: js.UndefOr[js.Thenable[Unit]] = js.undefined
+    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
   }
   object SavingInfo {
     
@@ -5364,7 +5365,7 @@ object dxDataGrid {
       
       inline def setChangesVarargs(value: (typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey])*): Self = StObject.set(x, "changes", js.Array(value*))
       
-      inline def setPromise(value: js.Thenable[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     }

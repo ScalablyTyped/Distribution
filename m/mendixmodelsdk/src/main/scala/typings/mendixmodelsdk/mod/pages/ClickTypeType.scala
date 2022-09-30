@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ClickTypeType")
 @js.native
-class ClickTypeType protected ()
+open class ClickTypeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ClickTypeType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

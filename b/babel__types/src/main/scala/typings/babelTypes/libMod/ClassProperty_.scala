@@ -37,7 +37,7 @@ trait ClassProperty_
   
   var static: Boolean
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null] = js.undefined
+  var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
   var type_ClassProperty_ : ClassProperty
@@ -116,7 +116,7 @@ object ClassProperty_ {
     
     inline def setType(value: ClassProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     

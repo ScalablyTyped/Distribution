@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BorderPad extends StObject {
   
-  var border: js.UndefOr[`38`] = js.undefined
+  var border: js.UndefOr[`39`] = js.undefined
   
   var pad: js.UndefOr[HorizontalVertical] = js.undefined
 }
@@ -19,7 +19,7 @@ object BorderPad {
   
   extension [Self <: BorderPad](x: Self) {
     
-    inline def setBorder(value: `38`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: `39`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     

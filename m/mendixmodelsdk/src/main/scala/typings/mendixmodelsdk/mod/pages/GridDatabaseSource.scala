@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.GridDatabaseSource")
 @js.native
-class GridDatabaseSource protected ()
+open class GridDatabaseSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GridDatabaseSource {
   def this(
     model: AbstractModel,

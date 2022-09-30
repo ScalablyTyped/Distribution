@@ -1,6 +1,6 @@
 package typings.reactNativeReanimated.mod
 
-import typings.reactNativeReanimated.mod.Animated.Adaptable
+import typings.reactNativeReanimated.anon.`0`
 import typings.reactNativeReanimated.mod.Animated.EasingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EasingStatic extends StObject {
   
   def back(): EasingFunction = js.native
-  def back(s: Adaptable[Double]): EasingFunction = js.native
+  def back(s: Double): EasingFunction = js.native
   
-  def bezier(x1: Double, y1: Double, x2: Double, y2: Double): EasingFunction = js.native
+  def bezier(x1: Double, y1: Double, x2: Double, y2: Double): `0` = js.native
+  
+  def bezierFn(x1: Double, y1: Double, x2: Double, y2: Double): EasingFunction = js.native
   
   var bounce: EasingFunction = js.native
   
@@ -23,7 +25,7 @@ trait EasingStatic extends StObject {
   var ease: EasingFunction = js.native
   
   def elastic(): EasingFunction = js.native
-  def elastic(bounciness: Adaptable[Double]): EasingFunction = js.native
+  def elastic(bounciness: Double): EasingFunction = js.native
   
   var exp: EasingFunction = js.native
   
@@ -35,7 +37,7 @@ trait EasingStatic extends StObject {
   
   def out(easing: EasingFunction): EasingFunction = js.native
   
-  def poly(n: Adaptable[Double]): EasingFunction = js.native
+  def poly(n: Double): EasingFunction = js.native
   
   var quad: EasingFunction = js.native
   

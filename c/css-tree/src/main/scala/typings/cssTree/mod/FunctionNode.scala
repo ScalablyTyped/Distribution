@@ -10,7 +10,7 @@ trait FunctionNode
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode]
+  var children: typings.cssTree.mod.List[CssNode]
   
   var name: String
   
@@ -19,7 +19,7 @@ trait FunctionNode
 }
 object FunctionNode {
   
-  inline def apply(children: List[CssNode], name: String): FunctionNode = {
+  inline def apply(children: typings.cssTree.mod.List[CssNode], name: String): FunctionNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Function")
     __obj.asInstanceOf[FunctionNode]
@@ -27,7 +27,7 @@ object FunctionNode {
   
   extension [Self <: FunctionNode](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

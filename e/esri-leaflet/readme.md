@@ -10,13 +10,13 @@ Leaflet plugins for consuming ArcGIS Online and ArcGIS Server services.
 | ------------------ | :-------------: |
 | Full name          | esri-leaflet |
 | Keywords           | arcgis, esri, esri leaflet, gis, leaflet plugin, mapping |
-| # releases         | 13 |
-| # dependents       | 43 |
-| # downloads        | 596997 |
-| # stars            | 3 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 116067.33333333333 |
+| # stars            | 1472.0 |
 
 ## Links
-- [Homepage](http://esri.github.io/esri-leaflet)
+- [Homepage](https://developers.arcgis.com/esri-leaflet/)
 - [Bugs](https://github.com/esri/esri-leaflet/issues)
 - [Repository](https://github.com/Esri/esri-leaflet)
 - [Npm](https://www.npmjs.com/package/esri-leaflet)

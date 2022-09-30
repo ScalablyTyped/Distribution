@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ImageSizeUnit")
 @js.native
-class ImageSizeUnit protected ()
+open class ImageSizeUnit protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ImageSizeUnit {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

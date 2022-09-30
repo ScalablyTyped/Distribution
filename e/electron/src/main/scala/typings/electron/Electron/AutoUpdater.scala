@@ -7,8 +7,6 @@ import typings.electron.electronStrings.`update-downloaded`
 import typings.electron.electronStrings.`update-not-available`
 import typings.electron.electronStrings.error
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +21,7 @@ trait AutoUpdater
   @JSName("addListener")
   def addListener_checkingforupdate(event: `checking-for-update`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def addListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_updateavailable(event: `update-available`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -33,7 +31,7 @@ trait AutoUpdater
       /* event */ Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
-      /* releaseDate */ Date, 
+      /* releaseDate */ js.Date, 
       /* updateURL */ String, 
       Unit
     ]
@@ -44,6 +42,9 @@ trait AutoUpdater
   /**
     * Asks the server whether there is an update. You must call `setFeedURL` before
     * using this API.
+    *
+    * **Note:** If an update is available it will be downloaded automatically. Calling
+    * `autoUpdater.checkForUpdates()` twice will download the update two times.
     */
   def checkForUpdates(): Unit = js.native
   
@@ -72,7 +73,7 @@ trait AutoUpdater
     * Emitted when there is an error while updating.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   /**
     * Emitted when there is an available update. The update is downloaded
     * automatically.
@@ -94,7 +95,7 @@ trait AutoUpdater
       /* event */ Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
-      /* releaseDate */ Date, 
+      /* releaseDate */ js.Date, 
       /* updateURL */ String, 
       Unit
     ]
@@ -110,7 +111,7 @@ trait AutoUpdater
   @JSName("once")
   def once_checkingforupdate(event: `checking-for-update`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def once_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("once")
   def once_updateavailable(event: `update-available`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -120,7 +121,7 @@ trait AutoUpdater
       /* event */ Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
-      /* releaseDate */ Date, 
+      /* releaseDate */ js.Date, 
       /* updateURL */ String, 
       Unit
     ]
@@ -147,7 +148,7 @@ trait AutoUpdater
   @JSName("removeListener")
   def removeListener_checkingforupdate(event: `checking-for-update`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def removeListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_updateavailable(event: `update-available`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -157,7 +158,7 @@ trait AutoUpdater
       /* event */ Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
-      /* releaseDate */ Date, 
+      /* releaseDate */ js.Date, 
       /* updateURL */ String, 
       Unit
     ]

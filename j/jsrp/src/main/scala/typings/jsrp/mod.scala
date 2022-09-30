@@ -1,7 +1,7 @@
 package typings.jsrp
 
-import typings.jsrp.jsrpNumbers.`2048`
-import typings.jsrp.jsrpNumbers.`4096`
+import typings.jsrp.jsrpInts.`2048`
+import typings.jsrp.jsrpInts.`4096`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

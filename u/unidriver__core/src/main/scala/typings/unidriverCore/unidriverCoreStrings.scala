@@ -216,7 +216,7 @@ object unidriverCoreStrings {
   sealed trait Backslash
     extends StObject
        with KeyDefinitionType
-  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
+  inline def Backslash: Backslash = "Backslash".asInstanceOf[Backslash]
   
   @js.native
   sealed trait Backspace

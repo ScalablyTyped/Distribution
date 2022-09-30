@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashSlice1x1 extends StObject {
   
   def apply(end: Double): LodashSlice1x3 = js.native
-  def apply[T](end: Double, array: List[T]): js.Array[T] = js.native
+  def apply[T](end: Double, array: typings.lodash.mod.List[T]): js.Array[T] = js.native
   def apply[T](end: __): LodashSlice1x5[T] = js.native
-  def apply[T](end: __, array: List[T]): LodashSlice1x5[T] = js.native
+  def apply[T](end: __, array: typings.lodash.mod.List[T]): LodashSlice1x5[T] = js.native
 }

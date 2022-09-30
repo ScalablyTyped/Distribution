@@ -1,7 +1,7 @@
 
 # Scala.js typings for clean-stack
 
-Typings are for version 4.2.0
+Typings are for version 5.0.0
 
 ## Library description:
 Clean up error stack traces

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel__plugin-transform-runtime"
-version := "7.9-dt-20211202Z-34e842"
+version := "7.9-dt-20211202Z-60375c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

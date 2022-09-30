@@ -21,7 +21,6 @@ import typings.storybookComponents.popperjsCoreLibTypesMod.PositioningStrategy
 import typings.storybookComponents.typesPrettierIndexMod.BuiltInParserName
 import typings.storybookComponents.typesPrettierIndexMod.CoreCategoryType
 import typings.storybookComponents.typesPrettierIndexMod.SupportOptionType
-import typings.storybookComponents.typesPrettierIndexMod.util.Quote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,12 +32,6 @@ object storybookComponentsStrings {
     extends StObject
        with Sizes
   inline def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
-  
-  @js.native
-  sealed trait Apostrophe
-    extends StObject
-       with Quote
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
   sealed trait Config
@@ -77,9 +70,7 @@ object storybookComponentsStrings {
   inline def Output: Output = "Output".asInstanceOf[Output]
   
   @js.native
-  sealed trait Quotationmark
-    extends StObject
-       with Quote
+  sealed trait Quotationmark extends StObject
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native

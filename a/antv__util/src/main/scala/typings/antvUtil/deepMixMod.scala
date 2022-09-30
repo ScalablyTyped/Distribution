@@ -10,5 +10,5 @@ object deepMixMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(rst: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(rst.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def default(rst: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(rst.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

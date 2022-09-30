@@ -1,157 +1,157 @@
 package typings.activexMsxml2.MSXML2
 
-import typings.activexMsxml2.activexMsxml2Numbers.`10240`
-import typings.activexMsxml2.activexMsxml2Numbers.`16384`
-import typings.activexMsxml2.activexMsxml2Numbers.`16385`
-import typings.activexMsxml2.activexMsxml2Numbers.`16386`
-import typings.activexMsxml2.activexMsxml2Numbers.`16387`
-import typings.activexMsxml2.activexMsxml2Numbers.`16640`
-import typings.activexMsxml2.activexMsxml2Numbers.`16641`
-import typings.activexMsxml2.activexMsxml2Numbers.`16642`
-import typings.activexMsxml2.activexMsxml2Numbers.`16643`
-import typings.activexMsxml2.activexMsxml2Numbers.`16644`
-import typings.activexMsxml2.activexMsxml2Numbers.`18433`
-import typings.activexMsxml2.activexMsxml2Numbers.`18434`
-import typings.activexMsxml2.activexMsxml2Numbers.`18435`
-import typings.activexMsxml2.activexMsxml2Numbers.`2048`
-import typings.activexMsxml2.activexMsxml2Numbers.`4096`
-import typings.activexMsxml2.activexMsxml2Numbers.`4097`
-import typings.activexMsxml2.activexMsxml2Numbers.`4098`
-import typings.activexMsxml2.activexMsxml2Numbers.`4099`
-import typings.activexMsxml2.activexMsxml2Numbers.`4100`
-import typings.activexMsxml2.activexMsxml2Numbers.`4352`
-import typings.activexMsxml2.activexMsxml2Numbers.`4353`
-import typings.activexMsxml2.activexMsxml2Numbers.`4354`
-import typings.activexMsxml2.activexMsxml2Numbers.`4355`
-import typings.activexMsxml2.activexMsxml2Numbers.`8192`
-import typings.activexMsxml2.activexMsxml2Numbers.`8448`
-import typings.activexMsxml2.activexMsxml2Numbers.`8449`
-import typings.activexMsxml2.activexMsxml2Numbers.`8450`
-import typings.activexMsxml2.activexMsxml2Numbers.`8451`
-import typings.activexMsxml2.activexMsxml2Numbers.`8452`
-import typings.activexMsxml2.activexMsxml2Numbers.`8453`
-import typings.activexMsxml2.activexMsxml2Numbers.`8454`
-import typings.activexMsxml2.activexMsxml2Numbers.`8455`
-import typings.activexMsxml2.activexMsxml2Numbers.`8456`
-import typings.activexMsxml2.activexMsxml2Numbers.`8457`
-import typings.activexMsxml2.activexMsxml2Numbers.`8458`
-import typings.activexMsxml2.activexMsxml2Numbers.`8459`
-import typings.activexMsxml2.activexMsxml2Numbers.`8460`
-import typings.activexMsxml2.activexMsxml2Numbers.`8461`
-import typings.activexMsxml2.activexMsxml2Numbers.`8462`
-import typings.activexMsxml2.activexMsxml2Numbers.`8463`
-import typings.activexMsxml2.activexMsxml2Numbers.`8464`
-import typings.activexMsxml2.activexMsxml2Numbers.`8465`
-import typings.activexMsxml2.activexMsxml2Numbers.`8466`
-import typings.activexMsxml2.activexMsxml2Numbers.`8467`
-import typings.activexMsxml2.activexMsxml2Numbers.`8468`
-import typings.activexMsxml2.activexMsxml2Numbers.`8469`
-import typings.activexMsxml2.activexMsxml2Numbers.`8470`
-import typings.activexMsxml2.activexMsxml2Numbers.`8471`
-import typings.activexMsxml2.activexMsxml2Numbers.`8472`
-import typings.activexMsxml2.activexMsxml2Numbers.`8473`
-import typings.activexMsxml2.activexMsxml2Numbers.`8474`
-import typings.activexMsxml2.activexMsxml2Numbers.`8475`
-import typings.activexMsxml2.activexMsxml2Numbers.`8476`
-import typings.activexMsxml2.activexMsxml2Numbers.`8477`
-import typings.activexMsxml2.activexMsxml2Numbers.`8478`
-import typings.activexMsxml2.activexMsxml2Numbers.`8479`
-import typings.activexMsxml2.activexMsxml2Numbers.`8480`
-import typings.activexMsxml2.activexMsxml2Numbers.`8481`
-import typings.activexMsxml2.activexMsxml2Numbers.`8482`
-import typings.activexMsxml2.activexMsxml2Numbers.`8483`
-import typings.activexMsxml2.activexMsxml2Numbers.`8484`
-import typings.activexMsxml2.activexMsxml2Numbers.`8485`
-import typings.activexMsxml2.activexMsxml2Numbers.`8486`
-import typings.activexMsxml2.activexMsxml2Numbers.`8487`
-import typings.activexMsxml2.activexMsxml2Numbers.`8488`
-import typings.activexMsxml2.activexMsxml2Numbers.`8489`
-import typings.activexMsxml2.activexMsxml2Numbers.`8490`
-import typings.activexMsxml2.activexMsxml2Numbers.`8491`
-import typings.activexMsxml2.activexMsxml2Numbers.`8492`
-import typings.activexMsxml2.activexMsxml2Numbers.`8493`
-import typings.activexMsxml2.activexMsxml2Numbers.`8703`
-import typings.activexMsxml2.activexMsxml2Numbers.`8704`
-import typings.activexMsxml2.activexMsxml2Numbers.`9216`
+import typings.activexMsxml2.activexMsxml2Ints.`10240`
+import typings.activexMsxml2.activexMsxml2Ints.`16384`
+import typings.activexMsxml2.activexMsxml2Ints.`16385`
+import typings.activexMsxml2.activexMsxml2Ints.`16386`
+import typings.activexMsxml2.activexMsxml2Ints.`16387`
+import typings.activexMsxml2.activexMsxml2Ints.`16640`
+import typings.activexMsxml2.activexMsxml2Ints.`16641`
+import typings.activexMsxml2.activexMsxml2Ints.`16642`
+import typings.activexMsxml2.activexMsxml2Ints.`16643`
+import typings.activexMsxml2.activexMsxml2Ints.`16644`
+import typings.activexMsxml2.activexMsxml2Ints.`18433`
+import typings.activexMsxml2.activexMsxml2Ints.`18434`
+import typings.activexMsxml2.activexMsxml2Ints.`18435`
+import typings.activexMsxml2.activexMsxml2Ints.`2048`
+import typings.activexMsxml2.activexMsxml2Ints.`4096`
+import typings.activexMsxml2.activexMsxml2Ints.`4097`
+import typings.activexMsxml2.activexMsxml2Ints.`4098`
+import typings.activexMsxml2.activexMsxml2Ints.`4099`
+import typings.activexMsxml2.activexMsxml2Ints.`4100`
+import typings.activexMsxml2.activexMsxml2Ints.`4352`
+import typings.activexMsxml2.activexMsxml2Ints.`4353`
+import typings.activexMsxml2.activexMsxml2Ints.`4354`
+import typings.activexMsxml2.activexMsxml2Ints.`4355`
+import typings.activexMsxml2.activexMsxml2Ints.`8192`
+import typings.activexMsxml2.activexMsxml2Ints.`8448`
+import typings.activexMsxml2.activexMsxml2Ints.`8449`
+import typings.activexMsxml2.activexMsxml2Ints.`8450`
+import typings.activexMsxml2.activexMsxml2Ints.`8451`
+import typings.activexMsxml2.activexMsxml2Ints.`8452`
+import typings.activexMsxml2.activexMsxml2Ints.`8453`
+import typings.activexMsxml2.activexMsxml2Ints.`8454`
+import typings.activexMsxml2.activexMsxml2Ints.`8455`
+import typings.activexMsxml2.activexMsxml2Ints.`8456`
+import typings.activexMsxml2.activexMsxml2Ints.`8457`
+import typings.activexMsxml2.activexMsxml2Ints.`8458`
+import typings.activexMsxml2.activexMsxml2Ints.`8459`
+import typings.activexMsxml2.activexMsxml2Ints.`8460`
+import typings.activexMsxml2.activexMsxml2Ints.`8461`
+import typings.activexMsxml2.activexMsxml2Ints.`8462`
+import typings.activexMsxml2.activexMsxml2Ints.`8463`
+import typings.activexMsxml2.activexMsxml2Ints.`8464`
+import typings.activexMsxml2.activexMsxml2Ints.`8465`
+import typings.activexMsxml2.activexMsxml2Ints.`8466`
+import typings.activexMsxml2.activexMsxml2Ints.`8467`
+import typings.activexMsxml2.activexMsxml2Ints.`8468`
+import typings.activexMsxml2.activexMsxml2Ints.`8469`
+import typings.activexMsxml2.activexMsxml2Ints.`8470`
+import typings.activexMsxml2.activexMsxml2Ints.`8471`
+import typings.activexMsxml2.activexMsxml2Ints.`8472`
+import typings.activexMsxml2.activexMsxml2Ints.`8473`
+import typings.activexMsxml2.activexMsxml2Ints.`8474`
+import typings.activexMsxml2.activexMsxml2Ints.`8475`
+import typings.activexMsxml2.activexMsxml2Ints.`8476`
+import typings.activexMsxml2.activexMsxml2Ints.`8477`
+import typings.activexMsxml2.activexMsxml2Ints.`8478`
+import typings.activexMsxml2.activexMsxml2Ints.`8479`
+import typings.activexMsxml2.activexMsxml2Ints.`8480`
+import typings.activexMsxml2.activexMsxml2Ints.`8481`
+import typings.activexMsxml2.activexMsxml2Ints.`8482`
+import typings.activexMsxml2.activexMsxml2Ints.`8483`
+import typings.activexMsxml2.activexMsxml2Ints.`8484`
+import typings.activexMsxml2.activexMsxml2Ints.`8485`
+import typings.activexMsxml2.activexMsxml2Ints.`8486`
+import typings.activexMsxml2.activexMsxml2Ints.`8487`
+import typings.activexMsxml2.activexMsxml2Ints.`8488`
+import typings.activexMsxml2.activexMsxml2Ints.`8489`
+import typings.activexMsxml2.activexMsxml2Ints.`8490`
+import typings.activexMsxml2.activexMsxml2Ints.`8491`
+import typings.activexMsxml2.activexMsxml2Ints.`8492`
+import typings.activexMsxml2.activexMsxml2Ints.`8493`
+import typings.activexMsxml2.activexMsxml2Ints.`8703`
+import typings.activexMsxml2.activexMsxml2Ints.`8704`
+import typings.activexMsxml2.activexMsxml2Ints.`9216`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Schema Object Model Item Types */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMsxml2.activexMsxml2Numbers.`16641`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4100`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16385`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16386`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8192`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4097`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4098`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16642`
-  - typings.activexMsxml2.activexMsxml2Numbers.`9216`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8448`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8703`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8449`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8450`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8451`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8452`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8453`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8454`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8455`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8456`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8457`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8458`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8459`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8460`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8461`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8462`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8463`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8464`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8465`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8466`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8467`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8468`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8469`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8470`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8471`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8472`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8473`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8474`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8475`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8476`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8477`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8478`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8479`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8480`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8481`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8482`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8483`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8484`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8485`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8486`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8487`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8488`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8489`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8490`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8491`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8492`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8493`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16387`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16644`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16640`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4352`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4353`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4354`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4099`
-  - typings.activexMsxml2.activexMsxml2Numbers.`2048`
-  - typings.activexMsxml2.activexMsxml2Numbers.`18433`
-  - typings.activexMsxml2.activexMsxml2Numbers.`18434`
-  - typings.activexMsxml2.activexMsxml2Numbers.`18435`
-  - typings.activexMsxml2.activexMsxml2Numbers.`10240`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16384`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4096`
-  - typings.activexMsxml2.activexMsxml2Numbers.`16643`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8704`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4355`
+  - typings.activexMsxml2.activexMsxml2Ints.`16641`
+  - typings.activexMsxml2.activexMsxml2Ints.`4100`
+  - typings.activexMsxml2.activexMsxml2Ints.`16385`
+  - typings.activexMsxml2.activexMsxml2Ints.`16386`
+  - typings.activexMsxml2.activexMsxml2Ints.`8192`
+  - typings.activexMsxml2.activexMsxml2Ints.`4097`
+  - typings.activexMsxml2.activexMsxml2Ints.`4098`
+  - typings.activexMsxml2.activexMsxml2Ints.`16642`
+  - typings.activexMsxml2.activexMsxml2Ints.`9216`
+  - typings.activexMsxml2.activexMsxml2Ints.`8448`
+  - typings.activexMsxml2.activexMsxml2Ints.`8703`
+  - typings.activexMsxml2.activexMsxml2Ints.`8449`
+  - typings.activexMsxml2.activexMsxml2Ints.`8450`
+  - typings.activexMsxml2.activexMsxml2Ints.`8451`
+  - typings.activexMsxml2.activexMsxml2Ints.`8452`
+  - typings.activexMsxml2.activexMsxml2Ints.`8453`
+  - typings.activexMsxml2.activexMsxml2Ints.`8454`
+  - typings.activexMsxml2.activexMsxml2Ints.`8455`
+  - typings.activexMsxml2.activexMsxml2Ints.`8456`
+  - typings.activexMsxml2.activexMsxml2Ints.`8457`
+  - typings.activexMsxml2.activexMsxml2Ints.`8458`
+  - typings.activexMsxml2.activexMsxml2Ints.`8459`
+  - typings.activexMsxml2.activexMsxml2Ints.`8460`
+  - typings.activexMsxml2.activexMsxml2Ints.`8461`
+  - typings.activexMsxml2.activexMsxml2Ints.`8462`
+  - typings.activexMsxml2.activexMsxml2Ints.`8463`
+  - typings.activexMsxml2.activexMsxml2Ints.`8464`
+  - typings.activexMsxml2.activexMsxml2Ints.`8465`
+  - typings.activexMsxml2.activexMsxml2Ints.`8466`
+  - typings.activexMsxml2.activexMsxml2Ints.`8467`
+  - typings.activexMsxml2.activexMsxml2Ints.`8468`
+  - typings.activexMsxml2.activexMsxml2Ints.`8469`
+  - typings.activexMsxml2.activexMsxml2Ints.`8470`
+  - typings.activexMsxml2.activexMsxml2Ints.`8471`
+  - typings.activexMsxml2.activexMsxml2Ints.`8472`
+  - typings.activexMsxml2.activexMsxml2Ints.`8473`
+  - typings.activexMsxml2.activexMsxml2Ints.`8474`
+  - typings.activexMsxml2.activexMsxml2Ints.`8475`
+  - typings.activexMsxml2.activexMsxml2Ints.`8476`
+  - typings.activexMsxml2.activexMsxml2Ints.`8477`
+  - typings.activexMsxml2.activexMsxml2Ints.`8478`
+  - typings.activexMsxml2.activexMsxml2Ints.`8479`
+  - typings.activexMsxml2.activexMsxml2Ints.`8480`
+  - typings.activexMsxml2.activexMsxml2Ints.`8481`
+  - typings.activexMsxml2.activexMsxml2Ints.`8482`
+  - typings.activexMsxml2.activexMsxml2Ints.`8483`
+  - typings.activexMsxml2.activexMsxml2Ints.`8484`
+  - typings.activexMsxml2.activexMsxml2Ints.`8485`
+  - typings.activexMsxml2.activexMsxml2Ints.`8486`
+  - typings.activexMsxml2.activexMsxml2Ints.`8487`
+  - typings.activexMsxml2.activexMsxml2Ints.`8488`
+  - typings.activexMsxml2.activexMsxml2Ints.`8489`
+  - typings.activexMsxml2.activexMsxml2Ints.`8490`
+  - typings.activexMsxml2.activexMsxml2Ints.`8491`
+  - typings.activexMsxml2.activexMsxml2Ints.`8492`
+  - typings.activexMsxml2.activexMsxml2Ints.`8493`
+  - typings.activexMsxml2.activexMsxml2Ints.`16387`
+  - typings.activexMsxml2.activexMsxml2Ints.`16644`
+  - typings.activexMsxml2.activexMsxml2Ints.`16640`
+  - typings.activexMsxml2.activexMsxml2Ints.`4352`
+  - typings.activexMsxml2.activexMsxml2Ints.`4353`
+  - typings.activexMsxml2.activexMsxml2Ints.`4354`
+  - typings.activexMsxml2.activexMsxml2Ints.`4099`
+  - typings.activexMsxml2.activexMsxml2Ints.`2048`
+  - typings.activexMsxml2.activexMsxml2Ints.`18433`
+  - typings.activexMsxml2.activexMsxml2Ints.`18434`
+  - typings.activexMsxml2.activexMsxml2Ints.`18435`
+  - typings.activexMsxml2.activexMsxml2Ints.`10240`
+  - typings.activexMsxml2.activexMsxml2Ints.`16384`
+  - typings.activexMsxml2.activexMsxml2Ints.`4096`
+  - typings.activexMsxml2.activexMsxml2Ints.`16643`
+  - typings.activexMsxml2.activexMsxml2Ints.`8704`
+  - typings.activexMsxml2.activexMsxml2Ints.`4355`
 */
 trait _SOMITEMTYPE extends StObject
 object _SOMITEMTYPE {

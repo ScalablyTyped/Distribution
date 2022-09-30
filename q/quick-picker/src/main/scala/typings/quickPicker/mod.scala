@@ -1,16 +1,16 @@
 package typings.quickPicker
 
-import typings.quickPicker.quickPickerNumbers.`10`
-import typings.quickPicker.quickPickerNumbers.`12`
-import typings.quickPicker.quickPickerNumbers.`15`
-import typings.quickPicker.quickPickerNumbers.`1`
-import typings.quickPicker.quickPickerNumbers.`20`
-import typings.quickPicker.quickPickerNumbers.`2`
-import typings.quickPicker.quickPickerNumbers.`30`
-import typings.quickPicker.quickPickerNumbers.`3`
-import typings.quickPicker.quickPickerNumbers.`4`
-import typings.quickPicker.quickPickerNumbers.`5`
-import typings.quickPicker.quickPickerNumbers.`6`
+import typings.quickPicker.quickPickerInts.`10`
+import typings.quickPicker.quickPickerInts.`12`
+import typings.quickPicker.quickPickerInts.`15`
+import typings.quickPicker.quickPickerInts.`1`
+import typings.quickPicker.quickPickerInts.`20`
+import typings.quickPicker.quickPickerInts.`2`
+import typings.quickPicker.quickPickerInts.`30`
+import typings.quickPicker.quickPickerInts.`3`
+import typings.quickPicker.quickPickerInts.`4`
+import typings.quickPicker.quickPickerInts.`5`
+import typings.quickPicker.quickPickerInts.`6`
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle

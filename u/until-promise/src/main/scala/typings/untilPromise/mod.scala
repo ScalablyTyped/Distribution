@@ -1,5 +1,6 @@
 package typings.untilPromise
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,7 +75,7 @@ object mod {
     /**
       * The Promise library to use. Defaults to global.Promise.
       */
-    var Promise: js.UndefOr[js.Thenable[Any]] = js.undefined
+    var Promise: js.UndefOr[PromiseLike[Any]] = js.undefined
     
     /**
       * If not falsy and > 0, until will capture the last X results and pass them to onError. Defaults to 0.
@@ -129,7 +130,7 @@ object mod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setPromise(value: js.Thenable[Any]): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseLike[Any]): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       

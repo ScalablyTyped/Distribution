@@ -6,7 +6,6 @@ import typings.googleCloudPubsub.protosMod.google.protobuf.FieldDescriptorProto.
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FieldDescriptorProto.
   * @param [properties] Properties to set
   */
-class FieldDescriptorProto ()
+open class FieldDescriptorProto ()
   extends StObject
      with IFieldDescriptorProto {
   def this(properties: IFieldDescriptorProto) = this()
@@ -59,7 +58,7 @@ class FieldDescriptorProto ()
     * Converts this FieldDescriptorProto to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
   
   /** FieldDescriptorProto typeName. */
   @JSName("typeName")
@@ -232,6 +231,8 @@ object FieldDescriptorProto {
   inline def create(): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FieldDescriptorProto]
   inline def create(properties: IFieldDescriptorProto): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   
+  inline def decode(reader: js.typedarray.Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FieldDescriptorProto]
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -243,9 +244,8 @@ object FieldDescriptorProto {
   /* static member */
   inline def decode(reader: Reader): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   inline def decode(reader: Reader, length: Double): FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FieldDescriptorProto]
-  inline def decode(reader: Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
-  inline def decode(reader: Uint8Array, length: Double): FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FieldDescriptorProto]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -255,7 +255,6 @@ object FieldDescriptorProto {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
-  inline def decodeDelimited(reader: Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   
   /**
     * Encodes the specified FieldDescriptorProto message. Does not implicitly {@link google.protobuf.FieldDescriptorProto.verify|verify} messages.
@@ -283,7 +282,16 @@ object FieldDescriptorProto {
     * @returns FieldDescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
+  inline def fromObject(`object`: StringDictionary[Any]): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
+  
+  /**
+    * Gets the default type url for FieldDescriptorProto
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a FieldDescriptorProto message. Also converts values to other types if specified.
@@ -292,8 +300,8 @@ object FieldDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: FieldDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: FieldDescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: FieldDescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: FieldDescriptorProto, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a FieldDescriptorProto message.
@@ -301,5 +309,5 @@ object FieldDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

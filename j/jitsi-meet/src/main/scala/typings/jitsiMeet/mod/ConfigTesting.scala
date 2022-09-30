@@ -1,8 +1,8 @@
 package typings.jitsiMeet.mod
 
 import typings.jitsiMeet.jitsiMeetBooleans.`false`
-import typings.jitsiMeet.jitsiMeetNumbers.`0`
-import typings.jitsiMeet.jitsiMeetNumbers.`1`
+import typings.jitsiMeet.jitsiMeetInts.`0`
+import typings.jitsiMeet.jitsiMeetInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

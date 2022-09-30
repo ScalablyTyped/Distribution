@@ -12,7 +12,7 @@ trait ListRepositoriesOutput extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * An array of repositories.
+    * An array of repository links.
     */
   var repositories: RepositorySummaryList
 }

@@ -11,48 +11,8 @@ object reactNativeReanimatedStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `100` extends StObject
-  inline def `100`: `100` = "100".asInstanceOf[`100`]
-  
-  @js.native
-  sealed trait `200` extends StObject
-  inline def `200`: `200` = "200".asInstanceOf[`200`]
-  
-  @js.native
-  sealed trait `300` extends StObject
-  inline def `300`: `300` = "300".asInstanceOf[`300`]
-  
-  @js.native
-  sealed trait `400` extends StObject
-  inline def `400`: `400` = "400".asInstanceOf[`400`]
-  
-  @js.native
-  sealed trait `500` extends StObject
-  inline def `500`: `500` = "500".asInstanceOf[`500`]
-  
-  @js.native
-  sealed trait `600` extends StObject
-  inline def `600`: `600` = "600".asInstanceOf[`600`]
-  
-  @js.native
-  sealed trait `700` extends StObject
-  inline def `700`: `700` = "700".asInstanceOf[`700`]
-  
-  @js.native
-  sealed trait `800` extends StObject
-  inline def `800`: `800` = "800".asInstanceOf[`800`]
-  
-  @js.native
-  sealed trait `900` extends StObject
-  inline def `900`: `900` = "900".asInstanceOf[`900`]
-  
-  @js.native
   sealed trait AdaptTransforms extends StObject
   inline def AdaptTransforms: AdaptTransforms = "AdaptTransforms".asInstanceOf[AdaptTransforms]
-  
-  @js.native
-  sealed trait AnimateProps extends StObject
-  inline def AnimateProps: AnimateProps = "AnimateProps".asInstanceOf[AnimateProps]
   
   @js.native
   sealed trait AnimateStyle extends StObject
@@ -67,8 +27,12 @@ object reactNativeReanimatedStrings {
   inline def EventMappingArray: EventMappingArray = "EventMappingArray".asInstanceOf[EventMappingArray]
   
   @js.native
-  sealed trait absolute extends StObject
-  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
+  sealed trait HSV extends StObject
+  inline def HSV: HSV = "HSV".asInstanceOf[HSV]
+  
+  @js.native
+  sealed trait RGB extends StObject
+  inline def RGB: RGB = "RGB".asInstanceOf[RGB]
   
   @js.native
   sealed trait all extends StObject
@@ -99,10 +63,6 @@ object reactNativeReanimatedStrings {
   inline def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait bold extends StObject
-  inline def bold: bold = "bold".asInstanceOf[bold]
-  
-  @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -115,40 +75,12 @@ object reactNativeReanimatedStrings {
   inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
-  
-  @js.native
-  sealed trait capitalize extends StObject
-  inline def capitalize: capitalize = "capitalize".asInstanceOf[capitalize]
-  
-  @js.native
   sealed trait center extends StObject
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait clip extends StObject
   inline def clip: clip = "clip".asInstanceOf[clip]
-  
-  @js.native
-  sealed trait column extends StObject
-  inline def column: column = "column".asInstanceOf[column]
-  
-  @js.native
-  sealed trait `column-reverse` extends StObject
-  inline def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
-  
-  @js.native
-  sealed trait dashed extends StObject
-  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
-  
-  @js.native
-  sealed trait dotted extends StObject
-  inline def dotted: dotted = "dotted".asInstanceOf[dotted]
-  
-  @js.native
-  sealed trait double extends StObject
-  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait easeIn extends StObject
@@ -179,16 +111,8 @@ object reactNativeReanimatedStrings {
   inline def fast: fast = "fast".asInstanceOf[fast]
   
   @js.native
-  sealed trait flex extends StObject
-  inline def flex: flex = "flex".asInstanceOf[flex]
-  
-  @js.native
-  sealed trait `flex-end` extends StObject
-  inline def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
-  
-  @js.native
-  sealed trait `flex-start` extends StObject
-  inline def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait handled extends StObject
@@ -199,36 +123,16 @@ object reactNativeReanimatedStrings {
   inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait hidden extends StObject
-  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
-  
-  @js.native
   sealed trait highQuality extends StObject
   inline def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
-  
-  @js.native
-  sealed trait inherit extends StObject
-  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
   sealed trait interactive extends StObject
   inline def interactive: interactive = "interactive".asInstanceOf[interactive]
   
   @js.native
-  sealed trait italic extends StObject
-  inline def italic: italic = "italic".asInstanceOf[italic]
-  
-  @js.native
-  sealed trait justify extends StObject
-  inline def justify: justify = "justify".asInstanceOf[justify]
-  
-  @js.native
   sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
-  
-  @js.native
-  sealed trait `line-through` extends StObject
-  inline def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   
   @js.native
   sealed trait linear extends StObject
@@ -237,14 +141,6 @@ object reactNativeReanimatedStrings {
   @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
-  
-  @js.native
-  sealed trait lowercase extends StObject
-  inline def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
-  
-  @js.native
-  sealed trait ltr extends StObject
-  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait middle extends StObject
@@ -271,10 +167,6 @@ object reactNativeReanimatedStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait nowrap extends StObject
-  inline def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
-  
-  @js.native
   sealed trait `on-drag` extends StObject
   inline def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
   
@@ -287,18 +179,6 @@ object reactNativeReanimatedStrings {
   inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
-  
-  @js.native
-  sealed trait relative extends StObject
-  inline def relative: relative = "relative".asInstanceOf[relative]
-  
-  @js.native
   sealed trait resize extends StObject
   inline def resize: resize = "resize".asInstanceOf[resize]
   
@@ -307,24 +187,8 @@ object reactNativeReanimatedStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait row extends StObject
-  inline def row: row = "row".asInstanceOf[row]
-  
-  @js.native
-  sealed trait `row-reverse` extends StObject
-  inline def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
-  
-  @js.native
-  sealed trait rtl extends StObject
-  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
-  
-  @js.native
   sealed trait scale extends StObject
   inline def scale: scale = "scale".asInstanceOf[scale]
-  
-  @js.native
-  sealed trait scroll extends StObject
-  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait scrollableAxes extends StObject
@@ -351,28 +215,8 @@ object reactNativeReanimatedStrings {
   inline def `slide-top`: `slide-top` = "slide-top".asInstanceOf[`slide-top`]
   
   @js.native
-  sealed trait solid extends StObject
-  inline def solid: solid = "solid".asInstanceOf[solid]
-  
-  @js.native
-  sealed trait `space-around` extends StObject
-  inline def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
-  
-  @js.native
-  sealed trait `space-between` extends StObject
-  inline def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
-  
-  @js.native
-  sealed trait `space-evenly` extends StObject
-  inline def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
-  
-  @js.native
   sealed trait start extends StObject
   inline def start: start = "start".asInstanceOf[start]
-  
-  @js.native
-  sealed trait stretch extends StObject
-  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
   sealed trait tail extends StObject
@@ -383,32 +227,8 @@ object reactNativeReanimatedStrings {
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait underline extends StObject
-  inline def underline: underline = "underline".asInstanceOf[underline]
-  
-  @js.native
-  sealed trait `underline line-through` extends StObject
-  inline def `underline line-through`: `underline line-through` = ("underline line-through").asInstanceOf[`underline line-through`]
-  
-  @js.native
-  sealed trait uppercase extends StObject
-  inline def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
-  
-  @js.native
-  sealed trait visible extends StObject
-  inline def visible: visible = "visible".asInstanceOf[visible]
-  
-  @js.native
   sealed trait white extends StObject
   inline def white: white = "white".asInstanceOf[white]
-  
-  @js.native
-  sealed trait wrap extends StObject
-  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
-  
-  @js.native
-  sealed trait `wrap-reverse` extends StObject
-  inline def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
   
   @js.native
   sealed trait yes extends StObject

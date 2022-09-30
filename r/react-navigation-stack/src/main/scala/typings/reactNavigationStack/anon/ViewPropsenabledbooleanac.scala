@@ -14,9 +14,9 @@ import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.reactNavigationStack.reactNavigationStackNumbers.`0`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`1`
-import typings.reactNavigationStack.reactNavigationStackNumbers.`2`
+import typings.reactNavigationStack.reactNavigationStackInts.`0`
+import typings.reactNavigationStack.reactNavigationStackInts.`1`
+import typings.reactNavigationStack.reactNavigationStackInts.`2`
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-none`
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-only`
 import typings.reactNavigationStack.reactNavigationStackStrings.`no-hide-descendants`

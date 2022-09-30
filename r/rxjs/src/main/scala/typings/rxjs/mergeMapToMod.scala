@@ -7,6 +7,7 @@ import typings.rxjs.internalTypesMod.OperatorFunction
 import typings.rxjs.internalTypesMod.ReadableStreamLike
 import typings.std.ArrayLike
 import typings.std.AsyncIterable
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,8 +20,6 @@ object mergeMapToMod {
   
   inline def mergeMapTo(innerObservable: js.Iterable[Any]): OperatorFunction[Any, ObservedValueOf[js.Iterable[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[Any, ObservedValueOf[js.Iterable[Any]]]]
   inline def mergeMapTo(innerObservable: js.Iterable[Any], concurrent: Double): OperatorFunction[Any, ObservedValueOf[js.Iterable[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[Any, ObservedValueOf[js.Iterable[Any]]]]
-  inline def mergeMapTo(innerObservable: js.Thenable[Any]): OperatorFunction[Any, ObservedValueOf[js.Thenable[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[Any, ObservedValueOf[js.Thenable[Any]]]]
-  inline def mergeMapTo(innerObservable: js.Thenable[Any], concurrent: Double): OperatorFunction[Any, ObservedValueOf[js.Thenable[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[Any, ObservedValueOf[js.Thenable[Any]]]]
   inline def mergeMapTo(innerObservable: Observable[Any]): OperatorFunction[Any, ObservedValueOf[Observable[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[Any, ObservedValueOf[Observable[Any]]]]
   inline def mergeMapTo(innerObservable: Observable[Any], concurrent: Double): OperatorFunction[Any, ObservedValueOf[Observable[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[Any, ObservedValueOf[Observable[Any]]]]
   inline def mergeMapTo(innerObservable: InteropObservable[Any]): OperatorFunction[Any, ObservedValueOf[InteropObservable[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[Any, ObservedValueOf[InteropObservable[Any]]]]
@@ -31,6 +30,8 @@ object mergeMapToMod {
   inline def mergeMapTo(innerObservable: ArrayLike[Any], concurrent: Double): OperatorFunction[Any, ObservedValueOf[ArrayLike[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[Any, ObservedValueOf[ArrayLike[Any]]]]
   inline def mergeMapTo(innerObservable: AsyncIterable[Any]): OperatorFunction[Any, ObservedValueOf[AsyncIterable[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[Any, ObservedValueOf[AsyncIterable[Any]]]]
   inline def mergeMapTo(innerObservable: AsyncIterable[Any], concurrent: Double): OperatorFunction[Any, ObservedValueOf[AsyncIterable[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[Any, ObservedValueOf[AsyncIterable[Any]]]]
+  inline def mergeMapTo(innerObservable: PromiseLike[Any]): OperatorFunction[Any, ObservedValueOf[PromiseLike[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[Any, ObservedValueOf[PromiseLike[Any]]]]
+  inline def mergeMapTo(innerObservable: PromiseLike[Any], concurrent: Double): OperatorFunction[Any, ObservedValueOf[PromiseLike[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[Any, ObservedValueOf[PromiseLike[Any]]]]
   inline def mergeMapTo[T, R](
     innerObservable: js.Iterable[Any],
     resultSelector: js.Function4[
@@ -46,27 +47,6 @@ object mergeMapToMod {
     resultSelector: js.Function4[
       /* outerValue */ T, 
       /* innerValue */ ObservedValueOf[js.Iterable[Any]], 
-      /* outerIndex */ Double, 
-      /* innerIndex */ Double, 
-      R
-    ],
-    concurrent: Double
-  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
-  inline def mergeMapTo[T, R](
-    innerObservable: js.Thenable[Any],
-    resultSelector: js.Function4[
-      /* outerValue */ T, 
-      /* innerValue */ ObservedValueOf[js.Thenable[Any]], 
-      /* outerIndex */ Double, 
-      /* innerIndex */ Double, 
-      R
-    ]
-  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
-  inline def mergeMapTo[T, R](
-    innerObservable: js.Thenable[Any],
-    resultSelector: js.Function4[
-      /* outerValue */ T, 
-      /* innerValue */ ObservedValueOf[js.Thenable[Any]], 
       /* outerIndex */ Double, 
       /* innerIndex */ Double, 
       R
@@ -172,6 +152,27 @@ object mergeMapToMod {
     resultSelector: js.Function4[
       /* outerValue */ T, 
       /* innerValue */ ObservedValueOf[AsyncIterable[Any]], 
+      /* outerIndex */ Double, 
+      /* innerIndex */ Double, 
+      R
+    ],
+    concurrent: Double
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  inline def mergeMapTo[T, R](
+    innerObservable: PromiseLike[Any],
+    resultSelector: js.Function4[
+      /* outerValue */ T, 
+      /* innerValue */ ObservedValueOf[PromiseLike[Any]], 
+      /* outerIndex */ Double, 
+      /* innerIndex */ Double, 
+      R
+    ]
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMapTo")(innerObservable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  inline def mergeMapTo[T, R](
+    innerObservable: PromiseLike[Any],
+    resultSelector: js.Function4[
+      /* outerValue */ T, 
+      /* innerValue */ ObservedValueOf[PromiseLike[Any]], 
       /* outerIndex */ Double, 
       /* innerIndex */ Double, 
       R

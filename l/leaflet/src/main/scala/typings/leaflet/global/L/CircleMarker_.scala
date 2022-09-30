@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.CircleMarker")
 @js.native
-class CircleMarker_[P] protected ()
+open class CircleMarker_[P] protected ()
   extends typings.leaflet.mod.CircleMarker_[P] {
   def this(latlng: LatLngExpression) = this()
   def this(latlng: LatLngExpression, options: CircleMarkerOptions) = this()

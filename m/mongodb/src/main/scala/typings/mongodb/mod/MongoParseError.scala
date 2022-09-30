@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongodb", "MongoParseError")
 @js.native
-class MongoParseError protected () extends MongoError {
+open class MongoParseError protected () extends MongoDriverError {
   def this(message: String) = this()
+  
+  @JSName("name")
+  def name_MMongoParseError: String = js.native
 }

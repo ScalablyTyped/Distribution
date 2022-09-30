@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IsBorderless[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends StObject {
+trait IsBorderless[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] extends StObject {
   
   /**
     * Render as a different element type
@@ -31,12 +31,12 @@ trait IsBorderless[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was 
 }
 object IsBorderless {
   
-  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](): IsBorderless[T] = {
+  inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](): IsBorderless[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsBorderless[T]]
   }
   
-  extension [Self <: IsBorderless[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */](x: Self & IsBorderless[T]) {
+  extension [Self <: IsBorderless[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](x: Self & IsBorderless[T]) {
     
     inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

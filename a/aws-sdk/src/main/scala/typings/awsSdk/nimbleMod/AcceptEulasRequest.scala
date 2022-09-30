@@ -17,7 +17,7 @@ trait AcceptEulasRequest extends StObject {
   var eulaIds: js.UndefOr[EulaIdList] = js.undefined
   
   /**
-    * A collection of EULA IDs.
+    * The studio ID.
     */
   var studioId: String
 }

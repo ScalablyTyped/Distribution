@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/static-image-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticImageViewer")
 @js.native
-class StaticImageViewer protected () extends Widget {
+open class StaticImageViewer protected () extends Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -41,7 +41,7 @@ class StaticImageViewer protected () extends Widget {
 }
 object StaticImageViewer {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticImageViewer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +70,13 @@ object StaticImageViewer {
   inline def createInDropZoneUnderWidget(container: DropZone): StaticImageViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[StaticImageViewer]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticImageViewer.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.StaticImageViewer.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.StaticImageViewer.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

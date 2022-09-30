@@ -12,6 +12,7 @@ import typings.redux.mod.Dispatch
 import typings.reduxForm.reduxFormStrings.input
 import typings.reduxForm.reduxFormStrings.select
 import typings.reduxForm.reduxFormStrings.textarea
+import typings.std.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
@@ -23,35 +24,35 @@ object fieldMod {
   
   @JSImport("redux-form/lib/Field", JSImport.Default)
   @js.native
-  class default[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] protected () extends Field[P] {
+  open class default[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] protected () extends Field[P] {
     def this(props: P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
   }
   
   @JSImport("redux-form/lib/Field", "Field")
   @js.native
-  class Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] protected ()
-    extends Component[P, js.Object, js.Any] {
+  open class Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] protected ()
+    extends Component[P, js.Object, Any] {
     def this(props: P) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: P, context: js.Any) = this()
+    def this(props: P, context: Any) = this()
     
     var dirty: Boolean = js.native
     
-    def getRenderedComponent(): Component[WrappedFieldProps & P, js.Object, js.Any] = js.native
+    def getRenderedComponent(): Component[WrappedFieldProps & P, js.Object, Any] = js.native
     
     var name: String = js.native
     
     var pristine: Boolean = js.native
     
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   /* Inlined parent std.Partial<redux-form.redux-form/lib/Field.CommonFieldProps> */
@@ -69,15 +70,15 @@ object fieldMod {
     
     var normalize: js.UndefOr[Normalizer] = js.undefined
     
-    var onBlur: js.UndefOr[EventWithDataHandler[FocusEvent[js.Any]]] = js.undefined
+    var onBlur: js.UndefOr[EventWithDataHandler[FocusEvent[Any, Element]]] = js.undefined
     
-    var onChange: js.UndefOr[EventWithDataHandler[ChangeEvent[js.Any]]] = js.undefined
+    var onChange: js.UndefOr[EventWithDataHandler[ChangeEvent[Any]]] = js.undefined
     
-    var onDragStart: js.UndefOr[EventHandler[DragEvent[js.Any]]] = js.undefined
+    var onDragStart: js.UndefOr[EventHandler[DragEvent[Any]]] = js.undefined
     
-    var onDrop: js.UndefOr[EventHandler[DragEvent[js.Any]]] = js.undefined
+    var onDrop: js.UndefOr[EventHandler[DragEvent[Any]]] = js.undefined
     
-    var onFocus: js.UndefOr[EventHandler[FocusEvent[js.Any]]] = js.undefined
+    var onFocus: js.UndefOr[EventHandler[FocusEvent[Any, Element]]] = js.undefined
     
     var parse: js.UndefOr[Parser] = js.undefined
     
@@ -100,7 +101,7 @@ object fieldMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setFormat(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (/* value */ Any, /* name */ String) => Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
       inline def setFormatNull: Self = StObject.set(x, "format", null)
       
@@ -114,41 +115,41 @@ object fieldMod {
       
       inline def setImmutablePropsUndefined: Self = StObject.set(x, "immutableProps", js.undefined)
       
-      inline def setImmutablePropsVarargs(value: String*): Self = StObject.set(x, "immutableProps", js.Array(value :_*))
+      inline def setImmutablePropsVarargs(value: String*): Self = StObject.set(x, "immutableProps", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNormalize(
-        value: (/* value */ js.Any, /* previousValue */ js.UndefOr[js.Any], /* allValues */ js.UndefOr[js.Any], /* previousAllValues */ js.UndefOr[js.Any]) => js.Any
+        value: (/* value */ Any, /* previousValue */ js.UndefOr[Any], /* allValues */ js.UndefOr[Any], /* previousAllValues */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "normalize", js.Any.fromFunction4(value))
       
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
       inline def setOnBlur(
-        value: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[FocusEvent[Any, Element]], /* newValue */ js.UndefOr[Any], /* previousValue */ js.UndefOr[Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onBlur", js.Any.fromFunction4(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       inline def setOnChange(
-        value: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[ChangeEvent[Any]], /* newValue */ js.UndefOr[Any], /* previousValue */ js.UndefOr[Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
+      inline def setOnDragStart(value: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      inline def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      inline def setOnDrop(value: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      inline def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (FocusEvent[Any, Element], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setParse(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (/* value */ Any, /* name */ String) => Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
@@ -159,22 +160,22 @@ object fieldMod {
       inline def setValidate(value: Validator | js.Array[Validator]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       inline def setValidateFunction4(
-        value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
+        value: (/* value */ Any, /* allValues */ js.UndefOr[Any], /* props */ js.UndefOr[Any], /* name */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value*))
       
       inline def setWarn(value: Validator | js.Array[Validator]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
       inline def setWarnFunction4(
-        value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
+        value: (/* value */ Any, /* allValues */ js.UndefOr[Any], /* props */ js.UndefOr[Any], /* name */ js.UndefOr[Any]) => Any
       ): Self = StObject.set(x, "warn", js.Any.fromFunction4(value))
       
       inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value*))
     }
   }
   
@@ -182,19 +183,19 @@ object fieldMod {
     
     var name: String
     
-    var onDragStart: EventHandler[DragEvent[js.Any]]
+    var onDragStart: EventHandler[DragEvent[Any]]
     
-    var onDrop: EventHandler[DragEvent[js.Any]]
+    var onDrop: EventHandler[DragEvent[Any]]
     
-    var onFocus: EventHandler[FocusEvent[js.Any]]
+    var onFocus: EventHandler[FocusEvent[Any, Element]]
   }
   object CommonFieldInputProps {
     
     inline def apply(
       name: String,
-      onDragStart: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onDrop: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onFocus: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit
+      onDragStart: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit,
+      onDrop: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit,
+      onFocus: (FocusEvent[Any, Element], /* name */ js.UndefOr[String]) => Unit
     ): CommonFieldInputProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus))
       __obj.asInstanceOf[CommonFieldInputProps]
@@ -204,11 +205,11 @@ object fieldMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
+      inline def setOnDragStart(value: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
       
-      inline def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      inline def setOnDrop(value: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
-      inline def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (FocusEvent[Any, Element], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
     }
   }
   
@@ -216,19 +217,19 @@ object fieldMod {
     extends StObject
        with CommonFieldInputProps {
     
-    var onBlur: EventWithDataHandler[FocusEvent[js.Any]]
+    var onBlur: EventWithDataHandler[FocusEvent[Any, Element]]
     
-    var onChange: EventWithDataHandler[ChangeEvent[js.Any]]
+    var onChange: EventWithDataHandler[ChangeEvent[Any]]
   }
   object CommonFieldProps {
     
     inline def apply(
       name: String,
-      onBlur: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onChange: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onDragStart: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onDrop: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onFocus: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit
+      onBlur: (/* event */ js.UndefOr[FocusEvent[Any, Element]], /* newValue */ js.UndefOr[Any], /* previousValue */ js.UndefOr[Any], /* name */ js.UndefOr[String]) => Unit,
+      onChange: (/* event */ js.UndefOr[ChangeEvent[Any]], /* newValue */ js.UndefOr[Any], /* previousValue */ js.UndefOr[Any], /* name */ js.UndefOr[String]) => Unit,
+      onDragStart: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit,
+      onDrop: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit,
+      onFocus: (FocusEvent[Any, Element], /* name */ js.UndefOr[String]) => Unit
     ): CommonFieldProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = js.Any.fromFunction4(onBlur), onChange = js.Any.fromFunction4(onChange), onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus))
       __obj.asInstanceOf[CommonFieldProps]
@@ -237,11 +238,11 @@ object fieldMod {
     extension [Self <: CommonFieldProps](x: Self) {
       
       inline def setOnBlur(
-        value: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[FocusEvent[Any, Element]], /* newValue */ js.UndefOr[Any], /* previousValue */ js.UndefOr[Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onBlur", js.Any.fromFunction4(value))
       
       inline def setOnChange(
-        value: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
+        value: (/* event */ js.UndefOr[ChangeEvent[Any]], /* newValue */ js.UndefOr[Any], /* previousValue */ js.UndefOr[Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
     }
   }
@@ -251,52 +252,52 @@ object fieldMod {
   @js.native
   trait EventOrValueHandler[Event] extends EventHandler[Event] {
     
-    def apply(value: js.Any): Unit = js.native
+    def apply(value: Any): Unit = js.native
   }
   
   type EventWithDataHandler[Event] = js.Function4[
     /* event */ js.UndefOr[Event], 
-    /* newValue */ js.UndefOr[js.Any], 
-    /* previousValue */ js.UndefOr[js.Any], 
+    /* newValue */ js.UndefOr[Any], 
+    /* previousValue */ js.UndefOr[Any], 
     /* name */ js.UndefOr[String], 
     Unit
   ]
   
-  type Formatter = js.Function2[/* value */ js.Any, /* name */ String, js.Any]
+  type Formatter = js.Function2[/* value */ Any, /* name */ String, Any]
   
   @js.native
   trait GenericField[P]
-    extends Component[BaseFieldProps[P] & P, js.Object, js.Any] {
+    extends Component[BaseFieldProps[P] & P, js.Object, Any] {
     
     var dirty: Boolean = js.native
     
-    def getRenderedComponent(): Component[WrappedFieldProps & P, js.Object, js.Any] = js.native
+    def getRenderedComponent(): Component[WrappedFieldProps & P, js.Object, Any] = js.native
     
     var name: String = js.native
     
     var pristine: Boolean = js.native
     
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   type GenericFieldHTMLAttributes = InputHTMLAttributes[HTMLInputElement] | SelectHTMLAttributes[HTMLSelectElement] | TextareaHTMLAttributes[HTMLTextAreaElement]
   
   type Normalizer = js.Function4[
-    /* value */ js.Any, 
-    /* previousValue */ js.UndefOr[js.Any], 
-    /* allValues */ js.UndefOr[js.Any], 
-    /* previousAllValues */ js.UndefOr[js.Any], 
-    js.Any
+    /* value */ Any, 
+    /* previousValue */ js.UndefOr[Any], 
+    /* allValues */ js.UndefOr[Any], 
+    /* previousAllValues */ js.UndefOr[Any], 
+    Any
   ]
   
-  type Parser = js.Function2[/* value */ js.Any, /* name */ String, js.Any]
+  type Parser = js.Function2[/* value */ Any, /* name */ String, Any]
   
   type Validator = js.Function4[
-    /* value */ js.Any, 
-    /* allValues */ js.UndefOr[js.Any], 
-    /* props */ js.UndefOr[js.Any], 
-    /* name */ js.UndefOr[js.Any], 
-    js.Any
+    /* value */ Any, 
+    /* allValues */ js.UndefOr[Any], 
+    /* props */ js.UndefOr[Any], 
+    /* name */ js.UndefOr[Any], 
+    Any
   ]
   
   trait WrappedFieldInputProps
@@ -305,22 +306,22 @@ object fieldMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
-    var onBlur: EventOrValueHandler[FocusEvent[js.Any]]
+    var onBlur: EventOrValueHandler[FocusEvent[Any, Element]]
     
-    var onChange: EventOrValueHandler[ChangeEvent[js.Any]]
+    var onChange: EventOrValueHandler[ChangeEvent[Any]]
     
-    var value: js.Any
+    var value: Any
   }
   object WrappedFieldInputProps {
     
     inline def apply(
       name: String,
-      onBlur: EventOrValueHandler[FocusEvent[js.Any]],
-      onChange: EventOrValueHandler[ChangeEvent[js.Any]],
-      onDragStart: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onDrop: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      onFocus: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
-      value: js.Any
+      onBlur: EventOrValueHandler[FocusEvent[Any, Element]],
+      onChange: EventOrValueHandler[ChangeEvent[Any]],
+      onDragStart: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit,
+      onDrop: (DragEvent[Any], /* name */ js.UndefOr[String]) => Unit,
+      onFocus: (FocusEvent[Any, Element], /* name */ js.UndefOr[String]) => Unit,
+      value: Any
     ): WrappedFieldInputProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onBlur = onBlur.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onDragStart = js.Any.fromFunction2(onDragStart), onDrop = js.Any.fromFunction2(onDrop), onFocus = js.Any.fromFunction2(onFocus), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrappedFieldInputProps]
@@ -332,11 +333,11 @@ object fieldMod {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      inline def setOnBlur(value: EventOrValueHandler[FocusEvent[js.Any]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      inline def setOnBlur(value: EventOrValueHandler[FocusEvent[Any, Element]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: EventOrValueHandler[ChangeEvent[js.Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: EventOrValueHandler[ChangeEvent[Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,13 +351,13 @@ object fieldMod {
     
     var dirty: Boolean
     
-    var dispatch: Dispatch[js.Any]
+    var dispatch: Dispatch[Any]
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     var form: String
     
-    var initial: js.Any
+    var initial: Any
     
     var invalid: Boolean
     
@@ -372,7 +373,7 @@ object fieldMod {
     
     var visited: Boolean
     
-    var warning: js.UndefOr[js.Any] = js.undefined
+    var warning: js.UndefOr[Any] = js.undefined
   }
   object WrappedFieldMetaProps {
     
@@ -380,9 +381,9 @@ object fieldMod {
       asyncValidating: Boolean,
       autofilled: Boolean,
       dirty: Boolean,
-      dispatch: js.Any => js.Any,
+      dispatch: Any => Any,
       form: String,
-      initial: js.Any,
+      initial: Any,
       invalid: Boolean,
       pristine: Boolean,
       submitFailed: Boolean,
@@ -407,15 +408,15 @@ object fieldMod {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      inline def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: Any => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
       inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
@@ -431,7 +432,7 @@ object fieldMod {
       
       inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      inline def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
       inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }

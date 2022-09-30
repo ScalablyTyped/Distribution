@@ -22,6 +22,8 @@ trait SellProviderInfo extends StObject {
   
   var paymentMethods: js.UndefOr[js.Array[SellCryptoPaymentMethod]] = js.undefined
   
+  var pendingTimeout: js.UndefOr[Double] = js.undefined
+  
   // https://www.simplex.com/support/
   var quoteInfo: js.UndefOr[String] = js.undefined
   
@@ -84,6 +86,10 @@ object SellProviderInfo {
     inline def setPaymentMethodsUndefined: Self = StObject.set(x, "paymentMethods", js.undefined)
     
     inline def setPaymentMethodsVarargs(value: SellCryptoPaymentMethod*): Self = StObject.set(x, "paymentMethods", js.Array(value*))
+    
+    inline def setPendingTimeout(value: Double): Self = StObject.set(x, "pendingTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setPendingTimeoutUndefined: Self = StObject.set(x, "pendingTimeout", js.undefined)
     
     inline def setQuoteInfo(value: String): Self = StObject.set(x, "quoteInfo", value.asInstanceOf[js.Any])
     

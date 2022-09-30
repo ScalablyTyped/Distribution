@@ -7,8 +7,8 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
 import typings.std.WebGLTexture
 import typings.std.WebGLUniformLocation
-import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglNumbers.`1`
-import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglNumbers.`2`
+import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`1`
+import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`2`
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

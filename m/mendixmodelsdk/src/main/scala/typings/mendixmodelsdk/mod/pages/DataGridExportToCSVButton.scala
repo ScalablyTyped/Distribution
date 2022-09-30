@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DataGridExportToCSVButton")
 @js.native
-class DataGridExportToCSVButton protected ()
+open class DataGridExportToCSVButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DataGridExportToCSVButton {
   def this(
     model: AbstractModel,

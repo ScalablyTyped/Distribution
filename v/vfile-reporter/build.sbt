@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "vfile-reporter"
-version := "7.0.4-d1f1c7"
+version := "7.0.4-649e49"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
-  "org.scalablytyped" %%% "std" % "4.8-958c79",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-f6f04e",
-  "org.scalablytyped" %%% "vfile" % "5.3.5-edd597",
-  "org.scalablytyped" %%% "vfile-message" % "3.1.2-0f5a3e",
-  "org.scalablytyped" %%% "vfile-statistics" % "2.0.0-1d7e3d")
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-e82c50",
+  "org.scalablytyped" %%% "vfile" % "5.3.5-f00b94",
+  "org.scalablytyped" %%% "vfile-message" % "3.1.2-e61e19",
+  "org.scalablytyped" %%% "vfile-statistics" % "2.0.0-bdd764")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

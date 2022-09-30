@@ -28,21 +28,32 @@ object typesMod {
       */
     def apply[T](octokit: Octokit, options: EndpointOptions): js.Promise[PaginationResults[T]] = js.native
     /**
+      * Paginate a request using an known endpoint route string
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
+      * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      */
+    /**
       * Paginate a request using an endpoint method and parameters
       *
       * @param {object} octokit Octokit instance
       * @param {string} request Request method (`octokit.request` or `@octokit/request`)
       * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
-    def apply[R /* <: RequestInterface[js.Object] */](octokit: Octokit, request: R): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.NormalizeResponse<@octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.GetResponseTypeFromEndpointMethod<R>>['data'] */ js.Any
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](octokit: Octokit, route: R): js.Promise[
+        DataType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
+        ]
       ] = js.native
-    def apply[R /* <: RequestInterface[js.Object] */](
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](
       octokit: Octokit,
-      request: R,
-      parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
+      route: R,
+      parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.NormalizeResponse<@octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.GetResponseTypeFromEndpointMethod<R>>['data'] */ js.Any
+        DataType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
+        ]
       ] = js.native
     /**
       * Paginate a request using endpoint options and map each response to a custom array
@@ -57,17 +68,35 @@ object typesMod {
       mapFn: MapFunction[OctokitResponse[PaginationResults[T], Double], js.Array[M]]
     ): js.Promise[PaginationResults[M]] = js.native
     /**
+      * Paginate a request using a known endpoint route string and map each response to a custom array
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
+      * @param {function} mapFn Optional method to map each response to a custom array
+      */
+    /**
       * Paginate a request using an endpoint method and a map function
       *
       * @param {object} octokit Octokit instance
       * @param {string} request Request method (`octokit.request` or `@octokit/request`)
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, M /* <: js.Array[Any] */](
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */, M /* <: js.Array[Any] */](
       octokit: Octokit,
-      request: R,
-      mapFn: MapFunction[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], M]
+      route: R,
+      mapFn: MapFunction[
+          (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any) | NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], 
+          M
+        ]
     ): js.Promise[M] = js.native
+    /**
+      * Paginate a request using a known endpoint route string and parameters, and map each response to a custom array
+      *
+      * @param {object} octokit Octokit instance
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
+      * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      * @param {function} mapFn Optional method to map each response to a custom array
+      */
     /**
       * Paginate a request using an endpoint method, parameters, and a map function
       *
@@ -76,15 +105,25 @@ object typesMod {
       * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, M /* <: js.Array[Any] */](
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */, M /* <: js.Array[Any] */](
       octokit: Octokit,
-      request: R,
-      parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any,
-      mapFn: MapFunction[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], M]
+      route: R,
+      parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any,
+      mapFn: MapFunction[
+          (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any) | NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], 
+          M
+        ]
     ): js.Promise[M] = js.native
     
     def iterator[T](octokit: Octokit, options: EndpointOptions): AsyncIterableIterator[OctokitResponse[PaginationResults[T], Double]] = js.native
-    def iterator[R /* <: RequestInterface[js.Object] */](octokit: Octokit, request: R): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
+    def iterator[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](octokit: Octokit, route: R): AsyncIterableIterator[
+        OctokitResponse[
+          DataType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
+          ], 
+          Double
+        ]
+      ] = js.native
     def iterator[T, R /* <: Route */](
       octokit: Octokit,
       route: R,
@@ -97,18 +136,9 @@ object typesMod {
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
     ): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
     @JSName("iterator")
-    def iterator_R_Any[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */](octokit: Octokit, route: R): AsyncIterableIterator[
-        OctokitResponse[
-          DataType[
-            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
-          ], 
-          Double
-        ]
-      ] = js.native
+    def iterator_TR[T, R /* <: Route */](octokit: Octokit, route: R): AsyncIterableIterator[OctokitResponse[PaginationResults[T], Double]] = js.native
     @JSName("iterator")
-    def iterator_TR_Route[T, R /* <: Route */](octokit: Octokit, route: R): AsyncIterableIterator[OctokitResponse[PaginationResults[T], Double]] = js.native
-    @JSName("iterator")
-    def iterator_parameters[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */](
+    def iterator_parameters[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](
       octokit: Octokit,
       route: R,
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any
@@ -146,19 +176,29 @@ object typesMod {
       */
     def apply[T](options: EndpointOptions): js.Promise[PaginationResults[T]] = js.native
     /**
+      * Paginate a request using an known endpoint route string
+      *
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
+      * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      */
+    /**
       * Paginate a request using an endpoint method and parameters
       *
       * @param {string} request Request method (`octokit.request` or `@octokit/request`)
       * @param {object} parameters? URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
-    def apply[R /* <: RequestInterface[js.Object] */](request: R): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.NormalizeResponse<@octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.GetResponseTypeFromEndpointMethod<R>>['data'] */ js.Any
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](route: R): js.Promise[
+        DataType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
+        ]
       ] = js.native
-    def apply[R /* <: RequestInterface[js.Object] */](
-      request: R,
-      parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](
+      route: R,
+      parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
     ): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/types.NormalizeResponse<@octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.GetResponseTypeFromEndpointMethod<R>>['data'] */ js.Any
+        DataType[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
+        ]
       ] = js.native
     /**
       * Paginate a request using endpoint options and map each response to a custom array
@@ -171,12 +211,31 @@ object typesMod {
       mapFn: MapFunction[OctokitResponse[PaginationResults[T], Double], js.Array[M]]
     ): js.Promise[PaginationResults[M]] = js.native
     /**
+      * Paginate a request using a known endpoint route string and map each response to a custom array
+      *
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
+      * @param {function} mapFn Optional method to map each response to a custom array
+      */
+    /**
       * Paginate a request using an endpoint method and a map function
       *
       * @param {string} request Request method (`octokit.request` or `@octokit/request`)
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, M /* <: js.Array[Any] */](request: R, mapFn: MapFunction[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], M]): js.Promise[M] = js.native
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */, M /* <: js.Array[Any] */](
+      route: R,
+      mapFn: MapFunction[
+          (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any) | NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], 
+          M
+        ]
+    ): js.Promise[M] = js.native
+    /**
+      * Paginate a request using a known endpoint route string and parameters, and map each response to a custom array
+      *
+      * @param {string} route Request method + URL. Example: `'GET /orgs/{org}'`
+      * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
+      * @param {function} mapFn Optional method to map each response to a custom array
+      */
     /**
       * Paginate a request using an endpoint method, parameters, and a map function
       *
@@ -184,14 +243,24 @@ object typesMod {
       * @param {object} parameters URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       * @param {function} mapFn? Optional method to map each response to a custom array
       */
-    def apply[R /* <: RequestInterface[js.Object] */, M /* <: js.Array[Any] */](
-      request: R,
-      parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any,
-      mapFn: MapFunction[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], M]
+    def apply[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */, M /* <: js.Array[Any] */](
+      route: R,
+      parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any,
+      mapFn: MapFunction[
+          (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any) | NormalizeResponse[GetResponseTypeFromEndpointMethod[R]], 
+          M
+        ]
     ): js.Promise[M] = js.native
     
     def iterator[T](options: EndpointOptions): AsyncIterableIterator[OctokitResponse[PaginationResults[T], Double]] = js.native
-    def iterator[R /* <: RequestInterface[js.Object] */](request: R): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
+    def iterator[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](route: R): AsyncIterableIterator[
+        OctokitResponse[
+          DataType[
+            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
+          ], 
+          Double
+        ]
+      ] = js.native
     def iterator[T, R /* <: Route */](
       route: R,
       parameters: RequestParameters | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any)
@@ -202,18 +271,9 @@ object typesMod {
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<R>[0] */ js.Any
     ): AsyncIterableIterator[NormalizeResponse[GetResponseTypeFromEndpointMethod[R]]] = js.native
     @JSName("iterator")
-    def iterator_R_Any[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */](route: R): AsyncIterableIterator[
-        OctokitResponse[
-          DataType[
-            /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['response'] */ js.Any
-          ], 
-          Double
-        ]
-      ] = js.native
+    def iterator_TR[T, R /* <: Route */](route: R): AsyncIterableIterator[OctokitResponse[PaginationResults[T], Double]] = js.native
     @JSName("iterator")
-    def iterator_TR_Route[T, R /* <: Route */](route: R): AsyncIterableIterator[OctokitResponse[PaginationResults[T], Double]] = js.native
-    @JSName("iterator")
-    def iterator_parameters[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any */](
+    def iterator_parameters[R /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any */](
       route: R,
       parameters: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/plugin-paginate-rest.@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints.PaginatingEndpoints[R]['parameters'] */ js.Any
     ): AsyncIterableIterator[

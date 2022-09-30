@@ -14,7 +14,7 @@ object drawerNavigatorItemsMod {
   
   @JSImport("react-navigation-drawer/lib/typescript/src/views/DrawerNavigatorItems", JSImport.Default)
   @js.native
-  class default () extends DrawerNavigatorItems
+  open class default () extends DrawerNavigatorItems
   /* static members */
   object default {
     
@@ -35,17 +35,17 @@ object drawerNavigatorItemsMod {
   
   @js.native
   trait DrawerNavigatorItems
-    extends Component[DrawerNavigatorItemsProps, js.Object, js.Any] {
+    extends Component[DrawerNavigatorItemsProps, js.Object, Any] {
     
     @JSName("context")
     var context_DrawerNavigatorItems: ContextType[Context[SupportedThemes]] = js.native
     
-    /* private */ var getActiveBackgroundColor: js.Any = js.native
+    /* private */ var getActiveBackgroundColor: Any = js.native
     
-    /* private */ var getActiveTintColor: js.Any = js.native
+    /* private */ var getActiveTintColor: Any = js.native
     
-    /* private */ var getInactiveBackgroundColor: js.Any = js.native
+    /* private */ var getInactiveBackgroundColor: Any = js.native
     
-    /* private */ var getInactiveTintColor: js.Any = js.native
+    /* private */ var getInactiveTintColor: Any = js.native
   }
 }

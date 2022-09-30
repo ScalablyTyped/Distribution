@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-leaflet-markercluster"
-version := "2.0-dt-20181121Z-fe0a7c"
-scalaVersion := "3.0.1"
+version := "3.0-dt-20211202Z-8c8598"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20201002Z-2461bc",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20201012Z-9366b5",
-  "org.scalablytyped" %%% "leaflet_dot_markercluster" % "1.4-dt-20200930Z-94da07",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "react-leaflet" % "2.5-dt-20200624Z-b548df",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-0912f8",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20220713Z-fa1356",
+  "org.scalablytyped" %%% "leaflet" % "1.8-dt-20220915Z-835dbd",
+  "org.scalablytyped" %%% "leaflet_dot_markercluster" % "1.5-dt-20220627Z-be93ac",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-975e63",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-fc8273",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-3fbb8c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

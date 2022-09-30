@@ -2,19 +2,19 @@ package typings.ow
 
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataViewMod {
   
-  @JSImport("ow/dist/source/predicates/data-view", "DataViewPredicate")
+  @JSImport("ow/dist/predicates/data-view", "DataViewPredicate")
   @js.native
   /**
     @hidden
     */
-  class DataViewPredicate () extends Predicate[DataView] {
+  open class DataViewPredicate ()
+    extends Predicate[js.typedarray.DataView] {
     def this(options: PredicateOptions) = this()
     
     /**

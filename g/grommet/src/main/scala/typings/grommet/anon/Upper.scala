@@ -17,11 +17,11 @@ trait Upper extends StObject {
   
   var height: js.UndefOr[String] = js.undefined
   
-  var lower: js.UndefOr[`9`] = js.undefined
+  var lower: js.UndefOr[`10`] = js.undefined
   
   var opacity: js.UndefOr[OpacityType] = js.undefined
   
-  var upper: js.UndefOr[`9`] = js.undefined
+  var upper: js.UndefOr[`10`] = js.undefined
 }
 object Upper {
   
@@ -46,7 +46,7 @@ object Upper {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLower(value: `9`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+    inline def setLower(value: `10`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
     inline def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
     
@@ -54,7 +54,7 @@ object Upper {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setUpper(value: `9`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
+    inline def setUpper(value: `10`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
     inline def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
   }

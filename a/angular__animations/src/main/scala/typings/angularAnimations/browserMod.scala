@@ -1,8 +1,8 @@
 package typings.angularAnimations
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularAnimations.angularAnimationsNumbers.`0`
-import typings.angularAnimations.angularAnimationsNumbers.`1`
+import typings.angularAnimations.angularAnimationsInts.`0`
+import typings.angularAnimations.angularAnimationsInts.`1`
 import typings.angularAnimations.mod.AnimationMetadata
 import typings.angularAnimations.mod.AnimationOptions
 import typings.angularAnimations.mod.AnimationPlayer
@@ -616,8 +616,8 @@ object browserMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularAnimations.angularAnimationsNumbers.`0`
-    - typings.angularAnimations.angularAnimationsNumbers.`1`
+    - typings.angularAnimations.angularAnimationsInts.`0`
+    - typings.angularAnimations.angularAnimationsInts.`1`
   */
   trait AnimationTransitionInstructionType extends StObject
   object AnimationTransitionInstructionType {

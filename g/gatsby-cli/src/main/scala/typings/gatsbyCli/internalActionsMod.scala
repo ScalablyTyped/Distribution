@@ -11,12 +11,14 @@ import typings.gatsbyCli.anon.StatusText
 import typings.gatsbyCli.anon.Total
 import typings.gatsbyCli.constantsMod.ActivityStatuses
 import typings.gatsbyCli.gatsbyCliStrings._empty
+import typings.gatsbyCli.reporterTypesMod.IRenderPageArgs
 import typings.gatsbyCli.typesMod.IActivityErrored
 import typings.gatsbyCli.typesMod.ICancelActivity
 import typings.gatsbyCli.typesMod.ICreateLog
 import typings.gatsbyCli.typesMod.IEndActivity
 import typings.gatsbyCli.typesMod.IGatsbyCLIState
 import typings.gatsbyCli.typesMod.IPendingActivity
+import typings.gatsbyCli.typesMod.IRenderPageTree
 import typings.gatsbyCli.typesMod.ISetLogs
 import typings.gatsbyCli.typesMod.ISetStatus
 import typings.gatsbyCli.typesMod.IStartActivity
@@ -42,6 +44,8 @@ object internalActionsMod {
   inline def createPendingActivity(hasIdStatus: Id): ActionsToEmit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPendingActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[ActionsToEmit]
   
   inline def endActivity(hasIdStatus: Status): QueuedEndActivity | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("endActivity")(hasIdStatus.asInstanceOf[js.Any]).asInstanceOf[QueuedEndActivity | Null]
+  
+  inline def renderPageTree(payload: IRenderPageArgs): IRenderPageTree = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPageTree")(payload.asInstanceOf[js.Any]).asInstanceOf[IRenderPageTree]
   
   inline def setActivityErrored(hasId: IdString): IActivityErrored | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("setActivityErrored")(hasId.asInstanceOf[js.Any]).asInstanceOf[IActivityErrored | Null]
   

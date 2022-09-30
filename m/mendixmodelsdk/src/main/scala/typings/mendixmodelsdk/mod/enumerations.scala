@@ -17,7 +17,7 @@ object enumerations {
     */
   @JSImport("mendixmodelsdk", "enumerations.Condition")
   @js.native
-  class Condition protected ()
+  open class Condition protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.enumerations.Condition {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -76,7 +76,7 @@ object enumerations {
     */
   @JSImport("mendixmodelsdk", "enumerations.Enumeration")
   @js.native
-  class Enumeration protected ()
+  open class Enumeration protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.enumerations.Enumeration {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -117,7 +117,7 @@ object enumerations {
     */
   @JSImport("mendixmodelsdk", "enumerations.EnumerationValue")
   @js.native
-  class EnumerationValue protected ()
+  open class EnumerationValue protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.enumerations.EnumerationValue {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

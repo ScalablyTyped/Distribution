@@ -1,5 +1,6 @@
 package typings.pEachSeries
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ object mod {
     	```
     	*/
     inline def apply[ValueType](
-      input: js.Iterable[js.Thenable[ValueType] | ValueType],
+      input: js.Iterable[PromiseLike[ValueType] | ValueType],
       iterator: js.Function2[/* element */ ValueType, /* index */ Double, StopSymbol | Any]
     ): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
     

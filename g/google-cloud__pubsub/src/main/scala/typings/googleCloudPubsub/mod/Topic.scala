@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/pubsub", "Topic")
 @js.native
-class Topic protected ()
+open class Topic protected ()
   extends typings.googleCloudPubsub.topicMod.Topic {
   def this(pubsub: typings.googleCloudPubsub.pubsubMod.PubSub, name: String) = this()
   def this(pubsub: typings.googleCloudPubsub.pubsubMod.PubSub, name: String, options: PublishOptions) = this()

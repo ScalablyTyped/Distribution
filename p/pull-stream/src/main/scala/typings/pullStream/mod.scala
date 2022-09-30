@@ -11,7 +11,7 @@ object mod {
     */
   inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
   inline def apply(pullStreams: (PossibleSource[Any] | PossibleSink[Any] | (PossibleThrough[Any, Any]))*): Source[Any] | Sink[Any] | (Through_[Any, Any]) | Unit = ^.asInstanceOf[js.Dynamic].apply(pullStreams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Source[Any] | Sink[Any] | (Through_[Any, Any]) | Unit]
-  inline def apply[In](sink: PossibleSink[In]): Sink[In] = ^.asInstanceOf[js.Dynamic].apply(sink.asInstanceOf[js.Any]).asInstanceOf[Sink[In]]
+  inline def apply[Out](source: PossibleSource[Out]): Source[Out] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Source[Out]]
   inline def apply[InOut](source: PossibleSource[InOut], sink: PossibleSink[InOut]): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply[In, Out](source: PossibleSource[In], t1: PossibleThrough[In, Out], sink: PossibleSink[Out]): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply[In, Out](t1: Through_[In, Out]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].apply(t1.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]

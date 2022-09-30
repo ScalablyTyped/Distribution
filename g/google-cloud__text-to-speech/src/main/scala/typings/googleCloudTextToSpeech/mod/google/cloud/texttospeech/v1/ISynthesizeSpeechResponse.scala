@@ -1,6 +1,5 @@
 package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ISynthesizeSpeechResponse extends StObject {
   
   /** SynthesizeSpeechResponse audioContent */
-  var audioContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var audioContent: js.UndefOr[js.typedarray.Uint8Array | String | Null] = js.undefined
 }
 object ISynthesizeSpeechResponse {
   
@@ -20,7 +19,7 @@ object ISynthesizeSpeechResponse {
   
   extension [Self <: ISynthesizeSpeechResponse](x: Self) {
     
-    inline def setAudioContent(value: Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
+    inline def setAudioContent(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "audioContent", value.asInstanceOf[js.Any])
     
     inline def setAudioContentNull: Self = StObject.set(x, "audioContent", null)
     

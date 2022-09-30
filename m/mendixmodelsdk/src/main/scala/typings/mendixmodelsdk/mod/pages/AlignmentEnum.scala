@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.AlignmentEnum")
 @js.native
-class AlignmentEnum protected ()
+open class AlignmentEnum protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.AlignmentEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

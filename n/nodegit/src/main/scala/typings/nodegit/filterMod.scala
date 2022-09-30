@@ -3,8 +3,8 @@ package typings.nodegit
 import typings.node.fsMod.WriteStream
 import typings.nodegit.blobMod.Blob
 import typings.nodegit.bufMod.Buf
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,8 +48,8 @@ object filterMod {
     inline def unregister(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
     */
     trait FLAG extends StObject
     object FLAG {
@@ -60,8 +60,8 @@ object filterMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
     */
     trait MODE extends StObject
     object MODE {

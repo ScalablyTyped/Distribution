@@ -1,16 +1,14 @@
 package typings.dateFns.anon
 
-import typings.dateFns.dateFnsNumbers.`2`
-import typings.dateFns.dateFnsNumbers.`3`
+import typings.dateFns.dateFnsInts.`2`
+import typings.dateFns.dateFnsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FractionDigits extends StObject {
   
-  var fractionDigits: js.UndefOr[
-    typings.dateFns.dateFnsNumbers.`0` | typings.dateFns.dateFnsNumbers.`1` | `2` | `3`
-  ] = js.undefined
+  var fractionDigits: js.UndefOr[typings.dateFns.dateFnsInts.`0` | typings.dateFns.dateFnsInts.`1` | `2` | `3`] = js.undefined
 }
 object FractionDigits {
   
@@ -21,7 +19,7 @@ object FractionDigits {
   
   extension [Self <: FractionDigits](x: Self) {
     
-    inline def setFractionDigits(value: typings.dateFns.dateFnsNumbers.`0` | typings.dateFns.dateFnsNumbers.`1` | `2` | `3`): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
+    inline def setFractionDigits(value: typings.dateFns.dateFnsInts.`0` | typings.dateFns.dateFnsInts.`1` | `2` | `3`): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
     
     inline def setFractionDigitsUndefined: Self = StObject.set(x, "fractionDigits", js.undefined)
   }

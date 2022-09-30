@@ -17,28 +17,28 @@ object clientMod {
     
     var middlewareStack: MiddlewareStack[Input, Output]
     
-    def send[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] | Unit
-    def send[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration], options: Any): js.Promise[OutputType] | Unit
+    def send[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType]
+    def send[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration], options: Any): js.Promise[OutputType]
     def send[InputType /* <: Input */, OutputType /* <: Output */](
       command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration],
       options: Any,
       cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
-    ): js.Promise[OutputType] | Unit
+    ): Unit
     def send[InputType /* <: Input */, OutputType /* <: Output */](
       command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration],
       options: Unit,
       cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): js.Promise[OutputType] | Unit
     @JSName("send")
-    def send_InputType_InputOutputType_Output_Promise[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType]
+    def send_InputTypeOutputType_Union[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] | Unit
     @JSName("send")
-    def send_InputType_InputOutputType_Output_Promise[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration], options: Any): js.Promise[OutputType]
+    def send_InputTypeOutputType_Union[InputType /* <: Input */, OutputType /* <: Output */](command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration], options: Any): js.Promise[OutputType] | Unit
     @JSName("send")
-    def send_InputType_InputOutputType_Output_Unit[InputType /* <: Input */, OutputType /* <: Output */](
+    def send_InputTypeOutputType_Union[InputType /* <: Input */, OutputType /* <: Output */](
       command: Command[Input, InputType, Output, OutputType, ResolvedClientConfiguration],
       options: Any,
       cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
-    ): Unit
+    ): js.Promise[OutputType] | Unit
     @JSName("send")
     var send_Original: InvokeFunction[Input, Output, ResolvedClientConfiguration]
   }
@@ -72,16 +72,16 @@ object clientMod {
   @js.native
   trait InvokeFunction[InputTypes /* <: js.Object */, OutputTypes /* <: MetadataBearer */, ResolvedClientConfiguration] extends StObject {
     
-    def apply[InputType /* <: InputTypes */, OutputType /* <: OutputTypes */](command: Command[InputTypes, InputType, OutputTypes, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] | Unit = js.native
+    def apply[InputType /* <: InputTypes */, OutputType /* <: OutputTypes */](command: Command[InputTypes, InputType, OutputTypes, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] = js.native
     def apply[InputType /* <: InputTypes */, OutputType /* <: OutputTypes */](
       command: Command[InputTypes, InputType, OutputTypes, OutputType, ResolvedClientConfiguration],
       options: Any
-    ): js.Promise[OutputType] | Unit = js.native
+    ): js.Promise[OutputType] = js.native
     def apply[InputType /* <: InputTypes */, OutputType /* <: OutputTypes */](
       command: Command[InputTypes, InputType, OutputTypes, OutputType, ResolvedClientConfiguration],
       options: Any,
       cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
-    ): js.Promise[OutputType] | Unit = js.native
+    ): Unit = js.native
     def apply[InputType /* <: InputTypes */, OutputType /* <: OutputTypes */](
       command: Command[InputTypes, InputType, OutputTypes, OutputType, ResolvedClientConfiguration],
       options: Unit,

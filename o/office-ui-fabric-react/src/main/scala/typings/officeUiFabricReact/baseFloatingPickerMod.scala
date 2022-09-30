@@ -12,6 +12,7 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.MouseEvent
+import typings.std.PromiseLike
 import typings.std.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,7 +57,7 @@ object baseFloatingPickerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MBaseFloatingPicker(): Unit = js.native
     
-    /* protected */ var currentPromise: js.Thenable[js.Array[T]] = js.native
+    /* protected */ var currentPromise: PromiseLike[js.Array[T]] = js.native
     
     val currentSelectedSuggestionIndex: Double = js.native
     
@@ -90,7 +91,7 @@ object baseFloatingPickerMod {
     def updateSuggestions(suggestions: js.Array[T], forceUpdate: Boolean): Unit = js.native
     
     /* protected */ def updateSuggestionsList(suggestions: js.Array[T]): Unit = js.native
-    /* protected */ def updateSuggestionsList(suggestions: js.Thenable[js.Array[T]]): Unit = js.native
+    /* protected */ def updateSuggestionsList(suggestions: PromiseLike[js.Array[T]]): Unit = js.native
     
     /* protected */ def updateValue(updatedValue: String): Unit = js.native
   }

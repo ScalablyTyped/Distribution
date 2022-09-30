@@ -61,22 +61,20 @@ trait SystemPreferences
   ): this.type = js.native
   
   /**
-    * A `String` property that can be `dark`, `light` or `unknown`. It determines the
+    * A `string` property that can be `dark`, `light` or `unknown`. It determines the
     * macOS appearance setting for your application. This maps to values in:
     * NSApplication.appearance. Setting this will override the system default as well
     * as the value of `getEffectiveAppearance`.
     *
     * Possible values that can be set are `dark` and `light`, and possible return
     * values are `dark`, `light`, and `unknown`.
-    * 
-  This property is only available on macOS 10.14 Mojave or newer.
+    *
+    * This property is only available on macOS 10.14 Mojave or newer.
     *
     * @platform darwin
     */
   var appLevelAppearance: dark | light | unknown_ = js.native
   
-  @JSName("askForMediaAccess")
-  def askForMediaAccess_camera(mediaType: camera): js.Promise[Boolean] = js.native
   /**
     * A promise that resolves with `true` if consent was granted and `false` if it was
     * denied. If an invalid `mediaType` is passed, the promise will be rejected. If an
@@ -98,8 +96,7 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  @JSName("askForMediaAccess")
-  def askForMediaAccess_microphone(mediaType: microphone): js.Promise[Boolean] = js.native
+  def askForMediaAccess(mediaType: microphone | camera): js.Promise[Boolean] = js.native
   
   /**
     * whether or not this device has the ability to use Touch ID.
@@ -112,7 +109,7 @@ trait SystemPreferences
   def canPromptTouchID(): Boolean = js.native
   
   /**
-    * A `String` property that can be `dark`, `light` or `unknown`.
+    * A `string` property that can be `dark`, `light` or `unknown`.
     *
     * Returns the macOS appearance setting that is currently applied to your
     * application, maps to NSApplication.effectiveAppearance
@@ -123,23 +120,23 @@ trait SystemPreferences
   
   /**
     * The users current system wide accent color preference in RGBA hexadecimal form.
-    * 
-  This API is only available on macOS 10.14 Mojave or newer.
+    *
+    * This API is only available on macOS 10.14 Mojave or newer.
     *
     * @platform win32,darwin
     */
   def getAccentColor(): String = js.native
   
   /**
-    * * `shouldRenderRichAnimation` Boolean - Returns true if rich animations should
+    * * `shouldRenderRichAnimation` boolean - Returns true if rich animations should
     * be rendered. Looks at session type (e.g. remote desktop) and accessibility
     * settings to give guidance for heavy animations.
-    * * `scrollAnimationsEnabledBySystem` Boolean - Determines on a per-platform basis
+    * * `scrollAnimationsEnabledBySystem` boolean - Determines on a per-platform basis
     * whether scroll animations (e.g. produced by home/end key) should be enabled.
-    * * `prefersReducedMotion` Boolean - Determines whether the user desires reduced
+    * * `prefersReducedMotion` boolean - Determines whether the user desires reduced
     * motion based on platform APIs.
-    * 
-  Returns an object with system animation settings.
+    *
+    * Returns an object with system animation settings.
     */
   def getAnimationSettings(): AnimationSettings = js.native
   
@@ -166,7 +163,7 @@ trait SystemPreferences
     *
     * @platform win32,darwin
     */
-  def getColor(color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ js.Any): String = js.native
+  def getColor(color: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 62 */ Any): String = js.native
   
   /**
     * Can be `dark`, `light` or `unknown`.
@@ -178,8 +175,6 @@ trait SystemPreferences
     */
   def getEffectiveAppearance(): dark | light | unknown_ = js.native
   
-  @JSName("getMediaAccessStatus")
-  def getMediaAccessStatus_camera(mediaType: camera): `not-determined` | granted | denied | restricted | unknown_ = js.native
   /**
     * Can be `not-determined`, `granted`, `denied`, `restricted` or `unknown`.
     *
@@ -194,10 +189,7 @@ trait SystemPreferences
     *
     * @platform win32,darwin
     */
-  @JSName("getMediaAccessStatus")
-  def getMediaAccessStatus_microphone(mediaType: microphone): `not-determined` | granted | denied | restricted | unknown_ = js.native
-  @JSName("getMediaAccessStatus")
-  def getMediaAccessStatus_screen(mediaType: screen): `not-determined` | granted | denied | restricted | unknown_ = js.native
+  def getMediaAccessStatus(mediaType: microphone | camera | screen): `not-determined` | granted | denied | restricted | unknown_ = js.native
   
   /**
     * The standard system color formatted as `#RRGGBBAA`.
@@ -208,37 +200,8 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  @JSName("getSystemColor")
-  def getSystemColor_blue(color: blue): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_brown(color: brown): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_gray(color: gray): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_green(color: green): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_orange(color: orange): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_pink(color: pink): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_purple(color: purple): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_red(color: red): String = js.native
-  @JSName("getSystemColor")
-  def getSystemColor_yellow(color: yellow): String = js.native
+  def getSystemColor(color: blue | brown | gray | green | orange | pink | purple | red | yellow): String = js.native
   
-  @JSName("getUserDefault")
-  def getUserDefault_array(key: String, `type`: array): js.Any = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_boolean(key: String, `type`: boolean): js.Any = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_dictionary(key: String, `type`: dictionary): js.Any = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_double(key: String, `type`: double): js.Any = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_float(key: String, `type`: float): js.Any = js.native
-  @JSName("getUserDefault")
-  def getUserDefault_integer(key: String, `type`: integer): js.Any = js.native
   /**
     * The value of `key` in `NSUserDefaults`.
     *
@@ -255,9 +218,21 @@ trait SystemPreferences
     * @platform darwin
     */
   @JSName("getUserDefault")
-  def getUserDefault_string(key: String, `type`: string): js.Any = js.native
+  def getUserDefault_array(key: String, `type`: array): js.Array[Any] = js.native
   @JSName("getUserDefault")
-  def getUserDefault_url(key: String, `type`: url): js.Any = js.native
+  def getUserDefault_boolean(key: String, `type`: boolean): Boolean = js.native
+  @JSName("getUserDefault")
+  def getUserDefault_dictionary(key: String, `type`: dictionary): Record[String, Any] = js.native
+  @JSName("getUserDefault")
+  def getUserDefault_double(key: String, `type`: double): Double = js.native
+  @JSName("getUserDefault")
+  def getUserDefault_float(key: String, `type`: float): Double = js.native
+  @JSName("getUserDefault")
+  def getUserDefault_integer(key: String, `type`: integer): Double = js.native
+  @JSName("getUserDefault")
+  def getUserDefault_string(key: String, `type`: string): String = js.native
+  @JSName("getUserDefault")
+  def getUserDefault_url(key: String, `type`: url): String = js.native
   
   /**
     * `true` if DWM composition (Aero Glass) is enabled, and `false` otherwise.
@@ -272,12 +247,7 @@ trait SystemPreferences
   /**
     * Whether the system is in Dark Mode.
     *
-    * **Note:** On macOS 10.15 Catalina in order for this API to return the correct
-    * value when in the "automatic" dark mode setting you must either have
-    * `NSRequiresAquaSystemAppearance=false` in your `Info.plist` or be on Electron
-    * `>=7.0.0`.  See the dark mode guide for more information.
-    * 
-  **Deprecated:** Should use the new `nativeTheme.shouldUseDarkColors` API.
+    * **Deprecated:** Should use the new `nativeTheme.shouldUseDarkColors` API.
     *
     * @deprecated
     * @platform darwin,win32
@@ -377,7 +347,7 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  def postLocalNotification(event: String, userInfo: Record[String, js.Any]): Unit = js.native
+  def postLocalNotification(event: String, userInfo: Record[String, Any]): Unit = js.native
   
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
@@ -385,8 +355,8 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  def postNotification(event: String, userInfo: Record[String, js.Any]): Unit = js.native
-  def postNotification(event: String, userInfo: Record[String, js.Any], deliverImmediately: Boolean): Unit = js.native
+  def postNotification(event: String, userInfo: Record[String, Any]): Unit = js.native
+  def postNotification(event: String, userInfo: Record[String, Any], deliverImmediately: Boolean): Unit = js.native
   
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
@@ -394,7 +364,7 @@ trait SystemPreferences
     *
     * @platform darwin
     */
-  def postWorkspaceNotification(event: String, userInfo: Record[String, js.Any]): Unit = js.native
+  def postWorkspaceNotification(event: String, userInfo: Record[String, Any]): Unit = js.native
   
   /**
     * resolves if the user has successfully authenticated with Touch ID.
@@ -454,34 +424,32 @@ trait SystemPreferences
     * @platform darwin
     */
   def setAppLevelAppearance(): Unit = js.native
-  @JSName("setAppLevelAppearance")
-  def setAppLevelAppearance_dark(appearance: dark): Unit = js.native
-  @JSName("setAppLevelAppearance")
-  def setAppLevelAppearance_light(appearance: light): Unit = js.native
+  def setAppLevelAppearance(appearance: dark | light): Unit = js.native
   
-  @JSName("setUserDefault")
-  def setUserDefault_array(key: String, `type`: array, value: String): Unit = js.native
-  @JSName("setUserDefault")
-  def setUserDefault_boolean(key: String, `type`: boolean, value: String): Unit = js.native
-  @JSName("setUserDefault")
-  def setUserDefault_dictionary(key: String, `type`: dictionary, value: String): Unit = js.native
-  @JSName("setUserDefault")
-  def setUserDefault_double(key: String, `type`: double, value: String): Unit = js.native
-  @JSName("setUserDefault")
-  def setUserDefault_float(key: String, `type`: float, value: String): Unit = js.native
-  @JSName("setUserDefault")
-  def setUserDefault_integer(key: String, `type`: integer, value: String): Unit = js.native
   /**
     * Set the value of `key` in `NSUserDefaults`.
     *
     * Note that `type` should match actual type of `value`. An exception is thrown if
     * they don't.
-    * 
-  Some popular `key` and `type`s are:
-  * `ApplePressAndHoldEnabled`: `boolean`
+    *
+    * Some popular `key` and `type`s are:
+    *
+    * * `ApplePressAndHoldEnabled`: `boolean`
     *
     * @platform darwin
     */
+  @JSName("setUserDefault")
+  def setUserDefault_array(key: String, `type`: array, value: js.Array[Any]): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_boolean(key: String, `type`: boolean, value: Boolean): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_dictionary(key: String, `type`: dictionary, value: Record[String, Any]): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_double(key: String, `type`: double, value: Double): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_float(key: String, `type`: float, value: Double): Unit = js.native
+  @JSName("setUserDefault")
+  def setUserDefault_integer(key: String, `type`: integer, value: Double): Unit = js.native
   @JSName("setUserDefault")
   def setUserDefault_string(key: String, `type`: string, value: String): Unit = js.native
   @JSName("setUserDefault")
@@ -494,11 +462,18 @@ trait SystemPreferences
     * defaults. This is necessary for events such as
     * `NSUserDefaultsDidChangeNotification`.
     *
+    * If `event` is null, the `NSNotificationCenter` doesn’t use it as criteria for
+    * delivery to the observer. See docs for more information.
+    *
     * @platform darwin
     */
   def subscribeLocalNotification(
     event: String,
-    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, js.Any], /* object */ String, Unit]
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, Any], /* object */ String, Unit]
+  ): Double = js.native
+  def subscribeLocalNotification(
+    event: Null,
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, Any], /* object */ String, Unit]
   ): Double = js.native
   
   /**
@@ -521,24 +496,40 @@ trait SystemPreferences
     * * `AppleColorPreferencesChangedNotification`
     * * `AppleShowScrollBarsSettingChanged`
     *
+    * If `event` is null, the `NSDistributedNotificationCenter` doesn’t use it as
+    * criteria for delivery to the observer. See docs  for more information.
+    *
     * @platform darwin
     */
   def subscribeNotification(
     event: String,
-    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, js.Any], /* object */ String, Unit]
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, Any], /* object */ String, Unit]
+  ): Double = js.native
+  def subscribeNotification(
+    event: Null,
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, Any], /* object */ String, Unit]
   ): Double = js.native
   
   /**
+    * The ID of this subscription
+    *
     * Same as `subscribeNotification`, but uses
     * `NSWorkspace.sharedWorkspace.notificationCenter`. This is necessary for events
     * such as `NSWorkspaceDidActivateApplicationNotification`.
+    *
+    * If `event` is null, the `NSWorkspaceNotificationCenter` doesn’t use it as
+    * criteria for delivery to the observer. See docs for more information.
     *
     * @platform darwin
     */
   def subscribeWorkspaceNotification(
     event: String,
-    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, js.Any], /* object */ String, Unit]
-  ): Unit = js.native
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, Any], /* object */ String, Unit]
+  ): Double = js.native
+  def subscribeWorkspaceNotification(
+    event: Null,
+    callback: js.Function3[/* event */ String, /* userInfo */ Record[String, Any], /* object */ String, Unit]
+  ): Double = js.native
   
   /**
     * Same as `unsubscribeNotification`, but removes the subscriber from

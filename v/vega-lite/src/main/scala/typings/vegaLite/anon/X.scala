@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait X extends StObject {
   
-  val x: typings.vegaLite.vegaLiteNumbers.`1`
+  val x: typings.vegaLite.vegaLiteInts.`1`
   
-  val x2: typings.vegaLite.vegaLiteNumbers.`1`
+  val x2: typings.vegaLite.vegaLiteInts.`1`
   
-  val y: typings.vegaLite.vegaLiteNumbers.`1`
+  val y: typings.vegaLite.vegaLiteInts.`1`
   
-  val y2: typings.vegaLite.vegaLiteNumbers.`1`
+  val y2: typings.vegaLite.vegaLiteInts.`1`
 }
 object X {
   
@@ -23,12 +23,12 @@ object X {
   
   extension [Self <: X](x: Self) {
     
-    inline def setX(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setX2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+    inline def setX2(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
-    inline def setY(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    inline def setY2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.WebServiceCallAction")
 @js.native
-class WebServiceCallAction protected ()
+open class WebServiceCallAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.WebServiceCallAction {
   def this(
     model: AbstractModel,

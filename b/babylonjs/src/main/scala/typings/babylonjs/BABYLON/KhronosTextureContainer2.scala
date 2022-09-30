@@ -13,10 +13,7 @@ trait KhronosTextureContainer2 extends StObject {
   /* private */ var _engine: Any = js.native
   
   /**
-    * @param data
-    * @param internalTexture
-    * @param options
-    * @hidden
+    * @internal
     */
   def uploadAsync(data: js.typedarray.ArrayBufferView, internalTexture: InternalTexture): js.Promise[Unit] = js.native
   def uploadAsync(data: js.typedarray.ArrayBufferView, internalTexture: InternalTexture, options: Any): js.Promise[Unit] = js.native

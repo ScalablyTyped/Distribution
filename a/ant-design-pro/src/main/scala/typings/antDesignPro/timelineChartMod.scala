@@ -12,8 +12,7 @@ object timelineChartMod {
   
   @JSImport("ant-design-pro/lib/Charts/TimelineChart", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ITimelineChartProps, js.Any, js.Any]
+  open class default () extends Component[ITimelineChartProps, Any, Any]
   
   trait ITimelineChartProps extends StObject {
     
@@ -38,7 +37,7 @@ object timelineChartMod {
       
       inline def setData(value: js.Array[Y1]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Y1*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Y1*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -56,5 +55,5 @@ object timelineChartMod {
     }
   }
   
-  type TimelineChart = Component[ITimelineChartProps, js.Any, js.Any]
+  type TimelineChart = Component[ITimelineChartProps, Any, Any]
 }

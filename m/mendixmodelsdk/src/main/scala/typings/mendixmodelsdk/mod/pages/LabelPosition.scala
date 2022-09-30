@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.LabelPosition")
 @js.native
-class LabelPosition protected ()
+open class LabelPosition protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LabelPosition {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

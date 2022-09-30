@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new AcknowledgeRequest.
   * @param [properties] Properties to set
   */
-class AcknowledgeRequest ()
+open class AcknowledgeRequest ()
   extends StObject
      with IAcknowledgeRequest {
   def this(properties: IAcknowledgeRequest) = this()
@@ -33,7 +32,7 @@ class AcknowledgeRequest ()
     * Converts this AcknowledgeRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object AcknowledgeRequest {
   
@@ -50,6 +49,8 @@ object AcknowledgeRequest {
   inline def create(): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AcknowledgeRequest]
   inline def create(properties: IAcknowledgeRequest): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): AcknowledgeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AcknowledgeRequest]
   /**
     * Decodes an AcknowledgeRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object AcknowledgeRequest {
   /* static member */
   inline def decode(reader: Reader): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
   inline def decode(reader: Reader, length: Double): AcknowledgeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AcknowledgeRequest]
-  inline def decode(reader: Uint8Array): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
-  inline def decode(reader: Uint8Array, length: Double): AcknowledgeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AcknowledgeRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
   /**
     * Decodes an AcknowledgeRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object AcknowledgeRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
-  inline def decodeDelimited(reader: Uint8Array): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
   
   /**
     * Encodes the specified AcknowledgeRequest message. Does not implicitly {@link google.pubsub.v1.AcknowledgeRequest.verify|verify} messages.
@@ -101,7 +100,16 @@ object AcknowledgeRequest {
     * @returns AcknowledgeRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
+  
+  /**
+    * Gets the default type url for AcknowledgeRequest
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from an AcknowledgeRequest message. Also converts values to other types if specified.
@@ -110,8 +118,8 @@ object AcknowledgeRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: AcknowledgeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: AcknowledgeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: AcknowledgeRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: AcknowledgeRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an AcknowledgeRequest message.
@@ -119,5 +127,5 @@ object AcknowledgeRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/button-widgets relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.Button")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.Button")
 @js.native
 abstract class Button protected () extends ConditionallyVisibleWidget {
   def this(
@@ -43,18 +43,18 @@ abstract class Button protected () extends ConditionallyVisibleWidget {
 }
 object Button {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Button")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Button")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Button.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Button.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Button.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Button.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -2,7 +2,7 @@ package typings.baseui
 
 import typings.baseui.anon.FlexGridColumnCount
 import typings.baseui.anon.FlexGridColumnGap
-import typings.baseui.anon.Readonlyxstringanywidthca
+import typings.baseui.anon.Readonlyxstringanywidthst
 import typings.baseui.anon.`0`
 import typings.baseui.baseuiStrings.div
 import typings.baseui.blockTypesMod.Responsive
@@ -27,7 +27,7 @@ object flexGridItemMod {
   @js.native
   val default: FlexGridItemComponentType[div] = js.native
   
-  inline def flexGridItemMediaQueryStyle(has$themeColCountFlexGridColumnGapFlexGridRowGapItemIndexItemCount: FlexGridColumnCount): Readonlyxstringanywidthca = ^.asInstanceOf[js.Dynamic].applyDynamic("flexGridItemMediaQueryStyle")(has$themeColCountFlexGridColumnGapFlexGridRowGapItemIndexItemCount.asInstanceOf[js.Any]).asInstanceOf[Readonlyxstringanywidthca]
+  inline def flexGridItemMediaQueryStyle(has$themeColCountFlexGridColumnGapFlexGridRowGapItemIndexItemCount: FlexGridColumnCount): Readonlyxstringanywidthst = ^.asInstanceOf[js.Dynamic].applyDynamic("flexGridItemMediaQueryStyle")(has$themeColCountFlexGridColumnGapFlexGridRowGapItemIndexItemCount.asInstanceOf[js.Any]).asInstanceOf[Readonlyxstringanywidthst]
   
   inline def flexGridItemStyle(
     hasDollarflexGridColumnCountDollarflexGridColumnGapDollarflexGridRowGapDollarflexGridItemIndexDollarflexGridItemCountDollartheme: FlexGridColumnGap

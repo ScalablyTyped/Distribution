@@ -779,9 +779,9 @@ object global {
   @js.native
   val nova: Environment = js.native
   
-  inline def setInterval(handler: TimerHandler, timeout: Double, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
-  inline def setInterval(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setInterval(handler: TimerHandler, timeout: Double, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setInterval(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
   
-  inline def setTimeout(handler: TimerHandler, timeout: Double, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
-  inline def setTimeout(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setTimeout(handler: TimerHandler, timeout: Double, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+  inline def setTimeout(handler: TimerHandler, timeout: Unit, arguments: Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(arguments.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
 }

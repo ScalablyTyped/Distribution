@@ -35,14 +35,6 @@ object dayjsStrings {
   inline def D: D = "D".asInstanceOf[D]
   
   @js.native
-  sealed trait LeftparenthesisRightparenthesis extends StObject
-  inline def LeftparenthesisRightparenthesis: LeftparenthesisRightparenthesis = "()".asInstanceOf[LeftparenthesisRightparenthesis]
-  
-  @js.native
-  sealed trait `Leftparenthesis]` extends StObject
-  inline def `Leftparenthesis]`: `Leftparenthesis]` = "(]".asInstanceOf[`Leftparenthesis]`]
-  
-  @js.native
   sealed trait M
     extends StObject
        with DurationUnitType
@@ -67,10 +59,6 @@ object dayjsStrings {
        with QUnitType
        with typings.dayjs.esmMod.QUnitType
   inline def Q: Q = "Q".asInstanceOf[Q]
-  
-  @js.native
-  sealed trait `[Rightparenthesis` extends StObject
-  inline def `[Rightparenthesis`: `[Rightparenthesis` = "[)".asInstanceOf[`[Rightparenthesis`]
   
   @js.native
   sealed trait `[]` extends StObject

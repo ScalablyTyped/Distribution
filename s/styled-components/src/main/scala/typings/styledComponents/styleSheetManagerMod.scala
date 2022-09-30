@@ -7,6 +7,7 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.styledComponents.distTypesMod.Stringifier
 import typings.styledComponents.sheetMod.default
+import typings.stylis.mod.Middleware_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,11 +58,7 @@ object styleSheetManagerMod {
     
     var sheet: js.UndefOr[default] = js.undefined
     
-    var stylisPlugins: js.UndefOr[
-        js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stylis.Middleware */ Any
-        ]
-      ] = js.undefined
+    var stylisPlugins: js.UndefOr[js.Array[Middleware_]] = js.undefined
     
     var target: js.UndefOr[HTMLElement] = js.undefined
   }
@@ -90,17 +87,11 @@ object styleSheetManagerMod {
       
       inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
       
-      inline def setStylisPlugins(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stylis.Middleware */ Any
-            ]
-      ): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
+      inline def setStylisPlugins(value: js.Array[Middleware_]): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
       
       inline def setStylisPluginsUndefined: Self = StObject.set(x, "stylisPlugins", js.undefined)
       
-      inline def setStylisPluginsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify stylis.Middleware */ Any)*
-      ): Self = StObject.set(x, "stylisPlugins", js.Array(value*))
+      inline def setStylisPluginsVarargs(value: Middleware_ *): Self = StObject.set(x, "stylisPlugins", js.Array(value*))
       
       inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

@@ -19,20 +19,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(baseUrl: String, args: Options*): RequestFunction[ValidResponse] = ^.asInstanceOf[js.Dynamic].apply(List(baseUrl.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[ValidResponse]]
-  inline def apply(baseUrl: String, `type`: buffer, args: Options*): RequestFunction[Buffer | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply((List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RequestFunction[Buffer | js.typedarray.ArrayBuffer]]
+  inline def apply(baseUrl: String, args: Options*): RequestFunction[ValidResponse] = ^.asInstanceOf[js.Dynamic].apply(scala.List(baseUrl.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[ValidResponse]]
+  inline def apply(baseUrl: String, `type`: buffer, args: Options*): RequestFunction[Buffer | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply((scala.List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RequestFunction[Buffer | js.typedarray.ArrayBuffer]]
   // Method or url first
-  inline def apply(baseUrl: String, `type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply((List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RequestFunction[String]]
-  inline def apply(`type`: buffer, args: Options*): RequestFunction[Buffer | js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].apply(List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[Buffer | js.typedarray.ArrayBuffer]]
+  inline def apply(baseUrl: String, `type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply((scala.List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RequestFunction[String]]
+  inline def apply(`type`: buffer, args: Options*): RequestFunction[Buffer | js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].apply(scala.List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[Buffer | js.typedarray.ArrayBuffer]]
   // Type first
-  inline def apply(`type`: string, args: Options*): RequestFunction[String] = ^.asInstanceOf[js.Dynamic].apply(List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[String]]
+  inline def apply(`type`: string, args: Options*): RequestFunction[String] = ^.asInstanceOf[js.Dynamic].apply(scala.List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[String]]
   // tslint:disable-next-line no-unnecessary-generics
   inline def apply[T /* <: ValidResponse */](args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RequestFunction[T]]
   inline def apply[T /* <: Json */](baseUrl: String, `type`: json, args: Options*): // tslint:disable-next-line no-unnecessary-generics
-  RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply((List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply((scala.List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
   RequestFunction[T]]
   // tslint:disable-next-line no-unnecessary-generics
-  inline def apply[T /* <: Json */](`type`: json, args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[T]]
+  inline def apply[T /* <: Json */](`type`: json, args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(scala.List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[T]]
   
   @JSImport("bent", JSImport.Namespace)
   @js.native

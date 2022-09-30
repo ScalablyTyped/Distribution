@@ -41,4 +41,12 @@ trait CommandLine extends StObject {
     * Whether the command-line switch is present.
     */
   def hasSwitch(the_switch: String): Boolean = js.native
+  
+  /**
+    * Removes the specified switch from Chromium's command line.
+    *
+    * **Note:** This will not affect `process.argv`. The intended usage of this
+    * function is to control Chromium's behavior.
+    */
+  def removeSwitch(the_switch: String): Unit = js.native
 }

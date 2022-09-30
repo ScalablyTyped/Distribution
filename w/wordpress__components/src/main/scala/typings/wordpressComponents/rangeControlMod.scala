@@ -3,6 +3,7 @@ package typings.wordpressComponents
 import org.scalablytyped.runtime.Shortcut
 import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEventHandler
@@ -43,6 +44,7 @@ import typings.wordpressComponents.wordpressComponentsStrings.decimal
 import typings.wordpressComponents.wordpressComponentsStrings.descending
 import typings.wordpressComponents.wordpressComponentsStrings.dialog
 import typings.wordpressComponents.wordpressComponentsStrings.email
+import typings.wordpressComponents.wordpressComponentsStrings.environment
 import typings.wordpressComponents.wordpressComponentsStrings.execute
 import typings.wordpressComponents.wordpressComponentsStrings.grammar
 import typings.wordpressComponents.wordpressComponentsStrings.grid
@@ -73,6 +75,7 @@ import typings.wordpressComponents.wordpressComponentsStrings.text
 import typings.wordpressComponents.wordpressComponentsStrings.time
 import typings.wordpressComponents.wordpressComponentsStrings.tree
 import typings.wordpressComponents.wordpressComponentsStrings.url
+import typings.wordpressComponents.wordpressComponentsStrings.user
 import typings.wordpressComponents.wordpressComponentsStrings.vertical
 import typings.wordpressComponents.wordpressComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
@@ -132,11 +135,11 @@ object rangeControlMod {
       
       var `aria-activedescendant`: js.UndefOr[String] = js.native
       
-      var `aria-atomic`: js.UndefOr[Boolean] = js.native
+      var `aria-atomic`: js.UndefOr[Booleanish] = js.native
       
       var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
       
-      var `aria-busy`: js.UndefOr[Boolean] = js.native
+      var `aria-busy`: js.UndefOr[Booleanish] = js.native
       
       var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
       
@@ -154,21 +157,21 @@ object rangeControlMod {
       
       var `aria-details`: js.UndefOr[String] = js.native
       
-      var `aria-disabled`: js.UndefOr[Boolean] = js.native
+      var `aria-disabled`: js.UndefOr[Booleanish] = js.native
       
       var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
       
       var `aria-errormessage`: js.UndefOr[String] = js.native
       
-      var `aria-expanded`: js.UndefOr[Boolean] = js.native
+      var `aria-expanded`: js.UndefOr[Booleanish] = js.native
       
       var `aria-flowto`: js.UndefOr[String] = js.native
       
-      var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+      var `aria-grabbed`: js.UndefOr[Booleanish] = js.native
       
       var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
       
-      var `aria-hidden`: js.UndefOr[Boolean] = js.native
+      var `aria-hidden`: js.UndefOr[Booleanish] = js.native
       
       var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
       
@@ -182,11 +185,11 @@ object rangeControlMod {
       
       var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
       
-      var `aria-modal`: js.UndefOr[Boolean] = js.native
+      var `aria-modal`: js.UndefOr[Booleanish] = js.native
       
-      var `aria-multiline`: js.UndefOr[Boolean] = js.native
+      var `aria-multiline`: js.UndefOr[Booleanish] = js.native
       
-      var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+      var `aria-multiselectable`: js.UndefOr[Booleanish] = js.native
       
       var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
       
@@ -198,13 +201,13 @@ object rangeControlMod {
       
       var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
       
-      var `aria-readonly`: js.UndefOr[Boolean] = js.native
+      var `aria-readonly`: js.UndefOr[Booleanish] = js.native
       
       var `aria-relevant`: js.UndefOr[
             additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
           ] = js.native
       
-      var `aria-required`: js.UndefOr[Boolean] = js.native
+      var `aria-required`: js.UndefOr[Booleanish] = js.native
       
       var `aria-roledescription`: js.UndefOr[String] = js.native
       
@@ -214,7 +217,7 @@ object rangeControlMod {
       
       var `aria-rowspan`: js.UndefOr[Double] = js.native
       
-      var `aria-selected`: js.UndefOr[Boolean] = js.native
+      var `aria-selected`: js.UndefOr[Booleanish] = js.native
       
       var `aria-setsize`: js.UndefOr[Double] = js.native
       
@@ -250,7 +253,7 @@ object rangeControlMod {
         */
       var beforeIcon: js.UndefOr[Icon] = js.native
       
-      var capture: js.UndefOr[Boolean | String] = js.native
+      var capture: js.UndefOr[Boolean | user | environment] = js.native
       
       var cellPadding: js.UndefOr[Double | String] = js.native
       
@@ -311,7 +314,7 @@ object rangeControlMod {
       
       var disabled: js.UndefOr[Boolean] = js.native
       
-      var download: js.UndefOr[js.Any] = js.native
+      var download: js.UndefOr[Any] = js.native
       
       var draggable: js.UndefOr[Booleanish] = js.native
       
@@ -365,7 +368,7 @@ object rangeControlMod {
         */
       var initialPosition: js.UndefOr[Double] = js.native
       
-      var inlist: js.UndefOr[js.Any] = js.native
+      var inlist: js.UndefOr[Any] = js.native
       
       var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
       
@@ -643,7 +646,7 @@ object rangeControlMod {
       
       var reversed: js.UndefOr[Boolean] = js.native
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[AriaRole] = js.native
       
       var rowSpan: js.UndefOr[Double] = js.native
       

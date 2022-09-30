@@ -1,9 +1,9 @@
 package typings.guacamoleCommonJs
 
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`1`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`2`
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`3`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`1`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`2`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`3`
 import typings.guacamoleCommonJs.guacamoleCommonJsStrings._empty
 import typings.guacamoleCommonJs.statusMod.Status
 import typings.guacamoleCommonJs.tunnelMod.Tunnel.State
@@ -105,10 +105,10 @@ object tunnelMod {
     val INTERNAL_DATA_OPCODE: _empty = js.native
     
     /* Rewritten from type alias, can be one of: 
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`0`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`1`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`2`
-      - typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`3`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`0`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`1`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`2`
+      - typings.guacamoleCommonJs.guacamoleCommonJsInts.`3`
     */
     trait State extends StObject
     @JSImport("guacamole-common-js/lib/Tunnel", "Tunnel.State")

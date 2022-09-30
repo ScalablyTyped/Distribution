@@ -1,7 +1,7 @@
 package typings.activexExcel.Excel
 
 import typings.activexExcel.activexExcelBooleans.`true`
-import typings.activexExcel.activexExcelNumbers.`2`
+import typings.activexExcel.activexExcelInts.`2`
 import typings.activexExcel.activexExcelStrings.Everyone
 import typings.activexExcel.activexExcelStrings.`Everyone but me`
 import typings.activexOffice.Office.ByteArray

@@ -1,11 +1,6 @@
 package typings.wordpressBlocks.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.wordpressBlocks.anon.Default
-import typings.wordpressBlocks.anon.DefaultType
-import typings.wordpressBlocks.anon.Source
-import typings.wordpressBlocks.anon.Type
-import typings.wordpressBlocks.anon.`1`
 import typings.wordpressBlocks.wordpressBlocksStrings.array
 import typings.wordpressBlocks.wordpressBlocksStrings.html
 import typings.wordpressBlocks.wordpressBlocksStrings.li
@@ -20,11 +15,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AttributeSource {
   
-  type Attribute = typings.wordpressBlocks.anon.Attribute & (Default | Type | DefaultType)
+  /* Rewritten from type alias, can be one of: 
+    - typings.wordpressBlocks.anon.typebooleandefaultboolean
+    - typings.wordpressBlocks.anon.typenumberdefaultnumberun
+    - typings.wordpressBlocks.anon.typestringdefaultstringun
+  */
+  trait Attribute
+    extends StObject
+       with BlockAttribute[Any]
+  object Attribute {
+    
+    inline def typebooleandefaultboolean(attribute: String): typings.wordpressBlocks.anon.typebooleandefaultboolean = {
+      val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
+      __obj.updateDynamic("type")("boolean")
+      __obj.asInstanceOf[typings.wordpressBlocks.anon.typebooleandefaultboolean]
+    }
+    
+    inline def typenumberdefaultnumberun(attribute: String): typings.wordpressBlocks.anon.typenumberdefaultnumberun = {
+      val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
+      __obj.updateDynamic("type")("number")
+      __obj.asInstanceOf[typings.wordpressBlocks.anon.typenumberdefaultnumberun]
+    }
+    
+    inline def typestringdefaultstringun(attribute: String): typings.wordpressBlocks.anon.typestringdefaultstringun = {
+      val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
+      __obj.updateDynamic("type")("string")
+      __obj.asInstanceOf[typings.wordpressBlocks.anon.typestringdefaultstringun]
+    }
+  }
   
   trait Children
     extends StObject
-       with _BlockAttribute[js.Any] {
+       with BlockAttribute[Any] {
     
     var selector: js.UndefOr[String] = js.undefined
     
@@ -54,7 +76,7 @@ object AttributeSource {
   
   trait HTML
     extends StObject
-       with _BlockAttribute[js.Any] {
+       with BlockAttribute[Any] {
     
     var default: js.UndefOr[String] = js.undefined
     
@@ -96,7 +118,7 @@ object AttributeSource {
   
   trait Meta
     extends StObject
-       with _BlockAttribute[js.Any] {
+       with BlockAttribute[Any] {
     
     var default: js.UndefOr[String] = js.undefined
     
@@ -128,17 +150,31 @@ object AttributeSource {
     }
   }
   
-  type None = Source & (`1` | Default | Type | DefaultType)
+  /* Rewritten from type alias, can be one of: 
+    - typings.wordpressBlocks.anon.typearraydefaultArrayanyu
+    - typings.wordpressBlocks.anon.typeobjectdefaultobjectun
+    - typings.wordpressBlocks.anon.typebooleandefaultbooleanDefault
+    - typings.wordpressBlocks.anon.typenumberdefaultnumberunDefault
+    - typings.wordpressBlocks.anon.typestringdefaultstringunDefault
+    - typings.wordpressBlocks.wordpressBlocksStrings.array
+    - typings.wordpressBlocks.wordpressBlocksStrings.`object`
+    - typings.wordpressBlocks.wordpressBlocksStrings.boolean
+    - typings.wordpressBlocks.wordpressBlocksStrings.number
+    - typings.wordpressBlocks.wordpressBlocksStrings.string
+  */
+  trait None
+    extends StObject
+       with BlockAttribute[Any]
   
   trait Query[T]
     extends StObject
-       with _BlockAttribute[T] {
+       with BlockAttribute[T] {
     
-    var default: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var default: js.UndefOr[js.Array[Any]] = js.undefined
     
     var query: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any]
+      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[Any]
     
     var selector: String
     
@@ -151,7 +187,7 @@ object AttributeSource {
     inline def apply[T](
       query: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any],
+      */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[Any],
       selector: String
     ): Query[T] = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], source = "query")
@@ -161,16 +197,16 @@ object AttributeSource {
     
     extension [Self <: Query[?], T](x: Self & Query[T]) {
       
-      inline def setDefault(value: js.Array[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Array[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setDefaultVarargs(value: js.Any*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: Any*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setQuery(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-        */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[js.Any]
+        */ typings.wordpressBlocks.wordpressBlocksStrings.Query & TopLevel[Any]
       ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
@@ -183,7 +219,7 @@ object AttributeSource {
   
   trait Text
     extends StObject
-       with _BlockAttribute[js.Any] {
+       with BlockAttribute[Any] {
     
     var default: js.UndefOr[String] = js.undefined
     

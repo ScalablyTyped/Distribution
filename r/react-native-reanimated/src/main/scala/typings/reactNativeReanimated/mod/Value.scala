@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped string | number | boolean */ @JSImport("react-native-reanimated", "Value")
 @js.native
-class Value[T /* <: String | Double | Boolean */] () extends StObject
+open class Value[T /* <: String | Double | Boolean */] () extends StObject

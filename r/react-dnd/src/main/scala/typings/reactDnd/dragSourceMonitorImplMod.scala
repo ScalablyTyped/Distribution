@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dragSourceMonitorImplMod {
   
-  @JSImport("react-dnd/lib/common/DragSourceMonitorImpl", "DragSourceMonitorImpl")
+  @JSImport("react-dnd/dist/internals/DragSourceMonitorImpl", "DragSourceMonitorImpl")
   @js.native
-  class DragSourceMonitorImpl protected ()
+  open class DragSourceMonitorImpl protected ()
     extends StObject
-       with DragSourceMonitor {
+       with DragSourceMonitor[Any, Any] {
     def this(manager: DragDropManager) = this()
     
     def canDragSource(sourceId: Identifier): Boolean = js.native
@@ -25,7 +25,7 @@ object dragSourceMonitorImplMod {
     
     def getSourceId(): Identifier | Null = js.native
     
-    /* private */ var internalMonitor: js.Any = js.native
+    /* private */ var internalMonitor: Any = js.native
     
     def isDraggingSource(sourceId: Identifier): Boolean = js.native
     
@@ -34,7 +34,7 @@ object dragSourceMonitorImplMod {
     
     def isSourcePublic(): Boolean | Null = js.native
     
-    /* private */ var sourceId: js.Any = js.native
+    /* private */ var sourceId: Any = js.native
     
     def subscribeToOffsetChange(listener: Listener): Unsubscribe = js.native
   }

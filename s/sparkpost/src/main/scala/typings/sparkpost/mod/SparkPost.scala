@@ -5,7 +5,6 @@ import typings.sparkpost.anon.Create
 import typings.sparkpost.anon.Delete
 import typings.sparkpost.anon.Get
 import typings.sparkpost.anon.GetBatchStatus
-import typings.sparkpost.anon.List
 import typings.sparkpost.anon.Preview
 import typings.sparkpost.anon.Search
 import typings.sparkpost.anon.Send
@@ -45,7 +44,7 @@ trait SparkPost extends StObject {
   def request(options: Options): js.Promise[Response[Any]] = js.native
   def request(options: Options, callback: Callback[Any]): Unit = js.native
   
-  var sendingDomains: List = js.native
+  var sendingDomains: typings.sparkpost.anon.List = js.native
   
   var subaccounts: Update = js.native
   

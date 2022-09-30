@@ -1,8 +1,7 @@
 package typings.polished.anon
 
-import typings.polished.polishedNumbers.`0`
-import typings.polished.polishedNumbers.`1`
-import typings.polished.polishedStrings.Leftparenthesis
+import typings.polished.polishedInts.`0`
+import typings.polished.polishedInts.`1`
 import typings.polished.polishedStrings.prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +19,7 @@ trait FNotation extends StObject {
   
   var rightToLeft: `0`
   
-  var symbol: Leftparenthesis
+  var symbol: String
 }
 object FNotation {
   
@@ -45,6 +44,6 @@ object FNotation {
     
     inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: Leftparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

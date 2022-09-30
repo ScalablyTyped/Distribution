@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object versionMod {
   
-  @JSImport("mendixmodelsdk/dist/version", "SDK_VERSION")
+  @JSImport("mendixmodelsdk/src/version", "SDK_VERSION")
   @js.native
   val SDK_VERSION: String = js.native
 }

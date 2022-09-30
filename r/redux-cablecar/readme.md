@@ -10,10 +10,10 @@ Rails 6 ActionCable <-> Redux middleware
 | ------------------ | :-------------: |
 | Full name          | redux-cablecar |
 | Keywords           | cablecar, actioncable, rails, rails5, redux, redux-cablecar |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 24648 |
-| # stars            | 1 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 3879.0 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/ndhays/redux-cablecar#readme)

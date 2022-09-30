@@ -35,7 +35,7 @@ trait DocumentCreatedLoadOptions extends StObject {
   var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   
   /**
-    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]

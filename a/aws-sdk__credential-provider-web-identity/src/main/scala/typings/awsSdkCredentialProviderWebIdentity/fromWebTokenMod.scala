@@ -237,6 +237,6 @@ object fromWebTokenMod {
   }
   
   type LowerCaseKey[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T as '${Uncapitalize<string & K>}' ]: T[K]}
+  {[ K in keyof T as / * template literal string: ${Uncapitalize<string&K>} * / string ]: T[K]}
     */ typings.awsSdkCredentialProviderWebIdentity.awsSdkCredentialProviderWebIdentityStrings.LowerCaseKey & TopLevel[T]
 }

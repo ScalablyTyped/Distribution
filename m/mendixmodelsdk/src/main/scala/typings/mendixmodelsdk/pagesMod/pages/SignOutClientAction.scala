@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.1.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SignOutClientAction")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SignOutClientAction")
 @js.native
-class SignOutClientAction protected () extends ClientAction {
+open class SignOutClientAction protected () extends ClientAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,7 +31,7 @@ class SignOutClientAction protected () extends ClientAction {
 }
 object SignOutClientAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SignOutClientAction")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SignOutClientAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -231,13 +231,13 @@ object SignOutClientAction {
   inline def createInWidgetValueUnderAction(container: WidgetValue): SignOutClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SignOutClientAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SignOutClientAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SignOutClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SignOutClientAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SignOutClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

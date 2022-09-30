@@ -1,9 +1,6 @@
 package typings.dayjs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.dayjs.dayjsStrings.LeftparenthesisRightparenthesis
-import typings.dayjs.dayjsStrings.`Leftparenthesis]`
-import typings.dayjs.dayjsStrings.`[Rightparenthesis`
 import typings.dayjs.dayjsStrings.`[]`
 import typings.dayjs.esmMod.ConfigType
 import typings.dayjs.esmMod.OpUnitType
@@ -30,25 +27,10 @@ object isBetweenMod extends Shortcut {
     trait Dayjs extends StObject {
       
       def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-      def isBetween(
-        a: ConfigType,
-        b: ConfigType,
-        c: Null,
-        d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
-      ): Boolean = js.native
-      def isBetween(
-        a: ConfigType,
-        b: ConfigType,
-        c: Unit,
-        d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
-      ): Boolean = js.native
+      def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String | `[]`): Boolean = js.native
+      def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String | `[]`): Boolean = js.native
       def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
-      def isBetween(
-        a: ConfigType,
-        b: ConfigType,
-        c: OpUnitType,
-        d: LeftparenthesisRightparenthesis | `[]` | `[Rightparenthesis` | `Leftparenthesis]`
-      ): Boolean = js.native
+      def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String | `[]`): Boolean = js.native
     }
   }
 }

@@ -5,6 +5,7 @@ import typings.maximMazurokGapiClientGamesconfiguration.gapi.client.gamesconfigu
 import typings.maximMazurokGapiClientGamesconfiguration.gapi.client.gamesconfiguration.LeaderboardConfigurationsResource
 import typings.maximMazurokGapiClientGamesconfiguration.maximMazurokGapiClientGamesconfigurationStrings.gamesconfiguration
 import typings.maximMazurokGapiClientGamesconfiguration.maximMazurokGapiClientGamesconfigurationStrings.v1configuration
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +36,7 @@ object global {
       }
       
       /** Load Google Play Game Services Publishing API v1configuration */
-      inline def load(name: gamesconfiguration, version: v1configuration): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: gamesconfiguration, version: v1configuration): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: gamesconfiguration, version: v1configuration, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }

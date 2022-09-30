@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-diff" : "29.0.3"
+      "jest-diff" : "29.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-diff" : "29.0.3"
+      "jest-diff" : "29.1.2"
     }
   ],
   "compile-devDependencies" : [

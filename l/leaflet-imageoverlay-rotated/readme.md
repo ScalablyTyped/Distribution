@@ -10,10 +10,10 @@ Displays rotated/slanted image overlays in Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-imageoverlay-rotated |
 | Keywords           | leaflet |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 34350 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3824.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/leaflet-imageoverlay-rotated)

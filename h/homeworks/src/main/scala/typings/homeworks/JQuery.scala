@@ -35,7 +35,7 @@ trait JQuery extends StObject {
   /**
     * @since 1.0.0
     */
-  def bind(eventType: String, handler: js.Function1[/* repeated */ js.Any, Unit]): JQuery = js.native
+  def bind(eventType: String, handler: js.Function1[/* repeated */ Any, Unit]): JQuery = js.native
   
   /**
     * @since 1.0.0
@@ -71,9 +71,9 @@ trait JQuery extends StObject {
     */
   def modal(): JQuery = js.native
   def modal(method: String): JQuery = js.native
-  def modal(method: String, options: js.Any): JQuery = js.native
-  def modal(method: Unit, options: js.Any): JQuery = js.native
-  def modal(options: js.Any): JQuery = js.native
+  def modal(method: String, options: Any): JQuery = js.native
+  def modal(method: Unit, options: Any): JQuery = js.native
+  def modal(options: Any): JQuery = js.native
   
   /**
     * jQuery homeworks events
@@ -81,20 +81,17 @@ trait JQuery extends StObject {
   /**
     * @since 1.0.44
     */
-  def on(
-    event: StepMoveEventType | TabMoveEventType,
-    handler: EventHandlerBase[js.Any, StepEvent | TabEvent]
-  ): JQuery = js.native
+  def on(event: StepMoveEventType | TabMoveEventType, handler: EventHandlerBase[Any, StepEvent | TabEvent]): JQuery = js.native
   /**
     * @since 1.0.44
     */
-  def on(event: RippleStartEventType, handler: EventHandlerBase[js.Any, RippleEvent]): JQuery = js.native
+  def on(event: RippleStartEventType, handler: EventHandlerBase[Any, RippleEvent]): JQuery = js.native
   
   /**
     * @since 1.0.0
     */
   def ripple(): JQuery = js.native
-  def ripple(options: js.Any): JQuery = js.native
+  def ripple(options: Any): JQuery = js.native
   
   /**
     * @since 1.0.0

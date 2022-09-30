@@ -1,0 +1,61 @@
+package typings.tsToolbelt.anon
+
+import typings.tsToolbelt.dropMod.DropBack
+import typings.tsToolbelt.iterationMod.Iteration
+import typings.tsToolbelt.prependMod.Prepend
+import typings.tsToolbelt.prevMod.Prev
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait `0DropBack`[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */] extends StObject {
+  
+  var `0`: DropBack[
+    L, 
+    N, 
+    Prev[I], 
+    Prepend[
+      LN, 
+      /* import warning: importer.ImportType#apply Failed type conversion: L[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any
+    ]
+  ]
+  
+  var `1`: LN
+}
+object `0DropBack` {
+  
+  inline def apply[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](
+    `0`: DropBack[
+      L, 
+      N, 
+      Prev[I], 
+      Prepend[
+        LN, 
+        /* import warning: importer.ImportType#apply Failed type conversion: L[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any
+      ]
+    ],
+    `1`: LN
+  ): `0DropBack`[L, N, I, LN] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`0DropBack`[L, N, I, LN]]
+  }
+  
+  extension [Self <: `0DropBack`[?, ?, ?, ?], L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](x: Self & (`0DropBack`[L, N, I, LN])) {
+    
+    inline def set0(
+      value: DropBack[
+          L, 
+          N, 
+          Prev[I], 
+          Prepend[
+            LN, 
+            /* import warning: importer.ImportType#apply Failed type conversion: L[ts-toolbelt.ts-toolbelt/out/Iteration/Pos.Pos<I>] */ js.Any
+          ]
+        ]
+    ): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    
+    inline def set1(value: LN): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+  }
+}

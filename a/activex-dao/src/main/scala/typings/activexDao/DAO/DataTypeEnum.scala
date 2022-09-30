@@ -1,70 +1,70 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`101`
-import typings.activexDao.activexDaoNumbers.`102`
-import typings.activexDao.activexDaoNumbers.`103`
-import typings.activexDao.activexDaoNumbers.`104`
-import typings.activexDao.activexDaoNumbers.`105`
-import typings.activexDao.activexDaoNumbers.`106`
-import typings.activexDao.activexDaoNumbers.`107`
-import typings.activexDao.activexDaoNumbers.`108`
-import typings.activexDao.activexDaoNumbers.`109`
-import typings.activexDao.activexDaoNumbers.`10`
-import typings.activexDao.activexDaoNumbers.`11`
-import typings.activexDao.activexDaoNumbers.`12`
-import typings.activexDao.activexDaoNumbers.`15`
-import typings.activexDao.activexDaoNumbers.`16`
-import typings.activexDao.activexDaoNumbers.`17`
-import typings.activexDao.activexDaoNumbers.`18`
-import typings.activexDao.activexDaoNumbers.`19`
-import typings.activexDao.activexDaoNumbers.`1`
-import typings.activexDao.activexDaoNumbers.`20`
-import typings.activexDao.activexDaoNumbers.`21`
-import typings.activexDao.activexDaoNumbers.`22`
-import typings.activexDao.activexDaoNumbers.`23`
-import typings.activexDao.activexDaoNumbers.`2`
-import typings.activexDao.activexDaoNumbers.`3`
-import typings.activexDao.activexDaoNumbers.`4`
-import typings.activexDao.activexDaoNumbers.`5`
-import typings.activexDao.activexDaoNumbers.`6`
-import typings.activexDao.activexDaoNumbers.`7`
-import typings.activexDao.activexDaoNumbers.`8`
-import typings.activexDao.activexDaoNumbers.`9`
+import typings.activexDao.activexDaoInts.`101`
+import typings.activexDao.activexDaoInts.`102`
+import typings.activexDao.activexDaoInts.`103`
+import typings.activexDao.activexDaoInts.`104`
+import typings.activexDao.activexDaoInts.`105`
+import typings.activexDao.activexDaoInts.`106`
+import typings.activexDao.activexDaoInts.`107`
+import typings.activexDao.activexDaoInts.`108`
+import typings.activexDao.activexDaoInts.`109`
+import typings.activexDao.activexDaoInts.`10`
+import typings.activexDao.activexDaoInts.`11`
+import typings.activexDao.activexDaoInts.`12`
+import typings.activexDao.activexDaoInts.`15`
+import typings.activexDao.activexDaoInts.`16`
+import typings.activexDao.activexDaoInts.`17`
+import typings.activexDao.activexDaoInts.`18`
+import typings.activexDao.activexDaoInts.`19`
+import typings.activexDao.activexDaoInts.`1`
+import typings.activexDao.activexDaoInts.`20`
+import typings.activexDao.activexDaoInts.`21`
+import typings.activexDao.activexDaoInts.`22`
+import typings.activexDao.activexDaoInts.`23`
+import typings.activexDao.activexDaoInts.`2`
+import typings.activexDao.activexDaoInts.`3`
+import typings.activexDao.activexDaoInts.`4`
+import typings.activexDao.activexDaoInts.`5`
+import typings.activexDao.activexDaoInts.`6`
+import typings.activexDao.activexDaoInts.`7`
+import typings.activexDao.activexDaoInts.`8`
+import typings.activexDao.activexDaoInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`101`
-  - typings.activexDao.activexDaoNumbers.`16`
-  - typings.activexDao.activexDaoNumbers.`9`
-  - typings.activexDao.activexDaoNumbers.`1`
-  - typings.activexDao.activexDaoNumbers.`2`
-  - typings.activexDao.activexDaoNumbers.`18`
-  - typings.activexDao.activexDaoNumbers.`102`
-  - typings.activexDao.activexDaoNumbers.`108`
-  - typings.activexDao.activexDaoNumbers.`106`
-  - typings.activexDao.activexDaoNumbers.`107`
-  - typings.activexDao.activexDaoNumbers.`103`
-  - typings.activexDao.activexDaoNumbers.`104`
-  - typings.activexDao.activexDaoNumbers.`105`
-  - typings.activexDao.activexDaoNumbers.`109`
-  - typings.activexDao.activexDaoNumbers.`5`
-  - typings.activexDao.activexDaoNumbers.`8`
-  - typings.activexDao.activexDaoNumbers.`20`
-  - typings.activexDao.activexDaoNumbers.`7`
-  - typings.activexDao.activexDaoNumbers.`21`
-  - typings.activexDao.activexDaoNumbers.`15`
-  - typings.activexDao.activexDaoNumbers.`3`
-  - typings.activexDao.activexDaoNumbers.`4`
-  - typings.activexDao.activexDaoNumbers.`11`
-  - typings.activexDao.activexDaoNumbers.`12`
-  - typings.activexDao.activexDaoNumbers.`19`
-  - typings.activexDao.activexDaoNumbers.`6`
-  - typings.activexDao.activexDaoNumbers.`10`
-  - typings.activexDao.activexDaoNumbers.`22`
-  - typings.activexDao.activexDaoNumbers.`23`
-  - typings.activexDao.activexDaoNumbers.`17`
+  - typings.activexDao.activexDaoInts.`101`
+  - typings.activexDao.activexDaoInts.`16`
+  - typings.activexDao.activexDaoInts.`9`
+  - typings.activexDao.activexDaoInts.`1`
+  - typings.activexDao.activexDaoInts.`2`
+  - typings.activexDao.activexDaoInts.`18`
+  - typings.activexDao.activexDaoInts.`102`
+  - typings.activexDao.activexDaoInts.`108`
+  - typings.activexDao.activexDaoInts.`106`
+  - typings.activexDao.activexDaoInts.`107`
+  - typings.activexDao.activexDaoInts.`103`
+  - typings.activexDao.activexDaoInts.`104`
+  - typings.activexDao.activexDaoInts.`105`
+  - typings.activexDao.activexDaoInts.`109`
+  - typings.activexDao.activexDaoInts.`5`
+  - typings.activexDao.activexDaoInts.`8`
+  - typings.activexDao.activexDaoInts.`20`
+  - typings.activexDao.activexDaoInts.`7`
+  - typings.activexDao.activexDaoInts.`21`
+  - typings.activexDao.activexDaoInts.`15`
+  - typings.activexDao.activexDaoInts.`3`
+  - typings.activexDao.activexDaoInts.`4`
+  - typings.activexDao.activexDaoInts.`11`
+  - typings.activexDao.activexDaoInts.`12`
+  - typings.activexDao.activexDaoInts.`19`
+  - typings.activexDao.activexDaoInts.`6`
+  - typings.activexDao.activexDaoInts.`10`
+  - typings.activexDao.activexDaoInts.`22`
+  - typings.activexDao.activexDaoInts.`23`
+  - typings.activexDao.activexDaoInts.`17`
 */
 trait DataTypeEnum extends StObject
 object DataTypeEnum {

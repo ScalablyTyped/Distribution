@@ -126,15 +126,15 @@ object mod extends Shortcut {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.lottieWeb.lottieWebNumbers.`1`
-    - typings.lottieWeb.lottieWebNumbers.`-1`
+    - typings.lottieWeb.lottieWebInts.`1`
+    - typings.lottieWeb.lottieWebInts.`-1`
   */
   trait AnimationDirection extends StObject
   object AnimationDirection {
     
-    inline def `-1`: typings.lottieWeb.lottieWebNumbers.`-1` = -1.asInstanceOf[typings.lottieWeb.lottieWebNumbers.`-1`]
+    inline def `-1`: typings.lottieWeb.lottieWebInts.`-1` = -1.asInstanceOf[typings.lottieWeb.lottieWebInts.`-1`]
     
-    inline def `1`: typings.lottieWeb.lottieWebNumbers.`1` = 1.asInstanceOf[typings.lottieWeb.lottieWebNumbers.`1`]
+    inline def `1`: typings.lottieWeb.lottieWebInts.`1` = 1.asInstanceOf[typings.lottieWeb.lottieWebInts.`1`]
   }
   
   type AnimationEventCallback[T] = js.Function1[/* args */ T, Unit]

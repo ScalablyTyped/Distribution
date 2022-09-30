@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.INumericAttributeTypeBase because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NumericAttributeTypeBase")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.INumericAttributeTypeBase because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.NumericAttributeTypeBase")
 @js.native
 abstract class NumericAttributeTypeBase protected () extends AttributeType {
   def this(
@@ -40,18 +40,18 @@ abstract class NumericAttributeTypeBase protected () extends AttributeType {
 }
 object NumericAttributeTypeBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NumericAttributeTypeBase")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.NumericAttributeTypeBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NumericAttributeTypeBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.NumericAttributeTypeBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.NumericAttributeTypeBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.NumericAttributeTypeBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

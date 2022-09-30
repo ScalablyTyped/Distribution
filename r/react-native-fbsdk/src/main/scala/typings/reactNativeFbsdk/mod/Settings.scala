@@ -26,5 +26,5 @@ object Settings {
   /**
     * Set data processing options
     */
-  inline def setDataProcessingOptions_LDU(options: js.Array[String | LDU], args: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDataProcessingOptions")(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def setDataProcessingOptions_LDU(options: js.Array[String | LDU], args: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDataProcessingOptions")(scala.List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 }

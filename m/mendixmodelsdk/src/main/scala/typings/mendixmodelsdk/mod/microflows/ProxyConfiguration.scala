@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration")
 @js.native
-class ProxyConfiguration protected ()
+open class ProxyConfiguration protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ProxyConfiguration {
   def this(
     model: AbstractModel,

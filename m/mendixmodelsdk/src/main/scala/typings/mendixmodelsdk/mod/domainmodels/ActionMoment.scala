@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.ActionMoment")
 @js.native
-class ActionMoment protected ()
+open class ActionMoment protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.ActionMoment {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

@@ -1,6 +1,6 @@
 package typings.tokeyCssSelectorParser
 
-import typings.tokeyCssSelectorParser.tokenizerMod.Delimiters
+import typings.tokeyCssSelectorParser.tokenizerMod._Delimiters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,37 +10,37 @@ object tokeyCssSelectorParserStrings {
   @js.native
   sealed trait Ampersand
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   
   @js.native
   sealed trait Asterisk
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait Colon
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Colon: Colon = ":".asInstanceOf[Colon]
   
   @js.native
   sealed trait Comma
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Comma: Comma = ",".asInstanceOf[Comma]
   
   @js.native
   sealed trait Dot
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
   sealed trait Greaterthansign
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
@@ -50,61 +50,49 @@ object tokeyCssSelectorParserStrings {
   @js.native
   sealed trait Leftcurlybracket
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
-  
-  @js.native
-  sealed trait Leftparenthesis
-    extends StObject
-       with Delimiters
-  inline def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   
   @js.native
   sealed trait Numbersign
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   
   @js.native
   sealed trait Plussign
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
   sealed trait Rightcurlybracket
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
-  
-  @js.native
-  sealed trait Rightparenthesis
-    extends StObject
-       with Delimiters
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   
   @js.native
   sealed trait Tilde
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
   sealed trait Verticalline
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   
   @js.native
   sealed trait `[`
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def `[`: `[` = "[".asInstanceOf[`[`]
   
   @js.native
   sealed trait `]`
     extends StObject
-       with Delimiters
+       with _Delimiters
   inline def `]`: `]` = "]".asInstanceOf[`]`]
   
   @js.native
@@ -130,10 +118,6 @@ object tokeyCssSelectorParserStrings {
   @js.native
   sealed trait compound_selector extends StObject
   inline def compound_selector: compound_selector = "compound_selector".asInstanceOf[compound_selector]
-  
-  @js.native
-  sealed trait dash extends StObject
-  inline def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
   sealed trait id extends StObject
@@ -174,14 +158,6 @@ object tokeyCssSelectorParserStrings {
   @js.native
   sealed trait nth_step extends StObject
   inline def nth_step: nth_step = "nth_step".asInstanceOf[nth_step]
-  
-  @js.native
-  sealed trait of extends StObject
-  inline def of: of = "of".asInstanceOf[of]
-  
-  @js.native
-  sealed trait offset extends StObject
-  inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
   sealed trait pseudo_class extends StObject

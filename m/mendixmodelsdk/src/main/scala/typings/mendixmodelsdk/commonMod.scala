@@ -47,7 +47,7 @@ object commonMod {
     /**
       * Callback interface returning an error at most.
       */
-    type IErrorCallback = js.Function1[/* err */ js.Any, Unit]
+    type IErrorCallback = js.Function1[/* err */ Any, Unit]
     
     /**
       * Representation of a point.

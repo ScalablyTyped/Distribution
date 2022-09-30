@@ -254,6 +254,10 @@ object grommetStrings {
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
+  sealed trait anywhere extends StObject
+  inline def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
+  
+  @js.native
   sealed trait area
     extends StObject
        with _PolymorphicType

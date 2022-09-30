@@ -12,7 +12,7 @@ trait Filters extends StObject {
   var extendedKeyUsage: js.UndefOr[ExtendedKeyUsageFilterList] = js.undefined
   
   /**
-    * Specify one or more algorithms that can be used to generate key pairs. Default filtering returns only RSA_1024 and RSA_2048 certificates that have at least one domain. To return other certificate types, provide the desired type signatures in a comma-separated list. For example, "keyTypes": ["RSA_2048,RSA_4096"] returns both RSA_2048 and RSA_4096 certificates.
+    * Specify one or more algorithms that can be used to generate key pairs. Default filtering returns only RSA_1024 and RSA_2048 certificates that have at least one domain. To return other certificate types, provide the desired type signatures in a comma-separated list. For example, "keyTypes": ["RSA_2048","RSA_4096"] returns both RSA_2048 and RSA_4096 certificates.
     */
   var keyTypes: js.UndefOr[KeyAlgorithmList] = js.undefined
   

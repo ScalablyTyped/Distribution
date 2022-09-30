@@ -1,7 +1,7 @@
 
 # Scala.js typings for wix-ui-test-utils
 
-Typings are for version 1.0.177
+Typings are for version 1.0.191
 
 ## Library description:
 > A common test utils used within the different `wix-ui` packages
@@ -10,15 +10,12 @@ Typings are for version 1.0.177
 | ------------------ | :-------------: |
 | Full name          | wix-ui-test-utils |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 3 |
-| # downloads        | 48231 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 3980.3333333333335 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/wix/wix-ui#readme)
-- [Bugs](https://github.com/wix/wix-ui/issues)
-- [Repository](https://github.com/wix/wix-ui)
 - [Npm](https://www.npmjs.com/package/wix-ui-test-utils)
     
 

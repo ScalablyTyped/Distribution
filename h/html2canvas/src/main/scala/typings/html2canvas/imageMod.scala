@@ -1,9 +1,9 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`3`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`3`
 import typings.html2canvas.itypedescriptorMod.ITypeDescriptor
 import typings.html2canvas.lengthPercentageMod.LengthPercentage
 import typings.html2canvas.parserMod.CSSValue
@@ -29,9 +29,9 @@ object imageMod {
   inline def isSupportedImage(value: CSSValue): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedImage")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
   */
   trait CSSImageType extends StObject
   object CSSImageType {
@@ -69,10 +69,10 @@ object imageMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`3`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`3`
   */
   trait CSSRadialExtent extends StObject
   object CSSRadialExtent {
@@ -129,8 +129,8 @@ object imageMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
   */
   trait CSSRadialShape extends StObject
   object CSSRadialShape {

@@ -16,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @ignore
   *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.NoVariableRef")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "expressions.NoVariableRef")
 @js.native
-class NoVariableRef protected ()
+open class NoVariableRef protected ()
   extends typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef {
   def this(
     model: AbstractModel,
@@ -33,7 +34,7 @@ class NoVariableRef protected ()
 }
 object NoVariableRef {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.NoVariableRef")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "expressions.NoVariableRef")
   @js.native
   val ^ : js.Any = js.native
   
@@ -51,19 +52,19 @@ object NoVariableRef {
     * of the parent VariableRefExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression): typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.expressionsMod.expressions.NoVariableRef]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.NoVariableRef.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "expressions.NoVariableRef.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.NoVariableRef.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "expressions.NoVariableRef.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

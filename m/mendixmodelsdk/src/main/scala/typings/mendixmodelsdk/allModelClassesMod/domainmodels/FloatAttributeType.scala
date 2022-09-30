@@ -13,11 +13,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.1.0: deleted
   * In version 6.0.0: deprecated
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.FloatAttributeType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.FloatAttributeType")
 @js.native
-class FloatAttributeType protected ()
+open class FloatAttributeType protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.FloatAttributeType {
   def this(
     model: AbstractModel,
@@ -30,7 +31,7 @@ class FloatAttributeType protected ()
 }
 object FloatAttributeType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.FloatAttributeType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.FloatAttributeType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,6 +58,9 @@ object FloatAttributeType {
     * Creates and returns a new FloatAttributeType instance in the SDK and on the server.
     * The new FloatAttributeType will be automatically stored in the 'type' property
     * of the parent Attribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.0.5
     */
   /* static member */
   inline def createInAttributeUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.FloatAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.FloatAttributeType]
@@ -67,7 +71,7 @@ object FloatAttributeType {
     * of the parent EntityKeyPart element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.9.0 to 9.0.5
     */
   /* static member */
   inline def createInEntityKeyPartUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.FloatAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.FloatAttributeType]
@@ -78,19 +82,19 @@ object FloatAttributeType {
     * of the parent rest.ODataKeyPart element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.9.0 and higher
+    *  8.9.0 to 9.0.5
     */
   /* static member */
   inline def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.FloatAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.FloatAttributeType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.FloatAttributeType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.FloatAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.FloatAttributeType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.FloatAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

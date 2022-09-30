@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.PasswordTextBox")
 @js.native
-class PasswordTextBox protected ()
+open class PasswordTextBox protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.PasswordTextBox {
   def this(
     model: AbstractModel,

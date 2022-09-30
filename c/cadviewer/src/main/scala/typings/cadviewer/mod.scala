@@ -1,7 +1,7 @@
 package typings.cadviewer
 
-import typings.cadviewer.cadviewerNumbers.`-1`
-import typings.cadviewer.cadviewerNumbers.`1`
+import typings.cadviewer.cadviewerInts.`-1`
+import typings.cadviewer.cadviewerInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

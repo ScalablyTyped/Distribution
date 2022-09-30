@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-sdk-api-gateway
 
-Typings are for version 3.171.0
+Typings are for version 3.178.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-sdk-api-gateway/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-sdk-api-gateway) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-sdk-api-gateway.svg)](http

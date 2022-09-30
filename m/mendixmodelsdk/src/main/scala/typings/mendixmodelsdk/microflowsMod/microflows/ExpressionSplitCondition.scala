@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExpressionSplitCondition")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExpressionSplitCondition")
 @js.native
-class ExpressionSplitCondition protected () extends SplitCondition {
+open class ExpressionSplitCondition protected () extends SplitCondition {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,6 +34,7 @@ class ExpressionSplitCondition protected () extends SplitCondition {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def expressionModel: Expression = js.native
@@ -43,7 +44,7 @@ class ExpressionSplitCondition protected () extends SplitCondition {
 }
 object ExpressionSplitCondition {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExpressionSplitCondition")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExpressionSplitCondition")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +65,13 @@ object ExpressionSplitCondition {
   inline def createIn(container: ExclusiveSplit): ExpressionSplitCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExpressionSplitCondition]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExpressionSplitCondition.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExpressionSplitCondition.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExpressionSplitCondition.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.ExpressionSplitCondition.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

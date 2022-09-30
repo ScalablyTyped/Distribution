@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SignOutClientAction")
 @js.native
-class SignOutClientAction protected ()
+open class SignOutClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SignOutClientAction {
   def this(
     model: AbstractModel,

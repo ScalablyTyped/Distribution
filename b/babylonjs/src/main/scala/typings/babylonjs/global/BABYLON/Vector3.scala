@@ -449,6 +449,27 @@ object Vector3 {
   inline def One(): typings.babylonjs.BABYLON.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[typings.babylonjs.BABYLON.Vector3]
   
   /**
+    * Gets the rotation that aligns the roll axis (Y) to the line joining the start point to the target point
+    * @param start the starting point
+    * @param target the target point
+    * @returns the rotation in the form (pitch, yaw, 0)
+    */
+  inline def PitchYawRollToMoveBetweenPoints(start: typings.babylonjs.BABYLON.Vector3, target: typings.babylonjs.BABYLON.Vector3): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("PitchYawRollToMoveBetweenPoints")(start.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
+  
+  /**
+    * Gets the rotation that aligns the roll axis (Y) to the line joining the start point to the target point and stores it in the ref Vector3
+    * @param start the starting point
+    * @param target the target point
+    * @param ref the vector3 to store the result
+    * @returns ref in the form (pitch, yaw, 0)
+    */
+  inline def PitchYawRollToMoveBetweenPointsToRef(
+    start: typings.babylonjs.BABYLON.Vector3,
+    target: typings.babylonjs.BABYLON.Vector3,
+    ref: typings.babylonjs.BABYLON.Vector3
+  ): typings.babylonjs.BABYLON.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("PitchYawRollToMoveBetweenPointsToRef")(start.asInstanceOf[js.Any], target.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector3]
+  
+  /**
     * Project a Vector3 onto screen space
     * Example Playground https://playground.babylonjs.com/#R1F8YU#101
     * @param vector defines the Vector3 to project
@@ -791,10 +812,7 @@ object Vector3 {
   inline def _RightReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RightReadOnly")(x.asInstanceOf[js.Any])
   
   /**
-    * @param source
-    * @param matrix
-    * @param result
-    * @hidden
+    * @internal
     */
   inline def _UnprojectFromInvertedMatrixToRef(
     source: DeepImmutable[typings.babylonjs.BABYLON.Vector3],

@@ -1,221 +1,218 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.geojson.mod.Feature
+import typings.geojson.mod.GeoJsonObject
+import typings.geojson.mod.GeometryObject
+import typings.geojson.mod.LineString
+import typings.geojson.mod.MultiLineString
+import typings.leaflet.anon.Active
+import typings.leaflet.anon.Alt
+import typings.leaflet.anon.X
+import typings.leaflet.leafletStrings.center
+import typings.leaflet.mod.^
+import typings.std.HTMLElement
+import typings.std.HTMLVideoElement
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def bounds(points: js.Array[typings.leaflet.mod.Point_]): typings.leaflet.mod.Bounds_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(points.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Bounds_]
-inline def bounds(points: typings.leaflet.mod.BoundsLiteral): typings.leaflet.mod.Bounds_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(points.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Bounds_]
-inline def bounds(topLeft: typings.leaflet.mod.PointExpression, bottomRight: typings.leaflet.mod.PointExpression): typings.leaflet.mod.Bounds_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Bounds_]
+inline def Mixin: MixinType = ^.asInstanceOf[js.Dynamic].selectDynamic("Mixin").asInstanceOf[MixinType]
 
-inline def canvas(): typings.leaflet.mod.Canvas_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("canvas")().asInstanceOf[typings.leaflet.mod.Canvas_]
-inline def canvas(options: typings.leaflet.mod.RendererOptions): typings.leaflet.mod.Canvas_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Canvas_]
+inline def bind: js.Function2[
+/* fn */ js.Function1[/* repeated */ Any, Unit], 
+/* repeated */ Any, 
+js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].selectDynamic("bind").asInstanceOf[js.Function2[
+/* fn */ js.Function1[/* repeated */ Any, Unit], 
+/* repeated */ Any, 
+js.Function0[Unit]]]
 
-inline def circle(latlng: typings.leaflet.mod.LatLngExpression): typings.leaflet.mod.Circle_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Circle_[js.Any]]
-inline def circle(latlng: typings.leaflet.mod.LatLngExpression, options: typings.leaflet.mod.CircleMarkerOptions): typings.leaflet.mod.Circle_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Circle_[js.Any]]
-inline def circle(latlng: typings.leaflet.mod.LatLngExpression, radius: scala.Double): typings.leaflet.mod.Circle_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Circle_[js.Any]]
-inline def circle(
-  latlng: typings.leaflet.mod.LatLngExpression,
-  radius: scala.Double,
-  options: typings.leaflet.mod.CircleMarkerOptions
-): typings.leaflet.mod.Circle_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Circle_[js.Any]]
+inline def bounds(points: js.Array[Point_]): Bounds_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(points.asInstanceOf[js.Any]).asInstanceOf[Bounds_]
+inline def bounds(points: BoundsLiteral): Bounds_ = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(points.asInstanceOf[js.Any]).asInstanceOf[Bounds_]
+inline def bounds(topLeft: PointExpression, bottomRight: PointExpression): Bounds_ = (^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[Bounds_]
 
-inline def circleMarker(latlng: typings.leaflet.mod.LatLngExpression): typings.leaflet.mod.CircleMarker_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("circleMarker")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.CircleMarker_[js.Any]]
-inline def circleMarker(latlng: typings.leaflet.mod.LatLngExpression, options: typings.leaflet.mod.CircleMarkerOptions): typings.leaflet.mod.CircleMarker_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("circleMarker")(latlng.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.CircleMarker_[js.Any]]
+inline def canvas(): Canvas_ = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")().asInstanceOf[Canvas_]
+inline def canvas(options: RendererOptions): Canvas_ = ^.asInstanceOf[js.Dynamic].applyDynamic("canvas")(options.asInstanceOf[js.Any]).asInstanceOf[Canvas_]
 
-inline def divIcon(): typings.leaflet.mod.DivIcon_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("divIcon")().asInstanceOf[typings.leaflet.mod.DivIcon_]
-inline def divIcon(options: typings.leaflet.mod.DivIconOptions): typings.leaflet.mod.DivIcon_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("divIcon")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.DivIcon_]
+inline def circle(latlng: LatLngExpression): Circle_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any]).asInstanceOf[Circle_[Any]]
+inline def circle(latlng: LatLngExpression, options: CircleMarkerOptions): Circle_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Circle_[Any]]
+inline def circle(latlng: LatLngExpression, radius: Double): Circle_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Circle_[Any]]
+inline def circle(latlng: LatLngExpression, radius: Double, options: CircleMarkerOptions): Circle_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(latlng.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Circle_[Any]]
 
-inline def featureGroup(): typings.leaflet.mod.FeatureGroup_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")().asInstanceOf[typings.leaflet.mod.FeatureGroup_[js.Any]]
-inline def featureGroup(layers: js.Array[typings.leaflet.mod.Layer]): typings.leaflet.mod.FeatureGroup_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")(layers.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.FeatureGroup_[js.Any]]
+inline def circleMarker(latlng: LatLngExpression): CircleMarker_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("circleMarker")(latlng.asInstanceOf[js.Any]).asInstanceOf[CircleMarker_[Any]]
+inline def circleMarker(latlng: LatLngExpression, options: CircleMarkerOptions): CircleMarker_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("circleMarker")(latlng.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CircleMarker_[Any]]
 
-inline def geoJSON[P](): typings.leaflet.mod.GeoJSON_[P] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")().asInstanceOf[typings.leaflet.mod.GeoJSON_[P]]
-inline def geoJSON[P](geojson: scala.Unit, options: typings.leaflet.mod.GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON_[P] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON_[P]]
-inline def geoJSON[P](geojson: typings.geojson.mod.GeoJsonObject): typings.leaflet.mod.GeoJSON_[P] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON_[P]]
-inline def geoJSON[P](geojson: typings.geojson.mod.GeoJsonObject, options: typings.leaflet.mod.GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON_[P] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON_[P]]
+inline def divIcon(): DivIcon_ = ^.asInstanceOf[js.Dynamic].applyDynamic("divIcon")().asInstanceOf[DivIcon_]
+inline def divIcon(options: DivIconOptions): DivIcon_ = ^.asInstanceOf[js.Dynamic].applyDynamic("divIcon")(options.asInstanceOf[js.Any]).asInstanceOf[DivIcon_]
 
-inline def gridLayer(): typings.leaflet.mod.GridLayer_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gridLayer")().asInstanceOf[typings.leaflet.mod.GridLayer_]
-inline def gridLayer(options: typings.leaflet.mod.GridLayerOptions): typings.leaflet.mod.GridLayer_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("gridLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GridLayer_]
+inline def extend(dest: Any, src: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(dest.asInstanceOf[js.Any]).`++`(src.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def extend[D /* <: js.Object */, S1 /* <: js.Object */](dest: D): D & S1 = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any]).asInstanceOf[D & S1]
+inline def extend[D /* <: js.Object */, S1 /* <: js.Object */](dest: D, src: S1): D & S1 = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[D & S1]
+inline def extend[D /* <: js.Object */, S1 /* <: js.Object */, S2 /* <: js.Object */](dest: D, src1: S1, src2: S2): D & S1 & S2 = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any])).asInstanceOf[D & S1 & S2]
+inline def extend[D /* <: js.Object */, S1 /* <: js.Object */, S2 /* <: js.Object */, S3 /* <: js.Object */](dest: D, src1: S1, src2: S2, src3: S3): D & S1 & S2 & S3 = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[D & S1 & S2 & S3]
 
-inline def icon(options: typings.leaflet.mod.IconOptions): typings.leaflet.mod.Icon_[typings.leaflet.mod.IconOptions] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("icon")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Icon_[typings.leaflet.mod.IconOptions]]
+inline def featureGroup(): FeatureGroup_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")().asInstanceOf[FeatureGroup_[Any]]
+inline def featureGroup(layers: js.Array[Layer]): FeatureGroup_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")(layers.asInstanceOf[js.Any]).asInstanceOf[FeatureGroup_[Any]]
+inline def featureGroup(layers: js.Array[Layer], options: LayerOptions): FeatureGroup_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FeatureGroup_[Any]]
+inline def featureGroup(layers: Unit, options: LayerOptions): FeatureGroup_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FeatureGroup_[Any]]
 
-inline def imageOverlay(imageUrl: java.lang.String, bounds: typings.leaflet.mod.LatLngBoundsExpression): typings.leaflet.mod.ImageOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.ImageOverlay_]
-inline def imageOverlay(
-  imageUrl: java.lang.String,
-  bounds: typings.leaflet.mod.LatLngBoundsExpression,
-  options: typings.leaflet.mod.ImageOverlayOptions
-): typings.leaflet.mod.ImageOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.ImageOverlay_]
+inline def geoJSON_[P](): GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")().asInstanceOf[GeoJSON__[P]]
+inline def geoJSON_[P](geojson: js.Array[GeoJsonObject]): GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON__[P]]
+inline def geoJSON_[P](geojson: js.Array[GeoJsonObject], options: GeoJSONOptions[P]): GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON__[P]]
+inline def geoJSON_[P](geojson: Unit, options: GeoJSONOptions[P]): GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON__[P]]
+inline def geoJSON_[P](geojson: GeoJsonObject): GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON__[P]]
+inline def geoJSON_[P](geojson: GeoJsonObject, options: GeoJSONOptions[P]): GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON__[P]]
 
-inline def latLng(coords: js.Tuple3[scala.Double, scala.Double, scala.Double]): typings.leaflet.mod.LatLng_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.LatLng_]
-inline def latLng(coords: typings.leaflet.anon.Alt): typings.leaflet.mod.LatLng_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.LatLng_]
-inline def latLng(coords: typings.leaflet.mod.LatLngLiteral): typings.leaflet.mod.LatLng_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.LatLng_]
-inline def latLng(coords: typings.leaflet.mod.LatLngTuple): typings.leaflet.mod.LatLng_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.LatLng_]
-inline def latLng(latitude: scala.Double, longitude: scala.Double): typings.leaflet.mod.LatLng_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.LatLng_]
-inline def latLng(latitude: scala.Double, longitude: scala.Double, altitude: scala.Double): typings.leaflet.mod.LatLng_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], altitude.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.LatLng_]
+inline def geoJson[P](): GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[GeoJSON__[P]]
+inline def geoJson[P](geojson: js.Array[GeoJsonObject]): GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON__[P]]
+inline def geoJson[P](geojson: js.Array[GeoJsonObject], options: GeoJSONOptions[P]): GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON__[P]]
+inline def geoJson[P](geojson: Unit, options: GeoJSONOptions[P]): GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON__[P]]
+inline def geoJson[P](geojson: GeoJsonObject): GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON__[P]]
+inline def geoJson[P](geojson: GeoJsonObject, options: GeoJSONOptions[P]): GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON__[P]]
 
-inline def latLngBounds(latlngs: js.Array[typings.leaflet.mod.LatLngExpression]): typings.leaflet.mod.LatLngBounds_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLngBounds")(latlngs.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.LatLngBounds_]
-inline def latLngBounds(southWest: typings.leaflet.mod.LatLngExpression, northEast: typings.leaflet.mod.LatLngExpression): typings.leaflet.mod.LatLngBounds_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("latLngBounds")(southWest.asInstanceOf[js.Any], northEast.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.LatLngBounds_]
+inline def gridLayer(): GridLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLayer")().asInstanceOf[GridLayer_]
+inline def gridLayer(options: GridLayerOptions): GridLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLayer")(options.asInstanceOf[js.Any]).asInstanceOf[GridLayer_]
 
-inline def layerGroup(): typings.leaflet.mod.LayerGroup_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")().asInstanceOf[typings.leaflet.mod.LayerGroup_[js.Any]]
-inline def layerGroup(layers: js.Array[typings.leaflet.mod.Layer]): typings.leaflet.mod.LayerGroup_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")(layers.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.LayerGroup_[js.Any]]
-inline def layerGroup(layers: js.Array[typings.leaflet.mod.Layer], options: typings.leaflet.mod.LayerOptions): typings.leaflet.mod.LayerGroup_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.LayerGroup_[js.Any]]
-inline def layerGroup(layers: scala.Unit, options: typings.leaflet.mod.LayerOptions): typings.leaflet.mod.LayerGroup_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.LayerGroup_[js.Any]]
+inline def icon(options: IconOptions): Icon_[IconOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("icon")(options.asInstanceOf[js.Any]).asInstanceOf[Icon_[IconOptions]]
 
-inline def map(element: java.lang.String): typings.leaflet.mod.Map_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Map_]
-inline def map(element: java.lang.String, options: typings.leaflet.mod.MapOptions): typings.leaflet.mod.Map_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Map_]
-inline def map(element: typings.std.HTMLElement): typings.leaflet.mod.Map_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Map_]
-inline def map(element: typings.std.HTMLElement, options: typings.leaflet.mod.MapOptions): typings.leaflet.mod.Map_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Map_]
+inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
+inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
 
-inline def marker(latlng: typings.leaflet.mod.LatLngExpression): typings.leaflet.mod.Marker_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("marker")(latlng.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Marker_[js.Any]]
-inline def marker(latlng: typings.leaflet.mod.LatLngExpression, options: typings.leaflet.mod.MarkerOptions): typings.leaflet.mod.Marker_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("marker")(latlng.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Marker_[js.Any]]
+inline def latLng(coords: js.Tuple3[Double, Double, Double]): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
+inline def latLng(coords: Alt): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
+inline def latLng(coords: LatLngLiteral): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
+inline def latLng(coords: LatLngTuple): LatLng_ = ^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(coords.asInstanceOf[js.Any]).asInstanceOf[LatLng_]
+inline def latLng(latitude: Double, longitude: Double): LatLng_ = (^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[LatLng_]
+inline def latLng(latitude: Double, longitude: Double, altitude: Double): LatLng_ = (^.asInstanceOf[js.Dynamic].applyDynamic("latLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], altitude.asInstanceOf[js.Any])).asInstanceOf[LatLng_]
 
-inline def point(coords: typings.leaflet.anon.X): typings.leaflet.mod.Point_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("point")(coords.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Point_]
-inline def point(coords: typings.leaflet.mod.PointTuple): typings.leaflet.mod.Point_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("point")(coords.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Point_]
-inline def point(x: scala.Double, y: scala.Double): typings.leaflet.mod.Point_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Point_]
-inline def point(x: scala.Double, y: scala.Double, round: scala.Boolean): typings.leaflet.mod.Point_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Point_]
+inline def latLngBounds(latlngs: js.Array[LatLngExpression]): LatLngBounds_ = ^.asInstanceOf[js.Dynamic].applyDynamic("latLngBounds")(latlngs.asInstanceOf[js.Any]).asInstanceOf[LatLngBounds_]
+inline def latLngBounds(southWest: LatLngExpression, northEast: LatLngExpression): LatLngBounds_ = (^.asInstanceOf[js.Dynamic].applyDynamic("latLngBounds")(southWest.asInstanceOf[js.Any], northEast.asInstanceOf[js.Any])).asInstanceOf[LatLngBounds_]
 
+inline def layerGroup(): LayerGroup_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")().asInstanceOf[LayerGroup_[Any]]
+inline def layerGroup(layers: js.Array[Layer]): LayerGroup_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")(layers.asInstanceOf[js.Any]).asInstanceOf[LayerGroup_[Any]]
+inline def layerGroup(layers: js.Array[Layer], options: LayerOptions): LayerGroup_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LayerGroup_[Any]]
+inline def layerGroup(layers: Unit, options: LayerOptions): LayerGroup_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("layerGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LayerGroup_[Any]]
+
+inline def map(element: String): Map_ = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any]).asInstanceOf[Map_]
+inline def map(element: String, options: MapOptions): Map_ = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Map_]
+inline def map(element: HTMLElement): Map_ = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any]).asInstanceOf[Map_]
+inline def map(element: HTMLElement, options: MapOptions): Map_ = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Map_]
+
+inline def marker(latlng: LatLngExpression): Marker_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("marker")(latlng.asInstanceOf[js.Any]).asInstanceOf[Marker_[Any]]
+inline def marker(latlng: LatLngExpression, options: MarkerOptions): Marker_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("marker")(latlng.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Marker_[Any]]
+
+inline def noConflict(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Any]
+
+inline def point(coords: X): Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("point")(coords.asInstanceOf[js.Any]).asInstanceOf[Point_]
+inline def point(coords: PointTuple): Point_ = ^.asInstanceOf[js.Dynamic].applyDynamic("point")(coords.asInstanceOf[js.Any]).asInstanceOf[Point_]
+inline def point(x: Double, y: Double): Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point_]
+inline def point(x: Double, y: Double, round: Boolean): Point_ = (^.asInstanceOf[js.Dynamic].applyDynamic("point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[Point_]
+
+inline def polygon(latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]): Polygon_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(latlngs.asInstanceOf[js.Any]).asInstanceOf[Polygon_[Any]]
 inline def polygon(
-  latlngs: js.Array[
-  (js.Array[
-    js.Array[typings.leaflet.mod.LatLngExpression] | typings.leaflet.mod.LatLngExpression
-  ]) | typings.leaflet.mod.LatLngExpression
-]
-): typings.leaflet.mod.Polygon_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(latlngs.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Polygon_[js.Any]]
-inline def polygon(
-  latlngs: js.Array[
-  (js.Array[
-    js.Array[typings.leaflet.mod.LatLngExpression] | typings.leaflet.mod.LatLngExpression
-  ]) | typings.leaflet.mod.LatLngExpression
-],
-  options: typings.leaflet.mod.PolylineOptions
-): typings.leaflet.mod.Polygon_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Polygon_[js.Any]]
+  latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression],
+  options: PolylineOptions
+): Polygon_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Polygon_[Any]]
 
-inline def polyline(
-  latlngs: js.Array[
-  js.Array[typings.leaflet.mod.LatLngExpression] | typings.leaflet.mod.LatLngExpression
-]
-): typings.leaflet.mod.Polyline_[typings.geojson.mod.LineString | typings.geojson.mod.MultiLineString, js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("polyline")(latlngs.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Polyline_[typings.geojson.mod.LineString | typings.geojson.mod.MultiLineString, js.Any]]
-inline def polyline(
-  latlngs: js.Array[
-  js.Array[typings.leaflet.mod.LatLngExpression] | typings.leaflet.mod.LatLngExpression
-],
-  options: typings.leaflet.mod.PolylineOptions
-): typings.leaflet.mod.Polyline_[typings.geojson.mod.LineString | typings.geojson.mod.MultiLineString, js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("polyline")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Polyline_[typings.geojson.mod.LineString | typings.geojson.mod.MultiLineString, js.Any]]
+inline def polyline(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]): Polyline_[LineString | MultiLineString, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("polyline")(latlngs.asInstanceOf[js.Any]).asInstanceOf[Polyline_[LineString | MultiLineString, Any]]
+inline def polyline(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions): Polyline_[LineString | MultiLineString, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("polyline")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Polyline_[LineString | MultiLineString, Any]]
 
-inline def popup(): typings.leaflet.mod.Popup_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("popup")().asInstanceOf[typings.leaflet.mod.Popup_]
-inline def popup(options: scala.Unit, source: typings.leaflet.mod.Layer): typings.leaflet.mod.Popup_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("popup")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Popup_]
-inline def popup(options: typings.leaflet.mod.PopupOptions): typings.leaflet.mod.Popup_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("popup")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Popup_]
-inline def popup(options: typings.leaflet.mod.PopupOptions, source: typings.leaflet.mod.Layer): typings.leaflet.mod.Popup_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("popup")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Popup_]
+inline def popup(): Popup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("popup")().asInstanceOf[Popup_]
+inline def popup(options: Unit, source: Layer): Popup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("popup")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Popup_]
+inline def popup(options: PopupOptions): Popup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("popup")(options.asInstanceOf[js.Any]).asInstanceOf[Popup_]
+inline def popup(options: PopupOptions, source: Layer): Popup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("popup")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Popup_]
 
-inline def rectangle(latLngBounds: typings.leaflet.mod.LatLngBoundsExpression): typings.leaflet.mod.Rectangle_[js.Any] = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(latLngBounds.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Rectangle_[js.Any]]
-inline def rectangle(
-  latLngBounds: typings.leaflet.mod.LatLngBoundsExpression,
-  options: typings.leaflet.mod.PolylineOptions
-): typings.leaflet.mod.Rectangle_[js.Any] = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(latLngBounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Rectangle_[js.Any]]
+inline def rectangle(latLngBounds: LatLngBoundsExpression): Rectangle_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(latLngBounds.asInstanceOf[js.Any]).asInstanceOf[Rectangle_[Any]]
+inline def rectangle(latLngBounds: LatLngBoundsExpression, options: PolylineOptions): Rectangle_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(latLngBounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rectangle_[Any]]
 
-inline def svg(): typings.leaflet.mod.SVG_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svg")().asInstanceOf[typings.leaflet.mod.SVG_]
-inline def svg(options: typings.leaflet.mod.RendererOptions): typings.leaflet.mod.SVG_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svg")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.SVG_]
+inline def setOptions: js.Function2[/* obj */ Any, /* options */ Any, Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("setOptions").asInstanceOf[js.Function2[/* obj */ Any, /* options */ Any, Any]]
 
-inline def svgOverlay(svgImage: java.lang.String, bounds: typings.leaflet.mod.LatLngBoundsExpression): typings.leaflet.mod.SVGOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.SVGOverlay_]
-inline def svgOverlay(
-  svgImage: java.lang.String,
-  bounds: typings.leaflet.mod.LatLngBoundsExpression,
-  options: typings.leaflet.mod.ImageOverlayOptions
-): typings.leaflet.mod.SVGOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.SVGOverlay_]
-inline def svgOverlay(svgImage: typings.std.SVGElement, bounds: typings.leaflet.mod.LatLngBoundsExpression): typings.leaflet.mod.SVGOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.SVGOverlay_]
-inline def svgOverlay(
-  svgImage: typings.std.SVGElement,
-  bounds: typings.leaflet.mod.LatLngBoundsExpression,
-  options: typings.leaflet.mod.ImageOverlayOptions
-): typings.leaflet.mod.SVGOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.SVGOverlay_]
+inline def stamp: js.Function1[/* obj */ Any, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("stamp").asInstanceOf[js.Function1[/* obj */ Any, Double]]
 
-inline def tooltip(): typings.leaflet.mod.Tooltip_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")().asInstanceOf[typings.leaflet.mod.Tooltip_]
-inline def tooltip(options: scala.Unit, source: typings.leaflet.mod.Layer): typings.leaflet.mod.Tooltip_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Tooltip_]
-inline def tooltip(options: typings.leaflet.mod.TooltipOptions): typings.leaflet.mod.Tooltip_ = typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.Tooltip_]
-inline def tooltip(options: typings.leaflet.mod.TooltipOptions, source: typings.leaflet.mod.Layer): typings.leaflet.mod.Tooltip_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.Tooltip_]
+inline def svg(): SVG_ = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")().asInstanceOf[SVG_]
+inline def svg(options: RendererOptions): SVG_ = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(options.asInstanceOf[js.Any]).asInstanceOf[SVG_]
 
-inline def videoOverlay(video: java.lang.String, bounds: typings.leaflet.mod.LatLngBoundsExpression): typings.leaflet.mod.VideoOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.VideoOverlay_]
-inline def videoOverlay(
-  video: java.lang.String,
-  bounds: typings.leaflet.mod.LatLngBoundsExpression,
-  options: typings.leaflet.mod.VideoOverlayOptions
-): typings.leaflet.mod.VideoOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.VideoOverlay_]
-inline def videoOverlay(video: js.Array[java.lang.String], bounds: typings.leaflet.mod.LatLngBoundsExpression): typings.leaflet.mod.VideoOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.VideoOverlay_]
-inline def videoOverlay(
-  video: js.Array[java.lang.String],
-  bounds: typings.leaflet.mod.LatLngBoundsExpression,
-  options: typings.leaflet.mod.VideoOverlayOptions
-): typings.leaflet.mod.VideoOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.VideoOverlay_]
-inline def videoOverlay(video: typings.std.HTMLVideoElement, bounds: typings.leaflet.mod.LatLngBoundsExpression): typings.leaflet.mod.VideoOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.VideoOverlay_]
-inline def videoOverlay(
-  video: typings.std.HTMLVideoElement,
-  bounds: typings.leaflet.mod.LatLngBoundsExpression,
-  options: typings.leaflet.mod.VideoOverlayOptions
-): typings.leaflet.mod.VideoOverlay_ = (typings.leaflet.mod.^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.VideoOverlay_]
+inline def svgOverlay(svgImage: String, bounds: LatLngBoundsExpression): SVGOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[SVGOverlay_]
+inline def svgOverlay(svgImage: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): SVGOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SVGOverlay_]
+inline def svgOverlay(svgImage: SVGElement, bounds: LatLngBoundsExpression): SVGOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[SVGOverlay_]
+inline def svgOverlay(svgImage: SVGElement, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): SVGOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("svgOverlay")(svgImage.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SVGOverlay_]
 
-type BoundsExpression = typings.leaflet.mod.Bounds_ | typings.leaflet.mod.BoundsLiteral
+inline def tooltip(): Tooltip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")().asInstanceOf[Tooltip_]
+inline def tooltip(options: Unit, source: Layer): Tooltip_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Tooltip_]
+inline def tooltip(options: TooltipOptions): Tooltip_ = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(options.asInstanceOf[js.Any]).asInstanceOf[Tooltip_]
+inline def tooltip(options: TooltipOptions, source: Layer): Tooltip_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltip")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Tooltip_]
 
-type BoundsLiteral = js.Tuple2[typings.leaflet.mod.PointTuple, typings.leaflet.mod.PointTuple]
+inline def transformation(a: Double, b: Double, c: Double, d: Double): Transformation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("transformation")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Transformation_]
+inline def transformation(coefficients: js.Tuple4[Double, Double, Double, Double]): Transformation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("transformation")(coefficients.asInstanceOf[js.Any]).asInstanceOf[Transformation_]
 
-type Content = java.lang.String | typings.std.HTMLElement
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type CrossOrigin = scala.Boolean | java.lang.String
+inline def videoOverlay(video: String, bounds: LatLngBoundsExpression): VideoOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[VideoOverlay_]
+inline def videoOverlay(video: String, bounds: LatLngBoundsExpression, options: VideoOverlayOptions): VideoOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VideoOverlay_]
+inline def videoOverlay(video: js.Array[String], bounds: LatLngBoundsExpression): VideoOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[VideoOverlay_]
+inline def videoOverlay(video: js.Array[String], bounds: LatLngBoundsExpression, options: VideoOverlayOptions): VideoOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VideoOverlay_]
+inline def videoOverlay(video: HTMLVideoElement, bounds: LatLngBoundsExpression): VideoOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[VideoOverlay_]
+inline def videoOverlay(video: HTMLVideoElement, bounds: LatLngBoundsExpression, options: VideoOverlayOptions): VideoOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("videoOverlay")(video.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[VideoOverlay_]
 
-type DoneCallback = js.Function2[
-/* error */ js.UndefOr[typings.std.Error], 
-/* tile */ js.UndefOr[typings.std.HTMLElement], 
-scala.Unit]
+type BoundsExpression = Bounds_ | BoundsLiteral
 
-type DragEndEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.DragEndEvent, scala.Unit]
+type BoundsLiteral = js.Tuple2[PointTuple, PointTuple]
 
-type ErrorEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.ErrorEvent, scala.Unit]
+type Content = String | HTMLElement
 
-type InternalTiles = org.scalablytyped.runtime.StringDictionary[typings.leaflet.anon.Active]
+type DoneCallback = js.Function2[/* error */ js.UndefOr[js.Error], /* tile */ js.UndefOr[HTMLElement], Unit]
 
-type LatLngBoundsExpression = typings.leaflet.mod.LatLngBounds_ | typings.leaflet.mod.LatLngBoundsLiteral
+type DragEndEventHandlerFn = js.Function1[/* event */ DragEndEvent, Unit]
 
-type LatLngBoundsLiteral = js.Array[typings.leaflet.mod.LatLngTuple]
+type ErrorEventHandlerFn = js.Function1[/* event */ ErrorEvent, Unit]
+
+type InternalTiles = StringDictionary[Active]
+
+type LatLngBoundsExpression = LatLngBounds_ | LatLngBoundsLiteral
+
+type LatLngBoundsLiteral = js.Array[LatLngTuple]
 
 /* Rewritten from type alias, can be one of: 
   - typings.leaflet.mod.LatLng_
   - typings.leaflet.mod.LatLngLiteral
   - typings.leaflet.mod.LatLngTuple
 */
-type LatLngExpression = typings.leaflet.mod._LatLngExpression | typings.leaflet.mod.LatLngTuple
+type LatLngExpression = _LatLngExpression | LatLngTuple
 
-type LatLngTuple = js.Tuple2[scala.Double, scala.Double]
+type LatLngTuple = js.Tuple2[Double, Double]
 
-type LayerEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.LayerEvent, scala.Unit]
+type LayerEventHandlerFn = js.Function1[/* event */ LayerEvent, Unit]
 
-type LayersControlEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.LayersControlEvent, scala.Unit]
+type LayersControlEventHandlerFn = js.Function1[/* event */ LayersControlEvent, Unit]
 
-type LeafletEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.LeafletEvent, scala.Unit]
+type LeafletEventHandlerFn = js.Function1[/* event */ LeafletEvent, Unit]
 
-type LeafletKeyboardEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.LeafletKeyboardEvent, scala.Unit]
+type LeafletKeyboardEventHandlerFn = js.Function1[/* event */ LeafletKeyboardEvent, Unit]
 
-type LeafletMouseEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.LeafletMouseEvent, scala.Unit]
+type LeafletMouseEventHandlerFn = js.Function1[/* event */ LeafletMouseEvent, Unit]
 
-type LocationEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.LocationEvent, scala.Unit]
+type LocationEventHandlerFn = js.Function1[/* event */ LocationEvent, Unit]
 
-type PointExpression = typings.leaflet.mod.Point_ | typings.leaflet.mod.PointTuple
+type PointExpression = Point_ | PointTuple
 
-type PointTuple = js.Tuple2[scala.Double, scala.Double]
+type PointTuple = js.Tuple2[Double, Double]
 
-type PopupEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.PopupEvent, scala.Unit]
+type PopupEventHandlerFn = js.Function1[/* event */ PopupEvent, Unit]
 
-type ResizeEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.ResizeEvent, scala.Unit]
+type ResizeEventHandlerFn = js.Function1[/* event */ ResizeEvent, Unit]
 
-type StyleFunction[P] = js.Function1[
-/* feature */ js.UndefOr[typings.geojson.mod.Feature[typings.geojson.mod.GeometryObject, P]], 
-typings.leaflet.mod.PathOptions]
+type SVGOverlayStyleOptions = ImageOverlayStyleOptions
 
-type TileErrorEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.TileErrorEvent, scala.Unit]
+type StyleFunction[P] = js.Function1[/* feature */ js.UndefOr[Feature[GeometryObject, P]], PathOptions]
 
-type TileEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.TileEvent, scala.Unit]
+type TileErrorEventHandlerFn = js.Function1[/* event */ TileErrorEvent, Unit]
 
-type TooltipEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.TooltipEvent, scala.Unit]
+type TileEventHandlerFn = js.Function1[/* event */ TileEvent, Unit]
 
-type Zoom = scala.Boolean | typings.leaflet.leafletStrings.center
+type TooltipEventHandlerFn = js.Function1[/* event */ TooltipEvent, Unit]
 
-type ZoomAnimEventHandlerFn = js.Function1[/* event */ typings.leaflet.mod.ZoomAnimEvent, scala.Unit]
+type Zoom = Boolean | center
+
+type ZoomAnimEventHandlerFn = js.Function1[/* event */ ZoomAnimEvent, Unit]

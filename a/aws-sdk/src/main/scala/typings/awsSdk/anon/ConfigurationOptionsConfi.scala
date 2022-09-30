@@ -410,6 +410,8 @@ trait ConfigurationOptionsConfi
   
   var iotfleethub: js.UndefOr[typings.awsSdk.iotfleethubMod.ClientConfiguration] = js.undefined
   
+  var iotfleetwise: js.UndefOr[typings.awsSdk.iotfleetwiseMod.ClientConfiguration] = js.undefined
+  
   var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration] = js.undefined
   
   var iotsecuretunneling: js.UndefOr[typings.awsSdk.iotsecuretunnelingMod.ClientConfiguration] = js.undefined
@@ -532,6 +534,8 @@ trait ConfigurationOptionsConfi
   var migrationhub: js.UndefOr[typings.awsSdk.migrationhubMod.ClientConfiguration] = js.undefined
   
   var migrationhubconfig: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ClientConfiguration] = js.undefined
+  
+  var migrationhuborchestrator: js.UndefOr[typings.awsSdk.migrationhuborchestratorMod.ClientConfiguration] = js.undefined
   
   var migrationhubrefactorspaces: js.UndefOr[typings.awsSdk.migrationhubrefactorspacesMod.ClientConfiguration] = js.undefined
   
@@ -1542,6 +1546,10 @@ object ConfigurationOptionsConfi {
     
     inline def setIotfleethubUndefined: Self = StObject.set(x, "iotfleethub", js.undefined)
     
+    inline def setIotfleetwise(value: typings.awsSdk.iotfleetwiseMod.ClientConfiguration): Self = StObject.set(x, "iotfleetwise", value.asInstanceOf[js.Any])
+    
+    inline def setIotfleetwiseUndefined: Self = StObject.set(x, "iotfleetwise", js.undefined)
+    
     inline def setIotjobsdataplane(value: typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration): Self = StObject.set(x, "iotjobsdataplane", value.asInstanceOf[js.Any])
     
     inline def setIotjobsdataplaneUndefined: Self = StObject.set(x, "iotjobsdataplane", js.undefined)
@@ -1769,6 +1777,10 @@ object ConfigurationOptionsConfi {
     inline def setMigrationhubconfig(value: typings.awsSdk.migrationhubconfigMod.ClientConfiguration): Self = StObject.set(x, "migrationhubconfig", value.asInstanceOf[js.Any])
     
     inline def setMigrationhubconfigUndefined: Self = StObject.set(x, "migrationhubconfig", js.undefined)
+    
+    inline def setMigrationhuborchestrator(value: typings.awsSdk.migrationhuborchestratorMod.ClientConfiguration): Self = StObject.set(x, "migrationhuborchestrator", value.asInstanceOf[js.Any])
+    
+    inline def setMigrationhuborchestratorUndefined: Self = StObject.set(x, "migrationhuborchestrator", js.undefined)
     
     inline def setMigrationhubrefactorspaces(value: typings.awsSdk.migrationhubrefactorspacesMod.ClientConfiguration): Self = StObject.set(x, "migrationhubrefactorspaces", value.asInstanceOf[js.Any])
     

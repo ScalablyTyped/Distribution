@@ -1,6 +1,9 @@
 package typings.googleCloudPubsub
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleCloudPubsub.anon.Typeoffallback
+import typings.googleCloudPubsub.anon.Typeofgax
 import typings.googleCloudPubsub.protosMod.google.protobuf.IEmpty
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IDeleteTopicRequest
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IDetachSubscriptionRequest
@@ -42,8 +45,10 @@ object publisherClientMod {
   /**
     * Construct an instance of PublisherClient.
     *
-    * @param {object} [options] - The configuration object. See the subsequent
-    *   parameters for more details.
+    * @param {object} [options] - The configuration object.
+    * The options accepted by the constructor are described in detail
+    * in [this document](https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md#creating-the-client-instance).
+    * The common options are:
     * @param {object} [options.credentials] - Credentials object.
     * @param {string} [options.credentials.client_email]
     * @param {string} [options.credentials.private_key]
@@ -63,31 +68,100 @@ object publisherClientMod {
     *     your project ID will be detected automatically.
     * @param {string} [options.apiEndpoint] - The domain name of the
     *     API remote host.
+    * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+    *     Follows the structure of {@link gapicConfig}.
+    * @param {boolean | "rest"} [options.fallback] - Use HTTP fallback mode.
+    *     Pass "rest" to use HTTP/1.1 REST API instead of gRPC.
+    *     For more information, please check the
+    *     {@link https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md#http11-rest-api-mode documentation}.
+    * @param {gax} [gaxInstance]: loaded instance of `google-gax`. Useful if you
+    *     need to avoid loading the default gRPC version and want to use the fallback
+    *     HTTP implementation. Load only fallback version and pass it to the constructor:
+    *     ```
+    *     const gax = require('google-gax/build/src/fallback'); // avoids loading google-gax with gRPC
+    *     const client = new PublisherClient({fallback: 'rest'}, gax);
+    *     ```
     */
-  class PublisherClient () extends StObject {
+  open class PublisherClient () extends StObject {
     def this(opts: ClientOptions) = this()
+    def this(opts: Unit, gaxInstance: Typeoffallback) = this()
+    def this(opts: Unit, gaxInstance: Typeofgax) = this()
+    def this(opts: ClientOptions, gaxInstance: Typeoffallback) = this()
+    def this(opts: ClientOptions, gaxInstance: Typeofgax) = this()
     
-    /* private */ var _defaults: js.Any = js.native
+    /* private */ var _defaults: Any = js.native
     
-    /* private */ var _gaxGrpc: js.Any = js.native
+    /* private */ var _gaxGrpc: Any = js.native
     
-    /* private */ var _gaxModule: js.Any = js.native
+    /* private */ var _gaxModule: Any = js.native
     
-    /* private */ var _opts: js.Any = js.native
+    /* private */ var _opts: Any = js.native
     
-    /* private */ var _protos: js.Any = js.native
+    /* private */ var _protos: Any = js.native
     
-    /* private */ var _terminated: js.Any = js.native
+    /* private */ var _providedCustomServicePath: Any = js.native
     
-    var auth: GoogleAuth = js.native
+    /* private */ var _terminated: Any = js.native
+    
+    var auth: GoogleAuth[JSONClient] = js.native
     
     /**
-      * Terminate the GRPC channel and close the client.
+      * Terminate the gRPC channel and close the client.
       *
       * The client will no longer be usable and all future behavior is undefined.
+      * @returns {Promise} A promise that resolves when the client is closed.
       */
     def close(): js.Promise[Unit] = js.native
     
+    /**
+      * Creates the given topic with the given name. See the [resource name rules]
+      * (https://cloud.google.com/pubsub/docs/admin#resource_names).
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.name
+      *   Required. The name of the topic. It must have the format
+      *   `"projects/{project}/topics/{topic}"`. `{topic}` must start with a letter,
+      *   and contain only letters (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`),
+      *   underscores (`_`), periods (`.`), tildes (`~`), plus (`+`) or percent
+      *   signs (`%`). It must be between 3 and 255 characters in length, and it
+      *   must not start with `"goog"`.
+      * @param {number[]} request.labels
+      *   See [Creating and managing labels]
+      *   (https://cloud.google.com/pubsub/docs/labels).
+      * @param {google.pubsub.v1.MessageStoragePolicy} request.messageStoragePolicy
+      *   Policy constraining the set of Google Cloud Platform regions where messages
+      *   published to the topic may be stored. If not present, then no constraints
+      *   are in effect.
+      * @param {string} request.kmsKeyName
+      *   The resource name of the Cloud KMS CryptoKey to be used to protect access
+      *   to messages published on this topic.
+      *
+      *   The expected format is `projects/ * /locations/ * /keyRings/ * /cryptoKeys/ *`.
+      * @param {google.pubsub.v1.SchemaSettings} request.schemaSettings
+      *   Settings for validating messages published against a schema.
+      * @param {boolean} request.satisfiesPzs
+      *   Reserved for future use. This field is set only in responses from the
+      *   server; it is ignored if it is set in any requests.
+      * @param {google.protobuf.Duration} request.messageRetentionDuration
+      *   Indicates the minimum duration to retain a message after it is published to
+      *   the topic. If this field is set, messages published to the topic in the
+      *   last `message_retention_duration` are always available to subscribers. For
+      *   instance, it allows any attached subscription to [seek to a
+      *   timestamp](https://cloud.google.com/pubsub/docs/replay-overview#seek_to_a_time)
+      *   that is up to `message_retention_duration` in the past. If this field is
+      *   not set, message retention is controlled by settings on individual
+      *   subscriptions. Cannot be more than 7 days or less than 10 minutes.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is an object representing [Topic]{@link google.pubsub.v1.Topic}.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
+      *   for more details and examples.
+      */
+    def createTopic(): js.Promise[js.Tuple3[ITopic, js.UndefOr[ITopic], js.UndefOr[js.Object]]] = js.native
+    def createTopic(request: Unit, options: CallOptions): js.Promise[js.Tuple3[ITopic, js.UndefOr[ITopic], js.UndefOr[js.Object]]] = js.native
     def createTopic(request: ITopic): js.Promise[js.Tuple3[ITopic, js.UndefOr[ITopic], js.UndefOr[js.Object]]] = js.native
     def createTopic(
       request: ITopic,
@@ -100,6 +174,28 @@ object publisherClientMod {
       callback: Callback[ITopic, js.UndefOr[ITopic | Null], js.UndefOr[js.Object | Null]]
     ): Unit = js.native
     
+    /**
+      * Deletes the topic with the given name. Returns `NOT_FOUND` if the topic
+      * does not exist. After a topic is deleted, a new topic may be created with
+      * the same name; this is an entirely new topic with none of the old
+      * configuration or subscriptions. Existing subscriptions to this topic are
+      * not deleted, but their `topic` field is set to `_deleted-topic_`.
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.topic
+      *   Required. Name of the topic to delete.
+      *   Format is `projects/{project}/topics/{topic}`.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is an object representing [Empty]{@link google.protobuf.Empty}.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
+      *   for more details and examples.
+      */
+    def deleteTopic(): js.Promise[js.Tuple3[IEmpty, js.UndefOr[IDeleteTopicRequest], js.UndefOr[js.Object]]] = js.native
+    def deleteTopic(request: Unit, options: CallOptions): js.Promise[js.Tuple3[IEmpty, js.UndefOr[IDeleteTopicRequest], js.UndefOr[js.Object]]] = js.native
     def deleteTopic(request: IDeleteTopicRequest): js.Promise[js.Tuple3[IEmpty, js.UndefOr[IDeleteTopicRequest], js.UndefOr[js.Object]]] = js.native
     def deleteTopic(
       request: IDeleteTopicRequest,
@@ -114,6 +210,39 @@ object publisherClientMod {
     
     var descriptors: Descriptors = js.native
     
+    /**
+      * Detaches a subscription from this topic. All messages retained in the
+      * subscription are dropped. Subsequent `Pull` and `StreamingPull` requests
+      * will return FAILED_PRECONDITION. If the subscription is a push
+      * subscription, pushes to the endpoint will stop.
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.subscription
+      *   Required. The subscription to detach.
+      *   Format is `projects/{project}/subscriptions/{subscription}`.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is an object representing [DetachSubscriptionResponse]{@link google.pubsub.v1.DetachSubscriptionResponse}.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
+      *   for more details and examples.
+      */
+    def detachSubscription(): js.Promise[
+        js.Tuple3[
+          IDetachSubscriptionResponse, 
+          js.UndefOr[IDetachSubscriptionRequest], 
+          js.UndefOr[js.Object]
+        ]
+      ] = js.native
+    def detachSubscription(request: Unit, options: CallOptions): js.Promise[
+        js.Tuple3[
+          IDetachSubscriptionResponse, 
+          js.UndefOr[IDetachSubscriptionRequest], 
+          js.UndefOr[js.Object]
+        ]
+      ] = js.native
     def detachSubscription(request: IDetachSubscriptionRequest): js.Promise[
         js.Tuple3[
           IDetachSubscriptionResponse, 
@@ -196,6 +325,24 @@ object publisherClientMod {
     def getProjectId(): js.Promise[String] = js.native
     def getProjectId(callback: Callback[String, Unit, Unit]): Unit = js.native
     
+    /**
+      * Gets the configuration of a topic.
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.topic
+      *   Required. The name of the topic to get.
+      *   Format is `projects/{project}/topics/{topic}`.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is an object representing [Topic]{@link google.pubsub.v1.Topic}.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
+      *   for more details and examples.
+      */
+    def getTopic(): js.Promise[js.Tuple3[ITopic, js.UndefOr[IGetTopicRequest], js.UndefOr[js.Object]]] = js.native
+    def getTopic(request: Unit, options: CallOptions): js.Promise[js.Tuple3[ITopic, js.UndefOr[IGetTopicRequest], js.UndefOr[js.Object]]] = js.native
     def getTopic(request: IGetTopicRequest): js.Promise[js.Tuple3[ITopic, js.UndefOr[IGetTopicRequest], js.UndefOr[js.Object]]] = js.native
     def getTopic(
       request: IGetTopicRequest,
@@ -225,6 +372,43 @@ object publisherClientMod {
     
     var innerApiCalls: StringDictionary[js.Function] = js.native
     
+    /**
+      * Lists the names of the snapshots on this topic. Snapshots are used in
+      * [Seek](https://cloud.google.com/pubsub/docs/replay-overview) operations,
+      * which allow you to manage message acknowledgments in bulk. That is, you can
+      * set the acknowledgment state of messages in an existing subscription to the
+      * state captured by a snapshot.
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.topic
+      *   Required. The name of the topic that snapshots are attached to.
+      *   Format is `projects/{project}/topics/{topic}`.
+      * @param {number} request.pageSize
+      *   Maximum number of snapshot names to return.
+      * @param {string} request.pageToken
+      *   The value returned by the last `ListTopicSnapshotsResponse`; indicates
+      *   that this is a continuation of a prior `ListTopicSnapshots` call, and
+      *   that the system should return the next page of data.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is Array of string.
+      *   The client library will perform auto-pagination by default: it will call the API as many
+      *   times as needed and will merge results from all the pages into this array.
+      *   Note that it can affect your quota.
+      *   We recommend using `listTopicSnapshotsAsync()`
+      *   method described below for async iteration which you can stop as needed.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
+      */
+    def listTopicSnapshots(): js.Promise[
+        js.Tuple3[js.Array[String], IListTopicSnapshotsRequest | Null, IListTopicSnapshotsResponse]
+      ] = js.native
+    def listTopicSnapshots(request: Unit, options: CallOptions): js.Promise[
+        js.Tuple3[js.Array[String], IListTopicSnapshotsRequest | Null, IListTopicSnapshotsResponse]
+      ] = js.native
     def listTopicSnapshots(request: IListTopicSnapshotsRequest): js.Promise[
         js.Tuple3[js.Array[String], IListTopicSnapshotsRequest | Null, IListTopicSnapshotsResponse]
       ] = js.native
@@ -242,10 +426,9 @@ object publisherClientMod {
     ): Unit = js.native
     
     /**
-      * Equivalent to {@link listTopicSnapshots}, but returns an iterable object.
+      * Equivalent to `listTopicSnapshots`, but returns an iterable object.
       *
-      * for-await-of syntax is used with the iterable to recursively get response element on-demand.
-      *
+      * `for`-`await`-`of` syntax is used with the iterable to get response elements on-demand.
       * @param {Object} request
       *   The request object that will be sent.
       * @param {string} request.topic
@@ -260,7 +443,13 @@ object publisherClientMod {
       * @param {object} [options]
       *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
       * @returns {Object}
-      *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
+      *   An iterable Object that allows [async iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols).
+      *   When you iterate the returned iterable, each element will be an object representing
+      *   string. The API will be called under the hood as needed, once per the page,
+      *   so you can stop the iteration when you don't need more results.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
       */
     def listTopicSnapshotsAsync(): AsyncIterable[String] = js.native
     def listTopicSnapshotsAsync(request: Unit, options: CallOptions): AsyncIterable[String] = js.native
@@ -268,18 +457,7 @@ object publisherClientMod {
     def listTopicSnapshotsAsync(request: IListTopicSnapshotsRequest, options: CallOptions): AsyncIterable[String] = js.native
     
     /**
-      * Equivalent to {@link listTopicSnapshots}, but returns a NodeJS Stream object.
-      *
-      * This fetches the paged responses for {@link listTopicSnapshots} continuously
-      * and invokes the callback registered for 'data' event for each element in the
-      * responses.
-      *
-      * The returned object has 'end' method when no more elements are required.
-      *
-      * autoPaginate option will be ignored.
-      *
-      * @see {@link https://nodejs.org/api/stream.html}
-      *
+      * Equivalent to `method.name.toCamelCase()`, but returns a NodeJS Stream object.
       * @param {Object} request
       *   The request object that will be sent.
       * @param {string} request.topic
@@ -295,12 +473,60 @@ object publisherClientMod {
       *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
       * @returns {Stream}
       *   An object stream which emits an object representing string on 'data' event.
+      *   The client library will perform auto-pagination by default: it will call the API as many
+      *   times as needed. Note that it can affect your quota.
+      *   We recommend using `listTopicSnapshotsAsync()`
+      *   method described below for async iteration which you can stop as needed.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
       */
     def listTopicSnapshotsStream(): Transform = js.native
     def listTopicSnapshotsStream(request: Unit, options: CallOptions): Transform = js.native
     def listTopicSnapshotsStream(request: IListTopicSnapshotsRequest): Transform = js.native
     def listTopicSnapshotsStream(request: IListTopicSnapshotsRequest, options: CallOptions): Transform = js.native
     
+    /**
+      * Lists the names of the attached subscriptions on this topic.
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.topic
+      *   Required. The name of the topic that subscriptions are attached to.
+      *   Format is `projects/{project}/topics/{topic}`.
+      * @param {number} request.pageSize
+      *   Maximum number of subscription names to return.
+      * @param {string} request.pageToken
+      *   The value returned by the last `ListTopicSubscriptionsResponse`; indicates
+      *   that this is a continuation of a prior `ListTopicSubscriptions` call, and
+      *   that the system should return the next page of data.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is Array of string.
+      *   The client library will perform auto-pagination by default: it will call the API as many
+      *   times as needed and will merge results from all the pages into this array.
+      *   Note that it can affect your quota.
+      *   We recommend using `listTopicSubscriptionsAsync()`
+      *   method described below for async iteration which you can stop as needed.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
+      */
+    def listTopicSubscriptions(): js.Promise[
+        js.Tuple3[
+          js.Array[String], 
+          IListTopicSubscriptionsRequest | Null, 
+          IListTopicSubscriptionsResponse
+        ]
+      ] = js.native
+    def listTopicSubscriptions(request: Unit, options: CallOptions): js.Promise[
+        js.Tuple3[
+          js.Array[String], 
+          IListTopicSubscriptionsRequest | Null, 
+          IListTopicSubscriptionsResponse
+        ]
+      ] = js.native
     def listTopicSubscriptions(request: IListTopicSubscriptionsRequest): js.Promise[
         js.Tuple3[
           js.Array[String], 
@@ -334,10 +560,9 @@ object publisherClientMod {
     ): Unit = js.native
     
     /**
-      * Equivalent to {@link listTopicSubscriptions}, but returns an iterable object.
+      * Equivalent to `listTopicSubscriptions`, but returns an iterable object.
       *
-      * for-await-of syntax is used with the iterable to recursively get response element on-demand.
-      *
+      * `for`-`await`-`of` syntax is used with the iterable to get response elements on-demand.
       * @param {Object} request
       *   The request object that will be sent.
       * @param {string} request.topic
@@ -352,7 +577,13 @@ object publisherClientMod {
       * @param {object} [options]
       *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
       * @returns {Object}
-      *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
+      *   An iterable Object that allows [async iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols).
+      *   When you iterate the returned iterable, each element will be an object representing
+      *   string. The API will be called under the hood as needed, once per the page,
+      *   so you can stop the iteration when you don't need more results.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
       */
     def listTopicSubscriptionsAsync(): AsyncIterable[String] = js.native
     def listTopicSubscriptionsAsync(request: Unit, options: CallOptions): AsyncIterable[String] = js.native
@@ -360,18 +591,7 @@ object publisherClientMod {
     def listTopicSubscriptionsAsync(request: IListTopicSubscriptionsRequest, options: CallOptions): AsyncIterable[String] = js.native
     
     /**
-      * Equivalent to {@link listTopicSubscriptions}, but returns a NodeJS Stream object.
-      *
-      * This fetches the paged responses for {@link listTopicSubscriptions} continuously
-      * and invokes the callback registered for 'data' event for each element in the
-      * responses.
-      *
-      * The returned object has 'end' method when no more elements are required.
-      *
-      * autoPaginate option will be ignored.
-      *
-      * @see {@link https://nodejs.org/api/stream.html}
-      *
+      * Equivalent to `method.name.toCamelCase()`, but returns a NodeJS Stream object.
       * @param {Object} request
       *   The request object that will be sent.
       * @param {string} request.topic
@@ -387,28 +607,21 @@ object publisherClientMod {
       *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
       * @returns {Stream}
       *   An object stream which emits an object representing string on 'data' event.
+      *   The client library will perform auto-pagination by default: it will call the API as many
+      *   times as needed. Note that it can affect your quota.
+      *   We recommend using `listTopicSubscriptionsAsync()`
+      *   method described below for async iteration which you can stop as needed.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
       */
     def listTopicSubscriptionsStream(): Transform = js.native
     def listTopicSubscriptionsStream(request: Unit, options: CallOptions): Transform = js.native
     def listTopicSubscriptionsStream(request: IListTopicSubscriptionsRequest): Transform = js.native
     def listTopicSubscriptionsStream(request: IListTopicSubscriptionsRequest, options: CallOptions): Transform = js.native
     
-    def listTopics(request: IListTopicsRequest): js.Promise[js.Tuple3[js.Array[ITopic], IListTopicsRequest | Null, IListTopicsResponse]] = js.native
-    def listTopics(
-      request: IListTopicsRequest,
-      callback: PaginationCallback[IListTopicsRequest, js.UndefOr[IListTopicsResponse | Null], ITopic]
-    ): Unit = js.native
-    def listTopics(request: IListTopicsRequest, options: CallOptions): js.Promise[js.Tuple3[js.Array[ITopic], IListTopicsRequest | Null, IListTopicsResponse]] = js.native
-    def listTopics(
-      request: IListTopicsRequest,
-      options: CallOptions,
-      callback: PaginationCallback[IListTopicsRequest, js.UndefOr[IListTopicsResponse | Null], ITopic]
-    ): Unit = js.native
-    
     /**
-      * Equivalent to {@link listTopics}, but returns an iterable object.
-      *
-      * for-await-of syntax is used with the iterable to recursively get response element on-demand.
+      * Lists matching topics.
       *
       * @param {Object} request
       *   The request object that will be sent.
@@ -423,8 +636,56 @@ object publisherClientMod {
       *   return the next page of data.
       * @param {object} [options]
       *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is Array of [Topic]{@link google.pubsub.v1.Topic}.
+      *   The client library will perform auto-pagination by default: it will call the API as many
+      *   times as needed and will merge results from all the pages into this array.
+      *   Note that it can affect your quota.
+      *   We recommend using `listTopicsAsync()`
+      *   method described below for async iteration which you can stop as needed.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
+      */
+    def listTopics(): js.Promise[js.Tuple3[js.Array[ITopic], IListTopicsRequest | Null, IListTopicsResponse]] = js.native
+    def listTopics(request: Unit, options: CallOptions): js.Promise[js.Tuple3[js.Array[ITopic], IListTopicsRequest | Null, IListTopicsResponse]] = js.native
+    def listTopics(request: IListTopicsRequest): js.Promise[js.Tuple3[js.Array[ITopic], IListTopicsRequest | Null, IListTopicsResponse]] = js.native
+    def listTopics(
+      request: IListTopicsRequest,
+      callback: PaginationCallback[IListTopicsRequest, js.UndefOr[IListTopicsResponse | Null], ITopic]
+    ): Unit = js.native
+    def listTopics(request: IListTopicsRequest, options: CallOptions): js.Promise[js.Tuple3[js.Array[ITopic], IListTopicsRequest | Null, IListTopicsResponse]] = js.native
+    def listTopics(
+      request: IListTopicsRequest,
+      options: CallOptions,
+      callback: PaginationCallback[IListTopicsRequest, js.UndefOr[IListTopicsResponse | Null], ITopic]
+    ): Unit = js.native
+    
+    /**
+      * Equivalent to `listTopics`, but returns an iterable object.
+      *
+      * `for`-`await`-`of` syntax is used with the iterable to get response elements on-demand.
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.project
+      *   Required. The name of the project in which to list topics.
+      *   Format is `projects/{project-id}`.
+      * @param {number} request.pageSize
+      *   Maximum number of topics to return.
+      * @param {string} request.pageToken
+      *   The value returned by the last `ListTopicsResponse`; indicates that this is
+      *   a continuation of a prior `ListTopics` call, and that the system should
+      *   return the next page of data.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
       * @returns {Object}
-      *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
+      *   An iterable Object that allows [async iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols).
+      *   When you iterate the returned iterable, each element will be an object representing
+      *   [Topic]{@link google.pubsub.v1.Topic}. The API will be called under the hood as needed, once per the page,
+      *   so you can stop the iteration when you don't need more results.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
       */
     def listTopicsAsync(): AsyncIterable[ITopic] = js.native
     def listTopicsAsync(request: Unit, options: CallOptions): AsyncIterable[ITopic] = js.native
@@ -432,18 +693,7 @@ object publisherClientMod {
     def listTopicsAsync(request: IListTopicsRequest, options: CallOptions): AsyncIterable[ITopic] = js.native
     
     /**
-      * Equivalent to {@link listTopics}, but returns a NodeJS Stream object.
-      *
-      * This fetches the paged responses for {@link listTopics} continuously
-      * and invokes the callback registered for 'data' event for each element in the
-      * responses.
-      *
-      * The returned object has 'end' method when no more elements are required.
-      *
-      * autoPaginate option will be ignored.
-      *
-      * @see {@link https://nodejs.org/api/stream.html}
-      *
+      * Equivalent to `method.name.toCamelCase()`, but returns a NodeJS Stream object.
       * @param {Object} request
       *   The request object that will be sent.
       * @param {string} request.project
@@ -459,6 +709,13 @@ object publisherClientMod {
       *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
       * @returns {Stream}
       *   An object stream which emits an object representing [Topic]{@link google.pubsub.v1.Topic} on 'data' event.
+      *   The client library will perform auto-pagination by default: it will call the API as many
+      *   times as needed. Note that it can affect your quota.
+      *   We recommend using `listTopicsAsync()`
+      *   method described below for async iteration which you can stop as needed.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
+      *   for more details and examples.
       */
     def listTopicsStream(): Transform = js.native
     def listTopicsStream(request: Unit, options: CallOptions): Transform = js.native
@@ -484,6 +741,15 @@ object publisherClientMod {
     def matchProjectFromProjectTopicName(projectTopicName: String): String | Double = js.native
     
     /**
+      * Parse the project from Schema resource.
+      *
+      * @param {string} schemaName
+      *   A fully-qualified path representing Schema resource.
+      * @returns {string} A string representing the project.
+      */
+    def matchProjectFromSchemaName(schemaName: String): String | Double = js.native
+    
+    /**
       * Parse the project from Snapshot resource.
       *
       * @param {string} snapshotName
@@ -500,6 +766,15 @@ object publisherClientMod {
       * @returns {string} A string representing the project.
       */
     def matchProjectFromSubscriptionName(subscriptionName: String): String | Double = js.native
+    
+    /**
+      * Parse the schema from Schema resource.
+      *
+      * @param {string} schemaName
+      *   A fully-qualified path representing Schema resource.
+      * @returns {string} A string representing the schema.
+      */
+    def matchSchemaFromSchemaName(schemaName: String): String | Double = js.native
     
     /**
       * Parse the snapshot from Snapshot resource.
@@ -547,6 +822,27 @@ object publisherClientMod {
       */
     def projectTopicPath(project: String, topic: String): String = js.native
     
+    /**
+      * Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic
+      * does not exist.
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {string} request.topic
+      *   Required. The messages in the request will be published on this topic.
+      *   Format is `projects/{project}/topics/{topic}`.
+      * @param {number[]} request.messages
+      *   Required. The messages to publish.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is an object representing [PublishResponse]{@link google.pubsub.v1.PublishResponse}.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
+      *   for more details and examples.
+      */
+    def publish(): js.Promise[js.Tuple3[IPublishResponse, js.UndefOr[IPublishRequest], js.UndefOr[js.Object]]] = js.native
+    def publish(request: Unit, options: CallOptions): js.Promise[js.Tuple3[IPublishResponse, js.UndefOr[IPublishRequest], js.UndefOr[js.Object]]] = js.native
     def publish(request: IPublishRequest): js.Promise[js.Tuple3[IPublishResponse, js.UndefOr[IPublishRequest], js.UndefOr[js.Object]]] = js.native
     def publish(
       request: IPublishRequest,
@@ -560,6 +856,15 @@ object publisherClientMod {
     ): Unit = js.native
     
     var publisherStub: js.UndefOr[js.Promise[StringDictionary[js.Function]]] = js.native
+    
+    /**
+      * Return a fully-qualified schema resource name string.
+      *
+      * @param {string} project
+      * @param {string} schema
+      * @returns {string} Resource name string.
+      */
+    def schemaPath(project: String, schema: String): String = js.native
     
     /**
       * Returns permissions that a caller has on the specified resource. If the
@@ -704,6 +1009,30 @@ object publisherClientMod {
         ]
     ): js.Promise[TestIamPermissionsResponse] = js.native
     
+    /**
+      * Updates an existing topic. Note that certain properties of a
+      * topic are not modifiable.
+      *
+      * @param {Object} request
+      *   The request object that will be sent.
+      * @param {google.pubsub.v1.Topic} request.topic
+      *   Required. The updated topic object.
+      * @param {google.protobuf.FieldMask} request.updateMask
+      *   Required. Indicates which fields in the provided topic to update. Must be
+      *   specified and non-empty. Note that if `update_mask` contains
+      *   "message_storage_policy" but the `message_storage_policy` is not set in
+      *   the `topic` provided above, then the updated value is determined by the
+      *   policy configured at the project or organization level.
+      * @param {object} [options]
+      *   Call options. See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions} for more details.
+      * @returns {Promise} - The promise which resolves to an array.
+      *   The first element of the array is an object representing [Topic]{@link google.pubsub.v1.Topic}.
+      *   Please see the
+      *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#regular-methods)
+      *   for more details and examples.
+      */
+    def updateTopic(): js.Promise[js.Tuple3[ITopic, js.UndefOr[IUpdateTopicRequest], js.UndefOr[js.Object]]] = js.native
+    def updateTopic(request: Unit, options: CallOptions): js.Promise[js.Tuple3[ITopic, js.UndefOr[IUpdateTopicRequest], js.UndefOr[js.Object]]] = js.native
     def updateTopic(request: IUpdateTopicRequest): js.Promise[js.Tuple3[ITopic, js.UndefOr[IUpdateTopicRequest], js.UndefOr[js.Object]]] = js.native
     def updateTopic(
       request: IUpdateTopicRequest,
@@ -715,5 +1044,8 @@ object publisherClientMod {
       options: CallOptions,
       callback: Callback[ITopic, js.UndefOr[IUpdateTopicRequest | Null], js.UndefOr[js.Object | Null]]
     ): Unit = js.native
+    
+    def warn(code: String, message: String): Unit = js.native
+    def warn(code: String, message: String, warnType: String): Unit = js.native
   }
 }

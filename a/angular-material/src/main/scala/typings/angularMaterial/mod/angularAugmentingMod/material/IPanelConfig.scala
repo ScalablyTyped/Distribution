@@ -6,6 +6,7 @@ import typings.angular.mod.IController
 import typings.angular.mod.IControllerConstructor
 import typings.angular.mod.Injectable
 import typings.std.Element
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,13 +48,13 @@ trait IPanelConfig extends StObject {
   var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, Any]] = js.undefined
   
   // default: false
-  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
   
-  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
   
-  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
   
-  var onRemoving: js.UndefOr[js.Function1[/* repeated */ Any, js.Thenable[Unit] | Unit]] = js.undefined
+  var onRemoving: js.UndefOr[js.Function1[/* repeated */ Any, PromiseLike[Unit] | Unit]] = js.undefined
   
   var origin: js.UndefOr[String | JQuery | Element] = js.undefined
   
@@ -144,19 +145,19 @@ object IPanelConfig {
     
     inline def setOnCloseSuccessUndefined: Self = StObject.set(x, "onCloseSuccess", js.undefined)
     
-    inline def setOnDomAdded(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomAdded", js.Any.fromFunction1(value))
+    inline def setOnDomAdded(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onDomAdded", js.Any.fromFunction1(value))
     
     inline def setOnDomAddedUndefined: Self = StObject.set(x, "onDomAdded", js.undefined)
     
-    inline def setOnDomRemoved(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onDomRemoved", js.Any.fromFunction1(value))
+    inline def setOnDomRemoved(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onDomRemoved", js.Any.fromFunction1(value))
     
     inline def setOnDomRemovedUndefined: Self = StObject.set(x, "onDomRemoved", js.undefined)
     
-    inline def setOnOpenComplete(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onOpenComplete", js.Any.fromFunction1(value))
+    inline def setOnOpenComplete(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onOpenComplete", js.Any.fromFunction1(value))
     
     inline def setOnOpenCompleteUndefined: Self = StObject.set(x, "onOpenComplete", js.undefined)
     
-    inline def setOnRemoving(value: /* repeated */ Any => js.Thenable[Unit] | Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction1(value))
+    inline def setOnRemoving(value: /* repeated */ Any => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction1(value))
     
     inline def setOnRemovingUndefined: Self = StObject.set(x, "onRemoving", js.undefined)
     

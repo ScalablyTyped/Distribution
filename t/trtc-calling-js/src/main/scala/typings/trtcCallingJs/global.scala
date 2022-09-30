@@ -58,18 +58,18 @@ object global {
       
       @JSGlobal("TRTCCalling.CALL_TYPE.AUDIO_CALL")
       @js.native
-      def AUDIO_CALL: typings.trtcCallingJs.trtcCallingJsNumbers.`1` = js.native
-      inline def AUDIO_CALL_=(x: typings.trtcCallingJs.trtcCallingJsNumbers.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_CALL")(x.asInstanceOf[js.Any])
+      def AUDIO_CALL: typings.trtcCallingJs.trtcCallingJsInts.`1` = js.native
+      inline def AUDIO_CALL_=(x: typings.trtcCallingJs.trtcCallingJsInts.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_CALL")(x.asInstanceOf[js.Any])
       
       @JSGlobal("TRTCCalling.CALL_TYPE.UNKNOWN")
       @js.native
-      def UNKNOWN: typings.trtcCallingJs.trtcCallingJsNumbers.`0` = js.native
-      inline def UNKNOWN_=(x: typings.trtcCallingJs.trtcCallingJsNumbers.`0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN")(x.asInstanceOf[js.Any])
+      def UNKNOWN: typings.trtcCallingJs.trtcCallingJsInts.`0` = js.native
+      inline def UNKNOWN_=(x: typings.trtcCallingJs.trtcCallingJsInts.`0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN")(x.asInstanceOf[js.Any])
       
       @JSGlobal("TRTCCalling.CALL_TYPE.VIDEO_CALL")
       @js.native
-      def VIDEO_CALL: typings.trtcCallingJs.trtcCallingJsNumbers.`2` = js.native
-      inline def VIDEO_CALL_=(x: typings.trtcCallingJs.trtcCallingJsNumbers.`2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIDEO_CALL")(x.asInstanceOf[js.Any])
+      def VIDEO_CALL: typings.trtcCallingJs.trtcCallingJsInts.`2` = js.native
+      inline def VIDEO_CALL_=(x: typings.trtcCallingJs.trtcCallingJsInts.`2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIDEO_CALL")(x.asInstanceOf[js.Any])
     }
     
     /** 监听事件类型 */

@@ -14,10 +14,9 @@ object breadcrumbMod {
   
   @JSImport("ant-design-pro/lib/PageHeader/breadcrumb", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PageHeaderProps, js.Any, js.Any]
+  open class default () extends Component[PageHeaderProps, Any, Any]
   
   inline def getBreadcrumb(breadcrumbNameMap: js.Object, url: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getBreadcrumb")(breadcrumbNameMap.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  type BreadcrumbView = Component[PageHeaderProps, js.Any, js.Any]
+  type BreadcrumbView = Component[PageHeaderProps, Any, Any]
 }

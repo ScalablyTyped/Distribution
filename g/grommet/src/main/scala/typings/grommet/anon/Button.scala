@@ -10,7 +10,7 @@ trait Button extends StObject {
   
   var button: js.UndefOr[ButtonType | String] = js.undefined
   
-  var container: js.UndefOr[BoxProps | `15`] = js.undefined
+  var container: js.UndefOr[BoxProps | `16`] = js.undefined
   
   var controls: js.UndefOr[AlignDirection] = js.undefined
   
@@ -29,7 +29,7 @@ object Button {
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    inline def setContainer(value: BoxProps | `15`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: BoxProps | `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     

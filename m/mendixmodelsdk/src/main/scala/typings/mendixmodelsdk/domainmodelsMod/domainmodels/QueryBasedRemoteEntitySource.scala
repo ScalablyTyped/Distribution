@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntitySource because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySource because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IQueryBasedRemoteEntitySource because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IQueryBasedRemoteEntitySource because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource")
 @js.native
 abstract class QueryBasedRemoteEntitySource protected () extends RemoteEntitySource {
   def this(
@@ -37,18 +37,18 @@ abstract class QueryBasedRemoteEntitySource protected () extends RemoteEntitySou
 }
 object QueryBasedRemoteEntitySource {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.QueryBasedRemoteEntitySource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

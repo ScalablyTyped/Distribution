@@ -1,46 +1,46 @@
 package typings.activexAdox.ADOX
 
-import typings.activexAdox.activexAdoxNumbers.`-2147483648`
-import typings.activexAdox.activexAdoxNumbers.`0`
-import typings.activexAdox.activexAdoxNumbers.`1024`
-import typings.activexAdox.activexAdoxNumbers.`1073741824`
-import typings.activexAdox.activexAdoxNumbers.`131072`
-import typings.activexAdox.activexAdoxNumbers.`16384`
-import typings.activexAdox.activexAdoxNumbers.`2048`
-import typings.activexAdox.activexAdoxNumbers.`256`
-import typings.activexAdox.activexAdoxNumbers.`262144`
-import typings.activexAdox.activexAdoxNumbers.`268435456`
-import typings.activexAdox.activexAdoxNumbers.`32768`
-import typings.activexAdox.activexAdoxNumbers.`33554432`
-import typings.activexAdox.activexAdoxNumbers.`4096`
-import typings.activexAdox.activexAdoxNumbers.`512`
-import typings.activexAdox.activexAdoxNumbers.`524288`
-import typings.activexAdox.activexAdoxNumbers.`536870912`
-import typings.activexAdox.activexAdoxNumbers.`65536`
-import typings.activexAdox.activexAdoxNumbers.`8192`
+import typings.activexAdox.activexAdoxDoubles.`-2147483648`
+import typings.activexAdox.activexAdoxInts.`0`
+import typings.activexAdox.activexAdoxInts.`1024`
+import typings.activexAdox.activexAdoxInts.`1073741824`
+import typings.activexAdox.activexAdoxInts.`131072`
+import typings.activexAdox.activexAdoxInts.`16384`
+import typings.activexAdox.activexAdoxInts.`2048`
+import typings.activexAdox.activexAdoxInts.`256`
+import typings.activexAdox.activexAdoxInts.`262144`
+import typings.activexAdox.activexAdoxInts.`268435456`
+import typings.activexAdox.activexAdoxInts.`32768`
+import typings.activexAdox.activexAdoxInts.`33554432`
+import typings.activexAdox.activexAdoxInts.`4096`
+import typings.activexAdox.activexAdoxInts.`512`
+import typings.activexAdox.activexAdoxInts.`524288`
+import typings.activexAdox.activexAdoxInts.`536870912`
+import typings.activexAdox.activexAdoxInts.`65536`
+import typings.activexAdox.activexAdoxInts.`8192`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdox.activexAdoxNumbers.`16384`
-  - typings.activexAdox.activexAdoxNumbers.`65536`
-  - typings.activexAdox.activexAdoxNumbers.`256`
-  - typings.activexAdox.activexAdoxNumbers.`512`
-  - typings.activexAdox.activexAdoxNumbers.`536870912`
-  - typings.activexAdox.activexAdoxNumbers.`268435456`
-  - typings.activexAdox.activexAdoxNumbers.`32768`
-  - typings.activexAdox.activexAdoxNumbers.`33554432`
-  - typings.activexAdox.activexAdoxNumbers.`0`
-  - typings.activexAdox.activexAdoxNumbers.`-2147483648`
-  - typings.activexAdox.activexAdoxNumbers.`1024`
-  - typings.activexAdox.activexAdoxNumbers.`131072`
-  - typings.activexAdox.activexAdoxNumbers.`8192`
-  - typings.activexAdox.activexAdoxNumbers.`1073741824`
-  - typings.activexAdox.activexAdoxNumbers.`4096`
-  - typings.activexAdox.activexAdoxNumbers.`2048`
-  - typings.activexAdox.activexAdoxNumbers.`524288`
-  - typings.activexAdox.activexAdoxNumbers.`262144`
+  - typings.activexAdox.activexAdoxInts.`16384`
+  - typings.activexAdox.activexAdoxInts.`65536`
+  - typings.activexAdox.activexAdoxInts.`256`
+  - typings.activexAdox.activexAdoxInts.`512`
+  - typings.activexAdox.activexAdoxInts.`536870912`
+  - typings.activexAdox.activexAdoxInts.`268435456`
+  - typings.activexAdox.activexAdoxInts.`32768`
+  - typings.activexAdox.activexAdoxInts.`33554432`
+  - typings.activexAdox.activexAdoxInts.`0`
+  - typings.activexAdox.activexAdoxDoubles.`-2147483648`
+  - typings.activexAdox.activexAdoxInts.`1024`
+  - typings.activexAdox.activexAdoxInts.`131072`
+  - typings.activexAdox.activexAdoxInts.`8192`
+  - typings.activexAdox.activexAdoxInts.`1073741824`
+  - typings.activexAdox.activexAdoxInts.`4096`
+  - typings.activexAdox.activexAdoxInts.`2048`
+  - typings.activexAdox.activexAdoxInts.`524288`
+  - typings.activexAdox.activexAdoxInts.`262144`
 */
 trait RightsEnum extends StObject
 object RightsEnum {
@@ -63,7 +63,7 @@ object RightsEnum {
   
   inline def adRightNone: `0` = 0.asInstanceOf[`0`]
   
-  inline def adRightRead: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
+  inline def adRightRead: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
   
   inline def adRightReadDesign: `1024` = 1024.asInstanceOf[`1024`]
   

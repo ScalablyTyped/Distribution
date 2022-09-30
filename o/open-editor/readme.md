@@ -1,7 +1,7 @@
 
 # Scala.js typings for open-editor
 
-Typings are for version 2.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Open files in your editor at a specific line and column
@@ -10,10 +10,10 @@ Open files in your editor at a specific line and column
 | ------------------ | :-------------: |
 | Full name          | open-editor |
 | Keywords           | open, editor, launch, files, file, line, column, position, path, filepath, editors, start, app, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij, emacs, nano |
-| # releases         | 4 |
-| # dependents       | 24 |
-| # downloads        | 1443715 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 218881.0 |
+| # stars            | 145.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/open-editor#readme)

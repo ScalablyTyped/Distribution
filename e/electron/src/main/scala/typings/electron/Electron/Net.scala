@@ -7,8 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Net extends StObject {
   
-  def request(options: String): ClientRequest = js.native
   // Docs: https://electronjs.org/docs/api/net
+  /**
+    * Whether there is currently internet connection.
+    *
+    * A return value of `false` is a pretty strong indicator that the user won't be
+    * able to connect to remote sites. However, a return value of `true` is
+    * inconclusive; even if some link is up, it is uncertain whether a particular
+    * connection attempt to a particular remote site will be successful.
+    */
+  def isOnline(): Boolean = js.native
+  
+  /**
+    * A `boolean` property. Whether there is currently internet connection.
+    *
+    * A return value of `false` is a pretty strong indicator that the user won't be
+    * able to connect to remote sites. However, a return value of `true` is
+    * inconclusive; even if some link is up, it is uncertain whether a particular
+    * connection attempt to a particular remote site will be successful.
+    *
+    */
+  val online: Boolean = js.native
+  
+  def request(options: String): ClientRequest = js.native
   /**
     * Creates a `ClientRequest` instance using the provided `options` which are
     * directly forwarded to the `ClientRequest` constructor. The `net.request` method

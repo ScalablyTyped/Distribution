@@ -188,7 +188,7 @@ trait Typeoferror extends StObject {
   /**
     * Lookup the err in table of errors.
     */
-  def encodeError(err: js.Any): Error = js.native
+  def encodeError(err: Any): Error = js.native
   
   def throwDecodedError(data: String): scala.Nothing = js.native
   /**

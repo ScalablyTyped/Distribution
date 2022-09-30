@@ -1,7 +1,11 @@
 package typings.wordpressBlocks
 
+import typings.wordpressBlocks.mod.AttributeSource.None
+import typings.wordpressBlocks.mod.AxialDirection
 import typings.wordpressBlocks.mod.BlockAlignment
 import typings.wordpressBlocks.mod.BlockIcon
+import typings.wordpressBlocks.mod.BlockVariationScope
+import typings.wordpressBlocks.mod.CSSDirection
 import typings.wordpressBlocks.parserMod._SourceReturnValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,6 +42,14 @@ object wordpressBlocksStrings {
   inline def INLINE: INLINE = "INLINE".asInstanceOf[INLINE]
   
   @js.native
+  sealed trait PartialBlock extends StObject
+  inline def PartialBlock: PartialBlock = "PartialBlock".asInstanceOf[PartialBlock]
+  
+  @js.native
+  sealed trait PartialBlockinnerBlocksRe extends StObject
+  inline def PartialBlockinnerBlocksRe: PartialBlockinnerBlocksRe = "PartialBlockinnerBlocksRe".asInstanceOf[PartialBlockinnerBlocksRe]
+  
+  @js.native
   sealed trait Query extends StObject
   inline def Query: Query = "Query".asInstanceOf[Query]
   
@@ -48,13 +60,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait a
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def a: a = "a".asInstanceOf[a]
   
   @js.native
   sealed trait abbr
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
@@ -68,7 +80,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait address
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
@@ -192,6 +204,12 @@ object wordpressBlocksStrings {
   inline def `admin-users`: `admin-users` = "admin-users".asInstanceOf[`admin-users`]
   
   @js.native
+  sealed trait airplane
+    extends StObject
+       with BlockIcon
+  inline def airplane: airplane = "airplane".asInstanceOf[airplane]
+  
+  @js.native
   sealed trait album
     extends StObject
        with BlockIcon
@@ -254,6 +272,12 @@ object wordpressBlocksStrings {
   inline def alignWide: alignWide = "alignWide".asInstanceOf[alignWide]
   
   @js.native
+  sealed trait amazon
+    extends StObject
+       with BlockIcon
+  inline def amazon: amazon = "amazon".asInstanceOf[amazon]
+  
+  @js.native
   sealed trait analytics
     extends StObject
        with BlockIcon
@@ -264,10 +288,22 @@ object wordpressBlocksStrings {
   inline def anchor: anchor = "anchor".asInstanceOf[anchor]
   
   @js.native
-  sealed trait applet
+  sealed trait animate
     extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def applet: applet = "applet".asInstanceOf[applet]
+       with _SourceReturnValue[Any]
+  inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateMotion
+    extends StObject
+       with _SourceReturnValue[Any]
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform
+    extends StObject
+       with _SourceReturnValue[Any]
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
   sealed trait archive
@@ -278,11 +314,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait area
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait array extends StObject
+  sealed trait array
+    extends StObject
+       with None
   inline def array: array = "array".asInstanceOf[array]
   
   @js.native
@@ -366,13 +404,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait article
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def article: article = "article".asInstanceOf[article]
   
   @js.native
   sealed trait aside
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def aside: aside = "aside".asInstanceOf[aside]
   
   @js.native
@@ -382,7 +420,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait audio
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
@@ -398,7 +436,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait b
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def b: b = "b".asInstanceOf[b]
   
   @js.native
@@ -414,28 +452,40 @@ object wordpressBlocksStrings {
   inline def backup: backup = "backup".asInstanceOf[backup]
   
   @js.native
-  sealed trait base
+  sealed trait bank
     extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def base: base = "base".asInstanceOf[base]
+       with BlockIcon
+  inline def bank: bank = "bank".asInstanceOf[bank]
   
   @js.native
-  sealed trait basefont
+  sealed trait base
     extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
+       with _SourceReturnValue[Any]
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
   sealed trait bdi
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
   @js.native
   sealed trait bdo
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
+  
+  @js.native
+  sealed trait beer
+    extends StObject
+       with BlockIcon
+  inline def beer: beer = "beer".asInstanceOf[beer]
+  
+  @js.native
+  sealed trait bell
+    extends StObject
+       with BlockIcon
+  inline def bell: bell = "bell".asInstanceOf[bell]
   
   @js.native
   sealed trait `block-default`
@@ -444,19 +494,21 @@ object wordpressBlocksStrings {
   inline def `block-default`: `block-default` = "block-default".asInstanceOf[`block-default`]
   
   @js.native
-  sealed trait block_ extends StObject
+  sealed trait block_
+    extends StObject
+       with BlockVariationScope
   inline def block_ : block_ = "block".asInstanceOf[block_]
   
   @js.native
   sealed trait blockquote
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
   sealed trait body
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def body: body = "body".asInstanceOf[body]
   
   @js.native
@@ -472,13 +524,21 @@ object wordpressBlocksStrings {
   inline def `book-alt`: `book-alt` = "book-alt".asInstanceOf[`book-alt`]
   
   @js.native
-  sealed trait boolean extends StObject
+  sealed trait boolean
+    extends StObject
+       with None
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  @js.native
+  sealed trait bottom
+    extends StObject
+       with CSSDirection
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait br
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def br: br = "br".asInstanceOf[br]
   
   @js.native
@@ -560,11 +620,29 @@ object wordpressBlocksStrings {
   inline def businessman: businessman = "businessman".asInstanceOf[businessman]
   
   @js.native
+  sealed trait businessperson
+    extends StObject
+       with BlockIcon
+  inline def businessperson: businessperson = "businessperson".asInstanceOf[businessperson]
+  
+  @js.native
+  sealed trait businesswoman
+    extends StObject
+       with BlockIcon
+  inline def businesswoman: businesswoman = "businesswoman".asInstanceOf[businesswoman]
+  
+  @js.native
   sealed trait button
     extends StObject
        with BlockIcon
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def button: button = "button".asInstanceOf[button]
+  
+  @js.native
+  sealed trait calculator
+    extends StObject
+       with BlockIcon
+  inline def calculator: calculator = "calculator".asInstanceOf[calculator]
   
   @js.native
   sealed trait calendar
@@ -585,16 +663,28 @@ object wordpressBlocksStrings {
   inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
+  sealed trait `camera-alt`
+    extends StObject
+       with BlockIcon
+  inline def `camera-alt`: `camera-alt` = "camera-alt".asInstanceOf[`camera-alt`]
+  
+  @js.native
   sealed trait canvas
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
   sealed trait caption
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait car
+    extends StObject
+       with BlockIcon
+  inline def car: car = "car".asInstanceOf[car]
   
   @js.native
   sealed trait carrot
@@ -661,13 +751,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait circle
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait cite
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
@@ -677,7 +767,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait clipPath
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
@@ -713,20 +803,42 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait code
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def code: code = "code".asInstanceOf[code]
+  
+  @js.native
+  sealed trait `code-standards`
+    extends StObject
+       with BlockIcon
+  inline def `code-standards`: `code-standards` = "code-standards".asInstanceOf[`code-standards`]
+  
+  @js.native
+  sealed trait coffee
+    extends StObject
+       with BlockIcon
+  inline def coffee: coffee = "coffee".asInstanceOf[coffee]
   
   @js.native
   sealed trait col
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def col: col = "col".asInstanceOf[col]
   
   @js.native
   sealed trait colgroup
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
+  
+  @js.native
+  sealed trait color extends StObject
+  inline def color: color = "color".asInstanceOf[color]
+  
+  @js.native
+  sealed trait `color-picker`
+    extends StObject
+       with BlockIcon
+  inline def `color-picker`: `color-picker` = "color-picker".asInstanceOf[`color-picker`]
   
   @js.native
   sealed trait columns
@@ -827,19 +939,55 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait data
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def data: data = "data".asInstanceOf[data]
+  
+  @js.native
+  sealed trait database
+    extends StObject
+       with BlockIcon
+  inline def database: database = "database".asInstanceOf[database]
+  
+  @js.native
+  sealed trait `database-add`
+    extends StObject
+       with BlockIcon
+  inline def `database-add`: `database-add` = "database-add".asInstanceOf[`database-add`]
+  
+  @js.native
+  sealed trait `database-export`
+    extends StObject
+       with BlockIcon
+  inline def `database-export`: `database-export` = "database-export".asInstanceOf[`database-export`]
+  
+  @js.native
+  sealed trait `database-import`
+    extends StObject
+       with BlockIcon
+  inline def `database-import`: `database-import` = "database-import".asInstanceOf[`database-import`]
+  
+  @js.native
+  sealed trait `database-remove`
+    extends StObject
+       with BlockIcon
+  inline def `database-remove`: `database-remove` = "database-remove".asInstanceOf[`database-remove`]
+  
+  @js.native
+  sealed trait `database-view`
+    extends StObject
+       with BlockIcon
+  inline def `database-view`: `database-view` = "database-view".asInstanceOf[`database-view`]
   
   @js.native
   sealed trait datalist
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
   sealed trait dd
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
@@ -851,19 +999,19 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait defs
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def defs: defs = "defs".asInstanceOf[defs]
   
   @js.native
   sealed trait del
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def del: del = "del".asInstanceOf[del]
   
   @js.native
   sealed trait desc
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
@@ -875,25 +1023,23 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait details
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def details: details = "details".asInstanceOf[details]
   
   @js.native
   sealed trait dfn
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
   sealed trait dialog
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir
-    extends StObject
-       with _SourceReturnValue[js.Any]
+  sealed trait dir extends StObject
   inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
@@ -911,13 +1057,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait div
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def div: div = "div".asInstanceOf[div]
   
   @js.native
   sealed trait dl
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
@@ -931,9 +1077,15 @@ object wordpressBlocksStrings {
   inline def draggable: draggable = "draggable".asInstanceOf[draggable]
   
   @js.native
+  sealed trait drumstick
+    extends StObject
+       with BlockIcon
+  inline def drumstick: drumstick = "drumstick".asInstanceOf[drumstick]
+  
+  @js.native
   sealed trait dt
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def dt: dt = "dt".asInstanceOf[dt]
   
   @js.native
@@ -941,6 +1093,18 @@ object wordpressBlocksStrings {
     extends StObject
        with BlockIcon
   inline def edit: edit = "edit".asInstanceOf[edit]
+  
+  @js.native
+  sealed trait `edit-large`
+    extends StObject
+       with BlockIcon
+  inline def `edit-large`: `edit-large` = "edit-large".asInstanceOf[`edit-large`]
+  
+  @js.native
+  sealed trait `edit-page`
+    extends StObject
+       with BlockIcon
+  inline def `edit-page`: `edit-page` = "edit-page".asInstanceOf[`edit-page`]
   
   @js.native
   sealed trait `editor-aligncenter`
@@ -1143,7 +1307,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait ellipse
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
@@ -1155,7 +1319,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait em
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def em: em = "em".asInstanceOf[em]
   
   @js.native
@@ -1179,7 +1343,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait embed
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
@@ -1249,145 +1413,151 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait feBlend
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   
   @js.native
   sealed trait feColorMatrix
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
   
   @js.native
   sealed trait feComponentTransfer
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
   
   @js.native
   sealed trait feComposite
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
   
   @js.native
   sealed trait feConvolveMatrix
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
   
   @js.native
   sealed trait feDiffuseLighting
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
   
   @js.native
   sealed trait feDisplacementMap
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
   
   @js.native
   sealed trait feDistantLight
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  
+  @js.native
+  sealed trait feDropShadow
+    extends StObject
+       with _SourceReturnValue[Any]
+  inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   
   @js.native
   sealed trait feFlood
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
   
   @js.native
   sealed trait feFuncA
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
   
   @js.native
   sealed trait feFuncB
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
   
   @js.native
   sealed trait feFuncG
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
   
   @js.native
   sealed trait feFuncR
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
   
   @js.native
   sealed trait feGaussianBlur
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
   
   @js.native
   sealed trait feImage
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feImage: feImage = "feImage".asInstanceOf[feImage]
   
   @js.native
   sealed trait feMerge
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
   
   @js.native
   sealed trait feMergeNode
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
   
   @js.native
   sealed trait feMorphology
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
   
   @js.native
   sealed trait feOffset
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
   
   @js.native
   sealed trait fePointLight
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
   
   @js.native
   sealed trait feSpecularLighting
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
   
   @js.native
   sealed trait feSpotLight
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
   
   @js.native
   sealed trait feTile
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feTile: feTile = "feTile".asInstanceOf[feTile]
   
   @js.native
   sealed trait feTurbulence
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   
   @js.native
@@ -1399,19 +1569,19 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait fieldset
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   
   @js.native
   sealed trait figcaption
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
   
   @js.native
   sealed trait figure
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
@@ -1422,7 +1592,7 @@ object wordpressBlocksStrings {
   sealed trait filter
     extends StObject
        with BlockIcon
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
@@ -1432,15 +1602,15 @@ object wordpressBlocksStrings {
   inline def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
-  sealed trait font
+  sealed trait food
     extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def font: font = "font".asInstanceOf[font]
+       with BlockIcon
+  inline def food: food = "food".asInstanceOf[food]
   
   @js.native
   sealed trait footer
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
@@ -1452,13 +1622,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait foreignObject
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
   
   @js.native
   sealed trait form
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def form: form = "form".asInstanceOf[form]
   
   @js.native
@@ -1516,18 +1686,6 @@ object wordpressBlocksStrings {
   inline def forms: forms = "forms".asInstanceOf[forms]
   
   @js.native
-  sealed trait frame
-    extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset
-    extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
-  
-  @js.native
   sealed trait from extends StObject
   inline def from: from = "from".asInstanceOf[from]
   
@@ -1538,16 +1696,34 @@ object wordpressBlocksStrings {
   inline def full: full = "full".asInstanceOf[full]
   
   @js.native
+  sealed trait `fullscreen-alt`
+    extends StObject
+       with BlockIcon
+  inline def `fullscreen-alt`: `fullscreen-alt` = "fullscreen-alt".asInstanceOf[`fullscreen-alt`]
+  
+  @js.native
+  sealed trait `fullscreen-exit-alt`
+    extends StObject
+       with BlockIcon
+  inline def `fullscreen-exit-alt`: `fullscreen-exit-alt` = "fullscreen-exit-alt".asInstanceOf[`fullscreen-exit-alt`]
+  
+  @js.native
   sealed trait g
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait googleplus
+  sealed trait games
     extends StObject
        with BlockIcon
-  inline def googleplus: googleplus = "googleplus".asInstanceOf[googleplus]
+  inline def games: games = "games".asInstanceOf[games]
+  
+  @js.native
+  sealed trait google
+    extends StObject
+       with BlockIcon
+  inline def google: google = "google".asInstanceOf[google]
   
   @js.native
   sealed trait `grid-view`
@@ -1564,37 +1740,37 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait h1
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
   sealed trait h2
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
   sealed trait h3
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
   sealed trait h4
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
   sealed trait h5
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
   sealed trait h6
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
@@ -1606,13 +1782,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait head
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def head: head = "head".asInstanceOf[head]
   
   @js.native
   sealed trait header
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
@@ -1630,7 +1806,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait hgroup
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
@@ -1640,9 +1816,21 @@ object wordpressBlocksStrings {
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
+  sealed trait horizontal
+    extends StObject
+       with AxialDirection
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait hourglass
+    extends StObject
+       with BlockIcon
+  inline def hourglass: hourglass = "hourglass".asInstanceOf[hourglass]
+  
+  @js.native
   sealed trait hr
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
@@ -1653,13 +1841,13 @@ object wordpressBlocksStrings {
   sealed trait html
     extends StObject
        with BlockIcon
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait i
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def i: i = "i".asInstanceOf[i]
   
   @js.native
@@ -1677,13 +1865,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait iframe
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
   sealed trait image
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
@@ -1743,7 +1931,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait img
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
@@ -1751,6 +1939,10 @@ object wordpressBlocksStrings {
     extends StObject
        with BlockIcon
   inline def `index-card`: `index-card` = "index-card".asInstanceOf[`index-card`]
+  
+  @js.native
+  sealed trait inert extends StObject
+  inline def inert: inert = "inert".asInstanceOf[inert]
   
   @js.native
   sealed trait info
@@ -1771,13 +1963,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait input
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
   sealed trait ins
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def ins: ins = "ins".asInstanceOf[ins]
   
   @js.native
@@ -1799,7 +1991,9 @@ object wordpressBlocksStrings {
   inline def `insert-before`: `insert-before` = "insert-before".asInstanceOf[`insert-before`]
   
   @js.native
-  sealed trait inserter extends StObject
+  sealed trait inserter
+    extends StObject
+       with BlockVariationScope
   inline def inserter: inserter = "inserter".asInstanceOf[inserter]
   
   @js.native
@@ -1811,7 +2005,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait kbd
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
@@ -1821,15 +2015,9 @@ object wordpressBlocksStrings {
   inline def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait `keyboard-hide`
-    extends StObject
-       with BlockIcon
-  inline def `keyboard-hide`: `keyboard-hide` = "keyboard-hide".asInstanceOf[`keyboard-hide`]
-  
-  @js.native
   sealed trait label
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
@@ -1852,6 +2040,7 @@ object wordpressBlocksStrings {
   sealed trait left
     extends StObject
        with BlockAlignment
+       with CSSDirection
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -1863,13 +2052,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait legend
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
   sealed trait li
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def li: li = "li".asInstanceOf[li]
   
   @js.native
@@ -1881,20 +2070,26 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait line
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait linearGradient
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
   sealed trait link
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait linkedin
+    extends StObject
+       with BlockIcon
+  inline def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
   
   @js.native
   sealed trait `list-view`
@@ -1923,38 +2118,32 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait main
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
   sealed trait map
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def map: map = "map".asInstanceOf[map]
   
   @js.native
   sealed trait mark
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
   sealed trait marker
     extends StObject
        with BlockIcon
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def marker: marker = "marker".asInstanceOf[marker]
-  
-  @js.native
-  sealed trait marquee
-    extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
   
   @js.native
   sealed trait mask
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
@@ -2021,7 +2210,7 @@ object wordpressBlocksStrings {
   sealed trait menu
     extends StObject
        with BlockIcon
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
@@ -2031,21 +2220,33 @@ object wordpressBlocksStrings {
   inline def `menu-alt`: `menu-alt` = "menu-alt".asInstanceOf[`menu-alt`]
   
   @js.native
+  sealed trait `menu-alt2`
+    extends StObject
+       with BlockIcon
+  inline def `menu-alt2`: `menu-alt2` = "menu-alt2".asInstanceOf[`menu-alt2`]
+  
+  @js.native
+  sealed trait `menu-alt3`
+    extends StObject
+       with BlockIcon
+  inline def `menu-alt3`: `menu-alt3` = "menu-alt3".asInstanceOf[`menu-alt3`]
+  
+  @js.native
   sealed trait meta
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
   sealed trait metadata
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
   sealed trait meter
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
@@ -2073,10 +2274,22 @@ object wordpressBlocksStrings {
   inline def money: money = "money".asInstanceOf[money]
   
   @js.native
+  sealed trait `money-alt`
+    extends StObject
+       with BlockIcon
+  inline def `money-alt`: `money-alt` = "money-alt".asInstanceOf[`money-alt`]
+  
+  @js.native
   sealed trait move
     extends StObject
        with BlockIcon
   inline def move: move = "move".asInstanceOf[move]
+  
+  @js.native
+  sealed trait mpath
+    extends StObject
+       with _SourceReturnValue[Any]
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
   sealed trait multiple extends StObject
@@ -2095,7 +2308,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait nav
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
@@ -2123,17 +2336,20 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait noscript
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
   
   @js.native
-  sealed trait number extends StObject
+  sealed trait number
+    extends StObject
+       with None
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait `object`
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with None
+       with _SourceReturnValue[Any]
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
@@ -2159,31 +2375,41 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait ol
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def ol: ol = "ol".asInstanceOf[ol]
+  
+  @js.native
+  sealed trait `open-folder`
+    extends StObject
+       with BlockIcon
+  inline def `open-folder`: `open-folder` = "open-folder".asInstanceOf[`open-folder`]
   
   @js.native
   sealed trait optgroup
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   
   @js.native
   sealed trait option
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def option: option = "option".asInstanceOf[option]
+  
+  @js.native
+  sealed trait outerText extends StObject
+  inline def outerText: outerText = "outerText".asInstanceOf[outerText]
   
   @js.native
   sealed trait output
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
   sealed trait p
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def p: p = "p".asInstanceOf[p]
   
   @js.native
@@ -2199,32 +2425,38 @@ object wordpressBlocksStrings {
   inline def paperclip: paperclip = "paperclip".asInstanceOf[paperclip]
   
   @js.native
-  sealed trait param
-    extends StObject
-       with _SourceReturnValue[js.Any]
-  inline def param: param = "param".asInstanceOf[param]
-  
-  @js.native
   sealed trait parseWithAttributeSchema extends StObject
   inline def parseWithAttributeSchema: parseWithAttributeSchema = "parseWithAttributeSchema".asInstanceOf[parseWithAttributeSchema]
   
   @js.native
   sealed trait path
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def path: path = "path".asInstanceOf[path]
   
   @js.native
   sealed trait pattern
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def pattern: pattern = "pattern".asInstanceOf[pattern]
+  
+  @js.native
+  sealed trait pdf
+    extends StObject
+       with BlockIcon
+  inline def pdf: pdf = "pdf".asInstanceOf[pdf]
   
   @js.native
   sealed trait performance
     extends StObject
        with BlockIcon
   inline def performance: performance = "performance".asInstanceOf[performance]
+  
+  @js.native
+  sealed trait pets
+    extends StObject
+       with BlockIcon
+  inline def pets: pets = "pets".asInstanceOf[pets]
   
   @js.native
   sealed trait phone
@@ -2235,12 +2467,18 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait picture
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
   sealed trait ping extends StObject
   inline def ping: ping = "ping".asInstanceOf[ping]
+  
+  @js.native
+  sealed trait pinterest
+    extends StObject
+       with BlockIcon
+  inline def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   
   @js.native
   sealed trait `playlist-audio`
@@ -2255,6 +2493,12 @@ object wordpressBlocksStrings {
   inline def `playlist-video`: `playlist-video` = "playlist-video".asInstanceOf[`playlist-video`]
   
   @js.native
+  sealed trait `plugins-checked`
+    extends StObject
+       with BlockIcon
+  inline def `plugins-checked`: `plugins-checked` = "plugins-checked".asInstanceOf[`plugins-checked`]
+  
+  @js.native
   sealed trait plus
     extends StObject
        with BlockIcon
@@ -2267,21 +2511,27 @@ object wordpressBlocksStrings {
   inline def `plus-alt`: `plus-alt` = "plus-alt".asInstanceOf[`plus-alt`]
   
   @js.native
-  sealed trait `plus-light`
+  sealed trait `plus-alt2`
     extends StObject
        with BlockIcon
-  inline def `plus-light`: `plus-light` = "plus-light".asInstanceOf[`plus-light`]
+  inline def `plus-alt2`: `plus-alt2` = "plus-alt2".asInstanceOf[`plus-alt2`]
+  
+  @js.native
+  sealed trait podio
+    extends StObject
+       with BlockIcon
+  inline def podio: podio = "podio".asInstanceOf[podio]
   
   @js.native
   sealed trait polygon
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def polygon: polygon = "polygon".asInstanceOf[polygon]
   
   @js.native
   sealed trait polyline
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
@@ -2299,7 +2549,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait pre
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
@@ -2313,6 +2563,18 @@ object wordpressBlocksStrings {
   inline def pressthis: pressthis = "pressthis".asInstanceOf[pressthis]
   
   @js.native
+  sealed trait printer
+    extends StObject
+       with BlockIcon
+  inline def printer: printer = "printer".asInstanceOf[printer]
+  
+  @js.native
+  sealed trait privacy
+    extends StObject
+       with BlockIcon
+  inline def privacy: privacy = "privacy".asInstanceOf[privacy]
+  
+  @js.native
   sealed trait products
     extends StObject
        with BlockIcon
@@ -2321,7 +2583,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait progress
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
@@ -2339,7 +2601,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait q
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def q: q = "q".asInstanceOf[q]
   
   @js.native
@@ -2349,7 +2611,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait radialGradient
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   
   @js.native
@@ -2365,8 +2627,14 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait rect
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def rect: rect = "rect".asInstanceOf[rect]
+  
+  @js.native
+  sealed trait reddit
+    extends StObject
+       with BlockIcon
+  inline def reddit: reddit = "reddit".asInstanceOf[reddit]
   
   @js.native
   sealed trait redo
@@ -2410,12 +2678,13 @@ object wordpressBlocksStrings {
   sealed trait right
     extends StObject
        with BlockAlignment
+       with CSSDirection
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait rp
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def rp: rp = "rp".asInstanceOf[rp]
   
   @js.native
@@ -2427,25 +2696,25 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait rt
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
   sealed trait ruby
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
   sealed trait s
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def s: s = "s".asInstanceOf[s]
   
   @js.native
   sealed trait samp
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def samp: samp = "samp".asInstanceOf[samp]
   
   @js.native
@@ -2469,7 +2738,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait script
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
@@ -2481,14 +2750,20 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait section
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def section: section = "section".asInstanceOf[section]
   
   @js.native
   sealed trait select
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def select: select = "select".asInstanceOf[select]
+  
+  @js.native
+  sealed trait set
+    extends StObject
+       with _SourceReturnValue[Any]
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
   sealed trait shadowColor
@@ -2545,13 +2820,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait slot
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
   sealed trait small
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
@@ -2581,18 +2856,28 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait source
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def source: source = "source".asInstanceOf[source]
+  
+  @js.native
+  sealed trait spacing extends StObject
+  inline def spacing: spacing = "spacing".asInstanceOf[spacing]
   
   @js.native
   sealed trait span
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def span: span = "span".asInstanceOf[span]
   
   @js.native
   sealed trait spellcheck extends StObject
   inline def spellcheck: spellcheck = "spellcheck".asInstanceOf[spellcheck]
+  
+  @js.native
+  sealed trait spotify
+    extends StObject
+       with BlockIcon
+  inline def spotify: spotify = "spotify".asInstanceOf[spotify]
   
   @js.native
   sealed trait src
@@ -2627,7 +2912,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait stop
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
@@ -2637,61 +2922,75 @@ object wordpressBlocksStrings {
   inline def store: store = "store".asInstanceOf[store]
   
   @js.native
-  sealed trait string extends StObject
+  sealed trait string
+    extends StObject
+       with None
   inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait strong
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
   sealed trait style
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def style: style = "style".asInstanceOf[style]
   
   @js.native
   sealed trait sub
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
   sealed trait summary
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
   sealed trait sup
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def sup: sup = "sup".asInstanceOf[sup]
+  
+  @js.native
+  sealed trait superhero
+    extends StObject
+       with BlockIcon
+  inline def superhero: superhero = "superhero".asInstanceOf[superhero]
+  
+  @js.native
+  sealed trait `superhero-alt`
+    extends StObject
+       with BlockIcon
+  inline def `superhero-alt`: `superhero-alt` = "superhero-alt".asInstanceOf[`superhero-alt`]
   
   @js.native
   sealed trait svg
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def svg: svg = "svg".asInstanceOf[svg]
   
   @js.native
   sealed trait switch
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
   sealed trait symbol
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
   sealed trait table
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def table: table = "table".asInstanceOf[table]
   
   @js.native
@@ -2755,19 +3054,19 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait tbody
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def tbody: tbody = "tbody".asInstanceOf[tbody]
   
   @js.native
   sealed trait td
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def td: td = "td".asInstanceOf[td]
   
   @js.native
   sealed trait template
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
@@ -2780,37 +3079,43 @@ object wordpressBlocksStrings {
   sealed trait text
     extends StObject
        with BlockIcon
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait `text-page`
+    extends StObject
+       with BlockIcon
+  inline def `text-page`: `text-page` = "text-page".asInstanceOf[`text-page`]
   
   @js.native
   sealed trait textPath
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def textPath: textPath = "textPath".asInstanceOf[textPath]
   
   @js.native
   sealed trait textarea
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
   sealed trait tfoot
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
   
   @js.native
   sealed trait th
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def th: th = "th".asInstanceOf[th]
   
   @js.native
   sealed trait thead
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def thead: thead = "thead".asInstanceOf[thead]
   
   @js.native
@@ -2846,13 +3151,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait time
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait title
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def title: title = "title".asInstanceOf[title]
   
   @js.native
@@ -2860,16 +3165,28 @@ object wordpressBlocksStrings {
   inline def to: to = "to".asInstanceOf[to]
   
   @js.native
+  sealed trait top
+    extends StObject
+       with CSSDirection
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
   sealed trait tr
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def tr: tr = "tr".asInstanceOf[tr]
   
   @js.native
   sealed trait track
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def track: track = "track".asInstanceOf[track]
+  
+  @js.native
+  sealed trait transform
+    extends StObject
+       with BlockVariationScope
+  inline def transform: transform = "transform".asInstanceOf[transform]
   
   @js.native
   sealed trait translate extends StObject
@@ -2890,8 +3207,14 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait tspan
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
+  
+  @js.native
+  sealed trait twitch
+    extends StObject
+       with BlockIcon
+  inline def twitch: twitch = "twitch".asInstanceOf[twitch]
   
   @js.native
   sealed trait twitter
@@ -2900,21 +3223,31 @@ object wordpressBlocksStrings {
   inline def twitter: twitter = "twitter".asInstanceOf[twitter]
   
   @js.native
+  sealed trait `twitter-alt`
+    extends StObject
+       with BlockIcon
+  inline def `twitter-alt`: `twitter-alt` = "twitter-alt".asInstanceOf[`twitter-alt`]
+  
+  @js.native
   sealed trait `type`
     extends StObject
        with BlockIcon
   inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
+  sealed trait typography extends StObject
+  inline def typography: typography = "typography".asInstanceOf[typography]
+  
+  @js.native
   sealed trait u
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def u: u = "u".asInstanceOf[u]
   
   @js.native
   sealed trait ul
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
@@ -2948,6 +3281,12 @@ object wordpressBlocksStrings {
   inline def update: update = "update".asInstanceOf[update]
   
   @js.native
+  sealed trait `update-alt`
+    extends StObject
+       with BlockIcon
+  inline def `update-alt`: `update-alt` = "update-alt".asInstanceOf[`update-alt`]
+  
+  @js.native
   sealed trait upload
     extends StObject
        with BlockIcon
@@ -2956,13 +3295,13 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait use
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def use: use = "use".asInstanceOf[use]
   
   @js.native
   sealed trait `var`
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
@@ -2972,9 +3311,15 @@ object wordpressBlocksStrings {
   inline def vault: vault = "vault".asInstanceOf[vault]
   
   @js.native
+  sealed trait vertical
+    extends StObject
+       with AxialDirection
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
   sealed trait video
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def video: video = "video".asInstanceOf[video]
   
   @js.native
@@ -2998,7 +3343,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait view
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def view: view = "view".asInstanceOf[view]
   
   @js.native
@@ -3016,7 +3361,7 @@ object wordpressBlocksStrings {
   @js.native
   sealed trait wbr
     extends StObject
-       with _SourceReturnValue[js.Any]
+       with _SourceReturnValue[Any]
   inline def wbr: wbr = "wbr".asInstanceOf[wbr]
   
   @js.native
@@ -3056,6 +3401,12 @@ object wordpressBlocksStrings {
   inline def `welcome-write-blog`: `welcome-write-blog` = "welcome-write-blog".asInstanceOf[`welcome-write-blog`]
   
   @js.native
+  sealed trait whatsapp
+    extends StObject
+       with BlockIcon
+  inline def whatsapp: whatsapp = "whatsapp".asInstanceOf[whatsapp]
+  
+  @js.native
   sealed trait wide
     extends StObject
        with BlockAlignment
@@ -3074,6 +3425,12 @@ object wordpressBlocksStrings {
   inline def `wordpress-alt`: `wordpress-alt` = "wordpress-alt".asInstanceOf[`wordpress-alt`]
   
   @js.native
+  sealed trait xing
+    extends StObject
+       with BlockIcon
+  inline def xing: xing = "xing".asInstanceOf[xing]
+  
+  @js.native
   sealed trait yes
     extends StObject
        with BlockIcon
@@ -3084,4 +3441,10 @@ object wordpressBlocksStrings {
     extends StObject
        with BlockIcon
   inline def `yes-alt`: `yes-alt` = "yes-alt".asInstanceOf[`yes-alt`]
+  
+  @js.native
+  sealed trait youtube
+    extends StObject
+       with BlockIcon
+  inline def youtube: youtube = "youtube".asInstanceOf[youtube]
 }

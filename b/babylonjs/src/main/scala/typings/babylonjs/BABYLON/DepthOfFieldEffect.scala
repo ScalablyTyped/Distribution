@@ -12,7 +12,7 @@ trait DepthOfFieldEffect
   /* private */ var _circleOfConfusion: Any = js.native
   
   /**
-    * @hidden Internal, blurs from high to low
+    * @internal Internal, blurs from high to low
     */
   var _depthOfFieldBlurX: js.Array[DepthOfFieldBlurPostProcess] = js.native
   
@@ -21,19 +21,19 @@ trait DepthOfFieldEffect
   /* private */ var _dofMerge: Any = js.native
   
   /**
-    * @hidden Internal post processes in depth of field effect
+    * @internal Internal post processes in depth of field effect
     */
   var _effects: js.Array[PostProcess] = js.native
   
   /**
     * Internal
     * @returns if all the contained post processes are ready.
-    * @hidden
+    * @internal
     */
   def _isReady(): Boolean = js.native
   
   /**
-    * @hidden Internal
+    * @internal Internal
     */
   def _updateEffects(): Unit = js.native
   

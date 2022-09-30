@@ -14,12 +14,12 @@ trait List extends StObject {
 }
 object List {
   
-  inline def apply(list: js.Array[Plugin], map: StringDictionary[Plugin]): List = {
+  inline def apply(list: js.Array[Plugin], map: StringDictionary[Plugin]): typings.interactjsTypes.anon.List = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.interactjsTypes.anon.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.interactjsTypes.anon.List](x: Self) {
     
     inline def setList(value: js.Array[Plugin]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

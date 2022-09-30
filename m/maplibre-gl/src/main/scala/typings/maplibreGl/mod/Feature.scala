@@ -3,9 +3,9 @@ package typings.maplibreGl.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.mapboxPointGeometry.mod.^
 import typings.maplibreGl.anon.Max
-import typings.maplibreGl.maplibreGlNumbers.`1`
-import typings.maplibreGl.maplibreGlNumbers.`2`
-import typings.maplibreGl.maplibreGlNumbers.`3`
+import typings.maplibreGl.maplibreGlInts.`1`
+import typings.maplibreGl.maplibreGlInts.`2`
+import typings.maplibreGl.maplibreGlInts.`3`
 import typings.maplibreGl.maplibreGlStrings.LineString
 import typings.maplibreGl.maplibreGlStrings.MultiLineString
 import typings.maplibreGl.maplibreGlStrings.MultiPoint

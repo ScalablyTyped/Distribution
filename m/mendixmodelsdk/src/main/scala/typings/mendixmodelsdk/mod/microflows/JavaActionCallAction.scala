@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.JavaActionCallAction")
 @js.native
-class JavaActionCallAction protected ()
+open class JavaActionCallAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.JavaActionCallAction {
   def this(
     model: AbstractModel,

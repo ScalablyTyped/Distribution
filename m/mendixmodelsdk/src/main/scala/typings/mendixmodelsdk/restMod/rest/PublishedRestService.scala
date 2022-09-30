@@ -27,9 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IPublishedRestService because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService")
+- typings.mendixmodelsdk.restMod.rest.IPublishedRestService because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestService")
 @js.native
-class PublishedRestService protected () extends Document {
+open class PublishedRestService protected () extends Document {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -99,7 +99,7 @@ class PublishedRestService protected () extends Document {
 }
 object PublishedRestService {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestService")
   @js.native
   val ^ : js.Any = js.native
   
@@ -111,13 +111,13 @@ object PublishedRestService {
   inline def createIn(container: IFolderBase): PublishedRestService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedRestService]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestService.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.PublishedRestService.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

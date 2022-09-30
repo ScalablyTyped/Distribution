@@ -133,9 +133,9 @@ import typings.vueRuntimeCore.mod.RendererNode
 import typings.vueRuntimeCore.mod.RendererOptions
 import typings.vueRuntimeCore.mod.RootHydrateFunction
 import typings.vueRuntimeCore.mod.RootRenderFunction
+import typings.vueRuntimeCore.mod.SSRSlot
 import typings.vueRuntimeCore.mod.SchedulerJobs
 import typings.vueRuntimeCore.mod.SetupContext
-import typings.vueRuntimeCore.mod.Slot
 import typings.vueRuntimeCore.mod.Slots
 import typings.vueRuntimeCore.mod.SuspenseProps
 import typings.vueRuntimeCore.mod.TeleportProps
@@ -156,6 +156,7 @@ import typings.vueRuntimeDom.anon.Instantiable
 import typings.vueRuntimeDom.anon.Styles
 import typings.vueRuntimeDom.mod.InnerComponentDef
 import typings.vueRuntimeDom.mod.ModelDirective
+import typings.vueRuntimeDom.mod.TransitionGroupProps
 import typings.vueRuntimeDom.mod.TransitionProps
 import typings.vueRuntimeDom.mod.VShowElement
 import typings.vueRuntimeDom.mod.VueElementConstructor
@@ -535,7 +536,13 @@ object mod {
     @JSImport("vue-property-decorator", "Vue.BaseTransition")
     @js.native
     open class BaseTransition ()
-      extends typings.vue.mod.BaseTransition
+      extends StObject
+         with Props {
+      
+      /* CompleteClass */
+      @JSName("$props")
+      var $props: BaseTransitionProps[Any] = js.native
+    }
     @JSImport("vue-property-decorator", "Vue.BaseTransition")
     @js.native
     val BaseTransition: Instantiable0[Props] = js.native
@@ -557,11 +564,6 @@ object mod {
       def this(detached: Boolean) = this()
     }
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("vue-property-decorator", "Vue.Fragment")
-    @js.native
-    open class Fragment ()
-      extends typings.vue.mod.Fragment
     object Fragment {
       
       @JSImport("vue-property-decorator", "Vue.Fragment")
@@ -575,11 +577,6 @@ object mod {
       inline def isFragment_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__isFragment")(x.asInstanceOf[js.Any])
     }
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("vue-property-decorator", "Vue.KeepAlive")
-    @js.native
-    open class KeepAlive ()
-      extends typings.vue.mod.KeepAlive
     object KeepAlive {
       
       @JSImport("vue-property-decorator", "Vue.KeepAlive")
@@ -608,11 +605,6 @@ object mod {
     @js.native
     val Static: js.Symbol = js.native
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("vue-property-decorator", "Vue.Suspense")
-    @js.native
-    open class Suspense ()
-      extends typings.vue.mod.Suspense
     object Suspense {
       
       @JSImport("vue-property-decorator", "Vue.Suspense")
@@ -626,11 +618,6 @@ object mod {
       inline def isSuspense_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__isSuspense")(x.asInstanceOf[js.Any])
     }
     
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("vue-property-decorator", "Vue.Teleport")
-    @js.native
-    open class Teleport ()
-      extends typings.vue.mod.Teleport
     object Teleport {
       
       @JSImport("vue-property-decorator", "Vue.Teleport")
@@ -656,7 +643,13 @@ object mod {
     @JSImport("vue-property-decorator", "Vue.TransitionGroup")
     @js.native
     open class TransitionGroup ()
-      extends typings.vue.mod.TransitionGroup
+      extends StObject
+         with typings.vueRuntimeDom.anon.Props {
+      
+      /* CompleteClass */
+      @JSName("$props")
+      var $props: TransitionGroupProps = js.native
+    }
     @JSImport("vue-property-decorator", "Vue.TransitionGroup")
     @js.native
     val TransitionGroup: Instantiable0[typings.vueRuntimeDom.anon.Props] = js.native
@@ -891,9 +884,9 @@ object mod {
     val createSSRApp: CreateAppFunction[Element] = js.native
     
     inline def createSlots(
-      slots: Record[String, Slot],
+      slots: Record[String, SSRSlot],
       dynamicSlots: js.Array[js.UndefOr[CompiledSlotDescriptor | js.Array[CompiledSlotDescriptor]]]
-    ): Record[String, Slot] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlots")(slots.asInstanceOf[js.Any], dynamicSlots.asInstanceOf[js.Any])).asInstanceOf[Record[String, Slot]]
+    ): Record[String, SSRSlot] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSlots")(slots.asInstanceOf[js.Any], dynamicSlots.asInstanceOf[js.Any])).asInstanceOf[Record[String, SSRSlot]]
     
     inline def createStaticVNode(content: String, numberOfNodes: Double): VNode[RendererNode, RendererElement, StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticVNode")(content.asInstanceOf[js.Any], numberOfNodes.asInstanceOf[js.Any])).asInstanceOf[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
     
@@ -1749,7 +1742,7 @@ object mod {
     inline def shallowRef[T](): ShallowRef_[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")().asInstanceOf[ShallowRef_[js.UndefOr[T]]]
     inline def shallowRef[T](value: T): ShallowRef_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T]]
     
-    inline def shallowRef_T_Object_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T] | T]
+    inline def shallowRef_T_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowRef")(value.asInstanceOf[js.Any]).asInstanceOf[ShallowRef_[T] | T]
     
     @JSImport("vue-property-decorator", "Vue.ssrContextKey")
     @js.native
@@ -1848,7 +1841,7 @@ object mod {
     @js.native
     val version: String = js.native
     
-    inline def warn(msg: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def warn(msg: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(scala.List(msg.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def watchEffect(effect: WatchEffect_): WatchStopHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[WatchStopHandle]
     inline def watchEffect(effect: WatchEffect_, options: WatchOptionsBase): WatchStopHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("watchEffect")(effect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WatchStopHandle]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegimeAcknowledge
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var metric_names: js.Array[String]
   
@@ -26,7 +26,7 @@ object RegimeAcknowledge {
     
     inline def setMetric_names(value: js.Array[String]): Self = StObject.set(x, "metric_names", value.asInstanceOf[js.Any])
     
-    inline def setMetric_namesVarargs(value: String*): Self = StObject.set(x, "metric_names", js.Array(value :_*))
+    inline def setMetric_namesVarargs(value: String*): Self = StObject.set(x, "metric_names", js.Array(value*))
     
     inline def setOrder_index(value: Double): Self = StObject.set(x, "order_index", value.asInstanceOf[js.Any])
     

@@ -127,8 +127,8 @@ object global {
     inline def withComponent[T /* <: Constructor[HTMLElement] */](): TypeofWithComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")().asInstanceOf[TypeofWithComponent]
     inline def withComponent[T /* <: Constructor[HTMLElement] */](Base: T): TypeofWithComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(Base.asInstanceOf[js.Any]).asInstanceOf[TypeofWithComponent]
     
-    inline def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")().asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
-    inline def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(Base.asInstanceOf[js.Any]).asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
+    inline def withComponent_PSCT_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")().asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
+    inline def withComponent_PSCT_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(Base.asInstanceOf[js.Any]).asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
     
     inline def withContext[C, T /* <: Constructor[HTMLElement] */](): Constructor[WithContext[C]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withContext")().asInstanceOf[Constructor[WithContext[C]] & T]
     inline def withContext[C, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithContext[C]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithContext[C]] & T]

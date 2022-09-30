@@ -1,8 +1,8 @@
 package typings.compareVersions
 
-import typings.compareVersions.compareVersionsNumbers.`-1`
-import typings.compareVersions.compareVersionsNumbers.`0`
-import typings.compareVersions.compareVersionsNumbers.`1`
+import typings.compareVersions.compareVersionsInts.`-1`
+import typings.compareVersions.compareVersionsInts.`0`
+import typings.compareVersions.compareVersionsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

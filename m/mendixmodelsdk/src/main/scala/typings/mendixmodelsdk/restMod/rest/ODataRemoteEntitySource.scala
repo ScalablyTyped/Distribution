@@ -24,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntitySource because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySource because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IQueryBasedRemoteEntitySource because Already inherited
-- typings.mendixmodelsdk.restMod.rest.IODataRemoteEntitySource because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined key */ @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource")
+- typings.mendixmodelsdk.restMod.rest.IODataRemoteEntitySource because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined key, countable */ @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteEntitySource")
 @js.native
-class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySource {
+open class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySource {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,10 +40,47 @@ class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySource 
   def containerAsEntity_MODataRemoteEntitySource: Entity = js.native
   
   /**
+    * In version 8.16.0: introduced
+    */
+  def countable: Boolean = js.native
+  def countable_=(newValue: Boolean): Unit = js.native
+  /**
+    * In version 8.16.0: introduced
+    */
+  @JSName("countable")
+  val countable_FODataRemoteEntitySource: Boolean = js.native
+  
+  /**
+    * In version 9.11.0: introduced
+    */
+  def creatable: Boolean = js.native
+  def creatable_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.11.0: introduced
+    */
+  def deletable: Boolean = js.native
+  def deletable_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.5.0: deleted
     * In version 8.11.0: introduced
     */
   def entitySet: String = js.native
+  
+  /**
+    * In version 9.5.0: introduced
+    */
+  def entitySetName: String = js.native
+  def entitySetName_=(newValue: String): Unit = js.native
+  
   def entitySet_=(newValue: String): Unit = js.native
+  
+  /**
+    * In version 9.5.0: introduced
+    */
+  def entityTypeName: String = js.native
+  def entityTypeName_=(newValue: String): Unit = js.native
   
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
@@ -64,6 +101,9 @@ class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySource 
   @JSName("key")
   val key_FODataRemoteEntitySource: IODataKey | Null = js.native
   
+  /**
+    * In version 9.5.0: deleted
+    */
   def remoteName: String = js.native
   def remoteName_=(newValue: String): Unit = js.native
   
@@ -80,7 +120,7 @@ class ODataRemoteEntitySource protected () extends QueryBasedRemoteEntitySource 
 }
 object ODataRemoteEntitySource {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteEntitySource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -104,13 +144,13 @@ object ODataRemoteEntitySource {
   inline def createIn(container: Entity): ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataRemoteEntitySource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteEntitySource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteEntitySource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.ODataRemoteEntitySource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

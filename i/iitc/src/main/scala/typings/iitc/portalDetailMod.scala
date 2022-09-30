@@ -12,7 +12,7 @@ object portalDetailMod {
     
     @JSGlobal("PortalDetail")
     @js.native
-    class PortalDetail_ () extends StObject {
+    open class PortalDetail_ () extends StObject {
       
       /** Get portal detail from cache */
       def get(guid: String): js.UndefOr[PortalDataDetail] = js.native
@@ -24,7 +24,7 @@ object portalDetailMod {
         * Request Portal details from server
         * NB: you shouldn't use it.
         */
-      def request(guid: String): Promise[js.Any, js.Any, js.Any] = js.native
+      def request(guid: String): Promise[Any, Any, Any] = js.native
       
       def setup(): Unit = js.native
     }

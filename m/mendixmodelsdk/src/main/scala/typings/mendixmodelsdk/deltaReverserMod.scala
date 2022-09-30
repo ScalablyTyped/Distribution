@@ -8,29 +8,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deltaReverserMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaReverser", "DeltaReverser")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/DeltaReverser", "DeltaReverser")
   @js.native
-  class DeltaReverser protected () extends StObject {
+  open class DeltaReverser protected () extends StObject {
     def this(model: AbstractModel) = this()
     
-    /* private */ var getUnit: js.Any = js.native
+    /* private */ var getUnit: Any = js.native
     
     var model: AbstractModel = js.native
     
     def reverse(delta: Delta): Delta = js.native
     
-    /* private */ var reverseAttachElementDelta: js.Any = js.native
+    /* private */ var reverseAttachElementDelta: Any = js.native
     
-    /* private */ var reverseCreateElementTreeDelta: js.Any = js.native
+    /* private */ var reverseCreateElementTreeDelta: Any = js.native
     
-    /* private */ var reverseCreateUnitTreeDelta: js.Any = js.native
+    /* private */ var reverseCreateUnitTreeDelta: Any = js.native
     
-    /* private */ var reverseDeleteElementDelta: js.Any = js.native
+    /* private */ var reverseDeleteElementDelta: Any = js.native
     
-    /* private */ var reverseDeleteUnitDelta: js.Any = js.native
+    /* private */ var reverseDeleteUnitDelta: Any = js.native
     
-    /* private */ var reverseDetachElementDelta: js.Any = js.native
+    /* private */ var reverseDetachElementDelta: Any = js.native
     
-    /* private */ var reverseUpdatePropertyValueDelta: js.Any = js.native
+    /* private */ var reverseUpdatePropertyValueDelta: Any = js.native
   }
 }

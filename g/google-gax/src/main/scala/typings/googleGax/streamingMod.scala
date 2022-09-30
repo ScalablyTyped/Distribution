@@ -23,7 +23,7 @@ object streamingMod {
   
   @JSImport("google-gax/build/src/streamingCalls/streaming", "StreamProxy")
   @js.native
-  class StreamProxy protected ()
+  open class StreamProxy protected ()
     extends StObject
        with DuplexifyConstructor
        with GRPCCallResult {
@@ -36,10 +36,13 @@ object streamingMod {
       * @param {ApiCallback} callback - the callback for further API call.
       */
     def this(`type`: StreamType, callback: APICallback) = this()
+    def this(`type`: StreamType, callback: APICallback, rest: Boolean) = this()
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _isCancelCalled: js.Any = js.native
+    /* private */ var _isCancelCalled: Any = js.native
+    
+    /* private */ var _responseHasSent: Any = js.native
     
     /* CompleteClass */
     override def cancel(): Unit = js.native
@@ -49,6 +52,8 @@ object streamingMod {
       * @param {Stream} stream - The API request stream.
       */
     def forwardEvents(stream: Stream): Unit = js.native
+    
+    var rest: js.UndefOr[Boolean] = js.native
     
     /**
       * Specifies the target stream.
@@ -96,6 +101,8 @@ object streamingMod {
   
   @js.native
   trait Duplexify extends Duplex {
+    
+    val destroyed: Boolean = js.native
     
     def setReadable(): Unit = js.native
     def setReadable(readable: Readable): Unit = js.native

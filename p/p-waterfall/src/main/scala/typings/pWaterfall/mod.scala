@@ -1,5 +1,6 @@
 package typings.pWaterfall
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -136,7 +137,7 @@ object mod {
     initialValue: ValueType1
   ): js.Promise[ReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tasks.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType]]
   
-  type InitialTask[ReturnType] = js.Function0[ReturnType | js.Thenable[ReturnType]]
+  type InitialTask[ReturnType] = js.Function0[ReturnType | PromiseLike[ReturnType]]
   
-  type Task[ValueType, ReturnType] = js.Function1[/* previousValue */ ValueType, ReturnType | js.Thenable[ReturnType]]
+  type Task[ValueType, ReturnType] = js.Function1[/* previousValue */ ValueType, ReturnType | PromiseLike[ReturnType]]
 }

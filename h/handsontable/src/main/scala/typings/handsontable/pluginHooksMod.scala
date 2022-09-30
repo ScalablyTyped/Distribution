@@ -16,8 +16,8 @@ import typings.handsontable.contextMenuContextMenuMod.PredefinedMenuItemKey
 import typings.handsontable.contextMenuMod.ContextMenu
 import typings.handsontable.dropdownMenuMod.DropdownMenu
 import typings.handsontable.filtersFiltersMod.ColumnConditions
-import typings.handsontable.handsontableNumbers.`-1`
-import typings.handsontable.handsontableNumbers.`0`
+import typings.handsontable.handsontableInts.`-1`
+import typings.handsontable.handsontableInts.`0`
 import typings.handsontable.handsontableStrings.afterAddChild
 import typings.handsontable.handsontableStrings.afterAutofill
 import typings.handsontable.handsontableStrings.afterBeginEditing
@@ -205,7 +205,6 @@ import typings.handsontable.handsontableStrings.modifyRowData
 import typings.handsontable.handsontableStrings.modifyRowHeader
 import typings.handsontable.handsontableStrings.modifyRowHeaderWidth
 import typings.handsontable.handsontableStrings.modifyRowHeight
-import typings.handsontable.handsontableStrings.modifyRowSourceData
 import typings.handsontable.handsontableStrings.modifySourceData
 import typings.handsontable.handsontableStrings.modifyTransformEnd
 import typings.handsontable.handsontableStrings.modifyTransformStart
@@ -6775,22 +6774,6 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Hooks = js.native
     @JSName("add")
-    def add_modifyRowSourceData(key: modifyRowSourceData, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Hooks = js.native
-    @JSName("add")
-    def add_modifyRowSourceData(
-      key: modifyRowSourceData,
-      callback: js.UndefOr[js.Function1[/* row */ Double, Unit]],
-      context: typings.handsontable.coreMod.default
-    ): Hooks = js.native
-    @JSName("add")
-    def add_modifyRowSourceData(key: modifyRowSourceData, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Hooks = js.native
-    @JSName("add")
-    def add_modifyRowSourceData(
-      key: modifyRowSourceData,
-      callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]],
-      context: typings.handsontable.coreMod.default
-    ): Hooks = js.native
-    @JSName("add")
     def add_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
@@ -6918,18 +6901,18 @@ object pluginHooksMod {
     def getBucket(context: typings.handsontable.coreMod.default): Bucket = js.native
     
     def getRegistered(): js.Array[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any
       ] = js.native
     
-    def has(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any): Boolean = js.native
+    def has(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Boolean = js.native
     def has(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
       context: typings.handsontable.coreMod.default
     ): Boolean = js.native
     
-    def isDeprecated(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any): Boolean = js.native
+    def isDeprecated(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Boolean = js.native
     
-    def isRegistered(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any): Boolean = js.native
+    def isRegistered(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Boolean = js.native
     
     def once(
       key: afterAutofill,
@@ -13469,22 +13452,6 @@ object pluginHooksMod {
       context: typings.handsontable.coreMod.default
     ): Unit = js.native
     @JSName("once")
-    def once_modifyRowSourceData(key: modifyRowSourceData, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("once")
-    def once_modifyRowSourceData(
-      key: modifyRowSourceData,
-      callback: js.UndefOr[js.Function1[/* row */ Double, Unit]],
-      context: typings.handsontable.coreMod.default
-    ): Unit = js.native
-    @JSName("once")
-    def once_modifyRowSourceData(key: modifyRowSourceData, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
-    @JSName("once")
-    def once_modifyRowSourceData(
-      key: modifyRowSourceData,
-      callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]],
-      context: typings.handsontable.coreMod.default
-    ): Unit = js.native
-    @JSName("once")
     def once_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
@@ -13604,18 +13571,18 @@ object pluginHooksMod {
     def register(key: String): Unit = js.native
     
     def remove(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
       callback: js.Function0[Unit]
     ): Boolean = js.native
     def remove(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
       callback: js.Function0[Unit],
       context: typings.handsontable.coreMod.default
     ): Boolean = js.native
     
     def run(
       context: typings.handsontable.coreMod.default,
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
       p1: js.UndefOr[Any],
       p2: js.UndefOr[Any],
       p3: js.UndefOr[Any],
@@ -15065,8 +15032,6 @@ object pluginHooksMod {
     var modifyRowHeaderWidth: js.UndefOr[js.Array[js.UndefOr[js.Function1[/* rowHeaderWidth */ Double, Unit]]]] = js.undefined
     
     var modifyRowHeight: js.UndefOr[js.Array[js.UndefOr[js.Function2[/* height */ Double, /* row */ Double, Unit]]]] = js.undefined
-    
-    var modifyRowSourceData: js.UndefOr[js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]] = js.undefined
     
     var modifySourceData: js.UndefOr[
         js.Array[
@@ -18053,12 +18018,6 @@ object pluginHooksMod {
       
       inline def setModifyRowHeightVarargs(value: (js.UndefOr[js.Function2[/* height */ Double, /* row */ Double, Unit]])*): Self = StObject.set(x, "modifyRowHeight", js.Array(value*))
       
-      inline def setModifyRowSourceData(value: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Self = StObject.set(x, "modifyRowSourceData", value.asInstanceOf[js.Any])
-      
-      inline def setModifyRowSourceDataUndefined: Self = StObject.set(x, "modifyRowSourceData", js.undefined)
-      
-      inline def setModifyRowSourceDataVarargs(value: (js.UndefOr[js.Function1[/* row */ Double, Unit]])*): Self = StObject.set(x, "modifyRowSourceData", js.Array(value*))
-      
       inline def setModifySourceData(
         value: js.Array[
               js.UndefOr[
@@ -19095,8 +19054,6 @@ object pluginHooksMod {
     
     var modifyRowHeight: js.UndefOr[js.Function2[/* height */ Double, /* row */ Double, Unit]] = js.undefined
     
-    var modifyRowSourceData: js.UndefOr[js.Function1[/* row */ Double, Unit]] = js.undefined
-    
     var modifySourceData: js.UndefOr[
         js.Function4[
           /* row */ Double, 
@@ -19965,10 +19922,6 @@ object pluginHooksMod {
       inline def setModifyRowHeight(value: (/* height */ Double, /* row */ Double) => Unit): Self = StObject.set(x, "modifyRowHeight", js.Any.fromFunction2(value))
       
       inline def setModifyRowHeightUndefined: Self = StObject.set(x, "modifyRowHeight", js.undefined)
-      
-      inline def setModifyRowSourceData(value: /* row */ Double => Unit): Self = StObject.set(x, "modifyRowSourceData", js.Any.fromFunction1(value))
-      
-      inline def setModifyRowSourceDataUndefined: Self = StObject.set(x, "modifyRowSourceData", js.undefined)
       
       inline def setModifySourceData(
         value: (/* row */ Double, /* column */ Double, /* valueHolder */ ValueCellValue, /* ioMode */ get | set) => Unit

@@ -37,6 +37,7 @@ import typings.grommet.anon.Icons
 import typings.grommet.anon.Item
 import typings.grommet.anon.Line
 import typings.grommet.anon.MaxHeight
+import typings.grommet.anon.MaxInline
 import typings.grommet.anon.Overlay
 import typings.grommet.anon.Pair
 import typings.grommet.anon.Parent
@@ -50,10 +51,10 @@ import typings.grommet.anon.Sticky
 import typings.grommet.anon.Toggle
 import typings.grommet.anon.Track
 import typings.grommet.anon.Xlarge
-import typings.grommet.anon.`14`
 import typings.grommet.anon.`15`
+import typings.grommet.anon.`16`
 import typings.grommet.anon.`2xl`
-import typings.grommet.anon.`30`
+import typings.grommet.anon.`31`
 import typings.grommet.avatarMod.AvatarExtendedProps
 import typings.grommet.baseMod.ButtonType
 import typings.grommet.baseMod.ThemeType
@@ -110,6 +111,7 @@ import typings.grommet.rangeSelectorMod.RangeSelectorProps
 import typings.grommet.responsiveContextMod.ResponsiveValue
 import typings.grommet.routedButtonMod.RoutedButtonProps
 import typings.grommet.selectMod.SelectExtendedProps
+import typings.grommet.selectMultipleMod.SelectMultipleExtendedProps
 import typings.grommet.sidebarMod.SidebarExtendedProps
 import typings.grommet.skipLinkMod.SkipLinkProps
 import typings.grommet.skipLinkTargetMod.SkipLinkTargetProps
@@ -437,6 +439,10 @@ object mod {
   @js.native
   val Select: FC[SelectExtendedProps] = js.native
   
+  @JSImport("grommet", "SelectMultiple")
+  @js.native
+  val SelectMultiple: FC[SelectMultipleExtendedProps] = js.native
+  
   @JSImport("grommet", "Sidebar")
   @js.native
   val Sidebar: FC[SidebarExtendedProps] = js.native
@@ -586,7 +592,7 @@ object mod {
     
     @JSImport("grommet", "base.dateInput")
     @js.native
-    val dateInput: js.UndefOr[`14` | DeepReadonly[js.UndefOr[`14`]]] = js.native
+    val dateInput: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.native
     
     @JSImport("grommet", "base.diagram")
     @js.native
@@ -612,7 +618,7 @@ object mod {
     
     @JSImport("grommet", "base.grommet")
     @js.native
-    val grommet: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.native
+    val grommet: js.UndefOr[`16` | DeepReadonly[js.UndefOr[`16`]]] = js.native
     
     @JSImport("grommet", "base.header")
     @js.native
@@ -624,7 +630,7 @@ object mod {
     
     @JSImport("grommet", "base.icon")
     @js.native
-    val icon: js.UndefOr[`30` | DeepReadonly[js.UndefOr[`30`]]] = js.native
+    val icon: js.UndefOr[`31` | DeepReadonly[js.UndefOr[`31`]]] = js.native
     
     @JSImport("grommet", "base.layer")
     @js.native
@@ -697,6 +703,10 @@ object mod {
     @JSImport("grommet", "base.select")
     @js.native
     val select: js.UndefOr[Clear | DeepReadonly[js.UndefOr[Clear]]] = js.native
+    
+    @JSImport("grommet", "base.selectMultiple")
+    @js.native
+    val selectMultiple: js.UndefOr[MaxInline | DeepReadonly[js.UndefOr[MaxInline]]] = js.native
     
     @JSImport("grommet", "base.skipLinks")
     @js.native

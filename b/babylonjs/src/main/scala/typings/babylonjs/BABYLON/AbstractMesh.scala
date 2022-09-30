@@ -16,18 +16,16 @@ trait AbstractMesh
   
   /**
     * Backing filed
-    * @hidden
+    * @internal
     */
   var __occlusionDataStorage: OcclusionDataStorage = js.native
   
   /**
-    * @param renderId
-    * @param intermediateRendering
-    * @hidden
+    * @internal
     */
   def _activate(renderId: Double, intermediateRendering: Boolean): Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _bonesTransformMatrices: Nullable[js.typedarray.Float32Array] = js.native
   
   /* protected */ var _boundingInfo: Nullable[BoundingInfo] = js.native
@@ -37,32 +35,28 @@ trait AbstractMesh
   /* protected */ def _buildUniformLayout(): Unit = js.native
   
   /**
-    * @param collider
-    * @hidden
+    * @internal
     */
   def _checkCollision(collider: Collider): AbstractMesh = js.native
   
-  /** @hidden */
+  /** @internal */
   def _checkOcclusionQuery(): Boolean = js.native
   
   /**
-    * @param subMesh
-    * @param transformMatrix
-    * @param collider
-    * @hidden
+    * @internal
     */
   def _collideForSubMesh(subMesh: SubMesh, transformMatrix: Matrix, collider: Collider): AbstractMesh = js.native
   
-  /** @hidden */
+  /** @internal */
   var _disposePhysicsObserver: Nullable[Observer[Node]] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _edgesRenderer: Nullable[IEdgesRenderer] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _freeze(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _generatePointsArray(): Boolean = js.native
   
   /**
@@ -75,166 +69,153 @@ trait AbstractMesh
   /* private */ var _getData: Any = js.native
   
   /**
-    * @param applySkeleton
-    * @param applyMorph
-    * @hidden
+    * @internal
     */
   def _getPositionData(applySkeleton: Boolean, applyMorph: Boolean): Nullable[FloatArray] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _initFacetData: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _internalAbstractMeshDataInfo: InternalAbstractMeshDataInfo = js.native
   
-  /** @hidden */
+  /** @internal */
   var _intersectionsInProgress: js.Array[AbstractMesh] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _lightSources: js.Array[Light] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _markSubMeshesAsAttributesDirty(): Unit = js.native
   
   /* private */ var _markSubMeshesAsDirty: Any = js.native
   
   /**
-    * @param dispose
-    * @hidden
+    * @internal
     */
   def _markSubMeshesAsLightDirty(): Unit = js.native
   def _markSubMeshesAsLightDirty(dispose: Boolean): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _markSubMeshesAsMiscDirty(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _masterMesh: Nullable[AbstractMesh] = js.native
   
   /**
     * Access property
-    * @hidden
+    * @internal
     */
   var _occlusionDataStorage: OcclusionDataStorage = js.native
   
-  /** @hidden */
+  /** @internal */
   var _occlusionQuery: Nullable[WebGLQuery | Double] = js.native
   
   /* private */ var _onCollisionPositionChange: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _physicsImpostor: Nullable[PhysicsImpostor] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _positions: Nullable[js.Array[Vector3]] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _postActivate(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _preActivate(): Unit = js.native
   
   /**
-    * @param renderId
-    * @hidden
+    * @internal
     */
   def _preActivateForIntermediateRendering(renderId: Double): Unit = js.native
   
   /**
-    * @param collider
-    * @param transformMatrix
-    * @hidden
+    * @internal
     */
   def _processCollisionsForSubMeshes(collider: Collider, transformMatrix: Matrix): AbstractMesh = js.native
   
   /**
-    * @param dispose
-    * @hidden
+    * @internal
     */
   def _rebuild(): Unit = js.native
   def _rebuild(dispose: Boolean): Unit = js.native
   
   /**
-    * @param data
-    * @param bias
-    * @hidden
+    * @internal
     */
   def _refreshBoundingInfo(data: Nullable[FloatArray], bias: Nullable[Vector2]): Unit = js.native
   
   /**
-    * @param light
-    * @param dispose
-    * @hidden
+    * @internal
     */
   def _removeLightSource(light: Light, dispose: Boolean): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _renderId: Double = js.native
   
-  /** @hidden (Backing field) */
+  /** @internal (Backing field) */
   var _renderOutline: Boolean = js.native
   
-  /** @hidden (Backing field) */
+  /** @internal (Backing field) */
   var _renderOverlay: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _renderingGroup: Nullable[RenderingGroup] = js.native
   
   /**
-    * @param light
-    * @hidden
+    * @internal
     */
   def _resyncLightSource(light: Light): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _resyncLightSources(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _shouldConvertRHS(): Boolean = js.native
   
-  /** @hidden (Backing field) */
+  /** @internal (Backing field) */
   var _showBoundingBox: Boolean = js.native
   
   /**
-    * @hidden
+    * @internal
     * Backing Field
     */
   var _submeshesOctree: Octree[SubMesh] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _syncGeometryWithMorphTargetManager(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _transformMatrixTexture: Nullable[RawTexture] = js.native
   
-  /** @hidden */
+  /** @internal */
   def _unBindEffect(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def _unFreeze(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _unIndexed: Boolean = js.native
   
   /**
     * The current mesh uniform buffer.
-    * @hidden Internal use only.
+    * @internal Internal use only.
     */
   var _uniformBuffer: UniformBuffer = js.native
   
-  /** @hidden */
+  /** @internal */
   def _updateBoundingInfo(): AbstractMesh = js.native
   
   /**
-    * @param matrix
-    * @hidden
+    * @internal
     */
   def _updateSubMeshesBoundingInfo(matrix: DeepImmutable[Matrix]): AbstractMesh = js.native
   
-  /** @hidden */
+  /** @internal */
   var _waitingData: FreezeWorldMatrix = js.native
   
-  /** @hidden */
+  /** @internal */
   var _waitingMaterialId: Nullable[String] = js.native
   
   /**

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object eventEmitterMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/EventEmitter", "EventEmitter")
+  @JSImport("mendixmodelsdk/src/sdk/internal/EventEmitter", "EventEmitter")
   @js.native
-  class EventEmitter[T] () extends StObject {
+  open class EventEmitter[T] () extends StObject {
     
     def emit[E /* <: Extract[/* keyof T */ String, String] */](
       eventType: E,
       value: /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
     ): Unit = js.native
     
-    /* private */ var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: Any = js.native
     
     def on[E /* <: Extract[/* keyof T */ String, String] */](
       eventType: E,

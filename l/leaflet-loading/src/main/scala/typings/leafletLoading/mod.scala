@@ -19,7 +19,7 @@ object mod {
     
     @JSImport("leaflet", "Control.Loading")
     @js.native
-    class Loading_ () extends Control_ {
+    open class Loading_ () extends Control_ {
       def this(options: LoadingOptions) = this()
       
       @JSName("options")

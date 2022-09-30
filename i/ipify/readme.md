@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipify
 
-Typings are for version 4.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Get your public IP address
@@ -10,10 +10,10 @@ Get your public IP address
 | ------------------ | :-------------: |
 | Full name          | ipify |
 | Keywords           | ip, ipv6, ipv4, address, public, external, own |
-| # releases         | 4 |
-| # dependents       | 15 |
-| # downloads        | 112969 |
-| # stars            | 9 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9573.0 |
+| # stars            | 232.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ipify#readme)

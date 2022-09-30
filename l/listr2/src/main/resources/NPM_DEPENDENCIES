@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "listr2" : "5.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "listr2" : "5.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

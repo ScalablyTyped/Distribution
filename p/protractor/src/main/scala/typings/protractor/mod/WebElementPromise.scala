@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "WebElementPromise")
 @js.native
-class WebElementPromise protected ()
+open class WebElementPromise protected ()
   extends typings.seleniumWebdriver.mod.WebElementPromise {
   /**
     * @param {!WebDriver} driver The parent WebDriver instance for this

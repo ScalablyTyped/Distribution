@@ -6,8 +6,6 @@ import typings.redisClient.clientKILLMod.ClientKillFilters.LOCAL_ADDRESS
 import typings.redisClient.clientKILLMod.ClientKillFilters.TYPE
 import typings.redisClient.clientKILLMod.ClientKillFilters.USER
 import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisClient.redisClientStrings.$LeftcurlybracketnumberRightcurlybracket
-import typings.redisClient.redisClientStrings.DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
 import typings.redisClient.redisClientStrings.master
 import typings.redisClient.redisClientStrings.normal
 import typings.redisClient.redisClientStrings.pubsub
@@ -79,20 +77,18 @@ object clientKILLMod {
        with KillFilter[ADDRESS]
        with KillFilters {
     
-    var address: DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
+    var address: /* template literal string: ${string}:${number} */ String
   }
   object KillAddress {
     
-    inline def apply(filter: ADDRESS): KillAddress = {
-      val __obj = js.Dynamic.literal(address = "${string}:${number}", filter = filter.asInstanceOf[js.Any])
+    inline def apply(address: /* template literal string: ${string}:${number} */ String, filter: ADDRESS): KillAddress = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any])
       __obj.asInstanceOf[KillAddress]
     }
     
     extension [Self <: KillAddress](x: Self) {
       
-      inline def setAddress(
-        value: DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
-      ): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: /* template literal string: ${string}:${number} */ String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,18 +124,18 @@ object clientKILLMod {
        with KillFilter[ID]
        with KillFilters {
     
-    var id: Double | $LeftcurlybracketnumberRightcurlybracket
+    var id: Double | (/* template literal string: ${number} */ String)
   }
   object KillId {
     
-    inline def apply(filter: ID, id: Double | $LeftcurlybracketnumberRightcurlybracket): KillId = {
+    inline def apply(filter: ID, id: Double | (/* template literal string: ${number} */ String)): KillId = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[KillId]
     }
     
     extension [Self <: KillId](x: Self) {
       
-      inline def setId(value: Double | $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | (/* template literal string: ${number} */ String)): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,20 +144,18 @@ object clientKILLMod {
        with KillFilter[LOCAL_ADDRESS]
        with KillFilters {
     
-    var localAddress: DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
+    var localAddress: /* template literal string: ${string}:${number} */ String
   }
   object KillLocalAddress {
     
-    inline def apply(filter: LOCAL_ADDRESS): KillLocalAddress = {
-      val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], localAddress = "${string}:${number}")
+    inline def apply(filter: LOCAL_ADDRESS, localAddress: /* template literal string: ${string}:${number} */ String): KillLocalAddress = {
+      val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], localAddress = localAddress.asInstanceOf[js.Any])
       __obj.asInstanceOf[KillLocalAddress]
     }
     
     extension [Self <: KillLocalAddress](x: Self) {
       
-      inline def setLocalAddress(
-        value: DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket
-      ): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: /* template literal string: ${string}:${number} */ String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     }
   }
   

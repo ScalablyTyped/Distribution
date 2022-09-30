@@ -11,7 +11,7 @@ object xpathMod {
   
   @JSImport("xmldsigjs/build/types/xml/transforms/xpath", "XmlDsigXPathTransform")
   @js.native
-  class XmlDsigXPathTransform () extends Transform {
+  open class XmlDsigXPathTransform () extends Transform {
     def this(properties: js.Object) = this()
     
     /* protected */ def Evaluate(node: Node, xpath: String): Boolean = js.native

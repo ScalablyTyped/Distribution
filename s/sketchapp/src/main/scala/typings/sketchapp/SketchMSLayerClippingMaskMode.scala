@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.sketchapp.sketchappNumbers.`0`
-  - typings.sketchapp.sketchappNumbers.`1`
+  - typings.sketchapp.sketchappInts.`0`
+  - typings.sketchapp.sketchappInts.`1`
 */
 trait SketchMSLayerClippingMaskMode extends StObject
 object SketchMSLayerClippingMaskMode {
   
-  inline def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
+  inline def `0`: typings.sketchapp.sketchappInts.`0` = 0.asInstanceOf[typings.sketchapp.sketchappInts.`0`]
   
-  inline def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
+  inline def `1`: typings.sketchapp.sketchappInts.`1` = 1.asInstanceOf[typings.sketchapp.sketchappInts.`1`]
 }

@@ -166,12 +166,12 @@ object mod {
       * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
     def request[R /* <: Route */](
-      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 693 */ Any) | R
     ): js.Promise[
         (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | (OctokitResponse[Any, Double])
       ] = js.native
     def request[R /* <: Route */](
-      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 693 */ Any) | R,
       options: ((/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['parameters'] */ js.Any) & typings.octokitTypes.requestParametersMod.RequestParameters) | typings.octokitTypes.requestParametersMod.RequestParameters
     ): js.Promise[
         (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | (OctokitResponse[Any, Double])

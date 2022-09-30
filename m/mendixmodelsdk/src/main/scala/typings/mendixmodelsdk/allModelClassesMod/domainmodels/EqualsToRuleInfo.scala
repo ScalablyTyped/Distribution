@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EqualsToRuleInfo")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EqualsToRuleInfo")
 @js.native
-class EqualsToRuleInfo protected ()
+open class EqualsToRuleInfo protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class EqualsToRuleInfo protected ()
 }
 object EqualsToRuleInfo {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EqualsToRuleInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EqualsToRuleInfo")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object EqualsToRuleInfo {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EqualsToRuleInfo]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EqualsToRuleInfo.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EqualsToRuleInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EqualsToRuleInfo.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EqualsToRuleInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

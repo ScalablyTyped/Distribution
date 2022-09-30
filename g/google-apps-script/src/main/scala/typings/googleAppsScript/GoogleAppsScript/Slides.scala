@@ -3363,12 +3363,12 @@ object Slides {
   }
   object List {
     
-    inline def apply(getListId: () => String, getListParagraphs: () => js.Array[Paragraph]): List = {
+    inline def apply(getListId: () => String, getListParagraphs: () => js.Array[Paragraph]): typings.googleAppsScript.GoogleAppsScript.Slides.List = {
       val __obj = js.Dynamic.literal(getListId = js.Any.fromFunction0(getListId), getListParagraphs = js.Any.fromFunction0(getListParagraphs))
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Slides.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Slides.List](x: Self) {
       
       inline def setGetListId(value: () => String): Self = StObject.set(x, "getListId", js.Any.fromFunction0(value))
       
@@ -3385,7 +3385,7 @@ object Slides {
     
     def getGlyph(): String
     
-    def getList(): List
+    def getList(): typings.googleAppsScript.GoogleAppsScript.Slides.List
     
     def getNestingLevel(): Integer
     
@@ -3398,7 +3398,7 @@ object Slides {
     inline def apply(
       applyListPreset: ListPreset => ListStyle,
       getGlyph: () => String,
-      getList: () => List,
+      getList: () => typings.googleAppsScript.GoogleAppsScript.Slides.List,
       getNestingLevel: () => Integer,
       isInList: () => Boolean,
       removeFromList: () => ListStyle
@@ -3413,7 +3413,7 @@ object Slides {
       
       inline def setGetGlyph(value: () => String): Self = StObject.set(x, "getGlyph", js.Any.fromFunction0(value))
       
-      inline def setGetList(value: () => List): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
+      inline def setGetList(value: () => typings.googleAppsScript.GoogleAppsScript.Slides.List): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
       inline def setGetNestingLevel(value: () => Integer): Self = StObject.set(x, "getNestingLevel", js.Any.fromFunction0(value))
       

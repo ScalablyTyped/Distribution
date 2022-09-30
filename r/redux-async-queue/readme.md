@@ -11,9 +11,9 @@ Async queue middleware for Redux.
 | Full name          | redux-async-queue |
 | Keywords           | redux, queue, middleware, redux-middleware, flux |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 71734 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6624.666666666667 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/zackargyle/redux-async-queue)

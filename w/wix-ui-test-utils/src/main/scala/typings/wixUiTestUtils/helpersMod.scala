@@ -2,7 +2,7 @@ package typings.wixUiTestUtils
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ChangeEvent
-import typings.react.mod.SFC
+import typings.react.mod.FunctionComponent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.HTMLElement
@@ -20,7 +20,7 @@ object helpersMod {
   
   inline def isClassExists(element: HTMLElement, className: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClassExists")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def makeControlled[T /* <: ControlledComponentProps */](Component: SFC[T]): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("makeControlled")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def makeControlled[T /* <: ControlledComponentProps */](Component: FunctionComponent[T]): Instantiable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeControlled")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[T]]
   
   inline def reactEventTrigger(): TypeofSimulate = ^.asInstanceOf[js.Dynamic].applyDynamic("reactEventTrigger")().asInstanceOf[TypeofSimulate]
   
@@ -65,7 +65,7 @@ object helpersMod {
   
   trait ControlledComponentProps
     extends StObject
-       with /* otherProps */ StringDictionary[js.Any] {
+       with /* otherProps */ StringDictionary[Any] {
     
     var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[HTMLElement], Unit]] = js.undefined
     

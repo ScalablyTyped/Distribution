@@ -1,17 +1,25 @@
 package typings.firebaseAdmin
 
-import typings.firebaseAdmin.authMod.auth.Auth
-import typings.firebaseAdmin.credentialMod.credential.Credential
-import typings.firebaseAdmin.databaseMod.database.Database
-import typings.firebaseAdmin.firebaseNamespaceApiMod.app.App
-import typings.firebaseAdmin.firestoreMod.firestore.Firestore
-import typings.firebaseAdmin.instanceIdMod.instanceId.InstanceId
-import typings.firebaseAdmin.machineLearningMod.machineLearning.MachineLearning
-import typings.firebaseAdmin.messagingMod.messaging.Messaging
-import typings.firebaseAdmin.projectManagementMod.projectManagement.ProjectManagement
-import typings.firebaseAdmin.remoteConfigMod.remoteConfig.RemoteConfig
-import typings.firebaseAdmin.securityRulesMod.securityRules.SecurityRules
-import typings.firebaseAdmin.storageMod.storage.Storage
+import typings.firebaseAdmin.appCheckNamespaceMod.appCheck.AppCheck
+import typings.firebaseAdmin.authNamespaceMod.auth.Auth
+import typings.firebaseAdmin.coreMod.App
+import typings.firebaseAdmin.coreMod.AppOptions
+import typings.firebaseAdmin.credentialMod.Credential
+import typings.firebaseAdmin.credentialMod.ServiceAccount
+import typings.firebaseAdmin.databaseNamespaceMod.database.Database
+import typings.firebaseAdmin.firestoreNamespaceMod.firestore.Firestore
+import typings.firebaseAdmin.installationsNamespaceMod.installations.Installations
+import typings.firebaseAdmin.instanceIdNamespaceMod.instanceId.InstanceId
+import typings.firebaseAdmin.machineLearningNamespaceMod.machineLearning.MachineLearning
+import typings.firebaseAdmin.messagingNamespaceMod.messaging.Messaging
+import typings.firebaseAdmin.projectManagementNamespaceMod.projectManagement.ProjectManagement
+import typings.firebaseAdmin.remoteConfigNamespaceMod.remoteConfig.RemoteConfig
+import typings.firebaseAdmin.securityRulesNamespaceMod.securityRules.SecurityRules
+import typings.firebaseAdmin.storageNamespaceMod.storage.Storage
+import typings.googleCloudFirestore.FirebaseFirestore.Settings
+import typings.googleCloudFirestore.anon.Instantiable
+import typings.googleCloudFirestore.anon.TypeofFirestoreAdminClien
+import typings.googleGax.clientInterfaceMod.ClientOptions
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,13 +49,14 @@ object firebaseNamespaceApiMod {
       * services.
       *
       * Do not call this constructor directly. Instead, use
-      * {@link
-      *   https://firebase.google.com/docs/reference/admin/node/admin#.initializeApp
-      *   `admin.initializeApp()`}
-      * to create an app.
+      * {@link firebase-admin.app#initializeApp} to create an app.
       */
     @js.native
-    trait App extends StObject {
+    trait App
+      extends StObject
+         with typings.firebaseAdmin.coreMod.App {
+      
+      def appCheck(): AppCheck = js.native
       
       def auth(): Auth = js.native
       
@@ -75,48 +84,16 @@ object firebaseNamespaceApiMod {
       
       def firestore(): Firestore = js.native
       
+      def installations(): Installations = js.native
+      
+      /**
+        * @deprecated Use {@link firebase-admin.installations#Installations} instead.
+        */
       def instanceId(): InstanceId = js.native
       
       def machineLearning(): MachineLearning = js.native
       
       def messaging(): Messaging = js.native
-      
-      /**
-        * The (read-only) name for this app.
-        *
-        * The default app's name is `"[DEFAULT]"`.
-        *
-        * @example
-        * ```javascript
-        * // The default app's name is "[DEFAULT]"
-        * admin.initializeApp(defaultAppConfig);
-        * console.log(admin.app().name);  // "[DEFAULT]"
-        * ```
-        *
-        * @example
-        * ```javascript
-        * // A named app's name is what you provide to initializeApp()
-        * var otherApp = admin.initializeApp(otherAppConfig, "other");
-        * console.log(otherApp.name);  // "other"
-        * ```
-        */
-      var name: String = js.native
-      
-      /**
-        * The (read-only) configuration options for this app. These are the original
-        * parameters given in
-        * {@link
-        *   https://firebase.google.com/docs/reference/admin/node/admin#.initializeApp
-        *   `admin.initializeApp()`}.
-        *
-        * @example
-        * ```javascript
-        * var app = admin.initializeApp(config);
-        * console.log(app.options.credential === config.credential);  // true
-        * console.log(app.options.databaseURL === config.databaseURL);  // true
-        * ```
-        */
-      var options: AppOptions = js.native
       
       def projectManagement(): ProjectManagement = js.native
       
@@ -128,199 +105,652 @@ object firebaseNamespaceApiMod {
     }
   }
   
+  inline def appCheck(): AppCheck = ^.asInstanceOf[js.Dynamic].applyDynamic("appCheck")().asInstanceOf[AppCheck]
+  inline def appCheck(app: App): AppCheck = ^.asInstanceOf[js.Dynamic].applyDynamic("appCheck")(app.asInstanceOf[js.Any]).asInstanceOf[AppCheck]
+  
   @JSImport("firebase-admin/lib/firebase-namespace-api", "apps")
   @js.native
-  val apps: js.Array[App | Null] = js.native
+  val apps: js.Array[typings.firebaseAdmin.firebaseNamespaceApiMod.app.App | Null] = js.native
   
-  inline def initializeApp(): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")().asInstanceOf[App]
-  inline def initializeApp(options: Unit, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
-  inline def initializeApp(options: AppOptions): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[App]
-  inline def initializeApp(options: AppOptions, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
+  inline def auth(): Auth = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")().asInstanceOf[Auth]
+  inline def auth(app: App): Auth = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
   
-  trait AppOptions extends StObject {
+  object credential {
     
-    /**
-      * A {@link credential.Credential `Credential`} object used to
-      * authenticate the Admin SDK.
-      *
-      * See [Initialize the SDK](/docs/admin/setup#initialize_the_sdk) for detailed
-      * documentation and code samples.
-      */
-    var credential: js.UndefOr[Credential] = js.undefined
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "credential")
+    @js.native
+    val ^ : js.Any = js.native
     
-    /**
-      * The object to use as the [`auth`](/docs/reference/security/database/#auth)
-      * variable in your Realtime Database Rules when the Admin SDK reads from or
-      * writes to the Realtime Database. This allows you to downscope the Admin SDK
-      * from its default full read and write privileges.
-      *
-      * You can pass `null` to act as an unauthenticated client.
-      *
-      * See
-      * [Authenticate with limited privileges](/docs/database/admin/start#authenticate-with-limited-privileges)
-      * for detailed documentation and code samples.
-      */
-    var databaseAuthVariableOverride: js.UndefOr[js.Object | Null] = js.undefined
+    /* was `typeof applicationDefaultFn` */
+    inline def applicationDefault(): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")().asInstanceOf[Credential]
+    inline def applicationDefault(httpAgent: Agent): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")(httpAgent.asInstanceOf[js.Any]).asInstanceOf[Credential]
     
-    /**
-      * The URL of the Realtime Database from which to read and write data.
-      */
-    var databaseURL: js.UndefOr[String] = js.undefined
+    /* was `typeof certFn` */
+    inline def cert(serviceAccountPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: ServiceAccount): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: ServiceAccount, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
     
-    /**
-      * An [HTTP Agent](https://nodejs.org/api/http.html#http_class_http_agent)
-      * to be used when making outgoing HTTP calls. This Agent instance is used
-      * by all services that make REST calls (e.g. `auth`, `messaging`,
-      * `projectManagement`).
-      *
-      * Realtime Database and Firestore use other means of communicating with
-      * the backend servers, so they do not use this HTTP Agent. `Credential`
-      * instances also do not use this HTTP Agent, but instead support
-      * specifying an HTTP Agent in the corresponding factory methods.
-      */
-    var httpAgent: js.UndefOr[Agent] = js.undefined
-    
-    /**
-      * The ID of the Google Cloud project associated with the App.
-      */
-    var projectId: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The ID of the service account to be used for signing custom tokens. This
-      * can be found in the `client_email` field of a service account JSON file.
-      */
-    var serviceAccountId: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The name of the Google Cloud Storage bucket used for storing application data.
-      * Use only the bucket name without any prefixes or additions (do *not* prefix
-      * the name with "gs://").
-      */
-    var storageBucket: js.UndefOr[String] = js.undefined
-  }
-  object AppOptions {
-    
-    inline def apply(): AppOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AppOptions]
-    }
-    
-    extension [Self <: AppOptions](x: Self) {
-      
-      inline def setCredential(value: Credential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
-      
-      inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
-      
-      inline def setDatabaseAuthVariableOverride(value: js.Object): Self = StObject.set(x, "databaseAuthVariableOverride", value.asInstanceOf[js.Any])
-      
-      inline def setDatabaseAuthVariableOverrideNull: Self = StObject.set(x, "databaseAuthVariableOverride", null)
-      
-      inline def setDatabaseAuthVariableOverrideUndefined: Self = StObject.set(x, "databaseAuthVariableOverride", js.undefined)
-      
-      inline def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
-      
-      inline def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
-      
-      inline def setHttpAgent(value: Agent): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
-      
-      inline def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
-      
-      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
-      
-      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
-      
-      inline def setServiceAccountId(value: String): Self = StObject.set(x, "serviceAccountId", value.asInstanceOf[js.Any])
-      
-      inline def setServiceAccountIdUndefined: Self = StObject.set(x, "serviceAccountId", js.undefined)
-      
-      inline def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
-      
-      inline def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
-    }
+    /* was `typeof refreshTokenFn` */
+    inline def refreshToken(refreshTokenPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: js.Object): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: js.Object, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
   }
   
-  trait FirebaseArrayIndexError extends StObject {
+  object database {
+    
+    inline def apply(): Database = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Database]
+    inline def apply(app: App): Database = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Database]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "database")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
-      * The error object.
+      * {@link https://firebase.google.com/docs/reference/js/firebase.database.ServerValue | ServerValue}
+      * constant from the `@firebase/database` package.
       */
-    var error: FirebaseError
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "database.ServerValue")
+    @js.native
+    val ServerValue: typings.firebaseDatabaseTypes.mod.ServerValue = js.native
     
-    /**
-      * The index of the errored item within the original array passed as part of the
-      * called API method.
-      */
-    var index: Double
+    /* was `typeof rtdb.enableLogging` */
+    inline def enableLogging(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[Any]
+    /* was `typeof rtdb.enableLogging` */
+    inline def enableLogging(logger: js.Function1[/* a */ String, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[Any]
+    /* was `typeof rtdb.enableLogging` */
+    inline def enableLogging(logger: js.Function1[/* a */ String, Any], persistent: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Any]
+    /* was `typeof rtdb.enableLogging` */
+    inline def enableLogging(logger: Boolean): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[Any]
+    /* was `typeof rtdb.enableLogging` */
+    inline def enableLogging(logger: Boolean, persistent: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Any]
+    /* was `typeof rtdb.enableLogging` */
+    inline def enableLogging(logger: Unit, persistent: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
-  object FirebaseArrayIndexError {
+  
+  object firestore {
     
-    inline def apply(error: FirebaseError, index: Double): FirebaseArrayIndexError = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FirebaseArrayIndexError]
+    inline def apply(): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
+    inline def apply(app: App): typings.googleCloudFirestore.mod.Firestore = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.mod.Firestore]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.BulkWriter")
+    @js.native
+    /* private */ open class BulkWriter ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.BulkWriter
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.BundleBuilder")
+    @js.native
+    open class BundleBuilder ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.BundleBuilder
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.CollectionGroup")
+    @js.native
+    /* private */ open class CollectionGroup[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.CollectionGroup[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.CollectionReference")
+    @js.native
+    /* private */ open class CollectionReference[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.CollectionReference[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.DocumentReference")
+    @js.native
+    /* private */ open class DocumentReference[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.DocumentReference[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.DocumentSnapshot")
+    @js.native
+    /* protected */ open class DocumentSnapshot[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.DocumentSnapshot[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.FieldPath")
+    @js.native
+    open class FieldPath protected ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.FieldPath {
+      /**
+        * Creates a FieldPath from the provided field names. If more than one field
+        * name is provided, the path will point to a nested field in a document.
+        *
+        * @param fieldNames A list of field names.
+        */
+      def this(fieldNames: String*) = this()
+    }
+    /* static members */
+    object FieldPath {
+      
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.FieldPath")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Returns a special sentinel FieldPath to refer to the ID of a document.
+        * It can be used in queries to sort or filter by the document ID.
+        */
+      inline def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldPath]
     }
     
-    extension [Self <: FirebaseArrayIndexError](x: Self) {
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.FieldValue")
+    @js.native
+    /* private */ open class FieldValue ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.FieldValue
+    /* static members */
+    object FieldValue {
       
-      inline def setError(value: FirebaseError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.FieldValue")
+      @js.native
+      val ^ : js.Any = js.native
       
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      /**
+        * Returns a special value that can be used with set(), create() or update()
+        * that tells the server to remove the given elements from any array value
+        * that already exists on the server. All instances of each element
+        * specified will be removed from the array. If the field being modified is
+        * not already an array it will be overwritten with an empty array.
+        *
+        * @param elements The elements to remove from the array.
+        * @return The FieldValue sentinel for use in a call to set(), create() or
+        * update().
+        */
+      inline def arrayRemove(elements: Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      
+      /**
+        * Returns a special value that can be used with set(), create() or update()
+        * that tells the server to union the given elements with any array value
+        * that already exists on the server. Each specified element that doesn't
+        * already exist in the array will be added to the end. If the field being
+        * modified is not already an array it will be overwritten with an array
+        * containing exactly the specified elements.
+        *
+        * @param elements The elements to union into the array.
+        * @return The FieldValue sentinel for use in a call to set(), create() or
+        * update().
+        */
+      inline def arrayUnion(elements: Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      
+      /**
+        * Returns a sentinel for use with update() or set() with {merge:true} to
+        * mark a field for deletion.
+        *
+        * @return The FieldValue sentinel for use in a call to set() or update().
+        */
+      inline def delete(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      
+      /**
+        * Returns a special value that can be used with set(), create() or update()
+        * that tells the server to increment the field's current value by the given
+        * value.
+        *
+        * If either current field value or the operand uses floating point
+        * precision, both values will be interpreted as floating point numbers and
+        * all arithmetic will follow IEEE 754 semantics. Otherwise, integer
+        * precision is kept and the result is capped between -2^63 and 2^63-1.
+        *
+        * If the current field value is not of type 'number', or if the field does
+        * not yet exist, the transformation will set the field to the given value.
+        *
+        * @param n The value to increment by.
+        * @return The FieldValue sentinel for use in a call to set(), create() or
+        * update().
+        */
+      inline def increment(n: Double): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      
+      /**
+        * Returns a sentinel used with set(), create() or update() to include a
+        * server-generated timestamp in the written data.
+        *
+        * @return The FieldValue sentinel for use in a call to set(), create() or
+        * update().
+        */
+      inline def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+    }
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.Firestore")
+    @js.native
+    /**
+      * @param settings Configuration object. See [Firestore Documentation]
+      * {@link https://firebase.google.com/docs/firestore/}
+      */
+    open class Firestore ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.Firestore {
+      def this(settings: Settings) = this()
+    }
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.GeoPoint")
+    @js.native
+    open class GeoPoint protected ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.GeoPoint {
+      /**
+        * Creates a new immutable GeoPoint object with the provided latitude and
+        * longitude values.
+        * @param latitude The latitude as number between -90 and 90.
+        * @param longitude The longitude as number between -180 and 180.
+        */
+      def this(latitude: Double, longitude: Double) = this()
+    }
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.GrpcStatus")
+    @js.native
+    object GrpcStatus extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: Double): js.UndefOr[typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus & Double] = js.native
+      
+      /* 10 */ val ABORTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.ABORTED & Double = js.native
+      
+      /* 6 */ val ALREADY_EXISTS: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.ALREADY_EXISTS & Double = js.native
+      
+      /* 1 */ val CANCELLED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.CANCELLED & Double = js.native
+      
+      /* 15 */ val DATA_LOSS: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.DATA_LOSS & Double = js.native
+      
+      /* 4 */ val DEADLINE_EXCEEDED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.DEADLINE_EXCEEDED & Double = js.native
+      
+      /* 9 */ val FAILED_PRECONDITION: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.FAILED_PRECONDITION & Double = js.native
+      
+      /* 13 */ val INTERNAL: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.INTERNAL & Double = js.native
+      
+      /* 3 */ val INVALID_ARGUMENT: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.INVALID_ARGUMENT & Double = js.native
+      
+      /* 5 */ val NOT_FOUND: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.NOT_FOUND & Double = js.native
+      
+      /* 0 */ val OK: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.OK & Double = js.native
+      
+      /* 11 */ val OUT_OF_RANGE: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.OUT_OF_RANGE & Double = js.native
+      
+      /* 7 */ val PERMISSION_DENIED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.PERMISSION_DENIED & Double = js.native
+      
+      /* 8 */ val RESOURCE_EXHAUSTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.RESOURCE_EXHAUSTED & Double = js.native
+      
+      /* 16 */ val UNAUTHENTICATED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNAUTHENTICATED & Double = js.native
+      
+      /* 14 */ val UNAVAILABLE: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNAVAILABLE & Double = js.native
+      
+      /* 12 */ val UNIMPLEMENTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNIMPLEMENTED & Double = js.native
+      
+      /* 2 */ val UNKNOWN: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNKNOWN & Double = js.native
+    }
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.Query")
+    @js.native
+    /* protected */ open class Query[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.Query[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.QueryDocumentSnapshot")
+    @js.native
+    /* private */ open class QueryDocumentSnapshot[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.QueryDocumentSnapshot[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.QueryPartition")
+    @js.native
+    /* private */ open class QueryPartition[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.QueryPartition[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.QuerySnapshot")
+    @js.native
+    /* private */ open class QuerySnapshot[T] ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.QuerySnapshot[T]
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.Timestamp")
+    @js.native
+    open class Timestamp protected ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.Timestamp {
+      /**
+        * Creates a new timestamp.
+        *
+        * @param seconds The number of seconds of UTC time since Unix epoch
+        * 1970-01-01T00:00:00Z. Must be from 0001-01-01T00:00:00Z to
+        * 9999-12-31T23:59:59Z inclusive.
+        * @param nanoseconds The non-negative fractions of a second at nanosecond
+        * resolution. Negative second values with fractions must still have
+        * non-negative nanoseconds values that count forward in time. Must be from
+        * 0 to 999,999,999 inclusive.
+        */
+      def this(seconds: Double, nanoseconds: Double) = this()
+    }
+    /* static members */
+    object Timestamp {
+      
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.Timestamp")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates a new timestamp from the given date.
+        *
+        * @param date The date to initialize the `Timestamp` from.
+        * @return A new `Timestamp` representing the same point in time as the
+        * given date.
+        */
+      inline def fromDate(date: js.Date): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      
+      /**
+        * Creates a new timestamp from the given number of milliseconds.
+        *
+        * @param milliseconds Number of milliseconds since Unix epoch
+        * 1970-01-01T00:00:00Z.
+        * @return A new `Timestamp` representing the same point in time as the
+        * given number of milliseconds.
+        */
+      inline def fromMillis(milliseconds: Double): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      
+      /**
+        * Creates a new timestamp with the current date, with millisecond precision.
+        *
+        * @return A new `Timestamp` representing the current date.
+        */
+      inline def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+    }
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.Transaction")
+    @js.native
+    /* private */ open class Transaction ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.Transaction
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.WriteBatch")
+    @js.native
+    /* private */ open class WriteBatch ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.WriteBatch
+    
+    @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.WriteResult")
+    @js.native
+    /* private */ open class WriteResult ()
+      extends typings.firebaseAdmin.firestoreNamespaceMod.firestore.WriteResult
+    
+    /**
+      * Sets or disables the log function for all active Firestore instances.
+      *
+      * @param logger A log function that takes a message (such as `console.log`) or
+      * `null` to turn off logging.
+      */
+    inline def setLogFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")().asInstanceOf[Unit]
+    inline def setLogFunction(logger: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    object v1 {
+      
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1.FirestoreAdminClient")
+      @js.native
+      /**
+        * Construct an instance of FirestoreAdminClient.
+        *
+        * @param {object} [options] - The configuration object.
+        * The options accepted by the constructor are described in detail
+        * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+        * The common options are:
+        * @param {object} [options.credentials] - Credentials object.
+        * @param {string} [options.credentials.client_email]
+        * @param {string} [options.credentials.private_key]
+        * @param {string} [options.email] - Account email address. Required when
+        *     using a .pem or .p12 keyFilename.
+        * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
+        *     .p12 key downloaded from the Google Developers Console. If you provide
+        *     a path to a JSON file, the projectId option below is not necessary.
+        *     NOTE: .pem and .p12 require you to specify options.email as well.
+        * @param {number} [options.port] - The port on which to connect to
+        *     the remote host.
+        * @param {string} [options.projectId] - The project ID from the Google
+        *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
+        *     the environment variable GCLOUD_PROJECT for your project ID. If your
+        *     app is running in an environment which supports
+        *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
+        *     your project ID will be detected automatically.
+        * @param {string} [options.apiEndpoint] - The domain name of the
+        *     API remote host.
+        * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+        *     Follows the structure of {@link gapicConfig}.
+        * @param {boolean} [options.fallback] - Use HTTP fallback mode.
+        *     In fallback mode, a special browser-compatible transport implementation is used
+        *     instead of gRPC transport. In browser context (if the `window` object is defined)
+        *     the fallback mode is enabled automatically; set `options.fallback` to `false`
+        *     if you need to override this behavior.
+        */
+      open class FirestoreAdminClient ()
+        extends typings.googleCloudFirestore.firestoreAdminClientMod.FirestoreAdminClient {
+        /**
+          * Construct an instance of FirestoreAdminClient.
+          *
+          * @param {object} [options] - The configuration object.
+          * The options accepted by the constructor are described in detail
+          * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+          * The common options are:
+          * @param {object} [options.credentials] - Credentials object.
+          * @param {string} [options.credentials.client_email]
+          * @param {string} [options.credentials.private_key]
+          * @param {string} [options.email] - Account email address. Required when
+          *     using a .pem or .p12 keyFilename.
+          * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
+          *     .p12 key downloaded from the Google Developers Console. If you provide
+          *     a path to a JSON file, the projectId option below is not necessary.
+          *     NOTE: .pem and .p12 require you to specify options.email as well.
+          * @param {number} [options.port] - The port on which to connect to
+          *     the remote host.
+          * @param {string} [options.projectId] - The project ID from the Google
+          *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
+          *     the environment variable GCLOUD_PROJECT for your project ID. If your
+          *     app is running in an environment which supports
+          *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
+          *     your project ID will be detected automatically.
+          * @param {string} [options.apiEndpoint] - The domain name of the
+          *     API remote host.
+          * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+          *     Follows the structure of {@link gapicConfig}.
+          * @param {boolean} [options.fallback] - Use HTTP fallback mode.
+          *     In fallback mode, a special browser-compatible transport implementation is used
+          *     instead of gRPC transport. In browser context (if the `window` object is defined)
+          *     the fallback mode is enabled automatically; set `options.fallback` to `false`
+          *     if you need to override this behavior.
+          */
+        def this(opts: ClientOptions) = this()
+      }
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1.FirestoreAdminClient")
+      @js.native
+      def FirestoreAdminClient: TypeofFirestoreAdminClien = js.native
+      inline def FirestoreAdminClient_=(x: TypeofFirestoreAdminClien): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
+      
+      /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1.FirestoreClient")
+      @js.native
+      /**
+        * Construct an instance of FirestoreClient.
+        *
+        * @param {object} [options] - The configuration object.
+        * The options accepted by the constructor are described in detail
+        * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+        * The common options are:
+        * @param {object} [options.credentials] - Credentials object.
+        * @param {string} [options.credentials.client_email]
+        * @param {string} [options.credentials.private_key]
+        * @param {string} [options.email] - Account email address. Required when
+        *     using a .pem or .p12 keyFilename.
+        * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
+        *     .p12 key downloaded from the Google Developers Console. If you provide
+        *     a path to a JSON file, the projectId option below is not necessary.
+        *     NOTE: .pem and .p12 require you to specify options.email as well.
+        * @param {number} [options.port] - The port on which to connect to
+        *     the remote host.
+        * @param {string} [options.projectId] - The project ID from the Google
+        *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
+        *     the environment variable GCLOUD_PROJECT for your project ID. If your
+        *     app is running in an environment which supports
+        *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
+        *     your project ID will be detected automatically.
+        * @param {string} [options.apiEndpoint] - The domain name of the
+        *     API remote host.
+        * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+        *     Follows the structure of {@link gapicConfig}.
+        * @param {boolean} [options.fallback] - Use HTTP fallback mode.
+        *     In fallback mode, a special browser-compatible transport implementation is used
+        *     instead of gRPC transport. In browser context (if the `window` object is defined)
+        *     the fallback mode is enabled automatically; set `options.fallback` to `false`
+        *     if you need to override this behavior.
+        */
+      open class FirestoreClient ()
+        extends typings.googleCloudFirestore.v1FirestoreClientMod.FirestoreClient {
+        /**
+          * Construct an instance of FirestoreClient.
+          *
+          * @param {object} [options] - The configuration object.
+          * The options accepted by the constructor are described in detail
+          * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+          * The common options are:
+          * @param {object} [options.credentials] - Credentials object.
+          * @param {string} [options.credentials.client_email]
+          * @param {string} [options.credentials.private_key]
+          * @param {string} [options.email] - Account email address. Required when
+          *     using a .pem or .p12 keyFilename.
+          * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
+          *     .p12 key downloaded from the Google Developers Console. If you provide
+          *     a path to a JSON file, the projectId option below is not necessary.
+          *     NOTE: .pem and .p12 require you to specify options.email as well.
+          * @param {number} [options.port] - The port on which to connect to
+          *     the remote host.
+          * @param {string} [options.projectId] - The project ID from the Google
+          *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
+          *     the environment variable GCLOUD_PROJECT for your project ID. If your
+          *     app is running in an environment which supports
+          *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
+          *     your project ID will be detected automatically.
+          * @param {string} [options.apiEndpoint] - The domain name of the
+          *     API remote host.
+          * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+          *     Follows the structure of {@link gapicConfig}.
+          * @param {boolean} [options.fallback] - Use HTTP fallback mode.
+          *     In fallback mode, a special browser-compatible transport implementation is used
+          *     instead of gRPC transport. In browser context (if the `window` object is defined)
+          *     the fallback mode is enabled automatically; set `options.fallback` to `false`
+          *     if you need to override this behavior.
+          */
+        def this(opts: ClientOptions) = this()
+      }
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1.FirestoreClient")
+      @js.native
+      def FirestoreClient: Instantiable = js.native
+      inline def FirestoreClient_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
+    }
+    
+    object v1beta1 {
+      
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1beta1")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1beta1.FirestoreClient")
+      @js.native
+      /**
+        * Construct an instance of FirestoreClient.
+        *
+        * @param {object} [options] - The configuration object.
+        * The options accepted by the constructor are described in detail
+        * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+        * The common options are:
+        * @param {object} [options.credentials] - Credentials object.
+        * @param {string} [options.credentials.client_email]
+        * @param {string} [options.credentials.private_key]
+        * @param {string} [options.email] - Account email address. Required when
+        *     using a .pem or .p12 keyFilename.
+        * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
+        *     .p12 key downloaded from the Google Developers Console. If you provide
+        *     a path to a JSON file, the projectId option below is not necessary.
+        *     NOTE: .pem and .p12 require you to specify options.email as well.
+        * @param {number} [options.port] - The port on which to connect to
+        *     the remote host.
+        * @param {string} [options.projectId] - The project ID from the Google
+        *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
+        *     the environment variable GCLOUD_PROJECT for your project ID. If your
+        *     app is running in an environment which supports
+        *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
+        *     your project ID will be detected automatically.
+        * @param {string} [options.apiEndpoint] - The domain name of the
+        *     API remote host.
+        * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+        *     Follows the structure of {@link gapicConfig}.
+        * @param {boolean} [options.fallback] - Use HTTP fallback mode.
+        *     In fallback mode, a special browser-compatible transport implementation is used
+        *     instead of gRPC transport. In browser context (if the `window` object is defined)
+        *     the fallback mode is enabled automatically; set `options.fallback` to `false`
+        *     if you need to override this behavior.
+        */
+      open class FirestoreClient ()
+        extends typings.googleCloudFirestore.v1FirestoreClientMod.FirestoreClient {
+        /**
+          * Construct an instance of FirestoreClient.
+          *
+          * @param {object} [options] - The configuration object.
+          * The options accepted by the constructor are described in detail
+          * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+          * The common options are:
+          * @param {object} [options.credentials] - Credentials object.
+          * @param {string} [options.credentials.client_email]
+          * @param {string} [options.credentials.private_key]
+          * @param {string} [options.email] - Account email address. Required when
+          *     using a .pem or .p12 keyFilename.
+          * @param {string} [options.keyFilename] - Full path to the a .json, .pem, or
+          *     .p12 key downloaded from the Google Developers Console. If you provide
+          *     a path to a JSON file, the projectId option below is not necessary.
+          *     NOTE: .pem and .p12 require you to specify options.email as well.
+          * @param {number} [options.port] - The port on which to connect to
+          *     the remote host.
+          * @param {string} [options.projectId] - The project ID from the Google
+          *     Developer's Console, e.g. 'grape-spaceship-123'. We will also check
+          *     the environment variable GCLOUD_PROJECT for your project ID. If your
+          *     app is running in an environment which supports
+          *     {@link https://developers.google.com/identity/protocols/application-default-credentials Application Default Credentials},
+          *     your project ID will be detected automatically.
+          * @param {string} [options.apiEndpoint] - The domain name of the
+          *     API remote host.
+          * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+          *     Follows the structure of {@link gapicConfig}.
+          * @param {boolean} [options.fallback] - Use HTTP fallback mode.
+          *     In fallback mode, a special browser-compatible transport implementation is used
+          *     instead of gRPC transport. In browser context (if the `window` object is defined)
+          *     the fallback mode is enabled automatically; set `options.fallback` to `false`
+          *     if you need to override this behavior.
+          */
+        def this(opts: ClientOptions) = this()
+      }
+      @JSImport("firebase-admin/lib/firebase-namespace-api", "firestore.v1beta1.FirestoreClient")
+      @js.native
+      def FirestoreClient: Instantiable = js.native
+      inline def FirestoreClient_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
     }
   }
   
-  trait FirebaseError extends StObject {
-    
-    /**
-      * Error codes are strings using the following format: `"service/string-code"`.
-      * Some examples include `"auth/invalid-uid"` and
-      * `"messaging/invalid-recipient"`.
-      *
-      * While the message for a given error can change, the code will remain the same
-      * between backward-compatible versions of the Firebase SDK.
-      */
-    var code: String
-    
-    /**
-      * An explanatory message for the error that just occurred.
-      *
-      * This message is designed to be helpful to you, the developer. Because
-      * it generally does not convey meaningful information to end users,
-      * this message should not be displayed in your application.
-      */
-    var message: String
-    
-    /**
-      * A string value containing the execution backtrace when the error originally
-      * occurred.
-      *
-      * This information can be useful to you and can be sent to
-      * {@link https://firebase.google.com/support/ Firebase Support} to help
-      * explain the cause of an error.
-      */
-    var stack: js.UndefOr[String] = js.undefined
-    
-    /**
-      * @return A JSON-serializable representation of this object.
-      */
-    def toJSON(): js.Object
-  }
-  object FirebaseError {
-    
-    inline def apply(code: String, message: String, toJSON: () => js.Object): FirebaseError = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
-      __obj.asInstanceOf[FirebaseError]
-    }
-    
-    extension [Self <: FirebaseError](x: Self) {
-      
-      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-      
-      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
-      
-      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
-    }
-  }
+  inline def initializeApp(): typings.firebaseAdmin.firebaseNamespaceApiMod.app.App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")().asInstanceOf[typings.firebaseAdmin.firebaseNamespaceApiMod.app.App]
+  inline def initializeApp(options: Unit, name: String): typings.firebaseAdmin.firebaseNamespaceApiMod.app.App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAdmin.firebaseNamespaceApiMod.app.App]
+  inline def initializeApp(options: AppOptions): typings.firebaseAdmin.firebaseNamespaceApiMod.app.App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAdmin.firebaseNamespaceApiMod.app.App]
+  inline def initializeApp(options: AppOptions, name: String): typings.firebaseAdmin.firebaseNamespaceApiMod.app.App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseAdmin.firebaseNamespaceApiMod.app.App]
+  
+  inline def installations(): Installations = ^.asInstanceOf[js.Dynamic].applyDynamic("installations")().asInstanceOf[Installations]
+  inline def installations(app: App): Installations = ^.asInstanceOf[js.Dynamic].applyDynamic("installations")(app.asInstanceOf[js.Any]).asInstanceOf[Installations]
+  
+  inline def instanceId(): InstanceId = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceId")().asInstanceOf[InstanceId]
+  inline def instanceId(app: App): InstanceId = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceId")(app.asInstanceOf[js.Any]).asInstanceOf[InstanceId]
+  
+  inline def machineLearning(): MachineLearning = ^.asInstanceOf[js.Dynamic].applyDynamic("machineLearning")().asInstanceOf[MachineLearning]
+  inline def machineLearning(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].applyDynamic("machineLearning")(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
+  
+  inline def messaging(): Messaging = ^.asInstanceOf[js.Dynamic].applyDynamic("messaging")().asInstanceOf[Messaging]
+  inline def messaging(app: App): Messaging = ^.asInstanceOf[js.Dynamic].applyDynamic("messaging")(app.asInstanceOf[js.Any]).asInstanceOf[Messaging]
+  
+  inline def projectManagement(): ProjectManagement = ^.asInstanceOf[js.Dynamic].applyDynamic("projectManagement")().asInstanceOf[ProjectManagement]
+  inline def projectManagement(app: App): ProjectManagement = ^.asInstanceOf[js.Dynamic].applyDynamic("projectManagement")(app.asInstanceOf[js.Any]).asInstanceOf[ProjectManagement]
+  
+  inline def remoteConfig(): RemoteConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteConfig")().asInstanceOf[RemoteConfig]
+  inline def remoteConfig(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteConfig")(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
+  
+  inline def securityRules(): SecurityRules = ^.asInstanceOf[js.Dynamic].applyDynamic("securityRules")().asInstanceOf[SecurityRules]
+  inline def securityRules(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].applyDynamic("securityRules")(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
+  
+  inline def storage(): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")().asInstanceOf[Storage]
+  inline def storage(app: App): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
 }

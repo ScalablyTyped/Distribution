@@ -28,7 +28,7 @@ trait Form extends StObject {
     *
     * @param dir: The control directive.
     */
-  def getControl(dir: NgControl): FormControl
+  def getControl(dir: NgControl): FormControl[Any]
   
   /**
     * @description
@@ -36,7 +36,7 @@ trait Form extends StObject {
     *
     * @param dir: The form group directive from which to get the `FormGroup`.
     */
-  def getFormGroup(dir: AbstractFormGroupDirective): FormGroup
+  def getFormGroup(dir: AbstractFormGroupDirective): FormGroup[Any]
   
   /**
     * @description
@@ -61,18 +61,18 @@ trait Form extends StObject {
     * @param dir: The control directive to update.
     * @param value: The new value for the control.
     */
-  def updateModel(dir: NgControl, value: js.Any): Unit
+  def updateModel(dir: NgControl, value: Any): Unit
 }
 object Form {
   
   inline def apply(
     addControl: NgControl => Unit,
     addFormGroup: AbstractFormGroupDirective => Unit,
-    getControl: NgControl => FormControl,
-    getFormGroup: AbstractFormGroupDirective => FormGroup,
+    getControl: NgControl => FormControl[Any],
+    getFormGroup: AbstractFormGroupDirective => FormGroup[Any],
     removeControl: NgControl => Unit,
     removeFormGroup: AbstractFormGroupDirective => Unit,
-    updateModel: (NgControl, js.Any) => Unit
+    updateModel: (NgControl, Any) => Unit
   ): Form = {
     val __obj = js.Dynamic.literal(addControl = js.Any.fromFunction1(addControl), addFormGroup = js.Any.fromFunction1(addFormGroup), getControl = js.Any.fromFunction1(getControl), getFormGroup = js.Any.fromFunction1(getFormGroup), removeControl = js.Any.fromFunction1(removeControl), removeFormGroup = js.Any.fromFunction1(removeFormGroup), updateModel = js.Any.fromFunction2(updateModel))
     __obj.asInstanceOf[Form]
@@ -84,14 +84,14 @@ object Form {
     
     inline def setAddFormGroup(value: AbstractFormGroupDirective => Unit): Self = StObject.set(x, "addFormGroup", js.Any.fromFunction1(value))
     
-    inline def setGetControl(value: NgControl => FormControl): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
+    inline def setGetControl(value: NgControl => FormControl[Any]): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
     
-    inline def setGetFormGroup(value: AbstractFormGroupDirective => FormGroup): Self = StObject.set(x, "getFormGroup", js.Any.fromFunction1(value))
+    inline def setGetFormGroup(value: AbstractFormGroupDirective => FormGroup[Any]): Self = StObject.set(x, "getFormGroup", js.Any.fromFunction1(value))
     
     inline def setRemoveControl(value: NgControl => Unit): Self = StObject.set(x, "removeControl", js.Any.fromFunction1(value))
     
     inline def setRemoveFormGroup(value: AbstractFormGroupDirective => Unit): Self = StObject.set(x, "removeFormGroup", js.Any.fromFunction1(value))
     
-    inline def setUpdateModel(value: (NgControl, js.Any) => Unit): Self = StObject.set(x, "updateModel", js.Any.fromFunction2(value))
+    inline def setUpdateModel(value: (NgControl, Any) => Unit): Self = StObject.set(x, "updateModel", js.Any.fromFunction2(value))
   }
 }

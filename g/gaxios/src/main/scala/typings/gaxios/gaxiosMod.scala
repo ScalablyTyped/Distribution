@@ -1,7 +1,7 @@
 package typings.gaxios
 
 import typings.gaxios.commonMod.GaxiosOptions
-import typings.gaxios.commonMod.GaxiosPromise
+import typings.gaxios.commonMod.GaxiosResponse
 import typings.node.httpMod.Agent
 import typings.node.urlMod.URL_
 import typings.std.Map
@@ -26,8 +26,8 @@ object gaxiosMod {
       * Internal, retryable version of the `request` method.
       * @param opts Set of HTTP options that will be used for this HTTP request.
       */
-    /* protected */ def _request[T](): GaxiosPromise[T] = js.native
-    /* protected */ def _request[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
+    /* protected */ def _request[T](): js.Promise[GaxiosResponse[T]] = js.native
+    /* protected */ def _request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] = js.native
     
     /* protected */ var agentCache: Map[String, Agent | (js.Function1[/* parsedUrl */ URL_, Agent])] = js.native
     
@@ -48,8 +48,8 @@ object gaxiosMod {
       * Perform an HTTP request with the given options.
       * @param opts Set of HTTP options that will be used for this HTTP request.
       */
-    def request[T](): GaxiosPromise[T] = js.native
-    def request[T](opts: GaxiosOptions): GaxiosPromise[T] = js.native
+    def request[T](): js.Promise[GaxiosResponse[T]] = js.native
+    def request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] = js.native
     
     /* private */ var translateResponse: Any = js.native
     

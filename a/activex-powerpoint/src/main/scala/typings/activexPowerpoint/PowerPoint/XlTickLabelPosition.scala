@@ -1,18 +1,18 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4127`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4134`
-import typings.activexPowerpoint.activexPowerpointNumbers.`-4142`
-import typings.activexPowerpoint.activexPowerpointNumbers.`4`
+import typings.activexPowerpoint.activexPowerpointInts.`-4127`
+import typings.activexPowerpoint.activexPowerpointInts.`-4134`
+import typings.activexPowerpoint.activexPowerpointInts.`-4142`
+import typings.activexPowerpoint.activexPowerpointInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4127`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4134`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-4142`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4127`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4134`
+  - typings.activexPowerpoint.activexPowerpointInts.`4`
+  - typings.activexPowerpoint.activexPowerpointInts.`-4142`
 */
 trait XlTickLabelPosition extends StObject
 object XlTickLabelPosition {

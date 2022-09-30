@@ -11,11 +11,19 @@ trait VideoOverlayOptions
   /** Whether the video starts playing automatically when loaded. */
   var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether the video will save aspect ratio after the projection. */
+  /**
+    * Whether the video will save aspect ratio after the projection. Relevant for supported browsers. See
+    * [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+    */
   var keepAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the video will loop back to the beginning when played. */
   var loop: js.UndefOr[Boolean] = js.undefined
+  
+  /** Whether the video starts on mute when loaded. */
+  var muted: js.UndefOr[Boolean] = js.undefined
+  
+  var playsInline: js.UndefOr[Boolean] = js.undefined
 }
 object VideoOverlayOptions {
   
@@ -37,5 +45,13 @@ object VideoOverlayOptions {
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    
+    inline def setPlaysInline(value: Boolean): Self = StObject.set(x, "playsInline", value.asInstanceOf[js.Any])
+    
+    inline def setPlaysInlineUndefined: Self = StObject.set(x, "playsInline", js.undefined)
   }
 }

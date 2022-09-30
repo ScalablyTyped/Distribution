@@ -101,20 +101,20 @@ object mod {
     def update_MRouter_(route: String, data: Any): Unit = js.native
   }
   
-  inline def el(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[String]]
-  inline def el(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
-  inline def el(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Node]]
-  inline def el[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Q]]
+  inline def el(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[String]]
+  inline def el(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
+  inline def el(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Node]]
+  inline def el[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("el")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Q]]
   
-  inline def h(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[String]]
-  inline def h(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
-  inline def h(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Node]]
-  inline def h[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Q]]
+  inline def h(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[String]]
+  inline def h(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
+  inline def h(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Node]]
+  inline def h[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Q]]
   
-  inline def html(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[String]]
-  inline def html(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
-  inline def html(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Node]]
-  inline def html[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Q]]
+  inline def html(query: String, args: RedomQueryArgument*): RedomElementOfElQuery[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[String]]
+  inline def html(query: RedomComponentClass, args: RedomQueryArgument*): RedomElementOfElQuery[RedomComponentClass] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[RedomComponentClass]]
+  inline def html(query: Node, args: RedomQueryArgument*): RedomElementOfElQuery[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Node]]
+  inline def html[Q /* <: js.Function0[RedomComponent] */](query: Q, args: RedomQueryArgument*): RedomElementOfElQuery[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RedomElementOfElQuery[Q]]
   
   object list {
     
@@ -149,7 +149,7 @@ object mod {
   inline def router(parent: RedomQuery, Views: RouterDictionary): Router_ = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(parent.asInstanceOf[js.Any], Views.asInstanceOf[js.Any])).asInstanceOf[Router_]
   inline def router(parent: RedomQuery, Views: RouterDictionary, initData: Any): Router_ = (^.asInstanceOf[js.Dynamic].applyDynamic("router")(parent.asInstanceOf[js.Any], Views.asInstanceOf[js.Any], initData.asInstanceOf[js.Any])).asInstanceOf[Router_]
   
-  inline def s(query: RedomQuery, args: RedomQueryArgument*): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SVGElement]
+  inline def s(query: RedomQuery, args: RedomQueryArgument*): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("s")(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SVGElement]
   
   inline def setAttr(view: RedomElement, arg1: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttr")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setAttr(view: RedomElement, arg1: String, arg2: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttr")(view.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -165,7 +165,7 @@ object mod {
   
   object svg {
     
-    inline def apply(query: RedomQuery, args: RedomQueryArgument*): SVGElement = ^.asInstanceOf[js.Dynamic].apply(List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SVGElement]
+    inline def apply(query: RedomQuery, args: RedomQueryArgument*): SVGElement = ^.asInstanceOf[js.Dynamic].apply(scala.List(query.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SVGElement]
     
     @JSImport("redom", "svg")
     @js.native

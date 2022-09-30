@@ -1,12 +1,11 @@
 package typings.wixUiTestUtils
 
 import typings.react.mod.ReactElement
-import typings.std.HTMLElement
+import typings.std.Element
 import typings.unidriverCore.mod.UniDriver
 import typings.wixUiTestUtils.anon.DataHookPropName
 import typings.wixUiTestUtils.anon.DataHookString
 import typings.wixUiTestUtils.anon.DataHookWrapper
-import typings.wixUiTestUtils.anon.Element
 import typings.wixUiTestUtils.baseDriverMod.BaseUniDriver
 import typings.wixUiTestUtils.createDriverFactoryMod.BaseDriver
 import org.scalablytyped.runtime.StObject
@@ -41,11 +40,11 @@ object vanillaVanillaMod {
     
     var dataHook: String
     
-    var wrapper: HTMLElement
+    var wrapper: Element
   }
   object TestkitArgs {
     
-    inline def apply(dataHook: String, wrapper: HTMLElement): TestkitArgs = {
+    inline def apply(dataHook: String, wrapper: Element): TestkitArgs = {
       val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestkitArgs]
     }
@@ -54,16 +53,11 @@ object vanillaVanillaMod {
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      inline def setWrapper(value: HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: Element): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
   
-  type TestkitOutputRegular[T /* <: BaseDriver */] = js.Function1[/* data */ Element, T]
+  type TestkitOutputRegular[T /* <: BaseDriver */] = js.Function1[/* data */ typings.wixUiTestUtils.anon.Element, T]
   
-  type TestkitOutputUni[T /* <: BaseUniDriver */] = js.Function3[
-    /* base */ UniDriver[js.Any], 
-    /* body */ UniDriver[js.Any], 
-    /* options */ DataHookString, 
-    T
-  ]
+  type TestkitOutputUni[T /* <: BaseUniDriver */] = js.Function3[/* base */ UniDriver[Any], /* body */ UniDriver[Any], /* options */ DataHookString, T]
 }

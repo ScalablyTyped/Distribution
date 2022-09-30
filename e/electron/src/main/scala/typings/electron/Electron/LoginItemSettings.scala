@@ -79,7 +79,7 @@ object LoginItemSettings {
     
     inline def setLaunchItems(value: js.Array[LaunchItems]): Self = StObject.set(x, "launchItems", value.asInstanceOf[js.Any])
     
-    inline def setLaunchItemsVarargs(value: LaunchItems*): Self = StObject.set(x, "launchItems", js.Array(value :_*))
+    inline def setLaunchItemsVarargs(value: LaunchItems*): Self = StObject.set(x, "launchItems", js.Array(value*))
     
     inline def setOpenAsHidden(value: Boolean): Self = StObject.set(x, "openAsHidden", value.asInstanceOf[js.Any])
     

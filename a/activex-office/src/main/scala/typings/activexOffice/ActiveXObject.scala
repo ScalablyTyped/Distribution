@@ -33,7 +33,6 @@ import typings.activexOffice.activexOfficeStrings.GetTypeInfo
 import typings.activexOffice.activexOfficeStrings.GetTypeInfoCount
 import typings.activexOffice.activexOfficeStrings.InUndoRedo
 import typings.activexOffice.activexOfficeStrings.Invoke
-import typings.activexOffice.activexOfficeStrings.List
 import typings.activexOffice.activexOfficeStrings.NewNode
 import typings.activexOffice.activexOfficeStrings.NewPart
 import typings.activexOffice.activexOfficeStrings.NodeAfterDelete
@@ -378,5 +377,10 @@ trait ActiveXObject extends StObject {
     newValue: String
   ): Unit = js.native
   @JSName("set")
-  def set_List(obj: CommandBarComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: String): Unit = js.native
+  def set_List(
+    obj: CommandBarComboBox,
+    propertyName: typings.activexOffice.activexOfficeStrings.List,
+    parameterTypes: js.Array[Double],
+    newValue: String
+  ): Unit = js.native
 }

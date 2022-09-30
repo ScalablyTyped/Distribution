@@ -41,12 +41,12 @@ object engineViewsMod {
     @js.native
     trait Engine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _inputElement: Nullable[HTMLElement] = js.native
       
       /**
         * Observable to handle when a change to inputElement occurs
-        * @hidden
+        * @internal
         */
       var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
       

@@ -1,13 +1,13 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`16`
-import typings.html2canvas.html2canvasNumbers.`17`
-import typings.html2canvas.html2canvasNumbers.`19`
-import typings.html2canvas.html2canvasNumbers.`20`
-import typings.html2canvas.html2canvasNumbers.`22`
-import typings.html2canvas.html2canvasNumbers.`6`
-import typings.html2canvas.html2canvasNumbers.`7`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`16`
+import typings.html2canvas.html2canvasInts.`17`
+import typings.html2canvas.html2canvasInts.`19`
+import typings.html2canvas.html2canvasInts.`20`
+import typings.html2canvas.html2canvasInts.`22`
+import typings.html2canvas.html2canvasInts.`6`
+import typings.html2canvas.html2canvasInts.`7`
 import typings.html2canvas.ipropertydescriptorMod.IPropertyListDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

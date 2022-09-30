@@ -1078,9 +1078,9 @@ object fetcherMod {
     - scala.Unit
     - typings.rdflib.rdflibBooleans.`true`
     - typings.rdflib.rdflibStrings.done
-    - typings.rdflib.rdflibNumbers.`401`
-    - typings.rdflib.rdflibNumbers.`403`
-    - typings.rdflib.rdflibNumbers.`404`
+    - typings.rdflib.rdflibInts.`401`
+    - typings.rdflib.rdflibInts.`403`
+    - typings.rdflib.rdflibInts.`404`
     - typings.rdflib.rdflibStrings.redirected
     - typings.rdflib.rdflibStrings.failed
     - typings.rdflib.rdflibStrings.parse_error

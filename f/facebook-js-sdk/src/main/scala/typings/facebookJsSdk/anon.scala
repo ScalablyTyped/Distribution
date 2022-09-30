@@ -8,11 +8,11 @@ import typings.facebookJsSdk.facebook.PaymentPricepoints
 import typings.facebookJsSdk.facebook.User
 import typings.facebookJsSdk.facebook.UserField
 import typings.facebookJsSdk.facebook.VideoUploadLimits
-import typings.facebookJsSdk.facebookJsSdkNumbers.`13`
-import typings.facebookJsSdk.facebookJsSdkNumbers.`17`
-import typings.facebookJsSdk.facebookJsSdkNumbers.`18`
-import typings.facebookJsSdk.facebookJsSdkNumbers.`20`
-import typings.facebookJsSdk.facebookJsSdkNumbers.`21`
+import typings.facebookJsSdk.facebookJsSdkInts.`13`
+import typings.facebookJsSdk.facebookJsSdkInts.`17`
+import typings.facebookJsSdk.facebookJsSdkInts.`18`
+import typings.facebookJsSdk.facebookJsSdkInts.`20`
+import typings.facebookJsSdk.facebookJsSdkInts.`21`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

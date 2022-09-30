@@ -11,8 +11,8 @@ import typings.screepsArena.gamePrototypesMod.Id
 import typings.screepsArena.gamePrototypesMod.RoomPosition
 import typings.screepsArena.pathFinderMod.FindPathOpts
 import typings.screepsArena.pathFinderMod.PathStep
-import typings.screepsArena.screepsArenaNumbers.`0`
-import typings.screepsArena.screepsArenaNumbers.`1`
+import typings.screepsArena.screepsArenaInts.`0`
+import typings.screepsArena.screepsArenaInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

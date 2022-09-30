@@ -100,6 +100,30 @@ trait JQueryStatic extends StObject {
     */
   // tslint:disable-next-line:no-unnecessary-generics unified-signatures
   def apply[TElement](callback: js.ThisFunction1[/* this */ Document, /* $ */ this.type, Unit]): JQuery[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param element_elementArray _&#x40;param_ `element_elementArray`
+    * <br>
+    * * `element` — A DOM element to wrap in a jQuery object. <br>
+    * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @example ​ ````Set the background color of the page to black.
+  ```javascript
+  $( document.body ).css( "background", "black" );
+  ```
+    * @example ​ ````Hide all the input elements within a form.
+  ```javascript
+  $( myForm.elements ).hide();
+  ```
+    */
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param object A plain object to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  def apply[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
   def apply[T /* <: Element */](element_elementArray: ArrayLike[T]): JQuery[T] = js.native
   /**
     * Creates DOM elements on the fly from the provided string of raw HTML.
@@ -131,16 +155,46 @@ trait JQueryStatic extends StObject {
   ```
     */
   // tslint:disable-next-line:no-unnecessary-generics
-  def apply[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
-  def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[Any]): JQuery[TElement] = js.native
-  def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
   /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    * @param object A plain object to wrap in a jQuery object.
+    * Accepts a string containing a CSS selector which is then used to match a set of elements.
+    * @param selector A string containing a selector expression
+    * @param context A DOM Element, Document, Selector or jQuery to use as context
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.0
+    * @example ​ ````Find all p elements that are children of a div element and apply a border to them.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>one</p>
+  <div><p>two</p></div>
+  <p>three</p>
+  ​
+  <script>
+  $( "div > p" ).css( "border", "1px solid gray" );
+  </script>
+  </body>
+  </html>
+  ```
+    * @example ​ ````Find all inputs of type radio within the first form in the document.
+  ```javascript
+  $( "input:radio", document.forms[ 0 ] );
+  ```
+    * @example ​ ````Find all div elements within an XML document from an Ajax response.
+  ```javascript
+  $( "div", xml.responseXML );
+  ```
+  ​
     */
-  def apply[T /* <: PlainObject[Any] */](`object`: T): JQuery[T] = js.native
+  def apply[TElement /* <: HTMLElement */](html: Selector | htmlString): JQuery[TElement] = js.native
+  def apply[TElement /* <: HTMLElement */](html: Selector | htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
+  def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[Any]): JQuery[TElement] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param selection An existing jQuery object to clone.

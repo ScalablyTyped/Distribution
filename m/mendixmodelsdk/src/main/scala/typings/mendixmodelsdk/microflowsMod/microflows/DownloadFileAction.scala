@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/download-file relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DownloadFileAction")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DownloadFileAction")
 @js.native
-class DownloadFileAction protected () extends MicroflowAction {
+open class DownloadFileAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,7 @@ class DownloadFileAction protected () extends MicroflowAction {
 }
 object DownloadFileAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DownloadFileAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DownloadFileAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object DownloadFileAction {
   inline def createIn(container: ActionActivity): DownloadFileAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DownloadFileAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DownloadFileAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DownloadFileAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.DownloadFileAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.DownloadFileAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

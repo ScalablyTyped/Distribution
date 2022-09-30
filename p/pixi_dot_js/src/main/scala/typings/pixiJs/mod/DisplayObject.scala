@@ -1,23 +1,16 @@
 package typings.pixiJs.mod
 
+import typings.pixiUtils.mod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The base class for all objects that are rendered on the screen.
-  *
-  * This is an abstract class and should not be used on its own; rather it should b e extended.
-  *
-  * @class
-  * @extends PIXI.utils.EventEmitter
-  * @memberof PIXI
-  */
-@JSImport("pixi.js", "DisplayObject")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @pixi/display.GlobalMixins.DisplayObject, keyof @pixi/utils.@pixi/utils.EventEmitter<string | symbol, any>> ]: @pixi/display.GlobalMixins.DisplayObject[P]} */ @JSImport("pixi.js", "DisplayObject")
 @js.native
-class DisplayObject ()
-  extends StObject
-     with typings.pixiJs.PIXI.DisplayObject
+abstract class DisplayObject ()
+  extends typings.pixiDisplay.mod.DisplayObject
+/* static members */
 object DisplayObject {
   
   @JSImport("pixi.js", "DisplayObject")
@@ -26,9 +19,7 @@ object DisplayObject {
   
   /**
     * Mixes all enumerable properties and methods from a source object to DisplayObject.
-    *
-    * @param {object} source - The source of properties and methods to mix in.
+    * @param source - The source of properties and methods to mix in.
     */
-  /* static member */
-  inline def mixin(source: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mixin(source: Dict[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

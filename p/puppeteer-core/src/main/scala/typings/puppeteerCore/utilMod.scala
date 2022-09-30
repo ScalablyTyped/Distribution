@@ -29,8 +29,8 @@ object utilMod {
   
   inline def debugError(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debugError")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def evaluationString(fun: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-  inline def evaluationString(fun: js.Function, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def evaluationString(fun: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def evaluationString(fun: js.Function, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluationString")(scala.List(fun.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def getExceptionMessage(exceptionDetails: ExceptionDetails): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExceptionMessage")(exceptionDetails.asInstanceOf[js.Any]).asInstanceOf[String]
   

@@ -2,8 +2,8 @@ package typings.webextensionPolyfill
 
 import typings.webextensionPolyfill.eventsMod.Events.Event
 import typings.webextensionPolyfill.tabsMod.Tabs.Tab
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`-1`
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`-2`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`-1`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`-2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

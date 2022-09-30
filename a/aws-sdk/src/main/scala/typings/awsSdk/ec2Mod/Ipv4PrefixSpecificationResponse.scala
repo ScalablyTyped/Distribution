@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Ipv4PrefixSpecificationResponse extends StObject {
   
   /**
-    * One or more IPv4 delegated prefixes assigned to the network interface.
+    * The IPv4 delegated prefixes assigned to the network interface.
     */
   var Ipv4Prefix: js.UndefOr[String] = js.undefined
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wixc3/resolve-directory-context" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wixc3/resolve-directory-context" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -86,4 +86,8 @@ object xmldsigjsStrings {
     extends StObject
        with OptionsSignTransform
   inline def `exc-c14n-com`: `exc-c14n-com` = "exc-c14n-com".asInstanceOf[`exc-c14n-com`]
+  
+  @js.native
+  sealed trait xpath extends StObject
+  inline def xpath: xpath = "xpath".asInstanceOf[xpath]
 }

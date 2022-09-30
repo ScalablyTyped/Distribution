@@ -26,9 +26,9 @@ String | TreeTableSelectionKeysType | js.Array[TreeTableSelectionKeysType] | Nul
 type TreeTableSelectionKeysType = StringDictionary[TreeTableSelectionKeyType]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.primereact.primereactNumbers.`1`
-  - typings.primereact.primereactNumbers.`0`
-  - typings.primereact.primereactNumbers.`-1`
+  - typings.primereact.primereactInts.`1`
+  - typings.primereact.primereactInts.`0`
+  - typings.primereact.primereactInts.`-1`
   - scala.Unit
   - scala.Null
 */

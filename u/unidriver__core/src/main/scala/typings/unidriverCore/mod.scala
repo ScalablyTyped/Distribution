@@ -87,9 +87,9 @@ object mod {
   inline def eventually(callback: js.Function0[Unit], timeout: Unit, retryDelay: Unit, lastError: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventually")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], retryDelay.asInstanceOf[js.Any], lastError.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def getAllNonTextKeyTypes(): js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 245 */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllNonTextKeyTypes")().asInstanceOf[js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 248 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 245 */ Any
   ]]
   
   inline def getDefinitionForKeyType(keyType: KeyDefinitionType): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefinitionForKeyType")(keyType.asInstanceOf[js.Any]).asInstanceOf[Key]

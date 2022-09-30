@@ -4569,15 +4569,15 @@ trait NodeFactory extends StObject {
   def createToken(token: SuperKeyword): SuperExpression = js.native
   def createToken(token: ThisKeyword): ThisExpression = js.native
   def createToken(token: TrueKeyword): TrueLiteral = js.native
-  def createToken[TKind /* <: PunctuationSyntaxKind */](token: TKind): PunctuationToken[TKind] = js.native
+  def createToken[TKind /* <: ModifierSyntaxKind */](token: TKind): ModifierToken[TKind] = js.native
   @JSName("createToken")
-  def createToken_TKind_KeywordSyntaxKind_KeywordToken[TKind /* <: KeywordSyntaxKind */](token: TKind): KeywordToken[TKind] = js.native
+  def createToken_TKind_KeywordToken[TKind /* <: KeywordSyntaxKind */](token: TKind): KeywordToken[TKind] = js.native
   @JSName("createToken")
-  def createToken_TKind_KeywordTypeSyntaxKind_KeywordTypeNode[TKind /* <: KeywordTypeSyntaxKind */](token: TKind): KeywordTypeNode[TKind] = js.native
+  def createToken_TKind_KeywordTypeNode[TKind /* <: KeywordTypeSyntaxKind */](token: TKind): KeywordTypeNode[TKind] = js.native
   @JSName("createToken")
-  def createToken_TKind_ModifierSyntaxKind_ModifierToken[TKind /* <: ModifierSyntaxKind */](token: TKind): ModifierToken[TKind] = js.native
+  def createToken_TKind_PunctuationToken[TKind /* <: PunctuationSyntaxKind */](token: TKind): PunctuationToken[TKind] = js.native
   @JSName("createToken")
-  def createToken_TKind_UnionUnknownEndOfFileToken_Token[TKind /* <: Unknown | typings.schematicsAngular.typescriptMod.SyntaxKind.EndOfFileToken */](token: TKind): Token[TKind] = js.native
+  def createToken_TKind_Token[TKind /* <: Unknown | typings.schematicsAngular.typescriptMod.SyntaxKind.EndOfFileToken */](token: TKind): Token[TKind] = js.native
   
   def createTrue(): TrueLiteral = js.native
   

@@ -22,7 +22,7 @@ trait DeviceSourceManager
     * @param deviceType - DeviceType
     * @param deviceSlot - DeviceSlot
     * @param eventData - Event
-    * @hidden
+    * @internal
     */
   def _onInputChanged[T /* <: DeviceType */](deviceType: T, deviceSlot: Double, eventData: IUIEvent): Unit = js.native
   

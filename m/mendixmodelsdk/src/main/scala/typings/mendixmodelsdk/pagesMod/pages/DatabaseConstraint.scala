@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DatabaseConstraint")
 @js.native
-class DatabaseConstraint protected () extends Element[IModel] {
+open class DatabaseConstraint protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +43,7 @@ class DatabaseConstraint protected () extends Element[IModel] {
 }
 object DatabaseConstraint {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DatabaseConstraint")
   @js.native
   val ^ : js.Any = js.native
   
@@ -86,13 +86,13 @@ object DatabaseConstraint {
   inline def createInSelectorDatabaseSourceUnderDatabaseConstraints(container: SelectorDatabaseSource): DatabaseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSelectorDatabaseSourceUnderDatabaseConstraints")(container.asInstanceOf[js.Any]).asInstanceOf[DatabaseConstraint]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DatabaseConstraint.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DatabaseConstraint.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DatabaseConstraint.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -42,8 +42,8 @@ object mod {
   
   inline def emit(event: start | exit | crash | configColonupdate | readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def emit(event: stdout | stderr, data: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
-  inline def emit(event: js.Symbol, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(scala.List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def emit(event: js.Symbol, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(scala.List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def emit_log(event: log, msg: LogMessage): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

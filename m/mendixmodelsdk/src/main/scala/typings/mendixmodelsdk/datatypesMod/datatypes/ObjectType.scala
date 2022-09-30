@@ -15,10 +15,12 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.mappingsMod.mappings.ValueMappingElement
 import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
+import typings.mendixmodelsdk.microflowsMod.microflows.MLModelCallParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling
+import typings.mendixmodelsdk.pagesMod.pages.PageParameter
 import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
@@ -37,9 +39,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.datatypesMod.datatypes.IDataType because Already inherited
 - typings.mendixmodelsdk.datatypesMod.datatypes.IEntityType because Already inherited
-- typings.mendixmodelsdk.datatypesMod.datatypes.IObjectType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, entity, entityQualifiedName, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType")
+- typings.mendixmodelsdk.datatypesMod.datatypes.IObjectType because var conflicts: containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter, entity, entityQualifiedName, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.ObjectType")
 @js.native
-class ObjectType protected () extends EntityType {
+open class ObjectType protected () extends EntityType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -72,10 +74,13 @@ class ObjectType protected () extends EntityType {
   
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MObjectType: MicroflowParameterBase = js.native
+  
+  @JSName("containerAsPageParameter")
+  def containerAsPageParameter_MObjectType: PageParameter = js.native
 }
 object ObjectType {
   
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.ObjectType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -93,7 +98,7 @@ object ObjectType {
     * of the parent appservices.AppServiceActionParameter element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.0.1
     */
   /* static member */
   inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
@@ -104,7 +109,7 @@ object ObjectType {
     * of the parent appservices.AppServiceAction element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.0.1
     */
   /* static member */
   inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
@@ -177,6 +182,17 @@ object ObjectType {
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
+    * The new ObjectType will be automatically stored in the 'parameterType' property
+    * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.10.0 to 9.17.0
+    */
+  /* static member */
+  inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  
+  /**
+    * Creates and returns a new ObjectType instance in the SDK and on the server.
     * The new ObjectType will be automatically stored in the 'microflowReturnType' property
     * of the parent microflows.MicroflowBase element passed as argument.
     *
@@ -207,6 +223,17 @@ object ObjectType {
     */
   /* static member */
   inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  
+  /**
+    * Creates and returns a new ObjectType instance in the SDK and on the server.
+    * The new ObjectType will be automatically stored in the 'parameterType' property
+    * of the parent pages.PageParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.4.0 and higher
+    */
+  /* static member */
+  inline def createInPageParameterUnderParameterType(container: PageParameter): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /**
     * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -264,13 +291,13 @@ object ObjectType {
   inline def createInValueMappingElementUnderType(container: ValueMappingElement): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.ObjectType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ObjectType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.ObjectType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

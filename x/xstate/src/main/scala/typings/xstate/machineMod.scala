@@ -129,7 +129,7 @@ object machineMod {
     ResolveTypegenMeta[TypegenDisabled, TEvent, BaseActionObject, ServiceMap]
   ]]
   
-  inline def Machine_TContextTStateSchema_StateSchemaAnyTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
+  inline def Machine_TContextTStateSchemaTEvent[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, TStateSchema, TEvent, BaseActionObject, ServiceMap, TypegenDisabled]
   ): StateMachine[
     TContext, 
@@ -148,7 +148,7 @@ object machineMod {
     ServiceMap, 
     ResolveTypegenMeta[TypegenDisabled, TEvent, BaseActionObject, ServiceMap]
   ]]
-  inline def Machine_TContextTStateSchema_StateSchemaAnyTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
+  inline def Machine_TContextTStateSchemaTEvent[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, TStateSchema, TEvent, BaseActionObject, ServiceMap, TypegenDisabled],
     options: Unit,
     initialContext: TContext
@@ -169,7 +169,7 @@ object machineMod {
     ServiceMap, 
     ResolveTypegenMeta[TypegenDisabled, TEvent, BaseActionObject, ServiceMap]
   ]]
-  inline def Machine_TContextTStateSchema_StateSchemaAnyTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
+  inline def Machine_TContextTStateSchemaTEvent[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, TStateSchema, TEvent, BaseActionObject, ServiceMap, TypegenDisabled],
     options: InternalMachineOptions[
       TContext, 
@@ -201,7 +201,7 @@ object machineMod {
     ServiceMap, 
     ResolveTypegenMeta[TypegenDisabled, TEvent, BaseActionObject, ServiceMap]
   ]]
-  inline def Machine_TContextTStateSchema_StateSchemaAnyTEvent_EventObject[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
+  inline def Machine_TContextTStateSchemaTEvent[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](
     config: MachineConfig[TContext, TStateSchema, TEvent, BaseActionObject, ServiceMap, TypegenDisabled],
     options: InternalMachineOptions[
       TContext, 

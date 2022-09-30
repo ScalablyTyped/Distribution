@@ -1,6 +1,7 @@
 package typings.googleGax.mod
 
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
+import typings.googleAuthLibrary.authclientMod.AuthClient
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "GoogleAuth")
 @js.native
-class GoogleAuth ()
-  extends typings.googleAuthLibrary.mod.GoogleAuth {
-  def this(opts: GoogleAuthOptions) = this()
+open class GoogleAuth[T /* <: AuthClient */] ()
+  extends typings.googleAuthLibrary.mod.GoogleAuth[T] {
+  def this(opts: GoogleAuthOptions[T]) = this()
 }
 /* static members */
 object GoogleAuth {

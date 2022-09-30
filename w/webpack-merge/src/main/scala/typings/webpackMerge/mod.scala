@@ -16,8 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Configuration /* <: js.Object */](firstConfiguration: Configuration, configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
-  inline def default[Configuration /* <: js.Object */](firstConfiguration: js.Array[Configuration], configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
+  inline def default[Configuration /* <: js.Object */](firstConfiguration: Configuration, configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
+  inline def default[Configuration /* <: js.Object */](firstConfiguration: js.Array[Configuration], configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
   
   @JSImport("webpack-merge", "CustomizeRule")
   @js.native
@@ -41,8 +41,8 @@ object mod {
   
   inline def customizeObject(rules: StringDictionary[CustomizeRule | CustomizeRuleString]): js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customizeObject")(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any]]
   
-  inline def merge[Configuration /* <: js.Object */](firstConfiguration: Configuration, configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
-  inline def merge[Configuration /* <: js.Object */](firstConfiguration: js.Array[Configuration], configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
+  inline def merge[Configuration /* <: js.Object */](firstConfiguration: Configuration, configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
+  inline def merge[Configuration /* <: js.Object */](firstConfiguration: js.Array[Configuration], configurations: Configuration*): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(firstConfiguration.asInstanceOf[js.Any]).`++`(configurations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Configuration]
   
   inline def mergeWithCustomize[Configuration /* <: js.Object */](options: ICustomizeOptions): js.Function2[
     /* firstConfiguration */ Configuration | js.Array[Configuration], 

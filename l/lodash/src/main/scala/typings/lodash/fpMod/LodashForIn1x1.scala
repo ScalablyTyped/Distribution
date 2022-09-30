@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashForIn1x1[T] extends StObject {
   
   def apply[T1 /* <: js.Object */](): js.UndefOr[T1 | Null] = js.native
-  def apply[T1 /* <: js.Object */](`object`: T1): js.UndefOr[T1 | Null] = js.native
+  def apply[T1 /* <: js.Object */](`object`: T1): T1 = js.native
 }

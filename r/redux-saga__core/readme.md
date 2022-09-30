@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-saga__core
 
-Typings are for version 1.1.3
+Typings are for version 1.2.1
 
 ## Library description:
 Saga middleware for Redux to handle Side Effects
@@ -10,15 +10,15 @@ Saga middleware for Redux to handle Side Effects
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/core |
 | Keywords           | javascript, redux, middleware, saga, effects, side effects |
-| # releases         | 9 |
-| # dependents       | 10 |
-| # downloads        | 24257426 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3300177.0 |
+| # stars            | 22256.0 |
 
 ## Links
 - [Homepage](https://redux-saga.js.org/)
 - [Bugs](https://github.com/redux-saga/redux-saga/issues)
-- [Repository](https://github.com/redux-saga/redux-saga)
+- [Repository](https://github.com/redux-saga/redux-saga/tree/main)
 - [Npm](https://www.npmjs.com/package/%40redux-saga%2Fcore)
     
 

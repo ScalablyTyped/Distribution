@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "ProtractorBrowser")
 @js.native
-class ProtractorBrowser protected ()
+open class ProtractorBrowser protected ()
   extends typings.protractor.browserMod.ProtractorBrowser {
   def this(webdriverInstance: typings.seleniumWebdriver.mod.WebDriver) = this()
   def this(webdriverInstance: typings.seleniumWebdriver.mod.WebDriver, opt_baseUrl: String) = this()

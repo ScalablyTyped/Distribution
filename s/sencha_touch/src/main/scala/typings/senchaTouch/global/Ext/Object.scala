@@ -81,7 +81,7 @@ object Object {
     * @param objs Object... One or more objects to be merged into the first.
     * @returns Object The object that is created as a result of merging all the objects passed in.
     */
-  inline def merge(source: Any, objs: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(source.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def merge(source: Any, objs: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(source.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   /** [Method]
     * @param source Object

@@ -2,13 +2,14 @@ package typings.puppeteerCore
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonTypesMod {
   
-  type Awaitable[T] = T | js.Thenable[T]
+  type Awaitable[T] = T | PromiseLike[T]
   
   type EvaluateFunc[T /* <: js.Array[Any] */] = js.Function1[/* params */ InnerParams[T], Awaitable[Any]]
   

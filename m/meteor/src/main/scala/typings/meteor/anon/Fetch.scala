@@ -1,12 +1,13 @@
 package typings.meteor.anon
 
+import typings.bson.mod.Document
 import typings.meteor.mongoMod.Mongo.DispatchTransform
 import typings.meteor.mongoMod.Mongo.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Fetch[Fn /* <: Transform[T] */, T, U] extends StObject {
+trait Fetch[Fn /* <: Transform[T] */, T /* <: Document */, U] extends StObject {
   
   var fetch: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -25,25 +26,25 @@ trait Fetch[Fn /* <: Transform[T] */, T, U] extends StObject {
       /* userId */ String, 
       /* doc */ DispatchTransform[Fn, T, U], 
       /* fieldNames */ js.Array[String], 
-      /* modifier */ js.Any, 
+      /* modifier */ Any, 
       Boolean
     ]
   ] = js.undefined
 }
 object Fetch {
   
-  inline def apply[Fn /* <: Transform[T] */, T, U](): Fetch[Fn, T, U] = {
+  inline def apply[Fn /* <: Transform[T] */, T /* <: Document */, U](): Fetch[Fn, T, U] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fetch[Fn, T, U]]
   }
   
-  extension [Self <: Fetch[?, ?, ?], Fn /* <: Transform[T] */, T, U](x: Self & (Fetch[Fn, T, U])) {
+  extension [Self <: Fetch[?, ?, ?], Fn /* <: Transform[T] */, T /* <: Document */, U](x: Self & (Fetch[Fn, T, U])) {
     
     inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
     
     inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
     
-    inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+    inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value*))
     
     inline def setInsert(value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U]) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
@@ -58,7 +59,7 @@ object Fetch {
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     inline def setUpdate(
-      value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U], /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
+      value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U], /* fieldNames */ js.Array[String], /* modifier */ Any) => Boolean
     ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

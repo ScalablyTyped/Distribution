@@ -1,35 +1,35 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1024`
-import typings.html2canvas.html2canvasNumbers.`1048576`
-import typings.html2canvas.html2canvasNumbers.`128`
-import typings.html2canvas.html2canvasNumbers.`131072`
-import typings.html2canvas.html2canvasNumbers.`134217728`
-import typings.html2canvas.html2canvasNumbers.`16384`
-import typings.html2canvas.html2canvasNumbers.`16777216`
-import typings.html2canvas.html2canvasNumbers.`16`
-import typings.html2canvas.html2canvasNumbers.`2048`
-import typings.html2canvas.html2canvasNumbers.`2097152`
-import typings.html2canvas.html2canvasNumbers.`256`
-import typings.html2canvas.html2canvasNumbers.`262144`
-import typings.html2canvas.html2canvasNumbers.`268435456`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`32768`
-import typings.html2canvas.html2canvasNumbers.`32`
-import typings.html2canvas.html2canvasNumbers.`33554432`
-import typings.html2canvas.html2canvasNumbers.`4096`
-import typings.html2canvas.html2canvasNumbers.`4194304`
-import typings.html2canvas.html2canvasNumbers.`4`
-import typings.html2canvas.html2canvasNumbers.`512`
-import typings.html2canvas.html2canvasNumbers.`524288`
-import typings.html2canvas.html2canvasNumbers.`536870912`
-import typings.html2canvas.html2canvasNumbers.`64`
-import typings.html2canvas.html2canvasNumbers.`65536`
-import typings.html2canvas.html2canvasNumbers.`67108864`
-import typings.html2canvas.html2canvasNumbers.`8192`
-import typings.html2canvas.html2canvasNumbers.`8388608`
-import typings.html2canvas.html2canvasNumbers.`8`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1024`
+import typings.html2canvas.html2canvasInts.`1048576`
+import typings.html2canvas.html2canvasInts.`128`
+import typings.html2canvas.html2canvasInts.`131072`
+import typings.html2canvas.html2canvasInts.`134217728`
+import typings.html2canvas.html2canvasInts.`16384`
+import typings.html2canvas.html2canvasInts.`16777216`
+import typings.html2canvas.html2canvasInts.`16`
+import typings.html2canvas.html2canvasInts.`2048`
+import typings.html2canvas.html2canvasInts.`2097152`
+import typings.html2canvas.html2canvasInts.`256`
+import typings.html2canvas.html2canvasInts.`262144`
+import typings.html2canvas.html2canvasInts.`268435456`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`32768`
+import typings.html2canvas.html2canvasInts.`32`
+import typings.html2canvas.html2canvasInts.`33554432`
+import typings.html2canvas.html2canvasInts.`4096`
+import typings.html2canvas.html2canvasInts.`4194304`
+import typings.html2canvas.html2canvasInts.`4`
+import typings.html2canvas.html2canvasInts.`512`
+import typings.html2canvas.html2canvasInts.`524288`
+import typings.html2canvas.html2canvasInts.`536870912`
+import typings.html2canvas.html2canvasInts.`64`
+import typings.html2canvas.html2canvasInts.`65536`
+import typings.html2canvas.html2canvasInts.`67108864`
+import typings.html2canvas.html2canvasInts.`8192`
+import typings.html2canvas.html2canvasInts.`8388608`
+import typings.html2canvas.html2canvasInts.`8`
 import typings.html2canvas.ipropertydescriptorMod.IPropertyListDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,39 +42,39 @@ object displayMod {
   val display: IPropertyListDescriptor[Display_] = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`4`
-    - typings.html2canvas.html2canvasNumbers.`8`
-    - typings.html2canvas.html2canvasNumbers.`16`
-    - typings.html2canvas.html2canvasNumbers.`32`
-    - typings.html2canvas.html2canvasNumbers.`64`
-    - typings.html2canvas.html2canvasNumbers.`128`
-    - typings.html2canvas.html2canvasNumbers.`256`
-    - typings.html2canvas.html2canvasNumbers.`512`
-    - typings.html2canvas.html2canvasNumbers.`1024`
-    - typings.html2canvas.html2canvasNumbers.`2048`
-    - typings.html2canvas.html2canvasNumbers.`4096`
-    - typings.html2canvas.html2canvasNumbers.`8192`
-    - typings.html2canvas.html2canvasNumbers.`16384`
-    - typings.html2canvas.html2canvasNumbers.`32768`
-    - typings.html2canvas.html2canvasNumbers.`65536`
-    - typings.html2canvas.html2canvasNumbers.`131072`
-    - typings.html2canvas.html2canvasNumbers.`262144`
-    - typings.html2canvas.html2canvasNumbers.`524288`
-    - typings.html2canvas.html2canvasNumbers.`1048576`
-    - typings.html2canvas.html2canvasNumbers.`2097152`
-    - typings.html2canvas.html2canvasNumbers.`4194304`
-    - typings.html2canvas.html2canvasNumbers.`8388608`
-    - typings.html2canvas.html2canvasNumbers.`16777216`
-    - typings.html2canvas.html2canvasNumbers.`33554432`
-    - typings.html2canvas.html2canvasNumbers.`67108864`
-    - typings.html2canvas.html2canvasNumbers.`134217728`
-    - typings.html2canvas.html2canvasNumbers.`268435456`
-    - typings.html2canvas.html2canvasNumbers.`536870912`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`4`
+    - typings.html2canvas.html2canvasInts.`8`
+    - typings.html2canvas.html2canvasInts.`16`
+    - typings.html2canvas.html2canvasInts.`32`
+    - typings.html2canvas.html2canvasInts.`64`
+    - typings.html2canvas.html2canvasInts.`128`
+    - typings.html2canvas.html2canvasInts.`256`
+    - typings.html2canvas.html2canvasInts.`512`
+    - typings.html2canvas.html2canvasInts.`1024`
+    - typings.html2canvas.html2canvasInts.`2048`
+    - typings.html2canvas.html2canvasInts.`4096`
+    - typings.html2canvas.html2canvasInts.`8192`
+    - typings.html2canvas.html2canvasInts.`16384`
+    - typings.html2canvas.html2canvasInts.`32768`
+    - typings.html2canvas.html2canvasInts.`65536`
+    - typings.html2canvas.html2canvasInts.`131072`
+    - typings.html2canvas.html2canvasInts.`262144`
+    - typings.html2canvas.html2canvasInts.`524288`
+    - typings.html2canvas.html2canvasInts.`1048576`
+    - typings.html2canvas.html2canvasInts.`2097152`
+    - typings.html2canvas.html2canvasInts.`4194304`
+    - typings.html2canvas.html2canvasInts.`8388608`
+    - typings.html2canvas.html2canvasInts.`16777216`
+    - typings.html2canvas.html2canvasInts.`33554432`
+    - typings.html2canvas.html2canvasInts.`67108864`
+    - typings.html2canvas.html2canvasInts.`134217728`
+    - typings.html2canvas.html2canvasInts.`268435456`
+    - typings.html2canvas.html2canvasInts.`536870912`
   */
-  trait DISPLAY extends StObject
-  object DISPLAY {
+  trait DISPLAY__ extends StObject
+  object DISPLAY__ {
     
     inline def BLOCK: `2` = 2.asInstanceOf[`2`]
     

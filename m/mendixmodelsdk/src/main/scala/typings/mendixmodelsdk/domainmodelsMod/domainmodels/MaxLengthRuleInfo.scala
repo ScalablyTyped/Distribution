@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MaxLengthRuleInfo")
+@JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MaxLengthRuleInfo")
 @js.native
-class MaxLengthRuleInfo protected () extends RuleInfo {
+open class MaxLengthRuleInfo protected () extends RuleInfo {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class MaxLengthRuleInfo protected () extends RuleInfo {
 }
 object MaxLengthRuleInfo {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MaxLengthRuleInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MaxLengthRuleInfo")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object MaxLengthRuleInfo {
   inline def createIn(container: ValidationRule): MaxLengthRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MaxLengthRuleInfo]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MaxLengthRuleInfo.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MaxLengthRuleInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MaxLengthRuleInfo.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MaxLengthRuleInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

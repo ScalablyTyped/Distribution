@@ -12,7 +12,7 @@ trait EnvironmentAccountConnectionSummary extends StObject {
   var arn: EnvironmentAccountConnectionArn
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. The environment account connection must have a componentRoleArn to allow directly defined components to be associated with any environments running in the account. For more information about components, see Proton components in the Proton Administrator Guide.
+    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. The environment account connection must have a componentRoleArn to allow directly defined components to be associated with any environments running in the account. For more information about components, see Proton components in the Proton User Guide.
     */
   var componentRoleArn: js.UndefOr[Arn] = js.undefined
   

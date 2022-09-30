@@ -8,7 +8,6 @@ import typings.seleniumWebdriver.mod.Locator
 import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
 import typings.seleniumWebdriver.mod.WebElementCondition
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ trait Typeofuntil extends StObject {
   
   def elementTextIs(element: WebElement, text: String): WebElementCondition = js.native
   
-  def elementTextMatches(element: WebElement, regex: RegExp): WebElementCondition = js.native
+  def elementTextMatches(element: WebElement, regex: js.RegExp): WebElementCondition = js.native
   
   def elementsLocated(locator: Locator): Condition[js.Array[WebElement]] = js.native
   
@@ -52,11 +51,11 @@ trait Typeofuntil extends StObject {
   
   def titleIs(title: String): Condition[Boolean] = js.native
   
-  def titleMatches(regex: RegExp): Condition[Boolean] = js.native
+  def titleMatches(regex: js.RegExp): Condition[Boolean] = js.native
   
   def urlContains(substrUrl: String): Condition[Boolean] = js.native
   
   def urlIs(url: String): Condition[Boolean] = js.native
   
-  def urlMatches(regex: RegExp): Condition[Boolean] = js.native
+  def urlMatches(regex: js.RegExp): Condition[Boolean] = js.native
 }

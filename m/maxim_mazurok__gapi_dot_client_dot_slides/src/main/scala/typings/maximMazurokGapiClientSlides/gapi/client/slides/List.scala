@@ -22,12 +22,12 @@ trait List extends StObject {
 }
 object List {
   
-  inline def apply(): List = {
+  inline def apply(): typings.maximMazurokGapiClientSlides.gapi.client.slides.List = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.maximMazurokGapiClientSlides.gapi.client.slides.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.maximMazurokGapiClientSlides.gapi.client.slides.List](x: Self) {
     
     inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     

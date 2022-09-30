@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Contains")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Contains")
 @js.native
-class Contains protected ()
+open class Contains protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.Contains {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class Contains protected ()
 }
 object Contains {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Contains")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Contains")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object Contains {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ListOperationAction): typings.mendixmodelsdk.microflowsMod.microflows.Contains = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.Contains]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Contains.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Contains.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Contains.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Contains.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

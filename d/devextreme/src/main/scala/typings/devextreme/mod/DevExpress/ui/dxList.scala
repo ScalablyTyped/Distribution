@@ -16,6 +16,7 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -375,7 +376,7 @@ object dxList {
        with EventInfo[dxList[TItem, TKey]]
        with ListItemInfo[TItem] {
     
-    var cancel: js.UndefOr[Boolean | (js.Thenable[Boolean | Unit])] = js.undefined
+    var cancel: js.UndefOr[Boolean | (PromiseLike[Boolean | Unit])] = js.undefined
   }
   object ItemDeletingEvent {
     
@@ -391,7 +392,7 @@ object dxList {
     
     extension [Self <: ItemDeletingEvent[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (ItemDeletingEvent[TItem, TKey])) {
       
-      inline def setCancel(value: Boolean | (js.Thenable[Boolean | Unit])): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | (PromiseLike[Boolean | Unit])): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     }

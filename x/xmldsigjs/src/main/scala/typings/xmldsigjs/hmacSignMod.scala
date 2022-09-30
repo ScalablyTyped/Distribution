@@ -29,17 +29,17 @@ object hmacSignMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/hmac_sign", "HmacSha1")
   @js.native
-  class HmacSha1 () extends SignatureAlgorithm
+  open class HmacSha1 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/hmac_sign", "HmacSha256")
   @js.native
-  class HmacSha256 () extends SignatureAlgorithm
+  open class HmacSha256 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/hmac_sign", "HmacSha384")
   @js.native
-  class HmacSha384 () extends SignatureAlgorithm
+  open class HmacSha384 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/hmac_sign", "HmacSha512")
   @js.native
-  class HmacSha512 () extends SignatureAlgorithm
+  open class HmacSha512 () extends SignatureAlgorithm
 }

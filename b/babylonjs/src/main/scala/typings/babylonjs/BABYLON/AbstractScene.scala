@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AbstractScene extends StObject {
   
-  /** @hidden */
+  /** @internal */
   /* protected */ var _environmentTexture: Nullable[BaseTexture] = js.native
   
-  /** @hidden (Backing field) */
+  /** @internal (Backing field) */
   var _prePassRenderer: Nullable[PrePassRenderer] = js.native
   
-  /** @hidden (Backing field) */
+  /** @internal (Backing field) */
   var _subSurfaceConfiguration: Nullable[SubSurfaceConfiguration] = js.native
   
   /**

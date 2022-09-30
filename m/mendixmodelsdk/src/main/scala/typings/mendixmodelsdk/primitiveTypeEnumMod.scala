@@ -8,7 +8,7 @@ object primitiveTypeEnumMod {
   
   @js.native
   sealed trait PrimitiveTypeEnum extends StObject
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/PrimitiveTypeEnum", "PrimitiveTypeEnum")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/PrimitiveTypeEnum", "PrimitiveTypeEnum")
   @js.native
   object PrimitiveTypeEnum extends StObject {
     

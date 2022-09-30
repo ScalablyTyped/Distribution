@@ -23,13 +23,13 @@ object mod {
   
   inline def sankeyLinkHorizontal(): Link_[Any, SankeyLinkIndex, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link_[Any, SankeyLinkIndex, js.Tuple2[Double, Double]]]
   
-  inline def sankeyLinkHorizontal_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link_[Any, SankeyLink[N, L], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link_[Any, SankeyLink[N, L], js.Tuple2[Double, Double]]]
+  inline def sankeyLinkHorizontal_NL[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link_[Any, SankeyLink[N, L], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link_[Any, SankeyLink[N, L], js.Tuple2[Double, Double]]]
   
   inline def sankeyRight(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyRight")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def sankey_DataN_SankeyExtraPropertiesL_SankeyExtraProperties[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[Data, N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[Data, N, L]]
+  inline def sankey_DataNL[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[Data, N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[Data, N, L]]
   
-  inline def sankey_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[SankeyGraph[N, L], N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[N, L], N, L]]
+  inline def sankey_NL[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[SankeyGraph[N, L], N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[N, L], N, L]]
   
   type SankeyExtraProperties = StringDictionary[Any]
   

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object setMod {
   
-  @JSImport("ow/dist/source/predicates/set", "SetPredicate")
+  @JSImport("ow/dist/predicates/set", "SetPredicate")
   @js.native
   /**
     @hidden
     */
-  class SetPredicate[T] () extends Predicate[Set[T]] {
+  open class SetPredicate[T] () extends Predicate[Set[T]] {
     def this(options: PredicateOptions) = this()
     
     /**

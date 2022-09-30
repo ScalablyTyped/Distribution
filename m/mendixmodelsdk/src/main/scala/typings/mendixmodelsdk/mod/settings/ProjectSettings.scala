@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "settings.ProjectSettings")
 @js.native
-class ProjectSettings protected ()
+open class ProjectSettings protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.ProjectSettings {
   def this(
     model: AbstractModel,

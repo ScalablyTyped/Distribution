@@ -1,8 +1,8 @@
 package typings.wordpressEditor
 
-import typings.wordpressApiFetch.mod.Schema.User
 import typings.wordpressBlockEditor.mod.EditorInserterItem
 import typings.wordpressComponents.autocompleteMod.Autocomplete.Completer
+import typings.wordpressCoreData.schemaMod.Schema.User
 import typings.wordpressEditor.wordpressEditorStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

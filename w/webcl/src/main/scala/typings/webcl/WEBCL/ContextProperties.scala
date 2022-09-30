@@ -1,17 +1,17 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1090`
-import typings.webcl.webclNumbers.`0x1091`
-import typings.webcl.webclNumbers.`0x1093`
+import typings.webcl.webclInts.`0x1090`
+import typings.webcl.webclInts.`0x1091`
+import typings.webcl.webclInts.`0x1093`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_context_properties */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1090`
-  - typings.webcl.webclNumbers.`0x1091`
-  - typings.webcl.webclNumbers.`0x1093`
+  - typings.webcl.webclInts.`0x1090`
+  - typings.webcl.webclInts.`0x1091`
+  - typings.webcl.webclInts.`0x1093`
 */
 trait ContextProperties extends StObject
 object ContextProperties {

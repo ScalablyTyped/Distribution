@@ -1,34 +1,34 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-4106`
-import typings.activexExcel.activexExcelNumbers.`-4112`
-import typings.activexExcel.activexExcelNumbers.`-4113`
-import typings.activexExcel.activexExcelNumbers.`-4136`
-import typings.activexExcel.activexExcelNumbers.`-4139`
-import typings.activexExcel.activexExcelNumbers.`-4149`
-import typings.activexExcel.activexExcelNumbers.`-4155`
-import typings.activexExcel.activexExcelNumbers.`-4156`
-import typings.activexExcel.activexExcelNumbers.`-4157`
-import typings.activexExcel.activexExcelNumbers.`-4164`
-import typings.activexExcel.activexExcelNumbers.`-4165`
-import typings.activexExcel.activexExcelNumbers.`1000`
+import typings.activexExcel.activexExcelInts.`-4106`
+import typings.activexExcel.activexExcelInts.`-4112`
+import typings.activexExcel.activexExcelInts.`-4113`
+import typings.activexExcel.activexExcelInts.`-4136`
+import typings.activexExcel.activexExcelInts.`-4139`
+import typings.activexExcel.activexExcelInts.`-4149`
+import typings.activexExcel.activexExcelInts.`-4155`
+import typings.activexExcel.activexExcelInts.`-4156`
+import typings.activexExcel.activexExcelInts.`-4157`
+import typings.activexExcel.activexExcelInts.`-4164`
+import typings.activexExcel.activexExcelInts.`-4165`
+import typings.activexExcel.activexExcelInts.`1000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`-4106`
-  - typings.activexExcel.activexExcelNumbers.`-4112`
-  - typings.activexExcel.activexExcelNumbers.`-4113`
-  - typings.activexExcel.activexExcelNumbers.`-4136`
-  - typings.activexExcel.activexExcelNumbers.`-4139`
-  - typings.activexExcel.activexExcelNumbers.`-4149`
-  - typings.activexExcel.activexExcelNumbers.`-4155`
-  - typings.activexExcel.activexExcelNumbers.`-4156`
-  - typings.activexExcel.activexExcelNumbers.`-4157`
-  - typings.activexExcel.activexExcelNumbers.`1000`
-  - typings.activexExcel.activexExcelNumbers.`-4164`
-  - typings.activexExcel.activexExcelNumbers.`-4165`
+  - typings.activexExcel.activexExcelInts.`-4106`
+  - typings.activexExcel.activexExcelInts.`-4112`
+  - typings.activexExcel.activexExcelInts.`-4113`
+  - typings.activexExcel.activexExcelInts.`-4136`
+  - typings.activexExcel.activexExcelInts.`-4139`
+  - typings.activexExcel.activexExcelInts.`-4149`
+  - typings.activexExcel.activexExcelInts.`-4155`
+  - typings.activexExcel.activexExcelInts.`-4156`
+  - typings.activexExcel.activexExcelInts.`-4157`
+  - typings.activexExcel.activexExcelInts.`1000`
+  - typings.activexExcel.activexExcelInts.`-4164`
+  - typings.activexExcel.activexExcelInts.`-4165`
 */
 trait XlConsolidationFunction extends StObject
 object XlConsolidationFunction {

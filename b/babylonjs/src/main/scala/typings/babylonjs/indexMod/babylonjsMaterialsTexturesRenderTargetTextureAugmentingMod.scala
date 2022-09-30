@@ -11,7 +11,7 @@ object babylonjsMaterialsTexturesRenderTargetTextureAugmentingMod {
   
   trait RenderTargetTexture extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var _prePassRenderTarget: Nullable[PrePassRenderTarget]
   }
   object RenderTargetTexture {

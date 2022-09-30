@@ -10,31 +10,31 @@ open class OcclusionDataStorage ()
   extends StObject
      with typings.babylonjs.BABYLON.OcclusionDataStorage {
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var forceRenderingWhenOccluded: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var isOccluded: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var isOcclusionQueryInProgress: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var occlusionInternalRetryCounter: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var occlusionQueryAlgorithmType: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var occlusionRetryCount: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var occlusionType: Double = js.native
 }

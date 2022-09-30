@@ -1,25 +1,25 @@
 package typings.activexShell.Shell32
 
-import typings.activexShell.activexShellNumbers.`128`
-import typings.activexShell.activexShellNumbers.`16`
-import typings.activexShell.activexShellNumbers.`1`
-import typings.activexShell.activexShellNumbers.`32`
-import typings.activexShell.activexShellNumbers.`4`
-import typings.activexShell.activexShellNumbers.`64`
-import typings.activexShell.activexShellNumbers.`8`
+import typings.activexShell.activexShellInts.`128`
+import typings.activexShell.activexShellInts.`16`
+import typings.activexShell.activexShellInts.`1`
+import typings.activexShell.activexShellInts.`32`
+import typings.activexShell.activexShellInts.`4`
+import typings.activexShell.activexShellInts.`64`
+import typings.activexShell.activexShellInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShell.activexShellNumbers.`1`
-  - typings.activexShell.activexShellNumbers.`4`
-  - typings.activexShell.activexShellNumbers.`8`
-  - typings.activexShell.activexShellNumbers.`16`
-  - typings.activexShell.activexShellNumbers.`32`
-  - typings.activexShell.activexShellNumbers.`64`
-  - typings.activexShell.activexShellNumbers.`128`
+  - typings.activexShell.activexShellInts.`1`
+  - typings.activexShell.activexShellInts.`4`
+  - typings.activexShell.activexShellInts.`8`
+  - typings.activexShell.activexShellInts.`16`
+  - typings.activexShell.activexShellInts.`32`
+  - typings.activexShell.activexShellInts.`64`
+  - typings.activexShell.activexShellInts.`128`
 */
 trait ShellLinkResolveFlags extends StObject
 object ShellLinkResolveFlags {

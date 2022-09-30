@@ -1072,64 +1072,64 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.acorn.acornNumbers.`3`
-    - typings.acorn.acornNumbers.`5`
-    - typings.acorn.acornNumbers.`6`
-    - typings.acorn.acornNumbers.`7`
-    - typings.acorn.acornNumbers.`8`
-    - typings.acorn.acornNumbers.`9`
-    - typings.acorn.acornNumbers.`10`
-    - typings.acorn.acornNumbers.`11`
-    - typings.acorn.acornNumbers.`12`
-    - typings.acorn.acornNumbers.`13`
-    - typings.acorn.acornNumbers.`2015`
-    - typings.acorn.acornNumbers.`2016`
-    - typings.acorn.acornNumbers.`2017`
-    - typings.acorn.acornNumbers.`2018`
-    - typings.acorn.acornNumbers.`2019`
-    - typings.acorn.acornNumbers.`2020`
-    - typings.acorn.acornNumbers.`2021`
-    - typings.acorn.acornNumbers.`2022`
+    - typings.acorn.acornInts.`3`
+    - typings.acorn.acornInts.`5`
+    - typings.acorn.acornInts.`6`
+    - typings.acorn.acornInts.`7`
+    - typings.acorn.acornInts.`8`
+    - typings.acorn.acornInts.`9`
+    - typings.acorn.acornInts.`10`
+    - typings.acorn.acornInts.`11`
+    - typings.acorn.acornInts.`12`
+    - typings.acorn.acornInts.`13`
+    - typings.acorn.acornInts.`2015`
+    - typings.acorn.acornInts.`2016`
+    - typings.acorn.acornInts.`2017`
+    - typings.acorn.acornInts.`2018`
+    - typings.acorn.acornInts.`2019`
+    - typings.acorn.acornInts.`2020`
+    - typings.acorn.acornInts.`2021`
+    - typings.acorn.acornInts.`2022`
     - typings.acorn.acornStrings.latest
   */
   trait ecmaVersion extends StObject
   object ecmaVersion {
     
-    inline def `10`: typings.acorn.acornNumbers.`10` = 10.asInstanceOf[typings.acorn.acornNumbers.`10`]
+    inline def `10`: typings.acorn.acornInts.`10` = 10.asInstanceOf[typings.acorn.acornInts.`10`]
     
-    inline def `11`: typings.acorn.acornNumbers.`11` = 11.asInstanceOf[typings.acorn.acornNumbers.`11`]
+    inline def `11`: typings.acorn.acornInts.`11` = 11.asInstanceOf[typings.acorn.acornInts.`11`]
     
-    inline def `12`: typings.acorn.acornNumbers.`12` = 12.asInstanceOf[typings.acorn.acornNumbers.`12`]
+    inline def `12`: typings.acorn.acornInts.`12` = 12.asInstanceOf[typings.acorn.acornInts.`12`]
     
-    inline def `13`: typings.acorn.acornNumbers.`13` = 13.asInstanceOf[typings.acorn.acornNumbers.`13`]
+    inline def `13`: typings.acorn.acornInts.`13` = 13.asInstanceOf[typings.acorn.acornInts.`13`]
     
-    inline def `2015`: typings.acorn.acornNumbers.`2015` = 2015.asInstanceOf[typings.acorn.acornNumbers.`2015`]
+    inline def `2015`: typings.acorn.acornInts.`2015` = 2015.asInstanceOf[typings.acorn.acornInts.`2015`]
     
-    inline def `2016`: typings.acorn.acornNumbers.`2016` = 2016.asInstanceOf[typings.acorn.acornNumbers.`2016`]
+    inline def `2016`: typings.acorn.acornInts.`2016` = 2016.asInstanceOf[typings.acorn.acornInts.`2016`]
     
-    inline def `2017`: typings.acorn.acornNumbers.`2017` = 2017.asInstanceOf[typings.acorn.acornNumbers.`2017`]
+    inline def `2017`: typings.acorn.acornInts.`2017` = 2017.asInstanceOf[typings.acorn.acornInts.`2017`]
     
-    inline def `2018`: typings.acorn.acornNumbers.`2018` = 2018.asInstanceOf[typings.acorn.acornNumbers.`2018`]
+    inline def `2018`: typings.acorn.acornInts.`2018` = 2018.asInstanceOf[typings.acorn.acornInts.`2018`]
     
-    inline def `2019`: typings.acorn.acornNumbers.`2019` = 2019.asInstanceOf[typings.acorn.acornNumbers.`2019`]
+    inline def `2019`: typings.acorn.acornInts.`2019` = 2019.asInstanceOf[typings.acorn.acornInts.`2019`]
     
-    inline def `2020`: typings.acorn.acornNumbers.`2020` = 2020.asInstanceOf[typings.acorn.acornNumbers.`2020`]
+    inline def `2020`: typings.acorn.acornInts.`2020` = 2020.asInstanceOf[typings.acorn.acornInts.`2020`]
     
-    inline def `2021`: typings.acorn.acornNumbers.`2021` = 2021.asInstanceOf[typings.acorn.acornNumbers.`2021`]
+    inline def `2021`: typings.acorn.acornInts.`2021` = 2021.asInstanceOf[typings.acorn.acornInts.`2021`]
     
-    inline def `2022`: typings.acorn.acornNumbers.`2022` = 2022.asInstanceOf[typings.acorn.acornNumbers.`2022`]
+    inline def `2022`: typings.acorn.acornInts.`2022` = 2022.asInstanceOf[typings.acorn.acornInts.`2022`]
     
-    inline def `3`: typings.acorn.acornNumbers.`3` = 3.asInstanceOf[typings.acorn.acornNumbers.`3`]
+    inline def `3`: typings.acorn.acornInts.`3` = 3.asInstanceOf[typings.acorn.acornInts.`3`]
     
-    inline def `5`: typings.acorn.acornNumbers.`5` = 5.asInstanceOf[typings.acorn.acornNumbers.`5`]
+    inline def `5`: typings.acorn.acornInts.`5` = 5.asInstanceOf[typings.acorn.acornInts.`5`]
     
-    inline def `6`: typings.acorn.acornNumbers.`6` = 6.asInstanceOf[typings.acorn.acornNumbers.`6`]
+    inline def `6`: typings.acorn.acornInts.`6` = 6.asInstanceOf[typings.acorn.acornInts.`6`]
     
-    inline def `7`: typings.acorn.acornNumbers.`7` = 7.asInstanceOf[typings.acorn.acornNumbers.`7`]
+    inline def `7`: typings.acorn.acornInts.`7` = 7.asInstanceOf[typings.acorn.acornInts.`7`]
     
-    inline def `8`: typings.acorn.acornNumbers.`8` = 8.asInstanceOf[typings.acorn.acornNumbers.`8`]
+    inline def `8`: typings.acorn.acornInts.`8` = 8.asInstanceOf[typings.acorn.acornInts.`8`]
     
-    inline def `9`: typings.acorn.acornNumbers.`9` = 9.asInstanceOf[typings.acorn.acornNumbers.`9`]
+    inline def `9`: typings.acorn.acornInts.`9` = 9.asInstanceOf[typings.acorn.acornInts.`9`]
     
     inline def latest: typings.acorn.acornStrings.latest = "latest".asInstanceOf[typings.acorn.acornStrings.latest]
   }

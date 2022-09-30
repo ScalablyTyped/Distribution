@@ -321,11 +321,11 @@ trait Function[T]
   /**
     * @see _.partialRight
     */
-  def partialRight[T2](arg2: T2, plc3: __, plc4: __): Function[Function3[Any, Any, Any, Any]] = js.native
+  def partialRight[T2](arg2: T2, plc3: __): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T3](arg3: T3, plc4: __): Function[Function3[Any, Any, Any, Any]] = js.native
+  def partialRight[T2](arg2: T2, plc3: __, plc4: __): Function[Function3[Any, Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
@@ -351,11 +351,11 @@ trait Function[T]
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T3](arg2: T2, arg3: T3): Function[Function1[Any, Any]] = js.native
+  def partialRight[T2, T4](arg2: T2, plc3: __, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T2, T4](arg2: T2, plc3: __, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
+  def partialRight[T3, T4](arg3: T3, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
@@ -396,7 +396,7 @@ trait Function[T]
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T2[T2](arg2: T2, plc3: __): Function[Function2[Any, Any, Any]] = js.native
+  def partialRight_T2T3[T2, T3](arg2: T2, arg3: T3): Function[Function1[Any, Any]] = js.native
   /**
     * @see _.partialRight
     */
@@ -411,7 +411,7 @@ trait Function[T]
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T3T4[T3, T4](arg3: T3, arg4: T4): Function[Function2[Any, Any, Any]] = js.native
+  def partialRight_T3[T3](arg3: T3, plc4: __): Function[Function3[Any, Any, Any, Any]] = js.native
   /**
     * @see _.partialRight
     */

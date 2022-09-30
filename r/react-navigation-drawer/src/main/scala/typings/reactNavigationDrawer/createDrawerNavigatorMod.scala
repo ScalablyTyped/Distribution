@@ -24,21 +24,21 @@ object createDrawerNavigatorMod {
   inline def default(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 
-      js.Any
+      NavigationDrawerProp[NavigationRoute[NavigationParams], Any], 
+      Any
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
   inline def default(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 
-      js.Any
+      NavigationDrawerProp[NavigationRoute[NavigationParams], Any], 
+      Any
     ],
     config: CreateNavigatorConfig[
       NavigationDrawerConfig, 
       NavigationDrawerRouterConfig, 
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any]
+      NavigationDrawerProp[NavigationRoute[NavigationParams], Any]
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
 }

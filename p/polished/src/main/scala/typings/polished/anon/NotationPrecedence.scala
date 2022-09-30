@@ -1,8 +1,7 @@
 package typings.polished.anon
 
-import typings.polished.polishedNumbers.`0`
-import typings.polished.polishedNumbers.`1`
-import typings.polished.polishedStrings.Rightparenthesis
+import typings.polished.polishedInts.`0`
+import typings.polished.polishedInts.`1`
 import typings.polished.polishedStrings.postfix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +19,7 @@ trait NotationPrecedence extends StObject {
   
   var rightToLeft: `0`
   
-  var symbol: Rightparenthesis
+  var symbol: String
 }
 object NotationPrecedence {
   
@@ -41,6 +40,6 @@ object NotationPrecedence {
     
     inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

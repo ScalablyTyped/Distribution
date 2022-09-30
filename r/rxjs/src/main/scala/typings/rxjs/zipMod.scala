@@ -29,7 +29,7 @@ object zipMod {
     resultSelector: js.Function1[/* values */ A, R]
   ): Observable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(sources.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[Observable[R]]
   
-  inline def zip_A_ArrayAnyR[A /* <: js.Array[Any] */, R](
+  inline def zip_AR[A /* <: js.Array[Any] */, R](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sourcesAndResultSelector because its type [...ObservableInputTuple<A>, (values : A): R] is not an array type */ sourcesAndResultSelector: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}

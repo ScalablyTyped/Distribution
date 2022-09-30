@@ -26,9 +26,9 @@ object mod {
     	@default false
     	@example
     	```
-    	normalizeUrl('https://sindresorhus.com:80/');
+    	normalizeUrl('https://sindresorhus.com');
     	//=> 'https://sindresorhus.com'
-    	normalizeUrl('https://sindresorhus.com:80/', {forceHttp: true});
+    	normalizeUrl('https://sindresorhus.com', {forceHttp: true});
     	//=> 'http://sindresorhus.com'
     	```
     	*/
@@ -40,9 +40,9 @@ object mod {
     	@default false
     	@example
     	```
-    	normalizeUrl('https://sindresorhus.com:80/');
-    	//=> 'https://sindresorhus.com'
-    	normalizeUrl('http://sindresorhus.com:80/', {forceHttps: true});
+    	normalizeUrl('http://sindresorhus.com');
+    	//=> 'http://sindresorhus.com'
+    	normalizeUrl('http://sindresorhus.com', {forceHttps: true});
     	//=> 'https://sindresorhus.com'
     	```
     	*/
@@ -68,9 +68,9 @@ object mod {
     	@default true
     	@example
     	```
-    	normalizeUrl('//sindresorhus.com:80/');
+    	normalizeUrl('//sindresorhus.com');
     	//=> 'http://sindresorhus.com'
-    	normalizeUrl('//sindresorhus.com:80/', {normalizeProtocol: false});
+    	normalizeUrl('//sindresorhus.com', {normalizeProtocol: false});
     	//=> '//sindresorhus.com'
     	```
     	*/
@@ -89,6 +89,20 @@ object mod {
     	```
     	*/
     val removeDirectoryIndex: js.UndefOr[Boolean | (js.Array[js.RegExp | String])] = js.undefined
+    
+    /**
+    	Removes an explicit port number from the URL.
+    	Port 443 is always removed from HTTPS URLs and 80 is always removed from HTTP URLs regardless of this option.
+    	@default false
+    	@example
+    	```
+    	normalizeUrl('sindresorhus.com:123', {
+    		removeExplicitPort: true
+    	});
+    	//=> 'http://sindresorhus.com'
+    	```
+    	*/
+    val removeExplicitPort: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Removes query parameters that matches any of the provided strings or regexes.
@@ -266,6 +280,10 @@ object mod {
       inline def setRemoveDirectoryIndexUndefined: Self = StObject.set(x, "removeDirectoryIndex", js.undefined)
       
       inline def setRemoveDirectoryIndexVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "removeDirectoryIndex", js.Array(value*))
+      
+      inline def setRemoveExplicitPort(value: Boolean): Self = StObject.set(x, "removeExplicitPort", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveExplicitPortUndefined: Self = StObject.set(x, "removeExplicitPort", js.undefined)
       
       inline def setRemoveQueryParameters(value: (js.Array[js.RegExp | String]) | Boolean): Self = StObject.set(x, "removeQueryParameters", value.asInstanceOf[js.Any])
       

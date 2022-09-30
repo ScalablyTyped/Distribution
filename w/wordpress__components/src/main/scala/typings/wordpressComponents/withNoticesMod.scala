@@ -17,7 +17,7 @@ object withNoticesMod {
   object default {
     
     // prettier-ignore
-    inline def apply[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].apply(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]]]
+    inline def apply[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].apply(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, noticeList | noticeOperations | noticeUI]]]
     
     @JSImport("@wordpress/components/higher-order/with-notices", JSImport.Default)
     @js.native
@@ -45,7 +45,7 @@ object withNoticesMod {
         
         inline def setNoticeList(value: js.Array[Notice]): Self = StObject.set(x, "noticeList", value.asInstanceOf[js.Any])
         
-        inline def setNoticeListVarargs(value: Notice*): Self = StObject.set(x, "noticeList", js.Array(value :_*))
+        inline def setNoticeListVarargs(value: Notice*): Self = StObject.set(x, "noticeList", js.Array(value*))
         
         inline def setNoticeOperations(value: CreateErrorNotice): Self = StObject.set(x, "noticeOperations", value.asInstanceOf[js.Any])
         

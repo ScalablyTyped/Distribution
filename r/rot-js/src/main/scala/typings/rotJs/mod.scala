@@ -35,9 +35,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def add(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    inline def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add_")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def add_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("add_")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
     inline def fromString(str: String): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.rotJs.colorMod.Color]
     
@@ -57,9 +57,9 @@ object mod {
     @js.native
     val lerpHSL: /* import warning: importer.ImportType#apply Failed type conversion: typeof interpolateHSL */ js.Any = js.native
     
-    inline def multiply(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def multiply(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
-    inline def multiply_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
+    inline def multiply_(color1: typings.rotJs.colorMod.Color, colors: typings.rotJs.colorMod.Color*): typings.rotJs.colorMod.Color = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply_")(scala.List(color1.asInstanceOf[js.Any]).`++`(colors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.rotJs.colorMod.Color]
     
     inline def randomize(color: typings.rotJs.colorMod.Color, diff: Double): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
     inline def randomize(color: typings.rotJs.colorMod.Color, diff: typings.rotJs.colorMod.Color): typings.rotJs.colorMod.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("randomize")(color.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[typings.rotJs.colorMod.Color]
@@ -1481,7 +1481,7 @@ object mod {
     inline def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def clamp(`val`: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def format(template: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    inline def format(template: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     inline def mod(x: Double, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   }

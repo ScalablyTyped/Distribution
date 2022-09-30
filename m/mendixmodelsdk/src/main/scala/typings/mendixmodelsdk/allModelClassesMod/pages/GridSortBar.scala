@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/sort-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortBar")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortBar")
 @js.native
-class GridSortBar protected ()
+open class GridSortBar protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.GridSortBar {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class GridSortBar protected ()
 }
 object GridSortBar {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortBar")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortBar")
   @js.native
   val ^ : js.Any = js.native
   
@@ -77,13 +77,13 @@ object GridSortBar {
   inline def createInSortableEntityPathSourceUnderSortBar(container: typings.mendixmodelsdk.pagesMod.pages.SortableEntityPathSource): typings.mendixmodelsdk.pagesMod.pages.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortableEntityPathSourceUnderSortBar")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSortBar]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortBar.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortBar.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortBar.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortBar.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

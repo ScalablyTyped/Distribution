@@ -457,1401 +457,1401 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.cids.cidsNumbers.`0`
-    - typings.cids.cidsNumbers.`1`
+    - typings.cids.cidsInts.`0`
+    - typings.cids.cidsInts.`1`
   */
   trait CIDVersion extends StObject
   object CIDVersion {
     
-    inline def `0`: typings.cids.cidsNumbers.`0` = 0.asInstanceOf[typings.cids.cidsNumbers.`0`]
+    inline def `0`: typings.cids.cidsInts.`0` = 0.asInstanceOf[typings.cids.cidsInts.`0`]
     
-    inline def `1`: typings.cids.cidsNumbers.`1` = 1.asInstanceOf[typings.cids.cidsNumbers.`1`]
+    inline def `1`: typings.cids.cidsInts.`1` = 1.asInstanceOf[typings.cids.cidsInts.`1`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.cids.cidsNumbers.`0`
-    - typings.cids.cidsNumbers.`1`
-    - typings.cids.cidsNumbers.`2`
-    - typings.cids.cidsNumbers.`3`
-    - typings.cids.cidsNumbers.`4`
-    - typings.cids.cidsNumbers.`6`
-    - typings.cids.cidsNumbers.`17`
-    - typings.cids.cidsNumbers.`18`
-    - typings.cids.cidsNumbers.`19`
-    - typings.cids.cidsNumbers.`20`
-    - typings.cids.cidsNumbers.`21`
-    - typings.cids.cidsNumbers.`22`
-    - typings.cids.cidsNumbers.`23`
-    - typings.cids.cidsNumbers.`24`
-    - typings.cids.cidsNumbers.`25`
-    - typings.cids.cidsNumbers.`26`
-    - typings.cids.cidsNumbers.`27`
-    - typings.cids.cidsNumbers.`28`
-    - typings.cids.cidsNumbers.`29`
-    - typings.cids.cidsNumbers.`30`
-    - typings.cids.cidsNumbers.`33`
-    - typings.cids.cidsNumbers.`34`
-    - typings.cids.cidsNumbers.`35`
-    - typings.cids.cidsNumbers.`41`
-    - typings.cids.cidsNumbers.`42`
-    - typings.cids.cidsNumbers.`47`
-    - typings.cids.cidsNumbers.`48`
-    - typings.cids.cidsNumbers.`49`
-    - typings.cids.cidsNumbers.`50`
-    - typings.cids.cidsNumbers.`51`
-    - typings.cids.cidsNumbers.`53`
-    - typings.cids.cidsNumbers.`54`
-    - typings.cids.cidsNumbers.`55`
-    - typings.cids.cidsNumbers.`56`
-    - typings.cids.cidsNumbers.`80`
-    - typings.cids.cidsNumbers.`81`
-    - typings.cids.cidsNumbers.`85`
-    - typings.cids.cidsNumbers.`86`
-    - typings.cids.cidsNumbers.`96`
-    - typings.cids.cidsNumbers.`99`
-    - typings.cids.cidsNumbers.`112`
-    - typings.cids.cidsNumbers.`113`
-    - typings.cids.cidsNumbers.`114`
-    - typings.cids.cidsNumbers.`120`
-    - typings.cids.cidsNumbers.`123`
-    - typings.cids.cidsNumbers.`124`
-    - typings.cids.cidsNumbers.`129`
-    - typings.cids.cidsNumbers.`130`
-    - typings.cids.cidsNumbers.`131`
-    - typings.cids.cidsNumbers.`132`
-    - typings.cids.cidsNumbers.`133`
-    - typings.cids.cidsNumbers.`134`
-    - typings.cids.cidsNumbers.`144`
-    - typings.cids.cidsNumbers.`145`
-    - typings.cids.cidsNumbers.`146`
-    - typings.cids.cidsNumbers.`147`
-    - typings.cids.cidsNumbers.`148`
-    - typings.cids.cidsNumbers.`149`
-    - typings.cids.cidsNumbers.`150`
-    - typings.cids.cidsNumbers.`151`
-    - typings.cids.cidsNumbers.`152`
-    - typings.cids.cidsNumbers.`176`
-    - typings.cids.cidsNumbers.`177`
-    - typings.cids.cidsNumbers.`178`
-    - typings.cids.cidsNumbers.`192`
-    - typings.cids.cidsNumbers.`193`
-    - typings.cids.cidsNumbers.`206`
-    - typings.cids.cidsNumbers.`208`
-    - typings.cids.cidsNumbers.`209`
-    - typings.cids.cidsNumbers.`212`
-    - typings.cids.cidsNumbers.`213`
-    - typings.cids.cidsNumbers.`214`
-    - typings.cids.cidsNumbers.`224`
-    - typings.cids.cidsNumbers.`225`
-    - typings.cids.cidsNumbers.`226`
-    - typings.cids.cidsNumbers.`227`
-    - typings.cids.cidsNumbers.`228`
-    - typings.cids.cidsNumbers.`229`
-    - typings.cids.cidsNumbers.`230`
-    - typings.cids.cidsNumbers.`231`
-    - typings.cids.cidsNumbers.`234`
-    - typings.cids.cidsNumbers.`235`
-    - typings.cids.cidsNumbers.`236`
-    - typings.cids.cidsNumbers.`237`
-    - typings.cids.cidsNumbers.`238`
-    - typings.cids.cidsNumbers.`240`
-    - typings.cids.cidsNumbers.`241`
-    - typings.cids.cidsNumbers.`250`
-    - typings.cids.cidsNumbers.`251`
-    - typings.cids.cidsNumbers.`273`
-    - typings.cids.cidsNumbers.`275`
-    - typings.cids.cidsNumbers.`276`
-    - typings.cids.cidsNumbers.`277`
-    - typings.cids.cidsNumbers.`290`
-    - typings.cids.cidsNumbers.`297`
-    - typings.cids.cidsNumbers.`301`
-    - typings.cids.cidsNumbers.`302`
-    - typings.cids.cidsNumbers.`400`
-    - typings.cids.cidsNumbers.`406`
-    - typings.cids.cidsNumbers.`421`
-    - typings.cids.cidsNumbers.`443`
-    - typings.cids.cidsNumbers.`444`
-    - typings.cids.cidsNumbers.`445`
-    - typings.cids.cidsNumbers.`446`
-    - typings.cids.cidsNumbers.`447`
-    - typings.cids.cidsNumbers.`448`
-    - typings.cids.cidsNumbers.`460`
-    - typings.cids.cidsNumbers.`477`
-    - typings.cids.cidsNumbers.`478`
-    - typings.cids.cidsNumbers.`479`
-    - typings.cids.cidsNumbers.`480`
-    - typings.cids.cidsNumbers.`512`
-    - typings.cids.cidsNumbers.`513`
-    - typings.cids.cidsNumbers.`769`
-    - typings.cids.cidsNumbers.`4114`
-    - typings.cids.cidsNumbers.`4178`
-    - typings.cids.cidsNumbers.`4179`
-    - typings.cids.cidsNumbers.`4180`
-    - typings.cids.cidsNumbers.`4181`
-    - typings.cids.cidsNumbers.`4352`
-    - typings.cids.cidsNumbers.`4608`
-    - typings.cids.cidsNumbers.`4609`
-    - typings.cids.cidsNumbers.`4610`
-    - typings.cids.cidsNumbers.`4611`
-    - typings.cids.cidsNumbers.`4612`
-    - typings.cids.cidsNumbers.`4864`
-    - typings.cids.cidsNumbers.`7425`
-    - typings.cids.cidsNumbers.`21325`
-    - typings.cids.cidsNumbers.`45569`
-    - typings.cids.cidsNumbers.`45570`
-    - typings.cids.cidsNumbers.`45571`
-    - typings.cids.cidsNumbers.`45572`
-    - typings.cids.cidsNumbers.`45573`
-    - typings.cids.cidsNumbers.`45574`
-    - typings.cids.cidsNumbers.`45575`
-    - typings.cids.cidsNumbers.`45576`
-    - typings.cids.cidsNumbers.`45577`
-    - typings.cids.cidsNumbers.`45578`
-    - typings.cids.cidsNumbers.`45579`
-    - typings.cids.cidsNumbers.`45580`
-    - typings.cids.cidsNumbers.`45581`
-    - typings.cids.cidsNumbers.`45582`
-    - typings.cids.cidsNumbers.`45583`
-    - typings.cids.cidsNumbers.`45584`
-    - typings.cids.cidsNumbers.`45585`
-    - typings.cids.cidsNumbers.`45586`
-    - typings.cids.cidsNumbers.`45587`
-    - typings.cids.cidsNumbers.`45588`
-    - typings.cids.cidsNumbers.`45589`
-    - typings.cids.cidsNumbers.`45590`
-    - typings.cids.cidsNumbers.`45591`
-    - typings.cids.cidsNumbers.`45592`
-    - typings.cids.cidsNumbers.`45593`
-    - typings.cids.cidsNumbers.`45594`
-    - typings.cids.cidsNumbers.`45595`
-    - typings.cids.cidsNumbers.`45596`
-    - typings.cids.cidsNumbers.`45597`
-    - typings.cids.cidsNumbers.`45598`
-    - typings.cids.cidsNumbers.`45599`
-    - typings.cids.cidsNumbers.`45600`
-    - typings.cids.cidsNumbers.`45601`
-    - typings.cids.cidsNumbers.`45602`
-    - typings.cids.cidsNumbers.`45603`
-    - typings.cids.cidsNumbers.`45604`
-    - typings.cids.cidsNumbers.`45605`
-    - typings.cids.cidsNumbers.`45606`
-    - typings.cids.cidsNumbers.`45607`
-    - typings.cids.cidsNumbers.`45608`
-    - typings.cids.cidsNumbers.`45609`
-    - typings.cids.cidsNumbers.`45610`
-    - typings.cids.cidsNumbers.`45611`
-    - typings.cids.cidsNumbers.`45612`
-    - typings.cids.cidsNumbers.`45613`
-    - typings.cids.cidsNumbers.`45614`
-    - typings.cids.cidsNumbers.`45615`
-    - typings.cids.cidsNumbers.`45616`
-    - typings.cids.cidsNumbers.`45617`
-    - typings.cids.cidsNumbers.`45618`
-    - typings.cids.cidsNumbers.`45619`
-    - typings.cids.cidsNumbers.`45620`
-    - typings.cids.cidsNumbers.`45621`
-    - typings.cids.cidsNumbers.`45622`
-    - typings.cids.cidsNumbers.`45623`
-    - typings.cids.cidsNumbers.`45624`
-    - typings.cids.cidsNumbers.`45625`
-    - typings.cids.cidsNumbers.`45626`
-    - typings.cids.cidsNumbers.`45627`
-    - typings.cids.cidsNumbers.`45628`
-    - typings.cids.cidsNumbers.`45629`
-    - typings.cids.cidsNumbers.`45630`
-    - typings.cids.cidsNumbers.`45631`
-    - typings.cids.cidsNumbers.`45632`
-    - typings.cids.cidsNumbers.`45633`
-    - typings.cids.cidsNumbers.`45634`
-    - typings.cids.cidsNumbers.`45635`
-    - typings.cids.cidsNumbers.`45636`
-    - typings.cids.cidsNumbers.`45637`
-    - typings.cids.cidsNumbers.`45638`
-    - typings.cids.cidsNumbers.`45639`
-    - typings.cids.cidsNumbers.`45640`
-    - typings.cids.cidsNumbers.`45641`
-    - typings.cids.cidsNumbers.`45642`
-    - typings.cids.cidsNumbers.`45643`
-    - typings.cids.cidsNumbers.`45644`
-    - typings.cids.cidsNumbers.`45645`
-    - typings.cids.cidsNumbers.`45646`
-    - typings.cids.cidsNumbers.`45647`
-    - typings.cids.cidsNumbers.`45648`
-    - typings.cids.cidsNumbers.`45649`
-    - typings.cids.cidsNumbers.`45650`
-    - typings.cids.cidsNumbers.`45651`
-    - typings.cids.cidsNumbers.`45652`
-    - typings.cids.cidsNumbers.`45653`
-    - typings.cids.cidsNumbers.`45654`
-    - typings.cids.cidsNumbers.`45655`
-    - typings.cids.cidsNumbers.`45656`
-    - typings.cids.cidsNumbers.`45657`
-    - typings.cids.cidsNumbers.`45658`
-    - typings.cids.cidsNumbers.`45659`
-    - typings.cids.cidsNumbers.`45660`
-    - typings.cids.cidsNumbers.`45661`
-    - typings.cids.cidsNumbers.`45662`
-    - typings.cids.cidsNumbers.`45663`
-    - typings.cids.cidsNumbers.`45664`
-    - typings.cids.cidsNumbers.`45825`
-    - typings.cids.cidsNumbers.`45826`
-    - typings.cids.cidsNumbers.`45827`
-    - typings.cids.cidsNumbers.`45828`
-    - typings.cids.cidsNumbers.`45829`
-    - typings.cids.cidsNumbers.`45830`
-    - typings.cids.cidsNumbers.`45831`
-    - typings.cids.cidsNumbers.`45832`
-    - typings.cids.cidsNumbers.`45833`
-    - typings.cids.cidsNumbers.`45834`
-    - typings.cids.cidsNumbers.`45835`
-    - typings.cids.cidsNumbers.`45836`
-    - typings.cids.cidsNumbers.`45837`
-    - typings.cids.cidsNumbers.`45838`
-    - typings.cids.cidsNumbers.`45839`
-    - typings.cids.cidsNumbers.`45840`
-    - typings.cids.cidsNumbers.`45841`
-    - typings.cids.cidsNumbers.`45842`
-    - typings.cids.cidsNumbers.`45843`
-    - typings.cids.cidsNumbers.`45844`
-    - typings.cids.cidsNumbers.`45845`
-    - typings.cids.cidsNumbers.`45846`
-    - typings.cids.cidsNumbers.`45847`
-    - typings.cids.cidsNumbers.`45848`
-    - typings.cids.cidsNumbers.`45849`
-    - typings.cids.cidsNumbers.`45850`
-    - typings.cids.cidsNumbers.`45851`
-    - typings.cids.cidsNumbers.`45852`
-    - typings.cids.cidsNumbers.`45853`
-    - typings.cids.cidsNumbers.`45854`
-    - typings.cids.cidsNumbers.`45855`
-    - typings.cids.cidsNumbers.`45856`
-    - typings.cids.cidsNumbers.`45857`
-    - typings.cids.cidsNumbers.`45858`
-    - typings.cids.cidsNumbers.`45859`
-    - typings.cids.cidsNumbers.`45860`
-    - typings.cids.cidsNumbers.`45861`
-    - typings.cids.cidsNumbers.`45862`
-    - typings.cids.cidsNumbers.`45863`
-    - typings.cids.cidsNumbers.`45864`
-    - typings.cids.cidsNumbers.`45865`
-    - typings.cids.cidsNumbers.`45866`
-    - typings.cids.cidsNumbers.`45867`
-    - typings.cids.cidsNumbers.`45868`
-    - typings.cids.cidsNumbers.`45869`
-    - typings.cids.cidsNumbers.`45870`
-    - typings.cids.cidsNumbers.`45871`
-    - typings.cids.cidsNumbers.`45872`
-    - typings.cids.cidsNumbers.`45873`
-    - typings.cids.cidsNumbers.`45874`
-    - typings.cids.cidsNumbers.`45875`
-    - typings.cids.cidsNumbers.`45876`
-    - typings.cids.cidsNumbers.`45877`
-    - typings.cids.cidsNumbers.`45878`
-    - typings.cids.cidsNumbers.`45879`
-    - typings.cids.cidsNumbers.`45880`
-    - typings.cids.cidsNumbers.`45881`
-    - typings.cids.cidsNumbers.`45882`
-    - typings.cids.cidsNumbers.`45883`
-    - typings.cids.cidsNumbers.`45884`
-    - typings.cids.cidsNumbers.`45885`
-    - typings.cids.cidsNumbers.`45886`
-    - typings.cids.cidsNumbers.`45887`
-    - typings.cids.cidsNumbers.`45888`
-    - typings.cids.cidsNumbers.`45889`
-    - typings.cids.cidsNumbers.`45890`
-    - typings.cids.cidsNumbers.`45891`
-    - typings.cids.cidsNumbers.`45892`
-    - typings.cids.cidsNumbers.`45893`
-    - typings.cids.cidsNumbers.`45894`
-    - typings.cids.cidsNumbers.`45895`
-    - typings.cids.cidsNumbers.`45896`
-    - typings.cids.cidsNumbers.`45897`
-    - typings.cids.cidsNumbers.`45898`
-    - typings.cids.cidsNumbers.`45899`
-    - typings.cids.cidsNumbers.`45900`
-    - typings.cids.cidsNumbers.`45901`
-    - typings.cids.cidsNumbers.`45902`
-    - typings.cids.cidsNumbers.`45903`
-    - typings.cids.cidsNumbers.`45904`
-    - typings.cids.cidsNumbers.`45905`
-    - typings.cids.cidsNumbers.`45906`
-    - typings.cids.cidsNumbers.`45907`
-    - typings.cids.cidsNumbers.`45908`
-    - typings.cids.cidsNumbers.`45909`
-    - typings.cids.cidsNumbers.`45910`
-    - typings.cids.cidsNumbers.`45911`
-    - typings.cids.cidsNumbers.`45912`
-    - typings.cids.cidsNumbers.`45913`
-    - typings.cids.cidsNumbers.`45914`
-    - typings.cids.cidsNumbers.`45915`
-    - typings.cids.cidsNumbers.`45916`
-    - typings.cids.cidsNumbers.`45917`
-    - typings.cids.cidsNumbers.`45918`
-    - typings.cids.cidsNumbers.`45919`
-    - typings.cids.cidsNumbers.`45920`
-    - typings.cids.cidsNumbers.`45921`
-    - typings.cids.cidsNumbers.`45922`
-    - typings.cids.cidsNumbers.`45923`
-    - typings.cids.cidsNumbers.`45924`
-    - typings.cids.cidsNumbers.`45925`
-    - typings.cids.cidsNumbers.`45926`
-    - typings.cids.cidsNumbers.`45927`
-    - typings.cids.cidsNumbers.`45928`
-    - typings.cids.cidsNumbers.`45929`
-    - typings.cids.cidsNumbers.`45930`
-    - typings.cids.cidsNumbers.`45931`
-    - typings.cids.cidsNumbers.`45932`
-    - typings.cids.cidsNumbers.`45933`
-    - typings.cids.cidsNumbers.`45934`
-    - typings.cids.cidsNumbers.`45935`
-    - typings.cids.cidsNumbers.`45936`
-    - typings.cids.cidsNumbers.`45937`
-    - typings.cids.cidsNumbers.`45938`
-    - typings.cids.cidsNumbers.`45939`
-    - typings.cids.cidsNumbers.`45940`
-    - typings.cids.cidsNumbers.`45941`
-    - typings.cids.cidsNumbers.`45942`
-    - typings.cids.cidsNumbers.`45943`
-    - typings.cids.cidsNumbers.`45944`
-    - typings.cids.cidsNumbers.`45945`
-    - typings.cids.cidsNumbers.`45946`
-    - typings.cids.cidsNumbers.`45947`
-    - typings.cids.cidsNumbers.`45948`
-    - typings.cids.cidsNumbers.`45949`
-    - typings.cids.cidsNumbers.`45950`
-    - typings.cids.cidsNumbers.`45951`
-    - typings.cids.cidsNumbers.`45952`
-    - typings.cids.cidsNumbers.`45953`
-    - typings.cids.cidsNumbers.`45954`
-    - typings.cids.cidsNumbers.`45955`
-    - typings.cids.cidsNumbers.`45956`
-    - typings.cids.cidsNumbers.`45957`
-    - typings.cids.cidsNumbers.`45958`
-    - typings.cids.cidsNumbers.`45959`
-    - typings.cids.cidsNumbers.`45960`
-    - typings.cids.cidsNumbers.`45961`
-    - typings.cids.cidsNumbers.`45962`
-    - typings.cids.cidsNumbers.`45963`
-    - typings.cids.cidsNumbers.`45964`
-    - typings.cids.cidsNumbers.`45965`
-    - typings.cids.cidsNumbers.`45966`
-    - typings.cids.cidsNumbers.`45967`
-    - typings.cids.cidsNumbers.`45968`
-    - typings.cids.cidsNumbers.`45969`
-    - typings.cids.cidsNumbers.`45970`
-    - typings.cids.cidsNumbers.`45971`
-    - typings.cids.cidsNumbers.`45972`
-    - typings.cids.cidsNumbers.`45973`
-    - typings.cids.cidsNumbers.`45974`
-    - typings.cids.cidsNumbers.`45975`
-    - typings.cids.cidsNumbers.`45976`
-    - typings.cids.cidsNumbers.`45977`
-    - typings.cids.cidsNumbers.`45978`
-    - typings.cids.cidsNumbers.`45979`
-    - typings.cids.cidsNumbers.`45980`
-    - typings.cids.cidsNumbers.`45981`
-    - typings.cids.cidsNumbers.`45982`
-    - typings.cids.cidsNumbers.`45983`
-    - typings.cids.cidsNumbers.`45984`
-    - typings.cids.cidsNumbers.`45985`
-    - typings.cids.cidsNumbers.`45986`
-    - typings.cids.cidsNumbers.`45987`
-    - typings.cids.cidsNumbers.`45988`
-    - typings.cids.cidsNumbers.`45989`
-    - typings.cids.cidsNumbers.`45990`
-    - typings.cids.cidsNumbers.`45991`
-    - typings.cids.cidsNumbers.`45992`
-    - typings.cids.cidsNumbers.`45993`
-    - typings.cids.cidsNumbers.`45994`
-    - typings.cids.cidsNumbers.`45995`
-    - typings.cids.cidsNumbers.`45996`
-    - typings.cids.cidsNumbers.`45997`
-    - typings.cids.cidsNumbers.`45998`
-    - typings.cids.cidsNumbers.`45999`
-    - typings.cids.cidsNumbers.`46000`
-    - typings.cids.cidsNumbers.`46001`
-    - typings.cids.cidsNumbers.`46002`
-    - typings.cids.cidsNumbers.`46003`
-    - typings.cids.cidsNumbers.`46004`
-    - typings.cids.cidsNumbers.`46005`
-    - typings.cids.cidsNumbers.`46006`
-    - typings.cids.cidsNumbers.`46007`
-    - typings.cids.cidsNumbers.`46008`
-    - typings.cids.cidsNumbers.`46009`
-    - typings.cids.cidsNumbers.`46010`
-    - typings.cids.cidsNumbers.`46011`
-    - typings.cids.cidsNumbers.`46012`
-    - typings.cids.cidsNumbers.`46013`
-    - typings.cids.cidsNumbers.`46014`
-    - typings.cids.cidsNumbers.`46015`
-    - typings.cids.cidsNumbers.`46016`
-    - typings.cids.cidsNumbers.`46017`
-    - typings.cids.cidsNumbers.`46018`
-    - typings.cids.cidsNumbers.`46019`
-    - typings.cids.cidsNumbers.`46020`
-    - typings.cids.cidsNumbers.`46021`
-    - typings.cids.cidsNumbers.`46022`
-    - typings.cids.cidsNumbers.`46023`
-    - typings.cids.cidsNumbers.`46024`
-    - typings.cids.cidsNumbers.`46025`
-    - typings.cids.cidsNumbers.`46026`
-    - typings.cids.cidsNumbers.`46027`
-    - typings.cids.cidsNumbers.`46028`
-    - typings.cids.cidsNumbers.`46029`
-    - typings.cids.cidsNumbers.`46030`
-    - typings.cids.cidsNumbers.`46031`
-    - typings.cids.cidsNumbers.`46032`
-    - typings.cids.cidsNumbers.`46033`
-    - typings.cids.cidsNumbers.`46034`
-    - typings.cids.cidsNumbers.`46035`
-    - typings.cids.cidsNumbers.`46036`
-    - typings.cids.cidsNumbers.`46037`
-    - typings.cids.cidsNumbers.`46038`
-    - typings.cids.cidsNumbers.`46039`
-    - typings.cids.cidsNumbers.`46040`
-    - typings.cids.cidsNumbers.`46041`
-    - typings.cids.cidsNumbers.`46042`
-    - typings.cids.cidsNumbers.`46043`
-    - typings.cids.cidsNumbers.`46044`
-    - typings.cids.cidsNumbers.`46045`
-    - typings.cids.cidsNumbers.`46046`
-    - typings.cids.cidsNumbers.`46047`
-    - typings.cids.cidsNumbers.`46048`
-    - typings.cids.cidsNumbers.`46081`
-    - typings.cids.cidsNumbers.`46082`
-    - typings.cids.cidsNumbers.`52753`
-    - typings.cids.cidsNumbers.`61697`
-    - typings.cids.cidsNumbers.`61698`
-    - typings.cids.cidsNumbers.`8417572`
-    - typings.cids.cidsNumbers.`8483108`
-    - typings.cids.cidsNumbers.`9728292`
-    - typings.cids.cidsNumbers.`9793828`
-    - typings.cids.cidsNumbers.`10645796`
-    - typings.cids.cidsNumbers.`10711332`
-    - typings.cids.cidsNumbers.`11639056`
+    - typings.cids.cidsInts.`0`
+    - typings.cids.cidsInts.`1`
+    - typings.cids.cidsInts.`2`
+    - typings.cids.cidsInts.`3`
+    - typings.cids.cidsInts.`4`
+    - typings.cids.cidsInts.`6`
+    - typings.cids.cidsInts.`17`
+    - typings.cids.cidsInts.`18`
+    - typings.cids.cidsInts.`19`
+    - typings.cids.cidsInts.`20`
+    - typings.cids.cidsInts.`21`
+    - typings.cids.cidsInts.`22`
+    - typings.cids.cidsInts.`23`
+    - typings.cids.cidsInts.`24`
+    - typings.cids.cidsInts.`25`
+    - typings.cids.cidsInts.`26`
+    - typings.cids.cidsInts.`27`
+    - typings.cids.cidsInts.`28`
+    - typings.cids.cidsInts.`29`
+    - typings.cids.cidsInts.`30`
+    - typings.cids.cidsInts.`33`
+    - typings.cids.cidsInts.`34`
+    - typings.cids.cidsInts.`35`
+    - typings.cids.cidsInts.`41`
+    - typings.cids.cidsInts.`42`
+    - typings.cids.cidsInts.`47`
+    - typings.cids.cidsInts.`48`
+    - typings.cids.cidsInts.`49`
+    - typings.cids.cidsInts.`50`
+    - typings.cids.cidsInts.`51`
+    - typings.cids.cidsInts.`53`
+    - typings.cids.cidsInts.`54`
+    - typings.cids.cidsInts.`55`
+    - typings.cids.cidsInts.`56`
+    - typings.cids.cidsInts.`80`
+    - typings.cids.cidsInts.`81`
+    - typings.cids.cidsInts.`85`
+    - typings.cids.cidsInts.`86`
+    - typings.cids.cidsInts.`96`
+    - typings.cids.cidsInts.`99`
+    - typings.cids.cidsInts.`112`
+    - typings.cids.cidsInts.`113`
+    - typings.cids.cidsInts.`114`
+    - typings.cids.cidsInts.`120`
+    - typings.cids.cidsInts.`123`
+    - typings.cids.cidsInts.`124`
+    - typings.cids.cidsInts.`129`
+    - typings.cids.cidsInts.`130`
+    - typings.cids.cidsInts.`131`
+    - typings.cids.cidsInts.`132`
+    - typings.cids.cidsInts.`133`
+    - typings.cids.cidsInts.`134`
+    - typings.cids.cidsInts.`144`
+    - typings.cids.cidsInts.`145`
+    - typings.cids.cidsInts.`146`
+    - typings.cids.cidsInts.`147`
+    - typings.cids.cidsInts.`148`
+    - typings.cids.cidsInts.`149`
+    - typings.cids.cidsInts.`150`
+    - typings.cids.cidsInts.`151`
+    - typings.cids.cidsInts.`152`
+    - typings.cids.cidsInts.`176`
+    - typings.cids.cidsInts.`177`
+    - typings.cids.cidsInts.`178`
+    - typings.cids.cidsInts.`192`
+    - typings.cids.cidsInts.`193`
+    - typings.cids.cidsInts.`206`
+    - typings.cids.cidsInts.`208`
+    - typings.cids.cidsInts.`209`
+    - typings.cids.cidsInts.`212`
+    - typings.cids.cidsInts.`213`
+    - typings.cids.cidsInts.`214`
+    - typings.cids.cidsInts.`224`
+    - typings.cids.cidsInts.`225`
+    - typings.cids.cidsInts.`226`
+    - typings.cids.cidsInts.`227`
+    - typings.cids.cidsInts.`228`
+    - typings.cids.cidsInts.`229`
+    - typings.cids.cidsInts.`230`
+    - typings.cids.cidsInts.`231`
+    - typings.cids.cidsInts.`234`
+    - typings.cids.cidsInts.`235`
+    - typings.cids.cidsInts.`236`
+    - typings.cids.cidsInts.`237`
+    - typings.cids.cidsInts.`238`
+    - typings.cids.cidsInts.`240`
+    - typings.cids.cidsInts.`241`
+    - typings.cids.cidsInts.`250`
+    - typings.cids.cidsInts.`251`
+    - typings.cids.cidsInts.`273`
+    - typings.cids.cidsInts.`275`
+    - typings.cids.cidsInts.`276`
+    - typings.cids.cidsInts.`277`
+    - typings.cids.cidsInts.`290`
+    - typings.cids.cidsInts.`297`
+    - typings.cids.cidsInts.`301`
+    - typings.cids.cidsInts.`302`
+    - typings.cids.cidsInts.`400`
+    - typings.cids.cidsInts.`406`
+    - typings.cids.cidsInts.`421`
+    - typings.cids.cidsInts.`443`
+    - typings.cids.cidsInts.`444`
+    - typings.cids.cidsInts.`445`
+    - typings.cids.cidsInts.`446`
+    - typings.cids.cidsInts.`447`
+    - typings.cids.cidsInts.`448`
+    - typings.cids.cidsInts.`460`
+    - typings.cids.cidsInts.`477`
+    - typings.cids.cidsInts.`478`
+    - typings.cids.cidsInts.`479`
+    - typings.cids.cidsInts.`480`
+    - typings.cids.cidsInts.`512`
+    - typings.cids.cidsInts.`513`
+    - typings.cids.cidsInts.`769`
+    - typings.cids.cidsInts.`4114`
+    - typings.cids.cidsInts.`4178`
+    - typings.cids.cidsInts.`4179`
+    - typings.cids.cidsInts.`4180`
+    - typings.cids.cidsInts.`4181`
+    - typings.cids.cidsInts.`4352`
+    - typings.cids.cidsInts.`4608`
+    - typings.cids.cidsInts.`4609`
+    - typings.cids.cidsInts.`4610`
+    - typings.cids.cidsInts.`4611`
+    - typings.cids.cidsInts.`4612`
+    - typings.cids.cidsInts.`4864`
+    - typings.cids.cidsInts.`7425`
+    - typings.cids.cidsInts.`21325`
+    - typings.cids.cidsInts.`45569`
+    - typings.cids.cidsInts.`45570`
+    - typings.cids.cidsInts.`45571`
+    - typings.cids.cidsInts.`45572`
+    - typings.cids.cidsInts.`45573`
+    - typings.cids.cidsInts.`45574`
+    - typings.cids.cidsInts.`45575`
+    - typings.cids.cidsInts.`45576`
+    - typings.cids.cidsInts.`45577`
+    - typings.cids.cidsInts.`45578`
+    - typings.cids.cidsInts.`45579`
+    - typings.cids.cidsInts.`45580`
+    - typings.cids.cidsInts.`45581`
+    - typings.cids.cidsInts.`45582`
+    - typings.cids.cidsInts.`45583`
+    - typings.cids.cidsInts.`45584`
+    - typings.cids.cidsInts.`45585`
+    - typings.cids.cidsInts.`45586`
+    - typings.cids.cidsInts.`45587`
+    - typings.cids.cidsInts.`45588`
+    - typings.cids.cidsInts.`45589`
+    - typings.cids.cidsInts.`45590`
+    - typings.cids.cidsInts.`45591`
+    - typings.cids.cidsInts.`45592`
+    - typings.cids.cidsInts.`45593`
+    - typings.cids.cidsInts.`45594`
+    - typings.cids.cidsInts.`45595`
+    - typings.cids.cidsInts.`45596`
+    - typings.cids.cidsInts.`45597`
+    - typings.cids.cidsInts.`45598`
+    - typings.cids.cidsInts.`45599`
+    - typings.cids.cidsInts.`45600`
+    - typings.cids.cidsInts.`45601`
+    - typings.cids.cidsInts.`45602`
+    - typings.cids.cidsInts.`45603`
+    - typings.cids.cidsInts.`45604`
+    - typings.cids.cidsInts.`45605`
+    - typings.cids.cidsInts.`45606`
+    - typings.cids.cidsInts.`45607`
+    - typings.cids.cidsInts.`45608`
+    - typings.cids.cidsInts.`45609`
+    - typings.cids.cidsInts.`45610`
+    - typings.cids.cidsInts.`45611`
+    - typings.cids.cidsInts.`45612`
+    - typings.cids.cidsInts.`45613`
+    - typings.cids.cidsInts.`45614`
+    - typings.cids.cidsInts.`45615`
+    - typings.cids.cidsInts.`45616`
+    - typings.cids.cidsInts.`45617`
+    - typings.cids.cidsInts.`45618`
+    - typings.cids.cidsInts.`45619`
+    - typings.cids.cidsInts.`45620`
+    - typings.cids.cidsInts.`45621`
+    - typings.cids.cidsInts.`45622`
+    - typings.cids.cidsInts.`45623`
+    - typings.cids.cidsInts.`45624`
+    - typings.cids.cidsInts.`45625`
+    - typings.cids.cidsInts.`45626`
+    - typings.cids.cidsInts.`45627`
+    - typings.cids.cidsInts.`45628`
+    - typings.cids.cidsInts.`45629`
+    - typings.cids.cidsInts.`45630`
+    - typings.cids.cidsInts.`45631`
+    - typings.cids.cidsInts.`45632`
+    - typings.cids.cidsInts.`45633`
+    - typings.cids.cidsInts.`45634`
+    - typings.cids.cidsInts.`45635`
+    - typings.cids.cidsInts.`45636`
+    - typings.cids.cidsInts.`45637`
+    - typings.cids.cidsInts.`45638`
+    - typings.cids.cidsInts.`45639`
+    - typings.cids.cidsInts.`45640`
+    - typings.cids.cidsInts.`45641`
+    - typings.cids.cidsInts.`45642`
+    - typings.cids.cidsInts.`45643`
+    - typings.cids.cidsInts.`45644`
+    - typings.cids.cidsInts.`45645`
+    - typings.cids.cidsInts.`45646`
+    - typings.cids.cidsInts.`45647`
+    - typings.cids.cidsInts.`45648`
+    - typings.cids.cidsInts.`45649`
+    - typings.cids.cidsInts.`45650`
+    - typings.cids.cidsInts.`45651`
+    - typings.cids.cidsInts.`45652`
+    - typings.cids.cidsInts.`45653`
+    - typings.cids.cidsInts.`45654`
+    - typings.cids.cidsInts.`45655`
+    - typings.cids.cidsInts.`45656`
+    - typings.cids.cidsInts.`45657`
+    - typings.cids.cidsInts.`45658`
+    - typings.cids.cidsInts.`45659`
+    - typings.cids.cidsInts.`45660`
+    - typings.cids.cidsInts.`45661`
+    - typings.cids.cidsInts.`45662`
+    - typings.cids.cidsInts.`45663`
+    - typings.cids.cidsInts.`45664`
+    - typings.cids.cidsInts.`45825`
+    - typings.cids.cidsInts.`45826`
+    - typings.cids.cidsInts.`45827`
+    - typings.cids.cidsInts.`45828`
+    - typings.cids.cidsInts.`45829`
+    - typings.cids.cidsInts.`45830`
+    - typings.cids.cidsInts.`45831`
+    - typings.cids.cidsInts.`45832`
+    - typings.cids.cidsInts.`45833`
+    - typings.cids.cidsInts.`45834`
+    - typings.cids.cidsInts.`45835`
+    - typings.cids.cidsInts.`45836`
+    - typings.cids.cidsInts.`45837`
+    - typings.cids.cidsInts.`45838`
+    - typings.cids.cidsInts.`45839`
+    - typings.cids.cidsInts.`45840`
+    - typings.cids.cidsInts.`45841`
+    - typings.cids.cidsInts.`45842`
+    - typings.cids.cidsInts.`45843`
+    - typings.cids.cidsInts.`45844`
+    - typings.cids.cidsInts.`45845`
+    - typings.cids.cidsInts.`45846`
+    - typings.cids.cidsInts.`45847`
+    - typings.cids.cidsInts.`45848`
+    - typings.cids.cidsInts.`45849`
+    - typings.cids.cidsInts.`45850`
+    - typings.cids.cidsInts.`45851`
+    - typings.cids.cidsInts.`45852`
+    - typings.cids.cidsInts.`45853`
+    - typings.cids.cidsInts.`45854`
+    - typings.cids.cidsInts.`45855`
+    - typings.cids.cidsInts.`45856`
+    - typings.cids.cidsInts.`45857`
+    - typings.cids.cidsInts.`45858`
+    - typings.cids.cidsInts.`45859`
+    - typings.cids.cidsInts.`45860`
+    - typings.cids.cidsInts.`45861`
+    - typings.cids.cidsInts.`45862`
+    - typings.cids.cidsInts.`45863`
+    - typings.cids.cidsInts.`45864`
+    - typings.cids.cidsInts.`45865`
+    - typings.cids.cidsInts.`45866`
+    - typings.cids.cidsInts.`45867`
+    - typings.cids.cidsInts.`45868`
+    - typings.cids.cidsInts.`45869`
+    - typings.cids.cidsInts.`45870`
+    - typings.cids.cidsInts.`45871`
+    - typings.cids.cidsInts.`45872`
+    - typings.cids.cidsInts.`45873`
+    - typings.cids.cidsInts.`45874`
+    - typings.cids.cidsInts.`45875`
+    - typings.cids.cidsInts.`45876`
+    - typings.cids.cidsInts.`45877`
+    - typings.cids.cidsInts.`45878`
+    - typings.cids.cidsInts.`45879`
+    - typings.cids.cidsInts.`45880`
+    - typings.cids.cidsInts.`45881`
+    - typings.cids.cidsInts.`45882`
+    - typings.cids.cidsInts.`45883`
+    - typings.cids.cidsInts.`45884`
+    - typings.cids.cidsInts.`45885`
+    - typings.cids.cidsInts.`45886`
+    - typings.cids.cidsInts.`45887`
+    - typings.cids.cidsInts.`45888`
+    - typings.cids.cidsInts.`45889`
+    - typings.cids.cidsInts.`45890`
+    - typings.cids.cidsInts.`45891`
+    - typings.cids.cidsInts.`45892`
+    - typings.cids.cidsInts.`45893`
+    - typings.cids.cidsInts.`45894`
+    - typings.cids.cidsInts.`45895`
+    - typings.cids.cidsInts.`45896`
+    - typings.cids.cidsInts.`45897`
+    - typings.cids.cidsInts.`45898`
+    - typings.cids.cidsInts.`45899`
+    - typings.cids.cidsInts.`45900`
+    - typings.cids.cidsInts.`45901`
+    - typings.cids.cidsInts.`45902`
+    - typings.cids.cidsInts.`45903`
+    - typings.cids.cidsInts.`45904`
+    - typings.cids.cidsInts.`45905`
+    - typings.cids.cidsInts.`45906`
+    - typings.cids.cidsInts.`45907`
+    - typings.cids.cidsInts.`45908`
+    - typings.cids.cidsInts.`45909`
+    - typings.cids.cidsInts.`45910`
+    - typings.cids.cidsInts.`45911`
+    - typings.cids.cidsInts.`45912`
+    - typings.cids.cidsInts.`45913`
+    - typings.cids.cidsInts.`45914`
+    - typings.cids.cidsInts.`45915`
+    - typings.cids.cidsInts.`45916`
+    - typings.cids.cidsInts.`45917`
+    - typings.cids.cidsInts.`45918`
+    - typings.cids.cidsInts.`45919`
+    - typings.cids.cidsInts.`45920`
+    - typings.cids.cidsInts.`45921`
+    - typings.cids.cidsInts.`45922`
+    - typings.cids.cidsInts.`45923`
+    - typings.cids.cidsInts.`45924`
+    - typings.cids.cidsInts.`45925`
+    - typings.cids.cidsInts.`45926`
+    - typings.cids.cidsInts.`45927`
+    - typings.cids.cidsInts.`45928`
+    - typings.cids.cidsInts.`45929`
+    - typings.cids.cidsInts.`45930`
+    - typings.cids.cidsInts.`45931`
+    - typings.cids.cidsInts.`45932`
+    - typings.cids.cidsInts.`45933`
+    - typings.cids.cidsInts.`45934`
+    - typings.cids.cidsInts.`45935`
+    - typings.cids.cidsInts.`45936`
+    - typings.cids.cidsInts.`45937`
+    - typings.cids.cidsInts.`45938`
+    - typings.cids.cidsInts.`45939`
+    - typings.cids.cidsInts.`45940`
+    - typings.cids.cidsInts.`45941`
+    - typings.cids.cidsInts.`45942`
+    - typings.cids.cidsInts.`45943`
+    - typings.cids.cidsInts.`45944`
+    - typings.cids.cidsInts.`45945`
+    - typings.cids.cidsInts.`45946`
+    - typings.cids.cidsInts.`45947`
+    - typings.cids.cidsInts.`45948`
+    - typings.cids.cidsInts.`45949`
+    - typings.cids.cidsInts.`45950`
+    - typings.cids.cidsInts.`45951`
+    - typings.cids.cidsInts.`45952`
+    - typings.cids.cidsInts.`45953`
+    - typings.cids.cidsInts.`45954`
+    - typings.cids.cidsInts.`45955`
+    - typings.cids.cidsInts.`45956`
+    - typings.cids.cidsInts.`45957`
+    - typings.cids.cidsInts.`45958`
+    - typings.cids.cidsInts.`45959`
+    - typings.cids.cidsInts.`45960`
+    - typings.cids.cidsInts.`45961`
+    - typings.cids.cidsInts.`45962`
+    - typings.cids.cidsInts.`45963`
+    - typings.cids.cidsInts.`45964`
+    - typings.cids.cidsInts.`45965`
+    - typings.cids.cidsInts.`45966`
+    - typings.cids.cidsInts.`45967`
+    - typings.cids.cidsInts.`45968`
+    - typings.cids.cidsInts.`45969`
+    - typings.cids.cidsInts.`45970`
+    - typings.cids.cidsInts.`45971`
+    - typings.cids.cidsInts.`45972`
+    - typings.cids.cidsInts.`45973`
+    - typings.cids.cidsInts.`45974`
+    - typings.cids.cidsInts.`45975`
+    - typings.cids.cidsInts.`45976`
+    - typings.cids.cidsInts.`45977`
+    - typings.cids.cidsInts.`45978`
+    - typings.cids.cidsInts.`45979`
+    - typings.cids.cidsInts.`45980`
+    - typings.cids.cidsInts.`45981`
+    - typings.cids.cidsInts.`45982`
+    - typings.cids.cidsInts.`45983`
+    - typings.cids.cidsInts.`45984`
+    - typings.cids.cidsInts.`45985`
+    - typings.cids.cidsInts.`45986`
+    - typings.cids.cidsInts.`45987`
+    - typings.cids.cidsInts.`45988`
+    - typings.cids.cidsInts.`45989`
+    - typings.cids.cidsInts.`45990`
+    - typings.cids.cidsInts.`45991`
+    - typings.cids.cidsInts.`45992`
+    - typings.cids.cidsInts.`45993`
+    - typings.cids.cidsInts.`45994`
+    - typings.cids.cidsInts.`45995`
+    - typings.cids.cidsInts.`45996`
+    - typings.cids.cidsInts.`45997`
+    - typings.cids.cidsInts.`45998`
+    - typings.cids.cidsInts.`45999`
+    - typings.cids.cidsInts.`46000`
+    - typings.cids.cidsInts.`46001`
+    - typings.cids.cidsInts.`46002`
+    - typings.cids.cidsInts.`46003`
+    - typings.cids.cidsInts.`46004`
+    - typings.cids.cidsInts.`46005`
+    - typings.cids.cidsInts.`46006`
+    - typings.cids.cidsInts.`46007`
+    - typings.cids.cidsInts.`46008`
+    - typings.cids.cidsInts.`46009`
+    - typings.cids.cidsInts.`46010`
+    - typings.cids.cidsInts.`46011`
+    - typings.cids.cidsInts.`46012`
+    - typings.cids.cidsInts.`46013`
+    - typings.cids.cidsInts.`46014`
+    - typings.cids.cidsInts.`46015`
+    - typings.cids.cidsInts.`46016`
+    - typings.cids.cidsInts.`46017`
+    - typings.cids.cidsInts.`46018`
+    - typings.cids.cidsInts.`46019`
+    - typings.cids.cidsInts.`46020`
+    - typings.cids.cidsInts.`46021`
+    - typings.cids.cidsInts.`46022`
+    - typings.cids.cidsInts.`46023`
+    - typings.cids.cidsInts.`46024`
+    - typings.cids.cidsInts.`46025`
+    - typings.cids.cidsInts.`46026`
+    - typings.cids.cidsInts.`46027`
+    - typings.cids.cidsInts.`46028`
+    - typings.cids.cidsInts.`46029`
+    - typings.cids.cidsInts.`46030`
+    - typings.cids.cidsInts.`46031`
+    - typings.cids.cidsInts.`46032`
+    - typings.cids.cidsInts.`46033`
+    - typings.cids.cidsInts.`46034`
+    - typings.cids.cidsInts.`46035`
+    - typings.cids.cidsInts.`46036`
+    - typings.cids.cidsInts.`46037`
+    - typings.cids.cidsInts.`46038`
+    - typings.cids.cidsInts.`46039`
+    - typings.cids.cidsInts.`46040`
+    - typings.cids.cidsInts.`46041`
+    - typings.cids.cidsInts.`46042`
+    - typings.cids.cidsInts.`46043`
+    - typings.cids.cidsInts.`46044`
+    - typings.cids.cidsInts.`46045`
+    - typings.cids.cidsInts.`46046`
+    - typings.cids.cidsInts.`46047`
+    - typings.cids.cidsInts.`46048`
+    - typings.cids.cidsInts.`46081`
+    - typings.cids.cidsInts.`46082`
+    - typings.cids.cidsInts.`52753`
+    - typings.cids.cidsInts.`61697`
+    - typings.cids.cidsInts.`61698`
+    - typings.cids.cidsInts.`8417572`
+    - typings.cids.cidsInts.`8483108`
+    - typings.cids.cidsInts.`9728292`
+    - typings.cids.cidsInts.`9793828`
+    - typings.cids.cidsInts.`10645796`
+    - typings.cids.cidsInts.`10711332`
+    - typings.cids.cidsInts.`11639056`
   */
   trait CodecCode extends StObject
   object CodecCode {
     
-    inline def `0`: typings.cids.cidsNumbers.`0` = 0.asInstanceOf[typings.cids.cidsNumbers.`0`]
+    inline def `0`: typings.cids.cidsInts.`0` = 0.asInstanceOf[typings.cids.cidsInts.`0`]
     
-    inline def `1`: typings.cids.cidsNumbers.`1` = 1.asInstanceOf[typings.cids.cidsNumbers.`1`]
+    inline def `1`: typings.cids.cidsInts.`1` = 1.asInstanceOf[typings.cids.cidsInts.`1`]
     
-    inline def `10645796`: typings.cids.cidsNumbers.`10645796` = 10645796.asInstanceOf[typings.cids.cidsNumbers.`10645796`]
+    inline def `10645796`: typings.cids.cidsInts.`10645796` = 10645796.asInstanceOf[typings.cids.cidsInts.`10645796`]
     
-    inline def `10711332`: typings.cids.cidsNumbers.`10711332` = 10711332.asInstanceOf[typings.cids.cidsNumbers.`10711332`]
+    inline def `10711332`: typings.cids.cidsInts.`10711332` = 10711332.asInstanceOf[typings.cids.cidsInts.`10711332`]
     
-    inline def `112`: typings.cids.cidsNumbers.`112` = 112.asInstanceOf[typings.cids.cidsNumbers.`112`]
+    inline def `112`: typings.cids.cidsInts.`112` = 112.asInstanceOf[typings.cids.cidsInts.`112`]
     
-    inline def `113`: typings.cids.cidsNumbers.`113` = 113.asInstanceOf[typings.cids.cidsNumbers.`113`]
+    inline def `113`: typings.cids.cidsInts.`113` = 113.asInstanceOf[typings.cids.cidsInts.`113`]
     
-    inline def `114`: typings.cids.cidsNumbers.`114` = 114.asInstanceOf[typings.cids.cidsNumbers.`114`]
+    inline def `114`: typings.cids.cidsInts.`114` = 114.asInstanceOf[typings.cids.cidsInts.`114`]
     
-    inline def `11639056`: typings.cids.cidsNumbers.`11639056` = 11639056.asInstanceOf[typings.cids.cidsNumbers.`11639056`]
+    inline def `11639056`: typings.cids.cidsInts.`11639056` = 11639056.asInstanceOf[typings.cids.cidsInts.`11639056`]
     
-    inline def `120`: typings.cids.cidsNumbers.`120` = 120.asInstanceOf[typings.cids.cidsNumbers.`120`]
+    inline def `120`: typings.cids.cidsInts.`120` = 120.asInstanceOf[typings.cids.cidsInts.`120`]
     
-    inline def `123`: typings.cids.cidsNumbers.`123` = 123.asInstanceOf[typings.cids.cidsNumbers.`123`]
+    inline def `123`: typings.cids.cidsInts.`123` = 123.asInstanceOf[typings.cids.cidsInts.`123`]
     
-    inline def `124`: typings.cids.cidsNumbers.`124` = 124.asInstanceOf[typings.cids.cidsNumbers.`124`]
+    inline def `124`: typings.cids.cidsInts.`124` = 124.asInstanceOf[typings.cids.cidsInts.`124`]
     
-    inline def `129`: typings.cids.cidsNumbers.`129` = 129.asInstanceOf[typings.cids.cidsNumbers.`129`]
+    inline def `129`: typings.cids.cidsInts.`129` = 129.asInstanceOf[typings.cids.cidsInts.`129`]
     
-    inline def `130`: typings.cids.cidsNumbers.`130` = 130.asInstanceOf[typings.cids.cidsNumbers.`130`]
+    inline def `130`: typings.cids.cidsInts.`130` = 130.asInstanceOf[typings.cids.cidsInts.`130`]
     
-    inline def `131`: typings.cids.cidsNumbers.`131` = 131.asInstanceOf[typings.cids.cidsNumbers.`131`]
+    inline def `131`: typings.cids.cidsInts.`131` = 131.asInstanceOf[typings.cids.cidsInts.`131`]
     
-    inline def `132`: typings.cids.cidsNumbers.`132` = 132.asInstanceOf[typings.cids.cidsNumbers.`132`]
+    inline def `132`: typings.cids.cidsInts.`132` = 132.asInstanceOf[typings.cids.cidsInts.`132`]
     
-    inline def `133`: typings.cids.cidsNumbers.`133` = 133.asInstanceOf[typings.cids.cidsNumbers.`133`]
+    inline def `133`: typings.cids.cidsInts.`133` = 133.asInstanceOf[typings.cids.cidsInts.`133`]
     
-    inline def `134`: typings.cids.cidsNumbers.`134` = 134.asInstanceOf[typings.cids.cidsNumbers.`134`]
+    inline def `134`: typings.cids.cidsInts.`134` = 134.asInstanceOf[typings.cids.cidsInts.`134`]
     
-    inline def `144`: typings.cids.cidsNumbers.`144` = 144.asInstanceOf[typings.cids.cidsNumbers.`144`]
+    inline def `144`: typings.cids.cidsInts.`144` = 144.asInstanceOf[typings.cids.cidsInts.`144`]
     
-    inline def `145`: typings.cids.cidsNumbers.`145` = 145.asInstanceOf[typings.cids.cidsNumbers.`145`]
+    inline def `145`: typings.cids.cidsInts.`145` = 145.asInstanceOf[typings.cids.cidsInts.`145`]
     
-    inline def `146`: typings.cids.cidsNumbers.`146` = 146.asInstanceOf[typings.cids.cidsNumbers.`146`]
+    inline def `146`: typings.cids.cidsInts.`146` = 146.asInstanceOf[typings.cids.cidsInts.`146`]
     
-    inline def `147`: typings.cids.cidsNumbers.`147` = 147.asInstanceOf[typings.cids.cidsNumbers.`147`]
+    inline def `147`: typings.cids.cidsInts.`147` = 147.asInstanceOf[typings.cids.cidsInts.`147`]
     
-    inline def `148`: typings.cids.cidsNumbers.`148` = 148.asInstanceOf[typings.cids.cidsNumbers.`148`]
+    inline def `148`: typings.cids.cidsInts.`148` = 148.asInstanceOf[typings.cids.cidsInts.`148`]
     
-    inline def `149`: typings.cids.cidsNumbers.`149` = 149.asInstanceOf[typings.cids.cidsNumbers.`149`]
+    inline def `149`: typings.cids.cidsInts.`149` = 149.asInstanceOf[typings.cids.cidsInts.`149`]
     
-    inline def `150`: typings.cids.cidsNumbers.`150` = 150.asInstanceOf[typings.cids.cidsNumbers.`150`]
+    inline def `150`: typings.cids.cidsInts.`150` = 150.asInstanceOf[typings.cids.cidsInts.`150`]
     
-    inline def `151`: typings.cids.cidsNumbers.`151` = 151.asInstanceOf[typings.cids.cidsNumbers.`151`]
+    inline def `151`: typings.cids.cidsInts.`151` = 151.asInstanceOf[typings.cids.cidsInts.`151`]
     
-    inline def `152`: typings.cids.cidsNumbers.`152` = 152.asInstanceOf[typings.cids.cidsNumbers.`152`]
+    inline def `152`: typings.cids.cidsInts.`152` = 152.asInstanceOf[typings.cids.cidsInts.`152`]
     
-    inline def `17`: typings.cids.cidsNumbers.`17` = 17.asInstanceOf[typings.cids.cidsNumbers.`17`]
+    inline def `17`: typings.cids.cidsInts.`17` = 17.asInstanceOf[typings.cids.cidsInts.`17`]
     
-    inline def `176`: typings.cids.cidsNumbers.`176` = 176.asInstanceOf[typings.cids.cidsNumbers.`176`]
+    inline def `176`: typings.cids.cidsInts.`176` = 176.asInstanceOf[typings.cids.cidsInts.`176`]
     
-    inline def `177`: typings.cids.cidsNumbers.`177` = 177.asInstanceOf[typings.cids.cidsNumbers.`177`]
+    inline def `177`: typings.cids.cidsInts.`177` = 177.asInstanceOf[typings.cids.cidsInts.`177`]
     
-    inline def `178`: typings.cids.cidsNumbers.`178` = 178.asInstanceOf[typings.cids.cidsNumbers.`178`]
+    inline def `178`: typings.cids.cidsInts.`178` = 178.asInstanceOf[typings.cids.cidsInts.`178`]
     
-    inline def `18`: typings.cids.cidsNumbers.`18` = 18.asInstanceOf[typings.cids.cidsNumbers.`18`]
+    inline def `18`: typings.cids.cidsInts.`18` = 18.asInstanceOf[typings.cids.cidsInts.`18`]
     
-    inline def `19`: typings.cids.cidsNumbers.`19` = 19.asInstanceOf[typings.cids.cidsNumbers.`19`]
+    inline def `19`: typings.cids.cidsInts.`19` = 19.asInstanceOf[typings.cids.cidsInts.`19`]
     
-    inline def `192`: typings.cids.cidsNumbers.`192` = 192.asInstanceOf[typings.cids.cidsNumbers.`192`]
+    inline def `192`: typings.cids.cidsInts.`192` = 192.asInstanceOf[typings.cids.cidsInts.`192`]
     
-    inline def `193`: typings.cids.cidsNumbers.`193` = 193.asInstanceOf[typings.cids.cidsNumbers.`193`]
+    inline def `193`: typings.cids.cidsInts.`193` = 193.asInstanceOf[typings.cids.cidsInts.`193`]
     
-    inline def `2`: typings.cids.cidsNumbers.`2` = 2.asInstanceOf[typings.cids.cidsNumbers.`2`]
+    inline def `2`: typings.cids.cidsInts.`2` = 2.asInstanceOf[typings.cids.cidsInts.`2`]
     
-    inline def `20`: typings.cids.cidsNumbers.`20` = 20.asInstanceOf[typings.cids.cidsNumbers.`20`]
+    inline def `20`: typings.cids.cidsInts.`20` = 20.asInstanceOf[typings.cids.cidsInts.`20`]
     
-    inline def `206`: typings.cids.cidsNumbers.`206` = 206.asInstanceOf[typings.cids.cidsNumbers.`206`]
+    inline def `206`: typings.cids.cidsInts.`206` = 206.asInstanceOf[typings.cids.cidsInts.`206`]
     
-    inline def `208`: typings.cids.cidsNumbers.`208` = 208.asInstanceOf[typings.cids.cidsNumbers.`208`]
+    inline def `208`: typings.cids.cidsInts.`208` = 208.asInstanceOf[typings.cids.cidsInts.`208`]
     
-    inline def `209`: typings.cids.cidsNumbers.`209` = 209.asInstanceOf[typings.cids.cidsNumbers.`209`]
+    inline def `209`: typings.cids.cidsInts.`209` = 209.asInstanceOf[typings.cids.cidsInts.`209`]
     
-    inline def `21`: typings.cids.cidsNumbers.`21` = 21.asInstanceOf[typings.cids.cidsNumbers.`21`]
+    inline def `21`: typings.cids.cidsInts.`21` = 21.asInstanceOf[typings.cids.cidsInts.`21`]
     
-    inline def `212`: typings.cids.cidsNumbers.`212` = 212.asInstanceOf[typings.cids.cidsNumbers.`212`]
+    inline def `212`: typings.cids.cidsInts.`212` = 212.asInstanceOf[typings.cids.cidsInts.`212`]
     
-    inline def `213`: typings.cids.cidsNumbers.`213` = 213.asInstanceOf[typings.cids.cidsNumbers.`213`]
+    inline def `213`: typings.cids.cidsInts.`213` = 213.asInstanceOf[typings.cids.cidsInts.`213`]
     
-    inline def `21325`: typings.cids.cidsNumbers.`21325` = 21325.asInstanceOf[typings.cids.cidsNumbers.`21325`]
+    inline def `21325`: typings.cids.cidsInts.`21325` = 21325.asInstanceOf[typings.cids.cidsInts.`21325`]
     
-    inline def `214`: typings.cids.cidsNumbers.`214` = 214.asInstanceOf[typings.cids.cidsNumbers.`214`]
+    inline def `214`: typings.cids.cidsInts.`214` = 214.asInstanceOf[typings.cids.cidsInts.`214`]
     
-    inline def `22`: typings.cids.cidsNumbers.`22` = 22.asInstanceOf[typings.cids.cidsNumbers.`22`]
+    inline def `22`: typings.cids.cidsInts.`22` = 22.asInstanceOf[typings.cids.cidsInts.`22`]
     
-    inline def `224`: typings.cids.cidsNumbers.`224` = 224.asInstanceOf[typings.cids.cidsNumbers.`224`]
+    inline def `224`: typings.cids.cidsInts.`224` = 224.asInstanceOf[typings.cids.cidsInts.`224`]
     
-    inline def `225`: typings.cids.cidsNumbers.`225` = 225.asInstanceOf[typings.cids.cidsNumbers.`225`]
+    inline def `225`: typings.cids.cidsInts.`225` = 225.asInstanceOf[typings.cids.cidsInts.`225`]
     
-    inline def `226`: typings.cids.cidsNumbers.`226` = 226.asInstanceOf[typings.cids.cidsNumbers.`226`]
+    inline def `226`: typings.cids.cidsInts.`226` = 226.asInstanceOf[typings.cids.cidsInts.`226`]
     
-    inline def `227`: typings.cids.cidsNumbers.`227` = 227.asInstanceOf[typings.cids.cidsNumbers.`227`]
+    inline def `227`: typings.cids.cidsInts.`227` = 227.asInstanceOf[typings.cids.cidsInts.`227`]
     
-    inline def `228`: typings.cids.cidsNumbers.`228` = 228.asInstanceOf[typings.cids.cidsNumbers.`228`]
+    inline def `228`: typings.cids.cidsInts.`228` = 228.asInstanceOf[typings.cids.cidsInts.`228`]
     
-    inline def `229`: typings.cids.cidsNumbers.`229` = 229.asInstanceOf[typings.cids.cidsNumbers.`229`]
+    inline def `229`: typings.cids.cidsInts.`229` = 229.asInstanceOf[typings.cids.cidsInts.`229`]
     
-    inline def `23`: typings.cids.cidsNumbers.`23` = 23.asInstanceOf[typings.cids.cidsNumbers.`23`]
+    inline def `23`: typings.cids.cidsInts.`23` = 23.asInstanceOf[typings.cids.cidsInts.`23`]
     
-    inline def `230`: typings.cids.cidsNumbers.`230` = 230.asInstanceOf[typings.cids.cidsNumbers.`230`]
+    inline def `230`: typings.cids.cidsInts.`230` = 230.asInstanceOf[typings.cids.cidsInts.`230`]
     
-    inline def `231`: typings.cids.cidsNumbers.`231` = 231.asInstanceOf[typings.cids.cidsNumbers.`231`]
+    inline def `231`: typings.cids.cidsInts.`231` = 231.asInstanceOf[typings.cids.cidsInts.`231`]
     
-    inline def `234`: typings.cids.cidsNumbers.`234` = 234.asInstanceOf[typings.cids.cidsNumbers.`234`]
+    inline def `234`: typings.cids.cidsInts.`234` = 234.asInstanceOf[typings.cids.cidsInts.`234`]
     
-    inline def `235`: typings.cids.cidsNumbers.`235` = 235.asInstanceOf[typings.cids.cidsNumbers.`235`]
+    inline def `235`: typings.cids.cidsInts.`235` = 235.asInstanceOf[typings.cids.cidsInts.`235`]
     
-    inline def `236`: typings.cids.cidsNumbers.`236` = 236.asInstanceOf[typings.cids.cidsNumbers.`236`]
+    inline def `236`: typings.cids.cidsInts.`236` = 236.asInstanceOf[typings.cids.cidsInts.`236`]
     
-    inline def `237`: typings.cids.cidsNumbers.`237` = 237.asInstanceOf[typings.cids.cidsNumbers.`237`]
+    inline def `237`: typings.cids.cidsInts.`237` = 237.asInstanceOf[typings.cids.cidsInts.`237`]
     
-    inline def `238`: typings.cids.cidsNumbers.`238` = 238.asInstanceOf[typings.cids.cidsNumbers.`238`]
+    inline def `238`: typings.cids.cidsInts.`238` = 238.asInstanceOf[typings.cids.cidsInts.`238`]
     
-    inline def `24`: typings.cids.cidsNumbers.`24` = 24.asInstanceOf[typings.cids.cidsNumbers.`24`]
+    inline def `24`: typings.cids.cidsInts.`24` = 24.asInstanceOf[typings.cids.cidsInts.`24`]
     
-    inline def `240`: typings.cids.cidsNumbers.`240` = 240.asInstanceOf[typings.cids.cidsNumbers.`240`]
+    inline def `240`: typings.cids.cidsInts.`240` = 240.asInstanceOf[typings.cids.cidsInts.`240`]
     
-    inline def `241`: typings.cids.cidsNumbers.`241` = 241.asInstanceOf[typings.cids.cidsNumbers.`241`]
+    inline def `241`: typings.cids.cidsInts.`241` = 241.asInstanceOf[typings.cids.cidsInts.`241`]
     
-    inline def `25`: typings.cids.cidsNumbers.`25` = 25.asInstanceOf[typings.cids.cidsNumbers.`25`]
+    inline def `25`: typings.cids.cidsInts.`25` = 25.asInstanceOf[typings.cids.cidsInts.`25`]
     
-    inline def `250`: typings.cids.cidsNumbers.`250` = 250.asInstanceOf[typings.cids.cidsNumbers.`250`]
+    inline def `250`: typings.cids.cidsInts.`250` = 250.asInstanceOf[typings.cids.cidsInts.`250`]
     
-    inline def `251`: typings.cids.cidsNumbers.`251` = 251.asInstanceOf[typings.cids.cidsNumbers.`251`]
+    inline def `251`: typings.cids.cidsInts.`251` = 251.asInstanceOf[typings.cids.cidsInts.`251`]
     
-    inline def `26`: typings.cids.cidsNumbers.`26` = 26.asInstanceOf[typings.cids.cidsNumbers.`26`]
+    inline def `26`: typings.cids.cidsInts.`26` = 26.asInstanceOf[typings.cids.cidsInts.`26`]
     
-    inline def `27`: typings.cids.cidsNumbers.`27` = 27.asInstanceOf[typings.cids.cidsNumbers.`27`]
+    inline def `27`: typings.cids.cidsInts.`27` = 27.asInstanceOf[typings.cids.cidsInts.`27`]
     
-    inline def `273`: typings.cids.cidsNumbers.`273` = 273.asInstanceOf[typings.cids.cidsNumbers.`273`]
+    inline def `273`: typings.cids.cidsInts.`273` = 273.asInstanceOf[typings.cids.cidsInts.`273`]
     
-    inline def `275`: typings.cids.cidsNumbers.`275` = 275.asInstanceOf[typings.cids.cidsNumbers.`275`]
+    inline def `275`: typings.cids.cidsInts.`275` = 275.asInstanceOf[typings.cids.cidsInts.`275`]
     
-    inline def `276`: typings.cids.cidsNumbers.`276` = 276.asInstanceOf[typings.cids.cidsNumbers.`276`]
+    inline def `276`: typings.cids.cidsInts.`276` = 276.asInstanceOf[typings.cids.cidsInts.`276`]
     
-    inline def `277`: typings.cids.cidsNumbers.`277` = 277.asInstanceOf[typings.cids.cidsNumbers.`277`]
+    inline def `277`: typings.cids.cidsInts.`277` = 277.asInstanceOf[typings.cids.cidsInts.`277`]
     
-    inline def `28`: typings.cids.cidsNumbers.`28` = 28.asInstanceOf[typings.cids.cidsNumbers.`28`]
+    inline def `28`: typings.cids.cidsInts.`28` = 28.asInstanceOf[typings.cids.cidsInts.`28`]
     
-    inline def `29`: typings.cids.cidsNumbers.`29` = 29.asInstanceOf[typings.cids.cidsNumbers.`29`]
+    inline def `29`: typings.cids.cidsInts.`29` = 29.asInstanceOf[typings.cids.cidsInts.`29`]
     
-    inline def `290`: typings.cids.cidsNumbers.`290` = 290.asInstanceOf[typings.cids.cidsNumbers.`290`]
+    inline def `290`: typings.cids.cidsInts.`290` = 290.asInstanceOf[typings.cids.cidsInts.`290`]
     
-    inline def `297`: typings.cids.cidsNumbers.`297` = 297.asInstanceOf[typings.cids.cidsNumbers.`297`]
+    inline def `297`: typings.cids.cidsInts.`297` = 297.asInstanceOf[typings.cids.cidsInts.`297`]
     
-    inline def `3`: typings.cids.cidsNumbers.`3` = 3.asInstanceOf[typings.cids.cidsNumbers.`3`]
+    inline def `3`: typings.cids.cidsInts.`3` = 3.asInstanceOf[typings.cids.cidsInts.`3`]
     
-    inline def `30`: typings.cids.cidsNumbers.`30` = 30.asInstanceOf[typings.cids.cidsNumbers.`30`]
+    inline def `30`: typings.cids.cidsInts.`30` = 30.asInstanceOf[typings.cids.cidsInts.`30`]
     
-    inline def `301`: typings.cids.cidsNumbers.`301` = 301.asInstanceOf[typings.cids.cidsNumbers.`301`]
+    inline def `301`: typings.cids.cidsInts.`301` = 301.asInstanceOf[typings.cids.cidsInts.`301`]
     
-    inline def `302`: typings.cids.cidsNumbers.`302` = 302.asInstanceOf[typings.cids.cidsNumbers.`302`]
+    inline def `302`: typings.cids.cidsInts.`302` = 302.asInstanceOf[typings.cids.cidsInts.`302`]
     
-    inline def `33`: typings.cids.cidsNumbers.`33` = 33.asInstanceOf[typings.cids.cidsNumbers.`33`]
+    inline def `33`: typings.cids.cidsInts.`33` = 33.asInstanceOf[typings.cids.cidsInts.`33`]
     
-    inline def `34`: typings.cids.cidsNumbers.`34` = 34.asInstanceOf[typings.cids.cidsNumbers.`34`]
+    inline def `34`: typings.cids.cidsInts.`34` = 34.asInstanceOf[typings.cids.cidsInts.`34`]
     
-    inline def `35`: typings.cids.cidsNumbers.`35` = 35.asInstanceOf[typings.cids.cidsNumbers.`35`]
+    inline def `35`: typings.cids.cidsInts.`35` = 35.asInstanceOf[typings.cids.cidsInts.`35`]
     
-    inline def `4`: typings.cids.cidsNumbers.`4` = 4.asInstanceOf[typings.cids.cidsNumbers.`4`]
+    inline def `4`: typings.cids.cidsInts.`4` = 4.asInstanceOf[typings.cids.cidsInts.`4`]
     
-    inline def `400`: typings.cids.cidsNumbers.`400` = 400.asInstanceOf[typings.cids.cidsNumbers.`400`]
+    inline def `400`: typings.cids.cidsInts.`400` = 400.asInstanceOf[typings.cids.cidsInts.`400`]
     
-    inline def `406`: typings.cids.cidsNumbers.`406` = 406.asInstanceOf[typings.cids.cidsNumbers.`406`]
+    inline def `406`: typings.cids.cidsInts.`406` = 406.asInstanceOf[typings.cids.cidsInts.`406`]
     
-    inline def `41`: typings.cids.cidsNumbers.`41` = 41.asInstanceOf[typings.cids.cidsNumbers.`41`]
+    inline def `41`: typings.cids.cidsInts.`41` = 41.asInstanceOf[typings.cids.cidsInts.`41`]
     
-    inline def `4114`: typings.cids.cidsNumbers.`4114` = 4114.asInstanceOf[typings.cids.cidsNumbers.`4114`]
+    inline def `4114`: typings.cids.cidsInts.`4114` = 4114.asInstanceOf[typings.cids.cidsInts.`4114`]
     
-    inline def `4178`: typings.cids.cidsNumbers.`4178` = 4178.asInstanceOf[typings.cids.cidsNumbers.`4178`]
+    inline def `4178`: typings.cids.cidsInts.`4178` = 4178.asInstanceOf[typings.cids.cidsInts.`4178`]
     
-    inline def `4179`: typings.cids.cidsNumbers.`4179` = 4179.asInstanceOf[typings.cids.cidsNumbers.`4179`]
+    inline def `4179`: typings.cids.cidsInts.`4179` = 4179.asInstanceOf[typings.cids.cidsInts.`4179`]
     
-    inline def `4180`: typings.cids.cidsNumbers.`4180` = 4180.asInstanceOf[typings.cids.cidsNumbers.`4180`]
+    inline def `4180`: typings.cids.cidsInts.`4180` = 4180.asInstanceOf[typings.cids.cidsInts.`4180`]
     
-    inline def `4181`: typings.cids.cidsNumbers.`4181` = 4181.asInstanceOf[typings.cids.cidsNumbers.`4181`]
+    inline def `4181`: typings.cids.cidsInts.`4181` = 4181.asInstanceOf[typings.cids.cidsInts.`4181`]
     
-    inline def `42`: typings.cids.cidsNumbers.`42` = 42.asInstanceOf[typings.cids.cidsNumbers.`42`]
+    inline def `42`: typings.cids.cidsInts.`42` = 42.asInstanceOf[typings.cids.cidsInts.`42`]
     
-    inline def `421`: typings.cids.cidsNumbers.`421` = 421.asInstanceOf[typings.cids.cidsNumbers.`421`]
+    inline def `421`: typings.cids.cidsInts.`421` = 421.asInstanceOf[typings.cids.cidsInts.`421`]
     
-    inline def `4352`: typings.cids.cidsNumbers.`4352` = 4352.asInstanceOf[typings.cids.cidsNumbers.`4352`]
+    inline def `4352`: typings.cids.cidsInts.`4352` = 4352.asInstanceOf[typings.cids.cidsInts.`4352`]
     
-    inline def `443`: typings.cids.cidsNumbers.`443` = 443.asInstanceOf[typings.cids.cidsNumbers.`443`]
+    inline def `443`: typings.cids.cidsInts.`443` = 443.asInstanceOf[typings.cids.cidsInts.`443`]
     
-    inline def `444`: typings.cids.cidsNumbers.`444` = 444.asInstanceOf[typings.cids.cidsNumbers.`444`]
+    inline def `444`: typings.cids.cidsInts.`444` = 444.asInstanceOf[typings.cids.cidsInts.`444`]
     
-    inline def `445`: typings.cids.cidsNumbers.`445` = 445.asInstanceOf[typings.cids.cidsNumbers.`445`]
+    inline def `445`: typings.cids.cidsInts.`445` = 445.asInstanceOf[typings.cids.cidsInts.`445`]
     
-    inline def `446`: typings.cids.cidsNumbers.`446` = 446.asInstanceOf[typings.cids.cidsNumbers.`446`]
+    inline def `446`: typings.cids.cidsInts.`446` = 446.asInstanceOf[typings.cids.cidsInts.`446`]
     
-    inline def `447`: typings.cids.cidsNumbers.`447` = 447.asInstanceOf[typings.cids.cidsNumbers.`447`]
+    inline def `447`: typings.cids.cidsInts.`447` = 447.asInstanceOf[typings.cids.cidsInts.`447`]
     
-    inline def `448`: typings.cids.cidsNumbers.`448` = 448.asInstanceOf[typings.cids.cidsNumbers.`448`]
+    inline def `448`: typings.cids.cidsInts.`448` = 448.asInstanceOf[typings.cids.cidsInts.`448`]
     
-    inline def `45569`: typings.cids.cidsNumbers.`45569` = 45569.asInstanceOf[typings.cids.cidsNumbers.`45569`]
+    inline def `45569`: typings.cids.cidsInts.`45569` = 45569.asInstanceOf[typings.cids.cidsInts.`45569`]
     
-    inline def `45570`: typings.cids.cidsNumbers.`45570` = 45570.asInstanceOf[typings.cids.cidsNumbers.`45570`]
+    inline def `45570`: typings.cids.cidsInts.`45570` = 45570.asInstanceOf[typings.cids.cidsInts.`45570`]
     
-    inline def `45571`: typings.cids.cidsNumbers.`45571` = 45571.asInstanceOf[typings.cids.cidsNumbers.`45571`]
+    inline def `45571`: typings.cids.cidsInts.`45571` = 45571.asInstanceOf[typings.cids.cidsInts.`45571`]
     
-    inline def `45572`: typings.cids.cidsNumbers.`45572` = 45572.asInstanceOf[typings.cids.cidsNumbers.`45572`]
+    inline def `45572`: typings.cids.cidsInts.`45572` = 45572.asInstanceOf[typings.cids.cidsInts.`45572`]
     
-    inline def `45573`: typings.cids.cidsNumbers.`45573` = 45573.asInstanceOf[typings.cids.cidsNumbers.`45573`]
+    inline def `45573`: typings.cids.cidsInts.`45573` = 45573.asInstanceOf[typings.cids.cidsInts.`45573`]
     
-    inline def `45574`: typings.cids.cidsNumbers.`45574` = 45574.asInstanceOf[typings.cids.cidsNumbers.`45574`]
+    inline def `45574`: typings.cids.cidsInts.`45574` = 45574.asInstanceOf[typings.cids.cidsInts.`45574`]
     
-    inline def `45575`: typings.cids.cidsNumbers.`45575` = 45575.asInstanceOf[typings.cids.cidsNumbers.`45575`]
+    inline def `45575`: typings.cids.cidsInts.`45575` = 45575.asInstanceOf[typings.cids.cidsInts.`45575`]
     
-    inline def `45576`: typings.cids.cidsNumbers.`45576` = 45576.asInstanceOf[typings.cids.cidsNumbers.`45576`]
+    inline def `45576`: typings.cids.cidsInts.`45576` = 45576.asInstanceOf[typings.cids.cidsInts.`45576`]
     
-    inline def `45577`: typings.cids.cidsNumbers.`45577` = 45577.asInstanceOf[typings.cids.cidsNumbers.`45577`]
+    inline def `45577`: typings.cids.cidsInts.`45577` = 45577.asInstanceOf[typings.cids.cidsInts.`45577`]
     
-    inline def `45578`: typings.cids.cidsNumbers.`45578` = 45578.asInstanceOf[typings.cids.cidsNumbers.`45578`]
+    inline def `45578`: typings.cids.cidsInts.`45578` = 45578.asInstanceOf[typings.cids.cidsInts.`45578`]
     
-    inline def `45579`: typings.cids.cidsNumbers.`45579` = 45579.asInstanceOf[typings.cids.cidsNumbers.`45579`]
+    inline def `45579`: typings.cids.cidsInts.`45579` = 45579.asInstanceOf[typings.cids.cidsInts.`45579`]
     
-    inline def `45580`: typings.cids.cidsNumbers.`45580` = 45580.asInstanceOf[typings.cids.cidsNumbers.`45580`]
+    inline def `45580`: typings.cids.cidsInts.`45580` = 45580.asInstanceOf[typings.cids.cidsInts.`45580`]
     
-    inline def `45581`: typings.cids.cidsNumbers.`45581` = 45581.asInstanceOf[typings.cids.cidsNumbers.`45581`]
+    inline def `45581`: typings.cids.cidsInts.`45581` = 45581.asInstanceOf[typings.cids.cidsInts.`45581`]
     
-    inline def `45582`: typings.cids.cidsNumbers.`45582` = 45582.asInstanceOf[typings.cids.cidsNumbers.`45582`]
+    inline def `45582`: typings.cids.cidsInts.`45582` = 45582.asInstanceOf[typings.cids.cidsInts.`45582`]
     
-    inline def `45583`: typings.cids.cidsNumbers.`45583` = 45583.asInstanceOf[typings.cids.cidsNumbers.`45583`]
+    inline def `45583`: typings.cids.cidsInts.`45583` = 45583.asInstanceOf[typings.cids.cidsInts.`45583`]
     
-    inline def `45584`: typings.cids.cidsNumbers.`45584` = 45584.asInstanceOf[typings.cids.cidsNumbers.`45584`]
+    inline def `45584`: typings.cids.cidsInts.`45584` = 45584.asInstanceOf[typings.cids.cidsInts.`45584`]
     
-    inline def `45585`: typings.cids.cidsNumbers.`45585` = 45585.asInstanceOf[typings.cids.cidsNumbers.`45585`]
+    inline def `45585`: typings.cids.cidsInts.`45585` = 45585.asInstanceOf[typings.cids.cidsInts.`45585`]
     
-    inline def `45586`: typings.cids.cidsNumbers.`45586` = 45586.asInstanceOf[typings.cids.cidsNumbers.`45586`]
+    inline def `45586`: typings.cids.cidsInts.`45586` = 45586.asInstanceOf[typings.cids.cidsInts.`45586`]
     
-    inline def `45587`: typings.cids.cidsNumbers.`45587` = 45587.asInstanceOf[typings.cids.cidsNumbers.`45587`]
+    inline def `45587`: typings.cids.cidsInts.`45587` = 45587.asInstanceOf[typings.cids.cidsInts.`45587`]
     
-    inline def `45588`: typings.cids.cidsNumbers.`45588` = 45588.asInstanceOf[typings.cids.cidsNumbers.`45588`]
+    inline def `45588`: typings.cids.cidsInts.`45588` = 45588.asInstanceOf[typings.cids.cidsInts.`45588`]
     
-    inline def `45589`: typings.cids.cidsNumbers.`45589` = 45589.asInstanceOf[typings.cids.cidsNumbers.`45589`]
+    inline def `45589`: typings.cids.cidsInts.`45589` = 45589.asInstanceOf[typings.cids.cidsInts.`45589`]
     
-    inline def `45590`: typings.cids.cidsNumbers.`45590` = 45590.asInstanceOf[typings.cids.cidsNumbers.`45590`]
+    inline def `45590`: typings.cids.cidsInts.`45590` = 45590.asInstanceOf[typings.cids.cidsInts.`45590`]
     
-    inline def `45591`: typings.cids.cidsNumbers.`45591` = 45591.asInstanceOf[typings.cids.cidsNumbers.`45591`]
+    inline def `45591`: typings.cids.cidsInts.`45591` = 45591.asInstanceOf[typings.cids.cidsInts.`45591`]
     
-    inline def `45592`: typings.cids.cidsNumbers.`45592` = 45592.asInstanceOf[typings.cids.cidsNumbers.`45592`]
+    inline def `45592`: typings.cids.cidsInts.`45592` = 45592.asInstanceOf[typings.cids.cidsInts.`45592`]
     
-    inline def `45593`: typings.cids.cidsNumbers.`45593` = 45593.asInstanceOf[typings.cids.cidsNumbers.`45593`]
+    inline def `45593`: typings.cids.cidsInts.`45593` = 45593.asInstanceOf[typings.cids.cidsInts.`45593`]
     
-    inline def `45594`: typings.cids.cidsNumbers.`45594` = 45594.asInstanceOf[typings.cids.cidsNumbers.`45594`]
+    inline def `45594`: typings.cids.cidsInts.`45594` = 45594.asInstanceOf[typings.cids.cidsInts.`45594`]
     
-    inline def `45595`: typings.cids.cidsNumbers.`45595` = 45595.asInstanceOf[typings.cids.cidsNumbers.`45595`]
+    inline def `45595`: typings.cids.cidsInts.`45595` = 45595.asInstanceOf[typings.cids.cidsInts.`45595`]
     
-    inline def `45596`: typings.cids.cidsNumbers.`45596` = 45596.asInstanceOf[typings.cids.cidsNumbers.`45596`]
+    inline def `45596`: typings.cids.cidsInts.`45596` = 45596.asInstanceOf[typings.cids.cidsInts.`45596`]
     
-    inline def `45597`: typings.cids.cidsNumbers.`45597` = 45597.asInstanceOf[typings.cids.cidsNumbers.`45597`]
+    inline def `45597`: typings.cids.cidsInts.`45597` = 45597.asInstanceOf[typings.cids.cidsInts.`45597`]
     
-    inline def `45598`: typings.cids.cidsNumbers.`45598` = 45598.asInstanceOf[typings.cids.cidsNumbers.`45598`]
+    inline def `45598`: typings.cids.cidsInts.`45598` = 45598.asInstanceOf[typings.cids.cidsInts.`45598`]
     
-    inline def `45599`: typings.cids.cidsNumbers.`45599` = 45599.asInstanceOf[typings.cids.cidsNumbers.`45599`]
+    inline def `45599`: typings.cids.cidsInts.`45599` = 45599.asInstanceOf[typings.cids.cidsInts.`45599`]
     
-    inline def `45600`: typings.cids.cidsNumbers.`45600` = 45600.asInstanceOf[typings.cids.cidsNumbers.`45600`]
+    inline def `45600`: typings.cids.cidsInts.`45600` = 45600.asInstanceOf[typings.cids.cidsInts.`45600`]
     
-    inline def `45601`: typings.cids.cidsNumbers.`45601` = 45601.asInstanceOf[typings.cids.cidsNumbers.`45601`]
+    inline def `45601`: typings.cids.cidsInts.`45601` = 45601.asInstanceOf[typings.cids.cidsInts.`45601`]
     
-    inline def `45602`: typings.cids.cidsNumbers.`45602` = 45602.asInstanceOf[typings.cids.cidsNumbers.`45602`]
+    inline def `45602`: typings.cids.cidsInts.`45602` = 45602.asInstanceOf[typings.cids.cidsInts.`45602`]
     
-    inline def `45603`: typings.cids.cidsNumbers.`45603` = 45603.asInstanceOf[typings.cids.cidsNumbers.`45603`]
+    inline def `45603`: typings.cids.cidsInts.`45603` = 45603.asInstanceOf[typings.cids.cidsInts.`45603`]
     
-    inline def `45604`: typings.cids.cidsNumbers.`45604` = 45604.asInstanceOf[typings.cids.cidsNumbers.`45604`]
+    inline def `45604`: typings.cids.cidsInts.`45604` = 45604.asInstanceOf[typings.cids.cidsInts.`45604`]
     
-    inline def `45605`: typings.cids.cidsNumbers.`45605` = 45605.asInstanceOf[typings.cids.cidsNumbers.`45605`]
+    inline def `45605`: typings.cids.cidsInts.`45605` = 45605.asInstanceOf[typings.cids.cidsInts.`45605`]
     
-    inline def `45606`: typings.cids.cidsNumbers.`45606` = 45606.asInstanceOf[typings.cids.cidsNumbers.`45606`]
+    inline def `45606`: typings.cids.cidsInts.`45606` = 45606.asInstanceOf[typings.cids.cidsInts.`45606`]
     
-    inline def `45607`: typings.cids.cidsNumbers.`45607` = 45607.asInstanceOf[typings.cids.cidsNumbers.`45607`]
+    inline def `45607`: typings.cids.cidsInts.`45607` = 45607.asInstanceOf[typings.cids.cidsInts.`45607`]
     
-    inline def `45608`: typings.cids.cidsNumbers.`45608` = 45608.asInstanceOf[typings.cids.cidsNumbers.`45608`]
+    inline def `45608`: typings.cids.cidsInts.`45608` = 45608.asInstanceOf[typings.cids.cidsInts.`45608`]
     
-    inline def `45609`: typings.cids.cidsNumbers.`45609` = 45609.asInstanceOf[typings.cids.cidsNumbers.`45609`]
+    inline def `45609`: typings.cids.cidsInts.`45609` = 45609.asInstanceOf[typings.cids.cidsInts.`45609`]
     
-    inline def `45610`: typings.cids.cidsNumbers.`45610` = 45610.asInstanceOf[typings.cids.cidsNumbers.`45610`]
+    inline def `45610`: typings.cids.cidsInts.`45610` = 45610.asInstanceOf[typings.cids.cidsInts.`45610`]
     
-    inline def `45611`: typings.cids.cidsNumbers.`45611` = 45611.asInstanceOf[typings.cids.cidsNumbers.`45611`]
+    inline def `45611`: typings.cids.cidsInts.`45611` = 45611.asInstanceOf[typings.cids.cidsInts.`45611`]
     
-    inline def `45612`: typings.cids.cidsNumbers.`45612` = 45612.asInstanceOf[typings.cids.cidsNumbers.`45612`]
+    inline def `45612`: typings.cids.cidsInts.`45612` = 45612.asInstanceOf[typings.cids.cidsInts.`45612`]
     
-    inline def `45613`: typings.cids.cidsNumbers.`45613` = 45613.asInstanceOf[typings.cids.cidsNumbers.`45613`]
+    inline def `45613`: typings.cids.cidsInts.`45613` = 45613.asInstanceOf[typings.cids.cidsInts.`45613`]
     
-    inline def `45614`: typings.cids.cidsNumbers.`45614` = 45614.asInstanceOf[typings.cids.cidsNumbers.`45614`]
+    inline def `45614`: typings.cids.cidsInts.`45614` = 45614.asInstanceOf[typings.cids.cidsInts.`45614`]
     
-    inline def `45615`: typings.cids.cidsNumbers.`45615` = 45615.asInstanceOf[typings.cids.cidsNumbers.`45615`]
+    inline def `45615`: typings.cids.cidsInts.`45615` = 45615.asInstanceOf[typings.cids.cidsInts.`45615`]
     
-    inline def `45616`: typings.cids.cidsNumbers.`45616` = 45616.asInstanceOf[typings.cids.cidsNumbers.`45616`]
+    inline def `45616`: typings.cids.cidsInts.`45616` = 45616.asInstanceOf[typings.cids.cidsInts.`45616`]
     
-    inline def `45617`: typings.cids.cidsNumbers.`45617` = 45617.asInstanceOf[typings.cids.cidsNumbers.`45617`]
+    inline def `45617`: typings.cids.cidsInts.`45617` = 45617.asInstanceOf[typings.cids.cidsInts.`45617`]
     
-    inline def `45618`: typings.cids.cidsNumbers.`45618` = 45618.asInstanceOf[typings.cids.cidsNumbers.`45618`]
+    inline def `45618`: typings.cids.cidsInts.`45618` = 45618.asInstanceOf[typings.cids.cidsInts.`45618`]
     
-    inline def `45619`: typings.cids.cidsNumbers.`45619` = 45619.asInstanceOf[typings.cids.cidsNumbers.`45619`]
+    inline def `45619`: typings.cids.cidsInts.`45619` = 45619.asInstanceOf[typings.cids.cidsInts.`45619`]
     
-    inline def `45620`: typings.cids.cidsNumbers.`45620` = 45620.asInstanceOf[typings.cids.cidsNumbers.`45620`]
+    inline def `45620`: typings.cids.cidsInts.`45620` = 45620.asInstanceOf[typings.cids.cidsInts.`45620`]
     
-    inline def `45621`: typings.cids.cidsNumbers.`45621` = 45621.asInstanceOf[typings.cids.cidsNumbers.`45621`]
+    inline def `45621`: typings.cids.cidsInts.`45621` = 45621.asInstanceOf[typings.cids.cidsInts.`45621`]
     
-    inline def `45622`: typings.cids.cidsNumbers.`45622` = 45622.asInstanceOf[typings.cids.cidsNumbers.`45622`]
+    inline def `45622`: typings.cids.cidsInts.`45622` = 45622.asInstanceOf[typings.cids.cidsInts.`45622`]
     
-    inline def `45623`: typings.cids.cidsNumbers.`45623` = 45623.asInstanceOf[typings.cids.cidsNumbers.`45623`]
+    inline def `45623`: typings.cids.cidsInts.`45623` = 45623.asInstanceOf[typings.cids.cidsInts.`45623`]
     
-    inline def `45624`: typings.cids.cidsNumbers.`45624` = 45624.asInstanceOf[typings.cids.cidsNumbers.`45624`]
+    inline def `45624`: typings.cids.cidsInts.`45624` = 45624.asInstanceOf[typings.cids.cidsInts.`45624`]
     
-    inline def `45625`: typings.cids.cidsNumbers.`45625` = 45625.asInstanceOf[typings.cids.cidsNumbers.`45625`]
+    inline def `45625`: typings.cids.cidsInts.`45625` = 45625.asInstanceOf[typings.cids.cidsInts.`45625`]
     
-    inline def `45626`: typings.cids.cidsNumbers.`45626` = 45626.asInstanceOf[typings.cids.cidsNumbers.`45626`]
+    inline def `45626`: typings.cids.cidsInts.`45626` = 45626.asInstanceOf[typings.cids.cidsInts.`45626`]
     
-    inline def `45627`: typings.cids.cidsNumbers.`45627` = 45627.asInstanceOf[typings.cids.cidsNumbers.`45627`]
+    inline def `45627`: typings.cids.cidsInts.`45627` = 45627.asInstanceOf[typings.cids.cidsInts.`45627`]
     
-    inline def `45628`: typings.cids.cidsNumbers.`45628` = 45628.asInstanceOf[typings.cids.cidsNumbers.`45628`]
+    inline def `45628`: typings.cids.cidsInts.`45628` = 45628.asInstanceOf[typings.cids.cidsInts.`45628`]
     
-    inline def `45629`: typings.cids.cidsNumbers.`45629` = 45629.asInstanceOf[typings.cids.cidsNumbers.`45629`]
+    inline def `45629`: typings.cids.cidsInts.`45629` = 45629.asInstanceOf[typings.cids.cidsInts.`45629`]
     
-    inline def `45630`: typings.cids.cidsNumbers.`45630` = 45630.asInstanceOf[typings.cids.cidsNumbers.`45630`]
+    inline def `45630`: typings.cids.cidsInts.`45630` = 45630.asInstanceOf[typings.cids.cidsInts.`45630`]
     
-    inline def `45631`: typings.cids.cidsNumbers.`45631` = 45631.asInstanceOf[typings.cids.cidsNumbers.`45631`]
+    inline def `45631`: typings.cids.cidsInts.`45631` = 45631.asInstanceOf[typings.cids.cidsInts.`45631`]
     
-    inline def `45632`: typings.cids.cidsNumbers.`45632` = 45632.asInstanceOf[typings.cids.cidsNumbers.`45632`]
+    inline def `45632`: typings.cids.cidsInts.`45632` = 45632.asInstanceOf[typings.cids.cidsInts.`45632`]
     
-    inline def `45633`: typings.cids.cidsNumbers.`45633` = 45633.asInstanceOf[typings.cids.cidsNumbers.`45633`]
+    inline def `45633`: typings.cids.cidsInts.`45633` = 45633.asInstanceOf[typings.cids.cidsInts.`45633`]
     
-    inline def `45634`: typings.cids.cidsNumbers.`45634` = 45634.asInstanceOf[typings.cids.cidsNumbers.`45634`]
+    inline def `45634`: typings.cids.cidsInts.`45634` = 45634.asInstanceOf[typings.cids.cidsInts.`45634`]
     
-    inline def `45635`: typings.cids.cidsNumbers.`45635` = 45635.asInstanceOf[typings.cids.cidsNumbers.`45635`]
+    inline def `45635`: typings.cids.cidsInts.`45635` = 45635.asInstanceOf[typings.cids.cidsInts.`45635`]
     
-    inline def `45636`: typings.cids.cidsNumbers.`45636` = 45636.asInstanceOf[typings.cids.cidsNumbers.`45636`]
+    inline def `45636`: typings.cids.cidsInts.`45636` = 45636.asInstanceOf[typings.cids.cidsInts.`45636`]
     
-    inline def `45637`: typings.cids.cidsNumbers.`45637` = 45637.asInstanceOf[typings.cids.cidsNumbers.`45637`]
+    inline def `45637`: typings.cids.cidsInts.`45637` = 45637.asInstanceOf[typings.cids.cidsInts.`45637`]
     
-    inline def `45638`: typings.cids.cidsNumbers.`45638` = 45638.asInstanceOf[typings.cids.cidsNumbers.`45638`]
+    inline def `45638`: typings.cids.cidsInts.`45638` = 45638.asInstanceOf[typings.cids.cidsInts.`45638`]
     
-    inline def `45639`: typings.cids.cidsNumbers.`45639` = 45639.asInstanceOf[typings.cids.cidsNumbers.`45639`]
+    inline def `45639`: typings.cids.cidsInts.`45639` = 45639.asInstanceOf[typings.cids.cidsInts.`45639`]
     
-    inline def `45640`: typings.cids.cidsNumbers.`45640` = 45640.asInstanceOf[typings.cids.cidsNumbers.`45640`]
+    inline def `45640`: typings.cids.cidsInts.`45640` = 45640.asInstanceOf[typings.cids.cidsInts.`45640`]
     
-    inline def `45641`: typings.cids.cidsNumbers.`45641` = 45641.asInstanceOf[typings.cids.cidsNumbers.`45641`]
+    inline def `45641`: typings.cids.cidsInts.`45641` = 45641.asInstanceOf[typings.cids.cidsInts.`45641`]
     
-    inline def `45642`: typings.cids.cidsNumbers.`45642` = 45642.asInstanceOf[typings.cids.cidsNumbers.`45642`]
+    inline def `45642`: typings.cids.cidsInts.`45642` = 45642.asInstanceOf[typings.cids.cidsInts.`45642`]
     
-    inline def `45643`: typings.cids.cidsNumbers.`45643` = 45643.asInstanceOf[typings.cids.cidsNumbers.`45643`]
+    inline def `45643`: typings.cids.cidsInts.`45643` = 45643.asInstanceOf[typings.cids.cidsInts.`45643`]
     
-    inline def `45644`: typings.cids.cidsNumbers.`45644` = 45644.asInstanceOf[typings.cids.cidsNumbers.`45644`]
+    inline def `45644`: typings.cids.cidsInts.`45644` = 45644.asInstanceOf[typings.cids.cidsInts.`45644`]
     
-    inline def `45645`: typings.cids.cidsNumbers.`45645` = 45645.asInstanceOf[typings.cids.cidsNumbers.`45645`]
+    inline def `45645`: typings.cids.cidsInts.`45645` = 45645.asInstanceOf[typings.cids.cidsInts.`45645`]
     
-    inline def `45646`: typings.cids.cidsNumbers.`45646` = 45646.asInstanceOf[typings.cids.cidsNumbers.`45646`]
+    inline def `45646`: typings.cids.cidsInts.`45646` = 45646.asInstanceOf[typings.cids.cidsInts.`45646`]
     
-    inline def `45647`: typings.cids.cidsNumbers.`45647` = 45647.asInstanceOf[typings.cids.cidsNumbers.`45647`]
+    inline def `45647`: typings.cids.cidsInts.`45647` = 45647.asInstanceOf[typings.cids.cidsInts.`45647`]
     
-    inline def `45648`: typings.cids.cidsNumbers.`45648` = 45648.asInstanceOf[typings.cids.cidsNumbers.`45648`]
+    inline def `45648`: typings.cids.cidsInts.`45648` = 45648.asInstanceOf[typings.cids.cidsInts.`45648`]
     
-    inline def `45649`: typings.cids.cidsNumbers.`45649` = 45649.asInstanceOf[typings.cids.cidsNumbers.`45649`]
+    inline def `45649`: typings.cids.cidsInts.`45649` = 45649.asInstanceOf[typings.cids.cidsInts.`45649`]
     
-    inline def `45650`: typings.cids.cidsNumbers.`45650` = 45650.asInstanceOf[typings.cids.cidsNumbers.`45650`]
+    inline def `45650`: typings.cids.cidsInts.`45650` = 45650.asInstanceOf[typings.cids.cidsInts.`45650`]
     
-    inline def `45651`: typings.cids.cidsNumbers.`45651` = 45651.asInstanceOf[typings.cids.cidsNumbers.`45651`]
+    inline def `45651`: typings.cids.cidsInts.`45651` = 45651.asInstanceOf[typings.cids.cidsInts.`45651`]
     
-    inline def `45652`: typings.cids.cidsNumbers.`45652` = 45652.asInstanceOf[typings.cids.cidsNumbers.`45652`]
+    inline def `45652`: typings.cids.cidsInts.`45652` = 45652.asInstanceOf[typings.cids.cidsInts.`45652`]
     
-    inline def `45653`: typings.cids.cidsNumbers.`45653` = 45653.asInstanceOf[typings.cids.cidsNumbers.`45653`]
+    inline def `45653`: typings.cids.cidsInts.`45653` = 45653.asInstanceOf[typings.cids.cidsInts.`45653`]
     
-    inline def `45654`: typings.cids.cidsNumbers.`45654` = 45654.asInstanceOf[typings.cids.cidsNumbers.`45654`]
+    inline def `45654`: typings.cids.cidsInts.`45654` = 45654.asInstanceOf[typings.cids.cidsInts.`45654`]
     
-    inline def `45655`: typings.cids.cidsNumbers.`45655` = 45655.asInstanceOf[typings.cids.cidsNumbers.`45655`]
+    inline def `45655`: typings.cids.cidsInts.`45655` = 45655.asInstanceOf[typings.cids.cidsInts.`45655`]
     
-    inline def `45656`: typings.cids.cidsNumbers.`45656` = 45656.asInstanceOf[typings.cids.cidsNumbers.`45656`]
+    inline def `45656`: typings.cids.cidsInts.`45656` = 45656.asInstanceOf[typings.cids.cidsInts.`45656`]
     
-    inline def `45657`: typings.cids.cidsNumbers.`45657` = 45657.asInstanceOf[typings.cids.cidsNumbers.`45657`]
+    inline def `45657`: typings.cids.cidsInts.`45657` = 45657.asInstanceOf[typings.cids.cidsInts.`45657`]
     
-    inline def `45658`: typings.cids.cidsNumbers.`45658` = 45658.asInstanceOf[typings.cids.cidsNumbers.`45658`]
+    inline def `45658`: typings.cids.cidsInts.`45658` = 45658.asInstanceOf[typings.cids.cidsInts.`45658`]
     
-    inline def `45659`: typings.cids.cidsNumbers.`45659` = 45659.asInstanceOf[typings.cids.cidsNumbers.`45659`]
+    inline def `45659`: typings.cids.cidsInts.`45659` = 45659.asInstanceOf[typings.cids.cidsInts.`45659`]
     
-    inline def `45660`: typings.cids.cidsNumbers.`45660` = 45660.asInstanceOf[typings.cids.cidsNumbers.`45660`]
+    inline def `45660`: typings.cids.cidsInts.`45660` = 45660.asInstanceOf[typings.cids.cidsInts.`45660`]
     
-    inline def `45661`: typings.cids.cidsNumbers.`45661` = 45661.asInstanceOf[typings.cids.cidsNumbers.`45661`]
+    inline def `45661`: typings.cids.cidsInts.`45661` = 45661.asInstanceOf[typings.cids.cidsInts.`45661`]
     
-    inline def `45662`: typings.cids.cidsNumbers.`45662` = 45662.asInstanceOf[typings.cids.cidsNumbers.`45662`]
+    inline def `45662`: typings.cids.cidsInts.`45662` = 45662.asInstanceOf[typings.cids.cidsInts.`45662`]
     
-    inline def `45663`: typings.cids.cidsNumbers.`45663` = 45663.asInstanceOf[typings.cids.cidsNumbers.`45663`]
+    inline def `45663`: typings.cids.cidsInts.`45663` = 45663.asInstanceOf[typings.cids.cidsInts.`45663`]
     
-    inline def `45664`: typings.cids.cidsNumbers.`45664` = 45664.asInstanceOf[typings.cids.cidsNumbers.`45664`]
+    inline def `45664`: typings.cids.cidsInts.`45664` = 45664.asInstanceOf[typings.cids.cidsInts.`45664`]
     
-    inline def `45825`: typings.cids.cidsNumbers.`45825` = 45825.asInstanceOf[typings.cids.cidsNumbers.`45825`]
+    inline def `45825`: typings.cids.cidsInts.`45825` = 45825.asInstanceOf[typings.cids.cidsInts.`45825`]
     
-    inline def `45826`: typings.cids.cidsNumbers.`45826` = 45826.asInstanceOf[typings.cids.cidsNumbers.`45826`]
+    inline def `45826`: typings.cids.cidsInts.`45826` = 45826.asInstanceOf[typings.cids.cidsInts.`45826`]
     
-    inline def `45827`: typings.cids.cidsNumbers.`45827` = 45827.asInstanceOf[typings.cids.cidsNumbers.`45827`]
+    inline def `45827`: typings.cids.cidsInts.`45827` = 45827.asInstanceOf[typings.cids.cidsInts.`45827`]
     
-    inline def `45828`: typings.cids.cidsNumbers.`45828` = 45828.asInstanceOf[typings.cids.cidsNumbers.`45828`]
+    inline def `45828`: typings.cids.cidsInts.`45828` = 45828.asInstanceOf[typings.cids.cidsInts.`45828`]
     
-    inline def `45829`: typings.cids.cidsNumbers.`45829` = 45829.asInstanceOf[typings.cids.cidsNumbers.`45829`]
+    inline def `45829`: typings.cids.cidsInts.`45829` = 45829.asInstanceOf[typings.cids.cidsInts.`45829`]
     
-    inline def `45830`: typings.cids.cidsNumbers.`45830` = 45830.asInstanceOf[typings.cids.cidsNumbers.`45830`]
+    inline def `45830`: typings.cids.cidsInts.`45830` = 45830.asInstanceOf[typings.cids.cidsInts.`45830`]
     
-    inline def `45831`: typings.cids.cidsNumbers.`45831` = 45831.asInstanceOf[typings.cids.cidsNumbers.`45831`]
+    inline def `45831`: typings.cids.cidsInts.`45831` = 45831.asInstanceOf[typings.cids.cidsInts.`45831`]
     
-    inline def `45832`: typings.cids.cidsNumbers.`45832` = 45832.asInstanceOf[typings.cids.cidsNumbers.`45832`]
+    inline def `45832`: typings.cids.cidsInts.`45832` = 45832.asInstanceOf[typings.cids.cidsInts.`45832`]
     
-    inline def `45833`: typings.cids.cidsNumbers.`45833` = 45833.asInstanceOf[typings.cids.cidsNumbers.`45833`]
+    inline def `45833`: typings.cids.cidsInts.`45833` = 45833.asInstanceOf[typings.cids.cidsInts.`45833`]
     
-    inline def `45834`: typings.cids.cidsNumbers.`45834` = 45834.asInstanceOf[typings.cids.cidsNumbers.`45834`]
+    inline def `45834`: typings.cids.cidsInts.`45834` = 45834.asInstanceOf[typings.cids.cidsInts.`45834`]
     
-    inline def `45835`: typings.cids.cidsNumbers.`45835` = 45835.asInstanceOf[typings.cids.cidsNumbers.`45835`]
+    inline def `45835`: typings.cids.cidsInts.`45835` = 45835.asInstanceOf[typings.cids.cidsInts.`45835`]
     
-    inline def `45836`: typings.cids.cidsNumbers.`45836` = 45836.asInstanceOf[typings.cids.cidsNumbers.`45836`]
+    inline def `45836`: typings.cids.cidsInts.`45836` = 45836.asInstanceOf[typings.cids.cidsInts.`45836`]
     
-    inline def `45837`: typings.cids.cidsNumbers.`45837` = 45837.asInstanceOf[typings.cids.cidsNumbers.`45837`]
+    inline def `45837`: typings.cids.cidsInts.`45837` = 45837.asInstanceOf[typings.cids.cidsInts.`45837`]
     
-    inline def `45838`: typings.cids.cidsNumbers.`45838` = 45838.asInstanceOf[typings.cids.cidsNumbers.`45838`]
+    inline def `45838`: typings.cids.cidsInts.`45838` = 45838.asInstanceOf[typings.cids.cidsInts.`45838`]
     
-    inline def `45839`: typings.cids.cidsNumbers.`45839` = 45839.asInstanceOf[typings.cids.cidsNumbers.`45839`]
+    inline def `45839`: typings.cids.cidsInts.`45839` = 45839.asInstanceOf[typings.cids.cidsInts.`45839`]
     
-    inline def `45840`: typings.cids.cidsNumbers.`45840` = 45840.asInstanceOf[typings.cids.cidsNumbers.`45840`]
+    inline def `45840`: typings.cids.cidsInts.`45840` = 45840.asInstanceOf[typings.cids.cidsInts.`45840`]
     
-    inline def `45841`: typings.cids.cidsNumbers.`45841` = 45841.asInstanceOf[typings.cids.cidsNumbers.`45841`]
+    inline def `45841`: typings.cids.cidsInts.`45841` = 45841.asInstanceOf[typings.cids.cidsInts.`45841`]
     
-    inline def `45842`: typings.cids.cidsNumbers.`45842` = 45842.asInstanceOf[typings.cids.cidsNumbers.`45842`]
+    inline def `45842`: typings.cids.cidsInts.`45842` = 45842.asInstanceOf[typings.cids.cidsInts.`45842`]
     
-    inline def `45843`: typings.cids.cidsNumbers.`45843` = 45843.asInstanceOf[typings.cids.cidsNumbers.`45843`]
+    inline def `45843`: typings.cids.cidsInts.`45843` = 45843.asInstanceOf[typings.cids.cidsInts.`45843`]
     
-    inline def `45844`: typings.cids.cidsNumbers.`45844` = 45844.asInstanceOf[typings.cids.cidsNumbers.`45844`]
+    inline def `45844`: typings.cids.cidsInts.`45844` = 45844.asInstanceOf[typings.cids.cidsInts.`45844`]
     
-    inline def `45845`: typings.cids.cidsNumbers.`45845` = 45845.asInstanceOf[typings.cids.cidsNumbers.`45845`]
+    inline def `45845`: typings.cids.cidsInts.`45845` = 45845.asInstanceOf[typings.cids.cidsInts.`45845`]
     
-    inline def `45846`: typings.cids.cidsNumbers.`45846` = 45846.asInstanceOf[typings.cids.cidsNumbers.`45846`]
+    inline def `45846`: typings.cids.cidsInts.`45846` = 45846.asInstanceOf[typings.cids.cidsInts.`45846`]
     
-    inline def `45847`: typings.cids.cidsNumbers.`45847` = 45847.asInstanceOf[typings.cids.cidsNumbers.`45847`]
+    inline def `45847`: typings.cids.cidsInts.`45847` = 45847.asInstanceOf[typings.cids.cidsInts.`45847`]
     
-    inline def `45848`: typings.cids.cidsNumbers.`45848` = 45848.asInstanceOf[typings.cids.cidsNumbers.`45848`]
+    inline def `45848`: typings.cids.cidsInts.`45848` = 45848.asInstanceOf[typings.cids.cidsInts.`45848`]
     
-    inline def `45849`: typings.cids.cidsNumbers.`45849` = 45849.asInstanceOf[typings.cids.cidsNumbers.`45849`]
+    inline def `45849`: typings.cids.cidsInts.`45849` = 45849.asInstanceOf[typings.cids.cidsInts.`45849`]
     
-    inline def `45850`: typings.cids.cidsNumbers.`45850` = 45850.asInstanceOf[typings.cids.cidsNumbers.`45850`]
+    inline def `45850`: typings.cids.cidsInts.`45850` = 45850.asInstanceOf[typings.cids.cidsInts.`45850`]
     
-    inline def `45851`: typings.cids.cidsNumbers.`45851` = 45851.asInstanceOf[typings.cids.cidsNumbers.`45851`]
+    inline def `45851`: typings.cids.cidsInts.`45851` = 45851.asInstanceOf[typings.cids.cidsInts.`45851`]
     
-    inline def `45852`: typings.cids.cidsNumbers.`45852` = 45852.asInstanceOf[typings.cids.cidsNumbers.`45852`]
+    inline def `45852`: typings.cids.cidsInts.`45852` = 45852.asInstanceOf[typings.cids.cidsInts.`45852`]
     
-    inline def `45853`: typings.cids.cidsNumbers.`45853` = 45853.asInstanceOf[typings.cids.cidsNumbers.`45853`]
+    inline def `45853`: typings.cids.cidsInts.`45853` = 45853.asInstanceOf[typings.cids.cidsInts.`45853`]
     
-    inline def `45854`: typings.cids.cidsNumbers.`45854` = 45854.asInstanceOf[typings.cids.cidsNumbers.`45854`]
+    inline def `45854`: typings.cids.cidsInts.`45854` = 45854.asInstanceOf[typings.cids.cidsInts.`45854`]
     
-    inline def `45855`: typings.cids.cidsNumbers.`45855` = 45855.asInstanceOf[typings.cids.cidsNumbers.`45855`]
+    inline def `45855`: typings.cids.cidsInts.`45855` = 45855.asInstanceOf[typings.cids.cidsInts.`45855`]
     
-    inline def `45856`: typings.cids.cidsNumbers.`45856` = 45856.asInstanceOf[typings.cids.cidsNumbers.`45856`]
+    inline def `45856`: typings.cids.cidsInts.`45856` = 45856.asInstanceOf[typings.cids.cidsInts.`45856`]
     
-    inline def `45857`: typings.cids.cidsNumbers.`45857` = 45857.asInstanceOf[typings.cids.cidsNumbers.`45857`]
+    inline def `45857`: typings.cids.cidsInts.`45857` = 45857.asInstanceOf[typings.cids.cidsInts.`45857`]
     
-    inline def `45858`: typings.cids.cidsNumbers.`45858` = 45858.asInstanceOf[typings.cids.cidsNumbers.`45858`]
+    inline def `45858`: typings.cids.cidsInts.`45858` = 45858.asInstanceOf[typings.cids.cidsInts.`45858`]
     
-    inline def `45859`: typings.cids.cidsNumbers.`45859` = 45859.asInstanceOf[typings.cids.cidsNumbers.`45859`]
+    inline def `45859`: typings.cids.cidsInts.`45859` = 45859.asInstanceOf[typings.cids.cidsInts.`45859`]
     
-    inline def `45860`: typings.cids.cidsNumbers.`45860` = 45860.asInstanceOf[typings.cids.cidsNumbers.`45860`]
+    inline def `45860`: typings.cids.cidsInts.`45860` = 45860.asInstanceOf[typings.cids.cidsInts.`45860`]
     
-    inline def `45861`: typings.cids.cidsNumbers.`45861` = 45861.asInstanceOf[typings.cids.cidsNumbers.`45861`]
+    inline def `45861`: typings.cids.cidsInts.`45861` = 45861.asInstanceOf[typings.cids.cidsInts.`45861`]
     
-    inline def `45862`: typings.cids.cidsNumbers.`45862` = 45862.asInstanceOf[typings.cids.cidsNumbers.`45862`]
+    inline def `45862`: typings.cids.cidsInts.`45862` = 45862.asInstanceOf[typings.cids.cidsInts.`45862`]
     
-    inline def `45863`: typings.cids.cidsNumbers.`45863` = 45863.asInstanceOf[typings.cids.cidsNumbers.`45863`]
+    inline def `45863`: typings.cids.cidsInts.`45863` = 45863.asInstanceOf[typings.cids.cidsInts.`45863`]
     
-    inline def `45864`: typings.cids.cidsNumbers.`45864` = 45864.asInstanceOf[typings.cids.cidsNumbers.`45864`]
+    inline def `45864`: typings.cids.cidsInts.`45864` = 45864.asInstanceOf[typings.cids.cidsInts.`45864`]
     
-    inline def `45865`: typings.cids.cidsNumbers.`45865` = 45865.asInstanceOf[typings.cids.cidsNumbers.`45865`]
+    inline def `45865`: typings.cids.cidsInts.`45865` = 45865.asInstanceOf[typings.cids.cidsInts.`45865`]
     
-    inline def `45866`: typings.cids.cidsNumbers.`45866` = 45866.asInstanceOf[typings.cids.cidsNumbers.`45866`]
+    inline def `45866`: typings.cids.cidsInts.`45866` = 45866.asInstanceOf[typings.cids.cidsInts.`45866`]
     
-    inline def `45867`: typings.cids.cidsNumbers.`45867` = 45867.asInstanceOf[typings.cids.cidsNumbers.`45867`]
+    inline def `45867`: typings.cids.cidsInts.`45867` = 45867.asInstanceOf[typings.cids.cidsInts.`45867`]
     
-    inline def `45868`: typings.cids.cidsNumbers.`45868` = 45868.asInstanceOf[typings.cids.cidsNumbers.`45868`]
+    inline def `45868`: typings.cids.cidsInts.`45868` = 45868.asInstanceOf[typings.cids.cidsInts.`45868`]
     
-    inline def `45869`: typings.cids.cidsNumbers.`45869` = 45869.asInstanceOf[typings.cids.cidsNumbers.`45869`]
+    inline def `45869`: typings.cids.cidsInts.`45869` = 45869.asInstanceOf[typings.cids.cidsInts.`45869`]
     
-    inline def `45870`: typings.cids.cidsNumbers.`45870` = 45870.asInstanceOf[typings.cids.cidsNumbers.`45870`]
+    inline def `45870`: typings.cids.cidsInts.`45870` = 45870.asInstanceOf[typings.cids.cidsInts.`45870`]
     
-    inline def `45871`: typings.cids.cidsNumbers.`45871` = 45871.asInstanceOf[typings.cids.cidsNumbers.`45871`]
+    inline def `45871`: typings.cids.cidsInts.`45871` = 45871.asInstanceOf[typings.cids.cidsInts.`45871`]
     
-    inline def `45872`: typings.cids.cidsNumbers.`45872` = 45872.asInstanceOf[typings.cids.cidsNumbers.`45872`]
+    inline def `45872`: typings.cids.cidsInts.`45872` = 45872.asInstanceOf[typings.cids.cidsInts.`45872`]
     
-    inline def `45873`: typings.cids.cidsNumbers.`45873` = 45873.asInstanceOf[typings.cids.cidsNumbers.`45873`]
+    inline def `45873`: typings.cids.cidsInts.`45873` = 45873.asInstanceOf[typings.cids.cidsInts.`45873`]
     
-    inline def `45874`: typings.cids.cidsNumbers.`45874` = 45874.asInstanceOf[typings.cids.cidsNumbers.`45874`]
+    inline def `45874`: typings.cids.cidsInts.`45874` = 45874.asInstanceOf[typings.cids.cidsInts.`45874`]
     
-    inline def `45875`: typings.cids.cidsNumbers.`45875` = 45875.asInstanceOf[typings.cids.cidsNumbers.`45875`]
+    inline def `45875`: typings.cids.cidsInts.`45875` = 45875.asInstanceOf[typings.cids.cidsInts.`45875`]
     
-    inline def `45876`: typings.cids.cidsNumbers.`45876` = 45876.asInstanceOf[typings.cids.cidsNumbers.`45876`]
+    inline def `45876`: typings.cids.cidsInts.`45876` = 45876.asInstanceOf[typings.cids.cidsInts.`45876`]
     
-    inline def `45877`: typings.cids.cidsNumbers.`45877` = 45877.asInstanceOf[typings.cids.cidsNumbers.`45877`]
+    inline def `45877`: typings.cids.cidsInts.`45877` = 45877.asInstanceOf[typings.cids.cidsInts.`45877`]
     
-    inline def `45878`: typings.cids.cidsNumbers.`45878` = 45878.asInstanceOf[typings.cids.cidsNumbers.`45878`]
+    inline def `45878`: typings.cids.cidsInts.`45878` = 45878.asInstanceOf[typings.cids.cidsInts.`45878`]
     
-    inline def `45879`: typings.cids.cidsNumbers.`45879` = 45879.asInstanceOf[typings.cids.cidsNumbers.`45879`]
+    inline def `45879`: typings.cids.cidsInts.`45879` = 45879.asInstanceOf[typings.cids.cidsInts.`45879`]
     
-    inline def `45880`: typings.cids.cidsNumbers.`45880` = 45880.asInstanceOf[typings.cids.cidsNumbers.`45880`]
+    inline def `45880`: typings.cids.cidsInts.`45880` = 45880.asInstanceOf[typings.cids.cidsInts.`45880`]
     
-    inline def `45881`: typings.cids.cidsNumbers.`45881` = 45881.asInstanceOf[typings.cids.cidsNumbers.`45881`]
+    inline def `45881`: typings.cids.cidsInts.`45881` = 45881.asInstanceOf[typings.cids.cidsInts.`45881`]
     
-    inline def `45882`: typings.cids.cidsNumbers.`45882` = 45882.asInstanceOf[typings.cids.cidsNumbers.`45882`]
+    inline def `45882`: typings.cids.cidsInts.`45882` = 45882.asInstanceOf[typings.cids.cidsInts.`45882`]
     
-    inline def `45883`: typings.cids.cidsNumbers.`45883` = 45883.asInstanceOf[typings.cids.cidsNumbers.`45883`]
+    inline def `45883`: typings.cids.cidsInts.`45883` = 45883.asInstanceOf[typings.cids.cidsInts.`45883`]
     
-    inline def `45884`: typings.cids.cidsNumbers.`45884` = 45884.asInstanceOf[typings.cids.cidsNumbers.`45884`]
+    inline def `45884`: typings.cids.cidsInts.`45884` = 45884.asInstanceOf[typings.cids.cidsInts.`45884`]
     
-    inline def `45885`: typings.cids.cidsNumbers.`45885` = 45885.asInstanceOf[typings.cids.cidsNumbers.`45885`]
+    inline def `45885`: typings.cids.cidsInts.`45885` = 45885.asInstanceOf[typings.cids.cidsInts.`45885`]
     
-    inline def `45886`: typings.cids.cidsNumbers.`45886` = 45886.asInstanceOf[typings.cids.cidsNumbers.`45886`]
+    inline def `45886`: typings.cids.cidsInts.`45886` = 45886.asInstanceOf[typings.cids.cidsInts.`45886`]
     
-    inline def `45887`: typings.cids.cidsNumbers.`45887` = 45887.asInstanceOf[typings.cids.cidsNumbers.`45887`]
+    inline def `45887`: typings.cids.cidsInts.`45887` = 45887.asInstanceOf[typings.cids.cidsInts.`45887`]
     
-    inline def `45888`: typings.cids.cidsNumbers.`45888` = 45888.asInstanceOf[typings.cids.cidsNumbers.`45888`]
+    inline def `45888`: typings.cids.cidsInts.`45888` = 45888.asInstanceOf[typings.cids.cidsInts.`45888`]
     
-    inline def `45889`: typings.cids.cidsNumbers.`45889` = 45889.asInstanceOf[typings.cids.cidsNumbers.`45889`]
+    inline def `45889`: typings.cids.cidsInts.`45889` = 45889.asInstanceOf[typings.cids.cidsInts.`45889`]
     
-    inline def `45890`: typings.cids.cidsNumbers.`45890` = 45890.asInstanceOf[typings.cids.cidsNumbers.`45890`]
+    inline def `45890`: typings.cids.cidsInts.`45890` = 45890.asInstanceOf[typings.cids.cidsInts.`45890`]
     
-    inline def `45891`: typings.cids.cidsNumbers.`45891` = 45891.asInstanceOf[typings.cids.cidsNumbers.`45891`]
+    inline def `45891`: typings.cids.cidsInts.`45891` = 45891.asInstanceOf[typings.cids.cidsInts.`45891`]
     
-    inline def `45892`: typings.cids.cidsNumbers.`45892` = 45892.asInstanceOf[typings.cids.cidsNumbers.`45892`]
+    inline def `45892`: typings.cids.cidsInts.`45892` = 45892.asInstanceOf[typings.cids.cidsInts.`45892`]
     
-    inline def `45893`: typings.cids.cidsNumbers.`45893` = 45893.asInstanceOf[typings.cids.cidsNumbers.`45893`]
+    inline def `45893`: typings.cids.cidsInts.`45893` = 45893.asInstanceOf[typings.cids.cidsInts.`45893`]
     
-    inline def `45894`: typings.cids.cidsNumbers.`45894` = 45894.asInstanceOf[typings.cids.cidsNumbers.`45894`]
+    inline def `45894`: typings.cids.cidsInts.`45894` = 45894.asInstanceOf[typings.cids.cidsInts.`45894`]
     
-    inline def `45895`: typings.cids.cidsNumbers.`45895` = 45895.asInstanceOf[typings.cids.cidsNumbers.`45895`]
+    inline def `45895`: typings.cids.cidsInts.`45895` = 45895.asInstanceOf[typings.cids.cidsInts.`45895`]
     
-    inline def `45896`: typings.cids.cidsNumbers.`45896` = 45896.asInstanceOf[typings.cids.cidsNumbers.`45896`]
+    inline def `45896`: typings.cids.cidsInts.`45896` = 45896.asInstanceOf[typings.cids.cidsInts.`45896`]
     
-    inline def `45897`: typings.cids.cidsNumbers.`45897` = 45897.asInstanceOf[typings.cids.cidsNumbers.`45897`]
+    inline def `45897`: typings.cids.cidsInts.`45897` = 45897.asInstanceOf[typings.cids.cidsInts.`45897`]
     
-    inline def `45898`: typings.cids.cidsNumbers.`45898` = 45898.asInstanceOf[typings.cids.cidsNumbers.`45898`]
+    inline def `45898`: typings.cids.cidsInts.`45898` = 45898.asInstanceOf[typings.cids.cidsInts.`45898`]
     
-    inline def `45899`: typings.cids.cidsNumbers.`45899` = 45899.asInstanceOf[typings.cids.cidsNumbers.`45899`]
+    inline def `45899`: typings.cids.cidsInts.`45899` = 45899.asInstanceOf[typings.cids.cidsInts.`45899`]
     
-    inline def `45900`: typings.cids.cidsNumbers.`45900` = 45900.asInstanceOf[typings.cids.cidsNumbers.`45900`]
+    inline def `45900`: typings.cids.cidsInts.`45900` = 45900.asInstanceOf[typings.cids.cidsInts.`45900`]
     
-    inline def `45901`: typings.cids.cidsNumbers.`45901` = 45901.asInstanceOf[typings.cids.cidsNumbers.`45901`]
+    inline def `45901`: typings.cids.cidsInts.`45901` = 45901.asInstanceOf[typings.cids.cidsInts.`45901`]
     
-    inline def `45902`: typings.cids.cidsNumbers.`45902` = 45902.asInstanceOf[typings.cids.cidsNumbers.`45902`]
+    inline def `45902`: typings.cids.cidsInts.`45902` = 45902.asInstanceOf[typings.cids.cidsInts.`45902`]
     
-    inline def `45903`: typings.cids.cidsNumbers.`45903` = 45903.asInstanceOf[typings.cids.cidsNumbers.`45903`]
+    inline def `45903`: typings.cids.cidsInts.`45903` = 45903.asInstanceOf[typings.cids.cidsInts.`45903`]
     
-    inline def `45904`: typings.cids.cidsNumbers.`45904` = 45904.asInstanceOf[typings.cids.cidsNumbers.`45904`]
+    inline def `45904`: typings.cids.cidsInts.`45904` = 45904.asInstanceOf[typings.cids.cidsInts.`45904`]
     
-    inline def `45905`: typings.cids.cidsNumbers.`45905` = 45905.asInstanceOf[typings.cids.cidsNumbers.`45905`]
+    inline def `45905`: typings.cids.cidsInts.`45905` = 45905.asInstanceOf[typings.cids.cidsInts.`45905`]
     
-    inline def `45906`: typings.cids.cidsNumbers.`45906` = 45906.asInstanceOf[typings.cids.cidsNumbers.`45906`]
+    inline def `45906`: typings.cids.cidsInts.`45906` = 45906.asInstanceOf[typings.cids.cidsInts.`45906`]
     
-    inline def `45907`: typings.cids.cidsNumbers.`45907` = 45907.asInstanceOf[typings.cids.cidsNumbers.`45907`]
+    inline def `45907`: typings.cids.cidsInts.`45907` = 45907.asInstanceOf[typings.cids.cidsInts.`45907`]
     
-    inline def `45908`: typings.cids.cidsNumbers.`45908` = 45908.asInstanceOf[typings.cids.cidsNumbers.`45908`]
+    inline def `45908`: typings.cids.cidsInts.`45908` = 45908.asInstanceOf[typings.cids.cidsInts.`45908`]
     
-    inline def `45909`: typings.cids.cidsNumbers.`45909` = 45909.asInstanceOf[typings.cids.cidsNumbers.`45909`]
+    inline def `45909`: typings.cids.cidsInts.`45909` = 45909.asInstanceOf[typings.cids.cidsInts.`45909`]
     
-    inline def `45910`: typings.cids.cidsNumbers.`45910` = 45910.asInstanceOf[typings.cids.cidsNumbers.`45910`]
+    inline def `45910`: typings.cids.cidsInts.`45910` = 45910.asInstanceOf[typings.cids.cidsInts.`45910`]
     
-    inline def `45911`: typings.cids.cidsNumbers.`45911` = 45911.asInstanceOf[typings.cids.cidsNumbers.`45911`]
+    inline def `45911`: typings.cids.cidsInts.`45911` = 45911.asInstanceOf[typings.cids.cidsInts.`45911`]
     
-    inline def `45912`: typings.cids.cidsNumbers.`45912` = 45912.asInstanceOf[typings.cids.cidsNumbers.`45912`]
+    inline def `45912`: typings.cids.cidsInts.`45912` = 45912.asInstanceOf[typings.cids.cidsInts.`45912`]
     
-    inline def `45913`: typings.cids.cidsNumbers.`45913` = 45913.asInstanceOf[typings.cids.cidsNumbers.`45913`]
+    inline def `45913`: typings.cids.cidsInts.`45913` = 45913.asInstanceOf[typings.cids.cidsInts.`45913`]
     
-    inline def `45914`: typings.cids.cidsNumbers.`45914` = 45914.asInstanceOf[typings.cids.cidsNumbers.`45914`]
+    inline def `45914`: typings.cids.cidsInts.`45914` = 45914.asInstanceOf[typings.cids.cidsInts.`45914`]
     
-    inline def `45915`: typings.cids.cidsNumbers.`45915` = 45915.asInstanceOf[typings.cids.cidsNumbers.`45915`]
+    inline def `45915`: typings.cids.cidsInts.`45915` = 45915.asInstanceOf[typings.cids.cidsInts.`45915`]
     
-    inline def `45916`: typings.cids.cidsNumbers.`45916` = 45916.asInstanceOf[typings.cids.cidsNumbers.`45916`]
+    inline def `45916`: typings.cids.cidsInts.`45916` = 45916.asInstanceOf[typings.cids.cidsInts.`45916`]
     
-    inline def `45917`: typings.cids.cidsNumbers.`45917` = 45917.asInstanceOf[typings.cids.cidsNumbers.`45917`]
+    inline def `45917`: typings.cids.cidsInts.`45917` = 45917.asInstanceOf[typings.cids.cidsInts.`45917`]
     
-    inline def `45918`: typings.cids.cidsNumbers.`45918` = 45918.asInstanceOf[typings.cids.cidsNumbers.`45918`]
+    inline def `45918`: typings.cids.cidsInts.`45918` = 45918.asInstanceOf[typings.cids.cidsInts.`45918`]
     
-    inline def `45919`: typings.cids.cidsNumbers.`45919` = 45919.asInstanceOf[typings.cids.cidsNumbers.`45919`]
+    inline def `45919`: typings.cids.cidsInts.`45919` = 45919.asInstanceOf[typings.cids.cidsInts.`45919`]
     
-    inline def `45920`: typings.cids.cidsNumbers.`45920` = 45920.asInstanceOf[typings.cids.cidsNumbers.`45920`]
+    inline def `45920`: typings.cids.cidsInts.`45920` = 45920.asInstanceOf[typings.cids.cidsInts.`45920`]
     
-    inline def `45921`: typings.cids.cidsNumbers.`45921` = 45921.asInstanceOf[typings.cids.cidsNumbers.`45921`]
+    inline def `45921`: typings.cids.cidsInts.`45921` = 45921.asInstanceOf[typings.cids.cidsInts.`45921`]
     
-    inline def `45922`: typings.cids.cidsNumbers.`45922` = 45922.asInstanceOf[typings.cids.cidsNumbers.`45922`]
+    inline def `45922`: typings.cids.cidsInts.`45922` = 45922.asInstanceOf[typings.cids.cidsInts.`45922`]
     
-    inline def `45923`: typings.cids.cidsNumbers.`45923` = 45923.asInstanceOf[typings.cids.cidsNumbers.`45923`]
+    inline def `45923`: typings.cids.cidsInts.`45923` = 45923.asInstanceOf[typings.cids.cidsInts.`45923`]
     
-    inline def `45924`: typings.cids.cidsNumbers.`45924` = 45924.asInstanceOf[typings.cids.cidsNumbers.`45924`]
+    inline def `45924`: typings.cids.cidsInts.`45924` = 45924.asInstanceOf[typings.cids.cidsInts.`45924`]
     
-    inline def `45925`: typings.cids.cidsNumbers.`45925` = 45925.asInstanceOf[typings.cids.cidsNumbers.`45925`]
+    inline def `45925`: typings.cids.cidsInts.`45925` = 45925.asInstanceOf[typings.cids.cidsInts.`45925`]
     
-    inline def `45926`: typings.cids.cidsNumbers.`45926` = 45926.asInstanceOf[typings.cids.cidsNumbers.`45926`]
+    inline def `45926`: typings.cids.cidsInts.`45926` = 45926.asInstanceOf[typings.cids.cidsInts.`45926`]
     
-    inline def `45927`: typings.cids.cidsNumbers.`45927` = 45927.asInstanceOf[typings.cids.cidsNumbers.`45927`]
+    inline def `45927`: typings.cids.cidsInts.`45927` = 45927.asInstanceOf[typings.cids.cidsInts.`45927`]
     
-    inline def `45928`: typings.cids.cidsNumbers.`45928` = 45928.asInstanceOf[typings.cids.cidsNumbers.`45928`]
+    inline def `45928`: typings.cids.cidsInts.`45928` = 45928.asInstanceOf[typings.cids.cidsInts.`45928`]
     
-    inline def `45929`: typings.cids.cidsNumbers.`45929` = 45929.asInstanceOf[typings.cids.cidsNumbers.`45929`]
+    inline def `45929`: typings.cids.cidsInts.`45929` = 45929.asInstanceOf[typings.cids.cidsInts.`45929`]
     
-    inline def `45930`: typings.cids.cidsNumbers.`45930` = 45930.asInstanceOf[typings.cids.cidsNumbers.`45930`]
+    inline def `45930`: typings.cids.cidsInts.`45930` = 45930.asInstanceOf[typings.cids.cidsInts.`45930`]
     
-    inline def `45931`: typings.cids.cidsNumbers.`45931` = 45931.asInstanceOf[typings.cids.cidsNumbers.`45931`]
+    inline def `45931`: typings.cids.cidsInts.`45931` = 45931.asInstanceOf[typings.cids.cidsInts.`45931`]
     
-    inline def `45932`: typings.cids.cidsNumbers.`45932` = 45932.asInstanceOf[typings.cids.cidsNumbers.`45932`]
+    inline def `45932`: typings.cids.cidsInts.`45932` = 45932.asInstanceOf[typings.cids.cidsInts.`45932`]
     
-    inline def `45933`: typings.cids.cidsNumbers.`45933` = 45933.asInstanceOf[typings.cids.cidsNumbers.`45933`]
+    inline def `45933`: typings.cids.cidsInts.`45933` = 45933.asInstanceOf[typings.cids.cidsInts.`45933`]
     
-    inline def `45934`: typings.cids.cidsNumbers.`45934` = 45934.asInstanceOf[typings.cids.cidsNumbers.`45934`]
+    inline def `45934`: typings.cids.cidsInts.`45934` = 45934.asInstanceOf[typings.cids.cidsInts.`45934`]
     
-    inline def `45935`: typings.cids.cidsNumbers.`45935` = 45935.asInstanceOf[typings.cids.cidsNumbers.`45935`]
+    inline def `45935`: typings.cids.cidsInts.`45935` = 45935.asInstanceOf[typings.cids.cidsInts.`45935`]
     
-    inline def `45936`: typings.cids.cidsNumbers.`45936` = 45936.asInstanceOf[typings.cids.cidsNumbers.`45936`]
+    inline def `45936`: typings.cids.cidsInts.`45936` = 45936.asInstanceOf[typings.cids.cidsInts.`45936`]
     
-    inline def `45937`: typings.cids.cidsNumbers.`45937` = 45937.asInstanceOf[typings.cids.cidsNumbers.`45937`]
+    inline def `45937`: typings.cids.cidsInts.`45937` = 45937.asInstanceOf[typings.cids.cidsInts.`45937`]
     
-    inline def `45938`: typings.cids.cidsNumbers.`45938` = 45938.asInstanceOf[typings.cids.cidsNumbers.`45938`]
+    inline def `45938`: typings.cids.cidsInts.`45938` = 45938.asInstanceOf[typings.cids.cidsInts.`45938`]
     
-    inline def `45939`: typings.cids.cidsNumbers.`45939` = 45939.asInstanceOf[typings.cids.cidsNumbers.`45939`]
+    inline def `45939`: typings.cids.cidsInts.`45939` = 45939.asInstanceOf[typings.cids.cidsInts.`45939`]
     
-    inline def `45940`: typings.cids.cidsNumbers.`45940` = 45940.asInstanceOf[typings.cids.cidsNumbers.`45940`]
+    inline def `45940`: typings.cids.cidsInts.`45940` = 45940.asInstanceOf[typings.cids.cidsInts.`45940`]
     
-    inline def `45941`: typings.cids.cidsNumbers.`45941` = 45941.asInstanceOf[typings.cids.cidsNumbers.`45941`]
+    inline def `45941`: typings.cids.cidsInts.`45941` = 45941.asInstanceOf[typings.cids.cidsInts.`45941`]
     
-    inline def `45942`: typings.cids.cidsNumbers.`45942` = 45942.asInstanceOf[typings.cids.cidsNumbers.`45942`]
+    inline def `45942`: typings.cids.cidsInts.`45942` = 45942.asInstanceOf[typings.cids.cidsInts.`45942`]
     
-    inline def `45943`: typings.cids.cidsNumbers.`45943` = 45943.asInstanceOf[typings.cids.cidsNumbers.`45943`]
+    inline def `45943`: typings.cids.cidsInts.`45943` = 45943.asInstanceOf[typings.cids.cidsInts.`45943`]
     
-    inline def `45944`: typings.cids.cidsNumbers.`45944` = 45944.asInstanceOf[typings.cids.cidsNumbers.`45944`]
+    inline def `45944`: typings.cids.cidsInts.`45944` = 45944.asInstanceOf[typings.cids.cidsInts.`45944`]
     
-    inline def `45945`: typings.cids.cidsNumbers.`45945` = 45945.asInstanceOf[typings.cids.cidsNumbers.`45945`]
+    inline def `45945`: typings.cids.cidsInts.`45945` = 45945.asInstanceOf[typings.cids.cidsInts.`45945`]
     
-    inline def `45946`: typings.cids.cidsNumbers.`45946` = 45946.asInstanceOf[typings.cids.cidsNumbers.`45946`]
+    inline def `45946`: typings.cids.cidsInts.`45946` = 45946.asInstanceOf[typings.cids.cidsInts.`45946`]
     
-    inline def `45947`: typings.cids.cidsNumbers.`45947` = 45947.asInstanceOf[typings.cids.cidsNumbers.`45947`]
+    inline def `45947`: typings.cids.cidsInts.`45947` = 45947.asInstanceOf[typings.cids.cidsInts.`45947`]
     
-    inline def `45948`: typings.cids.cidsNumbers.`45948` = 45948.asInstanceOf[typings.cids.cidsNumbers.`45948`]
+    inline def `45948`: typings.cids.cidsInts.`45948` = 45948.asInstanceOf[typings.cids.cidsInts.`45948`]
     
-    inline def `45949`: typings.cids.cidsNumbers.`45949` = 45949.asInstanceOf[typings.cids.cidsNumbers.`45949`]
+    inline def `45949`: typings.cids.cidsInts.`45949` = 45949.asInstanceOf[typings.cids.cidsInts.`45949`]
     
-    inline def `45950`: typings.cids.cidsNumbers.`45950` = 45950.asInstanceOf[typings.cids.cidsNumbers.`45950`]
+    inline def `45950`: typings.cids.cidsInts.`45950` = 45950.asInstanceOf[typings.cids.cidsInts.`45950`]
     
-    inline def `45951`: typings.cids.cidsNumbers.`45951` = 45951.asInstanceOf[typings.cids.cidsNumbers.`45951`]
+    inline def `45951`: typings.cids.cidsInts.`45951` = 45951.asInstanceOf[typings.cids.cidsInts.`45951`]
     
-    inline def `45952`: typings.cids.cidsNumbers.`45952` = 45952.asInstanceOf[typings.cids.cidsNumbers.`45952`]
+    inline def `45952`: typings.cids.cidsInts.`45952` = 45952.asInstanceOf[typings.cids.cidsInts.`45952`]
     
-    inline def `45953`: typings.cids.cidsNumbers.`45953` = 45953.asInstanceOf[typings.cids.cidsNumbers.`45953`]
+    inline def `45953`: typings.cids.cidsInts.`45953` = 45953.asInstanceOf[typings.cids.cidsInts.`45953`]
     
-    inline def `45954`: typings.cids.cidsNumbers.`45954` = 45954.asInstanceOf[typings.cids.cidsNumbers.`45954`]
+    inline def `45954`: typings.cids.cidsInts.`45954` = 45954.asInstanceOf[typings.cids.cidsInts.`45954`]
     
-    inline def `45955`: typings.cids.cidsNumbers.`45955` = 45955.asInstanceOf[typings.cids.cidsNumbers.`45955`]
+    inline def `45955`: typings.cids.cidsInts.`45955` = 45955.asInstanceOf[typings.cids.cidsInts.`45955`]
     
-    inline def `45956`: typings.cids.cidsNumbers.`45956` = 45956.asInstanceOf[typings.cids.cidsNumbers.`45956`]
+    inline def `45956`: typings.cids.cidsInts.`45956` = 45956.asInstanceOf[typings.cids.cidsInts.`45956`]
     
-    inline def `45957`: typings.cids.cidsNumbers.`45957` = 45957.asInstanceOf[typings.cids.cidsNumbers.`45957`]
+    inline def `45957`: typings.cids.cidsInts.`45957` = 45957.asInstanceOf[typings.cids.cidsInts.`45957`]
     
-    inline def `45958`: typings.cids.cidsNumbers.`45958` = 45958.asInstanceOf[typings.cids.cidsNumbers.`45958`]
+    inline def `45958`: typings.cids.cidsInts.`45958` = 45958.asInstanceOf[typings.cids.cidsInts.`45958`]
     
-    inline def `45959`: typings.cids.cidsNumbers.`45959` = 45959.asInstanceOf[typings.cids.cidsNumbers.`45959`]
+    inline def `45959`: typings.cids.cidsInts.`45959` = 45959.asInstanceOf[typings.cids.cidsInts.`45959`]
     
-    inline def `45960`: typings.cids.cidsNumbers.`45960` = 45960.asInstanceOf[typings.cids.cidsNumbers.`45960`]
+    inline def `45960`: typings.cids.cidsInts.`45960` = 45960.asInstanceOf[typings.cids.cidsInts.`45960`]
     
-    inline def `45961`: typings.cids.cidsNumbers.`45961` = 45961.asInstanceOf[typings.cids.cidsNumbers.`45961`]
+    inline def `45961`: typings.cids.cidsInts.`45961` = 45961.asInstanceOf[typings.cids.cidsInts.`45961`]
     
-    inline def `45962`: typings.cids.cidsNumbers.`45962` = 45962.asInstanceOf[typings.cids.cidsNumbers.`45962`]
+    inline def `45962`: typings.cids.cidsInts.`45962` = 45962.asInstanceOf[typings.cids.cidsInts.`45962`]
     
-    inline def `45963`: typings.cids.cidsNumbers.`45963` = 45963.asInstanceOf[typings.cids.cidsNumbers.`45963`]
+    inline def `45963`: typings.cids.cidsInts.`45963` = 45963.asInstanceOf[typings.cids.cidsInts.`45963`]
     
-    inline def `45964`: typings.cids.cidsNumbers.`45964` = 45964.asInstanceOf[typings.cids.cidsNumbers.`45964`]
+    inline def `45964`: typings.cids.cidsInts.`45964` = 45964.asInstanceOf[typings.cids.cidsInts.`45964`]
     
-    inline def `45965`: typings.cids.cidsNumbers.`45965` = 45965.asInstanceOf[typings.cids.cidsNumbers.`45965`]
+    inline def `45965`: typings.cids.cidsInts.`45965` = 45965.asInstanceOf[typings.cids.cidsInts.`45965`]
     
-    inline def `45966`: typings.cids.cidsNumbers.`45966` = 45966.asInstanceOf[typings.cids.cidsNumbers.`45966`]
+    inline def `45966`: typings.cids.cidsInts.`45966` = 45966.asInstanceOf[typings.cids.cidsInts.`45966`]
     
-    inline def `45967`: typings.cids.cidsNumbers.`45967` = 45967.asInstanceOf[typings.cids.cidsNumbers.`45967`]
+    inline def `45967`: typings.cids.cidsInts.`45967` = 45967.asInstanceOf[typings.cids.cidsInts.`45967`]
     
-    inline def `45968`: typings.cids.cidsNumbers.`45968` = 45968.asInstanceOf[typings.cids.cidsNumbers.`45968`]
+    inline def `45968`: typings.cids.cidsInts.`45968` = 45968.asInstanceOf[typings.cids.cidsInts.`45968`]
     
-    inline def `45969`: typings.cids.cidsNumbers.`45969` = 45969.asInstanceOf[typings.cids.cidsNumbers.`45969`]
+    inline def `45969`: typings.cids.cidsInts.`45969` = 45969.asInstanceOf[typings.cids.cidsInts.`45969`]
     
-    inline def `45970`: typings.cids.cidsNumbers.`45970` = 45970.asInstanceOf[typings.cids.cidsNumbers.`45970`]
+    inline def `45970`: typings.cids.cidsInts.`45970` = 45970.asInstanceOf[typings.cids.cidsInts.`45970`]
     
-    inline def `45971`: typings.cids.cidsNumbers.`45971` = 45971.asInstanceOf[typings.cids.cidsNumbers.`45971`]
+    inline def `45971`: typings.cids.cidsInts.`45971` = 45971.asInstanceOf[typings.cids.cidsInts.`45971`]
     
-    inline def `45972`: typings.cids.cidsNumbers.`45972` = 45972.asInstanceOf[typings.cids.cidsNumbers.`45972`]
+    inline def `45972`: typings.cids.cidsInts.`45972` = 45972.asInstanceOf[typings.cids.cidsInts.`45972`]
     
-    inline def `45973`: typings.cids.cidsNumbers.`45973` = 45973.asInstanceOf[typings.cids.cidsNumbers.`45973`]
+    inline def `45973`: typings.cids.cidsInts.`45973` = 45973.asInstanceOf[typings.cids.cidsInts.`45973`]
     
-    inline def `45974`: typings.cids.cidsNumbers.`45974` = 45974.asInstanceOf[typings.cids.cidsNumbers.`45974`]
+    inline def `45974`: typings.cids.cidsInts.`45974` = 45974.asInstanceOf[typings.cids.cidsInts.`45974`]
     
-    inline def `45975`: typings.cids.cidsNumbers.`45975` = 45975.asInstanceOf[typings.cids.cidsNumbers.`45975`]
+    inline def `45975`: typings.cids.cidsInts.`45975` = 45975.asInstanceOf[typings.cids.cidsInts.`45975`]
     
-    inline def `45976`: typings.cids.cidsNumbers.`45976` = 45976.asInstanceOf[typings.cids.cidsNumbers.`45976`]
+    inline def `45976`: typings.cids.cidsInts.`45976` = 45976.asInstanceOf[typings.cids.cidsInts.`45976`]
     
-    inline def `45977`: typings.cids.cidsNumbers.`45977` = 45977.asInstanceOf[typings.cids.cidsNumbers.`45977`]
+    inline def `45977`: typings.cids.cidsInts.`45977` = 45977.asInstanceOf[typings.cids.cidsInts.`45977`]
     
-    inline def `45978`: typings.cids.cidsNumbers.`45978` = 45978.asInstanceOf[typings.cids.cidsNumbers.`45978`]
+    inline def `45978`: typings.cids.cidsInts.`45978` = 45978.asInstanceOf[typings.cids.cidsInts.`45978`]
     
-    inline def `45979`: typings.cids.cidsNumbers.`45979` = 45979.asInstanceOf[typings.cids.cidsNumbers.`45979`]
+    inline def `45979`: typings.cids.cidsInts.`45979` = 45979.asInstanceOf[typings.cids.cidsInts.`45979`]
     
-    inline def `45980`: typings.cids.cidsNumbers.`45980` = 45980.asInstanceOf[typings.cids.cidsNumbers.`45980`]
+    inline def `45980`: typings.cids.cidsInts.`45980` = 45980.asInstanceOf[typings.cids.cidsInts.`45980`]
     
-    inline def `45981`: typings.cids.cidsNumbers.`45981` = 45981.asInstanceOf[typings.cids.cidsNumbers.`45981`]
+    inline def `45981`: typings.cids.cidsInts.`45981` = 45981.asInstanceOf[typings.cids.cidsInts.`45981`]
     
-    inline def `45982`: typings.cids.cidsNumbers.`45982` = 45982.asInstanceOf[typings.cids.cidsNumbers.`45982`]
+    inline def `45982`: typings.cids.cidsInts.`45982` = 45982.asInstanceOf[typings.cids.cidsInts.`45982`]
     
-    inline def `45983`: typings.cids.cidsNumbers.`45983` = 45983.asInstanceOf[typings.cids.cidsNumbers.`45983`]
+    inline def `45983`: typings.cids.cidsInts.`45983` = 45983.asInstanceOf[typings.cids.cidsInts.`45983`]
     
-    inline def `45984`: typings.cids.cidsNumbers.`45984` = 45984.asInstanceOf[typings.cids.cidsNumbers.`45984`]
+    inline def `45984`: typings.cids.cidsInts.`45984` = 45984.asInstanceOf[typings.cids.cidsInts.`45984`]
     
-    inline def `45985`: typings.cids.cidsNumbers.`45985` = 45985.asInstanceOf[typings.cids.cidsNumbers.`45985`]
+    inline def `45985`: typings.cids.cidsInts.`45985` = 45985.asInstanceOf[typings.cids.cidsInts.`45985`]
     
-    inline def `45986`: typings.cids.cidsNumbers.`45986` = 45986.asInstanceOf[typings.cids.cidsNumbers.`45986`]
+    inline def `45986`: typings.cids.cidsInts.`45986` = 45986.asInstanceOf[typings.cids.cidsInts.`45986`]
     
-    inline def `45987`: typings.cids.cidsNumbers.`45987` = 45987.asInstanceOf[typings.cids.cidsNumbers.`45987`]
+    inline def `45987`: typings.cids.cidsInts.`45987` = 45987.asInstanceOf[typings.cids.cidsInts.`45987`]
     
-    inline def `45988`: typings.cids.cidsNumbers.`45988` = 45988.asInstanceOf[typings.cids.cidsNumbers.`45988`]
+    inline def `45988`: typings.cids.cidsInts.`45988` = 45988.asInstanceOf[typings.cids.cidsInts.`45988`]
     
-    inline def `45989`: typings.cids.cidsNumbers.`45989` = 45989.asInstanceOf[typings.cids.cidsNumbers.`45989`]
+    inline def `45989`: typings.cids.cidsInts.`45989` = 45989.asInstanceOf[typings.cids.cidsInts.`45989`]
     
-    inline def `45990`: typings.cids.cidsNumbers.`45990` = 45990.asInstanceOf[typings.cids.cidsNumbers.`45990`]
+    inline def `45990`: typings.cids.cidsInts.`45990` = 45990.asInstanceOf[typings.cids.cidsInts.`45990`]
     
-    inline def `45991`: typings.cids.cidsNumbers.`45991` = 45991.asInstanceOf[typings.cids.cidsNumbers.`45991`]
+    inline def `45991`: typings.cids.cidsInts.`45991` = 45991.asInstanceOf[typings.cids.cidsInts.`45991`]
     
-    inline def `45992`: typings.cids.cidsNumbers.`45992` = 45992.asInstanceOf[typings.cids.cidsNumbers.`45992`]
+    inline def `45992`: typings.cids.cidsInts.`45992` = 45992.asInstanceOf[typings.cids.cidsInts.`45992`]
     
-    inline def `45993`: typings.cids.cidsNumbers.`45993` = 45993.asInstanceOf[typings.cids.cidsNumbers.`45993`]
+    inline def `45993`: typings.cids.cidsInts.`45993` = 45993.asInstanceOf[typings.cids.cidsInts.`45993`]
     
-    inline def `45994`: typings.cids.cidsNumbers.`45994` = 45994.asInstanceOf[typings.cids.cidsNumbers.`45994`]
+    inline def `45994`: typings.cids.cidsInts.`45994` = 45994.asInstanceOf[typings.cids.cidsInts.`45994`]
     
-    inline def `45995`: typings.cids.cidsNumbers.`45995` = 45995.asInstanceOf[typings.cids.cidsNumbers.`45995`]
+    inline def `45995`: typings.cids.cidsInts.`45995` = 45995.asInstanceOf[typings.cids.cidsInts.`45995`]
     
-    inline def `45996`: typings.cids.cidsNumbers.`45996` = 45996.asInstanceOf[typings.cids.cidsNumbers.`45996`]
+    inline def `45996`: typings.cids.cidsInts.`45996` = 45996.asInstanceOf[typings.cids.cidsInts.`45996`]
     
-    inline def `45997`: typings.cids.cidsNumbers.`45997` = 45997.asInstanceOf[typings.cids.cidsNumbers.`45997`]
+    inline def `45997`: typings.cids.cidsInts.`45997` = 45997.asInstanceOf[typings.cids.cidsInts.`45997`]
     
-    inline def `45998`: typings.cids.cidsNumbers.`45998` = 45998.asInstanceOf[typings.cids.cidsNumbers.`45998`]
+    inline def `45998`: typings.cids.cidsInts.`45998` = 45998.asInstanceOf[typings.cids.cidsInts.`45998`]
     
-    inline def `45999`: typings.cids.cidsNumbers.`45999` = 45999.asInstanceOf[typings.cids.cidsNumbers.`45999`]
+    inline def `45999`: typings.cids.cidsInts.`45999` = 45999.asInstanceOf[typings.cids.cidsInts.`45999`]
     
-    inline def `460`: typings.cids.cidsNumbers.`460` = 460.asInstanceOf[typings.cids.cidsNumbers.`460`]
+    inline def `460`: typings.cids.cidsInts.`460` = 460.asInstanceOf[typings.cids.cidsInts.`460`]
     
-    inline def `46000`: typings.cids.cidsNumbers.`46000` = 46000.asInstanceOf[typings.cids.cidsNumbers.`46000`]
+    inline def `46000`: typings.cids.cidsInts.`46000` = 46000.asInstanceOf[typings.cids.cidsInts.`46000`]
     
-    inline def `46001`: typings.cids.cidsNumbers.`46001` = 46001.asInstanceOf[typings.cids.cidsNumbers.`46001`]
+    inline def `46001`: typings.cids.cidsInts.`46001` = 46001.asInstanceOf[typings.cids.cidsInts.`46001`]
     
-    inline def `46002`: typings.cids.cidsNumbers.`46002` = 46002.asInstanceOf[typings.cids.cidsNumbers.`46002`]
+    inline def `46002`: typings.cids.cidsInts.`46002` = 46002.asInstanceOf[typings.cids.cidsInts.`46002`]
     
-    inline def `46003`: typings.cids.cidsNumbers.`46003` = 46003.asInstanceOf[typings.cids.cidsNumbers.`46003`]
+    inline def `46003`: typings.cids.cidsInts.`46003` = 46003.asInstanceOf[typings.cids.cidsInts.`46003`]
     
-    inline def `46004`: typings.cids.cidsNumbers.`46004` = 46004.asInstanceOf[typings.cids.cidsNumbers.`46004`]
+    inline def `46004`: typings.cids.cidsInts.`46004` = 46004.asInstanceOf[typings.cids.cidsInts.`46004`]
     
-    inline def `46005`: typings.cids.cidsNumbers.`46005` = 46005.asInstanceOf[typings.cids.cidsNumbers.`46005`]
+    inline def `46005`: typings.cids.cidsInts.`46005` = 46005.asInstanceOf[typings.cids.cidsInts.`46005`]
     
-    inline def `46006`: typings.cids.cidsNumbers.`46006` = 46006.asInstanceOf[typings.cids.cidsNumbers.`46006`]
+    inline def `46006`: typings.cids.cidsInts.`46006` = 46006.asInstanceOf[typings.cids.cidsInts.`46006`]
     
-    inline def `46007`: typings.cids.cidsNumbers.`46007` = 46007.asInstanceOf[typings.cids.cidsNumbers.`46007`]
+    inline def `46007`: typings.cids.cidsInts.`46007` = 46007.asInstanceOf[typings.cids.cidsInts.`46007`]
     
-    inline def `46008`: typings.cids.cidsNumbers.`46008` = 46008.asInstanceOf[typings.cids.cidsNumbers.`46008`]
+    inline def `46008`: typings.cids.cidsInts.`46008` = 46008.asInstanceOf[typings.cids.cidsInts.`46008`]
     
-    inline def `46009`: typings.cids.cidsNumbers.`46009` = 46009.asInstanceOf[typings.cids.cidsNumbers.`46009`]
+    inline def `46009`: typings.cids.cidsInts.`46009` = 46009.asInstanceOf[typings.cids.cidsInts.`46009`]
     
-    inline def `46010`: typings.cids.cidsNumbers.`46010` = 46010.asInstanceOf[typings.cids.cidsNumbers.`46010`]
+    inline def `46010`: typings.cids.cidsInts.`46010` = 46010.asInstanceOf[typings.cids.cidsInts.`46010`]
     
-    inline def `46011`: typings.cids.cidsNumbers.`46011` = 46011.asInstanceOf[typings.cids.cidsNumbers.`46011`]
+    inline def `46011`: typings.cids.cidsInts.`46011` = 46011.asInstanceOf[typings.cids.cidsInts.`46011`]
     
-    inline def `46012`: typings.cids.cidsNumbers.`46012` = 46012.asInstanceOf[typings.cids.cidsNumbers.`46012`]
+    inline def `46012`: typings.cids.cidsInts.`46012` = 46012.asInstanceOf[typings.cids.cidsInts.`46012`]
     
-    inline def `46013`: typings.cids.cidsNumbers.`46013` = 46013.asInstanceOf[typings.cids.cidsNumbers.`46013`]
+    inline def `46013`: typings.cids.cidsInts.`46013` = 46013.asInstanceOf[typings.cids.cidsInts.`46013`]
     
-    inline def `46014`: typings.cids.cidsNumbers.`46014` = 46014.asInstanceOf[typings.cids.cidsNumbers.`46014`]
+    inline def `46014`: typings.cids.cidsInts.`46014` = 46014.asInstanceOf[typings.cids.cidsInts.`46014`]
     
-    inline def `46015`: typings.cids.cidsNumbers.`46015` = 46015.asInstanceOf[typings.cids.cidsNumbers.`46015`]
+    inline def `46015`: typings.cids.cidsInts.`46015` = 46015.asInstanceOf[typings.cids.cidsInts.`46015`]
     
-    inline def `46016`: typings.cids.cidsNumbers.`46016` = 46016.asInstanceOf[typings.cids.cidsNumbers.`46016`]
+    inline def `46016`: typings.cids.cidsInts.`46016` = 46016.asInstanceOf[typings.cids.cidsInts.`46016`]
     
-    inline def `46017`: typings.cids.cidsNumbers.`46017` = 46017.asInstanceOf[typings.cids.cidsNumbers.`46017`]
+    inline def `46017`: typings.cids.cidsInts.`46017` = 46017.asInstanceOf[typings.cids.cidsInts.`46017`]
     
-    inline def `46018`: typings.cids.cidsNumbers.`46018` = 46018.asInstanceOf[typings.cids.cidsNumbers.`46018`]
+    inline def `46018`: typings.cids.cidsInts.`46018` = 46018.asInstanceOf[typings.cids.cidsInts.`46018`]
     
-    inline def `46019`: typings.cids.cidsNumbers.`46019` = 46019.asInstanceOf[typings.cids.cidsNumbers.`46019`]
+    inline def `46019`: typings.cids.cidsInts.`46019` = 46019.asInstanceOf[typings.cids.cidsInts.`46019`]
     
-    inline def `46020`: typings.cids.cidsNumbers.`46020` = 46020.asInstanceOf[typings.cids.cidsNumbers.`46020`]
+    inline def `46020`: typings.cids.cidsInts.`46020` = 46020.asInstanceOf[typings.cids.cidsInts.`46020`]
     
-    inline def `46021`: typings.cids.cidsNumbers.`46021` = 46021.asInstanceOf[typings.cids.cidsNumbers.`46021`]
+    inline def `46021`: typings.cids.cidsInts.`46021` = 46021.asInstanceOf[typings.cids.cidsInts.`46021`]
     
-    inline def `46022`: typings.cids.cidsNumbers.`46022` = 46022.asInstanceOf[typings.cids.cidsNumbers.`46022`]
+    inline def `46022`: typings.cids.cidsInts.`46022` = 46022.asInstanceOf[typings.cids.cidsInts.`46022`]
     
-    inline def `46023`: typings.cids.cidsNumbers.`46023` = 46023.asInstanceOf[typings.cids.cidsNumbers.`46023`]
+    inline def `46023`: typings.cids.cidsInts.`46023` = 46023.asInstanceOf[typings.cids.cidsInts.`46023`]
     
-    inline def `46024`: typings.cids.cidsNumbers.`46024` = 46024.asInstanceOf[typings.cids.cidsNumbers.`46024`]
+    inline def `46024`: typings.cids.cidsInts.`46024` = 46024.asInstanceOf[typings.cids.cidsInts.`46024`]
     
-    inline def `46025`: typings.cids.cidsNumbers.`46025` = 46025.asInstanceOf[typings.cids.cidsNumbers.`46025`]
+    inline def `46025`: typings.cids.cidsInts.`46025` = 46025.asInstanceOf[typings.cids.cidsInts.`46025`]
     
-    inline def `46026`: typings.cids.cidsNumbers.`46026` = 46026.asInstanceOf[typings.cids.cidsNumbers.`46026`]
+    inline def `46026`: typings.cids.cidsInts.`46026` = 46026.asInstanceOf[typings.cids.cidsInts.`46026`]
     
-    inline def `46027`: typings.cids.cidsNumbers.`46027` = 46027.asInstanceOf[typings.cids.cidsNumbers.`46027`]
+    inline def `46027`: typings.cids.cidsInts.`46027` = 46027.asInstanceOf[typings.cids.cidsInts.`46027`]
     
-    inline def `46028`: typings.cids.cidsNumbers.`46028` = 46028.asInstanceOf[typings.cids.cidsNumbers.`46028`]
+    inline def `46028`: typings.cids.cidsInts.`46028` = 46028.asInstanceOf[typings.cids.cidsInts.`46028`]
     
-    inline def `46029`: typings.cids.cidsNumbers.`46029` = 46029.asInstanceOf[typings.cids.cidsNumbers.`46029`]
+    inline def `46029`: typings.cids.cidsInts.`46029` = 46029.asInstanceOf[typings.cids.cidsInts.`46029`]
     
-    inline def `46030`: typings.cids.cidsNumbers.`46030` = 46030.asInstanceOf[typings.cids.cidsNumbers.`46030`]
+    inline def `46030`: typings.cids.cidsInts.`46030` = 46030.asInstanceOf[typings.cids.cidsInts.`46030`]
     
-    inline def `46031`: typings.cids.cidsNumbers.`46031` = 46031.asInstanceOf[typings.cids.cidsNumbers.`46031`]
+    inline def `46031`: typings.cids.cidsInts.`46031` = 46031.asInstanceOf[typings.cids.cidsInts.`46031`]
     
-    inline def `46032`: typings.cids.cidsNumbers.`46032` = 46032.asInstanceOf[typings.cids.cidsNumbers.`46032`]
+    inline def `46032`: typings.cids.cidsInts.`46032` = 46032.asInstanceOf[typings.cids.cidsInts.`46032`]
     
-    inline def `46033`: typings.cids.cidsNumbers.`46033` = 46033.asInstanceOf[typings.cids.cidsNumbers.`46033`]
+    inline def `46033`: typings.cids.cidsInts.`46033` = 46033.asInstanceOf[typings.cids.cidsInts.`46033`]
     
-    inline def `46034`: typings.cids.cidsNumbers.`46034` = 46034.asInstanceOf[typings.cids.cidsNumbers.`46034`]
+    inline def `46034`: typings.cids.cidsInts.`46034` = 46034.asInstanceOf[typings.cids.cidsInts.`46034`]
     
-    inline def `46035`: typings.cids.cidsNumbers.`46035` = 46035.asInstanceOf[typings.cids.cidsNumbers.`46035`]
+    inline def `46035`: typings.cids.cidsInts.`46035` = 46035.asInstanceOf[typings.cids.cidsInts.`46035`]
     
-    inline def `46036`: typings.cids.cidsNumbers.`46036` = 46036.asInstanceOf[typings.cids.cidsNumbers.`46036`]
+    inline def `46036`: typings.cids.cidsInts.`46036` = 46036.asInstanceOf[typings.cids.cidsInts.`46036`]
     
-    inline def `46037`: typings.cids.cidsNumbers.`46037` = 46037.asInstanceOf[typings.cids.cidsNumbers.`46037`]
+    inline def `46037`: typings.cids.cidsInts.`46037` = 46037.asInstanceOf[typings.cids.cidsInts.`46037`]
     
-    inline def `46038`: typings.cids.cidsNumbers.`46038` = 46038.asInstanceOf[typings.cids.cidsNumbers.`46038`]
+    inline def `46038`: typings.cids.cidsInts.`46038` = 46038.asInstanceOf[typings.cids.cidsInts.`46038`]
     
-    inline def `46039`: typings.cids.cidsNumbers.`46039` = 46039.asInstanceOf[typings.cids.cidsNumbers.`46039`]
+    inline def `46039`: typings.cids.cidsInts.`46039` = 46039.asInstanceOf[typings.cids.cidsInts.`46039`]
     
-    inline def `46040`: typings.cids.cidsNumbers.`46040` = 46040.asInstanceOf[typings.cids.cidsNumbers.`46040`]
+    inline def `46040`: typings.cids.cidsInts.`46040` = 46040.asInstanceOf[typings.cids.cidsInts.`46040`]
     
-    inline def `46041`: typings.cids.cidsNumbers.`46041` = 46041.asInstanceOf[typings.cids.cidsNumbers.`46041`]
+    inline def `46041`: typings.cids.cidsInts.`46041` = 46041.asInstanceOf[typings.cids.cidsInts.`46041`]
     
-    inline def `46042`: typings.cids.cidsNumbers.`46042` = 46042.asInstanceOf[typings.cids.cidsNumbers.`46042`]
+    inline def `46042`: typings.cids.cidsInts.`46042` = 46042.asInstanceOf[typings.cids.cidsInts.`46042`]
     
-    inline def `46043`: typings.cids.cidsNumbers.`46043` = 46043.asInstanceOf[typings.cids.cidsNumbers.`46043`]
+    inline def `46043`: typings.cids.cidsInts.`46043` = 46043.asInstanceOf[typings.cids.cidsInts.`46043`]
     
-    inline def `46044`: typings.cids.cidsNumbers.`46044` = 46044.asInstanceOf[typings.cids.cidsNumbers.`46044`]
+    inline def `46044`: typings.cids.cidsInts.`46044` = 46044.asInstanceOf[typings.cids.cidsInts.`46044`]
     
-    inline def `46045`: typings.cids.cidsNumbers.`46045` = 46045.asInstanceOf[typings.cids.cidsNumbers.`46045`]
+    inline def `46045`: typings.cids.cidsInts.`46045` = 46045.asInstanceOf[typings.cids.cidsInts.`46045`]
     
-    inline def `46046`: typings.cids.cidsNumbers.`46046` = 46046.asInstanceOf[typings.cids.cidsNumbers.`46046`]
+    inline def `46046`: typings.cids.cidsInts.`46046` = 46046.asInstanceOf[typings.cids.cidsInts.`46046`]
     
-    inline def `46047`: typings.cids.cidsNumbers.`46047` = 46047.asInstanceOf[typings.cids.cidsNumbers.`46047`]
+    inline def `46047`: typings.cids.cidsInts.`46047` = 46047.asInstanceOf[typings.cids.cidsInts.`46047`]
     
-    inline def `46048`: typings.cids.cidsNumbers.`46048` = 46048.asInstanceOf[typings.cids.cidsNumbers.`46048`]
+    inline def `46048`: typings.cids.cidsInts.`46048` = 46048.asInstanceOf[typings.cids.cidsInts.`46048`]
     
-    inline def `4608`: typings.cids.cidsNumbers.`4608` = 4608.asInstanceOf[typings.cids.cidsNumbers.`4608`]
+    inline def `4608`: typings.cids.cidsInts.`4608` = 4608.asInstanceOf[typings.cids.cidsInts.`4608`]
     
-    inline def `46081`: typings.cids.cidsNumbers.`46081` = 46081.asInstanceOf[typings.cids.cidsNumbers.`46081`]
+    inline def `46081`: typings.cids.cidsInts.`46081` = 46081.asInstanceOf[typings.cids.cidsInts.`46081`]
     
-    inline def `46082`: typings.cids.cidsNumbers.`46082` = 46082.asInstanceOf[typings.cids.cidsNumbers.`46082`]
+    inline def `46082`: typings.cids.cidsInts.`46082` = 46082.asInstanceOf[typings.cids.cidsInts.`46082`]
     
-    inline def `4609`: typings.cids.cidsNumbers.`4609` = 4609.asInstanceOf[typings.cids.cidsNumbers.`4609`]
+    inline def `4609`: typings.cids.cidsInts.`4609` = 4609.asInstanceOf[typings.cids.cidsInts.`4609`]
     
-    inline def `4610`: typings.cids.cidsNumbers.`4610` = 4610.asInstanceOf[typings.cids.cidsNumbers.`4610`]
+    inline def `4610`: typings.cids.cidsInts.`4610` = 4610.asInstanceOf[typings.cids.cidsInts.`4610`]
     
-    inline def `4611`: typings.cids.cidsNumbers.`4611` = 4611.asInstanceOf[typings.cids.cidsNumbers.`4611`]
+    inline def `4611`: typings.cids.cidsInts.`4611` = 4611.asInstanceOf[typings.cids.cidsInts.`4611`]
     
-    inline def `4612`: typings.cids.cidsNumbers.`4612` = 4612.asInstanceOf[typings.cids.cidsNumbers.`4612`]
+    inline def `4612`: typings.cids.cidsInts.`4612` = 4612.asInstanceOf[typings.cids.cidsInts.`4612`]
     
-    inline def `47`: typings.cids.cidsNumbers.`47` = 47.asInstanceOf[typings.cids.cidsNumbers.`47`]
+    inline def `47`: typings.cids.cidsInts.`47` = 47.asInstanceOf[typings.cids.cidsInts.`47`]
     
-    inline def `477`: typings.cids.cidsNumbers.`477` = 477.asInstanceOf[typings.cids.cidsNumbers.`477`]
+    inline def `477`: typings.cids.cidsInts.`477` = 477.asInstanceOf[typings.cids.cidsInts.`477`]
     
-    inline def `478`: typings.cids.cidsNumbers.`478` = 478.asInstanceOf[typings.cids.cidsNumbers.`478`]
+    inline def `478`: typings.cids.cidsInts.`478` = 478.asInstanceOf[typings.cids.cidsInts.`478`]
     
-    inline def `479`: typings.cids.cidsNumbers.`479` = 479.asInstanceOf[typings.cids.cidsNumbers.`479`]
+    inline def `479`: typings.cids.cidsInts.`479` = 479.asInstanceOf[typings.cids.cidsInts.`479`]
     
-    inline def `48`: typings.cids.cidsNumbers.`48` = 48.asInstanceOf[typings.cids.cidsNumbers.`48`]
+    inline def `48`: typings.cids.cidsInts.`48` = 48.asInstanceOf[typings.cids.cidsInts.`48`]
     
-    inline def `480`: typings.cids.cidsNumbers.`480` = 480.asInstanceOf[typings.cids.cidsNumbers.`480`]
+    inline def `480`: typings.cids.cidsInts.`480` = 480.asInstanceOf[typings.cids.cidsInts.`480`]
     
-    inline def `4864`: typings.cids.cidsNumbers.`4864` = 4864.asInstanceOf[typings.cids.cidsNumbers.`4864`]
+    inline def `4864`: typings.cids.cidsInts.`4864` = 4864.asInstanceOf[typings.cids.cidsInts.`4864`]
     
-    inline def `49`: typings.cids.cidsNumbers.`49` = 49.asInstanceOf[typings.cids.cidsNumbers.`49`]
+    inline def `49`: typings.cids.cidsInts.`49` = 49.asInstanceOf[typings.cids.cidsInts.`49`]
     
-    inline def `50`: typings.cids.cidsNumbers.`50` = 50.asInstanceOf[typings.cids.cidsNumbers.`50`]
+    inline def `50`: typings.cids.cidsInts.`50` = 50.asInstanceOf[typings.cids.cidsInts.`50`]
     
-    inline def `51`: typings.cids.cidsNumbers.`51` = 51.asInstanceOf[typings.cids.cidsNumbers.`51`]
+    inline def `51`: typings.cids.cidsInts.`51` = 51.asInstanceOf[typings.cids.cidsInts.`51`]
     
-    inline def `512`: typings.cids.cidsNumbers.`512` = 512.asInstanceOf[typings.cids.cidsNumbers.`512`]
+    inline def `512`: typings.cids.cidsInts.`512` = 512.asInstanceOf[typings.cids.cidsInts.`512`]
     
-    inline def `513`: typings.cids.cidsNumbers.`513` = 513.asInstanceOf[typings.cids.cidsNumbers.`513`]
+    inline def `513`: typings.cids.cidsInts.`513` = 513.asInstanceOf[typings.cids.cidsInts.`513`]
     
-    inline def `52753`: typings.cids.cidsNumbers.`52753` = 52753.asInstanceOf[typings.cids.cidsNumbers.`52753`]
+    inline def `52753`: typings.cids.cidsInts.`52753` = 52753.asInstanceOf[typings.cids.cidsInts.`52753`]
     
-    inline def `53`: typings.cids.cidsNumbers.`53` = 53.asInstanceOf[typings.cids.cidsNumbers.`53`]
+    inline def `53`: typings.cids.cidsInts.`53` = 53.asInstanceOf[typings.cids.cidsInts.`53`]
     
-    inline def `54`: typings.cids.cidsNumbers.`54` = 54.asInstanceOf[typings.cids.cidsNumbers.`54`]
+    inline def `54`: typings.cids.cidsInts.`54` = 54.asInstanceOf[typings.cids.cidsInts.`54`]
     
-    inline def `55`: typings.cids.cidsNumbers.`55` = 55.asInstanceOf[typings.cids.cidsNumbers.`55`]
+    inline def `55`: typings.cids.cidsInts.`55` = 55.asInstanceOf[typings.cids.cidsInts.`55`]
     
-    inline def `56`: typings.cids.cidsNumbers.`56` = 56.asInstanceOf[typings.cids.cidsNumbers.`56`]
+    inline def `56`: typings.cids.cidsInts.`56` = 56.asInstanceOf[typings.cids.cidsInts.`56`]
     
-    inline def `6`: typings.cids.cidsNumbers.`6` = 6.asInstanceOf[typings.cids.cidsNumbers.`6`]
+    inline def `6`: typings.cids.cidsInts.`6` = 6.asInstanceOf[typings.cids.cidsInts.`6`]
     
-    inline def `61697`: typings.cids.cidsNumbers.`61697` = 61697.asInstanceOf[typings.cids.cidsNumbers.`61697`]
+    inline def `61697`: typings.cids.cidsInts.`61697` = 61697.asInstanceOf[typings.cids.cidsInts.`61697`]
     
-    inline def `61698`: typings.cids.cidsNumbers.`61698` = 61698.asInstanceOf[typings.cids.cidsNumbers.`61698`]
+    inline def `61698`: typings.cids.cidsInts.`61698` = 61698.asInstanceOf[typings.cids.cidsInts.`61698`]
     
-    inline def `7425`: typings.cids.cidsNumbers.`7425` = 7425.asInstanceOf[typings.cids.cidsNumbers.`7425`]
+    inline def `7425`: typings.cids.cidsInts.`7425` = 7425.asInstanceOf[typings.cids.cidsInts.`7425`]
     
-    inline def `769`: typings.cids.cidsNumbers.`769` = 769.asInstanceOf[typings.cids.cidsNumbers.`769`]
+    inline def `769`: typings.cids.cidsInts.`769` = 769.asInstanceOf[typings.cids.cidsInts.`769`]
     
-    inline def `80`: typings.cids.cidsNumbers.`80` = 80.asInstanceOf[typings.cids.cidsNumbers.`80`]
+    inline def `80`: typings.cids.cidsInts.`80` = 80.asInstanceOf[typings.cids.cidsInts.`80`]
     
-    inline def `81`: typings.cids.cidsNumbers.`81` = 81.asInstanceOf[typings.cids.cidsNumbers.`81`]
+    inline def `81`: typings.cids.cidsInts.`81` = 81.asInstanceOf[typings.cids.cidsInts.`81`]
     
-    inline def `8417572`: typings.cids.cidsNumbers.`8417572` = 8417572.asInstanceOf[typings.cids.cidsNumbers.`8417572`]
+    inline def `8417572`: typings.cids.cidsInts.`8417572` = 8417572.asInstanceOf[typings.cids.cidsInts.`8417572`]
     
-    inline def `8483108`: typings.cids.cidsNumbers.`8483108` = 8483108.asInstanceOf[typings.cids.cidsNumbers.`8483108`]
+    inline def `8483108`: typings.cids.cidsInts.`8483108` = 8483108.asInstanceOf[typings.cids.cidsInts.`8483108`]
     
-    inline def `85`: typings.cids.cidsNumbers.`85` = 85.asInstanceOf[typings.cids.cidsNumbers.`85`]
+    inline def `85`: typings.cids.cidsInts.`85` = 85.asInstanceOf[typings.cids.cidsInts.`85`]
     
-    inline def `86`: typings.cids.cidsNumbers.`86` = 86.asInstanceOf[typings.cids.cidsNumbers.`86`]
+    inline def `86`: typings.cids.cidsInts.`86` = 86.asInstanceOf[typings.cids.cidsInts.`86`]
     
-    inline def `96`: typings.cids.cidsNumbers.`96` = 96.asInstanceOf[typings.cids.cidsNumbers.`96`]
+    inline def `96`: typings.cids.cidsInts.`96` = 96.asInstanceOf[typings.cids.cidsInts.`96`]
     
-    inline def `9728292`: typings.cids.cidsNumbers.`9728292` = 9728292.asInstanceOf[typings.cids.cidsNumbers.`9728292`]
+    inline def `9728292`: typings.cids.cidsInts.`9728292` = 9728292.asInstanceOf[typings.cids.cidsInts.`9728292`]
     
-    inline def `9793828`: typings.cids.cidsNumbers.`9793828` = 9793828.asInstanceOf[typings.cids.cidsNumbers.`9793828`]
+    inline def `9793828`: typings.cids.cidsInts.`9793828` = 9793828.asInstanceOf[typings.cids.cidsInts.`9793828`]
     
-    inline def `99`: typings.cids.cidsNumbers.`99` = 99.asInstanceOf[typings.cids.cidsNumbers.`99`]
+    inline def `99`: typings.cids.cidsInts.`99` = 99.asInstanceOf[typings.cids.cidsInts.`99`]
   }
   
   /* Rewritten from type alias, can be one of: 

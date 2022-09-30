@@ -23,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.codeactionsMod.codeactions.IMicroflowActionInfo because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsCodeAction, containerAsMicroflow, caption, category, icon, iconQualifiedName */ @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo")
+- typings.mendixmodelsdk.codeactionsMod.codeactions.IMicroflowActionInfo because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsCodeAction, containerAsMicroflow, caption, category, icon, iconQualifiedName, imageData */ @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.MicroflowActionInfo")
 @js.native
-class MicroflowActionInfo protected () extends Element[IModel] {
+open class MicroflowActionInfo protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -53,19 +53,56 @@ class MicroflowActionInfo protected () extends Element[IModel] {
   @JSName("containerAsMicroflow")
   val containerAsMicroflow_FMicroflowActionInfo: IMicroflow = js.native
   
+  /**
+    * In version 9.10.0: deleted
+    */
   def icon: IImage | Null = js.native
+  
+  /**
+    * In version 9.10.0: introduced
+    */
+  def iconData: String | Null = js.native
+  
+  /**
+    * In version 9.10.0: introduced
+    */
+  def iconDataDark: String | Null = js.native
+  def iconDataDark_=(newValue: String | Null): Unit = js.native
+  
+  def iconData_=(newValue: String | Null): Unit = js.native
   
   def iconQualifiedName: String | Null = js.native
   @JSName("iconQualifiedName")
   val iconQualifiedName_FMicroflowActionInfo: String | Null = js.native
   
   def icon_=(newValue: IImage | Null): Unit = js.native
+  /**
+    * In version 9.10.0: deleted
+    */
   @JSName("icon")
   val icon_FMicroflowActionInfo: IImage | Null = js.native
+  
+  /**
+    * In version 9.6.0: introduced
+    */
+  def imageData: String | Null = js.native
+  
+  /**
+    * In version 9.10.0: introduced
+    */
+  def imageDataDark: String | Null = js.native
+  def imageDataDark_=(newValue: String | Null): Unit = js.native
+  
+  def imageData_=(newValue: String | Null): Unit = js.native
+  /**
+    * In version 9.6.0: introduced
+    */
+  @JSName("imageData")
+  val imageData_FMicroflowActionInfo: String | Null = js.native
 }
 object MicroflowActionInfo {
   
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo")
+  @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.MicroflowActionInfo")
   @js.native
   val ^ : js.Any = js.native
   
@@ -110,14 +147,25 @@ object MicroflowActionInfo {
   /* static member */
   inline def createInMicroflowUnderMicroflowActionInfo(container: Microflow): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderMicroflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
   
+  /**
+    * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
+    * The new MicroflowActionInfo will be automatically stored in the 'workflowActionInfo' property
+    * of the parent microflows.Microflow element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.0.2 and higher
+    */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo.structureTypeName")
+  inline def createInMicroflowUnderWorkflowActionInfo(container: Microflow): MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderWorkflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowActionInfo]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.MicroflowActionInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.MicroflowActionInfo.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/codeactions", "codeactions.MicroflowActionInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

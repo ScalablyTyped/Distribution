@@ -16,7 +16,7 @@ import typings.wordpressBlockEditor.mod.EditorFontSize
 import typings.wordpressEditor.anon.Typeof
 import typings.wordpressEditor.anon.TypeofApply
 import typings.wordpressEditor.anon.TypeofApplySlot
-import typings.wordpressEditor.anon.TypeofButtonBlockerAppender
+import typings.wordpressEditor.anon.TypeofButtonBlockAppender
 import typings.wordpressEditor.anon.TypeofContent
 import typings.wordpressEditor.anon.TypeofSlot
 import typings.wordpressEditor.wordpressEditorStrings.colors
@@ -123,7 +123,7 @@ object deprecatedMod {
   
   @JSImport("@wordpress/editor/components/deprecated", "InnerBlocks")
   @js.native
-  val InnerBlocks: TypeofButtonBlockerAppender = js.native
+  val InnerBlocks: TypeofButtonBlockAppender = js.native
   
   @JSImport("@wordpress/editor/components/deprecated", "Inserter")
   @js.native
@@ -215,10 +215,10 @@ object deprecatedMod {
   
   inline def createCustomColorsHOC[T /* <: js.Array[String] */](colorsArray: js.Array[EditorColor]): js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomColorsHOC")(colorsArray.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ]]
   
   inline def getColorClassName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")().asInstanceOf[js.UndefOr[String]]
@@ -242,28 +242,28 @@ object deprecatedMod {
   val getFontSizeClass: js.Function1[/* fontSizeSlug */ String, String] = js.native
   
   // prettier-ignore
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ]]
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ]]
   
   @JSImport("@wordpress/editor/components/deprecated", "withColors")
   @js.native
   val withColors: js.Function1[
     /* repeated */ String | (Record[String, String]), 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = js.native
   
   @JSImport("@wordpress/editor/components/deprecated", "withFontSizes")
   @js.native
   val withFontSizes: js.Function1[
     /* repeated */ String, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = js.native
 }

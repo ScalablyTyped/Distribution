@@ -10,10 +10,10 @@ object asyncStorageMod extends Shortcut {
   
   @JSImport("redux-localstorage/lib/adapters/AsyncStorage", JSImport.Namespace)
   @js.native
-  val ^ : StorageAdapterCreator[js.Any] = js.native
+  val ^ : StorageAdapterCreator[Any] = js.native
   
-  type _To = StorageAdapterCreator[js.Any]
+  type _To = StorageAdapterCreator[Any]
   
   /* This means you don't have to write `^`, but can instead just say `asyncStorageMod.foo` */
-  override def _to: StorageAdapterCreator[js.Any] = ^
+  override def _to: StorageAdapterCreator[Any] = ^
 }

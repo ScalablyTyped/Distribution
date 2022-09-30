@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__animations
 
-Typings are for version 14.2.3
+Typings are for version 14.2.4
 
 ## Library description:
 Angular - animations integration with web-animations

@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait graphset
   extends StObject
-     with /* key */ StringDictionary[scaleX | scaleY] {
+     with /* key */ StringDictionary[scaleX & scaleY] {
   
   var `3d-aspect`: js.UndefOr[Depth] = js.undefined
   

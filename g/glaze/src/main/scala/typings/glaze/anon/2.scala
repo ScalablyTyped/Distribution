@@ -1,20 +1,20 @@
 package typings.glaze.anon
 
-import typings.glaze.glazeNumbers.`4`
-import typings.glaze.glazeNumbers.`8`
+import typings.glaze.glazeInts.`4`
+import typings.glaze.glazeInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `2` extends StObject {
   
-  val `1`: typings.glaze.glazeNumbers.`1`
+  val `1`: typings.glaze.glazeInts.`1`
   
-  val `2`: typings.glaze.glazeNumbers.`2`
+  val `2`: typings.glaze.glazeInts.`2`
   
-  val `4`: typings.glaze.glazeNumbers.`4`
+  val `4`: typings.glaze.glazeInts.`4`
   
-  val `8`: typings.glaze.glazeNumbers.`8`
+  val `8`: typings.glaze.glazeInts.`8`
 }
 object `2` {
   
@@ -29,9 +29,9 @@ object `2` {
   
   extension [Self <: `2`](x: Self) {
     
-    inline def set1(value: typings.glaze.glazeNumbers.`1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: typings.glaze.glazeInts.`1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    inline def set2(value: typings.glaze.glazeNumbers.`2`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: typings.glaze.glazeInts.`2`): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     inline def set4(value: `4`): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     

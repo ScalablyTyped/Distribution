@@ -1,6 +1,7 @@
 package typings.fastAls
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: Payload[Key] */ js.Any
   ]]
   
-  inline def get_Payload_Context[Payload /* <: Context */](key: /* keyof Payload */ String): js.UndefOr[
+  inline def get_Payload[Payload /* <: Context */](key: /* keyof Payload */ String): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: Payload[/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof key * / any] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: Payload[/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof key * / any] */ js.Any
@@ -36,7 +37,7 @@ object mod {
     value: /* import warning: importer.ImportType#apply Failed type conversion: Payload[Key] */ js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type CallbackFunction = js.Function0[Unit | js.Thenable[Unit]]
+  type CallbackFunction = js.Function0[Unit | PromiseLike[Unit]]
   
   type Context = StringDictionary[Any]
   

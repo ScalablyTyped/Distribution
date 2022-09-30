@@ -17,7 +17,6 @@ import typings.intercomClient.anon.Token
 import typings.intercomClient.anon.Type
 import typings.intercomClient.companyMod.Company
 import typings.intercomClient.companyMod.CompanyIdentifier
-import typings.intercomClient.companyMod.List
 import typings.intercomClient.eventMod.ListParam
 import typings.intercomClient.intercomErrorMod.IntercomError
 import typings.intercomClient.leadMod.Lead
@@ -96,11 +95,11 @@ object mod {
     def find(identifier: CompanyIdentifier): js.Promise[ApiResponse[Company]] = js.native
     def find(identifier: CompanyIdentifier, cb: callback[ApiResponse[Company]]): Unit = js.native
     
-    def list(): js.Promise[ApiResponse[List]] = js.native
-    def list(cb: callback[ApiResponse[List]]): Unit = js.native
+    def list(): js.Promise[ApiResponse[typings.intercomClient.companyMod.List]] = js.native
+    def list(cb: callback[ApiResponse[typings.intercomClient.companyMod.List]]): Unit = js.native
     
-    def listBy(params: Segmentid): js.Promise[ApiResponse[List]] = js.native
-    def listBy(params: Segmentid, cb: callback[ApiResponse[List]]): Unit = js.native
+    def listBy(params: Segmentid): js.Promise[ApiResponse[typings.intercomClient.companyMod.List]] = js.native
+    def listBy(params: Segmentid, cb: callback[ApiResponse[typings.intercomClient.companyMod.List]]): Unit = js.native
     
     var scroll: Scroll[Company] = js.native
     
@@ -118,8 +117,8 @@ object mod {
     def create(event: PartialEvent): js.Promise[IncomingMessage] = js.native
     def create(event: PartialEvent, cb: callback[IncomingMessage]): Unit = js.native
     
-    def listBy(params: ListParam): js.Promise[ApiResponse[List]] = js.native
-    def listBy(params: ListParam, cb: callback[ApiResponse[List]]): Unit = js.native
+    def listBy(params: ListParam): js.Promise[ApiResponse[typings.intercomClient.companyMod.List]] = js.native
+    def listBy(params: ListParam, cb: callback[ApiResponse[typings.intercomClient.companyMod.List]]): Unit = js.native
   }
   
   object IdentityVerification {

@@ -5,7 +5,6 @@ import typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1.Syn
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SynthesizeSpeechRequest.
   * @param [properties] Properties to set
   */
-class SynthesizeSpeechRequest ()
+open class SynthesizeSpeechRequest ()
   extends StObject
      with ISynthesizeSpeechRequest {
   def this(properties: ISynthesizeSpeechRequest) = this()
@@ -30,7 +29,7 @@ class SynthesizeSpeechRequest ()
     * Converts this SynthesizeSpeechRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object SynthesizeSpeechRequest {
   
@@ -70,6 +69,8 @@ object SynthesizeSpeechRequest {
   inline def create(): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SynthesizeSpeechRequest]
   inline def create(properties: ISynthesizeSpeechRequest): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SynthesizeSpeechRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesizeSpeechRequest]
   /**
     * Decodes a SynthesizeSpeechRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -81,9 +82,8 @@ object SynthesizeSpeechRequest {
   /* static member */
   inline def decode(reader: Reader): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
   inline def decode(reader: Reader, length: Double): SynthesizeSpeechRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesizeSpeechRequest]
-  inline def decode(reader: Uint8Array): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
-  inline def decode(reader: Uint8Array, length: Double): SynthesizeSpeechRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SynthesizeSpeechRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
   /**
     * Decodes a SynthesizeSpeechRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -93,7 +93,6 @@ object SynthesizeSpeechRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
-  inline def decodeDelimited(reader: Uint8Array): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
   
   /**
     * Encodes the specified SynthesizeSpeechRequest message. Does not implicitly {@link google.cloud.texttospeech.v1beta1.SynthesizeSpeechRequest.verify|verify} messages.
@@ -121,7 +120,16 @@ object SynthesizeSpeechRequest {
     * @returns SynthesizeSpeechRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SynthesizeSpeechRequest]
+  
+  /**
+    * Gets the default type url for SynthesizeSpeechRequest
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from a SynthesizeSpeechRequest message. Also converts values to other types if specified.
@@ -130,8 +138,8 @@ object SynthesizeSpeechRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SynthesizeSpeechRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SynthesizeSpeechRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SynthesizeSpeechRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SynthesizeSpeechRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SynthesizeSpeechRequest message.
@@ -139,5 +147,5 @@ object SynthesizeSpeechRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

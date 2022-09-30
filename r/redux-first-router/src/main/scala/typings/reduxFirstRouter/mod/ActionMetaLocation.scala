@@ -10,7 +10,7 @@ trait ActionMetaLocation extends StObject {
   
   var history: Nullable[HistoryData]
   
-  var kind: Nullable[String]
+  var kind: Nullable[LocationKind]
   
   var prev: Location
 }
@@ -31,7 +31,7 @@ object ActionMetaLocation {
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setKind(value: Nullable[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Nullable[LocationKind]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindNull: Self = StObject.set(x, "kind", null)
     

@@ -1,9 +1,9 @@
 package typings.tizenTvWebapis.anon
 
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`2`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`3`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`0`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`1`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`2`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

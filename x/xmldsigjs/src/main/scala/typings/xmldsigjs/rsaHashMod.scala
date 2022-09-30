@@ -42,7 +42,7 @@ object rsaHashMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_hash", "Sha1")
   @js.native
-  class Sha1 () extends HashAlgorithm {
+  open class Sha1 () extends HashAlgorithm {
     
     @JSName("algorithm")
     var algorithm_Sha1: Name = js.native
@@ -50,7 +50,7 @@ object rsaHashMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_hash", "Sha256")
   @js.native
-  class Sha256 () extends HashAlgorithm {
+  open class Sha256 () extends HashAlgorithm {
     
     @JSName("algorithm")
     var algorithm_Sha256: Name = js.native
@@ -58,7 +58,7 @@ object rsaHashMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_hash", "Sha384")
   @js.native
-  class Sha384 () extends HashAlgorithm {
+  open class Sha384 () extends HashAlgorithm {
     
     @JSName("algorithm")
     var algorithm_Sha384: Name = js.native
@@ -66,7 +66,7 @@ object rsaHashMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_hash", "Sha512")
   @js.native
-  class Sha512 () extends HashAlgorithm {
+  open class Sha512 () extends HashAlgorithm {
     
     @JSName("algorithm")
     var algorithm_Sha512: Name = js.native

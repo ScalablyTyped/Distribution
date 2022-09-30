@@ -8,6 +8,7 @@ import typings.csvtojson.csvtojsonStrings.json
 import typings.csvtojson.csvtojsonStrings.line
 import typings.csvtojson.parametersMod.CellParser
 import typings.csvtojson.parametersMod.ColumnParam
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ object anon {
     
     var onError: js.UndefOr[js.Function1[/* err */ default, Unit]] = js.undefined
     
-    var onNext: js.UndefOr[js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | js.Thenable[Unit]]] = js.undefined
+    var onNext: js.UndefOr[js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | PromiseLike[Unit]]] = js.undefined
   }
   object OnCompleted {
     
@@ -66,7 +67,7 @@ object anon {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnNext(value: (/* data */ Any, /* lineNumber */ Double) => Unit | js.Thenable[Unit]): Self = StObject.set(x, "onNext", js.Any.fromFunction2(value))
+      inline def setOnNext(value: (/* data */ Any, /* lineNumber */ Double) => Unit | PromiseLike[Unit]): Self = StObject.set(x, "onNext", js.Any.fromFunction2(value))
       
       inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     }

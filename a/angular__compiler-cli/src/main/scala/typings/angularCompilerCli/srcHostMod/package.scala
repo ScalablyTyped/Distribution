@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.srcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
 import typings.angularCompilerCli.anon.Name
 import typings.angularCompilerCli.srcHostMod.^
 import typings.typescript.mod.Expression

@@ -11,45 +11,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object signedDataObjectPropertiesMod {
   
-  @JSImport("xadesjs/build/types/xml/signed_data_object_properties", "AllDataObjectsTimeStamp")
+  @JSImport("xadesjs/build/types/src/xml/signed_data_object_properties", "AllDataObjectsTimeStamp")
   @js.native
-  class AllDataObjectsTimeStamp () extends XAdESTimeStamp {
+  open class AllDataObjectsTimeStamp () extends XAdESTimeStamp {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signed_data_object_properties", "AllDataObjectsTimeStampCollection")
+  @JSImport("xadesjs/build/types/src/xml/signed_data_object_properties", "AllDataObjectsTimeStampCollection")
   @js.native
-  class AllDataObjectsTimeStampCollection () extends XadesCollection[AllDataObjectsTimeStamp] {
+  open class AllDataObjectsTimeStampCollection () extends XadesCollection[AllDataObjectsTimeStamp] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signed_data_object_properties", "CommitmentTypeIndicationCollection")
+  @JSImport("xadesjs/build/types/src/xml/signed_data_object_properties", "CommitmentTypeIndicationCollection")
   @js.native
-  class CommitmentTypeIndicationCollection () extends XadesCollection[CommitmentTypeIndication] {
+  open class CommitmentTypeIndicationCollection () extends XadesCollection[CommitmentTypeIndication] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signed_data_object_properties", "DataObjectFormatCollection")
+  @JSImport("xadesjs/build/types/src/xml/signed_data_object_properties", "DataObjectFormatCollection")
   @js.native
-  class DataObjectFormatCollection () extends XadesCollection[DataObjectFormat] {
+  open class DataObjectFormatCollection () extends XadesCollection[DataObjectFormat] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signed_data_object_properties", "IndividualDataObjectsTimeStamp")
+  @JSImport("xadesjs/build/types/src/xml/signed_data_object_properties", "IndividualDataObjectsTimeStamp")
   @js.native
-  class IndividualDataObjectsTimeStamp () extends XAdESTimeStamp {
+  open class IndividualDataObjectsTimeStamp () extends XAdESTimeStamp {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signed_data_object_properties", "IndividualDataObjectsTimeStampCollection")
+  @JSImport("xadesjs/build/types/src/xml/signed_data_object_properties", "IndividualDataObjectsTimeStampCollection")
   @js.native
-  class IndividualDataObjectsTimeStampCollection () extends XadesCollection[IndividualDataObjectsTimeStamp] {
+  open class IndividualDataObjectsTimeStampCollection () extends XadesCollection[IndividualDataObjectsTimeStamp] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signed_data_object_properties", "SignedDataObjectProperties")
+  @JSImport("xadesjs/build/types/src/xml/signed_data_object_properties", "SignedDataObjectProperties")
   @js.native
-  class SignedDataObjectProperties () extends XadesObject {
+  open class SignedDataObjectProperties () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var AllDataObjectsTimeStamps: AllDataObjectsTimeStampCollection = js.native

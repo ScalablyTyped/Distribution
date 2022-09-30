@@ -5,8 +5,6 @@ import typings.expoConfigPlugins.iosConfigTypesMod.InterfaceOrientation
 import typings.expoConfigPlugins.iosConfigTypesMod.InterfaceStyle
 import typings.expoConfigPlugins.iosPathsMod.AppleLanguage
 import typings.expoConfigPlugins.manifestMod.StringBoolean
-import typings.expoConfigPlugins.matchBracketsMod.LeftBracket
-import typings.expoConfigPlugins.matchBracketsMod.RightBracket
 import typings.expoConfigPlugins.pluginTypesMod.ModPlatform
 import typings.expoConfigPlugins.resourcesMod.ResourceKind
 import org.scalablytyped.runtime.StObject
@@ -72,16 +70,8 @@ object expoConfigPluginsStrings {
   inline def INVALID_PLUGIN_TYPE: INVALID_PLUGIN_TYPE = "INVALID_PLUGIN_TYPE".asInstanceOf[INVALID_PLUGIN_TYPE]
   
   @js.native
-  sealed trait Leftcurlybracket
-    extends StObject
-       with LeftBracket
+  sealed trait Leftcurlybracket extends StObject
   inline def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
-  
-  @js.native
-  sealed trait Leftparenthesis
-    extends StObject
-       with LeftBracket
-  inline def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   
   @js.native
   sealed trait Light
@@ -114,20 +104,8 @@ object expoConfigPluginsStrings {
   inline def Release: Release = "Release".asInstanceOf[Release]
   
   @js.native
-  sealed trait Rightcurlybracket
-    extends StObject
-       with RightBracket
+  sealed trait Rightcurlybracket extends StObject
   inline def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
-  
-  @js.native
-  sealed trait Rightparenthesis
-    extends StObject
-       with RightBracket
-  inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
-  
-  @js.native
-  sealed trait `SlashSlash Build integration with EASLinefeedLinefeedimport javaDotnioDotfileDotPathsLinefeedLinefeedandroid LeftcurlybracketLinefeed  signingConfigs LeftcurlybracketLinefeed    release LeftcurlybracketLinefeed      SlashSlash This is necessary to avoid needing the user to define a release signing config manuallyLinefeed      SlashSlash If no release config is definedComma and this is not presentComma build for assembleRelease will crashLinefeed    RightcurlybracketLinefeed  RightcurlybracketLin` extends StObject
-  inline def `SlashSlash Build integration with EASLinefeedLinefeedimport javaDotnioDotfileDotPathsLinefeedLinefeedandroid LeftcurlybracketLinefeed  signingConfigs LeftcurlybracketLinefeed    release LeftcurlybracketLinefeed      SlashSlash This is necessary to avoid needing the user to define a release signing config manuallyLinefeed      SlashSlash If no release config is definedComma and this is not presentComma build for assembleRelease will crashLinefeed    RightcurlybracketLinefeed  RightcurlybracketLin`: `SlashSlash Build integration with EASLinefeedLinefeedimport javaDotnioDotfileDotPathsLinefeedLinefeedandroid LeftcurlybracketLinefeed  signingConfigs LeftcurlybracketLinefeed    release LeftcurlybracketLinefeed      SlashSlash This is necessary to avoid needing the user to define a release signing config manuallyLinefeed      SlashSlash If no release config is definedComma and this is not presentComma build for assembleRelease will crashLinefeed    RightcurlybracketLinefeed  RightcurlybracketLin` = ("// Build integration with EAS\n\nimport java.nio.file.Paths\n\nandroid {\n  signingConfigs {\n    release {\n      // This is necessary to avoid needing the user to define a release signing config manually\n      // If no release config is defined, and this is not present, build for assembleRelease will crash\n    }\n  }\n\n  buildTypes {\n    release {\n      // This is necessary to avoid needing the user to define a release build type manually\n    }\n  }\n}\n\ndef isEasBuildConfigured = false\n\ntasks.whenTaskAdded {\n  def debug = gradle.startParameter.taskNames.any { it.toLowerCase().contains('debug') }\n\n  if (debug) {\n    return\n  }\n\n  // We only need to configure EAS build once\n  if (isEasBuildConfigured) {\n    return\n  }\n\n  isEasBuildConfigured = true;\n\n  android.signingConfigs.release {\n    def credentialsJson = rootProject.file(\"../credentials.json\");\n\n    if (credentialsJson.exists()) {\n      if (storeFile && !System.getenv(\"EAS_BUILD\")) {\n        println(\"Path to release keystore file is already set, ignoring 'credentials.json'\")\n      } else {\n        try {\n          def credentials = new groovy.json.JsonSlurper().parse(credentialsJson)\n          def keystorePath = Paths.get(credentials.android.keystore.keystorePath);\n          def storeFilePath = keystorePath.isAbsolute()\n            ? keystorePath\n            : rootProject.file(\"..\").toPath().resolve(keystorePath);\n\n          storeFile storeFilePath.toFile()\n          storePassword credentials.android.keystore.keystorePassword\n          keyAlias credentials.android.keystore.keyAlias\n          if (credentials.android.keystore.containsKey(\"keyPassword\")) {\n            keyPassword credentials.android.keystore.keyPassword\n          } else {\n            // key password is required by Gradle, but PKCS keystores don't have one\n            // using the keystore password seems to satisfy the requirement\n            keyPassword credentials.android.keystore.keystorePassword\n          }\n        } catch (Exception e) {\n          println(\"An error occurred while parsing 'credentials.json': \" + e.message)\n        }\n      }\n    } else {\n      if (storeFile == null) {\n        println(\"Couldn't find a 'credentials.json' file, skipping release keystore configuration\")\n      }\n    }\n  }\n\n  android.buildTypes.release {\n    signingConfig android.signingConfigs.release\n  }\n}\n").asInstanceOf[`SlashSlash Build integration with EASLinefeedLinefeedimport javaDotnioDotfileDotPathsLinefeedLinefeedandroid LeftcurlybracketLinefeed  signingConfigs LeftcurlybracketLinefeed    release LeftcurlybracketLinefeed      SlashSlash This is necessary to avoid needing the user to define a release signing config manuallyLinefeed      SlashSlash If no release config is definedComma and this is not presentComma build for assembleRelease will crashLinefeed    RightcurlybracketLinefeed  RightcurlybracketLin`]
   
   @js.native
   sealed trait SplashScreen extends StObject

@@ -1,8 +1,8 @@
 package typings.semver
 
-import typings.semver.semverNumbers.`-1`
-import typings.semver.semverNumbers.`0`
-import typings.semver.semverNumbers.`1`
+import typings.semver.semverInts.`-1`
+import typings.semver.semverInts.`0`
+import typings.semver.semverInts.`1`
 import typings.semver.semverStrings.Greaterthansign
 import typings.semver.semverStrings.Lessthansign
 import typings.semver.semverStrings.`2Dot0Dot0`

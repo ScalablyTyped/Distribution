@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TemplateConfiguration extends StObject {
   
   /**
-    * The template schema used for the data source. The following links to the template schema for data sources where templates are supported:    Zendesk template schema   
+    * The template schema used for the data source, where templates schemas are supported. See Data source template schemas.
     */
   var Template: js.UndefOr[typings.awsSdk.kendraMod.Template] = js.undefined
 }

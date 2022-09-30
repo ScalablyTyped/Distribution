@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior")
 @js.native
-class AssociationDeleteBehavior protected ()
+open class AssociationDeleteBehavior protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationDeleteBehavior {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class AssociationDeleteBehavior protected ()
 }
 object AssociationDeleteBehavior {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object AssociationDeleteBehavior {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationBase): typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationDeleteBehavior = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationDeleteBehavior]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.AssociationDeleteBehavior.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

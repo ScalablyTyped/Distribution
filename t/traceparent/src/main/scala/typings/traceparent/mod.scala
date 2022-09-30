@@ -1,7 +1,6 @@
 package typings.traceparent
 
 import typings.node.bufferMod.global.Buffer
-import typings.traceparent.traceparentNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,16 +40,12 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  /* Inlined std.Readonly<{  recorded :0,   b00000001}> */
+  /* Inlined std.Readonly<{  recorded :0b00000001}> */
   object FLAGS {
-    
-    @JSImport("traceparent", "FLAGS.b00000001")
-    @js.native
-    val b00000001: Any = js.native
     
     @JSImport("traceparent", "FLAGS.recorded")
     @js.native
-    val recorded: `0` = js.native
+    val recorded: /* 0b00000001 */ Double = js.native
   }
   
   /* static member */

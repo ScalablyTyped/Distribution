@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NodeVisitor extends StObject {
   
   def apply[T /* <: Node */](): js.UndefOr[T] = js.native
-  def apply[T /* <: Node */](nodes: T): T = js.native
-  def apply[T /* <: Node */](nodes: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = js.native
+  def apply[T /* <: Node */](nodes: T): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](
     nodes: T,
     visitor: Unit,
     test: js.Function1[/* node */ Node, Boolean],
     lift: js.Function1[/* node */ js.Array[Node], T]
-  ): T = js.native
-  def apply[T /* <: Node */](nodes: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
-  def apply[T /* <: Node */](nodes: T, visitor: Visitor): T = js.native
-  def apply[T /* <: Node */](nodes: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = js.native
+  ): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Visitor): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](
     nodes: T,
     visitor: Visitor,
     test: js.Function1[/* node */ Node, Boolean],
     lift: js.Function1[/* node */ js.Array[Node], T]
-  ): T = js.native
-  def apply[T /* <: Node */](nodes: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
+  ): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](nodes: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](
     nodes: Unit,

@@ -70,7 +70,7 @@ object TouchBarSegmentedControlConstructorOptions {
     
     inline def setSegments(value: js.Array[SegmentedControlSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    inline def setSegmentsVarargs(value: SegmentedControlSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SegmentedControlSegment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     

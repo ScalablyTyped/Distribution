@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-runner
 
-Typings are for version 26.6.3
+Typings are for version 29.1.2
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 26.6.3
 | ------------------ | :-------------: |
 | Full name          | jest-runner |
 | Keywords           | - |
-| # releases         | 62 |
-| # dependents       | 39 |
-| # downloads        | 316995330 |
-| # stars            | 0 |
+| # releases         | 79 |
+| # dependents       | 0.0 |
+| # downloads        | 7.341588033333333E7 |
+| # stars            | 40312.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

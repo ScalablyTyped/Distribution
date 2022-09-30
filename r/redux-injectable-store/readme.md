@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-injectable-store
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Redux store with injectable reducers for use with bundle splitting, large apps, and SPAs.
@@ -11,9 +11,9 @@ Redux store with injectable reducers for use with bundle splitting, large apps, 
 | Full name          | redux-injectable-store |
 | Keywords           | redex, reducer, react, mobx |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2264 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 65.33333333333333 |
+| # stars            | 229.0 |
 
 ## Links
 - [Homepage](https://github.com/lelandrichardson/redux-injectable-store#readme)

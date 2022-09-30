@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Rectangle")
 @js.native
-class Rectangle_[P] protected () extends Polygon_[P] {
+open class Rectangle_[P] protected () extends Polygon_[P] {
   def this(latLngBounds: LatLngBoundsExpression) = this()
   def this(latLngBounds: LatLngBoundsExpression, options: PolylineOptions) = this()
   

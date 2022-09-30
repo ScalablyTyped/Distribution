@@ -10,18 +10,12 @@ import typings.electron.electronStrings.`certificate-error`
 import typings.electron.electronStrings.`child-process-gone`
 import typings.electron.electronStrings.`continue-activity-error`
 import typings.electron.electronStrings.`continue-activity`
-import typings.electron.electronStrings.`desktop-capturer-get-sources`
 import typings.electron.electronStrings.`did-become-active`
 import typings.electron.electronStrings.`gpu-info-update`
 import typings.electron.electronStrings.`gpu-process-crashed`
 import typings.electron.electronStrings.`new-window-for-tab`
 import typings.electron.electronStrings.`open-file`
 import typings.electron.electronStrings.`open-url`
-import typings.electron.electronStrings.`remote-get-builtin`
-import typings.electron.electronStrings.`remote-get-current-web-contents`
-import typings.electron.electronStrings.`remote-get-current-window`
-import typings.electron.electronStrings.`remote-get-global`
-import typings.electron.electronStrings.`remote-require`
 import typings.electron.electronStrings.`render-process-gone`
 import typings.electron.electronStrings.`renderer-process-crashed`
 import typings.electron.electronStrings.`second-instance`
@@ -37,25 +31,29 @@ import typings.electron.electronStrings.accessory
 import typings.electron.electronStrings.activate
 import typings.electron.electronStrings.appData
 import typings.electron.electronStrings.basic
-import typings.electron.electronStrings.cache
 import typings.electron.electronStrings.complete
 import typings.electron.electronStrings.crashDumps
+import typings.electron.electronStrings.customCategoryAccessDeniedError
 import typings.electron.electronStrings.desktop
 import typings.electron.electronStrings.documents
 import typings.electron.electronStrings.downloads
+import typings.electron.electronStrings.error
 import typings.electron.electronStrings.exe
+import typings.electron.electronStrings.fileTypeRegistrationError
 import typings.electron.electronStrings.home
+import typings.electron.electronStrings.invalidSeparatorError
 import typings.electron.electronStrings.login
 import typings.electron.electronStrings.logs
 import typings.electron.electronStrings.module
 import typings.electron.electronStrings.music
-import typings.electron.electronStrings.pepperFlashSystemPlugin
+import typings.electron.electronStrings.ok
 import typings.electron.electronStrings.pictures
 import typings.electron.electronStrings.prohibited
 import typings.electron.electronStrings.quit
 import typings.electron.electronStrings.ready
 import typings.electron.electronStrings.recent
 import typings.electron.electronStrings.regular
+import typings.electron.electronStrings.sessionData
 import typings.electron.electronStrings.temp
 import typings.electron.electronStrings.userData
 import typings.electron.electronStrings.videos
@@ -71,7 +69,7 @@ trait App
      with EventEmitter {
   
   /**
-    * A `Boolean` property that's `true` if Chrome's accessibility support is enabled,
+    * A `boolean` property that's `true` if Chrome's accessibility support is enabled,
     * `false` otherwise. This property will be `true` if the use of assistive
     * technologies, such as screen readers, has been detected. Setting this property
     * to `true` manually enables Chrome's accessibility support, allowing developers
@@ -98,7 +96,7 @@ trait App
   @JSName("addListener")
   def addListener_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -120,13 +118,14 @@ trait App
   @JSName("addListener")
   def addListener_certificateerror(
     event: `certificate-error`,
-    listener: js.Function6[
+    listener: js.Function7[
       /* event */ Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -138,17 +137,18 @@ trait App
   @JSName("addListener")
   def addListener_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* type */ String, 
+      /* userInfo */ Any, 
+      /* details */ ContinueActivityDetails, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_continueactivityerror(
     event: `continue-activity-error`,
     listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_desktopcapturergetsources(
-    event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_didbecomeactive(event: `did-become-active`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -182,32 +182,11 @@ trait App
   @JSName("addListener")
   def addListener_ready(
     event: ready,
-    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetcurrentwebcontents(
-    event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetcurrentwindow(
-    event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
-  ): this.type = js.native
-  @JSName("addListener")
-  def addListener_remoterequire(
-    event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function2[
+      /* event */ Event, 
+      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_rendererprocesscrashed(
@@ -227,7 +206,13 @@ trait App
   @JSName("addListener")
   def addListener_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      /* additionalData */ Any, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_selectclientcertificate(
@@ -246,7 +231,7 @@ trait App
   @JSName("addListener")
   def addListener_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_webcontentscreated(
@@ -276,19 +261,6 @@ trait App
   def addRecentDocument(path: String): Unit = js.native
   
   /**
-    * A `Boolean` which when `true` disables the overrides that Electron has in place
-    * to ensure renderer processes are restarted on every navigation.  The current
-    * default value for this property is `true`.
-    *
-    * The intention is for these overrides to become disabled by default and then at
-    * some point in the future this property will be removed.  This property impacts
-    * which native modules you can use in the renderer process.  For more information
-    * on the direction Electron is going with renderer process restarts and usage of
-    * native modules in the renderer process please check out this Tracking Issue.
-    */
-  var allowRendererProcessReuse: Boolean = js.native
-  
-  /**
     * A `Menu | null` property that returns `Menu` if one has been set and `null`
     * otherwise. Users can pass a Menu to set this property.
     */
@@ -301,8 +273,8 @@ trait App
     * On macOS, setting this with any nonzero integer shows on the dock icon. On
     * Linux, this property only works for Unity launcher.
     *
-    * **Note:** Unity launcher requires the existence of a `.desktop` file to work,
-    * for more information please read Desktop Environment Integration.
+    * **Note:** Unity launcher requires a `.desktop` file to work. For more
+    * information, please read the Unity integration documentation.
     *
     * **Note:** On macOS, you need to ensure that your application has the permission
     * to display notifications for this property to take effect.
@@ -326,17 +298,39 @@ trait App
   val commandLine: CommandLine = js.native
   
   /**
+    * Configures host resolution (DNS and DNS-over-HTTPS). By default, the following
+    * resolvers will be used, in order:
+    *
+    * * DNS-over-HTTPS, if the DNS provider supports it, then
+    * * the built-in resolver (enabled on macOS only by default), then
+    * * the system's resolver (e.g. `getaddrinfo`).
+    *
+    * This can be configured to either restrict usage of non-encrypted DNS
+    * (`secureDnsMode: "secure"`), or disable DNS-over-HTTPS (`secureDnsMode: "off"`).
+    * It is also possible to enable or disable the built-in resolver.
+    *
+    * To disable insecure DNS, you can specify a `secureDnsMode` of `"secure"`. If you
+    * do so, you should make sure to provide a list of DNS-over-HTTPS servers to use,
+    * in case the user's DNS configuration does not include a provider that supports
+    * DoH.
+    *
+    * This API must be called after the `ready` event is emitted.
+    */
+  def configureHostResolver(options: ConfigureHostResolverOptions): Unit = js.native
+  
+  /**
     * By default, Chromium disables 3D APIs (e.g. WebGL) until restart on a per domain
     * basis if the GPU processes crashes too frequently. This function disables that
     * behavior.
-  This method can only be called before app is ready.
+    *
+    * This method can only be called before app is ready.
     */
   def disableDomainBlockingFor3DAPIs(): Unit = js.native
   
   /**
     * Disables hardware acceleration for current app.
-    * 
-  This method can only be called before app is ready.
+    *
+    * This method can only be called before app is ready.
     */
   def disableHardwareAcceleration(): Unit = js.native
   
@@ -352,7 +346,8 @@ trait App
     * Enables full sandbox mode on the app. This means that all renderers will be
     * launched sandboxed, regardless of the value of the `sandbox` flag in
     * WebPreferences.
-  This method can only be called before app is ready.
+    *
+    * This method can only be called before app is ready.
     */
   def enableSandbox(): Unit = js.native
   
@@ -368,8 +363,8 @@ trait App
   /**
     * On Linux, focuses on the first visible window. On macOS, makes the application
     * the active app. On Windows, focuses on the application's first window.
-    * 
-  You should seek to use the `steal` option as sparingly as possible.
+    *
+    * You should seek to use the `steal` option as sparingly as possible.
     */
   def focus(): Unit = js.native
   def focus(options: FocusOptions): Unit = js.native
@@ -389,8 +384,8 @@ trait App
     * Resolve with an object containing the following:
     *
     * * `icon` NativeImage - the display icon of the app handling the protocol.
-    * * `path` String  - installation path of the app handling the protocol.
-    * * `name` String - display name of the app handling the protocol.
+    * * `path` string  - installation path of the app handling the protocol.
+    * * `name` string - display name of the app handling the protocol.
     *
     * This method returns a promise that contains the application name, icon and path
     * of the default handler for the protocol (aka URI scheme) of a URL.
@@ -461,10 +456,7 @@ trait App
     * Using `basic` should be preferred if only basic information like `vendorId` or
     * `driverId` is needed.
     */
-  @JSName("getGPUInfo")
-  def getGPUInfo_basic(infoType: basic): js.Promise[js.Any] = js.native
-  @JSName("getGPUInfo")
-  def getGPUInfo_complete(infoType: complete): js.Promise[js.Any] = js.native
+  def getGPUInfo(infoType: basic | complete): js.Promise[Any] = js.native
   
   /**
     * * `minItems` Integer - The minimum number of items that will be shown in the
@@ -480,7 +472,8 @@ trait App
   def getJumpListSettings(): JumpListSettings = js.native
   
   /**
-    * The current application locale. Possible return values are documented here.
+    * The current application locale, fetched using Chromium's `l10n_util` library.
+    * Possible return values are documented here.
     *
     * To set the locale, you'll want to use a command line switch at app startup,
     * which may be found here.
@@ -488,15 +481,15 @@ trait App
     * **Note:** When distributing your packaged app, you have to also ship the
     * `locales` folder.
     *
-    * **Note:** On Windows, you have to call it after the `ready` events gets emitted.
+    * **Note:** This API must be called after the `ready` event is emitted.
     */
   def getLocale(): String = js.native
   
   /**
     * User operating system's locale two-letter ISO 3166 country code. The value is
     * taken from native OS APIs.
-    * 
-  **Note:** When unable to detect locale country code, it returns empty string.
+    *
+    * **Note:** When unable to detect locale country code, it returns empty string.
     */
   def getLocaleCountryCode(): String = js.native
   
@@ -505,31 +498,31 @@ trait App
     * you need to pass the same arguments here for `openAtLogin` to be set correctly.
     *
     *
-    * * `openAtLogin` Boolean - `true` if the app is set to open at login.
-    * * `openAsHidden` Boolean _macOS_ - `true` if the app is set to open as hidden at
+    * * `openAtLogin` boolean - `true` if the app is set to open at login.
+    * * `openAsHidden` boolean _macOS_ - `true` if the app is set to open as hidden at
     * login. This setting is not available on MAS builds.
-    * * `wasOpenedAtLogin` Boolean _macOS_ - `true` if the app was opened at login
+    * * `wasOpenedAtLogin` boolean _macOS_ - `true` if the app was opened at login
     * automatically. This setting is not available on MAS builds.
-    * * `wasOpenedAsHidden` Boolean _macOS_ - `true` if the app was opened as a hidden
+    * * `wasOpenedAsHidden` boolean _macOS_ - `true` if the app was opened as a hidden
     * login item. This indicates that the app should not open any windows at startup.
     * This setting is not available on MAS builds.
-    * * `restoreState` Boolean _macOS_ - `true` if the app was opened as a login item
+    * * `restoreState` boolean _macOS_ - `true` if the app was opened as a login item
     * that should restore the state from the previous session. This indicates that the
     * app should restore the windows that were open the last time the app was closed.
     * This setting is not available on MAS builds.
-    * * `executableWillLaunchAtLogin` Boolean _Windows_ - `true` if app is set to open
+    * * `executableWillLaunchAtLogin` boolean _Windows_ - `true` if app is set to open
     * at login and its run key is not deactivated. This differs from `openAtLogin` as
     * it ignores the `args` option, this property will be true if the given executable
     * would be launched at login with **any** arguments.
     * * `launchItems` Object[] _Windows_
-    *   * `name` String _Windows_ - name value of a registry entry.
-    *   * `path` String _Windows_ - The executable to an app that corresponds to a
+    *   * `name` string _Windows_ - name value of a registry entry.
+    *   * `path` string _Windows_ - The executable to an app that corresponds to a
     * registry entry.
-    *   * `args` String[] _Windows_ - the command-line arguments to pass to the
+    *   * `args` string[] _Windows_ - the command-line arguments to pass to the
     * executable.
-    *   * `scope` String _Windows_ - one of `user` or `machine`. Indicates whether the
+    *   * `scope` string _Windows_ - one of `user` or `machine`. Indicates whether the
     * registry entry is under `HKEY_CURRENT USER` or `HKEY_LOCAL_MACHINE`.
-    *   * `enabled` Boolean _Windows_ - `true` if the app registry key is startup
+    *   * `enabled` boolean _Windows_ - `true` if the app registry key is startup
     * approved and therefore shows as `enabled` in Task Manager and Windows settings.
     *
     * @platform darwin,win32
@@ -548,20 +541,6 @@ trait App
     */
   def getName(): String = js.native
   
-  @JSName("getPath")
-  def getPath_appData(name: appData): String = js.native
-  @JSName("getPath")
-  def getPath_cache(name: cache): String = js.native
-  @JSName("getPath")
-  def getPath_crashDumps(name: crashDumps): String = js.native
-  @JSName("getPath")
-  def getPath_desktop(name: desktop): String = js.native
-  @JSName("getPath")
-  def getPath_documents(name: documents): String = js.native
-  @JSName("getPath")
-  def getPath_downloads(name: downloads): String = js.native
-  @JSName("getPath")
-  def getPath_exe(name: exe): String = js.native
   /**
     * A path to a special directory or file associated with `name`. On failure, an
     * `Error` is thrown.
@@ -570,26 +549,17 @@ trait App
     * called first, a default log directory will be created equivalent to calling
     * `app.setAppLogsPath()` without a `path` parameter.
     */
-  @JSName("getPath")
-  def getPath_home(name: home): String = js.native
-  @JSName("getPath")
-  def getPath_logs(name: logs): String = js.native
-  @JSName("getPath")
-  def getPath_module(name: module): String = js.native
-  @JSName("getPath")
-  def getPath_music(name: music): String = js.native
-  @JSName("getPath")
-  def getPath_pepperFlashSystemPlugin(name: pepperFlashSystemPlugin): String = js.native
-  @JSName("getPath")
-  def getPath_pictures(name: pictures): String = js.native
-  @JSName("getPath")
-  def getPath_recent(name: recent): String = js.native
-  @JSName("getPath")
-  def getPath_temp(name: temp): String = js.native
-  @JSName("getPath")
-  def getPath_userData(name: userData): String = js.native
-  @JSName("getPath")
-  def getPath_videos(name: videos): String = js.native
+  def getPath(
+    name: home | appData | userData | sessionData | temp | exe | module | desktop | documents | downloads | music | pictures | videos | recent | logs | crashDumps
+  ): String = js.native
+  
+  /**
+    * The current system locale. On Windows and Linux, it is fetched using Chromium's
+    * `i18n` library. On macOS, the `NSLocale` object is used instead.
+    *
+    * **Note:** This API must be called after the `ready` event is emitted.
+    */
+  def getSystemLocale(): String = js.native
   
   /**
     * The version of the loaded application. If no version is found in the
@@ -664,6 +634,14 @@ trait App
   def isEmojiPanelSupported(): Boolean = js.native
   
   /**
+    * `true` if the application—including all of its windows—is hidden (e.g. with
+    * `Command-H`), `false` otherwise.
+    *
+    * @platform darwin
+    */
+  def isHidden(): Boolean = js.native
+  
+  /**
     * Whether the application is currently running from the systems Application
     * folder. Use in combination with `app.moveToApplicationsFolder()`
     *
@@ -672,7 +650,7 @@ trait App
   def isInApplicationsFolder(): Boolean = js.native
   
   /**
-    * A `Boolean` property that returns  `true` if the app is packaged, `false`
+    * A `boolean` property that returns  `true` if the app is packaged, `false`
     * otherwise. For many apps, this property can be used to distinguish development
     * and production environments.
     *
@@ -687,8 +665,8 @@ trait App
   
   /**
     * whether `Secure Keyboard Entry` is enabled.
-    * 
-  By default this API will return `false`.
+    *
+    * By default this API will return `false`.
     *
     * @platform darwin
     */
@@ -716,7 +694,7 @@ trait App
     *
     * By default, if an app of the same name as the one being moved exists in the
     * Applications directory and is _not_ running, the existing app will be trashed
-    * and the active app moved into its place. If it _is_ running, the pre-existing
+    * and the active app moved into its place. If it _is_ running, the preexisting
     * running app will assume focus and the previously active app will quit itself.
     * This behavior can be changed by providing the optional conflict handler, where
     * the boolean returned by the handler determines whether or not the move conflict
@@ -737,7 +715,7 @@ trait App
   def moveToApplicationsFolder(options: MoveToApplicationsFolderOptions): Boolean = js.native
   
   /**
-    * A `String` property that indicates the current application's name, which is the
+    * A `string` property that indicates the current application's name, which is the
     * name in the application's `package.json` file.
     *
     * Usually the `name` field of `package.json` is a short lowercase name, according
@@ -780,7 +758,7 @@ trait App
   @JSName("on")
   def on_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   /**
     * Emitted before the application starts closing its windows. Calling
@@ -828,13 +806,14 @@ trait App
   @JSName("on")
   def on_certificateerror(
     event: `certificate-error`,
-    listener: js.Function6[
+    listener: js.Function7[
       /* event */ Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -862,7 +841,13 @@ trait App
   @JSName("on")
   def on_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* type */ String, 
+      /* userInfo */ Any, 
+      /* details */ ContinueActivityDetails, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted during Handoff when an activity from a different device fails to be
@@ -874,16 +859,6 @@ trait App
   def on_continueactivityerror(
     event: `continue-activity-error`,
     listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `desktopCapturer.getSources()` is called in the renderer process of
-    * `webContents`. Calling `event.preventDefault()` will make it return empty
-    * sources.
-    */
-  @JSName("on")
-  def on_desktopcapturergetsources(
-    event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted when mac application become active. Difference from `activate` event is
@@ -966,8 +941,13 @@ trait App
     * Emitted when the user wants to open a URL with the application. Your
     * application's `Info.plist` file must define the URL scheme within the
     * `CFBundleURLTypes` key, and set `NSPrincipalClass` to `AtomApplication`.
-    * 
-  You should call `event.preventDefault()` if you want to handle this event.
+    *
+    * You should call `event.preventDefault()` if you want to handle this event.
+    *
+    * As with the `open-file` event, be sure to register a listener for the `open-url`
+    * event early in your application startup to detect if the the application being
+    * is being opened to handle a URL. If you register the listener in response to a
+    * `ready` event, you'll miss URLs that trigger the launch of your application.
     *
     * @platform darwin
     */
@@ -983,66 +963,31 @@ trait App
   def on_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
   /**
     * Emitted once, when Electron has finished initializing. On macOS, `launchInfo`
-    * holds the `userInfo` of the `NSUserNotification` that was used to open the
-    * application, if it was launched from Notification Center. You can also call
-    * `app.isReady()` to check if this event has already fired and `app.whenReady()`
-    * to get a Promise that is fulfilled when Electron is initialized.
+    * holds the `userInfo` of the `NSUserNotification` or information from
+    * `UNNotificationResponse` that was used to open the application, if it was
+    * launched from Notification Center. You can also call `app.isReady()` to check if
+    * this event has already fired and `app.whenReady()` to get a Promise that is
+    * fulfilled when Electron is initialized.
     */
   @JSName("on")
   def on_ready(
     event: ready,
-    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
+    listener: js.Function2[
+      /* event */ Event, 
+      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
+      Unit
+    ]
   ): this.type = js.native
   /**
-    * Emitted when `remote.getBuiltin()` is called in the renderer process of
-    * `webContents`. Calling `event.preventDefault()` will prevent the module from
-    * being returned. Custom value can be returned by setting `event.returnValue`.
+    * Emitted when the renderer process of `webContents` crashes or is killed.
+    *
+    * **Deprecated:** This event is superceded by the `render-process-gone` event
+    * which contains more information about why the render process disappeared. It
+    * isn't always because it crashed.  The `killed` boolean can be replaced by
+    * checking `reason === 'killed'` when you switch to that event.
+    *
+    * @deprecated
     */
-  @JSName("on")
-  def on_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `remote.getCurrentWebContents()` is called in the renderer process
-    * of `webContents`. Calling `event.preventDefault()` will prevent the object from
-    * being returned. Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetcurrentwebcontents(
-    event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `remote.getCurrentWindow()` is called in the renderer process of
-    * `webContents`. Calling `event.preventDefault()` will prevent the object from
-    * being returned. Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetcurrentwindow(
-    event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `remote.getGlobal()` is called in the renderer process of
-    * `webContents`. Calling `event.preventDefault()` will prevent the global from
-    * being returned. Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
-  ): this.type = js.native
-  /**
-    * Emitted when `remote.require()` is called in the renderer process of
-    * `webContents`. Calling `event.preventDefault()` will prevent the module from
-    * being returned. Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remoterequire(
-    event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
-  ): this.type = js.native
   @JSName("on")
   def on_rendererprocesscrashed(
     event: `renderer-process-crashed`,
@@ -1082,7 +1027,13 @@ trait App
   @JSName("on")
   def on_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      /* additionalData */ Any, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when a client certificate is requested.
@@ -1121,7 +1072,7 @@ trait App
   @JSName("on")
   def on_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   /**
     * Emitted when a new webContents is created.
@@ -1149,8 +1100,8 @@ trait App
     * this event represents the `applicationWillFinishLaunching` notification of
     * `NSApplication`. You would usually set up listeners for the `open-file` and
     * `open-url` events here, and start the crash reporter and auto updater.
-    * 
-  In most cases, you should do everything in the `ready` event handler.
+    *
+    * In most cases, you should do everything in the `ready` event handler.
     */
   @JSName("on")
   def on_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
@@ -1190,7 +1141,7 @@ trait App
   @JSName("once")
   def once_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -1212,13 +1163,14 @@ trait App
   @JSName("once")
   def once_certificateerror(
     event: `certificate-error`,
-    listener: js.Function6[
+    listener: js.Function7[
       /* event */ Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -1230,17 +1182,18 @@ trait App
   @JSName("once")
   def once_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* type */ String, 
+      /* userInfo */ Any, 
+      /* details */ ContinueActivityDetails, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_continueactivityerror(
     event: `continue-activity-error`,
     listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_desktopcapturergetsources(
-    event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_didbecomeactive(event: `did-become-active`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -1274,32 +1227,11 @@ trait App
   @JSName("once")
   def once_ready(
     event: ready,
-    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remotegetcurrentwebcontents(
-    event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remotegetcurrentwindow(
-    event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
-  ): this.type = js.native
-  @JSName("once")
-  def once_remoterequire(
-    event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function2[
+      /* event */ Event, 
+      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_rendererprocesscrashed(
@@ -1319,7 +1251,13 @@ trait App
   @JSName("once")
   def once_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      /* additionalData */ Any, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_selectclientcertificate(
@@ -1338,7 +1276,7 @@ trait App
   @JSName("once")
   def once_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_webcontentscreated(
@@ -1417,7 +1355,7 @@ trait App
   @JSName("removeListener")
   def removeListener_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -1439,13 +1377,14 @@ trait App
   @JSName("removeListener")
   def removeListener_certificateerror(
     event: `certificate-error`,
-    listener: js.Function6[
+    listener: js.Function7[
       /* event */ Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
       /* callback */ js.Function1[/* isTrusted */ Boolean, Unit], 
+      /* isMainFrame */ Boolean, 
       Unit
     ]
   ): this.type = js.native
@@ -1457,17 +1396,18 @@ trait App
   @JSName("removeListener")
   def removeListener_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* type */ String, 
+      /* userInfo */ Any, 
+      /* details */ ContinueActivityDetails, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_continueactivityerror(
     event: `continue-activity-error`,
     listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_desktopcapturergetsources(
-    event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_didbecomeactive(event: `did-become-active`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
@@ -1501,32 +1441,11 @@ trait App
   @JSName("removeListener")
   def removeListener_ready(
     event: ready,
-    listener: js.Function2[/* event */ Event, /* launchInfo */ Record[String, js.Any], Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetbuiltin(
-    event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetcurrentwebcontents(
-    event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetcurrentwindow(
-    event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remotegetglobal(
-    event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_remoterequire(
-    event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function2[
+      /* event */ Event, 
+      /* launchInfo */ (Record[String, Any]) | NotificationResponse, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_rendererprocesscrashed(
@@ -1546,7 +1465,13 @@ trait App
   @JSName("removeListener")
   def removeListener_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      /* additionalData */ Any, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_selectclientcertificate(
@@ -1565,7 +1490,7 @@ trait App
   @JSName("removeListener")
   def removeListener_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_webcontentscreated(
@@ -1605,6 +1530,7 @@ trait App
     * starts:
     */
   def requestSingleInstanceLock(): Boolean = js.native
+  def requestSingleInstanceLock(additionalData: Record[Any, Any]): Boolean = js.native
   
   /**
     * Marks the current Handoff user activity as inactive without invalidating it.
@@ -1614,12 +1540,29 @@ trait App
   def resignCurrentActivity(): Unit = js.native
   
   /**
-    * A `Boolean` which when `true` indicates that the app is currently running under
+    * A `boolean` which when `true` indicates that the app is currently running under
+    * an ARM64 translator (like the macOS Rosetta Translator Environment or Windows
+    * WOW).
+    *
+    * You can use this property to prompt users to download the arm64 version of your
+    * application when they are running the x64 version under Rosetta incorrectly.
+    *
+    * @platform darwin,win32
+    */
+  val runningUnderARM64Translation: Boolean = js.native
+  
+  /**
+    * A `boolean` which when `true` indicates that the app is currently running under
     * the Rosetta Translator Environment.
     *
     * You can use this property to prompt users to download the arm64 version of your
     * application when they are running the x64 version under Rosetta incorrectly.
     *
+    * **Deprecated:** This property is superceded by the
+    * `runningUnderARM64Translation` property which detects when the app is being
+    * translated to ARM64 in both macOS and Windows.
+    *
+    * @deprecated
     * @platform darwin
     */
   val runningUnderRosettaTranslation: Boolean = js.native
@@ -1651,10 +1594,6 @@ trait App
     */
   def setAccessibilitySupportEnabled(enabled: Boolean): Unit = js.native
   
-  @JSName("setActivationPolicy")
-  def setActivationPolicy_accessory(policy: accessory): Unit = js.native
-  @JSName("setActivationPolicy")
-  def setActivationPolicy_prohibited(policy: prohibited): Unit = js.native
   /**
     * Sets the activation policy for a given app.
     *
@@ -1670,8 +1609,7 @@ trait App
     *
     * @platform darwin
     */
-  @JSName("setActivationPolicy")
-  def setActivationPolicy_regular(policy: regular): Unit = js.native
+  def setActivationPolicy(policy: regular | accessory | prohibited): Unit = js.native
   
   /**
     * Sets or creates a directory your app's logs which can then be manipulated with
@@ -1728,11 +1666,12 @@ trait App
     *
     * On macOS, it shows on the dock icon. On Linux, it only works for Unity launcher.
     *
-    * **Note:** Unity launcher requires the existence of a `.desktop` file to work,
-    * for more information please read Desktop Environment Integration.
+    * **Note:** Unity launcher requires a `.desktop` file to work. For more
+    * information, please read the Unity integration documentation.
     *
     * @platform linux,darwin
     */
+  def setBadgeCount(): Boolean = js.native
   def setBadgeCount(count: Double): Boolean = js.native
   
   /**
@@ -1764,13 +1703,17 @@ trait App
     * removed item to a custom category earlier than that will result in the entire
     * custom category being omitted from the Jump List. The list of removed items can
     * be obtained using `app.getJumpListSettings()`.
-    * 
-  Here's a very simple example of creating a custom Jump List:
+    *
+    * **Note:** The maximum length of a Jump List item's `description` property is 260
+    * characters. Beyond this limit, the item will not be added to the Jump List, nor
+    * will it be displayed.
+    *
+    * Here's a very simple example of creating a custom Jump List:
     *
     * @platform win32
     */
-  def setJumpList(): Unit = js.native
-  def setJumpList(categories: js.Array[JumpListCategory]): Unit = js.native
+  def setJumpList(): ok | error | invalidSeparatorError | fileTypeRegistrationError | customCategoryAccessDeniedError = js.native
+  def setJumpList(categories: js.Array[JumpListCategory]): ok | error | invalidSeparatorError | fileTypeRegistrationError | customCategoryAccessDeniedError = js.native
   
   /**
     * To work with Electron's `autoUpdater` on Windows, which uses Squirrel, you'll
@@ -1796,9 +1739,9 @@ trait App
     *
     * You can only override paths of a `name` defined in `app.getPath`.
     *
-    * By default, web pages' cookies and caches will be stored under the `userData`
+    * By default, web pages' cookies and caches will be stored under the `sessionData`
     * directory. If you want to change this location, you have to override the
-    * `userData` path before the `ready` event of the `app` module is emitted.
+    * `sessionData` path before the `ready` event of the `app` module is emitted.
     */
   def setPath(name: String, path: String): Unit = js.native
   
@@ -1823,8 +1766,8 @@ trait App
     *
     * @platform darwin
     */
-  def setUserActivity(`type`: String, userInfo: js.Any): Unit = js.native
-  def setUserActivity(`type`: String, userInfo: js.Any, webpageURL: String): Unit = js.native
+  def setUserActivity(`type`: String, userInfo: Any): Unit = js.native
+  def setUserActivity(`type`: String, userInfo: Any, webpageURL: String): Unit = js.native
   
   /**
     * Adds `tasks` to the Tasks category of the Jump List on Windows.
@@ -1882,10 +1825,10 @@ trait App
     *
     * @platform darwin
     */
-  def updateCurrentActivity(`type`: String, userInfo: js.Any): Unit = js.native
+  def updateCurrentActivity(`type`: String, userInfo: Any): Unit = js.native
   
   /**
-    * A `String` which is the user agent string Electron will use as a global
+    * A `string` which is the user agent string Electron will use as a global
     * fallback.
     *
     * This is the user agent that will be used when no user agent is set at the

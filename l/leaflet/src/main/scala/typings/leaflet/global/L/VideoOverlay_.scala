@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.VideoOverlay")
 @js.native
-class VideoOverlay_ protected ()
+open class VideoOverlay_ protected ()
   extends typings.leaflet.mod.VideoOverlay_ {
   /** VideoOverlay doesn't extend ImageOverlay because VideoOverlay.getElement returns HTMLImageElement */
   def this(video: String, bounds: LatLngBoundsExpression) = this()

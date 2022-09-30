@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.Cookies")
 @js.native
-class Cookies ()
+open class Cookies ()
   extends typings.electron.Electron.Cookies

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__cli-plugin-metro
 
-Typings are for version 9.1.1
+Typings are for version 9.1.3
 
 
 

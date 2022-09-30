@@ -18,7 +18,7 @@ trait Options[TKeys, TState] extends StObject {
   /**
     * A function returning a history object compatible with the popular `history` package.
     */
-  var createHistory: js.UndefOr[js.Function0[History[typings.history.mod.LocationState]]] = js.undefined
+  var createHistory: js.UndefOr[js.Function0[History]] = js.undefined
   
   /**
     * A function receiving `message` and `callback` when navigation is blocked with `confirmLeave`.
@@ -34,7 +34,7 @@ trait Options[TKeys, TState] extends StObject {
     * For example, you could pass an instance of an API client initialised with authentication cookies,
     * or a function `addReducer` to inject new code split reducers into the store.
     */
-  var extra: js.UndefOr[js.Any] = js.undefined
+  var extra: js.UndefOr[Any] = js.undefined
   
   /**
     * Can be set to false to bypass the initial dispatch, so you can do it manually, perhaps after running sagas.
@@ -62,7 +62,7 @@ trait Options[TKeys, TState] extends StObject {
     *  or if you manually call dispatch(redirect({ type: NOT_FOUND })), where NOT_FOUND is an export from this package.
     *  The type in actions and state will be NOT_FOUND, which you can use to show a 404 page.
     */
-  var notFoundPath: js.UndefOr[String] = js.undefined
+  var notFoundPath: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A simple function that will be called after the routes change.
@@ -70,12 +70,7 @@ trait Options[TKeys, TState] extends StObject {
     * as well as the `bag` object as a third parameter, which contains the dispatched `action` and the configured `extra` value.
     */
   var onAfterChange: js.UndefOr[
-    js.Function3[
-      /* dispatch */ Dispatch[js.Any], 
-      /* getState */ StateGetter[TState], 
-      /* bag */ Bag, 
-      Unit
-    ]
+    js.Function3[/* dispatch */ Dispatch[Any], /* getState */ StateGetter[TState], /* bag */ Bag, Unit]
   ] = js.undefined
   
   /**
@@ -85,12 +80,7 @@ trait Options[TKeys, TState] extends StObject {
     * and the configured `extra` value. Actions with kinds `back`, `next`, and `pop` trigger this.
     */
   var onBackNext: js.UndefOr[
-    js.Function3[
-      /* dispatch */ Dispatch[js.Any], 
-      /* getState */ StateGetter[TState], 
-      /* bag */ Bag, 
-      Unit
-    ]
+    js.Function3[/* dispatch */ Dispatch[Any], /* getState */ StateGetter[TState], /* bag */ Bag, Unit]
   ] = js.undefined
   
   /**
@@ -99,12 +89,7 @@ trait Options[TKeys, TState] extends StObject {
     * as well as the `bag` object as a third parameter, which contains the dispatched `action` and the configured `extra` value.
     */
   var onBeforeChange: js.UndefOr[
-    js.Function3[
-      /* dispatch */ Dispatch[js.Any], 
-      /* getState */ StateGetter[TState], 
-      /* bag */ Bag, 
-      Unit
-    ]
+    js.Function3[/* dispatch */ Dispatch[Any], /* getState */ StateGetter[TState], /* bag */ Bag, Unit]
   ] = js.undefined
   
   /**
@@ -116,9 +101,7 @@ trait Options[TKeys, TState] extends StObject {
   /**
     * A function to update window/elements scroll position.
     */
-  var restoreScroll: js.UndefOr[
-    js.Function1[/* history */ History[typings.history.mod.LocationState], ScrollBehavior_]
-  ] = js.undefined
+  var restoreScroll: js.UndefOr[js.Function1[/* history */ History, ScrollBehavior_]] = js.undefined
   
   /**
     * Whether or not window.scrollTo(0, 0) should be run on route changes so the user starts each page at the top.
@@ -150,7 +133,7 @@ object Options {
     
     inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
     
-    inline def setCreateHistory(value: () => History[typings.history.mod.LocationState]): Self = StObject.set(x, "createHistory", js.Any.fromFunction0(value))
+    inline def setCreateHistory(value: () => History): Self = StObject.set(x, "createHistory", js.Any.fromFunction0(value))
     
     inline def setCreateHistoryUndefined: Self = StObject.set(x, "createHistory", js.undefined)
     
@@ -158,7 +141,7 @@ object Options {
     
     inline def setDisplayConfirmLeaveUndefined: Self = StObject.set(x, "displayConfirmLeave", js.undefined)
     
-    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
@@ -170,7 +153,7 @@ object Options {
     
     inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
     
-    inline def setInitialEntriesVarargs(value: Pathname*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
+    inline def setInitialEntriesVarargs(value: Pathname*): Self = StObject.set(x, "initialEntries", js.Array(value*))
     
     inline def setLocation(value: String | (SelectLocationState_[TKeys, TState])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -184,23 +167,19 @@ object Options {
     
     inline def setNotFoundPath(value: String): Self = StObject.set(x, "notFoundPath", value.asInstanceOf[js.Any])
     
+    inline def setNotFoundPathNull: Self = StObject.set(x, "notFoundPath", null)
+    
     inline def setNotFoundPathUndefined: Self = StObject.set(x, "notFoundPath", js.undefined)
     
-    inline def setOnAfterChange(
-      value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
-    ): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction3(value))
+    inline def setOnAfterChange(value: (/* dispatch */ Dispatch[Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction3(value))
     
     inline def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
     
-    inline def setOnBackNext(
-      value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
-    ): Self = StObject.set(x, "onBackNext", js.Any.fromFunction3(value))
+    inline def setOnBackNext(value: (/* dispatch */ Dispatch[Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onBackNext", js.Any.fromFunction3(value))
     
     inline def setOnBackNextUndefined: Self = StObject.set(x, "onBackNext", js.undefined)
     
-    inline def setOnBeforeChange(
-      value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
-    ): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction3(value))
+    inline def setOnBeforeChange(value: (/* dispatch */ Dispatch[Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction3(value))
     
     inline def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)
     
@@ -208,7 +187,7 @@ object Options {
     
     inline def setQuerySerializerUndefined: Self = StObject.set(x, "querySerializer", js.undefined)
     
-    inline def setRestoreScroll(value: /* history */ History[typings.history.mod.LocationState] => ScrollBehavior_): Self = StObject.set(x, "restoreScroll", js.Any.fromFunction1(value))
+    inline def setRestoreScroll(value: /* history */ History => ScrollBehavior_): Self = StObject.set(x, "restoreScroll", js.Any.fromFunction1(value))
     
     inline def setRestoreScrollUndefined: Self = StObject.set(x, "restoreScroll", js.undefined)
     

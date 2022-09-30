@@ -11,5 +11,5 @@ object libPurgeStoredStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S](config: PersistConfig[S, js.Any, js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default[S](config: PersistConfig[S, Any, Any, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

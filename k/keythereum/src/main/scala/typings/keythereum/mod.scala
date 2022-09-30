@@ -8,7 +8,7 @@ import typings.keythereum.anon.FnCallAlgorithmKeyIvOptions
 import typings.keythereum.anon.FnCallSizeCallback
 import typings.keythereum.anon.Iv
 import typings.keythereum.anon.Mac
-import typings.keythereum.keythereumNumbers.`3`
+import typings.keythereum.keythereumInts.`3`
 import typings.keythereum.keythereumStrings.pbkdf2
 import typings.keythereum.keythereumStrings.scrypt
 import typings.keythereum.mod.KeyStore.CryptoParams

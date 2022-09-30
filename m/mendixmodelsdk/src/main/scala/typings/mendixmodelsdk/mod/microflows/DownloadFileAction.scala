@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.DownloadFileAction")
 @js.native
-class DownloadFileAction protected ()
+open class DownloadFileAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.DownloadFileAction {
   def this(
     model: AbstractModel,

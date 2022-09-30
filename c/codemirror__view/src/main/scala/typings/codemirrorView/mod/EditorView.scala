@@ -19,8 +19,8 @@ import typings.codemirrorView.anon.PartialRect
 import typings.codemirrorView.anon.X
 import typings.codemirrorView.anon.Y
 import typings.codemirrorView.codemirrorViewBooleans.`false`
-import typings.codemirrorView.codemirrorViewNumbers.`-1`
-import typings.codemirrorView.codemirrorViewNumbers.`1`
+import typings.codemirrorView.codemirrorViewInts.`-1`
+import typings.codemirrorView.codemirrorViewInts.`1`
 import typings.std.Document
 import typings.std.DocumentOrShadowRoot
 import typings.std.HTMLElement

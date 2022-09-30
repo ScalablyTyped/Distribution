@@ -63,7 +63,7 @@ object nativeXRFrameMod {
     def worldInformation_MNativeXRFrame: js.UndefOr[XRWorldInformation] = js.native
   }
   
-  /** @hidden */
+  /** @internal */
   trait INativeXRFrame
     extends StObject
        with XRFrame {

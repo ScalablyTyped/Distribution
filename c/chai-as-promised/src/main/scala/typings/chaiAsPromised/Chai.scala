@@ -14,25 +14,25 @@ object Chai {
   @js.native
   trait Assert extends StObject {
     
-    def becomes(promise: js.Thenable[Any], expected: Any): js.Thenable[Unit] = js.native
-    def becomes(promise: js.Thenable[Any], expected: Any, message: String): js.Thenable[Unit] = js.native
+    def becomes(promise: PromiseLike[Any], expected: Any): PromiseLike[Unit] = js.native
+    def becomes(promise: PromiseLike[Any], expected: Any, message: String): PromiseLike[Unit] = js.native
     
-    def doesNotBecome(promise: js.Thenable[Any], expected: Any): js.Thenable[Unit] = js.native
-    def doesNotBecome(promise: js.Thenable[Any], expected: Any, message: String): js.Thenable[Unit] = js.native
+    def doesNotBecome(promise: PromiseLike[Any], expected: Any): PromiseLike[Unit] = js.native
+    def doesNotBecome(promise: PromiseLike[Any], expected: Any, message: String): PromiseLike[Unit] = js.native
     
     var eventually: PromisedAssert = js.native
     
-    def isFulfilled(promise: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isFulfilled(promise: js.Thenable[Any], message: String): js.Thenable[Unit] = js.native
+    def isFulfilled(promise: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isFulfilled(promise: PromiseLike[Any], message: String): PromiseLike[Unit] = js.native
     
-    def isRejected(promise: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isRejected(promise: js.Thenable[Any], expected: Any): js.Thenable[Unit] = js.native
-    def isRejected(promise: js.Thenable[Any], expected: Any, message: String): js.Thenable[Unit] = js.native
-    def isRejected(promise: js.Thenable[Any], `match`: js.RegExp): js.Thenable[Unit] = js.native
-    def isRejected(promise: js.Thenable[Any], `match`: js.RegExp, message: String): js.Thenable[Unit] = js.native
-    def isRejected(promise: js.Thenable[Any], message: String): js.Thenable[Unit] = js.native
+    def isRejected(promise: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isRejected(promise: PromiseLike[Any], expected: Any): PromiseLike[Unit] = js.native
+    def isRejected(promise: PromiseLike[Any], expected: Any, message: String): PromiseLike[Unit] = js.native
+    def isRejected(promise: PromiseLike[Any], `match`: js.RegExp): PromiseLike[Unit] = js.native
+    def isRejected(promise: PromiseLike[Any], `match`: js.RegExp, message: String): PromiseLike[Unit] = js.native
+    def isRejected(promise: PromiseLike[Any], message: String): PromiseLike[Unit] = js.native
     
-    def notify(fn: js.Function): js.Thenable[Unit] = js.native
+    def notify(fn: js.Function): PromiseLike[Unit] = js.native
   }
   
   // For BDD API
@@ -483,440 +483,440 @@ object Chai {
   @js.native
   trait PromisedAssert extends StObject {
     
-    def Throw(fn: js.Function): js.Thenable[Unit] = js.native
-    def Throw(fn: js.Function, errType: js.Function): js.Thenable[Unit] = js.native
-    def Throw(fn: js.Function, errType: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def Throw(fn: js.Function, errType: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
-    def Throw(fn: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def Throw(fn: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
+    def Throw(fn: js.Function): PromiseLike[Unit] = js.native
+    def Throw(fn: js.Function, errType: js.Function): PromiseLike[Unit] = js.native
+    def Throw(fn: js.Function, errType: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def Throw(fn: js.Function, errType: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
+    def Throw(fn: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def Throw(fn: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
     
-    def approximately(act: js.Thenable[Double], exp: Double, delta: Double): js.Thenable[Unit] = js.native
-    def approximately(act: js.Thenable[Double], exp: Double, delta: Double, msg: String): js.Thenable[Unit] = js.native
+    def approximately(act: PromiseLike[Double], exp: Double, delta: Double): PromiseLike[Unit] = js.native
+    def approximately(act: PromiseLike[Double], exp: Double, delta: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def changes(modifier: js.Function, obj: js.Object, property: String): js.Thenable[Unit] = js.native
-    def changes(modifier: js.Function, obj: js.Object, property: String, msg: String): js.Thenable[Unit] = js.native
+    def changes(modifier: js.Function, obj: js.Object, property: String): PromiseLike[Unit] = js.native
+    def changes(modifier: js.Function, obj: js.Object, property: String, msg: String): PromiseLike[Unit] = js.native
     
-    def changesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double): js.Thenable[Unit] = js.native
-    def changesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): js.Thenable[Unit] = js.native
+    def changesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double): PromiseLike[Unit] = js.native
+    def changesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def changesBy(modifier: js.Function, obj: js.Object, property: String, change: Double): js.Thenable[Unit] = js.native
-    def changesBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): js.Thenable[Unit] = js.native
-    
-    def closeTo(act: js.Thenable[Double], exp: Double, delta: Double): js.Thenable[Unit] = js.native
-    def closeTo(act: js.Thenable[Double], exp: Double, delta: Double, msg: String): js.Thenable[Unit] = js.native
-    
-    def containsAllDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def containsAllDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def containsAllDeepKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def containsAllDeepKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
-    
-    def containsAllKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def containsAllKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def containsAllKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def containsAllKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
-    
-    def decreases(modifier: js.Function, obj: js.Object, property: String): js.Thenable[Unit] = js.native
-    def decreases(modifier: js.Function, obj: js.Object, property: String, msg: String): js.Thenable[Unit] = js.native
-    
-    def decreasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double): js.Thenable[Unit] = js.native
-    def decreasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): js.Thenable[Unit] = js.native
-    
-    def decreasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double): js.Thenable[Unit] = js.native
-    def decreasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepEqual(act: js.Thenable[Any], exp: Any): js.Thenable[Unit] = js.native
-    def deepEqual(act: js.Thenable[Any], exp: Any, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepInclude(exp: js.Thenable[js.Array[Any] | String], inc: Any): js.Thenable[Unit] = js.native
-    def deepInclude(exp: js.Thenable[js.Array[Any] | String], inc: Any, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepNestedInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def deepNestedInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepNestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def deepNestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepOwnInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def deepOwnInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepProperty(obj: js.Thenable[js.Object], prop: String): js.Thenable[Unit] = js.native
-    def deepProperty(obj: js.Thenable[js.Object], prop: String, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepPropertyNotVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def deepPropertyNotVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
-    
-    def deepPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def deepPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
-    
-    def doesNotChange(modifier: js.Function, obj: js.Object, property: String): js.Thenable[Unit] = js.native
-    def doesNotChange(modifier: js.Function, obj: js.Object, property: String, msg: String): js.Thenable[Unit] = js.native
-    
-    def doesNotDecrease(modifier: js.Function, obj: js.Object, property: String): js.Thenable[Unit] = js.native
-    def doesNotDecrease(modifier: js.Function, obj: js.Object, property: String, msg: String): js.Thenable[Unit] = js.native
-    
-    def doesNotHaveAllDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def doesNotHaveAllDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def doesNotHaveAllDeepKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def doesNotHaveAllDeepKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def changesBy(modifier: js.Function, obj: js.Object, property: String, change: Double): PromiseLike[Unit] = js.native
+    def changesBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): PromiseLike[Unit] = js.native
+    
+    def closeTo(act: PromiseLike[Double], exp: Double, delta: Double): PromiseLike[Unit] = js.native
+    def closeTo(act: PromiseLike[Double], exp: Double, delta: Double, msg: String): PromiseLike[Unit] = js.native
+    
+    def containsAllDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def containsAllDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def containsAllDeepKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def containsAllDeepKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
+    
+    def containsAllKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def containsAllKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def containsAllKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def containsAllKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
+    
+    def decreases(modifier: js.Function, obj: js.Object, property: String): PromiseLike[Unit] = js.native
+    def decreases(modifier: js.Function, obj: js.Object, property: String, msg: String): PromiseLike[Unit] = js.native
+    
+    def decreasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double): PromiseLike[Unit] = js.native
+    def decreasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): PromiseLike[Unit] = js.native
+    
+    def decreasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double): PromiseLike[Unit] = js.native
+    def decreasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepEqual(act: PromiseLike[Any], exp: Any): PromiseLike[Unit] = js.native
+    def deepEqual(act: PromiseLike[Any], exp: Any, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepInclude(exp: PromiseLike[js.Array[Any] | String], inc: Any): PromiseLike[Unit] = js.native
+    def deepInclude(exp: PromiseLike[js.Array[Any] | String], inc: Any, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepNestedInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def deepNestedInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepNestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def deepNestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepOwnInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def deepOwnInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepProperty(obj: PromiseLike[js.Object], prop: String): PromiseLike[Unit] = js.native
+    def deepProperty(obj: PromiseLike[js.Object], prop: String, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepPropertyNotVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def deepPropertyNotVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
+    
+    def deepPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def deepPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
+    
+    def doesNotChange(modifier: js.Function, obj: js.Object, property: String): PromiseLike[Unit] = js.native
+    def doesNotChange(modifier: js.Function, obj: js.Object, property: String, msg: String): PromiseLike[Unit] = js.native
+    
+    def doesNotDecrease(modifier: js.Function, obj: js.Object, property: String): PromiseLike[Unit] = js.native
+    def doesNotDecrease(modifier: js.Function, obj: js.Object, property: String, msg: String): PromiseLike[Unit] = js.native
+    
+    def doesNotHaveAllDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def doesNotHaveAllDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def doesNotHaveAllDeepKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def doesNotHaveAllDeepKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def doesNotHaveAllKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def doesNotHaveAllKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def doesNotHaveAllKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def doesNotHaveAllKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def doesNotHaveAllKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def doesNotHaveAllKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def doesNotHaveAllKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def doesNotHaveAllKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def doesNotHaveAnyDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def doesNotHaveAnyDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def doesNotHaveAnyDeepKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def doesNotHaveAnyDeepKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def doesNotHaveAnyDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def doesNotHaveAnyDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def doesNotHaveAnyDeepKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def doesNotHaveAnyDeepKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def doesNotHaveAnyKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def doesNotHaveAnyKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def doesNotHaveAnyKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def doesNotHaveAnyKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def doesNotHaveAnyKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def doesNotHaveAnyKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def doesNotHaveAnyKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def doesNotHaveAnyKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def doesNotIncrease(modifier: js.Function, obj: js.Object, property: String): js.Thenable[Unit] = js.native
-    def doesNotIncrease(modifier: js.Function, obj: js.Object, property: String, msg: String): js.Thenable[Unit] = js.native
+    def doesNotIncrease(modifier: js.Function, obj: js.Object, property: String): PromiseLike[Unit] = js.native
+    def doesNotIncrease(modifier: js.Function, obj: js.Object, property: String, msg: String): PromiseLike[Unit] = js.native
     
-    def doesNotThrow(fn: js.Function): js.Thenable[Unit] = js.native
-    def doesNotThrow(fn: js.Function, errType: js.Function): js.Thenable[Unit] = js.native
-    def doesNotThrow(fn: js.Function, errType: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def doesNotThrow(fn: js.Function, errType: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
-    def doesNotThrow(fn: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def doesNotThrow(fn: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
+    def doesNotThrow(fn: js.Function): PromiseLike[Unit] = js.native
+    def doesNotThrow(fn: js.Function, errType: js.Function): PromiseLike[Unit] = js.native
+    def doesNotThrow(fn: js.Function, errType: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def doesNotThrow(fn: js.Function, errType: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
+    def doesNotThrow(fn: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def doesNotThrow(fn: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
     
-    def equal(act: js.Thenable[Any], exp: Any): js.Thenable[Unit] = js.native
-    def equal(act: js.Thenable[Any], exp: Any, msg: String): js.Thenable[Unit] = js.native
+    def equal(act: PromiseLike[Any], exp: Any): PromiseLike[Unit] = js.native
+    def equal(act: PromiseLike[Any], exp: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def exists(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def exists(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def exists(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def exists(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def fail(): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any], expected: Any): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any], expected: Any, msg: String): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any], expected: Any, msg: String, operator: String): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any], expected: Any, msg: Unit, operator: String): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any], expected: Unit, msg: String): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any], expected: Unit, msg: String, operator: String): js.Thenable[Unit] = js.native
-    def fail(actual: js.Thenable[Any], expected: Unit, msg: Unit, operator: String): js.Thenable[Unit] = js.native
-    def fail(actual: Unit, expected: Any): js.Thenable[Unit] = js.native
-    def fail(actual: Unit, expected: Any, msg: String): js.Thenable[Unit] = js.native
-    def fail(actual: Unit, expected: Any, msg: String, operator: String): js.Thenable[Unit] = js.native
-    def fail(actual: Unit, expected: Any, msg: Unit, operator: String): js.Thenable[Unit] = js.native
-    def fail(actual: Unit, expected: Unit, msg: String): js.Thenable[Unit] = js.native
-    def fail(actual: Unit, expected: Unit, msg: String, operator: String): js.Thenable[Unit] = js.native
-    def fail(actual: Unit, expected: Unit, msg: Unit, operator: String): js.Thenable[Unit] = js.native
+    def fail(): PromiseLike[Unit] = js.native
+    def fail(actual: Unit, expected: Any): PromiseLike[Unit] = js.native
+    def fail(actual: Unit, expected: Any, msg: String): PromiseLike[Unit] = js.native
+    def fail(actual: Unit, expected: Any, msg: String, operator: String): PromiseLike[Unit] = js.native
+    def fail(actual: Unit, expected: Any, msg: Unit, operator: String): PromiseLike[Unit] = js.native
+    def fail(actual: Unit, expected: Unit, msg: String): PromiseLike[Unit] = js.native
+    def fail(actual: Unit, expected: Unit, msg: String, operator: String): PromiseLike[Unit] = js.native
+    def fail(actual: Unit, expected: Unit, msg: Unit, operator: String): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any], expected: Any): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any], expected: Any, msg: String): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any], expected: Any, msg: String, operator: String): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any], expected: Any, msg: Unit, operator: String): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any], expected: Unit, msg: String): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any], expected: Unit, msg: String, operator: String): PromiseLike[Unit] = js.native
+    def fail(actual: PromiseLike[Any], expected: Unit, msg: Unit, operator: String): PromiseLike[Unit] = js.native
     
-    def frozen(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def frozen(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def frozen(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def frozen(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def hasAllDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def hasAllDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def hasAllDeepKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def hasAllDeepKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def hasAllDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def hasAllDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def hasAllDeepKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def hasAllDeepKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def hasAllKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def hasAllKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def hasAllKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def hasAllKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def hasAllKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def hasAllKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def hasAllKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def hasAllKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def hasAnyDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def hasAnyDeepKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def hasAnyDeepKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def hasAnyDeepKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def hasAnyDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def hasAnyDeepKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def hasAnyDeepKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def hasAnyDeepKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def hasAnyKeys(obj: js.Thenable[Any], keys: js.Array[Any]): js.Thenable[Unit] = js.native
-    def hasAnyKeys(obj: js.Thenable[Any], keys: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
-    def hasAnyKeys(obj: js.Thenable[Any], keys: js.Object): js.Thenable[Unit] = js.native
-    def hasAnyKeys(obj: js.Thenable[Any], keys: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def hasAnyKeys(obj: PromiseLike[Any], keys: js.Array[Any]): PromiseLike[Unit] = js.native
+    def hasAnyKeys(obj: PromiseLike[Any], keys: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
+    def hasAnyKeys(obj: PromiseLike[Any], keys: js.Object): PromiseLike[Unit] = js.native
+    def hasAnyKeys(obj: PromiseLike[Any], keys: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def ifError(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def ifError(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def ifError(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def ifError(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def include(exp: js.Thenable[js.Array[Any] | String], inc: Any): js.Thenable[Unit] = js.native
-    def include(exp: js.Thenable[js.Array[Any] | String], inc: Any, msg: String): js.Thenable[Unit] = js.native
+    def include(exp: PromiseLike[js.Array[Any] | String], inc: Any): PromiseLike[Unit] = js.native
+    def include(exp: PromiseLike[js.Array[Any] | String], inc: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def includeDeepMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def includeDeepMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def includeDeepMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def includeDeepMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def includeDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def includeDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def includeDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def includeDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def includeMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def includeMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def includeMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def includeMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def includeOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def includeOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def includeOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def includeOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def increases(modifier: js.Function, obj: js.Object, property: String): js.Thenable[Unit] = js.native
-    def increases(modifier: js.Function, obj: js.Object, property: String, msg: String): js.Thenable[Unit] = js.native
+    def increases(modifier: js.Function, obj: js.Object, property: String): PromiseLike[Unit] = js.native
+    def increases(modifier: js.Function, obj: js.Object, property: String, msg: String): PromiseLike[Unit] = js.native
     
-    def increasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double): js.Thenable[Unit] = js.native
-    def increasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): js.Thenable[Unit] = js.native
+    def increasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double): PromiseLike[Unit] = js.native
+    def increasesButNotBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def increasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double): js.Thenable[Unit] = js.native
-    def increasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): js.Thenable[Unit] = js.native
+    def increasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double): PromiseLike[Unit] = js.native
+    def increasesBy(modifier: js.Function, obj: js.Object, property: String, change: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def instanceOf(`val`: js.Thenable[Any], `type`: js.Function): js.Thenable[Unit] = js.native
-    def instanceOf(`val`: js.Thenable[Any], `type`: js.Function, msg: String): js.Thenable[Unit] = js.native
+    def instanceOf(`val`: PromiseLike[Any], `type`: js.Function): PromiseLike[Unit] = js.native
+    def instanceOf(`val`: PromiseLike[Any], `type`: js.Function, msg: String): PromiseLike[Unit] = js.native
     
-    def isAbove(`val`: js.Thenable[Double], above: Double): js.Thenable[Unit] = js.native
-    def isAbove(`val`: js.Thenable[Double], above: Double, msg: String): js.Thenable[Unit] = js.native
+    def isAbove(`val`: PromiseLike[Double], above: Double): PromiseLike[Unit] = js.native
+    def isAbove(`val`: PromiseLike[Double], above: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def isArray(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isArray(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isArray(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isArray(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isAtBelow(`val`: js.Thenable[Double], below: Double): js.Thenable[Unit] = js.native
-    def isAtBelow(`val`: js.Thenable[Double], below: Double, msg: String): js.Thenable[Unit] = js.native
+    def isAtBelow(`val`: PromiseLike[Double], below: Double): PromiseLike[Unit] = js.native
+    def isAtBelow(`val`: PromiseLike[Double], below: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def isAtLeast(`val`: js.Thenable[Double], atLeast: Double): js.Thenable[Unit] = js.native
-    def isAtLeast(`val`: js.Thenable[Double], atLeast: Double, msg: String): js.Thenable[Unit] = js.native
+    def isAtLeast(`val`: PromiseLike[Double], atLeast: Double): PromiseLike[Unit] = js.native
+    def isAtLeast(`val`: PromiseLike[Double], atLeast: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def isAtMost(`val`: js.Thenable[Double], atMost: Double): js.Thenable[Unit] = js.native
-    def isAtMost(`val`: js.Thenable[Double], atMost: Double, msg: String): js.Thenable[Unit] = js.native
+    def isAtMost(`val`: PromiseLike[Double], atMost: Double): PromiseLike[Unit] = js.native
+    def isAtMost(`val`: PromiseLike[Double], atMost: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def isBoolean(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isBoolean(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isBoolean(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isBoolean(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isDefined(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isDefined(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isDefined(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isDefined(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isEmpty(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isEmpty(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isEmpty(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isEmpty(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isExtensible(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def isExtensible(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def isExtensible(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def isExtensible(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def isFalse(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isFalse(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isFalse(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isFalse(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isFinite(`val`: js.Thenable[Double]): js.Thenable[Unit] = js.native
-    def isFinite(`val`: js.Thenable[Double], msg: String): js.Thenable[Unit] = js.native
+    def isFinite(`val`: PromiseLike[Double]): PromiseLike[Unit] = js.native
+    def isFinite(`val`: PromiseLike[Double], msg: String): PromiseLike[Unit] = js.native
     
-    def isFrozen(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def isFrozen(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def isFrozen(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def isFrozen(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def isFunction(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isFunction(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isFunction(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isFunction(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNaN(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNaN(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNaN(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNaN(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotArray(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotArray(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotArray(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotArray(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotBoolean(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotBoolean(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotBoolean(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotBoolean(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotEmpty(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotEmpty(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotEmpty(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotEmpty(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotExtensible(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def isNotExtensible(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def isNotExtensible(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def isNotExtensible(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotFalse(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotFalse(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotFalse(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotFalse(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotFrozen(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def isNotFrozen(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def isNotFrozen(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def isNotFrozen(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotFunction(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotFunction(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotFunction(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotFunction(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotNaN(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotNaN(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotNaN(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotNaN(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotNull(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotNull(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotNull(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotNull(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotNumber(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotNumber(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotNumber(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotNumber(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotObject(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotObject(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotObject(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotObject(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotOk(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotOk(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotOk(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotOk(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotSealed(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def isNotSealed(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def isNotSealed(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def isNotSealed(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotString(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotString(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotString(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotString(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNotTrue(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNotTrue(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNotTrue(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNotTrue(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNull(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNull(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNull(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNull(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isNumber(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isNumber(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isNumber(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isNumber(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isObject(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isObject(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isObject(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isObject(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isOk(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isOk(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isOk(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isOk(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isSealed(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def isSealed(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def isSealed(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def isSealed(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def isString(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isString(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isString(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isString(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isTrue(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isTrue(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isTrue(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isTrue(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def isUndefined(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def isUndefined(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def isUndefined(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def isUndefined(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def lengthOf(exp: js.Thenable[Any], len: Double): js.Thenable[Unit] = js.native
-    def lengthOf(exp: js.Thenable[Any], len: Double, msg: String): js.Thenable[Unit] = js.native
+    def lengthOf(exp: PromiseLike[Any], len: Double): PromiseLike[Unit] = js.native
+    def lengthOf(exp: PromiseLike[Any], len: Double, msg: String): PromiseLike[Unit] = js.native
     
-    def `match`(exp: js.Thenable[Any], re: js.RegExp): js.Thenable[Unit] = js.native
-    def `match`(exp: js.Thenable[Any], re: js.RegExp, msg: String): js.Thenable[Unit] = js.native
+    def `match`(exp: PromiseLike[Any], re: js.RegExp): PromiseLike[Unit] = js.native
+    def `match`(exp: PromiseLike[Any], re: js.RegExp, msg: String): PromiseLike[Unit] = js.native
     
-    def nestedInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def nestedInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def nestedInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def nestedInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def nestedProperty(obj: js.Thenable[js.Object], prop: String): js.Thenable[Unit] = js.native
-    def nestedProperty(obj: js.Thenable[js.Object], prop: String, msg: String): js.Thenable[Unit] = js.native
+    def nestedProperty(obj: PromiseLike[js.Object], prop: String): PromiseLike[Unit] = js.native
+    def nestedProperty(obj: PromiseLike[js.Object], prop: String, msg: String): PromiseLike[Unit] = js.native
     
-    def nestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def nestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
+    def nestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def nestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notDeepEqual(act: js.Thenable[Any], exp: Any): js.Thenable[Unit] = js.native
-    def notDeepEqual(act: js.Thenable[Any], exp: Any, msg: String): js.Thenable[Unit] = js.native
+    def notDeepEqual(act: PromiseLike[Any], exp: Any): PromiseLike[Unit] = js.native
+    def notDeepEqual(act: PromiseLike[Any], exp: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notDeepInclude(exp: js.Thenable[js.Array[Any] | String], inc: Any): js.Thenable[Unit] = js.native
-    def notDeepInclude(exp: js.Thenable[js.Array[Any] | String], inc: Any, msg: String): js.Thenable[Unit] = js.native
+    def notDeepInclude(exp: PromiseLike[js.Array[Any] | String], inc: Any): PromiseLike[Unit] = js.native
+    def notDeepInclude(exp: PromiseLike[js.Array[Any] | String], inc: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notDeepNestedInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def notDeepNestedInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def notDeepNestedInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def notDeepNestedInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def notDeepNestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def notDeepNestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
+    def notDeepNestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def notDeepNestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notDeepOwnInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def notDeepOwnInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def notDeepOwnInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def notDeepOwnInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def notDeepProperty(obj: js.Thenable[js.Object], prop: String): js.Thenable[Unit] = js.native
-    def notDeepProperty(obj: js.Thenable[js.Object], prop: String, msg: String): js.Thenable[Unit] = js.native
+    def notDeepProperty(obj: PromiseLike[js.Object], prop: String): PromiseLike[Unit] = js.native
+    def notDeepProperty(obj: PromiseLike[js.Object], prop: String, msg: String): PromiseLike[Unit] = js.native
     
-    def notEqual(act: js.Thenable[Any], exp: Any): js.Thenable[Unit] = js.native
-    def notEqual(act: js.Thenable[Any], exp: Any, msg: String): js.Thenable[Unit] = js.native
+    def notEqual(act: PromiseLike[Any], exp: Any): PromiseLike[Unit] = js.native
+    def notEqual(act: PromiseLike[Any], exp: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notExists(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def notExists(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def notExists(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def notExists(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def notFrozen(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def notFrozen(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def notFrozen(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def notFrozen(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def notInclude(exp: js.Thenable[js.Array[Any] | String], inc: Any): js.Thenable[Unit] = js.native
-    def notInclude(exp: js.Thenable[js.Array[Any] | String], inc: Any, msg: String): js.Thenable[Unit] = js.native
+    def notInclude(exp: PromiseLike[js.Array[Any] | String], inc: Any): PromiseLike[Unit] = js.native
+    def notInclude(exp: PromiseLike[js.Array[Any] | String], inc: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notIncludeDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def notIncludeDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def notIncludeDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def notIncludeDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def notIncludeOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def notIncludeOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def notIncludeOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def notIncludeOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def notInstanceOf(`val`: js.Thenable[Any], `type`: js.Function): js.Thenable[Unit] = js.native
-    def notInstanceOf(`val`: js.Thenable[Any], `type`: js.Function, msg: String): js.Thenable[Unit] = js.native
+    def notInstanceOf(`val`: PromiseLike[Any], `type`: js.Function): PromiseLike[Unit] = js.native
+    def notInstanceOf(`val`: PromiseLike[Any], `type`: js.Function, msg: String): PromiseLike[Unit] = js.native
     
-    def notMatch(exp: js.Thenable[Any], re: js.RegExp): js.Thenable[Unit] = js.native
-    def notMatch(exp: js.Thenable[Any], re: js.RegExp, msg: String): js.Thenable[Unit] = js.native
+    def notMatch(exp: PromiseLike[Any], re: js.RegExp): PromiseLike[Unit] = js.native
+    def notMatch(exp: PromiseLike[Any], re: js.RegExp, msg: String): PromiseLike[Unit] = js.native
     
-    def notNestedInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def notNestedInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def notNestedInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def notNestedInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def notNestedProperty(obj: js.Thenable[js.Object], prop: String): js.Thenable[Unit] = js.native
-    def notNestedProperty(obj: js.Thenable[js.Object], prop: String, msg: String): js.Thenable[Unit] = js.native
+    def notNestedProperty(obj: PromiseLike[js.Object], prop: String): PromiseLike[Unit] = js.native
+    def notNestedProperty(obj: PromiseLike[js.Object], prop: String, msg: String): PromiseLike[Unit] = js.native
     
-    def notNestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def notNestedPropertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
+    def notNestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def notNestedPropertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notOk(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def notOk(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def notOk(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def notOk(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def notOwnInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def notOwnInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def notOwnInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def notOwnInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def notProperty(obj: js.Thenable[js.Object], prop: String): js.Thenable[Unit] = js.native
-    def notProperty(obj: js.Thenable[js.Object], prop: String, msg: String): js.Thenable[Unit] = js.native
+    def notProperty(obj: PromiseLike[js.Object], prop: String): PromiseLike[Unit] = js.native
+    def notProperty(obj: PromiseLike[js.Object], prop: String, msg: String): PromiseLike[Unit] = js.native
     
-    def notSameDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def notSameDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def notSameDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def notSameDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def notSameOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def notSameOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def notSameOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def notSameOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def notSealed(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def notSealed(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def notSealed(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def notSealed(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def notStrictEqual(act: js.Thenable[Any], exp: Any): js.Thenable[Unit] = js.native
-    def notStrictEqual(act: js.Thenable[Any], exp: Any, msg: String): js.Thenable[Unit] = js.native
+    def notStrictEqual(act: PromiseLike[Any], exp: Any): PromiseLike[Unit] = js.native
+    def notStrictEqual(act: PromiseLike[Any], exp: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def notTypeOf(`val`: js.Thenable[Any], `type`: String): js.Thenable[Unit] = js.native
-    def notTypeOf(`val`: js.Thenable[Any], `type`: String, msg: String): js.Thenable[Unit] = js.native
+    def notTypeOf(`val`: PromiseLike[Any], `type`: String): PromiseLike[Unit] = js.native
+    def notTypeOf(`val`: PromiseLike[Any], `type`: String, msg: String): PromiseLike[Unit] = js.native
     
-    def ok(`val`: js.Thenable[Any]): js.Thenable[Unit] = js.native
-    def ok(`val`: js.Thenable[Any], msg: String): js.Thenable[Unit] = js.native
+    def ok(`val`: PromiseLike[Any]): PromiseLike[Unit] = js.native
+    def ok(`val`: PromiseLike[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def oneOf(`val`: js.Thenable[Any], list: js.Array[Any]): js.Thenable[Unit] = js.native
-    def oneOf(`val`: js.Thenable[Any], list: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def oneOf(`val`: PromiseLike[Any], list: js.Array[Any]): PromiseLike[Unit] = js.native
+    def oneOf(`val`: PromiseLike[Any], list: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def operator(`val`: js.Thenable[Any], operator: String, val2: Any): js.Thenable[Unit] = js.native
-    def operator(`val`: js.Thenable[Any], operator: String, val2: Any, msg: String): js.Thenable[Unit] = js.native
+    def operator(`val`: PromiseLike[Any], operator: String, val2: Any): PromiseLike[Unit] = js.native
+    def operator(`val`: PromiseLike[Any], operator: String, val2: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def ownInclude(exp: js.Thenable[js.Object], inc: js.Object): js.Thenable[Unit] = js.native
-    def ownInclude(exp: js.Thenable[js.Object], inc: js.Object, msg: String): js.Thenable[Unit] = js.native
+    def ownInclude(exp: PromiseLike[js.Object], inc: js.Object): PromiseLike[Unit] = js.native
+    def ownInclude(exp: PromiseLike[js.Object], inc: js.Object, msg: String): PromiseLike[Unit] = js.native
     
-    def property(obj: js.Thenable[js.Object], prop: String): js.Thenable[Unit] = js.native
-    def property(obj: js.Thenable[js.Object], prop: String, msg: String): js.Thenable[Unit] = js.native
+    def property(obj: PromiseLike[js.Object], prop: String): PromiseLike[Unit] = js.native
+    def property(obj: PromiseLike[js.Object], prop: String, msg: String): PromiseLike[Unit] = js.native
     
-    def propertyNotVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def propertyNotVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
+    def propertyNotVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def propertyNotVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def propertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any): js.Thenable[Unit] = js.native
-    def propertyVal(obj: js.Thenable[js.Object], prop: String, `val`: Any, msg: String): js.Thenable[Unit] = js.native
+    def propertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any): PromiseLike[Unit] = js.native
+    def propertyVal(obj: PromiseLike[js.Object], prop: String, `val`: Any, msg: String): PromiseLike[Unit] = js.native
     
-    def sameDeepMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def sameDeepMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def sameDeepMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def sameDeepMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def sameDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def sameDeepOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def sameDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def sameDeepOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def sameMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def sameMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def sameMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def sameMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def sameOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any]): js.Thenable[Unit] = js.native
-    def sameOrderedMembers(set1: js.Thenable[js.Array[Any]], set2: js.Array[Any], msg: String): js.Thenable[Unit] = js.native
+    def sameOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any]): PromiseLike[Unit] = js.native
+    def sameOrderedMembers(set1: PromiseLike[js.Array[Any]], set2: js.Array[Any], msg: String): PromiseLike[Unit] = js.native
     
-    def `sealed`(obj: js.Thenable[js.Object]): js.Thenable[Unit] = js.native
-    def `sealed`(obj: js.Thenable[js.Object], msg: String): js.Thenable[Unit] = js.native
+    def `sealed`(obj: PromiseLike[js.Object]): PromiseLike[Unit] = js.native
+    def `sealed`(obj: PromiseLike[js.Object], msg: String): PromiseLike[Unit] = js.native
     
-    def strictEqual(act: js.Thenable[Any], exp: Any): js.Thenable[Unit] = js.native
-    def strictEqual(act: js.Thenable[Any], exp: Any, msg: String): js.Thenable[Unit] = js.native
+    def strictEqual(act: PromiseLike[Any], exp: Any): PromiseLike[Unit] = js.native
+    def strictEqual(act: PromiseLike[Any], exp: Any, msg: String): PromiseLike[Unit] = js.native
     
     //alias frenzy
-    def `throw`(fn: js.Function): js.Thenable[Unit] = js.native
-    def `throw`(fn: js.Function, errType: js.Function): js.Thenable[Unit] = js.native
-    def `throw`(fn: js.Function, errType: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def `throw`(fn: js.Function, errType: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
-    def `throw`(fn: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def `throw`(fn: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
+    def `throw`(fn: js.Function): PromiseLike[Unit] = js.native
+    def `throw`(fn: js.Function, errType: js.Function): PromiseLike[Unit] = js.native
+    def `throw`(fn: js.Function, errType: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def `throw`(fn: js.Function, errType: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
+    def `throw`(fn: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def `throw`(fn: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
     
-    def throws(fn: js.Function): js.Thenable[Unit] = js.native
-    def throws(fn: js.Function, errType: js.Function): js.Thenable[Unit] = js.native
-    def throws(fn: js.Function, errType: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def throws(fn: js.Function, errType: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
-    def throws(fn: js.Function, msg: String): js.Thenable[Unit] = js.native
-    def throws(fn: js.Function, regExp: js.RegExp): js.Thenable[Unit] = js.native
+    def throws(fn: js.Function): PromiseLike[Unit] = js.native
+    def throws(fn: js.Function, errType: js.Function): PromiseLike[Unit] = js.native
+    def throws(fn: js.Function, errType: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def throws(fn: js.Function, errType: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
+    def throws(fn: js.Function, msg: String): PromiseLike[Unit] = js.native
+    def throws(fn: js.Function, regExp: js.RegExp): PromiseLike[Unit] = js.native
     
-    def typeOf(`val`: js.Thenable[Any], `type`: String): js.Thenable[Unit] = js.native
-    def typeOf(`val`: js.Thenable[Any], `type`: String, msg: String): js.Thenable[Unit] = js.native
+    def typeOf(`val`: PromiseLike[Any], `type`: String): PromiseLike[Unit] = js.native
+    def typeOf(`val`: PromiseLike[Any], `type`: String, msg: String): PromiseLike[Unit] = js.native
   }
   
   @js.native

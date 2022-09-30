@@ -23,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeAction because Already inherited
-- typings.mendixmodelsdk.javaactionsMod.javaactions.IJavaAction because var conflicts: actionParameters, actionReturnType, actionTypeParameters, containerAsFolderBase, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo, useLegacyCodeGeneration */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.JavaAction")
+- typings.mendixmodelsdk.javaactionsMod.javaactions.IJavaAction because var conflicts: actionParameters, actionReturnType, actionTypeParameters, containerAsFolderBase, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo, useLegacyCodeGeneration */ @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.JavaAction")
 @js.native
-class JavaAction protected () extends CodeAction {
+open class JavaAction protected () extends CodeAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -103,11 +103,13 @@ class JavaAction protected () extends CodeAction {
   val typeParameters_FJavaAction: IList[ITypeParameter] = js.native
   
   /**
+    * In version 9.0.3: deleted
     * In version 8.0.0: introduced
     */
   def useLegacyCodeGeneration: Boolean = js.native
   def useLegacyCodeGeneration_=(newValue: Boolean): Unit = js.native
   /**
+    * In version 9.0.3: deleted
     * In version 8.0.0: introduced
     */
   @JSName("useLegacyCodeGeneration")
@@ -115,7 +117,7 @@ class JavaAction protected () extends CodeAction {
 }
 object JavaAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.JavaAction")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.JavaAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -127,13 +129,13 @@ object JavaAction {
   inline def createIn(container: IFolderBase): JavaAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[JavaAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.JavaAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.JavaAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.JavaAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.JavaAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

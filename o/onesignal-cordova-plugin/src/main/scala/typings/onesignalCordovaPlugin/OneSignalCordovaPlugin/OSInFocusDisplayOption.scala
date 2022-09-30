@@ -1,16 +1,16 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
-import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`0`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`1`
+import typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`0`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
-  - typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`0`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`1`
+  - typings.onesignalCordovaPlugin.onesignalCordovaPluginInts.`2`
 */
 trait OSInFocusDisplayOption extends StObject
 object OSInFocusDisplayOption {

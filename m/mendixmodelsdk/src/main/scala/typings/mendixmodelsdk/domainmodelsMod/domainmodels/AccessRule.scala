@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/access-rules relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule")
+@JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AccessRule")
 @js.native
-class AccessRule protected () extends Element[IModel] {
+open class AccessRule protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -63,7 +63,7 @@ class AccessRule protected () extends Element[IModel] {
 }
 object AccessRule {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AccessRule")
   @js.native
   val ^ : js.Any = js.native
   
@@ -92,13 +92,13 @@ object AccessRule {
   inline def createInEntityUnderAccessRules(container: Entity): AccessRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityUnderAccessRules")(container.asInstanceOf[js.Any]).asInstanceOf[AccessRule]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AccessRule.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AccessRule.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AccessRule.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -388,6 +388,9 @@ object spriteManagerMod {
     extends StObject
        with IDisposable {
     
+    /** @internal */
+    var _wasDispatched: Boolean = js.native
+    
     /** Defines the default height of a cell in the spritesheet */
     var cellHeight: Double = js.native
     

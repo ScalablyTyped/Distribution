@@ -1,7 +1,7 @@
 package typings.escpos.anon
 
-import typings.escpos.escposNumbers.`12`
-import typings.escpos.escposNumbers.`24`
+import typings.escpos.escposInts.`12`
+import typings.escpos.escposInts.`24`
 import typings.escpos.escposStrings.EscapeNumbersignNumbersignQPIX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait CMD extends StObject {
   
   var MAX: `24`
   
-  var MIN: typings.escpos.escposNumbers.`1`
+  var MIN: typings.escpos.escposInts.`1`
 }
 object CMD {
   
@@ -32,6 +32,6 @@ object CMD {
     
     inline def setMAX(value: `24`): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
     
-    inline def setMIN(value: typings.escpos.escposNumbers.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
+    inline def setMIN(value: typings.escpos.escposInts.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
   }
 }

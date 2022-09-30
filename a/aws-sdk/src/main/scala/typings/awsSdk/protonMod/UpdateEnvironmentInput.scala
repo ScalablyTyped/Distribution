@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateEnvironmentInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in this environment. It determines the scope of infrastructure that a component can provision. The environment must have a componentRoleArn to allow directly defined components to be associated with the environment. For more information about components, see Proton components in the Proton Administrator Guide.
+    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in this environment. It determines the scope of infrastructure that a component can provision. The environment must have a componentRoleArn to allow directly defined components to be associated with the environment. For more information about components, see Proton components in the Proton User Guide.
     */
   var componentRoleArn: js.UndefOr[Arn] = js.undefined
   
@@ -37,7 +37,7 @@ trait UpdateEnvironmentInput extends StObject {
   var protonServiceRoleArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The infrastructure repository that you use to host your rendered infrastructure templates for self-managed provisioning.
+    * The linked repository that you use to host your rendered infrastructure templates for self-managed provisioning. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository.
     */
   var provisioningRepository: js.UndefOr[RepositoryBranchInput] = js.undefined
   

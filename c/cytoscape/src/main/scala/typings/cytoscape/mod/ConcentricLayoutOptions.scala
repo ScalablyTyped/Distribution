@@ -19,51 +19,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var clockwise: js.UndefOr[Boolean] = js.undefined
   
   // returns numeric value for each node, placing higher nodes in levels towards the centre
-  def concentric(node: Degree): Double
+  var concentric: js.UndefOr[js.Function1[/* node */ Degree, Double]] = js.undefined
   
   // whether levels have an equal radial distance betwen them, may cause bounding box overflow
-  var equidistant: Boolean
+  var equidistant: js.UndefOr[Boolean] = js.undefined
   
   // min spacing between outside of nodes (used for radius adjustment)
   // height of layout area (overrides container height)
-  var height: Unit
+  var height: js.UndefOr[Double] = js.undefined
   
   // the variation of concentric values in each level
-  def levelWidth(node: MaxDegree): Double
+  var levelWidth: js.UndefOr[js.Function1[/* node */ MaxDegree, Double]] = js.undefined
   
-  var minNodeSpacing: Double
+  var minNodeSpacing: js.UndefOr[Double] = js.undefined
   
   @JSName("name")
   var name_ConcentricLayoutOptions: concentric
   
-  // Applies a multiplicative factor (>0) to expand or compress the overall area that the nodes take up
-  @JSName("spacingFactor")
-  var spacingFactor_ConcentricLayoutOptions: Unit
-  
   // where nodes start in radians, e.g. 3 / 2 * Math.PI,
-  var startAngle: Double
+  var startAngle: js.UndefOr[Double] = js.undefined
   
   // how many radians should be between the first and last node (defaults to full circle)
   var sweep: js.UndefOr[Double] = js.undefined
   
   // width of layout area (overrides container width)
-  var width: Unit
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ConcentricLayoutOptions {
   
-  inline def apply(
-    concentric: Degree => Double,
-    equidistant: Boolean,
-    fit: Boolean,
-    height: Unit,
-    levelWidth: MaxDegree => Double,
-    minNodeSpacing: Double,
-    nodeDimensionsIncludeLabels: Boolean,
-    spacingFactor: Unit,
-    startAngle: Double,
-    width: Unit
-  ): ConcentricLayoutOptions = {
-    val __obj = js.Dynamic.literal(concentric = js.Any.fromFunction1(concentric), equidistant = equidistant.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], levelWidth = js.Any.fromFunction1(levelWidth), minNodeSpacing = minNodeSpacing.asInstanceOf[js.Any], name = "concentric", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], spacingFactor = spacingFactor.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(): ConcentricLayoutOptions = {
+    val __obj = js.Dynamic.literal(name = "concentric")
     __obj.asInstanceOf[ConcentricLayoutOptions]
   }
   
@@ -73,26 +58,38 @@ object ConcentricLayoutOptions {
     
     inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
     
-    inline def setConcentric(value: Degree => Double): Self = StObject.set(x, "concentric", js.Any.fromFunction1(value))
+    inline def setConcentric(value: /* node */ Degree => Double): Self = StObject.set(x, "concentric", js.Any.fromFunction1(value))
+    
+    inline def setConcentricUndefined: Self = StObject.set(x, "concentric", js.undefined)
     
     inline def setEquidistant(value: Boolean): Self = StObject.set(x, "equidistant", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setEquidistantUndefined: Self = StObject.set(x, "equidistant", js.undefined)
     
-    inline def setLevelWidth(value: MaxDegree => Double): Self = StObject.set(x, "levelWidth", js.Any.fromFunction1(value))
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLevelWidth(value: /* node */ MaxDegree => Double): Self = StObject.set(x, "levelWidth", js.Any.fromFunction1(value))
+    
+    inline def setLevelWidthUndefined: Self = StObject.set(x, "levelWidth", js.undefined)
     
     inline def setMinNodeSpacing(value: Double): Self = StObject.set(x, "minNodeSpacing", value.asInstanceOf[js.Any])
     
+    inline def setMinNodeSpacingUndefined: Self = StObject.set(x, "minNodeSpacing", js.undefined)
+    
     inline def setName(value: concentric): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setSpacingFactor(value: Unit): Self = StObject.set(x, "spacingFactor", value.asInstanceOf[js.Any])
-    
     inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     inline def setSweep(value: Double): Self = StObject.set(x, "sweep", value.asInstanceOf[js.Any])
     
     inline def setSweepUndefined: Self = StObject.set(x, "sweep", js.undefined)
     
-    inline def setWidth(value: Unit): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

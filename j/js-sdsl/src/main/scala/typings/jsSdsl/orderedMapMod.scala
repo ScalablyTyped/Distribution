@@ -1,6 +1,8 @@
 package typings.jsSdsl
 
+import typings.jsSdsl.containerBaseMod.IteratorType
 import typings.jsSdsl.containerBaseMod.initContainer
+import typings.jsSdsl.treeNodeMod.TreeNode
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,18 +16,22 @@ object orderedMapMod {
     def this(container: initContainer[js.Tuple2[K, V]]) = this()
     def this(container: Unit, cmp: js.Function2[/* x */ K, /* y */ K, Double]) = this()
     def this(container: initContainer[js.Tuple2[K, V]], cmp: js.Function2[/* x */ K, /* y */ K, Double]) = this()
+    def this(container: Unit, cmp: js.Function2[/* x */ K, /* y */ K, Double], enableIndex: Boolean) = this()
+    def this(container: Unit, cmp: Unit, enableIndex: Boolean) = this()
+    def this(
+      container: initContainer[js.Tuple2[K, V]],
+      cmp: js.Function2[/* x */ K, /* y */ K, Double],
+      enableIndex: Boolean
+    ) = this()
+    def this(container: initContainer[js.Tuple2[K, V]], cmp: Unit, enableIndex: Boolean) = this()
   }
   
   @JSImport("js-sdsl/dist/cjs/container/TreeContainer/OrderedMap", "OrderedMapIterator")
   @js.native
   open class OrderedMapIterator[K, V] protected ()
     extends typings.jsSdsl.treeIteratorMod.default[K, V] {
-    def this(node: typings.jsSdsl.treeNodeMod.default[K, V], header: typings.jsSdsl.treeNodeMod.default[K, V]) = this()
-    def this(
-      node: typings.jsSdsl.treeNodeMod.default[K, V],
-      header: typings.jsSdsl.treeNodeMod.default[K, V],
-      iteratorType: Boolean
-    ) = this()
+    def this(_node: TreeNode[K, V], _header: TreeNode[K, V]) = this()
+    def this(_node: TreeNode[K, V], _header: TreeNode[K, V], iteratorType: IteratorType) = this()
   }
   
   @js.native
@@ -36,8 +42,6 @@ object orderedMapMod {
       * @description Get the value of the element of the specified key.
       */
     def getElementByKey(key: K): js.UndefOr[V] = js.native
-    
-    /* private */ val iterationFunc: Any = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_OrderedMap: js.Function0[Generator[js.Tuple2[K, V], Unit, Unit]] = js.native

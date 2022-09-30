@@ -10,8 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S](initialState: S, reducers: Reducer[S]*): Reducer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(initialState.asInstanceOf[js.Any]).`++`(reducers.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Reducer[S]]
-  inline def default[S](initialState: Null, reducers: Reducer[S]*): Reducer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(initialState.asInstanceOf[js.Any]).`++`(reducers.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Reducer[S]]
+  inline def default[S](initialState: S, reducers: Reducer[S]*): Reducer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(initialState.asInstanceOf[js.Any]).`++`(reducers.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Reducer[S]]
+  inline def default[S](initialState: Null, reducers: Reducer[S]*): Reducer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(initialState.asInstanceOf[js.Any]).`++`(reducers.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Reducer[S]]
   inline def default[S](reducers: Reducer[S]*): Reducer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Reducer[S]]
   
   trait Action extends StObject {

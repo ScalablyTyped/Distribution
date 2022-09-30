@@ -38,12 +38,12 @@ object List {
     indexOf: T => Double,
     insert: (Double, T) => scala.Unit,
     remove: T => scala.Unit
-  ): List[T] = {
+  ): typings.sharepoint.CUI.List[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), getEnumerator = js.Any.fromFunction0(getEnumerator), getEnumeratorAtPos = js.Any.fromFunction0(getEnumeratorAtPos), get_count = js.Any.fromFunction0(get_count), get_item = js.Any.fromFunction1(get_item), indexOf = js.Any.fromFunction1(indexOf), insert = js.Any.fromFunction2(insert), remove = js.Any.fromFunction1(remove))
-    __obj.asInstanceOf[List[T]]
+    __obj.asInstanceOf[typings.sharepoint.CUI.List[T]]
   }
   
-  extension [Self <: List[?], T](x: Self & List[T]) {
+  extension [Self <: typings.sharepoint.CUI.List[?], T](x: Self & typings.sharepoint.CUI.List[T]) {
     
     inline def setAdd(value: T => scala.Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

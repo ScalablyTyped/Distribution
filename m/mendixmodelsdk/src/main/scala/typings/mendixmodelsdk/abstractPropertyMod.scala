@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractPropertyMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/AbstractProperty", "AbstractProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/AbstractProperty", "AbstractProperty")
   @js.native
   abstract class AbstractProperty[T, P] protected () extends StObject {
     /**
@@ -28,7 +28,7 @@ object abstractPropertyMod {
       parent: Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: T,
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
     
     var declaredOn: IStructureClass = js.native
@@ -61,7 +61,7 @@ object abstractPropertyMod {
     
     def reportAvailabilityIssues(): Unit = js.native
     
-    def updateWithRawValue(value: js.Any): Unit = js.native
+    def updateWithRawValue(value: Any): Unit = js.native
     
     def versionInfo: PropertyVersionInfo = js.native
   }

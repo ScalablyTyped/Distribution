@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "DynamicMapLayer")
 @js.native
-class DynamicMapLayer_ protected ()
+open class DynamicMapLayer_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.DynamicMapLayer_ {
   def this(options: DynamicMapLayerOptions) = this()
 }

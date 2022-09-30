@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SetIamPolicyRequest.
   * @param [properties] Properties to set
   */
-class SetIamPolicyRequest ()
+open class SetIamPolicyRequest ()
   extends StObject
      with ISetIamPolicyRequest {
   def this(properties: ISetIamPolicyRequest) = this()
@@ -29,7 +28,7 @@ class SetIamPolicyRequest ()
     * Converts this SetIamPolicyRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object SetIamPolicyRequest {
   
@@ -46,6 +45,8 @@ object SetIamPolicyRequest {
   inline def create(): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SetIamPolicyRequest]
   inline def create(properties: ISetIamPolicyRequest): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SetIamPolicyRequest]
   /**
     * Decodes a SetIamPolicyRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object SetIamPolicyRequest {
   /* static member */
   inline def decode(reader: Reader): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
   inline def decode(reader: Reader, length: Double): SetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SetIamPolicyRequest]
-  inline def decode(reader: Uint8Array): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
-  inline def decode(reader: Uint8Array, length: Double): SetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SetIamPolicyRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
   /**
     * Decodes a SetIamPolicyRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object SetIamPolicyRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
-  inline def decodeDelimited(reader: Uint8Array): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
   
   /**
     * Encodes the specified SetIamPolicyRequest message. Does not implicitly {@link google.iam.v1.SetIamPolicyRequest.verify|verify} messages.
@@ -97,7 +96,7 @@ object SetIamPolicyRequest {
     * @returns SetIamPolicyRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SetIamPolicyRequest]
   
   /**
     * Creates a plain object from a SetIamPolicyRequest message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object SetIamPolicyRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SetIamPolicyRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SetIamPolicyRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SetIamPolicyRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SetIamPolicyRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SetIamPolicyRequest message.
@@ -115,5 +114,5 @@ object SetIamPolicyRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

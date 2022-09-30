@@ -69,17 +69,17 @@ object dmsMod {
   trait Dms extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - typings.geodesy.geodesyNumbers.`1`
-    - typings.geodesy.geodesyNumbers.`2`
-    - typings.geodesy.geodesyNumbers.`3`
+    - typings.geodesy.geodesyInts.`1`
+    - typings.geodesy.geodesyInts.`2`
+    - typings.geodesy.geodesyInts.`3`
   */
   trait Precision extends StObject
   object Precision {
     
-    inline def `1`: typings.geodesy.geodesyNumbers.`1` = 1.asInstanceOf[typings.geodesy.geodesyNumbers.`1`]
+    inline def `1`: typings.geodesy.geodesyInts.`1` = 1.asInstanceOf[typings.geodesy.geodesyInts.`1`]
     
-    inline def `2`: typings.geodesy.geodesyNumbers.`2` = 2.asInstanceOf[typings.geodesy.geodesyNumbers.`2`]
+    inline def `2`: typings.geodesy.geodesyInts.`2` = 2.asInstanceOf[typings.geodesy.geodesyInts.`2`]
     
-    inline def `3`: typings.geodesy.geodesyNumbers.`3` = 3.asInstanceOf[typings.geodesy.geodesyNumbers.`3`]
+    inline def `3`: typings.geodesy.geodesyInts.`3` = 3.asInstanceOf[typings.geodesy.geodesyInts.`3`]
   }
 }

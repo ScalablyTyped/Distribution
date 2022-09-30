@@ -1,11 +1,11 @@
 package typings.trtcJsSdk.mod
 
-import typings.trtcJsSdk.trtcJsSdkNumbers.`1`
-import typings.trtcJsSdk.trtcJsSdkNumbers.`2`
-import typings.trtcJsSdk.trtcJsSdkNumbers.`3`
-import typings.trtcJsSdk.trtcJsSdkNumbers.`4`
-import typings.trtcJsSdk.trtcJsSdkNumbers.`5`
-import typings.trtcJsSdk.trtcJsSdkNumbers.`6`
+import typings.trtcJsSdk.trtcJsSdkInts.`1`
+import typings.trtcJsSdk.trtcJsSdkInts.`2`
+import typings.trtcJsSdk.trtcJsSdkInts.`3`
+import typings.trtcJsSdk.trtcJsSdkInts.`4`
+import typings.trtcJsSdk.trtcJsSdkInts.`5`
+import typings.trtcJsSdk.trtcJsSdkInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "ImageService")
 @js.native
-class ImageService_ protected ()
+open class ImageService_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_ {
   def this(options: ImageServiceOptions) = this()
 }

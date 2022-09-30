@@ -21,7 +21,6 @@ import typings.typedoc.typedocStrings.SomeSignature
 import typings.typedoc.typedocStrings.SomeType
 import typings.typedoc.typedocStrings.SomeValue
 import typings.typedoc.typedocStrings.VariableOrProperty
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ trait TypeDocOptionValues extends StObject {
   
   var basePath: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any
   
-  var blockTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+  var blockTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
   
   var categorizeByGroup: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any
   
@@ -71,7 +70,7 @@ trait TypeDocOptionValues extends StObject {
   
   var excludeProtected: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any
   
-  var excludeTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+  var excludeTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
   
   var externalPattern: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any
   
@@ -95,7 +94,7 @@ trait TypeDocOptionValues extends StObject {
   
   var includes: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any
   
-  var inlineTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+  var inlineTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
   
   var intentionallyNotExported: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any
   
@@ -111,7 +110,7 @@ trait TypeDocOptionValues extends StObject {
   
   var media: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any
   
-  var modifierTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+  var modifierTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
   
   var name: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any
   
@@ -161,7 +160,7 @@ object TypeDocOptionValues {
   
   inline def apply(
     basePath: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
-    blockTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any,
+    blockTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any,
     categorizeByGroup: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any,
     categoryOrder: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any,
     cleanOutputDir: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any,
@@ -181,7 +180,7 @@ object TypeDocOptionValues {
     excludeNotDocumented: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any,
     excludePrivate: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any,
     excludeProtected: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any,
-    excludeTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any,
+    excludeTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any,
     externalPattern: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any,
     externalSymbolLinkMappings: (/* import warning: importer.ImportType#apply Failed type conversion: typedoc.typedoc/dist/lib/utils/options/declaration.ManuallyValidatedOption<std.Record<string, std.Record<string, string>>>[any | undefined] */ js.Any) | (ManuallyValidatedOption[Record[String, Record[String, String]]]) | Any,
     gaID: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
@@ -193,7 +192,7 @@ object TypeDocOptionValues {
     htmlLang: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
     includeVersion: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any,
     includes: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
-    inlineTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any,
+    inlineTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any,
     intentionallyNotExported: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any,
     json: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
     lightHighlightTheme: (/* import warning: importer.ImportType#apply Failed type conversion: shiki.shiki.Theme[any | undefined] */ js.Any) | Theme | Any,
@@ -201,7 +200,7 @@ object TypeDocOptionValues {
     logger: (/* import warning: importer.ImportType#apply Failed type conversion: unknown[any | undefined] */ js.Any) | Any,
     markedOptions: (/* import warning: importer.ImportType#apply Failed type conversion: unknown[any | undefined] */ js.Any) | Any,
     media: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
-    modifierTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any,
+    modifierTags: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any,
     name: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
     options: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
     out: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any,
@@ -237,10 +236,10 @@ object TypeDocOptionValues {
     ): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     inline def setBlockTags(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
     ): Self = StObject.set(x, "blockTags", value.asInstanceOf[js.Any])
     
-    inline def setBlockTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "blockTags", js.Array(value*))
+    inline def setBlockTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "blockTags", js.Array(value*))
     
     inline def setCategorizeByGroup(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any
@@ -323,10 +322,10 @@ object TypeDocOptionValues {
     ): Self = StObject.set(x, "excludeProtected", value.asInstanceOf[js.Any])
     
     inline def setExcludeTags(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
     ): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
     
-    inline def setExcludeTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "excludeTags", js.Array(value*))
+    inline def setExcludeTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "excludeTags", js.Array(value*))
     
     inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
@@ -377,10 +376,10 @@ object TypeDocOptionValues {
     ): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
     inline def setInlineTags(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
     ): Self = StObject.set(x, "inlineTags", value.asInstanceOf[js.Any])
     
-    inline def setInlineTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "inlineTags", js.Array(value*))
+    inline def setInlineTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "inlineTags", js.Array(value*))
     
     inline def setIntentionallyNotExported(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any
@@ -413,10 +412,10 @@ object TypeDocOptionValues {
     ): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     inline def setModifierTags(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any
     ): Self = StObject.set(x, "modifierTags", value.asInstanceOf[js.Any])
     
-    inline def setModifierTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "modifierTags", js.Array(value*))
+    inline def setModifierTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "modifierTags", js.Array(value*))
     
     inline def setName(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any

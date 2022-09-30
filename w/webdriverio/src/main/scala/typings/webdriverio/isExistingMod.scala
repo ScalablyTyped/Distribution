@@ -10,5 +10,5 @@ object isExistingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Boolean]
+  inline def default(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Boolean]]
 }

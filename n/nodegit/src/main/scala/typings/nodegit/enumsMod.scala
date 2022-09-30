@@ -1,21 +1,21 @@
 package typings.nodegit
 
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`128`
-import typings.nodegit.nodegitNumbers.`16384`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`24576`
-import typings.nodegit.nodegitNumbers.`256`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`32768`
-import typings.nodegit.nodegitNumbers.`32`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`512`
-import typings.nodegit.nodegitNumbers.`64`
-import typings.nodegit.nodegitNumbers.`8192`
-import typings.nodegit.nodegitNumbers.`8`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`128`
+import typings.nodegit.nodegitInts.`16384`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`24576`
+import typings.nodegit.nodegitInts.`256`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`32768`
+import typings.nodegit.nodegitInts.`32`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`512`
+import typings.nodegit.nodegitInts.`64`
+import typings.nodegit.nodegitInts.`8192`
+import typings.nodegit.nodegitInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,10 +25,10 @@ object enumsMod {
   object Enums {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
     */
     trait CVAR extends StObject
     object CVAR {
@@ -43,8 +43,8 @@ object enumsMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
     */
     trait DIRECTION extends StObject
     object DIRECTION {
@@ -55,9 +55,9 @@ object enumsMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
     */
     trait FEATURE extends StObject
     object FEATURE {
@@ -70,20 +70,20 @@ object enumsMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`8192`
-      - typings.nodegit.nodegitNumbers.`16384`
-      - typings.nodegit.nodegitNumbers.`32768`
-      - typings.nodegit.nodegitNumbers.`24576`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
-      - typings.nodegit.nodegitNumbers.`32`
-      - typings.nodegit.nodegitNumbers.`64`
-      - typings.nodegit.nodegitNumbers.`128`
-      - typings.nodegit.nodegitNumbers.`256`
-      - typings.nodegit.nodegitNumbers.`512`
+      - typings.nodegit.nodegitInts.`8192`
+      - typings.nodegit.nodegitInts.`16384`
+      - typings.nodegit.nodegitInts.`32768`
+      - typings.nodegit.nodegitInts.`24576`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
+      - typings.nodegit.nodegitInts.`32`
+      - typings.nodegit.nodegitInts.`64`
+      - typings.nodegit.nodegitInts.`128`
+      - typings.nodegit.nodegitInts.`256`
+      - typings.nodegit.nodegitInts.`512`
     */
     trait IDXENTRY_EXTENDED_FLAG extends StObject
     object IDXENTRY_EXTENDED_FLAG {
@@ -118,8 +118,8 @@ object enumsMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`16384`
-      - typings.nodegit.nodegitNumbers.`32768`
+      - typings.nodegit.nodegitInts.`16384`
+      - typings.nodegit.nodegitInts.`32768`
     */
     trait INDXENTRY_FLAG extends StObject
     object INDXENTRY_FLAG {

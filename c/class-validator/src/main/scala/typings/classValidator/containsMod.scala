@@ -14,7 +14,7 @@ object containsMod {
   
   @JSImport("class-validator/types/decorator/string/Contains", "CONTAINS")
   @js.native
-  val CONTAINS: /* "contains" */ String = js.native
+  val CONTAINS__ : /* "contains" */ String = js.native
   
   inline def Contains_(seed: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(seed.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Contains_(seed: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(seed.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]

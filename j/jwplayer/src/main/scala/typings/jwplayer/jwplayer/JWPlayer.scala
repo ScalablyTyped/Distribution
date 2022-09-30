@@ -1,5 +1,6 @@
 package typings.jwplayer.jwplayer
 
+import typings.jwplayer.anon.Begin
 import typings.jwplayer.jwplayerStrings.adClick
 import typings.jwplayer.jwplayerStrings.adCompanions
 import typings.jwplayer.jwplayerStrings.adComplete
@@ -52,6 +53,8 @@ trait JWPlayer extends StObject {
   
   def addButton(icon: String, label: String, handler: js.Function0[Unit], id: String): JWPlayer = js.native
   def addButton(icon: String, label: String, handler: js.Function0[Unit], id: String, className: String): JWPlayer = js.native
+  
+  def addCues(cues: js.Array[Begin]): JWPlayer = js.native
   
   def getAudioTracks(): js.Array[Any] = js.native
   

@@ -22,7 +22,7 @@ object childrenMod {
       *
       * @param blockNodes - Block nodes to concatenate.
       */
-    inline def concat(blockNodes: ReactChild*): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(blockNodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactChild]]
+    inline def concat(blockNodes: ReactChild*): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(blockNodes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[ReactChild]]
     
     /**
       * Given an iterable set of DOM nodes, returns equivalent block children.

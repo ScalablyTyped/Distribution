@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.6.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.TypedTemplate")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.TypedTemplate")
 @js.native
-class TypedTemplate protected ()
+open class TypedTemplate protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.TypedTemplate {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class TypedTemplate protected ()
 }
 object TypedTemplate {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.TypedTemplate")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.TypedTemplate")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,13 +53,13 @@ object TypedTemplate {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.StringTemplateParameterValue): typings.mendixmodelsdk.microflowsMod.microflows.TypedTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.TypedTemplate]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.TypedTemplate.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.TypedTemplate.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.TypedTemplate.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.TypedTemplate.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

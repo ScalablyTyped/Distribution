@@ -8,27 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dndProviderMod {
   
-  @JSImport("react-dnd/lib/common/DndProvider", "DndProvider")
+  @JSImport("react-dnd/dist/core/DndProvider", "DndProvider")
   @js.native
-  val DndProvider: FC[DndProviderProps[js.Any, js.Any]] = js.native
+  val DndProvider: FC[DndProviderProps[Any, Any]] = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactDnd.anon.Manager
+    - typings.reactDnd.anon.Children
     - typings.reactDnd.anon.Backend[BackendContext, BackendOptions]
   */
   trait DndProviderProps[BackendContext, BackendOptions] extends StObject
   object DndProviderProps {
     
     inline def Backend[BackendContext, BackendOptions](
-      backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => typings.dndCore.interfacesMod.Backend
+      backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.interfacesMod.Backend
     ): typings.reactDnd.anon.Backend[BackendContext, BackendOptions] = {
       val __obj = js.Dynamic.literal(backend = js.Any.fromFunction3(backend))
       __obj.asInstanceOf[typings.reactDnd.anon.Backend[BackendContext, BackendOptions]]
     }
     
-    inline def Manager(manager: DragDropManager): typings.reactDnd.anon.Manager = {
+    inline def Children(manager: DragDropManager): typings.reactDnd.anon.Children = {
       val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.reactDnd.anon.Manager]
+      __obj.asInstanceOf[typings.reactDnd.anon.Children]
     }
   }
 }

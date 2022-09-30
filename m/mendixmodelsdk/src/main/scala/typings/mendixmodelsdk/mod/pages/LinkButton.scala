@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.LinkButton")
 @js.native
-class LinkButton protected ()
+open class LinkButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LinkButton {
   def this(
     model: AbstractModel,

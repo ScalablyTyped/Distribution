@@ -74,5 +74,5 @@ trait TypeofWebDriver
   // This method's arguments are untyped so that its overloads can have correct
   // types. Typescript doesn't allow static methods to be overridden with
   // incompatible signatures.
-  def createSession(var_args: js.Any*): WebDriver = js.native
+  def createSession(var_args: Any*): WebDriver = js.native
 }

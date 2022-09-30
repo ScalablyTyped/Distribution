@@ -1,7 +1,7 @@
 package typings.escPosEncoder
 
-import typings.escPosEncoder.escPosEncoderNumbers.`1`
-import typings.escPosEncoder.escPosEncoderNumbers.`2`
+import typings.escPosEncoder.escPosEncoderInts.`1`
+import typings.escPosEncoder.escPosEncoderInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -232,33 +232,33 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.escPosEncoder.escPosEncoderNumbers.`1`
-    - typings.escPosEncoder.escPosEncoderNumbers.`2`
-    - typings.escPosEncoder.escPosEncoderNumbers.`3`
-    - typings.escPosEncoder.escPosEncoderNumbers.`4`
-    - typings.escPosEncoder.escPosEncoderNumbers.`5`
-    - typings.escPosEncoder.escPosEncoderNumbers.`6`
-    - typings.escPosEncoder.escPosEncoderNumbers.`7`
-    - typings.escPosEncoder.escPosEncoderNumbers.`8`
+    - typings.escPosEncoder.escPosEncoderInts.`1`
+    - typings.escPosEncoder.escPosEncoderInts.`2`
+    - typings.escPosEncoder.escPosEncoderInts.`3`
+    - typings.escPosEncoder.escPosEncoderInts.`4`
+    - typings.escPosEncoder.escPosEncoderInts.`5`
+    - typings.escPosEncoder.escPosEncoderInts.`6`
+    - typings.escPosEncoder.escPosEncoderInts.`7`
+    - typings.escPosEncoder.escPosEncoderInts.`8`
   */
   trait qrSizeType extends StObject
   object qrSizeType {
     
-    inline def `1`: typings.escPosEncoder.escPosEncoderNumbers.`1` = 1.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`1`]
+    inline def `1`: typings.escPosEncoder.escPosEncoderInts.`1` = 1.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`1`]
     
-    inline def `2`: typings.escPosEncoder.escPosEncoderNumbers.`2` = 2.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`2`]
+    inline def `2`: typings.escPosEncoder.escPosEncoderInts.`2` = 2.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`2`]
     
-    inline def `3`: typings.escPosEncoder.escPosEncoderNumbers.`3` = 3.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`3`]
+    inline def `3`: typings.escPosEncoder.escPosEncoderInts.`3` = 3.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`3`]
     
-    inline def `4`: typings.escPosEncoder.escPosEncoderNumbers.`4` = 4.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`4`]
+    inline def `4`: typings.escPosEncoder.escPosEncoderInts.`4` = 4.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`4`]
     
-    inline def `5`: typings.escPosEncoder.escPosEncoderNumbers.`5` = 5.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`5`]
+    inline def `5`: typings.escPosEncoder.escPosEncoderInts.`5` = 5.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`5`]
     
-    inline def `6`: typings.escPosEncoder.escPosEncoderNumbers.`6` = 6.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`6`]
+    inline def `6`: typings.escPosEncoder.escPosEncoderInts.`6` = 6.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`6`]
     
-    inline def `7`: typings.escPosEncoder.escPosEncoderNumbers.`7` = 7.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`7`]
+    inline def `7`: typings.escPosEncoder.escPosEncoderInts.`7` = 7.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`7`]
     
-    inline def `8`: typings.escPosEncoder.escPosEncoderNumbers.`8` = 8.asInstanceOf[typings.escPosEncoder.escPosEncoderNumbers.`8`]
+    inline def `8`: typings.escPosEncoder.escPosEncoderInts.`8` = 8.asInstanceOf[typings.escPosEncoder.escPosEncoderInts.`8`]
   }
   
   /* Rewritten from type alias, can be one of: 

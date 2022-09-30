@@ -1,10 +1,10 @@
 package typings.agoraRtcSdk.mod
 
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`0`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`1`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`2`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`3`
-import typings.agoraRtcSdk.agoraRtcSdkNumbers.`4`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`0`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`1`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`2`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`3`
+import typings.agoraRtcSdk.agoraRtcSdkInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

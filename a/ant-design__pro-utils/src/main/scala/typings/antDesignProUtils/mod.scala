@@ -19,9 +19,9 @@ import typings.antDesignProUtils.anon.Params
 import typings.antDesignProUtils.anon.ProFormInstanceTypeanyfor
 import typings.antDesignProUtils.anon.SetDataSource
 import typings.antDesignProUtils.antDesignProUtilsBooleans.`false`
-import typings.antDesignProUtils.antDesignProUtilsNumbers.`-1`
-import typings.antDesignProUtils.antDesignProUtilsNumbers.`0`
-import typings.antDesignProUtils.antDesignProUtilsNumbers.`1`
+import typings.antDesignProUtils.antDesignProUtilsInts.`-1`
+import typings.antDesignProUtils.antDesignProUtilsInts.`0`
+import typings.antDesignProUtils.antDesignProUtilsInts.`1`
 import typings.antDesignProUtils.antDesignProUtilsStrings.delete
 import typings.antDesignProUtils.antDesignProUtilsStrings.top
 import typings.antDesignProUtils.antDesignProUtilsStrings.update

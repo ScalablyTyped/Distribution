@@ -1,10 +1,10 @@
 package typings.gcStats
 
-import typings.gcStats.gcStatsNumbers.`15`
-import typings.gcStats.gcStatsNumbers.`1`
-import typings.gcStats.gcStatsNumbers.`2`
-import typings.gcStats.gcStatsNumbers.`4`
-import typings.gcStats.gcStatsNumbers.`8`
+import typings.gcStats.gcStatsInts.`15`
+import typings.gcStats.gcStatsInts.`1`
+import typings.gcStats.gcStatsInts.`2`
+import typings.gcStats.gcStatsInts.`4`
+import typings.gcStats.gcStatsInts.`8`
 import typings.gcStats.gcStatsStrings.stats
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject

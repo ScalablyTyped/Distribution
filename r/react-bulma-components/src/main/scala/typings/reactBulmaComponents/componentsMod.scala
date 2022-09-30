@@ -5,13 +5,13 @@ import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.IntrinsicAttributes
 import typings.reactBulmaComponents.anon.ClassName
 import typings.reactBulmaComponents.anon.ResponsiveModifiersonlyBo
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`2`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`3`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`4`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`5`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`6`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`7`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`1`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`2`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`3`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`4`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`5`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`6`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`7`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.`column-reverse`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.`flex-end`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.`flex-start`
@@ -575,13 +575,13 @@ object componentsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`0`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`2`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`3`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`4`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`5`
-    - typings.reactBulmaComponents.reactBulmaComponentsNumbers.`6`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`0`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`1`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`2`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`3`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`4`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`5`
+    - typings.reactBulmaComponents.reactBulmaComponentsInts.`6`
     - typings.std.Number
     - java.lang.String
   */

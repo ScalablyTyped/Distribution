@@ -39,13 +39,12 @@ object poseEnabledControllerMod {
     
     /**
       * Internal, matrix used to convert room space to babylon space
-      * @hidden
+      * @internal
       */
     var _deviceToWorld: Matrix = js.native
     
     /**
-      * @param fixedPosition
-      * @hidden
+      * @internal
       */
     def _disableTrackPosition(fixedPosition: Vector3): Unit = js.native
     
@@ -57,18 +56,18 @@ object poseEnabledControllerMod {
     
     /**
       * Internal, the mesh attached to the controller
-      * @hidden
+      * @internal
       */
     var _mesh: Nullable[AbstractMesh] = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var _meshAttachedObservable: Observable[AbstractMesh] = js.native
     
     /**
       * Node to be used when casting a ray from the controller
-      * @hidden
+      * @internal
       */
     var _pointingPoseNode: Nullable[TransformNode] = js.native
     
@@ -194,13 +193,13 @@ object poseEnabledControllerMod {
       */
     inline def InitiateController(vrGamepad: Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Gamepads/Controllers/poseEnabledController", "PoseEnabledControllerHelper._ControllerFactories")
     @js.native
     def _ControllerFactories: js.Array[GamePadFactory] = js.native
     inline def _ControllerFactories_=(x: js.Array[GamePadFactory]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ControllerFactories")(x.asInstanceOf[js.Any])
     
-    /** @hidden */
+    /** @internal */
     @JSImport("babylonjs/Gamepads/Controllers/poseEnabledController", "PoseEnabledControllerHelper._DefaultControllerFactory")
     @js.native
     def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native

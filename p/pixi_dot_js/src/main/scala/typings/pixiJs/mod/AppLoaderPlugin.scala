@@ -1,21 +1,49 @@
 package typings.pixiJs.mod
 
+import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Application plugin for supporting loader option. Installing the LoaderPlugin
-  * is not necessary if using **pixi.js** or **pixi.js-legacy**.
-  * @example
-  * import {AppLoaderPlugin} from '@pixi/loaders';
-  * import {Application} from '@pixi/app';
-  * Application.registerPlugin(AppLoaderPlugin);
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "AppLoaderPlugin")
 @js.native
-class AppLoaderPlugin ()
-  extends StObject
-     with typings.pixiJs.PIXI.AppLoaderPlugin
+open class AppLoaderPlugin ()
+  extends typings.pixiLoaders.mod.AppLoaderPlugin
+/* static members */
+object AppLoaderPlugin {
+  
+  @JSImport("pixi.js", "AppLoaderPlugin")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Called when application destroyed
+    * @private
+    */
+  inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
+  
+  /** @ignore */
+  @JSImport("pixi.js", "AppLoaderPlugin.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+  
+  /**
+    * Called on application constructor
+    * @param options
+    * @private
+    */
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  inline def init(
+    options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.IApplicationOptions */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Loader instance to help with asset loading.
+    * @memberof PIXI.Application#
+    * @readonly
+    */
+  @JSImport("pixi.js", "AppLoaderPlugin.loader")
+  @js.native
+  def loader: typings.pixiLoaders.mod.Loader = js.native
+  inline def loader_=(x: typings.pixiLoaders.mod.Loader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loader")(x.asInstanceOf[js.Any])
+}

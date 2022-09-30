@@ -1,6 +1,6 @@
 package typings.electron.Electron
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,6 +69,14 @@ trait NativeImage_ extends StObject {
     */
   def isEmpty(): Boolean = js.native
   
+  /**
+    * A `boolean` property that determines whether the image is considered a template
+    * image.
+    *
+    * Please note that this property only has an effect on macOS.
+    *
+    * @platform darwin
+    */
   var isMacTemplateImage: Boolean = js.native
   
   /**

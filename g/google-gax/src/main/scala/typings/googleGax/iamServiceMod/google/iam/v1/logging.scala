@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object logging {
     * Constructs a new AuditData.
     * @param [properties] Properties to set
     */
-  class AuditData ()
+  open class AuditData ()
     extends StObject
        with IAuditData {
     def this(properties: IAuditData) = this()
@@ -28,7 +27,7 @@ object logging {
       * Converts this AuditData to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
   }
   object AuditData {
     
@@ -45,6 +44,8 @@ object logging {
     inline def create(): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AuditData]
     inline def create(properties: IAuditData): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     
+    inline def decode(reader: js.typedarray.Uint8Array): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): AuditData = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AuditData]
     /**
       * Decodes an AuditData message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -56,9 +57,8 @@ object logging {
     /* static member */
     inline def decode(reader: Reader): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     inline def decode(reader: Reader, length: Double): AuditData = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AuditData]
-    inline def decode(reader: Uint8Array): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
-    inline def decode(reader: Uint8Array, length: Double): AuditData = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AuditData]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     /**
       * Decodes an AuditData message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -68,7 +68,6 @@ object logging {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
-    inline def decodeDelimited(reader: Uint8Array): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     
     /**
       * Encodes the specified AuditData message. Does not implicitly {@link google.iam.v1.logging.AuditData.verify|verify} messages.
@@ -96,7 +95,7 @@ object logging {
       * @returns AuditData
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AuditData]
+    inline def fromObject(`object`: StringDictionary[Any]): AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AuditData]
     
     /**
       * Creates a plain object from an AuditData message. Also converts values to other types if specified.
@@ -105,8 +104,8 @@ object logging {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: AuditData): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: AuditData, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: AuditData): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: AuditData, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an AuditData message.
@@ -114,7 +113,7 @@ object logging {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of an AuditData. */

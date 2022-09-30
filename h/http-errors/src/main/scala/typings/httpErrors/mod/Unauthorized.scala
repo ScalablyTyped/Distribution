@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Unauthorized ()
   extends StObject
-     with HttpError[typings.httpErrors.httpErrorsNumbers.`401`] {
+     with HttpError[typings.httpErrors.httpErrorsInts.`401`] {
   def this(msg: String) = this()
   
   /* CompleteClass */
@@ -24,8 +24,8 @@ open class Unauthorized ()
   var name: String = js.native
   
   /* CompleteClass */
-  var status: typings.httpErrors.httpErrorsNumbers.`401` = js.native
+  var status: typings.httpErrors.httpErrorsInts.`401` = js.native
   
   /* CompleteClass */
-  var statusCode: typings.httpErrors.httpErrorsNumbers.`401` = js.native
+  var statusCode: typings.httpErrors.httpErrorsInts.`401` = js.native
 }

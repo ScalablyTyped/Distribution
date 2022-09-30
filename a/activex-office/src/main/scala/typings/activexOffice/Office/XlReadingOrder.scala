@@ -1,16 +1,16 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-5002`
-import typings.activexOffice.activexOfficeNumbers.`-5003`
-import typings.activexOffice.activexOfficeNumbers.`-5004`
+import typings.activexOffice.activexOfficeInts.`-5002`
+import typings.activexOffice.activexOfficeInts.`-5003`
+import typings.activexOffice.activexOfficeInts.`-5004`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-5002`
-  - typings.activexOffice.activexOfficeNumbers.`-5003`
-  - typings.activexOffice.activexOfficeNumbers.`-5004`
+  - typings.activexOffice.activexOfficeInts.`-5002`
+  - typings.activexOffice.activexOfficeInts.`-5003`
+  - typings.activexOffice.activexOfficeInts.`-5004`
 */
 trait XlReadingOrder extends StObject
 object XlReadingOrder {

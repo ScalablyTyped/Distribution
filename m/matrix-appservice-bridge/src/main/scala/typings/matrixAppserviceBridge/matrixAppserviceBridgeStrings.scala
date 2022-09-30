@@ -206,10 +206,6 @@ object matrixAppserviceBridgeStrings {
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket: mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket = "mxc://${string}".asInstanceOf[mxcColonSlashSlash$LeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
   
@@ -321,6 +317,7 @@ object matrixAppserviceBridgeStrings {
   @js.native
   sealed trait trace
     extends StObject
+       with LogLevel
        with Methods
   inline def trace: trace = "trace".asInstanceOf[trace]
   

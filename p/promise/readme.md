@@ -1,7 +1,7 @@
 
 # Scala.js typings for promise
 
-Typings are for version 7.3.1
+Typings are for version 8.2.0
 
 ## Library description:
 Bare bones Promises/A+ implementation
@@ -10,10 +10,10 @@ Bare bones Promises/A+ implementation
 | ------------------ | :-------------: |
 | Full name          | promise |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 4195 |
-| # downloads        | 486671923 |
-| # stars            | 113 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5.2683224E7 |
+| # stars            | 2467.0 |
 
 ## Links
 - [Homepage](https://github.com/then/promise#readme)

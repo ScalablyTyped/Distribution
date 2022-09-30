@@ -1,31 +1,59 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.browseButtonMod.BrowseButtonProps
 import typings.reactToolbox.buttonButtonMod.ButtonProps
 import typings.reactToolbox.iconButtonMod.IconButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/button", JSImport.Namespace)
-@js.native
-object buttonMod extends js.Object {
-  @js.native
-  class BrowseButton ()
-    extends Component[BrowseButtonProps, js.Object, js.Any]
+object buttonMod {
   
+  @JSImport("react-toolbox/components/button", JSImport.Default)
   @js.native
-  class Button ()
-    extends Component[ButtonProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.buttonButtonMod.Button {
+    def this(props: ButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ButtonProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/button", "BrowseButton")
   @js.native
-  class IconButton ()
-    extends Component[IconButtonProps, js.Object, js.Any]
+  open class BrowseButton protected ()
+    extends typings.reactToolbox.browseButtonMod.BrowseButton {
+    def this(props: BrowseButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: BrowseButtonProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/button", "Button")
   @js.native
-  class default ()
-    extends Component[ButtonProps, js.Object, js.Any]
+  open class Button protected ()
+    extends typings.reactToolbox.buttonButtonMod.Button {
+    def this(props: ButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ButtonProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/button", "IconButton")
+  @js.native
+  open class IconButton protected ()
+    extends typings.reactToolbox.iconButtonMod.IconButton {
+    def this(props: IconButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IconButtonProps, context: Any) = this()
+  }
 }
-

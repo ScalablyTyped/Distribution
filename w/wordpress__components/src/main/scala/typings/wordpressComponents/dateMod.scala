@@ -2,7 +2,6 @@ package typings.wordpressComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
-import typings.std.Date
 import typings.wordpressComponents.dateMod.DatePicker.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +41,7 @@ object dateMod {
         * A callback function that should return a `boolean` to signify if the
         * day is valid or not.
         */
-      var isInvalidDate: js.UndefOr[js.Function1[/* date */ Date, Boolean]] = js.undefined
+      var isInvalidDate: js.UndefOr[js.Function1[/* date */ js.Date, Boolean]] = js.undefined
       
       /**
         * Function to call when the date value changes.
@@ -66,7 +65,7 @@ object dateMod {
         
         inline def setIs12HourUndefined: Self = StObject.set(x, "is12Hour", js.undefined)
         
-        inline def setIsInvalidDate(value: /* date */ Date => Boolean): Self = StObject.set(x, "isInvalidDate", js.Any.fromFunction1(value))
+        inline def setIsInvalidDate(value: /* date */ js.Date => Boolean): Self = StObject.set(x, "isInvalidDate", js.Any.fromFunction1(value))
         
         inline def setIsInvalidDateUndefined: Self = StObject.set(x, "isInvalidDate", js.undefined)
         

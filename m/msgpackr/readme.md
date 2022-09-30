@@ -1,7 +1,7 @@
 
 # Scala.js typings for msgpackr
 
-Typings are for version 1.6.3
+Typings are for version 1.7.2
 
 ## Library description:
 Ultra-fast MessagePack implementation with extensions for records and structured cloning

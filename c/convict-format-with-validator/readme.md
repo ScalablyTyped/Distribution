@@ -11,14 +11,14 @@ Formats 'email', 'ipaddress' and 'url' for convict
 | Full name          | convict-format-with-validator |
 | Keywords           | convict, convict-format, email, ipaddress, url, validator |
 | # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 1508733 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 495916.6666666667 |
+| # stars            | 1954.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla/node-convict)
 - [Bugs](https://github.com/mozilla/node-convict/issues)
-- [Repository](https://github.com/mozilla/node-convict)
+- [Repository](https://github.com/mozilla/node-convict/tree/master)
 - [Npm](https://www.npmjs.com/package/convict-format-with-validator)
     
 

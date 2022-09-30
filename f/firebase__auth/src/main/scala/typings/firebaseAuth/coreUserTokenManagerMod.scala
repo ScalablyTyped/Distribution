@@ -1,7 +1,7 @@
 package typings.firebaseAuth
 
 import typings.firebaseAuth.esm5SrcModelAuthMod.AuthInternal
-import typings.firebaseAuth.firebaseAuthNumbers.`30000`
+import typings.firebaseAuth.firebaseAuthInts.`30000`
 import typings.firebaseAuth.srcApiAuthenticationMfaMod.FinalizeMfaResponse
 import typings.firebaseAuth.srcCorePersistenceMod.PersistedBlob
 import typings.firebaseAuth.srcModelIdTokenMod.IdTokenResponse

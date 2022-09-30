@@ -1,16 +1,17 @@
 package typings.googleCloudPubsub
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.googleCloudPubsub.flowControlMod.FlowControl
+import typings.googleCloudPubsub.flowControlMod.FlowControlOptions
 import typings.googleCloudPubsub.messageBatchMod.BatchPublishOptions
-import typings.googleCloudPubsub.opentelemetryTracingMod.OpenTelemetryTracer
-import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IPubsubMessage
 import typings.googleCloudPubsub.publisherMessageQueuesMod.OrderedQueue
 import typings.googleCloudPubsub.publisherMessageQueuesMod.Queue
+import typings.googleCloudPubsub.pubsubMessageMod.Attributes
+import typings.googleCloudPubsub.pubsubMessageMod.PubsubMessage
 import typings.googleCloudPubsub.pubsubMod.EmptyCallback
 import typings.googleCloudPubsub.pubsubMod.RequestCallback
 import typings.googleCloudPubsub.topicMod.Topic
 import typings.googleGax.gaxMod.CallOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.opentelemetryApi.spanMod.Span
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -25,7 +26,7 @@ object publisherMod {
   
   @JSImport("@google-cloud/pubsub/build/src/publisher", "Publisher")
   @js.native
-  class Publisher protected () extends StObject {
+  open class Publisher protected () extends StObject {
     def this(topic: Topic) = this()
     def this(topic: Topic, options: PublishOptions) = this()
     
@@ -38,11 +39,49 @@ object publisherMod {
       */
     def constructSpan(message: PubsubMessage): js.UndefOr[Span] = js.native
     
+    var flowControl: FlowControl = js.native
+    
+    /**
+      * Immediately sends all remaining queued data. This is mostly useful
+      * if you are planning to call close() on the PubSub object that holds
+      * the server connections.
+      *
+      * @private
+      *
+      * @param {EmptyCallback} [callback] Callback function.
+      * @returns {Promise<EmptyResponse>}
+      */
     def flush(): js.Promise[Unit] = js.native
     def flush(callback: EmptyCallback): Unit = js.native
     
+    /**
+      * Returns the set of default options used for {@link Publisher}. The
+      * returned value is a copy, and editing it will have no effect elsehwere.
+      *
+      * This is a non-static method to make it easier to access/stub.
+      *
+      * @private
+      *
+      * @returns {PublishOptions}
+      */
+    def getOptionDefaults(): PublishOptions = js.native
+    
     var orderedQueues: Map[String, OrderedQueue] = js.native
     
+    /**
+      * Publish the provided message.
+      *
+      * @deprecated use {@link Publisher#publishMessage} instead.
+      *
+      * @private
+      * @see Publisher#publishMessage
+      *
+      * @param {buffer} data The message data. This must come in the form of a
+      *     Buffer object.
+      * @param {object.<string, string>} [attributes] Attributes for this message.
+      * @param {PublishCallback} [callback] Callback function.
+      * @returns {Promise<PublishResponse>}
+      */
     def publish(data: Buffer): js.Promise[String] = js.native
     def publish(data: Buffer, attributes: Attributes): js.Promise[String] = js.native
     def publish(data: Buffer, attributes: Attributes, callback: PublishCallback): Unit = js.native
@@ -59,6 +98,7 @@ object publisherMod {
       * @param {PubsubMessage} [message] Options for this message.
       * @param {PublishCallback} [callback] Callback function.
       */
+    def publishMessage(message: PubsubMessage): js.Promise[String] = js.native
     def publishMessage(message: PubsubMessage, callback: PublishCallback): Unit = js.native
     
     var queue: Queue = js.native
@@ -86,11 +126,11 @@ object publisherMod {
     var settings: PublishOptions = js.native
     
     var topic: Topic = js.native
-    
-    var tracing: js.UndefOr[OpenTelemetryTracer] = js.native
   }
   
-  type Attributes = StringDictionary[String]
+  @JSImport("@google-cloud/pubsub/build/src/publisher", "flowControlDefaults")
+  @js.native
+  val flowControlDefaults: FlowControlOptions = js.native
   
   type PublishCallback = RequestCallback[String, Unit]
   
@@ -99,6 +139,8 @@ object publisherMod {
     var batching: js.UndefOr[BatchPublishOptions] = js.undefined
     
     var enableOpenTelemetryTracing: js.UndefOr[Boolean] = js.undefined
+    
+    var flowControlOptions: js.UndefOr[FlowControlOptions] = js.undefined
     
     var gaxOpts: js.UndefOr[CallOptions] = js.undefined
     
@@ -121,6 +163,10 @@ object publisherMod {
       
       inline def setEnableOpenTelemetryTracingUndefined: Self = StObject.set(x, "enableOpenTelemetryTracing", js.undefined)
       
+      inline def setFlowControlOptions(value: FlowControlOptions): Self = StObject.set(x, "flowControlOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFlowControlOptionsUndefined: Self = StObject.set(x, "flowControlOptions", js.undefined)
+      
       inline def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
       
       inline def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
@@ -130,6 +176,4 @@ object publisherMod {
       inline def setMessageOrderingUndefined: Self = StObject.set(x, "messageOrdering", js.undefined)
     }
   }
-  
-  type PubsubMessage = IPubsubMessage
 }

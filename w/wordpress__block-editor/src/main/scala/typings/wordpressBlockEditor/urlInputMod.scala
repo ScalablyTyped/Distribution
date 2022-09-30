@@ -25,7 +25,7 @@ object urlInputMod {
   object URLInput {
     
     // TODO: if PostType is ever typed import it and use it here
-    type PostType = Record[String, js.Any]
+    type PostType = Record[String, Any]
     
     @js.native
     trait Props extends StObject {

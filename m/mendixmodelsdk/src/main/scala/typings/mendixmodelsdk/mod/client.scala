@@ -9,7 +9,7 @@ object client {
   
   @JSImport("mendixmodelsdk", "client.SupportedPlatform")
   @js.native
-  class SupportedPlatform protected ()
+  open class SupportedPlatform protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.client.SupportedPlatform {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }

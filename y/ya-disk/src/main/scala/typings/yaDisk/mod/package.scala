@@ -22,9 +22,6 @@ inline def recent(token: String, options: RecentProps): js.Promise[LastUploadedR
   - typings.yaDisk.yaDiskStrings.XXL
   - typings.yaDisk.yaDiskStrings.XXXL
   - scala.Double
-  - typings.yaDisk.yaDiskStrings.$LeftcurlybracketnumberRightcurlybracket
-  - typings.yaDisk.yaDiskStrings.$LeftcurlybracketnumberRightcurlybracketx
-  - typings.yaDisk.yaDiskStrings.x$LeftcurlybracketnumberRightcurlybracket
-  - typings.yaDisk.yaDiskStrings.DollarLeftcurlybracketnumberRightcurlybracketxDollarLeftcurlybracketnumberRightcurlybracket
+  - / * template literal string: ${number} * / java.lang.String
 */
-type PreviewSize = _PreviewSize | Double
+type PreviewSize = _PreviewSize | Double | (/* template literal string: ${number} */ String)

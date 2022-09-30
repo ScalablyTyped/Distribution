@@ -11,9 +11,9 @@ a reducer enhancer to enable type-agnostic optimistic updates
 | Full name          | redux-optimistic-ui |
 | Keywords           | redux, optimistic, latency-compensation, optimistic-ui |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 165836 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8771.333333333334 |
+| # stars            | 694.0 |
 
 ## Links
 - [Homepage](https://github.com/mattkrick/redux-optimistic-ui#readme)

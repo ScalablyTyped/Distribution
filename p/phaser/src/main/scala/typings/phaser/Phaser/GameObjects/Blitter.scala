@@ -11,7 +11,6 @@ import typings.phaser.Phaser.GameObjects.Components.Size
 import typings.phaser.Phaser.GameObjects.Components.Texture
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
-import typings.phaser.Phaser.Structs.List
 import typings.phaser.Phaser.Textures.Frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -57,7 +56,7 @@ trait Blitter
     * The children of this Blitter.
     * This List contains all of the Bob objects created by the Blitter.
     */
-  var children: List[Bob] = js.native
+  var children: typings.phaser.Phaser.Structs.List[Bob] = js.native
   
   /**
     * Removes all Bobs from the children List and clears the dirty flag.

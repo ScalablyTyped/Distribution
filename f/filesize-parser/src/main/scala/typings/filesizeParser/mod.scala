@@ -1,7 +1,7 @@
 package typings.filesizeParser
 
-import typings.filesizeParser.filesizeParserNumbers.`10`
-import typings.filesizeParser.filesizeParserNumbers.`2`
+import typings.filesizeParser.filesizeParserInts.`10`
+import typings.filesizeParser.filesizeParserInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

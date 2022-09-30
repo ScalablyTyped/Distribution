@@ -4,34 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonslotted
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colondir
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonhas
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonhost
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonhost-context`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonis
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlang
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonmatchesLeftparenthesisRightparenthesis
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-child`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-last-child`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-last-of-type`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-of-type`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonwhere
-*/
-trait AdvancedPseudos extends StObject
 object AdvancedPseudos {
   
-  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis` = ":-moz-any()".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis`]
+  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
   
   inline def `Colon-moz-dir`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir` = ":-moz-dir".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`]
   
-  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis` = ":-webkit-any()".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`]
+  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
   
   inline def ColonColoncue: typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue = "::cue".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue]
   
@@ -49,7 +28,7 @@ object AdvancedPseudos {
   
   inline def Colonlang: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlang = ":lang".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlang]
   
-  inline def ColonmatchesLeftparenthesisRightparenthesis: typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonmatchesLeftparenthesisRightparenthesis = ":matches()".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonmatchesLeftparenthesisRightparenthesis]
+  inline def ColonmatchesLeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
   
   inline def Colonnot: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot = ":not".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot]
   

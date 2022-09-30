@@ -58,18 +58,18 @@ object converterMod {
     /* private */ var runtime: Any = js.native
     
     def subscribe(): Converter = js.native
-    def subscribe(onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | js.Thenable[Unit]]): Converter = js.native
+    def subscribe(onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | PromiseLike[Unit]]): Converter = js.native
     def subscribe(
-      onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | js.Thenable[Unit]],
+      onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | PromiseLike[Unit]],
       onError: js.Function1[/* err */ default, Unit]
     ): Converter = js.native
     def subscribe(
-      onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | js.Thenable[Unit]],
+      onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | PromiseLike[Unit]],
       onError: js.Function1[/* err */ default, Unit],
       onCompleted: js.Function0[Unit]
     ): Converter = js.native
     def subscribe(
-      onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | js.Thenable[Unit]],
+      onNext: js.Function2[/* data */ Any, /* lineNumber */ Double, Unit | PromiseLike[Unit]],
       onError: Unit,
       onCompleted: js.Function0[Unit]
     ): Converter = js.native
@@ -141,7 +141,7 @@ object converterMod {
     }
   }
   
-  type PreFileLineCallback = js.Function2[/* line */ String, /* lineNumber */ Double, String | js.Thenable[String]]
+  type PreFileLineCallback = js.Function2[/* line */ String, /* lineNumber */ Double, String | PromiseLike[String]]
   
-  type PreRawDataCallback = js.Function1[/* csvString */ String, String | js.Thenable[String]]
+  type PreRawDataCallback = js.Function1[/* csvString */ String, String | PromiseLike[String]]
 }

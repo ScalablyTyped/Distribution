@@ -15,7 +15,7 @@ object global {
     
     @JSGlobal("Notifications")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactNotificationSystemRedux.mod.^
     
     @JSGlobal("Notifications")
@@ -26,10 +26,10 @@ object global {
     @js.native
     val error: NotificationShow = js.native
     
-    inline def hide(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Action[js.Any]]
-    inline def hide(opts: String): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-    inline def hide(opts: Double): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-    inline def hide(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
+    inline def hide(): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Action[Any]]
+    inline def hide(opts: String): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
+    inline def hide(opts: Double): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
+    inline def hide(opts: Notification): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
     
     @JSGlobal("Notifications.info")
     @js.native
@@ -37,14 +37,14 @@ object global {
     
     @JSGlobal("Notifications.reducer")
     @js.native
-    val reducer: NotificationsReducer[js.Any] = js.native
+    val reducer: NotificationsReducer[Any] = js.native
     
-    inline def removeAll(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Action[js.Any]]
+    inline def removeAll(): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Action[Any]]
     
-    inline def show(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Action[js.Any]]
-    inline def show(opts: Unit, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
-    inline def show(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-    inline def show(opts: Notification, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
+    inline def show(): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Action[Any]]
+    inline def show(opts: Unit, level: NotificationLevel): Action[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[Any]]
+    inline def show(opts: Notification): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
+    inline def show(opts: Notification, level: NotificationLevel): Action[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[Any]]
     
     @JSGlobal("Notifications.success")
     @js.native

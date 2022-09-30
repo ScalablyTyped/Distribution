@@ -2,9 +2,9 @@ package typings.rmcDialog
 
 import typings.react.mod.Component
 import typings.reactNative.mod.ViewStyle
-import typings.rmcDialog.rmcDialogNumbers.`0`
-import typings.rmcDialog.rmcDialogNumbers.`1.05`
-import typings.rmcDialog.rmcDialogNumbers.`1`
+import typings.rmcDialog.rmcDialogDoubles.`1.05`
+import typings.rmcDialog.rmcDialogInts.`0`
+import typings.rmcDialog.rmcDialogInts.`1`
 import typings.rmcDialog.rmcDialogStrings.`slide-down`
 import typings.rmcDialog.rmcDialogStrings.`slide-up`
 import typings.rmcDialog.rmcDialogStrings.fade

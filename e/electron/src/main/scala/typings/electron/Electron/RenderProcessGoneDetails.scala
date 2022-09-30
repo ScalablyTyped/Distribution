@@ -14,6 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RenderProcessGoneDetails extends StObject {
   
   /**
+    * The exit code of the process, unless `reason` is `launch-failed`, in which case
+    * `exitCode` will be a platform-specific launch failure error code.
+    */
+  var exitCode: Double
+  
+  /**
     * The reason the render process is gone.  Possible values:
     */
   var reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
@@ -21,13 +27,16 @@ trait RenderProcessGoneDetails extends StObject {
 object RenderProcessGoneDetails {
   
   inline def apply(
+    exitCode: Double,
     reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
   ): RenderProcessGoneDetails = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(exitCode = exitCode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderProcessGoneDetails]
   }
   
   extension [Self <: RenderProcessGoneDetails](x: Self) {
+    
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     inline def setReason(
       value: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`

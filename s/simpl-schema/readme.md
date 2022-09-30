@@ -1,7 +1,7 @@
 
 # Scala.js typings for simpl-schema
 
-Typings are for version 0.2
+Typings are for version 1.12
 
 ## Library description:
 A schema validation package that supports direct validation of MongoDB update modifier objects.
@@ -10,15 +10,15 @@ A schema validation package that supports direct validation of MongoDB update mo
 | ------------------ | :-------------: |
 | Full name          | simpl-schema |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 126 |
-| # downloads        | 992742 |
-| # stars            | 8 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 96861.33333333333 |
+| # stars            | 552.0 |
 
 ## Links
-- [Homepage](https://github.com/aldeed/simpl-schema)
-- [Bugs](https://github.com/aldeed/simpl-schema/issues)
-- [Repository](https://github.com/aldeed/simpl-schema)
+- [Homepage](https://github.com/longshotlabs/simpl-schema)
+- [Bugs](https://github.com/longshotlabs/simpl-schema/issues)
+- [Repository](https://github.com/longshotlabs/simpl-schema)
 - [Npm](https://www.npmjs.com/package/simpl-schema)
     
 

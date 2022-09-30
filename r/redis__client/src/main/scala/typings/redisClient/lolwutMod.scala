@@ -15,8 +15,8 @@ object lolwutMod {
   @js.native
   val IS_READ_ONLY: /* true */ Boolean = js.native
   
-  inline def transformArguments(version: Double, optionalArguments: Double*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(List(version.asInstanceOf[js.Any]).`++`(optionalArguments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[String]]
-  inline def transformArguments(version: Unit, optionalArguments: Double*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(List(version.asInstanceOf[js.Any]).`++`(optionalArguments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[String]]
+  inline def transformArguments(version: Double, optionalArguments: Double*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(scala.List(version.asInstanceOf[js.Any]).`++`(optionalArguments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[String]]
+  inline def transformArguments(version: Unit, optionalArguments: Double*): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(scala.List(version.asInstanceOf[js.Any]).`++`(optionalArguments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[String]]
   
   inline def transformReply(): RedisCommandArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")().asInstanceOf[RedisCommandArgument]
 }

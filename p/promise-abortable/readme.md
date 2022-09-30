@@ -10,10 +10,10 @@ A little lib for aborting in Promise chain.
 | ------------------ | :-------------: |
 | Full name          | promise-abortable |
 | Keywords           | promise, abortable, cancellable, abort, aborting, aborted, cancel, canceling, canceled, async, await, signal, onabort, abortSignal, abortController |
-| # releases         | 14 |
-| # dependents       | 0 |
-| # downloads        | 1666 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2896.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/dondevi/promise-abortable)

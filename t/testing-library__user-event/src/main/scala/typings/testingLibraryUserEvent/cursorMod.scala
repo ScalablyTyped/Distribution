@@ -2,8 +2,8 @@ package typings.testingLibraryUserEvent
 
 import typings.testingLibraryUserEvent.anon.Offset
 import typings.testingLibraryUserEvent.prepareDocumentMod.global.Node
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`-1`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`-1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

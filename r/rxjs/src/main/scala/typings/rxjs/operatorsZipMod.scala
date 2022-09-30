@@ -30,7 +30,7 @@ object operatorsZipMod {
     project: js.Function1[/* values */ Cons[T, A], R]
   ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(otherInputsAndProject.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
   
-  inline def zip_TA_ArrayAnyR[T, A /* <: js.Array[Any] */, R](
+  inline def zip_TAR[T, A /* <: js.Array[Any] */, R](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param otherInputsAndProject because its type [...ObservableInputTuple<A>, (values : Cons<T, A>): R] is not an array type */ otherInputsAndProject: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>} */ js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<A[K]>}

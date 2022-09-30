@@ -14,11 +14,11 @@ object isActiveMod {
   inline def default(pathname: Pathname): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def default(
     pathname: Pathname,
-    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any
+    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ Any
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def default(
     pathname: Pathname,
-    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any,
+    query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ Any,
     indexOnly: Boolean
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], indexOnly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def default(pathname: Pathname, query: Unit, indexOnly: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], indexOnly.asInstanceOf[js.Any])).asInstanceOf[Boolean]

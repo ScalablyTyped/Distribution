@@ -22,8 +22,8 @@ object mod {
     
     inline def each(collection: Any, callback: js.Function2[/* indexInArray */ Any, /* valueOfElement */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def extend(deep: Boolean, target: Any, objs: Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((List(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(objs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
-    inline def extend(target: Any, objs: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(target.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+    inline def extend(deep: Boolean, target: Any, objs: Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((scala.List(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(objs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
+    inline def extend(target: Any, objs: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(target.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
     
     inline def isArray(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     

@@ -1,6 +1,6 @@
 package typings.wixUiTestUtils.anon
 
-import typings.wixUiTestUtils.wixUiTestUtilsNumbers.`6006`
+import typings.wixUiTestUtils.wixUiTestUtilsInts.`6006`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`16`
-import typings.html2canvas.html2canvasNumbers.`17`
+import typings.html2canvas.html2canvasInts.`16`
+import typings.html2canvas.html2canvasInts.`17`
 import typings.html2canvas.parserMod.CSSValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/log-message relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.LogMessageAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.LogMessageAction")
 @js.native
-class LogMessageAction protected ()
+open class LogMessageAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.LogMessageAction {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class LogMessageAction protected ()
 }
 object LogMessageAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.LogMessageAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.LogMessageAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object LogMessageAction {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.LogMessageAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.LogMessageAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.LogMessageAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.LogMessageAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.LogMessageAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.LogMessageAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

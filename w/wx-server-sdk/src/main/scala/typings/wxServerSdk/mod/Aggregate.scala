@@ -8,8 +8,8 @@ import typings.wxServerSdk.anon.DistanceField
 import typings.wxServerSdk.anon.IncludeArrayIndex
 import typings.wxServerSdk.anon.NewRoot
 import typings.wxServerSdk.anon.Size
-import typings.wxServerSdk.wxServerSdkNumbers.`-1`
-import typings.wxServerSdk.wxServerSdkNumbers.`1`
+import typings.wxServerSdk.wxServerSdkInts.`-1`
+import typings.wxServerSdk.wxServerSdkInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

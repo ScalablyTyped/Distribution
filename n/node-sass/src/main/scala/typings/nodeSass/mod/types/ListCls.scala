@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ListCls protected ()
   extends StObject
-     with List {
+     with typings.nodeSass.mod.types.List {
   def this(length: Double) = this()
   def this(length: Double, commaSeparator: scala.Boolean) = this()
   

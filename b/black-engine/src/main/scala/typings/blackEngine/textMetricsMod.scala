@@ -37,7 +37,7 @@ object textMetricsMod {
     inline def __measure(text: String, style: TextStyle): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("__measure")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
     inline def __measure(text: String, style: TextStyle, outBounds: Rectangle): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("__measure")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], outBounds.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
     
-    inline def measure(text: String, lineHeight: Double, styles: TextStyle*): TextMetricsData = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")((List(text.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).`++`(styles.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TextMetricsData]
+    inline def measure(text: String, lineHeight: Double, styles: TextStyle*): TextMetricsData = (^.asInstanceOf[js.Dynamic].applyDynamic("measure")((scala.List(text.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any])).`++`(styles.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TextMetricsData]
     
     inline def measureBitmap(text: String, data: BitmapFontData, lineHeight: Double, outBounds: Rectangle): Rectangle = (^.asInstanceOf[js.Dynamic].applyDynamic("measureBitmap")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any], lineHeight.asInstanceOf[js.Any], outBounds.asInstanceOf[js.Any])).asInstanceOf[Rectangle]
   }

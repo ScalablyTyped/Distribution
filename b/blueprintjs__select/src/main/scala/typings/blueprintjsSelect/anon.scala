@@ -807,7 +807,7 @@ object anon {
     
     var closeOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, Any]] = js.undefined
+    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, Any | js.Array[Any]]] = js.undefined
     
     var createNewItemPosition: js.UndefOr[first | last] = js.undefined
     
@@ -907,7 +907,7 @@ object anon {
       
       inline def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
       
-      inline def setCreateNewItemFromQuery(value: /* query */ String => Any): Self = StObject.set(x, "createNewItemFromQuery", js.Any.fromFunction1(value))
+      inline def setCreateNewItemFromQuery(value: /* query */ String => Any | js.Array[Any]): Self = StObject.set(x, "createNewItemFromQuery", js.Any.fromFunction1(value))
       
       inline def setCreateNewItemFromQueryUndefined: Self = StObject.set(x, "createNewItemFromQuery", js.undefined)
       
@@ -1060,7 +1060,7 @@ object anon {
     
     var closeOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, Any]] = js.undefined
+    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, Any | js.Array[Any]]] = js.undefined
     
     var createNewItemPosition: js.UndefOr[first | last] = js.undefined
     
@@ -1154,7 +1154,7 @@ object anon {
       
       inline def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
       
-      inline def setCreateNewItemFromQuery(value: /* query */ String => Any): Self = StObject.set(x, "createNewItemFromQuery", js.Any.fromFunction1(value))
+      inline def setCreateNewItemFromQuery(value: /* query */ String => Any | js.Array[Any]): Self = StObject.set(x, "createNewItemFromQuery", js.Any.fromFunction1(value))
       
       inline def setCreateNewItemFromQueryUndefined: Self = StObject.set(x, "createNewItemFromQuery", js.undefined)
       

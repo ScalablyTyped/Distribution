@@ -1,46 +1,46 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`0`
-import typings.activexWord.activexWordNumbers.`10`
-import typings.activexWord.activexWordNumbers.`11`
-import typings.activexWord.activexWordNumbers.`1`
-import typings.activexWord.activexWordNumbers.`20`
-import typings.activexWord.activexWordNumbers.`23`
-import typings.activexWord.activexWordNumbers.`25`
-import typings.activexWord.activexWordNumbers.`26`
-import typings.activexWord.activexWordNumbers.`27`
-import typings.activexWord.activexWordNumbers.`2`
-import typings.activexWord.activexWordNumbers.`39`
-import typings.activexWord.activexWordNumbers.`3`
-import typings.activexWord.activexWordNumbers.`43`
-import typings.activexWord.activexWordNumbers.`4`
-import typings.activexWord.activexWordNumbers.`55`
-import typings.activexWord.activexWordNumbers.`6`
-import typings.activexWord.activexWordNumbers.`7`
-import typings.activexWord.activexWordNumbers.`9`
+import typings.activexWord.activexWordInts.`0`
+import typings.activexWord.activexWordInts.`10`
+import typings.activexWord.activexWordInts.`11`
+import typings.activexWord.activexWordInts.`1`
+import typings.activexWord.activexWordInts.`20`
+import typings.activexWord.activexWordInts.`23`
+import typings.activexWord.activexWordInts.`25`
+import typings.activexWord.activexWordInts.`26`
+import typings.activexWord.activexWordInts.`27`
+import typings.activexWord.activexWordInts.`2`
+import typings.activexWord.activexWordInts.`39`
+import typings.activexWord.activexWordInts.`3`
+import typings.activexWord.activexWordInts.`43`
+import typings.activexWord.activexWordInts.`4`
+import typings.activexWord.activexWordInts.`55`
+import typings.activexWord.activexWordInts.`6`
+import typings.activexWord.activexWordInts.`7`
+import typings.activexWord.activexWordInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`7`
-  - typings.activexWord.activexWordNumbers.`23`
-  - typings.activexWord.activexWordNumbers.`39`
-  - typings.activexWord.activexWordNumbers.`55`
-  - typings.activexWord.activexWordNumbers.`9`
-  - typings.activexWord.activexWordNumbers.`25`
-  - typings.activexWord.activexWordNumbers.`10`
-  - typings.activexWord.activexWordNumbers.`26`
-  - typings.activexWord.activexWordNumbers.`4`
-  - typings.activexWord.activexWordNumbers.`20`
-  - typings.activexWord.activexWordNumbers.`3`
-  - typings.activexWord.activexWordNumbers.`0`
-  - typings.activexWord.activexWordNumbers.`1`
-  - typings.activexWord.activexWordNumbers.`6`
-  - typings.activexWord.activexWordNumbers.`11`
-  - typings.activexWord.activexWordNumbers.`43`
-  - typings.activexWord.activexWordNumbers.`27`
-  - typings.activexWord.activexWordNumbers.`2`
+  - typings.activexWord.activexWordInts.`7`
+  - typings.activexWord.activexWordInts.`23`
+  - typings.activexWord.activexWordInts.`39`
+  - typings.activexWord.activexWordInts.`55`
+  - typings.activexWord.activexWordInts.`9`
+  - typings.activexWord.activexWordInts.`25`
+  - typings.activexWord.activexWordInts.`10`
+  - typings.activexWord.activexWordInts.`26`
+  - typings.activexWord.activexWordInts.`4`
+  - typings.activexWord.activexWordInts.`20`
+  - typings.activexWord.activexWordInts.`3`
+  - typings.activexWord.activexWordInts.`0`
+  - typings.activexWord.activexWordInts.`1`
+  - typings.activexWord.activexWordInts.`6`
+  - typings.activexWord.activexWordInts.`11`
+  - typings.activexWord.activexWordInts.`43`
+  - typings.activexWord.activexWordInts.`27`
+  - typings.activexWord.activexWordInts.`2`
 */
 trait WdUnderline extends StObject
 object WdUnderline {

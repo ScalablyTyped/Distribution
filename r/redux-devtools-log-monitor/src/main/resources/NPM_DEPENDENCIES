@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "redux-devtools-log-monitor" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "redux-devtools-log-monitor" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

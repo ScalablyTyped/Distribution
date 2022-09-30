@@ -1,8 +1,8 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`0`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`2`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`0`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`1`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`2`
 import typings.wechatMiniprogram.wechatMiniprogramStrings.en
 import typings.wechatMiniprogram.wechatMiniprogramStrings.zh_CN
 import typings.wechatMiniprogram.wechatMiniprogramStrings.zh_TW

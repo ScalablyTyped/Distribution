@@ -1,7 +1,7 @@
 package typings.guacamoleCommonJs
 
 import typings.guacamoleCommonJs.guacCommonMod.TypedArray
-import typings.guacamoleCommonJs.guacamoleCommonJsNumbers.`6048`
+import typings.guacamoleCommonJs.guacamoleCommonJsInts.`6048`
 import typings.guacamoleCommonJs.outputStreamMod.OutputStream
 import typings.guacamoleCommonJs.statusMod.Status
 import org.scalablytyped.runtime.StObject

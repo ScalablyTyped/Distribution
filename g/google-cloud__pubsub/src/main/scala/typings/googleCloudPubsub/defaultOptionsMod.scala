@@ -1,7 +1,7 @@
 package typings.googleCloudPubsub
 
+import typings.googleCloudPubsub.anon.AckDeadline
 import typings.googleCloudPubsub.anon.MaxDelayMillis
-import typings.googleCloudPubsub.anon.MaxExtensionMinutes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object defaultOptionsMod {
     
     @JSImport("@google-cloud/pubsub/build/src/default-options", "defaultOptions.subscription")
     @js.native
-    def subscription: MaxExtensionMinutes = js.native
-    inline def subscription_=(x: MaxExtensionMinutes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscription")(x.asInstanceOf[js.Any])
+    def subscription: AckDeadline = js.native
+    inline def subscription_=(x: AckDeadline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscription")(x.asInstanceOf[js.Any])
   }
 }

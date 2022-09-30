@@ -15,22 +15,22 @@ object mod {
     pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
     options: String,
     properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
   inline def apply(
     pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
     options: js.Array[String],
     properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
   inline def apply(
     pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
     options: Unit,
     properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
   inline def apply(
     pmodule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
     options: Options,
     properties: String*
-  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
+  ): PkgInfo = (^.asInstanceOf[js.Dynamic].apply((scala.List(pmodule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(properties.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[PkgInfo]
   
   @JSImport("pkginfo", JSImport.Namespace)
   @js.native

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.WidgetValidation")
 @js.native
-class WidgetValidation protected ()
+open class WidgetValidation protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.WidgetValidation {
   def this(
     model: AbstractModel,

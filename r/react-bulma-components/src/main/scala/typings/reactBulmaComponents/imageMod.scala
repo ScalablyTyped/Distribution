@@ -2,13 +2,13 @@ package typings.reactBulmaComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.reactBulmaComponents.componentsMod.BulmaComponentWithoutRenderAs
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`128`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`16`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`24`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`32`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`48`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`64`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`96`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`128`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`16`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`24`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`32`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`48`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`64`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`96`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.`16by9`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.`1by1`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.`1by2`

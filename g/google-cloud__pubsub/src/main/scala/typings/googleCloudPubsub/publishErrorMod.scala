@@ -11,7 +11,7 @@ object publishErrorMod {
   
   @JSImport("@google-cloud/pubsub/build/src/publisher/publish-error", "PublishError")
   @js.native
-  class PublishError protected ()
+  open class PublishError protected ()
     extends StObject
        with ServiceError {
     def this(key: String, err: ServiceError) = this()
@@ -24,6 +24,7 @@ object publishErrorMod {
     
     var error: ServiceError = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
@@ -32,6 +33,7 @@ object publishErrorMod {
     @JSName("metadata")
     var metadata_PublishError: typings.googleGax.mod.grpc.Metadata = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

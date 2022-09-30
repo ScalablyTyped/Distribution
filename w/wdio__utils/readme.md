@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__utils
 
-Typings are for version 6.8.0
+Typings are for version 7.25.0
 
 ## Library description:
 A WDIO helper utility to provide several utility functions used across the project.
@@ -10,10 +10,10 @@ A WDIO helper utility to provide several utility functions used across the proje
 | ------------------ | :-------------: |
 | Full name          | @wdio/utils |
 | Keywords           | webdriverio, webdriver, wdio, utils |
-| # releases         | 75 |
-| # dependents       | 11 |
-| # downloads        | 30743749 |
-| # stars            | 0 |
+| # releases         | 84 |
+| # dependents       | 0.0 |
+| # downloads        | 4386618.333333333 |
+| # stars            | 7720.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-utils)

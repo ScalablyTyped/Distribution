@@ -48,12 +48,12 @@ import typings.cookieclicker.anon.PlayersN
 import typings.cookieclicker.anon.TypeofMusic
 import typings.cookieclicker.anon.TypeofSteam
 import typings.cookieclicker.cookieclickerBooleans.`false`
-import typings.cookieclicker.cookieclickerNumbers.`-1`
-import typings.cookieclicker.cookieclickerNumbers.`0`
-import typings.cookieclicker.cookieclickerNumbers.`1`
-import typings.cookieclicker.cookieclickerNumbers.`2`
-import typings.cookieclicker.cookieclickerNumbers.`3`
-import typings.cookieclicker.cookieclickerNumbers.`4`
+import typings.cookieclicker.cookieclickerInts.`-1`
+import typings.cookieclicker.cookieclickerInts.`0`
+import typings.cookieclicker.cookieclickerInts.`1`
+import typings.cookieclicker.cookieclickerInts.`2`
+import typings.cookieclicker.cookieclickerInts.`3`
+import typings.cookieclicker.cookieclickerInts.`4`
 import typings.cookieclicker.cookieclickerStrings.Farm
 import typings.cookieclicker.cookieclickerStrings.Temple
 import typings.cookieclicker.cookieclickerStrings._empty
@@ -109,7 +109,6 @@ import typings.std.InputEvent
 import typings.std.MouseEvent
 import typings.std.OnErrorEventHandler
 import typings.std.Record
-import typings.std.global.Audio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -3303,15 +3302,6 @@ object global {
     * Floors or ceils randomly, biased by the decimal value
     */
   inline def randomFloor(x: Double): Double = js.Dynamic.global.applyDynamic("randomFloor")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  /* was `typeof Audio` */
-  @JSGlobal("realAudio")
-  @js.native
-  /* standard dom */
-  open class realAudio () extends Audio {
-    def this(src: String) = this()
-  }
   
   inline def replaceAll(find: String, replace: String, str: String): String = (js.Dynamic.global.applyDynamic("replaceAll")(find.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
   

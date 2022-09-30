@@ -6,8 +6,8 @@ import typings.react.mod.Component
 import typings.reactNative.mod.Animated.AnimatedComponent
 import typings.reactNative.mod.Animated.AnimatedInterpolation
 import typings.reactNative.mod.ViewProps
-import typings.reactNativePaper.reactNativePaperNumbers.`0`
-import typings.reactNativePaper.reactNativePaperNumbers.`1`
+import typings.reactNativePaper.reactNativePaperInts.`0`
+import typings.reactNativePaper.reactNativePaperInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

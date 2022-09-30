@@ -24,6 +24,6 @@ object blockEditMod {
   object BlockEdit {
     
     // It is extremely unclear what props this component accepts.
-    type Props = js.Any
+    type Props = Any
   }
 }

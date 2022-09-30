@@ -1,17 +1,17 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32000`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32001`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32002`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32096`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32097`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32098`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32099`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32600`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32601`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32602`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32603`
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`-32700`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32000`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32001`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32002`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32096`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32097`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32098`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32099`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32600`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32601`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32602`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32603`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`-32700`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

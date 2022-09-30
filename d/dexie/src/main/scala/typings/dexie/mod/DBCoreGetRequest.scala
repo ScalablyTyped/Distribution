@@ -1,43 +1,26 @@
 package typings.dexie.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreGetRequest extends js.Object {
+trait DBCoreGetRequest extends StObject {
   
-  var key: js.Any = js.native
+  var key: Any
   
-  var trans: DBCoreTransaction = js.native
+  var trans: DBCoreTransaction
 }
 object DBCoreGetRequest {
   
-  @scala.inline
-  def apply(key: js.Any, trans: DBCoreTransaction): DBCoreGetRequest = {
+  inline def apply(key: Any, trans: DBCoreTransaction): DBCoreGetRequest = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBCoreGetRequest]
   }
   
-  @scala.inline
-  implicit class DBCoreGetRequestOps[Self <: DBCoreGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreGetRequest](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKey(value: js.Any): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrans(value: DBCoreTransaction): Self = this.set("trans", value.asInstanceOf[js.Any])
+    inline def setTrans(value: DBCoreTransaction): Self = StObject.set(x, "trans", value.asInstanceOf[js.Any])
   }
 }

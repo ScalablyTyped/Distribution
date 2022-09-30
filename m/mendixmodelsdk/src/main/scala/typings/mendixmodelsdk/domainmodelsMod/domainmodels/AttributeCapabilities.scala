@@ -13,6 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.0.1: deleted
   * In version 8.13.0: introduced
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -20,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeCapabilities because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAttribute, filterable, sortable, canDeleteFromModel */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeCapabilities")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeCapabilities because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAttribute, filterable, sortable */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeCapabilities")
 @js.native
-class AttributeCapabilities protected () extends Element[IModel] {
+open class AttributeCapabilities protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,17 +32,6 @@ class AttributeCapabilities protected () extends Element[IModel] {
     unit: ModelUnit[IAbstractModel],
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  
-  /**
-    * In version 9.0.0: introduced
-    */
-  def canDeleteFromModel: Boolean = js.native
-  def canDeleteFromModel_=(newValue: Boolean): Unit = js.native
-  /**
-    * In version 9.0.0: introduced
-    */
-  @JSName("canDeleteFromModel")
-  val canDeleteFromModel_FAttributeCapabilities: Boolean = js.native
   
   def containerAsAttribute: Attribute = js.native
   @JSName("containerAsAttribute")
@@ -59,7 +49,7 @@ class AttributeCapabilities protected () extends Element[IModel] {
 }
 object AttributeCapabilities {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeCapabilities")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeCapabilities")
   @js.native
   val ^ : js.Any = js.native
   
@@ -77,19 +67,19 @@ object AttributeCapabilities {
     * of the parent Attribute element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.13.0 and higher
+    *  8.13.0 to 9.0.0
     */
   /* static member */
   inline def createIn(container: Attribute): AttributeCapabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeCapabilities]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeCapabilities.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeCapabilities.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeCapabilities.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AttributeCapabilities.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -35,8 +35,8 @@ object mainMod {
     inline def PLAYER_=(x: PlayerInfo): Unit = js.Dynamic.global.updateDynamic("PLAYER")(x.asInstanceOf[js.Any])
     
     /** add Layergroup to leaflets layer-chooser */
-    inline def addLayerGroup(name: String, layer: LayerGroup_[js.Any], defaultVisibile: Boolean): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def addLayerGroup(name: String, layer: LayerGroup_[js.Any], defaultVisibile: Boolean, groupname: String): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any], groupname.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addLayerGroup(name: String, layer: LayerGroup_[Any], defaultVisibile: Boolean): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addLayerGroup(name: String, layer: LayerGroup_[Any], defaultVisibile: Boolean, groupname: String): Unit = (js.Dynamic.global.applyDynamic("addLayerGroup")(name.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], defaultVisibile.asInstanceOf[js.Any], groupname.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** iitc-Pluigns setup/initialize function */
     @JSGlobal("bootPlugins")
@@ -45,7 +45,7 @@ object mainMod {
     inline def bootPlugins_=(x: js.Array[BootCallback]): Unit = js.Dynamic.global.updateDynamic("bootPlugins")(x.asInstanceOf[js.Any])
     
     /** Create Portal-Marker */
-    inline def createMarker(position: LatLng_, options: PortalOptions): CircleMarker_[js.Any] = (js.Dynamic.global.applyDynamic("createMarker")(position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CircleMarker_[js.Any]]
+    inline def createMarker(position: LatLng_, options: PortalOptions): CircleMarker_[Any] = (js.Dynamic.global.applyDynamic("createMarker")(position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CircleMarker_[Any]]
     
     @JSGlobal("currentPane")
     @js.native
@@ -58,8 +58,8 @@ object mainMod {
     /** google-api */
     @JSGlobal("gapi")
     @js.native
-    def gapi: js.Any = js.native
-    inline def gapi_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("gapi")(x.asInstanceOf[js.Any])
+    def gapi: Any = js.native
+    inline def gapi_=(x: Any): Unit = js.Dynamic.global.updateDynamic("gapi")(x.asInstanceOf[js.Any])
     
     /** if true iitc main script was already loaded (plugin need to trigger setup on iths own) */
     @JSGlobal("iitcLoaded")
@@ -93,14 +93,14 @@ object mainMod {
     /** All iitc Pluigns */
     @JSGlobal("plugin")
     @js.native
-    def plugin: js.Any = js.native
-    inline def plugin_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("plugin")(x.asInstanceOf[js.Any])
+    def plugin: Any = js.native
+    inline def plugin_=(x: Any): Unit = js.Dynamic.global.updateDynamic("plugin")(x.asInstanceOf[js.Any])
     
     /** prepare marker for OverlappingMarkerSpiderfier */
-    inline def registerMarkerForOMS(marker: Marker_[js.Any]): Unit = js.Dynamic.global.applyDynamic("registerMarkerForOMS")(marker.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerMarkerForOMS(marker: Marker_[Any]): Unit = js.Dynamic.global.applyDynamic("registerMarkerForOMS")(marker.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** remove a layer */
-    inline def removeLayerGroup(layer: LayerGroup_[js.Any]): Unit = js.Dynamic.global.applyDynamic("removeLayerGroup")(layer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeLayerGroup(layer: LayerGroup_[Any]): Unit = js.Dynamic.global.applyDynamic("removeLayerGroup")(layer.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Load & show Portal Details Window */
     inline def renderPortalDetails(): Unit = js.Dynamic.global.applyDynamic("renderPortalDetails")().asInstanceOf[Unit]

@@ -117,6 +117,7 @@ import typings.std.Performance
 import typings.std.PointerEvent
 import typings.std.PopStateEvent
 import typings.std.ProgressEvent
+import typings.std.Promise
 import typings.std.PromiseConstructor
 import typings.std.PromiseRejectionEvent
 import typings.std.ProxyConstructor
@@ -392,7 +393,8 @@ object mod {
   
   @js.native
   trait AbortablePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def abort(): Unit = js.native
   }

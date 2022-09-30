@@ -1,8 +1,8 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`-90`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`0`
-import typings.wechatMiniprogram.wechatMiniprogramNumbers.`90`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`-90`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`0`
+import typings.wechatMiniprogram.wechatMiniprogramInts.`90`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

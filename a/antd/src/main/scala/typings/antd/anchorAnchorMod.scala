@@ -78,6 +78,7 @@ object anchorAnchorMod extends Shortcut {
     /* private */ var scrollEvent: Any = js.native
     
     def setCurrentActiveLink(link: String): Unit = js.native
+    def setCurrentActiveLink(link: String, triggerChange: Boolean): Unit = js.native
     
     @JSName("state")
     var state_Anchor: ActiveLink = js.native

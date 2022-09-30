@@ -1,20 +1,20 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-4105`
-import typings.activexWord.activexWordNumbers.`-4128`
-import typings.activexWord.activexWordNumbers.`-4166`
-import typings.activexWord.activexWordNumbers.`-4170`
-import typings.activexWord.activexWordNumbers.`-4171`
+import typings.activexWord.activexWordInts.`-4105`
+import typings.activexWord.activexWordInts.`-4128`
+import typings.activexWord.activexWordInts.`-4166`
+import typings.activexWord.activexWordInts.`-4170`
+import typings.activexWord.activexWordInts.`-4171`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`-4105`
-  - typings.activexWord.activexWordNumbers.`-4170`
-  - typings.activexWord.activexWordNumbers.`-4128`
-  - typings.activexWord.activexWordNumbers.`-4171`
-  - typings.activexWord.activexWordNumbers.`-4166`
+  - typings.activexWord.activexWordInts.`-4105`
+  - typings.activexWord.activexWordInts.`-4170`
+  - typings.activexWord.activexWordInts.`-4128`
+  - typings.activexWord.activexWordInts.`-4171`
+  - typings.activexWord.activexWordInts.`-4166`
 */
 trait XlTickLabelOrientation extends StObject
 object XlTickLabelOrientation {

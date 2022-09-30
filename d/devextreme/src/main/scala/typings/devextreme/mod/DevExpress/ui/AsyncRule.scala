@@ -1,6 +1,7 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.devextremeStrings.async
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ trait AsyncRule
   /**
     * A function that validates the target value.
     */
-  var validationCallback: js.UndefOr[js.Function1[/* options */ ValidationCallbackData, js.Thenable[Any]]] = js.undefined
+  var validationCallback: js.UndefOr[js.Function1[/* options */ ValidationCallbackData, PromiseLike[Any]]] = js.undefined
 }
 object AsyncRule {
   
@@ -58,7 +59,7 @@ object AsyncRule {
     
     inline def setType(value: async): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValidationCallback(value: /* options */ ValidationCallbackData => js.Thenable[Any]): Self = StObject.set(x, "validationCallback", js.Any.fromFunction1(value))
+    inline def setValidationCallback(value: /* options */ ValidationCallbackData => PromiseLike[Any]): Self = StObject.set(x, "validationCallback", js.Any.fromFunction1(value))
     
     inline def setValidationCallbackUndefined: Self = StObject.set(x, "validationCallback", js.undefined)
   }

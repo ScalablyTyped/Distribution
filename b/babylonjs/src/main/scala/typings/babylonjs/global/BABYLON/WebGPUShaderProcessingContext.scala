@@ -24,7 +24,7 @@ object WebGPUShaderProcessingContext {
   def _KnownUBOs: org.scalablytyped.runtime.StringDictionary[WebGPUBufferDescription] = js.native
   inline def _KnownUBOs_=(x: org.scalablytyped.runtime.StringDictionary[WebGPUBufferDescription]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KnownUBOs")(x.asInstanceOf[js.Any])
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.WebGPUShaderProcessingContext._SimplifiedKnownBindings")
   @js.native
   def _SimplifiedKnownBindings: Boolean = js.native

@@ -138,5 +138,67 @@ object mod {
     val MIN_USER_TOKEN_TYPE: Double = js.native
   }
   
+  object tree {
+    
+    @JSImport("antlr4", "tree.ErrorNode")
+    @js.native
+    open class ErrorNode protected ()
+      extends typings.antlr4.treeMod.ErrorNode {
+      def this(symbol: typings.antlr4.tokenMod.Token) = this()
+    }
+    
+    @JSImport("antlr4", "tree.ErrorNodeImpl")
+    @js.native
+    open class ErrorNodeImpl protected ()
+      extends typings.antlr4.treeMod.ErrorNodeImpl {
+      def this(token: typings.antlr4.tokenMod.Token) = this()
+    }
+    
+    @JSImport("antlr4", "tree.INVALID_INTERVAL")
+    @js.native
+    val INVALID_INTERVAL: typings.antlr4.intervalSetMod.Interval = js.native
+    
+    @JSImport("antlr4", "tree.ParseTree")
+    @js.native
+    open class ParseTree ()
+      extends typings.antlr4.treeMod.ParseTree
+    
+    @JSImport("antlr4", "tree.ParseTreeVisitor")
+    @js.native
+    open class ParseTreeVisitor ()
+      extends typings.antlr4.treeMod.ParseTreeVisitor
+    
+    @JSImport("antlr4", "tree.ParseTreeWalker")
+    @js.native
+    open class ParseTreeWalker ()
+      extends typings.antlr4.treeMod.ParseTreeWalker
+    /* static members */
+    object ParseTreeWalker {
+      
+      @JSImport("antlr4", "tree.ParseTreeWalker.DEFAULT")
+      @js.native
+      val DEFAULT: typings.antlr4.treeMod.ParseTreeWalker = js.native
+    }
+    
+    @JSImport("antlr4", "tree.RuleNode")
+    @js.native
+    open class RuleNode ()
+      extends typings.antlr4.treeMod.RuleNode
+    
+    @JSImport("antlr4", "tree.TerminalNode")
+    @js.native
+    open class TerminalNode protected ()
+      extends typings.antlr4.treeMod.TerminalNode {
+      def this(symbol: typings.antlr4.tokenMod.Token) = this()
+    }
+    
+    @JSImport("antlr4", "tree.TerminalNodeImpl")
+    @js.native
+    open class TerminalNodeImpl protected ()
+      extends typings.antlr4.treeMod.TerminalNodeImpl {
+      def this(symbol: typings.antlr4.tokenMod.Token) = this()
+    }
+  }
+  
   type AntlrRule = typings.antlr4.parserRuleContextMod.ParserRuleContext
 }

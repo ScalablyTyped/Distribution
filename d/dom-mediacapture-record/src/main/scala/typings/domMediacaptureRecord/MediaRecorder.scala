@@ -38,20 +38,17 @@ trait MediaRecorder
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaRecorderErrorEvent, Any]
-  ): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaRecorderErrorEvent, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaRecorderErrorEvent, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -119,7 +116,7 @@ trait MediaRecorder
   
   var ondataavailable: (js.ThisFunction1[/* this */ this.type, /* event */ BlobEvent, Any]) | Null = js.native
   
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* event */ MediaRecorderErrorEvent, Any]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* event */ Event, Any]) | Null = js.native
   
   var onpause: (js.ThisFunction1[/* this */ this.type, /* event */ Event, Any]) | Null = js.native
   
@@ -146,20 +143,17 @@ trait MediaRecorder
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaRecorderErrorEvent, Any]
-  ): Unit = js.native
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaRecorderErrorEvent, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaRecorderErrorEvent, Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

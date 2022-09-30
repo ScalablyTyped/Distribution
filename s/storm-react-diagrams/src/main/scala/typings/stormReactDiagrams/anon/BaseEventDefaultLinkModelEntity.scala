@@ -2,7 +2,7 @@ package typings.stormReactDiagrams.anon
 
 import typings.stormReactDiagrams.baseEntityMod.BaseEntity
 import typings.stormReactDiagrams.baseEntityMod.BaseListener
-import typings.stormReactDiagrams.stormReactDiagramsNumbers.`0`
+import typings.stormReactDiagrams.stormReactDiagramsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,12 +10,12 @@ trait DocsUrlString extends StObject {
   
   var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(hasPathFilePathLineColumn: Column): String
+  def text(): String
 }
 object DocsUrlString {
   
-  inline def apply(docsUrl: String, level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: Column => String): DocsUrlString = {
-    val __obj = js.Dynamic.literal(docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
+  inline def apply(docsUrl: String, level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: () => String): DocsUrlString = {
+    val __obj = js.Dynamic.literal(docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
     __obj.asInstanceOf[DocsUrlString]
   }
   
@@ -25,6 +25,6 @@ object DocsUrlString {
     
     inline def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setText(value: Column => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
   }
 }

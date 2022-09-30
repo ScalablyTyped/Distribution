@@ -1,10 +1,10 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`0`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`1`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`2`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`3`
-import typings.blueprintjsCore.blueprintjsCoreNumbers.`4`
+import typings.blueprintjsCore.blueprintjsCoreInts.`0`
+import typings.blueprintjsCore.blueprintjsCoreInts.`1`
+import typings.blueprintjsCore.blueprintjsCoreInts.`2`
+import typings.blueprintjsCore.blueprintjsCoreInts.`3`
+import typings.blueprintjsCore.blueprintjsCoreInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +13,11 @@ object elevationMod {
   
   /* Inlined {  ZERO :0,   ONE :1,   TWO :2,   THREE :3,   FOUR :4}[keyof {  ZERO :0,   ONE :1,   TWO :2,   THREE :3,   FOUR :4}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.blueprintjsCore.blueprintjsCoreNumbers.`3`
-    - typings.blueprintjsCore.blueprintjsCoreNumbers.`2`
-    - typings.blueprintjsCore.blueprintjsCoreNumbers.`4`
-    - typings.blueprintjsCore.blueprintjsCoreNumbers.`0`
-    - typings.blueprintjsCore.blueprintjsCoreNumbers.`1`
+    - typings.blueprintjsCore.blueprintjsCoreInts.`3`
+    - typings.blueprintjsCore.blueprintjsCoreInts.`2`
+    - typings.blueprintjsCore.blueprintjsCoreInts.`4`
+    - typings.blueprintjsCore.blueprintjsCoreInts.`0`
+    - typings.blueprintjsCore.blueprintjsCoreInts.`1`
   */
   trait Elevation extends StObject
   object Elevation {

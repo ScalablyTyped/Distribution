@@ -13,10 +13,9 @@ object resultMod {
   
   @JSImport("ant-design-pro/lib/Result", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ResultProps, js.Any, js.Any]
+  open class default () extends Component[ResultProps, Any, Any]
   
-  type Result = Component[ResultProps, js.Any, js.Any]
+  type Result = Component[ResultProps, Any, Any]
   
   trait ResultProps extends StObject {
     

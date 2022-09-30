@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartAutomationExecutionRequest extends StObject {
   
   /**
+    * The CloudWatch alarm you want to apply to your automation.
+    */
+  var AlarmConfiguration: js.UndefOr[typings.awsSdk.ssmMod.AlarmConfiguration] = js.undefined
+  
+  /**
     * User-provided idempotency token. The token must be unique, is case insensitive, enforces the UUID format, and can't be reused.
     */
   var ClientToken: js.UndefOr[IdempotencyToken] = js.undefined
@@ -74,6 +79,10 @@ object StartAutomationExecutionRequest {
   }
   
   extension [Self <: StartAutomationExecutionRequest](x: Self) {
+    
+    inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "AlarmConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "AlarmConfiguration", js.undefined)
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nrwl/cli" : "14.7.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nrwl/cli" : "14.7.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

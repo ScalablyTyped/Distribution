@@ -36,7 +36,7 @@ object mod {
   
   object aql {
     
-    inline def apply(strings: TemplateStringsArray, args: Any*): Query = ^.asInstanceOf[js.Dynamic].apply(List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query]
+    inline def apply(strings: TemplateStringsArray, args: Any*): Query = ^.asInstanceOf[js.Dynamic].apply(scala.List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query]
     
     @JSImport("@arangodb", "aql")
     @js.native
@@ -1659,7 +1659,7 @@ object mod {
     inline def SIMPLE_CLIENT_UNKNOWN_ERROR_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIMPLE_CLIENT_UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
   }
   
-  inline def query(strings: TemplateStringsArray, args: Any*): Cursor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Cursor[Any]]
+  inline def query(strings: TemplateStringsArray, args: Any*): Cursor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Cursor[Any]]
   
   inline def time(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[Double]
 }

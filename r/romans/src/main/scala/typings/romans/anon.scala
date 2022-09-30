@@ -1,18 +1,18 @@
 package typings.romans
 
-import typings.romans.romansNumbers.`1000`
-import typings.romans.romansNumbers.`100`
-import typings.romans.romansNumbers.`10`
-import typings.romans.romansNumbers.`1`
-import typings.romans.romansNumbers.`400`
-import typings.romans.romansNumbers.`40`
-import typings.romans.romansNumbers.`4`
-import typings.romans.romansNumbers.`500`
-import typings.romans.romansNumbers.`50`
-import typings.romans.romansNumbers.`5`
-import typings.romans.romansNumbers.`900`
-import typings.romans.romansNumbers.`90`
-import typings.romans.romansNumbers.`9`
+import typings.romans.romansInts.`1000`
+import typings.romans.romansInts.`100`
+import typings.romans.romansInts.`10`
+import typings.romans.romansInts.`1`
+import typings.romans.romansInts.`400`
+import typings.romans.romansInts.`40`
+import typings.romans.romansInts.`4`
+import typings.romans.romansInts.`500`
+import typings.romans.romansInts.`50`
+import typings.romans.romansInts.`5`
+import typings.romans.romansInts.`900`
+import typings.romans.romansInts.`90`
+import typings.romans.romansInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

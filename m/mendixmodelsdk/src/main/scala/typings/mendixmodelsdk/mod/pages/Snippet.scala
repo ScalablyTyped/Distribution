@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.Snippet")
 @js.native
-class Snippet protected ()
+open class Snippet protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.Snippet {
   def this(
     model: AbstractModel,

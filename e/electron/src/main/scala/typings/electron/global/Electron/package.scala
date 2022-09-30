@@ -1,52 +1,79 @@
 package typings.electron.global.Electron
 
+import typings.electron.Electron.App
+import typings.electron.Electron.AutoUpdater
+import typings.electron.Electron.Clipboard
+import typings.electron.Electron.ContentTracing
+import typings.electron.Electron.ContextBridge
+import typings.electron.Electron.CrashReporter
+import typings.electron.Electron.DesktopCapturer
+import typings.electron.Electron.Dialog
+import typings.electron.Electron.GlobalShortcut
+import typings.electron.Electron.InAppPurchase
+import typings.electron.Electron.IpcMain
+import typings.electron.Electron.IpcRenderer
+import typings.electron.Electron.NativeTheme
+import typings.electron.Electron.Net
+import typings.electron.Electron.NetLog
+import typings.electron.Electron.PowerMonitor
+import typings.electron.Electron.PowerSaveBlocker
+import typings.electron.Electron.Protocol
+import typings.electron.Electron.PushNotifications
+import typings.electron.Electron.SafeStorage
+import typings.electron.Electron.Screen
+import typings.electron.Electron.Shell
+import typings.electron.Electron.SystemPreferences
+import typings.electron.Electron.WebFrame
+import typings.electron.global.Electron.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def app: typings.electron.Electron.App = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("app").asInstanceOf[typings.electron.Electron.App]
+inline def app: App = ^.asInstanceOf[js.Dynamic].selectDynamic("app").asInstanceOf[App]
 
-inline def autoUpdater: typings.electron.Electron.AutoUpdater = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("autoUpdater").asInstanceOf[typings.electron.Electron.AutoUpdater]
+inline def autoUpdater: AutoUpdater = ^.asInstanceOf[js.Dynamic].selectDynamic("autoUpdater").asInstanceOf[AutoUpdater]
 
-inline def clipboard: typings.electron.Electron.Clipboard = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("clipboard").asInstanceOf[typings.electron.Electron.Clipboard]
+inline def clipboard: Clipboard = ^.asInstanceOf[js.Dynamic].selectDynamic("clipboard").asInstanceOf[Clipboard]
 
-inline def contentTracing: typings.electron.Electron.ContentTracing = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("contentTracing").asInstanceOf[typings.electron.Electron.ContentTracing]
+inline def contentTracing: ContentTracing = ^.asInstanceOf[js.Dynamic].selectDynamic("contentTracing").asInstanceOf[ContentTracing]
 
-inline def contextBridge: typings.electron.Electron.ContextBridge = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("contextBridge").asInstanceOf[typings.electron.Electron.ContextBridge]
+inline def contextBridge: ContextBridge = ^.asInstanceOf[js.Dynamic].selectDynamic("contextBridge").asInstanceOf[ContextBridge]
 
-inline def crashReporter: typings.electron.Electron.CrashReporter = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("crashReporter").asInstanceOf[typings.electron.Electron.CrashReporter]
+inline def crashReporter: CrashReporter = ^.asInstanceOf[js.Dynamic].selectDynamic("crashReporter").asInstanceOf[CrashReporter]
 
-inline def desktopCapturer: typings.electron.Electron.DesktopCapturer = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("desktopCapturer").asInstanceOf[typings.electron.Electron.DesktopCapturer]
+inline def desktopCapturer: DesktopCapturer = ^.asInstanceOf[js.Dynamic].selectDynamic("desktopCapturer").asInstanceOf[DesktopCapturer]
 
-inline def dialog: typings.electron.Electron.Dialog = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("dialog").asInstanceOf[typings.electron.Electron.Dialog]
+inline def dialog: Dialog = ^.asInstanceOf[js.Dynamic].selectDynamic("dialog").asInstanceOf[Dialog]
 
-inline def globalShortcut: typings.electron.Electron.GlobalShortcut = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("globalShortcut").asInstanceOf[typings.electron.Electron.GlobalShortcut]
+inline def globalShortcut: GlobalShortcut = ^.asInstanceOf[js.Dynamic].selectDynamic("globalShortcut").asInstanceOf[GlobalShortcut]
 
-inline def inAppPurchase: typings.electron.Electron.InAppPurchase = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("inAppPurchase").asInstanceOf[typings.electron.Electron.InAppPurchase]
+inline def inAppPurchase: InAppPurchase = ^.asInstanceOf[js.Dynamic].selectDynamic("inAppPurchase").asInstanceOf[InAppPurchase]
 
-inline def ipcMain: typings.electron.Electron.IpcMain = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("ipcMain").asInstanceOf[typings.electron.Electron.IpcMain]
+inline def ipcMain: IpcMain = ^.asInstanceOf[js.Dynamic].selectDynamic("ipcMain").asInstanceOf[IpcMain]
 
-inline def ipcRenderer: typings.electron.Electron.IpcRenderer = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("ipcRenderer").asInstanceOf[typings.electron.Electron.IpcRenderer]
+inline def ipcRenderer: IpcRenderer = ^.asInstanceOf[js.Dynamic].selectDynamic("ipcRenderer").asInstanceOf[IpcRenderer]
 
-inline def nativeTheme: typings.electron.Electron.NativeTheme = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("nativeTheme").asInstanceOf[typings.electron.Electron.NativeTheme]
+inline def nativeTheme: NativeTheme = ^.asInstanceOf[js.Dynamic].selectDynamic("nativeTheme").asInstanceOf[NativeTheme]
 
-inline def net: typings.electron.Electron.Net = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("net").asInstanceOf[typings.electron.Electron.Net]
+inline def net: Net = ^.asInstanceOf[js.Dynamic].selectDynamic("net").asInstanceOf[Net]
 
-inline def netLog: typings.electron.Electron.NetLog = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("netLog").asInstanceOf[typings.electron.Electron.NetLog]
+inline def netLog: NetLog = ^.asInstanceOf[js.Dynamic].selectDynamic("netLog").asInstanceOf[NetLog]
 
-inline def powerMonitor: typings.electron.Electron.PowerMonitor = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("powerMonitor").asInstanceOf[typings.electron.Electron.PowerMonitor]
+inline def powerMonitor: PowerMonitor = ^.asInstanceOf[js.Dynamic].selectDynamic("powerMonitor").asInstanceOf[PowerMonitor]
 
-inline def powerSaveBlocker: typings.electron.Electron.PowerSaveBlocker = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("powerSaveBlocker").asInstanceOf[typings.electron.Electron.PowerSaveBlocker]
+inline def powerSaveBlocker: PowerSaveBlocker = ^.asInstanceOf[js.Dynamic].selectDynamic("powerSaveBlocker").asInstanceOf[PowerSaveBlocker]
 
-inline def protocol: typings.electron.Electron.Protocol = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("protocol").asInstanceOf[typings.electron.Electron.Protocol]
+inline def protocol: Protocol = ^.asInstanceOf[js.Dynamic].selectDynamic("protocol").asInstanceOf[Protocol]
 
-inline def screen: typings.electron.Electron.Screen = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("screen").asInstanceOf[typings.electron.Electron.Screen]
+inline def pushNotifications: PushNotifications = ^.asInstanceOf[js.Dynamic].selectDynamic("pushNotifications").asInstanceOf[PushNotifications]
 
-inline def shell: typings.electron.Electron.Shell = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("shell").asInstanceOf[typings.electron.Electron.Shell]
+inline def safeStorage: SafeStorage = ^.asInstanceOf[js.Dynamic].selectDynamic("safeStorage").asInstanceOf[SafeStorage]
 
-inline def systemPreferences: typings.electron.Electron.SystemPreferences = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("systemPreferences").asInstanceOf[typings.electron.Electron.SystemPreferences]
+inline def screen: Screen = ^.asInstanceOf[js.Dynamic].selectDynamic("screen").asInstanceOf[Screen]
 
-inline def webFrame: typings.electron.Electron.WebFrame = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("webFrame").asInstanceOf[typings.electron.Electron.WebFrame]
+inline def shell: Shell = ^.asInstanceOf[js.Dynamic].selectDynamic("shell").asInstanceOf[Shell]
 
-inline def webviewTag: typings.electron.Electron.WebviewTag = typings.electron.global.Electron.^.asInstanceOf[js.Dynamic].selectDynamic("webviewTag").asInstanceOf[typings.electron.Electron.WebviewTag]
+inline def systemPreferences: SystemPreferences = ^.asInstanceOf[js.Dynamic].selectDynamic("systemPreferences").asInstanceOf[SystemPreferences]
+
+inline def webFrame: WebFrame = ^.asInstanceOf[js.Dynamic].selectDynamic("webFrame").asInstanceOf[WebFrame]

@@ -720,7 +720,7 @@ object mod {
       */
     def parseLink(url: String): Crumbs = js.native
     @JSName("parseLink")
-    def parseLink_StateKey_String_Data[StateKey /* <: /* keyof NavigationInfo */ String */](url: String): Data[StateKey, NavigationInfo] = js.native
+    def parseLink_StateKey_Data[StateKey /* <: /* keyof NavigationInfo */ String */](url: String): Data[StateKey, NavigationInfo] = js.native
     
     /**
       * Navigates to the current State

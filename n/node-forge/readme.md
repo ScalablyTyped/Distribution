@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-forge
 
-Typings are for version 1.0.0
+Typings are for version 1.3
 
 ## Library description:
 JavaScript implementations of network transports, cryptography, ciphers, PKI, message digests, and various utilities.

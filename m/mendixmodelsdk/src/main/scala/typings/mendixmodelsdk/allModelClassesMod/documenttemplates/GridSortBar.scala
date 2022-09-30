@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/sort-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortBar")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.GridSortBar")
 @js.native
-class GridSortBar protected ()
+open class GridSortBar protected ()
   extends typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortBar {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class GridSortBar protected ()
 }
 object GridSortBar {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortBar")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.GridSortBar")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object GridSortBar {
   inline def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Grid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortBar]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortBar.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.GridSortBar.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortBar.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.GridSortBar.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

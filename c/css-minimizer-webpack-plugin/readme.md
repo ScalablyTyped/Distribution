@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-minimizer-webpack-plugin
 
-Typings are for version 4.1.0
+Typings are for version 4.2.0
 
 ## Library description:
 cssnano plugin for Webpack

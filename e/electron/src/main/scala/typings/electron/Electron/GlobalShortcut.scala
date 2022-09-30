@@ -31,8 +31,8 @@ trait GlobalShortcut extends StObject {
     *
     * * "Media Play/Pause"
     * * "Media Next Track"
-  * "Media Previous Track"
-  * "Media Stop"
+    * * "Media Previous Track"
+    * * "Media Stop"
     */
   def register(accelerator: Accelerator, callback: js.Function0[Unit]): Boolean
   
@@ -50,8 +50,8 @@ trait GlobalShortcut extends StObject {
     *
     * * "Media Play/Pause"
     * * "Media Next Track"
-  * "Media Previous Track"
-  * "Media Stop"
+    * * "Media Previous Track"
+    * * "Media Stop"
     */
   def registerAll(accelerators: js.Array[String], callback: js.Function0[Unit]): Unit
   

@@ -1,7 +1,7 @@
 package typings.cannon.mod
 
-import typings.cannon.cannonNumbers.`0`
-import typings.cannon.cannonNumbers.`1`
+import typings.cannon.cannonInts.`0`
+import typings.cannon.cannonInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

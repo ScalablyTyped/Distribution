@@ -35,7 +35,7 @@ object apiFilterMod {
   inline def orderBy(fieldPath: FieldPath): typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint]
   inline def orderBy(fieldPath: FieldPath, directionStr: OrderByDirection): typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint]
   
-  inline def query[T](query: Query[T], queryConstraints: typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint*): Query[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query[T]]
+  inline def query[T](query: Query[T], queryConstraints: typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint*): Query[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query[T]]
   
   inline def startAfter(fieldValues: Any*): typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint]
   inline def startAfter(snapshot: DocumentSnapshot[Any]): typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.srcLiteApiQueryMod.QueryConstraint]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object queryparamsMod {
   
-  @JSImport("@storybook/client-api/dist/queryparams", JSImport.Namespace)
+  @JSImport("@storybook/client-api/dist/ts3.9/queryparams", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -1,11 +1,11 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.Path
-import typings.gestalt.gestaltNumbers.`1`
-import typings.gestalt.gestaltNumbers.`2`
-import typings.gestalt.gestaltNumbers.`3`
-import typings.gestalt.gestaltNumbers.`4`
-import typings.gestalt.gestaltNumbers.`5`
+import typings.gestalt.gestaltInts.`1`
+import typings.gestalt.gestaltInts.`2`
+import typings.gestalt.gestaltInts.`3`
+import typings.gestalt.gestaltInts.`4`
+import typings.gestalt.gestaltInts.`5`
 import typings.gestalt.gestaltStrings.darkGray
 import typings.gestalt.gestaltStrings.gray
 import typings.gestalt.gestaltStrings.lg

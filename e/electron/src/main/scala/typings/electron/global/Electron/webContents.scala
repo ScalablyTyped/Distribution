@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof WebContents` */
 @JSGlobal("Electron.webContents")
 @js.native
-class webContents ()
+open class webContents ()
   extends typings.electron.Electron.WebContents_
 /* was `typeof WebContents` */
 object webContents {
@@ -18,7 +18,18 @@ object webContents {
   
   // Docs: https://electronjs.org/docs/api/web-contents
   /**
-    * A WebContents instance with the given ID.
+    * | undefined - A WebContents instance with the given TargetID, or `undefined` if
+    * there is no WebContents associated with the given TargetID.
+    *
+    * When communicating with the Chrome DevTools Protocol, it can be useful to lookup
+    * a WebContents instance based on its assigned TargetID.
+    */
+  /* static member */
+  inline def fromDevToolsTargetId(targetId: String): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDevToolsTargetId")(targetId.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
+  
+  /**
+    * | undefined - A WebContents instance with the given ID, or `undefined` if there
+    * is no WebContents associated with the given ID.
     */
   /* static member */
   inline def fromId(id: Double): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(id.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.WebContents_]
@@ -31,7 +42,8 @@ object webContents {
   inline def getAllWebContents(): js.Array[typings.electron.Electron.WebContents_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWebContents")().asInstanceOf[js.Array[typings.electron.Electron.WebContents_]]
   
   /**
-    * The web contents that is focused in this application, otherwise returns `null`.
+    * | null - The web contents that is focused in this application, otherwise returns
+    * `null`.
     */
   /* static member */
   inline def getFocusedWebContents(): typings.electron.Electron.WebContents_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedWebContents")().asInstanceOf[typings.electron.Electron.WebContents_]

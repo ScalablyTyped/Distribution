@@ -17,6 +17,8 @@ trait AmbientBake extends StObject {
   
   var ambientBakeSpherePart: Double
   
+  var ambientLuminance: Double
+  
   var clusteredLightingEnabled: Boolean
   
   var exposure: Double
@@ -61,6 +63,8 @@ trait AmbientBake extends StObject {
   
   var skyboxIntensity: Double
   
+  var skyboxLuminance: Double
+  
   var skyboxMip: Double
   
   var skyboxRotation: js.Array[Double]
@@ -75,6 +79,7 @@ object AmbientBake {
     ambientBakeOcclusionBrightness: Double,
     ambientBakeOcclusionContrast: Double,
     ambientBakeSpherePart: Double,
+    ambientLuminance: Double,
     clusteredLightingEnabled: Boolean,
     exposure: Double,
     fog: String,
@@ -96,11 +101,12 @@ object AmbientBake {
     lightmapMode: Double,
     lightmapSizeMultiplier: Double,
     skyboxIntensity: Double,
+    skyboxLuminance: Double,
     skyboxMip: Double,
     skyboxRotation: js.Array[Double],
     tonemapping: Double
   ): AmbientBake = {
-    val __obj = js.Dynamic.literal(ambientBake = ambientBake.asInstanceOf[js.Any], ambientBakeNumSamples = ambientBakeNumSamples.asInstanceOf[js.Any], ambientBakeOcclusionBrightness = ambientBakeOcclusionBrightness.asInstanceOf[js.Any], ambientBakeOcclusionContrast = ambientBakeOcclusionContrast.asInstanceOf[js.Any], ambientBakeSpherePart = ambientBakeSpherePart.asInstanceOf[js.Any], clusteredLightingEnabled = clusteredLightingEnabled.asInstanceOf[js.Any], exposure = exposure.asInstanceOf[js.Any], fog = fog.asInstanceOf[js.Any], fog_color = fog_color.asInstanceOf[js.Any], fog_density = fog_density.asInstanceOf[js.Any], fog_end = fog_end.asInstanceOf[js.Any], fog_start = fog_start.asInstanceOf[js.Any], gamma_correction = gamma_correction.asInstanceOf[js.Any], global_ambient = global_ambient.asInstanceOf[js.Any], lightingAreaLightsEnabled = lightingAreaLightsEnabled.asInstanceOf[js.Any], lightingCells = lightingCells.asInstanceOf[js.Any], lightingCookieAtlasResolution = lightingCookieAtlasResolution.asInstanceOf[js.Any], lightingCookiesEnabled = lightingCookiesEnabled.asInstanceOf[js.Any], lightingMaxLightsPerCell = lightingMaxLightsPerCell.asInstanceOf[js.Any], lightingShadowAtlasResolution = lightingShadowAtlasResolution.asInstanceOf[js.Any], lightingShadowType = lightingShadowType.asInstanceOf[js.Any], lightingShadowsEnabled = lightingShadowsEnabled.asInstanceOf[js.Any], lightmapMaxResolution = lightmapMaxResolution.asInstanceOf[js.Any], lightmapMode = lightmapMode.asInstanceOf[js.Any], lightmapSizeMultiplier = lightmapSizeMultiplier.asInstanceOf[js.Any], skyboxIntensity = skyboxIntensity.asInstanceOf[js.Any], skyboxMip = skyboxMip.asInstanceOf[js.Any], skyboxRotation = skyboxRotation.asInstanceOf[js.Any], tonemapping = tonemapping.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ambientBake = ambientBake.asInstanceOf[js.Any], ambientBakeNumSamples = ambientBakeNumSamples.asInstanceOf[js.Any], ambientBakeOcclusionBrightness = ambientBakeOcclusionBrightness.asInstanceOf[js.Any], ambientBakeOcclusionContrast = ambientBakeOcclusionContrast.asInstanceOf[js.Any], ambientBakeSpherePart = ambientBakeSpherePart.asInstanceOf[js.Any], ambientLuminance = ambientLuminance.asInstanceOf[js.Any], clusteredLightingEnabled = clusteredLightingEnabled.asInstanceOf[js.Any], exposure = exposure.asInstanceOf[js.Any], fog = fog.asInstanceOf[js.Any], fog_color = fog_color.asInstanceOf[js.Any], fog_density = fog_density.asInstanceOf[js.Any], fog_end = fog_end.asInstanceOf[js.Any], fog_start = fog_start.asInstanceOf[js.Any], gamma_correction = gamma_correction.asInstanceOf[js.Any], global_ambient = global_ambient.asInstanceOf[js.Any], lightingAreaLightsEnabled = lightingAreaLightsEnabled.asInstanceOf[js.Any], lightingCells = lightingCells.asInstanceOf[js.Any], lightingCookieAtlasResolution = lightingCookieAtlasResolution.asInstanceOf[js.Any], lightingCookiesEnabled = lightingCookiesEnabled.asInstanceOf[js.Any], lightingMaxLightsPerCell = lightingMaxLightsPerCell.asInstanceOf[js.Any], lightingShadowAtlasResolution = lightingShadowAtlasResolution.asInstanceOf[js.Any], lightingShadowType = lightingShadowType.asInstanceOf[js.Any], lightingShadowsEnabled = lightingShadowsEnabled.asInstanceOf[js.Any], lightmapMaxResolution = lightmapMaxResolution.asInstanceOf[js.Any], lightmapMode = lightmapMode.asInstanceOf[js.Any], lightmapSizeMultiplier = lightmapSizeMultiplier.asInstanceOf[js.Any], skyboxIntensity = skyboxIntensity.asInstanceOf[js.Any], skyboxLuminance = skyboxLuminance.asInstanceOf[js.Any], skyboxMip = skyboxMip.asInstanceOf[js.Any], skyboxRotation = skyboxRotation.asInstanceOf[js.Any], tonemapping = tonemapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmbientBake]
   }
   
@@ -115,6 +121,8 @@ object AmbientBake {
     inline def setAmbientBakeOcclusionContrast(value: Double): Self = StObject.set(x, "ambientBakeOcclusionContrast", value.asInstanceOf[js.Any])
     
     inline def setAmbientBakeSpherePart(value: Double): Self = StObject.set(x, "ambientBakeSpherePart", value.asInstanceOf[js.Any])
+    
+    inline def setAmbientLuminance(value: Double): Self = StObject.set(x, "ambientLuminance", value.asInstanceOf[js.Any])
     
     inline def setClusteredLightingEnabled(value: Boolean): Self = StObject.set(x, "clusteredLightingEnabled", value.asInstanceOf[js.Any])
     
@@ -163,6 +171,8 @@ object AmbientBake {
     inline def setSkybox(value: Double): Self = StObject.set(x, "skybox", value.asInstanceOf[js.Any])
     
     inline def setSkyboxIntensity(value: Double): Self = StObject.set(x, "skyboxIntensity", value.asInstanceOf[js.Any])
+    
+    inline def setSkyboxLuminance(value: Double): Self = StObject.set(x, "skyboxLuminance", value.asInstanceOf[js.Any])
     
     inline def setSkyboxMip(value: Double): Self = StObject.set(x, "skyboxMip", value.asInstanceOf[js.Any])
     

@@ -106,6 +106,8 @@ object clientMod {
     
     var nextSnapshotRequestId: Double = js.native
     
+    def ping(): Unit = js.native
+    
     var queries: Record[String, Query[Any]] = js.native
     
     /**

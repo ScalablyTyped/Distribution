@@ -12,10 +12,10 @@ object reconcilerMod extends Shortcut {
   
   @JSImport("ink/build/reconciler", JSImport.Default)
   @js.native
-  val default: Reconciler[DOMElement, DOMElement | TextNode, DOMElement, js.Any] = js.native
+  val default: Reconciler[DOMElement, DOMElement, TextNode, DOMElement, Any] = js.native
   
-  type _To = Reconciler[DOMElement, DOMElement | TextNode, DOMElement, js.Any]
+  type _To = Reconciler[DOMElement, DOMElement, TextNode, DOMElement, Any]
   
   /* This means you don't have to write `default`, but can instead just say `reconcilerMod.foo` */
-  override def _to: Reconciler[DOMElement, DOMElement | TextNode, DOMElement, js.Any] = default
+  override def _to: Reconciler[DOMElement, DOMElement, TextNode, DOMElement, Any] = default
 }

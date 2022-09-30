@@ -12,6 +12,8 @@ object Main {
   
   type AnimationSettings = typings.electron.Electron.AnimationSettings
   
+  type App = typings.electron.Electron.App
+  
   type AppDetailsOptions = typings.electron.Electron.AppDetailsOptions
   
   type ApplicationInfoForProtocolReturnValue = typings.electron.Electron.ApplicationInfoForProtocolReturnValue
@@ -22,6 +24,8 @@ object Main {
   
   type AutoResizeOptions = typings.electron.Electron.AutoResizeOptions
   
+  type AutoUpdater = typings.electron.Electron.AutoUpdater
+  
   type BeforeSendResponse = typings.electron.Electron.BeforeSendResponse
   
   type BitmapOptions = typings.electron.Electron.BitmapOptions
@@ -29,6 +33,8 @@ object Main {
   type BlinkMemoryInfo = typings.electron.Electron.BlinkMemoryInfo
   
   type BluetoothDevice = typings.electron.Electron.BluetoothDevice
+  
+  type BluetoothPairingHandlerHandlerDetails = typings.electron.Electron.BluetoothPairingHandlerHandlerDetails
   
   type BrowserView = typings.electron.Electron.BrowserView
   
@@ -40,11 +46,15 @@ object Main {
   
   type CPUUsage = typings.electron.Electron.CPUUsage
   
+  type CallbackResponse = typings.electron.Electron.CallbackResponse
+  
   type Certificate = typings.electron.Electron.Certificate
   
   type CertificatePrincipal = typings.electron.Electron.CertificatePrincipal
   
   type CertificateTrustDialogOptions = typings.electron.Electron.CertificateTrustDialogOptions
+  
+  type ClearCodeCachesOptions = typings.electron.Electron.ClearCodeCachesOptions
   
   type ClearStorageDataOptions = typings.electron.Electron.ClearStorageDataOptions
   
@@ -56,9 +66,17 @@ object Main {
   
   type Config = typings.electron.Electron.Config
   
+  type ConfigureHostResolverOptions = typings.electron.Electron.ConfigureHostResolverOptions
+  
   type ConsoleMessageEvent = typings.electron.Electron.ConsoleMessageEvent
   
+  type ContentTracing = typings.electron.Electron.ContentTracing
+  
+  type ContextMenuEvent = typings.electron.Electron.ContextMenuEvent
+  
   type ContextMenuParams = typings.electron.Electron.ContextMenuParams
+  
+  type ContinueActivityDetails = typings.electron.Electron.ContinueActivityDetails
   
   type Cookie = typings.electron.Electron.Cookie
   
@@ -86,19 +104,33 @@ object Main {
   
   type DefaultFontFamily = typings.electron.Electron.DefaultFontFamily
   
+  type DesktopCapturer = typings.electron.Electron.DesktopCapturer
+  
   type DesktopCapturerSource = typings.electron.Electron.DesktopCapturerSource
   
   type Details = typings.electron.Electron.Details
   
+  type DevicePermissionHandlerHandlerDetails = typings.electron.Electron.DevicePermissionHandlerHandlerDetails
+  
+  type Dialog = typings.electron.Electron.Dialog
+  
   type DidChangeThemeColorEvent = typings.electron.Electron.DidChangeThemeColorEvent
+  
+  type DidCreateWindowDetails = typings.electron.Electron.DidCreateWindowDetails
   
   type DidFailLoadEvent = typings.electron.Electron.DidFailLoadEvent
   
   type DidFrameFinishLoadEvent = typings.electron.Electron.DidFrameFinishLoadEvent
   
+  type DidFrameNavigateEvent = typings.electron.Electron.DidFrameNavigateEvent
+  
   type DidNavigateEvent = typings.electron.Electron.DidNavigateEvent
   
   type DidNavigateInPageEvent = typings.electron.Electron.DidNavigateInPageEvent
+  
+  type DidRedirectNavigationEvent = typings.electron.Electron.DidRedirectNavigationEvent
+  
+  type DidStartNavigationEvent = typings.electron.Electron.DidStartNavigationEvent
   
   type Display = typings.electron.Electron.Display
   
@@ -126,8 +158,6 @@ object Main {
   
   type FilePathWithHeaders = typings.electron.Electron.FilePathWithHeaders
   
-  type Filter = typings.electron.Electron.Filter
-  
   type FindInPageOptions = typings.electron.Electron.FindInPageOptions
   
   type FocusOptions = typings.electron.Electron.FocusOptions
@@ -136,19 +166,35 @@ object Main {
   
   type FoundInPageResult = typings.electron.Electron.FoundInPageResult
   
+  type FrameCreatedDetails = typings.electron.Electron.FrameCreatedDetails
+  
   type FromPartitionOptions = typings.electron.Electron.FromPartitionOptions
   
   type GPUFeatureStatus = typings.electron.Electron.GPUFeatureStatus
   
+  type GlobalShortcut = typings.electron.Electron.GlobalShortcut
+  
+  type HIDDevice = typings.electron.Electron.HIDDevice
+  
+  type HandlerDetails = typings.electron.Electron.HandlerDetails
+  
   type HeadersReceivedResponse = typings.electron.Electron.HeadersReceivedResponse
   
   type HeapStatistics = typings.electron.Electron.HeapStatistics
+  
+  type HidDeviceAddedDetails = typings.electron.Electron.HidDeviceAddedDetails
+  
+  type HidDeviceRemovedDetails = typings.electron.Electron.HidDeviceRemovedDetails
+  
+  type HidDeviceRevokedDetails = typings.electron.Electron.HidDeviceRevokedDetails
   
   type IOCounters = typings.electron.Electron.IOCounters
   
   type IgnoreMouseEventsOptions = typings.electron.Electron.IgnoreMouseEventsOptions
   
   type ImportCertificateOptions = typings.electron.Electron.ImportCertificateOptions
+  
+  type InAppPurchase = typings.electron.Electron.InAppPurchase
   
   type IncomingMessage = typings.electron.Electron.IncomingMessage
   
@@ -159,6 +205,8 @@ object Main {
   type InputEvent = typings.electron.Electron.InputEvent
   
   type InsertCSSOptions = typings.electron.Electron.InsertCSSOptions
+  
+  type IpcMain = typings.electron.Electron.IpcMain
   
   type IpcMainEvent = typings.electron.Electron.IpcMainEvent
   
@@ -183,6 +231,8 @@ object Main {
   type LaunchItems = typings.electron.Electron.LaunchItems
   
   type LoadCommitEvent = typings.electron.Electron.LoadCommitEvent
+  
+  type LoadExtensionOptions = typings.electron.Electron.LoadExtensionOptions
   
   type LoadFileOptions = typings.electron.Electron.LoadFileOptions
   
@@ -228,6 +278,12 @@ object Main {
   
   type MoveToApplicationsFolderOptions = typings.electron.Electron.MoveToApplicationsFolderOptions
   
+  type NativeTheme = typings.electron.Electron.NativeTheme
+  
+  type Net = typings.electron.Electron.Net
+  
+  type NetLog = typings.electron.Electron.NetLog
+  
   type NewWindowEvent = typings.electron.Electron.NewWindowEvent
   
   type NewWindowWebContentsEvent = typings.electron.Electron.NewWindowWebContentsEvent
@@ -237,6 +293,8 @@ object Main {
   type NotificationAction = typings.electron.Electron.NotificationAction
   
   type NotificationConstructorOptions = typings.electron.Electron.NotificationConstructorOptions
+  
+  type NotificationResponse = typings.electron.Electron.NotificationResponse
   
   type OnBeforeRedirectListenerDetails = typings.electron.Electron.OnBeforeRedirectListenerDetails
   
@@ -274,7 +332,11 @@ object Main {
   
   type Parameters = typings.electron.Electron.Parameters
   
+  type Params = typings.electron.Electron.Params
+  
   type Payment = typings.electron.Electron.Payment
+  
+  type PaymentDiscount = typings.electron.Electron.PaymentDiscount
   
   type PermissionCheckHandlerHandlerDetails = typings.electron.Electron.PermissionCheckHandlerHandlerDetails
   
@@ -288,7 +350,9 @@ object Main {
   
   type PostBody = typings.electron.Electron.PostBody
   
-  type PostData = typings.electron.Electron.PostData
+  type PowerMonitor = typings.electron.Electron.PowerMonitor
+  
+  type PowerSaveBlocker = typings.electron.Electron.PowerSaveBlocker
   
   type PreconnectOptions = typings.electron.Electron.PreconnectOptions
   
@@ -304,7 +368,13 @@ object Main {
   
   type Product = typings.electron.Electron.Product
   
+  type ProductDiscount = typings.electron.Electron.ProductDiscount
+  
+  type ProductSubscriptionPeriod = typings.electron.Electron.ProductSubscriptionPeriod
+  
   type ProgressBarOptions = typings.electron.Electron.ProgressBarOptions
+  
+  type Protocol = typings.electron.Electron.Protocol
   
   type ProtocolRequest = typings.electron.Electron.ProtocolRequest
   
@@ -314,11 +384,15 @@ object Main {
   
   type Provider = typings.electron.Electron.Provider
   
+  type PushNotifications = typings.electron.Electron.PushNotifications
+  
   type ReadBookmark = typings.electron.Electron.ReadBookmark
   
   type Rectangle = typings.electron.Electron.Rectangle
   
   type Referrer = typings.electron.Electron.Referrer
+  
+  type RegistrationCompletedDetails = typings.electron.Electron.RegistrationCompletedDetails
   
   type RelaunchOptions = typings.electron.Electron.RelaunchOptions
   
@@ -334,15 +408,25 @@ object Main {
   
   type Result = typings.electron.Electron.Result
   
+  type SSLConfigConfig = typings.electron.Electron.SSLConfigConfig
+  
+  type SafeStorage = typings.electron.Electron.SafeStorage
+  
   type SaveDialogOptions = typings.electron.Electron.SaveDialogOptions
   
   type SaveDialogReturnValue = typings.electron.Electron.SaveDialogReturnValue
   
   type SaveDialogSyncOptions = typings.electron.Electron.SaveDialogSyncOptions
   
+  type Screen = typings.electron.Electron.Screen
+  
   type ScrubberItem = typings.electron.Electron.ScrubberItem
   
   type SegmentedControlSegment = typings.electron.Electron.SegmentedControlSegment
+  
+  type SelectHidDeviceDetails = typings.electron.Electron.SelectHidDeviceDetails
+  
+  type SerialPort = typings.electron.Electron.SerialPort
   
   type ServiceWorkerInfo = typings.electron.Electron.ServiceWorkerInfo
   
@@ -352,7 +436,11 @@ object Main {
   
   type Settings = typings.electron.Electron.Settings
   
+  type ShareMenu = typings.electron.Electron.ShareMenu
+  
   type SharedWorkerInfo = typings.electron.Electron.SharedWorkerInfo
+  
+  type SharingItem = typings.electron.Electron.SharingItem
   
   type ShortcutDetails = typings.electron.Electron.ShortcutDetails
   
@@ -364,9 +452,15 @@ object Main {
   
   type SystemMemoryInfo = typings.electron.Electron.SystemMemoryInfo
   
+  type SystemPreferences = typings.electron.Electron.SystemPreferences
+  
   type Task = typings.electron.Electron.Task
   
   type ThumbarButton = typings.electron.Electron.ThumbarButton
+  
+  type TitleBarOverlay = typings.electron.Electron.TitleBarOverlay
+  
+  type TitleBarOverlayOptions = typings.electron.Electron.TitleBarOverlayOptions
   
   type TitleOptions = typings.electron.Electron.TitleOptions
   
@@ -430,8 +524,6 @@ object Main {
   
   type UpdateTargetUrlEvent = typings.electron.Electron.UpdateTargetUrlEvent
   
-  type UploadBlob = typings.electron.Electron.UploadBlob
-  
   type UploadData = typings.electron.Electron.UploadData
   
   type UploadFile = typings.electron.Electron.UploadFile
@@ -440,15 +532,21 @@ object Main {
   
   type UploadRawData = typings.electron.Electron.UploadRawData
   
+  type UserDefaultTypes = typings.electron.Electron.UserDefaultTypes
+  
   type VisibleOnAllWorkspacesOptions = typings.electron.Electron.VisibleOnAllWorkspacesOptions
   
   type WebContentsPrintOptions = typings.electron.Electron.WebContentsPrintOptions
   
   type WebContents_ = typings.electron.Electron.WebContents_
   
+  type WebFrameMain_ = typings.electron.Electron.WebFrameMain_
+  
   type WebPreferences = typings.electron.Electron.WebPreferences
   
   type WebRequest = typings.electron.Electron.WebRequest
+  
+  type WebRequestFilter = typings.electron.Electron.WebRequestFilter
   
   type WebSource = typings.electron.Electron.WebSource
   
@@ -456,9 +554,14 @@ object Main {
   
   type WillNavigateEvent = typings.electron.Electron.WillNavigateEvent
   
+  type WillResizeDetails = typings.electron.Electron.WillResizeDetails
+  
   /* was `typeof Session` */
-  type session = typings.electron.Electron.Main.Session_
+  type session = typings.electron.Electron.Session_
   
   /* was `typeof WebContents` */
-  type webContents = typings.electron.Electron.Main.WebContents_
+  type webContents = typings.electron.Electron.WebContents_
+  
+  /* was `typeof WebFrameMain` */
+  type webFrameMain = typings.electron.Electron.WebFrameMain_
 }

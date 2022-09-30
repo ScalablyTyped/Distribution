@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the collection of {@link Word.Setting} objects.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait SettingCollection
@@ -26,8 +25,7 @@ trait SettingCollection
     * Creates a new setting or sets an existing setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param key Required. The setting's key, which is case-sensitive.
     * @param value Required. The setting's value.
@@ -42,8 +40,7 @@ trait SettingCollection
     * Deletes all settings in this add-in.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def deleteAll(): Unit = js.native
   
@@ -51,28 +48,25 @@ trait SettingCollection
     * Gets the count of settings.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a setting object by its key, which is case-sensitive. Throws an error if the setting does not exist.
+    * Gets a setting object by its key, which is case-sensitive. Throws an `ItemNotFound` error if the setting does not exist.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param key The key that identifies the setting object.
     */
   def getItem(key: String): Setting = js.native
   
   /**
-    * Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
+    * Gets a setting object by its key, which is case-sensitive. If the setting does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param key Required. The key that identifies the setting object.
     */

@@ -1,107 +1,107 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`-10`
-import typings.webcl.webclNumbers.`-11`
-import typings.webcl.webclNumbers.`-12`
-import typings.webcl.webclNumbers.`-13`
-import typings.webcl.webclNumbers.`-14`
-import typings.webcl.webclNumbers.`-1`
-import typings.webcl.webclNumbers.`-2`
-import typings.webcl.webclNumbers.`-30`
-import typings.webcl.webclNumbers.`-31`
-import typings.webcl.webclNumbers.`-32`
-import typings.webcl.webclNumbers.`-33`
-import typings.webcl.webclNumbers.`-34`
-import typings.webcl.webclNumbers.`-35`
-import typings.webcl.webclNumbers.`-36`
-import typings.webcl.webclNumbers.`-37`
-import typings.webcl.webclNumbers.`-38`
-import typings.webcl.webclNumbers.`-39`
-import typings.webcl.webclNumbers.`-3`
-import typings.webcl.webclNumbers.`-40`
-import typings.webcl.webclNumbers.`-41`
-import typings.webcl.webclNumbers.`-42`
-import typings.webcl.webclNumbers.`-43`
-import typings.webcl.webclNumbers.`-44`
-import typings.webcl.webclNumbers.`-45`
-import typings.webcl.webclNumbers.`-46`
-import typings.webcl.webclNumbers.`-47`
-import typings.webcl.webclNumbers.`-48`
-import typings.webcl.webclNumbers.`-49`
-import typings.webcl.webclNumbers.`-4`
-import typings.webcl.webclNumbers.`-50`
-import typings.webcl.webclNumbers.`-51`
-import typings.webcl.webclNumbers.`-52`
-import typings.webcl.webclNumbers.`-53`
-import typings.webcl.webclNumbers.`-54`
-import typings.webcl.webclNumbers.`-55`
-import typings.webcl.webclNumbers.`-56`
-import typings.webcl.webclNumbers.`-57`
-import typings.webcl.webclNumbers.`-58`
-import typings.webcl.webclNumbers.`-59`
-import typings.webcl.webclNumbers.`-5`
-import typings.webcl.webclNumbers.`-61`
-import typings.webcl.webclNumbers.`-63`
-import typings.webcl.webclNumbers.`-64`
-import typings.webcl.webclNumbers.`-6`
-import typings.webcl.webclNumbers.`-7`
-import typings.webcl.webclNumbers.`-8`
-import typings.webcl.webclNumbers.`-9`
-import typings.webcl.webclNumbers.`0`
+import typings.webcl.webclInts.`-10`
+import typings.webcl.webclInts.`-11`
+import typings.webcl.webclInts.`-12`
+import typings.webcl.webclInts.`-13`
+import typings.webcl.webclInts.`-14`
+import typings.webcl.webclInts.`-1`
+import typings.webcl.webclInts.`-2`
+import typings.webcl.webclInts.`-30`
+import typings.webcl.webclInts.`-31`
+import typings.webcl.webclInts.`-32`
+import typings.webcl.webclInts.`-33`
+import typings.webcl.webclInts.`-34`
+import typings.webcl.webclInts.`-35`
+import typings.webcl.webclInts.`-36`
+import typings.webcl.webclInts.`-37`
+import typings.webcl.webclInts.`-38`
+import typings.webcl.webclInts.`-39`
+import typings.webcl.webclInts.`-3`
+import typings.webcl.webclInts.`-40`
+import typings.webcl.webclInts.`-41`
+import typings.webcl.webclInts.`-42`
+import typings.webcl.webclInts.`-43`
+import typings.webcl.webclInts.`-44`
+import typings.webcl.webclInts.`-45`
+import typings.webcl.webclInts.`-46`
+import typings.webcl.webclInts.`-47`
+import typings.webcl.webclInts.`-48`
+import typings.webcl.webclInts.`-49`
+import typings.webcl.webclInts.`-4`
+import typings.webcl.webclInts.`-50`
+import typings.webcl.webclInts.`-51`
+import typings.webcl.webclInts.`-52`
+import typings.webcl.webclInts.`-53`
+import typings.webcl.webclInts.`-54`
+import typings.webcl.webclInts.`-55`
+import typings.webcl.webclInts.`-56`
+import typings.webcl.webclInts.`-57`
+import typings.webcl.webclInts.`-58`
+import typings.webcl.webclInts.`-59`
+import typings.webcl.webclInts.`-5`
+import typings.webcl.webclInts.`-61`
+import typings.webcl.webclInts.`-63`
+import typings.webcl.webclInts.`-64`
+import typings.webcl.webclInts.`-6`
+import typings.webcl.webclInts.`-7`
+import typings.webcl.webclInts.`-8`
+import typings.webcl.webclInts.`-9`
+import typings.webcl.webclInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Error Codes */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0`
-  - typings.webcl.webclNumbers.`-1`
-  - typings.webcl.webclNumbers.`-2`
-  - typings.webcl.webclNumbers.`-3`
-  - typings.webcl.webclNumbers.`-4`
-  - typings.webcl.webclNumbers.`-5`
-  - typings.webcl.webclNumbers.`-6`
-  - typings.webcl.webclNumbers.`-7`
-  - typings.webcl.webclNumbers.`-8`
-  - typings.webcl.webclNumbers.`-9`
-  - typings.webcl.webclNumbers.`-10`
-  - typings.webcl.webclNumbers.`-11`
-  - typings.webcl.webclNumbers.`-12`
-  - typings.webcl.webclNumbers.`-13`
-  - typings.webcl.webclNumbers.`-14`
-  - typings.webcl.webclNumbers.`-30`
-  - typings.webcl.webclNumbers.`-31`
-  - typings.webcl.webclNumbers.`-32`
-  - typings.webcl.webclNumbers.`-33`
-  - typings.webcl.webclNumbers.`-34`
-  - typings.webcl.webclNumbers.`-35`
-  - typings.webcl.webclNumbers.`-36`
-  - typings.webcl.webclNumbers.`-37`
-  - typings.webcl.webclNumbers.`-38`
-  - typings.webcl.webclNumbers.`-39`
-  - typings.webcl.webclNumbers.`-40`
-  - typings.webcl.webclNumbers.`-41`
-  - typings.webcl.webclNumbers.`-42`
-  - typings.webcl.webclNumbers.`-43`
-  - typings.webcl.webclNumbers.`-44`
-  - typings.webcl.webclNumbers.`-45`
-  - typings.webcl.webclNumbers.`-46`
-  - typings.webcl.webclNumbers.`-47`
-  - typings.webcl.webclNumbers.`-48`
-  - typings.webcl.webclNumbers.`-49`
-  - typings.webcl.webclNumbers.`-50`
-  - typings.webcl.webclNumbers.`-51`
-  - typings.webcl.webclNumbers.`-52`
-  - typings.webcl.webclNumbers.`-53`
-  - typings.webcl.webclNumbers.`-54`
-  - typings.webcl.webclNumbers.`-55`
-  - typings.webcl.webclNumbers.`-56`
-  - typings.webcl.webclNumbers.`-57`
-  - typings.webcl.webclNumbers.`-58`
-  - typings.webcl.webclNumbers.`-59`
-  - typings.webcl.webclNumbers.`-61`
-  - typings.webcl.webclNumbers.`-63`
-  - typings.webcl.webclNumbers.`-64`
+  - typings.webcl.webclInts.`0`
+  - typings.webcl.webclInts.`-1`
+  - typings.webcl.webclInts.`-2`
+  - typings.webcl.webclInts.`-3`
+  - typings.webcl.webclInts.`-4`
+  - typings.webcl.webclInts.`-5`
+  - typings.webcl.webclInts.`-6`
+  - typings.webcl.webclInts.`-7`
+  - typings.webcl.webclInts.`-8`
+  - typings.webcl.webclInts.`-9`
+  - typings.webcl.webclInts.`-10`
+  - typings.webcl.webclInts.`-11`
+  - typings.webcl.webclInts.`-12`
+  - typings.webcl.webclInts.`-13`
+  - typings.webcl.webclInts.`-14`
+  - typings.webcl.webclInts.`-30`
+  - typings.webcl.webclInts.`-31`
+  - typings.webcl.webclInts.`-32`
+  - typings.webcl.webclInts.`-33`
+  - typings.webcl.webclInts.`-34`
+  - typings.webcl.webclInts.`-35`
+  - typings.webcl.webclInts.`-36`
+  - typings.webcl.webclInts.`-37`
+  - typings.webcl.webclInts.`-38`
+  - typings.webcl.webclInts.`-39`
+  - typings.webcl.webclInts.`-40`
+  - typings.webcl.webclInts.`-41`
+  - typings.webcl.webclInts.`-42`
+  - typings.webcl.webclInts.`-43`
+  - typings.webcl.webclInts.`-44`
+  - typings.webcl.webclInts.`-45`
+  - typings.webcl.webclInts.`-46`
+  - typings.webcl.webclInts.`-47`
+  - typings.webcl.webclInts.`-48`
+  - typings.webcl.webclInts.`-49`
+  - typings.webcl.webclInts.`-50`
+  - typings.webcl.webclInts.`-51`
+  - typings.webcl.webclInts.`-52`
+  - typings.webcl.webclInts.`-53`
+  - typings.webcl.webclInts.`-54`
+  - typings.webcl.webclInts.`-55`
+  - typings.webcl.webclInts.`-56`
+  - typings.webcl.webclInts.`-57`
+  - typings.webcl.webclInts.`-58`
+  - typings.webcl.webclInts.`-59`
+  - typings.webcl.webclInts.`-61`
+  - typings.webcl.webclInts.`-63`
+  - typings.webcl.webclInts.`-64`
 */
 trait ErrorCodes extends StObject
 object ErrorCodes {

@@ -703,6 +703,8 @@ trait DataTableProps extends StObject {
   
   var selection: js.UndefOr[Any | js.Array[Any]] = js.undefined
   
+  var selectionAriaLabel: js.UndefOr[String] = js.undefined
+  
   var selectionAutoFocus: js.UndefOr[Boolean] = js.undefined
   
   var selectionMode: js.UndefOr[DataTableSelectionModeType] = js.undefined
@@ -1995,6 +1997,10 @@ object DataTableProps {
     inline def setSelectOnEditUndefined: Self = StObject.set(x, "selectOnEdit", js.undefined)
     
     inline def setSelection(value: Any | js.Array[Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionAriaLabel(value: String): Self = StObject.set(x, "selectionAriaLabel", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionAriaLabelUndefined: Self = StObject.set(x, "selectionAriaLabel", js.undefined)
     
     inline def setSelectionAutoFocus(value: Boolean): Self = StObject.set(x, "selectionAutoFocus", value.asInstanceOf[js.Any])
     

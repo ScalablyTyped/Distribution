@@ -1,7 +1,7 @@
 
 # Scala.js typings for imagemin-pngquant
 
-Typings are for version 9.0.1
+Typings are for version 9.0.2
 
 ## Library description:
 Imagemin plugin for `pngquant`
@@ -10,10 +10,10 @@ Imagemin plugin for `pngquant`
 | ------------------ | :-------------: |
 | Full name          | imagemin-pngquant |
 | Keywords           | compress, image, imageminplugin, minify, optimize, png, pngquant |
-| # releases         | 4 |
-| # dependents       | 523 |
-| # downloads        | 33291634 |
-| # stars            | 66 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2582441.0 |
+| # stars            | 293.0 |
 
 ## Links
 - [Homepage](https://github.com/imagemin/imagemin-pngquant#readme)

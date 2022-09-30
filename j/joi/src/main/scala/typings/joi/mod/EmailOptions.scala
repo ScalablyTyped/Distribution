@@ -29,6 +29,13 @@ trait EmailOptions extends StObject {
   var ignoreLength: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The maximum number of domain segments (e.g. `x.y.z` has 3 segments) allowed. Defaults to no limit.
+    *
+    * @default Infinity
+    */
+  var maxDomainSegments: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Number of segments required for the domain. Be careful since some domains, such as `io`, directly allow email.
     *
     * @default 2
@@ -76,6 +83,10 @@ object EmailOptions {
     inline def setIgnoreLength(value: Boolean): Self = StObject.set(x, "ignoreLength", value.asInstanceOf[js.Any])
     
     inline def setIgnoreLengthUndefined: Self = StObject.set(x, "ignoreLength", js.undefined)
+    
+    inline def setMaxDomainSegments(value: Double): Self = StObject.set(x, "maxDomainSegments", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDomainSegmentsUndefined: Self = StObject.set(x, "maxDomainSegments", js.undefined)
     
     inline def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
     

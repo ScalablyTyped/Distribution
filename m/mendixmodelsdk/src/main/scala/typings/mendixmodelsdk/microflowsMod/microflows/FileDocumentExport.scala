@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FileDocumentExport")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FileDocumentExport")
 @js.native
-class FileDocumentExport protected () extends OutputMethod {
+open class FileDocumentExport protected () extends OutputMethod {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class FileDocumentExport protected () extends OutputMethod {
 }
 object FileDocumentExport {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FileDocumentExport")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FileDocumentExport")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object FileDocumentExport {
   inline def createIn(container: ExportXmlAction): FileDocumentExport = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[FileDocumentExport]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FileDocumentExport.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FileDocumentExport.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FileDocumentExport.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.FileDocumentExport.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

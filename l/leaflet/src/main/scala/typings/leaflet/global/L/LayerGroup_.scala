@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.LayerGroup")
 @js.native
-class LayerGroup_[P] ()
+open class LayerGroup_[P] ()
   extends typings.leaflet.mod.LayerGroup_[P] {
   def this(layers: js.Array[typings.leaflet.mod.Layer]) = this()
   def this(layers: js.Array[typings.leaflet.mod.Layer], options: LayerOptions) = this()

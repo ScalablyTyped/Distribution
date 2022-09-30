@@ -1,10 +1,10 @@
 package typings.minappEnv.wx
 
-import typings.minappEnv.minappEnvNumbers.`-1`
-import typings.minappEnv.minappEnvNumbers.`10001`
-import typings.minappEnv.minappEnvNumbers.`10002`
-import typings.minappEnv.minappEnvNumbers.`10003`
-import typings.minappEnv.minappEnvNumbers.`10004`
+import typings.minappEnv.minappEnvInts.`-1`
+import typings.minappEnv.minappEnvInts.`10001`
+import typings.minappEnv.minappEnvInts.`10002`
+import typings.minappEnv.minappEnvInts.`10003`
+import typings.minappEnv.minappEnvInts.`10004`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

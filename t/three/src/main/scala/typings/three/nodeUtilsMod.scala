@@ -16,7 +16,7 @@ object nodeUtilsMod {
   
   inline def getNodesKeys(`object`: default): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodesKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def getValueFromType(`type`: String, params: Double*): NodeValueOption | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromType")(List(`type`.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NodeValueOption | Null]
+  inline def getValueFromType(`type`: String, params: Double*): NodeValueOption | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromType")(scala.List(`type`.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[NodeValueOption | Null]
   
   inline def getValueType(value: NodeValueOption): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

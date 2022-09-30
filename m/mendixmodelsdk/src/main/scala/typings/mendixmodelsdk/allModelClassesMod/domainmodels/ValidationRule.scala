@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/validation-rules relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.ValidationRule")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.ValidationRule")
 @js.native
-class ValidationRule protected ()
+open class ValidationRule protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class ValidationRule protected ()
 }
 object ValidationRule {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.ValidationRule")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.ValidationRule")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object ValidationRule {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity): typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.ValidationRule]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.ValidationRule.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.ValidationRule.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.ValidationRule.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.ValidationRule.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

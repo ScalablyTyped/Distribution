@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.CallNanoflowClientAction")
 @js.native
-class CallNanoflowClientAction protected ()
+open class CallNanoflowClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.CallNanoflowClientAction {
   def this(
     model: AbstractModel,

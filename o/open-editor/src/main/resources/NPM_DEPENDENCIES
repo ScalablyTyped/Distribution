@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "open-editor" : "2.0.1"
+      "open-editor" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "open-editor" : "2.0.1"
+      "open-editor" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

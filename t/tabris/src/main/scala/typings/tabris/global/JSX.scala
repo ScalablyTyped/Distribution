@@ -12,8 +12,8 @@ object JSX {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createElement(`type`: String, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ElementClass]
-  inline def createElement(`type`: js.Function, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ElementClass]
+  inline def createElement(`type`: String, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ElementClass]
+  inline def createElement(`type`: js.Function, attributes: js.Object, children: ElementClass*): ElementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ElementClass]
   
   inline def install(jsxProcessor: JsxProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(jsxProcessor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

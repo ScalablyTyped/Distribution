@@ -1,8 +1,8 @@
 package typings.jspdf.mod
 
 import typings.jspdf.anon.Autoencode
-import typings.jspdf.jspdfNumbers.`0`
-import typings.jspdf.jspdfNumbers.`1`
+import typings.jspdf.jspdfInts.`0`
+import typings.jspdf.jspdfInts.`1`
 import typings.jspdf.jspdfStrings.addToPathForClipping
 import typings.jspdf.jspdfStrings.alphabetic
 import typings.jspdf.jspdfStrings.bottom

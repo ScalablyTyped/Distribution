@@ -4,6 +4,7 @@ import typings.bluebird.mod.Bluebird
 import typings.bluebird.mod.CatchFilter
 import typings.bluebird.mod.Constructor
 import typings.bluebird.mod.Resolvable
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ object anon {
       onReject: js.Function1[/* error */ Any, Resolvable[U]]
     ): Bluebird[U] = js.native
     def apply[U](onFulfill: Unit, onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U] = js.native
-    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
   }
   
   @js.native

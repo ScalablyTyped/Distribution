@@ -1,18 +1,18 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-4105`
-import typings.activexOffice.activexOfficeNumbers.`-4114`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`4`
+import typings.activexOffice.activexOfficeInts.`-4105`
+import typings.activexOffice.activexOfficeInts.`-4114`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-4105`
-  - typings.activexOffice.activexOfficeNumbers.`-4114`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`4`
+  - typings.activexOffice.activexOfficeInts.`-4105`
+  - typings.activexOffice.activexOfficeInts.`-4114`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`4`
 */
 trait XlAxisCrosses extends StObject
 object XlAxisCrosses {

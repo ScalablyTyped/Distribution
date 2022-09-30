@@ -10,5 +10,5 @@ object assertMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(condition: Any, name: String, format: String, args: Any*): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((List(condition.asInstanceOf[js.Any], name.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[/* asserts condition */ Boolean]
+  inline def default(condition: Any, name: String, format: String, args: Any*): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(condition.asInstanceOf[js.Any], name.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[/* asserts condition */ Boolean]
 }

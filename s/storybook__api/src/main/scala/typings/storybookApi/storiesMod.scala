@@ -12,7 +12,7 @@ import typings.storybookApi.anon.Provider
 import typings.storybookApi.anon.Stories
 import typings.storybookApi.storybookApiBooleans.`false`
 import typings.storybookApi.storybookApiBooleans.`true`
-import typings.storybookApi.storybookApiNumbers.`0`
+import typings.storybookApi.storybookApiInts.`0`
 import typings.storybookApi.storybookApiStrings.component
 import typings.storybookApi.storybookApiStrings.docs
 import typings.storybookApi.storybookApiStrings.group

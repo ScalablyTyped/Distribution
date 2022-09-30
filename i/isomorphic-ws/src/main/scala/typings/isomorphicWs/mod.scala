@@ -2,10 +2,10 @@ package typings.isomorphicWs
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
-import typings.isomorphicWs.isomorphicWsNumbers.`0`
-import typings.isomorphicWs.isomorphicWsNumbers.`1`
-import typings.isomorphicWs.isomorphicWsNumbers.`2`
-import typings.isomorphicWs.isomorphicWsNumbers.`3`
+import typings.isomorphicWs.isomorphicWsInts.`0`
+import typings.isomorphicWs.isomorphicWsInts.`1`
+import typings.isomorphicWs.isomorphicWsInts.`2`
+import typings.isomorphicWs.isomorphicWsInts.`3`
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
@@ -99,10 +99,10 @@ object mod extends Shortcut {
   ] = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("isomorphic-ws", "WebSocketServerCls")
+  @JSImport("isomorphic-ws", "WebSocketServer")
   @js.native
   open class WebSocketServerCls[T /* <: typings.ws.mod.WebSocket */] ()
-    extends typings.ws.mod.WebSocketServerCls[T] {
+    extends typings.ws.mod.Server[T] {
     def this(options: ServerOptions) = this()
     def this(options: Unit, callback: js.Function0[Unit]) = this()
     def this(options: ServerOptions, callback: js.Function0[Unit]) = this()

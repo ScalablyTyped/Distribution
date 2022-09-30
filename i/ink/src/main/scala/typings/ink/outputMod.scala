@@ -10,7 +10,7 @@ object outputMod {
   
   @JSImport("ink/build/output", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Output {
     def this(options: Options) = this()
@@ -28,7 +28,7 @@ object outputMod {
     override def write(x: Double, y: Double, text: String, options: Transformers): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override val writes: js.Any = js.native
+    override val writes: Any = js.native
   }
   
   /**
@@ -70,7 +70,7 @@ object outputMod {
     
     def write(x: Double, y: Double, text: String, options: Transformers): Unit
     
-    /* private */ val writes: js.Any
+    /* private */ val writes: Any
   }
   object Output {
     
@@ -79,7 +79,7 @@ object outputMod {
       height: Double,
       width: Double,
       write: (Double, Double, String, Transformers) => Unit,
-      writes: js.Any
+      writes: Any
     ): Output = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], write = js.Any.fromFunction4(write), writes = writes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
@@ -95,7 +95,7 @@ object outputMod {
       
       inline def setWrite(value: (Double, Double, String, Transformers) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction4(value))
       
-      inline def setWrites(value: js.Any): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
+      inline def setWrites(value: Any): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
     }
   }
 }

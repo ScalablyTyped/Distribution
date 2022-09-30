@@ -1,6 +1,8 @@
 package typings.bip32
 
 import typings.bip32.anon.Private
+import typings.bip32.bip32Ints.`0`
+import typings.bip32.bip32Ints.`1`
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +33,9 @@ object bip32Mod {
   }
   
   @js.native
-  trait BIP32Interface extends StObject {
+  trait BIP32Interface
+    extends StObject
+       with Signer {
     
     var chainCode: Buffer = js.native
     
@@ -51,8 +55,6 @@ object bip32Mod {
     
     def isNeutered(): Boolean = js.native
     
-    var lowR: Boolean = js.native
-    
     var network: Network = js.native
     
     def neutered(): BIP32Interface = js.native
@@ -61,20 +63,11 @@ object bip32Mod {
     
     var privateKey: js.UndefOr[Buffer] = js.native
     
-    var publicKey: Buffer = js.native
-    
-    def sign(hash: Buffer): Buffer = js.native
-    def sign(hash: Buffer, lowR: Boolean): Buffer = js.native
-    
-    def signSchnorr(hash: Buffer): Buffer = js.native
-    
     def toBase58(): String = js.native
     
     def toWIF(): String = js.native
     
-    def verify(hash: Buffer, signature: Buffer): Boolean = js.native
-    
-    def verifySchnorr(hash: Buffer, signature: Buffer): Boolean = js.native
+    def tweak(t: Buffer): Signer = js.native
   }
   
   trait Network extends StObject {
@@ -123,6 +116,23 @@ object bip32Mod {
   }
   
   @js.native
+  trait Signer extends StObject {
+    
+    var lowR: Boolean = js.native
+    
+    var publicKey: Buffer = js.native
+    
+    def sign(hash: Buffer): Buffer = js.native
+    def sign(hash: Buffer, lowR: Boolean): Buffer = js.native
+    
+    def signSchnorr(hash: Buffer): Buffer = js.native
+    
+    def verify(hash: Buffer, signature: Buffer): Boolean = js.native
+    
+    def verifySchnorr(hash: Buffer, signature: Buffer): Boolean = js.native
+  }
+  
+  @js.native
   trait TinySecp256k1Interface extends StObject {
     
     def isPoint(p: js.typedarray.Uint8Array): Boolean = js.native
@@ -136,6 +146,8 @@ object bip32Mod {
     def pointFromScalar(d: js.typedarray.Uint8Array, compressed: Boolean): js.typedarray.Uint8Array | Null = js.native
     
     def privateAdd(d: js.typedarray.Uint8Array, tweak: js.typedarray.Uint8Array): js.typedarray.Uint8Array | Null = js.native
+    
+    def privateNegate(d: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
     
     def sign(h: js.typedarray.Uint8Array, d: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
     def sign(h: js.typedarray.Uint8Array, d: js.typedarray.Uint8Array, e: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
@@ -165,5 +177,28 @@ object bip32Mod {
           Boolean
         ]
       ] = js.native
+    
+    def xOnlyPointAddTweak(p: js.typedarray.Uint8Array, tweak: js.typedarray.Uint8Array): XOnlyPointAddTweakResult | Null = js.native
+  }
+  
+  trait XOnlyPointAddTweakResult extends StObject {
+    
+    var parity: `1` | `0`
+    
+    var xOnlyPubkey: js.typedarray.Uint8Array
+  }
+  object XOnlyPointAddTweakResult {
+    
+    inline def apply(parity: `1` | `0`, xOnlyPubkey: js.typedarray.Uint8Array): XOnlyPointAddTweakResult = {
+      val __obj = js.Dynamic.literal(parity = parity.asInstanceOf[js.Any], xOnlyPubkey = xOnlyPubkey.asInstanceOf[js.Any])
+      __obj.asInstanceOf[XOnlyPointAddTweakResult]
+    }
+    
+    extension [Self <: XOnlyPointAddTweakResult](x: Self) {
+      
+      inline def setParity(value: `1` | `0`): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
+      
+      inline def setXOnlyPubkey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "xOnlyPubkey", value.asInstanceOf[js.Any])
+    }
   }
 }

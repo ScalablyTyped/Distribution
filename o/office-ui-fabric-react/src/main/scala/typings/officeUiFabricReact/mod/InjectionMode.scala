@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`1`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.luminoCoreutils
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +36,6 @@ object promiseMod {
       * @param value - The value to use for resolving the promise.
       */
     def resolve(value: T): Unit = js.native
-    def resolve(value: js.Thenable[T]): Unit = js.native
+    def resolve(value: PromiseLike[T]): Unit = js.native
   }
 }

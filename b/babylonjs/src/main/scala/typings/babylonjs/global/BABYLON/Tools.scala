@@ -1720,6 +1720,17 @@ object Tools {
   inline def SetReferrerPolicyBehavior(referrerPolicy: Nullable[ReferrerPolicy], element: typings.babylonjs.anon.ReferrerPolicy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetReferrerPolicyBehavior")(referrerPolicy.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Smooth angle changes (kind of low-pass filter), in particular for device orientation "shaking"
+    * Use trigonometric functions to avoid discontinuity (0/360, -180/180)
+    * @param previousAngle defines last angle value, in degrees
+    * @param newAngle defines new angle value, in degrees
+    * @param smoothFactor defines smoothing sensitivity; min 0: no smoothing, max 1: new data ignored
+    * @returns the angle in degrees
+    */
+  inline def SmoothAngleChange(previousAngle: Double, newAngle: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothAngleChange")(previousAngle.asInstanceOf[js.Any], newAngle.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def SmoothAngleChange(previousAngle: Double, newAngle: Double, smoothFactor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("SmoothAngleChange")(previousAngle.asInstanceOf[js.Any], newAngle.asInstanceOf[js.Any], smoothFactor.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
     * Starts a performance counter
     */
   inline def StartPerformanceCounter(counterName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("StartPerformanceCounter")(counterName.asInstanceOf[js.Any]).asInstanceOf[Unit]

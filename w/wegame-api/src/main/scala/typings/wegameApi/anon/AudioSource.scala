@@ -1,14 +1,14 @@
 package typings.wegameApi.anon
 
-import typings.wegameApi.wegameApiNumbers.`11025`
-import typings.wegameApi.wegameApiNumbers.`12000`
-import typings.wegameApi.wegameApiNumbers.`16000`
-import typings.wegameApi.wegameApiNumbers.`22050`
-import typings.wegameApi.wegameApiNumbers.`24000`
-import typings.wegameApi.wegameApiNumbers.`32000`
-import typings.wegameApi.wegameApiNumbers.`44100`
-import typings.wegameApi.wegameApiNumbers.`48000`
-import typings.wegameApi.wegameApiNumbers.`8000`
+import typings.wegameApi.wegameApiInts.`11025`
+import typings.wegameApi.wegameApiInts.`12000`
+import typings.wegameApi.wegameApiInts.`16000`
+import typings.wegameApi.wegameApiInts.`22050`
+import typings.wegameApi.wegameApiInts.`24000`
+import typings.wegameApi.wegameApiInts.`32000`
+import typings.wegameApi.wegameApiInts.`44100`
+import typings.wegameApi.wegameApiInts.`48000`
+import typings.wegameApi.wegameApiInts.`8000`
 import typings.wegameApi.wegameApiStrings.aac
 import typings.wegameApi.wegameApiStrings.mp3
 import typings.wegameApi.wx.types.AudioSourceType
@@ -46,7 +46,7 @@ trait AudioSource extends StObject {
   /**
     * 录音通道数
     */
-  var numberOfChannels: typings.wegameApi.wegameApiNumbers.`1` | typings.wegameApi.wegameApiNumbers.`2`
+  var numberOfChannels: typings.wegameApi.wegameApiInts.`1` | typings.wegameApi.wegameApiInts.`2`
   
   /**
     * 采样率
@@ -59,7 +59,7 @@ object AudioSource {
     encodeBitRate: Double,
     format: mp3 | aac,
     frameSize: Double,
-    numberOfChannels: typings.wegameApi.wegameApiNumbers.`1` | typings.wegameApi.wegameApiNumbers.`2`,
+    numberOfChannels: typings.wegameApi.wegameApiInts.`1` | typings.wegameApi.wegameApiInts.`2`,
     sampleRate: `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000`
   ): AudioSource = {
     val __obj = js.Dynamic.literal(encodeBitRate = encodeBitRate.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], frameSize = frameSize.asInstanceOf[js.Any], numberOfChannels = numberOfChannels.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any])
@@ -82,7 +82,7 @@ object AudioSource {
     
     inline def setFrameSize(value: Double): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
     
-    inline def setNumberOfChannels(value: typings.wegameApi.wegameApiNumbers.`1` | typings.wegameApi.wegameApiNumbers.`2`): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
+    inline def setNumberOfChannels(value: typings.wegameApi.wegameApiInts.`1` | typings.wegameApi.wegameApiInts.`2`): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
     
     inline def setSampleRate(value: `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000`): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
   }

@@ -6,7 +6,6 @@ import typings.chartJs.mod.Chart
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.DefaultDataPoint
 import typings.chartJs.mod.Plugin
-import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.$LeftcurlybracketnumberRightcurlybracket
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.afterBuildTicks
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.afterDataLimits
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.afterDatasetDraw
@@ -69,10 +68,10 @@ object mod extends Shortcut {
     var family: js.UndefOr[String] = js.undefined
     
     /** Defaults to 1.2 */
-    var lineHeight: js.UndefOr[Double | $LeftcurlybracketnumberRightcurlybracket] = js.undefined
+    var lineHeight: js.UndefOr[Double | (/* template literal string: ${number} */ String)] = js.undefined
     
     /** Defaults to `Chart.defaults.global.defaultFontSize` */
-    var size: js.UndefOr[Double | $LeftcurlybracketnumberRightcurlybracket] = js.undefined
+    var size: js.UndefOr[Double | (/* template literal string: ${number} */ String)] = js.undefined
     
     /** Defaults to `Chart.defaults.global.defaultFontStyle` */
     var style: js.UndefOr[normal | italic | oblique | initial | inherit] = js.undefined
@@ -93,11 +92,11 @@ object mod extends Shortcut {
       
       inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      inline def setLineHeight(value: Double | $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double | (/* template literal string: ${number} */ String)): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
       inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      inline def setSize(value: Double | $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | (/* template literal string: ${number} */ String)): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -178,7 +177,7 @@ object mod extends Shortcut {
     var labels: js.UndefOr[js.Array[Label]] = js.undefined
     
     /** How much padding to add when scaling very large text (value in percentage of 100) */
-    var paddingPercentage: js.UndefOr[Double | $LeftcurlybracketnumberRightcurlybracket] = js.undefined
+    var paddingPercentage: js.UndefOr[Double | (/* template literal string: ${number} */ String)] = js.undefined
   }
   object Options {
     
@@ -216,7 +215,7 @@ object mod extends Shortcut {
       
       inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value*))
       
-      inline def setPaddingPercentage(value: Double | $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "paddingPercentage", value.asInstanceOf[js.Any])
+      inline def setPaddingPercentage(value: Double | (/* template literal string: ${number} */ String)): Self = StObject.set(x, "paddingPercentage", value.asInstanceOf[js.Any])
       
       inline def setPaddingPercentageUndefined: Self = StObject.set(x, "paddingPercentage", js.undefined)
     }

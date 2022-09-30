@@ -1,5 +1,6 @@
 package typings.nodeFetch
 
+import typings.formdataPolyfill.mod.FormData
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.nodeFetch.nodeFetchStrings.abort
@@ -80,12 +81,6 @@ object mod {
   @js.native
   val File: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.File */ Any = js.native
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("node-fetch", "FormData")
-  @js.native
-  open class FormData ()
-    extends typings.formdataPolyfill.mod.FormData
-  
   @JSImport("node-fetch", "Headers")
   @js.native
   open class Headers () extends StObject {
@@ -154,7 +149,7 @@ object mod {
     override def buffer(): js.Promise[Buffer] = js.native
     
     /* CompleteClass */
-    override def formData(): js.Promise[typings.formdataPolyfill.mod.FormData] = js.native
+    override def formData(): js.Promise[FormData] = js.native
     
     /**
     	 * Returns a Headers object consisting of the headers associated with request. Note that headers added in the network layer by the user agent will not be accounted for in this object, e.g., the "Host" header.
@@ -228,7 +223,7 @@ object mod {
     override def buffer(): js.Promise[Buffer] = js.native
     
     /* CompleteClass */
-    override def formData(): js.Promise[typings.formdataPolyfill.mod.FormData] = js.native
+    override def formData(): js.Promise[FormData] = js.native
     
     val headers: Headers = js.native
     
@@ -330,9 +325,9 @@ object mod {
     @JSName("buffer")
     var buffer_Original: js.Function0[js.Promise[Buffer]]
     
-    def formData(): js.Promise[typings.formdataPolyfill.mod.FormData]
+    def formData(): js.Promise[FormData]
     @JSName("formData")
-    var formData_Original: js.Function0[js.Promise[typings.formdataPolyfill.mod.FormData]]
+    var formData_Original: js.Function0[js.Promise[FormData]]
     
     def json(): js.Promise[Any]
     @JSName("json")
@@ -351,7 +346,7 @@ object mod {
       blob: () => js.Promise[typings.std.Blob],
       bodyUsed: Boolean,
       buffer: () => js.Promise[Buffer],
-      formData: () => js.Promise[typings.formdataPolyfill.mod.FormData],
+      formData: () => js.Promise[FormData],
       json: () => js.Promise[Any],
       size: Double,
       text: () => js.Promise[String]
@@ -376,7 +371,7 @@ object mod {
       
       inline def setBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       
-      inline def setFormData(value: () => js.Promise[typings.formdataPolyfill.mod.FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
+      inline def setFormData(value: () => js.Promise[FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
       
       inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
@@ -386,7 +381,7 @@ object mod {
     }
   }
   
-  type BodyInit = typings.std.Blob | Buffer | URLSearchParams | typings.formdataPolyfill.mod.FormData | ReadableStream[Any] | String
+  type BodyInit = typings.std.Blob | Buffer | URLSearchParams | FormData | ReadableStream[Any] | String
   
   trait BodyMixin extends StObject {
     
@@ -401,7 +396,7 @@ object mod {
     /** @deprecated Use `body.arrayBuffer()` instead. */
     def buffer(): js.Promise[Buffer]
     
-    def formData(): js.Promise[typings.formdataPolyfill.mod.FormData]
+    def formData(): js.Promise[FormData]
     
     def json(): js.Promise[Any]
     
@@ -416,7 +411,7 @@ object mod {
       blob: () => js.Promise[typings.std.Blob],
       bodyUsed: Boolean,
       buffer: () => js.Promise[Buffer],
-      formData: () => js.Promise[typings.formdataPolyfill.mod.FormData],
+      formData: () => js.Promise[FormData],
       json: () => js.Promise[Any],
       size: Double,
       text: () => js.Promise[String]
@@ -439,7 +434,7 @@ object mod {
       
       inline def setBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       
-      inline def setFormData(value: () => js.Promise[typings.formdataPolyfill.mod.FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
+      inline def setFormData(value: () => js.Promise[FormData]): Self = StObject.set(x, "formData", js.Any.fromFunction0(value))
       
       inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       

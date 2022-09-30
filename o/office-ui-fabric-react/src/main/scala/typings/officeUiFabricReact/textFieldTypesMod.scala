@@ -10,6 +10,7 @@ import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
+import typings.std.PromiseLike
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
@@ -226,7 +227,7 @@ object textFieldTypesMod {
       * - If rejected, the value is thrown away.
       */
     var onGetErrorMessage: js.UndefOr[
-        js.Function1[/* value */ String, js.UndefOr[String | Element | (js.Thenable[String | Element])]]
+        js.Function1[/* value */ String, js.UndefOr[String | Element | (PromiseLike[String | Element])]]
       ] = js.undefined
     
     /**
@@ -402,7 +403,7 @@ object textFieldTypesMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnGetErrorMessage(value: /* value */ String => js.UndefOr[String | Element | (js.Thenable[String | Element])]): Self = StObject.set(x, "onGetErrorMessage", js.Any.fromFunction1(value))
+      inline def setOnGetErrorMessage(value: /* value */ String => js.UndefOr[String | Element | (PromiseLike[String | Element])]): Self = StObject.set(x, "onGetErrorMessage", js.Any.fromFunction1(value))
       
       inline def setOnGetErrorMessageUndefined: Self = StObject.set(x, "onGetErrorMessage", js.undefined)
       

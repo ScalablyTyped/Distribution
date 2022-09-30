@@ -250,6 +250,10 @@ object iconSvgPathsMod {
     @js.native
     val BringData: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Bug")
+    @js.native
+    val Bug: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.Buggy")
     @js.native
     val Buggy: js.Array[String] = js.native
@@ -2480,6 +2484,10 @@ object iconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.BringData")
     @js.native
     val BringData: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Bug")
+    @js.native
+    val Bug: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Buggy")
     @js.native

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.OfflineSchemaFetchInstruction")
 @js.native
-class OfflineSchemaFetchInstruction protected ()
+open class OfflineSchemaFetchInstruction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.OfflineSchemaFetchInstruction {
   def this(
     model: AbstractModel,

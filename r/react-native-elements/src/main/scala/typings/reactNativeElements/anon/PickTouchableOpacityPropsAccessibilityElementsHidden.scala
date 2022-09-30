@@ -77,7 +77,7 @@ trait PickTouchableOpacityPropsAccessibilityElementsHidden extends StObject {
   
   var delayPressOut: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | Null] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -133,7 +133,7 @@ trait PickTouchableOpacityPropsAccessibilityElementsHidden extends StObject {
   
   var titleProps: js.UndefOr[TextProps] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
@@ -247,8 +247,6 @@ object PickTouchableOpacityPropsAccessibilityElementsHidden {
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
-    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
@@ -365,8 +363,6 @@ object PickTouchableOpacityPropsAccessibilityElementsHidden {
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

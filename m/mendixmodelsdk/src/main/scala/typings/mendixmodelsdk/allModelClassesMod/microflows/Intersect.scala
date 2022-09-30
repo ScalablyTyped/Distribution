@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Intersect")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Intersect")
 @js.native
-class Intersect protected ()
+open class Intersect protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.Intersect {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class Intersect protected ()
 }
 object Intersect {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Intersect")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Intersect")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object Intersect {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ListOperationAction): typings.mendixmodelsdk.microflowsMod.microflows.Intersect = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.Intersect]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Intersect.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Intersect.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Intersect.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.Intersect.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

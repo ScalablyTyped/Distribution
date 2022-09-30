@@ -3,6 +3,7 @@ package typings.matrixAppserviceBridge
 import typings.matrixAppserviceBridge.encryptionMod.ClientEncryptionSession
 import typings.matrixAppserviceBridge.intentMod.Intent
 import typings.matrixAppserviceBridge.intentMod.IntentOpts
+import typings.matrixBotSdk.mod.MatrixClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +14,8 @@ object encryptedIntentMod {
   @js.native
   open class EncryptedIntent protected () extends Intent {
     def this(
-      botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any,
-      botClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.MatrixClient */ Any,
+      botSdkIntent: typings.matrixBotSdk.mod.Intent,
+      botClient: MatrixClient,
       intentOpts: IntentOpts,
       encryptionOpts: EncryptedIntentOpts
     ) = this()

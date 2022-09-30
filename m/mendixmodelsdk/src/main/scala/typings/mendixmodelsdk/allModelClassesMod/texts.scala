@@ -58,9 +58,9 @@ object texts {
   /**
     * Interfaces and instance classes for types from the Mendix sub meta model `Texts`.
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemText")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemText")
   @js.native
-  class SystemText protected ()
+  open class SystemText protected ()
     extends typings.mendixmodelsdk.textsMod.texts.SystemText {
     def this(
       model: AbstractModel,
@@ -73,7 +73,7 @@ object texts {
   }
   object SystemText {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemText")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemText")
     @js.native
     val ^ : js.Any = js.native
     
@@ -94,13 +94,13 @@ object texts {
     inline def createIn(container: typings.mendixmodelsdk.textsMod.texts.SystemTextCollection): typings.mendixmodelsdk.textsMod.texts.SystemText = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.SystemText]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemText.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemText.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemText.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemText.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -109,9 +109,9 @@ object texts {
   /**
     * See: {@link https://docs.mendix.com/refguide/system-texts relevant section in reference guide}
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemTextCollection")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemTextCollection")
   @js.native
-  class SystemTextCollection protected ()
+  open class SystemTextCollection protected ()
     extends typings.mendixmodelsdk.textsMod.texts.SystemTextCollection {
     def this(
       model: AbstractModel,
@@ -123,7 +123,7 @@ object texts {
   }
   object SystemTextCollection {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemTextCollection")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemTextCollection")
     @js.native
     val ^ : js.Any = js.native
     
@@ -135,13 +135,13 @@ object texts {
     inline def createIn(container: IProject): typings.mendixmodelsdk.textsMod.texts.SystemTextCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.SystemTextCollection]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemTextCollection.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemTextCollection.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.SystemTextCollection.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.SystemTextCollection.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -150,9 +150,9 @@ object texts {
   /**
     * See: {@link https://docs.mendix.com/refguide/translatable-texts relevant section in reference guide}
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Text")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Text")
   @js.native
-  class Text protected ()
+  open class Text protected ()
     extends typings.mendixmodelsdk.textsMod.texts.Text {
     def this(
       model: AbstractModel,
@@ -165,7 +165,7 @@ object texts {
   }
   object Text {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Text")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Text")
     @js.native
     val ^ : js.Any = js.native
     
@@ -519,6 +519,9 @@ object texts {
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'caption' property
       * of the parent reports.ReportChartSeries element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 9.0.0
       */
     /* static member */
     inline def createInReportChartSeriesUnderCaption(container: ReportChartSeries): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartSeriesUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
@@ -527,6 +530,9 @@ object texts {
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'xAxisCaption' property
       * of the parent reports.ReportChart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 9.0.0
       */
     /* static member */
     inline def createInReportChartUnderXAxisCaption(container: ReportChart): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderXAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
@@ -535,6 +541,9 @@ object texts {
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'yAxisCaption' property
       * of the parent reports.ReportChart element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 9.0.0
       */
     /* static member */
     inline def createInReportChartUnderYAxisCaption(container: ReportChart): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportChartUnderYAxisCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
@@ -666,21 +675,21 @@ object texts {
     inline def createInWidgetValueUnderTranslatableValue(container: WidgetValue): typings.mendixmodelsdk.textsMod.texts.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTranslatableValue")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Text]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Text.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Text.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Text.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Text.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Translation")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Translation")
   @js.native
-  class Translation protected ()
+  open class Translation protected ()
     extends typings.mendixmodelsdk.textsMod.texts.Translation {
     def this(
       model: AbstractModel,
@@ -693,7 +702,7 @@ object texts {
   }
   object Translation {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Translation")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Translation")
     @js.native
     val ^ : js.Any = js.native
     
@@ -714,13 +723,13 @@ object texts {
     inline def createIn(container: typings.mendixmodelsdk.textsMod.texts.Text): typings.mendixmodelsdk.textsMod.texts.Translation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.textsMod.texts.Translation]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Translation.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Translation.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "texts.Translation.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "texts.Translation.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.textsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.textsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

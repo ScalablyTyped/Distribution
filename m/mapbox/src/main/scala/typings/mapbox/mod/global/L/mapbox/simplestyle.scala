@@ -16,5 +16,5 @@ object simplestyle {
   /**
     * Given a GeoJSON Feature with optional simplestyle-spec properties, return an options object formatted to be used as Leaflet Path options.
     */
-  inline def style(feature: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(feature.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def style(feature: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(feature.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

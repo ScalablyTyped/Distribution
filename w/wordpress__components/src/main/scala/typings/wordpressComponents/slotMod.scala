@@ -50,7 +50,7 @@ object slotMod {
       /**
         * Props to pass into the first child of the <Fill /> component.
         */
-      var fillProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+      var fillProps: js.UndefOr[StringDictionary[Any]] = js.undefined
       
       /**
         * Both `Slot` and `Fill` accept a `name` string prop, where a `Slot`
@@ -76,7 +76,7 @@ object slotMod {
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        inline def setFillProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
+        inline def setFillProps(value: StringDictionary[Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
         
         inline def setFillPropsUndefined: Self = StObject.set(x, "fillProps", js.undefined)
         

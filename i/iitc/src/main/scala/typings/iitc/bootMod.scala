@@ -18,7 +18,7 @@ object bootMod {
     // BOOTING ///////////////////////////////////////////////////////////
     inline def prepPluginsToLoad(): Unit = js.Dynamic.global.applyDynamic("prepPluginsToLoad")().asInstanceOf[Unit]
     
-    inline def registerMarkerForOMS(marker: Marker_[js.Any]): Unit = js.Dynamic.global.applyDynamic("registerMarkerForOMS")(marker.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerMarkerForOMS(marker: Marker_[Any]): Unit = js.Dynamic.global.applyDynamic("registerMarkerForOMS")(marker.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** adds a base layer to the map. done separately from the above, so that plugins that add base layers can be the default */
     inline def setMapBaseLayer(): Unit = js.Dynamic.global.applyDynamic("setMapBaseLayer")().asInstanceOf[Unit]

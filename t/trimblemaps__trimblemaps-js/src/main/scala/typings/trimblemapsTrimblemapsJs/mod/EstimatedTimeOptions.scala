@@ -1,8 +1,8 @@
 package typings.trimblemapsTrimblemapsJs.mod
 
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`0`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`1`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`2`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`0`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`1`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

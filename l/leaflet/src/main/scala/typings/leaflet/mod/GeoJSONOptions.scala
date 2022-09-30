@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GeoJSONOptions[P]
   extends StObject
-     with LayerOptions {
+     with InteractiveLayerOptions {
   
   /**
     * A Function that will be used for converting GeoJSON coordinates to LatLngs.
@@ -34,6 +34,10 @@ trait GeoJSONOptions[P]
     * ```
     */
   var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, P], Boolean]] = js.undefined
+  
+  // check if LatLng has an altitude property
+  /** Whether default Markers for "Point" type Features inherit from group options. */
+  var markersInheritOptions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Function that will be called once for each created Feature, after it
@@ -93,6 +97,10 @@ object GeoJSONOptions {
     inline def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, P] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setMarkersInheritOptions(value: Boolean): Self = StObject.set(x, "markersInheritOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMarkersInheritOptionsUndefined: Self = StObject.set(x, "markersInheritOptions", js.undefined)
     
     inline def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, P], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
     

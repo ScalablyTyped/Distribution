@@ -1,7 +1,7 @@
 package typings.sodiumUuid
 
 import typings.node.bufferMod.global.Buffer
-import typings.sodiumUuid.sodiumUuidNumbers.`16`
+import typings.sodiumUuid.sodiumUuidInts.`16`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

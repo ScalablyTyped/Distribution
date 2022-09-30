@@ -40,7 +40,7 @@ object mod {
       
       var backgroundColor: js.UndefOr[String] = js.undefined
       
-      var clearControlClasses: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var clearControlClasses: js.UndefOr[js.Array[Any]] = js.undefined
       
       var clearControlLabel: js.UndefOr[String] = js.undefined
       
@@ -48,17 +48,17 @@ object mod {
       
       var clearMeasurementsOnStop: js.UndefOr[Boolean] = js.undefined
       
-      var currentCircle: js.UndefOr[js.Any] = js.undefined
+      var currentCircle: js.UndefOr[Any] = js.undefined
       
       var cursor: js.UndefOr[String] = js.undefined
       
-      var endCircle: js.UndefOr[js.Any] = js.undefined
+      var endCircle: js.UndefOr[Any] = js.undefined
       
-      var fixedLine: js.UndefOr[js.Any] = js.undefined
+      var fixedLine: js.UndefOr[Any] = js.undefined
       
-      var intermedCircle: js.UndefOr[js.Any] = js.undefined
+      var intermedCircle: js.UndefOr[Any] = js.undefined
       
-      var measureControlClasses: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var measureControlClasses: js.UndefOr[js.Array[Any]] = js.undefined
       
       var measureControlLabel: js.UndefOr[String] = js.undefined
       
@@ -72,9 +72,9 @@ object mod {
       
       var showUnitControl: js.UndefOr[Boolean] = js.undefined
       
-      var startCircle: js.UndefOr[js.Any] = js.undefined
+      var startCircle: js.UndefOr[Any] = js.undefined
       
-      var tempLine: js.UndefOr[js.Any] = js.undefined
+      var tempLine: js.UndefOr[Any] = js.undefined
       
       var unit: js.UndefOr[String] = js.undefined
     }
@@ -91,11 +91,11 @@ object mod {
         
         inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        inline def setClearControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "clearControlClasses", value.asInstanceOf[js.Any])
+        inline def setClearControlClasses(value: js.Array[Any]): Self = StObject.set(x, "clearControlClasses", value.asInstanceOf[js.Any])
         
         inline def setClearControlClassesUndefined: Self = StObject.set(x, "clearControlClasses", js.undefined)
         
-        inline def setClearControlClassesVarargs(value: js.Any*): Self = StObject.set(x, "clearControlClasses", js.Array(value :_*))
+        inline def setClearControlClassesVarargs(value: Any*): Self = StObject.set(x, "clearControlClasses", js.Array(value*))
         
         inline def setClearControlLabel(value: String): Self = StObject.set(x, "clearControlLabel", value.asInstanceOf[js.Any])
         
@@ -109,7 +109,7 @@ object mod {
         
         inline def setClearMeasurementsOnStopUndefined: Self = StObject.set(x, "clearMeasurementsOnStop", js.undefined)
         
-        inline def setCurrentCircle(value: js.Any): Self = StObject.set(x, "currentCircle", value.asInstanceOf[js.Any])
+        inline def setCurrentCircle(value: Any): Self = StObject.set(x, "currentCircle", value.asInstanceOf[js.Any])
         
         inline def setCurrentCircleUndefined: Self = StObject.set(x, "currentCircle", js.undefined)
         
@@ -117,23 +117,23 @@ object mod {
         
         inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
         
-        inline def setEndCircle(value: js.Any): Self = StObject.set(x, "endCircle", value.asInstanceOf[js.Any])
+        inline def setEndCircle(value: Any): Self = StObject.set(x, "endCircle", value.asInstanceOf[js.Any])
         
         inline def setEndCircleUndefined: Self = StObject.set(x, "endCircle", js.undefined)
         
-        inline def setFixedLine(value: js.Any): Self = StObject.set(x, "fixedLine", value.asInstanceOf[js.Any])
+        inline def setFixedLine(value: Any): Self = StObject.set(x, "fixedLine", value.asInstanceOf[js.Any])
         
         inline def setFixedLineUndefined: Self = StObject.set(x, "fixedLine", js.undefined)
         
-        inline def setIntermedCircle(value: js.Any): Self = StObject.set(x, "intermedCircle", value.asInstanceOf[js.Any])
+        inline def setIntermedCircle(value: Any): Self = StObject.set(x, "intermedCircle", value.asInstanceOf[js.Any])
         
         inline def setIntermedCircleUndefined: Self = StObject.set(x, "intermedCircle", js.undefined)
         
-        inline def setMeasureControlClasses(value: js.Array[js.Any]): Self = StObject.set(x, "measureControlClasses", value.asInstanceOf[js.Any])
+        inline def setMeasureControlClasses(value: js.Array[Any]): Self = StObject.set(x, "measureControlClasses", value.asInstanceOf[js.Any])
         
         inline def setMeasureControlClassesUndefined: Self = StObject.set(x, "measureControlClasses", js.undefined)
         
-        inline def setMeasureControlClassesVarargs(value: js.Any*): Self = StObject.set(x, "measureControlClasses", js.Array(value :_*))
+        inline def setMeasureControlClassesVarargs(value: Any*): Self = StObject.set(x, "measureControlClasses", js.Array(value*))
         
         inline def setMeasureControlLabel(value: String): Self = StObject.set(x, "measureControlLabel", value.asInstanceOf[js.Any])
         
@@ -159,11 +159,11 @@ object mod {
         
         inline def setShowUnitControlUndefined: Self = StObject.set(x, "showUnitControl", js.undefined)
         
-        inline def setStartCircle(value: js.Any): Self = StObject.set(x, "startCircle", value.asInstanceOf[js.Any])
+        inline def setStartCircle(value: Any): Self = StObject.set(x, "startCircle", value.asInstanceOf[js.Any])
         
         inline def setStartCircleUndefined: Self = StObject.set(x, "startCircle", js.undefined)
         
-        inline def setTempLine(value: js.Any): Self = StObject.set(x, "tempLine", value.asInstanceOf[js.Any])
+        inline def setTempLine(value: Any): Self = StObject.set(x, "tempLine", value.asInstanceOf[js.Any])
         
         inline def setTempLineUndefined: Self = StObject.set(x, "tempLine", js.undefined)
         

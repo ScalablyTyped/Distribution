@@ -1,20 +1,20 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-4105`
-import typings.activexExcel.activexExcelNumbers.`-4128`
-import typings.activexExcel.activexExcelNumbers.`-4166`
-import typings.activexExcel.activexExcelNumbers.`-4170`
-import typings.activexExcel.activexExcelNumbers.`-4171`
+import typings.activexExcel.activexExcelInts.`-4105`
+import typings.activexExcel.activexExcelInts.`-4128`
+import typings.activexExcel.activexExcelInts.`-4166`
+import typings.activexExcel.activexExcelInts.`-4170`
+import typings.activexExcel.activexExcelInts.`-4171`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`-4105`
-  - typings.activexExcel.activexExcelNumbers.`-4170`
-  - typings.activexExcel.activexExcelNumbers.`-4128`
-  - typings.activexExcel.activexExcelNumbers.`-4171`
-  - typings.activexExcel.activexExcelNumbers.`-4166`
+  - typings.activexExcel.activexExcelInts.`-4105`
+  - typings.activexExcel.activexExcelInts.`-4170`
+  - typings.activexExcel.activexExcelInts.`-4128`
+  - typings.activexExcel.activexExcelInts.`-4171`
+  - typings.activexExcel.activexExcelInts.`-4166`
 */
 trait XlTickLabelOrientation extends StObject
 object XlTickLabelOrientation {

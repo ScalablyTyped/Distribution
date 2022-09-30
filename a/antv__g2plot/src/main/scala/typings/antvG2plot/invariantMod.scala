@@ -38,7 +38,7 @@ object invariantMod {
     /* "warn" */ val WARN: typings.antvG2plot.invariantMod.LEVEL.WARN & String = js.native
   }
   
-  inline def invariant(condition: Boolean, format: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")((List(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def invariant(condition: Boolean, format: String, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")((scala.List(condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
-  inline def log(level: LEVEL, condition: Boolean, format: Any, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((List(level.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def log(level: LEVEL, condition: Boolean, format: Any, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")((scala.List(level.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 }

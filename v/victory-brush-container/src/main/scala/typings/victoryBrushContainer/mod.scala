@@ -9,8 +9,8 @@ import typings.victoryBrushContainer.anon.X1
 import typings.victoryBrushContainer.anon.X1X2
 import typings.victoryBrushContainer.anon.Y
 import typings.victoryBrushContainer.anon.Y2
+import typings.victoryBrushContainer.victoryBrushContainerInts.`0`
 import typings.victoryBrushContainer.victoryBrushContainerMod.Constructor
-import typings.victoryBrushContainer.victoryBrushContainerNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

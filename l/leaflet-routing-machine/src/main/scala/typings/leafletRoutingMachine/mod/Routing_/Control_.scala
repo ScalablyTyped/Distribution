@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.Control")
 @js.native
-class Control_ () extends Itinerary_ {
+open class Control_ () extends Itinerary_ {
   def this(options: RoutingControlOptions) = this()
   
   def getPlan(): Plan_ = js.native
@@ -16,8 +16,8 @@ class Control_ () extends Itinerary_ {
   
   def getWaypoints(): js.Array[Waypoint_] = js.native
   
-  def on(`type`: String, fn: js.Function1[/* event */ js.Any, Unit]): this.type = js.native
-  def on(`type`: String, fn: js.Function1[/* event */ js.Any, Unit], context: js.Any): this.type = js.native
+  def on(`type`: String, fn: js.Function1[/* event */ Any, Unit]): this.type = js.native
+  def on(`type`: String, fn: js.Function1[/* event */ Any, Unit], context: Any): this.type = js.native
   
   def route(): Unit = js.native
   

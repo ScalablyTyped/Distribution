@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XCUITestReport
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var appVersionId: js.UndefOr[Double] = js.undefined
   
@@ -169,7 +169,7 @@ object XCUITestReport {
     
     inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    inline def setScreenshotsVarargs(value: Double*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
+    inline def setScreenshotsVarargs(value: Double*): Self = StObject.set(x, "screenshots", js.Array(value*))
     
     inline def setSharedLinkCode(value: String): Self = StObject.set(x, "sharedLinkCode", value.asInstanceOf[js.Any])
     
@@ -199,7 +199,7 @@ object XCUITestReport {
     
     inline def setTestCaseGroupsUndefined: Self = StObject.set(x, "testCaseGroups", js.undefined)
     
-    inline def setTestCaseGroupsVarargs(value: TestCaseGroup*): Self = StObject.set(x, "testCaseGroups", js.Array(value :_*))
+    inline def setTestCaseGroupsVarargs(value: TestCaseGroup*): Self = StObject.set(x, "testCaseGroups", js.Array(value*))
     
     inline def setTestId(value: Id): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
     

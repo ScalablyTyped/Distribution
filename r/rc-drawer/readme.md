@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-drawer
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 drawer component for react

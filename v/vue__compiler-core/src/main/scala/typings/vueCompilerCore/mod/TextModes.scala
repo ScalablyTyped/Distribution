@@ -1,20 +1,20 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`3`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`4`
+import typings.vueCompilerCore.vueCompilerCoreInts.`0`
+import typings.vueCompilerCore.vueCompilerCoreInts.`1`
+import typings.vueCompilerCore.vueCompilerCoreInts.`2`
+import typings.vueCompilerCore.vueCompilerCoreInts.`3`
+import typings.vueCompilerCore.vueCompilerCoreInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`3`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`4`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`0`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`1`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`2`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`3`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`4`
 */
 trait TextModes extends StObject
 object TextModes {

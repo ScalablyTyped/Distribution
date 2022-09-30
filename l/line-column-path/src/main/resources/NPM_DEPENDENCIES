@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "line-column-path" : "2.0.0"
+      "line-column-path" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "line-column-path" : "2.0.0"
+      "line-column-path" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

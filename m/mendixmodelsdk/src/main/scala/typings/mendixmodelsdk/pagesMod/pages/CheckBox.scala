@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/check-box relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.CheckBox")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.CheckBox")
 @js.native
-class CheckBox protected () extends AttributeWidget {
+open class CheckBox protected () extends AttributeWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,10 +35,16 @@ class CheckBox protected () extends AttributeWidget {
     */
   def labelPosition: LabelPosition = js.native
   def labelPosition_=(newValue: LabelPosition): Unit = js.native
+  
+  /**
+    * In version 9.8.0: introduced
+    */
+  def nativeRenderMode: NativeRenderMode = js.native
+  def nativeRenderMode_=(newValue: NativeRenderMode): Unit = js.native
 }
 object CheckBox {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CheckBox")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.CheckBox")
   @js.native
   val ^ : js.Any = js.native
   
@@ -612,13 +618,13 @@ object CheckBox {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): CheckBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[CheckBox]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CheckBox.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.CheckBox.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CheckBox.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.CheckBox.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

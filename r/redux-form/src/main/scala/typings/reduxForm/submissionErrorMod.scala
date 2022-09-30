@@ -10,22 +10,24 @@ object submissionErrorMod {
   
   @JSImport("redux-form/lib/SubmissionError", JSImport.Default)
   @js.native
-  class default[FormData, ErrorType] protected () extends SubmissionError[FormData, ErrorType] {
+  open class default[FormData, ErrorType] protected () extends SubmissionError[FormData, ErrorType] {
     def this(errors: FormErrors[FormData, ErrorType]) = this()
   }
   
   @JSImport("redux-form/lib/SubmissionError", "SubmissionError")
   @js.native
-  class SubmissionError[FormData, ErrorType] protected ()
+  open class SubmissionError[FormData, ErrorType] protected ()
     extends StObject
        with Error {
     def this(errors: FormErrors[FormData, ErrorType]) = this()
     
     var errors: FormErrors[FormData, ErrorType] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

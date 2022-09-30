@@ -1,5 +1,6 @@
 package typings.matrixAppserviceBridge
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +24,6 @@ object promiseutilMod {
     def reject(err: Any): Unit = js.native
     
     def resolve(value: T): Unit = js.native
-    def resolve(value: js.Thenable[T]): Unit = js.native
+    def resolve(value: PromiseLike[T]): Unit = js.native
   }
 }

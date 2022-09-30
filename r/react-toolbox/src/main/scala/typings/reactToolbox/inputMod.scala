@@ -1,19 +1,33 @@
 package typings.reactToolbox
 
+import typings.reactToolbox.inputInputMod.InputProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/input", JSImport.Namespace)
-@js.native
-object inputMod extends js.Object {
-  @js.native
-  class Input ()
-    extends typings.reactToolbox.inputInputMod.Input
+object inputMod {
   
+  @JSImport("react-toolbox/components/input", JSImport.Default)
   @js.native
-  class default ()
-    extends typings.reactToolbox.inputInputMod.Input
+  open class default protected ()
+    extends typings.reactToolbox.inputInputMod.Input {
+    def this(props: InputProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InputProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/input", "Input")
+  @js.native
+  open class Input protected ()
+    extends typings.reactToolbox.inputInputMod.Input {
+    def this(props: InputProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: InputProps, context: Any) = this()
+  }
 }
-

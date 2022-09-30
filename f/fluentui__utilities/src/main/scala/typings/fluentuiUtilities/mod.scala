@@ -23,106 +23,106 @@ import typings.fluentuiUtilities.customizerTypesMod.ICustomizerProps
 import typings.fluentuiUtilities.delayedRenderMod.IDelayedRenderProps
 import typings.fluentuiUtilities.fabricPerformanceMod.IPerfSummary
 import typings.fluentuiUtilities.fluentuiUtilitiesBooleans.`false`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`100`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`101`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`102`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`103`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`104`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`105`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`106`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`107`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`109`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`110`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`111`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`112`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`113`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`114`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`115`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`116`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`117`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`118`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`119`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`120`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`121`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`122`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`123`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`13`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`144`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`145`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`16`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`17`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`186`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`187`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`188`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`189`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`18`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`190`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`191`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`192`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`19`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`20`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`219`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`220`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`221`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`222`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`27`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`32`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`33`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`34`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`35`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`36`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`37`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`38`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`39`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`40`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`45`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`46`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`48`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`49`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`50`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`51`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`52`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`53`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`54`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`55`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`56`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`57`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`58`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`65`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`66`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`67`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`68`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`69`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`70`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`71`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`72`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`73`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`74`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`75`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`76`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`77`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`78`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`79`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`80`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`81`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`82`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`83`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`84`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`85`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`86`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`87`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`88`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`89`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`8`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`90`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`91`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`92`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`93`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`96`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`97`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`98`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`99`
-import typings.fluentuiUtilities.fluentuiUtilitiesNumbers.`9`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`100`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`101`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`102`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`103`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`104`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`105`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`106`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`107`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`109`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`110`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`111`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`112`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`113`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`114`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`115`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`116`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`117`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`118`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`119`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`120`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`121`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`122`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`123`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`13`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`144`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`145`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`16`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`17`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`186`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`187`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`188`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`189`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`18`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`190`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`191`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`192`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`19`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`20`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`219`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`220`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`221`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`222`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`27`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`32`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`33`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`34`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`35`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`36`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`37`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`38`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`39`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`40`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`45`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`46`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`48`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`49`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`50`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`51`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`52`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`53`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`54`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`55`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`56`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`57`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`58`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`65`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`66`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`67`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`68`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`69`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`70`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`71`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`72`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`73`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`74`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`75`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`76`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`77`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`78`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`79`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`80`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`81`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`82`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`83`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`84`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`85`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`86`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`87`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`88`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`89`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`8`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`90`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`91`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`92`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`93`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`96`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`97`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`98`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`99`
+import typings.fluentuiUtilities.fluentuiUtilitiesInts.`9`
 import typings.fluentuiUtilities.fluentuiUtilitiesStrings.`data-no-horizontal-wrap`
 import typings.fluentuiUtilities.fluentuiUtilitiesStrings.`data-no-vertical-wrap`
 import typings.fluentuiUtilities.fluentuiUtilitiesStrings.localStorage
@@ -1042,7 +1042,7 @@ object mod {
   @js.native
   val anchorProperties: Record[String, Double] = js.native
   
-  inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
+  inline def appendFunction(parent: Any, functions: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("appendFunction")(scala.List(parent.asInstanceOf[js.Any]).`++`(functions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
   
   inline def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -1054,7 +1054,7 @@ object mod {
   
   inline def assertNever(x: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(x.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  inline def assign(target: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def assign(target: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("@fluentui/utilities", "audioProperties")
   @js.native
@@ -1160,7 +1160,7 @@ object mod {
     */ typings.fluentuiUtilities.fluentuiUtilitiesStrings.extendComponent & TopLevel[T]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendComponent")(parent.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((scala.List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def find[T](array: js.Array[T], cb: js.Function2[/* item */ T, /* index */ Double, Boolean]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(array.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
   
@@ -1188,7 +1188,7 @@ object mod {
   @js.native
   val formProperties: Record[String, Double] = js.native
   
-  inline def format(s: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(s.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(s: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(s.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def getChildren(parent: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
   inline def getChildren(parent: HTMLElement, allowVirtualChildren: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(parent.asInstanceOf[js.Any], allowVirtualChildren.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
@@ -1423,7 +1423,7 @@ object mod {
   inline def mergeSettings(oldSettings: ISettings, newSettings: ISettings): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
   inline def mergeSettings(oldSettings: ISettings, newSettings: ISettingsFunction): ISettings = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeSettings")(oldSettings.asInstanceOf[js.Any], newSettings.asInstanceOf[js.Any])).asInstanceOf[ISettings]
   
-  inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def merge_false[T](target: Partial[T], args: (js.UndefOr[Partial[T] | Null | `false`])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def modalize(target: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("modalize")(target.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
@@ -1614,98 +1614,98 @@ object mod {
     pure: Boolean
   ): FunctionComponent[TComponentProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[TComponentProps]]
   
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: ICustomizableProps,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: Unit,
     pure: Boolean
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any], pure.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,
     customizable: ICustomizableProps
   ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any], baseStyles.asInstanceOf[js.Any], getProps.asInstanceOf[js.Any], customizable.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] & RefAttributes[TRef]]]
-  inline def styled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+  inline def styled_TComponentPropsTStylePropsTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) & RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: Unit,

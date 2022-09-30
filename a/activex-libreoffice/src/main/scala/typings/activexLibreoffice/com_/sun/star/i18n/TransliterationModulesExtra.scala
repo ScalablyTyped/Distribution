@@ -1,11 +1,11 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1073741824`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`200`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`201`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`202`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1073741824`
+import typings.activexLibreoffice.activexLibreofficeInts.`200`
+import typings.activexLibreoffice.activexLibreofficeInts.`201`
+import typings.activexLibreoffice.activexLibreofficeInts.`202`
+import typings.activexLibreoffice.activexLibreofficeInts.`2048`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TransliterationModulesExtra {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`1073741824`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`2048`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`200`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`201`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`202`
+    - typings.activexLibreoffice.activexLibreofficeInts.`0`
+    - typings.activexLibreoffice.activexLibreofficeInts.`1073741824`
+    - typings.activexLibreoffice.activexLibreofficeInts.`2048`
+    - typings.activexLibreoffice.activexLibreofficeInts.`200`
+    - typings.activexLibreoffice.activexLibreofficeInts.`201`
+    - typings.activexLibreoffice.activexLibreofficeInts.`202`
   */
   trait Constants extends StObject
   object Constants {

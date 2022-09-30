@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-online
 
-Typings are for version 9.0.0
+Typings are for version 10.0.0
 
 ## Library description:
 Check if the internet connection is up
@@ -10,10 +10,10 @@ Check if the internet connection is up
 | ------------------ | :-------------: |
 | Full name          | is-online |
 | Keywords           | browser, online, offline, is-online, network, connected, connectivity, internet, is, has, detect, hostname, hostnames, dns, socket, reachable, reachability, accessible, no, disconnected |
-| # releases         | 9 |
-| # dependents       | 150 |
-| # downloads        | 3302396 |
-| # stars            | 17 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 345553.3333333333 |
+| # stars            | 1105.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-online#readme)

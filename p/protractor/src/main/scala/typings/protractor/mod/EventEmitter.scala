@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @constructor
   */
-class EventEmitter ()
+open class EventEmitter ()
   extends typings.seleniumWebdriver.mod.EventEmitter

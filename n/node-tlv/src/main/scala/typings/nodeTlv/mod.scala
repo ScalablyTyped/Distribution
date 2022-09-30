@@ -3,8 +3,8 @@ package typings.nodeTlv
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.bufferMod.global.Buffer
 import typings.nodeTlv.anon.Clazz
-import typings.nodeTlv.nodeTlvNumbers.`0`
-import typings.nodeTlv.nodeTlvNumbers.`1`
+import typings.nodeTlv.nodeTlvInts.`0`
+import typings.nodeTlv.nodeTlvInts.`1`
 import typings.nodeTlv.nodeTlvStrings.ascii
 import typings.nodeTlv.nodeTlvStrings.buffer
 import typings.nodeTlv.nodeTlvStrings.hex

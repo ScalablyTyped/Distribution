@@ -112,6 +112,7 @@ import typings.std.File
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.ProgressEvent
+import typings.std.PromiseLike
 import typings.std.Record
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
@@ -120,7 +121,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object interfaceMod {
   
-  type Action = String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]])
+  type Action = String | (js.Function1[/* file */ RcFile, String | PromiseLike[String]])
   
   type BeforeUploadFileType = File | Blob | Boolean | String
   
@@ -791,7 +792,7 @@ object interfaceMod {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setActionFunction1(value: /* file */ RcFile => String | js.Thenable[String]): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setActionFunction1(value: /* file */ RcFile => String | PromiseLike[String]): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       

@@ -16,9 +16,9 @@ import typings.reduxForm.reduxFormMod.FormSubmitHandler
 import typings.reduxSagaRoutines.anon.FAILURE_
 import typings.reduxSagaRoutines.anon.FULFILL
 import typings.reduxSagaRoutines.anon.Failure
-import typings.reduxSagaRoutines.anon.RoutineActionCreatorFunct
 import typings.reduxSagaRoutines.anon.keyinRoutineStagesstring
 import typings.std.IterableIterator
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,31 +41,31 @@ object mod {
     routine: Routine[
       ActionFunction1[
         ReduxFormPayload[TFormData, TProps], 
-        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], js.Any])
+        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], Any])
       ], 
-      ActionCreatorFunction[js.Any, js.Any], 
-      ActionCreatorFunction[js.Any, js.Any], 
-      ActionCreatorFunction[js.Any, js.Any], 
-      ActionCreatorFunction[js.Any, js.Any]
+      ActionCreatorFunction[Any, Any], 
+      ActionCreatorFunction[Any, Any], 
+      ActionCreatorFunction[Any, Any], 
+      ActionCreatorFunction[Any, Any]
     ]
   ): FormSubmitHandler[TFormData, TProps, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindRoutineToReduxForm")(routine.asInstanceOf[js.Any]).asInstanceOf[FormSubmitHandler[TFormData, TProps, String]]
   inline def bindRoutineToReduxForm[TFormData, TProps](
     routine: Routine[
       ActionFunction1[
         ReduxFormPayload[TFormData, TProps], 
-        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], js.Any])
+        (Action[ReduxFormPayload[TFormData, TProps]]) | (ActionMeta[ReduxFormPayload[TFormData, TProps], Any])
       ], 
-      ActionCreatorFunction[js.Any, js.Any], 
-      ActionCreatorFunction[js.Any, js.Any], 
-      ActionCreatorFunction[js.Any, js.Any], 
-      ActionCreatorFunction[js.Any, js.Any]
+      ActionCreatorFunction[Any, Any], 
+      ActionCreatorFunction[Any, Any], 
+      ActionCreatorFunction[Any, Any], 
+      ActionCreatorFunction[Any, Any]
     ],
     noSuccessPayload: Boolean
   ): FormSubmitHandler[TFormData, TProps, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindRoutineToReduxForm")(routine.asInstanceOf[js.Any], noSuccessPayload.asInstanceOf[js.Any])).asInstanceOf[FormSubmitHandler[TFormData, TProps, String]]
   
   inline def createRoutine[Payload](typePrefix: String): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any]).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Payload], Action[js.UndefOr[Payload]]]]]
-  inline def createRoutine[Meta](typePrefix: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
-  inline def createRoutine[Meta](typePrefix: String, payloadCreator: Unit, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[js.Any], ActionMeta[js.Any, Meta]]]]
+  inline def createRoutine[Meta](typePrefix: String, payloadCreator: Null, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Any], ActionMeta[Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Any], ActionMeta[Any, Meta]]]]
+  inline def createRoutine[Meta](typePrefix: String, payloadCreator: Unit, metaCreator: ActionFunctionAny[Meta]): UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Any], ActionMeta[Any, Meta]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any], metaCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[js.Function1[/* payload */ js.UndefOr[Any], ActionMeta[Any, Meta]]]]
   inline def createRoutine[Payload](typePrefix: String, payloadCreator: ActionFunction0[Payload]): UnifiedRoutine[ActionFunction0[Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction0[Action[Payload]]]]
   inline def createRoutine[Payload, Arg1](typePrefix: String, payloadCreator: ActionFunction1[Arg1, Payload]): UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutine")(typePrefix.asInstanceOf[js.Any], payloadCreator.asInstanceOf[js.Any])).asInstanceOf[UnifiedRoutine[ActionFunction1[Arg1, Action[Payload]]]]
   inline def createRoutine[Payload, Meta](
@@ -494,15 +494,32 @@ object mod {
     ]
   ]]
   
-  inline def promisifyRoutine(routine: RoutineActionCreatorFunct): PromiseCreator[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyRoutine")(routine.asInstanceOf[js.Any]).asInstanceOf[PromiseCreator[js.Object]]
+  inline def promisifyRoutine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator](
+    routine: Routine[
+      TTriggerActionCreator, 
+      TRequestActionCreator, 
+      // tslint:disable-line: no-unnecessary-generics
+  TSuccessActionCreator, 
+      // tslint:disable-line: no-unnecessary-generics
+  TFailureActionCreator, 
+      // tslint:disable-line: no-unnecessary-generics
+  TFulfillActionCreator
+    ]
+  ): PromiseCreator[ResolvePayloadByActionCreator[TTriggerActionCreator]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyRoutine")(routine.asInstanceOf[js.Any]).asInstanceOf[PromiseCreator[ResolvePayloadByActionCreator[TTriggerActionCreator]]]
   
-  inline def routinePromiseWatcherSaga(): IterableIterator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("routinePromiseWatcherSaga")().asInstanceOf[IterableIterator[js.Any]]
+  inline def routinePromiseWatcherSaga(): IterableIterator[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("routinePromiseWatcherSaga")().asInstanceOf[IterableIterator[Any]]
   
   type ActionCreatorFunction[Payload, Meta] = ActionFunctionAny[Action[Payload] | (ActionMeta[Payload, Meta])]
   
-  type BoundPromiseCreator[TPayload] = js.Function1[/* payload */ TPayload, js.Thenable[js.Any]]
+  type BoundPromiseCreator[TPayload] = js.Function1[js.UndefOr[/* payload */ TPayload], PromiseLike[Any]]
   
-  type PromiseCreator[TPayload] = js.Function2[/* payload */ TPayload, /* dispatch */ Dispatch[AnyAction], js.Thenable[js.Any]]
+  type PayloadTypeOrUndefinable[TPayload] = js.UndefOr[TPayload | js.Object]
+  
+  type PromiseCreator[TPayload] = js.Function2[
+    /* payload */ PayloadTypeOrUndefinable[TPayload], 
+    /* dispatch */ Dispatch[AnyAction], 
+    PromiseLike[Any]
+  ]
   
   trait ReduxFormPayload[TFormData, TProps] extends StObject {
     
@@ -525,7 +542,7 @@ object mod {
     }
   }
   
-  type ResolveActionCreatorByMeta[TMetaCreator, TMeta, TArg1, TArg2, TArg3, TArg4] = (ActionFunctionAny[ActionMeta[js.Any, TMeta]]) | (ActionFunction4[TArg1, TArg2, TArg3, TArg4, ActionMeta[js.Any, TMeta]]) | (ActionFunction3[TArg1, TArg2, TArg3, ActionMeta[js.Any, TMeta]]) | (ActionFunction2[TArg1, TArg2, ActionMeta[js.Any, TMeta]]) | (ActionFunction1[TArg1, ActionMeta[js.Any, TMeta]]) | (ActionFunction0[ActionMeta[js.Any, TMeta]])
+  type ResolveActionCreatorByMeta[TMetaCreator, TMeta, TArg1, TArg2, TArg3, TArg4] = (ActionFunctionAny[ActionMeta[Any, TMeta]]) | (ActionFunction4[TArg1, TArg2, TArg3, TArg4, ActionMeta[Any, TMeta]]) | (ActionFunction3[TArg1, TArg2, TArg3, ActionMeta[Any, TMeta]]) | (ActionFunction2[TArg1, TArg2, ActionMeta[Any, TMeta]]) | (ActionFunction1[TArg1, ActionMeta[Any, TMeta]]) | (ActionFunction0[ActionMeta[Any, TMeta]])
   
   type ResolveActionCreatorByPayload[TPayloadCreator, TPayload, TArg1, TArg2, TArg3, TArg4] = ActionFunctionAny[Action[TPayload]] | (ActionFunction4[TArg1, TArg2, TArg3, TArg4, Action[TPayload]]) | (ActionFunction3[TArg1, TArg2, TArg3, Action[TPayload]]) | (ActionFunction2[TArg1, TArg2, Action[TPayload]]) | (ActionFunction1[TArg1, Action[TPayload]]) | ActionFunction0[Action[TPayload]]
   
@@ -540,6 +557,8 @@ object mod {
   type ResolveFunctionArg4Type[TFunction] = Unit
   
   type ResolveFunctionReturnType[TFunction] = Unit
+  
+  type ResolvePayloadByActionCreator[TActionCreator] = Unit
   
   type Routine[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] = TTriggerActionCreator & keyinRoutineStagesstring & (Failure[
     TTriggerActionCreator, 

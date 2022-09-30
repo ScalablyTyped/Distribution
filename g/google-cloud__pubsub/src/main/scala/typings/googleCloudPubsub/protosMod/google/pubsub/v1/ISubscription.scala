@@ -2,6 +2,7 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
+import typings.googleCloudPubsub.protosMod.google.pubsub.v1.Subscription.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,17 @@ trait ISubscription extends StObject {
   /** Subscription ackDeadlineSeconds */
   var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
   
+  /** Subscription bigqueryConfig */
+  var bigqueryConfig: js.UndefOr[IBigQueryConfig | Null] = js.undefined
+  
   /** Subscription deadLetterPolicy */
   var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.undefined
   
   /** Subscription detached */
   var detached: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /** Subscription enableExactlyOnceDelivery */
+  var enableExactlyOnceDelivery: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Subscription enableMessageOrdering */
   var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
@@ -45,8 +52,16 @@ trait ISubscription extends StObject {
   /** Subscription retryPolicy */
   var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.undefined
   
+  /** Subscription state */
+  var state: js.UndefOr[
+    State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.pubsub.v1.Subscription.State * / any */ String) | Null
+  ] = js.undefined
+  
   /** Subscription topic */
   var topic: js.UndefOr[String | Null] = js.undefined
+  
+  /** Subscription topicMessageRetentionDuration */
+  var topicMessageRetentionDuration: js.UndefOr[IDuration | Null] = js.undefined
 }
 object ISubscription {
   
@@ -63,6 +78,12 @@ object ISubscription {
     
     inline def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
     
+    inline def setBigqueryConfig(value: IBigQueryConfig): Self = StObject.set(x, "bigqueryConfig", value.asInstanceOf[js.Any])
+    
+    inline def setBigqueryConfigNull: Self = StObject.set(x, "bigqueryConfig", null)
+    
+    inline def setBigqueryConfigUndefined: Self = StObject.set(x, "bigqueryConfig", js.undefined)
+    
     inline def setDeadLetterPolicy(value: IDeadLetterPolicy): Self = StObject.set(x, "deadLetterPolicy", value.asInstanceOf[js.Any])
     
     inline def setDeadLetterPolicyNull: Self = StObject.set(x, "deadLetterPolicy", null)
@@ -74,6 +95,12 @@ object ISubscription {
     inline def setDetachedNull: Self = StObject.set(x, "detached", null)
     
     inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    
+    inline def setEnableExactlyOnceDelivery(value: Boolean): Self = StObject.set(x, "enableExactlyOnceDelivery", value.asInstanceOf[js.Any])
+    
+    inline def setEnableExactlyOnceDeliveryNull: Self = StObject.set(x, "enableExactlyOnceDelivery", null)
+    
+    inline def setEnableExactlyOnceDeliveryUndefined: Self = StObject.set(x, "enableExactlyOnceDelivery", js.undefined)
     
     inline def setEnableMessageOrdering(value: Boolean): Self = StObject.set(x, "enableMessageOrdering", value.asInstanceOf[js.Any])
     
@@ -129,7 +156,21 @@ object ISubscription {
     
     inline def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
     
+    inline def setState(
+      value: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.pubsub.v1.Subscription.State * / any */ String)
+    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    inline def setTopicMessageRetentionDuration(value: IDuration): Self = StObject.set(x, "topicMessageRetentionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setTopicMessageRetentionDurationNull: Self = StObject.set(x, "topicMessageRetentionDuration", null)
+    
+    inline def setTopicMessageRetentionDurationUndefined: Self = StObject.set(x, "topicMessageRetentionDuration", js.undefined)
     
     inline def setTopicNull: Self = StObject.set(x, "topic", null)
     

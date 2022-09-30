@@ -180,32 +180,32 @@ object RFC3164 {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.syslogPro.syslogProNumbers.`0`
-    - typings.syslogPro.syslogProNumbers.`1`
-    - typings.syslogPro.syslogProNumbers.`2`
-    - typings.syslogPro.syslogProNumbers.`3`
-    - typings.syslogPro.syslogProNumbers.`4`
-    - typings.syslogPro.syslogProNumbers.`5`
-    - typings.syslogPro.syslogProNumbers.`6`
-    - typings.syslogPro.syslogProNumbers.`7`
+    - typings.syslogPro.syslogProInts.`0`
+    - typings.syslogPro.syslogProInts.`1`
+    - typings.syslogPro.syslogProInts.`2`
+    - typings.syslogPro.syslogProInts.`3`
+    - typings.syslogPro.syslogProInts.`4`
+    - typings.syslogPro.syslogProInts.`5`
+    - typings.syslogPro.syslogProInts.`6`
+    - typings.syslogPro.syslogProInts.`7`
   */
   trait Severity extends StObject
   object Severity {
     
-    inline def `0`: typings.syslogPro.syslogProNumbers.`0` = 0.asInstanceOf[typings.syslogPro.syslogProNumbers.`0`]
+    inline def `0`: typings.syslogPro.syslogProInts.`0` = 0.asInstanceOf[typings.syslogPro.syslogProInts.`0`]
     
-    inline def `1`: typings.syslogPro.syslogProNumbers.`1` = 1.asInstanceOf[typings.syslogPro.syslogProNumbers.`1`]
+    inline def `1`: typings.syslogPro.syslogProInts.`1` = 1.asInstanceOf[typings.syslogPro.syslogProInts.`1`]
     
-    inline def `2`: typings.syslogPro.syslogProNumbers.`2` = 2.asInstanceOf[typings.syslogPro.syslogProNumbers.`2`]
+    inline def `2`: typings.syslogPro.syslogProInts.`2` = 2.asInstanceOf[typings.syslogPro.syslogProInts.`2`]
     
-    inline def `3`: typings.syslogPro.syslogProNumbers.`3` = 3.asInstanceOf[typings.syslogPro.syslogProNumbers.`3`]
+    inline def `3`: typings.syslogPro.syslogProInts.`3` = 3.asInstanceOf[typings.syslogPro.syslogProInts.`3`]
     
-    inline def `4`: typings.syslogPro.syslogProNumbers.`4` = 4.asInstanceOf[typings.syslogPro.syslogProNumbers.`4`]
+    inline def `4`: typings.syslogPro.syslogProInts.`4` = 4.asInstanceOf[typings.syslogPro.syslogProInts.`4`]
     
-    inline def `5`: typings.syslogPro.syslogProNumbers.`5` = 5.asInstanceOf[typings.syslogPro.syslogProNumbers.`5`]
+    inline def `5`: typings.syslogPro.syslogProInts.`5` = 5.asInstanceOf[typings.syslogPro.syslogProInts.`5`]
     
-    inline def `6`: typings.syslogPro.syslogProNumbers.`6` = 6.asInstanceOf[typings.syslogPro.syslogProNumbers.`6`]
+    inline def `6`: typings.syslogPro.syslogProInts.`6` = 6.asInstanceOf[typings.syslogPro.syslogProInts.`6`]
     
-    inline def `7`: typings.syslogPro.syslogProNumbers.`7` = 7.asInstanceOf[typings.syslogPro.syslogProNumbers.`7`]
+    inline def `7`: typings.syslogPro.syslogProInts.`7` = 7.asInstanceOf[typings.syslogPro.syslogProInts.`7`]
   }
 }

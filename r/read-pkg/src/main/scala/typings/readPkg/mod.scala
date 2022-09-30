@@ -1,47 +1,25 @@
 package typings.readPkg
 
+import typings.normalizePackageData.mod.Package
 import typings.readPkg.readPkgBooleans.`true`
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	@returns The parsed JSON.
-  	@example
-  	```
-  	import readPkg = require('read-pkg');
-  	(async () => {
-  		console.log(await readPkg());
-  		//=> {name: 'read-pkg', …}
-  		console.log(await readPkg({cwd: 'some-other-directory'});
-  		//=> {name: 'unicorn', …}
-  	})();
-  	```
-  	*/
-  inline def apply(): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[NormalizedPackageJson]]
-  inline def apply(options: NormalizeOptions): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NormalizedPackageJson]]
-  inline def apply(options: Options): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
-  
   @JSImport("read-pkg", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	@returns The parsed JSON.
-  	@example
-  	```
-  	import readPkg = require('read-pkg');
-  	console.log(readPkg.sync());
-  	//=> {name: 'read-pkg', …}
-  	console.log(readPkg.sync({cwd: 'some-other-directory'});
-  	//=> {name: 'unicorn', …}
-  	```
-  	*/
-  inline def sync(): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[NormalizedPackageJson]
-  inline def sync(options: NormalizeOptions): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizedPackageJson]
-  inline def sync(options: Options): PackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[PackageJson]
+  inline def readPackage(): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackage")().asInstanceOf[js.Promise[NormalizedPackageJson]]
+  inline def readPackage(options: NormalizeOptions): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackage")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NormalizedPackageJson]]
+  inline def readPackage(options: Options): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackage")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
+  
+  inline def readPackageSync(): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageSync")().asInstanceOf[NormalizedPackageJson]
+  inline def readPackageSync(options: NormalizeOptions): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageSync")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizedPackageJson]
+  inline def readPackageSync(options: Options): PackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageSync")(options.asInstanceOf[js.Any]).asInstanceOf[PackageJson]
   
   trait NormalizeOptions
     extends StObject
@@ -65,44 +43,20 @@ object mod {
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - org.scalablytyped.runtime.StObject because Already inherited
-  - org.scalablytyped.runtime.StringDictionary because Already inherited
-  - typings.normalizePackageData.mod.Package because var conflicts: author, bin, bugs, bundleDependencies, contributors, dependencies, description, devDependencies, engines, files, homepage, keywords, license, maintainers, man, name, optionalDependencies, repository, scripts, version. Inlined _id, readme */ trait NormalizedPackageJson
-    extends StObject
-       with typings.typeFest.packageJsonMod.PackageJson {
-    
-    var _id: String
-    
-    var readme: String
-  }
-  object NormalizedPackageJson {
-    
-    inline def apply(_id: String, readme: String): NormalizedPackageJson = {
-      val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], readme = readme.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NormalizedPackageJson]
-    }
-    
-    extension [Self <: NormalizedPackageJson](x: Self) {
-      
-      inline def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
-      
-      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
-    }
-  }
+  type NormalizedPackageJson = PackageJson & Package
   
   trait Options extends StObject {
     
     /**
-    		Current working directory.
-    		@default process.cwd()
-    		*/
-    val cwd: js.UndefOr[String] = js.undefined
+    	Current working directory.
+    	@default process.cwd()
+    	*/
+    val cwd: js.UndefOr[URL | String] = js.undefined
     
     /**
-    		[Normalize](https://github.com/npm/normalize-package-data#what-normalization-currently-entails) the package data.
-    		@default true
-    		*/
+    	[Normalize](https://github.com/npm/normalize-package-data#what-normalization-currently-entails) the package data.
+    	@default true
+    	*/
     val normalize: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -114,7 +68,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       

@@ -24,8 +24,8 @@ import typings.vegaEmbed.anon.Svg
 import typings.vegaEmbed.anon.TypeofexpressionInterpret
 import typings.vegaEmbed.vegaEmbedBooleans.`false`
 import typings.vegaEmbed.vegaEmbedBooleans.`true`
-import typings.vegaEmbed.vegaEmbedNumbers.`0`
-import typings.vegaEmbed.vegaEmbedNumbers.`1`
+import typings.vegaEmbed.vegaEmbedInts.`0`
+import typings.vegaEmbed.vegaEmbedInts.`1`
 import typings.vegaEmbed.vegaEmbedStrings.DEBUG
 import typings.vegaEmbed.vegaEmbedStrings.ERROR
 import typings.vegaEmbed.vegaEmbedStrings.INFO
@@ -274,7 +274,7 @@ object mod {
     inline def expressionFunction(name: String, fn: Any, visitor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def expressionFunction(name: String, fn: Unit, visitor: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionFunction")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def extend[T](target: T, source: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(target.asInstanceOf[js.Any]).`++`(source.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+    inline def extend[T](target: T, source: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(target.asInstanceOf[js.Any]).`++`(source.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
     
     inline def extent(array: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     inline def extent(array: js.Array[Double], accessor: AccessorFn[Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(array.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
@@ -593,7 +593,7 @@ object mod {
     
     inline def logicalExpr[T](op: LogicalComposition[T], cb: js.Function1[/* repeated */ Any, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpr")(op.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def mergeDeep[T](dest: T, src: DeepPartial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(List(dest.asInstanceOf[js.Any]).`++`(src.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+    inline def mergeDeep[T](dest: T, src: DeepPartial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(scala.List(dest.asInstanceOf[js.Any]).`++`(src.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
     
     inline def never(message: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("never")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
     

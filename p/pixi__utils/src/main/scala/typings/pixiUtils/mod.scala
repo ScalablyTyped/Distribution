@@ -10,9 +10,9 @@ import typings.pixiUtils.anon.Data
 import typings.pixiUtils.anon.Length
 import typings.pixiUtils.pixiUtilsBooleans.`false`
 import typings.pixiUtils.pixiUtilsBooleans.`true`
-import typings.pixiUtils.pixiUtilsNumbers.`-1`
-import typings.pixiUtils.pixiUtilsNumbers.`0`
-import typings.pixiUtils.pixiUtilsNumbers.`1`
+import typings.pixiUtils.pixiUtilsInts.`-1`
+import typings.pixiUtils.pixiUtilsInts.`0`
+import typings.pixiUtils.pixiUtilsInts.`1`
 import typings.pixiUtils.pixiUtilsStrings.Float32Array
 import typings.pixiUtils.pixiUtilsStrings.Int32Array
 import typings.pixiUtils.pixiUtilsStrings.Uint16Array
@@ -111,10 +111,11 @@ object mod {
     val EventEmitter: EventEmitterStatic = js.native
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-    @JSImport("@pixi/utils", "EventEmitter.EventEmitterCls")
+    @JSImport("@pixi/utils", "EventEmitter.EventEmitter")
     @js.native
     open class EventEmitterCls[EventTypes /* <: ValidEventTypes */, Context] ()
-      extends typings.eventemitter3.mod.EventEmitterCls[EventTypes, Context]
+      extends StObject
+         with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
     
     /* static member */
     @JSImport("@pixi/utils", "EventEmitter.prefixed")

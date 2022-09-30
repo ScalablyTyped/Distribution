@@ -18,38 +18,38 @@ object elementMod {
   
   @JSImport("protractor/built/element", "ElementArrayFinder")
   @js.native
-  class ElementArrayFinder protected () extends WebdriverWebElement {
+  open class ElementArrayFinder protected () extends WebdriverWebElement {
     def this(browser_ : ProtractorBrowser) = this()
     def this(browser_ : ProtractorBrowser, getWebElements: js.Function0[js.Promise[js.Array[WebElement]]]) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
-      locator_ : js.Any
+      locator_ : Any
     ) = this()
-    def this(browser_ : ProtractorBrowser, getWebElements: Unit, locator_ : js.Any) = this()
+    def this(browser_ : ProtractorBrowser, getWebElements: Unit, locator_ : Any) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
-      locator_ : js.Any,
-      actionResults_ : js.Promise[js.Any]
+      locator_ : Any,
+      actionResults_ : js.Promise[Any]
     ) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
       locator_ : Unit,
-      actionResults_ : js.Promise[js.Any]
+      actionResults_ : js.Promise[Any]
     ) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: Unit,
-      locator_ : js.Any,
-      actionResults_ : js.Promise[js.Any]
+      locator_ : Any,
+      actionResults_ : js.Promise[Any]
     ) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: Unit,
       locator_ : Unit,
-      actionResults_ : js.Promise[js.Any]
+      actionResults_ : js.Promise[Any]
     ) = this()
     
     /**
@@ -84,7 +84,7 @@ object elementMod {
     @JSName("$$")
     def DollarDollar(selector: String): ElementArrayFinder = js.native
     
-    var actionResults_ : js.Promise[js.Any] = js.native
+    var actionResults_ : js.Promise[Any] = js.native
     
     /**
       * Calls to ElementArrayFinder may be chained to find an array of elements
@@ -157,7 +157,7 @@ object elementMod {
       * @returns {ElementArrayFinder}
       * @private
       */
-    /* private */ def applyAction_(actionFn: js.Any): js.Any = js.native
+    /* private */ def applyAction_(actionFn: Any): Any = js.native
     
     /**
       * Represents the ElementArrayFinder as an array of ElementFinders.
@@ -230,12 +230,8 @@ object elementMod {
       *     resolve to null.
       */
     def each(
-      fn: js.Function2[
-          /* elementFinder */ js.UndefOr[ElementFinder], 
-          /* index */ js.UndefOr[Double], 
-          js.Any
-        ]
-    ): js.Promise[js.Any] = js.native
+      fn: js.Function2[/* elementFinder */ js.UndefOr[ElementFinder], /* index */ js.UndefOr[Double], Any]
+    ): js.Promise[Any] = js.native
     
     /**
       * Evaluates the input as if it were on the scope of the current underlying
@@ -420,7 +416,7 @@ object elementMod {
       */
     def locator(): Locator = js.native
     
-    var locator_ : js.Any = js.native
+    var locator_ : Any = js.native
     
     /**
       * Apply a map function to each element within the ElementArrayFinder. The
@@ -473,7 +469,7 @@ object elementMod {
       mapFn: js.Function2[
           /* elementFinder */ js.UndefOr[ElementFinder], 
           /* index */ js.UndefOr[Double], 
-          T | js.Any
+          T | Any
         ]
     ): js.Promise[js.Array[T]] = js.native
     
@@ -519,7 +515,7 @@ object elementMod {
       * @returns {!webdriver.promise.Promise} A promise that resolves to the final
       *     value of the accumulator.
       */
-    def reduce(reduceFn: js.Function, initialValue: js.Any): js.Promise[js.Any] = js.native
+    def reduce(reduceFn: js.Function, initialValue: Any): js.Promise[Any] = js.native
     
     /**
       * Retrieve the elements represented by the ElementArrayFinder. The input
@@ -554,18 +550,18 @@ object elementMod {
     def `then`[T](): js.Promise[T] = js.native
     def `then`[T](
       fn: js.Function1[
-          /* value */ js.Array[js.Any | ElementFinder], 
-          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ js.Any)
+          /* value */ js.Array[Any | ElementFinder], 
+          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ Any)
         ]
     ): js.Promise[T] = js.native
     def `then`[T](
       fn: js.Function1[
-          /* value */ js.Array[js.Any | ElementFinder], 
-          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ js.Any)
+          /* value */ js.Array[Any | ElementFinder], 
+          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ Any)
         ],
-      errorFn: js.Function1[/* error */ js.Any, js.Any]
+      errorFn: js.Function1[/* error */ Any, Any]
     ): js.Promise[T] = js.native
-    def `then`[T](fn: Unit, errorFn: js.Function1[/* error */ js.Any, js.Any]): js.Promise[T] = js.native
+    def `then`[T](fn: Unit, errorFn: js.Function1[/* error */ Any, Any]): js.Promise[T] = js.native
     
     /**
       * Returns an ElementFinder representation of ElementArrayFinder. It ensures
@@ -580,7 +576,7 @@ object elementMod {
   
   @JSImport("protractor/built/element", "ElementFinder")
   @js.native
-  class ElementFinder protected () extends WebdriverWebElement {
+  open class ElementFinder protected () extends WebdriverWebElement {
     def this(browser_ : ProtractorBrowser, elementArrayFinder: ElementArrayFinder) = this()
     
     /**
@@ -737,8 +733,8 @@ object elementMod {
       * @returns {!webdriver.promise.Promise.<boolean>} A promise that will be
       *     resolved to whether the two WebElements are equal.
       */
-    def equals(element: ElementFinder): js.Promise[js.Any] = js.native
-    def equals(element: WebElement): js.Promise[js.Any] = js.native
+    def equals(element: ElementFinder): js.Promise[Any] = js.native
+    def equals(element: WebElement): js.Promise[Any] = js.native
     
     /**
       * Evaluates the input as if it were on the scope of the current element.
@@ -819,15 +815,15 @@ object elementMod {
       *
       * @returns {webdriver.Locator}
       */
-    def locator(): js.Any = js.native
+    def locator(): Any = js.native
     
     var parentElementArrayFinder: ElementArrayFinder = js.native
     
     var `then`: js.UndefOr[
         js.Function2[
-          /* fn */ js.Function1[/* value */ js.Any, js.Any], 
-          /* errorFn */ js.UndefOr[js.Function1[/* error */ js.Any, js.Any]], 
-          js.Promise[js.Any]
+          /* fn */ js.Function1[/* value */ Any, Any], 
+          /* errorFn */ js.UndefOr[js.Function1[/* error */ Any, Any]], 
+          js.Promise[Any]
         ]
       ] = js.native
   }
@@ -854,7 +850,7 @@ object elementMod {
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
   - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("protractor/built/element", "WebdriverWebElement")
   @js.native
-  class WebdriverWebElement () extends WebElement
+  open class WebdriverWebElement () extends WebElement
   
   @JSImport("protractor/built/element", "build$")
   @js.native

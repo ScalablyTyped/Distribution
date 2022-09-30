@@ -6,12 +6,15 @@ import typings.grommet.grommetStrings.cover
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.repeat
 import typings.grommet.grommetStrings.strong
+import typings.grommet.grommetStrings.text_
 import typings.grommet.grommetStrings.weak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BackgroundObject extends StObject {
+  
+  var clip: js.UndefOr[text_ | String] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
@@ -27,6 +30,8 @@ trait BackgroundObject extends StObject {
   
   var repeat: js.UndefOr[`no-repeat` | typings.grommet.grommetStrings.repeat | String] = js.undefined
   
+  var rotate: js.UndefOr[Double | String] = js.undefined
+  
   var size: js.UndefOr[cover | contain | String] = js.undefined
 }
 object BackgroundObject {
@@ -37,6 +42,10 @@ object BackgroundObject {
   }
   
   extension [Self <: BackgroundObject](x: Self) {
+    
+    inline def setClip(value: text_ | String): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -65,6 +74,10 @@ object BackgroundObject {
     inline def setRepeat(value: `no-repeat` | repeat | String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    
+    inline def setRotate(value: Double | String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     inline def setSize(value: cover | contain | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

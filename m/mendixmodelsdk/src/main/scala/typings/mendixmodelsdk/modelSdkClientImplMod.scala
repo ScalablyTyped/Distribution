@@ -1,6 +1,8 @@
 package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.abstractModelMod.IExportMpkCallback
+import typings.mendixmodelsdk.abstractModelMod.IExportMpkResponse
 import typings.mendixmodelsdk.anon.Instantiable
 import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
@@ -10,8 +12,6 @@ import typings.mendixmodelsdk.configurationMod.configuration.ICreateWorkingCopyP
 import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.transportInterfacesMod.ICommitToTeamServerOptions
-import typings.mendixmodelsdk.transportInterfacesMod.IDeployJobStatus
-import typings.mendixmodelsdk.transportInterfacesMod.IEnvironmentStatus
 import typings.mendixmodelsdk.transportInterfacesMod.ILockWorkingCopyOptions
 import typings.mendixmodelsdk.transportInterfacesMod.ILockWorkingCopyResponse
 import typings.mendixmodelsdk.transportInterfacesMod.IWorkingCopy
@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modelSdkClientImplMod {
   
-  @JSImport("mendixmodelsdk/dist/ModelSdkClientImpl", "ModelSdkClientImpl")
+  @JSImport("mendixmodelsdk/src/ModelSdkClientImpl", "ModelSdkClientImpl")
   @js.native
-  class ModelSdkClientImpl[IT /* <: IAbstractModel */, CT /* <: AbstractModel & IT */] protected () extends StObject {
+  open class ModelSdkClientImpl[IT /* <: IAbstractModel */, CT /* <: AbstractModel & IT */] protected () extends StObject {
     def this(connectionConfig: ISdkConfig, modelConstructor: Instantiable[CT, IT]) = this()
     
     def checkAccess(workingCopyId: String, memberOpenId: String): js.Promise[Boolean] = js.native
@@ -38,7 +38,7 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    /* private */ var client: js.Any = js.native
+    /* private */ var client: Any = js.native
     
     def commitToTeamServer(workingCopyId: String, options: ICommitToTeamServerOptions): js.Promise[Unit] = js.native
     /**
@@ -51,7 +51,7 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    /* private */ var connectionConfig: js.Any = js.native
+    /* private */ var connectionConfig: Any = js.native
     
     def createAndOpenWorkingCopy(workingCopyParameters: ICreateWorkingCopyParameters): js.Promise[IT] = js.native
     /**
@@ -107,26 +107,14 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    def exportMpk(workingCopyId: String, outFilePath: String): js.Promise[Unit] = js.native
+    def exportMpk(workingCopyId: String, outFilePath: String): js.Promise[IExportMpkResponse] = js.native
     /**
       * Exports this working copy as MPK.
       */
-    def exportMpk(workingCopyId: String, outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
-    
-    def getAppEnvironmentStatus(workingCopyId: String): js.Promise[IEnvironmentStatus] = js.native
-    def getAppEnvironmentStatus(workingCopyId: String, callback: ICallback[IEnvironmentStatus], errorCallback: IErrorCallback): Unit = js.native
-    
-    def getAppEnvironmentStatusV2(workingCopyId: String): js.Promise[IEnvironmentStatus] = js.native
-    def getAppEnvironmentStatusV2(workingCopyId: String, callback: ICallback[IEnvironmentStatus], errorCallback: IErrorCallback): Unit = js.native
-    
-    def getAppUpdateStatus(workingCopyId: String, jobId: String): js.Promise[IDeployJobStatus] = js.native
-    /**
-      * Start deploy this working copy and create new job.
-      */
-    def getAppUpdateStatus(
+    def exportMpk(
       workingCopyId: String,
-      jobId: String,
-      callback: ICallback[IDeployJobStatus],
+      outFilePath: String,
+      callback: IExportMpkCallback,
       errorCallback: IErrorCallback
     ): Unit = js.native
     
@@ -188,7 +176,7 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    /* private */ var modelConstructor: js.Any = js.native
+    /* private */ var modelConstructor: Any = js.native
     
     def openWorkingCopy(workingCopyId: String): js.Promise[IT] = js.native
     /**
@@ -224,11 +212,16 @@ object modelSdkClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    def startAppUpdate(workingCopyId: String): js.Promise[IDeployJobStatus] = js.native
+    def setWorkingCopyMembers(workingCopyId: String, memberOpenIds: js.Array[String]): js.Promise[Unit] = js.native
     /**
-      * Start deploy this working copy and create new job.
+      * Sets the members specified by their OpenID on the specified working copy.
       */
-    def startAppUpdate(workingCopyId: String, callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
+    def setWorkingCopyMembers(
+      workingCopyId: String,
+      memberOpenIds: js.Array[String],
+      callback: IVoidCallback,
+      errorCallback: IErrorCallback
+    ): Unit = js.native
     
     def unlockWorkingCopy(workingCopyId: String): js.Promise[Unit] = js.native
     /**

@@ -182,6 +182,17 @@ object mod {
     minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
   ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parcelCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
   
+  inline def swcMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: Unit,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("swcMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def swcMinify(
+    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("swcMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  
   type Asset = typings.webpack.mod.Asset
   
   trait BasePluginOptions extends StObject {

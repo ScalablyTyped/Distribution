@@ -1,58 +1,43 @@
 package typings.pixiJs.mod
 
+import typings.pixiCore.mod.IAutoDetectOptions
+import typings.pixiSpritesheet.mod.ISpritesheetData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Utility class for maintaining reference to a collection
-  * of Textures on a single Spritesheet.
-  *
-  * To access a sprite sheet from your code pass its JSON data file to Pixi's loader:
-  *
-  * ```js
-  * PIXI.Loader.shared.add("images/spritesheet.json").load(setup);
-  *
-  * function setup() {
-  *   let sheet = PIXI.Loader.shared.resources["images/spritesheet.json"].spritesheet;
-  *   ...
-  * }
-  * ```
-  * With the `sheet.textures` you can create Sprite objects,`sheet.animations` can be used to create an AnimatedSprite.
-  *
-  * Sprite sheets can be packed using tools like {@link https://codeandweb.com/texturepacker|TexturePacker},
-  * {@link https://renderhjs.net/shoebox/|Shoebox} or {@link https://github.com/krzysztof-o/spritesheet.js|Spritesheet.js}.
-  * Default anchor points (see {@link PIXI.Texture#defaultAnchor}) and grouping of animation sprites are currently only
-  * supported by TexturePacker.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Spritesheet")
 @js.native
-class Spritesheet protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.Spritesheet {
-  def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any) = this()
-  def this(baseTexture: typings.pixiJs.PIXI.Texture, data: js.Any) = this()
-  def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any, resolutionFilename: String) = this()
-  def this(baseTexture: typings.pixiJs.PIXI.Texture, data: js.Any, resolutionFilename: String) = this()
+open class Spritesheet protected ()
+  extends typings.pixiSpritesheet.mod.Spritesheet {
+  /**
+    * @param texture - Reference to the source BaseTexture object.
+    * @param {object} data - Spritesheet image data.
+    * @param resolutionFilename - The filename to consider when determining
+    *        the resolution of the spritesheet. If not provided, the imageUrl will
+    *        be used on the BaseTexture.
+    */
+  def this(
+    texture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions],
+    data: ISpritesheetData
+  ) = this()
+  def this(texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource], data: ISpritesheetData) = this()
+  def this(
+    texture: typings.pixiCore.mod.BaseTexture[typings.pixiCore.mod.Resource, IAutoDetectOptions],
+    data: ISpritesheetData,
+    resolutionFilename: String
+  ) = this()
+  def this(
+    texture: typings.pixiCore.mod.Texture[typings.pixiCore.mod.Resource],
+    data: ISpritesheetData,
+    resolutionFilename: String
+  ) = this()
 }
+/* static members */
 object Spritesheet {
   
-  @JSImport("pixi.js", "Spritesheet")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * The maximum number of Textures to build per process.
-    *
-    * @type {number}
-    * @default 1000
-    */
-  /* static member */
+  /** The maximum number of Textures to build per process. */
   @JSImport("pixi.js", "Spritesheet.BATCH_SIZE")
   @js.native
-  def BATCH_SIZE: Double = js.native
-  inline def BATCH_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_SIZE")(x.asInstanceOf[js.Any])
+  val BATCH_SIZE: /* 1000 */ Double = js.native
 }

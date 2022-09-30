@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.Element
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.projectsMod.projects.ExportLevel
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent, remoteSourceDocument, remoteSourceDocumentQualifiedName, source, capabilities */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAssociationBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDomainModel, name, `type`, owner, parent, documentation, remoteSourceDocument, remoteSourceDocumentQualifiedName, source, capabilities */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AssociationBase")
 @js.native
 abstract class AssociationBase protected ()
   extends Element[IModel]
@@ -36,6 +37,7 @@ abstract class AssociationBase protected ()
   ) = this()
   
   /**
+    * In version 9.0.1: deleted
     * In version 8.11.0: introduced
     */
   def capabilities: AssociationCapabilities = js.native
@@ -43,6 +45,7 @@ abstract class AssociationBase protected ()
   /**
     * This property is required and cannot be set to null.
     *
+    * In version 9.0.1: deleted
     * In version 8.11.0: introduced
     */
   @JSName("capabilities")
@@ -58,8 +61,22 @@ abstract class AssociationBase protected ()
   def deleteBehavior: AssociationDeleteBehavior = js.native
   def deleteBehavior_=(newValue: AssociationDeleteBehavior): Unit = js.native
   
+  /**
+    * In version 9.10.0: added public
+    */
   def documentation: String = js.native
   def documentation_=(newValue: String): Unit = js.native
+  /**
+    * In version 9.10.0: added public
+    */
+  @JSName("documentation")
+  val documentation_FAssociationBase: String = js.native
+  
+  /**
+    * In version 9.3.0: introduced
+    */
+  def exportLevel: ExportLevel = js.native
+  def exportLevel_=(newValue: ExportLevel): Unit = js.native
   
   def name: String = js.native
   def name_=(newValue: String): Unit = js.native
@@ -134,18 +151,18 @@ abstract class AssociationBase protected ()
 }
 object AssociationBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AssociationBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AssociationBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AssociationBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AssociationBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

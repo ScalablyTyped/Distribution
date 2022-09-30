@@ -14,6 +14,7 @@ import typings.jupyterlabServices.messagesMod.MessageType
 import typings.jupyterlabServices.messagesMod.ShellMessageType
 import typings.jupyterlabServices.messagesMod.StdinMessageType
 import typings.luminoDisposable.mod.DisposableDelegate
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,29 +134,29 @@ object futureMod {
     /**
       * Get the iopub handler.
       */
-    def onIOPub: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]] = js.native
+    def onIOPub: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | PromiseLike[Unit]] = js.native
     /**
       * Set the iopub handler.
       */
-    def onIOPub_=(cb: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | js.Thenable[Unit]]): Unit = js.native
+    def onIOPub_=(cb: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Unit | PromiseLike[Unit]]): Unit = js.native
     
     /**
       * Get the reply handler.
       */
-    def onReply: js.Function1[/* msg */ REPLY, Unit | js.Thenable[Unit]] = js.native
+    def onReply: js.Function1[/* msg */ REPLY, Unit | PromiseLike[Unit]] = js.native
     /**
       * Set the reply handler.
       */
-    def onReply_=(cb: js.Function1[/* msg */ REPLY, Unit | js.Thenable[Unit]]): Unit = js.native
+    def onReply_=(cb: js.Function1[/* msg */ REPLY, Unit | PromiseLike[Unit]]): Unit = js.native
     
     /**
       * Get the stdin handler.
       */
-    def onStdin: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]] = js.native
+    def onStdin: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | PromiseLike[Unit]] = js.native
     /**
       * Set the stdin handler.
       */
-    def onStdin_=(cb: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | js.Thenable[Unit]]): Unit = js.native
+    def onStdin_=(cb: js.Function1[/* msg */ IStdinMessage[StdinMessageType], Unit | PromiseLike[Unit]]): Unit = js.native
   }
   
   @JSImport("@jupyterlab/services/lib/kernel/future", "KernelShellFutureHandler")

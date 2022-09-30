@@ -1,6 +1,5 @@
 package typings.shippo.mod.Shippo
 
-import typings.shippo.shippoStrings.$LeftcurlybracketnumberRightcurlybracket
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,9 +11,9 @@ trait CreateParcelRequest extends StObject {
   
   var extra: js.UndefOr[Record[String, Any]] = js.undefined
   
-  var height: $LeftcurlybracketnumberRightcurlybracket
+  var height: /* template literal string: ${number} */ String
   
-  var length: $LeftcurlybracketnumberRightcurlybracket
+  var length: /* template literal string: ${number} */ String
   
   var mass_unit: MassUnit
   
@@ -22,14 +21,21 @@ trait CreateParcelRequest extends StObject {
   
   var template: js.UndefOr[String] = js.undefined
   
-  var weight: $LeftcurlybracketnumberRightcurlybracket
+  var weight: /* template literal string: ${number} */ String
   
-  var width: $LeftcurlybracketnumberRightcurlybracket
+  var width: /* template literal string: ${number} */ String
 }
 object CreateParcelRequest {
   
-  inline def apply(distance_unit: DistanceUnit, mass_unit: MassUnit): CreateParcelRequest = {
-    val __obj = js.Dynamic.literal(distance_unit = distance_unit.asInstanceOf[js.Any], height = "${number}", length = "${number}", mass_unit = mass_unit.asInstanceOf[js.Any], weight = "${number}", width = "${number}")
+  inline def apply(
+    distance_unit: DistanceUnit,
+    height: /* template literal string: ${number} */ String,
+    length: /* template literal string: ${number} */ String,
+    mass_unit: MassUnit,
+    weight: /* template literal string: ${number} */ String,
+    width: /* template literal string: ${number} */ String
+  ): CreateParcelRequest = {
+    val __obj = js.Dynamic.literal(distance_unit = distance_unit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], mass_unit = mass_unit.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateParcelRequest]
   }
   
@@ -41,9 +47,9 @@ object CreateParcelRequest {
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    inline def setHeight(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setLength(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     inline def setMass_unit(value: MassUnit): Self = StObject.set(x, "mass_unit", value.asInstanceOf[js.Any])
     
@@ -55,8 +61,8 @@ object CreateParcelRequest {
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    inline def setWeight(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    inline def setWidth(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

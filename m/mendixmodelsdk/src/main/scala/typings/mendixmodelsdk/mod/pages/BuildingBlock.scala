@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.BuildingBlock")
 @js.native
-class BuildingBlock protected ()
+open class BuildingBlock protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.BuildingBlock {
   def this(
     model: AbstractModel,

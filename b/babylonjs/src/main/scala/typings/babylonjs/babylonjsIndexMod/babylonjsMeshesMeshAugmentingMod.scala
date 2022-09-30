@@ -22,20 +22,20 @@ object babylonjsMeshesMeshAugmentingMod {
       */
     def _invalidateInstanceVertexArrayObject(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _thinInstanceCreateMatrixBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], staticBuffer: Boolean): Buffer = js.native
     
-    /** @hidden */
+    /** @internal */
     def _thinInstanceInitializeUserStorage(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _thinInstanceUpdateBufferSize(kind: String): Unit = js.native
     def _thinInstanceUpdateBufferSize(kind: String, numInstances: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _userInstancedBuffersStorage: Data = js.native
     
-    /** @hidden */
+    /** @internal */
     var _userThinInstanceBuffersStorage: Sizes = js.native
     
     /**

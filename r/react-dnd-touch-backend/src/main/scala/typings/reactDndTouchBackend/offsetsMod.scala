@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object offsetsMod {
   
-  @JSImport("react-dnd-touch-backend/lib/utils/offsets", JSImport.Namespace)
+  @JSImport("react-dnd-touch-backend/dist/utils/offsets", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

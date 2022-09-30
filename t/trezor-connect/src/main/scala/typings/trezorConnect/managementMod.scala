@@ -1,10 +1,10 @@
 package typings.trezorConnect
 
-import typings.trezorConnect.trezorConnectNumbers.`0`
-import typings.trezorConnect.trezorConnectNumbers.`12`
-import typings.trezorConnect.trezorConnectNumbers.`18`
-import typings.trezorConnect.trezorConnectNumbers.`1`
-import typings.trezorConnect.trezorConnectNumbers.`24`
+import typings.trezorConnect.trezorConnectInts.`0`
+import typings.trezorConnect.trezorConnectInts.`12`
+import typings.trezorConnect.trezorConnectInts.`18`
+import typings.trezorConnect.trezorConnectInts.`1`
+import typings.trezorConnect.trezorConnectInts.`24`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

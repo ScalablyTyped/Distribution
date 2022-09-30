@@ -1,20 +1,20 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-4119`
-import typings.activexOffice.activexOfficeNumbers.`-4142`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`4`
-import typings.activexOffice.activexOfficeNumbers.`5`
+import typings.activexOffice.activexOfficeInts.`-4119`
+import typings.activexOffice.activexOfficeInts.`-4142`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`4`
+import typings.activexOffice.activexOfficeInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-4119`
-  - typings.activexOffice.activexOfficeNumbers.`5`
-  - typings.activexOffice.activexOfficeNumbers.`-4142`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`4`
+  - typings.activexOffice.activexOfficeInts.`-4119`
+  - typings.activexOffice.activexOfficeInts.`5`
+  - typings.activexOffice.activexOfficeInts.`-4142`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`4`
 */
 trait XlUnderlineStyle extends StObject
 object XlUnderlineStyle {

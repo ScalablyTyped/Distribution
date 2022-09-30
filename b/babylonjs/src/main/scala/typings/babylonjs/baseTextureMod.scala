@@ -41,24 +41,18 @@ object baseTextureMod {
     
     /* protected */ var _errorObject: js.UndefOr[Exception] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _forceSerialize: Boolean = js.native
     
     /* private */ var _gammaSpace: Any = js.native
     
     /* private */ var _getAlphaFromRGB: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ def _getEngine(): Nullable[ThinEngine] = js.native
     
     /**
-      * @param url
-      * @param noMipmap
-      * @param sampling
-      * @param invertY
-      * @param useSRGBBuffer
-      * @param isCube
-      * @hidden
+      * @internal
       */
     def _getFromCache(url: Nullable[String], noMipmap: Boolean): Nullable[InternalTexture] = js.native
     def _getFromCache(url: Nullable[String], noMipmap: Boolean, sampling: Double): Nullable[InternalTexture] = js.native
@@ -145,13 +139,13 @@ object baseTextureMod {
     
     /* protected */ var _loadingError: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     def _lodTextureHigh: Nullable[BaseTexture] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _lodTextureLow: Nullable[BaseTexture] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _lodTextureMid: Nullable[BaseTexture] = js.native
     
     /**
@@ -161,19 +155,14 @@ object baseTextureMod {
     
     /* private */ var _onDisposeObserver: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _parentContainer: Nullable[AbstractScene] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _prefiltered: Boolean = js.native
     
     /**
-      * @param faceIndex
-      * @param level
-      * @param buffer
-      * @param flushRenderer
-      * @param noDataConversion
-      * @hidden
+      * @internal
       */
     def _readPixelsSync(): Nullable[js.typedarray.ArrayBufferView] = js.native
     def _readPixelsSync(faceIndex: Double): Nullable[js.typedarray.ArrayBufferView] = js.native
@@ -276,12 +265,12 @@ object baseTextureMod {
       noDataConversion: Boolean
     ): Nullable[js.typedarray.ArrayBufferView] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
     /* protected */ var _scene: Nullable[Scene] = js.native
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _uid: Any = js.native
     
     /**
@@ -450,7 +439,7 @@ object baseTextureMod {
     def lodGenerationScale_=(value: Double): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var lodLevelInAlpha: Boolean = js.native
     
@@ -479,6 +468,12 @@ object baseTextureMod {
       * Kept for back compatibility, you can use the onDisposeObservable instead.
       */
     def onDispose_=(callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Gets or sets a boolean indicating that the texture should try to reduce shader code if there is no UV manipulation.
+      * (ie. when texture.getTextureMatrix().isIdentityAs3x2() returns true)
+      */
+    var optimizeUVAllocation: Boolean = js.native
     
     /**
       * Reads the pixels stored in the webgl texture and returns them as an ArrayBuffer.

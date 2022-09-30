@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Quaternion extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _isDirty: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _w: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _x: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _y: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _z: Double = js.native
   
   /**

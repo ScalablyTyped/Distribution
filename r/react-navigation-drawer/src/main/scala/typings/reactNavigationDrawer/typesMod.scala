@@ -12,6 +12,7 @@ import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenProp
 import typings.reactNavigation.mod.NavigationState
 import typings.reactNavigation.mod.SupportedThemes
+import typings.reactNavigationDrawer.anon.ActiveItemKey
 import typings.reactNavigationDrawer.anon.Dark
 import typings.reactNavigationDrawer.anon.Focused
 import typings.reactNavigationDrawer.anon.NavigationOptions
@@ -53,7 +54,7 @@ object typesMod {
       navigation: NavigationScreenProp[NavigationDrawerState, NavigationParams],
       onItemPress: Focused => Unit,
       renderIcon: Scene => ReactNode,
-      screenProps: js.Any
+      screenProps: Any
     ): DrawerContentComponentProps = {
       val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], drawerOpenProgress = drawerOpenProgress.asInstanceOf[js.Any], drawerPosition = drawerPosition.asInstanceOf[js.Any], getLabel = js.Any.fromFunction1(getLabel), items = items.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], onItemPress = js.Any.fromFunction1(onItemPress), renderIcon = js.Any.fromFunction1(renderIcon), screenProps = screenProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawerContentComponentProps]
@@ -89,6 +90,27 @@ object typesMod {
       inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
       inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+    }
+  }
+  
+  trait DrawerItem extends StObject {
+    
+    var focused: Boolean
+    
+    var route: NavigationRoute[NavigationParams]
+  }
+  object DrawerItem {
+    
+    inline def apply(focused: Boolean, route: NavigationRoute[NavigationParams]): DrawerItem = {
+      val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DrawerItem]
+    }
+    
+    extension [Self <: DrawerItem](x: Self) {
+      
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      
+      inline def setRoute(value: NavigationRoute[NavigationParams]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,7 +186,7 @@ object typesMod {
     
     def renderIcon(scene: Scene): ReactNode
     
-    var screenProps: js.Any
+    var screenProps: Any
   }
   object DrawerNavigatorItemsProps {
     
@@ -174,7 +196,7 @@ object typesMod {
       items: js.Array[NavigationRoute[NavigationParams]],
       onItemPress: Focused => Unit,
       renderIcon: Scene => ReactNode,
-      screenProps: js.Any
+      screenProps: Any
     ): DrawerNavigatorItemsProps = {
       val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], getLabel = js.Any.fromFunction1(getLabel), items = items.asInstanceOf[js.Any], onItemPress = js.Any.fromFunction1(onItemPress), renderIcon = js.Any.fromFunction1(renderIcon), screenProps = screenProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawerNavigatorItemsProps]
@@ -240,7 +262,7 @@ object typesMod {
       
       inline def setItemsContainerStyleUndefined: Self = StObject.set(x, "itemsContainerStyle", js.undefined)
       
-      inline def setItemsVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
       
@@ -252,7 +274,7 @@ object typesMod {
       
       inline def setRenderIcon(value: Scene => ReactNode): Self = StObject.set(x, "renderIcon", js.Any.fromFunction1(value))
       
-      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -437,7 +459,7 @@ object typesMod {
     
     var contentComponent: js.UndefOr[ComponentType[DrawerContentComponentProps]] = js.undefined
     
-    var contentOptions: js.UndefOr[js.Object] = js.undefined
+    var contentOptions: js.UndefOr[ActiveItemKey] = js.undefined
     
     var initialRouteName: js.UndefOr[String] = js.undefined
     
@@ -462,7 +484,7 @@ object typesMod {
       
       inline def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
       
-      inline def setContentOptions(value: js.Object): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
+      inline def setContentOptions(value: ActiveItemKey): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
       
       inline def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
       
@@ -571,7 +593,7 @@ object typesMod {
     NavigationDescriptor[
       NavigationParams, 
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any]
+      NavigationDrawerProp[NavigationRoute[NavigationParams], Any]
     ]
   ]
   

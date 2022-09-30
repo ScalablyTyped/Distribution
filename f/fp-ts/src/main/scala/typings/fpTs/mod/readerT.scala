@@ -533,28 +533,8 @@ object readerT {
     ]
   ]]
   
-  inline def fromNaturalTransformation[F, G](nt: NaturalTransformation[F, G]): js.Function1[
-    /* f */ js.Function1[
-      /* r */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
-    ], 
-    Reader_[
-      Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<G, A> */ Any
-    ]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNaturalTransformation")(nt.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* f */ js.Function1[
-      /* r */ Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
-    ], 
-    Reader_[
-      Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<G, A> */ Any
-    ]
-  ]]
-  
-  inline def fromNaturalTransformation_F_AnyG_Any[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](
-    nt: (NaturalTransformation11[F, G]) | (NaturalTransformation12[F, G]) | (NaturalTransformation22[F, G]) | (NaturalTransformation23R[F, G]) | (NaturalTransformation24S[F, G])
+  inline def fromNaturalTransformation[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](
+    nt: (NaturalTransformation[F, G]) | (NaturalTransformation11[F, G]) | (NaturalTransformation12[F, G]) | (NaturalTransformation22[F, G]) | (NaturalTransformation23R[F, G]) | (NaturalTransformation24S[F, G])
   ): js.Function1[
     /* f */ js.Function1[
       /* r */ Any, 

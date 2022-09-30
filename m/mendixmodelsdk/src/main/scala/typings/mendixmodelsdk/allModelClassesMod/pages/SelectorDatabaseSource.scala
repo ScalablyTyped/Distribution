@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 6.1.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SelectorDatabaseSource")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SelectorDatabaseSource")
 @js.native
-class SelectorDatabaseSource protected ()
+open class SelectorDatabaseSource protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.SelectorDatabaseSource {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class SelectorDatabaseSource protected ()
 }
 object SelectorDatabaseSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SelectorDatabaseSource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SelectorDatabaseSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,13 +53,13 @@ object SelectorDatabaseSource {
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.AssociationWidget): typings.mendixmodelsdk.pagesMod.pages.SelectorDatabaseSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.SelectorDatabaseSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SelectorDatabaseSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SelectorDatabaseSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SelectorDatabaseSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SelectorDatabaseSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

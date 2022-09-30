@@ -12,7 +12,7 @@ trait QuerySnapshot[T] extends StObject {
     * this is the first snapshot, all documents will be in the list as added
     * changes.
     */
-  def docChanges(): js.Array[DocumentChange[DocumentData]] = js.native
+  def docChanges(): js.Array[DocumentChange[T]] = js.native
   
   /** An array of all the documents in the QuerySnapshot. */
   val docs: js.Array[QueryDocumentSnapshot[T]] = js.native
@@ -28,7 +28,7 @@ trait QuerySnapshot[T] extends StObject {
     * @param thisArg The `this` binding for the callback.
     */
   def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit]): Unit = js.native
-  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit], thisArg: js.Any): Unit = js.native
+  def forEach(callback: js.Function1[/* result */ QueryDocumentSnapshot[T], Unit], thisArg: Any): Unit = js.native
   
   /**
     * Returns true if the document data in this `QuerySnapshot` is equal to the

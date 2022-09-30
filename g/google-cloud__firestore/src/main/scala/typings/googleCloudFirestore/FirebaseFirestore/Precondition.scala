@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Precondition extends StObject {
   
   /**
+    * If set, enforces that the target document must or must not exist.
+    */
+  val exists: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * If set, the last update time to enforce.
     */
   val lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
@@ -19,6 +24,10 @@ object Precondition {
   }
   
   extension [Self <: Precondition](x: Self) {
+    
+    inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+    
+    inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
     
     inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.RoundingMode")
 @js.native
-class RoundingMode protected ()
+open class RoundingMode protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.RoundingMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

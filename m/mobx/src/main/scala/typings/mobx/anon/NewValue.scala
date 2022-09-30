@@ -1,15 +1,12 @@
 package typings.mobx.anon
 
-import typings.mobx.mobxStrings.add
-import typings.mobx.observablemapMod.IMapDidChange
+import typings.mobx.mobxStrings.update
 import typings.mobx.observablemapMod.ObservableMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NewValue[K, V]
-  extends StObject
-     with IMapDidChange[K, V] {
+trait NewValue[K, V] extends StObject {
   
   var name: K
   
@@ -17,14 +14,16 @@ trait NewValue[K, V]
   
   var `object`: ObservableMap[K, V]
   
-  var `type`: add
+  var oldValue: V
+  
+  var `type`: update
 }
 object NewValue {
   
-  inline def apply[K, V](name: K, newValue: V, `object`: ObservableMap[K, V]): NewValue[K, V] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
+  inline def apply[K, V](name: K, newValue: V, `object`: ObservableMap[K, V], oldValue: V): NewValue[K, V] = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("add")
+    __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[NewValue[K, V]]
   }
   
@@ -36,6 +35,8 @@ object NewValue {
     
     inline def setObject(value: ObservableMap[K, V]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setType(value: add): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: V): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

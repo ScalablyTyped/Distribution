@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "redux" : "4.0.5"
+      "redux" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "redux" : "4.0.5"
+      "redux" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

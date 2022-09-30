@@ -10,7 +10,7 @@ trait LinesMesh
      with Mesh {
   
   /**
-    * @hidden
+    * @internal
     */
   def _bind(): Mesh = js.native
   

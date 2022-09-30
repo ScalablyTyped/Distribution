@@ -1,53 +1,43 @@
 package typings.dexie.mod
 
+import typings.dexie.anon.Index
 import typings.dexie.dexieStrings.delete
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreDeleteRequest extends DBCoreMutateRequest {
+trait DBCoreDeleteRequest
+  extends StObject
+     with DBCoreMutateRequest {
   
-  var keys: js.Array[_] = js.native
+  var criteria: js.UndefOr[Index] = js.undefined
   
-  var trans: DBCoreTransaction = js.native
+  var keys: js.Array[Any]
   
-  var `type`: delete = js.native
+  var trans: DBCoreTransaction
+  
+  var `type`: delete
 }
 object DBCoreDeleteRequest {
   
-  @scala.inline
-  def apply(keys: js.Array[_], trans: DBCoreTransaction, `type`: delete): DBCoreDeleteRequest = {
+  inline def apply(keys: js.Array[Any], trans: DBCoreTransaction): DBCoreDeleteRequest = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[DBCoreDeleteRequest]
   }
   
-  @scala.inline
-  implicit class DBCoreDeleteRequestOps[Self <: DBCoreDeleteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreDeleteRequest](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setCriteria(value: Index): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = this.set("keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Any*): Self = StObject.set(x, "keys", js.Array(value*))
     
-    @scala.inline
-    def setKeys(value: js.Array[_]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    inline def setTrans(value: DBCoreTransaction): Self = StObject.set(x, "trans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrans(value: DBCoreTransaction): Self = this.set("trans", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: delete): Self = this.set("type", value.asInstanceOf[js.Any])
+    inline def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

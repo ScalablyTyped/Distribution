@@ -418,7 +418,7 @@ object mod {
     /**
       * Retrieve option value source.
       */
-    def getOptionValueSource(key: String): OptionValueSource = js.native
+    def getOptionValueSource(key: String): js.UndefOr[OptionValueSource] = js.native
     
     /**
       * Output help information and exit.
@@ -701,7 +701,7 @@ object mod {
       * @returns `this` command for chaining
       */
     @JSName("storeOptionsAsProperties")
-    def storeOptionsAsProperties_T_OptionValues_Intersection[T /* <: OptionValues */](): this.type & T = js.native
+    def storeOptionsAsProperties_T_Intersection[T /* <: OptionValues */](): this.type & T = js.native
     @JSName("storeOptionsAsProperties")
     def storeOptionsAsProperties_true[T /* <: OptionValues */](storeAsProperties: `true`): this.type & T = js.native
     
@@ -910,7 +910,9 @@ object mod {
     
     /**
       * Set environment variable to check for option value.
-      * Priority order of option values is default < env < cli
+      *
+      * An environment variables is only used if when processed the current option value is
+      * undefined, or the source of the current value is 'default' or 'config' or 'env'.
       */
     def env(name: String): this.type = js.native
     
@@ -1312,9 +1314,10 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.commander.commanderStrings.default
-    - typings.commander.commanderStrings.env
     - typings.commander.commanderStrings.config
+    - typings.commander.commanderStrings.env
     - typings.commander.commanderStrings.cli
+    - typings.commander.commanderStrings.implied
   */
   trait OptionValueSource extends StObject
   object OptionValueSource {
@@ -1326,6 +1329,8 @@ object mod {
     inline def config: typings.commander.commanderStrings.config = "config".asInstanceOf[typings.commander.commanderStrings.config]
     
     inline def env: typings.commander.commanderStrings.env = "env".asInstanceOf[typings.commander.commanderStrings.env]
+    
+    inline def implied: typings.commander.commanderStrings.implied = "implied".asInstanceOf[typings.commander.commanderStrings.implied]
   }
   
   type OptionValues = StringDictionary[Any]

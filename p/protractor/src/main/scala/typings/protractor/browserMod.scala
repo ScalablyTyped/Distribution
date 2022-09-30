@@ -19,13 +19,13 @@ object browserMod {
   
   @JSImport("protractor/built/browser", "AbstractExtendedWebDriver")
   @js.native
-  class AbstractExtendedWebDriver ()
+  open class AbstractExtendedWebDriver ()
     extends AbstractWebDriver
        with ExtendedWebDriver
   
   @JSImport("protractor/built/browser", "AbstractWebDriver")
   @js.native
-  class AbstractWebDriver () extends WebDriver
+  open class AbstractWebDriver () extends WebDriver
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - scala.Any because Inheritance from two classes. Inlined 
@@ -39,7 +39,7 @@ object browserMod {
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
   - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("protractor/built/browser", "ProtractorBrowser")
   @js.native
-  class ProtractorBrowser protected () extends AbstractExtendedWebDriver {
+  open class ProtractorBrowser protected () extends AbstractExtendedWebDriver {
     def this(webdriverInstance: WebDriver) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String, opt_rootElement: String) = this()
@@ -193,7 +193,7 @@ object browserMod {
       *
       * @private
       */
-    /* private */ def addBaseMockModules_(): js.Any = js.native
+    /* private */ def addBaseMockModules_(): Any = js.native
     
     /**
       * Add a module to load before Angular whenever Protractor.get is called.
@@ -213,8 +213,8 @@ object browserMod {
       * @param {...*} varArgs Any additional arguments will be provided to
       *     the script and may be referenced using the `arguments` object.
       */
-    def addMockModule(name: String, script: String, moduleArgs: js.Any*): Unit = js.native
-    def addMockModule(name: String, script: js.Function, moduleArgs: js.Any*): Unit = js.native
+    def addMockModule(name: String, script: String, moduleArgs: Any*): Unit = js.native
+    def addMockModule(name: String, script: js.Function, moduleArgs: Any*): Unit = js.native
     
     var allScriptsTimeout: Double = js.native
     
@@ -258,7 +258,7 @@ object browserMod {
       *
       * @returns true if the control flow is enabled, false otherwise.
       */
-    def controlFlowIsEnabled(): js.Any = js.native
+    def controlFlowIsEnabled(): Any = js.native
     
     /**
       * If specified, start a debugger server at specified port instead of repl
@@ -303,10 +303,10 @@ object browserMod {
       * @template T
       */
     /* private */ def executeAsyncScript_(
-      script: js.Any,
-      description: js.Any,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param scriptArgs because its type <none> is not an array type */ scriptArgs: js.Any
-    ): js.Any = js.native
+      script: Any,
+      description: Any,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param scriptArgs because its type <none> is not an array type */ scriptArgs: Any
+    ): Any = js.native
     
     /**
       * The same as {@code webdriver.WebDriver.prototype.executeScript},
@@ -320,8 +320,8 @@ object browserMod {
       * the scripts return value.
       * @template T
       */
-    def executeScriptWithDescription(script: String, description: String, scriptArgs: js.Any*): js.Promise[js.Any] = js.native
-    def executeScriptWithDescription(script: js.Function, description: String, scriptArgs: js.Any*): js.Promise[js.Any] = js.native
+    def executeScriptWithDescription(script: String, description: String, scriptArgs: Any*): js.Promise[Any] = js.native
+    def executeScriptWithDescription(script: js.Function, description: String, scriptArgs: Any*): js.Promise[Any] = js.native
     
     /**
       * Fork another instance of browser for use in interactive tests.
@@ -351,7 +351,7 @@ object browserMod {
     def forkNewDriverInstance(useSameUrl: Unit, copyMockModules: Boolean, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Unit, copyMockModules: Unit, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     
-    def get(destination: String, timeout: Double): js.Promise[js.Any] = js.native
+    def get(destination: String, timeout: Double): js.Promise[Any] = js.native
     
     /**
       * Deprecated, use `browser.getCurrentUrl()` instead.
@@ -368,7 +368,7 @@ object browserMod {
       * @returns {webdriver.promise.Promise<string>} The current absolute url from
       * AngularJS.
       */
-    def getLocationAbsUrl(): js.Promise[js.Any] = js.native
+    def getLocationAbsUrl(): js.Promise[Any] = js.native
     
     /**
       * Timeout in milliseconds to wait for pages to load when calling `get`.
@@ -387,7 +387,7 @@ object browserMod {
       * @returns {webdriver.promise.Promise} A promise which resolves to the
       * capabilities object.
       */
-    def getProcessedConfig(): js.Promise[js.Any] = js.native
+    def getProcessedConfig(): js.Promise[Any] = js.native
     
     /**
       * Get a list of the current mock modules.
@@ -412,19 +412,19 @@ object browserMod {
       */
     var ignoreSynchronization: Boolean = js.native
     
-    /* private */ var internalIgnoreSynchronization: js.Any = js.native
+    /* private */ var internalIgnoreSynchronization: Any = js.native
     
-    /* private */ var internalRootEl: js.Any = js.native
+    /* private */ var internalRootEl: Any = js.native
     
-    def isElementPresent(locatorOrElement: ElementFinder): js.Promise[js.Any] = js.native
+    def isElementPresent(locatorOrElement: ElementFinder): js.Promise[Any] = js.native
     /**
       * Tests if an element is present on the page.
       * @see webdriver.WebDriver.isElementPresent
       * @returns {!webdriver.promise.Promise} A promise that will resolve to whether
       *     the element is present on the page.
       */
-    def isElementPresent(locatorOrElement: Locator): js.Promise[js.Any] = js.native
-    def isElementPresent(locatorOrElement: WebElement): js.Promise[js.Any] = js.native
+    def isElementPresent(locatorOrElement: Locator): js.Promise[Any] = js.native
+    def isElementPresent(locatorOrElement: WebElement): js.Promise[Any] = js.native
     
     /**
       * Information about mock modules that will be installed during every
@@ -448,7 +448,7 @@ object browserMod {
       *
       * @type {Object}
       */
-    var params: js.Any = js.native
+    var params: Any = js.native
     
     var plugins_ : Plugins = js.native
     
@@ -474,8 +474,8 @@ object browserMod {
       *
       * @param {number=} opt_timeout Number of milliseconds to wait for Angular to start.
       */
-    def refresh(): js.Promise[js.Any] = js.native
-    def refresh(opt_timeout: Double): js.Promise[js.Any] = js.native
+    def refresh(): js.Promise[Any] = js.native
+    def refresh(opt_timeout: Double): js.Promise[Any] = js.native
     
     /**
       * Remove a registered mock module.
@@ -593,7 +593,7 @@ object browserMod {
       * @returns {!webdriver.promise.Promise} A promise that will resolve once
       *    page has been changed.
       */
-    def setLocation(url: String): js.Promise[js.Any] = js.native
+    def setLocation(url: String): js.Promise[Any] = js.native
     
     /**
       * If true, Protractor will track outstanding $timeouts and report them in the
@@ -620,8 +620,8 @@ object browserMod {
       * @returns {!webdriver.promise.Promise} A promise that will resolve to the
       *    scripts return value.
       */
-    def waitForAngular(): js.Promise[js.Any] = js.native
-    def waitForAngular(opt_description: String): js.Promise[js.Any] = js.native
+    def waitForAngular(): js.Promise[Any] = js.native
+    def waitForAngular(opt_description: String): js.Promise[Any] = js.native
     
     /**
       * If set to false, Protractor will not wait for Angular $http and $timeout

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "d3-org-chart"
-version := "2.6-dt-20220624Z-ec09ab"
+version := "2.6-dt-20220624Z-62d02e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "d3-hierarchy" % "3.1-dt-20220624Z-d81f64",
-  "org.scalablytyped" %%% "d3-selection" % "3.0-dt-20220720Z-acb353",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "d3-hierarchy" % "3.1-dt-20220624Z-62102c",
+  "org.scalablytyped" %%% "d3-selection" % "3.0-dt-20220720Z-5af29b",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

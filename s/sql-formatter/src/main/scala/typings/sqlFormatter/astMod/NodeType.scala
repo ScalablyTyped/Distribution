@@ -38,6 +38,24 @@ object NodeType extends StObject {
   /* "block_comment" */ val block_comment: typings.sqlFormatter.astMod.NodeType.block_comment & String = js.native
   
   @js.native
+  sealed trait case_else
+    extends StObject
+       with NodeType
+  /* "case_else" */ val case_else: typings.sqlFormatter.astMod.NodeType.case_else & String = js.native
+  
+  @js.native
+  sealed trait case_expression
+    extends StObject
+       with NodeType
+  /* "case_expression" */ val case_expression: typings.sqlFormatter.astMod.NodeType.case_expression & String = js.native
+  
+  @js.native
+  sealed trait case_when
+    extends StObject
+       with NodeType
+  /* "case_when" */ val case_when: typings.sqlFormatter.astMod.NodeType.case_when & String = js.native
+  
+  @js.native
   sealed trait clause
     extends StObject
        with NodeType

@@ -127,9 +127,7 @@ object PlaneDragGizmo {
   val ^ : js.Any = js.native
   
   /**
-    * @param scene
-    * @param material
-    * @hidden
+    * @internal
     */
   inline def _CreatePlane(scene: typings.babylonjs.BABYLON.Scene, material: typings.babylonjs.BABYLON.StandardMaterial): typings.babylonjs.BABYLON.TransformNode = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreatePlane")(scene.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.TransformNode]
 }

@@ -1,5 +1,6 @@
 package typings.pForever
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,22 +39,22 @@ object mod {
     inline def apply[ValueType](
       function_ : js.Function1[
           /* previousValue */ js.UndefOr[ValueType], 
-          ValueType | (js.Thenable[js.Symbol | ValueType]) | js.Symbol
+          ValueType | (PromiseLike[js.Symbol | ValueType]) | js.Symbol
         ]
     ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(function_.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     inline def apply[ValueType](
       function_ : js.Function1[
           /* previousValue */ ValueType, 
-          ValueType | (js.Thenable[js.Symbol | ValueType]) | js.Symbol
+          ValueType | (PromiseLike[js.Symbol | ValueType]) | js.Symbol
         ],
       initialValue: ValueType
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(function_.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     inline def apply[ValueType](
       function_ : js.Function1[
           /* previousValue */ ValueType, 
-          ValueType | (js.Thenable[js.Symbol | ValueType]) | js.Symbol
+          ValueType | (PromiseLike[js.Symbol | ValueType]) | js.Symbol
         ],
-      initialValue: js.Thenable[ValueType]
+      initialValue: PromiseLike[ValueType]
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(function_.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     @JSImport("p-forever", JSImport.Default)

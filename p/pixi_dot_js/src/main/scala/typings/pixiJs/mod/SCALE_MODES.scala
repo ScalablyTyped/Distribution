@@ -4,27 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The scale modes that are supported by pixi.
-  *
-  * The {@link PIXI.settings.SCALE_MODE} scale mode affects the default scaling mode of future operations.
-  * It can be re-assigned to either LINEAR or NEAREST, depending upon suitability.
-  *
-  * @memberof PIXI
-  * @static
-  * @name SCALE_MODES
-  * @enum {number}
-  * @property {number} LINEAR Smooth scaling
-  * @property {number} NEAREST Pixelating scaling
-  */
 @JSImport("pixi.js", "SCALE_MODES")
 @js.native
 object SCALE_MODES extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.SCALE_MODES & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiConstants.mod.SCALE_MODES & Double] = js.native
   
-  /* 0 */ val LINEAR: typings.pixiJs.PIXI.SCALE_MODES.LINEAR & Double = js.native
+  /* 1 */ val LINEAR: typings.pixiConstants.mod.SCALE_MODES.LINEAR & Double = js.native
   
-  /* 1 */ val NEAREST: typings.pixiJs.PIXI.SCALE_MODES.NEAREST & Double = js.native
+  /* 0 */ val NEAREST: typings.pixiConstants.mod.SCALE_MODES.NEAREST & Double = js.native
 }

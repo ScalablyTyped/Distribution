@@ -1,7 +1,7 @@
 package typings.canvg
 
-import typings.canvg.canvgNumbers.`0`
-import typings.canvg.canvgNumbers.`1`
+import typings.canvg.canvgInts.`0`
+import typings.canvg.canvgInts.`1`
 import typings.canvg.pointMod.Point
 import typings.svgPathdata.mod.SVGPathData
 import org.scalablytyped.runtime.StObject

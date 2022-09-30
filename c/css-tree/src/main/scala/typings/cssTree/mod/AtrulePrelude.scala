@@ -9,14 +9,14 @@ trait AtrulePrelude
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode]
+  var children: typings.cssTree.mod.List[CssNode]
   
   @JSName("type")
   var type_AtrulePrelude: typings.cssTree.cssTreeStrings.AtrulePrelude
 }
 object AtrulePrelude {
   
-  inline def apply(children: List[CssNode]): AtrulePrelude = {
+  inline def apply(children: typings.cssTree.mod.List[CssNode]): AtrulePrelude = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AtrulePrelude")
     __obj.asInstanceOf[AtrulePrelude]
@@ -24,7 +24,7 @@ object AtrulePrelude {
   
   extension [Self <: AtrulePrelude](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.cssTree.cssTreeStrings.AtrulePrelude): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

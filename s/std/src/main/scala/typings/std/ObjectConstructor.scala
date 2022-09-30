@@ -115,6 +115,10 @@ Instantiable0[js.Object]
     * @param f Object on which to lock the attributes.
     */
   /* standard es5 */
+  /**
+    * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
+    * @param o Object on which to lock the attributes.
+    */
   def freeze[T /* <: js.Function */](f: T): T = js.native
   /**
     * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
@@ -122,14 +126,7 @@ Instantiable0[js.Object]
     */
   /* standard es5 */
   @JSName("freeze")
-  def freeze_T[T](o: T): T = js.native
-  /**
-    * Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
-    * @param o Object on which to lock the attributes.
-    */
-  /* standard es5 */
-  @JSName("freeze")
-  def `freeze_T_StringDictionaryUnionUNull<undefined>ObjectU_UnionStringBigIntDoubleBooleanSymbol`[T /* <: /* standard es5 */
+  def freeze_TU[T /* <: /* standard es5 */
   StringDictionary[js.UndefOr[U | Null | js.Object]] */, U /* <: java.lang.String | js.BigInt | Double | scala.Boolean | js.Symbol */](o: T): T = js.native
   
   /**

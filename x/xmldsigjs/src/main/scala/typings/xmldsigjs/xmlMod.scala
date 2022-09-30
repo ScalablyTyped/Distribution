@@ -11,140 +11,140 @@ object xmlMod {
   
   @JSImport("xmldsigjs/build/types/xml", "CanonicalizationMethod")
   @js.native
-  class CanonicalizationMethod ()
+  open class CanonicalizationMethod ()
     extends typings.xmldsigjs.canonicalizationMethodMod.CanonicalizationMethod {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "DataObject")
   @js.native
-  class DataObject ()
+  open class DataObject ()
     extends typings.xmldsigjs.dataObjectMod.DataObject {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "DataObjects")
   @js.native
-  class DataObjects ()
+  open class DataObjects ()
     extends typings.xmldsigjs.dataObjectMod.DataObjects {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "DigestMethod")
   @js.native
-  class DigestMethod ()
+  open class DigestMethod ()
     extends typings.xmldsigjs.digestMethodMod.DigestMethod {
     def this(hashNamespace: String) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "KeyInfo")
   @js.native
-  class KeyInfo ()
+  open class KeyInfo ()
     extends typings.xmldsigjs.keyInfoMod.KeyInfo {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "Reference")
   @js.native
-  class Reference ()
+  open class Reference ()
     extends typings.xmldsigjs.referenceMod.Reference {
     def this(uri: String) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "References")
   @js.native
-  class References ()
+  open class References ()
     extends typings.xmldsigjs.referenceMod.References {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "Signature")
   @js.native
-  class Signature ()
+  open class Signature ()
     extends typings.xmldsigjs.signatureMod.Signature {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "SignatureMethod")
   @js.native
-  class SignatureMethod ()
+  open class SignatureMethod ()
     extends typings.xmldsigjs.signatureMethodMod.SignatureMethod {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "SignatureMethodOther")
   @js.native
-  class SignatureMethodOther ()
+  open class SignatureMethodOther ()
     extends typings.xmldsigjs.signatureMethodMod.SignatureMethodOther {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "SignedInfo")
   @js.native
-  class SignedInfo ()
+  open class SignedInfo ()
     extends typings.xmldsigjs.signedInfoMod.SignedInfo {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "Transform")
   @js.native
-  class Transform ()
+  open class Transform ()
     extends typings.xmldsigjs.transformMod.Transform {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "Transforms")
   @js.native
-  class Transforms ()
+  open class Transforms ()
     extends typings.xmldsigjs.transformCollectionMod.Transforms {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "XmlDsigBase64Transform")
   @js.native
-  class XmlDsigBase64Transform ()
+  open class XmlDsigBase64Transform ()
     extends typings.xmldsigjs.transformsMod.XmlDsigBase64Transform {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "XmlDsigC14NTransform")
   @js.native
-  class XmlDsigC14NTransform ()
+  open class XmlDsigC14NTransform ()
     extends typings.xmldsigjs.transformsMod.XmlDsigC14NTransform {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "XmlDsigC14NWithCommentsTransform")
   @js.native
-  class XmlDsigC14NWithCommentsTransform ()
+  open class XmlDsigC14NWithCommentsTransform ()
     extends typings.xmldsigjs.transformsMod.XmlDsigC14NWithCommentsTransform {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "XmlDsigEnvelopedSignatureTransform")
   @js.native
-  class XmlDsigEnvelopedSignatureTransform ()
+  open class XmlDsigEnvelopedSignatureTransform ()
     extends typings.xmldsigjs.transformsMod.XmlDsigEnvelopedSignatureTransform {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "XmlDsigExcC14NTransform")
   @js.native
-  class XmlDsigExcC14NTransform ()
+  open class XmlDsigExcC14NTransform ()
     extends typings.xmldsigjs.transformsMod.XmlDsigExcC14NTransform {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "XmlDsigExcC14NWithCommentsTransform")
   @js.native
-  class XmlDsigExcC14NWithCommentsTransform ()
+  open class XmlDsigExcC14NWithCommentsTransform ()
     extends typings.xmldsigjs.transformsMod.XmlDsigExcC14NWithCommentsTransform {
     def this(properties: js.Object) = this()
   }
   
   @JSImport("xmldsigjs/build/types/xml", "XmlDsigXPathTransform")
   @js.native
-  class XmlDsigXPathTransform ()
+  open class XmlDsigXPathTransform ()
     extends typings.xmldsigjs.transformsMod.XmlDsigXPathTransform {
     def this(properties: js.Object) = this()
   }

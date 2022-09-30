@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.commonMod.common.IPoint
 import typings.mendixmodelsdk.elementsMod.IByNameReferrable
 import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.instancesMod.IList
@@ -22,11 +23,17 @@ trait IEntity
   /**
     * This property is required and cannot be set to null.
     *
+    * In version 9.0.1: deleted
     * In version 8.12.0: introduced
     */
   val capabilities: IEntityCapabilities = js.native
   
   val containerAsDomainModel: IDomainModel = js.native
+  
+  /**
+    * In version 9.10.0: added public
+    */
+  val documentation: String = js.native
   
   /**
     * This property is required and cannot be set to null.
@@ -39,6 +46,11 @@ trait IEntity
     * In version 7.17.0: introduced
     */
   val isRemote: Boolean = js.native
+  
+  /**
+    * In version 9.10.0: added public
+    */
+  val location: IPoint = js.native
   
   @JSName("model")
   val model_IEntity: IModel = js.native

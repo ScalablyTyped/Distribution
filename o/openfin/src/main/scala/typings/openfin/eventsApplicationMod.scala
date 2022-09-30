@@ -4,9 +4,9 @@ import typings.openfin.applicationMod.ManifestInfo
 import typings.openfin.eventsBaseMod.ApplicationEvent
 import typings.openfin.eventsBaseMod.BaseEventMap
 import typings.openfin.eventsBaseMod.WindowEvent
-import typings.openfin.openfinNumbers.`0`
-import typings.openfin.openfinNumbers.`1`
-import typings.openfin.openfinNumbers.`2`
+import typings.openfin.openfinInts.`0`
+import typings.openfin.openfinInts.`1`
+import typings.openfin.openfinInts.`2`
 import typings.openfin.openfinStrings.`abnormal-termination`
 import typings.openfin.openfinStrings.`application-closed`
 import typings.openfin.openfinStrings.`application-connected`

@@ -1,8 +1,8 @@
 package typings.fluentuiReactFocus
 
-import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`0`
-import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`1`
-import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`2`
+import typings.fluentuiReactFocus.fluentuiReactFocusInts.`0`
+import typings.fluentuiReactFocus.fluentuiReactFocusInts.`1`
+import typings.fluentuiReactFocus.fluentuiReactFocusInts.`2`
 import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

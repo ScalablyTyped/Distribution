@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "Query")
 @js.native
-class Query_ protected ()
+open class Query_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Query_ {
   def this(options: QueryOptions) = this()
 }

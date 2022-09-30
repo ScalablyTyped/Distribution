@@ -1,6 +1,7 @@
 package typings.react.mod
 
 import typings.react.reactStrings.rejected
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ object RejectedThenable {
   
   inline def apply[T](
     reason: Any,
-    `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]
+    `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | PromiseLike[Any]
   ): RejectedThenable[T] = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
     __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))

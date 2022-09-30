@@ -135,6 +135,12 @@ open class GraphNode () extends EventHandler {
   /* private */ var _labels: Any = js.native
   
   /**
+    * @type {Mat3}
+    * @private
+    */
+  /* private */ var _normalMatrix: Any = js.native
+  
+  /**
     * @param {GraphNode} node - Graph node to update.
     * @param {boolean} enabled - True if enabled in the hierarchy, false if disabled.
     * @private
@@ -628,10 +634,12 @@ open class GraphNode () extends EventHandler {
   var name: String = js.native
   
   /**
-    * @type {Mat3}
-    * @private
+    * A matrix used to transform the normal.
+    *
+    * @type  {Mat3}
+    * @ignore
     */
-  /* private */ var normalMatrix: Any = js.native
+  def normalMatrix: Mat3 = js.native
   
   /**
     * A read-only property to get a parent graph node.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "X509IssuerSerial")
 @js.native
-class X509IssuerSerial ()
+open class X509IssuerSerial ()
   extends typings.xmldsigjs.keyInfosMod.X509IssuerSerial {
   def this(properties: js.Object) = this()
 }

@@ -1,9 +1,9 @@
 package typings.qrcode.mod
 
-import typings.qrcode.qrcodeNumbers.`0`
-import typings.qrcode.qrcodeNumbers.`1`
-import typings.qrcode.qrcodeNumbers.`2`
-import typings.qrcode.qrcodeNumbers.`3`
+import typings.qrcode.qrcodeInts.`0`
+import typings.qrcode.qrcodeInts.`1`
+import typings.qrcode.qrcodeInts.`2`
+import typings.qrcode.qrcodeInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

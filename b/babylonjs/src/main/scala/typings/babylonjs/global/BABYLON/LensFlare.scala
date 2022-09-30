@@ -35,7 +35,7 @@ open class LensFlare protected ()
     system: typings.babylonjs.BABYLON.LensFlareSystem
   ) = this()
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _drawWrapper: typings.babylonjs.BABYLON.DrawWrapper = js.native
   

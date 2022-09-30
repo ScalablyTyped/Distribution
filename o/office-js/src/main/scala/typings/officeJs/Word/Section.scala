@@ -25,7 +25,7 @@ trait Section
      with ClientObject {
   
   /**
-    * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
+    * Gets the body object of the section. This does not include the header/footer and other section metadata.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -75,7 +75,7 @@ trait Section
   def getHeader(`type`: HeaderFooterType): Body = js.native
   
   /**
-    * Gets the next section. Throws an error if this section is the last one.
+    * Gets the next section. Throws an `ItemNotFound` error if this section is the last one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait Section
   def getNext(): Section = js.native
   
   /**
-    * Gets the next section. Returns a null object if this section is the last one.
+    * Gets the next section. If this section is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]

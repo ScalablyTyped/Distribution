@@ -10,15 +10,12 @@ A table component for Ink.
 | ------------------ | :-------------: |
 | Full name          | ink-table |
 | Keywords           | cli, ink-cli, ink, table, ink-table, ink-component, component |
-| # releases         | 4 |
-| # dependents       | 28 |
-| # downloads        | 55556 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 23816.0 |
+| # stars            | 154.0 |
 
 ## Links
-- [Homepage](https://github.com/maticzav/ink-table#readme)
-- [Bugs](https://github.com/maticzav/ink-table/issues)
-- [Repository](https://github.com/maticzav/ink-table)
 - [Npm](https://www.npmjs.com/package/ink-table)
     
 

@@ -17,7 +17,7 @@ object ojtranslationMod {
   
   inline def getResource(key: String): js.Object | String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getResource")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object | String | Null]
   
-  inline def getTranslatedString(key: String, var_args: (String | js.Object | js.Array[Any])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslatedString")(List(key.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def getTranslatedString(key: String, var_args: (String | js.Object | js.Array[Any])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslatedString")(scala.List(key.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def setBundle(bundle: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBundle")(bundle.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

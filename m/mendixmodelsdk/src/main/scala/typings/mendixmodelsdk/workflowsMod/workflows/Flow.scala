@@ -14,20 +14,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IFlow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsOutcome, containerAsWorkflow, activities */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow")
+- typings.mendixmodelsdk.workflowsMod.workflows.IFlow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsOutcome, containerAsWorkflow, activities */ @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Flow")
 @js.native
-class Flow protected () extends Element[IModel] {
+open class Flow protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,17 +34,7 @@ class Flow protected () extends Element[IModel] {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
-    */
   def activities: IList[WorkflowActivity] = js.native
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
-    */
   @JSName("activities")
   val activities_FFlow: IList[IWorkflowActivity] = js.native
   
@@ -61,7 +48,7 @@ class Flow protected () extends Element[IModel] {
 }
 object Flow {
   
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Flow")
   @js.native
   val ^ : js.Any = js.native
   
@@ -79,7 +66,7 @@ object Flow {
     * of the parent Outcome element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createInOutcomeUnderFlow(container: Outcome): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOutcomeUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
@@ -90,19 +77,19 @@ object Flow {
     * of the parent Workflow element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createInWorkflowUnderFlow(container: Workflow): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Flow.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.Flow.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

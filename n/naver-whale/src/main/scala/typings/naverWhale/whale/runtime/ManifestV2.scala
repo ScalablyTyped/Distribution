@@ -1,7 +1,7 @@
 package typings.naverWhale.whale.runtime
 
 import typings.chrome.anon.Page
-import typings.naverWhale.naverWhaleNumbers.`2`
+import typings.naverWhale.naverWhaleInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

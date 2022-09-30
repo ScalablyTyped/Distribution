@@ -53,7 +53,7 @@ object mod {
         
         inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
         
-        inline def setStylesVarargs(value: GoogleMutantStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+        inline def setStylesVarargs(value: GoogleMutantStyle*): Self = StObject.set(x, "styles", js.Array(value*))
         
         inline def setType(value: GoogleMutantType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -104,7 +104,7 @@ object mod {
         
         inline def setStylersUndefined: Self = StObject.set(x, "stylers", js.undefined)
         
-        inline def setStylersVarargs(value: GoogleMutantStyler*): Self = StObject.set(x, "stylers", js.Array(value :_*))
+        inline def setStylersVarargs(value: GoogleMutantStyler*): Self = StObject.set(x, "stylers", js.Array(value*))
       }
     }
     

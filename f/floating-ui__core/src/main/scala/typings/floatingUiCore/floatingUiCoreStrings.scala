@@ -14,10 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object floatingUiCoreStrings {
   
   @js.native
-  sealed trait `DollarLeftcurlybracketSideRightcurlybracket-DollarLeftcurlybracketAlignmentRightcurlybracket` extends StObject
-  inline def `DollarLeftcurlybracketSideRightcurlybracket-DollarLeftcurlybracketAlignmentRightcurlybracket`: `DollarLeftcurlybracketSideRightcurlybracket-DollarLeftcurlybracketAlignmentRightcurlybracket` = "${Side}-${Alignment}".asInstanceOf[`DollarLeftcurlybracketSideRightcurlybracket-DollarLeftcurlybracketAlignmentRightcurlybracket`]
-  
-  @js.native
   sealed trait absolute
     extends StObject
        with Strategy

@@ -1,7 +1,6 @@
 package typings.reduxBootstrap
 
 import typings.history.mod.History
-import typings.history.mod.LocationState
 import typings.react.mod.global.JSX.Element
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
@@ -16,11 +15,6 @@ object rootMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(store: Store[js.Any, AnyAction], history: History[LocationState], routes: Element): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], history.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[Element]
-  inline def default(
-    store: Store[js.Any, AnyAction],
-    history: History[LocationState],
-    routes: Element,
-    routerProps: RouterProps
-  ): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], history.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], routerProps.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def default(store: Store[Any, AnyAction], history: History, routes: Element): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], history.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def default(store: Store[Any, AnyAction], history: History, routes: Element, routerProps: RouterProps): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], history.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], routerProps.asInstanceOf[js.Any])).asInstanceOf[Element]
 }

@@ -13,5 +13,7 @@ object packageInfoMod {
   inline def getBridgeVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBridgeVersion")().asInstanceOf[String]
   inline def getBridgeVersion(packageJsonPath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBridgeVersion")(packageJsonPath.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def identifyPackageFile(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyPackageFile")().asInstanceOf[js.UndefOr[String]]
+  
   inline def setBridgeVersion(version: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBridgeVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

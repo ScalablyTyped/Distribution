@@ -688,7 +688,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
-    def curve_C_CurveFactory_C[C /* <: CurveFactory */](): C = js.native
+    def curve_C_C[C /* <: CurveFactory */](): C = js.native
     
     /**
       * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
@@ -914,7 +914,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
-    def curve_C_CurveFactory_C[C /* <: CurveFactory */](): C = js.native
+    def curve_C_C[C /* <: CurveFactory */](): C = js.native
     
     /**
       * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
@@ -1441,7 +1441,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
-    def curve_C_UnionCurveFactoryCurveFactoryLineOnly_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
+    def curve_C_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
     
     /**
       * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
@@ -1552,7 +1552,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
-    def curve_C_UnionCurveFactoryCurveFactoryLineOnly_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
+    def curve_C_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
     
     /**
       * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.FirstDayOfWeekEnum")
 @js.native
-class FirstDayOfWeekEnum protected ()
+open class FirstDayOfWeekEnum protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.FirstDayOfWeekEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

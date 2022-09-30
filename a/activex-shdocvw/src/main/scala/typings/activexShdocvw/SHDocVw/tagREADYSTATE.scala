@@ -1,21 +1,21 @@
 package typings.activexShdocvw.SHDocVw
 
-import typings.activexShdocvw.activexShdocvwNumbers.`0`
-import typings.activexShdocvw.activexShdocvwNumbers.`1`
-import typings.activexShdocvw.activexShdocvwNumbers.`2`
-import typings.activexShdocvw.activexShdocvwNumbers.`3`
-import typings.activexShdocvw.activexShdocvwNumbers.`4`
+import typings.activexShdocvw.activexShdocvwInts.`0`
+import typings.activexShdocvw.activexShdocvwInts.`1`
+import typings.activexShdocvw.activexShdocvwInts.`2`
+import typings.activexShdocvw.activexShdocvwInts.`3`
+import typings.activexShdocvw.activexShdocvwInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShdocvw.activexShdocvwNumbers.`4`
-  - typings.activexShdocvw.activexShdocvwNumbers.`3`
-  - typings.activexShdocvw.activexShdocvwNumbers.`2`
-  - typings.activexShdocvw.activexShdocvwNumbers.`1`
-  - typings.activexShdocvw.activexShdocvwNumbers.`0`
+  - typings.activexShdocvw.activexShdocvwInts.`4`
+  - typings.activexShdocvw.activexShdocvwInts.`3`
+  - typings.activexShdocvw.activexShdocvwInts.`2`
+  - typings.activexShdocvw.activexShdocvwInts.`1`
+  - typings.activexShdocvw.activexShdocvwInts.`0`
 */
 trait tagREADYSTATE extends StObject
 object tagREADYSTATE {

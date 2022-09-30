@@ -28,7 +28,7 @@ object IPublishRequest {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: IPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: IPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     

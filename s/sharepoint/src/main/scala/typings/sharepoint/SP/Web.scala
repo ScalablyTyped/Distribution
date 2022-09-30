@@ -41,7 +41,7 @@ trait Web
   
   def getAvailableWebTemplates(lcid: Double, doIncludeCrossLanguage: Boolean): WebTemplateCollection = js.native
   
-  def getCatalog(typeCatalog: Double): List[Any] = js.native
+  def getCatalog(typeCatalog: Double): typings.sharepoint.SP.List[Any] = js.native
   
   def getChanges(query: ChangeQuery): ChangeCollection = js.native
   
@@ -52,7 +52,7 @@ trait Web
   def getFolderByServerRelativeUrl(serverRelativeUrl: String): Folder = js.native
   
   /** Available after March 2015 CU for SharePoint 2013*/
-  def getList(url: String): List[Any] = js.native
+  def getList(url: String): typings.sharepoint.SP.List[Any] = js.native
   
   def getPushNotificationSubscriber(deviceAppInstanceId: Guid): PushNotificationSubscriber = js.native
   
@@ -154,7 +154,7 @@ trait Web
   
   def get_siteLogoUrl(): String = js.native
   
-  def get_siteUserInfoList(): List[Any] = js.native
+  def get_siteUserInfoList(): typings.sharepoint.SP.List[Any] = js.native
   
   def get_siteUsers(): UserCollection = js.native
   

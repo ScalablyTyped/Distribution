@@ -225,12 +225,12 @@ trait IdentityStore extends Service {
   ): Request[ListGroupMembershipsForMemberResponse, AWSError] = js.native
   
   /**
-    * Lists the attribute name and value of the group that you specified in the search. We only support DisplayName as a valid filter attribute path currently, and filter is required. This API returns minimum attributes, including GroupId and group DisplayName in the response.
+    * Lists all groups in the identity store. Returns a paginated list of complete Group objects. Filtering for a Group by the DisplayName attribute is deprecated. Instead, use the GetGroupId API action.
     */
   def listGroups(): Request[ListGroupsResponse, AWSError] = js.native
   def listGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListGroupsResponse, Unit]): Request[ListGroupsResponse, AWSError] = js.native
   /**
-    * Lists the attribute name and value of the group that you specified in the search. We only support DisplayName as a valid filter attribute path currently, and filter is required. This API returns minimum attributes, including GroupId and group DisplayName in the response.
+    * Lists all groups in the identity store. Returns a paginated list of complete Group objects. Filtering for a Group by the DisplayName attribute is deprecated. Instead, use the GetGroupId API action.
     */
   def listGroups(params: ListGroupsRequest): Request[ListGroupsResponse, AWSError] = js.native
   def listGroups(
@@ -239,12 +239,12 @@ trait IdentityStore extends Service {
   ): Request[ListGroupsResponse, AWSError] = js.native
   
   /**
-    * Lists the attribute name and value of the user that you specified in the search. We only support UserName as a valid filter attribute path currently, and filter is required. This API returns minimum attributes, including UserId and UserName in the response.
+    * Lists all users in the identity store. Returns a paginated list of complete User objects. Filtering for a User by the UserName attribute is deprecated. Instead, use the GetUserId API action.
     */
   def listUsers(): Request[ListUsersResponse, AWSError] = js.native
   def listUsers(callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]): Request[ListUsersResponse, AWSError] = js.native
   /**
-    * Lists the attribute name and value of the user that you specified in the search. We only support UserName as a valid filter attribute path currently, and filter is required. This API returns minimum attributes, including UserId and UserName in the response.
+    * Lists all users in the identity store. Returns a paginated list of complete User objects. Filtering for a User by the UserName attribute is deprecated. Instead, use the GetUserId API action.
     */
   def listUsers(params: ListUsersRequest): Request[ListUsersResponse, AWSError] = js.native
   def listUsers(

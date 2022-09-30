@@ -19,7 +19,7 @@ object nanoflows {
     */
   @JSImport("mendixmodelsdk", "nanoflows.NanoflowParameterValue")
   @js.native
-  class NanoflowParameterValue protected ()
+  open class NanoflowParameterValue protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.nanoflows.NanoflowParameterValue {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

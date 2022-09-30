@@ -2,9 +2,9 @@ package typings.reactOnsenui.anon
 
 import typings.reactOnsenui.mod.ModifiersNumber
 import typings.reactOnsenui.mod.ModifiersString
-import typings.reactOnsenui.reactOnsenuiNumbers.`180`
-import typings.reactOnsenui.reactOnsenuiNumbers.`270`
-import typings.reactOnsenui.reactOnsenuiNumbers.`90`
+import typings.reactOnsenui.reactOnsenuiInts.`180`
+import typings.reactOnsenui.reactOnsenuiInts.`270`
+import typings.reactOnsenui.reactOnsenuiInts.`90`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

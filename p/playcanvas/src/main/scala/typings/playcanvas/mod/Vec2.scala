@@ -356,7 +356,7 @@ open class Vec2 () extends StObject {
   /**
     * Subtracts a 2-dimensional vector from another in place.
     *
-    * @param {Vec2} rhs - The vector to add to the specified vector.
+    * @param {Vec2} rhs - The vector to subtract from the specified vector.
     * @returns {Vec2} Self for chaining.
     * @example
     * var a = new pc.Vec2(10, 10);
@@ -372,8 +372,8 @@ open class Vec2 () extends StObject {
   /**
     * Subtracts two 2-dimensional vectors from one another and returns the result.
     *
-    * @param {Vec2} lhs - The first vector operand for the addition.
-    * @param {Vec2} rhs - The second vector operand for the addition.
+    * @param {Vec2} lhs - The first vector operand for the subtraction.
+    * @param {Vec2} rhs - The second vector operand for the subtraction.
     * @returns {Vec2} Self for chaining.
     * @example
     * var a = new pc.Vec2(10, 10);

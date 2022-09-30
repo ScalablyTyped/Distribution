@@ -71,18 +71,18 @@ import typings.vueCompilerCore.mod.TransformContext
 import typings.vueCompilerCore.mod.TransformOptions
 import typings.vueCompilerCore.mod.TransformPreset
 import typings.vueCompilerCore.mod.VNodeCall
-import typings.vueCompilerDom.vueCompilerDomNumbers.`50`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`51`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`52`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`53`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`54`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`55`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`56`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`57`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`58`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`59`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`60`
-import typings.vueCompilerDom.vueCompilerDomNumbers.`61`
+import typings.vueCompilerDom.vueCompilerDomInts.`50`
+import typings.vueCompilerDom.vueCompilerDomInts.`51`
+import typings.vueCompilerDom.vueCompilerDomInts.`52`
+import typings.vueCompilerDom.vueCompilerDomInts.`53`
+import typings.vueCompilerDom.vueCompilerDomInts.`54`
+import typings.vueCompilerDom.vueCompilerDomInts.`55`
+import typings.vueCompilerDom.vueCompilerDomInts.`56`
+import typings.vueCompilerDom.vueCompilerDomInts.`57`
+import typings.vueCompilerDom.vueCompilerDomInts.`58`
+import typings.vueCompilerDom.vueCompilerDomInts.`59`
+import typings.vueCompilerDom.vueCompilerDomInts.`60`
+import typings.vueCompilerDom.vueCompilerDomInts.`61`
 import typings.vueCompilerDom.vueCompilerDomStrings.component
 import typings.vueCompilerDom.vueCompilerDomStrings.directive
 import typings.vueCompilerDom.vueCompilerDomStrings.filter
@@ -353,10 +353,10 @@ object mod {
   inline def buildSlots(node: ElementNode, context: TransformContext): HasDynamicSlots = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSlots")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[HasDynamicSlots]
   inline def buildSlots(node: ElementNode, context: TransformContext, buildSlotFn: SlotFnBuilder): HasDynamicSlots = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSlots")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any], buildSlotFn.asInstanceOf[js.Any])).asInstanceOf[HasDynamicSlots]
   
-  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: ParserContext, loc: Null, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
-  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: ParserContext, loc: SourceLocation, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
-  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: TransformContext, loc: Null, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
-  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: TransformContext, loc: SourceLocation, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: ParserContext, loc: Null, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: ParserContext, loc: SourceLocation, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: TransformContext, loc: Null, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def checkCompatEnabled(key: CompilerDeprecationTypes, context: TransformContext, loc: SourceLocation, args: Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkCompatEnabled")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
   
   inline def compile(template: String): CodegenResult = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[CodegenResult]
   inline def compile(template: String, options: CompilerOptions): CodegenResult = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CodegenResult]
@@ -832,10 +832,10 @@ object mod {
     knownIds: Record[String, Double]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any], knownIds.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def warnDeprecation(key: CompilerDeprecationTypes, context: ParserContext, loc: Null, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def warnDeprecation(key: CompilerDeprecationTypes, context: ParserContext, loc: SourceLocation, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def warnDeprecation(key: CompilerDeprecationTypes, context: TransformContext, loc: Null, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def warnDeprecation(key: CompilerDeprecationTypes, context: TransformContext, loc: SourceLocation, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def warnDeprecation(key: CompilerDeprecationTypes, context: ParserContext, loc: Null, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def warnDeprecation(key: CompilerDeprecationTypes, context: ParserContext, loc: SourceLocation, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def warnDeprecation(key: CompilerDeprecationTypes, context: TransformContext, loc: Null, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def warnDeprecation(key: CompilerDeprecationTypes, context: TransformContext, loc: SourceLocation, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warnDeprecation")((scala.List(key.asInstanceOf[js.Any], context.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   trait DOMCompilerError
     extends StObject
@@ -858,18 +858,18 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`50`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`51`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`52`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`53`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`54`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`55`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`56`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`57`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`58`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`59`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`60`
-    - typings.vueCompilerDom.vueCompilerDomNumbers.`61`
+    - typings.vueCompilerDom.vueCompilerDomInts.`50`
+    - typings.vueCompilerDom.vueCompilerDomInts.`51`
+    - typings.vueCompilerDom.vueCompilerDomInts.`52`
+    - typings.vueCompilerDom.vueCompilerDomInts.`53`
+    - typings.vueCompilerDom.vueCompilerDomInts.`54`
+    - typings.vueCompilerDom.vueCompilerDomInts.`55`
+    - typings.vueCompilerDom.vueCompilerDomInts.`56`
+    - typings.vueCompilerDom.vueCompilerDomInts.`57`
+    - typings.vueCompilerDom.vueCompilerDomInts.`58`
+    - typings.vueCompilerDom.vueCompilerDomInts.`59`
+    - typings.vueCompilerDom.vueCompilerDomInts.`60`
+    - typings.vueCompilerDom.vueCompilerDomInts.`61`
   */
   trait DOMErrorCodes extends StObject
   object DOMErrorCodes {

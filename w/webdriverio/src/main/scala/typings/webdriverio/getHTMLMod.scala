@@ -10,6 +10,6 @@ object getHTMLMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
-  inline def default(includeSelectorTag: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(includeSelectorTag.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[String]]
+  inline def default(includeSelectorTag: Boolean): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(includeSelectorTag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

@@ -2,7 +2,7 @@ package typings.jsonLogicJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.jsonLogicJs.jsonLogicJsNumbers.`80`
+import typings.jsonLogicJs.jsonLogicJsInts.`80`
 import typings.jsonLogicJs.mod.^
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -47,7 +47,7 @@ type MAXIMUM_ALLOWED_BOUNDARY = `80`
 type Mapped[Tuple /* <: js.Array[Any] */, Result /* <: js.Array[Any] */, Count /* <: js.Array[Double] */] = Any | js.Array[Any] | Result
 
 type RenameToIn[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T as K extends 'in${Uppercase<string>}${Lowercase<string>}'? 'in' : K ]: T[K]}
+{[ K in keyof T as K extends / * template literal string: in${Uppercase<string>}${Lowercase<string>} * / string? / * template literal string: in * / string : K ]: T[K]}
   */ typings.jsonLogicJs.jsonLogicJsStrings.RenameToIn & TopLevel[T]
 
 /* Rewritten from type alias, can be one of: 

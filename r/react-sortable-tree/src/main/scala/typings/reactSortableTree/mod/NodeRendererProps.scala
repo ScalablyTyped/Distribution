@@ -3,18 +3,18 @@ package typings.reactSortableTree.mod
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
-import typings.reactDnd.connectorsMod.ConnectDragPreview
-import typings.reactDnd.connectorsMod.ConnectDragSource
-import typings.reactDnd.connectorsMod.ConnectableElement
 import typings.reactDnd.optionsMod.DragPreviewOptions
 import typings.reactDnd.optionsMod.DragSourceOptions
+import typings.reactDnd.typesConnectorsMod.ConnectDragPreview
+import typings.reactDnd.typesConnectorsMod.ConnectDragSource
+import typings.reactDnd.typesConnectorsMod.ConnectableElement
 import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeRendererProps extends StObject {
+trait NodeRendererProps[T] extends StObject {
   
   var buttons: js.UndefOr[js.Array[Element]] = js.undefined
   
@@ -30,9 +30,9 @@ trait NodeRendererProps extends StObject {
   
   var didDrop: Boolean
   
-  var draggedNode: js.UndefOr[TreeItem] = js.undefined
+  var draggedNode: js.UndefOr[TreeItem[T]] = js.undefined
   
-  var endDrag: js.Any
+  var endDrag: Any
   
   var icons: js.UndefOr[js.Array[Element]] = js.undefined
   
@@ -48,9 +48,9 @@ trait NodeRendererProps extends StObject {
   
   var lowerSiblingCounts: js.Array[Double]
   
-  var node: TreeItem
+  var node: TreeItem[T]
   
-  var parentNode: js.UndefOr[TreeItem] = js.undefined
+  var parentNode: js.UndefOr[TreeItem[T]] = js.undefined
   
   var path: NumberOrStringArray
   
@@ -58,11 +58,11 @@ trait NodeRendererProps extends StObject {
   
   var scaffoldBlockPxWidth: Double
   
-  var startDrag: js.Any
+  var startDrag: Any
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var subtitle: js.UndefOr[js.Function1[/* data */ NodeData, Element]] = js.undefined
+  var subtitle: js.UndefOr[js.Function1[/* data */ NodeData[T], Element]] = js.undefined
   
   var swapDepth: js.UndefOr[Double] = js.undefined
   
@@ -70,9 +70,9 @@ trait NodeRendererProps extends StObject {
   
   var swapLength: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[js.Function1[/* data */ NodeData, Element]] = js.undefined
+  var title: js.UndefOr[js.Function1[/* data */ NodeData[T], Element]] = js.undefined
   
-  var toggleChildrenVisibility: js.UndefOr[js.Function1[/* data */ NodeData, Unit]] = js.undefined
+  var toggleChildrenVisibility: js.UndefOr[js.Function1[/* data */ NodeData[T], Unit]] = js.undefined
   
   var treeId: String
   
@@ -80,36 +80,36 @@ trait NodeRendererProps extends StObject {
 }
 object NodeRendererProps {
   
-  inline def apply(
+  inline def apply[T](
     canDrag: Boolean,
     connectDragPreview: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null,
     connectDragSource: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragSourceOptions]) => ReactElement | Null,
     didDrop: Boolean,
-    endDrag: js.Any,
+    endDrag: Any,
     isDragging: Boolean,
     isOver: Boolean,
     isSearchFocus: Boolean,
     isSearchMatch: Boolean,
     listIndex: Double,
     lowerSiblingCounts: js.Array[Double],
-    node: TreeItem,
+    node: TreeItem[T],
     path: NumberOrStringArray,
     scaffoldBlockPxWidth: Double,
-    startDrag: js.Any,
+    startDrag: Any,
     treeId: String,
     treeIndex: Double
-  ): NodeRendererProps = {
+  ): NodeRendererProps[T] = {
     val __obj = js.Dynamic.literal(canDrag = canDrag.asInstanceOf[js.Any], connectDragPreview = js.Any.fromFunction2(connectDragPreview), connectDragSource = js.Any.fromFunction2(connectDragSource), didDrop = didDrop.asInstanceOf[js.Any], endDrag = endDrag.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isOver = isOver.asInstanceOf[js.Any], isSearchFocus = isSearchFocus.asInstanceOf[js.Any], isSearchMatch = isSearchMatch.asInstanceOf[js.Any], listIndex = listIndex.asInstanceOf[js.Any], lowerSiblingCounts = lowerSiblingCounts.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scaffoldBlockPxWidth = scaffoldBlockPxWidth.asInstanceOf[js.Any], startDrag = startDrag.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NodeRendererProps]
+    __obj.asInstanceOf[NodeRendererProps[T]]
   }
   
-  extension [Self <: NodeRendererProps](x: Self) {
+  extension [Self <: NodeRendererProps[?], T](x: Self & NodeRendererProps[T]) {
     
     inline def setButtons(value: js.Array[Element]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: Element*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Element*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setCanDrag(value: Boolean): Self = StObject.set(x, "canDrag", value.asInstanceOf[js.Any])
     
@@ -131,17 +131,17 @@ object NodeRendererProps {
     
     inline def setDidDrop(value: Boolean): Self = StObject.set(x, "didDrop", value.asInstanceOf[js.Any])
     
-    inline def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
+    inline def setDraggedNode(value: TreeItem[T]): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
     
     inline def setDraggedNodeUndefined: Self = StObject.set(x, "draggedNode", js.undefined)
     
-    inline def setEndDrag(value: js.Any): Self = StObject.set(x, "endDrag", value.asInstanceOf[js.Any])
+    inline def setEndDrag(value: Any): Self = StObject.set(x, "endDrag", value.asInstanceOf[js.Any])
     
     inline def setIcons(value: js.Array[Element]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setIconsVarargs(value: Element*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: Element*): Self = StObject.set(x, "icons", js.Array(value*))
     
     inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     
@@ -155,17 +155,17 @@ object NodeRendererProps {
     
     inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     
-    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
+    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value*))
     
-    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem[T]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    inline def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: TreeItem[T]): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
     inline def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setRowDirection(value: ltr | rtl): Self = StObject.set(x, "rowDirection", value.asInstanceOf[js.Any])
     
@@ -173,13 +173,13 @@ object NodeRendererProps {
     
     inline def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
     
-    inline def setStartDrag(value: js.Any): Self = StObject.set(x, "startDrag", value.asInstanceOf[js.Any])
+    inline def setStartDrag(value: Any): Self = StObject.set(x, "startDrag", value.asInstanceOf[js.Any])
     
     inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setSubtitle(value: /* data */ NodeData => Element): Self = StObject.set(x, "subtitle", js.Any.fromFunction1(value))
+    inline def setSubtitle(value: /* data */ NodeData[T] => Element): Self = StObject.set(x, "subtitle", js.Any.fromFunction1(value))
     
     inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
@@ -195,11 +195,11 @@ object NodeRendererProps {
     
     inline def setSwapLengthUndefined: Self = StObject.set(x, "swapLength", js.undefined)
     
-    inline def setTitle(value: /* data */ NodeData => Element): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+    inline def setTitle(value: /* data */ NodeData[T] => Element): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setToggleChildrenVisibility(value: /* data */ NodeData => Unit): Self = StObject.set(x, "toggleChildrenVisibility", js.Any.fromFunction1(value))
+    inline def setToggleChildrenVisibility(value: /* data */ NodeData[T] => Unit): Self = StObject.set(x, "toggleChildrenVisibility", js.Any.fromFunction1(value))
     
     inline def setToggleChildrenVisibilityUndefined: Self = StObject.set(x, "toggleChildrenVisibility", js.undefined)
     

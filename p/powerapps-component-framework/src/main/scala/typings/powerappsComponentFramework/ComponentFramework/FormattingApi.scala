@@ -18,18 +18,18 @@ object FormattingApi {
       * 3 - TimeZoneIndependent - Dates and time stored without conversion to UTC
       */
     /* Rewritten from type alias, can be one of: 
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`
-      - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`
+      - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3`
     */
     trait DateTimeFieldBehavior extends StObject
     object DateTimeFieldBehavior {
       
-      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`0`]
       
-      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`]
       
-      inline def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`]
+      inline def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`3`]
     }
   }
 }

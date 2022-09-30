@@ -2,15 +2,22 @@ package typings.googleCloudPubsub
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.anon.FnCall
+import typings.googleCloudPubsub.googleCloudPubsubStrings.FAILED_PRECONDITION
+import typings.googleCloudPubsub.googleCloudPubsubStrings.INVALID
+import typings.googleCloudPubsub.googleCloudPubsubStrings.OTHER
+import typings.googleCloudPubsub.googleCloudPubsubStrings.PERMISSION_DENIED
+import typings.googleCloudPubsub.googleCloudPubsubStrings.SUCCESS
 import typings.googleCloudPubsub.iamMod.IAM
 import typings.googleCloudPubsub.leaseManagerMod.FlowControlOptions
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
+import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IBigQueryConfig
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IDeadLetterPolicy
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IExpirationPolicy
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IPushConfig
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IRetryPolicy
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.ISubscription
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.PushConfig.IOidcToken
+import typings.googleCloudPubsub.protosMod.google.pubsub.v1.Subscription.State
 import typings.googleCloudPubsub.pubsubMod.DetachedCallback
 import typings.googleCloudPubsub.pubsubMod.DetachedResponse
 import typings.googleCloudPubsub.pubsubMod.EmptyCallback
@@ -26,21 +33,60 @@ import typings.googleCloudPubsub.snapshotMod.CreateSnapshotResponse
 import typings.googleCloudPubsub.snapshotMod.SeekCallback
 import typings.googleCloudPubsub.snapshotMod.SeekResponse
 import typings.googleCloudPubsub.snapshotMod.Snapshot
+import typings.googleCloudPubsub.subscriberMod.AckResponse
 import typings.googleCloudPubsub.subscriberMod.SubscriberOptions
 import typings.googleCloudPubsub.topicMod.Topic
 import typings.googleGax.gaxMod.CallOptions
 import typings.node.eventsMod.EventEmitter
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionMod {
   
+  @JSImport("@google-cloud/pubsub/build/src/subscription", "AckError")
+  @js.native
+  open class AckError protected ()
+    extends typings.googleCloudPubsub.subscriberMod.AckError {
+    def this(errorCode: AckResponse) = this()
+    def this(errorCode: AckResponse, message: String) = this()
+  }
+  
+  object AckResponses {
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscription", "AckResponses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscription", "AckResponses.FailedPrecondition")
+    @js.native
+    def FailedPrecondition: FAILED_PRECONDITION = js.native
+    inline def FailedPrecondition_=(x: FAILED_PRECONDITION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FailedPrecondition")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscription", "AckResponses.Invalid")
+    @js.native
+    def Invalid: INVALID = js.native
+    inline def Invalid_=(x: INVALID): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Invalid")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscription", "AckResponses.Other")
+    @js.native
+    def Other: OTHER = js.native
+    inline def Other_=(x: OTHER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Other")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscription", "AckResponses.PermissionDenied")
+    @js.native
+    def PermissionDenied: PERMISSION_DENIED = js.native
+    inline def PermissionDenied_=(x: PERMISSION_DENIED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PermissionDenied")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/pubsub/build/src/subscription", "AckResponses.Success")
+    @js.native
+    def Success: SUCCESS = js.native
+    inline def Success_=(x: SUCCESS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Success")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("@google-cloud/pubsub/build/src/subscription", "Subscription")
   @js.native
-  class Subscription protected () extends EventEmitter {
+  open class Subscription protected () extends EventEmitter {
     def this(pubsub: PubSub, name: String) = this()
     def this(pubsub: PubSub, name: String, options: SubscriptionOptions) = this()
     
@@ -50,39 +96,321 @@ object subscriptionMod {
       *
       * @private
       */
-    /* private */ var _listen: js.Any = js.native
+    /* private */ var _listen: Any = js.native
     
-    /* private */ var _subscriber: js.Any = js.native
+    /* private */ var _subscriber: Any = js.native
     
+    /**
+      * Closes the Subscription, once this is called you will no longer receive
+      * message events unless you call {Subscription#open} or add new message
+      * listeners.
+      *
+      * @param {function} [callback] The callback function.
+      * @param {?error} callback.err An error returned while closing the
+      *     Subscription.
+      *
+      * @example
+      * ```
+      * subscription.close(err => {
+      *   if (err) {
+      *     // Error handling omitted.
+      *   }
+      * });
+      *
+      * // If the callback is omitted a Promise will be returned.
+      * subscription.close().then(() => {});
+      * ```
+      */
     def close(): js.Promise[Unit] = js.native
     def close(callback: SubscriptionCloseCallback): Unit = js.native
     
+    /**
+      * Create a subscription.
+      *
+      * @see [Subscriptions: create API Documentation]{@link https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions/create}
+      *
+      * @throws {Error} If subscription name is omitted.
+      *
+      * @param {string} name The name of the subscription.
+      * @param {CreateSubscriptionRequest} [options] See a
+      *     [Subscription
+      * resource](https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions).
+      * @param {CreateSubscriptionCallback} [callback] Callback function.
+      * @returns {Promise<CreateSubscriptionResponse>}
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('newMessages');
+      * const callback = function(err, subscription, apiResponse) {};
+      *
+      * subscription.create(callback);
+      *
+      * ```
+      * @example With options
+      * ```
+      * subscription.create({
+      *   ackDeadlineSeconds: 90
+      * }, callback);
+      *
+      * ```
+      * @example If the callback is omitted, we'll return a Promise.
+      * ```
+      * const [sub, apiResponse] = await subscription.create();
+      * ```
+      */
     def create(): js.Promise[CreateSubscriptionResponse] = js.native
     def create(callback: CreateSubscriptionCallback): Unit = js.native
     def create(options: CreateSubscriptionOptions): js.Promise[CreateSubscriptionResponse] = js.native
     def create(options: CreateSubscriptionOptions, callback: CreateSubscriptionCallback): Unit = js.native
     
+    /**
+      * @typedef {array} CreateSnapshotResponse
+      * @property {Snapshot} 0 The new {@link Snapshot}.
+      * @property {object} 1 The full API response.
+      */
+    /**
+      * @callback CreateSnapshotCallback
+      * @param {?Error} err Request error, if any.
+      * @param {Snapshot} snapshot The new {@link Snapshot}.
+      * @param {object} apiResponse The full API response.
+      */
+    /**
+      * Create a snapshot with the given name.
+      *
+      * @param {string} name Name of the snapshot.
+      * @param {object} [gaxOpts] Request configuration options, outlined
+      *     here: https://googleapis.github.io/gax-nodejs/interfaces/CallOptions.html.
+      * @param {CreateSnapshotCallback} [callback] Callback function.
+      * @returns {Promise<CreateSnapshotResponse>}
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('my-subscription');
+      *
+      * const callback = (err, snapshot, apiResponse) => {
+      *   if (!err) {
+      *     // The snapshot was created successfully.
+      *   }
+      * };
+      *
+      * subscription.createSnapshot('my-snapshot', callback);
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.createSnapshot('my-snapshot').then((data) => {
+      *   const snapshot = data[0];
+      *   const apiResponse = data[1];
+      * });
+      * ```
+      */
     def createSnapshot(name: String): js.Promise[CreateSnapshotResponse] = js.native
     def createSnapshot(name: String, callback: CreateSnapshotCallback): Unit = js.native
     def createSnapshot(name: String, gaxOpts: CallOptions): js.Promise[CreateSnapshotResponse] = js.native
     def createSnapshot(name: String, gaxOpts: CallOptions, callback: CreateSnapshotCallback): Unit = js.native
     
+    /**
+      * Delete the subscription. Pull requests from the current subscription will
+      * be errored once unsubscription is complete.
+      *
+      * @see [Subscriptions: delete API Documentation]{@link https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions/delete}
+      *
+      * @param {object} [gaxOpts] Request configuration options, outlined
+      *     here: https://googleapis.github.io/gax-nodejs/interfaces/CallOptions.html.
+      * @param {function} [callback] The callback function.
+      * @param {?error} callback.err An error returned while making this
+      *     request.
+      * @param {object} callback.apiResponse Raw API response.
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('my-subscription');
+      *
+      * subscription.delete((err, apiResponse) => {});
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.delete().then((data) => {
+      *   const apiResponse = data[0];
+      * });
+      * ```
+      */
     def delete(): js.Promise[EmptyResponse] = js.native
     def delete(callback: EmptyCallback): Unit = js.native
     def delete(gaxOpts: CallOptions): js.Promise[EmptyResponse] = js.native
     def delete(gaxOpts: CallOptions, callback: EmptyCallback): Unit = js.native
     
+    /**
+      * @typedef {array} SubscriptionDetachedResponse
+      * @property {boolean} 0 Whether the subscription is detached.
+      */
+    /**
+      * @callback SubscriptionDetachedCallback
+      * @param {?Error} err Request error, if any.
+      * @param {boolean} exists Whether the subscription is detached.
+      */
+    /**
+      * Check if a subscription is detached.
+      *
+      * @param {SubscriptionDetachedCallback} [callback] Callback function.
+      * @returns {Promise<SubscriptionDetachedResponse>}
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('my-subscription');
+      *
+      * subscription.detached((err, exists) => {});
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.detached().then((data) => {
+      *   const detached = data[0];
+      * });
+      * ```
+      */
     def detached(): js.Promise[DetachedResponse] = js.native
     def detached(callback: DetachedCallback): Unit = js.native
     
+    /**
+      * @typedef {array} SubscriptionExistsResponse
+      * @property {boolean} 0 Whether the subscription exists
+      */
+    /**
+      * @callback SubscriptionExistsCallback
+      * @param {?Error} err Request error, if any.
+      * @param {boolean} exists Whether the subscription exists.
+      */
+    /**
+      * Check if a subscription exists.
+      *
+      * @param {SubscriptionExistsCallback} [callback] Callback function.
+      * @returns {Promise<SubscriptionExistsResponse>}
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('my-subscription');
+      *
+      * subscription.exists((err, exists) => {});
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.exists().then((data) => {
+      *   const exists = data[0];
+      * });
+      * ```
+      */
     def exists(): js.Promise[ExistsResponse] = js.native
     def exists(callback: ExistsCallback): Unit = js.native
     
+    /**
+      * @typedef {array} GetSubscriptionResponse
+      * @property {Subscription} 0 The {@link Subscription}.
+      * @property {object} 1 The full API response.
+      */
+    /**
+      * @callback GetSubscriptionCallback
+      * @param {?Error} err Request error, if any.
+      * @param {Subscription} subscription The {@link Subscription}.
+      * @param {object} apiResponse The full API response.
+      */
+    /**
+      * Get a subscription if it exists.
+      *
+      * @param {object} [gaxOpts] Request configuration options, outlined
+      *     here: https://googleapis.github.io/gax-nodejs/interfaces/CallOptions.html.
+      * @param {boolean} [gaxOpts.autoCreate=false] Automatically create the
+      *     subscription if it does not already exist.
+      * @param {GetSubscriptionCallback} [callback] Callback function.
+      * @returns {Promise<GetSubscriptionResponse>}
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('my-subscription');
+      *
+      * subscription.get((err, subscription, apiResponse) => {
+      *   // The `subscription` data has been populated.
+      * });
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.get().then((data) => {
+      *   const subscription = data[0];
+      *   const apiResponse = data[1];
+      * });
+      * ```
+      */
     def get(): js.Promise[GetSubscriptionResponse] = js.native
     def get(callback: GetSubscriptionCallback): Unit = js.native
     def get(gaxOpts: GetSubscriptionOptions): js.Promise[GetSubscriptionResponse] = js.native
     def get(gaxOpts: GetSubscriptionOptions, callback: GetSubscriptionCallback): Unit = js.native
     
+    /**
+      * @typedef {array} GetSubscriptionMetadataResponse
+      * @property {object} 0 The full API response.
+      */
+    /**
+      * @callback GetSubscriptionMetadataCallback
+      * @param {?Error} err Request error, if any.
+      * @param {object} apiResponse The full API response.
+      */
+    /**
+      * Fetches the subscriptions metadata.
+      *
+      * @param {object} [gaxOpts] Request configuration options, outlined
+      *     here: https://googleapis.github.io/gax-nodejs/interfaces/CallOptions.html.
+      * @param {GetSubscriptionMetadataCallback} [callback] Callback function.
+      * @returns {Promise<GetSubscriptionMetadataResponse>}
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('my-subscription');
+      *
+      * subscription.getMetadata((err, apiResponse) => {
+      *   if (err) {
+      *     // Error handling omitted.
+      *   }
+      * });
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.getMetadata().then((data) => {
+      *   const apiResponse = data[0];
+      * });
+      * ```
+      */
     def getMetadata(): js.Promise[GetSubscriptionMetadataResponse] = js.native
     def getMetadata(callback: GetSubscriptionMetadataCallback): Unit = js.native
     def getMetadata(gaxOpts: CallOptions): js.Promise[GetSubscriptionMetadataResponse] = js.native
@@ -99,6 +427,64 @@ object subscriptionMod {
     
     var metadata: js.UndefOr[ISubscription] = js.native
     
+    /**
+      * @typedef {array} ModifyPushConfigResponse
+      * @property {object} 0 The full API response.
+      */
+    /**
+      * @callback ModifyPushConfigCallback
+      * @param {?Error} err Request error, if any.
+      * @param {object} apiResponse The full API response.
+      */
+    /**
+      * Modify the push config for the subscription.
+      *
+      * @param {object} config The push config.
+      * @param {string} config.pushEndpoint A URL locating the endpoint to which
+      *     messages should be published.
+      * @param {object} config.attributes [PushConfig attributes](https://cloud.google.com/pubsub/docs/reference/rpc/google.pubsub.v1#google.pubsub.v1.PushConfig).
+      * @param {object} config.oidcToken If specified, Pub/Sub will generate and
+      *     attach an OIDC JWT token as an `Authorization` header in the HTTP
+      *     request for every pushed message. This object should have the same
+      *     structure as [OidcToken]{@link google.pubsub.v1.OidcToken}
+      * @param {object} [gaxOpts] Request configuration options, outlined
+      *     here: https://googleapis.github.io/gax-nodejs/interfaces/CallOptions.html.
+      * @param {ModifyPushConfigCallback} [callback] Callback function.
+      * @returns {Promise<ModifyPushConfigResponse>}
+      *
+      * @example
+      * ```
+      * const {PubSub} = require('@google-cloud/pubsub');
+      * const pubsub = new PubSub();
+      *
+      * const topic = pubsub.topic('my-topic');
+      * const subscription = topic.subscription('my-subscription');
+      *
+      * const pushConfig = {
+      *   pushEndpoint: 'https://mydomain.com/push',
+      *   attributes: {
+      *     key: 'value'
+      *   },
+      *   oidcToken: {
+      *     serviceAccountEmail: 'myproject@appspot.gserviceaccount.com',
+      *     audience: 'myaudience'
+      *   }
+      * };
+      *
+      * subscription.modifyPushConfig(pushConfig, (err, apiResponse) => {
+      *   if (err) {
+      *     // Error handling omitted.
+      *   }
+      * });
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.modifyPushConfig(pushConfig).then((data) => {
+      *   const apiResponse = data[0];
+      * });
+      * ```
+      */
     def modifyPushConfig(config: PushConfig): js.Promise[EmptyResponse] = js.native
     def modifyPushConfig(config: PushConfig, callback: EmptyCallback): Unit = js.native
     def modifyPushConfig(config: PushConfig, gaxOpts: CallOptions): js.Promise[EmptyResponse] = js.native
@@ -113,6 +499,7 @@ object subscriptionMod {
       * new `message` event listener which will also re-open the Subscription.
       *
       * @example
+      * ```
       * subscription.on('message', message => message.ack());
       *
       * // Close the subscription.
@@ -126,6 +513,7 @@ object subscriptionMod {
       *
       * // Resume receiving messages.
       * subscription.open();
+      * ```
       */
     def open(): Unit = js.native
     
@@ -140,15 +528,92 @@ object subscriptionMod {
     @JSName("request")
     var request_Original: FnCall = js.native
     
+    /**
+      * @typedef {array} SeekResponse
+      * @property {object} 0 The full API response.
+      */
+    /**
+      * @callback SeekCallback
+      * @param {?Error} err Request error, if any.
+      * @param {object} apiResponse The full API response.
+      */
+    /**
+      * Seeks an existing subscription to a point in time or a given snapshot.
+      *
+      * @param {string|date} snapshot The point to seek to. This will accept the
+      *     name of the snapshot or a Date object.
+      * @param {object} [gaxOpts] Request configuration options, outlined
+      *     here: https://googleapis.github.io/gax-nodejs/interfaces/CallOptions.html.
+      * @param {SeekCallback} [callback] Callback function.
+      * @returns {Promise<SeekResponse>}
+      *
+      * @example
+      * ```
+      * const callback = (err, resp) => {
+      *   if (!err) {
+      *     // Seek was successful.
+      *   }
+      * };
+      *
+      * subscription.seek('my-snapshot', callback);
+      *
+      * //-
+      * // Alternatively, to specify a certain point in time, you can provide a
+      * Date
+      * // object.
+      * //-
+      * const date = new Date('October 21 2015');
+      *
+      * subscription.seek(date, callback);
+      * ```
+      */
     def seek(snapshot: String): js.Promise[SeekResponse] = js.native
     def seek(snapshot: String, callback: SeekCallback): Unit = js.native
     def seek(snapshot: String, gaxOpts: CallOptions): js.Promise[SeekResponse] = js.native
     def seek(snapshot: String, gaxOpts: CallOptions, callback: SeekCallback): Unit = js.native
-    def seek(snapshot: Date): js.Promise[SeekResponse] = js.native
-    def seek(snapshot: Date, callback: SeekCallback): Unit = js.native
-    def seek(snapshot: Date, gaxOpts: CallOptions): js.Promise[SeekResponse] = js.native
-    def seek(snapshot: Date, gaxOpts: CallOptions, callback: SeekCallback): Unit = js.native
+    def seek(snapshot: js.Date): js.Promise[SeekResponse] = js.native
+    def seek(snapshot: js.Date, callback: SeekCallback): Unit = js.native
+    def seek(snapshot: js.Date, gaxOpts: CallOptions): js.Promise[SeekResponse] = js.native
+    def seek(snapshot: js.Date, gaxOpts: CallOptions, callback: SeekCallback): Unit = js.native
     
+    /**
+      * @typedef {array} SetSubscriptionMetadataResponse
+      * @property {object} 0 The full API response.
+      */
+    /**
+      * @callback SetSubscriptionMetadataCallback
+      * @param {?Error} err Request error, if any.
+      * @param {object} apiResponse The full API response.
+      */
+    /**
+      * Update the subscription object.
+      *
+      * @param {object} metadata The subscription metadata.
+      * @param {object} [gaxOpts] Request configuration options, outlined
+      *     here: https://googleapis.github.io/gax-nodejs/interfaces/CallOptions.html.
+      * @param {SetSubscriptionMetadataCallback} [callback] Callback function.
+      * @returns {Promise<SetSubscriptionMetadataResponse>}
+      *
+      * @example
+      * ```
+      * const metadata = {
+      *   key: 'value'
+      * };
+      *
+      * subscription.setMetadata(metadata, (err, apiResponse) => {
+      *   if (err) {
+      *     // Error handling omitted.
+      *   }
+      * });
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * subscription.setMetadata(metadata).then((data) => {
+      *   const apiResponse = data[0];
+      * });
+      * ```
+      */
     def setMetadata(metadata: SubscriptionMetadata): js.Promise[SetSubscriptionMetadataResponse] = js.native
     def setMetadata(metadata: SubscriptionMetadata, callback: SetSubscriptionMetadataCallback): Unit = js.native
     def setMetadata(metadata: SubscriptionMetadata, gaxOpts: CallOptions): js.Promise[SetSubscriptionMetadataResponse] = js.native
@@ -171,7 +636,9 @@ object subscriptionMod {
       * @returns {Snapshot}
       *
       * @example
+      * ```
       * const snapshot = subscription.snapshot('my-snapshot');
+      * ```
       */
     def snapshot(name: String): Snapshot = js.native
     
@@ -207,9 +674,13 @@ object subscriptionMod {
     
     var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
     
+    var bigqueryConfig: js.UndefOr[IBigQueryConfig | Null] = js.undefined
+    
     var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.undefined
     
     var detached: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var enableExactlyOnceDelivery: js.UndefOr[Boolean | Null] = js.undefined
     
     var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
     
@@ -237,7 +708,13 @@ object subscriptionMod {
     
     var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.undefined
     
+    var state: js.UndefOr[
+        State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.pubsub.v1.Subscription.State * / any */ String) | Null
+      ] = js.undefined
+    
     var topic: js.UndefOr[String | Null] = js.undefined
+    
+    var topicMessageRetentionDuration: js.UndefOr[IDuration | Null] = js.undefined
   }
   object CreateSubscriptionOptions {
     
@@ -254,6 +731,12 @@ object subscriptionMod {
       
       inline def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
       
+      inline def setBigqueryConfig(value: IBigQueryConfig): Self = StObject.set(x, "bigqueryConfig", value.asInstanceOf[js.Any])
+      
+      inline def setBigqueryConfigNull: Self = StObject.set(x, "bigqueryConfig", null)
+      
+      inline def setBigqueryConfigUndefined: Self = StObject.set(x, "bigqueryConfig", js.undefined)
+      
       inline def setDeadLetterPolicy(value: IDeadLetterPolicy): Self = StObject.set(x, "deadLetterPolicy", value.asInstanceOf[js.Any])
       
       inline def setDeadLetterPolicyNull: Self = StObject.set(x, "deadLetterPolicy", null)
@@ -265,6 +748,12 @@ object subscriptionMod {
       inline def setDetachedNull: Self = StObject.set(x, "detached", null)
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      
+      inline def setEnableExactlyOnceDelivery(value: Boolean): Self = StObject.set(x, "enableExactlyOnceDelivery", value.asInstanceOf[js.Any])
+      
+      inline def setEnableExactlyOnceDeliveryNull: Self = StObject.set(x, "enableExactlyOnceDelivery", null)
+      
+      inline def setEnableExactlyOnceDeliveryUndefined: Self = StObject.set(x, "enableExactlyOnceDelivery", js.undefined)
       
       inline def setEnableMessageOrdering(value: Boolean): Self = StObject.set(x, "enableMessageOrdering", value.asInstanceOf[js.Any])
       
@@ -334,7 +823,21 @@ object subscriptionMod {
       
       inline def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
       
+      inline def setState(
+        value: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.pubsub.v1.Subscription.State * / any */ String)
+      ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateNull: Self = StObject.set(x, "state", null)
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      
       inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      
+      inline def setTopicMessageRetentionDuration(value: IDuration): Self = StObject.set(x, "topicMessageRetentionDuration", value.asInstanceOf[js.Any])
+      
+      inline def setTopicMessageRetentionDurationNull: Self = StObject.set(x, "topicMessageRetentionDuration", null)
+      
+      inline def setTopicMessageRetentionDurationUndefined: Self = StObject.set(x, "topicMessageRetentionDuration", js.undefined)
       
       inline def setTopicNull: Self = StObject.set(x, "topic", null)
       
@@ -391,16 +894,20 @@ object subscriptionMod {
   
   type SubscriptionCallback = ResourceCallback[Subscription, ISubscription]
   
-  type SubscriptionCloseCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
+  type SubscriptionCloseCallback = js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   
   /* Inlined {  messageRetentionDuration :@google-cloud/pubsub.@google-cloud/pubsub/build/protos/protos.google.protobuf.IDuration | number | undefined,   pushEndpoint :string | undefined,   oidcToken :@google-cloud/pubsub.@google-cloud/pubsub/build/src/subscription.OidcToken | undefined} & @google-cloud/pubsub.@google-cloud/pubsub/build/src/pubsub.Omit<@google-cloud/pubsub.@google-cloud/pubsub/build/protos/protos.google.pubsub.v1.ISubscription, 'messageRetentionDuration'> */
   trait SubscriptionMetadata extends StObject {
     
     var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
     
+    var bigqueryConfig: js.UndefOr[IBigQueryConfig | Null] = js.undefined
+    
     var deadLetterPolicy: js.UndefOr[IDeadLetterPolicy | Null] = js.undefined
     
     var detached: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var enableExactlyOnceDelivery: js.UndefOr[Boolean | Null] = js.undefined
     
     var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
     
@@ -424,7 +931,13 @@ object subscriptionMod {
     
     var retryPolicy: js.UndefOr[IRetryPolicy | Null] = js.undefined
     
+    var state: js.UndefOr[
+        State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.pubsub.v1.Subscription.State * / any */ String) | Null
+      ] = js.undefined
+    
     var topic: js.UndefOr[String | Null] = js.undefined
+    
+    var topicMessageRetentionDuration: js.UndefOr[IDuration | Null] = js.undefined
   }
   object SubscriptionMetadata {
     
@@ -441,6 +954,12 @@ object subscriptionMod {
       
       inline def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
       
+      inline def setBigqueryConfig(value: IBigQueryConfig): Self = StObject.set(x, "bigqueryConfig", value.asInstanceOf[js.Any])
+      
+      inline def setBigqueryConfigNull: Self = StObject.set(x, "bigqueryConfig", null)
+      
+      inline def setBigqueryConfigUndefined: Self = StObject.set(x, "bigqueryConfig", js.undefined)
+      
       inline def setDeadLetterPolicy(value: IDeadLetterPolicy): Self = StObject.set(x, "deadLetterPolicy", value.asInstanceOf[js.Any])
       
       inline def setDeadLetterPolicyNull: Self = StObject.set(x, "deadLetterPolicy", null)
@@ -452,6 +971,12 @@ object subscriptionMod {
       inline def setDetachedNull: Self = StObject.set(x, "detached", null)
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      
+      inline def setEnableExactlyOnceDelivery(value: Boolean): Self = StObject.set(x, "enableExactlyOnceDelivery", value.asInstanceOf[js.Any])
+      
+      inline def setEnableExactlyOnceDeliveryNull: Self = StObject.set(x, "enableExactlyOnceDelivery", null)
+      
+      inline def setEnableExactlyOnceDeliveryUndefined: Self = StObject.set(x, "enableExactlyOnceDelivery", js.undefined)
       
       inline def setEnableMessageOrdering(value: Boolean): Self = StObject.set(x, "enableMessageOrdering", value.asInstanceOf[js.Any])
       
@@ -513,7 +1038,21 @@ object subscriptionMod {
       
       inline def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
       
+      inline def setState(
+        value: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.pubsub.v1.Subscription.State * / any */ String)
+      ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateNull: Self = StObject.set(x, "state", null)
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      
       inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      
+      inline def setTopicMessageRetentionDuration(value: IDuration): Self = StObject.set(x, "topicMessageRetentionDuration", value.asInstanceOf[js.Any])
+      
+      inline def setTopicMessageRetentionDurationNull: Self = StObject.set(x, "topicMessageRetentionDuration", null)
+      
+      inline def setTopicMessageRetentionDurationUndefined: Self = StObject.set(x, "topicMessageRetentionDuration", js.undefined)
       
       inline def setTopicNull: Self = StObject.set(x, "topic", null)
       

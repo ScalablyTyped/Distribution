@@ -1,6 +1,29 @@
 package typings.simplSchema
 
-import typings.std.RegExp
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StringDictionary
+import typings.meteor.checkMod.Match.Matcher
+import typings.meteor.checkMod.Match.Pattern
+import typings.simplSchema.mod.IntegerSchema
+import typings.simplSchema.mod.SchemaDefinition
+import typings.simplSchema.mod.SimpleSchema
+import typings.simplSchema.mod.SimpleSchemaDefinition
+import typings.simplSchema.mod.SimpleSchemaMessagesDict
+import typings.simplSchema.mod.SimpleSchemaOptions
+import typings.simplSchema.mod.ValidationOption
+import typings.simplSchema.mod.Validator
+import typings.simplSchema.mod.ValidatorOption
+import typings.simplSchema.simplSchemaBooleans.`false`
+import typings.simplSchema.simplSchemaBooleans.`true`
+import typings.std.ArrayConstructor
+import typings.std.BooleanConstructor
+import typings.std.DateConstructor
+import typings.std.FunctionConstructor
+import typings.std.NumberConstructor
+import typings.std.ObjectConstructor
+import typings.std.Record
+import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,42 +131,42 @@ object anon {
   
   trait Domain extends StObject {
     
-    var Domain: RegExp
+    var Domain: js.RegExp
     
-    var Email: RegExp
+    var Email: js.RegExp
     
-    var EmailWithTLD: RegExp
+    var EmailWithTLD: js.RegExp
     
-    var IP: RegExp
+    var IP: js.RegExp
     
-    var IPv4: RegExp
+    var IPv4: js.RegExp
     
-    var IPv6: RegExp
+    var IPv6: js.RegExp
     
-    var Id: RegExp
+    var Id: js.RegExp
     
-    var Phone: RegExp
+    var Phone: js.RegExp
     
-    var Url: RegExp
+    var Url: js.RegExp
     
-    var WeakDomain: RegExp
+    var WeakDomain: js.RegExp
     
-    var ZipCode: RegExp
+    var ZipCode: js.RegExp
   }
   object Domain {
     
     inline def apply(
-      Domain: RegExp,
-      Email: RegExp,
-      EmailWithTLD: RegExp,
-      IP: RegExp,
-      IPv4: RegExp,
-      IPv6: RegExp,
-      Id: RegExp,
-      Phone: RegExp,
-      Url: RegExp,
-      WeakDomain: RegExp,
-      ZipCode: RegExp
+      Domain: js.RegExp,
+      Email: js.RegExp,
+      EmailWithTLD: js.RegExp,
+      IP: js.RegExp,
+      IPv4: js.RegExp,
+      IPv6: js.RegExp,
+      Id: js.RegExp,
+      Phone: js.RegExp,
+      Url: js.RegExp,
+      WeakDomain: js.RegExp,
+      ZipCode: js.RegExp
     ): Domain = {
       val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], EmailWithTLD = EmailWithTLD.asInstanceOf[js.Any], IP = IP.asInstanceOf[js.Any], IPv4 = IPv4.asInstanceOf[js.Any], IPv6 = IPv6.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Phone = Phone.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any], WeakDomain = WeakDomain.asInstanceOf[js.Any], ZipCode = ZipCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Domain]
@@ -151,27 +174,27 @@ object anon {
     
     extension [Self <: Domain](x: Self) {
       
-      inline def setDomain(value: RegExp): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: js.RegExp): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
       
-      inline def setEmail(value: RegExp): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: js.RegExp): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       
-      inline def setEmailWithTLD(value: RegExp): Self = StObject.set(x, "EmailWithTLD", value.asInstanceOf[js.Any])
+      inline def setEmailWithTLD(value: js.RegExp): Self = StObject.set(x, "EmailWithTLD", value.asInstanceOf[js.Any])
       
-      inline def setIP(value: RegExp): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
+      inline def setIP(value: js.RegExp): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
       
-      inline def setIPv4(value: RegExp): Self = StObject.set(x, "IPv4", value.asInstanceOf[js.Any])
+      inline def setIPv4(value: js.RegExp): Self = StObject.set(x, "IPv4", value.asInstanceOf[js.Any])
       
-      inline def setIPv6(value: RegExp): Self = StObject.set(x, "IPv6", value.asInstanceOf[js.Any])
+      inline def setIPv6(value: js.RegExp): Self = StObject.set(x, "IPv6", value.asInstanceOf[js.Any])
       
-      inline def setId(value: RegExp): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.RegExp): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      inline def setPhone(value: RegExp): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: js.RegExp): Self = StObject.set(x, "Phone", value.asInstanceOf[js.Any])
       
-      inline def setUrl(value: RegExp): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: js.RegExp): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
       
-      inline def setWeakDomain(value: RegExp): Self = StObject.set(x, "WeakDomain", value.asInstanceOf[js.Any])
+      inline def setWeakDomain(value: js.RegExp): Self = StObject.set(x, "WeakDomain", value.asInstanceOf[js.Any])
       
-      inline def setZipCode(value: RegExp): Self = StObject.set(x, "ZipCode", value.asInstanceOf[js.Any])
+      inline def setZipCode(value: js.RegExp): Self = StObject.set(x, "ZipCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,6 +215,22 @@ object anon {
     }
   }
   
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(value: Any, pattern: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(string))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: Boolean): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(boolean))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: Double): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(number))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: Null): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(null))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: Unit): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(undefined))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: BooleanConstructor): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(BooleanConstructor))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: FunctionConstructor): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(FunctionConstructor))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: NumberConstructor): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(NumberConstructor))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: ObjectConstructor): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(ObjectConstructor))),IArray())))*/ Boolean = js.native
+    def apply(value: Any, pattern: StringConstructor): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(StringConstructor))),IArray())))*/ Boolean = js.native
+    def apply[T /* <: (Instantiable1[/* args (repeated) */ Any, Any]) | js.Array[Pattern] | StringDictionary[Pattern] | Matcher[Any] */](value: Any, pattern: T): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(meteor), TsIdentModule(None,List(meteor, check)), TsIdentSimple(Match), TsIdentSimple(PatternMatch))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())))*/ Boolean = js.native
+  }
+  
   trait KeepArrays extends StObject {
     
     var keepArrays: js.UndefOr[Boolean] = js.undefined
@@ -208,6 +247,248 @@ object anon {
       inline def setKeepArrays(value: Boolean): Self = StObject.set(x, "keepArrays", value.asInstanceOf[js.Any])
       
       inline def setKeepArraysUndefined: Self = StObject.set(x, "keepArrays", js.undefined)
+    }
+  }
+  
+  trait Label extends StObject {
+    
+    var label: String
+    
+    var regExp: String
+  }
+  object Label {
+    
+    inline def apply(label: String, regExp: String): Label = {
+      val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], regExp = regExp.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Label]
+    }
+    
+    extension [Self <: Label](x: Self) {
+      
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setRegExp(value: String): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Messages extends StObject {
+    
+    var messages: SimpleSchemaMessagesDict
+  }
+  object Messages {
+    
+    inline def apply(messages: SimpleSchemaMessagesDict): Messages = {
+      val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Messages]
+    }
+    
+    extension [Self <: Messages](x: Self) {
+      
+      inline def setMessages(value: SimpleSchemaMessagesDict): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait TypeofSimpleSchema
+    extends StObject
+       with Instantiable1[/* schema */ SimpleSchemaDefinition, SimpleSchema]
+       with Instantiable2[/* schema */ SimpleSchemaDefinition, /* options */ SimpleSchemaOptions, SimpleSchema] {
+    
+    var ErrorTypes: BADDATE = js.native
+    
+    var Integer: IntegerSchema = js.native
+    
+    var RegEx: Domain = js.native
+    
+    def addValidator(validator: Validator): Unit = js.native
+    
+    def extendOptions(options: js.Array[String]): Unit = js.native
+    
+    def isSimpleSchema(obj: Any): Boolean = js.native
+    
+    def oneOf(
+      types: (js.RegExp | SchemaDefinition | BooleanConstructor | StringConstructor | NumberConstructor | DateConstructor | ArrayConstructor | IntegerSchema)*
+    ): SimpleSchema = js.native
+    
+    def setDefaultMessages(messages: Messages): Unit = js.native
+    
+    def validate(obj: Any, schema: SimpleSchema): Unit = js.native
+    def validate(obj: Any, schema: SimpleSchema, options: ValidationOption): Unit = js.native
+  }
+  
+  /* Inlined {  clean :false | undefined} & simpl-schema.simpl-schema.ValidationOption */
+  trait cleanfalseundefinedValida
+    extends StObject
+       with ValidatorOption {
+    
+    var clean: js.UndefOr[`false`] = js.undefined
+    
+    var extendedCustomContext: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var keys: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var modifier: js.UndefOr[Boolean] = js.undefined
+    
+    var upsert: js.UndefOr[Boolean] = js.undefined
+  }
+  object cleanfalseundefinedValida {
+    
+    inline def apply(): cleanfalseundefinedValida = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[cleanfalseundefinedValida]
+    }
+    
+    extension [Self <: cleanfalseundefinedValida](x: Self) {
+      
+      inline def setClean(value: `false`): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      
+      inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+      
+      inline def setExtendedCustomContext(value: Record[String, Any]): Self = StObject.set(x, "extendedCustomContext", value.asInstanceOf[js.Any])
+      
+      inline def setExtendedCustomContextUndefined: Self = StObject.set(x, "extendedCustomContext", js.undefined)
+      
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
+      
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+      
+      inline def setModifier(value: Boolean): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+      
+      inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+      
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    }
+  }
+  
+  /* Inlined {  clean :true} & simpl-schema.simpl-schema.ValidationOption & simpl-schema.simpl-schema.CleanOption */
+  trait cleantrueValidationOption
+    extends StObject
+       with ValidatorOption {
+    
+    var autoConvert: js.UndefOr[Boolean] = js.undefined
+    
+    var clean: `true`
+    
+    var extendAutoValueContext: js.UndefOr[Boolean] = js.undefined
+    
+    var extendedCustomContext: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var filter: js.UndefOr[Boolean] = js.undefined
+    
+    var getAutoValues: js.UndefOr[Boolean] = js.undefined
+    
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var isModifier: js.UndefOr[Boolean] = js.undefined
+    
+    var isUpsert: js.UndefOr[Boolean] = js.undefined
+    
+    var keys: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var modifier: js.UndefOr[Boolean] = js.undefined
+    
+    var mongoObject: js.UndefOr[Boolean] = js.undefined
+    
+    var mutate: js.UndefOr[Boolean] = js.undefined
+    
+    var removeEmptyStrings: js.UndefOr[Boolean] = js.undefined
+    
+    var removeNullsFromArrays: js.UndefOr[Boolean] = js.undefined
+    
+    var trimStrings: js.UndefOr[Boolean] = js.undefined
+    
+    var upsert: js.UndefOr[Boolean] = js.undefined
+  }
+  object cleantrueValidationOption {
+    
+    inline def apply(): cleantrueValidationOption = {
+      val __obj = js.Dynamic.literal(clean = true)
+      __obj.asInstanceOf[cleantrueValidationOption]
+    }
+    
+    extension [Self <: cleantrueValidationOption](x: Self) {
+      
+      inline def setAutoConvert(value: Boolean): Self = StObject.set(x, "autoConvert", value.asInstanceOf[js.Any])
+      
+      inline def setAutoConvertUndefined: Self = StObject.set(x, "autoConvert", js.undefined)
+      
+      inline def setClean(value: `true`): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      
+      inline def setExtendAutoValueContext(value: Boolean): Self = StObject.set(x, "extendAutoValueContext", value.asInstanceOf[js.Any])
+      
+      inline def setExtendAutoValueContextUndefined: Self = StObject.set(x, "extendAutoValueContext", js.undefined)
+      
+      inline def setExtendedCustomContext(value: Record[String, Any]): Self = StObject.set(x, "extendedCustomContext", value.asInstanceOf[js.Any])
+      
+      inline def setExtendedCustomContextUndefined: Self = StObject.set(x, "extendedCustomContext", js.undefined)
+      
+      inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setGetAutoValues(value: Boolean): Self = StObject.set(x, "getAutoValues", value.asInstanceOf[js.Any])
+      
+      inline def setGetAutoValuesUndefined: Self = StObject.set(x, "getAutoValues", js.undefined)
+      
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
+      
+      inline def setIsModifier(value: Boolean): Self = StObject.set(x, "isModifier", value.asInstanceOf[js.Any])
+      
+      inline def setIsModifierUndefined: Self = StObject.set(x, "isModifier", js.undefined)
+      
+      inline def setIsUpsert(value: Boolean): Self = StObject.set(x, "isUpsert", value.asInstanceOf[js.Any])
+      
+      inline def setIsUpsertUndefined: Self = StObject.set(x, "isUpsert", js.undefined)
+      
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+      
+      inline def setModifier(value: Boolean): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+      
+      inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+      
+      inline def setMongoObject(value: Boolean): Self = StObject.set(x, "mongoObject", value.asInstanceOf[js.Any])
+      
+      inline def setMongoObjectUndefined: Self = StObject.set(x, "mongoObject", js.undefined)
+      
+      inline def setMutate(value: Boolean): Self = StObject.set(x, "mutate", value.asInstanceOf[js.Any])
+      
+      inline def setMutateUndefined: Self = StObject.set(x, "mutate", js.undefined)
+      
+      inline def setRemoveEmptyStrings(value: Boolean): Self = StObject.set(x, "removeEmptyStrings", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveEmptyStringsUndefined: Self = StObject.set(x, "removeEmptyStrings", js.undefined)
+      
+      inline def setRemoveNullsFromArrays(value: Boolean): Self = StObject.set(x, "removeNullsFromArrays", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveNullsFromArraysUndefined: Self = StObject.set(x, "removeNullsFromArrays", js.undefined)
+      
+      inline def setTrimStrings(value: Boolean): Self = StObject.set(x, "trimStrings", value.asInstanceOf[js.Any])
+      
+      inline def setTrimStringsUndefined: Self = StObject.set(x, "trimStrings", js.undefined)
+      
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
 }

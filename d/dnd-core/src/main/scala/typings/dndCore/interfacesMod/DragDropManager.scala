@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DragDropManager extends StObject {
   
-  def dispatch(action: js.Any): Unit
+  def dispatch(action: Any): Unit
   
   def getActions(): DragDropActions
   
@@ -19,7 +19,7 @@ trait DragDropManager extends StObject {
 object DragDropManager {
   
   inline def apply(
-    dispatch: js.Any => Unit,
+    dispatch: Any => Unit,
     getActions: () => DragDropActions,
     getBackend: () => Backend,
     getMonitor: () => DragDropMonitor,
@@ -31,7 +31,7 @@ object DragDropManager {
   
   extension [Self <: DragDropManager](x: Self) {
     
-    inline def setDispatch(value: js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+    inline def setDispatch(value: Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     
     inline def setGetActions(value: () => DragDropActions): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
     

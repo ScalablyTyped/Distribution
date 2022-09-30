@@ -1,7 +1,7 @@
 
 # Scala.js typings for sass
 
-Typings are for version 1.16
+Typings are for version 1.54.9
 
 ## Library description:
 A pure JavaScript implementation of Sass.
@@ -10,10 +10,10 @@ A pure JavaScript implementation of Sass.
 | ------------------ | :-------------: |
 | Full name          | sass |
 | Keywords           | style, scss, sass, preprocessor, css |
-| # releases         | 66 |
-| # dependents       | 1403 |
-| # downloads        | 120416373 |
-| # stars            | 23 |
+| # releases         | 91 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6375426333333336E7 |
+| # stars            | 3253.0 |
 
 ## Links
 - [Homepage](https://github.com/sass/dart-sass)
@@ -24,7 +24,7 @@ A pure JavaScript implementation of Sass.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

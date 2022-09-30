@@ -1,7 +1,7 @@
 
 # Scala.js typings for passport-local-mongoose
 
-Typings are for version 4.0.0
+Typings are for version 6.1
 
 ## Library description:
 Mongoose plugin that simplifies building username and password login with Passport
@@ -10,10 +10,10 @@ Mongoose plugin that simplifies building username and password login with Passpo
 | ------------------ | :-------------: |
 | Full name          | passport-local-mongoose |
 | Keywords           | mongoose, passport, authentication, login |
-| # releases         | 4 |
-| # dependents       | 58 |
-| # downloads        | 752471 |
-| # stars            | 27 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 65098.0 |
+| # stars            | 1130.0 |
 
 ## Links
 - [Homepage](https://github.com/saintedlama/passport-local-mongoose#readme)

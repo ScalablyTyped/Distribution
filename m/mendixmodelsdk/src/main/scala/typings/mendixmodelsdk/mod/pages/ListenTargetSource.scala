@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ListenTargetSource")
 @js.native
-class ListenTargetSource protected ()
+open class ListenTargetSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ListenTargetSource {
   def this(
     model: AbstractModel,

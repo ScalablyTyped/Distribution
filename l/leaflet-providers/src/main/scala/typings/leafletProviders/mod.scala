@@ -14,7 +14,7 @@ object mod {
     
     @JSImport("leaflet", "TileLayer.Provider")
     @js.native
-    class Provider protected ()
+    open class Provider protected ()
       extends typings.leaflet.mod.TileLayer_ {
       def this(provider: String) = this()
       def this(provider: String, options: StringDictionary[String]) = this()

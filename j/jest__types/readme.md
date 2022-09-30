@@ -1,18 +1,19 @@
 
 # Scala.js typings for jest__types
 
-Typings are for version 26.6.2
+Typings are for version 29.1.2
 
-
+## Library description:
+This package contains shared types of Jest's packages.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @jest/types |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 73 |
-| # downloads        | 398053140 |
-| # stars            | 0 |
+| # releases         | 50 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1567754566666666E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

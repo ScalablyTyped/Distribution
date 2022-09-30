@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "Find")
 @js.native
-class Find_ protected ()
+open class Find_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.Find_ {
   def this(options: FindOptions) = this()
   def this(options: typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_) = this()

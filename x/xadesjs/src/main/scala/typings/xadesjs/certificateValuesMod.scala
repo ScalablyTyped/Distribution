@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object certificateValuesMod {
   
-  @JSImport("xadesjs/build/types/xml/certificate_values", "CertificateValues")
+  @JSImport("xadesjs/build/types/src/xml/certificate_values", "CertificateValues")
   @js.native
-  class CertificateValues () extends XadesObject {
+  open class CertificateValues () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var EncapsulatedX509Certificates: EncapsulatedX509CertificateCollection = js.native
@@ -22,27 +22,27 @@ object certificateValuesMod {
     var OtherCertificates: OtherCertificateCollection = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/certificate_values", "EncapsulatedX509Certificate")
+  @JSImport("xadesjs/build/types/src/xml/certificate_values", "EncapsulatedX509Certificate")
   @js.native
-  class EncapsulatedX509Certificate () extends EncapsulatedPKIData {
+  open class EncapsulatedX509Certificate () extends EncapsulatedPKIData {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/certificate_values", "EncapsulatedX509CertificateCollection")
+  @JSImport("xadesjs/build/types/src/xml/certificate_values", "EncapsulatedX509CertificateCollection")
   @js.native
-  class EncapsulatedX509CertificateCollection () extends XadesCollection[EncapsulatedX509Certificate] {
+  open class EncapsulatedX509CertificateCollection () extends XadesCollection[EncapsulatedX509Certificate] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/certificate_values", "OtherCertificate")
+  @JSImport("xadesjs/build/types/src/xml/certificate_values", "OtherCertificate")
   @js.native
-  class OtherCertificate () extends Any {
+  open class OtherCertificate () extends Any {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/certificate_values", "OtherCertificateCollection")
+  @JSImport("xadesjs/build/types/src/xml/certificate_values", "OtherCertificateCollection")
   @js.native
-  class OtherCertificateCollection () extends XadesCollection[OtherCertificate] {
+  open class OtherCertificateCollection () extends XadesCollection[OtherCertificate] {
     def this(properties: js.Object) = this()
   }
 }

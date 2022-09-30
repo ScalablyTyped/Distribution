@@ -490,7 +490,7 @@ object mod {
     */
   parse: js.Function1[/* content */ String, js.Object]
   ): U & RcResultType = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[U & RcResultType]
-  inline def apply[T /* <: js.UndefOr[js.Object | String | Null] */, U /* <: js.UndefOr[js.Object | Null] */](
+  inline def apply[T /* <: js.Object */, U /* <: js.Object */](
     /**
     * The name of the app to configure, rc will search for this files :
     * `/etc/${name}/config`,
@@ -515,8 +515,8 @@ object mod {
     * If `argv` is `null` or `undefined`, then `rc`'s default parser will parse `process.argv`.
     */
   argv: U
-  ): (T & (U | ParsedArgs) & RcResultType) | ((U | ParsedArgs) & RcResultType) = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[(T & (U | ParsedArgs) & RcResultType) | ((U | ParsedArgs) & RcResultType)]
-  inline def apply[T /* <: js.UndefOr[js.Object | String | Null] */, U /* <: js.UndefOr[js.Object | Null] */](
+  ): T & U & RcResultType = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[T & U & RcResultType]
+  inline def apply[T /* <: js.Object */, U /* <: js.Object */](
     /**
     * The name of the app to configure, rc will search for this files :
     * `/etc/${name}/config`,
@@ -547,7 +547,7 @@ object mod {
     * discovered configuration file, should return a parsed object dictionary.
     */
   parse: js.Function1[/* content */ String, js.Object]
-  ): (T & (U | ParsedArgs) & RcResultType) | ((U | ParsedArgs) & RcResultType) = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[(T & (U | ParsedArgs) & RcResultType) | ((U | ParsedArgs) & RcResultType)]
+  ): T & U & RcResultType = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[T & U & RcResultType]
   
   @JSImport("rc", JSImport.Namespace)
   @js.native

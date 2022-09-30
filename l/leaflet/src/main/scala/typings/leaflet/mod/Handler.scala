@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Handler")
 @js.native
-class Handler protected () extends Class {
+open class Handler protected () extends Class {
   def this(map: Map_) = this()
   
   // Extension methods

@@ -1,5 +1,6 @@
 package typings.hystrixjs.mod
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ trait CommandBuilderA6[R, T, U, V, W, X, Y] extends StObject {
   
   def errorHandler(value: js.Function1[/* error */ Any, Boolean]): CommandBuilderA6[R, T, U, V, W, X, Y]
   
-  def fallbackTo(value: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]]): CommandBuilderA6[R, T, U, V, W, X, Y]
+  def fallbackTo(value: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], PromiseLike[R]]): CommandBuilderA6[R, T, U, V, W, X, Y]
   
   def percentileWindowLength(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
@@ -31,7 +32,7 @@ trait CommandBuilderA6[R, T, U, V, W, X, Y] extends StObject {
   def requestVolumeRejectionThreshold(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
   
   def run(
-    value: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, js.Thenable[R]]
+    value: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, PromiseLike[R]]
   ): CommandBuilderA6[R, T, U, V, W, X, Y]
   
   def statisticalWindowLength(value: Double): CommandBuilderA6[R, T, U, V, W, X, Y]
@@ -51,11 +52,11 @@ object CommandBuilderA6 {
     circuitBreakerSleepWindowInMilliseconds: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     context: Any => CommandBuilderA6[R, T, U, V, W, X, Y],
     errorHandler: js.Function1[/* error */ Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y],
-    fallbackTo: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y],
+    fallbackTo: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], PromiseLike[R]] => CommandBuilderA6[R, T, U, V, W, X, Y],
     percentileWindowLength: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     percentileWindowNumberOfBuckets: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     requestVolumeRejectionThreshold: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
-    run: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y],
+    run: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, PromiseLike[R]] => CommandBuilderA6[R, T, U, V, W, X, Y],
     statisticalWindowLength: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     statisticalWindowNumberOfBuckets: Double => CommandBuilderA6[R, T, U, V, W, X, Y],
     timeout: Double => CommandBuilderA6[R, T, U, V, W, X, Y]
@@ -83,7 +84,7 @@ object CommandBuilderA6 {
     inline def setErrorHandler(value: js.Function1[/* error */ Any, Boolean] => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     inline def setFallbackTo(
-      value: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
+      value: js.Function2[/* error */ js.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], PromiseLike[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
     ): Self = StObject.set(x, "fallbackTo", js.Any.fromFunction1(value))
     
     inline def setPercentileWindowLength(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "percentileWindowLength", js.Any.fromFunction1(value))
@@ -93,7 +94,7 @@ object CommandBuilderA6 {
     inline def setRequestVolumeRejectionThreshold(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "requestVolumeRejectionThreshold", js.Any.fromFunction1(value))
     
     inline def setRun(
-      value: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, js.Thenable[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
+      value: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, PromiseLike[R]] => CommandBuilderA6[R, T, U, V, W, X, Y]
     ): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     
     inline def setStatisticalWindowLength(value: Double => CommandBuilderA6[R, T, U, V, W, X, Y]): Self = StObject.set(x, "statisticalWindowLength", js.Any.fromFunction1(value))

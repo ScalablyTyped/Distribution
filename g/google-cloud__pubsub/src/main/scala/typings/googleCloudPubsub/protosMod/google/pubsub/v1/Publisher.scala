@@ -12,7 +12,6 @@ import typings.googleCloudPubsub.protosMod.google.pubsub.v1.Publisher.PublishCal
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.Publisher.UpdateTopicCallback
 import typings.googleGax.mod.protobuf.rpc.Service
 import typings.protobufjs.mod.RPCImpl
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Publisher */
 @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.Publisher")
 @js.native
-class Publisher protected () extends Service {
+open class Publisher protected () extends Service {
   /**
     * Constructs a new Publisher service.
     * @param rpcImpl RPC implementation
@@ -169,77 +168,77 @@ object Publisher {
   inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Publisher]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#createTopic}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|createTopic}.
     * @param error Error, if any
     * @param [response] Topic
     */
-  type CreateTopicCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Topic], Unit]
+  type CreateTopicCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Topic], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#deleteTopic}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|deleteTopic}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteTopicCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteTopicCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#detachSubscription}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|detachSubscription}.
     * @param error Error, if any
     * @param [response] DetachSubscriptionResponse
     */
   type DetachSubscriptionCallback = js.Function2[
-    /* error */ Error | Null, 
+    /* error */ js.Error | Null, 
     /* response */ js.UndefOr[DetachSubscriptionResponse], 
     Unit
   ]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#getTopic}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|getTopic}.
     * @param error Error, if any
     * @param [response] Topic
     */
-  type GetTopicCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Topic], Unit]
+  type GetTopicCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Topic], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#listTopicSnapshots}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|listTopicSnapshots}.
     * @param error Error, if any
     * @param [response] ListTopicSnapshotsResponse
     */
   type ListTopicSnapshotsCallback = js.Function2[
-    /* error */ Error | Null, 
+    /* error */ js.Error | Null, 
     /* response */ js.UndefOr[ListTopicSnapshotsResponse], 
     Unit
   ]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#listTopicSubscriptions}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|listTopicSubscriptions}.
     * @param error Error, if any
     * @param [response] ListTopicSubscriptionsResponse
     */
   type ListTopicSubscriptionsCallback = js.Function2[
-    /* error */ Error | Null, 
+    /* error */ js.Error | Null, 
     /* response */ js.UndefOr[ListTopicSubscriptionsResponse], 
     Unit
   ]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#listTopics}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|listTopics}.
     * @param error Error, if any
     * @param [response] ListTopicsResponse
     */
-  type ListTopicsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListTopicsResponse], Unit]
+  type ListTopicsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[ListTopicsResponse], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#publish}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|publish}.
     * @param error Error, if any
     * @param [response] PublishResponse
     */
-  type PublishCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[PublishResponse], Unit]
+  type PublishCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[PublishResponse], Unit]
   
   /**
-    * Callback as used by {@link google.pubsub.v1.Publisher#updateTopic}.
+    * Callback as used by {@link google.pubsub.v1.Publisher|updateTopic}.
     * @param error Error, if any
     * @param [response] Topic
     */
-  type UpdateTopicCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Topic], Unit]
+  type UpdateTopicCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Topic], Unit]
 }

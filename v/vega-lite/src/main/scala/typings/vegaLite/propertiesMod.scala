@@ -32,8 +32,8 @@ import typings.vegaLite.srcMarkMod.Mark
 import typings.vegaLite.srcTypeMod.Type
 import typings.vegaLite.unitMod.UnitModel
 import typings.vegaLite.vegaLiteBooleans.`true`
-import typings.vegaLite.vegaLiteNumbers.`0`
-import typings.vegaLite.vegaLiteNumbers.`1`
+import typings.vegaLite.vegaLiteInts.`0`
+import typings.vegaLite.vegaLiteInts.`1`
 import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaLite.vegaLiteStrings.bottom
 import typings.vegaLite.vegaLiteStrings.center

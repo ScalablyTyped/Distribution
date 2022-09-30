@@ -1,7 +1,6 @@
 package typings.storybookReactNative.anon
 
 import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.LayoutChangeEvent
@@ -11,7 +10,6 @@ import typings.storybookReactNative.storybookReactNativeStrings.`no-hide-descend
 import typings.storybookReactNative.storybookReactNativeStrings.assertive
 import typings.storybookReactNative.storybookReactNativeStrings.auto
 import typings.storybookReactNative.storybookReactNativeStrings.balanced
-import typings.storybookReactNative.storybookReactNativeStrings.button
 import typings.storybookReactNative.storybookReactNativeStrings.clip
 import typings.storybookReactNative.storybookReactNativeStrings.head
 import typings.storybookReactNative.storybookReactNativeStrings.highQuality
@@ -19,8 +17,6 @@ import typings.storybookReactNative.storybookReactNativeStrings.middle
 import typings.storybookReactNative.storybookReactNativeStrings.no
 import typings.storybookReactNative.storybookReactNativeStrings.none
 import typings.storybookReactNative.storybookReactNativeStrings.polite
-import typings.storybookReactNative.storybookReactNativeStrings.radiobutton_checked
-import typings.storybookReactNative.storybookReactNativeStrings.radiobutton_unchecked
 import typings.storybookReactNative.storybookReactNativeStrings.simple
 import typings.storybookReactNative.storybookReactNativeStrings.tail
 import typings.storybookReactNative.storybookReactNativeStrings.yes
@@ -31,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<react-native.react-native.TextProps & react.react.RefAttributes<react-native.react-native.Text>, 'style' | 'allowFontScaling' | 'ellipsizeMode' | 'lineBreakMode' | 'numberOfLines' | 'onLayout' | 'onPress' | 'onLongPress' | 'testID' | 'nativeID' | 'maxFontSizeMultiplier' | 'adjustsFontSizeToFit' | 'minimumFontScale' | 'suppressHighlighting' | 'selectable' | 'selectionColor' | 'textBreakStrategy' | 'accessible' | 'accessibilityLabel' | 'accessibilityRole' | 'accessibilityStates' | 'accessibilityHint' | 'accessibilityComponentType' | 'accessibilityLiveRegion' | 'importantForAccessibility' | 'accessibilityElementsHidden' | 'accessibilityTraits' | 'onAccessibilityTap' | 'onMagicTap' | 'accessibilityIgnoresInvertColors'> */
 trait PickTextPropsRefAttribute extends StObject {
   
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
+  var accessibilityComponentType: js.UndefOr[Any] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -45,9 +41,9 @@ trait PickTextPropsRefAttribute extends StObject {
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  var accessibilityStates: js.UndefOr[js.Any] = js.undefined
+  var accessibilityStates: js.UndefOr[Any] = js.undefined
   
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
+  var accessibilityTraits: js.UndefOr[Any] = js.undefined
   
   var accessible: js.UndefOr[Boolean] = js.undefined
   
@@ -100,7 +96,7 @@ object PickTextPropsRefAttribute {
   
   extension [Self <: PickTextPropsRefAttribute](x: Self) {
     
-    inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
+    inline def setAccessibilityComponentType(value: Any): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
     
@@ -128,15 +124,13 @@ object PickTextPropsRefAttribute {
     
     inline def setAccessibilityRoleUndefined: Self = StObject.set(x, "accessibilityRole", js.undefined)
     
-    inline def setAccessibilityStates(value: js.Any): Self = StObject.set(x, "accessibilityStates", value.asInstanceOf[js.Any])
+    inline def setAccessibilityStates(value: Any): Self = StObject.set(x, "accessibilityStates", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStatesUndefined: Self = StObject.set(x, "accessibilityStates", js.undefined)
     
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
+    inline def setAccessibilityTraits(value: Any): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
     

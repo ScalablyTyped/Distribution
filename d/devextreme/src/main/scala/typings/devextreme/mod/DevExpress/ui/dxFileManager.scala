@@ -13,6 +13,7 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +45,7 @@ object dxFileManager {
     */
   trait ActionEventInfo extends StObject {
     
-    var cancel: Boolean | js.Thenable[Unit]
+    var cancel: Boolean | PromiseLike[Unit]
     
     var errorCode: js.UndefOr[Double] = js.undefined
     
@@ -52,14 +53,14 @@ object dxFileManager {
   }
   object ActionEventInfo {
     
-    inline def apply(cancel: Boolean | js.Thenable[Unit], errorText: String): ActionEventInfo = {
+    inline def apply(cancel: Boolean | PromiseLike[Unit], errorText: String): ActionEventInfo = {
       val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionEventInfo]
     }
     
     extension [Self <: ActionEventInfo](x: Self) {
       
-      inline def setCancel(value: Boolean | js.Thenable[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,7 @@ object dxFileManager {
   object DirectoryCreatingEvent {
     
     inline def apply(
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxFileManager,
       element: DxElement_[HTMLElement],
       errorText: String,
@@ -398,7 +399,7 @@ object dxFileManager {
   object FileUploadingEvent {
     
     inline def apply(
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxFileManager,
       destinationDirectory: FileSystemItem,
       element: DxElement_[HTMLElement],
@@ -496,7 +497,7 @@ object dxFileManager {
   object ItemCopyingEvent {
     
     inline def apply(
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxFileManager,
       destinationDirectory: FileSystemItem,
       element: DxElement_[HTMLElement],
@@ -544,7 +545,7 @@ object dxFileManager {
   object ItemDeletingEvent {
     
     inline def apply(
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxFileManager,
       element: DxElement_[HTMLElement],
       errorText: String,
@@ -570,7 +571,7 @@ object dxFileManager {
   object ItemDownloadingEvent {
     
     inline def apply(
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxFileManager,
       element: DxElement_[HTMLElement],
       errorText: String,
@@ -636,7 +637,7 @@ object dxFileManager {
   object ItemMovingEvent {
     
     inline def apply(
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxFileManager,
       destinationDirectory: FileSystemItem,
       element: DxElement_[HTMLElement],
@@ -695,7 +696,7 @@ object dxFileManager {
   object ItemRenamingEvent {
     
     inline def apply(
-      cancel: Boolean | js.Thenable[Unit],
+      cancel: Boolean | PromiseLike[Unit],
       component: dxFileManager,
       element: DxElement_[HTMLElement],
       errorText: String,

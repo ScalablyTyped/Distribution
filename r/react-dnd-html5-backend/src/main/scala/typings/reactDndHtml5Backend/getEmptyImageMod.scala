@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getEmptyImageMod {
   
-  @JSImport("react-dnd-html5-backend/lib/getEmptyImage", JSImport.Namespace)
+  @JSImport("react-dnd-html5-backend/dist/getEmptyImage", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

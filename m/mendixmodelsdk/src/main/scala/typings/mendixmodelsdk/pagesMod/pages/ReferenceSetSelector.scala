@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/reference-set-selector relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ReferenceSetSelector")
 @js.native
-class ReferenceSetSelector protected () extends ColumnGrid {
+open class ReferenceSetSelector protected () extends ColumnGrid {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -78,7 +78,7 @@ class ReferenceSetSelector protected () extends ColumnGrid {
 }
 object ReferenceSetSelector {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ReferenceSetSelector")
   @js.native
   val ^ : js.Any = js.native
   
@@ -652,13 +652,13 @@ object ReferenceSetSelector {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ReferenceSetSelector.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ReferenceSetSelector.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

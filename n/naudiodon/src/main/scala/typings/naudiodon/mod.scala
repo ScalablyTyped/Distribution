@@ -4,11 +4,11 @@ import typings.naudiodon.anon.DefaultHostAPI
 import typings.naudiodon.anon.InOptions
 import typings.naudiodon.anon.InOptionsOutOptions
 import typings.naudiodon.anon.OutOptions
-import typings.naudiodon.naudiodonNumbers.`16`
-import typings.naudiodon.naudiodonNumbers.`1`
-import typings.naudiodon.naudiodonNumbers.`24`
-import typings.naudiodon.naudiodonNumbers.`32`
-import typings.naudiodon.naudiodonNumbers.`8`
+import typings.naudiodon.naudiodonInts.`16`
+import typings.naudiodon.naudiodonInts.`1`
+import typings.naudiodon.naudiodonInts.`24`
+import typings.naudiodon.naudiodonInts.`32`
+import typings.naudiodon.naudiodonInts.`8`
 import typings.naudiodon.naudiodonStrings.AL
 import typings.naudiodon.naudiodonStrings.ALSA
 import typings.naudiodon.naudiodonStrings.ASIO

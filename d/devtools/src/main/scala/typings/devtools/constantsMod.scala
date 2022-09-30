@@ -1,6 +1,16 @@
 package typings.devtools
 
+import typings.devtools.anon.Default
+import typings.devtools.anon.DefaultMatch
+import typings.devtools.anon.DefaultMatchRequired
+import typings.devtools.anon.Match
+import typings.devtools.anon.MatchRequired
+import typings.devtools.anon.MatchRequiredType
 import typings.devtools.anon.MessageName
+import typings.devtools.anon.Required
+import typings.devtools.anon.RequiredType
+import typings.devtools.anon.TypeValidate
+import typings.devtools.anon.Validate
 import typings.devtools.devtoolsStrings.chrome
 import typings.devtools.devtoolsStrings.edge
 import typings.devtools.devtoolsStrings.firefox
@@ -59,9 +69,108 @@ object constantsMod {
   @js.native
   val CHROME_NAMES: js.Array[String] = js.native
   
-  @JSImport("devtools/build/constants", "DEFAULTS")
-  @js.native
-  val DEFAULTS: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultOptions<WebDriver.Options> */ js.Any = js.native
+  /* Inlined @wdio/types.@wdio/types.Options.Definition<@wdio/types.@wdio/types.Options.WebDriver> */
+  object DEFAULTS {
+    
+    @JSImport("devtools/build/constants", "DEFAULTS")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.agent")
+    @js.native
+    def agent: js.UndefOr[MatchRequired] = js.native
+    inline def agent_=(x: js.UndefOr[MatchRequired]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("agent")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.capabilities")
+    @js.native
+    def capabilities: Validate = js.native
+    inline def capabilities_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capabilities")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.connectionRetryCount")
+    @js.native
+    def connectionRetryCount: js.UndefOr[Required] = js.native
+    inline def connectionRetryCount_=(x: js.UndefOr[Required]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionRetryCount")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.connectionRetryTimeout")
+    @js.native
+    def connectionRetryTimeout: js.UndefOr[Required] = js.native
+    inline def connectionRetryTimeout_=(x: js.UndefOr[Required]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionRetryTimeout")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.enableDirectConnect")
+    @js.native
+    def enableDirectConnect: js.UndefOr[RequiredType] = js.native
+    inline def enableDirectConnect_=(x: js.UndefOr[RequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableDirectConnect")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.headers")
+    @js.native
+    def headers: js.UndefOr[MatchRequiredType] = js.native
+    inline def headers_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headers")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.hostname")
+    @js.native
+    def hostname: js.UndefOr[TypeValidate] = js.native
+    inline def hostname_=(x: js.UndefOr[TypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hostname")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.key")
+    @js.native
+    def key: js.UndefOr[TypeValidate] = js.native
+    inline def key_=(x: js.UndefOr[TypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("key")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.logLevel")
+    @js.native
+    def logLevel: js.UndefOr[Match] = js.native
+    inline def logLevel_=(x: js.UndefOr[Match]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logLevel")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.logLevels")
+    @js.native
+    def logLevels: js.UndefOr[Default] = js.native
+    inline def logLevels_=(x: js.UndefOr[Default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logLevels")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.outputDir")
+    @js.native
+    def outputDir: js.UndefOr[TypeValidate] = js.native
+    inline def outputDir_=(x: js.UndefOr[TypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputDir")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.path")
+    @js.native
+    def path: js.UndefOr[TypeValidate] = js.native
+    inline def path_=(x: js.UndefOr[TypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.port")
+    @js.native
+    def port: js.UndefOr[Required] = js.native
+    inline def port_=(x: js.UndefOr[Required]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("port")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.protocol")
+    @js.native
+    def protocol: js.UndefOr[TypeValidate] = js.native
+    inline def protocol_=(x: js.UndefOr[TypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protocol")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.queryParams")
+    @js.native
+    def queryParams: js.UndefOr[MatchRequiredType] = js.native
+    inline def queryParams_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryParams")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.strictSSL")
+    @js.native
+    def strictSSL: js.UndefOr[RequiredType] = js.native
+    inline def strictSSL_=(x: js.UndefOr[RequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strictSSL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.transformRequest")
+    @js.native
+    def transformRequest: js.UndefOr[DefaultMatchRequired] = js.native
+    inline def transformRequest_=(x: js.UndefOr[DefaultMatchRequired]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transformRequest")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.transformResponse")
+    @js.native
+    def transformResponse: js.UndefOr[DefaultMatch] = js.native
+    inline def transformResponse_=(x: js.UndefOr[DefaultMatch]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transformResponse")(x.asInstanceOf[js.Any])
+    
+    @JSImport("devtools/build/constants", "DEFAULTS.user")
+    @js.native
+    def user: js.UndefOr[TypeValidate] = js.native
+    inline def user_=(x: js.UndefOr[TypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("user")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("devtools/build/constants", "DEFAULT_FLAGS")
   @js.native
@@ -131,6 +240,10 @@ object constantsMod {
   @js.native
   val SERIALIZE_PROPERTY: /* "data-devtoolsdriver-fetchedElement" */ String = js.native
   
+  @JSImport("devtools/build/constants", "SHADOW_ELEMENT_KEY")
+  @js.native
+  val SHADOW_ELEMENT_KEY: /* "shadow-6066-11e4-a52e-4f735466cecf" */ String = js.native
+  
   @JSImport("devtools/build/constants", "SUPPORTED_BROWSER")
   @js.native
   val SUPPORTED_BROWSER: js.Array[String] = js.native
@@ -148,6 +261,13 @@ object constantsMod {
     @JSImport("devtools/build/constants", "VENDOR_PREFIX.chrome")
     @js.native
     def chrome: googColonchromeOptions = js.native
+    
+    @JSImport("devtools/build/constants", "VENDOR_PREFIX.chrome headless")
+    @js.native
+    def chromeHeadless: googColonchromeOptions = js.native
+    
+    inline def chromeHeadless_=(x: googColonchromeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome headless")(x.asInstanceOf[js.Any])
+    
     inline def chrome_=(x: googColonchromeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome")(x.asInstanceOf[js.Any])
     
     @JSImport("devtools/build/constants", "VENDOR_PREFIX.edge")

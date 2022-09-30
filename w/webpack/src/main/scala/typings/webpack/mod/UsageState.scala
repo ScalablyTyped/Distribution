@@ -1,10 +1,10 @@
 package typings.webpack.mod
 
-import typings.webpack.webpackNumbers.`0`
-import typings.webpack.webpackNumbers.`1`
-import typings.webpack.webpackNumbers.`2`
-import typings.webpack.webpackNumbers.`3`
-import typings.webpack.webpackNumbers.`4`
+import typings.webpack.webpackInts.`0`
+import typings.webpack.webpackInts.`1`
+import typings.webpack.webpackInts.`2`
+import typings.webpack.webpackInts.`3`
+import typings.webpack.webpackInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

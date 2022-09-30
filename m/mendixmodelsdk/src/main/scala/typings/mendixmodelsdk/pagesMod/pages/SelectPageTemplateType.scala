@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.pagesMod.pages.ITemplateType because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.ISelectPageTemplateType because var conflicts: containerAsPageTemplate, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectPageTemplateType")
+- typings.mendixmodelsdk.pagesMod.pages.ISelectPageTemplateType because var conflicts: containerAsPageTemplate, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectPageTemplateType")
 @js.native
-class SelectPageTemplateType protected () extends TemplateType {
+open class SelectPageTemplateType protected () extends TemplateType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ class SelectPageTemplateType protected () extends TemplateType {
 }
 object SelectPageTemplateType {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectPageTemplateType")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectPageTemplateType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -61,13 +61,13 @@ object SelectPageTemplateType {
   inline def createIn(container: PageTemplate): SelectPageTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SelectPageTemplateType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectPageTemplateType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectPageTemplateType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SelectPageTemplateType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SelectPageTemplateType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

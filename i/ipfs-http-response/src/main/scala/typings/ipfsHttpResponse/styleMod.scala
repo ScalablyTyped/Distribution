@@ -1,7 +1,6 @@
 package typings.ipfsHttpResponse
 
 import org.scalablytyped.runtime.Shortcut
-import typings.ipfsHttpResponse.ipfsHttpResponseStrings.`htmlLeftcurlybracketfont-familyColonsans-serifSemicolon-webkit-text-size-adjustColon100PercentsignSemicolon-ms-text-size-adjustColon100PercentsignRightcurlybracketbodyLeftcurlybracketmarginColon0RightcurlybracketaLeftcurlybracketbackground-colorColontransparentRightcurlybracketaColonactiveCommaaColonhoverLeftcurlybracketoutlineColon0RightcurlybracketstrongLeftcurlybracketfont-weightColon700RightcurlybracketbuttonColonColon-moz-focus-innerCommainputColonColon-moz-focus-innerLeftcurlybracketpaddin`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +9,10 @@ object styleMod extends Shortcut {
   
   @JSImport("ipfs-http-response/dist/src/dir-view/style", JSImport.Default)
   @js.native
-  val default: `htmlLeftcurlybracketfont-familyColonsans-serifSemicolon-webkit-text-size-adjustColon100PercentsignSemicolon-ms-text-size-adjustColon100PercentsignRightcurlybracketbodyLeftcurlybracketmarginColon0RightcurlybracketaLeftcurlybracketbackground-colorColontransparentRightcurlybracketaColonactiveCommaaColonhoverLeftcurlybracketoutlineColon0RightcurlybracketstrongLeftcurlybracketfont-weightColon700RightcurlybracketbuttonColonColon-moz-focus-innerCommainputColonColon-moz-focus-innerLeftcurlybracketpaddin` = js.native
+  val default: String = js.native
   
-  type _To = `htmlLeftcurlybracketfont-familyColonsans-serifSemicolon-webkit-text-size-adjustColon100PercentsignSemicolon-ms-text-size-adjustColon100PercentsignRightcurlybracketbodyLeftcurlybracketmarginColon0RightcurlybracketaLeftcurlybracketbackground-colorColontransparentRightcurlybracketaColonactiveCommaaColonhoverLeftcurlybracketoutlineColon0RightcurlybracketstrongLeftcurlybracketfont-weightColon700RightcurlybracketbuttonColonColon-moz-focus-innerCommainputColonColon-moz-focus-innerLeftcurlybracketpaddin`
+  type _To = String
   
   /* This means you don't have to write `default`, but can instead just say `styleMod.foo` */
-  override def _to: `htmlLeftcurlybracketfont-familyColonsans-serifSemicolon-webkit-text-size-adjustColon100PercentsignSemicolon-ms-text-size-adjustColon100PercentsignRightcurlybracketbodyLeftcurlybracketmarginColon0RightcurlybracketaLeftcurlybracketbackground-colorColontransparentRightcurlybracketaColonactiveCommaaColonhoverLeftcurlybracketoutlineColon0RightcurlybracketstrongLeftcurlybracketfont-weightColon700RightcurlybracketbuttonColonColon-moz-focus-innerCommainputColonColon-moz-focus-innerLeftcurlybracketpaddin` = default
+  override def _to: String = default
 }

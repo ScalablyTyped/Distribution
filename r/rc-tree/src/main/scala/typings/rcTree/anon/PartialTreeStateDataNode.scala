@@ -4,9 +4,9 @@ import typings.rcTree.interfaceMod.DataEntity
 import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.FieldNames
 import typings.rcTree.interfaceMod.FlattenNode
-import typings.rcTree.rcTreeNumbers.`-1`
-import typings.rcTree.rcTreeNumbers.`0`
-import typings.rcTree.rcTreeNumbers.`1`
+import typings.rcTree.rcTreeInts.`-1`
+import typings.rcTree.rcTreeInts.`0`
+import typings.rcTree.rcTreeInts.`1`
 import typings.rcTree.treeMod.TreeProps
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

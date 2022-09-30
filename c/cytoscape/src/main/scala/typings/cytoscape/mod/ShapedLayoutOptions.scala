@@ -16,10 +16,10 @@ trait ShapedLayoutOptions
   var boundingBox: js.UndefOr[BoundingBox12 | BoundingBoxWH] = js.undefined
   
   // whether to fit to viewport
-  var fit: Boolean
+  var fit: js.UndefOr[Boolean] = js.undefined
   
   // Excludes the label when calculating node bounding boxes for the layout algorithm
-  var nodeDimensionsIncludeLabels: Boolean
+  var nodeDimensionsIncludeLabels: js.UndefOr[Boolean] = js.undefined
   
   // padding used on fit
   var padding: js.UndefOr[Double] = js.undefined
@@ -32,8 +32,8 @@ trait ShapedLayoutOptions
 }
 object ShapedLayoutOptions {
   
-  inline def apply(fit: Boolean, name: String, nodeDimensionsIncludeLabels: Boolean): ShapedLayoutOptions = {
-    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any])
+  inline def apply(name: String): ShapedLayoutOptions = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapedLayoutOptions]
   }
   
@@ -49,7 +49,11 @@ object ShapedLayoutOptions {
     
     inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+    
     inline def setNodeDimensionsIncludeLabels(value: Boolean): Self = StObject.set(x, "nodeDimensionsIncludeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setNodeDimensionsIncludeLabelsUndefined: Self = StObject.set(x, "nodeDimensionsIncludeLabels", js.undefined)
     
     inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

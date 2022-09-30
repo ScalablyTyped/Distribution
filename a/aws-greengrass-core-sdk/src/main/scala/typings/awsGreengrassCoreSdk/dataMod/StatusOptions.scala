@@ -1,10 +1,10 @@
 package typings.awsGreengrassCoreSdk.dataMod
 
-import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkNumbers.`0`
-import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkNumbers.`1`
-import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkNumbers.`2`
-import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkNumbers.`3`
-import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkNumbers.`4`
+import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkInts.`0`
+import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkInts.`1`
+import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkInts.`2`
+import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkInts.`3`
+import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

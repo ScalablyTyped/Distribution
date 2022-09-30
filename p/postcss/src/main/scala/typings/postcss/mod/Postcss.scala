@@ -12,7 +12,6 @@ import typings.postcss.commentMod.CommentProps
 import typings.postcss.cssSyntaxErrorMod.RangePosition
 import typings.postcss.declarationMod.DeclarationProps
 import typings.postcss.documentMod.DocumentProps
-import typings.postcss.listMod.List
 import typings.postcss.nodeMod.AnyNode
 import typings.postcss.resultMod.ResultOptions
 import typings.postcss.rootMod.RootProps
@@ -161,7 +160,7 @@ trait Postcss extends StObject {
   /**
     * Contains the `list` module.
     */
-  var list: List = js.native
+  var list: typings.postcss.listMod.List = js.native
   
   /**
     * Parses source css and returns a new `Root` or `Document` node,

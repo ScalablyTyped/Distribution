@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ImageIcon")
 @js.native
-class ImageIcon protected ()
+open class ImageIcon protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ImageIcon {
   def this(
     model: AbstractModel,

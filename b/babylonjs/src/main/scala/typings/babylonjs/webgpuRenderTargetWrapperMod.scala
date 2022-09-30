@@ -21,7 +21,7 @@ object webgpuRenderTargetWrapperMod {
       */
     def this(isMulti: Boolean, isCube: Boolean, size: TextureSize, engine: ThinEngine) = this()
     
-    /** @hidden */
+    /** @internal */
     var _defaultAttachments: js.Array[Double] = js.native
   }
 }

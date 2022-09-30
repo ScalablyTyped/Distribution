@@ -9,11 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashFindKey extends StObject {
   
-  def apply[T](
-    predicate: ValueIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): js.UndefOr[String] = js.native
+  def apply[T](predicate: ValueIteratee[T]): LodashFindKey1x1[T] = js.native
   def apply[T](
     predicate: ValueIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

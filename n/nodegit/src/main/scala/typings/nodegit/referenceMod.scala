@@ -1,10 +1,10 @@
 package typings.nodegit
 
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
-import typings.nodegit.nodegitNumbers.`4`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
+import typings.nodegit.nodegitInts.`4`
 import typings.nodegit.objectMod.Object
 import typings.nodegit.objectMod.Object.TYPE
 import typings.nodegit.oidMod.Oid
@@ -112,10 +112,10 @@ object referenceMod {
     ): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolicCreateMatching")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], force.asInstanceOf[js.Any], currentValue.asInstanceOf[js.Any], logMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
     */
     trait NORMALIZE extends StObject
     object NORMALIZE {
@@ -130,10 +130,10 @@ object referenceMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
     */
     trait TYPE extends StObject
     object TYPE {

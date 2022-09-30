@@ -72,7 +72,7 @@ open class UndoManager () extends StObject {
   var hisotryIndex: Double = js.native
   
   /**This read-only property returns the whole history, a list of all of the Transactions, each representing a transaction with some number of ChangedEvents.*/
-  var history: List[Transaction] = js.native
+  var history: typings.go.mod.List[Transaction] = js.native
   
   /**Gets or sets whether this UndoManager records any changes.*/
   var isEnabled: Boolean = js.native
@@ -90,7 +90,7 @@ open class UndoManager () extends StObject {
   var models: Iterator[Model] = js.native
   
   /**This read-only property returns a stack of ongoing transaction names.*/
-  var nestedTransactionNames: List[String] = js.native
+  var nestedTransactionNames: typings.go.mod.List[String] = js.native
   
   /**
     * Re-perform this object change after an .undo.

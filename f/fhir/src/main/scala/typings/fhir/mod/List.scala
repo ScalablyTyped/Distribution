@@ -96,12 +96,12 @@ trait List
 }
 object List {
   
-  inline def apply(mode: working | snapshot | changes, status: current | retired | `entered-in-error`): List = {
+  inline def apply(mode: working | snapshot | changes, status: current | retired | `entered-in-error`): typings.fhir.mod.List = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], resourceType = "List", status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.fhir.mod.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.fhir.mod.List](x: Self) {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -1,17 +1,17 @@
 package typings.memfs
 
-import typings.memfs.memfsNumbers.`1024`
-import typings.memfs.memfsNumbers.`128`
-import typings.memfs.memfsNumbers.`16`
-import typings.memfs.memfsNumbers.`1`
-import typings.memfs.memfsNumbers.`2048`
-import typings.memfs.memfsNumbers.`256`
-import typings.memfs.memfsNumbers.`2`
-import typings.memfs.memfsNumbers.`32`
-import typings.memfs.memfsNumbers.`4`
-import typings.memfs.memfsNumbers.`512`
-import typings.memfs.memfsNumbers.`64`
-import typings.memfs.memfsNumbers.`8`
+import typings.memfs.memfsInts.`1024`
+import typings.memfs.memfsInts.`128`
+import typings.memfs.memfsInts.`16`
+import typings.memfs.memfsInts.`1`
+import typings.memfs.memfsInts.`2048`
+import typings.memfs.memfsInts.`256`
+import typings.memfs.memfsInts.`2`
+import typings.memfs.memfsInts.`32`
+import typings.memfs.memfsInts.`4`
+import typings.memfs.memfsInts.`512`
+import typings.memfs.memfsInts.`64`
+import typings.memfs.memfsInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -257,18 +257,18 @@ object constantsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.memfs.memfsNumbers.`2048`
-    - typings.memfs.memfsNumbers.`1024`
-    - typings.memfs.memfsNumbers.`512`
-    - typings.memfs.memfsNumbers.`256`
-    - typings.memfs.memfsNumbers.`128`
-    - typings.memfs.memfsNumbers.`64`
-    - typings.memfs.memfsNumbers.`32`
-    - typings.memfs.memfsNumbers.`16`
-    - typings.memfs.memfsNumbers.`8`
-    - typings.memfs.memfsNumbers.`4`
-    - typings.memfs.memfsNumbers.`2`
-    - typings.memfs.memfsNumbers.`1`
+    - typings.memfs.memfsInts.`2048`
+    - typings.memfs.memfsInts.`1024`
+    - typings.memfs.memfsInts.`512`
+    - typings.memfs.memfsInts.`256`
+    - typings.memfs.memfsInts.`128`
+    - typings.memfs.memfsInts.`64`
+    - typings.memfs.memfsInts.`32`
+    - typings.memfs.memfsInts.`16`
+    - typings.memfs.memfsInts.`8`
+    - typings.memfs.memfsInts.`4`
+    - typings.memfs.memfsInts.`2`
+    - typings.memfs.memfsInts.`1`
   */
   trait S extends StObject
   object S {

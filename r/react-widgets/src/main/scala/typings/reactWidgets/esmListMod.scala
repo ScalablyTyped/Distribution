@@ -31,7 +31,7 @@ object esmListMod {
   
   @JSImport("react-widgets/esm/List", JSImport.Default)
   @js.native
-  val default: List = js.native
+  val default: typings.reactWidgets.esmListMod.List = js.native
   
   inline def useHandleSelect[TDataItem](multiple: Boolean, dataItems: js.Array[TDataItem], onChange: ChangeHandler[TDataItem]): js.Function2[/* dataItem */ TDataItem, /* event */ SyntheticEvent[Element, Event], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useHandleSelect")(multiple.asInstanceOf[js.Any], dataItems.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* dataItem */ TDataItem, /* event */ SyntheticEvent[Element, Event], Unit]]
   

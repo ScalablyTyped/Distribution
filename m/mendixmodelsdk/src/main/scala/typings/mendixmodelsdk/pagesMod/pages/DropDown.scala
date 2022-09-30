@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/drop-down relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDown")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDown")
 @js.native
-class DropDown protected () extends AttributeWidget {
+open class DropDown protected () extends AttributeWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ class DropDown protected () extends AttributeWidget {
 }
 object DropDown {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDown")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDown")
   @js.native
   val ^ : js.Any = js.native
   
@@ -613,13 +613,13 @@ object DropDown {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): DropDown = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DropDown]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDown.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDown.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDown.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DropDown.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

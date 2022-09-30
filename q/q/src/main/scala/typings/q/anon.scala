@@ -5,6 +5,7 @@ import typings.q.mod.IPromise
 import typings.q.mod.IWhenable
 import typings.q.mod.Promise
 import typings.q.mod.PromiseState
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ object anon {
       * If value is a promise from another library it is coerced into a Q promise (where possible).
       * If value is not a promise, returns a promise that is fulfilled with value.
       */
-    def apply[T](promise: js.Thenable[T]): Promise[T] = js.native
+    def apply[T](promise: PromiseLike[T]): Promise[T] = js.native
     
     def Promise[T](
       resolver: js.Function3[

@@ -1,7 +1,7 @@
 package typings.maplibreGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.maplibreGl.maplibreGlNumbers.`8`
+import typings.maplibreGl.maplibreGlInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

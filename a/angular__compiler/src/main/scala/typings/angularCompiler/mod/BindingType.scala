@@ -1,20 +1,20 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerNumbers.`0`
-import typings.angularCompiler.angularCompilerNumbers.`1`
-import typings.angularCompiler.angularCompilerNumbers.`2`
-import typings.angularCompiler.angularCompilerNumbers.`3`
-import typings.angularCompiler.angularCompilerNumbers.`4`
+import typings.angularCompiler.angularCompilerInts.`0`
+import typings.angularCompiler.angularCompilerInts.`1`
+import typings.angularCompiler.angularCompilerInts.`2`
+import typings.angularCompiler.angularCompilerInts.`3`
+import typings.angularCompiler.angularCompilerInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCompiler.angularCompilerNumbers.`0`
-  - typings.angularCompiler.angularCompilerNumbers.`1`
-  - typings.angularCompiler.angularCompilerNumbers.`2`
-  - typings.angularCompiler.angularCompilerNumbers.`3`
-  - typings.angularCompiler.angularCompilerNumbers.`4`
+  - typings.angularCompiler.angularCompilerInts.`0`
+  - typings.angularCompiler.angularCompilerInts.`1`
+  - typings.angularCompiler.angularCompilerInts.`2`
+  - typings.angularCompiler.angularCompilerInts.`3`
+  - typings.angularCompiler.angularCompilerInts.`4`
 */
 trait BindingType extends StObject
 object BindingType {

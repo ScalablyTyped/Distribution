@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.MapBox")
 @js.native
-class MapBox_ protected () extends OSRMv1_ {
+open class MapBox_ protected () extends OSRMv1_ {
   def this(accessToken: String, options: OSRMOptions) = this()
 }

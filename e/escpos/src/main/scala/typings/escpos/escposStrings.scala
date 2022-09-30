@@ -476,18 +476,6 @@ object escposStrings {
   inline def InformationseparatorthreeHStartoftext: InformationseparatorthreeHStartoftext = "\u001DH\u0002".asInstanceOf[InformationseparatorthreeHStartoftext]
   
   @js.native
-  sealed trait InformationseparatorthreeLeftparenthesisk extends StObject
-  inline def InformationseparatorthreeLeftparenthesisk: InformationseparatorthreeLeftparenthesisk = "\u001D(k".asInstanceOf[InformationseparatorthreeLeftparenthesisk]
-  
-  @js.native
-  sealed trait InformationseparatorthreeLeftparenthesiskEndoftextNull1C extends StObject
-  inline def InformationseparatorthreeLeftparenthesiskEndoftextNull1C: InformationseparatorthreeLeftparenthesiskEndoftextNull1C = "\u001D(k\u0003\u00001C".asInstanceOf[InformationseparatorthreeLeftparenthesiskEndoftextNull1C]
-  
-  @js.native
-  sealed trait InformationseparatorthreeLeftparenthesiskEndoftextNull1E extends StObject
-  inline def InformationseparatorthreeLeftparenthesiskEndoftextNull1E: InformationseparatorthreeLeftparenthesiskEndoftextNull1E = "\u001D(k\u0003\u00001E".asInstanceOf[InformationseparatorthreeLeftparenthesiskEndoftextNull1E]
-  
-  @js.native
   sealed trait InformationseparatorthreeVA extends StObject
   inline def InformationseparatorthreeVA: InformationseparatorthreeVA = "\u001DVA".asInstanceOf[InformationseparatorthreeVA]
   

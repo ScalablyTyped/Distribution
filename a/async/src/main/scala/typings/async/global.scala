@@ -83,11 +83,11 @@ object global {
       callback: AsyncBooleanResultCallback[E]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("anySeries")(arr.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def apply[E](fn: js.Function, args: Any*): AsyncFunction[Any, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[AsyncFunction[Any, E]]
+    inline def apply[E](fn: js.Function, args: Any*): AsyncFunction[Any, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(scala.List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[AsyncFunction[Any, E]]
     
-    inline def applyEach(fns: js.Array[js.Function], argsAndCallback: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyEach")(List(fns.asInstanceOf[js.Any]).`++`(argsAndCallback.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def applyEach(fns: js.Array[js.Function], argsAndCallback: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyEach")(scala.List(fns.asInstanceOf[js.Any]).`++`(argsAndCallback.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def applyEachSeries(fns: js.Array[js.Function], argsAndCallback: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyEachSeries")(List(fns.asInstanceOf[js.Any]).`++`(argsAndCallback.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def applyEachSeries(fns: js.Array[js.Function], argsAndCallback: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyEachSeries")(scala.List(fns.asInstanceOf[js.Any]).`++`(argsAndCallback.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def asyncify(fn: js.Function): js.Function1[/* repeated */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
     
@@ -155,7 +155,7 @@ object global {
       callback: AsyncResultCallback[T, E]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectSeries")(arr.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def dir(fn: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")(List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def dir(fn: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")(scala.List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def doDuring[E](
       fn: AsyncVoidFunction[E],
@@ -398,7 +398,7 @@ object global {
       callback: AsyncResultCallback[R, E]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(arr.asInstanceOf[js.Any], memo.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def log(fn: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def log(fn: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(fn.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def map[T, R, E](arr: js.Array[T], iterator: AsyncResultIterator[T, R, E]): js.Promise[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[R]]]
     inline def map[T, R, E](arr: js.Array[T], iterator: AsyncResultIteratorPromise[T, R]): js.Promise[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[R]]]
@@ -516,7 +516,7 @@ object global {
     inline def memoize(fn: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     inline def memoize(fn: js.Function, hasher: js.Function): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(fn.asInstanceOf[js.Any], hasher.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    inline def nextTick(callback: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+    inline def nextTick(callback: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(scala.List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def parallel[T, E](tasks: js.Array[AsyncFunction[T, E]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(tasks.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def parallel[T, E](tasks: js.Array[AsyncFunction[T, E]], callback: AsyncResultArrayCallback[T, E]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(tasks.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

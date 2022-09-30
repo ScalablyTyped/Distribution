@@ -1,11 +1,11 @@
 package typings.mdast.mod
 
-import typings.mdast.mdastNumbers.`1`
-import typings.mdast.mdastNumbers.`2`
-import typings.mdast.mdastNumbers.`3`
-import typings.mdast.mdastNumbers.`4`
-import typings.mdast.mdastNumbers.`5`
-import typings.mdast.mdastNumbers.`6`
+import typings.mdast.mdastInts.`1`
+import typings.mdast.mdastInts.`2`
+import typings.mdast.mdastInts.`3`
+import typings.mdast.mdastInts.`4`
+import typings.mdast.mdastInts.`5`
+import typings.mdast.mdastInts.`6`
 import typings.mdast.mdastStrings.heading
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

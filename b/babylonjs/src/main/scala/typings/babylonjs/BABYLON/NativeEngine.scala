@@ -14,9 +14,7 @@ trait NativeEngine
      with Engine {
   
   /**
-    * @param channel
-    * @param texture
-    * @hidden
+    * @internal
     */
   def _bindTexture(channel: Double, texture: InternalTexture): Unit = js.native
   
@@ -81,8 +79,7 @@ trait NativeEngine
   ): Unit = js.native
   
   /**
-    * @param framebuffer
-    * @hidden
+    * @internal
     */
   def _releaseFramebufferObjects(framebuffer: Nullable[WebGLFramebuffer]): Unit = js.native
   

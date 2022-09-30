@@ -30,19 +30,20 @@ object DrawEvents {
       * Layer that was just created.
       */
     @JSName("layer")
-    var layer_Created: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any]
+    var layer_Created: Circle_[Any] | CircleMarker_[Any] | Marker_[Any] | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any]) | Rectangle_[Any]
   }
   object Created {
     
     inline def apply(
-      layer: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any],
+      layer: Circle_[Any] | CircleMarker_[Any] | Marker_[Any] | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any]) | Rectangle_[Any],
       layerType: String,
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): Created = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Created]
     }
@@ -50,7 +51,7 @@ object DrawEvents {
     extension [Self <: Created](x: Self) {
       
       inline def setLayer(
-        value: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any]
+        value: Circle_[Any] | CircleMarker_[Any] | Marker_[Any] | Polygon_[Any] | (Polyline_[LineString | MultiLineString, Any]) | Rectangle_[Any]
       ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
       inline def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
@@ -70,13 +71,14 @@ object DrawEvents {
     
     inline def apply(
       handler: String,
-      layer: js.Any,
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): DeleteStart = {
-      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteStart]
     }
@@ -100,13 +102,14 @@ object DrawEvents {
     
     inline def apply(
       handler: String,
-      layer: js.Any,
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): DeleteStop = {
-      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteStop]
     }
@@ -127,26 +130,27 @@ object DrawEvents {
     /**
       * List of all layers just removed from the map.
       */
-    var layers: LayerGroup_[js.Any]
+    var layers: LayerGroup_[Any]
   }
   object Deleted {
     
     inline def apply(
-      layer: js.Any,
-      layers: LayerGroup_[js.Any],
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      layers: LayerGroup_[Any],
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): Deleted = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Deleted]
     }
     
     extension [Self <: Deleted](x: Self) {
       
-      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,14 +166,15 @@ object DrawEvents {
   object DrawStart {
     
     inline def apply(
-      layer: js.Any,
+      layer: Any,
       layerType: String,
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): DrawStart = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawStart]
     }
@@ -192,14 +197,15 @@ object DrawEvents {
   object DrawStop {
     
     inline def apply(
-      layer: js.Any,
+      layer: Any,
       layerType: String,
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): DrawStop = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layerType = layerType.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawStop]
     }
@@ -217,26 +223,27 @@ object DrawEvents {
     /**
       * List of all layers just being added from the map.
       */
-    var layers: LayerGroup_[js.Any]
+    var layers: LayerGroup_[Any]
   }
   object DrawVertex {
     
     inline def apply(
-      layer: js.Any,
-      layers: LayerGroup_[js.Any],
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      layers: LayerGroup_[Any],
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): DrawVertex = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawVertex]
     }
     
     extension [Self <: DrawVertex](x: Self) {
       
-      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,8 +259,8 @@ object DrawEvents {
   }
   object EditMove {
     
-    inline def apply(layer: Layer, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): EditMove = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    inline def apply(layer: Layer, popup: Any, propagatedFrom: Any, sourceTarget: Any, target: Any, `type`: String): EditMove = {
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditMove]
     }
@@ -276,8 +283,8 @@ object DrawEvents {
   }
   object EditResize {
     
-    inline def apply(layer: Layer, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): EditResize = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    inline def apply(layer: Layer, popup: Any, propagatedFrom: Any, sourceTarget: Any, target: Any, `type`: String): EditResize = {
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditResize]
     }
@@ -301,13 +308,14 @@ object DrawEvents {
     
     inline def apply(
       handler: String,
-      layer: js.Any,
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): EditStart = {
-      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditStart]
     }
@@ -331,13 +339,14 @@ object DrawEvents {
     
     inline def apply(
       handler: String,
-      layer: js.Any,
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): EditStop = {
-      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditStop]
     }
@@ -355,31 +364,32 @@ object DrawEvents {
     /**
       * List of all layers just being edited from the map.
       */
-    var layers: LayerGroup_[js.Any]
+    var layers: LayerGroup_[Any]
     
-    var poly: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any]
+    var poly: (Polyline_[LineString | MultiLineString, Any]) | Polygon_[Any]
   }
   object EditVertex {
     
     inline def apply(
-      layer: js.Any,
-      layers: LayerGroup_[js.Any],
-      poly: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any],
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      layers: LayerGroup_[Any],
+      poly: (Polyline_[LineString | MultiLineString, Any]) | Polygon_[Any],
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): EditVertex = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditVertex]
     }
     
     extension [Self <: EditVertex](x: Self) {
       
-      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      inline def setPoly(value: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any]): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
+      inline def setPoly(value: (Polyline_[LineString | MultiLineString, Any]) | Polygon_[Any]): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -390,26 +400,27 @@ object DrawEvents {
     /**
       * List of all layers just edited on the map.
       */
-    var layers: LayerGroup_[js.Any]
+    var layers: LayerGroup_[Any]
   }
   object Edited {
     
     inline def apply(
-      layer: js.Any,
-      layers: LayerGroup_[js.Any],
-      propagatedFrom: js.Any,
-      sourceTarget: js.Any,
-      target: js.Any,
+      layer: Any,
+      layers: LayerGroup_[Any],
+      popup: Any,
+      propagatedFrom: Any,
+      sourceTarget: Any,
+      target: Any,
       `type`: String
     ): Edited = {
-      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], layers = layers.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Edited]
     }
     
     extension [Self <: Edited](x: Self) {
       
-      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   

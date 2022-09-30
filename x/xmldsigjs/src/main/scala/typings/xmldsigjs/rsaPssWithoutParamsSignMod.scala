@@ -25,21 +25,21 @@ object rsaPssWithoutParamsSignMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_without_params_sign", "RsaPssWithoutParamsBase")
   @js.native
-  class RsaPssWithoutParamsBase () extends SignatureAlgorithm
+  open class RsaPssWithoutParamsBase () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_without_params_sign", "RsaPssWithoutParamsSha1")
   @js.native
-  class RsaPssWithoutParamsSha1 () extends RsaPssWithoutParamsBase
+  open class RsaPssWithoutParamsSha1 () extends RsaPssWithoutParamsBase
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_without_params_sign", "RsaPssWithoutParamsSha256")
   @js.native
-  class RsaPssWithoutParamsSha256 () extends RsaPssWithoutParamsBase
+  open class RsaPssWithoutParamsSha256 () extends RsaPssWithoutParamsBase
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_without_params_sign", "RsaPssWithoutParamsSha384")
   @js.native
-  class RsaPssWithoutParamsSha384 () extends RsaPssWithoutParamsBase
+  open class RsaPssWithoutParamsSha384 () extends RsaPssWithoutParamsBase
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_without_params_sign", "RsaPssWithoutParamsSha512")
   @js.native
-  class RsaPssWithoutParamsSha512 () extends RsaPssWithoutParamsBase
+  open class RsaPssWithoutParamsSha512 () extends RsaPssWithoutParamsBase
 }

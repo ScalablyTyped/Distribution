@@ -1,6 +1,5 @@
 package typings.jupyterlabObservables
 
-import typings.jupyterlabObservables.jupyterlabObservablesStrings.List
 import typings.jupyterlabObservables.observablelistMod.IObservableList.IChangedArgs
 import typings.jupyterlabObservables.observablelistMod.ObservableList.IOptions
 import typings.luminoAlgorithm.iterMod.IIterator
@@ -300,12 +299,12 @@ object observablelistMod {
       * The type of this object.
       */
     /* CompleteClass */
-    override val `type`: List = js.native
+    override val `type`: typings.jupyterlabObservables.jupyterlabObservablesStrings.List = js.native
     /**
       * The type of this object.
       */
     @JSName("type")
-    def type_MObservableList: List = js.native
+    def type_MObservableList: typings.jupyterlabObservables.jupyterlabObservablesStrings.List = js.native
   }
   object ObservableList {
     
@@ -566,7 +565,7 @@ object observablelistMod {
     /**
       * The type of this object.
       */
-    val `type`: List
+    val `type`: typings.jupyterlabObservables.jupyterlabObservablesStrings.List
   }
   object IObservableList {
     
@@ -712,7 +711,7 @@ object observablelistMod {
       
       inline def setSet(value: (Double, T) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      inline def setType(value: List): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.jupyterlabObservables.jupyterlabObservablesStrings.List): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

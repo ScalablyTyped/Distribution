@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.DynamicLabel")
 @js.native
-class DynamicLabel protected ()
+open class DynamicLabel protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.DynamicLabel {
   def this(
     model: AbstractModel,

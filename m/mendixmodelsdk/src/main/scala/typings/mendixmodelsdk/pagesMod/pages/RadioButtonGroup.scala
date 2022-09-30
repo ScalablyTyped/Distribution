@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/radio-buttons relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.RadioButtonGroup")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.RadioButtonGroup")
 @js.native
-class RadioButtonGroup protected () extends AttributeWidget {
+open class RadioButtonGroup protected () extends AttributeWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ class RadioButtonGroup protected () extends AttributeWidget {
 }
 object RadioButtonGroup {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RadioButtonGroup")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.RadioButtonGroup")
   @js.native
   val ^ : js.Any = js.native
   
@@ -609,13 +609,13 @@ object RadioButtonGroup {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): RadioButtonGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[RadioButtonGroup]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RadioButtonGroup.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.RadioButtonGroup.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RadioButtonGroup.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.RadioButtonGroup.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

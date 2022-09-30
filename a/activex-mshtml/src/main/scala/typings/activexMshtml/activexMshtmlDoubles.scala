@@ -1,0 +1,545 @@
+package typings.activexMshtml
+
+import typings.activexMshtml.MSHTML.BoolValue
+import typings.activexMshtml.MSHTML.DomConstructor
+import typings.activexMshtml.MSHTML.HTMLAppFlag
+import typings.activexMshtml.MSHTML.HTMLBorder
+import typings.activexMshtml.MSHTML.HTMLBorderStyle
+import typings.activexMshtml.MSHTML.HTMLCaptionFlag
+import typings.activexMshtml.MSHTML.HTMLDlgBorder
+import typings.activexMshtml.MSHTML.HTMLDlgCenter
+import typings.activexMshtml.MSHTML.HTMLDlgEdge
+import typings.activexMshtml.MSHTML.HTMLDlgFlag
+import typings.activexMshtml.MSHTML.HTMLMaximizeFlag
+import typings.activexMshtml.MSHTML.HTMLMinimizeFlag
+import typings.activexMshtml.MSHTML.HTMLSysMenuFlag
+import typings.activexMshtml.MSHTML.HTMLWindowState
+import typings.activexMshtml.MSHTML._BEHAVIOR_EVENT
+import typings.activexMshtml.MSHTML._BEHAVIOR_EVENT_FLAGS
+import typings.activexMshtml.MSHTML._BEHAVIOR_LAYOUT_INFO
+import typings.activexMshtml.MSHTML._BEHAVIOR_LAYOUT_MODE
+import typings.activexMshtml.MSHTML._BEHAVIOR_RELATION
+import typings.activexMshtml.MSHTML._BEHAVIOR_RENDER_INFO
+import typings.activexMshtml.MSHTML._CARET_DIRECTION
+import typings.activexMshtml.MSHTML._COORD_SYSTEM
+import typings.activexMshtml.MSHTML._DEV_CONSOLE_MESSAGE_LEVEL
+import typings.activexMshtml.MSHTML._DISPLAY_BREAK
+import typings.activexMshtml.MSHTML._DISPLAY_GRAVITY
+import typings.activexMshtml.MSHTML._DISPLAY_MOVEUNIT
+import typings.activexMshtml.MSHTML._DOM_EVENT_PHASE
+import typings.activexMshtml.MSHTML._ELEMENTDESCRIPTOR_FLAGS
+import typings.activexMshtml.MSHTML._ELEMENTNAMESPACE_FLAGS
+import typings.activexMshtml.MSHTML._ELEMENT_ADJACENCY
+import typings.activexMshtml.MSHTML._ELEMENT_CORNER
+import typings.activexMshtml.MSHTML._ELEMENT_TAG_ID
+import typings.activexMshtml.MSHTML._FINDTEXT_FLAGS
+import typings.activexMshtml.MSHTML._HTML_PAINTER
+import typings.activexMshtml.MSHTML._HTML_PAINT_DRAW_FLAGS
+import typings.activexMshtml.MSHTML._HTML_PAINT_DRAW_INFO_FLAGS
+import typings.activexMshtml.MSHTML._HTML_PAINT_EVENT_FLAGS
+import typings.activexMshtml.MSHTML._HTML_PAINT_ZORDER
+import typings.activexMshtml.MSHTML._HT_OPTIONS
+import typings.activexMshtml.MSHTML._HT_RESULTS
+import typings.activexMshtml.MSHTML._LINE_DIRECTION
+import typings.activexMshtml.MSHTML._MARKUP_CONTEXT_TYPE
+import typings.activexMshtml.MSHTML._MOVEUNIT_ACTION
+import typings.activexMshtml.MSHTML._PARSE_FLAGS
+import typings.activexMshtml.MSHTML._POINTER_GRAVITY
+import typings.activexMshtml.MSHTML._SAVE_SEGMENTS_FLAGS
+import typings.activexMshtml.MSHTML._SCRIPT_TIMER_TYPE
+import typings.activexMshtml.MSHTML._SECUREURLHOSTVALIDATE_FLAGS
+import typings.activexMshtml.MSHTML._SELECTION_TYPE
+import typings.activexMshtml.MSHTML._VIEW_OBJECT_ALPHA_MODE
+import typings.activexMshtml.MSHTML._VIEW_OBJECT_COMPOSITION_MODE
+import typings.activexMshtml.MSHTML.bodyScroll
+import typings.activexMshtml.MSHTML.frameScrolling
+import typings.activexMshtml.MSHTML.htmlAdjacency
+import typings.activexMshtml.MSHTML.htmlApplyLocation
+import typings.activexMshtml.MSHTML.htmlBlockAlign
+import typings.activexMshtml.MSHTML.htmlCaptionAlign
+import typings.activexMshtml.MSHTML.htmlCaptionVAlign
+import typings.activexMshtml.MSHTML.htmlCellAlign
+import typings.activexMshtml.MSHTML.htmlCellVAlign
+import typings.activexMshtml.MSHTML.htmlClear
+import typings.activexMshtml.MSHTML.htmlCompatMode
+import typings.activexMshtml.MSHTML.htmlComponent
+import typings.activexMshtml.MSHTML.htmlControlAlign
+import typings.activexMshtml.MSHTML.htmlDesignMode
+import typings.activexMshtml.MSHTML.htmlDir
+import typings.activexMshtml.MSHTML.htmlDirection
+import typings.activexMshtml.MSHTML.htmlDraggable
+import typings.activexMshtml.MSHTML.htmlDropEffect
+import typings.activexMshtml.MSHTML.htmlEditable
+import typings.activexMshtml.MSHTML.htmlEffectAllowed
+import typings.activexMshtml.MSHTML.htmlEncoding
+import typings.activexMshtml.MSHTML.htmlEndPoints
+import typings.activexMshtml.MSHTML.htmlFrame
+import typings.activexMshtml.MSHTML.htmlGlyphMode
+import typings.activexMshtml.MSHTML.htmlInput
+import typings.activexMshtml.MSHTML.htmlListType
+import typings.activexMshtml.MSHTML.htmlLoop
+import typings.activexMshtml.MSHTML.htmlMarqueeBehavior
+import typings.activexMshtml.MSHTML.htmlMarqueeDirection
+import typings.activexMshtml.MSHTML.htmlMediaErr
+import typings.activexMshtml.MSHTML.htmlMediaNetworkState
+import typings.activexMshtml.MSHTML.htmlMediaReadyState
+import typings.activexMshtml.MSHTML.htmlMethod
+import typings.activexMshtml.MSHTML.htmlPersistState
+import typings.activexMshtml.MSHTML.htmlReadyState
+import typings.activexMshtml.MSHTML.htmlRules
+import typings.activexMshtml.MSHTML.htmlSelectExFlag
+import typings.activexMshtml.MSHTML.htmlSelectType
+import typings.activexMshtml.MSHTML.htmlSelection
+import typings.activexMshtml.MSHTML.htmlSpellCheck
+import typings.activexMshtml.MSHTML.htmlStart
+import typings.activexMshtml.MSHTML.htmlTabIndex
+import typings.activexMshtml.MSHTML.htmlUnit
+import typings.activexMshtml.MSHTML.htmlWrap
+import typings.activexMshtml.MSHTML.htmlZOrder
+import typings.activexMshtml.MSHTML.lengthAdjust
+import typings.activexMshtml.MSHTML.mediaType
+import typings.activexMshtml.MSHTML.sandboxAllow
+import typings.activexMshtml.MSHTML.styleAccelerator
+import typings.activexMshtml.MSHTML.styleAlignContent
+import typings.activexMshtml.MSHTML.styleAlignItems
+import typings.activexMshtml.MSHTML.styleAlignSelf
+import typings.activexMshtml.MSHTML.styleAlignmentBaseline
+import typings.activexMshtml.MSHTML.styleAttrType
+import typings.activexMshtml.MSHTML.styleAuto
+import typings.activexMshtml.MSHTML.styleBackfaceVisibility
+import typings.activexMshtml.MSHTML.styleBackgroundAttachment
+import typings.activexMshtml.MSHTML.styleBackgroundAttachment3
+import typings.activexMshtml.MSHTML.styleBackgroundClip
+import typings.activexMshtml.MSHTML.styleBackgroundOrigin
+import typings.activexMshtml.MSHTML.styleBackgroundRepeat
+import typings.activexMshtml.MSHTML.styleBaselineShift
+import typings.activexMshtml.MSHTML.styleBidi
+import typings.activexMshtml.MSHTML.styleBlockProgression
+import typings.activexMshtml.MSHTML.styleBool
+import typings.activexMshtml.MSHTML.styleBorderCollapse
+import typings.activexMshtml.MSHTML.styleBorderImageRepeat
+import typings.activexMshtml.MSHTML.styleBorderImageSliceFill
+import typings.activexMshtml.MSHTML.styleBorderStyle
+import typings.activexMshtml.MSHTML.styleBorderWidth
+import typings.activexMshtml.MSHTML.styleBoxSizing
+import typings.activexMshtml.MSHTML.styleBreak
+import typings.activexMshtml.MSHTML.styleBreakInside
+import typings.activexMshtml.MSHTML.styleCaptionSide
+import typings.activexMshtml.MSHTML.styleClipRule
+import typings.activexMshtml.MSHTML.styleColorInterpolationFilters
+import typings.activexMshtml.MSHTML.styleColumnFill
+import typings.activexMshtml.MSHTML.styleColumnSpan
+import typings.activexMshtml.MSHTML.styleCursor
+import typings.activexMshtml.MSHTML.styleDataRepeat
+import typings.activexMshtml.MSHTML.styleDefaultTextSelection
+import typings.activexMshtml.MSHTML.styleDir
+import typings.activexMshtml.MSHTML.styleDisplay
+import typings.activexMshtml.MSHTML.styleDominantBaseline
+import typings.activexMshtml.MSHTML.styleEmptyCells
+import typings.activexMshtml.MSHTML.styleEnableBackground
+import typings.activexMshtml.MSHTML.styleFillRule
+import typings.activexMshtml.MSHTML.styleFlex
+import typings.activexMshtml.MSHTML.styleFlexBasis
+import typings.activexMshtml.MSHTML.styleFlexDirection
+import typings.activexMshtml.MSHTML.styleFlexWrap
+import typings.activexMshtml.MSHTML.styleFontSize
+import typings.activexMshtml.MSHTML.styleFontStretch
+import typings.activexMshtml.MSHTML.styleFontStyle
+import typings.activexMshtml.MSHTML.styleFontVariant
+import typings.activexMshtml.MSHTML.styleFontWeight
+import typings.activexMshtml.MSHTML.styleGridColumn
+import typings.activexMshtml.MSHTML.styleGridColumnAlign
+import typings.activexMshtml.MSHTML.styleGridColumnSpan
+import typings.activexMshtml.MSHTML.styleGridRow
+import typings.activexMshtml.MSHTML.styleGridRowAlign
+import typings.activexMshtml.MSHTML.styleGridRowSpan
+import typings.activexMshtml.MSHTML.styleHyphenateLimitLines
+import typings.activexMshtml.MSHTML.styleHyphens
+import typings.activexMshtml.MSHTML.styleImeMode
+import typings.activexMshtml.MSHTML.styleInitialColor
+import typings.activexMshtml.MSHTML.styleInitialString
+import typings.activexMshtml.MSHTML.styleInterpolation
+import typings.activexMshtml.MSHTML.styleJustifyContent
+import typings.activexMshtml.MSHTML.styleLayoutFlow
+import typings.activexMshtml.MSHTML.styleLayoutGridChar
+import typings.activexMshtml.MSHTML.styleLayoutGridLine
+import typings.activexMshtml.MSHTML.styleLayoutGridMode
+import typings.activexMshtml.MSHTML.styleLayoutGridType
+import typings.activexMshtml.MSHTML.styleLineBreak
+import typings.activexMshtml.MSHTML.styleListStylePosition
+import typings.activexMshtml.MSHTML.styleListStyleType
+import typings.activexMshtml.MSHTML.styleMsAnimationDirection
+import typings.activexMshtml.MSHTML.styleMsAnimationFillMode
+import typings.activexMshtml.MSHTML.styleMsAnimationPlayState
+import typings.activexMshtml.MSHTML.styleMsContentZoomChaining
+import typings.activexMshtml.MSHTML.styleMsContentZoomSnapType
+import typings.activexMshtml.MSHTML.styleMsContentZooming
+import typings.activexMshtml.MSHTML.styleMsFlexAlign
+import typings.activexMshtml.MSHTML.styleMsFlexItemAlign
+import typings.activexMshtml.MSHTML.styleMsFlexLinePack
+import typings.activexMshtml.MSHTML.styleMsFlexPack
+import typings.activexMshtml.MSHTML.styleMsHighContrastAdjust
+import typings.activexMshtml.MSHTML.styleMsImeAlign
+import typings.activexMshtml.MSHTML.styleMsOverflowStyle
+import typings.activexMshtml.MSHTML.styleMsScrollChaining
+import typings.activexMshtml.MSHTML.styleMsScrollRails
+import typings.activexMshtml.MSHTML.styleMsScrollSnapType
+import typings.activexMshtml.MSHTML.styleMsScrollTranslation
+import typings.activexMshtml.MSHTML.styleMsTextCombineHorizontal
+import typings.activexMshtml.MSHTML.styleMsTouchAction
+import typings.activexMshtml.MSHTML.styleMsTouchSelect
+import typings.activexMshtml.MSHTML.styleMsUserSelect
+import typings.activexMshtml.MSHTML.styleNone
+import typings.activexMshtml.MSHTML.styleNormal
+import typings.activexMshtml.MSHTML.styleOutlineStyle
+import typings.activexMshtml.MSHTML.styleOverflow
+import typings.activexMshtml.MSHTML.stylePageBreak
+import typings.activexMshtml.MSHTML.stylePageBreakInside
+import typings.activexMshtml.MSHTML.stylePerspectiveOriginX
+import typings.activexMshtml.MSHTML.stylePerspectiveOriginY
+import typings.activexMshtml.MSHTML.stylePointerEvents
+import typings.activexMshtml.MSHTML.stylePosition
+import typings.activexMshtml.MSHTML.styleRubyAlign
+import typings.activexMshtml.MSHTML.styleRubyOverhang
+import typings.activexMshtml.MSHTML.styleRubyPosition
+import typings.activexMshtml.MSHTML.styleStrokeLinecap
+import typings.activexMshtml.MSHTML.styleStrokeLinejoin
+import typings.activexMshtml.MSHTML.styleStyleFloat
+import typings.activexMshtml.MSHTML.styleTableLayout
+import typings.activexMshtml.MSHTML.styleTextAlignLast
+import typings.activexMshtml.MSHTML.styleTextAnchor
+import typings.activexMshtml.MSHTML.styleTextDecoration
+import typings.activexMshtml.MSHTML.styleTextEffect
+import typings.activexMshtml.MSHTML.styleTextJustify
+import typings.activexMshtml.MSHTML.styleTextJustifyTrim
+import typings.activexMshtml.MSHTML.styleTextLineThroughStyle
+import typings.activexMshtml.MSHTML.styleTextOverflow
+import typings.activexMshtml.MSHTML.styleTextSizeAdjust
+import typings.activexMshtml.MSHTML.styleTextTransform
+import typings.activexMshtml.MSHTML.styleTextUnderlinePosition
+import typings.activexMshtml.MSHTML.styleTextUnderlineStyle
+import typings.activexMshtml.MSHTML.styleTransformOriginX
+import typings.activexMshtml.MSHTML.styleTransformOriginY
+import typings.activexMshtml.MSHTML.styleTransformStyle
+import typings.activexMshtml.MSHTML.styleUserZoom
+import typings.activexMshtml.MSHTML.styleVerticalAlign
+import typings.activexMshtml.MSHTML.styleViewportSize
+import typings.activexMshtml.MSHTML.styleVisibility
+import typings.activexMshtml.MSHTML.styleWebkitAppearance
+import typings.activexMshtml.MSHTML.styleWebkitBoxDirection
+import typings.activexMshtml.MSHTML.styleWebkitBoxOrient
+import typings.activexMshtml.MSHTML.styleWebkitBoxPack
+import typings.activexMshtml.MSHTML.styleWhiteSpace
+import typings.activexMshtml.MSHTML.styleWidowsOrphans
+import typings.activexMshtml.MSHTML.styleWordBreak
+import typings.activexMshtml.MSHTML.styleWordWrap
+import typings.activexMshtml.MSHTML.styleWrapFlow
+import typings.activexMshtml.MSHTML.styleWrapThrough
+import typings.activexMshtml.MSHTML.styleWritingMode
+import typings.activexMshtml.MSHTML.styleZIndex
+import typings.activexMshtml.MSHTML.svgAngleType
+import typings.activexMshtml.MSHTML.svgChannel
+import typings.activexMshtml.MSHTML.svgEdgemode
+import typings.activexMshtml.MSHTML.svgExternalResourcesRequired
+import typings.activexMshtml.MSHTML.svgFeblendMode
+import typings.activexMshtml.MSHTML.svgFecolormatrixType
+import typings.activexMshtml.MSHTML.svgFecomponenttransferType
+import typings.activexMshtml.MSHTML.svgFecompositeOperator
+import typings.activexMshtml.MSHTML.svgFocusable
+import typings.activexMshtml.MSHTML.svgLengthType
+import typings.activexMshtml.MSHTML.svgMarkerOrient
+import typings.activexMshtml.MSHTML.svgMarkerOrientAttribute
+import typings.activexMshtml.MSHTML.svgMarkerUnits
+import typings.activexMshtml.MSHTML.svgMorphologyOperator
+import typings.activexMshtml.MSHTML.svgPathSegType
+import typings.activexMshtml.MSHTML.svgPreserveAlpha
+import typings.activexMshtml.MSHTML.svgPreserveAspectMeetOrSliceType
+import typings.activexMshtml.MSHTML.svgPreserveAspectRatioAlignType
+import typings.activexMshtml.MSHTML.svgSpreadMethod
+import typings.activexMshtml.MSHTML.svgStitchtype
+import typings.activexMshtml.MSHTML.svgTransformType
+import typings.activexMshtml.MSHTML.svgTurbulenceType
+import typings.activexMshtml.MSHTML.svgUnitTypes
+import typings.activexMshtml.MSHTML.textDecoration
+import typings.activexMshtml.MSHTML.textpathMethodtype
+import typings.activexMshtml.MSHTML.textpathSpacingtype
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object activexMshtmlDoubles {
+  
+  @js.native
+  sealed trait `-2147483648`
+    extends StObject
+       with _FINDTEXT_FLAGS
+  inline def `-2147483648`: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
+  
+  @js.native
+  sealed trait `2147483647`
+    extends StObject
+       with BoolValue
+       with DomConstructor
+       with HTMLAppFlag
+       with HTMLBorder
+       with HTMLBorderStyle
+       with HTMLCaptionFlag
+       with HTMLDlgBorder
+       with HTMLDlgCenter
+       with HTMLDlgEdge
+       with HTMLDlgFlag
+       with HTMLMaximizeFlag
+       with HTMLMinimizeFlag
+       with HTMLSysMenuFlag
+       with HTMLWindowState
+       with _BEHAVIOR_EVENT
+       with _BEHAVIOR_EVENT_FLAGS
+       with _BEHAVIOR_LAYOUT_INFO
+       with _BEHAVIOR_LAYOUT_MODE
+       with _BEHAVIOR_RELATION
+       with _BEHAVIOR_RENDER_INFO
+       with _CARET_DIRECTION
+       with _COORD_SYSTEM
+       with _DEV_CONSOLE_MESSAGE_LEVEL
+       with _DISPLAY_BREAK
+       with _DISPLAY_GRAVITY
+       with _DISPLAY_MOVEUNIT
+       with _DOM_EVENT_PHASE
+       with _ELEMENTDESCRIPTOR_FLAGS
+       with _ELEMENTNAMESPACE_FLAGS
+       with _ELEMENT_ADJACENCY
+       with _ELEMENT_CORNER
+       with _ELEMENT_TAG_ID
+       with _FINDTEXT_FLAGS
+       with _HTML_PAINTER
+       with _HTML_PAINT_DRAW_FLAGS
+       with _HTML_PAINT_DRAW_INFO_FLAGS
+       with _HTML_PAINT_EVENT_FLAGS
+       with _HTML_PAINT_ZORDER
+       with _HT_OPTIONS
+       with _HT_RESULTS
+       with _LINE_DIRECTION
+       with _MARKUP_CONTEXT_TYPE
+       with _MOVEUNIT_ACTION
+       with _PARSE_FLAGS
+       with _POINTER_GRAVITY
+       with _SAVE_SEGMENTS_FLAGS
+       with _SCRIPT_TIMER_TYPE
+       with _SECUREURLHOSTVALIDATE_FLAGS
+       with _SELECTION_TYPE
+       with _VIEW_OBJECT_ALPHA_MODE
+       with _VIEW_OBJECT_COMPOSITION_MODE
+       with bodyScroll
+       with frameScrolling
+       with htmlAdjacency
+       with htmlApplyLocation
+       with htmlBlockAlign
+       with htmlCaptionAlign
+       with htmlCaptionVAlign
+       with htmlCellAlign
+       with htmlCellVAlign
+       with htmlClear
+       with htmlCompatMode
+       with htmlComponent
+       with htmlControlAlign
+       with htmlDesignMode
+       with htmlDir
+       with htmlDirection
+       with htmlDraggable
+       with htmlDropEffect
+       with htmlEditable
+       with htmlEffectAllowed
+       with htmlEncoding
+       with htmlEndPoints
+       with htmlFrame
+       with htmlGlyphMode
+       with htmlInput
+       with htmlListType
+       with htmlLoop
+       with htmlMarqueeBehavior
+       with htmlMarqueeDirection
+       with htmlMediaErr
+       with htmlMediaNetworkState
+       with htmlMediaReadyState
+       with htmlMethod
+       with htmlPersistState
+       with htmlReadyState
+       with htmlRules
+       with htmlSelectExFlag
+       with htmlSelectType
+       with htmlSelection
+       with htmlSpellCheck
+       with htmlStart
+       with htmlTabIndex
+       with htmlUnit
+       with htmlWrap
+       with htmlZOrder
+       with lengthAdjust
+       with mediaType
+       with sandboxAllow
+       with styleAccelerator
+       with styleAlignContent
+       with styleAlignItems
+       with styleAlignSelf
+       with styleAlignmentBaseline
+       with styleAttrType
+       with styleAuto
+       with styleBackfaceVisibility
+       with styleBackgroundAttachment
+       with styleBackgroundAttachment3
+       with styleBackgroundClip
+       with styleBackgroundOrigin
+       with styleBackgroundRepeat
+       with styleBaselineShift
+       with styleBidi
+       with styleBlockProgression
+       with styleBool
+       with styleBorderCollapse
+       with styleBorderImageRepeat
+       with styleBorderImageSliceFill
+       with styleBorderStyle
+       with styleBorderWidth
+       with styleBoxSizing
+       with styleBreak
+       with styleBreakInside
+       with styleCaptionSide
+       with styleClipRule
+       with styleColorInterpolationFilters
+       with styleColumnFill
+       with styleColumnSpan
+       with styleCursor
+       with styleDataRepeat
+       with styleDefaultTextSelection
+       with styleDir
+       with styleDisplay
+       with styleDominantBaseline
+       with styleEmptyCells
+       with styleEnableBackground
+       with styleFillRule
+       with styleFlex
+       with styleFlexBasis
+       with styleFlexDirection
+       with styleFlexWrap
+       with styleFontSize
+       with styleFontStretch
+       with styleFontStyle
+       with styleFontVariant
+       with styleFontWeight
+       with styleGridColumn
+       with styleGridColumnAlign
+       with styleGridColumnSpan
+       with styleGridRow
+       with styleGridRowAlign
+       with styleGridRowSpan
+       with styleHyphenateLimitLines
+       with styleHyphens
+       with styleImeMode
+       with styleInitialColor
+       with styleInitialString
+       with styleInterpolation
+       with styleJustifyContent
+       with styleLayoutFlow
+       with styleLayoutGridChar
+       with styleLayoutGridLine
+       with styleLayoutGridMode
+       with styleLayoutGridType
+       with styleLineBreak
+       with styleListStylePosition
+       with styleListStyleType
+       with styleMsAnimationDirection
+       with styleMsAnimationFillMode
+       with styleMsAnimationPlayState
+       with styleMsContentZoomChaining
+       with styleMsContentZoomSnapType
+       with styleMsContentZooming
+       with styleMsFlexAlign
+       with styleMsFlexItemAlign
+       with styleMsFlexLinePack
+       with styleMsFlexPack
+       with styleMsHighContrastAdjust
+       with styleMsImeAlign
+       with styleMsOverflowStyle
+       with styleMsScrollChaining
+       with styleMsScrollRails
+       with styleMsScrollSnapType
+       with styleMsScrollTranslation
+       with styleMsTextCombineHorizontal
+       with styleMsTouchAction
+       with styleMsTouchSelect
+       with styleMsUserSelect
+       with styleNone
+       with styleNormal
+       with styleOutlineStyle
+       with styleOverflow
+       with stylePageBreak
+       with stylePageBreakInside
+       with stylePerspectiveOriginX
+       with stylePerspectiveOriginY
+       with stylePointerEvents
+       with stylePosition
+       with styleRubyAlign
+       with styleRubyOverhang
+       with styleRubyPosition
+       with styleStrokeLinecap
+       with styleStrokeLinejoin
+       with styleStyleFloat
+       with styleTableLayout
+       with styleTextAlignLast
+       with styleTextAnchor
+       with styleTextDecoration
+       with styleTextEffect
+       with styleTextJustify
+       with styleTextJustifyTrim
+       with styleTextLineThroughStyle
+       with styleTextOverflow
+       with styleTextSizeAdjust
+       with styleTextTransform
+       with styleTextUnderlinePosition
+       with styleTextUnderlineStyle
+       with styleTransformOriginX
+       with styleTransformOriginY
+       with styleTransformStyle
+       with styleUserZoom
+       with styleVerticalAlign
+       with styleViewportSize
+       with styleVisibility
+       with styleWebkitAppearance
+       with styleWebkitBoxDirection
+       with styleWebkitBoxOrient
+       with styleWebkitBoxPack
+       with styleWhiteSpace
+       with styleWidowsOrphans
+       with styleWordBreak
+       with styleWordWrap
+       with styleWrapFlow
+       with styleWrapThrough
+       with styleWritingMode
+       with styleZIndex
+       with svgAngleType
+       with svgChannel
+       with svgEdgemode
+       with svgExternalResourcesRequired
+       with svgFeblendMode
+       with svgFecolormatrixType
+       with svgFecomponenttransferType
+       with svgFecompositeOperator
+       with svgFocusable
+       with svgLengthType
+       with svgMarkerOrient
+       with svgMarkerOrientAttribute
+       with svgMarkerUnits
+       with svgMorphologyOperator
+       with svgPathSegType
+       with svgPreserveAlpha
+       with svgPreserveAspectMeetOrSliceType
+       with svgPreserveAspectRatioAlignType
+       with svgSpreadMethod
+       with svgStitchtype
+       with svgTransformType
+       with svgTurbulenceType
+       with svgUnitTypes
+       with textDecoration
+       with textpathMethodtype
+       with textpathSpacingtype
+  inline def `2147483647`: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
+}

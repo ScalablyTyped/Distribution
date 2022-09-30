@@ -1,8 +1,8 @@
 package typings.trimblemapsTrimblemapsJs.mod
 
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`0`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`1`
-import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsNumbers.`2`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`0`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`1`
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`2`
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.altKey
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.ctrlKey
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsStrings.shiftKey

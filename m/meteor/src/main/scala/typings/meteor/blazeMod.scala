@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
+import typings.jquery.JQuery
+import typings.jquery.JQueryStatic
+import typings.meteor.Meteor.Event
 import typings.meteor.Meteor.SubscriptionHandle
 import typings.meteor.Tracker.Computation
 import typings.std.HTMLElement
@@ -29,10 +32,10 @@ object blazeMod {
     
     inline def Let(bindings: js.Function, contentFunc: js.Function): View = (^.asInstanceOf[js.Dynamic].applyDynamic("Let")(bindings.asInstanceOf[js.Any], contentFunc.asInstanceOf[js.Any])).asInstanceOf[View]
     
-    trait Template extends StObject {
+    trait Template[D, T] extends StObject {
       
       @JSName("$")
-      var $: js.Any
+      var $: JQueryStatic
       
       def constructView(): View
       
@@ -40,21 +43,33 @@ object blazeMod {
       
       var destroyed: js.Function
       
-      def events(eventsMap: EventsMap): Unit
+      def events(eventsMap: EventsMap[D, T]): Unit
       
       def find(selector: String): HTMLElement
       
       def findAll(selector: String): js.Array[HTMLElement]
       
-      var head: Template
+      var head: Template[Any, TemplateInstance[Any]]
       
       def helpers(helpersMap: HelpersMap): Unit
       
-      def onCreated(cb: js.Function): Unit
+      /**
+        * Register a function to be called when an instance of this template is created.
+        * @param callback A function to be added as a callback.
+        */
+      def onCreated(callback: js.ThisFunction0[/* this */ T, Any]): Unit
       
-      def onDestroyed(cb: js.Function): Unit
+      /**
+        * Register a function to be called when an instance of this template is removed from the DOM and destroyed.
+        * @param callback A function to be added as a callback.
+        */
+      def onDestroyed(callback: js.ThisFunction0[/* this */ T, Any]): Unit
       
-      def onRendered(cb: js.Function): Unit
+      /**
+        * Register a function to be called when an instance of this template is inserted into the DOM.
+        * @param callback A function to be added as a callback.
+        */
+      def onRendered(callback: js.ThisFunction0[/* this */ T, Any]): Unit
       
       var renderFunction: js.Function
       
@@ -66,11 +81,11 @@ object blazeMod {
       
       @JSImport("meteor/blaze", "Blaze.Template")
       @js.native
-      val ^ : typings.meteor.blazeMod.Blaze.TemplateStatic = js.native
+      val ^ : typings.meteor.blazeMod.Blaze.TemplateStatic[Any, TemplateInstance[Any]] = js.native
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: Template[?, ?], D, T](x: Self & (Template[D, T])) {
         
-        inline def set$(value: js.Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+        inline def set$(value: JQueryStatic): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
         
         inline def setConstructView(value: () => View): Self = StObject.set(x, "constructView", js.Any.fromFunction0(value))
         
@@ -78,21 +93,21 @@ object blazeMod {
         
         inline def setDestroyed(value: js.Function): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
         
-        inline def setEvents(value: EventsMap => Unit): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
+        inline def setEvents(value: EventsMap[D, T] => Unit): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
         
         inline def setFind(value: String => HTMLElement): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
         
         inline def setFindAll(value: String => js.Array[HTMLElement]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
         
-        inline def setHead(value: Template): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+        inline def setHead(value: Template[Any, TemplateInstance[Any]]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
         
         inline def setHelpers(value: HelpersMap => Unit): Self = StObject.set(x, "helpers", js.Any.fromFunction1(value))
         
-        inline def setOnCreated(value: js.Function => Unit): Self = StObject.set(x, "onCreated", js.Any.fromFunction1(value))
+        inline def setOnCreated(value: js.ThisFunction0[/* this */ T, Any] => Unit): Self = StObject.set(x, "onCreated", js.Any.fromFunction1(value))
         
-        inline def setOnDestroyed(value: js.Function => Unit): Self = StObject.set(x, "onDestroyed", js.Any.fromFunction1(value))
+        inline def setOnDestroyed(value: js.ThisFunction0[/* this */ T, Any] => Unit): Self = StObject.set(x, "onDestroyed", js.Any.fromFunction1(value))
         
-        inline def setOnRendered(value: js.Function => Unit): Self = StObject.set(x, "onRendered", js.Any.fromFunction1(value))
+        inline def setOnRendered(value: js.ThisFunction0[/* this */ T, Any] => Unit): Self = StObject.set(x, "onRendered", js.Any.fromFunction1(value))
         
         inline def setRenderFunction(value: js.Function): Self = StObject.set(x, "renderFunction", value.asInstanceOf[js.Any])
         
@@ -105,16 +120,16 @@ object blazeMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/blaze", "Blaze.Template")
     @js.native
-    class TemplateCls ()
+    open class TemplateCls ()
       extends StObject
-         with Template {
+         with Template[Any, TemplateInstance[Any]] {
       def this(viewName: String) = this()
       def this(viewName: String, renderFunction: js.Function) = this()
       def this(viewName: Unit, renderFunction: js.Function) = this()
       
       /* CompleteClass */
       @JSName("$")
-      var $: js.Any = js.native
+      var $: JQueryStatic = js.native
       
       /* CompleteClass */
       override def constructView(): View = js.native
@@ -126,7 +141,7 @@ object blazeMod {
       var destroyed: js.Function = js.native
       
       /* CompleteClass */
-      override def events(eventsMap: EventsMap): Unit = js.native
+      override def events(eventsMap: EventsMap[Any, TemplateInstance[Any]]): Unit = js.native
       
       /* CompleteClass */
       override def find(selector: String): HTMLElement = js.native
@@ -135,19 +150,31 @@ object blazeMod {
       override def findAll(selector: String): js.Array[HTMLElement] = js.native
       
       /* CompleteClass */
-      var head: Template = js.native
+      var head: Template[Any, TemplateInstance[Any]] = js.native
       
       /* CompleteClass */
       override def helpers(helpersMap: HelpersMap): Unit = js.native
       
+      /**
+        * Register a function to be called when an instance of this template is created.
+        * @param callback A function to be added as a callback.
+        */
       /* CompleteClass */
-      override def onCreated(cb: js.Function): Unit = js.native
+      override def onCreated(callback: js.ThisFunction0[TemplateInstance[Any], Any]): Unit = js.native
       
+      /**
+        * Register a function to be called when an instance of this template is removed from the DOM and destroyed.
+        * @param callback A function to be added as a callback.
+        */
       /* CompleteClass */
-      override def onDestroyed(cb: js.Function): Unit = js.native
+      override def onDestroyed(callback: js.ThisFunction0[TemplateInstance[Any], Any]): Unit = js.native
       
+      /**
+        * Register a function to be called when an instance of this template is inserted into the DOM.
+        * @param callback A function to be added as a callback.
+        */
       /* CompleteClass */
-      override def onRendered(cb: js.Function): Unit = js.native
+      override def onRendered(callback: js.ThisFunction0[TemplateInstance[Any], Any]): Unit = js.native
       
       /* CompleteClass */
       var renderFunction: js.Function = js.native
@@ -159,96 +186,30 @@ object blazeMod {
       var viewName: String = js.native
     }
     
-    trait TemplateInstance extends StObject {
-      
-      @JSName("$")
-      def $(selector: String): js.Any
-      
-      def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation
-      
-      var data: Record[String, js.Any]
-      
-      def find(selector: String): HTMLElement
-      
-      def findAll(selector: String): js.Array[HTMLElement]
-      
-      var firstNode: js.Object
-      
-      var lastNode: js.Object
-      
-      def subscribe(name: String, args: js.Any*): SubscriptionHandle
-      
-      def subscriptionsReady(): Boolean
-      
-      var view: js.Object
-    }
-    object TemplateInstance {
-      
-      @JSImport("meteor/blaze", "Blaze.TemplateInstance")
-      @js.native
-      val ^ : TemplateInstanceStatic = js.native
-      
-      extension [Self <: TemplateInstance](x: Self) {
-        
-        inline def set$(value: String => js.Any): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
-        
-        inline def setAutorun(value: js.Function1[/* computation */ Computation, Unit] => Computation): Self = StObject.set(x, "autorun", js.Any.fromFunction1(value))
-        
-        inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-        
-        inline def setFind(value: String => HTMLElement): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
-        
-        inline def setFindAll(value: String => js.Array[HTMLElement]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
-        
-        inline def setFirstNode(value: js.Object): Self = StObject.set(x, "firstNode", value.asInstanceOf[js.Any])
-        
-        inline def setLastNode(value: js.Object): Self = StObject.set(x, "lastNode", value.asInstanceOf[js.Any])
-        
-        inline def setSubscribe(value: (String, /* repeated */ js.Any) => SubscriptionHandle): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
-        
-        inline def setSubscriptionsReady(value: () => Boolean): Self = StObject.set(x, "subscriptionsReady", js.Any.fromFunction0(value))
-        
-        inline def setView(value: js.Object): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-      }
-    }
-    
-    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/blaze", "Blaze.TemplateInstance")
     @js.native
-    class TemplateInstanceCls protected ()
-      extends StObject
-         with TemplateInstance {
+    open class TemplateInstance[D] protected () extends StObject {
       def this(view: View) = this()
       
-      /* CompleteClass */
       @JSName("$")
-      override def $(selector: String): js.Any = js.native
+      def $[TElement /* <: HTMLElement */](selector: String): JQuery[TElement] = js.native
       
-      /* CompleteClass */
-      override def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
+      def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
       
-      /* CompleteClass */
-      var data: Record[String, js.Any] = js.native
+      var data: D = js.native
       
-      /* CompleteClass */
-      override def find(selector: String): HTMLElement = js.native
+      def find(selector: String): HTMLElement = js.native
       
-      /* CompleteClass */
-      override def findAll(selector: String): js.Array[HTMLElement] = js.native
+      def findAll(selector: String): js.Array[HTMLElement] = js.native
       
-      /* CompleteClass */
       var firstNode: js.Object = js.native
       
-      /* CompleteClass */
       var lastNode: js.Object = js.native
       
-      /* CompleteClass */
-      override def subscribe(name: String, args: js.Any*): SubscriptionHandle = js.native
+      def subscribe(name: String, args: Any*): SubscriptionHandle = js.native
       
-      /* CompleteClass */
-      override def subscriptionsReady(): Boolean = js.native
+      def subscriptionsReady(): Boolean = js.native
       
-      /* CompleteClass */
       var view: js.Object = js.native
     }
     
@@ -281,9 +242,9 @@ object blazeMod {
       
       var renderCount: Double
       
-      var template: Template
+      var template: Template[Any, TemplateInstance[Any]]
       
-      def templateInstance(): TemplateInstance
+      def templateInstance(): TemplateInstance[Any]
     }
     object View {
       
@@ -317,16 +278,16 @@ object blazeMod {
         
         inline def setRenderCount(value: Double): Self = StObject.set(x, "renderCount", value.asInstanceOf[js.Any])
         
-        inline def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: Template[Any, TemplateInstance[Any]]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        inline def setTemplateInstance(value: () => TemplateInstance): Self = StObject.set(x, "templateInstance", js.Any.fromFunction0(value))
+        inline def setTemplateInstance(value: () => TemplateInstance[Any]): Self = StObject.set(x, "templateInstance", js.Any.fromFunction0(value))
       }
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/blaze", "Blaze.View")
     @js.native
-    class ViewCls ()
+    open class ViewCls ()
       extends StObject
          with View {
       def this(name: String) = this()
@@ -370,10 +331,10 @@ object blazeMod {
       var renderCount: Double = js.native
       
       /* CompleteClass */
-      var template: Template = js.native
+      var template: Template[Any, TemplateInstance[Any]] = js.native
       
       /* CompleteClass */
-      override def templateInstance(): TemplateInstance = js.native
+      override def templateInstance(): TemplateInstance[Any] = js.native
     }
     
     inline def With(data: js.Function, contentFunc: js.Function): View = (^.asInstanceOf[js.Dynamic].applyDynamic("With")(data.asInstanceOf[js.Any], contentFunc.asInstanceOf[js.Any])).asInstanceOf[View]
@@ -391,27 +352,71 @@ object blazeMod {
     inline def getView(): View = ^.asInstanceOf[js.Dynamic].applyDynamic("getView")().asInstanceOf[View]
     inline def getView(element: HTMLElement): View = ^.asInstanceOf[js.Dynamic].applyDynamic("getView")(element.asInstanceOf[js.Any]).asInstanceOf[View]
     
-    inline def isTemplate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTemplate(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def remove(renderedView: View): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(renderedView.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def render(templateOrView: Template, parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def render(templateOrView: Template, parentNode: Node, nextNode: Unit, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def render(templateOrView: Template, parentNode: Node, nextNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def render(templateOrView: Template, parentNode: Node, nextNode: Node, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def render(templateOrView: Template[Any, TemplateInstance[Any]], parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def render(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      parentNode: Node,
+      nextNode: Unit,
+      parentView: View
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def render(templateOrView: Template[Any, TemplateInstance[Any]], parentNode: Node, nextNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def render(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      parentNode: Node,
+      nextNode: Node,
+      parentView: View
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def render(templateOrView: View, parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def render(templateOrView: View, parentNode: Node, nextNode: Unit, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def render(templateOrView: View, parentNode: Node, nextNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def render(templateOrView: View, parentNode: Node, nextNode: Node, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(templateOrView.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
     
-    inline def renderWithData(templateOrView: Template, data: js.Function, parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def renderWithData(templateOrView: Template, data: js.Function, parentNode: Node, nextNode: Unit, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def renderWithData(templateOrView: Template, data: js.Function, parentNode: Node, nextNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def renderWithData(templateOrView: Template, data: js.Function, parentNode: Node, nextNode: Node, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def renderWithData(templateOrView: Template, data: js.Object, parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def renderWithData(templateOrView: Template, data: js.Object, parentNode: Node, nextNode: Unit, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def renderWithData(templateOrView: Template, data: js.Object, parentNode: Node, nextNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
-    inline def renderWithData(templateOrView: Template, data: js.Object, parentNode: Node, nextNode: Node, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(templateOrView: Template[Any, TemplateInstance[Any]], data: js.Function, parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      data: js.Function,
+      parentNode: Node,
+      nextNode: Unit,
+      parentView: View
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      data: js.Function,
+      parentNode: Node,
+      nextNode: Node
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      data: js.Function,
+      parentNode: Node,
+      nextNode: Node,
+      parentView: View
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(templateOrView: Template[Any, TemplateInstance[Any]], data: js.Object, parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      data: js.Object,
+      parentNode: Node,
+      nextNode: Unit,
+      parentView: View
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      data: js.Object,
+      parentNode: Node,
+      nextNode: Node
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
+    inline def renderWithData(
+      templateOrView: Template[Any, TemplateInstance[Any]],
+      data: js.Object,
+      parentNode: Node,
+      nextNode: Node,
+      parentView: View
+    ): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def renderWithData(templateOrView: View, data: js.Function, parentNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def renderWithData(templateOrView: View, data: js.Function, parentNode: Node, nextNode: Unit, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def renderWithData(templateOrView: View, data: js.Function, parentNode: Node, nextNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
@@ -421,39 +426,35 @@ object blazeMod {
     inline def renderWithData(templateOrView: View, data: js.Object, parentNode: Node, nextNode: Node): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any])).asInstanceOf[View]
     inline def renderWithData(templateOrView: View, data: js.Object, parentNode: Node, nextNode: Node, parentView: View): View = (^.asInstanceOf[js.Dynamic].applyDynamic("renderWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any], parentNode.asInstanceOf[js.Any], nextNode.asInstanceOf[js.Any], parentView.asInstanceOf[js.Any])).asInstanceOf[View]
     
-    inline def toHTML(templateOrView: Template): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(templateOrView.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toHTML(templateOrView: Template[Any, TemplateInstance[Any]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(templateOrView.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def toHTML(templateOrView: View): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(templateOrView.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def toHTMLWithData(templateOrView: Template, data: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def toHTMLWithData(templateOrView: Template, data: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toHTMLWithData(templateOrView: Template[Any, TemplateInstance[Any]], data: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toHTMLWithData(templateOrView: Template[Any, TemplateInstance[Any]], data: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def toHTMLWithData(templateOrView: View, data: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def toHTMLWithData(templateOrView: View, data: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLWithData")(templateOrView.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    type EventsMap = StringDictionary[js.Function]
+    type EventsMap[D, T] = StringDictionary[js.Function2[/* event */ Event, /* instance */ T, Any]]
     
     type HelpersMap = StringDictionary[js.Function]
     
     @js.native
-    trait TemplateInstanceStatic
+    trait TemplateStatic[D, T]
       extends StObject
-         with Instantiable1[/* view */ View, TemplateInstance]
-    
-    @js.native
-    trait TemplateStatic
-      extends StObject
-         with Instantiable0[Template]
-         with Instantiable1[/* viewName */ String, Template]
+         with Instantiable0[Template[Any, TemplateInstance[Any]]]
+         with Instantiable1[/* viewName */ String, Template[Any, TemplateInstance[Any]]]
          with Instantiable2[
               (/* viewName */ String) | (/* viewName */ Unit), 
               /* renderFunction */ js.Function, 
-              Template
+              Template[Any, TemplateInstance[Any]]
             ] {
       
-      def currentData(): js.Any = js.native
+      def currentData(): D = js.native
       
-      def instance(): TemplateInstance = js.native
+      def instance(): T = js.native
       
-      def parentData(numLevels: Double): js.Any = js.native
+      def parentData(): Record[String, Any] = js.native
+      def parentData(numLevels: Double): Record[String, Any] = js.native
       
       def registerHelper(name: String, func: js.Function): Unit = js.native
     }

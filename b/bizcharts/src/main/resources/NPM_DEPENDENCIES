@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bizcharts" : "3.5.9"
+      "bizcharts" : "4.1.20"
     }
   ],
   "test-dependencies" : [
     {
-      "bizcharts" : "3.5.9"
+      "bizcharts" : "4.1.20"
     }
   ],
   "compile-devDependencies" : [

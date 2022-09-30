@@ -1,6 +1,6 @@
 package typings.reactVirtualized.anon
 
-import typings.reactVirtualized.reactVirtualizedNumbers.`0`
+import typings.reactVirtualized.reactVirtualizedInts.`0`
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

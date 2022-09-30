@@ -18,12 +18,12 @@ object unidriverMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("wix-ui-test-utils/dist/src/unidriver", "StylableUnidriverUtil")
   @js.native
-  class StylableUnidriverUtil protected () extends StylableCompatUniDriver {
+  open class StylableUnidriverUtil protected () extends StylableCompatUniDriver {
     def this(style: CommonStylesheet) = this()
   }
   @JSImport("wix-ui-test-utils/dist/src/unidriver", "StylableUnidriverUtil")
   @js.native
   val StylableUnidriverUtil: Instantiable1[/* style */ CommonStylesheet, StylableCompatUniDriver] = js.native
   
-  inline def baseUniDriverFactory(base: UniDriver[js.Any]): BaseUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseUniDriver]
+  inline def baseUniDriverFactory(base: UniDriver[Any]): BaseUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseUniDriver]
 }

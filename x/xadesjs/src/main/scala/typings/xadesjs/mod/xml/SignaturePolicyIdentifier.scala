@@ -1,17 +1,12 @@
 package typings.xadesjs.mod.xml
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.xadesjs.mod.xml.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("xadesjs", "xml.SignaturePolicyIdentifier")
 @js.native
-class SignaturePolicyIdentifier ()
-  extends typings.xadesjs.xmlMod.SignaturePolicyIdentifier
-object SignaturePolicyIdentifier {
-  
-  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SignaturePolicyIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignaturePolicyIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignaturePolicyIdentifier]]
+open class SignaturePolicyIdentifier ()
+  extends typings.xadesjs.typesXmlMod.SignaturePolicyIdentifier {
+  def this(properties: js.Object) = this()
 }

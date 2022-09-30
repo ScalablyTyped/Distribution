@@ -1,8 +1,8 @@
 package typings.xterm.mod
 
-import typings.xterm.xtermNumbers.`0`
-import typings.xterm.xtermNumbers.`1`
-import typings.xterm.xtermNumbers.`2`
+import typings.xterm.xtermInts.`0`
+import typings.xterm.xtermInts.`1`
+import typings.xterm.xtermInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

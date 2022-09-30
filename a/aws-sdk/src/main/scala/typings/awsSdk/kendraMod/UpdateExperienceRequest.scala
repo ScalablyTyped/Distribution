@@ -32,7 +32,7 @@ trait UpdateExperienceRequest extends StObject {
   var Name: js.UndefOr[ExperienceName] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and Amazon Web Services SSO that stores your user and group information. For more information, see IAM roles for Amazon Kendra.
+    * The Amazon Resource Name (ARN) of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and IAM Identity Center that stores your user and group information. For more information, see IAM roles for Amazon Kendra.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
 }

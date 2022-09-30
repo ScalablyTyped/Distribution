@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "testcafe-safe-storage" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "testcafe-safe-storage" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,7 @@
 package typings.validator
 
-import typings.validator.anon.strongPasswordOptionsretu
-import typings.validator.anon.strongPasswordOptionsretuMinLength
+import typings.validator.anon.StrongPasswordOptionsretu
+import typings.validator.anon.StrongPasswordOptionsretuMinLength
 import typings.validator.isBooleanMod.Options
 import typings.validator.isEmailMod.IsEmailOptions
 import typings.validator.isFQDNMod.IsFQDNOptions
@@ -529,11 +529,9 @@ object global {
       */
     inline def isSlug(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSlug")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isStrongPassword(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def isStrongPassword(str: String, options: strongPasswordOptionsretu): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def isStrongPassword(str: String, options: strongPasswordOptionsretuMinLength): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
-    
-    inline def isStrongPassword_Boolean(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isStrongPassword(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isStrongPassword(str: String, options: StrongPasswordOptionsretu): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isStrongPassword(str: String, options: StrongPasswordOptionsretuMinLength): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Check if the string contains any surrogate pairs chars.

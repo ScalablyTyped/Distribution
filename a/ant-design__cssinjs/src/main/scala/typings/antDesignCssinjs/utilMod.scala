@@ -25,8 +25,6 @@ object utilMod {
   
   inline def supportLayer(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportLayer")().asInstanceOf[Boolean]
   
-  inline def supportWhere(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportWhere")().asInstanceOf[Boolean]
-  
   inline def token2key(token: Any, slat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("token2key")(token.asInstanceOf[js.Any], slat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def warning(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]

@@ -22,7 +22,7 @@ trait DocumentCreated
      with ClientObject {
   
   /**
-    * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+    * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
@@ -30,7 +30,7 @@ trait DocumentCreated
   val body: Body = js.native
   
   /**
-    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
@@ -40,6 +40,44 @@ trait DocumentCreated
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_DocumentCreated: RequestContext = js.native
+  
+  /**
+    * Gets the custom XML parts in the document.
+    *
+    * @remarks
+    * [Api set: WordApiHiddenDocument 1.4]
+    */
+  val customXmlParts: CustomXmlPartCollection = js.native
+  
+  /**
+    * Deletes a bookmark, if it exists, from the document.
+    *
+    * @remarks
+    * [Api set: WordApiHiddenDocument 1.4]
+    *
+    * @param name Required. The bookmark name, which is case-insensitive.
+    */
+  def deleteBookmark(name: String): Unit = js.native
+  
+  /**
+    * Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    *
+    * @remarks
+    * [Api set: WordApiHiddenDocument 1.4]
+    *
+    * @param name Required. The bookmark name, which is case-insensitive.
+    */
+  def getBookmarkRange(name: String): Range = js.native
+  
+  /**
+    * Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: WordApiHiddenDocument 1.4]
+    *
+    * @param name Required. The bookmark name, which is case-insensitive.
+    */
+  def getBookmarkRangeOrNullObject(name: String): Range = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -61,7 +99,7 @@ trait DocumentCreated
   def open(): Unit = js.native
   
   /**
-    * Gets the properties of the document. Read-only.
+    * Gets the properties of the document.
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
@@ -77,7 +115,7 @@ trait DocumentCreated
   def save(): Unit = js.native
   
   /**
-    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
@@ -85,7 +123,7 @@ trait DocumentCreated
   val saved: Boolean = js.native
   
   /**
-    * Gets the collection of section objects in the document. Read-only.
+    * Gets the collection of section objects in the document.
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
@@ -101,6 +139,14 @@ trait DocumentCreated
     */
   def set(properties: DocumentCreatedUpdateData): Unit = js.native
   def set(properties: DocumentCreatedUpdateData, options: UpdateOptions): Unit = js.native
+  
+  /**
+    * Gets the add-in's settings in the document.
+    *
+    * @remarks
+    * [Api set: WordApiHiddenDocument 1.4]
+    */
+  val settings: SettingCollection = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

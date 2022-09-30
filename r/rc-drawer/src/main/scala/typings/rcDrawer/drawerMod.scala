@@ -1,10 +1,10 @@
 package typings.rcDrawer
 
 import org.scalablytyped.runtime.Shortcut
+import typings.rcComponentPortal.portalMod.ContainerType
+import typings.rcComponentPortal.portalMod.GetContainer
 import typings.rcDrawer.drawerPopupMod.PushConfig
-import typings.rcDrawer.rcDrawerBooleans.`false`
 import typings.rcMotion.cssmotionMod.CSSMotionProps
-import typings.rcUtil.portalWrapperMod.GetContainer
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.KeyboardEvent
@@ -12,7 +12,6 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.Element
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object drawerMod extends Shortcut {
     
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[GetContainer | `false`] = js.undefined
+    var getContainer: js.UndefOr[GetContainer] = js.undefined
     
     var height: js.UndefOr[Double | String] = js.undefined
     
@@ -48,7 +47,7 @@ object drawerMod extends Shortcut {
     
     var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskClassName: js.UndefOr[CSSProperties] = js.undefined
+    var maskClassName: js.UndefOr[String] = js.undefined
     
     var maskClosable: js.UndefOr[Boolean] = js.undefined
     
@@ -79,9 +78,6 @@ object drawerMod extends Shortcut {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var width: js.UndefOr[Double | String] = js.undefined
-    
-    /** @deprecated Only work on Portal mode. You can replace with rootClassName instead */
-    var wrapperClassName: js.UndefOr[String] = js.undefined
     
     var zIndex: js.UndefOr[Double] = js.undefined
   }
@@ -122,9 +118,9 @@ object drawerMod extends Shortcut {
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      inline def setGetContainer(value: GetContainer | `false`): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+      inline def setGetContainer(value: GetContainer): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
       
-      inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainerFunction0(value: () => ContainerType): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
       inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
@@ -138,7 +134,7 @@ object drawerMod extends Shortcut {
       
       inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      inline def setMaskClassName(value: CSSProperties): Self = StObject.set(x, "maskClassName", value.asInstanceOf[js.Any])
+      inline def setMaskClassName(value: String): Self = StObject.set(x, "maskClassName", value.asInstanceOf[js.Any])
       
       inline def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
       
@@ -199,10 +195,6 @@ object drawerMod extends Shortcut {
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-      
-      inline def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
-      
-      inline def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
       
       inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       

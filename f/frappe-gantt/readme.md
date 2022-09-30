@@ -1,7 +1,7 @@
 
 # Scala.js typings for frappe-gantt
 
-Typings are for version 0.4
+Typings are for version 0.6
 
 ## Library description:
 A simple, modern, interactive gantt library for the web

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.lodash.anon.Typeoflodash
 import typings.lodash.lodashBooleans.`false`
 import typings.lodash.lodashBooleans.`true`
-import typings.lodash.lodashNumbers.`0`
+import typings.lodash.lodashInts.`0`
 import typings.lodash.lodashStrings._empty
 import typings.lodash.lodashStrings.asc
 import typings.lodash.lodashStrings.desc
@@ -26,7 +26,6 @@ import typings.lodash.mod.Function2
 import typings.lodash.mod.Function3
 import typings.lodash.mod.Function4
 import typings.lodash.mod.IsEqualCustomizer
-import typings.lodash.mod.List
 import typings.lodash.mod.LoDashStatic
 import typings.lodash.mod.Many
 import typings.lodash.mod.MemoIteratorCapped
@@ -157,7 +156,9 @@ type LodashCastArray = js.Function1[/* value */ Many[Any], js.Array[Any]]
 
 type LodashCeil = js.Function1[/* n */ Double, Double]
 
-type LodashChunk1x1 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[js.Array[Any]]]
+type LodashChunk1x1 = js.Function1[
+/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], 
+js.Array[js.Array[Any]]]
 
 type LodashChunk1x2[T] = js.Function1[/* size */ Double, js.Array[js.Array[T]]]
 
@@ -180,7 +181,7 @@ type LodashCloneWith1x1[T, TResult] = js.Function1[/* value */ T, TResult]
 type LodashCloneWith2x1[T, TResult] = js.Function1[/* value */ T, TResult | T]
 
 type LodashCompact = js.Function1[
-/* array */ js.UndefOr[List[Any] | Null], 
+/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], 
 js.Array[Exclude[Any, js.UndefOr[Null | `false` | _empty | `0`]]]]
 
 type LodashConcat1x1[T] = js.Function1[/* values */ Many[T], js.Array[T]]
@@ -197,7 +198,9 @@ type LodashContains1x1[T] = js.Function1[/* collection */ js.UndefOr[Dictionary[
 
 type LodashContains1x2[T] = js.Function1[/* target */ T, Boolean]
 
-type LodashCountBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], Dictionary[Double]]
+type LodashCountBy1x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+Dictionary[Double]]
 
 type LodashCountBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], Dictionary[Double]]
 
@@ -259,19 +262,19 @@ type LodashDelay1x1 = js.Function1[/* func */ js.Function1[/* repeated */ Any, A
 
 type LodashDelay1x2 = js.Function1[/* wait */ Double, Double]
 
-type LodashDifference1x1[T] = js.Function1[/* values */ List[T], js.Array[T]]
+type LodashDifference1x1[T] = js.Function1[/* values */ typings.lodash.mod.List[T], js.Array[T]]
 
-type LodashDifference1x2[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashDifference1x2[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashDifferenceBy1x3[T1, T2] = js.Function1[/* values */ List[T2], js.Array[T1]]
+type LodashDifferenceBy1x3[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], js.Array[T1]]
 
-type LodashDifferenceBy1x5[T1] = js.Function1[/* array */ js.UndefOr[List[T1] | Null], js.Array[T1]]
+type LodashDifferenceBy1x5[T1] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T1] | Null], js.Array[T1]]
 
 type LodashDifferenceBy1x6[T1, T2] = js.Function1[/* iteratee */ ValueIteratee[T1 | T2], js.Array[T1]]
 
-type LodashDifferenceWith1x3[T1, T2] = js.Function1[/* values */ List[T2], js.Array[T1]]
+type LodashDifferenceWith1x3[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], js.Array[T1]]
 
-type LodashDifferenceWith1x5[T1] = js.Function1[/* array */ js.UndefOr[List[T1] | Null], js.Array[T1]]
+type LodashDifferenceWith1x5[T1] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T1] | Null], js.Array[T1]]
 
 type LodashDifferenceWith1x6[T1, T2] = js.Function1[/* comparator */ Comparator2[T1, T2], js.Array[T1]]
 
@@ -279,19 +282,19 @@ type LodashDivide1x1 = js.Function1[/* divisor */ Double, Double]
 
 type LodashDivide1x2 = js.Function1[/* dividend */ Double, Double]
 
-type LodashDrop1x1 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashDrop1x1 = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
 type LodashDrop1x2[T] = js.Function1[/* n */ Double, js.Array[T]]
 
-type LodashDropRight1x1 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashDropRight1x1 = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
 type LodashDropRight1x2[T] = js.Function1[/* n */ Double, js.Array[T]]
 
-type LodashDropRightWhile1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashDropRightWhile1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashDropRightWhile1x2[T] = js.Function1[/* predicate */ ValueIteratee[T], js.Array[T]]
 
-type LodashDropWhile1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashDropWhile1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashDropWhile1x2[T] = js.Function1[/* predicate */ ValueIteratee[T], js.Array[T]]
 
@@ -307,7 +310,9 @@ type LodashEscape = js.Function1[/* string */ String, String]
 
 type LodashEscapeRegExp = js.Function1[/* string */ String, String]
 
-type LodashEvery1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], Boolean]
+type LodashEvery1x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+Boolean]
 
 type LodashEvery1x2[T] = js.Function1[/* predicate */ ValueIterateeCustom[T, Boolean], Boolean]
 
@@ -338,25 +343,29 @@ type LodashFill1x13[T, U] = js.Function1[/* end */ Double, js.Array[T | U]]
 
 type LodashFill1x14[T, U] = js.Function1[/* start */ Double, js.Array[T | U]]
 
-type LodashFill2x11[U] = js.Function1[/* value */ Any, List[Any | U]]
+type LodashFill2x11[U] = js.Function1[/* value */ Any, typings.lodash.mod.List[Any | U]]
 
-type LodashFill2x13[T, U] = js.Function1[/* end */ Double, List[T | U]]
+type LodashFill2x13[T, U] = js.Function1[/* end */ Double, typings.lodash.mod.List[T | U]]
 
-type LodashFill2x14[T, U] = js.Function1[/* start */ Double, List[T | U]]
+type LodashFill2x14[T, U] = js.Function1[/* start */ Double, typings.lodash.mod.List[T | U]]
 
-type LodashFilter1x1[T, S] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.Array[S]]
+type LodashFilter1x1[T, S] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[S]]
 
-type LodashFilter2x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], js.Array[T]]
+type LodashFilter2x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+js.Array[T]]
 
 type LodashFilter3x1[T, S] = js.Function1[/* collection */ js.UndefOr[T | Null], js.Array[S]]
 
-type LodashFind1x1[T, S] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.UndefOr[S]]
+type LodashFind1x1[T, S] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.UndefOr[S]]
 
-type LodashFind2x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], js.UndefOr[T]]
+type LodashFind2x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+js.UndefOr[T]]
 
 type LodashFind3x1[T, S] = js.Function1[/* collection */ js.UndefOr[T | Null], js.UndefOr[S]]
 
-type LodashFindFrom1x3[T, S] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.UndefOr[S]]
+type LodashFindFrom1x3[T, S] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.UndefOr[S]]
 
 type LodashFindFrom1x5[S] = js.Function1[/* fromIndex */ Double, js.UndefOr[S]]
 
@@ -372,11 +381,11 @@ js.UndefOr[
   /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 ]]
 
-type LodashFindIndex1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashFindIndex1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashFindIndex1x2[T] = js.Function1[/* predicate */ ValueIterateeCustom[T, Boolean], Double]
 
-type LodashFindIndexFrom1x3[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashFindIndexFrom1x3[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashFindIndexFrom1x5 = js.Function1[/* fromIndex */ Double, Double]
 
@@ -390,13 +399,15 @@ type LodashFindKey1x2[T] = js.Function1[
 ], 
 js.UndefOr[String]]
 
-type LodashFindLast1x1[T, S] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.UndefOr[S]]
+type LodashFindLast1x1[T, S] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.UndefOr[S]]
 
-type LodashFindLast2x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], js.UndefOr[T]]
+type LodashFindLast2x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+js.UndefOr[T]]
 
 type LodashFindLast3x1[T, S] = js.Function1[/* collection */ js.UndefOr[T | Null], js.UndefOr[S]]
 
-type LodashFindLastFrom1x3[T, S] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.UndefOr[S]]
+type LodashFindLastFrom1x3[T, S] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.UndefOr[S]]
 
 type LodashFindLastFrom1x5[S] = js.Function1[/* fromIndex */ Double, js.UndefOr[S]]
 
@@ -412,11 +423,11 @@ js.UndefOr[
   /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 ]]
 
-type LodashFindLastIndex1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashFindLastIndex1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashFindLastIndex1x2[T] = js.Function1[/* predicate */ ValueIterateeCustom[T, Boolean], Double]
 
-type LodashFindLastIndexFrom1x3[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashFindLastIndexFrom1x3[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashFindLastIndexFrom1x5 = js.Function1[/* fromIndex */ Double, Double]
 
@@ -430,7 +441,7 @@ type LodashFindLastKey1x2[T] = js.Function1[
 ], 
 js.UndefOr[String]]
 
-type LodashFlatMap1x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.Array[TResult]]
+type LodashFlatMap1x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[TResult]]
 
 type LodashFlatMap1x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Many[Any]], js.Array[Any]]
 
@@ -447,7 +458,7 @@ type LodashFlatMap3x1 = js.Function1[/* collection */ js.UndefOr[js.Object | Nul
 
 type LodashFlatMap4x1 = js.Function1[/* collection */ js.UndefOr[js.Object | Null], js.Array[Boolean]]
 
-type LodashFlatMapDeep1x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.Array[TResult]]
+type LodashFlatMapDeep1x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[TResult]]
 
 type LodashFlatMapDeep2x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[T | Null], js.Array[TResult]]
 
@@ -455,7 +466,7 @@ type LodashFlatMapDeep3x1 = js.Function1[/* collection */ js.UndefOr[js.Object |
 
 type LodashFlatMapDeep4x1 = js.Function1[/* collection */ js.UndefOr[js.Object | Null], js.Array[Boolean]]
 
-type LodashFlatMapDepth1x3[T, TResult] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.Array[TResult]]
+type LodashFlatMapDepth1x3[T, TResult] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[TResult]]
 
 type LodashFlatMapDepth1x5[TResult] = js.Function1[/* depth */ Double, js.Array[TResult]]
 
@@ -471,7 +482,7 @@ type LodashFlatMapDepth4x3 = js.Function1[/* collection */ js.UndefOr[js.Object 
 
 type LodashFlatMapDepth4x5 = js.Function1[/* depth */ Double, js.Array[Boolean]]
 
-type LodashFlatten = js.Function1[/* array */ js.UndefOr[List[Many[Any]] | Null], js.Array[Any]]
+type LodashFlatten = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Many[Any]] | Null], js.Array[Any]]
 
 type LodashFlattenDepth1x2[T] = js.Function1[/* depth */ Double, js.Array[T]]
 
@@ -481,7 +492,7 @@ type LodashFloor = js.Function1[/* n */ Double, Double]
 
 type LodashForEach1x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Any], js.Array[T]]
 
-type LodashForEach2x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Any], List[T]]
+type LodashForEach2x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Any], typings.lodash.mod.List[T]]
 
 type LodashForEach3x2[T] = js.Function1[
 /* iteratee */ js.Function1[
@@ -503,7 +514,7 @@ js.UndefOr[T | Null]]
 
 type LodashForEachRight1x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Any], js.Array[T]]
 
-type LodashForEachRight2x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Any], List[T]]
+type LodashForEachRight2x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Any], typings.lodash.mod.List[T]]
 
 type LodashForEachRight3x2[T] = js.Function1[
 /* iteratee */ js.Function1[
@@ -665,7 +676,9 @@ type LodashGetOr7x5 = js.Function1[/* path */ PropertyPath, Any]
 
 type LodashGetOr7x6 = js.Function1[/* defaultValue */ Any, Any]
 
-type LodashGroupBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], Dictionary[js.Array[T]]]
+type LodashGroupBy1x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+Dictionary[js.Array[T]]]
 
 type LodashGroupBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], Dictionary[js.Array[T]]]
 
@@ -695,7 +708,7 @@ type LodashHasIn1x1 = js.Function1[/* object */ Any, Boolean]
 
 type LodashHasIn1x2 = js.Function1[/* path */ PropertyPath, Boolean]
 
-type LodashHead = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.UndefOr[Any]]
+type LodashHead = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.UndefOr[Any]]
 
 type LodashInRange1x3 = js.Function1[/* n */ Double, Boolean]
 
@@ -713,31 +726,31 @@ type LodashIncludesFrom1x5 = js.Function1[/* fromIndex */ Double, Boolean]
 
 type LodashIncludesFrom1x6[T] = js.Function1[/* target */ T, Boolean]
 
-type LodashIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashIndexOf1x2[T] = js.Function1[/* value */ T, Double]
 
-type LodashIndexOfFrom1x3[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashIndexOfFrom1x3[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashIndexOfFrom1x5 = js.Function1[/* fromIndex */ Double, Double]
 
 type LodashIndexOfFrom1x6[T] = js.Function1[/* value */ T, Double]
 
-type LodashInitial = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashInitial = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
-type LodashIntersection1x1[T] = js.Function1[/* arrays */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashIntersection1x1[T] = js.Function1[/* arrays */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashIntersection1x2[T] = js.Function1[/* arrays2 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashIntersection1x2[T] = js.Function1[/* arrays2 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashIntersectionBy1x3[T1, T2] = js.Function1[/* values */ List[T2], js.Array[T1]]
+type LodashIntersectionBy1x3[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], js.Array[T1]]
 
-type LodashIntersectionBy1x5[T1] = js.Function1[/* array */ List[T1] | Null, js.Array[T1]]
+type LodashIntersectionBy1x5[T1] = js.Function1[/* array */ typings.lodash.mod.List[T1] | Null, js.Array[T1]]
 
 type LodashIntersectionBy1x6[T1, T2] = js.Function1[/* iteratee */ ValueIteratee[T1 | T2], js.Array[T1]]
 
-type LodashIntersectionWith1x3[T1, T2] = js.Function1[/* values */ List[T2], js.Array[T1]]
+type LodashIntersectionWith1x3[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], js.Array[T1]]
 
-type LodashIntersectionWith1x5[T1] = js.Function1[/* array */ js.UndefOr[List[T1] | Null], js.Array[T1]]
+type LodashIntersectionWith1x5[T1] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T1] | Null], js.Array[T1]]
 
 type LodashIntersectionWith1x6[T1, T2] = js.Function1[/* comparator */ Comparator2[T1, T2], js.Array[T1]]
 
@@ -857,13 +870,15 @@ type LodashIsWeakMap = js.Function1[/* value */ Any, /* is std.WeakMap<object, a
 
 type LodashIsWeakSet = js.Function1[/* value */ Any, /* is std.WeakSet<object> */ Boolean]
 
-type LodashJoin1x1 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], String]
+type LodashJoin1x1 = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], String]
 
 type LodashJoin1x2 = js.Function1[/* separator */ String, String]
 
 type LodashKebabCase = js.Function1[/* string */ String, String]
 
-type LodashKeyBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], Dictionary[T]]
+type LodashKeyBy1x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+Dictionary[T]]
 
 type LodashKeyBy1x2[T] = js.Function1[/* iteratee */ ValueIterateeCustom[T, PropertyName], Dictionary[T]]
 
@@ -880,13 +895,13 @@ type LodashKeys = js.Function1[/* object */ Any, js.Array[String]]
 
 type LodashKeysIn = js.Function1[/* object */ Any, js.Array[String]]
 
-type LodashLast = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.UndefOr[Any]]
+type LodashLast = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.UndefOr[Any]]
 
-type LodashLastIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashLastIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashLastIndexOf1x2[T] = js.Function1[/* value */ T, Double]
 
-type LodashLastIndexOfFrom1x3[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashLastIndexOfFrom1x3[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashLastIndexOfFrom1x5 = js.Function1[/* fromIndex */ `true` | Double, Double]
 
@@ -904,7 +919,9 @@ type LodashLte1x1 = js.Function1[/* other */ Any, Boolean]
 
 type LodashLte1x2 = js.Function1[/* value */ Any, Boolean]
 
-type LodashMap1x1[T, TResult] = js.Function1[/* collection */ js.UndefOr[js.Array[T] | List[T] | Null], js.Array[TResult]]
+type LodashMap1x1[T, TResult] = js.Function1[
+/* collection */ js.UndefOr[js.Array[T] | typings.lodash.mod.List[T] | Null], 
+js.Array[TResult]]
 
 type LodashMap1x2[T] = js.Function1[/* iteratee */ js.Function1[/* value */ T, Any], js.Array[Any]]
 
@@ -933,7 +950,7 @@ type LodashMap6x1 = js.Function1[
 /* collection */ js.UndefOr[Dictionary[Any] | NumericDictionary[Any] | Null], 
 js.Array[Boolean]]
 
-type LodashMapKeys1x1 = js.Function1[/* object */ js.UndefOr[List[Any] | Null], Dictionary[Any]]
+type LodashMapKeys1x1 = js.Function1[/* object */ js.UndefOr[typings.lodash.mod.List[Any] | Null], Dictionary[Any]]
 
 type LodashMapKeys1x2[T] = js.Function1[/* iteratee */ ValueIteratee[Double], Dictionary[T]]
 
@@ -969,15 +986,15 @@ type LodashMatchesProperty1x1 = js.Function1[/* srcValue */ Any, js.Function1[/*
 
 type LodashMatchesProperty1x2 = js.Function1[/* path */ PropertyPath, js.Function1[/* value */ Any, Boolean]]
 
-type LodashMax = js.Function1[/* collection */ js.UndefOr[List[Any] | Null], js.UndefOr[Any]]
+type LodashMax = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.UndefOr[Any]]
 
-type LodashMaxBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.UndefOr[T]]
+type LodashMaxBy1x1[T] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.UndefOr[T]]
 
 type LodashMaxBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.UndefOr[T]]
 
-type LodashMean = js.Function1[/* collection */ js.UndefOr[List[Any] | Null], Double]
+type LodashMean = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[Any] | Null], Double]
 
-type LodashMeanBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], Double]
+type LodashMeanBy1x1[T] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashMeanBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], Double]
 
@@ -1003,9 +1020,9 @@ type LodashMethod = js.Function1[/* path */ PropertyPath, js.Function1[/* object
 
 type LodashMethodOf = js.Function1[/* object */ js.Object, js.Function1[/* path */ PropertyPath, Any]]
 
-type LodashMin = js.Function1[/* collection */ js.UndefOr[List[Any] | Null], js.UndefOr[Any]]
+type LodashMin = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.UndefOr[Any]]
 
-type LodashMinBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], js.UndefOr[T]]
+type LodashMinBy1x1[T] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.UndefOr[T]]
 
 type LodashMinBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.UndefOr[T]]
 
@@ -1021,7 +1038,7 @@ type LodashNoConflict = js.Function0[Typeoflodash]
 
 type LodashNow = js.Function0[Double]
 
-type LodashNth1x1 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.UndefOr[Any]]
+type LodashNth1x1 = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.UndefOr[Any]]
 
 type LodashNth1x2[T] = js.Function1[/* n */ Double, js.UndefOr[T]]
 
@@ -1227,11 +1244,11 @@ type LodashPartialRight8x2[T3] = js.Function1[/* func */ Function3[Any, Any, T3,
 type LodashPartialRight9x2[T1, T3] = js.Function1[/* func */ Function3[T1, Any, T3, Any], Function1[Any, Any]]
 
 type LodashPartition1x1[T, U] = js.Function1[
-/* collection */ js.UndefOr[List[T] | Null], 
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], 
 js.Tuple2[js.Array[U], js.Array[Exclude[T, U]]]]
 
 type LodashPartition2x1[T] = js.Function1[
-/* collection */ js.UndefOr[List[T] | js.Object | Null], 
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
 js.Tuple2[js.Array[T], js.Array[T]]]
 
 type LodashPartition3x2[T] = js.Function1[
@@ -1443,47 +1460,47 @@ type LodashPropertyOf9x2[T] = js.Function1[/* path */ Double, T]
 
 type LodashPull1x2[T] = js.Function1[/* values */ T, js.Array[T]]
 
-type LodashPull2x2[T] = js.Function1[/* values */ T, List[T]]
+type LodashPull2x2[T] = js.Function1[/* values */ T, typings.lodash.mod.List[T]]
 
-type LodashPullAll1x2[T] = js.Function1[/* values */ List[T], js.Array[T]]
+type LodashPullAll1x2[T] = js.Function1[/* values */ typings.lodash.mod.List[T], js.Array[T]]
 
-type LodashPullAll2x2[T] = js.Function1[/* values */ List[T], List[T]]
+type LodashPullAll2x2[T] = js.Function1[/* values */ typings.lodash.mod.List[T], typings.lodash.mod.List[T]]
 
-type LodashPullAllBy1x5[T] = js.Function1[/* values */ List[T], js.Array[T]]
+type LodashPullAllBy1x5[T] = js.Function1[/* values */ typings.lodash.mod.List[T], js.Array[T]]
 
 type LodashPullAllBy1x6[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.Array[T]]
 
-type LodashPullAllBy2x5[T] = js.Function1[/* values */ List[T], List[T]]
+type LodashPullAllBy2x5[T] = js.Function1[/* values */ typings.lodash.mod.List[T], typings.lodash.mod.List[T]]
 
-type LodashPullAllBy2x6[T] = js.Function1[/* iteratee */ ValueIteratee[T], List[T]]
+type LodashPullAllBy2x6[T] = js.Function1[/* iteratee */ ValueIteratee[T], typings.lodash.mod.List[T]]
 
-type LodashPullAllBy3x5[T1, T2] = js.Function1[/* values */ List[T2], js.Array[T1]]
+type LodashPullAllBy3x5[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], js.Array[T1]]
 
 type LodashPullAllBy3x6[T1, T2] = js.Function1[/* iteratee */ ValueIteratee[T1 | T2], js.Array[T1]]
 
-type LodashPullAllBy4x5[T1, T2] = js.Function1[/* values */ List[T2], List[T1]]
+type LodashPullAllBy4x5[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], typings.lodash.mod.List[T1]]
 
-type LodashPullAllBy4x6[T1, T2] = js.Function1[/* iteratee */ ValueIteratee[T1 | T2], List[T1]]
+type LodashPullAllBy4x6[T1, T2] = js.Function1[/* iteratee */ ValueIteratee[T1 | T2], typings.lodash.mod.List[T1]]
 
-type LodashPullAllWith1x5[T] = js.Function1[/* values */ List[T], js.Array[T]]
+type LodashPullAllWith1x5[T] = js.Function1[/* values */ typings.lodash.mod.List[T], js.Array[T]]
 
 type LodashPullAllWith1x6[T] = js.Function1[/* comparator */ Comparator[T], js.Array[T]]
 
-type LodashPullAllWith2x5[T] = js.Function1[/* values */ List[T], List[T]]
+type LodashPullAllWith2x5[T] = js.Function1[/* values */ typings.lodash.mod.List[T], typings.lodash.mod.List[T]]
 
-type LodashPullAllWith2x6[T] = js.Function1[/* comparator */ Comparator[T], List[T]]
+type LodashPullAllWith2x6[T] = js.Function1[/* comparator */ Comparator[T], typings.lodash.mod.List[T]]
 
-type LodashPullAllWith3x5[T1, T2] = js.Function1[/* values */ List[T2], js.Array[T1]]
+type LodashPullAllWith3x5[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], js.Array[T1]]
 
 type LodashPullAllWith3x6[T1, T2] = js.Function1[/* comparator */ Comparator2[T1, T2], js.Array[T1]]
 
-type LodashPullAllWith4x5[T1, T2] = js.Function1[/* values */ List[T2], List[T1]]
+type LodashPullAllWith4x5[T1, T2] = js.Function1[/* values */ typings.lodash.mod.List[T2], typings.lodash.mod.List[T1]]
 
-type LodashPullAllWith4x6[T1, T2] = js.Function1[/* comparator */ Comparator2[T1, T2], List[T1]]
+type LodashPullAllWith4x6[T1, T2] = js.Function1[/* comparator */ Comparator2[T1, T2], typings.lodash.mod.List[T1]]
 
 type LodashPullAt1x2[T] = js.Function1[/* indexes */ Many[Double], js.Array[T]]
 
-type LodashPullAt2x2[T] = js.Function1[/* indexes */ Many[Double], List[T]]
+type LodashPullAt2x2[T] = js.Function1[/* indexes */ Many[Double], typings.lodash.mod.List[T]]
 
 type LodashRandom1x1 = js.Function1[/* floatingOrMax */ Boolean | Double, Double]
 
@@ -1517,7 +1534,9 @@ js.Function1[/* repeated */ Any, Any]]
 
 type LodashRearg1x2 = js.Function1[/* indexes */ Many[Double], js.Function1[/* repeated */ Any, Any]]
 
-type LodashReduce1x3[T, TResult] = js.Function1[/* collection */ js.UndefOr[js.Array[T] | List[T] | Null], TResult]
+type LodashReduce1x3[T, TResult] = js.Function1[
+/* collection */ js.UndefOr[js.Array[T] | typings.lodash.mod.List[T] | Null], 
+TResult]
 
 type LodashReduce1x5[TResult] = js.Function1[/* accumulator */ TResult, TResult]
 
@@ -1538,7 +1557,9 @@ type LodashReduce3x6[T, TResult] = js.Function1[
 ], 
 TResult]
 
-type LodashReduceRight1x3[T, TResult] = js.Function1[/* collection */ js.UndefOr[js.Array[T] | List[T] | Null], TResult]
+type LodashReduceRight1x3[T, TResult] = js.Function1[
+/* collection */ js.UndefOr[js.Array[T] | typings.lodash.mod.List[T] | Null], 
+TResult]
 
 type LodashReduceRight1x5[TResult] = js.Function1[/* accumulator */ TResult, TResult]
 
@@ -1559,7 +1580,9 @@ type LodashReduceRight3x6[T, TResult] = js.Function1[
 ], 
 TResult]
 
-type LodashReject1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], js.Array[T]]
+type LodashReject1x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+js.Array[T]]
 
 type LodashReject1x2[T] = js.Function1[/* predicate */ ValueIterateeCustom[T, Boolean], js.Array[T]]
 
@@ -1572,7 +1595,7 @@ js.Array[
   /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 ]]
 
-type LodashRemove1x1[T] = js.Function1[/* array */ List[T], js.Array[T]]
+type LodashRemove1x1[T] = js.Function1[/* array */ typings.lodash.mod.List[T], js.Array[T]]
 
 type LodashRemove1x2[T] = js.Function1[/* predicate */ ValueIteratee[T], js.Array[T]]
 
@@ -1600,7 +1623,7 @@ type LodashResult1x1 = js.Function1[/* object */ Any, Any]
 
 type LodashResult1x2 = js.Function1[/* path */ PropertyPath, Any]
 
-type LodashReverse = js.Function1[/* array */ List[Any], List[Any]]
+type LodashReverse = js.Function1[/* array */ typings.lodash.mod.List[Any], typings.lodash.mod.List[Any]]
 
 type LodashRound = js.Function1[/* n */ Double, Double]
 
@@ -1632,7 +1655,7 @@ type LodashSetWith1x7[T] = js.Function1[/* object */ T, T]
 
 type LodashSize = js.Function1[/* collection */ js.UndefOr[js.Object | String | Null], Double]
 
-type LodashSlice1x3 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashSlice1x3 = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
 type LodashSlice1x5[T] = js.Function1[/* end */ Double, js.Array[T]]
 
@@ -1640,7 +1663,9 @@ type LodashSlice1x6[T] = js.Function1[/* start */ Double, js.Array[T]]
 
 type LodashSnakeCase = js.Function1[/* string */ String, String]
 
-type LodashSome1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], Boolean]
+type LodashSome1x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+Boolean]
 
 type LodashSome1x2[T] = js.Function1[/* predicate */ ValueIterateeCustom[T, Boolean], Boolean]
 
@@ -1651,7 +1676,9 @@ type LodashSome2x2[T] = js.Function1[
 ], 
 Boolean]
 
-type LodashSortBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | js.Object | Null], js.Array[T]]
+type LodashSortBy1x1[T] = js.Function1[
+/* collection */ js.UndefOr[typings.lodash.mod.List[T] | js.Object | Null], 
+js.Array[T]]
 
 type LodashSortBy1x2[T] = js.Function1[/* iteratees */ Many[ValueIteratee[T]], js.Array[T]]
 
@@ -1665,37 +1692,37 @@ js.Array[
   /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 ]]
 
-type LodashSortedIndex1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashSortedIndex1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashSortedIndex1x2[T] = js.Function1[/* value */ T, Double]
 
-type LodashSortedIndexBy1x3[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashSortedIndexBy1x3[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashSortedIndexBy1x5[T] = js.Function1[/* value */ T, Double]
 
 type LodashSortedIndexBy1x6[T] = js.Function1[/* iteratee */ ValueIteratee[T], Double]
 
-type LodashSortedIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashSortedIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashSortedIndexOf1x2[T] = js.Function1[/* value */ T, Double]
 
-type LodashSortedLastIndex1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashSortedLastIndex1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashSortedLastIndex1x2[T] = js.Function1[/* value */ T, Double]
 
-type LodashSortedLastIndexBy1x3[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashSortedLastIndexBy1x3[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashSortedLastIndexBy1x5[T] = js.Function1[/* value */ T, Double]
 
 type LodashSortedLastIndexBy1x6[T] = js.Function1[/* iteratee */ ValueIteratee[T], Double]
 
-type LodashSortedLastIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], Double]
+type LodashSortedLastIndexOf1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashSortedLastIndexOf1x2[T] = js.Function1[/* value */ T, Double]
 
-type LodashSortedUniq = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashSortedUniq = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
-type LodashSortedUniqBy1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashSortedUniqBy1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashSortedUniqBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.Array[T]]
 
@@ -1733,27 +1760,27 @@ type LodashSubtract1x1 = js.Function1[/* subtrahend */ Double, Double]
 
 type LodashSubtract1x2 = js.Function1[/* minuend */ Double, Double]
 
-type LodashSum = js.Function1[/* collection */ js.UndefOr[List[Any] | Null], Double]
+type LodashSum = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[Any] | Null], Double]
 
-type LodashSumBy1x1[T] = js.Function1[/* collection */ js.UndefOr[List[T] | Null], Double]
+type LodashSumBy1x1[T] = js.Function1[/* collection */ js.UndefOr[typings.lodash.mod.List[T] | Null], Double]
 
 type LodashSumBy1x2[T] = js.Function1[/* iteratee */ (js.Function1[/* value */ T, Double]) | String, Double]
 
-type LodashTail = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashTail = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
-type LodashTake1x1 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashTake1x1 = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
 type LodashTake1x2[T] = js.Function1[/* n */ Double, js.Array[T]]
 
-type LodashTakeRight1x1 = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashTakeRight1x1 = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
 type LodashTakeRight1x2[T] = js.Function1[/* n */ Double, js.Array[T]]
 
-type LodashTakeRightWhile1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashTakeRightWhile1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashTakeRightWhile1x2[T] = js.Function1[/* predicate */ ValueIteratee[T], js.Array[T]]
 
-type LodashTakeWhile1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashTakeWhile1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashTakeWhile1x2[T] = js.Function1[/* predicate */ ValueIteratee[T], js.Array[T]]
 
@@ -1839,29 +1866,29 @@ js.Function1[/* arg1 */ Any, Any]]
 
 type LodashUnescape = js.Function1[/* string */ String, String]
 
-type LodashUnion1x1[T] = js.Function1[/* arrays */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUnion1x1[T] = js.Function1[/* arrays */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashUnion1x2[T] = js.Function1[/* arrays2 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUnion1x2[T] = js.Function1[/* arrays2 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashUnionBy1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUnionBy1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashUnionBy1x5[T] = js.Function1[/* arrays1 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUnionBy1x5[T] = js.Function1[/* arrays1 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashUnionBy1x6[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.Array[T]]
 
-type LodashUnionWith1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUnionWith1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashUnionWith1x5[T] = js.Function1[/* arrays */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUnionWith1x5[T] = js.Function1[/* arrays */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashUnionWith1x6[T] = js.Function1[/* comparator */ Comparator[T], js.Array[T]]
 
-type LodashUniq = js.Function1[/* array */ js.UndefOr[List[Any] | Null], js.Array[Any]]
+type LodashUniq = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[Any] | Null], js.Array[Any]]
 
-type LodashUniqBy1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUniqBy1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashUniqBy1x2[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.Array[T]]
 
-type LodashUniqWith1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashUniqWith1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashUniqWith1x2[T] = js.Function1[/* comparator */ Comparator[T], js.Array[T]]
 
@@ -1872,10 +1899,14 @@ type LodashUnset1x1 = js.Function1[/* object */ Any, Any]
 type LodashUnset1x2[T] = js.Function1[/* path */ PropertyPath, T]
 
 type LodashUnzip = js.Function1[
-/* array */ js.UndefOr[js.Array[js.Array[Any]] | List[List[Any]] | Null], 
+/* array */ js.UndefOr[
+  js.Array[js.Array[Any]] | typings.lodash.mod.List[typings.lodash.mod.List[Any]] | Null
+], 
 js.Array[js.Array[Any]]]
 
-type LodashUnzipWith1x1[T, TResult] = js.Function1[/* array */ js.UndefOr[List[List[T]] | Null], js.Array[TResult]]
+type LodashUnzipWith1x1[T, TResult] = js.Function1[
+/* array */ js.UndefOr[typings.lodash.mod.List[typings.lodash.mod.List[T]] | Null], 
+js.Array[TResult]]
 
 type LodashUnzipWith1x2[T] = js.Function1[/* iteratee */ js.Function1[/* repeated */ T, Any], js.Array[Any]]
 
@@ -1897,7 +1928,7 @@ type LodashUpperCase = js.Function1[/* string */ String, String]
 
 type LodashUpperFirst = js.Function1[/* string */ String, String]
 
-type LodashWithout1x1[T] = js.Function1[/* array */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashWithout1x1[T] = js.Function1[/* array */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashWithout1x2[T] = js.Function1[/* values */ js.Array[T], js.Array[T]]
 
@@ -1909,36 +1940,40 @@ type LodashWrap1x2[T] = js.Function1[
 /* wrapper */ js.Function2[/* value */ T, /* repeated */ Any, Any], 
 js.Function1[/* repeated */ Any, Any]]
 
-type LodashXor1x1[T] = js.Function1[/* arrays */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashXor1x1[T] = js.Function1[/* arrays */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashXor1x2[T] = js.Function1[/* arrays2 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashXor1x2[T] = js.Function1[/* arrays2 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashXorBy1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashXorBy1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashXorBy1x5[T] = js.Function1[/* arrays */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashXorBy1x5[T] = js.Function1[/* arrays */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashXorBy1x6[T] = js.Function1[/* iteratee */ ValueIteratee[T], js.Array[T]]
 
-type LodashXorWith1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashXorWith1x3[T] = js.Function1[/* arrays2 */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
-type LodashXorWith1x5[T] = js.Function1[/* arrays */ js.UndefOr[List[T] | Null], js.Array[T]]
+type LodashXorWith1x5[T] = js.Function1[/* arrays */ js.UndefOr[typings.lodash.mod.List[T] | Null], js.Array[T]]
 
 type LodashXorWith1x6[T] = js.Function1[/* comparator */ Comparator[T], js.Array[T]]
 
-type LodashZip1x1[T1] = js.Function1[/* arrays2 */ List[Any], js.Array[js.Tuple2[js.UndefOr[T1], js.UndefOr[Any]]]]
+type LodashZip1x1[T1] = js.Function1[
+/* arrays2 */ typings.lodash.mod.List[Any], 
+js.Array[js.Tuple2[js.UndefOr[T1], js.UndefOr[Any]]]]
 
-type LodashZip1x2[T2] = js.Function1[/* arrays1 */ List[Any], js.Array[js.Tuple2[js.UndefOr[Any], js.UndefOr[T2]]]]
+type LodashZip1x2[T2] = js.Function1[
+/* arrays1 */ typings.lodash.mod.List[Any], 
+js.Array[js.Tuple2[js.UndefOr[Any], js.UndefOr[T2]]]]
 
-type LodashZipObject1x1 = js.Function1[/* values */ List[Any], Dictionary[Any]]
+type LodashZipObject1x1 = js.Function1[/* values */ typings.lodash.mod.List[Any], Dictionary[Any]]
 
-type LodashZipObject1x2[T] = js.Function1[/* props */ List[PropertyName], Dictionary[T]]
+type LodashZipObject1x2[T] = js.Function1[/* props */ typings.lodash.mod.List[PropertyName], Dictionary[T]]
 
-type LodashZipObjectDeep1x1 = js.Function1[/* values */ List[Any], js.Object]
+type LodashZipObjectDeep1x1 = js.Function1[/* values */ typings.lodash.mod.List[Any], js.Object]
 
-type LodashZipObjectDeep1x2 = js.Function1[/* paths */ List[PropertyPath], js.Object]
+type LodashZipObjectDeep1x2 = js.Function1[/* paths */ typings.lodash.mod.List[PropertyPath], js.Object]
 
-type LodashZipWith1x3[T2, TResult] = js.Function1[/* arrays2 */ List[T2], js.Array[TResult]]
+type LodashZipWith1x3[T2, TResult] = js.Function1[/* arrays2 */ typings.lodash.mod.List[T2], js.Array[TResult]]
 
-type LodashZipWith1x5[T1, TResult] = js.Function1[/* arrays1 */ List[T1], js.Array[TResult]]
+type LodashZipWith1x5[T1, TResult] = js.Function1[/* arrays1 */ typings.lodash.mod.List[T1], js.Array[TResult]]
 
 type LodashZipWith1x6[T1, T2] = js.Function1[/* iteratee */ js.Function2[/* value1 */ T1, /* value2 */ T2, Any], js.Array[Any]]

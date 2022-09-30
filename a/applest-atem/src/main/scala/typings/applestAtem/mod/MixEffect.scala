@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /** 0-indexed, so ME1 = 0, ..., ME4 = 3 */
 /* Rewritten from type alias, can be one of: 
-  - typings.applestAtem.applestAtemNumbers.`0`
-  - typings.applestAtem.applestAtemNumbers.`1`
-  - typings.applestAtem.applestAtemNumbers.`2`
-  - typings.applestAtem.applestAtemNumbers.`3`
+  - typings.applestAtem.applestAtemInts.`0`
+  - typings.applestAtem.applestAtemInts.`1`
+  - typings.applestAtem.applestAtemInts.`2`
+  - typings.applestAtem.applestAtemInts.`3`
 */
 trait MixEffect extends StObject
 object MixEffect {
   
-  inline def `0`: typings.applestAtem.applestAtemNumbers.`0` = 0.asInstanceOf[typings.applestAtem.applestAtemNumbers.`0`]
+  inline def `0`: typings.applestAtem.applestAtemInts.`0` = 0.asInstanceOf[typings.applestAtem.applestAtemInts.`0`]
   
-  inline def `1`: typings.applestAtem.applestAtemNumbers.`1` = 1.asInstanceOf[typings.applestAtem.applestAtemNumbers.`1`]
+  inline def `1`: typings.applestAtem.applestAtemInts.`1` = 1.asInstanceOf[typings.applestAtem.applestAtemInts.`1`]
   
-  inline def `2`: typings.applestAtem.applestAtemNumbers.`2` = 2.asInstanceOf[typings.applestAtem.applestAtemNumbers.`2`]
+  inline def `2`: typings.applestAtem.applestAtemInts.`2` = 2.asInstanceOf[typings.applestAtem.applestAtemInts.`2`]
   
-  inline def `3`: typings.applestAtem.applestAtemNumbers.`3` = 3.asInstanceOf[typings.applestAtem.applestAtemNumbers.`3`]
+  inline def `3`: typings.applestAtem.applestAtemInts.`3` = 3.asInstanceOf[typings.applestAtem.applestAtemInts.`3`]
 }

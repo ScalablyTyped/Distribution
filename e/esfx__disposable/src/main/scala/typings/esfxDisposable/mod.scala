@@ -5,6 +5,7 @@ import typings.esfxDisposable.disposableMod.DisposableScope
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import typings.std.Generator
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ object mod {
       * Creates an `AsyncDisposable` wrapper around a callback used to dispose resources.
       * @deprecated Use `AsyncDisposableStack` or `{ [AsyncDisposable.asyncDispose]() { ... } }` instead.
       */
-    def this(disposeAsync: js.Function0[Unit | js.Thenable[Unit]]) = this()
+    def this(disposeAsync: js.Function0[Unit | PromiseLike[Unit]]) = this()
   }
   object AsyncDisposable {
     
@@ -42,7 +43,7 @@ object mod {
       * NOTE: This is not spec-compliant and will not be standardized. It is preferred to use an `AsyncDisposableStack`
       * or to implement `AsyncDisposable.asyncDispose` yourself instead.
       */
-    inline def create(disposeAsync: js.Function0[Unit | js.Thenable[Unit]]): typings.esfxDisposable.asyncDisposableMod.AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposeAsync.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.asyncDisposableMod.AsyncDisposable]
+    inline def create(disposeAsync: js.Function0[Unit | PromiseLike[Unit]]): typings.esfxDisposable.asyncDisposableMod.AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposeAsync.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.asyncDisposableMod.AsyncDisposable]
     
     /**
       * Determines whether a value is `AsyncDisposable`.
@@ -83,7 +84,7 @@ object mod {
     inline def usingEach(
       iterable: js.Iterable[
           js.UndefOr[
-            typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null | (js.Thenable[
+            typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null | (PromiseLike[
               js.UndefOr[
                 typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null
               ]

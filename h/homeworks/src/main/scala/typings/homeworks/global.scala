@@ -27,5 +27,5 @@ object global {
   /**
     * @since 1.0.44
     */
-  inline def toast(message: js.Any): Unit = js.Dynamic.global.applyDynamic("toast")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def toast(message: Any): Unit = js.Dynamic.global.applyDynamic("toast")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -32,23 +32,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object appservicesMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/appservices", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/appservices", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
   
   object appservices {
     
+    /**
+      * In version 9.0.2: deleted
+      */
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-    - typings.mendixmodelsdk.appservicesMod.appservices.IAppServiceAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConsumedAppService, name, parameters */ @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceAction")
+    - typings.mendixmodelsdk.appservicesMod.appservices.IAppServiceAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConsumedAppService, name, parameters */ @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceAction")
     @js.native
-    class AppServiceAction protected ()
+    open class AppServiceAction protected ()
       extends Element[IModel]
          with IByNameReferrable {
       def this(
@@ -119,7 +122,7 @@ object appservicesMod {
     }
     object AppServiceAction {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceAction")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceAction")
       @js.native
       val ^ : js.Any = js.native
       
@@ -135,31 +138,37 @@ object appservicesMod {
         * Creates and returns a new AppServiceAction instance in the SDK and on the server.
         * The new AppServiceAction will be automatically stored in the 'actions' property
         * of the parent ConsumedAppService element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: ConsumedAppService): AppServiceAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceAction]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceAction.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceAction.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceAction.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceAction.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
+    /**
+      * In version 9.0.2: deleted
+      */
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-    - typings.mendixmodelsdk.appservicesMod.appservices.IAppServiceActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, name */ @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceActionParameter")
+    - typings.mendixmodelsdk.appservicesMod.appservices.IAppServiceActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, name */ @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceActionParameter")
     @js.native
-    class AppServiceActionParameter protected ()
+    open class AppServiceActionParameter protected ()
       extends Element[IModel]
          with IByNameReferrable {
       def this(
@@ -210,7 +219,7 @@ object appservicesMod {
     }
     object AppServiceActionParameter {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceActionParameter")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceActionParameter")
       @js.native
       val ^ : js.Any = js.native
       
@@ -226,55 +235,60 @@ object appservicesMod {
         * Creates and returns a new AppServiceActionParameter instance in the SDK and on the server.
         * The new AppServiceActionParameter will be automatically stored in the 'parameters' property
         * of the parent AppServiceAction element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: AppServiceAction): AppServiceActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceActionParameter]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceActionParameter.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceActionParameter.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceActionParameter.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceActionParameter.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceLocationEnum")
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceLocationEnum")
     @js.native
-    class AppServiceLocationEnum protected () extends AbstractEnum {
+    open class AppServiceLocationEnum protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object AppServiceLocationEnum {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceLocationEnum")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceLocationEnum")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceLocationEnum.Constant")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceLocationEnum.Constant")
       @js.native
       def Constant: AppServiceLocationEnum = js.native
       inline def Constant_=(x: AppServiceLocationEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constant")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceLocationEnum.Default")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceLocationEnum.Default")
       @js.native
       def Default: AppServiceLocationEnum = js.native
       inline def Default_=(x: AppServiceLocationEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.AppServiceLocationEnum.Parameter")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.AppServiceLocationEnum.Parameter")
       @js.native
       def Parameter: AppServiceLocationEnum = js.native
       inline def Parameter_=(x: AppServiceLocationEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parameter")(x.asInstanceOf[js.Any])
     }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide/consumed-app-services relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide8/consumed-app-services relevant section in reference guide}
+      *
+      * In version 9.0.2: deleted
       */
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
@@ -285,9 +299,9 @@ object appservicesMod {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.appservicesMod.appservices.IConsumedAppService because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined actions */ @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService")
+    - typings.mendixmodelsdk.appservicesMod.appservices.IConsumedAppService because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined actions */ @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.ConsumedAppService")
     @js.native
-    class ConsumedAppService protected () extends Document {
+    open class ConsumedAppService protected () extends Document {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -336,7 +350,7 @@ object appservicesMod {
     }
     object ConsumedAppService {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.ConsumedAppService")
       @js.native
       val ^ : js.Any = js.native
       
@@ -348,21 +362,24 @@ object appservicesMod {
       inline def createIn(container: IFolderBase): ConsumedAppService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConsumedAppService]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.ConsumedAppService.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.ConsumedAppService.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.ConsumedAppService.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.Msd")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.Msd")
     @js.native
-    class Msd protected () extends Element[IModel] {
+    open class Msd protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -395,7 +412,7 @@ object appservicesMod {
     }
     object Msd {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.Msd")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.Msd")
       @js.native
       val ^ : js.Any = js.native
       
@@ -411,26 +428,32 @@ object appservicesMod {
         * Creates and returns a new Msd instance in the SDK and on the server.
         * The new Msd will be automatically stored in the 'msd' property
         * of the parent ConsumedAppService element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: ConsumedAppService): Msd = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Msd]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.Msd.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.Msd.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.Msd.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.Msd.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAssociation")
     @js.native
-    class MsdAssociation protected () extends Element[IModel] {
+    open class MsdAssociation protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -485,7 +508,7 @@ object appservicesMod {
     }
     object MsdAssociation {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAssociation")
       @js.native
       val ^ : js.Any = js.native
       
@@ -501,6 +524,9 @@ object appservicesMod {
         * Creates and returns a new MsdAssociation instance in the SDK and on the server.
         * The new MsdAssociation will be automatically stored in the 'associationByContract' property
         * of the parent webservices.DataAssociation element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInDataAssociationUnderAssociationByContract(container: DataAssociation): MsdAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataAssociationUnderAssociationByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAssociation]
@@ -509,26 +535,32 @@ object appservicesMod {
         * Creates and returns a new MsdAssociation instance in the SDK and on the server.
         * The new MsdAssociation will be automatically stored in the 'associations' property
         * of the parent MsdDomainModel element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInMsdDomainModelUnderAssociations(container: MsdDomainModel): MsdAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdDomainModelUnderAssociations")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAssociation]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAssociation.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAssociation.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAssociation.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAttribute")
     @js.native
-    class MsdAttribute protected () extends Element[IModel] {
+    open class MsdAttribute protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -562,7 +594,7 @@ object appservicesMod {
     }
     object MsdAttribute {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAttribute")
       @js.native
       val ^ : js.Any = js.native
       
@@ -578,6 +610,9 @@ object appservicesMod {
         * Creates and returns a new MsdAttribute instance in the SDK and on the server.
         * The new MsdAttribute will be automatically stored in the 'attributeByContract' property
         * of the parent webservices.DataAttribute element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInDataAttributeUnderAttributeByContract(container: DataAttribute): MsdAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataAttributeUnderAttributeByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAttribute]
@@ -586,26 +621,32 @@ object appservicesMod {
         * Creates and returns a new MsdAttribute instance in the SDK and on the server.
         * The new MsdAttribute will be automatically stored in the 'attributes' property
         * of the parent MsdEntity element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInMsdEntityUnderAttributes(container: MsdEntity): MsdAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdEntityUnderAttributes")(container.asInstanceOf[js.Any]).asInstanceOf[MsdAttribute]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAttribute.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdAttribute.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdAttribute.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdDomainModel")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdDomainModel")
     @js.native
-    class MsdDomainModel protected () extends Element[IModel] {
+    open class MsdDomainModel protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -623,7 +664,7 @@ object appservicesMod {
     }
     object MsdDomainModel {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdDomainModel")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdDomainModel")
       @js.native
       val ^ : js.Any = js.native
       
@@ -639,26 +680,32 @@ object appservicesMod {
         * Creates and returns a new MsdDomainModel instance in the SDK and on the server.
         * The new MsdDomainModel will be automatically stored in the 'domainModel' property
         * of the parent Msd element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: Msd): MsdDomainModel = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdDomainModel]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdDomainModel.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdDomainModel.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdDomainModel.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdDomainModel.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEntity")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEntity")
     @js.native
-    class MsdEntity protected () extends Element[IModel] {
+    open class MsdEntity protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -692,7 +739,7 @@ object appservicesMod {
     }
     object MsdEntity {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEntity")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEntity")
       @js.native
       val ^ : js.Any = js.native
       
@@ -708,26 +755,32 @@ object appservicesMod {
         * Creates and returns a new MsdEntity instance in the SDK and on the server.
         * The new MsdEntity will be automatically stored in the 'entities' property
         * of the parent MsdDomainModel element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: MsdDomainModel): MsdEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEntity]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEntity.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEntity.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEntity.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEntity.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumeration")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumeration")
     @js.native
-    class MsdEnumeration protected () extends Element[IModel] {
+    open class MsdEnumeration protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -749,7 +802,7 @@ object appservicesMod {
     }
     object MsdEnumeration {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumeration")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumeration")
       @js.native
       val ^ : js.Any = js.native
       
@@ -765,26 +818,32 @@ object appservicesMod {
         * Creates and returns a new MsdEnumeration instance in the SDK and on the server.
         * The new MsdEnumeration will be automatically stored in the 'enumerations' property
         * of the parent MsdEnumerationContainer element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: MsdEnumerationContainer): MsdEnumeration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumeration]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumeration.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumeration.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumeration.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumeration.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationContainer")
     @js.native
-    class MsdEnumerationContainer protected () extends Element[IModel] {
+    open class MsdEnumerationContainer protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -802,7 +861,7 @@ object appservicesMod {
     }
     object MsdEnumerationContainer {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationContainer")
       @js.native
       val ^ : js.Any = js.native
       
@@ -818,6 +877,9 @@ object appservicesMod {
         * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
         * The new MsdEnumerationContainer will be automatically stored in the 'enumerations' property
         * of the parent Msd element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInMsdUnderEnumerations(container: Msd): MsdEnumerationContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderEnumerations")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationContainer]
@@ -826,26 +888,32 @@ object appservicesMod {
         * Creates and returns a new MsdEnumerationContainer instance in the SDK and on the server.
         * The new MsdEnumerationContainer will be automatically stored in the 'enumerationsByContract' property
         * of the parent webservices.VersionedService element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInVersionedServiceUnderEnumerationsByContract(container: VersionedService): MsdEnumerationContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVersionedServiceUnderEnumerationsByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationContainer]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationContainer.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationContainer.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationContainer.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationValue")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationValue")
     @js.native
-    class MsdEnumerationValue protected () extends Element[IModel] {
+    open class MsdEnumerationValue protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -870,7 +938,7 @@ object appservicesMod {
     }
     object MsdEnumerationValue {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationValue")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationValue")
       @js.native
       val ^ : js.Any = js.native
       
@@ -886,26 +954,32 @@ object appservicesMod {
         * Creates and returns a new MsdEnumerationValue instance in the SDK and on the server.
         * The new MsdEnumerationValue will be automatically stored in the 'values' property
         * of the parent MsdEnumeration element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: MsdEnumeration): MsdEnumerationValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdEnumerationValue]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationValue.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationValue.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdEnumerationValue.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdEnumerationValue.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMetadata")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMetadata")
     @js.native
-    class MsdMetadata protected () extends Element[IModel] {
+    open class MsdMetadata protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -957,7 +1031,7 @@ object appservicesMod {
     }
     object MsdMetadata {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMetadata")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMetadata")
       @js.native
       val ^ : js.Any = js.native
       
@@ -973,26 +1047,32 @@ object appservicesMod {
         * Creates and returns a new MsdMetadata instance in the SDK and on the server.
         * The new MsdMetadata will be automatically stored in the 'metadata' property
         * of the parent Msd element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: Msd): MsdMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMetadata]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMetadata.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMetadata.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMetadata.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMetadata.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflow")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflow")
     @js.native
-    class MsdMicroflow protected () extends Element[IModel] {
+    open class MsdMicroflow protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -1036,7 +1116,7 @@ object appservicesMod {
     }
     object MsdMicroflow {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflow")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflow")
       @js.native
       val ^ : js.Any = js.native
       
@@ -1052,26 +1132,32 @@ object appservicesMod {
         * Creates and returns a new MsdMicroflow instance in the SDK and on the server.
         * The new MsdMicroflow will be automatically stored in the 'microflows' property
         * of the parent MsdMetadata element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: MsdMetadata): MsdMicroflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflow]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflow.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflow.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflow.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflow.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflowParameter")
     @js.native
-    class MsdMicroflowParameter protected () extends Element[IModel] {
+    open class MsdMicroflowParameter protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -1106,7 +1192,7 @@ object appservicesMod {
     }
     object MsdMicroflowParameter {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflowParameter")
       @js.native
       val ^ : js.Any = js.native
       
@@ -1122,6 +1208,9 @@ object appservicesMod {
         * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
         * The new MsdMicroflowParameter will be automatically stored in the 'parameters' property
         * of the parent MsdMicroflow element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInMsdMicroflowUnderParameters(container: MsdMicroflow): MsdMicroflowParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdMicroflowUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflowParameter]
@@ -1130,26 +1219,32 @@ object appservicesMod {
         * Creates and returns a new MsdMicroflowParameter instance in the SDK and on the server.
         * The new MsdMicroflowParameter will be automatically stored in the 'parameterByContract' property
         * of the parent webservices.PublishedParameter element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createInPublishedParameterUnderParameterByContract(container: PublishedParameter): MsdMicroflowParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterByContract")(container.asInstanceOf[js.Any]).asInstanceOf[MsdMicroflowParameter]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflowParameter.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdMicroflowParameter.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdMicroflowParameter.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdText")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdText")
     @js.native
-    class MsdText protected () extends Element[IModel] {
+    open class MsdText protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -1169,7 +1264,7 @@ object appservicesMod {
     }
     object MsdText {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdText")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdText")
       @js.native
       val ^ : js.Any = js.native
       
@@ -1185,26 +1280,32 @@ object appservicesMod {
         * Creates and returns a new MsdText instance in the SDK and on the server.
         * The new MsdText will be automatically stored in the 'translations' property
         * of the parent MsdEnumerationValue element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: MsdEnumerationValue): MsdText = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdText]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdText.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdText.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdText.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdText.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdVersion")
+    /**
+      * In version 9.0.2: deleted
+      */
+    @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdVersion")
     @js.native
-    class MsdVersion protected () extends Element[IModel] {
+    open class MsdVersion protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -1221,7 +1322,7 @@ object appservicesMod {
     }
     object MsdVersion {
       
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdVersion")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdVersion")
       @js.native
       val ^ : js.Any = js.native
       
@@ -1237,18 +1338,21 @@ object appservicesMod {
         * Creates and returns a new MsdVersion instance in the SDK and on the server.
         * The new MsdVersion will be automatically stored in the 'version' property
         * of the parent Msd element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 9.0.1
         */
       /* static member */
       inline def createIn(container: Msd): MsdVersion = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MsdVersion]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdVersion.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdVersion.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices.MsdVersion.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/appservices", "appservices.MsdVersion.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -1256,6 +1360,9 @@ object appservicesMod {
     
     /**
       * Interfaces and instance classes for types from the Mendix sub meta model `AppServices`.
+      */
+    /**
+      * In version 9.0.2: deleted
       */
     @js.native
     trait IAppServiceAction
@@ -1273,6 +1380,9 @@ object appservicesMod {
       val parameters: IList[IAppServiceActionParameter] = js.native
     }
     
+    /**
+      * In version 9.0.2: deleted
+      */
     @js.native
     trait IAppServiceActionParameter
       extends StObject
@@ -1288,7 +1398,9 @@ object appservicesMod {
     }
     
     /**
-      * See: {@link https://docs.mendix.com/refguide/consumed-app-services relevant section in reference guide}
+      * See: {@link https://docs.mendix.com/refguide8/consumed-app-services relevant section in reference guide}
+      *
+      * In version 9.0.2: deleted
       */
     @js.native
     trait IConsumedAppService

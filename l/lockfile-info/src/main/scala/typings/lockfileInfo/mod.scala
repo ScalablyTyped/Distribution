@@ -1,8 +1,8 @@
 package typings.lockfileInfo
 
-import typings.lockfileInfo.lockfileInfoNumbers.`1`
-import typings.lockfileInfo.lockfileInfoNumbers.`2`
-import typings.lockfileInfo.lockfileInfoNumbers.`3`
+import typings.lockfileInfo.lockfileInfoInts.`1`
+import typings.lockfileInfo.lockfileInfoInts.`2`
+import typings.lockfileInfo.lockfileInfoInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

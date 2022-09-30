@@ -817,14 +817,7 @@ object VertexData {
   inline def ImportVertexData(parsedVertexData: Any, geometry: typings.babylonjs.geometryMod.Geometry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportVertexData")(parsedVertexData.asInstanceOf[js.Any], geometry.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * @param sideOrientation
-    * @param positions
-    * @param indices
-    * @param normals
-    * @param uvs
-    * @param frontUVs
-    * @param backUVs
-    * @hidden
+    * @internal
     */
   inline def _ComputeSides(
     sideOrientation: Double,

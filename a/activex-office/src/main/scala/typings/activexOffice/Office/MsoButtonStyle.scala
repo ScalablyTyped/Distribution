@@ -1,26 +1,26 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`0`
-import typings.activexOffice.activexOfficeNumbers.`11`
-import typings.activexOffice.activexOfficeNumbers.`14`
-import typings.activexOffice.activexOfficeNumbers.`15`
-import typings.activexOffice.activexOfficeNumbers.`1`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`3`
-import typings.activexOffice.activexOfficeNumbers.`7`
+import typings.activexOffice.activexOfficeInts.`0`
+import typings.activexOffice.activexOfficeInts.`11`
+import typings.activexOffice.activexOfficeInts.`14`
+import typings.activexOffice.activexOfficeInts.`15`
+import typings.activexOffice.activexOfficeInts.`1`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`3`
+import typings.activexOffice.activexOfficeInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`0`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`1`
-  - typings.activexOffice.activexOfficeNumbers.`3`
-  - typings.activexOffice.activexOfficeNumbers.`11`
-  - typings.activexOffice.activexOfficeNumbers.`7`
-  - typings.activexOffice.activexOfficeNumbers.`15`
-  - typings.activexOffice.activexOfficeNumbers.`14`
+  - typings.activexOffice.activexOfficeInts.`0`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`1`
+  - typings.activexOffice.activexOfficeInts.`3`
+  - typings.activexOffice.activexOfficeInts.`11`
+  - typings.activexOffice.activexOfficeInts.`7`
+  - typings.activexOffice.activexOfficeInts.`15`
+  - typings.activexOffice.activexOfficeInts.`14`
 */
 trait MsoButtonStyle extends StObject
 object MsoButtonStyle {

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PageRules extends StObject {
   
-  def add(zone: Actions): ResponseObjectPromise
+  def add(zone: Actions): js.Promise[js.Object]
   
-  def browse(): ResponseObjectPromise
+  def browse(): js.Promise[js.Object]
   
-  def del(id: String): ResponseObjectPromise
+  def del(id: String): js.Promise[js.Object]
   
-  def edit(id: String, page_rule: Actions): ResponseObjectPromise
+  def edit(id: String, page_rule: Actions): js.Promise[js.Object]
   
-  def read(id: String): ResponseObjectPromise
+  def read(id: String): js.Promise[js.Object]
 }
 object PageRules {
   
   inline def apply(
-    add: Actions => ResponseObjectPromise,
-    browse: () => ResponseObjectPromise,
-    del: String => ResponseObjectPromise,
-    edit: (String, Actions) => ResponseObjectPromise,
-    read: String => ResponseObjectPromise
+    add: Actions => js.Promise[js.Object],
+    browse: () => js.Promise[js.Object],
+    del: String => js.Promise[js.Object],
+    edit: (String, Actions) => js.Promise[js.Object],
+    read: String => js.Promise[js.Object]
   ): PageRules = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), browse = js.Any.fromFunction0(browse), del = js.Any.fromFunction1(del), edit = js.Any.fromFunction2(edit), read = js.Any.fromFunction1(read))
     __obj.asInstanceOf[PageRules]
@@ -32,14 +32,14 @@ object PageRules {
   
   extension [Self <: PageRules](x: Self) {
     
-    inline def setAdd(value: Actions => ResponseObjectPromise): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Actions => js.Promise[js.Object]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    inline def setBrowse(value: () => ResponseObjectPromise): Self = StObject.set(x, "browse", js.Any.fromFunction0(value))
+    inline def setBrowse(value: () => js.Promise[js.Object]): Self = StObject.set(x, "browse", js.Any.fromFunction0(value))
     
-    inline def setDel(value: String => ResponseObjectPromise): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+    inline def setDel(value: String => js.Promise[js.Object]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
     
-    inline def setEdit(value: (String, Actions) => ResponseObjectPromise): Self = StObject.set(x, "edit", js.Any.fromFunction2(value))
+    inline def setEdit(value: (String, Actions) => js.Promise[js.Object]): Self = StObject.set(x, "edit", js.Any.fromFunction2(value))
     
-    inline def setRead(value: String => ResponseObjectPromise): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: String => js.Promise[js.Object]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
   }
 }

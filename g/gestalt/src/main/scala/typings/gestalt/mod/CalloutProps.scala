@@ -3,6 +3,8 @@ package typings.gestalt.mod
 import typings.gestalt.anon.AccessibilityLabel
 import typings.gestalt.gestaltStrings.error
 import typings.gestalt.gestaltStrings.info
+import typings.gestalt.gestaltStrings.recommendation
+import typings.gestalt.gestaltStrings.success
 import typings.gestalt.gestaltStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,11 +24,15 @@ trait CalloutProps extends StObject {
   
   var title: js.UndefOr[String] = js.undefined
   
-  var `type`: error | info | warning
+  var `type`: error | info | recommendation | success | warning
 }
 object CalloutProps {
   
-  inline def apply(iconAccessibilityLabel: String, message: String, `type`: error | info | warning): CalloutProps = {
+  inline def apply(
+    iconAccessibilityLabel: String,
+    message: String,
+    `type`: error | info | recommendation | success | warning
+  ): CalloutProps = {
     val __obj = js.Dynamic.literal(iconAccessibilityLabel = iconAccessibilityLabel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalloutProps]
@@ -54,6 +60,6 @@ object CalloutProps {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setType(value: error | info | warning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error | info | recommendation | success | warning): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

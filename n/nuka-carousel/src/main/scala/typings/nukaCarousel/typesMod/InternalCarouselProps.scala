@@ -3,11 +3,13 @@ package typings.nukaCarousel.typesMod
 import typings.nukaCarousel.nukaCarouselStrings.fade
 import typings.nukaCarousel.nukaCarouselStrings.zoom
 import typings.react.mod.CSSProperties
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
+import typings.std.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -114,20 +116,14 @@ trait InternalCarouselProps extends StObject {
   var dragging: Boolean = js.native
   
   /**
-    * Not migrated yet
-    *
     * Animation easing function
-    * @see https://github.com/d3/d3-ease
     */
-  var easing: D3EasingFunctions = js.native
+  var easing: EasingFunction = js.native
   
   /**
-    * Not migrated yet
-    *
     * Animation easing function when swipe exceeds edge
-    * @see https://github.com/d3/d3-ease
     */
-  var edgeEasing: D3EasingFunctions = js.native
+  var edgeEasing: EasingFunction = js.native
   
   /**
     * When set to true, disable keyboard controls
@@ -150,26 +146,32 @@ trait InternalCarouselProps extends StObject {
     */
   var keyCodeConfig: KeyCodeConfig = js.native
   
+  def onDrag(e: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
   /**
     * optional callback function
     */
-  def onDrag(): Unit = js.native
-  def onDrag(e: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
   def onDrag(e: TouchEvent[HTMLDivElement]): Unit = js.native
   
+  def onDragEnd(e: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
   /**
     * optional callback function
     */
-  def onDragEnd(): Unit = js.native
-  def onDragEnd(e: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
   def onDragEnd(e: TouchEvent[HTMLDivElement]): Unit = js.native
   
+  def onDragStart(e: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
   /**
     * optional callback function
     */
-  def onDragStart(): Unit = js.native
-  def onDragStart(e: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
   def onDragStart(e: TouchEvent[HTMLDivElement]): Unit = js.native
+  
+  def onUserNavigation(e: KeyboardEvent[Element]): Unit = js.native
+  def onUserNavigation(e: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
+  /**
+    * Callback called when user-triggered navigation occurs: dragging/swiping,
+    * clicking one of the controls (custom controls not included), or using a
+    * keyboard shortcut
+    */
+  def onUserNavigation(e: TouchEvent[Element]): Unit = js.native
   
   /**
     * Pause autoPlay when mouse is over carousel

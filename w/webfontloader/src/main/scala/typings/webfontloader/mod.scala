@@ -1,6 +1,7 @@
 package typings.webfontloader
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,8 +22,8 @@ object mod {
     /** Setting this to false will disable html classes (defaults to true) */
     var classes: js.UndefOr[Boolean] = js.undefined
     
-    /** Child window or iframes to manage fonts for */
-    var context: js.UndefOr[js.Array[String]] = js.undefined
+    /** Child window or iframe to manage fonts for */
+    var context: js.UndefOr[Window] = js.undefined
     
     var custom: js.UndefOr[Custom] = js.undefined
     
@@ -72,11 +73,9 @@ object mod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setContext(value: js.Array[String]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Window): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      inline def setContextVarargs(value: String*): Self = StObject.set(x, "context", js.Array(value*))
       
       inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       

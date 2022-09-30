@@ -1,6 +1,6 @@
 package typings.glMatrix
 
-import typings.glMatrix.glMatrixNumbers.`0.000001`
+import typings.glMatrix.glMatrixDoubles.`0.000001`
 import typings.std.ArrayConstructor
 import typings.std.Float32ArrayConstructor
 import org.scalablytyped.runtime.StObject

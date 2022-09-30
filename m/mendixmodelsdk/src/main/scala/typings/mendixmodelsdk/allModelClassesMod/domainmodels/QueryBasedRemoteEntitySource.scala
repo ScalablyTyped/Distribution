@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.10.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource")
 @js.native
 abstract class QueryBasedRemoteEntitySource protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.QueryBasedRemoteEntitySource {
@@ -28,18 +28,18 @@ abstract class QueryBasedRemoteEntitySource protected ()
 }
 object QueryBasedRemoteEntitySource {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.QueryBasedRemoteEntitySource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

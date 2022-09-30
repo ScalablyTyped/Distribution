@@ -3,7 +3,6 @@ package typings.meteorSjobs
 import org.scalablytyped.runtime.StringDictionary
 import typings.meteorSjobs.meteorSjobsBooleans.`false`
 import typings.meteorSjobs.meteorSjobsBooleans.`true`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,18 +12,18 @@ object mod {
   
   @JSImport("meteor/msavin:sjobs", "JobContext")
   @js.native
-  class JobContext () extends StObject {
+  open class JobContext () extends StObject {
     
     /** Access the cached document of the current job. */
     def document(): Job = js.native
     
     /** Mark the job as having failed. */
     def failure(): js.Object = js.native
-    def failure(result: js.Any): js.Object = js.native
+    def failure(result: Any): js.Object = js.native
     
     // returns Mongo WriteResult object
     /** get a persistent value from key */
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     /** Remove the job from the collection. */
     def remove(): Double = js.native
@@ -40,7 +39,7 @@ object mod {
     def reschedule(config: JobRunConfigObject): js.Object = js.native
     
     /** Sets a persistent key/value pair */
-    def set(key: String, value: js.Any): js.Object = js.native
+    def set(key: String, value: Any): js.Object = js.native
     
     /** Mark the job as successful. */
     def success(): js.Object = js.native
@@ -49,7 +48,7 @@ object mod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("meteor/msavin:sjobs", "Jobs")
   @js.native
-  class Jobs () extends StObject
+  open class Jobs () extends StObject
   object Jobs {
     
     @JSImport("meteor/msavin:sjobs", "Jobs")
@@ -73,14 +72,14 @@ object mod {
     def clear: js.Function3[
         /* state */ State, 
         /* name */ js.UndefOr[String], 
-        /* cb */ js.UndefOr[js.Function1[/* args */ js.Any, js.Any]], 
+        /* cb */ js.UndefOr[js.Function1[/* args */ Any, Any]], 
         Double
       ] = js.native
     inline def clear_=(
       x: js.Function3[
           /* state */ State, 
           /* name */ js.UndefOr[String], 
-          /* cb */ js.UndefOr[js.Function1[/* args */ js.Any, js.Any]], 
+          /* cb */ js.UndefOr[js.Function1[/* args */ Any, Any]], 
           Double
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clear")(x.asInstanceOf[js.Any])
@@ -105,8 +104,8 @@ object mod {
     /* static member */
     @JSImport("meteor/msavin:sjobs", "Jobs.find")
     @js.native
-    def find: js.Function1[/* repeated */ js.Any, `false` | Unit] = js.native
-    inline def find_=(x: js.Function1[/* repeated */ js.Any, `false` | Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("find")(x.asInstanceOf[js.Any])
+    def find: js.Function1[/* repeated */ Any, `false` | Unit] = js.native
+    inline def find_=(x: js.Function1[/* repeated */ Any, `false` | Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("find")(x.asInstanceOf[js.Any])
     
     /**  allows you to get a job document by its document id. */
     /* static member */
@@ -146,8 +145,8 @@ object mod {
     /* static member */
     @JSImport("meteor/msavin:sjobs", "Jobs.run")
     @js.native
-    def run: js.Function2[/* jobname */ String, /* repeated */ js.Any, Unit] = js.native
-    inline def run_=(x: js.Function2[/* jobname */ String, /* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("run")(x.asInstanceOf[js.Any])
+    def run: js.Function2[/* jobname */ String, /* repeated */ Any, Unit] = js.native
+    inline def run_=(x: js.Function2[/* jobname */ String, /* repeated */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("run")(x.asInstanceOf[js.Any])
     
     /**
       * Allows you start all the queues. If you call the function with no arguments, it will start all the queues.
@@ -157,8 +156,8 @@ object mod {
     /* static member */
     @JSImport("meteor/msavin:sjobs", "Jobs.start")
     @js.native
-    def start: js.Function1[/* queueName */ js.UndefOr[String | js.Array[js.Any]], Unit] = js.native
-    inline def start_=(x: js.Function1[/* queueName */ js.UndefOr[String | js.Array[js.Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
+    def start: js.Function1[/* queueName */ js.UndefOr[String | js.Array[Any]], Unit] = js.native
+    inline def start_=(x: js.Function1[/* queueName */ js.UndefOr[String | js.Array[Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("start")(x.asInstanceOf[js.Any])
     
     /**
       * Allows you stop all the queues. If you call the function with no arguments, it will stop all the queues.
@@ -168,8 +167,8 @@ object mod {
     /* static member */
     @JSImport("meteor/msavin:sjobs", "Jobs.stop")
     @js.native
-    def stop: js.Function1[/* queueName */ js.UndefOr[String | js.Array[js.Any]], Unit] = js.native
-    inline def stop_=(x: js.Function1[/* queueName */ js.UndefOr[String | js.Array[js.Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stop")(x.asInstanceOf[js.Any])
+    def stop: js.Function1[/* queueName */ js.UndefOr[String | js.Array[Any]], Unit] = js.native
+    inline def stop_=(x: js.Function1[/* queueName */ js.UndefOr[String | js.Array[Any]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stop")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -275,9 +274,9 @@ object mod {
   
   trait HistoryItem extends StObject {
     
-    var date: Date
+    var date: js.Date
     
-    var newDue: js.UndefOr[Date] = js.undefined
+    var newDue: js.UndefOr[js.Date] = js.undefined
     
     var serverId: String
     
@@ -287,16 +286,16 @@ object mod {
   }
   object HistoryItem {
     
-    inline def apply(date: Date, serverId: String): HistoryItem = {
+    inline def apply(date: js.Date, serverId: String): HistoryItem = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], serverId = serverId.asInstanceOf[js.Any])
       __obj.asInstanceOf[HistoryItem]
     }
     
     extension [Self <: HistoryItem](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      inline def setNewDue(value: Date): Self = StObject.set(x, "newDue", value.asInstanceOf[js.Any])
+      inline def setNewDue(value: js.Date): Self = StObject.set(x, "newDue", value.asInstanceOf[js.Any])
       
       inline def setNewDueUndefined: Self = StObject.set(x, "newDue", js.undefined)
       
@@ -316,13 +315,13 @@ object mod {
     
     var _id: js.UndefOr[String] = js.undefined
     
-    var arguments: js.Array[js.Any]
+    var arguments: js.Array[Any]
     
-    var created: Date
+    var created: js.Date
     
-    var data: js.Any
+    var data: Any
     
-    var due: Date
+    var due: js.Date
     
     var history: js.Array[HistoryItem]
     
@@ -337,10 +336,10 @@ object mod {
   object Job {
     
     inline def apply(
-      arguments: js.Array[js.Any],
-      created: Date,
-      data: js.Any,
-      due: Date,
+      arguments: js.Array[Any],
+      created: js.Date,
+      data: Any,
+      due: js.Date,
       history: js.Array[HistoryItem],
       name: String,
       priority: Double,
@@ -353,19 +352,19 @@ object mod {
     
     extension [Self <: Job](x: Self) {
       
-      inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: Any*): Self = StObject.set(x, "arguments", js.Array(value*))
       
-      inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDue(value: Date): Self = StObject.set(x, "due", value.asInstanceOf[js.Any])
+      inline def setDue(value: js.Date): Self = StObject.set(x, "due", value.asInstanceOf[js.Any])
       
       inline def setHistory(value: js.Array[HistoryItem]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      inline def setHistoryVarargs(value: HistoryItem*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: HistoryItem*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -381,15 +380,15 @@ object mod {
     }
   }
   
-  type JobDefinition = StringDictionary[js.ThisFunction1[/* this */ JobContext, /* repeated */ js.Any, Unit]]
+  type JobDefinition = StringDictionary[js.ThisFunction1[/* this */ JobContext, /* repeated */ Any, Unit]]
   
   trait JobRunConfigObject extends StObject {
     
     /** Run a callback function after scheduling the job. */
-    var callback: js.UndefOr[js.Function2[/* error */ `true` | Null, /* result */ Job, js.Any]] = js.undefined
+    var callback: js.UndefOr[js.Function2[/* error */ `true` | Null, /* result */ Job, Any]] = js.undefined
     
     /** Provide your own date. This stacks with the in and on operator, and will be applied before they perform their operations. */
-    var date: js.UndefOr[js.Function0[Date]] = js.undefined
+    var date: js.UndefOr[js.Function0[js.Date]] = js.undefined
     
     /** Will schedule the job at a later time, using the current time and your inputs to calculate the due time. */
     var in: js.UndefOr[CfgTimeObject] = js.undefined
@@ -418,11 +417,11 @@ object mod {
     
     extension [Self <: JobRunConfigObject](x: Self) {
       
-      inline def setCallback(value: (/* error */ `true` | Null, /* result */ Job) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ `true` | Null, /* result */ Job) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      inline def setDate(value: () => Date): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
+      inline def setDate(value: () => js.Date): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -478,7 +477,7 @@ object mod {
     var disableDevelopmentMode: js.UndefOr[Boolean] = js.undefined
     
     /** Determine how to get the current date, if for whatever reason, new Date() is not suitable */
-    var getDate: js.UndefOr[js.Function0[Date]] = js.undefined
+    var getDate: js.UndefOr[js.Function0[js.Date]] = js.undefined
     
     var gracePeriod: js.UndefOr[Double] = js.undefined
     
@@ -525,7 +524,7 @@ object mod {
       
       inline def setDisableDevelopmentModeUndefined: Self = StObject.set(x, "disableDevelopmentMode", js.undefined)
       
-      inline def setGetDate(value: () => Date): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
+      inline def setGetDate(value: () => js.Date): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
       
       inline def setGetDateUndefined: Self = StObject.set(x, "getDate", js.undefined)
       

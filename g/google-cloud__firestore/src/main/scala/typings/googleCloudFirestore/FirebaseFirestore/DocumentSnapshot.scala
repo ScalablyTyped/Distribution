@@ -31,8 +31,8 @@ trait DocumentSnapshot[T] extends StObject {
     * @return The data at the specified field location or undefined if no such
     * field exists in the document.
     */
-  def get(fieldPath: String): js.Any = js.native
-  def get(fieldPath: FieldPath): js.Any = js.native
+  def get(fieldPath: String): Any = js.native
+  def get(fieldPath: FieldPath): Any = js.native
   
   /**
     * The ID of the document for which this `DocumentSnapshot` contains data.

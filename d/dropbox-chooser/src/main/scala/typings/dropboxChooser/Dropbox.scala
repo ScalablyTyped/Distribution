@@ -79,24 +79,24 @@ object Dropbox {
   
   // Refer to "Handling the response" section of: https://www.dropbox.com/developers/chooser
   /* Rewritten from type alias, can be one of: 
-    - typings.dropboxChooser.dropboxChooserNumbers.`75`
-    - typings.dropboxChooser.dropboxChooserNumbers.`256`
-    - typings.dropboxChooser.dropboxChooserNumbers.`800`
-    - typings.dropboxChooser.dropboxChooserNumbers.`1280`
-    - typings.dropboxChooser.dropboxChooserNumbers.`2048`
+    - typings.dropboxChooser.dropboxChooserInts.`75`
+    - typings.dropboxChooser.dropboxChooserInts.`256`
+    - typings.dropboxChooser.dropboxChooserInts.`800`
+    - typings.dropboxChooser.dropboxChooserInts.`1280`
+    - typings.dropboxChooser.dropboxChooserInts.`2048`
   */
   trait ChooserFileBoundingBox extends StObject
   object ChooserFileBoundingBox {
     
-    inline def `1280`: typings.dropboxChooser.dropboxChooserNumbers.`1280` = 1280.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`1280`]
+    inline def `1280`: typings.dropboxChooser.dropboxChooserInts.`1280` = 1280.asInstanceOf[typings.dropboxChooser.dropboxChooserInts.`1280`]
     
-    inline def `2048`: typings.dropboxChooser.dropboxChooserNumbers.`2048` = 2048.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`2048`]
+    inline def `2048`: typings.dropboxChooser.dropboxChooserInts.`2048` = 2048.asInstanceOf[typings.dropboxChooser.dropboxChooserInts.`2048`]
     
-    inline def `256`: typings.dropboxChooser.dropboxChooserNumbers.`256` = 256.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`256`]
+    inline def `256`: typings.dropboxChooser.dropboxChooserInts.`256` = 256.asInstanceOf[typings.dropboxChooser.dropboxChooserInts.`256`]
     
-    inline def `75`: typings.dropboxChooser.dropboxChooserNumbers.`75` = 75.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`75`]
+    inline def `75`: typings.dropboxChooser.dropboxChooserInts.`75` = 75.asInstanceOf[typings.dropboxChooser.dropboxChooserInts.`75`]
     
-    inline def `800`: typings.dropboxChooser.dropboxChooserNumbers.`800` = 800.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`800`]
+    inline def `800`: typings.dropboxChooser.dropboxChooserInts.`800` = 800.asInstanceOf[typings.dropboxChooser.dropboxChooserInts.`800`]
   }
   
   /* Rewritten from type alias, can be one of: 

@@ -16,23 +16,27 @@ trait _empty extends StObject {
   
   var `10126`: CategoryLevel
   
-  var `10226`: Text
+  var `10127`: CategoryLevel
   
-  var `11321`: Text
+  var `10128`: CategoryLevel
   
-  var `11322`: LevelText
+  var `10226`: TextType
   
-  var `11323`: LevelText
+  var `11321`: TextType
+  
+  var `11322`: Text
+  
+  var `11323`: Text
   
   var `11324`: Level
   
-  var `11325`: LevelText
+  var `11325`: Text
   
-  var `11326`: LevelText
+  var `11326`: Text
   
-  var `11327`: LevelText
+  var `11327`: Text
   
-  var `11328`: LevelText
+  var `11328`: Text
   
   var `11329`: Level
   
@@ -40,11 +44,13 @@ trait _empty extends StObject {
   
   var `11331`: CategoryLevel
   
+  var `11332`: CategoryDocsUrlLevel
+  
   var `11467`: DocsUrl
   
-  var `11521`: DocsUrlLevel
+  var `11521`: DocsUrlLevelText
   
-  var `11522`: DocsUrlLevelText
+  var `11522`: DocsUrlString
   
   var `11610`: Category
   
@@ -54,33 +60,61 @@ trait _empty extends StObject {
   
   var `11613`: DocsUrl
   
-  var `11614`: DocsUrlString
+  var `11614`: Level
   
-  var `11701`: Level
+  var `11615`: Text
   
-  var `85901`: Text
+  var `11616`: Text
   
-  var `85907`: Text
+  var `11701`: DocsUrl
+  
+  /** Node Manifest warnings */
+  var `11801`: CategoryLevelText
+  
+  var `11802`: CategoryErrorCategory
+  
+  var `11803`: CategoryErrorCategory
+  
+  var `11804`: CategoryErrorCategoryLevelLevel
+  
+  var `11805`: CategoryErrorCategory
+  
+  /** End Node Manifest warnings */
+  var `11901`: LevelTextType
+  
+  var `11902`: LevelTextType
+  
+  var `11903`: LevelTextType
+  
+  var `11904`: LevelTextType
+  
+  var `12100`: CategoryDocsUrlLevelText
+  
+  var `80000`: Category
+  
+  var `85901`: TextType
+  
+  var `85907`: TextType
   
   var `85908`: CategoryLevel
   
-  var `85909`: Text
+  var `85909`: TextType
   
   var `85910`: CategoryDocsUrl
   
   var `85911`: CategoryLevel
   
-  var `85912`: Text
+  var `85912`: TextType
   
-  var `85913`: Text
+  var `85913`: TextType
   
-  var `85914`: Text
+  var `85914`: TextType
   
-  var `85915`: Text
+  var `85915`: TextType
   
   var `85916`: CategoryLevel
   
-  var `85917`: Text
+  var `85917`: TextType
   
   var `85918`: CategoryLevel
   
@@ -90,9 +124,9 @@ trait _empty extends StObject {
   
   var `85921`: CategoryLevel
   
-  var `85922`: CategoryLevel
+  var `85922`: DocsUrlLevel
   
-  var `85923`: CategoryLevel
+  var `85923`: DocsUrlLevel
   
   var `85924`: CategoryLevel
   
@@ -102,11 +136,23 @@ trait _empty extends StObject {
   
   var `85927`: CategoryLevel
   
+  var `85928`: LevelLevel
+  
+  var `85929`: CategoryLevel
+  
   var `95312`: Category
   
   var `95313`: DocsUrl
   
-  var `98123`: Text
+  var `95314`: DocsUrl
+  
+  var `95315`: Text
+  
+  var `98001`: LevelText
+  
+  var `98011`: CategoryLevel
+  
+  var `98123`: TextType
   
   var `98124`: CategoryLevel
   
@@ -121,52 +167,74 @@ object _empty {
     `10124`: CategoryLevel,
     `10125`: CategoryLevel,
     `10126`: CategoryLevel,
-    `10226`: Text,
-    `11321`: Text,
-    `11322`: LevelText,
-    `11323`: LevelText,
+    `10127`: CategoryLevel,
+    `10128`: CategoryLevel,
+    `10226`: TextType,
+    `11321`: TextType,
+    `11322`: Text,
+    `11323`: Text,
     `11324`: Level,
-    `11325`: LevelText,
-    `11326`: LevelText,
-    `11327`: LevelText,
-    `11328`: LevelText,
+    `11325`: Text,
+    `11326`: Text,
+    `11327`: Text,
+    `11328`: Text,
     `11329`: Level,
     `11330`: CategoryLevel,
     `11331`: CategoryLevel,
+    `11332`: CategoryDocsUrlLevel,
     `11467`: DocsUrl,
-    `11521`: DocsUrlLevel,
-    `11522`: DocsUrlLevelText,
+    `11521`: DocsUrlLevelText,
+    `11522`: DocsUrlString,
     `11610`: Category,
     `11611`: Category,
     `11612`: Category,
     `11613`: DocsUrl,
-    `11614`: DocsUrlString,
-    `11701`: Level,
-    `85901`: Text,
-    `85907`: Text,
+    `11614`: Level,
+    `11615`: Text,
+    `11616`: Text,
+    `11701`: DocsUrl,
+    `11801`: CategoryLevelText,
+    `11802`: CategoryErrorCategory,
+    `11803`: CategoryErrorCategory,
+    `11804`: CategoryErrorCategoryLevelLevel,
+    `11805`: CategoryErrorCategory,
+    `11901`: LevelTextType,
+    `11902`: LevelTextType,
+    `11903`: LevelTextType,
+    `11904`: LevelTextType,
+    `12100`: CategoryDocsUrlLevelText,
+    `80000`: Category,
+    `85901`: TextType,
+    `85907`: TextType,
     `85908`: CategoryLevel,
-    `85909`: Text,
+    `85909`: TextType,
     `85910`: CategoryDocsUrl,
     `85911`: CategoryLevel,
-    `85912`: Text,
-    `85913`: Text,
-    `85914`: Text,
-    `85915`: Text,
+    `85912`: TextType,
+    `85913`: TextType,
+    `85914`: TextType,
+    `85915`: TextType,
     `85916`: CategoryLevel,
-    `85917`: Text,
+    `85917`: TextType,
     `85918`: CategoryLevel,
     `85919`: CategoryLevel,
     `85920`: CategoryLevel,
     `85921`: CategoryLevel,
-    `85922`: CategoryLevel,
-    `85923`: CategoryLevel,
+    `85922`: DocsUrlLevel,
+    `85923`: DocsUrlLevel,
     `85924`: CategoryLevel,
     `85925`: CategoryLevel,
     `85926`: CategoryLevel,
     `85927`: CategoryLevel,
+    `85928`: LevelLevel,
+    `85929`: CategoryLevel,
     `95312`: Category,
     `95313`: DocsUrl,
-    `98123`: Text,
+    `95314`: DocsUrl,
+    `95315`: Text,
+    `98001`: LevelText,
+    `98011`: CategoryLevel,
+    `98123`: TextType,
     `98124`: CategoryLevel,
     _empty: Level
   ): _empty = {
@@ -176,6 +244,8 @@ object _empty {
     __obj.updateDynamic("10124")(`10124`.asInstanceOf[js.Any])
     __obj.updateDynamic("10125")(`10125`.asInstanceOf[js.Any])
     __obj.updateDynamic("10126")(`10126`.asInstanceOf[js.Any])
+    __obj.updateDynamic("10127")(`10127`.asInstanceOf[js.Any])
+    __obj.updateDynamic("10128")(`10128`.asInstanceOf[js.Any])
     __obj.updateDynamic("10226")(`10226`.asInstanceOf[js.Any])
     __obj.updateDynamic("11321")(`11321`.asInstanceOf[js.Any])
     __obj.updateDynamic("11322")(`11322`.asInstanceOf[js.Any])
@@ -188,6 +258,7 @@ object _empty {
     __obj.updateDynamic("11329")(`11329`.asInstanceOf[js.Any])
     __obj.updateDynamic("11330")(`11330`.asInstanceOf[js.Any])
     __obj.updateDynamic("11331")(`11331`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11332")(`11332`.asInstanceOf[js.Any])
     __obj.updateDynamic("11467")(`11467`.asInstanceOf[js.Any])
     __obj.updateDynamic("11521")(`11521`.asInstanceOf[js.Any])
     __obj.updateDynamic("11522")(`11522`.asInstanceOf[js.Any])
@@ -196,7 +267,20 @@ object _empty {
     __obj.updateDynamic("11612")(`11612`.asInstanceOf[js.Any])
     __obj.updateDynamic("11613")(`11613`.asInstanceOf[js.Any])
     __obj.updateDynamic("11614")(`11614`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11615")(`11615`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11616")(`11616`.asInstanceOf[js.Any])
     __obj.updateDynamic("11701")(`11701`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11801")(`11801`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11802")(`11802`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11803")(`11803`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11804")(`11804`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11805")(`11805`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11901")(`11901`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11902")(`11902`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11903")(`11903`.asInstanceOf[js.Any])
+    __obj.updateDynamic("11904")(`11904`.asInstanceOf[js.Any])
+    __obj.updateDynamic("12100")(`12100`.asInstanceOf[js.Any])
+    __obj.updateDynamic("80000")(`80000`.asInstanceOf[js.Any])
     __obj.updateDynamic("85901")(`85901`.asInstanceOf[js.Any])
     __obj.updateDynamic("85907")(`85907`.asInstanceOf[js.Any])
     __obj.updateDynamic("85908")(`85908`.asInstanceOf[js.Any])
@@ -219,8 +303,14 @@ object _empty {
     __obj.updateDynamic("85925")(`85925`.asInstanceOf[js.Any])
     __obj.updateDynamic("85926")(`85926`.asInstanceOf[js.Any])
     __obj.updateDynamic("85927")(`85927`.asInstanceOf[js.Any])
+    __obj.updateDynamic("85928")(`85928`.asInstanceOf[js.Any])
+    __obj.updateDynamic("85929")(`85929`.asInstanceOf[js.Any])
     __obj.updateDynamic("95312")(`95312`.asInstanceOf[js.Any])
     __obj.updateDynamic("95313")(`95313`.asInstanceOf[js.Any])
+    __obj.updateDynamic("95314")(`95314`.asInstanceOf[js.Any])
+    __obj.updateDynamic("95315")(`95315`.asInstanceOf[js.Any])
+    __obj.updateDynamic("98001")(`98001`.asInstanceOf[js.Any])
+    __obj.updateDynamic("98011")(`98011`.asInstanceOf[js.Any])
     __obj.updateDynamic("98123")(`98123`.asInstanceOf[js.Any])
     __obj.updateDynamic("98124")(`98124`.asInstanceOf[js.Any])
     __obj.updateDynamic("")(_empty.asInstanceOf[js.Any])
@@ -239,23 +329,27 @@ object _empty {
     
     inline def set10126(value: CategoryLevel): Self = StObject.set(x, "10126", value.asInstanceOf[js.Any])
     
-    inline def set10226(value: Text): Self = StObject.set(x, "10226", value.asInstanceOf[js.Any])
+    inline def set10127(value: CategoryLevel): Self = StObject.set(x, "10127", value.asInstanceOf[js.Any])
     
-    inline def set11321(value: Text): Self = StObject.set(x, "11321", value.asInstanceOf[js.Any])
+    inline def set10128(value: CategoryLevel): Self = StObject.set(x, "10128", value.asInstanceOf[js.Any])
     
-    inline def set11322(value: LevelText): Self = StObject.set(x, "11322", value.asInstanceOf[js.Any])
+    inline def set10226(value: TextType): Self = StObject.set(x, "10226", value.asInstanceOf[js.Any])
     
-    inline def set11323(value: LevelText): Self = StObject.set(x, "11323", value.asInstanceOf[js.Any])
+    inline def set11321(value: TextType): Self = StObject.set(x, "11321", value.asInstanceOf[js.Any])
+    
+    inline def set11322(value: Text): Self = StObject.set(x, "11322", value.asInstanceOf[js.Any])
+    
+    inline def set11323(value: Text): Self = StObject.set(x, "11323", value.asInstanceOf[js.Any])
     
     inline def set11324(value: Level): Self = StObject.set(x, "11324", value.asInstanceOf[js.Any])
     
-    inline def set11325(value: LevelText): Self = StObject.set(x, "11325", value.asInstanceOf[js.Any])
+    inline def set11325(value: Text): Self = StObject.set(x, "11325", value.asInstanceOf[js.Any])
     
-    inline def set11326(value: LevelText): Self = StObject.set(x, "11326", value.asInstanceOf[js.Any])
+    inline def set11326(value: Text): Self = StObject.set(x, "11326", value.asInstanceOf[js.Any])
     
-    inline def set11327(value: LevelText): Self = StObject.set(x, "11327", value.asInstanceOf[js.Any])
+    inline def set11327(value: Text): Self = StObject.set(x, "11327", value.asInstanceOf[js.Any])
     
-    inline def set11328(value: LevelText): Self = StObject.set(x, "11328", value.asInstanceOf[js.Any])
+    inline def set11328(value: Text): Self = StObject.set(x, "11328", value.asInstanceOf[js.Any])
     
     inline def set11329(value: Level): Self = StObject.set(x, "11329", value.asInstanceOf[js.Any])
     
@@ -263,11 +357,13 @@ object _empty {
     
     inline def set11331(value: CategoryLevel): Self = StObject.set(x, "11331", value.asInstanceOf[js.Any])
     
+    inline def set11332(value: CategoryDocsUrlLevel): Self = StObject.set(x, "11332", value.asInstanceOf[js.Any])
+    
     inline def set11467(value: DocsUrl): Self = StObject.set(x, "11467", value.asInstanceOf[js.Any])
     
-    inline def set11521(value: DocsUrlLevel): Self = StObject.set(x, "11521", value.asInstanceOf[js.Any])
+    inline def set11521(value: DocsUrlLevelText): Self = StObject.set(x, "11521", value.asInstanceOf[js.Any])
     
-    inline def set11522(value: DocsUrlLevelText): Self = StObject.set(x, "11522", value.asInstanceOf[js.Any])
+    inline def set11522(value: DocsUrlString): Self = StObject.set(x, "11522", value.asInstanceOf[js.Any])
     
     inline def set11610(value: Category): Self = StObject.set(x, "11610", value.asInstanceOf[js.Any])
     
@@ -277,33 +373,59 @@ object _empty {
     
     inline def set11613(value: DocsUrl): Self = StObject.set(x, "11613", value.asInstanceOf[js.Any])
     
-    inline def set11614(value: DocsUrlString): Self = StObject.set(x, "11614", value.asInstanceOf[js.Any])
+    inline def set11614(value: Level): Self = StObject.set(x, "11614", value.asInstanceOf[js.Any])
     
-    inline def set11701(value: Level): Self = StObject.set(x, "11701", value.asInstanceOf[js.Any])
+    inline def set11615(value: Text): Self = StObject.set(x, "11615", value.asInstanceOf[js.Any])
     
-    inline def set85901(value: Text): Self = StObject.set(x, "85901", value.asInstanceOf[js.Any])
+    inline def set11616(value: Text): Self = StObject.set(x, "11616", value.asInstanceOf[js.Any])
     
-    inline def set85907(value: Text): Self = StObject.set(x, "85907", value.asInstanceOf[js.Any])
+    inline def set11701(value: DocsUrl): Self = StObject.set(x, "11701", value.asInstanceOf[js.Any])
+    
+    inline def set11801(value: CategoryLevelText): Self = StObject.set(x, "11801", value.asInstanceOf[js.Any])
+    
+    inline def set11802(value: CategoryErrorCategory): Self = StObject.set(x, "11802", value.asInstanceOf[js.Any])
+    
+    inline def set11803(value: CategoryErrorCategory): Self = StObject.set(x, "11803", value.asInstanceOf[js.Any])
+    
+    inline def set11804(value: CategoryErrorCategoryLevelLevel): Self = StObject.set(x, "11804", value.asInstanceOf[js.Any])
+    
+    inline def set11805(value: CategoryErrorCategory): Self = StObject.set(x, "11805", value.asInstanceOf[js.Any])
+    
+    inline def set11901(value: LevelTextType): Self = StObject.set(x, "11901", value.asInstanceOf[js.Any])
+    
+    inline def set11902(value: LevelTextType): Self = StObject.set(x, "11902", value.asInstanceOf[js.Any])
+    
+    inline def set11903(value: LevelTextType): Self = StObject.set(x, "11903", value.asInstanceOf[js.Any])
+    
+    inline def set11904(value: LevelTextType): Self = StObject.set(x, "11904", value.asInstanceOf[js.Any])
+    
+    inline def set12100(value: CategoryDocsUrlLevelText): Self = StObject.set(x, "12100", value.asInstanceOf[js.Any])
+    
+    inline def set80000(value: Category): Self = StObject.set(x, "80000", value.asInstanceOf[js.Any])
+    
+    inline def set85901(value: TextType): Self = StObject.set(x, "85901", value.asInstanceOf[js.Any])
+    
+    inline def set85907(value: TextType): Self = StObject.set(x, "85907", value.asInstanceOf[js.Any])
     
     inline def set85908(value: CategoryLevel): Self = StObject.set(x, "85908", value.asInstanceOf[js.Any])
     
-    inline def set85909(value: Text): Self = StObject.set(x, "85909", value.asInstanceOf[js.Any])
+    inline def set85909(value: TextType): Self = StObject.set(x, "85909", value.asInstanceOf[js.Any])
     
     inline def set85910(value: CategoryDocsUrl): Self = StObject.set(x, "85910", value.asInstanceOf[js.Any])
     
     inline def set85911(value: CategoryLevel): Self = StObject.set(x, "85911", value.asInstanceOf[js.Any])
     
-    inline def set85912(value: Text): Self = StObject.set(x, "85912", value.asInstanceOf[js.Any])
+    inline def set85912(value: TextType): Self = StObject.set(x, "85912", value.asInstanceOf[js.Any])
     
-    inline def set85913(value: Text): Self = StObject.set(x, "85913", value.asInstanceOf[js.Any])
+    inline def set85913(value: TextType): Self = StObject.set(x, "85913", value.asInstanceOf[js.Any])
     
-    inline def set85914(value: Text): Self = StObject.set(x, "85914", value.asInstanceOf[js.Any])
+    inline def set85914(value: TextType): Self = StObject.set(x, "85914", value.asInstanceOf[js.Any])
     
-    inline def set85915(value: Text): Self = StObject.set(x, "85915", value.asInstanceOf[js.Any])
+    inline def set85915(value: TextType): Self = StObject.set(x, "85915", value.asInstanceOf[js.Any])
     
     inline def set85916(value: CategoryLevel): Self = StObject.set(x, "85916", value.asInstanceOf[js.Any])
     
-    inline def set85917(value: Text): Self = StObject.set(x, "85917", value.asInstanceOf[js.Any])
+    inline def set85917(value: TextType): Self = StObject.set(x, "85917", value.asInstanceOf[js.Any])
     
     inline def set85918(value: CategoryLevel): Self = StObject.set(x, "85918", value.asInstanceOf[js.Any])
     
@@ -313,9 +435,9 @@ object _empty {
     
     inline def set85921(value: CategoryLevel): Self = StObject.set(x, "85921", value.asInstanceOf[js.Any])
     
-    inline def set85922(value: CategoryLevel): Self = StObject.set(x, "85922", value.asInstanceOf[js.Any])
+    inline def set85922(value: DocsUrlLevel): Self = StObject.set(x, "85922", value.asInstanceOf[js.Any])
     
-    inline def set85923(value: CategoryLevel): Self = StObject.set(x, "85923", value.asInstanceOf[js.Any])
+    inline def set85923(value: DocsUrlLevel): Self = StObject.set(x, "85923", value.asInstanceOf[js.Any])
     
     inline def set85924(value: CategoryLevel): Self = StObject.set(x, "85924", value.asInstanceOf[js.Any])
     
@@ -325,11 +447,23 @@ object _empty {
     
     inline def set85927(value: CategoryLevel): Self = StObject.set(x, "85927", value.asInstanceOf[js.Any])
     
+    inline def set85928(value: LevelLevel): Self = StObject.set(x, "85928", value.asInstanceOf[js.Any])
+    
+    inline def set85929(value: CategoryLevel): Self = StObject.set(x, "85929", value.asInstanceOf[js.Any])
+    
     inline def set95312(value: Category): Self = StObject.set(x, "95312", value.asInstanceOf[js.Any])
     
     inline def set95313(value: DocsUrl): Self = StObject.set(x, "95313", value.asInstanceOf[js.Any])
     
-    inline def set98123(value: Text): Self = StObject.set(x, "98123", value.asInstanceOf[js.Any])
+    inline def set95314(value: DocsUrl): Self = StObject.set(x, "95314", value.asInstanceOf[js.Any])
+    
+    inline def set95315(value: Text): Self = StObject.set(x, "95315", value.asInstanceOf[js.Any])
+    
+    inline def set98001(value: LevelText): Self = StObject.set(x, "98001", value.asInstanceOf[js.Any])
+    
+    inline def set98011(value: CategoryLevel): Self = StObject.set(x, "98011", value.asInstanceOf[js.Any])
+    
+    inline def set98123(value: TextType): Self = StObject.set(x, "98123", value.asInstanceOf[js.Any])
     
     inline def set98124(value: CategoryLevel): Self = StObject.set(x, "98124", value.asInstanceOf[js.Any])
     

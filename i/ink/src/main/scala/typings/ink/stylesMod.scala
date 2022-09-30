@@ -10,6 +10,7 @@ import typings.ink.inkStrings.`truncate-end`
 import typings.ink.inkStrings.`truncate-middle`
 import typings.ink.inkStrings.`truncate-start`
 import typings.ink.inkStrings.absolute
+import typings.ink.inkStrings.arrow
 import typings.ink.inkStrings.auto
 import typings.ink.inkStrings.bold
 import typings.ink.inkStrings.center
@@ -64,7 +65,7 @@ object stylesMod {
       */
     val borderColor: js.UndefOr[
         LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
           String
         ]
       ] = js.undefined
@@ -73,7 +74,7 @@ object stylesMod {
       * Add a border with a specified style.
       * If `borderStyle` is `undefined` (which it is by default), no border will be added.
       */
-    val borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic] = js.undefined
+    val borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic | arrow] = js.undefined
     
     /**
       * Set this property to `none` to hide the element.
@@ -197,14 +198,14 @@ object stylesMod {
       
       inline def setBorderColor(
         value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
+              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
               String
             ]
       ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setBorderStyle(value: single | double | round | bold | singleDouble | doubleSingle | classic): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: single | double | round | bold | singleDouble | doubleSingle | classic | arrow): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       

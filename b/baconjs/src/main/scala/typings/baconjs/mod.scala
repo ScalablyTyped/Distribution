@@ -507,7 +507,7 @@ object mod {
   inline def fromBinder[V](binder: Binder[V]): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinder")(binder.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   inline def fromBinder[V](binder: Binder[V], eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinder")(binder.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
-  inline def fromCallback[V](f: js.Function, args: Any*): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromCallback[V](f: js.Function, args: Any*): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(scala.List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
   inline def fromESObservable[V](_observable: Any): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(_observable.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
@@ -521,7 +521,7 @@ object mod {
   inline def fromEventTarget[V](target: Any, eventSource: EventSourceFn): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   inline def fromEventTarget[V](target: Any, eventSource: EventSourceFn, eventTransformer: EventTransformer[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEventTarget")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
-  inline def fromNodeCallback[V](f: js.Function, args: Any*): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
+  inline def fromNodeCallback[V](f: js.Function, args: Any*): typings.baconjs.observableMod.EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(scala.List(f.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
   inline def fromPoll[V](delay: Double, poll: PollFunction[V]): typings.baconjs.observableMod.EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoll")(delay.asInstanceOf[js.Any], poll.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.EventStream[V]]
   
@@ -597,7 +597,7 @@ object mod {
   
   inline def `try`[In, Out](f: js.Function1[/* value */ In, Out]): js.Function1[/* value */ In, typings.baconjs.observableMod.EventStream[Out]] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ In, typings.baconjs.observableMod.EventStream[Out]]]
   
-  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): typings.baconjs.observableMod.Property[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(List(initial.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.Property[Out]]
+  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): typings.baconjs.observableMod.Property[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(scala.List(initial.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.Property[Out]]
   
   @JSImport("baconjs", "version")
   @js.native
@@ -609,5 +609,5 @@ object mod {
     args: (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
   ): typings.baconjs.observableMod.default[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAsArray")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.baconjs.observableMod.default[js.Array[V]]]
   
-  inline def zipWith[Out](f: js.Function1[/* repeated */ Any, Out], streams: typings.baconjs.observableMod.default[Any]*): typings.baconjs.observableMod.EventStream[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(List(f.asInstanceOf[js.Any]).`++`(streams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[Out]]
+  inline def zipWith[Out](f: js.Function1[/* repeated */ Any, Out], streams: typings.baconjs.observableMod.default[Any]*): typings.baconjs.observableMod.EventStream[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(scala.List(f.asInstanceOf[js.Any]).`++`(streams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.baconjs.observableMod.EventStream[Out]]
 }

@@ -437,10 +437,6 @@ object ajvStrings {
   inline def setEvaluated: setEvaluated = "setEvaluated".asInstanceOf[setEvaluated]
   
   @js.native
-  sealed trait `strictNullChecks must be true in tsconfig to use $LeftcurlybracketNameRightcurlybracket` extends StObject
-  inline def `strictNullChecks must be true in tsconfig to use $LeftcurlybracketNameRightcurlybracket`: `strictNullChecks must be true in tsconfig to use $LeftcurlybracketNameRightcurlybracket` = ("strictNullChecks must be true in tsconfig to use ${Name}").asInstanceOf[`strictNullChecks must be true in tsconfig to use $LeftcurlybracketNameRightcurlybracket`]
-  
-  @js.native
   sealed trait string
     extends StObject
        with JSONType

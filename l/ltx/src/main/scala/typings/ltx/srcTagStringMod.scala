@@ -10,5 +10,5 @@ object srcTagStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(literals: js.Array[String], substitutions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(literals.asInstanceOf[js.Any]).`++`(substitutions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def default(literals: js.Array[String], substitutions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(literals.asInstanceOf[js.Any]).`++`(substitutions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

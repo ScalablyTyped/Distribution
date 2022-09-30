@@ -1,11 +1,10 @@
 package typings.devtools
 
-import typings.puppeteerCore.browserMod.Browser
+import typings.devtools.typesMod.ActiveListener
 import typings.puppeteerCore.dialogMod.Dialog
-import typings.puppeteerCore.pageMod.Page
 import typings.std.Map
 import typings.std.Record
-import typings.wdioProtocols.WDIOProtocols.CommandEndpoint
+import typings.wdioProtocols.typesMod.CommandEndpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +13,15 @@ object devtoolsdriverMod {
   
   @JSImport("devtools/build/devtoolsdriver", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with DevToolsDriver {
-    def this(browser: Browser, pages: js.Array[Page]) = this()
+    def this(
+      browser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Browser */ Any,
+      pages: js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Page */ Any
+          ]
+    ) = this()
   }
   /* static members */
   object default {
@@ -26,22 +30,39 @@ object devtoolsdriverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def requireCommand(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireCommand")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    /**
+      * moved into an extra method for testing purposes
+      */
+    inline def requireCommand(filePath: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireCommand")(filePath.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   @js.native
   trait DevToolsDriver extends StObject {
     
+    /* private */ var _createWindowHandle: Any = js.native
+    
+    /* private */ var _targetCreatedHandler: Any = js.native
+    
+    /* private */ var _targetDestroyedHandler: Any = js.native
+    
     var activeDialog: js.UndefOr[Dialog] = js.native
     
-    var browser: Browser = js.native
+    var activeListeners: js.Array[ActiveListener] = js.native
+    
+    /* private */ var addListener: Any = js.native
+    
+    var browser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Browser */ Any = js.native
     
     def checkPendingNavigations(): js.Promise[Unit] = js.native
     def checkPendingNavigations(pendingNavigationStart: Double): js.Promise[Unit] = js.native
     
+    /* private */ var cleanupListeners: Any = js.native
+    
     var commands: Record[String, js.Function] = js.native
     
-    var currentFrame: js.UndefOr[Page] = js.native
+    var currentFrame: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Page */ Any
+      ] = js.native
     
     var currentFrameUrl: js.UndefOr[String] = js.native
     
@@ -51,15 +72,30 @@ object devtoolsdriverMod {
     
     var elementStore: typings.devtools.elementstoreMod.default = js.native
     
-    def framenavigatedHandler(frame: Page): Unit = js.native
+    def framenavigatedHandler(
+      frame: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Frame */ Any
+    ): Unit = js.native
     
-    def getPageHandle(): Page = js.native
-    def getPageHandle(isInFrame: Boolean): Page = js.native
+    def getPageHandle(): Any = js.native
+    def getPageHandle(isInFrame: Boolean): Any = js.native
+    
+    /**
+      * Inits browser listeners and sets initial handlers for given pages.
+      * Function is also intended to be used while reloading DevTools session.
+      * @param browser Puppeteer Browser
+      * @param pages Puppeteer page array
+      */
+    def initBrowser(
+      browser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Browser */ Any,
+      pages: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Page */ Any
+        ]
+    ): Unit = js.native
     
     def register(commandInfo: CommandEndpoint): js.ThisFunction1[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.BrowserObject */ /* this */ js.Any, 
-        /* repeated */ js.Any, 
-        js.Promise[js.Any]
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Browser */ /* this */ Any, 
+        /* repeated */ Any, 
+        js.Promise[Any]
       ] = js.native
     
     def setTimeouts(): Unit = js.native
@@ -73,6 +109,9 @@ object devtoolsdriverMod {
     
     var timeouts: Map[String, Double] = js.native
     
-    var windows: Map[String, Page] = js.native
+    var windows: Map[
+        String, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Page */ Any
+      ] = js.native
   }
 }

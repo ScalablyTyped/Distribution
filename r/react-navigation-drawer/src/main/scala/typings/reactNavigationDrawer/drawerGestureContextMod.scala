@@ -11,10 +11,10 @@ object drawerGestureContextMod extends Shortcut {
   
   @JSImport("react-navigation-drawer/lib/typescript/src/utils/DrawerGestureContext", JSImport.Default)
   @js.native
-  val default: Context[RefObject[js.Any] | Null] = js.native
+  val default: Context[RefObject[Any] | Null] = js.native
   
-  type _To = Context[RefObject[js.Any] | Null]
+  type _To = Context[RefObject[Any] | Null]
   
   /* This means you don't have to write `default`, but can instead just say `drawerGestureContextMod.foo` */
-  override def _to: Context[RefObject[js.Any] | Null] = default
+  override def _to: Context[RefObject[Any] | Null] = default
 }

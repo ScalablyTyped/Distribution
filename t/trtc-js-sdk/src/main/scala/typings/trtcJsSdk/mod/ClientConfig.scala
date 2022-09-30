@@ -1,7 +1,7 @@
 package typings.trtcJsSdk.mod
 
-import typings.trtcJsSdk.trtcJsSdkNumbers.`1`
-import typings.trtcJsSdk.trtcJsSdkNumbers.`2`
+import typings.trtcJsSdk.trtcJsSdkInts.`1`
+import typings.trtcJsSdk.trtcJsSdkInts.`2`
 import typings.trtcJsSdk.trtcJsSdkStrings.live
 import typings.trtcJsSdk.trtcJsSdkStrings.rtc
 import org.scalablytyped.runtime.StObject

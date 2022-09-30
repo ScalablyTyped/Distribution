@@ -14,12 +14,12 @@ trait CostCategory extends StObject {
   var DefaultValue: js.UndefOr[CostCategoryValue] = js.undefined
   
   /**
-    * The effective end data of your Cost Category.
+    * The effective end date of your Cost Category.
     */
   var EffectiveEnd: js.UndefOr[ZonedDateTime] = js.undefined
   
   /**
-    * The effective state data of your Cost Category.
+    * The effective start date of your Cost Category.
     */
   var EffectiveStart: ZonedDateTime
   

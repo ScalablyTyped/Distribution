@@ -16,7 +16,7 @@ object cryptoConfigMod {
   
   @JSImport("xmldsigjs/build/types/crypto_config", "CryptoConfig")
   @js.native
-  class CryptoConfig () extends StObject
+  open class CryptoConfig () extends StObject
   /* static members */
   object CryptoConfig {
     

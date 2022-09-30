@@ -112,6 +112,10 @@ object SceneComponentConstants {
   @js.native
   val STEP_AFTERCAMERADRAW_PREPASS: /* 0 */ Double = js.native
   
+  @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERCAMERAPOSTPROCESS_LAYER")
+  @js.native
+  val STEP_AFTERCAMERAPOSTPROCESS_LAYER: /* 0 */ Double = js.native
+  
   @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERRENDERINGGROUPDRAW_BOUNDINGBOXRENDERER")
   @js.native
   val STEP_AFTERRENDERINGGROUPDRAW_BOUNDINGBOXRENDERER: /* 1 */ Double = js.native
@@ -135,6 +139,10 @@ object SceneComponentConstants {
   @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERRENDERTARGETDRAW_PREPASS")
   @js.native
   val STEP_AFTERRENDERTARGETDRAW_PREPASS: /* 0 */ Double = js.native
+  
+  @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERRENDERTARGETPOSTPROCESS_LAYER")
+  @js.native
+  val STEP_AFTERRENDERTARGETPOSTPROCESS_LAYER: /* 0 */ Double = js.native
   
   @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERRENDER_AUDIO")
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__edit-post
 
-Typings are for version 3.5
+Typings are for version 4.0
 
 ## Library description:
 Edit Post module for WordPress.
@@ -10,10 +10,10 @@ Edit Post module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/edit-post |
 | Keywords           | wordpress, gutenberg, editor, post |
-| # releases         | 82 |
-| # dependents       | 4 |
-| # downloads        | 300394 |
-| # stars            | 0 |
+| # releases         | 156 |
+| # dependents       | 0.0 |
+| # downloads        | 42123.333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/edit-post/README.md)

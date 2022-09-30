@@ -1,12 +1,12 @@
 package typings.nivoCalendar
 
 import typings.nivoCalendar.nivoCalendarBooleans.`true`
-import typings.nivoCalendar.nivoCalendarNumbers.`0`
-import typings.nivoCalendar.nivoCalendarNumbers.`10`
-import typings.nivoCalendar.nivoCalendarNumbers.`1`
-import typings.nivoCalendar.nivoCalendarNumbers.`2`
-import typings.nivoCalendar.nivoCalendarNumbers.`30`
-import typings.nivoCalendar.nivoCalendarNumbers.`75`
+import typings.nivoCalendar.nivoCalendarInts.`0`
+import typings.nivoCalendar.nivoCalendarInts.`10`
+import typings.nivoCalendar.nivoCalendarInts.`1`
+import typings.nivoCalendar.nivoCalendarInts.`2`
+import typings.nivoCalendar.nivoCalendarInts.`30`
+import typings.nivoCalendar.nivoCalendarInts.`75`
 import typings.nivoCalendar.nivoCalendarStrings.Numbersign000
 import typings.nivoCalendar.nivoCalendarStrings.Numbersignfff
 import typings.nivoCalendar.nivoCalendarStrings.auto

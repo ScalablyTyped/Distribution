@@ -3,14 +3,14 @@ package typings.tslint
 import typings.tslint.mod.Rules.TypedRule
 import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
-import typings.tslint.tslintNumbers.`0`
-import typings.tslint.tslintNumbers.`1`
-import typings.tslint.tslintNumbers.`2`
-import typings.tslint.tslintNumbers.`3`
-import typings.tslint.tslintNumbers.`4`
-import typings.tslint.tslintNumbers.`5`
-import typings.tslint.tslintNumbers.`6`
-import typings.tslint.tslintNumbers.`7`
+import typings.tslint.tslintInts.`0`
+import typings.tslint.tslintInts.`1`
+import typings.tslint.tslintInts.`2`
+import typings.tslint.tslintInts.`3`
+import typings.tslint.tslintInts.`4`
+import typings.tslint.tslintInts.`5`
+import typings.tslint.tslintInts.`6`
+import typings.tslint.tslintInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,14 +42,14 @@ object strictComparisonsRuleMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.tslint.tslintNumbers.`0`
-    - typings.tslint.tslintNumbers.`1`
-    - typings.tslint.tslintNumbers.`2`
-    - typings.tslint.tslintNumbers.`3`
-    - typings.tslint.tslintNumbers.`4`
-    - typings.tslint.tslintNumbers.`5`
-    - typings.tslint.tslintNumbers.`6`
-    - typings.tslint.tslintNumbers.`7`
+    - typings.tslint.tslintInts.`0`
+    - typings.tslint.tslintInts.`1`
+    - typings.tslint.tslintInts.`2`
+    - typings.tslint.tslintInts.`3`
+    - typings.tslint.tslintInts.`4`
+    - typings.tslint.tslintInts.`5`
+    - typings.tslint.tslintInts.`6`
+    - typings.tslint.tslintInts.`7`
   */
   trait TypeKind extends StObject
   object TypeKind {

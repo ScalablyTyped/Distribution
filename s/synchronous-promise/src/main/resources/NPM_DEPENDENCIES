@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "synchronous-promise" : "2.0.16"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "synchronous-promise" : "2.0.16"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

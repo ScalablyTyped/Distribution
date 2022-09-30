@@ -1,7 +1,7 @@
 
 # Scala.js typings for rate-limiter-flexible
 
-Typings are for version 2.3.10
+Typings are for version 2.3.11
 
 ## Library description:
 Node.js rate limiter by key and protection from DDoS and Brute-Force attacks in process Memory, Redis, MongoDb, Memcached, MySQL, PostgreSQL, Cluster or PM

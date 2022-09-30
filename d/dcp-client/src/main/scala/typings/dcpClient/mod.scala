@@ -1,7 +1,7 @@
 package typings.dcpClient
 
 import typings.dcpClient.computeMod.Compute
-import typings.dcpClient.dcpClientNumbers.`1`
+import typings.dcpClient.dcpClientInts.`1`
 import typings.dcpClient.dcpClientStrings.default
 import typings.dcpClient.dcpClientStrings.sliceEnd
 import typings.dcpClient.dcpClientStrings.sliceError

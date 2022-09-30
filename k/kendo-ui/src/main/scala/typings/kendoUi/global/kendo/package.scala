@@ -47,7 +47,7 @@ inline def destroy(element: String): Unit = ^.asInstanceOf[js.Dynamic].applyDyna
 inline def destroy(element: JQuery): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def destroy(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def format(format: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(format.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+inline def format(format: String, values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(format.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
 inline def fx(element: JQuery): typings.kendoUi.kendo.effects.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fx")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.effects.Element]
 inline def fx(element: Element): typings.kendoUi.kendo.effects.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fx")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.effects.Element]
@@ -60,9 +60,9 @@ inline def history_=(x: History): Unit = ^.asInstanceOf[js.Dynamic].updateDynami
 
 inline def htmlEncode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEncode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def init(element: JQuery, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(List(element.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-inline def init(element: Element, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(List(element.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-inline def init(selector: String, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(List(selector.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def init(element: JQuery, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(scala.List(element.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def init(element: Element, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(scala.List(element.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def init(selector: String, namespaces: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(scala.List(selector.asInstanceOf[js.Any]).`++`(namespaces.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
 inline def notify_(
   widget: TypeofWidget & (Instantiable2[/* element */ Element, /* options */ js.UndefOr[js.Object], Widget])

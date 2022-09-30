@@ -16,7 +16,7 @@ object pageDescriptorMod {
   
   @JSImport("google-gax/build/src/paginationCalls/pageDescriptor", "PageDescriptor")
   @js.native
-  class PageDescriptor protected ()
+  open class PageDescriptor protected ()
     extends StObject
        with Descriptor {
     def this(requestPageTokenField: String, responsePageTokenField: String, resourceField: String) = this()

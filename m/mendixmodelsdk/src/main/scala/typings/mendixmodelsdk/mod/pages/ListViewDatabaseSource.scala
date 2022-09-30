@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ListViewDatabaseSource")
 @js.native
-class ListViewDatabaseSource protected ()
+open class ListViewDatabaseSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ListViewDatabaseSource {
   def this(
     model: AbstractModel,

@@ -15,17 +15,17 @@ import typings.reactNativeGestureHandler.longPressGestureHandlerMod.LongPressGes
 import typings.reactNativeGestureHandler.nativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
 import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandlerEventPayload
 import typings.reactNativeGestureHandler.pinchGestureHandlerMod.PinchGestureHandlerEventPayload
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`10`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`3`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`5`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`6`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`7`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`8`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`9`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`10`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`6`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`7`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`9`
 import typings.reactNativeGestureHandler.rotationGestureHandlerMod.RotationGestureHandlerEventPayload
 import typings.reactNativeGestureHandler.tapGestureHandlerMod.TapGestureHandlerEventPayload
 import typings.std.Exclude
@@ -97,17 +97,17 @@ object gestureMod {
   
   /* Inlined { readonly UNDEFINED :0,  readonly BEGAN :1,  readonly START :2,  readonly UPDATE :3,  readonly CHANGE :4,  readonly END :5,  readonly FINALIZE :6,  readonly TOUCHES_DOWN :7,  readonly TOUCHES_MOVE :8,  readonly TOUCHES_UP :9,  readonly TOUCHES_CANCELLED :10}[keyof { readonly UNDEFINED :0,  readonly BEGAN :1,  readonly START :2,  readonly UPDATE :3,  readonly CHANGE :4,  readonly END :5,  readonly FINALIZE :6,  readonly TOUCHES_DOWN :7,  readonly TOUCHES_MOVE :8,  readonly TOUCHES_UP :9,  readonly TOUCHES_CANCELLED :10}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`3`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`7`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`5`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`6`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`10`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`9`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`8`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`3`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`7`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`5`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`6`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`10`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`9`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
   */
   trait CALLBACK_TYPE extends StObject
   object CALLBACK_TYPE {

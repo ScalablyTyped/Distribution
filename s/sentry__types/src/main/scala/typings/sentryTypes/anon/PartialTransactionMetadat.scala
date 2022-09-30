@@ -1,6 +1,7 @@
 package typings.sentryTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryTypes.polymorphicsMod.PolymorphicRequest
 import typings.sentryTypes.transactionMod.TransactionNameChange
 import typings.sentryTypes.transactionMod.TransactionSource
 import org.scalablytyped.runtime.StObject
@@ -16,13 +17,15 @@ trait PartialTransactionMetadat extends StObject {
   
   var propagations: js.UndefOr[Double] = js.undefined
   
+  var request: js.UndefOr[PolymorphicRequest] = js.undefined
+  
   var requestPath: js.UndefOr[String] = js.undefined
+  
+  var sampleRate: js.UndefOr[Double] = js.undefined
   
   var source: js.UndefOr[TransactionSource] = js.undefined
   
   var spanMetadata: js.UndefOr[StringDictionary[StringDictionary[Any]]] = js.undefined
-  
-  var transactionSampling: js.UndefOr[Method] = js.undefined
 }
 object PartialTransactionMetadat {
   
@@ -47,9 +50,17 @@ object PartialTransactionMetadat {
     
     inline def setPropagationsUndefined: Self = StObject.set(x, "propagations", js.undefined)
     
+    inline def setRequest(value: PolymorphicRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
     inline def setRequestPath(value: String): Self = StObject.set(x, "requestPath", value.asInstanceOf[js.Any])
     
     inline def setRequestPathUndefined: Self = StObject.set(x, "requestPath", js.undefined)
+    
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     
     inline def setSource(value: TransactionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
@@ -58,9 +69,5 @@ object PartialTransactionMetadat {
     inline def setSpanMetadata(value: StringDictionary[StringDictionary[Any]]): Self = StObject.set(x, "spanMetadata", value.asInstanceOf[js.Any])
     
     inline def setSpanMetadataUndefined: Self = StObject.set(x, "spanMetadata", js.undefined)
-    
-    inline def setTransactionSampling(value: Method): Self = StObject.set(x, "transactionSampling", value.asInstanceOf[js.Any])
-    
-    inline def setTransactionSamplingUndefined: Self = StObject.set(x, "transactionSampling", js.undefined)
   }
 }

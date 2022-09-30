@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EngineFeatures extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _collectUbosUpdatedInFrame: Boolean
   
   /** Indicates that prefiltered mipmaps can be generated in some processes (for eg when loading an HDR cube texture) */

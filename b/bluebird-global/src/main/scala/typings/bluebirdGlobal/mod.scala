@@ -49,6 +49,7 @@ import typings.bluebirdGlobal.anon.FnCallValuesMapperOptions
 import typings.bluebirdGlobal.anon.FnCallValuesReducerInitialValue
 import typings.std.IterableIterator
 import typings.std.Map
+import typings.std.PromiseLike
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -108,15 +109,15 @@ object mod {
         */
       def `catch`(
         predicate: js.Function1[/* error */ Any, Boolean],
-        onReject: js.Function1[/* error */ Any, T | (js.Thenable[T | Unit]) | Unit]
+        onReject: js.Function1[/* error */ Any, T | (PromiseLike[T | Unit]) | Unit]
       ): ^[T] = js.native
-      def `catch`(predicate: js.Object, onReject: js.Function1[/* error */ Any, T | (js.Thenable[T | Unit]) | Unit]): ^[T] = js.native
+      def `catch`(predicate: js.Object, onReject: js.Function1[/* error */ Any, T | (PromiseLike[T | Unit]) | Unit]): ^[T] = js.native
       def `catch`[TResult](): Promise[T | TResult] = js.native
       def `catch`[E /* <: js.Error */](
         ErrorClass: Instantiable1[/* args (repeated) */ Any, E],
-        onReject: js.Function1[/* error */ E, T | (js.Thenable[T | Unit]) | Unit]
+        onReject: js.Function1[/* error */ E, T | (PromiseLike[T | Unit]) | Unit]
       ): ^[T] = js.native
-      def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
+      def `catch`[TResult](onrejected: js.Function1[/* reason */ Any, TResult | PromiseLike[TResult]]): Promise[T | TResult] = js.native
       
       def catchReturn[U](
         filter1: CatchFilter[js.Error],
@@ -973,17 +974,17 @@ object mod {
       var catchThrow_Original: FnCallFilter1Filter2Filter3Filter4Filter5Reason[T] = js.native
       
       @JSName("catch")
-      def catch_E_ErrorU[E /* <: js.Error */, U](
+      def catch_EU[E /* <: js.Error */, U](
         ErrorClass: Instantiable1[/* args (repeated) */ Any, E],
-        onReject: js.Function1[/* error */ E, U | js.Thenable[U]]
+        onReject: js.Function1[/* error */ E, U | PromiseLike[U]]
       ): ^[U | T] = js.native
       @JSName("catch")
       def catch_U[U](
         predicate: js.Function1[/* error */ Any, Boolean],
-        onReject: js.Function1[/* error */ Any, U | js.Thenable[U]]
+        onReject: js.Function1[/* error */ Any, U | PromiseLike[U]]
       ): ^[U | T] = js.native
       @JSName("catch")
-      def catch_U[U](predicate: js.Object, onReject: js.Function1[/* error */ Any, U | js.Thenable[U]]): ^[U | T] = js.native
+      def catch_U[U](predicate: js.Object, onReject: js.Function1[/* error */ Any, U | PromiseLike[U]]): ^[U | T] = js.native
       
       // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
       def caught[U](): Bluebird[U | T] = js.native
@@ -1605,7 +1606,7 @@ object mod {
               /* item */ Q, 
               /* index */ Double, 
               /* arrayLength */ Double, 
-              U | js.Thenable[U]
+              U | PromiseLike[U]
             ]
       ): ^[U] = js.native
       def reduce[U, Q](
@@ -1614,7 +1615,7 @@ object mod {
               /* item */ Q, 
               /* index */ Double, 
               /* arrayLength */ Double, 
-              U | js.Thenable[U]
+              U | PromiseLike[U]
             ],
         initialValue: U
       ): ^[U] = js.native
@@ -1630,7 +1631,7 @@ object mod {
       
       def some(count: Double): ^[T] = js.native
       
-      def spread[U, Q](fulfilledHandler: js.Function1[/* repeated */ Q, U | js.Thenable[U]]): ^[U] = js.native
+      def spread[U, Q](fulfilledHandler: js.Function1[/* repeated */ Q, U | PromiseLike[U]]): ^[U] = js.native
       
       def suppressUnhandledRejections(): Unit = js.native
       @JSName("suppressUnhandledRejections")
@@ -2096,13 +2097,13 @@ object mod {
         * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
         */
       def `then`[TResult1, TResult2](): Promise[TResult1 | TResult2] = js.native
-      def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): Promise[TResult1 | TResult2] = js.native
+      def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]]): Promise[TResult1 | TResult2] = js.native
       def `then`[TResult1, TResult2](
-        onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-        onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+        onfulfilled: js.Function1[/* value */ T, TResult1 | PromiseLike[TResult1]],
+        onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
       ): Promise[TResult1 | TResult2] = js.native
-      def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
-      def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
+      def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): Promise[TResult1 | TResult2] = js.native
+      def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): Promise[TResult1 | TResult2] = js.native
       
       // then: Bluebird<T>["then"]; // Provided by lib.es5.d.ts
       def thenReturn(): Bluebird[Unit] = js.native
@@ -2155,7 +2156,7 @@ object mod {
       extends StObject
          with Promise[T] {
       def this(callback: js.Function3[
-                /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[T | js.Thenable[T]], Unit], 
+                /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[T | PromiseLike[T]], Unit], 
                 /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
                 /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
                 Unit
@@ -2164,7 +2165,7 @@ object mod {
     
     inline def Promise_=(x: PromiseConstructor): Unit = js.Dynamic.global.updateDynamic("Promise")(x.asInstanceOf[js.Any])
     
-    type IterateFunction[T, R] = js.Function3[/* item */ T, /* index */ Double, /* arrayLength */ Double, R | js.Thenable[R]]
+    type IterateFunction[T, R] = js.Function3[/* item */ T, /* index */ Double, /* arrayLength */ Double, R | PromiseLike[R]]
     
     /*
       * Patch all static methods and the constructor
@@ -2174,7 +2175,7 @@ object mod {
       extends StObject
          with Instantiable1[
               /* callback */ js.Function3[
-                /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[js.Object | js.Thenable[js.Object]], Unit], 
+                /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[js.Object | PromiseLike[js.Object]], Unit], 
                 /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
                 /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
                 Unit
@@ -2182,65 +2183,65 @@ object mod {
               Promise[js.Object]
             ] {
       
-      def all[T](values: js.Array[T | js.Thenable[T]]): Promise[js.Array[T]] = js.native
-      def all[T1, T2](values: js.Tuple2[T1 | js.Thenable[T1], T2 | js.Thenable[T2]]): Promise[js.Tuple2[T1, T2]] = js.native
-      def all[T1, T2, T3](values: js.Tuple3[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3]]): Promise[js.Tuple3[T1, T2, T3]] = js.native
+      def all[T](values: js.Array[T | PromiseLike[T]]): Promise[js.Array[T]] = js.native
+      def all[T1, T2](values: js.Tuple2[T1 | PromiseLike[T1], T2 | PromiseLike[T2]]): Promise[js.Tuple2[T1, T2]] = js.native
+      def all[T1, T2, T3](values: js.Tuple3[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3]]): Promise[js.Tuple3[T1, T2, T3]] = js.native
       def all[T1, T2, T3, T4](
-        values: js.Tuple4[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3], T4 | js.Thenable[T4]]
+        values: js.Tuple4[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3], T4 | PromiseLike[T4]]
       ): Promise[js.Tuple4[T1, T2, T3, T4]] = js.native
       def all[T1, T2, T3, T4, T5](
         values: js.Tuple5[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5]
             ]
       ): Promise[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
       def all[T1, T2, T3, T4, T5, T6](
         values: js.Tuple6[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6]
             ]
       ): Promise[js.Tuple6[T1, T2, T3, T4, T5, T6]] = js.native
       def all[T1, T2, T3, T4, T5, T6, T7](
         values: js.Tuple7[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7]
             ]
       ): Promise[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]] = js.native
       def all[T1, T2, T3, T4, T5, T6, T7, T8](
         values: js.Tuple8[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7], 
-              T8 | js.Thenable[T8]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7], 
+              T8 | PromiseLike[T8]
             ]
       ): Promise[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]] = js.native
       def all[T1, T2, T3, T4, T5, T6, T7, T8, T9](
         values: js.Tuple9[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7], 
-              T8 | js.Thenable[T8], 
-              T9 | js.Thenable[T9]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7], 
+              T8 | PromiseLike[T8], 
+              T9 | PromiseLike[T9]
             ]
       ): Promise[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]] = js.native
       /*
@@ -2252,16 +2253,16 @@ object mod {
         */
       def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
         values: js.Tuple10[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7], 
-              T8 | js.Thenable[T8], 
-              T9 | js.Thenable[T9], 
-              T10 | js.Thenable[T10]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7], 
+              T8 | PromiseLike[T8], 
+              T9 | PromiseLike[T9], 
+              T10 | PromiseLike[T10]
             ]
       ): Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
       
@@ -2669,86 +2670,85 @@ object mod {
         options: PromisifyOptions
       ): js.Function0[Bluebird[T]] = js.native
       
-      def props[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = js.native
       def props[T](`object`: ResolvableProps[T]): Bluebird[T] = js.native
-      @JSName("props")
-      def props_KV[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
+      def props[T](`object`: PromiseLike[ResolvableProps[T]]): Bluebird[T] = js.native
+      def props[K, V](map: Resolvable[Map[K, Resolvable[V]]]): Bluebird[Map[K, V]] = js.native
       @JSName("props")
       var props_Original: FnCallObject = js.native
       
-      def race[T](values: js.Array[T | js.Thenable[T]]): Promise[T] = js.native
-      def race[T1, T2](values: js.Tuple2[T1 | js.Thenable[T1], T2 | js.Thenable[T2]]): Promise[T1 | T2] = js.native
-      def race[T1, T2, T3](values: js.Tuple3[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3]]): Promise[T1 | T2 | T3] = js.native
+      def race[T](values: js.Array[T | PromiseLike[T]]): Promise[T] = js.native
+      def race[T1, T2](values: js.Tuple2[T1 | PromiseLike[T1], T2 | PromiseLike[T2]]): Promise[T1 | T2] = js.native
+      def race[T1, T2, T3](values: js.Tuple3[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3]]): Promise[T1 | T2 | T3] = js.native
       def race[T1, T2, T3, T4](
-        values: js.Tuple4[T1 | js.Thenable[T1], T2 | js.Thenable[T2], T3 | js.Thenable[T3], T4 | js.Thenable[T4]]
+        values: js.Tuple4[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3], T4 | PromiseLike[T4]]
       ): Promise[T1 | T2 | T3 | T4] = js.native
       def race[T1, T2, T3, T4, T5](
         values: js.Tuple5[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5]
             ]
       ): Promise[T1 | T2 | T3 | T4 | T5] = js.native
       def race[T1, T2, T3, T4, T5, T6](
         values: js.Tuple6[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6]
             ]
       ): Promise[T1 | T2 | T3 | T4 | T5 | T6] = js.native
       def race[T1, T2, T3, T4, T5, T6, T7](
         values: js.Tuple7[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7]
             ]
       ): Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7] = js.native
       def race[T1, T2, T3, T4, T5, T6, T7, T8](
         values: js.Tuple8[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7], 
-              T8 | js.Thenable[T8]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7], 
+              T8 | PromiseLike[T8]
             ]
       ): Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8] = js.native
       def race[T1, T2, T3, T4, T5, T6, T7, T8, T9](
         values: js.Tuple9[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7], 
-              T8 | js.Thenable[T8], 
-              T9 | js.Thenable[T9]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7], 
+              T8 | PromiseLike[T8], 
+              T9 | PromiseLike[T9]
             ]
       ): Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = js.native
       def race[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
         values: js.Tuple10[
-              T1 | js.Thenable[T1], 
-              T2 | js.Thenable[T2], 
-              T3 | js.Thenable[T3], 
-              T4 | js.Thenable[T4], 
-              T5 | js.Thenable[T5], 
-              T6 | js.Thenable[T6], 
-              T7 | js.Thenable[T7], 
-              T8 | js.Thenable[T8], 
-              T9 | js.Thenable[T9], 
-              T10 | js.Thenable[T10]
+              T1 | PromiseLike[T1], 
+              T2 | PromiseLike[T2], 
+              T3 | PromiseLike[T3], 
+              T4 | PromiseLike[T4], 
+              T5 | PromiseLike[T5], 
+              T6 | PromiseLike[T6], 
+              T7 | PromiseLike[T7], 
+              T8 | PromiseLike[T8], 
+              T9 | PromiseLike[T9], 
+              T10 | PromiseLike[T10]
             ]
       ): Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
       
@@ -2785,7 +2785,7 @@ object mod {
       
       def resolve(): Promise[Unit] = js.native
       def resolve[T](value: T): Promise[T] = js.native
-      def resolve[T](value: js.Thenable[T]): Promise[T] = js.native
+      def resolve[T](value: PromiseLike[T]): Promise[T] = js.native
       
       // reject: typeof Bluebird.reject; // Provided by lib.es2015.d.ts
       // resolve: typeof Bluebird.resolve; // Provided by lib.es2015.d.ts
@@ -2799,17 +2799,17 @@ object mod {
       @JSName("try")
       var try_Original: FnCallFn = js.native
       
-      def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = js.native
+      def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, PromiseLike[T]]): Bluebird[T] = js.native
       def `using`[R1, R2, T](
         disposer: Disposer[R1],
         disposer2: Disposer[R2],
-        executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
+        executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, PromiseLike[T]]
       ): Bluebird[T] = js.native
       def `using`[R1, R2, R3, T](
         disposer: Disposer[R1],
         disposer2: Disposer[R2],
         disposer3: Disposer[R3],
-        executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
+        executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, PromiseLike[T]]
       ): Bluebird[T] = js.native
       @JSName("using")
       var using_Original: FnCallDisposerDisposer2Disposer3Executor = js.native

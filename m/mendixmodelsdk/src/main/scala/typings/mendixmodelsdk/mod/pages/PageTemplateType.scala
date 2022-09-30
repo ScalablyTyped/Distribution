@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.PageTemplateType")
 @js.native
-class PageTemplateType protected ()
+open class PageTemplateType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.PageTemplateType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

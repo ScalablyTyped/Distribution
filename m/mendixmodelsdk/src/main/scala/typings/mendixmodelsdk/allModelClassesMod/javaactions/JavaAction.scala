@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/java-actions relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaAction")
 @js.native
-class JavaAction protected ()
+open class JavaAction protected ()
   extends typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction {
   def this(
     model: AbstractModel,
@@ -24,7 +24,7 @@ class JavaAction protected ()
 }
 object JavaAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -36,13 +36,13 @@ object JavaAction {
   inline def createIn(container: IFolderBase): typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.JavaAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.JavaAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

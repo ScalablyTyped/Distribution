@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberAccess")
+@JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MemberAccess")
 @js.native
-class MemberAccess protected () extends Element[IModel] {
+open class MemberAccess protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +43,7 @@ class MemberAccess protected () extends Element[IModel] {
 }
 object MemberAccess {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberAccess")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MemberAccess")
   @js.native
   val ^ : js.Any = js.native
   
@@ -64,13 +64,13 @@ object MemberAccess {
   inline def createIn(container: AccessRule): MemberAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MemberAccess]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberAccess.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MemberAccess.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.MemberAccess.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.MemberAccess.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

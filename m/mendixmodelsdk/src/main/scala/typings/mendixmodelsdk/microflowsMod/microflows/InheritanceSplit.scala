@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/object-type-decision relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceSplit")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.InheritanceSplit")
 @js.native
-class InheritanceSplit protected () extends MicroflowObject {
+open class InheritanceSplit protected () extends MicroflowObject {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,7 +37,7 @@ class InheritanceSplit protected () extends MicroflowObject {
 }
 object InheritanceSplit {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceSplit")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.InheritanceSplit")
   @js.native
   val ^ : js.Any = js.native
   
@@ -58,13 +58,13 @@ object InheritanceSplit {
   inline def createIn(container: MicroflowObjectCollection): InheritanceSplit = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[InheritanceSplit]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceSplit.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.InheritanceSplit.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceSplit.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.InheritanceSplit.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

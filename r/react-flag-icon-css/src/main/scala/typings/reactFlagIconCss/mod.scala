@@ -7,7 +7,7 @@ import typings.csstype.mod.PropertiesHyphen
 import typings.react.mod.PureComponent
 import typings.react.mod.ReactNode
 import typings.reactFlagIconCss.anon.ReadonlyFlagIconOptions
-import typings.reactFlagIconCss.reactFlagIconCssNumbers.`0`
+import typings.reactFlagIconCss.reactFlagIconCssInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -171,24 +171,24 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactFlagIconCss.reactFlagIconCssNumbers.`30`
-    - typings.reactFlagIconCss.reactFlagIconCssNumbers.`60`
-    - typings.reactFlagIconCss.reactFlagIconCssNumbers.`90`
-    - typings.reactFlagIconCss.reactFlagIconCssNumbers.`180`
-    - typings.reactFlagIconCss.reactFlagIconCssNumbers.`270`
+    - typings.reactFlagIconCss.reactFlagIconCssInts.`30`
+    - typings.reactFlagIconCss.reactFlagIconCssInts.`60`
+    - typings.reactFlagIconCss.reactFlagIconCssInts.`90`
+    - typings.reactFlagIconCss.reactFlagIconCssInts.`180`
+    - typings.reactFlagIconCss.reactFlagIconCssInts.`270`
   */
   trait FlagIconRotate extends StObject
   object FlagIconRotate {
     
-    inline def `180`: typings.reactFlagIconCss.reactFlagIconCssNumbers.`180` = 180.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssNumbers.`180`]
+    inline def `180`: typings.reactFlagIconCss.reactFlagIconCssInts.`180` = 180.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssInts.`180`]
     
-    inline def `270`: typings.reactFlagIconCss.reactFlagIconCssNumbers.`270` = 270.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssNumbers.`270`]
+    inline def `270`: typings.reactFlagIconCss.reactFlagIconCssInts.`270` = 270.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssInts.`270`]
     
-    inline def `30`: typings.reactFlagIconCss.reactFlagIconCssNumbers.`30` = 30.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssNumbers.`30`]
+    inline def `30`: typings.reactFlagIconCss.reactFlagIconCssInts.`30` = 30.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssInts.`30`]
     
-    inline def `60`: typings.reactFlagIconCss.reactFlagIconCssNumbers.`60` = 60.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssNumbers.`60`]
+    inline def `60`: typings.reactFlagIconCss.reactFlagIconCssInts.`60` = 60.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssInts.`60`]
     
-    inline def `90`: typings.reactFlagIconCss.reactFlagIconCssNumbers.`90` = 90.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssNumbers.`90`]
+    inline def `90`: typings.reactFlagIconCss.reactFlagIconCssInts.`90` = 90.asInstanceOf[typings.reactFlagIconCss.reactFlagIconCssInts.`90`]
   }
   
   /* Rewritten from type alias, can be one of: 

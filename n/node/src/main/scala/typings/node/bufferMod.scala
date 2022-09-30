@@ -13,9 +13,9 @@ import typings.node.cryptoMod._KeyLike
 import typings.node.fsMod._EncodingOption
 import typings.node.fsMod._PathLike
 import typings.node.fsMod._WriteFileOptions
-import typings.node.nodeNumbers.`-1`
-import typings.node.nodeNumbers.`0`
-import typings.node.nodeNumbers.`1`
+import typings.node.nodeInts.`-1`
+import typings.node.nodeInts.`0`
+import typings.node.nodeInts.`1`
 import typings.std.SharedArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject

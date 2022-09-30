@@ -1,7 +1,8 @@
 package typings.jestValidate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jestValidate.typesMod.DeprecatedOptions
+import typings.jestValidate.mod.DeprecatedOptions
+import typings.yargs.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ object anon {
   
   trait Dicts
     extends StObject
-       with /* s */ StringDictionary[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any
-        ] {
+       with /* s */ StringDictionary[Options] {
     
     var deprecationEntries: DeprecatedOptions
   }

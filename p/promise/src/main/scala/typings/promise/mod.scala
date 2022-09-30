@@ -2,7 +2,10 @@ package typings.promise
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
+import typings.promise.promiseStrings.fulfilled
+import typings.promise.promiseStrings.rejected
+import typings.std.Promise
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +19,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("promise", JSImport.Namespace)
   @js.native
-  class Class[T] protected ()
+  open class Class[T] protected ()
     extends StObject
        with ThenPromise[T] {
     /**
@@ -26,25 +29,80 @@ object mod extends Shortcut {
       * and a reject callback used to reject the promise with a provided reason or error.
       */
     def this(executor: js.Function2[
-            /* resolve */ js.Function1[/* value */ js.UndefOr[T | Thenable[T]], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-            js.Any
+            /* resolve */ js.Function1[/* value */ js.UndefOr[T | PromiseLike[T]], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
+            Any
           ]) = this()
   }
   
-  /**
-    * Represents the completion of an asynchronous operation
-    */
-  @js.native
-  trait ThenPromise[T] extends StObject {
+  trait PromiseFulfilledResult[T]
+    extends StObject
+       with PromiseSettledResult[T] {
     
-    /**
-      * Attaches a callback for only the rejection of the ThenPromise.
-      * @param onrejected The callback to execute when the ThenPromise is rejected.
-      * @returns A ThenPromise for the completion of the callback.
-      */
-    def `catch`[TResult](): ThenPromise[T | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]): ThenPromise[T | TResult] = js.native
+    var status: fulfilled
+    
+    var value: T
+  }
+  object PromiseFulfilledResult {
+    
+    inline def apply[T](value: T): PromiseFulfilledResult[T] = {
+      val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PromiseFulfilledResult[T]]
+    }
+    
+    extension [Self <: PromiseFulfilledResult[?], T](x: Self & PromiseFulfilledResult[T]) {
+      
+      inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait PromiseRejectedResult
+    extends StObject
+       with PromiseSettledResult[Any] {
+    
+    var reason: Any
+    
+    var status: rejected
+  }
+  object PromiseRejectedResult {
+    
+    inline def apply(reason: Any): PromiseRejectedResult = {
+      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
+      __obj.asInstanceOf[PromiseRejectedResult]
+    }
+    
+    extension [Self <: PromiseRejectedResult](x: Self) {
+      
+      inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      
+      inline def setStatus(value: rejected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.promise.mod.PromiseFulfilledResult[T]
+    - typings.promise.mod.PromiseRejectedResult
+  */
+  trait PromiseSettledResult[T] extends StObject
+  object PromiseSettledResult {
+    
+    inline def PromiseFulfilledResult[T](value: T): typings.promise.mod.PromiseFulfilledResult[T] = {
+      val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.promise.mod.PromiseFulfilledResult[T]]
+    }
+    
+    inline def PromiseRejectedResult(reason: Any): typings.promise.mod.PromiseRejectedResult = {
+      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
+      __obj.asInstanceOf[typings.promise.mod.PromiseRejectedResult]
+    }
+  }
+  
+  @js.native
+  trait ThenPromise[T]
+    extends StObject
+       with Promise[T] {
     
     // Extensions specific to then/promise
     /**
@@ -53,35 +111,17 @@ object mod extends Shortcut {
       * @param onrejected The callback to execute when the ThenPromise is rejected.
       */
     def done(): Unit = js.native
-    def done(onfulfilled: js.Function1[/* value */ T, js.Any]): Unit = js.native
-    def done(
-      onfulfilled: js.Function1[/* value */ T, js.Any],
-      onrejected: js.Function1[/* reason */ js.Any, js.Any]
-    ): Unit = js.native
-    def done(onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
-    def done(onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
+    def done(onfulfilled: js.Function1[/* value */ T, Any]): Unit = js.native
+    def done(onfulfilled: js.Function1[/* value */ T, Any], onrejected: js.Function1[/* reason */ Any, Any]): Unit = js.native
+    def done(onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, Any]): Unit = js.native
+    def done(onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, Any]): Unit = js.native
     
     /**
       * Calls a node.js style callback.  If none is provided, the promise is returned.
       */
     def nodeify(): ThenPromise[T] = js.native
-    def nodeify(callback: js.Function2[/* err */ Error, /* value */ T, Unit]): Unit = js.native
+    def nodeify(callback: js.Function2[/* err */ js.Error, /* value */ T, Unit]): Unit = js.native
     def nodeify(callback: Unit): ThenPromise[T] = js.native
-    
-    /**
-      * Attaches callbacks for the resolution and/or rejection of the ThenPromise.
-      * @param onfulfilled The callback to execute when the ThenPromise is resolved.
-      * @param onrejected The callback to execute when the ThenPromise is rejected.
-      * @returns A ThenPromise for the completion of which ever callback is executed.
-      */
-    def `then`[TResult1, TResult2](): ThenPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]]): ThenPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
-    ): ThenPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): ThenPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): ThenPromise[TResult1 | TResult2] = js.native
   }
   
   @js.native
@@ -95,9 +135,9 @@ object mod extends Shortcut {
     */
   Instantiable1[
           /* executor */ js.Function2[
-            /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | Thenable[js.Object]], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-            js.Any
+            /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | PromiseLike[js.Object]], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
+            Any
           ], 
           ThenPromise[js.Object]
         ] {
@@ -108,28 +148,30 @@ object mod extends Shortcut {
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def all[T](values: js.Array[T | Thenable[T]]): ThenPromise[js.Array[T]] = js.native
+    def all[T](values: js.Array[T | PromiseLike[T]]): ThenPromise[js.Array[T]] = js.native
     /**
       * Creates a ThenPromise that is resolved with an array of results when all of the provided Promises
       * resolve, or rejected when any ThenPromise is rejected.
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def all[T1, T2](values: js.Tuple2[T1 | Thenable[T1], T2 | Thenable[T2]]): ThenPromise[js.Tuple2[T1, T2]] = js.native
+    def all[T1, T2](values: js.Tuple2[T1 | PromiseLike[T1], T2 | PromiseLike[T2]]): ThenPromise[js.Tuple2[T1, T2]] = js.native
     /**
       * Creates a ThenPromise that is resolved with an array of results when all of the provided Promises
       * resolve, or rejected when any ThenPromise is rejected.
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def all[T1, T2, T3](values: js.Tuple3[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3]]): ThenPromise[js.Tuple3[T1, T2, T3]] = js.native
+    def all[T1, T2, T3](values: js.Tuple3[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3]]): ThenPromise[js.Tuple3[T1, T2, T3]] = js.native
     /**
       * Creates a ThenPromise that is resolved with an array of results when all of the provided Promises
       * resolve, or rejected when any ThenPromise is rejected.
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def all[T1, T2, T3, T4](values: js.Tuple4[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3], T4 | Thenable[T4]]): ThenPromise[js.Tuple4[T1, T2, T3, T4]] = js.native
+    def all[T1, T2, T3, T4](
+      values: js.Tuple4[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3], T4 | PromiseLike[T4]]
+    ): ThenPromise[js.Tuple4[T1, T2, T3, T4]] = js.native
     /**
       * Creates a ThenPromise that is resolved with an array of results when all of the provided Promises
       * resolve, or rejected when any ThenPromise is rejected.
@@ -138,11 +180,11 @@ object mod extends Shortcut {
       */
     def all[T1, T2, T3, T4, T5](
       values: js.Tuple5[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5]
         ]
     ): ThenPromise[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
     /**
@@ -153,12 +195,12 @@ object mod extends Shortcut {
       */
     def all[T1, T2, T3, T4, T5, T6](
       values: js.Tuple6[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6]
         ]
     ): ThenPromise[js.Tuple6[T1, T2, T3, T4, T5, T6]] = js.native
     /**
@@ -169,13 +211,13 @@ object mod extends Shortcut {
       */
     def all[T1, T2, T3, T4, T5, T6, T7](
       values: js.Tuple7[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7]
         ]
     ): ThenPromise[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]] = js.native
     /**
@@ -186,14 +228,14 @@ object mod extends Shortcut {
       */
     def all[T1, T2, T3, T4, T5, T6, T7, T8](
       values: js.Tuple8[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7], 
-          T8 | Thenable[T8]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8]
         ]
     ): ThenPromise[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]] = js.native
     /**
@@ -204,15 +246,15 @@ object mod extends Shortcut {
       */
     def all[T1, T2, T3, T4, T5, T6, T7, T8, T9](
       values: js.Tuple9[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7], 
-          T8 | Thenable[T8], 
-          T9 | Thenable[T9]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8], 
+          T9 | PromiseLike[T9]
         ]
     ): ThenPromise[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]] = js.native
     /**
@@ -223,21 +265,229 @@ object mod extends Shortcut {
       */
     def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
       values: js.Tuple10[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7], 
-          T8 | Thenable[T8], 
-          T9 | Thenable[T9], 
-          T10 | Thenable[T10]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8], 
+          T9 | PromiseLike[T9], 
+          T10 | PromiseLike[T10]
         ]
     ): ThenPromise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
     
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T](values: js.Array[T | PromiseLike[T]]): ThenPromise[js.Array[PromiseSettledResult[T]]] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2](values: js.Tuple2[T1 | PromiseLike[T1], T2 | PromiseLike[T2]]): ThenPromise[js.Tuple2[PromiseSettledResult[T1], PromiseSettledResult[T2]]] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3](values: js.Tuple3[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3]]): ThenPromise[
+        js.Tuple3[PromiseSettledResult[T1], PromiseSettledResult[T2], PromiseSettledResult[T3]]
+      ] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3, T4](
+      values: js.Tuple4[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3], T4 | PromiseLike[T4]]
+    ): ThenPromise[
+        js.Tuple4[
+          PromiseSettledResult[T1], 
+          PromiseSettledResult[T2], 
+          PromiseSettledResult[T3], 
+          PromiseSettledResult[T4]
+        ]
+      ] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3, T4, T5](
+      values: js.Tuple5[
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5]
+        ]
+    ): ThenPromise[
+        js.Tuple5[
+          PromiseSettledResult[T1], 
+          PromiseSettledResult[T2], 
+          PromiseSettledResult[T3], 
+          PromiseSettledResult[T4], 
+          PromiseSettledResult[T5]
+        ]
+      ] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3, T4, T5, T6](
+      values: js.Tuple6[
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6]
+        ]
+    ): ThenPromise[
+        js.Tuple6[
+          PromiseSettledResult[T1], 
+          PromiseSettledResult[T2], 
+          PromiseSettledResult[T3], 
+          PromiseSettledResult[T4], 
+          PromiseSettledResult[T5], 
+          PromiseSettledResult[T6]
+        ]
+      ] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3, T4, T5, T6, T7](
+      values: js.Tuple7[
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7]
+        ]
+    ): ThenPromise[
+        js.Tuple7[
+          PromiseSettledResult[T1], 
+          PromiseSettledResult[T2], 
+          PromiseSettledResult[T3], 
+          PromiseSettledResult[T4], 
+          PromiseSettledResult[T5], 
+          PromiseSettledResult[T6], 
+          PromiseSettledResult[T7]
+        ]
+      ] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3, T4, T5, T6, T7, T8](
+      values: js.Tuple8[
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8]
+        ]
+    ): ThenPromise[
+        js.Tuple8[
+          PromiseSettledResult[T1], 
+          PromiseSettledResult[T2], 
+          PromiseSettledResult[T3], 
+          PromiseSettledResult[T4], 
+          PromiseSettledResult[T5], 
+          PromiseSettledResult[T6], 
+          PromiseSettledResult[T7], 
+          PromiseSettledResult[T8]
+        ]
+      ] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+      values: js.Tuple9[
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8], 
+          T9 | PromiseLike[T9]
+        ]
+    ): ThenPromise[
+        js.Tuple9[
+          PromiseSettledResult[T1], 
+          PromiseSettledResult[T2], 
+          PromiseSettledResult[T3], 
+          PromiseSettledResult[T4], 
+          PromiseSettledResult[T5], 
+          PromiseSettledResult[T6], 
+          PromiseSettledResult[T7], 
+          PromiseSettledResult[T8], 
+          PromiseSettledResult[T9]
+        ]
+      ] = js.native
+    /**
+      * Creates a Promise that is resolved with an array of results when all
+      * of the provided Promises resolve or reject.
+      * @param values An array of Promises.
+      * @returns A new Promise.
+      */
+    def allSettled[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+      values: js.Tuple10[
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8], 
+          T9 | PromiseLike[T9], 
+          T10 | PromiseLike[T10]
+        ]
+    ): ThenPromise[
+        js.Tuple10[
+          PromiseSettledResult[T1], 
+          PromiseSettledResult[T2], 
+          PromiseSettledResult[T3], 
+          PromiseSettledResult[T4], 
+          PromiseSettledResult[T5], 
+          PromiseSettledResult[T6], 
+          PromiseSettledResult[T7], 
+          PromiseSettledResult[T8], 
+          PromiseSettledResult[T9], 
+          PromiseSettledResult[T10]
+        ]
+      ] = js.native
+    
     // Extensions specific to then/promise
-    def denodeify(fn: js.Function): js.Function1[/* repeated */ js.Any, ThenPromise[js.Any]] = js.native
+    def denodeify(fn: js.Function): js.Function1[/* repeated */ Any, ThenPromise[Any]] = js.native
     
     def nodeify(fn: js.Function): js.Function = js.native
     
@@ -247,28 +497,30 @@ object mod extends Shortcut {
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def race[T](values: js.Array[T | Thenable[T]]): ThenPromise[T] = js.native
+    def race[T](values: js.Array[T | PromiseLike[T]]): ThenPromise[T] = js.native
     /**
       * Creates a ThenPromise that is resolved or rejected when any of the provided Promises are resolved
       * or rejected.
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def race[T1, T2](values: js.Tuple2[T1 | Thenable[T1], T2 | Thenable[T2]]): ThenPromise[T1 | T2] = js.native
+    def race[T1, T2](values: js.Tuple2[T1 | PromiseLike[T1], T2 | PromiseLike[T2]]): ThenPromise[T1 | T2] = js.native
     /**
       * Creates a ThenPromise that is resolved or rejected when any of the provided Promises are resolved
       * or rejected.
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def race[T1, T2, T3](values: js.Tuple3[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3]]): ThenPromise[T1 | T2 | T3] = js.native
+    def race[T1, T2, T3](values: js.Tuple3[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3]]): ThenPromise[T1 | T2 | T3] = js.native
     /**
       * Creates a ThenPromise that is resolved or rejected when any of the provided Promises are resolved
       * or rejected.
       * @param values An array of Promises.
       * @returns A new ThenPromise.
       */
-    def race[T1, T2, T3, T4](values: js.Tuple4[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3], T4 | Thenable[T4]]): ThenPromise[T1 | T2 | T3 | T4] = js.native
+    def race[T1, T2, T3, T4](
+      values: js.Tuple4[T1 | PromiseLike[T1], T2 | PromiseLike[T2], T3 | PromiseLike[T3], T4 | PromiseLike[T4]]
+    ): ThenPromise[T1 | T2 | T3 | T4] = js.native
     /**
       * Creates a ThenPromise that is resolved or rejected when any of the provided Promises are resolved
       * or rejected.
@@ -277,11 +529,11 @@ object mod extends Shortcut {
       */
     def race[T1, T2, T3, T4, T5](
       values: js.Tuple5[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5]
         ]
     ): ThenPromise[T1 | T2 | T3 | T4 | T5] = js.native
     /**
@@ -292,12 +544,12 @@ object mod extends Shortcut {
       */
     def race[T1, T2, T3, T4, T5, T6](
       values: js.Tuple6[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6]
         ]
     ): ThenPromise[T1 | T2 | T3 | T4 | T5 | T6] = js.native
     /**
@@ -308,13 +560,13 @@ object mod extends Shortcut {
       */
     def race[T1, T2, T3, T4, T5, T6, T7](
       values: js.Tuple7[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7]
         ]
     ): ThenPromise[T1 | T2 | T3 | T4 | T5 | T6 | T7] = js.native
     /**
@@ -325,14 +577,14 @@ object mod extends Shortcut {
       */
     def race[T1, T2, T3, T4, T5, T6, T7, T8](
       values: js.Tuple8[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7], 
-          T8 | Thenable[T8]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8]
         ]
     ): ThenPromise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8] = js.native
     /**
@@ -343,15 +595,15 @@ object mod extends Shortcut {
       */
     def race[T1, T2, T3, T4, T5, T6, T7, T8, T9](
       values: js.Tuple9[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7], 
-          T8 | Thenable[T8], 
-          T9 | Thenable[T9]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8], 
+          T9 | PromiseLike[T9]
         ]
     ): ThenPromise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9] = js.native
     /**
@@ -362,16 +614,16 @@ object mod extends Shortcut {
       */
     def race[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
       values: js.Tuple10[
-          T1 | Thenable[T1], 
-          T2 | Thenable[T2], 
-          T3 | Thenable[T3], 
-          T4 | Thenable[T4], 
-          T5 | Thenable[T5], 
-          T6 | Thenable[T6], 
-          T7 | Thenable[T7], 
-          T8 | Thenable[T8], 
-          T9 | Thenable[T9], 
-          T10 | Thenable[T10]
+          T1 | PromiseLike[T1], 
+          T2 | PromiseLike[T2], 
+          T3 | PromiseLike[T3], 
+          T4 | PromiseLike[T4], 
+          T5 | PromiseLike[T5], 
+          T6 | PromiseLike[T6], 
+          T7 | PromiseLike[T7], 
+          T8 | PromiseLike[T8], 
+          T9 | PromiseLike[T9], 
+          T10 | PromiseLike[T10]
         ]
     ): ThenPromise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
     
@@ -380,14 +632,14 @@ object mod extends Shortcut {
       * @param reason The reason the promise was rejected.
       * @returns A new rejected ThenPromise.
       */
-    def reject(reason: js.Any): ThenPromise[scala.Nothing] = js.native
+    def reject(reason: Any): ThenPromise[scala.Nothing] = js.native
     /**
       * Creates a new rejected promise for the provided reason.
       * @param reason The reason the promise was rejected.
       * @returns A new rejected ThenPromise.
       */
     @JSName("reject")
-    def reject_T[T](reason: js.Any): ThenPromise[T] = js.native
+    def reject_T[T](reason: Any): ThenPromise[T] = js.native
     
     /**
       * Creates a new resolved promise .
@@ -400,26 +652,7 @@ object mod extends Shortcut {
       * @returns A promise whose internal state matches the provided promise.
       */
     def resolve[T](value: T): ThenPromise[T] = js.native
-    def resolve[T](value: Thenable[T]): ThenPromise[T] = js.native
-  }
-  
-  @js.native
-  trait Thenable[T] extends StObject {
-    
-    /**
-      * Attaches callbacks for the resolution and/or rejection of the ThenPromise.
-      * @param onfulfilled The callback to execute when the ThenPromise is resolved.
-      * @param onrejected The callback to execute when the ThenPromise is rejected.
-      * @returns A ThenPromise for the completion of which ever callback is executed.
-      */
-    def `then`[TResult1, TResult2](): Thenable[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]]): Thenable[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
-    ): Thenable[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): Thenable[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): Thenable[TResult1 | TResult2] = js.native
+    def resolve[T](value: PromiseLike[T]): ThenPromise[T] = js.native
   }
   
   type _To = ThenPromiseConstructor

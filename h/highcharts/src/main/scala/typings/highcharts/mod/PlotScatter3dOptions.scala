@@ -1,8 +1,8 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.highcharts.highchartsNumbers.`0`
-import typings.highcharts.highchartsNumbers.`100`
+import typings.highcharts.highchartsInts.`0`
+import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

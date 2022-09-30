@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BlockEditProps[T /* <: Record[String, js.Any] */]
+trait BlockEditProps[T /* <: Record[String, Any] */]
   extends StObject
      with BlockSaveProps[T] {
   
@@ -20,7 +20,7 @@ trait BlockEditProps[T /* <: Record[String, js.Any] */]
 }
 object BlockEditProps {
   
-  inline def apply[T /* <: Record[String, js.Any] */](
+  inline def apply[T /* <: Record[String, Any] */](
     attributes: T,
     className: String,
     clientId: String,
@@ -31,7 +31,7 @@ object BlockEditProps {
     __obj.asInstanceOf[BlockEditProps[T]]
   }
   
-  extension [Self <: BlockEditProps[?], T /* <: Record[String, js.Any] */](x: Self & BlockEditProps[T]) {
+  extension [Self <: BlockEditProps[?], T /* <: Record[String, Any] */](x: Self & BlockEditProps[T]) {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

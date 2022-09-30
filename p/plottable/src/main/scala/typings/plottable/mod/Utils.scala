@@ -429,7 +429,7 @@ object Utils {
     inline def deprecated(callingMethod: String, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(callingMethod.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def deprecated(callingMethod: String, version: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(callingMethod.asInstanceOf[js.Any], version.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setTimeout(f: js.Function, time: Double, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(f.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
+    inline def setTimeout(f: js.Function, time: Double, args: Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((scala.List(f.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double]
     
     inline def warn(warning: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }

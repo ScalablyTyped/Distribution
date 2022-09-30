@@ -2,16 +2,16 @@ package typings.reactDnd
 
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
-import typings.reactDnd.connectorsMod.ConnectDragPreview
-import typings.reactDnd.connectorsMod.ConnectableElement
 import typings.reactDnd.optionsMod.DragPreviewOptions
+import typings.reactDnd.typesConnectorsMod.ConnectDragPreview
+import typings.reactDnd.typesConnectorsMod.ConnectableElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragPreviewImageMod {
   
-  @JSImport("react-dnd/lib/common/DragPreviewImage", "DragPreviewImage")
+  @JSImport("react-dnd/dist/core/DragPreviewImage", "DragPreviewImage")
   @js.native
   val DragPreviewImage: FC[DragPreviewImageProps] = js.native
   

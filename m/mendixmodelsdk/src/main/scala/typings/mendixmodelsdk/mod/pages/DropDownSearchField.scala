@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DropDownSearchField")
 @js.native
-class DropDownSearchField protected ()
+open class DropDownSearchField protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DropDownSearchField {
   def this(
     model: AbstractModel,

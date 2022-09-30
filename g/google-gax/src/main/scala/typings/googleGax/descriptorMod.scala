@@ -14,7 +14,7 @@ object descriptorMod {
   
   @JSImport("google-gax/build/src/descriptor", "BundleDescriptor")
   @js.native
-  class BundleDescriptor protected ()
+  open class BundleDescriptor protected ()
     extends typings.googleGax.bundleDescriptorMod.BundleDescriptor {
     /**
       * Describes the structure of bundled call.
@@ -59,22 +59,23 @@ object descriptorMod {
   
   @JSImport("google-gax/build/src/descriptor", "LongrunningDescriptor")
   @js.native
-  class LongrunningDescriptor protected () extends LongRunningDescriptor {
+  open class LongrunningDescriptor protected () extends LongRunningDescriptor {
     def this(operationsClient: OperationsClient, responseDecoder: AnyDecoder, metadataDecoder: AnyDecoder) = this()
   }
   
   @JSImport("google-gax/build/src/descriptor", "PageDescriptor")
   @js.native
-  class PageDescriptor protected ()
+  open class PageDescriptor protected ()
     extends typings.googleGax.pageDescriptorMod.PageDescriptor {
     def this(requestPageTokenField: String, responsePageTokenField: String, resourceField: String) = this()
   }
   
   @JSImport("google-gax/build/src/descriptor", "StreamDescriptor")
   @js.native
-  class StreamDescriptor protected ()
+  open class StreamDescriptor protected ()
     extends typings.googleGax.streamDescriptorMod.StreamDescriptor {
     def this(streamType: StreamType) = this()
+    def this(streamType: StreamType, rest: Boolean) = this()
   }
   
   trait Descriptor extends StObject {

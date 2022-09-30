@@ -3,15 +3,15 @@ package typings.reactSortableTree.mod
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
-import typings.reactDnd.connectorsMod.ConnectDropTarget
-import typings.reactDnd.connectorsMod.ConnectableElement
+import typings.reactDnd.typesConnectorsMod.ConnectDropTarget
+import typings.reactDnd.typesConnectorsMod.ConnectableElement
 import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeRendererProps extends StObject {
+trait TreeRendererProps[T] extends StObject {
   
   var canDrop: js.UndefOr[Boolean] = js.undefined
   
@@ -20,10 +20,10 @@ trait TreeRendererProps extends StObject {
   // Drop target
   var connectDropTarget: ConnectDropTarget
   
-  var draggedNode: js.UndefOr[TreeItem] = js.undefined
+  var draggedNode: js.UndefOr[TreeItem[T]] = js.undefined
   
   // used in dndManager
-  def getPrevRow(): FlatDataItem | Null
+  def getPrevRow(): FlatDataItem[js.Object] | Null
   
   var isOver: Boolean
   
@@ -31,7 +31,7 @@ trait TreeRendererProps extends StObject {
   
   var lowerSiblingCounts: js.Array[Double]
   
-  var node: TreeItem
+  var node: TreeItem[T]
   
   var path: NumberOrStringArray
   
@@ -53,24 +53,24 @@ trait TreeRendererProps extends StObject {
 }
 object TreeRendererProps {
   
-  inline def apply(
+  inline def apply[T](
     children: js.Array[Element],
-    connectDropTarget: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[js.Any]) => ReactElement | Null,
-    getPrevRow: () => FlatDataItem | Null,
+    connectDropTarget: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[Any]) => ReactElement | Null,
+    getPrevRow: () => FlatDataItem[js.Object] | Null,
     isOver: Boolean,
     listIndex: Double,
     lowerSiblingCounts: js.Array[Double],
-    node: TreeItem,
+    node: TreeItem[T],
     path: NumberOrStringArray,
     scaffoldBlockPxWidth: Double,
     treeId: String,
     treeIndex: Double
-  ): TreeRendererProps = {
+  ): TreeRendererProps[T] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], connectDropTarget = js.Any.fromFunction2(connectDropTarget), getPrevRow = js.Any.fromFunction0(getPrevRow), isOver = isOver.asInstanceOf[js.Any], listIndex = listIndex.asInstanceOf[js.Any], lowerSiblingCounts = lowerSiblingCounts.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scaffoldBlockPxWidth = scaffoldBlockPxWidth.asInstanceOf[js.Any], treeId = treeId.asInstanceOf[js.Any], treeIndex = treeIndex.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TreeRendererProps]
+    __obj.asInstanceOf[TreeRendererProps[T]]
   }
   
-  extension [Self <: TreeRendererProps](x: Self) {
+  extension [Self <: TreeRendererProps[?], T](x: Self & TreeRendererProps[T]) {
     
     inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
     
@@ -78,17 +78,17 @@ object TreeRendererProps {
     
     inline def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setConnectDropTarget(
-      value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[js.Any]) => ReactElement | Null
+      value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[Any]) => ReactElement | Null
     ): Self = StObject.set(x, "connectDropTarget", js.Any.fromFunction2(value))
     
-    inline def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
+    inline def setDraggedNode(value: TreeItem[T]): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
     
     inline def setDraggedNodeUndefined: Self = StObject.set(x, "draggedNode", js.undefined)
     
-    inline def setGetPrevRow(value: () => FlatDataItem | Null): Self = StObject.set(x, "getPrevRow", js.Any.fromFunction0(value))
+    inline def setGetPrevRow(value: () => FlatDataItem[js.Object] | Null): Self = StObject.set(x, "getPrevRow", js.Any.fromFunction0(value))
     
     inline def setIsOver(value: Boolean): Self = StObject.set(x, "isOver", value.asInstanceOf[js.Any])
     
@@ -96,13 +96,13 @@ object TreeRendererProps {
     
     inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     
-    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
+    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value*))
     
-    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem[T]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setRowDirection(value: ltr | rtl): Self = StObject.set(x, "rowDirection", value.asInstanceOf[js.Any])
     

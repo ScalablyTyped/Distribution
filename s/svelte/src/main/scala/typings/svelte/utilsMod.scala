@@ -1,6 +1,6 @@
 package typings.svelte
 
-import typings.svelte.svelteNumbers.`-1`
+import typings.svelte.svelteInts.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +65,7 @@ object utilsMod {
   
   inline def srcUrlEqual(element_src: Any, url: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("src_url_equal")(element_src.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def subscribe(store: Any, callbacks: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(List(store.asInstanceOf[js.Any]).`++`(callbacks.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def subscribe(store: Any, callbacks: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(scala.List(store.asInstanceOf[js.Any]).`++`(callbacks.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def updateSlot(
     slot: Any,

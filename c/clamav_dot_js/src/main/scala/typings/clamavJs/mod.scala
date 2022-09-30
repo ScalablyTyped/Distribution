@@ -1,6 +1,6 @@
 package typings.clamavJs
 
-import typings.clamavJs.clamavJsNumbers.`3310`
+import typings.clamavJs.clamavJsInts.`3310`
 import typings.clamavJs.clamavJsStrings.localhost
 import typings.node.fsMod.ReadStream
 import typings.node.streamMod.Stream

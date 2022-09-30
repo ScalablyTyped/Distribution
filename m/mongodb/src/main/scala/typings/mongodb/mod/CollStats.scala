@@ -1,91 +1,78 @@
 package typings.mongodb.mod
 
+import typings.bson.mod.Document
 import typings.mongodb.anon.Dictindex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollStats extends StObject {
+trait CollStats
+  extends StObject
+     with Document {
   
-  /**
-    * Average object size in bytes.
-    */
+  /** Average object size in bytes */
   var avgObjSize: scala.Double
   
-  /**
-    * `true` if the collection is capped.
-    */
+  /** `true` if the collection is capped */
   var capped: Boolean
   
-  /**
-    * Number of documents.
-    */
+  /** Number of documents */
   var count: scala.Double
   
-  var indexDetails: js.UndefOr[js.Any] = js.undefined
+  /** The amount of storage available for reuse. The scale argument affects this value. */
+  var freeStorageSize: js.UndefOr[scala.Double] = js.undefined
   
-  /**
-    * Size of specific indexes in bytes.
-    */
+  /** An array that contains the names of the indexes that are currently being built on the collection */
+  var indexBuilds: js.UndefOr[scala.Double] = js.undefined
+  
+  /** The fields in this document are the names of the indexes, while the values themselves are documents that contain statistics for the index provided by the storage engine */
+  var indexDetails: js.UndefOr[Any] = js.undefined
+  
+  /** Size of specific indexes in bytes */
   var indexSizes: Dictindex
   
-  /**
-    * Size of the most recently created extent in bytes.
-    */
+  /** Size of the most recently created extent in bytes */
   var lastExtentSize: scala.Double
   
-  /**
-    * The maximum number of documents that may be present in a capped collection.
-    */
+  /** The maximum number of documents that may be present in a capped collection */
   var max: scala.Double
   
-  /**
-    * The maximum size of a capped collection.
-    */
+  /** The maximum size of a capped collection */
   var maxSize: scala.Double
   
-  /**
-    * Number of indexes.
-    */
+  /** Number of indexes */
   var nindexes: scala.Double
   
-  /**
-    * Namespace.
-    */
+  /** Namespace */
   var ns: String
   
-  /**
-    * Number of extents (contiguously allocated chunks of datafile space).
-    */
+  /** Number of extents (contiguously allocated chunks of datafile space) */
   var numExtents: scala.Double
   
   var ok: scala.Double
   
-  /**
-    * Padding can speed up updates if documents grow.
-    */
+  /** Padding can speed up updates if documents grow */
   var paddingFactor: scala.Double
   
-  /**
-    * Collection size in bytes.
-    */
+  /** The scale value used by the command. */
+  var scaleFactor: scala.Double
+  
+  /** Collection size in bytes */
   var size: scala.Double
   
-  /**
-    * (Pre)allocated space for the collection in bytes.
-    */
+  /** (Pre)allocated space for the collection in bytes */
   var storageSize: scala.Double
   
-  /**
-    * Total index size in bytes.
-    */
+  /** Total index size in bytes */
   var totalIndexSize: scala.Double
   
-  /**
-    * A number that indicates the user-set flags on the collection. userFlags only appears when using the mmapv1 storage engine.
-    */
+  /** The sum of the storageSize and totalIndexSize. The scale argument affects this value */
+  var totalSize: scala.Double
+  
+  /** A number that indicates the user-set flags on the collection. userFlags only appears when using the mmapv1 storage engine */
   var userFlags: js.UndefOr[scala.Double] = js.undefined
   
+  /** This document contains data reported directly by the WiredTiger engine and other data for internal diagnostic use */
   var wiredTiger: js.UndefOr[WiredTigerData] = js.undefined
 }
 object CollStats {
@@ -103,11 +90,13 @@ object CollStats {
     numExtents: scala.Double,
     ok: scala.Double,
     paddingFactor: scala.Double,
+    scaleFactor: scala.Double,
     size: scala.Double,
     storageSize: scala.Double,
-    totalIndexSize: scala.Double
+    totalIndexSize: scala.Double,
+    totalSize: scala.Double
   ): CollStats = {
-    val __obj = js.Dynamic.literal(avgObjSize = avgObjSize.asInstanceOf[js.Any], capped = capped.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], indexSizes = indexSizes.asInstanceOf[js.Any], lastExtentSize = lastExtentSize.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], nindexes = nindexes.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], numExtents = numExtents.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], paddingFactor = paddingFactor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageSize = storageSize.asInstanceOf[js.Any], totalIndexSize = totalIndexSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(avgObjSize = avgObjSize.asInstanceOf[js.Any], capped = capped.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], indexSizes = indexSizes.asInstanceOf[js.Any], lastExtentSize = lastExtentSize.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], nindexes = nindexes.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], numExtents = numExtents.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], paddingFactor = paddingFactor.asInstanceOf[js.Any], scaleFactor = scaleFactor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], storageSize = storageSize.asInstanceOf[js.Any], totalIndexSize = totalIndexSize.asInstanceOf[js.Any], totalSize = totalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollStats]
   }
   
@@ -119,7 +108,15 @@ object CollStats {
     
     inline def setCount(value: scala.Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    inline def setIndexDetails(value: js.Any): Self = StObject.set(x, "indexDetails", value.asInstanceOf[js.Any])
+    inline def setFreeStorageSize(value: scala.Double): Self = StObject.set(x, "freeStorageSize", value.asInstanceOf[js.Any])
+    
+    inline def setFreeStorageSizeUndefined: Self = StObject.set(x, "freeStorageSize", js.undefined)
+    
+    inline def setIndexBuilds(value: scala.Double): Self = StObject.set(x, "indexBuilds", value.asInstanceOf[js.Any])
+    
+    inline def setIndexBuildsUndefined: Self = StObject.set(x, "indexBuilds", js.undefined)
+    
+    inline def setIndexDetails(value: Any): Self = StObject.set(x, "indexDetails", value.asInstanceOf[js.Any])
     
     inline def setIndexDetailsUndefined: Self = StObject.set(x, "indexDetails", js.undefined)
     
@@ -141,11 +138,15 @@ object CollStats {
     
     inline def setPaddingFactor(value: scala.Double): Self = StObject.set(x, "paddingFactor", value.asInstanceOf[js.Any])
     
+    inline def setScaleFactor(value: scala.Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    
     inline def setSize(value: scala.Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setStorageSize(value: scala.Double): Self = StObject.set(x, "storageSize", value.asInstanceOf[js.Any])
     
     inline def setTotalIndexSize(value: scala.Double): Self = StObject.set(x, "totalIndexSize", value.asInstanceOf[js.Any])
+    
+    inline def setTotalSize(value: scala.Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     inline def setUserFlags(value: scala.Double): Self = StObject.set(x, "userFlags", value.asInstanceOf[js.Any])
     

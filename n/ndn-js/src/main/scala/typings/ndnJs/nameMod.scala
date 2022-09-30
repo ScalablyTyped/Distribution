@@ -252,17 +252,17 @@ object nameMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.ndnJs.ndnJsNumbers.`-1`
-    - typings.ndnJs.ndnJsNumbers.`0`
-    - typings.ndnJs.ndnJsNumbers.`1`
+    - typings.ndnJs.ndnJsInts.`-1`
+    - typings.ndnJs.ndnJsInts.`0`
+    - typings.ndnJs.ndnJsInts.`1`
   */
   trait CompareResult extends StObject
   object CompareResult {
     
-    inline def `-1`: typings.ndnJs.ndnJsNumbers.`-1` = -1.asInstanceOf[typings.ndnJs.ndnJsNumbers.`-1`]
+    inline def `-1`: typings.ndnJs.ndnJsInts.`-1` = -1.asInstanceOf[typings.ndnJs.ndnJsInts.`-1`]
     
-    inline def `0`: typings.ndnJs.ndnJsNumbers.`0` = 0.asInstanceOf[typings.ndnJs.ndnJsNumbers.`0`]
+    inline def `0`: typings.ndnJs.ndnJsInts.`0` = 0.asInstanceOf[typings.ndnJs.ndnJsInts.`0`]
     
-    inline def `1`: typings.ndnJs.ndnJsNumbers.`1` = 1.asInstanceOf[typings.ndnJs.ndnJsNumbers.`1`]
+    inline def `1`: typings.ndnJs.ndnJsInts.`1` = 1.asInstanceOf[typings.ndnJs.ndnJsInts.`1`]
   }
 }

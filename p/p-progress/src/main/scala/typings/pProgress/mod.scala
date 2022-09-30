@@ -2,6 +2,7 @@ package typings.pProgress
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Promise
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ReturnValue](input: js.Function1[/* progress */ ProgressNotifier, js.Thenable[ReturnValue] | ReturnValue]): PProgress[ReturnValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[PProgress[ReturnValue]]
+  inline def default[ReturnValue](input: js.Function1[/* progress */ ProgressNotifier, PromiseLike[ReturnValue] | ReturnValue]): PProgress[ReturnValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[PProgress[ReturnValue]]
   
   @JSImport("p-progress", "PProgress")
   @js.native
@@ -51,7 +52,7 @@ object mod {
     		Progress percentage `1` is reported for you when the promise resolves. If you set it yourself, it will simply be ignored.
     		*/
     executor: js.Function3[
-            /* resolve */ js.Function1[/* value */ js.UndefOr[ValueType | js.Thenable[ValueType]], Unit], 
+            /* resolve */ js.Function1[/* value */ js.UndefOr[ValueType | PromiseLike[ValueType]], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             /* progress */ ProgressNotifier, 
             Unit
@@ -109,7 +110,7 @@ object mod {
     	await allProgressPromise;
     	```
     	*/
-    inline def all[Promises /* <: js.Array[PromiseFactory[Any] | js.Thenable[Any]] */](
+    inline def all[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises]
     ): PProgress[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -120,7 +121,7 @@ object mod {
     {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]}
       */ typings.pProgress.pProgressStrings.all & TopLevel[Any]
       ]]
-    inline def all[Promises /* <: js.Array[PromiseFactory[Any] | js.Thenable[Any]] */](
+    inline def all[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises],
       options: Options
     ): PProgress[
@@ -132,8 +133,8 @@ object mod {
     {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]}
       */ typings.pProgress.pProgressStrings.all & TopLevel[Any]
       ]]
-    inline def all[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | js.Thenable[ReturnValue]]): PProgress[js.Iterable[ReturnValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[js.Iterable[ReturnValue]]]
-    inline def all[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | js.Thenable[ReturnValue]], options: Options): PProgress[js.Iterable[ReturnValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[js.Iterable[ReturnValue]]]
+    inline def all[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]]): PProgress[js.Iterable[ReturnValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[js.Iterable[ReturnValue]]]
+    inline def all[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]], options: Options): PProgress[js.Iterable[ReturnValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[js.Iterable[ReturnValue]]]
     
     /**
     	Like [`Promise.allSettled`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) but also exposes the total progress of all of the promises like `PProgress.all`.
@@ -180,7 +181,7 @@ object mod {
     	//=> [{status: 'fulfilled', value: 1}, {status: 'rejected', reason: Error: Catch me if you can!}]
     	```
     	*/
-    inline def allSettled[Promises /* <: js.Array[PromiseFactory[Any] | js.Thenable[Any]] */](
+    inline def allSettled[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises]
     ): PProgress[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -191,7 +192,7 @@ object mod {
     {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>}
       */ typings.pProgress.pProgressStrings.allSettled & TopLevel[Any]
       ]]
-    inline def allSettled[Promises /* <: js.Array[PromiseFactory[Any] | js.Thenable[Any]] */](
+    inline def allSettled[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises],
       options: Options
     ): PProgress[
@@ -203,8 +204,8 @@ object mod {
     {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>}
       */ typings.pProgress.pProgressStrings.allSettled & TopLevel[Any]
       ]]
-    inline def allSettled[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | js.Thenable[ReturnValue]]): PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]]]
-    inline def allSettled[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | js.Thenable[ReturnValue]], options: Options): PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]]]
+    inline def allSettled[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]]): PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]]]
+    inline def allSettled[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]], options: Options): PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]]]
   }
   
   type Awaited[ValueType] = ValueType
@@ -234,7 +235,7 @@ object mod {
   
   type ProgressNotifier = js.Function1[/* progress */ Double, Unit]
   
-  type PromiseFactory[ValueType] = js.Function0[js.Thenable[ValueType]]
+  type PromiseFactory[ValueType] = js.Function0[PromiseLike[ValueType]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.pProgress.anon.Status[ResolveValueType]

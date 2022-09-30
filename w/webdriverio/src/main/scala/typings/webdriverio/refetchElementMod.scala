@@ -1,6 +1,6 @@
 package typings.webdriverio
 
-import typings.webdriverio.implicitWaitMod.CurrentElement
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,5 @@ object refetchElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(currentElement: CurrentElement, commandName: String): js.Promise[CurrentElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentElement.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CurrentElement]]
+  inline def default(currentElement: Element, commandName: String): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentElement.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
 }

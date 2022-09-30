@@ -6,8 +6,8 @@ import typings.jssha.anon.OutputLenNumber
 import typings.jssha.anon.OutputUpper
 import typings.jssha.anon.ShakeLen
 import typings.jssha.anon.`17`
-import typings.jssha.jsshaNumbers.`-1`
-import typings.jssha.jsshaNumbers.`1`
+import typings.jssha.jsshaInts.`-1`
+import typings.jssha.jsshaInts.`1`
 import typings.jssha.jsshaStrings.ARRAYBUFFER
 import typings.jssha.jsshaStrings.B64
 import typings.jssha.jsshaStrings.BYTES

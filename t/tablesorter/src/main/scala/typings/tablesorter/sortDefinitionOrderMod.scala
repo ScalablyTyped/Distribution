@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sortDefinitionOrderMod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.tablesorter.tablesorterNumbers.`2`
-    - typings.tablesorter.tablesorterNumbers.`0`
-    - typings.tablesorter.tablesorterNumbers.`1`
+    - typings.tablesorter.tablesorterInts.`2`
+    - typings.tablesorter.tablesorterInts.`0`
+    - typings.tablesorter.tablesorterInts.`1`
   */
   trait SortDefinitionOrder extends StObject
   object SortDefinitionOrder {
     
-    inline def `0`: typings.tablesorter.tablesorterNumbers.`0` = 0.asInstanceOf[typings.tablesorter.tablesorterNumbers.`0`]
+    inline def `0`: typings.tablesorter.tablesorterInts.`0` = 0.asInstanceOf[typings.tablesorter.tablesorterInts.`0`]
     
-    inline def `1`: typings.tablesorter.tablesorterNumbers.`1` = 1.asInstanceOf[typings.tablesorter.tablesorterNumbers.`1`]
+    inline def `1`: typings.tablesorter.tablesorterInts.`1` = 1.asInstanceOf[typings.tablesorter.tablesorterInts.`1`]
     
-    inline def `2`: typings.tablesorter.tablesorterNumbers.`2` = 2.asInstanceOf[typings.tablesorter.tablesorterNumbers.`2`]
+    inline def `2`: typings.tablesorter.tablesorterInts.`2` = 2.asInstanceOf[typings.tablesorter.tablesorterInts.`2`]
   }
 }

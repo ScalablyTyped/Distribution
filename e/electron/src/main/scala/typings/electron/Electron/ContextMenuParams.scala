@@ -1,14 +1,20 @@
 package typings.electron.Electron
 
+import typings.electron.electronStrings.adjustSelection
+import typings.electron.electronStrings.adjustSelectionReset
 import typings.electron.electronStrings.audio
 import typings.electron.electronStrings.canvas
 import typings.electron.electronStrings.file
 import typings.electron.electronStrings.image
 import typings.electron.electronStrings.keyboard
+import typings.electron.electronStrings.longPress
+import typings.electron.electronStrings.longTap
 import typings.electron.electronStrings.mouse
 import typings.electron.electronStrings.none
 import typings.electron.electronStrings.plugin
+import typings.electron.electronStrings.stylus
 import typings.electron.electronStrings.touch
+import typings.electron.electronStrings.touchHandle
 import typings.electron.electronStrings.touchMenu
 import typings.electron.electronStrings.video
 import org.scalablytyped.runtime.StObject
@@ -16,6 +22,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ContextMenuParams extends StObject {
+  
+  /**
+    * Alt text of the selection that the context menu was invoked on.
+    */
+  var altText: String
   
   /**
     * An array of suggested words to show the user to replace the `misspelledWord`.
@@ -28,6 +39,11 @@ trait ContextMenuParams extends StObject {
     * corresponding action.
     */
   var editFlags: EditFlags
+  
+  /**
+    * Frame from which the context menu was invoked.
+    */
+  var frame: WebFrameMain_
   
   /**
     * The character encoding of the frame on which the menu was invoked.
@@ -79,9 +95,10 @@ trait ContextMenuParams extends StObject {
   
   /**
     * Input source that invoked the context menu. Can be `none`, `mouse`, `keyboard`,
-    * `touch` or `touchMenu`.
+    * `touch`, `touchMenu`, `longPress`, `longTap`, `touchHandle`, `stylus`,
+    * `adjustSelection`, or `adjustSelectionReset`.
     */
-  var menuSourceType: none | mouse | keyboard | touch | touchMenu
+  var menuSourceType: none | mouse | keyboard | touch | touchMenu | longPress | longTap | touchHandle | stylus | adjustSelection | adjustSelectionReset
   
   /**
     * The misspelled word under the cursor, if any.
@@ -94,9 +111,29 @@ trait ContextMenuParams extends StObject {
   var pageURL: String
   
   /**
+    * The referrer policy of the frame on which the menu is invoked.
+    */
+  var referrerPolicy: Referrer
+  
+  /**
+    * Rect representing the coordinates in the document space of the selection.
+    */
+  var selectionRect: Rectangle
+  
+  /**
+    * Start position of the selection text.
+    */
+  var selectionStartOffset: Double
+  
+  /**
     * Text of the selection that the context menu was invoked on.
     */
   var selectionText: String
+  
+  /**
+    * If the context is editable, whether or not spellchecking is enabled.
+    */
+  var spellcheckEnabled: Boolean
   
   /**
     * Source URL for the element that the context menu was invoked on. Elements with
@@ -105,7 +142,13 @@ trait ContextMenuParams extends StObject {
   var srcURL: String
   
   /**
-    * Title or alt text of the selection that the context was invoked on.
+    * Suggested filename to be used when saving file through 'Save Link As' option of
+    * context menu.
+    */
+  var suggestedFilename: String
+  
+  /**
+    * Title text of the selection that the context menu was invoked on.
     */
   var titleText: String
   
@@ -122,8 +165,10 @@ trait ContextMenuParams extends StObject {
 object ContextMenuParams {
   
   inline def apply(
+    altText: String,
     dictionarySuggestions: js.Array[String],
     editFlags: EditFlags,
+    frame: WebFrameMain_,
     frameCharset: String,
     frameURL: String,
     hasImageContents: Boolean,
@@ -133,26 +178,35 @@ object ContextMenuParams {
     linkURL: String,
     mediaFlags: MediaFlags,
     mediaType: none | image | audio | video | canvas | file | plugin,
-    menuSourceType: none | mouse | keyboard | touch | touchMenu,
+    menuSourceType: none | mouse | keyboard | touch | touchMenu | longPress | longTap | touchHandle | stylus | adjustSelection | adjustSelectionReset,
     misspelledWord: String,
     pageURL: String,
+    referrerPolicy: Referrer,
+    selectionRect: Rectangle,
+    selectionStartOffset: Double,
     selectionText: String,
+    spellcheckEnabled: Boolean,
     srcURL: String,
+    suggestedFilename: String,
     titleText: String,
     x: Double,
     y: Double
   ): ContextMenuParams = {
-    val __obj = js.Dynamic.literal(dictionarySuggestions = dictionarySuggestions.asInstanceOf[js.Any], editFlags = editFlags.asInstanceOf[js.Any], frameCharset = frameCharset.asInstanceOf[js.Any], frameURL = frameURL.asInstanceOf[js.Any], hasImageContents = hasImageContents.asInstanceOf[js.Any], inputFieldType = inputFieldType.asInstanceOf[js.Any], isEditable = isEditable.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], linkURL = linkURL.asInstanceOf[js.Any], mediaFlags = mediaFlags.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], menuSourceType = menuSourceType.asInstanceOf[js.Any], misspelledWord = misspelledWord.asInstanceOf[js.Any], pageURL = pageURL.asInstanceOf[js.Any], selectionText = selectionText.asInstanceOf[js.Any], srcURL = srcURL.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(altText = altText.asInstanceOf[js.Any], dictionarySuggestions = dictionarySuggestions.asInstanceOf[js.Any], editFlags = editFlags.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameCharset = frameCharset.asInstanceOf[js.Any], frameURL = frameURL.asInstanceOf[js.Any], hasImageContents = hasImageContents.asInstanceOf[js.Any], inputFieldType = inputFieldType.asInstanceOf[js.Any], isEditable = isEditable.asInstanceOf[js.Any], linkText = linkText.asInstanceOf[js.Any], linkURL = linkURL.asInstanceOf[js.Any], mediaFlags = mediaFlags.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], menuSourceType = menuSourceType.asInstanceOf[js.Any], misspelledWord = misspelledWord.asInstanceOf[js.Any], pageURL = pageURL.asInstanceOf[js.Any], referrerPolicy = referrerPolicy.asInstanceOf[js.Any], selectionRect = selectionRect.asInstanceOf[js.Any], selectionStartOffset = selectionStartOffset.asInstanceOf[js.Any], selectionText = selectionText.asInstanceOf[js.Any], spellcheckEnabled = spellcheckEnabled.asInstanceOf[js.Any], srcURL = srcURL.asInstanceOf[js.Any], suggestedFilename = suggestedFilename.asInstanceOf[js.Any], titleText = titleText.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuParams]
   }
   
   extension [Self <: ContextMenuParams](x: Self) {
     
+    inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
+    
     inline def setDictionarySuggestions(value: js.Array[String]): Self = StObject.set(x, "dictionarySuggestions", value.asInstanceOf[js.Any])
     
-    inline def setDictionarySuggestionsVarargs(value: String*): Self = StObject.set(x, "dictionarySuggestions", js.Array(value :_*))
+    inline def setDictionarySuggestionsVarargs(value: String*): Self = StObject.set(x, "dictionarySuggestions", js.Array(value*))
     
     inline def setEditFlags(value: EditFlags): Self = StObject.set(x, "editFlags", value.asInstanceOf[js.Any])
+    
+    inline def setFrame(value: WebFrameMain_): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     inline def setFrameCharset(value: String): Self = StObject.set(x, "frameCharset", value.asInstanceOf[js.Any])
     
@@ -172,15 +226,27 @@ object ContextMenuParams {
     
     inline def setMediaType(value: none | image | audio | video | canvas | file | plugin): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    inline def setMenuSourceType(value: none | mouse | keyboard | touch | touchMenu): Self = StObject.set(x, "menuSourceType", value.asInstanceOf[js.Any])
+    inline def setMenuSourceType(
+      value: none | mouse | keyboard | touch | touchMenu | longPress | longTap | touchHandle | stylus | adjustSelection | adjustSelectionReset
+    ): Self = StObject.set(x, "menuSourceType", value.asInstanceOf[js.Any])
     
     inline def setMisspelledWord(value: String): Self = StObject.set(x, "misspelledWord", value.asInstanceOf[js.Any])
     
     inline def setPageURL(value: String): Self = StObject.set(x, "pageURL", value.asInstanceOf[js.Any])
     
+    inline def setReferrerPolicy(value: Referrer): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionRect(value: Rectangle): Self = StObject.set(x, "selectionRect", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionStartOffset(value: Double): Self = StObject.set(x, "selectionStartOffset", value.asInstanceOf[js.Any])
+    
     inline def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
     
+    inline def setSpellcheckEnabled(value: Boolean): Self = StObject.set(x, "spellcheckEnabled", value.asInstanceOf[js.Any])
+    
     inline def setSrcURL(value: String): Self = StObject.set(x, "srcURL", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedFilename(value: String): Self = StObject.set(x, "suggestedFilename", value.asInstanceOf[js.Any])
     
     inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     

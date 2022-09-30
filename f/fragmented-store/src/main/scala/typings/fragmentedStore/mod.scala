@@ -23,7 +23,7 @@ object mod {
   
   type StoreUtils[Store /* <: StringDictionary[Any] */] = (Omit[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Store as 'use${Capitalize<string & K>}' ]: fragmented-store.fragmented-store.StateHook<Store[K]>}
+  {[ K in keyof Store as / * template literal string: use${Capitalize<string&K>} * / string ]: fragmented-store.fragmented-store.StateHook<Store[K]>}
     */ typings.fragmentedStore.fragmentedStoreStrings.StoreUtils & TopLevel[Store], 
     useStore
   ]) & Provider[Store]

@@ -1,6 +1,6 @@
 package typings.uifabricMergeStyles
 
-import typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`0`
+import typings.uifabricMergeStyles.uifabricMergeStylesInts.`0`
 import typings.uifabricMergeStyles.uifabricMergeStylesStrings.`-ms-autohiding-scrollbar`
 import typings.uifabricMergeStyles.uifabricMergeStylesStrings.`border-box`
 import typings.uifabricMergeStyles.uifabricMergeStylesStrings.`break-word`
@@ -365,15 +365,15 @@ object irawstylebaseMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800`
-    - typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`100`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`200`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`300`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`400`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`500`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`600`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`700`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`800`
+    - typings.uifabricMergeStyles.uifabricMergeStylesInts.`900`
     - typings.uifabricMergeStyles.uifabricMergeStylesStrings.normal
     - typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold
     - typings.uifabricMergeStyles.uifabricMergeStylesStrings.bolder
@@ -394,23 +394,23 @@ object irawstylebaseMod {
   trait IFontWeight extends StObject
   object IFontWeight {
     
-    inline def `100`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100` = 100.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`100`]
+    inline def `100`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`100` = 100.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`100`]
     
-    inline def `200`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200` = 200.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`200`]
+    inline def `200`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`200` = 200.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`200`]
     
-    inline def `300`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300` = 300.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`300`]
+    inline def `300`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`300` = 300.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`300`]
     
-    inline def `400`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400` = 400.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`400`]
+    inline def `400`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`400` = 400.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`400`]
     
-    inline def `500`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500` = 500.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`500`]
+    inline def `500`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`500` = 500.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`500`]
     
-    inline def `600`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600` = 600.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`600`]
+    inline def `600`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`600` = 600.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`600`]
     
-    inline def `700`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700` = 700.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`700`]
+    inline def `700`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`700` = 700.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`700`]
     
-    inline def `800`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800` = 800.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`800`]
+    inline def `800`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`800` = 800.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`800`]
     
-    inline def `900`: typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900` = 900.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesNumbers.`900`]
+    inline def `900`: typings.uifabricMergeStyles.uifabricMergeStylesInts.`900` = 900.asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesInts.`900`]
     
     inline def bold: typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold = "bold".asInstanceOf[typings.uifabricMergeStyles.uifabricMergeStylesStrings.bold]
     

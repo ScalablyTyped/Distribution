@@ -2,7 +2,7 @@ package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.internalTypesMod.OperatorFunction
-import typings.rxjs.rxjsNumbers.`-1`
+import typings.rxjs.rxjsInts.`-1`
 import typings.std.BooleanConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreNumbers.`1048575`
-import typings.angularCore.angularCoreNumbers.`1048576`
-import typings.angularCore.angularCoreNumbers.`20`
+import typings.angularCore.angularCoreInts.`1048575`
+import typings.angularCore.angularCoreInts.`1048576`
+import typings.angularCore.angularCoreInts.`20`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Corresponds to the TNode.providerIndexes property.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreNumbers.`1048575`
-  - typings.angularCore.angularCoreNumbers.`20`
-  - typings.angularCore.angularCoreNumbers.`1048576`
+  - typings.angularCore.angularCoreInts.`1048575`
+  - typings.angularCore.angularCoreInts.`20`
+  - typings.angularCore.angularCoreInts.`1048576`
 */
 trait TNodeProviderIndexes extends StObject
 object TNodeProviderIndexes {

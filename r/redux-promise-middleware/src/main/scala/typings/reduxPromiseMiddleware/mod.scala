@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("redux-promise-middleware", JSImport.Default)
   @js.native
-  val default: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = js.native
+  val default: Middleware[js.Object, Any, Dispatch[AnyAction]] = js.native
   
   @js.native
   sealed trait ActionType extends StObject
@@ -50,8 +50,8 @@ object mod {
     /* "REJECTED" */ val Rejected: typings.reduxPromiseMiddleware.mod.ActionType.Rejected & String = js.native
   }
   
-  inline def createPromise(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  inline def createPromise(config: Config): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")(config.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createPromise(): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")().asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def createPromise(config: Config): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")(config.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
   
   trait AsyncAction
     extends StObject
@@ -62,7 +62,7 @@ object mod {
   }
   object AsyncAction {
     
-    inline def apply(`type`: js.Any): AsyncAction = {
+    inline def apply(`type`: Any): AsyncAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncAction]
@@ -72,16 +72,16 @@ object mod {
       
       inline def setPayload(value: AsyncPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      inline def setPayloadFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "payload", js.Any.fromFunction0(value))
+      inline def setPayloadFunction0(value: () => js.Promise[Any]): Self = StObject.set(x, "payload", js.Any.fromFunction0(value))
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   
   // Action payload types
-  type AsyncFunction = js.Function0[js.Promise[js.Any]]
+  type AsyncFunction = js.Function0[js.Promise[Any]]
   
-  type AsyncPayload = js.Promise[js.Any] | AsyncFunction | Data
+  type AsyncPayload = js.Promise[Any] | AsyncFunction | Data
   
   trait Config extends StObject {
     
@@ -110,17 +110,17 @@ object mod {
   
   trait FluxStandardAction
     extends StObject
-       with Action[js.Any] {
+       with Action[Any] {
     
     var error: js.UndefOr[Boolean] = js.undefined
     
-    var meta: js.UndefOr[js.Any] = js.undefined
+    var meta: js.UndefOr[Any] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
   }
   object FluxStandardAction {
     
-    inline def apply(`type`: js.Any): FluxStandardAction = {
+    inline def apply(`type`: Any): FluxStandardAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxStandardAction]
@@ -132,11 +132,11 @@ object mod {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }

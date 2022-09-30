@@ -5,128 +5,131 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.babelTypes.libMod.JSXAttribute
-  - typings.babelTypes.libMod.JSXClosingElement
-  - typings.babelTypes.libMod.JSXElement
-  - typings.babelTypes.libMod.JSXEmptyExpression
-  - typings.babelTypes.libMod.JSXExpressionContainer
-  - typings.babelTypes.libMod.JSXSpreadChild
-  - typings.babelTypes.libMod.JSXIdentifier
-  - typings.babelTypes.libMod.JSXMemberExpression
-  - typings.babelTypes.libMod.JSXNamespacedName
-  - typings.babelTypes.libMod.JSXOpeningElement
-  - typings.babelTypes.libMod.JSXSpreadAttribute
-  - typings.babelTypes.libMod.JSXText
-  - typings.babelTypes.libMod.JSXFragment
-  - typings.babelTypes.libMod.JSXOpeningFragment
-  - typings.babelTypes.libMod.JSXClosingFragment
+  - typings.babelTypes.libMod.JSXAttribute__
+  - typings.babelTypes.libMod.JSXClosingElement__
+  - typings.babelTypes.libMod.JSXElement__
+  - typings.babelTypes.libMod.JSXEmptyExpression__
+  - typings.babelTypes.libMod.JSXExpressionContainer__
+  - typings.babelTypes.libMod.JSXSpreadChild__
+  - typings.babelTypes.libMod.JSXIdentifier__
+  - typings.babelTypes.libMod.JSXMemberExpression__
+  - typings.babelTypes.libMod.JSXNamespacedName__
+  - typings.babelTypes.libMod.JSXOpeningElement__
+  - typings.babelTypes.libMod.JSXSpreadAttribute__
+  - typings.babelTypes.libMod.JSXText__
+  - typings.babelTypes.libMod.JSXFragment__
+  - typings.babelTypes.libMod.JSXOpeningFragment__
+  - typings.babelTypes.libMod.JSXClosingFragment__
 */
 trait JSX extends StObject
 object JSX {
   
-  inline def JSXAttribute(name: JSXIdentifier | JSXNamespacedName): typings.babelTypes.libMod.JSXAttribute = {
+  inline def JSXAttribute__(name: JSXIdentifier__ | JSXNamespacedName__): typings.babelTypes.libMod.JSXAttribute__ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXAttribute")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXAttribute]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXAttribute__]
   }
   
-  inline def JSXClosingElement(name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName): typings.babelTypes.libMod.JSXClosingElement = {
+  inline def JSXClosingElement__(name: JSXIdentifier__ | JSXMemberExpression__ | JSXNamespacedName__): typings.babelTypes.libMod.JSXClosingElement__ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXClosingElement")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXClosingElement]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXClosingElement__]
   }
   
-  inline def JSXClosingFragment(): typings.babelTypes.libMod.JSXClosingFragment = {
+  inline def JSXClosingFragment__(): typings.babelTypes.libMod.JSXClosingFragment__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXClosingFragment")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXClosingFragment]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXClosingFragment__]
   }
   
-  inline def JSXElement(
+  inline def JSXElement__(
     children: js.Array[
-      JSXText | JSXExpressionContainer | JSXSpreadChild | typings.babelTypes.libMod.JSXElement | JSXFragment
+      JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | typings.babelTypes.libMod.JSXElement__ | JSXFragment__
     ],
-    openingElement: JSXOpeningElement
-  ): typings.babelTypes.libMod.JSXElement = {
+    openingElement: JSXOpeningElement__
+  ): typings.babelTypes.libMod.JSXElement__ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXElement")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXElement]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXElement__]
   }
   
-  inline def JSXEmptyExpression(): typings.babelTypes.libMod.JSXEmptyExpression = {
+  inline def JSXEmptyExpression__(): typings.babelTypes.libMod.JSXEmptyExpression__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXEmptyExpression")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXEmptyExpression]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXEmptyExpression__]
   }
   
-  inline def JSXExpressionContainer(expression: Expression | JSXEmptyExpression): typings.babelTypes.libMod.JSXExpressionContainer = {
+  inline def JSXExpressionContainer__(expression: Expression | JSXEmptyExpression__): typings.babelTypes.libMod.JSXExpressionContainer__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXExpressionContainer")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXExpressionContainer]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXExpressionContainer__]
   }
   
-  inline def JSXFragment(
+  inline def JSXFragment__(
     children: js.Array[
-      JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | typings.babelTypes.libMod.JSXFragment
+      JSXText__ | JSXExpressionContainer__ | JSXSpreadChild__ | JSXElement__ | typings.babelTypes.libMod.JSXFragment__
     ],
-    closingFragment: JSXClosingFragment,
-    openingFragment: JSXOpeningFragment
-  ): typings.babelTypes.libMod.JSXFragment = {
+    closingFragment: JSXClosingFragment__,
+    openingFragment: JSXOpeningFragment__
+  ): typings.babelTypes.libMod.JSXFragment__ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingFragment = closingFragment.asInstanceOf[js.Any], openingFragment = openingFragment.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXFragment")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXFragment]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXFragment__]
   }
   
-  inline def JSXIdentifier(name: String): typings.babelTypes.libMod.JSXIdentifier = {
+  inline def JSXIdentifier__(name: String): typings.babelTypes.libMod.JSXIdentifier__ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXIdentifier")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXIdentifier]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXIdentifier__]
   }
   
-  inline def JSXMemberExpression(`object`: typings.babelTypes.libMod.JSXMemberExpression | JSXIdentifier, property: JSXIdentifier): typings.babelTypes.libMod.JSXMemberExpression = {
+  inline def JSXMemberExpression__(
+    `object`: typings.babelTypes.libMod.JSXMemberExpression__ | JSXIdentifier__,
+    property: JSXIdentifier__
+  ): typings.babelTypes.libMod.JSXMemberExpression__ = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXMemberExpression")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXMemberExpression]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXMemberExpression__]
   }
   
-  inline def JSXNamespacedName(name: JSXIdentifier, namespace: JSXIdentifier): typings.babelTypes.libMod.JSXNamespacedName = {
+  inline def JSXNamespacedName__(name: JSXIdentifier__, namespace: JSXIdentifier__): typings.babelTypes.libMod.JSXNamespacedName__ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXNamespacedName")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXNamespacedName]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXNamespacedName__]
   }
   
-  inline def JSXOpeningElement(
-    attributes: js.Array[JSXAttribute | JSXSpreadAttribute],
-    name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName,
+  inline def JSXOpeningElement__(
+    attributes: js.Array[JSXAttribute__ | JSXSpreadAttribute__],
+    name: JSXIdentifier__ | JSXMemberExpression__ | JSXNamespacedName__,
     selfClosing: Boolean
-  ): typings.babelTypes.libMod.JSXOpeningElement = {
+  ): typings.babelTypes.libMod.JSXOpeningElement__ = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXOpeningElement")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXOpeningElement]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXOpeningElement__]
   }
   
-  inline def JSXOpeningFragment(): typings.babelTypes.libMod.JSXOpeningFragment = {
+  inline def JSXOpeningFragment__(): typings.babelTypes.libMod.JSXOpeningFragment__ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXOpeningFragment")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXOpeningFragment]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXOpeningFragment__]
   }
   
-  inline def JSXSpreadAttribute(argument: Expression): typings.babelTypes.libMod.JSXSpreadAttribute = {
+  inline def JSXSpreadAttribute__(argument: Expression): typings.babelTypes.libMod.JSXSpreadAttribute__ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXSpreadAttribute")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXSpreadAttribute]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXSpreadAttribute__]
   }
   
-  inline def JSXSpreadChild(expression: Expression): typings.babelTypes.libMod.JSXSpreadChild = {
+  inline def JSXSpreadChild__(expression: Expression): typings.babelTypes.libMod.JSXSpreadChild__ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXSpreadChild")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXSpreadChild]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXSpreadChild__]
   }
   
-  inline def JSXText(value: String): typings.babelTypes.libMod.JSXText = {
+  inline def JSXText__(value: String): typings.babelTypes.libMod.JSXText__ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXText")
-    __obj.asInstanceOf[typings.babelTypes.libMod.JSXText]
+    __obj.asInstanceOf[typings.babelTypes.libMod.JSXText__]
   }
 }

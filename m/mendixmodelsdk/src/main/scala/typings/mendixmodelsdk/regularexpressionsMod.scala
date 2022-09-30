@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object regularexpressionsMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/regularexpressions", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/regularexpressions", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
@@ -34,9 +34,9 @@ object regularexpressionsMod {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.regularexpressionsMod.regularexpressions.IRegularExpression because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/regularexpressions", "regularexpressions.RegularExpression")
+    - typings.mendixmodelsdk.regularexpressionsMod.regularexpressions.IRegularExpression because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/regularexpressions", "regularexpressions.RegularExpression")
     @js.native
-    class RegularExpression protected () extends Document {
+    open class RegularExpression protected () extends Document {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -53,7 +53,7 @@ object regularexpressionsMod {
     }
     object RegularExpression {
       
-      @JSImport("mendixmodelsdk/dist/gen/regularexpressions", "regularexpressions.RegularExpression")
+      @JSImport("mendixmodelsdk/src/gen/regularexpressions", "regularexpressions.RegularExpression")
       @js.native
       val ^ : js.Any = js.native
       
@@ -65,13 +65,13 @@ object regularexpressionsMod {
       inline def createIn(container: IFolderBase): RegularExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RegularExpression]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/regularexpressions", "regularexpressions.RegularExpression.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/regularexpressions", "regularexpressions.RegularExpression.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/regularexpressions", "regularexpressions.RegularExpression.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/regularexpressions", "regularexpressions.RegularExpression.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

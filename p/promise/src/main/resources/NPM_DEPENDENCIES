@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "promise" : "7.3.1"
+      "promise" : "8.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "promise" : "7.3.1"
+      "promise" : "8.2.0"
     }
   ],
   "compile-devDependencies" : [

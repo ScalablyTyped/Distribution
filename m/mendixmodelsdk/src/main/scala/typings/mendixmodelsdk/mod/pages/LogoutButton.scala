@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.LogoutButton")
 @js.native
-class LogoutButton protected ()
+open class LogoutButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LogoutButton {
   def this(
     model: AbstractModel,

@@ -43,6 +43,12 @@ trait ShortcutDetails extends StObject {
     * The target to launch from this shortcut.
     */
   var target: String
+  
+  /**
+    * The Application Toast Activator CLSID. Needed for participating in Action
+    * Center.
+    */
+  var toastActivatorClsid: js.UndefOr[String] = js.undefined
 }
 object ShortcutDetails {
   
@@ -78,5 +84,9 @@ object ShortcutDetails {
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setToastActivatorClsid(value: String): Self = StObject.set(x, "toastActivatorClsid", value.asInstanceOf[js.Any])
+    
+    inline def setToastActivatorClsidUndefined: Self = StObject.set(x, "toastActivatorClsid", js.undefined)
   }
 }

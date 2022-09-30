@@ -68,8 +68,7 @@ object DepthRenderer {
   val ^ : js.Any = js.native
   
   /**
-    * @param _
-    * @hidden
+    * @internal
     */
   inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

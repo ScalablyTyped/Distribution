@@ -2,6 +2,7 @@ package typings.ospec
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +39,7 @@ object mod extends Shortcut {
   type Definer = js.Function2[
     /* done */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
     /* timeout */ js.Function1[/* delay */ Double, Unit], 
-    Unit | js.Thenable[Any]
+    Unit | PromiseLike[Any]
   ]
   
   type ObjectConstructor = Instantiable1[/* args (repeated) */ Any, Any]

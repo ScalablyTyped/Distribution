@@ -51,9 +51,9 @@ trait BaseLogger extends StObject {
     * @param ...args: format string values when `msg` is a format string
     */
   @JSName("debug")
-  def debug_T_Object[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
+  def debug_T[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
   @JSName("debug")
-  def debug_T_Object[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
+  def debug_T[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
   
   /**
     * Log at `'error'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -99,9 +99,9 @@ trait BaseLogger extends StObject {
     * @param ...args: format string values when `msg` is a format string
     */
   @JSName("error")
-  def error_T_Object[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
+  def error_T[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
   @JSName("error")
-  def error_T_Object[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
+  def error_T[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
   
   /**
     * Log at `'fatal'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -147,9 +147,9 @@ trait BaseLogger extends StObject {
     * @param ...args: format string values when `msg` is a format string
     */
   @JSName("fatal")
-  def fatal_T_Object[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
+  def fatal_T[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
   @JSName("fatal")
-  def fatal_T_Object[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
+  def fatal_T[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
   
   /**
     * Log at `'info'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -195,9 +195,9 @@ trait BaseLogger extends StObject {
     * @param ...args: format string values when `msg` is a format string
     */
   @JSName("info")
-  def info_T_Object[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
+  def info_T[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
   @JSName("info")
-  def info_T_Object[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
+  def info_T[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
   
   /**
     * Set this property to the desired logging level. In order of priority, available levels are:
@@ -236,9 +236,9 @@ trait BaseLogger extends StObject {
     * Noop function.
     */
   @JSName("silent")
-  def silent_T_Object[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
+  def silent_T[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
   @JSName("silent")
-  def silent_T_Object[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
+  def silent_T[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
   
   /**
     * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -284,9 +284,9 @@ trait BaseLogger extends StObject {
     * @param ...args: format string values when `msg` is a format string
     */
   @JSName("trace")
-  def trace_T_Object[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
+  def trace_T[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
   @JSName("trace")
-  def trace_T_Object[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
+  def trace_T[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
   
   /**
     * Log at `'warn'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -332,9 +332,9 @@ trait BaseLogger extends StObject {
     * @param ...args: format string values when `msg` is a format string
     */
   @JSName("warn")
-  def warn_T_Object[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
+  def warn_T[T /* <: js.Object */](obj: T, msg: String, args: Any*): Unit
   @JSName("warn")
-  def warn_T_Object[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
+  def warn_T[T /* <: js.Object */](obj: T, msg: Unit, args: Any*): Unit
 }
 object BaseLogger {
   

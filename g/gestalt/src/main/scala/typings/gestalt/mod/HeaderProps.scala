@@ -1,11 +1,11 @@
 package typings.gestalt.mod
 
-import typings.gestalt.gestaltNumbers.`1`
-import typings.gestalt.gestaltNumbers.`2`
-import typings.gestalt.gestaltNumbers.`3`
-import typings.gestalt.gestaltNumbers.`4`
-import typings.gestalt.gestaltNumbers.`5`
-import typings.gestalt.gestaltNumbers.`6`
+import typings.gestalt.gestaltInts.`1`
+import typings.gestalt.gestaltInts.`2`
+import typings.gestalt.gestaltInts.`3`
+import typings.gestalt.gestaltInts.`4`
+import typings.gestalt.gestaltInts.`5`
+import typings.gestalt.gestaltInts.`6`
 import typings.gestalt.gestaltStrings.`100`
 import typings.gestalt.gestaltStrings.`200`
 import typings.gestalt.gestaltStrings.`300`
@@ -21,7 +21,6 @@ import typings.gestalt.gestaltStrings.error
 import typings.gestalt.gestaltStrings.forceLeft
 import typings.gestalt.gestaltStrings.forceRight
 import typings.gestalt.gestaltStrings.inverse
-import typings.gestalt.gestaltStrings.justify
 import typings.gestalt.gestaltStrings.light
 import typings.gestalt.gestaltStrings.none
 import typings.gestalt.gestaltStrings.normal
@@ -39,7 +38,7 @@ trait HeaderProps extends StObject {
   
   var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | none] = js.undefined
   
-  var align: js.UndefOr[start | end | center | justify | forceLeft | forceRight] = js.undefined
+  var align: js.UndefOr[start | end | center | forceLeft | forceRight] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
@@ -68,7 +67,7 @@ object HeaderProps {
     
     inline def setAccessibilityLevelUndefined: Self = StObject.set(x, "accessibilityLevel", js.undefined)
     
-    inline def setAlign(value: start | end | center | justify | forceLeft | forceRight): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: start | end | center | forceLeft | forceRight): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     

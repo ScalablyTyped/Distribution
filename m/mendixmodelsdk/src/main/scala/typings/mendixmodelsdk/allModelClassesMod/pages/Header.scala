@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/header relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Header")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Header")
 @js.native
-class Header protected ()
+open class Header protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.Header {
   def this(
     model: AbstractModel,
@@ -33,7 +33,7 @@ class Header protected ()
 }
 object Header {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Header")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Header")
   @js.native
   val ^ : js.Any = js.native
   
@@ -607,13 +607,13 @@ object Header {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Header]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Header.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Header.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.Header.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.Header.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

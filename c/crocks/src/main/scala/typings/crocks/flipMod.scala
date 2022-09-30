@@ -10,7 +10,7 @@ object flipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function2[/* y */ B, /* x */ A, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* y */ B, /* x */ A, C]]
+  inline def default[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function1[/* y */ B, js.Function1[/* x */ A, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* y */ B, js.Function1[/* x */ A, C]]]
   
-  inline def default_ABC_Function1[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function1[/* y */ B, js.Function1[/* x */ A, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* y */ B, js.Function1[/* x */ A, C]]]
+  inline def default_ABC_Function2[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function2[/* y */ B, /* x */ A, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* y */ B, /* x */ A, C]]
 }

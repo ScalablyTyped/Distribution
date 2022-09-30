@@ -5,9 +5,9 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.cryptoMod._KeyLike
 import typings.node.fsMod._PathLike
-import typings.node.nodeNumbers.`-1`
-import typings.node.nodeNumbers.`0`
-import typings.node.nodeNumbers.`1`
+import typings.node.nodeInts.`-1`
+import typings.node.nodeInts.`0`
+import typings.node.nodeInts.`1`
 import typings.std.ArrayBufferLike
 import typings.std.ArrayLike
 import typings.std.IterableIterator

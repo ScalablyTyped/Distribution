@@ -22,7 +22,7 @@ trait DocumentProperties
      with ClientObject {
   
   /**
-    * Gets the application name of the document. Read only.
+    * Gets the application name of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -66,7 +66,7 @@ trait DocumentProperties
   var context_DocumentProperties: RequestContext = js.native
   
   /**
-    * Gets the creation date of the document. Read only.
+    * Gets the creation date of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -74,7 +74,7 @@ trait DocumentProperties
   val creationDate: js.Date = js.native
   
   /**
-    * Gets the collection of custom properties of the document. Read only.
+    * Gets the collection of custom properties of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -98,7 +98,7 @@ trait DocumentProperties
   var keywords: String = js.native
   
   /**
-    * Gets the last author of the document. Read only.
+    * Gets the last author of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -106,7 +106,7 @@ trait DocumentProperties
   val lastAuthor: String = js.native
   
   /**
-    * Gets the last print date of the document. Read only.
+    * Gets the last print date of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -114,7 +114,7 @@ trait DocumentProperties
   val lastPrintDate: js.Date = js.native
   
   /**
-    * Gets the last save time of the document. Read only.
+    * Gets the last save time of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -141,7 +141,7 @@ trait DocumentProperties
   var manager: String = js.native
   
   /**
-    * Gets the revision number of the document. Read only.
+    * Gets the revision number of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -149,7 +149,7 @@ trait DocumentProperties
   val revisionNumber: String = js.native
   
   /**
-    * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
+    * Gets security settings of the document. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read-only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -175,7 +175,7 @@ trait DocumentProperties
   var subject: String = js.native
   
   /**
-    * Gets the template of the document. Read only.
+    * Gets the template of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]

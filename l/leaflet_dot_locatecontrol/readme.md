@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet_dot_locatecontrol
 
-Typings are for version 0.60
+Typings are for version 0.74
 
 ## Library description:
 A useful control to geolocate the user with many options. Used by osm.org and mapbox among many others.
@@ -10,10 +10,10 @@ A useful control to geolocate the user with many options. Used by osm.org and ma
 | ------------------ | :-------------: |
 | Full name          | leaflet.locatecontrol |
 | Keywords           | leaflet, locate, plugin |
-| # releases         | 9 |
-| # dependents       | 14 |
-| # downloads        | 233944 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 71148.33333333333 |
+| # stars            | 629.0 |
 
 ## Links
 - [Homepage](https://github.com/domoritz/leaflet-locatecontrol)

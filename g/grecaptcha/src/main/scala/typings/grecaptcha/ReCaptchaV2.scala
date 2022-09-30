@@ -1,6 +1,7 @@
 package typings.grecaptcha
 
 import typings.std.HTMLElement
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,8 +171,8 @@ object ReCaptchaV2 {
       * Programatically invoke the reCAPTCHA check. Used if the invisible reCAPTCHA is on a div instead of a button.
       * @param opt_widget_id Optional widget ID, defaults to the first widget created if unspecified.
       */
-    def execute(): js.Thenable[Unit] = js.native
-    def execute(opt_widget_id: Double): js.Thenable[Unit] = js.native
+    def execute(): PromiseLike[Unit] = js.native
+    def execute(opt_widget_id: Double): PromiseLike[Unit] = js.native
     /**
       * Programatically invoke the reCAPTCHA check. Used if the invisible reCAPTCHA is on a div instead of a button.
       * @param siteKey the key of your site
@@ -179,7 +180,7 @@ object ReCaptchaV2 {
       *
       * @return a promise-like object containing the token
       */
-    def execute(siteKey: String, action: Action): js.Thenable[String] = js.native
+    def execute(siteKey: String, action: Action): PromiseLike[String] = js.native
     
     /**
       * Gets the response for the reCAPTCHA widget.

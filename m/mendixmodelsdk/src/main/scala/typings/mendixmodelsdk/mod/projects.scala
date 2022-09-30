@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.projectsMod.projects.IModule
 import typings.mendixmodelsdk.projectsMod.projects.IProject
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,12 +45,37 @@ object projects {
     inline def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mendixmodelsdk", "projects.ExportLevel")
+  @js.native
+  open class ExportLevel protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.projects.ExportLevel {
+    def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+  }
+  object ExportLevel {
+    
+    @JSImport("mendixmodelsdk", "projects.ExportLevel")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ExportLevel.API")
+    @js.native
+    def API: typings.mendixmodelsdk.projectsMod.projects.ExportLevel = js.native
+    inline def API_=(x: typings.mendixmodelsdk.projectsMod.projects.ExportLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ExportLevel.Hidden")
+    @js.native
+    def Hidden: typings.mendixmodelsdk.projectsMod.projects.ExportLevel = js.native
+    inline def Hidden_=(x: typings.mendixmodelsdk.projectsMod.projects.ExportLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hidden")(x.asInstanceOf[js.Any])
+  }
+  
   /**
     * See: {@link https://docs.mendix.com/refguide/resources relevant section in reference guide}
     */
   @JSImport("mendixmodelsdk", "projects.Folder")
   @js.native
-  class Folder protected ()
+  open class Folder protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.Folder {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -128,7 +154,7 @@ object projects {
     */
   @JSImport("mendixmodelsdk", "projects.Module")
   @js.native
-  class Module protected ()
+  open class Module protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.Module {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -202,9 +228,77 @@ object projects {
     inline def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mendixmodelsdk", "projects.ModuleExportLevel")
+  @js.native
+  open class ModuleExportLevel protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.projects.ModuleExportLevel {
+    def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+  }
+  object ModuleExportLevel {
+    
+    @JSImport("mendixmodelsdk", "projects.ModuleExportLevel")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ModuleExportLevel.Protected")
+    @js.native
+    def Protected: typings.mendixmodelsdk.projectsMod.projects.ModuleExportLevel = js.native
+    inline def Protected_=(x: typings.mendixmodelsdk.projectsMod.projects.ModuleExportLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Protected")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ModuleExportLevel.Source")
+    @js.native
+    def Source: typings.mendixmodelsdk.projectsMod.projects.ModuleExportLevel = js.native
+    inline def Source_=(x: typings.mendixmodelsdk.projectsMod.projects.ModuleExportLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Source")(x.asInstanceOf[js.Any])
+  }
+  
+  /**
+    * See: {@link https://docs.mendix.com/refguide/module-settings relevant section in reference guide}
+    *
+    * In version 9.8.0: introduced
+    */
+  @JSImport("mendixmodelsdk", "projects.ModuleSettings")
+  @js.native
+  open class ModuleSettings protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.projects.ModuleSettings {
+    def this(
+      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      container: IModule
+    ) = this()
+  }
+  object ModuleSettings {
+    
+    @JSImport("mendixmodelsdk", "projects.ModuleSettings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates a new ModuleSettings unit in the SDK and on the server.
+      * Expects one argument, the IModule in which this unit is contained.
+      */
+    /* static member */
+    inline def createIn(container: IModule): typings.mendixmodelsdk.projectsMod.projects.ModuleSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.projectsMod.projects.ModuleSettings]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ModuleSettings.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ModuleSettings.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("mendixmodelsdk", "projects.OneTimeConversionMarker")
   @js.native
-  class OneTimeConversionMarker protected ()
+  open class OneTimeConversionMarker protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.OneTimeConversionMarker {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -255,7 +349,7 @@ object projects {
     */
   @JSImport("mendixmodelsdk", "projects.Project")
   @js.native
-  class Project protected ()
+  open class Project protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.Project {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -286,7 +380,7 @@ object projects {
   
   @JSImport("mendixmodelsdk", "projects.ProjectConversion")
   @js.native
-  class ProjectConversion protected ()
+  open class ProjectConversion protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.ProjectConversion {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -354,5 +448,30 @@ object projects {
     @js.native
     def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("mendixmodelsdk", "projects.ProtectedModuleType")
+  @js.native
+  open class ProtectedModuleType protected ()
+    extends typings.mendixmodelsdk.allModelClassesMod.projects.ProtectedModuleType {
+    def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+  }
+  object ProtectedModuleType {
+    
+    @JSImport("mendixmodelsdk", "projects.ProtectedModuleType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ProtectedModuleType.AddOn")
+    @js.native
+    def AddOn: typings.mendixmodelsdk.projectsMod.projects.ProtectedModuleType = js.native
+    inline def AddOn_=(x: typings.mendixmodelsdk.projectsMod.projects.ProtectedModuleType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddOn")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ProtectedModuleType.Solution")
+    @js.native
+    def Solution: typings.mendixmodelsdk.projectsMod.projects.ProtectedModuleType = js.native
+    inline def Solution_=(x: typings.mendixmodelsdk.projectsMod.projects.ProtectedModuleType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solution")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsforce
 
-Typings are for version 1.9
+Typings are for version 1.11
 
 ## Library description:
 Salesforce API Library for JavaScript

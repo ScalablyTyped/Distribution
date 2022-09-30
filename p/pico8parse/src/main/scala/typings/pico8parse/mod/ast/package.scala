@@ -129,6 +129,28 @@ inline def unaryExpression(operator: UnaryOperator, argument: Expression): Unary
 
 inline def whileStatement(condition: Expression, body: js.Array[Statement]): WhileStatement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("whileStatement")(condition.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[WhileStatement_]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.pico8parse.pico8parseStrings.Plussign
+  - typings.pico8parse.pico8parseStrings.`-_`
+  - typings.pico8parse.pico8parseStrings.Asterisk
+  - typings.pico8parse.pico8parseStrings.Percentsign
+  - typings.pico8parse.pico8parseStrings.^
+  - typings.pico8parse.pico8parseStrings.Slash
+  - typings.pico8parse.pico8parseStrings.SlashSlash
+  - typings.pico8parse.pico8parseStrings.Ampersand
+  - typings.pico8parse.pico8parseStrings.Verticalline
+  - typings.pico8parse.pico8parseStrings.Tilde
+  - typings.pico8parse.pico8parseStrings.LessthansignLessthansign
+  - typings.pico8parse.pico8parseStrings.GreaterthansignGreaterthansign
+  - typings.pico8parse.pico8parseStrings.DotDot
+  - typings.pico8parse.pico8parseStrings.GreaterthansignGreaterthansignGreaterthansign
+  - typings.pico8parse.pico8parseStrings.LessthansignLessthansignGreaterthansign
+  - typings.pico8parse.pico8parseStrings.GreaterthansignGreaterthansignLessthansign
+  - typings.pico8parse.pico8parseStrings.`^^`
+  - java.lang.String
+*/
+type BinaryOperator = _BinaryOperator | String
+
 type BreakStatement_ = Base[BreakStatement]
 
 type IfStatementClauses = Array[IfClause_ | ElseifClause_ | ElseClause_]

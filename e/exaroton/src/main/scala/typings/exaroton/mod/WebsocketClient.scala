@@ -1,7 +1,7 @@
 package typings.exaroton.mod
 
 import typings.exaroton.anon.Console
-import typings.exaroton.exarotonNumbers.`3000`
+import typings.exaroton.exarotonInts.`3000`
 import typings.exaroton.exarotonStrings.ws
 import typings.exaroton.exarotonStrings.wss
 import typings.node.eventsMod.EventEmitter

@@ -13,6 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object queryParamsMod {
   
+  @JSImport("airtable/lib/query_params", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("airtable/lib/query_params", "URL_CHARACTER_LENGTH_LIMIT")
+  @js.native
+  val URL_CHARACTER_LENGTH_LIMIT: /* 15000 */ Double = js.native
+  
   object paramValidators {
     
     @JSImport("airtable/lib/query_params", "paramValidators")
@@ -26,6 +34,8 @@ object queryParamsMod {
     inline def filterByFormula(value: String): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("filterByFormula")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
     
     inline def maxRecords(value: Double): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("maxRecords")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
+    
+    inline def method(value: string | json): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
     
     inline def offset(value: Double): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
     
@@ -42,6 +52,8 @@ object queryParamsMod {
     inline def view(value: String): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("view")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
   }
   
+  inline def shouldListRecordsParamBePassedAsParameter(paramName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldListRecordsParamBePassedAsParameter")(paramName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait QueryParams[TFields] extends StObject {
     
     var cellFormat: js.UndefOr[json | string] = js.undefined
@@ -51,6 +63,8 @@ object queryParamsMod {
     var filterByFormula: js.UndefOr[String] = js.undefined
     
     var maxRecords: js.UndefOr[Double] = js.undefined
+    
+    var method: js.UndefOr[String] = js.undefined
     
     var offset: js.UndefOr[Double] = js.undefined
     
@@ -92,6 +106,10 @@ object queryParamsMod {
       inline def setMaxRecords(value: Double): Self = StObject.set(x, "maxRecords", value.asInstanceOf[js.Any])
       
       inline def setMaxRecordsUndefined: Self = StObject.set(x, "maxRecords", js.undefined)
+      
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

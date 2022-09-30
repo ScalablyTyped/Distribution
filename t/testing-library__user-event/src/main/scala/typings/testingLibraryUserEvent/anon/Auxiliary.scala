@@ -1,10 +1,10 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`0`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`1`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`2`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`3`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`4`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`2`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`3`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

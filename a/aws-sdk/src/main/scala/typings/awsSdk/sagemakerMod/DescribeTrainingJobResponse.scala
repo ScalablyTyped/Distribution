@@ -190,6 +190,11 @@ trait DescribeTrainingJobResponse extends StObject {
     * A VpcConfig object that specifies the VPC that this training job has access to. For more information, see Protect Training Jobs by Using an Amazon Virtual Private Cloud.
     */
   var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.undefined
+  
+  /**
+    * The status of the warm pool associated with the training job.
+    */
+  var WarmPoolStatus: js.UndefOr[typings.awsSdk.sagemakerMod.WarmPoolStatus] = js.undefined
 }
 object DescribeTrainingJobResponse {
   
@@ -365,5 +370,9 @@ object DescribeTrainingJobResponse {
     inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
     inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+    
+    inline def setWarmPoolStatus(value: WarmPoolStatus): Self = StObject.set(x, "WarmPoolStatus", value.asInstanceOf[js.Any])
+    
+    inline def setWarmPoolStatusUndefined: Self = StObject.set(x, "WarmPoolStatus", js.undefined)
   }
 }

@@ -1,6 +1,6 @@
 package typings.nivoColors.anon
 
-import typings.nivoColors.nivoColorsNumbers.`0`
+import typings.nivoColors.nivoColorsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

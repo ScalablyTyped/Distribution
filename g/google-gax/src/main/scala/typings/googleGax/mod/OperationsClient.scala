@@ -7,12 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "OperationsClient")
 @js.native
-class OperationsClient protected ()
+open class OperationsClient protected ()
   extends typings.googleGax.operationsClientMod.OperationsClient {
-  def this(
-    gaxGrpc: typings.googleGax.fallbackMod.GrpcClient,
-    operationsProtos: js.Any,
-    options: ClientOptions
-  ) = this()
-  def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, operationsProtos: js.Any, options: ClientOptions) = this()
+  def this(gaxGrpc: typings.googleGax.fallbackMod.GrpcClient, operationsProtos: Any, options: ClientOptions) = this()
+  def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, operationsProtos: Any, options: ClientOptions) = this()
 }

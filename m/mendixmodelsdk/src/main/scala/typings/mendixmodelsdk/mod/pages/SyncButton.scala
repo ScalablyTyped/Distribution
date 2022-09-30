@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SyncButton")
 @js.native
-class SyncButton protected ()
+open class SyncButton protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SyncButton {
   def this(
     model: AbstractModel,

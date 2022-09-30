@@ -12,8 +12,7 @@ trait MorphTargetManager
   /* private */ var _activeTargets: Any = js.native
   
   /**
-    * @param effect
-    * @hidden
+    * @internal
     */
   def _bind(effect: Effect): Unit = js.native
   
@@ -25,7 +24,7 @@ trait MorphTargetManager
   
   /* private */ var _morphTargetTextureIndices: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _parentContainer: Nullable[AbstractScene] = js.native
   
   /* private */ var _scene: Any = js.native
@@ -42,7 +41,7 @@ trait MorphTargetManager
   
   /* private */ var _targetInfluenceChangedObservers: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _targetStoreTexture: Nullable[RawTexture2DArray] = js.native
   
   /* private */ var _targets: Any = js.native

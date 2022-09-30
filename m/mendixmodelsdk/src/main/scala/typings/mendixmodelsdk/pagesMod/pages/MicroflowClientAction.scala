@@ -14,9 +14,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowClientAction")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.MicroflowClientAction")
 @js.native
-class MicroflowClientAction protected () extends ClientAction {
+open class MicroflowClientAction protected () extends ClientAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,7 +31,7 @@ class MicroflowClientAction protected () extends ClientAction {
 }
 object MicroflowClientAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowClientAction")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MicroflowClientAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -224,13 +224,13 @@ object MicroflowClientAction {
   inline def createInWidgetValueUnderAction(container: WidgetValue): MicroflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowClientAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowClientAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MicroflowClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowClientAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.MicroflowClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

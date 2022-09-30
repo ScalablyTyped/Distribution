@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRepositoryInput extends StObject {
   
   /**
-    * The name of the repository.
+    * The repository name.
     */
   var name: RepositoryName
   

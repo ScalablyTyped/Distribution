@@ -2,8 +2,8 @@ package typings.nightwatch.anon
 
 import typings.nightwatch.mod.JSON_WEB_OBJECT
 import typings.nightwatch.nightwatchBooleans.`true`
-import typings.nightwatch.nightwatchNumbers.`0`
-import typings.nightwatch.nightwatchNumbers.`1`
+import typings.nightwatch.nightwatchInts.`0`
+import typings.nightwatch.nightwatchInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

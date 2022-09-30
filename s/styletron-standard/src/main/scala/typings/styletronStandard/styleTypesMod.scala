@@ -544,7 +544,7 @@ import typings.csstype.mod.Property.WordWrap
 import typings.csstype.mod.Property.WritingMode
 import typings.csstype.mod.Property.ZIndex
 import typings.csstype.mod.Property.Zoom
-import typings.styletronStandard.styletronStandardNumbers.`0`
+import typings.styletronStandard.styletronStandardInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

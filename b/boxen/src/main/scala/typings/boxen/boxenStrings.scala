@@ -1,11 +1,14 @@
 package typings.boxen
 
-import typings.boxen.mod.BorderStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxenStrings {
+  
+  @js.native
+  sealed trait arrow extends StObject
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
   sealed trait black extends StObject
@@ -24,9 +27,7 @@ object boxenStrings {
   inline def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
   
   @js.native
-  sealed trait bold
-    extends StObject
-       with BorderStyle
+  sealed trait bold extends StObject
   inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
@@ -34,9 +35,7 @@ object boxenStrings {
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait classic
-    extends StObject
-       with BorderStyle
+  sealed trait classic extends StObject
   inline def classic: classic = "classic".asInstanceOf[classic]
   
   @js.native
@@ -48,15 +47,11 @@ object boxenStrings {
   inline def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
   
   @js.native
-  sealed trait double
-    extends StObject
-       with BorderStyle
+  sealed trait double extends StObject
   inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait doubleSingle
-    extends StObject
-       with BorderStyle
+  sealed trait doubleSingle extends StObject
   inline def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   
   @js.native
@@ -100,21 +95,15 @@ object boxenStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait round
-    extends StObject
-       with BorderStyle
+  sealed trait round extends StObject
   inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait single
-    extends StObject
-       with BorderStyle
+  sealed trait single extends StObject
   inline def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait singleDouble
-    extends StObject
-       with BorderStyle
+  sealed trait singleDouble extends StObject
   inline def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
   
   @js.native

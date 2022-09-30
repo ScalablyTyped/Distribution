@@ -32,16 +32,10 @@ object Match {
   }
   
   type Pattern = js.UndefOr[
-    StringConstructor | NumberConstructor | BooleanConstructor | ObjectConstructor | FunctionConstructor | (Instantiable1[/* args (repeated) */ js.Any, js.Any]) | Null | String | Double | Boolean | (js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.Pattern */ js.Object
-    ]) | (StringDictionary[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.Pattern */ js.Object
-    ]) | Matcher[js.Any]
+    StringConstructor | NumberConstructor | BooleanConstructor | ObjectConstructor | FunctionConstructor | (Instantiable1[/* args (repeated) */ Any, Any]) | Null | String | Double | Boolean | js.Array[Any] | StringDictionary[Any] | Matcher[Any]
   ]
   
-  type PatternMatch[T /* <: Pattern */] = js.Any | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.PatternMatch<T[K]> * / object}
-    */ typings.meteor.meteorStrings.PatternMatch & TopLevel[js.Any]) | (js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor.Match.PatternMatch<T[0]> */ js.Object
-  ]) | T | js.Function | Boolean | Double | String
+  type PatternMatch[T /* <: Pattern */] = Any | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: any}
+    */ typings.meteor.meteorStrings.PatternMatch & TopLevel[Any]) | js.Array[Any] | T | js.Function | Boolean | Double | String
 }

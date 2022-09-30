@@ -10,10 +10,10 @@ React Rich Text Editor
 | ------------------ | :-------------: |
 | Full name          | react-rte |
 | Keywords           | reactjs, draftjs, contenteditable, wysiwyg, richtext, editor |
-| # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 1076186 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 140599.33333333334 |
+| # stars            | 2765.0 |
 
 ## Links
 - [Homepage](https://github.com/sstur/react-rte#readme)

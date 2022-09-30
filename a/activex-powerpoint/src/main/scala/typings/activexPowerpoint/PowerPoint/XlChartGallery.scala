@@ -1,16 +1,16 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`21`
-import typings.activexPowerpoint.activexPowerpointNumbers.`22`
-import typings.activexPowerpoint.activexPowerpointNumbers.`23`
+import typings.activexPowerpoint.activexPowerpointInts.`21`
+import typings.activexPowerpoint.activexPowerpointInts.`22`
+import typings.activexPowerpoint.activexPowerpointInts.`23`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`23`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`21`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`22`
+  - typings.activexPowerpoint.activexPowerpointInts.`23`
+  - typings.activexPowerpoint.activexPowerpointInts.`21`
+  - typings.activexPowerpoint.activexPowerpointInts.`22`
 */
 trait XlChartGallery extends StObject
 object XlChartGallery {

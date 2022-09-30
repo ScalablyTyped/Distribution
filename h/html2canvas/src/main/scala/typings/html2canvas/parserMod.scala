@@ -1,35 +1,35 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`10`
-import typings.html2canvas.html2canvasNumbers.`11`
-import typings.html2canvas.html2canvasNumbers.`12`
-import typings.html2canvas.html2canvasNumbers.`13`
-import typings.html2canvas.html2canvasNumbers.`14`
-import typings.html2canvas.html2canvasNumbers.`16`
-import typings.html2canvas.html2canvasNumbers.`17`
-import typings.html2canvas.html2canvasNumbers.`18`
-import typings.html2canvas.html2canvasNumbers.`19`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`20`
-import typings.html2canvas.html2canvasNumbers.`21`
-import typings.html2canvas.html2canvasNumbers.`22`
-import typings.html2canvas.html2canvasNumbers.`23`
-import typings.html2canvas.html2canvasNumbers.`24`
-import typings.html2canvas.html2canvasNumbers.`25`
-import typings.html2canvas.html2canvasNumbers.`26`
-import typings.html2canvas.html2canvasNumbers.`27`
-import typings.html2canvas.html2canvasNumbers.`28`
-import typings.html2canvas.html2canvasNumbers.`29`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`31`
-import typings.html2canvas.html2canvasNumbers.`32`
-import typings.html2canvas.html2canvasNumbers.`3`
-import typings.html2canvas.html2canvasNumbers.`4`
-import typings.html2canvas.html2canvasNumbers.`6`
-import typings.html2canvas.html2canvasNumbers.`7`
-import typings.html2canvas.html2canvasNumbers.`8`
-import typings.html2canvas.html2canvasNumbers.`9`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`10`
+import typings.html2canvas.html2canvasInts.`11`
+import typings.html2canvas.html2canvasInts.`12`
+import typings.html2canvas.html2canvasInts.`13`
+import typings.html2canvas.html2canvasInts.`14`
+import typings.html2canvas.html2canvasInts.`16`
+import typings.html2canvas.html2canvasInts.`17`
+import typings.html2canvas.html2canvasInts.`18`
+import typings.html2canvas.html2canvasInts.`19`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`20`
+import typings.html2canvas.html2canvasInts.`21`
+import typings.html2canvas.html2canvasInts.`22`
+import typings.html2canvas.html2canvasInts.`23`
+import typings.html2canvas.html2canvasInts.`24`
+import typings.html2canvas.html2canvasInts.`25`
+import typings.html2canvas.html2canvasInts.`26`
+import typings.html2canvas.html2canvasInts.`27`
+import typings.html2canvas.html2canvasInts.`28`
+import typings.html2canvas.html2canvasInts.`29`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`31`
+import typings.html2canvas.html2canvasInts.`32`
+import typings.html2canvas.html2canvasInts.`3`
+import typings.html2canvas.html2canvasInts.`4`
+import typings.html2canvas.html2canvasInts.`6`
+import typings.html2canvas.html2canvasInts.`7`
+import typings.html2canvas.html2canvasInts.`8`
+import typings.html2canvas.html2canvasInts.`9`
 import typings.html2canvas.tokenizerMod.CSSToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -119,9 +119,9 @@ object parserMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`28`
-    - typings.html2canvas.html2canvasNumbers.`11`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`28`
+    - typings.html2canvas.html2canvasInts.`11`
   */
   trait CSSBlockType extends StObject
   

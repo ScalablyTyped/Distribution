@@ -120,7 +120,7 @@ object useControllableValueMod {
     ]
   ]]
   
-  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](): js.Tuple2[
+  inline def useControllableValue_TValueTElementTEvent[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 
@@ -135,7 +135,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue): js.Tuple2[
+  inline def useControllableValue_TValueTElementTEvent[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 
@@ -150,7 +150,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue, defaultUncontrolledValue: TValue): js.Tuple2[
+  inline def useControllableValue_TValueTElementTEvent[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: TValue, defaultUncontrolledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 
@@ -165,7 +165,7 @@ object useControllableValueMod {
       Unit
     ]
   ]]
-  inline def `useControllableValue_TValueTElement_HTMLElementTEvent_UnionSyntheticEventTElementEvent<undefined>`[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: Unit, defaultUncontrolledValue: TValue): js.Tuple2[
+  inline def useControllableValue_TValueTElementTEvent[TValue, TElement /* <: HTMLElement */, TEvent /* <: js.UndefOr[SyntheticEvent[TElement, Event]] */](controlledValue: Unit, defaultUncontrolledValue: TValue): js.Tuple2[
     js.UndefOr[TValue], 
     js.Function2[
       /* update */ SetStateAction[js.UndefOr[TValue]], 

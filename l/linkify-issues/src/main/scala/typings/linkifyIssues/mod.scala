@@ -1,82 +1,53 @@
 package typings.linkifyIssues
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.linkifyIssues.linkifyIssuesStrings.dom
 import typings.linkifyIssues.linkifyIssuesStrings.string
 import typings.std.DocumentFragment
+import typings.stringifyAttributes.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  /**
-  Linkify GitHub issue references.
-  @param string - String with issue references to linkify.
-  @example
-  ```
-  import linkifyIssues = require('linkify-issues');
-  linkifyIssues('Fixes #143 and avajs/ava#1023', {
-  	user: 'sindresorhus',
-  	repository: 'dofle',
-  	attributes: {
-  		class: 'unicorn',
-  		multiple: ['a', 'b'],
-  		number: 1,
-  		exclude: false,
-  		include: true
-  	}
-  });
-  //=> 'Fixes <a href="https://github.com/sindresorhus/dofle/issues/143" class="unicorn" multiple="a b" number="1" include>#143</a> and <a href="https://github.com/avajs/ava/issues/1023" class="unicorn" multiple="a b" number="1" include>avajs/ava#1023</a>'
-  const fragment = linkifyUrls('See #143', {
-  	user: 'sindresorhus',
-  	repository: 'dofle',
-  	type: 'dom',
-  	attributes: {
-  		class: 'unicorn',
-  	}
-  });
-  document.body.appendChild(fragment);
-  ```
-  */
-  inline def apply(string: String, options: TypeDomOptions): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
-  
   @JSImport("linkify-issues", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(string: String, options: TypeDomOptions): DocumentFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  
   trait Options extends StObject {
     
     /**
-    		HTML attributes to add to the link.
-    		*/
-    var attributes: js.UndefOr[StringDictionary[String | Double | Boolean | js.Array[String]]] = js.undefined
+    	HTML attributes to add to the link.
+    	*/
+    val attributes: js.UndefOr[HTMLAttributes] = js.undefined
     
     /**
-    		Base URL.
-    		@default 'https://github.com'
-    		*/
-    var baseUrl: js.UndefOr[String] = js.undefined
+    	The base URL.
+    	@default 'https://github.com'
+    	*/
+    val baseUrl: js.UndefOr[String] = js.undefined
     
     /**
-    		GitHub repository.
-    		*/
-    var repository: String
+    	GitHub repository.
+    	*/
+    val repository: String
     
     /**
-    		Format of the generated content.
-    		`'string'` will return it as a flat string like `'See <a href="https://github.com/sindresorhus/dofle/issue/143">#143</a>'`.
-    		`'dom'` will return it as a `DocumentFragment` ready to be appended in a DOM safely, like `DocumentFragment(TextNode('See '), HTMLAnchorElement('#143'))`. This type only works in the browser.
-    		@default 'string'
-    		*/
-    var `type`: js.UndefOr[string | dom] = js.undefined
+    	The format of the generated content.
+    	`'string'` will return it as a flat string like `'See <a href="https://github.com/sindresorhus/dofle/issue/143">#143</a>'`.
+    	`'dom'` will return it as a `DocumentFragment` ready to be appended in a DOM safely, like `DocumentFragment(TextNode('See '), HTMLAnchorElement('#143'))`. This type only works in the browser.
+    	@default 'string'
+    	*/
+    val `type`: js.UndefOr[string | dom] = js.undefined
     
     /**
-    		GitHub user.
-    		*/
-    var user: String
+    	GitHub user.
+    	*/
+    val user: String
   }
   object Options {
     
@@ -87,7 +58,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAttributes(value: StringDictionary[String | Double | Boolean | js.Array[String]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: HTMLAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
@@ -110,7 +81,7 @@ object mod {
        with Options {
     
     @JSName("type")
-    var type_TypeDomOptions: dom
+    val type_TypeDomOptions: dom
   }
   object TypeDomOptions {
     

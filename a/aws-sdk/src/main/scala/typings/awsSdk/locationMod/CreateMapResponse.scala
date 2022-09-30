@@ -14,7 +14,7 @@ trait CreateMapResponse extends StObject {
   /**
     * The Amazon Resource Name (ARN) for the map resource. Used to specify a resource across all AWS.   Format example: arn:aws:geo:region:account-id:maps/ExampleMap   
     */
-  var MapArn: Arn
+  var MapArn: GeoArn
   
   /**
     * The name of the map resource.
@@ -23,7 +23,7 @@ trait CreateMapResponse extends StObject {
 }
 object CreateMapResponse {
   
-  inline def apply(CreateTime: js.Date, MapArn: Arn, MapName: ResourceName): CreateMapResponse = {
+  inline def apply(CreateTime: js.Date, MapArn: GeoArn, MapName: ResourceName): CreateMapResponse = {
     val __obj = js.Dynamic.literal(CreateTime = CreateTime.asInstanceOf[js.Any], MapArn = MapArn.asInstanceOf[js.Any], MapName = MapName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMapResponse]
   }
@@ -32,7 +32,7 @@ object CreateMapResponse {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    inline def setMapArn(value: Arn): Self = StObject.set(x, "MapArn", value.asInstanceOf[js.Any])
+    inline def setMapArn(value: GeoArn): Self = StObject.set(x, "MapArn", value.asInstanceOf[js.Any])
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
   }

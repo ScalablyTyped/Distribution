@@ -85,6 +85,8 @@ open class Scene_ protected () extends EventHandler {
   
   var _skyboxIntensity: Double = js.native
   
+  var _skyboxLuminance: Double = js.native
+  
   var _skyboxMip: Double = js.native
   
   var _skyboxRotation: Quat = js.native
@@ -153,6 +155,13 @@ open class Scene_ protected () extends EventHandler {
     */
   var ambientLight: Color = js.native
   
+  /**
+    * The luminosity of the scene's ambient light in lux (lm/m^2). Used if physicalUnits is true. Defaults to 0.
+    *
+    * @type {number}
+    */
+  var ambientLuminance: Double = js.native
+  
   def applySettings(settings: Any): Unit = js.native
   
   def clusteredLightingEnabled: Boolean = js.native
@@ -207,7 +216,7 @@ open class Scene_ protected () extends EventHandler {
   
   var device: Any = js.native
   
-  /* private */ def drawCalls: Any = js.native
+  def drawCalls: js.Array[Any] = js.native
   /**
     * List of all active composition mesh instances. Only for backwards compatibility.
     * TODO: BatchManager is using it - perhaps that could be refactored
@@ -215,7 +224,7 @@ open class Scene_ protected () extends EventHandler {
     * @type {MeshInstance[]}
     * @private
     */
-  /* private */ def drawCalls_=(arg: Any): Unit = js.native
+  def drawCalls_=(arg: js.Array[Any]): Unit = js.native
   
   def drawLine(start: Any, end: Any): Unit = js.native
   def drawLine(start: Any, end: Any, color: Unit, depthTest: Boolean): Unit = js.native
@@ -245,7 +254,7 @@ open class Scene_ protected () extends EventHandler {
   def envAtlas_=(arg: Texture): Unit = js.native
   
   /**
-    * The exposure value tweaks the overall brightness of the scene. Defaults to 1.
+    * The exposure value tweaks the overall brightness of the scene. Ignored if physicalUnits is true. Defaults to 1.
     *
     * @type {number}
     */
@@ -387,6 +396,13 @@ open class Scene_ protected () extends EventHandler {
     */
   var lightmapSizeMultiplier: Double = js.native
   
+  /**
+    * Use physically based units for cameras and lights. When used, the exposure value is ignored.
+    *
+    * @type {boolean}
+    */
+  var physicalUnits: Boolean = js.native
+  
   def prefilteredCubemaps: js.Array[Texture] = js.native
   /**
     * Set of 6 prefiltered cubemaps.
@@ -427,11 +443,19 @@ open class Scene_ protected () extends EventHandler {
   
   def skyboxIntensity: Double = js.native
   /**
-    * Multiplier for skybox intensity. Defaults to 1.
+    * Multiplier for skybox intensity. Defaults to 1. Unused if physical units are used.
     *
     * @type {number}
     */
   def skyboxIntensity_=(arg: Double): Unit = js.native
+  
+  def skyboxLuminance: Double = js.native
+  /**
+    * Luminance (in lm/m^2) of skybox. Defaults to 0. Only used if physical units are used.
+    *
+    * @type {number}
+    */
+  def skyboxLuminance_=(arg: Double): Unit = js.native
   
   def skyboxMip: Double = js.native
   /**

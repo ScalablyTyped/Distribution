@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.Find")
 @js.native
-class Find protected ()
+open class Find protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.Find {
   def this(
     model: AbstractModel,

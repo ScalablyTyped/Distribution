@@ -94,6 +94,8 @@ type DistanceUnit = _DistanceUnit | java.lang.String
 
 type Double = scala.Double
 
+type GeoArn = java.lang.String
+
 type GetDevicePositionHistoryRequestMaxResultsInteger = scala.Double
 
 type GetMapGlyphsRequestFontUnicodeRangeString = java.lang.String
@@ -164,6 +166,8 @@ type ListTrackersRequestMaxResultsInteger = scala.Double
 type ListTrackersResponseEntryList = js.Array[ListTrackersResponseEntry]
 
 type MapStyle = java.lang.String
+
+type PlaceId = java.lang.String
 
 type PlaceIndexSearchResultLimit = scala.Double
 

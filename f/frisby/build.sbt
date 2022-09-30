@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "frisby"
-version := "2.0-dt-20200515Z-3326e0"
-scalaVersion := "2.13.3"
+version := "2.0-dt-20220819Z-bc4eec"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "form-data" % "3.0.0-d641e7",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20200515Z-11c1c9",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
-  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20200515Z-990985",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-bbb0dd",
+  "org.scalablytyped" %%% "joi" % "17.6.2-2be84d",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "node-fetch" % "3.2.10-8eede4",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

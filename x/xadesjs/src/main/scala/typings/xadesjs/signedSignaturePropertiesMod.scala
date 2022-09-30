@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object signedSignaturePropertiesMod {
   
-  @JSImport("xadesjs/build/types/xml/signed_signature_properties", "SignedSignatureProperties")
+  @JSImport("xadesjs/build/types/src/xml/signed_signature_properties", "SignedSignatureProperties")
   @js.native
-  class SignedSignatureProperties () extends XadesObject {
+  open class SignedSignatureProperties () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Id: String = js.native

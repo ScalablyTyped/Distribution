@@ -12,16 +12,9 @@ import typings.protractorHttpMock.anon.PathRegex
 import typings.protractorHttpMock.anon.PathString
 import typings.protractorHttpMock.anon.Regex
 import typings.protractorHttpMock.mod.requests.AllRequests
-import typings.protractorHttpMock.mod.requests.Delete
 import typings.protractorHttpMock.mod.requests.Get
-import typings.protractorHttpMock.mod.requests.Head
-import typings.protractorHttpMock.mod.requests.Jsonp
 import typings.protractorHttpMock.mod.requests.Method
-import typings.protractorHttpMock.mod.requests.Patch
-import typings.protractorHttpMock.mod.requests.Post
 import typings.protractorHttpMock.mod.requests.PostData
-import typings.protractorHttpMock.mod.requests.Put
-import typings.protractorHttpMock.mod.requests.PutData
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,9 +32,6 @@ object mod extends Shortcut {
   @js.native
   trait Plugin1[T1] extends StObject {
     
-    def `match`[O /* <: Put[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
-    @JSName("match")
-    def match_O_DeleteT1[O /* <: Delete[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
     /**
       * Match function.
       * Return a truthy value to indicate successfull match.
@@ -49,16 +39,7 @@ object mod extends Shortcut {
       * @param mockRequest The mock to compare request with.
       * @param requestConfig The request object to compare mock with.
       */
-    @JSName("match")
-    def match_O_GetT1[O /* <: Get[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
-    @JSName("match")
-    def match_O_HeadT1[O /* <: Head[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
-    @JSName("match")
-    def match_O_JsonpT1[O /* <: Jsonp[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
-    @JSName("match")
-    def match_O_PatchT1[O /* <: Patch[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
-    @JSName("match")
-    def match_O_PostT1[O /* <: Post[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
+    def `match`[O /* <: Get[T1] */](mockRequest: O, requestConfig: O): Boolean = js.native
   }
   
   /**
@@ -75,8 +56,6 @@ object mod extends Shortcut {
       * @param requestConfig The request object to compare mock with.
       */
     def `match`[O /* <: PostData[T1, T2] */](mockRequest: O, requestConfig: O): Boolean = js.native
-    @JSName("match")
-    def match_O_PutDataT1T2[O /* <: PutData[T1, T2] */](mockRequest: O, requestConfig: O): Boolean = js.native
   }
   
   @js.native

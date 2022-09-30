@@ -3,6 +3,7 @@ package typings.webcomponentsJs
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.DocumentFragment
 import typings.std.HTMLElement
+import typings.std.PromiseLike
 import typings.webcomponentsJs.mod.global.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -139,7 +140,7 @@ object mod {
       
       def get(name: String): Any = js.native
       
-      def whenDefined(name: String): js.Thenable[Unit] = js.native
+      def whenDefined(name: String): PromiseLike[Unit] = js.native
     }
     
     trait Document extends StObject {

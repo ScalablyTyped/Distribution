@@ -21,8 +21,8 @@ object config {
     /**
       * An auction configuration object for this component auction.
       *
-      * If this value is set to <code>null</code>, any existing configuration for
-      * the specified <code>configKey</code> will be deleted.
+      * If this value is set to `null`, any existing configuration for
+      * the specified `configKey` will be deleted.
       *
       * @example
       *
@@ -69,7 +69,7 @@ object config {
       * The configuration key associated with this component auction.
       *
       * This value must be non-empty and should be unique. If two
-      * <code>ComponentAuctionConfig</code> objects share the same configKey value,
+      * `ComponentAuctionConfig` objects share the same configKey value,
       * the last to be set will overwrite prior configurations.
       */
     var configKey: String

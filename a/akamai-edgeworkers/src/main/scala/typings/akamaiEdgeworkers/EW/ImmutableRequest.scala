@@ -12,6 +12,7 @@ trait ImmutableRequest
 object ImmutableRequest {
   
   inline def apply(
+    body: ReadableStreamEW[Any],
     cpCode: Double,
     getHeader: String => js.Array[String] | Null,
     getVariable: String => js.UndefOr[String],
@@ -22,7 +23,7 @@ object ImmutableRequest {
     scheme: String,
     url: String
   ): ImmutableRequest = {
-    val __obj = js.Dynamic.literal(cpCode = cpCode.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), getVariable = js.Any.fromFunction1(getVariable), host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], cpCode = cpCode.asInstanceOf[js.Any], getHeader = js.Any.fromFunction1(getHeader), getVariable = js.Any.fromFunction1(getVariable), host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImmutableRequest]
   }
 }

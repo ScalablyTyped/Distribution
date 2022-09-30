@@ -11,19 +11,19 @@ object mockMod {
   
   @JSImport("protractor/built/driverProviders/mock", "Mock")
   @js.native
-  class Mock () extends DriverProvider {
+  open class Mock () extends DriverProvider {
     def this(config: Config) = this()
     
     /**
       * An execute function that returns a promise with a test value.
       */
-    def execute(): Promise[js.Any] = js.native
+    def execute(): Promise[Any] = js.native
   }
   
   @JSImport("protractor/built/driverProviders/mock", "MockExecutor")
   @js.native
-  class MockExecutor () extends StObject {
+  open class MockExecutor () extends StObject {
     
-    def execute(command: js.Any): js.Any = js.native
+    def execute(command: Any): Any = js.native
   }
 }

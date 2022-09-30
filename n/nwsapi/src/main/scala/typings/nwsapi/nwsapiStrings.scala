@@ -15,18 +15,6 @@ object nwsapiStrings {
   inline def $: $ = "$".asInstanceOf[$]
   
   @js.native
-  sealed trait `Leftparenthesis-Verticalline$Rightparenthesis` extends StObject
-  inline def `Leftparenthesis-Verticalline$Rightparenthesis`: `Leftparenthesis-Verticalline$Rightparenthesis` = "(-|$)".asInstanceOf[`Leftparenthesis-Verticalline$Rightparenthesis`]
-  
-  @js.native
-  sealed trait LeftparenthesisBackslashsVerticalline$Rightparenthesis extends StObject
-  inline def LeftparenthesisBackslashsVerticalline$Rightparenthesis: LeftparenthesisBackslashsVerticalline$Rightparenthesis = "(\\s|$)".asInstanceOf[LeftparenthesisBackslashsVerticalline$Rightparenthesis]
-  
-  @js.native
-  sealed trait `Leftparenthesis^VerticallineBackslashsRightparenthesis` extends StObject
-  inline def `Leftparenthesis^VerticallineBackslashsRightparenthesis`: `Leftparenthesis^VerticallineBackslashsRightparenthesis` = "(^|\\s)".asInstanceOf[`Leftparenthesis^VerticallineBackslashsRightparenthesis`]
-  
-  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   

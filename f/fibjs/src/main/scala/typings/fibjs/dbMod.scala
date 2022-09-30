@@ -18,11 +18,11 @@ object dbMod {
   inline def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def escape(str: String, mysql: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any], mysql.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def format(sql: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(sql.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(sql: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(sql.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
-  inline def formatMSSQL(sql: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMSSQL")(List(sql.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def formatMSSQL(sql: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMSSQL")(scala.List(sql.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
-  inline def formatMySQL(sql: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMySQL")(List(sql.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def formatMySQL(sql: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMySQL")(scala.List(sql.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def open(connString: String): ClassObject = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connString.asInstanceOf[js.Any]).asInstanceOf[ClassObject]
   

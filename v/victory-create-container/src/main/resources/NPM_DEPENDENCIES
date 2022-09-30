@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-create-container" : "36.6.7"
+      "victory-create-container" : "36.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-create-container" : "36.6.7"
+      "victory-create-container" : "36.6.8"
     }
   ],
   "compile-devDependencies" : [

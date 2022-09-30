@@ -566,14 +566,14 @@ trait Nimble extends Service {
   ): Request[StartStreamingSessionResponse, AWSError] = js.native
   
   /**
-    * Repairs the Amazon Web Services SSO configuration for a given studio. If the studio has a valid Amazon Web Services SSO configuration currently associated with it, this operation will fail with a validation error. If the studio does not have a valid Amazon Web Services SSO configuration currently associated with it, then a new Amazon Web Services SSO application is created for the studio and the studio is changed to the READY state. After the Amazon Web Services SSO application is repaired, you must use the Amazon Nimble Studio console to add administrators and users to your studio.
+    * Repairs the IAM Identity Center configuration for a given studio. If the studio has a valid IAM Identity Center configuration currently associated with it, this operation will fail with a validation error. If the studio does not have a valid IAM Identity Center configuration currently associated with it, then a new IAM Identity Center application is created for the studio and the studio is changed to the READY state. After the IAM Identity Center application is repaired, you must use the Amazon Nimble Studio console to add administrators and users to your studio.
     */
   def startStudioSSOConfigurationRepair(): Request[StartStudioSSOConfigurationRepairResponse, AWSError] = js.native
   def startStudioSSOConfigurationRepair(
     callback: js.Function2[/* err */ AWSError, /* data */ StartStudioSSOConfigurationRepairResponse, Unit]
   ): Request[StartStudioSSOConfigurationRepairResponse, AWSError] = js.native
   /**
-    * Repairs the Amazon Web Services SSO configuration for a given studio. If the studio has a valid Amazon Web Services SSO configuration currently associated with it, this operation will fail with a validation error. If the studio does not have a valid Amazon Web Services SSO configuration currently associated with it, then a new Amazon Web Services SSO application is created for the studio and the studio is changed to the READY state. After the Amazon Web Services SSO application is repaired, you must use the Amazon Nimble Studio console to add administrators and users to your studio.
+    * Repairs the IAM Identity Center configuration for a given studio. If the studio has a valid IAM Identity Center configuration currently associated with it, this operation will fail with a validation error. If the studio does not have a valid IAM Identity Center configuration currently associated with it, then a new IAM Identity Center application is created for the studio and the studio is changed to the READY state. After the IAM Identity Center application is repaired, you must use the Amazon Nimble Studio console to add administrators and users to your studio.
     */
   def startStudioSSOConfigurationRepair(params: StartStudioSSOConfigurationRepairRequest): Request[StartStudioSSOConfigurationRepairResponse, AWSError] = js.native
   def startStudioSSOConfigurationRepair(
@@ -778,7 +778,7 @@ trait Nimble extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetStreamingImageResponse, Unit]
   ): Request[GetStreamingImageResponse, AWSError] = js.native
   /**
-    * Waits for the streamingSessionDeleted state by periodically calling the underlying Nimble.getStreamingSessionoperation every 5 seconds (at most 180 times). Wait until a StreamingSessionDeleted. Use this after invoking Deletesession
+    * Waits for the streamingSessionDeleted state by periodically calling the underlying Nimble.getStreamingSessionoperation every 5 seconds (at most 180 times). Wait until a StreamingSessionDeleted. Use this after invoking DeleteStreamingSession
     */
   @JSName("waitFor")
   def waitFor_streamingSessionDeleted(state: streamingSessionDeleted): Request[GetStreamingSessionResponse, AWSError] = js.native
@@ -788,7 +788,7 @@ trait Nimble extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetStreamingSessionResponse, Unit]
   ): Request[GetStreamingSessionResponse, AWSError] = js.native
   /**
-    * Waits for the streamingSessionDeleted state by periodically calling the underlying Nimble.getStreamingSessionoperation every 5 seconds (at most 180 times). Wait until a StreamingSessionDeleted. Use this after invoking Deletesession
+    * Waits for the streamingSessionDeleted state by periodically calling the underlying Nimble.getStreamingSessionoperation every 5 seconds (at most 180 times). Wait until a StreamingSessionDeleted. Use this after invoking DeleteStreamingSession
     */
   @JSName("waitFor")
   def waitFor_streamingSessionDeleted(state: streamingSessionDeleted, params: GetStreamingSessionReques): Request[GetStreamingSessionResponse, AWSError] = js.native

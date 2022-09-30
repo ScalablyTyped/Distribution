@@ -22,7 +22,7 @@ object FieldData {
     
     inline def setPoints(value: js.Array[LatE6]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: LatE6*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: LatE6*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
   }

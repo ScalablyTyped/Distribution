@@ -2,7 +2,6 @@ package typings.storybookReactNative
 
 import typings.storybookClientApi.mod.ClientApi
 import typings.storybookClientApi.mod.StoryStore
-import typings.storybookClientApi.typesMod.StoreItem
 import typings.storybookReactNative.anon.BackgroundColor
 import typings.storybookReactNative.anon.Instantiable
 import typings.storybookReactNative.anon.PartialParams
@@ -15,7 +14,7 @@ object previewMod {
   
   @JSImport("@storybook/react-native/dist/preview", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Preview
   
@@ -48,7 +47,7 @@ object previewMod {
     
     var host: String
     
-    var initialSelection: js.Any
+    var initialSelection: Any
     
     var isUIHidden: Boolean
     
@@ -77,7 +76,7 @@ object previewMod {
     inline def apply(
       disableWebsockets: Boolean,
       host: String,
-      initialSelection: js.Any,
+      initialSelection: Any,
       isUIHidden: Boolean,
       keyboardAvoidingViewVerticalOffset: Double,
       onDeviceUI: Boolean,
@@ -106,7 +105,7 @@ object previewMod {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      inline def setInitialSelection(value: js.Any): Self = StObject.set(x, "initialSelection", value.asInstanceOf[js.Any])
+      inline def setInitialSelection(value: Any): Self = StObject.set(x, "initialSelection", value.asInstanceOf[js.Any])
       
       inline def setIsUIHidden(value: Boolean): Self = StObject.set(x, "isUIHidden", value.asInstanceOf[js.Any])
       
@@ -135,37 +134,51 @@ object previewMod {
   @js.native
   trait Preview extends StObject {
     
-    var _addons: js.Any = js.native
+    var _addons: Any = js.native
     
     var _asyncStorage: AsyncStorage | Null = js.native
     
     var _asyncStorageStoryId: String = js.native
     
-    def _checkStory(storyId: String): StoreItem = js.native
+    def _checkStory(storyId: String): Any = js.native
     
-    var _clientApi: ClientApi = js.native
+    var _clientApi: ClientApi[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any
+      ] = js.native
     
-    var _decorators: js.Array[js.Any] = js.native
+    var _decorators: js.Array[Any] = js.native
     
-    def _getInitialStory(initialSelection: js.Any): js.Function0[js.Promise[StoreItem]] = js.native
-    def _getInitialStory(initialSelection: js.Any, shouldPersistSelection: Boolean): js.Function0[js.Promise[StoreItem]] = js.native
+    def _getInitialStory(initialSelection: Any): js.Function0[
+        js.Promise[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.StoreItem */ Any
+        ]
+      ] = js.native
+    def _getInitialStory(initialSelection: Any, shouldPersistSelection: Boolean): js.Function0[
+        js.Promise[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.StoreItem */ Any
+        ]
+      ] = js.native
     
-    def _getStory(storyId: String): StoreItem = js.native
+    def _getStory(storyId: String): Any = js.native
     
-    def _selectStory(story: js.Any): Unit = js.native
+    def _selectStory(story: Any): Unit = js.native
     
     def _selectStoryEvent(hasStoryId: StoryId): Unit = js.native
     
     def _sendSetStories(): Unit = js.native
     
-    def _setInitialStory(initialSelection: js.Any): js.Promise[Unit] = js.native
-    def _setInitialStory(initialSelection: js.Any, shouldPersistSelection: Boolean): js.Promise[Unit] = js.native
+    def _setInitialStory(initialSelection: Any): js.Promise[Unit] = js.native
+    def _setInitialStory(initialSelection: Any, shouldPersistSelection: Boolean): js.Promise[Unit] = js.native
     
-    var _stories: StoryStore = js.native
+    var _stories: StoryStore[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any
+      ] = js.native
     
-    def api(): ClientApi = js.native
+    def api(): ClientApi[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any
+      ] = js.native
     
-    def configure(loadStories: js.Function0[Unit], module: js.Any): Unit = js.native
+    def configure(loadStories: js.Function0[Unit], module: Any): Unit = js.native
     
     def getStorybookUI(): Instantiable = js.native
     def getStorybookUI(params: PartialParams): Instantiable = js.native

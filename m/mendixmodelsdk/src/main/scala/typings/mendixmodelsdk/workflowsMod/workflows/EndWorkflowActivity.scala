@@ -12,21 +12,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.mendixmodelsdk.structuresMod.aliases.IContainer because Already inherited
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
+- typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowActivity because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IEndWorkflowActivity because var conflicts: caption, containerAsFlow, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.EndWorkflowActivity")
+- typings.mendixmodelsdk.workflowsMod.workflows.IEndWorkflowActivity because var conflicts: caption, containerAsFlow, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.EndWorkflowActivity")
 @js.native
-class EndWorkflowActivity protected () extends WorkflowActivity {
+open class EndWorkflowActivity protected () extends WorkflowActivity {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -41,7 +39,7 @@ class EndWorkflowActivity protected () extends WorkflowActivity {
 }
 object EndWorkflowActivity {
   
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.EndWorkflowActivity")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.EndWorkflowActivity")
   @js.native
   val ^ : js.Any = js.native
   
@@ -59,19 +57,19 @@ object EndWorkflowActivity {
     * of the parent Flow element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: Flow): EndWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EndWorkflowActivity]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.EndWorkflowActivity.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.EndWorkflowActivity.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.EndWorkflowActivity.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.EndWorkflowActivity.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

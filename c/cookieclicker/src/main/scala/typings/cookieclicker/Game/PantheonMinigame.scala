@@ -1,10 +1,10 @@
 package typings.cookieclicker.Game
 
 import typings.cookieclicker.cookieclickerBooleans.`false`
-import typings.cookieclicker.cookieclickerNumbers.`-1`
-import typings.cookieclicker.cookieclickerNumbers.`0`
-import typings.cookieclicker.cookieclickerNumbers.`1`
-import typings.cookieclicker.cookieclickerNumbers.`2`
+import typings.cookieclicker.cookieclickerInts.`-1`
+import typings.cookieclicker.cookieclickerInts.`0`
+import typings.cookieclicker.cookieclickerInts.`1`
+import typings.cookieclicker.cookieclickerInts.`2`
 import typings.cookieclicker.cookieclickerStrings.Pantheon
 import typings.std.HTMLDivElement
 import typings.std.Record

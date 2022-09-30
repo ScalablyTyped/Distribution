@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.CommandLine")
 @js.native
-class CommandLine ()
+open class CommandLine ()
   extends StObject
      with typings.electron.Electron.CommandLine

@@ -103,14 +103,6 @@ object ansiColorsStrings {
   inline def Largecircle: Largecircle = "\u25EF".asInstanceOf[Largecircle]
   
   @js.native
-  sealed trait `Leftparenthesis Rightparenthesis` extends StObject
-  inline def `Leftparenthesis Rightparenthesis`: `Leftparenthesis Rightparenthesis` = ("( )").asInstanceOf[`Leftparenthesis Rightparenthesis`]
-  
-  @js.native
-  sealed trait LeftparenthesisAsteriskRightparenthesis extends StObject
-  inline def LeftparenthesisAsteriskRightparenthesis: LeftparenthesisAsteriskRightparenthesis = "(*)".asInstanceOf[LeftparenthesisAsteriskRightparenthesis]
-  
-  @js.native
   sealed trait Lowerrightpencil extends StObject
   inline def Lowerrightpencil: Lowerrightpencil = "\u270E".asInstanceOf[Lowerrightpencil]
   

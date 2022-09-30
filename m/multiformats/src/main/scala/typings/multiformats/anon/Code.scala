@@ -9,7 +9,7 @@ trait Code extends StObject {
   
   var code: Double
   
-  def digest(input: js.typedarray.Uint8Array): Digest[typings.multiformats.multiformatsNumbers.`0`, Double]
+  def digest(input: js.typedarray.Uint8Array): Digest[typings.multiformats.multiformatsInts.`0`, Double]
   
   def encode(input: js.typedarray.Uint8Array): js.typedarray.Uint8Array
   
@@ -19,7 +19,7 @@ object Code {
   
   inline def apply(
     code: Double,
-    digest: js.typedarray.Uint8Array => Digest[typings.multiformats.multiformatsNumbers.`0`, Double],
+    digest: js.typedarray.Uint8Array => Digest[typings.multiformats.multiformatsInts.`0`, Double],
     encode: js.typedarray.Uint8Array => js.typedarray.Uint8Array,
     name: String
   ): Code = {
@@ -31,7 +31,7 @@ object Code {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setDigest(value: js.typedarray.Uint8Array => Digest[typings.multiformats.multiformatsNumbers.`0`, Double]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
+    inline def setDigest(value: js.typedarray.Uint8Array => Digest[typings.multiformats.multiformatsInts.`0`, Double]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
     
     inline def setEncode(value: js.typedarray.Uint8Array => js.typedarray.Uint8Array): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     

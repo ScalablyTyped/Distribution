@@ -12,8 +12,7 @@ object radarMod {
   
   @JSImport("ant-design-pro/lib/Charts/Radar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IRadarProps, js.Any, js.Any]
+  open class default () extends Component[IRadarProps, Any, Any]
   
   trait IRadarProps extends StObject {
     
@@ -40,7 +39,7 @@ object radarMod {
       
       inline def setData(value: js.Array[Label]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Label*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Label*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHasLegend(value: Boolean): Self = StObject.set(x, "hasLegend", value.asInstanceOf[js.Any])
       
@@ -62,5 +61,5 @@ object radarMod {
     }
   }
   
-  type Radar = Component[IRadarProps, js.Any, js.Any]
+  type Radar = Component[IRadarProps, Any, Any]
 }

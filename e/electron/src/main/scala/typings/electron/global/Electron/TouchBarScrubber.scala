@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.TouchBarScrubber")
 @js.native
-class TouchBarScrubber protected ()
+open class TouchBarScrubber protected ()
   extends typings.electron.Electron.TouchBarScrubber {
   // Docs: https://electronjs.org/docs/api/touch-bar-scrubber
   /**

@@ -1,12 +1,12 @@
 package typings.dayzed
 
-import typings.dayzed.dayzedNumbers.`0`
-import typings.dayzed.dayzedNumbers.`1`
-import typings.dayzed.dayzedNumbers.`2`
-import typings.dayzed.dayzedNumbers.`3`
-import typings.dayzed.dayzedNumbers.`4`
-import typings.dayzed.dayzedNumbers.`5`
-import typings.dayzed.dayzedNumbers.`6`
+import typings.dayzed.dayzedInts.`0`
+import typings.dayzed.dayzedInts.`1`
+import typings.dayzed.dayzedInts.`2`
+import typings.dayzed.dayzedInts.`3`
+import typings.dayzed.dayzedInts.`4`
+import typings.dayzed.dayzedInts.`5`
+import typings.dayzed.dayzedInts.`6`
 import typings.dayzed.mod.DateObj
 import typings.react.mod.SyntheticEvent
 import typings.std.Element

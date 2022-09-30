@@ -1,7 +1,7 @@
 
 # Scala.js typings for update-notifier
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 Update notifications for your CLI app
@@ -10,10 +10,10 @@ Update notifications for your CLI app
 | ------------------ | :-------------: |
 | Full name          | update-notifier |
 | Keywords           | npm, update, updater, notify, notifier, check, checker, cli, module, package, version |
-| # releases         | 11 |
-| # dependents       | 3497 |
-| # downloads        | 350872249 |
-| # stars            | 99 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 4.4927112666666664E7 |
+| # stars            | 1650.0 |
 
 ## Links
 - [Homepage](https://github.com/yeoman/update-notifier#readme)

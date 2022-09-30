@@ -3,7 +3,6 @@ package typings.infiniteScroll
 import typings.infiniteScroll.anon.Body
 import typings.infiniteScroll.infiniteScrollBooleans.`false`
 import typings.infiniteScroll.infiniteScrollBooleans.`true`
-import typings.infiniteScroll.infiniteScrollStrings.$LeftcurlybracketERightcurlybracketDotinfiniteScroll
 import typings.infiniteScroll.infiniteScrollStrings.append
 import typings.infiniteScroll.infiniteScrollStrings.error
 import typings.infiniteScroll.infiniteScrollStrings.history
@@ -393,9 +392,8 @@ object mod {
             ]
       ): JQuery[TElement] = js.native
       
-      @JSName("on")
-      def on_EinfiniteScroll[E /* <: (/* keyof infinite-scroll.infinite-scroll.EventsMap */ scrollThreshold | request | load | append | error | last | history) & String */](
-        event: $LeftcurlybracketERightcurlybracketDotinfiniteScroll,
+      def on[E /* <: (/* keyof infinite-scroll.infinite-scroll.EventsMap */ scrollThreshold | request | load | append | error | last | history) & String */](
+        event: /* template literal string: ${E}.infiniteScroll */ String,
         handler: js.Function2[
               /* event */ Event, 
               /* params */ Parameters[

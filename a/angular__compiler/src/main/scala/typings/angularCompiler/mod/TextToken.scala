@@ -1,8 +1,8 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerNumbers.`5`
-import typings.angularCompiler.angularCompilerNumbers.`6`
-import typings.angularCompiler.angularCompilerNumbers.`7`
+import typings.angularCompiler.angularCompilerInts.`5`
+import typings.angularCompiler.angularCompilerInts.`6`
+import typings.angularCompiler.angularCompilerInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

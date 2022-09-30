@@ -194,13 +194,13 @@ object leadMod {
   }
   object List {
     
-    inline def apply(contacts: js.Array[Lead], pages: Next, total_count: Double): List = {
+    inline def apply(contacts: js.Array[Lead], pages: Next, total_count: Double): typings.intercomClient.leadMod.List = {
       val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("user.list")
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.intercomClient.leadMod.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.intercomClient.leadMod.List](x: Self) {
       
       inline def setContacts(value: js.Array[Lead]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       

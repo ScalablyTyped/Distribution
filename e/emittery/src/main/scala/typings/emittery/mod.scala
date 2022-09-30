@@ -2,6 +2,7 @@ package typings.emittery
 
 import typings.emittery.anon.Instantiable
 import typings.std.AsyncIterableIterator
+import typings.std.Promise
 import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -524,7 +525,8 @@ object mod {
   
   @js.native
   trait EmitteryOncePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     def off(): Unit = js.native
   }

@@ -9,6 +9,7 @@ import typings.std.NonNullable
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
+import typings.std.PromiseLike
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
 import typings.std.Record
@@ -29,7 +30,7 @@ object typesMod {
   
   type ArrayOrSingle[T] = T | js.Array[T]
   
-  type AsyncOrSync[T] = js.Thenable[T] | T
+  type AsyncOrSync[T] = PromiseLike[T] | T
   
   type AsyncOrSyncType[T] = Any
   

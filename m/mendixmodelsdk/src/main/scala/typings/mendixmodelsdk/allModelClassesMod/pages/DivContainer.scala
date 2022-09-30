@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/container relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DivContainer")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DivContainer")
 @js.native
-class DivContainer protected ()
+open class DivContainer protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.DivContainer {
   def this(
     model: AbstractModel,
@@ -33,7 +33,7 @@ class DivContainer protected ()
 }
 object DivContainer {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DivContainer")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DivContainer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -607,13 +607,13 @@ object DivContainer {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.DivContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DivContainer]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DivContainer.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DivContainer.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DivContainer.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DivContainer.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

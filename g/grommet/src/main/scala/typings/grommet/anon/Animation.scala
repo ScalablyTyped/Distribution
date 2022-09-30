@@ -1,14 +1,18 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.grommet.utilsMod.BackgroundType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Animation extends StObject {
   
-  var active: js.UndefOr[`10`] = js.undefined
+  var active: js.UndefOr[`11`] = js.undefined
   
   var animation: js.UndefOr[Jiggle] = js.undefined
+  
+  var backgrounds: js.UndefOr[StringDictionary[BackgroundType | Dark]] = js.undefined
   
   var borderSize: js.UndefOr[Large] = js.undefined
   
@@ -32,7 +36,7 @@ trait Animation extends StObject {
   
   var font: js.UndefOr[Face] = js.undefined
   
-  var graph: js.UndefOr[`12`] = js.undefined
+  var graph: js.UndefOr[`13`] = js.undefined
   
   var hover: js.UndefOr[BackgroundColor] = js.undefined
   
@@ -55,13 +59,17 @@ object Animation {
   
   extension [Self <: Animation](x: Self) {
     
-    inline def setActive(value: `10`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: `11`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     inline def setAnimation(value: Jiggle): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setBackgrounds(value: StringDictionary[BackgroundType | Dark]): Self = StObject.set(x, "backgrounds", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundsUndefined: Self = StObject.set(x, "backgrounds", js.undefined)
     
     inline def setBorderSize(value: Large): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
     
@@ -107,7 +115,7 @@ object Animation {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setGraph(value: `12`): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: `13`): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
     inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     

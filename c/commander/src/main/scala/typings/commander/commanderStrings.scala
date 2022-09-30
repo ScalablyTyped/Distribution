@@ -62,6 +62,12 @@ object commanderStrings {
   inline def env: env = "env".asInstanceOf[env]
   
   @js.native
+  sealed trait implied
+    extends StObject
+       with OptionValueSource
+  inline def implied: implied = "implied".asInstanceOf[implied]
+  
+  @js.native
   sealed trait node extends StObject
   inline def node: node = "node".asInstanceOf[node]
   

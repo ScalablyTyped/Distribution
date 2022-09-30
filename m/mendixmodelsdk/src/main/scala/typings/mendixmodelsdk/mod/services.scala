@@ -9,7 +9,7 @@ object services {
   
   @JSImport("mendixmodelsdk", "services.HttpMethod")
   @js.native
-  class HttpMethod protected ()
+  open class HttpMethod protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.services.HttpMethod {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }

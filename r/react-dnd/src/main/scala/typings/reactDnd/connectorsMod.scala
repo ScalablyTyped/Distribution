@@ -1,27 +1,17 @@
 package typings.reactDnd
 
-import typings.react.mod.ReactElement
-import typings.react.mod.RefObject
-import typings.reactDnd.optionsMod.DragPreviewOptions
-import typings.reactDnd.optionsMod.DragSourceOptions
-import typings.std.Element
+import typings.reactDnd.internalsMod.SourceConnector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectorsMod {
   
-  type ConnectDragPreview = DragElementWrapper[DragPreviewOptions]
+  @JSImport("react-dnd/dist/hooks/useDrag/connectors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  type ConnectDragSource = DragElementWrapper[DragSourceOptions]
+  inline def useConnectDragPreview(connector: SourceConnector): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useConnectDragPreview")(connector.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  type ConnectDropTarget = DragElementWrapper[js.Any]
-  
-  type ConnectableElement = RefObject[js.Any] | ReactElement | Element | Null
-  
-  type DragElementWrapper[Options] = js.Function2[
-    /* elementOrNode */ ConnectableElement, 
-    /* options */ js.UndefOr[Options], 
-    ReactElement | Null
-  ]
+  inline def useConnectDragSource(connector: SourceConnector): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useConnectDragSource")(connector.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -1,20 +1,16 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.anon.Fragment
+import typings.pixiCore.anon.TypeofAbstractBatchRender
+import typings.pixiCore.mod.IBatchFactoryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * @class
-  * @memberof PIXI
-  * @hideconstructor
-  */
 @JSImport("pixi.js", "BatchPluginFactory")
 @js.native
-class BatchPluginFactory ()
-  extends StObject
-     with typings.pixiJs.PIXI.BatchPluginFactory
+open class BatchPluginFactory ()
+  extends typings.pixiCore.mod.BatchPluginFactory
+/* static members */
 object BatchPluginFactory {
   
   @JSImport("pixi.js", "BatchPluginFactory")
@@ -38,43 +34,20 @@ object BatchPluginFactory {
     * }
     * `;
     * const InvertBatchRenderer = PIXI.BatchPluginFactory.create({ fragment });
-    * PIXI.Renderer.registerPlugin('invert', InvertBatchRenderer);
+    * PIXI.extensions.add({
+    *  name: 'invert',
+    *  ref: InvertBatchRenderer,
+    *  type: PIXI.ExtensionType.RendererPlugin,
+    * });
     * const sprite = new PIXI.Sprite();
     * sprite.pluginName = 'invert';
-    *
-    * @static
     * @param {object} [options]
     * @param {string} [options.vertex=PIXI.BatchPluginFactory.defaultVertexSrc] - Vertex shader source
     * @param {string} [options.fragment=PIXI.BatchPluginFactory.defaultFragmentTemplate] - Fragment shader template
     * @param {number} [options.vertexSize=6] - Vertex size
     * @param {object} [options.geometryClass=PIXI.BatchGeometry]
-    * @return {*} New batch renderer plugin
+    * @returns {*} New batch renderer plugin
     */
-  /* static member */
-  inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
-  inline def create(options: Fragment): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  /**
-    * The default fragment shader source
-    *
-    * @static
-    * @type {string}
-    * @constant
-    */
-  /* static member */
-  @JSImport("pixi.js", "BatchPluginFactory.defaultFragmentTemplate")
-  @js.native
-  val defaultFragmentTemplate: String = js.native
-  
-  /**
-    * The default vertex shader source
-    *
-    * @static
-    * @type {string}
-    * @constant
-    */
-  /* static member */
-  @JSImport("pixi.js", "BatchPluginFactory.defaultVertexSrc")
-  @js.native
-  val defaultVertexSrc: String = js.native
+  inline def create(): TypeofAbstractBatchRender = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TypeofAbstractBatchRender]
+  inline def create(options: IBatchFactoryOptions): TypeofAbstractBatchRender = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofAbstractBatchRender]
 }

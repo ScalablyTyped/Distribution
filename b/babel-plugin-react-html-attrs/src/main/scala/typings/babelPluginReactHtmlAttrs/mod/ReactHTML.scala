@@ -1,5 +1,6 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import typings.babelPluginReactHtmlAttrs.HTMLBdoElement
 import typings.babelPluginReactHtmlAttrs.HTMLWebViewElement
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
@@ -88,7 +89,7 @@ trait ReactHTML extends StObject {
   
   var bdi: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
-  var bdo: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
+  var bdo: DetailedHTMLFactory[BdoHTMLAttributes[HTMLBdoElement], HTMLBdoElement]
   
   var big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]
   
@@ -313,7 +314,7 @@ object ReactHTML {
     b: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     base: DetailedHTMLFactory[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement],
     bdi: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
-    bdo: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
+    bdo: DetailedHTMLFactory[BdoHTMLAttributes[HTMLBdoElement], HTMLBdoElement],
     big: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement],
     blockquote: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement],
     body: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement],
@@ -448,7 +449,7 @@ object ReactHTML {
     
     inline def setBdi(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
     
-    inline def setBdo(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
+    inline def setBdo(value: DetailedHTMLFactory[BdoHTMLAttributes[HTMLBdoElement], HTMLBdoElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
     
     inline def setBig(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
     

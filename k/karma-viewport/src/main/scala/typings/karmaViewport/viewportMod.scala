@@ -27,6 +27,7 @@ object viewportMod {
       */
     def this(config: ViewportConfiguration, parent: Window) = this()
     
+    def between[T](first: String, last: String, cb: ViewportCallback[T]): Unit = js.native
     /**
       * Execute a callback for all breakpoints between the first and last given
       *
@@ -44,9 +45,8 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def between[T /* <: js.Promise[Any] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("between")
-    def between_T_Unit[T](first: String, last: String, cb: ViewportCallback[T]): Unit = js.native
+    def between_T_Promise[T /* <: js.Promise[Any] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     
     /**
       * Viewport configuration
@@ -58,6 +58,7 @@ object viewportMod {
       */
     var context: HTMLIFrameElement = js.native
     
+    def each[T](cb: ViewportCallback[T]): Unit = js.native
     /**
       * Execute a callback for all breakpoints
       *
@@ -70,10 +71,10 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def each[T /* <: js.Promise[Any] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("each")
-    def each_T_Unit[T](cb: ViewportCallback[T]): Unit = js.native
+    def each_T_Promise[T /* <: js.Promise[Any] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     
+    def from[T](first: String, cb: ViewportCallback[T]): Unit = js.native
     /**
       * Execute a callback starting at the given breakpoint
       *
@@ -87,9 +88,8 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def from[T /* <: js.Promise[Any] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("from")
-    def from_T_Unit[T](first: String, cb: ViewportCallback[T]): Unit = js.native
+    def from_T_Promise[T /* <: js.Promise[Any] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     
     /**
       * Load and embed document into viewport
@@ -125,6 +125,7 @@ object viewportMod {
     def set(width: Double): Unit = js.native
     def set(width: Double, height: Double): Unit = js.native
     
+    def to[T](last: String, cb: ViewportCallback[T]): Unit = js.native
     /**
       * Execute a callback ending at the given breakpoint
       *
@@ -138,9 +139,8 @@ object viewportMod {
       *
       * @return Promise resolving with no result
       */
-    def to[T /* <: js.Promise[Any] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
     @JSName("to")
-    def to_T_Unit[T](last: String, cb: ViewportCallback[T]): Unit = js.native
+    def to_T_Promise[T /* <: js.Promise[Any] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   }
   
   inline def range(breakpoints: js.Array[ViewportBreakpoint], first: String): js.Array[ViewportBreakpoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(breakpoints.asInstanceOf[js.Any], first.asInstanceOf[js.Any])).asInstanceOf[js.Array[ViewportBreakpoint]]

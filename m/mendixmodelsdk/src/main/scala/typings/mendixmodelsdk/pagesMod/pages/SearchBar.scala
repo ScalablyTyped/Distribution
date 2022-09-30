@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/search-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchBar")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchBar")
 @js.native
-class SearchBar protected () extends ControlBar {
+open class SearchBar protected () extends ControlBar {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,7 @@ class SearchBar protected () extends ControlBar {
 }
 object SearchBar {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchBar")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchBar")
   @js.native
   val ^ : js.Any = js.native
   
@@ -63,13 +63,13 @@ object SearchBar {
   inline def createInGridDatabaseSourceUnderSearchBar(container: GridDatabaseSource): SearchBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridDatabaseSourceUnderSearchBar")(container.asInstanceOf[js.Any]).asInstanceOf[SearchBar]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchBar.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchBar.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SearchBar.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SearchBar.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -18,18 +18,9 @@ object wrapTextMod {
   val ^ : js.Any = js.native
   
   inline def default(text: String, maxWidth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def default_end(text: String, maxWidth: Double, wrapType: end): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def default_middle(text: String, maxWidth: Double, wrapType: middle): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def default_truncate(text: String, maxWidth: Double, wrapType: truncate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def default_truncateend(text: String, maxWidth: Double, wrapType: `truncate-end`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def default_truncatemiddle(text: String, maxWidth: Double, wrapType: `truncate-middle`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def default_truncatestart(text: String, maxWidth: Double, wrapType: `truncate-start`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def default_wrap(text: String, maxWidth: Double, wrapType: wrap): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(
+    text: String,
+    maxWidth: Double,
+    wrapType: wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], maxWidth.asInstanceOf[js.Any], wrapType.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "WebElement")
 @js.native
-class WebElement protected ()
+open class WebElement protected ()
   extends typings.seleniumWebdriver.mod.WebElement {
   def this(driver: typings.seleniumWebdriver.mod.WebDriver, id: String) = this()
   /**

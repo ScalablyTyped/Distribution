@@ -1,137 +1,318 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.bson.mod.Document
+import typings.mongodb.anon.IdInferIdType
+import typings.mongodb.anon.Meta
+import typings.mongodb.anon.Open
+import typings.mongodb.anon.`2`
+import typings.mongodb.mod.^
+import typings.mongodb.mongodbStrings.ALPNProtocols
+import typings.mongodb.mongodbStrings._empty
+import typings.mongodb.mongodbStrings._id
+import typings.mongodb.mongodbStrings.`1`
+import typings.mongodb.mongodbStrings.awaitData
+import typings.mongodb.mongodbStrings.ca
+import typings.mongodb.mongodbStrings.cert
+import typings.mongodb.mongodbStrings.checkServerIdentity
+import typings.mongodb.mongodbStrings.ciphers
+import typings.mongodb.mongodbStrings.close
+import typings.mongodb.mongodbStrings.commandFailed
+import typings.mongodb.mongodbStrings.commandStarted
+import typings.mongodb.mongodbStrings.commandSucceeded
+import typings.mongodb.mongodbStrings.connectionCheckOutFailed
+import typings.mongodb.mongodbStrings.connectionCheckOutStarted
+import typings.mongodb.mongodbStrings.connectionCheckedIn
+import typings.mongodb.mongodbStrings.connectionCheckedOut
+import typings.mongodb.mongodbStrings.connectionClosed
+import typings.mongodb.mongodbStrings.connectionCreated
+import typings.mongodb.mongodbStrings.connectionPoolCleared
+import typings.mongodb.mongodbStrings.connectionPoolClosed
+import typings.mongodb.mongodbStrings.connectionPoolCreated
+import typings.mongodb.mongodbStrings.connectionPoolReady
+import typings.mongodb.mongodbStrings.connectionReady
+import typings.mongodb.mongodbStrings.crl
+import typings.mongodb.mongodbStrings.ecdhCurve
+import typings.mongodb.mongodbStrings.error
+import typings.mongodb.mongodbStrings.exhaust
+import typings.mongodb.mongodbStrings.family
+import typings.mongodb.mongodbStrings.generation
+import typings.mongodb.mongodbStrings.hints
+import typings.mongodb.mongodbStrings.host
+import typings.mongodb.mongodbStrings.hostAddress
+import typings.mongodb.mongodbStrings.id
+import typings.mongodb.mongodbStrings.isServer
+import typings.mongodb.mongodbStrings.key
+import typings.mongodb.mongodbStrings.localAddress
+import typings.mongodb.mongodbStrings.localPort
+import typings.mongodb.mongodbStrings.lookup
+import typings.mongodb.mongodbStrings.majority
+import typings.mongodb.mongodbStrings.minDHSize
+import typings.mongodb.mongodbStrings.noCursorTimeout
+import typings.mongodb.mongodbStrings.oplogReplay
+import typings.mongodb.mongodbStrings.partial
+import typings.mongodb.mongodbStrings.passphrase
+import typings.mongodb.mongodbStrings.path
+import typings.mongodb.mongodbStrings.pfx
+import typings.mongodb.mongodbStrings.port
+import typings.mongodb.mongodbStrings.pskCallback
+import typings.mongodb.mongodbStrings.rejectUnauthorized
+import typings.mongodb.mongodbStrings.requestOCSP
+import typings.mongodb.mongodbStrings.secureContext
+import typings.mongodb.mongodbStrings.secureProtocol
+import typings.mongodb.mongodbStrings.server
+import typings.mongodb.mongodbStrings.serverClosed
+import typings.mongodb.mongodbStrings.serverDescriptionChanged
+import typings.mongodb.mongodbStrings.serverHeartbeatFailed
+import typings.mongodb.mongodbStrings.serverHeartbeatStarted
+import typings.mongodb.mongodbStrings.serverHeartbeatSucceeded
+import typings.mongodb.mongodbStrings.serverOpening
+import typings.mongodb.mongodbStrings.servername
+import typings.mongodb.mongodbStrings.session
+import typings.mongodb.mongodbStrings.socket
+import typings.mongodb.mongodbStrings.tailable
+import typings.mongodb.mongodbStrings.timeout
+import typings.mongodb.mongodbStrings.topologyClosed
+import typings.mongodb.mongodbStrings.topologyDescriptionChanged
+import typings.mongodb.mongodbStrings.topologyOpening
+import typings.node.netMod.Socket
+import typings.node.netMod.TcpNetConnectOpts
+import typings.node.tlsMod.TLSSocket
+import typings.node.tlsMod.TLSSocketOptions
+import typings.std.Exclude
+import typings.std.Extract
+import typings.std.MapConstructor
+import typings.std.Omit
+import typings.std.Partial
+import typings.std.Pick
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def connect(uri: java.lang.String): js.Promise[typings.mongodb.mod.MongoClient] = typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodb.mod.MongoClient]]
-inline def connect(
-  uri: java.lang.String,
-  callback: typings.mongodb.mod.MongoCallback[typings.mongodb.mod.MongoClient]
-): scala.Unit = (typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def connect(uri: java.lang.String, options: typings.mongodb.mod.MongoClientOptions): js.Promise[typings.mongodb.mod.MongoClient] = (typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.mongodb.mod.MongoClient]]
-inline def connect(
-  uri: java.lang.String,
-  options: typings.mongodb.mod.MongoClientOptions,
-  callback: typings.mongodb.mod.MongoCallback[typings.mongodb.mod.MongoClient]
-): scala.Unit = (typings.mongodb.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def CURSOR_FLAGS: js.Tuple6[tailable, oplogReplay, noCursorTimeout, awaitData, exhaust, partial] = ^.asInstanceOf[js.Dynamic].selectDynamic("CURSOR_FLAGS").asInstanceOf[js.Tuple6[tailable, oplogReplay, noCursorTimeout, awaitData, exhaust, partial]]
+
+type ExplainVerbosity = String
+
+inline def LEGAL_TCP_SOCKET_OPTIONS: js.Tuple5[family, hints, localAddress, localPort, lookup] = ^.asInstanceOf[js.Dynamic].selectDynamic("LEGAL_TCP_SOCKET_OPTIONS").asInstanceOf[js.Tuple5[family, hints, localAddress, localPort, lookup]]
+
+inline def LEGAL_TLS_SOCKET_OPTIONS: js.Tuple16[
+ALPNProtocols, 
+ca, 
+cert, 
+checkServerIdentity, 
+ciphers, 
+crl, 
+ecdhCurve, 
+key, 
+minDHSize, 
+passphrase, 
+pfx, 
+rejectUnauthorized, 
+secureContext, 
+secureProtocol, 
+servername, 
+session] = ^.asInstanceOf[js.Dynamic].selectDynamic("LEGAL_TLS_SOCKET_OPTIONS").asInstanceOf[js.Tuple16[
+ALPNProtocols, 
+ca, 
+cert, 
+checkServerIdentity, 
+ciphers, 
+crl, 
+ecdhCurve, 
+key, 
+minDHSize, 
+passphrase, 
+pfx, 
+rejectUnauthorized, 
+secureContext, 
+secureProtocol, 
+servername, 
+session]]
+
+inline def MONGO_CLIENT_EVENTS: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MONGO_CLIENT_EVENTS").asInstanceOf[js.Array[Any]]
+
+inline def Map_=(x: MapConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Map")(x.asInstanceOf[js.Any])
+
+type ServerApiVersion = `1`
 
 type AcceptedFields[TSchema, FieldType, AssignableType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ key in mongodb.mongodb.KeysOfAType<TSchema, FieldType> ]:? AssignableType}
-  */ typings.mongodb.mongodbStrings.AcceptedFields & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.mongodb.mongodbStrings.AcceptedFields & TopLevel[Any]
 
-type AggregationCursorResult = js.Object | scala.Null
+type AlternativeType[T] = (RegExpOrString[Any | T]) | T
 
-/** https://docs.mongodb.com/manual/reference/operator/query-bitwise */
-type BitwiseQuery = scala.Double | typings.bson.mod.Binary | js.Array[scala.Double]
+type AnyError = MongoError | js.Error
 
-type CollectionMapFunction[TSchema] = js.ThisFunction0[/* this */ TSchema, scala.Unit]
+type ArrayElement[Type] = Any
 
-type CollectionReduceFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* values */ js.Array[TValue], TValue]
+type BitwiseFilter = scala.Double | typings.bson.mod.Binary | js.Array[scala.Double]
 
-type CommandCursorResult = js.Object | scala.Null
+type Callback[T] = js.Function2[/* error */ js.UndefOr[AnyError], /* result */ js.UndefOr[T], Unit]
 
-type Condition[T] = typings.mongodb.mod.MongoAltQuery[T] | typings.mongodb.mod.QuerySelector[typings.mongodb.mod.MongoAltQuery[T]]
+type Condition[T] = AlternativeType[T] | FilterOperators[AlternativeType[T]]
 
-type CursorResult = js.Object | scala.Null | scala.Boolean
+type DistinctOptions = CommandOperationOptions
 
-type Default = js.Any
+type DropDatabaseOptions = CommandOperationOptions
 
-type DefaultSchema = js.Any
+type DropIndexesOptions = CommandOperationOptions
 
-type DotAndArrayNotation[AssignableType] = org.scalablytyped.runtime.StringDictionary[AssignableType]
+type EnhancedOmit[TRecordOrUnion, KeyUnion] = (Pick[TRecordOrUnion, Exclude[/* keyof TRecordOrUnion */ String, KeyUnion]]) | TRecordOrUnion
 
-type EndCallback = js.Function1[/* error */ typings.mongodb.mod.MongoError, scala.Unit]
+type EventEmitterWithState = js.Object
 
-// TypeScript Omit (Exclude to be specific) does not work for objects with an "any" indexed type
-type EnhancedOmit[T, K] = (typings.mongodb.mod.Omit[T, K]) | T
+type EventsDescription = Record[String, GenericListener]
 
-/**
-  * This is similar to Parameters but will work with a type which is
-  * a function or with a tuple specifying arguments, which are both
-  * common ways to define eventemitter events
-  */
-type EventArguments[T] = js.Array[js.Any | T]
+type ExplainVerbosityLike = ExplainVerbosity | Boolean
 
-type ExtractIdType[TSchema] = typings.bson.mod.ObjectId | (typings.std.Exclude[js.Any, js.Object])
+type Filter[TSchema] = Partial[TSchema] | (typings.mongodb.mongodbStrings.Filter & TopLevel[Any] & RootFilterOperators[WithId[TSchema]])
 
-type FieldUpdates[TSchema] = typings.std.Partial[TSchema] & org.scalablytyped.runtime.StringDictionary[js.Any]
+type FilterOperations[T] = FilterOperators[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ key in keyof T ]:? mongodb.mongodb.FilterOperators<T[key]>}
+  */ typings.mongodb.mongodbStrings.FilterOperations & TopLevel[T])
 
-type FilterQuery[T] = typings.mongodb.mongodbStrings.FilterQuery & org.scalablytyped.runtime.TopLevel[T] & typings.mongodb.mod.RootQuerySelector[T]
+type FinalizeFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* reducedValue */ TValue, TValue]
 
-type FlattenIfArray[T] = T
+type Flatten[Type] = Type
 
-type GridFSBucketErrorCallback = typings.mongodb.mod.MongoCallback[scala.Unit]
+type Hint = String | Document
 
-type GridFSBucketWriteStreamId = java.lang.String | scala.Double | js.Object | typings.bson.mod.ObjectId
+/* Rewritten from type alias, can be one of: 
+  - typings.mongodb.mongodbInts.`-1`
+  - typings.mongodb.mongodbInts.`1`
+  - typings.mongodb.mongodbStrings.`2d`
+  - typings.mongodb.mongodbStrings.`2dsphere`
+  - typings.mongodb.mongodbStrings.text
+  - typings.mongodb.mongodbStrings.geoHaystack
+  - scala.Double
+*/
+type IndexDirection = _IndexDirection | scala.Double
 
-type IteratorCallback[T] = js.Function1[/* doc */ T, scala.Unit]
+type IndexSpecification = OneOrMore[
+String | (js.Tuple2[String, IndexDirection]) | StringDictionary[IndexDirection] | (typings.std.Map[String, IndexDirection])]
 
-/** Update Query */
+type InferIdType[TSchema] = typings.bson.mod.ObjectId | Any
+
+type IntegerType = scala.Double | typings.bson.mod.Int32 | typings.bson.mod.Long
+
+type IsAny[Type, ResultIfAny, ResultIfNotAny] = ResultIfNotAny | ResultIfAny
+
+type Join[T /* <: js.Array[Any] */, D /* <: String */] = String | _empty
+
 type KeysOfAType[TSchema, Type] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSchema ]: std.NonNullable<TSchema[key]> extends Type? key : never}[keyof TSchema] */ js.Any
 
 type KeysOfOtherType[TSchema, Type] = /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSchema ]: std.NonNullable<TSchema[key]> extends Type? never : key}[keyof TSchema] */ js.Any
 
-type MatchKeysAndValues[TSchema] = typings.mongodb.mod.ReadonlyPartial[TSchema] & typings.mongodb.mod.DotAndArrayNotation[js.Any]
+type MapFunction[TSchema] = js.ThisFunction0[/* this */ TSchema, Unit]
 
-type MongoAltQuery[T] = (typings.mongodb.mod.RegExpForString[js.Any | T]) | T
+type MatchKeysAndValues[TSchema] = typings.mongodb.mongodbStrings.MatchKeysAndValues & TopLevel[Any]
 
-type MongoCallback[T] = js.Function2[/* error */ typings.mongodb.mod.MongoError, /* result */ T, scala.Unit]
+type MongoClientEvents = (Pick[
+TopologyEvents, 
+connectionPoolCreated | connectionPoolReady | connectionPoolCleared | connectionPoolClosed | connectionCreated | connectionReady | connectionClosed | connectionCheckOutStarted | connectionCheckOutFailed | connectionCheckedOut | connectionCheckedIn | commandStarted | commandSucceeded | commandFailed | serverOpening | serverClosed | serverDescriptionChanged | topologyOpening | topologyClosed | topologyDescriptionChanged | error | timeout | close | serverHeartbeatStarted | serverHeartbeatSucceeded | serverHeartbeatFailed]) & Open
 
-/** It avoid uses fields of non Type */
+type NestedPaths[Type] = (js.Array[Any | String]) | (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in std.Extract<keyof Type, string> ]: Type[Key] extends Type? [Key] : Type extends Type[Key]? [Key] : Type[Key] extends std.ReadonlyArray<infer ArrayType>? Type extends any? [Key] : any extends Type? [Key] : [Key, ...any] : [Key, ...any] | [Key]}[std.Extract<keyof Type, string>] */ js.Any)
+
+type NestedPathsOfType[TSchema, Type] = KeysOfAType[
+/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema>, '.'> ]: mongodb.mongodb.PropertyType<TSchema, Property>}
+  */ typings.mongodb.mongodbStrings.NestedPathsOfType & TopLevel[Any], 
+Type]
+
+/* Inlined {[ key in keyof bson.bson.ObjectIdLike ]:? never} & bson.bson.Document */
+type NonObjectIdLikeDocument = StringDictionary[Any]
+
 type NotAcceptedFields[TSchema, FieldType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ key in mongodb.mongodb.KeysOfOtherType<TSchema, FieldType> ]:? never}
-  */ typings.mongodb.mongodbStrings.NotAcceptedFields & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.mongodb.mongodbStrings.NotAcceptedFields & TopLevel[Any]
 
-type NumericTypes = scala.Double | typings.bson.mod.Decimal128 | typings.bson.mod.Double | typings.bson.mod.Int32 | typings.bson.mod.Long
+type NumericType = IntegerType | typings.bson.mod.Decimal128 | typings.bson.mod.Double
 
-type ObjectQuerySelector[T] = typings.mongodb.mod.QuerySelector[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in keyof T ]:? mongodb.mongodb.QuerySelector<T[key]>}
-  */ typings.mongodb.mongodbStrings.ObjectQuerySelector & org.scalablytyped.runtime.TopLevel[T])
+type OneOrMore[T] = T | js.Array[T]
 
-// We can use TypeScript Omit once minimum required TypeScript Version is above 3.5
-type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+type OnlyFieldsOfType[TSchema, FieldType, AssignableType] = IsAny[
+/* import warning: importer.ImportType#apply Failed type conversion: TSchema[keyof TSchema] */ js.Any, 
+Record[String, FieldType], 
+(AcceptedFields[TSchema, FieldType, AssignableType]) & (NotAcceptedFields[TSchema, FieldType]) & (Record[String, AssignableType])]
 
-type OnlyFieldsOfType[TSchema, FieldType, AssignableType] = (typings.mongodb.mod.AcceptedFields[TSchema, FieldType, AssignableType]) & (typings.mongodb.mod.NotAcceptedFields[TSchema, FieldType]) & typings.mongodb.mod.DotAndArrayNotation[AssignableType]
+type OperationTime = typings.bson.mod.Timestamp
 
-type OptionalId[TSchema /* <: typings.mongodb.anon.`0` */] = (// a Schema provided but _id type is not ObjectId
-typings.mongodb.mod.WithId[TSchema]) | ((// a Schema with ObjectId _id type or "any" or "indexed type" provided
-typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) & typings.mongodb.anon.`2`[TSchema])
+type OptionalId[TSchema] = (EnhancedOmit[TSchema, _id]) & `2`[TSchema]
 
-type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator & org.scalablytyped.runtime.TopLevel[TSchema] & (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[js.Any]]) & org.scalablytyped.runtime.StringDictionary[js.Array[js.Any]]
+type OptionalUnlessRequiredId[TSchema] = OptionalId[TSchema] | TSchema
 
-type PullOperator[TSchema] = typings.mongodb.mongodbStrings.PullOperator & org.scalablytyped.runtime.TopLevel[js.Any] & (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[js.Any]]) & (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.QuerySelector[js.Any] | js.Any])
+type ProfilingLevelOptions = CommandOperationOptions
 
-type PushOperator[TSchema] = typings.mongodb.mongodbStrings.PushOperator & org.scalablytyped.runtime.TopLevel[js.Any] & (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[js.Any]]) & (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.ArrayOperator[js.Any] | js.Any])
+type Projection[TSchema /* <: Document */] = Document
 
-type ReadonlyPartial[TSchema] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ key in keyof TSchema ]:? TSchema[key]}
-  */ typings.mongodb.mongodbStrings.ReadonlyPartial & org.scalablytyped.runtime.TopLevel[TSchema]
+type ProjectionOperators = Document
 
-/** [ <position1>, <position2>, ... ] */
-// we can search using alternative types in mongodb e.g.
-// string types can be searched using a regex in mongo
-// array types can be searched using their element type
-type RegExpForString[T] = T | typings.std.RegExp
+type PropertyType[Type, Property /* <: String */] = Any | (/* import warning: importer.ImportType#apply Failed type conversion: Type[Property] */ js.Any)
+
+type PullAllOperator[TSchema] = typings.mongodb.mongodbStrings.PullAllOperator & TopLevel[TSchema] & (NotAcceptedFields[TSchema, js.Array[Any]]) & StringDictionary[js.Array[Any]]
+
+type PullOperator[TSchema] = typings.mongodb.mongodbStrings.PullOperator & TopLevel[Any] & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[FilterOperators[Any] | Any])
+
+type PushOperator[TSchema] = typings.mongodb.mongodbStrings.PushOperator & TopLevel[Any] & (NotAcceptedFields[TSchema, js.Array[Any]]) & (StringDictionary[ArrayOperator[Any] | Any])
+
+type ReduceFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* values */ js.Array[TValue], TValue]
+
+type RegExpOrString[T] = T | typings.bson.mod.BSONRegExp | js.RegExp
+
+type RemoveUserOptions = CommandOperationOptions
+
+type ResumeToken = Any
+
+type RunCommandOptions = CommandOperationOptions
 
 type SchemaMember[T, V] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]:? V}
-  */ typings.mongodb.mongodbStrings.SchemaMember & org.scalablytyped.runtime.TopLevel[js.Any]) | org.scalablytyped.runtime.StringDictionary[V]
+  */ typings.mongodb.mongodbStrings.SchemaMember & TopLevel[Any]) | StringDictionary[V]
 
-type SetFields[TSchema] = typings.mongodb.mongodbStrings.SetFields & org.scalablytyped.runtime.TopLevel[js.Any] & (typings.mongodb.mod.NotAcceptedFields[TSchema, js.UndefOr[js.Array[js.Any]]]) & (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.AddToSetOperators[js.Any] | js.Any])
+type ServerOptions = (Omit[ConnectionPoolOptions, id | generation | hostAddress]) & MonitorOptions
 
-type SortOptionObject[T] = typings.mongodb.mod.SchemaMember[T, scala.Double | typings.mongodb.anon.Meta]
+type ServerSelector = js.Function2[
+/* topologyDescription */ TopologyDescription, 
+/* servers */ js.Array[ServerDescription], 
+js.Array[ServerDescription]]
 
-type Unpacked[Type] = Type
+type SetFields[TSchema] = typings.mongodb.mongodbStrings.SetFields & TopLevel[Any] & (NotAcceptedFields[TSchema, js.UndefOr[js.Array[Any]]]) & (StringDictionary[AddToSetOperators[Any] | Any])
 
-type UpdateOptionalId[T] = T | typings.mongodb.mod.OptionalId[T]
+type SetProfilingLevelOptions = CommandOperationOptions
 
-type WithId[TSchema] = (typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) & typings.mongodb.anon.IdExtractIdType[TSchema]
+type Sort = String | (Exclude[SortDirection, Meta]) | (js.Array[String | (js.Tuple2[String, SortDirection])]) | StringDictionary[SortDirection] | (typings.std.Map[String, SortDirection]) | (js.Tuple2[String, SortDirection])
 
-type WithTransactionCallback[T] = js.Function1[/* session */ typings.mongodb.mod.ClientSession, js.Promise[T]]
+type Stream = Socket | TLSSocket
 
-type log = js.Function2[
-/* message */ js.UndefOr[java.lang.String], 
-/* state */ js.UndefOr[typings.mongodb.mod.LoggerState], 
-scala.Unit]
+type SupportedNodeConnectionOptions = SupportedTLSConnectionOptions & SupportedTLSSocketOptions & SupportedSocketOptions
+
+type SupportedSocketOptions = Pick[TcpNetConnectOpts, family | hints | localAddress | localPort | lookup]
+
+type SupportedTLSConnectionOptions = Pick[
+typings.node.tlsMod.ConnectionOptions, 
+Extract[
+  host | port | path | socket | checkServerIdentity | servername | session | minDHSize | lookup | timeout | pskCallback, 
+  ALPNProtocols | ca | cert | checkServerIdentity | ciphers | crl | ecdhCurve | key | minDHSize | passphrase | pfx | rejectUnauthorized | secureContext | secureProtocol | servername | session
+]]
+
+type SupportedTLSSocketOptions = Pick[
+TLSSocketOptions, 
+Extract[
+  isServer | server | session | requestOCSP, 
+  ALPNProtocols | ca | cert | checkServerIdentity | ciphers | crl | ecdhCurve | key | minDHSize | passphrase | pfx | rejectUnauthorized | secureContext | secureProtocol | servername | session
+]]
+
+type TagSet = StringDictionary[String]
+
+type W = scala.Double | majority
+
+type WithId[TSchema] = (EnhancedOmit[TSchema, _id]) & IdInferIdType[TSchema]
+
+type WithSessionCallback = js.Function1[/* session */ ClientSession, js.Promise[Any]]
+
+type WithTransactionCallback[T] = js.Function1[/* session */ ClientSession, js.Promise[T]]
+
+type WithoutId[TSchema] = Omit[TSchema, _id]

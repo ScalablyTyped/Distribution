@@ -39,28 +39,28 @@ type EnterOrLeaveFn[NodeType] = js.ThisFunction3[
 /* this */ WalkContext, 
 /* node */ NodeType, 
 /* item */ ListItem[CssNode], 
-/* list */ List[CssNode], 
+/* list */ typings.cssTree.mod.List[CssNode], 
 Unit]
 
 type FilterFn[TData, TResult /* <: TData */, TContext] = js.ThisFunction3[
 /* this */ TContext, 
 /* item */ TData, 
 /* node */ ListItem[TData], 
-/* list */ List[TData], 
+/* list */ typings.cssTree.mod.List[TData], 
 /* is TResult */ Boolean]
 
 type FindFn = js.ThisFunction3[
 /* this */ WalkContext, 
 /* node */ CssNode, 
 /* item */ ListItem[CssNode], 
-/* list */ List[CssNode], 
+/* list */ typings.cssTree.mod.List[CssNode], 
 Boolean]
 
 type IteratorFn[TData, TResult, TContext] = js.ThisFunction3[
 /* this */ TContext, 
 /* item */ TData, 
 /* node */ ListItem[TData], 
-/* list */ List[TData], 
+/* list */ typings.cssTree.mod.List[TData], 
 TResult]
 
 type WalkOptions = (WalkOptionsVisit[

@@ -1,58 +1,72 @@
 package typings.storybookReact
 
-import typings.node.NodeModule
 import typings.storybookAddons.typesMod.ClientStoryApi
 import typings.storybookAddons.typesMod.DecoratorFunction
 import typings.storybookAddons.typesMod.Loadable
 import typings.storybookAddons.typesMod.Parameters
 import typings.storybookAddons.typesMod.StoryApi
-import typings.storybookAddons.typesMod.StoryKind
-import typings.storybookReact.typesMod.IStorybookSection
-import typings.storybookReact.typesMod.StoryFnReactReturnType
+import typings.storybookReact.previewTypesMod.IStorybookSection
+import typings.storybookReact.previewTypesMod.StoryFnReactReturnType
+import typings.webpackEnv.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewMod {
   
-  @JSImport("@storybook/react/dist/client/preview", "addDecorator")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "addDecorator")
   @js.native
   val addDecorator: js.Function1[
-    /* decorator */ DecoratorFunction[StoryFnReactReturnType], 
-    StoryApi[StoryFnReactReturnType]
+    /* decorator */ DecoratorFunction[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/react.@storybook/react/dist/ts3.9/client/preview/types-6-0.ReactFramework['storyResult'] */ js.Any
+    ], 
+    StoryApi[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/react.@storybook/react/dist/ts3.9/client/preview/types-6-0.ReactFramework['storyResult'] */ js.Any
+    ]
   ] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "addParameters")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "addParameters")
   @js.native
-  val addParameters: js.Function1[/* parameter */ Parameters, StoryApi[StoryFnReactReturnType]] = js.native
+  val addParameters: js.Function1[
+    /* parameter */ Parameters, 
+    StoryApi[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/react.@storybook/react/dist/ts3.9/client/preview/types-6-0.ReactFramework['storyResult'] */ js.Any
+    ]
+  ] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "clearDecorators")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "clearDecorators")
   @js.native
   val clearDecorators: js.Function0[Unit] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "configure")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "configure")
   @js.native
   val configure: js.Function2[/* loader */ Loadable, /* module */ NodeModule, Unit] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "forceReRender")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "forceReRender")
   @js.native
   val forceReRender: js.Function0[Unit] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "getStorybook")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "getStorybook")
   @js.native
   val getStorybook: js.Function0[js.Array[IStorybookSection]] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "raw")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "raw")
   @js.native
-  val raw: js.Function0[js.Any] = js.native
+  val raw: js.Function0[Any] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "setAddon")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "setAddon")
   @js.native
-  val setAddon: js.Function1[/* addon */ js.Any, Unit] = js.native
+  val setAddon: js.Function1[/* addon */ Any, Unit] = js.native
   
-  @JSImport("@storybook/react/dist/client/preview", "storiesOf")
+  @JSImport("@storybook/react/dist/ts3.9/client/preview", "storiesOf")
   @js.native
-  val storiesOf: js.Function2[/* kind */ StoryKind, /* module */ NodeModule, StoryApi[StoryFnReactReturnType]] = js.native
+  val storiesOf: js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ /* kind */ Any, 
+    /* module */ NodeModule, 
+    StoryApi[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/react.@storybook/react/dist/ts3.9/client/preview/types-6-0.ReactFramework['storyResult'] */ js.Any
+    ]
+  ] = js.native
   
   trait ClientApi
     extends StObject
@@ -66,9 +80,9 @@ object previewMod {
     
     def getStorybook(): js.Array[IStorybookSection]
     
-    def raw(): js.Any
+    def raw(): Any
     
-    def setAddon(addon: js.Any): Unit
+    def setAddon(addon: Any): Unit
   }
   object ClientApi {
     
@@ -79,9 +93,9 @@ object previewMod {
       configure: (Loadable, NodeModule) => Unit,
       forceReRender: () => Unit,
       getStorybook: () => js.Array[IStorybookSection],
-      raw: () => js.Any,
-      setAddon: js.Any => Unit,
-      storiesOf: (StoryKind, NodeModule) => StoryApi[StoryFnReactReturnType]
+      raw: () => Any,
+      setAddon: Any => Unit,
+      storiesOf: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any, NodeModule) => StoryApi[StoryFnReactReturnType]
     ): ClientApi = {
       val __obj = js.Dynamic.literal(addDecorator = js.Any.fromFunction1(addDecorator), addParameters = js.Any.fromFunction1(addParameters), clearDecorators = js.Any.fromFunction0(clearDecorators), configure = js.Any.fromFunction2(configure), forceReRender = js.Any.fromFunction0(forceReRender), getStorybook = js.Any.fromFunction0(getStorybook), raw = js.Any.fromFunction0(raw), setAddon = js.Any.fromFunction1(setAddon), storiesOf = js.Any.fromFunction2(storiesOf))
       __obj.asInstanceOf[ClientApi]
@@ -97,11 +111,11 @@ object previewMod {
       
       inline def setGetStorybook(value: () => js.Array[IStorybookSection]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
       
-      inline def setRaw(value: () => js.Any): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      inline def setRaw(value: () => Any): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
       
-      inline def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
+      inline def setSetAddon(value: Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
     }
   }
   
-  type DecoratorFn = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(decorator : @storybook/addons.@storybook/addons/dist/types.DecoratorFunction<@storybook/react.@storybook/react/dist/client/preview/types.StoryFnReactReturnType>): @storybook/addons.@storybook/addons/dist/types.StoryApi<@storybook/react.@storybook/react/dist/client/preview/types.StoryFnReactReturnType>>[0] */ js.Any
+  type DecoratorFn = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(decorator : @storybook/addons.@storybook/addons/dist/ts3.9/types.DecoratorFunction<@storybook/react.@storybook/react/dist/ts3.9/client/preview/types-6-0.ReactFramework['storyResult']>): @storybook/addons.@storybook/addons/dist/ts3.9/types.StoryApi<@storybook/react.@storybook/react/dist/ts3.9/client/preview/types-6-0.ReactFramework['storyResult']>>[0] */ js.Any
 }

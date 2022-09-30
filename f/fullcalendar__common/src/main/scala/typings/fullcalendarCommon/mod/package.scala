@@ -40,6 +40,7 @@ import typings.std.NodeListOf
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Pick
+import typings.std.PromiseLike
 import typings.std.Record
 import typings.std.Required
 import typings.std.ShadowRoot
@@ -755,13 +756,13 @@ type EventSourceFetcher[Meta] = js.Function3[
 /* arg */ Context[Meta], 
 /* success */ js.Function1[/* res */ RawEvents, Unit], 
 /* failure */ js.Function1[/* error */ EventSourceError, Unit], 
-Unit | js.Thenable[js.Array[EventInput]]]
+Unit | PromiseLike[js.Array[EventInput]]]
 
 type EventSourceFunc = js.Function3[
 /* arg */ EndStr, 
 /* successCallback */ js.Function1[/* events */ js.Array[EventInput], Unit], 
 /* failureCallback */ js.Function1[/* error */ EventSourceError, Unit], 
-Unit | js.Thenable[js.Array[EventInput]]]
+Unit | PromiseLike[js.Array[EventInput]]]
 
 type EventSourceHash = StringDictionary[EventSource[Any]]
 

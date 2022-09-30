@@ -1,21 +1,33 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.drawerDrawerMod.DrawerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/drawer", JSImport.Namespace)
-@js.native
-object drawerMod extends js.Object {
-  @js.native
-  class Drawer ()
-    extends Component[DrawerProps, js.Object, js.Any]
+object drawerMod {
   
+  @JSImport("react-toolbox/components/drawer", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DrawerProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.drawerDrawerMod.Drawer {
+    def this(props: DrawerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DrawerProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/drawer", "Drawer")
+  @js.native
+  open class Drawer protected ()
+    extends typings.reactToolbox.drawerDrawerMod.Drawer {
+    def this(props: DrawerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DrawerProps, context: Any) = this()
+  }
 }
-

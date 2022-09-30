@@ -1,19 +1,19 @@
 package typings.firmata.mod
 
-import typings.firmata.firmataNumbers.`0`
-import typings.firmata.firmataNumbers.`1`
-import typings.firmata.firmataNumbers.`2`
-import typings.firmata.firmataNumbers.`3`
+import typings.firmata.firmataInts.`0`
+import typings.firmata.firmataInts.`1`
+import typings.firmata.firmataInts.`2`
+import typings.firmata.firmataInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/v0.15.0/lib/firmata.js#L466-L471
 /* Rewritten from type alias, can be one of: 
-  - typings.firmata.firmataNumbers.`0`
-  - typings.firmata.firmataNumbers.`1`
-  - typings.firmata.firmataNumbers.`2`
-  - typings.firmata.firmataNumbers.`3`
+  - typings.firmata.firmataInts.`0`
+  - typings.firmata.firmataInts.`1`
+  - typings.firmata.firmataInts.`2`
+  - typings.firmata.firmataInts.`3`
 */
 trait I2C_MODE extends StObject
 object I2C_MODE {

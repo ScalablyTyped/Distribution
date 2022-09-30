@@ -1,9 +1,9 @@
 package typings.powerbiVisualsTools.mod
 
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`0`
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`1`
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`2`
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`3`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`0`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`1`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`2`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines various events Visuals can notify the host on.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`0`
-  - typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`1`
-  - typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`2`
-  - typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`3`
+  - typings.powerbiVisualsTools.powerbiVisualsToolsInts.`0`
+  - typings.powerbiVisualsTools.powerbiVisualsToolsInts.`1`
+  - typings.powerbiVisualsTools.powerbiVisualsToolsInts.`2`
+  - typings.powerbiVisualsTools.powerbiVisualsToolsInts.`3`
 */
 trait VisualEventType extends StObject
 object VisualEventType {

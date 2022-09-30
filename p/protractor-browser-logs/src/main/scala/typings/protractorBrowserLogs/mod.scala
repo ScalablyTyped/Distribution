@@ -2,7 +2,6 @@ package typings.protractorBrowserLogs
 
 import typings.protractor.mod.ProtractorBrowser
 import typings.seleniumWebdriver.mod.logging.Entry
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ object mod {
       
       inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      inline def setReportersVarargs(value: (js.Function1[/* entries */ js.Array[Entry], Unit])*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: (js.Function1[/* entries */ js.Array[Entry], Unit])*): Self = StObject.set(x, "reporters", js.Array(value*))
     }
   }
   
@@ -121,7 +120,7 @@ object mod {
     }
   }
   
-  type matchPredicate = String | RegExp | matchPredicateFunction
+  type matchPredicate = String | js.RegExp | matchPredicateFunction
   
   type matchPredicateFunction = js.Function1[/* entry */ Entry, Boolean]
 }

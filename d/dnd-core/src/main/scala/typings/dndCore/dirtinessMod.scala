@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dirtinessMod {
   
-  @JSImport("dnd-core/lib/utils/dirtiness", JSImport.Namespace)
+  @JSImport("dnd-core/dist/utils/dirtiness", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("dnd-core/lib/utils/dirtiness", "ALL")
+  @JSImport("dnd-core/dist/utils/dirtiness", "ALL")
   @js.native
   val ALL: js.Array[String] = js.native
   
-  @JSImport("dnd-core/lib/utils/dirtiness", "NONE")
+  @JSImport("dnd-core/dist/utils/dirtiness", "NONE")
   @js.native
   val NONE: js.Array[String] = js.native
   

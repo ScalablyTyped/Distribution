@@ -3,38 +3,36 @@ package typings.draftJs.mod
 import typings.draftJs.mod.Draft.Model.Constants.DraftInsertionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("draft-js", "AtomicBlockUtils")
 @js.native
-class AtomicBlockUtils ()
-  extends typings.draftJs.mod.Draft.Model.Modifier.AtomicBlockUtils
+open class AtomicBlockUtils ()
+  extends StObject
+     with typings.draftJs.mod.Draft.Model.Modifier.AtomicBlockUtils
 object AtomicBlockUtils {
   
-  /* static member */
-  @JSImport("draft-js", "AtomicBlockUtils.insertAtomicBlock")
+  @JSImport("draft-js", "AtomicBlockUtils")
   @js.native
-  def insertAtomicBlock(
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def insertAtomicBlock(
     editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState,
     entityKey: String,
     character: String
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAtomicBlock")(editorState.asInstanceOf[js.Any], entityKey.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /* static member */
-  @JSImport("draft-js", "AtomicBlockUtils.moveAtomicBlock")
-  @js.native
-  def moveAtomicBlock(
+  inline def moveAtomicBlock(
     editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState,
     atomicBlock: typings.draftJs.mod.Draft.Model.ImmutableData.ContentBlock,
     targetRange: typings.draftJs.mod.Draft.Model.ImmutableData.SelectionState
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
-  @JSImport("draft-js", "AtomicBlockUtils.moveAtomicBlock")
-  @js.native
-  def moveAtomicBlock(
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("moveAtomicBlock")(editorState.asInstanceOf[js.Any], atomicBlock.asInstanceOf[js.Any], targetRange.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
+  inline def moveAtomicBlock(
     editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState,
     atomicBlock: typings.draftJs.mod.Draft.Model.ImmutableData.ContentBlock,
     targetRange: typings.draftJs.mod.Draft.Model.ImmutableData.SelectionState,
     insertionMode: DraftInsertionType
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("moveAtomicBlock")(editorState.asInstanceOf[js.Any], atomicBlock.asInstanceOf[js.Any], targetRange.asInstanceOf[js.Any], insertionMode.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
 }

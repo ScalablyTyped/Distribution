@@ -40,7 +40,7 @@ object ThumbarButton {
     
     inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
     
     inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.guacamoleClient
 
 import typings.guacamoleClient.guacCommonMod.TypedArray
-import typings.guacamoleClient.guacamoleClientNumbers.`6048`
+import typings.guacamoleClient.guacamoleClientInts.`6048`
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import typings.guacamoleClient.statusMod.Status
 import org.scalablytyped.runtime.StObject

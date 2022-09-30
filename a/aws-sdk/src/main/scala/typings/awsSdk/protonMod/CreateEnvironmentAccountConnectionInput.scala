@@ -12,7 +12,7 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. You must specify componentRoleArn to allow directly defined components to be associated with any environments running in this account. For more information about components, see Proton components in the Proton Administrator Guide.
+    * The Amazon Resource Name (ARN) of the IAM service role that Proton uses when provisioning directly defined components in the associated environment account. It determines the scope of infrastructure that a component can provision in the account. You must specify componentRoleArn to allow directly defined components to be associated with any environments running in this account. For more information about components, see Proton components in the Proton User Guide.
     */
   var componentRoleArn: js.UndefOr[Arn] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateEnvironmentAccountConnectionInput extends StObject {
   var roleArn: Arn
   
   /**
-    * An optional list of metadata items that you can associate with the Proton environment account connection. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton Administrator Guide.
+    * An optional list of metadata items that you can associate with the Proton environment account connection. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }

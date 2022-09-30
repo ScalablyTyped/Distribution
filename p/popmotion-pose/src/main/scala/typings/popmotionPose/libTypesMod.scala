@@ -2,8 +2,8 @@ package typings.popmotionPose
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.popmotionPose.popmotionPoseBooleans.`false`
-import typings.popmotionPose.popmotionPoseNumbers.`-1`
-import typings.popmotionPose.popmotionPoseNumbers.`1`
+import typings.popmotionPose.popmotionPoseInts.`-1`
+import typings.popmotionPose.popmotionPoseInts.`1`
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject

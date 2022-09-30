@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Circle")
 @js.native
-class Circle_[P] protected () extends CircleMarker_[P] {
+open class Circle_[P] protected () extends CircleMarker_[P] {
   def this(latlng: LatLngExpression) = this()
-  def this(latlng: LatLngExpression, options: CircleMarkerOptions) = this()
+  def this(latlng: LatLngExpression, options: CircleOptions) = this()
   def this(latlng: LatLngExpression, radius: Double) = this()
-  def this(latlng: LatLngExpression, radius: Double, options: CircleMarkerOptions) = this()
+  def this(latlng: LatLngExpression, radius: Double, options: CircleOptions) = this()
   
-  // deprecated!
   def getBounds(): LatLngBounds_ = js.native
 }

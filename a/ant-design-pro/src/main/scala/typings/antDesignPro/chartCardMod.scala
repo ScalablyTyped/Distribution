@@ -1,6 +1,6 @@
 package typings.antDesignPro
 
-import typings.antd.cardMod.CardProps
+import typings.antd.cardCardMod.CardProps
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -11,10 +11,9 @@ object chartCardMod {
   
   @JSImport("ant-design-pro/lib/Charts/ChartCard", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IChartCardProps, js.Any, js.Any]
+  open class default () extends Component[IChartCardProps, Any, Any]
   
-  type ChartCard = Component[IChartCardProps, js.Any, js.Any]
+  type ChartCard = Component[IChartCardProps, Any, Any]
   
   trait IChartCardProps
     extends StObject

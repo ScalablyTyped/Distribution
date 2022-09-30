@@ -22,5 +22,5 @@ trait LodashForOwnRight extends StObject {
     `object`: T
   ): js.UndefOr[T | Null] = js.native
   def apply[T](iteratee: __): LodashForOwnRight2x2[T] = js.native
-  def apply[T](iteratee: __, `object`: T): LodashForOwnRight2x2[T] = js.native
+  def apply[T](iteratee: __, `object`: T): LodashForOwnRight1x2[T] = js.native
 }

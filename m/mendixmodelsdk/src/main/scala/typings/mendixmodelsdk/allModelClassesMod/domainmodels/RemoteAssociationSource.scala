@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.10.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RemoteAssociationSource")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.RemoteAssociationSource")
 @js.native
 abstract class RemoteAssociationSource protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.RemoteAssociationSource {
@@ -28,18 +28,18 @@ abstract class RemoteAssociationSource protected ()
 }
 object RemoteAssociationSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RemoteAssociationSource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.RemoteAssociationSource")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RemoteAssociationSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.RemoteAssociationSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.RemoteAssociationSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.RemoteAssociationSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

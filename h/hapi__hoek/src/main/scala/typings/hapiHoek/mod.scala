@@ -322,8 +322,8 @@ object mod {
   
   object intersect {
     
-    inline def apply[T1, T2](array1: Array[T1], array2: Array[T2]): js.Array[T1 | T2] = (^.asInstanceOf[js.Dynamic].apply(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Array[T1 | T2]]
-    inline def apply[T1, T2](array1: Array[T1], array2: Array[T2], options: Options): js.Array[T1 | T2] = (^.asInstanceOf[js.Dynamic].apply(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T1 | T2]]
+    inline def apply[T1, T2](array1: Array[T1], array2: Array[T2]): T1 | T2 = (^.asInstanceOf[js.Dynamic].apply(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[T1 | T2]
+    inline def apply[T1, T2](array1: Array[T1], array2: Array[T2], options: Options): T1 | T2 = (^.asInstanceOf[js.Dynamic].apply(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T1 | T2]
     
     @JSImport("@hapi/hoek", "intersect")
     @js.native

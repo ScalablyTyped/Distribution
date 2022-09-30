@@ -213,6 +213,12 @@ object sqlFormatterStrings {
   inline def singlestoredb: singlestoredb = "singlestoredb".asInstanceOf[singlestoredb]
   
   @js.native
+  sealed trait snowflake
+    extends StObject
+       with SqlLanguage
+  inline def snowflake: snowflake = "snowflake".asInstanceOf[snowflake]
+  
+  @js.native
   sealed trait spark
     extends StObject
        with SqlLanguage

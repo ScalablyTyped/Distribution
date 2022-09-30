@@ -69,7 +69,7 @@ object sandboxMod {
         
         inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
         
-        inline def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+        inline def setOnFocus(value: FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
         
         inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
         
@@ -77,13 +77,13 @@ object sandboxMod {
         
         inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
         
-        inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+        inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value*))
         
         inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
         
         inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
         
-        inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+        inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         

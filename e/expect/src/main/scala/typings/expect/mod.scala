@@ -160,7 +160,7 @@ object mod extends Shortcut {
   
   type Expect_ = (js.Function1[/* actual */ Any, Matchers[Unit] & Inverse[Matchers[Unit]] & PromiseMatchers]) & BaseExpect & AsymmetricMatchers & Inverse[OmitAsymmetricMatchersany]
   
-  type ExpectationResult = SyncExpectationResult | AsyncExpectationResult
+  type ExpectationResult = SyncExpectationResult | js.Promise[SyncExpectationResult]
   
   type ExpectedAssertionsErrors = js.Array[Actual]
   

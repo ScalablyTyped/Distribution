@@ -1,38 +1,38 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`57`
-import typings.activexDao.activexDaoNumbers.`58`
-import typings.activexDao.activexDaoNumbers.`59`
-import typings.activexDao.activexDaoNumbers.`60`
-import typings.activexDao.activexDaoNumbers.`61`
-import typings.activexDao.activexDaoNumbers.`62`
-import typings.activexDao.activexDaoNumbers.`63`
-import typings.activexDao.activexDaoNumbers.`65`
-import typings.activexDao.activexDaoNumbers.`66`
-import typings.activexDao.activexDaoNumbers.`6`
-import typings.activexDao.activexDaoNumbers.`80`
-import typings.activexDao.activexDaoNumbers.`81`
-import typings.activexDao.activexDaoNumbers.`82`
-import typings.activexDao.activexDaoNumbers.`8`
+import typings.activexDao.activexDaoInts.`57`
+import typings.activexDao.activexDaoInts.`58`
+import typings.activexDao.activexDaoInts.`59`
+import typings.activexDao.activexDaoInts.`60`
+import typings.activexDao.activexDaoInts.`61`
+import typings.activexDao.activexDaoInts.`62`
+import typings.activexDao.activexDaoInts.`63`
+import typings.activexDao.activexDaoInts.`65`
+import typings.activexDao.activexDaoInts.`66`
+import typings.activexDao.activexDaoInts.`6`
+import typings.activexDao.activexDaoInts.`80`
+import typings.activexDao.activexDaoInts.`81`
+import typings.activexDao.activexDaoInts.`82`
+import typings.activexDao.activexDaoInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`60`
-  - typings.activexDao.activexDaoNumbers.`66`
-  - typings.activexDao.activexDaoNumbers.`59`
-  - typings.activexDao.activexDaoNumbers.`63`
-  - typings.activexDao.activexDaoNumbers.`57`
-  - typings.activexDao.activexDaoNumbers.`8`
-  - typings.activexDao.activexDaoNumbers.`62`
-  - typings.activexDao.activexDaoNumbers.`6`
-  - typings.activexDao.activexDaoNumbers.`81`
-  - typings.activexDao.activexDaoNumbers.`82`
-  - typings.activexDao.activexDaoNumbers.`80`
-  - typings.activexDao.activexDaoNumbers.`65`
-  - typings.activexDao.activexDaoNumbers.`61`
-  - typings.activexDao.activexDaoNumbers.`58`
+  - typings.activexDao.activexDaoInts.`60`
+  - typings.activexDao.activexDaoInts.`66`
+  - typings.activexDao.activexDaoInts.`59`
+  - typings.activexDao.activexDaoInts.`63`
+  - typings.activexDao.activexDaoInts.`57`
+  - typings.activexDao.activexDaoInts.`8`
+  - typings.activexDao.activexDaoInts.`62`
+  - typings.activexDao.activexDaoInts.`6`
+  - typings.activexDao.activexDaoInts.`81`
+  - typings.activexDao.activexDaoInts.`82`
+  - typings.activexDao.activexDaoInts.`80`
+  - typings.activexDao.activexDaoInts.`65`
+  - typings.activexDao.activexDaoInts.`61`
+  - typings.activexDao.activexDaoInts.`58`
 */
 trait SetOptionEnum extends StObject
 object SetOptionEnum {

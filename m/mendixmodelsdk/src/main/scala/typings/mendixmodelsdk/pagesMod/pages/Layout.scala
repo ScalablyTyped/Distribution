@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.pagesMod.pages.IFormBase because Already inherited
-- typings.mendixmodelsdk.pagesMod.pages.ILayout because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined content, layoutCall, layoutType */ @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Layout")
+- typings.mendixmodelsdk.pagesMod.pages.ILayout because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined content, layoutCall, layoutType */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.Layout")
 @js.native
-class Layout protected () extends FormBase {
+open class Layout protected () extends FormBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -163,7 +163,7 @@ class Layout protected () extends FormBase {
 }
 object Layout {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Layout")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Layout")
   @js.native
   val ^ : js.Any = js.native
   
@@ -175,13 +175,13 @@ object Layout {
   inline def createIn(container: IFolderBase): Layout = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Layout]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Layout.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Layout.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Layout.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.Layout.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

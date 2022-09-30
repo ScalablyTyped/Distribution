@@ -1,6 +1,5 @@
 package typings.xmldsigjs
 
-import typings.std.Uint8Array
 import typings.xmldsigjs.xmlObjectMod.XmlSignatureCollection
 import typings.xmldsigjs.xmlObjectMod.XmlSignatureObject
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ object referenceMod {
   
   @JSImport("xmldsigjs/build/types/xml/reference", "Reference")
   @js.native
-  class Reference () extends XmlSignatureObject {
+  open class Reference () extends XmlSignatureObject {
     def this(uri: String) = this()
     
     /**
@@ -22,7 +21,7 @@ object referenceMod {
     /**
       * Gets or sets the digest value of the current Reference.
       */
-    var DigestValue: Uint8Array = js.native
+    var DigestValue: js.typedarray.Uint8Array = js.native
     
     /**
       * Gets or sets the ID of the current Reference.
@@ -44,7 +43,7 @@ object referenceMod {
   
   @JSImport("xmldsigjs/build/types/xml/reference", "References")
   @js.native
-  class References () extends XmlSignatureCollection[Reference] {
+  open class References () extends XmlSignatureCollection[Reference] {
     def this(properties: js.Object) = this()
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/pubsub", "Subscription")
 @js.native
-class Subscription protected ()
+open class Subscription protected ()
   extends typings.googleCloudPubsub.subscriptionMod.Subscription {
   def this(pubsub: typings.googleCloudPubsub.pubsubMod.PubSub, name: String) = this()
   def this(pubsub: typings.googleCloudPubsub.pubsubMod.PubSub, name: String, options: SubscriptionOptions) = this()

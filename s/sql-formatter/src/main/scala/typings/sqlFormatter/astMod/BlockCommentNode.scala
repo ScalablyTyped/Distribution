@@ -11,19 +11,23 @@ trait BlockCommentNode
      with AstNode
      with CommentNode {
   
+  var precedingWhitespace: String
+  
   var text: String
   
   var `type`: block_comment
 }
 object BlockCommentNode {
   
-  inline def apply(text: String, `type`: block_comment): BlockCommentNode = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+  inline def apply(precedingWhitespace: String, text: String, `type`: block_comment): BlockCommentNode = {
+    val __obj = js.Dynamic.literal(precedingWhitespace = precedingWhitespace.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockCommentNode]
   }
   
   extension [Self <: BlockCommentNode](x: Self) {
+    
+    inline def setPrecedingWhitespace(value: String): Self = StObject.set(x, "precedingWhitespace", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

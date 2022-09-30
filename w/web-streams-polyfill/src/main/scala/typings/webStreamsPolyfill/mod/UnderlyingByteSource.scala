@@ -1,5 +1,6 @@
 package typings.webStreamsPolyfill.mod
 
+import typings.std.PromiseLike
 import typings.webStreamsPolyfill.webStreamsPolyfillStrings.bytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,15 +55,15 @@ object UnderlyingByteSource {
     
     inline def setAutoAllocateChunkSizeUndefined: Self = StObject.set(x, "autoAllocateChunkSize", js.undefined)
     
-    inline def setCancel(value: /* reason */ Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* reason */ Any => Unit | PromiseLike[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    inline def setPull(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
+    inline def setPull(value: /* controller */ ReadableByteStreamController => Unit | PromiseLike[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
-    inline def setStart(value: /* controller */ ReadableByteStreamController => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* controller */ ReadableByteStreamController => Unit | PromiseLike[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

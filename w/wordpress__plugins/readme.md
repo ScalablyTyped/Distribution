@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__plugins
 
-Typings are for version 2.3
+Typings are for version 3.0
 
 ## Library description:
 Plugins module for WordPress.
@@ -10,10 +10,10 @@ Plugins module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/plugins |
 | Keywords           | wordpress, gutenberg, plugins |
-| # releases         | 37 |
-| # dependents       | 8 |
-| # downloads        | 456091 |
-| # stars            | 0 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 53404.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/plugins/README.md)

@@ -4,7 +4,7 @@ import typings.plotlyJs.mod.ModeBarButton
 import typings.plotlyJs.mod.ModeBarDefaultButtons
 import typings.plotlyJs.mod.PlotlyHTMLElement
 import typings.plotlyJs.plotlyJsBooleans.`false`
-import typings.plotlyJs.plotlyJsNumbers.`2`
+import typings.plotlyJs.plotlyJsInts.`2`
 import typings.plotlyJs.plotlyJsStrings.autosize
 import typings.plotlyJs.plotlyJsStrings.hover
 import typings.plotlyJs.plotlyJsStrings.opaque
@@ -45,7 +45,7 @@ trait PartialConfig extends StObject {
   var locales: js.UndefOr[js.Object] = js.undefined
   
   var logging: js.UndefOr[
-    Boolean | typings.plotlyJs.plotlyJsNumbers.`0` | typings.plotlyJs.plotlyJsNumbers.`1` | `2`
+    Boolean | typings.plotlyJs.plotlyJsInts.`0` | typings.plotlyJs.plotlyJsInts.`1` | `2`
   ] = js.undefined
   
   var mapboxAccessToken: js.UndefOr[String] = js.undefined
@@ -159,7 +159,7 @@ object PartialConfig {
     
     inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    inline def setLogging(value: Boolean | typings.plotlyJs.plotlyJsNumbers.`0` | typings.plotlyJs.plotlyJsNumbers.`1` | `2`): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean | typings.plotlyJs.plotlyJsInts.`0` | typings.plotlyJs.plotlyJsInts.`1` | `2`): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     

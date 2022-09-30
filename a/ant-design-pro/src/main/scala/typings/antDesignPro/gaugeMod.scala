@@ -11,10 +11,9 @@ object gaugeMod {
   
   @JSImport("ant-design-pro/lib/Charts/Gauge", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IGaugeProps, js.Any, js.Any]
+  open class default () extends Component[IGaugeProps, Any, Any]
   
-  type Gauge = Component[IGaugeProps, js.Any, js.Any]
+  type Gauge = Component[IGaugeProps, Any, Any]
   
   trait IGaugeProps extends StObject {
     

@@ -4,10 +4,6 @@ import typings.react.mod.global.JSX.Element
 import typings.reactCountdownCircleTimer.anon.ElapsedTime
 import typings.reactCountdownCircleTimer.anon.`0ColorHex1ColorHexArrayCo`
 import typings.reactCountdownCircleTimer.anon.`0number1numberArraynumber`
-import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.Numbersign$LeftcurlybracketstringRightcurlybracket
-import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.rgbLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
-import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.rgbaLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
-import typings.reactCountdownCircleTimer.reactCountdownCircleTimerStrings.urlLeftparenthesisNumbersign$LeftcurlybracketstringRightcurlybracketRightparenthesis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,13 +32,13 @@ object mod {
   
   type ColorFormat = ColorHex | ColorRGB | ColorRGBA | ColorURL
   
-  type ColorHex = Numbersign$LeftcurlybracketstringRightcurlybracket
+  type ColorHex = /* template literal string: #${string} */ String
   
-  type ColorRGB = rgbLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
+  type ColorRGB = /* template literal string: rgb(${string}) */ String
   
-  type ColorRGBA = rgbaLeftparenthesis$LeftcurlybracketstringRightcurlybracketRightparenthesis
+  type ColorRGBA = /* template literal string: rgba(${string}) */ String
   
-  type ColorURL = urlLeftparenthesisNumbersign$LeftcurlybracketstringRightcurlybracketRightparenthesis
+  type ColorURL = /* template literal string: url(#${string}) */ String
   
   trait MultipleColors extends StObject {
     

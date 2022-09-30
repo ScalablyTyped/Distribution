@@ -78,6 +78,8 @@ trait LeafletEventHandlerFnMap extends StObject {
   
   var resize: js.UndefOr[ResizeEventHandlerFn] = js.undefined
   
+  var tileabort: js.UndefOr[TileEventHandlerFn] = js.undefined
+  
   var tileerror: js.UndefOr[TileErrorEventHandlerFn] = js.undefined
   
   var tileload: js.UndefOr[TileEventHandlerFn] = js.undefined
@@ -258,6 +260,10 @@ object LeafletEventHandlerFnMap {
     inline def setResize(value: /* event */ ResizeEvent => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction1(value))
     
     inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    
+    inline def setTileabort(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "tileabort", js.Any.fromFunction1(value))
+    
+    inline def setTileabortUndefined: Self = StObject.set(x, "tileabort", js.undefined)
     
     inline def setTileerror(value: /* event */ TileErrorEvent => Unit): Self = StObject.set(x, "tileerror", js.Any.fromFunction1(value))
     

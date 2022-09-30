@@ -1,5 +1,6 @@
 package typings.prex
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object queueMod {
     * @param iterable An optional iterable of values or promises.
     */
   open class AsyncQueue[T] () extends StObject {
-    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
+    def this(iterable: js.Iterable[T | PromiseLike[T]]) = this()
     
     /* private */ var _available: Any = js.native
     
@@ -33,7 +34,7 @@ object queueMod {
       * @param value A value or promise to add to the queue.
       */
     def put(value: T): Unit = js.native
-    def put(value: js.Thenable[T]): Unit = js.native
+    def put(value: PromiseLike[T]): Unit = js.native
     
     /**
       * Gets the number of entries in the queue.

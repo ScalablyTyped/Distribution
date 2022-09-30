@@ -120,11 +120,19 @@ type ListIteratee[T] = (ListIterator[T, NotVoid]) | IterateeShorthand[T]
 
 type ListIterateeCustom[T, TResult] = (ListIterator[T, TResult]) | IterateeShorthand[T]
 
-type ListIterator[T, TResult] = js.Function3[/* value */ T, /* index */ Double, /* collection */ List[T], TResult]
+type ListIterator[T, TResult] = js.Function3[
+/* value */ T, 
+/* index */ Double, 
+/* collection */ typings.lodash.mod.List[T], 
+TResult]
 
-type ListIteratorTypeGuard[T, S /* <: T */] = js.Function3[/* value */ T, /* index */ Double, /* collection */ List[T], /* is S */ Boolean]
+type ListIteratorTypeGuard[T, S /* <: T */] = js.Function3[
+/* value */ T, 
+/* index */ Double, 
+/* collection */ typings.lodash.mod.List[T], 
+/* is S */ Boolean]
 
-type ListOfRecursiveArraysOrValues[T] = List[T | RecursiveArray[T]]
+type ListOfRecursiveArraysOrValues[T] = typings.lodash.mod.List[T | RecursiveArray[T]]
 
 type LoDashExplicitArrayWrapper[T] = LoDashExplicitWrapper[js.Array[T]]
 

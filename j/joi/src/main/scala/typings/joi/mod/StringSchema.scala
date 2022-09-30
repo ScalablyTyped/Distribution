@@ -34,7 +34,7 @@ trait StringSchema
   def `case`(direction: upper | lower): this.type = js.native
   
   /**
-    * Requires the number to be a credit card number (Using Lunh Algorithm).
+    * Requires the number to be a credit card number (Using Luhn Algorithm).
     */
   def creditCard(): this.type = js.native
   

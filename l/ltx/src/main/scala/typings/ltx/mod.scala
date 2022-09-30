@@ -64,9 +64,9 @@ object mod {
   inline def clone_(el: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(el.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def clone_(el: typings.ltx.srcElementMod.Element): typings.ltx.srcElementMod.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(el.asInstanceOf[js.Any]).asInstanceOf[typings.ltx.srcElementMod.Element]
   
-  inline def createElement(name: String, attrs: String, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
-  inline def createElement(name: String, attrs: StringDictionary[Any], children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
-  inline def createElement(name: String, attrs: Unit, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: String, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: StringDictionary[Any], children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: Unit, children: Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
   
   inline def equal(a: default, b: default): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -95,7 +95,7 @@ object mod {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof tagString> is not an array type */ args: Parameters[js.Function2[/* literals */ js.Array[String], /* repeated */ String, String]]
   ): default = ^.asInstanceOf[js.Dynamic].applyDynamic("tag")(args.asInstanceOf[js.Any]).asInstanceOf[default]
   
-  inline def tagString(literals: js.Array[String], substitutions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tagString")(List(literals.asInstanceOf[js.Any]).`++`(substitutions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def tagString(literals: js.Array[String], substitutions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tagString")(scala.List(literals.asInstanceOf[js.Any]).`++`(substitutions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def unescapeXML(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeXML")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   

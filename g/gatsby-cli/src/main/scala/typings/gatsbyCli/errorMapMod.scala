@@ -48,6 +48,10 @@ object errorMapMod {
     - typings.gatsbyCli.gatsbyCliStrings._empty
     - typings.gatsbyCli.gatsbyCliStrings.`95312`
     - typings.gatsbyCli.gatsbyCliStrings.`95313`
+    - typings.gatsbyCli.gatsbyCliStrings.`95314`
+    - typings.gatsbyCli.gatsbyCliStrings.`95315`
+    - typings.gatsbyCli.gatsbyCliStrings.`98001`
+    - typings.gatsbyCli.gatsbyCliStrings.`98011`
     - typings.gatsbyCli.gatsbyCliStrings.`98123`
     - typings.gatsbyCli.gatsbyCliStrings.`98124`
     - typings.gatsbyCli.gatsbyCliStrings.`85901`
@@ -72,11 +76,15 @@ object errorMapMod {
     - typings.gatsbyCli.gatsbyCliStrings.`85925`
     - typings.gatsbyCli.gatsbyCliStrings.`85926`
     - typings.gatsbyCli.gatsbyCliStrings.`85927`
+    - typings.gatsbyCli.gatsbyCliStrings.`85928`
+    - typings.gatsbyCli.gatsbyCliStrings.`85929`
     - typings.gatsbyCli.gatsbyCliStrings.`10122`
     - typings.gatsbyCli.gatsbyCliStrings.`10123`
     - typings.gatsbyCli.gatsbyCliStrings.`10124`
     - typings.gatsbyCli.gatsbyCliStrings.`10125`
     - typings.gatsbyCli.gatsbyCliStrings.`10126`
+    - typings.gatsbyCli.gatsbyCliStrings.`10127`
+    - typings.gatsbyCli.gatsbyCliStrings.`10128`
     - typings.gatsbyCli.gatsbyCliStrings.`10226`
     - typings.gatsbyCli.gatsbyCliStrings.`11321`
     - typings.gatsbyCli.gatsbyCliStrings.`11322`
@@ -89,6 +97,7 @@ object errorMapMod {
     - typings.gatsbyCli.gatsbyCliStrings.`11329`
     - typings.gatsbyCli.gatsbyCliStrings.`11330`
     - typings.gatsbyCli.gatsbyCliStrings.`11331`
+    - typings.gatsbyCli.gatsbyCliStrings.`11332`
     - typings.gatsbyCli.gatsbyCliStrings.`11467`
     - typings.gatsbyCli.gatsbyCliStrings.`11521`
     - typings.gatsbyCli.gatsbyCliStrings.`11522`
@@ -97,7 +106,20 @@ object errorMapMod {
     - typings.gatsbyCli.gatsbyCliStrings.`11612`
     - typings.gatsbyCli.gatsbyCliStrings.`11613`
     - typings.gatsbyCli.gatsbyCliStrings.`11614`
+    - typings.gatsbyCli.gatsbyCliStrings.`11615`
+    - typings.gatsbyCli.gatsbyCliStrings.`11616`
     - typings.gatsbyCli.gatsbyCliStrings.`11701`
+    - typings.gatsbyCli.gatsbyCliStrings.`11801`
+    - typings.gatsbyCli.gatsbyCliStrings.`11802`
+    - typings.gatsbyCli.gatsbyCliStrings.`11805`
+    - typings.gatsbyCli.gatsbyCliStrings.`11803`
+    - typings.gatsbyCli.gatsbyCliStrings.`11804`
+    - typings.gatsbyCli.gatsbyCliStrings.`11901`
+    - typings.gatsbyCli.gatsbyCliStrings.`11902`
+    - typings.gatsbyCli.gatsbyCliStrings.`11903`
+    - typings.gatsbyCli.gatsbyCliStrings.`11904`
+    - typings.gatsbyCli.gatsbyCliStrings.`12100`
+    - typings.gatsbyCli.gatsbyCliStrings.`80000`
   */
   type ErrorId = _ErrorId | String
   
@@ -111,7 +133,7 @@ object errorMapMod {
     
     var level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String
     
-    def text(context: js.Any): String
+    def text(context: Any): String
     
     var `type`: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String
@@ -121,7 +143,7 @@ object errorMapMod {
     
     inline def apply(
       level: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String,
-      text: js.Any => String
+      text: Any => String
     ): IErrorMapEntry = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
       __obj.asInstanceOf[IErrorMapEntry]
@@ -143,7 +165,7 @@ object errorMapMod {
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Level * / any */ String
       ): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      inline def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
       inline def setType(
         value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type * / any */ String

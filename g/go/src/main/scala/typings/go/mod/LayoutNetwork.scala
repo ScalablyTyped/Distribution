@@ -138,7 +138,7 @@ open class LayoutNetwork () extends StObject {
   /**
     * Modify this network by splitting it up into separate subnetworks, each of which has all of its vertexes connected to each other, but not to any vertexes in any other subnetworks.
     */
-  def splitIntoSubNetworks(): List[LayoutNetwork] = js.native
+  def splitIntoSubNetworks(): typings.go.mod.List[LayoutNetwork] = js.native
   
   /**Gets a collection of all of the LayoutVertexes in this network.*/
   var vertexes: Set[LayoutVertex] = js.native

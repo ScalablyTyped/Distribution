@@ -8,7 +8,11 @@ import typings.ink.inkStrings.`flex-start`
 import typings.ink.inkStrings.`row-reverse`
 import typings.ink.inkStrings.`space-around`
 import typings.ink.inkStrings.`space-between`
+import typings.ink.inkStrings.`truncate-end`
+import typings.ink.inkStrings.`truncate-middle`
+import typings.ink.inkStrings.`truncate-start`
 import typings.ink.inkStrings.absolute
+import typings.ink.inkStrings.arrow
 import typings.ink.inkStrings.auto
 import typings.ink.inkStrings.bold
 import typings.ink.inkStrings.center
@@ -16,7 +20,9 @@ import typings.ink.inkStrings.classic
 import typings.ink.inkStrings.column
 import typings.ink.inkStrings.double
 import typings.ink.inkStrings.doubleSingle
+import typings.ink.inkStrings.end
 import typings.ink.inkStrings.flex
+import typings.ink.inkStrings.middle
 import typings.ink.inkStrings.none
 import typings.ink.inkStrings.relative
 import typings.ink.inkStrings.round
@@ -24,6 +30,8 @@ import typings.ink.inkStrings.row
 import typings.ink.inkStrings.single
 import typings.ink.inkStrings.singleDouble
 import typings.ink.inkStrings.stretch
+import typings.ink.inkStrings.truncate
+import typings.ink.inkStrings.wrap
 import typings.react.mod.ForwardRefExoticComponent
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
@@ -48,12 +56,12 @@ object boxMod extends Shortcut {
     
     var borderColor: js.UndefOr[
         LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
           String
         ]
       ] = js.undefined
     
-    var borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic] = js.undefined
+    var borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic | arrow] = js.undefined
     
     var display: js.UndefOr[flex | none] = js.undefined
     
@@ -133,6 +141,10 @@ object boxMod extends Shortcut {
     
     var position: js.UndefOr[absolute | relative] = js.undefined
     
+    var textWrap: js.UndefOr[
+        wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`
+      ] = js.undefined
+    
     var width: js.UndefOr[Double | String] = js.undefined
   }
   object Props {
@@ -154,14 +166,14 @@ object boxMod extends Shortcut {
       
       inline def setBorderColor(
         value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
+              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
               String
             ]
       ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setBorderStyle(value: single | double | round | bold | singleDouble | doubleSingle | classic): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: single | double | round | bold | singleDouble | doubleSingle | classic | arrow): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
@@ -260,6 +272,10 @@ object boxMod extends Shortcut {
       inline def setPosition(value: absolute | relative): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def setTextWrap(value: wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`): Self = StObject.set(x, "textWrap", value.asInstanceOf[js.Any])
+      
+      inline def setTextWrapUndefined: Self = StObject.set(x, "textWrap", js.undefined)
       
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

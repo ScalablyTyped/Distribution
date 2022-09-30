@@ -4,12 +4,9 @@ import typings.browserUpdate.anon.RequiredBrowserseastringn
 import typings.browserUpdate.browserUpdateBooleans.`false`
 import typings.browserUpdate.browserUpdateBooleans.`true`
 import typings.browserUpdate.browserUpdateStrings.TV
-import typings.browserUpdate.browserUpdateStrings.`Extended support LeftparenthesisESRRightparenthesis`
 import typings.browserUpdate.browserUpdateStrings.`below required`
 import typings.browserUpdate.browserUpdateStrings.`do not notify mobile`
-import typings.browserUpdate.browserUpdateStrings.`is embedded browserColon$LeftcurlybracketstringRightcurlybracket`
 import typings.browserUpdate.browserUpdateStrings.`is latest version of the browser`
-import typings.browserUpdate.browserUpdateStrings.`is other browserColon$LeftcurlybracketstringRightcurlybracket`
 import typings.browserUpdate.browserUpdateStrings.`mobile without upgrade path or landing page`
 import typings.browserUpdate.browserUpdateStrings.`niche browser`
 import typings.browserUpdate.browserUpdateStrings.`no device update`
@@ -46,7 +43,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /* Inlined {[ K in browser-update.browser-update.DetectedBrowsers as 'text_for_${K}' | 'text_for_${K}_in_${string}' | 'text_in_${string}' | 'text_${string}' ]:? browser-update.browser-update.TextConfig | string | undefined} */
+  /* Inlined {[ K in browser-update.browser-update.DetectedBrowsers as / * template literal string: text_for_${K} * / string ]:? browser-update.browser-update.TextConfig | string | undefined} */
   trait BrowserWithLanguageTextOptions extends StObject {
     
     var c: js.UndefOr[TextConfig | String] = js.undefined
@@ -830,7 +827,7 @@ object mod {
     var f: js.UndefOr[TextConfig | String] = js.undefined
     
     var hide_reasons: js.Array[
-        (`is other browserColon$LeftcurlybracketstringRightcurlybracket`) | (`is embedded browserColon$LeftcurlybracketstringRightcurlybracket`) | (`Extended support LeftparenthesisESRRightparenthesis`) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`)
+        (/* template literal string: is other browser:${string} */ String) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`)
       ]
     
     var i: js.UndefOr[TextConfig | String] = js.undefined
@@ -936,7 +933,7 @@ object mod {
       apiver: Double,
       domain: String,
       hide_reasons: js.Array[
-          (`is other browserColon$LeftcurlybracketstringRightcurlybracket`) | (`is embedded browserColon$LeftcurlybracketstringRightcurlybracket`) | (`Extended support LeftparenthesisESRRightparenthesis`) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`)
+          (/* template literal string: is other browser:${string} */ String) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`)
         ],
       ignorecookie: Boolean,
       is_below_required: Boolean,
@@ -1010,12 +1007,12 @@ object mod {
       
       inline def setHide_reasons(
         value: js.Array[
-              (`is other browserColon$LeftcurlybracketstringRightcurlybracket`) | (`is embedded browserColon$LeftcurlybracketstringRightcurlybracket`) | (`Extended support LeftparenthesisESRRightparenthesis`) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`)
+              (/* template literal string: is other browser:${string} */ String) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`)
             ]
       ): Self = StObject.set(x, "hide_reasons", value.asInstanceOf[js.Any])
       
       inline def setHide_reasonsVarargs(
-        value: ((`is other browserColon$LeftcurlybracketstringRightcurlybracket`) | (`is embedded browserColon$LeftcurlybracketstringRightcurlybracket`) | (`Extended support LeftparenthesisESRRightparenthesis`) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`))*
+        value: ((/* template literal string: is other browser:${string} */ String) | (`do not notify mobile`) | (`is latest version of the browser`) | (`no device update`))*
       ): Self = StObject.set(x, "hide_reasons", js.Array(value*))
       
       inline def setI(value: TextConfig | String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])

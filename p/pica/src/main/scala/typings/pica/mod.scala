@@ -3,10 +3,10 @@ package typings.pica
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.pica.picaNumbers.`0`
-import typings.pica.picaNumbers.`1`
-import typings.pica.picaNumbers.`2`
-import typings.pica.picaNumbers.`3`
+import typings.pica.picaInts.`0`
+import typings.pica.picaInts.`1`
+import typings.pica.picaInts.`2`
+import typings.pica.picaInts.`3`
 import typings.pica.picaStrings.all
 import typings.pica.picaStrings.box
 import typings.pica.picaStrings.cib

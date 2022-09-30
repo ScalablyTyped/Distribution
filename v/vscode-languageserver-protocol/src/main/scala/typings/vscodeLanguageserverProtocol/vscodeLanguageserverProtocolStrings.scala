@@ -487,20 +487,12 @@ object vscodeLanguageserverProtocolStrings {
   inline def workspaceSlashapplyEdit: workspaceSlashapplyEdit = "workspace/applyEdit".asInstanceOf[workspaceSlashapplyEdit]
   
   @js.native
-  sealed trait workspaceSlashcodeLensSlashrefresh extends StObject
-  inline def workspaceSlashcodeLensSlashrefresh: workspaceSlashcodeLensSlashrefresh = "workspace/codeLens/refresh".asInstanceOf[workspaceSlashcodeLensSlashrefresh]
-  
-  @js.native
   sealed trait workspaceSlashconfiguration extends StObject
   inline def workspaceSlashconfiguration: workspaceSlashconfiguration = "workspace/configuration".asInstanceOf[workspaceSlashconfiguration]
   
   @js.native
   sealed trait workspaceSlashdiagnostic extends StObject
   inline def workspaceSlashdiagnostic: workspaceSlashdiagnostic = "workspace/diagnostic".asInstanceOf[workspaceSlashdiagnostic]
-  
-  @js.native
-  sealed trait workspaceSlashdiagnosticSlashrefresh extends StObject
-  inline def workspaceSlashdiagnosticSlashrefresh: workspaceSlashdiagnosticSlashrefresh = "workspace/diagnostic/refresh".asInstanceOf[workspaceSlashdiagnosticSlashrefresh]
   
   @js.native
   sealed trait workspaceSlashdidChangeConfiguration extends StObject
@@ -529,18 +521,6 @@ object vscodeLanguageserverProtocolStrings {
   @js.native
   sealed trait workspaceSlashexecuteCommand extends StObject
   inline def workspaceSlashexecuteCommand: workspaceSlashexecuteCommand = "workspace/executeCommand".asInstanceOf[workspaceSlashexecuteCommand]
-  
-  @js.native
-  sealed trait workspaceSlashinlayHintSlashrefresh extends StObject
-  inline def workspaceSlashinlayHintSlashrefresh: workspaceSlashinlayHintSlashrefresh = "workspace/inlayHint/refresh".asInstanceOf[workspaceSlashinlayHintSlashrefresh]
-  
-  @js.native
-  sealed trait workspaceSlashinlineValueSlashrefresh extends StObject
-  inline def workspaceSlashinlineValueSlashrefresh: workspaceSlashinlineValueSlashrefresh = "workspace/inlineValue/refresh".asInstanceOf[workspaceSlashinlineValueSlashrefresh]
-  
-  @js.native
-  sealed trait workspaceSlashsemanticTokensSlashrefresh extends StObject
-  inline def workspaceSlashsemanticTokensSlashrefresh: workspaceSlashsemanticTokensSlashrefresh = "workspace/semanticTokens/refresh".asInstanceOf[workspaceSlashsemanticTokensSlashrefresh]
   
   @js.native
   sealed trait workspaceSlashsymbol extends StObject

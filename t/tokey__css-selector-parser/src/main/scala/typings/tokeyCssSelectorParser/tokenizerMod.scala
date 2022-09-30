@@ -18,25 +18,6 @@ object tokenizerMod {
   
   type CSSSelectorToken = Token[Descriptors | Delimiters]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`[`
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`]`
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Leftparenthesis
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Rightparenthesis
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Comma
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Asterisk
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Verticalline
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Colon
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Dot
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Numbersign
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Greaterthansign
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Tilde
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Plussign
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Leftcurlybracket
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Rightcurlybracket
-    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Ampersand
-  */
-  trait Delimiters extends StObject
   object Delimiters {
     
     inline def Ampersand: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Ampersand = "&".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Ampersand]
@@ -53,7 +34,7 @@ object tokenizerMod {
     
     inline def Leftcurlybracket: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Leftcurlybracket = "{".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Leftcurlybracket]
     
-    inline def Leftparenthesis: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Leftparenthesis = "(".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Leftparenthesis]
+    inline def Leftparenthesis: String = String.asInstanceOf[String]
     
     inline def Numbersign: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Numbersign = "#".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Numbersign]
     
@@ -61,7 +42,7 @@ object tokenizerMod {
     
     inline def Rightcurlybracket: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Rightcurlybracket = "}".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Rightcurlybracket]
     
-    inline def Rightparenthesis: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Rightparenthesis = ")".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Rightparenthesis]
+    inline def Rightparenthesis: String = String.asInstanceOf[String]
     
     inline def Tilde: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Tilde = "~".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Tilde]
     
@@ -71,4 +52,24 @@ object tokenizerMod {
     
     inline def `]`: typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`]` = "]".asInstanceOf[typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`]`]
   }
+  /* Rewritten from type alias, can be one of: 
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`[`
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.`]`
+    - java.lang.String
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Comma
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Asterisk
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Verticalline
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Colon
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Dot
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Numbersign
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Greaterthansign
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Tilde
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Plussign
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Leftcurlybracket
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Rightcurlybracket
+    - typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.Ampersand
+  */
+  type Delimiters = _Delimiters | String
+  
+  trait _Delimiters extends StObject
 }

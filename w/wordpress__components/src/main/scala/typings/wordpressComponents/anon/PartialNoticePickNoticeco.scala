@@ -34,7 +34,7 @@ object PartialNoticePickNoticeco {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: typings.wordpressComponents.noticeMod.Notice.Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: typings.wordpressComponents.noticeMod.Notice.Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

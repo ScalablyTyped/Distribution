@@ -7,9 +7,8 @@ import typings.electron.electronStrings.finish
 import typings.electron.electronStrings.login
 import typings.electron.electronStrings.redirect
 import typings.electron.electronStrings.response
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +30,7 @@ trait ClientRequest extends EventEmitter {
   @JSName("addListener")
   def addListener_close(event: close, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def addListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_finish(event: finish, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -57,6 +56,17 @@ trait ClientRequest extends EventEmitter {
   @JSName("addListener")
   def addListener_response(event: response, listener: js.Function1[/* response */ IncomingMessage, Unit]): this.type = js.native
   
+  /**
+    * A `boolean` specifying whether the request will use HTTP chunked transfer
+    * encoding or not. Defaults to false. The property is readable and writable,
+    * however it can be set only before the first write operation as the HTTP headers
+    * are not yet put on the wire. Trying to set the `chunkedEncoding` property after
+    * the first write will throw an error.
+    *
+    * Using chunked encoding is strongly recommended if you need to send a large
+    * request body as data will be streamed in small chunks instead of being
+    * internally buffered inside Electron process memory.
+    */
   var chunkedEncoding: Boolean = js.native
   
   /**
@@ -88,9 +98,9 @@ trait ClientRequest extends EventEmitter {
   def getHeader(name: String): String = js.native
   
   /**
-    * * `active` Boolean - Whether the request is currently active. If this is false
+    * * `active` boolean - Whether the request is currently active. If this is false
     * no other properties will be set
-    * * `started` Boolean - Whether the upload has started. If this is false both
+    * * `started` boolean - Whether the upload has started. If this is false both
     * `current` and `total` will be set to 0.
     * * `current` Integer - The number of bytes that have been uploaded so far
     * * `total` Integer - The number of bytes that will be uploaded this request
@@ -120,7 +130,7 @@ trait ClientRequest extends EventEmitter {
     * follow and no response object will be provided.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   /**
     * Emitted just after the last chunk of the `request`'s data has been written into
     * the `request` object.
@@ -132,8 +142,8 @@ trait ClientRequest extends EventEmitter {
     *
     * The `callback` function is expected to be called back with user credentials:
     *
-    * * `username` String
-    * * `password` String
+    * * `username` string
+    * * `password` string
     *
     * Providing empty credentials will cancel the request and report an authentication
     * error on the response object:
@@ -172,7 +182,7 @@ trait ClientRequest extends EventEmitter {
   @JSName("once")
   def once_close(event: close, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def once_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("once")
   def once_finish(event: finish, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -209,7 +219,7 @@ trait ClientRequest extends EventEmitter {
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
+  def removeListener_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_finish(event: finish, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -238,7 +248,7 @@ trait ClientRequest extends EventEmitter {
   /**
     * Adds an extra HTTP header. The header name will be issued as-is without
     * lowercasing. It can be called only before first write. Calling this method after
-    * the first write will throw an error. If the passed value is not a `String`, its
+    * the first write will throw an error. If the passed value is not a `string`, its
     * `toString()` method will be called to obtain the final value.
     *
     * Certain headers are restricted from being set by apps. These headers are listed

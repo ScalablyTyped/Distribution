@@ -9,8 +9,8 @@ import typings.activexExcel.Excel.XlPaperSize
 import typings.activexExcel.Excel.XlPrintErrors
 import typings.activexExcel.Excel.XlPrintLocation
 import typings.activexExcel.activexExcelBooleans.`false`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`2`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`2`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

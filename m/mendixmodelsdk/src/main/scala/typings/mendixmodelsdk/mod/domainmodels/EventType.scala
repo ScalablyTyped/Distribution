@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.EventType")
 @js.native
-class EventType protected ()
+open class EventType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.EventType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

@@ -28,12 +28,12 @@ open class List[T] () extends Iterable[T] {
     */
   def add(`val`: T): Unit = js.native
   
-  def addAll(coll: js.Array[T]): List[T] = js.native
+  def addAll(coll: js.Array[T]): typings.go.mod.List[T] = js.native
   /**
     * Adds all of the values of a collection (either an Iterable or an Array) to the end of this List.
     * @param {Iterable<T>|Array<T>} coll
     */
-  def addAll(coll: Iterable[T]): List[T] = js.native
+  def addAll(coll: Iterable[T]): typings.go.mod.List[T] = js.native
   
   /**
     * This is true if all invocations of the given predicate on items in the collection are true.
@@ -57,7 +57,7 @@ open class List[T] () extends Iterable[T] {
     * Unlike Iterator.concat, this returns a List, not an Iterator.
     * @param {Iterable.<T>} it An Iterable
     */
-  def concat[S](it: Iterable[S]): List[S | T] = js.native
+  def concat[S](it: Iterable[S]): typings.go.mod.List[S | T] = js.native
   
   /**
     * Returns whether the given value is in this List.
@@ -68,7 +68,7 @@ open class List[T] () extends Iterable[T] {
   /**
     * Makes a shallow copy of this List.
     */
-  def copy(): List[T] = js.native
+  def copy(): typings.go.mod.List[T] = js.native
   
   /**This read-only property returns the length of the List.*/
   var count: Double = js.native
@@ -96,7 +96,7 @@ open class List[T] () extends Iterable[T] {
     * Unlike Iterator.filter, this returns a List, not an Iterator.
     * @param {function(T):boolean} pred This function must not have any side-effects.
     */
-  def filter(pred: js.Function1[/* x */ T, Boolean]): List[T] = js.native
+  def filter(pred: js.Function1[/* x */ T, Boolean]): typings.go.mod.List[T] = js.native
   
   /**
     * Returns the first item in the list, or null if there is none.
@@ -144,7 +144,7 @@ open class List[T] () extends Iterable[T] {
     * Unlike Iterator.map, this returns a List, not an Iterator.
     * @param {function(T)} func This function must not modify the collection.
     */
-  def map[S](func: js.Function1[/* x */ T, S]): List[S] = js.native
+  def map[S](func: js.Function1[/* x */ T, S]): typings.go.mod.List[S] = js.native
   
   /**
     * Returns the last item in the list and removes it from the list, or just return null if there is none.
@@ -178,7 +178,7 @@ open class List[T] () extends Iterable[T] {
   /**
     * Reverse the order of items in this List.
     */
-  def reverse(): List[T] = js.native
+  def reverse(): typings.go.mod.List[T] = js.native
   
   /**
     * Set the element at the given index to a given value. ES6-like synonym for setElt.
@@ -201,7 +201,7 @@ open class List[T] () extends Iterable[T] {
     * Sort the List according to a comparison function.
     * @param {function(*,*):number} sortfunc the same kind of function as passed to Array.sort
     */
-  def sort(sortfunc: js.Function2[/* a */ T, /* b */ T, Double]): List[T] = js.native
+  def sort(sortfunc: js.Function2[/* a */ T, /* b */ T, Double]): typings.go.mod.List[T] = js.native
   
   /**
     * Produces a JavaScript Array from the contents of this List.

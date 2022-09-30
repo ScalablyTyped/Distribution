@@ -853,29 +853,23 @@ object Mesh {
     * Gets the default side orientation.
     * @param orientation the orientation to value to attempt to get
     * @returns the default orientation
-    * @hidden
+    * @internal
     */
   inline def _GetDefaultSideOrientation(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetDefaultSideOrientation")().asInstanceOf[Double]
   inline def _GetDefaultSideOrientation(orientation: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetDefaultSideOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
-    * @param parsedMesh
-    * @param scene
-    * @hidden
+    * @internal
     */
   inline def _GoldbergMeshParser(parsedMesh: Any, scene: Scene): typings.babylonjs.goldbergMeshMod.GoldbergMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_GoldbergMeshParser")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.goldbergMeshMod.GoldbergMesh]
   
   /**
-    * @param parsedMesh
-    * @param scene
-    * @hidden
+    * @internal
     */
   inline def _GroundMeshParser(parsedMesh: Any, scene: Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_GroundMeshParser")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
   /**
-    * @param parsedMesh
-    * @param scene
-    * @hidden
+    * @internal
     */
   inline def _LinesMeshParser(parsedMesh: Any, scene: Scene): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_LinesMeshParser")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
   
@@ -885,17 +879,12 @@ object Mesh {
   inline def _MergeMeshesCoroutine_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MergeMeshesCoroutine")(x.asInstanceOf[js.Any])
   
   /**
-    * @param scene
-    * @param physicObject
-    * @param jsonObject
-    * @hidden
+    * @internal
     */
   inline def _PhysicsImpostorParser(scene: Scene, physicObject: IPhysicsEnabledObject, jsonObject: Any): PhysicsImpostor = (^.asInstanceOf[js.Dynamic].applyDynamic("_PhysicsImpostorParser")(scene.asInstanceOf[js.Any], physicObject.asInstanceOf[js.Any], jsonObject.asInstanceOf[js.Any])).asInstanceOf[PhysicsImpostor]
   
   /**
-    * @param name
-    * @param mesh
-    * @hidden
+    * @internal
     */
   inline def _instancedMeshFactory(name: String, mesh: typings.babylonjs.meshMod.Mesh): typings.babylonjs.instancedMeshMod.InstancedMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("_instancedMeshFactory")(name.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.instancedMeshMod.InstancedMesh]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useDragDropManagerMod {
   
-  @JSImport("react-dnd/lib/hooks/useDragDropManager", JSImport.Namespace)
+  @JSImport("react-dnd/dist/hooks/useDragDropManager", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

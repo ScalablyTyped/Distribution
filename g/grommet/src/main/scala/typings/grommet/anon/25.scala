@@ -1,13 +1,12 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.OpacityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `25` extends StObject {
   
-  var opacity: js.UndefOr[OpacityType] = js.undefined
+  var hover: js.UndefOr[BackgroundExtend] = js.undefined
 }
 object `25` {
   
@@ -18,8 +17,8 @@ object `25` {
   
   extension [Self <: `25`](x: Self) {
     
-    inline def setOpacity(value: OpacityType): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setHover(value: BackgroundExtend): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
   }
 }

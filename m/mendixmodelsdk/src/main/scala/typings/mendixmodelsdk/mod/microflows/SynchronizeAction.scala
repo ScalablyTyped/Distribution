@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.SynchronizeAction")
 @js.native
-class SynchronizeAction protected ()
+open class SynchronizeAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.SynchronizeAction {
   def this(
     model: AbstractModel,

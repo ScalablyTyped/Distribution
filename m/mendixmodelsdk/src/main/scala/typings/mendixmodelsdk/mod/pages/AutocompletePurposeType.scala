@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.AutocompletePurposeType")
 @js.native
-class AutocompletePurposeType protected ()
+open class AutocompletePurposeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.AutocompletePurposeType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

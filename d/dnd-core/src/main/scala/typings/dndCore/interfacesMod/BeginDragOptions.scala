@@ -8,7 +8,7 @@ trait BeginDragOptions extends StObject {
   
   var clientOffset: js.UndefOr[XYCoord] = js.undefined
   
-  var getSourceClientOffset: js.UndefOr[js.Function1[/* sourceId */ Identifier, XYCoord]] = js.undefined
+  var getSourceClientOffset: js.UndefOr[js.Function1[/* sourceId */ js.UndefOr[Identifier], XYCoord]] = js.undefined
   
   var publishSource: js.UndefOr[Boolean] = js.undefined
 }
@@ -25,7 +25,7 @@ object BeginDragOptions {
     
     inline def setClientOffsetUndefined: Self = StObject.set(x, "clientOffset", js.undefined)
     
-    inline def setGetSourceClientOffset(value: /* sourceId */ Identifier => XYCoord): Self = StObject.set(x, "getSourceClientOffset", js.Any.fromFunction1(value))
+    inline def setGetSourceClientOffset(value: /* sourceId */ js.UndefOr[Identifier] => XYCoord): Self = StObject.set(x, "getSourceClientOffset", js.Any.fromFunction1(value))
     
     inline def setGetSourceClientOffsetUndefined: Self = StObject.set(x, "getSourceClientOffset", js.undefined)
     

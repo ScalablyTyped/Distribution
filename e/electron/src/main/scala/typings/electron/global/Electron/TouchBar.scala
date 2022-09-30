@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.TouchBar")
 @js.native
-class TouchBar protected ()
+open class TouchBar protected ()
   extends StObject
      with typings.electron.Electron.TouchBar {
   // Docs: https://electronjs.org/docs/api/touch-bar
@@ -31,6 +31,11 @@ class TouchBar protected ()
     */
   def this(options: TouchBarConstructorOptions) = this()
   
+  /**
+    * A `TouchBarItem` that will replace the "esc" button on the touch bar when set.
+    * Setting to `null` restores the default "esc" button. Changing this value
+    * immediately updates the escape item in the touch bar.
+    */
   /* CompleteClass */
   var escapeItem: typings.electron.Electron.TouchBarButton | typings.electron.Electron.TouchBarColorPicker | typings.electron.Electron.TouchBarGroup | typings.electron.Electron.TouchBarLabel | typings.electron.Electron.TouchBarPopover | typings.electron.Electron.TouchBarScrubber | typings.electron.Electron.TouchBarSegmentedControl | typings.electron.Electron.TouchBarSlider | typings.electron.Electron.TouchBarSpacer | Null = js.native
 }
@@ -43,7 +48,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarButton")
   @js.native
-  class TouchBarButton protected ()
+  open class TouchBarButton protected ()
     extends StObject
        with typings.electron.Electron.TouchBarButton {
     // Docs: https://electronjs.org/docs/api/touch-bar-button
@@ -52,24 +57,49 @@ object TouchBar {
       */
     def this(options: TouchBarButtonConstructorOptions) = this()
     
+    /**
+      * A `string` representing the description of the button to be read by a screen
+      * reader. Will only be read by screen readers if no label is set.
+      */
     /* CompleteClass */
     var accessibilityLabel: String = js.native
     
+    /**
+      * A `string` hex code representing the button's current background color. Changing
+      * this value immediately updates the button in the touch bar.
+      */
     /* CompleteClass */
     var backgroundColor: String = js.native
     
+    /**
+      * A `boolean` representing whether the button is in an enabled state.
+      */
     /* CompleteClass */
     var enabled: Boolean = js.native
     
+    /**
+      * A `NativeImage` representing the button's current icon. Changing this value
+      * immediately updates the button in the touch bar.
+      */
     /* CompleteClass */
     var icon: typings.electron.Electron.NativeImage_ = js.native
     
+    /**
+      * A `string` - Can be `left`, `right` or `overlay`.  Defaults to `overlay`.
+      */
     /* CompleteClass */
     var iconPosition: left | right | overlay = js.native
     
+    /**
+      * A `string` representing the button's current text. Changing this value
+      * immediately updates the button in the touch bar.
+      */
     /* CompleteClass */
     var label: String = js.native
   }
+  /**
+    * A `typeof TouchBarButton` reference to the `TouchBarButton` class.
+    */
   /* static member */
   /* was `typeof TouchBarButton` */
   @JSGlobal("Electron.TouchBar.TouchBarButton")
@@ -88,7 +118,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarColorPicker")
   @js.native
-  class TouchBarColorPicker protected ()
+  open class TouchBarColorPicker protected ()
     extends typings.electron.Electron.TouchBarColorPicker {
     // Docs: https://electronjs.org/docs/api/touch-bar-color-picker
     /**
@@ -96,6 +126,9 @@ object TouchBar {
       */
     def this(options: TouchBarColorPickerConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarColorPicker` reference to the `TouchBarColorPicker` class.
+    */
   /* static member */
   /* was `typeof TouchBarColorPicker` */
   @JSGlobal("Electron.TouchBar.TouchBarColorPicker")
@@ -114,13 +147,16 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarGroup")
   @js.native
-  class TouchBarGroup protected () extends EventEmitter {
+  open class TouchBarGroup protected () extends EventEmitter {
     // Docs: https://electronjs.org/docs/api/touch-bar-group
     /**
       * TouchBarGroup
       */
     def this(options: TouchBarGroupConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarGroup` reference to the `TouchBarGroup` class.
+    */
   /* static member */
   /* was `typeof TouchBarGroup` */
   @JSGlobal("Electron.TouchBar.TouchBarGroup")
@@ -139,7 +175,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarLabel")
   @js.native
-  class TouchBarLabel protected ()
+  open class TouchBarLabel protected ()
     extends typings.electron.Electron.TouchBarLabel {
     // Docs: https://electronjs.org/docs/api/touch-bar-label
     /**
@@ -147,6 +183,9 @@ object TouchBar {
       */
     def this(options: TouchBarLabelConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarLabel` reference to the `TouchBarLabel` class.
+    */
   /* static member */
   /* was `typeof TouchBarLabel` */
   @JSGlobal("Electron.TouchBar.TouchBarLabel")
@@ -169,7 +208,11 @@ object TouchBar {
   /**
     * TouchBarOtherItemsProxy
     */
-  class TouchBarOtherItemsProxy () extends EventEmitter
+  open class TouchBarOtherItemsProxy () extends EventEmitter
+  /**
+    * A `typeof TouchBarOtherItemsProxy` reference to the `TouchBarOtherItemsProxy`
+    * class.
+    */
   /* static member */
   /* was `typeof TouchBarOtherItemsProxy` */
   @JSGlobal("Electron.TouchBar.TouchBarOtherItemsProxy")
@@ -180,7 +223,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarPopover")
   @js.native
-  class TouchBarPopover protected ()
+  open class TouchBarPopover protected ()
     extends typings.electron.Electron.TouchBarPopover {
     // Docs: https://electronjs.org/docs/api/touch-bar-popover
     /**
@@ -188,6 +231,9 @@ object TouchBar {
       */
     def this(options: TouchBarPopoverConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarPopover` reference to the `TouchBarPopover` class.
+    */
   /* static member */
   /* was `typeof TouchBarPopover` */
   @JSGlobal("Electron.TouchBar.TouchBarPopover")
@@ -206,7 +252,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarScrubber")
   @js.native
-  class TouchBarScrubber protected ()
+  open class TouchBarScrubber protected ()
     extends typings.electron.Electron.TouchBarScrubber {
     // Docs: https://electronjs.org/docs/api/touch-bar-scrubber
     /**
@@ -214,6 +260,9 @@ object TouchBar {
       */
     def this(options: TouchBarScrubberConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarScrubber` reference to the `TouchBarScrubber` class.
+    */
   /* static member */
   /* was `typeof TouchBarScrubber` */
   @JSGlobal("Electron.TouchBar.TouchBarScrubber")
@@ -232,7 +281,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarSegmentedControl")
   @js.native
-  class TouchBarSegmentedControl protected ()
+  open class TouchBarSegmentedControl protected ()
     extends typings.electron.Electron.TouchBarSegmentedControl {
     // Docs: https://electronjs.org/docs/api/touch-bar-segmented-control
     /**
@@ -240,6 +289,10 @@ object TouchBar {
       */
     def this(options: TouchBarSegmentedControlConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarSegmentedControl` reference to the `TouchBarSegmentedControl`
+    * class.
+    */
   /* static member */
   /* was `typeof TouchBarSegmentedControl` */
   @JSGlobal("Electron.TouchBar.TouchBarSegmentedControl")
@@ -258,7 +311,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarSlider")
   @js.native
-  class TouchBarSlider protected ()
+  open class TouchBarSlider protected ()
     extends typings.electron.Electron.TouchBarSlider {
     // Docs: https://electronjs.org/docs/api/touch-bar-slider
     /**
@@ -266,6 +319,9 @@ object TouchBar {
       */
     def this(options: TouchBarSliderConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarSlider` reference to the `TouchBarSlider` class.
+    */
   /* static member */
   /* was `typeof TouchBarSlider` */
   @JSGlobal("Electron.TouchBar.TouchBarSlider")
@@ -284,7 +340,7 @@ object TouchBar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Electron.TouchBar.TouchBarSpacer")
   @js.native
-  class TouchBarSpacer protected ()
+  open class TouchBarSpacer protected ()
     extends typings.electron.Electron.TouchBarSpacer {
     // Docs: https://electronjs.org/docs/api/touch-bar-spacer
     /**
@@ -292,6 +348,9 @@ object TouchBar {
       */
     def this(options: TouchBarSpacerConstructorOptions) = this()
   }
+  /**
+    * A `typeof TouchBarSpacer` reference to the `TouchBarSpacer` class.
+    */
   /* static member */
   /* was `typeof TouchBarSpacer` */
   @JSGlobal("Electron.TouchBar.TouchBarSpacer")

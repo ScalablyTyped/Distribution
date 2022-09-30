@@ -32,11 +32,17 @@ import typings.electron.electronStrings.selectNextTab
 import typings.electron.electronStrings.selectPreviousTab
 import typings.electron.electronStrings.separator
 import typings.electron.electronStrings.services
+import typings.electron.electronStrings.shareMenu
+import typings.electron.electronStrings.showSubstitutions
 import typings.electron.electronStrings.startSpeaking
 import typings.electron.electronStrings.stopSpeaking
 import typings.electron.electronStrings.submenu
 import typings.electron.electronStrings.toggleDevTools
+import typings.electron.electronStrings.toggleSmartDashes
+import typings.electron.electronStrings.toggleSmartQuotes
+import typings.electron.electronStrings.toggleSpellChecker
 import typings.electron.electronStrings.toggleTabBar
+import typings.electron.electronStrings.toggleTextReplacement
 import typings.electron.electronStrings.togglefullscreen
 import typings.electron.electronStrings.undo
 import typings.electron.electronStrings.unhide
@@ -134,17 +140,26 @@ trait MenuItemConstructorOptions extends StObject {
   /**
     * Can be `undo`, `redo`, `cut`, `copy`, `paste`, `pasteAndMatchStyle`, `delete`,
     * `selectAll`, `reload`, `forceReload`, `toggleDevTools`, `resetZoom`, `zoomIn`,
-    * `zoomOut`, `togglefullscreen`, `window`, `minimize`, `close`, `help`, `about`,
-    * `services`, `hide`, `hideOthers`, `unhide`, `quit`, `startSpeaking`,
-    * `stopSpeaking`, `zoom`, `front`, `appMenu`, `fileMenu`, `editMenu`, `viewMenu`,
-    * `recentDocuments`, `toggleTabBar`, `selectNextTab`, `selectPreviousTab`,
-    * `mergeAllWindows`, `clearRecentDocuments`, `moveTabToNewWindow` or `windowMenu`
-    * - Define the action of the menu item, when specified the `click` property will
-    * be ignored. See roles.
+    * `zoomOut`, `toggleSpellChecker`, `togglefullscreen`, `window`, `minimize`,
+    * `close`, `help`, `about`, `services`, `hide`, `hideOthers`, `unhide`, `quit`,
+    * 'showSubstitutions', 'toggleSmartQuotes', 'toggleSmartDashes',
+    * 'toggleTextReplacement', `startSpeaking`, `stopSpeaking`, `zoom`, `front`,
+    * `appMenu`, `fileMenu`, `editMenu`, `viewMenu`, `shareMenu`, `recentDocuments`,
+    * `toggleTabBar`, `selectNextTab`, `selectPreviousTab`, `mergeAllWindows`,
+    * `clearRecentDocuments`, `moveTabToNewWindow` or `windowMenu` - Define the action
+    * of the menu item, when specified the `click` property will be ignored. See
+    * roles.
     */
   var role: js.UndefOr[
-    undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
+    undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | toggleSpellChecker | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | showSubstitutions | toggleSmartQuotes | toggleSmartDashes | toggleTextReplacement | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | shareMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
   ] = js.undefined
+  
+  /**
+    * The item to share when the `role` is `shareMenu`.
+    *
+    * @platform darwin
+    */
+  var sharingItem: js.UndefOr[SharingItem] = js.undefined
   
   var sublabel: js.UndefOr[String] = js.undefined
   
@@ -195,11 +210,11 @@ object MenuItemConstructorOptions {
     
     inline def setAfterGroupContainingUndefined: Self = StObject.set(x, "afterGroupContaining", js.undefined)
     
-    inline def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value :_*))
+    inline def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value*))
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+    inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
     
     inline def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
@@ -207,11 +222,11 @@ object MenuItemConstructorOptions {
     
     inline def setBeforeGroupContainingUndefined: Self = StObject.set(x, "beforeGroupContaining", js.undefined)
     
-    inline def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value :_*))
+    inline def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value*))
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+    inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value*))
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
@@ -244,10 +259,14 @@ object MenuItemConstructorOptions {
     inline def setRegisterAcceleratorUndefined: Self = StObject.set(x, "registerAccelerator", js.undefined)
     
     inline def setRole(
-      value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
+      value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | toggleSpellChecker | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | showSubstitutions | toggleSmartQuotes | toggleSmartDashes | toggleTextReplacement | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | shareMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
     ): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    
+    inline def setSharingItem(value: SharingItem): Self = StObject.set(x, "sharingItem", value.asInstanceOf[js.Any])
+    
+    inline def setSharingItemUndefined: Self = StObject.set(x, "sharingItem", js.undefined)
     
     inline def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
     
@@ -257,7 +276,7 @@ object MenuItemConstructorOptions {
     
     inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
-    inline def setSubmenuVarargs(value: MenuItemConstructorOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
+    inline def setSubmenuVarargs(value: MenuItemConstructorOptions*): Self = StObject.set(x, "submenu", js.Array(value*))
     
     inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
     

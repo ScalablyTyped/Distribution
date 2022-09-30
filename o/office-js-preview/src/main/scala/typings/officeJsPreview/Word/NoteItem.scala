@@ -44,7 +44,7 @@ trait NoteItem
   def delete(): Unit = js.native
   
   /**
-    * Gets the next note item of the same type. Throws an error if this note item is the last one.
+    * Gets the next note item of the same type. Throws an `ItemNotFound` error if this note item is the last one.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -52,7 +52,7 @@ trait NoteItem
   def getNext(): NoteItem = js.native
   
   /**
-    * Gets the next note item of the same type. Returns a null object if this note item is the last one.
+    * Gets the next note item of the same type. If this note item is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]

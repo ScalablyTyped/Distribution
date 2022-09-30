@@ -2,16 +2,26 @@ package typings.angularForms.mod
 
 import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnChanges
+import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.SimpleChanges
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularForms.angularFormsBooleans.`false`
+import typings.angularForms.angularFormsStrings.`[formControl]`
+import typings.angularForms.angularFormsStrings.ngForm
+import typings.angularForms.anon.Optional
+import typings.angularForms.anon.Self
+import typings.angularForms.anon.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormControlDirective")
 @js.native
-class FormControlDirective protected ()
+open class FormControlDirective protected ()
   extends NgControl
-     with OnChanges {
+     with OnChanges
+     with OnDestroy {
   def this(
     validators: js.Array[Validator | ValidatorFn],
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
@@ -24,15 +34,15 @@ class FormControlDirective protected ()
     _ngModelWarningConfig: String
   ) = this()
   
-  /* private */ var _isControlChanged: js.Any = js.native
+  /* private */ var _isControlChanged: Any = js.native
   
-  /* private */ var _ngModelWarningConfig: js.Any = js.native
+  /* private */ var _ngModelWarningConfig: Any = js.native
   
   /**
     * @description
     * Tracks the `FormControl` instance bound to the directive.
     */
-  var form: FormControl = js.native
+  var form: FormControl[Any] = js.native
   
   /**
     * @description
@@ -41,7 +51,7 @@ class FormControlDirective protected ()
   def isDisabled_=(isDisabled: Boolean): Unit = js.native
   
   /** @deprecated as of v6 */
-  var model: js.Any = js.native
+  var model: Any = js.native
   
   /**
     * A callback method that is invoked immediately after the
@@ -53,12 +63,56 @@ class FormControlDirective protected ()
   /* CompleteClass */
   override def ngOnChanges(changes: SimpleChanges): Unit = js.native
   
+  /**
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
+    */
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
+  
   /** @deprecated as of v6 */
-  var update: EventEmitter[js.Any] = js.native
+  var update: EventEmitter[Any] = js.native
   
   /**
     * Internal reference to the view model value.
     * @nodoc
     */
-  var viewModel: js.Any = js.native
+  var viewModel: Any = js.native
+}
+/* static members */
+object FormControlDirective {
+  
+  @JSImport("@angular/forms", "FormControlDirective")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "FormControlDirective.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    FormControlDirective, 
+    `[formControl]`, 
+    js.Array[ngForm], 
+    typings.angularForms.anon.Form, 
+    Update, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      FormControlDirective, 
+      `[formControl]`, 
+      js.Array[ngForm], 
+      typings.angularForms.anon.Form, 
+      Update, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "FormControlDirective.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[FormControlDirective, js.Tuple4[Self, Self, Self, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[FormControlDirective, js.Tuple4[Self, Self, Self, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

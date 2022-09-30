@@ -217,7 +217,7 @@ object mod {
   
   inline def hosted(value: Any, host: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hosted")(value.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def inArgs(`val`: Any, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inArgs")(List(`val`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def inArgs(`val`: Any, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inArgs")(scala.List(`val`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def inArray(`val`: Any, ary: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(`val`.asInstanceOf[js.Any], ary.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -301,9 +301,9 @@ object mod {
   
   inline def masterCardCardNumber(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("masterCardCardNumber")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def `match`(`val`: Any, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(List(`val`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def `match`(`val`: Any, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(scala.List(`val`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
-  inline def matching(`val`: Any, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matching")(List(`val`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def matching(`val`: Any, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matching")(scala.List(`val`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def max(value: Double, others: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(value.asInstanceOf[js.Any], others.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

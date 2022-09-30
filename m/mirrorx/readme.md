@@ -10,10 +10,10 @@ A React framework with minimal API and zero boilerplate.
 | ------------------ | :-------------: |
 | Full name          | mirrorx |
 | Keywords           | framework, react, redux, mirror, mirrorx, react-router, front-end |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 7298 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 435.3333333333333 |
+| # stars            | 1444.0 |
 
 ## Links
 - [Homepage](https://github.com/mirrorjs/mirror#readme)

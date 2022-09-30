@@ -13,7 +13,6 @@ import typings.marked.mod.marked.Tokens.Heading
 import typings.marked.mod.marked.Tokens.Hr
 import typings.marked.mod.marked.Tokens.Image
 import typings.marked.mod.marked.Tokens.Link
-import typings.marked.mod.marked.Tokens.List
 import typings.marked.mod.marked.Tokens.Paragraph
 import typings.marked.mod.marked.Tokens.Space
 import typings.marked.mod.marked.Tokens.Strong
@@ -61,7 +60,7 @@ open class Tokenizer[T] () extends StObject {
   
   def link(src: String): Image | Link | T = js.native
   
-  def list(src: String): List | T = js.native
+  def list(src: String): typings.marked.mod.marked.Tokens.List | T = js.native
   
   var options: MarkedOptions = js.native
   

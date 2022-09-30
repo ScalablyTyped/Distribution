@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object structuralMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/structural", "StructuralChildListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/structural", "StructuralChildListProperty")
   @js.native
-  class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
+  open class StructuralChildListProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
     extends AbstractProperty[js.Array[T], IList[T]] {
     def this(
       declaredOn: IStructureClass,
@@ -43,9 +43,9 @@ object structuralMod {
     def removeChild(child: T): Boolean = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/structural", "StructuralChildProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/structural", "StructuralChildProperty")
   @js.native
-  class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected () extends AbstractProperty[T | Null, IObservableValue[T | Null]] {
+  open class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected () extends AbstractProperty[T | Null, IObservableValue[T | Null]] {
     def this(declaredOn: IStructureClass, parent: StructuralUnit[IAbstractModel], name: String) = this()
     def this(declaredOn: IStructureClass, parent: StructuralUnit[IAbstractModel], name: String, value: T) = this()
     def this(

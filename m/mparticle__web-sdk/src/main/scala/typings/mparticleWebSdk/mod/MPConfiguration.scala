@@ -1,7 +1,7 @@
 package typings.mparticleWebSdk.mod
 
-import typings.mparticleWebSdk.mparticleWebSdkNumbers.`1`
-import typings.mparticleWebSdk.mparticleWebSdkNumbers.`2`
+import typings.mparticleWebSdk.mparticleWebSdkInts.`1`
+import typings.mparticleWebSdk.mparticleWebSdkInts.`2`
 import typings.mparticleWebSdk.mparticleWebSdkStrings.none
 import typings.mparticleWebSdk.mparticleWebSdkStrings.verbose
 import typings.mparticleWebSdk.mparticleWebSdkStrings.warning

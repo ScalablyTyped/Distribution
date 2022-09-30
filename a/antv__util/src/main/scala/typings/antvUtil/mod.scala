@@ -66,7 +66,7 @@ object mod {
   inline def debounce(func: js.Function, wait: Double, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def debounce(func: js.Function, wait: Unit, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  inline def deepMix(rst: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepMix")(List(rst.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def deepMix(rst: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepMix")(scala.List(rst.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def difference[T](arr: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def difference[T](arr: js.Array[T], values: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(arr.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
@@ -313,7 +313,7 @@ object mod {
   
   inline def pick[T](`object`: typings.antvUtil.pickMod.ObjectType[T], keys: js.Array[String]): typings.antvUtil.pickMod.ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.antvUtil.pickMod.ObjectType[T]]
   
-  inline def pull[T](arr: js.Array[T], values: Any*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pull")(List(arr.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
+  inline def pull[T](arr: js.Array[T], values: Any*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pull")(scala.List(arr.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
   
   inline def pullAt[T](arr: js.Array[T], indexes: js.Array[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pullAt")(arr.asInstanceOf[js.Any], indexes.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   

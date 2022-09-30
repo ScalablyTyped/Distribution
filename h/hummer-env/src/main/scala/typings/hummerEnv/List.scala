@@ -1,8 +1,8 @@
 package typings.hummerEnv
 
-import typings.hummerEnv.hummerEnvNumbers.`0`
-import typings.hummerEnv.hummerEnvNumbers.`1`
-import typings.hummerEnv.hummerEnvNumbers.`2`
+import typings.hummerEnv.hummerEnvInts.`0`
+import typings.hummerEnv.hummerEnvInts.`1`
+import typings.hummerEnv.hummerEnvInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

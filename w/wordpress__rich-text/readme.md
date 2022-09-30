@@ -10,10 +10,10 @@ Rich text value and manipulation API.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/rich-text |
 | Keywords           | wordpress, gutenberg, rich-text |
-| # releases         | 45 |
-| # dependents       | 12 |
-| # downloads        | 931576 |
-| # stars            | 0 |
+| # releases         | 80 |
+| # dependents       | 0.0 |
+| # downloads        | 147654.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/rich-text/README.md)

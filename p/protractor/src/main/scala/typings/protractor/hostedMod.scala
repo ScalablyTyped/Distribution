@@ -10,7 +10,7 @@ object hostedMod {
   
   @JSImport("protractor/built/driverProviders/hosted", "Hosted")
   @js.native
-  class Hosted protected () extends DriverProvider {
+  open class Hosted protected () extends DriverProvider {
     def this(config: Config) = this()
   }
 }

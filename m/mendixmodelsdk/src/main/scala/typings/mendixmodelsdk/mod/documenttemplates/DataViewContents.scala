@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "documenttemplates.DataViewContents")
 @js.native
-class DataViewContents protected ()
+open class DataViewContents protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.DataViewContents {
   def this(
     model: AbstractModel,

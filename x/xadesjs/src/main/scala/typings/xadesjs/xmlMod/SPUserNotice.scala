@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "SPUserNotice")
+@JSImport("xadesjs/build/types/src/xml", "SPUserNotice")
 @js.native
-class SPUserNotice ()
+open class SPUserNotice ()
   extends typings.xadesjs.signaturePolicyIdentifierMod.SPUserNotice {
   def this(properties: js.Object) = this()
 }

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.ErrorEvent")
 @js.native
-class ErrorEvent protected ()
+open class ErrorEvent protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ErrorEvent {
   def this(
     model: AbstractModel,

@@ -14,16 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.deezerSdk.deezerSdkNumbers.`0`
-  - typings.deezerSdk.deezerSdkNumbers.`1`
-  - typings.deezerSdk.deezerSdkNumbers.`2`
+  - typings.deezerSdk.deezerSdkInts.`0`
+  - typings.deezerSdk.deezerSdkInts.`1`
+  - typings.deezerSdk.deezerSdkInts.`2`
 */
 trait RepeatMode extends StObject
 object RepeatMode {
   
-  inline def `0`: typings.deezerSdk.deezerSdkNumbers.`0` = 0.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`0`]
+  inline def `0`: typings.deezerSdk.deezerSdkInts.`0` = 0.asInstanceOf[typings.deezerSdk.deezerSdkInts.`0`]
   
-  inline def `1`: typings.deezerSdk.deezerSdkNumbers.`1` = 1.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`1`]
+  inline def `1`: typings.deezerSdk.deezerSdkInts.`1` = 1.asInstanceOf[typings.deezerSdk.deezerSdkInts.`1`]
   
-  inline def `2`: typings.deezerSdk.deezerSdkNumbers.`2` = 2.asInstanceOf[typings.deezerSdk.deezerSdkNumbers.`2`]
+  inline def `2`: typings.deezerSdk.deezerSdkInts.`2` = 2.asInstanceOf[typings.deezerSdk.deezerSdkInts.`2`]
 }

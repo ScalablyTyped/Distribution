@@ -54,7 +54,7 @@ open class Geometry () extends StObject {
   def equalsApprox(g: Geometry): Boolean = js.native
   
   /**Gets or sets the List of PathFigures that describes the content of the path for Geometries of type .Path.*/
-  var figures: List[PathFigure] = js.native
+  var figures: typings.go.mod.List[PathFigure] = js.native
   
   /**
     * Normalizes the Geometry points in place by ensuring the top-left bounds of the geometry lines up with (0, 0), returning the Point (x, y) amount it was shifted.

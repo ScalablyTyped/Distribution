@@ -2,7 +2,7 @@ package typings.reduxSagaCore
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.redux.mod.Action
 import typings.reduxSagaCore.anon.Context
 import typings.reduxSagaCore.anon.ContextCtx
@@ -24,6 +24,7 @@ import typings.reduxSagaCore.reduxSagaCoreStrings.SELECT
 import typings.reduxSagaCore.reduxSagaCoreStrings.SET_CONTEXT
 import typings.reduxSagaCore.reduxSagaCoreStrings.TAKE
 import typings.reduxSagaCore.reduxSagaCoreStrings.`@@redux-sagaSlashSELF_CANCELLATION`
+import typings.reduxSagaCore.reduxSagaCoreStrings.apply
 import typings.reduxSagaCore.reduxSagaCoreStrings.call_
 import typings.reduxSagaCore.reduxSagaCoreStrings.cps_
 import typings.reduxSagaCore.reduxSagaCoreStrings.fork_
@@ -43,19 +44,21 @@ object effectsMod {
   val ^ : js.Any = js.native
   
   inline def actionChannel(
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
   ): ActionChannelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("actionChannel")(pattern.asInstanceOf[js.Any]).asInstanceOf[ActionChannelEffect]
   inline def actionChannel(
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any,
     buffer: Buffer
   ): ActionChannelEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("actionChannel")(pattern.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[ActionChannelEffect]
   
   inline def all[T](effects: js.Array[T]): AllEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(effects.asInstanceOf[js.Any]).asInstanceOf[AllEffect[T]]
   inline def all[T](effects: StringDictionary[T]): AllEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(effects.asInstanceOf[js.Any]).asInstanceOf[AllEffect[T]]
   
-  inline def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](ctx: Ctx, fn: Fn, args: Parameters[Fn]): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(ctx.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  
+  inline def apply_CtxName[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.apply & TopLevel[js.Any] */, Name /* <: String */](
+    */ apply & TopLevel[Any] */, Name /* <: String */](
     ctx: Ctx,
     fnName: Name,
     args: Parameters[
@@ -63,116 +66,116 @@ object effectsMod {
     ]
   ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(ctx.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
-  inline def apply_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](ctx: Ctx, fn: Fn, args: Parameters[Fn]): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(ctx.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
-  
-  inline def call[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def call[Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   inline def call[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ call_ & TopLevel[js.Any] */, Name /* <: String */](
-    ctxAndFnName: js.Tuple2[Ctx, Name],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
-      /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
-    ]
-  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
-  inline def call[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ call_ & TopLevel[js.Any] */, Name /* <: String */](
+    */ call_ & TopLevel[Any] */, Name /* <: String */](
     ctxAndFnName: Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
   ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
-  inline def call[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
+  inline def call[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](
+    ctxAndFn: js.Tuple2[Ctx, Fn],
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  inline def call[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](
     ctxAndFn: ContextFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
-  inline def call_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
-    ctxAndFn: js.Tuple2[Ctx, Fn],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  inline def call_CtxName[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ call_ & TopLevel[Any] */, Name /* <: String */](
+    ctxAndFnName: js.Tuple2[Ctx, Name],
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
+    ]
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
   inline def cancel(): CancelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")().asInstanceOf[CancelEffect]
   inline def cancel(
-    task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
+    task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any
   ): CancelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(task.asInstanceOf[js.Any]).asInstanceOf[CancelEffect]
   inline def cancel(
     tasks: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any
     ]
   ): CancelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(tasks.asInstanceOf[js.Any]).asInstanceOf[CancelEffect]
   
   inline def cancelled(): CancelledEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelled")().asInstanceOf[CancelledEffect]
   
-  inline def cps[Fn /* <: js.Function1[/* cb */ CpsCallback[js.Any], js.Any] */](fn: Fn): CpsEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cps")(fn.asInstanceOf[js.Any]).asInstanceOf[CpsEffect]
-  inline def cps[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def cps[Fn /* <: js.Function1[/* cb */ CpsCallback[Any], Any] */](fn: Fn): CpsEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cps")(fn.asInstanceOf[js.Any]).asInstanceOf[CpsEffect]
+  inline def cps[Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
   ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
   inline def cps[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): void}
-    */ cps_ & TopLevel[js.Any] */, Name /* <: String */](
+    */ cps_ & TopLevel[Any] */, Name /* <: String */](
     ctxAndFnName: Fn[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: CpsFunctionParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
   ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
-  inline def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */](
+  inline def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Unit] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
   ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
-  inline def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */](
+  inline def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Unit] */](
     ctxAndFn: ContextCtx[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
   ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
   
-  inline def cps_Ctx_Intersectioncps_TopLevelAnyName_String[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def cps_CtxName[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): void}
-    */ cps_ & TopLevel[js.Any] */, Name /* <: String */](
+    */ cps_ & TopLevel[Any] */, Name /* <: String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: CpsFunctionParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
   ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
   
-  inline def debounce[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def debounce[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
+  inline def debounce[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  inline def debounce[A /* <: Action[Any] */](
     ms: Double,
-    pattern: P,
-    worker: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      js.Any
-    ]
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
+    worker: js.Function1[/* action */ A, Any]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def debounce[A /* <: Action[js.Any] */](
-    ms: Double,
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, js.Any]
-  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def debounce[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def debounce[T, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     ms: Double,
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def debounce[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def debounce[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     ms: Double,
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ Any, 
       Fn
     ]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def debounce[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  
+  inline def debounce_AFn[A /* <: Action[Any] */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     ms: Double,
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  
+  inline def debounce_P[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */](
+    ms: Double,
+    pattern: P,
+    worker: js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ Any, 
+      Any
+    ]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
   inline def delay[T](ms: Double): CallEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[CallEffect]
   inline def delay[T](ms: Double, `val`: T): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
@@ -262,13 +265,13 @@ object effectsMod {
   
   inline def flush[T](channel: FlushableChannel[T]): FlushEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(channel.asInstanceOf[js.Any]).asInstanceOf[FlushEffect[T]]
   
-  inline def fork[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def fork[Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   inline def fork[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ fork_ & TopLevel[js.Any] */, Name /* <: String */](
+    */ fork_ & TopLevel[Any] */, Name /* <: String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
@@ -276,18 +279,18 @@ object effectsMod {
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   inline def fork[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ fork_ & TopLevel[js.Any] */, Name /* <: String */](
+    */ fork_ & TopLevel[Any] */, Name /* <: String */](
     ctxAndFnName: Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def fork[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
+  inline def fork[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](
     ctxAndFn: ContextFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  inline def fork_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
+  inline def fork_CtxFn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
@@ -295,27 +298,26 @@ object effectsMod {
   inline def getContext(prop: String): GetContextEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(prop.asInstanceOf[js.Any]).asInstanceOf[GetContextEffect]
   
   inline def join(
-    task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
+    task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any
   ): JoinEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(task.asInstanceOf[js.Any]).asInstanceOf[JoinEffect]
   inline def join(
     tasks: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any
     ]
   ): JoinEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(tasks.asInstanceOf[js.Any]).asInstanceOf[JoinEffect]
   
-  inline def put[A /* <: Action[js.Any] */](action: A): PutEffect[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(action.asInstanceOf[js.Any]).asInstanceOf[PutEffect[A]]
-  inline def put[T](channel: PuttableChannel[T], action: T): ChannelPutEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(channel.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[ChannelPutEffect[T]]
+  inline def put[A /* <: Action[Any] */](action: A): PutEffect[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(action.asInstanceOf[js.Any]).asInstanceOf[PutEffect[A]]
   inline def put[T](
     channel: PuttableChannel[T],
-    action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify END */ js.Any
+    action: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify END */ Any) | T
   ): ChannelPutEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(channel.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[ChannelPutEffect[T]]
   
-  inline def putResolve[A /* <: Action[js.Any] */](action: A): PutEffect[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("putResolve")(action.asInstanceOf[js.Any]).asInstanceOf[PutEffect[A]]
+  inline def putResolve[A /* <: Action[Any] */](action: A): PutEffect[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("putResolve")(action.asInstanceOf[js.Any]).asInstanceOf[PutEffect[A]]
   
   inline def race[T](effects: js.Array[T]): RaceEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(effects.asInstanceOf[js.Any]).asInstanceOf[RaceEffect[T]]
   inline def race[T](effects: StringDictionary[T]): RaceEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(effects.asInstanceOf[js.Any]).asInstanceOf[RaceEffect[T]]
   
-  inline def retry[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def retry[Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     maxTries: Double,
     delayLength: Double,
     fn: Fn,
@@ -323,20 +325,20 @@ object effectsMod {
   ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(maxTries.asInstanceOf[js.Any], delayLength.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
   inline def select(): SelectEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("select")().asInstanceOf[SelectEffect]
-  inline def select[Fn /* <: js.Function2[/* state */ js.Any, /* repeated */ js.Any, js.Any] */](
+  inline def select[Fn /* <: js.Function2[/* state */ Any, /* repeated */ Any, Any] */](
     selector: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Tail<Parameters<Fn>> is not an array type */ args: Tail[Parameters[Fn]]
   ): SelectEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SelectEffect]
   
   inline def setContext[C /* <: js.Object */](props: C): SetContextEffect[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(props.asInstanceOf[js.Any]).asInstanceOf[SetContextEffect[C]]
   
-  inline def spawn[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def spawn[Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   inline def spawn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn & TopLevel[js.Any] */, Name /* <: String */](
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn & TopLevel[Any] */, Name /* <: String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
@@ -344,193 +346,201 @@ object effectsMod {
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   inline def spawn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn & TopLevel[js.Any] */, Name /* <: String */](
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn & TopLevel[Any] */, Name /* <: String */](
     ctxAndFnName: Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def spawn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
+  inline def spawn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](
     ctxAndFn: ContextFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  inline def spawn_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
+  inline def spawn_CtxFn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
   inline def take(): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")().asInstanceOf[TakeEffect]
   inline def take(
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
   ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
   inline def take[T](channel: TakeableChannel[T]): ChannelTakeEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(channel.asInstanceOf[js.Any]).asInstanceOf[ChannelTakeEffect[T]]
   inline def take[T](
     channel: TakeableChannel[T],
-    multicastPattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ js.Any
+    multicastPattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ Any
   ): ChannelTakeEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(channel.asInstanceOf[js.Any], multicastPattern.asInstanceOf[js.Any])).asInstanceOf[ChannelTakeEffect[T]]
   
-  inline def takeEvery[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeEvery[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
-    pattern: P,
-    worker: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      js.Any
-    ]
+  inline def takeEvery[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  inline def takeEvery[A /* <: Action[Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
+    worker: js.Function1[/* action */ A, Any]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeEvery[A /* <: Action[js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, js.Any]
-  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeEvery[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def takeEvery[T, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeEvery[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def takeEvery[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ Any, 
       Fn
     ]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeEvery[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
+  
+  inline def takeEvery_AFn[A /* <: Action[Any] */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  inline def takeLatest[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLatest[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
+  inline def takeEvery_P[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */](
     pattern: P,
     worker: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ Any, 
+      Any
     ]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  
+  inline def takeLatest[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  inline def takeLatest[A /* <: Action[Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
+    worker: js.Function1[/* action */ A, Any]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLatest[A /* <: Action[js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, js.Any]
-  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLatest[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def takeLatest[T, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLatest[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def takeLatest[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ Any, 
       Fn
     ]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLatest[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
+  
+  inline def takeLatest_AFn[A /* <: Action[Any] */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  inline def takeLeading[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLeading[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
+  inline def takeLatest_P[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */](
     pattern: P,
     worker: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ Any, 
+      Any
     ]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  
+  inline def takeLeading[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  inline def takeLeading[A /* <: Action[Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
+    worker: js.Function1[/* action */ A, Any]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLeading[A /* <: Action[js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, js.Any]
-  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLeading[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def takeLeading[T, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLeading[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def takeLeading[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ Any, 
       Fn
     ]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def takeLeading[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
+  
+  inline def takeLeading_AFn[A /* <: Action[Any] */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
+  inline def takeLeading_P[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */](
+    pattern: P,
+    worker: js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ Any, 
+      Any
+    ]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  
   inline def takeMaybe(): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")().asInstanceOf[TakeEffect]
   inline def takeMaybe(
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
   ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
   inline def takeMaybe[T](channel: TakeableChannel[T]): ChannelTakeEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(channel.asInstanceOf[js.Any]).asInstanceOf[ChannelTakeEffect[T]]
   inline def takeMaybe[T](
     channel: TakeableChannel[T],
-    multicastPattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ js.Any
+    multicastPattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ Any
   ): ChannelTakeEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(channel.asInstanceOf[js.Any], multicastPattern.asInstanceOf[js.Any])).asInstanceOf[ChannelTakeEffect[T]]
   
-  inline def takeMaybe_A_ActionAny[A /* <: Action[js.Any] */](): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")().asInstanceOf[TakeEffect]
-  inline def takeMaybe_A_ActionAny[A /* <: Action[js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any
+  inline def takeMaybe_A[A /* <: Action[Any] */](): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")().asInstanceOf[TakeEffect]
+  inline def takeMaybe_A[A /* <: Action[Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any
   ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
   
-  inline def take_A_ActionAny[A /* <: Action[js.Any] */](): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")().asInstanceOf[TakeEffect]
-  inline def take_A_ActionAny[A /* <: Action[js.Any] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any
+  inline def take_A[A /* <: Action[Any] */](): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")().asInstanceOf[TakeEffect]
+  inline def take_A[A /* <: Action[Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any
   ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
   
-  inline def throttle[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def throttle[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
+  inline def throttle[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  inline def throttle[A /* <: Action[Any] */](
     ms: Double,
-    pattern: P,
-    worker: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      js.Any
-    ]
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
+    worker: js.Function1[/* action */ A, Any]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def throttle[A /* <: Action[js.Any] */](
-    ms: Double,
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, js.Any]
-  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def throttle[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def throttle[T, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     ms: Double,
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def throttle[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  inline def throttle[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     ms: Double,
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ Any, 
       Fn
     ]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
-  inline def throttle[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+  
+  inline def throttle_AFn[A /* <: Action[Any] */, Fn /* <: js.Function1[/* repeated */ Any, Any] */](
     ms: Double,
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
   ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  type ActionChannelEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'ACTION_CHANNEL', ActionChannelEffectDescriptor> */ js.Any
+  inline def throttle_P[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any */](
+    ms: Double,
+    pattern: P,
+    worker: js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ Any, 
+      Any
+    ]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  
+  type ActionChannelEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'ACTION_CHANNEL', ActionChannelEffectDescriptor> */ Any
   
   trait ActionChannelEffectDescriptor extends StObject {
     
     var buffer: js.UndefOr[Buffer] = js.undefined
     
-    var pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+    var pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
   }
   object ActionChannelEffectDescriptor {
     
     inline def apply(
-      pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+      pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
     ): ActionChannelEffectDescriptor = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionChannelEffectDescriptor]
@@ -543,57 +553,57 @@ object effectsMod {
       inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
       inline def setPattern(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
       ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
   
-  type AllButLast[L /* <: js.Array[js.Any] */] = Reverse[Tail[Reverse[L]]]
+  type AllButLast[L /* <: js.Array[Any] */] = Reverse[Tail[Reverse[L]]]
   
-  type AllEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffect<'ALL', T> */ js.Any
+  type AllEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffect<'ALL', T> */ Any
   
-  type AllEffectDescriptor[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffectDescriptor<T> */ js.Any
+  type AllEffectDescriptor[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffectDescriptor<T> */ Any
   
-  type CallEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CALL', CallEffectDescriptor> */ js.Any
+  type CallEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CALL', CallEffectDescriptor> */ Any
   
   trait CallEffectDescriptor extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
-    var context: js.Any
+    var context: Any
     
     var fn: js.Function
   }
   object CallEffectDescriptor {
     
-    inline def apply(args: js.Array[js.Any], context: js.Any, fn: js.Function): CallEffectDescriptor = {
+    inline def apply(args: js.Array[Any], context: Any, fn: js.Function): CallEffectDescriptor = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallEffectDescriptor]
     }
     
     extension [Self <: CallEffectDescriptor](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setFn(value: js.Function): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     }
   }
   
-  type CancelEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CANCEL', CancelEffectDescriptor> */ js.Any
+  type CancelEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CANCEL', CancelEffectDescriptor> */ Any
   
-  type CancelEffectDescriptor = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any) | (js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
+  type CancelEffectDescriptor = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any) | (js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any
   ]) | SELF_CANCELLATION
   
-  type CancelledEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CANCELLED', CancelledEffectDescriptor> */ js.Any
+  type CancelledEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CANCELLED', CancelledEffectDescriptor> */ Any
   
   type CancelledEffectDescriptor = js.Object
   
-  type ChannelPutEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'PUT', ChannelPutEffectDescriptor<T>> */ js.Any
+  type ChannelPutEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'PUT', ChannelPutEffectDescriptor<T>> */ Any
   
   trait ChannelPutEffectDescriptor[T] extends StObject {
     
@@ -616,7 +626,7 @@ object effectsMod {
     }
   }
   
-  type ChannelTakeEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'TAKE', ChannelTakeEffectDescriptor<T>> */ js.Any
+  type ChannelTakeEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'TAKE', ChannelTakeEffectDescriptor<T>> */ Any
   
   trait ChannelTakeEffectDescriptor[T] extends StObject {
     
@@ -625,7 +635,7 @@ object effectsMod {
     var maybe: js.UndefOr[Boolean] = js.undefined
     
     var pattern: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ Any
       ] = js.undefined
   }
   object ChannelTakeEffectDescriptor {
@@ -644,7 +654,7 @@ object effectsMod {
       inline def setMaybeUndefined: Self = StObject.set(x, "maybe", js.undefined)
       
       inline def setPattern(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ Any
       ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
@@ -654,20 +664,20 @@ object effectsMod {
   @js.native
   trait CpsCallback[R] extends StObject {
     
-    def apply(error: js.Any, result: R): Unit = js.native
+    def apply(error: Any, result: R): Unit = js.native
     
     var cancel: js.UndefOr[js.Function0[Unit]] = js.native
   }
   
-  type CpsEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CPS', CallEffectDescriptor> */ js.Any
+  type CpsEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'CPS', CallEffectDescriptor> */ Any
   
-  type CpsFunctionParameters[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = AllButLast[Parameters[Fn]]
+  type CpsFunctionParameters[Fn /* <: js.Function1[/* repeated */ Any, Any] */] = AllButLast[Parameters[Fn]]
   
-  type FlushEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'FLUSH', FlushEffectDescriptor<T>> */ js.Any
+  type FlushEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'FLUSH', FlushEffectDescriptor<T>> */ Any
   
   type FlushEffectDescriptor[T] = FlushableChannel[T]
   
-  type ForkEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'FORK', ForkEffectDescriptor> */ js.Any
+  type ForkEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'FORK', ForkEffectDescriptor> */ Any
   
   trait ForkEffectDescriptor
     extends StObject
@@ -677,7 +687,7 @@ object effectsMod {
   }
   object ForkEffectDescriptor {
     
-    inline def apply(args: js.Array[js.Any], context: js.Any, fn: js.Function): ForkEffectDescriptor = {
+    inline def apply(args: js.Array[Any], context: Any, fn: js.Function): ForkEffectDescriptor = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForkEffectDescriptor]
     }
@@ -690,21 +700,21 @@ object effectsMod {
     }
   }
   
-  type GetContextEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'GET_CONTEXT', GetContextEffectDescriptor> */ js.Any
+  type GetContextEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'GET_CONTEXT', GetContextEffectDescriptor> */ Any
   
   type GetContextEffectDescriptor = String
   
-  type HelperWorkerParameters[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = Parameters[Fn] | AllButLast[Parameters[Fn]]
+  type HelperWorkerParameters[T, Fn /* <: js.Function1[/* repeated */ Any, Any] */] = Parameters[Fn] | AllButLast[Parameters[Fn]]
   
-  type JoinEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'JOIN', JoinEffectDescriptor> */ js.Any
+  type JoinEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'JOIN', JoinEffectDescriptor> */ Any
   
-  type JoinEffectDescriptor = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any) | (js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
+  type JoinEffectDescriptor = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any) | (js.Array[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ Any
   ])
   
-  type PutEffect[A /* <: Action[js.Any] */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'PUT', PutEffectDescriptor<A>> */ js.Any
+  type PutEffect[A /* <: Action[Any] */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'PUT', PutEffectDescriptor<A>> */ Any
   
-  trait PutEffectDescriptor[A /* <: Action[js.Any] */] extends StObject {
+  trait PutEffectDescriptor[A /* <: Action[Any] */] extends StObject {
     
     var action: A
     
@@ -714,12 +724,12 @@ object effectsMod {
   }
   object PutEffectDescriptor {
     
-    inline def apply[A /* <: Action[js.Any] */](action: A, channel: Null): PutEffectDescriptor[A] = {
+    inline def apply[A /* <: Action[Any] */](action: A, channel: Null): PutEffectDescriptor[A] = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutEffectDescriptor[A]]
     }
     
-    extension [Self <: PutEffectDescriptor[?], A /* <: Action[js.Any] */](x: Self & PutEffectDescriptor[A]) {
+    extension [Self <: PutEffectDescriptor[?], A /* <: Action[Any] */](x: Self & PutEffectDescriptor[A]) {
       
       inline def setAction(value: A): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -731,55 +741,55 @@ object effectsMod {
     }
   }
   
-  type RaceEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffect<'RACE', T> */ js.Any
+  type RaceEffect[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffect<'RACE', T> */ Any
   
-  type RaceEffectDescriptor[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffectDescriptor<T> */ js.Any
+  type RaceEffectDescriptor[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CombinatorEffectDescriptor<T> */ Any
   
   type SELF_CANCELLATION = `@@redux-sagaSlashSELF_CANCELLATION`
   
-  type SelectEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'SELECT', SelectEffectDescriptor> */ js.Any
+  type SelectEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'SELECT', SelectEffectDescriptor> */ Any
   
   trait SelectEffectDescriptor extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
-    def selector(state: js.Any, args: js.Any*): js.Any
+    def selector(state: Any, args: Any*): Any
   }
   object SelectEffectDescriptor {
     
-    inline def apply(args: js.Array[js.Any], selector: (js.Any, /* repeated */ js.Any) => js.Any): SelectEffectDescriptor = {
+    inline def apply(args: js.Array[Any], selector: (Any, /* repeated */ Any) => Any): SelectEffectDescriptor = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], selector = js.Any.fromFunction2(selector))
       __obj.asInstanceOf[SelectEffectDescriptor]
     }
     
     extension [Self <: SelectEffectDescriptor](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
-      inline def setSelector(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "selector", js.Any.fromFunction2(value))
+      inline def setSelector(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "selector", js.Any.fromFunction2(value))
     }
   }
   
-  type SetContextEffect[C /* <: js.Object */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'SET_CONTEXT', SetContextEffectDescriptor<C>> */ js.Any
+  type SetContextEffect[C /* <: js.Object */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'SET_CONTEXT', SetContextEffectDescriptor<C>> */ Any
   
   type SetContextEffectDescriptor[C /* <: js.Object */] = C
   
-  type Tail[L /* <: js.Array[js.Any] */] = js.Any
+  type Tail[L /* <: js.Array[Any] */] = Any
   
-  type TakeEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'TAKE', TakeEffectDescriptor> */ js.Any
+  type TakeEffect = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleEffect<'TAKE', TakeEffectDescriptor> */ Any
   
   trait TakeEffectDescriptor extends StObject {
     
     var maybe: js.UndefOr[Boolean] = js.undefined
     
-    var pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+    var pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
   }
   object TakeEffectDescriptor {
     
     inline def apply(
-      pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+      pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
     ): TakeEffectDescriptor = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[TakeEffectDescriptor]
@@ -792,7 +802,7 @@ object effectsMod {
       inline def setMaybeUndefined: Self = StObject.set(x, "maybe", js.undefined)
       
       inline def setPattern(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ Any
       ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }

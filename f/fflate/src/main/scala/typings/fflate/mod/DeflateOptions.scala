@@ -1,18 +1,18 @@
 package typings.fflate.mod
 
-import typings.fflate.fflateNumbers.`0`
-import typings.fflate.fflateNumbers.`10`
-import typings.fflate.fflateNumbers.`11`
-import typings.fflate.fflateNumbers.`12`
-import typings.fflate.fflateNumbers.`1`
-import typings.fflate.fflateNumbers.`2`
-import typings.fflate.fflateNumbers.`3`
-import typings.fflate.fflateNumbers.`4`
-import typings.fflate.fflateNumbers.`5`
-import typings.fflate.fflateNumbers.`6`
-import typings.fflate.fflateNumbers.`7`
-import typings.fflate.fflateNumbers.`8`
-import typings.fflate.fflateNumbers.`9`
+import typings.fflate.fflateInts.`0`
+import typings.fflate.fflateInts.`10`
+import typings.fflate.fflateInts.`11`
+import typings.fflate.fflateInts.`12`
+import typings.fflate.fflateInts.`1`
+import typings.fflate.fflateInts.`2`
+import typings.fflate.fflateInts.`3`
+import typings.fflate.fflateInts.`4`
+import typings.fflate.fflateInts.`5`
+import typings.fflate.fflateInts.`6`
+import typings.fflate.fflateInts.`7`
+import typings.fflate.fflateInts.`8`
+import typings.fflate.fflateInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

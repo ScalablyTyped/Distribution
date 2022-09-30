@@ -1,16 +1,16 @@
 package typings.screeps.global
 
-import typings.screeps.screepsNumbers.`10`
-import typings.screeps.screepsNumbers.`150`
-import typings.screeps.screepsNumbers.`15`
-import typings.screeps.screepsNumbers.`160`
-import typings.screeps.screepsNumbers.`20`
-import typings.screeps.screepsNumbers.`30`
-import typings.screeps.screepsNumbers.`40`
-import typings.screeps.screepsNumbers.`5`
-import typings.screeps.screepsNumbers.`60`
-import typings.screeps.screepsNumbers.`65`
-import typings.screeps.screepsNumbers.`80`
+import typings.screeps.screepsInts.`10`
+import typings.screeps.screepsInts.`150`
+import typings.screeps.screepsInts.`15`
+import typings.screeps.screepsInts.`160`
+import typings.screeps.screepsInts.`20`
+import typings.screeps.screepsInts.`30`
+import typings.screeps.screepsInts.`40`
+import typings.screeps.screepsInts.`5`
+import typings.screeps.screepsInts.`60`
+import typings.screeps.screepsInts.`65`
+import typings.screeps.screepsInts.`80`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "connect-mongo" : "3.2.0"
+      "connect-mongo" : "4.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "connect-mongo" : "3.2.0"
+      "connect-mongo" : "4.6.0"
     }
   ],
   "compile-devDependencies" : [

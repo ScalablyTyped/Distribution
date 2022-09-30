@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`0`
-  - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`1`
-  - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`2`
+  - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`0`
+  - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`1`
+  - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolInts.`2`
 */
 trait TextDocumentSyncKind extends StObject
 object TextDocumentSyncKind {

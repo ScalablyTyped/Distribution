@@ -13,10 +13,10 @@ import typings.roslib.anon.Topics
 import typings.roslib.anon.W
 import typings.roslib.anon.X
 import typings.roslib.anon.Xml
-import typings.roslib.roslibNumbers.`0`
-import typings.roslib.roslibNumbers.`1`
-import typings.roslib.roslibNumbers.`2`
-import typings.roslib.roslibNumbers.`3`
+import typings.roslib.roslibInts.`0`
+import typings.roslib.roslibInts.`1`
+import typings.roslib.roslibInts.`2`
+import typings.roslib.roslibInts.`3`
 import typings.roslib.roslibStrings.close
 import typings.roslib.roslibStrings.connection
 import typings.roslib.roslibStrings.error

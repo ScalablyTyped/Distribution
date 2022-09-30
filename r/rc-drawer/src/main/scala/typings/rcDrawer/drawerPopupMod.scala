@@ -1,7 +1,6 @@
 package typings.rcDrawer
 
 import typings.rcMotion.cssmotionMod.CSSMotionProps
-import typings.rcUtil.scrollLockerMod.default
 import typings.react.mod.CSSProperties
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
@@ -43,7 +42,7 @@ object drawerPopupMod {
     
     var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskClassName: js.UndefOr[CSSProperties] = js.undefined
+    var maskClassName: js.UndefOr[String] = js.undefined
     
     var maskClosable: js.UndefOr[Boolean] = js.undefined
     
@@ -71,8 +70,6 @@ object drawerPopupMod {
     var rootClassName: js.UndefOr[String] = js.undefined
     
     var rootStyle: js.UndefOr[CSSProperties] = js.undefined
-    
-    var scrollLocker: js.UndefOr[default] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -127,7 +124,7 @@ object drawerPopupMod {
       
       inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      inline def setMaskClassName(value: CSSProperties): Self = StObject.set(x, "maskClassName", value.asInstanceOf[js.Any])
+      inline def setMaskClassName(value: String): Self = StObject.set(x, "maskClassName", value.asInstanceOf[js.Any])
       
       inline def setMaskClassNameUndefined: Self = StObject.set(x, "maskClassName", js.undefined)
       
@@ -178,10 +175,6 @@ object drawerPopupMod {
       inline def setRootStyle(value: CSSProperties): Self = StObject.set(x, "rootStyle", value.asInstanceOf[js.Any])
       
       inline def setRootStyleUndefined: Self = StObject.set(x, "rootStyle", js.undefined)
-      
-      inline def setScrollLocker(value: default): Self = StObject.set(x, "scrollLocker", value.asInstanceOf[js.Any])
-      
-      inline def setScrollLockerUndefined: Self = StObject.set(x, "scrollLocker", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

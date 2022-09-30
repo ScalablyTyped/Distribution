@@ -7,21 +7,20 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTaskOutcome
+import typings.mendixmodelsdk.workflowsMod.workflows.IUserTaskOutcome
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  * See: {@link https://docs.mendix.com/refguide/complete-task relevant section in reference guide}
   *
-  * @ignore
-  *
-  * In version 8.15.0: introduced
+  * In version 9.0.5: removed experimental
+  * In version 9.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SetTaskOutcomeAction")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SetTaskOutcomeAction")
 @js.native
-class SetTaskOutcomeAction protected () extends MicroflowAction {
+open class SetTaskOutcomeAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -31,23 +30,18 @@ class SetTaskOutcomeAction protected () extends MicroflowAction {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
-  /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * @ignore
-    */
-  def outcome: IWorkflowTaskOutcome | Null = js.native
+  def outcome: IUserTaskOutcome | Null = js.native
   
   def outcomeQualifiedName: String | Null = js.native
   
-  def outcome_=(newValue: IWorkflowTaskOutcome | Null): Unit = js.native
+  def outcome_=(newValue: IUserTaskOutcome | Null): Unit = js.native
   
   def workflowTaskVariable: String = js.native
   def workflowTaskVariable_=(newValue: String): Unit = js.native
 }
 object SetTaskOutcomeAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SetTaskOutcomeAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SetTaskOutcomeAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -65,19 +59,19 @@ object SetTaskOutcomeAction {
     * of the parent ActionActivity element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: ActionActivity): SetTaskOutcomeAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SetTaskOutcomeAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SetTaskOutcomeAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SetTaskOutcomeAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.SetTaskOutcomeAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

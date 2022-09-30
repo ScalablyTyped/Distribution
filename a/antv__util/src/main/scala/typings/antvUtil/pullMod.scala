@@ -10,5 +10,5 @@ object pullMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](arr: js.Array[T], values: Any*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(arr.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
+  inline def default[T](arr: js.Array[T], values: Any*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(arr.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
 }

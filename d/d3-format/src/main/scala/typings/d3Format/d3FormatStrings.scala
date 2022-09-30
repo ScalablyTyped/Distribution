@@ -27,10 +27,6 @@ object d3FormatStrings {
   inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait Leftparenthesis extends StObject
-  inline def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
-  
-  @js.native
   sealed trait Lessthansign extends StObject
   inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   

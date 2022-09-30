@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.Page")
 @js.native
-class Page protected ()
+open class Page protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.Page {
   def this(
     model: AbstractModel,

@@ -83,13 +83,13 @@ inline def send(message: Any, data: ArrayBuffer): Unit = (js.Dynamic.global.appl
   * Schedules `func` to be called on Frida's JavaScript thread, optionally passing it the provided params.
   * Returns an id that can be passed to clearImmediate() to cancel it.
   */
-inline def setImmediate(func: ScheduledCallback, params: Any*): ImmediateId = js.Dynamic.global.applyDynamic("setImmediate")(List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ImmediateId]
+inline def setImmediate(func: ScheduledCallback, params: Any*): ImmediateId = js.Dynamic.global.applyDynamic("setImmediate")(scala.List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ImmediateId]
 
 /**
   * Calls `func` every `delay` milliseconds, optionally passing it the provided params.
   * Returns an id that can be passed to clearInterval() to cancel it.
   */
-inline def setInterval(func: ScheduledCallback, delay: Double, params: Any*): IntervalId = (js.Dynamic.global.applyDynamic("setInterval")((List(func.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[IntervalId]
+inline def setInterval(func: ScheduledCallback, delay: Double, params: Any*): IntervalId = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(func.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[IntervalId]
 
 /**
   * Calls `func` after `delay` milliseconds, or if omitted: as soon as Frida's
@@ -97,8 +97,8 @@ inline def setInterval(func: ScheduledCallback, delay: Double, params: Any*): In
   *
   * Returns an id that can be passed to `clearTimeout()` to cancel it.
   */
-inline def setTimeout(func: ScheduledCallback, delay: Double, params: Any*): TimeoutId = (js.Dynamic.global.applyDynamic("setTimeout")((List(func.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TimeoutId]
-inline def setTimeout(func: ScheduledCallback, delay: Unit, params: Any*): TimeoutId = (js.Dynamic.global.applyDynamic("setTimeout")((List(func.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TimeoutId]
+inline def setTimeout(func: ScheduledCallback, delay: Double, params: Any*): TimeoutId = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(func.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TimeoutId]
+inline def setTimeout(func: ScheduledCallback, delay: Unit, params: Any*): TimeoutId = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(func.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[TimeoutId]
 
 /**
   * Short-hand for `new UInt64(value)`.

@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.dataMod
 
-import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkNumbers.`0`
+import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

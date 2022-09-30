@@ -10,8 +10,8 @@ object rippleMainMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/ripple/main", "WorksRipple")
   @js.native
-  class WorksRipple protected ()
+  open class WorksRipple protected ()
     extends typings.homeworks.componentRippleMod.WorksRipple {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
   }
 }

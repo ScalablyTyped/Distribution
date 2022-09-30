@@ -1,60 +1,60 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`20`
-import typings.mfiles.mfilesNumbers.`21`
-import typings.mfiles.mfilesNumbers.`22`
-import typings.mfiles.mfilesNumbers.`23`
-import typings.mfiles.mfilesNumbers.`24`
-import typings.mfiles.mfilesNumbers.`25`
-import typings.mfiles.mfilesNumbers.`26`
-import typings.mfiles.mfilesNumbers.`27`
-import typings.mfiles.mfilesNumbers.`28`
-import typings.mfiles.mfilesNumbers.`29`
-import typings.mfiles.mfilesNumbers.`30`
-import typings.mfiles.mfilesNumbers.`31`
-import typings.mfiles.mfilesNumbers.`32`
-import typings.mfiles.mfilesNumbers.`33`
-import typings.mfiles.mfilesNumbers.`34`
-import typings.mfiles.mfilesNumbers.`35`
-import typings.mfiles.mfilesNumbers.`36`
-import typings.mfiles.mfilesNumbers.`37`
-import typings.mfiles.mfilesNumbers.`38`
-import typings.mfiles.mfilesNumbers.`39`
-import typings.mfiles.mfilesNumbers.`40`
-import typings.mfiles.mfilesNumbers.`41`
-import typings.mfiles.mfilesNumbers.`42`
-import typings.mfiles.mfilesNumbers.`43`
-import typings.mfiles.mfilesNumbers.`44`
+import typings.mfiles.mfilesInts.`20`
+import typings.mfiles.mfilesInts.`21`
+import typings.mfiles.mfilesInts.`22`
+import typings.mfiles.mfilesInts.`23`
+import typings.mfiles.mfilesInts.`24`
+import typings.mfiles.mfilesInts.`25`
+import typings.mfiles.mfilesInts.`26`
+import typings.mfiles.mfilesInts.`27`
+import typings.mfiles.mfilesInts.`28`
+import typings.mfiles.mfilesInts.`29`
+import typings.mfiles.mfilesInts.`30`
+import typings.mfiles.mfilesInts.`31`
+import typings.mfiles.mfilesInts.`32`
+import typings.mfiles.mfilesInts.`33`
+import typings.mfiles.mfilesInts.`34`
+import typings.mfiles.mfilesInts.`35`
+import typings.mfiles.mfilesInts.`36`
+import typings.mfiles.mfilesInts.`37`
+import typings.mfiles.mfilesInts.`38`
+import typings.mfiles.mfilesInts.`39`
+import typings.mfiles.mfilesInts.`40`
+import typings.mfiles.mfilesInts.`41`
+import typings.mfiles.mfilesInts.`42`
+import typings.mfiles.mfilesInts.`43`
+import typings.mfiles.mfilesInts.`44`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`20`
-  - typings.mfiles.mfilesNumbers.`21`
-  - typings.mfiles.mfilesNumbers.`22`
-  - typings.mfiles.mfilesNumbers.`23`
-  - typings.mfiles.mfilesNumbers.`24`
-  - typings.mfiles.mfilesNumbers.`25`
-  - typings.mfiles.mfilesNumbers.`26`
-  - typings.mfiles.mfilesNumbers.`27`
-  - typings.mfiles.mfilesNumbers.`28`
-  - typings.mfiles.mfilesNumbers.`29`
-  - typings.mfiles.mfilesNumbers.`30`
-  - typings.mfiles.mfilesNumbers.`31`
-  - typings.mfiles.mfilesNumbers.`32`
-  - typings.mfiles.mfilesNumbers.`33`
-  - typings.mfiles.mfilesNumbers.`34`
-  - typings.mfiles.mfilesNumbers.`35`
-  - typings.mfiles.mfilesNumbers.`36`
-  - typings.mfiles.mfilesNumbers.`37`
-  - typings.mfiles.mfilesNumbers.`38`
-  - typings.mfiles.mfilesNumbers.`39`
-  - typings.mfiles.mfilesNumbers.`40`
-  - typings.mfiles.mfilesNumbers.`41`
-  - typings.mfiles.mfilesNumbers.`42`
-  - typings.mfiles.mfilesNumbers.`43`
-  - typings.mfiles.mfilesNumbers.`44`
+  - typings.mfiles.mfilesInts.`20`
+  - typings.mfiles.mfilesInts.`21`
+  - typings.mfiles.mfilesInts.`22`
+  - typings.mfiles.mfilesInts.`23`
+  - typings.mfiles.mfilesInts.`24`
+  - typings.mfiles.mfilesInts.`25`
+  - typings.mfiles.mfilesInts.`26`
+  - typings.mfiles.mfilesInts.`27`
+  - typings.mfiles.mfilesInts.`28`
+  - typings.mfiles.mfilesInts.`29`
+  - typings.mfiles.mfilesInts.`30`
+  - typings.mfiles.mfilesInts.`31`
+  - typings.mfiles.mfilesInts.`32`
+  - typings.mfiles.mfilesInts.`33`
+  - typings.mfiles.mfilesInts.`34`
+  - typings.mfiles.mfilesInts.`35`
+  - typings.mfiles.mfilesInts.`36`
+  - typings.mfiles.mfilesInts.`37`
+  - typings.mfiles.mfilesInts.`38`
+  - typings.mfiles.mfilesInts.`39`
+  - typings.mfiles.mfilesInts.`40`
+  - typings.mfiles.mfilesInts.`41`
+  - typings.mfiles.mfilesInts.`42`
+  - typings.mfiles.mfilesInts.`43`
+  - typings.mfiles.mfilesInts.`44`
 */
 trait MenuLocation extends StObject
 object MenuLocation {

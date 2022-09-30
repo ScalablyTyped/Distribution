@@ -139,7 +139,7 @@ object mod {
         *
         * @return The promise solves successfully with the return value of the method or return reject with the error from the method.
         */
-      def call[T](name: String, methodArguments: js.Any*): IPromise[T] = js.native
+      def call[T](name: String, methodArguments: Any*): IPromise[T] = js.native
       
       /**
         * Change the current user's password. Must be logged in.
@@ -214,8 +214,8 @@ object mod {
         *
         * @return The promise solved successfully when the picture is taken with the data as a parameter or rejected with an error as a parameter in case of error.
         */
-      def getPicture(): IPromise[js.Any] = js.native
-      def getPicture(options: Height): IPromise[js.Any] = js.native
+      def getPicture(): IPromise[Any] = js.native
+      def getPicture(options: Height): IPromise[Any] = js.native
       
       var loginWithFacebook: ILoginWithExternalService = js.native
       
@@ -319,7 +319,7 @@ object mod {
         *
         * @return The promise solved successfully when subscription is ready. The success promise holds the subscription handle.
         */
-      def subscribe(name: String, publisherArguments: js.Any*): IPromise[SubscriptionHandle] = js.native
+      def subscribe(name: String, publisherArguments: Any*): IPromise[SubscriptionHandle] = js.native
       
       /**
         * Marks the user's email address as verified. Logs the user in afterwards.
@@ -389,7 +389,7 @@ object mod {
         * @param definitions - Object containing `name` => `function` definition, where each name is a string and each function is the helper function. Should return a [MongoDB Cursor](http://docs.meteor.com/#/full/mongo_cursor)
         * @return This method returns this, which the the reactive context, in order to provide the ability to chain the logic.
         */
-      def helpers(definitions: StringDictionary[js.Function0[Cursor[js.Any, js.Any]]]): IScope = js.native
+      def helpers(definitions: StringDictionary[js.Function0[Cursor[Any, Any]]]): IScope = js.native
       
       /**
         * A service which is a wrapper for Meteor.subscribe. It subscribes to a Meteor.publish method in the client and returns a AngularJS promise when ready.
@@ -400,7 +400,7 @@ object mod {
         *
         * @return The promise solved successfully when subscription is ready. The success promise holds the subscription handle.
         */
-      def subscribe(name: String, publisherArguments: js.Any*): IPromise[SubscriptionHandle] = js.native
+      def subscribe(name: String, publisherArguments: Any*): IPromise[SubscriptionHandle] = js.native
     }
     
     trait ReactiveResult extends StObject

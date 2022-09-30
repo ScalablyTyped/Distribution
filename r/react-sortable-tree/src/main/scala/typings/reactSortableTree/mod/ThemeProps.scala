@@ -4,22 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThemeProps
+trait ThemeProps[T]
   extends StObject
-     with ThemeTreeProps {
+     with ThemeTreeProps[T] {
   
-  var treeNodeRenderer: js.UndefOr[TreeRenderer] = js.undefined
+  var treeNodeRenderer: js.UndefOr[TreeRenderer[T]] = js.undefined
 }
 object ThemeProps {
   
-  inline def apply(): ThemeProps = {
+  inline def apply[T](): ThemeProps[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ThemeProps]
+    __obj.asInstanceOf[ThemeProps[T]]
   }
   
-  extension [Self <: ThemeProps](x: Self) {
+  extension [Self <: ThemeProps[?], T](x: Self & ThemeProps[T]) {
     
-    inline def setTreeNodeRenderer(value: TreeRenderer): Self = StObject.set(x, "treeNodeRenderer", value.asInstanceOf[js.Any])
+    inline def setTreeNodeRenderer(value: TreeRenderer[T]): Self = StObject.set(x, "treeNodeRenderer", value.asInstanceOf[js.Any])
     
     inline def setTreeNodeRendererUndefined: Self = StObject.set(x, "treeNodeRenderer", js.undefined)
   }

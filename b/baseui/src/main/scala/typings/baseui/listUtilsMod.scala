@@ -1,8 +1,8 @@
 package typings.baseui
 
-import typings.baseui.baseuiNumbers.`16`
-import typings.baseui.baseuiNumbers.`24`
-import typings.baseui.baseuiNumbers.`36`
+import typings.baseui.baseuiInts.`16`
+import typings.baseui.baseuiInts.`24`
+import typings.baseui.baseuiInts.`36`
 import typings.baseui.listTypesMod.ArtworkSizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

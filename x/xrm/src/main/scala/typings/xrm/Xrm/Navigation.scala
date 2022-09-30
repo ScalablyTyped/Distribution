@@ -24,8 +24,8 @@ import typings.xrm.XrmEnum.OpenFileOptions
 import typings.xrm.XrmEnum.RelationshipType
 import typings.xrm.XrmEnum.RoleType
 import typings.xrm.XrmEnum.WindowPositions
-import typings.xrm.xrmNumbers.`1`
-import typings.xrm.xrmNumbers.`2`
+import typings.xrm.xrmInts.`1`
+import typings.xrm.xrmInts.`2`
 import typings.xrm.xrmStrings.Percentsign
 import typings.xrm.xrmStrings.custom
 import typings.xrm.xrmStrings.dashboard

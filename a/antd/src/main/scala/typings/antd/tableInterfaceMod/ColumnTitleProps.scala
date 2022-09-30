@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnTitleProps[RecordType] extends StObject {
   
-  var filters: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
+  var filters: js.UndefOr[Record[String, FilterValue]] = js.undefined
   
   /** @deprecated Please use `sorterColumns` instead. */
   var sortColumn: js.UndefOr[ColumnType[RecordType]] = js.undefined
@@ -27,7 +27,7 @@ object ColumnTitleProps {
   
   extension [Self <: ColumnTitleProps[?], RecordType](x: Self & ColumnTitleProps[RecordType]) {
     
-    inline def setFilters(value: Record[String, js.Array[String]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Record[String, FilterValue]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     

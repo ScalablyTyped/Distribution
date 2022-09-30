@@ -1,62 +1,67 @@
 package typings.antd
 
-import typings.antd.anon.Avatar
-import typings.antd.anon.CallDefaultProps
-import typings.antd.anon.CallProps
-import typings.antd.anon.DefaultProps
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.antdStrings.circle
-import typings.antd.antdStrings.default
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
 import typings.antd.nodeMod.SkeletonNodeProps
 import typings.antd.paragraphMod.SkeletonParagraphProps
+import typings.antd.skeletonAvatarMod.AvatarProps
+import typings.antd.skeletonButtonMod.SkeletonButtonProps
 import typings.antd.skeletonImageMod.SkeletonImageProps
+import typings.antd.skeletonInputMod.SkeletonInputProps
 import typings.antd.titleMod.SkeletonTitleProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object skeletonSkeletonMod {
+object skeletonSkeletonMod extends Shortcut {
   
-  object default {
+  @JSImport("antd/lib/skeleton/Skeleton", JSImport.Default)
+  @js.native
+  val default: FC[SkeletonProps] & CompoundedComponent = js.native
+  
+  trait CompoundedComponent extends StObject {
     
-    inline def apply(props: SkeletonProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    var Avatar: FC[AvatarProps]
     
-    @JSImport("antd/lib/skeleton/Skeleton", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
+    var Button: FC[SkeletonButtonProps]
     
-    @JSImport("antd/lib/skeleton/Skeleton", "default.Avatar")
-    @js.native
-    def Avatar: CallDefaultProps = js.native
-    inline def Avatar_=(x: CallDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Avatar")(x.asInstanceOf[js.Any])
+    var Image: FC[SkeletonImageProps]
     
-    @JSImport("antd/lib/skeleton/Skeleton", "default.Button")
-    @js.native
-    def Button: DefaultProps = js.native
-    inline def Button_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+    var Input: FC[SkeletonInputProps]
     
-    inline def Image(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Image")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    var Node: FC[SkeletonNodeProps]
+  }
+  object CompoundedComponent {
     
-    @JSImport("antd/lib/skeleton/Skeleton", "default.Input")
-    @js.native
-    def Input: CallProps = js.native
-    inline def Input_=(x: CallProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
+    inline def apply(
+      Avatar: FC[AvatarProps],
+      Button: FC[SkeletonButtonProps],
+      Image: FC[SkeletonImageProps],
+      Input: FC[SkeletonInputProps],
+      Node: FC[SkeletonNodeProps]
+    ): CompoundedComponent = {
+      val __obj = js.Dynamic.literal(Avatar = Avatar.asInstanceOf[js.Any], Button = Button.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], Node = Node.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CompoundedComponent]
+    }
     
-    @JSImport("antd/lib/skeleton/Skeleton", "default.Node")
-    @js.native
-    def Node: FC[SkeletonNodeProps] = js.native
-    inline def Node_=(x: FC[SkeletonNodeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Node")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd/lib/skeleton/Skeleton", "default.defaultProps")
-    @js.native
-    def defaultProps: Avatar = js.native
-    inline def defaultProps_=(x: Avatar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    extension [Self <: CompoundedComponent](x: Self) {
+      
+      inline def setAvatar(value: FC[AvatarProps]): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
+      
+      inline def setButton(value: FC[SkeletonButtonProps]): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
+      
+      inline def setImage(value: FC[SkeletonImageProps]): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+      
+      inline def setInput(value: FC[SkeletonInputProps]): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+      
+      inline def setNode(value: FC[SkeletonNodeProps]): Self = StObject.set(x, "Node", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Avatar.AvatarProps, 'active'> */
@@ -68,7 +73,7 @@ object skeletonSkeletonMod {
     
     var shape: js.UndefOr[circle | square] = js.undefined
     
-    var size: js.UndefOr[large | small | default | Double] = js.undefined
+    var size: js.UndefOr[large | small | typings.antd.antdStrings.default | Double] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -93,7 +98,7 @@ object skeletonSkeletonMod {
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setSize(value: large | small | default | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small | typings.antd.antdStrings.default | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -175,4 +180,9 @@ object skeletonSkeletonMod {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
+  
+  type _To = FC[SkeletonProps] & CompoundedComponent
+  
+  /* This means you don't have to write `default`, but can instead just say `skeletonSkeletonMod.foo` */
+  override def _to: FC[SkeletonProps] & CompoundedComponent = default
 }

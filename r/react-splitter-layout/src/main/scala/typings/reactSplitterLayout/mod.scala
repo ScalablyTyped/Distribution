@@ -160,14 +160,14 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactSplitterLayout.reactSplitterLayoutNumbers.`0`
-    - typings.reactSplitterLayout.reactSplitterLayoutNumbers.`1`
+    - typings.reactSplitterLayout.reactSplitterLayoutInts.`0`
+    - typings.reactSplitterLayout.reactSplitterLayoutInts.`1`
   */
   trait TPrimaryIndex extends StObject
   object TPrimaryIndex {
     
-    inline def `0`: typings.reactSplitterLayout.reactSplitterLayoutNumbers.`0` = 0.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutNumbers.`0`]
+    inline def `0`: typings.reactSplitterLayout.reactSplitterLayoutInts.`0` = 0.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutInts.`0`]
     
-    inline def `1`: typings.reactSplitterLayout.reactSplitterLayoutNumbers.`1` = 1.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutNumbers.`1`]
+    inline def `1`: typings.reactSplitterLayout.reactSplitterLayoutInts.`1` = 1.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutInts.`1`]
   }
 }

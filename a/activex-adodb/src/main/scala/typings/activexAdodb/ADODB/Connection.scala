@@ -1,6 +1,6 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`-1`
+import typings.activexAdodb.activexAdodbInts.`-1`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -8,11 +8,11 @@ trait DataHookWrapper extends StObject {
   
   var dataHook: String
   
-  var wrapper: js.Any
+  var wrapper: Any
 }
 object DataHookWrapper {
   
-  inline def apply(dataHook: String, wrapper: js.Any): DataHookWrapper = {
+  inline def apply(dataHook: String, wrapper: Any): DataHookWrapper = {
     val __obj = js.Dynamic.literal(dataHook = dataHook.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataHookWrapper]
   }
@@ -21,6 +21,6 @@ object DataHookWrapper {
     
     inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    inline def setWrapper(value: js.Any): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: Any): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
   }
 }

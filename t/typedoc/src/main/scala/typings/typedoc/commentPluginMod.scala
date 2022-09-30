@@ -2,7 +2,6 @@ package typings.typedoc
 
 import typings.typedoc.componentsMod.ConverterComponent
 import typings.typedoc.converterConverterMod.Converter
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ object commentPluginMod {
     
     var excludeProtected: Boolean = js.native
     
-    var excludeTags: js.Array[`@$LeftcurlybracketstringRightcurlybracket`] = js.native
+    var excludeTags: js.Array[/* template literal string: @${string} */ String] = js.native
     
     /**
       * Determines whether or not a reflection has been hidden

@@ -71,23 +71,23 @@ object mod {
     @js.native
     val TOGGLE_DRAWER: /* "Navigation/TOGGLE_DRAWER" */ String = js.native
     
-    inline def closeDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[js.Any]
-    inline def closeDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def closeDrawer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[Any]
+    inline def closeDrawer(payload: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def openDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[js.Any]
-    inline def openDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def openDrawer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[Any]
+    inline def openDrawer(payload: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def toggleDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[js.Any]
-    inline def toggleDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def toggleDrawer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[Any]
+    inline def toggleDrawer(payload: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   @JSImport("react-navigation-drawer", "DrawerGestureContext")
   @js.native
-  val DrawerGestureContext: Context[RefObject[js.Any] | Null] = js.native
+  val DrawerGestureContext: Context[RefObject[Any] | Null] = js.native
   
   @JSImport("react-navigation-drawer", "DrawerItems")
   @js.native
-  class DrawerItems () extends default
+  open class DrawerItems () extends default
   /* static members */
   object DrawerItems {
     
@@ -108,7 +108,7 @@ object mod {
   
   @JSImport("react-navigation-drawer", "DrawerNavigatorItems")
   @js.native
-  class DrawerNavigatorItems () extends default
+  open class DrawerNavigatorItems () extends default
   /* static members */
   object DrawerNavigatorItems {
     
@@ -131,20 +131,20 @@ object mod {
   @js.native
   val DrawerProgressContext: Context[Node | Null] = js.native
   
-  inline def DrawerRouter(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any]): GetActionCreators = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[GetActionCreators]
-  inline def DrawerRouter(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any], config: InitialRouteName): GetActionCreators = (^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetActionCreators]
+  inline def DrawerRouter(routeConfigs: NavigationRouteConfigMap[Any, Any, Any]): GetActionCreators = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[GetActionCreators]
+  inline def DrawerRouter(routeConfigs: NavigationRouteConfigMap[Any, Any, Any], config: InitialRouteName): GetActionCreators = (^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetActionCreators]
   
   /**
     * Component that renders the sidebar screen of the drawer.
     */
   @JSImport("react-navigation-drawer", "DrawerSidebar")
   @js.native
-  class DrawerSidebar ()
+  open class DrawerSidebar ()
     extends typings.reactNavigationDrawer.drawerSidebarMod.default
   
   @JSImport("react-navigation-drawer", "DrawerView")
   @js.native
-  class DrawerView ()
+  open class DrawerView ()
     extends typings.reactNavigationDrawer.drawerViewMod.default
   /* static members */
   object DrawerView {
@@ -169,21 +169,21 @@ object mod {
   inline def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 
-      js.Any
+      NavigationDrawerProp[NavigationRoute[NavigationParams], Any], 
+      Any
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDrawerNavigator")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDrawerNavigator")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
   inline def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 
-      js.Any
+      NavigationDrawerProp[NavigationRoute[NavigationParams], Any], 
+      Any
     ],
     config: CreateNavigatorConfig[
       NavigationDrawerConfig, 
       NavigationDrawerRouterConfig, 
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any]
+      NavigationDrawerProp[NavigationRoute[NavigationParams], Any]
     ]
-  ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDrawerNavigator")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDrawerNavigator")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
 }

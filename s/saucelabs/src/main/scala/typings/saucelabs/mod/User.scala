@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait User
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var access_key: js.UndefOr[String] = js.undefined
   
@@ -145,7 +145,7 @@ object User {
     
     inline def setPrevent_emailsUndefined: Self = StObject.set(x, "prevent_emails", js.undefined)
     
-    inline def setPrevent_emailsVarargs(value: marketing*): Self = StObject.set(x, "prevent_emails", js.Array(value :_*))
+    inline def setPrevent_emailsVarargs(value: marketing*): Self = StObject.set(x, "prevent_emails", js.Array(value*))
     
     inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     

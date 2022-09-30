@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.18.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickEnlarge")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickEnlarge")
 @js.native
-class OnClickEnlarge protected () extends OnClickBehavior {
+open class OnClickEnlarge protected () extends OnClickBehavior {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class OnClickEnlarge protected () extends OnClickBehavior {
 }
 object OnClickEnlarge {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickEnlarge")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickEnlarge")
   @js.native
   val ^ : js.Any = js.native
   
@@ -52,13 +52,13 @@ object OnClickEnlarge {
   inline def createIn(container: DynamicImageViewer): OnClickEnlarge = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OnClickEnlarge]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickEnlarge.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickEnlarge.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickEnlarge.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OnClickEnlarge.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

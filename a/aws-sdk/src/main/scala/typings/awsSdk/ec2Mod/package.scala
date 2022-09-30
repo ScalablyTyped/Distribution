@@ -2258,6 +2258,7 @@ type InstanceTagKeySet = js.Array[String]
   - typings.awsSdk.awsSdkStrings.r6aDot48xlarge
   - typings.awsSdk.awsSdkStrings.r6aDotmetal
   - typings.awsSdk.awsSdkStrings.p4deDot24xlarge
+  - typings.awsSdk.awsSdkStrings.`u-3tb1Dot56xlarge`
   - java.lang.String
 */
 type InstanceType = _InstanceType | java.lang.String
@@ -3246,10 +3247,8 @@ type PurchasedScheduledInstanceSet = js.Array[ScheduledInstance]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LinuxSlashUNIX
-  - typings.awsSdk.awsSdkStrings.`LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis`
-  - typings.awsSdk.awsSdkStrings.Windows_
-  - typings.awsSdk.awsSdkStrings.`Windows LeftparenthesisAmazon VPCRightparenthesis`
   - java.lang.String
+  - typings.awsSdk.awsSdkStrings.Windows_
 */
 type RIProductDescription = _RIProductDescription | java.lang.String
 
@@ -3428,7 +3427,7 @@ type ResourceList = js.Array[String]
   - typings.awsSdk.awsSdkStrings.`local-gateway-virtual-interface`
   - typings.awsSdk.awsSdkStrings.`local-gateway-virtual-interface-group`
   - typings.awsSdk.awsSdkStrings.`local-gateway-route-table-vpc-association`
-  - typings.awsSdk.awsSdkStrings.`local-gateway-route-table-virtual-interface-group-association`
+  - java.lang.String
   - typings.awsSdk.awsSdkStrings.natgateway_
   - typings.awsSdk.awsSdkStrings.`network-acl`
   - typings.awsSdk.awsSdkStrings.`network-interface`
@@ -3472,7 +3471,6 @@ type ResourceList = js.Array[String]
   - typings.awsSdk.awsSdkStrings.`traffic-mirror-filter-rule`
   - typings.awsSdk.awsSdkStrings.`vpc-endpoint-connection-device-type`
   - typings.awsSdk.awsSdkStrings.`vpn-connection-device-type`
-  - java.lang.String
 */
 type ResourceType = _ResourceType | java.lang.String
 

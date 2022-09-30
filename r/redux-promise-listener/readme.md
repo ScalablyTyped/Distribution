@@ -10,10 +10,10 @@ A Redux middleware that allows actions to be converted into Promises
 | ------------------ | :-------------: |
 | Full name          | redux-promise-listener |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 153036 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12846.333333333334 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/erikras/redux-promise-listener#readme)

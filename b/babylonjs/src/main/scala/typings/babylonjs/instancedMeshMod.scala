@@ -25,13 +25,13 @@ object instancedMeshMod {
     
     /* private */ var _currentLOD: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _distanceToCamera: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _indexInSourceMeshInstanceArray: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _previousWorldMatrix: Nullable[Matrix] = js.native
     
     def _removeLightSource(): Unit = js.native
@@ -40,7 +40,7 @@ object instancedMeshMod {
     
     /* private */ var _sourceMesh: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _syncSubMeshes(): InstancedMesh = js.native
     
     /**
@@ -133,7 +133,7 @@ object instancedMeshMod {
         */
       def _invalidateInstanceVertexArrayObject(): Unit
       
-      /** @hidden */
+      /** @internal */
       var _userInstancedBuffersStorage: Data
       
       /**

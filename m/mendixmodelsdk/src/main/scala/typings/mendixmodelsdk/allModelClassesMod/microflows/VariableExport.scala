@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.VariableExport")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.VariableExport")
 @js.native
-class VariableExport protected ()
+open class VariableExport protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.VariableExport {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class VariableExport protected ()
 }
 object VariableExport {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.VariableExport")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.VariableExport")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object VariableExport {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ExportXmlAction): typings.mendixmodelsdk.microflowsMod.microflows.VariableExport = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.VariableExport]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.VariableExport.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.VariableExport.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.VariableExport.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.VariableExport.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

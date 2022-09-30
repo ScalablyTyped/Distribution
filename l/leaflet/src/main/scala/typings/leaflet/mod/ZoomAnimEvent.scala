@@ -18,15 +18,16 @@ object ZoomAnimEvent {
   
   inline def apply(
     center: LatLng_,
-    layer: js.Any,
+    layer: Any,
     noUpdate: Boolean,
-    propagatedFrom: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
+    popup: Any,
+    propagatedFrom: Any,
+    sourceTarget: Any,
+    target: Any,
     `type`: String,
     zoom: Double
   ): ZoomAnimEvent = {
-    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], noUpdate = noUpdate.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], noUpdate = noUpdate.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomAnimEvent]
   }

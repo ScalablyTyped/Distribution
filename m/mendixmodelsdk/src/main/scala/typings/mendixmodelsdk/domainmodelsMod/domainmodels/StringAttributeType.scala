@@ -2,10 +2,12 @@ package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute
 import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.TensorMappingElement
 import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
@@ -18,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeType because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IStringAttributeType because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IStringAttributeType because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.StringAttributeType")
 @js.native
-class StringAttributeType protected () extends AttributeType {
+open class StringAttributeType protected () extends AttributeType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +46,7 @@ class StringAttributeType protected () extends AttributeType {
 }
 object StringAttributeType {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.StringAttributeType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -97,14 +99,36 @@ object StringAttributeType {
   /* static member */
   inline def createInODataKeyPartUnderType(container: ODataKeyPart): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
   
+  /**
+    * Creates and returns a new StringAttributeType instance in the SDK and on the server.
+    * The new StringAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent businessevents.PublishedMessageAttribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.14.0 and higher
+    */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType.structureTypeName")
+  inline def createInPublishedMessageAttributeUnderAttributeType(container: PublishedMessageAttribute): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedMessageAttributeUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  
+  /**
+    * Creates and returns a new StringAttributeType instance in the SDK and on the server.
+    * The new StringAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent mlmappings.TensorMappingElement element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.17.0 and higher
+    */
+  /* static member */
+  inline def createInTensorMappingElementUnderAttributeType(container: TensorMappingElement): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.StringAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.StringAttributeType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.StringAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

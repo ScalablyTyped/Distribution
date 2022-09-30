@@ -16,8 +16,8 @@ import typings.kdbxweb.kdbxHeaderMod.KdbxHeader
 import typings.kdbxweb.kdbxMetaMod.KdbxMeta
 import typings.kdbxweb.kdbxMetaMod.KdbxMetaEditState
 import typings.kdbxweb.kdbxUuidMod.KdbxUuid
-import typings.kdbxweb.kdbxwebNumbers.`3`
-import typings.kdbxweb.kdbxwebNumbers.`4`
+import typings.kdbxweb.kdbxwebInts.`3`
+import typings.kdbxweb.kdbxwebInts.`4`
 import typings.std.Document
 import typings.std.Map
 import org.scalablytyped.runtime.StObject

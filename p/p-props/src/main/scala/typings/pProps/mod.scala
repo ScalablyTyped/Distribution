@@ -3,6 +3,7 @@ package typings.pProps
 import org.scalablytyped.runtime.TopLevel
 import typings.pMap.mod.Options
 import typings.std.Map
+import typings.std.PromiseLike
 import typings.std.ReadonlyMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -73,7 +74,7 @@ object mod {
   type Mapper[ValueType, KeyType, MappedValueType] = js.Function2[
     /* value */ ValueType, 
     /* key */ KeyType, 
-    MappedValueType | js.Thenable[MappedValueType]
+    MappedValueType | PromiseLike[MappedValueType]
   ]
   
   type PromiseResult[Value] = Value

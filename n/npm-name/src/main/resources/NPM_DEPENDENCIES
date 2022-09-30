@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "npm-name" : "6.0.1"
+      "npm-name" : "7.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "npm-name" : "6.0.1"
+      "npm-name" : "7.1.0"
     }
   ],
   "compile-devDependencies" : [

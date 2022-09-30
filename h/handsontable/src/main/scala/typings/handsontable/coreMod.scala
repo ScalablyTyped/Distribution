@@ -34,9 +34,9 @@ import typings.handsontable.exportFileMod.ExportFile
 import typings.handsontable.filtersFiltersMod.ColumnConditions
 import typings.handsontable.filtersMod.Filters
 import typings.handsontable.formulasMod.Formulas
-import typings.handsontable.handsontableNumbers.`-1`
-import typings.handsontable.handsontableNumbers.`0`
-import typings.handsontable.handsontableNumbers.`1`
+import typings.handsontable.handsontableInts.`-1`
+import typings.handsontable.handsontableInts.`0`
+import typings.handsontable.handsontableInts.`1`
 import typings.handsontable.handsontableStrings.afterAddChild
 import typings.handsontable.handsontableStrings.afterAutofill
 import typings.handsontable.handsontableStrings.afterBeginEditing
@@ -256,7 +256,6 @@ import typings.handsontable.handsontableStrings.modifyRowData
 import typings.handsontable.handsontableStrings.modifyRowHeader
 import typings.handsontable.handsontableStrings.modifyRowHeaderWidth
 import typings.handsontable.handsontableStrings.modifyRowHeight
-import typings.handsontable.handsontableStrings.modifyRowSourceData
 import typings.handsontable.handsontableStrings.modifySourceData
 import typings.handsontable.handsontableStrings.modifyTransformEnd
 import typings.handsontable.handsontableStrings.modifyTransformStart
@@ -3589,10 +3588,6 @@ object coreMod {
       callback: js.Array[js.UndefOr[js.Function2[/* height */ Double, /* row */ Double, Unit]]]
     ): Unit = js.native
     @JSName("addHookOnce")
-    def addHookOnce_modifyRowSourceData(key: modifyRowSourceData, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHookOnce")
-    def addHookOnce_modifyRowSourceData(key: modifyRowSourceData, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
-    @JSName("addHookOnce")
     def addHookOnce_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
@@ -6439,10 +6434,6 @@ object coreMod {
       callback: js.Array[js.UndefOr[js.Function2[/* height */ Double, /* row */ Double, Unit]]]
     ): Unit = js.native
     @JSName("addHook")
-    def addHook_modifyRowSourceData(key: modifyRowSourceData, callback: js.UndefOr[js.Function1[/* row */ Double, Unit]]): Unit = js.native
-    @JSName("addHook")
-    def addHook_modifyRowSourceData(key: modifyRowSourceData, callback: js.Array[js.UndefOr[js.Function1[/* row */ Double, Unit]]]): Unit = js.native
-    @JSName("addHook")
     def addHook_modifyTransformEnd(
       key: modifyTransformEnd,
       callback: js.UndefOr[js.Function1[/* delta */ typings.handsontable.coordsMod.default, Unit]]
@@ -6636,8 +6627,6 @@ object coreMod {
     def clear(): Unit = js.native
     
     def clearUndo(): Unit = js.native
-    
-    def colOffset(): Double = js.native
     
     def colToProp(col: Double): String | Double = js.native
     
@@ -6881,7 +6870,7 @@ object coreMod {
     
     def hasColHeaders(): Boolean = js.native
     
-    def hasHook(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any): Boolean = js.native
+    def hasHook(key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Boolean = js.native
     
     def hasRowHeaders(): Boolean = js.native
     
@@ -8413,10 +8402,6 @@ object coreMod {
     @JSName("removeHook")
     def removeHook_modifyRowHeight(key: modifyRowHeight, callback: js.Function2[/* height */ Double, /* row */ Double, Unit]): Unit = js.native
     @JSName("removeHook")
-    def removeHook_modifyRowSourceData(key: modifyRowSourceData): Unit = js.native
-    @JSName("removeHook")
-    def removeHook_modifyRowSourceData(key: modifyRowSourceData, callback: js.Function1[/* row */ Double, Unit]): Unit = js.native
-    @JSName("removeHook")
     def removeHook_modifySourceData(key: modifySourceData): Unit = js.native
     @JSName("removeHook")
     def removeHook_modifyTransformEnd(key: modifyTransformEnd): Unit = js.native
@@ -8464,10 +8449,8 @@ object coreMod {
     
     var rowIndexMapper: IndexMapper = js.native
     
-    def rowOffset(): Double = js.native
-    
     def runHooks(
-      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 180 */ Any,
+      key: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any,
       p1: js.UndefOr[Any],
       p2: js.UndefOr[Any],
       p3: js.UndefOr[Any],
@@ -8726,6 +8709,7 @@ object coreMod {
     def setDataAtRowProp(row: Double, prop: String, value: CellValue, source: String): Unit = js.native
     
     def setSourceDataAtCell(changes: js.Array[js.Tuple3[Double, String | Double, CellValue]]): Unit = js.native
+    def setSourceDataAtCell(changes: js.Array[js.Tuple3[Double, String | Double, CellValue]], source: String): Unit = js.native
     def setSourceDataAtCell(row: Double, column: String, value: CellValue): Unit = js.native
     def setSourceDataAtCell(row: Double, column: String, value: CellValue, source: String): Unit = js.native
     def setSourceDataAtCell(row: Double, column: Double, value: CellValue): Unit = js.native

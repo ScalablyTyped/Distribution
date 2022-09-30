@@ -2,7 +2,7 @@ package typings.flashpointLauncher
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.flashpointLauncher.flashpointLauncherNumbers.`1`
+import typings.flashpointLauncher.flashpointLauncherInts.`1`
 import typings.flashpointLauncher.mod.AppPathOverride
 import typings.flashpointLauncher.mod.AppPreferencesDataMainWindow
 import typings.flashpointLauncher.mod.BrowsePageLayout

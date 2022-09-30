@@ -16,10 +16,10 @@ object marker {
   /**
     * A core icon generator used in L.mapbox.marker.style
     */
-  inline def icon(feature: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("icon")(feature.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def icon(feature: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("icon")(feature.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * An icon generator for use in conjunction with pointToLayer to generate markers from the Mapbox Markers API and support the simplestyle-spec for features.
     */
-  inline def style(feature: js.Any, latlng: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(feature.asInstanceOf[js.Any], latlng.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def style(feature: Any, latlng: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(feature.asInstanceOf[js.Any], latlng.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

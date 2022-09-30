@@ -1,8 +1,8 @@
 package typings.reactAdal
 
-import typings.reactAdal.reactAdalNumbers.`1`
-import typings.reactAdal.reactAdalNumbers.`2`
-import typings.reactAdal.reactAdalNumbers.`3`
+import typings.reactAdal.reactAdalInts.`1`
+import typings.reactAdal.reactAdalInts.`2`
+import typings.reactAdal.reactAdalInts.`3`
 import typings.reactAdal.reactAdalStrings.ERRORColon
 import typings.reactAdal.reactAdalStrings.INFOColon
 import typings.reactAdal.reactAdalStrings.VERBOSEColon
@@ -131,7 +131,7 @@ object anon {
   
   trait ERROR extends StObject {
     
-    var ERROR: typings.reactAdal.reactAdalNumbers.`0`
+    var ERROR: typings.reactAdal.reactAdalInts.`0`
     
     var INFO: `2`
     
@@ -148,7 +148,7 @@ object anon {
     
     extension [Self <: ERROR](x: Self) {
       
-      inline def setERROR(value: typings.reactAdal.reactAdalNumbers.`0`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: typings.reactAdal.reactAdalInts.`0`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
       inline def setINFO(value: `2`): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       

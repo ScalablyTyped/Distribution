@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ApiSuiteV1
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var appVersionId: js.UndefOr[Id] = js.undefined
   
@@ -36,7 +36,7 @@ object ApiSuiteV1 {
     
     inline def setDeviceIdsUndefined: Self = StObject.set(x, "deviceIds", js.undefined)
     
-    inline def setDeviceIdsVarargs(value: Id*): Self = StObject.set(x, "deviceIds", js.Array(value :_*))
+    inline def setDeviceIdsVarargs(value: Id*): Self = StObject.set(x, "deviceIds", js.Array(value*))
     
     inline def setFrameworkVersion(value: String): Self = StObject.set(x, "frameworkVersion", value.asInstanceOf[js.Any])
     

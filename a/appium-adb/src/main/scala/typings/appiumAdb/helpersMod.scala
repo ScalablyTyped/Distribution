@@ -3,9 +3,9 @@ package typings.appiumAdb
 import typings.appiumAdb.anon.Build
 import typings.appiumAdb.anon.PickSystemCallsgetBinaryF
 import typings.appiumAdb.apkUtilsMod.StartAppOptions
-import typings.appiumAdb.appiumAdbNumbers.`120000`
-import typings.appiumAdb.appiumAdbNumbers.`20000`
-import typings.appiumAdb.appiumAdbNumbers.`60000`
+import typings.appiumAdb.appiumAdbInts.`120000`
+import typings.appiumAdb.appiumAdbInts.`20000`
+import typings.appiumAdb.appiumAdbInts.`60000`
 import typings.appiumAdb.appiumAdbStrings.Dotapk
 import typings.appiumAdb.appiumAdbStrings.Dotapks
 import typings.std.Record

@@ -1,8 +1,8 @@
 package typings.activexLibreoffice.com_.sun.star.xml.crypto.sax
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * So an element mark with PRI_BEFOREMODIFY will be handled first, and one with PRI_AFTERMODIFY will be handled at last.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-  - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+  - typings.activexLibreoffice.activexLibreofficeInts.`2`
+  - typings.activexLibreoffice.activexLibreofficeInts.`3`
+  - typings.activexLibreoffice.activexLibreofficeInts.`1`
 */
 trait ElementMarkPriority extends StObject
 object ElementMarkPriority {

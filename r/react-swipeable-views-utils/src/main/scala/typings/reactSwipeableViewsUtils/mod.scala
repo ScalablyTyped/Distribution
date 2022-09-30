@@ -53,26 +53,20 @@ object mod {
   
   type SlideRendererCallback = js.Function1[/* render */ SlideRenderProps, ReactNode]
   
-  trait WithAutoPlay extends StObject {
-    
-    var index: Double
-    
-    var onChangeIndex: OnChangeIndexCallback
+  trait WithAutoPlay
+    extends StObject
+       with WithIndex {
     
     var onSwitching: js.UndefOr[OnSwitchingCallback] = js.undefined
   }
   object WithAutoPlay {
     
-    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithAutoPlay = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
+    inline def apply(): WithAutoPlay = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithAutoPlay]
     }
     
     extension [Self <: WithAutoPlay](x: Self) {
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
       inline def setOnSwitching(value: (/* index */ Double, /* type */ OnSwitchingCallbackTypeDescriptor) => Unit): Self = StObject.set(x, "onSwitching", js.Any.fromFunction2(value))
       
@@ -80,24 +74,22 @@ object mod {
     }
   }
   
-  trait WithAutoPlayProps extends StObject {
+  trait WithAutoPlayProps
+    extends StObject
+       with WithIndex {
     
     var autoplay: js.UndefOr[Boolean] = js.undefined
     
     var direction: js.UndefOr[incremental | decremental] = js.undefined
     
-    var index: Double
-    
     var interval: js.UndefOr[Double] = js.undefined
-    
-    var onChangeIndex: OnChangeIndexCallback
     
     var slideCount: js.UndefOr[Double] = js.undefined
   }
   object WithAutoPlayProps {
     
-    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithAutoPlayProps = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
+    inline def apply(): WithAutoPlayProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithAutoPlayProps]
     }
     
@@ -111,13 +103,9 @@ object mod {
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
       inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
-      
-      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
       inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
       
@@ -125,41 +113,20 @@ object mod {
     }
   }
   
-  trait WithBindKeyboard extends StObject {
-    
-    var index: Double
-    
-    var onChangeIndex: OnChangeIndexCallback
-  }
-  object WithBindKeyboard {
-    
-    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithBindKeyboard = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
-      __obj.asInstanceOf[WithBindKeyboard]
-    }
-    
-    extension [Self <: WithBindKeyboard](x: Self) {
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
-    }
-  }
+  type WithBindKeyboard = WithIndex
   
-  trait WithBindKeyboardProps extends StObject {
+  trait WithBindKeyboardProps
+    extends StObject
+       with WithIndex {
     
     var axis: js.UndefOr[x | `x-reverse` | y | `y-reverse`] = js.undefined
-    
-    var index: Double
-    
-    var onChangeIndex: OnChangeIndexCallback
     
     var slidecount: js.UndefOr[Double] = js.undefined
   }
   object WithBindKeyboardProps {
     
-    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithBindKeyboardProps = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
+    inline def apply(): WithBindKeyboardProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WithBindKeyboardProps]
     }
     
@@ -171,52 +138,61 @@ object mod {
       
       inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
-      
       inline def setSlidecount(value: Double): Self = StObject.set(x, "slidecount", value.asInstanceOf[js.Any])
       
       inline def setSlidecountUndefined: Self = StObject.set(x, "slidecount", js.undefined)
     }
   }
   
-  trait WithVirtualize extends StObject {
+  trait WithIndex extends StObject {
     
-    var index: Double
+    var index: js.UndefOr[Double] = js.undefined
     
-    var onChangeIndex: OnChangeIndexCallback
+    var onChangeIndex: js.UndefOr[OnChangeIndexCallback] = js.undefined
+  }
+  object WithIndex {
+    
+    inline def apply(): WithIndex = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WithIndex]
+    }
+    
+    extension [Self <: WithIndex](x: Self) {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      
+      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
+      
+      inline def setOnChangeIndexUndefined: Self = StObject.set(x, "onChangeIndex", js.undefined)
+    }
+  }
+  
+  trait WithVirtualize
+    extends StObject
+       with WithIndex {
     
     def slideRenderer(render: SlideRendererCallback): ReactNode
   }
   object WithVirtualize {
     
-    inline def apply(
-      index: Double,
-      onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit,
-      slideRenderer: SlideRendererCallback => ReactNode
-    ): WithVirtualize = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex), slideRenderer = js.Any.fromFunction1(slideRenderer))
+    inline def apply(slideRenderer: SlideRendererCallback => ReactNode): WithVirtualize = {
+      val __obj = js.Dynamic.literal(slideRenderer = js.Any.fromFunction1(slideRenderer))
       __obj.asInstanceOf[WithVirtualize]
     }
     
     extension [Self <: WithVirtualize](x: Self) {
       
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
-      
       inline def setSlideRenderer(value: SlideRendererCallback => ReactNode): Self = StObject.set(x, "slideRenderer", js.Any.fromFunction1(value))
     }
   }
   
-  trait WithVirtualizeProps extends StObject {
+  trait WithVirtualizeProps
+    extends StObject
+       with WithIndex {
     
     var children: js.UndefOr[ReactNode] = js.undefined
-    
-    var index: Double
-    
-    var onChangeIndex: OnChangeIndexCallback
     
     var onTransitionEnd: js.UndefOr[OnTransitionEndCallback] = js.undefined
     
@@ -230,12 +206,8 @@ object mod {
   }
   object WithVirtualizeProps {
     
-    inline def apply(
-      index: Double,
-      onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit,
-      slideRenderer: /* render */ SlideRenderProps => ReactNode
-    ): WithVirtualizeProps = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex), slideRenderer = js.Any.fromFunction1(slideRenderer))
+    inline def apply(slideRenderer: /* render */ SlideRenderProps => ReactNode): WithVirtualizeProps = {
+      val __obj = js.Dynamic.literal(slideRenderer = js.Any.fromFunction1(slideRenderer))
       __obj.asInstanceOf[WithVirtualizeProps]
     }
     
@@ -244,10 +216,6 @@ object mod {
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
       inline def setOnTransitionEnd(value: () => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction0(value))
       

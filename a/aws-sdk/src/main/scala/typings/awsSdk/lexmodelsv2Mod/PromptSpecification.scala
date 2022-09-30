@@ -25,6 +25,11 @@ trait PromptSpecification extends StObject {
     * Indicates how a message is selected from a message group among retries.
     */
   var messageSelectionStrategy: js.UndefOr[MessageSelectionStrategy] = js.undefined
+  
+  /**
+    * Specifies the advanced settings on each attempt of the prompt.
+    */
+  var promptAttemptsSpecification: js.UndefOr[PromptAttemptsSpecificationMap] = js.undefined
 }
 object PromptSpecification {
   
@@ -48,5 +53,9 @@ object PromptSpecification {
     inline def setMessageSelectionStrategy(value: MessageSelectionStrategy): Self = StObject.set(x, "messageSelectionStrategy", value.asInstanceOf[js.Any])
     
     inline def setMessageSelectionStrategyUndefined: Self = StObject.set(x, "messageSelectionStrategy", js.undefined)
+    
+    inline def setPromptAttemptsSpecification(value: PromptAttemptsSpecificationMap): Self = StObject.set(x, "promptAttemptsSpecification", value.asInstanceOf[js.Any])
+    
+    inline def setPromptAttemptsSpecificationUndefined: Self = StObject.set(x, "promptAttemptsSpecification", js.undefined)
   }
 }

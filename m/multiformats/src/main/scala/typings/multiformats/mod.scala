@@ -2,17 +2,10 @@ package typings.multiformats
 
 import typings.multiformats.anon.Codec
 import typings.multiformats.anon.Encode
-import typings.multiformats.blockInterfaceMod.ByteView
+import typings.multiformats.cidMod.CIDVersion
+import typings.multiformats.cidMod.MultihashDigest
 import typings.multiformats.hasherMod.Await
-import typings.multiformats.hashesInterfaceMod.MultihashDigest
 import typings.multiformats.interfaceMod.MultibaseDecoder
-import typings.multiformats.linkInterfaceMod.Link
-import typings.multiformats.linkInterfaceMod.ToString
-import typings.multiformats.linkInterfaceMod.Version
-import typings.multiformats.multiformatsNumbers.`0`
-import typings.multiformats.multiformatsNumbers.`112`
-import typings.multiformats.multiformatsNumbers.`18`
-import typings.multiformats.multiformatsNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +14,16 @@ object mod {
   
   @JSImport("multiformats", "CID")
   @js.native
-  open class CID[Data /* <: Any */, Format /* <: Double */, Alg /* <: Double */, Version /* <: typings.multiformats.linkInterfaceMod.Version */] protected ()
-    extends typings.multiformats.cidMod.CID[Data, Format, Alg, Version] {
+  open class CID protected ()
+    extends typings.multiformats.cidMod.CID {
     /**
-      * @param {Version} version - Version of the CID
-      * @param {Format} code - Code of the codec content is encoded in, see https://github.com/multiformats/multicodec/blob/master/table.csv
-      * @param {API.MultihashDigest<Alg>} multihash - (Multi)hash of the of the content.
+      * @param {CIDVersion} version
+      * @param {number} code - multicodec code, see https://github.com/multiformats/multicodec/blob/master/table.csv
+      * @param {MultihashDigest} multihash
       * @param {Uint8Array} bytes
       *
       */
-    def this(version: Version, code: Format, multihash: MultihashDigest[Alg], bytes: js.typedarray.Uint8Array) = this()
+    def this(version: CIDVersion, code: Double, multihash: MultihashDigest, bytes: js.typedarray.Uint8Array) = this()
   }
   /* static members */
   object CID {
@@ -48,51 +41,34 @@ object mod {
       *
       * This allows two different incompatible versions of CID library to
       * co-exist and interop as long as binary interface is compatible.
-      *
-      * @template {unknown} Data
-      * @template {number} Format
-      * @template {number} Alg
-      * @template {API.Version} Version
-      * @template {unknown} U
-      * @param {API.Link<Data, Format, Alg, Version>|U} input
-      * @returns {CID<Data, Format, Alg, Version>|null}
+      * @param {any} value
+      * @returns {CID|null}
       */
-    inline def asCID[Data_2 /* <: Any */, Format_2 /* <: Double */, Alg_2 /* <: Double */, Version_2 /* <: Version */, U /* <: Any */](input: U): (typings.multiformats.cidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asCID")(input.asInstanceOf[js.Any]).asInstanceOf[(typings.multiformats.cidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null]
-    inline def asCID[Data_2 /* <: Any */, Format_2 /* <: Double */, Alg_2 /* <: Double */, Version_2 /* <: Version */, U /* <: Any */](input: Link[Data_2, Format_2, Alg_2, Version_2]): (typings.multiformats.cidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asCID")(input.asInstanceOf[js.Any]).asInstanceOf[(typings.multiformats.cidMod.CID[Data_2, Format_2, Alg_2, Version_2]) | Null]
+    inline def asCID(value: Any): typings.multiformats.cidMod.CID | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("asCID")(value.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID | Null]
     
     /**
       *
-      * @template {unknown} Data
-      * @template {number} Format
-      * @template {number} Alg
-      * @template {API.Version} Version
-      * @param {Version} version - Version of the CID
-      * @param {Format} code - Code of the codec content is encoded in, see https://github.com/multiformats/multicodec/blob/master/table.csv
-      * @param {API.MultihashDigest<Alg>} digest - (Multi)hash of the of the content.
-      * @returns {CID<Data, Format, Alg, Version>}
+      * @param {CIDVersion} version - Version of the CID
+      * @param {number} code - Code of the codec content is encoded in.
+      * @param {MultihashDigest} digest - (Multi)hash of the of the content.
+      * @returns {CID}
       */
-    inline def create[Data_3 /* <: Any */, Format_3 /* <: Double */, Alg_3 /* <: Double */, Version_3 /* <: Version */](version: Version_3, code: Format_3, digest: MultihashDigest[Alg_3]): typings.multiformats.cidMod.CID[Data_3, Format_3, Alg_3, Version_3] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(version.asInstanceOf[js.Any], code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID[Data_3, Format_3, Alg_3, Version_3]]
+    inline def create(version: CIDVersion, code: Double, digest: MultihashDigest): typings.multiformats.cidMod.CID = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(version.asInstanceOf[js.Any], code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID]
     
     /**
       * Simplified version of `create` for CIDv0.
-      *
-      * @template {unknown} [T=unknown]
-      * @param {API.MultihashDigest<typeof SHA_256_CODE>} digest - Multihash.
-      * @returns {CID<T, typeof DAG_PB_CODE, typeof SHA_256_CODE, 0>}
+      * @param {MultihashDigest} digest - Multihash.
       */
-    inline def createV0_18[T /* <: Any */](digest: MultihashDigest[`18`]): typings.multiformats.cidMod.CID[T, `112`, `18`, `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createV0")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID[T, `112`, `18`, `0`]]
+    inline def createV0(digest: MultihashDigest): typings.multiformats.cidMod.CID = ^.asInstanceOf[js.Dynamic].applyDynamic("createV0")(digest.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID]
     
     /**
       * Simplified version of `create` for CIDv1.
-      *
-      * @template {unknown} Data
       * @template {number} Code
-      * @template {number} Alg
       * @param {Code} code - Content encoding format code.
-      * @param {API.MultihashDigest<Alg>} digest - Miltihash of the content.
-      * @returns {CID<Data, Code, Alg, 1>}
+      * @param {MultihashDigest} digest - Miltihash of the content.
+      * @returns {CID}
       */
-    inline def createV1[Data_4 /* <: Any */, Code /* <: Double */, Alg_4 /* <: Double */](code: Code, digest: MultihashDigest[Alg_4]): typings.multiformats.cidMod.CID[Data_4, Code, Alg_4, `1`] = (^.asInstanceOf[js.Dynamic].applyDynamic("createV1")(code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID[Data_4, Code, Alg_4, `1`]]
+    inline def createV1[Code /* <: Double */](code: Code, digest: MultihashDigest): typings.multiformats.cidMod.CID = (^.asInstanceOf[js.Dynamic].applyDynamic("createV1")(code.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID]
     
     /**
       * Decoded a CID from its binary representation. The byte array must contain
@@ -101,14 +77,10 @@ object mod {
       * An error will be thrown if the bytes provided do not contain a valid
       * binary representation of a CID.
       *
-      * @template {unknown} Data
-      * @template {number} Code
-      * @template {number} Alg
-      * @template {API.Version} Ver
-      * @param {API.ByteView<API.Link<Data, Code, Alg, Ver>>} bytes
-      * @returns {CID<Data, Code, Alg, Ver>}
+      * @param {Uint8Array} bytes
+      * @returns {CID}
       */
-    inline def decode[Data_5 /* <: Any */, Code_1 /* <: Double */, Alg_5 /* <: Double */, Ver /* <: Version */](bytes: ByteView[Link[Data_5, Code_1, Alg_5, Ver]]): typings.multiformats.cidMod.CID[Data_5, Code_1, Alg_5, Ver] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID[Data_5, Code_1, Alg_5, Ver]]
+    inline def decode(bytes: js.typedarray.Uint8Array): typings.multiformats.cidMod.CID = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID]
     
     /**
       * Decoded a CID from its binary representation at the beginning of a byte
@@ -119,25 +91,10 @@ object mod {
       * will be a zero-length byte array if the provided bytes only contained a
       * binary CID representation.
       *
-      * @template {unknown} T
-      * @template {number} C
-      * @template {number} A
-      * @template {API.Version} V
-      * @param {API.ByteView<API.Link<T, C, A, V>>} bytes
-      * @returns {[CID<T, C, A, V>, Uint8Array]}
+      * @param {Uint8Array} bytes
+      * @returns {[CID, Uint8Array]}
       */
-    inline def decodeFirst[T_1 /* <: Any */, C /* <: Double */, A /* <: Double */, V /* <: Version */](bytes: ByteView[Link[T_1, C, A, V]]): js.Tuple2[typings.multiformats.cidMod.CID[T_1, C, A, V], js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[typings.multiformats.cidMod.CID[T_1, C, A, V], js.typedarray.Uint8Array]]
-    
-    /**
-      * @template {unknown} Data
-      * @template {number} Format
-      * @template {number} Alg
-      * @template {API.Version} Version
-      * @param {API.Link<Data, Format, Alg, Version>} self
-      * @param {unknown} other
-      * @returns {other is CID}
-      */
-    inline def equals[Data_1 /* <: Any */, Format_1 /* <: Double */, Alg_1 /* <: Double */, Version_1 /* <: Version */](self: Link[Data_1, Format_1, Alg_1, Version_1], other: Any): /* is multiformats.multiformats/dist/types/src/cid.CID<any, number, number, multiformats.multiformats/dist/types/src/link/interface.Version> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(self.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[/* is multiformats.multiformats/dist/types/src/cid.CID<any, number, number, multiformats.multiformats/dist/types/src/link/interface.Version> */ Boolean]
+    inline def decodeFirst(bytes: js.typedarray.Uint8Array): js.Tuple2[typings.multiformats.cidMod.CID, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFirst")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[typings.multiformats.cidMod.CID, js.typedarray.Uint8Array]]
     
     /**
       * Inspect the initial bytes of a CID to determine its properties.
@@ -148,14 +105,16 @@ object mod {
       * 10 bytes be made available in the `initialBytes` argument for a complete
       * inspection.
       *
-      * @template {unknown} T
-      * @template {number} C
-      * @template {number} A
-      * @template {API.Version} V
-      * @param {API.ByteView<API.Link<T, C, A, V>>} initialBytes
-      * @returns {{ version:V, codec:C, multihashCode:A, digestSize:number, multihashSize:number, size:number }}
+      * @param {Uint8Array} initialBytes
+      * @returns {{ version:CIDVersion, codec:number, multihashCode:number, digestSize:number, multihashSize:number, size:number }}
       */
-    inline def inspectBytes[T_2 /* <: Any */, C_1 /* <: Double */, A_1 /* <: Double */, V_1 /* <: Version */](initialBytes: ByteView[Link[T_2, C_1, A_1, V_1]]): Codec[V_1, C_1, A_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("inspectBytes")(initialBytes.asInstanceOf[js.Any]).asInstanceOf[Codec[V_1, C_1, A_1]]
+    inline def inspectBytes(initialBytes: js.typedarray.Uint8Array): Codec = ^.asInstanceOf[js.Dynamic].applyDynamic("inspectBytes")(initialBytes.asInstanceOf[js.Any]).asInstanceOf[Codec]
+    
+    /**
+      * @param {any} value
+      * @returns {value is CID}
+      */
+    inline def isCID(value: Any): /* is multiformats.multiformats/types/src/cid.CID */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCID")(value.asInstanceOf[js.Any]).asInstanceOf[/* is multiformats.multiformats/types/src/cid.CID */ Boolean]
     
     /**
       * Takes cid in a string representation and creates an instance. If `base`
@@ -164,16 +123,11 @@ object mod {
       * a default decoder).
       *
       * @template {string} Prefix
-      * @template {unknown} Data
-      * @template {number} Code
-      * @template {number} Alg
-      * @template {API.Version} Ver
-      * @param {API.ToString<API.Link<Data, Code, Alg, Ver>, Prefix>} source
-      * @param {API.MultibaseDecoder<Prefix>} [base]
-      * @returns {CID<Data, Code, Alg, Ver>}
+      * @param {string} source
+      * @param {MultibaseDecoder<Prefix>} [base]
       */
-    inline def parse[Prefix /* <: String */, Data_6 /* <: Any */, Code_2 /* <: Double */, Alg_6 /* <: Double */, Ver_1 /* <: Version */](source: ToString[Link[Data_6, Code_2, Alg_6, Ver_1], Prefix]): typings.multiformats.cidMod.CID[Data_6, Code_2, Alg_6, Ver_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID[Data_6, Code_2, Alg_6, Ver_1]]
-    inline def parse[Prefix /* <: String */, Data_6 /* <: Any */, Code_2 /* <: Double */, Alg_6 /* <: Double */, Ver_1 /* <: Version */](source: ToString[Link[Data_6, Code_2, Alg_6, Ver_1], Prefix], base: MultibaseDecoder[Prefix]): typings.multiformats.cidMod.CID[Data_6, Code_2, Alg_6, Ver_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID[Data_6, Code_2, Alg_6, Ver_1]]
+    inline def parse[Prefix /* <: String */](source: String): typings.multiformats.cidMod.CID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.cidMod.CID]
+    inline def parse[Prefix /* <: String */](source: String, base: MultibaseDecoder[Prefix]): typings.multiformats.cidMod.CID = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.multiformats.cidMod.CID]
   }
   
   object bytes {
@@ -215,7 +169,6 @@ object mod {
       extends typings.multiformats.digestMod.Digest[Code, Size] {
       /**
         * Creates a multihash digest.
-        *
         * @param {Code} code
         * @param {Size} size
         * @param {Uint8Array} digest
@@ -228,7 +181,10 @@ object mod {
     
     inline def decode(multihash: js.typedarray.Uint8Array): typings.multiformats.digestMod.MultihashDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(multihash.asInstanceOf[js.Any]).asInstanceOf[typings.multiformats.digestMod.MultihashDigest]
     
-    inline def equals_(a: typings.multiformats.digestMod.MultihashDigest, b: Any): /* is multiformats.multiformats/dist/types/src/hashes/interface.MultihashDigest<number> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[/* is multiformats.multiformats/dist/types/src/hashes/interface.MultihashDigest<number> */ Boolean]
+    inline def equals_(
+      a: typings.multiformats.digestMod.MultihashDigest,
+      b: typings.multiformats.digestMod.MultihashDigest
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object hasher {

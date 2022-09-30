@@ -1,8 +1,8 @@
 package typings.liveServer
 
-import typings.liveServer.liveServerNumbers.`0`
-import typings.liveServer.liveServerNumbers.`1`
-import typings.liveServer.liveServerNumbers.`2`
+import typings.liveServer.liveServerInts.`0`
+import typings.liveServer.liveServerInts.`1`
+import typings.liveServer.liveServerInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

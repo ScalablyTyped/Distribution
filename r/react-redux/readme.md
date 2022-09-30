@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-redux
 
-Typings are for version 7.1
+Typings are for version 8.0.2
 
 ## Library description:
 Official React bindings for Redux
@@ -10,10 +10,10 @@ Official React bindings for Redux
 | ------------------ | :-------------: |
 | Full name          | react-redux |
 | Keywords           | react, reactjs, redux |
-| # releases         | 25 |
-| # dependents       | 7067 |
-| # downloads        | 188140985 |
-| # stars            | 173 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5376506E7 |
+| # stars            | 22377.0 |
 
 ## Links
 - [Homepage](https://github.com/reduxjs/react-redux)
@@ -24,7 +24,7 @@ Official React bindings for Redux
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

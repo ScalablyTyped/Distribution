@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.ImageOverlay")
 @js.native
-class ImageOverlay_ protected ()
+open class ImageOverlay_ protected ()
   extends typings.leaflet.mod.ImageOverlay_ {
   def this(imageUrl: String, bounds: LatLngBoundsExpression) = this()
   def this(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions) = this()

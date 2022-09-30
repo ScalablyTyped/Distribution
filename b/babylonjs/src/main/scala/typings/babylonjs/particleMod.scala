@@ -27,97 +27,96 @@ object particleMod {
       */
     particleSystem: ParticleSystem) = this()
     
-    /** @hidden */
+    /** @internal */
     var _attachedSubEmitters: Nullable[js.Array[SubEmitter]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentAngularSpeed1: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentAngularSpeed2: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentAngularSpeedGradient: Nullable[FactorGradient] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentColor1: Color4 = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentColor2: Color4 = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentColorGradient: Nullable[ColorGradient] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentDrag1: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentDrag2: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentDragGradient: Nullable[FactorGradient] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentLimitVelocity1: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentLimitVelocity2: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentLimitVelocityGradient: Nullable[FactorGradient] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentSize1: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentSize2: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentSizeGradient: Nullable[FactorGradient] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentVelocity1: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentVelocity2: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentVelocityGradient: Nullable[FactorGradient] = js.native
     
     /**
-      * @param subEmitter
-      * @hidden
+      * @internal
       */
     def _inheritParticleInfoToSubEmitter(subEmitter: SubEmitter): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _inheritParticleInfoToSubEmitters(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _initialDirection: Nullable[Vector3] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _initialEndSpriteCellID: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _initialSpriteCellLoop: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _initialStartSpriteCellID: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _localPosition: js.UndefOr[Vector3] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _randomCellOffset: js.UndefOr[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _randomNoiseCoordinates1: Vector3 = js.native
     
-    /** @hidden */
+    /** @internal */
     var _randomNoiseCoordinates2: Vector3 = js.native
     
-    /** @hidden */
+    /** @internal */
     def _reset(): Unit = js.native
     
     /* private */ var _updateCellInfoFromSystem: Any = js.native

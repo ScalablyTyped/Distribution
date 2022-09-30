@@ -17,7 +17,7 @@ trait UpdateServiceInput extends StObject {
   var name: ResourceName
   
   /**
-    * Lists the service instances to add and the existing service instances to remain. Omit the existing service instances to delete from the list. Don't include edits to the existing service instances or pipeline. For more information, see Edit a service in the Proton Administrator Guide or the Proton User Guide.
+    * Lists the service instances to add and the existing service instances to remain. Omit the existing service instances to delete from the list. Don't include edits to the existing service instances or pipeline. For more information, see Edit a service in the Proton User Guide.
     */
   var spec: js.UndefOr[SpecContents] = js.undefined
 }

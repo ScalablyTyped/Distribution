@@ -1,78 +1,78 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.kdbxwebNumbers._2594363651
-import typings.kdbxweb.kdbxwebNumbers._3041655653
-import typings.kdbxweb.kdbxwebNumbers._3041655655
-import typings.kdbxweb.kdbxwebNumbers.`0`
-import typings.kdbxweb.kdbxwebNumbers.`10`
-import typings.kdbxweb.kdbxwebNumbers.`11`
-import typings.kdbxweb.kdbxwebNumbers.`12`
-import typings.kdbxweb.kdbxwebNumbers.`13`
-import typings.kdbxweb.kdbxwebNumbers.`14`
-import typings.kdbxweb.kdbxwebNumbers.`15`
-import typings.kdbxweb.kdbxwebNumbers.`16`
-import typings.kdbxweb.kdbxwebNumbers.`17`
-import typings.kdbxweb.kdbxwebNumbers.`18`
-import typings.kdbxweb.kdbxwebNumbers.`19`
-import typings.kdbxweb.kdbxwebNumbers.`1`
-import typings.kdbxweb.kdbxwebNumbers.`20`
-import typings.kdbxweb.kdbxwebNumbers.`21`
-import typings.kdbxweb.kdbxwebNumbers.`22`
-import typings.kdbxweb.kdbxwebNumbers.`23`
-import typings.kdbxweb.kdbxwebNumbers.`24`
-import typings.kdbxweb.kdbxwebNumbers.`25`
-import typings.kdbxweb.kdbxwebNumbers.`26`
-import typings.kdbxweb.kdbxwebNumbers.`27`
-import typings.kdbxweb.kdbxwebNumbers.`28`
-import typings.kdbxweb.kdbxwebNumbers.`29`
-import typings.kdbxweb.kdbxwebNumbers.`2`
-import typings.kdbxweb.kdbxwebNumbers.`300000`
-import typings.kdbxweb.kdbxwebNumbers.`30`
-import typings.kdbxweb.kdbxwebNumbers.`31`
-import typings.kdbxweb.kdbxwebNumbers.`32`
-import typings.kdbxweb.kdbxwebNumbers.`33`
-import typings.kdbxweb.kdbxwebNumbers.`34`
-import typings.kdbxweb.kdbxwebNumbers.`35`
-import typings.kdbxweb.kdbxwebNumbers.`365`
-import typings.kdbxweb.kdbxwebNumbers.`36`
-import typings.kdbxweb.kdbxwebNumbers.`37`
-import typings.kdbxweb.kdbxwebNumbers.`39`
-import typings.kdbxweb.kdbxwebNumbers.`3`
-import typings.kdbxweb.kdbxwebNumbers.`40`
-import typings.kdbxweb.kdbxwebNumbers.`41`
-import typings.kdbxweb.kdbxwebNumbers.`42`
-import typings.kdbxweb.kdbxwebNumbers.`43`
-import typings.kdbxweb.kdbxwebNumbers.`44`
-import typings.kdbxweb.kdbxwebNumbers.`45`
-import typings.kdbxweb.kdbxwebNumbers.`46`
-import typings.kdbxweb.kdbxwebNumbers.`47`
-import typings.kdbxweb.kdbxwebNumbers.`48`
-import typings.kdbxweb.kdbxwebNumbers.`49`
-import typings.kdbxweb.kdbxwebNumbers.`4`
-import typings.kdbxweb.kdbxwebNumbers.`50`
-import typings.kdbxweb.kdbxwebNumbers.`51`
-import typings.kdbxweb.kdbxwebNumbers.`52`
-import typings.kdbxweb.kdbxwebNumbers.`53`
-import typings.kdbxweb.kdbxwebNumbers.`54`
-import typings.kdbxweb.kdbxwebNumbers.`55`
-import typings.kdbxweb.kdbxwebNumbers.`56`
-import typings.kdbxweb.kdbxwebNumbers.`57`
-import typings.kdbxweb.kdbxwebNumbers.`58`
-import typings.kdbxweb.kdbxwebNumbers.`59`
-import typings.kdbxweb.kdbxwebNumbers.`5`
-import typings.kdbxweb.kdbxwebNumbers.`60`
-import typings.kdbxweb.kdbxwebNumbers.`61`
-import typings.kdbxweb.kdbxwebNumbers.`62`
-import typings.kdbxweb.kdbxwebNumbers.`63`
-import typings.kdbxweb.kdbxwebNumbers.`64`
-import typings.kdbxweb.kdbxwebNumbers.`65`
-import typings.kdbxweb.kdbxwebNumbers.`66`
-import typings.kdbxweb.kdbxwebNumbers.`67`
-import typings.kdbxweb.kdbxwebNumbers.`68`
-import typings.kdbxweb.kdbxwebNumbers.`6`
-import typings.kdbxweb.kdbxwebNumbers.`7`
-import typings.kdbxweb.kdbxwebNumbers.`8`
-import typings.kdbxweb.kdbxwebNumbers.`9`
+import typings.kdbxweb.kdbxwebDoubles.`2594363651`
+import typings.kdbxweb.kdbxwebDoubles.`3041655653`
+import typings.kdbxweb.kdbxwebDoubles.`3041655655`
+import typings.kdbxweb.kdbxwebInts.`0`
+import typings.kdbxweb.kdbxwebInts.`10`
+import typings.kdbxweb.kdbxwebInts.`11`
+import typings.kdbxweb.kdbxwebInts.`12`
+import typings.kdbxweb.kdbxwebInts.`13`
+import typings.kdbxweb.kdbxwebInts.`14`
+import typings.kdbxweb.kdbxwebInts.`15`
+import typings.kdbxweb.kdbxwebInts.`16`
+import typings.kdbxweb.kdbxwebInts.`17`
+import typings.kdbxweb.kdbxwebInts.`18`
+import typings.kdbxweb.kdbxwebInts.`19`
+import typings.kdbxweb.kdbxwebInts.`1`
+import typings.kdbxweb.kdbxwebInts.`20`
+import typings.kdbxweb.kdbxwebInts.`21`
+import typings.kdbxweb.kdbxwebInts.`22`
+import typings.kdbxweb.kdbxwebInts.`23`
+import typings.kdbxweb.kdbxwebInts.`24`
+import typings.kdbxweb.kdbxwebInts.`25`
+import typings.kdbxweb.kdbxwebInts.`26`
+import typings.kdbxweb.kdbxwebInts.`27`
+import typings.kdbxweb.kdbxwebInts.`28`
+import typings.kdbxweb.kdbxwebInts.`29`
+import typings.kdbxweb.kdbxwebInts.`2`
+import typings.kdbxweb.kdbxwebInts.`300000`
+import typings.kdbxweb.kdbxwebInts.`30`
+import typings.kdbxweb.kdbxwebInts.`31`
+import typings.kdbxweb.kdbxwebInts.`32`
+import typings.kdbxweb.kdbxwebInts.`33`
+import typings.kdbxweb.kdbxwebInts.`34`
+import typings.kdbxweb.kdbxwebInts.`35`
+import typings.kdbxweb.kdbxwebInts.`365`
+import typings.kdbxweb.kdbxwebInts.`36`
+import typings.kdbxweb.kdbxwebInts.`37`
+import typings.kdbxweb.kdbxwebInts.`39`
+import typings.kdbxweb.kdbxwebInts.`3`
+import typings.kdbxweb.kdbxwebInts.`40`
+import typings.kdbxweb.kdbxwebInts.`41`
+import typings.kdbxweb.kdbxwebInts.`42`
+import typings.kdbxweb.kdbxwebInts.`43`
+import typings.kdbxweb.kdbxwebInts.`44`
+import typings.kdbxweb.kdbxwebInts.`45`
+import typings.kdbxweb.kdbxwebInts.`46`
+import typings.kdbxweb.kdbxwebInts.`47`
+import typings.kdbxweb.kdbxwebInts.`48`
+import typings.kdbxweb.kdbxwebInts.`49`
+import typings.kdbxweb.kdbxwebInts.`4`
+import typings.kdbxweb.kdbxwebInts.`50`
+import typings.kdbxweb.kdbxwebInts.`51`
+import typings.kdbxweb.kdbxwebInts.`52`
+import typings.kdbxweb.kdbxwebInts.`53`
+import typings.kdbxweb.kdbxwebInts.`54`
+import typings.kdbxweb.kdbxwebInts.`55`
+import typings.kdbxweb.kdbxwebInts.`56`
+import typings.kdbxweb.kdbxwebInts.`57`
+import typings.kdbxweb.kdbxwebInts.`58`
+import typings.kdbxweb.kdbxwebInts.`59`
+import typings.kdbxweb.kdbxwebInts.`5`
+import typings.kdbxweb.kdbxwebInts.`60`
+import typings.kdbxweb.kdbxwebInts.`61`
+import typings.kdbxweb.kdbxwebInts.`62`
+import typings.kdbxweb.kdbxwebInts.`63`
+import typings.kdbxweb.kdbxwebInts.`64`
+import typings.kdbxweb.kdbxwebInts.`65`
+import typings.kdbxweb.kdbxwebInts.`66`
+import typings.kdbxweb.kdbxwebInts.`67`
+import typings.kdbxweb.kdbxwebInts.`68`
+import typings.kdbxweb.kdbxwebInts.`6`
+import typings.kdbxweb.kdbxwebInts.`7`
+import typings.kdbxweb.kdbxwebInts.`8`
+import typings.kdbxweb.kdbxwebInts.`9`
 import typings.kdbxweb.kdbxwebStrings.McHy5r9xQ1CPlussignWAUhavxaSlashwEqualssignEqualssign
 import typings.kdbxweb.kdbxwebStrings.`1gOKK4tvTLWlJDOaMdu1mgEqualssignEqualssign`
 import typings.kdbxweb.kdbxwebStrings.`72Nt34wpREuR96mkAPlussignMKDAEqualssignEqualssign`
@@ -501,14 +501,14 @@ object Consts {
     
     @JSImport("kdbxweb", "Consts.Signatures.FileMagic")
     @js.native
-    val FileMagic: _2594363651 = js.native
+    val FileMagic: `2594363651` = js.native
     
     @JSImport("kdbxweb", "Consts.Signatures.Sig2Kdb")
     @js.native
-    val Sig2Kdb: _3041655653 = js.native
+    val Sig2Kdb: `3041655653` = js.native
     
     @JSImport("kdbxweb", "Consts.Signatures.Sig2Kdbx")
     @js.native
-    val Sig2Kdbx: _3041655655 = js.native
+    val Sig2Kdbx: `3041655655` = js.native
   }
 }

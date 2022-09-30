@@ -1,6 +1,7 @@
 package typings.googleCloudTasks.mod
 
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CloudTasksConfig
   extends StObject
-     with GoogleAuthOptions {
+     with GoogleAuthOptions[JSONClient] {
   
   var autoRetry: js.UndefOr[Boolean] = js.undefined
   

@@ -18,7 +18,7 @@ object createActionTrackingMiddleware2Mod {
   /* Inlined parent std.Readonly<mobx-state-tree.mobx-state-tree/dist/internal.IActionContext> */
   trait IActionTrackingMiddleware2Call[TEnv] extends StObject {
     
-    val args: js.Array[js.Any]
+    val args: js.Array[Any]
     
     val context: IAnyStateTreeNode
     
@@ -36,22 +36,16 @@ object createActionTrackingMiddleware2Mod {
   }
   object IActionTrackingMiddleware2Call {
     
-    inline def apply[TEnv](
-      args: js.Array[js.Any],
-      context: IAnyStateTreeNode,
-      id: Double,
-      name: String,
-      tree: IAnyStateTreeNode
-    ): IActionTrackingMiddleware2Call[TEnv] = {
+    inline def apply[TEnv](args: js.Array[Any], context: IAnyStateTreeNode, id: Double, name: String, tree: IAnyStateTreeNode): IActionTrackingMiddleware2Call[TEnv] = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
       __obj.asInstanceOf[IActionTrackingMiddleware2Call[TEnv]]
     }
     
     extension [Self <: IActionTrackingMiddleware2Call[?], TEnv](x: Self & IActionTrackingMiddleware2Call[TEnv]) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setContext(value: IAnyStateTreeNode): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -81,7 +75,7 @@ object createActionTrackingMiddleware2Mod {
     var filter: js.UndefOr[js.Function1[/* call */ IActionTrackingMiddleware2Call[TEnv], Boolean]] = js.native
     
     def onFinish(call: IActionTrackingMiddleware2Call[TEnv]): Unit = js.native
-    def onFinish(call: IActionTrackingMiddleware2Call[TEnv], error: js.Any): Unit = js.native
+    def onFinish(call: IActionTrackingMiddleware2Call[TEnv], error: Any): Unit = js.native
     
     def onStart(call: IActionTrackingMiddleware2Call[TEnv]): Unit = js.native
   }

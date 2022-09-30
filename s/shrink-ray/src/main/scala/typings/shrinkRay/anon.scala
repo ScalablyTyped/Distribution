@@ -1,18 +1,18 @@
 package typings.shrinkRay
 
-import typings.shrinkRay.shrinkRayNumbers.`-1`
-import typings.shrinkRay.shrinkRayNumbers.`0`
-import typings.shrinkRay.shrinkRayNumbers.`10`
-import typings.shrinkRay.shrinkRayNumbers.`11`
-import typings.shrinkRay.shrinkRayNumbers.`1`
-import typings.shrinkRay.shrinkRayNumbers.`2`
-import typings.shrinkRay.shrinkRayNumbers.`3`
-import typings.shrinkRay.shrinkRayNumbers.`4`
-import typings.shrinkRay.shrinkRayNumbers.`5`
-import typings.shrinkRay.shrinkRayNumbers.`6`
-import typings.shrinkRay.shrinkRayNumbers.`7`
-import typings.shrinkRay.shrinkRayNumbers.`8`
-import typings.shrinkRay.shrinkRayNumbers.`9`
+import typings.shrinkRay.shrinkRayInts.`-1`
+import typings.shrinkRay.shrinkRayInts.`0`
+import typings.shrinkRay.shrinkRayInts.`10`
+import typings.shrinkRay.shrinkRayInts.`11`
+import typings.shrinkRay.shrinkRayInts.`1`
+import typings.shrinkRay.shrinkRayInts.`2`
+import typings.shrinkRay.shrinkRayInts.`3`
+import typings.shrinkRay.shrinkRayInts.`4`
+import typings.shrinkRay.shrinkRayInts.`5`
+import typings.shrinkRay.shrinkRayInts.`6`
+import typings.shrinkRay.shrinkRayInts.`7`
+import typings.shrinkRay.shrinkRayInts.`8`
+import typings.shrinkRay.shrinkRayInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

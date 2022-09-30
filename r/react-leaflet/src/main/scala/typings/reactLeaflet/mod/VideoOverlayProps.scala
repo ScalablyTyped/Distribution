@@ -32,7 +32,7 @@ object VideoOverlayProps {
     
     inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object VideoOverlayProps {
     
     inline def setUrl(value: String | js.Array[String] | HTMLVideoElement): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
   }
 }

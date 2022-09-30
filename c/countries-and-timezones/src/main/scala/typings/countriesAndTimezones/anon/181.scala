@@ -9,7 +9,7 @@ trait `181` extends StObject {
   
   var c: js.Array[AF]
   
-  var u: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`270`
+  var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`270`
 }
 object `181` {
   
@@ -24,6 +24,6 @@ object `181` {
     
     inline def setCVarargs(value: AF*): Self = StObject.set(x, "c", js.Array(value*))
     
-    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`270`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`270`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
   }
 }

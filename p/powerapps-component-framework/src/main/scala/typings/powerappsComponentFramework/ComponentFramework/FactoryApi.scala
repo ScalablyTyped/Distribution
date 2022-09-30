@@ -170,15 +170,15 @@ object FactoryApi {
         * 2 - Nested - Not root popup in the popup stack
         */
       /* Rewritten from type alias, can be one of: 
-        - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`
-        - typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`
+        - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`
+        - typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2`
       */
       trait PopupType extends StObject
       object PopupType {
         
-        inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+        inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`1`]
         
-        inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
+        inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkInts.`2`]
       }
     }
   }

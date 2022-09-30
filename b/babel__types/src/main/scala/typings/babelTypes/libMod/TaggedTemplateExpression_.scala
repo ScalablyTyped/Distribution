@@ -16,7 +16,7 @@ trait TaggedTemplateExpression_
   
   var tag: Expression
   
-  var typeParameters: js.UndefOr[TypeParameterInstantiation_ | TSTypeParameterInstantiation | Null] = js.undefined
+  var typeParameters: js.UndefOr[TypeParameterInstantiation_ | TSTypeParameterInstantiation__ | Null] = js.undefined
   
   @JSName("type")
   var type_TaggedTemplateExpression_ : TaggedTemplateExpression
@@ -37,7 +37,7 @@ object TaggedTemplateExpression_ {
     
     inline def setType(value: TaggedTemplateExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameters(value: TypeParameterInstantiation_ | TSTypeParameterInstantiation): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterInstantiation_ | TSTypeParameterInstantiation__): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     

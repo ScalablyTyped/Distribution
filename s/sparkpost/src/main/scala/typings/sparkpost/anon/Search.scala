@@ -3,7 +3,6 @@ package typings.sparkpost.anon
 import typings.sparkpost.mod.MessageEvent
 import typings.sparkpost.mod.MessageEventParameters
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait Search extends StObject {
     * @param parameters Query parameters
     * @returns Promise The MessageEvent results array
     */
-  def search(parameters: MessageEventParameters): ResultsPromise[js.Array[MessageEvent]] = js.native
+  def search(parameters: MessageEventParameters): js.Promise[Results[js.Array[MessageEvent]]] = js.native
   /**
     * Retrieves list of message events according to given params
     * @param parameters Query parameters

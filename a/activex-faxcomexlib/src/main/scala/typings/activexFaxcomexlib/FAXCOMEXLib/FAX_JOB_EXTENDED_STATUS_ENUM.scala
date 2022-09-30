@@ -1,53 +1,53 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`10`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`11`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`12`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`13`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`14`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`15`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`16777216`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`17`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`18`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`19`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`7`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`9`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`10`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`11`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`12`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`13`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`14`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`15`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`16777216`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`17`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`18`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`19`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`6`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`7`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+import typings.activexFaxcomexlib.activexFaxcomexlibInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`5`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`10`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`19`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`14`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`18`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`13`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`3`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`12`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`17`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`7`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`9`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`11`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`15`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`16777216`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`6`
-  - typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`5`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`10`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`19`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`14`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`18`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`13`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`3`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`12`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`17`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`7`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`9`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`11`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`15`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`16777216`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`6`
+  - typings.activexFaxcomexlib.activexFaxcomexlibInts.`4`
 */
 trait FAX_JOB_EXTENDED_STATUS_ENUM extends StObject
 object FAX_JOB_EXTENDED_STATUS_ENUM {

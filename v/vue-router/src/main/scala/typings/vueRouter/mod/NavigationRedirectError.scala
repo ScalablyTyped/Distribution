@@ -1,6 +1,6 @@
 package typings.vueRouter.mod
 
-import typings.vueRouter.vueRouterNumbers.`2`
+import typings.vueRouter.vueRouterInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

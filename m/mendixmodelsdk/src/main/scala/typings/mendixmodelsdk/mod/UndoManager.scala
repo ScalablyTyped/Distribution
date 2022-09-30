@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "UndoManager")
 @js.native
-class UndoManager protected ()
+open class UndoManager protected ()
   extends typings.mendixmodelsdk.internalMod.UndoManager {
   def this(_model: IAbstractModel) = this()
 }

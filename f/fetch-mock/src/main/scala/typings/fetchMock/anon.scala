@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.fetchMock.fetchMockStrings.always
 import typings.std.Headers
+import typings.std.PromiseLike
 import typings.std.Request
 import typings.std.RequestInit
 import typings.std.Response
@@ -29,7 +30,7 @@ object anon {
     var Promise: js.UndefOr[
         Instantiable1[
           /* executor */ js.Function2[
-            /* resolve */ js.Function1[/* value */ Response | js.Thenable[Response], Unit], 
+            /* resolve */ js.Function1[/* value */ Response | PromiseLike[Response], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ], 
@@ -141,7 +142,7 @@ object anon {
       inline def setPromise(
         value: Instantiable1[
               /* executor */ js.Function2[
-                /* resolve */ js.Function1[/* value */ Response | js.Thenable[Response], Unit], 
+                /* resolve */ js.Function1[/* value */ Response | PromiseLike[Response], Unit], 
                 /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
                 Unit
               ], 

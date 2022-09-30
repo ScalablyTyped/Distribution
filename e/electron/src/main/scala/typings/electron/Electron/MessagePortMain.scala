@@ -41,8 +41,8 @@ trait MessagePortMain extends EventEmitter {
     * Sends a message from the port, and optionally, transfers ownership of objects to
     * other browsing contexts.
     */
-  def postMessage(message: js.Any): Unit = js.native
-  def postMessage(message: js.Any, transfer: js.Array[MessagePortMain]): Unit = js.native
+  def postMessage(message: Any): Unit = js.native
+  def postMessage(message: Any, transfer: js.Array[MessagePortMain]): Unit = js.native
   
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function): this.type = js.native

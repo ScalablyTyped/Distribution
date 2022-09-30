@@ -11,9 +11,9 @@ object regularexpressions {
   /**
     * See: {@link https://docs.mendix.com/refguide/regular-expressions relevant section in reference guide}
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "regularexpressions.RegularExpression")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "regularexpressions.RegularExpression")
   @js.native
-  class RegularExpression protected ()
+  open class RegularExpression protected ()
     extends typings.mendixmodelsdk.regularexpressionsMod.regularexpressions.RegularExpression {
     def this(
       model: AbstractModel,
@@ -25,7 +25,7 @@ object regularexpressions {
   }
   object RegularExpression {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "regularexpressions.RegularExpression")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "regularexpressions.RegularExpression")
     @js.native
     val ^ : js.Any = js.native
     
@@ -37,13 +37,13 @@ object regularexpressions {
     inline def createIn(container: IFolderBase): typings.mendixmodelsdk.regularexpressionsMod.regularexpressions.RegularExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.regularexpressionsMod.regularexpressions.RegularExpression]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "regularexpressions.RegularExpression.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "regularexpressions.RegularExpression.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "regularexpressions.RegularExpression.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "regularexpressions.RegularExpression.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.regularexpressionsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.regularexpressionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

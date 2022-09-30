@@ -1,8 +1,8 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`2`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`2`
 import typings.html2canvas.ipropertydescriptorMod.IPropertyIdentValueDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +15,9 @@ object textAlignMod {
   val textAlign: IPropertyIdentValueDescriptor[TEXT_ALIGN] = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
   */
   trait TEXT_ALIGN extends StObject
   object TEXT_ALIGN {

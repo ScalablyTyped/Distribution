@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.22.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.OfflineSchemaFetchInstruction")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.OfflineSchemaFetchInstruction")
 @js.native
-class OfflineSchemaFetchInstruction protected () extends Element[IModel] {
+open class OfflineSchemaFetchInstruction protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ class OfflineSchemaFetchInstruction protected () extends Element[IModel] {
 }
 object OfflineSchemaFetchInstruction {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OfflineSchemaFetchInstruction")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OfflineSchemaFetchInstruction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -48,13 +48,13 @@ object OfflineSchemaFetchInstruction {
   inline def create(model: IModel): OfflineSchemaFetchInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OfflineSchemaFetchInstruction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OfflineSchemaFetchInstruction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OfflineSchemaFetchInstruction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OfflineSchemaFetchInstruction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.OfflineSchemaFetchInstruction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

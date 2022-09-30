@@ -15,7 +15,8 @@ object listMod {
   
   @JSImport("@ant-design/react-native/lib/list", JSImport.Default)
   @js.native
-  open class default () extends List
+  open class default ()
+    extends typings.antDesignReactNative.listMod.List
   /* static members */
   object default {
     

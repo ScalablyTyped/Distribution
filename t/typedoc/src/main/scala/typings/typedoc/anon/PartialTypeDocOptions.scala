@@ -20,7 +20,6 @@ import typings.typedoc.typedocStrings.SomeSignature
 import typings.typedoc.typedocStrings.SomeType
 import typings.typedoc.typedocStrings.SomeValue
 import typings.typedoc.typedocStrings.VariableOrProperty
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +32,7 @@ trait PartialTypeDocOptions extends StObject {
   ] = js.undefined
   
   var blockTags: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
   ] = js.undefined
   
   var categorizeByGroup: js.UndefOr[
@@ -41,7 +40,7 @@ trait PartialTypeDocOptions extends StObject {
   ] = js.undefined
   
   var categoryOrder: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
   ] = js.undefined
   
   var cleanOutputDir: js.UndefOr[
@@ -85,11 +84,11 @@ trait PartialTypeDocOptions extends StObject {
   ] = js.undefined
   
   var entryPoints: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
   ] = js.undefined
   
   var exclude: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
   ] = js.undefined
   
   var excludeExternals: js.UndefOr[
@@ -113,11 +112,11 @@ trait PartialTypeDocOptions extends StObject {
   ] = js.undefined
   
   var excludeTags: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
   ] = js.undefined
   
   var externalPattern: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
   ] = js.undefined
   
   var externalSymbolLinkMappings: js.UndefOr[
@@ -161,11 +160,11 @@ trait PartialTypeDocOptions extends StObject {
   ] = js.undefined
   
   var inlineTags: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
   ] = js.undefined
   
   var intentionallyNotExported: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
   ] = js.undefined
   
   var json: js.UndefOr[
@@ -195,7 +194,7 @@ trait PartialTypeDocOptions extends StObject {
   ] = js.undefined
   
   var modifierTags: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
   ] = js.undefined
   
   var name: js.UndefOr[
@@ -211,7 +210,7 @@ trait PartialTypeDocOptions extends StObject {
   ] = js.undefined
   
   var plugin: js.UndefOr[
-    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+    Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
   ] = js.undefined
   
   var preserveWatchOutput: js.UndefOr[
@@ -300,12 +299,12 @@ object PartialTypeDocOptions {
     inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
     inline def setBlockTags(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
     ): Self = StObject.set(x, "blockTags", value.asInstanceOf[js.Any])
     
     inline def setBlockTagsUndefined: Self = StObject.set(x, "blockTags", js.undefined)
     
-    inline def setBlockTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "blockTags", js.Array(value*))
+    inline def setBlockTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "blockTags", js.Array(value*))
     
     inline def setCategorizeByGroup(
       value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Partial[Boolean] | Boolean
@@ -314,7 +313,7 @@ object PartialTypeDocOptions {
     inline def setCategorizeByGroupUndefined: Self = StObject.set(x, "categorizeByGroup", js.undefined)
     
     inline def setCategoryOrder(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
     ): Self = StObject.set(x, "categoryOrder", value.asInstanceOf[js.Any])
     
     inline def setCategoryOrderUndefined: Self = StObject.set(x, "categoryOrder", js.undefined)
@@ -382,7 +381,7 @@ object PartialTypeDocOptions {
     inline def setEntryPointStrategyUndefined: Self = StObject.set(x, "entryPointStrategy", js.undefined)
     
     inline def setEntryPoints(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
     ): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
     inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
@@ -390,7 +389,7 @@ object PartialTypeDocOptions {
     inline def setEntryPointsVarargs(value: String*): Self = StObject.set(x, "entryPoints", js.Array(value*))
     
     inline def setExclude(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
     ): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     inline def setExcludeExternals(
@@ -424,19 +423,19 @@ object PartialTypeDocOptions {
     inline def setExcludeProtectedUndefined: Self = StObject.set(x, "excludeProtected", js.undefined)
     
     inline def setExcludeTags(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
     ): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
     
     inline def setExcludeTagsUndefined: Self = StObject.set(x, "excludeTags", js.undefined)
     
-    inline def setExcludeTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "excludeTags", js.Array(value*))
+    inline def setExcludeTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "excludeTags", js.Array(value*))
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
     inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setExternalPattern(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
     ): Self = StObject.set(x, "externalPattern", value.asInstanceOf[js.Any])
     
     inline def setExternalPatternUndefined: Self = StObject.set(x, "externalPattern", js.undefined)
@@ -504,15 +503,15 @@ object PartialTypeDocOptions {
     inline def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
     inline def setInlineTags(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
     ): Self = StObject.set(x, "inlineTags", value.asInstanceOf[js.Any])
     
     inline def setInlineTagsUndefined: Self = StObject.set(x, "inlineTags", js.undefined)
     
-    inline def setInlineTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "inlineTags", js.Array(value*))
+    inline def setInlineTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "inlineTags", js.Array(value*))
     
     inline def setIntentionallyNotExported(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
     ): Self = StObject.set(x, "intentionallyNotExported", value.asInstanceOf[js.Any])
     
     inline def setIntentionallyNotExportedUndefined: Self = StObject.set(x, "intentionallyNotExported", js.undefined)
@@ -558,12 +557,12 @@ object PartialTypeDocOptions {
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     inline def setModifierTags(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
     ): Self = StObject.set(x, "modifierTags", value.asInstanceOf[js.Any])
     
     inline def setModifierTagsUndefined: Self = StObject.set(x, "modifierTags", js.undefined)
     
-    inline def setModifierTagsVarargs(value: `@$LeftcurlybracketstringRightcurlybracket`*): Self = StObject.set(x, "modifierTags", js.Array(value*))
+    inline def setModifierTagsVarargs(value: (/* template literal string: @${string} */ String)*): Self = StObject.set(x, "modifierTags", js.Array(value*))
     
     inline def setName(
       value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | Partial[String] | Boolean | String
@@ -584,7 +583,7 @@ object PartialTypeDocOptions {
     inline def setOutUndefined: Self = StObject.set(x, "out", js.undefined)
     
     inline def setPlugin(
-      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+      value: Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
     ): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)

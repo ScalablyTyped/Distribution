@@ -20,23 +20,6 @@ object mod {
   
   inline def quote(args: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quote")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.shellQuote.shellQuoteStrings.VerticallineVerticalline
-    - typings.shellQuote.shellQuoteStrings.AmpersandAmpersand
-    - typings.shellQuote.shellQuoteStrings.SemicolonSemicolon
-    - typings.shellQuote.shellQuoteStrings.VerticallineAmpersand
-    - typings.shellQuote.shellQuoteStrings.LessthansignLeftparenthesis
-    - typings.shellQuote.shellQuoteStrings.GreaterthansignGreaterthansign
-    - typings.shellQuote.shellQuoteStrings.GreaterthansignAmpersand
-    - typings.shellQuote.shellQuoteStrings.Ampersand
-    - typings.shellQuote.shellQuoteStrings.Semicolon
-    - typings.shellQuote.shellQuoteStrings.Leftparenthesis
-    - typings.shellQuote.shellQuoteStrings.Rightparenthesis
-    - typings.shellQuote.shellQuoteStrings.Verticalline
-    - typings.shellQuote.shellQuoteStrings.Lessthansign
-    - typings.shellQuote.shellQuoteStrings.Greaterthansign
-  */
-  trait ControlOperator extends StObject
   object ControlOperator {
     
     inline def Ampersand: typings.shellQuote.shellQuoteStrings.Ampersand = "&".asInstanceOf[typings.shellQuote.shellQuoteStrings.Ampersand]
@@ -49,13 +32,13 @@ object mod {
     
     inline def GreaterthansignGreaterthansign: typings.shellQuote.shellQuoteStrings.GreaterthansignGreaterthansign = ">>".asInstanceOf[typings.shellQuote.shellQuoteStrings.GreaterthansignGreaterthansign]
     
-    inline def Leftparenthesis: typings.shellQuote.shellQuoteStrings.Leftparenthesis = "(".asInstanceOf[typings.shellQuote.shellQuoteStrings.Leftparenthesis]
+    inline def Leftparenthesis: String = String.asInstanceOf[String]
     
     inline def Lessthansign: typings.shellQuote.shellQuoteStrings.Lessthansign = "<".asInstanceOf[typings.shellQuote.shellQuoteStrings.Lessthansign]
     
-    inline def LessthansignLeftparenthesis: typings.shellQuote.shellQuoteStrings.LessthansignLeftparenthesis = "<(".asInstanceOf[typings.shellQuote.shellQuoteStrings.LessthansignLeftparenthesis]
+    inline def LessthansignLeftparenthesis: String = String.asInstanceOf[String]
     
-    inline def Rightparenthesis: typings.shellQuote.shellQuoteStrings.Rightparenthesis = ")".asInstanceOf[typings.shellQuote.shellQuoteStrings.Rightparenthesis]
+    inline def Rightparenthesis: String = String.asInstanceOf[String]
     
     inline def Semicolon: typings.shellQuote.shellQuoteStrings.Semicolon = ";".asInstanceOf[typings.shellQuote.shellQuoteStrings.Semicolon]
     
@@ -67,6 +50,21 @@ object mod {
     
     inline def VerticallineVerticalline: typings.shellQuote.shellQuoteStrings.VerticallineVerticalline = "||".asInstanceOf[typings.shellQuote.shellQuoteStrings.VerticallineVerticalline]
   }
+  /* Rewritten from type alias, can be one of: 
+    - typings.shellQuote.shellQuoteStrings.VerticallineVerticalline
+    - typings.shellQuote.shellQuoteStrings.AmpersandAmpersand
+    - typings.shellQuote.shellQuoteStrings.SemicolonSemicolon
+    - typings.shellQuote.shellQuoteStrings.VerticallineAmpersand
+    - java.lang.String
+    - typings.shellQuote.shellQuoteStrings.GreaterthansignGreaterthansign
+    - typings.shellQuote.shellQuoteStrings.GreaterthansignAmpersand
+    - typings.shellQuote.shellQuoteStrings.Ampersand
+    - typings.shellQuote.shellQuoteStrings.Semicolon
+    - typings.shellQuote.shellQuoteStrings.Verticalline
+    - typings.shellQuote.shellQuoteStrings.Lessthansign
+    - typings.shellQuote.shellQuoteStrings.Greaterthansign
+  */
+  type ControlOperator = _ControlOperator | String
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -97,6 +95,8 @@ object mod {
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     }
   }
+  
+  trait _ControlOperator extends StObject
   
   trait _ParseEntry extends StObject
   object _ParseEntry {

@@ -187,7 +187,7 @@ trait isOpenbooleanonOpenvoidon extends StObject {
   /**
     * If true, disable all interactions for this component.
     */
-  var disabled: js.UndefOr[Boolean] & (js.UndefOr[Boolean | Null])
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -379,7 +379,7 @@ trait isOpenbooleanonOpenvoidon extends StObject {
     *
     * @platform android
     */
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var transitionDuration: js.UndefOr[Double] = js.undefined
   
@@ -413,12 +413,11 @@ object isOpenbooleanonOpenvoidon {
   
   inline def apply(
     children: js.UndefOr[js.Array[ReactChild]] & js.UndefOr[ReactNode],
-    disabled: js.UndefOr[Boolean] & (js.UndefOr[Boolean | Null]),
     isOpen: Boolean,
     onClose: () => Unit,
     onOpen: () => Unit
   ): isOpenbooleanonOpenvoidon = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen))
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen))
     __obj.asInstanceOf[isOpenbooleanonOpenvoidon]
   }
   
@@ -518,7 +517,7 @@ object isOpenbooleanonOpenvoidon {
     
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
-    inline def setDisabled(value: js.UndefOr[Boolean] & (js.UndefOr[Boolean | Null])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
@@ -531,6 +530,8 @@ object isOpenbooleanonOpenvoidon {
     inline def setDisabledTitleStyleNull: Self = StObject.set(x, "disabledTitleStyle", null)
     
     inline def setDisabledTitleStyleUndefined: Self = StObject.set(x, "disabledTitleStyle", js.undefined)
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     
@@ -707,8 +708,6 @@ object isOpenbooleanonOpenvoidon {
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

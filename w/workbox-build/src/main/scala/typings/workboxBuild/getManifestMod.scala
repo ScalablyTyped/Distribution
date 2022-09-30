@@ -14,7 +14,7 @@ object getManifestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getManifest(config: GetManifestConfig): GetManifestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")(config.asInstanceOf[js.Any]).asInstanceOf[GetManifestResult]
+  inline def getManifest(config: GetManifestConfig): js.Promise[Count] = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Count]]
   
   trait GetManifestConfig extends StObject {
     

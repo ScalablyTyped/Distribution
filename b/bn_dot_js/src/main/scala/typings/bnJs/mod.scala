@@ -5,10 +5,10 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.bnJs.anon.A
 import typings.bnJs.anon.Div
-import typings.bnJs.bnJsNumbers.`-1`
-import typings.bnJs.bnJsNumbers.`0`
-import typings.bnJs.bnJsNumbers.`1`
-import typings.bnJs.bnJsNumbers.`26`
+import typings.bnJs.bnJsInts.`-1`
+import typings.bnJs.bnJsInts.`0`
+import typings.bnJs.bnJsInts.`1`
+import typings.bnJs.bnJsInts.`26`
 import typings.bnJs.bnJsStrings.div
 import typings.bnJs.bnJsStrings.hex
 import typings.node.bufferMod.global.Buffer

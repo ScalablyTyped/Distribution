@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress-axe
 
-Typings are for version 0.8
+Typings are for version 1.0.0
 
 ## Library description:
 Test accessibility with axe-core in Cypress
@@ -10,10 +10,10 @@ Test accessibility with axe-core in Cypress
 | ------------------ | :-------------: |
 | Full name          | cypress-axe |
 | Keywords           | a11y, accessibility, axe, axe-core, cypress |
-| # releases         | 17 |
-| # dependents       | 4 |
-| # downloads        | 2400705 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1044982.0 |
+| # stars            | 484.0 |
 
 ## Links
 - [Homepage](https://github.com/component-driven/cypress-axe)
@@ -24,7 +24,7 @@ Test accessibility with axe-core in Cypress
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,7 @@
 package typings.createXpub
 
-import typings.createXpub.createXpubNumbers.`0x043587CF`
-import typings.createXpub.createXpubNumbers.`0x0488B21E`
+import typings.createXpub.createXpubInts.`0x043587CF`
+import typings.createXpub.createXpubInts.`0x0488B21E`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

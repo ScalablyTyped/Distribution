@@ -30,8 +30,7 @@ trait WebXRControllerPointerSelection
   /* private */ var _generateNewMeshPair: Any = js.native
   
   /**
-    * @param id
-    * @hidden
+    * @internal
     */
   def _getPointerSelectionDisabledByPointerId(id: Double): Boolean = js.native
   
@@ -46,9 +45,7 @@ trait WebXRControllerPointerSelection
   /* private */ var _screenCoordinatesRef: Any = js.native
   
   /**
-    * @param id
-    * @param state
-    * @hidden
+    * @internal
     */
   def _setPointerSelectionDisabledByPointerId(id: Double, state: Boolean): Unit = js.native
   
@@ -106,7 +103,7 @@ trait WebXRControllerPointerSelection
     */
   var laserPointerPickedColor: Color3 = js.native
   
-  /** @hidden */
+  /** @internal */
   def lasterPointerDefaultColor: Color3 = js.native
   
   /**

@@ -1,5 +1,6 @@
 package typings.googleCloudTasks.mod
 
+import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleCloudTasks.anon.CreateNamedRequestqueuePa
 import typings.googleCloudTasks.anon.UpdateNamedRequestqueueEn
 import typings.googleGax.gaxMod.CallOptions
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CloudTasksClient extends StObject {
   
-  var auth: GoogleAuth = js.native
+  var auth: GoogleAuth[JSONClient] = js.native
   
   /**
     * Creates a queue.

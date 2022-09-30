@@ -34,6 +34,6 @@ object IListTopicsResponse {
     
     inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
-    inline def setTopicsVarargs(value: ITopic*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: ITopic*): Self = StObject.set(x, "topics", js.Array(value*))
   }
 }

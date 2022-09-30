@@ -3,7 +3,7 @@ package typings.screeps.global
 import org.scalablytyped.runtime.Shortcut
 import typings.screeps.RoomConstructor
 import typings.screeps.RoomTerrain
-import typings.screeps.screepsNumbers.`0`
+import typings.screeps.screepsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

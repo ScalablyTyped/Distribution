@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "XmlCanonicalizer")
 @js.native
-class XmlCanonicalizer protected ()
+open class XmlCanonicalizer protected ()
   extends typings.xmldsigjs.canonicalizerMod.XmlCanonicalizer {
   def this(withComments: Boolean, excC14N: Boolean) = this()
   def this(withComments: Boolean, excC14N: Boolean, propagatedNamespaces: NamespaceManager) = this()

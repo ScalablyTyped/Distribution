@@ -88,7 +88,7 @@ object mod {
   
   inline def logicalExpr[T](op: LogicalComposition[T], cb: js.Function1[/* repeated */ Any, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalExpr")(op.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def mergeDeep[T](dest: T, src: DeepPartial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(List(dest.asInstanceOf[js.Any]).`++`(src.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def mergeDeep[T](dest: T, src: DeepPartial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(scala.List(dest.asInstanceOf[js.Any]).`++`(src.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   inline def never(message: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("never")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   

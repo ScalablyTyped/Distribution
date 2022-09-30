@@ -1,5 +1,6 @@
 package typings.googleGax.operationsMod.google.protobuf
 
+import typings.long.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ trait IDuration extends StObject {
   var nanos: js.UndefOr[Double | Null] = js.undefined
   
   /** Duration seconds */
-  var seconds: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.undefined
+  var seconds: js.UndefOr[Double | ^ | Null] = js.undefined
 }
 object IDuration {
   
@@ -30,9 +29,7 @@ object IDuration {
     
     inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    inline def setSeconds(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
-    ): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double | ^): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     inline def setSecondsNull: Self = StObject.set(x, "seconds", null)
     

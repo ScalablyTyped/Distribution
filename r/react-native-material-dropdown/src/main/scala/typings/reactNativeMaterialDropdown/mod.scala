@@ -159,10 +159,6 @@ object mod {
     /** Set disabled item color */
     var disabledItemColor: js.UndefOr[String] = js.undefined
     
-    /** Component disabled or not. (default: false) */
-    @JSName("disabled")
-    var disabled_DropDownProps: js.UndefOr[Boolean] = js.undefined
-    
     /** Provide Dropdown margins */
     var dropdownMargins: js.UndefOr[DropDownMargins] = js.undefined
     
@@ -304,13 +300,9 @@ object mod {
       
       inline def setDataVarargs(value: DropDownData*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
       inline def setDisabledItemColor(value: String): Self = StObject.set(x, "disabledItemColor", value.asInstanceOf[js.Any])
       
       inline def setDisabledItemColorUndefined: Self = StObject.set(x, "disabledItemColor", js.undefined)
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDropdownMargins(value: DropDownMargins): Self = StObject.set(x, "dropdownMargins", value.asInstanceOf[js.Any])
       

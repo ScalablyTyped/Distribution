@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/data-grid relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGrid")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DataGrid")
 @js.native
-class DataGrid protected () extends ColumnGrid {
+open class DataGrid protected () extends ColumnGrid {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -38,7 +38,7 @@ class DataGrid protected () extends ColumnGrid {
 }
 object DataGrid {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGrid")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataGrid")
   @js.native
   val ^ : js.Any = js.native
   
@@ -612,13 +612,13 @@ object DataGrid {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): DataGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[DataGrid]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGrid.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataGrid.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGrid.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataGrid.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

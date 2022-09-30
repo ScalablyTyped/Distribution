@@ -2,16 +2,18 @@ package typings.leaflet.mod
 
 import typings.geojson.mod.Feature
 import typings.geojson.mod.FeatureCollection
+import typings.geojson.mod.Geometry
 import typings.geojson.mod.GeometryCollection
 import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.MultiPoint
+import typings.leaflet.leafletBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "LayerGroup")
 @js.native
-class LayerGroup_[P] () extends Layer {
+open class LayerGroup_[P] () extends Layer {
   def this(layers: js.Array[Layer]) = this()
   def this(layers: js.Array[Layer], options: LayerOptions) = this()
   def this(layers: Unit, options: LayerOptions) = this()
@@ -31,10 +33,10 @@ class LayerGroup_[P] () extends Layer {
     * optionally specifying context of the iterator function.
     */
   def eachLayer(fn: js.Function1[/* layer */ Layer, Unit]): this.type = js.native
-  def eachLayer(fn: js.Function1[/* layer */ Layer, Unit], context: js.Any): this.type = js.native
+  def eachLayer(fn: js.Function1[/* layer */ Layer, Unit], context: Any): this.type = js.native
   
   var feature: js.UndefOr[
-    (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection
+    (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry]
   ] = js.native
   
   /**
@@ -61,7 +63,7 @@ class LayerGroup_[P] () extends Layer {
     * Calls methodName on every layer contained in this group, passing any additional parameters.
     * Has no effect if the layers contained do not implement methodName.
     */
-  def invoke(methodName: String, params: js.Any*): this.type = js.native
+  def invoke(methodName: String, params: Any*): this.type = js.native
   
   /**
     * Removes the layer with the given internal ID or the given layer from the group.
@@ -77,5 +79,11 @@ class LayerGroup_[P] () extends Layer {
   /**
     * Returns a GeoJSON representation of the layer group (as a GeoJSON GeometryCollection, GeoJSONFeatureCollection or Multipoint).
     */
-  def toGeoJSON(): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection = js.native
+  def toGeoJSON(): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
+  def toGeoJSON(precision: Double): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
+  @JSName("toGeoJSON")
+  def toGeoJSON_false(precision: `false`): (FeatureCollection[GeometryObject, P]) | (Feature[MultiPoint, P]) | GeometryCollection[Geometry] = js.native
+  
+  def toMultiPoint(): Feature[MultiPoint, P] = js.native
+  def toMultiPoint(precision: Double): Feature[MultiPoint, P] = js.native
 }

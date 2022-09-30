@@ -11,7 +11,7 @@ trait CommentData extends StObject {
     * Gets the email of the comment's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var authorEmail: js.UndefOr[String] = js.undefined
   
@@ -19,7 +19,7 @@ trait CommentData extends StObject {
     * Gets the name of the comment's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var authorName: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ trait CommentData extends StObject {
     * Gets or sets the comment's content as plain text.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var content: js.UndefOr[String] = js.undefined
   
@@ -35,7 +35,7 @@ trait CommentData extends StObject {
     * Gets or sets the comment's content range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var contentRange: js.UndefOr[CommentContentRangeData] = js.undefined
   
@@ -43,15 +43,15 @@ trait CommentData extends StObject {
     * Gets the creation date of the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Gets the ID of the comment. Read-only.
+    * Gets the ID of the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var id: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ trait CommentData extends StObject {
     * Gets the collection of reply objects associated with the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
   
@@ -67,7 +67,7 @@ trait CommentData extends StObject {
     * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var resolved: js.UndefOr[Boolean] = js.undefined
 }

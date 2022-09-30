@@ -1,24 +1,18 @@
 organization := "org.scalablytyped"
 name := "gatsby-telemetry"
-version := "1.5.0-ee826c"
-scalaVersion := "3.0.1"
+version := "3.24.0-1549a8"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20200210Z-ad3420",
-  "org.scalablytyped" %%% "boxen" % "4.2.0-4601ef",
-  "org.scalablytyped" %%% "cli-boxes" % "2.2.1-7b2503",
-  "org.scalablytyped" %%% "configstore" % "4.0-dt-20200515Z-26d958",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20201002Z-4e45b6",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20201111Z-2d5437",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20200921Z-44f8de",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200722Z-162477",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20201002Z-64e6f9",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20201002Z-329d84",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20201117Z-bcf4d7",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "type-fest" % "0.8.1-460399")
+  "org.scalablytyped" %%% "configstore" % "6.0-dt-20220704Z-30516a",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-646db4",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-53b851",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-fb8f3f",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-4e85dc",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-170623",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

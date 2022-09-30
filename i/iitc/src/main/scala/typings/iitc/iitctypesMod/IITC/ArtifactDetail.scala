@@ -8,13 +8,13 @@ trait ArtifactDetail extends StObject {
   
   var displayName: String
   
-  var fragments: js.Array[js.Any]
+  var fragments: js.Array[Any]
   
   var `type`: String
 }
 object ArtifactDetail {
   
-  inline def apply(displayName: String, fragments: js.Array[js.Any], `type`: String): ArtifactDetail = {
+  inline def apply(displayName: String, fragments: js.Array[Any], `type`: String): ArtifactDetail = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactDetail]
@@ -24,9 +24,9 @@ object ArtifactDetail {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    inline def setFragments(value: js.Array[js.Any]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+    inline def setFragments(value: js.Array[Any]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
-    inline def setFragmentsVarargs(value: js.Any*): Self = StObject.set(x, "fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: Any*): Self = StObject.set(x, "fragments", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

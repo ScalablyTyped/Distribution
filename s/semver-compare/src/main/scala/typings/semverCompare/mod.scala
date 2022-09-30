@@ -1,8 +1,8 @@
 package typings.semverCompare
 
-import typings.semverCompare.semverCompareNumbers.`-1`
-import typings.semverCompare.semverCompareNumbers.`0`
-import typings.semverCompare.semverCompareNumbers.`1`
+import typings.semverCompare.semverCompareInts.`-1`
+import typings.semverCompare.semverCompareInts.`0`
+import typings.semverCompare.semverCompareInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xadesjs", "Application")
 @js.native
-class Application ()
+open class Application ()
   extends typings.xmldsigjs.mod.Application
 /* static members */
 object Application {

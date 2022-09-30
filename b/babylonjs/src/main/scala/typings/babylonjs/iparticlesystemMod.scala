@@ -32,6 +32,9 @@ object iparticlesystemMod {
   @js.native
   trait IParticleSystem extends StObject {
     
+    /** @internal */
+    var _wasDispatched: Boolean = js.native
+    
     /**
       * Adds a new alpha remap gradient
       * @param gradient defines the gradient to use (between 0 and 1)
@@ -782,6 +785,11 @@ object iparticlesystemMod {
       * The overall motion speed (0.01 is default update speed, faster updates = faster animation)
       */
     var updateSpeed: Double = js.native
+    
+    /**
+      * Gets or sets a boolean enabling the use of logarithmic depth buffers, which is good for wide depth buffers.
+      */
+    var useLogarithmicDepth: Boolean = js.native
     
     /** Gets or sets a boolean indicating that ramp gradients must be used
       * @see https://doc.babylonjs.com/babylon101/particles#ramp-gradients

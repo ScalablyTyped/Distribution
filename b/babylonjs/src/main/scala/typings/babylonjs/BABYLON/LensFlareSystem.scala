@@ -15,7 +15,7 @@ trait LensFlareSystem extends StObject {
   
   /* private */ var _isEnabled: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _isVisible(): Boolean = js.native
   
   /* private */ var _positionX: Any = js.native
@@ -32,8 +32,7 @@ trait LensFlareSystem extends StObject {
   var borderLimit: Double = js.native
   
   /**
-    * @param globalViewport
-    * @hidden
+    * @internal
     */
   def computeEffectivePosition(globalViewport: Viewport): Boolean = js.native
   
@@ -100,7 +99,7 @@ trait LensFlareSystem extends StObject {
   def rebuild(): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   def render(): Boolean = js.native
   

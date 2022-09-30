@@ -282,7 +282,7 @@ object soundMod {
     var onEndedObservable: Observable[Sound] = js.native
     
     /**
-      * @hidden
+      * @internal
       * Back Compat
       **/
     def onended(): Any = js.native
@@ -418,7 +418,7 @@ object soundMod {
       */
     def switchPanningModelToHRTF(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def updateDistanceFromListener(): Unit = js.native
     
     /**
@@ -453,8 +453,7 @@ object soundMod {
     inline def Parse(parsedSound: Any, scene: Scene, rootUrl: String, sourceSound: Sound): Sound = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSound.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sourceSound.asInstanceOf[js.Any])).asInstanceOf[Sound]
     
     /**
-      * @param _
-      * @hidden
+      * @internal
       */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }

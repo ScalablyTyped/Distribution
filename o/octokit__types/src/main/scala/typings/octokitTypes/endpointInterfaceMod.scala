@@ -32,7 +32,7 @@ object endpointInterfaceMod {
         /* keyof @octokit/types.@octokit/types/dist-types/RequestOptions.RequestOptions */ method | url | headers | body | request
       ]) = js.native
     def apply[R /* <: Route */, P /* <: RequestParameters */](
-      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 693 */ Any) | R,
       parameters: P
     ): (RequestOptions | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & (Pick[
         P, 
@@ -52,12 +52,12 @@ object endpointInterfaceMod {
     def merge(): D & EndpointDefaults = js.native
     def merge[P /* <: RequestParameters */](options: P): EndpointDefaults & D & P = js.native
     def merge[R /* <: Route */, P /* <: RequestParameters */](
-      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R,
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 693 */ Any) | R,
       parameters: P
     ): D & (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & P = js.native
     @JSName("merge")
-    def merge_R_RouteP_RequestParameters[R /* <: Route */, P /* <: RequestParameters */](
-      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 890 */ Any) | R
+    def merge_RP[R /* <: Route */, P /* <: RequestParameters */](
+      route: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 693 */ Any) | R
     ): D & (EndpointDefaults | (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['request'] */ js.Any)) & P = js.native
     
     /**

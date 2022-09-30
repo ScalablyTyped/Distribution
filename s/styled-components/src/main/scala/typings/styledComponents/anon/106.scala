@@ -1,14 +1,14 @@
 package typings.styledComponents.anon
 
 import typings.std.ReturnType
-import typings.styledComponents.nativeDistTypesMod.IStyledComponentFactory
-import typings.styledComponents.nativeDistTypesMod.IStyledNativeComponentFactory
-import typings.styledComponents.nativeDistTypesMod.Interpolation
-import typings.styledComponents.nativeDistTypesMod.StyledNativeOptions
-import typings.styledComponents.nativeDistTypesMod.StyledOptions
-import typings.styledComponents.nativeDistTypesMod.Styles
+import typings.styledComponents.distTypesMod.IStyledComponentFactory
+import typings.styledComponents.distTypesMod.IStyledNativeComponentFactory
+import typings.styledComponents.distTypesMod.Interpolation
+import typings.styledComponents.distTypesMod.StyledNativeOptions
+import typings.styledComponents.distTypesMod.StyledOptions
+import typings.styledComponents.distTypesMod.Styles
+import typings.styledComponents.styledComponentsStrings.`var`
 import typings.styledComponents.styledComponentsStrings.native
-import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,10 +19,10 @@ trait `106`[OuterProps, Environment /* <: web | native */, // used for styled<{}
 OuterStatics] extends StObject {
   
   def apply[Props, Statics](initialStyles: Styles[OuterProps & Props], interpolations: (Interpolation[OuterProps & Props])*): ReturnType[
-    (IStyledNativeComponentFactory[wbr, OuterProps & Props, OuterStatics & Statics]) | (IStyledComponentFactory[wbr, OuterProps & Props, OuterStatics & Statics])
+    (IStyledNativeComponentFactory[`var`, OuterProps & Props, OuterStatics & Statics]) | (IStyledComponentFactory[`var`, OuterProps & Props, OuterStatics & Statics])
   ] = js.native
   
-  def attrs(attrs: typings.styledComponents.nativeDistTypesMod.Attrs[OuterProps]): Any = js.native
+  def attrs(attrs: typings.styledComponents.distTypesMod.Attrs[OuterProps]): Any = js.native
   
   /**
     * If config methods are called, wrap up a new template function and merge options */

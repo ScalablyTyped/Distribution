@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SimpleMenuBar")
 @js.native
-class SimpleMenuBar protected ()
+open class SimpleMenuBar protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SimpleMenuBar {
   def this(
     model: AbstractModel,

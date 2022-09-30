@@ -8,10 +8,10 @@ object storeMod {
   
   @JSImport("gatsby-telemetry/lib/store", "Store")
   @js.native
-  class Store protected () extends StObject {
+  open class Store protected () extends StObject {
     def this(baseDir: String) = this()
     
-    def appendToBuffer(event: js.Any): Unit = js.native
+    def appendToBuffer(event: Any): Unit = js.native
     
     var baseDir: String = js.native
     
@@ -19,8 +19,8 @@ object storeMod {
     
     var eventsJsonFileName: String = js.native
     
-    def flushFile(filePath: String, flushOperation: js.Function): js.Promise[Boolean] = js.native
+    def flushFile(filePath: String, flushOperation: js.Function1[/* contents */ String, js.Promise[Boolean]]): js.Promise[Boolean] = js.native
     
-    def startFlushEvents(flushOperation: js.Function): js.Promise[Boolean] = js.native
+    def startFlushEvents(flushOperation: js.Function1[/* contents */ String, js.Promise[Boolean]]): js.Promise[Boolean] = js.native
   }
 }

@@ -19,9 +19,13 @@ object getosMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Promise[AnyOS] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[AnyOS]]
+  inline def getOS(): js.Promise[AnyOS] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOS")().asInstanceOf[js.Promise[AnyOS]]
   
   inline def isLinuxOS(os: AnyOS): /* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinuxOS")(os.asInstanceOf[js.Any]).asInstanceOf[/* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean]
+  
+  inline def parseLSB(input: String): LinuxOS = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLSB")(input.asInstanceOf[js.Any]).asInstanceOf[LinuxOS]
+  
+  inline def parseOS(input: String): LinuxOS = ^.asInstanceOf[js.Dynamic].applyDynamic("parseOS")(input.asInstanceOf[js.Any]).asInstanceOf[LinuxOS]
   
   /* Rewritten from type alias, can be one of: 
     - typings.mongodbMemoryServerCore.getosMod.OtherOS
@@ -50,6 +54,8 @@ object getosMod {
     
     var dist: String
     
+    var id_like: js.UndefOr[js.Array[String]] = js.undefined
+    
     @JSName("os")
     var os_LinuxOS: linux
     
@@ -69,6 +75,12 @@ object getosMod {
       inline def setCodenameUndefined: Self = StObject.set(x, "codename", js.undefined)
       
       inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
+      
+      inline def setId_like(value: js.Array[String]): Self = StObject.set(x, "id_like", value.asInstanceOf[js.Any])
+      
+      inline def setId_likeUndefined: Self = StObject.set(x, "id_like", js.undefined)
+      
+      inline def setId_likeVarargs(value: String*): Self = StObject.set(x, "id_like", js.Array(value*))
       
       inline def setOs(value: linux): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       

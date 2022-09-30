@@ -115,7 +115,7 @@ object IFileOptions {
     
     inline def setDotgoogleDotapiDotresourceDefinitionUndefined: Self = StObject.set(x, ".google.api.resourceDefinition", js.undefined)
     
-    inline def setDotgoogleDotapiDotresourceDefinitionVarargs(value: IResourceDescriptor*): Self = StObject.set(x, ".google.api.resourceDefinition", js.Array(value :_*))
+    inline def setDotgoogleDotapiDotresourceDefinitionVarargs(value: IResourceDescriptor*): Self = StObject.set(x, ".google.api.resourceDefinition", js.Array(value*))
     
     inline def setGoPackage(value: String): Self = StObject.set(x, "goPackage", value.asInstanceOf[js.Any])
     
@@ -219,6 +219,6 @@ object IFileOptions {
     
     inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value*))
   }
 }

@@ -15,6 +15,7 @@ import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.severityMod.SeverityLevel
 import typings.sentryTypes.transportMod.BaseTransportOptions
 import typings.sentryTypes.transportMod.Transport
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,10 +54,10 @@ object baseclientMod {
       * @param hint
       * @param scope
       */
-    /* protected */ def _captureEvent(event: Event): js.Thenable[js.UndefOr[String]] = js.native
-    /* protected */ def _captureEvent(event: Event, hint: Unit, scope: Scope): js.Thenable[js.UndefOr[String]] = js.native
-    /* protected */ def _captureEvent(event: Event, hint: EventHint): js.Thenable[js.UndefOr[String]] = js.native
-    /* protected */ def _captureEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[js.UndefOr[String]] = js.native
+    /* protected */ def _captureEvent(event: Event): PromiseLike[js.UndefOr[String]] = js.native
+    /* protected */ def _captureEvent(event: Event, hint: Unit, scope: Scope): PromiseLike[js.UndefOr[String]] = js.native
+    /* protected */ def _captureEvent(event: Event, hint: EventHint): PromiseLike[js.UndefOr[String]] = js.native
+    /* protected */ def _captureEvent(event: Event, hint: EventHint, scope: Scope): PromiseLike[js.UndefOr[String]] = js.native
     
     /**
       * Clears outcomes on this client and returns them.
@@ -82,8 +83,8 @@ object baseclientMod {
       * @returns A promise which will resolve to `true` if processing is already done or finishes before the timeout, and
       * `false` otherwise
       */
-    /* protected */ def _isClientDoneProcessing(): js.Thenable[Boolean] = js.native
-    /* protected */ def _isClientDoneProcessing(timeout: Double): js.Thenable[Boolean] = js.native
+    /* protected */ def _isClientDoneProcessing(): PromiseLike[Boolean] = js.native
+    /* protected */ def _isClientDoneProcessing(timeout: Double): PromiseLike[Boolean] = js.native
     
     /** Determines whether this SDK is enabled and a valid Dsn is present. */
     /* protected */ def _isEnabled(): Boolean = js.native
@@ -124,13 +125,13 @@ object baseclientMod {
       * @param scope A scope containing event metadata.
       * @returns A new event with more information.
       */
-    /* protected */ def _prepareEvent(event: Event, hint: EventHint): js.Thenable[Event | Null] = js.native
-    /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event | Null] = js.native
+    /* protected */ def _prepareEvent(event: Event, hint: EventHint): PromiseLike[Event | Null] = js.native
+    /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): PromiseLike[Event | Null] = js.native
     
     /**
       * Occupies the client with processing and event
       */
-    /* protected */ def _process[T](promise: js.Thenable[T]): Unit = js.native
+    /* protected */ def _process[T](promise: PromiseLike[T]): Unit = js.native
     
     /**
       * Processes an event (either error or message) and sends it to Sentry.
@@ -145,8 +146,8 @@ object baseclientMod {
       * @param scope A scope containing event metadata.
       * @returns A SyncPromise that resolves with the event or rejects in case event was/will not be send.
       */
-    /* protected */ def _processEvent(event: Event, hint: EventHint): js.Thenable[Event] = js.native
-    /* protected */ def _processEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event] = js.native
+    /* protected */ def _processEvent(event: Event, hint: EventHint): PromiseLike[Event] = js.native
+    /* protected */ def _processEvent(event: Event, hint: EventHint, scope: Scope): PromiseLike[Event] = js.native
     
     /**
       * @inheritdoc

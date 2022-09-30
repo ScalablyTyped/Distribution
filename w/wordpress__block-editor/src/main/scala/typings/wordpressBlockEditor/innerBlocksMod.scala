@@ -24,10 +24,10 @@ object innerBlocksMod {
       * display a `+` (plus) icon button that, when clicked, displays the block picker menu. No
       * default Block is inserted.
       */
-    @JSImport("@wordpress/block-editor/components/inner-blocks", "default.ButtonBlockerAppender")
+    @JSImport("@wordpress/block-editor/components/inner-blocks", "default.ButtonBlockAppender")
     @js.native
-    def ButtonBlockerAppender: ComponentType[Children] = js.native
-    inline def ButtonBlockerAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ButtonBlockerAppender")(x.asInstanceOf[js.Any])
+    def ButtonBlockAppender: ComponentType[Children] = js.native
+    inline def ButtonBlockAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ButtonBlockAppender")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/block-editor/components/inner-blocks", "default.Content")
     @js.native
@@ -97,7 +97,7 @@ object innerBlocksMod {
         
         inline def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
         
-        inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
+        inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value*))
         
         inline def setRenderAppender(value: ComponentType[js.Object]): Self = StObject.set(x, "renderAppender", value.asInstanceOf[js.Any])
         

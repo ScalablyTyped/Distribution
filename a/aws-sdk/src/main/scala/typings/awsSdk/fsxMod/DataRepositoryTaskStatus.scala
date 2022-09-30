@@ -17,6 +17,11 @@ trait DataRepositoryTaskStatus extends StObject {
   var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The total amount of data, in GiB, released by an Amazon File Cache AUTO_RELEASE_DATA task that automatically releases files from the cache.
+    */
+  var ReleasedCapacity: js.UndefOr[typings.awsSdk.fsxMod.ReleasedCapacity] = js.undefined
+  
+  /**
     * A running total of the number of files that the task has successfully processed.
     */
   var SucceededCount: js.UndefOr[typings.awsSdk.fsxMod.SucceededCount] = js.undefined
@@ -42,6 +47,10 @@ object DataRepositoryTaskStatus {
     inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    
+    inline def setReleasedCapacity(value: ReleasedCapacity): Self = StObject.set(x, "ReleasedCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setReleasedCapacityUndefined: Self = StObject.set(x, "ReleasedCapacity", js.undefined)
     
     inline def setSucceededCount(value: SucceededCount): Self = StObject.set(x, "SucceededCount", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ object equalsMod {
   
   @JSImport("class-validator/types/decorator/common/Equals", "EQUALS")
   @js.native
-  val EQUALS: /* "equals" */ String = js.native
+  val EQUALS__ : /* "equals" */ String = js.native
   
   inline def Equals(comparison: Any): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(comparison.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Equals(comparison: Any, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(comparison.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]

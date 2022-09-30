@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TestIamPermissionsResponse.
   * @param [properties] Properties to set
   */
-class TestIamPermissionsResponse ()
+open class TestIamPermissionsResponse ()
   extends StObject
      with ITestIamPermissionsResponse {
   def this(properties: ITestIamPermissionsResponse) = this()
@@ -29,7 +28,7 @@ class TestIamPermissionsResponse ()
     * Converts this TestIamPermissionsResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object TestIamPermissionsResponse {
   
@@ -46,6 +45,8 @@ object TestIamPermissionsResponse {
   inline def create(): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TestIamPermissionsResponse]
   inline def create(properties: ITestIamPermissionsResponse): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): TestIamPermissionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestIamPermissionsResponse]
   /**
     * Decodes a TestIamPermissionsResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object TestIamPermissionsResponse {
   /* static member */
   inline def decode(reader: Reader): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
   inline def decode(reader: Reader, length: Double): TestIamPermissionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestIamPermissionsResponse]
-  inline def decode(reader: Uint8Array): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
-  inline def decode(reader: Uint8Array, length: Double): TestIamPermissionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestIamPermissionsResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
   /**
     * Decodes a TestIamPermissionsResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object TestIamPermissionsResponse {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
-  inline def decodeDelimited(reader: Uint8Array): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
   
   /**
     * Encodes the specified TestIamPermissionsResponse message. Does not implicitly {@link google.iam.v1.TestIamPermissionsResponse.verify|verify} messages.
@@ -97,7 +96,7 @@ object TestIamPermissionsResponse {
     * @returns TestIamPermissionsResponse
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TestIamPermissionsResponse]
   
   /**
     * Creates a plain object from a TestIamPermissionsResponse message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object TestIamPermissionsResponse {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: TestIamPermissionsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: TestIamPermissionsResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TestIamPermissionsResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: TestIamPermissionsResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TestIamPermissionsResponse message.
@@ -115,5 +114,5 @@ object TestIamPermissionsResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/data-sources relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataSource")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DataSource")
 @js.native
 abstract class DataSource protected () extends Element[IModel] {
   def this(
@@ -34,18 +34,18 @@ abstract class DataSource protected () extends Element[IModel] {
 }
 object DataSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataSource")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataSource")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

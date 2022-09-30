@@ -2,7 +2,6 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0
-import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashdiagnosticSlashrefresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object DiagnosticRefreshRequest {
   
   @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DiagnosticRefreshRequest.method")
   @js.native
-  val method: workspaceSlashdiagnosticSlashrefresh = js.native
+  val method: /* template literal string: workspace/diagnostic/refresh */ String = js.native
   
   @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DiagnosticRefreshRequest.type")
   @js.native

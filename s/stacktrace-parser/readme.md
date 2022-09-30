@@ -10,15 +10,12 @@ Parses every stack trace into a nicely formatted array of hashes.
 | ------------------ | :-------------: |
 | Full name          | stacktrace-parser |
 | Keywords           | errors, stacktrace, parser, exceptions |
-| # releases         | 7 |
-| # dependents       | 167 |
-| # downloads        | 44517405 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7417814.666666667 |
+| # stars            | 83.0 |
 
 ## Links
-- [Homepage](https://github.com/errwischt/stacktrace-parser)
-- [Bugs](http://github.com/errwischt/stacktrace-parser/issues)
-- [Repository](https://github.com/errwischt/stacktrace-parser)
 - [Npm](https://www.npmjs.com/package/stacktrace-parser)
     
 

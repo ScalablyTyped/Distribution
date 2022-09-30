@@ -15,7 +15,7 @@ trait GeoJSONEvent
   @JSName("layer")
   var layer_GeoJSONEvent: Layer
   
-  var properties: js.Any
+  var properties: Any
 }
 object GeoJSONEvent {
   
@@ -23,13 +23,14 @@ object GeoJSONEvent {
     geometryType: String,
     id: String,
     layer: Layer,
-    propagatedFrom: js.Any,
-    properties: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
+    popup: Any,
+    propagatedFrom: Any,
+    properties: Any,
+    sourceTarget: Any,
+    target: Any,
     `type`: String
   ): GeoJSONEvent = {
-    val __obj = js.Dynamic.literal(geometryType = geometryType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(geometryType = geometryType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONEvent]
   }
@@ -42,6 +43,6 @@ object GeoJSONEvent {
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

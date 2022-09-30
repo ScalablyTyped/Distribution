@@ -25,7 +25,7 @@ object connectableMod {
     def connector(): SubjectLike[T]
     
     /**
-      * If true, the resulting observable will reset internal state upon disconnetion
+      * If true, the resulting observable will reset internal state upon disconnection
       * and return to a "cold" state. This allows the resulting observable to be
       * reconnected.
       * If false, upon disconnection, the connecting subject will remain the

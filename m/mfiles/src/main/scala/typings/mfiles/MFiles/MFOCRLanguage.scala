@@ -1,104 +1,104 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`0`
-import typings.mfiles.mfilesNumbers.`10`
-import typings.mfiles.mfilesNumbers.`11`
-import typings.mfiles.mfilesNumbers.`12`
-import typings.mfiles.mfilesNumbers.`13`
-import typings.mfiles.mfilesNumbers.`14`
-import typings.mfiles.mfilesNumbers.`15`
-import typings.mfiles.mfilesNumbers.`16`
-import typings.mfiles.mfilesNumbers.`17`
-import typings.mfiles.mfilesNumbers.`18`
-import typings.mfiles.mfilesNumbers.`19`
-import typings.mfiles.mfilesNumbers.`1`
-import typings.mfiles.mfilesNumbers.`20`
-import typings.mfiles.mfilesNumbers.`21`
-import typings.mfiles.mfilesNumbers.`22`
-import typings.mfiles.mfilesNumbers.`23`
-import typings.mfiles.mfilesNumbers.`24`
-import typings.mfiles.mfilesNumbers.`25`
-import typings.mfiles.mfilesNumbers.`26`
-import typings.mfiles.mfilesNumbers.`27`
-import typings.mfiles.mfilesNumbers.`28`
-import typings.mfiles.mfilesNumbers.`29`
-import typings.mfiles.mfilesNumbers.`2`
-import typings.mfiles.mfilesNumbers.`30`
-import typings.mfiles.mfilesNumbers.`31`
-import typings.mfiles.mfilesNumbers.`32`
-import typings.mfiles.mfilesNumbers.`33`
-import typings.mfiles.mfilesNumbers.`34`
-import typings.mfiles.mfilesNumbers.`35`
-import typings.mfiles.mfilesNumbers.`36`
-import typings.mfiles.mfilesNumbers.`37`
-import typings.mfiles.mfilesNumbers.`38`
-import typings.mfiles.mfilesNumbers.`39`
-import typings.mfiles.mfilesNumbers.`3`
-import typings.mfiles.mfilesNumbers.`40`
-import typings.mfiles.mfilesNumbers.`41`
-import typings.mfiles.mfilesNumbers.`42`
-import typings.mfiles.mfilesNumbers.`43`
-import typings.mfiles.mfilesNumbers.`44`
-import typings.mfiles.mfilesNumbers.`45`
-import typings.mfiles.mfilesNumbers.`46`
-import typings.mfiles.mfilesNumbers.`4`
-import typings.mfiles.mfilesNumbers.`5`
-import typings.mfiles.mfilesNumbers.`6`
-import typings.mfiles.mfilesNumbers.`7`
-import typings.mfiles.mfilesNumbers.`8`
-import typings.mfiles.mfilesNumbers.`9`
+import typings.mfiles.mfilesInts.`0`
+import typings.mfiles.mfilesInts.`10`
+import typings.mfiles.mfilesInts.`11`
+import typings.mfiles.mfilesInts.`12`
+import typings.mfiles.mfilesInts.`13`
+import typings.mfiles.mfilesInts.`14`
+import typings.mfiles.mfilesInts.`15`
+import typings.mfiles.mfilesInts.`16`
+import typings.mfiles.mfilesInts.`17`
+import typings.mfiles.mfilesInts.`18`
+import typings.mfiles.mfilesInts.`19`
+import typings.mfiles.mfilesInts.`1`
+import typings.mfiles.mfilesInts.`20`
+import typings.mfiles.mfilesInts.`21`
+import typings.mfiles.mfilesInts.`22`
+import typings.mfiles.mfilesInts.`23`
+import typings.mfiles.mfilesInts.`24`
+import typings.mfiles.mfilesInts.`25`
+import typings.mfiles.mfilesInts.`26`
+import typings.mfiles.mfilesInts.`27`
+import typings.mfiles.mfilesInts.`28`
+import typings.mfiles.mfilesInts.`29`
+import typings.mfiles.mfilesInts.`2`
+import typings.mfiles.mfilesInts.`30`
+import typings.mfiles.mfilesInts.`31`
+import typings.mfiles.mfilesInts.`32`
+import typings.mfiles.mfilesInts.`33`
+import typings.mfiles.mfilesInts.`34`
+import typings.mfiles.mfilesInts.`35`
+import typings.mfiles.mfilesInts.`36`
+import typings.mfiles.mfilesInts.`37`
+import typings.mfiles.mfilesInts.`38`
+import typings.mfiles.mfilesInts.`39`
+import typings.mfiles.mfilesInts.`3`
+import typings.mfiles.mfilesInts.`40`
+import typings.mfiles.mfilesInts.`41`
+import typings.mfiles.mfilesInts.`42`
+import typings.mfiles.mfilesInts.`43`
+import typings.mfiles.mfilesInts.`44`
+import typings.mfiles.mfilesInts.`45`
+import typings.mfiles.mfilesInts.`46`
+import typings.mfiles.mfilesInts.`4`
+import typings.mfiles.mfilesInts.`5`
+import typings.mfiles.mfilesInts.`6`
+import typings.mfiles.mfilesInts.`7`
+import typings.mfiles.mfilesInts.`8`
+import typings.mfiles.mfilesInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`0`
-  - typings.mfiles.mfilesNumbers.`1`
-  - typings.mfiles.mfilesNumbers.`2`
-  - typings.mfiles.mfilesNumbers.`3`
-  - typings.mfiles.mfilesNumbers.`4`
-  - typings.mfiles.mfilesNumbers.`5`
-  - typings.mfiles.mfilesNumbers.`6`
-  - typings.mfiles.mfilesNumbers.`7`
-  - typings.mfiles.mfilesNumbers.`8`
-  - typings.mfiles.mfilesNumbers.`9`
-  - typings.mfiles.mfilesNumbers.`10`
-  - typings.mfiles.mfilesNumbers.`11`
-  - typings.mfiles.mfilesNumbers.`12`
-  - typings.mfiles.mfilesNumbers.`13`
-  - typings.mfiles.mfilesNumbers.`14`
-  - typings.mfiles.mfilesNumbers.`15`
-  - typings.mfiles.mfilesNumbers.`16`
-  - typings.mfiles.mfilesNumbers.`17`
-  - typings.mfiles.mfilesNumbers.`18`
-  - typings.mfiles.mfilesNumbers.`19`
-  - typings.mfiles.mfilesNumbers.`20`
-  - typings.mfiles.mfilesNumbers.`21`
-  - typings.mfiles.mfilesNumbers.`22`
-  - typings.mfiles.mfilesNumbers.`23`
-  - typings.mfiles.mfilesNumbers.`24`
-  - typings.mfiles.mfilesNumbers.`25`
-  - typings.mfiles.mfilesNumbers.`26`
-  - typings.mfiles.mfilesNumbers.`27`
-  - typings.mfiles.mfilesNumbers.`28`
-  - typings.mfiles.mfilesNumbers.`29`
-  - typings.mfiles.mfilesNumbers.`30`
-  - typings.mfiles.mfilesNumbers.`31`
-  - typings.mfiles.mfilesNumbers.`32`
-  - typings.mfiles.mfilesNumbers.`33`
-  - typings.mfiles.mfilesNumbers.`34`
-  - typings.mfiles.mfilesNumbers.`35`
-  - typings.mfiles.mfilesNumbers.`36`
-  - typings.mfiles.mfilesNumbers.`37`
-  - typings.mfiles.mfilesNumbers.`38`
-  - typings.mfiles.mfilesNumbers.`39`
-  - typings.mfiles.mfilesNumbers.`40`
-  - typings.mfiles.mfilesNumbers.`41`
-  - typings.mfiles.mfilesNumbers.`42`
-  - typings.mfiles.mfilesNumbers.`43`
-  - typings.mfiles.mfilesNumbers.`44`
-  - typings.mfiles.mfilesNumbers.`45`
-  - typings.mfiles.mfilesNumbers.`46`
+  - typings.mfiles.mfilesInts.`0`
+  - typings.mfiles.mfilesInts.`1`
+  - typings.mfiles.mfilesInts.`2`
+  - typings.mfiles.mfilesInts.`3`
+  - typings.mfiles.mfilesInts.`4`
+  - typings.mfiles.mfilesInts.`5`
+  - typings.mfiles.mfilesInts.`6`
+  - typings.mfiles.mfilesInts.`7`
+  - typings.mfiles.mfilesInts.`8`
+  - typings.mfiles.mfilesInts.`9`
+  - typings.mfiles.mfilesInts.`10`
+  - typings.mfiles.mfilesInts.`11`
+  - typings.mfiles.mfilesInts.`12`
+  - typings.mfiles.mfilesInts.`13`
+  - typings.mfiles.mfilesInts.`14`
+  - typings.mfiles.mfilesInts.`15`
+  - typings.mfiles.mfilesInts.`16`
+  - typings.mfiles.mfilesInts.`17`
+  - typings.mfiles.mfilesInts.`18`
+  - typings.mfiles.mfilesInts.`19`
+  - typings.mfiles.mfilesInts.`20`
+  - typings.mfiles.mfilesInts.`21`
+  - typings.mfiles.mfilesInts.`22`
+  - typings.mfiles.mfilesInts.`23`
+  - typings.mfiles.mfilesInts.`24`
+  - typings.mfiles.mfilesInts.`25`
+  - typings.mfiles.mfilesInts.`26`
+  - typings.mfiles.mfilesInts.`27`
+  - typings.mfiles.mfilesInts.`28`
+  - typings.mfiles.mfilesInts.`29`
+  - typings.mfiles.mfilesInts.`30`
+  - typings.mfiles.mfilesInts.`31`
+  - typings.mfiles.mfilesInts.`32`
+  - typings.mfiles.mfilesInts.`33`
+  - typings.mfiles.mfilesInts.`34`
+  - typings.mfiles.mfilesInts.`35`
+  - typings.mfiles.mfilesInts.`36`
+  - typings.mfiles.mfilesInts.`37`
+  - typings.mfiles.mfilesInts.`38`
+  - typings.mfiles.mfilesInts.`39`
+  - typings.mfiles.mfilesInts.`40`
+  - typings.mfiles.mfilesInts.`41`
+  - typings.mfiles.mfilesInts.`42`
+  - typings.mfiles.mfilesInts.`43`
+  - typings.mfiles.mfilesInts.`44`
+  - typings.mfiles.mfilesInts.`45`
+  - typings.mfiles.mfilesInts.`46`
 */
 trait MFOCRLanguage extends StObject
 object MFOCRLanguage {

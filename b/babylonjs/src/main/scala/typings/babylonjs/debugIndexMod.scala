@@ -342,7 +342,7 @@ object debugIndexMod {
     trait Scene extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing field
         */
       var _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer

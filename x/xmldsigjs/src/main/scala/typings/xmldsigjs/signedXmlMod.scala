@@ -3,12 +3,13 @@ package typings.xmldsigjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Algorithm
 import typings.std.AlgorithmIdentifier
+import typings.std.BufferSource
 import typings.std.CryptoKey
 import typings.std.Document
 import typings.std.EcdsaParams
 import typings.std.Element
+import typings.std.Record
 import typings.std.RsaPssParams
-import typings.std.Uint8Array
 import typings.xmlCore.mod.XmlObject
 import typings.xmlCore.typesMod.AssocArray
 import typings.xmlCore.typesMod.IXmlSerializable
@@ -16,6 +17,7 @@ import typings.xmldsigjs.xmlMod.Reference
 import typings.xmldsigjs.xmlMod.Signature
 import typings.xmldsigjs.xmlMod.Transform
 import typings.xmldsigjs.xmlMod.Transforms
+import typings.xmldsigjs.xmldsigjsStrings.xpath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +39,7 @@ object signedXmlMod {
     *
     * @memberOf SignedXml
     */
-  class SignedXml ()
+  open class SignedXml ()
     extends StObject
        with IXmlSerializable {
     def this(node: Document) = this()
@@ -45,19 +47,18 @@ object signedXmlMod {
     
     var Algorithm: js.UndefOr[typings.std.Algorithm | RsaPssParams | EcdsaParams] = js.native
     
-    /* protected */ def ApplySignOptions(signature: Signature, algorithm: Algorithm, key: CryptoKey): js.Promise[Unit] = js.native
     /* protected */ def ApplySignOptions(signature: Signature, algorithm: Algorithm, key: CryptoKey, options: OptionsSign): js.Promise[Unit] = js.native
     
-    /* protected */ def ApplyTransforms(transforms: Transforms, input: Element): js.Any = js.native
+    /* protected */ def ApplyTransforms(transforms: Transforms, input: Element): Any = js.native
     
     /**
       * Copies namespaces from source element and its parents into destination element
       */
     /* protected */ def CopyNamespaces(src: Element, dst: Element, ignoreDefault: Boolean): Unit = js.native
     
-    /* protected */ def DigestReference(doc: Element, reference: Reference, checkHmac: Boolean): js.Promise[Uint8Array] = js.native
+    /* protected */ def DigestReference(source: DigestReferenceSource, reference: Reference, checkHmac: Boolean): js.Promise[js.typedarray.Uint8Array] = js.native
     
-    /* protected */ def DigestReferences(data: Element): js.Promise[Unit] = js.native
+    /* protected */ def DigestReferences(data: DigestReferenceSource): js.Promise[Unit] = js.native
     
     /**
       * Returns the public key of a signature.
@@ -85,34 +86,52 @@ object signedXmlMod {
     
     var Parent: js.UndefOr[Element | XmlObject] = js.native
     
-    /* protected */ def ResolveTransform(transform: String): Transform = js.native
+    /* protected */ def ResolveTransform(transform: OptionsSignTransform): Transform = js.native
     
     def Sign(algorithm: Algorithm, key: CryptoKey, data: Document): js.Promise[Signature] = js.native
     def Sign(algorithm: Algorithm, key: CryptoKey, data: Document, options: OptionsSign): js.Promise[Signature] = js.native
+    def Sign(algorithm: Algorithm, key: CryptoKey, data: DigestReferenceSource): js.Promise[Signature] = js.native
+    def Sign(algorithm: Algorithm, key: CryptoKey, data: DigestReferenceSource, options: OptionsSign): js.Promise[Signature] = js.native
     def Sign(algorithm: EcdsaParams, key: CryptoKey, data: Document): js.Promise[Signature] = js.native
     def Sign(algorithm: EcdsaParams, key: CryptoKey, data: Document, options: OptionsSign): js.Promise[Signature] = js.native
+    def Sign(algorithm: EcdsaParams, key: CryptoKey, data: DigestReferenceSource): js.Promise[Signature] = js.native
+    def Sign(algorithm: EcdsaParams, key: CryptoKey, data: DigestReferenceSource, options: OptionsSign): js.Promise[Signature] = js.native
     def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document): js.Promise[Signature] = js.native
     def Sign(algorithm: RsaPssParams, key: CryptoKey, data: Document, options: OptionsSign): js.Promise[Signature] = js.native
+    def Sign(algorithm: RsaPssParams, key: CryptoKey, data: DigestReferenceSource): js.Promise[Signature] = js.native
+    def Sign(algorithm: RsaPssParams, key: CryptoKey, data: DigestReferenceSource, options: OptionsSign): js.Promise[Signature] = js.native
     
-    def Signature: Uint8Array | Null = js.native
+    def Signature: js.typedarray.Uint8Array | Null = js.native
     
     /* protected */ def TransformSignedInfo(): String = js.native
+    /* protected */ def TransformSignedInfo(data: BufferSource): String = js.native
     /* protected */ def TransformSignedInfo(data: Document): String = js.native
     /* protected */ def TransformSignedInfo(data: Element): String = js.native
     
-    /* protected */ def ValidateReferences(doc: Element): js.Promise[Boolean] = js.native
+    /* protected */ def ValidateReferences(doc: DigestReferenceSource): js.Promise[Boolean] = js.native
     
     /* protected */ def ValidateSignatureValue(keys: js.Array[CryptoKey]): js.Promise[Boolean] = js.native
     
     def Verify(): js.Promise[Boolean] = js.native
     def Verify(key: CryptoKey): js.Promise[Boolean] = js.native
+    def Verify(params: OptionsVerify): js.Promise[Boolean] = js.native
     
     def XmlSignature: Signature = js.native
+    
+    var contentHandler: js.UndefOr[
+        js.Function2[
+          /* reference */ Reference, 
+          /* target */ this.type, 
+          js.Promise[Document | DigestReferenceSource | Null]
+        ]
+      ] = js.native
     
     /* protected */ var document: js.UndefOr[Document] = js.native
     
     /* protected */ var signature: Signature = js.native
   }
+  
+  type DigestReferenceSource = Element | BufferSource
   
   trait OptionsSign extends StObject {
     
@@ -167,13 +186,13 @@ object signedXmlMod {
       
       inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      inline def setReferencesVarargs(value: OptionsSignReference*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: OptionsSignReference*): Self = StObject.set(x, "references", js.Array(value*))
       
       inline def setX509(value: js.Array[String]): Self = StObject.set(x, "x509", value.asInstanceOf[js.Any])
       
       inline def setX509Undefined: Self = StObject.set(x, "x509", js.undefined)
       
-      inline def setX509Varargs(value: String*): Self = StObject.set(x, "x509", js.Array(value :_*))
+      inline def setX509Varargs(value: String*): Self = StObject.set(x, "x509", js.Array(value*))
     }
   }
   
@@ -181,9 +200,6 @@ object signedXmlMod {
     
     /**
       * Hash algorithm
-      *
-      * @type {AlgorithmIdentifier}
-      * @memberOf OptionsSignReference
       */
     var hash: AlgorithmIdentifier
     
@@ -197,9 +213,6 @@ object signedXmlMod {
     
     /**
       * List of transforms
-      *
-      * @type {OptionsSignTransform[]}
-      * @memberOf OptionsSignReference
       */
     var transforms: js.UndefOr[js.Array[OptionsSignTransform]] = js.undefined
     
@@ -226,7 +239,7 @@ object signedXmlMod {
       
       inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
       
-      inline def setTransformsVarargs(value: OptionsSignTransform*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+      inline def setTransformsVarargs(value: OptionsSignTransform*): Self = StObject.set(x, "transforms", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -245,20 +258,61 @@ object signedXmlMod {
     - typings.xmldsigjs.xmldsigjsStrings.`c14n-com`
     - typings.xmldsigjs.xmldsigjsStrings.`exc-c14n-com`
     - typings.xmldsigjs.xmldsigjsStrings.base64
+    - typings.xmldsigjs.signedXmlMod.OptionsXPathSignTransform
   */
   trait OptionsSignTransform extends StObject
-  object OptionsSignTransform {
+  
+  trait OptionsVerify extends StObject {
     
-    inline def base64: typings.xmldsigjs.xmldsigjsStrings.base64 = "base64".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.base64]
+    var content: js.UndefOr[DigestReferenceSource] = js.undefined
     
-    inline def c14n: typings.xmldsigjs.xmldsigjsStrings.c14n = "c14n".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.c14n]
+    var key: js.UndefOr[CryptoKey] = js.undefined
+  }
+  object OptionsVerify {
     
-    inline def `c14n-com`: typings.xmldsigjs.xmldsigjsStrings.`c14n-com` = "c14n-com".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`c14n-com`]
+    inline def apply(): OptionsVerify = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OptionsVerify]
+    }
     
-    inline def enveloped: typings.xmldsigjs.xmldsigjsStrings.enveloped = "enveloped".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.enveloped]
+    extension [Self <: OptionsVerify](x: Self) {
+      
+      inline def setContent(value: DigestReferenceSource): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setKey(value: CryptoKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
+  trait OptionsXPathSignTransform
+    extends StObject
+       with OptionsSignTransform {
     
-    inline def `exc-c14n`: typings.xmldsigjs.xmldsigjsStrings.`exc-c14n` = "exc-c14n".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`exc-c14n`]
+    var name: xpath
     
-    inline def `exc-c14n-com`: typings.xmldsigjs.xmldsigjsStrings.`exc-c14n-com` = "exc-c14n-com".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`exc-c14n-com`]
+    var namespaces: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var selector: String
+  }
+  object OptionsXPathSignTransform {
+    
+    inline def apply(selector: String): OptionsXPathSignTransform = {
+      val __obj = js.Dynamic.literal(name = "xpath", selector = selector.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionsXPathSignTransform]
+    }
+    
+    extension [Self <: OptionsXPathSignTransform](x: Self) {
+      
+      inline def setName(value: xpath): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNamespaces(value: Record[String, String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+      
+      inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+      
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    }
   }
 }

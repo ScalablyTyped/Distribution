@@ -26,9 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object datasetsMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/datasets", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/datasets", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
@@ -47,9 +47,9 @@ object datasetsMod {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.datasetsMod.datasets.IDataSet because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined parameters */ @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSet")
+    - typings.mendixmodelsdk.datasetsMod.datasets.IDataSet because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined parameters */ @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSet")
     @js.native
-    class DataSet protected () extends Document {
+    open class DataSet protected () extends Document {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -73,7 +73,7 @@ object datasetsMod {
     }
     object DataSet {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSet")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSet")
       @js.native
       val ^ : js.Any = js.native
       
@@ -85,21 +85,21 @@ object datasetsMod {
       inline def createIn(container: IFolderBase): DataSet = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSet]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSet.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSet.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSet.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSet.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetAccess")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetAccess")
     @js.native
-    class DataSetAccess protected () extends Element[IModel] {
+    open class DataSetAccess protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -115,7 +115,7 @@ object datasetsMod {
     }
     object DataSetAccess {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetAccess")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetAccess")
       @js.native
       val ^ : js.Any = js.native
       
@@ -136,21 +136,21 @@ object datasetsMod {
       inline def createIn(container: DataSet): DataSetAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetAccess]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetAccess.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetAccess.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetAccess.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetAccess.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetColumn")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetColumn")
     @js.native
-    class DataSetColumn protected () extends Element[IModel] {
+    open class DataSetColumn protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -181,7 +181,7 @@ object datasetsMod {
     }
     object DataSetColumn {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetColumn")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetColumn")
       @js.native
       val ^ : js.Any = js.native
       
@@ -202,21 +202,21 @@ object datasetsMod {
       inline def createIn(container: JavaDataSetSource): DataSetColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetColumn]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetColumn.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetColumn.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetColumn.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetColumn.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetConstraintAccess")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetConstraintAccess")
     @js.native
-    class DataSetConstraintAccess protected () extends Element[IModel] {
+    open class DataSetConstraintAccess protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -236,7 +236,7 @@ object datasetsMod {
     }
     object DataSetConstraintAccess {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetConstraintAccess")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetConstraintAccess")
       @js.native
       val ^ : js.Any = js.native
       
@@ -257,21 +257,21 @@ object datasetsMod {
       inline def createIn(container: DataSetParameterAccess): DataSetConstraintAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetConstraintAccess]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetConstraintAccess.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetConstraintAccess.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetConstraintAccess.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetConstraintAccess.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetDateTimeConstraint")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetDateTimeConstraint")
     @js.native
-    class DataSetDateTimeConstraint protected () extends DataSetParameterConstraint {
+    open class DataSetDateTimeConstraint protected () extends DataSetParameterConstraint {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -289,7 +289,7 @@ object datasetsMod {
     }
     object DataSetDateTimeConstraint {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetDateTimeConstraint")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetDateTimeConstraint")
       @js.native
       val ^ : js.Any = js.native
       
@@ -310,21 +310,21 @@ object datasetsMod {
       inline def createIn(container: DataSetParameter): DataSetDateTimeConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetDateTimeConstraint]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetDateTimeConstraint.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetDateTimeConstraint.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetDateTimeConstraint.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetDateTimeConstraint.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetModuleRoleAccess")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetModuleRoleAccess")
     @js.native
-    class DataSetModuleRoleAccess protected () extends Element[IModel] {
+    open class DataSetModuleRoleAccess protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -346,7 +346,7 @@ object datasetsMod {
     }
     object DataSetModuleRoleAccess {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetModuleRoleAccess")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetModuleRoleAccess")
       @js.native
       val ^ : js.Any = js.native
       
@@ -367,21 +367,21 @@ object datasetsMod {
       inline def createIn(container: DataSetAccess): DataSetModuleRoleAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetModuleRoleAccess]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetModuleRoleAccess.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetModuleRoleAccess.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetModuleRoleAccess.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetModuleRoleAccess.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetNumericConstraint")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetNumericConstraint")
     @js.native
-    class DataSetNumericConstraint protected () extends DataSetParameterConstraint {
+    open class DataSetNumericConstraint protected () extends DataSetParameterConstraint {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -405,7 +405,7 @@ object datasetsMod {
     }
     object DataSetNumericConstraint {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetNumericConstraint")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetNumericConstraint")
       @js.native
       val ^ : js.Any = js.native
       
@@ -426,21 +426,21 @@ object datasetsMod {
       inline def createIn(container: DataSetParameter): DataSetNumericConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetNumericConstraint]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetNumericConstraint.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetNumericConstraint.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetNumericConstraint.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetNumericConstraint.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetObjectConstraint")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetObjectConstraint")
     @js.native
-    class DataSetObjectConstraint protected () extends DataSetParameterConstraint {
+    open class DataSetObjectConstraint protected () extends DataSetParameterConstraint {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -461,7 +461,7 @@ object datasetsMod {
     }
     object DataSetObjectConstraint {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetObjectConstraint")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetObjectConstraint")
       @js.native
       val ^ : js.Any = js.native
       
@@ -482,13 +482,13 @@ object datasetsMod {
       inline def createIn(container: DataSetParameter): DataSetObjectConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetObjectConstraint]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetObjectConstraint.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetObjectConstraint.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetObjectConstraint.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetObjectConstraint.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -499,9 +499,9 @@ object datasetsMod {
     - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-    - typings.mendixmodelsdk.datasetsMod.datasets.IDataSetParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDataSet, name */ @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameter")
+    - typings.mendixmodelsdk.datasetsMod.datasets.IDataSetParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDataSet, name */ @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameter")
     @js.native
-    class DataSetParameter protected ()
+    open class DataSetParameter protected ()
       extends Element[IModel]
          with IByNameReferrable {
       def this(
@@ -558,7 +558,7 @@ object datasetsMod {
     }
     object DataSetParameter {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameter")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameter")
       @js.native
       val ^ : js.Any = js.native
       
@@ -579,21 +579,21 @@ object datasetsMod {
       inline def createIn(container: DataSet): DataSetParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetParameter]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameter.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameter.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameter.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameter.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterAccess")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterAccess")
     @js.native
-    class DataSetParameterAccess protected () extends Element[IModel] {
+    open class DataSetParameterAccess protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -612,7 +612,7 @@ object datasetsMod {
     }
     object DataSetParameterAccess {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterAccess")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterAccess")
       @js.native
       val ^ : js.Any = js.native
       
@@ -633,19 +633,19 @@ object datasetsMod {
       inline def createIn(container: DataSetModuleRoleAccess): DataSetParameterAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataSetParameterAccess]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterAccess.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterAccess.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterAccess.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterAccess.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterConstraint")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterConstraint")
     @js.native
     abstract class DataSetParameterConstraint protected () extends Element[IModel] {
       def this(
@@ -661,24 +661,24 @@ object datasetsMod {
     }
     object DataSetParameterConstraint {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterConstraint")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterConstraint")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterConstraint.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterConstraint.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetParameterConstraint.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetParameterConstraint.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetSource")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetSource")
     @js.native
     abstract class DataSetSource protected () extends Element[IModel] {
       def this(
@@ -694,122 +694,122 @@ object datasetsMod {
     }
     object DataSetSource {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetSource")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetSource")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetSource.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetSource.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DataSetSource.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DataSetSource.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength")
     @js.native
-    class DateTimeIntervalLength protected () extends AbstractEnum {
+    open class DateTimeIntervalLength protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object DateTimeIntervalLength {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength.Day")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength.Day")
       @js.native
       def Day: DateTimeIntervalLength = js.native
       inline def Day_=(x: DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Day")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength.Month")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength.Month")
       @js.native
       def Month: DateTimeIntervalLength = js.native
       inline def Month_=(x: DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength.Period")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength.Period")
       @js.native
       def Period: DateTimeIntervalLength = js.native
       inline def Period_=(x: DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Period")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength.Quarter")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength.Quarter")
       @js.native
       def Quarter: DateTimeIntervalLength = js.native
       inline def Quarter_=(x: DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quarter")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength.Week")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength.Week")
       @js.native
       def Week: DateTimeIntervalLength = js.native
       inline def Week_=(x: DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalLength.Year")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalLength.Year")
       @js.native
       def Year: DateTimeIntervalLength = js.native
       inline def Year_=(x: DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier")
     @js.native
-    class DateTimeIntervalModifier protected () extends AbstractEnum {
+    open class DateTimeIntervalModifier protected () extends AbstractEnum {
       def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
     }
     object DateTimeIntervalModifier {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier")
       @js.native
       val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier.Always")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier.Always")
       @js.native
       def Always: DateTimeIntervalModifier = js.native
       inline def Always_=(x: DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Always")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier.Future")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier.Future")
       @js.native
       def Future: DateTimeIntervalModifier = js.native
       inline def Future_=(x: DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Future")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier.Last")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier.Last")
       @js.native
       def Last: DateTimeIntervalModifier = js.native
       inline def Last_=(x: DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Last")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier.Next")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier.Next")
       @js.native
       def Next: DateTimeIntervalModifier = js.native
       inline def Next_=(x: DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Next")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier.Past")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier.Past")
       @js.native
       def Past: DateTimeIntervalModifier = js.native
       inline def Past_=(x: DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Past")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.DateTimeIntervalModifier.This")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.DateTimeIntervalModifier.This")
       @js.native
       def This: DateTimeIntervalModifier = js.native
       inline def This_=(x: DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("This")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.JavaDataSetSource")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.JavaDataSetSource")
     @js.native
-    class JavaDataSetSource protected () extends DataSetSource {
+    open class JavaDataSetSource protected () extends DataSetSource {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -822,6 +822,7 @@ object datasetsMod {
       def columns: IList[DataSetColumn] = js.native
       
       /**
+        * In version 9.0.3: deleted
         * In version 8.0.0: introduced
         */
       def useLegacyCodeGeneration: Boolean = js.native
@@ -829,7 +830,7 @@ object datasetsMod {
     }
     object JavaDataSetSource {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.JavaDataSetSource")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.JavaDataSetSource")
       @js.native
       val ^ : js.Any = js.native
       
@@ -850,21 +851,21 @@ object datasetsMod {
       inline def createIn(container: DataSet): JavaDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[JavaDataSetSource]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.JavaDataSetSource.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.JavaDataSetSource.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.JavaDataSetSource.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.JavaDataSetSource.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.OqlDataSetSource")
+    @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.OqlDataSetSource")
     @js.native
-    class OqlDataSetSource protected () extends DataSetSource {
+    open class OqlDataSetSource protected () extends DataSetSource {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -885,7 +886,7 @@ object datasetsMod {
     }
     object OqlDataSetSource {
       
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.OqlDataSetSource")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.OqlDataSetSource")
       @js.native
       val ^ : js.Any = js.native
       
@@ -906,13 +907,13 @@ object datasetsMod {
       inline def createIn(container: DataSet): OqlDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OqlDataSetSource]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.OqlDataSetSource.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.OqlDataSetSource.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/datasets", "datasets.OqlDataSetSource.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/datasets", "datasets.OqlDataSetSource.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

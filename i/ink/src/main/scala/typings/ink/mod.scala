@@ -106,7 +106,7 @@ object mod {
     * determines if this component is focused or not.
     */
   inline def useFocus(): typings.ink.useFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")().asInstanceOf[typings.ink.useFocusMod.Output]
-  inline def useFocus(hasIsActiveAutoFocus: Input): typings.ink.useFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")(hasIsActiveAutoFocus.asInstanceOf[js.Any]).asInstanceOf[typings.ink.useFocusMod.Output]
+  inline def useFocus(hasIsActiveAutoFocusCustomId: Input): typings.ink.useFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")(hasIsActiveAutoFocusCustomId.asInstanceOf[js.Any]).asInstanceOf[typings.ink.useFocusMod.Output]
   
   /**
     * This hook exposes methods to enable or disable focus management for all
@@ -116,7 +116,7 @@ object mod {
   
   /**
     * This hook is used for handling user input.
-    * It's a more convienient alternative to using `StdinContext` and listening to `data` events.
+    * It's a more convenient alternative to using `StdinContext` and listening to `data` events.
     * The callback you pass to `useInput` is called for each character when user enters any input.
     * However, if user pastes text and it's more than one character, the callback will be called only once and the whole string will be passed as `input`.
     *

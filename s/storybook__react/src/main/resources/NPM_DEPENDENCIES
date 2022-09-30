@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/react" : "6.1.2"
+      "@storybook/react" : "6.5.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/react" : "6.1.2"
+      "@storybook/react" : "6.5.12"
     }
   ],
   "compile-devDependencies" : [

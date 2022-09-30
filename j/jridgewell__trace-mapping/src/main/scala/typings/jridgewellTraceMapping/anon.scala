@@ -1,6 +1,6 @@
 package typings.jridgewellTraceMapping
 
-import typings.jridgewellTraceMapping.jridgewellTraceMappingNumbers.`3`
+import typings.jridgewellTraceMapping.jridgewellTraceMappingInts.`3`
 import typings.jridgewellTraceMapping.sourcemapSegmentMod.SourceMapSegment
 import typings.jridgewellTraceMapping.typesMod.EachMapping
 import org.scalablytyped.runtime.StObject

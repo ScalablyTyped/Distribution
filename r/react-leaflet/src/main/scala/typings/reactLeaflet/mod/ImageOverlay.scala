@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "ImageOverlay")
 @js.native
-class ImageOverlay[P /* <: ImageOverlayProps */, E /* <: ImageOverlay_ */] protected () extends MapLayer[P, E] {
+open class ImageOverlay[P /* <: ImageOverlayProps */, E /* <: ImageOverlay_ */] protected () extends MapLayer[P, E] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
 }

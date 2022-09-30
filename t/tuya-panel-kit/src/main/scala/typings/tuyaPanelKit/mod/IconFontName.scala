@@ -6,16 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`0`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`1`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`2`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`3`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`4`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`5`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`6`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`7`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`8`
-  - typings.tuyaPanelKit.tuyaPanelKitNumbers.`9`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`0`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`1`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`2`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`3`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`4`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`5`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`6`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`7`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`8`
+  - typings.tuyaPanelKit.tuyaPanelKitInts.`9`
   - typings.tuyaPanelKit.tuyaPanelKitStrings.power
   - typings.tuyaPanelKit.tuyaPanelKitStrings.arrow
   - typings.tuyaPanelKit.tuyaPanelKitStrings.Plussign
@@ -59,25 +59,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IconFontName extends StObject
 object IconFontName {
   
-  inline def `0`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`0` = 0.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`0`]
+  inline def `0`: typings.tuyaPanelKit.tuyaPanelKitInts.`0` = 0.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`0`]
   
-  inline def `1`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`1` = 1.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`1`]
+  inline def `1`: typings.tuyaPanelKit.tuyaPanelKitInts.`1` = 1.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`1`]
   
-  inline def `2`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`2` = 2.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`2`]
+  inline def `2`: typings.tuyaPanelKit.tuyaPanelKitInts.`2` = 2.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`2`]
   
-  inline def `3`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`3` = 3.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`3`]
+  inline def `3`: typings.tuyaPanelKit.tuyaPanelKitInts.`3` = 3.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`3`]
   
-  inline def `4`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`4` = 4.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`4`]
+  inline def `4`: typings.tuyaPanelKit.tuyaPanelKitInts.`4` = 4.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`4`]
   
-  inline def `5`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`5` = 5.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`5`]
+  inline def `5`: typings.tuyaPanelKit.tuyaPanelKitInts.`5` = 5.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`5`]
   
-  inline def `6`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`6` = 6.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`6`]
+  inline def `6`: typings.tuyaPanelKit.tuyaPanelKitInts.`6` = 6.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`6`]
   
-  inline def `7`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`7` = 7.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`7`]
+  inline def `7`: typings.tuyaPanelKit.tuyaPanelKitInts.`7` = 7.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`7`]
   
-  inline def `8`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`8` = 8.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`8`]
+  inline def `8`: typings.tuyaPanelKit.tuyaPanelKitInts.`8` = 8.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`8`]
   
-  inline def `9`: typings.tuyaPanelKit.tuyaPanelKitNumbers.`9` = 9.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitNumbers.`9`]
+  inline def `9`: typings.tuyaPanelKit.tuyaPanelKitInts.`9` = 9.asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitInts.`9`]
   
   inline def Colon: typings.tuyaPanelKit.tuyaPanelKitStrings.Colon = ":".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.Colon]
   

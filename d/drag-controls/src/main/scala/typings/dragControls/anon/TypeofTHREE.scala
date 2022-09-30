@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.Instantiable8
 import org.scalablytyped.runtime.Instantiable9
-import typings.dragControls.dragControlsNumbers.`1`
-import typings.dragControls.dragControlsNumbers.`2`
-import typings.dragControls.dragControlsNumbers.`4`
+import typings.dragControls.dragControlsInts.`1`
+import typings.dragControls.dragControlsInts.`2`
+import typings.dragControls.dragControlsInts.`4`
 import typings.std.ArrayLike
 import typings.std.AudioNode
 import typings.std.BufferSource

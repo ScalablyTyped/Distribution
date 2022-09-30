@@ -124,7 +124,7 @@ inline def SearchField: ReactForwardRef[HTMLInputElement, SearchFieldProps] = ^.
 
 inline def SegmentedControl: FunctionComponent[SegmentedControlProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SegmentedControl").asInstanceOf[FunctionComponent[SegmentedControlProps]]
 
-inline def SelectList: FunctionComponent[SelectListProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SelectList").asInstanceOf[FunctionComponent[SelectListProps]]
+inline def SelectList: FunctionComponent[SelectListProps] & SelectListSubComponents = ^.asInstanceOf[js.Dynamic].selectDynamic("SelectList").asInstanceOf[FunctionComponent[SelectListProps] & SelectListSubComponents]
 
 inline def Sheet: ReactForwardRef[HTMLDivElement, SheetProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Sheet").asInstanceOf[ReactForwardRef[HTMLDivElement, SheetProps]]
 

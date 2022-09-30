@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dotenv" : "16.0.2"
+      "dotenv" : "16.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "dotenv" : "16.0.2"
+      "dotenv" : "16.0.3"
     }
   ],
   "compile-devDependencies" : [

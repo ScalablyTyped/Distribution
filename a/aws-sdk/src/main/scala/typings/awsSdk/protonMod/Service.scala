@@ -42,7 +42,7 @@ trait Service extends StObject {
   var pipeline: js.UndefOr[ServicePipeline] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the repository connection. For more information, see Set up a repository connection in the Proton Administrator Guide and Setting up with Proton in the Proton User Guide.
+    * The Amazon Resource Name (ARN) of the repository connection. For more information, see Setting up an AWS CodeStar connection in the Proton User Guide.
     */
   var repositoryConnectionArn: js.UndefOr[Arn] = js.undefined
   

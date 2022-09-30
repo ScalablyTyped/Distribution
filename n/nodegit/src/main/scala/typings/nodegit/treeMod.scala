@@ -3,8 +3,8 @@ package typings.nodegit
 import typings.nodegit.anon.EventEmitterstartvoid
 import typings.nodegit.diffMod.Diff
 import typings.nodegit.diffOptionsMod.DiffOptions
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeBuilderMod.Treebuilder
@@ -120,8 +120,8 @@ object treeMod {
     inline def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
     */
     trait WALK_MODE extends StObject
     object WALK_MODE {

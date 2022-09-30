@@ -1,6 +1,5 @@
 package typings.typedoc.schemaMod
 
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +13,13 @@ trait CommentTag
   
   var name: ToSerialized[js.UndefOr[String]]
   
-  var tag: ToSerialized[`@$LeftcurlybracketstringRightcurlybracket`]
+  var tag: ToSerialized[/* template literal string: @${string} */ String]
 }
 object CommentTag {
   
   inline def apply(
     content: js.Array[CommentDisplayPart],
-    tag: ToSerialized[`@$LeftcurlybracketstringRightcurlybracket`]
+    tag: ToSerialized[/* template literal string: @${string} */ String]
   ): CommentTag = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentTag]
@@ -38,7 +37,7 @@ object CommentTag {
     
     inline def setNameVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "name", js.Array(value*))
     
-    inline def setTag(value: ToSerialized[`@$LeftcurlybracketstringRightcurlybracket`]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: ToSerialized[/* template literal string: @${string} */ String]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setTagVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "tag", js.Array(value*))
   }

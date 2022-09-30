@@ -54,9 +54,9 @@ object mod {
   inline def between(fromSize: Double, toSize: Double, minScreen: String, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def between(fromSize: Double, toSize: Double, minScreen: Unit, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def border(sideKeyword: String, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
-  inline def border(sideKeyword: Double, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
-  inline def border(sideKeyword: SideKeyword, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def border(sideKeyword: String, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(scala.List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def border(sideKeyword: Double, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(scala.List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def border(sideKeyword: SideKeyword, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(scala.List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
   
   inline def borderColor(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderColor")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
@@ -92,7 +92,7 @@ object mod {
   inline def desaturate(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def desaturate(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def directionalProperty(property: String, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("directionalProperty")(List(property.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def directionalProperty(property: String, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("directionalProperty")(scala.List(property.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
   
   inline def easeIn(functionName: String): TimingFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("easeIn")(functionName.asInstanceOf[js.Any]).asInstanceOf[TimingFunction]
   
@@ -222,9 +222,9 @@ object mod {
   
   inline def parseToRgb(color: String): RgbColor | RgbaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseToRgb")(color.asInstanceOf[js.Any]).asInstanceOf[RgbColor | RgbaColor]
   
-  inline def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
-  inline def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
-  inline def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(scala.List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(scala.List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(scala.List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
   
   inline def radialGradient(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("radialGradient")(hasColorStopsExtentFallbackPositionShape.asInstanceOf[js.Any]).asInstanceOf[Styles]
   

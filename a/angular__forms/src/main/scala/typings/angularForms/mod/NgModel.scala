@@ -1,17 +1,27 @@
 package typings.angularForms.mod
 
+import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.SimpleChanges
-import typings.angularForms.anon.Name
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularForms.angularFormsBooleans.`false`
+import typings.angularForms.angularFormsStrings.ngModel
+import typings.angularForms.anon.HostOptional
+import typings.angularForms.anon.Model
+import typings.angularForms.anon.Optional
+import typings.angularForms.anon.Self
+import typings.angularForms.anon.Standalone
+import typings.angularForms.anon.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "NgModel")
 @js.native
-class NgModel protected ()
+open class NgModel protected ()
   extends NgControl
      with OnChanges
      with OnDestroy {
@@ -21,33 +31,44 @@ class NgModel protected ()
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
     valueAccessors: js.Array[ControlValueAccessor]
   ) = this()
+  def this(
+    parent: ControlContainer,
+    validators: js.Array[Validator | ValidatorFn],
+    asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
+    valueAccessors: js.Array[ControlValueAccessor],
+    _changeDetectorRef: ChangeDetectorRef
+  ) = this()
   
-  /* private */ var _checkForErrors: js.Any = js.native
+  /* private */ var _changeDetectorRef: Any = js.native
   
-  /* private */ var _checkName: js.Any = js.native
+  /* private */ var _checkForErrors: Any = js.native
   
-  /* private */ var _checkParentType: js.Any = js.native
+  /* private */ var _checkName: Any = js.native
   
-  /* private */ var _isStandalone: js.Any = js.native
+  /* private */ var _checkParentType: Any = js.native
   
-  /* private */ var _setUpControl: js.Any = js.native
+  /* private */ var _getPath: Any = js.native
   
-  /* private */ var _setUpStandalone: js.Any = js.native
+  /* private */ var _isStandalone: Any = js.native
   
-  /* private */ var _setUpdateStrategy: js.Any = js.native
+  /* private */ var _setUpControl: Any = js.native
   
-  /* private */ var _updateDisabled: js.Any = js.native
+  /* private */ var _setUpStandalone: Any = js.native
   
-  /* private */ var _updateValue: js.Any = js.native
+  /* private */ var _setUpdateStrategy: Any = js.native
+  
+  /* private */ var _updateDisabled: Any = js.native
+  
+  /* private */ var _updateValue: Any = js.native
   
   @JSName("control")
-  val control_FNgModel: FormControl = js.native
+  val control_FNgModel: FormControl[Any] = js.native
   
   /**
     * @description
     * The top-level directive for this control if present, otherwise null.
     */
-  def formDirective: js.Any = js.native
+  def formDirective: Any = js.native
   
   /**
     * @description
@@ -59,7 +80,7 @@ class NgModel protected ()
     * @description
     * Tracks the value bound to this directive.
     */
-  var model: js.Any = js.native
+  var model: Any = js.native
   
   /**
     * @description
@@ -102,20 +123,20 @@ class NgModel protected ()
     * Defaults to 'change'. Possible values: `'change'` | `'blur'` | `'submit'`.
     *
     */
-  var options: Name = js.native
+  var options: Standalone = js.native
   
   /**
     * @description
     * Event emitter for producing the `ngModelChange` event after
     * the view model updates.
     */
-  var update: EventEmitter[js.Any] = js.native
+  var update: EventEmitter[Any] = js.native
   
   /**
     * Internal reference to the view model value.
     * @nodoc
     */
-  var viewModel: js.Any = js.native
+  var viewModel: Any = js.native
 }
 /* static members */
 object NgModel {
@@ -129,4 +150,16 @@ object NgModel {
   @js.native
   def ngAcceptInputType_isDisabled: Boolean | String = js.native
   inline def ngAcceptInputType_isDisabled_=(x: Boolean | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngAcceptInputType_isDisabled")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "NgModel.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[NgModel, String, js.Array[ngModel], Model, Update, scala.Nothing, scala.Nothing, `false`] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[NgModel, String, js.Array[ngModel], Model, Update, scala.Nothing, scala.Nothing, `false`]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "NgModel.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[NgModel, js.Tuple5[HostOptional, Self, Self, Self, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgModel, js.Tuple5[HostOptional, Self, Self, Self, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

@@ -9,7 +9,7 @@ import typings.vueRouter.anon.IsExactActive
 import typings.vueRouter.anon.ReadonlyArrayRouteRecordR
 import typings.vueRouter.mod.^
 import typings.vueRouter.vueRouterBooleans.`false`
-import typings.vueRouter.vueRouterNumbers.`2`
+import typings.vueRouter.vueRouterInts.`2`
 import typings.vueRuntimeCore.mod.Component
 import typings.vueRuntimeCore.mod.ComponentOptionsBase
 import typings.vueRuntimeCore.mod.ComponentOptionsMixin

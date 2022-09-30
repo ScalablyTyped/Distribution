@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object exportmappingsMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/exportmappings", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/exportmappings", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
@@ -43,9 +43,9 @@ object exportmappingsMod {
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.mappingsMod.mappings.IMappingDocument because Already inherited
-    - typings.mendixmodelsdk.exportmappingsMod.exportmappings.IExportMapping because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportMapping")
+    - typings.mendixmodelsdk.exportmappingsMod.exportmappings.IExportMapping because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportMapping")
     @js.native
-    class ExportMapping protected () extends MappingDocument {
+    open class ExportMapping protected () extends MappingDocument {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -77,7 +77,7 @@ object exportmappingsMod {
     }
     object ExportMapping {
       
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportMapping")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportMapping")
       @js.native
       val ^ : js.Any = js.native
       
@@ -89,13 +89,13 @@ object exportmappingsMod {
       inline def createIn(container: IFolderBase): ExportMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExportMapping]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportMapping.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportMapping.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportMapping.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportMapping.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -104,9 +104,9 @@ object exportmappingsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/export-mappings relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement")
+    @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportObjectMappingElement")
     @js.native
-    class ExportObjectMappingElement protected () extends ObjectMappingElement {
+    open class ExportObjectMappingElement protected () extends ObjectMappingElement {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -118,7 +118,7 @@ object exportmappingsMod {
     }
     object ExportObjectMappingElement {
       
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportObjectMappingElement")
       @js.native
       val ^ : js.Any = js.native
       
@@ -147,13 +147,13 @@ object exportmappingsMod {
       inline def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): ExportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInObjectMappingElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ExportObjectMappingElement]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportObjectMappingElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportObjectMappingElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -162,9 +162,9 @@ object exportmappingsMod {
     /**
       * See: {@link https://docs.mendix.com/refguide/export-mappings relevant section in reference guide}
       */
-    @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportValueMappingElement")
+    @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportValueMappingElement")
     @js.native
-    class ExportValueMappingElement protected () extends ValueMappingElement {
+    open class ExportValueMappingElement protected () extends ValueMappingElement {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -176,7 +176,7 @@ object exportmappingsMod {
     }
     object ExportValueMappingElement {
       
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportValueMappingElement")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportValueMappingElement")
       @js.native
       val ^ : js.Any = js.native
       
@@ -197,13 +197,13 @@ object exportmappingsMod {
       inline def createIn(container: ObjectMappingElement): ExportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExportValueMappingElement]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportValueMappingElement.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportValueMappingElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportValueMappingElement.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/exportmappings", "exportmappings.ExportValueMappingElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

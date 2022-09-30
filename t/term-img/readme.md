@@ -1,7 +1,7 @@
 
 # Scala.js typings for term-img
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Display images in iTerm
@@ -10,15 +10,12 @@ Display images in iTerm
 | ------------------ | :-------------: |
 | Full name          | term-img |
 | Keywords           | term, image, iterm, iterm2, terminal, shell, console, command-line, img, pic, picture, photo, app, version, ansi, escape, gif, gifs, jpg, jpeg |
-| # releases         | 5 |
-| # dependents       | 173 |
-| # downloads        | 2804104 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 984430.6666666666 |
+| # stars            | 295.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/term-img#readme)
-- [Bugs](https://github.com/sindresorhus/term-img/issues)
-- [Repository](https://github.com/sindresorhus/term-img)
 - [Npm](https://www.npmjs.com/package/term-img)
     
 

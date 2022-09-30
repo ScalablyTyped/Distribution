@@ -10,5 +10,6 @@ object shadowFnFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def shadowFnFactory(elementSelector: js.Any, qsAll: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shadowFnFactory")(elementSelector.asInstanceOf[js.Any], qsAll.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def shadowFnFactory(elementSelector: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shadowFnFactory")(elementSelector.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def shadowFnFactory(elementSelector: String, qsAll: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shadowFnFactory")(elementSelector.asInstanceOf[js.Any], qsAll.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

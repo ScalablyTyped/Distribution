@@ -39,7 +39,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
   @js.native
   trait ThinEngine extends StObject {
     
-    /** @hidden */
+    /** @internal */
     def _cascadeLoadFiles(
       scene: Nullable[Scene],
       onfinish: js.Function1[/* images */ js.Array[js.typedarray.ArrayBuffer], Unit],
@@ -49,7 +49,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
         ]
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _cascadeLoadImgs(
       scene: Nullable[Scene],
       texture: InternalTexture,
@@ -96,38 +96,38 @@ object babylonjsEnginesThinEngineAugmentingMod {
       rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
     ): InternalTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createDepthStencilTexture(
       size: TextureSize,
       options: DepthTextureCreationOptions,
       rtWrapper: typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
     ): InternalTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugFlushPendingCommands(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugInsertMarker(text: String): Unit = js.native
     def _debugInsertMarker(text: String, targetObject: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugPopGroup(): Unit = js.native
     def _debugPopGroup(targetObject: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _debugPushGroup(groupName: String): Unit = js.native
     def _debugPushGroup(groupName: String, targetObject: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _deleteComputePipelineContext(pipelineContext: IComputePipelineContext): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _executeWhenComputeStateIsCompiled(pipelineContext: IComputePipelineContext, action: js.Function0[Unit]): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _partialLoadFile(
       url: String,
       index: Double,
@@ -138,7 +138,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
         ]
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _partialLoadImg(
       url: String,
       index: Double,
@@ -171,7 +171,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       mimeType: String
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _prepareComputePipelineContext(
       pipelineContext: IComputePipelineContext,
       computeSourceCode: String,
@@ -180,7 +180,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       entryPoint: String
     ): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _readTexturePixels(
       texture: InternalTexture,
       width: Double,
@@ -194,7 +194,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       y: js.UndefOr[Double]
     ): js.Promise[js.typedarray.ArrayBufferView] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _readTexturePixelsSync(
       texture: InternalTexture,
       width: Double,
@@ -208,14 +208,14 @@ object babylonjsEnginesThinEngineAugmentingMod {
       y: js.UndefOr[Double]
     ): js.typedarray.ArrayBufferView = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuildComputeEffects(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _releaseComputeEffect(effect: ComputeEffect): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean): Unit = js.native
     def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean, maxLevel: Double): Unit = js.native
@@ -524,7 +524,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       useSRGBBuffer: Boolean
     ): InternalTexture = js.native
     
-    /** @hidden */
+    /** @internal */
     def createCubeTextureBase(
       rootUrl: String,
       scene: Nullable[Scene],

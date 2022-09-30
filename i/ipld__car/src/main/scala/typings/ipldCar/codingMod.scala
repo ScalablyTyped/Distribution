@@ -2,8 +2,8 @@ package typings.ipldCar
 
 import typings.ipldCar.apiMod.Block
 import typings.ipldCar.apiMod.BlockIndex
-import typings.ipldCar.ipldCarNumbers.`1`
-import typings.ipldCar.ipldCarNumbers.`2`
+import typings.ipldCar.ipldCarInts.`1`
+import typings.ipldCar.ipldCarInts.`2`
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterator
 import org.scalablytyped.runtime.StObject

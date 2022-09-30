@@ -2,9 +2,9 @@ package typings.activexLibreoffice.com_.sun.star
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
 import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
@@ -24,9 +24,9 @@ object system {
   object SimpleMailClientFlags {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`0`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1`
     */
     trait Constants extends StObject
     object Constants {
@@ -79,9 +79,9 @@ object system {
   object SystemShellExecuteFlags {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`0`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
     */
     trait Constants extends StObject
     object Constants {

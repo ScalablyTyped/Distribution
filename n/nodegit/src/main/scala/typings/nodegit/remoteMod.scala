@@ -2,10 +2,10 @@ package typings.nodegit
 
 import typings.nodegit.enumsMod.Enums.DIRECTION
 import typings.nodegit.fetchOptionsMod.FetchOptions
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`3`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`3`
 import typings.nodegit.pushOptionsMod.PushOptions
 import typings.nodegit.refSpecMod.Refspec
 import typings.nodegit.remoteCallbacksMod.RemoteCallbacks
@@ -129,10 +129,10 @@ object remoteMod {
     inline def setUrl(repo: Repository, remote: String, url: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrl")(repo.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`3`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`3`
     */
     trait AUTOTAG_OPTION extends StObject
     object AUTOTAG_OPTION {
@@ -147,9 +147,9 @@ object remoteMod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
     */
     trait COMPLETION_TYPE extends StObject
     object COMPLETION_TYPE {

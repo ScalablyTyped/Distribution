@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MasonryProps[T] extends StObject {
   
-  var columnWidth: js.UndefOr[Double] = js.undefined
+  var Item: ComponentType[Data[T]]
   
-  var comp: ComponentType[Data[T]]
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
   var flexible: js.UndefOr[Boolean] = js.undefined
   
@@ -46,8 +46,8 @@ trait MasonryProps[T] extends StObject {
 }
 object MasonryProps {
   
-  inline def apply[T](comp: ComponentType[Data[T]], items: js.Array[T]): MasonryProps[T] = {
-    val __obj = js.Dynamic.literal(comp = comp.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+  inline def apply[T](Item: ComponentType[Data[T]], items: js.Array[T]): MasonryProps[T] = {
+    val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasonryProps[T]]
   }
   
@@ -57,8 +57,6 @@ object MasonryProps {
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    inline def setComp(value: ComponentType[Data[T]]): Self = StObject.set(x, "comp", value.asInstanceOf[js.Any])
-    
     inline def setFlexible(value: Boolean): Self = StObject.set(x, "flexible", value.asInstanceOf[js.Any])
     
     inline def setFlexibleUndefined: Self = StObject.set(x, "flexible", js.undefined)
@@ -66,6 +64,8 @@ object MasonryProps {
     inline def setGutterWidth(value: Double): Self = StObject.set(x, "gutterWidth", value.asInstanceOf[js.Any])
     
     inline def setGutterWidthUndefined: Self = StObject.set(x, "gutterWidth", js.undefined)
+    
+    inline def setItem(value: ComponentType[Data[T]]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

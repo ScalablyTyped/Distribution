@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TestCaseGroup
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -30,6 +30,6 @@ object TestCaseGroup {
     
     inline def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
     
-    inline def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+    inline def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value*))
   }
 }

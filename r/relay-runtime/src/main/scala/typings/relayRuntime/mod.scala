@@ -523,9 +523,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(name: String, messageFormat: String, messageParams: (String | Double | Boolean)*): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((List(name.asInstanceOf[js.Any], messageFormat.asInstanceOf[js.Any])).`++`(messageParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Error]
+    inline def create(name: String, messageFormat: String, messageParams: (String | Double | Boolean)*): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(name.asInstanceOf[js.Any], messageFormat.asInstanceOf[js.Any])).`++`(messageParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Error]
     
-    inline def createWarning(name: String, messageFormat: String, messageParams: (String | Double | Boolean)*): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarning")((List(name.asInstanceOf[js.Any], messageFormat.asInstanceOf[js.Any])).`++`(messageParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Error]
+    inline def createWarning(name: String, messageFormat: String, messageParams: (String | Double | Boolean)*): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarning")((scala.List(name.asInstanceOf[js.Any], messageFormat.asInstanceOf[js.Any])).`++`(messageParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Error]
   }
   
   @JSImport("relay-runtime", "RelayFeatureFlags")
@@ -868,9 +868,9 @@ object mod {
   inline def isScalarAndEqual(valueA: Any, valueB: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isScalarAndEqual")(valueA.asInstanceOf[js.Any], valueB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def readInlineData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode): (KeyTypeData[TKey, Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[(KeyTypeData[TKey, Any]) | Null]
-  inline def readInlineData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): KeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[KeyTypeData[TKey, Any]]
+  inline def readInlineData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (KeyTypeData[TKey, Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[(KeyTypeData[TKey, Any]) | Null]
   
-  inline def readInlineData_TKey_KeyTypeAny_Union[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (KeyTypeData[TKey, Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[(KeyTypeData[TKey, Any]) | Null]
+  inline def readInlineData_TKey_KeyTypeData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): KeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[KeyTypeData[TKey, Any]]
   
   inline def recycleNodesInto[T](prevData: T, nextData: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("recycleNodesInto")(prevData.asInstanceOf[js.Any], nextData.asInstanceOf[js.Any])).asInstanceOf[T]
   

@@ -1,9 +1,10 @@
 package typings.meteor
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.httpMod.IncomingMessage
+import typings.std.HTMLElement
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,114 +15,66 @@ object serverRenderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def onPageLoad[T /* <: Callback */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageLoad")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def onPageLoad[T /* <: typings.meteor.serverRenderMod.Callback */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageLoad")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  type Callback = js.Function1[/* sink */ Sink, js.Promise[js.Any] | js.Any]
+  type Callback = js.Function1[/* sink */ typings.meteor.serverRenderMod.Sink, js.Promise[Any] | Any]
   
-  trait Sink extends StObject {
+  @js.native
+  trait ClientSink
+    extends StObject
+       with typings.meteor.serverRenderMod.Sink {
     
-    var appendToBody: js.UndefOr[js.Function1[/* html */ String, Unit]] = js.undefined
+    def appendToBody(html: typings.meteor.serverRenderMod.Content): Unit = js.native
     
-    var appendToElementById: js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]] = js.undefined
+    def appendToElementById(id: String, html: typings.meteor.serverRenderMod.Content): Unit = js.native
     
-    var appendToHead: js.UndefOr[js.Function1[/* html */ String, Unit]] = js.undefined
+    // Client and server. Only client
+    def appendToHead(html: typings.meteor.serverRenderMod.Content): Unit = js.native
     
-    var arch: js.UndefOr[String] = js.undefined
+    def getCookies(): StringDictionary[String] = js.native
     
-    var body: js.UndefOr[String] = js.undefined
+    def getHeaders(): IncomingHttpHeaders = js.native
     
-    var getCookies: js.UndefOr[js.Function0[StringDictionary[String]]] = js.undefined
+    def redirect(location: String): Unit = js.native
+    def redirect(location: String, code: Double): Unit = js.native
     
-    var getHeaders: js.UndefOr[js.Function0[IncomingHttpHeaders]] = js.undefined
+    def renderIntoElementById(id: String, html: typings.meteor.serverRenderMod.Content): Unit = js.native
     
-    var head: js.UndefOr[String] = js.undefined
+    def setHeader(key: String, value: String): Unit = js.native
+    def setHeader(key: String, value: js.Array[String]): Unit = js.native
+    def setHeader(key: String, value: Double): Unit = js.native
     
-    var htmlById: js.UndefOr[StringDictionary[String]] = js.undefined
-    
-    var maybeMadeChanges: js.UndefOr[Boolean] = js.undefined
-    
-    var redirect: js.UndefOr[js.Function2[/* location */ String, /* code */ js.UndefOr[Double], Unit]] = js.undefined
-    
-    var renderIntoElementById: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) & (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
-    
-    var request: js.UndefOr[IncomingMessage] = js.undefined
-    
-    var setHeader: js.UndefOr[
-        js.Function2[/* key */ String, /* value */ Double | String | js.Array[String], Unit]
-      ] = js.undefined
-    
-    var setStatusCode: js.UndefOr[js.Function1[/* code */ Double, Unit]] = js.undefined
+    // Server-only, but error-raising stubs provided to client:
+    def setStatusCode(code: Double): Unit = js.native
   }
-  object Sink {
+  
+  // NodeJS.ReadableStream only works on server.
+  // HTMLElement only works on client.
+  type Content = String | js.Array[Any] | ReadableStream[Any] | HTMLElement
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.meteor.serverRenderMod.Sink because Already inherited */ @js.native
+  trait ServerSink
+    extends StObject
+       with typings.meteor.serverRenderMod.ClientSink {
     
-    inline def apply(
-      renderIntoElementById: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) & (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
-    ): Sink = {
-      val __obj = js.Dynamic.literal(renderIntoElementById = renderIntoElementById.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Sink]
-    }
+    var arch: String = js.native
     
-    extension [Self <: Sink](x: Self) {
-      
-      inline def setAppendToBody(value: /* html */ String => Unit): Self = StObject.set(x, "appendToBody", js.Any.fromFunction1(value))
-      
-      inline def setAppendToBodyUndefined: Self = StObject.set(x, "appendToBody", js.undefined)
-      
-      inline def setAppendToElementById(value: (/* id */ String, /* html */ String) => Unit): Self = StObject.set(x, "appendToElementById", js.Any.fromFunction2(value))
-      
-      inline def setAppendToElementByIdUndefined: Self = StObject.set(x, "appendToElementById", js.undefined)
-      
-      inline def setAppendToHead(value: /* html */ String => Unit): Self = StObject.set(x, "appendToHead", js.Any.fromFunction1(value))
-      
-      inline def setAppendToHeadUndefined: Self = StObject.set(x, "appendToHead", js.undefined)
-      
-      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
-      
-      inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
-      
-      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
-      
-      inline def setGetCookies(value: () => StringDictionary[String]): Self = StObject.set(x, "getCookies", js.Any.fromFunction0(value))
-      
-      inline def setGetCookiesUndefined: Self = StObject.set(x, "getCookies", js.undefined)
-      
-      inline def setGetHeaders(value: () => IncomingHttpHeaders): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
-      
-      inline def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
-      
-      inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
-      
-      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
-      
-      inline def setHtmlById(value: StringDictionary[String]): Self = StObject.set(x, "htmlById", value.asInstanceOf[js.Any])
-      
-      inline def setHtmlByIdUndefined: Self = StObject.set(x, "htmlById", js.undefined)
-      
-      inline def setMaybeMadeChanges(value: Boolean): Self = StObject.set(x, "maybeMadeChanges", value.asInstanceOf[js.Any])
-      
-      inline def setMaybeMadeChangesUndefined: Self = StObject.set(x, "maybeMadeChanges", js.undefined)
-      
-      inline def setRedirect(value: (/* location */ String, /* code */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "redirect", js.Any.fromFunction2(value))
-      
-      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
-      
-      inline def setRenderIntoElementById(
-        value: (js.UndefOr[js.Function2[/* id */ String, /* html */ String, Unit]]) & (js.UndefOr[js.Function2[/* id */ String, /* html */ ReadableStream, Unit]])
-      ): Self = StObject.set(x, "renderIntoElementById", value.asInstanceOf[js.Any])
-      
-      inline def setRequest(value: IncomingMessage): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
-      
-      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
-      
-      inline def setSetHeader(value: (/* key */ String, /* value */ Double | String | js.Array[String]) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
-      
-      inline def setSetHeaderUndefined: Self = StObject.set(x, "setHeader", js.undefined)
-      
-      inline def setSetStatusCode(value: /* code */ Double => Unit): Self = StObject.set(x, "setStatusCode", js.Any.fromFunction1(value))
-      
-      inline def setSetStatusCodeUndefined: Self = StObject.set(x, "setStatusCode", js.undefined)
-    }
+    var body: String = js.native
+    
+    var head: String = js.native
+    
+    var htmlById: StringDictionary[String] = js.native
+    
+    var maybeMadeChanges: Boolean = js.native
+    
+    // Server-only:
+    var request: IncomingMessage = js.native
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.meteor.serverRenderMod.ClientSink
+    - typings.meteor.serverRenderMod.ServerSink
+  */
+  trait Sink extends StObject
 }

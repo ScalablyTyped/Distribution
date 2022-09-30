@@ -3,6 +3,7 @@ package typings.jasmine.jasmine
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.jasmine.DoneFn
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,7 @@ type ExpectedRecursive[T] = T | ObjectContaining[T] | AsymmetricMatcher[scala.An
 {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]> | jasmine.jasmine.Any}
   */ typings.jasmine.jasmineStrings.ExpectedRecursive & TopLevel[T])
 
-type ImplementationCallback = (js.Function0[js.Thenable[scala.Any] | Unit]) | (js.Function1[/* done */ DoneFn, Unit])
+type ImplementationCallback = (js.Function0[PromiseLike[scala.Any] | Unit]) | (js.Function1[/* done */ DoneFn, Unit])
 
 type MatchableArgs[Fn] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof any ]: jasmine.jasmine.Expected<any[K]>}

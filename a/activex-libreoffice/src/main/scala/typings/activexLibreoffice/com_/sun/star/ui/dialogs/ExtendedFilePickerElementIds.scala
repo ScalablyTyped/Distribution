@@ -1,20 +1,20 @@
 package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`100`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`101`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`102`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`103`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`104`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`105`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`106`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`107`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`108`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`109`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`110`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`207`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`208`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`209`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`210`
+import typings.activexLibreoffice.activexLibreofficeInts.`100`
+import typings.activexLibreoffice.activexLibreofficeInts.`101`
+import typings.activexLibreoffice.activexLibreofficeInts.`102`
+import typings.activexLibreoffice.activexLibreofficeInts.`103`
+import typings.activexLibreoffice.activexLibreofficeInts.`104`
+import typings.activexLibreoffice.activexLibreofficeInts.`105`
+import typings.activexLibreoffice.activexLibreofficeInts.`106`
+import typings.activexLibreoffice.activexLibreofficeInts.`107`
+import typings.activexLibreoffice.activexLibreofficeInts.`108`
+import typings.activexLibreoffice.activexLibreofficeInts.`109`
+import typings.activexLibreoffice.activexLibreofficeInts.`110`
+import typings.activexLibreoffice.activexLibreofficeInts.`207`
+import typings.activexLibreoffice.activexLibreofficeInts.`208`
+import typings.activexLibreoffice.activexLibreofficeInts.`209`
+import typings.activexLibreoffice.activexLibreofficeInts.`210`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +22,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ExtendedFilePickerElementIds {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`100`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`102`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`104`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`101`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`105`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`103`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`110`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`210`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`109`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`209`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`108`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`208`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`107`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`207`
-    - typings.activexLibreoffice.activexLibreofficeNumbers.`106`
+    - typings.activexLibreoffice.activexLibreofficeInts.`100`
+    - typings.activexLibreoffice.activexLibreofficeInts.`102`
+    - typings.activexLibreoffice.activexLibreofficeInts.`104`
+    - typings.activexLibreoffice.activexLibreofficeInts.`101`
+    - typings.activexLibreoffice.activexLibreofficeInts.`105`
+    - typings.activexLibreoffice.activexLibreofficeInts.`103`
+    - typings.activexLibreoffice.activexLibreofficeInts.`110`
+    - typings.activexLibreoffice.activexLibreofficeInts.`210`
+    - typings.activexLibreoffice.activexLibreofficeInts.`109`
+    - typings.activexLibreoffice.activexLibreofficeInts.`209`
+    - typings.activexLibreoffice.activexLibreofficeInts.`108`
+    - typings.activexLibreoffice.activexLibreofficeInts.`208`
+    - typings.activexLibreoffice.activexLibreofficeInts.`107`
+    - typings.activexLibreoffice.activexLibreofficeInts.`207`
+    - typings.activexLibreoffice.activexLibreofficeInts.`106`
   */
   trait Constants extends StObject
   object Constants {

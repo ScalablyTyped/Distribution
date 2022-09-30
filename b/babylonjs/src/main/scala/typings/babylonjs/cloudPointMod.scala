@@ -36,12 +36,12 @@ object cloudPointMod {
     ) = this()
     
     /**
-      * @hidden Particle BoundingInfo object (Internal use)
+      * @internal Particle BoundingInfo object (Internal use)
       */
     var _boundingInfo: BoundingInfo = js.native
     
     /**
-      * @hidden Internal global position in the PCS.
+      * @internal Internal global position in the PCS.
       */
     var _globalPosition: Vector3 = js.native
     
@@ -51,28 +51,28 @@ object cloudPointMod {
     var _group: PointsGroup = js.native
     
     /**
-      * @hidden Index of this particle in the global "indices" array (Internal use)
+      * @internal Index of this particle in the global "indices" array (Internal use)
       */
     var _ind: Double = js.native
     
     /**
-      * @hidden Reference to the PCS that the particle belongs to (Internal use)
+      * @internal Reference to the PCS that the particle belongs to (Internal use)
       */
     var _pcs: PointsCloudSystem = js.native
     
     /**
       * Index of this particle in the global "positions" array (Internal use)
-      * @hidden
+      * @internal
       */
     var _pos: Double = js.native
     
     /**
-      * @hidden Last computed particle rotation matrix
+      * @internal Last computed particle rotation matrix
       */
     var _rotationMatrix: js.Array[Double] = js.native
     
     /**
-      * @hidden Still set as invisible in order to skip useless computations (Internal use)
+      * @internal Still set as invisible in order to skip useless computations (Internal use)
       */
     var _stillInvisible: Boolean = js.native
     
@@ -83,8 +83,7 @@ object cloudPointMod {
     
     /**
       * get the rotation matrix of the particle
-      * @param m
-      * @hidden
+      * @internal
       */
     def getRotationMatrix(m: Matrix): Unit = js.native
     
@@ -180,9 +179,7 @@ object cloudPointMod {
     /**
       * Creates a points group object. This is an internal reference to produce particles for the PCS.
       * PCS internal tool, don't use it manually.
-      * @param id
-      * @param posFunction
-      * @hidden
+      * @internal
       */
     def this(
       id: Double,
@@ -198,31 +195,31 @@ object cloudPointMod {
     
     /**
       * density per facet for surface points
-      * @hidden
+      * @internal
       */
     var _groupDensity: js.Array[Double] = js.native
     
     /**
       * image data for group (internal use)
-      * @hidden
+      * @internal
       */
     var _groupImageData: Nullable[js.typedarray.ArrayBufferView] = js.native
     
     /**
       * Image Height (internal use)
-      * @hidden
+      * @internal
       */
     var _groupImgHeight: Double = js.native
     
     /**
       * Image Width (internal use)
-      * @hidden
+      * @internal
       */
     var _groupImgWidth: Double = js.native
     
     /**
       * Custom position function (internal use)
-      * @hidden
+      * @internal
       */
     var _positionFunction: Nullable[
         js.Function3[
@@ -235,7 +232,7 @@ object cloudPointMod {
     
     /**
       * Only when points are colored by texture carries pointer to texture list array
-      * @hidden
+      * @internal
       */
     var _textureNb: Double = js.native
     
@@ -248,7 +245,7 @@ object cloudPointMod {
     
     /**
       * The group id
-      * @hidden
+      * @internal
       */
     var groupId: Double = js.native
   }

@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/template-grid relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateGrid")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateGrid")
 @js.native
-class TemplateGrid protected ()
+open class TemplateGrid protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.TemplateGrid {
   def this(
     model: AbstractModel,
@@ -33,7 +33,7 @@ class TemplateGrid protected ()
 }
 object TemplateGrid {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateGrid")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateGrid")
   @js.native
   val ^ : js.Any = js.native
   
@@ -607,13 +607,13 @@ object TemplateGrid {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.TemplateGrid]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateGrid.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateGrid.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateGrid.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateGrid.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

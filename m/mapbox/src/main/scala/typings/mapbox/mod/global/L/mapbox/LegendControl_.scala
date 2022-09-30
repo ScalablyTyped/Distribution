@@ -10,28 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /**
     * Adds a legend to the legendControl.
     */
-  def addLegend(legend: String): js.Any
+  def addLegend(legend: String): Any
   
-  def onAdd(map: Map_): js.Any
+  def onAdd(map: Map_): Any
   
   /**
     * Removes a legend from the legendControl.
     */
-  def removeLegend(legend: String): js.Any
+  def removeLegend(legend: String): Any
 }
 object LegendControl_ {
   
-  inline def apply(addLegend: String => js.Any, onAdd: Map_ => js.Any, removeLegend: String => js.Any): LegendControl_ = {
+  inline def apply(addLegend: String => Any, onAdd: Map_ => Any, removeLegend: String => Any): LegendControl_ = {
     val __obj = js.Dynamic.literal(addLegend = js.Any.fromFunction1(addLegend), onAdd = js.Any.fromFunction1(onAdd), removeLegend = js.Any.fromFunction1(removeLegend))
     __obj.asInstanceOf[LegendControl_]
   }
   
   extension [Self <: LegendControl_](x: Self) {
     
-    inline def setAddLegend(value: String => js.Any): Self = StObject.set(x, "addLegend", js.Any.fromFunction1(value))
+    inline def setAddLegend(value: String => Any): Self = StObject.set(x, "addLegend", js.Any.fromFunction1(value))
     
-    inline def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: Map_ => Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    inline def setRemoveLegend(value: String => js.Any): Self = StObject.set(x, "removeLegend", js.Any.fromFunction1(value))
+    inline def setRemoveLegend(value: String => Any): Self = StObject.set(x, "removeLegend", js.Any.fromFunction1(value))
   }
 }

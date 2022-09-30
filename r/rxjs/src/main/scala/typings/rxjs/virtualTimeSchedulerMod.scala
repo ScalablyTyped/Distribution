@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.asyncActionMod.AsyncAction
 import typings.rxjs.asyncSchedulerMod.AsyncScheduler
 import typings.rxjs.internalTypesMod.SchedulerAction
+import typings.rxjs.timerHandleMod.TimerHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,15 +28,15 @@ object virtualTimeSchedulerMod {
     
     /* protected */ var index: Double = js.native
     
-    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler): Any = js.native
-    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: Any): Any = js.native
-    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: Any, delay: Double): Any = js.native
-    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: Unit, delay: Double): Any = js.native
+    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler): js.UndefOr[TimerHandle] = js.native
+    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: Any): js.UndefOr[TimerHandle] = js.native
+    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: Any, delay: Double): js.UndefOr[TimerHandle] = js.native
+    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: Unit, delay: Double): js.UndefOr[TimerHandle] = js.native
     
-    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler): Any = js.native
-    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Any): Any = js.native
-    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Any, delay: Double): Any = js.native
-    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Unit, delay: Double): Any = js.native
+    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler): TimerHandle = js.native
+    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Any): TimerHandle = js.native
+    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Any, delay: Double): TimerHandle = js.native
+    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: Unit, delay: Double): TimerHandle = js.native
     
     /* protected */ @JSName("scheduler")
     var scheduler_VirtualAction: VirtualTimeScheduler = js.native
@@ -94,7 +95,7 @@ object virtualTimeSchedulerMod {
     def flush(): Unit = js.native
     
     /**
-      * The current frame for the state of the virtual scheduler instance. The the difference
+      * The current frame for the state of the virtual scheduler instance. The difference
       * between two "frames" is synonymous with the passage of "virtual time units". So if
       * you record `scheduler.frame` to be `1`, then later, observe `scheduler.frame` to be at `11`,
       * that means `10` virtual time units have passed.

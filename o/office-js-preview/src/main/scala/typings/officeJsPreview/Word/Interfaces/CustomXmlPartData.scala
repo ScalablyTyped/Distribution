@@ -8,20 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomXmlPartData extends StObject {
   
   /**
-    * Gets the ID of the custom XML part. Read only.
+    * Gets the ID of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the namespace URI of the custom XML part. Read only.
+    * Gets the namespace URI of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var namespaceUri: js.UndefOr[String] = js.undefined
 }

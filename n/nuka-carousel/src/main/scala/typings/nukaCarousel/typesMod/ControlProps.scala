@@ -1,19 +1,19 @@
 package typings.nukaCarousel.typesMod
 
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.TouchEvent
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined parent std.Pick<nuka-carousel.nuka-carousel/lib/types.InternalCarouselProps, 'cellAlign' | 'cellSpacing' | 'defaultControlsConfig' | 'onUserNavigation' | 'scrollMode' | 'slidesToScroll' | 'slidesToShow' | 'vertical' | 'wrapAround'> */
 trait ControlProps extends StObject {
   
-  /**
-    * When displaying more than one slide, sets which position to anchor the current slide to.
-    */
   var cellAlign: Alignment
   
-  /**
-    * Space between slides, as an integer, but reflected as px
-    */
   var cellSpacing: Double
   
   /**
@@ -21,53 +21,57 @@ trait ControlProps extends StObject {
     */
   var currentSlide: Double
   
-  /**
-    * This prop lets you apply custom classes and styles to the default Next, Previous, and Paging Dots controls
-    */
   var defaultControlsConfig: DefaultControlsConfig
   
   /**
-    * Go to X slide method
-    * @param index Slide's index to go
+    * Go to a specific slide
+    * @param targetIndex Index to go to
     */
-  def goToSlide(index: Double): Unit
+  def goToSlide(targetIndex: Double): Unit
   
   /**
-    * Go to the next slide method
+    * Whether the "next" button should be disabled or not
+    */
+  var nextDisabled: Boolean
+  
+  /**
+    * Go to the next slide
     */
   def nextSlide(): Unit
   
+  var onUserNavigation: js.Function1[
+    /* e */ TouchEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element], 
+    Unit
+  ]
+  
   /**
-    * Go to the previous slide method
+    * The indices for the paging dots
+    */
+  var pagingDotsIndices: js.Array[Double]
+  
+  /**
+    * Whether the "previous" button should be disabled or not
+    */
+  var previousDisabled: Boolean
+  
+  /**
+    * Go to the previous slide
     */
   def previousSlide(): Unit
   
   var scrollMode: ScrollMode
   
   /**
-    * Total amount of slides
+    * Total number of slides
     */
   var slideCount: Double
   
-  /**
-    * Slides to scroll at once
-    */
   var slidesToScroll: Double
   
-  /**
-    * Slides to show at once
-    */
   var slidesToShow: Double
   
-  /**
-    * Enable the slides to transition vertically
-    */
   var vertical: Boolean
   
-  /**
-    * Sets infinite wrapAround mode
-    * @default false
-    */
   var wrapAround: Boolean
 }
 object ControlProps {
@@ -78,7 +82,11 @@ object ControlProps {
     currentSlide: Double,
     defaultControlsConfig: DefaultControlsConfig,
     goToSlide: Double => Unit,
+    nextDisabled: Boolean,
     nextSlide: () => Unit,
+    onUserNavigation: /* e */ TouchEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element] => Unit,
+    pagingDotsIndices: js.Array[Double],
+    previousDisabled: Boolean,
     previousSlide: () => Unit,
     scrollMode: ScrollMode,
     slideCount: Double,
@@ -87,7 +95,7 @@ object ControlProps {
     vertical: Boolean,
     wrapAround: Boolean
   ): ControlProps = {
-    val __obj = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], cellSpacing = cellSpacing.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], defaultControlsConfig = defaultControlsConfig.asInstanceOf[js.Any], goToSlide = js.Any.fromFunction1(goToSlide), nextSlide = js.Any.fromFunction0(nextSlide), previousSlide = js.Any.fromFunction0(previousSlide), scrollMode = scrollMode.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slidesToScroll = slidesToScroll.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cellAlign = cellAlign.asInstanceOf[js.Any], cellSpacing = cellSpacing.asInstanceOf[js.Any], currentSlide = currentSlide.asInstanceOf[js.Any], defaultControlsConfig = defaultControlsConfig.asInstanceOf[js.Any], goToSlide = js.Any.fromFunction1(goToSlide), nextDisabled = nextDisabled.asInstanceOf[js.Any], nextSlide = js.Any.fromFunction0(nextSlide), onUserNavigation = js.Any.fromFunction1(onUserNavigation), pagingDotsIndices = pagingDotsIndices.asInstanceOf[js.Any], previousDisabled = previousDisabled.asInstanceOf[js.Any], previousSlide = js.Any.fromFunction0(previousSlide), scrollMode = scrollMode.asInstanceOf[js.Any], slideCount = slideCount.asInstanceOf[js.Any], slidesToScroll = slidesToScroll.asInstanceOf[js.Any], slidesToShow = slidesToShow.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], wrapAround = wrapAround.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlProps]
   }
   
@@ -103,7 +111,19 @@ object ControlProps {
     
     inline def setGoToSlide(value: Double => Unit): Self = StObject.set(x, "goToSlide", js.Any.fromFunction1(value))
     
+    inline def setNextDisabled(value: Boolean): Self = StObject.set(x, "nextDisabled", value.asInstanceOf[js.Any])
+    
     inline def setNextSlide(value: () => Unit): Self = StObject.set(x, "nextSlide", js.Any.fromFunction0(value))
+    
+    inline def setOnUserNavigation(
+      value: /* e */ TouchEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element] => Unit
+    ): Self = StObject.set(x, "onUserNavigation", js.Any.fromFunction1(value))
+    
+    inline def setPagingDotsIndices(value: js.Array[Double]): Self = StObject.set(x, "pagingDotsIndices", value.asInstanceOf[js.Any])
+    
+    inline def setPagingDotsIndicesVarargs(value: Double*): Self = StObject.set(x, "pagingDotsIndices", js.Array(value*))
+    
+    inline def setPreviousDisabled(value: Boolean): Self = StObject.set(x, "previousDisabled", value.asInstanceOf[js.Any])
     
     inline def setPreviousSlide(value: () => Unit): Self = StObject.set(x, "previousSlide", js.Any.fromFunction0(value))
     

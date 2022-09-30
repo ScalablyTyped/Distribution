@@ -1,9 +1,9 @@
 package typings.jridgewellTraceMapping
 
 import typings.jridgewellTraceMapping.anon.Column
-import typings.jridgewellTraceMapping.jridgewellTraceMappingNumbers.`-1`
-import typings.jridgewellTraceMapping.jridgewellTraceMappingNumbers.`1`
-import typings.jridgewellTraceMapping.jridgewellTraceMappingNumbers.`3`
+import typings.jridgewellTraceMapping.jridgewellTraceMappingInts.`-1`
+import typings.jridgewellTraceMapping.jridgewellTraceMappingInts.`1`
+import typings.jridgewellTraceMapping.jridgewellTraceMappingInts.`3`
 import typings.jridgewellTraceMapping.sourcemapSegmentMod.SourceMapSegment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

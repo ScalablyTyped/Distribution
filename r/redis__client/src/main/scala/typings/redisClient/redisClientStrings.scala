@@ -13,10 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object redisClientStrings {
   
   @js.native
-  sealed trait $LeftcurlybracketnumberRightcurlybracket extends StObject
-  inline def $LeftcurlybracketnumberRightcurlybracket: $LeftcurlybracketnumberRightcurlybracket = "${number}".asInstanceOf[$LeftcurlybracketnumberRightcurlybracket]
-  
-  @js.native
   sealed trait AFTER
     extends StObject
        with LInsertPosition
@@ -69,14 +65,6 @@ object redisClientStrings {
   @js.native
   sealed trait DESC extends StObject
   inline def DESC: DESC = "DESC".asInstanceOf[DESC]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketApostropheiApostrophe Verticalline ApostropheuApostropheRightcurlybracketDollarLeftcurlybracketnumberRightcurlybracket` extends StObject
-  inline def `DollarLeftcurlybracketApostropheiApostrophe Verticalline ApostropheuApostropheRightcurlybracketDollarLeftcurlybracketnumberRightcurlybracket`: `DollarLeftcurlybracketApostropheiApostrophe Verticalline ApostropheuApostropheRightcurlybracketDollarLeftcurlybracketnumberRightcurlybracket` = ("${'i' | 'u'}${number}").asInstanceOf[`DollarLeftcurlybracketApostropheiApostrophe Verticalline ApostropheuApostropheRightcurlybracketDollarLeftcurlybracketnumberRightcurlybracket`]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket: DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket = "${string}:${number}".asInstanceOf[DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketnumberRightcurlybracket]
   
   @js.native
   sealed trait EX extends StObject

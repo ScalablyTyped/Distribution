@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object randomIdMod {
   
-  @JSImport("ow/dist/source/utils/random-id", JSImport.Namespace)
+  @JSImport("ow/dist/utils/random-id", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

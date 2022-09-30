@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CFIPs extends StObject {
   
-  def browse(): ResponseObjectPromise
+  def browse(): js.Promise[js.Object]
 }
 object CFIPs {
   
-  inline def apply(browse: () => ResponseObjectPromise): CFIPs = {
+  inline def apply(browse: () => js.Promise[js.Object]): CFIPs = {
     val __obj = js.Dynamic.literal(browse = js.Any.fromFunction0(browse))
     __obj.asInstanceOf[CFIPs]
   }
   
   extension [Self <: CFIPs](x: Self) {
     
-    inline def setBrowse(value: () => ResponseObjectPromise): Self = StObject.set(x, "browse", js.Any.fromFunction0(value))
+    inline def setBrowse(value: () => js.Promise[js.Object]): Self = StObject.set(x, "browse", js.Any.fromFunction0(value))
   }
 }

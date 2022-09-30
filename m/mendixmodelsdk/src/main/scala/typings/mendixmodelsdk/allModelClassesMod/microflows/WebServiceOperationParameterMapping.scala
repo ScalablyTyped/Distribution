@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 6.3.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping")
 @js.native
 abstract class WebServiceOperationParameterMapping protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.WebServiceOperationParameterMapping {
@@ -28,18 +28,18 @@ abstract class WebServiceOperationParameterMapping protected ()
 }
 object WebServiceOperationParameterMapping {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.WebServiceOperationParameterMapping.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

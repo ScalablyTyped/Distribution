@@ -20,7 +20,7 @@ trait ArrayPattern_
   
   var optional: js.UndefOr[Boolean | Null] = js.undefined
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null] = js.undefined
+  var typeAnnotation: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
   var type_ArrayPattern_ : ArrayPattern
@@ -55,7 +55,7 @@ object ArrayPattern_ {
     
     inline def setType(value: ArrayPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     

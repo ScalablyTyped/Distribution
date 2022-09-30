@@ -1,17 +1,17 @@
 package typings.vscodeJsonrpc.messagesMod
 
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32000`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32001`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32002`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32096`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32097`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32098`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32099`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32600`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32601`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32602`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32603`
-import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`-32700`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32000`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32001`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32002`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32096`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32097`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32098`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32099`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32600`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32601`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32602`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32603`
+import typings.vscodeJsonrpc.vscodeJsonrpcInts.`-32700`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

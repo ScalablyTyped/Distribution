@@ -2,6 +2,7 @@ package typings.xmppEvents
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Error
+import typings.std.PromiseLike
 import typings.xmppEvents.anon.PromisevoidtimeoutTimeout
 import typings.xmppEvents.anon.TypeofEventEmitter
 import org.scalablytyped.runtime.StObject
@@ -24,7 +25,7 @@ object mod {
     def reject(reason: Any): Unit = js.native
     
     def resolve(value: TValue): Unit = js.native
-    def resolve(value: js.Thenable[TValue]): Unit = js.native
+    def resolve(value: PromiseLike[TValue]): Unit = js.native
   }
   
   @JSImport("@xmpp/events", "EventEmitter")
@@ -87,5 +88,5 @@ object mod {
   inline def promise(emitter: typings.xmppEvents.mod.EventEmitter, event: js.Symbol, rejectEvent: Null, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], rejectEvent.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def promise(emitter: typings.xmppEvents.mod.EventEmitter, event: js.Symbol, rejectEvent: Unit, timeout: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], rejectEvent.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
-  inline def timeout[TPromise /* <: js.Thenable[Any] */](promise: TPromise, ms: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def timeout[TPromise /* <: PromiseLike[Any] */](promise: TPromise, ms: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(promise.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 }

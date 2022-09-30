@@ -1,70 +1,175 @@
 package typings.camelcaseKeys
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
+import org.scalablytyped.runtime.TopLevel
+import typings.camelcaseKeys.camelcaseKeysBooleans.`false`
+import typings.camelcaseKeys.camelcaseKeysStrings._empty
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply[T /* <: StringDictionary[js.Any] */](input: T): T = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def apply[T /* <: StringDictionary[js.Any] */](input: T, options: Options): T = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
-  
   @JSImport("camelcase-keys", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[T /* <: (Record[String, Any]) | js.Array[Any] */, OptionsType /* <: Options */](input: T): CamelCaseKeys[
+    T, 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['deep'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['pascalCase'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['exclude'] */ js.Any, 
+      EmptyTuple
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['stopPaths'] */ js.Any, 
+      EmptyTuple
+    ], 
+    _empty
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[CamelCaseKeys[
+    T, 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['deep'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['pascalCase'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['exclude'] */ js.Any, 
+      EmptyTuple
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['stopPaths'] */ js.Any, 
+      EmptyTuple
+    ], 
+    _empty
+  ]]
+  inline def default[T /* <: (Record[String, Any]) | js.Array[Any] */, OptionsType /* <: Options */](input: T, options: OptionsType): CamelCaseKeys[
+    T, 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['deep'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['pascalCase'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['exclude'] */ js.Any, 
+      EmptyTuple
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['stopPaths'] */ js.Any, 
+      EmptyTuple
+    ], 
+    _empty
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CamelCaseKeys[
+    T, 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['deep'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['pascalCase'] */ js.Any, 
+      `false`
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['exclude'] */ js.Any, 
+      EmptyTuple
+    ], 
+    WithDefault[
+      /* import warning: importer.ImportType#apply Failed type conversion: OptionsType['stopPaths'] */ js.Any, 
+      EmptyTuple
+    ], 
+    _empty
+  ]]
+  
+  /**
+  Append a segment to dot-notation path.
+  */
+  type AppendPath[S /* <: String */, Last /* <: String */] = (/* template literal string: ${S}.${Last} */ String) | Last
+  
+  type CamelCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, IsPascalCase /* <: Boolean */, Exclude /* <: js.Array[Any] */, StopPaths /* <: js.Array[String] */, Path /* <: String */] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T as [camelcase-keys.camelcase-keys.IsInclude<Exclude, P>] extends [true]? P : [IsPascalCase] extends [true]? type-fest.type-fest/source/pascal-case.PascalCase<P> : type-fest.type-fest/source/camel-case.CamelCase<P> ]: [camelcase-keys.camelcase-keys.IsInclude<StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>>] extends [true]? T[P] : {} extends camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], false, false, camelcase-keys.camelcase-keys.EmptyTuple, camelcase-keys.camelcase-keys.EmptyTuple, ''>? T[P] : [Deep] extends [true]? camelcase-keys.camelcase-keys.CamelCaseKeys<T[P], Deep, IsPascalCase, Exclude, StopPaths, camelcase-keys.camelcase-keys.AppendPath<Path, P & string>> : T[P]}
+    */ typings.camelcaseKeys.camelcaseKeysStrings.CamelCaseKeys & TopLevel[Any])
+  
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  type EmptyTuple = js.Array[Any]
+  
+  // eslint-disable-line @typescript-eslint/ban-types
+  // TODO: Replace this with https://github.com/sindresorhus/type-fest/blob/main/source/includes.d.ts
+  /**
+  Check if an element is included in a tuple.
+  */
+  /* Rewritten from type alias, can be one of: 
+    - scala.Boolean
+    - typings.camelcaseKeys.camelcaseKeysBooleans.`true`
+    - typings.camelcaseKeys.camelcaseKeysBooleans.`false`
+  */
+  type IsInclude[List /* <: js.Array[Any] */, Target] = (_IsInclude[List, Target]) | Boolean
+  
   trait Options extends StObject {
     
     /**
-    		Recurse nested objects and objects in arrays.
-    		@default false
-    		*/
+    	Recurse nested objects and objects in arrays.
+    	@default false
+    	*/
     val deep: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Exclude keys from being camel-cased.
-    		@default []
-    		*/
-    val exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+    	Exclude keys from being camel-cased.
+    	If this option can be statically determined, it's recommended to add `as const` to it.
+    	@default []
+    	*/
+    val exclude: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     /**
-    		Uppercase the first character as in `bye-bye` → `ByeBye`.
-    		@default false
-    		*/
+    	Uppercase the first character as in `bye-bye` → `ByeBye`.
+    	@default false
+    	*/
     val pascalCase: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Exclude children at the given object paths in dot-notation from being camel-cased. For example, with an object like `{a: {b: '🦄'}}`, the object path to reach the unicorn is `'a.b'`.
-    		@default []
-    		@example
-    		```
-    		camelcaseKeys({
-    			a_b: 1,
-    			a_c: {
-    				c_d: 1,
-    				c_e: {
-    					e_f: 1
-    				}
+    	Exclude children at the given object paths in dot-notation from being camel-cased. For example, with an object like `{a: {b: '🦄'}}`, the object path to reach the unicorn is `'a.b'`.
+    	If this option can be statically determined, it's recommended to add `as const` to it.
+    	@default []
+    	@example
+    	```
+    	import camelcaseKeys from 'camelcase-keys';
+    	camelcaseKeys({
+    		a_b: 1,
+    		a_c: {
+    			c_d: 1,
+    			c_e: {
+    				e_f: 1
     			}
-    		}, {
-    			deep: true,
-    			stopPaths: [
-    				'a_c.c_e'
-    			]
-    		}),
-    		// {
-    		// 	aB: 1,
-    		// 	aC: {
-    		// 		cD: 1,
-    		// 		cE: {
-    		// 			e_f: 1
-    		// 		}
-    		// 	}
-    		// }
-    		```
-    		*/
+    		}
+    	}, {
+    		deep: true,
+    		stopPaths: [
+    			'a_c.c_e'
+    		]
+    	}),
+    	// {
+    	// 	aB: 1,
+    	// 	aC: {
+    	// 		cD: 1,
+    	// 		cE: {
+    	// 			e_f: 1
+    	// 		}
+    	// 	}
+    	// }
+    	```
+    	*/
     val stopPaths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
@@ -80,11 +185,11 @@ object mod {
       
       inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      inline def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setPascalCase(value: Boolean): Self = StObject.set(x, "pascalCase", value.asInstanceOf[js.Any])
       
@@ -94,7 +199,16 @@ object mod {
       
       inline def setStopPathsUndefined: Self = StObject.set(x, "stopPaths", js.undefined)
       
-      inline def setStopPathsVarargs(value: String*): Self = StObject.set(x, "stopPaths", js.Array(value :_*))
+      inline def setStopPathsVarargs(value: String*): Self = StObject.set(x, "stopPaths", js.Array(value*))
     }
   }
+  
+  /**
+  Return a default type if input type is nil.
+  @template T - Input type.
+  @template U - Default type.
+  */
+  type WithDefault[T, U /* <: T */] = T | U
+  
+  trait _IsInclude[List /* <: js.Array[Any] */, Target] extends StObject
 }

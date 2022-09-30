@@ -13,7 +13,6 @@ import typings.typedoc.anon.Name
 import typings.typedoc.anon.PartialArraySortStrategy
 import typings.typedoc.anon.PartialArraykeyofreadonly
 import typings.typedoc.anon.PartialArraystring
-import typings.typedoc.anon.PartialArraystringAt
 import typings.typedoc.anon.PartialManuallyValidatedO
 import typings.typedoc.anon.PartialManuallyValidatedO0
 import typings.typedoc.anon.PartialManuallyValidatedOValidated
@@ -108,7 +107,6 @@ import typings.typedoc.typedocStrings.SomeSignature
 import typings.typedoc.typedocStrings.SomeType
 import typings.typedoc.typedocStrings.SomeValue
 import typings.typedoc.typedocStrings.VariableOrProperty
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import typings.typedoc.typedocStrings.basePath
 import typings.typedoc.typedocStrings.blockTags
 import typings.typedoc.typedocStrings.categorizeByGroup
@@ -197,11 +195,11 @@ object optionsOptionsMod {
   ]]
   
   inline def BindOption_blockTags(name: blockTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -397,11 +395,11 @@ object optionsOptionsMod {
   ]]
   
   inline def BindOption_excludeTags(name: excludeTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -517,11 +515,11 @@ object optionsOptionsMod {
   ]]
   
   inline def BindOption_inlineTags(name: inlineTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -605,11 +603,11 @@ object optionsOptionsMod {
   ]]
   
   inline def BindOption_modifierTags(name: modifierTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -823,11 +821,11 @@ object optionsOptionsMod {
   inline def BindOption_visibilityFilters(name: visibilityFilters): js.Function2[
     /* target */ (Application & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])), 
     /* key */ PropertyKey, 
@@ -835,11 +833,11 @@ object optionsOptionsMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* target */ (Application & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])), 
     /* key */ PropertyKey, 
@@ -1069,7 +1067,7 @@ object optionsOptionsMod {
     @JSName("getValue")
     def getValue_basePath(name: basePath): (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any = js.native
     @JSName("getValue")
-    def getValue_blockTags(name: blockTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any = js.native
+    def getValue_blockTags(name: blockTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any = js.native
     @JSName("getValue")
     def getValue_categorizeByGroup(name: categorizeByGroup): (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any = js.native
     @JSName("getValue")
@@ -1109,7 +1107,7 @@ object optionsOptionsMod {
     @JSName("getValue")
     def getValue_excludeProtected(name: excludeProtected): (/* import warning: importer.ImportType#apply Failed type conversion: boolean[any | undefined] */ js.Any) | Boolean | Any = js.native
     @JSName("getValue")
-    def getValue_excludeTags(name: excludeTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any = js.native
+    def getValue_excludeTags(name: excludeTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any = js.native
     @JSName("getValue")
     def getValue_externalPattern(name: externalPattern): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any = js.native
     @JSName("getValue")
@@ -1133,7 +1131,7 @@ object optionsOptionsMod {
     @JSName("getValue")
     def getValue_includes(name: includes): (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any = js.native
     @JSName("getValue")
-    def getValue_inlineTags(name: inlineTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any = js.native
+    def getValue_inlineTags(name: inlineTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any = js.native
     @JSName("getValue")
     def getValue_intentionallyNotExported(name: intentionallyNotExported): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | js.Array[String] | Any = js.native
     @JSName("getValue")
@@ -1149,7 +1147,7 @@ object optionsOptionsMod {
     @JSName("getValue")
     def getValue_media(name: media): (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any = js.native
     @JSName("getValue")
-    def getValue_modifierTags(name: modifierTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | js.Array[`@$LeftcurlybracketstringRightcurlybracket`] | Any = js.native
+    def getValue_modifierTags(name: modifierTags): (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | (js.Array[/* template literal string: @${string} */ String]) | Any = js.native
     @JSName("getValue")
     def getValue_name(name: name): (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | String | Any = js.native
     @JSName("getValue")
@@ -1247,58 +1245,6 @@ object optionsOptionsMod {
     
     def setValue(name: NeverIfInternal[String], value: NeverIfInternal[Any]): Unit = js.native
     def setValue(name: NeverIfInternal[String], value: NeverIfInternal[Any], configPath: NeverIfInternal[String]): Unit = js.native
-    def setValue(
-      name: blockTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ]
-    ): Unit = js.native
-    def setValue(
-      name: blockTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ],
-      configPath: String
-    ): Unit = js.native
-    def setValue(
-      name: excludeTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ]
-    ): Unit = js.native
-    def setValue(
-      name: excludeTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ],
-      configPath: String
-    ): Unit = js.native
-    def setValue(
-      name: inlineTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ]
-    ): Unit = js.native
-    def setValue(
-      name: inlineTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ],
-      configPath: String
-    ): Unit = js.native
-    def setValue(
-      name: modifierTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ]
-    ): Unit = js.native
-    def setValue(
-      name: modifierTags,
-      value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<'@${string}'>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[`@$LeftcurlybracketstringRightcurlybracket`]
-        ],
-      configPath: String
-    ): Unit = js.native
     @JSName("setValue")
     def setValue_basePath(
       name: basePath,
@@ -1311,6 +1257,21 @@ object optionsOptionsMod {
       name: basePath,
       value: js.UndefOr[
           Any | (/* import warning: importer.ImportType#apply Failed type conversion: string[any | undefined] */ js.Any) | Partial[String] | Boolean | String
+        ],
+      configPath: String
+    ): Unit = js.native
+    @JSName("setValue")
+    def setValue_blockTags(
+      name: blockTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
+        ]
+    ): Unit = js.native
+    @JSName("setValue")
+    def setValue_blockTags(
+      name: blockTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
         ],
       configPath: String
     ): Unit = js.native
@@ -1333,14 +1294,14 @@ object optionsOptionsMod {
     def setValue_categoryOrder(
       name: categoryOrder,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ]
     ): Unit = js.native
     @JSName("setValue")
     def setValue_categoryOrder(
       name: categoryOrder,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ],
       configPath: String
     ): Unit = js.native
@@ -1498,14 +1459,14 @@ object optionsOptionsMod {
     def setValue_entryPoints(
       name: entryPoints,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ]
     ): Unit = js.native
     @JSName("setValue")
     def setValue_entryPoints(
       name: entryPoints,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ],
       configPath: String
     ): Unit = js.native
@@ -1513,14 +1474,14 @@ object optionsOptionsMod {
     def setValue_exclude(
       name: exclude,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ]
     ): Unit = js.native
     @JSName("setValue")
     def setValue_exclude(
       name: exclude,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ],
       configPath: String
     ): Unit = js.native
@@ -1600,17 +1561,32 @@ object optionsOptionsMod {
       configPath: String
     ): Unit = js.native
     @JSName("setValue")
+    def setValue_excludeTags(
+      name: excludeTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
+        ]
+    ): Unit = js.native
+    @JSName("setValue")
+    def setValue_excludeTags(
+      name: excludeTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
+        ],
+      configPath: String
+    ): Unit = js.native
+    @JSName("setValue")
     def setValue_externalPattern(
       name: externalPattern,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ]
     ): Unit = js.native
     @JSName("setValue")
     def setValue_externalPattern(
       name: externalPattern,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ],
       configPath: String
     ): Unit = js.native
@@ -1765,17 +1741,32 @@ object optionsOptionsMod {
       configPath: String
     ): Unit = js.native
     @JSName("setValue")
+    def setValue_inlineTags(
+      name: inlineTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
+        ]
+    ): Unit = js.native
+    @JSName("setValue")
+    def setValue_inlineTags(
+      name: inlineTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
+        ],
+      configPath: String
+    ): Unit = js.native
+    @JSName("setValue")
     def setValue_intentionallyNotExported(
       name: intentionallyNotExported,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ]
     ): Unit = js.native
     @JSName("setValue")
     def setValue_intentionallyNotExported(
       name: intentionallyNotExported,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ],
       configPath: String
     ): Unit = js.native
@@ -1874,6 +1865,21 @@ object optionsOptionsMod {
       configPath: String
     ): Unit = js.native
     @JSName("setValue")
+    def setValue_modifierTags(
+      name: modifierTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
+        ]
+    ): Unit = js.native
+    @JSName("setValue")
+    def setValue_modifierTags(
+      name: modifierTags,
+      value: js.UndefOr[
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array</ * template literal string: @${string} * / string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | (js.Array[/* template literal string: @${string} */ String])
+        ],
+      configPath: String
+    ): Unit = js.native
+    @JSName("setValue")
     def setValue_name(
       name: name,
       value: js.UndefOr[
@@ -1922,14 +1928,14 @@ object optionsOptionsMod {
     def setValue_plugin(
       name: plugin,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ]
     ): Unit = js.native
     @JSName("setValue")
     def setValue_plugin(
       name: plugin,
       value: js.UndefOr[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystringAt | Boolean | js.Array[String]
+          Any | (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string>[any | undefined] */ js.Any) | PartialArraystring | Boolean | js.Array[String]
         ],
       configPath: String
     ): Unit = js.native

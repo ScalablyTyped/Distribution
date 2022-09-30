@@ -15,50 +15,50 @@ object componentInputMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/input/component.input", "WorksInput")
   @js.native
-  class WorksInput protected ()
+  open class WorksInput protected ()
     extends HomeworksManager
        with ControlValueAccessor {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any], changeDectecterRef: ChangeDetectorRef) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any], changeDectecterRef: ChangeDetectorRef) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
     /* private */ @JSName("$input")
-    var $input: js.Any = js.native
+    var $input: Any = js.native
     
-    var block: js.Any = js.native
+    var block: Any = js.native
     
-    /* private */ var changeDectecterRef: js.Any = js.native
+    /* private */ var changeDectecterRef: Any = js.native
     
     var `class`: String = js.native
     
     var color: String = js.native
     
-    var disabled: js.Any = js.native
+    var disabled: Any = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
     var id: String = js.native
     
-    var inputChild: ElementRef[js.Any] = js.native
+    var inputChild: ElementRef[Any] = js.native
     
-    /* private */ var m_block: js.Any = js.native
+    /* private */ var m_block: Any = js.native
     
-    /* private */ var m_color: js.Any = js.native
+    /* private */ var m_color: Any = js.native
     
-    /* private */ var m_disabled: js.Any = js.native
+    /* private */ var m_disabled: Any = js.native
     
-    /* private */ var m_model: js.Any = js.native
+    /* private */ var m_model: Any = js.native
     
-    /* private */ var m_placeholder: js.Any = js.native
+    /* private */ var m_placeholder: Any = js.native
     
-    /* private */ var m_readonly: js.Any = js.native
+    /* private */ var m_readonly: Any = js.native
     
-    /* private */ var m_required: js.Any = js.native
+    /* private */ var m_required: Any = js.native
     
-    /* private */ var m_size: js.Any = js.native
+    /* private */ var m_size: Any = js.native
     
-    var model: js.Any = js.native
+    var model: Any = js.native
     
     var name: String = js.native
     
@@ -72,11 +72,11 @@ object componentInputMod {
     
     var placeholder: String = js.native
     
-    /* private */ var propagateChange: js.Any = js.native
+    /* private */ var propagateChange: Any = js.native
     
-    /* private */ var propagateTouch: js.Any = js.native
+    /* private */ var propagateTouch: Any = js.native
     
-    var readonly: js.Any = js.native
+    var readonly: Any = js.native
     
     /**
       * @description
@@ -112,7 +112,7 @@ object componentInputMod {
       * @param fn The callback function to register
       */
     /* CompleteClass */
-    override def registerOnChange(fn: js.Any): Unit = js.native
+    override def registerOnChange(fn: Any): Unit = js.native
     
     /**
       * @description
@@ -146,11 +146,11 @@ object componentInputMod {
       * @param fn The callback function to register
       */
     /* CompleteClass */
-    override def registerOnTouched(fn: js.Any): Unit = js.native
+    override def registerOnTouched(fn: Any): Unit = js.native
     
     def render(): Unit = js.native
     
-    var required: js.Any = js.native
+    var required: Any = js.native
     
     def setBlock(block: Boolean): Unit = js.native
     
@@ -183,6 +183,6 @@ object componentInputMod {
       * @param obj The new value for the element
       */
     /* CompleteClass */
-    override def writeValue(obj: js.Any): Unit = js.native
+    override def writeValue(obj: Any): Unit = js.native
   }
 }

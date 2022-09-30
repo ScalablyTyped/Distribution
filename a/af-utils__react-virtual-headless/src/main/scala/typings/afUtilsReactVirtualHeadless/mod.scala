@@ -64,21 +64,21 @@ object mod {
   val useVirtualModel: VirtualModelFunction = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`0`
-    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`1`
-    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`2`
-    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`3`
+    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`0`
+    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`1`
+    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`2`
+    - typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`3`
   */
   trait EventType extends StObject
   object EventType {
     
-    inline def `0`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`0` = 0.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`0`]
+    inline def `0`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`0` = 0.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`0`]
     
-    inline def `1`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`1` = 1.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`1`]
+    inline def `1`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`1` = 1.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`1`]
     
-    inline def `2`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`2` = 2.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`2`]
+    inline def `2`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`2` = 2.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`2`]
     
-    inline def `3`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`3` = 3.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessNumbers.`3`]
+    inline def `3`: typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`3` = 3.asInstanceOf[typings.afUtilsReactVirtualHeadless.afUtilsReactVirtualHeadlessInts.`3`]
   }
   
   @js.native

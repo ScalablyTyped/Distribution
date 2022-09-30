@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-mosaic-component" : "3.2.0"
+      "react-mosaic-component" : "5.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-mosaic-component" : "3.2.0"
+      "react-mosaic-component" : "5.3.0"
     }
   ],
   "compile-devDependencies" : [

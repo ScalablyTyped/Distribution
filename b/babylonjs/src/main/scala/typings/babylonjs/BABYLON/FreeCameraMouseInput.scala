@@ -12,7 +12,7 @@ trait FreeCameraMouseInput
      with ICameraInput[FreeCamera] {
   
   /**
-    * @hidden
+    * @internal
     * If the camera should be rotated automatically based on pointer movement
     */
   var _allowCameraRotation: Boolean = js.native

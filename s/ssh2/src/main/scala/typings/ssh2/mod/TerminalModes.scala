@@ -1,7 +1,7 @@
 package typings.ssh2.mod
 
-import typings.ssh2.ssh2Numbers.`0`
-import typings.ssh2.ssh2Numbers.`1`
+import typings.ssh2.ssh2Ints.`0`
+import typings.ssh2.ssh2Ints.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

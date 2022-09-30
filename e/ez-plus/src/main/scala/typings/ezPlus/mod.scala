@@ -1,8 +1,8 @@
 package typings.ezPlus
 
 import typings.ezPlus.ezPlusBooleans.`false`
-import typings.ezPlus.ezPlusNumbers.`0`
-import typings.ezPlus.ezPlusNumbers.`1`
+import typings.ezPlus.ezPlusInts.`0`
+import typings.ezPlus.ezPlusInts.`1`
 import typings.ezPlus.ezPlusStrings.click
 import typings.ezPlus.ezPlusStrings.crosshair
 import typings.ezPlus.ezPlusStrings.cursor

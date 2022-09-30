@@ -11,9 +11,9 @@ Scoping helpers for building reusable components with Redux
 | Full name          | redux-doghouse |
 | Keywords           | redux, scope, doghouse, react |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1258 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 53.333333333333336 |
+| # stars            | 89.0 |
 
 ## Links
 - [Homepage](https://github.com/DataDog/redux-doghouse#readme)

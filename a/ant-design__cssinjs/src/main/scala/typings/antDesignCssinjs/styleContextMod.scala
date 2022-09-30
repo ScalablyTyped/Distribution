@@ -45,6 +45,18 @@ object styleContextMod {
   
   inline def createCache(): typings.antDesignCssinjs.cacheMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("createCache")().asInstanceOf[typings.antDesignCssinjs.cacheMod.default]
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.antDesignCssinjs.antDesignCssinjsStrings.low
+    - typings.antDesignCssinjs.antDesignCssinjsStrings.high
+  */
+  trait HashPriority extends StObject
+  object HashPriority {
+    
+    inline def high: typings.antDesignCssinjs.antDesignCssinjsStrings.high = "high".asInstanceOf[typings.antDesignCssinjs.antDesignCssinjsStrings.high]
+    
+    inline def low: typings.antDesignCssinjs.antDesignCssinjsStrings.low = "low".asInstanceOf[typings.antDesignCssinjs.antDesignCssinjsStrings.low]
+  }
+  
   trait StyleContextProps extends StObject {
     
     var autoClear: js.UndefOr[Boolean] = js.undefined
@@ -57,6 +69,9 @@ object styleContextMod {
     
     /** Tell children that this context is default generated context */
     var defaultCache: Boolean
+    
+    /** Use `:where` selector to reduce hashId css selector priority */
+    var hashPriority: js.UndefOr[HashPriority] = js.undefined
     
     /** @private Test only. Not work in production. */
     var mock: js.UndefOr[server | client] = js.undefined
@@ -78,6 +93,10 @@ object styleContextMod {
       
       inline def setDefaultCache(value: Boolean): Self = StObject.set(x, "defaultCache", value.asInstanceOf[js.Any])
       
+      inline def setHashPriority(value: HashPriority): Self = StObject.set(x, "hashPriority", value.asInstanceOf[js.Any])
+      
+      inline def setHashPriorityUndefined: Self = StObject.set(x, "hashPriority", js.undefined)
+      
       inline def setMock(value: server | client): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       
       inline def setMockUndefined: Self = StObject.set(x, "mock", js.undefined)
@@ -94,6 +113,8 @@ object styleContextMod {
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var defaultCache: js.UndefOr[Boolean] = js.undefined
+    
+    var hashPriority: js.UndefOr[HashPriority] = js.undefined
     
     var mock: js.UndefOr[server | client] = js.undefined
   }
@@ -121,6 +142,10 @@ object styleContextMod {
       inline def setDefaultCache(value: Boolean): Self = StObject.set(x, "defaultCache", value.asInstanceOf[js.Any])
       
       inline def setDefaultCacheUndefined: Self = StObject.set(x, "defaultCache", js.undefined)
+      
+      inline def setHashPriority(value: HashPriority): Self = StObject.set(x, "hashPriority", value.asInstanceOf[js.Any])
+      
+      inline def setHashPriorityUndefined: Self = StObject.set(x, "hashPriority", js.undefined)
       
       inline def setMock(value: server | client): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       

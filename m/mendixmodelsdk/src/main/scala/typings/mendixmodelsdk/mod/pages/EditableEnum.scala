@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.EditableEnum")
 @js.native
-class EditableEnum protected ()
+open class EditableEnum protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.EditableEnum {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

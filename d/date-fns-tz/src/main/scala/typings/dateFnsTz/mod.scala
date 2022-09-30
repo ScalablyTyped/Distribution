@@ -1,14 +1,14 @@
 package typings.dateFnsTz
 
 import typings.dateFns.mod.Locale
-import typings.dateFnsTz.dateFnsTzNumbers.`0`
-import typings.dateFnsTz.dateFnsTzNumbers.`1`
-import typings.dateFnsTz.dateFnsTzNumbers.`2`
-import typings.dateFnsTz.dateFnsTzNumbers.`3`
-import typings.dateFnsTz.dateFnsTzNumbers.`4`
-import typings.dateFnsTz.dateFnsTzNumbers.`5`
-import typings.dateFnsTz.dateFnsTzNumbers.`6`
-import typings.dateFnsTz.dateFnsTzNumbers.`7`
+import typings.dateFnsTz.dateFnsTzInts.`0`
+import typings.dateFnsTz.dateFnsTzInts.`1`
+import typings.dateFnsTz.dateFnsTzInts.`2`
+import typings.dateFnsTz.dateFnsTzInts.`3`
+import typings.dateFnsTz.dateFnsTzInts.`4`
+import typings.dateFnsTz.dateFnsTzInts.`5`
+import typings.dateFnsTz.dateFnsTzInts.`6`
+import typings.dateFnsTz.dateFnsTzInts.`7`
 import typings.dateFnsTz.dateFnsTzStrings.ceil
 import typings.dateFnsTz.dateFnsTzStrings.day
 import typings.dateFnsTz.dateFnsTzStrings.floor

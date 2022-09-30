@@ -11,9 +11,9 @@ Complete and opinionated testkit for testing Redux projects (reducers, selectors
 | Full name          | redux-testkit |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 530814 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 67310.66666666667 |
+| # stars            | 227.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/redux-testkit#readme)

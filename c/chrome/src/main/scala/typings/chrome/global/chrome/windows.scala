@@ -6,8 +6,8 @@ import typings.chrome.chrome.windows.UpdateInfo
 import typings.chrome.chrome.windows.Window
 import typings.chrome.chrome.windows.WindowIdEvent
 import typings.chrome.chrome.windows.WindowReferenceEvent
-import typings.chrome.chromeNumbers.`-1`
-import typings.chrome.chromeNumbers.`-2`
+import typings.chrome.chromeInts.`-1`
+import typings.chrome.chromeInts.`-2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

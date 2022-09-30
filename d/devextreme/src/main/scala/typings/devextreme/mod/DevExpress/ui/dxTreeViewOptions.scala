@@ -28,6 +28,7 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeView.TreeViewCheckBoxMode
 import typings.devextreme.mod.DevExpress.ui.dxTreeView.TreeViewExpandEvent
 import typings.std.Element
 import typings.std.HTMLElement
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,7 @@ trait dxTreeViewOptions[TKey] extends StObject {
   /**
     * Allows you to load nodes on demand.
     */
-  var createChildren: js.UndefOr[js.Function1[/* parentNode */ Node[TKey], js.Thenable[Any] | js.Array[Any]]] = js.undefined
+  var createChildren: js.UndefOr[js.Function1[/* parentNode */ Node[TKey], PromiseLike[Any] | js.Array[Any]]] = js.undefined
   
   /**
     * Binds the UI component to data.
@@ -301,7 +302,7 @@ object dxTreeViewOptions {
     
     inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
     
-    inline def setCreateChildren(value: /* parentNode */ Node[TKey] => js.Thenable[Any] | js.Array[Any]): Self = StObject.set(x, "createChildren", js.Any.fromFunction1(value))
+    inline def setCreateChildren(value: /* parentNode */ Node[TKey] => PromiseLike[Any] | js.Array[Any]): Self = StObject.set(x, "createChildren", js.Any.fromFunction1(value))
     
     inline def setCreateChildrenUndefined: Self = StObject.set(x, "createChildren", js.undefined)
     

@@ -3,7 +3,6 @@ package typings.angularForms.mod
 import typings.angularForms.anon.EmitEvent
 import typings.angularForms.anon.OnlySelf
 import typings.angularForms.anon.`0`
-import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param asyncValidators The function or array of functions that is used to determine validity of
   *     this control asynchronously.
   */
-abstract class AbstractControl () extends StObject {
+abstract class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StObject {
   def this(validators: js.Array[ValidatorFn]) = this()
   def this(validators: ValidatorFn) = this()
   def this(validators: js.Array[ValidatorFn], asyncValidators: js.Array[AsyncValidatorFn]) = this()
@@ -28,24 +27,55 @@ abstract class AbstractControl () extends StObject {
   def this(validators: ValidatorFn, asyncValidators: js.Array[AsyncValidatorFn]) = this()
   def this(validators: ValidatorFn, asyncValidators: AsyncValidatorFn) = this()
   
-  /* private */ var _asyncValidationSubscription: js.Any = js.native
+  /* private */ var _asyncValidationSubscription: Any = js.native
   
-  /* private */ var _calculateStatus: js.Any = js.native
+  /* private */ var _calculateStatus: Any = js.native
   
-  /* private */ var _cancelExistingSubscription: js.Any = js.native
+  /* private */ var _cancelExistingSubscription: Any = js.native
   
-  /* private */ var _parent: js.Any = js.native
+  /* private */ var _parent: Any = js.native
   
-  /* private */ var _runAsyncValidator: js.Any = js.native
+  /* private */ var _runAsyncValidator: Any = js.native
   
-  /* private */ var _runValidator: js.Any = js.native
+  /* private */ var _runValidator: Any = js.native
   
-  /* private */ var _setInitialStatus: js.Any = js.native
+  /* private */ var _setInitialStatus: Any = js.native
   
-  /* private */ var _updateAncestors: js.Any = js.native
+  /* private */ var _updateAncestors: Any = js.native
+  
+  def addAsyncValidators(validators: js.Array[AsyncValidatorFn]): Unit = js.native
+  /**
+    * Add an asynchronous validator or validators to this control, without affecting other
+    * validators.
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
+    * Adding a validator that already exists will have no effect.
+    *
+    * @param validators The new asynchronous validator function or functions to add to this control.
+    */
+  def addAsyncValidators(validators: AsyncValidatorFn): Unit = js.native
+  
+  def addValidators(validators: js.Array[ValidatorFn]): Unit = js.native
+  /**
+    * Add a synchronous validator or validators to this control, without affecting other validators.
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
+    * Adding a validator that already exists will have no effect. If duplicate validator functions
+    * are present in the `validators` array, only the first instance would be added to a form
+    * control.
+    *
+    * @param validators The new validator function or functions to add to this control.
+    */
+  def addValidators(validators: ValidatorFn): Unit = js.native
   
   /**
-    * The function that is used to determine the validity of this control asynchronously.
+    * Returns the function that is used to determine the validity of this control asynchronously.
+    * If multiple validators have been added, this will be a single composed function.
+    * See `Validators.compose()` for additional information.
     */
   def asyncValidator: AsyncValidatorFn | Null = js.native
   def asyncValidator_=(asyncValidatorFn: AsyncValidatorFn | Null): Unit = js.native
@@ -60,7 +90,7 @@ abstract class AbstractControl () extends StObject {
   def clearAsyncValidators(): Unit = js.native
   
   /**
-    * Empties out the sync validator list.
+    * Empties out the synchronous validator list.
     *
     * When you add or remove a validator at run time, you must call
     * `updateValueAndValidity()` for the new validation to take effect.
@@ -148,25 +178,16 @@ abstract class AbstractControl () extends StObject {
     */
   val errors: ValidationErrors | Null = js.native
   
-  def get(path: String): AbstractControl | Null = js.native
   /**
     * Retrieves a child control given the control's name or path.
     *
-    * @param path A dot-delimited string or array of string/number values that define the path to the
-    * control.
-    *
-    * @usageNotes
-    * ### Retrieve a nested control
-    *
-    * For example, to get a `name` control nested within a `person` sub-group:
-    *
-    * * `this.form.get('person.name');`
-    *
-    * -OR-
-    *
-    * * `this.form.get(['person', 'name']);`
+    * This signature for get supports strings and `const` arrays (`.get(['foo', 'bar'] as const)`).
     */
-  def get(path: js.Array[String | Double]): AbstractControl | Null = js.native
+  def get(path: String): (AbstractControl[ɵGetProperty[TRawValue, String], ɵGetProperty[TRawValue, String]]) | Null = js.native
+  def get(path: js.Array[String | Double]): (AbstractControl[
+    ɵGetProperty[TRawValue, js.Array[String | Double]], 
+    ɵGetProperty[TRawValue, js.Array[String | Double]]
+  ]) | Null = js.native
   
   /**
     * @description
@@ -195,9 +216,25 @@ abstract class AbstractControl () extends StObject {
     * @returns error data for that particular error. If the control or error is not present,
     * null is returned.
     */
-  def getError(errorCode: String): js.Any = js.native
-  def getError(errorCode: String, path: String): js.Any = js.native
-  def getError(errorCode: String, path: js.Array[String | Double]): js.Any = js.native
+  def getError(errorCode: String): Any = js.native
+  def getError(errorCode: String, path: String): Any = js.native
+  def getError(errorCode: String, path: js.Array[String | Double]): Any = js.native
+  
+  /**
+    * The raw value of this control. For most control implementations, the raw value will include
+    * disabled children.
+    */
+  def getRawValue(): Any = js.native
+  
+  /**
+    * Check whether an asynchronous validator function is present on this control. The provided
+    * validator must be a reference to the exact same function that was provided.
+    *
+    * @param validator The asynchronous validator to check for presence. Compared by function
+    *     reference.
+    * @returns Whether the provided asynchronous validator was found on this control.
+    */
+  def hasAsyncValidator(validator: AsyncValidatorFn): Boolean = js.native
   
   /**
     * @description
@@ -232,6 +269,31 @@ abstract class AbstractControl () extends StObject {
   def hasError(errorCode: String): Boolean = js.native
   def hasError(errorCode: String, path: String): Boolean = js.native
   def hasError(errorCode: String, path: js.Array[String | Double]): Boolean = js.native
+  
+  /**
+    * Check whether a synchronous validator function is present on this control. The provided
+    * validator must be a reference to the exact same function that was provided.
+    *
+    * @usageNotes
+    *
+    * ### Reference to a ValidatorFn
+    *
+    * ```
+    * // Reference to the RequiredValidator
+    * const ctrl = new FormControl<number | null>(0, Validators.required);
+    * expect(ctrl.hasValidator(Validators.required)).toEqual(true)
+    *
+    * // Reference to anonymous function inside MinValidator
+    * const minValidator = Validators.min(3);
+    * const ctrl = new FormControl<number | null>(0, minValidator);
+    * expect(ctrl.hasValidator(minValidator)).toEqual(true)
+    * expect(ctrl.hasValidator(Validators.min(3)).toEqual(false)
+    * ```
+    *
+    * @param validator The validator to check for presence. Compared by function reference.
+    * @returns Whether the provided validator was found on this control.
+    */
+  def hasValidator(validator: ValidatorFn): Boolean = js.native
   
   /**
     * A control is `invalid` when its `status` is `INVALID`.
@@ -340,13 +402,13 @@ abstract class AbstractControl () extends StObject {
   /**
     * The parent control.
     */
-  def parent: FormGroup | FormArray | Null = js.native
+  def parent: FormGroup[Any] | FormArray[Any] | Null = js.native
   
   /**
     * Patches the value of the control. Abstract method (implemented in sub-classes).
     */
-  def patchValue(value: js.Any): Unit = js.native
-  def patchValue(value: js.Any, options: js.Object): Unit = js.native
+  def patchValue(value: TValue): Unit = js.native
+  def patchValue(value: TValue, options: js.Object): Unit = js.native
   
   /**
     * A control is `pending` when its `status` is `PENDING`.
@@ -367,30 +429,78 @@ abstract class AbstractControl () extends StObject {
     */
   val pristine: Boolean = js.native
   
+  def removeAsyncValidators(validators: js.Array[AsyncValidatorFn]): Unit = js.native
+  /**
+    * Remove an asynchronous validator from this control, without affecting other validators.
+    * Validators are compared by function reference; you must pass a reference to the exact same
+    * validator function as the one that was originally set. If a provided validator is not found, it
+    * is ignored.
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
+    * @param validators The asynchronous validator or validators to remove.
+    */
+  def removeAsyncValidators(validators: AsyncValidatorFn): Unit = js.native
+  
+  def removeValidators(validators: js.Array[ValidatorFn]): Unit = js.native
+  /**
+    * Remove a synchronous validator from this control, without affecting other validators.
+    * Validators are compared by function reference; you must pass a reference to the exact same
+    * validator function as the one that was originally set. If a provided validator is not found,
+    * it is ignored.
+    *
+    * @usageNotes
+    *
+    * ### Reference to a ValidatorFn
+    *
+    * ```
+    * // Reference to the RequiredValidator
+    * const ctrl = new FormControl<string | null>('', Validators.required);
+    * ctrl.removeValidators(Validators.required);
+    *
+    * // Reference to anonymous function inside MinValidator
+    * const minValidator = Validators.min(3);
+    * const ctrl = new FormControl<string | null>('', minValidator);
+    * expect(ctrl.hasValidator(minValidator)).toEqual(true)
+    * expect(ctrl.hasValidator(Validators.min(3)).toEqual(false)
+    *
+    * ctrl.removeValidators(minValidator);
+    * ```
+    *
+    * When you add or remove a validator at run time, you must call
+    * `updateValueAndValidity()` for the new validation to take effect.
+    *
+    * @param validators The validator or validators to remove.
+    */
+  def removeValidators(validators: ValidatorFn): Unit = js.native
+  
   /**
     * Resets the control. Abstract method (implemented in sub-classes).
     */
   def reset(): Unit = js.native
-  def reset(value: js.Any): Unit = js.native
-  def reset(value: js.Any, options: js.Object): Unit = js.native
+  def reset(value: TValue): Unit = js.native
+  def reset(value: TValue, options: js.Object): Unit = js.native
   def reset(value: Unit, options: js.Object): Unit = js.native
   
   /**
     * Retrieves the top-level ancestor of this control.
     */
-  def root: AbstractControl = js.native
+  def root: AbstractControl[Any, Any] = js.native
   
   /**
-    * Sets the async validators that are active on this control. Calling this
-    * overwrites any existing async validators.
+    * Sets the asynchronous validators that are active on this control. Calling this
+    * overwrites any existing asynchronous validators.
     *
     * When you add or remove a validator at run time, you must call
     * `updateValueAndValidity()` for the new validation to take effect.
     *
+    * If you want to add a new validator without affecting existing ones, consider
+    * using `addAsyncValidators()` method instead.
     */
   def setAsyncValidators(): Unit = js.native
-  def setAsyncValidators(newValidator: js.Array[AsyncValidatorFn]): Unit = js.native
-  def setAsyncValidators(newValidator: AsyncValidatorFn): Unit = js.native
+  def setAsyncValidators(validators: js.Array[AsyncValidatorFn]): Unit = js.native
+  def setAsyncValidators(validators: AsyncValidatorFn): Unit = js.native
   
   /**
     * Sets errors on a form control when running validations manually, rather than automatically.
@@ -420,52 +530,54 @@ abstract class AbstractControl () extends StObject {
   def setErrors(errors: ValidationErrors): Unit = js.native
   def setErrors(errors: ValidationErrors, opts: `0`): Unit = js.native
   
-  def setParent(parent: FormArray): Unit = js.native
   /**
-    * @param parent Sets the parent of the control
+    * Sets the parent of the control
+    *
+    * @param parent The new parent.
     */
-  def setParent(parent: FormGroup): Unit = js.native
+  def setParent(): Unit = js.native
+  def setParent(parent: FormArray[Any]): Unit = js.native
+  def setParent(parent: FormGroup[Any]): Unit = js.native
   
   /**
     * Sets the synchronous validators that are active on this control.  Calling
-    * this overwrites any existing sync validators.
+    * this overwrites any existing synchronous validators.
     *
     * When you add or remove a validator at run time, you must call
     * `updateValueAndValidity()` for the new validation to take effect.
     *
+    * If you want to add a new validator without affecting existing ones, consider
+    * using `addValidators()` method instead.
     */
   def setValidators(): Unit = js.native
-  def setValidators(newValidator: js.Array[ValidatorFn]): Unit = js.native
-  def setValidators(newValidator: ValidatorFn): Unit = js.native
+  def setValidators(validators: js.Array[ValidatorFn]): Unit = js.native
+  def setValidators(validators: ValidatorFn): Unit = js.native
   
   /**
     * Sets the value of the control. Abstract method (implemented in sub-classes).
     */
-  def setValue(value: js.Any): Unit = js.native
-  def setValue(value: js.Any, options: js.Object): Unit = js.native
+  def setValue(value: TRawValue): Unit = js.native
+  def setValue(value: TRawValue, options: js.Object): Unit = js.native
   
   /**
-    * The validation status of the control. There are four possible
-    * validation status values:
+    * The validation status of the control.
     *
-    * * **VALID**: This control has passed all validation checks.
-    * * **INVALID**: This control has failed at least one validation check.
-    * * **PENDING**: This control is in the midst of conducting a validation check.
-    * * **DISABLED**: This control is exempt from validation checks.
+    * @see `FormControlStatus`
     *
     * These status values are mutually exclusive, so a control cannot be
     * both valid AND invalid or invalid AND disabled.
     */
-  val status: String = js.native
+  val status: FormControlStatus = js.native
   
   /**
     * A multicasting observable that emits an event every time the validation `status` of the control
     * recalculates.
     *
+    * @see `FormControlStatus`
     * @see {@link AbstractControl.status}
     *
     */
-  val statusChanges: Observable_[js.Any] = js.native
+  val statusChanges: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<FormControlStatus> */ Any = js.native
   
   /**
     * True if the control is marked as `touched`.
@@ -519,7 +631,9 @@ abstract class AbstractControl () extends StObject {
   def valid: Boolean = js.native
   
   /**
-    * The function that is used to determine the validity of this control synchronously.
+    * Returns the function that is used to determine the validity of this control synchronously.
+    * If multiple validators have been added, this will be a single composed function.
+    * See `Validators.compose()` for additional information.
     */
   def validator: ValidatorFn | Null = js.native
   def validator_=(validatorFn: ValidatorFn | Null): Unit = js.native
@@ -535,12 +649,12 @@ abstract class AbstractControl () extends StObject {
     * * For a `FormArray`, the values of enabled controls as an array.
     *
     */
-  val value: js.Any = js.native
+  val value: TValue = js.native
   
   /**
     * A multicasting observable that emits an event every time the value of the control changes, in
     * the UI or programmatically. It also emits an event each time you call enable() or disable()
     * without passing along {emitEvent: false} as a function argument.
     */
-  val valueChanges: Observable_[js.Any] = js.native
+  val valueChanges: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<TValue> */ Any = js.native
 }

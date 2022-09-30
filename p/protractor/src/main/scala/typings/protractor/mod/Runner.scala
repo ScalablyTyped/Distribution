@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "Runner")
 @js.native
-class Runner protected ()
+open class Runner protected ()
   extends typings.protractor.runnerMod.Runner {
   def this(config: Config) = this()
 }

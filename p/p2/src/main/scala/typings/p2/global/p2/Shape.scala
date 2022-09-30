@@ -1,14 +1,14 @@
 package typings.p2.global.p2
 
 import typings.p2.mod.ShapeOptions
-import typings.p2.p2Numbers.`128`
-import typings.p2.p2Numbers.`16`
-import typings.p2.p2Numbers.`1`
-import typings.p2.p2Numbers.`2`
-import typings.p2.p2Numbers.`32`
-import typings.p2.p2Numbers.`4`
-import typings.p2.p2Numbers.`64`
-import typings.p2.p2Numbers.`8`
+import typings.p2.p2Ints.`128`
+import typings.p2.p2Ints.`16`
+import typings.p2.p2Ints.`1`
+import typings.p2.p2Ints.`2`
+import typings.p2.p2Ints.`32`
+import typings.p2.p2Ints.`4`
+import typings.p2.p2Ints.`64`
+import typings.p2.p2Ints.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

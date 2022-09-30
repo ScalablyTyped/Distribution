@@ -4,120 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonslotted
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colondir
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonhas
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonhost
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonhost-context`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonis
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlang
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonmatchesLeftparenthesisRightparenthesis
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-child`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-last-child`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-last-of-type`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonnth-of-type`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonwhere
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-any-link`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-full-screen`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-placeholder`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-read-only`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-read-write`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-ms-fullscreen`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-ms-input-placeholder`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-any-link`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-full-screen`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-moz-placeholder`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-moz-progress-bar`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-moz-range-progress`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-moz-range-thumb`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-moz-range-track`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-moz-selection`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-backdrop`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-browse`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-check`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-clear`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-fill`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-fill-lower`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-fill-upper`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-input-placeholder`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-reveal`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-thumb`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-ticks-after`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-ticks-before`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-tooltip`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-track`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-ms-value`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-webkit-backdrop`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-webkit-input-placeholder`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-webkit-progress-bar`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-webkit-progress-inner-value`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-webkit-progress-value`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-webkit-slider-runnable-track`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColon-webkit-slider-thumb`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonafter
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonbackdrop
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonbefore
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColonfirst-letter`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColonfirst-line`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColongrammar-error`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonplaceholder
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColonselection
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`ColonColonspelling-error`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonactive
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonafter
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonany-link`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonbefore
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonblank
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonchecked
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colondefault
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colondefined
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colondisabled
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonempty
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonenabled
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonfirst
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonfirst-child`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonfirst-letter`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonfirst-line`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonfirst-of-type`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonfocus
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonfocus-visible`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonfocus-within`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonfullscreen
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonhover
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonin-range`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonindeterminate
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Coloninvalid
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonlast-child`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonlast-of-type`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonleft
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlink
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colononly-child`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colononly-of-type`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonoptional
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonout-of-range`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonplaceholder-shown`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonread-only`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colonread-write`
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonrequired
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonright
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonroot
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonscope
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colontarget
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonvalid
-  - typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonvisited
-*/
-trait Pseudos extends StObject
 object Pseudos {
   
   inline def `Colon-moz-any-link`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-any-link`]
   
-  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis` = ":-moz-any()".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-anyLeftparenthesisRightparenthesis`]
+  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
   
   inline def `Colon-moz-dir`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir` = ":-moz-dir".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`]
   
@@ -135,7 +26,7 @@ object Pseudos {
   
   inline def `Colon-webkit-any-link`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-any-link` = ":-webkit-any-link".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-any-link`]
   
-  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis` = ":-webkit-any()".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-anyLeftparenthesisRightparenthesis`]
+  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
   
   inline def `Colon-webkit-full-screen`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-full-screen`]
   
@@ -285,7 +176,7 @@ object Pseudos {
   
   inline def Colonlink: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlink = ":link".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlink]
   
-  inline def ColonmatchesLeftparenthesisRightparenthesis: typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonmatchesLeftparenthesisRightparenthesis = ":matches()".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonmatchesLeftparenthesisRightparenthesis]
+  inline def ColonmatchesLeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
   
   inline def Colonnot: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot = ":not".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot]
   

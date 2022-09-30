@@ -65,8 +65,8 @@ inline def getSourceFile(fileName: String, source: String): SourceFile = (^.asIn
 
 inline def hasCommentAfterPosition(text: String, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCommentAfterPosition")(text.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def hasModifier(modifiers: Unit, modifierKinds: SyntaxKind*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(List(modifiers.asInstanceOf[js.Any]).`++`(modifierKinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
-inline def hasModifier(modifiers: ModifiersArray, modifierKinds: SyntaxKind*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(List(modifiers.asInstanceOf[js.Any]).`++`(modifierKinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+inline def hasModifier(modifiers: Unit, modifierKinds: SyntaxKind*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(scala.List(modifiers.asInstanceOf[js.Any]).`++`(modifierKinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+inline def hasModifier(modifiers: ModifiersArray, modifierKinds: SyntaxKind*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(scala.List(modifiers.asInstanceOf[js.Any]).`++`(modifierKinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
 
 inline def isAssignment(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssignment")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 

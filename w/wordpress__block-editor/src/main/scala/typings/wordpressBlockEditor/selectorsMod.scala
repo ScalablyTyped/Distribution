@@ -8,8 +8,8 @@ import typings.wordpressBlockEditor.mod.EditorBlockMode
 import typings.wordpressBlockEditor.mod.EditorInserterItem
 import typings.wordpressBlockEditor.mod.EditorSelection
 import typings.wordpressBlockEditor.mod.EditorSettings
-import typings.wordpressBlockEditor.wordpressBlockEditorNumbers.`-1`
-import typings.wordpressBlockEditor.wordpressBlockEditorNumbers.`1`
+import typings.wordpressBlockEditor.wordpressBlockEditorInts.`-1`
+import typings.wordpressBlockEditor.wordpressBlockEditorInts.`1`
 import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,15 +26,12 @@ object selectorsMod {
   
   inline def getAdjacentBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")().asInstanceOf[String | Null]
   inline def getAdjacentBlockClientId(startClientId: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getAdjacentBlockClientId(startClientId: String, modifier: `1` | `-1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getAdjacentBlockClientId(startClientId: Unit, modifier: `1` | `-1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  inline def getAdjacentBlockClientId_1(startClientId: String, modifier: `-1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def getAdjacentBlockClientId_1(startClientId: String, modifier: `1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `-1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  inline def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `1`): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdjacentBlockClientId")(startClientId.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def getBlock(clientId: String): BlockInstance[StringDictionary[Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[BlockInstance[StringDictionary[Any]] | Null]
   
-  inline def getBlock(clientId: String): BlockInstance[StringDictionary[js.Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlock")(clientId.asInstanceOf[js.Any]).asInstanceOf[BlockInstance[StringDictionary[js.Any]] | Null]
-  
-  inline def getBlockAttributes(clientId: String): (Record[String, js.Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(clientId.asInstanceOf[js.Any]).asInstanceOf[(Record[String, js.Any]) | Null]
+  inline def getBlockAttributes(clientId: String): (Record[String, Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(clientId.asInstanceOf[js.Any]).asInstanceOf[(Record[String, Any]) | Null]
   
   inline def getBlockCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockCount")().asInstanceOf[Double]
   inline def getBlockCount(rootClientId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockCount")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -62,11 +59,11 @@ object selectorsMod {
   
   inline def getBlockSelectionStart(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSelectionStart")().asInstanceOf[js.UndefOr[String]]
   
-  inline def getBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocks")().asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
-  inline def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocks")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  inline def getBlocks(): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocks")().asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
+  inline def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocks")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
   
-  inline def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocksByClientId")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]] | Null]]
-  inline def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocksByClientId")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]] | Null]]
+  inline def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[Any]] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocksByClientId")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]] | Null]]
+  inline def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[Any]] | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlocksByClientId")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]] | Null]]
   
   inline def getClientIdsOfDescendants(clientIds: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientIdsOfDescendants")(clientIds.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
@@ -84,7 +81,7 @@ object selectorsMod {
   
   inline def getMultiSelectedBlockClientIds(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlockClientIds")().asInstanceOf[js.Array[String]]
   
-  inline def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlocks")().asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  inline def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlocks")().asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
   
   inline def getMultiSelectedBlocksEndClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultiSelectedBlocksEndClientId")().asInstanceOf[String | Null]
   
@@ -96,7 +93,7 @@ object selectorsMod {
   inline def getPreviousBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousBlockClientId")().asInstanceOf[String | Null]
   inline def getPreviousBlockClientId(startClientId: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousBlockClientId")(startClientId.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  inline def getSelectedBlock(): BlockInstance[StringDictionary[js.Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedBlock")().asInstanceOf[BlockInstance[StringDictionary[js.Any]] | Null]
+  inline def getSelectedBlock(): BlockInstance[StringDictionary[Any]] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedBlock")().asInstanceOf[BlockInstance[StringDictionary[Any]] | Null]
   
   inline def getSelectedBlockClientId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedBlockClientId")().asInstanceOf[String | Null]
   
@@ -112,7 +109,7 @@ object selectorsMod {
   
   inline def getSettings(): EditorSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")().asInstanceOf[EditorSettings]
   
-  inline def getTemplate(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")().asInstanceOf[js.Any]
+  inline def getTemplate(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")().asInstanceOf[Any]
   
   inline def getTemplateLock(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateLock")().asInstanceOf[js.UndefOr[String]]
   inline def getTemplateLock(rootClientId: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateLock")(rootClientId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]

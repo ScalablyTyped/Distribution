@@ -16,10 +16,9 @@ object exceptionMod {
   
   @JSImport("ant-design-pro/lib/Exception", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ExceptionProps[Href], js.Any, js.Any]
+  open class default () extends Component[ExceptionProps[Href], Any, Any]
   
-  type Exception = Component[ExceptionProps[Href], js.Any, js.Any]
+  type Exception = Component[ExceptionProps[Href], Any, Any]
   
   trait ExceptionProps[L] extends StObject {
     

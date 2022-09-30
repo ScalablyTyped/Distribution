@@ -8,18 +8,12 @@ trait PopupEvent
   extends StObject
      with LeafletEvent {
   
-  var popup: Popup_
+  @JSName("popup")
+  var popup_PopupEvent: Popup_
 }
 object PopupEvent {
   
-  inline def apply(
-    layer: js.Any,
-    popup: Popup_,
-    propagatedFrom: js.Any,
-    sourceTarget: js.Any,
-    target: js.Any,
-    `type`: String
-  ): PopupEvent = {
+  inline def apply(layer: Any, popup: Popup_, propagatedFrom: Any, sourceTarget: Any, target: Any, `type`: String): PopupEvent = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupEvent]

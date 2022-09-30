@@ -2,8 +2,8 @@ package typings.gestalt.mod
 
 import typings.gestalt.anon.DangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
-import typings.gestalt.gestaltNumbers.`-1`
-import typings.gestalt.gestaltNumbers.`0`
+import typings.gestalt.gestaltInts.`-1`
+import typings.gestalt.gestaltInts.`0`
 import typings.gestalt.gestaltStrings.blank
 import typings.gestalt.gestaltStrings.blue
 import typings.gestalt.gestaltStrings.button

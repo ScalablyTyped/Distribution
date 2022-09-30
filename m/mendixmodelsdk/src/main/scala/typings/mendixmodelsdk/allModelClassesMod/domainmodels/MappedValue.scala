@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.10.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MappedValue")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MappedValue")
 @js.native
 abstract class MappedValue protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.MappedValue {
@@ -28,18 +28,18 @@ abstract class MappedValue protected ()
 }
 object MappedValue {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MappedValue")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MappedValue")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MappedValue.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MappedValue.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.MappedValue.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.MappedValue.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

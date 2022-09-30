@@ -1,7 +1,7 @@
 package typings.grommet
 
-import typings.grommet.grommetNumbers.`12`
-import typings.grommet.grommetNumbers.`24`
+import typings.grommet.grommetInts.`12`
+import typings.grommet.grommetInts.`24`
 import typings.grommet.grommetStrings.`type`
 import typings.grommet.grommetStrings.analog
 import typings.grommet.grommetStrings.backward

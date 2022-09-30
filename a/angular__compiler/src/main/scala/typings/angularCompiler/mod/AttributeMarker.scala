@@ -1,12 +1,12 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.angularCompilerNumbers.`0`
-import typings.angularCompiler.angularCompilerNumbers.`1`
-import typings.angularCompiler.angularCompilerNumbers.`2`
-import typings.angularCompiler.angularCompilerNumbers.`3`
-import typings.angularCompiler.angularCompilerNumbers.`4`
-import typings.angularCompiler.angularCompilerNumbers.`5`
-import typings.angularCompiler.angularCompilerNumbers.`6`
+import typings.angularCompiler.angularCompilerInts.`0`
+import typings.angularCompiler.angularCompilerInts.`1`
+import typings.angularCompiler.angularCompilerInts.`2`
+import typings.angularCompiler.angularCompilerInts.`3`
+import typings.angularCompiler.angularCompilerInts.`4`
+import typings.angularCompiler.angularCompilerInts.`5`
+import typings.angularCompiler.angularCompilerInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * items are not regular attributes and the processing should be adapted accordingly.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCompiler.angularCompilerNumbers.`0`
-  - typings.angularCompiler.angularCompilerNumbers.`1`
-  - typings.angularCompiler.angularCompilerNumbers.`2`
-  - typings.angularCompiler.angularCompilerNumbers.`3`
-  - typings.angularCompiler.angularCompilerNumbers.`4`
-  - typings.angularCompiler.angularCompilerNumbers.`5`
-  - typings.angularCompiler.angularCompilerNumbers.`6`
+  - typings.angularCompiler.angularCompilerInts.`0`
+  - typings.angularCompiler.angularCompilerInts.`1`
+  - typings.angularCompiler.angularCompilerInts.`2`
+  - typings.angularCompiler.angularCompilerInts.`3`
+  - typings.angularCompiler.angularCompilerInts.`4`
+  - typings.angularCompiler.angularCompilerInts.`5`
+  - typings.angularCompiler.angularCompilerInts.`6`
 */
 trait AttributeMarker extends StObject
 object AttributeMarker {

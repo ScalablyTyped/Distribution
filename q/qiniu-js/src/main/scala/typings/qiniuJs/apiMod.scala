@@ -4,7 +4,7 @@ import typings.qiniuJs.anon.PartialRequestOptions
 import typings.qiniuJs.anon.PartialRequestOptionsmd5s
 import typings.qiniuJs.anon.Up
 import typings.qiniuJs.baseMod.UploadInfo
-import typings.qiniuJs.helperMod.Response
+import typings.qiniuJs.helperMod.ResponseSuccess
 import typings.qiniuJs.qiniuJsStrings.`cn-east-2`
 import typings.qiniuJs.qiniuJsStrings.as0
 import typings.qiniuJs.qiniuJsStrings.http
@@ -26,9 +26,9 @@ object apiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deleteUploadedChunks(token: String, key: String, uploadinfo: UploadInfo): Response[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[Response[Unit]]
-  inline def deleteUploadedChunks(token: String, key: Null, uploadinfo: UploadInfo): Response[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[Response[Unit]]
-  inline def deleteUploadedChunks(token: String, key: Unit, uploadinfo: UploadInfo): Response[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[Response[Unit]]
+  inline def deleteUploadedChunks(token: String, key: String, uploadinfo: UploadInfo): js.Promise[ResponseSuccess[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Unit]]]
+  inline def deleteUploadedChunks(token: String, key: Null, uploadinfo: UploadInfo): js.Promise[ResponseSuccess[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Unit]]]
+  inline def deleteUploadedChunks(token: String, key: Unit, uploadinfo: UploadInfo): js.Promise[ResponseSuccess[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Unit]]]
   
   inline def direct(url: String, data: FormData, options: PartialRequestOptions): js.Promise[UploadCompleteData] = (^.asInstanceOf[js.Dynamic].applyDynamic("direct")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UploadCompleteData]]
   
@@ -36,9 +36,9 @@ object apiMod {
   
   inline def getUploadUrl(_config: UploadUrlConfig, token: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUploadUrl")(_config.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def initUploadParts(token: String, bucket: String, key: String, uploadUrl: String): Response[InitPartsData] = (^.asInstanceOf[js.Dynamic].applyDynamic("initUploadParts")(token.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadUrl.asInstanceOf[js.Any])).asInstanceOf[Response[InitPartsData]]
-  inline def initUploadParts(token: String, bucket: String, key: Null, uploadUrl: String): Response[InitPartsData] = (^.asInstanceOf[js.Dynamic].applyDynamic("initUploadParts")(token.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadUrl.asInstanceOf[js.Any])).asInstanceOf[Response[InitPartsData]]
-  inline def initUploadParts(token: String, bucket: String, key: Unit, uploadUrl: String): Response[InitPartsData] = (^.asInstanceOf[js.Dynamic].applyDynamic("initUploadParts")(token.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadUrl.asInstanceOf[js.Any])).asInstanceOf[Response[InitPartsData]]
+  inline def initUploadParts(token: String, bucket: String, key: String, uploadUrl: String): js.Promise[ResponseSuccess[InitPartsData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("initUploadParts")(token.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[InitPartsData]]]
+  inline def initUploadParts(token: String, bucket: String, key: Null, uploadUrl: String): js.Promise[ResponseSuccess[InitPartsData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("initUploadParts")(token.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[InitPartsData]]]
+  inline def initUploadParts(token: String, bucket: String, key: Unit, uploadUrl: String): js.Promise[ResponseSuccess[InitPartsData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("initUploadParts")(token.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[InitPartsData]]]
   
   inline def uploadChunk(
     token: String,
@@ -46,25 +46,25 @@ object apiMod {
     index: Double,
     uploadInfo: UploadInfo,
     options: PartialRequestOptionsmd5s
-  ): Response[UploadChunkData] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadChunk")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], index.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response[UploadChunkData]]
+  ): js.Promise[ResponseSuccess[UploadChunkData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadChunk")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], index.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[UploadChunkData]]]
   inline def uploadChunk(
     token: String,
     key: Null,
     index: Double,
     uploadInfo: UploadInfo,
     options: PartialRequestOptionsmd5s
-  ): Response[UploadChunkData] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadChunk")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], index.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response[UploadChunkData]]
+  ): js.Promise[ResponseSuccess[UploadChunkData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadChunk")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], index.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[UploadChunkData]]]
   inline def uploadChunk(
     token: String,
     key: Unit,
     index: Double,
     uploadInfo: UploadInfo,
     options: PartialRequestOptionsmd5s
-  ): Response[UploadChunkData] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadChunk")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], index.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response[UploadChunkData]]
+  ): js.Promise[ResponseSuccess[UploadChunkData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadChunk")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], index.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[UploadChunkData]]]
   
-  inline def uploadComplete(token: String, key: String, uploadInfo: UploadInfo, options: PartialRequestOptions): Response[UploadCompleteData] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadComplete")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response[UploadCompleteData]]
-  inline def uploadComplete(token: String, key: Null, uploadInfo: UploadInfo, options: PartialRequestOptions): Response[UploadCompleteData] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadComplete")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response[UploadCompleteData]]
-  inline def uploadComplete(token: String, key: Unit, uploadInfo: UploadInfo, options: PartialRequestOptions): Response[UploadCompleteData] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadComplete")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Response[UploadCompleteData]]
+  inline def uploadComplete(token: String, key: String, uploadInfo: UploadInfo, options: PartialRequestOptions): js.Promise[ResponseSuccess[UploadCompleteData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadComplete")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[UploadCompleteData]]]
+  inline def uploadComplete(token: String, key: Null, uploadInfo: UploadInfo, options: PartialRequestOptions): js.Promise[ResponseSuccess[UploadCompleteData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadComplete")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[UploadCompleteData]]]
+  inline def uploadComplete(token: String, key: Unit, uploadInfo: UploadInfo, options: PartialRequestOptions): js.Promise[ResponseSuccess[UploadCompleteData]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadComplete")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadInfo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[UploadCompleteData]]]
   
   trait InitPartsData extends StObject {
     

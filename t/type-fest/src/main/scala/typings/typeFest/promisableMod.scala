@@ -1,10 +1,11 @@
 package typings.typeFest
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promisableMod {
   
-  type Promisable[T] = T | js.Thenable[T]
+  type Promisable[T] = T | PromiseLike[T]
 }

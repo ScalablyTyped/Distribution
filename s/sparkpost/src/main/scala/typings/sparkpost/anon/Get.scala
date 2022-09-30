@@ -3,7 +3,6 @@ package typings.sparkpost.anon
 import typings.sparkpost.mod.Callback
 import typings.sparkpost.mod.RelayWebhook
 import typings.sparkpost.mod.ResultsCallback
-import typings.sparkpost.mod.ResultsPromise
 import typings.sparkpost.mod.UpdateRelayWebhook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ trait Get extends StObject {
     * @param options The create options
     * @returns Promise The webhook id results
     */
-  def create(options: RelayWebhook): ResultsPromise[Id] = js.native
+  def create(options: RelayWebhook): js.Promise[Results[Id]] = js.native
   /**
     * Create a relay webhook by providing a relay webhooks object as the POST request body.
     * @param options The create options
@@ -43,7 +42,7 @@ trait Get extends StObject {
     * @param relayWebhookId The webhook id
     * @returns Promise The RelayWebhook results
     */
-  def get(relayWebhookId: String): ResultsPromise[RelayWebhook] = js.native
+  def get(relayWebhookId: String): js.Promise[Results[RelayWebhook]] = js.native
   /**
     * Delete a relay webhook by specifying the webhook ID in the URI path.
     * @param relayWebhookId The webhook id
@@ -55,7 +54,7 @@ trait Get extends StObject {
     * List all your relay webhooks.
     * @returns Promise The RelayWebhook results array
     */
-  def list(): ResultsPromise[js.Array[RelayWebhook]] = js.native
+  def list(): js.Promise[Results[js.Array[RelayWebhook]]] = js.native
   /**
     * List all your relay webhooks.
     * @param callback The request callback with RelayWebhook results array
@@ -67,7 +66,7 @@ trait Get extends StObject {
     * @param options The update options
     * @returns Promise The webhook id results
     */
-  def update(id: String, options: UpdateRelayWebhook): ResultsPromise[Id] = js.native
+  def update(id: String, options: UpdateRelayWebhook): js.Promise[Results[Id]] = js.native
   /**
     * Update a relay webhook by specifying the webhook ID in the URI path.
     * @param options The update options

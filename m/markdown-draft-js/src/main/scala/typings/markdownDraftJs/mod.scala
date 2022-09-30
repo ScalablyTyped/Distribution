@@ -6,148 +6,122 @@ import typings.markdownDraftJs.anon.Close
 import typings.markdownDraftJs.anon.Open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("markdown-draft-js", "draftToMarkdown")
+  @JSImport("markdown-draft-js", JSImport.Namespace)
   @js.native
-  def draftToMarkdown(RawDraft: RawDraftContentState): String = js.native
-  @JSImport("markdown-draft-js", "draftToMarkdown")
-  @js.native
-  def draftToMarkdown(RawDraft: RawDraftContentState, options: DraftToMarkdownOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("markdown-draft-js", "markdownToDraft")
-  @js.native
-  def markdownToDraft(markdown: String): RawDraftContentState = js.native
-  @JSImport("markdown-draft-js", "markdownToDraft")
-  @js.native
-  def markdownToDraft(markdown: String, options: MarkdownToDraftOptions): RawDraftContentState = js.native
+  inline def draftToMarkdown(RawDraft: RawDraftContentState): String = ^.asInstanceOf[js.Dynamic].applyDynamic("draftToMarkdown")(RawDraft.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def draftToMarkdown(RawDraft: RawDraftContentState, options: DraftToMarkdownOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("draftToMarkdown")(RawDraft.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def markdownToDraft(markdown: String): RawDraftContentState = ^.asInstanceOf[js.Dynamic].applyDynamic("markdownToDraft")(markdown.asInstanceOf[js.Any]).asInstanceOf[RawDraftContentState]
+  inline def markdownToDraft(markdown: String, options: MarkdownToDraftOptions): RawDraftContentState = (^.asInstanceOf[js.Dynamic].applyDynamic("markdownToDraft")(markdown.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RawDraftContentState]
   
   type BlockEntitiesParam = StringDictionary[
     js.Function1[
-      /* item */ js.UndefOr[StringDictionary[js.Any]], 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ js.Any
+      /* item */ js.UndefOr[StringDictionary[Any]], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Entity */ Any
     ]
   ]
   
   type BlockTypesParam = StringDictionary[
-    js.Function1[/* item */ js.UndefOr[StringDictionary[js.Any]], StringDictionary[js.Any]]
+    js.Function1[/* item */ js.UndefOr[StringDictionary[Any]], StringDictionary[Any]]
   ]
   
-  @js.native
   trait DraftToMarkdownOptions extends StObject {
     
-    var entityItems: js.UndefOr[StringDictionary[Close]] = js.native
+    var entityItems: js.UndefOr[StringDictionary[Close]] = js.undefined
     
-    var preserveNewlines: js.UndefOr[Boolean] = js.native
+    var escapeMarkdownCharacters: js.UndefOr[Boolean] = js.undefined
     
-    var styleItems: js.UndefOr[StringDictionary[Open]] = js.native
+    var preserveNewlines: js.UndefOr[Boolean] = js.undefined
+    
+    var styleItems: js.UndefOr[StringDictionary[Open]] = js.undefined
   }
   object DraftToMarkdownOptions {
     
-    @scala.inline
-    def apply(): DraftToMarkdownOptions = {
+    inline def apply(): DraftToMarkdownOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DraftToMarkdownOptions]
     }
     
-    @scala.inline
-    implicit class DraftToMarkdownOptionsMutableBuilder[Self <: DraftToMarkdownOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DraftToMarkdownOptions](x: Self) {
       
-      @scala.inline
-      def setEntityItems(value: StringDictionary[Close]): Self = StObject.set(x, "entityItems", value.asInstanceOf[js.Any])
+      inline def setEntityItems(value: StringDictionary[Close]): Self = StObject.set(x, "entityItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityItemsUndefined: Self = StObject.set(x, "entityItems", js.undefined)
+      inline def setEntityItemsUndefined: Self = StObject.set(x, "entityItems", js.undefined)
       
-      @scala.inline
-      def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
+      inline def setEscapeMarkdownCharacters(value: Boolean): Self = StObject.set(x, "escapeMarkdownCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
+      inline def setEscapeMarkdownCharactersUndefined: Self = StObject.set(x, "escapeMarkdownCharacters", js.undefined)
       
-      @scala.inline
-      def setStyleItems(value: StringDictionary[Open]): Self = StObject.set(x, "styleItems", value.asInstanceOf[js.Any])
+      inline def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleItemsUndefined: Self = StObject.set(x, "styleItems", js.undefined)
+      inline def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
+      
+      inline def setStyleItems(value: StringDictionary[Open]): Self = StObject.set(x, "styleItems", value.asInstanceOf[js.Any])
+      
+      inline def setStyleItemsUndefined: Self = StObject.set(x, "styleItems", js.undefined)
     }
   }
   
-  @js.native
   trait MarkdownToDraftOptions extends StObject {
     
-    var blockEntities: js.UndefOr[BlockEntitiesParam] = js.native
+    var blockEntities: js.UndefOr[BlockEntitiesParam] = js.undefined
     
-    var blockStyles: js.UndefOr[StringDictionary[String]] = js.native
+    var blockStyles: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var blockTypes: js.UndefOr[BlockTypesParam] = js.native
+    var blockTypes: js.UndefOr[BlockTypesParam] = js.undefined
     
-    var preserveNewlines: js.UndefOr[Boolean] = js.native
+    var preserveNewlines: js.UndefOr[Boolean] = js.undefined
     
-    var remarkableOptions: js.UndefOr[StringDictionary[Boolean | js.Object]] = js.native
+    var remarkableOptions: js.UndefOr[StringDictionary[Boolean | js.Object]] = js.undefined
     
-    var remarkablePlugins: js.UndefOr[js.Array[_]] = js.native
+    var remarkablePlugins: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var remarkablePreset: js.UndefOr[String] = js.native
+    var remarkablePreset: js.UndefOr[String] = js.undefined
   }
   object MarkdownToDraftOptions {
     
-    @scala.inline
-    def apply(): MarkdownToDraftOptions = {
+    inline def apply(): MarkdownToDraftOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarkdownToDraftOptions]
     }
     
-    @scala.inline
-    implicit class MarkdownToDraftOptionsMutableBuilder[Self <: MarkdownToDraftOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MarkdownToDraftOptions](x: Self) {
       
-      @scala.inline
-      def setBlockEntities(value: BlockEntitiesParam): Self = StObject.set(x, "blockEntities", value.asInstanceOf[js.Any])
+      inline def setBlockEntities(value: BlockEntitiesParam): Self = StObject.set(x, "blockEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockEntitiesUndefined: Self = StObject.set(x, "blockEntities", js.undefined)
+      inline def setBlockEntitiesUndefined: Self = StObject.set(x, "blockEntities", js.undefined)
       
-      @scala.inline
-      def setBlockStyles(value: StringDictionary[String]): Self = StObject.set(x, "blockStyles", value.asInstanceOf[js.Any])
+      inline def setBlockStyles(value: StringDictionary[String]): Self = StObject.set(x, "blockStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockStylesUndefined: Self = StObject.set(x, "blockStyles", js.undefined)
+      inline def setBlockStylesUndefined: Self = StObject.set(x, "blockStyles", js.undefined)
       
-      @scala.inline
-      def setBlockTypes(value: BlockTypesParam): Self = StObject.set(x, "blockTypes", value.asInstanceOf[js.Any])
+      inline def setBlockTypes(value: BlockTypesParam): Self = StObject.set(x, "blockTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockTypesUndefined: Self = StObject.set(x, "blockTypes", js.undefined)
+      inline def setBlockTypesUndefined: Self = StObject.set(x, "blockTypes", js.undefined)
       
-      @scala.inline
-      def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
+      inline def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
+      inline def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
       
-      @scala.inline
-      def setRemarkableOptions(value: StringDictionary[Boolean | js.Object]): Self = StObject.set(x, "remarkableOptions", value.asInstanceOf[js.Any])
+      inline def setRemarkableOptions(value: StringDictionary[Boolean | js.Object]): Self = StObject.set(x, "remarkableOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemarkableOptionsUndefined: Self = StObject.set(x, "remarkableOptions", js.undefined)
+      inline def setRemarkableOptionsUndefined: Self = StObject.set(x, "remarkableOptions", js.undefined)
       
-      @scala.inline
-      def setRemarkablePlugins(value: js.Array[_]): Self = StObject.set(x, "remarkablePlugins", value.asInstanceOf[js.Any])
+      inline def setRemarkablePlugins(value: js.Array[Any]): Self = StObject.set(x, "remarkablePlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemarkablePluginsUndefined: Self = StObject.set(x, "remarkablePlugins", js.undefined)
+      inline def setRemarkablePluginsUndefined: Self = StObject.set(x, "remarkablePlugins", js.undefined)
       
-      @scala.inline
-      def setRemarkablePluginsVarargs(value: js.Any*): Self = StObject.set(x, "remarkablePlugins", js.Array(value :_*))
+      inline def setRemarkablePluginsVarargs(value: Any*): Self = StObject.set(x, "remarkablePlugins", js.Array(value*))
       
-      @scala.inline
-      def setRemarkablePreset(value: String): Self = StObject.set(x, "remarkablePreset", value.asInstanceOf[js.Any])
+      inline def setRemarkablePreset(value: String): Self = StObject.set(x, "remarkablePreset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemarkablePresetUndefined: Self = StObject.set(x, "remarkablePreset", js.undefined)
+      inline def setRemarkablePresetUndefined: Self = StObject.set(x, "remarkablePreset", js.undefined)
     }
   }
 }

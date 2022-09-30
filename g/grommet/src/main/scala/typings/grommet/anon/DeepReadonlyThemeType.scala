@@ -38,7 +38,7 @@ trait DeepReadonlyThemeType extends StObject {
   
   val dataTable: js.UndefOr[GroupEnd | DeepReadonly[js.UndefOr[GroupEnd]]] = js.undefined
   
-  val dateInput: js.UndefOr[`14` | DeepReadonly[js.UndefOr[`14`]]] = js.undefined
+  val dateInput: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.undefined
   
   val diagram: js.UndefOr[Line | DeepReadonly[js.UndefOr[Line]]] = js.undefined
   
@@ -50,13 +50,13 @@ trait DeepReadonlyThemeType extends StObject {
   
   val global: js.UndefOr[Animation | DeepReadonly[js.UndefOr[Animation]]] = js.undefined
   
-  val grommet: js.UndefOr[`15` | DeepReadonly[js.UndefOr[`15`]]] = js.undefined
+  val grommet: js.UndefOr[`16` | DeepReadonly[js.UndefOr[`16`]]] = js.undefined
   
   val header: js.UndefOr[Sticky | DeepReadonly[js.UndefOr[Sticky]]] = js.undefined
   
   val heading: js.UndefOr[Extend | DeepReadonly[js.UndefOr[Extend]]] = js.undefined
   
-  val icon: js.UndefOr[`30` | DeepReadonly[js.UndefOr[`30`]]] = js.undefined
+  val icon: js.UndefOr[`31` | DeepReadonly[js.UndefOr[`31`]]] = js.undefined
   
   val layer: js.UndefOr[Overlay | DeepReadonly[js.UndefOr[Overlay]]] = js.undefined
   
@@ -93,6 +93,8 @@ trait DeepReadonlyThemeType extends StObject {
   val rangeSelector: js.UndefOr[Edge | DeepReadonly[js.UndefOr[Edge]]] = js.undefined
   
   val select: js.UndefOr[Clear | DeepReadonly[js.UndefOr[Clear]]] = js.undefined
+  
+  val selectMultiple: js.UndefOr[MaxInline | DeepReadonly[js.UndefOr[MaxInline]]] = js.undefined
   
   val skipLinks: js.UndefOr[ContainerLabel | DeepReadonly[js.UndefOr[ContainerLabel]]] = js.undefined
   
@@ -183,7 +185,7 @@ object DeepReadonlyThemeType {
     
     inline def setDataTableUndefined: Self = StObject.set(x, "dataTable", js.undefined)
     
-    inline def setDateInput(value: `14` | DeepReadonly[js.UndefOr[`14`]]): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
+    inline def setDateInput(value: `15` | DeepReadonly[js.UndefOr[`15`]]): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
     
     inline def setDateInputUndefined: Self = StObject.set(x, "dateInput", js.undefined)
     
@@ -207,7 +209,7 @@ object DeepReadonlyThemeType {
     
     inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    inline def setGrommet(value: `15` | DeepReadonly[js.UndefOr[`15`]]): Self = StObject.set(x, "grommet", value.asInstanceOf[js.Any])
+    inline def setGrommet(value: `16` | DeepReadonly[js.UndefOr[`16`]]): Self = StObject.set(x, "grommet", value.asInstanceOf[js.Any])
     
     inline def setGrommetUndefined: Self = StObject.set(x, "grommet", js.undefined)
     
@@ -219,7 +221,7 @@ object DeepReadonlyThemeType {
     
     inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    inline def setIcon(value: `30` | DeepReadonly[js.UndefOr[`30`]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: `31` | DeepReadonly[js.UndefOr[`31`]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
@@ -288,6 +290,10 @@ object DeepReadonlyThemeType {
     inline def setRangeSelectorUndefined: Self = StObject.set(x, "rangeSelector", js.undefined)
     
     inline def setSelect(value: Clear | DeepReadonly[js.UndefOr[Clear]]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSelectMultiple(value: MaxInline | DeepReadonly[js.UndefOr[MaxInline]]): Self = StObject.set(x, "selectMultiple", value.asInstanceOf[js.Any])
+    
+    inline def setSelectMultipleUndefined: Self = StObject.set(x, "selectMultiple", js.undefined)
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     

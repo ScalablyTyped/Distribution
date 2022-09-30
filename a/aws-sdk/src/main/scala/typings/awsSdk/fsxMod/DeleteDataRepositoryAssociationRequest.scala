@@ -16,12 +16,12 @@ trait DeleteDataRepositoryAssociationRequest extends StObject {
   /**
     * Set to true to delete the data in the file system that corresponds to the data repository association.
     */
-  var DeleteDataInFileSystem: typings.awsSdk.fsxMod.DeleteDataInFileSystem
+  var DeleteDataInFileSystem: js.UndefOr[typings.awsSdk.fsxMod.DeleteDataInFileSystem] = js.undefined
 }
 object DeleteDataRepositoryAssociationRequest {
   
-  inline def apply(AssociationId: DataRepositoryAssociationId, DeleteDataInFileSystem: DeleteDataInFileSystem): DeleteDataRepositoryAssociationRequest = {
-    val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], DeleteDataInFileSystem = DeleteDataInFileSystem.asInstanceOf[js.Any])
+  inline def apply(AssociationId: DataRepositoryAssociationId): DeleteDataRepositoryAssociationRequest = {
+    val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDataRepositoryAssociationRequest]
   }
   
@@ -34,5 +34,7 @@ object DeleteDataRepositoryAssociationRequest {
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     inline def setDeleteDataInFileSystem(value: DeleteDataInFileSystem): Self = StObject.set(x, "DeleteDataInFileSystem", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteDataInFileSystemUndefined: Self = StObject.set(x, "DeleteDataInFileSystem", js.undefined)
   }
 }

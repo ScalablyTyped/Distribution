@@ -46,7 +46,7 @@ abstract class WebXRAbstractMotionController protected ()
     */
   handedness: MotionControllerHandedness,
     /**
-    * @hidden
+    * @internal
     */
   _doNotLoadControllerMesh: Boolean
   ) = this()
@@ -62,7 +62,7 @@ abstract class WebXRAbstractMotionController protected ()
     */
   handedness: MotionControllerHandedness,
     /**
-    * @hidden
+    * @internal
     */
   _doNotLoadControllerMesh: Boolean,
     _controllerCache: js.Array[Filename]
@@ -79,7 +79,7 @@ abstract class WebXRAbstractMotionController protected ()
     */
   handedness: MotionControllerHandedness,
     /**
-    * @hidden
+    * @internal
     */
   _doNotLoadControllerMesh: Unit,
     _controllerCache: js.Array[Filename]

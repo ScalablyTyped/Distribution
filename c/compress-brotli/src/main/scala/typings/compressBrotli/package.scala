@@ -12,6 +12,10 @@ type CompressResult = js.Promise[
 
 type DecompressResult = js.Promise[ReturnType[js.Function1[/* s */ String, Any]]]
 
-type Deserialize[T] = js.Function1[/* source */ CompressResult, T]
+type Deserialize[T] = js.Function1[
+js.Promise[
+  /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<node.zlib.CompressCallback>[1] */ js.Any
+], 
+T]
 
 type Serialize[T] = js.Function1[/* source */ InputType, T]

@@ -28,7 +28,7 @@ object mod {
   inline def dragEnable(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnable")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def dragEnable(window: Window, noClick: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dragEnable")(window.asInstanceOf[js.Any], noClick.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def drag_GElement_DraggedElementBaseTypeDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject] = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")().asInstanceOf[DragBehavior[GElement, Datum, Subject]]
+  inline def drag_GElementDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject] = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")().asInstanceOf[DragBehavior[GElement, Datum, Subject]]
   
   @js.native
   trait D3DragEvent[GElement /* <: DraggedElementBaseType */, Datum, Subject] extends StObject {

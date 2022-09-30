@@ -159,8 +159,8 @@ object commonMod {
     var adapter: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* defaultAdapter */ js.Function1[/* options */ this.type, GaxiosPromise[Any]], 
-          GaxiosPromise[Any]
+          /* defaultAdapter */ js.Function1[/* options */ this.type, js.Promise[GaxiosResponse[Any]]], 
+          js.Promise[GaxiosResponse[Any]]
         ]
       ] = js.undefined
     
@@ -236,7 +236,7 @@ object commonMod {
     extension [Self <: GaxiosOptions](x: Self) {
       
       inline def setAdapter(
-        value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, GaxiosPromise[Any]]) => GaxiosPromise[Any]
+        value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, js.Promise[GaxiosResponse[Any]]]) => js.Promise[GaxiosResponse[Any]]
       ): Self = StObject.set(x, "adapter", js.Any.fromFunction2(value))
       
       inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)

@@ -13,25 +13,27 @@ trait FreeCameraInputsManager
      with CameraInputsManager[FreeCamera] {
   
   /**
-    * @hidden
+    * @internal
     */
   var _deviceOrientationInput: Nullable[FreeCameraDeviceOrientationInput] = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _mouseInput: Nullable[FreeCameraMouseInput] = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _mouseWheelInput: Nullable[FreeCameraMouseWheelInput] = js.native
   
   /**
     * Add orientation input support to the input manager.
+    * @param smoothFactor deviceOrientation smoothing. 0: no smoothing, 1: new data ignored, 0.9 recommended for smoothing
     * @returns the current input manager
     */
   def addDeviceOrientation(): FreeCameraInputsManager = js.native
+  def addDeviceOrientation(smoothFactor: Double): FreeCameraInputsManager = js.native
   
   /**
     * Adds gamepad input support to the FreeCameraInputsManager.

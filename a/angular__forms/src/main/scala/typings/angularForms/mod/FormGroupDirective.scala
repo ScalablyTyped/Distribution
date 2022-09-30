@@ -2,7 +2,16 @@ package typings.angularForms.mod
 
 import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnChanges
+import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.SimpleChanges
+import typings.angularCore.mod.ɵɵDirectiveDeclaration
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularForms.angularFormsBooleans.`false`
+import typings.angularForms.angularFormsStrings.`[formGroup]`
+import typings.angularForms.angularFormsStrings.ngForm
+import typings.angularForms.anon.NgSubmit
+import typings.angularForms.anon.Self
+import typings.angularForms.anon.`1`
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,26 +19,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/forms", "FormGroupDirective")
 @js.native
-class FormGroupDirective protected ()
+open class FormGroupDirective protected ()
   extends ControlContainer
      with Form
-     with OnChanges {
+     with OnChanges
+     with OnDestroy {
   def this(
     validators: js.Array[Validator | ValidatorFn],
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
   ) = this()
   
-  /* private */ var _checkFormPresent: js.Any = js.native
+  /* private */ var _checkFormPresent: Any = js.native
+  
+  /* private */ var _cleanUpFormContainer: Any = js.native
   
   /**
     * Reference to an old form group input value, which is needed to cleanup old instance in case it
     * was replaced with a new one.
     */
-  /* private */ var _oldForm: js.Any = js.native
+  /* private */ var _oldForm: Any = js.native
   
-  /* private */ var _updateRegistrations: js.Any = js.native
+  /**
+    * Callback that should be invoked when controls in FormGroup or FormArray collection change
+    * (added or removed). This callback triggers corresponding DOM updates.
+    */
+  /* private */ val _onCollectionChange: Any = js.native
   
-  /* private */ var _updateValidators: js.Any = js.native
+  /* private */ var _setUpFormContainer: Any = js.native
+  
+  /* private */ var _updateRegistrations: Any = js.native
+  
+  /* private */ var _updateValidators: Any = js.native
   
   /**
     * @description
@@ -38,7 +58,7 @@ class FormGroupDirective protected ()
     *
     * @param dir The `FormControlName` directive instance.
     */
-  def addControl(dir: FormControlName): FormControl = js.native
+  def addControl(dir: FormControlName): FormControl[Any] = js.native
   /**
     * @description
     * Add a control to this form.
@@ -49,7 +69,7 @@ class FormGroupDirective protected ()
   override def addControl(dir: NgControl): Unit = js.native
   
   /**
-    * Adds a new `FormArrayName` directive instance to the form.
+    * Performs the necessary setup when a `FormArrayName` directive instance is added to the view.
     *
     * @param dir The `FormArrayName` directive instance.
     */
@@ -70,8 +90,6 @@ class FormGroupDirective protected ()
     */
   def addFormGroup(dir: FormGroupName): Unit = js.native
   
-  /* private */ var asyncValidators: js.Any = js.native
-  
   /**
     * @description
     * Tracks the list of added `FormControlName` instances
@@ -82,7 +100,7 @@ class FormGroupDirective protected ()
     * @description
     * Tracks the `FormGroup` bound to this directive.
     */
-  var form: FormGroup = js.native
+  var form: FormGroup[Any] = js.native
   
   /**
     * @description
@@ -90,7 +108,7 @@ class FormGroupDirective protected ()
     *
     * @param dir The `FormControlName` directive instance.
     */
-  def getControl(dir: FormControlName): FormControl = js.native
+  def getControl(dir: FormControlName): FormControl[Any] = js.native
   /**
     * @description
     * The control directive from which to get the `FormControl`.
@@ -98,7 +116,7 @@ class FormGroupDirective protected ()
     * @param dir: The control directive.
     */
   /* CompleteClass */
-  override def getControl(dir: NgControl): FormControl = js.native
+  override def getControl(dir: NgControl): FormControl[Any] = js.native
   
   /**
     * @description
@@ -106,7 +124,7 @@ class FormGroupDirective protected ()
     *
     * @param dir The `FormArrayName` directive instance.
     */
-  def getFormArray(dir: FormArrayName): FormArray = js.native
+  def getFormArray(dir: FormArrayName): FormArray[Any] = js.native
   
   /**
     * @description
@@ -115,14 +133,14 @@ class FormGroupDirective protected ()
     * @param dir: The form group directive from which to get the `FormGroup`.
     */
   /* CompleteClass */
-  override def getFormGroup(dir: AbstractFormGroupDirective): FormGroup = js.native
+  override def getFormGroup(dir: AbstractFormGroupDirective): FormGroup[Any] = js.native
   /**
     * @description
     * Retrieves the `FormGroup` for a provided `FormGroupName` directive instance
     *
     * @param dir The `FormGroupName` directive instance.
     */
-  def getFormGroup(dir: FormGroupName): FormGroup = js.native
+  def getFormGroup(dir: FormGroupName): FormGroup[Any] = js.native
   
   /**
     * A callback method that is invoked immediately after the
@@ -135,10 +153,17 @@ class FormGroupDirective protected ()
   override def ngOnChanges(changes: SimpleChanges): Unit = js.native
   
   /**
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
+    */
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
+  
+  /**
     * @description
     * Emits an event when the form submission has been triggered.
     */
-  var ngSubmit: EventEmitter[js.Any] = js.native
+  var ngSubmit: EventEmitter[Any] = js.native
   
   /**
     * @description
@@ -172,7 +197,8 @@ class FormGroupDirective protected ()
   override def removeControl(dir: NgControl): Unit = js.native
   
   /**
-    * No-op method to remove the form array.
+    * Performs the necessary cleanup when a `FormArrayName` directive instance is removed from the
+    * view.
     *
     * @param dir The `FormArrayName` directive instance.
     */
@@ -187,7 +213,8 @@ class FormGroupDirective protected ()
   /* CompleteClass */
   override def removeFormGroup(dir: AbstractFormGroupDirective): Unit = js.native
   /**
-    * No-op method to remove the form group.
+    * Performs the necessary cleanup when a `FormGroupName` directive instance is removed from the
+    * view.
     *
     * @param dir The `FormGroupName` directive instance.
     */
@@ -200,7 +227,7 @@ class FormGroupDirective protected ()
     * @param value The new value for the form.
     */
   def resetForm(): Unit = js.native
-  def resetForm(value: js.Any): Unit = js.native
+  def resetForm(value: Any): Unit = js.native
   
   /**
     * @description
@@ -214,7 +241,7 @@ class FormGroupDirective protected ()
     * @param dir The `FormControlName` directive instance.
     * @param value The new value for the directive's control.
     */
-  def updateModel(dir: FormControlName, value: js.Any): Unit = js.native
+  def updateModel(dir: FormControlName, value: Any): Unit = js.native
   /**
     * @description
     * Update the model for a particular control with a new value.
@@ -223,7 +250,42 @@ class FormGroupDirective protected ()
     * @param value: The new value for the control.
     */
   /* CompleteClass */
-  override def updateModel(dir: NgControl, value: js.Any): Unit = js.native
+  override def updateModel(dir: NgControl, value: Any): Unit = js.native
+}
+/* static members */
+object FormGroupDirective {
   
-  /* private */ var validators: js.Any = js.native
+  @JSImport("@angular/forms", "FormGroupDirective")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "FormGroupDirective.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    FormGroupDirective, 
+    `[formGroup]`, 
+    js.Array[ngForm], 
+    `1`, 
+    NgSubmit, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      FormGroupDirective, 
+      `[formGroup]`, 
+      js.Array[ngForm], 
+      `1`, 
+      NgSubmit, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "FormGroupDirective.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[FormGroupDirective, js.Tuple2[Self, Self]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[FormGroupDirective, js.Tuple2[Self, Self]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

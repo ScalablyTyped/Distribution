@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/line-break-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.LineBreak")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.LineBreak")
 @js.native
-class LineBreak protected () extends Widget {
+open class LineBreak protected () extends Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class LineBreak protected () extends Widget {
 }
 object LineBreak {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.LineBreak")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.LineBreak")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,13 +57,13 @@ object LineBreak {
   inline def createInDropZoneUnderWidget(container: DropZone): LineBreak = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LineBreak]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.LineBreak.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.LineBreak.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.LineBreak.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.LineBreak.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

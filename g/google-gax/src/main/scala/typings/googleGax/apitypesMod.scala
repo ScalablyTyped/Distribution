@@ -6,8 +6,6 @@ import typings.googleGax.callMod.CancellablePromise
 import typings.googleGax.gaxMod.CallOptions
 import typings.googleGax.googleErrorMod.GoogleError
 import typings.googleGax.longrunningMod.Operation_
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,13 +26,7 @@ object apitypesMod {
   @js.native
   trait CancellableStream
     extends Duplex
-       with GRPCCallResult {
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-  }
+       with GRPCCallResult
   
   type ClientStreamingCall = js.Function3[
     /* metadata */ js.Object, 
@@ -102,7 +94,16 @@ object apitypesMod {
   
   type RawResponseType = Operation_ | js.Object | Null
   
-  type RequestType = StringDictionary[String | Double | js.Object]
+  trait RequestType
+    extends StObject
+       with /* index */ StringDictionary[String | Double | RequestType | (js.Array[String | Double | RequestType])]
+  object RequestType {
+    
+    inline def apply(): RequestType = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RequestType]
+    }
+  }
   
   type ResponseType = js.Object | Null
   

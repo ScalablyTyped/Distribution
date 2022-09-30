@@ -13,5 +13,5 @@ object mod {
   
   inline def quoteText(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quoteText")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def re(strs: TemplateStringsArray, substs: (String | js.RegExp)*): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")(List(strs.asInstanceOf[js.Any]).`++`(substs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.RegExp]
+  inline def re(strs: TemplateStringsArray, substs: (String | js.RegExp)*): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("re")(scala.List(strs.asInstanceOf[js.Any]).`++`(substs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.RegExp]
 }

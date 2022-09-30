@@ -1,26 +1,26 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`27`
-import typings.activexExcel.activexExcelNumbers.`28`
-import typings.activexExcel.activexExcelNumbers.`29`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`30`
-import typings.activexExcel.activexExcelNumbers.`31`
-import typings.activexExcel.activexExcelNumbers.`32`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`27`
+import typings.activexExcel.activexExcelInts.`28`
+import typings.activexExcel.activexExcelInts.`29`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`30`
+import typings.activexExcel.activexExcelInts.`31`
+import typings.activexExcel.activexExcelInts.`32`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`2`
-  - typings.activexExcel.activexExcelNumbers.`27`
-  - typings.activexExcel.activexExcelNumbers.`28`
-  - typings.activexExcel.activexExcelNumbers.`29`
-  - typings.activexExcel.activexExcelNumbers.`32`
-  - typings.activexExcel.activexExcelNumbers.`30`
-  - typings.activexExcel.activexExcelNumbers.`31`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`2`
+  - typings.activexExcel.activexExcelInts.`27`
+  - typings.activexExcel.activexExcelInts.`28`
+  - typings.activexExcel.activexExcelInts.`29`
+  - typings.activexExcel.activexExcelInts.`32`
+  - typings.activexExcel.activexExcelInts.`30`
+  - typings.activexExcel.activexExcelInts.`31`
 */
 trait XlApplicationInternationalNumbers
   extends StObject

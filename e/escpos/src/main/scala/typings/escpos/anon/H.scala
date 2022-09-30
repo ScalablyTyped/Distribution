@@ -1,9 +1,9 @@
 package typings.escpos.anon
 
-import typings.escpos.escposNumbers.`48`
-import typings.escpos.escposNumbers.`49`
-import typings.escpos.escposNumbers.`50`
-import typings.escpos.escposNumbers.`51`
+import typings.escpos.escposInts.`48`
+import typings.escpos.escposInts.`49`
+import typings.escpos.escposInts.`50`
+import typings.escpos.escposInts.`51`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

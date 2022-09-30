@@ -4,7 +4,7 @@ import typings.react.mod.global.JSX.Element
 import typings.wordpressComponents.anon.Multiple
 import typings.wordpressComponents.anon.OmitHTMLPropsHTMLSelectEl
 import typings.wordpressComponents.anon.OnChange
-import typings.wordpressComponents.anon.`1`
+import typings.wordpressComponents.anon.`2`
 import typings.wordpressComponents.baseControlMod.BaseControl.ControlProps
 import typings.wordpressComponents.selectControlMod.SelectControl.Props
 import org.scalablytyped.runtime.StObject
@@ -28,6 +28,13 @@ object selectControlMod {
     trait Option extends StObject {
       
       /**
+        * Whether or not the option should have the disabled attribute.
+        *
+        * @defaultValue false
+        */
+      var disabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
         * The label to be shown to the user.
         */
       var label: String
@@ -47,12 +54,16 @@ object selectControlMod {
       
       extension [Self <: Option](x: Self) {
         
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
         inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
-    type Props[T /* <: String | js.Array[String] */] = OmitHTMLPropsHTMLSelectEl & ControlProps & OnChange[T] & (`1` | Multiple)
+    type Props[T /* <: String | js.Array[String] */] = OmitHTMLPropsHTMLSelectEl & ControlProps & OnChange[T] & (`2` | Multiple)
   }
 }

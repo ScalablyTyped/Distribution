@@ -4,7 +4,7 @@ import typings.firebaseAuth.distSrcApiAuthenticationMfaMod.FinalizeMfaResponse
 import typings.firebaseAuth.distSrcCorePersistenceMod.PersistedBlob
 import typings.firebaseAuth.distSrcModelAuthMod.AuthInternal
 import typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponse
-import typings.firebaseAuth.firebaseAuthNumbers.`30000`
+import typings.firebaseAuth.firebaseAuthInts.`30000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -40,11 +40,11 @@ import typings.appiumAdb.apkUtilsMod.StartUriOptions
 import typings.appiumAdb.apkUtilsMod.UninstallOptions
 import typings.appiumAdb.apksUtilsMod.InstallApksOptions
 import typings.appiumAdb.appiumAdbBooleans.`false`
-import typings.appiumAdb.appiumAdbNumbers.`0`
-import typings.appiumAdb.appiumAdbNumbers.`1`
-import typings.appiumAdb.appiumAdbNumbers.`2`
-import typings.appiumAdb.appiumAdbNumbers.`3`
-import typings.appiumAdb.appiumAdbNumbers.`4`
+import typings.appiumAdb.appiumAdbInts.`0`
+import typings.appiumAdb.appiumAdbInts.`1`
+import typings.appiumAdb.appiumAdbInts.`2`
+import typings.appiumAdb.appiumAdbInts.`3`
+import typings.appiumAdb.appiumAdbInts.`4`
 import typings.appiumAdb.appiumAdbStrings.`null`
 import typings.appiumAdb.appiumAdbStrings.device
 import typings.appiumAdb.appiumAdbStrings.offline

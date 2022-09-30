@@ -1,7 +1,6 @@
 package typings.typedoc.schemaMod
 
 import typings.typedoc.kindMod.ReflectionKind
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object __ModelToObject {
   
   inline def CommentTag(
     content: js.Array[CommentDisplayPart],
-    tag: ToSerialized[`@$LeftcurlybracketstringRightcurlybracket`]
+    tag: ToSerialized[/* template literal string: @${string} */ String]
   ): typings.typedoc.schemaMod.CommentTag = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.schemaMod.CommentTag]
@@ -103,8 +102,8 @@ object __ModelToObject {
     __obj.asInstanceOf[typings.typedoc.schemaMod.SourceReference]
   }
   
-  inline def Target(text: String): typings.typedoc.anon.Target = {
-    val __obj = js.Dynamic.literal(kind = "inline-tag", tag = "@${string}", text = text.asInstanceOf[js.Any])
+  inline def Target(tag: /* template literal string: @${string} */ String, text: String): typings.typedoc.anon.Target = {
+    val __obj = js.Dynamic.literal(kind = "inline-tag", tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typedoc.anon.Target]
   }
   

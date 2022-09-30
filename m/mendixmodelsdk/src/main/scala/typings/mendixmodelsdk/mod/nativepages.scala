@@ -50,7 +50,7 @@ object nativepages {
     */
   @JSImport("mendixmodelsdk", "nativepages.BottomBarItem")
   @js.native
-  class BottomBarItem protected ()
+  open class BottomBarItem protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.nativepages.BottomBarItem {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -109,7 +109,7 @@ object nativepages {
     */
   @JSImport("mendixmodelsdk", "nativepages.NativeLayout")
   @js.native
-  class NativeLayout protected ()
+  open class NativeLayout protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.nativepages.NativeLayout {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -155,7 +155,7 @@ object nativepages {
     */
   @JSImport("mendixmodelsdk", "nativepages.NativeLayoutCallArgument")
   @js.native
-  class NativeLayoutCallArgument protected ()
+  open class NativeLayoutCallArgument protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.nativepages.NativeLayoutCallArgument {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -214,7 +214,7 @@ object nativepages {
     */
   @JSImport("mendixmodelsdk", "nativepages.NativePage")
   @js.native
-  class NativePage protected ()
+  open class NativePage protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.nativepages.NativePage {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -260,7 +260,7 @@ object nativepages {
     */
   @JSImport("mendixmodelsdk", "nativepages.NativePageClientAction")
   @js.native
-  class NativePageClientAction protected ()
+  open class NativePageClientAction protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.nativepages.NativePageClientAction {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -451,7 +451,7 @@ object nativepages {
     */
   @JSImport("mendixmodelsdk", "nativepages.NativePlaceholder")
   @js.native
-  class NativePlaceholder protected ()
+  open class NativePlaceholder protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.nativepages.NativePlaceholder {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,

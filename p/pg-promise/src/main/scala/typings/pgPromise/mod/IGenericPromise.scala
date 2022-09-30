@@ -13,9 +13,9 @@ trait IGenericPromise extends StObject {
       /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
       Unit
     ]
-  ): XPromise[Any] = js.native
+  ): js.Promise[Any] = js.native
   
-  def all(iterable: Any): XPromise[Any] = js.native
+  def all(iterable: Any): js.Promise[Any] = js.native
   
   def reject(): Unit = js.native
   def reject(reason: Any): Unit = js.native

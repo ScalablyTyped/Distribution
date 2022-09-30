@@ -118,9 +118,9 @@ inline def copyTo(dest: Unit, source: Unit, names: Any): Any = (^.asInstanceOf[j
 inline def copyTo(dest: Unit, source: Unit, names: Any, usePrototypeKeys: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyTo")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any], names.asInstanceOf[js.Any], usePrototypeKeys.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def copyTo(dest: Unit, source: Unit, names: Unit, usePrototypeKeys: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyTo")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any], names.asInstanceOf[js.Any], usePrototypeKeys.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def create(name: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def create(name: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scala.List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
-inline def createByAlias(alias: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createByAlias")(List(alias.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def createByAlias(alias: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createByAlias")(scala.List(alias.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def createWidget(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createWidget")().asInstanceOf[Unit]
 
@@ -191,7 +191,7 @@ inline def deprecate(packageName: Unit, since: Unit, closure: Unit, scope: Any):
 inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
 inline def destroy(args: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def destroyMembers(o: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyMembers")(List(o.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def destroyMembers(o: Any, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyMembers")(scala.List(o.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
 inline def each(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("each")().asInstanceOf[Boolean]
 inline def each(iterable: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("each")(iterable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -314,7 +314,7 @@ inline def identityFn(o: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("i
 inline def ieVersion: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("ieVersion").asInstanceOf[Double]
 inline def ieVersion_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ieVersion")(x.asInstanceOf[js.Any])
 
-inline def invoke(arr: Any, methodName: java.lang.String, args: Any*): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(arr.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.extjs.Ext.Array]
+inline def invoke(arr: Any, methodName: java.lang.String, args: Any*): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((scala.List(arr.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.extjs.Ext.Array]
 
 inline def isArray(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")().asInstanceOf[Boolean]
 inline def isArray(target: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -494,7 +494,7 @@ inline def iterate(`object`: Unit, fn: Any): Unit = (^.asInstanceOf[js.Dynamic].
 inline def iterate(`object`: Unit, fn: Any, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def iterate(`object`: Unit, fn: Unit, scope: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def log(options: Any, message: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(options.asInstanceOf[js.Any]).`++`(message.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def log(options: Any, message: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(scala.List(options.asInstanceOf[js.Any]).`++`(message.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
 inline def max(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[Any]
 inline def max(array: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
@@ -504,7 +504,7 @@ inline def max(array: Unit, comparisonFn: Any): Any = (^.asInstanceOf[js.Dynamic
 inline def mean(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")().asInstanceOf[Double]
 inline def mean(array: typings.extjs.Ext.Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(array.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def merge(destination: Any, `object`: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(destination.asInstanceOf[js.Any]).`++`(`object`.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def merge(destination: Any, `object`: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(destination.asInstanceOf[js.Any]).`++`(`object`.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def min(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[Any]
 inline def min(array: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(array.asInstanceOf[js.Any]).asInstanceOf[Any]

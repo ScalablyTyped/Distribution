@@ -22,7 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait CADESPluginAsync
-  extends CADESPluginBase
+  extends StObject
+     with CADESPluginBase
      with CADESPlugin {
   
   @JSName("CreateObjectAsync")
@@ -43,12 +44,4 @@ trait CADESPluginAsync
   def CreateObjectAsync_CAdESCOMStore(objName: CAdESCOMDotStore): js.Promise[StoreAsync] = js.native
   
   def ReleasePluginObjects(): js.Promise[Boolean] = js.native
-  
-  /* InferMemberOverrides */
-  override def `then`[B](
-    onFulfilled: js.Function1[scala.Nothing, B | js.Thenable[B]],
-    onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
-  ): js.Promise[B] & js.Thenable[B] = js.native
-  /* InferMemberOverrides */
-  override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] & js.Thenable[B] = js.native
 }

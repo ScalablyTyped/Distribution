@@ -375,14 +375,14 @@ object helpersMod {
   
   inline def log(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
-  inline def mixin(Base: js.Object, mixins: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(List(Base.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def mixin(Base: js.Object, mixins: js.Object*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(scala.List(Base.asInstanceOf[js.Any]).`++`(mixins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   
   inline def objectEach(
     `object`: js.Object,
     iteratee: js.Function3[/* value */ Any, /* key */ Any, /* object */ js.Object, Unit]
   ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("objectEach")(`object`.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  inline def partial(func: js.Function0[Unit], params: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
+  inline def partial(func: js.Function0[Unit], params: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(scala.List(func.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
   
   inline def pipe(functions: js.Function0[Unit]*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function0[Unit]]
   
@@ -432,7 +432,7 @@ object helpersMod {
   
   inline def to2dArray(arr: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("to2dArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def toSingleLine(strings: js.Array[String], expressions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSingleLine")(List(strings.asInstanceOf[js.Any]).`++`(expressions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def toSingleLine(strings: js.Array[String], expressions: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSingleLine")(scala.List(strings.asInstanceOf[js.Any]).`++`(expressions.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def toUpperCaseFirst(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperCaseFirst")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   

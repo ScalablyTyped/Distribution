@@ -1,13 +1,13 @@
 package typings.tablestore.mod
 
-import typings.tablestore.tablestoreNumbers.`1`
-import typings.tablestore.tablestoreNumbers.`2`
-import typings.tablestore.tablestoreNumbers.`3`
-import typings.tablestore.tablestoreNumbers.`4`
-import typings.tablestore.tablestoreNumbers.`5`
-import typings.tablestore.tablestoreNumbers.`6`
-import typings.tablestore.tablestoreNumbers.`7`
-import typings.tablestore.tablestoreNumbers.`8`
+import typings.tablestore.tablestoreInts.`1`
+import typings.tablestore.tablestoreInts.`2`
+import typings.tablestore.tablestoreInts.`3`
+import typings.tablestore.tablestoreInts.`4`
+import typings.tablestore.tablestoreInts.`5`
+import typings.tablestore.tablestoreInts.`6`
+import typings.tablestore.tablestoreInts.`7`
+import typings.tablestore.tablestoreInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

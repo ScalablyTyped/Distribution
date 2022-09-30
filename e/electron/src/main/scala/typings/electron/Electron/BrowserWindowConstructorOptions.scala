@@ -33,8 +33,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BrowserWindowConstructorOptions extends StObject {
   
   /**
-    * Whether the web view accepts a single mouse-down event that simultaneously
-    * activates the window. Default is `false`.
+    * Whether clicking an inactive window will also click through to the web contents.
+    * Default is `false` on macOS. This option is not configurable on other platforms.
+    *
+    * @platform darwin
     */
   var acceptFirstMouse: js.UndefOr[Boolean] = js.undefined
   
@@ -50,19 +52,22 @@ trait BrowserWindowConstructorOptions extends StObject {
   var autoHideMenuBar: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Window's background color as a hexadecimal value, like `#66CD00` or `#FFF` or
-    * `#80FFFFFF` (alpha in #AARRGGBB format is supported if `transparent` is set to
-    * `true`). Default is `#FFF` (white).
+    * The window's background color in Hex, RGB, RGBA, HSL, HSLA or named CSS color
+    * format. Alpha in #AARRGGBB format is supported if `transparent` is set to
+    * `true`. Default is `#FFF` (white). See win.setBackgroundColor for more
+    * information.
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Show window in the center of the screen.
+    * Show window in the center of the screen. Default is `false`.
     */
   var center: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether window is closable. This is not implemented on Linux. Default is `true`.
+    *
+    * @platform darwin,win32
     */
   var closable: js.UndefOr[Boolean] = js.undefined
   
@@ -80,6 +85,8 @@ trait BrowserWindowConstructorOptions extends StObject {
   /**
     * Enable the window to be resized larger than screen. Only relevant for macOS, as
     * other OSes allow larger-than-screen windows by default. Default is `false`.
+    *
+    * @platform darwin
     */
   var enableLargerThanScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -92,7 +99,7 @@ trait BrowserWindowConstructorOptions extends StObject {
   var focusable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify `false` to create a Frameless Window. Default is `true`.
+    * Specify `false` to create a frameless window. Default is `true`.
     */
   var frame: js.UndefOr[Boolean] = js.undefined
   
@@ -103,8 +110,11 @@ trait BrowserWindowConstructorOptions extends StObject {
   var fullscreen: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Shows the title in the title bar in full screen mode on macOS for all
-    * `titleBarStyle` options. Default is `false`.
+    * Shows the title in the title bar in full screen mode on macOS for `hiddenInset`
+    * titleBarStyle. Default is `false`.
+    *
+    * @deprecated
+    * @platform darwin
     */
   var fullscreenWindowTitle: js.UndefOr[Boolean] = js.undefined
   
@@ -150,6 +160,8 @@ trait BrowserWindowConstructorOptions extends StObject {
   /**
     * Whether window is maximizable. This is not implemented on Linux. Default is
     * `true`.
+    *
+    * @platform darwin,win32
     */
   var maximizable: js.UndefOr[Boolean] = js.undefined
   
@@ -166,6 +178,8 @@ trait BrowserWindowConstructorOptions extends StObject {
   /**
     * Whether window is minimizable. This is not implemented on Linux. Default is
     * `true`.
+    *
+    * @platform darwin,win32
     */
   var minimizable: js.UndefOr[Boolean] = js.undefined
   
@@ -177,12 +191,16 @@ trait BrowserWindowConstructorOptions extends StObject {
   
   /**
     * Whether window is movable. This is not implemented on Linux. Default is `true`.
+    *
+    * @platform darwin,win32
     */
   var movable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the initial opacity of the window, between 0.0 (fully transparent) and 1.0
     * (fully opaque). This is only implemented on Windows and macOS.
+    *
+    * @platform darwin,win32
     */
   var opacity: js.UndefOr[Double] = js.undefined
   
@@ -205,17 +223,30 @@ trait BrowserWindowConstructorOptions extends StObject {
   var resizable: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether frameless window should have rounded corners on macOS. Default is
+    * `true`. Setting this property to `false` will prevent the window from being
+    * fullscreenable.
+    *
+    * @platform darwin
+    */
+  var roundedCorners: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether window should be shown when created. Default is `true`.
     */
   var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use pre-Lion fullscreen on macOS. Default is `false`.
+    *
+    * @platform darwin
     */
   var simpleFullscreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to show the window in taskbar. Default is `false`.
+    *
+    * @platform darwin,win32
     */
   var skipTaskbar: js.UndefOr[Boolean] = js.undefined
   
@@ -224,6 +255,8 @@ trait BrowserWindowConstructorOptions extends StObject {
     * Windows with the same tabbing identifier will be grouped together. This also
     * adds a native new tab button to your window's tab bar and allows your `app` and
     * window to receive the `new-window-for-tab` event.
+    *
+    * @platform darwin
     */
   var tabbingIdentifier: js.UndefOr[String] = js.undefined
   
@@ -241,13 +274,26 @@ trait BrowserWindowConstructorOptions extends StObject {
   var title: js.UndefOr[String] = js.undefined
   
   /**
+    *  When using a frameless window in conjunction with
+    * `win.setWindowButtonVisibility(true)` on macOS or using a `titleBarStyle` so
+    * that the standard window controls ("traffic lights" on macOS) are visible, this
+    * property enables the Window Controls Overlay JavaScript APIs and CSS Environment
+    * Variables. Specifying `true` will result in an overlay with default system
+    * colors. Default is `false`.
+    */
+  var titleBarOverlay: js.UndefOr[TitleBarOverlay | Boolean] = js.undefined
+  
+  /**
     * The style of window title bar. Default is `default`. Possible values are:
+    *
+    * @platform darwin,win32
     */
   var titleBarStyle: js.UndefOr[default | hidden | hiddenInset | customButtonsOnHover] = js.undefined
   
   /**
-    * Set a custom position for the traffic light buttons. Can only be used with
-    * `titleBarStyle` set to `hidden`
+    * Set a custom position for the traffic light buttons in frameless windows.
+    *
+    * @platform darwin
     */
   var trafficLightPosition: js.UndefOr[Point] = js.undefined
   
@@ -273,11 +319,11 @@ trait BrowserWindowConstructorOptions extends StObject {
     * Add a type of vibrancy effect to the window, only on macOS. Can be
     * `appearance-based`, `light`, `dark`, `titlebar`, `selection`, `menu`, `popover`,
     * `sidebar`, `medium-light`, `ultra-dark`, `header`, `sheet`, `window`, `hud`,
-    * `fullscreen-ui`, `tooltip`, `content`, `under-window`, or `under-page`.  Please
-    * note that using `frame: false` in combination with a vibrancy value requires
-    * that you use a non-default `titleBarStyle` as well. Also note that
-    * `appearance-based`, `light`, `dark`, `medium-light`, and `ultra-dark` have been
-    * deprecated and will be removed in an upcoming version of macOS.
+    * `fullscreen-ui`, `tooltip`, `content`, `under-window`, or `under-page`. Please
+    * note that `appearance-based`, `light`, `dark`, `medium-light`, and `ultra-dark`
+    * are deprecated and have been removed in macOS Catalina (10.15).
+    *
+    * @platform darwin
     */
   var vibrancy: js.UndefOr[
     `appearance-based` | light | dark | titlebar | selection | menu | popover | sidebar | `medium-light` | `ultra-dark` | header | sheet | window | hud | `fullscreen-ui` | tooltip | content | `under-window` | `under-page`
@@ -286,6 +332,8 @@ trait BrowserWindowConstructorOptions extends StObject {
   /**
     * Specify how the material appearance should reflect window activity state on
     * macOS. Must be used with the `vibrancy` property. Possible values are:
+    *
+    * @platform darwin
     */
   var visualEffectState: js.UndefOr[followWindow | active | inactive] = js.undefined
   
@@ -317,6 +365,8 @@ trait BrowserWindowConstructorOptions extends StObject {
     * will grow to the preferred width of the web page when zoomed, `false` will cause
     * it to zoom to the width of the screen. This will also affect the behavior when
     * calling `maximize()` directly. Default is `false`.
+    *
+    * @platform darwin
     */
   var zoomToPageWidth: js.UndefOr[Boolean] = js.undefined
 }
@@ -449,6 +499,10 @@ object BrowserWindowConstructorOptions {
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
+    inline def setRoundedCorners(value: Boolean): Self = StObject.set(x, "roundedCorners", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedCornersUndefined: Self = StObject.set(x, "roundedCorners", js.undefined)
+    
     inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
@@ -470,6 +524,10 @@ object BrowserWindowConstructorOptions {
     inline def setThickFrameUndefined: Self = StObject.set(x, "thickFrame", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleBarOverlay(value: TitleBarOverlay | Boolean): Self = StObject.set(x, "titleBarOverlay", value.asInstanceOf[js.Any])
+    
+    inline def setTitleBarOverlayUndefined: Self = StObject.set(x, "titleBarOverlay", js.undefined)
     
     inline def setTitleBarStyle(value: default | hidden | hiddenInset | customButtonsOnHover): Self = StObject.set(x, "titleBarStyle", value.asInstanceOf[js.Any])
     

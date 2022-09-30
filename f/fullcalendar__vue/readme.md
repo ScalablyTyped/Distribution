@@ -1,19 +1,19 @@
 
 # Scala.js typings for fullcalendar__vue
 
-Typings are for version 4.4
+Typings are for version 5.11.2
 
 ## Library description:
-An official FullCalendar component for Vue
+An official FullCalendar component for Vue 2
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @fullcalendar/vue |
 | Keywords           | vue, calendar, fullcalendar |
-| # releases         | 25 |
-| # dependents       | 17 |
-| # downloads        | 1099557 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 236020.66666666666 |
+| # stars            | 1054.0 |
 
 ## Links
 - [Homepage](https://github.com/fullcalendar/fullcalendar-vue#readme)
@@ -24,7 +24,7 @@ An official FullCalendar component for Vue
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

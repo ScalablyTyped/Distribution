@@ -2,19 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.sdb
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1000`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1001`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1002`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1003`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1004`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1005`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1006`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1007`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1008`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`1000`
+import typings.activexLibreoffice.activexLibreofficeInts.`1001`
+import typings.activexLibreoffice.activexLibreofficeInts.`1002`
+import typings.activexLibreoffice.activexLibreofficeInts.`1003`
+import typings.activexLibreoffice.activexLibreofficeInts.`1004`
+import typings.activexLibreoffice.activexLibreofficeInts.`1005`
+import typings.activexLibreoffice.activexLibreofficeInts.`1006`
+import typings.activexLibreoffice.activexLibreofficeInts.`1007`
+import typings.activexLibreoffice.activexLibreofficeInts.`1008`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`3`
 import typings.activexLibreoffice.com_.sun.star.awt.XKeyHandler
 import typings.activexLibreoffice.com_.sun.star.awt.XMouseClickHandler
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
@@ -54,10 +54,10 @@ object application {
   object CopyTableContinuation {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
+      - typings.activexLibreoffice.activexLibreofficeInts.`3`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`0`
     */
     trait Constants extends StObject
     object Constants {
@@ -75,10 +75,10 @@ object application {
   object CopyTableOperation {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`0`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`3`
+      - typings.activexLibreoffice.activexLibreofficeInts.`0`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
     */
     trait Constants extends StObject
     object Constants {
@@ -220,8 +220,8 @@ object application {
   object DatabaseObject {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`3`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`3`
     */
     trait Constants extends StObject
     object Constants {
@@ -235,15 +235,15 @@ object application {
   object DatabaseObjectContainer {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1005`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1004`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1002`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1007`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1001`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1003`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1008`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1006`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1000`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1005`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1004`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1002`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1007`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1001`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1003`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1008`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1006`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1000`
     */
     trait Constants extends StObject
     object Constants {

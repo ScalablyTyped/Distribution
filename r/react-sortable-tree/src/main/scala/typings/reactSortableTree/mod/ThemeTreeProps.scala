@@ -7,17 +7,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThemeTreeProps extends StObject {
+trait ThemeTreeProps[T] extends StObject {
   
   var innerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var nodeContentRenderer: js.UndefOr[NodeRenderer] = js.undefined
+  var nodeContentRenderer: js.UndefOr[NodeRenderer[T]] = js.undefined
   
-  var placeholderRenderer: js.UndefOr[PlaceholderRenderer] = js.undefined
+  var placeholderRenderer: js.UndefOr[PlaceholderRenderer[T]] = js.undefined
   
   var reactVirtualizedListProps: js.UndefOr[PartialListProps] = js.undefined
   
-  var rowHeight: js.UndefOr[(js.Function1[/* info */ NodeData & Index, Double]) | Double] = js.undefined
+  var rowHeight: js.UndefOr[(js.Function1[/* info */ NodeData[T] & Index, Double]) | Double] = js.undefined
   
   var scaffoldBlockPxWidth: js.UndefOr[Double] = js.undefined
   
@@ -27,22 +27,22 @@ trait ThemeTreeProps extends StObject {
 }
 object ThemeTreeProps {
   
-  inline def apply(): ThemeTreeProps = {
+  inline def apply[T](): ThemeTreeProps[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ThemeTreeProps]
+    __obj.asInstanceOf[ThemeTreeProps[T]]
   }
   
-  extension [Self <: ThemeTreeProps](x: Self) {
+  extension [Self <: ThemeTreeProps[?], T](x: Self & ThemeTreeProps[T]) {
     
     inline def setInnerStyle(value: CSSProperties): Self = StObject.set(x, "innerStyle", value.asInstanceOf[js.Any])
     
     inline def setInnerStyleUndefined: Self = StObject.set(x, "innerStyle", js.undefined)
     
-    inline def setNodeContentRenderer(value: NodeRenderer): Self = StObject.set(x, "nodeContentRenderer", value.asInstanceOf[js.Any])
+    inline def setNodeContentRenderer(value: NodeRenderer[T]): Self = StObject.set(x, "nodeContentRenderer", value.asInstanceOf[js.Any])
     
     inline def setNodeContentRendererUndefined: Self = StObject.set(x, "nodeContentRenderer", js.undefined)
     
-    inline def setPlaceholderRenderer(value: PlaceholderRenderer): Self = StObject.set(x, "placeholderRenderer", value.asInstanceOf[js.Any])
+    inline def setPlaceholderRenderer(value: PlaceholderRenderer[T]): Self = StObject.set(x, "placeholderRenderer", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderRendererUndefined: Self = StObject.set(x, "placeholderRenderer", js.undefined)
     
@@ -50,9 +50,9 @@ object ThemeTreeProps {
     
     inline def setReactVirtualizedListPropsUndefined: Self = StObject.set(x, "reactVirtualizedListProps", js.undefined)
     
-    inline def setRowHeight(value: (js.Function1[/* info */ NodeData & Index, Double]) | Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: (js.Function1[/* info */ NodeData[T] & Index, Double]) | Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    inline def setRowHeightFunction1(value: /* info */ NodeData & Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
+    inline def setRowHeightFunction1(value: /* info */ NodeData[T] & Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
     
     inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     

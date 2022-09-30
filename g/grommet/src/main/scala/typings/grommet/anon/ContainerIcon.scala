@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContainerIcon extends StObject {
   
-  var container: js.UndefOr[BoxProps | `4` | `33`] = js.undefined
+  var container: js.UndefOr[BoxProps | `4` | `34`] = js.undefined
   
   var icon: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
@@ -23,7 +23,7 @@ object ContainerIcon {
   
   extension [Self <: ContainerIcon](x: Self) {
     
-    inline def setContainer(value: BoxProps | `4` | `33`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: BoxProps | `4` | `34`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     

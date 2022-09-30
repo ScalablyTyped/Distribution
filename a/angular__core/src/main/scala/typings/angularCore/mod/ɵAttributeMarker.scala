@@ -1,26 +1,26 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreNumbers.`-1`
-import typings.angularCore.angularCoreNumbers.`0`
-import typings.angularCore.angularCoreNumbers.`1`
-import typings.angularCore.angularCoreNumbers.`2`
-import typings.angularCore.angularCoreNumbers.`3`
-import typings.angularCore.angularCoreNumbers.`4`
-import typings.angularCore.angularCoreNumbers.`5`
-import typings.angularCore.angularCoreNumbers.`6`
+import typings.angularCore.angularCoreInts.`-1`
+import typings.angularCore.angularCoreInts.`0`
+import typings.angularCore.angularCoreInts.`1`
+import typings.angularCore.angularCoreInts.`2`
+import typings.angularCore.angularCoreInts.`3`
+import typings.angularCore.angularCoreInts.`4`
+import typings.angularCore.angularCoreInts.`5`
+import typings.angularCore.angularCoreInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreNumbers.`-1`
-  - typings.angularCore.angularCoreNumbers.`0`
-  - typings.angularCore.angularCoreNumbers.`1`
-  - typings.angularCore.angularCoreNumbers.`2`
-  - typings.angularCore.angularCoreNumbers.`3`
-  - typings.angularCore.angularCoreNumbers.`4`
-  - typings.angularCore.angularCoreNumbers.`5`
-  - typings.angularCore.angularCoreNumbers.`6`
+  - typings.angularCore.angularCoreInts.`-1`
+  - typings.angularCore.angularCoreInts.`0`
+  - typings.angularCore.angularCoreInts.`1`
+  - typings.angularCore.angularCoreInts.`2`
+  - typings.angularCore.angularCoreInts.`3`
+  - typings.angularCore.angularCoreInts.`4`
+  - typings.angularCore.angularCoreInts.`5`
+  - typings.angularCore.angularCoreInts.`6`
 */
 trait ɵAttributeMarker extends StObject
 object ɵAttributeMarker {

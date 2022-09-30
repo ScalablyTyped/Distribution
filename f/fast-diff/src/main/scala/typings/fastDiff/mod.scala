@@ -1,9 +1,9 @@
 package typings.fastDiff
 
 import typings.fastDiff.anon.Index
-import typings.fastDiff.fastDiffNumbers.`-1`
-import typings.fastDiff.fastDiffNumbers.`0`
-import typings.fastDiff.fastDiffNumbers.`1`
+import typings.fastDiff.fastDiffInts.`-1`
+import typings.fastDiff.fastDiffInts.`0`
+import typings.fastDiff.fastDiffInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

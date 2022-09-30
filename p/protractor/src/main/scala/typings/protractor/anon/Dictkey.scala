@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var browserName: js.UndefOr[String] = js.undefined
   
@@ -81,7 +81,7 @@ object Dictkey {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
@@ -107,6 +107,6 @@ object Dictkey {
     
     inline def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
     
-    inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
+    inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value*))
   }
 }

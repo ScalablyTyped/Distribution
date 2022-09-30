@@ -1,6 +1,6 @@
 package typings.electron.Electron
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ trait AddRepresentationOptions extends StObject {
   /**
     * The scale factor to add the image representation for.
     */
-  var scaleFactor: Double
+  var scaleFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 0. Required if a bitmap buffer is specified as `buffer`.
@@ -34,8 +34,8 @@ trait AddRepresentationOptions extends StObject {
 }
 object AddRepresentationOptions {
   
-  inline def apply(scaleFactor: Double): AddRepresentationOptions = {
-    val __obj = js.Dynamic.literal(scaleFactor = scaleFactor.asInstanceOf[js.Any])
+  inline def apply(): AddRepresentationOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddRepresentationOptions]
   }
   
@@ -54,6 +54,8 @@ object AddRepresentationOptions {
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

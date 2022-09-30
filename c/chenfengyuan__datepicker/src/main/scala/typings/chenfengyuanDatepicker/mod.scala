@@ -1,12 +1,12 @@
 package typings.chenfengyuanDatepicker
 
-import typings.chenfengyuanDatepicker.chenfengyuanDatepickerNumbers.`0`
-import typings.chenfengyuanDatepicker.chenfengyuanDatepickerNumbers.`1`
-import typings.chenfengyuanDatepicker.chenfengyuanDatepickerNumbers.`2`
-import typings.chenfengyuanDatepicker.chenfengyuanDatepickerNumbers.`3`
-import typings.chenfengyuanDatepicker.chenfengyuanDatepickerNumbers.`4`
-import typings.chenfengyuanDatepicker.chenfengyuanDatepickerNumbers.`5`
-import typings.chenfengyuanDatepicker.chenfengyuanDatepickerNumbers.`6`
+import typings.chenfengyuanDatepicker.chenfengyuanDatepickerInts.`0`
+import typings.chenfengyuanDatepicker.chenfengyuanDatepickerInts.`1`
+import typings.chenfengyuanDatepicker.chenfengyuanDatepickerInts.`2`
+import typings.chenfengyuanDatepicker.chenfengyuanDatepickerInts.`3`
+import typings.chenfengyuanDatepicker.chenfengyuanDatepickerInts.`4`
+import typings.chenfengyuanDatepicker.chenfengyuanDatepickerInts.`5`
+import typings.chenfengyuanDatepicker.chenfengyuanDatepickerInts.`6`
 import typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.datepicker
 import typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.day
 import typings.chenfengyuanDatepicker.chenfengyuanDatepickerStrings.month

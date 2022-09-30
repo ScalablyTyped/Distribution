@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait absoluteUrlOptions extends StObject {
   
+  /** Replace localhost with 127.0.0.1. Useful for services that don't recognize localhost as a domain name. */
   var replaceLocalhost: js.UndefOr[Boolean] = js.undefined
   
+  /** Override the default ROOT_URL from the server environment. For example: "`http://foo.example.com`" */
   var rootUrl: js.UndefOr[String] = js.undefined
   
+  /** Create an HTTPS URL. */
   var secure: js.UndefOr[Boolean] = js.undefined
 }
 object absoluteUrlOptions {

@@ -16,6 +16,8 @@ trait TableProps extends StObject {
   var children: js.UndefOr[ReactNode] = js.undefined
   
   var maxHeight: js.UndefOr[Double | String] = js.undefined
+  
+  var stickyColumns: js.UndefOr[Double] = js.undefined
 }
 object TableProps {
   
@@ -39,5 +41,9 @@ object TableProps {
     inline def setMaxHeight(value: Double | String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setStickyColumns(value: Double): Self = StObject.set(x, "stickyColumns", value.asInstanceOf[js.Any])
+    
+    inline def setStickyColumnsUndefined: Self = StObject.set(x, "stickyColumns", js.undefined)
   }
 }

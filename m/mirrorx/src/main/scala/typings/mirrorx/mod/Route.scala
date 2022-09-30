@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mirrorx", "Route")
 @js.native
-class Route[T /* <: RouteProps */] protected ()
-  extends Component[T, js.Any, js.Any] {
+open class Route[T /* <: RouteProps */] protected () extends Component[T, Any, Any] {
   def this(props: T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: T, context: js.Any) = this()
+  def this(props: T, context: Any) = this()
 }

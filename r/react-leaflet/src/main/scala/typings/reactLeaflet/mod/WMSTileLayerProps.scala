@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
 - typings.leaflet.mod.GridLayerOptions because Already inherited
 - typings.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children
-- typings.reactLeaflet.mod.GridLayerProps because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined  */ trait WMSTileLayerProps
+- typings.reactLeaflet.mod.GridLayerProps because var conflicts: attribution, bounds, className, keepBuffer, maxNativeZoom, maxZoom, minNativeZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined  */ trait WMSTileLayerProps
   extends StObject
      with TileLayerEvents
      with WMSOptions {
@@ -34,7 +34,7 @@ object WMSTileLayerProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     

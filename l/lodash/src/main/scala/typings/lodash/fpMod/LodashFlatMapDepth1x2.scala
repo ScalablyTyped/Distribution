@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.lodash.mod.ListOfRecursiveArraysOrValues
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
@@ -17,7 +16,7 @@ trait LodashFlatMapDepth1x2 extends StObject {
   def apply(iteratee: __): LodashFlatMapDepth3x6 = js.native
   def apply(iteratee: __, collection: js.Object): LodashFlatMapDepth3x6 = js.native
   def apply[T /* <: js.Object */](iteratee: __, collection: T): LodashFlatMapDepth2x6[T] = js.native
-  def apply[T](iteratee: __, collection: List[T]): LodashFlatMapDepth1x6[T] = js.native
+  def apply[T](iteratee: __, collection: typings.lodash.mod.List[T]): LodashFlatMapDepth1x6[T] = js.native
   def apply[T, TResult](iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LodashFlatMapDepth1x3[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
@@ -28,6 +27,6 @@ trait LodashFlatMapDepth1x2 extends StObject {
   ): js.Array[TResult] = js.native
   def apply[T, TResult](
     iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult],
-    collection: List[T]
+    collection: typings.lodash.mod.List[T]
   ): js.Array[TResult] = js.native
 }

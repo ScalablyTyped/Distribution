@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-email
 
-Typings are for version 3.2.1
+Typings are for version 4.0.1
 
 ## Library description:
 Get the email of an npm user
@@ -10,10 +10,10 @@ Get the email of an npm user
 | ------------------ | :-------------: |
 | Full name          | npm-email |
 | Keywords           | npm, email, address, user, username, registry, json, get |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 7869 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 580.0 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/npm-email#readme)

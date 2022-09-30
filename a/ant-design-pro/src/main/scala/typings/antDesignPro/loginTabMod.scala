@@ -11,10 +11,9 @@ object loginTabMod {
   
   @JSImport("ant-design-pro/lib/Login/LoginTab", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LoginTabProps, js.Any, js.Any]
+  open class default () extends Component[LoginTabProps, Any, Any]
   
-  type LoginTab = Component[LoginTabProps, js.Any, js.Any]
+  type LoginTab = Component[LoginTabProps, Any, Any]
   
   trait LoginTabProps extends StObject {
     

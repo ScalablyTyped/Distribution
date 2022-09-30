@@ -1,72 +1,72 @@
 package typings.mysql.mod
 
-import typings.mysql.mysqlNumbers.`0x00`
-import typings.mysql.mysqlNumbers.`0x01`
-import typings.mysql.mysqlNumbers.`0x02`
-import typings.mysql.mysqlNumbers.`0x03`
-import typings.mysql.mysqlNumbers.`0x04`
-import typings.mysql.mysqlNumbers.`0x05`
-import typings.mysql.mysqlNumbers.`0x06`
-import typings.mysql.mysqlNumbers.`0x07`
-import typings.mysql.mysqlNumbers.`0x08`
-import typings.mysql.mysqlNumbers.`0x09`
-import typings.mysql.mysqlNumbers.`0x0a`
-import typings.mysql.mysqlNumbers.`0x0b`
-import typings.mysql.mysqlNumbers.`0x0c`
-import typings.mysql.mysqlNumbers.`0x0d`
-import typings.mysql.mysqlNumbers.`0x0e`
-import typings.mysql.mysqlNumbers.`0x0f`
-import typings.mysql.mysqlNumbers.`0x10`
-import typings.mysql.mysqlNumbers.`0x11`
-import typings.mysql.mysqlNumbers.`0x12`
-import typings.mysql.mysqlNumbers.`0x13`
-import typings.mysql.mysqlNumbers.`0xf5`
-import typings.mysql.mysqlNumbers.`0xf6`
-import typings.mysql.mysqlNumbers.`0xf7`
-import typings.mysql.mysqlNumbers.`0xf8`
-import typings.mysql.mysqlNumbers.`0xf9`
-import typings.mysql.mysqlNumbers.`0xfa`
-import typings.mysql.mysqlNumbers.`0xfb`
-import typings.mysql.mysqlNumbers.`0xfc`
-import typings.mysql.mysqlNumbers.`0xfd`
-import typings.mysql.mysqlNumbers.`0xfe`
-import typings.mysql.mysqlNumbers.`0xff`
+import typings.mysql.mysqlInts.`0x00`
+import typings.mysql.mysqlInts.`0x01`
+import typings.mysql.mysqlInts.`0x02`
+import typings.mysql.mysqlInts.`0x03`
+import typings.mysql.mysqlInts.`0x04`
+import typings.mysql.mysqlInts.`0x05`
+import typings.mysql.mysqlInts.`0x06`
+import typings.mysql.mysqlInts.`0x07`
+import typings.mysql.mysqlInts.`0x08`
+import typings.mysql.mysqlInts.`0x09`
+import typings.mysql.mysqlInts.`0x0a`
+import typings.mysql.mysqlInts.`0x0b`
+import typings.mysql.mysqlInts.`0x0c`
+import typings.mysql.mysqlInts.`0x0d`
+import typings.mysql.mysqlInts.`0x0e`
+import typings.mysql.mysqlInts.`0x0f`
+import typings.mysql.mysqlInts.`0x10`
+import typings.mysql.mysqlInts.`0x11`
+import typings.mysql.mysqlInts.`0x12`
+import typings.mysql.mysqlInts.`0x13`
+import typings.mysql.mysqlInts.`0xf5`
+import typings.mysql.mysqlInts.`0xf6`
+import typings.mysql.mysqlInts.`0xf7`
+import typings.mysql.mysqlInts.`0xf8`
+import typings.mysql.mysqlInts.`0xf9`
+import typings.mysql.mysqlInts.`0xfa`
+import typings.mysql.mysqlInts.`0xfb`
+import typings.mysql.mysqlInts.`0xfc`
+import typings.mysql.mysqlInts.`0xfd`
+import typings.mysql.mysqlInts.`0xfe`
+import typings.mysql.mysqlInts.`0xff`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mysql.mysqlNumbers.`0x00`
-  - typings.mysql.mysqlNumbers.`0x01`
-  - typings.mysql.mysqlNumbers.`0x02`
-  - typings.mysql.mysqlNumbers.`0x03`
-  - typings.mysql.mysqlNumbers.`0x04`
-  - typings.mysql.mysqlNumbers.`0x05`
-  - typings.mysql.mysqlNumbers.`0x06`
-  - typings.mysql.mysqlNumbers.`0x07`
-  - typings.mysql.mysqlNumbers.`0x08`
-  - typings.mysql.mysqlNumbers.`0x09`
-  - typings.mysql.mysqlNumbers.`0x0a`
-  - typings.mysql.mysqlNumbers.`0x0b`
-  - typings.mysql.mysqlNumbers.`0x0c`
-  - typings.mysql.mysqlNumbers.`0x0d`
-  - typings.mysql.mysqlNumbers.`0x0e`
-  - typings.mysql.mysqlNumbers.`0x0f`
-  - typings.mysql.mysqlNumbers.`0x10`
-  - typings.mysql.mysqlNumbers.`0x11`
-  - typings.mysql.mysqlNumbers.`0x12`
-  - typings.mysql.mysqlNumbers.`0x13`
-  - typings.mysql.mysqlNumbers.`0xf5`
-  - typings.mysql.mysqlNumbers.`0xf6`
-  - typings.mysql.mysqlNumbers.`0xf7`
-  - typings.mysql.mysqlNumbers.`0xf8`
-  - typings.mysql.mysqlNumbers.`0xf9`
-  - typings.mysql.mysqlNumbers.`0xfa`
-  - typings.mysql.mysqlNumbers.`0xfb`
-  - typings.mysql.mysqlNumbers.`0xfc`
-  - typings.mysql.mysqlNumbers.`0xfd`
-  - typings.mysql.mysqlNumbers.`0xfe`
-  - typings.mysql.mysqlNumbers.`0xff`
+  - typings.mysql.mysqlInts.`0x00`
+  - typings.mysql.mysqlInts.`0x01`
+  - typings.mysql.mysqlInts.`0x02`
+  - typings.mysql.mysqlInts.`0x03`
+  - typings.mysql.mysqlInts.`0x04`
+  - typings.mysql.mysqlInts.`0x05`
+  - typings.mysql.mysqlInts.`0x06`
+  - typings.mysql.mysqlInts.`0x07`
+  - typings.mysql.mysqlInts.`0x08`
+  - typings.mysql.mysqlInts.`0x09`
+  - typings.mysql.mysqlInts.`0x0a`
+  - typings.mysql.mysqlInts.`0x0b`
+  - typings.mysql.mysqlInts.`0x0c`
+  - typings.mysql.mysqlInts.`0x0d`
+  - typings.mysql.mysqlInts.`0x0e`
+  - typings.mysql.mysqlInts.`0x0f`
+  - typings.mysql.mysqlInts.`0x10`
+  - typings.mysql.mysqlInts.`0x11`
+  - typings.mysql.mysqlInts.`0x12`
+  - typings.mysql.mysqlInts.`0x13`
+  - typings.mysql.mysqlInts.`0xf5`
+  - typings.mysql.mysqlInts.`0xf6`
+  - typings.mysql.mysqlInts.`0xf7`
+  - typings.mysql.mysqlInts.`0xf8`
+  - typings.mysql.mysqlInts.`0xf9`
+  - typings.mysql.mysqlInts.`0xfa`
+  - typings.mysql.mysqlInts.`0xfb`
+  - typings.mysql.mysqlInts.`0xfc`
+  - typings.mysql.mysqlInts.`0xfd`
+  - typings.mysql.mysqlInts.`0xfe`
+  - typings.mysql.mysqlInts.`0xff`
 */
 trait Types extends StObject
 object Types {

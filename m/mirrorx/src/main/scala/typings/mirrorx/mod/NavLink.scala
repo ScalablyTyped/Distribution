@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mirrorx", "NavLink")
 @js.native
-class NavLink protected ()
-  extends Component[NavLinkProps, js.Any, js.Any] {
+open class NavLink protected () extends Component[NavLinkProps, Any, Any] {
   def this(props: NavLinkProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: NavLinkProps, context: js.Any) = this()
+  def this(props: NavLinkProps, context: Any) = this()
 }

@@ -5,7 +5,6 @@ import typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy.SetIamPolicyCallb
 import typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy.TestIamPermissionsCallback
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a IAMPolicy */
 @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.IAMPolicy")
 @js.native
-class IAMPolicy protected () extends Service {
+open class IAMPolicy protected () extends Service {
   /**
     * Constructs a new IAMPolicy service.
     * @param rpcImpl RPC implementation
@@ -88,14 +87,14 @@ object IAMPolicy {
     * @param error Error, if any
     * @param [response] Policy
     */
-  type GetIamPolicyCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Policy], Unit]
+  type GetIamPolicyCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Policy], Unit]
   
   /**
     * Callback as used by {@link google.iam.v1.IAMPolicy#setIamPolicy}.
     * @param error Error, if any
     * @param [response] Policy
     */
-  type SetIamPolicyCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Policy], Unit]
+  type SetIamPolicyCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Policy], Unit]
   
   /**
     * Callback as used by {@link google.iam.v1.IAMPolicy#testIamPermissions}.
@@ -103,7 +102,7 @@ object IAMPolicy {
     * @param [response] TestIamPermissionsResponse
     */
   type TestIamPermissionsCallback = js.Function2[
-    /* error */ Error | Null, 
+    /* error */ js.Error | Null, 
     /* response */ js.UndefOr[TestIamPermissionsResponse], 
     Unit
   ]

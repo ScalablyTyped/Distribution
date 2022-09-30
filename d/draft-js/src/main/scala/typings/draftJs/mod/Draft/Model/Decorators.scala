@@ -2,10 +2,8 @@ package typings.draftJs.mod.Draft.Model
 
 import typings.draftJs.mod.Draft.Model.ImmutableData.ContentBlock
 import typings.draftJs.mod.Draft.Model.ImmutableData.ContentState
-import typings.immutable.Immutable.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Decorators {
@@ -29,38 +27,32 @@ object Decorators {
     * Thus, when a collision like this is encountered, the earlier match is
     * preserved and the new match is discarded.
     */
-  @js.native
   trait CompositeDraftDecorator extends StObject {
     
-    def getComponentForKey(key: String): js.Function = js.native
+    def getComponentForKey(key: String): js.Function
     
-    def getDecorations(block: ContentBlock, contentState: ContentState): List[String] = js.native
+    def getDecorations(block: ContentBlock, contentState: ContentState): typings.immutable.mod.List[String]
     
-    def getPropsForKey(key: String): js.Object = js.native
+    def getPropsForKey(key: String): js.Object
   }
   object CompositeDraftDecorator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getComponentForKey: String => js.Function,
-      getDecorations: (ContentBlock, ContentState) => List[String],
+      getDecorations: (ContentBlock, ContentState) => typings.immutable.mod.List[String],
       getPropsForKey: String => js.Object
     ): CompositeDraftDecorator = {
       val __obj = js.Dynamic.literal(getComponentForKey = js.Any.fromFunction1(getComponentForKey), getDecorations = js.Any.fromFunction2(getDecorations), getPropsForKey = js.Any.fromFunction1(getPropsForKey))
       __obj.asInstanceOf[CompositeDraftDecorator]
     }
     
-    @scala.inline
-    implicit class CompositeDraftDecoratorMutableBuilder[Self <: CompositeDraftDecorator] (val x: Self) extends AnyVal {
+    extension [Self <: CompositeDraftDecorator](x: Self) {
       
-      @scala.inline
-      def setGetComponentForKey(value: String => js.Function): Self = StObject.set(x, "getComponentForKey", js.Any.fromFunction1(value))
+      inline def setGetComponentForKey(value: String => js.Function): Self = StObject.set(x, "getComponentForKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDecorations(value: (ContentBlock, ContentState) => List[String]): Self = StObject.set(x, "getDecorations", js.Any.fromFunction2(value))
+      inline def setGetDecorations(value: (ContentBlock, ContentState) => typings.immutable.mod.List[String]): Self = StObject.set(x, "getDecorations", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPropsForKey(value: String => js.Object): Self = StObject.set(x, "getPropsForKey", js.Any.fromFunction1(value))
+      inline def setGetPropsForKey(value: String => js.Object): Self = StObject.set(x, "getPropsForKey", js.Any.fromFunction1(value))
     }
   }
   
@@ -79,23 +71,21 @@ object Decorators {
     *
     *   - "props": Props to be passed into the React component that will be used.
     */
-  @js.native
   trait DraftDecorator extends StObject {
     
-    var component: js.Function = js.native
+    var component: js.Function
     
-    var props: js.UndefOr[js.Object] = js.native
+    var props: js.UndefOr[js.Object] = js.undefined
     
     def strategy(
       block: ContentBlock,
       callback: js.Function2[/* start */ Double, /* end */ Double, Unit],
       contentState: ContentState
-    ): Unit = js.native
+    ): Unit
   }
   object DraftDecorator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       component: js.Function,
       strategy: (ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], ContentState) => Unit
     ): DraftDecorator = {
@@ -103,20 +93,15 @@ object Decorators {
       __obj.asInstanceOf[DraftDecorator]
     }
     
-    @scala.inline
-    implicit class DraftDecoratorMutableBuilder[Self <: DraftDecorator] (val x: Self) extends AnyVal {
+    extension [Self <: DraftDecorator](x: Self) {
       
-      @scala.inline
-      def setComponent(value: js.Function): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: js.Function): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setStrategy(
+      inline def setStrategy(
         value: (ContentBlock, js.Function2[/* start */ Double, /* end */ Double, Unit], ContentState) => Unit
       ): Self = StObject.set(x, "strategy", js.Any.fromFunction3(value))
     }
@@ -128,49 +113,43 @@ object Decorators {
     *
     * See `CompositeDraftDecorator` for the most common use case.
     */
-  @js.native
   trait DraftDecoratorType extends StObject {
     
     /**
       * Given a decorator key, return the component to use when rendering
       * this decorated range.
       */
-    def getComponentForKey(key: String): js.Function = js.native
+    def getComponentForKey(key: String): js.Function
     
     /**
       * Given a `ContentBlock`, return an immutable List of decorator keys.
       */
-    def getDecorations(block: ContentBlock, contentState: ContentState): List[String] = js.native
+    def getDecorations(block: ContentBlock, contentState: ContentState): typings.immutable.mod.List[String]
     
     /**
       * Given a decorator key, optionally return the props to use when rendering
       * this decorated range.
       */
-    def getPropsForKey(key: String): js.Any = js.native
+    def getPropsForKey(key: String): Any
   }
   object DraftDecoratorType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getComponentForKey: String => js.Function,
-      getDecorations: (ContentBlock, ContentState) => List[String],
-      getPropsForKey: String => js.Any
+      getDecorations: (ContentBlock, ContentState) => typings.immutable.mod.List[String],
+      getPropsForKey: String => Any
     ): DraftDecoratorType = {
       val __obj = js.Dynamic.literal(getComponentForKey = js.Any.fromFunction1(getComponentForKey), getDecorations = js.Any.fromFunction2(getDecorations), getPropsForKey = js.Any.fromFunction1(getPropsForKey))
       __obj.asInstanceOf[DraftDecoratorType]
     }
     
-    @scala.inline
-    implicit class DraftDecoratorTypeMutableBuilder[Self <: DraftDecoratorType] (val x: Self) extends AnyVal {
+    extension [Self <: DraftDecoratorType](x: Self) {
       
-      @scala.inline
-      def setGetComponentForKey(value: String => js.Function): Self = StObject.set(x, "getComponentForKey", js.Any.fromFunction1(value))
+      inline def setGetComponentForKey(value: String => js.Function): Self = StObject.set(x, "getComponentForKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDecorations(value: (ContentBlock, ContentState) => List[String]): Self = StObject.set(x, "getDecorations", js.Any.fromFunction2(value))
+      inline def setGetDecorations(value: (ContentBlock, ContentState) => typings.immutable.mod.List[String]): Self = StObject.set(x, "getDecorations", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPropsForKey(value: String => js.Any): Self = StObject.set(x, "getPropsForKey", js.Any.fromFunction1(value))
+      inline def setGetPropsForKey(value: String => Any): Self = StObject.set(x, "getPropsForKey", js.Any.fromFunction1(value))
     }
   }
 }

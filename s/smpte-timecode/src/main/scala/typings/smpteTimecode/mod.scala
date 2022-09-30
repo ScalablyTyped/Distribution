@@ -1,8 +1,8 @@
 package typings.smpteTimecode
 
-import typings.smpteTimecode.smpteTimecodeNumbers.`23.976`
-import typings.smpteTimecode.smpteTimecodeNumbers.`29.97`
-import typings.smpteTimecode.smpteTimecodeNumbers.`59.94`
+import typings.smpteTimecode.smpteTimecodeDoubles.`23.976`
+import typings.smpteTimecode.smpteTimecodeDoubles.`29.97`
+import typings.smpteTimecode.smpteTimecodeDoubles.`59.94`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,33 +37,33 @@ object mod {
   val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.smpteTimecode.smpteTimecodeNumbers.`23.976`
-    - typings.smpteTimecode.smpteTimecodeNumbers.`24`
-    - typings.smpteTimecode.smpteTimecodeNumbers.`25`
-    - typings.smpteTimecode.smpteTimecodeNumbers.`29.97`
-    - typings.smpteTimecode.smpteTimecodeNumbers.`30`
-    - typings.smpteTimecode.smpteTimecodeNumbers.`50`
-    - typings.smpteTimecode.smpteTimecodeNumbers.`59.94`
-    - typings.smpteTimecode.smpteTimecodeNumbers.`60`
+    - typings.smpteTimecode.smpteTimecodeDoubles.`23.976`
+    - typings.smpteTimecode.smpteTimecodeInts.`24`
+    - typings.smpteTimecode.smpteTimecodeInts.`25`
+    - typings.smpteTimecode.smpteTimecodeDoubles.`29.97`
+    - typings.smpteTimecode.smpteTimecodeInts.`30`
+    - typings.smpteTimecode.smpteTimecodeInts.`50`
+    - typings.smpteTimecode.smpteTimecodeDoubles.`59.94`
+    - typings.smpteTimecode.smpteTimecodeInts.`60`
   */
   trait FRAMERATE extends StObject
   object FRAMERATE {
     
-    inline def `23Dot976`: `23.976` = 23.976.asInstanceOf[`23.976`]
+    inline def `23Dot976`: `23.976` = 23.976d.asInstanceOf[`23.976`]
     
-    inline def `24`: typings.smpteTimecode.smpteTimecodeNumbers.`24` = 24.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`24`]
+    inline def `24`: typings.smpteTimecode.smpteTimecodeInts.`24` = 24.asInstanceOf[typings.smpteTimecode.smpteTimecodeInts.`24`]
     
-    inline def `25`: typings.smpteTimecode.smpteTimecodeNumbers.`25` = 25.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`25`]
+    inline def `25`: typings.smpteTimecode.smpteTimecodeInts.`25` = 25.asInstanceOf[typings.smpteTimecode.smpteTimecodeInts.`25`]
     
-    inline def `29Dot97`: `29.97` = 29.97.asInstanceOf[`29.97`]
+    inline def `29Dot97`: `29.97` = 29.97d.asInstanceOf[`29.97`]
     
-    inline def `30`: typings.smpteTimecode.smpteTimecodeNumbers.`30` = 30.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`30`]
+    inline def `30`: typings.smpteTimecode.smpteTimecodeInts.`30` = 30.asInstanceOf[typings.smpteTimecode.smpteTimecodeInts.`30`]
     
-    inline def `50`: typings.smpteTimecode.smpteTimecodeNumbers.`50` = 50.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`50`]
+    inline def `50`: typings.smpteTimecode.smpteTimecodeInts.`50` = 50.asInstanceOf[typings.smpteTimecode.smpteTimecodeInts.`50`]
     
-    inline def `59Dot94`: `59.94` = 59.94.asInstanceOf[`59.94`]
+    inline def `59Dot94`: `59.94` = 59.94d.asInstanceOf[`59.94`]
     
-    inline def `60`: typings.smpteTimecode.smpteTimecodeNumbers.`60` = 60.asInstanceOf[typings.smpteTimecode.smpteTimecodeNumbers.`60`]
+    inline def `60`: typings.smpteTimecode.smpteTimecodeInts.`60` = 60.asInstanceOf[typings.smpteTimecode.smpteTimecodeInts.`60`]
   }
   
   type TIMECODE = Double | String | js.Date | TimecodeObject

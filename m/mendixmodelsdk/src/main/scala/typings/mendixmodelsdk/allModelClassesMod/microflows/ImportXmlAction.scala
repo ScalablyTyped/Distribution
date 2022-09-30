@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/import-mapping-action relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportXmlAction")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportXmlAction")
 @js.native
-class ImportXmlAction protected ()
+open class ImportXmlAction protected ()
   extends typings.mendixmodelsdk.microflowsMod.microflows.ImportXmlAction {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class ImportXmlAction protected ()
 }
 object ImportXmlAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportXmlAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportXmlAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object ImportXmlAction {
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivity): typings.mendixmodelsdk.microflowsMod.microflows.ImportXmlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ImportXmlAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportXmlAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportXmlAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ImportXmlAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.ImportXmlAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

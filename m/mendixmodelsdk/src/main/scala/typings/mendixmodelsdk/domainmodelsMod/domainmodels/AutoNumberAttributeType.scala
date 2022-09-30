@@ -2,10 +2,12 @@ package typings.mendixmodelsdk.domainmodelsMod.domainmodels
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute
 import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
+import typings.mendixmodelsdk.mlmappingsMod.mlmappings.TensorMappingElement
 import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
@@ -20,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttributeType because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.INumericAttributeTypeBase because Already inherited
 - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IIntegerAttributeTypeBase because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAutoNumberAttributeType because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AutoNumberAttributeType")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAutoNumberAttributeType because var conflicts: containerAsAttribute, containerAsEntityKeyPart, containerAsODataKeyPart, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AutoNumberAttributeType")
 @js.native
-class AutoNumberAttributeType protected () extends IntegerAttributeTypeBase {
+open class AutoNumberAttributeType protected () extends IntegerAttributeTypeBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +45,7 @@ class AutoNumberAttributeType protected () extends IntegerAttributeTypeBase {
 }
 object AutoNumberAttributeType {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AutoNumberAttributeType")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AutoNumberAttributeType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -96,14 +98,36 @@ object AutoNumberAttributeType {
   /* static member */
   inline def createInODataKeyPartUnderType(container: ODataKeyPart): AutoNumberAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[AutoNumberAttributeType]
   
+  /**
+    * Creates and returns a new AutoNumberAttributeType instance in the SDK and on the server.
+    * The new AutoNumberAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent businessevents.PublishedMessageAttribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.14.0 and higher
+    */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AutoNumberAttributeType.structureTypeName")
+  inline def createInPublishedMessageAttributeUnderAttributeType(container: PublishedMessageAttribute): AutoNumberAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedMessageAttributeUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[AutoNumberAttributeType]
+  
+  /**
+    * Creates and returns a new AutoNumberAttributeType instance in the SDK and on the server.
+    * The new AutoNumberAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent mlmappings.TensorMappingElement element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.17.0 and higher
+    */
+  /* static member */
+  inline def createInTensorMappingElementUnderAttributeType(container: TensorMappingElement): AutoNumberAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[AutoNumberAttributeType]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AutoNumberAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AutoNumberAttributeType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.AutoNumberAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

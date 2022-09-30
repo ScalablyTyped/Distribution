@@ -1,596 +1,263 @@
 package typings.wordpressBlocks.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentType
+import typings.react.mod.ReactChild
+import typings.react.mod.global.JSX.Element
+import typings.std.Omit
+import typings.std.Partial
+import typings.std.Record
+import typings.wordpressBlocks.anon.Attributetypeboolean
+import typings.wordpressBlocks.anon.BlockName
+import typings.wordpressBlocks.anon.Icon
+import typings.wordpressBlocks.anon.Mode
+import typings.wordpressBlocks.anon.PartialCategory
+import typings.wordpressBlocks.anon.`0`
+import typings.wordpressBlocks.categoriesMod.Category
+import typings.wordpressBlocks.mod.^
+import typings.wordpressBlocks.parserMod.Schema.Attribute
+import typings.wordpressBlocks.parserMod.Schema.Children
+import typings.wordpressBlocks.parserMod.Schema.HTML
+import typings.wordpressBlocks.parserMod.Schema.Node
+import typings.wordpressBlocks.parserMod.Schema.Query
+import typings.wordpressBlocks.parserMod.Schema.Tag
+import typings.wordpressBlocks.parserMod.Schema.Text
+import typings.wordpressBlocks.parserMod.Source
+import typings.wordpressBlocks.rawHandlingMod.PhrasingContentSchema
+import typings.wordpressBlocks.rawHandlingMod.pasteHandler.Options
+import typings.wordpressBlocks.templatesMod.TemplateArray
+import typings.wordpressBlocks.wordpressBlocksStrings.BlockContent
+import typings.wordpressBlocks.wordpressBlocksStrings.align
+import typings.wordpressBlocks.wordpressBlocksStrings.alignWide
+import typings.wordpressBlocks.wordpressBlocksStrings.anchor
+import typings.wordpressBlocks.wordpressBlocksStrings.className
+import typings.wordpressBlocks.wordpressBlocksStrings.color
+import typings.wordpressBlocks.wordpressBlocksStrings.customClassName
+import typings.wordpressBlocks.wordpressBlocksStrings.from
+import typings.wordpressBlocks.wordpressBlocksStrings.html
+import typings.wordpressBlocks.wordpressBlocksStrings.inserter
+import typings.wordpressBlocks.wordpressBlocksStrings.lock
+import typings.wordpressBlocks.wordpressBlocksStrings.multiple
+import typings.wordpressBlocks.wordpressBlocksStrings.reusable
+import typings.wordpressBlocks.wordpressBlocksStrings.spacing
+import typings.wordpressBlocks.wordpressBlocksStrings.to
+import typings.wordpressBlocks.wordpressBlocksStrings.typography
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def cloneBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](block: typings.wordpressBlocks.mod.BlockInstance[T]): typings.wordpressBlocks.mod.BlockInstance[T] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any]).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
-inline def cloneBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  block: typings.wordpressBlocks.mod.BlockInstance[T],
-  mergeAttributes: scala.Unit,
-  newInnerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): typings.wordpressBlocks.mod.BlockInstance[T] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any], mergeAttributes.asInstanceOf[js.Any], newInnerBlocks.asInstanceOf[js.Any])).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
-inline def cloneBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](block: typings.wordpressBlocks.mod.BlockInstance[T], mergeAttributes: typings.std.Partial[T]): typings.wordpressBlocks.mod.BlockInstance[T] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any], mergeAttributes.asInstanceOf[js.Any])).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
-inline def cloneBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  block: typings.wordpressBlocks.mod.BlockInstance[T],
-  mergeAttributes: typings.std.Partial[T],
-  newInnerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): typings.wordpressBlocks.mod.BlockInstance[T] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any], mergeAttributes.asInstanceOf[js.Any], newInnerBlocks.asInstanceOf[js.Any])).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
+inline def cloneBlock[T /* <: Record[String, Any] */](block: BlockInstance[T]): BlockInstance[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any]).asInstanceOf[BlockInstance[T]]
+inline def cloneBlock[T /* <: Record[String, Any] */](
+  block: BlockInstance[T],
+  mergeAttributes: Unit,
+  newInnerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
+): BlockInstance[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any], mergeAttributes.asInstanceOf[js.Any], newInnerBlocks.asInstanceOf[js.Any])).asInstanceOf[BlockInstance[T]]
+inline def cloneBlock[T /* <: Record[String, Any] */](block: BlockInstance[T], mergeAttributes: Partial[T]): BlockInstance[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any], mergeAttributes.asInstanceOf[js.Any])).asInstanceOf[BlockInstance[T]]
+inline def cloneBlock[T /* <: Record[String, Any] */](
+  block: BlockInstance[T],
+  mergeAttributes: Partial[T],
+  newInnerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
+): BlockInstance[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneBlock")(block.asInstanceOf[js.Any], mergeAttributes.asInstanceOf[js.Any], newInnerBlocks.asInstanceOf[js.Any])).asInstanceOf[BlockInstance[T]]
 
-inline def createBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](name: java.lang.String): typings.wordpressBlocks.mod.BlockInstance[T] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any]).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
-inline def createBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  name: java.lang.String,
-  attributes: scala.Unit,
-  innerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): typings.wordpressBlocks.mod.BlockInstance[T] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
-inline def createBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](name: java.lang.String, attributes: typings.std.Partial[T]): typings.wordpressBlocks.mod.BlockInstance[T] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
-inline def createBlock[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  name: java.lang.String,
-  attributes: typings.std.Partial[T],
-  innerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): typings.wordpressBlocks.mod.BlockInstance[T] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[typings.wordpressBlocks.mod.BlockInstance[T]]
+inline def createBlock[T /* <: Record[String, Any] */](name: String): BlockInstance[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any]).asInstanceOf[BlockInstance[T]]
+inline def createBlock[T /* <: Record[String, Any] */](name: String, attributes: Unit, innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]): BlockInstance[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[BlockInstance[T]]
+inline def createBlock[T /* <: Record[String, Any] */](name: String, attributes: Partial[T]): BlockInstance[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[BlockInstance[T]]
+inline def createBlock[T /* <: Record[String, Any] */](name: String, attributes: Partial[T], innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]): BlockInstance[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBlock")(name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[BlockInstance[T]]
 
-inline def doBlocksMatchTemplate(): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")().asInstanceOf[scala.Boolean]
-inline def doBlocksMatchTemplate(
-  blocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")(blocks.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def doBlocksMatchTemplate(
-  blocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-],
-  template: typings.wordpressBlocks.templatesMod.TemplateArray
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def doBlocksMatchTemplate(blocks: scala.Unit, template: typings.wordpressBlocks.templatesMod.TemplateArray): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def doBlocksMatchTemplate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")().asInstanceOf[Boolean]
+inline def doBlocksMatchTemplate(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")(blocks.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def doBlocksMatchTemplate(blocks: js.Array[BlockInstance[StringDictionary[Any]]], template: TemplateArray): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def doBlocksMatchTemplate(blocks: Unit, template: TemplateArray): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("doBlocksMatchTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def findTransform[T /* <: typings.wordpressBlocks.mod.Transform[typings.std.Record[java.lang.String, js.Any]] */, U /* <: typings.std.Record[java.lang.String, js.Any] */](transforms: js.Array[T], predicate: js.Function1[/* transform */ T, scala.Boolean]): typings.wordpressBlocks.mod.Transform[U] | scala.Null = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findTransform")(transforms.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[typings.wordpressBlocks.mod.Transform[U] | scala.Null]
+inline def findTransform[T /* <: Transform[Record[String, Any]] */, U /* <: Record[String, Any] */](transforms: js.Array[T], predicate: js.Function1[/* transform */ T, Boolean]): Transform[U] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findTransform")(transforms.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Transform[U] | Null]
 
-inline def getBlockAttributes(blockTypeOrName: java.lang.String, innerHTML: java.lang.String): typings.std.Record[java.lang.String, js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[typings.std.Record[java.lang.String, js.Any]]
-inline def getBlockAttributes(
-  blockTypeOrName: java.lang.String,
-  innerHTML: java.lang.String,
-  attributes: typings.std.Record[java.lang.String, js.Any]
-): typings.std.Record[java.lang.String, js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[typings.std.Record[java.lang.String, js.Any]]
-inline def getBlockAttributes[T /* <: typings.wordpressBlocks.mod.Block[js.Any] */](blockTypeOrName: T, innerHTML: java.lang.String): js.Any = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def getBlockAttributes[T /* <: typings.wordpressBlocks.mod.Block[js.Any] */](
-  blockTypeOrName: T,
-  innerHTML: java.lang.String,
-  attributes: typings.std.Record[java.lang.String, js.Any]
-): js.Any = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def getBlockContent(
-  block: typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-): java.lang.String = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockContent")(block.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getBlockContent(block: BlockInstance[StringDictionary[Any]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockContent")(block.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getBlockDefaultClassName(blockName: java.lang.String): java.lang.String = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockDefaultClassName")(blockName.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getBlockDefaultClassName(blockName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockDefaultClassName")(blockName.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getBlockMenuDefaultClassName(blockName: java.lang.String): java.lang.String = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockMenuDefaultClassName")(blockName.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def getBlockMenuDefaultClassName(blockName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockMenuDefaultClassName")(blockName.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def getBlockSupport_align(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.align): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_align(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.align
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_align[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.align,
+inline def getBlockSupport(
+  nameOrType: String,
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography
+): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
+inline def getBlockSupport(
+  nameOrType: Block[Any],
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography
+): js.UndefOr[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Any]]
+inline def getBlockSupport[T](
+  nameOrType: String,
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
   defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_align[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.align,
+): T | Boolean | Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | Boolean | Double | String]
+inline def getBlockSupport[T](
+  nameOrType: Block[Any],
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
   defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+): T | Boolean | Double | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | Boolean | Double | String]
 
-inline def getBlockSupport_alignWide(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_alignWide(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_alignWide[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_alignWide[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getBlockTransforms[T /* <: Record[String, Any] */](direction: to | from): js.Array[Transform[T] & BlockName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Array[Transform[T] & BlockName]]
+inline def getBlockTransforms[T /* <: Record[String, Any] */](direction: to | from, blockTypeOrName: String): js.Array[Transform[T] & BlockName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any], blockTypeOrName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform[T] & BlockName]]
+inline def getBlockTransforms[T /* <: Record[String, Any] */](direction: to | from, blockTypeOrName: Block[js.Object]): js.Array[Transform[T] & BlockName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any], blockTypeOrName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Transform[T] & BlockName]]
 
-inline def getBlockSupport_anchor(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_anchor(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_anchor[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_anchor[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getBlockType[T /* <: Record[String, Any] */](): js.UndefOr[Block[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockType")().asInstanceOf[js.UndefOr[Block[T]]]
+inline def getBlockType[T /* <: Record[String, Any] */](name: String): js.UndefOr[Block[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Block[T]]]
 
-inline def getBlockSupport_className(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.className): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_className(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.className
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_className[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.className,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_className[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.className,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getBlockTypes(): js.Array[Block[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTypes")().asInstanceOf[js.Array[Block[Any]]]
 
-inline def getBlockSupport_customClassName(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_customClassName(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_customClassName[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_customClassName[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getBlockVariations(blockName: String): js.UndefOr[js.Array[BlockVariation[BlockAttributes]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockVariations")(blockName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[BlockVariation[BlockAttributes]]]]
+inline def getBlockVariations(blockName: String, scope: BlockVariationScope): js.UndefOr[js.Array[BlockVariation[BlockAttributes]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockVariations")(blockName.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[BlockVariation[BlockAttributes]]]]
 
-inline def getBlockSupport_html(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.html): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_html(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.html
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_html[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.html,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_html[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.html,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getCategories(): js.Array[Category] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCategories")().asInstanceOf[js.Array[Category]]
 
-inline def getBlockSupport_inserter(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_inserter(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_inserter[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_inserter[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getChildBlockNames(blockName: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildBlockNames")(blockName.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 
-inline def getBlockSupport_multiple(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_multiple(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_multiple[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_multiple[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getDefaultBlockName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultBlockName")().asInstanceOf[js.UndefOr[String]]
 
-inline def getBlockSupport_reusable(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_reusable(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable
-): js.UndefOr[js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Any]]
-inline def getBlockSupport_reusable[T](
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
-inline def getBlockSupport_reusable[T](
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable,
-  defaultSupports: T
-): T | scala.Boolean | scala.Double | java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[T | scala.Boolean | scala.Double | java.lang.String]
+inline def getFreeformContentHandlerName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFreeformContentHandlerName")().asInstanceOf[js.UndefOr[String]]
 
-inline def getBlockTransforms_from[T /* <: typings.std.Record[java.lang.String, js.Any] */](direction: typings.wordpressBlocks.wordpressBlocksStrings.from): js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName]]
-inline def getBlockTransforms_from[T /* <: typings.std.Record[java.lang.String, js.Any] */](direction: typings.wordpressBlocks.wordpressBlocksStrings.from, blockTypeOrName: java.lang.String): js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any], blockTypeOrName.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName]]
-inline def getBlockTransforms_from[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  direction: typings.wordpressBlocks.wordpressBlocksStrings.from,
-  blockTypeOrName: typings.wordpressBlocks.mod.Block[js.Object]
-): js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any], blockTypeOrName.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName]]
+inline def getGroupingBlockName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupingBlockName")().asInstanceOf[js.UndefOr[String]]
 
-inline def getBlockTransforms_to[T /* <: typings.std.Record[java.lang.String, js.Any] */](direction: typings.wordpressBlocks.wordpressBlocksStrings.to): js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName]]
-inline def getBlockTransforms_to[T /* <: typings.std.Record[java.lang.String, js.Any] */](direction: typings.wordpressBlocks.wordpressBlocksStrings.to, blockTypeOrName: java.lang.String): js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any], blockTypeOrName.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName]]
-inline def getBlockTransforms_to[T /* <: typings.std.Record[java.lang.String, js.Any] */](
-  direction: typings.wordpressBlocks.wordpressBlocksStrings.to,
-  blockTypeOrName: typings.wordpressBlocks.mod.Block[js.Object]
-): js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTransforms")(direction.asInstanceOf[js.Any], blockTypeOrName.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.Transform[T] & typings.wordpressBlocks.anon.BlockName]]
+inline def getPhrasingContentSchema(): PhrasingContentSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("getPhrasingContentSchema")().asInstanceOf[PhrasingContentSchema]
 
-inline def getBlockType[T](): js.UndefOr[typings.wordpressBlocks.mod.Block[T]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockType")().asInstanceOf[js.UndefOr[typings.wordpressBlocks.mod.Block[T]]]
-inline def getBlockType[T](name: java.lang.String): js.UndefOr[typings.wordpressBlocks.mod.Block[T]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.wordpressBlocks.mod.Block[T]]]
+inline def getPossibleBlockTransformations(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): js.Array[Block[Record[String, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPossibleBlockTransformations")(blocks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Block[Record[String, Any]]]]
 
-inline def getBlockTypes(): js.Array[typings.wordpressBlocks.mod.Block[js.Any]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getBlockTypes")().asInstanceOf[js.Array[typings.wordpressBlocks.mod.Block[js.Any]]]
-
-inline def getCategories(): js.Array[typings.wordpressBlocks.categoriesMod.Category] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getCategories")().asInstanceOf[js.Array[typings.wordpressBlocks.categoriesMod.Category]]
-
-inline def getChildBlockNames(blockName: java.lang.String): js.Array[java.lang.String] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getChildBlockNames")(blockName.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-
-inline def getDefaultBlockName(): js.UndefOr[java.lang.String] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultBlockName")().asInstanceOf[js.UndefOr[java.lang.String]]
-
-inline def getFreeformContentHandlerName(): js.UndefOr[java.lang.String] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getFreeformContentHandlerName")().asInstanceOf[js.UndefOr[java.lang.String]]
-
-inline def getGroupingBlockName(): js.UndefOr[java.lang.String] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getGroupingBlockName")().asInstanceOf[js.UndefOr[java.lang.String]]
-
-inline def getPhrasingContentSchema(): typings.wordpressBlocks.rawHandlingMod.PhrasingContentSchema = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPhrasingContentSchema")().asInstanceOf[typings.wordpressBlocks.rawHandlingMod.PhrasingContentSchema]
-
-inline def getPossibleBlockTransformations(
-  blocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): js.Array[typings.wordpressBlocks.mod.Block[typings.std.Record[java.lang.String, js.Any]]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPossibleBlockTransformations")(blocks.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.wordpressBlocks.mod.Block[typings.std.Record[java.lang.String, js.Any]]]]
-
-inline def getSaveContent[T](blockTypeOrName: java.lang.String, attributes: T): java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getSaveContent[T](
-  blockTypeOrName: java.lang.String,
+inline def getSaveContent[T /* <: Record[String, Any] */](blockTypeOrName: String, attributes: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getSaveContent[T /* <: Record[String, Any] */](
+  blockTypeOrName: String,
   attributes: T,
-  innerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getSaveContent[T](blockTypeOrName: typings.wordpressBlocks.mod.Block[T], attributes: T): java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def getSaveContent[T](
-  blockTypeOrName: typings.wordpressBlocks.mod.Block[T],
+  innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
+): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getSaveContent[T /* <: Record[String, Any] */](blockTypeOrName: Block[T], attributes: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def getSaveContent[T /* <: Record[String, Any] */](
+  blockTypeOrName: Block[T],
   attributes: T,
-  innerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): java.lang.String = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
+): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def getSaveElement[T](blockTypeOrName: java.lang.String, attributes: T): typings.react.mod.ReactChild = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactChild]
-inline def getSaveElement[T](
-  blockTypeOrName: java.lang.String,
+inline def getSaveElement[T /* <: Record[String, Any] */](blockTypeOrName: String, attributes: T): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
+inline def getSaveElement[T /* <: Record[String, Any] */](
+  blockTypeOrName: String,
   attributes: T,
-  innerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): typings.react.mod.ReactChild = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactChild]
-inline def getSaveElement[T](blockTypeOrName: typings.wordpressBlocks.mod.Block[T], attributes: T): typings.react.mod.ReactChild = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactChild]
-inline def getSaveElement[T](
-  blockTypeOrName: typings.wordpressBlocks.mod.Block[T],
+  innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
+): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
+inline def getSaveElement[T /* <: Record[String, Any] */](blockTypeOrName: Block[T], attributes: T): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
+inline def getSaveElement[T /* <: Record[String, Any] */](
+  blockTypeOrName: Block[T],
   attributes: T,
-  innerBlocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): typings.react.mod.ReactChild = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.ReactChild]
+  innerBlocks: js.Array[BlockInstance[StringDictionary[Any]]]
+): ReactChild = (^.asInstanceOf[js.Dynamic].applyDynamic("getSaveElement")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], innerBlocks.asInstanceOf[js.Any])).asInstanceOf[ReactChild]
 
-inline def getUnregisteredTypeHandlerName(): js.UndefOr[java.lang.String] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getUnregisteredTypeHandlerName")().asInstanceOf[js.UndefOr[java.lang.String]]
+inline def getUnregisteredTypeHandlerName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnregisteredTypeHandlerName")().asInstanceOf[js.UndefOr[String]]
 
-inline def hasBlockSupport_align(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.align): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_align(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.align,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_align(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.align
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_align(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.align,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def hasBlockSupport(
+  nameOrType: String,
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def hasBlockSupport(
+  nameOrType: String,
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
+  defaultSupports: Boolean
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def hasBlockSupport(
+  nameOrType: Block[Any],
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def hasBlockSupport(
+  nameOrType: Block[Any],
+  feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
+  defaultSupports: Boolean
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def hasBlockSupport_alignWide(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_alignWide(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_alignWide(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_alignWide(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.alignWide,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def hasChildBlocks(blockName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasChildBlocks")(blockName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def hasBlockSupport_anchor(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_anchor(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_anchor(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_anchor(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.anchor,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def hasChildBlocksWithInserterSupport(blockName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasChildBlocksWithInserterSupport")(blockName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def hasBlockSupport_className(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.className): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_className(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.className,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_className(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.className
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_className(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.className,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def isReusableBlock(blockOrType: Block[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReusableBlock")(blockOrType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isReusableBlock(blockOrType: BlockInstance[StringDictionary[Any]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReusableBlock")(blockOrType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def hasBlockSupport_customClassName(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_customClassName(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_customClassName(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_customClassName(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.customClassName,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def isUnmodifiedDefaultBlock(block: BlockInstance[StringDictionary[Any]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnmodifiedDefaultBlock")(block.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def hasBlockSupport_html(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.html): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_html(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.html,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_html(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.html
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_html(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.html,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def isValidBlockContent[T /* <: Record[String, Any] */](blockTypeOrName: String, attributes: T, originalBlockContent: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidBlockContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], originalBlockContent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def isValidBlockContent[T /* <: Record[String, Any] */](blockTypeOrName: Block[T], attributes: T, originalBlockContent: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidBlockContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], originalBlockContent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def hasBlockSupport_inserter(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_inserter(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_inserter(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_inserter(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.inserter,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def isValidIcon(icon: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidIcon")(icon.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def hasBlockSupport_multiple(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_multiple(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_multiple(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_multiple(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.multiple,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def normalizeIconObject(): BlockIconNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeIconObject")().asInstanceOf[BlockIconNormalized]
+inline def normalizeIconObject(icon: BlockIcon): BlockIconNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeIconObject")(icon.asInstanceOf[js.Any]).asInstanceOf[BlockIconNormalized]
 
-inline def hasBlockSupport_reusable(nameOrType: java.lang.String, feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_reusable(
-  nameOrType: java.lang.String,
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_reusable(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def hasBlockSupport_reusable(
-  nameOrType: typings.wordpressBlocks.mod.Block[js.Any],
-  feature: typings.wordpressBlocks.wordpressBlocksStrings.reusable,
-  defaultSupports: scala.Boolean
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasBlockSupport")(nameOrType.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], defaultSupports.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def parse(content: String): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
 
-inline def hasChildBlocks(blockName: java.lang.String): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasChildBlocks")(blockName.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def hasChildBlocksWithInserterSupport(blockName: java.lang.String): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("hasChildBlocksWithInserterSupport")(blockName.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def isReusableBlock(blockOrType: typings.wordpressBlocks.mod.Block[js.Any]): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isReusableBlock")(blockOrType.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-inline def isReusableBlock(
-  blockOrType: typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isReusableBlock")(blockOrType.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def isUnmodifiedDefaultBlock(
-  block: typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isUnmodifiedDefaultBlock")(block.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def isValidBlockContent[T](blockTypeOrName: java.lang.String, attributes: T, originalBlockContent: java.lang.String): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidBlockContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], originalBlockContent.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-inline def isValidBlockContent[T](
-  blockTypeOrName: typings.wordpressBlocks.mod.Block[T],
-  attributes: T,
-  originalBlockContent: java.lang.String
-): scala.Boolean = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidBlockContent")(blockTypeOrName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], originalBlockContent.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def isValidIcon(icon: js.Any): scala.Boolean = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidIcon")(icon.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def normalizeIconObject(): typings.wordpressBlocks.mod.BlockIconNormalized = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeIconObject")().asInstanceOf[typings.wordpressBlocks.mod.BlockIconNormalized]
-inline def normalizeIconObject(icon: typings.wordpressBlocks.mod.BlockIcon): typings.wordpressBlocks.mod.BlockIconNormalized = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeIconObject")(icon.asInstanceOf[js.Any]).asInstanceOf[typings.wordpressBlocks.mod.BlockIconNormalized]
-
-inline def parse(content: java.lang.String): js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]]
-
-inline def parseWithAttributeSchema(innerHTML: java.lang.String, schema: typings.wordpressBlocks.anon.Attributetypeboolean): js.UndefOr[scala.Boolean] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[scala.Boolean]]
-inline def parseWithAttributeSchema(innerHTML: java.lang.String, schema: typings.wordpressBlocks.parserMod.Schema.Attribute): js.UndefOr[java.lang.String] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String]]
-inline def parseWithAttributeSchema(innerHTML: java.lang.String, schema: typings.wordpressBlocks.parserMod.Schema.Children): js.Array[typings.react.mod.ReactChild] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.react.mod.ReactChild]]
-inline def parseWithAttributeSchema(innerHTML: java.lang.String, schema: typings.wordpressBlocks.parserMod.Schema.HTML): js.UndefOr[java.lang.String] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String]]
-inline def parseWithAttributeSchema(innerHTML: java.lang.String, schema: typings.wordpressBlocks.parserMod.Schema.Node): typings.react.mod.global.JSX.Element | scala.Null = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[typings.react.mod.global.JSX.Element | scala.Null]
-inline def parseWithAttributeSchema(innerHTML: java.lang.String, schema: typings.wordpressBlocks.parserMod.Schema.Tag): js.UndefOr[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any]]
-inline def parseWithAttributeSchema(innerHTML: java.lang.String, schema: typings.wordpressBlocks.parserMod.Schema.Text): js.UndefOr[java.lang.String] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[java.lang.String]]
-inline def parseWithAttributeSchema[T /* <: typings.std.Record[java.lang.String, typings.wordpressBlocks.parserMod.Source[js.Any]] */](innerHTML: java.lang.String, schema: typings.wordpressBlocks.parserMod.Schema.Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+inline def parseWithAttributeSchema(innerHTML: String, schema: Attributetypeboolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+inline def parseWithAttributeSchema(innerHTML: String, schema: Attribute): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+inline def parseWithAttributeSchema(innerHTML: String, schema: Children): js.Array[ReactChild] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactChild]]
+inline def parseWithAttributeSchema(innerHTML: String, schema: HTML): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+inline def parseWithAttributeSchema(innerHTML: String, schema: Node): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+inline def parseWithAttributeSchema(innerHTML: String, schema: Tag): js.UndefOr[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any]]
+inline def parseWithAttributeSchema(innerHTML: String, schema: Text): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+inline def parseWithAttributeSchema[T /* <: Record[String, Source[Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
-  */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & org.scalablytyped.runtime.TopLevel[T] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
-  */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & org.scalablytyped.runtime.TopLevel[T]]
+  */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T]]
 
-inline def pasteHandler(
-  options: typings.wordpressBlocks.rawHandlingMod.pasteHandler.Options & typings.wordpressBlocks.anon.`0`
-): js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]]
-inline def pasteHandler(
-  options: typings.wordpressBlocks.rawHandlingMod.pasteHandler.Options & typings.wordpressBlocks.anon.Mode
-): java.lang.String = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def pasteHandler(options: typings.wordpressBlocks.rawHandlingMod.pasteHandler.Options): (js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]) | java.lang.String = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[(js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]) | java.lang.String]
+inline def pasteHandler(options: Options & `0`): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
+inline def pasteHandler(options: Options & Mode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def pasteHandler(options: Options): js.Array[BlockInstance[StringDictionary[Any]]] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("pasteHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]] | String]
 
-inline def rawHandler(options: typings.wordpressBlocks.anon.HTML): js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rawHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]]
+inline def rawHandler(options: typings.wordpressBlocks.anon.HTML): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
 
-inline def registerBlockCollection(namespace: java.lang.String, settings: typings.wordpressBlocks.anon.Icon): scala.Unit = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockCollection")(namespace.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerBlockCollection(namespace: String, settings: Icon): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockCollection")(namespace.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def registerBlockStyle(blockName: java.lang.String, styleVariation: typings.wordpressBlocks.mod.BlockStyle): scala.Unit = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockStyle")(blockName.asInstanceOf[js.Any], styleVariation.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerBlockStyle(blockName: String, styleVariation: BlockStyle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockStyle")(blockName.asInstanceOf[js.Any], styleVariation.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def registerBlockType[T /* <: typings.std.Record[java.lang.String, js.Any] */](name: java.lang.String, settings: typings.wordpressBlocks.mod.BlockConfiguration[T]): js.UndefOr[typings.wordpressBlocks.mod.Block[T]] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockType")(name.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.wordpressBlocks.mod.Block[T]]]
+inline def registerBlockType[TAttributes /* <: Record[String, Any] */](metadata: BlockConfiguration[TAttributes]): js.UndefOr[Block[TAttributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockType")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Block[TAttributes]]]
+inline def registerBlockType[TAttributes /* <: Record[String, Any] */](metadata: BlockConfiguration[TAttributes], settings: Partial[BlockConfiguration[TAttributes]]): js.UndefOr[Block[TAttributes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockType")(metadata.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Block[TAttributes]]]
+inline def registerBlockType[TAttributes /* <: Record[String, Any] */](name: String, settings: BlockConfiguration[TAttributes]): js.UndefOr[Block[TAttributes]] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockType")(name.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Block[TAttributes]]]
 
-inline def serialize(
-  blocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): java.lang.String = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(blocks.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def registerBlockVariation(blockName: String, variation: js.Array[BlockVariation[BlockAttributes]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockVariation")(blockName.asInstanceOf[js.Any], variation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def registerBlockVariation(blockName: String, variation: BlockVariation[BlockAttributes]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerBlockVariation")(blockName.asInstanceOf[js.Any], variation.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def setCategories(categories: js.Array[typings.wordpressBlocks.categoriesMod.Category]): scala.Unit = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def serialize(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(blocks.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def setDefaultBlockName(name: java.lang.String): scala.Unit = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setCategories(categories: js.Array[Category]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setFreeformContentHandlerName(blockName: java.lang.String): scala.Unit = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setFreeformContentHandlerName")(blockName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setDefaultBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setGroupingBlockName(name: java.lang.String): scala.Unit = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setGroupingBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setFreeformContentHandlerName(blockName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFreeformContentHandlerName")(blockName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setUnregisteredTypeHandlerName(blockName: java.lang.String): scala.Unit = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setUnregisteredTypeHandlerName")(blockName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setGroupingBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGroupingBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def switchToBlockType(
-  blocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-],
-  name: java.lang.String
-): (js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]) | scala.Null = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("switchToBlockType")(blocks.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]) | scala.Null]
-inline def switchToBlockType(
-  blocks: typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]],
-  name: java.lang.String
-): (js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]) | scala.Null = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("switchToBlockType")(blocks.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]) | scala.Null]
+inline def setUnregisteredTypeHandlerName(blockName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUnregisteredTypeHandlerName")(blockName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def synchronizeBlocksWithTemplate(): js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")().asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]]
-inline def synchronizeBlocksWithTemplate(
-  blocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-]
-): js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")(blocks.asInstanceOf[js.Any]).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]]
-inline def synchronizeBlocksWithTemplate(
-  blocks: js.Array[
-  typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]
-],
-  template: typings.wordpressBlocks.templatesMod.TemplateArray
-): js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]]
-inline def synchronizeBlocksWithTemplate(blocks: scala.Unit, template: typings.wordpressBlocks.templatesMod.TemplateArray): js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]] = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-typings.wordpressBlocks.mod.BlockInstance[org.scalablytyped.runtime.StringDictionary[js.Any]]]]
+inline def switchToBlockType(blocks: js.Array[BlockInstance[StringDictionary[Any]]], name: String): js.Array[BlockInstance[StringDictionary[Any]]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("switchToBlockType")(blocks.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]] | Null]
+inline def switchToBlockType(blocks: BlockInstance[StringDictionary[Any]], name: String): js.Array[BlockInstance[StringDictionary[Any]]] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("switchToBlockType")(blocks.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]] | Null]
 
-inline def unregisterBlockStyle(blockName: java.lang.String, styleVariationName: java.lang.String): scala.Unit = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterBlockStyle")(blockName.asInstanceOf[js.Any], styleVariationName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def synchronizeBlocksWithTemplate(): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")().asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
+inline def synchronizeBlocksWithTemplate(blocks: js.Array[BlockInstance[StringDictionary[Any]]]): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")(blocks.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
+inline def synchronizeBlocksWithTemplate(blocks: js.Array[BlockInstance[StringDictionary[Any]]], template: TemplateArray): js.Array[BlockInstance[StringDictionary[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
+inline def synchronizeBlocksWithTemplate(blocks: Unit, template: TemplateArray): js.Array[BlockInstance[StringDictionary[Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("synchronizeBlocksWithTemplate")(blocks.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
 
-inline def unregisterBlockType(name: java.lang.String): js.UndefOr[typings.wordpressBlocks.mod.Block[js.Any]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unregisterBlockType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.wordpressBlocks.mod.Block[js.Any]]]
+inline def unregisterBlockStyle(blockName: String, styleVariationName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterBlockStyle")(blockName.asInstanceOf[js.Any], styleVariationName.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def updateCategory(slug: java.lang.String, category: typings.wordpressBlocks.anon.PartialCategory): scala.Unit = (typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def unregisterBlockType(name: String): js.UndefOr[Block[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterBlockType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Block[Any]]]
 
-inline def withBlockContentContext[T /* <: typings.react.mod.ComponentType[js.Any] */](wrapped: T): typings.react.mod.ComponentType[
-typings.std.Omit[js.Any, typings.wordpressBlocks.wordpressBlocksStrings.BlockContent]] = typings.wordpressBlocks.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[typings.react.mod.ComponentType[
-typings.std.Omit[js.Any, typings.wordpressBlocks.wordpressBlocksStrings.BlockContent]]]
+inline def unregisterBlockVariation(blockName: String, variationName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterBlockVariation")(blockName.asInstanceOf[js.Any], variationName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def unregisterBlockVariation(blockName: String, variationName: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterBlockVariation")(blockName.asInstanceOf[js.Any], variationName.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-/* Rewritten from type alias, can be one of: 
-  - typings.wordpressBlocks.mod.AttributeSource.Attribute
-  - typings.wordpressBlocks.mod.AttributeSource.Children
-  - typings.wordpressBlocks.mod.AttributeSource.HTML
-  - typings.wordpressBlocks.mod.AttributeSource.Meta
-  - typings.wordpressBlocks.mod.AttributeSource.Query[T]
-  - typings.wordpressBlocks.mod.AttributeSource.Text
-  - typings.wordpressBlocks.mod.AttributeSource.None
-*/
-type BlockAttribute[T] = typings.wordpressBlocks.mod._BlockAttribute[T] | typings.wordpressBlocks.mod.AttributeSource.Attribute | typings.wordpressBlocks.mod.AttributeSource.None
+inline def updateCategory(slug: String, category: PartialCategory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def withBlockContentContext[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, BlockContent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withBlockContentContext")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, BlockContent]]]
+
+type BlockAttributes = Record[String, Any]
+
+type InnerBlockTemplate = js.Tuple3[String, js.UndefOr[BlockAttributes], js.UndefOr[js.Array[Any]]]

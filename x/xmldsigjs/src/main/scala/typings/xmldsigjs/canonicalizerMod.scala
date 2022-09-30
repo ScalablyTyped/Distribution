@@ -13,7 +13,7 @@ object canonicalizerMod {
   
   @JSImport("xmldsigjs/build/types/canonicalizer", "XmlCanonicalizer")
   @js.native
-  class XmlCanonicalizer protected () extends StObject {
+  open class XmlCanonicalizer protected () extends StObject {
     def this(withComments: Boolean, excC14N: Boolean) = this()
     def this(withComments: Boolean, excC14N: Boolean, propagatedNamespaces: NamespaceManager) = this()
     
@@ -22,11 +22,11 @@ object canonicalizerMod {
     def InclusiveNamespacesPrefixList: String = js.native
     def InclusiveNamespacesPrefixList_=(value: String): Unit = js.native
     
-    /* private */ var IsNamespaceInclusive: js.Any = js.native
+    /* private */ var IsNamespaceInclusive: Any = js.native
     
-    /* private */ var IsNamespaceRendered: js.Any = js.native
+    /* private */ var IsNamespaceRendered: Any = js.native
     
-    /* private */ var IsTextNode: js.Any = js.native
+    /* private */ var IsTextNode: Any = js.native
     
     /* protected */ def NormalizeString(input: String, `type`: XmlNodeType): String = js.native
     /* protected */ def NormalizeString(input: Null, `type`: XmlNodeType): String = js.native

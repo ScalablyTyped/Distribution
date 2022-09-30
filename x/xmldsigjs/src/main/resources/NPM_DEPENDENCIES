@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xmldsigjs" : "2.1.2"
+      "xmldsigjs" : "2.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "xmldsigjs" : "2.1.2"
+      "xmldsigjs" : "2.5.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
-import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
+import typings.activexLibreoffice.activexLibreofficeInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,6 +7,7 @@ import typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole.Url
 import typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole.UrlTestingToolsResource
 import typings.maximMazurokGapiClientSearchconsole.maximMazurokGapiClientSearchconsoleStrings.searchconsole
 import typings.maximMazurokGapiClientSearchconsole.maximMazurokGapiClientSearchconsoleStrings.v1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ object global {
       val ^ : js.Any = js.native
       
       /** Load Google Search Console API v1 */
-      inline def load(name: searchconsole, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: searchconsole, version: v1): PromiseLike[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Unit]]
       inline def load(name: searchconsole, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object searchconsole {

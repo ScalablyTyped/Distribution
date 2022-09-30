@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-cancelable" : "2.0.0"
+      "p-cancelable" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "p-cancelable" : "2.0.0"
+      "p-cancelable" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

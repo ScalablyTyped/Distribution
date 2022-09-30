@@ -11,8 +11,7 @@ object miniBarMod {
   
   @JSImport("ant-design-pro/lib/Charts/MiniBar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IMiniBarProps, js.Any, js.Any]
+  open class default () extends Component[IMiniBarProps, Any, Any]
   
   trait IMiniBarProps extends StObject {
     
@@ -39,7 +38,7 @@ object miniBarMod {
       
       inline def setData(value: js.Array[Y]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -49,5 +48,5 @@ object miniBarMod {
     }
   }
   
-  type MiniBar = Component[IMiniBarProps, js.Any, js.Any]
+  type MiniBar = Component[IMiniBarProps, Any, Any]
 }

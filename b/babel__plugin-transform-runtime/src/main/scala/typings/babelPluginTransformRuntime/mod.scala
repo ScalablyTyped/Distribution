@@ -14,17 +14,17 @@ object mod {
   trait CorejsOption extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`2`
-    - typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`3`
+    - typings.babelPluginTransformRuntime.babelPluginTransformRuntimeInts.`2`
+    - typings.babelPluginTransformRuntime.babelPluginTransformRuntimeInts.`3`
   */
   trait CorejsVersion
     extends StObject
        with CorejsOption
   object CorejsVersion {
     
-    inline def `2`: typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`2` = 2.asInstanceOf[typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`2`]
+    inline def `2`: typings.babelPluginTransformRuntime.babelPluginTransformRuntimeInts.`2` = 2.asInstanceOf[typings.babelPluginTransformRuntime.babelPluginTransformRuntimeInts.`2`]
     
-    inline def `3`: typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`3` = 3.asInstanceOf[typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`3`]
+    inline def `3`: typings.babelPluginTransformRuntime.babelPluginTransformRuntimeInts.`3` = 3.asInstanceOf[typings.babelPluginTransformRuntime.babelPluginTransformRuntimeInts.`3`]
   }
   
   trait Options extends StObject {

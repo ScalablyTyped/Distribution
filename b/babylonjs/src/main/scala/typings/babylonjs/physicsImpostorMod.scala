@@ -92,13 +92,13 @@ object physicsImpostorMod {
       * It will create a new body - but only if this mesh has no parent.
       * If it has, this impostor will not be used other than to define the impostor
       * of the child mesh.
-      * @hidden
+      * @internal
       */
     def _init(): Unit = js.native
     
     /* private */ var _isDisposed: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _isFromLine: Boolean = js.native
     
     /* private */ var _joints: Any = js.native
@@ -107,7 +107,7 @@ object physicsImpostorMod {
     
     /* private */ var _onBeforePhysicsStepCallbacks: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onPhysicsCollideCallbacks: js.Array[Callback] = js.native
     
     /* private */ var _options: Any = js.native
@@ -118,7 +118,7 @@ object physicsImpostorMod {
     
     /* private */ var _physicsEngine: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _pluginData: Any = js.native
     
     /* private */ var _scene: Any = js.native
@@ -313,6 +313,9 @@ object physicsImpostorMod {
       * @param e
       * @param e.body
       * @param e.point
+      * @param e.distance
+      * @param e.impulse
+      * @param e.normal
       */
     def onCollide(e: Body): Unit = js.native
     
@@ -409,7 +412,7 @@ object physicsImpostorMod {
     def restitution_=(value: Double): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var segments: Double = js.native
     
@@ -462,7 +465,7 @@ object physicsImpostorMod {
     def sleep(): PhysicsImpostor = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var soft: Boolean = js.native
     

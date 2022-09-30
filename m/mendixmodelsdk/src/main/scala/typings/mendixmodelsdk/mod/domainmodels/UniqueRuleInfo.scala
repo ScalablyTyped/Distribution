@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.UniqueRuleInfo")
 @js.native
-class UniqueRuleInfo protected ()
+open class UniqueRuleInfo protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.UniqueRuleInfo {
   def this(
     model: AbstractModel,

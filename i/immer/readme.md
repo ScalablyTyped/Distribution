@@ -1,7 +1,7 @@
 
 # Scala.js typings for immer
 
-Typings are for version 1.10.0
+Typings are for version 9.0.15
 
 ## Library description:
 Create your next immutable state by mutating the current one
@@ -10,10 +10,10 @@ Create your next immutable state by mutating the current one
 | ------------------ | :-------------: |
 | Full name          | immer |
 | Keywords           | immutable, mutable, copy-on-write |
-| # releases         | 76 |
-| # dependents       | 1231 |
-| # downloads        | 215223360 |
-| # stars            | 5 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7043952666666664E7 |
+| # stars            | 23135.0 |
 
 ## Links
 - [Homepage](https://github.com/immerjs/immer#readme)

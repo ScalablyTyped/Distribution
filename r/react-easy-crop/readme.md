@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-easy-crop
 
-Typings are for version 4.5.0
+Typings are for version 4.5.1
 
 ## Library description:
 A React component to crop images/videos with easy interactions

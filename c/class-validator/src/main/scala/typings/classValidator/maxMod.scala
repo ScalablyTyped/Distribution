@@ -14,7 +14,7 @@ object maxMod {
   
   @JSImport("class-validator/types/decorator/number/Max", "MAX")
   @js.native
-  val MAX: /* "max" */ String = js.native
+  val MAX__ : /* "max" */ String = js.native
   
   inline def Max_(maxValue: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Max")(maxValue.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def Max_(maxValue: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Max")(maxValue.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]

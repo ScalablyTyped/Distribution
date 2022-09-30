@@ -1,6 +1,5 @@
 package typings.yazl
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object anon {
     
     var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
   }
   object PartialDirectoryOptions {
     
@@ -27,7 +26,7 @@ object anon {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     }
@@ -42,7 +41,7 @@ object anon {
     
     var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
   }
   object PartialOptions {
     
@@ -65,7 +64,7 @@ object anon {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     }
@@ -80,7 +79,7 @@ object anon {
     
     var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
   }
@@ -105,7 +104,7 @@ object anon {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       

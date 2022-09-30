@@ -1,20 +1,21 @@
 package typings.moveConcurrently
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply[T /* <: js.Thenable[Unit] */](from: String, to: String): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def apply[T /* <: js.Thenable[Unit] */](from: String, to: String, opts: Options[T]): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: PromiseLike[Unit] */](from: String, to: String): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T /* <: PromiseLike[Unit] */](from: String, to: String, opts: Options[T]): T = (^.asInstanceOf[js.Dynamic].apply(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("move-concurrently", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait Options[T /* <: js.Thenable[Unit] */] extends StObject {
+  trait Options[T /* <: PromiseLike[Unit] */] extends StObject {
     
     /**
       * (Default: global.Promise) The promise implementation to use, defaults to Node's.
@@ -50,12 +51,12 @@ object mod {
   }
   object Options {
     
-    inline def apply[T /* <: js.Thenable[Unit] */](): Options[T] = {
+    inline def apply[T /* <: PromiseLike[Unit] */](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T /* <: js.Thenable[Unit] */](x: Self & Options[T]) {
+    extension [Self <: Options[?], T /* <: PromiseLike[Unit] */](x: Self & Options[T]) {
       
       inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

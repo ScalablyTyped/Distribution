@@ -58,11 +58,11 @@ trait ReadonlyArray[T]
     */
   /* standard es5 */
   @JSName("every")
-  def every_S_T[S /* <: T */](
+  def every_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean]
   ): /* is std.Array<S> */ scala.Boolean = js.native
   @JSName("every")
-  def every_S_T[S /* <: T */](
+  def every_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
     thisArg: Any
   ): /* is std.Array<S> */ scala.Boolean = js.native
@@ -85,11 +85,11 @@ trait ReadonlyArray[T]
     */
   /* standard es5 */
   @JSName("filter")
-  def filter_S_T[S /* <: T */](
+  def filter_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean]
   ): js.Array[S] = js.native
   @JSName("filter")
-  def filter_S_T[S /* <: T */](
+  def filter_S[S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], /* is S */ scala.Boolean],
     thisArg: Any
   ): js.Array[S] = js.native

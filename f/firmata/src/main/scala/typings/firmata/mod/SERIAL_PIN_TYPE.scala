@@ -1,27 +1,27 @@
 package typings.firmata.mod
 
-import typings.firmata.firmataNumbers.`0x00`
-import typings.firmata.firmataNumbers.`0x01`
-import typings.firmata.firmataNumbers.`0x02`
-import typings.firmata.firmataNumbers.`0x03`
-import typings.firmata.firmataNumbers.`0x04`
-import typings.firmata.firmataNumbers.`0x05`
-import typings.firmata.firmataNumbers.`0x06`
-import typings.firmata.firmataNumbers.`0x07`
+import typings.firmata.firmataInts.`0x00`
+import typings.firmata.firmataInts.`0x01`
+import typings.firmata.firmataInts.`0x02`
+import typings.firmata.firmataInts.`0x03`
+import typings.firmata.firmataInts.`0x04`
+import typings.firmata.firmataInts.`0x05`
+import typings.firmata.firmataInts.`0x06`
+import typings.firmata.firmataInts.`0x07`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/v0.15.0/lib/firmata.js#L515-L524
 /* Rewritten from type alias, can be one of: 
-  - typings.firmata.firmataNumbers.`0x00`
-  - typings.firmata.firmataNumbers.`0x01`
-  - typings.firmata.firmataNumbers.`0x02`
-  - typings.firmata.firmataNumbers.`0x03`
-  - typings.firmata.firmataNumbers.`0x04`
-  - typings.firmata.firmataNumbers.`0x05`
-  - typings.firmata.firmataNumbers.`0x06`
-  - typings.firmata.firmataNumbers.`0x07`
+  - typings.firmata.firmataInts.`0x00`
+  - typings.firmata.firmataInts.`0x01`
+  - typings.firmata.firmataInts.`0x02`
+  - typings.firmata.firmataInts.`0x03`
+  - typings.firmata.firmataInts.`0x04`
+  - typings.firmata.firmataInts.`0x05`
+  - typings.firmata.firmataInts.`0x06`
+  - typings.firmata.firmataInts.`0x07`
 */
 trait SERIAL_PIN_TYPE extends StObject
 object SERIAL_PIN_TYPE {

@@ -14,35 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Generate a [cryptographically strong](https://en.wikipedia.org/wiki/Strong_cryptography) random string.
-  	@returns A randomized string.
-  	@example
-  	```
-  	import cryptoRandomString = require('crypto-random-string');
-  	cryptoRandomString({length: 10});
-  	//=> '2cf05d94db'
-  	```
-  	*/
-  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("crypto-random-string", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-  	Asynchronously generate a [cryptographically strong](https://en.wikipedia.org/wiki/Strong_cryptography) random string.
-  	@returns A promise which resolves to a randomized string.
-  	@example
-  	```
-  	import cryptoRandomString = require('crypto-random-string');
-  	await cryptoRandomString.async({length: 10});
-  	//=> '2cf05d94db'
-  	```
-  	*/
-  inline def async(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")().asInstanceOf[js.Promise[String]]
-  inline def async(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def cryptoRandomStringAsync(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("cryptoRandomStringAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   trait BaseOptions extends StObject {
     
@@ -119,7 +97,6 @@ object mod {
     	//=> 'CDEHKM'
     	cryptoRandomString({length: 10, type: 'ascii-printable'});
     	//=> '`#Rt8$IK>B'
-    	
     	cryptoRandomString({length: 10, type: 'alphanumeric'});
     	//=> 'DMuKL8YtE7'
     	```

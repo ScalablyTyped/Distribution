@@ -24,7 +24,7 @@ object mod {
       * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
       */
     def this(callback: js.Function3[
-            /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R | js.Thenable[R]], Unit], 
+            /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R | PromiseLike[R]], Unit], 
             /* reject */ js.Function1[/* error */ js.UndefOr[Any], Unit], 
             /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
             Unit
@@ -260,7 +260,7 @@ object mod {
     def this(callback: js.Function3[
             /* resolve */ js.Function1[
               /* thenableOrResult */ js.UndefOr[
-                (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
+                (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (PromiseLike[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
               ], 
               Unit
             ], 
@@ -320,7 +320,7 @@ object mod {
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[
-          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
+          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (PromiseLike[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
         ], 
         Unit
       ], 
@@ -335,7 +335,7 @@ object mod {
       /* callback */ js.Function3[
         /* resolve */ js.Function1[
           /* thenableOrResult */ js.UndefOr[
-            (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
+            (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (PromiseLike[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
           ], 
           Unit
         ], 
@@ -365,17 +365,18 @@ object mod {
     var name: String = js.native
   }
   
-  inline def all[R](values: js.Array[js.Thenable[R] | R]): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
+  /* static member */
+  inline def all[T1](values: js.Array[PromiseLike[T1] | T1]): Bluebird[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[T1]]]
   // array with values
   /* static member */
-  inline def all[R](values: js.Thenable[js.Array[js.Thenable[R] | R]]): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def all[R](values: PromiseLike[js.Array[PromiseLike[R] | R]]): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
   /* static member */
-  inline def all[T1, T2](values: js.Tuple2[js.Thenable[T1] | T1, js.Thenable[T2] | T2]): Bluebird[js.Tuple2[T1, T2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple2[T1, T2]]]
+  inline def all[T1, T2](values: js.Tuple2[PromiseLike[T1] | T1, PromiseLike[T2] | T2]): Bluebird[js.Tuple2[T1, T2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple2[T1, T2]]]
   /* static member */
-  inline def all[T1, T2, T3](values: js.Tuple3[js.Thenable[T1] | T1, js.Thenable[T2] | T2, js.Thenable[T3] | T3]): Bluebird[js.Tuple3[T1, T2, T3]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple3[T1, T2, T3]]]
+  inline def all[T1, T2, T3](values: js.Tuple3[PromiseLike[T1] | T1, PromiseLike[T2] | T2, PromiseLike[T3] | T3]): Bluebird[js.Tuple3[T1, T2, T3]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple3[T1, T2, T3]]]
   /* static member */
   inline def all[T1, T2, T3, T4](
-    values: js.Tuple4[js.Thenable[T1] | T1, js.Thenable[T2] | T2, js.Thenable[T3] | T3, js.Thenable[T4] | T4]
+    values: js.Tuple4[PromiseLike[T1] | T1, PromiseLike[T2] | T2, PromiseLike[T3] | T3, PromiseLike[T4] | T4]
   ): Bluebird[js.Tuple4[T1, T2, T3, T4]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple4[T1, T2, T3, T4]]]
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled when all the items in the array are fulfilled. The promise's fulfillment value is an array with fulfillment values at respective positions to the original array. If any promise in the array rejects, the returned promise is rejected with the rejection reason.
@@ -385,27 +386,26 @@ object mod {
   /* static member */
   inline def all[T1, T2, T3, T4, T5](
     values: js.Tuple5[
-      js.Thenable[T1] | T1, 
-      js.Thenable[T2] | T2, 
-      js.Thenable[T3] | T3, 
-      js.Thenable[T4] | T4, 
-      js.Thenable[T5] | T5
+      PromiseLike[T1] | T1, 
+      PromiseLike[T2] | T2, 
+      PromiseLike[T3] | T3, 
+      PromiseLike[T4] | T4, 
+      PromiseLike[T5] | T5
     ]
   ): Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Tuple5[T1, T2, T3, T4, T5]]]
   
-  /* static member */
-  inline def all_T1[T1](values: js.Array[js.Thenable[T1] | T1]): Bluebird[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[T1]]]
+  inline def all_R[R](values: js.Array[PromiseLike[R] | R]): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[js.Array[R]]]
   
-  inline def any[R](values: js.Array[js.Thenable[R] | R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def any[R](values: js.Array[PromiseLike[R] | R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   // tslint:disable-line:unified-signatures
   /**
     * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
     */
   /* static member */
-  inline def any[R](values: js.Thenable[js.Array[js.Thenable[R] | R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def any[R](values: PromiseLike[js.Array[PromiseLike[R] | R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /* static member */
-  inline def attempt[R](fn: js.Function0[R | js.Thenable[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def attempt[R](fn: js.Function0[R | PromiseLike[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("attempt")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
@@ -418,7 +418,7 @@ object mod {
     */
   /* static member */
   inline def cast[R](value: R): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
-  inline def cast[R](value: js.Thenable[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def cast[R](value: PromiseLike[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * Configure long stack traces, warnings, monitoring and cancellation.
@@ -637,11 +637,11 @@ object mod {
     */
   /* static member */
   inline def delay[R](ms: Double, value: R): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def delay[R](ms: Double, value: js.Thenable[R]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def delay[R](ms: Double, value: PromiseLike[R]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   
   inline def each[R, U](
-    values: js.Array[js.Thenable[R] | R],
-    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: js.Array[PromiseLike[R] | R],
+    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   /**
     * Iterate over an array, or a promise of an array, which contains promises (or a mix of promises and values) with the given iterator function with the signature (item, index, value) where item is the resolved value of a respective promise in the input array. Iteration happens serially. If any promise in the input array is rejected the returned promise is rejected as well.
@@ -650,26 +650,26 @@ object mod {
     */
   /* static member */
   inline def each[R, U](
-    values: js.Thenable[js.Array[js.Thenable[R] | R]],
-    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: PromiseLike[js.Array[PromiseLike[R] | R]],
+    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   
   inline def filter[R](
-    values: js.Array[js.Thenable[R] | R],
+    values: js.Array[PromiseLike[R] | R],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      Boolean | js.Thenable[Boolean]
+      Boolean | PromiseLike[Boolean]
     ]
   ): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(values.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   inline def filter[R](
-    values: js.Array[js.Thenable[R] | R],
+    values: js.Array[PromiseLike[R] | R],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      Boolean | js.Thenable[Boolean]
+      Boolean | PromiseLike[Boolean]
     ],
     option: ConcurrencyOption
   ): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(values.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
@@ -682,21 +682,21 @@ object mod {
     */
   /* static member */
   inline def filter[R](
-    values: js.Thenable[js.Array[js.Thenable[R] | R]],
+    values: PromiseLike[js.Array[PromiseLike[R] | R]],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      Boolean | js.Thenable[Boolean]
+      Boolean | PromiseLike[Boolean]
     ]
   ): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(values.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   inline def filter[R](
-    values: js.Thenable[js.Array[js.Thenable[R] | R]],
+    values: PromiseLike[js.Array[PromiseLike[R] | R]],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      Boolean | js.Thenable[Boolean]
+      Boolean | PromiseLike[Boolean]
     ],
     option: ConcurrencyOption
   ): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(values.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
@@ -761,7 +761,7 @@ object mod {
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[
-          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
+          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (PromiseLike[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
         ], 
         Unit
       ], 
@@ -774,7 +774,7 @@ object mod {
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[
-          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
+          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (PromiseLike[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
         ], 
         Unit
       ], 
@@ -794,7 +794,7 @@ object mod {
   // variadic array
   /** @deprecated use .all instead */
   /* static member */
-  inline def join[R](values: (R | js.Thenable[R])*): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def join[R](values: (R | PromiseLike[R])*): Bluebird[js.Array[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Bluebird[js.Array[R]]]
   /**
     * Promise.join(
     *   Promise<any>|any values...,
@@ -805,73 +805,73 @@ object mod {
     * Note: In 1.x and 0.x Promise.join used to be a Promise.all that took the values in as arguments instead in an array. This behavior has been deprecated but is still supported partially - when the last argument is an immediate function value the new semantics will apply
     */
   /* static member */
-  inline def join[R, A1](arg1: A1, handler: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1](arg1: js.Thenable[A1], handler: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1](arg1: A1, handler: js.Function1[/* arg1 */ A1, R | PromiseLike[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1](arg1: PromiseLike[A1], handler: js.Function1[/* arg1 */ A1, R | PromiseLike[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
-  inline def join[R, A1, A2](arg1: A1, arg2: A2, handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2](arg1: A1, arg2: A2, handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | PromiseLike[R]]): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2](
     arg1: A1,
-    arg2: js.Thenable[A2],
-    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]
+    arg2: PromiseLike[A2],
+    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2](
-    arg1: js.Thenable[A1],
+    arg1: PromiseLike[A1],
     arg2: A2,
-    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]
+    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
   inline def join[R, A1, A2, A3](
     arg1: A1,
     arg2: A2,
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3](
     arg1: A1,
     arg2: A2,
-    arg3: js.Thenable[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    arg3: PromiseLike[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3](
     arg1: A1,
-    arg2: js.Thenable[A2],
+    arg2: PromiseLike[A2],
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3](
     arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3](
-    arg1: js.Thenable[A1],
+    arg1: PromiseLike[A1],
     arg2: A2,
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3](
-    arg1: js.Thenable[A1],
+    arg1: PromiseLike[A1],
     arg2: A2,
-    arg3: js.Thenable[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    arg3: PromiseLike[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
   inline def join[R, A1, A2, A3, A4](
@@ -879,112 +879,112 @@ object mod {
     arg2: A2,
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
     arg1: A1,
     arg2: A2,
     arg3: A3,
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
     arg1: A1,
     arg2: A2,
-    arg3: js.Thenable[A3],
+    arg3: PromiseLike[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
     arg1: A1,
     arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: js.Thenable[A2],
+    arg2: PromiseLike[A2],
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: js.Thenable[A2],
+    arg2: PromiseLike[A2],
     arg3: A3,
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
+    arg1: PromiseLike[A1],
     arg2: A2,
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
+    arg1: PromiseLike[A1],
     arg2: A2,
     arg3: A3,
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
+    arg1: PromiseLike[A1],
     arg2: A2,
-    arg3: js.Thenable[A3],
+    arg3: PromiseLike[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
+    arg1: PromiseLike[A1],
     arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
     arg3: A3,
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   /* static member */
   inline def join[R, A1, A2, A3, A4, A5](
@@ -999,7 +999,7 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
@@ -1007,21 +1007,21 @@ object mod {
     arg2: A2,
     arg3: A3,
     arg4: A4,
-    arg5: js.Thenable[A5],
+    arg5: PromiseLike[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
     arg1: A1,
     arg2: A2,
     arg3: A3,
-    arg4: js.Thenable[A4],
+    arg4: PromiseLike[A4],
     arg5: A5,
     handler: js.Function5[
       /* arg1 */ A1, 
@@ -1029,88 +1029,28 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
     arg1: A1,
     arg2: A2,
     arg3: A3,
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
     arg1: A1,
     arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: A4,
-    arg5: A5,
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: A4,
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    arg5: A5,
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: A3,
+    arg3: PromiseLike[A3],
     arg4: A4,
     arg5: A5,
     handler: js.Function5[
@@ -1119,117 +1059,57 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
     arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: A3,
-    arg4: A4,
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: A3,
-    arg4: js.Thenable[A4],
-    arg5: A5,
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: A3,
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: A4,
-    arg5: A5,
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: A4,
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    arg5: A5,
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: A1,
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
     arg2: A2,
+    arg3: PromiseLike[A3],
+    arg4: A4,
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: A1,
+    arg2: A2,
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    arg5: A5,
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: A1,
+    arg2: A2,
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: A1,
+    arg2: PromiseLike[A2],
     arg3: A3,
     arg4: A4,
     arg5: A5,
@@ -1239,29 +1119,29 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: A2,
+    arg1: A1,
+    arg2: PromiseLike[A2],
     arg3: A3,
     arg4: A4,
-    arg5: js.Thenable[A5],
+    arg5: PromiseLike[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: A2,
+    arg1: A1,
+    arg2: PromiseLike[A2],
     arg3: A3,
-    arg4: js.Thenable[A4],
+    arg4: PromiseLike[A4],
     arg5: A5,
     handler: js.Function5[
       /* arg1 */ A1, 
@@ -1269,88 +1149,28 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: A2,
+    arg1: A1,
+    arg2: PromiseLike[A2],
     arg3: A3,
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: A4,
-    arg5: A5,
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: A4,
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    arg5: A5,
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: A2,
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: A3,
+    arg1: A1,
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
     arg4: A4,
     arg5: A5,
     handler: js.Function5[
@@ -1359,29 +1179,29 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: A3,
+    arg1: A1,
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
     arg4: A4,
-    arg5: js.Thenable[A5],
+    arg5: PromiseLike[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: A3,
-    arg4: js.Thenable[A4],
+    arg1: A1,
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
     arg5: A5,
     handler: js.Function5[
       /* arg1 */ A1, 
@@ -1389,28 +1209,28 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
+    arg1: A1,
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: A2,
     arg3: A3,
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
-    handler: js.Function5[
-      /* arg1 */ A1, 
-      /* arg2 */ A2, 
-      /* arg3 */ A3, 
-      /* arg4 */ A4, 
-      /* arg5 */ A5, 
-      R | js.Thenable[R]
-    ]
-  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
-  inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
     arg4: A4,
     arg5: A5,
     handler: js.Function5[
@@ -1419,29 +1239,29 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
+    arg1: PromiseLike[A1],
+    arg2: A2,
+    arg3: A3,
     arg4: A4,
-    arg5: js.Thenable[A5],
+    arg5: PromiseLike[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
+    arg1: PromiseLike[A1],
+    arg2: A2,
+    arg3: A3,
+    arg4: PromiseLike[A4],
     arg5: A5,
     handler: js.Function5[
       /* arg1 */ A1, 
@@ -1449,22 +1269,202 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   inline def join[R, A1, A2, A3, A4, A5](
-    arg1: js.Thenable[A1],
-    arg2: js.Thenable[A2],
-    arg3: js.Thenable[A3],
-    arg4: js.Thenable[A4],
-    arg5: js.Thenable[A5],
+    arg1: PromiseLike[A1],
+    arg2: A2,
+    arg3: A3,
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: A2,
+    arg3: PromiseLike[A3],
+    arg4: A4,
+    arg5: A5,
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: A2,
+    arg3: PromiseLike[A3],
+    arg4: A4,
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: A2,
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    arg5: A5,
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: A2,
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: A3,
+    arg4: A4,
+    arg5: A5,
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: A3,
+    arg4: A4,
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: A3,
+    arg4: PromiseLike[A4],
+    arg5: A5,
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: A3,
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: A4,
+    arg5: A5,
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: A4,
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    arg5: A5,
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
+    ]
+  ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
+  inline def join[R, A1, A2, A3, A4, A5](
+    arg1: PromiseLike[A1],
+    arg2: PromiseLike[A2],
+    arg3: PromiseLike[A3],
+    arg4: PromiseLike[A4],
+    arg5: PromiseLike[A5],
+    handler: js.Function5[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      /* arg5 */ A5, 
+      R | PromiseLike[R]
     ]
   ): Bluebird[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any], arg5.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Bluebird[R]]
   
@@ -1475,21 +1475,21 @@ object mod {
   inline def longStackTraces(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("longStackTraces")().asInstanceOf[Unit]
   
   inline def map[R, U](
-    values: js.Array[js.Thenable[R] | R],
-    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: js.Array[PromiseLike[R] | R],
+    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   inline def map[R, U](
-    values: js.Array[js.Thenable[R] | R],
-    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]],
+    values: js.Array[PromiseLike[R] | R],
+    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]],
     options: ConcurrencyOption
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   inline def map[R, U](
-    values: js.Iterable[js.Thenable[R] | R],
-    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: js.Iterable[PromiseLike[R] | R],
+    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   inline def map[R, U](
-    values: js.Iterable[js.Thenable[R] | R],
-    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]],
+    values: js.Iterable[PromiseLike[R] | R],
+    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]],
     options: ConcurrencyOption
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   /**
@@ -1501,22 +1501,22 @@ object mod {
     */
   /* static member */
   inline def map[R, U](
-    values: js.Thenable[(js.Array[js.Thenable[R] | R]) | (js.Iterable[js.Thenable[R] | R])],
-    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: PromiseLike[(js.Array[PromiseLike[R] | R]) | (js.Iterable[PromiseLike[R] | R])],
+    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   inline def map[R, U](
-    values: js.Thenable[(js.Array[js.Thenable[R] | R]) | (js.Iterable[js.Thenable[R] | R])],
-    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]],
+    values: PromiseLike[(js.Array[PromiseLike[R] | R]) | (js.Iterable[PromiseLike[R] | R])],
+    mapper: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]],
     options: ConcurrencyOption
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(values.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   
   inline def mapSeries[R, U](
-    values: js.Array[js.Thenable[R] | R],
-    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: js.Array[PromiseLike[R] | R],
+    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapSeries")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   inline def mapSeries[R, U](
-    values: js.Iterable[js.Thenable[R] | R],
-    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: js.Iterable[PromiseLike[R] | R],
+    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapSeries")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   /**
     * Given an Iterable(arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix of promises and values), iterate over all the values in the Iterable into an array and iterate over the array serially, in-order.
@@ -1527,18 +1527,18 @@ object mod {
     */
   /* static member */
   inline def mapSeries[R, U](
-    values: js.Thenable[(js.Array[js.Thenable[R] | R]) | (js.Iterable[js.Thenable[R] | R])],
-    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+    values: PromiseLike[(js.Array[PromiseLike[R] | R]) | (js.Iterable[PromiseLike[R] | R])],
+    iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
   ): Bluebird[js.Array[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapSeries")(values.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[U]]]
   
   /* static member */
-  inline def method[R](fn: js.Function1[/* repeated */ Any, R | js.Thenable[R]]): js.Function1[/* repeated */ Any, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Bluebird[R]]]
+  inline def method[R](fn: js.Function1[/* repeated */ Any, R | PromiseLike[R]]): js.Function1[/* repeated */ Any, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Bluebird[R]]]
   /* static member */
-  inline def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]]]
+  inline def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | PromiseLike[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ A1, /* arg2 */ A2, Bluebird[R]]]
   /* static member */
-  inline def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]]]
+  inline def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | PromiseLike[R]]): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, Bluebird[R]]]
   /* static member */
-  inline def method[R, A1, A2, A3, A4](fn: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]]]
+  inline def method[R, A1, A2, A3, A4](fn: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | PromiseLike[R]]): js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, Bluebird[R]]]
   /* static member */
   inline def method[R, A1, A2, A3, A4, A5](
     fn: js.Function5[
@@ -1547,7 +1547,7 @@ object mod {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | js.Thenable[R]
+      R | PromiseLike[R]
     ]
   ): js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function5[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, /* arg5 */ A5, Bluebird[R]]]
   
@@ -1556,7 +1556,7 @@ object mod {
     * This method is convenient when a function can sometimes return synchronously or throw synchronously.
     */
   /* static member */
-  inline def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): js.Function1[/* arg1 */ A1, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Bluebird[R]]]
+  inline def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, R | PromiseLike[R]]): js.Function1[/* arg1 */ A1, Bluebird[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg1 */ A1, Bluebird[R]]]
   
   /**
     * This is relevant to browser environments with no module loader.
@@ -1567,7 +1567,7 @@ object mod {
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[
-          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
+          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (PromiseLike[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
         ], 
         Unit
       ], 
@@ -1580,7 +1580,7 @@ object mod {
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[
-          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
+          (/* import warning: RewrittenClass.unapply cls was tparam R */ Any) | (PromiseLike[/* import warning: RewrittenClass.unapply cls was tparam R */ Any])
         ], 
         Unit
       ], 
@@ -1740,17 +1740,17 @@ object mod {
     options: PromisifyOptions
   ): js.Function0[Bluebird[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Bluebird[T]]]
   
-  // trusted promise for object
-  /* static member */
-  inline def props[T](`object`: js.Thenable[ResolvableProps[T]]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
   // tslint:disable-line:unified-signatures
   // object
   /* static member */
   inline def props[T](`object`: ResolvableProps[T]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
+  // trusted promise for object
+  /* static member */
+  inline def props[T](`object`: PromiseLike[ResolvableProps[T]]): Bluebird[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(`object`.asInstanceOf[js.Any]).asInstanceOf[Bluebird[T]]
   // tslint:disable-line:unified-signatures
   // map
   /* static member */
-  inline def props[K, V](map: Map[K, js.Thenable[V] | V]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
+  inline def props[K, V](map: Map[K, PromiseLike[V] | V]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
   
   /**
     * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled. The promise's fulfillment value is an object with fulfillment values at respective keys to the original object. If any promise in the object rejects, the returned promise is rejected with the rejection reason.
@@ -1761,35 +1761,35 @@ object mod {
     */
   // trusted promise for map
   /* static member */
-  inline def props_KV[K, V](map: js.Thenable[Map[K, js.Thenable[V] | V]]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
+  inline def props_KV[K, V](map: PromiseLike[Map[K, PromiseLike[V] | V]]): Bluebird[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(map.asInstanceOf[js.Any]).asInstanceOf[Bluebird[Map[K, V]]]
   
-  inline def race[R](values: js.Array[js.Thenable[R] | R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def race[R](values: js.Array[PromiseLike[R] | R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled or rejected as soon as a promise in the array is fulfilled or rejected with the respective rejection reason or fulfillment value.
     *
     * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
     */
   /* static member */
-  inline def race[R](values: js.Thenable[js.Array[js.Thenable[R] | R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def race[R](values: PromiseLike[js.Array[PromiseLike[R] | R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   inline def reduce[R, U](
-    values: js.Array[js.Thenable[R] | R],
+    values: js.Array[PromiseLike[R] | R],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      U | js.Thenable[U]
+      U | PromiseLike[U]
     ]
   ): Bluebird[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(values.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[Bluebird[U]]
   inline def reduce[R, U](
-    values: js.Array[js.Thenable[R] | R],
+    values: js.Array[PromiseLike[R] | R],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      U | js.Thenable[U]
+      U | PromiseLike[U]
     ],
     initialValue: U
   ): Bluebird[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(values.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Bluebird[U]]
@@ -1802,23 +1802,23 @@ object mod {
     */
   /* static member */
   inline def reduce[R, U](
-    values: js.Thenable[js.Array[js.Thenable[R] | R]],
+    values: PromiseLike[js.Array[PromiseLike[R] | R]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      U | js.Thenable[U]
+      U | PromiseLike[U]
     ]
   ): Bluebird[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(values.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[Bluebird[U]]
   inline def reduce[R, U](
-    values: js.Thenable[js.Array[js.Thenable[R] | R]],
+    values: PromiseLike[js.Array[PromiseLike[R] | R]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ Double, 
       /* arrayLength */ Double, 
-      U | js.Thenable[U]
+      U | PromiseLike[U]
     ],
     initialValue: U
   ): Bluebird[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(values.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Bluebird[U]]
@@ -1839,7 +1839,7 @@ object mod {
   inline def resolve(): Bluebird[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Bluebird[Unit]]
   /* static member */
   inline def resolve[R](value: R): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
-  inline def resolve[R](value: js.Thenable[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def resolve[R](value: PromiseLike[R]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * Changes how bluebird schedules calls a-synchronously.
@@ -1849,7 +1849,7 @@ object mod {
     */
   inline def setScheduler(scheduler: js.Function1[/* callback */ js.Function1[/* repeated */ Any, Unit], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScheduler")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def some[R](values: js.Array[js.Thenable[R] | R], count: Double): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(values.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def some[R](values: js.Array[PromiseLike[R] | R], count: Double): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(values.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   /**
     * Initiate a competetive race between multiple promises or values (values will become immediately fulfilled promises). When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of the winners in order of resolution.
     *
@@ -1858,7 +1858,7 @@ object mod {
     * *The original array is not modified.*
     */
   /* static member */
-  inline def some[R](values: js.Thenable[js.Array[js.Thenable[R] | R]], count: Double): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(values.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
+  inline def some[R](values: PromiseLike[js.Array[PromiseLike[R] | R]], count: Double): Bluebird[js.Array[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(values.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Bluebird[js.Array[R]]]
   
   /**
     * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.
@@ -1868,7 +1868,7 @@ object mod {
     * Alias for `attempt();` for compatibility with earlier ECMAScript version.
     */
   /* static member */
-  inline def `try`[R](fn: js.Function0[R | js.Thenable[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
+  inline def `try`[R](fn: js.Function0[R | PromiseLike[R]]): Bluebird[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("try")(fn.asInstanceOf[js.Any]).asInstanceOf[Bluebird[R]]
   
   /**
     * In conjunction with `.disposer`, using will make sure that no matter what, the specified disposer
@@ -1876,19 +1876,19 @@ object mod {
     *  necessary because there is no standard interface in node for disposing resources.
     */
   /* static member */
-  inline def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, js.Thenable[T]]): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
+  inline def `using`[R, T](disposer: Disposer[R], executor: js.Function1[/* transaction */ R, PromiseLike[T]]): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   /* static member */
   inline def `using`[R1, R2, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
-    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
+    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, PromiseLike[T]]
   ): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], disposer2.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   /* static member */
   inline def `using`[R1, R2, R3, T](
     disposer: Disposer[R1],
     disposer2: Disposer[R2],
     disposer3: Disposer[R3],
-    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
+    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, PromiseLike[T]]
   ): Bluebird[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("using")(disposer.asInstanceOf[js.Any], disposer2.asInstanceOf[js.Any], disposer3.asInstanceOf[js.Any], executor.asInstanceOf[js.Any])).asInstanceOf[Bluebird[T]]
   
   /**
@@ -1949,216 +1949,216 @@ object mod {
       * Alias `.caught();` for compatibility with earlier ECMAScript version.
       */
     def `catch`(): Bluebird[R] = js.native
-    def `catch`(onReject: js.Function1[/* error */ Any, R | (js.Thenable[R | Unit]) | Unit]): Bluebird[R] = js.native
+    def `catch`(onReject: js.Function1[/* error */ Any, R | (PromiseLike[R | Unit]) | Unit]): Bluebird[R] = js.native
     def `catch`[E1](
       filter1: E1 & js.Object,
-      onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1](
       filter1: js.Function1[/* error */ E1, Boolean],
-      onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
-      onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2166,7 +2166,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2174,7 +2174,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2182,7 +2182,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2190,7 +2190,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2198,7 +2198,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2206,7 +2206,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2214,7 +2214,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2222,7 +2222,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2230,7 +2230,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2238,7 +2238,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2246,7 +2246,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2254,7 +2254,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2262,7 +2262,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2270,7 +2270,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2278,7 +2278,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -2286,7 +2286,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2294,7 +2294,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2302,7 +2302,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2310,7 +2310,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2318,7 +2318,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2326,7 +2326,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2334,7 +2334,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2342,7 +2342,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2350,7 +2350,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2358,7 +2358,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2366,7 +2366,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2374,7 +2374,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2382,7 +2382,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2390,7 +2390,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2398,7 +2398,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2406,7 +2406,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def `catch`[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -2414,7 +2414,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     /**
       * This extends `.catch` to work more like catch-clauses in languages like Java or C#. Instead of manually checking `instanceof` or `.name === "SomeError"`, you may specify a number of error constructors which are eligible for this catch handler. The catch handler that is first met that has eligible constructors specified, is the one that will be called.
@@ -2431,7 +2431,7 @@ object mod {
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
       filter5: Instantiable1[/* args (repeated) */ Any, E5],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     
     /**
@@ -2849,757 +2849,757 @@ object mod {
     @JSName("catch")
     def catch_U[U](): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_U[U](onReject: js.Function1[/* error */ Any, U | js.Thenable[U]]): Bluebird[U | R] = js.native
+    def catch_U[U](onReject: js.Function1[/* error */ Any, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1[U, E1](filter1: E1 & js.Object, onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]): Bluebird[U | R] = js.native
+    def catch_UE1[U, E1](filter1: E1 & js.Object, onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("catch")
     def catch_UE1[U, E1](
       filter1: js.Function1[/* error */ E1, Boolean],
-      onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2[U, E1, E2](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2[U, E1, E2](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("catch")
-    def catch_UE1_Error[U, E1 /* <: js.Error */](
+    def catch_UE1[U, E1 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
-      onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1_ErrorE2_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
+    def catch_UE1E2[U, E1, E2](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2[U, E1, E2](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2[U, E1, E2](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2[U, E1, E2](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1_ErrorE2_ErrorE3_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1_ErrorE2_ErrorE3_ErrorE4_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */](
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("catch")
-    def catch_UE1_ErrorE2_ErrorE3_ErrorE4_ErrorE5_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */, E5 /* <: js.Error */](
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("catch")
+    def catch_UE1E2E3E4E5[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */, E5 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
       filter5: Instantiable1[/* args (repeated) */ Any, E5],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | (js.Thenable[U | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | (PromiseLike[U | Unit]) | Unit]
     ): Bluebird[U | R] = js.native
     
     def caught(): Bluebird[R] = js.native
-    def caught(onReject: js.Function1[/* error */ Any, R | (js.Thenable[R | Unit]) | Unit]): Bluebird[R] = js.native
+    def caught(onReject: js.Function1[/* error */ Any, R | (PromiseLike[R | Unit]) | Unit]): Bluebird[R] = js.native
     def caught[E1](
       filter1: E1 & js.Object,
-      onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1](
       filter1: js.Function1[/* error */ E1, Boolean],
-      onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
-      onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
-      onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: E1 & js.Object,
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: E2 & js.Object,
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4](
       filter1: js.Function1[/* error */ E1, Boolean],
       filter2: js.Function1[/* error */ E2, Boolean],
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3607,7 +3607,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3615,7 +3615,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3623,7 +3623,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3631,7 +3631,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3639,7 +3639,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3647,7 +3647,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3655,7 +3655,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3663,7 +3663,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3671,7 +3671,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3679,7 +3679,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3687,7 +3687,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3695,7 +3695,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3703,7 +3703,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3711,7 +3711,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3719,7 +3719,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: E1 & js.Object,
@@ -3727,7 +3727,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3735,7 +3735,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3743,7 +3743,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3751,7 +3751,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3759,7 +3759,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3767,7 +3767,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3775,7 +3775,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3783,7 +3783,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3791,7 +3791,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3799,7 +3799,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3807,7 +3807,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3815,7 +3815,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3823,7 +3823,7 @@ object mod {
       filter3: E3 & js.Object,
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3831,7 +3831,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3839,7 +3839,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: E4 & js.Object,
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3847,7 +3847,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1, E2, E3, E4, E5](
       filter1: js.Function1[/* error */ E1, Boolean],
@@ -3855,7 +3855,7 @@ object mod {
       filter3: js.Function1[/* error */ E3, Boolean],
       filter4: js.Function1[/* error */ E4, Boolean],
       filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     def caught[E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */, E5 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
@@ -3863,549 +3863,549 @@ object mod {
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
       filter5: Instantiable1[/* args (repeated) */ Any, E5],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | Unit]) | Unit]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (PromiseLike[R | Unit]) | Unit]
     ): Bluebird[R] = js.native
     @JSName("caught")
     def caught_U[U](): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_U[U](onReject: js.Function1[/* error */ Any, U | js.Thenable[U]]): Bluebird[U | R] = js.native
+    def caught_U[U](onReject: js.Function1[/* error */ Any, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1[U, E1](filter1: E1 & js.Object, onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]): Bluebird[U | R] = js.native
+    def caught_UE1[U, E1](filter1: E1 & js.Object, onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]): Bluebird[U | R] = js.native
     @JSName("caught")
     def caught_UE1[U, E1](
       filter1: js.Function1[/* error */ E1, Boolean],
-      onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2[U, E1, E2](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2[U, E1, E2](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2[U, E1, E2](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3[U, E1, E2, E3](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: E1 & js.Object,
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: E2 & js.Object,
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: E3 & js.Object,
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: E4 & js.Object,
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: E5 & js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
-      filter1: js.Function1[/* error */ E1, Boolean],
-      filter2: js.Function1[/* error */ E2, Boolean],
-      filter3: js.Function1[/* error */ E3, Boolean],
-      filter4: js.Function1[/* error */ E4, Boolean],
-      filter5: js.Function1[/* error */ E5, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
-    ): Bluebird[U | R] = js.native
-    @JSName("caught")
-    def caught_UE1_Error[U, E1 /* <: js.Error */](
+    def caught_UE1[U, E1 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
-      onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1_ErrorE2_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
+    def caught_UE1E2[U, E1, E2](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2[U, E1, E2](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2[U, E1, E2](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2[U, E1, E2](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1_ErrorE2_ErrorE3_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1, E2, E3](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1_ErrorE2_ErrorE3_ErrorE4_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */](
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1, E2, E3, E4](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     @JSName("caught")
-    def caught_UE1_ErrorE2_ErrorE3_ErrorE4_ErrorE5_Error[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */, E5 /* <: js.Error */](
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: E1 & js.Object,
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: E2 & js.Object,
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: E3 & js.Object,
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: E4 & js.Object,
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: E5 & js.Object,
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1, E2, E3, E4, E5](
+      filter1: js.Function1[/* error */ E1, Boolean],
+      filter2: js.Function1[/* error */ E2, Boolean],
+      filter3: js.Function1[/* error */ E3, Boolean],
+      filter4: js.Function1[/* error */ E4, Boolean],
+      filter5: js.Function1[/* error */ E5, Boolean],
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
+    ): Bluebird[U | R] = js.native
+    @JSName("caught")
+    def caught_UE1E2E3E4E5[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */, E5 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
       filter4: Instantiable1[/* args (repeated) */ Any, E4],
       filter5: Instantiable1[/* args (repeated) */ Any, E5],
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[U | R] = js.native
     
     /**
@@ -4423,30 +4423,30 @@ object mod {
       * The second argument passed to a disposer is the result promise of the using block, which you can
       *  inspect synchronously.
       */
-    def disposer(disposeFn: js.Function2[/* arg */ R, /* promise */ Bluebird[R], Unit | js.Thenable[Unit]]): Disposer[R] = js.native
+    def disposer(disposeFn: js.Function2[/* arg */ R, /* promise */ Bluebird[R], Unit | PromiseLike[Unit]]): Disposer[R] = js.native
     
     /**
       * Like `.then()`, but any unhandled rejection that ends up here will be thrown as an error.
       */
     def done[U](): Unit = js.native
-    def done[U](onFulfilled: js.Function1[/* value */ R, U | js.Thenable[U]]): Unit = js.native
+    def done[U](onFulfilled: js.Function1[/* value */ R, U | PromiseLike[U]]): Unit = js.native
     def done[U](
-      onFulfilled: js.Function1[/* value */ R, U | js.Thenable[U]],
-      onRejected: js.Function1[/* error */ Any, U | js.Thenable[U]]
+      onFulfilled: js.Function1[/* value */ R, U | PromiseLike[U]],
+      onRejected: js.Function1[/* error */ Any, U | PromiseLike[U]]
     ): Unit = js.native
-    def done[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, U | js.Thenable[U]]): Unit = js.native
+    def done[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, U | PromiseLike[U]]): Unit = js.native
     
     /**
       * Same as calling ``Bluebird.each(thisPromise, iterator)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
       */
     def each[R, U](
-      iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+      iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
     ): Bluebird[js.Array[R]] = js.native
     
     /**
       * Like `.catch` but instead of catching all types of exceptions, it only catches those that don't originate from thrown errors but rather from explicit rejections.
       */
-    def error[U](onReject: js.Function1[/* reason */ Any, U | js.Thenable[U]]): Bluebird[U] = js.native
+    def error[U](onReject: js.Function1[/* reason */ Any, U | PromiseLike[U]]): Bluebird[U] = js.native
     
     /**
       * Same as calling ``Promise.filter(thisPromise, filterer)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
@@ -4457,7 +4457,7 @@ object mod {
           /* item */ U, 
           /* index */ Double, 
           /* arrayLength */ Double, 
-          Boolean | js.Thenable[Boolean]
+          Boolean | PromiseLike[Boolean]
         ]
     ): Bluebird[js.Array[U]] = js.native
     def filter[U](
@@ -4465,7 +4465,7 @@ object mod {
           /* item */ U, 
           /* index */ Double, 
           /* arrayLength */ Double, 
-          Boolean | js.Thenable[Boolean]
+          Boolean | PromiseLike[Boolean]
         ],
       options: ConcurrencyOption
     ): Bluebird[js.Array[U]] = js.native
@@ -4475,7 +4475,7 @@ object mod {
       *
       * Alias `.lastly();` for compatibility with earlier ECMAScript version.
       */
-    def `finally`[U](handler: js.Function0[U | js.Thenable[U]]): Bluebird[R] = js.native
+    def `finally`[U](handler: js.Function0[U | PromiseLike[U]]): Bluebird[R] = js.native
     
     /**
       * This is a convenience method for doing:
@@ -4496,17 +4496,17 @@ object mod {
       */
     def isResolved(): Boolean = js.native
     
-    def lastly[U](handler: js.Function0[U | js.Thenable[U]]): Bluebird[R] = js.native
+    def lastly[U](handler: js.Function0[U | PromiseLike[U]]): Bluebird[R] = js.native
     
     /**
       * Same as calling `Bluebird.map(thisPromise, mapper)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
       */
     // TODO type inference from array-resolving promise?
     def map[Q, U](
-      mapper: js.Function3[/* item */ Q, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+      mapper: js.Function3[/* item */ Q, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
     ): Bluebird[js.Array[U]] = js.native
     def map[Q, U](
-      mapper: js.Function3[/* item */ Q, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]],
+      mapper: js.Function3[/* item */ Q, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]],
       options: ConcurrencyOption
     ): Bluebird[js.Array[U]] = js.native
     
@@ -4514,7 +4514,7 @@ object mod {
       * Same as calling ``Bluebird.mapSeries(thisPromise, iterator)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
       */
     def mapSeries[R, U](
-      iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | js.Thenable[U]]
+      iterator: js.Function3[/* item */ R, /* index */ Double, /* arrayLength */ Double, U | PromiseLike[U]]
     ): Bluebird[js.Array[U]] = js.native
     
     /**
@@ -4548,7 +4548,7 @@ object mod {
           /* item */ Q, 
           /* index */ Double, 
           /* arrayLength */ Double, 
-          U | js.Thenable[U]
+          U | PromiseLike[U]
         ]
     ): Bluebird[U] = js.native
     def reduce[Q, U](
@@ -4557,7 +4557,7 @@ object mod {
           /* item */ Q, 
           /* index */ Double, 
           /* arrayLength */ Double, 
-          U | js.Thenable[U]
+          U | PromiseLike[U]
         ],
       initialValue: U
     ): Bluebird[U] = js.native
@@ -4590,12 +4590,12 @@ object mod {
     // TODO type inference from array-resolving promise?
     def some[U](count: Double): Bluebird[js.Array[U]] = js.native
     
-    def spread[U](fulfilledHandler: js.Function1[/* repeated */ Any, U | js.Thenable[U]]): Bluebird[U] = js.native
+    def spread[U](fulfilledHandler: js.Function1[/* repeated */ Any, U | PromiseLike[U]]): Bluebird[U] = js.native
     /**
       * Like calling `.then`, but the fulfillment value or rejection reason is assumed to be an array, which is flattened to the formal parameters of the handlers.
       */
     @JSName("spread")
-    def spread_UW[U, W](fulfilledHandler: js.Function1[/* repeated */ W, U | js.Thenable[U]]): Bluebird[U] = js.native
+    def spread_UW[U, W](fulfilledHandler: js.Function1[/* repeated */ W, U | PromiseLike[U]]): Bluebird[U] = js.native
     
     /**
       * Basically sugar for doing: somePromise.catch(function(){});
@@ -4607,235 +4607,235 @@ object mod {
     /**
       * Like `.finally()`, but not called for rejections.
       */
-    def tap[U](onFulFill: js.Function1[/* value */ R, js.Thenable[U] | U]): Bluebird[R] = js.native
+    def tap[U](onFulFill: js.Function1[/* value */ R, PromiseLike[U] | U]): Bluebird[R] = js.native
     
     /**
       * Like `.catch()` but rethrows the error
       * TODO: disallow non-objects
       */
-    def tapCatch[U](onReject: js.Function1[/* error */ js.UndefOr[Any], U | js.Thenable[U]]): Bluebird[R] = js.native
+    def tapCatch[U](onReject: js.Function1[/* error */ js.UndefOr[Any], U | PromiseLike[U]]): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
-    def tapCatch[U, E1 /* <: js.Error */](filter1: js.Object, onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]): Bluebird[R] = js.native
+    def tapCatch[U, E1 /* <: js.Error */](filter1: js.Object, onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
-      onReject: js.Function1[/* error */ E1, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: js.Object,
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
-      onReject: js.Function1[/* error */ E1 | E2, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Object,
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Object,
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: js.Object,
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Function1[/* error */ Any, Boolean],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Object,
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Object,
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: js.Object,
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: js.Object,
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Function1[/* error */ Any, Boolean],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Object,
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Object,
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: js.Object,
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: js.Function1[/* error */ Any, Boolean],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */](
       filter1: Instantiable1[/* args (repeated) */ Any, E1],
       filter2: Instantiable1[/* args (repeated) */ Any, E2],
       filter3: Instantiable1[/* args (repeated) */ Any, E3],
-      onReject: js.Function1[/* error */ E1 | E2 | E3, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */](
       filter1: (Instantiable1[/* args (repeated) */ Any, E1]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
       filter2: (Instantiable1[/* args (repeated) */ Any, E2]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
       filter3: (Instantiable1[/* args (repeated) */ Any, E3]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
       filter4: (Instantiable1[/* args (repeated) */ Any, E4]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     def tapCatch[U, E1 /* <: js.Error */, E2 /* <: js.Error */, E3 /* <: js.Error */, E4 /* <: js.Error */, E5 /* <: js.Error */](
       filter1: (Instantiable1[/* args (repeated) */ Any, E1]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
@@ -4843,7 +4843,7 @@ object mod {
       filter3: (Instantiable1[/* args (repeated) */ Any, E3]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
       filter4: (Instantiable1[/* args (repeated) */ Any, E4]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
       filter5: (Instantiable1[/* args (repeated) */ Any, E5]) | (js.Function1[/* error */ Any, Boolean]) | js.Object,
-      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | js.Thenable[U]]
+      onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | PromiseLike[U]]
     ): Bluebird[R] = js.native
     
     def thenReturn(): Bluebird[Unit] = js.native
@@ -4855,14 +4855,14 @@ object mod {
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2[TResult1, TResult2](onfulfilled: js.Function1[/* value */ R, TResult1 | js.Thenable[TResult1]]): Bluebird[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2[TResult1, TResult2](onfulfilled: js.Function1[/* value */ R, TResult1 | PromiseLike[TResult1]]): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ R, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]
+      onfulfilled: js.Function1[/* value */ R, TResult1 | PromiseLike[TResult1]],
+      onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
     ): Bluebird[TResult1 | TResult2] = js.native
     @JSName("then")
-    def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | js.Thenable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
+    def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
     
     /**
       * Convenience method for:
@@ -5036,7 +5036,7 @@ object mod {
         js.Function2[
           /* originalMethod */ js.Function1[/* repeated */ Any, Any], 
           /* defaultPromisifer */ js.Function1[/* repeated */ Any, js.Function1[/* repeated */ Any, Bluebird[Any]]], 
-          js.Function0[js.Thenable[Any]]
+          js.Function0[PromiseLike[Any]]
         ]
       ] = js.undefined
     
@@ -5058,7 +5058,7 @@ object mod {
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       inline def setPromisifier(
-        value: (/* originalMethod */ js.Function1[/* repeated */ Any, Any], /* defaultPromisifer */ js.Function1[/* repeated */ Any, js.Function1[/* repeated */ Any, Bluebird[Any]]]) => js.Function0[js.Thenable[Any]]
+        value: (/* originalMethod */ js.Function1[/* repeated */ Any, Any], /* defaultPromisifer */ js.Function1[/* repeated */ Any, js.Function1[/* repeated */ Any, Bluebird[Any]]]) => js.Function0[PromiseLike[Any]]
       ): Self = StObject.set(x, "promisifier", js.Any.fromFunction2(value))
       
       inline def setPromisifierUndefined: Self = StObject.set(x, "promisifier", js.undefined)
@@ -5142,5 +5142,5 @@ object mod {
   }
   
   /** @deprecated Use PromiseLike<T> directly. */
-  type Thenable[T] = js.Thenable[T]
+  type Thenable[T] = PromiseLike[T]
 }

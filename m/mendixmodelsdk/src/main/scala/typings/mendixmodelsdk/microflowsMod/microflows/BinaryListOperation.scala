@@ -10,7 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryListOperation")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryListOperation")
 @js.native
 abstract class BinaryListOperation protected () extends ListOperation {
   def this(
@@ -27,18 +27,18 @@ abstract class BinaryListOperation protected () extends ListOperation {
 }
 object BinaryListOperation {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryListOperation")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryListOperation")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryListOperation.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryListOperation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryListOperation.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.BinaryListOperation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

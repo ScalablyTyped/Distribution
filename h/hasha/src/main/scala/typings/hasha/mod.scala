@@ -5,9 +5,9 @@ import typings.hasha.hashaStrings.md5
 import typings.hasha.hashaStrings.sha1
 import typings.hasha.hashaStrings.sha256
 import typings.hasha.hashaStrings.sha512
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.cryptoMod.Hash
+import typings.std.ReadableStream
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -92,10 +92,10 @@ object mod {
   	@param stream - A stream you want to hash.
   	@returns The calculated hash.
   	*/
-  inline def fromStream(stream: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  inline def fromStream(stream: ReadableStream, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def fromStream(stream: ReadableStream[Any]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def fromStream(stream: ReadableStream[Any], options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def fromStream_buffer(stream: ReadableStream, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def fromStream_buffer(stream: ReadableStream[Any], options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   /**
   	Create a [hash transform stream](https://nodejs.org/api/crypto.html#crypto_class_hash).

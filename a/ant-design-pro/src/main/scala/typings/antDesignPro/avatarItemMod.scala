@@ -11,12 +11,11 @@ object avatarItemMod {
   
   @JSImport("ant-design-pro/lib/AvatarList/AvatarItem", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[AvatarItemProps, js.Any, js.Any] {
+  open class default protected () extends Component[AvatarItemProps, Any, Any] {
     def this(props: AvatarItemProps) = this()
   }
   
-  type AvatarItem = Component[AvatarItemProps, js.Any, js.Any]
+  type AvatarItem = Component[AvatarItemProps, Any, Any]
   
   trait AvatarItemProps extends StObject {
     

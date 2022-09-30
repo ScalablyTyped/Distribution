@@ -40,12 +40,13 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-plugins`
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-post`
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-settings`
+      - typings.wordpressComponents.wordpressComponentsStrings.`admin-site`
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-site-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-site-alt2`
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-site-alt3`
-      - typings.wordpressComponents.wordpressComponentsStrings.`admin-site`
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-tools`
       - typings.wordpressComponents.wordpressComponentsStrings.`admin-users`
+      - typings.wordpressComponents.wordpressComponentsStrings.airplane
       - typings.wordpressComponents.wordpressComponentsStrings.album
       - typings.wordpressComponents.wordpressComponentsStrings.`align-center`
       - typings.wordpressComponents.wordpressComponentsStrings.`align-full-width`
@@ -55,26 +56,30 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`align-pull-right`
       - typings.wordpressComponents.wordpressComponentsStrings.`align-right`
       - typings.wordpressComponents.wordpressComponentsStrings.`align-wide`
+      - typings.wordpressComponents.wordpressComponentsStrings.amazon
       - typings.wordpressComponents.wordpressComponentsStrings.analytics
       - typings.wordpressComponents.wordpressComponentsStrings.archive
+      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-down`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-down-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-down-alt2`
-      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-down`
+      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-left`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-left-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-left-alt2`
-      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-left`
+      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-right`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-right-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-right-alt2`
-      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-right`
+      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-up`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-up-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`arrow-up-alt2`
-      - typings.wordpressComponents.wordpressComponentsStrings.`arrow-up`
       - typings.wordpressComponents.wordpressComponentsStrings.art
       - typings.wordpressComponents.wordpressComponentsStrings.awards
       - typings.wordpressComponents.wordpressComponentsStrings.backup
+      - typings.wordpressComponents.wordpressComponentsStrings.bank
+      - typings.wordpressComponents.wordpressComponentsStrings.beer
+      - typings.wordpressComponents.wordpressComponentsStrings.bell
       - typings.wordpressComponents.wordpressComponentsStrings.`block-default`
-      - typings.wordpressComponents.wordpressComponentsStrings.`book-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.book
+      - typings.wordpressComponents.wordpressComponentsStrings.`book-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`buddicons-activity`
       - typings.wordpressComponents.wordpressComponentsStrings.`buddicons-bbpress-logo`
       - typings.wordpressComponents.wordpressComponentsStrings.`buddicons-buddypress-logo`
@@ -88,10 +93,15 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`buddicons-tracking`
       - typings.wordpressComponents.wordpressComponentsStrings.building
       - typings.wordpressComponents.wordpressComponentsStrings.businessman
+      - typings.wordpressComponents.wordpressComponentsStrings.businessperson
+      - typings.wordpressComponents.wordpressComponentsStrings.businesswoman
       - typings.wordpressComponents.wordpressComponentsStrings.button
-      - typings.wordpressComponents.wordpressComponentsStrings.`calendar-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.calculator
       - typings.wordpressComponents.wordpressComponentsStrings.calendar
+      - typings.wordpressComponents.wordpressComponentsStrings.`calendar-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.camera
+      - typings.wordpressComponents.wordpressComponentsStrings.`camera-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.car
       - typings.wordpressComponents.wordpressComponentsStrings.carrot
       - typings.wordpressComponents.wordpressComponentsStrings.cart
       - typings.wordpressComponents.wordpressComponentsStrings.category
@@ -101,9 +111,12 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`chart-pie`
       - typings.wordpressComponents.wordpressComponentsStrings.clipboard
       - typings.wordpressComponents.wordpressComponentsStrings.clock
+      - typings.wordpressComponents.wordpressComponentsStrings.cloud
       - typings.wordpressComponents.wordpressComponentsStrings.`cloud-saved`
       - typings.wordpressComponents.wordpressComponentsStrings.`cloud-upload`
-      - typings.wordpressComponents.wordpressComponentsStrings.cloud
+      - typings.wordpressComponents.wordpressComponentsStrings.`code-standards`
+      - typings.wordpressComponents.wordpressComponentsStrings.coffee
+      - typings.wordpressComponents.wordpressComponentsStrings.`color-picker`
       - typings.wordpressComponents.wordpressComponentsStrings.columns
       - typings.wordpressComponents.wordpressComponentsStrings.`controls-back`
       - typings.wordpressComponents.wordpressComponentsStrings.`controls-forward`
@@ -116,10 +129,19 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`controls-volumeon`
       - typings.wordpressComponents.wordpressComponentsStrings.`cover-image`
       - typings.wordpressComponents.wordpressComponentsStrings.dashboard
+      - typings.wordpressComponents.wordpressComponentsStrings.database
+      - typings.wordpressComponents.wordpressComponentsStrings.`database-add`
+      - typings.wordpressComponents.wordpressComponentsStrings.`database-export`
+      - typings.wordpressComponents.wordpressComponentsStrings.`database-import`
+      - typings.wordpressComponents.wordpressComponentsStrings.`database-remove`
+      - typings.wordpressComponents.wordpressComponentsStrings.`database-view`
       - typings.wordpressComponents.wordpressComponentsStrings.desktop
       - typings.wordpressComponents.wordpressComponentsStrings.dismiss
       - typings.wordpressComponents.wordpressComponentsStrings.download
+      - typings.wordpressComponents.wordpressComponentsStrings.drumstick
       - typings.wordpressComponents.wordpressComponentsStrings.edit
+      - typings.wordpressComponents.wordpressComponentsStrings.`edit-large`
+      - typings.wordpressComponents.wordpressComponentsStrings.`edit-page`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-aligncenter`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-alignleft`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-alignright`
@@ -136,8 +158,8 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-justify`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-kitchensink`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-ltr`
-      - typings.wordpressComponents.wordpressComponentsStrings.`editor-ol-rtl`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-ol`
+      - typings.wordpressComponents.wordpressComponentsStrings.`editor-ol-rtl`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-outdent`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-paragraph`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-paste-text`
@@ -154,9 +176,9 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-unlink`
       - typings.wordpressComponents.wordpressComponentsStrings.`editor-video`
       - typings.wordpressComponents.wordpressComponentsStrings.ellipsis
+      - typings.wordpressComponents.wordpressComponentsStrings.email
       - typings.wordpressComponents.wordpressComponentsStrings.`email-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`email-alt2`
-      - typings.wordpressComponents.wordpressComponentsStrings.email
       - typings.wordpressComponents.wordpressComponentsStrings.`embed-audio`
       - typings.wordpressComponents.wordpressComponentsStrings.`embed-generic`
       - typings.wordpressComponents.wordpressComponentsStrings.`embed-photo`
@@ -165,11 +187,12 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`excerpt-view`
       - typings.wordpressComponents.wordpressComponentsStrings.exit
       - typings.wordpressComponents.wordpressComponentsStrings.external
-      - typings.wordpressComponents.wordpressComponentsStrings.`facebook-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.facebook
+      - typings.wordpressComponents.wordpressComponentsStrings.`facebook-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.feedback
       - typings.wordpressComponents.wordpressComponentsStrings.filter
       - typings.wordpressComponents.wordpressComponentsStrings.flag
+      - typings.wordpressComponents.wordpressComponentsStrings.food
       - typings.wordpressComponents.wordpressComponentsStrings.`format-aside`
       - typings.wordpressComponents.wordpressComponentsStrings.`format-audio`
       - typings.wordpressComponents.wordpressComponentsStrings.`format-chat`
@@ -179,40 +202,44 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`format-status`
       - typings.wordpressComponents.wordpressComponentsStrings.`format-video`
       - typings.wordpressComponents.wordpressComponentsStrings.forms
-      - typings.wordpressComponents.wordpressComponentsStrings.googleplus
+      - typings.wordpressComponents.wordpressComponentsStrings.`fullscreen-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.`fullscreen-exit-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.games
+      - typings.wordpressComponents.wordpressComponentsStrings.google
       - typings.wordpressComponents.wordpressComponentsStrings.`grid-view`
       - typings.wordpressComponents.wordpressComponentsStrings.groups
       - typings.wordpressComponents.wordpressComponentsStrings.hammer
       - typings.wordpressComponents.wordpressComponentsStrings.heading
       - typings.wordpressComponents.wordpressComponentsStrings.heart
       - typings.wordpressComponents.wordpressComponentsStrings.hidden
+      - typings.wordpressComponents.wordpressComponentsStrings.hourglass
       - typings.wordpressComponents.wordpressComponentsStrings.html
-      - typings.wordpressComponents.wordpressComponentsStrings.`id-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.id
+      - typings.wordpressComponents.wordpressComponentsStrings.`id-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`image-crop`
       - typings.wordpressComponents.wordpressComponentsStrings.`image-filter`
       - typings.wordpressComponents.wordpressComponentsStrings.`image-flip-horizontal`
       - typings.wordpressComponents.wordpressComponentsStrings.`image-flip-vertical`
+      - typings.wordpressComponents.wordpressComponentsStrings.`image-rotate`
       - typings.wordpressComponents.wordpressComponentsStrings.`image-rotate-left`
       - typings.wordpressComponents.wordpressComponentsStrings.`image-rotate-right`
-      - typings.wordpressComponents.wordpressComponentsStrings.`image-rotate`
       - typings.wordpressComponents.wordpressComponentsStrings.`images-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`images-alt2`
       - typings.wordpressComponents.wordpressComponentsStrings.`index-card`
-      - typings.wordpressComponents.wordpressComponentsStrings.`info-outline`
       - typings.wordpressComponents.wordpressComponentsStrings.info
+      - typings.wordpressComponents.wordpressComponentsStrings.`info-outline`
+      - typings.wordpressComponents.wordpressComponentsStrings.insert
       - typings.wordpressComponents.wordpressComponentsStrings.`insert-after`
       - typings.wordpressComponents.wordpressComponentsStrings.`insert-before`
-      - typings.wordpressComponents.wordpressComponentsStrings.insert
       - typings.wordpressComponents.wordpressComponentsStrings.instagram
-      - typings.wordpressComponents.wordpressComponentsStrings.`keyboard-hide`
       - typings.wordpressComponents.wordpressComponentsStrings.laptop
       - typings.wordpressComponents.wordpressComponentsStrings.layout
       - typings.wordpressComponents.wordpressComponentsStrings.leftright
       - typings.wordpressComponents.wordpressComponentsStrings.lightbulb
+      - typings.wordpressComponents.wordpressComponentsStrings.linkedin
       - typings.wordpressComponents.wordpressComponentsStrings.`list-view`
-      - typings.wordpressComponents.wordpressComponentsStrings.`location-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.location
+      - typings.wordpressComponents.wordpressComponentsStrings.`location-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.lock
       - typings.wordpressComponents.wordpressComponentsStrings.marker
       - typings.wordpressComponents.wordpressComponentsStrings.`media-archive`
@@ -225,31 +252,43 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`media-text`
       - typings.wordpressComponents.wordpressComponentsStrings.`media-video`
       - typings.wordpressComponents.wordpressComponentsStrings.megaphone
-      - typings.wordpressComponents.wordpressComponentsStrings.`menu-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.menu
+      - typings.wordpressComponents.wordpressComponentsStrings.`menu-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.`menu-alt2`
+      - typings.wordpressComponents.wordpressComponentsStrings.`menu-alt3`
       - typings.wordpressComponents.wordpressComponentsStrings.microphone
       - typings.wordpressComponents.wordpressComponentsStrings.migrate
       - typings.wordpressComponents.wordpressComponentsStrings.minus
       - typings.wordpressComponents.wordpressComponentsStrings.money
+      - typings.wordpressComponents.wordpressComponentsStrings.`money-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.move
       - typings.wordpressComponents.wordpressComponentsStrings.nametag
       - typings.wordpressComponents.wordpressComponentsStrings.networking
-      - typings.wordpressComponents.wordpressComponentsStrings.`no-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.no
+      - typings.wordpressComponents.wordpressComponentsStrings.`no-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.`open-folder`
       - typings.wordpressComponents.wordpressComponentsStrings.palmtree
       - typings.wordpressComponents.wordpressComponentsStrings.paperclip
+      - typings.wordpressComponents.wordpressComponentsStrings.pdf
       - typings.wordpressComponents.wordpressComponentsStrings.performance
+      - typings.wordpressComponents.wordpressComponentsStrings.pets
       - typings.wordpressComponents.wordpressComponentsStrings.phone
+      - typings.wordpressComponents.wordpressComponentsStrings.pinterest
       - typings.wordpressComponents.wordpressComponentsStrings.`playlist-audio`
       - typings.wordpressComponents.wordpressComponentsStrings.`playlist-video`
-      - typings.wordpressComponents.wordpressComponentsStrings.`plus-alt`
-      - typings.wordpressComponents.wordpressComponentsStrings.`plus-light`
+      - typings.wordpressComponents.wordpressComponentsStrings.`plugins-checked`
       - typings.wordpressComponents.wordpressComponentsStrings.plus
+      - typings.wordpressComponents.wordpressComponentsStrings.`plus-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.`plus-alt2`
+      - typings.wordpressComponents.wordpressComponentsStrings.podio
       - typings.wordpressComponents.wordpressComponentsStrings.portfolio
       - typings.wordpressComponents.wordpressComponentsStrings.`post-status`
       - typings.wordpressComponents.wordpressComponentsStrings.pressthis
+      - typings.wordpressComponents.wordpressComponentsStrings.printer
+      - typings.wordpressComponents.wordpressComponentsStrings.privacy
       - typings.wordpressComponents.wordpressComponentsStrings.products
       - typings.wordpressComponents.wordpressComponentsStrings.randomize
+      - typings.wordpressComponents.wordpressComponentsStrings.reddit
       - typings.wordpressComponents.wordpressComponentsStrings.redo
       - typings.wordpressComponents.wordpressComponentsStrings.remove
       - typings.wordpressComponents.wordpressComponentsStrings.`rest-api`
@@ -258,22 +297,25 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.schedule
       - typings.wordpressComponents.wordpressComponentsStrings.screenoptions
       - typings.wordpressComponents.wordpressComponentsStrings.search
+      - typings.wordpressComponents.wordpressComponentsStrings.share
       - typings.wordpressComponents.wordpressComponentsStrings.`share-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`share-alt2`
-      - typings.wordpressComponents.wordpressComponentsStrings.share
-      - typings.wordpressComponents.wordpressComponentsStrings.`shield-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.shield
+      - typings.wordpressComponents.wordpressComponentsStrings.`shield-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.shortcode
       - typings.wordpressComponents.wordpressComponentsStrings.slides
       - typings.wordpressComponents.wordpressComponentsStrings.smartphone
       - typings.wordpressComponents.wordpressComponentsStrings.smiley
       - typings.wordpressComponents.wordpressComponentsStrings.sort
       - typings.wordpressComponents.wordpressComponentsStrings.sos
+      - typings.wordpressComponents.wordpressComponentsStrings.spotify
       - typings.wordpressComponents.wordpressComponentsStrings.`star-empty`
       - typings.wordpressComponents.wordpressComponentsStrings.`star-filled`
       - typings.wordpressComponents.wordpressComponentsStrings.`star-half`
       - typings.wordpressComponents.wordpressComponentsStrings.sticky
       - typings.wordpressComponents.wordpressComponentsStrings.store
+      - typings.wordpressComponents.wordpressComponentsStrings.superhero
+      - typings.wordpressComponents.wordpressComponentsStrings.`superhero-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`table-col-after`
       - typings.wordpressComponents.wordpressComponentsStrings.`table-col-before`
       - typings.wordpressComponents.wordpressComponentsStrings.`table-col-delete`
@@ -285,19 +327,23 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.tagcloud
       - typings.wordpressComponents.wordpressComponentsStrings.testimonial
       - typings.wordpressComponents.wordpressComponentsStrings.text
+      - typings.wordpressComponents.wordpressComponentsStrings.`text-page`
       - typings.wordpressComponents.wordpressComponentsStrings.`thumbs-down`
       - typings.wordpressComponents.wordpressComponentsStrings.`thumbs-up`
-      - typings.wordpressComponents.wordpressComponentsStrings.`tickets-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.tickets
+      - typings.wordpressComponents.wordpressComponentsStrings.`tickets-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.tide
       - typings.wordpressComponents.wordpressComponentsStrings.translation
       - typings.wordpressComponents.wordpressComponentsStrings.trash
+      - typings.wordpressComponents.wordpressComponentsStrings.twitch
       - typings.wordpressComponents.wordpressComponentsStrings.twitter
+      - typings.wordpressComponents.wordpressComponentsStrings.`twitter-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.undo
-      - typings.wordpressComponents.wordpressComponentsStrings.`universal-access-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.`universal-access`
+      - typings.wordpressComponents.wordpressComponentsStrings.`universal-access-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.unlock
       - typings.wordpressComponents.wordpressComponentsStrings.update
+      - typings.wordpressComponents.wordpressComponentsStrings.`update-alt`
       - typings.wordpressComponents.wordpressComponentsStrings.upload
       - typings.wordpressComponents.wordpressComponentsStrings.vault
       - typings.wordpressComponents.wordpressComponentsStrings.`video-alt`
@@ -311,10 +357,13 @@ object dashiconMod {
       - typings.wordpressComponents.wordpressComponentsStrings.`welcome-view-site`
       - typings.wordpressComponents.wordpressComponentsStrings.`welcome-widgets-menus`
       - typings.wordpressComponents.wordpressComponentsStrings.`welcome-write-blog`
-      - typings.wordpressComponents.wordpressComponentsStrings.`wordpress-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.whatsapp
       - typings.wordpressComponents.wordpressComponentsStrings.wordpress
-      - typings.wordpressComponents.wordpressComponentsStrings.`yes-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.`wordpress-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.xing
       - typings.wordpressComponents.wordpressComponentsStrings.yes
+      - typings.wordpressComponents.wordpressComponentsStrings.`yes-alt`
+      - typings.wordpressComponents.wordpressComponentsStrings.youtube
     */
     trait Icon extends StObject
     object Icon {
@@ -359,6 +408,8 @@ object dashiconMod {
       
       inline def `admin-users`: typings.wordpressComponents.wordpressComponentsStrings.`admin-users` = "admin-users".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`admin-users`]
       
+      inline def airplane: typings.wordpressComponents.wordpressComponentsStrings.airplane = "airplane".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.airplane]
+      
       inline def album: typings.wordpressComponents.wordpressComponentsStrings.album = "album".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.album]
       
       inline def `align-center`: typings.wordpressComponents.wordpressComponentsStrings.`align-center` = "align-center".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`align-center`]
@@ -376,6 +427,8 @@ object dashiconMod {
       inline def `align-right`: typings.wordpressComponents.wordpressComponentsStrings.`align-right` = "align-right".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`align-right`]
       
       inline def `align-wide`: typings.wordpressComponents.wordpressComponentsStrings.`align-wide` = "align-wide".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`align-wide`]
+      
+      inline def amazon: typings.wordpressComponents.wordpressComponentsStrings.amazon = "amazon".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.amazon]
       
       inline def analytics: typings.wordpressComponents.wordpressComponentsStrings.analytics = "analytics".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.analytics]
       
@@ -411,6 +464,12 @@ object dashiconMod {
       
       inline def backup: typings.wordpressComponents.wordpressComponentsStrings.backup = "backup".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.backup]
       
+      inline def bank: typings.wordpressComponents.wordpressComponentsStrings.bank = "bank".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.bank]
+      
+      inline def beer: typings.wordpressComponents.wordpressComponentsStrings.beer = "beer".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.beer]
+      
+      inline def bell: typings.wordpressComponents.wordpressComponentsStrings.bell = "bell".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.bell]
+      
       inline def `block-default`: typings.wordpressComponents.wordpressComponentsStrings.`block-default` = "block-default".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`block-default`]
       
       inline def book: typings.wordpressComponents.wordpressComponentsStrings.book = "book".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.book]
@@ -443,13 +502,23 @@ object dashiconMod {
       
       inline def businessman: typings.wordpressComponents.wordpressComponentsStrings.businessman = "businessman".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.businessman]
       
+      inline def businessperson: typings.wordpressComponents.wordpressComponentsStrings.businessperson = "businessperson".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.businessperson]
+      
+      inline def businesswoman: typings.wordpressComponents.wordpressComponentsStrings.businesswoman = "businesswoman".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.businesswoman]
+      
       inline def button: typings.wordpressComponents.wordpressComponentsStrings.button = "button".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.button]
+      
+      inline def calculator: typings.wordpressComponents.wordpressComponentsStrings.calculator = "calculator".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.calculator]
       
       inline def calendar: typings.wordpressComponents.wordpressComponentsStrings.calendar = "calendar".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.calendar]
       
       inline def `calendar-alt`: typings.wordpressComponents.wordpressComponentsStrings.`calendar-alt` = "calendar-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`calendar-alt`]
       
       inline def camera: typings.wordpressComponents.wordpressComponentsStrings.camera = "camera".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.camera]
+      
+      inline def `camera-alt`: typings.wordpressComponents.wordpressComponentsStrings.`camera-alt` = "camera-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`camera-alt`]
+      
+      inline def car: typings.wordpressComponents.wordpressComponentsStrings.car = "car".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.car]
       
       inline def carrot: typings.wordpressComponents.wordpressComponentsStrings.carrot = "carrot".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.carrot]
       
@@ -475,6 +544,12 @@ object dashiconMod {
       
       inline def `cloud-upload`: typings.wordpressComponents.wordpressComponentsStrings.`cloud-upload` = "cloud-upload".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`cloud-upload`]
       
+      inline def `code-standards`: typings.wordpressComponents.wordpressComponentsStrings.`code-standards` = "code-standards".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`code-standards`]
+      
+      inline def coffee: typings.wordpressComponents.wordpressComponentsStrings.coffee = "coffee".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.coffee]
+      
+      inline def `color-picker`: typings.wordpressComponents.wordpressComponentsStrings.`color-picker` = "color-picker".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`color-picker`]
+      
       inline def columns: typings.wordpressComponents.wordpressComponentsStrings.columns = "columns".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.columns]
       
       inline def `controls-back`: typings.wordpressComponents.wordpressComponentsStrings.`controls-back` = "controls-back".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`controls-back`]
@@ -499,13 +574,31 @@ object dashiconMod {
       
       inline def dashboard: typings.wordpressComponents.wordpressComponentsStrings.dashboard = "dashboard".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.dashboard]
       
+      inline def database: typings.wordpressComponents.wordpressComponentsStrings.database = "database".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.database]
+      
+      inline def `database-add`: typings.wordpressComponents.wordpressComponentsStrings.`database-add` = "database-add".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`database-add`]
+      
+      inline def `database-export`: typings.wordpressComponents.wordpressComponentsStrings.`database-export` = "database-export".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`database-export`]
+      
+      inline def `database-import`: typings.wordpressComponents.wordpressComponentsStrings.`database-import` = "database-import".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`database-import`]
+      
+      inline def `database-remove`: typings.wordpressComponents.wordpressComponentsStrings.`database-remove` = "database-remove".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`database-remove`]
+      
+      inline def `database-view`: typings.wordpressComponents.wordpressComponentsStrings.`database-view` = "database-view".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`database-view`]
+      
       inline def desktop: typings.wordpressComponents.wordpressComponentsStrings.desktop = "desktop".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.desktop]
       
       inline def dismiss: typings.wordpressComponents.wordpressComponentsStrings.dismiss = "dismiss".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.dismiss]
       
       inline def download: typings.wordpressComponents.wordpressComponentsStrings.download = "download".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.download]
       
+      inline def drumstick: typings.wordpressComponents.wordpressComponentsStrings.drumstick = "drumstick".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.drumstick]
+      
       inline def edit: typings.wordpressComponents.wordpressComponentsStrings.edit = "edit".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.edit]
+      
+      inline def `edit-large`: typings.wordpressComponents.wordpressComponentsStrings.`edit-large` = "edit-large".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`edit-large`]
+      
+      inline def `edit-page`: typings.wordpressComponents.wordpressComponentsStrings.`edit-page` = "edit-page".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`edit-page`]
       
       inline def `editor-aligncenter`: typings.wordpressComponents.wordpressComponentsStrings.`editor-aligncenter` = "editor-aligncenter".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`editor-aligncenter`]
       
@@ -607,6 +700,8 @@ object dashiconMod {
       
       inline def flag: typings.wordpressComponents.wordpressComponentsStrings.flag = "flag".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.flag]
       
+      inline def food: typings.wordpressComponents.wordpressComponentsStrings.food = "food".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.food]
+      
       inline def `format-aside`: typings.wordpressComponents.wordpressComponentsStrings.`format-aside` = "format-aside".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`format-aside`]
       
       inline def `format-audio`: typings.wordpressComponents.wordpressComponentsStrings.`format-audio` = "format-audio".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`format-audio`]
@@ -625,7 +720,13 @@ object dashiconMod {
       
       inline def forms: typings.wordpressComponents.wordpressComponentsStrings.forms = "forms".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.forms]
       
-      inline def googleplus: typings.wordpressComponents.wordpressComponentsStrings.googleplus = "googleplus".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.googleplus]
+      inline def `fullscreen-alt`: typings.wordpressComponents.wordpressComponentsStrings.`fullscreen-alt` = "fullscreen-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`fullscreen-alt`]
+      
+      inline def `fullscreen-exit-alt`: typings.wordpressComponents.wordpressComponentsStrings.`fullscreen-exit-alt` = "fullscreen-exit-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`fullscreen-exit-alt`]
+      
+      inline def games: typings.wordpressComponents.wordpressComponentsStrings.games = "games".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.games]
+      
+      inline def google: typings.wordpressComponents.wordpressComponentsStrings.google = "google".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.google]
       
       inline def `grid-view`: typings.wordpressComponents.wordpressComponentsStrings.`grid-view` = "grid-view".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`grid-view`]
       
@@ -638,6 +739,8 @@ object dashiconMod {
       inline def heart: typings.wordpressComponents.wordpressComponentsStrings.heart = "heart".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.heart]
       
       inline def hidden: typings.wordpressComponents.wordpressComponentsStrings.hidden = "hidden".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.hidden]
+      
+      inline def hourglass: typings.wordpressComponents.wordpressComponentsStrings.hourglass = "hourglass".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.hourglass]
       
       inline def html: typings.wordpressComponents.wordpressComponentsStrings.html = "html".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.html]
       
@@ -677,8 +780,6 @@ object dashiconMod {
       
       inline def instagram: typings.wordpressComponents.wordpressComponentsStrings.instagram = "instagram".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.instagram]
       
-      inline def `keyboard-hide`: typings.wordpressComponents.wordpressComponentsStrings.`keyboard-hide` = "keyboard-hide".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`keyboard-hide`]
-      
       inline def laptop: typings.wordpressComponents.wordpressComponentsStrings.laptop = "laptop".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.laptop]
       
       inline def layout: typings.wordpressComponents.wordpressComponentsStrings.layout = "layout".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.layout]
@@ -686,6 +787,8 @@ object dashiconMod {
       inline def leftright: typings.wordpressComponents.wordpressComponentsStrings.leftright = "leftright".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.leftright]
       
       inline def lightbulb: typings.wordpressComponents.wordpressComponentsStrings.lightbulb = "lightbulb".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.lightbulb]
+      
+      inline def linkedin: typings.wordpressComponents.wordpressComponentsStrings.linkedin = "linkedin".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.linkedin]
       
       inline def `list-view`: typings.wordpressComponents.wordpressComponentsStrings.`list-view` = "list-view".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`list-view`]
       
@@ -721,6 +824,10 @@ object dashiconMod {
       
       inline def `menu-alt`: typings.wordpressComponents.wordpressComponentsStrings.`menu-alt` = "menu-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`menu-alt`]
       
+      inline def `menu-alt2`: typings.wordpressComponents.wordpressComponentsStrings.`menu-alt2` = "menu-alt2".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`menu-alt2`]
+      
+      inline def `menu-alt3`: typings.wordpressComponents.wordpressComponentsStrings.`menu-alt3` = "menu-alt3".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`menu-alt3`]
+      
       inline def microphone: typings.wordpressComponents.wordpressComponentsStrings.microphone = "microphone".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.microphone]
       
       inline def migrate: typings.wordpressComponents.wordpressComponentsStrings.migrate = "migrate".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.migrate]
@@ -728,6 +835,8 @@ object dashiconMod {
       inline def minus: typings.wordpressComponents.wordpressComponentsStrings.minus = "minus".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.minus]
       
       inline def money: typings.wordpressComponents.wordpressComponentsStrings.money = "money".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.money]
+      
+      inline def `money-alt`: typings.wordpressComponents.wordpressComponentsStrings.`money-alt` = "money-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`money-alt`]
       
       inline def move: typings.wordpressComponents.wordpressComponentsStrings.move = "move".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.move]
       
@@ -739,23 +848,35 @@ object dashiconMod {
       
       inline def `no-alt`: typings.wordpressComponents.wordpressComponentsStrings.`no-alt` = "no-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`no-alt`]
       
+      inline def `open-folder`: typings.wordpressComponents.wordpressComponentsStrings.`open-folder` = "open-folder".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`open-folder`]
+      
       inline def palmtree: typings.wordpressComponents.wordpressComponentsStrings.palmtree = "palmtree".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.palmtree]
       
       inline def paperclip: typings.wordpressComponents.wordpressComponentsStrings.paperclip = "paperclip".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.paperclip]
       
+      inline def pdf: typings.wordpressComponents.wordpressComponentsStrings.pdf = "pdf".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.pdf]
+      
       inline def performance: typings.wordpressComponents.wordpressComponentsStrings.performance = "performance".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.performance]
       
+      inline def pets: typings.wordpressComponents.wordpressComponentsStrings.pets = "pets".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.pets]
+      
       inline def phone: typings.wordpressComponents.wordpressComponentsStrings.phone = "phone".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.phone]
+      
+      inline def pinterest: typings.wordpressComponents.wordpressComponentsStrings.pinterest = "pinterest".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.pinterest]
       
       inline def `playlist-audio`: typings.wordpressComponents.wordpressComponentsStrings.`playlist-audio` = "playlist-audio".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`playlist-audio`]
       
       inline def `playlist-video`: typings.wordpressComponents.wordpressComponentsStrings.`playlist-video` = "playlist-video".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`playlist-video`]
       
+      inline def `plugins-checked`: typings.wordpressComponents.wordpressComponentsStrings.`plugins-checked` = "plugins-checked".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`plugins-checked`]
+      
       inline def plus: typings.wordpressComponents.wordpressComponentsStrings.plus = "plus".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.plus]
       
       inline def `plus-alt`: typings.wordpressComponents.wordpressComponentsStrings.`plus-alt` = "plus-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`plus-alt`]
       
-      inline def `plus-light`: typings.wordpressComponents.wordpressComponentsStrings.`plus-light` = "plus-light".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`plus-light`]
+      inline def `plus-alt2`: typings.wordpressComponents.wordpressComponentsStrings.`plus-alt2` = "plus-alt2".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`plus-alt2`]
+      
+      inline def podio: typings.wordpressComponents.wordpressComponentsStrings.podio = "podio".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.podio]
       
       inline def portfolio: typings.wordpressComponents.wordpressComponentsStrings.portfolio = "portfolio".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.portfolio]
       
@@ -763,9 +884,15 @@ object dashiconMod {
       
       inline def pressthis: typings.wordpressComponents.wordpressComponentsStrings.pressthis = "pressthis".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.pressthis]
       
+      inline def printer: typings.wordpressComponents.wordpressComponentsStrings.printer = "printer".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.printer]
+      
+      inline def privacy: typings.wordpressComponents.wordpressComponentsStrings.privacy = "privacy".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.privacy]
+      
       inline def products: typings.wordpressComponents.wordpressComponentsStrings.products = "products".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.products]
       
       inline def randomize: typings.wordpressComponents.wordpressComponentsStrings.randomize = "randomize".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.randomize]
+      
+      inline def reddit: typings.wordpressComponents.wordpressComponentsStrings.reddit = "reddit".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.reddit]
       
       inline def redo: typings.wordpressComponents.wordpressComponentsStrings.redo = "redo".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.redo]
       
@@ -805,6 +932,8 @@ object dashiconMod {
       
       inline def sos: typings.wordpressComponents.wordpressComponentsStrings.sos = "sos".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.sos]
       
+      inline def spotify: typings.wordpressComponents.wordpressComponentsStrings.spotify = "spotify".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.spotify]
+      
       inline def `star-empty`: typings.wordpressComponents.wordpressComponentsStrings.`star-empty` = "star-empty".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`star-empty`]
       
       inline def `star-filled`: typings.wordpressComponents.wordpressComponentsStrings.`star-filled` = "star-filled".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`star-filled`]
@@ -814,6 +943,10 @@ object dashiconMod {
       inline def sticky: typings.wordpressComponents.wordpressComponentsStrings.sticky = "sticky".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.sticky]
       
       inline def store: typings.wordpressComponents.wordpressComponentsStrings.store = "store".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.store]
+      
+      inline def superhero: typings.wordpressComponents.wordpressComponentsStrings.superhero = "superhero".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.superhero]
+      
+      inline def `superhero-alt`: typings.wordpressComponents.wordpressComponentsStrings.`superhero-alt` = "superhero-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`superhero-alt`]
       
       inline def `table-col-after`: typings.wordpressComponents.wordpressComponentsStrings.`table-col-after` = "table-col-after".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`table-col-after`]
       
@@ -837,6 +970,8 @@ object dashiconMod {
       
       inline def text: typings.wordpressComponents.wordpressComponentsStrings.text = "text".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.text]
       
+      inline def `text-page`: typings.wordpressComponents.wordpressComponentsStrings.`text-page` = "text-page".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`text-page`]
+      
       inline def `thumbs-down`: typings.wordpressComponents.wordpressComponentsStrings.`thumbs-down` = "thumbs-down".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`thumbs-down`]
       
       inline def `thumbs-up`: typings.wordpressComponents.wordpressComponentsStrings.`thumbs-up` = "thumbs-up".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`thumbs-up`]
@@ -851,7 +986,11 @@ object dashiconMod {
       
       inline def trash: typings.wordpressComponents.wordpressComponentsStrings.trash = "trash".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.trash]
       
+      inline def twitch: typings.wordpressComponents.wordpressComponentsStrings.twitch = "twitch".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.twitch]
+      
       inline def twitter: typings.wordpressComponents.wordpressComponentsStrings.twitter = "twitter".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.twitter]
+      
+      inline def `twitter-alt`: typings.wordpressComponents.wordpressComponentsStrings.`twitter-alt` = "twitter-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`twitter-alt`]
       
       inline def undo: typings.wordpressComponents.wordpressComponentsStrings.undo = "undo".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.undo]
       
@@ -862,6 +1001,8 @@ object dashiconMod {
       inline def unlock: typings.wordpressComponents.wordpressComponentsStrings.unlock = "unlock".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.unlock]
       
       inline def update: typings.wordpressComponents.wordpressComponentsStrings.update = "update".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.update]
+      
+      inline def `update-alt`: typings.wordpressComponents.wordpressComponentsStrings.`update-alt` = "update-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`update-alt`]
       
       inline def upload: typings.wordpressComponents.wordpressComponentsStrings.upload = "upload".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.upload]
       
@@ -889,13 +1030,19 @@ object dashiconMod {
       
       inline def `welcome-write-blog`: typings.wordpressComponents.wordpressComponentsStrings.`welcome-write-blog` = "welcome-write-blog".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`welcome-write-blog`]
       
+      inline def whatsapp: typings.wordpressComponents.wordpressComponentsStrings.whatsapp = "whatsapp".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.whatsapp]
+      
       inline def wordpress: typings.wordpressComponents.wordpressComponentsStrings.wordpress = "wordpress".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.wordpress]
       
       inline def `wordpress-alt`: typings.wordpressComponents.wordpressComponentsStrings.`wordpress-alt` = "wordpress-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`wordpress-alt`]
       
+      inline def xing: typings.wordpressComponents.wordpressComponentsStrings.xing = "xing".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.xing]
+      
       inline def yes: typings.wordpressComponents.wordpressComponentsStrings.yes = "yes".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.yes]
       
       inline def `yes-alt`: typings.wordpressComponents.wordpressComponentsStrings.`yes-alt` = "yes-alt".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`yes-alt`]
+      
+      inline def youtube: typings.wordpressComponents.wordpressComponentsStrings.youtube = "youtube".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.youtube]
     }
     
     trait Props

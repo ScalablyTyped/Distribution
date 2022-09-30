@@ -660,12 +660,12 @@ trait List extends StObject {
 }
 object List {
   
-  inline def apply(): List = {
+  inline def apply(): typings.docusignEsign.mod.List = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.docusignEsign.mod.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.docusignEsign.mod.List](x: Self) {
     
     inline def setAnchorAllowWhiteSpaceInCharacters(value: String): Self = StObject.set(x, "anchorAllowWhiteSpaceInCharacters", value.asInstanceOf[js.Any])
     

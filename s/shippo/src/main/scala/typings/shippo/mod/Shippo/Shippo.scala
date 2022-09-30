@@ -2,7 +2,6 @@ package typings.shippo.mod.Shippo
 
 import typings.shippo.anon.Create
 import typings.shippo.anon.CreateList
-import typings.shippo.anon.List
 import typings.shippo.anon.ListRetrieve
 import typings.shippo.anon.Retrieve
 import typings.shippo.anon.`0`
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Shippo extends StObject {
   
-  var address: List
+  var address: typings.shippo.anon.List
   
   var carrieraccount: ListRetrieve
   
@@ -27,7 +26,7 @@ trait Shippo extends StObject {
 object Shippo {
   
   inline def apply(
-    address: List,
+    address: typings.shippo.anon.List,
     carrieraccount: ListRetrieve,
     parcel: CreateList,
     rate: `0`,
@@ -40,7 +39,7 @@ object Shippo {
   
   extension [Self <: typings.shippo.mod.Shippo.Shippo](x: Self) {
     
-    inline def setAddress(value: List): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: typings.shippo.anon.List): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setCarrieraccount(value: ListRetrieve): Self = StObject.set(x, "carrieraccount", value.asInstanceOf[js.Any])
     

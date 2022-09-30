@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociatePersonasFromEntitiesRequest extends StObject {
   
   /**
-    * The identifiers of users or groups in your Amazon Web Services SSO identity source. For example, user IDs could be user emails.
+    * The identifiers of users or groups in your IAM Identity Center identity source. For example, user IDs could be user emails.
     */
   var EntityIds: EntityIdsList
   

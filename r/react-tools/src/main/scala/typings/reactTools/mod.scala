@@ -45,8 +45,8 @@ object mod {
   def PropTypes: Any = js.native
   inline def PropTypes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PropTypes")(x.asInstanceOf[js.Any])
   
-  inline def createElement(tag: Any, props: Any, children: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
-  inline def createElement(tag: Any, props: Unit, children: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def createElement(tag: Any, props: Any, children: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def createElement(tag: Any, props: Unit, children: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def findDOMNode(instance: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[Any]
   

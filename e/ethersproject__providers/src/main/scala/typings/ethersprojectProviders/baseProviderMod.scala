@@ -20,7 +20,7 @@ import typings.ethersprojectProviders.anon.BlockNumber
 import typings.ethersprojectProviders.anon.Content
 import typings.ethersprojectProviders.anon.Data
 import typings.ethersprojectProviders.anon.DeferrableTransactionRequ
-import typings.ethersprojectProviders.ethersprojectProvidersNumbers.`60`
+import typings.ethersprojectProviders.ethersprojectProvidersInts.`60`
 import typings.ethersprojectProviders.ethersprojectProvidersStrings.pending
 import typings.ethersprojectProviders.formatterMod.Formatter
 import typings.ethersprojectTransactions.mod.Transaction

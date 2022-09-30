@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mongodb" : "4.10.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mongodb" : "4.10.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -46,7 +46,7 @@ trait ReadonlyArray[T]
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("filter")
-  def filter_S_T[S /* <: T */](
+  def filter_S[S /* <: T */](
     callbackfn: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -55,7 +55,7 @@ trait ReadonlyArray[T]
     ]
   ): Array[S] = js.native
   @JSName("filter")
-  def filter_S_T[S /* <: T */](
+  def filter_S[S /* <: T */](
     callbackfn: js.Function3[
       /* value */ T, 
       /* index */ Double, 

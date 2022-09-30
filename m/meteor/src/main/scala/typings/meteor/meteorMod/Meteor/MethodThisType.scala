@@ -6,39 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /** Error **/
 /** Method **/
+@js.native
 trait MethodThisType extends StObject {
   
-  var connection: Connection | Null
+  /**
+    * Access inside a method invocation. The connection that this method was received on. `null` if the method is not associated with a connection, eg. a server initiated method call. Calls
+    * to methods made from a server method which was in turn initiated from the client share the same `connection`. */
+  var connection: Connection | Null = js.native
   
-  var isSimulation: Boolean
+  /** Access inside a method invocation. Boolean value, true if this invocation is a stub. */
+  var isSimulation: Boolean = js.native
   
-  def setUserId(userId: String): Unit
+  /**
+    * Set the logged in user.
+    * @param userId The value that should be returned by `userId` on this connection.
+    */
+  def setUserId(): Unit = js.native
+  def setUserId(userId: String): Unit = js.native
   
-  def unblock(): Unit
+  /** Call inside a method invocation. Allow subsequent method from this client to begin running in a new fiber. */
+  def unblock(): Unit = js.native
   
-  var userId: String | Null
-}
-object MethodThisType {
-  
-  inline def apply(isSimulation: Boolean, setUserId: String => Unit, unblock: () => Unit): MethodThisType = {
-    val __obj = js.Dynamic.literal(isSimulation = isSimulation.asInstanceOf[js.Any], setUserId = js.Any.fromFunction1(setUserId), unblock = js.Any.fromFunction0(unblock), connection = null, userId = null)
-    __obj.asInstanceOf[MethodThisType]
-  }
-  
-  extension [Self <: MethodThisType](x: Self) {
-    
-    inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
-    
-    inline def setConnectionNull: Self = StObject.set(x, "connection", null)
-    
-    inline def setIsSimulation(value: Boolean): Self = StObject.set(x, "isSimulation", value.asInstanceOf[js.Any])
-    
-    inline def setSetUserId(value: String => Unit): Self = StObject.set(x, "setUserId", js.Any.fromFunction1(value))
-    
-    inline def setUnblock(value: () => Unit): Self = StObject.set(x, "unblock", js.Any.fromFunction0(value))
-    
-    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
-    
-    inline def setUserIdNull: Self = StObject.set(x, "userId", null)
-  }
+  /** The id of the user that made this method call, or `null` if no user was logged in. */
+  var userId: String | Null = js.native
 }

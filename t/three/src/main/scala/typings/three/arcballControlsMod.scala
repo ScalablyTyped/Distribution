@@ -224,19 +224,19 @@ object arcballControlsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.three.threeNumbers.`0`
-    - typings.three.threeNumbers.`1`
-    - typings.three.threeNumbers.`2`
+    - typings.three.threeInts.`0`
+    - typings.three.threeInts.`1`
+    - typings.three.threeInts.`2`
     - typings.three.threeStrings.WHEEL
   */
   trait ArcballControlsMouseActionMouse extends StObject
   object ArcballControlsMouseActionMouse {
     
-    inline def `0`: typings.three.threeNumbers.`0` = 0.asInstanceOf[typings.three.threeNumbers.`0`]
+    inline def `0`: typings.three.threeInts.`0` = 0.asInstanceOf[typings.three.threeInts.`0`]
     
-    inline def `1`: typings.three.threeNumbers.`1` = 1.asInstanceOf[typings.three.threeNumbers.`1`]
+    inline def `1`: typings.three.threeInts.`1` = 1.asInstanceOf[typings.three.threeInts.`1`]
     
-    inline def `2`: typings.three.threeNumbers.`2` = 2.asInstanceOf[typings.three.threeNumbers.`2`]
+    inline def `2`: typings.three.threeInts.`2` = 2.asInstanceOf[typings.three.threeInts.`2`]
     
     inline def WHEEL: typings.three.threeStrings.WHEEL = "WHEEL".asInstanceOf[typings.three.threeStrings.WHEEL]
   }

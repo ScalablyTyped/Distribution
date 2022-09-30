@@ -1,8 +1,8 @@
 package typings.breeze.breeze
 
-import typings.breeze.breezeNumbers.`-1`
-import typings.breeze.breezeNumbers.`0`
-import typings.breeze.breezeNumbers.`1`
+import typings.breeze.breezeInts.`-1`
+import typings.breeze.breezeInts.`0`
+import typings.breeze.breezeInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

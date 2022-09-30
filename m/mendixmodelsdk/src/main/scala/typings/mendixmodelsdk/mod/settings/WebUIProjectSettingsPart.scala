@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.WebUIProjectSettingsPart")
 @js.native
-class WebUIProjectSettingsPart protected ()
+open class WebUIProjectSettingsPart protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.WebUIProjectSettingsPart {
   def this(
     model: AbstractModel,

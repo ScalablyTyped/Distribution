@@ -10,14 +10,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def chompLeft(str: String, idx: Double, args: Any*): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("chompLeft")((List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double | Null]
+  inline def chompLeft(str: String, idx: Double, args: Any*): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("chompLeft")((scala.List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double | Null]
   
-  inline def chompRight(str: String, idx: Double, args: Any*): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("chompRight")((List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double | Null]
+  inline def chompRight(str: String, idx: Double, args: Any*): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("chompRight")((scala.List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Double | Null]
   
   inline def left(str: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(str.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   inline def left(str: String, idx: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  inline def leftSeq(str: String, idx: Double, args: Any*): SeqOutput | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("leftSeq")((List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SeqOutput | Null]
+  inline def leftSeq(str: String, idx: Double, args: Any*): SeqOutput | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("leftSeq")((scala.List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SeqOutput | Null]
   
   inline def leftStopAtNewLines(str: String, idx: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("leftStopAtNewLines")(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
@@ -26,7 +26,7 @@ object mod {
   inline def right(str: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(str.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   inline def right(str: String, idx: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("right")(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  inline def rightSeq(str: String, idx: Double, args: Any*): SeqOutput | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("rightSeq")((List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SeqOutput | Null]
+  inline def rightSeq(str: String, idx: Double, args: Any*): SeqOutput | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("rightSeq")((scala.List(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SeqOutput | Null]
   
   inline def rightStopAtNewLines(str: String, idx: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("rightStopAtNewLines")(str.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   

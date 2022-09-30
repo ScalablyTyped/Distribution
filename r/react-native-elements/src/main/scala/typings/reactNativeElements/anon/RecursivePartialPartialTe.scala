@@ -77,6 +77,8 @@ trait RecursivePartialPartialTe extends StObject {
   
   var dataDetectorType: js.UndefOr[RecursivePartial[js.UndefOr[Null | phoneNumber | link | email | none | all]]] = js.undefined
   
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
+  
   var ellipsizeMode: js.UndefOr[RecursivePartial[js.UndefOr[head | middle | tail | clip]]] = js.undefined
   
   var h1: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
@@ -233,6 +235,10 @@ object RecursivePartialPartialTe {
     inline def setDataDetectorType(value: RecursivePartial[js.UndefOr[Null | phoneNumber | link | email | none | all]]): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     
     inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+    
+    inline def setDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setEllipsizeMode(value: RecursivePartial[js.UndefOr[head | middle | tail | clip]]): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     

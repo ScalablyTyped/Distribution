@@ -2,6 +2,8 @@ package typings.pTimeout
 
 import typings.pTimeout.anon.ClearTimeout
 import typings.std.Error
+import typings.std.Promise
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[ValueType, ReturnType](input: js.Thenable[ValueType], options: Options[ReturnType]): ClearablePromise[ValueType | ReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[ValueType | ReturnType]]
+  inline def default[ValueType, ReturnType](input: PromiseLike[ValueType], options: Options[ReturnType]): ClearablePromise[ValueType | ReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[ValueType | ReturnType]]
   
   @JSImport("p-timeout", "TimeoutError")
   @js.native
@@ -34,7 +36,8 @@ object mod {
   
   @js.native
   trait ClearablePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     /**
     	Clear the timeout.

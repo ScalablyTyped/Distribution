@@ -1,5 +1,6 @@
 package typings.vscodeLanguageclient
 
+import typings.std.PromiseLike
 import typings.vscode.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,7 +54,7 @@ object asyncMod {
     
     /* private */ var doRunNext: Any = js.native
     
-    def lock(thunk: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
+    def lock(thunk: js.Function0[T | PromiseLike[T]]): js.Promise[T] = js.native
     
     /* private */ var runNext: Any = js.native
   }

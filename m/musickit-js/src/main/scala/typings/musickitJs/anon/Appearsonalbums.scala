@@ -1,6 +1,7 @@
 package typings.musickitJs.anon
 
 import typings.musickitJs.MusicKit.MusicVideos
+import typings.musickitJs.MusicKit.Songs
 import typings.musickitJs.MusicKit.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +29,7 @@ trait Appearsonalbums extends StObject {
   
   var `top-music-videos`: View[MusicVideos]
   
-  var `top-songs`: View[typings.musickitJs.MusicKit.Songs]
+  var `top-songs`: View[Songs]
 }
 object Appearsonalbums {
   
@@ -43,7 +44,7 @@ object Appearsonalbums {
     `similar-artists`: View[typings.musickitJs.MusicKit.Artists],
     singles: View[typings.musickitJs.MusicKit.Albums],
     `top-music-videos`: View[MusicVideos],
-    `top-songs`: View[typings.musickitJs.MusicKit.Songs]
+    `top-songs`: View[Songs]
   ): Appearsonalbums = {
     val __obj = js.Dynamic.literal(singles = singles.asInstanceOf[js.Any])
     __obj.updateDynamic("appears-on-albums")(`appears-on-albums`.asInstanceOf[js.Any])
@@ -81,6 +82,6 @@ object Appearsonalbums {
     
     inline def `setTop-music-videos`(value: View[MusicVideos]): Self = StObject.set(x, "top-music-videos", value.asInstanceOf[js.Any])
     
-    inline def `setTop-songs`(value: View[typings.musickitJs.MusicKit.Songs]): Self = StObject.set(x, "top-songs", value.asInstanceOf[js.Any])
+    inline def `setTop-songs`(value: View[Songs]): Self = StObject.set(x, "top-songs", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pkg-versions" : "2.1.0"
+      "pkg-versions" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pkg-versions" : "2.1.0"
+      "pkg-versions" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

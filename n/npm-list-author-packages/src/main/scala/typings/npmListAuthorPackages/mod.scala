@@ -1,7 +1,7 @@
 package typings.npmListAuthorPackages
 
-import typings.npmListAuthorPackages.npmListAuthorPackagesNumbers.`443`
-import typings.npmListAuthorPackages.npmListAuthorPackagesNumbers.`80`
+import typings.npmListAuthorPackages.npmListAuthorPackagesInts.`443`
+import typings.npmListAuthorPackages.npmListAuthorPackagesInts.`80`
 import typings.npmListAuthorPackages.npmListAuthorPackagesStrings.http
 import typings.npmListAuthorPackages.npmListAuthorPackagesStrings.https
 import org.scalablytyped.runtime.StObject

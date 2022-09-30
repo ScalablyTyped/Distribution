@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Day extends StObject {
   
-  var day: js.UndefOr[`15`] = js.undefined
+  var day: js.UndefOr[`16`] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var heading: js.UndefOr[`16`] = js.undefined
+  var heading: js.UndefOr[`17`] = js.undefined
   
   var icons: js.UndefOr[NextPrevious] = js.undefined
   
@@ -33,7 +33,7 @@ object Day {
   
   extension [Self <: Day](x: Self) {
     
-    inline def setDay(value: `15`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: `16`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
@@ -43,7 +43,7 @@ object Day {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setHeading(value: `16`): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: `17`): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     

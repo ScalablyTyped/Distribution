@@ -1,14 +1,14 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-4105`
-import typings.activexOffice.activexOfficeNumbers.`-4142`
+import typings.activexOffice.activexOfficeInts.`-4105`
+import typings.activexOffice.activexOfficeInts.`-4142`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-4105`
-  - typings.activexOffice.activexOfficeNumbers.`-4142`
+  - typings.activexOffice.activexOfficeInts.`-4105`
+  - typings.activexOffice.activexOfficeInts.`-4142`
 */
 trait XlColorIndex extends StObject
 object XlColorIndex {

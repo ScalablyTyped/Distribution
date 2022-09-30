@@ -1,64 +1,64 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`10`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`11`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`12`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`13`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`15`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`16`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`17`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`18`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`19`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`20`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`21`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`22`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`23`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`24`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`25`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`26`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`3`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`4`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`5`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`6`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`7`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`8`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`9`
+import typings.vueCompilerCore.vueCompilerCoreInts.`0`
+import typings.vueCompilerCore.vueCompilerCoreInts.`10`
+import typings.vueCompilerCore.vueCompilerCoreInts.`11`
+import typings.vueCompilerCore.vueCompilerCoreInts.`12`
+import typings.vueCompilerCore.vueCompilerCoreInts.`13`
+import typings.vueCompilerCore.vueCompilerCoreInts.`14`
+import typings.vueCompilerCore.vueCompilerCoreInts.`15`
+import typings.vueCompilerCore.vueCompilerCoreInts.`16`
+import typings.vueCompilerCore.vueCompilerCoreInts.`17`
+import typings.vueCompilerCore.vueCompilerCoreInts.`18`
+import typings.vueCompilerCore.vueCompilerCoreInts.`19`
+import typings.vueCompilerCore.vueCompilerCoreInts.`1`
+import typings.vueCompilerCore.vueCompilerCoreInts.`20`
+import typings.vueCompilerCore.vueCompilerCoreInts.`21`
+import typings.vueCompilerCore.vueCompilerCoreInts.`22`
+import typings.vueCompilerCore.vueCompilerCoreInts.`23`
+import typings.vueCompilerCore.vueCompilerCoreInts.`24`
+import typings.vueCompilerCore.vueCompilerCoreInts.`25`
+import typings.vueCompilerCore.vueCompilerCoreInts.`26`
+import typings.vueCompilerCore.vueCompilerCoreInts.`2`
+import typings.vueCompilerCore.vueCompilerCoreInts.`3`
+import typings.vueCompilerCore.vueCompilerCoreInts.`4`
+import typings.vueCompilerCore.vueCompilerCoreInts.`5`
+import typings.vueCompilerCore.vueCompilerCoreInts.`6`
+import typings.vueCompilerCore.vueCompilerCoreInts.`7`
+import typings.vueCompilerCore.vueCompilerCoreInts.`8`
+import typings.vueCompilerCore.vueCompilerCoreInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`3`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`4`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`5`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`6`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`7`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`8`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`9`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`10`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`11`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`12`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`13`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`15`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`16`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`17`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`18`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`19`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`20`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`21`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`22`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`23`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`24`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`25`
-  - typings.vueCompilerCore.vueCompilerCoreNumbers.`26`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`0`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`1`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`2`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`3`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`4`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`5`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`6`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`7`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`8`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`9`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`10`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`11`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`12`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`13`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`14`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`15`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`16`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`17`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`18`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`19`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`20`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`21`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`22`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`23`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`24`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`25`
+  - typings.vueCompilerCore.vueCompilerCoreInts.`26`
 */
 trait NodeTypes extends StObject
 object NodeTypes {

@@ -5,122 +5,99 @@ import typings.draftJs.mod.ContentBlock
 import typings.draftJs.mod.ContentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("draft-js-export-html", "stateToHTML")
+  @JSImport("draft-js-export-html", JSImport.Namespace)
   @js.native
-  def stateToHTML(content: ContentState): String = js.native
-  @JSImport("draft-js-export-html", "stateToHTML")
-  @js.native
-  def stateToHTML(content: ContentState, options: Options): String = js.native
+  val ^ : js.Any = js.native
+  
+  inline def stateToHTML(content: ContentState): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stateToHTML")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stateToHTML(content: ContentState, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stateToHTML")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type BlockRenderer = js.Function1[/* block */ ContentBlock, String]
   
   type BlockStyleFn = js.Function1[/* block */ ContentBlock, js.UndefOr[RenderConfig]]
   
   type EntityStyleFn = js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ Any, 
     js.UndefOr[RenderConfig]
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var blockRenderers: js.UndefOr[StringDictionary[BlockRenderer]] = js.native
+    var blockRenderers: js.UndefOr[StringDictionary[BlockRenderer]] = js.undefined
     
-    var blockStyleFn: js.UndefOr[BlockStyleFn] = js.native
+    var blockStyleFn: js.UndefOr[BlockStyleFn] = js.undefined
     
-    var defaultBlockTag: js.UndefOr[String] = js.native
+    var defaultBlockTag: js.UndefOr[String] = js.undefined
     
-    var entityStyleFn: js.UndefOr[EntityStyleFn] = js.native
+    var entityStyleFn: js.UndefOr[EntityStyleFn] = js.undefined
     
-    var inlineStyles: js.UndefOr[StringDictionary[RenderConfig]] = js.native
+    var inlineStyles: js.UndefOr[StringDictionary[RenderConfig]] = js.undefined
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBlockRenderers(value: StringDictionary[BlockRenderer]): Self = StObject.set(x, "blockRenderers", value.asInstanceOf[js.Any])
+      inline def setBlockRenderers(value: StringDictionary[BlockRenderer]): Self = StObject.set(x, "blockRenderers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockRenderersUndefined: Self = StObject.set(x, "blockRenderers", js.undefined)
+      inline def setBlockRenderersUndefined: Self = StObject.set(x, "blockRenderers", js.undefined)
       
-      @scala.inline
-      def setBlockStyleFn(value: /* block */ ContentBlock => js.UndefOr[RenderConfig]): Self = StObject.set(x, "blockStyleFn", js.Any.fromFunction1(value))
+      inline def setBlockStyleFn(value: /* block */ ContentBlock => js.UndefOr[RenderConfig]): Self = StObject.set(x, "blockStyleFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBlockStyleFnUndefined: Self = StObject.set(x, "blockStyleFn", js.undefined)
+      inline def setBlockStyleFnUndefined: Self = StObject.set(x, "blockStyleFn", js.undefined)
       
-      @scala.inline
-      def setDefaultBlockTag(value: String): Self = StObject.set(x, "defaultBlockTag", value.asInstanceOf[js.Any])
+      inline def setDefaultBlockTag(value: String): Self = StObject.set(x, "defaultBlockTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultBlockTagUndefined: Self = StObject.set(x, "defaultBlockTag", js.undefined)
+      inline def setDefaultBlockTagUndefined: Self = StObject.set(x, "defaultBlockTag", js.undefined)
       
-      @scala.inline
-      def setEntityStyleFn(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ js.Any => js.UndefOr[RenderConfig]
+      inline def setEntityStyleFn(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify draftjs.EntityInstance */ /* entity */ Any => js.UndefOr[RenderConfig]
       ): Self = StObject.set(x, "entityStyleFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntityStyleFnUndefined: Self = StObject.set(x, "entityStyleFn", js.undefined)
+      inline def setEntityStyleFnUndefined: Self = StObject.set(x, "entityStyleFn", js.undefined)
       
-      @scala.inline
-      def setInlineStyles(value: StringDictionary[RenderConfig]): Self = StObject.set(x, "inlineStyles", value.asInstanceOf[js.Any])
+      inline def setInlineStyles(value: StringDictionary[RenderConfig]): Self = StObject.set(x, "inlineStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineStylesUndefined: Self = StObject.set(x, "inlineStyles", js.undefined)
+      inline def setInlineStylesUndefined: Self = StObject.set(x, "inlineStyles", js.undefined)
     }
   }
   
-  @js.native
   trait RenderConfig extends StObject {
     
-    var attributes: js.UndefOr[js.Any] = js.native
+    var attributes: js.UndefOr[Any] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[Any] = js.undefined
   }
   object RenderConfig {
     
-    @scala.inline
-    def apply(): RenderConfig = {
+    inline def apply(): RenderConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderConfig]
     }
     
-    @scala.inline
-    implicit class RenderConfigMutableBuilder[Self <: RenderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RenderConfig](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

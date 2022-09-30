@@ -1,5 +1,6 @@
 package typings.webdriverio
 
+import typings.webdriverio.typesMod.ElementArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,5 +11,5 @@ object custom$Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(strategyName: String, strategyArguments: js.Any*): js.Promise[js.Array[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(strategyName.asInstanceOf[js.Any], strategyArguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def default(strategyName: String, strategyArguments: Any*): js.Promise[ElementArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(strategyName.asInstanceOf[js.Any]).`++`(strategyArguments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[ElementArray]]
 }

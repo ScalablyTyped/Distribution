@@ -1,12 +1,14 @@
 package typings.keycloakJs.mod
 
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KeycloakPromise[TSuccess, TError]
-  extends js.Promise[TSuccess] {
+  extends StObject
+     with Promise[TSuccess] {
   
   /**
   	 * Function to call if the promised action throws an error.

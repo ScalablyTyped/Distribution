@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PickingInfo extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _pickingUnavailable: Boolean = js.native
   
   /**

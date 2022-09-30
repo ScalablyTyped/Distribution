@@ -101,19 +101,6 @@ trait TYListItemProps
   
   /**
     * @language zh-CN
-    * @description 是否禁用列表点击事件，注意: Action点击事件不被此影响
-    * @defaultValue false
-    */
-  /**
-    * @language en-US
-    * @description Whether to disable list click events. Note: action click events are not affected by this
-    * @defaultValue false
-    */
-  @JSName("disabled")
-  var disabled_TYListItemProps: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * @language zh-CN
     * @description 图标颜色
     * @defaultValue null
     */
@@ -276,10 +263,6 @@ object TYListItemProps {
     inline def setArrowUseIcon(value: Boolean): Self = StObject.set(x, "arrowUseIcon", value.asInstanceOf[js.Any])
     
     inline def setArrowUseIconUndefined: Self = StObject.set(x, "arrowUseIcon", js.undefined)
-    
-    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setIcon(value: Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     

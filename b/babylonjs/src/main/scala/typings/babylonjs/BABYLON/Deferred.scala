@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,5 +25,5 @@ trait Deferred[T] extends StObject {
   /**
     * The resolve method of the promise associated with this deferred object.
     */
-  def resolve: js.Function1[/* value */ T | js.Thenable[T], Unit] = js.native
+  def resolve: js.Function1[/* value */ T | PromiseLike[T], Unit] = js.native
 }

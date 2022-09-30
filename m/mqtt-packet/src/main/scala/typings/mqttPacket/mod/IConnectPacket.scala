@@ -2,9 +2,9 @@ package typings.mqttPacket.mod
 
 import typings.mqttPacket.anon.AuthenticationMethod
 import typings.mqttPacket.anon.Payload
-import typings.mqttPacket.mqttPacketNumbers.`3`
-import typings.mqttPacket.mqttPacketNumbers.`4`
-import typings.mqttPacket.mqttPacketNumbers.`5`
+import typings.mqttPacket.mqttPacketInts.`3`
+import typings.mqttPacket.mqttPacketInts.`4`
+import typings.mqttPacket.mqttPacketInts.`5`
 import typings.mqttPacket.mqttPacketStrings.MQIsdp
 import typings.mqttPacket.mqttPacketStrings.MQTT
 import typings.mqttPacket.mqttPacketStrings.connect

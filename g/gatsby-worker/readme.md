@@ -1,7 +1,7 @@
 
 # Scala.js typings for gatsby-worker
 
-Typings are for version 1.23.0
+Typings are for version 1.24.0
 
 ## Library description:
 Utility to create worker pools

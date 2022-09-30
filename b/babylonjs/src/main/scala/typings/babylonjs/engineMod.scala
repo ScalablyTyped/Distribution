@@ -135,7 +135,7 @@ object engineMod {
     
     /* private */ var _cachedStencilReference: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _captureGPUFrameTime: Boolean = js.native
     
     /* private */ var _clientWaitAsync: Any = js.native
@@ -143,16 +143,14 @@ object engineMod {
     /* protected */ var _compatibilityMode: Boolean = js.native
     
     /**
-      * @param canvas
-      * @param document
-      * @hidden
+      * @internal
       */
     def _connectVREvents(): Unit = js.native
     def _connectVREvents(canvas: Unit, document: Any): Unit = js.native
     def _connectVREvents(canvas: HTMLCanvasElement): Unit = js.native
     def _connectVREvents(canvas: HTMLCanvasElement, document: Any): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     /**
       * Engine abstraction for loading and creating an image bitmap from a given source string.
       * @param imageSource source to load the image from.
@@ -162,58 +160,55 @@ object engineMod {
     def _createImageBitmapFromSource(imageSource: String): js.Promise[ImageBitmap] = js.native
     def _createImageBitmapFromSource(imageSource: String, options: ImageBitmapOptions): js.Promise[ImageBitmap] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _createTimeQuery(): WebGLQuery = js.native
     
-    /** @hidden */
+    /** @internal */
     var _currentNonTimestampToken: Nullable[TimeToken] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _deleteTimeQuery(query: WebGLQuery): Unit = js.native
     
     /* private */ var _deltaTime: Any = js.native
     
     /* protected */ var _deterministicLockstep: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _deviceSourceManager: js.UndefOr[InternalDeviceSourceManager] = js.native
     
     /* private */ var _disableTouchAction: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _drawCalls: PerfCounter = js.native
     
-    /** @hidden */
+    /** @internal */
     var _excludedCompressedTextures: js.Array[String] = js.native
     
     /* private */ var _fps: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getGlAlgorithmType(algorithmType: Double): Double = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getTimeQueryAvailability(query: WebGLQuery): Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getTimeQueryResult(query: WebGLQuery): Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gpuFrameTime: PerfCounter = js.native
     
-    /** @hidden */
+    /** @internal */
     var _gpuFrameTimeToken: Nullable[TimeToken] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _inputElement: Nullable[HTMLElement] = js.native
     
     /**
-      * @param url
-      * @param offlineProvider
-      * @param useArrayBuffer
-      * @hidden
+      * @internal
       */
     def _loadFileAsync(url: String): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
     def _loadFileAsync(url: String, offlineProvider: Unit, useArrayBuffer: Boolean): js.Promise[String | js.typedarray.ArrayBuffer] = js.native
@@ -226,13 +221,13 @@ object engineMod {
     
     /* private */ var _measureFps: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _oldHardwareScaleFactor: Double = js.native
     
-    /** @hidden */
+    /** @internal */
     var _oldSize: Size = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onBeginFrameObserver: Nullable[
         Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
       ] = js.native
@@ -247,14 +242,14 @@ object engineMod {
     
     /* private */ var _onCanvasPointerOut: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onEndFrameObserver: Nullable[
         Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
       ] = js.native
     
     /**
       * Observable to handle when a change to inputElement occurs
-      * @hidden
+      * @internal
       */
     var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
     
@@ -264,40 +259,33 @@ object engineMod {
     
     /* private */ var _onPointerLockChange: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _onVRDisplayPointerRestricted(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _onVRDisplayPointerUnrestricted(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _onVRFullScreenTriggered(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
     
     /* private */ var _performanceMonitor: Any = js.native
     
     /* private */ var _pointerLockRequested: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _prepareVRComponent(): Unit = js.native
     
     /**
-      * @param x
-      * @param y
-      * @param w
-      * @param h
-      * @param format
-      * @param type
-      * @param outputBuffer
-      * @hidden
+      * @internal
       */
     def _readPixelsAsync(
       x: Double,
@@ -309,35 +297,31 @@ object engineMod {
       outputBuffer: js.typedarray.ArrayBufferView
     ): js.Promise[js.typedarray.ArrayBufferView] | Null = js.native
     
-    /** @hidden */
+    /** @internal */
     def _renderFrame(): Unit = js.native
     
     /* private */ var _renderPassNames: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _renderViews(): Boolean = js.native
     
     def _reportDrawCall(numDrawCalls: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _requestVRFrame(): Unit = js.native
     
     /* private */ var _rescalePostProcess: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _submitVRFrame(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _textureFormatInUse: String = js.native
     
     /* protected */ var _timeStep: Double = js.native
     
     /**
-      * @param texture
-      * @param image
-      * @param faceIndex
-      * @param lod
-      * @hidden
+      * @internal
       */
     def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement): Unit = js.native
     def _uploadImageToTexture(texture: InternalTexture, image: HTMLImageElement, faceIndex: Double): Unit = js.native
@@ -348,19 +332,19 @@ object engineMod {
     def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Double, lod: Double): Unit = js.native
     def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Unit, lod: Double): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _virtualScenes: js.Array[Scene] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _vrDisplay: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _vrExclusivePointerMode: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _vrSupported: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _webVRInitPromise: js.Promise[IDisplayChangedEventArgs] = js.native
     
     /**

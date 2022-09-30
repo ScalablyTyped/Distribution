@@ -1,44 +1,44 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`10`
-import typings.mfiles.mfilesNumbers.`11`
-import typings.mfiles.mfilesNumbers.`12`
-import typings.mfiles.mfilesNumbers.`13`
-import typings.mfiles.mfilesNumbers.`14`
-import typings.mfiles.mfilesNumbers.`15`
-import typings.mfiles.mfilesNumbers.`16`
-import typings.mfiles.mfilesNumbers.`17`
-import typings.mfiles.mfilesNumbers.`1`
-import typings.mfiles.mfilesNumbers.`2`
-import typings.mfiles.mfilesNumbers.`3`
-import typings.mfiles.mfilesNumbers.`4`
-import typings.mfiles.mfilesNumbers.`5`
-import typings.mfiles.mfilesNumbers.`6`
-import typings.mfiles.mfilesNumbers.`7`
-import typings.mfiles.mfilesNumbers.`8`
-import typings.mfiles.mfilesNumbers.`9`
+import typings.mfiles.mfilesInts.`10`
+import typings.mfiles.mfilesInts.`11`
+import typings.mfiles.mfilesInts.`12`
+import typings.mfiles.mfilesInts.`13`
+import typings.mfiles.mfilesInts.`14`
+import typings.mfiles.mfilesInts.`15`
+import typings.mfiles.mfilesInts.`16`
+import typings.mfiles.mfilesInts.`17`
+import typings.mfiles.mfilesInts.`1`
+import typings.mfiles.mfilesInts.`2`
+import typings.mfiles.mfilesInts.`3`
+import typings.mfiles.mfilesInts.`4`
+import typings.mfiles.mfilesInts.`5`
+import typings.mfiles.mfilesInts.`6`
+import typings.mfiles.mfilesInts.`7`
+import typings.mfiles.mfilesInts.`8`
+import typings.mfiles.mfilesInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`1`
-  - typings.mfiles.mfilesNumbers.`2`
-  - typings.mfiles.mfilesNumbers.`3`
-  - typings.mfiles.mfilesNumbers.`4`
-  - typings.mfiles.mfilesNumbers.`5`
-  - typings.mfiles.mfilesNumbers.`6`
-  - typings.mfiles.mfilesNumbers.`7`
-  - typings.mfiles.mfilesNumbers.`8`
-  - typings.mfiles.mfilesNumbers.`9`
-  - typings.mfiles.mfilesNumbers.`10`
-  - typings.mfiles.mfilesNumbers.`11`
-  - typings.mfiles.mfilesNumbers.`12`
-  - typings.mfiles.mfilesNumbers.`13`
-  - typings.mfiles.mfilesNumbers.`14`
-  - typings.mfiles.mfilesNumbers.`15`
-  - typings.mfiles.mfilesNumbers.`16`
-  - typings.mfiles.mfilesNumbers.`17`
+  - typings.mfiles.mfilesInts.`1`
+  - typings.mfiles.mfilesInts.`2`
+  - typings.mfiles.mfilesInts.`3`
+  - typings.mfiles.mfilesInts.`4`
+  - typings.mfiles.mfilesInts.`5`
+  - typings.mfiles.mfilesInts.`6`
+  - typings.mfiles.mfilesInts.`7`
+  - typings.mfiles.mfilesInts.`8`
+  - typings.mfiles.mfilesInts.`9`
+  - typings.mfiles.mfilesInts.`10`
+  - typings.mfiles.mfilesInts.`11`
+  - typings.mfiles.mfilesInts.`12`
+  - typings.mfiles.mfilesInts.`13`
+  - typings.mfiles.mfilesInts.`14`
+  - typings.mfiles.mfilesInts.`15`
+  - typings.mfiles.mfilesInts.`16`
+  - typings.mfiles.mfilesInts.`17`
 */
 trait MFConditionType extends StObject
 object MFConditionType {

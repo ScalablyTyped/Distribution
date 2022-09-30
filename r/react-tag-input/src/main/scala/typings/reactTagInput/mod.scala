@@ -5,7 +5,7 @@ import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.ReactChild
 import typings.reactTagInput.anon.ActiveSuggestion
 import typings.reactTagInput.anon.Id
-import typings.reactTagInput.reactTagInputNumbers.`1`
+import typings.reactTagInput.reactTagInputInts.`1`
 import typings.reactTagInput.reactTagInputStrings.`inline`
 import typings.reactTagInput.reactTagInputStrings.bottom
 import typings.reactTagInput.reactTagInputStrings.top

@@ -23,5 +23,5 @@ object mod {
     args: (Interpolation[
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Props */ Any
     ])*
-  ): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SerializedStyles]
+  ): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SerializedStyles]
 }

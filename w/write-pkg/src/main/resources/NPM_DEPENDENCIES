@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "write-pkg" : "4.0.0"
+      "write-pkg" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "write-pkg" : "4.0.0"
+      "write-pkg" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

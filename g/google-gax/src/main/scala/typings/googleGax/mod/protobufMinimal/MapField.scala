@@ -21,14 +21,13 @@ import typings.protobufjs.mod.Constructor
 import typings.protobufjs.mod.FieldDecorator
 import typings.protobufjs.mod.IMapField
 import typings.protobufjs.mod.Long
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "protobufMinimal.MapField")
 @js.native
-class MapField protected ()
+open class MapField protected ()
   extends typings.protobufjs.minimalMod.MapField {
   /**
     * Constructs a new map field instance.
@@ -40,13 +39,13 @@ class MapField protected ()
     * @param [comment] Comment associated with this field
     */
   def this(name: String, id: Double, keyType: String, `type`: String) = this()
-  def this(name: String, id: Double, keyType: String, `type`: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, id: Double, keyType: String, `type`: String, options: StringDictionary[Any]) = this()
   def this(
     name: String,
     id: Double,
     keyType: String,
     `type`: String,
-    options: StringDictionary[js.Any],
+    options: StringDictionary[Any],
     comment: String
   ) = this()
   def this(name: String, id: Double, keyType: String, `type`: String, options: Unit, comment: String) = this()
@@ -58,6 +57,13 @@ object MapField {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def d[T /* <: StringDictionary[
+    Double | Long | String | Boolean | js.typedarray.Uint8Array | Buffer | js.Array[Double] | typings.protobufjs.mod.Message[js.Object]
+  ] */](
+    fieldId: Double,
+    fieldKeyType: int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string,
+    fieldValueType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string | bytes
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldKeyType.asInstanceOf[js.Any], fieldValueType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   /**
     * Map field decorator (TypeScript).
     * @param fieldId Field id
@@ -66,11 +72,18 @@ object MapField {
     * @returns Decorator function
     */
   inline def d[T /* <: StringDictionary[
-    Double | Long | String | Boolean | Uint8Array | Buffer | js.Array[Double] | typings.protobufjs.mod.Message[js.Object]
+    Double | Long | String | Boolean | js.typedarray.Uint8Array | Buffer | js.Array[Double] | typings.protobufjs.mod.Message[js.Object]
   ] */](
     fieldId: Double,
     fieldKeyType: int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string,
-    fieldValueType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string | bytes | js.Object | Constructor[js.Object]
+    fieldValueType: js.Object
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldKeyType.asInstanceOf[js.Any], fieldValueType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: StringDictionary[
+    Double | Long | String | Boolean | js.typedarray.Uint8Array | Buffer | js.Array[Double] | typings.protobufjs.mod.Message[js.Object]
+  ] */](
+    fieldId: Double,
+    fieldKeyType: int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string,
+    fieldValueType: Constructor[js.Object]
   ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldKeyType.asInstanceOf[js.Any], fieldValueType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   
   /**

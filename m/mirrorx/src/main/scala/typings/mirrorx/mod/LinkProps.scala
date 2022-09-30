@@ -1,7 +1,5 @@
 package typings.mirrorx.mod
 
-import typings.history.mod.LocationDescriptor
-import typings.history.mod.LocationState
 import typings.react.mod.AnchorHTMLAttributes
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
@@ -14,11 +12,13 @@ trait LinkProps
   
   var replace: js.UndefOr[Boolean] = js.undefined
   
-  var to: LocationDescriptor[LocationState]
+  var to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
 }
 object LinkProps {
   
-  inline def apply(to: LocationDescriptor[LocationState]): LinkProps = {
+  inline def apply(
+    to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
+  ): LinkProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkProps]
   }
@@ -29,6 +29,8 @@ object LinkProps {
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    inline def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
+    ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

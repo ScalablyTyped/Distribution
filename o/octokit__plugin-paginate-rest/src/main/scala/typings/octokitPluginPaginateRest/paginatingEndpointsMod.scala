@@ -223,7 +223,7 @@ object paginatingEndpointsMod {
   @JSImport("@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints", "paginatingEndpoints")
   @js.native
   val paginatingEndpoints: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 188 */ Any
   ] = js.native
   
   trait PaginatingEndpoints_ extends StObject {

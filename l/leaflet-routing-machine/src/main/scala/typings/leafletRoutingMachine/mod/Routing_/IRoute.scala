@@ -31,13 +31,13 @@ object IRoute {
     
     inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    inline def setCoordinatesVarargs(value: LatLng_ *): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: LatLng_ *): Self = StObject.set(x, "coordinates", js.Array(value*))
     
     inline def setInstructions(value: js.Array[IInstruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
     inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
-    inline def setInstructionsVarargs(value: IInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+    inline def setInstructionsVarargs(value: IInstruction*): Self = StObject.set(x, "instructions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -51,6 +51,6 @@ object IRoute {
     
     inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
     
-    inline def setWaypointsVarargs(value: LatLng_ *): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: LatLng_ *): Self = StObject.set(x, "waypoints", js.Array(value*))
   }
 }

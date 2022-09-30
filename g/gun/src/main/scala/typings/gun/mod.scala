@@ -26,6 +26,7 @@ import typings.gun.mod.Gun.ChainReference
 import typings.gun.mod.Gun.Constructor
 import typings.gun.mod.Gun.ConstructorOptions
 import typings.std.Partial
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -336,7 +337,7 @@ object mod extends Shortcut {
               /* onfulfilled */ js.UndefOr[
                 js.Function1[
                   /* value */ typings.gun.anon.Gun[DataType, ReferenceKey], 
-                  (typings.gun.anon.Gun[DataType, ReferenceKey]) | (js.Thenable[typings.gun.anon.Gun[DataType, ReferenceKey]])
+                  (typings.gun.anon.Gun[DataType, ReferenceKey]) | (PromiseLike[typings.gun.anon.Gun[DataType, ReferenceKey]])
                 ]
               ], 
               js.Promise[typings.gun.anon.Gun[DataType, ReferenceKey]]
@@ -402,7 +403,7 @@ object mod extends Shortcut {
               /* onfulfilled */ js.UndefOr[
                 js.Function1[
                   /* value */ ArrayAsRecord[DataType], 
-                  ArrayAsRecord[DataType] | js.Thenable[ArrayAsRecord[DataType]]
+                  ArrayAsRecord[DataType] | PromiseLike[ArrayAsRecord[DataType]]
                 ]
               ], 
               js.Promise[ArrayAsRecord[DataType]]

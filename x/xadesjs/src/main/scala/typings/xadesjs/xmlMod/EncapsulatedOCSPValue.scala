@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "EncapsulatedOCSPValue")
+@JSImport("xadesjs/build/types/src/xml", "EncapsulatedOCSPValue")
 @js.native
-class EncapsulatedOCSPValue ()
+open class EncapsulatedOCSPValue ()
   extends typings.xadesjs.revocationValuesMod.EncapsulatedOCSPValue {
   def this(properties: js.Object) = this()
 }

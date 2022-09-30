@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.DeleteAction")
 @js.native
-class DeleteAction protected ()
+open class DeleteAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.DeleteAction {
   def this(
     model: AbstractModel,

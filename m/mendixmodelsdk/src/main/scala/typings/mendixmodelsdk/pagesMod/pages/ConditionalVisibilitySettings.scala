@@ -14,9 +14,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalVisibilitySettings")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalVisibilitySettings")
 @js.native
-class ConditionalVisibilitySettings protected () extends ConditionalSettings {
+open class ConditionalVisibilitySettings protected () extends ConditionalSettings {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ class ConditionalVisibilitySettings protected () extends ConditionalSettings {
 }
 object ConditionalVisibilitySettings {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalVisibilitySettings")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalVisibilitySettings")
   @js.native
   val ^ : js.Any = js.native
   
@@ -107,13 +107,13 @@ object ConditionalVisibilitySettings {
   inline def createInTableRowUnderConditionalVisibilitySettings(container: TableRow): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalVisibilitySettings.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalVisibilitySettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalVisibilitySettings.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConditionalVisibilitySettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

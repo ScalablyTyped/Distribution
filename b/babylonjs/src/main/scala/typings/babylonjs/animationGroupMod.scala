@@ -48,7 +48,7 @@ object animationGroupMod {
     
     /* private */ var _loopAnimation: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _parentContainer: Nullable[AbstractScene] = js.native
     
     /* private */ var _processLoop: Any = js.native

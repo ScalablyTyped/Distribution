@@ -11,10 +11,12 @@ import typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTem
 import typings.mendixmodelsdk.importmappingsMod.importmappings.ImportMapping
 import typings.mendixmodelsdk.mappingsMod.mappings.ValueMappingElement
 import typings.mendixmodelsdk.microflowsMod.microflows.CreateVariableAction
+import typings.mendixmodelsdk.microflowsMod.microflows.MLModelCallParameterMapping
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterBase
 import typings.mendixmodelsdk.microflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling
+import typings.mendixmodelsdk.pagesMod.pages.PageParameter
 import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
@@ -30,7 +32,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.BinaryType")
   @js.native
-  class BinaryType protected ()
+  open class BinaryType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.BinaryType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -61,7 +63,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
@@ -72,7 +74,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
@@ -145,6 +147,17 @@ object datatypes {
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
+      * The new BinaryType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    
+    /**
+      * Creates and returns a new BinaryType instance in the SDK and on the server.
       * The new BinaryType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -175,6 +188,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
+    
+    /**
+      * Creates and returns a new BinaryType instance in the SDK and on the server.
+      * The new BinaryType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BinaryType]
     
     /**
       * Creates and returns a new BinaryType instance in the SDK and on the server.
@@ -249,7 +273,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.BooleanType")
   @js.native
-  class BooleanType protected ()
+  open class BooleanType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.BooleanType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -280,7 +304,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
@@ -291,7 +315,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
@@ -364,6 +388,17 @@ object datatypes {
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * The new BooleanType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    
+    /**
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
       * The new BooleanType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -394,6 +429,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
+    
+    /**
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * The new BooleanType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType]
     
     /**
       * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -505,7 +551,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.DateTimeType")
   @js.native
-  class DateTimeType protected ()
+  open class DateTimeType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.DateTimeType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -536,7 +582,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
@@ -547,7 +593,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
@@ -620,6 +666,17 @@ object datatypes {
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * The new DateTimeType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    
+    /**
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
       * The new DateTimeType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -650,6 +707,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
+    
+    /**
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * The new DateTimeType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType]
     
     /**
       * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -724,7 +792,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.DecimalType")
   @js.native
-  class DecimalType protected ()
+  open class DecimalType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.DecimalType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -755,7 +823,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
@@ -766,7 +834,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
@@ -839,6 +907,17 @@ object datatypes {
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * The new DecimalType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    
+    /**
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
       * The new DecimalType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -869,6 +948,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
+    
+    /**
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * The new DecimalType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType]
     
     /**
       * Creates and returns a new DecimalType instance in the SDK and on the server.
@@ -943,7 +1033,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.EmptyType")
   @js.native
-  class EmptyType protected ()
+  open class EmptyType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.EmptyType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -974,7 +1064,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
@@ -985,7 +1075,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
@@ -1058,6 +1148,17 @@ object datatypes {
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
+      * The new EmptyType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    
+    /**
+      * Creates and returns a new EmptyType instance in the SDK and on the server.
       * The new EmptyType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -1088,6 +1189,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
+    
+    /**
+      * Creates and returns a new EmptyType instance in the SDK and on the server.
+      * The new EmptyType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EmptyType]
     
     /**
       * Creates and returns a new EmptyType instance in the SDK and on the server.
@@ -1197,7 +1309,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.EnumerationType")
   @js.native
-  class EnumerationType protected ()
+  open class EnumerationType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.EnumerationType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1228,7 +1340,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
@@ -1239,7 +1351,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
@@ -1312,6 +1424,17 @@ object datatypes {
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * The new EnumerationType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    
+    /**
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
       * The new EnumerationType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -1342,6 +1465,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
+    
+    /**
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * The new EnumerationType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType]
     
     /**
       * Creates and returns a new EnumerationType instance in the SDK and on the server.
@@ -1416,7 +1550,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.FloatType")
   @js.native
-  class FloatType protected ()
+  open class FloatType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.FloatType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1447,7 +1581,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
@@ -1458,7 +1592,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
@@ -1531,6 +1665,17 @@ object datatypes {
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
+      * The new FloatType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    
+    /**
+      * Creates and returns a new FloatType instance in the SDK and on the server.
       * The new FloatType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -1561,6 +1706,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
+    
+    /**
+      * Creates and returns a new FloatType instance in the SDK and on the server.
+      * The new FloatType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.FloatType]
     
     /**
       * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -1635,7 +1791,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.IntegerType")
   @js.native
-  class IntegerType protected ()
+  open class IntegerType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.IntegerType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1666,7 +1822,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
@@ -1677,7 +1833,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
@@ -1750,6 +1906,17 @@ object datatypes {
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * The new IntegerType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    
+    /**
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
       * The new IntegerType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -1780,6 +1947,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
+    
+    /**
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * The new IntegerType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType]
     
     /**
       * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -1854,7 +2032,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.ListType")
   @js.native
-  class ListType protected ()
+  open class ListType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.ListType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -1885,7 +2063,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
@@ -1896,7 +2074,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
@@ -1969,6 +2147,17 @@ object datatypes {
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
+      * The new ListType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    
+    /**
+      * Creates and returns a new ListType instance in the SDK and on the server.
       * The new ListType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -1999,6 +2188,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
+    
+    /**
+      * Creates and returns a new ListType instance in the SDK and on the server.
+      * The new ListType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ListType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ListType]
     
     /**
       * Creates and returns a new ListType instance in the SDK and on the server.
@@ -2073,7 +2273,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.ObjectType")
   @js.native
-  class ObjectType protected ()
+  open class ObjectType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.ObjectType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -2104,7 +2304,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
@@ -2115,7 +2315,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
@@ -2188,6 +2388,17 @@ object datatypes {
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
+      * The new ObjectType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    
+    /**
+      * Creates and returns a new ObjectType instance in the SDK and on the server.
       * The new ObjectType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -2218,6 +2429,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
+    
+    /**
+      * Creates and returns a new ObjectType instance in the SDK and on the server.
+      * The new ObjectType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.ObjectType]
     
     /**
       * Creates and returns a new ObjectType instance in the SDK and on the server.
@@ -2292,7 +2514,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.StringType")
   @js.native
-  class StringType protected ()
+  open class StringType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.StringType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -2323,7 +2545,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
@@ -2334,7 +2556,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
@@ -2407,6 +2629,17 @@ object datatypes {
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
+      * The new StringType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    
+    /**
+      * Creates and returns a new StringType instance in the SDK and on the server.
       * The new StringType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -2437,6 +2670,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
+    
+    /**
+      * Creates and returns a new StringType instance in the SDK and on the server.
+      * The new StringType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.StringType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.StringType]
     
     /**
       * Creates and returns a new StringType instance in the SDK and on the server.
@@ -2511,7 +2755,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.UnknownType")
   @js.native
-  class UnknownType protected ()
+  open class UnknownType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.UnknownType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -2542,7 +2786,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
@@ -2553,7 +2797,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
@@ -2626,6 +2870,17 @@ object datatypes {
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
+      * The new UnknownType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    
+    /**
+      * Creates and returns a new UnknownType instance in the SDK and on the server.
       * The new UnknownType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -2656,6 +2911,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
+    
+    /**
+      * Creates and returns a new UnknownType instance in the SDK and on the server.
+      * The new UnknownType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.UnknownType]
     
     /**
       * Creates and returns a new UnknownType instance in the SDK and on the server.
@@ -2730,7 +2996,7 @@ object datatypes {
     */
   @JSImport("mendixmodelsdk", "datatypes.VoidType")
   @js.native
-  class VoidType protected ()
+  open class VoidType protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.datatypes.VoidType {
     def this(
       model: typings.mendixmodelsdk.internalMod.AbstractModel,
@@ -2761,7 +3027,7 @@ object datatypes {
       * of the parent appservices.AppServiceActionParameter element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
@@ -2772,7 +3038,7 @@ object datatypes {
       * of the parent appservices.AppServiceAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.9.0 and higher
+      *  7.9.0 to 9.0.1
       */
     /* static member */
     inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
@@ -2845,6 +3111,17 @@ object datatypes {
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.
+      * The new VoidType will be automatically stored in the 'parameterType' property
+      * of the parent microflows.MLModelCallParameterMapping element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.10.0 to 9.17.0
+      */
+    /* static member */
+    inline def createInMLModelCallParameterMappingUnderParameterType(container: MLModelCallParameterMapping): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMLModelCallParameterMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    
+    /**
+      * Creates and returns a new VoidType instance in the SDK and on the server.
       * The new VoidType will be automatically stored in the 'microflowReturnType' property
       * of the parent microflows.MicroflowBase element passed as argument.
       *
@@ -2875,6 +3152,17 @@ object datatypes {
       */
     /* static member */
     inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
+    
+    /**
+      * Creates and returns a new VoidType instance in the SDK and on the server.
+      * The new VoidType will be automatically stored in the 'parameterType' property
+      * of the parent pages.PageParameter element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  9.4.0 and higher
+      */
+    /* static member */
+    inline def createInPageParameterUnderParameterType(container: PageParameter): typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datatypesMod.datatypes.VoidType]
     
     /**
       * Creates and returns a new VoidType instance in the SDK and on the server.

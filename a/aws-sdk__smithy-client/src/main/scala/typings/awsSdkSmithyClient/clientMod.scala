@@ -28,7 +28,7 @@ object clientMod {
     var middlewareStack: MiddlewareStack[ClientInput, ClientOutput] = js.native
     
     /* CompleteClass */
-    override def send[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] | Unit = js.native
+    override def send[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] = js.native
     def send[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
       command: Command[
           ClientInput, 
@@ -43,13 +43,13 @@ object clientMod {
     override def send[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
       command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration],
       options: Any
-    ): js.Promise[OutputType] | Unit = js.native
+    ): js.Promise[OutputType] = js.native
     /* CompleteClass */
     override def send[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
       command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration],
       options: Any,
       cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
-    ): js.Promise[OutputType] | Unit = js.native
+    ): Unit = js.native
     /* CompleteClass */
     override def send[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
       command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration],
@@ -58,20 +58,20 @@ object clientMod {
     ): js.Promise[OutputType] | Unit = js.native
     /* CompleteClass */
     @JSName("send")
-    override def send_InputType_InputOutputType_Output_Promise[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] = js.native
+    override def send_InputTypeOutputType_Union[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration]): js.Promise[OutputType] | Unit = js.native
     /* CompleteClass */
     @JSName("send")
-    override def send_InputType_InputOutputType_Output_Promise[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
+    override def send_InputTypeOutputType_Union[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
       command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration],
       options: Any
-    ): js.Promise[OutputType] = js.native
+    ): js.Promise[OutputType] | Unit = js.native
     /* CompleteClass */
     @JSName("send")
-    override def send_InputType_InputOutputType_Output_Unit[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
+    override def send_InputTypeOutputType_Union[InputType /* <: ClientInput */, OutputType /* <: ClientOutput */](
       command: Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedClientConfiguration],
       options: Any,
       cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
-    ): Unit = js.native
+    ): js.Promise[OutputType] | Unit = js.native
     /* CompleteClass */
     @JSName("send")
     var send_Original: InvokeFunction[ClientInput, ClientOutput, ResolvedClientConfiguration] = js.native

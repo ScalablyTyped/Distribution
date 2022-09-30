@@ -15,7 +15,7 @@ trait RenderTargetTexture
   /* private */ var _bestReflectionRenderTargetDimension: Any = js.native
   
   /**
-    * @hidden
+    * @internal
     * @param faceIndex face index to bind to if this is a cubetexture
     * @param layer defines the index of the texture to bind in the array
     */
@@ -28,7 +28,7 @@ trait RenderTargetTexture
   
   /* private */ var _canRescale: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _cleared: Boolean = js.native
   
   /* private */ var _createRenderPassId: Any = js.native
@@ -39,7 +39,7 @@ trait RenderTargetTexture
   
   /* protected */ var _doNotChangeAspectRatio: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _generateMipMaps: Boolean = js.native
   
   /* protected */ var _initialSizeParameter: Double | Height | Ratio = js.native
@@ -62,15 +62,11 @@ trait RenderTargetTexture
   
   /* private */ def _prePassEnabled: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _prePassRenderTarget: Nullable[PrePassRenderTarget] = js.native
   
   /**
-    * @param scene
-    * @param faceIndex
-    * @param layer
-    * @param useCameraPostProcess
-    * @hidden
+    * @internal
     */
   def _prepareFrame(scene: Scene): Unit = js.native
   def _prepareFrame(scene: Scene, faceIndex: Double): Unit = js.native
@@ -109,7 +105,7 @@ trait RenderTargetTexture
   
   /* protected */ var _samples: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   def _shouldRender(): Boolean = js.native
   
   /* protected */ var _size: TextureSize = js.native
@@ -122,7 +118,7 @@ trait RenderTargetTexture
   
   /* protected */ def _unbindFrameBuffer(engine: Engine, faceIndex: Double): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _waitingRenderList: js.UndefOr[js.Array[String]] = js.native
   
   /**

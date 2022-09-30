@@ -1,10 +1,5 @@
 package typings.gatsbyImage
 
-import typings.gatsbyImage.gatsbyImageStrings.`scale-down`
-import typings.gatsbyImage.gatsbyImageStrings.contain
-import typings.gatsbyImage.gatsbyImageStrings.cover
-import typings.gatsbyImage.gatsbyImageStrings.fill
-import typings.gatsbyImage.gatsbyImageStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +8,7 @@ object anon {
   
   trait ObjectFit extends StObject {
     
-    var objectFit: js.UndefOr[fill | contain | cover | none | `scale-down`] = js.undefined
+    var objectFit: js.UndefOr[/* template literal string: fill */ String] = js.undefined
     
     var objectPosition: js.UndefOr[String] = js.undefined
   }
@@ -26,7 +21,7 @@ object anon {
     
     extension [Self <: ObjectFit](x: Self) {
       
-      inline def setObjectFit(value: fill | contain | cover | none | `scale-down`): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+      inline def setObjectFit(value: /* template literal string: fill */ String): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
       
       inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
       

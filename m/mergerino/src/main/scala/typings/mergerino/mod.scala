@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S /* <: js.Object */](source: S, patches: MultipleTopLevelPatch[S]*): S = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(source.asInstanceOf[js.Any]).`++`(patches.asInstanceOf[Seq[js.Any]])*).asInstanceOf[S]
+  inline def default[S /* <: js.Object */](source: S, patches: MultipleTopLevelPatch[S]*): S = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(source.asInstanceOf[js.Any]).`++`(patches.asInstanceOf[Seq[js.Any]])*).asInstanceOf[S]
   
   type ArrayPatch[T] = ObjectPatch[Record[Double, Any]]
   
@@ -26,7 +26,7 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.mergerino.mergerinoBooleans.`false`
-    - typings.mergerino.mergerinoNumbers.`0`
+    - typings.mergerino.mergerinoInts.`0`
     - typings.mergerino.mergerinoStrings._empty
     - scala.Null
     - scala.Unit

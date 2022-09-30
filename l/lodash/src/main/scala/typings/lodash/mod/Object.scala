@@ -454,7 +454,7 @@ trait Object[T]
     * @see _.get
     */
   @JSName("get")
-  def get_TKey_StringTDefault_Union[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): (Exclude[
+  def get_TKeyTDefault_Union[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): (Exclude[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
     Unit
   ]) | TDefault = js.native
@@ -462,7 +462,7 @@ trait Object[T]
     * @see _.get
     */
   @JSName("get")
-  def get_TKey_String_Any[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
+  def get_TKey_Any[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any = js.native
   
   /**
     * @see _.groupBy
@@ -609,7 +609,7 @@ trait Object[T]
     * @see _.map
     */
   @JSName("map")
-  def map_K_Any[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[keyof T] */ js.Any */](key: K): Collection[
+  def map_K[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[keyof T] */ js.Any */](key: K): Collection[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T][K] */ js.Any
   ] = js.native
   
@@ -679,7 +679,7 @@ trait Object[T]
     * @see _.omit
     */
   @JSName("omit")
-  def omit_K_String[K /* <: /* keyof T */ java.lang.String */](paths: Many[K]*): Object[Omit[T, K]] = js.native
+  def omit_K[K /* <: /* keyof T */ java.lang.String */](paths: Many[K]*): Object[Omit[T, K]] = js.native
   
   /**
     * @see _.orderBy
@@ -755,7 +755,7 @@ trait Object[T]
     * @see _.pick
     */
   @JSName("pick")
-  def pick_U_String[U /* <: /* keyof T */ java.lang.String */](props: Many[U]*): Object[Pick[T, U]] = js.native
+  def pick_U[U /* <: /* keyof T */ java.lang.String */](props: Many[U]*): Object[Pick[T, U]] = js.native
   
   /**
     * @see _.reduce

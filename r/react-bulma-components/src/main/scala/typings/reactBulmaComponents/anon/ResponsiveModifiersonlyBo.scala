@@ -1,12 +1,12 @@
 package typings.reactBulmaComponents.anon
 
 import typings.reactBulmaComponents.componentsMod.DisplayModifier
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`2`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`3`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`4`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`5`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`6`
-import typings.reactBulmaComponents.reactBulmaComponentsNumbers.`7`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`2`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`3`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`4`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`5`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`6`
+import typings.reactBulmaComponents.reactBulmaComponentsInts.`7`
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.center
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.justify
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.left
@@ -28,7 +28,7 @@ trait ResponsiveModifiersonlyBo extends StObject {
   var textAlign: js.UndefOr[center | justify | left | right] = js.undefined
   
   var textSize: js.UndefOr[
-    typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1` | `2` | `3` | `4` | `5` | `6` | `7` | Number | String
+    typings.reactBulmaComponents.reactBulmaComponentsInts.`1` | `2` | `3` | `4` | `5` | `6` | `7` | Number | String
   ] = js.undefined
 }
 object ResponsiveModifiersonlyBo {
@@ -57,7 +57,7 @@ object ResponsiveModifiersonlyBo {
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     inline def setTextSize(
-      value: typings.reactBulmaComponents.reactBulmaComponentsNumbers.`1` | `2` | `3` | `4` | `5` | `6` | `7` | Number | String
+      value: typings.reactBulmaComponents.reactBulmaComponentsInts.`1` | `2` | `3` | `4` | `5` | `6` | `7` | Number | String
     ): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
     
     inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)

@@ -14,7 +14,7 @@ trait HistoryLocation extends StObject {
   
   var search: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
+  var state: js.UndefOr[ObjectLiteral[Any]] = js.undefined
 }
 object HistoryLocation {
   
@@ -41,7 +41,7 @@ object HistoryLocation {
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    inline def setState(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ObjectLiteral[Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

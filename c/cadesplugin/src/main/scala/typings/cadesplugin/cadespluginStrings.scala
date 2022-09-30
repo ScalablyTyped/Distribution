@@ -67,24 +67,8 @@ object cadespluginStrings {
   inline def Root: Root = "Root".asInstanceOf[Root]
   
   @js.native
-  sealed trait `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411` extends StObject
-  inline def `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411`: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411` = "http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411".asInstanceOf[`httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr34102001-gostr3411`]
-  
-  @js.native
   sealed trait `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411` extends StObject
   inline def `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411`: `httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411` = "http://www.w3.org/2001/04/xmldsig-more#gostr3411".asInstanceOf[`httpColonSlashSlashwwwDotw3DotorgSlash2001Slash04Slashxmldsig-moreNumbersigngostr3411`]
-  
-  @js.native
-  sealed trait `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411` extends StObject
-  inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`]
-  
-  @js.native
-  sealed trait `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256` extends StObject
-  inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256`]
-  
-  @js.native
-  sealed trait `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512` extends StObject
-  inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-512".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512`]
   
   @js.native
   sealed trait urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411 extends StObject

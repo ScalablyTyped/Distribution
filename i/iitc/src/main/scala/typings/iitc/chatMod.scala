@@ -1,8 +1,8 @@
 package typings.iitc
 
-import typings.iitc.iitcNumbers.`0`
-import typings.iitc.iitcNumbers.`1`
-import typings.iitc.iitcNumbers.`2`
+import typings.iitc.iitcInts.`0`
+import typings.iitc.iitcInts.`1`
+import typings.iitc.iitcInts.`2`
 import typings.iitc.iitcStrings.chatalerts
 import typings.iitc.iitcStrings.chatall
 import typings.iitc.iitcStrings.chatfaction
@@ -19,7 +19,7 @@ object chatMod {
     
     @JSGlobal("Chat")
     @js.native
-    class Chat_ () extends StObject {
+    open class Chat_ () extends StObject {
       
       // alerts
       var _alerts: chatStorage = js.native
@@ -52,7 +52,7 @@ object chatMod {
       /** mouse event handler */
       def chooser(event: MouseEvent): Unit = js.native
       
-      def genPostData(channel: ChatChannels, storageHash: chatStorage, getOlderMsgs: Boolean): js.Any = js.native
+      def genPostData(channel: ChatChannels, storageHash: chatStorage, getOlderMsgs: Boolean): Any = js.native
       
       /** @return name of active tab */
       def getActive(): String = js.native
@@ -60,11 +60,11 @@ object chatMod {
       /** Override portal names that are used over and over, such as 'US Post Office' */
       def getChatPortalName(markup: MarkUpPortalType): String = js.native
       
-      def handleAlerts(data: js.Any, olderMsgs: Boolean): Unit = js.native
+      def handleAlerts(data: Any, olderMsgs: Boolean): Unit = js.native
       
-      def handleFaction(data: js.Any, olderMsgs: Boolean): Unit = js.native
+      def handleFaction(data: Any, olderMsgs: Boolean): Unit = js.native
       
-      def handlePublic(data: js.Any, olderMsgs: Boolean): Unit = js.native
+      def handlePublic(data: Any, olderMsgs: Boolean): Unit = js.native
       
       def handleTabCompletion(): Unit = js.native
       
@@ -85,46 +85,22 @@ object chatMod {
       
       def renderAlerts(oldMsgsWereAdded: Boolean): Unit = js.native
       
-      @JSName("renderData")
-      def renderData_chatalerts(data: js.Any, element: chatalerts, likelyWereOldMsgs: Boolean): Unit = js.native
-      @JSName("renderData")
-      def renderData_chatall(data: js.Any, element: chatall, likelyWereOldMsgs: Boolean): Unit = js.native
       /**
         * renders data from the data-hash to the element defined by the given
         * ID. Set 3rd argument to true if it is likely that old data has been
         * added. Latter is only required for scrolling.
         */
-      @JSName("renderData")
-      def renderData_chatfaction(data: js.Any, element: chatfaction, likelyWereOldMsgs: Boolean): Unit = js.native
+      def renderData(data: Any, element: chatfaction | chatall | chatalerts, likelyWereOldMsgs: Boolean): Unit = js.native
       
       def renderDivider(text: String): String = js.native
       
       def renderFaction(oldMsgsWereAdded: Boolean): Unit = js.native
       
-      @JSName("renderMsg")
-      def renderMsg_0(
+      def renderMsg(
         msg: String,
         nick: String,
         time: Double,
-        team: `0`,
-        msgToPlayer: Boolean,
-        systemNarrowcast: Boolean
-      ): String = js.native
-      @JSName("renderMsg")
-      def renderMsg_1(
-        msg: String,
-        nick: String,
-        time: Double,
-        team: `1`,
-        msgToPlayer: Boolean,
-        systemNarrowcast: Boolean
-      ): String = js.native
-      @JSName("renderMsg")
-      def renderMsg_2(
-        msg: String,
-        nick: String,
-        time: Double,
-        team: `2`,
+        team: `0` | `1` | `2`,
         msgToPlayer: Boolean,
         systemNarrowcast: Boolean
       ): String = js.native
@@ -157,7 +133,7 @@ object chatMod {
       def toggle(): Unit = js.native
       
       /** store incoming data */
-      def writeDataToHash(newData: js.Any, storageHash: chatStorage, isPublicChannel: Boolean, isOlderMsgs: Boolean): Unit = js.native
+      def writeDataToHash(newData: Any, storageHash: chatStorage, isPublicChannel: Boolean, isOlderMsgs: Boolean): Unit = js.native
     }
     
     @JSGlobal("chat")

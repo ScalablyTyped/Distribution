@@ -1,7 +1,6 @@
 package typings.rxjs
 
 import typings.rxjs.internalTypesMod.PartialObserver
-import typings.rxjs.rxjsStrings.DollarLeftcurlybracketAjaxDirectionRightcurlybracket_DollarLeftcurlybracketProgressEventTypeRightcurlybracket
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.Record
@@ -375,7 +374,7 @@ object typesMod {
     }
   }
   
-  type AjaxResponseType = DollarLeftcurlybracketAjaxDirectionRightcurlybracket_DollarLeftcurlybracketProgressEventTypeRightcurlybracket
+  type AjaxResponseType = /* template literal string: ${AjaxDirection}_${ProgressEventType} */ String
   
   /* Rewritten from type alias, can be one of: 
     - typings.rxjs.rxjsStrings.loadstart

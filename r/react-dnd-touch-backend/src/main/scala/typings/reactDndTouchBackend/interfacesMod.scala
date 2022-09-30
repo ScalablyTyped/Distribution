@@ -8,7 +8,9 @@ import typings.reactDndTouchBackend.reactDndTouchBackendStrings.mouseup
 import typings.reactDndTouchBackend.reactDndTouchBackendStrings.touchend
 import typings.reactDndTouchBackend.reactDndTouchBackendStrings.touchmove
 import typings.reactDndTouchBackend.reactDndTouchBackendStrings.touchstart
+import typings.std.Document
 import typings.std.HTMLElement
+import typings.std.Node
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +20,7 @@ object interfacesMod {
   
   @js.native
   sealed trait ListenerType extends StObject
-  @JSImport("react-dnd-touch-backend/lib/interfaces", "ListenerType")
+  @JSImport("react-dnd-touch-backend/dist/interfaces", "ListenerType")
   @js.native
   object ListenerType extends StObject {
     
@@ -110,6 +112,8 @@ object interfacesMod {
   
   trait TouchBackendContext extends StObject {
     
+    var document: js.UndefOr[Document] = js.undefined
+    
     var window: js.UndefOr[Window] = js.undefined
   }
   object TouchBackendContext {
@@ -121,6 +125,10 @@ object interfacesMod {
     
     extension [Self <: TouchBackendContext](x: Self) {
       
+      inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      
+      inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+      
       inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
       inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
@@ -129,19 +137,19 @@ object interfacesMod {
   
   trait TouchBackendOptions extends StObject {
     
-    var delay: js.UndefOr[Double] = js.undefined
+    var delay: Double
     
-    var delayMouseStart: js.UndefOr[Double] = js.undefined
+    var delayMouseStart: Double
     
-    var delayTouchStart: js.UndefOr[Double] = js.undefined
+    var delayTouchStart: Double
     
-    var enableHoverOutsideTarget: js.UndefOr[Boolean] = js.undefined
+    var enableHoverOutsideTarget: Boolean
     
-    var enableKeyboardEvents: js.UndefOr[Boolean] = js.undefined
+    var enableKeyboardEvents: Boolean
     
-    var enableMouseEvents: js.UndefOr[Boolean] = js.undefined
+    var enableMouseEvents: Boolean
     
-    var enableTouchEvents: js.UndefOr[Boolean] = js.undefined
+    var enableTouchEvents: Boolean
     
     var getDropTargetElementsAtPoint: js.UndefOr[
         js.Function3[
@@ -152,16 +160,28 @@ object interfacesMod {
         ]
       ] = js.undefined
     
-    var ignoreContextMenu: js.UndefOr[Boolean] = js.undefined
+    var ignoreContextMenu: Boolean
+    
+    var rootElement: js.UndefOr[Node] = js.undefined
     
     var scrollAngleRanges: js.UndefOr[js.Array[AngleRange]] = js.undefined
     
-    var touchSlop: js.UndefOr[Double] = js.undefined
+    var touchSlop: Double
   }
   object TouchBackendOptions {
     
-    inline def apply(): TouchBackendOptions = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(
+      delay: Double,
+      delayMouseStart: Double,
+      delayTouchStart: Double,
+      enableHoverOutsideTarget: Boolean,
+      enableKeyboardEvents: Boolean,
+      enableMouseEvents: Boolean,
+      enableTouchEvents: Boolean,
+      ignoreContextMenu: Boolean,
+      touchSlop: Double
+    ): TouchBackendOptions = {
+      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], delayMouseStart = delayMouseStart.asInstanceOf[js.Any], delayTouchStart = delayTouchStart.asInstanceOf[js.Any], enableHoverOutsideTarget = enableHoverOutsideTarget.asInstanceOf[js.Any], enableKeyboardEvents = enableKeyboardEvents.asInstanceOf[js.Any], enableMouseEvents = enableMouseEvents.asInstanceOf[js.Any], enableTouchEvents = enableTouchEvents.asInstanceOf[js.Any], ignoreContextMenu = ignoreContextMenu.asInstanceOf[js.Any], touchSlop = touchSlop.asInstanceOf[js.Any])
       __obj.asInstanceOf[TouchBackendOptions]
     }
     
@@ -171,29 +191,15 @@ object interfacesMod {
       
       inline def setDelayMouseStart(value: Double): Self = StObject.set(x, "delayMouseStart", value.asInstanceOf[js.Any])
       
-      inline def setDelayMouseStartUndefined: Self = StObject.set(x, "delayMouseStart", js.undefined)
-      
       inline def setDelayTouchStart(value: Double): Self = StObject.set(x, "delayTouchStart", value.asInstanceOf[js.Any])
-      
-      inline def setDelayTouchStartUndefined: Self = StObject.set(x, "delayTouchStart", js.undefined)
-      
-      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
       inline def setEnableHoverOutsideTarget(value: Boolean): Self = StObject.set(x, "enableHoverOutsideTarget", value.asInstanceOf[js.Any])
       
-      inline def setEnableHoverOutsideTargetUndefined: Self = StObject.set(x, "enableHoverOutsideTarget", js.undefined)
-      
       inline def setEnableKeyboardEvents(value: Boolean): Self = StObject.set(x, "enableKeyboardEvents", value.asInstanceOf[js.Any])
-      
-      inline def setEnableKeyboardEventsUndefined: Self = StObject.set(x, "enableKeyboardEvents", js.undefined)
       
       inline def setEnableMouseEvents(value: Boolean): Self = StObject.set(x, "enableMouseEvents", value.asInstanceOf[js.Any])
       
-      inline def setEnableMouseEventsUndefined: Self = StObject.set(x, "enableMouseEvents", js.undefined)
-      
       inline def setEnableTouchEvents(value: Boolean): Self = StObject.set(x, "enableTouchEvents", value.asInstanceOf[js.Any])
-      
-      inline def setEnableTouchEventsUndefined: Self = StObject.set(x, "enableTouchEvents", js.undefined)
       
       inline def setGetDropTargetElementsAtPoint(
         value: (/* x */ Double, /* y */ Double, /* dropTargets */ js.Array[HTMLElement]) => js.Array[HTMLElement]
@@ -203,17 +209,17 @@ object interfacesMod {
       
       inline def setIgnoreContextMenu(value: Boolean): Self = StObject.set(x, "ignoreContextMenu", value.asInstanceOf[js.Any])
       
-      inline def setIgnoreContextMenuUndefined: Self = StObject.set(x, "ignoreContextMenu", js.undefined)
+      inline def setRootElement(value: Node): Self = StObject.set(x, "rootElement", value.asInstanceOf[js.Any])
+      
+      inline def setRootElementUndefined: Self = StObject.set(x, "rootElement", js.undefined)
       
       inline def setScrollAngleRanges(value: js.Array[AngleRange]): Self = StObject.set(x, "scrollAngleRanges", value.asInstanceOf[js.Any])
       
       inline def setScrollAngleRangesUndefined: Self = StObject.set(x, "scrollAngleRanges", js.undefined)
       
-      inline def setScrollAngleRangesVarargs(value: AngleRange*): Self = StObject.set(x, "scrollAngleRanges", js.Array(value :_*))
+      inline def setScrollAngleRangesVarargs(value: AngleRange*): Self = StObject.set(x, "scrollAngleRanges", js.Array(value*))
       
       inline def setTouchSlop(value: Double): Self = StObject.set(x, "touchSlop", value.asInstanceOf[js.Any])
-      
-      inline def setTouchSlopUndefined: Self = StObject.set(x, "touchSlop", js.undefined)
     }
   }
 }

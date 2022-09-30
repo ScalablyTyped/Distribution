@@ -52,11 +52,11 @@ import typings.layuiSrc.anon.SetValue
 import typings.layuiSrc.anon.Type
 import typings.layuiSrc.anon.V
 import typings.layuiSrc.layuiSrcBooleans.`true`
-import typings.layuiSrc.layuiSrcNumbers.`0`
-import typings.layuiSrc.layuiSrcNumbers.`1`
-import typings.layuiSrc.layuiSrcNumbers.`2`
-import typings.layuiSrc.layuiSrcNumbers.`3`
-import typings.layuiSrc.layuiSrcNumbers.`4`
+import typings.layuiSrc.layuiSrcInts.`0`
+import typings.layuiSrc.layuiSrcInts.`1`
+import typings.layuiSrc.layuiSrcInts.`2`
+import typings.layuiSrc.layuiSrcInts.`3`
+import typings.layuiSrc.layuiSrcInts.`4`
 import typings.layuiSrc.layuiSrcStrings.`object`
 import typings.layuiSrc.layuiSrcStrings.`var`
 import typings.layuiSrc.layuiSrcStrings.a

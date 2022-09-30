@@ -127,6 +127,10 @@ object sceneComponentMod {
     @js.native
     val STEP_AFTERCAMERADRAW_PREPASS: Double = js.native
     
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERCAMERAPOSTPROCESS_LAYER")
+    @js.native
+    val STEP_AFTERCAMERAPOSTPROCESS_LAYER: Double = js.native
+    
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERRENDERINGGROUPDRAW_BOUNDINGBOXRENDERER")
     @js.native
     val STEP_AFTERRENDERINGGROUPDRAW_BOUNDINGBOXRENDERER: Double = js.native
@@ -150,6 +154,10 @@ object sceneComponentMod {
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERRENDERTARGETDRAW_PREPASS")
     @js.native
     val STEP_AFTERRENDERTARGETDRAW_PREPASS: Double = js.native
+    
+    @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERRENDERTARGETPOSTPROCESS_LAYER")
+    @js.native
+    val STEP_AFTERRENDERTARGETPOSTPROCESS_LAYER: Double = js.native
     
     @JSImport("babylonjs/sceneComponent", "SceneComponentConstants.STEP_AFTERRENDER_AUDIO")
     @js.native

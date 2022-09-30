@@ -1,7 +1,7 @@
 
 # Scala.js typings for quadstore
 
-Typings are for version 11.0.3
+Typings are for version 11.0.6
 
 ## Library description:
 A LevelDB-backed graph database for Node.js and the browser. Supports quads, RDF/JS interfaces and SPARQL queries.

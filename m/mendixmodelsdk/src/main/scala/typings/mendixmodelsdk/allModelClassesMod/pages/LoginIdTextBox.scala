@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 7.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LoginIdTextBox")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LoginIdTextBox")
 @js.native
-class LoginIdTextBox protected ()
+open class LoginIdTextBox protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.LoginIdTextBox {
   def this(
     model: AbstractModel,
@@ -34,7 +34,7 @@ class LoginIdTextBox protected ()
 }
 object LoginIdTextBox {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LoginIdTextBox")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LoginIdTextBox")
   @js.native
   val ^ : js.Any = js.native
   
@@ -586,13 +586,13 @@ object LoginIdTextBox {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.LoginIdTextBox]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LoginIdTextBox.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LoginIdTextBox.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LoginIdTextBox.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LoginIdTextBox.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

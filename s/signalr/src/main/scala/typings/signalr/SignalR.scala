@@ -10,10 +10,10 @@ import typings.signalr.SignalR.Hub.HubCreator
 import typings.signalr.SignalR.Hub.Options
 import typings.signalr.SignalR.Transports
 import typings.signalr.anon.Name
-import typings.signalr.signalrNumbers.`0`
-import typings.signalr.signalrNumbers.`1`
-import typings.signalr.signalrNumbers.`2`
-import typings.signalr.signalrNumbers.`4`
+import typings.signalr.signalrInts.`0`
+import typings.signalr.signalrInts.`1`
+import typings.signalr.signalrInts.`2`
+import typings.signalr.signalrInts.`4`
 import typings.std.Error
 import typings.std.JSON
 import typings.std.Location
@@ -438,10 +438,10 @@ object SignalR {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.signalr.signalrNumbers.`0`
-    - typings.signalr.signalrNumbers.`1`
-    - typings.signalr.signalrNumbers.`2`
-    - typings.signalr.signalrNumbers.`4`
+    - typings.signalr.signalrInts.`0`
+    - typings.signalr.signalrInts.`1`
+    - typings.signalr.signalrInts.`2`
+    - typings.signalr.signalrInts.`4`
   */
   trait ConnectionState extends StObject
   object ConnectionState {

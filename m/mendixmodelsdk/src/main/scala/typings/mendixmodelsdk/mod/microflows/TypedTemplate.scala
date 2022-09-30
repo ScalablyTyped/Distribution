@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.TypedTemplate")
 @js.native
-class TypedTemplate protected ()
+open class TypedTemplate protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.TypedTemplate {
   def this(
     model: AbstractModel,

@@ -12,7 +12,7 @@ trait TypeofPaymentMethodOptionAcssDebit extends StObject {
   
   val Boleto: Any
   
-  val Card: TypeofCardInstallments
+  val Card: Any
   
   val CustomerBalance: TypeofCustomerBalanceBankTransfer
   
@@ -28,7 +28,7 @@ object TypeofPaymentMethodOptionAcssDebit {
     AcssDebit: TypeofAcssDebit,
     BacsDebit: Any,
     Boleto: Any,
-    Card: TypeofCardInstallments,
+    Card: Any,
     CustomerBalance: TypeofCustomerBalanceBankTransfer,
     SepaDebit: Any,
     UsBankAccount: TypeofUsBankAccount,
@@ -46,7 +46,7 @@ object TypeofPaymentMethodOptionAcssDebit {
     
     inline def setBoleto(value: Any): Self = StObject.set(x, "Boleto", value.asInstanceOf[js.Any])
     
-    inline def setCard(value: TypeofCardInstallments): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Any): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     
     inline def setCustomerBalance(value: TypeofCustomerBalanceBankTransfer): Self = StObject.set(x, "CustomerBalance", value.asInstanceOf[js.Any])
     

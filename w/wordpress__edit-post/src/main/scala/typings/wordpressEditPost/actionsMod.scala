@@ -38,9 +38,7 @@ object actionsMod {
   inline def showBlockTypes(blockNames: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBlockTypes")(blockNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def showBlockTypes(blockNames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBlockTypes")(blockNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def switchEditorMode_text(mode: text): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchEditorMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def switchEditorMode_visual(mode: visual): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchEditorMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def switchEditorMode(mode: text | visual): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchEditorMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def toggleEditorPanelEnabled(panelName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleEditorPanelEnabled")(panelName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

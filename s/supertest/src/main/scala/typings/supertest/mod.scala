@@ -56,7 +56,9 @@ object mod {
   }
   
   @js.native
-  trait Test extends SuperAgentRequest {
+  trait Test
+    extends StObject
+       with SuperAgentRequest {
     
     var app: js.UndefOr[Any] = js.native
     

@@ -10,15 +10,12 @@ redux higher order reducer + action creator to reduce actions under a single sub
 | ------------------ | :-------------: |
 | Full name          | redux-batched-actions |
 | Keywords           | redux, react, reactjs, batched, action |
-| # releases         | 2 |
-| # dependents       | 50 |
-| # downloads        | 1855704 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 200984.33333333334 |
+| # stars            | 1043.0 |
 
 ## Links
-- [Homepage](https://github.com/tshelburne/redux-batched-actions)
-- [Bugs](https://github.com/tshelburne/redux-batched-actions/issues)
-- [Repository](https://github.com/tshelburne/redux-batched-actions)
 - [Npm](https://www.npmjs.com/package/redux-batched-actions)
     
 

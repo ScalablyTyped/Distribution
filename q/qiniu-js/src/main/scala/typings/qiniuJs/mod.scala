@@ -8,7 +8,7 @@ import typings.qiniuJs.baseMod.Config
 import typings.qiniuJs.baseMod.UploadInfo
 import typings.qiniuJs.baseMod.UploadProgress
 import typings.qiniuJs.errorsMod.QiniuErrorName
-import typings.qiniuJs.helperMod.Response
+import typings.qiniuJs.helperMod.ResponseSuccess
 import typings.qiniuJs.imageMod.ImageMogr2_
 import typings.qiniuJs.imageMod.ImageWatermark
 import typings.qiniuJs.imageMod.Pipeline_
@@ -88,11 +88,11 @@ object mod {
     def this(code: Double, reqId: String, message: String, data: Any) = this()
   }
   
-  inline def deleteUploadedChunks(token: String, key: String, uploadinfo: UploadInfo): Response[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[Response[Unit]]
-  inline def deleteUploadedChunks(token: String, key: Null, uploadinfo: UploadInfo): Response[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[Response[Unit]]
-  inline def deleteUploadedChunks(token: String, key: Unit, uploadinfo: UploadInfo): Response[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[Response[Unit]]
+  inline def deleteUploadedChunks(token: String, key: String, uploadinfo: UploadInfo): js.Promise[ResponseSuccess[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Unit]]]
+  inline def deleteUploadedChunks(token: String, key: Null, uploadinfo: UploadInfo): js.Promise[ResponseSuccess[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Unit]]]
+  inline def deleteUploadedChunks(token: String, key: Unit, uploadinfo: UploadInfo): js.Promise[ResponseSuccess[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteUploadedChunks")(token.asInstanceOf[js.Any], key.asInstanceOf[js.Any], uploadinfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Unit]]]
   
-  inline def exif(key: String, domain: String): Response[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("exif")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Response[Any]]
+  inline def exif(key: String, domain: String): js.Promise[ResponseSuccess[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("exif")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Any]]]
   
   inline def getHeadersForChunkUpload(token: String): Authorization = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeadersForChunkUpload")(token.asInstanceOf[js.Any]).asInstanceOf[Authorization]
   
@@ -100,7 +100,7 @@ object mod {
   
   inline def getUploadUrl(_config: UploadUrlConfig, token: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUploadUrl")(_config.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def imageInfo(key: String, domain: String): Response[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("imageInfo")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Response[Any]]
+  inline def imageInfo(key: String, domain: String): js.Promise[ResponseSuccess[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("imageInfo")(key.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseSuccess[Any]]]
   
   inline def imageMogr2(op: ImageMogr2_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("imageMogr2")(op.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def imageMogr2(op: ImageMogr2_, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("imageMogr2")(op.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]

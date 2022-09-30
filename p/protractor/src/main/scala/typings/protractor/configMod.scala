@@ -19,7 +19,7 @@ object configMod {
   
   trait Config
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Enable/disable the WebDriver Control Flow.
@@ -166,7 +166,7 @@ object configMod {
       */
     var disableEnvironmentOverrides: js.UndefOr[Boolean] = js.undefined
     
-    var elementExplorer: js.UndefOr[js.Any] = js.undefined
+    var elementExplorer: js.UndefOr[Any] = js.undefined
     
     /**
       * Patterns to exclude specs.
@@ -217,7 +217,7 @@ object configMod {
       * `beforeLaunch` is run, and before any driver is set up. If this is
       * specified, both capabilities and multiCapabilities will be ignored.
       */
-    var getMultiCapabilities: js.UndefOr[js.Any] = js.undefined
+    var getMultiCapabilities: js.UndefOr[Any] = js.undefined
     
     /**
       * How long to wait for a page to load.
@@ -302,7 +302,7 @@ object configMod {
       * tests, use multiCapabilities, which takes an array of capabilities.
       * If this is specified, capabilities will be ignored.
       */
-    var multiCapabilities: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var multiCapabilities: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Tells Protractor to interpret any angular apps it comes across as hybrid
@@ -388,7 +388,7 @@ object configMod {
       *   }
       * }
       */
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     /**
       * See docs/plugins.md
@@ -407,7 +407,7 @@ object configMod {
       * If set, protractor will save the test output in json format at this path.
       * The path is relative to the location of this config.
       */
-    var resultJsonOutputFile: js.UndefOr[js.Any] = js.undefined
+    var resultJsonOutputFile: js.UndefOr[Any] = js.undefined
     
     /**
       * A CSS Selector for a DOM element within your Angular application.
@@ -433,7 +433,7 @@ object configMod {
       * to generate the agent or use sauceProxy as an alternative. If a
       * sauceProxy is provided, the sauceAgent will be overridden.
       */
-    var sauceAgent: js.UndefOr[js.Any] = js.undefined
+    var sauceAgent: js.UndefOr[Any] = js.undefined
     
     /**
       * Use sauceBuild if you want to group test capabilites by a build ID
@@ -490,7 +490,7 @@ object configMod {
       */
     var seleniumAddress: js.UndefOr[String] = js.undefined
     
-    var seleniumArgs: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var seleniumArgs: js.UndefOr[js.Array[Any]] = js.undefined
     
     var seleniumPort: js.UndefOr[Double] = js.undefined
     
@@ -552,7 +552,7 @@ object configMod {
       *   full: 'spec/ *.js'
       * }
       */
-    var suites: js.UndefOr[js.Any] = js.undefined
+    var suites: js.UndefOr[Any] = js.undefined
     
     /**
       * If testobjectUser and testobjectKey are specified, kobitonUser, kobitonKey, browserStackUser,
@@ -589,7 +589,7 @@ object configMod {
       */
     var useBlockingProxy: js.UndefOr[Boolean] = js.undefined
     
-    var v8Debug: js.UndefOr[js.Any] = js.undefined
+    var v8Debug: js.UndefOr[Any] = js.undefined
     
     /**
       * Whether or not to buffer output when running tests on multiple browsers
@@ -688,7 +688,7 @@ object configMod {
       
       inline def setDisableEnvironmentOverridesUndefined: Self = StObject.set(x, "disableEnvironmentOverrides", js.undefined)
       
-      inline def setElementExplorer(value: js.Any): Self = StObject.set(x, "elementExplorer", value.asInstanceOf[js.Any])
+      inline def setElementExplorer(value: Any): Self = StObject.set(x, "elementExplorer", value.asInstanceOf[js.Any])
       
       inline def setElementExplorerUndefined: Self = StObject.set(x, "elementExplorer", js.undefined)
       
@@ -696,7 +696,7 @@ object configMod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFirefoxPath(value: String): Self = StObject.set(x, "firefoxPath", value.asInstanceOf[js.Any])
       
@@ -714,7 +714,7 @@ object configMod {
       
       inline def setGeckoDriverUndefined: Self = StObject.set(x, "geckoDriver", js.undefined)
       
-      inline def setGetMultiCapabilities(value: js.Any): Self = StObject.set(x, "getMultiCapabilities", value.asInstanceOf[js.Any])
+      inline def setGetMultiCapabilities(value: Any): Self = StObject.set(x, "getMultiCapabilities", value.asInstanceOf[js.Any])
       
       inline def setGetMultiCapabilitiesUndefined: Self = StObject.set(x, "getMultiCapabilities", js.undefined)
       
@@ -738,7 +738,7 @@ object configMod {
       
       inline def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
       
-      inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
+      inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value*))
       
       inline def setKobitonKey(value: String): Self = StObject.set(x, "kobitonKey", value.asInstanceOf[js.Any])
       
@@ -768,11 +768,11 @@ object configMod {
       
       inline def setMockSeleniumUndefined: Self = StObject.set(x, "mockSelenium", js.undefined)
       
-      inline def setMultiCapabilities(value: js.Array[js.Any]): Self = StObject.set(x, "multiCapabilities", value.asInstanceOf[js.Any])
+      inline def setMultiCapabilities(value: js.Array[Any]): Self = StObject.set(x, "multiCapabilities", value.asInstanceOf[js.Any])
       
       inline def setMultiCapabilitiesUndefined: Self = StObject.set(x, "multiCapabilities", js.undefined)
       
-      inline def setMultiCapabilitiesVarargs(value: js.Any*): Self = StObject.set(x, "multiCapabilities", js.Array(value :_*))
+      inline def setMultiCapabilitiesVarargs(value: Any*): Self = StObject.set(x, "multiCapabilities", js.Array(value*))
       
       inline def setNg12Hybrid(value: Boolean): Self = StObject.set(x, "ng12Hybrid", value.asInstanceOf[js.Any])
       
@@ -798,7 +798,7 @@ object configMod {
       
       inline def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -806,13 +806,13 @@ object configMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: PluginConfig*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginConfig*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRestartBrowserBetweenTests(value: Boolean): Self = StObject.set(x, "restartBrowserBetweenTests", value.asInstanceOf[js.Any])
       
       inline def setRestartBrowserBetweenTestsUndefined: Self = StObject.set(x, "restartBrowserBetweenTests", js.undefined)
       
-      inline def setResultJsonOutputFile(value: js.Any): Self = StObject.set(x, "resultJsonOutputFile", value.asInstanceOf[js.Any])
+      inline def setResultJsonOutputFile(value: Any): Self = StObject.set(x, "resultJsonOutputFile", value.asInstanceOf[js.Any])
       
       inline def setResultJsonOutputFileUndefined: Self = StObject.set(x, "resultJsonOutputFile", js.undefined)
       
@@ -824,7 +824,7 @@ object configMod {
       
       inline def setSELENIUM_PROMISE_MANAGERUndefined: Self = StObject.set(x, "SELENIUM_PROMISE_MANAGER", js.undefined)
       
-      inline def setSauceAgent(value: js.Any): Self = StObject.set(x, "sauceAgent", value.asInstanceOf[js.Any])
+      inline def setSauceAgent(value: Any): Self = StObject.set(x, "sauceAgent", value.asInstanceOf[js.Any])
       
       inline def setSauceAgentUndefined: Self = StObject.set(x, "sauceAgent", js.undefined)
       
@@ -860,11 +860,11 @@ object configMod {
       
       inline def setSeleniumAddressUndefined: Self = StObject.set(x, "seleniumAddress", js.undefined)
       
-      inline def setSeleniumArgs(value: js.Array[js.Any]): Self = StObject.set(x, "seleniumArgs", value.asInstanceOf[js.Any])
+      inline def setSeleniumArgs(value: js.Array[Any]): Self = StObject.set(x, "seleniumArgs", value.asInstanceOf[js.Any])
       
       inline def setSeleniumArgsUndefined: Self = StObject.set(x, "seleniumArgs", js.undefined)
       
-      inline def setSeleniumArgsVarargs(value: js.Any*): Self = StObject.set(x, "seleniumArgs", js.Array(value :_*))
+      inline def setSeleniumArgsVarargs(value: Any*): Self = StObject.set(x, "seleniumArgs", js.Array(value*))
       
       inline def setSeleniumPort(value: Double): Self = StObject.set(x, "seleniumPort", value.asInstanceOf[js.Any])
       
@@ -894,13 +894,13 @@ object configMod {
       
       inline def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
       
-      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
+      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value*))
       
       inline def setSuite(value: String): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
       
       inline def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
       
-      inline def setSuites(value: js.Any): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
+      inline def setSuites(value: Any): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
       
       inline def setSuitesUndefined: Self = StObject.set(x, "suites", js.undefined)
       
@@ -920,7 +920,7 @@ object configMod {
       
       inline def setUnknownFlags_Undefined: Self = StObject.set(x, "unknownFlags_", js.undefined)
       
-      inline def setUnknownFlags_Varargs(value: String*): Self = StObject.set(x, "unknownFlags_", js.Array(value :_*))
+      inline def setUnknownFlags_Varargs(value: String*): Self = StObject.set(x, "unknownFlags_", js.Array(value*))
       
       inline def setUntrackOutstandingTimeouts(value: Boolean): Self = StObject.set(x, "untrackOutstandingTimeouts", value.asInstanceOf[js.Any])
       
@@ -930,7 +930,7 @@ object configMod {
       
       inline def setUseBlockingProxyUndefined: Self = StObject.set(x, "useBlockingProxy", js.undefined)
       
-      inline def setV8Debug(value: js.Any): Self = StObject.set(x, "v8Debug", value.asInstanceOf[js.Any])
+      inline def setV8Debug(value: Any): Self = StObject.set(x, "v8Debug", value.asInstanceOf[js.Any])
       
       inline def setV8DebugUndefined: Self = StObject.set(x, "v8Debug", js.undefined)
       

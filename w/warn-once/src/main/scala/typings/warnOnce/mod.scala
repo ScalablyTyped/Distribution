@@ -10,6 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(condition: Boolean, message: Any, optionalParams: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((List(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def default(condition: Boolean, message: Unit, optionalParams: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((List(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def default(condition: Boolean, message: Any, optionalParams: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def default(condition: Boolean, message: Unit, optionalParams: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 }

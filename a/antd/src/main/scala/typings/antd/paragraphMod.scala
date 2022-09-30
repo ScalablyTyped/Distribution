@@ -1,18 +1,17 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object paragraphMod {
+object paragraphMod extends Shortcut {
   
-  @JSImport("antd/lib/skeleton/Paragraph", JSImport.Namespace)
+  @JSImport("antd/lib/skeleton/Paragraph", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: SkeletonParagraphProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  val default: FC[SkeletonParagraphProps] = js.native
   
   trait SkeletonParagraphProps extends StObject {
     
@@ -58,6 +57,11 @@ object paragraphMod {
       inline def setWidthVarargs(value: widthUnit*): Self = StObject.set(x, "width", js.Array(value*))
     }
   }
+  
+  type _To = FC[SkeletonParagraphProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `paragraphMod.foo` */
+  override def _to: FC[SkeletonParagraphProps] = default
   
   type widthUnit = Double | String
 }

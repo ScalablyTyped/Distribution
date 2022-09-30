@@ -2,6 +2,7 @@ package typings.wordpressComponents
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
+import typings.react.mod.ReactNode
 import typings.wordpressComponents.noticeMod.Notice.Action
 import typings.wordpressComponents.snackbarMod.Snackbar.Props
 import org.scalablytyped.runtime.StObject
@@ -31,6 +32,8 @@ object snackbarMod {
         */
       var actions: js.UndefOr[js.Array[Action]] = js.undefined
       
+      var children: js.UndefOr[ReactNode] = js.undefined
+      
       var className: js.UndefOr[String] = js.undefined
       
       /**
@@ -51,7 +54,11 @@ object snackbarMod {
         
         inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
         
-        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+        inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
+        
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

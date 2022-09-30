@@ -11,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pack(format: String, data: DataType*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(List(format.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Buffer]
+  inline def pack(format: String, data: DataType*): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(scala.List(format.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Buffer]
   inline def pack(format: String, data: js.Array[DataType]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(format.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def sizeOf(format: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeOf")(format.asInstanceOf[js.Any]).asInstanceOf[Double]

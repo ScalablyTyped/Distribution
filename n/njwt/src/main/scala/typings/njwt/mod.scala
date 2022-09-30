@@ -164,9 +164,9 @@ object mod {
   
   inline def base64urlUnescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64urlUnescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def create(claimsOrSecret: String, args: Any*): Jwt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(claimsOrSecret.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Jwt]
-  inline def create(claimsOrSecret: JSONMap, args: Any*): Jwt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(claimsOrSecret.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Jwt]
-  inline def create(claimsOrSecret: Buffer, args: Any*): Jwt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(claimsOrSecret.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Jwt]
+  inline def create(claimsOrSecret: String, args: Any*): Jwt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scala.List(claimsOrSecret.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Jwt]
+  inline def create(claimsOrSecret: JSONMap, args: Any*): Jwt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scala.List(claimsOrSecret.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Jwt]
+  inline def create(claimsOrSecret: Buffer, args: Any*): Jwt = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scala.List(claimsOrSecret.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Jwt]
   
   inline def createVerifier(): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerifier")().asInstanceOf[Verifier]
   

@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/generate-document relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.GenerateDocumentAction")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.GenerateDocumentAction")
 @js.native
-class GenerateDocumentAction protected () extends MicroflowAction {
+open class GenerateDocumentAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -57,6 +57,7 @@ class GenerateDocumentAction protected () extends MicroflowAction {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def marginBottomInInchModel: Expression = js.native
@@ -74,6 +75,7 @@ class GenerateDocumentAction protected () extends MicroflowAction {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def marginLeftInInchModel: Expression = js.native
@@ -91,6 +93,7 @@ class GenerateDocumentAction protected () extends MicroflowAction {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def marginRightInInchModel: Expression = js.native
@@ -108,6 +111,7 @@ class GenerateDocumentAction protected () extends MicroflowAction {
     *
     * @ignore
     *
+    * In version 9.8.0: deleted
     * In version 7.9.0: introduced
     */
   def marginTopInInchModel: Expression = js.native
@@ -131,7 +135,7 @@ class GenerateDocumentAction protected () extends MicroflowAction {
 }
 object GenerateDocumentAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.GenerateDocumentAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.GenerateDocumentAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -152,13 +156,13 @@ object GenerateDocumentAction {
   inline def createIn(container: ActionActivity): GenerateDocumentAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GenerateDocumentAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.GenerateDocumentAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.GenerateDocumentAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.GenerateDocumentAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.GenerateDocumentAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -5,7 +5,7 @@ import typings.ckeditor4.anon.Attributes
 import typings.ckeditor4.anon.EndNode
 import typings.ckeditor4.anon.RemoveListener
 import typings.ckeditor4.ckeditor4Booleans.`false`
-import typings.ckeditor4.ckeditor4Numbers.`1`
+import typings.ckeditor4.ckeditor4Ints.`1`
 import typings.ckeditor4.ckeditor4Strings.ltr
 import typings.ckeditor4.ckeditor4Strings.rtl
 import typings.std.CSSStyleSheet

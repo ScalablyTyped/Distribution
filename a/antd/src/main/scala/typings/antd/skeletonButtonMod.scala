@@ -1,33 +1,22 @@
 package typings.antd
 
-import typings.antd.anon.SizeString
+import org.scalablytyped.runtime.Shortcut
 import typings.antd.antdStrings.circle
-import typings.antd.antdStrings.default
 import typings.antd.antdStrings.large
 import typings.antd.antdStrings.round
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.square
 import typings.react.mod.CSSProperties
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object skeletonButtonMod {
+object skeletonButtonMod extends Shortcut {
   
-  object default {
-    
-    inline def apply(props: SkeletonButtonProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("antd/lib/skeleton/Button", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd/lib/skeleton/Button", "default.defaultProps")
-    @js.native
-    def defaultProps: SizeString = js.native
-    inline def defaultProps_=(x: SizeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("antd/lib/skeleton/Button", JSImport.Default)
+  @js.native
+  val default: FC[SkeletonButtonProps] = js.native
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Element.SkeletonElementProps, 'size'> */
   trait SkeletonButtonProps extends StObject {
@@ -40,9 +29,9 @@ object skeletonButtonMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square | round | default] = js.undefined
+    var shape: js.UndefOr[circle | square | round | typings.antd.antdStrings.default] = js.undefined
     
-    var size: js.UndefOr[large | small | default] = js.undefined
+    var size: js.UndefOr[large | small | typings.antd.antdStrings.default] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -71,11 +60,11 @@ object skeletonButtonMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setShape(value: circle | square | round | default): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: circle | square | round | typings.antd.antdStrings.default): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setSize(value: large | small | default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small | typings.antd.antdStrings.default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -84,4 +73,9 @@ object skeletonButtonMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
+  
+  type _To = FC[SkeletonButtonProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `skeletonButtonMod.foo` */
+  override def _to: FC[SkeletonButtonProps] = default
 }

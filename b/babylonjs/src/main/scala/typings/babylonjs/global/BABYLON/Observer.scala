@@ -40,7 +40,7 @@ open class Observer[T] protected ()
   scope: Any
   ) = this()
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   var _willBeUnregistered: Boolean = js.native
   

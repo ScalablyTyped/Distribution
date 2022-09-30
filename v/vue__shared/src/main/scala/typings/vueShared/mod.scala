@@ -2,22 +2,22 @@ package typings.vueShared
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
-import typings.vueShared.vueSharedNumbers.`-1`
-import typings.vueShared.vueSharedNumbers.`-2`
-import typings.vueShared.vueSharedNumbers.`1024`
-import typings.vueShared.vueSharedNumbers.`128`
-import typings.vueShared.vueSharedNumbers.`16`
-import typings.vueShared.vueSharedNumbers.`1`
-import typings.vueShared.vueSharedNumbers.`2048`
-import typings.vueShared.vueSharedNumbers.`256`
-import typings.vueShared.vueSharedNumbers.`2`
-import typings.vueShared.vueSharedNumbers.`32`
-import typings.vueShared.vueSharedNumbers.`3`
-import typings.vueShared.vueSharedNumbers.`4`
-import typings.vueShared.vueSharedNumbers.`512`
-import typings.vueShared.vueSharedNumbers.`64`
-import typings.vueShared.vueSharedNumbers.`6`
-import typings.vueShared.vueSharedNumbers.`8`
+import typings.vueShared.vueSharedInts.`-1`
+import typings.vueShared.vueSharedInts.`-2`
+import typings.vueShared.vueSharedInts.`1024`
+import typings.vueShared.vueSharedInts.`128`
+import typings.vueShared.vueSharedInts.`16`
+import typings.vueShared.vueSharedInts.`1`
+import typings.vueShared.vueSharedInts.`2048`
+import typings.vueShared.vueSharedInts.`256`
+import typings.vueShared.vueSharedInts.`2`
+import typings.vueShared.vueSharedInts.`32`
+import typings.vueShared.vueSharedInts.`3`
+import typings.vueShared.vueSharedInts.`4`
+import typings.vueShared.vueSharedInts.`512`
+import typings.vueShared.vueSharedInts.`64`
+import typings.vueShared.vueSharedInts.`6`
+import typings.vueShared.vueSharedInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +47,7 @@ object mod {
   
   inline def escapeHtmlComment(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtmlComment")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def extend(target: js.Object, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def extend(target: js.Object, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   inline def extend[T /* <: js.Object */, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
   inline def extend[T_1 /* <: js.Object */, U_1, V](target: T_1, source1: U_1, source2: V): T_1 & U_1 & V = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T_1 & U_1 & V]
   inline def extend[T_2 /* <: js.Object */, U_2, V_1, W](target: T_2, source1: U_2, source2: V_1, source3: W): T_2 & U_2 & V_1 & W = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[T_2 & U_2 & V_1 & W]
@@ -185,20 +185,20 @@ object mod {
   type NormalizedStyle = Record[String, String | Double]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vueShared.vueSharedNumbers.`1`
-    - typings.vueShared.vueSharedNumbers.`2`
-    - typings.vueShared.vueSharedNumbers.`4`
-    - typings.vueShared.vueSharedNumbers.`8`
-    - typings.vueShared.vueSharedNumbers.`16`
-    - typings.vueShared.vueSharedNumbers.`32`
-    - typings.vueShared.vueSharedNumbers.`64`
-    - typings.vueShared.vueSharedNumbers.`128`
-    - typings.vueShared.vueSharedNumbers.`256`
-    - typings.vueShared.vueSharedNumbers.`512`
-    - typings.vueShared.vueSharedNumbers.`1024`
-    - typings.vueShared.vueSharedNumbers.`2048`
-    - typings.vueShared.vueSharedNumbers.`-1`
-    - typings.vueShared.vueSharedNumbers.`-2`
+    - typings.vueShared.vueSharedInts.`1`
+    - typings.vueShared.vueSharedInts.`2`
+    - typings.vueShared.vueSharedInts.`4`
+    - typings.vueShared.vueSharedInts.`8`
+    - typings.vueShared.vueSharedInts.`16`
+    - typings.vueShared.vueSharedInts.`32`
+    - typings.vueShared.vueSharedInts.`64`
+    - typings.vueShared.vueSharedInts.`128`
+    - typings.vueShared.vueSharedInts.`256`
+    - typings.vueShared.vueSharedInts.`512`
+    - typings.vueShared.vueSharedInts.`1024`
+    - typings.vueShared.vueSharedInts.`2048`
+    - typings.vueShared.vueSharedInts.`-1`
+    - typings.vueShared.vueSharedInts.`-2`
   */
   trait PatchFlags extends StObject
   object PatchFlags {
@@ -309,17 +309,17 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vueShared.vueSharedNumbers.`1`
-    - typings.vueShared.vueSharedNumbers.`2`
-    - typings.vueShared.vueSharedNumbers.`4`
-    - typings.vueShared.vueSharedNumbers.`8`
-    - typings.vueShared.vueSharedNumbers.`16`
-    - typings.vueShared.vueSharedNumbers.`32`
-    - typings.vueShared.vueSharedNumbers.`64`
-    - typings.vueShared.vueSharedNumbers.`128`
-    - typings.vueShared.vueSharedNumbers.`256`
-    - typings.vueShared.vueSharedNumbers.`512`
-    - typings.vueShared.vueSharedNumbers.`6`
+    - typings.vueShared.vueSharedInts.`1`
+    - typings.vueShared.vueSharedInts.`2`
+    - typings.vueShared.vueSharedInts.`4`
+    - typings.vueShared.vueSharedInts.`8`
+    - typings.vueShared.vueSharedInts.`16`
+    - typings.vueShared.vueSharedInts.`32`
+    - typings.vueShared.vueSharedInts.`64`
+    - typings.vueShared.vueSharedInts.`128`
+    - typings.vueShared.vueSharedInts.`256`
+    - typings.vueShared.vueSharedInts.`512`
+    - typings.vueShared.vueSharedInts.`6`
   */
   trait ShapeFlags extends StObject
   object ShapeFlags {
@@ -348,9 +348,9 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.vueShared.vueSharedNumbers.`1`
-    - typings.vueShared.vueSharedNumbers.`2`
-    - typings.vueShared.vueSharedNumbers.`3`
+    - typings.vueShared.vueSharedInts.`1`
+    - typings.vueShared.vueSharedInts.`2`
+    - typings.vueShared.vueSharedInts.`3`
   */
   trait SlotFlags extends StObject
   object SlotFlags {

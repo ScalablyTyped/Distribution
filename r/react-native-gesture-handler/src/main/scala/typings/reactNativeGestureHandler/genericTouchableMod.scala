@@ -9,9 +9,9 @@ import typings.reactNativeGestureHandler.anon.FnCall
 import typings.reactNativeGestureHandler.gestureHandlerCommonMod.GestureEvent
 import typings.reactNativeGestureHandler.gestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.nativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
-import typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
 import typings.reactNativeGestureHandler.touchableNativeFeedbackAndroidMod.TouchableNativeFeedbackExtraProps
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -190,17 +190,17 @@ object genericTouchableMod {
   
   /* Inlined { readonly UNDETERMINED :0,  readonly BEGAN :1,  readonly MOVED_OUTSIDE :2}[keyof { readonly UNDETERMINED :0,  readonly BEGAN :1,  readonly MOVED_OUTSIDE :2}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`
-    - typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`
   */
   trait TouchableState extends StObject
   object TouchableState {
     
-    inline def `0`: typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0` = 0.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`0`]
+    inline def `0`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0` = 0.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`0`]
     
-    inline def `1`: typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1` = 1.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1`]
+    inline def `1`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` = 1.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1`]
     
-    inline def `2`: typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2` = 2.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2`]
+    inline def `2`: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` = 2.asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2`]
   }
 }

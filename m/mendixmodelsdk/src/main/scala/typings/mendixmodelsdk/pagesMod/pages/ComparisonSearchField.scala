@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/search-bar relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ComparisonSearchField")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ComparisonSearchField")
 @js.native
-class ComparisonSearchField protected () extends SingleSearchField {
+open class ComparisonSearchField protected () extends SingleSearchField {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -28,7 +28,7 @@ class ComparisonSearchField protected () extends SingleSearchField {
 }
 object ComparisonSearchField {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ComparisonSearchField")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ComparisonSearchField")
   @js.native
   val ^ : js.Any = js.native
   
@@ -49,13 +49,13 @@ object ComparisonSearchField {
   inline def createIn(container: ControlBar): ComparisonSearchField = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ComparisonSearchField]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ComparisonSearchField.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ComparisonSearchField.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ComparisonSearchField.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ComparisonSearchField.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

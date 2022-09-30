@@ -1,5 +1,6 @@
 package typings.valueOrPromise
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ object mod {
   @js.native
   open class ValueOrPromise[T] protected ()
     extends typings.valueOrPromise.valueOrPromiseMod.ValueOrPromise[T] {
-    def this(executor: js.Function0[T | js.Thenable[T]]) = this()
+    def this(executor: js.Function0[T | PromiseLike[T]]) = this()
   }
   /* static members */
   object ValueOrPromise {

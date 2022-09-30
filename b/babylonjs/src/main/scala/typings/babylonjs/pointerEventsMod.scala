@@ -144,6 +144,11 @@ object pointerEventsMod {
     var nearInteractionPickingInfo: Nullable[PickingInfo] = js.native
     
     /**
+      * The original picking info that was used to trigger the pointer event
+      */
+    var originalPickingInfo: Nullable[PickingInfo] = js.native
+    
+    /**
       * Ray from a pointer if available (eg. 6dof controller)
       */
     var ray: Nullable[Ray] = js.native

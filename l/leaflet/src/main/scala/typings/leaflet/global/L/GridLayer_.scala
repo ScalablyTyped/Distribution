@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.GridLayer")
 @js.native
-class GridLayer_ ()
+open class GridLayer_ ()
   extends typings.leaflet.mod.GridLayer_ {
   def this(options: GridLayerOptions) = this()
 }

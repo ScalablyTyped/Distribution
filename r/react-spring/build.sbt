@@ -1,16 +1,10 @@
 organization := "org.scalablytyped"
 name := "react-spring"
-version := "8.0.27-9a9c2e"
-scalaVersion := "2.13.3"
+version := "9.5.4-e18f97"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

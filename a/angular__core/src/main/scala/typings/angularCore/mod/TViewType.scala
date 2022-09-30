@@ -1,8 +1,8 @@
 package typings.angularCore.mod
 
-import typings.angularCore.angularCoreNumbers.`0`
-import typings.angularCore.angularCoreNumbers.`1`
-import typings.angularCore.angularCoreNumbers.`2`
+import typings.angularCore.angularCoreInts.`0`
+import typings.angularCore.angularCoreInts.`1`
+import typings.angularCore.angularCoreInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * better debugging experience.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.angularCore.angularCoreNumbers.`0`
-  - typings.angularCore.angularCoreNumbers.`1`
-  - typings.angularCore.angularCoreNumbers.`2`
+  - typings.angularCore.angularCoreInts.`0`
+  - typings.angularCore.angularCoreInts.`1`
+  - typings.angularCore.angularCoreInts.`2`
 */
 trait TViewType extends StObject
 object TViewType {

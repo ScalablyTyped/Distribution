@@ -98,8 +98,8 @@ import typings.svelte.domMod.NodeEx
 import typings.svelte.lifecycleMod.DispatchOptions
 import typings.svelte.loopMod.Task
 import typings.svelte.loopMod.TaskCallback
-import typings.svelte.svelteNumbers.`-1`
-import typings.svelte.svelteNumbers.`1`
+import typings.svelte.svelteInts.`-1`
+import typings.svelte.svelteInts.`1`
 import typings.svelte.svelteStrings.`object`
 import typings.svelte.svelteStrings.`var`
 import typings.svelte.svelteStrings.a
@@ -1262,7 +1262,7 @@ object internalMod {
   
   inline def stopPropagation(fn: Any): js.Function1[/* event */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop_propagation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ Any, Any]]
   
-  inline def subscribe(store: Any, callbacks: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(List(store.asInstanceOf[js.Any]).`++`(callbacks.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def subscribe(store: Any, callbacks: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(scala.List(store.asInstanceOf[js.Any]).`++`(callbacks.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def svgElement_a(name: a): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("svg_element")(name.asInstanceOf[js.Any]).asInstanceOf[SVGElement]
   
@@ -1401,21 +1401,21 @@ object internalMod {
   inline def toggleClass(element: Any, name: Any, toggle: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle_class")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any], toggle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def transitionIn(block: Fragment): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("transition_in")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def transitionIn(block: Fragment, local: typings.svelte.svelteNumbers.`0` | `1`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_in")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def transitionIn(block: Fragment, local: typings.svelte.svelteInts.`0` | `1`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_in")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def transitionOut(block: Fragment, local: typings.svelte.svelteNumbers.`0` | `1`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_out")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def transitionOut(block: Fragment, local: typings.svelte.svelteInts.`0` | `1`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_out")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def transitionOut(
     block: Fragment,
-    local: typings.svelte.svelteNumbers.`0` | `1`,
-    detach: typings.svelte.svelteNumbers.`0` | `1`
+    local: typings.svelte.svelteInts.`0` | `1`,
+    detach: typings.svelte.svelteInts.`0` | `1`
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_out")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any], detach.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def transitionOut(
     block: Fragment,
-    local: typings.svelte.svelteNumbers.`0` | `1`,
-    detach: typings.svelte.svelteNumbers.`0` | `1`,
+    local: typings.svelte.svelteInts.`0` | `1`,
+    detach: typings.svelte.svelteInts.`0` | `1`,
     callback: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_out")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any], detach.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def transitionOut(block: Fragment, local: typings.svelte.svelteNumbers.`0` | `1`, detach: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_out")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any], detach.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def transitionOut(block: Fragment, local: typings.svelte.svelteInts.`0` | `1`, detach: Unit, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transition_out")(block.asInstanceOf[js.Any], local.asInstanceOf[js.Any], detach.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def trusted(fn: Any): js.Function1[/* event */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("trusted")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ Any, Unit]]
   

@@ -12,7 +12,7 @@ trait ExperienceEntitiesSummary extends StObject {
   var DisplayData: js.UndefOr[EntityDisplayData] = js.undefined
   
   /**
-    * The identifier of a user or group in your Amazon Web Services SSO identity source. For example, a user ID could be an email.
+    * The identifier of a user or group in your IAM Identity Center identity source. For example, a user ID could be an email.
     */
   var EntityId: js.UndefOr[typings.awsSdk.kendraMod.EntityId] = js.undefined
   

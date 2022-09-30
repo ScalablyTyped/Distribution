@@ -105,7 +105,7 @@ object filterableWithIndexMod {
       predicateWithIndex: PredicateWithIndex[I, A]
     ): Any = js.native
     @JSName("filterWithIndex")
-    def filterWithIndex_AB_A[A, B /* <: A */](
+    def filterWithIndex_AB[A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Any = js.native
@@ -126,7 +126,7 @@ object filterableWithIndexMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
       ] = js.native
     @JSName("partitionWithIndex")
-    def partitionWithIndex_AB_A[A, B /* <: A */](
+    def partitionWithIndex_AB[A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Separated_[
@@ -154,7 +154,7 @@ object filterableWithIndexMod {
       predicateWithIndex: PredicateWithIndex[I, A]
     ): Any = js.native
     @JSName("filterWithIndex")
-    def filterWithIndex_AB_A[A, B /* <: A */](
+    def filterWithIndex_AB[A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Any = js.native
@@ -175,7 +175,7 @@ object filterableWithIndexMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
       ] = js.native
     @JSName("partitionWithIndex")
-    def partitionWithIndex_AB_A[A, B /* <: A */](
+    def partitionWithIndex_AB[A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Separated_[
@@ -203,7 +203,7 @@ object filterableWithIndexMod {
       predicateWithIndex: PredicateWithIndex[I, A]
     ): Any = js.native
     @JSName("filterWithIndex")
-    def filterWithIndex_EAB_A[E, A, B /* <: A */](
+    def filterWithIndex_EAB[E, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Any = js.native
@@ -224,7 +224,7 @@ object filterableWithIndexMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
       ] = js.native
     @JSName("partitionWithIndex")
-    def partitionWithIndex_EAB_A[E, A, B /* <: A */](
+    def partitionWithIndex_EAB[E, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Separated_[
@@ -255,7 +255,7 @@ object filterableWithIndexMod {
       predicateWithIndex: PredicateWithIndex[I, A]
     ): Any = js.native
     @JSName("filterWithIndex")
-    def filterWithIndex_AB_A[A, B /* <: A */](
+    def filterWithIndex_AB[A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Any = js.native
@@ -276,7 +276,7 @@ object filterableWithIndexMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
       ] = js.native
     @JSName("partitionWithIndex")
-    def partitionWithIndex_AB_A[A, B /* <: A */](
+    def partitionWithIndex_AB[A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Separated_[
@@ -304,7 +304,7 @@ object filterableWithIndexMod {
       predicateWithIndex: PredicateWithIndex[I, A]
     ): Any = js.native
     @JSName("filterWithIndex")
-    def filterWithIndex_REAB_A[R, E, A, B /* <: A */](
+    def filterWithIndex_REAB[R, E, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Any = js.native
@@ -325,7 +325,7 @@ object filterableWithIndexMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
       ] = js.native
     @JSName("partitionWithIndex")
-    def partitionWithIndex_REAB_A[R, E, A, B /* <: A */](
+    def partitionWithIndex_REAB[R, E, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Separated_[
@@ -356,7 +356,7 @@ object filterableWithIndexMod {
       predicateWithIndex: PredicateWithIndex[I, A]
     ): Any = js.native
     @JSName("filterWithIndex")
-    def filterWithIndex_RAB_A[R, A, B /* <: A */](
+    def filterWithIndex_RAB[R, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Any = js.native
@@ -377,7 +377,7 @@ object filterableWithIndexMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
       ] = js.native
     @JSName("partitionWithIndex")
-    def partitionWithIndex_RAB_A[R, A, B /* <: A */](
+    def partitionWithIndex_RAB[R, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Separated_[
@@ -405,7 +405,7 @@ object filterableWithIndexMod {
       predicateWithIndex: PredicateWithIndex[I, A]
     ): Any = js.native
     @JSName("filterWithIndex")
-    def filterWithIndex_SREAB_A[S, R, E, A, B /* <: A */](
+    def filterWithIndex_SREAB[S, R, E, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Any = js.native
@@ -426,7 +426,7 @@ object filterableWithIndexMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
       ] = js.native
     @JSName("partitionWithIndex")
-    def partitionWithIndex_SREAB_A[S, R, E, A, B /* <: A */](
+    def partitionWithIndex_SREAB[S, R, E, A, B /* <: A */](
       fa: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any,
       refinementWithIndex: RefinementWithIndex[I, A, B]
     ): Separated_[

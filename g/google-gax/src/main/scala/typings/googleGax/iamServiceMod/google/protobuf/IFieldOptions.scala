@@ -67,7 +67,7 @@ object IFieldOptions {
     
     inline def setDotgoogleDotapiDotfieldBehaviorUndefined: Self = StObject.set(x, ".google.api.fieldBehavior", js.undefined)
     
-    inline def setDotgoogleDotapiDotfieldBehaviorVarargs(value: FieldBehavior*): Self = StObject.set(x, ".google.api.fieldBehavior", js.Array(value :_*))
+    inline def setDotgoogleDotapiDotfieldBehaviorVarargs(value: FieldBehavior*): Self = StObject.set(x, ".google.api.fieldBehavior", js.Array(value*))
     
     inline def setDotgoogleDotapiDotresourceReference(value: IResourceReference): Self = StObject.set(x, ".google.api.resourceReference", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object IFieldOptions {
     
     inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value*))
     
     inline def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     

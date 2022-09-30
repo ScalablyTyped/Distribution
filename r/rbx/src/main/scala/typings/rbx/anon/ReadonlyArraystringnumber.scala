@@ -60,7 +60,7 @@ trait ReadonlyArraystringnumber extends StObject {
     Double
   ]
   
-  val flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxNumbers.`1`]]]
+  val flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxInts.`1`]]]
   
   val flatMap: js.Function1[
     /* callback */ js.ThisFunction3[
@@ -194,7 +194,7 @@ object ReadonlyArraystringnumber {
       /* obj */ js.Array[String | Double], 
       Any
     ] => Double,
-    flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxNumbers.`1`]]],
+    flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxInts.`1`]]],
     flatMap: /* callback */ js.ThisFunction3[
       /* this */ Unit, 
       /* value */ String | Double, 
@@ -306,7 +306,7 @@ object ReadonlyArraystringnumber {
         ] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
-    inline def setFlat(value: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxNumbers.`1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxInts.`1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     inline def setFlatMap(
       value: /* callback */ js.ThisFunction3[

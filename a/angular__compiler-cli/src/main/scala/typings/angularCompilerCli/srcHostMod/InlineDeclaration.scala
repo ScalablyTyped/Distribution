@@ -1,6 +1,6 @@
 package typings.angularCompilerCli.srcHostMod
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`1`
+import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

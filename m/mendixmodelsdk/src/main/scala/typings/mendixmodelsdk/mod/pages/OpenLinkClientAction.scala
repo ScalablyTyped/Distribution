@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.OpenLinkClientAction")
 @js.native
-class OpenLinkClientAction protected ()
+open class OpenLinkClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.OpenLinkClientAction {
   def this(
     model: AbstractModel,

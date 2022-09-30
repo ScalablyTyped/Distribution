@@ -11,10 +11,6 @@ object surveyKnockoutStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait always extends StObject
-  inline def always: always = "always".asInstanceOf[always]
-  
-  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
@@ -27,8 +23,16 @@ object surveyKnockoutStrings {
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
+  sealed trait buttons extends StObject
+  inline def buttons: buttons = "buttons".asInstanceOf[buttons]
+  
+  @js.native
   sealed trait checkbox extends StObject
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @js.native
+  sealed trait dropdown extends StObject
+  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
   sealed trait `false` extends StObject
@@ -37,10 +41,6 @@ object surveyKnockoutStrings {
   @js.native
   sealed trait middle extends StObject
   inline def middle: middle = "middle".asInstanceOf[middle]
-  
-  @js.native
-  sealed trait never extends StObject
-  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait none extends StObject

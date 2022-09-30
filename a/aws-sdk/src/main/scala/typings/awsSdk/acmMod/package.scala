@@ -1,6 +1,7 @@
 package typings.awsSdk.acmMod
 
 import typings.awsSdk.awsSdkStrings.CNAME
+import typings.awsSdk.awsSdkStrings.CREATED_AT
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -85,6 +86,8 @@ type ExtendedKeyUsageList = js.Array[ExtendedKeyUsage]
 */
 type ExtendedKeyUsageName = _ExtendedKeyUsageName | java.lang.String
 
+type ExtendedKeyUsageNames = js.Array[ExtendedKeyUsageName]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NO_AVAILABLE_CONTACTS
   - typings.awsSdk.awsSdkStrings.ADDITIONAL_VERIFICATION_REQUIRED
@@ -145,9 +148,13 @@ type KeyUsageList = js.Array[KeyUsage]
 */
 type KeyUsageName = _KeyUsageName | java.lang.String
 
+type KeyUsageNames = js.Array[KeyUsageName]
+
 type MaxItems = Double
 
 type NextToken = java.lang.String
+
+type NullableBoolean = Boolean
 
 type PassphraseBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
@@ -189,6 +196,15 @@ type RenewalStatus = _RenewalStatus | java.lang.String
   - java.lang.String
 */
 type RevocationReason = _RevocationReason | java.lang.String
+
+type SortBy = CREATED_AT | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASCENDING
+  - typings.awsSdk.awsSdkStrings.DESCENDING
+  - java.lang.String
+*/
+type SortOrder = _SortOrder | java.lang.String
 
 type String = java.lang.String
 

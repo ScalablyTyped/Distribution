@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useIsomorphicLayoutEffectMod {
   
-  @JSImport("react-dnd/lib/hooks/internal/useIsomorphicLayoutEffect", JSImport.Namespace)
+  @JSImport("react-dnd/dist/hooks/useIsomorphicLayoutEffect", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

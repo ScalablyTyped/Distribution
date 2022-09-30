@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.TypedTemplateArgumentType")
 @js.native
-class TypedTemplateArgumentType protected ()
+open class TypedTemplateArgumentType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.TypedTemplateArgumentType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

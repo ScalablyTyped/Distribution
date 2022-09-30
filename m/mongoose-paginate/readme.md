@@ -10,10 +10,10 @@ Pagination plugin for Mongoose
 | ------------------ | :-------------: |
 | Full name          | mongoose-paginate |
 | Keywords           | mongoose, paginate, pagination, paging, page |
-| # releases         | 0 |
-| # dependents       | 88 |
-| # downloads        | 1057361 |
-| # stars            | 44 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 102502.33333333333 |
+| # stars            | 984.0 |
 
 ## Links
 - [Homepage](https://github.com/edwardhotchkiss/mongoose-paginate#readme)

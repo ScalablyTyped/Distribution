@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BorderHover extends StObject {
   
-  var border: js.UndefOr[`19`] = js.undefined
+  var border: js.UndefOr[`20`] = js.undefined
   
-  var hover: js.UndefOr[`20`] = js.undefined
+  var hover: js.UndefOr[`21`] = js.undefined
 }
 object BorderHover {
   
@@ -19,11 +19,11 @@ object BorderHover {
   
   extension [Self <: BorderHover](x: Self) {
     
-    inline def setBorder(value: `19`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: `20`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setHover(value: `20`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `21`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
   }

@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @constructor
   */
-class CallSettings ()
+open class CallSettings ()
   extends typings.googleGax.fallbackMod.CallSettings {
   def this(settings: CallOptions) = this()
 }

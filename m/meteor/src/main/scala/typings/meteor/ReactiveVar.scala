@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReactiveVar[T] extends StObject {
   
+  /**
+    * Returns the current value of the ReactiveVar, establishing a reactive dependency.
+    */
   def get(): T
   
+  /**
+    * Sets the current value of the ReactiveVar, invalidating the Computations that called `get` if `newValue` is different from the old value.
+    */
   def set(newValue: T): Unit
 }
 object ReactiveVar {

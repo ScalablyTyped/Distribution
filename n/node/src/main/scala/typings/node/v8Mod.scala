@@ -415,15 +415,15 @@ object v8Mod {
   
   // ** Signifies if the --zap_code_space option is enabled or not.  1 == enabled, 0 == disabled. */
   /* Rewritten from type alias, can be one of: 
-    - typings.node.nodeNumbers.`0`
-    - typings.node.nodeNumbers.`1`
+    - typings.node.nodeInts.`0`
+    - typings.node.nodeInts.`1`
   */
   trait DoesZapCodeSpaceFlag extends StObject
   object DoesZapCodeSpaceFlag {
     
-    inline def `0`: typings.node.nodeNumbers.`0` = 0.asInstanceOf[typings.node.nodeNumbers.`0`]
+    inline def `0`: typings.node.nodeInts.`0` = 0.asInstanceOf[typings.node.nodeInts.`0`]
     
-    inline def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
+    inline def `1`: typings.node.nodeInts.`1` = 1.asInstanceOf[typings.node.nodeInts.`1`]
   }
   
   trait HeapCodeStatistics extends StObject {

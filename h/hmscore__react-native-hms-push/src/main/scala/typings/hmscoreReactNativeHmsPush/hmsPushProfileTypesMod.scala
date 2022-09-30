@@ -1,8 +1,8 @@
 package typings.hmscoreReactNativeHmsPush
 
-import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushNumbers.`-1`
-import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushNumbers.`1`
-import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushNumbers.`2`
+import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushInts.`-1`
+import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushInts.`1`
+import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

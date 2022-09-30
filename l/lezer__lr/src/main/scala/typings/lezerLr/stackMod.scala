@@ -1,12 +1,12 @@
 package typings.lezerLr
 
 import typings.lezerCommon.treeMod.BufferCursor
-import typings.lezerLr.lezerLrNumbers.`100`
-import typings.lezerLr.lezerLrNumbers.`120`
-import typings.lezerLr.lezerLrNumbers.`190`
-import typings.lezerLr.lezerLrNumbers.`200`
-import typings.lezerLr.lezerLrNumbers.`300`
-import typings.lezerLr.lezerLrNumbers.`4`
+import typings.lezerLr.lezerLrInts.`100`
+import typings.lezerLr.lezerLrInts.`120`
+import typings.lezerLr.lezerLrInts.`190`
+import typings.lezerLr.lezerLrInts.`200`
+import typings.lezerLr.lezerLrInts.`300`
+import typings.lezerLr.lezerLrInts.`4`
 import typings.lezerLr.parseMod.LRParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -91,12 +91,12 @@ object stackMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.lezerLr.lezerLrNumbers.`200`
-    - typings.lezerLr.lezerLrNumbers.`190`
-    - typings.lezerLr.lezerLrNumbers.`100`
-    - typings.lezerLr.lezerLrNumbers.`4`
-    - typings.lezerLr.lezerLrNumbers.`300`
-    - typings.lezerLr.lezerLrNumbers.`120`
+    - typings.lezerLr.lezerLrInts.`200`
+    - typings.lezerLr.lezerLrInts.`190`
+    - typings.lezerLr.lezerLrInts.`100`
+    - typings.lezerLr.lezerLrInts.`4`
+    - typings.lezerLr.lezerLrInts.`300`
+    - typings.lezerLr.lezerLrInts.`120`
   */
   trait Recover extends StObject
   object Recover {

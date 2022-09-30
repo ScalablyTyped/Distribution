@@ -9,12 +9,11 @@ import typings.fundamentalReact.anon.FunctionComponentListSele
 import typings.fundamentalReact.anon.FunctionComponentListText
 import typings.fundamentalReact.anon.PartialListProps
 import typings.fundamentalReact.anon.WeakValidationMapListProp
-import typings.fundamentalReact.fundamentalReactNumbers.`2`
-import typings.fundamentalReact.fundamentalReactNumbers.`3`
-import typings.fundamentalReact.fundamentalReactNumbers.`4`
-import typings.fundamentalReact.fundamentalReactNumbers.`5`
-import typings.fundamentalReact.fundamentalReactNumbers.`6`
-import typings.fundamentalReact.fundamentalReactStrings.List
+import typings.fundamentalReact.fundamentalReactInts.`2`
+import typings.fundamentalReact.fundamentalReactInts.`3`
+import typings.fundamentalReact.fundamentalReactInts.`4`
+import typings.fundamentalReact.fundamentalReactInts.`5`
+import typings.fundamentalReact.fundamentalReactInts.`6`
 import typings.fundamentalReact.iconMod.IconGlyph
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement
@@ -89,8 +88,8 @@ object listMod {
     
     @JSImport("fundamental-react/lib/List/List", "default.displayName")
     @js.native
-    def displayName: js.UndefOr[List | String] = js.native
-    inline def displayName_=(x: js.UndefOr[List | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    def displayName: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.List | String] = js.native
+    inline def displayName_=(x: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.List | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/List/List", "default.propTypes")
     @js.native

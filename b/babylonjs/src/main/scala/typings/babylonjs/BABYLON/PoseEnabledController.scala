@@ -20,13 +20,12 @@ trait PoseEnabledController
   
   /**
     * Internal, matrix used to convert room space to babylon space
-    * @hidden
+    * @internal
     */
   var _deviceToWorld: Matrix = js.native
   
   /**
-    * @param fixedPosition
-    * @hidden
+    * @internal
     */
   def _disableTrackPosition(fixedPosition: Vector3): Unit = js.native
   
@@ -38,18 +37,18 @@ trait PoseEnabledController
   
   /**
     * Internal, the mesh attached to the controller
-    * @hidden
+    * @internal
     */
   var _mesh: Nullable[AbstractMesh] = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _meshAttachedObservable: Observable[AbstractMesh] = js.native
   
   /**
     * Node to be used when casting a ray from the controller
-    * @hidden
+    * @internal
     */
   var _pointingPoseNode: Nullable[TransformNode] = js.native
   

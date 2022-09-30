@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "VideoOverlay")
 @js.native
-class VideoOverlay_ protected () extends Layer {
+open class VideoOverlay_ protected () extends Layer {
   /** VideoOverlay doesn't extend ImageOverlay because VideoOverlay.getElement returns HTMLImageElement */
   def this(video: String, bounds: LatLngBoundsExpression) = this()
   def this(video: js.Array[String], bounds: LatLngBoundsExpression) = this()
@@ -23,6 +23,9 @@ class VideoOverlay_ protected () extends Layer {
   /** Get the bounds that this VideoOverlay covers */
   def getBounds(): LatLngBounds_ = js.native
   
+  /** Get the center of the bounds this ImageOverlay covers */
+  def getCenter(): Point_ = js.native
+  
   /** Get the video element that represents the VideoOverlay on the map */
   def getElement(): js.UndefOr[HTMLVideoElement] = js.native
   
@@ -31,7 +34,14 @@ class VideoOverlay_ protected () extends Layer {
   /** Update the bounds that this VideoOverlay covers */
   def setBounds(bounds: LatLngBounds_): this.type = js.native
   
+  /** Changes the opacity of the image element */
   def setOpacity(opacity: Double): this.type = js.native
   
+  /** Changes the style of the image element. As of 1.8, only the opacity is changed */
+  def setStyle(styleOpts: SVGOverlayStyleOptions): this.type = js.native
+  
   def setUrl(url: String): this.type = js.native
+  
+  /** Changes the zIndex of the image overlay */
+  def setZIndex(value: Double): this.type = js.native
 }

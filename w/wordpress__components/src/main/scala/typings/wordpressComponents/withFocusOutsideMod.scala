@@ -12,7 +12,7 @@ object withFocusOutsideMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: HFOComponent[js.Any, js.Any] */](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def default[T /* <: HFOComponent[Any, Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
   
   @js.native
   trait HFOComponent[P, S]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "ElementFinder")
 @js.native
-class ElementFinder protected ()
+open class ElementFinder protected ()
   extends typings.protractor.elementMod.ElementFinder {
   def this(
     browser_ : typings.protractor.browserMod.ProtractorBrowser,

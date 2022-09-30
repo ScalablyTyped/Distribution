@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "onfido-sdk-ui" : "9.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "onfido-sdk-ui" : "9.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

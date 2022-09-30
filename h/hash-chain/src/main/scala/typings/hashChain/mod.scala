@@ -1,6 +1,6 @@
 package typings.hashChain
 
-import typings.hashChain.hashChainNumbers.`32`
+import typings.hashChain.hashChainInts.`32`
 import typings.node.bufferMod.global.Buffer
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject

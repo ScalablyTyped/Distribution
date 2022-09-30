@@ -2,7 +2,6 @@ package typings.ink
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Context
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object appContextMod extends Shortcut {
       * Exit (unmount) the whole Ink app.
       */
     def exit(): Unit = js.native
-    def exit(error: Error): Unit = js.native
+    def exit(error: js.Error): Unit = js.native
   }
   
   type _To = Context[Props]

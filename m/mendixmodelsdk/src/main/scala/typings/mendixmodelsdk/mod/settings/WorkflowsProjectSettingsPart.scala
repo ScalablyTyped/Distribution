@@ -12,15 +12,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-  *
-  * @ignore
-  *
+  * In version 9.0.5: removed experimental
   * In version 8.8.0: introduced
   */
 @JSImport("mendixmodelsdk", "settings.WorkflowsProjectSettingsPart")
 @js.native
-class WorkflowsProjectSettingsPart protected ()
+open class WorkflowsProjectSettingsPart protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.WorkflowsProjectSettingsPart {
   def this(
     model: AbstractModel,

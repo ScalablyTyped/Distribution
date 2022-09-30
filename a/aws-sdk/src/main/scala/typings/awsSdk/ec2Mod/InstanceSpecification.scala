@@ -11,6 +11,9 @@ trait InstanceSpecification extends StObject {
     */
   var ExcludeBootVolume: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The IDs of the data (non-root) volumes to exclude from the multi-volume snapshot set. If you specify the ID of the root volume, the request fails. To exclude the root volume, use ExcludeBootVolume. You can specify up to 40 volume IDs per request.
+    */
   var ExcludeDataVolumeIds: js.UndefOr[VolumeIdStringList] = js.undefined
   
   /**

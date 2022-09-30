@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoExportPolicy extends StObject {
   
   /**
-    * The AutoExportPolicy can have the following event values:    NEW - Amazon FSx automatically exports new files and directories to the data repository as they are added to the file system.    CHANGED - Amazon FSx automatically exports changes to files and directories on the file system to the data repository.    DELETED - Files and directories are automatically deleted on the data repository when they are deleted on the file system.   You can define any combination of event types for your AutoExportPolicy.
+    * The AutoExportPolicy can have the following event values:    NEW - New files and directories are automatically exported to the data repository as they are added to the file system.    CHANGED - Changes to files and directories on the file system are automatically exported to the data repository.    DELETED - Files and directories are automatically deleted on the data repository when they are deleted on the file system.   You can define any combination of event types for your AutoExportPolicy.
     */
   var Events: js.UndefOr[EventTypes] = js.undefined
 }

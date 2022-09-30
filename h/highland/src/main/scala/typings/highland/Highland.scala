@@ -6,6 +6,7 @@ import typings.highland.highlandStrings.done
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Partial
 import typings.std.Pick
+import typings.std.PromiseLike
 import typings.std.ReadableStream
 import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
@@ -377,7 +378,7 @@ object Highland {
       * @api public
       */
     @JSName("filter")
-    def filter_S_R[S /* <: R */](f: js.Function1[/* x */ R, /* is S */ Boolean]): Stream[S] = js.native
+    def filter_S[S /* <: R */](f: js.Function1[/* x */ R, /* is S */ Boolean]): Stream[S] = js.native
     
     /**
       * A convenient form of filter, which returns the first object from a
@@ -1155,7 +1156,7 @@ object Highland {
       *     // parameter result will be [1,2,3,4]
       * });
       */
-    def toPromise[P /* <: js.Thenable[R] */](PromiseCtor: PConstructor[R, P]): P = js.native
+    def toPromise[P /* <: PromiseLike[R] */](PromiseCtor: PConstructor[R, P]): P = js.native
     
     /**
       * Filters out all duplicate values from the stream and keeps only the first

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "expressions.UnaryOperator")
 @js.native
-class UnaryOperator protected ()
+open class UnaryOperator protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.expressions.UnaryOperator {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

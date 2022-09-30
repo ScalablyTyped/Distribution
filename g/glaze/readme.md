@@ -10,10 +10,10 @@ CSS-in-JS microlibrary for making design systems approachable with React
 | ------------------ | :-------------: |
 | Full name          | glaze |
 | Keywords           | css-in-js, design-system, react, typescript, treat, theme |
-| # releases         | 14 |
-| # dependents       | 1 |
-| # downloads        | 6179 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 601.3333333333334 |
+| # stars            | 415.0 |
 
 ## Links
 - [Homepage](https://github.com/kripod/glaze#readme)

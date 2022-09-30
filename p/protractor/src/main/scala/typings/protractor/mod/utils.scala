@@ -12,16 +12,16 @@ object utils {
   
   @JSImport("protractor", "utils.firefox")
   @js.native
-  def firefox: js.Any = js.native
-  inline def firefox_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
+  def firefox: Any = js.native
+  inline def firefox_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
   
   @JSImport("protractor", "utils.http")
   @js.native
-  def http: js.Any = js.native
-  inline def http_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("http")(x.asInstanceOf[js.Any])
+  def http: Any = js.native
+  inline def http_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("http")(x.asInstanceOf[js.Any])
   
   @JSImport("protractor", "utils.remote")
   @js.native
-  def remote: js.Any = js.native
-  inline def remote_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remote")(x.asInstanceOf[js.Any])
+  def remote: Any = js.native
+  inline def remote_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remote")(x.asInstanceOf[js.Any])
 }

@@ -1,121 +1,121 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1000`
-import typings.webcl.webclNumbers.`0x1001`
-import typings.webcl.webclNumbers.`0x1002`
-import typings.webcl.webclNumbers.`0x1003`
-import typings.webcl.webclNumbers.`0x1004`
-import typings.webcl.webclNumbers.`0x1005`
-import typings.webcl.webclNumbers.`0x1006`
-import typings.webcl.webclNumbers.`0x1007`
-import typings.webcl.webclNumbers.`0x1008`
-import typings.webcl.webclNumbers.`0x1009`
-import typings.webcl.webclNumbers.`0x100A`
-import typings.webcl.webclNumbers.`0x100C`
-import typings.webcl.webclNumbers.`0x100D`
-import typings.webcl.webclNumbers.`0x100E`
-import typings.webcl.webclNumbers.`0x100F`
-import typings.webcl.webclNumbers.`0x1010`
-import typings.webcl.webclNumbers.`0x1011`
-import typings.webcl.webclNumbers.`0x1012`
-import typings.webcl.webclNumbers.`0x1013`
-import typings.webcl.webclNumbers.`0x1014`
-import typings.webcl.webclNumbers.`0x1015`
-import typings.webcl.webclNumbers.`0x1016`
-import typings.webcl.webclNumbers.`0x1017`
-import typings.webcl.webclNumbers.`0x1018`
-import typings.webcl.webclNumbers.`0x1019`
-import typings.webcl.webclNumbers.`0x101B`
-import typings.webcl.webclNumbers.`0x101C`
-import typings.webcl.webclNumbers.`0x101D`
-import typings.webcl.webclNumbers.`0x101E`
-import typings.webcl.webclNumbers.`0x101F`
-import typings.webcl.webclNumbers.`0x1020`
-import typings.webcl.webclNumbers.`0x1021`
-import typings.webcl.webclNumbers.`0x1022`
-import typings.webcl.webclNumbers.`0x1023`
-import typings.webcl.webclNumbers.`0x1024`
-import typings.webcl.webclNumbers.`0x1025`
-import typings.webcl.webclNumbers.`0x1026`
-import typings.webcl.webclNumbers.`0x1027`
-import typings.webcl.webclNumbers.`0x1028`
-import typings.webcl.webclNumbers.`0x1029`
-import typings.webcl.webclNumbers.`0x102A`
-import typings.webcl.webclNumbers.`0x102B`
-import typings.webcl.webclNumbers.`0x102C`
-import typings.webcl.webclNumbers.`0x102D`
-import typings.webcl.webclNumbers.`0x102E`
-import typings.webcl.webclNumbers.`0x102F`
-import typings.webcl.webclNumbers.`0x1030`
-import typings.webcl.webclNumbers.`0x1031`
-import typings.webcl.webclNumbers.`0x1035`
-import typings.webcl.webclNumbers.`0x1036`
-import typings.webcl.webclNumbers.`0x1037`
-import typings.webcl.webclNumbers.`0x1038`
-import typings.webcl.webclNumbers.`0x1039`
-import typings.webcl.webclNumbers.`0x103A`
-import typings.webcl.webclNumbers.`0x103D`
+import typings.webcl.webclInts.`0x1000`
+import typings.webcl.webclInts.`0x1001`
+import typings.webcl.webclInts.`0x1002`
+import typings.webcl.webclInts.`0x1003`
+import typings.webcl.webclInts.`0x1004`
+import typings.webcl.webclInts.`0x1005`
+import typings.webcl.webclInts.`0x1006`
+import typings.webcl.webclInts.`0x1007`
+import typings.webcl.webclInts.`0x1008`
+import typings.webcl.webclInts.`0x1009`
+import typings.webcl.webclInts.`0x100A`
+import typings.webcl.webclInts.`0x100C`
+import typings.webcl.webclInts.`0x100D`
+import typings.webcl.webclInts.`0x100E`
+import typings.webcl.webclInts.`0x100F`
+import typings.webcl.webclInts.`0x1010`
+import typings.webcl.webclInts.`0x1011`
+import typings.webcl.webclInts.`0x1012`
+import typings.webcl.webclInts.`0x1013`
+import typings.webcl.webclInts.`0x1014`
+import typings.webcl.webclInts.`0x1015`
+import typings.webcl.webclInts.`0x1016`
+import typings.webcl.webclInts.`0x1017`
+import typings.webcl.webclInts.`0x1018`
+import typings.webcl.webclInts.`0x1019`
+import typings.webcl.webclInts.`0x101B`
+import typings.webcl.webclInts.`0x101C`
+import typings.webcl.webclInts.`0x101D`
+import typings.webcl.webclInts.`0x101E`
+import typings.webcl.webclInts.`0x101F`
+import typings.webcl.webclInts.`0x1020`
+import typings.webcl.webclInts.`0x1021`
+import typings.webcl.webclInts.`0x1022`
+import typings.webcl.webclInts.`0x1023`
+import typings.webcl.webclInts.`0x1024`
+import typings.webcl.webclInts.`0x1025`
+import typings.webcl.webclInts.`0x1026`
+import typings.webcl.webclInts.`0x1027`
+import typings.webcl.webclInts.`0x1028`
+import typings.webcl.webclInts.`0x1029`
+import typings.webcl.webclInts.`0x102A`
+import typings.webcl.webclInts.`0x102B`
+import typings.webcl.webclInts.`0x102C`
+import typings.webcl.webclInts.`0x102D`
+import typings.webcl.webclInts.`0x102E`
+import typings.webcl.webclInts.`0x102F`
+import typings.webcl.webclInts.`0x1030`
+import typings.webcl.webclInts.`0x1031`
+import typings.webcl.webclInts.`0x1035`
+import typings.webcl.webclInts.`0x1036`
+import typings.webcl.webclInts.`0x1037`
+import typings.webcl.webclInts.`0x1038`
+import typings.webcl.webclInts.`0x1039`
+import typings.webcl.webclInts.`0x103A`
+import typings.webcl.webclInts.`0x103D`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_device_info */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1000`
-  - typings.webcl.webclNumbers.`0x1001`
-  - typings.webcl.webclNumbers.`0x1002`
-  - typings.webcl.webclNumbers.`0x1003`
-  - typings.webcl.webclNumbers.`0x1004`
-  - typings.webcl.webclNumbers.`0x1005`
-  - typings.webcl.webclNumbers.`0x1006`
-  - typings.webcl.webclNumbers.`0x1007`
-  - typings.webcl.webclNumbers.`0x1008`
-  - typings.webcl.webclNumbers.`0x1009`
-  - typings.webcl.webclNumbers.`0x100A`
-  - typings.webcl.webclNumbers.`0x100C`
-  - typings.webcl.webclNumbers.`0x100D`
-  - typings.webcl.webclNumbers.`0x100E`
-  - typings.webcl.webclNumbers.`0x100F`
-  - typings.webcl.webclNumbers.`0x1010`
-  - typings.webcl.webclNumbers.`0x1011`
-  - typings.webcl.webclNumbers.`0x1012`
-  - typings.webcl.webclNumbers.`0x1013`
-  - typings.webcl.webclNumbers.`0x1014`
-  - typings.webcl.webclNumbers.`0x1015`
-  - typings.webcl.webclNumbers.`0x1016`
-  - typings.webcl.webclNumbers.`0x1017`
-  - typings.webcl.webclNumbers.`0x1018`
-  - typings.webcl.webclNumbers.`0x1019`
-  - typings.webcl.webclNumbers.`0x101B`
-  - typings.webcl.webclNumbers.`0x101C`
-  - typings.webcl.webclNumbers.`0x101D`
-  - typings.webcl.webclNumbers.`0x101E`
-  - typings.webcl.webclNumbers.`0x101F`
-  - typings.webcl.webclNumbers.`0x1020`
-  - typings.webcl.webclNumbers.`0x1021`
-  - typings.webcl.webclNumbers.`0x1022`
-  - typings.webcl.webclNumbers.`0x1023`
-  - typings.webcl.webclNumbers.`0x1024`
-  - typings.webcl.webclNumbers.`0x1025`
-  - typings.webcl.webclNumbers.`0x1026`
-  - typings.webcl.webclNumbers.`0x1027`
-  - typings.webcl.webclNumbers.`0x1028`
-  - typings.webcl.webclNumbers.`0x1029`
-  - typings.webcl.webclNumbers.`0x102A`
-  - typings.webcl.webclNumbers.`0x102B`
-  - typings.webcl.webclNumbers.`0x102C`
-  - typings.webcl.webclNumbers.`0x102D`
-  - typings.webcl.webclNumbers.`0x102E`
-  - typings.webcl.webclNumbers.`0x102F`
-  - typings.webcl.webclNumbers.`0x1030`
-  - typings.webcl.webclNumbers.`0x1031`
-  - typings.webcl.webclNumbers.`0x1035`
-  - typings.webcl.webclNumbers.`0x1036`
-  - typings.webcl.webclNumbers.`0x1037`
-  - typings.webcl.webclNumbers.`0x1038`
-  - typings.webcl.webclNumbers.`0x1039`
-  - typings.webcl.webclNumbers.`0x103A`
-  - typings.webcl.webclNumbers.`0x103D`
+  - typings.webcl.webclInts.`0x1000`
+  - typings.webcl.webclInts.`0x1001`
+  - typings.webcl.webclInts.`0x1002`
+  - typings.webcl.webclInts.`0x1003`
+  - typings.webcl.webclInts.`0x1004`
+  - typings.webcl.webclInts.`0x1005`
+  - typings.webcl.webclInts.`0x1006`
+  - typings.webcl.webclInts.`0x1007`
+  - typings.webcl.webclInts.`0x1008`
+  - typings.webcl.webclInts.`0x1009`
+  - typings.webcl.webclInts.`0x100A`
+  - typings.webcl.webclInts.`0x100C`
+  - typings.webcl.webclInts.`0x100D`
+  - typings.webcl.webclInts.`0x100E`
+  - typings.webcl.webclInts.`0x100F`
+  - typings.webcl.webclInts.`0x1010`
+  - typings.webcl.webclInts.`0x1011`
+  - typings.webcl.webclInts.`0x1012`
+  - typings.webcl.webclInts.`0x1013`
+  - typings.webcl.webclInts.`0x1014`
+  - typings.webcl.webclInts.`0x1015`
+  - typings.webcl.webclInts.`0x1016`
+  - typings.webcl.webclInts.`0x1017`
+  - typings.webcl.webclInts.`0x1018`
+  - typings.webcl.webclInts.`0x1019`
+  - typings.webcl.webclInts.`0x101B`
+  - typings.webcl.webclInts.`0x101C`
+  - typings.webcl.webclInts.`0x101D`
+  - typings.webcl.webclInts.`0x101E`
+  - typings.webcl.webclInts.`0x101F`
+  - typings.webcl.webclInts.`0x1020`
+  - typings.webcl.webclInts.`0x1021`
+  - typings.webcl.webclInts.`0x1022`
+  - typings.webcl.webclInts.`0x1023`
+  - typings.webcl.webclInts.`0x1024`
+  - typings.webcl.webclInts.`0x1025`
+  - typings.webcl.webclInts.`0x1026`
+  - typings.webcl.webclInts.`0x1027`
+  - typings.webcl.webclInts.`0x1028`
+  - typings.webcl.webclInts.`0x1029`
+  - typings.webcl.webclInts.`0x102A`
+  - typings.webcl.webclInts.`0x102B`
+  - typings.webcl.webclInts.`0x102C`
+  - typings.webcl.webclInts.`0x102D`
+  - typings.webcl.webclInts.`0x102E`
+  - typings.webcl.webclInts.`0x102F`
+  - typings.webcl.webclInts.`0x1030`
+  - typings.webcl.webclInts.`0x1031`
+  - typings.webcl.webclInts.`0x1035`
+  - typings.webcl.webclInts.`0x1036`
+  - typings.webcl.webclInts.`0x1037`
+  - typings.webcl.webclInts.`0x1038`
+  - typings.webcl.webclInts.`0x1039`
+  - typings.webcl.webclInts.`0x103A`
+  - typings.webcl.webclInts.`0x103D`
 */
 trait DeviceInfo extends StObject
 object DeviceInfo {

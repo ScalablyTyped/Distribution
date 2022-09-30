@@ -5,13 +5,11 @@ import typings.mdast.mod.Root
 import typings.mdastUtilToMarkdown.typesMod.Handlers
 import typings.mdastUtilToMarkdown.typesMod.Join
 import typings.mdastUtilToMarkdown.typesMod.Unsafe
-import typings.remarkStringify.remarkStringifyStrings.Apostrophe
 import typings.remarkStringify.remarkStringifyStrings.Asterisk
 import typings.remarkStringify.remarkStringifyStrings.Dot
 import typings.remarkStringify.remarkStringifyStrings.Graveaccent
 import typings.remarkStringify.remarkStringifyStrings.Plussign
 import typings.remarkStringify.remarkStringifyStrings.Quotationmark
-import typings.remarkStringify.remarkStringifyStrings.Rightparenthesis
 import typings.remarkStringify.remarkStringifyStrings.Tilde
 import typings.remarkStringify.remarkStringifyStrings._underscore
 import typings.remarkStringify.remarkStringifyStrings.`-_`
@@ -38,9 +36,9 @@ object libMod {
     
     var bullet: js.UndefOr[`-_` | Asterisk | Plussign] = js.undefined
     
-    var bulletOrdered: js.UndefOr[Dot | Rightparenthesis] = js.undefined
+    var bulletOrdered: js.UndefOr[Dot | String] = js.undefined
     
-    var bulletOrderedOther: js.UndefOr[Dot | Rightparenthesis] = js.undefined
+    var bulletOrderedOther: js.UndefOr[Dot | String] = js.undefined
     
     var bulletOther: js.UndefOr[`-_` | Asterisk | Plussign] = js.undefined
     
@@ -60,7 +58,7 @@ object libMod {
     
     var listItemIndent: js.UndefOr[tab | one | mixed] = js.undefined
     
-    var quote: js.UndefOr[Quotationmark | Apostrophe] = js.undefined
+    var quote: js.UndefOr[Quotationmark | String] = js.undefined
     
     var resourceLink: js.UndefOr[Boolean] = js.undefined
     
@@ -89,9 +87,9 @@ object libMod {
       
       inline def setBullet(value: `-_` | Asterisk | Plussign): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
-      inline def setBulletOrdered(value: Dot | Rightparenthesis): Self = StObject.set(x, "bulletOrdered", value.asInstanceOf[js.Any])
+      inline def setBulletOrdered(value: Dot | String): Self = StObject.set(x, "bulletOrdered", value.asInstanceOf[js.Any])
       
-      inline def setBulletOrderedOther(value: Dot | Rightparenthesis): Self = StObject.set(x, "bulletOrderedOther", value.asInstanceOf[js.Any])
+      inline def setBulletOrderedOther(value: Dot | String): Self = StObject.set(x, "bulletOrderedOther", value.asInstanceOf[js.Any])
       
       inline def setBulletOrderedOtherUndefined: Self = StObject.set(x, "bulletOrderedOther", js.undefined)
       
@@ -137,7 +135,7 @@ object libMod {
       
       inline def setListItemIndentUndefined: Self = StObject.set(x, "listItemIndent", js.undefined)
       
-      inline def setQuote(value: Quotationmark | Apostrophe): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: Quotationmark | String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
       inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       

@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/text-box relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextBox")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.TextBox")
 @js.native
-class TextBox protected () extends TextWidget {
+open class TextBox protected () extends TextWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -78,7 +78,7 @@ class TextBox protected () extends TextWidget {
 }
 object TextBox {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextBox")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TextBox")
   @js.native
   val ^ : js.Any = js.native
   
@@ -652,13 +652,13 @@ object TextBox {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): TextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TextBox]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextBox.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TextBox.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TextBox.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TextBox.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

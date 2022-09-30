@@ -29,8 +29,6 @@ import typings.tabris.tabrisStrings.bounds
 import typings.tabris.tabrisStrings.cid
 import typings.tabris.tabrisStrings.constructor
 import typings.tabris.tabrisStrings.jsxAttributes
-import typings.tabris.tabrisStrings.nextLeftparenthesisRightparenthesis
-import typings.tabris.tabrisStrings.prevLeftparenthesisRightparenthesis
 import typings.tabris.tabrisStrings.set
 import typings.tabris.tabrisStrings.target
 import typings.tabris.tabrisStrings.timeStamp
@@ -273,7 +271,7 @@ inline def fetch(url: typings.tabris.Request): js.Promise[typings.tabris.Respons
 inline def fetch(url: typings.tabris.Request, init: RequestInit): js.Promise[typings.tabris.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.tabris.Response]]
 
 inline def format(data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(data.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
-inline def format(message: String, data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(message.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+inline def format(message: String, data: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(message.asInstanceOf[js.Any]).`++`(data.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
 inline def fs: FileSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("fs").asInstanceOf[FileSystem]
 
@@ -462,7 +460,7 @@ type NavigationViewConstructor = NavigationViewFactory
 
 type NextCb[T] = js.Function1[/* value */ T, Unit]
 
-type NextString = nextLeftparenthesisRightparenthesis
+type NextString = String
 
 type ObservableDataConstructor = ObservableDataFactory
 
@@ -480,7 +478,7 @@ type PercentValue = PercentString | PercentLikeObject
 
 type PickerConstructor = PickerFactory
 
-type PrevString = prevLeftparenthesisRightparenthesis
+type PrevString = String
 
 type ProgressBarConstructor = ProgressBarFactory
 

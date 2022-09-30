@@ -10,10 +10,10 @@ A Leaflet plugin for drawing Bézier curves and other complex shapes.
 | ------------------ | :-------------: |
 | Full name          | leaflet-curve |
 | Keywords           | leaflet, Bezier, curve, SVG |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 18272 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1589.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/onikiienko/Leaflet.curve#readme)

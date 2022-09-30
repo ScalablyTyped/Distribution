@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `288` extends StObject {
   
-  var u: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`240`
+  var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`240`
 }
 object `288` {
   
@@ -17,6 +17,6 @@ object `288` {
   
   extension [Self <: `288`](x: Self) {
     
-    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesNumbers.`240`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`240`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
   }
 }

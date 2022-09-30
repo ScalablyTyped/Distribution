@@ -13,10 +13,10 @@ trait RenderingGroup extends StObject {
   
   /* private */ var _depthOnlySubMeshes: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _edgesRenderers: SmartArrayNoDuplicate[IEdgesRenderer] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _empty: Boolean = js.native
   
   /* private */ var _opaqueSortCompareFn: Any = js.native

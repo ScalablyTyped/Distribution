@@ -2327,188 +2327,188 @@ object typesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`85`
-    - typings.nlapack.nlapackNumbers.`83`
-    - typings.nlapack.nlapackNumbers.`78`
+    - typings.nlapack.nlapackInts.`85`
+    - typings.nlapack.nlapackInts.`83`
+    - typings.nlapack.nlapackInts.`78`
   */
   trait MatrixDistribution extends StObject
   object MatrixDistribution {
     
-    inline def `78`: typings.nlapack.nlapackNumbers.`78` = 78.asInstanceOf[typings.nlapack.nlapackNumbers.`78`]
+    inline def `78`: typings.nlapack.nlapackInts.`78` = 78.asInstanceOf[typings.nlapack.nlapackInts.`78`]
     
-    inline def `83`: typings.nlapack.nlapackNumbers.`83` = 83.asInstanceOf[typings.nlapack.nlapackNumbers.`83`]
+    inline def `83`: typings.nlapack.nlapackInts.`83` = 83.asInstanceOf[typings.nlapack.nlapackInts.`83`]
     
-    inline def `85`: typings.nlapack.nlapackNumbers.`85` = 85.asInstanceOf[typings.nlapack.nlapackNumbers.`85`]
+    inline def `85`: typings.nlapack.nlapackInts.`85` = 85.asInstanceOf[typings.nlapack.nlapackInts.`85`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`78`
-    - typings.nlapack.nlapackNumbers.`86`
+    - typings.nlapack.nlapackInts.`78`
+    - typings.nlapack.nlapackInts.`86`
   */
   trait MatrixEigenvector extends StObject
   object MatrixEigenvector {
     
-    inline def `78`: typings.nlapack.nlapackNumbers.`78` = 78.asInstanceOf[typings.nlapack.nlapackNumbers.`78`]
+    inline def `78`: typings.nlapack.nlapackInts.`78` = 78.asInstanceOf[typings.nlapack.nlapackInts.`78`]
     
-    inline def `86`: typings.nlapack.nlapackNumbers.`86` = 86.asInstanceOf[typings.nlapack.nlapackNumbers.`86`]
+    inline def `86`: typings.nlapack.nlapackInts.`86` = 86.asInstanceOf[typings.nlapack.nlapackInts.`86`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`78`
-    - typings.nlapack.nlapackNumbers.`82`
-    - typings.nlapack.nlapackNumbers.`67`
-    - typings.nlapack.nlapackNumbers.`66`
+    - typings.nlapack.nlapackInts.`78`
+    - typings.nlapack.nlapackInts.`82`
+    - typings.nlapack.nlapackInts.`67`
+    - typings.nlapack.nlapackInts.`66`
   */
   trait MatrixEquilibration extends StObject
   object MatrixEquilibration {
     
-    inline def `66`: typings.nlapack.nlapackNumbers.`66` = 66.asInstanceOf[typings.nlapack.nlapackNumbers.`66`]
+    inline def `66`: typings.nlapack.nlapackInts.`66` = 66.asInstanceOf[typings.nlapack.nlapackInts.`66`]
     
-    inline def `67`: typings.nlapack.nlapackNumbers.`67` = 67.asInstanceOf[typings.nlapack.nlapackNumbers.`67`]
+    inline def `67`: typings.nlapack.nlapackInts.`67` = 67.asInstanceOf[typings.nlapack.nlapackInts.`67`]
     
-    inline def `78`: typings.nlapack.nlapackNumbers.`78` = 78.asInstanceOf[typings.nlapack.nlapackNumbers.`78`]
+    inline def `78`: typings.nlapack.nlapackInts.`78` = 78.asInstanceOf[typings.nlapack.nlapackInts.`78`]
     
-    inline def `82`: typings.nlapack.nlapackNumbers.`82` = 82.asInstanceOf[typings.nlapack.nlapackNumbers.`82`]
+    inline def `82`: typings.nlapack.nlapackInts.`82` = 82.asInstanceOf[typings.nlapack.nlapackInts.`82`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`-6`
-    - typings.nlapack.nlapackNumbers.`-5`
-    - typings.nlapack.nlapackNumbers.`-4`
-    - typings.nlapack.nlapackNumbers.`-3`
-    - typings.nlapack.nlapackNumbers.`-2`
-    - typings.nlapack.nlapackNumbers.`-1`
-    - typings.nlapack.nlapackNumbers.`0`
-    - typings.nlapack.nlapackNumbers.`1`
-    - typings.nlapack.nlapackNumbers.`2`
-    - typings.nlapack.nlapackNumbers.`3`
-    - typings.nlapack.nlapackNumbers.`4`
-    - typings.nlapack.nlapackNumbers.`5`
-    - typings.nlapack.nlapackNumbers.`6`
+    - typings.nlapack.nlapackInts.`-6`
+    - typings.nlapack.nlapackInts.`-5`
+    - typings.nlapack.nlapackInts.`-4`
+    - typings.nlapack.nlapackInts.`-3`
+    - typings.nlapack.nlapackInts.`-2`
+    - typings.nlapack.nlapackInts.`-1`
+    - typings.nlapack.nlapackInts.`0`
+    - typings.nlapack.nlapackInts.`1`
+    - typings.nlapack.nlapackInts.`2`
+    - typings.nlapack.nlapackInts.`3`
+    - typings.nlapack.nlapackInts.`4`
+    - typings.nlapack.nlapackInts.`5`
+    - typings.nlapack.nlapackInts.`6`
   */
   trait MatrixMode extends StObject
   object MatrixMode {
     
-    inline def `-1`: typings.nlapack.nlapackNumbers.`-1` = -1.asInstanceOf[typings.nlapack.nlapackNumbers.`-1`]
+    inline def `-1`: typings.nlapack.nlapackInts.`-1` = -1.asInstanceOf[typings.nlapack.nlapackInts.`-1`]
     
-    inline def `-2`: typings.nlapack.nlapackNumbers.`-2` = -2.asInstanceOf[typings.nlapack.nlapackNumbers.`-2`]
+    inline def `-2`: typings.nlapack.nlapackInts.`-2` = -2.asInstanceOf[typings.nlapack.nlapackInts.`-2`]
     
-    inline def `-3`: typings.nlapack.nlapackNumbers.`-3` = -3.asInstanceOf[typings.nlapack.nlapackNumbers.`-3`]
+    inline def `-3`: typings.nlapack.nlapackInts.`-3` = -3.asInstanceOf[typings.nlapack.nlapackInts.`-3`]
     
-    inline def `-4`: typings.nlapack.nlapackNumbers.`-4` = -4.asInstanceOf[typings.nlapack.nlapackNumbers.`-4`]
+    inline def `-4`: typings.nlapack.nlapackInts.`-4` = -4.asInstanceOf[typings.nlapack.nlapackInts.`-4`]
     
-    inline def `-5`: typings.nlapack.nlapackNumbers.`-5` = -5.asInstanceOf[typings.nlapack.nlapackNumbers.`-5`]
+    inline def `-5`: typings.nlapack.nlapackInts.`-5` = -5.asInstanceOf[typings.nlapack.nlapackInts.`-5`]
     
-    inline def `-6`: typings.nlapack.nlapackNumbers.`-6` = -6.asInstanceOf[typings.nlapack.nlapackNumbers.`-6`]
+    inline def `-6`: typings.nlapack.nlapackInts.`-6` = -6.asInstanceOf[typings.nlapack.nlapackInts.`-6`]
     
-    inline def `0`: typings.nlapack.nlapackNumbers.`0` = 0.asInstanceOf[typings.nlapack.nlapackNumbers.`0`]
+    inline def `0`: typings.nlapack.nlapackInts.`0` = 0.asInstanceOf[typings.nlapack.nlapackInts.`0`]
     
-    inline def `1`: typings.nlapack.nlapackNumbers.`1` = 1.asInstanceOf[typings.nlapack.nlapackNumbers.`1`]
+    inline def `1`: typings.nlapack.nlapackInts.`1` = 1.asInstanceOf[typings.nlapack.nlapackInts.`1`]
     
-    inline def `2`: typings.nlapack.nlapackNumbers.`2` = 2.asInstanceOf[typings.nlapack.nlapackNumbers.`2`]
+    inline def `2`: typings.nlapack.nlapackInts.`2` = 2.asInstanceOf[typings.nlapack.nlapackInts.`2`]
     
-    inline def `3`: typings.nlapack.nlapackNumbers.`3` = 3.asInstanceOf[typings.nlapack.nlapackNumbers.`3`]
+    inline def `3`: typings.nlapack.nlapackInts.`3` = 3.asInstanceOf[typings.nlapack.nlapackInts.`3`]
     
-    inline def `4`: typings.nlapack.nlapackNumbers.`4` = 4.asInstanceOf[typings.nlapack.nlapackNumbers.`4`]
+    inline def `4`: typings.nlapack.nlapackInts.`4` = 4.asInstanceOf[typings.nlapack.nlapackInts.`4`]
     
-    inline def `5`: typings.nlapack.nlapackNumbers.`5` = 5.asInstanceOf[typings.nlapack.nlapackNumbers.`5`]
+    inline def `5`: typings.nlapack.nlapackInts.`5` = 5.asInstanceOf[typings.nlapack.nlapackInts.`5`]
     
-    inline def `6`: typings.nlapack.nlapackNumbers.`6` = 6.asInstanceOf[typings.nlapack.nlapackNumbers.`6`]
+    inline def `6`: typings.nlapack.nlapackInts.`6` = 6.asInstanceOf[typings.nlapack.nlapackInts.`6`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`49`
-    - typings.nlapack.nlapackNumbers.`48`
-    - typings.nlapack.nlapackNumbers.`73`
+    - typings.nlapack.nlapackInts.`49`
+    - typings.nlapack.nlapackInts.`48`
+    - typings.nlapack.nlapackInts.`73`
   */
   trait MatrixNorm extends StObject
   object MatrixNorm {
     
-    inline def `48`: typings.nlapack.nlapackNumbers.`48` = 48.asInstanceOf[typings.nlapack.nlapackNumbers.`48`]
+    inline def `48`: typings.nlapack.nlapackInts.`48` = 48.asInstanceOf[typings.nlapack.nlapackInts.`48`]
     
-    inline def `49`: typings.nlapack.nlapackNumbers.`49` = 49.asInstanceOf[typings.nlapack.nlapackNumbers.`49`]
+    inline def `49`: typings.nlapack.nlapackInts.`49` = 49.asInstanceOf[typings.nlapack.nlapackInts.`49`]
     
-    inline def `73`: typings.nlapack.nlapackNumbers.`73` = 73.asInstanceOf[typings.nlapack.nlapackNumbers.`73`]
+    inline def `73`: typings.nlapack.nlapackInts.`73` = 73.asInstanceOf[typings.nlapack.nlapackInts.`73`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`78`
-    - typings.nlapack.nlapackNumbers.`85`
-    - typings.nlapack.nlapackNumbers.`76`
-    - typings.nlapack.nlapackNumbers.`66`
-    - typings.nlapack.nlapackNumbers.`81`
-    - typings.nlapack.nlapackNumbers.`90`
+    - typings.nlapack.nlapackInts.`78`
+    - typings.nlapack.nlapackInts.`85`
+    - typings.nlapack.nlapackInts.`76`
+    - typings.nlapack.nlapackInts.`66`
+    - typings.nlapack.nlapackInts.`81`
+    - typings.nlapack.nlapackInts.`90`
   */
   trait MatrixPacking extends StObject
   object MatrixPacking {
     
-    inline def `66`: typings.nlapack.nlapackNumbers.`66` = 66.asInstanceOf[typings.nlapack.nlapackNumbers.`66`]
+    inline def `66`: typings.nlapack.nlapackInts.`66` = 66.asInstanceOf[typings.nlapack.nlapackInts.`66`]
     
-    inline def `76`: typings.nlapack.nlapackNumbers.`76` = 76.asInstanceOf[typings.nlapack.nlapackNumbers.`76`]
+    inline def `76`: typings.nlapack.nlapackInts.`76` = 76.asInstanceOf[typings.nlapack.nlapackInts.`76`]
     
-    inline def `78`: typings.nlapack.nlapackNumbers.`78` = 78.asInstanceOf[typings.nlapack.nlapackNumbers.`78`]
+    inline def `78`: typings.nlapack.nlapackInts.`78` = 78.asInstanceOf[typings.nlapack.nlapackInts.`78`]
     
-    inline def `81`: typings.nlapack.nlapackNumbers.`81` = 81.asInstanceOf[typings.nlapack.nlapackNumbers.`81`]
+    inline def `81`: typings.nlapack.nlapackInts.`81` = 81.asInstanceOf[typings.nlapack.nlapackInts.`81`]
     
-    inline def `85`: typings.nlapack.nlapackNumbers.`85` = 85.asInstanceOf[typings.nlapack.nlapackNumbers.`85`]
+    inline def `85`: typings.nlapack.nlapackInts.`85` = 85.asInstanceOf[typings.nlapack.nlapackInts.`85`]
     
-    inline def `90`: typings.nlapack.nlapackNumbers.`90` = 90.asInstanceOf[typings.nlapack.nlapackNumbers.`90`]
+    inline def `90`: typings.nlapack.nlapackInts.`90` = 90.asInstanceOf[typings.nlapack.nlapackInts.`90`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`83`
-    - typings.nlapack.nlapackNumbers.`72`
-    - typings.nlapack.nlapackNumbers.`80`
-    - typings.nlapack.nlapackNumbers.`78`
+    - typings.nlapack.nlapackInts.`83`
+    - typings.nlapack.nlapackInts.`72`
+    - typings.nlapack.nlapackInts.`80`
+    - typings.nlapack.nlapackInts.`78`
   */
   trait MatrixSymmetry extends StObject
   object MatrixSymmetry {
     
-    inline def `72`: typings.nlapack.nlapackNumbers.`72` = 72.asInstanceOf[typings.nlapack.nlapackNumbers.`72`]
+    inline def `72`: typings.nlapack.nlapackInts.`72` = 72.asInstanceOf[typings.nlapack.nlapackInts.`72`]
     
-    inline def `78`: typings.nlapack.nlapackNumbers.`78` = 78.asInstanceOf[typings.nlapack.nlapackNumbers.`78`]
+    inline def `78`: typings.nlapack.nlapackInts.`78` = 78.asInstanceOf[typings.nlapack.nlapackInts.`78`]
     
-    inline def `80`: typings.nlapack.nlapackNumbers.`80` = 80.asInstanceOf[typings.nlapack.nlapackNumbers.`80`]
+    inline def `80`: typings.nlapack.nlapackInts.`80` = 80.asInstanceOf[typings.nlapack.nlapackInts.`80`]
     
-    inline def `83`: typings.nlapack.nlapackNumbers.`83` = 83.asInstanceOf[typings.nlapack.nlapackNumbers.`83`]
+    inline def `83`: typings.nlapack.nlapackInts.`83` = 83.asInstanceOf[typings.nlapack.nlapackInts.`83`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`78`
-    - typings.nlapack.nlapackNumbers.`84`
-    - typings.nlapack.nlapackNumbers.`67`
+    - typings.nlapack.nlapackInts.`78`
+    - typings.nlapack.nlapackInts.`84`
+    - typings.nlapack.nlapackInts.`67`
   */
   trait MatrixTrans extends StObject
   object MatrixTrans {
     
-    inline def `67`: typings.nlapack.nlapackNumbers.`67` = 67.asInstanceOf[typings.nlapack.nlapackNumbers.`67`]
+    inline def `67`: typings.nlapack.nlapackInts.`67` = 67.asInstanceOf[typings.nlapack.nlapackInts.`67`]
     
-    inline def `78`: typings.nlapack.nlapackNumbers.`78` = 78.asInstanceOf[typings.nlapack.nlapackNumbers.`78`]
+    inline def `78`: typings.nlapack.nlapackInts.`78` = 78.asInstanceOf[typings.nlapack.nlapackInts.`78`]
     
-    inline def `84`: typings.nlapack.nlapackNumbers.`84` = 84.asInstanceOf[typings.nlapack.nlapackNumbers.`84`]
+    inline def `84`: typings.nlapack.nlapackInts.`84` = 84.asInstanceOf[typings.nlapack.nlapackInts.`84`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`78`
-    - typings.nlapack.nlapackNumbers.`85`
+    - typings.nlapack.nlapackInts.`78`
+    - typings.nlapack.nlapackInts.`85`
   */
   trait MatrixUnit extends StObject
   object MatrixUnit {
     
-    inline def `78`: typings.nlapack.nlapackNumbers.`78` = 78.asInstanceOf[typings.nlapack.nlapackNumbers.`78`]
+    inline def `78`: typings.nlapack.nlapackInts.`78` = 78.asInstanceOf[typings.nlapack.nlapackInts.`78`]
     
-    inline def `85`: typings.nlapack.nlapackNumbers.`85` = 85.asInstanceOf[typings.nlapack.nlapackNumbers.`85`]
+    inline def `85`: typings.nlapack.nlapackInts.`85` = 85.asInstanceOf[typings.nlapack.nlapackInts.`85`]
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nlapack.nlapackNumbers.`85`
-    - typings.nlapack.nlapackNumbers.`76`
+    - typings.nlapack.nlapackInts.`85`
+    - typings.nlapack.nlapackInts.`76`
   */
   trait MatrixUpperLower extends StObject
   object MatrixUpperLower {
     
-    inline def `76`: typings.nlapack.nlapackNumbers.`76` = 76.asInstanceOf[typings.nlapack.nlapackNumbers.`76`]
+    inline def `76`: typings.nlapack.nlapackInts.`76` = 76.asInstanceOf[typings.nlapack.nlapackInts.`76`]
     
-    inline def `85`: typings.nlapack.nlapackNumbers.`85` = 85.asInstanceOf[typings.nlapack.nlapackNumbers.`85`]
+    inline def `85`: typings.nlapack.nlapackInts.`85` = 85.asInstanceOf[typings.nlapack.nlapackInts.`85`]
   }
 }

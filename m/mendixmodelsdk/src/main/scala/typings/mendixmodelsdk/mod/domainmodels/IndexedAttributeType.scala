@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.IndexedAttributeType")
 @js.native
-class IndexedAttributeType protected ()
+open class IndexedAttributeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.IndexedAttributeType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

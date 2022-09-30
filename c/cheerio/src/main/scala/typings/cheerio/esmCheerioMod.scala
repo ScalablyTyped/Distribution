@@ -164,7 +164,7 @@ object esmCheerioMod {
     ): R = js.native
     
     def attr[T /* <: AnyNode */](): js.UndefOr[Record[String, String]] = js.native
-    def attr[T /* <: AnyNode */](name: String): js.UndefOr[String] = js.native
+    def attr[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
     def attr[T /* <: AnyNode */](name: String, value: String): Cheerio[T] = js.native
     def attr[T /* <: AnyNode */](
       name: String,
@@ -172,7 +172,7 @@ object esmCheerioMod {
     ): Cheerio[T] = js.native
     def attr[T /* <: AnyNode */](values: Record[String, String | Null]): Cheerio[T] = js.native
     @JSName("attr")
-    def attr_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
+    def attr_T_Union[T /* <: AnyNode */](name: String): js.UndefOr[String] = js.native
     
     def data[T /* <: AnyNode */](): Record[String, Any] = js.native
     def data[T /* <: AnyNode */](name: String): js.UndefOr[Any] = js.native
@@ -182,7 +182,7 @@ object esmCheerioMod {
     def hasClass[T /* <: AnyNode */](className: String): Boolean = js.native
     
     def prop[T /* <: AnyNode */](name: href | innerHTML | innerText | nodeName | outerHTML | src | tagName | textContent): js.UndefOr[String] = js.native
-    def prop[T /* <: AnyNode */](name: String): String = js.native
+    def prop[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
     def prop[T /* <: AnyNode */](name: String, value: String): Cheerio[T] = js.native
     def prop[T /* <: AnyNode */](
       name: String,
@@ -198,7 +198,7 @@ object esmCheerioMod {
         ]
     ): Cheerio[T] = js.native
     @JSName("prop")
-    def prop_T_AnyNode_Cheerio[T /* <: AnyNode */](name: String): Cheerio[T] = js.native
+    def prop_T_String[T /* <: AnyNode */](name: String): String = js.native
     @JSName("prop")
     def prop_attribs[T /* <: AnyNode */](name: attribs): StringDictionary[String] = js.native
     @JSName("prop")

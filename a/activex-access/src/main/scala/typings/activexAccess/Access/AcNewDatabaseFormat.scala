@@ -1,18 +1,18 @@
 package typings.activexAccess.Access
 
-import typings.activexAccess.activexAccessNumbers.`0`
-import typings.activexAccess.activexAccessNumbers.`10`
-import typings.activexAccess.activexAccessNumbers.`12`
-import typings.activexAccess.activexAccessNumbers.`9`
+import typings.activexAccess.activexAccessInts.`0`
+import typings.activexAccess.activexAccessInts.`10`
+import typings.activexAccess.activexAccessInts.`12`
+import typings.activexAccess.activexAccessInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAccess.activexAccessNumbers.`9`
-  - typings.activexAccess.activexAccessNumbers.`10`
-  - typings.activexAccess.activexAccessNumbers.`12`
-  - typings.activexAccess.activexAccessNumbers.`0`
+  - typings.activexAccess.activexAccessInts.`9`
+  - typings.activexAccess.activexAccessInts.`10`
+  - typings.activexAccess.activexAccessInts.`12`
+  - typings.activexAccess.activexAccessInts.`0`
 */
 trait AcNewDatabaseFormat extends StObject
 object AcNewDatabaseFormat {

@@ -26,7 +26,7 @@ trait Document
      with ClientObject {
   
   /**
-    * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+    * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -37,12 +37,12 @@ trait Document
     * Gets or sets the ChangeTracking mode.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var changeTrackingMode: ChangeTrackingMode | Off | TrackAll | TrackMineOnly = js.native
   
   /**
-    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -54,7 +54,45 @@ trait Document
   var context_Document: RequestContext = js.native
   
   /**
-    * Gets the document's endnotes in a single body. Read-only.
+    * Gets the custom XML parts in the document.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val customXmlParts: CustomXmlPartCollection = js.native
+  
+  /**
+    * Deletes a bookmark, if it exists, from the document.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param name Required. The bookmark name, which is case-insensitive.
+    */
+  def deleteBookmark(name: String): Unit = js.native
+  
+  /**
+    * Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param name Required. The bookmark name, which is case-insensitive.
+    */
+  def getBookmarkRange(name: String): Range = js.native
+  
+  /**
+    * Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param name Required. The bookmark name, which is case-insensitive.
+    */
+  def getBookmarkRangeOrNullObject(name: String): Range = js.native
+  
+  /**
+    * Gets the document's endnotes in a single body.
     Not implemented in Word on the web.
     *
     * @remarks
@@ -63,7 +101,7 @@ trait Document
   def getEndnoteBody(): Body = js.native
   
   /**
-    * Gets the document's footnotes in a single body. Read-only.
+    * Gets the document's footnotes in a single body.
     Not implemented in Word on the web.
     *
     * @remarks
@@ -91,7 +129,7 @@ trait Document
   def load(propertyNames: js.Array[String]): Document = js.native
   
   /**
-    * Gets the properties of the document. Read-only.
+    * Gets the properties of the document.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -107,7 +145,7 @@ trait Document
   def save(): Unit = js.native
   
   /**
-    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+    * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -125,7 +163,7 @@ trait Document
   def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
   
   /**
-    * Gets the collection of section objects in the document. Read-only.
+    * Gets the collection of section objects in the document.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -141,6 +179,14 @@ trait Document
     */
   def set(properties: DocumentUpdateData): Unit = js.native
   def set(properties: DocumentUpdateData, options: UpdateOptions): Unit = js.native
+  
+  /**
+    * Gets the add-in's settings in the document.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val settings: SettingCollection = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

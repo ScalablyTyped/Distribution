@@ -356,6 +356,11 @@ object mod {
     
     inline def bringData_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bring-data")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.bug")
+    @js.native
+    def bug: String = js.native
+    inline def bug_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bug")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.buggy")
     @js.native
     def buggy: String = js.native
@@ -3715,6 +3720,12 @@ object mod {
     
     inline def BUGGY__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUGGY")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.BUG")
+    @js.native
+    def BUG_ : BlueprintIcons16Id = js.native
+    
+    inline def BUG__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUG")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.BUILD")
     @js.native
     def BUILD_ : BlueprintIcons16Id = js.native
@@ -3785,6 +3796,11 @@ object mod {
     @js.native
     def BringData: BlueprintIcons16Id = js.native
     inline def BringData_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BringData")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.Bug")
+    @js.native
+    def Bug: BlueprintIcons16Id = js.native
+    inline def Bug_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bug")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.Buggy")
     @js.native
@@ -9257,6 +9273,10 @@ object mod {
     @js.native
     val BringData: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.Bug")
+    @js.native
+    val Bug: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.Buggy")
     @js.native
     val Buggy: js.Array[String] = js.native
@@ -11487,6 +11507,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.BringData")
     @js.native
     val BringData: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.Bug")
+    @js.native
+    val Bug: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Buggy")
     @js.native

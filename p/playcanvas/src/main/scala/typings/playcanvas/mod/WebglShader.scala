@@ -76,6 +76,13 @@ trait WebglShader extends StObject {
   
   var glVertexShader: WebGLShader
   
+  def init(): Unit
+  
+  /**
+    * Dispose the shader when the context has been lost.
+    */
+  def loseContext(): Unit
+  
   /**
     * Extract attribute and uniform information from a successfully linked shader.
     *
@@ -109,12 +116,14 @@ object WebglShader {
     glFragmentShader: WebGLShader,
     glProgram: WebGLProgram,
     glVertexShader: WebGLShader,
+    init: () => Unit,
+    loseContext: () => Unit,
     postLink: (WebglGraphicsDevice, Shader) => Boolean,
     restoreContext: (WebglGraphicsDevice, Shader) => Unit,
     samplers: js.Array[Any],
     uniforms: js.Array[Any]
   ): WebglShader = {
-    val __obj = js.Dynamic.literal(_compileShaderSource = _compileShaderSource.asInstanceOf[js.Any], _isCompiled = _isCompiled.asInstanceOf[js.Any], _processError = _processError.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], compileAndLink = js.Any.fromFunction2(compileAndLink), destroy = js.Any.fromFunction1(destroy), glFragmentShader = glFragmentShader.asInstanceOf[js.Any], glProgram = glProgram.asInstanceOf[js.Any], glVertexShader = glVertexShader.asInstanceOf[js.Any], postLink = js.Any.fromFunction2(postLink), restoreContext = js.Any.fromFunction2(restoreContext), samplers = samplers.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_compileShaderSource = _compileShaderSource.asInstanceOf[js.Any], _isCompiled = _isCompiled.asInstanceOf[js.Any], _processError = _processError.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], compileAndLink = js.Any.fromFunction2(compileAndLink), destroy = js.Any.fromFunction1(destroy), glFragmentShader = glFragmentShader.asInstanceOf[js.Any], glProgram = glProgram.asInstanceOf[js.Any], glVertexShader = glVertexShader.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), loseContext = js.Any.fromFunction0(loseContext), postLink = js.Any.fromFunction2(postLink), restoreContext = js.Any.fromFunction2(restoreContext), samplers = samplers.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebglShader]
   }
   
@@ -133,6 +142,10 @@ object WebglShader {
     inline def setGlProgram(value: WebGLProgram): Self = StObject.set(x, "glProgram", value.asInstanceOf[js.Any])
     
     inline def setGlVertexShader(value: WebGLShader): Self = StObject.set(x, "glVertexShader", value.asInstanceOf[js.Any])
+    
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    
+    inline def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
     
     inline def setPostLink(value: (WebglGraphicsDevice, Shader) => Boolean): Self = StObject.set(x, "postLink", js.Any.fromFunction2(value))
     

@@ -91,7 +91,7 @@ object mod {
   @js.native
   val Defer_ : BiTypedDecoratorN = js.native
   
-  inline def Delay_(wait: Double, args: Any*): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Delay")(List(wait.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashMethodDecorator]
+  inline def Delay_(wait: Double, args: Any*): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Delay")(scala.List(wait.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashMethodDecorator]
   
   inline def Flip_(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")().asInstanceOf[LodashDecorator]
   inline def Flip_(fn: ResolvableFunction): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")(fn.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
@@ -133,9 +133,9 @@ object mod {
   
   inline def Partial_(partials: Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Partial")(partials.asInstanceOf[Seq[js.Any]]*).asInstanceOf[PropertyDecorator]
   
-  inline def Rearg_(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
-  inline def Rearg_(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
-  inline def Rearg_(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
+  inline def Rearg_(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(scala.List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
+  inline def Rearg_(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(scala.List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
+  inline def Rearg_(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Rearg")(scala.List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "Rest")
   @js.native
@@ -224,7 +224,7 @@ object mod {
   @js.native
   val defer: BiTypedDecoratorN = js.native
   
-  inline def delay(wait: Double, args: Any*): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(List(wait.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashMethodDecorator]
+  inline def delay(wait: Double, args: Any*): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(scala.List(wait.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashMethodDecorator]
   
   inline def flip(): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")().asInstanceOf[LodashDecorator]
   inline def flip(fn: ResolvableFunction): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(fn.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
@@ -257,9 +257,9 @@ object mod {
   
   inline def partialRight(partials: Any*): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("partialRight")(partials.asInstanceOf[Seq[js.Any]]*).asInstanceOf[PropertyDecorator]
   
-  inline def rearg(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
-  inline def rearg(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
-  inline def rearg(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
+  inline def rearg(indexes: js.Array[Double], args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(scala.List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
+  inline def rearg(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(scala.List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
+  inline def rearg(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("rearg")(scala.List(indexes.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[LodashDecorator]
   
   @JSImport("lodash-decorators", "rest")
   @js.native

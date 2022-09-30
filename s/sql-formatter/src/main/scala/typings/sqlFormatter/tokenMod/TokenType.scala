@@ -80,6 +80,12 @@ object TokenType extends StObject {
   /* "DOT" */ val DOT: typings.sqlFormatter.tokenMod.TokenType.DOT & String = js.native
   
   @js.native
+  sealed trait ELSE
+    extends StObject
+       with TokenType
+  /* "ELSE" */ val ELSE: typings.sqlFormatter.tokenMod.TokenType.ELSE & String = js.native
+  
+  @js.native
   sealed trait END
     extends StObject
        with TokenType
@@ -170,12 +176,6 @@ object TokenType extends StObject {
   /* "RESERVED_COMMAND" */ val RESERVED_COMMAND: typings.sqlFormatter.tokenMod.TokenType.RESERVED_COMMAND & String = js.native
   
   @js.native
-  sealed trait RESERVED_DEPENDENT_CLAUSE
-    extends StObject
-       with TokenType
-  /* "RESERVED_DEPENDENT_CLAUSE" */ val RESERVED_DEPENDENT_CLAUSE: typings.sqlFormatter.tokenMod.TokenType.RESERVED_DEPENDENT_CLAUSE & String = js.native
-  
-  @js.native
   sealed trait RESERVED_FUNCTION_NAME
     extends StObject
        with TokenType
@@ -218,10 +218,22 @@ object TokenType extends StObject {
   /* "STRING" */ val STRING: typings.sqlFormatter.tokenMod.TokenType.STRING & String = js.native
   
   @js.native
+  sealed trait THEN
+    extends StObject
+       with TokenType
+  /* "THEN" */ val THEN: typings.sqlFormatter.tokenMod.TokenType.THEN & String = js.native
+  
+  @js.native
   sealed trait VARIABLE
     extends StObject
        with TokenType
   /* "VARIABLE" */ val VARIABLE: typings.sqlFormatter.tokenMod.TokenType.VARIABLE & String = js.native
+  
+  @js.native
+  sealed trait WHEN
+    extends StObject
+       with TokenType
+  /* "WHEN" */ val WHEN: typings.sqlFormatter.tokenMod.TokenType.WHEN & String = js.native
   
   @js.native
   sealed trait XOR

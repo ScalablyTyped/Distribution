@@ -151,7 +151,7 @@ trait Table
   def distributeColumns(): Unit = js.native
   
   /**
-    * Gets the collection of endnotes in the table. Read-only.
+    * Gets the collection of endnotes in the table.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -159,7 +159,15 @@ trait Table
   val endnotes: NoteItemCollection = js.native
   
   /**
-    * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the collection of field objects in the table.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val fields: FieldCollection = js.native
+  
+  /**
+    * Gets the font. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -167,7 +175,7 @@ trait Table
   val font: Font = js.native
   
   /**
-    * Gets the collection of footnotes in the table. Read-only.
+    * Gets the collection of footnotes in the table.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -196,7 +204,7 @@ trait Table
   def getBorder(borderLocation: BorderLocation): TableBorder = js.native
   
   /**
-    * Gets the table cell at a specified row and column. Throws an error if the specified table cell does not exist.
+    * Gets the table cell at a specified row and column. Throws an `ItemNotFound` error if the specified table cell does not exist.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -207,7 +215,7 @@ trait Table
   def getCell(rowIndex: Double, cellIndex: Double): TableCell = js.native
   
   /**
-    * Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not exist.
+    * Gets the table cell at a specified row and column. If the specified table cell does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -237,7 +245,7 @@ trait Table
   def getCellPadding(cellPaddingLocation: CellPaddingLocation): ClientResult[Double] = js.native
   
   /**
-    * Gets the next table. Throws an error if this table is the last one.
+    * Gets the next table. Throws an `ItemNotFound` error if this table is the last one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -245,7 +253,7 @@ trait Table
   def getNext(): Table = js.native
   
   /**
-    * Gets the next table. Returns a null object if this table is the last one.
+    * Gets the next table. If this table is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -253,7 +261,7 @@ trait Table
   def getNextOrNullObject(): Table = js.native
   
   /**
-    * Gets the paragraph after the table. Throws an error if there isn't a paragraph after the table.
+    * Gets the paragraph after the table. Throws an `ItemNotFound` error if there isn't a paragraph after the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -261,7 +269,7 @@ trait Table
   def getParagraphAfter(): Paragraph = js.native
   
   /**
-    * Gets the paragraph after the table. Returns a null object if there isn't a paragraph after the table.
+    * Gets the paragraph after the table. If there isn't a paragraph after the table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -269,7 +277,7 @@ trait Table
   def getParagraphAfterOrNullObject(): Paragraph = js.native
   
   /**
-    * Gets the paragraph before the table. Throws an error if there isn't a paragraph before the table.
+    * Gets the paragraph before the table. Throws an `ItemNotFound` error if there isn't a paragraph before the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -277,7 +285,7 @@ trait Table
   def getParagraphBefore(): Paragraph = js.native
   
   /**
-    * Gets the paragraph before the table. Returns a null object if there isn't a paragraph before the table.
+    * Gets the paragraph before the table. If there isn't a paragraph before the table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -365,7 +373,7 @@ trait Table
   def insertTable(rowCount: Double, columnCount: Double, insertLocation: before, values: js.Array[js.Array[String]]): Table = js.native
   
   /**
-    * Indicates whether all of the table rows are uniform. Read-only.
+    * Indicates whether all of the table rows are uniform.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -384,7 +392,20 @@ trait Table
   def load(propertyNames: js.Array[String]): Table = js.native
   
   /**
-    * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+    * Merges the cells bounded inclusively by a first and last cell.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param topRow Required. The row of the first cell
+    * @param firstCell Required. The index of the first cell in its row
+    * @param bottomRow Required. The row of the last cell
+    * @param lastCell Required. The index of the last cell in its row
+    */
+  def mergeCells(topRow: Double, firstCell: Double, bottomRow: Double, lastCell: Double): TableCell = js.native
+  
+  /**
+    * Gets the nesting level of the table. Top-level tables have level 1.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -392,7 +413,7 @@ trait Table
   val nestingLevel: Double = js.native
   
   /**
-    * Gets the parent body of the table. Read-only.
+    * Gets the parent body of the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -400,7 +421,7 @@ trait Table
   val parentBody: Body = js.native
   
   /**
-    * Gets the content control that contains the table. Throws an error if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -408,7 +429,7 @@ trait Table
   val parentContentControl: ContentControl = js.native
   
   /**
-    * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the table. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -416,7 +437,7 @@ trait Table
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    * Gets the table that contains this table. Throws an error if it is not contained in a table. Read-only.
+    * Gets the table that contains this table. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -424,7 +445,7 @@ trait Table
   val parentTable: Table = js.native
   
   /**
-    * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains this table. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -432,7 +453,7 @@ trait Table
   val parentTableCell: TableCell = js.native
   
   /**
-    * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -440,7 +461,7 @@ trait Table
   val parentTableCellOrNullObject: TableCell = js.native
   
   /**
-    * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
+    * Gets the table that contains this table. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -448,7 +469,7 @@ trait Table
   val parentTableOrNullObject: Table = js.native
   
   /**
-    * Gets the number of rows in the table. Read-only.
+    * Gets the number of rows in the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -456,7 +477,7 @@ trait Table
   val rowCount: Double = js.native
   
   /**
-    * Gets all of the table rows. Read-only.
+    * Gets all of the table rows.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -584,7 +605,7 @@ trait Table
   var styleTotalRow: Boolean = js.native
   
   /**
-    * Gets the child tables nested one level deeper. Read-only.
+    * Gets the child tables nested one level deeper.
     *
     * @remarks
     * [Api set: WordApi 1.3]

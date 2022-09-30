@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.MemberAccess")
 @js.native
-class MemberAccess protected ()
+open class MemberAccess protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.MemberAccess {
   def this(
     model: AbstractModel,

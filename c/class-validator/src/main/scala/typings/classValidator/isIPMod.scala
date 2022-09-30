@@ -25,16 +25,16 @@ object isIPMod {
   inline def isIP(value: Any, version: IsIpVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(value.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.classValidator.classValidatorNumbers.`4`
-    - typings.classValidator.classValidatorNumbers.`6`
+    - typings.classValidator.classValidatorInts.`4`
+    - typings.classValidator.classValidatorInts.`6`
     - typings.classValidator.classValidatorStrings.`4`
     - typings.classValidator.classValidatorStrings.`6`
   */
   trait IsIpVersion extends StObject
   object IsIpVersion {
     
-    inline def `4`: typings.classValidator.classValidatorNumbers.`4` = 4.asInstanceOf[typings.classValidator.classValidatorNumbers.`4`]
+    inline def `4`: typings.classValidator.classValidatorInts.`4` = 4.asInstanceOf[typings.classValidator.classValidatorInts.`4`]
     
-    inline def `6`: typings.classValidator.classValidatorNumbers.`6` = 6.asInstanceOf[typings.classValidator.classValidatorNumbers.`6`]
+    inline def `6`: typings.classValidator.classValidatorInts.`6` = 6.asInstanceOf[typings.classValidator.classValidatorInts.`6`]
   }
 }

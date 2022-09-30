@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.cacheManager.anon.Create
 import typings.cacheManager.cacheManagerStrings.memory
 import typings.cacheManager.cacheManagerStrings.none
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -237,5 +238,5 @@ object mod {
   
   type TtlFunction = js.Function1[/* result */ Any, Double]
   
-  type WrapArgsType[T] = String | (js.Function1[/* callback */ CallbackFunc[T], Unit]) | CachingConfig | CallbackFunc[T] | (js.Function0[js.Thenable[T] | T])
+  type WrapArgsType[T] = String | (js.Function1[/* callback */ CallbackFunc[T], Unit]) | CachingConfig | CallbackFunc[T] | (js.Function0[PromiseLike[T] | T])
 }

@@ -7,7 +7,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import typings.std.Omit
 import typings.std.Record
-import typings.wordpressApiFetch.mod.Schema.User
 import typings.wordpressBlockEditor.alignmentToolbarMod.AlignmentToolbar.Props
 import typings.wordpressBlockEditor.anon.PartialEditorFontSizePick
 import typings.wordpressBlockEditor.anon.PartialProps
@@ -17,10 +16,11 @@ import typings.wordpressBlockEditor.mod.EditorFontSize
 import typings.wordpressBlockEditor.mod.EditorInserterItem
 import typings.wordpressBlockEditor.mod.EditorStyle
 import typings.wordpressComponents.autocompleteMod.Autocomplete.Completer
+import typings.wordpressCoreData.schemaMod.Schema.User
 import typings.wordpressEditor.anon.Typeof
 import typings.wordpressEditor.anon.TypeofApply
 import typings.wordpressEditor.anon.TypeofApplySlot
-import typings.wordpressEditor.anon.TypeofButtonBlockerAppender
+import typings.wordpressEditor.anon.TypeofButtonBlockAppender
 import typings.wordpressEditor.anon.TypeofContent
 import typings.wordpressEditor.anon.TypeofSlot
 import typings.wordpressEditor.anon.TypeofimportedActions
@@ -170,7 +170,7 @@ object mod {
   
   @JSImport("@wordpress/editor", "InnerBlocks")
   @js.native
-  val InnerBlocks: TypeofButtonBlockerAppender = js.native
+  val InnerBlocks: TypeofButtonBlockAppender = js.native
   
   @JSImport("@wordpress/editor", "Inserter")
   @js.native
@@ -452,10 +452,10 @@ object mod {
   
   inline def createCustomColorsHOC[T /* <: js.Array[String] */](colorsArray: js.Array[EditorColor]): js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomColorsHOC")(colorsArray.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ]]
   
   inline def getColorClassName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")().asInstanceOf[js.UndefOr[String]]
@@ -488,23 +488,23 @@ object mod {
     
     @JSImport("@wordpress/editor", "storeConfig.actions")
     @js.native
-    def actions: js.Any = js.native
-    inline def actions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("actions")(x.asInstanceOf[js.Any])
+    def actions: Any = js.native
+    inline def actions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("actions")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/editor", "storeConfig.controls")
     @js.native
-    def controls: js.Any = js.native
-    inline def controls_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controls")(x.asInstanceOf[js.Any])
+    def controls: Any = js.native
+    inline def controls_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controls")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/editor", "storeConfig.reducer")
     @js.native
-    def reducer: js.Any = js.native
-    inline def reducer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reducer")(x.asInstanceOf[js.Any])
+    def reducer: Any = js.native
+    inline def reducer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reducer")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/editor", "storeConfig.selectors")
     @js.native
-    def selectors: js.Any = js.native
-    inline def selectors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectors")(x.asInstanceOf[js.Any])
+    def selectors: Any = js.native
+    inline def selectors_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectors")(x.asInstanceOf[js.Any])
   }
   
   inline def transformStyles(styles: js.Array[EditorStyle]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
@@ -515,29 +515,29 @@ object mod {
   val userAutocompleter: Completer[User[view]] = js.native
   
   // prettier-ignore
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ]]
-  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
-    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+    (Omit[Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
   ]]
   
   @JSImport("@wordpress/editor", "withColors")
   @js.native
   val withColors: js.Function1[
     /* repeated */ String | (Record[String, String]), 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = js.native
   
   @JSImport("@wordpress/editor", "withFontSizes")
   @js.native
   val withFontSizes: js.Function1[
     /* repeated */ String, 
-    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+    js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]
   ] = js.native
   
   /* augmented module */

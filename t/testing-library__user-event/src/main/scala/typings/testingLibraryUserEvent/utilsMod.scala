@@ -24,8 +24,8 @@ import typings.testingLibraryUserEvent.prepareDocumentMod.global.Node
 import typings.testingLibraryUserEvent.readNextDescriptorMod.Context
 import typings.testingLibraryUserEvent.setupSetupMod.Config
 import typings.testingLibraryUserEvent.setupSetupMod.Instance
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`-1`
-import typings.testingLibraryUserEvent.testingLibraryUserEventNumbers.`1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`-1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`1`
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.`object`
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.`var`
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.a
@@ -196,7 +196,7 @@ object utilsMod {
   
   inline def cloneEvent[E /* <: Event */](event: E): E = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneEvent")(event.asInstanceOf[js.Any]).asInstanceOf[E]
   
-  inline def createClipboardItem(window: Window & (/* globalThis */ Any), blobs: (Blob | String)*): ClipboardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createClipboardItem")(List(window.asInstanceOf[js.Any]).`++`(blobs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClipboardItem]
+  inline def createClipboardItem(window: Window & (/* globalThis */ Any), blobs: (Blob | String)*): ClipboardItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createClipboardItem")(scala.List(window.asInstanceOf[js.Any]).`++`(blobs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClipboardItem]
   
   inline def createDataTransfer(window: Window & (/* globalThis */ Any)): DataTransfer = ^.asInstanceOf[js.Dynamic].applyDynamic("createDataTransfer")(window.asInstanceOf[js.Any]).asInstanceOf[DataTransfer]
   inline def createDataTransfer(window: Window & (/* globalThis */ Any), files: js.Array[File]): DataTransfer = (^.asInstanceOf[js.Dynamic].applyDynamic("createDataTransfer")(window.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[DataTransfer]

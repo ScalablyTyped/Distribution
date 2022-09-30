@@ -1,8 +1,8 @@
 package typings.iitc
 
-import typings.iitc.iitcNumbers.`0`
-import typings.iitc.iitcNumbers.`1`
-import typings.iitc.iitcNumbers.`2`
+import typings.iitc.iitcInts.`0`
+import typings.iitc.iitcInts.`1`
+import typings.iitc.iitcInts.`2`
 import typings.iitc.iitctypesMod.IITC.PortalData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

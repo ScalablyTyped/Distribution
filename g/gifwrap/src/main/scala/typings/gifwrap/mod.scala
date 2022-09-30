@@ -2,10 +2,10 @@ package typings.gifwrap
 
 import typings.gifwrap.anon.Colors
 import typings.gifwrap.anon.MaxHeight
-import typings.gifwrap.gifwrapNumbers.`0`
-import typings.gifwrap.gifwrapNumbers.`1`
-import typings.gifwrap.gifwrapNumbers.`2`
-import typings.gifwrap.gifwrapNumbers.`3`
+import typings.gifwrap.gifwrapInts.`0`
+import typings.gifwrap.gifwrapInts.`1`
+import typings.gifwrap.gifwrapInts.`2`
+import typings.gifwrap.gifwrapInts.`3`
 import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import typings.std.Set

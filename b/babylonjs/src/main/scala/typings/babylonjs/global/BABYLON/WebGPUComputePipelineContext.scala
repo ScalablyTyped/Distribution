@@ -11,7 +11,7 @@ open class WebGPUComputePipelineContext protected ()
      with typings.babylonjs.BABYLON.WebGPUComputePipelineContext {
   def this(engine: typings.babylonjs.BABYLON.WebGPUEngine) = this()
   
-  /** @hidden */
+  /** @internal */
   /* CompleteClass */
   override def _getComputeShaderCode(): String | Null = js.native
   

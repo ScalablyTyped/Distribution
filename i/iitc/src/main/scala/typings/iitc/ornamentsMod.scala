@@ -28,18 +28,18 @@ object ornamentsMod {
       */
     @JSGlobal("Ornaments")
     @js.native
-    class Ornaments_ () extends StObject {
+    open class Ornaments_ () extends StObject {
       
       // 60,
       var OVERLAY_OPACITY: Double = js.native
       
       var OVERLAY_SIZE: Double = js.native
       
-      var _beacons: LayerGroup_[js.Any] = js.native
+      var _beacons: LayerGroup_[Any] = js.native
       
-      var _frackers: LayerGroup_[js.Any] = js.native
+      var _frackers: LayerGroup_[Any] = js.native
       
-      var _layer: LayerGroup_[js.Any] = js.native
+      var _layer: LayerGroup_[Any] = js.native
       
       def addPortal(portal: Portal): Unit = js.native
       

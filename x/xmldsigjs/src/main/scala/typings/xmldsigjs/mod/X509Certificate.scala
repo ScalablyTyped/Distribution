@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "X509Certificate")
 @js.native
-class X509Certificate ()
+open class X509Certificate ()
   extends typings.xmldsigjs.pkiMod.X509Certificate {
   def this(rawData: BufferSource) = this()
 }

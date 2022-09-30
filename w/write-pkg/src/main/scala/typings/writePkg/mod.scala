@@ -7,60 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(data: JsonObject): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(data: JsonObject, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  /**
-  	Write a `package.json` file.
-  	Writes atomically and creates directories for you as needed. Sorts dependencies when writing. Preserves the indentation if the file already exists.
-  	@param path - Path to where the `package.json` file should be written or its directory.
-  	@example
-  	```
-  	import * as path from 'path';
-  	import writePackage = require('write-pkg');
-  	(async () => {
-  		await writePackage({foo: true});
-  		console.log('done');
-  		await writePackage(__dirname, {foo: true});
-  		console.log('done');
-  		await writePackage(path.join('unicorn', 'package.json'), {foo: true});
-  		console.log('done');
-  	})();
-  	```
-  	*/
-  inline def apply(path: String, data: JsonObject): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def apply(path: String, data: JsonObject, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("write-pkg", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def sync(data: JsonObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def sync(data: JsonObject, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  /**
-  	Synchronously write a `package.json` file.
-  	Writes atomically and creates directories for you as needed. Sorts dependencies when writing. Preserves the indentation if the file already exists.
-  	@param path - Path to where the `package.json` file should be written or its directory.
-  	@example
-  	```
-  	import * as path from 'path';
-  	import writePackage = require('write-pkg');
-  	writePackage.sync({foo: true});
-  	console.log('done');
-  	writePackage.sync(__dirname, {foo: true});
-  	console.log('done');
-  	writePackage.sync(path.join('unicorn', 'package.json'), {foo: true});
-  	console.log('done');
-  	```
-  	*/
-  inline def sync(path: String, data: JsonObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sync(path: String, data: JsonObject, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writePackage(data: JsonObject): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("writePackage")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def writePackage(data: JsonObject, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writePackage")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writePackage(path: String, data: JsonObject): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writePackage")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writePackage(path: String, data: JsonObject, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writePackage")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def writePackageSync(data: JsonObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("writePackageSync")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def writePackageSync(data: JsonObject, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writePackageSync")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writePackageSync(path: String, data: JsonObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writePackageSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writePackageSync(path: String, data: JsonObject, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writePackageSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
     /**
-    		Remove empty `dependencies`, `devDependencies`, `optionalDependencies` and `peerDependencies` objects.
-    		@default true
-    		*/
+    	The indentation to use for new files.
+    	Accepts `'\t'` for tab indentation or a number of spaces.
+    	If the file already exists, the existing indentation will be used.
+    	Default: Auto-detected or `'\t'`
+    	*/
+    val indent: js.UndefOr[String | Double] = js.undefined
+    
+    /**
+    	Remove empty `dependencies`, `devDependencies`, `optionalDependencies` and `peerDependencies` objects.
+    	@default true
+    	*/
     val normalize: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -71,6 +45,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setIndent(value: String | Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
       inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       

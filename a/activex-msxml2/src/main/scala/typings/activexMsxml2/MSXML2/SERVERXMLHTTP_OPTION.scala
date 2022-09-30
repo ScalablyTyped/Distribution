@@ -1,21 +1,21 @@
 package typings.activexMsxml2.MSXML2
 
-import typings.activexMsxml2.activexMsxml2Numbers.`-1`
-import typings.activexMsxml2.activexMsxml2Numbers.`0`
-import typings.activexMsxml2.activexMsxml2Numbers.`1`
-import typings.activexMsxml2.activexMsxml2Numbers.`2`
-import typings.activexMsxml2.activexMsxml2Numbers.`3`
+import typings.activexMsxml2.activexMsxml2Ints.`-1`
+import typings.activexMsxml2.activexMsxml2Ints.`0`
+import typings.activexMsxml2.activexMsxml2Ints.`1`
+import typings.activexMsxml2.activexMsxml2Ints.`2`
+import typings.activexMsxml2.activexMsxml2Ints.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for ServerXMLHTTPRequest Option property */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMsxml2.activexMsxml2Numbers.`1`
-  - typings.activexMsxml2.activexMsxml2Numbers.`2`
-  - typings.activexMsxml2.activexMsxml2Numbers.`3`
-  - typings.activexMsxml2.activexMsxml2Numbers.`-1`
-  - typings.activexMsxml2.activexMsxml2Numbers.`0`
+  - typings.activexMsxml2.activexMsxml2Ints.`1`
+  - typings.activexMsxml2.activexMsxml2Ints.`2`
+  - typings.activexMsxml2.activexMsxml2Ints.`3`
+  - typings.activexMsxml2.activexMsxml2Ints.`-1`
+  - typings.activexMsxml2.activexMsxml2Ints.`0`
 */
 trait SERVERXMLHTTP_OPTION extends StObject
 object SERVERXMLHTTP_OPTION {

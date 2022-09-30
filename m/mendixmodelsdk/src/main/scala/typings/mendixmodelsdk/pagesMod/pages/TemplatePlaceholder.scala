@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.13.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplatePlaceholder")
 @js.native
-class TemplatePlaceholder protected () extends Widget {
+open class TemplatePlaceholder protected () extends Widget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -32,7 +32,7 @@ class TemplatePlaceholder protected () extends Widget {
 }
 object TemplatePlaceholder {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplatePlaceholder")
   @js.native
   val ^ : js.Any = js.native
   
@@ -276,13 +276,13 @@ object TemplatePlaceholder {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): TemplatePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplatePlaceholder]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplatePlaceholder.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplatePlaceholder.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.TemplatePlaceholder.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

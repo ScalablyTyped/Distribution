@@ -1,6 +1,5 @@
 package typings.xadesjs
 
-import typings.std.Uint8Array
 import typings.xadesjs.xmlBaseMod.XadesObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object encapsulatedPkiDataMod {
   
-  @JSImport("xadesjs/build/types/xml/encapsulated_pki_data", "EncapsulatedPKIData")
+  @JSImport("xadesjs/build/types/src/xml/encapsulated_pki_data", "EncapsulatedPKIData")
   @js.native
-  class EncapsulatedPKIData () extends XadesObject {
+  open class EncapsulatedPKIData () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Encoding: EncodingType = js.native
     
     var Id: String = js.native
     
-    var Value: Uint8Array = js.native
+    var Value: js.typedarray.Uint8Array = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

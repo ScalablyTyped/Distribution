@@ -6,20 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait PseudoFullscreen extends StObject {
+  trait False extends StObject {
     
-    var pseudoFullscreen: Boolean
+    var `false`: String
+    
+    var `true`: String
   }
-  object PseudoFullscreen {
+  object False {
     
-    inline def apply(pseudoFullscreen: Boolean): PseudoFullscreen = {
-      val __obj = js.Dynamic.literal(pseudoFullscreen = pseudoFullscreen.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PseudoFullscreen]
+    inline def apply(`false`: String, `true`: String): False = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("false")(`false`.asInstanceOf[js.Any])
+      __obj.updateDynamic("true")(`true`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[False]
     }
     
-    extension [Self <: PseudoFullscreen](x: Self) {
+    extension [Self <: False](x: Self) {
       
-      inline def setPseudoFullscreen(value: Boolean): Self = StObject.set(x, "pseudoFullscreen", value.asInstanceOf[js.Any])
+      inline def setFalse(value: String): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
+      
+      inline def setTrue(value: String): Self = StObject.set(x, "true", value.asInstanceOf[js.Any])
     }
   }
 }

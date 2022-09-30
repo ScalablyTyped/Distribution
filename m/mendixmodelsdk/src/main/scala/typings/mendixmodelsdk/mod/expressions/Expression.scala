@@ -14,12 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interfaces and instance classes for types from the Mendix sub meta model `Expressions`.
   */
 /**
-  * See: {@link https://docs.mendix.com/refguide/expressions relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide9/expressions relevant section in reference guide}
   *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
   * @ignore
   *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
 @JSImport("mendixmodelsdk", "expressions.Expression")

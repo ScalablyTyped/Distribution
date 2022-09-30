@@ -3,6 +3,7 @@ package typings.esfxDisposable
 import typings.esfxDisposable.anon.TypeofAsyncDisposableStac
 import typings.esfxDisposable.asyncDisposableMod.AsyncDisposable
 import typings.esfxDisposable.disposableMod.Disposable
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,14 +49,14 @@ object asyncDisposableStackMod {
       */
     def use(value: AsyncDisposable): AsyncDisposable = js.native
     def use(value: Disposable): Disposable = js.native
-    def use[T /* <: js.Function0[Unit | js.Thenable[Unit]] */](value: T): T = js.native
+    def use[T /* <: js.Function0[Unit | PromiseLike[Unit]] */](value: T): T = js.native
     /**
       * Pushes a new disposable resource onto the disposable stack stack. Resources are disposed in the reverse order they were entered.
       * @param value The resource to add.
       * @param onDispose The operation to perform when the resource is disposed.
       * @returns The resource provided.
       */
-    def use[T](value: T, onDisposeAsync: js.Function1[/* value */ T, Unit | js.Thenable[Unit]]): T = js.native
+    def use[T](value: T, onDisposeAsync: js.Function1[/* value */ T, Unit | PromiseLike[Unit]]): T = js.native
   }
   /* static members */
   object AsyncDisposableStack {
@@ -73,9 +74,9 @@ object asyncDisposableStackMod {
   /* Rewritten from type alias, can be one of: 
     - typings.esfxDisposable.asyncDisposableMod.AsyncDisposable
     - typings.esfxDisposable.disposableMod.Disposable
-    - js.Function0[scala.Unit | js.Thenable[scala.Unit]]
+    - js.Function0[scala.Unit | typings.std.PromiseLike[scala.Unit]]
   */
-  type AsyncDisposableLike = _AsyncDisposableLike | (js.Function0[Unit | js.Thenable[Unit]])
+  type AsyncDisposableLike = _AsyncDisposableLike | (js.Function0[Unit | PromiseLike[Unit]])
   
   trait _AsyncDisposableLike extends StObject
 }

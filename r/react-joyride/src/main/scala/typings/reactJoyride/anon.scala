@@ -1,5 +1,9 @@
 package typings.reactJoyride
 
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.RefCallback
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +16,7 @@ object anon {
     
     var `data-action`: String
     
-    def onClick(): Unit
+    def onClick(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
     var role: String
     
@@ -20,8 +24,14 @@ object anon {
   }
   object Arialabel {
     
-    inline def apply(`aria-label`: String, `data-action`: String, onClick: () => Unit, role: String, title: String): Arialabel = {
-      val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), role = role.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    inline def apply(
+      `aria-label`: String,
+      `data-action`: String,
+      onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
+      role: String,
+      title: String
+    ): Arialabel = {
+      val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), role = role.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
       __obj.updateDynamic("data-action")(`data-action`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arialabel]
@@ -33,7 +43,7 @@ object anon {
       
       inline def `setData-action`(value: String): Self = StObject.set(x, "data-action", value.asInstanceOf[js.Any])
       
-      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -45,14 +55,14 @@ object anon {
     
     var `aria-modal`: Boolean
     
-    def ref(): Unit
+    var ref: RefCallback[HTMLElement]
     
     var role: String
   }
   object Ariamodal {
     
-    inline def apply(`aria-modal`: Boolean, ref: () => Unit, role: String): Ariamodal = {
-      val __obj = js.Dynamic.literal(ref = js.Any.fromFunction0(ref), role = role.asInstanceOf[js.Any])
+    inline def apply(`aria-modal`: Boolean, ref: /* instance */ HTMLElement | Null => Unit, role: String): Ariamodal = {
+      val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref), role = role.asInstanceOf[js.Any])
       __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ariamodal]
     }
@@ -61,7 +71,7 @@ object anon {
       
       inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
-      inline def setRef(value: () => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRef(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }

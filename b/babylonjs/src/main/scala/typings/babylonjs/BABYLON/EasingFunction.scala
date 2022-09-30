@@ -11,8 +11,7 @@ trait EasingFunction
   /* private */ var _easingMode: Any
   
   /**
-    * @param gradient
-    * @hidden
+    * @internal
     */
   def easeInCore(gradient: Double): Double
   

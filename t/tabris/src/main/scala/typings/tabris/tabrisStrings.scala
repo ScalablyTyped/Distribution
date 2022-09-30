@@ -927,10 +927,6 @@ object tabrisStrings {
   inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait nextLeftparenthesisRightparenthesis extends StObject
-  inline def nextLeftparenthesisRightparenthesis: nextLeftparenthesisRightparenthesis = "next()".asInstanceOf[nextLeftparenthesisRightparenthesis]
-  
-  @js.native
   sealed trait `no-cache` extends StObject
   inline def `no-cache`: `no-cache` = "no-cache".asInstanceOf[`no-cache`]
   
@@ -1098,10 +1094,6 @@ object tabrisStrings {
   @js.native
   sealed trait prefetch extends StObject
   inline def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
-  
-  @js.native
-  sealed trait prevLeftparenthesisRightparenthesis extends StObject
-  inline def prevLeftparenthesisRightparenthesis: prevLeftparenthesisRightparenthesis = "prev()".asInstanceOf[prevLeftparenthesisRightparenthesis]
   
   @js.native
   sealed trait progress extends StObject

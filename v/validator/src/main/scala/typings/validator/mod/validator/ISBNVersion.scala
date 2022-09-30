@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.validator.validatorNumbers.`10`
-  - typings.validator.validatorNumbers.`13`
+  - typings.validator.validatorInts.`10`
+  - typings.validator.validatorInts.`13`
   - typings.validator.validatorStrings.`10`
   - typings.validator.validatorStrings.`13`
 */
 trait ISBNVersion extends StObject
 object ISBNVersion {
   
-  inline def `10`: typings.validator.validatorNumbers.`10` = 10.asInstanceOf[typings.validator.validatorNumbers.`10`]
+  inline def `10`: typings.validator.validatorInts.`10` = 10.asInstanceOf[typings.validator.validatorInts.`10`]
   
-  inline def `13`: typings.validator.validatorNumbers.`13` = 13.asInstanceOf[typings.validator.validatorNumbers.`13`]
+  inline def `13`: typings.validator.validatorInts.`13` = 13.asInstanceOf[typings.validator.validatorInts.`13`]
 }

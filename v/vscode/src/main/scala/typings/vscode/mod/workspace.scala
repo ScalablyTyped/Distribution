@@ -187,9 +187,9 @@ object workspace {
   @js.native
   val textDocuments: js.Array[TextDocument] = js.native
   
-  inline def updateWorkspaceFolders(start: Double, deleteCount: Double, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
-  inline def updateWorkspaceFolders(start: Double, deleteCount: Null, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
-  inline def updateWorkspaceFolders(start: Double, deleteCount: Unit, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def updateWorkspaceFolders(start: Double, deleteCount: Double, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def updateWorkspaceFolders(start: Double, deleteCount: Null, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
+  inline def updateWorkspaceFolders(start: Double, deleteCount: Unit, workspaceFoldersToAdd: Name*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("updateWorkspaceFolders")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(workspaceFoldersToAdd.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Boolean]
   
   @JSImport("vscode", "workspace.workspaceFile")
   @js.native

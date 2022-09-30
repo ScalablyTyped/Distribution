@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object partListPropertyMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/PartListProperty", "PartListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/PartListProperty", "PartListProperty")
   @js.native
-  class PartListProperty[T /* <: Element[IAbstractModel] */] protected ()
+  open class PartListProperty[T /* <: Element[IAbstractModel] */] protected ()
     extends AbstractProperty[js.Array[T], IList[T]] {
     /**
       * parent is the structure that the value of this property attaches to,
@@ -34,10 +34,10 @@ object partListPropertyMod {
       parent: Structure[IAbstractModel, IContainer | Null],
       name: String,
       initialValue: js.Array[T],
-      moreArgs: js.Any*
+      moreArgs: Any*
     ) = this()
     
-    /* private */ var _detaching: js.Any = js.native
+    /* private */ var _detaching: Any = js.native
     
     def detachChild(child: T): Unit = js.native
     

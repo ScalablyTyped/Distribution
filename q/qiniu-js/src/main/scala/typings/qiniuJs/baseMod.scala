@@ -3,7 +3,7 @@ package typings.qiniuJs
 import org.scalablytyped.runtime.StringDictionary
 import typings.qiniuJs.anon.PartialExtra
 import typings.qiniuJs.errorsMod.QiniuError
-import typings.qiniuJs.helperMod.Response
+import typings.qiniuJs.helperMod.ResponseSuccess
 import typings.qiniuJs.hostsMod.Host
 import typings.qiniuJs.hostsMod.HostPool
 import typings.qiniuJs.loggerMod.LogLevel
@@ -106,7 +106,7 @@ object baseMod {
       * @returns utils.Response<any>
       * @description 子类通过该方法实现具体的任务处理
       */
-    /* protected */ def run(): Response[Any] = js.native
+    /* protected */ def run(): js.Promise[ResponseSuccess[Any]] = js.native
     
     /* private */ var sendLog: Any = js.native
     

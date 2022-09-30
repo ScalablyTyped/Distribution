@@ -28,11 +28,11 @@ object UnderlyingSource {
   
   extension [Self <: UnderlyingSource[?], R](x: Self & UnderlyingSource[R]) {
     
-    inline def setCancel(value: /* reason */ js.UndefOr[Any] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* reason */ js.UndefOr[Any] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    inline def setPull(value: /* controller */ ReadableStreamController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
+    inline def setPull(value: /* controller */ ReadableStreamController[R] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     

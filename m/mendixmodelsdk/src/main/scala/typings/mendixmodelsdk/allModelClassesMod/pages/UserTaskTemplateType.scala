@@ -12,11 +12,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * In version 8.15.0: introduced
+  * In version 9.0.2: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.UserTaskTemplateType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.UserTaskTemplateType")
 @js.native
-class UserTaskTemplateType protected ()
+open class UserTaskTemplateType protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.UserTaskTemplateType {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class UserTaskTemplateType protected ()
 }
 object UserTaskTemplateType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.UserTaskTemplateType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.UserTaskTemplateType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,19 +47,19 @@ object UserTaskTemplateType {
     * of the parent PageTemplate element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.15.0 and higher
+    *  9.0.2 and higher
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.PageTemplate): typings.mendixmodelsdk.pagesMod.pages.UserTaskTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.UserTaskTemplateType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.UserTaskTemplateType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.UserTaskTemplateType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.UserTaskTemplateType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.UserTaskTemplateType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

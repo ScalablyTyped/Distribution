@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.PageVariable")
 @js.native
-class PageVariable protected ()
+open class PageVariable protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.PageVariable {
   def this(
     model: AbstractModel,
@@ -74,6 +74,17 @@ object PageVariable {
     */
   /* static member */
   inline def createInNanoflowParameterMappingUnderVariable(container: typings.mendixmodelsdk.pagesMod.pages.NanoflowParameterMapping): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
+  
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'variable' property
+    * of the parent PageParameterMapping element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.7.0 and higher
+    */
+  /* static member */
+  inline def createInPageParameterMappingUnderVariable(container: typings.mendixmodelsdk.pagesMod.pages.PageParameterMapping): typings.mendixmodelsdk.pagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.

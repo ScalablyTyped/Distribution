@@ -14,5 +14,5 @@ object utilMod {
   
   inline def installTimerFunctions(obj: Any, opts: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("installTimerFunctions")(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def pick(obj: Any, attr: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(List(obj.asInstanceOf[js.Any]).`++`(attr.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def pick(obj: Any, attr: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(scala.List(obj.asInstanceOf[js.Any]).`++`(attr.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

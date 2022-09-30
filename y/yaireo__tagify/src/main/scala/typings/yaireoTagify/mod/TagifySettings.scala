@@ -3,8 +3,8 @@ package typings.yaireoTagify.mod
 import org.scalablytyped.runtime.TopLevel
 import typings.yaireoTagify.anon.PartialInvalidTagsMessage
 import typings.yaireoTagify.yaireoTagifyBooleans.`false`
-import typings.yaireoTagify.yaireoTagifyNumbers.`1`
-import typings.yaireoTagify.yaireoTagifyNumbers.`2`
+import typings.yaireoTagify.yaireoTagifyInts.`1`
+import typings.yaireoTagify.yaireoTagifyInts.`2`
 import typings.yaireoTagify.yaireoTagifyStrings.edit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

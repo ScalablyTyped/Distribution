@@ -861,7 +861,7 @@ object Constants {
   /**
     * Prefixes used by the engine for sub mesh draw wrappers
     */
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.Constants.RENDERPASS_MAIN")
   @js.native
   val RENDERPASS_MAIN: /* 0 */ Double = js.native

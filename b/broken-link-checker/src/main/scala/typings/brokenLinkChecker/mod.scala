@@ -4,10 +4,10 @@ import typings.brokenLinkChecker.anon.Complete
 import typings.brokenLinkChecker.anon.End
 import typings.brokenLinkChecker.anon.Html
 import typings.brokenLinkChecker.anon.Link
-import typings.brokenLinkChecker.brokenLinkCheckerNumbers.`0`
-import typings.brokenLinkChecker.brokenLinkCheckerNumbers.`1`
-import typings.brokenLinkChecker.brokenLinkCheckerNumbers.`2`
-import typings.brokenLinkChecker.brokenLinkCheckerNumbers.`3`
+import typings.brokenLinkChecker.brokenLinkCheckerInts.`0`
+import typings.brokenLinkChecker.brokenLinkCheckerInts.`1`
+import typings.brokenLinkChecker.brokenLinkCheckerInts.`2`
+import typings.brokenLinkChecker.brokenLinkCheckerInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

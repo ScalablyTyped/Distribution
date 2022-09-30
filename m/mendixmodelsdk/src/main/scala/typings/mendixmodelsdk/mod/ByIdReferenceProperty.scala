@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "ByIdReferenceProperty")
 @js.native
-class ByIdReferenceProperty[T /* <: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container] */] protected ()
+open class ByIdReferenceProperty[T /* <: typings.mendixmodelsdk.elementsMod.AbstractElement[IAbstractModel, Container] */] protected ()
   extends typings.mendixmodelsdk.propertiesMod.ByIdReferenceProperty[T] {
   /**
     * parent is the structure that the value of this property attaches to,
@@ -25,13 +25,13 @@ class ByIdReferenceProperty[T /* <: typings.mendixmodelsdk.elementsMod.AbstractE
     parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: T,
-    moreArgs: js.Any*
+    moreArgs: Any*
   ) = this()
   def this(
     declaredOn: IStructureClass,
     parent: typings.mendixmodelsdk.structuresMod.Structure[IAbstractModel, IContainer | Null],
     name: String,
     initialValue: Null,
-    moreArgs: js.Any*
+    moreArgs: Any*
   ) = this()
 }

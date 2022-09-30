@@ -186,7 +186,7 @@ trait titlestringReactElementun extends StObject {
   /**
     * If true, disable all interactions for this component.
     */
-  var disabled: js.UndefOr[Boolean] & (js.UndefOr[Boolean | Null])
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -368,7 +368,7 @@ trait titlestringReactElementun extends StObject {
     *
     * @platform android
     */
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *(Apple TV only)* Object with properties to control Apple TV parallax effects.
@@ -398,8 +398,8 @@ trait titlestringReactElementun extends StObject {
 }
 object titlestringReactElementun {
   
-  inline def apply(disabled: js.UndefOr[Boolean] & (js.UndefOr[Boolean | Null])): titlestringReactElementun = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
+  inline def apply(): titlestringReactElementun = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[titlestringReactElementun]
   }
   
@@ -501,7 +501,7 @@ object titlestringReactElementun {
     
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
-    inline def setDisabled(value: js.UndefOr[Boolean] & (js.UndefOr[Boolean | Null])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
@@ -514,6 +514,8 @@ object titlestringReactElementun {
     inline def setDisabledTitleStyleNull: Self = StObject.set(x, "disabledTitleStyle", null)
     
     inline def setDisabledTitleStyleUndefined: Self = StObject.set(x, "disabledTitleStyle", js.undefined)
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     
@@ -676,8 +678,6 @@ object titlestringReactElementun {
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

@@ -9,6 +9,7 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
 import typings.std.Location
 import typings.std.NodeList
+import typings.std.PromiseLike
 import typings.std.URL
 import typings.std.Window
 import typings.std.XMLHttpRequest
@@ -555,8 +556,8 @@ object mod extends Shortcut {
     
     def apply(network: String): HelloJSStatic = js.native
     
-    def api(): js.Thenable[Any] = js.native
-    def api(options: js.Object): js.Thenable[Any] = js.native
+    def api(): PromiseLike[Any] = js.native
+    def api(options: js.Object): PromiseLike[Any] = js.native
     def api(
       path: js.UndefOr[String],
       query: js.UndefOr[js.Object],
@@ -564,22 +565,22 @@ object mod extends Shortcut {
       data: js.UndefOr[js.Object],
       timeout: js.UndefOr[Double],
       callback: js.UndefOr[js.Function1[/* json */ Any, Unit]]
-    ): js.Thenable[Any] = js.native
-    def api(path: String): js.Thenable[Any] = js.native
-    def api(path: String, method: String): js.Thenable[Any] = js.native
-    def api(path: String, method: String, data: js.Object): js.Thenable[Any] = js.native
-    def api(path: String, method: String, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
-    def api(path: String, method: String, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
-    def api(path: String, method: Unit, data: js.Object): js.Thenable[Any] = js.native
-    def api(path: String, method: Unit, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
-    def api(path: String, method: Unit, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
-    def api(path: Unit, method: String): js.Thenable[Any] = js.native
-    def api(path: Unit, method: String, data: js.Object): js.Thenable[Any] = js.native
-    def api(path: Unit, method: String, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
-    def api(path: Unit, method: String, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
-    def api(path: Unit, method: Unit, data: js.Object): js.Thenable[Any] = js.native
-    def api(path: Unit, method: Unit, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
-    def api(path: Unit, method: Unit, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    ): PromiseLike[Any] = js.native
+    def api(path: String): PromiseLike[Any] = js.native
+    def api(path: String, method: String): PromiseLike[Any] = js.native
+    def api(path: String, method: String, data: js.Object): PromiseLike[Any] = js.native
+    def api(path: String, method: String, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
+    def api(path: String, method: String, data: Unit, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
+    def api(path: String, method: Unit, data: js.Object): PromiseLike[Any] = js.native
+    def api(path: String, method: Unit, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
+    def api(path: String, method: Unit, data: Unit, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
+    def api(path: Unit, method: String): PromiseLike[Any] = js.native
+    def api(path: Unit, method: String, data: js.Object): PromiseLike[Any] = js.native
+    def api(path: Unit, method: String, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
+    def api(path: Unit, method: String, data: Unit, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
+    def api(path: Unit, method: Unit, data: js.Object): PromiseLike[Any] = js.native
+    def api(path: Unit, method: Unit, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
+    def api(path: Unit, method: Unit, data: Unit, callback: js.Function1[/* json */ Any, Unit]): PromiseLike[Any] = js.native
     
     def getAuthResponse(): HelloJSAuthResponse = js.native
     def getAuthResponse(network: String): HelloJSAuthResponse = js.native
@@ -587,31 +588,31 @@ object mod extends Shortcut {
     def init(serviceAppIdsOrDefs: StringDictionary[String | HelloJSServiceDef]): Unit = js.native
     def init(serviceAppIdsOrDefs: StringDictionary[String | HelloJSServiceDef], options: HelloJSLoginOptions): Unit = js.native
     
-    def login(): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: String): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: String, options: Unit, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: String, options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: String, options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: Unit, options: Unit, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: Unit, options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: Unit, options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(options: Unit, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
+    def login(): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(callback: js.Function0[Unit]): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(network: String): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(network: String, options: Unit, callback: js.Function0[Unit]): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(network: String, options: HelloJSLoginOptions): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(network: String, options: HelloJSLoginOptions, callback: js.Function0[Unit]): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(network: Unit, options: Unit, callback: js.Function0[Unit]): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(network: Unit, options: HelloJSLoginOptions): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(network: Unit, options: HelloJSLoginOptions, callback: js.Function0[Unit]): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(options: Unit, callback: js.Function0[Unit]): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(options: HelloJSLoginOptions): PromiseLike[HelloJSLoginEventArguement] = js.native
+    def login(options: HelloJSLoginOptions, callback: js.Function0[Unit]): PromiseLike[HelloJSLoginEventArguement] = js.native
     
-    def logout(): js.Thenable[Any] = js.native
-    def logout(callback: js.Function0[Unit]): js.Thenable[Any] = js.native
-    def logout(network: String): js.Thenable[Any] = js.native
-    def logout(network: String, options: Unit, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
-    def logout(network: String, options: HelloJSLogoutOptions): js.Thenable[Any] = js.native
-    def logout(network: String, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
-    def logout(network: Unit, options: Unit, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
-    def logout(network: Unit, options: HelloJSLogoutOptions): js.Thenable[Any] = js.native
-    def logout(network: Unit, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
-    def logout(options: Unit, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
-    def logout(options: HelloJSLogoutOptions): js.Thenable[Any] = js.native
-    def logout(options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
+    def logout(): PromiseLike[Any] = js.native
+    def logout(callback: js.Function0[Unit]): PromiseLike[Any] = js.native
+    def logout(network: String): PromiseLike[Any] = js.native
+    def logout(network: String, options: Unit, callback: js.Function0[Unit]): PromiseLike[Any] = js.native
+    def logout(network: String, options: HelloJSLogoutOptions): PromiseLike[Any] = js.native
+    def logout(network: String, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): PromiseLike[Any] = js.native
+    def logout(network: Unit, options: Unit, callback: js.Function0[Unit]): PromiseLike[Any] = js.native
+    def logout(network: Unit, options: HelloJSLogoutOptions): PromiseLike[Any] = js.native
+    def logout(network: Unit, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): PromiseLike[Any] = js.native
+    def logout(options: Unit, callback: js.Function0[Unit]): PromiseLike[Any] = js.native
+    def logout(options: HelloJSLogoutOptions): PromiseLike[Any] = js.native
+    def logout(options: HelloJSLogoutOptions, callback: js.Function0[Unit]): PromiseLike[Any] = js.native
     
     var settings: HelloJSLoginOptions = js.native
     

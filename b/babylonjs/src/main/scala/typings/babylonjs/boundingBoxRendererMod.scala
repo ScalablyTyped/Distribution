@@ -116,7 +116,7 @@ object boundingBoxRendererMod {
     def render(renderingGroupId: Double): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var renderList: SmartArray[BoundingBox] = js.native
     
@@ -127,7 +127,7 @@ object boundingBoxRendererMod {
     def renderOcclusionBoundingBox(mesh: AbstractMesh): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def reset(): Unit = js.native
     
@@ -148,7 +148,7 @@ object boundingBoxRendererMod {
     
     trait AbstractMesh extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _showBoundingBox: Boolean
       
       /**
@@ -177,10 +177,10 @@ object boundingBoxRendererMod {
     
     trait Scene extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _boundingBoxRenderer: BoundingBoxRenderer
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _forceShowBoundingBoxes: Boolean
       
       /**

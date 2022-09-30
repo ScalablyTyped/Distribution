@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.SnippetCall")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.SnippetCall")
 @js.native
-class SnippetCall protected () extends Element[IModel] {
+open class SnippetCall protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,7 @@ class SnippetCall protected () extends Element[IModel] {
 }
 object SnippetCall {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SnippetCall")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SnippetCall")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object SnippetCall {
   inline def createIn(container: SnippetCallWidget): SnippetCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SnippetCall]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SnippetCall.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SnippetCall.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SnippetCall.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.SnippetCall.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

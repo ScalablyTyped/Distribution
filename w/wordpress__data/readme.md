@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__data
 
-Typings are for version 4.6
+Typings are for version 6.0
 
 ## Library description:
 Data module for WordPress.
@@ -10,10 +10,10 @@ Data module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/data |
 | Keywords           | wordpress, gutenberg, data, redux |
-| # releases         | 38 |
-| # dependents       | 34 |
-| # downloads        | 1108710 |
-| # stars            | 0 |
+| # releases         | 70 |
+| # dependents       | 0.0 |
+| # downloads        | 202194.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/data/README.md)

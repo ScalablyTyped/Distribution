@@ -2113,1062 +2113,1062 @@ object constantsMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.multihashes.multihashesNumbers.`0x00`
-    - typings.multihashes.multihashesNumbers.`0x11`
-    - typings.multihashes.multihashesNumbers.`0x12`
-    - typings.multihashes.multihashesNumbers.`0x13`
-    - typings.multihashes.multihashesNumbers.`0x14`
-    - typings.multihashes.multihashesNumbers.`0x15`
-    - typings.multihashes.multihashesNumbers.`0x16`
-    - typings.multihashes.multihashesNumbers.`0x17`
-    - typings.multihashes.multihashesNumbers.`0x18`
-    - typings.multihashes.multihashesNumbers.`0x19`
-    - typings.multihashes.multihashesNumbers.`0x1a`
-    - typings.multihashes.multihashesNumbers.`0x1b`
-    - typings.multihashes.multihashesNumbers.`0x1c`
-    - typings.multihashes.multihashesNumbers.`0x1d`
-    - typings.multihashes.multihashesNumbers.`0x1e`
-    - typings.multihashes.multihashesNumbers.`0x22`
-    - typings.multihashes.multihashesNumbers.`0x23`
-    - typings.multihashes.multihashesNumbers.`0x56`
-    - typings.multihashes.multihashesNumbers.`0xd4`
-    - typings.multihashes.multihashesNumbers.`0xd5`
-    - typings.multihashes.multihashesNumbers.`0xd6`
-    - typings.multihashes.multihashesNumbers.`0x1012`
-    - typings.multihashes.multihashesNumbers.`0x1052`
-    - typings.multihashes.multihashesNumbers.`0x1053`
-    - typings.multihashes.multihashesNumbers.`0x1054`
-    - typings.multihashes.multihashesNumbers.`0x1055`
-    - typings.multihashes.multihashesNumbers.`0x1100`
-    - typings.multihashes.multihashesNumbers.`0x1d01`
-    - typings.multihashes.multihashesNumbers.`0x534d`
-    - typings.multihashes.multihashesNumbers.`0xb201`
-    - typings.multihashes.multihashesNumbers.`0xb202`
-    - typings.multihashes.multihashesNumbers.`0xb203`
-    - typings.multihashes.multihashesNumbers.`0xb204`
-    - typings.multihashes.multihashesNumbers.`0xb205`
-    - typings.multihashes.multihashesNumbers.`0xb206`
-    - typings.multihashes.multihashesNumbers.`0xb207`
-    - typings.multihashes.multihashesNumbers.`0xb208`
-    - typings.multihashes.multihashesNumbers.`0xb209`
-    - typings.multihashes.multihashesNumbers.`0xb20a`
-    - typings.multihashes.multihashesNumbers.`0xb20b`
-    - typings.multihashes.multihashesNumbers.`0xb20c`
-    - typings.multihashes.multihashesNumbers.`0xb20d`
-    - typings.multihashes.multihashesNumbers.`0xb20e`
-    - typings.multihashes.multihashesNumbers.`0xb20f`
-    - typings.multihashes.multihashesNumbers.`0xb210`
-    - typings.multihashes.multihashesNumbers.`0xb211`
-    - typings.multihashes.multihashesNumbers.`0xb212`
-    - typings.multihashes.multihashesNumbers.`0xb213`
-    - typings.multihashes.multihashesNumbers.`0xb214`
-    - typings.multihashes.multihashesNumbers.`0xb215`
-    - typings.multihashes.multihashesNumbers.`0xb216`
-    - typings.multihashes.multihashesNumbers.`0xb217`
-    - typings.multihashes.multihashesNumbers.`0xb218`
-    - typings.multihashes.multihashesNumbers.`0xb219`
-    - typings.multihashes.multihashesNumbers.`0xb21a`
-    - typings.multihashes.multihashesNumbers.`0xb21b`
-    - typings.multihashes.multihashesNumbers.`0xb21c`
-    - typings.multihashes.multihashesNumbers.`0xb21d`
-    - typings.multihashes.multihashesNumbers.`0xb21e`
-    - typings.multihashes.multihashesNumbers.`0xb21f`
-    - typings.multihashes.multihashesNumbers.`0xb220`
-    - typings.multihashes.multihashesNumbers.`0xb221`
-    - typings.multihashes.multihashesNumbers.`0xb222`
-    - typings.multihashes.multihashesNumbers.`0xb223`
-    - typings.multihashes.multihashesNumbers.`0xb224`
-    - typings.multihashes.multihashesNumbers.`0xb225`
-    - typings.multihashes.multihashesNumbers.`0xb226`
-    - typings.multihashes.multihashesNumbers.`0xb227`
-    - typings.multihashes.multihashesNumbers.`0xb228`
-    - typings.multihashes.multihashesNumbers.`0xb229`
-    - typings.multihashes.multihashesNumbers.`0xb22a`
-    - typings.multihashes.multihashesNumbers.`0xb22b`
-    - typings.multihashes.multihashesNumbers.`0xb22c`
-    - typings.multihashes.multihashesNumbers.`0xb22d`
-    - typings.multihashes.multihashesNumbers.`0xb22e`
-    - typings.multihashes.multihashesNumbers.`0xb22f`
-    - typings.multihashes.multihashesNumbers.`0xb230`
-    - typings.multihashes.multihashesNumbers.`0xb231`
-    - typings.multihashes.multihashesNumbers.`0xb232`
-    - typings.multihashes.multihashesNumbers.`0xb233`
-    - typings.multihashes.multihashesNumbers.`0xb234`
-    - typings.multihashes.multihashesNumbers.`0xb235`
-    - typings.multihashes.multihashesNumbers.`0xb236`
-    - typings.multihashes.multihashesNumbers.`0xb237`
-    - typings.multihashes.multihashesNumbers.`0xb238`
-    - typings.multihashes.multihashesNumbers.`0xb239`
-    - typings.multihashes.multihashesNumbers.`0xb23a`
-    - typings.multihashes.multihashesNumbers.`0xb23b`
-    - typings.multihashes.multihashesNumbers.`0xb23c`
-    - typings.multihashes.multihashesNumbers.`0xb23d`
-    - typings.multihashes.multihashesNumbers.`0xb23e`
-    - typings.multihashes.multihashesNumbers.`0xb23f`
-    - typings.multihashes.multihashesNumbers.`0xb240`
-    - typings.multihashes.multihashesNumbers.`0xb241`
-    - typings.multihashes.multihashesNumbers.`0xb242`
-    - typings.multihashes.multihashesNumbers.`0xb243`
-    - typings.multihashes.multihashesNumbers.`0xb244`
-    - typings.multihashes.multihashesNumbers.`0xb245`
-    - typings.multihashes.multihashesNumbers.`0xb246`
-    - typings.multihashes.multihashesNumbers.`0xb247`
-    - typings.multihashes.multihashesNumbers.`0xb248`
-    - typings.multihashes.multihashesNumbers.`0xb249`
-    - typings.multihashes.multihashesNumbers.`0xb24a`
-    - typings.multihashes.multihashesNumbers.`0xb24b`
-    - typings.multihashes.multihashesNumbers.`0xb24c`
-    - typings.multihashes.multihashesNumbers.`0xb24d`
-    - typings.multihashes.multihashesNumbers.`0xb24e`
-    - typings.multihashes.multihashesNumbers.`0xb24f`
-    - typings.multihashes.multihashesNumbers.`0xb250`
-    - typings.multihashes.multihashesNumbers.`0xb251`
-    - typings.multihashes.multihashesNumbers.`0xb252`
-    - typings.multihashes.multihashesNumbers.`0xb253`
-    - typings.multihashes.multihashesNumbers.`0xb254`
-    - typings.multihashes.multihashesNumbers.`0xb255`
-    - typings.multihashes.multihashesNumbers.`0xb256`
-    - typings.multihashes.multihashesNumbers.`0xb257`
-    - typings.multihashes.multihashesNumbers.`0xb258`
-    - typings.multihashes.multihashesNumbers.`0xb259`
-    - typings.multihashes.multihashesNumbers.`0xb25a`
-    - typings.multihashes.multihashesNumbers.`0xb25b`
-    - typings.multihashes.multihashesNumbers.`0xb25c`
-    - typings.multihashes.multihashesNumbers.`0xb25d`
-    - typings.multihashes.multihashesNumbers.`0xb25e`
-    - typings.multihashes.multihashesNumbers.`0xb25f`
-    - typings.multihashes.multihashesNumbers.`0xb260`
-    - typings.multihashes.multihashesNumbers.`0xb301`
-    - typings.multihashes.multihashesNumbers.`0xb302`
-    - typings.multihashes.multihashesNumbers.`0xb303`
-    - typings.multihashes.multihashesNumbers.`0xb304`
-    - typings.multihashes.multihashesNumbers.`0xb305`
-    - typings.multihashes.multihashesNumbers.`0xb306`
-    - typings.multihashes.multihashesNumbers.`0xb307`
-    - typings.multihashes.multihashesNumbers.`0xb308`
-    - typings.multihashes.multihashesNumbers.`0xb309`
-    - typings.multihashes.multihashesNumbers.`0xb30a`
-    - typings.multihashes.multihashesNumbers.`0xb30b`
-    - typings.multihashes.multihashesNumbers.`0xb30c`
-    - typings.multihashes.multihashesNumbers.`0xb30d`
-    - typings.multihashes.multihashesNumbers.`0xb30e`
-    - typings.multihashes.multihashesNumbers.`0xb30f`
-    - typings.multihashes.multihashesNumbers.`0xb310`
-    - typings.multihashes.multihashesNumbers.`0xb311`
-    - typings.multihashes.multihashesNumbers.`0xb312`
-    - typings.multihashes.multihashesNumbers.`0xb313`
-    - typings.multihashes.multihashesNumbers.`0xb314`
-    - typings.multihashes.multihashesNumbers.`0xb315`
-    - typings.multihashes.multihashesNumbers.`0xb316`
-    - typings.multihashes.multihashesNumbers.`0xb317`
-    - typings.multihashes.multihashesNumbers.`0xb318`
-    - typings.multihashes.multihashesNumbers.`0xb319`
-    - typings.multihashes.multihashesNumbers.`0xb31a`
-    - typings.multihashes.multihashesNumbers.`0xb31b`
-    - typings.multihashes.multihashesNumbers.`0xb31c`
-    - typings.multihashes.multihashesNumbers.`0xb31d`
-    - typings.multihashes.multihashesNumbers.`0xb31e`
-    - typings.multihashes.multihashesNumbers.`0xb31f`
-    - typings.multihashes.multihashesNumbers.`0xb320`
-    - typings.multihashes.multihashesNumbers.`0xb321`
-    - typings.multihashes.multihashesNumbers.`0xb322`
-    - typings.multihashes.multihashesNumbers.`0xb323`
-    - typings.multihashes.multihashesNumbers.`0xb324`
-    - typings.multihashes.multihashesNumbers.`0xb325`
-    - typings.multihashes.multihashesNumbers.`0xb326`
-    - typings.multihashes.multihashesNumbers.`0xb327`
-    - typings.multihashes.multihashesNumbers.`0xb328`
-    - typings.multihashes.multihashesNumbers.`0xb329`
-    - typings.multihashes.multihashesNumbers.`0xb32a`
-    - typings.multihashes.multihashesNumbers.`0xb32b`
-    - typings.multihashes.multihashesNumbers.`0xb32c`
-    - typings.multihashes.multihashesNumbers.`0xb32d`
-    - typings.multihashes.multihashesNumbers.`0xb32e`
-    - typings.multihashes.multihashesNumbers.`0xb32f`
-    - typings.multihashes.multihashesNumbers.`0xb330`
-    - typings.multihashes.multihashesNumbers.`0xb331`
-    - typings.multihashes.multihashesNumbers.`0xb332`
-    - typings.multihashes.multihashesNumbers.`0xb333`
-    - typings.multihashes.multihashesNumbers.`0xb334`
-    - typings.multihashes.multihashesNumbers.`0xb335`
-    - typings.multihashes.multihashesNumbers.`0xb336`
-    - typings.multihashes.multihashesNumbers.`0xb337`
-    - typings.multihashes.multihashesNumbers.`0xb338`
-    - typings.multihashes.multihashesNumbers.`0xb339`
-    - typings.multihashes.multihashesNumbers.`0xb33a`
-    - typings.multihashes.multihashesNumbers.`0xb33b`
-    - typings.multihashes.multihashesNumbers.`0xb33c`
-    - typings.multihashes.multihashesNumbers.`0xb33d`
-    - typings.multihashes.multihashesNumbers.`0xb33e`
-    - typings.multihashes.multihashesNumbers.`0xb33f`
-    - typings.multihashes.multihashesNumbers.`0xb340`
-    - typings.multihashes.multihashesNumbers.`0xb341`
-    - typings.multihashes.multihashesNumbers.`0xb342`
-    - typings.multihashes.multihashesNumbers.`0xb343`
-    - typings.multihashes.multihashesNumbers.`0xb344`
-    - typings.multihashes.multihashesNumbers.`0xb345`
-    - typings.multihashes.multihashesNumbers.`0xb346`
-    - typings.multihashes.multihashesNumbers.`0xb347`
-    - typings.multihashes.multihashesNumbers.`0xb348`
-    - typings.multihashes.multihashesNumbers.`0xb349`
-    - typings.multihashes.multihashesNumbers.`0xb34a`
-    - typings.multihashes.multihashesNumbers.`0xb34b`
-    - typings.multihashes.multihashesNumbers.`0xb34c`
-    - typings.multihashes.multihashesNumbers.`0xb34d`
-    - typings.multihashes.multihashesNumbers.`0xb34e`
-    - typings.multihashes.multihashesNumbers.`0xb34f`
-    - typings.multihashes.multihashesNumbers.`0xb350`
-    - typings.multihashes.multihashesNumbers.`0xb351`
-    - typings.multihashes.multihashesNumbers.`0xb352`
-    - typings.multihashes.multihashesNumbers.`0xb353`
-    - typings.multihashes.multihashesNumbers.`0xb354`
-    - typings.multihashes.multihashesNumbers.`0xb355`
-    - typings.multihashes.multihashesNumbers.`0xb356`
-    - typings.multihashes.multihashesNumbers.`0xb357`
-    - typings.multihashes.multihashesNumbers.`0xb358`
-    - typings.multihashes.multihashesNumbers.`0xb359`
-    - typings.multihashes.multihashesNumbers.`0xb35a`
-    - typings.multihashes.multihashesNumbers.`0xb35b`
-    - typings.multihashes.multihashesNumbers.`0xb35c`
-    - typings.multihashes.multihashesNumbers.`0xb35d`
-    - typings.multihashes.multihashesNumbers.`0xb35e`
-    - typings.multihashes.multihashesNumbers.`0xb35f`
-    - typings.multihashes.multihashesNumbers.`0xb360`
-    - typings.multihashes.multihashesNumbers.`0xb361`
-    - typings.multihashes.multihashesNumbers.`0xb362`
-    - typings.multihashes.multihashesNumbers.`0xb363`
-    - typings.multihashes.multihashesNumbers.`0xb364`
-    - typings.multihashes.multihashesNumbers.`0xb365`
-    - typings.multihashes.multihashesNumbers.`0xb366`
-    - typings.multihashes.multihashesNumbers.`0xb367`
-    - typings.multihashes.multihashesNumbers.`0xb368`
-    - typings.multihashes.multihashesNumbers.`0xb369`
-    - typings.multihashes.multihashesNumbers.`0xb36a`
-    - typings.multihashes.multihashesNumbers.`0xb36b`
-    - typings.multihashes.multihashesNumbers.`0xb36c`
-    - typings.multihashes.multihashesNumbers.`0xb36d`
-    - typings.multihashes.multihashesNumbers.`0xb36e`
-    - typings.multihashes.multihashesNumbers.`0xb36f`
-    - typings.multihashes.multihashesNumbers.`0xb370`
-    - typings.multihashes.multihashesNumbers.`0xb371`
-    - typings.multihashes.multihashesNumbers.`0xb372`
-    - typings.multihashes.multihashesNumbers.`0xb373`
-    - typings.multihashes.multihashesNumbers.`0xb374`
-    - typings.multihashes.multihashesNumbers.`0xb375`
-    - typings.multihashes.multihashesNumbers.`0xb376`
-    - typings.multihashes.multihashesNumbers.`0xb377`
-    - typings.multihashes.multihashesNumbers.`0xb378`
-    - typings.multihashes.multihashesNumbers.`0xb379`
-    - typings.multihashes.multihashesNumbers.`0xb37a`
-    - typings.multihashes.multihashesNumbers.`0xb37b`
-    - typings.multihashes.multihashesNumbers.`0xb37c`
-    - typings.multihashes.multihashesNumbers.`0xb37d`
-    - typings.multihashes.multihashesNumbers.`0xb37e`
-    - typings.multihashes.multihashesNumbers.`0xb37f`
-    - typings.multihashes.multihashesNumbers.`0xb380`
-    - typings.multihashes.multihashesNumbers.`0xb381`
-    - typings.multihashes.multihashesNumbers.`0xb382`
-    - typings.multihashes.multihashesNumbers.`0xb383`
-    - typings.multihashes.multihashesNumbers.`0xb384`
-    - typings.multihashes.multihashesNumbers.`0xb385`
-    - typings.multihashes.multihashesNumbers.`0xb386`
-    - typings.multihashes.multihashesNumbers.`0xb387`
-    - typings.multihashes.multihashesNumbers.`0xb388`
-    - typings.multihashes.multihashesNumbers.`0xb389`
-    - typings.multihashes.multihashesNumbers.`0xb38a`
-    - typings.multihashes.multihashesNumbers.`0xb38b`
-    - typings.multihashes.multihashesNumbers.`0xb38c`
-    - typings.multihashes.multihashesNumbers.`0xb38d`
-    - typings.multihashes.multihashesNumbers.`0xb38e`
-    - typings.multihashes.multihashesNumbers.`0xb38f`
-    - typings.multihashes.multihashesNumbers.`0xb390`
-    - typings.multihashes.multihashesNumbers.`0xb391`
-    - typings.multihashes.multihashesNumbers.`0xb392`
-    - typings.multihashes.multihashesNumbers.`0xb393`
-    - typings.multihashes.multihashesNumbers.`0xb394`
-    - typings.multihashes.multihashesNumbers.`0xb395`
-    - typings.multihashes.multihashesNumbers.`0xb396`
-    - typings.multihashes.multihashesNumbers.`0xb397`
-    - typings.multihashes.multihashesNumbers.`0xb398`
-    - typings.multihashes.multihashesNumbers.`0xb399`
-    - typings.multihashes.multihashesNumbers.`0xb39a`
-    - typings.multihashes.multihashesNumbers.`0xb39b`
-    - typings.multihashes.multihashesNumbers.`0xb39c`
-    - typings.multihashes.multihashesNumbers.`0xb39d`
-    - typings.multihashes.multihashesNumbers.`0xb39e`
-    - typings.multihashes.multihashesNumbers.`0xb39f`
-    - typings.multihashes.multihashesNumbers.`0xb3a0`
-    - typings.multihashes.multihashesNumbers.`0xb3a1`
-    - typings.multihashes.multihashesNumbers.`0xb3a2`
-    - typings.multihashes.multihashesNumbers.`0xb3a3`
-    - typings.multihashes.multihashesNumbers.`0xb3a4`
-    - typings.multihashes.multihashesNumbers.`0xb3a5`
-    - typings.multihashes.multihashesNumbers.`0xb3a6`
-    - typings.multihashes.multihashesNumbers.`0xb3a7`
-    - typings.multihashes.multihashesNumbers.`0xb3a8`
-    - typings.multihashes.multihashesNumbers.`0xb3a9`
-    - typings.multihashes.multihashesNumbers.`0xb3aa`
-    - typings.multihashes.multihashesNumbers.`0xb3ab`
-    - typings.multihashes.multihashesNumbers.`0xb3ac`
-    - typings.multihashes.multihashesNumbers.`0xb3ad`
-    - typings.multihashes.multihashesNumbers.`0xb3ae`
-    - typings.multihashes.multihashesNumbers.`0xb3af`
-    - typings.multihashes.multihashesNumbers.`0xb3b0`
-    - typings.multihashes.multihashesNumbers.`0xb3b1`
-    - typings.multihashes.multihashesNumbers.`0xb3b2`
-    - typings.multihashes.multihashesNumbers.`0xb3b3`
-    - typings.multihashes.multihashesNumbers.`0xb3b4`
-    - typings.multihashes.multihashesNumbers.`0xb3b5`
-    - typings.multihashes.multihashesNumbers.`0xb3b6`
-    - typings.multihashes.multihashesNumbers.`0xb3b7`
-    - typings.multihashes.multihashesNumbers.`0xb3b8`
-    - typings.multihashes.multihashesNumbers.`0xb3b9`
-    - typings.multihashes.multihashesNumbers.`0xb3ba`
-    - typings.multihashes.multihashesNumbers.`0xb3bb`
-    - typings.multihashes.multihashesNumbers.`0xb3bc`
-    - typings.multihashes.multihashesNumbers.`0xb3bd`
-    - typings.multihashes.multihashesNumbers.`0xb3be`
-    - typings.multihashes.multihashesNumbers.`0xb3bf`
-    - typings.multihashes.multihashesNumbers.`0xb3c0`
-    - typings.multihashes.multihashesNumbers.`0xb3c1`
-    - typings.multihashes.multihashesNumbers.`0xb3c2`
-    - typings.multihashes.multihashesNumbers.`0xb3c3`
-    - typings.multihashes.multihashesNumbers.`0xb3c4`
-    - typings.multihashes.multihashesNumbers.`0xb3c5`
-    - typings.multihashes.multihashesNumbers.`0xb3c6`
-    - typings.multihashes.multihashesNumbers.`0xb3c7`
-    - typings.multihashes.multihashesNumbers.`0xb3c8`
-    - typings.multihashes.multihashesNumbers.`0xb3c9`
-    - typings.multihashes.multihashesNumbers.`0xb3ca`
-    - typings.multihashes.multihashesNumbers.`0xb3cb`
-    - typings.multihashes.multihashesNumbers.`0xb3cc`
-    - typings.multihashes.multihashesNumbers.`0xb3cd`
-    - typings.multihashes.multihashesNumbers.`0xb3ce`
-    - typings.multihashes.multihashesNumbers.`0xb3cf`
-    - typings.multihashes.multihashesNumbers.`0xb3d0`
-    - typings.multihashes.multihashesNumbers.`0xb3d1`
-    - typings.multihashes.multihashesNumbers.`0xb3d2`
-    - typings.multihashes.multihashesNumbers.`0xb3d3`
-    - typings.multihashes.multihashesNumbers.`0xb3d4`
-    - typings.multihashes.multihashesNumbers.`0xb3d5`
-    - typings.multihashes.multihashesNumbers.`0xb3d6`
-    - typings.multihashes.multihashesNumbers.`0xb3d7`
-    - typings.multihashes.multihashesNumbers.`0xb3d8`
-    - typings.multihashes.multihashesNumbers.`0xb3d9`
-    - typings.multihashes.multihashesNumbers.`0xb3da`
-    - typings.multihashes.multihashesNumbers.`0xb3db`
-    - typings.multihashes.multihashesNumbers.`0xb3dc`
-    - typings.multihashes.multihashesNumbers.`0xb3dd`
-    - typings.multihashes.multihashesNumbers.`0xb3de`
-    - typings.multihashes.multihashesNumbers.`0xb3df`
-    - typings.multihashes.multihashesNumbers.`0xb3e0`
-    - typings.multihashes.multihashesNumbers.`0xb401`
-    - typings.multihashes.multihashesNumbers.`0xb402`
+    - typings.multihashes.multihashesInts.`0x00`
+    - typings.multihashes.multihashesInts.`0x11`
+    - typings.multihashes.multihashesInts.`0x12`
+    - typings.multihashes.multihashesInts.`0x13`
+    - typings.multihashes.multihashesInts.`0x14`
+    - typings.multihashes.multihashesInts.`0x15`
+    - typings.multihashes.multihashesInts.`0x16`
+    - typings.multihashes.multihashesInts.`0x17`
+    - typings.multihashes.multihashesInts.`0x18`
+    - typings.multihashes.multihashesInts.`0x19`
+    - typings.multihashes.multihashesInts.`0x1a`
+    - typings.multihashes.multihashesInts.`0x1b`
+    - typings.multihashes.multihashesInts.`0x1c`
+    - typings.multihashes.multihashesInts.`0x1d`
+    - typings.multihashes.multihashesInts.`0x1e`
+    - typings.multihashes.multihashesInts.`0x22`
+    - typings.multihashes.multihashesInts.`0x23`
+    - typings.multihashes.multihashesInts.`0x56`
+    - typings.multihashes.multihashesInts.`0xd4`
+    - typings.multihashes.multihashesInts.`0xd5`
+    - typings.multihashes.multihashesInts.`0xd6`
+    - typings.multihashes.multihashesInts.`0x1012`
+    - typings.multihashes.multihashesInts.`0x1052`
+    - typings.multihashes.multihashesInts.`0x1053`
+    - typings.multihashes.multihashesInts.`0x1054`
+    - typings.multihashes.multihashesInts.`0x1055`
+    - typings.multihashes.multihashesInts.`0x1100`
+    - typings.multihashes.multihashesInts.`0x1d01`
+    - typings.multihashes.multihashesInts.`0x534d`
+    - typings.multihashes.multihashesInts.`0xb201`
+    - typings.multihashes.multihashesInts.`0xb202`
+    - typings.multihashes.multihashesInts.`0xb203`
+    - typings.multihashes.multihashesInts.`0xb204`
+    - typings.multihashes.multihashesInts.`0xb205`
+    - typings.multihashes.multihashesInts.`0xb206`
+    - typings.multihashes.multihashesInts.`0xb207`
+    - typings.multihashes.multihashesInts.`0xb208`
+    - typings.multihashes.multihashesInts.`0xb209`
+    - typings.multihashes.multihashesInts.`0xb20a`
+    - typings.multihashes.multihashesInts.`0xb20b`
+    - typings.multihashes.multihashesInts.`0xb20c`
+    - typings.multihashes.multihashesInts.`0xb20d`
+    - typings.multihashes.multihashesInts.`0xb20e`
+    - typings.multihashes.multihashesInts.`0xb20f`
+    - typings.multihashes.multihashesInts.`0xb210`
+    - typings.multihashes.multihashesInts.`0xb211`
+    - typings.multihashes.multihashesInts.`0xb212`
+    - typings.multihashes.multihashesInts.`0xb213`
+    - typings.multihashes.multihashesInts.`0xb214`
+    - typings.multihashes.multihashesInts.`0xb215`
+    - typings.multihashes.multihashesInts.`0xb216`
+    - typings.multihashes.multihashesInts.`0xb217`
+    - typings.multihashes.multihashesInts.`0xb218`
+    - typings.multihashes.multihashesInts.`0xb219`
+    - typings.multihashes.multihashesInts.`0xb21a`
+    - typings.multihashes.multihashesInts.`0xb21b`
+    - typings.multihashes.multihashesInts.`0xb21c`
+    - typings.multihashes.multihashesInts.`0xb21d`
+    - typings.multihashes.multihashesInts.`0xb21e`
+    - typings.multihashes.multihashesInts.`0xb21f`
+    - typings.multihashes.multihashesInts.`0xb220`
+    - typings.multihashes.multihashesInts.`0xb221`
+    - typings.multihashes.multihashesInts.`0xb222`
+    - typings.multihashes.multihashesInts.`0xb223`
+    - typings.multihashes.multihashesInts.`0xb224`
+    - typings.multihashes.multihashesInts.`0xb225`
+    - typings.multihashes.multihashesInts.`0xb226`
+    - typings.multihashes.multihashesInts.`0xb227`
+    - typings.multihashes.multihashesInts.`0xb228`
+    - typings.multihashes.multihashesInts.`0xb229`
+    - typings.multihashes.multihashesInts.`0xb22a`
+    - typings.multihashes.multihashesInts.`0xb22b`
+    - typings.multihashes.multihashesInts.`0xb22c`
+    - typings.multihashes.multihashesInts.`0xb22d`
+    - typings.multihashes.multihashesInts.`0xb22e`
+    - typings.multihashes.multihashesInts.`0xb22f`
+    - typings.multihashes.multihashesInts.`0xb230`
+    - typings.multihashes.multihashesInts.`0xb231`
+    - typings.multihashes.multihashesInts.`0xb232`
+    - typings.multihashes.multihashesInts.`0xb233`
+    - typings.multihashes.multihashesInts.`0xb234`
+    - typings.multihashes.multihashesInts.`0xb235`
+    - typings.multihashes.multihashesInts.`0xb236`
+    - typings.multihashes.multihashesInts.`0xb237`
+    - typings.multihashes.multihashesInts.`0xb238`
+    - typings.multihashes.multihashesInts.`0xb239`
+    - typings.multihashes.multihashesInts.`0xb23a`
+    - typings.multihashes.multihashesInts.`0xb23b`
+    - typings.multihashes.multihashesInts.`0xb23c`
+    - typings.multihashes.multihashesInts.`0xb23d`
+    - typings.multihashes.multihashesInts.`0xb23e`
+    - typings.multihashes.multihashesInts.`0xb23f`
+    - typings.multihashes.multihashesInts.`0xb240`
+    - typings.multihashes.multihashesInts.`0xb241`
+    - typings.multihashes.multihashesInts.`0xb242`
+    - typings.multihashes.multihashesInts.`0xb243`
+    - typings.multihashes.multihashesInts.`0xb244`
+    - typings.multihashes.multihashesInts.`0xb245`
+    - typings.multihashes.multihashesInts.`0xb246`
+    - typings.multihashes.multihashesInts.`0xb247`
+    - typings.multihashes.multihashesInts.`0xb248`
+    - typings.multihashes.multihashesInts.`0xb249`
+    - typings.multihashes.multihashesInts.`0xb24a`
+    - typings.multihashes.multihashesInts.`0xb24b`
+    - typings.multihashes.multihashesInts.`0xb24c`
+    - typings.multihashes.multihashesInts.`0xb24d`
+    - typings.multihashes.multihashesInts.`0xb24e`
+    - typings.multihashes.multihashesInts.`0xb24f`
+    - typings.multihashes.multihashesInts.`0xb250`
+    - typings.multihashes.multihashesInts.`0xb251`
+    - typings.multihashes.multihashesInts.`0xb252`
+    - typings.multihashes.multihashesInts.`0xb253`
+    - typings.multihashes.multihashesInts.`0xb254`
+    - typings.multihashes.multihashesInts.`0xb255`
+    - typings.multihashes.multihashesInts.`0xb256`
+    - typings.multihashes.multihashesInts.`0xb257`
+    - typings.multihashes.multihashesInts.`0xb258`
+    - typings.multihashes.multihashesInts.`0xb259`
+    - typings.multihashes.multihashesInts.`0xb25a`
+    - typings.multihashes.multihashesInts.`0xb25b`
+    - typings.multihashes.multihashesInts.`0xb25c`
+    - typings.multihashes.multihashesInts.`0xb25d`
+    - typings.multihashes.multihashesInts.`0xb25e`
+    - typings.multihashes.multihashesInts.`0xb25f`
+    - typings.multihashes.multihashesInts.`0xb260`
+    - typings.multihashes.multihashesInts.`0xb301`
+    - typings.multihashes.multihashesInts.`0xb302`
+    - typings.multihashes.multihashesInts.`0xb303`
+    - typings.multihashes.multihashesInts.`0xb304`
+    - typings.multihashes.multihashesInts.`0xb305`
+    - typings.multihashes.multihashesInts.`0xb306`
+    - typings.multihashes.multihashesInts.`0xb307`
+    - typings.multihashes.multihashesInts.`0xb308`
+    - typings.multihashes.multihashesInts.`0xb309`
+    - typings.multihashes.multihashesInts.`0xb30a`
+    - typings.multihashes.multihashesInts.`0xb30b`
+    - typings.multihashes.multihashesInts.`0xb30c`
+    - typings.multihashes.multihashesInts.`0xb30d`
+    - typings.multihashes.multihashesInts.`0xb30e`
+    - typings.multihashes.multihashesInts.`0xb30f`
+    - typings.multihashes.multihashesInts.`0xb310`
+    - typings.multihashes.multihashesInts.`0xb311`
+    - typings.multihashes.multihashesInts.`0xb312`
+    - typings.multihashes.multihashesInts.`0xb313`
+    - typings.multihashes.multihashesInts.`0xb314`
+    - typings.multihashes.multihashesInts.`0xb315`
+    - typings.multihashes.multihashesInts.`0xb316`
+    - typings.multihashes.multihashesInts.`0xb317`
+    - typings.multihashes.multihashesInts.`0xb318`
+    - typings.multihashes.multihashesInts.`0xb319`
+    - typings.multihashes.multihashesInts.`0xb31a`
+    - typings.multihashes.multihashesInts.`0xb31b`
+    - typings.multihashes.multihashesInts.`0xb31c`
+    - typings.multihashes.multihashesInts.`0xb31d`
+    - typings.multihashes.multihashesInts.`0xb31e`
+    - typings.multihashes.multihashesInts.`0xb31f`
+    - typings.multihashes.multihashesInts.`0xb320`
+    - typings.multihashes.multihashesInts.`0xb321`
+    - typings.multihashes.multihashesInts.`0xb322`
+    - typings.multihashes.multihashesInts.`0xb323`
+    - typings.multihashes.multihashesInts.`0xb324`
+    - typings.multihashes.multihashesInts.`0xb325`
+    - typings.multihashes.multihashesInts.`0xb326`
+    - typings.multihashes.multihashesInts.`0xb327`
+    - typings.multihashes.multihashesInts.`0xb328`
+    - typings.multihashes.multihashesInts.`0xb329`
+    - typings.multihashes.multihashesInts.`0xb32a`
+    - typings.multihashes.multihashesInts.`0xb32b`
+    - typings.multihashes.multihashesInts.`0xb32c`
+    - typings.multihashes.multihashesInts.`0xb32d`
+    - typings.multihashes.multihashesInts.`0xb32e`
+    - typings.multihashes.multihashesInts.`0xb32f`
+    - typings.multihashes.multihashesInts.`0xb330`
+    - typings.multihashes.multihashesInts.`0xb331`
+    - typings.multihashes.multihashesInts.`0xb332`
+    - typings.multihashes.multihashesInts.`0xb333`
+    - typings.multihashes.multihashesInts.`0xb334`
+    - typings.multihashes.multihashesInts.`0xb335`
+    - typings.multihashes.multihashesInts.`0xb336`
+    - typings.multihashes.multihashesInts.`0xb337`
+    - typings.multihashes.multihashesInts.`0xb338`
+    - typings.multihashes.multihashesInts.`0xb339`
+    - typings.multihashes.multihashesInts.`0xb33a`
+    - typings.multihashes.multihashesInts.`0xb33b`
+    - typings.multihashes.multihashesInts.`0xb33c`
+    - typings.multihashes.multihashesInts.`0xb33d`
+    - typings.multihashes.multihashesInts.`0xb33e`
+    - typings.multihashes.multihashesInts.`0xb33f`
+    - typings.multihashes.multihashesInts.`0xb340`
+    - typings.multihashes.multihashesInts.`0xb341`
+    - typings.multihashes.multihashesInts.`0xb342`
+    - typings.multihashes.multihashesInts.`0xb343`
+    - typings.multihashes.multihashesInts.`0xb344`
+    - typings.multihashes.multihashesInts.`0xb345`
+    - typings.multihashes.multihashesInts.`0xb346`
+    - typings.multihashes.multihashesInts.`0xb347`
+    - typings.multihashes.multihashesInts.`0xb348`
+    - typings.multihashes.multihashesInts.`0xb349`
+    - typings.multihashes.multihashesInts.`0xb34a`
+    - typings.multihashes.multihashesInts.`0xb34b`
+    - typings.multihashes.multihashesInts.`0xb34c`
+    - typings.multihashes.multihashesInts.`0xb34d`
+    - typings.multihashes.multihashesInts.`0xb34e`
+    - typings.multihashes.multihashesInts.`0xb34f`
+    - typings.multihashes.multihashesInts.`0xb350`
+    - typings.multihashes.multihashesInts.`0xb351`
+    - typings.multihashes.multihashesInts.`0xb352`
+    - typings.multihashes.multihashesInts.`0xb353`
+    - typings.multihashes.multihashesInts.`0xb354`
+    - typings.multihashes.multihashesInts.`0xb355`
+    - typings.multihashes.multihashesInts.`0xb356`
+    - typings.multihashes.multihashesInts.`0xb357`
+    - typings.multihashes.multihashesInts.`0xb358`
+    - typings.multihashes.multihashesInts.`0xb359`
+    - typings.multihashes.multihashesInts.`0xb35a`
+    - typings.multihashes.multihashesInts.`0xb35b`
+    - typings.multihashes.multihashesInts.`0xb35c`
+    - typings.multihashes.multihashesInts.`0xb35d`
+    - typings.multihashes.multihashesInts.`0xb35e`
+    - typings.multihashes.multihashesInts.`0xb35f`
+    - typings.multihashes.multihashesInts.`0xb360`
+    - typings.multihashes.multihashesInts.`0xb361`
+    - typings.multihashes.multihashesInts.`0xb362`
+    - typings.multihashes.multihashesInts.`0xb363`
+    - typings.multihashes.multihashesInts.`0xb364`
+    - typings.multihashes.multihashesInts.`0xb365`
+    - typings.multihashes.multihashesInts.`0xb366`
+    - typings.multihashes.multihashesInts.`0xb367`
+    - typings.multihashes.multihashesInts.`0xb368`
+    - typings.multihashes.multihashesInts.`0xb369`
+    - typings.multihashes.multihashesInts.`0xb36a`
+    - typings.multihashes.multihashesInts.`0xb36b`
+    - typings.multihashes.multihashesInts.`0xb36c`
+    - typings.multihashes.multihashesInts.`0xb36d`
+    - typings.multihashes.multihashesInts.`0xb36e`
+    - typings.multihashes.multihashesInts.`0xb36f`
+    - typings.multihashes.multihashesInts.`0xb370`
+    - typings.multihashes.multihashesInts.`0xb371`
+    - typings.multihashes.multihashesInts.`0xb372`
+    - typings.multihashes.multihashesInts.`0xb373`
+    - typings.multihashes.multihashesInts.`0xb374`
+    - typings.multihashes.multihashesInts.`0xb375`
+    - typings.multihashes.multihashesInts.`0xb376`
+    - typings.multihashes.multihashesInts.`0xb377`
+    - typings.multihashes.multihashesInts.`0xb378`
+    - typings.multihashes.multihashesInts.`0xb379`
+    - typings.multihashes.multihashesInts.`0xb37a`
+    - typings.multihashes.multihashesInts.`0xb37b`
+    - typings.multihashes.multihashesInts.`0xb37c`
+    - typings.multihashes.multihashesInts.`0xb37d`
+    - typings.multihashes.multihashesInts.`0xb37e`
+    - typings.multihashes.multihashesInts.`0xb37f`
+    - typings.multihashes.multihashesInts.`0xb380`
+    - typings.multihashes.multihashesInts.`0xb381`
+    - typings.multihashes.multihashesInts.`0xb382`
+    - typings.multihashes.multihashesInts.`0xb383`
+    - typings.multihashes.multihashesInts.`0xb384`
+    - typings.multihashes.multihashesInts.`0xb385`
+    - typings.multihashes.multihashesInts.`0xb386`
+    - typings.multihashes.multihashesInts.`0xb387`
+    - typings.multihashes.multihashesInts.`0xb388`
+    - typings.multihashes.multihashesInts.`0xb389`
+    - typings.multihashes.multihashesInts.`0xb38a`
+    - typings.multihashes.multihashesInts.`0xb38b`
+    - typings.multihashes.multihashesInts.`0xb38c`
+    - typings.multihashes.multihashesInts.`0xb38d`
+    - typings.multihashes.multihashesInts.`0xb38e`
+    - typings.multihashes.multihashesInts.`0xb38f`
+    - typings.multihashes.multihashesInts.`0xb390`
+    - typings.multihashes.multihashesInts.`0xb391`
+    - typings.multihashes.multihashesInts.`0xb392`
+    - typings.multihashes.multihashesInts.`0xb393`
+    - typings.multihashes.multihashesInts.`0xb394`
+    - typings.multihashes.multihashesInts.`0xb395`
+    - typings.multihashes.multihashesInts.`0xb396`
+    - typings.multihashes.multihashesInts.`0xb397`
+    - typings.multihashes.multihashesInts.`0xb398`
+    - typings.multihashes.multihashesInts.`0xb399`
+    - typings.multihashes.multihashesInts.`0xb39a`
+    - typings.multihashes.multihashesInts.`0xb39b`
+    - typings.multihashes.multihashesInts.`0xb39c`
+    - typings.multihashes.multihashesInts.`0xb39d`
+    - typings.multihashes.multihashesInts.`0xb39e`
+    - typings.multihashes.multihashesInts.`0xb39f`
+    - typings.multihashes.multihashesInts.`0xb3a0`
+    - typings.multihashes.multihashesInts.`0xb3a1`
+    - typings.multihashes.multihashesInts.`0xb3a2`
+    - typings.multihashes.multihashesInts.`0xb3a3`
+    - typings.multihashes.multihashesInts.`0xb3a4`
+    - typings.multihashes.multihashesInts.`0xb3a5`
+    - typings.multihashes.multihashesInts.`0xb3a6`
+    - typings.multihashes.multihashesInts.`0xb3a7`
+    - typings.multihashes.multihashesInts.`0xb3a8`
+    - typings.multihashes.multihashesInts.`0xb3a9`
+    - typings.multihashes.multihashesInts.`0xb3aa`
+    - typings.multihashes.multihashesInts.`0xb3ab`
+    - typings.multihashes.multihashesInts.`0xb3ac`
+    - typings.multihashes.multihashesInts.`0xb3ad`
+    - typings.multihashes.multihashesInts.`0xb3ae`
+    - typings.multihashes.multihashesInts.`0xb3af`
+    - typings.multihashes.multihashesInts.`0xb3b0`
+    - typings.multihashes.multihashesInts.`0xb3b1`
+    - typings.multihashes.multihashesInts.`0xb3b2`
+    - typings.multihashes.multihashesInts.`0xb3b3`
+    - typings.multihashes.multihashesInts.`0xb3b4`
+    - typings.multihashes.multihashesInts.`0xb3b5`
+    - typings.multihashes.multihashesInts.`0xb3b6`
+    - typings.multihashes.multihashesInts.`0xb3b7`
+    - typings.multihashes.multihashesInts.`0xb3b8`
+    - typings.multihashes.multihashesInts.`0xb3b9`
+    - typings.multihashes.multihashesInts.`0xb3ba`
+    - typings.multihashes.multihashesInts.`0xb3bb`
+    - typings.multihashes.multihashesInts.`0xb3bc`
+    - typings.multihashes.multihashesInts.`0xb3bd`
+    - typings.multihashes.multihashesInts.`0xb3be`
+    - typings.multihashes.multihashesInts.`0xb3bf`
+    - typings.multihashes.multihashesInts.`0xb3c0`
+    - typings.multihashes.multihashesInts.`0xb3c1`
+    - typings.multihashes.multihashesInts.`0xb3c2`
+    - typings.multihashes.multihashesInts.`0xb3c3`
+    - typings.multihashes.multihashesInts.`0xb3c4`
+    - typings.multihashes.multihashesInts.`0xb3c5`
+    - typings.multihashes.multihashesInts.`0xb3c6`
+    - typings.multihashes.multihashesInts.`0xb3c7`
+    - typings.multihashes.multihashesInts.`0xb3c8`
+    - typings.multihashes.multihashesInts.`0xb3c9`
+    - typings.multihashes.multihashesInts.`0xb3ca`
+    - typings.multihashes.multihashesInts.`0xb3cb`
+    - typings.multihashes.multihashesInts.`0xb3cc`
+    - typings.multihashes.multihashesInts.`0xb3cd`
+    - typings.multihashes.multihashesInts.`0xb3ce`
+    - typings.multihashes.multihashesInts.`0xb3cf`
+    - typings.multihashes.multihashesInts.`0xb3d0`
+    - typings.multihashes.multihashesInts.`0xb3d1`
+    - typings.multihashes.multihashesInts.`0xb3d2`
+    - typings.multihashes.multihashesInts.`0xb3d3`
+    - typings.multihashes.multihashesInts.`0xb3d4`
+    - typings.multihashes.multihashesInts.`0xb3d5`
+    - typings.multihashes.multihashesInts.`0xb3d6`
+    - typings.multihashes.multihashesInts.`0xb3d7`
+    - typings.multihashes.multihashesInts.`0xb3d8`
+    - typings.multihashes.multihashesInts.`0xb3d9`
+    - typings.multihashes.multihashesInts.`0xb3da`
+    - typings.multihashes.multihashesInts.`0xb3db`
+    - typings.multihashes.multihashesInts.`0xb3dc`
+    - typings.multihashes.multihashesInts.`0xb3dd`
+    - typings.multihashes.multihashesInts.`0xb3de`
+    - typings.multihashes.multihashesInts.`0xb3df`
+    - typings.multihashes.multihashesInts.`0xb3e0`
+    - typings.multihashes.multihashesInts.`0xb401`
+    - typings.multihashes.multihashesInts.`0xb402`
   */
   trait HashCode extends StObject
   object HashCode {
     
-    inline def `0x00`: typings.multihashes.multihashesNumbers.`0x00` = 0x00.asInstanceOf[typings.multihashes.multihashesNumbers.`0x00`]
+    inline def `0x00`: typings.multihashes.multihashesInts.`0x00` = 0x00.asInstanceOf[typings.multihashes.multihashesInts.`0x00`]
     
-    inline def `0x1012`: typings.multihashes.multihashesNumbers.`0x1012` = 0x1012.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1012`]
+    inline def `0x1012`: typings.multihashes.multihashesInts.`0x1012` = 0x1012.asInstanceOf[typings.multihashes.multihashesInts.`0x1012`]
     
-    inline def `0x1052`: typings.multihashes.multihashesNumbers.`0x1052` = 0x1052.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1052`]
+    inline def `0x1052`: typings.multihashes.multihashesInts.`0x1052` = 0x1052.asInstanceOf[typings.multihashes.multihashesInts.`0x1052`]
     
-    inline def `0x1053`: typings.multihashes.multihashesNumbers.`0x1053` = 0x1053.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1053`]
+    inline def `0x1053`: typings.multihashes.multihashesInts.`0x1053` = 0x1053.asInstanceOf[typings.multihashes.multihashesInts.`0x1053`]
     
-    inline def `0x1054`: typings.multihashes.multihashesNumbers.`0x1054` = 0x1054.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1054`]
+    inline def `0x1054`: typings.multihashes.multihashesInts.`0x1054` = 0x1054.asInstanceOf[typings.multihashes.multihashesInts.`0x1054`]
     
-    inline def `0x1055`: typings.multihashes.multihashesNumbers.`0x1055` = 0x1055.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1055`]
+    inline def `0x1055`: typings.multihashes.multihashesInts.`0x1055` = 0x1055.asInstanceOf[typings.multihashes.multihashesInts.`0x1055`]
     
-    inline def `0x11`: typings.multihashes.multihashesNumbers.`0x11` = 0x11.asInstanceOf[typings.multihashes.multihashesNumbers.`0x11`]
+    inline def `0x11`: typings.multihashes.multihashesInts.`0x11` = 0x11.asInstanceOf[typings.multihashes.multihashesInts.`0x11`]
     
-    inline def `0x1100`: typings.multihashes.multihashesNumbers.`0x1100` = 0x1100.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1100`]
+    inline def `0x1100`: typings.multihashes.multihashesInts.`0x1100` = 0x1100.asInstanceOf[typings.multihashes.multihashesInts.`0x1100`]
     
-    inline def `0x12`: typings.multihashes.multihashesNumbers.`0x12` = 0x12.asInstanceOf[typings.multihashes.multihashesNumbers.`0x12`]
+    inline def `0x12`: typings.multihashes.multihashesInts.`0x12` = 0x12.asInstanceOf[typings.multihashes.multihashesInts.`0x12`]
     
-    inline def `0x13`: typings.multihashes.multihashesNumbers.`0x13` = 0x13.asInstanceOf[typings.multihashes.multihashesNumbers.`0x13`]
+    inline def `0x13`: typings.multihashes.multihashesInts.`0x13` = 0x13.asInstanceOf[typings.multihashes.multihashesInts.`0x13`]
     
-    inline def `0x14`: typings.multihashes.multihashesNumbers.`0x14` = 0x14.asInstanceOf[typings.multihashes.multihashesNumbers.`0x14`]
+    inline def `0x14`: typings.multihashes.multihashesInts.`0x14` = 0x14.asInstanceOf[typings.multihashes.multihashesInts.`0x14`]
     
-    inline def `0x15`: typings.multihashes.multihashesNumbers.`0x15` = 0x15.asInstanceOf[typings.multihashes.multihashesNumbers.`0x15`]
+    inline def `0x15`: typings.multihashes.multihashesInts.`0x15` = 0x15.asInstanceOf[typings.multihashes.multihashesInts.`0x15`]
     
-    inline def `0x16`: typings.multihashes.multihashesNumbers.`0x16` = 0x16.asInstanceOf[typings.multihashes.multihashesNumbers.`0x16`]
+    inline def `0x16`: typings.multihashes.multihashesInts.`0x16` = 0x16.asInstanceOf[typings.multihashes.multihashesInts.`0x16`]
     
-    inline def `0x17`: typings.multihashes.multihashesNumbers.`0x17` = 0x17.asInstanceOf[typings.multihashes.multihashesNumbers.`0x17`]
+    inline def `0x17`: typings.multihashes.multihashesInts.`0x17` = 0x17.asInstanceOf[typings.multihashes.multihashesInts.`0x17`]
     
-    inline def `0x18`: typings.multihashes.multihashesNumbers.`0x18` = 0x18.asInstanceOf[typings.multihashes.multihashesNumbers.`0x18`]
+    inline def `0x18`: typings.multihashes.multihashesInts.`0x18` = 0x18.asInstanceOf[typings.multihashes.multihashesInts.`0x18`]
     
-    inline def `0x19`: typings.multihashes.multihashesNumbers.`0x19` = 0x19.asInstanceOf[typings.multihashes.multihashesNumbers.`0x19`]
+    inline def `0x19`: typings.multihashes.multihashesInts.`0x19` = 0x19.asInstanceOf[typings.multihashes.multihashesInts.`0x19`]
     
-    inline def `0x1a`: typings.multihashes.multihashesNumbers.`0x1a` = 0x1a.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1a`]
+    inline def `0x1a`: typings.multihashes.multihashesInts.`0x1a` = 0x1a.asInstanceOf[typings.multihashes.multihashesInts.`0x1a`]
     
-    inline def `0x1b`: typings.multihashes.multihashesNumbers.`0x1b` = 0x1b.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1b`]
+    inline def `0x1b`: typings.multihashes.multihashesInts.`0x1b` = 0x1b.asInstanceOf[typings.multihashes.multihashesInts.`0x1b`]
     
-    inline def `0x1c`: typings.multihashes.multihashesNumbers.`0x1c` = 0x1c.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1c`]
+    inline def `0x1c`: typings.multihashes.multihashesInts.`0x1c` = 0x1c.asInstanceOf[typings.multihashes.multihashesInts.`0x1c`]
     
-    inline def `0x1d`: typings.multihashes.multihashesNumbers.`0x1d` = 0x1d.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1d`]
+    inline def `0x1d`: typings.multihashes.multihashesInts.`0x1d` = 0x1d.asInstanceOf[typings.multihashes.multihashesInts.`0x1d`]
     
-    inline def `0x1d01`: typings.multihashes.multihashesNumbers.`0x1d01` = 0x1d01.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1d01`]
+    inline def `0x1d01`: typings.multihashes.multihashesInts.`0x1d01` = 0x1d01.asInstanceOf[typings.multihashes.multihashesInts.`0x1d01`]
     
-    inline def `0x1e`: typings.multihashes.multihashesNumbers.`0x1e` = 0x1e.asInstanceOf[typings.multihashes.multihashesNumbers.`0x1e`]
+    inline def `0x1e`: typings.multihashes.multihashesInts.`0x1e` = 0x1e.asInstanceOf[typings.multihashes.multihashesInts.`0x1e`]
     
-    inline def `0x22`: typings.multihashes.multihashesNumbers.`0x22` = 0x22.asInstanceOf[typings.multihashes.multihashesNumbers.`0x22`]
+    inline def `0x22`: typings.multihashes.multihashesInts.`0x22` = 0x22.asInstanceOf[typings.multihashes.multihashesInts.`0x22`]
     
-    inline def `0x23`: typings.multihashes.multihashesNumbers.`0x23` = 0x23.asInstanceOf[typings.multihashes.multihashesNumbers.`0x23`]
+    inline def `0x23`: typings.multihashes.multihashesInts.`0x23` = 0x23.asInstanceOf[typings.multihashes.multihashesInts.`0x23`]
     
-    inline def `0x534d`: typings.multihashes.multihashesNumbers.`0x534d` = 0x534d.asInstanceOf[typings.multihashes.multihashesNumbers.`0x534d`]
+    inline def `0x534d`: typings.multihashes.multihashesInts.`0x534d` = 0x534d.asInstanceOf[typings.multihashes.multihashesInts.`0x534d`]
     
-    inline def `0x56`: typings.multihashes.multihashesNumbers.`0x56` = 0x56.asInstanceOf[typings.multihashes.multihashesNumbers.`0x56`]
+    inline def `0x56`: typings.multihashes.multihashesInts.`0x56` = 0x56.asInstanceOf[typings.multihashes.multihashesInts.`0x56`]
     
-    inline def `0xb201`: typings.multihashes.multihashesNumbers.`0xb201` = 0xb201.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb201`]
+    inline def `0xb201`: typings.multihashes.multihashesInts.`0xb201` = 0xb201.asInstanceOf[typings.multihashes.multihashesInts.`0xb201`]
     
-    inline def `0xb202`: typings.multihashes.multihashesNumbers.`0xb202` = 0xb202.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb202`]
+    inline def `0xb202`: typings.multihashes.multihashesInts.`0xb202` = 0xb202.asInstanceOf[typings.multihashes.multihashesInts.`0xb202`]
     
-    inline def `0xb203`: typings.multihashes.multihashesNumbers.`0xb203` = 0xb203.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb203`]
+    inline def `0xb203`: typings.multihashes.multihashesInts.`0xb203` = 0xb203.asInstanceOf[typings.multihashes.multihashesInts.`0xb203`]
     
-    inline def `0xb204`: typings.multihashes.multihashesNumbers.`0xb204` = 0xb204.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb204`]
+    inline def `0xb204`: typings.multihashes.multihashesInts.`0xb204` = 0xb204.asInstanceOf[typings.multihashes.multihashesInts.`0xb204`]
     
-    inline def `0xb205`: typings.multihashes.multihashesNumbers.`0xb205` = 0xb205.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb205`]
+    inline def `0xb205`: typings.multihashes.multihashesInts.`0xb205` = 0xb205.asInstanceOf[typings.multihashes.multihashesInts.`0xb205`]
     
-    inline def `0xb206`: typings.multihashes.multihashesNumbers.`0xb206` = 0xb206.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb206`]
+    inline def `0xb206`: typings.multihashes.multihashesInts.`0xb206` = 0xb206.asInstanceOf[typings.multihashes.multihashesInts.`0xb206`]
     
-    inline def `0xb207`: typings.multihashes.multihashesNumbers.`0xb207` = 0xb207.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb207`]
+    inline def `0xb207`: typings.multihashes.multihashesInts.`0xb207` = 0xb207.asInstanceOf[typings.multihashes.multihashesInts.`0xb207`]
     
-    inline def `0xb208`: typings.multihashes.multihashesNumbers.`0xb208` = 0xb208.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb208`]
+    inline def `0xb208`: typings.multihashes.multihashesInts.`0xb208` = 0xb208.asInstanceOf[typings.multihashes.multihashesInts.`0xb208`]
     
-    inline def `0xb209`: typings.multihashes.multihashesNumbers.`0xb209` = 0xb209.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb209`]
+    inline def `0xb209`: typings.multihashes.multihashesInts.`0xb209` = 0xb209.asInstanceOf[typings.multihashes.multihashesInts.`0xb209`]
     
-    inline def `0xb20a`: typings.multihashes.multihashesNumbers.`0xb20a` = 0xb20a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb20a`]
+    inline def `0xb20a`: typings.multihashes.multihashesInts.`0xb20a` = 0xb20a.asInstanceOf[typings.multihashes.multihashesInts.`0xb20a`]
     
-    inline def `0xb20b`: typings.multihashes.multihashesNumbers.`0xb20b` = 0xb20b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb20b`]
+    inline def `0xb20b`: typings.multihashes.multihashesInts.`0xb20b` = 0xb20b.asInstanceOf[typings.multihashes.multihashesInts.`0xb20b`]
     
-    inline def `0xb20c`: typings.multihashes.multihashesNumbers.`0xb20c` = 0xb20c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb20c`]
+    inline def `0xb20c`: typings.multihashes.multihashesInts.`0xb20c` = 0xb20c.asInstanceOf[typings.multihashes.multihashesInts.`0xb20c`]
     
-    inline def `0xb20d`: typings.multihashes.multihashesNumbers.`0xb20d` = 0xb20d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb20d`]
+    inline def `0xb20d`: typings.multihashes.multihashesInts.`0xb20d` = 0xb20d.asInstanceOf[typings.multihashes.multihashesInts.`0xb20d`]
     
-    inline def `0xb20e`: typings.multihashes.multihashesNumbers.`0xb20e` = 0xb20e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb20e`]
+    inline def `0xb20e`: typings.multihashes.multihashesInts.`0xb20e` = 0xb20e.asInstanceOf[typings.multihashes.multihashesInts.`0xb20e`]
     
-    inline def `0xb20f`: typings.multihashes.multihashesNumbers.`0xb20f` = 0xb20f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb20f`]
+    inline def `0xb20f`: typings.multihashes.multihashesInts.`0xb20f` = 0xb20f.asInstanceOf[typings.multihashes.multihashesInts.`0xb20f`]
     
-    inline def `0xb210`: typings.multihashes.multihashesNumbers.`0xb210` = 0xb210.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb210`]
+    inline def `0xb210`: typings.multihashes.multihashesInts.`0xb210` = 0xb210.asInstanceOf[typings.multihashes.multihashesInts.`0xb210`]
     
-    inline def `0xb211`: typings.multihashes.multihashesNumbers.`0xb211` = 0xb211.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb211`]
+    inline def `0xb211`: typings.multihashes.multihashesInts.`0xb211` = 0xb211.asInstanceOf[typings.multihashes.multihashesInts.`0xb211`]
     
-    inline def `0xb212`: typings.multihashes.multihashesNumbers.`0xb212` = 0xb212.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb212`]
+    inline def `0xb212`: typings.multihashes.multihashesInts.`0xb212` = 0xb212.asInstanceOf[typings.multihashes.multihashesInts.`0xb212`]
     
-    inline def `0xb213`: typings.multihashes.multihashesNumbers.`0xb213` = 0xb213.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb213`]
+    inline def `0xb213`: typings.multihashes.multihashesInts.`0xb213` = 0xb213.asInstanceOf[typings.multihashes.multihashesInts.`0xb213`]
     
-    inline def `0xb214`: typings.multihashes.multihashesNumbers.`0xb214` = 0xb214.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb214`]
+    inline def `0xb214`: typings.multihashes.multihashesInts.`0xb214` = 0xb214.asInstanceOf[typings.multihashes.multihashesInts.`0xb214`]
     
-    inline def `0xb215`: typings.multihashes.multihashesNumbers.`0xb215` = 0xb215.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb215`]
+    inline def `0xb215`: typings.multihashes.multihashesInts.`0xb215` = 0xb215.asInstanceOf[typings.multihashes.multihashesInts.`0xb215`]
     
-    inline def `0xb216`: typings.multihashes.multihashesNumbers.`0xb216` = 0xb216.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb216`]
+    inline def `0xb216`: typings.multihashes.multihashesInts.`0xb216` = 0xb216.asInstanceOf[typings.multihashes.multihashesInts.`0xb216`]
     
-    inline def `0xb217`: typings.multihashes.multihashesNumbers.`0xb217` = 0xb217.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb217`]
+    inline def `0xb217`: typings.multihashes.multihashesInts.`0xb217` = 0xb217.asInstanceOf[typings.multihashes.multihashesInts.`0xb217`]
     
-    inline def `0xb218`: typings.multihashes.multihashesNumbers.`0xb218` = 0xb218.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb218`]
+    inline def `0xb218`: typings.multihashes.multihashesInts.`0xb218` = 0xb218.asInstanceOf[typings.multihashes.multihashesInts.`0xb218`]
     
-    inline def `0xb219`: typings.multihashes.multihashesNumbers.`0xb219` = 0xb219.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb219`]
+    inline def `0xb219`: typings.multihashes.multihashesInts.`0xb219` = 0xb219.asInstanceOf[typings.multihashes.multihashesInts.`0xb219`]
     
-    inline def `0xb21a`: typings.multihashes.multihashesNumbers.`0xb21a` = 0xb21a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb21a`]
+    inline def `0xb21a`: typings.multihashes.multihashesInts.`0xb21a` = 0xb21a.asInstanceOf[typings.multihashes.multihashesInts.`0xb21a`]
     
-    inline def `0xb21b`: typings.multihashes.multihashesNumbers.`0xb21b` = 0xb21b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb21b`]
+    inline def `0xb21b`: typings.multihashes.multihashesInts.`0xb21b` = 0xb21b.asInstanceOf[typings.multihashes.multihashesInts.`0xb21b`]
     
-    inline def `0xb21c`: typings.multihashes.multihashesNumbers.`0xb21c` = 0xb21c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb21c`]
+    inline def `0xb21c`: typings.multihashes.multihashesInts.`0xb21c` = 0xb21c.asInstanceOf[typings.multihashes.multihashesInts.`0xb21c`]
     
-    inline def `0xb21d`: typings.multihashes.multihashesNumbers.`0xb21d` = 0xb21d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb21d`]
+    inline def `0xb21d`: typings.multihashes.multihashesInts.`0xb21d` = 0xb21d.asInstanceOf[typings.multihashes.multihashesInts.`0xb21d`]
     
-    inline def `0xb21e`: typings.multihashes.multihashesNumbers.`0xb21e` = 0xb21e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb21e`]
+    inline def `0xb21e`: typings.multihashes.multihashesInts.`0xb21e` = 0xb21e.asInstanceOf[typings.multihashes.multihashesInts.`0xb21e`]
     
-    inline def `0xb21f`: typings.multihashes.multihashesNumbers.`0xb21f` = 0xb21f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb21f`]
+    inline def `0xb21f`: typings.multihashes.multihashesInts.`0xb21f` = 0xb21f.asInstanceOf[typings.multihashes.multihashesInts.`0xb21f`]
     
-    inline def `0xb220`: typings.multihashes.multihashesNumbers.`0xb220` = 0xb220.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb220`]
+    inline def `0xb220`: typings.multihashes.multihashesInts.`0xb220` = 0xb220.asInstanceOf[typings.multihashes.multihashesInts.`0xb220`]
     
-    inline def `0xb221`: typings.multihashes.multihashesNumbers.`0xb221` = 0xb221.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb221`]
+    inline def `0xb221`: typings.multihashes.multihashesInts.`0xb221` = 0xb221.asInstanceOf[typings.multihashes.multihashesInts.`0xb221`]
     
-    inline def `0xb222`: typings.multihashes.multihashesNumbers.`0xb222` = 0xb222.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb222`]
+    inline def `0xb222`: typings.multihashes.multihashesInts.`0xb222` = 0xb222.asInstanceOf[typings.multihashes.multihashesInts.`0xb222`]
     
-    inline def `0xb223`: typings.multihashes.multihashesNumbers.`0xb223` = 0xb223.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb223`]
+    inline def `0xb223`: typings.multihashes.multihashesInts.`0xb223` = 0xb223.asInstanceOf[typings.multihashes.multihashesInts.`0xb223`]
     
-    inline def `0xb224`: typings.multihashes.multihashesNumbers.`0xb224` = 0xb224.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb224`]
+    inline def `0xb224`: typings.multihashes.multihashesInts.`0xb224` = 0xb224.asInstanceOf[typings.multihashes.multihashesInts.`0xb224`]
     
-    inline def `0xb225`: typings.multihashes.multihashesNumbers.`0xb225` = 0xb225.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb225`]
+    inline def `0xb225`: typings.multihashes.multihashesInts.`0xb225` = 0xb225.asInstanceOf[typings.multihashes.multihashesInts.`0xb225`]
     
-    inline def `0xb226`: typings.multihashes.multihashesNumbers.`0xb226` = 0xb226.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb226`]
+    inline def `0xb226`: typings.multihashes.multihashesInts.`0xb226` = 0xb226.asInstanceOf[typings.multihashes.multihashesInts.`0xb226`]
     
-    inline def `0xb227`: typings.multihashes.multihashesNumbers.`0xb227` = 0xb227.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb227`]
+    inline def `0xb227`: typings.multihashes.multihashesInts.`0xb227` = 0xb227.asInstanceOf[typings.multihashes.multihashesInts.`0xb227`]
     
-    inline def `0xb228`: typings.multihashes.multihashesNumbers.`0xb228` = 0xb228.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb228`]
+    inline def `0xb228`: typings.multihashes.multihashesInts.`0xb228` = 0xb228.asInstanceOf[typings.multihashes.multihashesInts.`0xb228`]
     
-    inline def `0xb229`: typings.multihashes.multihashesNumbers.`0xb229` = 0xb229.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb229`]
+    inline def `0xb229`: typings.multihashes.multihashesInts.`0xb229` = 0xb229.asInstanceOf[typings.multihashes.multihashesInts.`0xb229`]
     
-    inline def `0xb22a`: typings.multihashes.multihashesNumbers.`0xb22a` = 0xb22a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb22a`]
+    inline def `0xb22a`: typings.multihashes.multihashesInts.`0xb22a` = 0xb22a.asInstanceOf[typings.multihashes.multihashesInts.`0xb22a`]
     
-    inline def `0xb22b`: typings.multihashes.multihashesNumbers.`0xb22b` = 0xb22b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb22b`]
+    inline def `0xb22b`: typings.multihashes.multihashesInts.`0xb22b` = 0xb22b.asInstanceOf[typings.multihashes.multihashesInts.`0xb22b`]
     
-    inline def `0xb22c`: typings.multihashes.multihashesNumbers.`0xb22c` = 0xb22c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb22c`]
+    inline def `0xb22c`: typings.multihashes.multihashesInts.`0xb22c` = 0xb22c.asInstanceOf[typings.multihashes.multihashesInts.`0xb22c`]
     
-    inline def `0xb22d`: typings.multihashes.multihashesNumbers.`0xb22d` = 0xb22d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb22d`]
+    inline def `0xb22d`: typings.multihashes.multihashesInts.`0xb22d` = 0xb22d.asInstanceOf[typings.multihashes.multihashesInts.`0xb22d`]
     
-    inline def `0xb22e`: typings.multihashes.multihashesNumbers.`0xb22e` = 0xb22e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb22e`]
+    inline def `0xb22e`: typings.multihashes.multihashesInts.`0xb22e` = 0xb22e.asInstanceOf[typings.multihashes.multihashesInts.`0xb22e`]
     
-    inline def `0xb22f`: typings.multihashes.multihashesNumbers.`0xb22f` = 0xb22f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb22f`]
+    inline def `0xb22f`: typings.multihashes.multihashesInts.`0xb22f` = 0xb22f.asInstanceOf[typings.multihashes.multihashesInts.`0xb22f`]
     
-    inline def `0xb230`: typings.multihashes.multihashesNumbers.`0xb230` = 0xb230.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb230`]
+    inline def `0xb230`: typings.multihashes.multihashesInts.`0xb230` = 0xb230.asInstanceOf[typings.multihashes.multihashesInts.`0xb230`]
     
-    inline def `0xb231`: typings.multihashes.multihashesNumbers.`0xb231` = 0xb231.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb231`]
+    inline def `0xb231`: typings.multihashes.multihashesInts.`0xb231` = 0xb231.asInstanceOf[typings.multihashes.multihashesInts.`0xb231`]
     
-    inline def `0xb232`: typings.multihashes.multihashesNumbers.`0xb232` = 0xb232.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb232`]
+    inline def `0xb232`: typings.multihashes.multihashesInts.`0xb232` = 0xb232.asInstanceOf[typings.multihashes.multihashesInts.`0xb232`]
     
-    inline def `0xb233`: typings.multihashes.multihashesNumbers.`0xb233` = 0xb233.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb233`]
+    inline def `0xb233`: typings.multihashes.multihashesInts.`0xb233` = 0xb233.asInstanceOf[typings.multihashes.multihashesInts.`0xb233`]
     
-    inline def `0xb234`: typings.multihashes.multihashesNumbers.`0xb234` = 0xb234.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb234`]
+    inline def `0xb234`: typings.multihashes.multihashesInts.`0xb234` = 0xb234.asInstanceOf[typings.multihashes.multihashesInts.`0xb234`]
     
-    inline def `0xb235`: typings.multihashes.multihashesNumbers.`0xb235` = 0xb235.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb235`]
+    inline def `0xb235`: typings.multihashes.multihashesInts.`0xb235` = 0xb235.asInstanceOf[typings.multihashes.multihashesInts.`0xb235`]
     
-    inline def `0xb236`: typings.multihashes.multihashesNumbers.`0xb236` = 0xb236.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb236`]
+    inline def `0xb236`: typings.multihashes.multihashesInts.`0xb236` = 0xb236.asInstanceOf[typings.multihashes.multihashesInts.`0xb236`]
     
-    inline def `0xb237`: typings.multihashes.multihashesNumbers.`0xb237` = 0xb237.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb237`]
+    inline def `0xb237`: typings.multihashes.multihashesInts.`0xb237` = 0xb237.asInstanceOf[typings.multihashes.multihashesInts.`0xb237`]
     
-    inline def `0xb238`: typings.multihashes.multihashesNumbers.`0xb238` = 0xb238.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb238`]
+    inline def `0xb238`: typings.multihashes.multihashesInts.`0xb238` = 0xb238.asInstanceOf[typings.multihashes.multihashesInts.`0xb238`]
     
-    inline def `0xb239`: typings.multihashes.multihashesNumbers.`0xb239` = 0xb239.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb239`]
+    inline def `0xb239`: typings.multihashes.multihashesInts.`0xb239` = 0xb239.asInstanceOf[typings.multihashes.multihashesInts.`0xb239`]
     
-    inline def `0xb23a`: typings.multihashes.multihashesNumbers.`0xb23a` = 0xb23a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb23a`]
+    inline def `0xb23a`: typings.multihashes.multihashesInts.`0xb23a` = 0xb23a.asInstanceOf[typings.multihashes.multihashesInts.`0xb23a`]
     
-    inline def `0xb23b`: typings.multihashes.multihashesNumbers.`0xb23b` = 0xb23b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb23b`]
+    inline def `0xb23b`: typings.multihashes.multihashesInts.`0xb23b` = 0xb23b.asInstanceOf[typings.multihashes.multihashesInts.`0xb23b`]
     
-    inline def `0xb23c`: typings.multihashes.multihashesNumbers.`0xb23c` = 0xb23c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb23c`]
+    inline def `0xb23c`: typings.multihashes.multihashesInts.`0xb23c` = 0xb23c.asInstanceOf[typings.multihashes.multihashesInts.`0xb23c`]
     
-    inline def `0xb23d`: typings.multihashes.multihashesNumbers.`0xb23d` = 0xb23d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb23d`]
+    inline def `0xb23d`: typings.multihashes.multihashesInts.`0xb23d` = 0xb23d.asInstanceOf[typings.multihashes.multihashesInts.`0xb23d`]
     
-    inline def `0xb23e`: typings.multihashes.multihashesNumbers.`0xb23e` = 0xb23e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb23e`]
+    inline def `0xb23e`: typings.multihashes.multihashesInts.`0xb23e` = 0xb23e.asInstanceOf[typings.multihashes.multihashesInts.`0xb23e`]
     
-    inline def `0xb23f`: typings.multihashes.multihashesNumbers.`0xb23f` = 0xb23f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb23f`]
+    inline def `0xb23f`: typings.multihashes.multihashesInts.`0xb23f` = 0xb23f.asInstanceOf[typings.multihashes.multihashesInts.`0xb23f`]
     
-    inline def `0xb240`: typings.multihashes.multihashesNumbers.`0xb240` = 0xb240.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb240`]
+    inline def `0xb240`: typings.multihashes.multihashesInts.`0xb240` = 0xb240.asInstanceOf[typings.multihashes.multihashesInts.`0xb240`]
     
-    inline def `0xb241`: typings.multihashes.multihashesNumbers.`0xb241` = 0xb241.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb241`]
+    inline def `0xb241`: typings.multihashes.multihashesInts.`0xb241` = 0xb241.asInstanceOf[typings.multihashes.multihashesInts.`0xb241`]
     
-    inline def `0xb242`: typings.multihashes.multihashesNumbers.`0xb242` = 0xb242.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb242`]
+    inline def `0xb242`: typings.multihashes.multihashesInts.`0xb242` = 0xb242.asInstanceOf[typings.multihashes.multihashesInts.`0xb242`]
     
-    inline def `0xb243`: typings.multihashes.multihashesNumbers.`0xb243` = 0xb243.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb243`]
+    inline def `0xb243`: typings.multihashes.multihashesInts.`0xb243` = 0xb243.asInstanceOf[typings.multihashes.multihashesInts.`0xb243`]
     
-    inline def `0xb244`: typings.multihashes.multihashesNumbers.`0xb244` = 0xb244.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb244`]
+    inline def `0xb244`: typings.multihashes.multihashesInts.`0xb244` = 0xb244.asInstanceOf[typings.multihashes.multihashesInts.`0xb244`]
     
-    inline def `0xb245`: typings.multihashes.multihashesNumbers.`0xb245` = 0xb245.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb245`]
+    inline def `0xb245`: typings.multihashes.multihashesInts.`0xb245` = 0xb245.asInstanceOf[typings.multihashes.multihashesInts.`0xb245`]
     
-    inline def `0xb246`: typings.multihashes.multihashesNumbers.`0xb246` = 0xb246.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb246`]
+    inline def `0xb246`: typings.multihashes.multihashesInts.`0xb246` = 0xb246.asInstanceOf[typings.multihashes.multihashesInts.`0xb246`]
     
-    inline def `0xb247`: typings.multihashes.multihashesNumbers.`0xb247` = 0xb247.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb247`]
+    inline def `0xb247`: typings.multihashes.multihashesInts.`0xb247` = 0xb247.asInstanceOf[typings.multihashes.multihashesInts.`0xb247`]
     
-    inline def `0xb248`: typings.multihashes.multihashesNumbers.`0xb248` = 0xb248.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb248`]
+    inline def `0xb248`: typings.multihashes.multihashesInts.`0xb248` = 0xb248.asInstanceOf[typings.multihashes.multihashesInts.`0xb248`]
     
-    inline def `0xb249`: typings.multihashes.multihashesNumbers.`0xb249` = 0xb249.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb249`]
+    inline def `0xb249`: typings.multihashes.multihashesInts.`0xb249` = 0xb249.asInstanceOf[typings.multihashes.multihashesInts.`0xb249`]
     
-    inline def `0xb24a`: typings.multihashes.multihashesNumbers.`0xb24a` = 0xb24a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb24a`]
+    inline def `0xb24a`: typings.multihashes.multihashesInts.`0xb24a` = 0xb24a.asInstanceOf[typings.multihashes.multihashesInts.`0xb24a`]
     
-    inline def `0xb24b`: typings.multihashes.multihashesNumbers.`0xb24b` = 0xb24b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb24b`]
+    inline def `0xb24b`: typings.multihashes.multihashesInts.`0xb24b` = 0xb24b.asInstanceOf[typings.multihashes.multihashesInts.`0xb24b`]
     
-    inline def `0xb24c`: typings.multihashes.multihashesNumbers.`0xb24c` = 0xb24c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb24c`]
+    inline def `0xb24c`: typings.multihashes.multihashesInts.`0xb24c` = 0xb24c.asInstanceOf[typings.multihashes.multihashesInts.`0xb24c`]
     
-    inline def `0xb24d`: typings.multihashes.multihashesNumbers.`0xb24d` = 0xb24d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb24d`]
+    inline def `0xb24d`: typings.multihashes.multihashesInts.`0xb24d` = 0xb24d.asInstanceOf[typings.multihashes.multihashesInts.`0xb24d`]
     
-    inline def `0xb24e`: typings.multihashes.multihashesNumbers.`0xb24e` = 0xb24e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb24e`]
+    inline def `0xb24e`: typings.multihashes.multihashesInts.`0xb24e` = 0xb24e.asInstanceOf[typings.multihashes.multihashesInts.`0xb24e`]
     
-    inline def `0xb24f`: typings.multihashes.multihashesNumbers.`0xb24f` = 0xb24f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb24f`]
+    inline def `0xb24f`: typings.multihashes.multihashesInts.`0xb24f` = 0xb24f.asInstanceOf[typings.multihashes.multihashesInts.`0xb24f`]
     
-    inline def `0xb250`: typings.multihashes.multihashesNumbers.`0xb250` = 0xb250.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb250`]
+    inline def `0xb250`: typings.multihashes.multihashesInts.`0xb250` = 0xb250.asInstanceOf[typings.multihashes.multihashesInts.`0xb250`]
     
-    inline def `0xb251`: typings.multihashes.multihashesNumbers.`0xb251` = 0xb251.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb251`]
+    inline def `0xb251`: typings.multihashes.multihashesInts.`0xb251` = 0xb251.asInstanceOf[typings.multihashes.multihashesInts.`0xb251`]
     
-    inline def `0xb252`: typings.multihashes.multihashesNumbers.`0xb252` = 0xb252.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb252`]
+    inline def `0xb252`: typings.multihashes.multihashesInts.`0xb252` = 0xb252.asInstanceOf[typings.multihashes.multihashesInts.`0xb252`]
     
-    inline def `0xb253`: typings.multihashes.multihashesNumbers.`0xb253` = 0xb253.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb253`]
+    inline def `0xb253`: typings.multihashes.multihashesInts.`0xb253` = 0xb253.asInstanceOf[typings.multihashes.multihashesInts.`0xb253`]
     
-    inline def `0xb254`: typings.multihashes.multihashesNumbers.`0xb254` = 0xb254.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb254`]
+    inline def `0xb254`: typings.multihashes.multihashesInts.`0xb254` = 0xb254.asInstanceOf[typings.multihashes.multihashesInts.`0xb254`]
     
-    inline def `0xb255`: typings.multihashes.multihashesNumbers.`0xb255` = 0xb255.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb255`]
+    inline def `0xb255`: typings.multihashes.multihashesInts.`0xb255` = 0xb255.asInstanceOf[typings.multihashes.multihashesInts.`0xb255`]
     
-    inline def `0xb256`: typings.multihashes.multihashesNumbers.`0xb256` = 0xb256.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb256`]
+    inline def `0xb256`: typings.multihashes.multihashesInts.`0xb256` = 0xb256.asInstanceOf[typings.multihashes.multihashesInts.`0xb256`]
     
-    inline def `0xb257`: typings.multihashes.multihashesNumbers.`0xb257` = 0xb257.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb257`]
+    inline def `0xb257`: typings.multihashes.multihashesInts.`0xb257` = 0xb257.asInstanceOf[typings.multihashes.multihashesInts.`0xb257`]
     
-    inline def `0xb258`: typings.multihashes.multihashesNumbers.`0xb258` = 0xb258.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb258`]
+    inline def `0xb258`: typings.multihashes.multihashesInts.`0xb258` = 0xb258.asInstanceOf[typings.multihashes.multihashesInts.`0xb258`]
     
-    inline def `0xb259`: typings.multihashes.multihashesNumbers.`0xb259` = 0xb259.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb259`]
+    inline def `0xb259`: typings.multihashes.multihashesInts.`0xb259` = 0xb259.asInstanceOf[typings.multihashes.multihashesInts.`0xb259`]
     
-    inline def `0xb25a`: typings.multihashes.multihashesNumbers.`0xb25a` = 0xb25a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb25a`]
+    inline def `0xb25a`: typings.multihashes.multihashesInts.`0xb25a` = 0xb25a.asInstanceOf[typings.multihashes.multihashesInts.`0xb25a`]
     
-    inline def `0xb25b`: typings.multihashes.multihashesNumbers.`0xb25b` = 0xb25b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb25b`]
+    inline def `0xb25b`: typings.multihashes.multihashesInts.`0xb25b` = 0xb25b.asInstanceOf[typings.multihashes.multihashesInts.`0xb25b`]
     
-    inline def `0xb25c`: typings.multihashes.multihashesNumbers.`0xb25c` = 0xb25c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb25c`]
+    inline def `0xb25c`: typings.multihashes.multihashesInts.`0xb25c` = 0xb25c.asInstanceOf[typings.multihashes.multihashesInts.`0xb25c`]
     
-    inline def `0xb25d`: typings.multihashes.multihashesNumbers.`0xb25d` = 0xb25d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb25d`]
+    inline def `0xb25d`: typings.multihashes.multihashesInts.`0xb25d` = 0xb25d.asInstanceOf[typings.multihashes.multihashesInts.`0xb25d`]
     
-    inline def `0xb25e`: typings.multihashes.multihashesNumbers.`0xb25e` = 0xb25e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb25e`]
+    inline def `0xb25e`: typings.multihashes.multihashesInts.`0xb25e` = 0xb25e.asInstanceOf[typings.multihashes.multihashesInts.`0xb25e`]
     
-    inline def `0xb25f`: typings.multihashes.multihashesNumbers.`0xb25f` = 0xb25f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb25f`]
+    inline def `0xb25f`: typings.multihashes.multihashesInts.`0xb25f` = 0xb25f.asInstanceOf[typings.multihashes.multihashesInts.`0xb25f`]
     
-    inline def `0xb260`: typings.multihashes.multihashesNumbers.`0xb260` = 0xb260.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb260`]
+    inline def `0xb260`: typings.multihashes.multihashesInts.`0xb260` = 0xb260.asInstanceOf[typings.multihashes.multihashesInts.`0xb260`]
     
-    inline def `0xb301`: typings.multihashes.multihashesNumbers.`0xb301` = 0xb301.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb301`]
+    inline def `0xb301`: typings.multihashes.multihashesInts.`0xb301` = 0xb301.asInstanceOf[typings.multihashes.multihashesInts.`0xb301`]
     
-    inline def `0xb302`: typings.multihashes.multihashesNumbers.`0xb302` = 0xb302.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb302`]
+    inline def `0xb302`: typings.multihashes.multihashesInts.`0xb302` = 0xb302.asInstanceOf[typings.multihashes.multihashesInts.`0xb302`]
     
-    inline def `0xb303`: typings.multihashes.multihashesNumbers.`0xb303` = 0xb303.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb303`]
+    inline def `0xb303`: typings.multihashes.multihashesInts.`0xb303` = 0xb303.asInstanceOf[typings.multihashes.multihashesInts.`0xb303`]
     
-    inline def `0xb304`: typings.multihashes.multihashesNumbers.`0xb304` = 0xb304.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb304`]
+    inline def `0xb304`: typings.multihashes.multihashesInts.`0xb304` = 0xb304.asInstanceOf[typings.multihashes.multihashesInts.`0xb304`]
     
-    inline def `0xb305`: typings.multihashes.multihashesNumbers.`0xb305` = 0xb305.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb305`]
+    inline def `0xb305`: typings.multihashes.multihashesInts.`0xb305` = 0xb305.asInstanceOf[typings.multihashes.multihashesInts.`0xb305`]
     
-    inline def `0xb306`: typings.multihashes.multihashesNumbers.`0xb306` = 0xb306.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb306`]
+    inline def `0xb306`: typings.multihashes.multihashesInts.`0xb306` = 0xb306.asInstanceOf[typings.multihashes.multihashesInts.`0xb306`]
     
-    inline def `0xb307`: typings.multihashes.multihashesNumbers.`0xb307` = 0xb307.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb307`]
+    inline def `0xb307`: typings.multihashes.multihashesInts.`0xb307` = 0xb307.asInstanceOf[typings.multihashes.multihashesInts.`0xb307`]
     
-    inline def `0xb308`: typings.multihashes.multihashesNumbers.`0xb308` = 0xb308.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb308`]
+    inline def `0xb308`: typings.multihashes.multihashesInts.`0xb308` = 0xb308.asInstanceOf[typings.multihashes.multihashesInts.`0xb308`]
     
-    inline def `0xb309`: typings.multihashes.multihashesNumbers.`0xb309` = 0xb309.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb309`]
+    inline def `0xb309`: typings.multihashes.multihashesInts.`0xb309` = 0xb309.asInstanceOf[typings.multihashes.multihashesInts.`0xb309`]
     
-    inline def `0xb30a`: typings.multihashes.multihashesNumbers.`0xb30a` = 0xb30a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb30a`]
+    inline def `0xb30a`: typings.multihashes.multihashesInts.`0xb30a` = 0xb30a.asInstanceOf[typings.multihashes.multihashesInts.`0xb30a`]
     
-    inline def `0xb30b`: typings.multihashes.multihashesNumbers.`0xb30b` = 0xb30b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb30b`]
+    inline def `0xb30b`: typings.multihashes.multihashesInts.`0xb30b` = 0xb30b.asInstanceOf[typings.multihashes.multihashesInts.`0xb30b`]
     
-    inline def `0xb30c`: typings.multihashes.multihashesNumbers.`0xb30c` = 0xb30c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb30c`]
+    inline def `0xb30c`: typings.multihashes.multihashesInts.`0xb30c` = 0xb30c.asInstanceOf[typings.multihashes.multihashesInts.`0xb30c`]
     
-    inline def `0xb30d`: typings.multihashes.multihashesNumbers.`0xb30d` = 0xb30d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb30d`]
+    inline def `0xb30d`: typings.multihashes.multihashesInts.`0xb30d` = 0xb30d.asInstanceOf[typings.multihashes.multihashesInts.`0xb30d`]
     
-    inline def `0xb30e`: typings.multihashes.multihashesNumbers.`0xb30e` = 0xb30e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb30e`]
+    inline def `0xb30e`: typings.multihashes.multihashesInts.`0xb30e` = 0xb30e.asInstanceOf[typings.multihashes.multihashesInts.`0xb30e`]
     
-    inline def `0xb30f`: typings.multihashes.multihashesNumbers.`0xb30f` = 0xb30f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb30f`]
+    inline def `0xb30f`: typings.multihashes.multihashesInts.`0xb30f` = 0xb30f.asInstanceOf[typings.multihashes.multihashesInts.`0xb30f`]
     
-    inline def `0xb310`: typings.multihashes.multihashesNumbers.`0xb310` = 0xb310.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb310`]
+    inline def `0xb310`: typings.multihashes.multihashesInts.`0xb310` = 0xb310.asInstanceOf[typings.multihashes.multihashesInts.`0xb310`]
     
-    inline def `0xb311`: typings.multihashes.multihashesNumbers.`0xb311` = 0xb311.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb311`]
+    inline def `0xb311`: typings.multihashes.multihashesInts.`0xb311` = 0xb311.asInstanceOf[typings.multihashes.multihashesInts.`0xb311`]
     
-    inline def `0xb312`: typings.multihashes.multihashesNumbers.`0xb312` = 0xb312.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb312`]
+    inline def `0xb312`: typings.multihashes.multihashesInts.`0xb312` = 0xb312.asInstanceOf[typings.multihashes.multihashesInts.`0xb312`]
     
-    inline def `0xb313`: typings.multihashes.multihashesNumbers.`0xb313` = 0xb313.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb313`]
+    inline def `0xb313`: typings.multihashes.multihashesInts.`0xb313` = 0xb313.asInstanceOf[typings.multihashes.multihashesInts.`0xb313`]
     
-    inline def `0xb314`: typings.multihashes.multihashesNumbers.`0xb314` = 0xb314.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb314`]
+    inline def `0xb314`: typings.multihashes.multihashesInts.`0xb314` = 0xb314.asInstanceOf[typings.multihashes.multihashesInts.`0xb314`]
     
-    inline def `0xb315`: typings.multihashes.multihashesNumbers.`0xb315` = 0xb315.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb315`]
+    inline def `0xb315`: typings.multihashes.multihashesInts.`0xb315` = 0xb315.asInstanceOf[typings.multihashes.multihashesInts.`0xb315`]
     
-    inline def `0xb316`: typings.multihashes.multihashesNumbers.`0xb316` = 0xb316.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb316`]
+    inline def `0xb316`: typings.multihashes.multihashesInts.`0xb316` = 0xb316.asInstanceOf[typings.multihashes.multihashesInts.`0xb316`]
     
-    inline def `0xb317`: typings.multihashes.multihashesNumbers.`0xb317` = 0xb317.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb317`]
+    inline def `0xb317`: typings.multihashes.multihashesInts.`0xb317` = 0xb317.asInstanceOf[typings.multihashes.multihashesInts.`0xb317`]
     
-    inline def `0xb318`: typings.multihashes.multihashesNumbers.`0xb318` = 0xb318.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb318`]
+    inline def `0xb318`: typings.multihashes.multihashesInts.`0xb318` = 0xb318.asInstanceOf[typings.multihashes.multihashesInts.`0xb318`]
     
-    inline def `0xb319`: typings.multihashes.multihashesNumbers.`0xb319` = 0xb319.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb319`]
+    inline def `0xb319`: typings.multihashes.multihashesInts.`0xb319` = 0xb319.asInstanceOf[typings.multihashes.multihashesInts.`0xb319`]
     
-    inline def `0xb31a`: typings.multihashes.multihashesNumbers.`0xb31a` = 0xb31a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb31a`]
+    inline def `0xb31a`: typings.multihashes.multihashesInts.`0xb31a` = 0xb31a.asInstanceOf[typings.multihashes.multihashesInts.`0xb31a`]
     
-    inline def `0xb31b`: typings.multihashes.multihashesNumbers.`0xb31b` = 0xb31b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb31b`]
+    inline def `0xb31b`: typings.multihashes.multihashesInts.`0xb31b` = 0xb31b.asInstanceOf[typings.multihashes.multihashesInts.`0xb31b`]
     
-    inline def `0xb31c`: typings.multihashes.multihashesNumbers.`0xb31c` = 0xb31c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb31c`]
+    inline def `0xb31c`: typings.multihashes.multihashesInts.`0xb31c` = 0xb31c.asInstanceOf[typings.multihashes.multihashesInts.`0xb31c`]
     
-    inline def `0xb31d`: typings.multihashes.multihashesNumbers.`0xb31d` = 0xb31d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb31d`]
+    inline def `0xb31d`: typings.multihashes.multihashesInts.`0xb31d` = 0xb31d.asInstanceOf[typings.multihashes.multihashesInts.`0xb31d`]
     
-    inline def `0xb31e`: typings.multihashes.multihashesNumbers.`0xb31e` = 0xb31e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb31e`]
+    inline def `0xb31e`: typings.multihashes.multihashesInts.`0xb31e` = 0xb31e.asInstanceOf[typings.multihashes.multihashesInts.`0xb31e`]
     
-    inline def `0xb31f`: typings.multihashes.multihashesNumbers.`0xb31f` = 0xb31f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb31f`]
+    inline def `0xb31f`: typings.multihashes.multihashesInts.`0xb31f` = 0xb31f.asInstanceOf[typings.multihashes.multihashesInts.`0xb31f`]
     
-    inline def `0xb320`: typings.multihashes.multihashesNumbers.`0xb320` = 0xb320.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb320`]
+    inline def `0xb320`: typings.multihashes.multihashesInts.`0xb320` = 0xb320.asInstanceOf[typings.multihashes.multihashesInts.`0xb320`]
     
-    inline def `0xb321`: typings.multihashes.multihashesNumbers.`0xb321` = 0xb321.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb321`]
+    inline def `0xb321`: typings.multihashes.multihashesInts.`0xb321` = 0xb321.asInstanceOf[typings.multihashes.multihashesInts.`0xb321`]
     
-    inline def `0xb322`: typings.multihashes.multihashesNumbers.`0xb322` = 0xb322.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb322`]
+    inline def `0xb322`: typings.multihashes.multihashesInts.`0xb322` = 0xb322.asInstanceOf[typings.multihashes.multihashesInts.`0xb322`]
     
-    inline def `0xb323`: typings.multihashes.multihashesNumbers.`0xb323` = 0xb323.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb323`]
+    inline def `0xb323`: typings.multihashes.multihashesInts.`0xb323` = 0xb323.asInstanceOf[typings.multihashes.multihashesInts.`0xb323`]
     
-    inline def `0xb324`: typings.multihashes.multihashesNumbers.`0xb324` = 0xb324.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb324`]
+    inline def `0xb324`: typings.multihashes.multihashesInts.`0xb324` = 0xb324.asInstanceOf[typings.multihashes.multihashesInts.`0xb324`]
     
-    inline def `0xb325`: typings.multihashes.multihashesNumbers.`0xb325` = 0xb325.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb325`]
+    inline def `0xb325`: typings.multihashes.multihashesInts.`0xb325` = 0xb325.asInstanceOf[typings.multihashes.multihashesInts.`0xb325`]
     
-    inline def `0xb326`: typings.multihashes.multihashesNumbers.`0xb326` = 0xb326.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb326`]
+    inline def `0xb326`: typings.multihashes.multihashesInts.`0xb326` = 0xb326.asInstanceOf[typings.multihashes.multihashesInts.`0xb326`]
     
-    inline def `0xb327`: typings.multihashes.multihashesNumbers.`0xb327` = 0xb327.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb327`]
+    inline def `0xb327`: typings.multihashes.multihashesInts.`0xb327` = 0xb327.asInstanceOf[typings.multihashes.multihashesInts.`0xb327`]
     
-    inline def `0xb328`: typings.multihashes.multihashesNumbers.`0xb328` = 0xb328.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb328`]
+    inline def `0xb328`: typings.multihashes.multihashesInts.`0xb328` = 0xb328.asInstanceOf[typings.multihashes.multihashesInts.`0xb328`]
     
-    inline def `0xb329`: typings.multihashes.multihashesNumbers.`0xb329` = 0xb329.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb329`]
+    inline def `0xb329`: typings.multihashes.multihashesInts.`0xb329` = 0xb329.asInstanceOf[typings.multihashes.multihashesInts.`0xb329`]
     
-    inline def `0xb32a`: typings.multihashes.multihashesNumbers.`0xb32a` = 0xb32a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb32a`]
+    inline def `0xb32a`: typings.multihashes.multihashesInts.`0xb32a` = 0xb32a.asInstanceOf[typings.multihashes.multihashesInts.`0xb32a`]
     
-    inline def `0xb32b`: typings.multihashes.multihashesNumbers.`0xb32b` = 0xb32b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb32b`]
+    inline def `0xb32b`: typings.multihashes.multihashesInts.`0xb32b` = 0xb32b.asInstanceOf[typings.multihashes.multihashesInts.`0xb32b`]
     
-    inline def `0xb32c`: typings.multihashes.multihashesNumbers.`0xb32c` = 0xb32c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb32c`]
+    inline def `0xb32c`: typings.multihashes.multihashesInts.`0xb32c` = 0xb32c.asInstanceOf[typings.multihashes.multihashesInts.`0xb32c`]
     
-    inline def `0xb32d`: typings.multihashes.multihashesNumbers.`0xb32d` = 0xb32d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb32d`]
+    inline def `0xb32d`: typings.multihashes.multihashesInts.`0xb32d` = 0xb32d.asInstanceOf[typings.multihashes.multihashesInts.`0xb32d`]
     
-    inline def `0xb32e`: typings.multihashes.multihashesNumbers.`0xb32e` = 0xb32e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb32e`]
+    inline def `0xb32e`: typings.multihashes.multihashesInts.`0xb32e` = 0xb32e.asInstanceOf[typings.multihashes.multihashesInts.`0xb32e`]
     
-    inline def `0xb32f`: typings.multihashes.multihashesNumbers.`0xb32f` = 0xb32f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb32f`]
+    inline def `0xb32f`: typings.multihashes.multihashesInts.`0xb32f` = 0xb32f.asInstanceOf[typings.multihashes.multihashesInts.`0xb32f`]
     
-    inline def `0xb330`: typings.multihashes.multihashesNumbers.`0xb330` = 0xb330.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb330`]
+    inline def `0xb330`: typings.multihashes.multihashesInts.`0xb330` = 0xb330.asInstanceOf[typings.multihashes.multihashesInts.`0xb330`]
     
-    inline def `0xb331`: typings.multihashes.multihashesNumbers.`0xb331` = 0xb331.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb331`]
+    inline def `0xb331`: typings.multihashes.multihashesInts.`0xb331` = 0xb331.asInstanceOf[typings.multihashes.multihashesInts.`0xb331`]
     
-    inline def `0xb332`: typings.multihashes.multihashesNumbers.`0xb332` = 0xb332.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb332`]
+    inline def `0xb332`: typings.multihashes.multihashesInts.`0xb332` = 0xb332.asInstanceOf[typings.multihashes.multihashesInts.`0xb332`]
     
-    inline def `0xb333`: typings.multihashes.multihashesNumbers.`0xb333` = 0xb333.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb333`]
+    inline def `0xb333`: typings.multihashes.multihashesInts.`0xb333` = 0xb333.asInstanceOf[typings.multihashes.multihashesInts.`0xb333`]
     
-    inline def `0xb334`: typings.multihashes.multihashesNumbers.`0xb334` = 0xb334.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb334`]
+    inline def `0xb334`: typings.multihashes.multihashesInts.`0xb334` = 0xb334.asInstanceOf[typings.multihashes.multihashesInts.`0xb334`]
     
-    inline def `0xb335`: typings.multihashes.multihashesNumbers.`0xb335` = 0xb335.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb335`]
+    inline def `0xb335`: typings.multihashes.multihashesInts.`0xb335` = 0xb335.asInstanceOf[typings.multihashes.multihashesInts.`0xb335`]
     
-    inline def `0xb336`: typings.multihashes.multihashesNumbers.`0xb336` = 0xb336.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb336`]
+    inline def `0xb336`: typings.multihashes.multihashesInts.`0xb336` = 0xb336.asInstanceOf[typings.multihashes.multihashesInts.`0xb336`]
     
-    inline def `0xb337`: typings.multihashes.multihashesNumbers.`0xb337` = 0xb337.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb337`]
+    inline def `0xb337`: typings.multihashes.multihashesInts.`0xb337` = 0xb337.asInstanceOf[typings.multihashes.multihashesInts.`0xb337`]
     
-    inline def `0xb338`: typings.multihashes.multihashesNumbers.`0xb338` = 0xb338.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb338`]
+    inline def `0xb338`: typings.multihashes.multihashesInts.`0xb338` = 0xb338.asInstanceOf[typings.multihashes.multihashesInts.`0xb338`]
     
-    inline def `0xb339`: typings.multihashes.multihashesNumbers.`0xb339` = 0xb339.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb339`]
+    inline def `0xb339`: typings.multihashes.multihashesInts.`0xb339` = 0xb339.asInstanceOf[typings.multihashes.multihashesInts.`0xb339`]
     
-    inline def `0xb33a`: typings.multihashes.multihashesNumbers.`0xb33a` = 0xb33a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb33a`]
+    inline def `0xb33a`: typings.multihashes.multihashesInts.`0xb33a` = 0xb33a.asInstanceOf[typings.multihashes.multihashesInts.`0xb33a`]
     
-    inline def `0xb33b`: typings.multihashes.multihashesNumbers.`0xb33b` = 0xb33b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb33b`]
+    inline def `0xb33b`: typings.multihashes.multihashesInts.`0xb33b` = 0xb33b.asInstanceOf[typings.multihashes.multihashesInts.`0xb33b`]
     
-    inline def `0xb33c`: typings.multihashes.multihashesNumbers.`0xb33c` = 0xb33c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb33c`]
+    inline def `0xb33c`: typings.multihashes.multihashesInts.`0xb33c` = 0xb33c.asInstanceOf[typings.multihashes.multihashesInts.`0xb33c`]
     
-    inline def `0xb33d`: typings.multihashes.multihashesNumbers.`0xb33d` = 0xb33d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb33d`]
+    inline def `0xb33d`: typings.multihashes.multihashesInts.`0xb33d` = 0xb33d.asInstanceOf[typings.multihashes.multihashesInts.`0xb33d`]
     
-    inline def `0xb33e`: typings.multihashes.multihashesNumbers.`0xb33e` = 0xb33e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb33e`]
+    inline def `0xb33e`: typings.multihashes.multihashesInts.`0xb33e` = 0xb33e.asInstanceOf[typings.multihashes.multihashesInts.`0xb33e`]
     
-    inline def `0xb33f`: typings.multihashes.multihashesNumbers.`0xb33f` = 0xb33f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb33f`]
+    inline def `0xb33f`: typings.multihashes.multihashesInts.`0xb33f` = 0xb33f.asInstanceOf[typings.multihashes.multihashesInts.`0xb33f`]
     
-    inline def `0xb340`: typings.multihashes.multihashesNumbers.`0xb340` = 0xb340.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb340`]
+    inline def `0xb340`: typings.multihashes.multihashesInts.`0xb340` = 0xb340.asInstanceOf[typings.multihashes.multihashesInts.`0xb340`]
     
-    inline def `0xb341`: typings.multihashes.multihashesNumbers.`0xb341` = 0xb341.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb341`]
+    inline def `0xb341`: typings.multihashes.multihashesInts.`0xb341` = 0xb341.asInstanceOf[typings.multihashes.multihashesInts.`0xb341`]
     
-    inline def `0xb342`: typings.multihashes.multihashesNumbers.`0xb342` = 0xb342.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb342`]
+    inline def `0xb342`: typings.multihashes.multihashesInts.`0xb342` = 0xb342.asInstanceOf[typings.multihashes.multihashesInts.`0xb342`]
     
-    inline def `0xb343`: typings.multihashes.multihashesNumbers.`0xb343` = 0xb343.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb343`]
+    inline def `0xb343`: typings.multihashes.multihashesInts.`0xb343` = 0xb343.asInstanceOf[typings.multihashes.multihashesInts.`0xb343`]
     
-    inline def `0xb344`: typings.multihashes.multihashesNumbers.`0xb344` = 0xb344.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb344`]
+    inline def `0xb344`: typings.multihashes.multihashesInts.`0xb344` = 0xb344.asInstanceOf[typings.multihashes.multihashesInts.`0xb344`]
     
-    inline def `0xb345`: typings.multihashes.multihashesNumbers.`0xb345` = 0xb345.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb345`]
+    inline def `0xb345`: typings.multihashes.multihashesInts.`0xb345` = 0xb345.asInstanceOf[typings.multihashes.multihashesInts.`0xb345`]
     
-    inline def `0xb346`: typings.multihashes.multihashesNumbers.`0xb346` = 0xb346.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb346`]
+    inline def `0xb346`: typings.multihashes.multihashesInts.`0xb346` = 0xb346.asInstanceOf[typings.multihashes.multihashesInts.`0xb346`]
     
-    inline def `0xb347`: typings.multihashes.multihashesNumbers.`0xb347` = 0xb347.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb347`]
+    inline def `0xb347`: typings.multihashes.multihashesInts.`0xb347` = 0xb347.asInstanceOf[typings.multihashes.multihashesInts.`0xb347`]
     
-    inline def `0xb348`: typings.multihashes.multihashesNumbers.`0xb348` = 0xb348.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb348`]
+    inline def `0xb348`: typings.multihashes.multihashesInts.`0xb348` = 0xb348.asInstanceOf[typings.multihashes.multihashesInts.`0xb348`]
     
-    inline def `0xb349`: typings.multihashes.multihashesNumbers.`0xb349` = 0xb349.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb349`]
+    inline def `0xb349`: typings.multihashes.multihashesInts.`0xb349` = 0xb349.asInstanceOf[typings.multihashes.multihashesInts.`0xb349`]
     
-    inline def `0xb34a`: typings.multihashes.multihashesNumbers.`0xb34a` = 0xb34a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb34a`]
+    inline def `0xb34a`: typings.multihashes.multihashesInts.`0xb34a` = 0xb34a.asInstanceOf[typings.multihashes.multihashesInts.`0xb34a`]
     
-    inline def `0xb34b`: typings.multihashes.multihashesNumbers.`0xb34b` = 0xb34b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb34b`]
+    inline def `0xb34b`: typings.multihashes.multihashesInts.`0xb34b` = 0xb34b.asInstanceOf[typings.multihashes.multihashesInts.`0xb34b`]
     
-    inline def `0xb34c`: typings.multihashes.multihashesNumbers.`0xb34c` = 0xb34c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb34c`]
+    inline def `0xb34c`: typings.multihashes.multihashesInts.`0xb34c` = 0xb34c.asInstanceOf[typings.multihashes.multihashesInts.`0xb34c`]
     
-    inline def `0xb34d`: typings.multihashes.multihashesNumbers.`0xb34d` = 0xb34d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb34d`]
+    inline def `0xb34d`: typings.multihashes.multihashesInts.`0xb34d` = 0xb34d.asInstanceOf[typings.multihashes.multihashesInts.`0xb34d`]
     
-    inline def `0xb34e`: typings.multihashes.multihashesNumbers.`0xb34e` = 0xb34e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb34e`]
+    inline def `0xb34e`: typings.multihashes.multihashesInts.`0xb34e` = 0xb34e.asInstanceOf[typings.multihashes.multihashesInts.`0xb34e`]
     
-    inline def `0xb34f`: typings.multihashes.multihashesNumbers.`0xb34f` = 0xb34f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb34f`]
+    inline def `0xb34f`: typings.multihashes.multihashesInts.`0xb34f` = 0xb34f.asInstanceOf[typings.multihashes.multihashesInts.`0xb34f`]
     
-    inline def `0xb350`: typings.multihashes.multihashesNumbers.`0xb350` = 0xb350.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb350`]
+    inline def `0xb350`: typings.multihashes.multihashesInts.`0xb350` = 0xb350.asInstanceOf[typings.multihashes.multihashesInts.`0xb350`]
     
-    inline def `0xb351`: typings.multihashes.multihashesNumbers.`0xb351` = 0xb351.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb351`]
+    inline def `0xb351`: typings.multihashes.multihashesInts.`0xb351` = 0xb351.asInstanceOf[typings.multihashes.multihashesInts.`0xb351`]
     
-    inline def `0xb352`: typings.multihashes.multihashesNumbers.`0xb352` = 0xb352.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb352`]
+    inline def `0xb352`: typings.multihashes.multihashesInts.`0xb352` = 0xb352.asInstanceOf[typings.multihashes.multihashesInts.`0xb352`]
     
-    inline def `0xb353`: typings.multihashes.multihashesNumbers.`0xb353` = 0xb353.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb353`]
+    inline def `0xb353`: typings.multihashes.multihashesInts.`0xb353` = 0xb353.asInstanceOf[typings.multihashes.multihashesInts.`0xb353`]
     
-    inline def `0xb354`: typings.multihashes.multihashesNumbers.`0xb354` = 0xb354.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb354`]
+    inline def `0xb354`: typings.multihashes.multihashesInts.`0xb354` = 0xb354.asInstanceOf[typings.multihashes.multihashesInts.`0xb354`]
     
-    inline def `0xb355`: typings.multihashes.multihashesNumbers.`0xb355` = 0xb355.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb355`]
+    inline def `0xb355`: typings.multihashes.multihashesInts.`0xb355` = 0xb355.asInstanceOf[typings.multihashes.multihashesInts.`0xb355`]
     
-    inline def `0xb356`: typings.multihashes.multihashesNumbers.`0xb356` = 0xb356.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb356`]
+    inline def `0xb356`: typings.multihashes.multihashesInts.`0xb356` = 0xb356.asInstanceOf[typings.multihashes.multihashesInts.`0xb356`]
     
-    inline def `0xb357`: typings.multihashes.multihashesNumbers.`0xb357` = 0xb357.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb357`]
+    inline def `0xb357`: typings.multihashes.multihashesInts.`0xb357` = 0xb357.asInstanceOf[typings.multihashes.multihashesInts.`0xb357`]
     
-    inline def `0xb358`: typings.multihashes.multihashesNumbers.`0xb358` = 0xb358.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb358`]
+    inline def `0xb358`: typings.multihashes.multihashesInts.`0xb358` = 0xb358.asInstanceOf[typings.multihashes.multihashesInts.`0xb358`]
     
-    inline def `0xb359`: typings.multihashes.multihashesNumbers.`0xb359` = 0xb359.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb359`]
+    inline def `0xb359`: typings.multihashes.multihashesInts.`0xb359` = 0xb359.asInstanceOf[typings.multihashes.multihashesInts.`0xb359`]
     
-    inline def `0xb35a`: typings.multihashes.multihashesNumbers.`0xb35a` = 0xb35a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb35a`]
+    inline def `0xb35a`: typings.multihashes.multihashesInts.`0xb35a` = 0xb35a.asInstanceOf[typings.multihashes.multihashesInts.`0xb35a`]
     
-    inline def `0xb35b`: typings.multihashes.multihashesNumbers.`0xb35b` = 0xb35b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb35b`]
+    inline def `0xb35b`: typings.multihashes.multihashesInts.`0xb35b` = 0xb35b.asInstanceOf[typings.multihashes.multihashesInts.`0xb35b`]
     
-    inline def `0xb35c`: typings.multihashes.multihashesNumbers.`0xb35c` = 0xb35c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb35c`]
+    inline def `0xb35c`: typings.multihashes.multihashesInts.`0xb35c` = 0xb35c.asInstanceOf[typings.multihashes.multihashesInts.`0xb35c`]
     
-    inline def `0xb35d`: typings.multihashes.multihashesNumbers.`0xb35d` = 0xb35d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb35d`]
+    inline def `0xb35d`: typings.multihashes.multihashesInts.`0xb35d` = 0xb35d.asInstanceOf[typings.multihashes.multihashesInts.`0xb35d`]
     
-    inline def `0xb35e`: typings.multihashes.multihashesNumbers.`0xb35e` = 0xb35e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb35e`]
+    inline def `0xb35e`: typings.multihashes.multihashesInts.`0xb35e` = 0xb35e.asInstanceOf[typings.multihashes.multihashesInts.`0xb35e`]
     
-    inline def `0xb35f`: typings.multihashes.multihashesNumbers.`0xb35f` = 0xb35f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb35f`]
+    inline def `0xb35f`: typings.multihashes.multihashesInts.`0xb35f` = 0xb35f.asInstanceOf[typings.multihashes.multihashesInts.`0xb35f`]
     
-    inline def `0xb360`: typings.multihashes.multihashesNumbers.`0xb360` = 0xb360.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb360`]
+    inline def `0xb360`: typings.multihashes.multihashesInts.`0xb360` = 0xb360.asInstanceOf[typings.multihashes.multihashesInts.`0xb360`]
     
-    inline def `0xb361`: typings.multihashes.multihashesNumbers.`0xb361` = 0xb361.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb361`]
+    inline def `0xb361`: typings.multihashes.multihashesInts.`0xb361` = 0xb361.asInstanceOf[typings.multihashes.multihashesInts.`0xb361`]
     
-    inline def `0xb362`: typings.multihashes.multihashesNumbers.`0xb362` = 0xb362.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb362`]
+    inline def `0xb362`: typings.multihashes.multihashesInts.`0xb362` = 0xb362.asInstanceOf[typings.multihashes.multihashesInts.`0xb362`]
     
-    inline def `0xb363`: typings.multihashes.multihashesNumbers.`0xb363` = 0xb363.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb363`]
+    inline def `0xb363`: typings.multihashes.multihashesInts.`0xb363` = 0xb363.asInstanceOf[typings.multihashes.multihashesInts.`0xb363`]
     
-    inline def `0xb364`: typings.multihashes.multihashesNumbers.`0xb364` = 0xb364.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb364`]
+    inline def `0xb364`: typings.multihashes.multihashesInts.`0xb364` = 0xb364.asInstanceOf[typings.multihashes.multihashesInts.`0xb364`]
     
-    inline def `0xb365`: typings.multihashes.multihashesNumbers.`0xb365` = 0xb365.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb365`]
+    inline def `0xb365`: typings.multihashes.multihashesInts.`0xb365` = 0xb365.asInstanceOf[typings.multihashes.multihashesInts.`0xb365`]
     
-    inline def `0xb366`: typings.multihashes.multihashesNumbers.`0xb366` = 0xb366.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb366`]
+    inline def `0xb366`: typings.multihashes.multihashesInts.`0xb366` = 0xb366.asInstanceOf[typings.multihashes.multihashesInts.`0xb366`]
     
-    inline def `0xb367`: typings.multihashes.multihashesNumbers.`0xb367` = 0xb367.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb367`]
+    inline def `0xb367`: typings.multihashes.multihashesInts.`0xb367` = 0xb367.asInstanceOf[typings.multihashes.multihashesInts.`0xb367`]
     
-    inline def `0xb368`: typings.multihashes.multihashesNumbers.`0xb368` = 0xb368.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb368`]
+    inline def `0xb368`: typings.multihashes.multihashesInts.`0xb368` = 0xb368.asInstanceOf[typings.multihashes.multihashesInts.`0xb368`]
     
-    inline def `0xb369`: typings.multihashes.multihashesNumbers.`0xb369` = 0xb369.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb369`]
+    inline def `0xb369`: typings.multihashes.multihashesInts.`0xb369` = 0xb369.asInstanceOf[typings.multihashes.multihashesInts.`0xb369`]
     
-    inline def `0xb36a`: typings.multihashes.multihashesNumbers.`0xb36a` = 0xb36a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb36a`]
+    inline def `0xb36a`: typings.multihashes.multihashesInts.`0xb36a` = 0xb36a.asInstanceOf[typings.multihashes.multihashesInts.`0xb36a`]
     
-    inline def `0xb36b`: typings.multihashes.multihashesNumbers.`0xb36b` = 0xb36b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb36b`]
+    inline def `0xb36b`: typings.multihashes.multihashesInts.`0xb36b` = 0xb36b.asInstanceOf[typings.multihashes.multihashesInts.`0xb36b`]
     
-    inline def `0xb36c`: typings.multihashes.multihashesNumbers.`0xb36c` = 0xb36c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb36c`]
+    inline def `0xb36c`: typings.multihashes.multihashesInts.`0xb36c` = 0xb36c.asInstanceOf[typings.multihashes.multihashesInts.`0xb36c`]
     
-    inline def `0xb36d`: typings.multihashes.multihashesNumbers.`0xb36d` = 0xb36d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb36d`]
+    inline def `0xb36d`: typings.multihashes.multihashesInts.`0xb36d` = 0xb36d.asInstanceOf[typings.multihashes.multihashesInts.`0xb36d`]
     
-    inline def `0xb36e`: typings.multihashes.multihashesNumbers.`0xb36e` = 0xb36e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb36e`]
+    inline def `0xb36e`: typings.multihashes.multihashesInts.`0xb36e` = 0xb36e.asInstanceOf[typings.multihashes.multihashesInts.`0xb36e`]
     
-    inline def `0xb36f`: typings.multihashes.multihashesNumbers.`0xb36f` = 0xb36f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb36f`]
+    inline def `0xb36f`: typings.multihashes.multihashesInts.`0xb36f` = 0xb36f.asInstanceOf[typings.multihashes.multihashesInts.`0xb36f`]
     
-    inline def `0xb370`: typings.multihashes.multihashesNumbers.`0xb370` = 0xb370.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb370`]
+    inline def `0xb370`: typings.multihashes.multihashesInts.`0xb370` = 0xb370.asInstanceOf[typings.multihashes.multihashesInts.`0xb370`]
     
-    inline def `0xb371`: typings.multihashes.multihashesNumbers.`0xb371` = 0xb371.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb371`]
+    inline def `0xb371`: typings.multihashes.multihashesInts.`0xb371` = 0xb371.asInstanceOf[typings.multihashes.multihashesInts.`0xb371`]
     
-    inline def `0xb372`: typings.multihashes.multihashesNumbers.`0xb372` = 0xb372.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb372`]
+    inline def `0xb372`: typings.multihashes.multihashesInts.`0xb372` = 0xb372.asInstanceOf[typings.multihashes.multihashesInts.`0xb372`]
     
-    inline def `0xb373`: typings.multihashes.multihashesNumbers.`0xb373` = 0xb373.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb373`]
+    inline def `0xb373`: typings.multihashes.multihashesInts.`0xb373` = 0xb373.asInstanceOf[typings.multihashes.multihashesInts.`0xb373`]
     
-    inline def `0xb374`: typings.multihashes.multihashesNumbers.`0xb374` = 0xb374.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb374`]
+    inline def `0xb374`: typings.multihashes.multihashesInts.`0xb374` = 0xb374.asInstanceOf[typings.multihashes.multihashesInts.`0xb374`]
     
-    inline def `0xb375`: typings.multihashes.multihashesNumbers.`0xb375` = 0xb375.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb375`]
+    inline def `0xb375`: typings.multihashes.multihashesInts.`0xb375` = 0xb375.asInstanceOf[typings.multihashes.multihashesInts.`0xb375`]
     
-    inline def `0xb376`: typings.multihashes.multihashesNumbers.`0xb376` = 0xb376.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb376`]
+    inline def `0xb376`: typings.multihashes.multihashesInts.`0xb376` = 0xb376.asInstanceOf[typings.multihashes.multihashesInts.`0xb376`]
     
-    inline def `0xb377`: typings.multihashes.multihashesNumbers.`0xb377` = 0xb377.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb377`]
+    inline def `0xb377`: typings.multihashes.multihashesInts.`0xb377` = 0xb377.asInstanceOf[typings.multihashes.multihashesInts.`0xb377`]
     
-    inline def `0xb378`: typings.multihashes.multihashesNumbers.`0xb378` = 0xb378.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb378`]
+    inline def `0xb378`: typings.multihashes.multihashesInts.`0xb378` = 0xb378.asInstanceOf[typings.multihashes.multihashesInts.`0xb378`]
     
-    inline def `0xb379`: typings.multihashes.multihashesNumbers.`0xb379` = 0xb379.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb379`]
+    inline def `0xb379`: typings.multihashes.multihashesInts.`0xb379` = 0xb379.asInstanceOf[typings.multihashes.multihashesInts.`0xb379`]
     
-    inline def `0xb37a`: typings.multihashes.multihashesNumbers.`0xb37a` = 0xb37a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb37a`]
+    inline def `0xb37a`: typings.multihashes.multihashesInts.`0xb37a` = 0xb37a.asInstanceOf[typings.multihashes.multihashesInts.`0xb37a`]
     
-    inline def `0xb37b`: typings.multihashes.multihashesNumbers.`0xb37b` = 0xb37b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb37b`]
+    inline def `0xb37b`: typings.multihashes.multihashesInts.`0xb37b` = 0xb37b.asInstanceOf[typings.multihashes.multihashesInts.`0xb37b`]
     
-    inline def `0xb37c`: typings.multihashes.multihashesNumbers.`0xb37c` = 0xb37c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb37c`]
+    inline def `0xb37c`: typings.multihashes.multihashesInts.`0xb37c` = 0xb37c.asInstanceOf[typings.multihashes.multihashesInts.`0xb37c`]
     
-    inline def `0xb37d`: typings.multihashes.multihashesNumbers.`0xb37d` = 0xb37d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb37d`]
+    inline def `0xb37d`: typings.multihashes.multihashesInts.`0xb37d` = 0xb37d.asInstanceOf[typings.multihashes.multihashesInts.`0xb37d`]
     
-    inline def `0xb37e`: typings.multihashes.multihashesNumbers.`0xb37e` = 0xb37e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb37e`]
+    inline def `0xb37e`: typings.multihashes.multihashesInts.`0xb37e` = 0xb37e.asInstanceOf[typings.multihashes.multihashesInts.`0xb37e`]
     
-    inline def `0xb37f`: typings.multihashes.multihashesNumbers.`0xb37f` = 0xb37f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb37f`]
+    inline def `0xb37f`: typings.multihashes.multihashesInts.`0xb37f` = 0xb37f.asInstanceOf[typings.multihashes.multihashesInts.`0xb37f`]
     
-    inline def `0xb380`: typings.multihashes.multihashesNumbers.`0xb380` = 0xb380.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb380`]
+    inline def `0xb380`: typings.multihashes.multihashesInts.`0xb380` = 0xb380.asInstanceOf[typings.multihashes.multihashesInts.`0xb380`]
     
-    inline def `0xb381`: typings.multihashes.multihashesNumbers.`0xb381` = 0xb381.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb381`]
+    inline def `0xb381`: typings.multihashes.multihashesInts.`0xb381` = 0xb381.asInstanceOf[typings.multihashes.multihashesInts.`0xb381`]
     
-    inline def `0xb382`: typings.multihashes.multihashesNumbers.`0xb382` = 0xb382.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb382`]
+    inline def `0xb382`: typings.multihashes.multihashesInts.`0xb382` = 0xb382.asInstanceOf[typings.multihashes.multihashesInts.`0xb382`]
     
-    inline def `0xb383`: typings.multihashes.multihashesNumbers.`0xb383` = 0xb383.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb383`]
+    inline def `0xb383`: typings.multihashes.multihashesInts.`0xb383` = 0xb383.asInstanceOf[typings.multihashes.multihashesInts.`0xb383`]
     
-    inline def `0xb384`: typings.multihashes.multihashesNumbers.`0xb384` = 0xb384.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb384`]
+    inline def `0xb384`: typings.multihashes.multihashesInts.`0xb384` = 0xb384.asInstanceOf[typings.multihashes.multihashesInts.`0xb384`]
     
-    inline def `0xb385`: typings.multihashes.multihashesNumbers.`0xb385` = 0xb385.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb385`]
+    inline def `0xb385`: typings.multihashes.multihashesInts.`0xb385` = 0xb385.asInstanceOf[typings.multihashes.multihashesInts.`0xb385`]
     
-    inline def `0xb386`: typings.multihashes.multihashesNumbers.`0xb386` = 0xb386.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb386`]
+    inline def `0xb386`: typings.multihashes.multihashesInts.`0xb386` = 0xb386.asInstanceOf[typings.multihashes.multihashesInts.`0xb386`]
     
-    inline def `0xb387`: typings.multihashes.multihashesNumbers.`0xb387` = 0xb387.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb387`]
+    inline def `0xb387`: typings.multihashes.multihashesInts.`0xb387` = 0xb387.asInstanceOf[typings.multihashes.multihashesInts.`0xb387`]
     
-    inline def `0xb388`: typings.multihashes.multihashesNumbers.`0xb388` = 0xb388.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb388`]
+    inline def `0xb388`: typings.multihashes.multihashesInts.`0xb388` = 0xb388.asInstanceOf[typings.multihashes.multihashesInts.`0xb388`]
     
-    inline def `0xb389`: typings.multihashes.multihashesNumbers.`0xb389` = 0xb389.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb389`]
+    inline def `0xb389`: typings.multihashes.multihashesInts.`0xb389` = 0xb389.asInstanceOf[typings.multihashes.multihashesInts.`0xb389`]
     
-    inline def `0xb38a`: typings.multihashes.multihashesNumbers.`0xb38a` = 0xb38a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb38a`]
+    inline def `0xb38a`: typings.multihashes.multihashesInts.`0xb38a` = 0xb38a.asInstanceOf[typings.multihashes.multihashesInts.`0xb38a`]
     
-    inline def `0xb38b`: typings.multihashes.multihashesNumbers.`0xb38b` = 0xb38b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb38b`]
+    inline def `0xb38b`: typings.multihashes.multihashesInts.`0xb38b` = 0xb38b.asInstanceOf[typings.multihashes.multihashesInts.`0xb38b`]
     
-    inline def `0xb38c`: typings.multihashes.multihashesNumbers.`0xb38c` = 0xb38c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb38c`]
+    inline def `0xb38c`: typings.multihashes.multihashesInts.`0xb38c` = 0xb38c.asInstanceOf[typings.multihashes.multihashesInts.`0xb38c`]
     
-    inline def `0xb38d`: typings.multihashes.multihashesNumbers.`0xb38d` = 0xb38d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb38d`]
+    inline def `0xb38d`: typings.multihashes.multihashesInts.`0xb38d` = 0xb38d.asInstanceOf[typings.multihashes.multihashesInts.`0xb38d`]
     
-    inline def `0xb38e`: typings.multihashes.multihashesNumbers.`0xb38e` = 0xb38e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb38e`]
+    inline def `0xb38e`: typings.multihashes.multihashesInts.`0xb38e` = 0xb38e.asInstanceOf[typings.multihashes.multihashesInts.`0xb38e`]
     
-    inline def `0xb38f`: typings.multihashes.multihashesNumbers.`0xb38f` = 0xb38f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb38f`]
+    inline def `0xb38f`: typings.multihashes.multihashesInts.`0xb38f` = 0xb38f.asInstanceOf[typings.multihashes.multihashesInts.`0xb38f`]
     
-    inline def `0xb390`: typings.multihashes.multihashesNumbers.`0xb390` = 0xb390.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb390`]
+    inline def `0xb390`: typings.multihashes.multihashesInts.`0xb390` = 0xb390.asInstanceOf[typings.multihashes.multihashesInts.`0xb390`]
     
-    inline def `0xb391`: typings.multihashes.multihashesNumbers.`0xb391` = 0xb391.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb391`]
+    inline def `0xb391`: typings.multihashes.multihashesInts.`0xb391` = 0xb391.asInstanceOf[typings.multihashes.multihashesInts.`0xb391`]
     
-    inline def `0xb392`: typings.multihashes.multihashesNumbers.`0xb392` = 0xb392.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb392`]
+    inline def `0xb392`: typings.multihashes.multihashesInts.`0xb392` = 0xb392.asInstanceOf[typings.multihashes.multihashesInts.`0xb392`]
     
-    inline def `0xb393`: typings.multihashes.multihashesNumbers.`0xb393` = 0xb393.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb393`]
+    inline def `0xb393`: typings.multihashes.multihashesInts.`0xb393` = 0xb393.asInstanceOf[typings.multihashes.multihashesInts.`0xb393`]
     
-    inline def `0xb394`: typings.multihashes.multihashesNumbers.`0xb394` = 0xb394.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb394`]
+    inline def `0xb394`: typings.multihashes.multihashesInts.`0xb394` = 0xb394.asInstanceOf[typings.multihashes.multihashesInts.`0xb394`]
     
-    inline def `0xb395`: typings.multihashes.multihashesNumbers.`0xb395` = 0xb395.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb395`]
+    inline def `0xb395`: typings.multihashes.multihashesInts.`0xb395` = 0xb395.asInstanceOf[typings.multihashes.multihashesInts.`0xb395`]
     
-    inline def `0xb396`: typings.multihashes.multihashesNumbers.`0xb396` = 0xb396.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb396`]
+    inline def `0xb396`: typings.multihashes.multihashesInts.`0xb396` = 0xb396.asInstanceOf[typings.multihashes.multihashesInts.`0xb396`]
     
-    inline def `0xb397`: typings.multihashes.multihashesNumbers.`0xb397` = 0xb397.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb397`]
+    inline def `0xb397`: typings.multihashes.multihashesInts.`0xb397` = 0xb397.asInstanceOf[typings.multihashes.multihashesInts.`0xb397`]
     
-    inline def `0xb398`: typings.multihashes.multihashesNumbers.`0xb398` = 0xb398.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb398`]
+    inline def `0xb398`: typings.multihashes.multihashesInts.`0xb398` = 0xb398.asInstanceOf[typings.multihashes.multihashesInts.`0xb398`]
     
-    inline def `0xb399`: typings.multihashes.multihashesNumbers.`0xb399` = 0xb399.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb399`]
+    inline def `0xb399`: typings.multihashes.multihashesInts.`0xb399` = 0xb399.asInstanceOf[typings.multihashes.multihashesInts.`0xb399`]
     
-    inline def `0xb39a`: typings.multihashes.multihashesNumbers.`0xb39a` = 0xb39a.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb39a`]
+    inline def `0xb39a`: typings.multihashes.multihashesInts.`0xb39a` = 0xb39a.asInstanceOf[typings.multihashes.multihashesInts.`0xb39a`]
     
-    inline def `0xb39b`: typings.multihashes.multihashesNumbers.`0xb39b` = 0xb39b.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb39b`]
+    inline def `0xb39b`: typings.multihashes.multihashesInts.`0xb39b` = 0xb39b.asInstanceOf[typings.multihashes.multihashesInts.`0xb39b`]
     
-    inline def `0xb39c`: typings.multihashes.multihashesNumbers.`0xb39c` = 0xb39c.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb39c`]
+    inline def `0xb39c`: typings.multihashes.multihashesInts.`0xb39c` = 0xb39c.asInstanceOf[typings.multihashes.multihashesInts.`0xb39c`]
     
-    inline def `0xb39d`: typings.multihashes.multihashesNumbers.`0xb39d` = 0xb39d.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb39d`]
+    inline def `0xb39d`: typings.multihashes.multihashesInts.`0xb39d` = 0xb39d.asInstanceOf[typings.multihashes.multihashesInts.`0xb39d`]
     
-    inline def `0xb39e`: typings.multihashes.multihashesNumbers.`0xb39e` = 0xb39e.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb39e`]
+    inline def `0xb39e`: typings.multihashes.multihashesInts.`0xb39e` = 0xb39e.asInstanceOf[typings.multihashes.multihashesInts.`0xb39e`]
     
-    inline def `0xb39f`: typings.multihashes.multihashesNumbers.`0xb39f` = 0xb39f.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb39f`]
+    inline def `0xb39f`: typings.multihashes.multihashesInts.`0xb39f` = 0xb39f.asInstanceOf[typings.multihashes.multihashesInts.`0xb39f`]
     
-    inline def `0xb3a0`: typings.multihashes.multihashesNumbers.`0xb3a0` = 0xb3a0.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a0`]
+    inline def `0xb3a0`: typings.multihashes.multihashesInts.`0xb3a0` = 0xb3a0.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a0`]
     
-    inline def `0xb3a1`: typings.multihashes.multihashesNumbers.`0xb3a1` = 0xb3a1.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a1`]
+    inline def `0xb3a1`: typings.multihashes.multihashesInts.`0xb3a1` = 0xb3a1.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a1`]
     
-    inline def `0xb3a2`: typings.multihashes.multihashesNumbers.`0xb3a2` = 0xb3a2.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a2`]
+    inline def `0xb3a2`: typings.multihashes.multihashesInts.`0xb3a2` = 0xb3a2.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a2`]
     
-    inline def `0xb3a3`: typings.multihashes.multihashesNumbers.`0xb3a3` = 0xb3a3.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a3`]
+    inline def `0xb3a3`: typings.multihashes.multihashesInts.`0xb3a3` = 0xb3a3.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a3`]
     
-    inline def `0xb3a4`: typings.multihashes.multihashesNumbers.`0xb3a4` = 0xb3a4.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a4`]
+    inline def `0xb3a4`: typings.multihashes.multihashesInts.`0xb3a4` = 0xb3a4.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a4`]
     
-    inline def `0xb3a5`: typings.multihashes.multihashesNumbers.`0xb3a5` = 0xb3a5.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a5`]
+    inline def `0xb3a5`: typings.multihashes.multihashesInts.`0xb3a5` = 0xb3a5.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a5`]
     
-    inline def `0xb3a6`: typings.multihashes.multihashesNumbers.`0xb3a6` = 0xb3a6.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a6`]
+    inline def `0xb3a6`: typings.multihashes.multihashesInts.`0xb3a6` = 0xb3a6.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a6`]
     
-    inline def `0xb3a7`: typings.multihashes.multihashesNumbers.`0xb3a7` = 0xb3a7.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a7`]
+    inline def `0xb3a7`: typings.multihashes.multihashesInts.`0xb3a7` = 0xb3a7.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a7`]
     
-    inline def `0xb3a8`: typings.multihashes.multihashesNumbers.`0xb3a8` = 0xb3a8.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a8`]
+    inline def `0xb3a8`: typings.multihashes.multihashesInts.`0xb3a8` = 0xb3a8.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a8`]
     
-    inline def `0xb3a9`: typings.multihashes.multihashesNumbers.`0xb3a9` = 0xb3a9.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3a9`]
+    inline def `0xb3a9`: typings.multihashes.multihashesInts.`0xb3a9` = 0xb3a9.asInstanceOf[typings.multihashes.multihashesInts.`0xb3a9`]
     
-    inline def `0xb3aa`: typings.multihashes.multihashesNumbers.`0xb3aa` = 0xb3aa.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3aa`]
+    inline def `0xb3aa`: typings.multihashes.multihashesInts.`0xb3aa` = 0xb3aa.asInstanceOf[typings.multihashes.multihashesInts.`0xb3aa`]
     
-    inline def `0xb3ab`: typings.multihashes.multihashesNumbers.`0xb3ab` = 0xb3ab.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3ab`]
+    inline def `0xb3ab`: typings.multihashes.multihashesInts.`0xb3ab` = 0xb3ab.asInstanceOf[typings.multihashes.multihashesInts.`0xb3ab`]
     
-    inline def `0xb3ac`: typings.multihashes.multihashesNumbers.`0xb3ac` = 0xb3ac.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3ac`]
+    inline def `0xb3ac`: typings.multihashes.multihashesInts.`0xb3ac` = 0xb3ac.asInstanceOf[typings.multihashes.multihashesInts.`0xb3ac`]
     
-    inline def `0xb3ad`: typings.multihashes.multihashesNumbers.`0xb3ad` = 0xb3ad.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3ad`]
+    inline def `0xb3ad`: typings.multihashes.multihashesInts.`0xb3ad` = 0xb3ad.asInstanceOf[typings.multihashes.multihashesInts.`0xb3ad`]
     
-    inline def `0xb3ae`: typings.multihashes.multihashesNumbers.`0xb3ae` = 0xb3ae.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3ae`]
+    inline def `0xb3ae`: typings.multihashes.multihashesInts.`0xb3ae` = 0xb3ae.asInstanceOf[typings.multihashes.multihashesInts.`0xb3ae`]
     
-    inline def `0xb3af`: typings.multihashes.multihashesNumbers.`0xb3af` = 0xb3af.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3af`]
+    inline def `0xb3af`: typings.multihashes.multihashesInts.`0xb3af` = 0xb3af.asInstanceOf[typings.multihashes.multihashesInts.`0xb3af`]
     
-    inline def `0xb3b0`: typings.multihashes.multihashesNumbers.`0xb3b0` = 0xb3b0.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b0`]
+    inline def `0xb3b0`: typings.multihashes.multihashesInts.`0xb3b0` = 0xb3b0.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b0`]
     
-    inline def `0xb3b1`: typings.multihashes.multihashesNumbers.`0xb3b1` = 0xb3b1.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b1`]
+    inline def `0xb3b1`: typings.multihashes.multihashesInts.`0xb3b1` = 0xb3b1.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b1`]
     
-    inline def `0xb3b2`: typings.multihashes.multihashesNumbers.`0xb3b2` = 0xb3b2.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b2`]
+    inline def `0xb3b2`: typings.multihashes.multihashesInts.`0xb3b2` = 0xb3b2.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b2`]
     
-    inline def `0xb3b3`: typings.multihashes.multihashesNumbers.`0xb3b3` = 0xb3b3.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b3`]
+    inline def `0xb3b3`: typings.multihashes.multihashesInts.`0xb3b3` = 0xb3b3.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b3`]
     
-    inline def `0xb3b4`: typings.multihashes.multihashesNumbers.`0xb3b4` = 0xb3b4.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b4`]
+    inline def `0xb3b4`: typings.multihashes.multihashesInts.`0xb3b4` = 0xb3b4.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b4`]
     
-    inline def `0xb3b5`: typings.multihashes.multihashesNumbers.`0xb3b5` = 0xb3b5.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b5`]
+    inline def `0xb3b5`: typings.multihashes.multihashesInts.`0xb3b5` = 0xb3b5.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b5`]
     
-    inline def `0xb3b6`: typings.multihashes.multihashesNumbers.`0xb3b6` = 0xb3b6.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b6`]
+    inline def `0xb3b6`: typings.multihashes.multihashesInts.`0xb3b6` = 0xb3b6.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b6`]
     
-    inline def `0xb3b7`: typings.multihashes.multihashesNumbers.`0xb3b7` = 0xb3b7.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b7`]
+    inline def `0xb3b7`: typings.multihashes.multihashesInts.`0xb3b7` = 0xb3b7.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b7`]
     
-    inline def `0xb3b8`: typings.multihashes.multihashesNumbers.`0xb3b8` = 0xb3b8.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b8`]
+    inline def `0xb3b8`: typings.multihashes.multihashesInts.`0xb3b8` = 0xb3b8.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b8`]
     
-    inline def `0xb3b9`: typings.multihashes.multihashesNumbers.`0xb3b9` = 0xb3b9.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3b9`]
+    inline def `0xb3b9`: typings.multihashes.multihashesInts.`0xb3b9` = 0xb3b9.asInstanceOf[typings.multihashes.multihashesInts.`0xb3b9`]
     
-    inline def `0xb3ba`: typings.multihashes.multihashesNumbers.`0xb3ba` = 0xb3ba.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3ba`]
+    inline def `0xb3ba`: typings.multihashes.multihashesInts.`0xb3ba` = 0xb3ba.asInstanceOf[typings.multihashes.multihashesInts.`0xb3ba`]
     
-    inline def `0xb3bb`: typings.multihashes.multihashesNumbers.`0xb3bb` = 0xb3bb.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3bb`]
+    inline def `0xb3bb`: typings.multihashes.multihashesInts.`0xb3bb` = 0xb3bb.asInstanceOf[typings.multihashes.multihashesInts.`0xb3bb`]
     
-    inline def `0xb3bc`: typings.multihashes.multihashesNumbers.`0xb3bc` = 0xb3bc.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3bc`]
+    inline def `0xb3bc`: typings.multihashes.multihashesInts.`0xb3bc` = 0xb3bc.asInstanceOf[typings.multihashes.multihashesInts.`0xb3bc`]
     
-    inline def `0xb3bd`: typings.multihashes.multihashesNumbers.`0xb3bd` = 0xb3bd.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3bd`]
+    inline def `0xb3bd`: typings.multihashes.multihashesInts.`0xb3bd` = 0xb3bd.asInstanceOf[typings.multihashes.multihashesInts.`0xb3bd`]
     
-    inline def `0xb3be`: typings.multihashes.multihashesNumbers.`0xb3be` = 0xb3be.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3be`]
+    inline def `0xb3be`: typings.multihashes.multihashesInts.`0xb3be` = 0xb3be.asInstanceOf[typings.multihashes.multihashesInts.`0xb3be`]
     
-    inline def `0xb3bf`: typings.multihashes.multihashesNumbers.`0xb3bf` = 0xb3bf.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3bf`]
+    inline def `0xb3bf`: typings.multihashes.multihashesInts.`0xb3bf` = 0xb3bf.asInstanceOf[typings.multihashes.multihashesInts.`0xb3bf`]
     
-    inline def `0xb3c0`: typings.multihashes.multihashesNumbers.`0xb3c0` = 0xb3c0.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c0`]
+    inline def `0xb3c0`: typings.multihashes.multihashesInts.`0xb3c0` = 0xb3c0.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c0`]
     
-    inline def `0xb3c1`: typings.multihashes.multihashesNumbers.`0xb3c1` = 0xb3c1.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c1`]
+    inline def `0xb3c1`: typings.multihashes.multihashesInts.`0xb3c1` = 0xb3c1.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c1`]
     
-    inline def `0xb3c2`: typings.multihashes.multihashesNumbers.`0xb3c2` = 0xb3c2.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c2`]
+    inline def `0xb3c2`: typings.multihashes.multihashesInts.`0xb3c2` = 0xb3c2.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c2`]
     
-    inline def `0xb3c3`: typings.multihashes.multihashesNumbers.`0xb3c3` = 0xb3c3.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c3`]
+    inline def `0xb3c3`: typings.multihashes.multihashesInts.`0xb3c3` = 0xb3c3.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c3`]
     
-    inline def `0xb3c4`: typings.multihashes.multihashesNumbers.`0xb3c4` = 0xb3c4.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c4`]
+    inline def `0xb3c4`: typings.multihashes.multihashesInts.`0xb3c4` = 0xb3c4.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c4`]
     
-    inline def `0xb3c5`: typings.multihashes.multihashesNumbers.`0xb3c5` = 0xb3c5.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c5`]
+    inline def `0xb3c5`: typings.multihashes.multihashesInts.`0xb3c5` = 0xb3c5.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c5`]
     
-    inline def `0xb3c6`: typings.multihashes.multihashesNumbers.`0xb3c6` = 0xb3c6.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c6`]
+    inline def `0xb3c6`: typings.multihashes.multihashesInts.`0xb3c6` = 0xb3c6.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c6`]
     
-    inline def `0xb3c7`: typings.multihashes.multihashesNumbers.`0xb3c7` = 0xb3c7.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c7`]
+    inline def `0xb3c7`: typings.multihashes.multihashesInts.`0xb3c7` = 0xb3c7.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c7`]
     
-    inline def `0xb3c8`: typings.multihashes.multihashesNumbers.`0xb3c8` = 0xb3c8.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c8`]
+    inline def `0xb3c8`: typings.multihashes.multihashesInts.`0xb3c8` = 0xb3c8.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c8`]
     
-    inline def `0xb3c9`: typings.multihashes.multihashesNumbers.`0xb3c9` = 0xb3c9.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3c9`]
+    inline def `0xb3c9`: typings.multihashes.multihashesInts.`0xb3c9` = 0xb3c9.asInstanceOf[typings.multihashes.multihashesInts.`0xb3c9`]
     
-    inline def `0xb3ca`: typings.multihashes.multihashesNumbers.`0xb3ca` = 0xb3ca.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3ca`]
+    inline def `0xb3ca`: typings.multihashes.multihashesInts.`0xb3ca` = 0xb3ca.asInstanceOf[typings.multihashes.multihashesInts.`0xb3ca`]
     
-    inline def `0xb3cb`: typings.multihashes.multihashesNumbers.`0xb3cb` = 0xb3cb.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3cb`]
+    inline def `0xb3cb`: typings.multihashes.multihashesInts.`0xb3cb` = 0xb3cb.asInstanceOf[typings.multihashes.multihashesInts.`0xb3cb`]
     
-    inline def `0xb3cc`: typings.multihashes.multihashesNumbers.`0xb3cc` = 0xb3cc.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3cc`]
+    inline def `0xb3cc`: typings.multihashes.multihashesInts.`0xb3cc` = 0xb3cc.asInstanceOf[typings.multihashes.multihashesInts.`0xb3cc`]
     
-    inline def `0xb3cd`: typings.multihashes.multihashesNumbers.`0xb3cd` = 0xb3cd.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3cd`]
+    inline def `0xb3cd`: typings.multihashes.multihashesInts.`0xb3cd` = 0xb3cd.asInstanceOf[typings.multihashes.multihashesInts.`0xb3cd`]
     
-    inline def `0xb3ce`: typings.multihashes.multihashesNumbers.`0xb3ce` = 0xb3ce.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3ce`]
+    inline def `0xb3ce`: typings.multihashes.multihashesInts.`0xb3ce` = 0xb3ce.asInstanceOf[typings.multihashes.multihashesInts.`0xb3ce`]
     
-    inline def `0xb3cf`: typings.multihashes.multihashesNumbers.`0xb3cf` = 0xb3cf.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3cf`]
+    inline def `0xb3cf`: typings.multihashes.multihashesInts.`0xb3cf` = 0xb3cf.asInstanceOf[typings.multihashes.multihashesInts.`0xb3cf`]
     
-    inline def `0xb3d0`: typings.multihashes.multihashesNumbers.`0xb3d0` = 0xb3d0.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d0`]
+    inline def `0xb3d0`: typings.multihashes.multihashesInts.`0xb3d0` = 0xb3d0.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d0`]
     
-    inline def `0xb3d1`: typings.multihashes.multihashesNumbers.`0xb3d1` = 0xb3d1.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d1`]
+    inline def `0xb3d1`: typings.multihashes.multihashesInts.`0xb3d1` = 0xb3d1.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d1`]
     
-    inline def `0xb3d2`: typings.multihashes.multihashesNumbers.`0xb3d2` = 0xb3d2.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d2`]
+    inline def `0xb3d2`: typings.multihashes.multihashesInts.`0xb3d2` = 0xb3d2.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d2`]
     
-    inline def `0xb3d3`: typings.multihashes.multihashesNumbers.`0xb3d3` = 0xb3d3.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d3`]
+    inline def `0xb3d3`: typings.multihashes.multihashesInts.`0xb3d3` = 0xb3d3.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d3`]
     
-    inline def `0xb3d4`: typings.multihashes.multihashesNumbers.`0xb3d4` = 0xb3d4.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d4`]
+    inline def `0xb3d4`: typings.multihashes.multihashesInts.`0xb3d4` = 0xb3d4.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d4`]
     
-    inline def `0xb3d5`: typings.multihashes.multihashesNumbers.`0xb3d5` = 0xb3d5.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d5`]
+    inline def `0xb3d5`: typings.multihashes.multihashesInts.`0xb3d5` = 0xb3d5.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d5`]
     
-    inline def `0xb3d6`: typings.multihashes.multihashesNumbers.`0xb3d6` = 0xb3d6.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d6`]
+    inline def `0xb3d6`: typings.multihashes.multihashesInts.`0xb3d6` = 0xb3d6.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d6`]
     
-    inline def `0xb3d7`: typings.multihashes.multihashesNumbers.`0xb3d7` = 0xb3d7.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d7`]
+    inline def `0xb3d7`: typings.multihashes.multihashesInts.`0xb3d7` = 0xb3d7.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d7`]
     
-    inline def `0xb3d8`: typings.multihashes.multihashesNumbers.`0xb3d8` = 0xb3d8.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d8`]
+    inline def `0xb3d8`: typings.multihashes.multihashesInts.`0xb3d8` = 0xb3d8.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d8`]
     
-    inline def `0xb3d9`: typings.multihashes.multihashesNumbers.`0xb3d9` = 0xb3d9.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3d9`]
+    inline def `0xb3d9`: typings.multihashes.multihashesInts.`0xb3d9` = 0xb3d9.asInstanceOf[typings.multihashes.multihashesInts.`0xb3d9`]
     
-    inline def `0xb3da`: typings.multihashes.multihashesNumbers.`0xb3da` = 0xb3da.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3da`]
+    inline def `0xb3da`: typings.multihashes.multihashesInts.`0xb3da` = 0xb3da.asInstanceOf[typings.multihashes.multihashesInts.`0xb3da`]
     
-    inline def `0xb3db`: typings.multihashes.multihashesNumbers.`0xb3db` = 0xb3db.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3db`]
+    inline def `0xb3db`: typings.multihashes.multihashesInts.`0xb3db` = 0xb3db.asInstanceOf[typings.multihashes.multihashesInts.`0xb3db`]
     
-    inline def `0xb3dc`: typings.multihashes.multihashesNumbers.`0xb3dc` = 0xb3dc.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3dc`]
+    inline def `0xb3dc`: typings.multihashes.multihashesInts.`0xb3dc` = 0xb3dc.asInstanceOf[typings.multihashes.multihashesInts.`0xb3dc`]
     
-    inline def `0xb3dd`: typings.multihashes.multihashesNumbers.`0xb3dd` = 0xb3dd.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3dd`]
+    inline def `0xb3dd`: typings.multihashes.multihashesInts.`0xb3dd` = 0xb3dd.asInstanceOf[typings.multihashes.multihashesInts.`0xb3dd`]
     
-    inline def `0xb3de`: typings.multihashes.multihashesNumbers.`0xb3de` = 0xb3de.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3de`]
+    inline def `0xb3de`: typings.multihashes.multihashesInts.`0xb3de` = 0xb3de.asInstanceOf[typings.multihashes.multihashesInts.`0xb3de`]
     
-    inline def `0xb3df`: typings.multihashes.multihashesNumbers.`0xb3df` = 0xb3df.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3df`]
+    inline def `0xb3df`: typings.multihashes.multihashesInts.`0xb3df` = 0xb3df.asInstanceOf[typings.multihashes.multihashesInts.`0xb3df`]
     
-    inline def `0xb3e0`: typings.multihashes.multihashesNumbers.`0xb3e0` = 0xb3e0.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb3e0`]
+    inline def `0xb3e0`: typings.multihashes.multihashesInts.`0xb3e0` = 0xb3e0.asInstanceOf[typings.multihashes.multihashesInts.`0xb3e0`]
     
-    inline def `0xb401`: typings.multihashes.multihashesNumbers.`0xb401` = 0xb401.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb401`]
+    inline def `0xb401`: typings.multihashes.multihashesInts.`0xb401` = 0xb401.asInstanceOf[typings.multihashes.multihashesInts.`0xb401`]
     
-    inline def `0xb402`: typings.multihashes.multihashesNumbers.`0xb402` = 0xb402.asInstanceOf[typings.multihashes.multihashesNumbers.`0xb402`]
+    inline def `0xb402`: typings.multihashes.multihashesInts.`0xb402` = 0xb402.asInstanceOf[typings.multihashes.multihashesInts.`0xb402`]
     
-    inline def `0xd4`: typings.multihashes.multihashesNumbers.`0xd4` = 0xd4.asInstanceOf[typings.multihashes.multihashesNumbers.`0xd4`]
+    inline def `0xd4`: typings.multihashes.multihashesInts.`0xd4` = 0xd4.asInstanceOf[typings.multihashes.multihashesInts.`0xd4`]
     
-    inline def `0xd5`: typings.multihashes.multihashesNumbers.`0xd5` = 0xd5.asInstanceOf[typings.multihashes.multihashesNumbers.`0xd5`]
+    inline def `0xd5`: typings.multihashes.multihashesInts.`0xd5` = 0xd5.asInstanceOf[typings.multihashes.multihashesInts.`0xd5`]
     
-    inline def `0xd6`: typings.multihashes.multihashesNumbers.`0xd6` = 0xd6.asInstanceOf[typings.multihashes.multihashesNumbers.`0xd6`]
+    inline def `0xd6`: typings.multihashes.multihashesInts.`0xd6` = 0xd6.asInstanceOf[typings.multihashes.multihashesInts.`0xd6`]
   }
   
   /* Rewritten from type alias, can be one of: 

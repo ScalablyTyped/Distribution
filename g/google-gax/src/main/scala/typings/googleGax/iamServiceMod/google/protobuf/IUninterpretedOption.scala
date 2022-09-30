@@ -1,7 +1,7 @@
 package typings.googleGax.iamServiceMod.google.protobuf
 
 import typings.googleGax.iamServiceMod.google.protobuf.UninterpretedOption.INamePart
-import typings.std.Uint8Array
+import typings.long.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,17 +22,13 @@ trait IUninterpretedOption extends StObject {
   var name: js.UndefOr[js.Array[INamePart] | Null] = js.undefined
   
   /** UninterpretedOption negativeIntValue */
-  var negativeIntValue: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.undefined
+  var negativeIntValue: js.UndefOr[Double | ^ | Null] = js.undefined
   
   /** UninterpretedOption positiveIntValue */
-  var positiveIntValue: js.UndefOr[
-    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.undefined
+  var positiveIntValue: js.UndefOr[Double | ^ | Null] = js.undefined
   
   /** UninterpretedOption stringValue */
-  var stringValue: js.UndefOr[Uint8Array | Null] = js.undefined
+  var stringValue: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object IUninterpretedOption {
   
@@ -67,25 +63,21 @@ object IUninterpretedOption {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNameVarargs(value: INamePart*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: INamePart*): Self = StObject.set(x, "name", js.Array(value*))
     
-    inline def setNegativeIntValue(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
-    ): Self = StObject.set(x, "negativeIntValue", value.asInstanceOf[js.Any])
+    inline def setNegativeIntValue(value: Double | ^): Self = StObject.set(x, "negativeIntValue", value.asInstanceOf[js.Any])
     
     inline def setNegativeIntValueNull: Self = StObject.set(x, "negativeIntValue", null)
     
     inline def setNegativeIntValueUndefined: Self = StObject.set(x, "negativeIntValue", js.undefined)
     
-    inline def setPositiveIntValue(
-      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
-    ): Self = StObject.set(x, "positiveIntValue", value.asInstanceOf[js.Any])
+    inline def setPositiveIntValue(value: Double | ^): Self = StObject.set(x, "positiveIntValue", value.asInstanceOf[js.Any])
     
     inline def setPositiveIntValueNull: Self = StObject.set(x, "positiveIntValue", null)
     
     inline def setPositiveIntValueUndefined: Self = StObject.set(x, "positiveIntValue", js.undefined)
     
-    inline def setStringValue(value: Uint8Array): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
     inline def setStringValueNull: Self = StObject.set(x, "stringValue", null)
     

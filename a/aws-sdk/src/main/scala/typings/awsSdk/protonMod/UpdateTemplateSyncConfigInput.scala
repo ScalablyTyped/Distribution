@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTemplateSyncConfigInput extends StObject {
   
   /**
-    * The repository branch.
+    * The repository branch for your template.
     */
   var branch: GitBranchName
   
   /**
-    * The name of the repository (for example, myrepos/myrepo).
+    * The repository name (for example, myrepos/myrepo).
     */
   var repositoryName: RepositoryName
   

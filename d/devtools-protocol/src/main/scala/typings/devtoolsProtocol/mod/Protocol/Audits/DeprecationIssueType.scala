@@ -38,6 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ObsoleteWebRtcCipherSuite
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OpenWebDatabaseInsecureContext
   - typings.devtoolsProtocol.devtoolsProtocolStrings.OverflowVisibleOnReplacedElement
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentInstruments
   - typings.devtoolsProtocol.devtoolsProtocolStrings.PersistentQuotaType
   - typings.devtoolsProtocol.devtoolsProtocolStrings.PictureSourceSrc
   - typings.devtoolsProtocol.devtoolsProtocolStrings.PrefixedCancelAnimationFrame
@@ -127,6 +128,8 @@ object DeprecationIssueType {
   inline def OpenWebDatabaseInsecureContext: typings.devtoolsProtocol.devtoolsProtocolStrings.OpenWebDatabaseInsecureContext = "OpenWebDatabaseInsecureContext".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.OpenWebDatabaseInsecureContext]
   
   inline def OverflowVisibleOnReplacedElement: typings.devtoolsProtocol.devtoolsProtocolStrings.OverflowVisibleOnReplacedElement = "OverflowVisibleOnReplacedElement".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.OverflowVisibleOnReplacedElement]
+  
+  inline def PaymentInstruments: typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentInstruments = "PaymentInstruments".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PaymentInstruments]
   
   inline def PersistentQuotaType: typings.devtoolsProtocol.devtoolsProtocolStrings.PersistentQuotaType = "PersistentQuotaType".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.PersistentQuotaType]
   

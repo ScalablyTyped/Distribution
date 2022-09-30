@@ -41,7 +41,6 @@ import typings.typedoc.typedocStrings.SomeSignature
 import typings.typedoc.typedocStrings.SomeType
 import typings.typedoc.typedocStrings.SomeValue
 import typings.typedoc.typedocStrings.VariableOrProperty
-import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import typings.typedoc.typedocStrings.all_
 import typings.typedoc.typedocStrings.basePath
 import typings.typedoc.typedocStrings.block
@@ -158,11 +157,11 @@ object libUtilsMod {
   ]]
   
   inline def BindOption_blockTags(name: blockTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -358,11 +357,11 @@ object libUtilsMod {
   ]]
   
   inline def BindOption_excludeTags(name: excludeTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -478,11 +477,11 @@ object libUtilsMod {
   ]]
   
   inline def BindOption_inlineTags(name: inlineTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -566,11 +565,11 @@ object libUtilsMod {
   ]]
   
   inline def BindOption_modifierTags(name: modifierTags): js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* target */ (Application & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]) | (typings.typedoc.anon.Options & BindOption & TopLevel[js.Array[`@$LeftcurlybracketstringRightcurlybracket`]]), 
+    /* target */ (Application & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[js.Array[/* template literal string: @${string} */ String]])), 
     /* key */ PropertyKey, 
     Unit
   ]]
@@ -784,11 +783,11 @@ object libUtilsMod {
   inline def BindOption_visibilityFilters(name: visibilityFilters): js.Function2[
     /* target */ (Application & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])), 
     /* key */ PropertyKey, 
@@ -796,11 +795,11 @@ object libUtilsMod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("BindOption")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* target */ (Application & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])) | (typings.typedoc.anon.Options & BindOption & (TopLevel[
       ManuallyValidatedOption[
-        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: '@${string}'] : boolean} */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: {  protected :boolean | undefined,   private :boolean | undefined,   inherited :boolean | undefined,   external :boolean | undefined, [tag: / * template literal string: @${string} * / string] : boolean} */ js.Any
       ]
     ])), 
     /* key */ PropertyKey, 
@@ -938,12 +937,12 @@ object libUtilsMod {
     
     inline def Raw(_props: Html): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Raw")(_props.asInstanceOf[js.Any]).asInstanceOf[Null]
     
-    inline def createElement(tag: String, props: js.Object, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
-    inline def createElement(tag: String, props: Null, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
-    inline def createElement(tag: js.Symbol, props: js.Object, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
-    inline def createElement(tag: js.Symbol, props: Null, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
-    inline def createElement(tag: JsxComponent[Any], props: js.Object, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
-    inline def createElement(tag: JsxComponent[Any], props: Null, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
+    inline def createElement(tag: String, props: js.Object, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
+    inline def createElement(tag: String, props: Null, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
+    inline def createElement(tag: js.Symbol, props: js.Object, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
+    inline def createElement(tag: js.Symbol, props: Null, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
+    inline def createElement(tag: JsxComponent[Any], props: js.Object, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
+    inline def createElement(tag: JsxComponent[Any], props: Null, children: JsxChildren*): JsxElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[JsxElement]
     
     inline def renderElement(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderElement")().asInstanceOf[String]
     inline def renderElement(element: JsxElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderElement")(element.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -1063,7 +1062,7 @@ object libUtilsMod {
     @js.native
     val additionalProperties: js.Symbol = js.native
     
-    inline def isTagString(x: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTagString")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTagString(x: Any): /* is / * template literal string: @${string} * / string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTagString")(x.asInstanceOf[js.Any]).asInstanceOf[/* is / * template literal string: @${string} * / string */ Boolean]
     
     inline def optional(x: js.Array[String]): Optional_[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")(x.asInstanceOf[js.Any]).asInstanceOf[Optional_[js.Array[String]]]
     inline def optional(x: BooleanConstructor): Optional_[BooleanConstructor] = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")(x.asInstanceOf[js.Any]).asInstanceOf[Optional_[BooleanConstructor]]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for camelcase-keys
 
-Typings are for version 6.2.2
+Typings are for version 8.0.2
 
 ## Library description:
 Convert object keys to camel case
@@ -10,10 +10,10 @@ Convert object keys to camel case
 | ------------------ | :-------------: |
 | Full name          | camelcase-keys |
 | Keywords           | map, obj, object, key, keys, value, values, val, iterate, camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, pascalcase, pascal-case, deep, recurse, recursive |
-| # releases         | 12 |
-| # dependents       | 306 |
-| # downloads        | 600788810 |
-| # stars            | 6 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 6.6298686E7 |
+| # stars            | 562.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/camelcase-keys#readme)

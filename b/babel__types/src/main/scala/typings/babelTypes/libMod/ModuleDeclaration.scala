@@ -19,7 +19,7 @@ object ModuleDeclaration {
     __obj.asInstanceOf[typings.babelTypes.libMod.ExportAllDeclaration_]
   }
   
-  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.libMod.ExportDefaultDeclaration_ = {
+  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction__ | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.libMod.ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[typings.babelTypes.libMod.ExportDefaultDeclaration_]

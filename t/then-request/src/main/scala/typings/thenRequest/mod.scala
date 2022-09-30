@@ -3,7 +3,7 @@ package typings.thenRequest
 import org.scalablytyped.runtime.Shortcut
 import typings.formData.mod.Options
 import typings.formData.mod.^
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.thenRequest.requestFnMod.RequestFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,13 +17,13 @@ object mod extends Shortcut {
   
   @JSImport("then-request", "FormData")
   @js.native
-  class FormData () extends ^ {
+  open class FormData () extends ^ {
     def this(options: Options) = this()
   }
   
   @JSImport("then-request", "ResponsePromise")
   @js.native
-  class ResponsePromise ()
+  open class ResponsePromise ()
     extends typings.thenRequest.responsePromiseMod.ResponsePromise
   
   type Response = typings.httpResponseObject.mod.^[Buffer | String]

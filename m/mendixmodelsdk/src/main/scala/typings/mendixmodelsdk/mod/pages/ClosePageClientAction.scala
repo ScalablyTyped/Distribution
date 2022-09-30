@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.ClosePageClientAction")
 @js.native
-class ClosePageClientAction protected ()
+open class ClosePageClientAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ClosePageClientAction {
   def this(
     model: AbstractModel,

@@ -33,7 +33,7 @@ object freeCameraDeviceOrientationInputMod {
     /* private */ var _gamma: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var _onDeviceOrientationChangedObservable: Observable[Unit] = js.native
     
@@ -55,6 +55,9 @@ object freeCameraDeviceOrientationInputMod {
       */
     @JSName("checkInputs")
     def checkInputs_MFreeCameraDeviceOrientationInput(): Unit = js.native
+    
+    /** alpha+beta+gamma smoothing. 0: no smoothing, 1: new data ignored, 0.9 recommended for smoothing */
+    var smoothFactor: Double = js.native
   }
   /* static members */
   object FreeCameraDeviceOrientationInput {
@@ -75,34 +78,21 @@ object freeCameraDeviceOrientationInputMod {
   /* augmented module */
   object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
     
+    @js.native
     trait FreeCameraInputsManager extends StObject {
       
       /**
-        * @hidden
+        * @internal
         */
-      var _deviceOrientationInput: Nullable[FreeCameraDeviceOrientationInput]
+      var _deviceOrientationInput: Nullable[FreeCameraDeviceOrientationInput] = js.native
       
       /**
         * Add orientation input support to the input manager.
+        * @param smoothFactor deviceOrientation smoothing. 0: no smoothing, 1: new data ignored, 0.9 recommended for smoothing
         * @returns the current input manager
         */
-      def addDeviceOrientation(): FreeCameraInputsManager
-    }
-    object FreeCameraInputsManager {
-      
-      inline def apply(addDeviceOrientation: () => FreeCameraInputsManager): FreeCameraInputsManager = {
-        val __obj = js.Dynamic.literal(addDeviceOrientation = js.Any.fromFunction0(addDeviceOrientation), _deviceOrientationInput = null)
-        __obj.asInstanceOf[FreeCameraInputsManager]
-      }
-      
-      extension [Self <: FreeCameraInputsManager](x: Self) {
-        
-        inline def setAddDeviceOrientation(value: () => FreeCameraInputsManager): Self = StObject.set(x, "addDeviceOrientation", js.Any.fromFunction0(value))
-        
-        inline def set_deviceOrientationInput(value: Nullable[FreeCameraDeviceOrientationInput]): Self = StObject.set(x, "_deviceOrientationInput", value.asInstanceOf[js.Any])
-        
-        inline def set_deviceOrientationInputNull: Self = StObject.set(x, "_deviceOrientationInput", null)
-      }
+      def addDeviceOrientation(): FreeCameraInputsManager = js.native
+      def addDeviceOrientation(smoothFactor: Double): FreeCameraInputsManager = js.native
     }
   }
 }

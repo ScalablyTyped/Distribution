@@ -17,7 +17,7 @@ trait UpdateSecurityGroupRuleDescriptionsIngressRequest extends StObject {
   var GroupId: js.UndefOr[SecurityGroupId] = js.undefined
   
   /**
-    * [EC2-Classic, default VPC] The name of the security group. You must specify either the security group ID or the security group name in the request.
+    * [EC2-Classic, default VPC] The name of the security group. You must specify either the security group ID or the security group name in the request. For security groups in a nondefault VPC, you must specify the security group ID.
     */
   var GroupName: js.UndefOr[SecurityGroupName] = js.undefined
   

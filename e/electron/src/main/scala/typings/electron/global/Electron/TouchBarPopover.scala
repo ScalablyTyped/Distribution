@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.TouchBarPopover")
 @js.native
-class TouchBarPopover protected ()
+open class TouchBarPopover protected ()
   extends typings.electron.Electron.TouchBarPopover {
   // Docs: https://electronjs.org/docs/api/touch-bar-popover
   /**

@@ -1,10 +1,10 @@
 package typings.hdrHistogramJs
 
 import typings.hdrHistogramJs.byteBufferMod.default
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`16`
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`32`
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`64`
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`8`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`16`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`32`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`64`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`8`
 import typings.hdrHistogramJs.hdrHistogramJsStrings.packed
 import typings.hdrHistogramJs.histogramBuilderMod.BuildRequest
 import typings.hdrHistogramJs.histogramLogWriterMod.Writable

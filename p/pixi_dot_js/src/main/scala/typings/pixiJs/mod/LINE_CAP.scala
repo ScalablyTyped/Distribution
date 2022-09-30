@@ -4,29 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Support line caps in `PIXI.LineStyle` for graphics.
-  *
-  * @see PIXI.Graphics#lineStyle
-  *
-  * @name LINE_CAP
-  * @memberof PIXI
-  * @static
-  * @enum {string}
-  * @property {string} BUTT - 'butt': don't add any cap at line ends (leaves orthogonal edges)
-  * @property {string} ROUND - 'round': add semicircle at ends
-  * @property {string} SQUARE - 'square': add square at end (like `BUTT` except more length at end)
-  */
 @JSImport("pixi.js", "LINE_CAP")
 @js.native
 object LINE_CAP extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_CAP & Double] = js.native
+  def apply(value: String): js.UndefOr[typings.pixiGraphics.mod.LINE_CAP & String] = js.native
   
-  /* 0 */ val BUTT: typings.pixiJs.PIXI.LINE_CAP.BUTT & Double = js.native
+  /* "butt" */ val BUTT: typings.pixiGraphics.mod.LINE_CAP.BUTT & String = js.native
   
-  /* 1 */ val ROUND: typings.pixiJs.PIXI.LINE_CAP.ROUND & Double = js.native
+  /* "round" */ val ROUND: typings.pixiGraphics.mod.LINE_CAP.ROUND & String = js.native
   
-  /* 2 */ val SQUARE: typings.pixiJs.PIXI.LINE_CAP.SQUARE & Double = js.native
+  /* "square" */ val SQUARE: typings.pixiGraphics.mod.LINE_CAP.SQUARE & String = js.native
 }

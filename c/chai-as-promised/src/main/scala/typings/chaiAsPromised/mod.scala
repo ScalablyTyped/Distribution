@@ -3,6 +3,7 @@ package typings.chaiAsPromised
 import org.scalablytyped.runtime.Shortcut
 import typings.chai.Chai.ChaiPlugin
 import typings.chaiAsPromised.Chai.PromisedAssertion
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object mod extends Shortcut {
   @js.native
   trait ChaiAsPromised extends ChaiPlugin {
     
-    def transferPromiseness(assertion: PromisedAssertion, promise: js.Thenable[Any]): Unit = js.native
+    def transferPromiseness(assertion: PromisedAssertion, promise: PromiseLike[Any]): Unit = js.native
     
     def transformAsserterArgs(values: js.Array[Any]): Any = js.native
   }

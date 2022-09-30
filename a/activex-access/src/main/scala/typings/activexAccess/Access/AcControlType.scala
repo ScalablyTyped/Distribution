@@ -1,58 +1,58 @@
 package typings.activexAccess.Access
 
-import typings.activexAccess.activexAccessNumbers.`100`
-import typings.activexAccess.activexAccessNumbers.`101`
-import typings.activexAccess.activexAccessNumbers.`102`
-import typings.activexAccess.activexAccessNumbers.`103`
-import typings.activexAccess.activexAccessNumbers.`104`
-import typings.activexAccess.activexAccessNumbers.`105`
-import typings.activexAccess.activexAccessNumbers.`106`
-import typings.activexAccess.activexAccessNumbers.`107`
-import typings.activexAccess.activexAccessNumbers.`108`
-import typings.activexAccess.activexAccessNumbers.`109`
-import typings.activexAccess.activexAccessNumbers.`110`
-import typings.activexAccess.activexAccessNumbers.`111`
-import typings.activexAccess.activexAccessNumbers.`112`
-import typings.activexAccess.activexAccessNumbers.`114`
-import typings.activexAccess.activexAccessNumbers.`118`
-import typings.activexAccess.activexAccessNumbers.`119`
-import typings.activexAccess.activexAccessNumbers.`122`
-import typings.activexAccess.activexAccessNumbers.`123`
-import typings.activexAccess.activexAccessNumbers.`124`
-import typings.activexAccess.activexAccessNumbers.`126`
-import typings.activexAccess.activexAccessNumbers.`127`
-import typings.activexAccess.activexAccessNumbers.`128`
-import typings.activexAccess.activexAccessNumbers.`129`
-import typings.activexAccess.activexAccessNumbers.`130`
+import typings.activexAccess.activexAccessInts.`100`
+import typings.activexAccess.activexAccessInts.`101`
+import typings.activexAccess.activexAccessInts.`102`
+import typings.activexAccess.activexAccessInts.`103`
+import typings.activexAccess.activexAccessInts.`104`
+import typings.activexAccess.activexAccessInts.`105`
+import typings.activexAccess.activexAccessInts.`106`
+import typings.activexAccess.activexAccessInts.`107`
+import typings.activexAccess.activexAccessInts.`108`
+import typings.activexAccess.activexAccessInts.`109`
+import typings.activexAccess.activexAccessInts.`110`
+import typings.activexAccess.activexAccessInts.`111`
+import typings.activexAccess.activexAccessInts.`112`
+import typings.activexAccess.activexAccessInts.`114`
+import typings.activexAccess.activexAccessInts.`118`
+import typings.activexAccess.activexAccessInts.`119`
+import typings.activexAccess.activexAccessInts.`122`
+import typings.activexAccess.activexAccessInts.`123`
+import typings.activexAccess.activexAccessInts.`124`
+import typings.activexAccess.activexAccessInts.`126`
+import typings.activexAccess.activexAccessInts.`127`
+import typings.activexAccess.activexAccessInts.`128`
+import typings.activexAccess.activexAccessInts.`129`
+import typings.activexAccess.activexAccessInts.`130`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAccess.activexAccessNumbers.`126`
-  - typings.activexAccess.activexAccessNumbers.`108`
-  - typings.activexAccess.activexAccessNumbers.`106`
-  - typings.activexAccess.activexAccessNumbers.`111`
-  - typings.activexAccess.activexAccessNumbers.`104`
-  - typings.activexAccess.activexAccessNumbers.`119`
-  - typings.activexAccess.activexAccessNumbers.`127`
-  - typings.activexAccess.activexAccessNumbers.`103`
-  - typings.activexAccess.activexAccessNumbers.`100`
-  - typings.activexAccess.activexAccessNumbers.`102`
-  - typings.activexAccess.activexAccessNumbers.`110`
-  - typings.activexAccess.activexAccessNumbers.`130`
-  - typings.activexAccess.activexAccessNumbers.`129`
-  - typings.activexAccess.activexAccessNumbers.`114`
-  - typings.activexAccess.activexAccessNumbers.`105`
-  - typings.activexAccess.activexAccessNumbers.`107`
-  - typings.activexAccess.activexAccessNumbers.`124`
-  - typings.activexAccess.activexAccessNumbers.`118`
-  - typings.activexAccess.activexAccessNumbers.`101`
-  - typings.activexAccess.activexAccessNumbers.`112`
-  - typings.activexAccess.activexAccessNumbers.`123`
-  - typings.activexAccess.activexAccessNumbers.`109`
-  - typings.activexAccess.activexAccessNumbers.`122`
-  - typings.activexAccess.activexAccessNumbers.`128`
+  - typings.activexAccess.activexAccessInts.`126`
+  - typings.activexAccess.activexAccessInts.`108`
+  - typings.activexAccess.activexAccessInts.`106`
+  - typings.activexAccess.activexAccessInts.`111`
+  - typings.activexAccess.activexAccessInts.`104`
+  - typings.activexAccess.activexAccessInts.`119`
+  - typings.activexAccess.activexAccessInts.`127`
+  - typings.activexAccess.activexAccessInts.`103`
+  - typings.activexAccess.activexAccessInts.`100`
+  - typings.activexAccess.activexAccessInts.`102`
+  - typings.activexAccess.activexAccessInts.`110`
+  - typings.activexAccess.activexAccessInts.`130`
+  - typings.activexAccess.activexAccessInts.`129`
+  - typings.activexAccess.activexAccessInts.`114`
+  - typings.activexAccess.activexAccessInts.`105`
+  - typings.activexAccess.activexAccessInts.`107`
+  - typings.activexAccess.activexAccessInts.`124`
+  - typings.activexAccess.activexAccessInts.`118`
+  - typings.activexAccess.activexAccessInts.`101`
+  - typings.activexAccess.activexAccessInts.`112`
+  - typings.activexAccess.activexAccessInts.`123`
+  - typings.activexAccess.activexAccessInts.`109`
+  - typings.activexAccess.activexAccessInts.`122`
+  - typings.activexAccess.activexAccessInts.`128`
 */
 trait AcControlType extends StObject
 object AcControlType {

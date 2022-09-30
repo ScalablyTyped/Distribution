@@ -335,21 +335,21 @@ object mod {
   type LoggingCallback = js.Function3[/* level */ LoggingLevel, /* message */ String, /* error */ js.UndefOr[js.Error], Unit]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.adalNode.adalNodeNumbers.`0`
-    - typings.adalNode.adalNodeNumbers.`1`
-    - typings.adalNode.adalNodeNumbers.`2`
-    - typings.adalNode.adalNodeNumbers.`3`
+    - typings.adalNode.adalNodeInts.`0`
+    - typings.adalNode.adalNodeInts.`1`
+    - typings.adalNode.adalNodeInts.`2`
+    - typings.adalNode.adalNodeInts.`3`
   */
   trait LoggingLevel extends StObject
   object LoggingLevel {
     
-    inline def `0`: typings.adalNode.adalNodeNumbers.`0` = 0.asInstanceOf[typings.adalNode.adalNodeNumbers.`0`]
+    inline def `0`: typings.adalNode.adalNodeInts.`0` = 0.asInstanceOf[typings.adalNode.adalNodeInts.`0`]
     
-    inline def `1`: typings.adalNode.adalNodeNumbers.`1` = 1.asInstanceOf[typings.adalNode.adalNodeNumbers.`1`]
+    inline def `1`: typings.adalNode.adalNodeInts.`1` = 1.asInstanceOf[typings.adalNode.adalNodeInts.`1`]
     
-    inline def `2`: typings.adalNode.adalNodeNumbers.`2` = 2.asInstanceOf[typings.adalNode.adalNodeNumbers.`2`]
+    inline def `2`: typings.adalNode.adalNodeInts.`2` = 2.asInstanceOf[typings.adalNode.adalNodeInts.`2`]
     
-    inline def `3`: typings.adalNode.adalNodeNumbers.`3` = 3.asInstanceOf[typings.adalNode.adalNodeNumbers.`3`]
+    inline def `3`: typings.adalNode.adalNodeInts.`3` = 3.asInstanceOf[typings.adalNode.adalNodeInts.`3`]
   }
   
   /**

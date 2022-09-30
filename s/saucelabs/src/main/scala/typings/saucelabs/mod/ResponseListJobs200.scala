@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponseListJobs200
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var jobs: js.UndefOr[js.Array[Job]] = js.undefined
 }
@@ -24,6 +24,6 @@ object ResponseListJobs200 {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value*))
   }
 }

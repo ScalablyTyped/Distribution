@@ -2,14 +2,15 @@ package typings.promiseMemoize
 
 import typings.promiseMemoize.anon.Clear
 import typings.promiseMemoize.promiseMemoizeStrings.json
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply[T /* <: js.Function1[/* repeated */ Any, js.Thenable[Any]] */](fn: T): T & Clear = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T & Clear]
-  inline def apply[T /* <: js.Function1[/* repeated */ Any, js.Thenable[Any]] */](fn: T, options: Options): T & Clear = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Clear]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, PromiseLike[Any]] */](fn: T): T & Clear = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T & Clear]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, PromiseLike[Any]] */](fn: T, options: Options): T & Clear = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Clear]
   
   @JSImport("promise-memoize", JSImport.Namespace)
   @js.native

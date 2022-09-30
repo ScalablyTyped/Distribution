@@ -45,11 +45,11 @@ trait SizeMappingBuilder extends StObject {
   
   /**
     * Builds a size map specification from the mappings added to this builder.
-    * <br><br>
+    *
     * If any invalid mappings have been supplied, this method will return
-    * <code>null</code>. Otherwise it returns a specification in the correct
+    * `null`. Otherwise it returns a specification in the correct
     * format to pass to {@link Slot.defineSizeMapping}.
-    * <br><br>
+    *
     * Note: the behavior of the builder after calling this method is undefined.
     *
     * @return The result built by this builder. Can be null if invalid size

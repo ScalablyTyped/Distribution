@@ -13,7 +13,7 @@ object eskdfMod {
   
   inline def deriveMainSeed(username: String, password: String): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("deriveMainSeed")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def eskdf(username: String, password: String): ESKDF_ = (^.asInstanceOf[js.Dynamic].applyDynamic("eskdf")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ESKDF_]
+  inline def eskdf(username: String, password: String): js.Promise[ReadonlyderiveChildKeypro] = (^.asInstanceOf[js.Dynamic].applyDynamic("eskdf")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReadonlyderiveChildKeypro]]
   
   inline def pbkdf2(password: String, salt: String): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   

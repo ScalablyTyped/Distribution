@@ -2,11 +2,11 @@ package typings.images
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.images.anon.Height
-import typings.images.imagesNumbers.`0`
-import typings.images.imagesNumbers.`1`
-import typings.images.imagesNumbers.`2`
-import typings.images.imagesNumbers.`3`
-import typings.images.imagesNumbers.`4`
+import typings.images.imagesInts.`0`
+import typings.images.imagesInts.`1`
+import typings.images.imagesInts.`2`
+import typings.images.imagesInts.`3`
+import typings.images.imagesInts.`4`
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -218,11 +218,11 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.images.imagesNumbers.`1`
-    - typings.images.imagesNumbers.`0`
-    - typings.images.imagesNumbers.`2`
-    - typings.images.imagesNumbers.`3`
-    - typings.images.imagesNumbers.`4`
+    - typings.images.imagesInts.`1`
+    - typings.images.imagesInts.`0`
+    - typings.images.imagesInts.`2`
+    - typings.images.imagesInts.`3`
+    - typings.images.imagesInts.`4`
   */
   trait TYPE extends StObject
   object TYPE {

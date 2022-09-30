@@ -1,55 +1,38 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.anon.FontName
+import typings.pixiTextBitmap.anon.PartialIBitmapTextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A BitmapText object will create a line or multiple lines of text using bitmap font.
-  *
-  * The primary advantage of this class over Text is that all of your textures are pre-generated and loading,
-  * meaning that rendering is fast, and changing text has no performance implications.
-  *
-  * Supporting character sets other than latin, such as CJK languages, may be impractical due to the number of characters.
-  *
-  * To split a line you can use '\n', '\r' or '\r\n' in your string.
-  *
-  * PixiJS can auto-generate fonts on-the-fly using BitmapFont or use fnt files provided by:
-  * http://www.angelcode.com/products/bmfont/ for Windows or
-  * http://www.bmglyph.com/ for Mac.
-  *
-  * A BitmapText can only be created when the font is loaded.
-  *
-  * ```js
-  * // in this case the font is in a file called 'desyrel.fnt'
-  * let bitmapText = new PIXI.BitmapText("text using a fancy font!", {font: "35px Desyrel", align: "right"});
-  * ```
-  *
-  * @class
-  * @extends PIXI.Container
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "BitmapText")
 @js.native
-class BitmapText protected ()
-  extends StObject
-     with typings.pixiJs.PIXI.BitmapText {
-  def this(text: String, style: FontName) = this()
+open class BitmapText protected ()
+  extends typings.pixiTextBitmap.mod.BitmapText {
+  /**
+    * @param text - A string that you would like the text to display.
+    * @param style - The style parameters.
+    * @param {string} style.fontName - The installed BitmapFont name.
+    * @param {number} [style.fontSize] - The size of the font in pixels, e.g. 24. If undefined,
+    *.     this will default to the BitmapFont size.
+    * @param {string} [style.align='left'] - Alignment for multiline text ('left', 'center', 'right' or 'justify'),
+    *      does not affect single line text.
+    * @param {number} [style.tint=0xFFFFFF] - The tint color.
+    * @param {number} [style.letterSpacing=0] - The amount of spacing between letters.
+    * @param {number} [style.maxWidth=0] - The max width of the text before line wrapping.
+    */
+  def this(text: String) = this()
+  def this(text: String, style: PartialIBitmapTextStyle) = this()
 }
+/* static members */
 object BitmapText {
   
   @JSImport("pixi.js", "BitmapText")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Register a bitmap font with data and a texture.
-    *
-    * @deprecated since 5.3.0
-    * @see PIXI.BitmapFont.install
-    * @static
-    */
-  /* static member */
-  inline def registerFont(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")().asInstanceOf[Unit]
+  @JSImport("pixi.js", "BitmapText.styleDefaults")
+  @js.native
+  def styleDefaults: PartialIBitmapTextStyle = js.native
+  inline def styleDefaults_=(x: PartialIBitmapTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styleDefaults")(x.asInstanceOf[js.Any])
 }

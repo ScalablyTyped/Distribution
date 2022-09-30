@@ -75,7 +75,7 @@ trait BoundingBoxRenderer
   def render(renderingGroupId: Double): Unit
   
   /**
-    * @hidden
+    * @internal
     */
   var renderList: SmartArray[BoundingBox]
   
@@ -86,7 +86,7 @@ trait BoundingBoxRenderer
   def renderOcclusionBoundingBox(mesh: AbstractMesh): Unit
   
   /**
-    * @hidden
+    * @internal
     */
   def reset(): Unit
   

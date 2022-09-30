@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "leaflet-geosearch" : "3.6.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "leaflet-geosearch" : "3.6.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

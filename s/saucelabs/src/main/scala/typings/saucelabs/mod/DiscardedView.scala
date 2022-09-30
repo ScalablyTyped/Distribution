@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DiscardedView
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var job_ids: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -24,6 +24,6 @@ object DiscardedView {
     
     inline def setJob_idsUndefined: Self = StObject.set(x, "job_ids", js.undefined)
     
-    inline def setJob_idsVarargs(value: String*): Self = StObject.set(x, "job_ids", js.Array(value :_*))
+    inline def setJob_idsVarargs(value: String*): Self = StObject.set(x, "job_ids", js.Array(value*))
   }
 }

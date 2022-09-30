@@ -138,20 +138,20 @@ object mod {
   type FunctionType = js.Function1[/* arg */ Any, Unit]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.jxon.jxonNumbers.`0`
-    - typings.jxon.jxonNumbers.`1`
-    - typings.jxon.jxonNumbers.`2`
-    - typings.jxon.jxonNumbers.`3`
+    - typings.jxon.jxonInts.`0`
+    - typings.jxon.jxonInts.`1`
+    - typings.jxon.jxonInts.`2`
+    - typings.jxon.jxonInts.`3`
   */
   trait VerbosityType extends StObject
   object VerbosityType {
     
-    inline def `0`: typings.jxon.jxonNumbers.`0` = 0.asInstanceOf[typings.jxon.jxonNumbers.`0`]
+    inline def `0`: typings.jxon.jxonInts.`0` = 0.asInstanceOf[typings.jxon.jxonInts.`0`]
     
-    inline def `1`: typings.jxon.jxonNumbers.`1` = 1.asInstanceOf[typings.jxon.jxonNumbers.`1`]
+    inline def `1`: typings.jxon.jxonInts.`1` = 1.asInstanceOf[typings.jxon.jxonInts.`1`]
     
-    inline def `2`: typings.jxon.jxonNumbers.`2` = 2.asInstanceOf[typings.jxon.jxonNumbers.`2`]
+    inline def `2`: typings.jxon.jxonInts.`2` = 2.asInstanceOf[typings.jxon.jxonInts.`2`]
     
-    inline def `3`: typings.jxon.jxonNumbers.`3` = 3.asInstanceOf[typings.jxon.jxonNumbers.`3`]
+    inline def `3`: typings.jxon.jxonInts.`3` = 3.asInstanceOf[typings.jxon.jxonInts.`3`]
   }
 }

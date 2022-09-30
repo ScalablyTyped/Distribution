@@ -1,130 +1,130 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-16777216`
-import typings.activexWord.activexWordNumbers.`0`
-import typings.activexWord.activexWordNumbers.`10040115`
-import typings.activexWord.activexWordNumbers.`10053222`
-import typings.activexWord.activexWordNumbers.`10066329`
-import typings.activexWord.activexWordNumbers.`10079487`
-import typings.activexWord.activexWordNumbers.`10092543`
-import typings.activexWord.activexWordNumbers.`10526880`
-import typings.activexWord.activexWordNumbers.`10921638`
-import typings.activexWord.activexWordNumbers.`11776947`
-import typings.activexWord.activexWordNumbers.`12632256`
-import typings.activexWord.activexWordNumbers.`128`
-import typings.activexWord.activexWordNumbers.`13056`
-import typings.activexWord.activexWordNumbers.`13107`
-import typings.activexWord.activexWordNumbers.`13209`
-import typings.activexWord.activexWordNumbers.`13408767`
-import typings.activexWord.activexWordNumbers.`13421619`
-import typings.activexWord.activexWordNumbers.`13421772`
-import typings.activexWord.activexWordNumbers.`13434828`
-import typings.activexWord.activexWordNumbers.`14277081`
-import typings.activexWord.activexWordNumbers.`14737632`
-import typings.activexWord.activexWordNumbers.`15132390`
-import typings.activexWord.activexWordNumbers.`15987699`
-import typings.activexWord.activexWordNumbers.`1644825`
-import typings.activexWord.activexWordNumbers.`16711680`
-import typings.activexWord.activexWordNumbers.`16711935`
-import typings.activexWord.activexWordNumbers.`16737843`
-import typings.activexWord.activexWordNumbers.`16751052`
-import typings.activexWord.activexWordNumbers.`16763904`
-import typings.activexWord.activexWordNumbers.`16764057`
-import typings.activexWord.activexWordNumbers.`16776960`
-import typings.activexWord.activexWordNumbers.`16777164`
-import typings.activexWord.activexWordNumbers.`16777215`
-import typings.activexWord.activexWordNumbers.`2105376`
-import typings.activexWord.activexWordNumbers.`2500134`
-import typings.activexWord.activexWordNumbers.`255`
-import typings.activexWord.activexWordNumbers.`26367`
-import typings.activexWord.activexWordNumbers.`32768`
-import typings.activexWord.activexWordNumbers.`32896`
-import typings.activexWord.activexWordNumbers.`3355443`
-import typings.activexWord.activexWordNumbers.`39423`
-import typings.activexWord.activexWordNumbers.`4210752`
-import typings.activexWord.activexWordNumbers.`5000268`
-import typings.activexWord.activexWordNumbers.`52377`
-import typings.activexWord.activexWordNumbers.`52479`
-import typings.activexWord.activexWordNumbers.`5855577`
-import typings.activexWord.activexWordNumbers.`6316128`
-import typings.activexWord.activexWordNumbers.`65280`
-import typings.activexWord.activexWordNumbers.`65535`
-import typings.activexWord.activexWordNumbers.`6697728`
-import typings.activexWord.activexWordNumbers.`6697881`
-import typings.activexWord.activexWordNumbers.`6710886`
-import typings.activexWord.activexWordNumbers.`6723891`
-import typings.activexWord.activexWordNumbers.`7566195`
-import typings.activexWord.activexWordNumbers.`789516`
-import typings.activexWord.activexWordNumbers.`8388608`
-import typings.activexWord.activexWordNumbers.`8388736`
-import typings.activexWord.activexWordNumbers.`8421376`
-import typings.activexWord.activexWordNumbers.`8421504`
-import typings.activexWord.activexWordNumbers.`9211020`
+import typings.activexWord.activexWordInts.`-16777216`
+import typings.activexWord.activexWordInts.`0`
+import typings.activexWord.activexWordInts.`10040115`
+import typings.activexWord.activexWordInts.`10053222`
+import typings.activexWord.activexWordInts.`10066329`
+import typings.activexWord.activexWordInts.`10079487`
+import typings.activexWord.activexWordInts.`10092543`
+import typings.activexWord.activexWordInts.`10526880`
+import typings.activexWord.activexWordInts.`10921638`
+import typings.activexWord.activexWordInts.`11776947`
+import typings.activexWord.activexWordInts.`12632256`
+import typings.activexWord.activexWordInts.`128`
+import typings.activexWord.activexWordInts.`13056`
+import typings.activexWord.activexWordInts.`13107`
+import typings.activexWord.activexWordInts.`13209`
+import typings.activexWord.activexWordInts.`13408767`
+import typings.activexWord.activexWordInts.`13421619`
+import typings.activexWord.activexWordInts.`13421772`
+import typings.activexWord.activexWordInts.`13434828`
+import typings.activexWord.activexWordInts.`14277081`
+import typings.activexWord.activexWordInts.`14737632`
+import typings.activexWord.activexWordInts.`15132390`
+import typings.activexWord.activexWordInts.`15987699`
+import typings.activexWord.activexWordInts.`1644825`
+import typings.activexWord.activexWordInts.`16711680`
+import typings.activexWord.activexWordInts.`16711935`
+import typings.activexWord.activexWordInts.`16737843`
+import typings.activexWord.activexWordInts.`16751052`
+import typings.activexWord.activexWordInts.`16763904`
+import typings.activexWord.activexWordInts.`16764057`
+import typings.activexWord.activexWordInts.`16776960`
+import typings.activexWord.activexWordInts.`16777164`
+import typings.activexWord.activexWordInts.`16777215`
+import typings.activexWord.activexWordInts.`2105376`
+import typings.activexWord.activexWordInts.`2500134`
+import typings.activexWord.activexWordInts.`255`
+import typings.activexWord.activexWordInts.`26367`
+import typings.activexWord.activexWordInts.`32768`
+import typings.activexWord.activexWordInts.`32896`
+import typings.activexWord.activexWordInts.`3355443`
+import typings.activexWord.activexWordInts.`39423`
+import typings.activexWord.activexWordInts.`4210752`
+import typings.activexWord.activexWordInts.`5000268`
+import typings.activexWord.activexWordInts.`52377`
+import typings.activexWord.activexWordInts.`52479`
+import typings.activexWord.activexWordInts.`5855577`
+import typings.activexWord.activexWordInts.`6316128`
+import typings.activexWord.activexWordInts.`65280`
+import typings.activexWord.activexWordInts.`65535`
+import typings.activexWord.activexWordInts.`6697728`
+import typings.activexWord.activexWordInts.`6697881`
+import typings.activexWord.activexWordInts.`6710886`
+import typings.activexWord.activexWordInts.`6723891`
+import typings.activexWord.activexWordInts.`7566195`
+import typings.activexWord.activexWordInts.`789516`
+import typings.activexWord.activexWordInts.`8388608`
+import typings.activexWord.activexWordInts.`8388736`
+import typings.activexWord.activexWordInts.`8421376`
+import typings.activexWord.activexWordInts.`8421504`
+import typings.activexWord.activexWordInts.`9211020`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`13421619`
-  - typings.activexWord.activexWordNumbers.`-16777216`
-  - typings.activexWord.activexWordNumbers.`0`
-  - typings.activexWord.activexWordNumbers.`16711680`
-  - typings.activexWord.activexWordNumbers.`10053222`
-  - typings.activexWord.activexWordNumbers.`65280`
-  - typings.activexWord.activexWordNumbers.`13209`
-  - typings.activexWord.activexWordNumbers.`8388608`
-  - typings.activexWord.activexWordNumbers.`13056`
-  - typings.activexWord.activexWordNumbers.`128`
-  - typings.activexWord.activexWordNumbers.`6697728`
-  - typings.activexWord.activexWordNumbers.`32896`
-  - typings.activexWord.activexWordNumbers.`52479`
-  - typings.activexWord.activexWordNumbers.`15987699`
-  - typings.activexWord.activexWordNumbers.`15132390`
-  - typings.activexWord.activexWordNumbers.`14737632`
-  - typings.activexWord.activexWordNumbers.`14277081`
-  - typings.activexWord.activexWordNumbers.`13421772`
-  - typings.activexWord.activexWordNumbers.`12632256`
-  - typings.activexWord.activexWordNumbers.`11776947`
-  - typings.activexWord.activexWordNumbers.`10921638`
-  - typings.activexWord.activexWordNumbers.`10526880`
-  - typings.activexWord.activexWordNumbers.`10066329`
-  - typings.activexWord.activexWordNumbers.`9211020`
-  - typings.activexWord.activexWordNumbers.`8421504`
-  - typings.activexWord.activexWordNumbers.`7566195`
-  - typings.activexWord.activexWordNumbers.`6710886`
-  - typings.activexWord.activexWordNumbers.`6316128`
-  - typings.activexWord.activexWordNumbers.`5855577`
-  - typings.activexWord.activexWordNumbers.`5000268`
-  - typings.activexWord.activexWordNumbers.`4210752`
-  - typings.activexWord.activexWordNumbers.`3355443`
-  - typings.activexWord.activexWordNumbers.`2500134`
-  - typings.activexWord.activexWordNumbers.`2105376`
-  - typings.activexWord.activexWordNumbers.`1644825`
-  - typings.activexWord.activexWordNumbers.`789516`
-  - typings.activexWord.activexWordNumbers.`32768`
-  - typings.activexWord.activexWordNumbers.`10040115`
-  - typings.activexWord.activexWordNumbers.`16751052`
-  - typings.activexWord.activexWordNumbers.`16737843`
-  - typings.activexWord.activexWordNumbers.`13434828`
-  - typings.activexWord.activexWordNumbers.`39423`
-  - typings.activexWord.activexWordNumbers.`16777164`
-  - typings.activexWord.activexWordNumbers.`10092543`
-  - typings.activexWord.activexWordNumbers.`52377`
-  - typings.activexWord.activexWordNumbers.`13107`
-  - typings.activexWord.activexWordNumbers.`26367`
-  - typings.activexWord.activexWordNumbers.`16764057`
-  - typings.activexWord.activexWordNumbers.`16711935`
-  - typings.activexWord.activexWordNumbers.`6697881`
-  - typings.activexWord.activexWordNumbers.`255`
-  - typings.activexWord.activexWordNumbers.`13408767`
-  - typings.activexWord.activexWordNumbers.`6723891`
-  - typings.activexWord.activexWordNumbers.`16763904`
-  - typings.activexWord.activexWordNumbers.`10079487`
-  - typings.activexWord.activexWordNumbers.`8421376`
-  - typings.activexWord.activexWordNumbers.`16776960`
-  - typings.activexWord.activexWordNumbers.`8388736`
-  - typings.activexWord.activexWordNumbers.`16777215`
-  - typings.activexWord.activexWordNumbers.`65535`
+  - typings.activexWord.activexWordInts.`13421619`
+  - typings.activexWord.activexWordInts.`-16777216`
+  - typings.activexWord.activexWordInts.`0`
+  - typings.activexWord.activexWordInts.`16711680`
+  - typings.activexWord.activexWordInts.`10053222`
+  - typings.activexWord.activexWordInts.`65280`
+  - typings.activexWord.activexWordInts.`13209`
+  - typings.activexWord.activexWordInts.`8388608`
+  - typings.activexWord.activexWordInts.`13056`
+  - typings.activexWord.activexWordInts.`128`
+  - typings.activexWord.activexWordInts.`6697728`
+  - typings.activexWord.activexWordInts.`32896`
+  - typings.activexWord.activexWordInts.`52479`
+  - typings.activexWord.activexWordInts.`15987699`
+  - typings.activexWord.activexWordInts.`15132390`
+  - typings.activexWord.activexWordInts.`14737632`
+  - typings.activexWord.activexWordInts.`14277081`
+  - typings.activexWord.activexWordInts.`13421772`
+  - typings.activexWord.activexWordInts.`12632256`
+  - typings.activexWord.activexWordInts.`11776947`
+  - typings.activexWord.activexWordInts.`10921638`
+  - typings.activexWord.activexWordInts.`10526880`
+  - typings.activexWord.activexWordInts.`10066329`
+  - typings.activexWord.activexWordInts.`9211020`
+  - typings.activexWord.activexWordInts.`8421504`
+  - typings.activexWord.activexWordInts.`7566195`
+  - typings.activexWord.activexWordInts.`6710886`
+  - typings.activexWord.activexWordInts.`6316128`
+  - typings.activexWord.activexWordInts.`5855577`
+  - typings.activexWord.activexWordInts.`5000268`
+  - typings.activexWord.activexWordInts.`4210752`
+  - typings.activexWord.activexWordInts.`3355443`
+  - typings.activexWord.activexWordInts.`2500134`
+  - typings.activexWord.activexWordInts.`2105376`
+  - typings.activexWord.activexWordInts.`1644825`
+  - typings.activexWord.activexWordInts.`789516`
+  - typings.activexWord.activexWordInts.`32768`
+  - typings.activexWord.activexWordInts.`10040115`
+  - typings.activexWord.activexWordInts.`16751052`
+  - typings.activexWord.activexWordInts.`16737843`
+  - typings.activexWord.activexWordInts.`13434828`
+  - typings.activexWord.activexWordInts.`39423`
+  - typings.activexWord.activexWordInts.`16777164`
+  - typings.activexWord.activexWordInts.`10092543`
+  - typings.activexWord.activexWordInts.`52377`
+  - typings.activexWord.activexWordInts.`13107`
+  - typings.activexWord.activexWordInts.`26367`
+  - typings.activexWord.activexWordInts.`16764057`
+  - typings.activexWord.activexWordInts.`16711935`
+  - typings.activexWord.activexWordInts.`6697881`
+  - typings.activexWord.activexWordInts.`255`
+  - typings.activexWord.activexWordInts.`13408767`
+  - typings.activexWord.activexWordInts.`6723891`
+  - typings.activexWord.activexWordInts.`16763904`
+  - typings.activexWord.activexWordInts.`10079487`
+  - typings.activexWord.activexWordInts.`8421376`
+  - typings.activexWord.activexWordInts.`16776960`
+  - typings.activexWord.activexWordInts.`8388736`
+  - typings.activexWord.activexWordInts.`16777215`
+  - typings.activexWord.activexWordInts.`65535`
 */
 trait WdColor extends StObject
 object WdColor {

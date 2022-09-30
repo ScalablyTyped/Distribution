@@ -1,6 +1,5 @@
 package typings.emberOwner
 
-import typings.emberOwner.emberOwnerStrings.DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +29,7 @@ object mod {
     val `class`: Factory[T] = js.native
   }
   
-  type FullName = DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket
+  type FullName = /* template literal string: ${string}:${string} */ String
   
   @js.native
   trait Owner extends StObject {

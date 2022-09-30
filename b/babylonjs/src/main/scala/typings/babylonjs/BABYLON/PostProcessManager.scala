@@ -16,7 +16,7 @@ trait PostProcessManager extends StObject {
     * @param faceIndex The index of the face to bind the target texture to.
     * @param postProcesses The array of post processes to render.
     * @param forceFullscreenViewport force gl.viewport to be full screen eg. 0,0,textureWidth,textureHeight (default: false)
-    * @hidden
+    * @internal
     */
   def _finalizeFrame(): Unit = js.native
   def _finalizeFrame(doNotPresent: Boolean): Unit = js.native
@@ -181,7 +181,7 @@ trait PostProcessManager extends StObject {
     * @param sourceTexture The input texture to the post processes. (default: null)
     * @param postProcesses An array of post processes to be run. (default: null)
     * @returns True if the post processes were able to be run.
-    * @hidden
+    * @internal
     */
   def _prepareFrame(): Boolean = js.native
   def _prepareFrame(sourceTexture: Unit, postProcesses: Nullable[js.Array[PostProcess]]): Boolean = js.native
@@ -190,7 +190,7 @@ trait PostProcessManager extends StObject {
   
   /**
     * Rebuilds the vertex buffers of the manager.
-    * @hidden
+    * @internal
     */
   def _rebuild(): Unit = js.native
   

@@ -7,7 +7,6 @@ import typings.structuredHeaders.typesMod.ByteSequence
 import typings.structuredHeaders.typesMod.Dictionary
 import typings.structuredHeaders.typesMod.InnerList
 import typings.structuredHeaders.typesMod.Item
-import typings.structuredHeaders.typesMod.List
 import typings.structuredHeaders.typesMod.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,7 +51,7 @@ object serializerMod {
   
   inline def serializeKey(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeKey")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def serializeList(input: List): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeList")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serializeList(input: typings.structuredHeaders.typesMod.List): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeList")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def serializeParameters(input: Parameters): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeParameters")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   

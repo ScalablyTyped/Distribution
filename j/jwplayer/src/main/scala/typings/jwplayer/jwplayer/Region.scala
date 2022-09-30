@@ -1,6 +1,6 @@
 package typings.jwplayer.jwplayer
 
-import typings.jwplayer.jwplayerNumbers.`0`
+import typings.jwplayer.jwplayerInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -187,7 +187,7 @@ trait Vector2 extends StObject {
   /**
     * Negate the current Vector2 and stores the result in the given vector "result" coordinates
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector2
+    * @returns the result
     */
   def negateToRef(result: Vector2): Vector2 = js.native
   

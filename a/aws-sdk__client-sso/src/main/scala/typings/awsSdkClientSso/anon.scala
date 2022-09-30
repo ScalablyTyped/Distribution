@@ -645,17 +645,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeInvali {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeInvali = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeInvali = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeInvali]
     }
     
     extension [Self <: ExceptionOptionTypeInvali](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -664,17 +668,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeResour {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeResour = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeResour = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeResour]
     }
     
     extension [Self <: ExceptionOptionTypeResour](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -683,17 +691,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeTooMan {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeTooMan = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeTooMan = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeTooMan]
     }
     
     extension [Self <: ExceptionOptionTypeTooMan](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -702,17 +714,21 @@ object anon {
     
     @JSName("$metadata")
     var $metadata: ResponseMetadata
+    
+    var message: String
   }
   object ExceptionOptionTypeUnauth {
     
-    inline def apply($metadata: ResponseMetadata): ExceptionOptionTypeUnauth = {
-      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+    inline def apply($metadata: ResponseMetadata, message: String): ExceptionOptionTypeUnauth = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptionOptionTypeUnauth]
     }
     
     extension [Self <: ExceptionOptionTypeUnauth](x: Self) {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

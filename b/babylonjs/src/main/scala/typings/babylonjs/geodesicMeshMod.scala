@@ -20,63 +20,52 @@ object geodesicMeshMod {
     ) = this()
     
     /**
-      * @hidden
+      * @internal
       */
     var adjacentFaces: js.Array[js.Array[Double]] = js.native
     
     /**
-      * @param face
-      * @param primTri
-      * @hidden
+      * @internal
       */
     def innerToData(face: Double, primTri: PrimaryIsoTriangle): Unit = js.native
     
     /**
-      * @param faceNb
-      * @param primTri
-      * @hidden
+      * @internal
       */
     def mapABOBtoDATA(faceNb: Double, primTri: PrimaryIsoTriangle): Unit = js.native
     
     /**
-      * @param faceNb
-      * @param primTri
-      * @hidden
+      * @internal
       */
     def mapBAOAtoDATA(faceNb: Double, primTri: PrimaryIsoTriangle): Unit = js.native
     
     /**
-      * @param faceNb
-      * @param primTri
-      * @hidden
+      * @internal
       */
     def mapOBOAtoDATA(faceNb: Double, primTri: PrimaryIsoTriangle): Unit = js.native
     
     /**
-      * @param primTri
-      * @hidden
+      * @internal
       */
     def orderData(primTri: PrimaryIsoTriangle): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var poleNodes: Double = js.native
     
     /**
-      * @param m
-      * @param faces
-      * @hidden
+      * @internal
       */
     def setOrder(m: Double, faces: js.Array[Double]): js.Array[Double] = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var sharedNodes: Double = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def toGoldbergPolyhedronData(): PolyhedronData = js.native
   }
@@ -89,7 +78,7 @@ object geodesicMeshMod {
     
     /**Builds the data for a Geodesic Polyhedron from a primary triangle
       * @param primTri the primary triangle
-      * @hidden
+      * @internal
       */
     inline def BuildGeodesicData(primTri: PrimaryIsoTriangle): GeodesicData = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildGeodesicData")(primTri.asInstanceOf[js.Any]).asInstanceOf[GeodesicData]
   }
@@ -124,9 +113,7 @@ object geodesicMeshMod {
     def MapToFace(faceNb: Double, geodesicData: PolyhedronData): Unit = js.native
     
     /**Creates a primary triangle
-      * @param m
-      * @param n
-      * @hidden
+      * @internal
       */
     def build(m: Double, n: Double): this.type = js.native
     

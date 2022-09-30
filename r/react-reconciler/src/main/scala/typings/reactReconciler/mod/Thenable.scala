@@ -4,10 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// react-reconciler/ReactFiberScheduler
 @js.native
-trait Thenable extends StObject {
+trait Thenable[T] extends StObject {
   
-  def `then`(resolve: js.Function0[js.Any]): js.Any = js.native
-  def `then`(resolve: js.Function0[js.Any], reject: js.Function0[js.Any]): js.Any = js.native
+  def `then`(resolve: js.Function0[T]): T = js.native
+  def `then`(resolve: js.Function0[T], reject: js.Function0[T]): T = js.native
 }

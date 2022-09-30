@@ -1,8 +1,10 @@
 package typings.saucelabs.mod
 
+import typings.saucelabs.saucelabsStrings.`apac-southeast-1`
 import typings.saucelabs.saucelabsStrings.`eu-central-1`
 import typings.saucelabs.saucelabsStrings.`us-east-1`
 import typings.saucelabs.saucelabsStrings.`us-west-1`
+import typings.saucelabs.saucelabsStrings.apac
 import typings.saucelabs.saucelabsStrings.eu
 import typings.saucelabs.saucelabsStrings.staging
 import typings.saucelabs.saucelabsStrings.us
@@ -39,7 +41,9 @@ trait SauceLabsOptions extends StObject {
     * - eu-central-1 (short 'eu')
     * - us-east-1 (headless)
     */
-  var region: js.UndefOr[us | eu | `us-west-1` | `us-east-1` | `eu-central-1` | staging] = js.undefined
+  var region: js.UndefOr[
+    us | eu | apac | `us-west-1` | `us-east-1` | `eu-central-1` | `apac-southeast-1` | staging
+  ] = js.undefined
   
   /**
     * Your Sauce Labs username.
@@ -69,7 +73,7 @@ object SauceLabsOptions {
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setRegion(value: us | eu | `us-west-1` | `us-east-1` | `eu-central-1` | staging): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: us | eu | apac | `us-west-1` | `us-east-1` | `eu-central-1` | `apac-southeast-1` | staging): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     

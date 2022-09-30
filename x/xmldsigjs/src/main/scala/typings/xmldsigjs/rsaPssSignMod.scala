@@ -17,31 +17,31 @@ object rsaPssSignMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_sign", "RsaPssBase")
   @js.native
-  class RsaPssBase () extends SignatureAlgorithm {
+  open class RsaPssBase () extends SignatureAlgorithm {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_sign", "RsaPssSha1")
   @js.native
-  class RsaPssSha1 () extends RsaPssBase {
+  open class RsaPssSha1 () extends RsaPssBase {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_sign", "RsaPssSha256")
   @js.native
-  class RsaPssSha256 () extends RsaPssBase {
+  open class RsaPssSha256 () extends RsaPssBase {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_sign", "RsaPssSha384")
   @js.native
-  class RsaPssSha384 () extends RsaPssBase {
+  open class RsaPssSha384 () extends RsaPssBase {
     def this(saltLength: Double) = this()
   }
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pss_sign", "RsaPssSha512")
   @js.native
-  class RsaPssSha512 () extends RsaPssBase {
+  open class RsaPssSha512 () extends RsaPssBase {
     def this(saltLength: Double) = this()
   }
 }

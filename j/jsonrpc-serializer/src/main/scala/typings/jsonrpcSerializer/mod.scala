@@ -82,24 +82,24 @@ object mod {
     //    InvalidParamsError: 'InvalidParamsError' as ErrorName
     // };
     /* Rewritten from type alias, can be one of: 
-      - typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32603`
-      - typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32700`
-      - typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32600`
-      - typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32601`
-      - typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32602`
+      - typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32603`
+      - typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32700`
+      - typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32600`
+      - typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32601`
+      - typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32602`
     */
     trait ErrorCode extends StObject
     object ErrorCode {
       
-      inline def `-32600`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32600` = -32600.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32600`]
+      inline def `-32600`: typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32600` = -32600.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32600`]
       
-      inline def `-32601`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32601` = -32601.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32601`]
+      inline def `-32601`: typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32601` = -32601.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32601`]
       
-      inline def `-32602`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32602` = -32602.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32602`]
+      inline def `-32602`: typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32602` = -32602.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32602`]
       
-      inline def `-32603`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32603` = -32603.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32603`]
+      inline def `-32603`: typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32603` = -32603.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32603`]
       
-      inline def `-32700`: typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32700` = -32700.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerNumbers.`-32700`]
+      inline def `-32700`: typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32700` = -32700.asInstanceOf[typings.jsonrpcSerializer.jsonrpcSerializerInts.`-32700`]
     }
     
     /* Rewritten from type alias, can be one of: 

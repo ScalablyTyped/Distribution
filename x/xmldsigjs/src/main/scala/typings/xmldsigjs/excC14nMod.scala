@@ -10,7 +10,7 @@ object excC14nMod {
   
   @JSImport("xmldsigjs/build/types/xml/transforms/exc_c14n", "XmlDsigExcC14NTransform")
   @js.native
-  class XmlDsigExcC14NTransform () extends Transform {
+  open class XmlDsigExcC14NTransform () extends Transform {
     def this(properties: js.Object) = this()
     
     /**
@@ -20,14 +20,14 @@ object excC14nMod {
     def InclusiveNamespacesPrefixList: String = js.native
     def InclusiveNamespacesPrefixList_=(value: String): Unit = js.native
     
-    /* private */ var setInclusiveNamespacesElement: js.Any = js.native
+    /* private */ var setInclusiveNamespacesElement: Any = js.native
     
     /* protected */ var xmlCanonicalizer: XmlCanonicalizer = js.native
   }
   
   @JSImport("xmldsigjs/build/types/xml/transforms/exc_c14n", "XmlDsigExcC14NWithCommentsTransform")
   @js.native
-  class XmlDsigExcC14NWithCommentsTransform () extends XmlDsigExcC14NTransform {
+  open class XmlDsigExcC14NWithCommentsTransform () extends XmlDsigExcC14NTransform {
     def this(properties: js.Object) = this()
   }
 }

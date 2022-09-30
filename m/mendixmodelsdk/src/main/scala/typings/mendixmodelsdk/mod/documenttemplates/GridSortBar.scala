@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.GridSortBar")
 @js.native
-class GridSortBar protected ()
+open class GridSortBar protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.GridSortBar {
   def this(
     model: AbstractModel,

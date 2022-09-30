@@ -19,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 8.0.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.VerticalSplitPane")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.VerticalSplitPane")
 @js.native
-class VerticalSplitPane protected ()
+open class VerticalSplitPane protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.VerticalSplitPane {
   def this(
     model: AbstractModel,
@@ -34,7 +34,7 @@ class VerticalSplitPane protected ()
 }
 object VerticalSplitPane {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.VerticalSplitPane")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.VerticalSplitPane")
   @js.native
   val ^ : js.Any = js.native
   
@@ -564,13 +564,13 @@ object VerticalSplitPane {
   inline def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.VerticalSplitPane]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.VerticalSplitPane.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.VerticalSplitPane.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.VerticalSplitPane.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.VerticalSplitPane.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

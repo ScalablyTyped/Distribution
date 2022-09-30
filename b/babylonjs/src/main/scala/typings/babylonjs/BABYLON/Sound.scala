@@ -223,7 +223,7 @@ trait Sound extends StObject {
   var onEndedObservable: Observable[Sound] = js.native
   
   /**
-    * @hidden
+    * @internal
     * Back Compat
     **/
   def onended(): Any = js.native
@@ -359,7 +359,7 @@ trait Sound extends StObject {
     */
   def switchPanningModelToHRTF(): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   def updateDistanceFromListener(): Unit = js.native
   
   /**

@@ -16,6 +16,7 @@ object keyInfoClauseMod {
     
     var Key: CryptoKey | Null = js.native
     
+    def exportKey(): js.Promise[CryptoKey] = js.native
     def exportKey(alg: Algorithm): js.Promise[CryptoKey] = js.native
     
     def importKey(key: CryptoKey): js.Promise[this.type] = js.native

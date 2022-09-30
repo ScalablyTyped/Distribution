@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait LodashPull extends StObject {
   
   def apply[T](values: T): LodashPull1x1[T] = js.native
   def apply[T](values: T, array: js.Array[T]): js.Array[T] = js.native
-  def apply[T](values: T, array: List[T]): List[T] = js.native
+  def apply[T](values: T, array: typings.lodash.mod.List[T]): typings.lodash.mod.List[T] = js.native
   def apply[T](values: __, array: js.Array[T]): LodashPull1x2[T] = js.native
-  def apply[T](values: __, array: List[T]): LodashPull2x2[T] = js.native
+  def apply[T](values: __, array: typings.lodash.mod.List[T]): LodashPull2x2[T] = js.native
 }

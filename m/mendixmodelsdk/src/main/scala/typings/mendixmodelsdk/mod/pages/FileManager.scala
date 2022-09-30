@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.FileManager")
 @js.native
-class FileManager protected ()
+open class FileManager protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.FileManager {
   def this(
     model: AbstractModel,

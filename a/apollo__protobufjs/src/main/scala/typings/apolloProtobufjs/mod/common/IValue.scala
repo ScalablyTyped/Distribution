@@ -1,6 +1,6 @@
 package typings.apolloProtobufjs.mod.common
 
-import typings.apolloProtobufjs.apolloProtobufjsNumbers.`0`
+import typings.apolloProtobufjs.apolloProtobufjsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

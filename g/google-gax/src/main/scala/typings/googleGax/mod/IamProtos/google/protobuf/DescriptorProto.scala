@@ -7,7 +7,6 @@ import typings.googleGax.iamServiceMod.google.protobuf.IDescriptorProto
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DescriptorProto.
   * @param [properties] Properties to set
   */
-class DescriptorProto ()
+open class DescriptorProto ()
   extends typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto {
   def this(properties: IDescriptorProto) = this()
 }
@@ -36,7 +35,7 @@ object DescriptorProto {
     * Constructs a new ExtensionRange.
     * @param [properties] Properties to set
     */
-  class ExtensionRange ()
+  open class ExtensionRange ()
     extends typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange {
     def this(properties: IExtensionRange) = this()
   }
@@ -55,6 +54,8 @@ object DescriptorProto {
     inline def create(): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     inline def create(properties: IExtensionRange): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     /**
       * Decodes an ExtensionRange message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -66,9 +67,8 @@ object DescriptorProto {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     /**
       * Decodes an ExtensionRange message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -78,7 +78,6 @@ object DescriptorProto {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     
     /**
       * Encodes the specified ExtensionRange message. Does not implicitly {@link google.protobuf.DescriptorProto.ExtensionRange.verify|verify} messages.
@@ -106,7 +105,7 @@ object DescriptorProto {
       * @returns ExtensionRange
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange]
     
     /**
       * Creates a plain object from an ExtensionRange message. Also converts values to other types if specified.
@@ -115,11 +114,11 @@ object DescriptorProto {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ExtensionRange,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an ExtensionRange message.
@@ -127,7 +126,7 @@ object DescriptorProto {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ReservedRange. */
@@ -137,7 +136,7 @@ object DescriptorProto {
     * Constructs a new ReservedRange.
     * @param [properties] Properties to set
     */
-  class ReservedRange ()
+  open class ReservedRange ()
     extends typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange {
     def this(properties: IReservedRange) = this()
   }
@@ -156,6 +155,8 @@ object DescriptorProto {
     inline def create(): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     inline def create(properties: IReservedRange): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     /**
       * Decodes a ReservedRange message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -167,9 +168,8 @@ object DescriptorProto {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     /**
       * Decodes a ReservedRange message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -179,7 +179,6 @@ object DescriptorProto {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     
     /**
       * Encodes the specified ReservedRange message. Does not implicitly {@link google.protobuf.DescriptorProto.ReservedRange.verify|verify} messages.
@@ -207,7 +206,7 @@ object DescriptorProto {
       * @returns ReservedRange
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange]
     
     /**
       * Creates a plain object from a ReservedRange message. Also converts values to other types if specified.
@@ -216,11 +215,11 @@ object DescriptorProto {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto.ReservedRange,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ReservedRange message.
@@ -228,7 +227,7 @@ object DescriptorProto {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -240,6 +239,8 @@ object DescriptorProto {
   inline def create(): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   inline def create(properties: IDescriptorProto): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   /**
     * Decodes a DescriptorProto message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -251,9 +252,8 @@ object DescriptorProto {
   /* static member */
   inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
-  inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
-  inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   /**
     * Decodes a DescriptorProto message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -263,7 +263,6 @@ object DescriptorProto {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
-  inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   
   /**
     * Encodes the specified DescriptorProto message. Does not implicitly {@link google.protobuf.DescriptorProto.verify|verify} messages.
@@ -291,7 +290,7 @@ object DescriptorProto {
     * @returns DescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto]
   
   /**
     * Creates a plain object from a DescriptorProto message. Also converts values to other types if specified.
@@ -300,11 +299,11 @@ object DescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
     message: typings.googleGax.iamServiceMod.google.protobuf.DescriptorProto,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a DescriptorProto message.
@@ -312,5 +311,5 @@ object DescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

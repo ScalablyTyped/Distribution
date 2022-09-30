@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `37` extends StObject {
   
-  var size: js.UndefOr[`36`] = js.undefined
+  var medium: js.UndefOr[String] = js.undefined
 }
 object `37` {
   
@@ -17,8 +17,8 @@ object `37` {
   
   extension [Self <: `37`](x: Self) {
     
-    inline def setSize(value: `36`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
   }
 }

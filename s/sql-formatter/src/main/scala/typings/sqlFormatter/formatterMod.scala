@@ -1,5 +1,6 @@
 package typings.sqlFormatter
 
+import typings.sqlFormatter.expressionFormatterMod.DialectFormatOptions
 import typings.sqlFormatter.formatOptionsMod.FormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,6 +31,12 @@ object formatterMod {
     
     /* private */ /* CompleteClass */
     var formatAst: Any = js.native
+    
+    /**
+      * Dialect-specific formatting configuration, optionally provided by subclass.
+      */
+    /* protected */ /* CompleteClass */
+    override def formatOptions(): DialectFormatOptions = js.native
     
     /* private */ /* CompleteClass */
     var formatStatement: Any = js.native
@@ -65,6 +72,11 @@ object formatterMod {
     
     /* private */ var formatAst: Any
     
+    /**
+      * Dialect-specific formatting configuration, optionally provided by subclass.
+      */
+    /* protected */ def formatOptions(): DialectFormatOptions
+    
     /* private */ var formatStatement: Any
     
     /* private */ var params: Any
@@ -85,13 +97,14 @@ object formatterMod {
       cfg: Any,
       format: String => String,
       formatAst: Any,
+      formatOptions: () => DialectFormatOptions,
       formatStatement: Any,
       params: Any,
       parse: Any,
       postFormat: Any,
       tokenizer: () => typings.sqlFormatter.tokenizerMod.default
     ): Formatter = {
-      val __obj = js.Dynamic.literal(cachedTokenizer = cachedTokenizer.asInstanceOf[js.Any], cfg = cfg.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAst = formatAst.asInstanceOf[js.Any], formatStatement = formatStatement.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], postFormat = postFormat.asInstanceOf[js.Any], tokenizer = js.Any.fromFunction0(tokenizer))
+      val __obj = js.Dynamic.literal(cachedTokenizer = cachedTokenizer.asInstanceOf[js.Any], cfg = cfg.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), formatAst = formatAst.asInstanceOf[js.Any], formatOptions = js.Any.fromFunction0(formatOptions), formatStatement = formatStatement.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], postFormat = postFormat.asInstanceOf[js.Any], tokenizer = js.Any.fromFunction0(tokenizer))
       __obj.asInstanceOf[Formatter]
     }
     
@@ -104,6 +117,8 @@ object formatterMod {
       inline def setFormat(value: String => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
       inline def setFormatAst(value: Any): Self = StObject.set(x, "formatAst", value.asInstanceOf[js.Any])
+      
+      inline def setFormatOptions(value: () => DialectFormatOptions): Self = StObject.set(x, "formatOptions", js.Any.fromFunction0(value))
       
       inline def setFormatStatement(value: Any): Self = StObject.set(x, "formatStatement", value.asInstanceOf[js.Any])
       

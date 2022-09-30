@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__config
 
-Typings are for version 6.9.0
+Typings are for version 7.25.0
 
 ## Library description:
 A helper utility to parse and validate WebdriverIO options
@@ -10,10 +10,10 @@ A helper utility to parse and validate WebdriverIO options
 | ------------------ | :-------------: |
 | Full name          | @wdio/config |
 | Keywords           | webdriver, wdio, wdio-utility |
-| # releases         | 74 |
-| # dependents       | 12 |
-| # downloads        | 30421084 |
-| # stars            | 0 |
+| # releases         | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 4248740.666666667 |
+| # stars            | 7720.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-config)

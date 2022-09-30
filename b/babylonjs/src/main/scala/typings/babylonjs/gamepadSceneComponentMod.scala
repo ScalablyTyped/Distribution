@@ -116,7 +116,7 @@ object gamepadSceneComponentMod {
     
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _gamepadManager: Nullable[GamepadManager]
       
       /**

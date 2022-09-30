@@ -10,5 +10,5 @@ object clearValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  inline def default(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Unit]]
 }

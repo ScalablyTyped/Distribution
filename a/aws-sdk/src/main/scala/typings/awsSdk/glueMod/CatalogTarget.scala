@@ -17,6 +17,16 @@ trait CatalogTarget extends StObject {
   var DatabaseName: NameString
   
   /**
+    * A valid Amazon dead-letter SQS ARN. For example, arn:aws:sqs:region:account:deadLetterQueue.
+    */
+  var DlqEventQueueArn: js.UndefOr[EventQueueArn] = js.undefined
+  
+  /**
+    * A valid Amazon SQS ARN. For example, arn:aws:sqs:region:account:sqs.
+    */
+  var EventQueueArn: js.UndefOr[typings.awsSdk.glueMod.EventQueueArn] = js.undefined
+  
+  /**
     * A list of the tables to be synchronized.
     */
   var Tables: CatalogTablesList
@@ -35,6 +45,14 @@ object CatalogTarget {
     inline def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
     
     inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    
+    inline def setDlqEventQueueArn(value: EventQueueArn): Self = StObject.set(x, "DlqEventQueueArn", value.asInstanceOf[js.Any])
+    
+    inline def setDlqEventQueueArnUndefined: Self = StObject.set(x, "DlqEventQueueArn", js.undefined)
+    
+    inline def setEventQueueArn(value: EventQueueArn): Self = StObject.set(x, "EventQueueArn", value.asInstanceOf[js.Any])
+    
+    inline def setEventQueueArnUndefined: Self = StObject.set(x, "EventQueueArn", js.undefined)
     
     inline def setTables(value: CatalogTablesList): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
     

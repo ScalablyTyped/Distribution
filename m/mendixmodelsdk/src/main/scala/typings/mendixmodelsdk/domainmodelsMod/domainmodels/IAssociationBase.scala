@@ -19,11 +19,17 @@ trait IAssociationBase
   /**
     * This property is required and cannot be set to null.
     *
+    * In version 9.0.1: deleted
     * In version 8.11.0: introduced
     */
   val capabilities: IAssociationCapabilities = js.native
   
   val containerAsDomainModel: IDomainModel = js.native
+  
+  /**
+    * In version 9.10.0: added public
+    */
+  val documentation: String = js.native
   
   @JSName("model")
   val model_IAssociationBase: IModel = js.native

@@ -25,7 +25,7 @@ trait Tile extends StObject {
   def getElement(index: Double): BaseTileElement = js.native
   /** Gets the tile element at the given index on this tile. */
   @JSName("getElement")
-  def getElement_T_BaseTileElement_T[T /* <: BaseTileElement */](index: Double): T = js.native
+  def getElement_T_T[T /* <: BaseTileElement */](index: Double): T = js.native
   
   /** Inserts a new tile element at the given index on this tile. */
   def insertElement(index: Double): BaseTileElement = js.native

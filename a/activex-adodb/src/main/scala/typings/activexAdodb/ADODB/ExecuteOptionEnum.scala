@@ -1,24 +1,24 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`-1`
-import typings.activexAdodb.activexAdodbNumbers.`1024`
-import typings.activexAdodb.activexAdodbNumbers.`128`
-import typings.activexAdodb.activexAdodbNumbers.`16`
-import typings.activexAdodb.activexAdodbNumbers.`2048`
-import typings.activexAdodb.activexAdodbNumbers.`32`
-import typings.activexAdodb.activexAdodbNumbers.`64`
+import typings.activexAdodb.activexAdodbInts.`-1`
+import typings.activexAdodb.activexAdodbInts.`1024`
+import typings.activexAdodb.activexAdodbInts.`128`
+import typings.activexAdodb.activexAdodbInts.`16`
+import typings.activexAdodb.activexAdodbInts.`2048`
+import typings.activexAdodb.activexAdodbInts.`32`
+import typings.activexAdodb.activexAdodbInts.`64`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`16`
-  - typings.activexAdodb.activexAdodbNumbers.`32`
-  - typings.activexAdodb.activexAdodbNumbers.`64`
-  - typings.activexAdodb.activexAdodbNumbers.`128`
-  - typings.activexAdodb.activexAdodbNumbers.`2048`
-  - typings.activexAdodb.activexAdodbNumbers.`1024`
-  - typings.activexAdodb.activexAdodbNumbers.`-1`
+  - typings.activexAdodb.activexAdodbInts.`16`
+  - typings.activexAdodb.activexAdodbInts.`32`
+  - typings.activexAdodb.activexAdodbInts.`64`
+  - typings.activexAdodb.activexAdodbInts.`128`
+  - typings.activexAdodb.activexAdodbInts.`2048`
+  - typings.activexAdodb.activexAdodbInts.`1024`
+  - typings.activexAdodb.activexAdodbInts.`-1`
 */
 trait ExecuteOptionEnum extends StObject
 object ExecuteOptionEnum {

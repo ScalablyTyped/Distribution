@@ -11,90 +11,92 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object reactionMod {
   
-  @JSImport("mobx/lib/core/reaction", JSImport.Namespace)
+  @JSImport("mobx/dist/core/reaction", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/core/reaction", "Reaction")
+  @JSImport("mobx/dist/core/reaction", "Reaction")
   @js.native
-  class Reaction protected ()
+  open class Reaction protected ()
     extends StObject
        with IDerivation
        with IReactionPublic {
-    def this(name: String, onInvalidate: js.Function0[Unit]) = this()
+    def this(name_ : String, onInvalidate_ : js.Function0[Unit]) = this()
     def this(
-      name: String,
-      onInvalidate: js.Function0[Unit],
-      errorHandler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]
+      name_ : String,
+      onInvalidate_ : js.Function0[Unit],
+      errorHandler_ : js.Function2[/* error */ Any, /* derivation */ IDerivation, Unit]
     ) = this()
     def this(
-      name: String,
-      onInvalidate: js.Function0[Unit],
-      errorHandler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit],
-      requiresObservable: Boolean
+      name_ : String,
+      onInvalidate_ : js.Function0[Unit],
+      errorHandler_ : js.Function2[/* error */ Any, /* derivation */ IDerivation, Unit],
+      requiresObservable_ : Any
     ) = this()
-    def this(name: String, onInvalidate: js.Function0[Unit], errorHandler: Unit, requiresObservable: Boolean) = this()
+    def this(
+      name_ : String,
+      onInvalidate_ : js.Function0[Unit],
+      errorHandler_ : Unit,
+      requiresObservable_ : Any
+    ) = this()
     
     /* CompleteClass */
-    var __mapid: String = js.native
+    var dependenciesState_ : IDerivationState = js.native
     
-    var _isRunning: Boolean = js.native
+    var diffValue_ : Double = js.native
     
-    var _isScheduled: Boolean = js.native
+    /* private */ var errorHandler_ : Any = js.native
     
-    var _isTrackPending: Boolean = js.native
+    def getDisposer_(): IReactionDisposer = js.native
     
-    /* CompleteClass */
-    var dependenciesState: IDerivationState = js.native
+    var isDisposed_ : Boolean = js.native
     
-    var diffValue: Double = js.native
-    
-    /* private */ var errorHandler: js.Any = js.native
-    
-    def getDisposer(): IReactionDisposer = js.native
-    
-    var isDisposed: Boolean = js.native
+    var isRunning_ : Boolean = js.native
     
     def isScheduled(): Boolean = js.native
     
-    /* CompleteClass */
-    var isTracing: TraceMode = js.native
+    var isScheduled_ : Boolean = js.native
     
     /* CompleteClass */
-    var name: String = js.native
+    var isTracing_ : TraceMode = js.native
+    
+    var isTrackPending_ : Boolean = js.native
     
     /* CompleteClass */
-    var newObserving: Null | js.Array[IObservable] = js.native
-    @JSName("newObserving")
-    var newObserving_Reaction: js.Array[IObservable] = js.native
+    var name_ : String = js.native
     
     /* CompleteClass */
-    @JSName("observing")
-    var observing_IDerivation: js.Array[IObservable] = js.native
+    var newObserving_ : Null | js.Array[IObservable] = js.native
+    @JSName("newObserving_")
+    var newObserving__Reaction: js.Array[IObservable] = js.native
     
     /* CompleteClass */
-    override def onBecomeStale(): Unit = js.native
+    @JSName("observing_")
+    var observing__IDerivation: js.Array[IObservable] = js.native
     
-    /* private */ var onInvalidate: js.Any = js.native
+    /* CompleteClass */
+    override def onBecomeStale_(): Unit = js.native
     
-    def reportExceptionInDerivation(error: js.Any): Unit = js.native
+    /* private */ var onInvalidate_ : Any = js.native
     
-    @JSName("requiresObservable")
-    var requiresObservable_Reaction: Boolean = js.native
+    def reportExceptionInDerivation_(error: Any): Unit = js.native
+    
+    @JSName("requiresObservable_")
+    var requiresObservable__Reaction: js.UndefOr[Any] = js.native
     
     /**
       * Id of the current run of a derivation. Each time the derivation is tracked
       * this number is increased by one. This number is globally unique
       */
     /* CompleteClass */
-    var runId: Double = js.native
+    var runId_ : Double = js.native
     
     /**
       * internal, use schedule() if you intend to kick off a reaction
       */
-    def runReaction(): Unit = js.native
+    def runReaction_(): Unit = js.native
     
-    def schedule(): Unit = js.native
+    def schedule_(): Unit = js.native
     
     def track(fn: js.Function0[Unit]): Unit = js.native
     
@@ -102,12 +104,12 @@ object reactionMod {
       * amount of dependencies used by the derivation in this run, which has not been bound yet.
       */
     /* CompleteClass */
-    var unboundDepsCount: Double = js.native
+    var unboundDepsCount_ : Double = js.native
   }
   
-  inline def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReaction")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/reaction.Reaction */ Boolean]
+  inline def isReaction(x: Any): /* is mobx.mobx/dist/core/reaction.Reaction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReaction")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/dist/core/reaction.Reaction */ Boolean]
   
-  inline def onReactionError(handler: js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("onReactionError")(handler.asInstanceOf[js.Any]).asInstanceOf[Lambda]
+  inline def onReactionError(handler: js.Function2[/* error */ Any, /* derivation */ IDerivation, Unit]): Lambda = ^.asInstanceOf[js.Dynamic].applyDynamic("onReactionError")(handler.asInstanceOf[js.Any]).asInstanceOf[Lambda]
   
   inline def runReactions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runReactions")().asInstanceOf[Unit]
   

@@ -45,7 +45,7 @@ object postTypeSupportCheckMod {
         
         inline def setSupportKeys(value: String | js.Array[String]): Self = StObject.set(x, "supportKeys", value.asInstanceOf[js.Any])
         
-        inline def setSupportKeysVarargs(value: String*): Self = StObject.set(x, "supportKeys", js.Array(value :_*))
+        inline def setSupportKeysVarargs(value: String*): Self = StObject.set(x, "supportKeys", js.Array(value*))
       }
     }
   }

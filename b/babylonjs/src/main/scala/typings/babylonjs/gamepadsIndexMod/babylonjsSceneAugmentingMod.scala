@@ -10,7 +10,7 @@ object babylonjsSceneAugmentingMod {
   
   trait Scene extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var _gamepadManager: Nullable[typings.babylonjs.gamepadManagerMod.GamepadManager]
     
     /**

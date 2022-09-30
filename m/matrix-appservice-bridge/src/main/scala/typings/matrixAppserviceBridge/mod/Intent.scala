@@ -1,6 +1,7 @@
 package typings.matrixAppserviceBridge.mod
 
 import typings.matrixAppserviceBridge.intentMod.IntentOpts
+import typings.matrixBotSdk.mod.MatrixClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,15 +56,8 @@ open class Intent protected ()
     * @param opts.caching.size How many entries should be kept in the cache, before the oldest is dropped.
     * @param opts.getJsSdkClient Create a Matrix JS SDK client on demand for legacy code.
     */
-  def this(
-    botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any,
-    botClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.MatrixClient */ Any
-  ) = this()
-  def this(
-    botSdkIntent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.Intent */ Any,
-    botClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BotSdk.MatrixClient */ Any,
-    opts: IntentOpts
-  ) = this()
+  def this(botSdkIntent: typings.matrixBotSdk.mod.Intent, botClient: MatrixClient) = this()
+  def this(botSdkIntent: typings.matrixBotSdk.mod.Intent, botClient: MatrixClient, opts: IntentOpts) = this()
 }
 /* static members */
 object Intent {

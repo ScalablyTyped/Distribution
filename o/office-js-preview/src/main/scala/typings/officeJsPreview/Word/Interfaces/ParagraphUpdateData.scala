@@ -71,7 +71,7 @@ trait ParagraphUpdateData extends StObject {
   var lineUnitBefore: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
+    * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -79,7 +79,7 @@ trait ParagraphUpdateData extends StObject {
   var listItem: js.UndefOr[ListItemUpdateData] = js.undefined
   
   /**
-    * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+    * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -27,7 +27,7 @@ object trblMod {
     thisArg: Any
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def every_S_String[S /* <: String */](
+  inline def every_S[S /* <: String */](
     predicate: js.Function3[
       /* value */ String, 
       /* index */ Double, 
@@ -35,7 +35,7 @@ object trblMod {
       /* is S */ Boolean
     ]
   ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
-  inline def every_S_String[S /* <: String */](
+  inline def every_S[S /* <: String */](
     predicate: js.Function3[
       /* value */ String, 
       /* index */ Double, 
@@ -56,7 +56,7 @@ object trblMod {
     thisArg: Any
   ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def filter_S_1_String[S_1 /* <: String */](
+  inline def filter_S_1[S_1 /* <: String */](
     predicate: js.Function3[
       /* value */ String, 
       /* index */ Double, 
@@ -64,7 +64,7 @@ object trblMod {
       /* is S_1 */ Boolean
     ]
   ): js.Array[S_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S_1]]
-  inline def filter_S_1_String[S_1 /* <: String */](
+  inline def filter_S_1[S_1 /* <: String */](
     predicate: js.Function3[
       /* value */ String, 
       /* index */ Double, 
@@ -245,7 +245,7 @@ object trblMod {
   
   inline def splice(start: Double): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def splice(start: Double, deleteCount: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
+  inline def splice(start: Double, deleteCount: Double, items: String*): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).`++`(items.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[String]]
   
   inline def toLocaleString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocaleString")().asInstanceOf[String]
   

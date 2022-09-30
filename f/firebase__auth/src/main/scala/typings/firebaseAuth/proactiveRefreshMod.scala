@@ -1,8 +1,8 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.firebaseAuthNumbers.`300000`
-import typings.firebaseAuth.firebaseAuthNumbers.`30000`
-import typings.firebaseAuth.firebaseAuthNumbers.`960000`
+import typings.firebaseAuth.firebaseAuthInts.`300000`
+import typings.firebaseAuth.firebaseAuthInts.`30000`
+import typings.firebaseAuth.firebaseAuthInts.`960000`
 import typings.firebaseAuth.userMod.UserInternal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,9 +35,9 @@ object proactiveRefreshMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseAuth.firebaseAuthNumbers.`300000`
-    - typings.firebaseAuth.firebaseAuthNumbers.`30000`
-    - typings.firebaseAuth.firebaseAuthNumbers.`960000`
+    - typings.firebaseAuth.firebaseAuthInts.`300000`
+    - typings.firebaseAuth.firebaseAuthInts.`30000`
+    - typings.firebaseAuth.firebaseAuthInts.`960000`
   */
   trait Duration extends StObject
   object Duration {

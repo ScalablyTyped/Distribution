@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ProgressBarType")
 @js.native
-class ProgressBarType protected ()
+open class ProgressBarType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ProgressBarType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

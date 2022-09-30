@@ -1,12 +1,18 @@
 package typings.catalog.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("catalog", "ColorSpecimen")
 @js.native
-class ColorSpecimen ()
-  extends Component[SpecimenProps with ColorSpecimenProps, js.Object, js.Any]
-
+open class ColorSpecimen protected ()
+  extends Component[SpecimenProps & ColorSpecimenProps, js.Object, Any] {
+  def this(props: SpecimenProps & ColorSpecimenProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: SpecimenProps & ColorSpecimenProps, context: Any) = this()
+}

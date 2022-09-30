@@ -18,7 +18,7 @@ trait JumpListItem extends StObject {
   
   /**
     * Description of the task (displayed in a tooltip). Should only be set if `type`
-    * is `task`.
+    * is `task`. Maximum length 260 characters.
     */
   var description: js.UndefOr[String] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.ActionActivityColor")
 @js.native
-class ActionActivityColor protected ()
+open class ActionActivityColor protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ActionActivityColor {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

@@ -5,11 +5,8 @@ import typings.nwsapi.mod.AttributeOperator
 import typings.nwsapi.mod.CustomSelectorResult
 import typings.nwsapi.mod.MatcherMode
 import typings.nwsapi.nwsapiStrings.$
-import typings.nwsapi.nwsapiStrings.LeftparenthesisBackslashsVerticalline$Rightparenthesis
 import typings.nwsapi.nwsapiStrings.^
 import typings.nwsapi.nwsapiStrings._empty
-import typings.nwsapi.nwsapiStrings.`Leftparenthesis-Verticalline$Rightparenthesis`
-import typings.nwsapi.nwsapiStrings.`Leftparenthesis^VerticallineBackslashsRightparenthesis`
 import typings.nwsapi.nwsapiStrings.`false`
 import typings.nwsapi.nwsapiStrings.`true`
 import typings.std.Element
@@ -102,7 +99,7 @@ object anon {
     /**
       * The RegExp string after the expected attribute value.
       */
-    val p2: String & `Leftparenthesis-Verticalline$Rightparenthesis`
+    val p2: String
     
     /**
       * The expected result of the invocation of the RegExp `test` method.
@@ -111,11 +108,7 @@ object anon {
   }
   object AttributeOperatorp1p2p3trP1P1 {
     
-    inline def apply(
-      p1: String & ^,
-      p2: String & `Leftparenthesis-Verticalline$Rightparenthesis`,
-      p3: (`true` | `false`) & `true`
-    ): AttributeOperatorp1p2p3trP1P1 = {
+    inline def apply(p1: String & ^, p2: String, p3: (`true` | `false`) & `true`): AttributeOperatorp1p2p3trP1P1 = {
       val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeOperatorp1p2p3trP1P1]
     }
@@ -124,7 +117,7 @@ object anon {
       
       inline def setP1(value: String & ^): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      inline def setP2(value: String & `Leftparenthesis-Verticalline$Rightparenthesis`): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
       
       inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     }
@@ -206,12 +199,12 @@ object anon {
     /**
       * The RegExp string before the expected attribute value.
       */
-    val p1: String & `Leftparenthesis^VerticallineBackslashsRightparenthesis`
+    val p1: String
     
     /**
       * The RegExp string after the expected attribute value.
       */
-    val p2: String & LeftparenthesisBackslashsVerticalline$Rightparenthesis
+    val p2: String
     
     /**
       * The expected result of the invocation of the RegExp `test` method.
@@ -220,20 +213,16 @@ object anon {
   }
   object AttributeOperatorp1sp2sp3 {
     
-    inline def apply(
-      p1: String & `Leftparenthesis^VerticallineBackslashsRightparenthesis`,
-      p2: String & LeftparenthesisBackslashsVerticalline$Rightparenthesis,
-      p3: (`true` | `false`) & `true`
-    ): AttributeOperatorp1sp2sp3 = {
+    inline def apply(p1: String, p2: String, p3: (`true` | `false`) & `true`): AttributeOperatorp1sp2sp3 = {
       val __obj = js.Dynamic.literal(p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any], p3 = p3.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeOperatorp1sp2sp3]
     }
     
     extension [Self <: AttributeOperatorp1sp2sp3](x: Self) {
       
-      inline def setP1(value: String & `Leftparenthesis^VerticallineBackslashsRightparenthesis`): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      inline def setP2(value: String & LeftparenthesisBackslashsVerticalline$Rightparenthesis): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+      inline def setP2(value: String): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
       
       inline def setP3(value: (`true` | `false`) & `true`): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     }

@@ -8,7 +8,7 @@ object utilsFileMod {
   
   object global {
     
-    inline def saveAs(data: js.Any, filename: String, dataType: String): Unit = (js.Dynamic.global.applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], dataType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def saveAs(data: Any, filename: String, dataType: String): Unit = (js.Dynamic.global.applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], dataType.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Save data to file with given filename, using IITCm file chooser, or generic browser routine.

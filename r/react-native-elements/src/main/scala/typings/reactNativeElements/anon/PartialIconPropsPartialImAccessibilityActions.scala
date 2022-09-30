@@ -266,7 +266,7 @@ trait PartialIconPropsPartialImAccessibilityActions extends StObject {
   
   var theme: js.UndefOr[ThemeAccessoryPropsAccessibilityActions] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var transition: js.UndefOr[Boolean] = js.undefined
   
@@ -713,8 +713,6 @@ object PartialIconPropsPartialImAccessibilityActions {
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

@@ -4,9 +4,6 @@ import typings.momentMini.mod.unitOfTime.All
 import typings.momentMini.mod.unitOfTime.Diff
 import typings.momentMini.mod.unitOfTime.DurationConstructor
 import typings.momentMini.mod.unitOfTime.StartOf
-import typings.momentMini.momentMiniStrings.LeftparenthesisRightparenthesis
-import typings.momentMini.momentMiniStrings.`Leftparenthesis]`
-import typings.momentMini.momentMiniStrings.`[Rightparenthesis`
 import typings.momentMini.momentMiniStrings.`[]`
 import typings.std.Object
 import org.scalablytyped.runtime.StObject
@@ -104,19 +101,9 @@ trait Moment
   def isBefore(inp: MomentInput, granularity: StartOf): Boolean = js.native
   
   def isBetween(a: MomentInput, b: MomentInput): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: Unit,
-    inclusivity: LeftparenthesisRightparenthesis | `[Rightparenthesis` | `Leftparenthesis]` | `[]`
-  ): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: String | `[]`): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: StartOf,
-    inclusivity: LeftparenthesisRightparenthesis | `[Rightparenthesis` | `Leftparenthesis]` | `[]`
-  ): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: String | `[]`): Boolean = js.native
   
   def isDST(): Boolean = js.native
   

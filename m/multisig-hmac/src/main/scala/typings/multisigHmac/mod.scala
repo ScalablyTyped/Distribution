@@ -1,9 +1,9 @@
 package typings.multisigHmac
 
-import typings.multisigHmac.multisigHmacNumbers.`128`
-import typings.multisigHmac.multisigHmacNumbers.`32`
-import typings.multisigHmac.multisigHmacNumbers.`48`
-import typings.multisigHmac.multisigHmacNumbers.`64`
+import typings.multisigHmac.multisigHmacInts.`128`
+import typings.multisigHmac.multisigHmacInts.`32`
+import typings.multisigHmac.multisigHmacInts.`48`
+import typings.multisigHmac.multisigHmacInts.`64`
 import typings.multisigHmac.multisigHmacStrings.sha256
 import typings.multisigHmac.multisigHmacStrings.sha384
 import typings.multisigHmac.multisigHmacStrings.sha512

@@ -43,14 +43,14 @@ inline def ensurePluginOrder[D /* <: js.Object */](plugins: js.Array[PluginHook[
 
 inline def functionalUpdate[D /* <: js.Object */](updater: Any, old: Partial[TableState[D]]): Partial[TableState[D]] = (^.asInstanceOf[js.Dynamic].applyDynamic("functionalUpdate")(updater.asInstanceOf[js.Any], old.asInstanceOf[js.Any])).asInstanceOf[Partial[TableState[D]]]
 
-inline def loopHooks(hooks: Hooks[js.Object], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loopHooks")(List(hooks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+inline def loopHooks(hooks: Hooks[js.Object], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loopHooks")(scala.List(hooks.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
-inline def makePropGetter(hooks: Hooks[js.Object], meta: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropGetter")(List(hooks.asInstanceOf[js.Any]).`++`(meta.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def makePropGetter(hooks: Hooks[js.Object], meta: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropGetter")(scala.List(hooks.asInstanceOf[js.Any]).`++`(meta.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def makeRenderer(instance: TableInstance[js.Object], column: ColumnInstance[js.Object]): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRenderer")(instance.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
 inline def makeRenderer(instance: TableInstance[js.Object], column: ColumnInstance[js.Object], meta: Any): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRenderer")(instance.asInstanceOf[js.Any], column.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
 
-inline def reduceHooks[T /* <: js.Object */](hooks: Hooks[js.Object], initial: T, args: Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceHooks")((List(hooks.asInstanceOf[js.Any], initial.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
+inline def reduceHooks[T /* <: js.Object */](hooks: Hooks[js.Object], initial: T, args: Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceHooks")((scala.List(hooks.asInstanceOf[js.Any], initial.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[T]
 
 inline def safeUseLayoutEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("safeUseLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def safeUseLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("safeUseLayoutEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -63,7 +63,7 @@ inline def useGetLatest[T](obj: T): js.Function0[T] = ^.asInstanceOf[js.Dynamic]
 inline def useMountedLayoutEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMountedLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def useMountedLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useMountedLayoutEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def useTable[D /* <: js.Object */](options: TableOptions[D], plugins: PluginHook[D]*): TableInstance[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTable")(List(options.asInstanceOf[js.Any]).`++`(plugins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TableInstance[D]]
+inline def useTable[D /* <: js.Object */](options: TableOptions[D], plugins: PluginHook[D]*): TableInstance[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTable")(scala.List(options.asInstanceOf[js.Any]).`++`(plugins.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TableInstance[D]]
 
 type Accessor[D /* <: js.Object */] = js.Function3[/* originalRow */ D, /* index */ Double, /* sub */ Data[D], CellValue[Any]]
 

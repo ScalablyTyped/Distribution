@@ -3,11 +3,11 @@ package typings.sha3
 import org.scalablytyped.runtime.Instantiable0
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
-import typings.sha3.sha3Numbers.`128`
-import typings.sha3.sha3Numbers.`224`
-import typings.sha3.sha3Numbers.`256`
-import typings.sha3.sha3Numbers.`384`
-import typings.sha3.sha3Numbers.`512`
+import typings.sha3.sha3Ints.`128`
+import typings.sha3.sha3Ints.`224`
+import typings.sha3.sha3Ints.`256`
+import typings.sha3.sha3Ints.`384`
+import typings.sha3.sha3Ints.`512`
 import typings.sha3.sha3Strings.binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

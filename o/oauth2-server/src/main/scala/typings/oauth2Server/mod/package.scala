@@ -19,7 +19,7 @@ type Callback[T] = js.Function2[/* err */ js.UndefOr[Any], /* result */ js.Undef
   */
 /* Rewritten from type alias, can be one of: 
   - typings.oauth2Server.oauth2ServerStrings._empty
-  - typings.oauth2Server.oauth2ServerNumbers.`0`
+  - typings.oauth2Server.oauth2ServerInts.`0`
   - typings.oauth2Server.oauth2ServerBooleans.`false`
   - scala.Null
   - scala.Unit

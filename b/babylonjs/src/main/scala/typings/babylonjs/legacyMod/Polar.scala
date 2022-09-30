@@ -23,6 +23,13 @@ object Polar {
   val ^ : js.Any = js.native
   
   /**
+    * Converts an array of floats to a polar
+    * @param array the array to convert
+    * @returns the converted polar
+    */
+  inline def FromArray(array: js.Array[Double]): typings.babylonjs.mathPolarMod.Polar = ^.asInstanceOf[js.Dynamic].applyDynamic("FromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPolarMod.Polar]
+  
+  /**
     * Converts a given Vector2 to its polar coordinates
     * @param v the Vector2 to convert
     * @returns a Polar

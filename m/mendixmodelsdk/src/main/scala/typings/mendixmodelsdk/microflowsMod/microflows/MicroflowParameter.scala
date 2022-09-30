@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowParameterBase because Already inherited
-- typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowParameter because var conflicts: containerAsMicroflow, containerAsRule, id, isLoaded, model, name, parameterType, qualifiedName, structureTypeName, `type`, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameter")
+- typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowParameter because var conflicts: containerAsMicroflow, containerAsRule, id, isLoaded, model, name, parameterType, qualifiedName, structureTypeName, `type`, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowParameter")
 @js.native
-class MicroflowParameter protected () extends MicroflowParameterBase {
+open class MicroflowParameter protected () extends MicroflowParameterBase {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -37,18 +37,18 @@ class MicroflowParameter protected () extends MicroflowParameterBase {
 }
 object MicroflowParameter {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameter")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowParameter")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameter.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowParameter.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.MicroflowParameter.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.MicroflowParameter.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

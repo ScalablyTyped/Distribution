@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 7.18.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/rest", "rest.CorsConfiguration")
+@JSImport("mendixmodelsdk/src/gen/rest", "rest.CorsConfiguration")
 @js.native
-class CorsConfiguration protected () extends Element[IModel] {
+open class CorsConfiguration protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -49,7 +49,7 @@ class CorsConfiguration protected () extends Element[IModel] {
 }
 object CorsConfiguration {
   
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.CorsConfiguration")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.CorsConfiguration")
   @js.native
   val ^ : js.Any = js.native
   
@@ -73,13 +73,13 @@ object CorsConfiguration {
   inline def createIn(container: PublishedRestService): CorsConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CorsConfiguration]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.CorsConfiguration.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.CorsConfiguration.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.CorsConfiguration.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/rest", "rest.CorsConfiguration.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

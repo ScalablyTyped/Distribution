@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object byNameReferencePropertyMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/ByNameReferenceProperty", "ByNameReferenceListProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/ByNameReferenceProperty", "ByNameReferenceListProperty")
   @js.native
-  class ByNameReferenceListProperty[T /* <: IAbstractElement */] protected ()
+  open class ByNameReferenceListProperty[T /* <: IAbstractElement */] protected ()
     extends AbstractProperty[js.Array[T], IList[String]] {
     def this(
       declaredOn: IStructureClass,
@@ -36,9 +36,9 @@ object byNameReferencePropertyMod {
     def updateWithRawValue(value: js.Array[String]): Unit = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/ByNameReferenceProperty", "ByNameReferenceProperty")
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/ByNameReferenceProperty", "ByNameReferenceProperty")
   @js.native
-  class ByNameReferenceProperty[T /* <: IAbstractElement */] protected () extends AbstractProperty[T | Null, IObservableValue[String | Null]] {
+  open class ByNameReferenceProperty[T /* <: IAbstractElement */] protected () extends AbstractProperty[T | Null, IObservableValue[String | Null]] {
     def this(
       declaredOn: IStructureClass,
       parent: AbstractElement[IAbstractModel, Container],

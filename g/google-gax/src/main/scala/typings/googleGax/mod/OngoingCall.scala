@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "OngoingCall")
 @js.native
-class OngoingCall protected ()
+open class OngoingCall protected ()
   extends typings.googleGax.callMod.OngoingCall {
   /**
     * OngoingCall manages callback, API calls, and cancellation

@@ -110,8 +110,8 @@ object mod {
   inline def ceil(x: ArrayLike[Any]): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
   inline def ceil(x: typings.vectorious.coreMod.NDArray): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
   
-  inline def check(x: ArrayLike[Any], indices: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
-  inline def check(x: typings.vectorious.coreMod.NDArray, indices: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def check(x: ArrayLike[Any], indices: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(scala.List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def check(x: typings.vectorious.coreMod.NDArray, indices: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(scala.List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def combine(x: ArrayLike[Any], y: ArrayLike[Any]): typings.vectorious.coreMod.NDArray = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.vectorious.coreMod.NDArray]
   inline def combine(x: ArrayLike[Any], y: typings.vectorious.coreMod.NDArray): typings.vectorious.coreMod.NDArray = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.vectorious.coreMod.NDArray]
@@ -194,8 +194,8 @@ object mod {
   inline def gauss(x: ArrayLike[Any]): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("gauss")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
   inline def gauss(x: typings.vectorious.coreMod.NDArray): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("gauss")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
   
-  inline def get(x: ArrayLike[Any], indices: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
-  inline def get(x: typings.vectorious.coreMod.NDArray, indices: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def get(x: ArrayLike[Any], indices: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(scala.List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
+  inline def get(x: typings.vectorious.coreMod.NDArray, indices: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(scala.List(x.asInstanceOf[js.Any]).`++`(indices.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Double]
   
   inline def inv(x: ArrayLike[Any]): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("inv")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
   inline def inv(x: typings.vectorious.coreMod.NDArray): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("inv")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
@@ -310,8 +310,8 @@ object mod {
     initialValue: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(x.asInstanceOf[js.Any], f.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def reshape(x: ArrayLike[Any], shape: Double*): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.vectorious.coreMod.NDArray]
-  inline def reshape(x: typings.vectorious.coreMod.NDArray, shape: Double*): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.vectorious.coreMod.NDArray]
+  inline def reshape(x: ArrayLike[Any], shape: Double*): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(scala.List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.vectorious.coreMod.NDArray]
+  inline def reshape(x: typings.vectorious.coreMod.NDArray, shape: Double*): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(scala.List(x.asInstanceOf[js.Any]).`++`(shape.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.vectorious.coreMod.NDArray]
   
   inline def round(x: ArrayLike[Any]): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
   inline def round(x: typings.vectorious.coreMod.NDArray): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
@@ -324,7 +324,7 @@ object mod {
   inline def scale(x: ArrayLike[Any], scalar: Double): typings.vectorious.coreMod.NDArray = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(x.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[typings.vectorious.coreMod.NDArray]
   inline def scale(x: typings.vectorious.coreMod.NDArray, scalar: Double): typings.vectorious.coreMod.NDArray = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(x.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[typings.vectorious.coreMod.NDArray]
   
-  inline def set(x: typings.vectorious.coreMod.NDArray, args: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(List(x.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def set(x: typings.vectorious.coreMod.NDArray, args: Double*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(scala.List(x.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def sign(x: ArrayLike[Any]): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]
   inline def sign(x: typings.vectorious.coreMod.NDArray): typings.vectorious.coreMod.NDArray = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[typings.vectorious.coreMod.NDArray]

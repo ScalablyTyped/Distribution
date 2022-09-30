@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* Rewritten from type alias, can be one of: 
   - scala.Unit
-  - typings.html5plus.html5plusNumbers.`0`
-  - typings.html5plus.html5plusNumbers.`1`
-  - typings.html5plus.html5plusNumbers.`2`
-  - typings.html5plus.html5plusNumbers.`3`
-  - typings.html5plus.html5plusNumbers.`4`
-  - typings.html5plus.html5plusNumbers.`5`
-  - typings.html5plus.html5plusNumbers.`-1`
+  - typings.html5plus.html5plusInts.`0`
+  - typings.html5plus.html5plusInts.`1`
+  - typings.html5plus.html5plusInts.`2`
+  - typings.html5plus.html5plusInts.`3`
+  - typings.html5plus.html5plusInts.`4`
+  - typings.html5plus.html5plusInts.`5`
+  - typings.html5plus.html5plusInts.`-1`
 */
 type PlusDownloaderDownloadState = js.UndefOr[_PlusDownloaderDownloadState]
 
@@ -56,12 +56,12 @@ type PlusIosClassObject = Any
   */
 /* Rewritten from type alias, can be one of: 
   - scala.Unit
-  - typings.html5plus.html5plusNumbers.`0`
-  - typings.html5plus.html5plusNumbers.`1`
-  - typings.html5plus.html5plusNumbers.`2`
-  - typings.html5plus.html5plusNumbers.`3`
-  - typings.html5plus.html5plusNumbers.`4`
-  - typings.html5plus.html5plusNumbers.`5`
-  - typings.html5plus.html5plusNumbers.`-1`
+  - typings.html5plus.html5plusInts.`0`
+  - typings.html5plus.html5plusInts.`1`
+  - typings.html5plus.html5plusInts.`2`
+  - typings.html5plus.html5plusInts.`3`
+  - typings.html5plus.html5plusInts.`4`
+  - typings.html5plus.html5plusInts.`5`
+  - typings.html5plus.html5plusInts.`-1`
 */
 type PlusUploaderUploadState = js.UndefOr[_PlusUploaderUploadState]

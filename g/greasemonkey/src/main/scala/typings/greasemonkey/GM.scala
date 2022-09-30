@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.greasemonkey.anon.Mimetype
 import typings.greasemonkey.anon.Onabort
 import typings.greasemonkey.greasemonkeyBooleans.`false`
-import typings.greasemonkey.greasemonkeyNumbers.`1`
-import typings.greasemonkey.greasemonkeyNumbers.`2`
-import typings.greasemonkey.greasemonkeyNumbers.`3`
-import typings.greasemonkey.greasemonkeyNumbers.`4`
+import typings.greasemonkey.greasemonkeyInts.`1`
+import typings.greasemonkey.greasemonkeyInts.`2`
+import typings.greasemonkey.greasemonkeyInts.`3`
+import typings.greasemonkey.greasemonkeyInts.`4`
 import typings.greasemonkey.greasemonkeyStrings.CONNECT
 import typings.greasemonkey.greasemonkeyStrings.DELETE
 import typings.greasemonkey.greasemonkeyStrings.GET

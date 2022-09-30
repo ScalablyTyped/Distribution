@@ -1,13 +1,13 @@
 package typings.tizenTvWebapis.anon
 
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`1`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`2`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`3`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`4`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`5`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`6`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`7`
-import typings.tizenTvWebapis.tizenTvWebapisNumbers.`8`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`1`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`2`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`3`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`4`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`5`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`6`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`7`
+import typings.tizenTvWebapis.tizenTvWebapisInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

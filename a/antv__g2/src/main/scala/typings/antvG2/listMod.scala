@@ -11,7 +11,8 @@ object listMod {
   
   @JSImport("@antv/g2/lib/facet/list", JSImport.Default)
   @js.native
-  open class default () extends List
+  open class default ()
+    extends typings.antvG2.listMod.List
   
   @js.native
   trait List extends Facet[ListCfg, ListData] {

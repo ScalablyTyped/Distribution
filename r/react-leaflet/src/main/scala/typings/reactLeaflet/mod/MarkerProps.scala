@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.LayerOptions because var conflicts: attribution, pane. Inlined 
 - typings.leaflet.mod.InteractiveLayerOptions because var conflicts: attribution, pane. Inlined bubblingMouseEvents, interactive
-- typings.leaflet.mod.MarkerOptions because var conflicts: attribution, pane. Inlined alt, autoPanSpeed, autoPanPadding, shadowPane, riseOffset, draggable, zIndexOffset, icon, keyboard, autoPan, opacity, riseOnHover, title */ trait MarkerProps
+- typings.leaflet.mod.MarkerOptions because var conflicts: attribution, pane. Inlined alt, autoPanOnFocus, autoPanSpeed, autoPanPadding, shadowPane, riseOffset, draggable, zIndexOffset, icon, keyboard, autoPan, opacity, riseOnHover, title */ trait MarkerProps
   extends StObject
      with MapLayerProps
      with MarkerEvents {
@@ -22,6 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /** Whether to pan the map when dragging this marker near its edge or not. */
   var autoPan: js.UndefOr[Boolean] = js.undefined
+  
+  var autoPanOnFocus: js.UndefOr[Boolean] = js.undefined
   
   /** Distance (in pixels to the left/right and to the top/bottom) of the map edge to start panning the map. */
   var autoPanPadding: js.UndefOr[PointExpression] = js.undefined
@@ -75,6 +77,10 @@ object MarkerProps {
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     inline def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanOnFocus(value: Boolean): Self = StObject.set(x, "autoPanOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanOnFocusUndefined: Self = StObject.set(x, "autoPanOnFocus", js.undefined)
     
     inline def setAutoPanPadding(value: PointExpression): Self = StObject.set(x, "autoPanPadding", value.asInstanceOf[js.Any])
     

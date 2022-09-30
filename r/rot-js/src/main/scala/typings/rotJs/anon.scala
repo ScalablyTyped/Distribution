@@ -3,9 +3,9 @@ package typings.rotJs
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.rotJs.rectMod.default
-import typings.rotJs.rotJsNumbers.`4`
-import typings.rotJs.rotJsNumbers.`6`
-import typings.rotJs.rotJsNumbers.`8`
+import typings.rotJs.rotJsInts.`4`
+import typings.rotJs.rotJsInts.`6`
+import typings.rotJs.rotJsInts.`8`
 import typings.rotJs.typesMod.LayoutType
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement

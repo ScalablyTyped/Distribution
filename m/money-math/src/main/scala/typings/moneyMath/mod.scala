@@ -1,6 +1,6 @@
 package typings.moneyMath
 
-import typings.moneyMath.moneyMathNumbers.`0`
+import typings.moneyMath.moneyMathInts.`0`
 import typings.moneyMath.moneyMathStrings.CHF
 import typings.moneyMath.moneyMathStrings.CNY
 import typings.moneyMath.moneyMathStrings.EUR

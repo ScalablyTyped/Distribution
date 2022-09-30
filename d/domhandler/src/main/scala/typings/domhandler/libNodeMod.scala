@@ -7,11 +7,11 @@ import typings.domelementtype.mod.ElementType.Root
 import typings.domelementtype.mod.ElementType.Script
 import typings.domelementtype.mod.ElementType.Style
 import typings.domelementtype.mod.ElementType.Tag
-import typings.domhandler.domhandlerNumbers.`1`
-import typings.domhandler.domhandlerNumbers.`3`
-import typings.domhandler.domhandlerNumbers.`4`
-import typings.domhandler.domhandlerNumbers.`8`
-import typings.domhandler.domhandlerNumbers.`9`
+import typings.domhandler.domhandlerInts.`1`
+import typings.domhandler.domhandlerInts.`3`
+import typings.domhandler.domhandlerInts.`4`
+import typings.domhandler.domhandlerInts.`8`
+import typings.domhandler.domhandlerInts.`9`
 import typings.domhandler.domhandlerStrings.`limited-quirks`
 import typings.domhandler.domhandlerStrings.`no-quirks`
 import typings.domhandler.domhandlerStrings.quirks

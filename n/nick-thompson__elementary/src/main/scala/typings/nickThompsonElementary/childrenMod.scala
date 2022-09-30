@@ -1,14 +1,14 @@
 package typings.nickThompsonElementary
 
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`0`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`1`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`2`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`3`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`4`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`5`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`6`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`7`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`8`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`0`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`1`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`2`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`3`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`4`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`5`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`6`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`7`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`8`
 import typings.nickThompsonElementary.nodeMod.Node
 import typings.nickThompsonElementary.typesMod.CompositeNodeType
 import typings.nickThompsonElementary.typesMod.NativeNodeType
@@ -28,36 +28,36 @@ object childrenMod {
   type ChildrenArraySize[A /* <: js.Array[Any] */] = (/* import warning: importer.ImportType#apply Failed type conversion: A['length'] */ js.Any) & ChildrenArraySizeRange
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`0`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`1`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`2`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`3`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`4`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`5`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`6`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`7`
-    - typings.nickThompsonElementary.nickThompsonElementaryNumbers.`8`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`0`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`1`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`2`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`3`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`4`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`5`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`6`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`7`
+    - typings.nickThompsonElementary.nickThompsonElementaryInts.`8`
   */
   trait ChildrenArraySizeRange extends StObject
   object ChildrenArraySizeRange {
     
-    inline def `0`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`0` = 0.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`0`]
+    inline def `0`: typings.nickThompsonElementary.nickThompsonElementaryInts.`0` = 0.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`0`]
     
-    inline def `1`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`1` = 1.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`1`]
+    inline def `1`: typings.nickThompsonElementary.nickThompsonElementaryInts.`1` = 1.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`1`]
     
-    inline def `2`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`2` = 2.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`2`]
+    inline def `2`: typings.nickThompsonElementary.nickThompsonElementaryInts.`2` = 2.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`2`]
     
-    inline def `3`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`3` = 3.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`3`]
+    inline def `3`: typings.nickThompsonElementary.nickThompsonElementaryInts.`3` = 3.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`3`]
     
-    inline def `4`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`4` = 4.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`4`]
+    inline def `4`: typings.nickThompsonElementary.nickThompsonElementaryInts.`4` = 4.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`4`]
     
-    inline def `5`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`5` = 5.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`5`]
+    inline def `5`: typings.nickThompsonElementary.nickThompsonElementaryInts.`5` = 5.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`5`]
     
-    inline def `6`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`6` = 6.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`6`]
+    inline def `6`: typings.nickThompsonElementary.nickThompsonElementaryInts.`6` = 6.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`6`]
     
-    inline def `7`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`7` = 7.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`7`]
+    inline def `7`: typings.nickThompsonElementary.nickThompsonElementaryInts.`7` = 7.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`7`]
     
-    inline def `8`: typings.nickThompsonElementary.nickThompsonElementaryNumbers.`8` = 8.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryNumbers.`8`]
+    inline def `8`: typings.nickThompsonElementary.nickThompsonElementaryInts.`8` = 8.asInstanceOf[typings.nickThompsonElementary.nickThompsonElementaryInts.`8`]
   }
   
   type CompositeNodeChildren[T /* <: CompositeNodeType */] = (SizedChildrenArray[

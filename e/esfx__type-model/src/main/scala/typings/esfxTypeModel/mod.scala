@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import typings.esfxTypeModel.esfxTypeModelBooleans.`false`
 import typings.esfxTypeModel.esfxTypeModelBooleans.`true`
-import typings.esfxTypeModel.esfxTypeModelNumbers.`0`
+import typings.esfxTypeModel.esfxTypeModelInts.`0`
 import typings.esfxTypeModel.esfxTypeModelStrings._empty
 import typings.std.Exclude
 import typings.std.Extract
@@ -113,7 +113,7 @@ object mod {
     - scala.Null
     - scala.Unit
     - typings.esfxTypeModel.esfxTypeModelBooleans.`false`
-    - typings.esfxTypeModel.esfxTypeModelNumbers.`0`
+    - typings.esfxTypeModel.esfxTypeModelInts.`0`
     - typings.esfxTypeModel.esfxTypeModelStrings._empty
   */
   type Falsy = js.UndefOr[_Falsy | Null]

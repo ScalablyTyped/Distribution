@@ -11,7 +11,7 @@ object leaseManagerMod {
   
   @JSImport("@google-cloud/pubsub/build/src/lease-manager", "LeaseManager")
   @js.native
-  class LeaseManager protected () extends EventEmitter {
+  open class LeaseManager protected () extends EventEmitter {
     def this(sub: Subscriber) = this()
     def this(sub: Subscriber, options: js.Object) = this()
     
@@ -20,7 +20,7 @@ object leaseManagerMod {
       *
       * @private
       */
-    /* private */ var _cancelExtension: js.Any = js.native
+    /* private */ var _cancelExtension: Any = js.native
     
     /**
       * Emits the message. Emitting messages is very slow, so to avoid it acting
@@ -32,7 +32,7 @@ object leaseManagerMod {
       *
       * @param {Message} message The message to emit.
       */
-    /* private */ var _dispense: js.Any = js.native
+    /* private */ var _dispense: Any = js.native
     
     /**
       * Loops through inventory and extends the deadlines for any messages that
@@ -40,7 +40,7 @@ object leaseManagerMod {
       *
       * @private
       */
-    /* private */ var _extendDeadlines: js.Any = js.native
+    /* private */ var _extendDeadlines: Any = js.native
     
     /**
       * Creates a timeout(ms) that should allow us to extend any message deadlines
@@ -50,26 +50,26 @@ object leaseManagerMod {
       *
       * @returns {number}
       */
-    /* private */ var _getNextExtensionTimeoutMs: js.Any = js.native
+    /* private */ var _getNextExtensionTimeoutMs: Any = js.native
     
-    /* private */ var _isLeasing: js.Any = js.native
+    /* private */ var _isLeasing: Any = js.native
     
-    /* private */ var _messages: js.Any = js.native
+    /* private */ var _messages: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _pending: js.Any = js.native
+    /* private */ var _pending: Any = js.native
     
     /**
       * Schedules an deadline extension for all messages.
       *
       * @private
       */
-    /* private */ var _scheduleExtension: js.Any = js.native
+    /* private */ var _scheduleExtension: Any = js.native
     
-    /* private */ var _subscriber: js.Any = js.native
+    /* private */ var _subscriber: Any = js.native
     
-    /* private */ var _timer: js.Any = js.native
+    /* private */ var _timer: Any = js.native
     
     /**
       * Adds a message to the inventory, kicking off the deadline extender if it
@@ -117,6 +117,9 @@ object leaseManagerMod {
       * Sets options for the LeaseManager.
       *
       * @param {FlowControlOptions} [options] The options.
+      *
+      * @throws {RangeError} If both maxExtension and maxExtensionMinutes are set.
+      *
       * @private
       */
     def setOptions(options: FlowControlOptions): Unit = js.native
@@ -134,7 +137,10 @@ object leaseManagerMod {
     
     var maxBytes: js.UndefOr[Double] = js.undefined
     
+    /** @deprecated Use maxExtensionMinutes. */
     var maxExtension: js.UndefOr[Double] = js.undefined
+    
+    var maxExtensionMinutes: js.UndefOr[Double] = js.undefined
     
     var maxMessages: js.UndefOr[Double] = js.undefined
   }
@@ -156,6 +162,10 @@ object leaseManagerMod {
       inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
       
       inline def setMaxExtension(value: Double): Self = StObject.set(x, "maxExtension", value.asInstanceOf[js.Any])
+      
+      inline def setMaxExtensionMinutes(value: Double): Self = StObject.set(x, "maxExtensionMinutes", value.asInstanceOf[js.Any])
+      
+      inline def setMaxExtensionMinutesUndefined: Self = StObject.set(x, "maxExtensionMinutes", js.undefined)
       
       inline def setMaxExtensionUndefined: Self = StObject.set(x, "maxExtension", js.undefined)
       

@@ -26,9 +26,9 @@ trait History extends StObject {
   
   def push(location: Location): Unit = js.native
   def push(path: String): Unit = js.native
-  def push(path: String, state: ObjectLiteral[js.Any]): Unit = js.native
+  def push(path: String, state: ObjectLiteral[Any]): Unit = js.native
   
   def replace(location: Location): Unit = js.native
   def replace(path: String): Unit = js.native
-  def replace(path: String, state: ObjectLiteral[js.Any]): Unit = js.native
+  def replace(path: String, state: ObjectLiteral[Any]): Unit = js.native
 }

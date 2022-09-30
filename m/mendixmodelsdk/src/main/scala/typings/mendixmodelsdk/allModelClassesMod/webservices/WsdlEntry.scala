@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.WsdlEntry")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.WsdlEntry")
 @js.native
-class WsdlEntry protected ()
+open class WsdlEntry protected ()
   extends typings.mendixmodelsdk.webservicesMod.webservices.WsdlEntry {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class WsdlEntry protected ()
 }
 object WsdlEntry {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.WsdlEntry")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.WsdlEntry")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object WsdlEntry {
   inline def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription): typings.mendixmodelsdk.webservicesMod.webservices.WsdlEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlEntry]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.WsdlEntry.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.WsdlEntry.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.WsdlEntry.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.WsdlEntry.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

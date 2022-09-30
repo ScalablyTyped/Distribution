@@ -1,16 +1,16 @@
 package typings.svgPathdata
 
 import typings.svgPathdata.anon.MaxX
-import typings.svgPathdata.svgPathdataNumbers.`128`
-import typings.svgPathdata.svgPathdataNumbers.`16`
-import typings.svgPathdata.svgPathdataNumbers.`1`
-import typings.svgPathdata.svgPathdataNumbers.`256`
-import typings.svgPathdata.svgPathdataNumbers.`2`
-import typings.svgPathdata.svgPathdataNumbers.`32`
-import typings.svgPathdata.svgPathdataNumbers.`4`
-import typings.svgPathdata.svgPathdataNumbers.`512`
-import typings.svgPathdata.svgPathdataNumbers.`64`
-import typings.svgPathdata.svgPathdataNumbers.`8`
+import typings.svgPathdata.svgPathdataInts.`128`
+import typings.svgPathdata.svgPathdataInts.`16`
+import typings.svgPathdata.svgPathdataInts.`1`
+import typings.svgPathdata.svgPathdataInts.`256`
+import typings.svgPathdata.svgPathdataInts.`2`
+import typings.svgPathdata.svgPathdataInts.`32`
+import typings.svgPathdata.svgPathdataInts.`4`
+import typings.svgPathdata.svgPathdataInts.`512`
+import typings.svgPathdata.svgPathdataInts.`64`
+import typings.svgPathdata.svgPathdataInts.`8`
 import typings.svgPathdata.transformableSVGMod.TransformableSVG
 import typings.svgPathdata.typesMod.SVGCommand
 import typings.svgPathdata.typesMod.TransformFunction

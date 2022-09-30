@@ -1,7 +1,7 @@
 package typings.mobx.anon
 
 import typings.mobx.mobxStrings.add
-import typings.mobx.observablesetMod.ISetDidChange
+import typings.mobx.observablesetMod.ISetWillChange
 import typings.mobx.observablesetMod.ObservableSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NewValueObject[T]
   extends StObject
-     with ISetDidChange[T] {
+     with ISetWillChange[T] {
   
   var newValue: T
   

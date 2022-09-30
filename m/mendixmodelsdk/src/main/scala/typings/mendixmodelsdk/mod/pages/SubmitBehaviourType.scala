@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SubmitBehaviourType")
 @js.native
-class SubmitBehaviourType protected ()
+open class SubmitBehaviourType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SubmitBehaviourType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

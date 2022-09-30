@@ -20,7 +20,7 @@ object performActionsMod {
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[js.Any] = js.undefined
+    var origin: js.UndefOr[Any] = js.undefined
     
     var `type`: String
     
@@ -48,7 +48,7 @@ object performActionsMod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setOrigin(value: js.Any): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Any): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
@@ -87,7 +87,7 @@ object performActionsMod {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setParameters(value: PointerType): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       

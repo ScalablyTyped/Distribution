@@ -1,61 +1,52 @@
 package typings.pixiJs.mod
 
+import typings.pixiCore.mod.Buffer2
+import typings.pixiUtils.mod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Uniform group holds uniform map and some ID's for work
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "UniformGroup")
 @js.native
-class UniformGroup ()
-  extends StObject
-     with typings.pixiJs.PIXI.UniformGroup {
-  def this(uniforms: js.Any) = this()
-  def this(uniforms: js.Any, _static: Boolean) = this()
-  def this(uniforms: Unit, _static: Boolean) = this()
-  
+open class UniformGroup[LAYOUT] protected ()
+  extends typings.pixiCore.mod.UniformGroup[LAYOUT] {
   /**
-    * dirty version
-    * @protected
-    * @member {number} PIXI.UniformGroup#dirtyId
+    * @param {object | Buffer} [uniforms] - Custom uniforms to use to augment the built-in ones. Or a pixi buffer.
+    * @param isStatic - Uniforms wont be changed after creation.
+    * @param isUbo - If true, will treat this uniform group as a uniform buffer object.
     */
-  /* protected */ /* CompleteClass */
-  var dirtyId: Double = js.native
+  def this(uniforms: LAYOUT) = this()
+  def this(uniforms: Buffer2) = this()
+  def this(uniforms: LAYOUT, isStatic: Boolean) = this()
+  def this(uniforms: Buffer2, isStatic: Boolean) = this()
+  def this(uniforms: LAYOUT, isStatic: Boolean, isUbo: Boolean) = this()
+  def this(uniforms: LAYOUT, isStatic: Unit, isUbo: Boolean) = this()
+  def this(uniforms: Buffer2, isStatic: Boolean, isUbo: Boolean) = this()
+  def this(uniforms: Buffer2, isStatic: Unit, isUbo: Boolean) = this()
+}
+/* static members */
+object UniformGroup {
   
-  /**
-    * Its a group and not a single uniforms
-    * @member {boolean} PIXI.UniformGroup#group
-    * @readonly
-    * @default true
-    */
-  /* CompleteClass */
-  override val group: Boolean = js.native
+  @JSImport("pixi.js", "UniformGroup")
+  @js.native
+  val ^ : js.Any = js.native
   
-  /**
-    * unique id
-    * @protected
-    * @member {number} PIXI.UniformGroup#id
-    */
-  /* protected */ /* CompleteClass */
-  var id: Double = js.native
+  inline def from(uniforms: Buffer2): typings.pixiCore.mod.UniformGroup[Dict[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def from(uniforms: Buffer2, _static: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def from(uniforms: Buffer2, _static: Boolean, _ubo: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], _ubo.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def from(uniforms: Buffer2, _static: Unit, _ubo: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], _ubo.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def from(uniforms: Dict[Any]): typings.pixiCore.mod.UniformGroup[Dict[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def from(uniforms: Dict[Any], _static: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def from(uniforms: Dict[Any], _static: Boolean, _ubo: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], _ubo.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def from(uniforms: Dict[Any], _static: Unit, _ubo: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], _ubo.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
   
+  inline def uboFrom(uniforms: Buffer2): typings.pixiCore.mod.UniformGroup[Dict[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("uboFrom")(uniforms.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def uboFrom(uniforms: Buffer2, _static: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uboFrom")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
   /**
-    * Uniforms wont be changed after creation
-    * @member {boolean} PIXI.UniformGroup#static
+    * A short hand function for creating a static UBO UniformGroup.
+    * @param uniforms - the ubo item
+    * @param _static - should this be updated each time it is used? defaults to true here!
     */
-  /* CompleteClass */
-  var static: Boolean = js.native
-  
-  /**
-    * uniform values
-    * @member {object} PIXI.UniformGroup#uniforms
-    * @readonly
-    */
-  /* CompleteClass */
-  override val uniforms: js.Any = js.native
+  inline def uboFrom(uniforms: Dict[Any]): typings.pixiCore.mod.UniformGroup[Dict[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("uboFrom")(uniforms.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
+  inline def uboFrom(uniforms: Dict[Any], _static: Boolean): typings.pixiCore.mod.UniformGroup[Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("uboFrom")(uniforms.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.mod.UniformGroup[Dict[Any]]]
 }

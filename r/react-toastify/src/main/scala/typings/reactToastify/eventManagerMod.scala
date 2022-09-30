@@ -2,12 +2,12 @@ package typings.reactToastify
 
 import typings.react.mod.ReactNode
 import typings.reactToastify.anon.TypeofsetTimeout
-import typings.reactToastify.reactToastifyNumbers.`0`
-import typings.reactToastify.reactToastifyNumbers.`1`
-import typings.reactToastify.reactToastifyNumbers.`2`
-import typings.reactToastify.reactToastifyNumbers.`3`
-import typings.reactToastify.reactToastifyNumbers.`4`
-import typings.reactToastify.reactToastifyNumbers.`5`
+import typings.reactToastify.reactToastifyInts.`0`
+import typings.reactToastify.reactToastifyInts.`1`
+import typings.reactToastify.reactToastifyInts.`2`
+import typings.reactToastify.reactToastifyInts.`3`
+import typings.reactToastify.reactToastifyInts.`4`
+import typings.reactToastify.reactToastifyInts.`5`
 import typings.reactToastify.typesMod.ClearWaitingQueueParams
 import typings.reactToastify.typesMod.Id
 import typings.reactToastify.typesMod.NotValidatedToastProps
@@ -29,12 +29,12 @@ object eventManagerMod {
   type Callback = OnShowCallback | OnClearCallback | OnClearWaitingQueue | OnDidMountCallback | OnWillUnmountCallback | OnChangeCallback
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reactToastify.reactToastifyNumbers.`0`
-    - typings.reactToastify.reactToastifyNumbers.`1`
-    - typings.reactToastify.reactToastifyNumbers.`2`
-    - typings.reactToastify.reactToastifyNumbers.`3`
-    - typings.reactToastify.reactToastifyNumbers.`4`
-    - typings.reactToastify.reactToastifyNumbers.`5`
+    - typings.reactToastify.reactToastifyInts.`0`
+    - typings.reactToastify.reactToastifyInts.`1`
+    - typings.reactToastify.reactToastifyInts.`2`
+    - typings.reactToastify.reactToastifyInts.`3`
+    - typings.reactToastify.reactToastifyInts.`4`
+    - typings.reactToastify.reactToastifyInts.`5`
   */
   trait Event extends StObject
   object Event {

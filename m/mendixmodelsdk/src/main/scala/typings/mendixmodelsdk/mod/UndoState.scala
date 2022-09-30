@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "UndoState")
 @js.native
-class UndoState protected ()
+open class UndoState protected ()
   extends typings.mendixmodelsdk.internalMod.UndoState {
   def this(deltaManager: IDeltaManager) = this()
 }

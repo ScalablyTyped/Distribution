@@ -481,143 +481,6 @@ object coreMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.fileType.fileTypeStrings.imageSlashjpeg
-    - typings.fileType.fileTypeStrings.imageSlashpng
-    - typings.fileType.fileTypeStrings.imageSlashgif
-    - typings.fileType.fileTypeStrings.imageSlashwebp
-    - typings.fileType.fileTypeStrings.imageSlashflif
-    - typings.fileType.fileTypeStrings.`imageSlashx-xcf`
-    - typings.fileType.fileTypeStrings.`imageSlashx-canon-cr2`
-    - typings.fileType.fileTypeStrings.`imageSlashx-canon-cr3`
-    - typings.fileType.fileTypeStrings.imageSlashtiff
-    - typings.fileType.fileTypeStrings.imageSlashbmp
-    - typings.fileType.fileTypeStrings.imageSlashicns
-    - typings.fileType.fileTypeStrings.`imageSlashvndDotms-photo`
-    - typings.fileType.fileTypeStrings.imageSlashvndDotadobeDotphotoshop
-    - typings.fileType.fileTypeStrings.`applicationSlashx-indesign`
-    - typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip
-    - typings.fileType.fileTypeStrings.`applicationSlashx-xpinstall`
-    - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext
-    - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotspreadsheet
-    - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotpresentation
-    - typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`
-    - typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`
-    - typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`
-    - typings.fileType.fileTypeStrings.applicationSlashzip
-    - typings.fileType.fileTypeStrings.`applicationSlashx-tar`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-rar-compressed`
-    - typings.fileType.fileTypeStrings.applicationSlashgzip
-    - typings.fileType.fileTypeStrings.`applicationSlashx-bzip2`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-7z-compressed`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-apple-diskimage`
-    - typings.fileType.fileTypeStrings.videoSlashmp4
-    - typings.fileType.fileTypeStrings.audioSlashmidi
-    - typings.fileType.fileTypeStrings.`videoSlashx-matroska`
-    - typings.fileType.fileTypeStrings.videoSlashwebm
-    - typings.fileType.fileTypeStrings.videoSlashquicktime
-    - typings.fileType.fileTypeStrings.videoSlashvndDotavi
-    - typings.fileType.fileTypeStrings.audioSlashvndDotwave
-    - typings.fileType.fileTypeStrings.audioSlashqcelp
-    - typings.fileType.fileTypeStrings.`audioSlashx-ms-asf`
-    - typings.fileType.fileTypeStrings.`videoSlashx-ms-asf`
-    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-asf`
-    - typings.fileType.fileTypeStrings.videoSlashmpeg
-    - typings.fileType.fileTypeStrings.videoSlash3gpp
-    - typings.fileType.fileTypeStrings.audioSlashmpeg
-    - typings.fileType.fileTypeStrings.audioSlashmp4
-    - typings.fileType.fileTypeStrings.audioSlashopus
-    - typings.fileType.fileTypeStrings.videoSlashogg
-    - typings.fileType.fileTypeStrings.audioSlashogg
-    - typings.fileType.fileTypeStrings.applicationSlashogg
-    - typings.fileType.fileTypeStrings.`audioSlashx-flac`
-    - typings.fileType.fileTypeStrings.audioSlashape
-    - typings.fileType.fileTypeStrings.audioSlashwavpack
-    - typings.fileType.fileTypeStrings.audioSlashamr
-    - typings.fileType.fileTypeStrings.applicationSlashpdf
-    - typings.fileType.fileTypeStrings.`applicationSlashx-elf`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-msdownload`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-shockwave-flash`
-    - typings.fileType.fileTypeStrings.applicationSlashrtf
-    - typings.fileType.fileTypeStrings.applicationSlashwasm
-    - typings.fileType.fileTypeStrings.fontSlashwoff
-    - typings.fileType.fileTypeStrings.fontSlashwoff2
-    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-fontobject`
-    - typings.fileType.fileTypeStrings.fontSlashttf
-    - typings.fileType.fileTypeStrings.fontSlashotf
-    - typings.fileType.fileTypeStrings.`imageSlashx-icon`
-    - typings.fileType.fileTypeStrings.`videoSlashx-flv`
-    - typings.fileType.fileTypeStrings.applicationSlashpostscript
-    - typings.fileType.fileTypeStrings.applicationSlasheps
-    - typings.fileType.fileTypeStrings.`applicationSlashx-xz`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-sqlite3`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-nintendo-nes-rom`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-google-chrome-extension`
-    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-cab-compressed`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-deb`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-unix-archive`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-rpm`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-compress`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-lzip`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-cfb`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-mie`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-apache-arrow`
-    - typings.fileType.fileTypeStrings.applicationSlashmxf
-    - typings.fileType.fileTypeStrings.videoSlashmp2t
-    - typings.fileType.fileTypeStrings.`applicationSlashx-blender`
-    - typings.fileType.fileTypeStrings.imageSlashbpg
-    - typings.fileType.fileTypeStrings.imageSlashjp2
-    - typings.fileType.fileTypeStrings.imageSlashjpx
-    - typings.fileType.fileTypeStrings.imageSlashjpm
-    - typings.fileType.fileTypeStrings.imageSlashmj2
-    - typings.fileType.fileTypeStrings.audioSlashaiff
-    - typings.fileType.fileTypeStrings.applicationSlashxml
-    - typings.fileType.fileTypeStrings.`applicationSlashx-mobipocket-ebook`
-    - typings.fileType.fileTypeStrings.imageSlashheif
-    - typings.fileType.fileTypeStrings.`imageSlashheif-sequence`
-    - typings.fileType.fileTypeStrings.imageSlashheic
-    - typings.fileType.fileTypeStrings.`imageSlashheic-sequence`
-    - typings.fileType.fileTypeStrings.imageSlashktx
-    - typings.fileType.fileTypeStrings.applicationSlashdicom
-    - typings.fileType.fileTypeStrings.`audioSlashx-musepack`
-    - typings.fileType.fileTypeStrings.textSlashcalendar
-    - typings.fileType.fileTypeStrings.textSlashvcard
-    - typings.fileType.fileTypeStrings.`modelSlashgltf-binary`
-    - typings.fileType.fileTypeStrings.applicationSlashvndDottcpdumpDotpcap
-    - typings.fileType.fileTypeStrings.`audioSlashx-dsf`
-    - typings.fileType.fileTypeStrings.applicationSlashxDotmsDotshortcut
-    - typings.fileType.fileTypeStrings.applicationSlashxDotappleDotalias
-    - typings.fileType.fileTypeStrings.`audioSlashx-voc`
-    - typings.fileType.fileTypeStrings.`audioSlashvndDotdolbyDotdd-raw`
-    - typings.fileType.fileTypeStrings.`audioSlashx-m4a`
-    - typings.fileType.fileTypeStrings.imageSlashapng
-    - typings.fileType.fileTypeStrings.`imageSlashx-olympus-orf`
-    - typings.fileType.fileTypeStrings.`imageSlashx-sony-arw`
-    - typings.fileType.fileTypeStrings.`imageSlashx-adobe-dng`
-    - typings.fileType.fileTypeStrings.`imageSlashx-nikon-nef`
-    - typings.fileType.fileTypeStrings.`imageSlashx-panasonic-rw2`
-    - typings.fileType.fileTypeStrings.`imageSlashx-fujifilm-raf`
-    - typings.fileType.fileTypeStrings.`videoSlashx-m4v`
-    - typings.fileType.fileTypeStrings.videoSlash3gpp2
-    - typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape`
-    - typings.fileType.fileTypeStrings.audioSlashaac
-    - typings.fileType.fileTypeStrings.`audioSlashx-it`
-    - typings.fileType.fileTypeStrings.`audioSlashx-s3m`
-    - typings.fileType.fileTypeStrings.`audioSlashx-xm`
-    - typings.fileType.fileTypeStrings.videoSlashMP1S
-    - typings.fileType.fileTypeStrings.videoSlashMP2P
-    - typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp
-    - typings.fileType.fileTypeStrings.imageSlashavif
-    - typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed`
-    - typings.fileType.fileTypeStrings.`applicationSlashpgp-encrypted`
-    - typings.fileType.fileTypeStrings.`applicationSlashx-asar`
-    - typings.fileType.fileTypeStrings.modelSlashstl
-    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-htmlhelp`
-    - typings.fileType.fileTypeStrings.modelSlash3mf
-    - typings.fileType.fileTypeStrings.imageSlashjxl
-    - typings.fileType.fileTypeStrings.applicationSlashzstd
-  */
-  trait MimeType extends StObject
   object MimeType {
     
     inline def applicationSlashdicom: typings.fileType.fileTypeStrings.applicationSlashdicom = "application/dicom".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashdicom]
@@ -654,11 +517,11 @@ object coreMod {
     
     inline def applicationSlashvndDotoasisDotopendocumentDottext: typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext = "application/vnd.oasis.opendocument.text".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext]
     
-    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation` = "application/vnd.openxmlformats-officedocument.presentationml.presentation".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`]
+    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotpresentationmlDotpresentation`: String = String.asInstanceOf[String]
     
-    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet` = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`]
+    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotspreadsheetmlDotsheet`: String = String.asInstanceOf[String]
     
-    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument` = "application/vnd.openxmlformats-officedocument.wordprocessingml.document".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`]
+    inline def `applicationSlashvndDotopenxmlformats-officedocumentDotwordprocessingmlDotdocument`: String = String.asInstanceOf[String]
     
     inline def applicationSlashvndDotsketchupDotskp: typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp = "application/vnd.sketchup.skp".asInstanceOf[typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp]
     
@@ -888,6 +751,141 @@ object coreMod {
     
     inline def `videoSlashx-ms-asf`: typings.fileType.fileTypeStrings.`videoSlashx-ms-asf` = "video/x-ms-asf".asInstanceOf[typings.fileType.fileTypeStrings.`videoSlashx-ms-asf`]
   }
+  /* Rewritten from type alias, can be one of: 
+    - typings.fileType.fileTypeStrings.imageSlashjpeg
+    - typings.fileType.fileTypeStrings.imageSlashpng
+    - typings.fileType.fileTypeStrings.imageSlashgif
+    - typings.fileType.fileTypeStrings.imageSlashwebp
+    - typings.fileType.fileTypeStrings.imageSlashflif
+    - typings.fileType.fileTypeStrings.`imageSlashx-xcf`
+    - typings.fileType.fileTypeStrings.`imageSlashx-canon-cr2`
+    - typings.fileType.fileTypeStrings.`imageSlashx-canon-cr3`
+    - typings.fileType.fileTypeStrings.imageSlashtiff
+    - typings.fileType.fileTypeStrings.imageSlashbmp
+    - typings.fileType.fileTypeStrings.imageSlashicns
+    - typings.fileType.fileTypeStrings.`imageSlashvndDotms-photo`
+    - typings.fileType.fileTypeStrings.imageSlashvndDotadobeDotphotoshop
+    - typings.fileType.fileTypeStrings.`applicationSlashx-indesign`
+    - typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip
+    - typings.fileType.fileTypeStrings.`applicationSlashx-xpinstall`
+    - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext
+    - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotspreadsheet
+    - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDotpresentation
+    - java.lang.String
+    - typings.fileType.fileTypeStrings.applicationSlashzip
+    - typings.fileType.fileTypeStrings.`applicationSlashx-tar`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-rar-compressed`
+    - typings.fileType.fileTypeStrings.applicationSlashgzip
+    - typings.fileType.fileTypeStrings.`applicationSlashx-bzip2`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-7z-compressed`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-apple-diskimage`
+    - typings.fileType.fileTypeStrings.videoSlashmp4
+    - typings.fileType.fileTypeStrings.audioSlashmidi
+    - typings.fileType.fileTypeStrings.`videoSlashx-matroska`
+    - typings.fileType.fileTypeStrings.videoSlashwebm
+    - typings.fileType.fileTypeStrings.videoSlashquicktime
+    - typings.fileType.fileTypeStrings.videoSlashvndDotavi
+    - typings.fileType.fileTypeStrings.audioSlashvndDotwave
+    - typings.fileType.fileTypeStrings.audioSlashqcelp
+    - typings.fileType.fileTypeStrings.`audioSlashx-ms-asf`
+    - typings.fileType.fileTypeStrings.`videoSlashx-ms-asf`
+    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-asf`
+    - typings.fileType.fileTypeStrings.videoSlashmpeg
+    - typings.fileType.fileTypeStrings.videoSlash3gpp
+    - typings.fileType.fileTypeStrings.audioSlashmpeg
+    - typings.fileType.fileTypeStrings.audioSlashmp4
+    - typings.fileType.fileTypeStrings.audioSlashopus
+    - typings.fileType.fileTypeStrings.videoSlashogg
+    - typings.fileType.fileTypeStrings.audioSlashogg
+    - typings.fileType.fileTypeStrings.applicationSlashogg
+    - typings.fileType.fileTypeStrings.`audioSlashx-flac`
+    - typings.fileType.fileTypeStrings.audioSlashape
+    - typings.fileType.fileTypeStrings.audioSlashwavpack
+    - typings.fileType.fileTypeStrings.audioSlashamr
+    - typings.fileType.fileTypeStrings.applicationSlashpdf
+    - typings.fileType.fileTypeStrings.`applicationSlashx-elf`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-msdownload`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-shockwave-flash`
+    - typings.fileType.fileTypeStrings.applicationSlashrtf
+    - typings.fileType.fileTypeStrings.applicationSlashwasm
+    - typings.fileType.fileTypeStrings.fontSlashwoff
+    - typings.fileType.fileTypeStrings.fontSlashwoff2
+    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-fontobject`
+    - typings.fileType.fileTypeStrings.fontSlashttf
+    - typings.fileType.fileTypeStrings.fontSlashotf
+    - typings.fileType.fileTypeStrings.`imageSlashx-icon`
+    - typings.fileType.fileTypeStrings.`videoSlashx-flv`
+    - typings.fileType.fileTypeStrings.applicationSlashpostscript
+    - typings.fileType.fileTypeStrings.applicationSlasheps
+    - typings.fileType.fileTypeStrings.`applicationSlashx-xz`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-sqlite3`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-nintendo-nes-rom`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-google-chrome-extension`
+    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-cab-compressed`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-deb`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-unix-archive`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-rpm`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-compress`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-lzip`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-cfb`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-mie`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-apache-arrow`
+    - typings.fileType.fileTypeStrings.applicationSlashmxf
+    - typings.fileType.fileTypeStrings.videoSlashmp2t
+    - typings.fileType.fileTypeStrings.`applicationSlashx-blender`
+    - typings.fileType.fileTypeStrings.imageSlashbpg
+    - typings.fileType.fileTypeStrings.imageSlashjp2
+    - typings.fileType.fileTypeStrings.imageSlashjpx
+    - typings.fileType.fileTypeStrings.imageSlashjpm
+    - typings.fileType.fileTypeStrings.imageSlashmj2
+    - typings.fileType.fileTypeStrings.audioSlashaiff
+    - typings.fileType.fileTypeStrings.applicationSlashxml
+    - typings.fileType.fileTypeStrings.`applicationSlashx-mobipocket-ebook`
+    - typings.fileType.fileTypeStrings.imageSlashheif
+    - typings.fileType.fileTypeStrings.`imageSlashheif-sequence`
+    - typings.fileType.fileTypeStrings.imageSlashheic
+    - typings.fileType.fileTypeStrings.`imageSlashheic-sequence`
+    - typings.fileType.fileTypeStrings.imageSlashktx
+    - typings.fileType.fileTypeStrings.applicationSlashdicom
+    - typings.fileType.fileTypeStrings.`audioSlashx-musepack`
+    - typings.fileType.fileTypeStrings.textSlashcalendar
+    - typings.fileType.fileTypeStrings.textSlashvcard
+    - typings.fileType.fileTypeStrings.`modelSlashgltf-binary`
+    - typings.fileType.fileTypeStrings.applicationSlashvndDottcpdumpDotpcap
+    - typings.fileType.fileTypeStrings.`audioSlashx-dsf`
+    - typings.fileType.fileTypeStrings.applicationSlashxDotmsDotshortcut
+    - typings.fileType.fileTypeStrings.applicationSlashxDotappleDotalias
+    - typings.fileType.fileTypeStrings.`audioSlashx-voc`
+    - typings.fileType.fileTypeStrings.`audioSlashvndDotdolbyDotdd-raw`
+    - typings.fileType.fileTypeStrings.`audioSlashx-m4a`
+    - typings.fileType.fileTypeStrings.imageSlashapng
+    - typings.fileType.fileTypeStrings.`imageSlashx-olympus-orf`
+    - typings.fileType.fileTypeStrings.`imageSlashx-sony-arw`
+    - typings.fileType.fileTypeStrings.`imageSlashx-adobe-dng`
+    - typings.fileType.fileTypeStrings.`imageSlashx-nikon-nef`
+    - typings.fileType.fileTypeStrings.`imageSlashx-panasonic-rw2`
+    - typings.fileType.fileTypeStrings.`imageSlashx-fujifilm-raf`
+    - typings.fileType.fileTypeStrings.`videoSlashx-m4v`
+    - typings.fileType.fileTypeStrings.videoSlash3gpp2
+    - typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape`
+    - typings.fileType.fileTypeStrings.audioSlashaac
+    - typings.fileType.fileTypeStrings.`audioSlashx-it`
+    - typings.fileType.fileTypeStrings.`audioSlashx-s3m`
+    - typings.fileType.fileTypeStrings.`audioSlashx-xm`
+    - typings.fileType.fileTypeStrings.videoSlashMP1S
+    - typings.fileType.fileTypeStrings.videoSlashMP2P
+    - typings.fileType.fileTypeStrings.applicationSlashvndDotsketchupDotskp
+    - typings.fileType.fileTypeStrings.imageSlashavif
+    - typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed`
+    - typings.fileType.fileTypeStrings.`applicationSlashpgp-encrypted`
+    - typings.fileType.fileTypeStrings.`applicationSlashx-asar`
+    - typings.fileType.fileTypeStrings.modelSlashstl
+    - typings.fileType.fileTypeStrings.`applicationSlashvndDotms-htmlhelp`
+    - typings.fileType.fileTypeStrings.modelSlash3mf
+    - typings.fileType.fileTypeStrings.imageSlashjxl
+    - typings.fileType.fileTypeStrings.applicationSlashzstd
+  */
+  type MimeType = _MimeType | String
   
   @js.native
   trait ReadableStreamWithFileType extends Readable {
@@ -917,4 +915,6 @@ object coreMod {
       inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
     }
   }
+  
+  trait _MimeType extends StObject
 }

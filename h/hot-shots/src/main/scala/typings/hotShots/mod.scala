@@ -2,10 +2,10 @@ package typings.hotShots
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.hotShots.anon.Buffer
-import typings.hotShots.hotShotsNumbers.`0`
-import typings.hotShots.hotShotsNumbers.`1`
-import typings.hotShots.hotShotsNumbers.`2`
-import typings.hotShots.hotShotsNumbers.`3`
+import typings.hotShots.hotShotsInts.`0`
+import typings.hotShots.hotShotsInts.`1`
+import typings.hotShots.hotShotsInts.`2`
+import typings.hotShots.hotShotsInts.`3`
 import typings.hotShots.hotShotsStrings.error
 import typings.hotShots.hotShotsStrings.info
 import typings.hotShots.hotShotsStrings.low
@@ -921,21 +921,21 @@ object mod {
   
   /* Inlined hot-shots.hot-shots.unionFromInterfaceValues4<hot-shots.hot-shots.DatadogChecks, 'OK', 'WARNING', 'CRITICAL', 'UNKNOWN'> */
   /* Rewritten from type alias, can be one of: 
-    - typings.hotShots.hotShotsNumbers.`0`
-    - typings.hotShots.hotShotsNumbers.`1`
-    - typings.hotShots.hotShotsNumbers.`2`
-    - typings.hotShots.hotShotsNumbers.`3`
+    - typings.hotShots.hotShotsInts.`0`
+    - typings.hotShots.hotShotsInts.`1`
+    - typings.hotShots.hotShotsInts.`2`
+    - typings.hotShots.hotShotsInts.`3`
   */
   trait DatadogChecksValues extends StObject
   object DatadogChecksValues {
     
-    inline def `0`: typings.hotShots.hotShotsNumbers.`0` = 0.asInstanceOf[typings.hotShots.hotShotsNumbers.`0`]
+    inline def `0`: typings.hotShots.hotShotsInts.`0` = 0.asInstanceOf[typings.hotShots.hotShotsInts.`0`]
     
-    inline def `1`: typings.hotShots.hotShotsNumbers.`1` = 1.asInstanceOf[typings.hotShots.hotShotsNumbers.`1`]
+    inline def `1`: typings.hotShots.hotShotsInts.`1` = 1.asInstanceOf[typings.hotShots.hotShotsInts.`1`]
     
-    inline def `2`: typings.hotShots.hotShotsNumbers.`2` = 2.asInstanceOf[typings.hotShots.hotShotsNumbers.`2`]
+    inline def `2`: typings.hotShots.hotShotsInts.`2` = 2.asInstanceOf[typings.hotShots.hotShotsInts.`2`]
     
-    inline def `3`: typings.hotShots.hotShotsNumbers.`3` = 3.asInstanceOf[typings.hotShots.hotShotsNumbers.`3`]
+    inline def `3`: typings.hotShots.hotShotsInts.`3` = 3.asInstanceOf[typings.hotShots.hotShotsInts.`3`]
   }
   
   trait EventOptions extends StObject {

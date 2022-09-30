@@ -9,10 +9,10 @@ Typings are for version 4.5.4
 | ------------------ | :-------------: |
 | Full name          | mongoose-promise |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 77 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13.333333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/mongoose-promise)

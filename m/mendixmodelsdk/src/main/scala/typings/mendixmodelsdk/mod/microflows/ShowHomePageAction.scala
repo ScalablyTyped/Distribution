@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.ShowHomePageAction")
 @js.native
-class ShowHomePageAction protected ()
+open class ShowHomePageAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ShowHomePageAction {
   def this(
     model: AbstractModel,

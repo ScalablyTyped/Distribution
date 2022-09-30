@@ -227,9 +227,9 @@ object utilsMod {
     inline def findIndexInList(value: Any, list: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexInList")(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def findIndexInList(value: Any, list: js.Array[Any], dataKey: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndexInList")(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any], dataKey.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def getJSXElement(obj: Any, params: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSXElement")(List(obj.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def getJSXElement(obj: Any, params: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSXElement")(scala.List(obj.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
-    inline def getPropValue(obj: Any, params: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropValue")(List(obj.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+    inline def getPropValue(obj: Any, params: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropValue")(scala.List(obj.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
     
     inline def getRefElement(ref: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefElement")(ref.asInstanceOf[js.Any]).asInstanceOf[Any]
     

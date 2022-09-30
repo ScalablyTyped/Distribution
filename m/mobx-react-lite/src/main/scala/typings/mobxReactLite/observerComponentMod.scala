@@ -2,7 +2,6 @@ package typings.mobxReactLite
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactElement
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,42 +30,42 @@ object observerComponentMod {
       @JSImport("mobx-react-lite/dist/ObserverComponent", "Observer.propTypes.children")
       @js.native
       def children: js.Function5[
-            /* props */ StringDictionary[js.Any], 
+            /* props */ StringDictionary[Any], 
             /* key */ String, 
             /* componentName */ String, 
-            /* location */ js.Any, 
+            /* location */ Any, 
             /* propFullName */ String, 
-            Error | Null
+            js.Error | Null
           ] = js.native
       inline def children_=(
         x: js.Function5[
-              /* props */ StringDictionary[js.Any], 
+              /* props */ StringDictionary[Any], 
               /* key */ String, 
               /* componentName */ String, 
-              /* location */ js.Any, 
+              /* location */ Any, 
               /* propFullName */ String, 
-              Error | Null
+              js.Error | Null
             ]
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("mobx-react-lite/dist/ObserverComponent", "Observer.propTypes.render")
       @js.native
       def render: js.Function5[
-            /* props */ StringDictionary[js.Any], 
+            /* props */ StringDictionary[Any], 
             /* key */ String, 
             /* componentName */ String, 
-            /* location */ js.Any, 
+            /* location */ Any, 
             /* propFullName */ String, 
-            Error | Null
+            js.Error | Null
           ] = js.native
       inline def render_=(
         x: js.Function5[
-              /* props */ StringDictionary[js.Any], 
+              /* props */ StringDictionary[Any], 
               /* key */ String, 
               /* componentName */ String, 
-              /* location */ js.Any, 
+              /* location */ Any, 
               /* propFullName */ String, 
-              Error | Null
+              js.Error | Null
             ]
       ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("render")(x.asInstanceOf[js.Any])
     }

@@ -3,18 +3,11 @@ package typings.prettier
 import typings.prettier.mod.BuiltInParserName
 import typings.prettier.mod.CoreCategoryType
 import typings.prettier.mod.SupportOptionType
-import typings.prettier.mod.util.Quote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prettierStrings {
-  
-  @js.native
-  sealed trait Apostrophe
-    extends StObject
-       with Quote
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
   sealed trait Config
@@ -53,9 +46,7 @@ object prettierStrings {
   inline def Output: Output = "Output".asInstanceOf[Output]
   
   @js.native
-  sealed trait Quotationmark
-    extends StObject
-       with Quote
+  sealed trait Quotationmark extends StObject
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native

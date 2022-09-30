@@ -255,7 +255,7 @@ trait ThemeCheckBoxProps extends StObject {
   /**
     * If true, disable all interactions for this component.
     */
-  var disabled: js.UndefOr[Boolean | Null] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -421,7 +421,7 @@ trait ThemeCheckBoxProps extends StObject {
     *
     * @platform android
     */
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *(Apple TV only)* Object with properties to control Apple TV parallax effects.
@@ -626,8 +626,6 @@ object ThemeCheckBoxProps {
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
-    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
@@ -892,8 +890,6 @@ object ThemeCheckBoxProps {
     inline def setTooltipUndefined: Self = StObject.set(x, "Tooltip", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

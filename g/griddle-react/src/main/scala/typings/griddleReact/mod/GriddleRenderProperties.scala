@@ -2,37 +2,29 @@ package typings.griddleReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GriddleRenderProperties extends StObject {
   
-  var columnProperties: js.UndefOr[PropertyBag[ColumnRenderProperties]] = js.native
+  var columnProperties: js.UndefOr[PropertyBag[ColumnRenderProperties]] = js.undefined
   
-  var rowProperties: js.UndefOr[RowRenderProperties] = js.native
+  var rowProperties: js.UndefOr[RowRenderProperties] = js.undefined
 }
 object GriddleRenderProperties {
   
-  @scala.inline
-  def apply(): GriddleRenderProperties = {
+  inline def apply(): GriddleRenderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GriddleRenderProperties]
   }
   
-  @scala.inline
-  implicit class GriddleRenderPropertiesMutableBuilder[Self <: GriddleRenderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GriddleRenderProperties](x: Self) {
     
-    @scala.inline
-    def setColumnProperties(value: PropertyBag[ColumnRenderProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
+    inline def setColumnProperties(value: PropertyBag[ColumnRenderProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
+    inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
-    @scala.inline
-    def setRowProperties(value: RowRenderProperties): Self = StObject.set(x, "rowProperties", value.asInstanceOf[js.Any])
+    inline def setRowProperties(value: RowRenderProperties): Self = StObject.set(x, "rowProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowPropertiesUndefined: Self = StObject.set(x, "rowProperties", js.undefined)
+    inline def setRowPropertiesUndefined: Self = StObject.set(x, "rowProperties", js.undefined)
   }
 }

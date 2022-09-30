@@ -10,10 +10,10 @@ Map pan control for Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet.pancontrol |
 | Keywords           | leaflet, map, pan |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1260 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 614.3333333333334 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/kartena/Leaflet.Pancontrol#readme)

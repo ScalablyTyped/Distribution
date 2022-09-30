@@ -5,7 +5,6 @@ import typings.googleDriveRealtimeApi.gapi.drive.realtime.Error
 import typings.googleDriveRealtimeApi.gapi.drive.realtime.ErrorType
 import typings.googleDriveRealtimeApi.gapi.drive.realtime.databinding.Binding
 import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.EditableString
-import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List
 import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.Map
 import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.attribute_changed
 import typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.collaborator_joined
@@ -51,7 +50,7 @@ object global {
           
           @JSGlobal("gapi.drive.realtime.CollaborativeList.type")
           @js.native
-          val `type`: List = js.native
+          val `type`: typings.googleDriveRealtimeApi.googleDriveRealtimeApiStrings.List = js.native
         }
         
         @JSGlobal("gapi.drive.realtime.CollaborativeMap")

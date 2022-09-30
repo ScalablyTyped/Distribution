@@ -6,37 +6,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait From[T /* <: Record[String, js.Any] */] extends StObject {
+trait From extends StObject {
   
   /**
     * Transforms from another block type to this block type.
     */
-  val from: js.UndefOr[js.Array[Transform[T]]] = js.undefined
+  val from: js.UndefOr[js.Array[Transform[js.Object]]] = js.undefined
   
   /**
     * Transforms from this block type to another block type.
     */
-  val to: js.UndefOr[js.Array[Transform[Record[String, js.Any]]]] = js.undefined
+  val to: js.UndefOr[js.Array[Transform[Record[String, Any]]]] = js.undefined
 }
 object From {
   
-  inline def apply[T /* <: Record[String, js.Any] */](): From[T] = {
+  inline def apply(): From = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[From[T]]
+    __obj.asInstanceOf[From]
   }
   
-  extension [Self <: From[?], T /* <: Record[String, js.Any] */](x: Self & From[T]) {
+  extension [Self <: From](x: Self) {
     
-    inline def setFrom(value: js.Array[Transform[T]]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Array[Transform[js.Object]]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setFromVarargs(value: Transform[T]*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: Transform[js.Object]*): Self = StObject.set(x, "from", js.Array(value*))
     
-    inline def setTo(value: js.Array[Transform[Record[String, js.Any]]]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Array[Transform[Record[String, Any]]]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    inline def setToVarargs(value: (Transform[Record[String, js.Any]])*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: (Transform[Record[String, Any]])*): Self = StObject.set(x, "to", js.Array(value*))
   }
 }

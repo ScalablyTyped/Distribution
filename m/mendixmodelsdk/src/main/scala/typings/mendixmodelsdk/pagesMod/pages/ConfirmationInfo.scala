@@ -13,9 +13,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConfirmationInfo")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ConfirmationInfo")
 @js.native
-class ConfirmationInfo protected () extends Element[IModel] {
+open class ConfirmationInfo protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -30,6 +30,8 @@ class ConfirmationInfo protected () extends Element[IModel] {
   
   def containerAsCallNanoflowClientAction: CallNanoflowClientAction = js.native
   
+  def containerAsCallWorkflowClientAction: CallWorkflowClientAction = js.native
+  
   def containerAsMicroflowSettings: MicroflowSettings = js.native
   
   def proceedButtonCaption: Text = js.native
@@ -40,7 +42,7 @@ class ConfirmationInfo protected () extends Element[IModel] {
 }
 object ConfirmationInfo {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConfirmationInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConfirmationInfo")
   @js.native
   val ^ : js.Any = js.native
   
@@ -77,19 +79,30 @@ object ConfirmationInfo {
   /**
     * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
     * The new ConfirmationInfo will be automatically stored in the 'confirmationInfo' property
+    * of the parent CallWorkflowClientAction element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.12.0 and higher
+    */
+  /* static member */
+  inline def createInCallWorkflowClientActionUnderConfirmationInfo(container: CallWorkflowClientAction): ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCallWorkflowClientActionUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[ConfirmationInfo]
+  
+  /**
+    * Creates and returns a new ConfirmationInfo instance in the SDK and on the server.
+    * The new ConfirmationInfo will be automatically stored in the 'confirmationInfo' property
     * of the parent MicroflowSettings element passed as argument.
     */
   /* static member */
   inline def createInMicroflowSettingsUnderConfirmationInfo(container: MicroflowSettings): ConfirmationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowSettingsUnderConfirmationInfo")(container.asInstanceOf[js.Any]).asInstanceOf[ConfirmationInfo]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConfirmationInfo.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConfirmationInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConfirmationInfo.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ConfirmationInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

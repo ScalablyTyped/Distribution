@@ -1,6 +1,5 @@
 package typings.jestMatcherUtils
 
-import typings.chalk.mod.Chalk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,23 +12,23 @@ object mod {
   
   @JSImport("jest-matcher-utils", "BOLD_WEIGHT")
   @js.native
-  val BOLD_WEIGHT: Chalk = js.native
+  val BOLD_WEIGHT: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify chalk.Chalk */ Any = js.native
   
   @JSImport("jest-matcher-utils", "DIM_COLOR")
   @js.native
-  val DIM_COLOR: Chalk = js.native
+  val DIM_COLOR: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify chalk.Chalk */ Any = js.native
   
   @JSImport("jest-matcher-utils", "EXPECTED_COLOR")
   @js.native
-  val EXPECTED_COLOR: Chalk = js.native
+  val EXPECTED_COLOR: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify chalk.Chalk */ Any = js.native
   
   @JSImport("jest-matcher-utils", "INVERTED_COLOR")
   @js.native
-  val INVERTED_COLOR: Chalk = js.native
+  val INVERTED_COLOR: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify chalk.Chalk */ Any = js.native
   
   @JSImport("jest-matcher-utils", "RECEIVED_COLOR")
   @js.native
-  val RECEIVED_COLOR: Chalk = js.native
+  val RECEIVED_COLOR: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify chalk.Chalk */ Any = js.native
   
   @JSImport("jest-matcher-utils", "SUGGEST_TO_CONTAIN_EQUAL")
   @js.native

@@ -3,10 +3,17 @@ package typings.gestalt.mod
 import typings.gestalt.anon.EventFocusEventValue
 import typings.gestalt.anon.EventKeyboardEventValue
 import typings.gestalt.anon.EventSyntheticEventValue
+import typings.gestalt.gestaltStrings.done
+import typings.gestalt.gestaltStrings.enter
+import typings.gestalt.gestaltStrings.go
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
+import typings.gestalt.gestaltStrings.next
 import typings.gestalt.gestaltStrings.off
 import typings.gestalt.gestaltStrings.on
+import typings.gestalt.gestaltStrings.previous
+import typings.gestalt.gestaltStrings.search
+import typings.gestalt.gestaltStrings.send
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,6 +31,11 @@ trait NumberFieldProps extends StObject {
     * @default false
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    *  Optionally specify the action label to present for the enter key on virtual keyboards.
+    */
+  var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
   
   /**
     * For most cases, pass a string with a helpful error message (be sure to localize!).
@@ -119,6 +131,10 @@ object NumberFieldProps {
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
+    
+    inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
     
     inline def setErrorMessage(value: ReactNode): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

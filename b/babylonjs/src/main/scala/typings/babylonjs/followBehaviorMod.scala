@@ -30,7 +30,7 @@ object followBehaviorMod {
     
     /**
       * Enables/disables the behavior
-      * @hidden
+      * @internal
       */
     var _enabled: Boolean = js.native
     

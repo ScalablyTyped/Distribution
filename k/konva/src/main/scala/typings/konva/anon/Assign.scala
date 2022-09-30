@@ -1,7 +1,7 @@
 package typings.konva.anon
 
-import typings.konva.konvaNumbers.`-1`
-import typings.konva.konvaNumbers.`1`
+import typings.konva.konvaInts.`-1`
+import typings.konva.konvaInts.`1`
 import typings.konva.typesMod.IRect
 import typings.konva.typesMod.RGB
 import typings.konva.typesMod.RGBA

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bootstrap-table" : "1.21.0"
+      "bootstrap-table" : "1.21.1"
     }
   ],
   "test-dependencies" : [
     {
-      "bootstrap-table" : "1.21.0"
+      "bootstrap-table" : "1.21.1"
     }
   ],
   "compile-devDependencies" : [

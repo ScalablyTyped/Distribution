@@ -10,6 +10,23 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  object REACT_NATIVE_VERSION {
+    
+    @JSImport("react-native-gesture-handler/lib/typescript/utils", "REACT_NATIVE_VERSION")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-native-gesture-handler/lib/typescript/utils", "REACT_NATIVE_VERSION.major")
+    @js.native
+    def major: Double = js.native
+    inline def major_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("major")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-native-gesture-handler/lib/typescript/utils", "REACT_NATIVE_VERSION.minor")
+    @js.native
+    def minor: Double = js.native
+    inline def minor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minor")(x.asInstanceOf[js.Any])
+  }
+  
   inline def hasProperty(`object`: js.Object, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasProperty")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isFabric(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFabric")().asInstanceOf[Boolean]

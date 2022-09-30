@@ -1,6 +1,6 @@
 package typings.reactResizeDetector
 
-import typings.react.mod.RefObject
+import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +10,8 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply[T](): RefObject[T] = js.native
-    def apply[T](initialValue: T): RefObject[T] = js.native
+    def apply[T](): MutableRefObject[js.UndefOr[T]] = js.native
+    def apply[T](initialValue: T): MutableRefObject[T] = js.native
   }
   
   trait Leading extends StObject {

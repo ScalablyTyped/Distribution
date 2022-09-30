@@ -1,30 +1,30 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`0`
-import typings.mfiles.mfilesNumbers.`1`
-import typings.mfiles.mfilesNumbers.`30000`
-import typings.mfiles.mfilesNumbers.`30001`
-import typings.mfiles.mfilesNumbers.`30002`
-import typings.mfiles.mfilesNumbers.`30003`
-import typings.mfiles.mfilesNumbers.`30004`
-import typings.mfiles.mfilesNumbers.`30005`
-import typings.mfiles.mfilesNumbers.`30006`
-import typings.mfiles.mfilesNumbers.`30007`
+import typings.mfiles.mfilesInts.`0`
+import typings.mfiles.mfilesInts.`1`
+import typings.mfiles.mfilesInts.`30000`
+import typings.mfiles.mfilesInts.`30001`
+import typings.mfiles.mfilesInts.`30002`
+import typings.mfiles.mfilesInts.`30003`
+import typings.mfiles.mfilesInts.`30004`
+import typings.mfiles.mfilesInts.`30005`
+import typings.mfiles.mfilesInts.`30006`
+import typings.mfiles.mfilesInts.`30007`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`0`
-  - typings.mfiles.mfilesNumbers.`1`
-  - typings.mfiles.mfilesNumbers.`30000`
-  - typings.mfiles.mfilesNumbers.`30001`
-  - typings.mfiles.mfilesNumbers.`30002`
-  - typings.mfiles.mfilesNumbers.`30003`
-  - typings.mfiles.mfilesNumbers.`30004`
-  - typings.mfiles.mfilesNumbers.`30005`
-  - typings.mfiles.mfilesNumbers.`30006`
-  - typings.mfiles.mfilesNumbers.`30007`
+  - typings.mfiles.mfilesInts.`0`
+  - typings.mfiles.mfilesInts.`1`
+  - typings.mfiles.mfilesInts.`30000`
+  - typings.mfiles.mfilesInts.`30001`
+  - typings.mfiles.mfilesInts.`30002`
+  - typings.mfiles.mfilesInts.`30003`
+  - typings.mfiles.mfilesInts.`30004`
+  - typings.mfiles.mfilesInts.`30005`
+  - typings.mfiles.mfilesInts.`30006`
+  - typings.mfiles.mfilesInts.`30007`
 */
 trait MFPredefinedSearchFilterType extends StObject
 object MFPredefinedSearchFilterType {

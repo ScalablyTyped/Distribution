@@ -1,7 +1,7 @@
 package typings.xummSdk.anon
 
-import typings.xummSdk.xummSdkNumbers.`0`
-import typings.xummSdk.xummSdkNumbers.`1`
+import typings.xummSdk.xummSdkInts.`0`
+import typings.xummSdk.xummSdkInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

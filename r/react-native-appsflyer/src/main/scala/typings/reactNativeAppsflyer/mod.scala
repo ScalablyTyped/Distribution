@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeAppsflyer.anon.Afadset
 import typings.reactNativeAppsflyer.anon.Afsub1
 import typings.reactNativeAppsflyer.anon.Dictkey
-import typings.reactNativeAppsflyer.reactNativeAppsflyerNumbers.`0`
-import typings.reactNativeAppsflyer.reactNativeAppsflyerNumbers.`3`
+import typings.reactNativeAppsflyer.reactNativeAppsflyerInts.`0`
+import typings.reactNativeAppsflyer.reactNativeAppsflyerInts.`3`
 import typings.reactNativeAppsflyer.reactNativeAppsflyerStrings.Error
 import typings.reactNativeAppsflyer.reactNativeAppsflyerStrings.FOUND
 import typings.reactNativeAppsflyer.reactNativeAppsflyerStrings.NOT_FOUND
@@ -73,6 +73,8 @@ object mod {
     
     inline def performOnAppAttribution(urlString: String, successC: SuccessCB, errorC: ErrorCB): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("performOnAppAttribution")(urlString.asInstanceOf[js.Any], successC.asInstanceOf[js.Any], errorC.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def performOnDeepLinking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("performOnDeepLinking")().asInstanceOf[Unit]
+    
     inline def sendPushNotificationData(pushPayload: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPushNotificationData")(pushPayload.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def sendPushNotificationData(pushPayload: js.Object, errorC: ErrorCB): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPushNotificationData")(pushPayload.asInstanceOf[js.Any], errorC.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -121,6 +123,8 @@ object mod {
     inline def setUseReceiptValidationSandbox(isSandbox: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUseReceiptValidationSandbox")(isSandbox.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def setUserEmails(options: SetEmailsOptions, successC: SuccessCB, errorC: ErrorCB): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserEmails")(options.asInstanceOf[js.Any], successC.asInstanceOf[js.Any], errorC.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def startSdk(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startSdk")().asInstanceOf[Unit]
     
     inline def stop(isStopped: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(isStopped.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def stop(isStopped: Boolean, successC: SuccessCB): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(isStopped.asInstanceOf[js.Any], successC.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -286,6 +290,9 @@ object mod {
     // iOS only
     var isDebug: js.UndefOr[Boolean] = js.undefined
     
+    // iOS only
+    var manualStart: js.UndefOr[Boolean] = js.undefined
+    
     var onDeepLinkListener: js.UndefOr[Boolean] = js.undefined
     
     var onInstallConversionDataListener: js.UndefOr[Boolean] = js.undefined
@@ -310,6 +317,10 @@ object mod {
       inline def setIsDebug(value: Boolean): Self = StObject.set(x, "isDebug", value.asInstanceOf[js.Any])
       
       inline def setIsDebugUndefined: Self = StObject.set(x, "isDebug", js.undefined)
+      
+      inline def setManualStart(value: Boolean): Self = StObject.set(x, "manualStart", value.asInstanceOf[js.Any])
+      
+      inline def setManualStartUndefined: Self = StObject.set(x, "manualStart", js.undefined)
       
       inline def setOnDeepLinkListener(value: Boolean): Self = StObject.set(x, "onDeepLinkListener", value.asInstanceOf[js.Any])
       

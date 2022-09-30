@@ -1,6 +1,10 @@
 package typings.wdioUtils
 
+import typings.wdioTypes.capabilitiesMod.DesiredCapabilities
+import typings.wdioTypes.optionsMod.Testrunner
+import typings.wdioTypes.servicesMod.ServiceInstance
 import typings.wdioUtils.anon.IgnoredWorkerServices
+import typings.wdioUtils.anon.OmitTestrunnercapabilitie
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,26 +15,8 @@ object initialiseServicesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def initialiseLauncherService(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Config */ js.Any,
-    caps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
-  ): IgnoredWorkerServices = (^.asInstanceOf[js.Dynamic].applyDynamic("initialiseLauncherService")(config.asInstanceOf[js.Any], caps.asInstanceOf[js.Any])).asInstanceOf[IgnoredWorkerServices]
+  inline def initialiseLauncherService(config: OmitTestrunnercapabilitie, caps: DesiredCapabilities): IgnoredWorkerServices = (^.asInstanceOf[js.Dynamic].applyDynamic("initialiseLauncherService")(config.asInstanceOf[js.Any], caps.asInstanceOf[js.Any])).asInstanceOf[IgnoredWorkerServices]
   
-  inline def initialiseWorkerService(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Config */ js.Any,
-    caps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
-  ): js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ServiceInstance */ js.Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialiseWorkerService")(config.asInstanceOf[js.Any], caps.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ServiceInstance */ js.Any
-  ]]
-  inline def initialiseWorkerService(
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Config */ js.Any,
-    caps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any,
-    ignoredWorkerServices: js.Array[String]
-  ): js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ServiceInstance */ js.Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialiseWorkerService")(config.asInstanceOf[js.Any], caps.asInstanceOf[js.Any], ignoredWorkerServices.asInstanceOf[js.Any])).asInstanceOf[js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.ServiceInstance */ js.Any
-  ]]
+  inline def initialiseWorkerService(config: Testrunner, caps: DesiredCapabilities): js.Array[ServiceInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialiseWorkerService")(config.asInstanceOf[js.Any], caps.asInstanceOf[js.Any])).asInstanceOf[js.Array[ServiceInstance]]
+  inline def initialiseWorkerService(config: Testrunner, caps: DesiredCapabilities, ignoredWorkerServices: js.Array[String]): js.Array[ServiceInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialiseWorkerService")(config.asInstanceOf[js.Any], caps.asInstanceOf[js.Any], ignoredWorkerServices.asInstanceOf[js.Any])).asInstanceOf[js.Array[ServiceInstance]]
 }

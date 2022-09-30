@@ -22,13 +22,13 @@ object ddpMod {
     trait DDPStatic extends StObject {
       
       @JSName("apply")
-      def apply(method: String, parameters: js.Any*): js.Any
+      def apply(method: String, parameters: Any*): Any
       
-      def call(method: String, parameters: js.Any*): js.Any
+      def call(method: String, parameters: Any*): Any
       
       def disconnect(): Unit
       
-      def methods(IMeteorMethodsDictionary: js.Any): js.Any
+      def methods(IMeteorMethodsDictionary: Any): Any
       
       def onReconnect(): Unit
       
@@ -36,19 +36,19 @@ object ddpMod {
       
       def status(): DDPStatus
       
-      def subscribe(name: String, rest: js.Any*): SubscriptionHandle
+      def subscribe(name: String, rest: Any*): SubscriptionHandle
     }
     object DDPStatic {
       
       inline def apply(
-        apply: (String, /* repeated */ js.Any) => js.Any,
-        call: (String, /* repeated */ js.Any) => js.Any,
+        apply: (String, /* repeated */ Any) => Any,
+        call: (String, /* repeated */ Any) => Any,
         disconnect: () => Unit,
-        methods: js.Any => js.Any,
+        methods: Any => Any,
         onReconnect: () => Unit,
         reconnect: () => Unit,
         status: () => DDPStatus,
-        subscribe: (String, /* repeated */ js.Any) => SubscriptionHandle
+        subscribe: (String, /* repeated */ Any) => SubscriptionHandle
       ): DDPStatic = {
         val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply), call = js.Any.fromFunction2(call), disconnect = js.Any.fromFunction0(disconnect), methods = js.Any.fromFunction1(methods), onReconnect = js.Any.fromFunction0(onReconnect), reconnect = js.Any.fromFunction0(reconnect), status = js.Any.fromFunction0(status), subscribe = js.Any.fromFunction2(subscribe))
         __obj.asInstanceOf[DDPStatic]
@@ -56,13 +56,13 @@ object ddpMod {
       
       extension [Self <: DDPStatic](x: Self) {
         
-        inline def setApply(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+        inline def setApply(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
         
-        inline def setCall(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
+        inline def setCall(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
         
         inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
         
-        inline def setMethods(value: js.Any => js.Any): Self = StObject.set(x, "methods", js.Any.fromFunction1(value))
+        inline def setMethods(value: Any => Any): Self = StObject.set(x, "methods", js.Any.fromFunction1(value))
         
         inline def setOnReconnect(value: () => Unit): Self = StObject.set(x, "onReconnect", js.Any.fromFunction0(value))
         
@@ -70,7 +70,7 @@ object ddpMod {
         
         inline def setStatus(value: () => DDPStatus): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
         
-        inline def setSubscribe(value: (String, /* repeated */ js.Any) => SubscriptionHandle): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+        inline def setSubscribe(value: (String, /* repeated */ Any) => SubscriptionHandle): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
       }
     }
     
@@ -135,19 +135,38 @@ object ddpMod {
   
   object DDPCommon {
     
+    /** The state for a single invocation of a method, referenced by this inside a method definition. */
     @js.native
     trait MethodInvocation
       extends StObject
          with Instantiable1[/* options */ MethodInvocationOptions, MethodInvocation] {
       
+      /**
+        * Access inside a method invocation. The [connection](#meteor_onconnection) that this method was received on. `null` if the method is not associated with a connection, eg. a server
+        * initiated method call. Calls to methods made from a server method which was in turn initiated from the client share the same `connection`.
+        */
       var connection: Connection = js.native
       
+      /**
+        * Access inside a method invocation.  Boolean value, true if this invocation is a stub.
+        */
       var isSimulation: Boolean = js.native
       
+      /**
+        * Set the logged in user.
+        * @param userId The value that should be returned by `userId` on this connection.
+        */
+      def setUserId(): Unit = js.native
       def setUserId(userId: String): Unit = js.native
       
+      /**
+        * Call inside a method invocation.  Allow subsequent method from this client to begin running in a new fiber.
+        */
       def unblock(): Unit = js.native
       
+      /**
+        * The id of the user that made this method call, or `null` if no user was logged in.
+        */
       var userId: String | Null = js.native
     }
     

@@ -10,33 +10,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deltaSenderMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaSender", "DeltaSender")
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/DeltaSender", "DeltaSender")
   @js.native
-  class DeltaSender protected () extends StObject {
+  open class DeltaSender protected () extends StObject {
     def this(model: AbstractModel, flushCallback: IVoidCallback, errorCallback: IErrorCallback) = this()
     
     def closeConnection(): Unit = js.native
     
-    /* private */ var errorCallback: js.Any = js.native
+    /* private */ var errorCallback: Any = js.native
     
     def flush(): Unit = js.native
     
-    /* private */ var flushCallback: js.Any = js.native
+    /* private */ var flushCallback: Any = js.native
     
-    /* private */ var hasError: js.Any = js.native
+    /* private */ var hasError: Any = js.native
     
     var isClosing: Boolean = js.native
     
-    /* private */ var model: js.Any = js.native
+    /* private */ var model: Any = js.native
     
     var pending: Boolean = js.native
     
-    /* private */ var processQueue: js.Any = js.native
+    /* private */ var processQueue: Any = js.native
     
-    /* private */ var queue: js.Any = js.native
+    /* private */ var queue: Any = js.native
     
     def scheduleDeltas(deltas: js.Array[Delta]): Unit = js.native
     
-    /* private */ var sendDeltas: js.Any = js.native
+    /* private */ var sendDeltas: Any = js.native
   }
 }

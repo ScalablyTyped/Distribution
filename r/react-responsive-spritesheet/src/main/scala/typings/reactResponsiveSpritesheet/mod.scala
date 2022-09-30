@@ -5,7 +5,7 @@ import typings.csstype.mod.Property.BackgroundPosition
 import typings.csstype.mod.Property.BackgroundRepeat
 import typings.csstype.mod.Property.BackgroundSize
 import typings.react.mod.Component
-import typings.reactResponsiveSpritesheet.reactResponsiveSpritesheetNumbers.`0`
+import typings.reactResponsiveSpritesheet.reactResponsiveSpritesheetInts.`0`
 import typings.reactResponsiveSpritesheet.reactResponsiveSpritesheetStrings.direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

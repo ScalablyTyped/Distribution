@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AxiosInstance extends Axios {
   
-  def apply(config: AxiosRequestConfig[Any]): AxiosPromise[Any] = js.native
-  def apply(url: String): AxiosPromise[Any] = js.native
-  def apply(url: String, config: AxiosRequestConfig[Any]): AxiosPromise[Any] = js.native
+  def apply(config: AxiosRequestConfig[Any]): js.Promise[AxiosResponse[Any, Any]] = js.native
+  def apply(url: String): js.Promise[AxiosResponse[Any, Any]] = js.native
+  def apply(url: String, config: AxiosRequestConfig[Any]): js.Promise[AxiosResponse[Any, Any]] = js.native
 }

@@ -1,8 +1,8 @@
 package typings.antDesignProUtils
 
-import typings.antDesignProUtils.antDesignProUtilsNumbers.`-1`
-import typings.antDesignProUtils.antDesignProUtilsNumbers.`0`
-import typings.antDesignProUtils.antDesignProUtilsNumbers.`1`
+import typings.antDesignProUtils.antDesignProUtilsInts.`-1`
+import typings.antDesignProUtils.antDesignProUtilsInts.`0`
+import typings.antDesignProUtils.antDesignProUtilsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.OnClickEnlarge")
 @js.native
-class OnClickEnlarge protected ()
+open class OnClickEnlarge protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.OnClickEnlarge {
   def this(
     model: AbstractModel,

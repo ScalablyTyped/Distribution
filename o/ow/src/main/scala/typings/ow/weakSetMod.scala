@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object weakSetMod {
   
-  @JSImport("ow/dist/source/predicates/weak-set", "WeakSetPredicate")
+  @JSImport("ow/dist/predicates/weak-set", "WeakSetPredicate")
   @js.native
   /**
     @hidden
     */
-  class WeakSetPredicate[T /* <: js.Object */] () extends Predicate[WeakSet[T]] {
+  open class WeakSetPredicate[T /* <: js.Object */] () extends Predicate[WeakSet[T]] {
     def this(options: PredicateOptions) = this()
     
     /**

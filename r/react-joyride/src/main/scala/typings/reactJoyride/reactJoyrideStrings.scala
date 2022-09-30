@@ -1,7 +1,6 @@
 package typings.reactJoyride
 
 import typings.reactJoyride.mod.Placement
-import typings.reactJoyride.mod.PlacementBeacon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactJoyrideStrings {
   
   @js.native
-  sealed trait auto
-    extends StObject
-       with Placement
+  sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -22,7 +19,6 @@ object reactJoyrideStrings {
   sealed trait bottom
     extends StObject
        with Placement
-       with PlacementBeacon
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
@@ -38,9 +34,7 @@ object reactJoyrideStrings {
   inline def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
   
   @js.native
-  sealed trait center
-    extends StObject
-       with Placement
+  sealed trait center extends StObject
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
@@ -83,7 +77,6 @@ object reactJoyrideStrings {
   sealed trait left
     extends StObject
        with Placement
-       with PlacementBeacon
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
@@ -126,7 +119,6 @@ object reactJoyrideStrings {
   sealed trait right
     extends StObject
        with Placement
-       with PlacementBeacon
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
@@ -177,7 +169,6 @@ object reactJoyrideStrings {
   sealed trait top
     extends StObject
        with Placement
-       with PlacementBeacon
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native

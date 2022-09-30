@@ -50,6 +50,6 @@ object webusbDeviceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createInstance(device: Device): js.Promise[js.UndefOr[WebUSBDevice]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[WebUSBDevice]]]
+    inline def createInstance(device: Device): js.Promise[WebUSBDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebUSBDevice]]
   }
 }

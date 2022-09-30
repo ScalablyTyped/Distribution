@@ -1,6 +1,6 @@
 package typings.reduxAuthWrapper
 
-import typings.react.mod.ReactType
+import typings.react.mod.ElementType
 import typings.reduxAuthWrapper.mod.AuthConfig
 import typings.reduxAuthWrapper.mod.AuthWrapperDecorator
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ object authWrapperMod {
     extends StObject
        with AuthConfig {
     
-    var FailureComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var FailureComponent: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object AuthWrapperConfig {
     
@@ -30,7 +30,7 @@ object authWrapperMod {
     
     extension [Self <: AuthWrapperConfig](x: Self) {
       
-      inline def setFailureComponent(value: ReactType[js.Any]): Self = StObject.set(x, "FailureComponent", value.asInstanceOf[js.Any])
+      inline def setFailureComponent(value: ElementType[Any]): Self = StObject.set(x, "FailureComponent", value.asInstanceOf[js.Any])
       
       inline def setFailureComponentUndefined: Self = StObject.set(x, "FailureComponent", js.undefined)
     }

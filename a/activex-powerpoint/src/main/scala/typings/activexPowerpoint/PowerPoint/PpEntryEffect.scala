@@ -1,348 +1,348 @@
 package typings.activexPowerpoint.PowerPoint
 
-import typings.activexPowerpoint.activexPowerpointNumbers.`-2`
-import typings.activexPowerpoint.activexPowerpointNumbers.`0`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1025`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1026`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1281`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1282`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1283`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1284`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1285`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1286`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1287`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1288`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1537`
-import typings.activexPowerpoint.activexPowerpointNumbers.`1793`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2049`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2050`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2051`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2052`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2053`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2054`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2055`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2056`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2305`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2306`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2561`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2562`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2563`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2564`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2565`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2566`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2567`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2568`
-import typings.activexPowerpoint.activexPowerpointNumbers.`257`
-import typings.activexPowerpoint.activexPowerpointNumbers.`258`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2817`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2818`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2819`
-import typings.activexPowerpoint.activexPowerpointNumbers.`2820`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3073`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3074`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3329`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3330`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3331`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3332`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3333`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3334`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3335`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3336`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3337`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3338`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3339`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3340`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3341`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3342`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3343`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3344`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3345`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3346`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3347`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3348`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3349`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3350`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3351`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3352`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3353`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3354`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3355`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3356`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3357`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3585`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3586`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3587`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3588`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3841`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3842`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3843`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3844`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3845`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3846`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3847`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3848`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3849`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3850`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3851`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3852`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3853`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3854`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3855`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3856`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3857`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3858`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3859`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3860`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3861`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3862`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3863`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3864`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3865`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3866`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3867`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3868`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3869`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3870`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3871`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3872`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3873`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3874`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3875`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3876`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3877`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3878`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3879`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3880`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3881`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3882`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3883`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3884`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3885`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3886`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3887`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3888`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3889`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3890`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3891`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3892`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3893`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3894`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3895`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3896`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3897`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3898`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3899`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3900`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3901`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3902`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3903`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3904`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3905`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3906`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3907`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3908`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3909`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3910`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3911`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3912`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3913`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3914`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3915`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3916`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3917`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3918`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3919`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3920`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3921`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3922`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3923`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3924`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3925`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3926`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3927`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3928`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3929`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3930`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3931`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3932`
-import typings.activexPowerpoint.activexPowerpointNumbers.`3933`
-import typings.activexPowerpoint.activexPowerpointNumbers.`513`
-import typings.activexPowerpoint.activexPowerpointNumbers.`769`
-import typings.activexPowerpoint.activexPowerpointNumbers.`770`
+import typings.activexPowerpoint.activexPowerpointInts.`-2`
+import typings.activexPowerpoint.activexPowerpointInts.`0`
+import typings.activexPowerpoint.activexPowerpointInts.`1025`
+import typings.activexPowerpoint.activexPowerpointInts.`1026`
+import typings.activexPowerpoint.activexPowerpointInts.`1281`
+import typings.activexPowerpoint.activexPowerpointInts.`1282`
+import typings.activexPowerpoint.activexPowerpointInts.`1283`
+import typings.activexPowerpoint.activexPowerpointInts.`1284`
+import typings.activexPowerpoint.activexPowerpointInts.`1285`
+import typings.activexPowerpoint.activexPowerpointInts.`1286`
+import typings.activexPowerpoint.activexPowerpointInts.`1287`
+import typings.activexPowerpoint.activexPowerpointInts.`1288`
+import typings.activexPowerpoint.activexPowerpointInts.`1537`
+import typings.activexPowerpoint.activexPowerpointInts.`1793`
+import typings.activexPowerpoint.activexPowerpointInts.`2049`
+import typings.activexPowerpoint.activexPowerpointInts.`2050`
+import typings.activexPowerpoint.activexPowerpointInts.`2051`
+import typings.activexPowerpoint.activexPowerpointInts.`2052`
+import typings.activexPowerpoint.activexPowerpointInts.`2053`
+import typings.activexPowerpoint.activexPowerpointInts.`2054`
+import typings.activexPowerpoint.activexPowerpointInts.`2055`
+import typings.activexPowerpoint.activexPowerpointInts.`2056`
+import typings.activexPowerpoint.activexPowerpointInts.`2305`
+import typings.activexPowerpoint.activexPowerpointInts.`2306`
+import typings.activexPowerpoint.activexPowerpointInts.`2561`
+import typings.activexPowerpoint.activexPowerpointInts.`2562`
+import typings.activexPowerpoint.activexPowerpointInts.`2563`
+import typings.activexPowerpoint.activexPowerpointInts.`2564`
+import typings.activexPowerpoint.activexPowerpointInts.`2565`
+import typings.activexPowerpoint.activexPowerpointInts.`2566`
+import typings.activexPowerpoint.activexPowerpointInts.`2567`
+import typings.activexPowerpoint.activexPowerpointInts.`2568`
+import typings.activexPowerpoint.activexPowerpointInts.`257`
+import typings.activexPowerpoint.activexPowerpointInts.`258`
+import typings.activexPowerpoint.activexPowerpointInts.`2817`
+import typings.activexPowerpoint.activexPowerpointInts.`2818`
+import typings.activexPowerpoint.activexPowerpointInts.`2819`
+import typings.activexPowerpoint.activexPowerpointInts.`2820`
+import typings.activexPowerpoint.activexPowerpointInts.`3073`
+import typings.activexPowerpoint.activexPowerpointInts.`3074`
+import typings.activexPowerpoint.activexPowerpointInts.`3329`
+import typings.activexPowerpoint.activexPowerpointInts.`3330`
+import typings.activexPowerpoint.activexPowerpointInts.`3331`
+import typings.activexPowerpoint.activexPowerpointInts.`3332`
+import typings.activexPowerpoint.activexPowerpointInts.`3333`
+import typings.activexPowerpoint.activexPowerpointInts.`3334`
+import typings.activexPowerpoint.activexPowerpointInts.`3335`
+import typings.activexPowerpoint.activexPowerpointInts.`3336`
+import typings.activexPowerpoint.activexPowerpointInts.`3337`
+import typings.activexPowerpoint.activexPowerpointInts.`3338`
+import typings.activexPowerpoint.activexPowerpointInts.`3339`
+import typings.activexPowerpoint.activexPowerpointInts.`3340`
+import typings.activexPowerpoint.activexPowerpointInts.`3341`
+import typings.activexPowerpoint.activexPowerpointInts.`3342`
+import typings.activexPowerpoint.activexPowerpointInts.`3343`
+import typings.activexPowerpoint.activexPowerpointInts.`3344`
+import typings.activexPowerpoint.activexPowerpointInts.`3345`
+import typings.activexPowerpoint.activexPowerpointInts.`3346`
+import typings.activexPowerpoint.activexPowerpointInts.`3347`
+import typings.activexPowerpoint.activexPowerpointInts.`3348`
+import typings.activexPowerpoint.activexPowerpointInts.`3349`
+import typings.activexPowerpoint.activexPowerpointInts.`3350`
+import typings.activexPowerpoint.activexPowerpointInts.`3351`
+import typings.activexPowerpoint.activexPowerpointInts.`3352`
+import typings.activexPowerpoint.activexPowerpointInts.`3353`
+import typings.activexPowerpoint.activexPowerpointInts.`3354`
+import typings.activexPowerpoint.activexPowerpointInts.`3355`
+import typings.activexPowerpoint.activexPowerpointInts.`3356`
+import typings.activexPowerpoint.activexPowerpointInts.`3357`
+import typings.activexPowerpoint.activexPowerpointInts.`3585`
+import typings.activexPowerpoint.activexPowerpointInts.`3586`
+import typings.activexPowerpoint.activexPowerpointInts.`3587`
+import typings.activexPowerpoint.activexPowerpointInts.`3588`
+import typings.activexPowerpoint.activexPowerpointInts.`3841`
+import typings.activexPowerpoint.activexPowerpointInts.`3842`
+import typings.activexPowerpoint.activexPowerpointInts.`3843`
+import typings.activexPowerpoint.activexPowerpointInts.`3844`
+import typings.activexPowerpoint.activexPowerpointInts.`3845`
+import typings.activexPowerpoint.activexPowerpointInts.`3846`
+import typings.activexPowerpoint.activexPowerpointInts.`3847`
+import typings.activexPowerpoint.activexPowerpointInts.`3848`
+import typings.activexPowerpoint.activexPowerpointInts.`3849`
+import typings.activexPowerpoint.activexPowerpointInts.`3850`
+import typings.activexPowerpoint.activexPowerpointInts.`3851`
+import typings.activexPowerpoint.activexPowerpointInts.`3852`
+import typings.activexPowerpoint.activexPowerpointInts.`3853`
+import typings.activexPowerpoint.activexPowerpointInts.`3854`
+import typings.activexPowerpoint.activexPowerpointInts.`3855`
+import typings.activexPowerpoint.activexPowerpointInts.`3856`
+import typings.activexPowerpoint.activexPowerpointInts.`3857`
+import typings.activexPowerpoint.activexPowerpointInts.`3858`
+import typings.activexPowerpoint.activexPowerpointInts.`3859`
+import typings.activexPowerpoint.activexPowerpointInts.`3860`
+import typings.activexPowerpoint.activexPowerpointInts.`3861`
+import typings.activexPowerpoint.activexPowerpointInts.`3862`
+import typings.activexPowerpoint.activexPowerpointInts.`3863`
+import typings.activexPowerpoint.activexPowerpointInts.`3864`
+import typings.activexPowerpoint.activexPowerpointInts.`3865`
+import typings.activexPowerpoint.activexPowerpointInts.`3866`
+import typings.activexPowerpoint.activexPowerpointInts.`3867`
+import typings.activexPowerpoint.activexPowerpointInts.`3868`
+import typings.activexPowerpoint.activexPowerpointInts.`3869`
+import typings.activexPowerpoint.activexPowerpointInts.`3870`
+import typings.activexPowerpoint.activexPowerpointInts.`3871`
+import typings.activexPowerpoint.activexPowerpointInts.`3872`
+import typings.activexPowerpoint.activexPowerpointInts.`3873`
+import typings.activexPowerpoint.activexPowerpointInts.`3874`
+import typings.activexPowerpoint.activexPowerpointInts.`3875`
+import typings.activexPowerpoint.activexPowerpointInts.`3876`
+import typings.activexPowerpoint.activexPowerpointInts.`3877`
+import typings.activexPowerpoint.activexPowerpointInts.`3878`
+import typings.activexPowerpoint.activexPowerpointInts.`3879`
+import typings.activexPowerpoint.activexPowerpointInts.`3880`
+import typings.activexPowerpoint.activexPowerpointInts.`3881`
+import typings.activexPowerpoint.activexPowerpointInts.`3882`
+import typings.activexPowerpoint.activexPowerpointInts.`3883`
+import typings.activexPowerpoint.activexPowerpointInts.`3884`
+import typings.activexPowerpoint.activexPowerpointInts.`3885`
+import typings.activexPowerpoint.activexPowerpointInts.`3886`
+import typings.activexPowerpoint.activexPowerpointInts.`3887`
+import typings.activexPowerpoint.activexPowerpointInts.`3888`
+import typings.activexPowerpoint.activexPowerpointInts.`3889`
+import typings.activexPowerpoint.activexPowerpointInts.`3890`
+import typings.activexPowerpoint.activexPowerpointInts.`3891`
+import typings.activexPowerpoint.activexPowerpointInts.`3892`
+import typings.activexPowerpoint.activexPowerpointInts.`3893`
+import typings.activexPowerpoint.activexPowerpointInts.`3894`
+import typings.activexPowerpoint.activexPowerpointInts.`3895`
+import typings.activexPowerpoint.activexPowerpointInts.`3896`
+import typings.activexPowerpoint.activexPowerpointInts.`3897`
+import typings.activexPowerpoint.activexPowerpointInts.`3898`
+import typings.activexPowerpoint.activexPowerpointInts.`3899`
+import typings.activexPowerpoint.activexPowerpointInts.`3900`
+import typings.activexPowerpoint.activexPowerpointInts.`3901`
+import typings.activexPowerpoint.activexPowerpointInts.`3902`
+import typings.activexPowerpoint.activexPowerpointInts.`3903`
+import typings.activexPowerpoint.activexPowerpointInts.`3904`
+import typings.activexPowerpoint.activexPowerpointInts.`3905`
+import typings.activexPowerpoint.activexPowerpointInts.`3906`
+import typings.activexPowerpoint.activexPowerpointInts.`3907`
+import typings.activexPowerpoint.activexPowerpointInts.`3908`
+import typings.activexPowerpoint.activexPowerpointInts.`3909`
+import typings.activexPowerpoint.activexPowerpointInts.`3910`
+import typings.activexPowerpoint.activexPowerpointInts.`3911`
+import typings.activexPowerpoint.activexPowerpointInts.`3912`
+import typings.activexPowerpoint.activexPowerpointInts.`3913`
+import typings.activexPowerpoint.activexPowerpointInts.`3914`
+import typings.activexPowerpoint.activexPowerpointInts.`3915`
+import typings.activexPowerpoint.activexPowerpointInts.`3916`
+import typings.activexPowerpoint.activexPowerpointInts.`3917`
+import typings.activexPowerpoint.activexPowerpointInts.`3918`
+import typings.activexPowerpoint.activexPowerpointInts.`3919`
+import typings.activexPowerpoint.activexPowerpointInts.`3920`
+import typings.activexPowerpoint.activexPowerpointInts.`3921`
+import typings.activexPowerpoint.activexPowerpointInts.`3922`
+import typings.activexPowerpoint.activexPowerpointInts.`3923`
+import typings.activexPowerpoint.activexPowerpointInts.`3924`
+import typings.activexPowerpoint.activexPowerpointInts.`3925`
+import typings.activexPowerpoint.activexPowerpointInts.`3926`
+import typings.activexPowerpoint.activexPowerpointInts.`3927`
+import typings.activexPowerpoint.activexPowerpointInts.`3928`
+import typings.activexPowerpoint.activexPowerpointInts.`3929`
+import typings.activexPowerpoint.activexPowerpointInts.`3930`
+import typings.activexPowerpoint.activexPowerpointInts.`3931`
+import typings.activexPowerpoint.activexPowerpointInts.`3932`
+import typings.activexPowerpoint.activexPowerpointInts.`3933`
+import typings.activexPowerpoint.activexPowerpointInts.`513`
+import typings.activexPowerpoint.activexPowerpointInts.`769`
+import typings.activexPowerpoint.activexPowerpointInts.`770`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3844`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`769`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`770`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3925`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3074`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3922`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3073`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3924`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3923`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1025`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1026`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3845`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3847`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3848`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3882`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3883`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1284`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1281`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1287`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1285`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1283`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1288`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1286`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1282`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3344`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3341`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3343`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3342`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3917`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3914`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3916`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3915`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`257`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`258`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3846`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1537`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3885`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3884`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`1793`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3849`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3899`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3900`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3909`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3841`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3842`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3843`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3908`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3905`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3907`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3906`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3332`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3335`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3336`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3329`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3331`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3330`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3333`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3334`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3890`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3892`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3891`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3893`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3880`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3881`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3875`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3872`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3874`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3873`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3879`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3876`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3878`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3877`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3898`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`-2`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3850`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3929`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3926`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3928`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3927`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3933`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3930`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3932`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3931`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3338`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3337`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3339`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3340`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3851`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3852`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3853`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3854`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3855`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`513`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2305`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2306`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3896`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3897`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3894`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3895`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3867`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3870`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3869`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3871`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3868`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3921`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3918`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3920`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3919`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3912`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3913`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3910`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3911`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3357`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3586`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3585`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3588`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3587`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3351`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3355`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3352`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3354`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3353`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2563`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2564`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2567`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2565`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2568`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2566`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2561`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2562`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3904`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3901`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3903`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3902`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3356`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2052`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2049`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2055`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2053`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2051`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2056`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2054`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2050`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3866`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3863`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3865`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3864`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3888`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3889`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3856`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3857`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3858`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3859`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3860`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3861`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3862`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3887`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3886`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2820`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2817`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2819`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`2818`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3350`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3349`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3345`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3346`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3347`
-  - typings.activexPowerpoint.activexPowerpointNumbers.`3348`
+  - typings.activexPowerpoint.activexPowerpointInts.`3844`
+  - typings.activexPowerpoint.activexPowerpointInts.`769`
+  - typings.activexPowerpoint.activexPowerpointInts.`770`
+  - typings.activexPowerpoint.activexPowerpointInts.`3925`
+  - typings.activexPowerpoint.activexPowerpointInts.`3074`
+  - typings.activexPowerpoint.activexPowerpointInts.`3922`
+  - typings.activexPowerpoint.activexPowerpointInts.`3073`
+  - typings.activexPowerpoint.activexPowerpointInts.`3924`
+  - typings.activexPowerpoint.activexPowerpointInts.`3923`
+  - typings.activexPowerpoint.activexPowerpointInts.`1025`
+  - typings.activexPowerpoint.activexPowerpointInts.`1026`
+  - typings.activexPowerpoint.activexPowerpointInts.`3845`
+  - typings.activexPowerpoint.activexPowerpointInts.`3847`
+  - typings.activexPowerpoint.activexPowerpointInts.`3848`
+  - typings.activexPowerpoint.activexPowerpointInts.`3882`
+  - typings.activexPowerpoint.activexPowerpointInts.`3883`
+  - typings.activexPowerpoint.activexPowerpointInts.`1284`
+  - typings.activexPowerpoint.activexPowerpointInts.`1281`
+  - typings.activexPowerpoint.activexPowerpointInts.`1287`
+  - typings.activexPowerpoint.activexPowerpointInts.`1285`
+  - typings.activexPowerpoint.activexPowerpointInts.`1283`
+  - typings.activexPowerpoint.activexPowerpointInts.`1288`
+  - typings.activexPowerpoint.activexPowerpointInts.`1286`
+  - typings.activexPowerpoint.activexPowerpointInts.`1282`
+  - typings.activexPowerpoint.activexPowerpointInts.`3344`
+  - typings.activexPowerpoint.activexPowerpointInts.`3341`
+  - typings.activexPowerpoint.activexPowerpointInts.`3343`
+  - typings.activexPowerpoint.activexPowerpointInts.`3342`
+  - typings.activexPowerpoint.activexPowerpointInts.`3917`
+  - typings.activexPowerpoint.activexPowerpointInts.`3914`
+  - typings.activexPowerpoint.activexPowerpointInts.`3916`
+  - typings.activexPowerpoint.activexPowerpointInts.`3915`
+  - typings.activexPowerpoint.activexPowerpointInts.`257`
+  - typings.activexPowerpoint.activexPowerpointInts.`258`
+  - typings.activexPowerpoint.activexPowerpointInts.`3846`
+  - typings.activexPowerpoint.activexPowerpointInts.`1537`
+  - typings.activexPowerpoint.activexPowerpointInts.`3885`
+  - typings.activexPowerpoint.activexPowerpointInts.`3884`
+  - typings.activexPowerpoint.activexPowerpointInts.`1793`
+  - typings.activexPowerpoint.activexPowerpointInts.`3849`
+  - typings.activexPowerpoint.activexPowerpointInts.`3899`
+  - typings.activexPowerpoint.activexPowerpointInts.`3900`
+  - typings.activexPowerpoint.activexPowerpointInts.`3909`
+  - typings.activexPowerpoint.activexPowerpointInts.`3841`
+  - typings.activexPowerpoint.activexPowerpointInts.`3842`
+  - typings.activexPowerpoint.activexPowerpointInts.`3843`
+  - typings.activexPowerpoint.activexPowerpointInts.`3908`
+  - typings.activexPowerpoint.activexPowerpointInts.`3905`
+  - typings.activexPowerpoint.activexPowerpointInts.`3907`
+  - typings.activexPowerpoint.activexPowerpointInts.`3906`
+  - typings.activexPowerpoint.activexPowerpointInts.`3332`
+  - typings.activexPowerpoint.activexPowerpointInts.`3335`
+  - typings.activexPowerpoint.activexPowerpointInts.`3336`
+  - typings.activexPowerpoint.activexPowerpointInts.`3329`
+  - typings.activexPowerpoint.activexPowerpointInts.`3331`
+  - typings.activexPowerpoint.activexPowerpointInts.`3330`
+  - typings.activexPowerpoint.activexPowerpointInts.`3333`
+  - typings.activexPowerpoint.activexPowerpointInts.`3334`
+  - typings.activexPowerpoint.activexPowerpointInts.`3890`
+  - typings.activexPowerpoint.activexPowerpointInts.`3892`
+  - typings.activexPowerpoint.activexPowerpointInts.`3891`
+  - typings.activexPowerpoint.activexPowerpointInts.`3893`
+  - typings.activexPowerpoint.activexPowerpointInts.`3880`
+  - typings.activexPowerpoint.activexPowerpointInts.`3881`
+  - typings.activexPowerpoint.activexPowerpointInts.`3875`
+  - typings.activexPowerpoint.activexPowerpointInts.`3872`
+  - typings.activexPowerpoint.activexPowerpointInts.`3874`
+  - typings.activexPowerpoint.activexPowerpointInts.`3873`
+  - typings.activexPowerpoint.activexPowerpointInts.`3879`
+  - typings.activexPowerpoint.activexPowerpointInts.`3876`
+  - typings.activexPowerpoint.activexPowerpointInts.`3878`
+  - typings.activexPowerpoint.activexPowerpointInts.`3877`
+  - typings.activexPowerpoint.activexPowerpointInts.`3898`
+  - typings.activexPowerpoint.activexPowerpointInts.`-2`
+  - typings.activexPowerpoint.activexPowerpointInts.`3850`
+  - typings.activexPowerpoint.activexPowerpointInts.`0`
+  - typings.activexPowerpoint.activexPowerpointInts.`3929`
+  - typings.activexPowerpoint.activexPowerpointInts.`3926`
+  - typings.activexPowerpoint.activexPowerpointInts.`3928`
+  - typings.activexPowerpoint.activexPowerpointInts.`3927`
+  - typings.activexPowerpoint.activexPowerpointInts.`3933`
+  - typings.activexPowerpoint.activexPowerpointInts.`3930`
+  - typings.activexPowerpoint.activexPowerpointInts.`3932`
+  - typings.activexPowerpoint.activexPowerpointInts.`3931`
+  - typings.activexPowerpoint.activexPowerpointInts.`3338`
+  - typings.activexPowerpoint.activexPowerpointInts.`3337`
+  - typings.activexPowerpoint.activexPowerpointInts.`3339`
+  - typings.activexPowerpoint.activexPowerpointInts.`3340`
+  - typings.activexPowerpoint.activexPowerpointInts.`3851`
+  - typings.activexPowerpoint.activexPowerpointInts.`3852`
+  - typings.activexPowerpoint.activexPowerpointInts.`3853`
+  - typings.activexPowerpoint.activexPowerpointInts.`3854`
+  - typings.activexPowerpoint.activexPowerpointInts.`3855`
+  - typings.activexPowerpoint.activexPowerpointInts.`513`
+  - typings.activexPowerpoint.activexPowerpointInts.`2305`
+  - typings.activexPowerpoint.activexPowerpointInts.`2306`
+  - typings.activexPowerpoint.activexPowerpointInts.`3896`
+  - typings.activexPowerpoint.activexPowerpointInts.`3897`
+  - typings.activexPowerpoint.activexPowerpointInts.`3894`
+  - typings.activexPowerpoint.activexPowerpointInts.`3895`
+  - typings.activexPowerpoint.activexPowerpointInts.`3867`
+  - typings.activexPowerpoint.activexPowerpointInts.`3870`
+  - typings.activexPowerpoint.activexPowerpointInts.`3869`
+  - typings.activexPowerpoint.activexPowerpointInts.`3871`
+  - typings.activexPowerpoint.activexPowerpointInts.`3868`
+  - typings.activexPowerpoint.activexPowerpointInts.`3921`
+  - typings.activexPowerpoint.activexPowerpointInts.`3918`
+  - typings.activexPowerpoint.activexPowerpointInts.`3920`
+  - typings.activexPowerpoint.activexPowerpointInts.`3919`
+  - typings.activexPowerpoint.activexPowerpointInts.`3912`
+  - typings.activexPowerpoint.activexPowerpointInts.`3913`
+  - typings.activexPowerpoint.activexPowerpointInts.`3910`
+  - typings.activexPowerpoint.activexPowerpointInts.`3911`
+  - typings.activexPowerpoint.activexPowerpointInts.`3357`
+  - typings.activexPowerpoint.activexPowerpointInts.`3586`
+  - typings.activexPowerpoint.activexPowerpointInts.`3585`
+  - typings.activexPowerpoint.activexPowerpointInts.`3588`
+  - typings.activexPowerpoint.activexPowerpointInts.`3587`
+  - typings.activexPowerpoint.activexPowerpointInts.`3351`
+  - typings.activexPowerpoint.activexPowerpointInts.`3355`
+  - typings.activexPowerpoint.activexPowerpointInts.`3352`
+  - typings.activexPowerpoint.activexPowerpointInts.`3354`
+  - typings.activexPowerpoint.activexPowerpointInts.`3353`
+  - typings.activexPowerpoint.activexPowerpointInts.`2563`
+  - typings.activexPowerpoint.activexPowerpointInts.`2564`
+  - typings.activexPowerpoint.activexPowerpointInts.`2567`
+  - typings.activexPowerpoint.activexPowerpointInts.`2565`
+  - typings.activexPowerpoint.activexPowerpointInts.`2568`
+  - typings.activexPowerpoint.activexPowerpointInts.`2566`
+  - typings.activexPowerpoint.activexPowerpointInts.`2561`
+  - typings.activexPowerpoint.activexPowerpointInts.`2562`
+  - typings.activexPowerpoint.activexPowerpointInts.`3904`
+  - typings.activexPowerpoint.activexPowerpointInts.`3901`
+  - typings.activexPowerpoint.activexPowerpointInts.`3903`
+  - typings.activexPowerpoint.activexPowerpointInts.`3902`
+  - typings.activexPowerpoint.activexPowerpointInts.`3356`
+  - typings.activexPowerpoint.activexPowerpointInts.`2052`
+  - typings.activexPowerpoint.activexPowerpointInts.`2049`
+  - typings.activexPowerpoint.activexPowerpointInts.`2055`
+  - typings.activexPowerpoint.activexPowerpointInts.`2053`
+  - typings.activexPowerpoint.activexPowerpointInts.`2051`
+  - typings.activexPowerpoint.activexPowerpointInts.`2056`
+  - typings.activexPowerpoint.activexPowerpointInts.`2054`
+  - typings.activexPowerpoint.activexPowerpointInts.`2050`
+  - typings.activexPowerpoint.activexPowerpointInts.`3866`
+  - typings.activexPowerpoint.activexPowerpointInts.`3863`
+  - typings.activexPowerpoint.activexPowerpointInts.`3865`
+  - typings.activexPowerpoint.activexPowerpointInts.`3864`
+  - typings.activexPowerpoint.activexPowerpointInts.`3888`
+  - typings.activexPowerpoint.activexPowerpointInts.`3889`
+  - typings.activexPowerpoint.activexPowerpointInts.`3856`
+  - typings.activexPowerpoint.activexPowerpointInts.`3857`
+  - typings.activexPowerpoint.activexPowerpointInts.`3858`
+  - typings.activexPowerpoint.activexPowerpointInts.`3859`
+  - typings.activexPowerpoint.activexPowerpointInts.`3860`
+  - typings.activexPowerpoint.activexPowerpointInts.`3861`
+  - typings.activexPowerpoint.activexPowerpointInts.`3862`
+  - typings.activexPowerpoint.activexPowerpointInts.`3887`
+  - typings.activexPowerpoint.activexPowerpointInts.`3886`
+  - typings.activexPowerpoint.activexPowerpointInts.`2820`
+  - typings.activexPowerpoint.activexPowerpointInts.`2817`
+  - typings.activexPowerpoint.activexPowerpointInts.`2819`
+  - typings.activexPowerpoint.activexPowerpointInts.`2818`
+  - typings.activexPowerpoint.activexPowerpointInts.`3350`
+  - typings.activexPowerpoint.activexPowerpointInts.`3349`
+  - typings.activexPowerpoint.activexPowerpointInts.`3345`
+  - typings.activexPowerpoint.activexPowerpointInts.`3346`
+  - typings.activexPowerpoint.activexPowerpointInts.`3347`
+  - typings.activexPowerpoint.activexPowerpointInts.`3348`
 */
 trait PpEntryEffect extends StObject
 object PpEntryEffect {

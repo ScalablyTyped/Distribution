@@ -19,7 +19,6 @@ import typings.redisSearch.commandsMod.SchemaFieldTypes.VECTOR
 import typings.redisSearch.commandsMod.VectorAlgorithms.FLAT
 import typings.redisSearch.commandsMod.VectorAlgorithms.HNSW
 import typings.redisSearch.commandsMod.^
-import typings.redisSearch.redisSearchStrings.`DollarLeftcurlybracketApostrophe@Apostrophe Verticalline ApostropheDollarDotApostropheRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket`
 import typings.redisSearch.searchMod.SearchOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -77,7 +76,7 @@ type ProfileRawReply[T] = js.Tuple2[
   /* IteratorsProfile */ js.Array[Any]
 ]]
 
-type PropertyName = `DollarLeftcurlybracketApostrophe@Apostrophe Verticalline ApostropheDollarDotApostropheRightcurlybracketDollarLeftcurlybracketstringRightcurlybracket`
+type PropertyName = /* template literal string: ${@|$.}${string} */ String
 
 type RediSearchSchema = StringDictionary[
 CreateSchemaTextField | CreateSchemaNumericField | CreateSchemaGeoField | CreateSchemaTagField | CreateSchemaFlatVectorField | CreateSchemaHNSWVectorField]

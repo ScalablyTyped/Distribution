@@ -58,7 +58,7 @@ object webXRAbstractMotionControllerMod {
       */
     handedness: MotionControllerHandedness,
       /**
-      * @hidden
+      * @internal
       */
     _doNotLoadControllerMesh: Boolean
     ) = this()
@@ -74,7 +74,7 @@ object webXRAbstractMotionControllerMod {
       */
     handedness: MotionControllerHandedness,
       /**
-      * @hidden
+      * @internal
       */
     _doNotLoadControllerMesh: Boolean,
       _controllerCache: js.Array[Filename]
@@ -91,7 +91,7 @@ object webXRAbstractMotionControllerMod {
       */
     handedness: MotionControllerHandedness,
       /**
-      * @hidden
+      * @internal
       */
     _doNotLoadControllerMesh: Unit,
       _controllerCache: js.Array[Filename]
@@ -100,7 +100,7 @@ object webXRAbstractMotionControllerMod {
     /* private */ var _controllerCache: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     var _doNotLoadControllerMesh: Boolean = js.native
     
@@ -132,8 +132,7 @@ object webXRAbstractMotionControllerMod {
       * Moves the axis on the controller mesh based on its current state
       * @param axisMap
       * @param axisValue the value of the axis which determines the meshes new position
-      * @param fixValueCoordinates
-      * @hidden
+      * @internal
       */
     /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double): Unit = js.native
     /* protected */ def _lerpTransform(axisMap: IMotionControllerMeshMap, axisValue: Double, fixValueCoordinates: Boolean): Unit = js.native

@@ -1038,6 +1038,8 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var supportsGpuParticles: Boolean = js.native
   
+  var supportsImageBitmap: Boolean = js.native
+  
   var supportsMorphTargetTexturesCore: Boolean = js.native
   
   var supportsMsaa: Boolean = js.native

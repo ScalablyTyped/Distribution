@@ -58,12 +58,12 @@ object vrCameraMetricsMod {
     var interpupillaryDistance: Double = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def leftHMatrix: Matrix = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def leftPreViewMatrix: Matrix = js.native
     
@@ -89,12 +89,12 @@ object vrCameraMetricsMod {
     var postProcessScaleFactor: Double = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def rightHMatrix: Matrix = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def rightPreViewMatrix: Matrix = js.native
     

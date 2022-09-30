@@ -1,22 +1,22 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`16`
-import typings.activexDao.activexDaoNumbers.`1`
-import typings.activexDao.activexDaoNumbers.`2`
-import typings.activexDao.activexDaoNumbers.`32768`
-import typings.activexDao.activexDaoNumbers.`32`
-import typings.activexDao.activexDaoNumbers.`8192`
+import typings.activexDao.activexDaoInts.`16`
+import typings.activexDao.activexDaoInts.`1`
+import typings.activexDao.activexDaoInts.`2`
+import typings.activexDao.activexDaoInts.`32768`
+import typings.activexDao.activexDaoInts.`32`
+import typings.activexDao.activexDaoInts.`8192`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`16`
-  - typings.activexDao.activexDaoNumbers.`1`
-  - typings.activexDao.activexDaoNumbers.`32768`
-  - typings.activexDao.activexDaoNumbers.`8192`
-  - typings.activexDao.activexDaoNumbers.`32`
-  - typings.activexDao.activexDaoNumbers.`2`
+  - typings.activexDao.activexDaoInts.`16`
+  - typings.activexDao.activexDaoInts.`1`
+  - typings.activexDao.activexDaoInts.`32768`
+  - typings.activexDao.activexDaoInts.`8192`
+  - typings.activexDao.activexDaoInts.`32`
+  - typings.activexDao.activexDaoInts.`2`
 */
 trait FieldAttributeEnum extends StObject
 object FieldAttributeEnum {

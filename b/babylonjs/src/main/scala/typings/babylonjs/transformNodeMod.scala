@@ -42,11 +42,11 @@ object transformNodeMod {
     /* private */ var _forward: Any = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     /* protected */ def _getEffectiveParent(): Nullable[Node] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _indexInSceneTransformNodesArray: Double = js.native
     
     /* private */ var _infiniteDistance: Any = js.native
@@ -55,7 +55,7 @@ object transformNodeMod {
     
     /* protected */ var _isWorldMatrixFrozen: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _localMatrix: Matrix = js.native
     
     /* private */ var _nonUniformScaling: Any = js.native
@@ -64,12 +64,12 @@ object transformNodeMod {
     
     /* private */ var _pivotMatrixInverse: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _poseMatrix: Nullable[Matrix] = js.native
     
     /* private */ var _position: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _postMultiplyPivotMatrix: Boolean = js.native
     
     /* private */ var _preserveParentRotationForBillboard: Any = js.native
@@ -89,8 +89,7 @@ object transformNodeMod {
     /* private */ var _up: Any = js.native
     
     /**
-      * @param value
-      * @hidden
+      * @internal
       */
     def _updateNonUniformScalingState(value: Boolean): Boolean = js.native
     

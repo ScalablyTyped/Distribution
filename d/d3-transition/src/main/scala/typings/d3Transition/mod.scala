@@ -245,7 +245,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
-    def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](filter: String): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
+    def filter_FilteredElement[FilteredElement /* <: BaseType */](filter: String): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
     /**
       * For each selected element, selects only the elements that match the specified filter, and returns a transition on the resulting selection.
       *
@@ -261,7 +261,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
-    def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](filter: ValueFn[GElement, Datum, Boolean]): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
+    def filter_FilteredElement[FilteredElement /* <: BaseType */](filter: ValueFn[GElement, Datum, Boolean]): Transition_[FilteredElement, Datum, PElement, PDatum] = js.native
     
     /**
       * Returns a new transition merging this transition with the specified other transition,

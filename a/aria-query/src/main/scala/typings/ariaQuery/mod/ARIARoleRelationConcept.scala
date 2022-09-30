@@ -1,7 +1,6 @@
 package typings.ariaQuery.mod
 
 import typings.ariaQuery.ariaQueryStrings.`descendant of table`
-import typings.ariaQuery.ariaQueryStrings.`direct descendant of details element with the open attribute defined`
 import typings.ariaQuery.ariaQueryStrings.`direct descendant of document`
 import typings.ariaQuery.ariaQueryStrings.`direct descendant of olComma ul or menu`
 import org.scalablytyped.runtime.StObject
@@ -16,7 +15,7 @@ trait ARIARoleRelationConcept extends StObject {
   // https://www.w3.org/TR/html-aria
   var constraints: js.UndefOr[
     js.Array[
-      (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (`direct descendant of details element with the open attribute defined`) | (`descendant of table`)
+      (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | String | (`descendant of table`)
     ]
   ] = js.undefined
   
@@ -39,14 +38,14 @@ object ARIARoleRelationConcept {
     
     inline def setConstraints(
       value: js.Array[
-          (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (`direct descendant of details element with the open attribute defined`) | (`descendant of table`)
+          (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | String | (`descendant of table`)
         ]
     ): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
     inline def setConstraintsVarargs(
-      value: ((`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (`direct descendant of details element with the open attribute defined`) | (`descendant of table`))*
+      value: ((`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | String | (`descendant of table`))*
     ): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

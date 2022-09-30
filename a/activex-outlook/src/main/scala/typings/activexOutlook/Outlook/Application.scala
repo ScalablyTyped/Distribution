@@ -1,15 +1,15 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`0`
-import typings.activexOutlook.activexOutlookNumbers.`11`
-import typings.activexOutlook.activexOutlookNumbers.`12`
-import typings.activexOutlook.activexOutlookNumbers.`1`
-import typings.activexOutlook.activexOutlookNumbers.`2`
-import typings.activexOutlook.activexOutlookNumbers.`3`
-import typings.activexOutlook.activexOutlookNumbers.`4`
-import typings.activexOutlook.activexOutlookNumbers.`5`
-import typings.activexOutlook.activexOutlookNumbers.`6`
-import typings.activexOutlook.activexOutlookNumbers.`7`
+import typings.activexOutlook.activexOutlookInts.`0`
+import typings.activexOutlook.activexOutlookInts.`11`
+import typings.activexOutlook.activexOutlookInts.`12`
+import typings.activexOutlook.activexOutlookInts.`1`
+import typings.activexOutlook.activexOutlookInts.`2`
+import typings.activexOutlook.activexOutlookInts.`3`
+import typings.activexOutlook.activexOutlookInts.`4`
+import typings.activexOutlook.activexOutlookInts.`5`
+import typings.activexOutlook.activexOutlookInts.`6`
+import typings.activexOutlook.activexOutlookInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

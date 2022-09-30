@@ -1,5 +1,6 @@
 package typings.googleCloudTextToSpeech.mod.google.protobuf
 
+import typings.googleCloudTextToSpeech.mod.google.api.IResourceDescriptor
 import typings.googleCloudTextToSpeech.mod.google.protobuf.FileOptions.OptimizeMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /** Properties of a FileOptions. */
 trait IFileOptions extends StObject {
+  
+  /** FileOptions .google.api.resourceDefinition */
+  @JSName(".google.api.resourceDefinition")
+  var DotgoogleDotapiDotresourceDefinition: js.UndefOr[js.Array[IResourceDescriptor] | Null] = js.undefined
   
   /** FileOptions ccEnableArenas */
   var ccEnableArenas: js.UndefOr[Boolean | Null] = js.undefined
@@ -105,6 +110,14 @@ object IFileOptions {
     inline def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
     
     inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    
+    inline def setDotgoogleDotapiDotresourceDefinition(value: js.Array[IResourceDescriptor]): Self = StObject.set(x, ".google.api.resourceDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setDotgoogleDotapiDotresourceDefinitionNull: Self = StObject.set(x, ".google.api.resourceDefinition", null)
+    
+    inline def setDotgoogleDotapiDotresourceDefinitionUndefined: Self = StObject.set(x, ".google.api.resourceDefinition", js.undefined)
+    
+    inline def setDotgoogleDotapiDotresourceDefinitionVarargs(value: IResourceDescriptor*): Self = StObject.set(x, ".google.api.resourceDefinition", js.Array(value*))
     
     inline def setGoPackage(value: String): Self = StObject.set(x, "goPackage", value.asInstanceOf[js.Any])
     
@@ -210,6 +223,6 @@ object IFileOptions {
     
     inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value*))
   }
 }

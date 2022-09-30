@@ -118,7 +118,7 @@ object recordMod {
   
   inline def every[A](predicate: Predicate[A]): Predicate[Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[Predicate[Record[String, A]]]
   
-  inline def every_AB_A_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[Record[String, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[Record[String, A], Record[String, B]]]
+  inline def every_AB_Refinement[A, B /* <: A */](refinement: Refinement[A, B]): Refinement[Record[String, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(refinement.asInstanceOf[js.Any]).asInstanceOf[Refinement[Record[String, A], Record[String, B]]]
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* fb */ Record[String, A], Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ Record[String, A], Record[String, A]]]
   
@@ -128,9 +128,9 @@ object recordMod {
   
   inline def filterWithIndex[K /* <: String */, A](predicateWithIndex: PredicateWithIndex[K, A]): js.Function1[/* fb */ Record[K, A], Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ Record[K, A], Record[String, A]]]
   
-  inline def filterWithIndex_K_StringAB_A[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[/* fa */ Record[K, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[K, A], Record[String, B]]]
+  inline def filterWithIndex_KAB[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[/* fa */ Record[K, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[K, A], Record[String, B]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Record[String, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Record[String, B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Record[String, A], Record[String, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Record[String, B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ Record[String, js.Function1[/* a */ A, Any]], Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Record[String, js.Function1[/* a */ A, Any]], Record[String, Any]]]
   
@@ -306,9 +306,9 @@ object recordMod {
   
   inline def partitionWithIndex[K /* <: String */, A](predicateWithIndex: PredicateWithIndex[K, A]): js.Function1[/* fb */ Record[K, A], Separated_[Record[String, A], Record[String, A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(predicateWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fb */ Record[K, A], Separated_[Record[String, A], Record[String, A]]]]
   
-  inline def partitionWithIndex_K_StringAB_A[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[/* fa */ Record[K, A], Separated_[Record[String, A], Record[String, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[K, A], Separated_[Record[String, A], Record[String, B]]]]
+  inline def partitionWithIndex_KAB[K /* <: String */, A, B /* <: A */](refinementWithIndex: RefinementWithIndex[K, A, B]): js.Function1[/* fa */ Record[K, A], Separated_[Record[String, A], Record[String, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionWithIndex")(refinementWithIndex.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[K, A], Separated_[Record[String, A], Record[String, B]]]]
   
-  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Record[String, A], Separated_[Record[String, A], Record[String, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Separated_[Record[String, A], Record[String, B]]]]
+  inline def partition_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Record[String, A], Separated_[Record[String, A], Record[String, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Record[String, A], Separated_[Record[String, A], Record[String, B]]]]
   
   inline def pop[K /* <: String */](k: K): js.Function1[
     /* r */ Record[String, Any], 

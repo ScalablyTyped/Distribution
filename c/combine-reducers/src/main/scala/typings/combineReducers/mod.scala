@@ -14,7 +14,7 @@ object mod {
   
   inline def default[S](reducers: ReducersMapObject[S, Any]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
   
-  inline def default_SA_ActionAny[S, A /* <: Action[Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
+  inline def default_SA[S, A /* <: Action[Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
   
   trait Action[T] extends StObject {
     

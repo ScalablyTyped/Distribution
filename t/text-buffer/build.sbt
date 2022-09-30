@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "text-buffer"
-version := "13.x-dt-20211202Z-de840c"
+version := "13.x-dt-20211202Z-b1dffe"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "event-kit" % "2.4-dt-20211202Z-b7fe44",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
-  "org.scalablytyped" %%% "pathwatcher" % "8.x-dt-20211202Z-6680c5",
-  "org.scalablytyped" %%% "std" % "4.8-958c79")
+  "org.scalablytyped" %%% "event-kit" % "2.4-dt-20211202Z-cebdd2",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "pathwatcher" % "8.x-dt-20211202Z-da4f6c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

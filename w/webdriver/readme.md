@@ -1,7 +1,7 @@
 
 # Scala.js typings for webdriver
 
-Typings are for version 6.9.1
+Typings are for version 7.25.0
 
 ## Library description:
 A Node.js bindings implementation for the W3C WebDriver and Mobile JSONWire Protocol
@@ -10,10 +10,10 @@ A Node.js bindings implementation for the W3C WebDriver and Mobile JSONWire Prot
 | ------------------ | :-------------: |
 | Full name          | webdriver |
 | Keywords           | webdriver |
-| # releases         | 125 |
-| # dependents       | 16 |
-| # downloads        | 30138327 |
-| # stars            | 0 |
+| # releases         | 105 |
+| # dependents       | 0.0 |
+| # downloads        | 4057722.0 |
+| # stars            | 7720.0 |
 
 ## Links
 - [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/webdriver)

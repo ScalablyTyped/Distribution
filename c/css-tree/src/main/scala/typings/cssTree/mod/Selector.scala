@@ -9,14 +9,14 @@ trait Selector
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode]
+  var children: typings.cssTree.mod.List[CssNode]
   
   @JSName("type")
   var type_Selector: typings.cssTree.cssTreeStrings.Selector
 }
 object Selector {
   
-  inline def apply(children: List[CssNode]): Selector = {
+  inline def apply(children: typings.cssTree.mod.List[CssNode]): Selector = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Selector")
     __obj.asInstanceOf[Selector]
@@ -24,7 +24,7 @@ object Selector {
   
   extension [Self <: Selector](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Selector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

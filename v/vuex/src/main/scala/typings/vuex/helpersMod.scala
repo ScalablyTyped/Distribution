@@ -167,18 +167,11 @@ object helpersMod {
   
   trait NamespacedMappers extends StObject {
     
-    def mapActions[Map /* <: Record[
-        String, 
-        js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
-      ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Map]
+    def mapActions[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     def mapActions[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
-    @JSName("mapActions")
-    def mapActions_Map_RecordStringString[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
       */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     @JSName("mapActions")
     var mapActions_Original: Mapper[ActionMethod] & MapperForAction
@@ -199,13 +192,6 @@ object helpersMod {
     {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
       */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     @JSName("mapMutations")
-    def mapMutations_Map_RecordStringThisFunction2CustomVueCommitAnyAny[Map /* <: Record[
-        String, 
-        js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
-      ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Map]
-    @JSName("mapMutations")
     var mapMutations_Original: Mapper[MutationMethod] & MapperForMutation
     
     def mapState[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -217,7 +203,7 @@ object helpersMod {
     @JSName("mapState")
     var mapState_Original: Mapper[Computed] & MapperForState
     @JSName("mapState")
-    def mapState_SMap_RecordStringThisFunction2CustomVueSAnyAny[S, Map /* <: Record[
+    def mapState_SMap[S, Map /* <: Record[
         String, 
         js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ Any, Any]
       ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 

@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.dataMod
 
-import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkNumbers.`0`
+import typings.awsGreengrassCoreSdk.awsGreengrassCoreSdkInts.`0`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

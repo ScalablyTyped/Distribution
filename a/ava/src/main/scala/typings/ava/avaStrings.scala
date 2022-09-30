@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object avaStrings {
   
   @js.native
-  sealed trait experimental extends StObject
-  inline def experimental: experimental = "experimental".asInstanceOf[experimental]
+  sealed trait `ava-4` extends StObject
+  inline def `ava-4`: `ava-4` = "ava-4".asInstanceOf[`ava-4`]
 }

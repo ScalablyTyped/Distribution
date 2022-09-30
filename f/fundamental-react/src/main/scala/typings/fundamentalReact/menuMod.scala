@@ -6,11 +6,11 @@ import typings.fundamentalReact.anon.FunctionComponentMenuItem
 import typings.fundamentalReact.anon.FunctionComponentMenuList
 import typings.fundamentalReact.anon.PartialMenuProps
 import typings.fundamentalReact.anon.WeakValidationMapMenuProp
-import typings.fundamentalReact.fundamentalReactNumbers.`2`
-import typings.fundamentalReact.fundamentalReactNumbers.`3`
-import typings.fundamentalReact.fundamentalReactNumbers.`4`
-import typings.fundamentalReact.fundamentalReactNumbers.`5`
-import typings.fundamentalReact.fundamentalReactNumbers.`6`
+import typings.fundamentalReact.fundamentalReactInts.`2`
+import typings.fundamentalReact.fundamentalReactInts.`3`
+import typings.fundamentalReact.fundamentalReactInts.`4`
+import typings.fundamentalReact.fundamentalReactInts.`5`
+import typings.fundamentalReact.fundamentalReactInts.`6`
 import typings.fundamentalReact.fundamentalReactStrings.Menu
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement

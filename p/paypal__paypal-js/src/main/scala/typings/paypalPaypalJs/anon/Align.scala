@@ -1,12 +1,12 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.paypalPaypalJsNumbers.`10`
-import typings.paypalPaypalJs.paypalPaypalJsNumbers.`11`
-import typings.paypalPaypalJs.paypalPaypalJsNumbers.`12`
-import typings.paypalPaypalJs.paypalPaypalJsNumbers.`13`
-import typings.paypalPaypalJs.paypalPaypalJsNumbers.`14`
-import typings.paypalPaypalJs.paypalPaypalJsNumbers.`15`
-import typings.paypalPaypalJs.paypalPaypalJsNumbers.`16`
+import typings.paypalPaypalJs.paypalPaypalJsInts.`10`
+import typings.paypalPaypalJs.paypalPaypalJsInts.`11`
+import typings.paypalPaypalJs.paypalPaypalJsInts.`12`
+import typings.paypalPaypalJs.paypalPaypalJsInts.`13`
+import typings.paypalPaypalJs.paypalPaypalJsInts.`14`
+import typings.paypalPaypalJs.paypalPaypalJsInts.`15`
+import typings.paypalPaypalJs.paypalPaypalJsInts.`16`
 import typings.paypalPaypalJs.paypalPaypalJsStrings.black
 import typings.paypalPaypalJs.paypalPaypalJsStrings.center
 import typings.paypalPaypalJs.paypalPaypalJsStrings.grayscale

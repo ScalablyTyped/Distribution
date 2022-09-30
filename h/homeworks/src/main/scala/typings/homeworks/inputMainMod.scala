@@ -11,8 +11,8 @@ object inputMainMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/input/main", "WorksInput")
   @js.native
-  class WorksInput protected ()
+  open class WorksInput protected ()
     extends typings.homeworks.componentInputMod.WorksInput {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any], changeDectecterRef: ChangeDetectorRef) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any], changeDectecterRef: ChangeDetectorRef) = this()
   }
 }

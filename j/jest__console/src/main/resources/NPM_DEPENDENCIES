@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/console" : "24.9.0"
+      "@jest/console" : "29.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/console" : "24.9.0"
+      "@jest/console" : "29.1.2"
     }
   ],
   "compile-devDependencies" : [

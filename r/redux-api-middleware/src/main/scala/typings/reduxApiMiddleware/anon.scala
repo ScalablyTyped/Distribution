@@ -4,6 +4,7 @@ import typings.reduxApiMiddleware.reduxApiMiddlewareBooleans.`false`
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,6 +40,8 @@ object anon {
     
     def apply(input: RequestInfo): js.Promise[Response] = js.native
     def apply(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
+    def apply(input: URL): js.Promise[Response] = js.native
+    def apply(input: URL, init: RequestInit): js.Promise[Response] = js.native
   }
   
   trait MetaMeta[Meta] extends StObject {

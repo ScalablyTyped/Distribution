@@ -1,7 +1,7 @@
 
 # Scala.js typings for line-column-path
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Parse and stringify file paths with line and column like `unicorn.js:8:14`
@@ -11,9 +11,9 @@ Parse and stringify file paths with line and column like `unicorn.js:8:14`
 | Full name          | line-column-path |
 | Keywords           | file, filepath, line, column, path, editor, position, parse, stringify, parsing, decode, encode, format |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 1208029 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 218144.66666666666 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/line-column-path#readme)

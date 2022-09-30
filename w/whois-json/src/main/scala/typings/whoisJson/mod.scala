@@ -411,15 +411,15 @@ object mod {
       * @example 5 (The SOCKS5 protocol, defined in RFC 1928)
       */
     /* Rewritten from type alias, can be one of: 
-      - typings.whoisJson.whoisJsonNumbers.`4`
-      - typings.whoisJson.whoisJsonNumbers.`5`
+      - typings.whoisJson.whoisJsonInts.`4`
+      - typings.whoisJson.whoisJsonInts.`5`
     */
     trait SocksProtocolVersion extends StObject
     object SocksProtocolVersion {
       
-      inline def `4`: typings.whoisJson.whoisJsonNumbers.`4` = 4.asInstanceOf[typings.whoisJson.whoisJsonNumbers.`4`]
+      inline def `4`: typings.whoisJson.whoisJsonInts.`4` = 4.asInstanceOf[typings.whoisJson.whoisJsonInts.`4`]
       
-      inline def `5`: typings.whoisJson.whoisJsonNumbers.`5` = 5.asInstanceOf[typings.whoisJson.whoisJsonNumbers.`5`]
+      inline def `5`: typings.whoisJson.whoisJsonInts.`5` = 5.asInstanceOf[typings.whoisJson.whoisJsonInts.`5`]
     }
     
     /**

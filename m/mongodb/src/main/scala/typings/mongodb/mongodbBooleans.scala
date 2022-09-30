@@ -1,5 +1,6 @@
 package typings.mongodb
 
+import typings.mongodb.mod.GSSAPICanonicalizationValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mongodbBooleans {
   
   @js.native
-  sealed trait `true` extends StObject
+  sealed trait `false`
+    extends StObject
+       with GSSAPICanonicalizationValue
+  inline def `false`: `false` = false.asInstanceOf[`false`]
+  
+  @js.native
+  sealed trait `true`
+    extends StObject
+       with GSSAPICanonicalizationValue
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

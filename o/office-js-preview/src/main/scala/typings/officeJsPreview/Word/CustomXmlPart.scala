@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a custom XML part.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait CustomXmlPart
@@ -30,8 +29,7 @@ trait CustomXmlPart
     * Deletes the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def delete(): Unit = js.native
   
@@ -39,7 +37,7 @@ trait CustomXmlPart
     * Deletes an attribute with the given name from the element identified by xpath.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.4]
     *
     * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
     * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
@@ -55,7 +53,6 @@ trait CustomXmlPart
     *
     * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
     * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
-    * @beta
     *
     * @param xpath Required. Absolute path to the single element in XPath notation.
     * @param namespaceMappings Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
@@ -67,7 +64,7 @@ trait CustomXmlPart
     * Deletes the element identified by xpath.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.4]
     *
     * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
     * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
@@ -83,7 +80,6 @@ trait CustomXmlPart
     *
     * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
     * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
-    * @beta
     *
     * @param xpath Required. Absolute path to the single element in XPath notation.
     * @param namespaceMappings Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
@@ -94,17 +90,15 @@ trait CustomXmlPart
     * Gets the full XML content of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getXml(): ClientResult[String] = js.native
   
   /**
-    * Gets the ID of the custom XML part. Read only.
+    * Gets the ID of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val id: String = js.native
   
@@ -112,7 +106,7 @@ trait CustomXmlPart
     * Inserts an attribute with the given name and value to the element identified by xpath.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.4]
     *
     * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
     * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
@@ -128,7 +122,6 @@ trait CustomXmlPart
     *
     * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
     * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
-    * @beta
     *
     * @param xpath Required. Absolute path to the single element in XPath notation.
     * @param namespaceMappings Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
@@ -141,7 +134,7 @@ trait CustomXmlPart
     * Inserts the given XML under the parent element identified by xpath at child position index.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.4]
     *
     * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
     * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
@@ -157,7 +150,6 @@ trait CustomXmlPart
     *
     * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
     * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
-    * @beta
     *
     * @param xpath Required. Absolute path to the single parent element in XPath notation.
     * @param xml Required. XML content to be inserted.
@@ -179,11 +171,10 @@ trait CustomXmlPart
   def load(propertyNames: js.Array[String]): CustomXmlPart = js.native
   
   /**
-    * Gets the namespace URI of the custom XML part. Read only.
+    * Gets the namespace URI of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   val namespaceUri: String = js.native
   
@@ -191,7 +182,7 @@ trait CustomXmlPart
     * Queries the XML content of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.4]
     *
     * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
     * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
@@ -207,7 +198,6 @@ trait CustomXmlPart
     *
     * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
     * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
-    * @beta
     *
     * @param xpath Required. An XPath query.
     * @param namespaceMappings Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
@@ -219,8 +209,7 @@ trait CustomXmlPart
     * Sets the full XML content of the custom XML part.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param xml Required. XML content to be set.
     */
@@ -246,7 +235,7 @@ trait CustomXmlPart
     * Updates the value of an attribute with the given name of the element identified by xpath.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.4]
     *
     * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
     * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
@@ -262,7 +251,6 @@ trait CustomXmlPart
     *
     * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
     * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
-    * @beta
     *
     * @param xpath Required. Absolute path to the single element in XPath notation.
     * @param namespaceMappings Required. An object whose property values are namespace names and whose property names are aliases for the corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`. The property names (such as "greg") can be any string that does not used reserved XPath characters, such as the forward slash "/".
@@ -275,7 +263,7 @@ trait CustomXmlPart
     * Updates the XML of the element identified by xpath.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * [Api set: WordApi 1.4]
     *
     * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
     * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
@@ -291,7 +279,6 @@ trait CustomXmlPart
     *
     * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
     * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
-    * @beta
     *
     * @param xpath Required. Absolute path to the single element in XPath notation.
     * @param xml Required. New XML content to be stored.

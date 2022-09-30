@@ -1,9 +1,9 @@
 package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.PromiseLike
 import typings.xrm.Window
 import typings.xrm.Xrm.Async.OpenQuickCreateSuccessCallbackObject
-import typings.xrm.Xrm.Async.PromiseLike
 import typings.xrm.Xrm.Collection.Dictionary
 import typings.xrm.Xrm.Metadata.EntityMetadata
 import typings.xrm.Xrm.Url.CmdBarDisplay
@@ -54,7 +54,7 @@ trait Utility extends StObject {
     * @returns Returns an object with .then() function. The parameter to the delegate is an array of numbers representing the valid status transitions.
     * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getallowedstatustransitions getAllowedStatusTransitions (Client API reference)}
     */
-  def getAllowedStatusTransitions(entityName: String, stateCode: Double): js.Thenable[js.Array[Double]] = js.native
+  def getAllowedStatusTransitions(entityName: String, stateCode: Double): PromiseLike[js.Array[Double]] = js.native
   
   /**
     * Returns the entity metadata for the specified entity.
@@ -62,8 +62,8 @@ trait Utility extends StObject {
     * @param attributes The attributes to get metadata for.
     * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getentitymetadata External Link: getEntityMetadata}
     */
-  def getEntityMetadata(entityName: String): PromiseLike[EntityMetadata] = js.native
-  def getEntityMetadata(entityName: String, attributes: js.Array[String]): PromiseLike[EntityMetadata] = js.native
+  def getEntityMetadata(entityName: String): typings.xrm.Xrm.Async.PromiseLike[EntityMetadata] = js.native
+  def getEntityMetadata(entityName: String, attributes: js.Array[String]): typings.xrm.Xrm.Async.PromiseLike[EntityMetadata] = js.native
   
   /**
     * The method provides access to the global context without going through the form context.
@@ -102,7 +102,7 @@ trait Utility extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/actions External Link: Actions overview}
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-own-actions External Link: Create your own actions}
     */
-  def invokeProcessAction(name: String, parameters: Dictionary[Any]): PromiseLike[Any] = js.native
+  def invokeProcessAction(name: String, parameters: Dictionary[Any]): typings.xrm.Xrm.Async.PromiseLike[Any] = js.native
   
   /**
     * Query if 'entityType' is an Activity entity.
@@ -120,7 +120,7 @@ trait Utility extends StObject {
     * @param lookupOptions Defines the options for opening the lookup dialog
     * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/lookupobjects}
     */
-  def lookupObjects(lookupOptions: LookupOptions): PromiseLike[js.Array[LookupValue]] = js.native
+  def lookupObjects(lookupOptions: LookupOptions): typings.xrm.Xrm.Async.PromiseLike[js.Array[LookupValue]] = js.native
   
   /**
     * Opens an entity form.
@@ -149,10 +149,10 @@ trait Utility extends StObject {
     * @param parameters (Optional) A dictionary object that passes extra query string parameters to the form. Invalid query string parameters will cause an error.
     * @returns Returns an asynchronous promise.
     */
-  def openQuickCreate(entityLogicalName: String): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
-  def openQuickCreate(entityLogicalName: String, createFromEntity: Unit, parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
-  def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
-  def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue, parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
+  def openQuickCreate(entityLogicalName: String): typings.xrm.Xrm.Async.PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
+  def openQuickCreate(entityLogicalName: String, createFromEntity: Unit, parameters: OpenParameters): typings.xrm.Xrm.Async.PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
+  def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue): typings.xrm.Xrm.Async.PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
+  def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue, parameters: OpenParameters): typings.xrm.Xrm.Async.PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   
   /**
     * Opens an HTML Web Resource in a new browser window.

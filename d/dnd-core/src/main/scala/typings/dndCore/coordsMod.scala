@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object coordsMod {
   
-  @JSImport("dnd-core/lib/utils/coords", JSImport.Namespace)
+  @JSImport("dnd-core/dist/utils/coords", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

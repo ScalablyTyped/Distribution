@@ -1,6 +1,6 @@
 package typings.cookieclicker.Game
 
-import typings.cookieclicker.cookieclickerNumbers.`1`
+import typings.cookieclicker.cookieclickerInts.`1`
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject

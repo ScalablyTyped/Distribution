@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-community/cli-plugin-metro" : "9.1.1"
+      "@react-native-community/cli-plugin-metro" : "9.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-community/cli-plugin-metro" : "9.1.1"
+      "@react-native-community/cli-plugin-metro" : "9.1.3"
     }
   ],
   "compile-devDependencies" : [

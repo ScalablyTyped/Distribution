@@ -3,10 +3,10 @@ package typings.yuka
 import typings.yuka.gameEntityMod.GameEntity
 import typings.yuka.matrix3Mod.Matrix3
 import typings.yuka.memoryRecordMod.MemoryRecord
-import typings.yuka.yukaNumbers.`0`
-import typings.yuka.yukaNumbers.`1`
-import typings.yuka.yukaNumbers.`2`
-import typings.yuka.yukaNumbers.`3`
+import typings.yuka.yukaInts.`0`
+import typings.yuka.yukaInts.`1`
+import typings.yuka.yukaInts.`2`
+import typings.yuka.yukaInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

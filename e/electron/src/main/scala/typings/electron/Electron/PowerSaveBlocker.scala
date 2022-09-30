@@ -6,14 +6,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerSaveBlocker extends StObject {
   
   // Docs: https://electronjs.org/docs/api/power-save-blocker
   /**
     * Whether the corresponding `powerSaveBlocker` has started.
     */
-  def isStarted(id: Double): Boolean = js.native
+  def isStarted(id: Double): Boolean
   
   /**
     * The blocker ID that is assigned to this power blocker.
@@ -30,13 +29,30 @@ trait PowerSaveBlocker extends StObject {
     * calling B requests for `prevent-display-sleep`. `prevent-display-sleep` will be
     * used until B stops its request. After that, `prevent-app-suspension` is used.
     */
-  @JSName("start")
-  def start_preventappsuspension(`type`: `prevent-app-suspension`): Double = js.native
-  @JSName("start")
-  def start_preventdisplaysleep(`type`: `prevent-display-sleep`): Double = js.native
+  def start(`type`: `prevent-app-suspension` | `prevent-display-sleep`): Double
   
   /**
     * Stops the specified power save blocker.
     */
-  def stop(id: Double): Unit = js.native
+  def stop(id: Double): Unit
+}
+object PowerSaveBlocker {
+  
+  inline def apply(
+    isStarted: Double => Boolean,
+    start: `prevent-app-suspension` | `prevent-display-sleep` => Double,
+    stop: Double => Unit
+  ): PowerSaveBlocker = {
+    val __obj = js.Dynamic.literal(isStarted = js.Any.fromFunction1(isStarted), start = js.Any.fromFunction1(start), stop = js.Any.fromFunction1(stop))
+    __obj.asInstanceOf[PowerSaveBlocker]
+  }
+  
+  extension [Self <: PowerSaveBlocker](x: Self) {
+    
+    inline def setIsStarted(value: Double => Boolean): Self = StObject.set(x, "isStarted", js.Any.fromFunction1(value))
+    
+    inline def setStart(value: `prevent-app-suspension` | `prevent-display-sleep` => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    
+    inline def setStop(value: Double => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+  }
 }

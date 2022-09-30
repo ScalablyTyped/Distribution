@@ -6,16 +6,17 @@ import typings.glaze.anon.Bg
 import typings.glaze.anon.Border
 import typings.glaze.anon.Inset
 import typings.glaze.anon.PickConsoleLogLevel
-import typings.glaze.glazeNumbers.`1024`
-import typings.glaze.glazeNumbers.`1280`
-import typings.glaze.glazeNumbers.`640`
-import typings.glaze.glazeNumbers.`768`
+import typings.glaze.glazeInts.`1024`
+import typings.glaze.glazeInts.`1280`
+import typings.glaze.glazeInts.`640`
+import typings.glaze.glazeInts.`768`
 import typings.glaze.styleInjectorContextMod.StyleInjectorProviderProps
 import typings.glaze.themeContextMod.ThemeProviderProps
 import typings.glaze.themeMod.RuntimeTheme
 import typings.glaze.themeMod.StaticTheme
 import typings.glaze.useStylingMod.ThemedStyle
 import typings.react.mod.global.JSX.Element
+import typings.treat.themeMod.ThemeOrAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,16 +33,11 @@ object mod {
   
   @JSImport("glaze", "VirtualStyleInjector")
   @js.native
-  class VirtualStyleInjector ()
+  open class VirtualStyleInjector ()
     extends typings.glaze.styleInjectorMod.VirtualStyleInjector
   
-  inline def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme
-  ): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[RuntimeTheme]
-  inline def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme,
-    localDebugName: String
-  ): RuntimeTheme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[RuntimeTheme]
+  inline def createTheme(tokens: ThemeOrAny & StaticTheme): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[RuntimeTheme]
+  inline def createTheme(tokens: ThemeOrAny & StaticTheme, localDebugName: String): RuntimeTheme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[RuntimeTheme]
   
   object defaultTokens {
     
@@ -67,15 +63,15 @@ object mod {
   }
   
   inline def modularScale(ratio: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ key in / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<typeof defaultSteps, number> * / any ]: string}
-    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ key in / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<typeof defaultSteps, number> * / any ]: string}
-    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any]]
+  {readonly [ key in type-fest.type-fest/source/value-of.ValueOf<[-1, -0.5, 0, 1, 2, 3, 4, 5, 6], number> ]: string}
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {readonly [ key in type-fest.type-fest/source/value-of.ValueOf<[-1, -0.5, 0, 1, 2, 3, 4, 5, 6], number> ]: string}
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[Any]]
   inline def modularScale[T /* <: Double */](ratio: Double, steps: js.Array[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in T ]: string}
-    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in T ]: string}
-    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any]]
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[Any]]
   
   inline def setLogger(logger: PickConsoleLogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

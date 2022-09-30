@@ -129,7 +129,7 @@ open class BoundingBoxRenderer protected ()
   override def render(renderingGroupId: Double): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   var renderList: typings.babylonjs.BABYLON.SmartArray[typings.babylonjs.BABYLON.BoundingBox] = js.native
@@ -142,7 +142,7 @@ open class BoundingBoxRenderer protected ()
   override def renderOcclusionBoundingBox(mesh: typings.babylonjs.BABYLON.AbstractMesh): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   /* CompleteClass */
   override def reset(): Unit = js.native

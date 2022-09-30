@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/static-label-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticLabel")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticLabel")
 @js.native
-class StaticLabel protected ()
+open class StaticLabel protected ()
   extends typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.StaticLabel {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class StaticLabel protected ()
 }
 object StaticLabel {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticLabel")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticLabel")
   @js.native
   val ^ : js.Any = js.native
   
@@ -58,13 +58,13 @@ object StaticLabel {
   inline def createInDropZoneUnderWidget(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DropZone): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.StaticLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.StaticLabel]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticLabel.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticLabel.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.StaticLabel.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.StaticLabel.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

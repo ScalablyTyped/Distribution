@@ -20,7 +20,7 @@ trait Location
   
   var queue: js.UndefOr[js.Array[Location]] = js.undefined
   
-  var result: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
+  var result: js.UndefOr[ObjectLiteral[Any]] = js.undefined
   
   var routes: js.UndefOr[Routes] = js.undefined
 }
@@ -57,9 +57,9 @@ object Location {
     
     inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    inline def setQueueVarargs(value: Location*): Self = StObject.set(x, "queue", js.Array(value :_*))
+    inline def setQueueVarargs(value: Location*): Self = StObject.set(x, "queue", js.Array(value*))
     
-    inline def setResult(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ObjectLiteral[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     

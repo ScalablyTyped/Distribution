@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.RangeSearchField")
 @js.native
-class RangeSearchField protected ()
+open class RangeSearchField protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.RangeSearchField {
   def this(
     model: AbstractModel,

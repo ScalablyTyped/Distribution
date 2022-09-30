@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Electron.Accelerator")
 @js.native
-class Accelerator ()
+open class Accelerator ()
   extends StObject
      with String

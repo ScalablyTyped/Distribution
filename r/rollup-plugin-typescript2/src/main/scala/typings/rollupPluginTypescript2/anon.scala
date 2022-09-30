@@ -6368,11 +6368,11 @@ object anon {
     def getOriginalNode(): js.UndefOr[Node] = js.native
     def getOriginalNode(node: Node): js.UndefOr[Node] = js.native
     def getOriginalNode[T /* <: Node */](node: Unit, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = js.native
-    def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): T = js.native
+    def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = js.native
     @JSName("getOriginalNode")
     def getOriginalNode_Node(node: Node): Node = js.native
     @JSName("getOriginalNode")
-    def getOriginalNode_T_Node_Union[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = js.native
+    def getOriginalNode_T_T[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): T = js.native
     
     def getOutputFileNames(commandLine: ParsedCommandLine, inputFileName: String, ignoreCase: Boolean): js.Array[String] = js.native
     
@@ -6395,7 +6395,7 @@ object anon {
       * @returns The original parse tree node if found; otherwise, undefined.
       */
     @JSName("getParseTreeNode")
-    def getParseTreeNode_T_Node[T /* <: Node */](): js.UndefOr[T] = js.native
+    def getParseTreeNode_T[T /* <: Node */](): js.UndefOr[T] = js.native
     
     def getParsedCommandLineOfConfigFile(configFileName: String, optionsToExtend: Unit, host: ParseConfigFileHost): js.UndefOr[ParsedCommandLine] = js.native
     def getParsedCommandLineOfConfigFile(
@@ -11499,7 +11499,7 @@ object anon {
       * @param visitor The callback used to visit each child.
       * @param context A lexical environment context for the visitor.
       */
-    def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): T = js.native
+    def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
     def visitEachChild[T /* <: Node */](
       node: T,
       visitor: Visitor,
@@ -11539,7 +11539,7 @@ object anon {
       * @param context A lexical environment context for the visitor.
       */
     @JSName("visitEachChild")
-    def visitEachChild_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
+    def visitEachChild_T_T[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): T = js.native
     
     def visitFunctionBody(node: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = js.native
     /**
@@ -11626,32 +11626,24 @@ object anon {
       * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
       */
     def visitNode[T /* <: Node */](): js.UndefOr[T] = js.native
-    /**
-      * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
-      *
-      * @param node The Node to visit.
-      * @param visitor The callback used to visit the Node.
-      * @param test A callback to execute to verify the Node is valid.
-      * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
-      */
-    def visitNode[T /* <: Node */](node: T): T = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = js.native
+    def visitNode[T /* <: Node */](node: T): js.UndefOr[T] = js.native
+    def visitNode[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
     def visitNode[T /* <: Node */](
       node: T,
       visitor: Unit,
       test: js.Function1[/* node */ Node, Boolean],
       lift: js.Function1[/* node */ js.Array[Node], T]
-    ): T = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Visitor): T = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = js.native
+    ): js.UndefOr[T] = js.native
+    def visitNode[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
+    def visitNode[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = js.native
+    def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
     def visitNode[T /* <: Node */](
       node: T,
       visitor: Visitor,
       test: js.Function1[/* node */ Node, Boolean],
       lift: js.Function1[/* node */ js.Array[Node], T]
-    ): T = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
+    ): js.UndefOr[T] = js.native
+    def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
     def visitNode[T /* <: Node */](node: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
     def visitNode[T /* <: Node */](
       node: Unit,
@@ -11669,32 +11661,40 @@ object anon {
       lift: js.Function1[/* node */ js.Array[Node], T]
     ): js.UndefOr[T] = js.native
     def visitNode[T /* <: Node */](node: Unit, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
+    /**
+      * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
+      *
+      * @param node The Node to visit.
+      * @param visitor The callback used to visit the Node.
+      * @param test A callback to execute to verify the Node is valid.
+      * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
+      */
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](node: T): js.UndefOr[T] = js.native
+    def visitNode_T_T[T /* <: Node */](node: T): T = js.native
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
+    def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = js.native
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](
+    def visitNode_T_T[T /* <: Node */](
       node: T,
       visitor: Unit,
       test: js.Function1[/* node */ Node, Boolean],
       lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = js.native
+    ): T = js.native
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
+    def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = js.native
+    def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor): T = js.native
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
+    def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = js.native
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](
+    def visitNode_T_T[T /* <: Node */](
       node: T,
       visitor: Visitor,
       test: js.Function1[/* node */ Node, Boolean],
       lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = js.native
+    ): T = js.native
     @JSName("visitNode")
-    def visitNode_T_Node_Union[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
+    def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
     
     /**
       * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
@@ -11745,6 +11745,46 @@ object anon {
     def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
     def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
     def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T]): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](
+      nodes: NodeArray[T],
+      visitor: Unit,
+      test: js.Function1[/* node */ Node, Boolean],
+      start: Double,
+      count: Double
+    ): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](
+      nodes: NodeArray[T],
+      visitor: Unit,
+      test: js.Function1[/* node */ Node, Boolean],
+      start: Unit,
+      count: Double
+    ): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](
+      nodes: NodeArray[T],
+      visitor: Visitor,
+      test: js.Function1[/* node */ Node, Boolean],
+      start: Double,
+      count: Double
+    ): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](
+      nodes: NodeArray[T],
+      visitor: Visitor,
+      test: js.Function1[/* node */ Node, Boolean],
+      start: Unit,
+      count: Double
+    ): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
     /**
       * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
       *
@@ -11754,102 +11794,62 @@ object anon {
       * @param start An optional value indicating the starting offset at which to start visiting.
       * @param count An optional value indicating the maximum number of nodes to visit.
       */
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T]): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T]): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](
       nodes: NodeArray[T],
       visitor: Unit,
       test: js.Function1[/* node */ Node, Boolean],
       start: Double,
       count: Double
     ): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](
       nodes: NodeArray[T],
       visitor: Unit,
       test: js.Function1[/* node */ Node, Boolean],
       start: Unit,
       count: Double
     ): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](
       nodes: NodeArray[T],
       visitor: Visitor,
       test: js.Function1[/* node */ Node, Boolean],
       start: Double,
       count: Double
     ): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](
+    @JSName("visitNodes")
+    def visitNodes_T_NodeArray[T /* <: Node */](
       nodes: NodeArray[T],
       visitor: Visitor,
       test: js.Function1[/* node */ Node, Boolean],
       start: Unit,
       count: Double
     ): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
     @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T]): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): NodeArray[T] = js.native
     @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
     @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_Node_Union[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
+    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
     
     def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
     def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext, nodesVisitor: NodesVisitor): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native

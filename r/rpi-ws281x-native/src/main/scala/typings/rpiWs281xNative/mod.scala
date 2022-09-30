@@ -163,61 +163,61 @@ object mod extends Shortcut {
   
   /* Inlined {  SK6812_RGBW :403703808,   SK6812_RBGW :403701768,   SK6812_GRBW :403181568,   SK6812_GBRW :403177488,   SK6812_BRGW :402657288,   SK6812_BGRW :402655248,   WS2811_RGB :1050624,   WS2811_RBG :1048584,   WS2811_GRB :528384,   WS2811_GBR :524304,   WS2811_BRG :4104,   WS2811_BGR :2064,   WS2812 :528384,   SK6812 :528384,   SK6812W :403177488}[keyof {  SK6812_RGBW :403703808,   SK6812_RBGW :403701768,   SK6812_GRBW :403181568,   SK6812_GBRW :403177488,   SK6812_BRGW :402657288,   SK6812_BGRW :402655248,   WS2811_RGB :1050624,   WS2811_RBG :1048584,   WS2811_GRB :528384,   WS2811_GBR :524304,   WS2811_BRG :4104,   WS2811_BGR :2064,   WS2812 :528384,   SK6812 :528384,   SK6812W :403177488}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403701768`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403181568`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`524304`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403703808`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1048584`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`4104`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403177488`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402657288`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`528384`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`2064`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402655248`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1050624`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403701768`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403181568`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`524304`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403703808`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`1048584`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`4104`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403177488`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`402657288`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`528384`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`2064`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`402655248`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`1050624`
   */
   trait StripType extends StObject
   object StripType {
     
-    inline def `1048584`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1048584` = 1048584.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1048584`]
+    inline def `1048584`: typings.rpiWs281xNative.rpiWs281xNativeInts.`1048584` = 1048584.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`1048584`]
     
-    inline def `1050624`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1050624` = 1050624.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1050624`]
+    inline def `1050624`: typings.rpiWs281xNative.rpiWs281xNativeInts.`1050624` = 1050624.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`1050624`]
     
-    inline def `2064`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`2064` = 2064.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`2064`]
+    inline def `2064`: typings.rpiWs281xNative.rpiWs281xNativeInts.`2064` = 2064.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`2064`]
     
-    inline def `402655248`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402655248` = 402655248.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402655248`]
+    inline def `402655248`: typings.rpiWs281xNative.rpiWs281xNativeInts.`402655248` = 402655248.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`402655248`]
     
-    inline def `402657288`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402657288` = 402657288.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402657288`]
+    inline def `402657288`: typings.rpiWs281xNative.rpiWs281xNativeInts.`402657288` = 402657288.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`402657288`]
     
-    inline def `403177488`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403177488` = 403177488.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403177488`]
+    inline def `403177488`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403177488` = 403177488.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403177488`]
     
-    inline def `403181568`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403181568` = 403181568.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403181568`]
+    inline def `403181568`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403181568` = 403181568.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403181568`]
     
-    inline def `403701768`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403701768` = 403701768.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403701768`]
+    inline def `403701768`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403701768` = 403701768.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403701768`]
     
-    inline def `403703808`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403703808` = 403703808.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403703808`]
+    inline def `403703808`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403703808` = 403703808.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403703808`]
     
-    inline def `4104`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`4104` = 4104.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`4104`]
+    inline def `4104`: typings.rpiWs281xNative.rpiWs281xNativeInts.`4104` = 4104.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`4104`]
     
-    inline def `524304`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`524304` = 524304.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`524304`]
+    inline def `524304`: typings.rpiWs281xNative.rpiWs281xNativeInts.`524304` = 524304.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`524304`]
     
-    inline def `528384`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`528384` = 528384.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`528384`]
+    inline def `528384`: typings.rpiWs281xNative.rpiWs281xNativeInts.`528384` = 528384.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`528384`]
   }
   
   /* Inlined rpi-ws281x-native.rpi-ws281x-native.StripType | keyof {  sk6812-rgbw :403703808,   sk6812-rbgw :403701768,   sk6812-grbw :403181568,   sk6812-gbrw :403177488,   sk6812-brgw :402657288,   sk6812-bgrw :402655248,   ws2811-rgb :1050624,   ws2811-rbg :1048584,   ws2811-grb :528384,   ws2811-gbr :524304,   ws2811-brg :4104,   ws2811-bgr :2064,   ws2812 :528384,   sk6812 :528384,   sk6812w :403177488} */
   /* Rewritten from type alias, can be one of: 
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403701768`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403181568`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`524304`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403703808`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1048584`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`4104`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403177488`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402657288`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`528384`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`2064`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402655248`
-    - typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1050624`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403701768`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403181568`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`524304`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403703808`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`1048584`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`4104`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`403177488`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`402657288`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`528384`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`2064`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`402655248`
+    - typings.rpiWs281xNative.rpiWs281xNativeInts.`1050624`
     - typings.rpiWs281xNative.rpiWs281xNativeStrings.`sk6812-rgbw`
     - typings.rpiWs281xNative.rpiWs281xNativeStrings.`ws2811-bgr`
     - typings.rpiWs281xNative.rpiWs281xNativeStrings.`sk6812-bgrw`
@@ -237,29 +237,29 @@ object mod extends Shortcut {
   trait StripTypeEnum extends StObject
   object StripTypeEnum {
     
-    inline def `1048584`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1048584` = 1048584.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1048584`]
+    inline def `1048584`: typings.rpiWs281xNative.rpiWs281xNativeInts.`1048584` = 1048584.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`1048584`]
     
-    inline def `1050624`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1050624` = 1050624.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`1050624`]
+    inline def `1050624`: typings.rpiWs281xNative.rpiWs281xNativeInts.`1050624` = 1050624.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`1050624`]
     
-    inline def `2064`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`2064` = 2064.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`2064`]
+    inline def `2064`: typings.rpiWs281xNative.rpiWs281xNativeInts.`2064` = 2064.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`2064`]
     
-    inline def `402655248`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402655248` = 402655248.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402655248`]
+    inline def `402655248`: typings.rpiWs281xNative.rpiWs281xNativeInts.`402655248` = 402655248.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`402655248`]
     
-    inline def `402657288`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402657288` = 402657288.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`402657288`]
+    inline def `402657288`: typings.rpiWs281xNative.rpiWs281xNativeInts.`402657288` = 402657288.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`402657288`]
     
-    inline def `403177488`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403177488` = 403177488.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403177488`]
+    inline def `403177488`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403177488` = 403177488.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403177488`]
     
-    inline def `403181568`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403181568` = 403181568.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403181568`]
+    inline def `403181568`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403181568` = 403181568.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403181568`]
     
-    inline def `403701768`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403701768` = 403701768.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403701768`]
+    inline def `403701768`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403701768` = 403701768.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403701768`]
     
-    inline def `403703808`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403703808` = 403703808.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`403703808`]
+    inline def `403703808`: typings.rpiWs281xNative.rpiWs281xNativeInts.`403703808` = 403703808.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`403703808`]
     
-    inline def `4104`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`4104` = 4104.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`4104`]
+    inline def `4104`: typings.rpiWs281xNative.rpiWs281xNativeInts.`4104` = 4104.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`4104`]
     
-    inline def `524304`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`524304` = 524304.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`524304`]
+    inline def `524304`: typings.rpiWs281xNative.rpiWs281xNativeInts.`524304` = 524304.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`524304`]
     
-    inline def `528384`: typings.rpiWs281xNative.rpiWs281xNativeNumbers.`528384` = 528384.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeNumbers.`528384`]
+    inline def `528384`: typings.rpiWs281xNative.rpiWs281xNativeInts.`528384` = 528384.asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeInts.`528384`]
     
     inline def sk6812: typings.rpiWs281xNative.rpiWs281xNativeStrings.sk6812 = "sk6812".asInstanceOf[typings.rpiWs281xNative.rpiWs281xNativeStrings.sk6812]
     

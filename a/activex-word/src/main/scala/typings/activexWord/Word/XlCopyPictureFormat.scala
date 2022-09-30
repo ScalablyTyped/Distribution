@@ -1,14 +1,14 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-4147`
-import typings.activexWord.activexWordNumbers.`2`
+import typings.activexWord.activexWordInts.`-4147`
+import typings.activexWord.activexWordInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`2`
-  - typings.activexWord.activexWordNumbers.`-4147`
+  - typings.activexWord.activexWordInts.`2`
+  - typings.activexWord.activexWordInts.`-4147`
 */
 trait XlCopyPictureFormat extends StObject
 object XlCopyPictureFormat {

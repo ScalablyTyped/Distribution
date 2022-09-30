@@ -6,10 +6,10 @@ import typings.reactVirtualized.esTableMod.TableHeaderRowRenderer
 import typings.reactVirtualized.esTableMod.TableRowProps
 import typings.reactVirtualized.esTableMod.TableRowRenderer
 import typings.reactVirtualized.reactVirtualizedBooleans.`false`
-import typings.reactVirtualized.reactVirtualizedNumbers.`-1`
-import typings.reactVirtualized.reactVirtualizedNumbers.`0`
-import typings.reactVirtualized.reactVirtualizedNumbers.`10`
-import typings.reactVirtualized.reactVirtualizedNumbers.`30`
+import typings.reactVirtualized.reactVirtualizedInts.`-1`
+import typings.reactVirtualized.reactVirtualizedInts.`0`
+import typings.reactVirtualized.reactVirtualizedInts.`10`
+import typings.reactVirtualized.reactVirtualizedInts.`30`
 import typings.reactVirtualized.reactVirtualizedStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

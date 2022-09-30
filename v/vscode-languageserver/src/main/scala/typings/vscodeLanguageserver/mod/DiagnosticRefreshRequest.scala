@@ -1,6 +1,5 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserver.vscodeLanguageserverStrings.workspaceSlashdiagnosticSlashrefresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object DiagnosticRefreshRequest {
   
   @JSImport("vscode-languageserver", "DiagnosticRefreshRequest.method")
   @js.native
-  val method: workspaceSlashdiagnosticSlashrefresh = js.native
+  val method: /* template literal string: workspace/diagnostic/refresh */ String = js.native
   
   @JSImport("vscode-languageserver", "DiagnosticRefreshRequest.type")
   @js.native

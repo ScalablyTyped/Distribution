@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "victory-core" : "36.6.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "victory-core" : "36.6.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

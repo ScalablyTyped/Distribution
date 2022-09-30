@@ -19,7 +19,7 @@ import typings.seatsio.anon.Price
 import typings.seatsio.anon.TicketType
 import typings.seatsio.anon.Type
 import typings.seatsio.anon.X
-import typings.seatsio.seatsioNumbers.`5`
+import typings.seatsio.seatsioInts.`5`
 import typings.seatsio.seatsioStrings.Lato
 import typings.seatsio.seatsioStrings.Montserrat
 import typings.seatsio.seatsioStrings.NotoSansHK

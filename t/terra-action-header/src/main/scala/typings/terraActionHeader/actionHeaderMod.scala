@@ -8,12 +8,12 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
-import typings.terraActionHeader.terraActionHeaderNumbers.`1`
-import typings.terraActionHeader.terraActionHeaderNumbers.`2`
-import typings.terraActionHeader.terraActionHeaderNumbers.`3`
-import typings.terraActionHeader.terraActionHeaderNumbers.`4`
-import typings.terraActionHeader.terraActionHeaderNumbers.`5`
-import typings.terraActionHeader.terraActionHeaderNumbers.`6`
+import typings.terraActionHeader.terraActionHeaderInts.`1`
+import typings.terraActionHeader.terraActionHeaderInts.`2`
+import typings.terraActionHeader.terraActionHeaderInts.`3`
+import typings.terraActionHeader.terraActionHeaderInts.`4`
+import typings.terraActionHeader.terraActionHeaderInts.`5`
+import typings.terraActionHeader.terraActionHeaderInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

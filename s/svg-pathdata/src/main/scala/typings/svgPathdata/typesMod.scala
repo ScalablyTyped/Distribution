@@ -1,7 +1,7 @@
 package typings.svgPathdata
 
-import typings.svgPathdata.svgPathdataNumbers.`0`
-import typings.svgPathdata.svgPathdataNumbers.`1`
+import typings.svgPathdata.svgPathdataInts.`0`
+import typings.svgPathdata.svgPathdataInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

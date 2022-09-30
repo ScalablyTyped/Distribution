@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "npm-email" : "3.2.1"
+      "npm-email" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "npm-email" : "3.2.1"
+      "npm-email" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

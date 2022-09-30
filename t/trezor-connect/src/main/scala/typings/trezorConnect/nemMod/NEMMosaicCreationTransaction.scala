@@ -1,6 +1,6 @@
 package typings.trezorConnect.nemMod
 
-import typings.trezorConnect.trezorConnectNumbers.`0x4001`
+import typings.trezorConnect.trezorConnectInts.`0x4001`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

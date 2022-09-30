@@ -22,7 +22,7 @@ trait SourcesOptions extends StObject {
   var thumbnailSize: js.UndefOr[Size] = js.undefined
   
   /**
-    * An array of Strings that lists the types of desktop sources to be captured,
+    * An array of strings that lists the types of desktop sources to be captured,
     * available types are `screen` and `window`.
     */
   var types: js.Array[String]
@@ -46,6 +46,6 @@ object SourcesOptions {
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

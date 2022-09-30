@@ -18,41 +18,32 @@ object conditionMod {
     
     /**
       * Internal only - manager for action
-      * @hidden
+      * @internal
       */
     var _actionManager: ActionManager = js.native
     
     /**
-      * Internal only
-      * @hidden
+      * @internal
       */
     var _currentResult: Boolean = js.native
     
     /**
-      * Internal only
-      * @hidden
+      * @internal
       */
     var _evaluationId: Double = js.native
     
     /**
-      * Internal only
-      * @param target
-      * @param propertyPath
-      * @hidden
+      * @internal
       */
     def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
     
     /**
-      * Internal only
-      * @param propertyPath
-      * @hidden
+      * @internal
       */
     def _getProperty(propertyPath: String): String = js.native
     
     /**
-      * Internal only
-      * @param serializedCondition
-      * @hidden
+      * @internal
       */
     /* protected */ def _serialize(serializedCondition: Any): Any = js.native
     
@@ -103,10 +94,6 @@ object conditionMod {
     value: String
     ) = this()
     
-    /**
-      * Internal only
-      * @hidden
-      */
     /* private */ var _target: Any = js.native
     
     /** Value to compare with target state  */
@@ -143,22 +130,10 @@ object conditionMod {
     operator: Double
     ) = this()
     
-    /**
-      * Internal only
-      * @hidden
-      */
     /* private */ var _effectiveTarget: Any = js.native
     
-    /**
-      * Internal only
-      * @hidden
-      */
     /* private */ var _property: Any = js.native
     
-    /**
-      * Internal only
-      * @hidden
-      */
     /* private */ var _target: Any = js.native
     
     /** the conditional operator, default ValueCondition.IsEqual */
@@ -184,37 +159,21 @@ object conditionMod {
       */
     inline def GetOperatorName(operator: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperatorName")(operator.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsDifferent")
     @js.native
     def _IsDifferent: Any = js.native
     inline def _IsDifferent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsDifferent")(x.asInstanceOf[js.Any])
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsEqual")
     @js.native
     def _IsEqual: Any = js.native
     inline def _IsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsEqual")(x.asInstanceOf[js.Any])
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsGreater")
     @js.native
     def _IsGreater: Any = js.native
     inline def _IsGreater_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsGreater")(x.asInstanceOf[js.Any])
     
-    /**
-      * Internal only
-      * @hidden
-      */
     @JSImport("babylonjs/Actions/condition", "ValueCondition._IsLesser")
     @js.native
     def _IsLesser: Any = js.native

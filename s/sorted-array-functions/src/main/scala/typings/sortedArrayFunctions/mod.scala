@@ -1,8 +1,8 @@
 package typings.sortedArrayFunctions
 
-import typings.sortedArrayFunctions.sortedArrayFunctionsNumbers.`-1`
-import typings.sortedArrayFunctions.sortedArrayFunctionsNumbers.`0`
-import typings.sortedArrayFunctions.sortedArrayFunctionsNumbers.`1`
+import typings.sortedArrayFunctions.sortedArrayFunctionsInts.`-1`
+import typings.sortedArrayFunctions.sortedArrayFunctionsInts.`0`
+import typings.sortedArrayFunctions.sortedArrayFunctionsInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

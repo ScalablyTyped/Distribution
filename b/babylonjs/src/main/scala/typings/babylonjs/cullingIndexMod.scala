@@ -236,15 +236,7 @@ object cullingIndexMod {
     val ^ : js.Any = js.native
     
     /**
-      * @param worldMin
-      * @param worldMax
-      * @param entries
-      * @param maxBlockCapacity
-      * @param currentDepth
-      * @param maxDepth
-      * @param target
-      * @param creationFunc
-      * @hidden
+      * @internal
       */
     inline def _CreateBlocks[T](
       worldMin: Vector3,
@@ -383,7 +375,7 @@ object cullingIndexMod {
     trait AbstractMesh extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * Backing Field
         */
       var _submeshesOctree: typings.babylonjs.octreeMod.Octree[SubMesh] = js.native
@@ -410,10 +402,10 @@ object cullingIndexMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _cachedRayForTransform: typings.babylonjs.rayMod.Ray = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalMultiPick(
         rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray]
       ): Nullable[js.Array[PickingInfo]] = js.native
@@ -432,7 +424,7 @@ object cullingIndexMod {
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[js.Array[PickingInfo]] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalPick(
         rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray]
       ): Nullable[PickingInfo] = js.native
@@ -531,7 +523,7 @@ object cullingIndexMod {
         trianglePredicate: TrianglePickingPredicate
       ): Nullable[PickingInfo] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _internalPickForMesh(
         pickingInfo: Nullable[PickingInfo],
         rayFunction: js.Function2[/* world */ Matrix, /* enableDistantPicking */ Boolean, typings.babylonjs.rayMod.Ray],
@@ -678,16 +670,16 @@ object cullingIndexMod {
         skipBoundingInfo: Boolean
       ): Nullable[PickingInfo] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _pickWithRayInverseMatrix: Matrix = js.native
       
       /**
-        * @hidden
+        * @internal
         * Backing Filed
         */
       var _selectionOctree: typings.babylonjs.octreeMod.Octree[AbstractMesh] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _tempPickingRay: Nullable[typings.babylonjs.rayMod.Ray] = js.native
       
       /**

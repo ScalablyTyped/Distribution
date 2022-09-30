@@ -185,7 +185,7 @@ trait TemplateRecipientTabs extends StObject {
     * A List tab enables the recipient to choose from a list of options. You specify the options in the `listItems` property. This value can't be set.
     * [list]: https://developers.docusign.com/esign-rest-api/reference/EnvelopeRecipientTabs/create/#/definitions/list
     */
-  var listTabs: js.UndefOr[js.Array[List]] = js.undefined
+  var listTabs: js.UndefOr[js.Array[typings.docusignEsign.mod.List]] = js.undefined
   
   /**
     * A list of  [Notarize tabs][notarize].
@@ -429,11 +429,11 @@ object TemplateRecipientTabs {
     
     inline def setLastNameTabsVarargs(value: LastName*): Self = StObject.set(x, "lastNameTabs", js.Array(value*))
     
-    inline def setListTabs(value: js.Array[List]): Self = StObject.set(x, "listTabs", value.asInstanceOf[js.Any])
+    inline def setListTabs(value: js.Array[typings.docusignEsign.mod.List]): Self = StObject.set(x, "listTabs", value.asInstanceOf[js.Any])
     
     inline def setListTabsUndefined: Self = StObject.set(x, "listTabs", js.undefined)
     
-    inline def setListTabsVarargs(value: List*): Self = StObject.set(x, "listTabs", js.Array(value*))
+    inline def setListTabsVarargs(value: typings.docusignEsign.mod.List*): Self = StObject.set(x, "listTabs", js.Array(value*))
     
     inline def setNotarizeTabs(value: js.Array[Notarize]): Self = StObject.set(x, "notarizeTabs", value.asInstanceOf[js.Any])
     

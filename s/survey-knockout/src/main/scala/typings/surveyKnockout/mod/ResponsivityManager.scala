@@ -10,9 +10,13 @@ open class ResponsivityManager protected () extends StObject {
   def this(container: Any, model: Any, itemsSelector: String) = this()
   def this(container: Any, model: Any, itemsSelector: String, dotsItemSize: Double) = this()
   
+  /* protected */ def calcActionDimensions(currentAction: Action, item: Any): Unit = js.native
+  
   /* protected */ def calcItemSize(item: Any): Double = js.native
   
   def dispose(): Unit = js.native
+  
+  var dotsSizeConst: Double = js.native
   
   /* protected */ def getAvailableSpace(): Double = js.native
   

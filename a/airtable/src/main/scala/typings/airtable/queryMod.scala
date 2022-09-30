@@ -48,6 +48,8 @@ object queryMod {
     
     inline def maxRecords(value: Double): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("maxRecords")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
     
+    inline def method(value: string | json): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("method")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
+    
     inline def offset(value: Double): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]
     
     inline def pageSize(value: Double): Pass | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("pageSize")(value.asInstanceOf[js.Any]).asInstanceOf[Pass | Error]

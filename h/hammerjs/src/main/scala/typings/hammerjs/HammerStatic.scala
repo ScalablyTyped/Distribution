@@ -2,15 +2,15 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.hammerjs.hammerjsNumbers.`16`
-import typings.hammerjs.hammerjsNumbers.`1`
-import typings.hammerjs.hammerjsNumbers.`24`
-import typings.hammerjs.hammerjsNumbers.`2`
-import typings.hammerjs.hammerjsNumbers.`30`
-import typings.hammerjs.hammerjsNumbers.`32`
-import typings.hammerjs.hammerjsNumbers.`4`
-import typings.hammerjs.hammerjsNumbers.`6`
-import typings.hammerjs.hammerjsNumbers.`8`
+import typings.hammerjs.hammerjsInts.`16`
+import typings.hammerjs.hammerjsInts.`1`
+import typings.hammerjs.hammerjsInts.`24`
+import typings.hammerjs.hammerjsInts.`2`
+import typings.hammerjs.hammerjsInts.`30`
+import typings.hammerjs.hammerjsInts.`32`
+import typings.hammerjs.hammerjsInts.`4`
+import typings.hammerjs.hammerjsInts.`6`
+import typings.hammerjs.hammerjsInts.`8`
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.SVGElement

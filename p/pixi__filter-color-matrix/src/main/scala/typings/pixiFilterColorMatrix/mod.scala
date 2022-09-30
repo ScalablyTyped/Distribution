@@ -1,7 +1,7 @@
 package typings.pixiFilterColorMatrix
 
 import typings.pixiCore.mod.Filter
-import typings.pixiFilterColorMatrix.pixiFilterColorMatrixNumbers.`20`
+import typings.pixiFilterColorMatrix.pixiFilterColorMatrixInts.`20`
 import typings.pixiUtils.mod.ArrayFixed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

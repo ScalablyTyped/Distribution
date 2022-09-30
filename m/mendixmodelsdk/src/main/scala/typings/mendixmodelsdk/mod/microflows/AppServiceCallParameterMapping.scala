@@ -11,9 +11,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * In version 9.0.2: deleted
+  */
 @JSImport("mendixmodelsdk", "microflows.AppServiceCallParameterMapping")
 @js.native
-class AppServiceCallParameterMapping protected ()
+open class AppServiceCallParameterMapping protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.AppServiceCallParameterMapping {
   def this(
     model: AbstractModel,
@@ -42,6 +45,9 @@ object AppServiceCallParameterMapping {
     * Creates and returns a new AppServiceCallParameterMapping instance in the SDK and on the server.
     * The new AppServiceCallParameterMapping will be automatically stored in the 'parameterMappings' property
     * of the parent AppServiceCallAction element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.0.1
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.AppServiceCallParameterMapping]

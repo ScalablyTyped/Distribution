@@ -1,8 +1,8 @@
 package typings.antd
 
 import typings.antd.anon.AdjustX
-import typings.antd.antdNumbers.`0`
-import typings.antd.antdNumbers.`1`
+import typings.antd.antdInts.`0`
+import typings.antd.antdInts.`1`
 import typings.rcTrigger.interfaceMod.BuildInPlacements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

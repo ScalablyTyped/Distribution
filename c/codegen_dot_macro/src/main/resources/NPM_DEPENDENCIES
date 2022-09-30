@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "codegen.macro" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "codegen.macro" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

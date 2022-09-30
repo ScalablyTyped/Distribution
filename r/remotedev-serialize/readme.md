@@ -10,10 +10,10 @@ Serialize unserializable data and parse it back.
 | ------------------ | :-------------: |
 | Full name          | remotedev-serialize |
 | Keywords           | redux, devtools |
-| # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 2422317 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 327101.3333333333 |
+| # stars            | 12845.0 |
 
 ## Links
 - [Homepage](https://github.com/reduxjs/redux-devtools)

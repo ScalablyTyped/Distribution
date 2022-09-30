@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCallArgument")
 @js.native
-class LayoutCallArgument protected ()
+open class LayoutCallArgument protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class LayoutCallArgument protected ()
 }
 object LayoutCallArgument {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCallArgument")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object LayoutCallArgument {
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCall): typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCallArgument.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.LayoutCallArgument.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.LayoutCallArgument.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

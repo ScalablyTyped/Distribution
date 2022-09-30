@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "update-notifier"
-version := "5.0-dt-20200930Z-39f6a3"
-scalaVersion := "3.0.1"
+version := "6.0-dt-20220704Z-0c13b5"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "boxen" % "4.2.0-4601ef",
-  "org.scalablytyped" %%% "cli-boxes" % "2.2.1-7b2503",
-  "org.scalablytyped" %%% "configstore" % "4.0-dt-20200515Z-26d958",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "type-fest" % "0.8.1-460399")
+  "org.scalablytyped" %%% "boxen" % "7.0.0-3c4645",
+  "org.scalablytyped" %%% "cli-boxes" % "3.0.0-ef4bee",
+  "org.scalablytyped" %%% "configstore" % "6.0-dt-20220704Z-30516a",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "type-fest" % "3.0.0-e72bbe")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

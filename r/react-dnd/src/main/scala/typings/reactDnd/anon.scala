@@ -3,7 +3,7 @@ package typings.reactDnd
 import typings.dndCore.interfacesMod.BackendFactory
 import typings.dndCore.interfacesMod.DragDropManager
 import typings.dndCore.interfacesMod.Identifier
-import typings.react.mod.ComponentType
+import typings.react.mod.ReactNode
 import typings.reactDnd.dndProviderMod.DndProviderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,6 +36,8 @@ object anon {
     
     var backend: BackendFactory
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var context: js.UndefOr[BackendContext] = js.undefined
     
     var debugMode: js.UndefOr[Boolean] = js.undefined
@@ -45,7 +47,7 @@ object anon {
   object Backend {
     
     inline def apply[BackendContext, BackendOptions](
-      backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => typings.dndCore.interfacesMod.Backend
+      backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.interfacesMod.Backend
     ): Backend[BackendContext, BackendOptions] = {
       val __obj = js.Dynamic.literal(backend = js.Any.fromFunction3(backend))
       __obj.asInstanceOf[Backend[BackendContext, BackendOptions]]
@@ -54,8 +56,12 @@ object anon {
     extension [Self <: Backend[?, ?], BackendContext, BackendOptions](x: Self & (Backend[BackendContext, BackendOptions])) {
       
       inline def setBackend(
-        value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => typings.dndCore.interfacesMod.Backend
+        value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.interfacesMod.Backend
       ): Self = StObject.set(x, "backend", js.Any.fromFunction3(value))
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setContext(value: BackendContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -71,37 +77,28 @@ object anon {
     }
   }
   
-  trait DecoratedComponent[C /* <: ComponentType[js.Any] */] extends StObject {
+  trait Children
+    extends StObject
+       with DndProviderProps[Any, Any] {
     
-    var DecoratedComponent: C
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var manager: DragDropManager
   }
-  object DecoratedComponent {
+  object Children {
     
-    inline def apply[C /* <: ComponentType[js.Any] */](DecoratedComponent: C): DecoratedComponent[C] = {
-      val __obj = js.Dynamic.literal(DecoratedComponent = DecoratedComponent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DecoratedComponent[C]]
+    inline def apply(manager: DragDropManager): Children = {
+      val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: DecoratedComponent[?], C /* <: ComponentType[js.Any] */](x: Self & DecoratedComponent[C]) {
+    extension [Self <: Children](x: Self) {
       
-      inline def setDecoratedComponent(value: C): Self = StObject.set(x, "DecoratedComponent", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Dispose extends StObject {
-    
-    var dispose: js.Function0[Unit]
-  }
-  object Dispose {
-    
-    inline def apply(dispose: () => Unit): Dispose = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
-      __obj.asInstanceOf[Dispose]
-    }
-    
-    extension [Self <: Dispose](x: Self) {
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setManager(value: DragDropManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,26 +119,7 @@ object anon {
       
       inline def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
       
-      inline def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
-    }
-  }
-  
-  trait Manager
-    extends StObject
-       with DndProviderProps[js.Any, js.Any] {
-    
-    var manager: DragDropManager
-  }
-  object Manager {
-    
-    inline def apply(manager: DragDropManager): Manager = {
-      val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Manager]
-    }
-    
-    extension [Self <: Manager](x: Self) {
-      
-      inline def setManager(value: DragDropManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value*))
     }
   }
   

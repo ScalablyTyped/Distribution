@@ -564,6 +564,12 @@ object iconNamesMod {
     
     inline def BUGGY__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUGGY")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.BUG")
+    @js.native
+    def BUG_ : BlueprintIcons16Id = js.native
+    
+    inline def BUG__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUG")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.BUILD")
     @js.native
     def BUILD_ : BlueprintIcons16Id = js.native
@@ -634,6 +640,11 @@ object iconNamesMod {
     @js.native
     def BringData: BlueprintIcons16Id = js.native
     inline def BringData_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BringData")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.Bug")
+    @js.native
+    def Bug: BlueprintIcons16Id = js.native
+    inline def Bug_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bug")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.Buggy")
     @js.native

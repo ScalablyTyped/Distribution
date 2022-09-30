@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @memberOf SignedXml
   */
-class SignedXml ()
+open class SignedXml ()
   extends typings.xmldsigjs.signedXmlMod.SignedXml {
   def this(node: Document) = this()
   def this(node: Element) = this()

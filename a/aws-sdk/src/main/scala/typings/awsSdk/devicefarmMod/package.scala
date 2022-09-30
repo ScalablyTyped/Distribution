@@ -342,6 +342,8 @@ type SampleType = _SampleType | java.lang.String
 
 type Samples = js.Array[Sample]
 
+type SecurityGroupId = java.lang.String
+
 type SecurityGroupIds = js.Array[NonEmptyString]
 
 type SensitiveString = java.lang.String
@@ -355,6 +357,8 @@ type SkipAppResign = scala.Boolean
 type SshPublicKey = java.lang.String
 
 type String = java.lang.String
+
+type SubnetId = java.lang.String
 
 type SubnetIds = js.Array[NonEmptyString]
 
@@ -503,6 +507,10 @@ type VPCEConfigurations = js.Array[VPCEConfiguration]
 type VPCEServiceName = java.lang.String
 
 type VideoCapture = scala.Boolean
+
+type VpcSecurityGroupIds = js.Array[SecurityGroupId]
+
+type VpcSubnetIds = js.Array[SubnetId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-06-23`

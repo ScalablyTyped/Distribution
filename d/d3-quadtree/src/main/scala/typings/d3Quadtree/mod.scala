@@ -1,6 +1,6 @@
 package typings.d3Quadtree
 
-import typings.d3Quadtree.d3QuadtreeNumbers.`4`
+import typings.d3Quadtree.d3QuadtreeInts.`4`
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

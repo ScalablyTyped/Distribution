@@ -10,10 +10,10 @@ import typings.baseui.anon.Mediumicon
 import typings.baseui.anon.Mediumtext
 import typings.baseui.anon.None
 import typings.baseui.anon.Small
-import typings.baseui.baseuiNumbers.`0`
-import typings.baseui.baseuiNumbers.`12`
-import typings.baseui.baseuiNumbers.`20`
-import typings.baseui.baseuiNumbers.`4`
+import typings.baseui.baseuiInts.`0`
+import typings.baseui.baseuiInts.`12`
+import typings.baseui.baseuiInts.`20`
+import typings.baseui.baseuiInts.`4`
 import typings.baseui.baseuiStrings.`100Percentsign`
 import typings.baseui.baseuiStrings.`50Percentsign`
 import typings.baseui.baseuiStrings.`75Percentsign`

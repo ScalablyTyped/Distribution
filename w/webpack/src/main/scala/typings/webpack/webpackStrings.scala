@@ -250,10 +250,6 @@ object webpackStrings {
   inline def flagged: flagged = "flagged".asInstanceOf[flagged]
   
   @js.native
-  sealed trait `functionLeftparenthesisRightparenthesis LeftcurlybracketRightcurlybracket` extends StObject
-  inline def `functionLeftparenthesisRightparenthesis LeftcurlybracketRightcurlybracket`: `functionLeftparenthesisRightparenthesis LeftcurlybracketRightcurlybracket` = ("function() {}").asInstanceOf[`functionLeftparenthesisRightparenthesis LeftcurlybracketRightcurlybracket`]
-  
-  @js.native
   sealed trait global
     extends StObject
        with ExternalsType
@@ -334,10 +330,6 @@ object webpackStrings {
   @js.native
   sealed trait log extends StObject
   inline def log: log = "log".asInstanceOf[log]
-  
-  @js.native
-  sealed trait `maybe provided Leftparenthesisruntime-definedRightparenthesis` extends StObject
-  inline def `maybe provided Leftparenthesisruntime-definedRightparenthesis`: `maybe provided Leftparenthesisruntime-definedRightparenthesis` = ("maybe provided (runtime-defined)").asInstanceOf[`maybe provided Leftparenthesisruntime-definedRightparenthesis`]
   
   @js.native
   sealed trait memory extends StObject

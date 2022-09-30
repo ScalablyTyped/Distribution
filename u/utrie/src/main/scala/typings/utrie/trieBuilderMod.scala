@@ -2,8 +2,8 @@ package typings.utrie
 
 import typings.utrie.trieMod.Trie
 import typings.utrie.trieMod.int
-import typings.utrie.utrieNumbers.`16`
-import typings.utrie.utrieNumbers.`32`
+import typings.utrie.utrieInts.`16`
+import typings.utrie.utrieInts.`32`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

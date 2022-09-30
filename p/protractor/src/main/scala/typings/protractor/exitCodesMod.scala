@@ -10,7 +10,7 @@ object exitCodesMod {
   
   @JSImport("protractor/built/exitCodes", "BrowserError")
   @js.native
-  class BrowserError protected () extends ProtractorError {
+  open class BrowserError protected () extends ProtractorError {
     def this(logger: Logger, message: String) = this()
   }
   /* static members */
@@ -33,9 +33,9 @@ object exitCodesMod {
   
   @JSImport("protractor/built/exitCodes", "ConfigError")
   @js.native
-  class ConfigError protected () extends ProtractorError {
+  open class ConfigError protected () extends ProtractorError {
     def this(logger: Logger, message: String) = this()
-    def this(logger: Logger, message: String, error: Error) = this()
+    def this(logger: Logger, message: String, error: js.Error) = this()
   }
   /* static members */
   object ConfigError {
@@ -52,7 +52,7 @@ object exitCodesMod {
   
   @JSImport("protractor/built/exitCodes", "ErrorHandler")
   @js.native
-  class ErrorHandler () extends StObject
+  open class ErrorHandler () extends StObject
   /* static members */
   object ErrorHandler {
     
@@ -60,31 +60,33 @@ object exitCodesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isError(errMsgs: js.Array[String], e: Error): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isError")(errMsgs.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isError(errMsgs: js.Array[String], e: js.Error): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isError")(errMsgs.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def parseError(e: Error): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseError")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parseError(e: js.Error): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseError")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @JSImport("protractor/built/exitCodes", "IError")
   @js.native
-  class IError ()
+  open class IError ()
     extends StObject
        with Error {
     
     var code: js.UndefOr[Double] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("protractor/built/exitCodes", "ProtractorError")
   @js.native
-  class ProtractorError protected () extends IError {
+  open class ProtractorError protected () extends IError {
     def this(logger: Logger, message: String, code: Double) = this()
-    def this(logger: Logger, message: String, code: Double, error: Error) = this()
+    def this(logger: Logger, message: String, code: Double, error: js.Error) = this()
   }
   /* static members */
   object ProtractorError {

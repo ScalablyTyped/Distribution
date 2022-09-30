@@ -24,7 +24,7 @@ object bakedVertexAnimationManagerMod {
     
     /* private */ var _isEnabled: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markSubMeshesAsAttributesDirty(): Unit = js.native
     
     /* private */ var _scene: Any = js.native

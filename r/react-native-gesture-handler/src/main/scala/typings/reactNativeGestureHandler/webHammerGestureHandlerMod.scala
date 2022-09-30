@@ -304,7 +304,7 @@ object webHammerGestureHandlerMod {
     
     var distance: Double
     
-    var eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`8`
+    var eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
     
     var isFinal: Boolean
     
@@ -355,7 +355,7 @@ object webHammerGestureHandlerMod {
       deltaY: Double,
       direction: Double,
       distance: Double,
-      eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`8`,
+      eventType: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`,
       isFinal: Boolean,
       isFirst: Boolean,
       maxPointers: Double,
@@ -402,7 +402,7 @@ object webHammerGestureHandlerMod {
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
       inline def setEventType(
-        value: typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerNumbers.`8`
+        value: typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`1` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`2` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`4` | typings.reactNativeGestureHandler.reactNativeGestureHandlerInts.`8`
       ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
       inline def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])

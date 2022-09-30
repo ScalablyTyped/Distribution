@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def append(value: String, appends: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(List(value.asInstanceOf[js.Any]).`++`(appends.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def append(value: String, appends: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(scala.List(value.asInstanceOf[js.Any]).`++`(appends.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def appendArray(value: String, appends: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendArray")(value.asInstanceOf[js.Any], appends.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -65,7 +65,7 @@ object mod {
   
   inline def first(value: String, n: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(value.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def format(value: String, params: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(value.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(value: String, params: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(value.asInstanceOf[js.Any]).`++`(params.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def hexDecode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexDecode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -98,7 +98,7 @@ object mod {
   inline def leftTrim(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("leftTrim")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def leftTrim(value: String, char: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftTrim")(value.asInstanceOf[js.Any], char.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def prepend(value: String, prepends: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(List(value.asInstanceOf[js.Any]).`++`(prepends.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def prepend(value: String, prepends: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(scala.List(value.asInstanceOf[js.Any]).`++`(prepends.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def prependArray(value: String, prepends: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prependArray")(value.asInstanceOf[js.Any], prepends.asInstanceOf[js.Any])).asInstanceOf[String]
   

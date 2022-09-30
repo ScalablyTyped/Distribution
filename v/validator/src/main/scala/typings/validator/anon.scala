@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined validator.validator.validator.strongPasswordOptions & {  returnScore :false | undefined} */
-  trait strongPasswordOptionsretu extends StObject {
+  /* Inlined validator.validator.validator.StrongPasswordOptions & {  returnScore :false | undefined} */
+  trait StrongPasswordOptionsretu extends StObject {
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -35,14 +35,14 @@ object anon {
     
     var returnScore: js.UndefOr[Boolean] & js.UndefOr[`false`]
   }
-  object strongPasswordOptionsretu {
+  object StrongPasswordOptionsretu {
     
-    inline def apply(returnScore: js.UndefOr[Boolean] & js.UndefOr[`false`]): strongPasswordOptionsretu = {
+    inline def apply(returnScore: js.UndefOr[Boolean] & js.UndefOr[`false`]): StrongPasswordOptionsretu = {
       val __obj = js.Dynamic.literal(returnScore = returnScore.asInstanceOf[js.Any])
-      __obj.asInstanceOf[strongPasswordOptionsretu]
+      __obj.asInstanceOf[StrongPasswordOptionsretu]
     }
     
-    extension [Self <: strongPasswordOptionsretu](x: Self) {
+    extension [Self <: StrongPasswordOptionsretu](x: Self) {
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
@@ -92,8 +92,8 @@ object anon {
     }
   }
   
-  /* Inlined validator.validator.validator.strongPasswordOptions & {  returnScore :true} */
-  trait strongPasswordOptionsretuMinLength extends StObject {
+  /* Inlined validator.validator.validator.StrongPasswordOptions & {  returnScore :true} */
+  trait StrongPasswordOptionsretuMinLength extends StObject {
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -119,14 +119,14 @@ object anon {
     
     var returnScore: js.UndefOr[Boolean] & `true`
   }
-  object strongPasswordOptionsretuMinLength {
+  object StrongPasswordOptionsretuMinLength {
     
-    inline def apply(returnScore: js.UndefOr[Boolean] & `true`): strongPasswordOptionsretuMinLength = {
+    inline def apply(returnScore: js.UndefOr[Boolean] & `true`): StrongPasswordOptionsretuMinLength = {
       val __obj = js.Dynamic.literal(returnScore = returnScore.asInstanceOf[js.Any])
-      __obj.asInstanceOf[strongPasswordOptionsretuMinLength]
+      __obj.asInstanceOf[StrongPasswordOptionsretuMinLength]
     }
     
-    extension [Self <: strongPasswordOptionsretuMinLength](x: Self) {
+    extension [Self <: StrongPasswordOptionsretuMinLength](x: Self) {
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       

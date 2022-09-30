@@ -1,21 +1,33 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.fontIconFontIconMod.FontIconProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/font_icon", JSImport.Namespace)
-@js.native
-object fontIconMod extends js.Object {
-  @js.native
-  class FontIcon ()
-    extends Component[FontIconProps, js.Object, js.Any]
+object fontIconMod {
   
+  @JSImport("react-toolbox/components/font_icon", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FontIconProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.fontIconFontIconMod.FontIcon {
+    def this(props: FontIconProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: FontIconProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/font_icon", "FontIcon")
+  @js.native
+  open class FontIcon protected ()
+    extends typings.reactToolbox.fontIconFontIconMod.FontIcon {
+    def this(props: FontIconProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: FontIconProps, context: Any) = this()
+  }
 }
-

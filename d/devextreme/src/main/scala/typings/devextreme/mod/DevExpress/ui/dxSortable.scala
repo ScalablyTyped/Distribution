@@ -11,6 +11,7 @@ import typings.devextreme.mod.DevExpress.events.NativeEventInfo
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -477,7 +478,7 @@ object dxSortable {
     
     val itemElement: DxElement_[HTMLElement]
     
-    var promise: js.UndefOr[js.Thenable[Unit]] = js.undefined
+    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
     
     val toComponent: dxSortable | dxDraggable
     
@@ -519,7 +520,7 @@ object dxSortable {
       
       inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
       
-      inline def setPromise(value: js.Thenable[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       

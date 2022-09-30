@@ -10,7 +10,6 @@ import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
 import typings.googleGax.operationsMod.google.longrunning.Operation
 import typings.googleGax.operationsMod.google.protobuf.Empty
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object longrunningMod {
   
   @JSImport("google-gax/build/src/longRunningCalls/longrunning", "Operation")
   @js.native
-  class Operation_ protected () extends EventEmitter {
+  open class Operation_ protected () extends EventEmitter {
     /**
       * Wrapper for a google.longrunnung.Operation.
       *
@@ -119,7 +118,7 @@ object longrunningMod {
       * @return {promise} - Promise that resolves on operation completion and rejects
       * on operation error.
       */
-    def promise(): js.Promise[js.Any] = js.native
+    def promise(): js.Promise[Any] = js.native
     
     var response: js.UndefOr[js.Object] = js.native
     
@@ -146,7 +145,7 @@ object longrunningMod {
   ): Operation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(op.asInstanceOf[js.Any], longrunningDescriptor.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[Operation_]
   
   type GetOperationCallback = js.Function4[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* result */ js.UndefOr[js.Object], 
     /* metadata */ js.UndefOr[js.Object], 
     /* rawResponse */ js.UndefOr[LROOperation], 

@@ -9,23 +9,23 @@ object taskSchedulerMod {
   
   @JSImport("protractor/built/taskScheduler", "TaskQueue")
   @js.native
-  class TaskQueue protected () extends StObject {
-    def this(capabilities: js.Any, specLists: js.Any) = this()
+  open class TaskQueue protected () extends StObject {
+    def this(capabilities: Any, specLists: Any) = this()
     
-    var capabilities: js.Any = js.native
+    var capabilities: Any = js.native
     
     var maxInstance: Double = js.native
     
     var numRunningInstances: Double = js.native
     
-    var specLists: js.Any = js.native
+    var specLists: Any = js.native
     
     var specsIndex: Double = js.native
   }
   
   @JSImport("protractor/built/taskScheduler", "TaskScheduler")
   @js.native
-  class TaskScheduler protected () extends StObject {
+  open class TaskScheduler protected () extends StObject {
     /**
       * A scheduler to keep track of specs that need running and their associated
       * capabilities. It will suggest a task (combination of capabilities and spec)
@@ -39,7 +39,7 @@ object taskSchedulerMod {
       */
     def this(config: Config) = this()
     
-    /* private */ var config: js.Any = js.native
+    /* private */ var config: Any = js.native
     
     /**
       * Returns number of tasks currently running.
@@ -77,9 +77,9 @@ object taskSchedulerMod {
   
   trait Task extends StObject {
     
-    var capabilities: js.Any
+    var capabilities: Any
     
-    var done: js.Any
+    var done: Any
     
     var specs: js.Array[String]
     
@@ -87,20 +87,20 @@ object taskSchedulerMod {
   }
   object Task {
     
-    inline def apply(capabilities: js.Any, done: js.Any, specs: js.Array[String], taskId: String): Task = {
+    inline def apply(capabilities: Any, done: Any, specs: js.Array[String], taskId: String): Task = {
       val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Task]
     }
     
     extension [Self <: Task](x: Self) {
       
-      inline def setCapabilities(value: js.Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      inline def setDone(value: js.Any): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Any): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
       inline def setSpecs(value: js.Array[String]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
       
-      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value :_*))
+      inline def setSpecsVarargs(value: String*): Self = StObject.set(x, "specs", js.Array(value*))
       
       inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     }

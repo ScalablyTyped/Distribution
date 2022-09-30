@@ -35,14 +35,16 @@ object mod {
   
   @JSImport("redux-api-middleware", "ApiError")
   @js.native
-  class ApiError[T] protected ()
+  open class ApiError[T] protected ()
     extends StObject
        with Error {
     def this(status: Double, statusText: String, response: T) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
@@ -57,14 +59,16 @@ object mod {
   
   @JSImport("redux-api-middleware", "InternalError")
   @js.native
-  class InternalError protected ()
+  open class InternalError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
@@ -73,16 +77,18 @@ object mod {
   
   @JSImport("redux-api-middleware", "InvalidRSAA")
   @js.native
-  class InvalidRSAA protected ()
+  open class InvalidRSAA protected ()
     extends StObject
        with Error {
     def this(validationErrors: js.Array[String]) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     @JSName("message")
     var message_InvalidRSAA: `Invalid RSAA` = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
@@ -97,28 +103,30 @@ object mod {
   
   @JSImport("redux-api-middleware", "RequestError")
   @js.native
-  class RequestError protected ()
+  open class RequestError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
     var name_RequestError: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.RequestError = js.native
   }
   
-  inline def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], js.Any]): ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apiMiddleware")(api.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]]
+  inline def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], Any]): ReturnType[Middleware[js.Object, Any, Dispatch[AnyAction]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apiMiddleware")(api.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Middleware[js.Object, Any, Dispatch[AnyAction]]]]
   
   inline def createAction[State, Payload, Meta](clientCall: RSAACall[State, Payload, Meta]): RSAAAction[State, Payload, Meta] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(clientCall.asInstanceOf[js.Any]).asInstanceOf[RSAAAction[State, Payload, Meta]]
   
-  inline def createMiddleware(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  inline def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, Any, Dispatch[AnyAction]]]
   
-  inline def getJSON(res: Response): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getJSON(res: Response): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   inline def isRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -258,7 +266,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setMethod(value: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -290,7 +298,7 @@ object mod {
     
     var meta: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+          /* action */ RSAAAction[Any, Any, Any], 
           /* state */ State, 
           /* res */ Response, 
           Meta | js.Promise[Meta]
@@ -299,7 +307,7 @@ object mod {
     
     var payload: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+          /* action */ RSAAAction[Any, Any, Any], 
           /* state */ State, 
           /* res */ Response, 
           Payload | js.Promise[Payload]
@@ -320,7 +328,7 @@ object mod {
       
       inline def setMeta(
         value: (js.Function3[
-              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+              /* action */ RSAAAction[Any, Any, Any], 
               /* state */ State, 
               /* res */ Response, 
               Meta | js.Promise[Meta]
@@ -328,14 +336,14 @@ object mod {
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaFunction3(
-        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
+        value: (/* action */ RSAAAction[Any, Any, Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
       ): Self = StObject.set(x, "meta", js.Any.fromFunction3(value))
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       inline def setPayload(
         value: (js.Function3[
-              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+              /* action */ RSAAAction[Any, Any, Any], 
               /* state */ State, 
               /* res */ Response, 
               Payload | js.Promise[Payload]
@@ -343,7 +351,7 @@ object mod {
       ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadFunction3(
-        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
+        value: (/* action */ RSAAAction[Any, Any, Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction3(value))
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
@@ -359,16 +367,12 @@ object mod {
   trait RSAARequestTypeDescriptor[State, Payload, Meta] extends StObject {
     
     var meta: js.UndefOr[
-        (js.Function2[
-          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
-          /* state */ State, 
-          Meta | js.Promise[Meta]
-        ]) | Meta
+        (js.Function2[/* action */ RSAAAction[Any, Any, Any], /* state */ State, Meta | js.Promise[Meta]]) | Meta
       ] = js.undefined
     
     var payload: js.UndefOr[
         (js.Function2[
-          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+          /* action */ RSAAAction[Any, Any, Any], 
           /* state */ State, 
           Payload | js.Promise[Payload]
         ]) | Payload
@@ -387,29 +391,23 @@ object mod {
     extension [Self <: RSAARequestTypeDescriptor[?, ?, ?], State, Payload, Meta](x: Self & (RSAARequestTypeDescriptor[State, Payload, Meta])) {
       
       inline def setMeta(
-        value: (js.Function2[
-              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
-              /* state */ State, 
-              Meta | js.Promise[Meta]
-            ]) | Meta
+        value: (js.Function2[/* action */ RSAAAction[Any, Any, Any], /* state */ State, Meta | js.Promise[Meta]]) | Meta
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      inline def setMetaFunction2(
-        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State) => Meta | js.Promise[Meta]
-      ): Self = StObject.set(x, "meta", js.Any.fromFunction2(value))
+      inline def setMetaFunction2(value: (/* action */ RSAAAction[Any, Any, Any], /* state */ State) => Meta | js.Promise[Meta]): Self = StObject.set(x, "meta", js.Any.fromFunction2(value))
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       inline def setPayload(
         value: (js.Function2[
-              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+              /* action */ RSAAAction[Any, Any, Any], 
               /* state */ State, 
               Payload | js.Promise[Payload]
             ]) | Payload
       ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadFunction2(
-        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State) => Payload | js.Promise[Payload]
+        value: (/* action */ RSAAAction[Any, Any, Any], /* state */ State) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
@@ -428,7 +426,7 @@ object mod {
     
     var meta: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+          /* action */ RSAAAction[Any, Any, Any], 
           /* state */ State, 
           /* res */ Response, 
           Meta | js.Promise[Meta]
@@ -437,7 +435,7 @@ object mod {
     
     var payload: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+          /* action */ RSAAAction[Any, Any, Any], 
           /* state */ State, 
           /* res */ Response, 
           Payload | js.Promise[Payload]
@@ -458,7 +456,7 @@ object mod {
       
       inline def setMeta(
         value: (js.Function3[
-              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+              /* action */ RSAAAction[Any, Any, Any], 
               /* state */ State, 
               /* res */ Response, 
               Meta | js.Promise[Meta]
@@ -466,14 +464,14 @@ object mod {
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaFunction3(
-        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
+        value: (/* action */ RSAAAction[Any, Any, Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
       ): Self = StObject.set(x, "meta", js.Any.fromFunction3(value))
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       inline def setPayload(
         value: (js.Function3[
-              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+              /* action */ RSAAAction[Any, Any, Any], 
               /* state */ State, 
               /* res */ Response, 
               Payload | js.Promise[Payload]
@@ -481,7 +479,7 @@ object mod {
       ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadFunction3(
-        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
+        value: (/* action */ RSAAAction[Any, Any, Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction3(value))
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
@@ -508,7 +506,7 @@ object mod {
     trait Dispatch extends StObject {
       
       // `Promise<undefined> is returned in case of RSAA validation errors or user bails out
-      def apply(action: RSAAAction[js.Any, js.Any, js.Any]): js.Promise[Unit] = js.native
+      def apply(action: RSAAAction[Any, Any, Any]): js.Promise[Unit] = js.native
     }
   }
 }

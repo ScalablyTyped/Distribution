@@ -1,6 +1,6 @@
 package typings.antDesignProLayout.anon
 
-import typings.antDesignProLayout.antDesignProLayoutNumbers.`1`
+import typings.antDesignProLayout.antDesignProLayoutInts.`1`
 import typings.antDesignProLayout.typingsMod.Route
 import typings.std.FlatArray
 import typings.std.IterableIterator

@@ -64,6 +64,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Box
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Briefcase
   - typings.blueprintjsIcons.blueprintjsIconsStrings.BringData
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.Bug
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Buggy
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Build
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Calculator
@@ -683,6 +684,8 @@ object BlueprintIcons20Key {
   inline def Briefcase: typings.blueprintjsIcons.blueprintjsIconsStrings.Briefcase = "Briefcase".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.Briefcase]
   
   inline def BringData: typings.blueprintjsIcons.blueprintjsIconsStrings.BringData = "BringData".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.BringData]
+  
+  inline def Bug: typings.blueprintjsIcons.blueprintjsIconsStrings.Bug = "Bug".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.Bug]
   
   inline def Buggy: typings.blueprintjsIcons.blueprintjsIconsStrings.Buggy = "Buggy".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.Buggy]
   

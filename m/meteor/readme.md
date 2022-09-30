@@ -1,24 +1,21 @@
 
 # Scala.js typings for meteor
 
-Typings are for version 1.4
+Typings are for version 2.7
 
 ## Library description:
-Meteor, the JavaScript App Platform
+Install Meteor
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | meteor |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6423 |
-| # stars            | 51 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 9165.333333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/meteor/meteor#readme)
-- [Bugs](https://github.com/meteor/meteor/issues)
-- [Repository](https://github.com/meteor/meteor)
 - [Npm](https://www.npmjs.com/package/meteor)
     
 

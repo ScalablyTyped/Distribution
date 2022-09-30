@@ -4,34 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Geometry used to batch standard PIXI content (e.g. Mesh, Sprite, Graphics objects).
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "BatchGeometry")
 @js.native
-class BatchGeometry ()
-  extends StObject
-     with typings.pixiJs.PIXI.BatchGeometry {
+/**
+  * @param {boolean} [_static=false] - Optimization flag, where `false`
+  *        is updated every frame, `true` doesn't change frame-to-frame.
+  */
+open class BatchGeometry ()
+  extends typings.pixiCore.mod.BatchGeometry {
   def this(_static: Boolean) = this()
-  
-  /**
-    * Buffer used for position, color, texture IDs
-    *
-    * @member {PIXI.Buffer} PIXI.BatchGeometry#_buffer
-    * @protected
-    */
-  /* protected */ /* CompleteClass */
-  var _buffer: typings.pixiJs.PIXI.Buffer = js.native
-  
-  /**
-    * Index buffer data
-    *
-    * @member {PIXI.Buffer} PIXI.BatchGeometry#_indexBuffer
-    * @protected
-    */
-  /* protected */ /* CompleteClass */
-  var _indexBuffer: typings.pixiJs.PIXI.Buffer = js.native
 }

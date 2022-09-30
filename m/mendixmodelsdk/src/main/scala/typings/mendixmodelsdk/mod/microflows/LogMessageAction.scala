@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.LogMessageAction")
 @js.native
-class LogMessageAction protected ()
+open class LogMessageAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.LogMessageAction {
   def this(
     model: AbstractModel,

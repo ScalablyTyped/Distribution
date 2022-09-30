@@ -14,7 +14,7 @@ object mod {
   @js.native
   open class ^ protected ()
     extends StObject
-       with List {
+       with typings.listJs.mod.List {
     def this(element: String) = this()
     def this(element: HTMLElement) = this()
     def this(element: String, options: ListOptions) = this()
@@ -123,7 +123,7 @@ object mod {
     
     var matchingItems: js.Array[js.Object] = js.native
     
-    def on(event: Event, callback: js.Function1[/* list */ this.type, Unit]): List = js.native
+    def on(event: Event, callback: js.Function1[/* list */ this.type, Unit]): typings.listJs.mod.List = js.native
     
     def reIndex(): Unit = js.native
     

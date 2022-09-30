@@ -1,7 +1,7 @@
 
 # Scala.js typings for write-pkg
 
-Typings are for version 4.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Write a package.json file
@@ -11,14 +11,11 @@ Write a package.json file
 | Full name          | write-pkg |
 | Keywords           | json, write, stringify, file, fs, graceful, package |
 | # releases         | 2 |
-| # dependents       | 180 |
-| # downloads        | 48457586 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5787937.0 |
+| # stars            | 69.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/write-pkg#readme)
-- [Bugs](https://github.com/sindresorhus/write-pkg/issues)
-- [Repository](https://github.com/sindresorhus/write-pkg)
 - [Npm](https://www.npmjs.com/package/write-pkg)
     
 

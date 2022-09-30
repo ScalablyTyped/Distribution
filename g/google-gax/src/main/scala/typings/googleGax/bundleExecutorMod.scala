@@ -1,6 +1,7 @@
 package typings.googleGax
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.googleGax.anon.TypeofsetTimeout
 import typings.googleGax.apitypesMod.GRPCCallResult
 import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.bundleDescriptorMod.BundleDescriptor
@@ -15,7 +16,7 @@ object bundleExecutorMod {
   
   @JSImport("google-gax/build/src/bundlingCalls/bundleExecutor", "BundleExecutor")
   @js.native
-  class BundleExecutor protected () extends StObject {
+  open class BundleExecutor protected () extends StObject {
     /**
       * Organizes requests for an api service that requires to bundle them.
       *
@@ -32,7 +33,7 @@ object bundleExecutorMod {
       * @param {String} id - The id for the event in the task.
       * @private
       */
-    /* private */ var _cancel: js.Any = js.native
+    /* private */ var _cancel: Any = js.native
     
     var _descriptor: BundleDescriptor = js.native
     
@@ -47,7 +48,7 @@ object bundleExecutorMod {
       *   cleared.
       * @private
       */
-    /* private */ var _maybeClearTimeout: js.Any = js.native
+    /* private */ var _maybeClearTimeout: Any = js.native
     
     var _options: BundleOptions = js.native
     
@@ -61,11 +62,7 @@ object bundleExecutorMod {
     
     var _tasks: StringDictionary[Task] = js.native
     
-    var _timers: StringDictionary[
-        ReturnType[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof setTimeout */ js.Any
-        ]
-      ] = js.native
+    var _timers: StringDictionary[ReturnType[TypeofsetTimeout]] = js.native
     
     /**
       * Schedule a method call.

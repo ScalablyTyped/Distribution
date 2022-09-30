@@ -10,7 +10,7 @@ object dataObjectMod {
   
   @JSImport("xmldsigjs/build/types/xml/data_object", "DataObject")
   @js.native
-  class DataObject () extends XmlSignatureObject {
+  open class DataObject () extends XmlSignatureObject {
     def this(properties: js.Object) = this()
     
     var Encoding: String = js.native
@@ -22,7 +22,7 @@ object dataObjectMod {
   
   @JSImport("xmldsigjs/build/types/xml/data_object", "DataObjects")
   @js.native
-  class DataObjects () extends XmlSignatureCollection[DataObject] {
+  open class DataObjects () extends XmlSignatureCollection[DataObject] {
     def this(properties: js.Object) = this()
   }
 }

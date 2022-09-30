@@ -33,6 +33,9 @@ object modelsComponentStyleMod {
     var isStatic: Boolean = js.native
     
     /* CompleteClass */
+    var names: js.Array[String] = js.native
+    
+    /* CompleteClass */
     var rules: RuleSet[Any] = js.native
     
     /* CompleteClass */
@@ -55,6 +58,8 @@ object modelsComponentStyleMod {
     
     var isStatic: Boolean
     
+    var names: js.Array[String]
+    
     var rules: RuleSet[Any]
     
     var staticRulesId: String
@@ -66,10 +71,11 @@ object modelsComponentStyleMod {
       componentId: String,
       generateAndInjectStyles: (js.Object, typings.styledComponents.distSheetMod.default, Stringifier) => String,
       isStatic: Boolean,
+      names: js.Array[String],
       rules: RuleSet[Any],
       staticRulesId: String
     ): ComponentStyle = {
-      val __obj = js.Dynamic.literal(baseHash = baseHash.asInstanceOf[js.Any], componentId = componentId.asInstanceOf[js.Any], generateAndInjectStyles = js.Any.fromFunction3(generateAndInjectStyles), isStatic = isStatic.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], staticRulesId = staticRulesId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(baseHash = baseHash.asInstanceOf[js.Any], componentId = componentId.asInstanceOf[js.Any], generateAndInjectStyles = js.Any.fromFunction3(generateAndInjectStyles), isStatic = isStatic.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any], staticRulesId = staticRulesId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentStyle]
     }
     
@@ -88,6 +94,10 @@ object modelsComponentStyleMod {
       inline def setGenerateAndInjectStyles(value: (js.Object, typings.styledComponents.distSheetMod.default, Stringifier) => String): Self = StObject.set(x, "generateAndInjectStyles", js.Any.fromFunction3(value))
       
       inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+      
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
       inline def setRules(value: RuleSet[Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       

@@ -1,11 +1,7 @@
 package typings.dexie.mod
 
-import typings.dexie.dexieStrings.add
-import typings.dexie.dexieStrings.delete
-import typings.dexie.dexieStrings.deleteRange
-import typings.dexie.dexieStrings.put
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,34 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.dexie.mod.DBCoreDeleteRequest
   - typings.dexie.mod.DBCoreDeleteRangeRequest
 */
-trait DBCoreMutateRequest extends js.Object
+trait DBCoreMutateRequest extends StObject
 object DBCoreMutateRequest {
   
-  @scala.inline
-  def DBCoreAddRequest(trans: DBCoreTransaction, `type`: add, values: js.Array[_]): DBCoreMutateRequest = {
+  inline def DBCoreAddRequest(trans: DBCoreTransaction, values: js.Array[Any]): typings.dexie.mod.DBCoreAddRequest = {
     val __obj = js.Dynamic.literal(trans = trans.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DBCoreMutateRequest]
+    __obj.updateDynamic("type")("add")
+    __obj.asInstanceOf[typings.dexie.mod.DBCoreAddRequest]
   }
   
-  @scala.inline
-  def DBCorePutRequest(trans: DBCoreTransaction, `type`: put, values: js.Array[_]): DBCoreMutateRequest = {
-    val __obj = js.Dynamic.literal(trans = trans.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DBCoreMutateRequest]
-  }
-  
-  @scala.inline
-  def DBCoreDeleteRequest(keys: js.Array[_], trans: DBCoreTransaction, `type`: delete): DBCoreMutateRequest = {
-    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DBCoreMutateRequest]
-  }
-  
-  @scala.inline
-  def DBCoreDeleteRangeRequest(range: DBCoreKeyRange, trans: DBCoreTransaction, `type`: deleteRange): DBCoreMutateRequest = {
+  inline def DBCoreDeleteRangeRequest(range: DBCoreKeyRange, trans: DBCoreTransaction): typings.dexie.mod.DBCoreDeleteRangeRequest = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DBCoreMutateRequest]
+    __obj.updateDynamic("type")("deleteRange")
+    __obj.asInstanceOf[typings.dexie.mod.DBCoreDeleteRangeRequest]
+  }
+  
+  inline def DBCoreDeleteRequest(keys: js.Array[Any], trans: DBCoreTransaction): typings.dexie.mod.DBCoreDeleteRequest = {
+    val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("delete")
+    __obj.asInstanceOf[typings.dexie.mod.DBCoreDeleteRequest]
+  }
+  
+  inline def DBCorePutRequest(trans: DBCoreTransaction, values: js.Array[Any]): typings.dexie.mod.DBCorePutRequest = {
+    val __obj = js.Dynamic.literal(trans = trans.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("put")
+    __obj.asInstanceOf[typings.dexie.mod.DBCorePutRequest]
   }
 }

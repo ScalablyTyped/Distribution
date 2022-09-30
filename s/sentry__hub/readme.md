@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__hub
 
-Typings are for version 7.13.0
+Typings are for version 7.14.0
 
 ## Library description:
 Sentry hub which handles global state managment.

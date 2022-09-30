@@ -325,19 +325,11 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactGeosuggest.reactGeosuggestStrings.address
-    - typings.reactGeosuggest.reactGeosuggestStrings.establishment
-    - typings.reactGeosuggest.reactGeosuggestStrings.geocode
-    - typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesiscitiesRightparenthesis
-    - typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesisregionsRightparenthesis
-  */
-  trait QueryType extends StObject
   object QueryType {
     
-    inline def LeftparenthesiscitiesRightparenthesis: typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesiscitiesRightparenthesis = "(cities)".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesiscitiesRightparenthesis]
+    inline def LeftparenthesiscitiesRightparenthesis: String = String.asInstanceOf[String]
     
-    inline def LeftparenthesisregionsRightparenthesis: typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesisregionsRightparenthesis = "(regions)".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.LeftparenthesisregionsRightparenthesis]
+    inline def LeftparenthesisregionsRightparenthesis: String = String.asInstanceOf[String]
     
     inline def address: typings.reactGeosuggest.reactGeosuggestStrings.address = "address".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.address]
     
@@ -345,6 +337,13 @@ object mod {
     
     inline def geocode: typings.reactGeosuggest.reactGeosuggestStrings.geocode = "geocode".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.geocode]
   }
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactGeosuggest.reactGeosuggestStrings.address
+    - typings.reactGeosuggest.reactGeosuggestStrings.establishment
+    - typings.reactGeosuggest.reactGeosuggestStrings.geocode
+    - java.lang.String
+  */
+  type QueryType = _QueryType | String
   
   trait Styles extends StObject {
     
@@ -407,4 +406,6 @@ object mod {
       inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait _QueryType extends StObject
 }

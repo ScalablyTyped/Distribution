@@ -4,12 +4,13 @@ import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.constantsMod.constants.IConstant
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute
+import typings.mendixmodelsdk.domainmodelsMod.domainmodels.CachedMappedValue
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.Entity
+import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IAttribute
+import typings.mendixmodelsdk.domainmodelsMod.domainmodels.ICachedMappedValue
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntity
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IMappedValue
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IMaterializedRemoteEntitySource
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument
-import typings.mendixmodelsdk.domainmodelsMod.domainmodels.MappedValue
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.MaterializedRemoteEntitySource
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.RemoteEntitySourceDocument
 import typings.mendixmodelsdk.instancesMod.IList
@@ -31,9 +32,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object kafkaMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/kafka", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/kafka", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
@@ -57,9 +58,9 @@ object kafkaMod {
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument because Already inherited
-    - typings.mendixmodelsdk.kafkaMod.kafka.IConsumedKafkaService because var conflicts: applicationId, containerAsFolderBase, endpointId, environmentType, icon, id, isLoaded, minimumMxVersion, model, recommendedMxVersion, serviceName, structureTypeName, unit, version. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.ConsumedKafkaService")
+    - typings.mendixmodelsdk.kafkaMod.kafka.IConsumedKafkaService because var conflicts: applicationId, containerAsFolderBase, endpointId, environmentType, icon, id, isLoaded, metadataHash, minimumMxVersion, model, recommendedMxVersion, serviceName, structureTypeName, unit, validated, validatedEntities, version. Inlined  */ @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.ConsumedKafkaService")
     @js.native
-    class ConsumedKafkaService protected () extends RemoteEntitySourceDocument {
+    open class ConsumedKafkaService protected () extends RemoteEntitySourceDocument {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -105,7 +106,7 @@ object kafkaMod {
     }
     object ConsumedKafkaService {
       
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.ConsumedKafkaService")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.ConsumedKafkaService")
       @js.native
       val ^ : js.Any = js.native
       
@@ -117,13 +118,13 @@ object kafkaMod {
       inline def createIn(container: IFolderBase): ConsumedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConsumedKafkaService]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.ConsumedKafkaService.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.ConsumedKafkaService.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.ConsumedKafkaService.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.ConsumedKafkaService.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -139,9 +140,10 @@ object kafkaMod {
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
     - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IValueType because Already inherited
     - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IMappedValue because Already inherited
-    - typings.mendixmodelsdk.kafkaMod.kafka.IKafkaMappedValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaMappedValue")
+    - typings.mendixmodelsdk.domainmodelsMod.domainmodels.ICachedMappedValue because Already inherited
+    - typings.mendixmodelsdk.kafkaMod.kafka.IKafkaMappedValue because var conflicts: containerAsAttribute, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaMappedValue")
     @js.native
-    class KafkaMappedValue protected () extends MappedValue {
+    open class KafkaMappedValue protected () extends CachedMappedValue {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -159,7 +161,7 @@ object kafkaMod {
     }
     object KafkaMappedValue {
       
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaMappedValue")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaMappedValue")
       @js.native
       val ^ : js.Any = js.native
       
@@ -177,19 +179,19 @@ object kafkaMod {
         * of the parent domainmodels.Attribute element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  8.11.0 and higher
+        *  9.0.2 and higher
         */
       /* static member */
       inline def createIn(container: Attribute): KafkaMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[KafkaMappedValue]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaMappedValue.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaMappedValue.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaMappedValue.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaMappedValue.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -210,9 +212,9 @@ object kafkaMod {
     - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntitySource because Already inherited
     - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySource because Already inherited
     - typings.mendixmodelsdk.domainmodelsMod.domainmodels.IMaterializedRemoteEntitySource because Already inherited
-    - typings.mendixmodelsdk.kafkaMod.kafka.IKafkaRemoteEntitySource because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaRemoteEntitySource")
+    - typings.mendixmodelsdk.kafkaMod.kafka.IKafkaRemoteEntitySource because var conflicts: containerAsEntity, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaRemoteEntitySource")
     @js.native
-    class KafkaRemoteEntitySource protected () extends MaterializedRemoteEntitySource {
+    open class KafkaRemoteEntitySource protected () extends MaterializedRemoteEntitySource {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -247,7 +249,7 @@ object kafkaMod {
     }
     object KafkaRemoteEntitySource {
       
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaRemoteEntitySource")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaRemoteEntitySource")
       @js.native
       val ^ : js.Any = js.native
       
@@ -271,13 +273,13 @@ object kafkaMod {
       inline def createIn(container: Entity): KafkaRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[KafkaRemoteEntitySource]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaRemoteEntitySource.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaRemoteEntitySource.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.KafkaRemoteEntitySource.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.KafkaRemoteEntitySource.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -290,9 +292,9 @@ object kafkaMod {
       *
       * In version 8.14.0: introduced
       */
-    @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaResource")
+    @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResource")
     @js.native
-    class PublishedKafkaResource protected () extends Element[IModel] {
+    open class PublishedKafkaResource protected () extends Element[IModel] {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -301,6 +303,15 @@ object kafkaMod {
         unit: ModelUnit[IAbstractModel],
         container: AbstractElement[IAbstractModel, Container]
       ) = this()
+      
+      /**
+        * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+        *
+        * @ignore
+        *
+        * In version 9.0.1: introduced
+        */
+      def attributes: IList[PublishedKafkaResourceAttribute] = js.native
       
       def containerAsPublishedKafkaService: PublishedKafkaService = js.native
       
@@ -319,12 +330,15 @@ object kafkaMod {
       def summary: String = js.native
       def summary_=(newValue: String): Unit = js.native
       
+      /**
+        * In version 9.0.3: deleted
+        */
       def topicName: String = js.native
       def topicName_=(newValue: String): Unit = js.native
     }
     object PublishedKafkaResource {
       
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaResource")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResource")
       @js.native
       val ^ : js.Any = js.native
       
@@ -348,13 +362,90 @@ object kafkaMod {
       inline def createIn(container: PublishedKafkaService): PublishedKafkaResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedKafkaResource]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaResource.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResource.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaResource.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResource.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    }
+    
+    /**
+      * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+      *
+      * @ignore
+      *
+      * In version 9.0.1: introduced
+      */
+    @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResourceAttribute")
+    @js.native
+    open class PublishedKafkaResourceAttribute protected () extends Element[IModel] {
+      def this(
+        model: AbstractModel,
+        structureTypeName: String,
+        id: String,
+        isPartial: Boolean,
+        unit: ModelUnit[IAbstractModel],
+        container: AbstractElement[IAbstractModel, Container]
+      ) = this()
+      
+      def attribute: IAttribute = js.native
+      
+      def attributeQualifiedName: String = js.native
+      
+      def attribute_=(newValue: IAttribute): Unit = js.native
+      
+      def containerAsPublishedKafkaResource: PublishedKafkaResource = js.native
+      
+      def description: String = js.native
+      def description_=(newValue: String): Unit = js.native
+      
+      /**
+        * In version 9.0.2: introduced
+        */
+      def exposedName: String = js.native
+      def exposedName_=(newValue: String): Unit = js.native
+      
+      def summary: String = js.native
+      def summary_=(newValue: String): Unit = js.native
+    }
+    object PublishedKafkaResourceAttribute {
+      
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResourceAttribute")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates and returns a new PublishedKafkaResourceAttribute instance in the SDK and on the server.
+        * Expects one argument: the IModel object the instance will "live on".
+        * After creation, assign or add this instance to a property that accepts this kind of objects.
+        */
+      /* static member */
+      inline def create(model: IModel): PublishedKafkaResourceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PublishedKafkaResourceAttribute]
+      
+      /**
+        * Creates and returns a new PublishedKafkaResourceAttribute instance in the SDK and on the server.
+        * The new PublishedKafkaResourceAttribute will be automatically stored in the 'attributes' property
+        * of the parent PublishedKafkaResource element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  9.0.1 and higher
+        */
+      /* static member */
+      inline def createIn(container: PublishedKafkaResource): PublishedKafkaResourceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedKafkaResourceAttribute]
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResourceAttribute.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaResourceAttribute.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -376,9 +467,9 @@ object kafkaMod {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
-    - typings.mendixmodelsdk.kafkaMod.kafka.IPublishedKafkaService because var conflicts: containerAsFolderBase, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaService")
+    - typings.mendixmodelsdk.kafkaMod.kafka.IPublishedKafkaService because var conflicts: containerAsFolderBase, documentation, excluded, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaService")
     @js.native
-    class PublishedKafkaService protected () extends Document {
+    open class PublishedKafkaService protected () extends Document {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -393,11 +484,14 @@ object kafkaMod {
       
       def brokerPassword_=(newValue: IConstant | Null): Unit = js.native
       
-      def brokerUrl: IConstant = js.native
+      /**
+        * In version 9.0.1: added optional
+        */
+      def brokerUrl: IConstant | Null = js.native
       
-      def brokerUrlQualifiedName: String = js.native
+      def brokerUrlQualifiedName: String | Null = js.native
       
-      def brokerUrl_=(newValue: IConstant): Unit = js.native
+      def brokerUrl_=(newValue: IConstant | Null): Unit = js.native
       
       def brokerUsername: IConstant | Null = js.native
       
@@ -438,7 +532,7 @@ object kafkaMod {
     }
     object PublishedKafkaService {
       
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaService")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaService")
       @js.native
       val ^ : js.Any = js.native
       
@@ -450,13 +544,13 @@ object kafkaMod {
       inline def createIn(container: IFolderBase): PublishedKafkaService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedKafkaService]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaService.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaService.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/kafka", "kafka.PublishedKafkaService.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/kafka", "kafka.PublishedKafkaService.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -483,7 +577,7 @@ object kafkaMod {
     @js.native
     trait IKafkaMappedValue
       extends StObject
-         with IMappedValue
+         with ICachedMappedValue
     
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.

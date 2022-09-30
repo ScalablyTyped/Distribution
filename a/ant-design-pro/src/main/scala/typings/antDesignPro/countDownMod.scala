@@ -2,7 +2,6 @@ package typings.antDesignPro
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +10,9 @@ object countDownMod {
   
   @JSImport("ant-design-pro/lib/CountDown", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ICountDownProps, js.Any, js.Any]
+  open class default () extends Component[ICountDownProps, Any, Any]
   
-  type CountDown = Component[ICountDownProps, js.Any, js.Any]
+  type CountDown = Component[ICountDownProps, Any, Any]
   
   trait ICountDownProps extends StObject {
     
@@ -24,11 +22,11 @@ object countDownMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var target: Date | Double
+    var target: js.Date | Double
   }
   object ICountDownProps {
     
-    inline def apply(target: Date | Double): ICountDownProps = {
+    inline def apply(target: js.Date | Double): ICountDownProps = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICountDownProps]
     }
@@ -47,7 +45,7 @@ object countDownMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTarget(value: Date | Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Date | Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

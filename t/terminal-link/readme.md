@@ -1,7 +1,7 @@
 
 # Scala.js typings for terminal-link
 
-Typings are for version 2.1.1
+Typings are for version 3.0.0
 
 ## Library description:
 Create clickable links in the terminal
@@ -10,15 +10,12 @@ Create clickable links in the terminal
 | ------------------ | :-------------: |
 | Full name          | terminal-link |
 | Keywords           | link, hyperlink, url, ansi, escape, terminal, term, console, command-line |
-| # releases         | 5 |
-| # dependents       | 382 |
-| # downloads        | 169133862 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5.3977194333333336E7 |
+| # stars            | 500.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/terminal-link#readme)
-- [Bugs](https://github.com/sindresorhus/terminal-link/issues)
-- [Repository](https://github.com/sindresorhus/terminal-link)
 - [Npm](https://www.npmjs.com/package/terminal-link)
     
 

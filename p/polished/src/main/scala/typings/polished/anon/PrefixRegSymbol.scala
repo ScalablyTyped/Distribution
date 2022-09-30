@@ -1,7 +1,5 @@
 package typings.polished.anon
 
-import typings.polished.polishedStrings.BackslashLeftparenthesis
-import typings.polished.polishedStrings.Leftparenthesis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +8,9 @@ trait PrefixRegSymbol extends StObject {
   
   var prefix: FNotation
   
-  var regSymbol: BackslashLeftparenthesis
+  var regSymbol: String
   
-  var symbol: Leftparenthesis
+  var symbol: String
 }
 object PrefixRegSymbol {
   
@@ -25,8 +23,8 @@ object PrefixRegSymbol {
     
     inline def setPrefix(value: FNotation): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: BackslashLeftparenthesis): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: Leftparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

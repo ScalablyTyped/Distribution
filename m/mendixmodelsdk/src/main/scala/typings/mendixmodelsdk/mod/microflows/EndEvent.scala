@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.EndEvent")
 @js.native
-class EndEvent protected ()
+open class EndEvent protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.EndEvent {
   def this(
     model: AbstractModel,

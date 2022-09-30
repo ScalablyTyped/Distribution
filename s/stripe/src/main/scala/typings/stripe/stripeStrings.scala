@@ -50,6 +50,7 @@ import typings.stripe.mod.Stripe.ChargeUpdateParams.FraudDetails.UserReport
 import typings.stripe.mod.Stripe.Checkout.Session.PaymentStatus
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.BillingAddressCollection
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ConsentCollection.Promotions
+import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ConsentCollection.TermsOfService
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.CustomerCreation
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.CustomerUpdate.Address
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.CustomerUpdate.Name
@@ -67,6 +68,7 @@ import typings.stripe.mod.Stripe.CustomerCreateParams.InvoiceSettings.RenderingO
 import typings.stripe.mod.Stripe.CustomerCreateParams.TaxExempt
 import typings.stripe.mod.Stripe.ExternalAccountListParams.Object
 import typings.stripe.mod.Stripe.File.Purpose
+import typings.stripe.mod.Stripe.FinancialConnections.Account.Category
 import typings.stripe.mod.Stripe.FinancialConnections.Account.Subcategory
 import typings.stripe.mod.Stripe.FinancialConnections.Account.SupportedPaymentMethodType
 import typings.stripe.mod.Stripe.FinancialConnections.AccountRefreshParams.Feature
@@ -89,10 +91,10 @@ import typings.stripe.mod.Stripe.Issuing.Card.Shipping.Carrier
 import typings.stripe.mod.Stripe.Issuing.Card.Wallets.GooglePay.IneligibleReason
 import typings.stripe.mod.Stripe.Issuing.CardCreateParams.ReplacementReason
 import typings.stripe.mod.Stripe.Issuing.CardCreateParams.Shipping.Service
-import typings.stripe.mod.Stripe.Issuing.CardCreateParams.SpendingControls.AllowedCategory
-import typings.stripe.mod.Stripe.Issuing.CardCreateParams.SpendingControls.BlockedCategory
-import typings.stripe.mod.Stripe.Issuing.CardCreateParams.SpendingControls.SpendingLimit.Category
 import typings.stripe.mod.Stripe.Issuing.CardCreateParams.SpendingControls.SpendingLimit.Interval
+import typings.stripe.mod.Stripe.Issuing.CardCreateParams.SpendingControls.SpendingLimit._Category
+import typings.stripe.mod.Stripe.Issuing.CardCreateParams.SpendingControls._AllowedCategory
+import typings.stripe.mod.Stripe.Issuing.CardCreateParams.SpendingControls._BlockedCategory
 import typings.stripe.mod.Stripe.Issuing.Cardholder.Requirements.DisabledReason
 import typings.stripe.mod.Stripe.Issuing.Cardholder.Requirements.PastDue
 import typings.stripe.mod.Stripe.Issuing.Dispute.Evidence.MerchandiseNotAsDescribed.ReturnStatus
@@ -6964,24 +6966,24 @@ object stripeStrings {
   @js.native
   sealed trait ac_refrigeration_repair
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def ac_refrigeration_repair: ac_refrigeration_repair = "ac_refrigeration_repair".asInstanceOf[ac_refrigeration_repair]
   
   @js.native
@@ -7114,24 +7116,24 @@ object stripeStrings {
   @js.native
   sealed trait accounting_bookkeeping_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def accounting_bookkeeping_services: accounting_bookkeeping_services = "accounting_bookkeeping_services".asInstanceOf[accounting_bookkeeping_services]
   
   @js.native
@@ -7328,24 +7330,24 @@ object stripeStrings {
   @js.native
   sealed trait advertising_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def advertising_services: advertising_services = "advertising_services".asInstanceOf[advertising_services]
   
   @js.native
@@ -7421,24 +7423,24 @@ object stripeStrings {
   @js.native
   sealed trait agricultural_cooperative
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def agricultural_cooperative: agricultural_cooperative = "agricultural_cooperative".asInstanceOf[agricultural_cooperative]
   
   @js.native
@@ -7458,47 +7460,47 @@ object stripeStrings {
   @js.native
   sealed trait airlines_air_carriers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def airlines_air_carriers: airlines_air_carriers = "airlines_air_carriers".asInstanceOf[airlines_air_carriers]
   
   @js.native
   sealed trait airports_flying_fields
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def airports_flying_fields: airports_flying_fields = "airports_flying_fields".asInstanceOf[airports_flying_fields]
   
   @js.native
@@ -7640,24 +7642,24 @@ object stripeStrings {
   @js.native
   sealed trait ambulance_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def ambulance_services: ambulance_services = "ambulance_services".asInstanceOf[ambulance_services]
   
   @js.native
@@ -7693,24 +7695,24 @@ object stripeStrings {
   @js.native
   sealed trait amusement_parks_carnivals
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def amusement_parks_carnivals: amusement_parks_carnivals = "amusement_parks_carnivals".asInstanceOf[amusement_parks_carnivals]
   
   @js.native
@@ -7736,47 +7738,47 @@ object stripeStrings {
   @js.native
   sealed trait antique_reproductions
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def antique_reproductions: antique_reproductions = "antique_reproductions".asInstanceOf[antique_reproductions]
   
   @js.native
   sealed trait antique_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def antique_shops: antique_shops = "antique_shops".asInstanceOf[antique_shops]
   
   @js.native
@@ -7884,93 +7886,93 @@ object stripeStrings {
   @js.native
   sealed trait aquariums
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def aquariums: aquariums = "aquariums".asInstanceOf[aquariums]
   
   @js.native
   sealed trait architectural_surveying_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def architectural_surveying_services: architectural_surveying_services = "architectural_surveying_services".asInstanceOf[architectural_surveying_services]
   
   @js.native
   sealed trait art_dealers_and_galleries
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def art_dealers_and_galleries: art_dealers_and_galleries = "art_dealers_and_galleries".asInstanceOf[art_dealers_and_galleries]
   
   @js.native
   sealed trait artists_supply_and_craft_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def artists_supply_and_craft_shops: artists_supply_and_craft_shops = "artists_supply_and_craft_shops".asInstanceOf[artists_supply_and_craft_shops]
   
   @js.native
@@ -8135,139 +8137,139 @@ object stripeStrings {
   @js.native
   sealed trait auto_and_home_supply_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def auto_and_home_supply_stores: auto_and_home_supply_stores = "auto_and_home_supply_stores".asInstanceOf[auto_and_home_supply_stores]
   
   @js.native
   sealed trait auto_body_repair_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def auto_body_repair_shops: auto_body_repair_shops = "auto_body_repair_shops".asInstanceOf[auto_body_repair_shops]
   
   @js.native
   sealed trait auto_paint_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def auto_paint_shops: auto_paint_shops = "auto_paint_shops".asInstanceOf[auto_paint_shops]
   
   @js.native
   sealed trait auto_service_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def auto_service_shops: auto_service_shops = "auto_service_shops".asInstanceOf[auto_service_shops]
   
   @js.native
   sealed trait automated_cash_disburse
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def automated_cash_disburse: automated_cash_disburse = "automated_cash_disburse".asInstanceOf[automated_cash_disburse]
   
   @js.native
   sealed trait automated_fuel_dispensers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def automated_fuel_dispensers: automated_fuel_dispensers = "automated_fuel_dispensers".asInstanceOf[automated_fuel_dispensers]
   
   @js.native
@@ -8359,70 +8361,70 @@ object stripeStrings {
   @js.native
   sealed trait automobile_associations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def automobile_associations: automobile_associations = "automobile_associations".asInstanceOf[automobile_associations]
   
   @js.native
   sealed trait automotive_parts_and_accessories_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def automotive_parts_and_accessories_stores: automotive_parts_and_accessories_stores = "automotive_parts_and_accessories_stores".asInstanceOf[automotive_parts_and_accessories_stores]
   
   @js.native
   sealed trait automotive_tire_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def automotive_tire_stores: automotive_tire_stores = "automotive_tire_stores".asInstanceOf[automotive_tire_stores]
   
   @js.native
@@ -8463,47 +8465,47 @@ object stripeStrings {
   @js.native
   sealed trait bail_and_bond_payments
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def bail_and_bond_payments: bail_and_bond_payments = "bail_and_bond_payments".asInstanceOf[bail_and_bond_payments]
   
   @js.native
   sealed trait bakeries
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def bakeries: bakeries = "bakeries".asInstanceOf[bakeries]
   
   @js.native
@@ -8582,24 +8584,24 @@ object stripeStrings {
   @js.native
   sealed trait bands_orchestras
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def bands_orchestras: bands_orchestras = "bands_orchestras".asInstanceOf[bands_orchestras]
   
   @js.native
@@ -8780,24 +8782,24 @@ object stripeStrings {
   @js.native
   sealed trait barber_and_beauty_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def barber_and_beauty_shops: barber_and_beauty_shops = "barber_and_beauty_shops".asInstanceOf[barber_and_beauty_shops]
   
   @js.native
@@ -8842,24 +8844,24 @@ object stripeStrings {
   @js.native
   sealed trait betting_casino_gambling
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def betting_casino_gambling: betting_casino_gambling = "betting_casino_gambling".asInstanceOf[betting_casino_gambling]
   
   @js.native
@@ -8889,47 +8891,47 @@ object stripeStrings {
   @js.native
   sealed trait bicycle_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def bicycle_shops: bicycle_shops = "bicycle_shops".asInstanceOf[bicycle_shops]
   
   @js.native
   sealed trait billiard_pool_establishments
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def billiard_pool_establishments: billiard_pool_establishments = "billiard_pool_establishments".asInstanceOf[billiard_pool_establishments]
   
   @js.native
@@ -9033,47 +9035,47 @@ object stripeStrings {
   @js.native
   sealed trait boat_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def boat_dealers: boat_dealers = "boat_dealers".asInstanceOf[boat_dealers]
   
   @js.native
   sealed trait boat_rentals_and_leases
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def boat_rentals_and_leases: boat_rentals_and_leases = "boat_rentals_and_leases".asInstanceOf[boat_rentals_and_leases]
   
   @js.native
@@ -9113,70 +9115,70 @@ object stripeStrings {
   @js.native
   sealed trait book_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def book_stores: book_stores = "book_stores".asInstanceOf[book_stores]
   
   @js.native
   sealed trait books_periodicals_and_newspapers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def books_periodicals_and_newspapers: books_periodicals_and_newspapers = "books_periodicals_and_newspapers".asInstanceOf[books_periodicals_and_newspapers]
   
   @js.native
   sealed trait bowling_alleys
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def bowling_alleys: bowling_alleys = "bowling_alleys".asInstanceOf[bowling_alleys]
   
   @js.native
@@ -9299,24 +9301,24 @@ object stripeStrings {
   @js.native
   sealed trait bus_lines
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def bus_lines: bus_lines = "bus_lines".asInstanceOf[bus_lines]
   
   @js.native
@@ -9376,47 +9378,47 @@ object stripeStrings {
   @js.native
   sealed trait business_secretarial_schools
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def business_secretarial_schools: business_secretarial_schools = "business_secretarial_schools".asInstanceOf[business_secretarial_schools]
   
   @js.native
   sealed trait buying_shopping_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def buying_shopping_services: buying_shopping_services = "buying_shopping_services".asInstanceOf[buying_shopping_services]
   
   @js.native
@@ -9519,24 +9521,24 @@ object stripeStrings {
   @js.native
   sealed trait cable_satellite_and_other_pay_television_and_radio
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def cable_satellite_and_other_pay_television_and_radio: cable_satellite_and_other_pay_television_and_radio = "cable_satellite_and_other_pay_television_and_radio".asInstanceOf[cable_satellite_and_other_pay_television_and_radio]
   
   @js.native
@@ -9553,24 +9555,24 @@ object stripeStrings {
   @js.native
   sealed trait camera_and_photographic_supply_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def camera_and_photographic_supply_stores: camera_and_photographic_supply_stores = "camera_and_photographic_supply_stores".asInstanceOf[camera_and_photographic_supply_stores]
   
   @js.native
@@ -9620,24 +9622,24 @@ object stripeStrings {
   @js.native
   sealed trait candy_nut_and_confectionery_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def candy_nut_and_confectionery_stores: candy_nut_and_confectionery_stores = "candy_nut_and_confectionery_stores".asInstanceOf[candy_nut_and_confectionery_stores]
   
   @js.native
@@ -9689,93 +9691,93 @@ object stripeStrings {
   @js.native
   sealed trait car_and_truck_dealers_new_used
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def car_and_truck_dealers_new_used: car_and_truck_dealers_new_used = "car_and_truck_dealers_new_used".asInstanceOf[car_and_truck_dealers_new_used]
   
   @js.native
   sealed trait car_and_truck_dealers_used_only
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def car_and_truck_dealers_used_only: car_and_truck_dealers_used_only = "car_and_truck_dealers_used_only".asInstanceOf[car_and_truck_dealers_used_only]
   
   @js.native
   sealed trait car_rental_agencies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def car_rental_agencies: car_rental_agencies = "car_rental_agencies".asInstanceOf[car_rental_agencies]
   
   @js.native
   sealed trait car_washes
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def car_washes: car_washes = "car_washes".asInstanceOf[car_washes]
   
   @js.native
@@ -9885,47 +9887,47 @@ object stripeStrings {
   @js.native
   sealed trait carpentry_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def carpentry_services: carpentry_services = "carpentry_services".asInstanceOf[carpentry_services]
   
   @js.native
   sealed trait carpet_upholstery_cleaning
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def carpet_upholstery_cleaning: carpet_upholstery_cleaning = "carpet_upholstery_cleaning".asInstanceOf[carpet_upholstery_cleaning]
   
   @js.native
@@ -9958,7 +9960,7 @@ object stripeStrings {
   @js.native
   sealed trait cash
     extends StObject
-       with typings.stripe.mod.Stripe.FinancialConnections.Account.Category
+       with Category
        with typings.stripe.mod.Stripe.FinancialConnections.Account.Balance.Type
   inline def cash: cash = "cash".asInstanceOf[cash]
   
@@ -9976,24 +9978,24 @@ object stripeStrings {
   @js.native
   sealed trait caterers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def caterers: caterers = "caterers".asInstanceOf[caterers]
   
   @js.native
@@ -10160,24 +10162,24 @@ object stripeStrings {
   @js.native
   sealed trait charitable_and_social_service_organizations_fundraising
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def charitable_and_social_service_organizations_fundraising: charitable_and_social_service_organizations_fundraising = "charitable_and_social_service_organizations_fundraising".asInstanceOf[charitable_and_social_service_organizations_fundraising]
   
   @js.native
@@ -10238,70 +10240,70 @@ object stripeStrings {
   @js.native
   sealed trait chemicals_and_allied_products
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def chemicals_and_allied_products: chemicals_and_allied_products = "chemicals_and_allied_products".asInstanceOf[chemicals_and_allied_products]
   
   @js.native
   sealed trait child_care_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def child_care_services: child_care_services = "child_care_services".asInstanceOf[child_care_services]
   
   @js.native
   sealed trait childrens_and_infants_wear_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def childrens_and_infants_wear_stores: childrens_and_infants_wear_stores = "childrens_and_infants_wear_stores".asInstanceOf[childrens_and_infants_wear_stores]
   
   @js.native
@@ -10313,70 +10315,70 @@ object stripeStrings {
   @js.native
   sealed trait chiropodists_podiatrists
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def chiropodists_podiatrists: chiropodists_podiatrists = "chiropodists_podiatrists".asInstanceOf[chiropodists_podiatrists]
   
   @js.native
   sealed trait chiropractors
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def chiropractors: chiropractors = "chiropractors".asInstanceOf[chiropractors]
   
   @js.native
   sealed trait cigar_stores_and_stands
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def cigar_stores_and_stands: cigar_stores_and_stands = "cigar_stores_and_stands".asInstanceOf[cigar_stores_and_stands]
   
   @js.native
@@ -10410,24 +10412,24 @@ object stripeStrings {
   @js.native
   sealed trait civic_social_fraternal_associations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def civic_social_fraternal_associations: civic_social_fraternal_associations = "civic_social_fraternal_associations".asInstanceOf[civic_social_fraternal_associations]
   
   @js.native
@@ -10448,24 +10450,24 @@ object stripeStrings {
   @js.native
   sealed trait cleaning_and_maintenance
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def cleaning_and_maintenance: cleaning_and_maintenance = "cleaning_and_maintenance".asInstanceOf[cleaning_and_maintenance]
   
   @js.native
@@ -10485,24 +10487,24 @@ object stripeStrings {
   @js.native
   sealed trait clothing_rental
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def clothing_rental: clothing_rental = "clothing_rental".asInstanceOf[clothing_rental]
   
   @js.native
@@ -10518,24 +10520,24 @@ object stripeStrings {
   @js.native
   sealed trait colleges_universities
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def colleges_universities: colleges_universities = "colleges_universities".asInstanceOf[colleges_universities]
   
   @js.native
@@ -10560,93 +10562,93 @@ object stripeStrings {
   @js.native
   sealed trait commercial_equipment
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def commercial_equipment: commercial_equipment = "commercial_equipment".asInstanceOf[commercial_equipment]
   
   @js.native
   sealed trait commercial_footwear
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def commercial_footwear: commercial_footwear = "commercial_footwear".asInstanceOf[commercial_footwear]
   
   @js.native
   sealed trait commercial_photography_art_and_graphics
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def commercial_photography_art_and_graphics: commercial_photography_art_and_graphics = "commercial_photography_art_and_graphics".asInstanceOf[commercial_photography_art_and_graphics]
   
   @js.native
   sealed trait commuter_transport_and_ferries
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def commuter_transport_and_ferries: commuter_transport_and_ferries = "commuter_transport_and_ferries".asInstanceOf[commuter_transport_and_ferries]
   
   @js.native
@@ -10716,139 +10718,139 @@ object stripeStrings {
   @js.native
   sealed trait computer_network_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def computer_network_services: computer_network_services = "computer_network_services".asInstanceOf[computer_network_services]
   
   @js.native
   sealed trait computer_programming
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def computer_programming: computer_programming = "computer_programming".asInstanceOf[computer_programming]
   
   @js.native
   sealed trait computer_repair
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def computer_repair: computer_repair = "computer_repair".asInstanceOf[computer_repair]
   
   @js.native
   sealed trait computer_software_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def computer_software_stores: computer_software_stores = "computer_software_stores".asInstanceOf[computer_software_stores]
   
   @js.native
   sealed trait computers_peripherals_and_software
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def computers_peripherals_and_software: computers_peripherals_and_software = "computers_peripherals_and_software".asInstanceOf[computers_peripherals_and_software]
   
   @js.native
   sealed trait concrete_work_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def concrete_work_services: concrete_work_services = "concrete_work_services".asInstanceOf[concrete_work_services]
   
   @js.native
@@ -10873,47 +10875,47 @@ object stripeStrings {
   @js.native
   sealed trait construction_materials
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def construction_materials: construction_materials = "construction_materials".asInstanceOf[construction_materials]
   
   @js.native
   sealed trait consulting_public_relations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def consulting_public_relations: consulting_public_relations = "consulting_public_relations".asInstanceOf[consulting_public_relations]
   
   @js.native
@@ -10967,70 +10969,70 @@ object stripeStrings {
   @js.native
   sealed trait correspondence_schools
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def correspondence_schools: correspondence_schools = "correspondence_schools".asInstanceOf[correspondence_schools]
   
   @js.native
   sealed trait cosmetic_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def cosmetic_stores: cosmetic_stores = "cosmetic_stores".asInstanceOf[cosmetic_stores]
   
   @js.native
   sealed trait counseling_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def counseling_services: counseling_services = "counseling_services".asInstanceOf[counseling_services]
   
   @js.native
@@ -11043,24 +11045,24 @@ object stripeStrings {
   @js.native
   sealed trait country_clubs
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def country_clubs: country_clubs = "country_clubs".asInstanceOf[country_clubs]
   
   @js.native
@@ -11101,47 +11103,47 @@ object stripeStrings {
   @js.native
   sealed trait courier_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def courier_services: courier_services = "courier_services".asInstanceOf[courier_services]
   
   @js.native
   sealed trait court_costs
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def court_costs: court_costs = "court_costs".asInstanceOf[court_costs]
   
   @js.native
@@ -11177,7 +11179,7 @@ object stripeStrings {
   sealed trait credit
     extends StObject
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.CardPresent.Receipt.AccountType
-       with typings.stripe.mod.Stripe.FinancialConnections.Account.Category
+       with Category
        with typings.stripe.mod.Stripe.FinancialConnections.Account.Balance.Type
   inline def credit: credit = "credit".asInstanceOf[credit]
   
@@ -11235,24 +11237,24 @@ object stripeStrings {
   @js.native
   sealed trait credit_reporting_agencies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def credit_reporting_agencies: credit_reporting_agencies = "credit_reporting_agencies".asInstanceOf[credit_reporting_agencies]
   
   @js.native
@@ -11276,24 +11278,24 @@ object stripeStrings {
   @js.native
   sealed trait cruise_lines
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def cruise_lines: cruise_lines = "cruise_lines".asInstanceOf[cruise_lines]
   
   @js.native
@@ -11577,24 +11579,24 @@ object stripeStrings {
   @js.native
   sealed trait dairy_products_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def dairy_products_stores: dairy_products_stores = "dairy_products_stores".asInstanceOf[dairy_products_stores]
   
   @js.native
@@ -11607,47 +11609,47 @@ object stripeStrings {
   @js.native
   sealed trait dance_hall_studios_schools
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def dance_hall_studios_schools: dance_hall_studios_schools = "dance_hall_studios_schools".asInstanceOf[dance_hall_studios_schools]
   
   @js.native
   sealed trait dating_escort_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def dating_escort_services: dating_escort_services = "dating_escort_services".asInstanceOf[dating_escort_services]
   
   @js.native
@@ -11816,47 +11818,47 @@ object stripeStrings {
   @js.native
   sealed trait dentists_orthodontists
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def dentists_orthodontists: dentists_orthodontists = "dentists_orthodontists".asInstanceOf[dentists_orthodontists]
   
   @js.native
   sealed trait department_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def department_stores: department_stores = "department_stores".asInstanceOf[department_stores]
   
   @js.native
@@ -11890,24 +11892,24 @@ object stripeStrings {
   @js.native
   sealed trait detective_agencies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def detective_agencies: detective_agencies = "detective_agencies".asInstanceOf[detective_agencies]
   
   @js.native
@@ -11953,93 +11955,93 @@ object stripeStrings {
   @js.native
   sealed trait digital_goods_applications
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def digital_goods_applications: digital_goods_applications = "digital_goods_applications".asInstanceOf[digital_goods_applications]
   
   @js.native
   sealed trait digital_goods_games
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def digital_goods_games: digital_goods_games = "digital_goods_games".asInstanceOf[digital_goods_games]
   
   @js.native
   sealed trait digital_goods_large_volume
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def digital_goods_large_volume: digital_goods_large_volume = "digital_goods_large_volume".asInstanceOf[digital_goods_large_volume]
   
   @js.native
   sealed trait digital_goods_media
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def digital_goods_media: digital_goods_media = "digital_goods_media".asInstanceOf[digital_goods_media]
   
   @js.native
@@ -12061,185 +12063,185 @@ object stripeStrings {
   @js.native
   sealed trait direct_marketing_catalog_merchant
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_catalog_merchant: direct_marketing_catalog_merchant = "direct_marketing_catalog_merchant".asInstanceOf[direct_marketing_catalog_merchant]
   
   @js.native
   sealed trait direct_marketing_combination_catalog_and_retail_merchant
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_combination_catalog_and_retail_merchant: direct_marketing_combination_catalog_and_retail_merchant = "direct_marketing_combination_catalog_and_retail_merchant".asInstanceOf[direct_marketing_combination_catalog_and_retail_merchant]
   
   @js.native
   sealed trait direct_marketing_inbound_telemarketing
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_inbound_telemarketing: direct_marketing_inbound_telemarketing = "direct_marketing_inbound_telemarketing".asInstanceOf[direct_marketing_inbound_telemarketing]
   
   @js.native
   sealed trait direct_marketing_insurance_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_insurance_services: direct_marketing_insurance_services = "direct_marketing_insurance_services".asInstanceOf[direct_marketing_insurance_services]
   
   @js.native
   sealed trait direct_marketing_other
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_other: direct_marketing_other = "direct_marketing_other".asInstanceOf[direct_marketing_other]
   
   @js.native
   sealed trait direct_marketing_outbound_telemarketing
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_outbound_telemarketing: direct_marketing_outbound_telemarketing = "direct_marketing_outbound_telemarketing".asInstanceOf[direct_marketing_outbound_telemarketing]
   
   @js.native
   sealed trait direct_marketing_subscription
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_subscription: direct_marketing_subscription = "direct_marketing_subscription".asInstanceOf[direct_marketing_subscription]
   
   @js.native
   sealed trait direct_marketing_travel
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def direct_marketing_travel: direct_marketing_travel = "direct_marketing_travel".asInstanceOf[direct_marketing_travel]
   
   @js.native
@@ -12264,24 +12266,24 @@ object stripeStrings {
   @js.native
   sealed trait discount_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def discount_stores: discount_stores = "discount_stores".asInstanceOf[discount_stores]
   
   @js.native
@@ -12328,24 +12330,24 @@ object stripeStrings {
   @js.native
   sealed trait doctors
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def doctors: doctors = "doctors".asInstanceOf[doctors]
   
   @js.native
@@ -12412,24 +12414,24 @@ object stripeStrings {
   @js.native
   sealed trait door_to_door_sales
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def door_to_door_sales: door_to_door_sales = "door_to_door_sales".asInstanceOf[door_to_door_sales]
   
   @js.native
@@ -12453,47 +12455,47 @@ object stripeStrings {
   @js.native
   sealed trait drapery_window_covering_and_upholstery_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def drapery_window_covering_and_upholstery_stores: drapery_window_covering_and_upholstery_stores = "drapery_window_covering_and_upholstery_stores".asInstanceOf[drapery_window_covering_and_upholstery_stores]
   
   @js.native
   sealed trait drinking_places
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def drinking_places: drinking_places = "drinking_places".asInstanceOf[drinking_places]
   
   @js.native
@@ -12509,70 +12511,70 @@ object stripeStrings {
   @js.native
   sealed trait drug_stores_and_pharmacies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def drug_stores_and_pharmacies: drug_stores_and_pharmacies = "drug_stores_and_pharmacies".asInstanceOf[drug_stores_and_pharmacies]
   
   @js.native
   sealed trait drugs_drug_proprietaries_and_druggist_sundries
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def drugs_drug_proprietaries_and_druggist_sundries: drugs_drug_proprietaries_and_druggist_sundries = "drugs_drug_proprietaries_and_druggist_sundries".asInstanceOf[drugs_drug_proprietaries_and_druggist_sundries]
   
   @js.native
   sealed trait dry_cleaners
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def dry_cleaners: dry_cleaners = "dry_cleaners".asInstanceOf[dry_cleaners]
   
   @js.native
@@ -12596,47 +12598,47 @@ object stripeStrings {
   @js.native
   sealed trait durable_goods
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def durable_goods: durable_goods = "durable_goods".asInstanceOf[durable_goods]
   
   @js.native
   sealed trait duty_free_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def duty_free_stores: duty_free_stores = "duty_free_stores".asInstanceOf[duty_free_stores]
   
   @js.native
@@ -12656,47 +12658,47 @@ object stripeStrings {
   @js.native
   sealed trait eating_places_restaurants
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def eating_places_restaurants: eating_places_restaurants = "eating_places_restaurants".asInstanceOf[eating_places_restaurants]
   
   @js.native
   sealed trait educational_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def educational_services: educational_services = "educational_services".asInstanceOf[educational_services]
   
   @js.native
@@ -12717,139 +12719,139 @@ object stripeStrings {
   @js.native
   sealed trait electric_razor_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def electric_razor_stores: electric_razor_stores = "electric_razor_stores".asInstanceOf[electric_razor_stores]
   
   @js.native
   sealed trait electrical_parts_and_equipment
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def electrical_parts_and_equipment: electrical_parts_and_equipment = "electrical_parts_and_equipment".asInstanceOf[electrical_parts_and_equipment]
   
   @js.native
   sealed trait electrical_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def electrical_services: electrical_services = "electrical_services".asInstanceOf[electrical_services]
   
   @js.native
   sealed trait electronics_repair_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def electronics_repair_shops: electronics_repair_shops = "electronics_repair_shops".asInstanceOf[electronics_repair_shops]
   
   @js.native
   sealed trait electronics_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def electronics_stores: electronics_stores = "electronics_stores".asInstanceOf[electronics_stores]
   
   @js.native
   sealed trait elementary_secondary_schools
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def elementary_secondary_schools: elementary_secondary_schools = "elementary_secondary_schools".asInstanceOf[elementary_secondary_schools]
   
   @js.native
@@ -12868,24 +12870,24 @@ object stripeStrings {
   @js.native
   sealed trait employment_temp_agencies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def employment_temp_agencies: employment_temp_agencies = "employment_temp_agencies".asInstanceOf[employment_temp_agencies]
   
   @js.native
@@ -13198,24 +13200,24 @@ object stripeStrings {
   @js.native
   sealed trait equipment_rental
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def equipment_rental: equipment_rental = "equipment_rental".asInstanceOf[equipment_rental]
   
   @js.native
@@ -13507,24 +13509,24 @@ object stripeStrings {
   @js.native
   sealed trait exterminating_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def exterminating_services: exterminating_services = "exterminating_services".asInstanceOf[exterminating_services]
   
   @js.native
@@ -13571,24 +13573,24 @@ object stripeStrings {
   @js.native
   sealed trait family_clothing_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def family_clothing_stores: family_clothing_stores = "family_clothing_stores".asInstanceOf[family_clothing_stores]
   
   @js.native
@@ -13600,24 +13602,24 @@ object stripeStrings {
   @js.native
   sealed trait fast_food_restaurants
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def fast_food_restaurants: fast_food_restaurants = "fast_food_restaurants".asInstanceOf[fast_food_restaurants]
   
   @js.native
@@ -13771,24 +13773,24 @@ object stripeStrings {
   @js.native
   sealed trait financial_institutions
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def financial_institutions: financial_institutions = "financial_institutions".asInstanceOf[financial_institutions]
   
   @js.native
@@ -13818,24 +13820,24 @@ object stripeStrings {
   @js.native
   sealed trait fines_government_administrative_entities
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def fines_government_administrative_entities: fines_government_administrative_entities = "fines_government_administrative_entities".asInstanceOf[fines_government_administrative_entities]
   
   @js.native
@@ -13848,24 +13850,24 @@ object stripeStrings {
   @js.native
   sealed trait fireplace_fireplace_screens_and_accessories_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def fireplace_fireplace_screens_and_accessories_stores: fireplace_fireplace_screens_and_accessories_stores = "fireplace_fireplace_screens_and_accessories_stores".asInstanceOf[fireplace_fireplace_screens_and_accessories_stores]
   
   @js.native
@@ -13895,70 +13897,70 @@ object stripeStrings {
   @js.native
   sealed trait floor_covering_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def floor_covering_stores: floor_covering_stores = "floor_covering_stores".asInstanceOf[floor_covering_stores]
   
   @js.native
   sealed trait florists
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def florists: florists = "florists".asInstanceOf[florists]
   
   @js.native
   sealed trait florists_supplies_nursery_stock_and_flowers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def florists_supplies_nursery_stock_and_flowers: florists_supplies_nursery_stock_and_flowers = "florists_supplies_nursery_stock_and_flowers".asInstanceOf[florists_supplies_nursery_stock_and_flowers]
   
   @js.native
@@ -14120,24 +14122,24 @@ object stripeStrings {
   @js.native
   sealed trait freezer_and_locker_meat_provisioners
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def freezer_and_locker_meat_provisioners: freezer_and_locker_meat_provisioners = "freezer_and_locker_meat_provisioners".asInstanceOf[freezer_and_locker_meat_provisioners]
   
   @js.native
@@ -14157,24 +14159,24 @@ object stripeStrings {
   @js.native
   sealed trait fuel_dealers_non_automotive
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def fuel_dealers_non_automotive: fuel_dealers_non_automotive = "fuel_dealers_non_automotive".asInstanceOf[fuel_dealers_non_automotive]
   
   @js.native
@@ -14190,93 +14192,70 @@ object stripeStrings {
   @js.native
   sealed trait funeral_services_crematories
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def funeral_services_crematories: funeral_services_crematories = "funeral_services_crematories".asInstanceOf[funeral_services_crematories]
-  
-  @js.native
-  sealed trait furniture_home_furnishings_and_equipment_stores_except_appliances
-    extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
-  inline def furniture_home_furnishings_and_equipment_stores_except_appliances: furniture_home_furnishings_and_equipment_stores_except_appliances = "furniture_home_furnishings_and_equipment_stores_except_appliances".asInstanceOf[furniture_home_furnishings_and_equipment_stores_except_appliances]
   
   @js.native
   sealed trait furniture_repair_refinishing
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def furniture_repair_refinishing: furniture_repair_refinishing = "furniture_repair_refinishing".asInstanceOf[furniture_repair_refinishing]
   
   @js.native
   sealed trait furriers_and_fur_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def furriers_and_fur_shops: furriers_and_fur_shops = "furriers_and_fur_shops".asInstanceOf[furriers_and_fur_shops]
   
   @js.native
@@ -14336,24 +14315,24 @@ object stripeStrings {
   @js.native
   sealed trait general_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def general_services: general_services = "general_services".asInstanceOf[general_services]
   
   @js.native
@@ -14373,24 +14352,24 @@ object stripeStrings {
   @js.native
   sealed trait gift_card_novelty_and_souvenir_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def gift_card_novelty_and_souvenir_shops: gift_card_novelty_and_souvenir_shops = "gift_card_novelty_and_souvenir_shops".asInstanceOf[gift_card_novelty_and_souvenir_shops]
   
   @js.native
@@ -14426,70 +14405,70 @@ object stripeStrings {
   @js.native
   sealed trait glass_paint_and_wallpaper_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def glass_paint_and_wallpaper_stores: glass_paint_and_wallpaper_stores = "glass_paint_and_wallpaper_stores".asInstanceOf[glass_paint_and_wallpaper_stores]
   
   @js.native
   sealed trait glassware_crystal_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def glassware_crystal_stores: glassware_crystal_stores = "glassware_crystal_stores".asInstanceOf[glassware_crystal_stores]
   
   @js.native
   sealed trait golf_courses_public
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def golf_courses_public: golf_courses_public = "golf_courses_public".asInstanceOf[golf_courses_public]
   
   @js.native
@@ -14529,24 +14508,24 @@ object stripeStrings {
   @js.native
   sealed trait government_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def government_services: government_services = "government_services".asInstanceOf[government_services]
   
   @js.native
@@ -14598,24 +14577,24 @@ object stripeStrings {
   @js.native
   sealed trait grocery_stores_supermarkets
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def grocery_stores_supermarkets: grocery_stores_supermarkets = "grocery_stores_supermarkets".asInstanceOf[grocery_stores_supermarkets]
   
   @js.native
@@ -14644,116 +14623,116 @@ object stripeStrings {
   @js.native
   sealed trait hardware_equipment_and_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def hardware_equipment_and_supplies: hardware_equipment_and_supplies = "hardware_equipment_and_supplies".asInstanceOf[hardware_equipment_and_supplies]
   
   @js.native
   sealed trait hardware_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def hardware_stores: hardware_stores = "hardware_stores".asInstanceOf[hardware_stores]
   
   @js.native
   sealed trait health_and_beauty_spas
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def health_and_beauty_spas: health_and_beauty_spas = "health_and_beauty_spas".asInstanceOf[health_and_beauty_spas]
   
   @js.native
   sealed trait hearing_aids_sales_and_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def hearing_aids_sales_and_supplies: hearing_aids_sales_and_supplies = "hearing_aids_sales_and_supplies".asInstanceOf[hearing_aids_sales_and_supplies]
   
   @js.native
   sealed trait heating_plumbing_a_c
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def heating_plumbing_a_c: heating_plumbing_a_c = "heating_plumbing_a_c".asInstanceOf[heating_plumbing_a_c]
   
   @js.native
@@ -14774,47 +14753,47 @@ object stripeStrings {
   @js.native
   sealed trait hobby_toy_and_game_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def hobby_toy_and_game_shops: hobby_toy_and_game_shops = "hobby_toy_and_game_shops".asInstanceOf[hobby_toy_and_game_shops]
   
   @js.native
   sealed trait home_supply_warehouse_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def home_supply_warehouse_stores: home_supply_warehouse_stores = "home_supply_warehouse_stores".asInstanceOf[home_supply_warehouse_stores]
   
   @js.native
@@ -14834,24 +14813,24 @@ object stripeStrings {
   @js.native
   sealed trait hospitals
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def hospitals: hospitals = "hospitals".asInstanceOf[hospitals]
   
   @js.native
@@ -14865,24 +14844,24 @@ object stripeStrings {
   @js.native
   sealed trait hotels_motels_and_resorts
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def hotels_motels_and_resorts: hotels_motels_and_resorts = "hotels_motels_and_resorts".asInstanceOf[hotels_motels_and_resorts]
   
   @js.native
@@ -14903,24 +14882,24 @@ object stripeStrings {
   @js.native
   sealed trait household_appliance_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def household_appliance_stores: household_appliance_stores = "household_appliance_stores".asInstanceOf[household_appliance_stores]
   
   @js.native
@@ -15629,24 +15608,24 @@ object stripeStrings {
   @js.native
   sealed trait industrial_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def industrial_supplies: industrial_supplies = "industrial_supplies".asInstanceOf[industrial_supplies]
   
   @js.native
@@ -15663,24 +15642,24 @@ object stripeStrings {
   @js.native
   sealed trait information_retrieval_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def information_retrieval_services: information_retrieval_services = "information_retrieval_services".asInstanceOf[information_retrieval_services]
   
   @js.native
@@ -15768,47 +15747,47 @@ object stripeStrings {
   @js.native
   sealed trait insurance_default
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def insurance_default: insurance_default = "insurance_default".asInstanceOf[insurance_default]
   
   @js.native
   sealed trait insurance_underwriting_premiums
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def insurance_underwriting_premiums: insurance_underwriting_premiums = "insurance_underwriting_premiums".asInstanceOf[insurance_underwriting_premiums]
   
   @js.native
@@ -15875,24 +15854,24 @@ object stripeStrings {
   @js.native
   sealed trait intra_company_purchases
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def intra_company_purchases: intra_company_purchases = "intra_company_purchases".asInstanceOf[intra_company_purchases]
   
   @js.native
@@ -15988,7 +15967,7 @@ object stripeStrings {
   @js.native
   sealed trait investment
     extends StObject
-       with typings.stripe.mod.Stripe.FinancialConnections.Account.Category
+       with Category
   inline def investment: investment = "investment".asInstanceOf[investment]
   
   @js.native
@@ -16425,24 +16404,24 @@ object stripeStrings {
   @js.native
   sealed trait jewelry_stores_watches_clocks_and_silverware_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def jewelry_stores_watches_clocks_and_silverware_stores: jewelry_stores_watches_clocks_and_silverware_stores = "jewelry_stores_watches_clocks_and_silverware_stores".asInstanceOf[jewelry_stores_watches_clocks_and_silverware_stores]
   
   @js.native
@@ -16611,24 +16590,24 @@ object stripeStrings {
   @js.native
   sealed trait landscaping_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def landscaping_services: landscaping_services = "landscaping_services".asInstanceOf[landscaping_services]
   
   @js.native
@@ -16652,47 +16631,47 @@ object stripeStrings {
   @js.native
   sealed trait laundries
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def laundries: laundries = "laundries".asInstanceOf[laundries]
   
   @js.native
   sealed trait laundry_cleaning_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def laundry_cleaning_services: laundry_cleaning_services = "laundry_cleaning_services".asInstanceOf[laundry_cleaning_services]
   
   @js.native
@@ -16704,24 +16683,24 @@ object stripeStrings {
   @js.native
   sealed trait legal_services_attorneys
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def legal_services_attorneys: legal_services_attorneys = "legal_services_attorneys".asInstanceOf[legal_services_attorneys]
   
   @js.native
@@ -16852,47 +16831,47 @@ object stripeStrings {
   @js.native
   sealed trait luggage_and_leather_goods_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def luggage_and_leather_goods_stores: luggage_and_leather_goods_stores = "luggage_and_leather_goods_stores".asInstanceOf[luggage_and_leather_goods_stores]
   
   @js.native
   sealed trait lumber_building_materials_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def lumber_building_materials_stores: lumber_building_materials_stores = "lumber_building_materials_stores".asInstanceOf[lumber_building_materials_stores]
   
   @js.native
@@ -16963,24 +16942,24 @@ object stripeStrings {
   @js.native
   sealed trait manual_cash_disburse
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def manual_cash_disburse: manual_cash_disburse = "manual_cash_disburse".asInstanceOf[manual_cash_disburse]
   
   @js.native
@@ -17000,24 +16979,24 @@ object stripeStrings {
   @js.native
   sealed trait marinas_service_and_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def marinas_service_and_supplies: marinas_service_and_supplies = "marinas_service_and_supplies".asInstanceOf[marinas_service_and_supplies]
   
   @js.native
@@ -17030,47 +17009,47 @@ object stripeStrings {
   @js.native
   sealed trait masonry_stonework_and_plaster
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def masonry_stonework_and_plaster: masonry_stonework_and_plaster = "masonry_stonework_and_plaster".asInstanceOf[masonry_stonework_and_plaster]
   
   @js.native
   sealed trait massage_parlors
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def massage_parlors: massage_parlors = "massage_parlors".asInstanceOf[massage_parlors]
   
   @js.native
@@ -17175,139 +17154,116 @@ object stripeStrings {
   @js.native
   sealed trait medical_and_dental_labs
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def medical_and_dental_labs: medical_and_dental_labs = "medical_and_dental_labs".asInstanceOf[medical_and_dental_labs]
-  
-  @js.native
-  sealed trait medical_dental_ophthalmic_and_hospital_equipment_and_supplies
-    extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
-  inline def medical_dental_ophthalmic_and_hospital_equipment_and_supplies: medical_dental_ophthalmic_and_hospital_equipment_and_supplies = "medical_dental_ophthalmic_and_hospital_equipment_and_supplies".asInstanceOf[medical_dental_ophthalmic_and_hospital_equipment_and_supplies]
   
   @js.native
   sealed trait medical_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def medical_services: medical_services = "medical_services".asInstanceOf[medical_services]
   
   @js.native
   sealed trait membership_organizations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def membership_organizations: membership_organizations = "membership_organizations".asInstanceOf[membership_organizations]
   
   @js.native
   sealed trait mens_and_boys_clothing_and_accessories_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def mens_and_boys_clothing_and_accessories_stores: mens_and_boys_clothing_and_accessories_stores = "mens_and_boys_clothing_and_accessories_stores".asInstanceOf[mens_and_boys_clothing_and_accessories_stores]
   
   @js.native
   sealed trait mens_womens_clothing_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def mens_womens_clothing_stores: mens_womens_clothing_stores = "mens_womens_clothing_stores".asInstanceOf[mens_womens_clothing_stores]
   
   @js.native
@@ -17346,24 +17302,24 @@ object stripeStrings {
   @js.native
   sealed trait metal_service_centers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def metal_service_centers: metal_service_centers = "metal_service_centers".asInstanceOf[metal_service_centers]
   
   @js.native
@@ -17433,277 +17389,277 @@ object stripeStrings {
   @js.native
   sealed trait miscellaneous
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous: miscellaneous = "miscellaneous".asInstanceOf[miscellaneous]
   
   @js.native
   sealed trait miscellaneous_apparel_and_accessory_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_apparel_and_accessory_shops: miscellaneous_apparel_and_accessory_shops = "miscellaneous_apparel_and_accessory_shops".asInstanceOf[miscellaneous_apparel_and_accessory_shops]
   
   @js.native
   sealed trait miscellaneous_auto_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_auto_dealers: miscellaneous_auto_dealers = "miscellaneous_auto_dealers".asInstanceOf[miscellaneous_auto_dealers]
   
   @js.native
   sealed trait miscellaneous_business_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_business_services: miscellaneous_business_services = "miscellaneous_business_services".asInstanceOf[miscellaneous_business_services]
   
   @js.native
   sealed trait miscellaneous_food_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_food_stores: miscellaneous_food_stores = "miscellaneous_food_stores".asInstanceOf[miscellaneous_food_stores]
   
   @js.native
   sealed trait miscellaneous_general_merchandise
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_general_merchandise: miscellaneous_general_merchandise = "miscellaneous_general_merchandise".asInstanceOf[miscellaneous_general_merchandise]
   
   @js.native
   sealed trait miscellaneous_general_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_general_services: miscellaneous_general_services = "miscellaneous_general_services".asInstanceOf[miscellaneous_general_services]
   
   @js.native
   sealed trait miscellaneous_home_furnishing_specialty_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_home_furnishing_specialty_stores: miscellaneous_home_furnishing_specialty_stores = "miscellaneous_home_furnishing_specialty_stores".asInstanceOf[miscellaneous_home_furnishing_specialty_stores]
   
   @js.native
   sealed trait miscellaneous_publishing_and_printing
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_publishing_and_printing: miscellaneous_publishing_and_printing = "miscellaneous_publishing_and_printing".asInstanceOf[miscellaneous_publishing_and_printing]
   
   @js.native
   sealed trait miscellaneous_recreation_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_recreation_services: miscellaneous_recreation_services = "miscellaneous_recreation_services".asInstanceOf[miscellaneous_recreation_services]
   
   @js.native
   sealed trait miscellaneous_repair_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_repair_shops: miscellaneous_repair_shops = "miscellaneous_repair_shops".asInstanceOf[miscellaneous_repair_shops]
   
   @js.native
   sealed trait miscellaneous_specialty_retail
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def miscellaneous_specialty_retail: miscellaneous_specialty_retail = "miscellaneous_specialty_retail".asInstanceOf[miscellaneous_specialty_retail]
   
   @js.native
@@ -17740,24 +17696,24 @@ object stripeStrings {
   @js.native
   sealed trait mobile_home_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def mobile_home_dealers: mobile_home_dealers = "mobile_home_dealers".asInstanceOf[mobile_home_dealers]
   
   @js.native
@@ -17850,139 +17806,139 @@ object stripeStrings {
   @js.native
   sealed trait motion_picture_theaters
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def motion_picture_theaters: motion_picture_theaters = "motion_picture_theaters".asInstanceOf[motion_picture_theaters]
   
   @js.native
   sealed trait motor_freight_carriers_and_trucking
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def motor_freight_carriers_and_trucking: motor_freight_carriers_and_trucking = "motor_freight_carriers_and_trucking".asInstanceOf[motor_freight_carriers_and_trucking]
   
   @js.native
   sealed trait motor_homes_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def motor_homes_dealers: motor_homes_dealers = "motor_homes_dealers".asInstanceOf[motor_homes_dealers]
   
   @js.native
   sealed trait motor_vehicle_supplies_and_new_parts
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def motor_vehicle_supplies_and_new_parts: motor_vehicle_supplies_and_new_parts = "motor_vehicle_supplies_and_new_parts".asInstanceOf[motor_vehicle_supplies_and_new_parts]
   
   @js.native
   sealed trait motorcycle_shops_and_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def motorcycle_shops_and_dealers: motorcycle_shops_and_dealers = "motorcycle_shops_and_dealers".asInstanceOf[motorcycle_shops_and_dealers]
   
   @js.native
   sealed trait motorcycle_shops_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def motorcycle_shops_dealers: motorcycle_shops_dealers = "motorcycle_shops_dealers".asInstanceOf[motorcycle_shops_dealers]
   
   @js.native
@@ -18028,24 +17984,24 @@ object stripeStrings {
   @js.native
   sealed trait music_stores_musical_instruments_pianos_and_sheet_music
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def music_stores_musical_instruments_pianos_and_sheet_music: music_stores_musical_instruments_pianos_and_sheet_music = "music_stores_musical_instruments_pianos_and_sheet_music".asInstanceOf[music_stores_musical_instruments_pianos_and_sheet_music]
   
   @js.native
@@ -18195,24 +18151,24 @@ object stripeStrings {
   @js.native
   sealed trait news_dealers_and_newsstands
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def news_dealers_and_newsstands: news_dealers_and_newsstands = "news_dealers_and_newsstands".asInstanceOf[news_dealers_and_newsstands]
   
   @js.native
@@ -18317,47 +18273,47 @@ object stripeStrings {
   @js.native
   sealed trait non_fi_money_orders
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def non_fi_money_orders: non_fi_money_orders = "non_fi_money_orders".asInstanceOf[non_fi_money_orders]
   
   @js.native
   sealed trait non_fi_stored_value_card_purchase_load
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def non_fi_stored_value_card_purchase_load: non_fi_stored_value_card_purchase_load = "non_fi_stored_value_card_purchase_load".asInstanceOf[non_fi_stored_value_card_purchase_load]
   
   @js.native
@@ -18372,24 +18328,24 @@ object stripeStrings {
   @js.native
   sealed trait nondurable_goods
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def nondurable_goods: nondurable_goods = "nondurable_goods".asInstanceOf[nondurable_goods]
   
   @js.native
@@ -18521,6 +18477,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.CustomerUpdateParams.TaxExempt
        with typings.stripe.mod.Stripe.Customer.TaxExempt
        with typings.stripe.mod.Stripe.Order.TaxDetails.TaxExempt
+       with TermsOfService
+       with typings.stripe.mod.Stripe.Checkout.Session.ConsentCollection.TermsOfService
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.ConsentCollection.TermsOfService
+       with typings.stripe.mod.Stripe.PaymentLink.ConsentCollection.TermsOfService
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -18582,47 +18542,47 @@ object stripeStrings {
   @js.native
   sealed trait nurseries_lawn_and_garden_supply_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def nurseries_lawn_and_garden_supply_stores: nurseries_lawn_and_garden_supply_stores = "nurseries_lawn_and_garden_supply_stores".asInstanceOf[nurseries_lawn_and_garden_supply_stores]
   
   @js.native
   sealed trait nursing_personal_care
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def nursing_personal_care: nursing_personal_care = "nursing_personal_care".asInstanceOf[nursing_personal_care]
   
   @js.native
@@ -18779,24 +18739,24 @@ object stripeStrings {
   @js.native
   sealed trait office_and_commercial_furniture
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def office_and_commercial_furniture: office_and_commercial_furniture = "office_and_commercial_furniture".asInstanceOf[office_and_commercial_furniture]
   
   @js.native
@@ -18951,47 +18911,47 @@ object stripeStrings {
   @js.native
   sealed trait opticians_eyeglasses
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def opticians_eyeglasses: opticians_eyeglasses = "opticians_eyeglasses".asInstanceOf[opticians_eyeglasses]
   
   @js.native
   sealed trait optometrists_ophthalmologist
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def optometrists_ophthalmologist: optometrists_ophthalmologist = "optometrists_ophthalmologist".asInstanceOf[optometrists_ophthalmologist]
   
   @js.native
@@ -19017,53 +18977,53 @@ object stripeStrings {
   @js.native
   sealed trait orthopedic_goods_prosthetic_devices
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def orthopedic_goods_prosthetic_devices: orthopedic_goods_prosthetic_devices = "orthopedic_goods_prosthetic_devices".asInstanceOf[orthopedic_goods_prosthetic_devices]
   
   @js.native
   sealed trait osteopaths
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def osteopaths: osteopaths = "osteopaths".asInstanceOf[osteopaths]
   
   @js.native
   sealed trait other
     extends StObject
-       with typings.stripe.mod.Stripe.FinancialConnections.Account.Category
+       with Category
        with typings.stripe.mod.Stripe.TestHelpers.Treasury.InboundTransferFailParams.FailureDetails.Code
        with typings.stripe.mod.Stripe.TestHelpers.Treasury.OutboundTransferReturnOutboundTransferParams.ReturnedDetails.Code
        with typings.stripe.mod.Stripe.TestHelpers.Treasury.OutboundPaymentReturnOutboundPaymentParams.ReturnedDetails.Code
@@ -19301,24 +19261,24 @@ object stripeStrings {
   @js.native
   sealed trait package_stores_beer_wine_and_liquor
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def package_stores_beer_wine_and_liquor: package_stores_beer_wine_and_liquor = "package_stores_beer_wine_and_liquor".asInstanceOf[package_stores_beer_wine_and_liquor]
   
   @js.native
@@ -19332,47 +19292,47 @@ object stripeStrings {
   @js.native
   sealed trait paints_varnishes_and_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def paints_varnishes_and_supplies: paints_varnishes_and_supplies = "paints_varnishes_and_supplies".asInstanceOf[paints_varnishes_and_supplies]
   
   @js.native
   sealed trait parking_lots_garages
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def parking_lots_garages: parking_lots_garages = "parking_lots_garages".asInstanceOf[parking_lots_garages]
   
   @js.native
@@ -19384,24 +19344,24 @@ object stripeStrings {
   @js.native
   sealed trait passenger_railways
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def passenger_railways: passenger_railways = "passenger_railways".asInstanceOf[passenger_railways]
   
   @js.native
@@ -19424,24 +19384,24 @@ object stripeStrings {
   @js.native
   sealed trait pawn_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def pawn_shops: pawn_shops = "pawn_shops".asInstanceOf[pawn_shops]
   
   @js.native
@@ -19873,47 +19833,47 @@ object stripeStrings {
   @js.native
   sealed trait pet_shops_pet_food_and_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def pet_shops_pet_food_and_supplies: pet_shops_pet_food_and_supplies = "pet_shops_pet_food_and_supplies".asInstanceOf[pet_shops_pet_food_and_supplies]
   
   @js.native
   sealed trait petroleum_and_petroleum_products
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def petroleum_and_petroleum_products: petroleum_and_petroleum_products = "petroleum_and_petroleum_products".asInstanceOf[petroleum_and_petroleum_products]
   
   @js.native
@@ -19938,70 +19898,70 @@ object stripeStrings {
   @js.native
   sealed trait photo_developing
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def photo_developing: photo_developing = "photo_developing".asInstanceOf[photo_developing]
   
   @js.native
   sealed trait photographic_photocopy_microfilm_equipment_and_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def photographic_photocopy_microfilm_equipment_and_supplies: photographic_photocopy_microfilm_equipment_and_supplies = "photographic_photocopy_microfilm_equipment_and_supplies".asInstanceOf[photographic_photocopy_microfilm_equipment_and_supplies]
   
   @js.native
   sealed trait photographic_studios
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def photographic_studios: photographic_studios = "photographic_studios".asInstanceOf[photographic_studios]
   
   @js.native
@@ -20015,47 +19975,47 @@ object stripeStrings {
   @js.native
   sealed trait picture_video_production
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def picture_video_production: picture_video_production = "picture_video_production".asInstanceOf[picture_video_production]
   
   @js.native
   sealed trait piece_goods_notions_and_other_dry_goods
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def piece_goods_notions_and_other_dry_goods: piece_goods_notions_and_other_dry_goods = "piece_goods_notions_and_other_dry_goods".asInstanceOf[piece_goods_notions_and_other_dry_goods]
   
   @js.native
@@ -20148,24 +20108,24 @@ object stripeStrings {
   @js.native
   sealed trait plumbing_heating_equipment_and_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def plumbing_heating_equipment_and_supplies: plumbing_heating_equipment_and_supplies = "plumbing_heating_equipment_and_supplies".asInstanceOf[plumbing_heating_equipment_and_supplies]
   
   @js.native
@@ -20185,24 +20145,24 @@ object stripeStrings {
   @js.native
   sealed trait political_organizations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def political_organizations: political_organizations = "political_organizations".asInstanceOf[political_organizations]
   
   @js.native
@@ -20214,24 +20174,24 @@ object stripeStrings {
   @js.native
   sealed trait postal_services_government_only
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def postal_services_government_only: postal_services_government_only = "postal_services_government_only".asInstanceOf[postal_services_government_only]
   
   @js.native
@@ -20262,24 +20222,24 @@ object stripeStrings {
   @js.native
   sealed trait precious_stones_and_metals_watches_and_jewelry
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def precious_stones_and_metals_watches_and_jewelry: precious_stones_and_metals_watches_and_jewelry = "precious_stones_and_metals_watches_and_jewelry".asInstanceOf[precious_stones_and_metals_watches_and_jewelry]
   
   @js.native
@@ -20429,24 +20389,24 @@ object stripeStrings {
   @js.native
   sealed trait professional_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def professional_services: professional_services = "professional_services".asInstanceOf[professional_services]
   
   @js.native
@@ -20597,24 +20557,24 @@ object stripeStrings {
   @js.native
   sealed trait public_warehousing_and_storage
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def public_warehousing_and_storage: public_warehousing_and_storage = "public_warehousing_and_storage".asInstanceOf[public_warehousing_and_storage]
   
   @js.native
@@ -20636,24 +20596,24 @@ object stripeStrings {
   @js.native
   sealed trait quick_copy_repro_and_blueprint
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def quick_copy_repro_and_blueprint: quick_copy_repro_and_blueprint = "quick_copy_repro_and_blueprint".asInstanceOf[quick_copy_repro_and_blueprint]
   
   @js.native
@@ -20752,24 +20712,24 @@ object stripeStrings {
   @js.native
   sealed trait railroads
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def railroads: railroads = "railroads".asInstanceOf[railroads]
   
   @js.native
@@ -20787,24 +20747,24 @@ object stripeStrings {
   @js.native
   sealed trait real_estate_agents_and_managers_rentals
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def real_estate_agents_and_managers_rentals: real_estate_agents_and_managers_rentals = "real_estate_agents_and_managers_rentals".asInstanceOf[real_estate_agents_and_managers_rentals]
   
   @js.native
@@ -20857,47 +20817,47 @@ object stripeStrings {
   @js.native
   sealed trait record_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def record_stores: record_stores = "record_stores".asInstanceOf[record_stores]
   
   @js.native
   sealed trait recreational_vehicle_rentals
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def recreational_vehicle_rentals: recreational_vehicle_rentals = "recreational_vehicle_rentals".asInstanceOf[recreational_vehicle_rentals]
   
   @js.native
@@ -21044,47 +21004,47 @@ object stripeStrings {
   @js.native
   sealed trait religious_goods_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def religious_goods_stores: religious_goods_stores = "religious_goods_stores".asInstanceOf[religious_goods_stores]
   
   @js.native
   sealed trait religious_organizations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def religious_organizations: religious_organizations = "religious_organizations".asInstanceOf[religious_organizations]
   
   @js.native
@@ -21176,6 +21136,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.BillingAddressCollection
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.BillingAddressCollection
        with typings.stripe.mod.Stripe.PaymentLink.BillingAddressCollection
+       with TermsOfService
+       with typings.stripe.mod.Stripe.Checkout.Session.ConsentCollection.TermsOfService
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.ConsentCollection.TermsOfService
+       with typings.stripe.mod.Stripe.PaymentLink.ConsentCollection.TermsOfService
   inline def required: required = "required".asInstanceOf[required]
   
   @js.native
@@ -21445,24 +21409,24 @@ object stripeStrings {
   @js.native
   sealed trait roofing_siding_sheet_metal
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def roofing_siding_sheet_metal: roofing_siding_sheet_metal = "roofing_siding_sheet_metal".asInstanceOf[roofing_siding_sheet_metal]
   
   @js.native
@@ -21632,47 +21596,47 @@ object stripeStrings {
   @js.native
   sealed trait secretarial_support_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def secretarial_support_services: secretarial_support_services = "secretarial_support_services".asInstanceOf[secretarial_support_services]
   
   @js.native
   sealed trait security_brokers_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def security_brokers_dealers: security_brokers_dealers = "security_brokers_dealers".asInstanceOf[security_brokers_dealers]
   
   @js.native
@@ -21824,24 +21788,24 @@ object stripeStrings {
   @js.native
   sealed trait service_stations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def service_stations: service_stations = "service_stations".asInstanceOf[service_stations]
   
   @js.native
@@ -21909,24 +21873,24 @@ object stripeStrings {
   @js.native
   sealed trait sewing_needlework_fabric_and_piece_goods_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def sewing_needlework_fabric_and_piece_goods_stores: sewing_needlework_fabric_and_piece_goods_stores = "sewing_needlework_fabric_and_piece_goods_stores".asInstanceOf[sewing_needlework_fabric_and_piece_goods_stores]
   
   @js.native
@@ -21995,47 +21959,47 @@ object stripeStrings {
   @js.native
   sealed trait shoe_repair_hat_cleaning
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def shoe_repair_hat_cleaning: shoe_repair_hat_cleaning = "shoe_repair_hat_cleaning".asInstanceOf[shoe_repair_hat_cleaning]
   
   @js.native
   sealed trait shoe_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def shoe_stores: shoe_stores = "shoe_stores".asInstanceOf[shoe_stores]
   
   @js.native
@@ -22139,47 +22103,47 @@ object stripeStrings {
   @js.native
   sealed trait small_appliance_repair
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def small_appliance_repair: small_appliance_repair = "small_appliance_repair".asInstanceOf[small_appliance_repair]
   
   @js.native
   sealed trait snowmobile_dealers
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def snowmobile_dealers: snowmobile_dealers = "snowmobile_dealers".asInstanceOf[snowmobile_dealers]
   
   @js.native
@@ -22347,47 +22311,47 @@ object stripeStrings {
   @js.native
   sealed trait special_trade_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def special_trade_services: special_trade_services = "special_trade_services".asInstanceOf[special_trade_services]
   
   @js.native
   sealed trait specialty_cleaning
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def specialty_cleaning: specialty_cleaning = "specialty_cleaning".asInstanceOf[specialty_cleaning]
   
   @js.native
@@ -22445,116 +22409,116 @@ object stripeStrings {
   @js.native
   sealed trait sporting_goods_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def sporting_goods_stores: sporting_goods_stores = "sporting_goods_stores".asInstanceOf[sporting_goods_stores]
   
   @js.native
   sealed trait sporting_recreation_camps
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def sporting_recreation_camps: sporting_recreation_camps = "sporting_recreation_camps".asInstanceOf[sporting_recreation_camps]
   
   @js.native
   sealed trait sports_and_riding_apparel_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def sports_and_riding_apparel_stores: sports_and_riding_apparel_stores = "sports_and_riding_apparel_stores".asInstanceOf[sports_and_riding_apparel_stores]
   
   @js.native
   sealed trait sports_clubs_fields
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def sports_clubs_fields: sports_clubs_fields = "sports_clubs_fields".asInstanceOf[sports_clubs_fields]
   
   @js.native
   sealed trait stamp_and_coin_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def stamp_and_coin_stores: stamp_and_coin_stores = "stamp_and_coin_stores".asInstanceOf[stamp_and_coin_stores]
   
   @js.native
@@ -22586,47 +22550,47 @@ object stripeStrings {
   @js.native
   sealed trait stationary_office_supplies_printing_and_writing_paper
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def stationary_office_supplies_printing_and_writing_paper: stationary_office_supplies_printing_and_writing_paper = "stationary_office_supplies_printing_and_writing_paper".asInstanceOf[stationary_office_supplies_printing_and_writing_paper]
   
   @js.native
   sealed trait stationery_stores_office_and_school_supply_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def stationery_stores_office_and_school_supply_stores: stationery_stores_office_and_school_supply_stores = "stationery_stores_office_and_school_supply_stores".asInstanceOf[stationery_stores_office_and_school_supply_stores]
   
   @js.native
@@ -22877,24 +22841,24 @@ object stripeStrings {
   @js.native
   sealed trait swimming_pools_sales
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def swimming_pools_sales: swimming_pools_sales = "swimming_pools_sales".asInstanceOf[swimming_pools_sales]
   
   @js.native
@@ -22914,47 +22878,47 @@ object stripeStrings {
   @js.native
   sealed trait t_ui_travel_germany
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def t_ui_travel_germany: t_ui_travel_germany = "t_ui_travel_germany".asInstanceOf[t_ui_travel_germany]
   
   @js.native
   sealed trait tailors_alterations
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def tailors_alterations: tailors_alterations = "tailors_alterations".asInstanceOf[tailors_alterations]
   
   @js.native
@@ -23006,47 +22970,47 @@ object stripeStrings {
   @js.native
   sealed trait tax_payments_government_agencies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def tax_payments_government_agencies: tax_payments_government_agencies = "tax_payments_government_agencies".asInstanceOf[tax_payments_government_agencies]
   
   @js.native
   sealed trait tax_preparation_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def tax_preparation_services: tax_preparation_services = "tax_preparation_services".asInstanceOf[tax_preparation_services]
   
   @js.native
@@ -23070,116 +23034,116 @@ object stripeStrings {
   @js.native
   sealed trait taxicabs_limousines
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def taxicabs_limousines: taxicabs_limousines = "taxicabs_limousines".asInstanceOf[taxicabs_limousines]
   
   @js.native
   sealed trait telecommunication_equipment_and_telephone_sales
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def telecommunication_equipment_and_telephone_sales: telecommunication_equipment_and_telephone_sales = "telecommunication_equipment_and_telephone_sales".asInstanceOf[telecommunication_equipment_and_telephone_sales]
   
   @js.native
   sealed trait telecommunication_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def telecommunication_services: telecommunication_services = "telecommunication_services".asInstanceOf[telecommunication_services]
   
   @js.native
   sealed trait telegraph_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def telegraph_services: telegraph_services = "telegraph_services".asInstanceOf[telegraph_services]
   
   @js.native
   sealed trait tent_and_awning_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def tent_and_awning_shops: tent_and_awning_shops = "tent_and_awning_shops".asInstanceOf[tent_and_awning_shops]
   
   @js.native
@@ -23261,24 +23225,24 @@ object stripeStrings {
   @js.native
   sealed trait testing_laboratories
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def testing_laboratories: testing_laboratories = "testing_laboratories".asInstanceOf[testing_laboratories]
   
   @js.native
@@ -23308,24 +23272,24 @@ object stripeStrings {
   @js.native
   sealed trait theatrical_ticket_agencies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def theatrical_ticket_agencies: theatrical_ticket_agencies = "theatrical_ticket_agencies".asInstanceOf[theatrical_ticket_agencies]
   
   @js.native
@@ -23354,47 +23318,47 @@ object stripeStrings {
   @js.native
   sealed trait timeshares
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def timeshares: timeshares = "timeshares".asInstanceOf[timeshares]
   
   @js.native
   sealed trait tire_retreading_and_repair
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def tire_retreading_and_repair: tire_retreading_and_repair = "tire_retreading_and_repair".asInstanceOf[tire_retreading_and_repair]
   
   @js.native
@@ -23418,24 +23382,24 @@ object stripeStrings {
   @js.native
   sealed trait tolls_bridge_fees
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def tolls_bridge_fees: tolls_bridge_fees = "tolls_bridge_fees".asInstanceOf[tolls_bridge_fees]
   
   @js.native
@@ -23506,47 +23470,47 @@ object stripeStrings {
   @js.native
   sealed trait tourist_attractions_and_exhibits
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def tourist_attractions_and_exhibits: tourist_attractions_and_exhibits = "tourist_attractions_and_exhibits".asInstanceOf[tourist_attractions_and_exhibits]
   
   @js.native
   sealed trait towing_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def towing_services: towing_services = "towing_services".asInstanceOf[towing_services]
   
   @js.native
@@ -23582,24 +23546,24 @@ object stripeStrings {
   @js.native
   sealed trait trailer_parks_campgrounds
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def trailer_parks_campgrounds: trailer_parks_campgrounds = "trailer_parks_campgrounds".asInstanceOf[trailer_parks_campgrounds]
   
   @js.native
@@ -23681,47 +23645,47 @@ object stripeStrings {
   @js.native
   sealed trait transportation_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def transportation_services: transportation_services = "transportation_services".asInstanceOf[transportation_services]
   
   @js.native
   sealed trait travel_agencies_tour_operators
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def travel_agencies_tour_operators: travel_agencies_tour_operators = "travel_agencies_tour_operators".asInstanceOf[travel_agencies_tour_operators]
   
   @js.native
@@ -23989,47 +23953,47 @@ object stripeStrings {
   @js.native
   sealed trait truck_stop_iteration
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def truck_stop_iteration: truck_stop_iteration = "truck_stop_iteration".asInstanceOf[truck_stop_iteration]
   
   @js.native
   sealed trait truck_utility_trailer_rentals
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def truck_utility_trailer_rentals: truck_utility_trailer_rentals = "truck_utility_trailer_rentals".asInstanceOf[truck_utility_trailer_rentals]
   
   @js.native
@@ -24057,70 +24021,70 @@ object stripeStrings {
   @js.native
   sealed trait typesetting_plate_making_and_related_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def typesetting_plate_making_and_related_services: typesetting_plate_making_and_related_services = "typesetting_plate_making_and_related_services".asInstanceOf[typesetting_plate_making_and_related_services]
   
   @js.native
   sealed trait typewriter_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def typewriter_stores: typewriter_stores = "typewriter_stores".asInstanceOf[typewriter_stores]
   
   @js.native
   sealed trait u_s_federal_government_agencies_or_departments
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def u_s_federal_government_agencies_or_departments: u_s_federal_government_agencies_or_departments = "u_s_federal_government_agencies_or_departments".asInstanceOf[u_s_federal_government_agencies_or_departments]
   
   @js.native
@@ -24187,24 +24151,24 @@ object stripeStrings {
   @js.native
   sealed trait uniforms_commercial_clothing
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def uniforms_commercial_clothing: uniforms_commercial_clothing = "uniforms_commercial_clothing".asInstanceOf[uniforms_commercial_clothing]
   
   @js.native
@@ -24499,24 +24463,24 @@ object stripeStrings {
   @js.native
   sealed trait used_merchandise_and_secondhand_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def used_merchandise_and_secondhand_stores: used_merchandise_and_secondhand_stores = "used_merchandise_and_secondhand_stores".asInstanceOf[used_merchandise_and_secondhand_stores]
   
   @js.native
@@ -24538,24 +24502,24 @@ object stripeStrings {
   @js.native
   sealed trait utilities
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def utilities: utilities = "utilities".asInstanceOf[utilities]
   
   @js.native
@@ -24587,24 +24551,24 @@ object stripeStrings {
   @js.native
   sealed trait variety_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def variety_stores: variety_stores = "variety_stores".asInstanceOf[variety_stores]
   
   @js.native
@@ -25104,24 +25068,24 @@ object stripeStrings {
   @js.native
   sealed trait veterinary_services
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def veterinary_services: veterinary_services = "veterinary_services".asInstanceOf[veterinary_services]
   
   @js.native
@@ -25136,70 +25100,70 @@ object stripeStrings {
   @js.native
   sealed trait video_amusement_game_supplies
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def video_amusement_game_supplies: video_amusement_game_supplies = "video_amusement_game_supplies".asInstanceOf[video_amusement_game_supplies]
   
   @js.native
   sealed trait video_game_arcades
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def video_game_arcades: video_game_arcades = "video_game_arcades".asInstanceOf[video_game_arcades]
   
   @js.native
   sealed trait video_tape_rental_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def video_tape_rental_stores: video_tape_rental_stores = "video_tape_rental_stores".asInstanceOf[video_tape_rental_stores]
   
   @js.native
@@ -25236,24 +25200,24 @@ object stripeStrings {
   @js.native
   sealed trait vocational_trade_schools
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def vocational_trade_schools: vocational_trade_schools = "vocational_trade_schools".asInstanceOf[vocational_trade_schools]
   
   @js.native
@@ -25360,24 +25324,24 @@ object stripeStrings {
   @js.native
   sealed trait watch_jewelry_repair
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def watch_jewelry_repair: watch_jewelry_repair = "watch_jewelry_repair".asInstanceOf[watch_jewelry_repair]
   
   @js.native
@@ -25519,139 +25483,139 @@ object stripeStrings {
   @js.native
   sealed trait welding_repair
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def welding_repair: welding_repair = "welding_repair".asInstanceOf[welding_repair]
   
   @js.native
   sealed trait wholesale_clubs
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def wholesale_clubs: wholesale_clubs = "wholesale_clubs".asInstanceOf[wholesale_clubs]
   
   @js.native
   sealed trait wig_and_toupee_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def wig_and_toupee_stores: wig_and_toupee_stores = "wig_and_toupee_stores".asInstanceOf[wig_and_toupee_stores]
   
   @js.native
   sealed trait wires_money_orders
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def wires_money_orders: wires_money_orders = "wires_money_orders".asInstanceOf[wires_money_orders]
   
   @js.native
   sealed trait womens_accessory_and_specialty_shops
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def womens_accessory_and_specialty_shops: womens_accessory_and_specialty_shops = "womens_accessory_and_specialty_shops".asInstanceOf[womens_accessory_and_specialty_shops]
   
   @js.native
   sealed trait womens_ready_to_wear_stores
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def womens_ready_to_wear_stores: womens_ready_to_wear_stores = "womens_ready_to_wear_stores".asInstanceOf[womens_ready_to_wear_stores]
   
   @js.native
@@ -25666,24 +25630,24 @@ object stripeStrings {
   @js.native
   sealed trait wrecking_and_salvage_yards
     extends StObject
-       with AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.AllowedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.AllowedCategory
-       with BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.BlockedCategory
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.BlockedCategory
-       with Category
-       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit.Category
-       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit.Category
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def wrecking_and_salvage_yards: wrecking_and_salvage_yards = "wrecking_and_salvage_yards".asInstanceOf[wrecking_and_salvage_yards]
   
   @js.native

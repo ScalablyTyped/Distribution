@@ -18,14 +18,14 @@ object mod {
   
   @JSImport("conf", JSImport.Default)
   @js.native
-  class default[T /* <: Record[String, js.Any] */] ()
+  open class default[T /* <: Record[String, Any] */] ()
     extends StObject
        with Conf[T] {
     def this(partialOptions: Partial[Options[T]]) = this()
   }
   
   @js.native
-  trait Conf[T /* <: Record[String, js.Any] */]
+  trait Conf[T /* <: Record[String, Any] */]
     extends StObject
        with Iterable[
           js.Tuple2[
@@ -34,36 +34,37 @@ object mod {
           ]
         ] {
     
-    /* private */ var _containsReservedKey: js.Any = js.native
+    /* private */ var _containsReservedKey: Any = js.native
     
-    /* private */ val _deserialize: js.Any = js.native
+    /* private */ val _deserialize: Any = js.native
     
-    /* private */ var _encryptData: js.Any = js.native
+    /* private */ var _encryptData: Any = js.native
     
-    /* private */ var _ensureDirectory: js.Any = js.native
+    /* private */ var _ensureDirectory: Any = js.native
     
-    /* private */ var _get: js.Any = js.native
+    /* private */ var _get: Any = js.native
     
-    /* private */ var _handleChange: js.Any = js.native
+    /* private */ var _handleChange: Any = js.native
     
-    /* private */ var _isVersionInRangeFormat: js.Any = js.native
+    /* private */ var _isVersionInRangeFormat: Any = js.native
     
-    /* private */ var _migrate: js.Any = js.native
+    /* private */ var _migrate: Any = js.native
     
-    /* private */ val _serialize: js.Any = js.native
+    /* private */ val _serialize: Any = js.native
     
-    /* private */ var _set: js.Any = js.native
+    /* private */ var _set: Any = js.native
     
-    /* private */ var _shouldPerformMigration: js.Any = js.native
+    /* private */ var _shouldPerformMigration: Any = js.native
     
-    /* private */ var _validate: js.Any = js.native
+    /* private */ var _validate: Any = js.native
     
-    /* private */ var _watch: js.Any = js.native
+    /* private */ var _watch: Any = js.native
     
-    /* private */ var _write: js.Any = js.native
+    /* private */ var _write: Any = js.native
     
     /**
       Delete all items.
+      This resets known items to their default values, if defined by the `defaults` or `schema` option.
       */
     def clear(): Unit = js.native
     
@@ -127,15 +128,16 @@ object mod {
     
     val path: String = js.native
     
-    /* private */ var `private`: js.Any = js.native
+    /* private */ var `private`: Any = js.native
     
     /**
       Reset items to their default values, as defined by the `defaults` or `schema` option.
+      @see `clear()` to reset all items.
       @param keys - The keys of the items to reset.
       */
     def reset[Key /* <: /* keyof T */ String */](keys: Key*): Unit = js.native
     
-    def set(key: String, value: js.Any): Unit = js.native
+    def set(key: String, value: Any): Unit = js.native
     def set(`object`: Partial[T]): Unit = js.native
     /**
       Set an item or multiple items at once.

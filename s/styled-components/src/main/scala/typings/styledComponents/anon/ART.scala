@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactNative.mod.ActivityIndicatorProps
+import typings.reactNative.mod.Button
 import typings.reactNative.mod.ButtonProps
 import typings.reactNative.mod.DatePickerIOS
 import typings.reactNative.mod.DatePickerIOSProps
@@ -55,6 +56,7 @@ import typings.reactNative.mod.TouchableOpacity
 import typings.reactNative.mod.TouchableOpacityProps
 import typings.reactNative.mod.TouchableWithoutFeedback
 import typings.reactNative.mod.TouchableWithoutFeedbackProps
+import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewPagerAndroid
 import typings.reactNative.mod.ViewPagerAndroidProps
 import typings.reactNative.mod.ViewProps
@@ -140,8 +142,8 @@ trait ART extends StObject {
   ]
   
   var Pressable: NativeStyled[
-    ForwardRefExoticComponent[PressableProps & RefAttributes[typings.reactNative.mod.View]], 
-    PressableProps & RefAttributes[typings.reactNative.mod.View], 
+    ForwardRefExoticComponent[PressableProps & RefAttributes[View]], 
+    PressableProps & RefAttributes[View], 
     Any
   ]
   
@@ -257,11 +259,7 @@ object ART {
       Any
     ],
     ActivityIndicatorIOS: NativeStyled[Any, js.Object, Any],
-    Button: NativeStyled[
-      Instantiable1[/* props */ ReadonlyButtonProps, typings.reactNative.mod.Button], 
-      ButtonProps, 
-      Any
-    ],
+    Button: NativeStyled[Instantiable1[/* props */ ReadonlyButtonProps, Button], ButtonProps, Any],
     DatePickerIOS: NativeStyled[Instantiable0[DatePickerIOS], DatePickerIOSProps, Any],
     DrawerLayoutAndroid: NativeStyled[Instantiable0[DrawerLayoutAndroid], DrawerLayoutAndroidProps, Any],
     FlatList: NativeStyled[
@@ -293,8 +291,8 @@ object ART {
       Any
     ],
     Pressable: NativeStyled[
-      ForwardRefExoticComponent[PressableProps & RefAttributes[typings.reactNative.mod.View]], 
-      PressableProps & RefAttributes[typings.reactNative.mod.View], 
+      ForwardRefExoticComponent[PressableProps & RefAttributes[View]], 
+      PressableProps & RefAttributes[View], 
       Any
     ],
     ProgressBarAndroid: NativeStyled[Instantiable0[ProgressBarAndroid], ProgressBarAndroidProps, Any],
@@ -362,13 +360,7 @@ object ART {
     
     inline def setActivityIndicatorIOS(value: NativeStyled[Any, js.Object, Any]): Self = StObject.set(x, "ActivityIndicatorIOS", value.asInstanceOf[js.Any])
     
-    inline def setButton(
-      value: NativeStyled[
-          Instantiable1[/* props */ ReadonlyButtonProps, typings.reactNative.mod.Button], 
-          ButtonProps, 
-          Any
-        ]
-    ): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
+    inline def setButton(value: NativeStyled[Instantiable1[/* props */ ReadonlyButtonProps, Button], ButtonProps, Any]): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     
     inline def setDatePickerIOS(value: NativeStyled[Instantiable0[DatePickerIOS], DatePickerIOSProps, Any]): Self = StObject.set(x, "DatePickerIOS", value.asInstanceOf[js.Any])
     
@@ -424,8 +416,8 @@ object ART {
     
     inline def setPressable(
       value: NativeStyled[
-          ForwardRefExoticComponent[PressableProps & RefAttributes[typings.reactNative.mod.View]], 
-          PressableProps & RefAttributes[typings.reactNative.mod.View], 
+          ForwardRefExoticComponent[PressableProps & RefAttributes[View]], 
+          PressableProps & RefAttributes[View], 
           Any
         ]
     ): Self = StObject.set(x, "Pressable", value.asInstanceOf[js.Any])

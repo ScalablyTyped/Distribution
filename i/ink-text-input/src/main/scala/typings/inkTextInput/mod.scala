@@ -9,9 +9,9 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TextInputProps> * / any */ @JSImport("ink-text-input", JSImport.Namespace)
   @js.native
-  class ^ () extends StObject
+  open class ^ () extends StObject
   
-  type TextInput = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TextInputProps> */ js.Any
+  type TextInput = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TextInputProps> */ Any
   
   trait TextInputProps extends StObject {
     

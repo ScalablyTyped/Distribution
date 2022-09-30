@@ -6,11 +6,11 @@ import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.eventQueueMod.EventQueue
 import typings.firebaseDatabase.eventRegistrationMod.EventRegistration
 import typings.firebaseDatabase.eventRegistrationMod.QueryContext
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`0`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`1`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`2`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`3`
-import typings.firebaseDatabase.firebaseDatabaseNumbers.`4`
+import typings.firebaseDatabase.firebaseDatabaseInts.`0`
+import typings.firebaseDatabase.firebaseDatabaseInts.`1`
+import typings.firebaseDatabase.firebaseDatabaseInts.`2`
+import typings.firebaseDatabase.firebaseDatabaseInts.`3`
+import typings.firebaseDatabase.firebaseDatabaseInts.`4`
 import typings.firebaseDatabase.miscMod.Indexable
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
@@ -238,11 +238,11 @@ object repoMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`0`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`1`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`2`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`3`
-    - typings.firebaseDatabase.firebaseDatabaseNumbers.`4`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`0`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`1`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`2`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`3`
+    - typings.firebaseDatabase.firebaseDatabaseInts.`4`
   */
   trait TransactionStatus extends StObject
   object TransactionStatus {

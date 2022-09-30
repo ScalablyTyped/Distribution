@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Module extends StObject {
   
-  var module: js.Any
+  var module: Any
   
   var version: String
 }
 object Module {
   
-  inline def apply(module: js.Any, version: String): Module = {
+  inline def apply(module: Any, version: String): Module = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Module]
   }
   
   extension [Self <: Module](x: Self) {
     
-    inline def setModule(value: js.Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

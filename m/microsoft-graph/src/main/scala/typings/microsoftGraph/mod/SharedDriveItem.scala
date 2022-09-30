@@ -15,7 +15,7 @@ trait SharedDriveItem
   var items: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // Used to access the underlying list
-  var list: js.UndefOr[NullableOption[List]] = js.undefined
+  var list: js.UndefOr[NullableOption[typings.microsoftGraph.mod.List]] = js.undefined
   
   // Used to access the underlying listItem
   var listItem: js.UndefOr[NullableOption[ListItem]] = js.undefined
@@ -55,7 +55,7 @@ object SharedDriveItem {
     
     inline def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setList(value: NullableOption[List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: NullableOption[typings.microsoftGraph.mod.List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setListItem(value: NullableOption[ListItem]): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     

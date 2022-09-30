@@ -22,7 +22,7 @@ trait LodashPickBy extends StObject {
   ): PartialObject[T] = js.native
   def apply[T](predicate: ValueKeyIteratee[T], `object`: Dictionary[T]): Dictionary[T] = js.native
   def apply[T](predicate: ValueKeyIteratee[T], `object`: NumericDictionary[T]): NumericDictionary[T] = js.native
-  def apply[T](predicate: __): LodashPickBy2x2[T] = js.native
+  def apply[T /* <: js.Object */](predicate: __): LodashPickBy5x2[T] = js.native
   def apply[T /* <: js.Object */](predicate: __, `object`: T): LodashPickBy5x2[T] = js.native
   def apply[T](predicate: __, `object`: Dictionary[T]): LodashPickBy1x2[T] = js.native
   def apply[T](predicate: __, `object`: NumericDictionary[T]): LodashPickBy2x2[T] = js.native

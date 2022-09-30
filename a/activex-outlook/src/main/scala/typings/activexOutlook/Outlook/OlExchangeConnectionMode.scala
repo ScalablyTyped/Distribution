@@ -1,28 +1,28 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`0`
-import typings.activexOutlook.activexOutlookNumbers.`100`
-import typings.activexOutlook.activexOutlookNumbers.`200`
-import typings.activexOutlook.activexOutlookNumbers.`300`
-import typings.activexOutlook.activexOutlookNumbers.`400`
-import typings.activexOutlook.activexOutlookNumbers.`500`
-import typings.activexOutlook.activexOutlookNumbers.`600`
-import typings.activexOutlook.activexOutlookNumbers.`700`
-import typings.activexOutlook.activexOutlookNumbers.`800`
+import typings.activexOutlook.activexOutlookInts.`0`
+import typings.activexOutlook.activexOutlookInts.`100`
+import typings.activexOutlook.activexOutlookInts.`200`
+import typings.activexOutlook.activexOutlookInts.`300`
+import typings.activexOutlook.activexOutlookInts.`400`
+import typings.activexOutlook.activexOutlookInts.`500`
+import typings.activexOutlook.activexOutlookInts.`600`
+import typings.activexOutlook.activexOutlookInts.`700`
+import typings.activexOutlook.activexOutlookInts.`800`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`600`
-  - typings.activexOutlook.activexOutlookNumbers.`700`
-  - typings.activexOutlook.activexOutlookNumbers.`500`
-  - typings.activexOutlook.activexOutlookNumbers.`400`
-  - typings.activexOutlook.activexOutlookNumbers.`200`
-  - typings.activexOutlook.activexOutlookNumbers.`300`
-  - typings.activexOutlook.activexOutlookNumbers.`0`
-  - typings.activexOutlook.activexOutlookNumbers.`100`
-  - typings.activexOutlook.activexOutlookNumbers.`800`
+  - typings.activexOutlook.activexOutlookInts.`600`
+  - typings.activexOutlook.activexOutlookInts.`700`
+  - typings.activexOutlook.activexOutlookInts.`500`
+  - typings.activexOutlook.activexOutlookInts.`400`
+  - typings.activexOutlook.activexOutlookInts.`200`
+  - typings.activexOutlook.activexOutlookInts.`300`
+  - typings.activexOutlook.activexOutlookInts.`0`
+  - typings.activexOutlook.activexOutlookInts.`100`
+  - typings.activexOutlook.activexOutlookInts.`800`
 */
 trait OlExchangeConnectionMode extends StObject
 object OlExchangeConnectionMode {

@@ -9,10 +9,10 @@ trait PBRBRDFConfiguration
   extends StObject
      with MaterialPluginBase {
   
-  /** @hidden */
+  /** @internal */
   /* private */ var _internalMarkAllSubMeshesAsMiscDirty: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _markAllSubMeshesAsMiscDirty(): Unit = js.native
   
   /* private */ var _useEnergyConservation: Any = js.native

@@ -1,48 +1,90 @@
 package typings.webdriverio
 
-import org.scalablytyped.runtime.Shortcut
-import typings.webdriverio.webdriverioStrings.`-remote-debugging-port`
-import typings.webdriverio.webdriverioStrings.`element-6066-11e4-a52e-4f735466cecf`
+import typings.webdriverio.anon.Default
+import typings.webdriverio.anon.DefaultMatch
+import typings.webdriverio.anon.DefaultMatchRequired
+import typings.webdriverio.anon.DefaultMatchRequiredType
+import typings.webdriverio.anon.DefaultMatchRequiredTypeValidate
+import typings.webdriverio.anon.Match
+import typings.webdriverio.anon.MatchRequired
+import typings.webdriverio.anon.MatchRequiredType
+import typings.webdriverio.anon.MatchRequiredTypeValidate
+import typings.webdriverio.anon.Required
+import typings.webdriverio.anon.RequiredType
+import typings.webdriverio.anon.RequiredTypeValidate
+import typings.webdriverio.anon.Type
+import typings.webdriverio.anon.TypeValidate
+import typings.webdriverio.anon.Validate
+import typings.webdriverio.anon.`0`
+import typings.webdriverio.anon.`10`
+import typings.webdriverio.anon.`11`
+import typings.webdriverio.anon.`12`
+import typings.webdriverio.anon.`13`
+import typings.webdriverio.anon.`14`
+import typings.webdriverio.anon.`15`
+import typings.webdriverio.anon.`16`
+import typings.webdriverio.anon.`17`
+import typings.webdriverio.anon.`18`
+import typings.webdriverio.anon.`19`
+import typings.webdriverio.anon.`1`
+import typings.webdriverio.anon.`20`
+import typings.webdriverio.anon.`21`
+import typings.webdriverio.anon.`22`
+import typings.webdriverio.anon.`23`
+import typings.webdriverio.anon.`24`
+import typings.webdriverio.anon.`25`
+import typings.webdriverio.anon.`2`
+import typings.webdriverio.anon.`3`
+import typings.webdriverio.anon.`4`
+import typings.webdriverio.anon.`5`
+import typings.webdriverio.anon.`6`
+import typings.webdriverio.anon.`7`
+import typings.webdriverio.anon.`8`
+import typings.webdriverio.anon.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
   
-  @JSImport("webdriverio/build/constants", "APPIUM_ANDROID_CAPABILITIES")
+  @JSImport("webdriverio/build/constants", "ARIA_SELECTOR")
   @js.native
-  val APPIUM_ANDROID_CAPABILITIES: js.Array[String] = js.native
+  val ARIA_SELECTOR: /* "aria/" */ String = js.native
   
-  @JSImport("webdriverio/build/constants", "APPIUM_CAPABILITES")
+  @JSImport("webdriverio/build/constants", "DEEP_SELECTOR")
   @js.native
-  val APPIUM_CAPABILITES: js.Array[String] = js.native
-  
-  @JSImport("webdriverio/build/constants", "APPIUM_IOS_CAPABILITIES")
-  @js.native
-  val APPIUM_IOS_CAPABILITIES: js.Array[String] = js.native
+  val DEEP_SELECTOR: /* ">>>" */ String = js.native
   
   object DRIVER_DEFAULT_ENDPOINT {
     
+    @JSImport("webdriverio/build/constants", "DRIVER_DEFAULT_ENDPOINT")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("webdriverio/build/constants", "DRIVER_DEFAULT_ENDPOINT.host")
     @js.native
-    val host: String = js.native
+    def host: String = js.native
+    inline def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriverio/build/constants", "DRIVER_DEFAULT_ENDPOINT.method")
     @js.native
-    val method: String = js.native
+    def method: String = js.native
+    inline def method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("method")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriverio/build/constants", "DRIVER_DEFAULT_ENDPOINT.path")
     @js.native
-    val path: String = js.native
+    def path: String = js.native
+    inline def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriverio/build/constants", "DRIVER_DEFAULT_ENDPOINT.port")
     @js.native
-    val port: Double = js.native
+    def port: Double = js.native
+    inline def port_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("port")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("webdriverio/build/constants", "ELEMENT_KEY")
   @js.native
-  val ELEMENT_KEY: `element-6066-11e4-a52e-4f735466cecf` = js.native
+  val ELEMENT_KEY: /* "element-6066-11e4-a52e-4f735466cecf" */ String = js.native
   
   @JSImport("webdriverio/build/constants", "ERROR_REASON")
   @js.native
@@ -50,622 +92,352 @@ object constantsMod {
   
   @JSImport("webdriverio/build/constants", "FF_REMOTE_DEBUG_ARG")
   @js.native
-  val FF_REMOTE_DEBUG_ARG: `-remote-debugging-port` = js.native
-  
-  @JSImport("webdriverio/build/constants", "JSONWP_CAPABILITIES")
-  @js.native
-  val JSONWP_CAPABILITIES: js.Array[String] = js.native
-  
-  object UNICODE_CHARACTERS {
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Add")
-    @js.native
-    def Add: String = js.native
-    inline def Add_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Add")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Alt")
-    @js.native
-    def Alt: String = js.native
-    inline def Alt_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Alt")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.ArrowDown")
-    @js.native
-    def ArrowDown: String = js.native
-    inline def ArrowDown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrowDown")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.ArrowLeft")
-    @js.native
-    def ArrowLeft: String = js.native
-    inline def ArrowLeft_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrowLeft")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.ArrowRight")
-    @js.native
-    def ArrowRight: String = js.native
-    inline def ArrowRight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrowRight")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.ArrowUp")
-    @js.native
-    def ArrowUp: String = js.native
-    inline def ArrowUp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrowUp")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Arrow_Down")
-    @js.native
-    def Arrow_Down: String = js.native
-    inline def Arrow_Down_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arrow_Down")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Arrow_Left")
-    @js.native
-    def Arrow_Left: String = js.native
-    inline def Arrow_Left_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arrow_Left")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Arrow_Right")
-    @js.native
-    def Arrow_Right: String = js.native
-    inline def Arrow_Right_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arrow_Right")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Arrow_Up")
-    @js.native
-    def Arrow_Up: String = js.native
-    inline def Arrow_Up_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Arrow_Up")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Back space")
-    @js.native
-    val `Back space`: String = js.native
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Backspace")
-    @js.native
-    def Backspace: String = js.native
-    inline def Backspace_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Backspace")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Cancel")
-    @js.native
-    def Cancel: String = js.native
-    inline def Cancel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cancel")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Clear")
-    @js.native
-    def Clear: String = js.native
-    inline def Clear_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Clear")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Command")
-    @js.native
-    def Command: String = js.native
-    inline def Command_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Command")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Control")
-    @js.native
-    def Control: String = js.native
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Control Left")
-    @js.native
-    def ControlLeft: String = js.native
-    
-    inline def ControlLeft_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control Left")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Control Right")
-    @js.native
-    def ControlRight: String = js.native
-    
-    inline def ControlRight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control Right")(x.asInstanceOf[js.Any])
-    
-    inline def Control_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Decimal")
-    @js.native
-    def Decimal: String = js.native
-    inline def Decimal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Delete")
-    @js.native
-    def Delete: String = js.native
-    inline def Delete_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Delete")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Divide")
-    @js.native
-    def Divide: String = js.native
-    inline def Divide_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Divide")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Down arrow")
-    @js.native
-    def DownArrow: String = js.native
-    
-    inline def DownArrow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Down arrow")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.End")
-    @js.native
-    def End: String = js.native
-    inline def End_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Enter")
-    @js.native
-    def Enter: String = js.native
-    inline def Enter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enter")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Equals")
-    @js.native
-    def Equals: String = js.native
-    inline def Equals_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Equals")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Escape")
-    @js.native
-    def Escape: String = js.native
-    inline def Escape_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Escape")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F1")
-    @js.native
-    def F1: String = js.native
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F10")
-    @js.native
-    def F10: String = js.native
-    inline def F10_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F10")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F11")
-    @js.native
-    def F11: String = js.native
-    inline def F11_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F11")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F12")
-    @js.native
-    def F12: String = js.native
-    inline def F12_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F12")(x.asInstanceOf[js.Any])
-    
-    inline def F1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F2")
-    @js.native
-    def F2: String = js.native
-    inline def F2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F3")
-    @js.native
-    def F3: String = js.native
-    inline def F3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F4")
-    @js.native
-    def F4: String = js.native
-    inline def F4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F5")
-    @js.native
-    def F5: String = js.native
-    inline def F5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F6")
-    @js.native
-    def F6: String = js.native
-    inline def F6_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F6")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F7")
-    @js.native
-    def F7: String = js.native
-    inline def F7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F7")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F8")
-    @js.native
-    def F8: String = js.native
-    inline def F8_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F8")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.F9")
-    @js.native
-    def F9: String = js.native
-    inline def F9_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F9")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Help")
-    @js.native
-    def Help: String = js.native
-    inline def Help_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Help")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Home")
-    @js.native
-    def Home: String = js.native
-    inline def Home_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Home")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Insert")
-    @js.native
-    def Insert: String = js.native
-    inline def Insert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Insert")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Left arrow")
-    @js.native
-    def LeftArrow: String = js.native
-    
-    inline def LeftArrow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Left arrow")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Meta")
-    @js.native
-    def Meta: String = js.native
-    inline def Meta_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Meta")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Multiply")
-    @js.native
-    def Multiply: String = js.native
-    inline def Multiply_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multiply")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.NULL")
-    @js.native
-    def NULL: String = js.native
-    inline def NULL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 0")
-    @js.native
-    def Numpad0: String = js.native
-    
-    inline def Numpad0_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 0")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 1")
-    @js.native
-    def Numpad1: String = js.native
-    
-    inline def Numpad1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 1")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 2")
-    @js.native
-    def Numpad2: String = js.native
-    
-    inline def Numpad2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 2")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 3")
-    @js.native
-    def Numpad3: String = js.native
-    
-    inline def Numpad3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 3")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 4")
-    @js.native
-    def Numpad4: String = js.native
-    
-    inline def Numpad4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 4")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 5")
-    @js.native
-    def Numpad5: String = js.native
-    
-    inline def Numpad5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 5")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 6")
-    @js.native
-    def Numpad6: String = js.native
-    
-    inline def Numpad6_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 6")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 7")
-    @js.native
-    def Numpad7: String = js.native
-    
-    inline def Numpad7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 7")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 8")
-    @js.native
-    def Numpad8: String = js.native
-    
-    inline def Numpad8_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 8")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Numpad 9")
-    @js.native
-    def Numpad9: String = js.native
-    
-    inline def Numpad9_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numpad 9")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.PageDown")
-    @js.native
-    def PageDown_ : String = js.native
-    
-    inline def PageDown__=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageDown")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.PageUp")
-    @js.native
-    def PageUp_ : String = js.native
-    
-    inline def PageUp__=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageUp")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Page_Down")
-    @js.native
-    def Page_Down: String = js.native
-    inline def Page_Down_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Page_Down")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Page_Up")
-    @js.native
-    def Page_Up: String = js.native
-    inline def Page_Up_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Page_Up")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Pagedown")
-    @js.native
-    def Pagedown: String = js.native
-    inline def Pagedown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pagedown")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Pageup")
-    @js.native
-    def Pageup: String = js.native
-    inline def Pageup_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pageup")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Pause")
-    @js.native
-    def Pause: String = js.native
-    inline def Pause_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pause")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Return")
-    @js.native
-    def Return: String = js.native
-    inline def Return_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Return")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Right arrow")
-    @js.native
-    def RightArrow: String = js.native
-    
-    inline def RightArrow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right arrow")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Semicolon")
-    @js.native
-    def Semicolon: String = js.native
-    inline def Semicolon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Semicolon")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Separator")
-    @js.native
-    def Separator: String = js.native
-    inline def Separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Separator")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Shift")
-    @js.native
-    def Shift: String = js.native
-    inline def Shift_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shift")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Space")
-    @js.native
-    def Space: String = js.native
-    inline def Space_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Space")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Subtract")
-    @js.native
-    def Subtract: String = js.native
-    inline def Subtract_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subtract")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Tab")
-    @js.native
-    def Tab: String = js.native
-    inline def Tab_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Unidentified")
-    @js.native
-    def Unidentified: String = js.native
-    inline def Unidentified_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unidentified")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Up arrow")
-    @js.native
-    def UpArrow: String = js.native
-    
-    inline def UpArrow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Up arrow")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.ZenkakuHankaku")
-    @js.native
-    def ZenkakuHankaku: String = js.native
-    inline def ZenkakuHankaku_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZenkakuHankaku")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS.Zenkaku_Hankaku")
-    @js.native
-    def Zenkaku_Hankaku: String = js.native
-    inline def Zenkaku_Hankaku_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Zenkaku_Hankaku")(x.asInstanceOf[js.Any])
-    
-    @JSImport("webdriverio/build/constants", "UNICODE_CHARACTERS. ")
-    @js.native
-    def _empty: String = js.native
-    
-    inline def _empty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic(" ")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("webdriverio/build/constants", "W3C_CAPABILITIES")
-  @js.native
-  val W3C_CAPABILITIES: js.Array[String] = js.native
+  val FF_REMOTE_DEBUG_ARG: /* "-remote-debugging-port" */ String = js.native
   
   @JSImport("webdriverio/build/constants", "W3C_SELECTOR_STRATEGIES")
   @js.native
   val W3C_SELECTOR_STRATEGIES: js.Array[String] = js.native
   
+  /* Inlined @wdio/types.@wdio/types.Options.Definition<@wdio/types.@wdio/types.Options.WebdriverIO & @wdio/types.@wdio/types.Options.Testrunner> */
   object WDIO_DEFAULTS {
     
-    object automationProtocol {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.automationProtocol")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.automationProtocol.type")
-      @js.native
-      val `type`: String = js.native
-      
-      inline def validate(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS")
+    @js.native
+    val ^ : js.Any = js.native
     
-    object bail extends Shortcut {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.bail._default")
-      @js.native
-      val default: Double = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.bail.type_6")
-      @js.native
-      val type6: String = js.native
-      
-      type _To = Double
-      
-      /* This means you don't have to write `default`, but can instead just say `bail.foo` */
-      override def _to: Double = default
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.after")
+    @js.native
+    def after: js.UndefOr[`9`] = js.native
     
-    object baseUrl {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.baseUrl.type_5")
-      @js.native
-      val type5: String = js.native
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.afterCommand")
+    @js.native
+    def afterCommand: js.UndefOr[`6`] = js.native
+    inline def afterCommand_=(x: js.UndefOr[`6`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterCommand")(x.asInstanceOf[js.Any])
     
-    object capabilities {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.capabilities")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.capabilities.required")
-      @js.native
-      val required: Boolean = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.capabilities.type_4")
-      @js.native
-      val type4: String = js.native
-      
-      inline def validate3(param: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate_3")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.afterHook")
+    @js.native
+    def afterHook: js.UndefOr[Default] = js.native
+    inline def afterHook_=(x: js.UndefOr[Default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterHook")(x.asInstanceOf[js.Any])
     
-    object exclude {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.exclude")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.exclude.type_2")
-      @js.native
-      val type2: String = js.native
-      
-      inline def validate2(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate_2")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.afterSession")
+    @js.native
+    def afterSession: js.UndefOr[`24`] = js.native
+    inline def afterSession_=(x: js.UndefOr[`24`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterSession")(x.asInstanceOf[js.Any])
     
-    object execArgv {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.execArgv")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.execArgv._default_4")
-      @js.native
-      val default4: js.Array[scala.Nothing] = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.execArgv.type_12")
-      @js.native
-      val type12: String = js.native
-      
-      inline def validate6(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate_6")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.afterSuite")
+    @js.native
+    def afterSuite: js.UndefOr[MatchRequired] = js.native
+    inline def afterSuite_=(x: js.UndefOr[MatchRequired]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterSuite")(x.asInstanceOf[js.Any])
     
-    object filesToWatch {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.filesToWatch")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.filesToWatch.type_16")
-      @js.native
-      val type16: String = js.native
-      
-      inline def validate7(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate_7")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.afterTest")
+    @js.native
+    def afterTest: js.UndefOr[Default] = js.native
+    inline def afterTest_=(x: js.UndefOr[Default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("afterTest")(x.asInstanceOf[js.Any])
     
-    object framework {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.framework.type_9")
-      @js.native
-      val type9: String = js.native
-    }
+    inline def after_=(x: js.UndefOr[`9`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("after")(x.asInstanceOf[js.Any])
     
-    object maxInstances {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.maxInstances.type_13")
-      @js.native
-      val type13: String = js.native
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.agent")
+    @js.native
+    def agent: js.UndefOr[DefaultMatchRequired] = js.native
+    inline def agent_=(x: js.UndefOr[DefaultMatchRequired]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("agent")(x.asInstanceOf[js.Any])
     
-    object maxInstancesPerCapability {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.maxInstancesPerCapability.type_14")
-      @js.native
-      val type14: String = js.native
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.autoCompileOpts")
+    @js.native
+    def autoCompileOpts: js.UndefOr[`25`] = js.native
+    inline def autoCompileOpts_=(x: js.UndefOr[`25`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoCompileOpts")(x.asInstanceOf[js.Any])
     
-    object outputDir {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.outputDir._default_5")
-      @js.native
-      val default5: String = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.outputDir.type_15")
-      @js.native
-      val type15: String = js.native
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.automationProtocol")
+    @js.native
+    def automationProtocol: js.UndefOr[`20`] = js.native
+    inline def automationProtocol_=(x: js.UndefOr[`20`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("automationProtocol")(x.asInstanceOf[js.Any])
     
-    object reporters {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.reporters")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.reporters.type_10")
-      @js.native
-      val type10: String = js.native
-      
-      inline def validate4(param: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate_4")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.bail")
+    @js.native
+    def bail: js.UndefOr[MatchRequiredType] = js.native
+    inline def bail_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bail")(x.asInstanceOf[js.Any])
     
-    object services {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.services")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.services._default_3")
-      @js.native
-      val default3: js.Array[scala.Nothing] = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.services.type_11")
-      @js.native
-      val type11: String = js.native
-      
-      inline def validate5(param: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate_5")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.baseUrl")
+    @js.native
+    def baseUrl: js.UndefOr[`16`] = js.native
+    inline def baseUrl_=(x: js.UndefOr[`16`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseUrl")(x.asInstanceOf[js.Any])
     
-    object specs {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.specs")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.specs.type_1")
-      @js.native
-      val type1: String = js.native
-      
-      inline def validate1(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate_1")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.before")
+    @js.native
+    def before: js.UndefOr[`12`] = js.native
     
-    object suites {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.suites.type_3")
-      @js.native
-      val type3: String = js.native
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.beforeCommand")
+    @js.native
+    def beforeCommand: js.UndefOr[`13`] = js.native
+    inline def beforeCommand_=(x: js.UndefOr[`13`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeCommand")(x.asInstanceOf[js.Any])
     
-    object waitforInterval {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.waitforInterval._default_1")
-      @js.native
-      val default1: Double = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.waitforInterval.type_7")
-      @js.native
-      val type7: String = js.native
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.beforeHook")
+    @js.native
+    def beforeHook: js.UndefOr[`22`] = js.native
+    inline def beforeHook_=(x: js.UndefOr[`22`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeHook")(x.asInstanceOf[js.Any])
     
-    object waitforTimeout {
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.waitforTimeout._default_2")
-      @js.native
-      val default2: Double = js.native
-      
-      @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.waitforTimeout.type_8")
-      @js.native
-      val type8: String = js.native
-    }
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.beforeSession")
+    @js.native
+    def beforeSession: js.UndefOr[`21`] = js.native
+    inline def beforeSession_=(x: js.UndefOr[`21`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeSession")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.beforeSuite")
+    @js.native
+    def beforeSuite: js.UndefOr[MatchRequired] = js.native
+    inline def beforeSuite_=(x: js.UndefOr[MatchRequired]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeSuite")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.beforeTest")
+    @js.native
+    def beforeTest: js.UndefOr[`3`] = js.native
+    inline def beforeTest_=(x: js.UndefOr[`3`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeTest")(x.asInstanceOf[js.Any])
+    
+    inline def before_=(x: js.UndefOr[`12`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("before")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.capabilities")
+    @js.native
+    def capabilities: RequiredType = js.native
+    inline def capabilities_=(x: RequiredType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capabilities")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.connectionRetryCount")
+    @js.native
+    def connectionRetryCount: js.UndefOr[DefaultMatch] = js.native
+    inline def connectionRetryCount_=(x: js.UndefOr[DefaultMatch]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionRetryCount")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.connectionRetryTimeout")
+    @js.native
+    def connectionRetryTimeout: js.UndefOr[DefaultMatch] = js.native
+    inline def connectionRetryTimeout_=(x: js.UndefOr[DefaultMatch]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionRetryTimeout")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.cucumberFeaturesWithLineNumbers")
+    @js.native
+    def cucumberFeaturesWithLineNumbers: js.UndefOr[DefaultMatchRequiredType] = js.native
+    inline def cucumberFeaturesWithLineNumbers_=(x: js.UndefOr[DefaultMatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cucumberFeaturesWithLineNumbers")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.cucumberOpts")
+    @js.native
+    def cucumberOpts: js.UndefOr[`7`] = js.native
+    inline def cucumberOpts_=(x: js.UndefOr[`7`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cucumberOpts")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.enableDirectConnect")
+    @js.native
+    def enableDirectConnect: js.UndefOr[RequiredTypeValidate] = js.native
+    inline def enableDirectConnect_=(x: js.UndefOr[RequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableDirectConnect")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.exclude")
+    @js.native
+    def exclude: js.UndefOr[DefaultMatchRequiredType] = js.native
+    inline def exclude_=(x: js.UndefOr[DefaultMatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclude")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.execArgv")
+    @js.native
+    def execArgv: js.UndefOr[DefaultMatchRequiredType] = js.native
+    inline def execArgv_=(x: js.UndefOr[DefaultMatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("execArgv")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.filesToWatch")
+    @js.native
+    def filesToWatch: js.UndefOr[DefaultMatchRequiredType] = js.native
+    inline def filesToWatch_=(x: js.UndefOr[DefaultMatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filesToWatch")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.framework")
+    @js.native
+    def framework: js.UndefOr[`16`] = js.native
+    inline def framework_=(x: js.UndefOr[`16`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framework")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.headers")
+    @js.native
+    def headers: js.UndefOr[`15`] = js.native
+    inline def headers_=(x: js.UndefOr[`15`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headers")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.headless")
+    @js.native
+    def headless: js.UndefOr[Type] = js.native
+    inline def headless_=(x: js.UndefOr[Type]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headless")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.hostname")
+    @js.native
+    def hostname: js.UndefOr[MatchRequiredTypeValidate] = js.native
+    inline def hostname_=(x: js.UndefOr[MatchRequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hostname")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.jasmineOpts")
+    @js.native
+    def jasmineOpts: js.UndefOr[`11`] = js.native
+    inline def jasmineOpts_=(x: js.UndefOr[`11`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jasmineOpts")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.key")
+    @js.native
+    def key: js.UndefOr[MatchRequiredTypeValidate] = js.native
+    inline def key_=(x: js.UndefOr[MatchRequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("key")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.logLevel")
+    @js.native
+    def logLevel: js.UndefOr[Required] = js.native
+    inline def logLevel_=(x: js.UndefOr[Required]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logLevel")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.logLevels")
+    @js.native
+    def logLevels: js.UndefOr[Match] = js.native
+    inline def logLevels_=(x: js.UndefOr[Match]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logLevels")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.maxInstances")
+    @js.native
+    def maxInstances: js.UndefOr[MatchRequiredType] = js.native
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.maxInstancesPerCapability")
+    @js.native
+    def maxInstancesPerCapability: js.UndefOr[MatchRequiredType] = js.native
+    inline def maxInstancesPerCapability_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxInstancesPerCapability")(x.asInstanceOf[js.Any])
+    
+    inline def maxInstances_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxInstances")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.mochaOpts")
+    @js.native
+    def mochaOpts: js.UndefOr[`8`] = js.native
+    inline def mochaOpts_=(x: js.UndefOr[`8`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mochaOpts")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.onComplete")
+    @js.native
+    def onComplete: js.UndefOr[`5`] = js.native
+    inline def onComplete_=(x: js.UndefOr[`5`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onComplete")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.onPrepare")
+    @js.native
+    def onPrepare: js.UndefOr[`23`] = js.native
+    inline def onPrepare_=(x: js.UndefOr[`23`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPrepare")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.onReload")
+    @js.native
+    def onReload: js.UndefOr[DefaultMatchRequiredTypeValidate] = js.native
+    inline def onReload_=(x: js.UndefOr[DefaultMatchRequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onReload")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.onWorkerEnd")
+    @js.native
+    def onWorkerEnd: js.UndefOr[Validate] = js.native
+    inline def onWorkerEnd_=(x: js.UndefOr[Validate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onWorkerEnd")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.onWorkerStart")
+    @js.native
+    def onWorkerStart: js.UndefOr[`19`] = js.native
+    inline def onWorkerStart_=(x: js.UndefOr[`19`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onWorkerStart")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.outputDir")
+    @js.native
+    def outputDir: js.UndefOr[MatchRequiredTypeValidate] = js.native
+    inline def outputDir_=(x: js.UndefOr[MatchRequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputDir")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.path")
+    @js.native
+    def path: js.UndefOr[MatchRequiredTypeValidate] = js.native
+    inline def path_=(x: js.UndefOr[MatchRequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.port")
+    @js.native
+    def port: js.UndefOr[DefaultMatch] = js.native
+    inline def port_=(x: js.UndefOr[DefaultMatch]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("port")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.protocol")
+    @js.native
+    def protocol: js.UndefOr[MatchRequiredTypeValidate] = js.native
+    inline def protocol_=(x: js.UndefOr[MatchRequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protocol")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.queryParams")
+    @js.native
+    def queryParams: js.UndefOr[`15`] = js.native
+    inline def queryParams_=(x: js.UndefOr[`15`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryParams")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.region")
+    @js.native
+    def region: js.UndefOr[`0`] = js.native
+    inline def region_=(x: js.UndefOr[`0`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("region")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.reporterSyncInterval")
+    @js.native
+    def reporterSyncInterval: js.UndefOr[MatchRequiredType] = js.native
+    inline def reporterSyncInterval_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reporterSyncInterval")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.reporterSyncTimeout")
+    @js.native
+    def reporterSyncTimeout: js.UndefOr[MatchRequiredType] = js.native
+    inline def reporterSyncTimeout_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reporterSyncTimeout")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.reporters")
+    @js.native
+    def reporters: js.UndefOr[`18`] = js.native
+    inline def reporters_=(x: js.UndefOr[`18`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reporters")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.runner")
+    @js.native
+    def runner: js.UndefOr[`10`] = js.native
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.runnerEnv")
+    @js.native
+    def runnerEnv: js.UndefOr[`4`] = js.native
+    inline def runnerEnv_=(x: js.UndefOr[`4`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runnerEnv")(x.asInstanceOf[js.Any])
+    
+    inline def runner_=(x: js.UndefOr[`10`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runner")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.services")
+    @js.native
+    def services: js.UndefOr[`14`] = js.native
+    inline def services_=(x: js.UndefOr[`14`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("services")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.specFileRetries")
+    @js.native
+    def specFileRetries: js.UndefOr[MatchRequiredType] = js.native
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.specFileRetriesDeferred")
+    @js.native
+    def specFileRetriesDeferred: js.UndefOr[Type] = js.native
+    inline def specFileRetriesDeferred_=(x: js.UndefOr[Type]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specFileRetriesDeferred")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.specFileRetriesDelay")
+    @js.native
+    def specFileRetriesDelay: js.UndefOr[MatchRequiredType] = js.native
+    inline def specFileRetriesDelay_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specFileRetriesDelay")(x.asInstanceOf[js.Any])
+    
+    inline def specFileRetries_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specFileRetries")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.specs")
+    @js.native
+    def specs: js.UndefOr[`2`] = js.native
+    inline def specs_=(x: js.UndefOr[`2`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specs")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.strictSSL")
+    @js.native
+    def strictSSL: js.UndefOr[RequiredTypeValidate] = js.native
+    inline def strictSSL_=(x: js.UndefOr[RequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strictSSL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.suites")
+    @js.native
+    def suites: js.UndefOr[`17`] = js.native
+    inline def suites_=(x: js.UndefOr[`17`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suites")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.transformRequest")
+    @js.native
+    def transformRequest: js.UndefOr[`1`] = js.native
+    inline def transformRequest_=(x: js.UndefOr[`1`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transformRequest")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.transformResponse")
+    @js.native
+    def transformResponse: js.UndefOr[TypeValidate] = js.native
+    inline def transformResponse_=(x: js.UndefOr[TypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transformResponse")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.user")
+    @js.native
+    def user: js.UndefOr[MatchRequiredTypeValidate] = js.native
+    inline def user_=(x: js.UndefOr[MatchRequiredTypeValidate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("user")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.waitforInterval")
+    @js.native
+    def waitforInterval: js.UndefOr[MatchRequiredType] = js.native
+    inline def waitforInterval_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitforInterval")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.waitforTimeout")
+    @js.native
+    def waitforTimeout: js.UndefOr[MatchRequiredType] = js.native
+    inline def waitforTimeout_=(x: js.UndefOr[MatchRequiredType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitforTimeout")(x.asInstanceOf[js.Any])
+    
+    @JSImport("webdriverio/build/constants", "WDIO_DEFAULTS.watch")
+    @js.native
+    def watch: js.UndefOr[Type] = js.native
+    inline def watch_=(x: js.UndefOr[Type]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("watch")(x.asInstanceOf[js.Any])
   }
 }

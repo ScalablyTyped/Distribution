@@ -12,7 +12,7 @@ trait DescribeGroupResponse extends StObject {
   var Description: js.UndefOr[SensitiveStringType] = js.undefined
   
   /**
-    * The group’s display name value. The length limit is 1,024 characters. This value can consist of letters, accented characters, symbols, numbers, punctuation, tab, new line, carriage return, space, and nonbreaking space in this attribute. The characters &lt;&gt;;:% are excluded. This value is specified at the time that the group is created and stored as an attribute of the group object in the identity store.
+    * The group’s display name value. The length limit is 1,024 characters. This value can consist of letters, accented characters, symbols, numbers, punctuation, tab, new line, carriage return, space, and nonbreaking space in this attribute. This value is specified at the time that the group is created and stored as an attribute of the group object in the identity store.
     */
   var DisplayName: js.UndefOr[GroupDisplayName] = js.undefined
   

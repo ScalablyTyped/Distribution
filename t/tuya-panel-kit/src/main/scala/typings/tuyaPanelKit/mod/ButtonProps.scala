@@ -129,19 +129,6 @@ trait ButtonProps
   
   /**
     * @language zh-CN
-    * @description 按钮是否禁用
-    * @defaultValue false
-    */
-  /**
-    * @language en-US
-    * @description Is the button disabled?
-    * @defaultValue false
-    */
-  @JSName("disabled")
-  var disabled_ButtonProps: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * @language zh-CN
     * @description 按钮内的图标名称
     * @defaultValue undefined
     */
@@ -403,13 +390,9 @@ object ButtonProps {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
     inline def setDisabledOpacity(value: Double): Self = StObject.set(x, "disabledOpacity", value.asInstanceOf[js.Any])
     
     inline def setDisabledOpacityUndefined: Self = StObject.set(x, "disabledOpacity", js.undefined)
-    
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

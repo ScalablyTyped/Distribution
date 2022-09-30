@@ -67,7 +67,7 @@ object textureMod {
       forcedExtension: js.UndefOr[String]
     ) = this()
     
-    /** @hidden */
+    /** @internal */
     var _buffer: Nullable[
         String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
       ] = js.native
@@ -112,7 +112,7 @@ object textureMod {
     
     /* protected */ var _format: Nullable[Double] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _invertY: Boolean = js.native
     
     /* protected */ var _isBlocking: Boolean = js.native
@@ -532,21 +532,12 @@ object textureMod {
     val WRAP_ADDRESSMODE: Double = js.native
     
     /**
-      * @param name
-      * @param renderTargetSize
-      * @param scene
-      * @param generateMipMaps
-      * @hidden
+      * @internal
       */
     inline def _CreateMirror(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[MirrorTexture]
     
     /**
-      * @param name
-      * @param renderTargetSize
-      * @param scene
-      * @param generateMipMaps
-      * @param creationFlags
-      * @hidden
+      * @internal
       */
     inline def _CreateRenderTargetTexture(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[RenderTargetTexture]
     inline def _CreateRenderTargetTexture(
@@ -558,10 +549,7 @@ object textureMod {
     ): RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[RenderTargetTexture]
     
     /**
-      * @param jsonTexture
-      * @param scene
-      * @param rootUrl
-      * @hidden
+      * @internal
       */
     inline def _CubeTextureParser(jsonTexture: Any, scene: Scene, rootUrl: String): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
   }

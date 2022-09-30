@@ -17,6 +17,11 @@ trait StreamOptions extends StObject {
     * A stream to write the output to.
     */
   var output: js.UndefOr[WriteStream] = js.undefined
+  
+  /**
+    * Whether to display prompts if input is not a TTY.
+    */
+  var skipTTYChecks: js.UndefOr[Boolean] = js.undefined
 }
 object StreamOptions {
   
@@ -34,5 +39,9 @@ object StreamOptions {
     inline def setOutput(value: WriteStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    
+    inline def setSkipTTYChecks(value: Boolean): Self = StObject.set(x, "skipTTYChecks", value.asInstanceOf[js.Any])
+    
+    inline def setSkipTTYChecksUndefined: Self = StObject.set(x, "skipTTYChecks", js.undefined)
   }
 }

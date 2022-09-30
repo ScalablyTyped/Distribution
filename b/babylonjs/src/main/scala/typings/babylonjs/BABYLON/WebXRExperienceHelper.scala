@@ -14,6 +14,8 @@ trait WebXRExperienceHelper
   
   /* private */ var _attachedToElement: Any = js.native
   
+  /* private */ var _lastTimestamp: Any = js.native
+  
   /* private */ var _nonVRCamera: Any = js.native
   
   /* private */ var _nonXRToXRCamera: Any = js.native
@@ -30,10 +32,17 @@ trait WebXRExperienceHelper
   
   /* private */ var _supported: Any = js.native
   
+  /* private */ var _switchSpectatorMode: Any = js.native
+  
   /**
     * Camera used to render xr content
     */
   var camera: WebXRCamera = js.native
+  
+  /**
+    * Disable spectator mode for desktop VR experiences.
+    */
+  def disableSpecatatorMode(): Unit = js.native
   
   /**
     * Enable spectator mode for desktop VR experiences.
@@ -41,8 +50,10 @@ trait WebXRExperienceHelper
     * display the first rig camera's view on the desktop canvas.
     * Please note that this will degrade performance, as it requires another camera render.
     * It is also not recommended to enable this in devices like the quest, as it brings no benefit there.
+    * @param options giving WebXRSpectatorModeOption for specutator camera to setup when the spectator mode is enabled.
     */
   def enableSpectatorMode(): Unit = js.native
+  def enableSpectatorMode(options: WebXRSpectatorModeOption): Unit = js.native
   
   /**
     * Enters XR mode (This must be done within a user interaction in most browsers eg. button click)

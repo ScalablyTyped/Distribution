@@ -133,7 +133,7 @@ type EnrollmentFilters = js.Array[EnrollmentFilter]
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationMinSize
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationMaxSize
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsCpuMaximum
-  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum
+  - java.lang.String
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsPerformanceRisk
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsOnDemandPrice
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsStandardOneYearNoUpfrontReservedPrice
@@ -148,11 +148,9 @@ type EnrollmentFilters = js.Array[EnrollmentFilter]
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
   - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesCpuVendorArchitectures
-  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics
   - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesInferredWorkloadTypes
   - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsMigrationEffort
-  - java.lang.String
 */
 type ExportableAutoScalingGroupField = _ExportableAutoScalingGroupField | String
 
@@ -189,7 +187,7 @@ type ExportableAutoScalingGroupFields = js.Array[ExportableAutoScalingGroupField
   - typings.awsSdk.awsSdkStrings.CurrentNetwork
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsInstanceType
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsCpuMaximum
-  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum
+  - java.lang.String
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsPlatformDifferences
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsPerformanceRisk
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsVcpus
@@ -207,11 +205,9 @@ type ExportableAutoScalingGroupFields = js.Array[ExportableAutoScalingGroupField
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
   - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesCpuVendorArchitectures
-  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics
   - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesInferredWorkloadTypes
   - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsMigrationEffort
-  - java.lang.String
 */
 type ExportableInstanceField = _ExportableInstanceField | String
 
@@ -236,15 +232,12 @@ type ExportableInstanceFields = js.Array[ExportableInstanceField]
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsConfigurationMemorySize
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsCostLow
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsCostHigh
-  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsDurationLowerBound
-  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsDurationUpperBound
-  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsDurationExpected
+  - java.lang.String
   - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
   - typings.awsSdk.awsSdkStrings.CurrentPerformanceRisk
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
-  - java.lang.String
 */
 type ExportableLambdaFunctionField = _ExportableLambdaFunctionField | String
 

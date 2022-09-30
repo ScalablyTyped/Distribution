@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.21.0: deleted
   * In version 7.2.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingParameterType")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingParameterType")
 @js.native
-class ImportMappingParameterType protected ()
+open class ImportMappingParameterType protected ()
   extends typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType {
   def this(
     model: AbstractModel,
@@ -30,7 +30,7 @@ class ImportMappingParameterType protected ()
 }
 object ImportMappingParameterType {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingParameterType")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingParameterType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -54,13 +54,13 @@ object ImportMappingParameterType {
   inline def createIn(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter): typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.ImportMappingParameterType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingParameterType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingParameterType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "javaactions.ImportMappingParameterType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "javaactions.ImportMappingParameterType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

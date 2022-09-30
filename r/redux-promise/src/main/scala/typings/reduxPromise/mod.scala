@@ -17,7 +17,7 @@ object mod extends Shortcut {
   
   object ReduxPromise {
     
-    type Promise = Middleware[js.Object, js.Any, Dispatch[AnyAction]]
+    type Promise = Middleware[js.Object, Any, Dispatch[AnyAction]]
   }
   
   type _To = Promise
@@ -37,7 +37,7 @@ object mod extends Shortcut {
     type PromiseAction[S] = js.Function2[
         /* dispatch */ typings.reduxPromise.mod.reduxAugmentingMod.Dispatch[S], 
         /* getState */ js.UndefOr[js.Function0[S]], 
-        js.Any
+        Any
       ]
   }
 }

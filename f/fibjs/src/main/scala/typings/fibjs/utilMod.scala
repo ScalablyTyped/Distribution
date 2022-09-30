@@ -27,7 +27,7 @@ object utilMod {
     extends StObject
        with ClassStats
   
-  inline def _extend(v: Any, objs: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_extend")(List(v.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def _extend(v: Any, objs: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_extend")(scala.List(v.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def buildInfo(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("buildInfo")().asInstanceOf[js.Object]
   
@@ -38,12 +38,12 @@ object utilMod {
   
   inline def deepFreeze(v: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepFreeze")(v.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def difference(list: js.Array[Any], arrs: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(List(list.asInstanceOf[js.Any]).`++`(arrs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
+  inline def difference(list: js.Array[Any], arrs: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(scala.List(list.asInstanceOf[js.Any]).`++`(arrs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
   
   inline def each(list: Any, iterator: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(list.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def each(list: Any, iterator: js.Function, context: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(list.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def extend(v: Any, objs: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(v.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def extend(v: Any, objs: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(v.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   inline def first(v: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(v.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def first(v: Any, n: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(v.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Any]
@@ -52,7 +52,7 @@ object utilMod {
   inline def flatten(arr: Any, shallow: Boolean): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], shallow.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def format(args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
-  inline def format(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def format(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def has(v: Any, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(v.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -123,9 +123,9 @@ object utilMod {
   inline def map(list: Any, iterator: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(list.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   inline def map(list: Any, iterator: js.Function, context: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(list.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
-  inline def omit(v: Any, keys: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("omit")(List(v.asInstanceOf[js.Any]).`++`(keys.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def omit(v: Any, keys: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("omit")(scala.List(v.asInstanceOf[js.Any]).`++`(keys.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   
-  inline def pick(v: Any, objs: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(List(v.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def pick(v: Any, objs: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(scala.List(v.asInstanceOf[js.Any]).`++`(objs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   
   inline def reduce(list: Any, iterator: js.Function, memo: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(list.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def reduce(list: Any, iterator: js.Function, memo: Any, context: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(list.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], memo.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
@@ -140,5 +140,5 @@ object utilMod {
   
   inline def values(v: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def without(arr: Any, els: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("without")(List(arr.asInstanceOf[js.Any]).`++`(els.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
+  inline def without(arr: Any, els: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("without")(scala.List(arr.asInstanceOf[js.Any]).`++`(els.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[Any]]
 }

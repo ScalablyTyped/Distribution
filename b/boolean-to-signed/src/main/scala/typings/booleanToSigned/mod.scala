@@ -1,7 +1,7 @@
 package typings.booleanToSigned
 
-import typings.booleanToSigned.booleanToSignedNumbers.`-1`
-import typings.booleanToSigned.booleanToSignedNumbers.`1`
+import typings.booleanToSigned.booleanToSignedInts.`-1`
+import typings.booleanToSigned.booleanToSignedInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

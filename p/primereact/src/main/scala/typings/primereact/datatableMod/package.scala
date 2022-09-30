@@ -34,9 +34,9 @@ type DataTableRowGroupFooterTemplateType = ReactNode | (js.Function2[/* data */ 
 type DataTableRowGroupHeaderTemplateType = ReactNode | (js.Function2[/* data */ Any, /* options */ DataTableRowGroupHeaderTemplateOptions, ReactNode])
 
 /* Rewritten from type alias, can be one of: 
-  - typings.primereact.primereactNumbers.`1`
-  - typings.primereact.primereactNumbers.`0`
-  - typings.primereact.primereactNumbers.`-1`
+  - typings.primereact.primereactInts.`1`
+  - typings.primereact.primereactInts.`0`
+  - typings.primereact.primereactInts.`-1`
   - scala.Unit
   - scala.Null
 */

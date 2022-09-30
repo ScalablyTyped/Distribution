@@ -1,8 +1,8 @@
 package typings.firebaseInstallations
 
-import typings.firebaseInstallations.firebaseInstallationsNumbers.`0`
-import typings.firebaseInstallations.firebaseInstallationsNumbers.`1`
-import typings.firebaseInstallations.firebaseInstallationsNumbers.`2`
+import typings.firebaseInstallations.firebaseInstallationsInts.`0`
+import typings.firebaseInstallations.firebaseInstallationsInts.`1`
+import typings.firebaseInstallations.firebaseInstallationsInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -219,9 +219,9 @@ object installationEntryMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseInstallations.firebaseInstallationsNumbers.`0`
-    - typings.firebaseInstallations.firebaseInstallationsNumbers.`1`
-    - typings.firebaseInstallations.firebaseInstallationsNumbers.`2`
+    - typings.firebaseInstallations.firebaseInstallationsInts.`0`
+    - typings.firebaseInstallations.firebaseInstallationsInts.`1`
+    - typings.firebaseInstallations.firebaseInstallationsInts.`2`
   */
   trait RequestStatus extends StObject
   object RequestStatus {

@@ -143,15 +143,15 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nanomsg.nanomsgNumbers.`1`
-    - typings.nanomsg.nanomsgNumbers.`2`
+    - typings.nanomsg.nanomsgInts.`1`
+    - typings.nanomsg.nanomsgInts.`2`
   */
   trait Domain extends StObject
   object Domain {
     
-    inline def `1`: typings.nanomsg.nanomsgNumbers.`1` = 1.asInstanceOf[typings.nanomsg.nanomsgNumbers.`1`]
+    inline def `1`: typings.nanomsg.nanomsgInts.`1` = 1.asInstanceOf[typings.nanomsg.nanomsgInts.`1`]
     
-    inline def `2`: typings.nanomsg.nanomsgNumbers.`2` = 2.asInstanceOf[typings.nanomsg.nanomsgNumbers.`2`]
+    inline def `2`: typings.nanomsg.nanomsgInts.`2` = 2.asInstanceOf[typings.nanomsg.nanomsgInts.`2`]
   }
   
   trait Options extends StObject {
@@ -272,39 +272,39 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.nanomsg.nanomsgNumbers.`16`
-    - typings.nanomsg.nanomsgNumbers.`32`
-    - typings.nanomsg.nanomsgNumbers.`33`
-    - typings.nanomsg.nanomsgNumbers.`48`
-    - typings.nanomsg.nanomsgNumbers.`49`
-    - typings.nanomsg.nanomsgNumbers.`80`
-    - typings.nanomsg.nanomsgNumbers.`81`
-    - typings.nanomsg.nanomsgNumbers.`98`
-    - typings.nanomsg.nanomsgNumbers.`99`
-    - typings.nanomsg.nanomsgNumbers.`112`
+    - typings.nanomsg.nanomsgInts.`16`
+    - typings.nanomsg.nanomsgInts.`32`
+    - typings.nanomsg.nanomsgInts.`33`
+    - typings.nanomsg.nanomsgInts.`48`
+    - typings.nanomsg.nanomsgInts.`49`
+    - typings.nanomsg.nanomsgInts.`80`
+    - typings.nanomsg.nanomsgInts.`81`
+    - typings.nanomsg.nanomsgInts.`98`
+    - typings.nanomsg.nanomsgInts.`99`
+    - typings.nanomsg.nanomsgInts.`112`
   */
   trait Protocol extends StObject
   object Protocol {
     
-    inline def `112`: typings.nanomsg.nanomsgNumbers.`112` = 112.asInstanceOf[typings.nanomsg.nanomsgNumbers.`112`]
+    inline def `112`: typings.nanomsg.nanomsgInts.`112` = 112.asInstanceOf[typings.nanomsg.nanomsgInts.`112`]
     
-    inline def `16`: typings.nanomsg.nanomsgNumbers.`16` = 16.asInstanceOf[typings.nanomsg.nanomsgNumbers.`16`]
+    inline def `16`: typings.nanomsg.nanomsgInts.`16` = 16.asInstanceOf[typings.nanomsg.nanomsgInts.`16`]
     
-    inline def `32`: typings.nanomsg.nanomsgNumbers.`32` = 32.asInstanceOf[typings.nanomsg.nanomsgNumbers.`32`]
+    inline def `32`: typings.nanomsg.nanomsgInts.`32` = 32.asInstanceOf[typings.nanomsg.nanomsgInts.`32`]
     
-    inline def `33`: typings.nanomsg.nanomsgNumbers.`33` = 33.asInstanceOf[typings.nanomsg.nanomsgNumbers.`33`]
+    inline def `33`: typings.nanomsg.nanomsgInts.`33` = 33.asInstanceOf[typings.nanomsg.nanomsgInts.`33`]
     
-    inline def `48`: typings.nanomsg.nanomsgNumbers.`48` = 48.asInstanceOf[typings.nanomsg.nanomsgNumbers.`48`]
+    inline def `48`: typings.nanomsg.nanomsgInts.`48` = 48.asInstanceOf[typings.nanomsg.nanomsgInts.`48`]
     
-    inline def `49`: typings.nanomsg.nanomsgNumbers.`49` = 49.asInstanceOf[typings.nanomsg.nanomsgNumbers.`49`]
+    inline def `49`: typings.nanomsg.nanomsgInts.`49` = 49.asInstanceOf[typings.nanomsg.nanomsgInts.`49`]
     
-    inline def `80`: typings.nanomsg.nanomsgNumbers.`80` = 80.asInstanceOf[typings.nanomsg.nanomsgNumbers.`80`]
+    inline def `80`: typings.nanomsg.nanomsgInts.`80` = 80.asInstanceOf[typings.nanomsg.nanomsgInts.`80`]
     
-    inline def `81`: typings.nanomsg.nanomsgNumbers.`81` = 81.asInstanceOf[typings.nanomsg.nanomsgNumbers.`81`]
+    inline def `81`: typings.nanomsg.nanomsgInts.`81` = 81.asInstanceOf[typings.nanomsg.nanomsgInts.`81`]
     
-    inline def `98`: typings.nanomsg.nanomsgNumbers.`98` = 98.asInstanceOf[typings.nanomsg.nanomsgNumbers.`98`]
+    inline def `98`: typings.nanomsg.nanomsgInts.`98` = 98.asInstanceOf[typings.nanomsg.nanomsgInts.`98`]
     
-    inline def `99`: typings.nanomsg.nanomsgNumbers.`99` = 99.asInstanceOf[typings.nanomsg.nanomsgNumbers.`99`]
+    inline def `99`: typings.nanomsg.nanomsgInts.`99` = 99.asInstanceOf[typings.nanomsg.nanomsgInts.`99`]
   }
   
   @js.native

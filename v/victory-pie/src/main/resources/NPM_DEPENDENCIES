@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-pie" : "36.6.7"
+      "victory-pie" : "36.6.8"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-pie" : "36.6.7"
+      "victory-pie" : "36.6.8"
     }
   ],
   "compile-devDependencies" : [

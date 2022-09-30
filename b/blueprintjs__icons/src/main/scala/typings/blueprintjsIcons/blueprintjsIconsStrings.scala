@@ -4,8 +4,6 @@ import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Key
 import typings.blueprintjsIcons.blueprintIcons20Mod.BlueprintIcons20Id
 import typings.blueprintjsIcons.blueprintIcons20Mod.BlueprintIcons20Key
-import typings.blueprintjsIcons.camelCaseMod.InnerCamelCaseStringArray
-import typings.blueprintjsIcons.delimiterCaseMod.StringArrayToDelimiterCase
 import typings.blueprintjsIcons.sourceUtilitiesMod.StringDigit
 import typings.blueprintjsIcons.sourceUtilitiesMod.UpperCaseCharacters
 import typings.blueprintjsIcons.sourceUtilitiesMod.WordSeparators
@@ -505,6 +503,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def BringData: BringData = "BringData".asInstanceOf[BringData]
+  
+  @js.native
+  sealed trait Bug
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Bug: Bug = "Bug".asInstanceOf[Bug]
   
   @js.native
   sealed trait Buggy
@@ -1028,26 +1033,6 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def Dollar: Dollar = "Dollar".asInstanceOf[Dollar]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketDelimiterRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignStringPartGreaterthansignRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketDelimiterRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignStringPartGreaterthansignRightcurlybracket: DollarLeftcurlybracketDelimiterRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignStringPartGreaterthansignRightcurlybracket = "${Delimiter}${Lowercase<StringPart>}".asInstanceOf[DollarLeftcurlybracketDelimiterRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignStringPartGreaterthansignRightcurlybracket]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketFirstPartRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket` extends StObject
-  inline def `DollarLeftcurlybracketFirstPartRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`: `DollarLeftcurlybracketFirstPartRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket` = ("${FirstPart}${InnerCamelCaseStringArray<RemainingParts, FirstPart>}").asInstanceOf[`DollarLeftcurlybracketFirstPartRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketPreviousPart extends QuotationmarkQuotationmark Questionmark FirstPart Colon CapitalizeLessthansignFirstPartGreaterthansignRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`
-    extends StObject
-       with InnerCamelCaseStringArray[Any, Any]
-  inline def `DollarLeftcurlybracketPreviousPart extends QuotationmarkQuotationmark Questionmark FirstPart Colon CapitalizeLessthansignFirstPartGreaterthansignRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`: `DollarLeftcurlybracketPreviousPart extends QuotationmarkQuotationmark Questionmark FirstPart Colon CapitalizeLessthansignFirstPartGreaterthansignRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket` = ("${PreviousPart extends \"\" ? FirstPart : Capitalize<FirstPart>}${InnerCamelCaseStringArray<RemainingParts, FirstPart>}").asInstanceOf[`DollarLeftcurlybracketPreviousPart extends QuotationmarkQuotationmark Questionmark FirstPart Colon CapitalizeLessthansignFirstPartGreaterthansignRightcurlybracketDollarLeftcurlybracketInnerCamelCaseStringArrayLessthansignRemainingPartsComma FirstPartGreaterthansignRightcurlybracket`]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketStringPartToDelimiterCaseLessthansignFirstPartComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracketDollarLeftcurlybracketStringArrayToDelimiterCaseLessthansignRemainingPartsComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracket`
-    extends StObject
-       with StringArrayToDelimiterCase[Any, Any, Any, Any]
-  inline def `DollarLeftcurlybracketStringPartToDelimiterCaseLessthansignFirstPartComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracketDollarLeftcurlybracketStringArrayToDelimiterCaseLessthansignRemainingPartsComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracket`: `DollarLeftcurlybracketStringPartToDelimiterCaseLessthansignFirstPartComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracketDollarLeftcurlybracketStringArrayToDelimiterCaseLessthansignRemainingPartsComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracket` = ("${StringPartToDelimiterCase<FirstPart, UsedWordSeparators, UsedUpperCaseCharacters, Delimiter>}${StringArrayToDelimiterCase<RemainingParts, UsedWordSeparators, UsedUpperCaseCharacters, Delimiter>}").asInstanceOf[`DollarLeftcurlybracketStringPartToDelimiterCaseLessthansignFirstPartComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracketDollarLeftcurlybracketStringArrayToDelimiterCaseLessthansignRemainingPartsComma UsedWordSeparatorsComma UsedUpperCaseCharactersComma DelimiterGreaterthansignRightcurlybracket`]
   
   @js.native
   sealed trait Dot
@@ -4163,10 +4148,7 @@ object blueprintjsIconsStrings {
   inline def ZoomToFit: ZoomToFit = "ZoomToFit".asInstanceOf[ZoomToFit]
   
   @js.native
-  sealed trait _empty
-    extends StObject
-       with InnerCamelCaseStringArray[Any, Any]
-       with StringArrayToDelimiterCase[Any, Any, Any, Any]
+  sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
@@ -4587,6 +4569,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def `bring-data`: `bring-data` = "bring-data".asInstanceOf[`bring-data`]
+  
+  @js.native
+  sealed trait bug_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def bug_ : bug_ = "bug".asInstanceOf[bug_]
   
   @js.native
   sealed trait buggy_

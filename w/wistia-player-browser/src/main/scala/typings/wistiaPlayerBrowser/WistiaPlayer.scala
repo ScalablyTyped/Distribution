@@ -185,27 +185,27 @@ object WistiaPlayer {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`224`
-    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`360`
-    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`540`
-    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`720`
-    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`1080`
-    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`3840`
+    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`224`
+    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`360`
+    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`540`
+    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`720`
+    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`1080`
+    - typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`3840`
   */
   trait PlaybackQuality extends StObject
   object PlaybackQuality {
     
-    inline def `1080`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`1080` = 1080.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`1080`]
+    inline def `1080`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`1080` = 1080.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`1080`]
     
-    inline def `224`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`224` = 224.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`224`]
+    inline def `224`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`224` = 224.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`224`]
     
-    inline def `360`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`360` = 360.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`360`]
+    inline def `360`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`360` = 360.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`360`]
     
-    inline def `3840`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`3840` = 3840.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`3840`]
+    inline def `3840`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`3840` = 3840.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`3840`]
     
-    inline def `540`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`540` = 540.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`540`]
+    inline def `540`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`540` = 540.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`540`]
     
-    inline def `720`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`720` = 720.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserNumbers.`720`]
+    inline def `720`: typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`720` = 720.asInstanceOf[typings.wistiaPlayerBrowser.wistiaPlayerBrowserInts.`720`]
   }
   
   type PlaybackRateCallback = js.Function1[/* playbackRate */ Double, Unit]

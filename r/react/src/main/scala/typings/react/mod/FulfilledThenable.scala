@@ -1,6 +1,7 @@
 package typings.react.mod
 
 import typings.react.reactStrings.fulfilled
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait FulfilledThenable[T]
 object FulfilledThenable {
   
   inline def apply[T](
-    `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any],
+    `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | PromiseLike[Any],
     value: T
   ): FulfilledThenable[T] = {
     val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])

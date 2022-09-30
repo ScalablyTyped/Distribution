@@ -25,14 +25,14 @@ object mod {
     trait AsyncFunction[TReturn] extends StObject {
       
       def asyncFunction(): js.Promise[TReturn] = js.native
-      def asyncFunction(payload: js.Any): js.Promise[TReturn] = js.native
+      def asyncFunction(payload: Any): js.Promise[TReturn] = js.native
       
       def unsubscribe(): Unit = js.native
     }
     
     trait Config[StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn] extends StObject {
       
-      var getError: js.UndefOr[js.Function1[/* action */ RejectAction, js.Any]] = js.undefined
+      var getError: js.UndefOr[js.Function1[/* action */ RejectAction, Any]] = js.undefined
       
       var getPayload: js.UndefOr[js.Function1[/* action */ ResolveAction, TReturn]] = js.undefined
       
@@ -40,7 +40,7 @@ object mod {
       
       var resolve: String | ActionMatcher
       
-      var setPayload: js.UndefOr[js.Function2[/* action */ StartAction, /* payload */ js.Any, AnyAction]] = js.undefined
+      var setPayload: js.UndefOr[js.Function2[/* action */ StartAction, /* payload */ Any, AnyAction]] = js.undefined
       
       var start: String
     }
@@ -53,7 +53,7 @@ object mod {
       
       extension [Self <: Config[?, ?, ?, ?], StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn](x: Self & (Config[StartAction, ResolveAction, RejectAction, TReturn])) {
         
-        inline def setGetError(value: /* action */ RejectAction => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
+        inline def setGetError(value: /* action */ RejectAction => Any): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
         
         inline def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
         
@@ -69,7 +69,7 @@ object mod {
         
         inline def setResolveFunction1(value: /* action */ AnyAction => Boolean): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
         
-        inline def setSetPayload(value: (/* action */ StartAction, /* payload */ js.Any) => AnyAction): Self = StObject.set(x, "setPayload", js.Any.fromFunction2(value))
+        inline def setSetPayload(value: (/* action */ StartAction, /* payload */ Any) => AnyAction): Self = StObject.set(x, "setPayload", js.Any.fromFunction2(value))
         
         inline def setSetPayloadUndefined: Self = StObject.set(x, "setPayload", js.undefined)
         
@@ -84,15 +84,15 @@ object mod {
       config: Config[StartAction, ResolveAction, RejectAction, TReturn]
       ): AsyncFunction[TReturn]
       
-      def middleware(api: MiddlewareAPI[Dispatch[AnyAction], AnyAction]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+      def middleware(api: MiddlewareAPI[Dispatch[AnyAction], AnyAction]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ Any, Any]]
       @JSName("middleware")
       var middleware_Original: Middleware[js.Object, AnyAction, Dispatch[AnyAction]]
     }
     object PromiseListener {
       
       inline def apply(
-        createAsyncFunction: Config[js.Any, js.Any, js.Any, js.Any] => AsyncFunction[js.Any],
-        middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+        createAsyncFunction: Config[Any, Any, Any, Any] => AsyncFunction[Any],
+        middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ Any, Any]]
       ): PromiseListener = {
         val __obj = js.Dynamic.literal(createAsyncFunction = js.Any.fromFunction1(createAsyncFunction), middleware = js.Any.fromFunction1(middleware))
         __obj.asInstanceOf[PromiseListener]
@@ -100,10 +100,10 @@ object mod {
       
       extension [Self <: PromiseListener](x: Self) {
         
-        inline def setCreateAsyncFunction(value: Config[js.Any, js.Any, js.Any, js.Any] => AsyncFunction[js.Any]): Self = StObject.set(x, "createAsyncFunction", js.Any.fromFunction1(value))
+        inline def setCreateAsyncFunction(value: Config[Any, Any, Any, Any] => AsyncFunction[Any]): Self = StObject.set(x, "createAsyncFunction", js.Any.fromFunction1(value))
         
         inline def setMiddleware(
-          value: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+          value: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ Any, Any]]
         ): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
       }
     }

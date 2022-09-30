@@ -10,8 +10,8 @@ import typings.steamcommunity.mod.UserComment
 import typings.steamcommunity.mod.appid
 import typings.steamcommunity.mod.contextid
 import typings.steamcommunity.mod.gid
-import typings.steamcommunity.steamcommunityNumbers.`0`
-import typings.steamcommunity.steamcommunityNumbers.`1`
+import typings.steamcommunity.steamcommunityInts.`0`
+import typings.steamcommunity.steamcommunityInts.`1`
 import typings.steamcommunity.steamcommunityStrings.Banned
 import typings.steamcommunity.steamcommunityStrings.None
 import typings.steamcommunity.steamcommunityStrings.Probation

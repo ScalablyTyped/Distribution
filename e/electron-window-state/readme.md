@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-window-state
 
-Typings are for version 2.0.0
+Typings are for version 5.0.3
 
 ## Library description:
 Simple module that helps to save and restore size and position of Electron windows.
@@ -10,10 +10,10 @@ Simple module that helps to save and restore size and position of Electron windo
 | ------------------ | :-------------: |
 | Full name          | electron-window-state |
 | Keywords           | electron |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 718942 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 88119.33333333333 |
+| # stars            | 596.0 |
 
 ## Links
 - [Homepage](https://github.com/mawie81/electron-window-state#readme)
@@ -24,7 +24,7 @@ Simple module that helps to save and restore size and position of Electron windo
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

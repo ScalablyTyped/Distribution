@@ -1,18 +1,18 @@
 package typings.tesseractJs.mod
 
-import typings.tesseractJs.tesseractJsNumbers.`0`
-import typings.tesseractJs.tesseractJsNumbers.`1`
-import typings.tesseractJs.tesseractJsNumbers.`2`
-import typings.tesseractJs.tesseractJsNumbers.`3`
+import typings.tesseractJs.tesseractJsInts.`0`
+import typings.tesseractJs.tesseractJsInts.`1`
+import typings.tesseractJs.tesseractJsInts.`2`
+import typings.tesseractJs.tesseractJsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.tesseractJs.tesseractJsNumbers.`0`
-  - typings.tesseractJs.tesseractJsNumbers.`1`
-  - typings.tesseractJs.tesseractJsNumbers.`2`
-  - typings.tesseractJs.tesseractJsNumbers.`3`
+  - typings.tesseractJs.tesseractJsInts.`0`
+  - typings.tesseractJs.tesseractJsInts.`1`
+  - typings.tesseractJs.tesseractJsInts.`2`
+  - typings.tesseractJs.tesseractJsInts.`3`
 */
 trait OEM extends StObject
 object OEM {

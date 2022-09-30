@@ -6,8 +6,8 @@ import typings.std.File
 import typings.std.MediaTrackConstraints
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
-import typings.tensorflowTfjsData.tensorflowTfjsDataNumbers.`44100`
-import typings.tensorflowTfjsData.tensorflowTfjsDataNumbers.`48000`
+import typings.tensorflowTfjsData.tensorflowTfjsDataInts.`44100`
+import typings.tensorflowTfjsData.tensorflowTfjsDataInts.`48000`
 import typings.tensorflowTfjsData.tensorflowTfjsDataStrings.environment
 import typings.tensorflowTfjsData.tensorflowTfjsDataStrings.user
 import org.scalablytyped.runtime.StObject

@@ -1,7 +1,7 @@
 package typings.isIp
 
-import typings.isIp.isIpNumbers.`4`
-import typings.isIp.isIpNumbers.`6`
+import typings.isIp.isIpInts.`4`
+import typings.isIp.isIpInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,15 +1,16 @@
 package typings.saucelabs.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Id = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Id = StringDictionary[Any]
 
-type InputStream = org.scalablytyped.runtime.StringDictionary[js.Any]
+type InputStream = StringDictionary[Any]
 
-type PhoneNumber = org.scalablytyped.runtime.StringDictionary[js.Any]
+type PhoneNumber = StringDictionary[Any]
 
 type ResponseCreateManualJobScreenshot201 = js.Object
 
@@ -17,42 +18,38 @@ type ResponseDeleteManualJob200 = js.Object
 
 type ResponseDeleteManualJobLegacy200 = js.Object
 
-type ResponseGetAvailableDescriptorIds200 = org.scalablytyped.runtime.StringDictionary[js.Array[typings.saucelabs.mod.Id]]
+type ResponseGetAvailableDescriptorIds200 = StringDictionary[js.Array[Id]]
 
-type ResponseGetAvailableDescriptorIdsApi200 = js.Array[typings.saucelabs.mod.Id]
+type ResponseGetAvailableDescriptorIdsApi200 = js.Array[Id]
 
-type ResponseGetDescriptor200 = org.scalablytyped.runtime.StringDictionary[typings.saucelabs.mod.DeviceDescriptor]
+type ResponseGetDescriptor200 = StringDictionary[DeviceDescriptor]
 
-type ResponseGetDescriptors200 = org.scalablytyped.runtime.StringDictionary[js.Array[typings.saucelabs.mod.DeviceDescriptor]]
+type ResponseGetDescriptors200 = StringDictionary[js.Array[DeviceDescriptor]]
 
-type ResponseGetDescriptorsApi200 = js.Array[typings.saucelabs.mod.DeviceDescriptor]
+type ResponseGetDescriptorsApi200 = js.Array[DeviceDescriptor]
 
-type ResponseGetDeviceStatusInfos200 = js.Array[typings.saucelabs.mod.DeviceStatusInfo]
+type ResponseGetDeviceStatusInfos200 = js.Array[DeviceStatusInfo]
 
-type ResponseGetUsersActivity200 = org.scalablytyped.runtime.StringDictionary[js.Any]
+type ResponseGetTeamsV1200 = js.Array[TeamV1]
 
-type ResponseListAvailableTunnels200 = org.scalablytyped.runtime.StringDictionary[js.Array[typings.saucelabs.mod.Tunnel]]
+type ResponseGetUsersActivity200 = StringDictionary[Any]
 
-type ResponseListBuildFailedJobs200 = js.Array[typings.saucelabs.mod.Job]
+type ResponseGetUsersV1200 = js.Array[UserV1]
 
-type ResponseListBuildJobs200 = js.Array[typings.saucelabs.mod.Job]
+type ResponseListManualPlatforms200 = StringDictionary[StringDictionary[typings.saucelabs.anon.Platform]]
 
-type ResponseListBuilds200 = js.Array[typings.saucelabs.mod.Build]
+type ResponseListPlatforms200 = js.Array[Platform]
 
-type ResponseListManualPlatforms200 = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[typings.saucelabs.anon.Platform]]
+type ResponseListTunnels200 = js.Array[String]
 
-type ResponseListPlatforms200 = js.Array[typings.saucelabs.mod.Platform]
+type ResponseReadDeviceIds200 = js.Array[Id]
 
-type ResponseListTunnels200 = js.Array[java.lang.String]
+type ResponseUploadApp200 = String
 
-type ResponseReadDeviceIds200 = js.Array[typings.saucelabs.mod.Id]
+type ResponseUsersLastJob200 = StringDictionary[Any]
 
-type ResponseUploadApp200 = java.lang.String
+type SharedLiveViewId = StringDictionary[Any]
 
-type ResponseUsersLastJob200 = org.scalablytyped.runtime.StringDictionary[js.Any]
+type StreamingOutput = StringDictionary[Any]
 
-type SharedLiveViewId = org.scalablytyped.runtime.StringDictionary[js.Any]
-
-type StreamingOutput = org.scalablytyped.runtime.StringDictionary[js.Any]
-
-type Uuid = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Uuid = StringDictionary[Any]

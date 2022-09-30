@@ -1,7 +1,7 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
 import typings.html2canvas.ipropertydescriptorMod.IPropertyIdentValueDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +14,8 @@ object listStylePositionMod {
   val listStylePosition: IPropertyIdentValueDescriptor[LIST_STYLE_POSITION] = js.native
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
   */
   trait LIST_STYLE_POSITION extends StObject
   object LIST_STYLE_POSITION {

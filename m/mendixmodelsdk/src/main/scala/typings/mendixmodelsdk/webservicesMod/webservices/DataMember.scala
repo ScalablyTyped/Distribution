@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `WebServices`.
   */
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataMember")
+@JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataMember")
 @js.native
 abstract class DataMember protected () extends Element[IModel] {
   def this(
@@ -39,11 +39,17 @@ abstract class DataMember protected () extends Element[IModel] {
   def isKey: Boolean = js.native
   def isKey_=(newValue: Boolean): Unit = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def isLockedByContract: Boolean = js.native
   def isLockedByContract_=(newValue: Boolean): Unit = js.native
   
   def isNillable: Boolean = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def isNillableByContract: Boolean = js.native
   def isNillableByContract_=(newValue: Boolean): Unit = js.native
   
@@ -51,6 +57,9 @@ abstract class DataMember protected () extends Element[IModel] {
   
   def isOptional: Boolean = js.native
   
+  /**
+    * In version 9.0.2: deleted
+    */
   def isOptionalByContract: Boolean = js.native
   def isOptionalByContract_=(newValue: Boolean): Unit = js.native
   
@@ -58,18 +67,18 @@ abstract class DataMember protected () extends Element[IModel] {
 }
 object DataMember {
   
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataMember")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataMember")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataMember.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataMember.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.DataMember.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/webservices", "webservices.DataMember.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

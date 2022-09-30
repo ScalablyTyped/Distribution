@@ -20,8 +20,11 @@ import typings.mobxStateTree.optionalMod.IOptionalIType
 import typings.mobxStateTree.optionalMod.OptionalDefaultValueOrFunction
 import typings.mobxStateTree.optionalMod.ValidOptionalValues
 import typings.mobxStateTree.referenceMod.IReferenceType
+import typings.mobxStateTree.referenceMod.OnReferenceInvalidated
+import typings.mobxStateTree.referenceMod.OnReferenceInvalidatedEvent
 import typings.mobxStateTree.referenceMod.ReferenceOptions
 import typings.mobxStateTree.referenceMod.ReferenceOptionsGetSet
+import typings.mobxStateTree.referenceMod.ReferenceT
 import typings.mobxStateTree.snapshotProcessorMod.ISnapshotProcessor
 import typings.mobxStateTree.snapshotProcessorMod.ISnapshotProcessors
 import typings.mobxStateTree.snapshotProcessorMod.NotCustomized
@@ -31,46 +34,34 @@ import typings.mobxStateTree.typeMod.ISimpleType
 import typings.mobxStateTree.typeMod.IType
 import typings.mobxStateTree.unionMod.ITypeUnion
 import typings.mobxStateTree.unionMod.UnionOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait `0` extends StObject {
-    
-    var acceptsUndefined: `false`
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal(acceptsUndefined = false)
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setAcceptsUndefined(value: `false`): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait AcceptsUndefined extends StObject {
+  trait AcceptsUndefined[IT /* <: IAnyComplexType */] extends StObject {
     
     var acceptsUndefined: js.UndefOr[Boolean] = js.undefined
+    
+    var onInvalidated: js.UndefOr[OnReferenceInvalidated[ReferenceT[IT]]] = js.undefined
   }
   object AcceptsUndefined {
     
-    inline def apply(): AcceptsUndefined = {
+    inline def apply[IT /* <: IAnyComplexType */](): AcceptsUndefined[IT] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AcceptsUndefined]
+      __obj.asInstanceOf[AcceptsUndefined[IT]]
     }
     
-    extension [Self <: AcceptsUndefined](x: Self) {
+    extension [Self <: AcceptsUndefined[?], IT /* <: IAnyComplexType */](x: Self & AcceptsUndefined[IT]) {
       
       inline def setAcceptsUndefined(value: Boolean): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
       
       inline def setAcceptsUndefinedUndefined: Self = StObject.set(x, "acceptsUndefined", js.undefined)
+      
+      inline def setOnInvalidated(value: /* event */ OnReferenceInvalidatedEvent[ReferenceT[IT]] => Unit): Self = StObject.set(x, "onInvalidated", js.Any.fromFunction1(value))
+      
+      inline def setOnInvalidatedUndefined: Self = StObject.set(x, "onInvalidated", js.undefined)
     }
   }
   
@@ -108,24 +99,25 @@ object anon {
   @js.native
   trait CreationType extends StObject {
     
-    var CreationType: js.Any = js.native
+    var CreationType: Any = js.native
     
-    var SnapshotType: js.Any = js.native
+    var SnapshotType: Any = js.native
     
-    var TypeWithoutSTN: js.Any = js.native
+    var TypeWithoutSTN: Any = js.native
   }
   
   @js.native
   trait CreationTypeType extends StObject {
     
-    var CreationType: js.Any = js.native
+    var CreationType: Any = js.native
   }
   
   @js.native
   trait Fn0 extends StObject {
     
     def apply[IT /* <: IAnyComplexType */](subType: IT): IMaybe[IReferenceType[IT]] = js.native
-    def apply[IT /* <: IAnyComplexType */](subType: IT, options: (ReferenceOptionsGetSet[IT] | js.Object) & AcceptsUndefined): IMaybe[IReferenceType[IT]] = js.native
+    def apply[IT /* <: IAnyComplexType */](subType: IT, options: ReferenceOptionsGetSet[IT] & OnInvalidated[IT]): IReferenceType[IT] = js.native
+    def apply[IT /* <: IAnyComplexType */](subType: IT, options: js.Object & OnInvalidated[IT]): IReferenceType[IT] = js.native
   }
   
   @js.native
@@ -152,7 +144,7 @@ object anon {
     
     def apply[T](): IType[T, T, T] = js.native
     def apply[T](defaultValue: T): IType[js.UndefOr[T | Null], T, T] = js.native
-    def apply[C](subType: IType[C, js.Any, js.Any]): IType[C, C, C] = js.native
+    def apply[C](subType: IType[C, Any, Any]): IType[C, C, C] = js.native
   }
   
   @js.native
@@ -917,32 +909,55 @@ object anon {
   trait FnCallValue extends StObject {
     
     def apply(value: String): ISimpleType[String] = js.native
+    def apply(value: js.Date): ISimpleType[js.Date] = js.native
     def apply(value: Boolean): ISimpleType[Boolean] = js.native
     def apply(value: Double): ISimpleType[Double] = js.native
     def apply(value: Null): ISimpleType[Null] = js.native
     def apply(value: Unit): ISimpleType[Unit] = js.native
-    def apply(value: Date): ISimpleType[Date] = js.native
+  }
+  
+  trait OnInvalidated[IT /* <: IAnyComplexType */] extends StObject {
+    
+    var acceptsUndefined: `false`
+    
+    var onInvalidated: js.UndefOr[OnReferenceInvalidated[ReferenceT[IT]]] = js.undefined
+  }
+  object OnInvalidated {
+    
+    inline def apply[IT /* <: IAnyComplexType */](): OnInvalidated[IT] = {
+      val __obj = js.Dynamic.literal(acceptsUndefined = false)
+      __obj.asInstanceOf[OnInvalidated[IT]]
+    }
+    
+    extension [Self <: OnInvalidated[?], IT /* <: IAnyComplexType */](x: Self & OnInvalidated[IT]) {
+      
+      inline def setAcceptsUndefined(value: `false`): Self = StObject.set(x, "acceptsUndefined", value.asInstanceOf[js.Any])
+      
+      inline def setOnInvalidated(value: /* event */ OnReferenceInvalidatedEvent[ReferenceT[IT]] => Unit): Self = StObject.set(x, "onInvalidated", js.Any.fromFunction1(value))
+      
+      inline def setOnInvalidatedUndefined: Self = StObject.set(x, "onInvalidated", js.undefined)
+    }
   }
   
   @js.native
   trait SnapshotType extends StObject {
     
-    var CreationType: js.Any = js.native
+    var CreationType: Any = js.native
     
-    var SnapshotType: js.Any = js.native
+    var SnapshotType: Any = js.native
     
-    var Type: js.Any = js.native
+    var Type: Any = js.native
   }
   
   @js.native
   trait SnapshotTypeType extends StObject {
     
-    var SnapshotType: js.Any = js.native
+    var SnapshotType: Any = js.native
   }
   
   @js.native
   trait Type extends StObject {
     
-    var Type: js.Any = js.native
+    var Type: Any = js.native
   }
 }

@@ -11,8 +11,8 @@ import typings.rcPicker.interfaceMod.PickerMode
 import typings.rcPicker.interfaceMod.RangeValue
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
-import typings.rcPicker.rcPickerNumbers.`0`
-import typings.rcPicker.rcPickerNumbers.`1`
+import typings.rcPicker.rcPickerInts.`0`
+import typings.rcPicker.rcPickerInts.`1`
 import typings.rcPicker.rcPickerStrings.`additions removals`
 import typings.rcPicker.rcPickerStrings.`additions text`
 import typings.rcPicker.rcPickerStrings.`inline`

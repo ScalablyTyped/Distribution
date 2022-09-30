@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipify" : "4.0.0"
+      "ipify" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipify" : "4.0.0"
+      "ipify" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

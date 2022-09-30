@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var boundingBox: js.UndefOr[BoundingBox12 | BoundingBoxWH] = js.undefined
   
   // whether to fit to viewport
-  var fit: Boolean
+  var fit: js.UndefOr[Boolean] = js.undefined
   
   @JSName("name")
   var name_RandomLayoutOptions: random
@@ -28,8 +28,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object RandomLayoutOptions {
   
-  inline def apply(fit: Boolean): RandomLayoutOptions = {
-    val __obj = js.Dynamic.literal(fit = fit.asInstanceOf[js.Any], name = "random")
+  inline def apply(): RandomLayoutOptions = {
+    val __obj = js.Dynamic.literal(name = "random")
     __obj.asInstanceOf[RandomLayoutOptions]
   }
   
@@ -40,6 +40,8 @@ object RandomLayoutOptions {
     inline def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
     inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     inline def setName(value: random): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

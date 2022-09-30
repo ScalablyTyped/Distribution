@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("xmldsigjs", "CanonicalizationMethod")
 @js.native
-class CanonicalizationMethod ()
+open class CanonicalizationMethod ()
   extends typings.xmldsigjs.xmlMod.CanonicalizationMethod {
   def this(properties: js.Object) = this()
 }

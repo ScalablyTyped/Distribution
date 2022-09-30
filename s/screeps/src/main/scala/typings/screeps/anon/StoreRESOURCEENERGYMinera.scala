@@ -91,37 +91,37 @@ trait StoreRESOURCEENERGYMinera extends StObject {
   
   var ZO: Double = js.native
   
-  var alloy: typings.screeps.screepsNumbers.`0` = js.native
+  var alloy: typings.screeps.screepsInts.`0` = js.native
   
-  var battery: typings.screeps.screepsNumbers.`0` = js.native
+  var battery: typings.screeps.screepsInts.`0` = js.native
   
-  var biomass: typings.screeps.screepsNumbers.`0` = js.native
+  var biomass: typings.screeps.screepsInts.`0` = js.native
   
-  var cell: typings.screeps.screepsNumbers.`0` = js.native
+  var cell: typings.screeps.screepsInts.`0` = js.native
   
-  var circuit: typings.screeps.screepsNumbers.`0` = js.native
+  var circuit: typings.screeps.screepsInts.`0` = js.native
   
-  var composite: typings.screeps.screepsNumbers.`0` = js.native
+  var composite: typings.screeps.screepsInts.`0` = js.native
   
-  var concentrate: typings.screeps.screepsNumbers.`0` = js.native
+  var concentrate: typings.screeps.screepsInts.`0` = js.native
   
-  var condensate: typings.screeps.screepsNumbers.`0` = js.native
+  var condensate: typings.screeps.screepsInts.`0` = js.native
   
-  var crystal: typings.screeps.screepsNumbers.`0` = js.native
+  var crystal: typings.screeps.screepsInts.`0` = js.native
   
-  var device: typings.screeps.screepsNumbers.`0` = js.native
+  var device: typings.screeps.screepsInts.`0` = js.native
   
-  var emanation: typings.screeps.screepsNumbers.`0` = js.native
+  var emanation: typings.screeps.screepsInts.`0` = js.native
   
   var energy: Double = js.native
   
-  var essence: typings.screeps.screepsNumbers.`0` = js.native
+  var essence: typings.screeps.screepsInts.`0` = js.native
   
-  var extract: typings.screeps.screepsNumbers.`0` = js.native
+  var extract: typings.screeps.screepsInts.`0` = js.native
   
-  var fixtures: typings.screeps.screepsNumbers.`0` = js.native
+  var fixtures: typings.screeps.screepsInts.`0` = js.native
   
-  var frame: typings.screeps.screepsNumbers.`0` = js.native
+  var frame: typings.screeps.screepsInts.`0` = js.native
   
   /**
     * Returns capacity of this store for the specified resource. For a general purpose store, it returns total capacity if `resource` is undefined.
@@ -147,57 +147,57 @@ trait StoreRESOURCEENERGYMinera extends StObject {
   def getUsedCapacity[R /* <: js.UndefOr[ResourceConstant] */](): Null | Double = js.native
   def getUsedCapacity[R /* <: js.UndefOr[ResourceConstant] */](resource: R): Null | Double = js.native
   
-  var ghodium_melt: typings.screeps.screepsNumbers.`0` = js.native
+  var ghodium_melt: typings.screeps.screepsInts.`0` = js.native
   
-  var hydraulics: typings.screeps.screepsNumbers.`0` = js.native
+  var hydraulics: typings.screeps.screepsInts.`0` = js.native
   
-  var keanium_bar: typings.screeps.screepsNumbers.`0` = js.native
+  var keanium_bar: typings.screeps.screepsInts.`0` = js.native
   
-  var lemergium_bar: typings.screeps.screepsNumbers.`0` = js.native
+  var lemergium_bar: typings.screeps.screepsInts.`0` = js.native
   
-  var liquid: typings.screeps.screepsNumbers.`0` = js.native
+  var liquid: typings.screeps.screepsInts.`0` = js.native
   
-  var machine: typings.screeps.screepsNumbers.`0` = js.native
+  var machine: typings.screeps.screepsInts.`0` = js.native
   
-  var metal: typings.screeps.screepsNumbers.`0` = js.native
+  var metal: typings.screeps.screepsInts.`0` = js.native
   
-  var microchip: typings.screeps.screepsNumbers.`0` = js.native
+  var microchip: typings.screeps.screepsInts.`0` = js.native
   
-  var mist: typings.screeps.screepsNumbers.`0` = js.native
+  var mist: typings.screeps.screepsInts.`0` = js.native
   
-  var muscle: typings.screeps.screepsNumbers.`0` = js.native
+  var muscle: typings.screeps.screepsInts.`0` = js.native
   
-  var ops: typings.screeps.screepsNumbers.`0` = js.native
+  var ops: typings.screeps.screepsInts.`0` = js.native
   
-  var organism: typings.screeps.screepsNumbers.`0` = js.native
+  var organism: typings.screeps.screepsInts.`0` = js.native
   
-  var organoid: typings.screeps.screepsNumbers.`0` = js.native
+  var organoid: typings.screeps.screepsInts.`0` = js.native
   
-  var oxidant: typings.screeps.screepsNumbers.`0` = js.native
+  var oxidant: typings.screeps.screepsInts.`0` = js.native
   
-  var phlegm: typings.screeps.screepsNumbers.`0` = js.native
+  var phlegm: typings.screeps.screepsInts.`0` = js.native
   
-  var power: typings.screeps.screepsNumbers.`0` = js.native
+  var power: typings.screeps.screepsInts.`0` = js.native
   
-  var purifier: typings.screeps.screepsNumbers.`0` = js.native
+  var purifier: typings.screeps.screepsInts.`0` = js.native
   
-  var reductant: typings.screeps.screepsNumbers.`0` = js.native
+  var reductant: typings.screeps.screepsInts.`0` = js.native
   
-  var silicon: typings.screeps.screepsNumbers.`0` = js.native
+  var silicon: typings.screeps.screepsInts.`0` = js.native
   
-  var spirit: typings.screeps.screepsNumbers.`0` = js.native
+  var spirit: typings.screeps.screepsInts.`0` = js.native
   
-  var switch: typings.screeps.screepsNumbers.`0` = js.native
+  var switch: typings.screeps.screepsInts.`0` = js.native
   
-  var tissue: typings.screeps.screepsNumbers.`0` = js.native
+  var tissue: typings.screeps.screepsInts.`0` = js.native
   
-  var transistor: typings.screeps.screepsNumbers.`0` = js.native
+  var transistor: typings.screeps.screepsInts.`0` = js.native
   
-  var tube: typings.screeps.screepsNumbers.`0` = js.native
+  var tube: typings.screeps.screepsInts.`0` = js.native
   
-  var utrium_bar: typings.screeps.screepsNumbers.`0` = js.native
+  var utrium_bar: typings.screeps.screepsInts.`0` = js.native
   
-  var wire: typings.screeps.screepsNumbers.`0` = js.native
+  var wire: typings.screeps.screepsInts.`0` = js.native
   
-  var zynthium_bar: typings.screeps.screepsNumbers.`0` = js.native
+  var zynthium_bar: typings.screeps.screepsInts.`0` = js.native
 }

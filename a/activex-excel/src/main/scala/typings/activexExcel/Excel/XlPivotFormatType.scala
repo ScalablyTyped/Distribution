@@ -1,54 +1,54 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`0`
-import typings.activexExcel.activexExcelNumbers.`10`
-import typings.activexExcel.activexExcelNumbers.`11`
-import typings.activexExcel.activexExcelNumbers.`12`
-import typings.activexExcel.activexExcelNumbers.`13`
-import typings.activexExcel.activexExcelNumbers.`14`
-import typings.activexExcel.activexExcelNumbers.`15`
-import typings.activexExcel.activexExcelNumbers.`16`
-import typings.activexExcel.activexExcelNumbers.`17`
-import typings.activexExcel.activexExcelNumbers.`18`
-import typings.activexExcel.activexExcelNumbers.`19`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`20`
-import typings.activexExcel.activexExcelNumbers.`21`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`3`
-import typings.activexExcel.activexExcelNumbers.`4`
-import typings.activexExcel.activexExcelNumbers.`5`
-import typings.activexExcel.activexExcelNumbers.`6`
-import typings.activexExcel.activexExcelNumbers.`7`
-import typings.activexExcel.activexExcelNumbers.`8`
-import typings.activexExcel.activexExcelNumbers.`9`
+import typings.activexExcel.activexExcelInts.`0`
+import typings.activexExcel.activexExcelInts.`10`
+import typings.activexExcel.activexExcelInts.`11`
+import typings.activexExcel.activexExcelInts.`12`
+import typings.activexExcel.activexExcelInts.`13`
+import typings.activexExcel.activexExcelInts.`14`
+import typings.activexExcel.activexExcelInts.`15`
+import typings.activexExcel.activexExcelInts.`16`
+import typings.activexExcel.activexExcelInts.`17`
+import typings.activexExcel.activexExcelInts.`18`
+import typings.activexExcel.activexExcelInts.`19`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`20`
+import typings.activexExcel.activexExcelInts.`21`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`3`
+import typings.activexExcel.activexExcelInts.`4`
+import typings.activexExcel.activexExcelInts.`5`
+import typings.activexExcel.activexExcelInts.`6`
+import typings.activexExcel.activexExcelInts.`7`
+import typings.activexExcel.activexExcelInts.`8`
+import typings.activexExcel.activexExcelInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`20`
-  - typings.activexExcel.activexExcelNumbers.`21`
-  - typings.activexExcel.activexExcelNumbers.`0`
-  - typings.activexExcel.activexExcelNumbers.`9`
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`2`
-  - typings.activexExcel.activexExcelNumbers.`3`
-  - typings.activexExcel.activexExcelNumbers.`4`
-  - typings.activexExcel.activexExcelNumbers.`5`
-  - typings.activexExcel.activexExcelNumbers.`6`
-  - typings.activexExcel.activexExcelNumbers.`7`
-  - typings.activexExcel.activexExcelNumbers.`8`
-  - typings.activexExcel.activexExcelNumbers.`10`
-  - typings.activexExcel.activexExcelNumbers.`19`
-  - typings.activexExcel.activexExcelNumbers.`11`
-  - typings.activexExcel.activexExcelNumbers.`12`
-  - typings.activexExcel.activexExcelNumbers.`13`
-  - typings.activexExcel.activexExcelNumbers.`14`
-  - typings.activexExcel.activexExcelNumbers.`15`
-  - typings.activexExcel.activexExcelNumbers.`16`
-  - typings.activexExcel.activexExcelNumbers.`17`
-  - typings.activexExcel.activexExcelNumbers.`18`
+  - typings.activexExcel.activexExcelInts.`20`
+  - typings.activexExcel.activexExcelInts.`21`
+  - typings.activexExcel.activexExcelInts.`0`
+  - typings.activexExcel.activexExcelInts.`9`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`2`
+  - typings.activexExcel.activexExcelInts.`3`
+  - typings.activexExcel.activexExcelInts.`4`
+  - typings.activexExcel.activexExcelInts.`5`
+  - typings.activexExcel.activexExcelInts.`6`
+  - typings.activexExcel.activexExcelInts.`7`
+  - typings.activexExcel.activexExcelInts.`8`
+  - typings.activexExcel.activexExcelInts.`10`
+  - typings.activexExcel.activexExcelInts.`19`
+  - typings.activexExcel.activexExcelInts.`11`
+  - typings.activexExcel.activexExcelInts.`12`
+  - typings.activexExcel.activexExcelInts.`13`
+  - typings.activexExcel.activexExcelInts.`14`
+  - typings.activexExcel.activexExcelInts.`15`
+  - typings.activexExcel.activexExcelInts.`16`
+  - typings.activexExcel.activexExcelInts.`17`
+  - typings.activexExcel.activexExcelInts.`18`
 */
 trait XlPivotFormatType extends StObject
 object XlPivotFormatType {

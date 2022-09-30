@@ -10,7 +10,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase")
 @js.native
 abstract class IntegerAttributeTypeBase protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.IntegerAttributeTypeBase {
@@ -25,18 +25,18 @@ abstract class IntegerAttributeTypeBase protected ()
 }
 object IntegerAttributeTypeBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.IntegerAttributeTypeBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

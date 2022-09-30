@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "documenttemplates.ConditionSettings")
 @js.native
-class ConditionSettings protected ()
+open class ConditionSettings protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.ConditionSettings {
   def this(
     model: AbstractModel,

@@ -23,8 +23,7 @@ object boundingSphereMod {
     def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3], worldMatrix: DeepImmutable[Matrix]) = this()
     
     /**
-      * @param worldMatrix
-      * @hidden
+      * @internal
       */
     def _update(worldMatrix: DeepImmutable[Matrix]): Unit = js.native
     

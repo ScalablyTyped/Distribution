@@ -10,10 +10,7 @@ trait VertexData extends StObject {
   /* private */ val _applyTo: Any = js.native
   
   /**
-    * @param meshOrGeometry
-    * @param updatable
-    * @param isAsync
-    * @hidden
+    * @internal
     */
   def _applyToCoroutine(meshOrGeometry: IGetSetVerticesData, updatable: Boolean, isAsync: Boolean): Coroutine[VertexData] = js.native
   def _applyToCoroutine(meshOrGeometry: IGetSetVerticesData, updatable: Unit, isAsync: Boolean): Coroutine[VertexData] = js.native
@@ -33,12 +30,7 @@ trait VertexData extends StObject {
     forceCloneIndices: Boolean
   ): Coroutine[VertexData] = js.native
   /**
-    * @param transform
-    * @param vertexDatas
-    * @param use32BitsIndices
-    * @param isAsync
-    * @param forceCloneIndices
-    * @hidden
+    * @internal
     */
   def _mergeCoroutine(
     transform: Matrix,

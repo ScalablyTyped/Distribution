@@ -22,7 +22,7 @@ object global {
     
     /**
       * Flag indicating that the GPT API is loaded and ready to be called.
-      * This property will be simply <code>undefined</code> until the API is ready.
+      * This property will be simply `undefined` until the API is ready.
       *
       * Note that the recommended way of handling async is to use
       * {@link cmd | googletag.cmd} to queue callbacks for when GPT is ready. These
@@ -43,13 +43,13 @@ object global {
     /**
       * Reference to the global command queue for asynchronous execution of
       * GPT-related calls.
-      * <br><br>
-      * The <code>googletag.cmd</code> variable is initialized to an empty
+      *
+      * The `googletag.cmd` variable is initialized to an empty
       * JavaScript array by the GPT tag syntax on the page, and
-      * <code>cmd.push</code> is the standard <code>Array.push</code> method that
+      * `cmd.push` is the standard `Array.push` method that
       * adds an element to the end of the array. When the GPT JavaScript is loaded,
       * it looks through the array and executes all the functions in order. The
-      * script then replaces <code>cmd</code> with a {@link CommandArray} object
+      * script then replaces `cmd` with a {@link CommandArray} object
       * whose push method is defined to execute the function argument passed to it.
       * This mechanism allows GPT to reduce perceived latency by fetching the
       * JavaScript asynchronously while allowing the browser to continue rendering
@@ -74,12 +74,14 @@ object global {
     
     /**
       * Constructs an out-of-page ad slot with the given ad unit path.
-      * <br><br>
-      * For custom out-of-page ads, <code>div</code> is the ID
+      *
+      * For custom out-of-page ads, `div` is the ID
       * of the div element that will contain the ad. See the article on
       * [out-of-page
       * creatives](https://support.google.com/admanager/answer/6088046) for more
-      * details. <br><br> For GPT managed out-of-page ads, <code>div</code> is a
+      * details.
+      *
+      * For GPT managed out-of-page ads, `div` is a
       * supported {@link enums.OutOfPageFormat | OutOfPageFormat}.
       *
       * @example
@@ -99,7 +101,7 @@ object global {
       *     with the network code and ad unit code.
       * @param div ID of the div that  will contain this ad unit or
       *     OutOfPageFormat.
-      * @return The newly created slot, or <code>null</code> if a slot cannot be
+      * @return The newly created slot, or `null` if a slot cannot be
       *     created.
       */
     inline def defineOutOfPageSlot(adUnitPath: String): Slot | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("defineOutOfPageSlot")(adUnitPath.asInstanceOf[js.Any]).asInstanceOf[Slot | Null]
@@ -122,7 +124,7 @@ object global {
       *     mapping is provided or the size of the viewport is smaller than the
       *     smallest size provided in the mapping.
       * @param div ID of the div that will contain this ad unit.
-      * @return The newly created slot, or <code>null</code> if a slot cannot be
+      * @return The newly created slot, or `null` if a slot cannot be
       *     created.
       */
     inline def defineSlot(adUnitPath: String, size: GeneralSize): Slot | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("defineSlot")(adUnitPath.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Slot | Null]
@@ -132,14 +134,14 @@ object global {
       * Destroys the given slots, removing all related objects and references of
       * those slots from GPT. This API does not support passback slots and
       * companion slots.
-      * <br><br>
+      *
       * Calling this API on a slot clears the ad and removes the slot object from
       * the internal state maintained by GPT. Calling any more functions on the
       * slot object will result in undefined behavior. Note the browser may still
       * not free the memory associated with that slot if a reference to it is
       * maintained by the publisher page. Calling this API makes the div associated
       * with that slot available for reuse.
-      * <br><br>
+      *
       * In particular, destroying a slot removes the ad from GPT's
       * [long-lived pageview](https://support.google.com/admanager/answer/183281),
       * so future requests will not be influenced by roadblocks or competitive
@@ -169,7 +171,7 @@ object global {
       *
       * @param slots The array of slots to destroy. Array is optional; all slots
       *     will be destroyed if it is unspecified.
-      * @return <code>true</code> if slots have been destroyed, <code>false</code>
+      * @return `true` if slots have been destroyed, `false`
       *     otherwise.
       */
     inline def destroySlots(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("destroySlots")().asInstanceOf[Boolean]
@@ -189,7 +191,7 @@ object global {
       * happen until the element is present in the DOM. The usual way to achieve
       * that is to place it within a script block within the div element named in
       * the method call.
-      * <br><br>
+      *
       * If single request architecture (SRA) is being used, all unfetched
       * ad slots at the time this method is called will be fetched at once. To
       * force an ad slot not to display, the entire div must be removed.
@@ -302,7 +304,7 @@ object global {
     /**
       * Flag indicating that
       * {@link PubAdsService} is enabled, loaded and fully operational. This
-      * property will be simply <code>undefined</code> until {@link enableServices}
+      * property will be simply `undefined` until {@link enableServices}
       * is called and {@link PubAdsService} is loaded and initialized.
       */
     @JSGlobal("googletag.pubadsReady")

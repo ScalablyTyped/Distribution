@@ -27,10 +27,6 @@ object typedocStrings {
   inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
-  sealed trait `@$LeftcurlybracketstringRightcurlybracket` extends StObject
-  inline def `@$LeftcurlybracketstringRightcurlybracket`: `@$LeftcurlybracketstringRightcurlybracket` = "@${string}".asInstanceOf[`@$LeftcurlybracketstringRightcurlybracket`]
-  
-  @js.native
   sealed trait `@alpha` extends StObject
   inline def `@alpha`: `@alpha` = "@alpha".asInstanceOf[`@alpha`]
   
@@ -201,10 +197,6 @@ object typedocStrings {
   @js.native
   sealed trait ContainsCallSignatures extends StObject
   inline def ContainsCallSignatures: ContainsCallSignatures = "ContainsCallSignatures".asInstanceOf[ContainsCallSignatures]
-  
-  @js.native
-  sealed trait `DollarLeftcurlybracketQuotationmarknoneQuotationmark Verticalline QuotationmarkxMinYMinQuotationmark Verticalline QuotationmarkxMaxYMinQuotationmark Verticalline QuotationmarkxMinYMidQuotationmark Verticalline QuotationmarkxMaxYMidQuotationmark Verticalline QuotationmarkxMinYMaxQuotationmark Verticalline QuotationmarkxMidYMaxQuotationmark Verticalline QuotationmarkxMaxYMaxQuotationmarkRightcurlybracketDollarLeftcurlybracketQuotationmarkQuotationmark Verticalline Quotationmark meetQuotationmark V` extends StObject
-  inline def `DollarLeftcurlybracketQuotationmarknoneQuotationmark Verticalline QuotationmarkxMinYMinQuotationmark Verticalline QuotationmarkxMaxYMinQuotationmark Verticalline QuotationmarkxMinYMidQuotationmark Verticalline QuotationmarkxMaxYMidQuotationmark Verticalline QuotationmarkxMinYMaxQuotationmark Verticalline QuotationmarkxMidYMaxQuotationmark Verticalline QuotationmarkxMaxYMaxQuotationmarkRightcurlybracketDollarLeftcurlybracketQuotationmarkQuotationmark Verticalline Quotationmark meetQuotationmark V`: `DollarLeftcurlybracketQuotationmarknoneQuotationmark Verticalline QuotationmarkxMinYMinQuotationmark Verticalline QuotationmarkxMaxYMinQuotationmark Verticalline QuotationmarkxMinYMidQuotationmark Verticalline QuotationmarkxMaxYMidQuotationmark Verticalline QuotationmarkxMinYMaxQuotationmark Verticalline QuotationmarkxMidYMaxQuotationmark Verticalline QuotationmarkxMaxYMaxQuotationmarkRightcurlybracketDollarLeftcurlybracketQuotationmarkQuotationmark Verticalline Quotationmark meetQuotationmark V` = ("${\"none\" | \"xMinYMin\" | \"xMaxYMin\" | \"xMinYMid\" | \"xMaxYMid\" | \"xMinYMax\" | \"xMidYMax\" | \"xMaxYMax\"}${\"\" | \" meet\" | \" slice\"}").asInstanceOf[`DollarLeftcurlybracketQuotationmarknoneQuotationmark Verticalline QuotationmarkxMinYMinQuotationmark Verticalline QuotationmarkxMaxYMinQuotationmark Verticalline QuotationmarkxMinYMidQuotationmark Verticalline QuotationmarkxMaxYMidQuotationmark Verticalline QuotationmarkxMinYMaxQuotationmark Verticalline QuotationmarkxMidYMaxQuotationmark Verticalline QuotationmarkxMaxYMaxQuotationmarkRightcurlybracketDollarLeftcurlybracketQuotationmarkQuotationmark Verticalline Quotationmark meetQuotationmark V`]
   
   @js.native
   sealed trait Dot extends StObject

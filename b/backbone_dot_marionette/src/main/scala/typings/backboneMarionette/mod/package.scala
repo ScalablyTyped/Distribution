@@ -26,9 +26,9 @@ inline def noConflict(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noConfl
 
 inline def normalizeMethods[T](target: Any, hash: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeMethods")(target.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def triggerMethod(target: Any, name: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerMethod")((List(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+inline def triggerMethod(target: Any, name: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerMethod")((scala.List(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 
-inline def triggerMethodOn(ctx: Any, name: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerMethodOn")((List(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+inline def triggerMethodOn(ctx: Any, name: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerMethodOn")((scala.List(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 
 inline def unbindEvents(target: Any, entity: Any, bindings: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unbindEvents")(target.asInstanceOf[js.Any], entity.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any])).asInstanceOf[Unit]
 

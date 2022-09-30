@@ -39,7 +39,7 @@ object valueUtilMod {
   inline def setValue(store: Store, namePath: InternalNamePath, value: StoreValue): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Store]
   inline def setValue(store: Store, namePath: InternalNamePath, value: StoreValue, removeIfUndefined: Boolean): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any], removeIfUndefined.asInstanceOf[js.Any])).asInstanceOf[Store]
   
-  inline def setValues[T](store: T, restValues: T*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setValues")(List(store.asInstanceOf[js.Any]).`++`(restValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
+  inline def setValues[T](store: T, restValues: T*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setValues")(scala.List(store.asInstanceOf[js.Any]).`++`(restValues.asInstanceOf[Seq[js.Any]])*).asInstanceOf[T]
   
   type SimilarObject = String | Double | js.Object
 }

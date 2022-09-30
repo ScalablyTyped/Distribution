@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object objectIdentifierMod {
   
-  @JSImport("xadesjs/build/types/xml/object_identifier", "DocumentationReference")
+  @JSImport("xadesjs/build/types/src/xml/object_identifier", "DocumentationReference")
   @js.native
-  class DocumentationReference () extends XadesObject {
+  open class DocumentationReference () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Uri: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/object_identifier", "DocumentationReferences")
+  @JSImport("xadesjs/build/types/src/xml/object_identifier", "DocumentationReferences")
   @js.native
-  class DocumentationReferences () extends XadesCollection[DocumentationReference] {
+  open class DocumentationReferences () extends XadesCollection[DocumentationReference] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/object_identifier", "Identifier")
+  @JSImport("xadesjs/build/types/src/xml/object_identifier", "Identifier")
   @js.native
-  class Identifier () extends XadesObject {
+  open class Identifier () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Qualifier: IdentifierQualifier = js.native
@@ -32,9 +32,9 @@ object objectIdentifierMod {
     var Value: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/object_identifier", "ObjectIdentifier")
+  @JSImport("xadesjs/build/types/src/xml/object_identifier", "ObjectIdentifier")
   @js.native
-  class ObjectIdentifier () extends XadesObject {
+  open class ObjectIdentifier () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Description: String = js.native

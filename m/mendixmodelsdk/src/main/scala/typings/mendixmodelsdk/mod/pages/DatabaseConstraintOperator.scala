@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.DatabaseConstraintOperator")
 @js.native
-class DatabaseConstraintOperator protected ()
+open class DatabaseConstraintOperator protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DatabaseConstraintOperator {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

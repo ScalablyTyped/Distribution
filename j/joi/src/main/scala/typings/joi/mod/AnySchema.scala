@@ -1,6 +1,9 @@
 package typings.joi.mod
 
+import typings.joi.anon.ArtifactsMap
 import typings.joi.anon.Override
+import typings.joi.anon.ValueTSchema
+import typings.joi.anon.Warning
 import typings.joi.joiStrings.map
 import typings.joi.joiStrings.number
 import typings.joi.joiStrings.set
@@ -23,7 +26,7 @@ trait AnySchema[TSchema]
     *    - a function which returns the default value using the signature `function(parent, helpers)` where:
     *        - `parent` - a clone of the object containing the value being validated. Note that since specifying a
     *          `parent` argument performs cloning, do not declare format arguments if you are not using them.
-    *        - `helpers` - same as thsoe described in [`any.custom()`](anycustomermethod_description)
+    *        - `helpers` - same as those described in [`any.custom()`](anycustomermethod_description)
     *
     * When called without any `value` on an object schema type, a default value will be automatically generated
     * based on the default values of the object keys.
@@ -57,6 +60,12 @@ trait AnySchema[TSchema]
     * @param targets - an object where each key is a target name, and each value is a function that takes an schema and returns an schema.
     */
   def alter(targets: Record[String, js.Function1[/* schema */ this.type, Schema[Any]]]): this.type = js.native
+  
+  /**
+    * Assigns the schema an artifact id which is included in the validation result if the rule passed validation.
+    * @param id - any value other than undefined which will be returned as-is in the result artifacts map.
+    */
+  def artifact(id: Any): this.type = js.native
   
   /**
     * By default, some Joi methods to function properly need to rely on the Joi instance they are attached to because
@@ -311,7 +320,7 @@ trait AnySchema[TSchema]
   var ruleset: this.type = js.native
   
   /**
-    * Registers a schema to be used by decendents of the current schema in named link references.
+    * Registers a schema to be used by descendants of the current schema in named link references.
     */
   def shared(ref: Schema[Any]): this.type = js.native
   
@@ -360,8 +369,12 @@ trait AnySchema[TSchema]
   /**
     * Validates a value using the schema and options.
     */
-  def validateAsync(value: Any): js.Promise[Any] = js.native
-  def validateAsync(value: Any, options: AsyncValidationOptions): js.Promise[Any] = js.native
+  def validateAsync[TOpts /* <: AsyncValidationOptions */](value: Any): js.Promise[
+    TSchema | (ValueTSchema[TSchema] & (js.Object | ArtifactsMap) & (js.Object | Warning))
+  ] = js.native
+  def validateAsync[TOpts /* <: AsyncValidationOptions */](value: Any, options: TOpts): js.Promise[
+    TSchema | (ValueTSchema[TSchema] & (js.Object | ArtifactsMap) & (js.Object | Warning))
+  ] = js.native
   
   /**
     * Same as `rule({ warn: true })`.

@@ -1,5 +1,7 @@
 package typings.airtable
 
+import typings.airtable.airtableStrings.get
+import typings.airtable.airtableStrings.post
 import typings.airtable.fieldSetMod.FieldSet
 import typings.airtable.queryParamsMod.QueryParams
 import typings.airtable.recordDataMod.RecordData
@@ -52,6 +54,8 @@ object tableMod {
   
   trait OptionalParameters extends StObject {
     
+    var method: js.UndefOr[get | post] = js.undefined
+    
     var typecast: js.UndefOr[Boolean] = js.undefined
   }
   object OptionalParameters {
@@ -62,6 +66,10 @@ object tableMod {
     }
     
     extension [Self <: OptionalParameters](x: Self) {
+      
+      inline def setMethod(value: get | post): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
       inline def setTypecast(value: Boolean): Self = StObject.set(x, "typecast", value.asInstanceOf[js.Any])
       
@@ -124,11 +132,11 @@ object tableMod {
       done: RecordForEachDoneCallback
     ): Unit = js.native
     
-    def _listRecords(limit: Double, offset: Double, opts: OptionalParameters): Unit = js.native
-    def _listRecords(limit: Double, offset: Double, opts: OptionalParameters, done: RecordListCallback[TFields]): Unit = js.native
-    def _listRecords(limit: Double, offset: Double, opts: RecordListCallback[TFields]): Unit = js.native
+    def _listRecords(pageSize: Double, offset: Double, opts: OptionalParameters): Unit = js.native
+    def _listRecords(pageSize: Double, offset: Double, opts: OptionalParameters, done: RecordListCallback[TFields]): Unit = js.native
+    def _listRecords(pageSize: Double, offset: Double, opts: RecordListCallback[TFields]): Unit = js.native
     def _listRecords(
-      limit: Double,
+      pageSize: Double,
       offset: Double,
       opts: RecordListCallback[TFields],
       done: RecordListCallback[TFields]

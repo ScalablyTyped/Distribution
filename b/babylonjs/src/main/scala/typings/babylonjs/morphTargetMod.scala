@@ -40,7 +40,7 @@ object morphTargetMod {
     
     /* private */ var _normals: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _onDataLayoutChanged: Observable[Unit] = js.native
     
     /* private */ var _positions: Any = js.native

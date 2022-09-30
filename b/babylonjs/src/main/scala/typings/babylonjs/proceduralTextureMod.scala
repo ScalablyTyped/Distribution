@@ -197,7 +197,7 @@ object proceduralTextureMod {
     
     /* private */ var _drawWrapper: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     /* protected */ var _fallbackTexture: Nullable[Texture] = js.native
     
     /* private */ var _fallbackTextureUsed: Any = js.native
@@ -212,7 +212,7 @@ object proceduralTextureMod {
     
     /* private */ var _fullEngine: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _generateMipMaps: Boolean = js.native
     
     /* protected */ def _getDefines(): String = js.native
@@ -230,19 +230,18 @@ object proceduralTextureMod {
     /* private */ var _samplers: Any = js.native
     
     /**
-      * @param effect
-      * @hidden*
+      * @internal*
       */
     def _setEffect(effect: Effect): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _shouldRender(): Boolean = js.native
     
     /* private */ var _size: Any = js.native
     
     /* private */ var _textureType: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _textures: StringDictionary[Texture] = js.native
     
     /* private */ var _uniforms: Any = js.native

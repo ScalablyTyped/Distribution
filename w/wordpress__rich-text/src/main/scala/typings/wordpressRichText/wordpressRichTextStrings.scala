@@ -19,10 +19,6 @@ object wordpressRichTextStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
-  
-  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -45,10 +41,6 @@ object wordpressRichTextStrings {
   @js.native
   sealed trait base extends StObject
   inline def base: base = "base".asInstanceOf[base]
-  
-  @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
   
   @js.native
   sealed trait bdi extends StObject
@@ -131,10 +123,6 @@ object wordpressRichTextStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait div extends StObject
   inline def div: div = "div".asInstanceOf[div]
   
@@ -167,24 +155,12 @@ object wordpressRichTextStrings {
   inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
   sealed trait form extends StObject
   inline def form: form = "form".asInstanceOf[form]
-  
-  @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait h1 extends StObject
@@ -283,10 +259,6 @@ object wordpressRichTextStrings {
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
   
@@ -329,10 +301,6 @@ object wordpressRichTextStrings {
   @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
-  
-  @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait picture extends StObject

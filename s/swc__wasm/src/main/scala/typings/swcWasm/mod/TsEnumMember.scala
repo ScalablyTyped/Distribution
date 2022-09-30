@@ -1,0 +1,37 @@
+package typings.swcWasm.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait TsEnumMember
+  extends StObject
+     with Node
+     with HasSpan {
+  
+  var id: TsEnumMemberId
+  
+  var init: js.UndefOr[Expression] = js.undefined
+  
+  @JSName("type")
+  var type_TsEnumMember: typings.swcWasm.swcWasmStrings.TsEnumMember
+}
+object TsEnumMember {
+  
+  inline def apply(id: TsEnumMemberId, span: Span): TsEnumMember = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TsEnumMember")
+    __obj.asInstanceOf[TsEnumMember]
+  }
+  
+  extension [Self <: TsEnumMember](x: Self) {
+    
+    inline def setId(value: TsEnumMemberId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setInit(value: Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setType(value: typings.swcWasm.swcWasmStrings.TsEnumMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

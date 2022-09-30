@@ -165,7 +165,7 @@ object anon {
     
     var children: js.UndefOr[js.Function1[/* fills */ js.Array[js.Array[Element]], Element | Null]] = js.undefined
     
-    var fillProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var fillProps: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object OmitPropsname {
     
@@ -184,7 +184,7 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setFillProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
+      inline def setFillProps(value: StringDictionary[Any]): Self = StObject.set(x, "fillProps", value.asInstanceOf[js.Any])
       
       inline def setFillPropsUndefined: Self = StObject.set(x, "fillProps", js.undefined)
     }
@@ -203,7 +203,7 @@ object anon {
     
     var availableLegacyWidgets: js.UndefOr[js.Array[Description]] = js.undefined
     
-    var availableTemplates: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var availableTemplates: js.UndefOr[js.Array[Any]] = js.undefined
     
     var bodyPlaceholder: js.UndefOr[String] = js.undefined
     
@@ -262,7 +262,7 @@ object anon {
       
       inline def setAllowedBlockTypesUndefined: Self = StObject.set(x, "allowedBlockTypes", js.undefined)
       
-      inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value :_*))
+      inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value*))
       
       inline def setAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "allowedMimeTypes", value.asInstanceOf[js.Any])
       
@@ -278,13 +278,13 @@ object anon {
       
       inline def setAvailableLegacyWidgetsUndefined: Self = StObject.set(x, "availableLegacyWidgets", js.undefined)
       
-      inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
+      inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value*))
       
-      inline def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+      inline def setAvailableTemplates(value: js.Array[Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
       
       inline def setAvailableTemplatesUndefined: Self = StObject.set(x, "availableTemplates", js.undefined)
       
-      inline def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
+      inline def setAvailableTemplatesVarargs(value: Any*): Self = StObject.set(x, "availableTemplates", js.Array(value*))
       
       inline def setBodyPlaceholder(value: String): Self = StObject.set(x, "bodyPlaceholder", value.asInstanceOf[js.Any])
       
@@ -298,7 +298,7 @@ object anon {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
       
@@ -324,7 +324,7 @@ object anon {
       
       inline def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
       
-      inline def setFontSizesVarargs(value: Name*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+      inline def setFontSizesVarargs(value: Name*): Self = StObject.set(x, "fontSizes", js.Array(value*))
       
       inline def setHasFixedToolbar(value: Boolean): Self = StObject.set(x, "hasFixedToolbar", value.asInstanceOf[js.Any])
       
@@ -338,7 +338,7 @@ object anon {
       
       inline def setImageSizesUndefined: Self = StObject.set(x, "imageSizes", js.undefined)
       
-      inline def setImageSizesVarargs(value: Slug*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
+      inline def setImageSizesVarargs(value: Slug*): Self = StObject.set(x, "imageSizes", js.Array(value*))
       
       inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
       
@@ -368,7 +368,7 @@ object anon {
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setStylesVarargs(value: Css*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: Css*): Self = StObject.set(x, "styles", js.Array(value*))
       
       inline def setTitlePlaceholder(value: String): Self = StObject.set(x, "titlePlaceholder", value.asInstanceOf[js.Any])
       
@@ -426,10 +426,7 @@ object anon {
     def showBlockTypes(blockNames: String): Unit = js.native
     def showBlockTypes(blockNames: js.Array[String]): Unit = js.native
     
-    @JSName("switchEditorMode")
-    def switchEditorMode_text(mode: text): Unit = js.native
-    @JSName("switchEditorMode")
-    def switchEditorMode_visual(mode: visual): Unit = js.native
+    def switchEditorMode(mode: text | visual): Unit = js.native
     
     def toggleEditorPanelEnabled(panelName: String): Unit = js.native
     
@@ -458,7 +455,7 @@ object anon {
     def getPreference[T](preferenceKey: String): js.UndefOr[T] = js.native
     def getPreference[T](preferenceKey: String, defaultValue: T): T | Double | String = js.native
     
-    def getPreferences(): Record[String, js.Any] = js.native
+    def getPreferences(): Record[String, Any] = js.native
     
     def hasMetaBoxes(): Boolean = js.native
     

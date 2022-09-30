@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.ValidationFeedbackAction")
 @js.native
-class ValidationFeedbackAction protected ()
+open class ValidationFeedbackAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ValidationFeedbackAction {
   def this(
     model: AbstractModel,

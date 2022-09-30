@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(a: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(List(a.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply(a: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(scala.List(a.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("object-diff", JSImport.Namespace)
   @js.native

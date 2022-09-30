@@ -2,6 +2,7 @@ package typings.pmmmwhReactRefreshWebpackPlugin
 
 import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.NormalizedPluginOptions
 import typings.pmmmwhReactRefreshWebpackPlugin.typesMod.ReactRefreshPluginOptions
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object mod {
   /**
     * @param {import('./types').ReactRefreshPluginOptions} [options] Options for react-refresh-plugin.
     */
-  class ^ () extends ReactRefreshPlugin {
+  open class ^ () extends ReactRefreshPlugin {
     def this(options: ReactRefreshPluginOptions) = this()
   }
   
@@ -22,7 +23,7 @@ object mod {
   /**
     * @param {import('./types').ReactRefreshPluginOptions} [options] Options for react-refresh-plugin.
     */
-  class ReactRefreshPlugin () extends StObject {
+  open class ReactRefreshPlugin () extends StObject {
     def this(options: ReactRefreshPluginOptions) = this()
     
     /**
@@ -31,9 +32,7 @@ object mod {
       * @returns {void}
       */
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
-    ): Unit = js.native
+    def apply(compiler: Compiler): Unit = js.native
     
     /**
       * @readonly

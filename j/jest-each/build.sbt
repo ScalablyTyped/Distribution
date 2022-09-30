@@ -1,16 +1,18 @@
 organization := "org.scalablytyped"
 name := "jest-each"
-version := "26.6.2-03df4c"
-scalaVersion := "3.0.1"
+version := "29.1.2-91f21e"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20200609Z-707c57",
-  "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20200515Z-a56c7d",
-  "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20200720Z-060d09",
-  "org.scalablytyped" %%% "jest__types" % "26.6.2-2c91e1",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-cd0bb6",
+  "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-f4f4b8",
+  "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-4b2caf",
+  "org.scalablytyped" %%% "jest__schemas" % "29.0.0-e0c396",
+  "org.scalablytyped" %%% "jest__types" % "29.1.2-30d6cb",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-e6bd5c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

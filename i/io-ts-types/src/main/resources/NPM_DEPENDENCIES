@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "io-ts-types" : "0.5.17"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "io-ts-types" : "0.5.17"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

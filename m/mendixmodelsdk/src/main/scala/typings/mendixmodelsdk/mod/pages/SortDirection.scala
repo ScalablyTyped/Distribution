@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SortDirection")
 @js.native
-class SortDirection protected ()
+open class SortDirection protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SortDirection {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

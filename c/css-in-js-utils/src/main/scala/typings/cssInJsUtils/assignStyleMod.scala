@@ -11,7 +11,7 @@ object assignStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(base: StyleObject, extendingStyles: StyleObject*): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(base.asInstanceOf[js.Any]).`++`(extendingStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StyleObject]
+  inline def default(base: StyleObject, extendingStyles: StyleObject*): StyleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scala.List(base.asInstanceOf[js.Any]).`++`(extendingStyles.asInstanceOf[Seq[js.Any]])*).asInstanceOf[StyleObject]
   
   trait StyleObject
     extends StObject

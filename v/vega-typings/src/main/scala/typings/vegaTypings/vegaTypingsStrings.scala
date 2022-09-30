@@ -2253,10 +2253,6 @@ object vegaTypingsStrings {
   inline def independent: independent = "independent".asInstanceOf[independent]
   
   @js.native
-  sealed trait indexColon$LeftcurlybracketstringRightcurlybracket extends StObject
-  inline def indexColon$LeftcurlybracketstringRightcurlybracket: indexColon$LeftcurlybracketstringRightcurlybracket = "index:${string}".asInstanceOf[indexColon$LeftcurlybracketstringRightcurlybracket]
-  
-  @js.native
   sealed trait indianred
     extends StObject
        with ColorName

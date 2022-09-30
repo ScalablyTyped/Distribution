@@ -16,7 +16,7 @@ trait PrivacySettingsConfig extends StObject {
     * Indicates whether the page should be
     * [treated as
     * child-directed](https://support.google.com/admanager/answer/3671211). Set
-    * to <code>null</code> to clear the configuration.
+    * to `null` to clear the configuration.
     */
   var childDirectedTreatment: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -51,7 +51,7 @@ trait PrivacySettingsConfig extends StObject {
     * This value populates the
     * [Traffic source](https://support.google.com/admanager/answer/11233407)
     * dimension in Ad Manager reporting. If not set, traffic source defaults to
-    * <code>Undefined</code> in reporting.
+    * `undefined` in reporting.
     *
     * @example
     *   // Indicate requests represent organic traffic.
@@ -70,7 +70,7 @@ trait PrivacySettingsConfig extends StObject {
     * Indicates whether to mark ad requests as coming from users
     * [under the age of
     * consent](https://support.google.com/admanager/answer/9004919). Set to
-    * <code>null</code> to clear the configuration.
+    * `null` to clear the configuration.
     */
   var underAgeOfConsent: js.UndefOr[Boolean | Null] = js.undefined
 }

@@ -1,15 +1,15 @@
 package typings.nickThompsonElementary
 
 import typings.nickThompsonElementary.childrenMod.SizedChildrenArray
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`0`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`1`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`2`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`3`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`4`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`5`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`6`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`7`
-import typings.nickThompsonElementary.nickThompsonElementaryNumbers.`8`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`0`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`1`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`2`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`3`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`4`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`5`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`6`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`7`
+import typings.nickThompsonElementary.nickThompsonElementaryInts.`8`
 import typings.nickThompsonElementary.nodeMod.Node
 import typings.nickThompsonElementary.propsMod.Props
 import org.scalablytyped.runtime.StObject

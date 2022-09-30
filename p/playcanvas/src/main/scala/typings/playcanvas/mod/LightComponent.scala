@@ -39,6 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {Color} color The Color of the light. The alpha component of the color is ignored.
   * Defaults to white (1, 1, 1).
   * @property {number} intensity The brightness of the light. Defaults to 1.
+  * @property {number} luminance The physically based luminance. Only used if scene.physicalUnits is true. Defaults to 0.
   * @property {number} shape The light source shape. Can be:
   *
   * - {@link pc.LIGHTSHAPE_PUNCTUAL}: Infinitesimally small point.
@@ -221,6 +222,9 @@ open class LightComponent protected () extends Component {
   
   def layers: js.Array[Double] = js.native
   def layers_=(arg: js.Array[Double]): Unit = js.native
+  
+  def luminance: Double = js.native
+  def luminance_=(arg: Double): Unit = js.native
   
   def mask: Double = js.native
   def mask_=(arg: Double): Unit = js.native

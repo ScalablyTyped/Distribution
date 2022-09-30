@@ -9,11 +9,11 @@ object buttonMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/navigation/button", JSImport.Default)
   @js.native
-  class default () extends Button
+  open class default () extends Button
   
   @js.native
   trait Button
-    extends PureComponent[Props, js.Object, js.Any] {
+    extends PureComponent[Props, js.Object, Any] {
     
     def onPress(): Unit = js.native
   }

@@ -81,6 +81,8 @@ trait PickthemeDeepPartialThemeAlpha extends StObject {
   
   var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all] = js.undefined
   
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
   
   var family: light | regular | medium | thin
@@ -223,6 +225,10 @@ object PickthemeDeepPartialThemeAlpha {
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
     inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     

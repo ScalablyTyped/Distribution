@@ -1,30 +1,30 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`128`
-import typings.activexDao.activexDaoNumbers.`16`
-import typings.activexDao.activexDaoNumbers.`1`
-import typings.activexDao.activexDaoNumbers.`256`
-import typings.activexDao.activexDaoNumbers.`2`
-import typings.activexDao.activexDaoNumbers.`32`
-import typings.activexDao.activexDaoNumbers.`4`
-import typings.activexDao.activexDaoNumbers.`512`
-import typings.activexDao.activexDaoNumbers.`64`
-import typings.activexDao.activexDaoNumbers.`8`
+import typings.activexDao.activexDaoInts.`128`
+import typings.activexDao.activexDaoInts.`16`
+import typings.activexDao.activexDaoInts.`1`
+import typings.activexDao.activexDaoInts.`256`
+import typings.activexDao.activexDaoInts.`2`
+import typings.activexDao.activexDaoInts.`32`
+import typings.activexDao.activexDaoInts.`4`
+import typings.activexDao.activexDaoInts.`512`
+import typings.activexDao.activexDaoInts.`64`
+import typings.activexDao.activexDaoInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`4`
-  - typings.activexDao.activexDaoNumbers.`2`
-  - typings.activexDao.activexDaoNumbers.`1`
-  - typings.activexDao.activexDaoNumbers.`8`
-  - typings.activexDao.activexDaoNumbers.`128`
-  - typings.activexDao.activexDaoNumbers.`256`
-  - typings.activexDao.activexDaoNumbers.`512`
-  - typings.activexDao.activexDaoNumbers.`16`
-  - typings.activexDao.activexDaoNumbers.`32`
-  - typings.activexDao.activexDaoNumbers.`64`
+  - typings.activexDao.activexDaoInts.`4`
+  - typings.activexDao.activexDaoInts.`2`
+  - typings.activexDao.activexDaoInts.`1`
+  - typings.activexDao.activexDaoInts.`8`
+  - typings.activexDao.activexDaoInts.`128`
+  - typings.activexDao.activexDaoInts.`256`
+  - typings.activexDao.activexDaoInts.`512`
+  - typings.activexDao.activexDaoInts.`16`
+  - typings.activexDao.activexDaoInts.`32`
+  - typings.activexDao.activexDaoInts.`64`
 */
 trait DatabaseTypeEnum extends StObject
 object DatabaseTypeEnum {

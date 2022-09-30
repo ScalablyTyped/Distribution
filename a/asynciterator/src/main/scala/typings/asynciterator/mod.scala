@@ -175,9 +175,9 @@ object mod {
       @returns {module:asynciterator.AsyncIterator} A new iterator that filters items from this iterator
       */
     @JSName("filter")
-    def filter_K_T[K /* <: T */](filter: js.Function1[/* item */ T, /* is K */ Boolean]): AsyncIterator[K] = js.native
+    def filter_K[K /* <: T */](filter: js.Function1[/* item */ T, /* is K */ Boolean]): AsyncIterator[K] = js.native
     @JSName("filter")
-    def filter_K_T[K /* <: T */](filter: js.Function1[/* item */ T, /* is K */ Boolean], self: Any): AsyncIterator[K] = js.native
+    def filter_K[K /* <: T */](filter: js.Function1[/* item */ T, /* is K */ Boolean], self: Any): AsyncIterator[K] = js.native
     
     /**
       The iterator emits a `readable` event when it might have new items available

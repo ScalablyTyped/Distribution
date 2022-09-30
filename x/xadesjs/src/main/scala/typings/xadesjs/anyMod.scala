@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anyMod {
   
-  @JSImport("xadesjs/build/types/xml/any", "Any")
+  @JSImport("xadesjs/build/types/src/xml/any", "Any")
   @js.native
-  class Any () extends XadesObject {
+  open class Any () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Value: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/any", "AnyCollection")
+  @JSImport("xadesjs/build/types/src/xml/any", "AnyCollection")
   @js.native
-  class AnyCollection () extends XadesCollection[XadesObject] {
+  open class AnyCollection () extends XadesCollection[XadesObject] {
     def this(properties: js.Object) = this()
   }
 }

@@ -40,7 +40,7 @@ trait DragDropMonitor extends StObject {
     * explicitly returns its own result from drop() overrides the child drop result previously set by the child. Returns null if
     * called outside endDrag().
     */
-  def getDropResult(): js.Any = js.native
+  def getDropResult(): Any = js.native
   
   /**
     * Returns the { x, y } client offset of the pointer at the time when the current drag operation has started.
@@ -58,10 +58,10 @@ trait DragDropMonitor extends StObject {
     * Returns a plain object representing the currently dragged item. Every drag source must specify it by returning an object
     * from its beginDrag() method. Returns null if no item is being dragged.
     */
-  def getItem(): js.Any = js.native
+  def getItem(): Any = js.native
   
   /**
-    * Returns a string or an ES6 symbol identifying the type of the current dragged item. Returns null if no item is being dragged.
+    * Returns a string or a symbol identifying the type of the current dragged item. Returns null if no item is being dragged.
     */
   def getItemType(): Identifier | Null = js.native
   

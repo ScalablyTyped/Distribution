@@ -38,7 +38,7 @@ object FunctionParent {
     generator: Boolean,
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
     kind: get | set | method_ | constructor,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): typings.babelTypes.libMod.ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object FunctionParent {
     body: BlockStatement_,
     key: PrivateName_,
     kind: get | set | method_,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): typings.babelTypes.libMod.ClassPrivateMethod_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])

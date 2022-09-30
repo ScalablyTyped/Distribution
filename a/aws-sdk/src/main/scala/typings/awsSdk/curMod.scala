@@ -27,6 +27,7 @@ object curMod {
     - typings.awsSdk.awsSdkStrings.`ap-south-1`
     - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
     - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
+    - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
     - typings.awsSdk.awsSdkStrings.`ap-northeast-1`
     - typings.awsSdk.awsSdkStrings.`ap-northeast-2`
     - typings.awsSdk.awsSdkStrings.`ap-northeast-3`
@@ -37,6 +38,8 @@ object curMod {
     - typings.awsSdk.awsSdkStrings.`eu-west-3`
     - typings.awsSdk.awsSdkStrings.`eu-north-1`
     - typings.awsSdk.awsSdkStrings.`eu-south-1`
+    - typings.awsSdk.awsSdkStrings.`eu-south-2`
+    - typings.awsSdk.awsSdkStrings.`me-central-1`
     - typings.awsSdk.awsSdkStrings.`me-south-1`
     - typings.awsSdk.awsSdkStrings.`sa-east-1`
     - typings.awsSdk.awsSdkStrings.`us-east-1`

@@ -32,7 +32,7 @@ object InternalTexture {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /** @internal */
   @JSGlobal("BABYLON.InternalTexture._Counter")
   @js.native
   def _Counter: Double = js.native

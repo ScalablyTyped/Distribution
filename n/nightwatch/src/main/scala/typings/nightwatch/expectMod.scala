@@ -3,7 +3,7 @@ package typings.nightwatch
 import typings.nightwatch.mod.Awaitable
 import typings.nightwatch.mod.Definition
 import typings.nightwatch.mod.NightwatchAPI
-import typings.nightwatch.nightwatchNumbers.`1`
+import typings.nightwatch.nightwatchInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

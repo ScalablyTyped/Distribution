@@ -6,9 +6,9 @@ import typings.plotlyJs.mod.ModeBarButton
 import typings.plotlyJs.mod.ModeBarDefaultButtons
 import typings.plotlyJs.mod.PlotlyHTMLElement
 import typings.reactPlotlyJs.reactPlotlyJsBooleans.`false`
-import typings.reactPlotlyJs.reactPlotlyJsNumbers.`0`
-import typings.reactPlotlyJs.reactPlotlyJsNumbers.`1`
-import typings.reactPlotlyJs.reactPlotlyJsNumbers.`2`
+import typings.reactPlotlyJs.reactPlotlyJsInts.`0`
+import typings.reactPlotlyJs.reactPlotlyJsInts.`1`
+import typings.reactPlotlyJs.reactPlotlyJsInts.`2`
 import typings.reactPlotlyJs.reactPlotlyJsStrings.autosize
 import typings.reactPlotlyJs.reactPlotlyJsStrings.hover
 import typings.reactPlotlyJs.reactPlotlyJsStrings.opaque

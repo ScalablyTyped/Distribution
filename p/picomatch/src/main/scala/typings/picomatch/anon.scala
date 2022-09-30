@@ -2,17 +2,10 @@ package typings.picomatch
 
 import typings.picomatch.picomatchStrings.Asterisk
 import typings.picomatch.picomatchStrings.AsteriskAsterisk
-import typings.picomatch.picomatchStrings.SpaceBackslasht
-import typings.picomatch.picomatchStrings.SpaceBackslashtBackslashrBackslashnBackslashvBackslashf
 import typings.picomatch.picomatchStrings.`0-9`
 import typings.picomatch.picomatchStrings.`A-Fa-f0-9`
 import typings.picomatch.picomatchStrings.`A-Z`
 import typings.picomatch.picomatchStrings.`A-Za-z0-9_`
-import typings.picomatch.picomatchStrings.`Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`
-import typings.picomatch.picomatchStrings.`Backslashx00-Backslashx1FBackslashx7F`
-import typings.picomatch.picomatchStrings.`Backslashx00-Backslashx7F`
-import typings.picomatch.picomatchStrings.`Backslashx20-Backslashx7E `
-import typings.picomatch.picomatchStrings.`Backslashx21-Backslashx7E`
 import typings.picomatch.picomatchStrings.`a-zA-Z0-9`
 import typings.picomatch.picomatchStrings.`a-zA-Z`
 import typings.picomatch.picomatchStrings.`a-z_`
@@ -29,23 +22,23 @@ object anon {
     
     var alpha: `a-zA-Z`
     
-    var ascii: `Backslashx00-Backslashx7F`
+    var ascii: String
     
-    var blank: SpaceBackslasht
+    var blank: String
     
-    var cntrl: `Backslashx00-Backslashx1FBackslashx7F`
+    var cntrl: String
     
     var digit: `0-9`
     
-    var graph: `Backslashx21-Backslashx7E`
+    var graph: String
     
     var lower: `a-z_`
     
-    var print: `Backslashx20-Backslashx7E `
+    var print: String
     
-    var punct: `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`
+    var punct: String
     
-    var space: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf
+    var space: String
     
     var upper: `A-Z`
     
@@ -66,25 +59,23 @@ object anon {
       
       inline def setAlpha(value: `a-zA-Z`): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      inline def setAscii(value: `Backslashx00-Backslashx7F`): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
+      inline def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
       
-      inline def setBlank(value: SpaceBackslasht): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
+      inline def setBlank(value: String): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
       
-      inline def setCntrl(value: `Backslashx00-Backslashx1FBackslashx7F`): Self = StObject.set(x, "cntrl", value.asInstanceOf[js.Any])
+      inline def setCntrl(value: String): Self = StObject.set(x, "cntrl", value.asInstanceOf[js.Any])
       
       inline def setDigit(value: `0-9`): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
       
-      inline def setGraph(value: `Backslashx21-Backslashx7E`): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: String): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
       inline def setLower(value: `a-z_`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
       
-      inline def setPrint(value: `Backslashx20-Backslashx7E `): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      inline def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
-      inline def setPunct(
-        value: `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`
-      ): Self = StObject.set(x, "punct", value.asInstanceOf[js.Any])
+      inline def setPunct(value: String): Self = StObject.set(x, "punct", value.asInstanceOf[js.Any])
       
-      inline def setSpace(value: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
       inline def setUpper(value: `A-Z`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
       

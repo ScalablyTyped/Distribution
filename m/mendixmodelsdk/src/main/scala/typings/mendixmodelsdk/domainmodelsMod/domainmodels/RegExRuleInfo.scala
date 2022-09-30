@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RegExRuleInfo")
+@JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RegExRuleInfo")
 @js.native
-class RegExRuleInfo protected () extends RuleInfo {
+open class RegExRuleInfo protected () extends RuleInfo {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -32,7 +32,7 @@ class RegExRuleInfo protected () extends RuleInfo {
 }
 object RegExRuleInfo {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RegExRuleInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RegExRuleInfo")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,13 +53,13 @@ object RegExRuleInfo {
   inline def createIn(container: ValidationRule): RegExRuleInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RegExRuleInfo]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RegExRuleInfo.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RegExRuleInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.RegExRuleInfo.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.RegExRuleInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -1,18 +1,18 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`1028`
-import typings.activexOffice.activexOfficeNumbers.`1041`
-import typings.activexOffice.activexOfficeNumbers.`1042`
-import typings.activexOffice.activexOfficeNumbers.`2052`
+import typings.activexOffice.activexOfficeInts.`1028`
+import typings.activexOffice.activexOfficeInts.`1041`
+import typings.activexOffice.activexOfficeInts.`1042`
+import typings.activexOffice.activexOfficeInts.`2052`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`1041`
-  - typings.activexOffice.activexOfficeNumbers.`1042`
-  - typings.activexOffice.activexOfficeNumbers.`2052`
-  - typings.activexOffice.activexOfficeNumbers.`1028`
+  - typings.activexOffice.activexOfficeInts.`1041`
+  - typings.activexOffice.activexOfficeInts.`1042`
+  - typings.activexOffice.activexOfficeInts.`2052`
+  - typings.activexOffice.activexOfficeInts.`1028`
 */
 trait MsoFarEastLineBreakLanguageID extends StObject
 object MsoFarEastLineBreakLanguageID {

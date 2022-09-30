@@ -1,7 +1,7 @@
 package typings.languageNameMap
 
-import typings.languageNameMap.languageNameMapNumbers.`0`
-import typings.languageNameMap.languageNameMapNumbers.`1`
+import typings.languageNameMap.languageNameMapInts.`0`
+import typings.languageNameMap.languageNameMapInts.`1`
 import typings.languageNameMap.languageNameMapStrings.ltr
 import typings.languageNameMap.languageNameMapStrings.rtl
 import org.scalablytyped.runtime.StObject

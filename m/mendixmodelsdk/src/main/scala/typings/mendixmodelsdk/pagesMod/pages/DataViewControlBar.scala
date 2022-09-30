@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 6.7.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewControlBar")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewControlBar")
 @js.native
-class DataViewControlBar protected () extends ControlBar {
+open class DataViewControlBar protected () extends ControlBar {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ class DataViewControlBar protected () extends ControlBar {
 }
 object DataViewControlBar {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewControlBar")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewControlBar")
   @js.native
   val ^ : js.Any = js.native
   
@@ -57,13 +57,13 @@ object DataViewControlBar {
   inline def createIn(container: DataView): DataViewControlBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewControlBar]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewControlBar.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewControlBar.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewControlBar.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.DataViewControlBar.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

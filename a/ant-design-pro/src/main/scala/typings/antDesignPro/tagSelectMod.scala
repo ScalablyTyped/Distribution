@@ -14,7 +14,7 @@ object tagSelectMod {
   
   @JSImport("ant-design-pro/lib/TagSelect", JSImport.Default)
   @js.native
-  class default () extends TagSelect
+  open class default () extends TagSelect
   /* static members */
   object default {
     
@@ -29,8 +29,7 @@ object tagSelectMod {
   }
   
   @js.native
-  trait TagSelect
-    extends Component[TagSelectProps, js.Any, js.Any] {
+  trait TagSelect extends Component[TagSelectProps, Any, Any] {
     
     /* private */ var children: ReactElement | js.Array[ReactElement] = js.native
   }
@@ -70,7 +69,7 @@ object tagSelectMod {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -96,7 +95,7 @@ object tagSelectMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

@@ -13,7 +13,7 @@ object longRunningApiCallerMod {
   
   @JSImport("google-gax/build/src/longRunningCalls/longRunningApiCaller", "LongrunningApiCaller")
   @js.native
-  class LongrunningApiCaller protected ()
+  open class LongrunningApiCaller protected ()
     extends StObject
        with APICaller {
     /**
@@ -27,7 +27,7 @@ object longRunningApiCallerMod {
       */
     def this(longrunningDescriptor: LongRunningDescriptor) = this()
     
-    /* private */ var _wrapOperation: js.Any = js.native
+    /* private */ var _wrapOperation: Any = js.native
     
     def call(
       apiCall: SimpleCallbackFunction,

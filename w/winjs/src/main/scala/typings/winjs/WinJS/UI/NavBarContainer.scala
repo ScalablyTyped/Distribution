@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.WinJS.Binding.List
 import typings.winjs.WinJS.Binding.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +34,7 @@ trait NavBarContainer extends StObject {
   /**
     * Gets or sets a WinJS.Binding.List that generates NavBarCommand objects.
     **/
-  var data: List[NavBarCommand] = js.native
+  var data: typings.winjs.WinJS.Binding.List[NavBarCommand] = js.native
   
   /**
     * Raises an event of the specified type and with additional properties.

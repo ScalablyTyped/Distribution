@@ -1,26 +1,26 @@
 package typings.activexOutlook.Outlook
 
-import typings.activexOutlook.activexOutlookNumbers.`1`
-import typings.activexOutlook.activexOutlookNumbers.`2`
-import typings.activexOutlook.activexOutlookNumbers.`3`
-import typings.activexOutlook.activexOutlookNumbers.`4`
-import typings.activexOutlook.activexOutlookNumbers.`5`
-import typings.activexOutlook.activexOutlookNumbers.`6`
-import typings.activexOutlook.activexOutlookNumbers.`7`
-import typings.activexOutlook.activexOutlookNumbers.`8`
+import typings.activexOutlook.activexOutlookInts.`1`
+import typings.activexOutlook.activexOutlookInts.`2`
+import typings.activexOutlook.activexOutlookInts.`3`
+import typings.activexOutlook.activexOutlookInts.`4`
+import typings.activexOutlook.activexOutlookInts.`5`
+import typings.activexOutlook.activexOutlookInts.`6`
+import typings.activexOutlook.activexOutlookInts.`7`
+import typings.activexOutlook.activexOutlookInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOutlook.activexOutlookNumbers.`6`
-  - typings.activexOutlook.activexOutlookNumbers.`1`
-  - typings.activexOutlook.activexOutlookNumbers.`2`
-  - typings.activexOutlook.activexOutlookNumbers.`5`
-  - typings.activexOutlook.activexOutlookNumbers.`8`
-  - typings.activexOutlook.activexOutlookNumbers.`4`
-  - typings.activexOutlook.activexOutlookNumbers.`7`
-  - typings.activexOutlook.activexOutlookNumbers.`3`
+  - typings.activexOutlook.activexOutlookInts.`6`
+  - typings.activexOutlook.activexOutlookInts.`1`
+  - typings.activexOutlook.activexOutlookInts.`2`
+  - typings.activexOutlook.activexOutlookInts.`5`
+  - typings.activexOutlook.activexOutlookInts.`8`
+  - typings.activexOutlook.activexOutlookInts.`4`
+  - typings.activexOutlook.activexOutlookInts.`7`
+  - typings.activexOutlook.activexOutlookInts.`3`
 */
 trait OlDefaultSelectNamesDisplayMode extends StObject
 object OlDefaultSelectNamesDisplayMode {

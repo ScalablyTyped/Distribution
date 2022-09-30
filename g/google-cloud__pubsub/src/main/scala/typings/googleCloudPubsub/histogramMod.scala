@@ -9,7 +9,7 @@ object histogramMod {
   
   @JSImport("@google-cloud/pubsub/build/src/histogram", "Histogram")
   @js.native
-  class Histogram () extends StObject {
+  open class Histogram () extends StObject {
     def this(options: HistogramOptions) = this()
     
     /*!

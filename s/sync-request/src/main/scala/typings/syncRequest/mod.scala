@@ -21,6 +21,6 @@ object mod {
   
   @JSImport("sync-request", "FormData")
   @js.native
-  class FormData ()
+  open class FormData ()
     extends typings.syncRequest.formDataMod.FormData
 }

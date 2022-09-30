@@ -93,7 +93,7 @@ trait InlinePicture
   def getBase64ImageSrc(): ClientResult[String] = js.native
   
   /**
-    * Gets the next inline image. Throws an error if this inline image is the last one.
+    * Gets the next inline image. Throws an `ItemNotFound` error if this inline image is the last one.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -101,7 +101,7 @@ trait InlinePicture
   def getNext(): InlinePicture = js.native
   
   /**
-    * Gets the next inline image. Returns a null object if this inline image is the last one.
+    * Gets the next inline image. If this inline image is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -139,7 +139,7 @@ trait InlinePicture
   var hyperlink: String = js.native
   
   /**
-    * Gets the format of the inline image. Read-only.
+    * Gets the format of the inline image.
     *
     * @remarks
     * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -181,7 +181,9 @@ trait InlinePicture
   def insertContentControl(): ContentControl = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Before | After): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: Before | After, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: after): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: after, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts a document at the specified location.
     *
@@ -190,8 +192,10 @@ trait InlinePicture
     *
     * @param base64File Required. The base64 encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Before' or 'After'.
+    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: before): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: before, asNewParagraph: Boolean): Range = js.native
   
   def insertHtml(html: String, insertLocation: Before | After): Range = js.native
   def insertHtml(html: String, insertLocation: after): Range = js.native
@@ -221,7 +225,9 @@ trait InlinePicture
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: replace): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Before | After): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: Before | After, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: after): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: after, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML at the specified location.
     *
@@ -230,8 +236,10 @@ trait InlinePicture
     *
     * @param ooxml Required. The OOXML to be inserted.
     * @param insertLocation Required. The value must be 'Before' or 'After'.
+    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: before): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: before, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Before | After): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: after): Paragraph = js.native
@@ -279,7 +287,7 @@ trait InlinePicture
   var lockAspectRatio: Boolean = js.native
   
   /**
-    * Gets the parent paragraph that contains the inline image. Read-only.
+    * Gets the parent paragraph that contains the inline image.
     *
     * @remarks
     * [Api set: WordApi 1.2]
@@ -287,7 +295,7 @@ trait InlinePicture
   val paragraph: Paragraph = js.native
   
   /**
-    * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -295,7 +303,7 @@ trait InlinePicture
   val parentContentControl: ContentControl = js.native
   
   /**
-    * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the inline image. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -303,7 +311,7 @@ trait InlinePicture
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    * Gets the table that contains the inline image. Throws an error if it is not contained in a table. Read-only.
+    * Gets the table that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -311,7 +319,7 @@ trait InlinePicture
   val parentTable: Table = js.native
   
   /**
-    * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -319,7 +327,7 @@ trait InlinePicture
   val parentTableCell: TableCell = js.native
   
   /**
-    * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.
+    * Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -327,7 +335,7 @@ trait InlinePicture
   val parentTableCellOrNullObject: TableCell = js.native
   
   /**
-    * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
+    * Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]

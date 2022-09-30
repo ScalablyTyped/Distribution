@@ -74,28 +74,22 @@ object SerializationHelper {
   inline def Serialize[T](entity: T, serializationObject: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Serialize")(entity.asInstanceOf[js.Any], serializationObject.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
-    * @param sourceProperty
-    * @hidden
+    * @internal
     */
   inline def _ColorCurvesParser(sourceProperty: Any): typings.babylonjs.colorCurvesMod.ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("_ColorCurvesParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.colorCurvesMod.ColorCurves]
   
   /**
-    * @param sourceProperty
-    * @hidden
+    * @internal
     */
   inline def _FresnelParametersParser(sourceProperty: Any): typings.babylonjs.fresnelParametersMod.FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("_FresnelParametersParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.fresnelParametersMod.FresnelParameters]
   
   /**
-    * @param sourceProperty
-    * @hidden
+    * @internal
     */
   inline def _ImageProcessingConfigurationParser(sourceProperty: Any): typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("_ImageProcessingConfigurationParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration]
   
   /**
-    * @param sourceProperty
-    * @param scene
-    * @param rootUrl
-    * @hidden
+    * @internal
     */
   inline def _TextureParser(sourceProperty: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.baseTextureMod.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_TextureParser")(sourceProperty.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.baseTextureMod.BaseTexture]]
 }

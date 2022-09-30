@@ -4,6 +4,7 @@ import typings.devtoolsProtocol.mod.Protocol.Network.ErrorReason
 import typings.devtoolsProtocol.mod.Protocol.Network.Initiator
 import typings.puppeteer.anon.ErrorText
 import typings.puppeteer.anon.PartialResponseForRequest
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -96,7 +97,7 @@ open class HTTPRequest () extends StObject {
     * but they are guaranteed to resolve before the request interception
     * is finalized.
     */
-  def enqueueInterceptAction(pendingHandler: js.Function0[Unit | js.Thenable[Any]]): Unit = js.native
+  def enqueueInterceptAction(pendingHandler: js.Function0[Unit | PromiseLike[Any]]): Unit = js.native
   
   /**
     * Access information about the request's failure.

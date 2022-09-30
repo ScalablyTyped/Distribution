@@ -1,0 +1,35 @@
+package typings.gestalt.mod
+
+import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SelectListGroupProps extends StObject {
+  
+  var children: ReactNode
+  
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var label: String
+}
+object SelectListGroupProps {
+  
+  inline def apply(label: String): SelectListGroupProps = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectListGroupProps]
+  }
+  
+  extension [Self <: SelectListGroupProps](x: Self) {
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+  }
+}

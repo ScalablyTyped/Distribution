@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.FormValidations")
 @js.native
-class FormValidations protected ()
+open class FormValidations protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.FormValidations {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

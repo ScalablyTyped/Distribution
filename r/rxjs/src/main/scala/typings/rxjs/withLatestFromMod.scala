@@ -27,7 +27,7 @@ object withLatestFromMod {
     /* import warning: importer.ImportType#apply c repeated non-array type: O */ js.Array[O]
   ]]
   
-  inline def withLatestFrom_TO_ArrayAnyR[T, O /* <: js.Array[Any] */, R](
+  inline def withLatestFrom_TOR[T, O /* <: js.Array[Any] */, R](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param inputs because its type [...ObservableInputTuple<O>, (value : [T, ...O]): R] is not an array type */ inputs: /* import warning: importer.ImportType#apply c repeated non-array type: {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>} */ js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof O ]: rxjs.rxjs/dist/types/internal/types.ObservableInput<O[K]>}

@@ -109,7 +109,7 @@ object mod {
   inline def set(data: Any, key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def set(data: Any, key: String, value: Any, noArray: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], noArray.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def unrest(e: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unrest")(List(e.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def unrest(e: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unrest")(scala.List(e.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   trait ConditionalProps[V] extends StObject {
     

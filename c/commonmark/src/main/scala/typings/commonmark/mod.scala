@@ -1,7 +1,6 @@
 package typings.commonmark
 
 import typings.commonmark.commonmarkStrings.Dot
-import typings.commonmark.commonmarkStrings.Rightparenthesis
 import typings.commonmark.commonmarkStrings.bullet
 import typings.commonmark.commonmarkStrings.ordered
 import org.scalablytyped.runtime.StObject
@@ -92,7 +91,7 @@ object mod {
     /**
       * a String, either ) or . for an ordered list.
       */
-    var listDelimiter: Rightparenthesis | Dot = js.native
+    var listDelimiter: String | Dot = js.native
     
     /**
       * a Number, the starting number of an ordered list.

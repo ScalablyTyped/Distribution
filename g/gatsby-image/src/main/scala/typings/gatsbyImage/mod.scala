@@ -1,9 +1,6 @@
 package typings.gatsbyImage
 
 import typings.gatsbyImage.anon.WasCached
-import typings.gatsbyImage.gatsbyImageStrings.`lazy`
-import typings.gatsbyImage.gatsbyImageStrings.auto
-import typings.gatsbyImage.gatsbyImageStrings.eager
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -203,7 +200,7 @@ object mod {
     
     var itemProp: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[auto | `lazy` | eager] = js.undefined
+    var loading: js.UndefOr[/* template literal string: auto */ String] = js.undefined
     
     var onError: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
@@ -278,7 +275,7 @@ object mod {
       
       inline def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
       
-      inline def setLoading(value: auto | `lazy` | eager): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: /* template literal string: auto */ String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       

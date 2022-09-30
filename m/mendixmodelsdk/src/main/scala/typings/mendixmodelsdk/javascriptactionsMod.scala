@@ -2,6 +2,7 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.clientMod.client.SupportedPlatform
 import typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction
 import typings.mendixmodelsdk.codeactionsMod.codeactions.CodeActionParameter
 import typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeAction
@@ -22,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object javascriptactionsMod {
   
-  @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "StructureVersionInfo")
+  @JSImport("mendixmodelsdk/src/gen/javascriptactions", "StructureVersionInfo")
   @js.native
-  class StructureVersionInfo protected ()
+  open class StructureVersionInfo protected ()
     extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
     def this(info: IStructureVersionInfo, structureType: StructureType) = this()
   }
@@ -47,9 +48,9 @@ object javascriptactionsMod {
     - typings.mendixmodelsdk.projectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.projectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeAction because Already inherited
-    - typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.IJavaScriptAction because var conflicts: actionParameters, actionReturnType, actionTypeParameters, containerAsFolderBase, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptAction")
+    - typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.IJavaScriptAction because var conflicts: actionParameters, actionReturnType, actionTypeParameters, containerAsFolderBase, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined platform */ @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptAction")
     @js.native
-    class JavaScriptAction protected () extends CodeAction {
+    open class JavaScriptAction protected () extends CodeAction {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -60,10 +61,21 @@ object javascriptactionsMod {
       
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MJavaScriptAction: FolderBase = js.native
+      
+      /**
+        * In version 9.10.0: introduced
+        */
+      def platform: SupportedPlatform = js.native
+      def platform_=(newValue: SupportedPlatform): Unit = js.native
+      /**
+        * In version 9.10.0: introduced
+        */
+      @JSName("platform")
+      val platform_FJavaScriptAction: SupportedPlatform = js.native
     }
     object JavaScriptAction {
       
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptAction")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptAction")
       @js.native
       val ^ : js.Any = js.native
       
@@ -75,13 +87,13 @@ object javascriptactionsMod {
       inline def createIn(container: IFolderBase): JavaScriptAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[JavaScriptAction]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptAction.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptAction.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptAction.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptAction.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -98,9 +110,9 @@ object javascriptactionsMod {
     - typings.mendixmodelsdk.elementsMod.IByNameReferrable because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
     - typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeActionParameter because Already inherited
-    - typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.IJavaScriptActionParameter because var conflicts: actionParameterType, containerAsCodeAction, containerAsJavaAction, description, id, isLoaded, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter")
+    - typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.IJavaScriptActionParameter because var conflicts: actionParameterType, containerAsCodeAction, containerAsJavaAction, description, id, isLoaded, isRequired, model, name, qualifiedName, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter")
     @js.native
-    class JavaScriptActionParameter protected () extends CodeActionParameter {
+    open class JavaScriptActionParameter protected () extends CodeActionParameter {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -115,7 +127,7 @@ object javascriptactionsMod {
     }
     object JavaScriptActionParameter {
       
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter")
       @js.native
       val ^ : js.Any = js.native
       
@@ -128,13 +140,13 @@ object javascriptactionsMod {
       inline def create(model: IModel): JavaScriptActionParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[JavaScriptActionParameter]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptActionParameter.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -149,9 +161,9 @@ object javascriptactionsMod {
     - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
     - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
     - typings.mendixmodelsdk.codeactionsMod.codeactions.IParameterType because Already inherited
-    - typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.INanoflowJavaScriptActionParameterType because var conflicts: containerAsCodeActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType")
+    - typings.mendixmodelsdk.javascriptactionsMod.javascriptactions.INanoflowJavaScriptActionParameterType because var conflicts: containerAsCodeActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType")
     @js.native
-    class NanoflowJavaScriptActionParameterType protected () extends ParameterType {
+    open class NanoflowJavaScriptActionParameterType protected () extends ParameterType {
       def this(
         model: AbstractModel,
         structureTypeName: String,
@@ -166,7 +178,7 @@ object javascriptactionsMod {
     }
     object NanoflowJavaScriptActionParameterType {
       
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType")
       @js.native
       val ^ : js.Any = js.native
       
@@ -179,13 +191,13 @@ object javascriptactionsMod {
       inline def create(model: IModel): NanoflowJavaScriptActionParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NanoflowJavaScriptActionParameterType]
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType.structureTypeName")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
       inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType.versionInfo")
+      @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.NanoflowJavaScriptActionParameterType.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
       inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -203,7 +215,13 @@ object javascriptactionsMod {
     @js.native
     trait IJavaScriptAction
       extends StObject
-         with ICodeAction
+         with ICodeAction {
+      
+      /**
+        * In version 9.10.0: introduced
+        */
+      val platform: SupportedPlatform = js.native
+    }
     
     /**
       * In version 8.0.0: removed experimental

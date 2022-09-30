@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var className: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
+  var crossOrigin: js.UndefOr[CrossOrigin | Boolean] = js.undefined
   
   var errorOverlayUrl: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object ImageOverlayProps {
     
     inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object ImageOverlayProps {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCrossOrigin(value: CrossOrigin): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: CrossOrigin | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     

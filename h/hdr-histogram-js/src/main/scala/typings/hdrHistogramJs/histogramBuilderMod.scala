@@ -1,10 +1,10 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`1`
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`2`
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`3`
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`4`
-import typings.hdrHistogramJs.hdrHistogramJsNumbers.`5`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`1`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`2`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`3`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`4`
+import typings.hdrHistogramJs.hdrHistogramJsInts.`5`
 import typings.hdrHistogramJs.histogramMod.BitBucketSize
 import typings.hdrHistogramJs.histogramMod.Histogram
 import org.scalablytyped.runtime.StObject

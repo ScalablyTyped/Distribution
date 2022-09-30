@@ -1,6 +1,6 @@
 package typings.bson.mod
 
-import typings.bson.bsonNumbers.`1`
+import typings.bson.bsonInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

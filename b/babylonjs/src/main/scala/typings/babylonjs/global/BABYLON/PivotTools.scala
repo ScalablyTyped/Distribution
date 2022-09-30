@@ -42,14 +42,12 @@ object PivotTools {
   inline def _PivotTranslation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PivotTranslation")(x.asInstanceOf[js.Any])
   
   /**
-    * @param mesh
-    * @hidden
+    * @internal
     */
   inline def _RemoveAndStorePivotPoint(mesh: typings.babylonjs.BABYLON.TransformNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RemoveAndStorePivotPoint")(mesh.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * @param mesh
-    * @hidden
+    * @internal
     */
   inline def _RestorePivotPoint(mesh: typings.babylonjs.BABYLON.TransformNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_RestorePivotPoint")(mesh.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

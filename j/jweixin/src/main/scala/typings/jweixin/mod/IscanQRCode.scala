@@ -1,8 +1,8 @@
 package typings.jweixin.mod
 
 import typings.jweixin.anon.ResultStr
-import typings.jweixin.jweixinNumbers.`0`
-import typings.jweixin.jweixinNumbers.`1`
+import typings.jweixin.jweixinInts.`0`
+import typings.jweixin.jweixinInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

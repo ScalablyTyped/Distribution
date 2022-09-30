@@ -2,6 +2,7 @@ package typings.handsontable
 
 import typings.handsontable.anon.Col
 import typings.handsontable.anon.Key
+import typings.handsontable.anon.PhysicalIndex
 import typings.handsontable.coreMod.default
 import typings.handsontable.pluginsBaseMod.BasePlugin
 import org.scalablytyped.runtime.StObject
@@ -30,7 +31,7 @@ object filtersFiltersMod {
     def getDataMapAtColumn(): js.Array[CellLikeData] = js.native
     def getDataMapAtColumn(column: Double): js.Array[CellLikeData] = js.native
     
-    def getSelectedColumn(): Double = js.native
+    def getSelectedColumn(): PhysicalIndex | Null = js.native
     
     def isEnabled(): Boolean = js.native
     

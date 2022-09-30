@@ -1,7 +1,7 @@
 package typings.googleAuthLibrary
 
 import typings.googleAuthLibrary.authclientMod.AuthClient
-import typings.googleAuthLibrary.googleAuthLibraryNumbers.`3600`
+import typings.googleAuthLibrary.googleAuthLibraryInts.`3600`
 import typings.googleAuthLibrary.googleauthMod.JSONClient
 import typings.googleAuthLibrary.idtokenclientMod.IdTokenProvider
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2Client

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.TemplateGrid")
 @js.native
-class TemplateGrid protected ()
+open class TemplateGrid protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.TemplateGrid {
   def this(
     model: AbstractModel,

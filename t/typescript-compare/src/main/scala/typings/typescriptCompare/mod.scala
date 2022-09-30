@@ -1,8 +1,8 @@
 package typings.typescriptCompare
 
 import typings.typescriptCompare.typescriptCompareBooleans.`true`
-import typings.typescriptCompare.typescriptCompareNumbers.`0`
-import typings.typescriptCompare.typescriptCompareNumbers.`1`
+import typings.typescriptCompare.typescriptCompareInts.`0`
+import typings.typescriptCompare.typescriptCompareInts.`1`
 import typings.typescriptCompare.typescriptCompareStrings.broaderLeft
 import typings.typescriptCompare.typescriptCompareStrings.broaderRight
 import typings.typescriptCompare.typescriptCompareStrings.equal

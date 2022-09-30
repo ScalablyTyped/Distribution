@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("L.Renderer")
 @js.native
-class Renderer ()
+open class Renderer ()
   extends typings.leaflet.mod.Renderer {
   def this(options: RendererOptions) = this()
 }

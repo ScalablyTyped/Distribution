@@ -296,7 +296,7 @@ object Array {
     * @param elements Object... The elements to add to the array. Each parameter may be an Array, in which case all the elements of that Array will be pushed into the end of the destination Array.
     * @returns Array An array containing all the new items push onto the end.
     */
-  inline def push(target: typings.extjs.Ext.Array, elements: Any*): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(List(target.asInstanceOf[js.Any]).`++`(elements.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.extjs.Ext.Array]
+  inline def push(target: typings.extjs.Ext.Array, elements: Any*): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(scala.List(target.asInstanceOf[js.Any]).`++`(elements.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Removes the specified item from the array if it exists
     * @param array Array The array
@@ -384,7 +384,7 @@ object Array {
     * @param elements Object... The elements to add to the array. If you don't specify any elements, splice simply removes elements from the array.
     * @returns Array An array containing the removed items.
     */
-  inline def splice(array: typings.extjs.Ext.Array, index: Double, removeCount: Double, elements: Any*): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((List(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).`++`(elements.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.extjs.Ext.Array]
+  inline def splice(array: typings.extjs.Ext.Array, index: Double, removeCount: Double, elements: Any*): typings.extjs.Ext.Array = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")((scala.List(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).`++`(elements.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Calculates the sum of all items in the given array
     * @param array Array The Array to calculate the sum value of.

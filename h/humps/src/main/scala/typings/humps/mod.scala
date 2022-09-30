@@ -1,10 +1,6 @@
 package typings.humps
 
 import org.scalablytyped.runtime.TopLevel
-import typings.humps.humpsStrings.DollarLeftcurlybracketCapitalizeLessthansignP1GreaterthansignRightcurlybracketDollarLeftcurlybracketUppercaseLessthansignP2GreaterthansignRightcurlybracketDollarLeftcurlybracketSnakeToPascalCaseLessthansignP3GreaterthansignRightcurlybracket
-import typings.humps.humpsStrings.DollarLeftcurlybracketP1RightcurlybracketDollarLeftcurlybracketUppercaseLessthansignP2GreaterthansignRightcurlybracketDollarLeftcurlybracketSnakeToCamelCaseLessthansignP3GreaterthansignRightcurlybracket
-import typings.humps.humpsStrings.`DollarLeftcurlybracketT extends CapitalizeLessthansignTGreaterthansign Questionmark Apostrophe_Apostrophe Colon ApostropheApostropheRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignTGreaterthansignRightcurlybracketDollarLeftcurlybracketCamelToSnakeCaseLessthansignUGreaterthansignRightcurlybracket`
-import typings.humps.humpsStrings.`DollarLeftcurlybracketT2 extends CapitalizeLessthansignT2Greaterthansign Questionmark Apostrophe_Apostrophe Colon ApostropheApostropheRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignT1GreaterthansignRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignT2GreaterthansignRightcurlybracketDollarLeftcurlybracketCamelToSnakeCaseLessthansignUGreaterthansignRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +51,7 @@ object mod {
   inline def pascalizeKeys[T](str: T): Pascalized[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[Pascalized[T]]
   inline def pascalizeKeys[T](str: T, optionsOrProcessor: OptionOrProcessor): Pascalized[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pascalizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[Pascalized[T]]
   
-  type CamelToSnakeCase[S /* <: String */] = S | (`DollarLeftcurlybracketT extends CapitalizeLessthansignTGreaterthansign Questionmark Apostrophe_Apostrophe Colon ApostropheApostropheRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignTGreaterthansignRightcurlybracketDollarLeftcurlybracketCamelToSnakeCaseLessthansignUGreaterthansignRightcurlybracket`)
+  type CamelToSnakeCase[S /* <: String */] = S | (/* template literal string: ${TextendsCapitalize<T>?_:}${Lowercase<T>}${CamelToSnakeCase<U>} */ String)
   
   type Camelized[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T as humps.humps.SnakeToCamelCase<string & K> ]: T[K] extends std.Array<infer U>? any extends {}? std.Array<humps.humps.Camelized<any>> : T[K] : T[K] extends {}? humps.humps.Camelized<T[K]> : T[K]}
@@ -113,13 +109,13 @@ object mod {
   
   type OptionOrProcessor = HumpsOptions | HumpsProcessor
   
-  type PascalToSnakeCase[S /* <: String */] = S | (`DollarLeftcurlybracketT2 extends CapitalizeLessthansignT2Greaterthansign Questionmark Apostrophe_Apostrophe Colon ApostropheApostropheRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignT1GreaterthansignRightcurlybracketDollarLeftcurlybracketLowercaseLessthansignT2GreaterthansignRightcurlybracketDollarLeftcurlybracketCamelToSnakeCaseLessthansignUGreaterthansignRightcurlybracket`)
+  type PascalToSnakeCase[S /* <: String */] = S | (/* template literal string: ${T2extendsCapitalize<T2>?_:}${Lowercase<T1>}${Lowercase<T2>}${CamelToSnakeCase<U>} */ String)
   
   type Pascalized[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T as humps.humps.SnakeToPascalCase<string & K> ]: T[K] extends std.Array<infer U>? any extends {}? std.Array<humps.humps.Pascalized<any>> : T[K] : T[K] extends {}? humps.humps.Pascalized<T[K]> : T[K]}
     */ typings.humps.humpsStrings.Pascalized & TopLevel[Any]
   
-  type SnakeToCamelCase[S /* <: String */] = S | DollarLeftcurlybracketP1RightcurlybracketDollarLeftcurlybracketUppercaseLessthansignP2GreaterthansignRightcurlybracketDollarLeftcurlybracketSnakeToCamelCaseLessthansignP3GreaterthansignRightcurlybracket
+  type SnakeToCamelCase[S /* <: String */] = S | (/* template literal string: ${P1}${Uppercase<P2>}${SnakeToCamelCase<P3>} */ String)
   
-  type SnakeToPascalCase[S /* <: String */] = S | DollarLeftcurlybracketCapitalizeLessthansignP1GreaterthansignRightcurlybracketDollarLeftcurlybracketUppercaseLessthansignP2GreaterthansignRightcurlybracketDollarLeftcurlybracketSnakeToPascalCaseLessthansignP3GreaterthansignRightcurlybracket
+  type SnakeToPascalCase[S /* <: String */] = S | (/* template literal string: ${Capitalize<P1>}${Uppercase<P2>}${SnakeToPascalCase<P3>} */ String)
 }

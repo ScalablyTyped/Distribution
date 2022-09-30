@@ -139,7 +139,7 @@ object mod {
         ]
     ): IFactory[T] = js.native
     @JSName("attr")
-    def attr_K_StringD_String[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](
+    def attr_KD[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](
       name: K,
       dependencies: js.Array[D],
       generatorFunction: js.Function1[

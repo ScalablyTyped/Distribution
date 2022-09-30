@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("meteor/meteor", "Meteor.TypedError")
 @js.native
-class TypedErrorCls protected ()
+open class TypedErrorCls protected ()
   extends StObject
      with TypedError {
   def this(message: String, errorType: String) = this()
@@ -15,9 +15,11 @@ class TypedErrorCls protected ()
   /* CompleteClass */
   var errorType: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

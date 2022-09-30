@@ -1,8 +1,8 @@
 package typings.reactVirtualized.anon
 
 import typings.reactVirtualized.reactVirtualizedBooleans.`false`
-import typings.reactVirtualized.reactVirtualizedNumbers.`-1`
-import typings.reactVirtualized.reactVirtualizedNumbers.`0`
+import typings.reactVirtualized.reactVirtualizedInts.`-1`
+import typings.reactVirtualized.reactVirtualizedInts.`0`
 import typings.reactVirtualized.reactVirtualizedStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

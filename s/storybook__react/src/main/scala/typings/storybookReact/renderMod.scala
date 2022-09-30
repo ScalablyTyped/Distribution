@@ -1,15 +1,24 @@
 package typings.storybookReact
 
-import typings.storybookClientApi.typesMod.RenderContext
+import typings.std.HTMLElement
+import typings.storybookReact.types60Mod.ReactFramework
+import typings.storybookStore.ts39TypesMod.RenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderMod {
   
-  @JSImport("@storybook/react/dist/client/preview/render", JSImport.Namespace)
+  @JSImport("@storybook/react/dist/ts3.9/client/preview/render", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRender: RenderContext): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRender.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @JSImport("@storybook/react/dist/ts3.9/client/preview/render", "render")
+  @js.native
+  val render: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgsStoryFn<ReactFramework> */ Any = js.native
+  
+  inline def renderToDOM(
+    hasStoryContextUnboundStoryFnShowMainShowExceptionForceRemount: RenderContext[ReactFramework],
+    domElement: HTMLElement
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToDOM")(hasStoryContextUnboundStoryFnShowMainShowExceptionForceRemount.asInstanceOf[js.Any], domElement.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

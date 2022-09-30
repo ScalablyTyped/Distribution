@@ -37,14 +37,14 @@ object Draw {
   
   @JSImport("leaflet", "Draw.Circle")
   @js.native
-  class Circle protected () extends SimpleShape {
+  open class Circle protected () extends SimpleShape {
     def this(map: DrawMap) = this()
     def this(map: DrawMap, options: CircleOptions) = this()
   }
   
   @JSImport("leaflet", "Draw.CircleMarker")
   @js.native
-  class CircleMarker protected () extends Marker {
+  open class CircleMarker protected () extends Marker {
     def this(map: DrawMap) = this()
     def this(map: DrawMap, options: MarkerOptions) = this()
   }
@@ -118,7 +118,7 @@ object Draw {
   
   @JSImport("leaflet", "Draw.Feature")
   @js.native
-  class Feature protected () extends Handler {
+  open class Feature protected () extends Handler {
     def this(map: Map_) = this()
     
     def initialize(map: DrawMap, options: EditHandlerOptions): Unit = js.native
@@ -136,21 +136,21 @@ object Draw {
   
   @JSImport("leaflet", "Draw.Marker")
   @js.native
-  class Marker protected () extends Feature {
+  open class Marker protected () extends Feature {
     def this(map: DrawMap) = this()
     def this(map: DrawMap, options: MarkerOptions) = this()
   }
   
   @JSImport("leaflet", "Draw.Polygon")
   @js.native
-  class Polygon protected () extends Polyline {
+  open class Polygon protected () extends Polyline {
     def this(map: DrawMap) = this()
     def this(map: DrawMap, options: PolygonOptions) = this()
   }
   
   @JSImport("leaflet", "Draw.Polyline")
   @js.native
-  class Polyline protected () extends Feature {
+  open class Polyline protected () extends Feature {
     def this(map: DrawMap) = this()
     def this(map: DrawMap, options: PolylineOptions) = this()
     
@@ -163,21 +163,21 @@ object Draw {
   
   @JSImport("leaflet", "Draw.Rectangle")
   @js.native
-  class Rectangle protected () extends SimpleShape {
+  open class Rectangle protected () extends SimpleShape {
     def this(map: DrawMap) = this()
     def this(map: DrawMap, options: RectangleOptions) = this()
   }
   
   @JSImport("leaflet", "Draw.SimpleShape")
   @js.native
-  class SimpleShape protected () extends Feature {
+  open class SimpleShape protected () extends Feature {
     def this(map: DrawMap) = this()
     def this(map: DrawMap, options: SimpleShapeOptions) = this()
   }
   
   @JSImport("leaflet", "Draw.Tooltip")
   @js.native
-  class Tooltip protected () extends Class {
+  open class Tooltip protected () extends Class {
     def this(map: DrawMap) = this()
     
     def dispose(): Unit = js.native

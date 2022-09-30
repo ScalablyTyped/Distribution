@@ -20,7 +20,7 @@ object mod {
   inline def downloadTorrent(torrent: Torrent, filenamePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadTorrent")(torrent.asInstanceOf[js.Any], filenamePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def enableProvider(providerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def enableProvider(providerName: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(List(providerName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def enableProvider(providerName: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(scala.List(providerName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def enableProvider(providerName: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def enablePublicProviders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePublicProviders")().asInstanceOf[Unit]

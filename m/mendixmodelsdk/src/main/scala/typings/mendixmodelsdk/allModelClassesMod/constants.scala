@@ -11,9 +11,9 @@ object constants {
   /**
     * See: {@link https://docs.mendix.com/refguide/constants relevant section in reference guide}
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "constants.Constant")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "constants.Constant")
   @js.native
-  class Constant protected ()
+  open class Constant protected ()
     extends typings.mendixmodelsdk.constantsMod.constants.Constant {
     def this(
       model: AbstractModel,
@@ -25,7 +25,7 @@ object constants {
   }
   object Constant {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "constants.Constant")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "constants.Constant")
     @js.native
     val ^ : js.Any = js.native
     
@@ -37,13 +37,13 @@ object constants {
     inline def createIn(container: IFolderBase): typings.mendixmodelsdk.constantsMod.constants.Constant = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.constantsMod.constants.Constant]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "constants.Constant.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "constants.Constant.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "constants.Constant.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "constants.Constant.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.constantsMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.constantsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

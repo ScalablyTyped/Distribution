@@ -27,22 +27,22 @@ trait Typeofhttp extends StObject {
   
   def buildPath(path: String, parameters: js.Object): String = js.native
   
-  def del(path: String): js.Any = js.native
+  def del(path: String): Any = js.native
   
-  def get(path: String): js.Any = js.native
+  def get(path: String): Any = js.native
   
-  def headersToString(headers: js.Any): String = js.native
+  def headersToString(headers: Any): String = js.native
   
-  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = js.native
+  def parseHttpResponse(httpResponse: Response, w3c: Boolean): Any = js.native
   
-  def post(path: String): js.Any = js.native
+  def post(path: String): Any = js.native
   
-  def resource(method: String, path: String): js.Any = js.native
+  def resource(method: String, path: String): Any = js.native
   
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: Unit, opt_proxy: String): js.Any = js.native
+  def sendRequest(options: js.Object, onOk: Any, onError: Any): Any = js.native
+  def sendRequest(options: js.Object, onOk: Any, onError: Any, opt_data: String): Any = js.native
+  def sendRequest(options: js.Object, onOk: Any, onError: Any, opt_data: String, opt_proxy: String): Any = js.native
+  def sendRequest(options: js.Object, onOk: Any, onError: Any, opt_data: Unit, opt_proxy: String): Any = js.native
   
-  def tryParse(str: String): js.Any = js.native
+  def tryParse(str: String): Any = js.native
 }

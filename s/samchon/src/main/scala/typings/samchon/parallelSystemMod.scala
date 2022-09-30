@@ -114,14 +114,6 @@ object parallelSystemMod {
     def getPerformance(): Double = js.native
     
     /**
-      * Get manager of this object.
-      *
-      * @return The parent {@link ParallelSystemArray} object.
-      */
-    @JSName("getSystemArray")
-    def getSystemArray_SystemArray_ParallelSystemArrayParallelSystem_SystemArray[SystemArray /* <: ParallelSystemArray[ParallelSystem] */](): SystemArray = js.native
-    
-    /**
       * @hidden
       */
     /* private */ var history_list_ : Any = js.native

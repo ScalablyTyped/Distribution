@@ -11,7 +11,7 @@ trait JvmArgs extends StObject {
     * if you need to change the browser timeout, use
     * seleniumArgs: ['-browserTimeout=60']
     */
-  var args: js.UndefOr[js.Any] = js.undefined
+  var args: js.UndefOr[Any] = js.undefined
   
   /**
     * Additional command line jvm options to pass to selenium. For example,
@@ -24,7 +24,7 @@ trait JvmArgs extends StObject {
     * The port to start the Selenium Server on, or null if the server should
     * find its own unused port.
     */
-  var port: js.UndefOr[js.Any] = js.undefined
+  var port: js.UndefOr[Any] = js.undefined
 }
 object JvmArgs {
   
@@ -35,7 +35,7 @@ object JvmArgs {
   
   extension [Self <: JvmArgs](x: Self) {
     
-    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
@@ -43,9 +43,9 @@ object JvmArgs {
     
     inline def setJvmArgsUndefined: Self = StObject.set(x, "jvmArgs", js.undefined)
     
-    inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value :_*))
+    inline def setJvmArgsVarargs(value: String*): Self = StObject.set(x, "jvmArgs", js.Array(value*))
     
-    inline def setPort(value: js.Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Any): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }

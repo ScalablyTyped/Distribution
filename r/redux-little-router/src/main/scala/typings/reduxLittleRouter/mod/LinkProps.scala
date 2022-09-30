@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LinkProps extends StObject {
   
-  var activeProps: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
+  var activeProps: js.UndefOr[ObjectLiteral[Any]] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -16,7 +16,7 @@ trait LinkProps extends StObject {
   
   var location: js.UndefOr[Location] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* event */ Event, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* event */ Event, Any]] = js.undefined
   
   var persistQuery: js.UndefOr[Boolean] = js.undefined
   
@@ -26,7 +26,7 @@ trait LinkProps extends StObject {
   
   var replaceState: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
+  var style: js.UndefOr[ObjectLiteral[Any]] = js.undefined
   
   var target: js.UndefOr[String] = js.undefined
 }
@@ -39,7 +39,7 @@ object LinkProps {
   
   extension [Self <: LinkProps](x: Self) {
     
-    inline def setActiveProps(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "activeProps", value.asInstanceOf[js.Any])
+    inline def setActiveProps(value: ObjectLiteral[Any]): Self = StObject.set(x, "activeProps", value.asInstanceOf[js.Any])
     
     inline def setActivePropsUndefined: Self = StObject.set(x, "activeProps", js.undefined)
     
@@ -53,7 +53,7 @@ object LinkProps {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setOnClick(value: /* event */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* event */ Event => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
@@ -73,7 +73,7 @@ object LinkProps {
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    inline def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ObjectLiteral[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

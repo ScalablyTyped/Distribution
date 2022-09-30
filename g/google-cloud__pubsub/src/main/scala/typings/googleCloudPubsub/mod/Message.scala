@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/pubsub", "Message")
 @js.native
-class Message protected ()
+open class Message protected ()
   extends typings.googleCloudPubsub.subscriberMod.Message {
   /**
     * @hideconstructor

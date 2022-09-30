@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/input-reference-set-selector relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.InputReferenceSetSelector")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.InputReferenceSetSelector")
 @js.native
-class InputReferenceSetSelector protected () extends AssociationWidget {
+open class InputReferenceSetSelector protected () extends AssociationWidget {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -32,7 +32,7 @@ class InputReferenceSetSelector protected () extends AssociationWidget {
 }
 object InputReferenceSetSelector {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.InputReferenceSetSelector")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.InputReferenceSetSelector")
   @js.native
   val ^ : js.Any = js.native
   
@@ -606,13 +606,13 @@ object InputReferenceSetSelector {
   inline def createInWidgetValueUnderWidgets(container: WidgetValue): InputReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[InputReferenceSetSelector]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.InputReferenceSetSelector.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.InputReferenceSetSelector.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.InputReferenceSetSelector.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.InputReferenceSetSelector.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

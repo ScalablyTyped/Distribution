@@ -5,7 +5,7 @@ import typings.vueTemplateCompiler.anon.Callback
 import typings.vueTemplateCompiler.anon.Name
 import typings.vueTemplateCompiler.anon.Value
 import typings.vueTemplateCompiler.vueTemplateCompilerBooleans.`true`
-import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`1`
+import typings.vueTemplateCompiler.vueTemplateCompilerInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

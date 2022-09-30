@@ -25,7 +25,7 @@ object credentials {
     * @param credentials The CallCredentials to compose
     * @return A credentials object that combines all of the input credentials
     */
-  inline def combineChannelCredentials(channelCredential: ChannelCredentials, credentials: CallCredentials*): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(List(channelCredential.asInstanceOf[js.Any]).`++`(credentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ChannelCredentials]
+  inline def combineChannelCredentials(channelCredential: ChannelCredentials, credentials: CallCredentials*): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(scala.List(channelCredential.asInstanceOf[js.Any]).`++`(credentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ChannelCredentials]
   
   /**
     * Create a gRPC credential from a Google credential object.

@@ -1,36 +1,36 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`131072`
-import typings.activexAdodb.activexAdodbNumbers.`16384`
-import typings.activexAdodb.activexAdodbNumbers.`16778240`
-import typings.activexAdodb.activexAdodbNumbers.`16779264`
-import typings.activexAdodb.activexAdodbNumbers.`16809984`
-import typings.activexAdodb.activexAdodbNumbers.`256`
-import typings.activexAdodb.activexAdodbNumbers.`262144`
-import typings.activexAdodb.activexAdodbNumbers.`4194304`
-import typings.activexAdodb.activexAdodbNumbers.`512`
-import typings.activexAdodb.activexAdodbNumbers.`524288`
-import typings.activexAdodb.activexAdodbNumbers.`65536`
-import typings.activexAdodb.activexAdodbNumbers.`8192`
-import typings.activexAdodb.activexAdodbNumbers.`8388608`
+import typings.activexAdodb.activexAdodbInts.`131072`
+import typings.activexAdodb.activexAdodbInts.`16384`
+import typings.activexAdodb.activexAdodbInts.`16778240`
+import typings.activexAdodb.activexAdodbInts.`16779264`
+import typings.activexAdodb.activexAdodbInts.`16809984`
+import typings.activexAdodb.activexAdodbInts.`256`
+import typings.activexAdodb.activexAdodbInts.`262144`
+import typings.activexAdodb.activexAdodbInts.`4194304`
+import typings.activexAdodb.activexAdodbInts.`512`
+import typings.activexAdodb.activexAdodbInts.`524288`
+import typings.activexAdodb.activexAdodbInts.`65536`
+import typings.activexAdodb.activexAdodbInts.`8192`
+import typings.activexAdodb.activexAdodbInts.`8388608`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`16778240`
-  - typings.activexAdodb.activexAdodbNumbers.`16384`
-  - typings.activexAdodb.activexAdodbNumbers.`8192`
-  - typings.activexAdodb.activexAdodbNumbers.`16779264`
-  - typings.activexAdodb.activexAdodbNumbers.`524288`
-  - typings.activexAdodb.activexAdodbNumbers.`256`
-  - typings.activexAdodb.activexAdodbNumbers.`8388608`
-  - typings.activexAdodb.activexAdodbNumbers.`512`
-  - typings.activexAdodb.activexAdodbNumbers.`262144`
-  - typings.activexAdodb.activexAdodbNumbers.`131072`
-  - typings.activexAdodb.activexAdodbNumbers.`4194304`
-  - typings.activexAdodb.activexAdodbNumbers.`16809984`
-  - typings.activexAdodb.activexAdodbNumbers.`65536`
+  - typings.activexAdodb.activexAdodbInts.`16778240`
+  - typings.activexAdodb.activexAdodbInts.`16384`
+  - typings.activexAdodb.activexAdodbInts.`8192`
+  - typings.activexAdodb.activexAdodbInts.`16779264`
+  - typings.activexAdodb.activexAdodbInts.`524288`
+  - typings.activexAdodb.activexAdodbInts.`256`
+  - typings.activexAdodb.activexAdodbInts.`8388608`
+  - typings.activexAdodb.activexAdodbInts.`512`
+  - typings.activexAdodb.activexAdodbInts.`262144`
+  - typings.activexAdodb.activexAdodbInts.`131072`
+  - typings.activexAdodb.activexAdodbInts.`4194304`
+  - typings.activexAdodb.activexAdodbInts.`16809984`
+  - typings.activexAdodb.activexAdodbInts.`65536`
 */
 trait CursorOptionEnum extends StObject
 object CursorOptionEnum {

@@ -24,7 +24,6 @@ import typings.ansiColors.ansiColorsStrings.Heavyrightpointinganglequotationmark
 import typings.ansiColors.ansiColorsStrings.Horizontalellipsis
 import typings.ansiColors.ansiColorsStrings.Identicalto
 import typings.ansiColors.ansiColorsStrings.Largecircle
-import typings.ansiColors.ansiColorsStrings.LeftparenthesisAsteriskRightparenthesis
 import typings.ansiColors.ansiColorsStrings.Lowerrightpencil
 import typings.ansiColors.ansiColorsStrings.Midlinehorizontalellipsis
 import typings.ansiColors.ansiColorsStrings.Multiplicationsign
@@ -45,7 +44,6 @@ import typings.ansiColors.ansiColorsStrings.Upperrightpencil
 import typings.ansiColors.ansiColorsStrings.Warningsign
 import typings.ansiColors.ansiColorsStrings.Whitebullet
 import typings.ansiColors.ansiColorsStrings.Whitestar
-import typings.ansiColors.ansiColorsStrings.`Leftparenthesis Rightparenthesis`
 import typings.ansiColors.ansiColorsStrings.`·`
 import typings.ansiColors.ansiColorsStrings.i
 import typings.ansiColors.ansiColorsStrings.ℹ
@@ -638,12 +636,12 @@ object mod {
     /**
       * `( )` on windows, `◯` on other platforms.
       */
-    var radioOff: (`Leftparenthesis Rightparenthesis`) | Largecircle
+    var radioOff: String | Largecircle
     
     /**
       * `(*)` on windows, `◉` on other platforms.
       */
-    var radioOn: LeftparenthesisAsteriskRightparenthesis | Fisheye
+    var radioOn: String | Fisheye
     
     var section: Sectionsign
     
@@ -669,8 +667,8 @@ object mod {
       pointer: Greaterthansign | Blackrightpointingsmalltriangle | Heavyrightpointinganglequotationmarkornament,
       pointerSmall: Rightpointingdoubleanglequotationmark | Triangularbullet | Singlerightpointinganglequotationmark,
       questionSmall: Questionmark | Smallquestionmark,
-      radioOff: (`Leftparenthesis Rightparenthesis`) | Largecircle,
-      radioOn: LeftparenthesisAsteriskRightparenthesis | Fisheye,
+      radioOff: String | Largecircle,
+      radioOn: String | Fisheye,
       warning: Doubleexclamationmark | Warningsign
     ): SymbolsType = {
       val __obj = js.Dynamic.literal(ballotDisabled = "\u2612", ballotOff = "\u2610", ballotOn = "\u2611", bullet = "\u2022", bulletWhite = "\u25E6", check = check.asInstanceOf[js.Any], cross = cross.asInstanceOf[js.Any], ellipsis = ellipsis.asInstanceOf[js.Any], ellipsisLarge = ellipsisLarge.asInstanceOf[js.Any], fullBlock = "\u2588", heart = "\u2764", identicalTo = "\u2261", info = info.asInstanceOf[js.Any], line = "\u2500", mark = "\u203B", middot = "\u00B7", minus = "\uFF0D", multiplication = "\u00D7", obelus = "\u00F7", pencilDownRight = "\u270E", pencilRight = "\u270F", pencilUpRight = "\u2710", percent = "%", pilcrow = "\u00B6", pilcrow2 = "\u2761", plusMinus = "\u00B1", pointer = pointer.asInstanceOf[js.Any], pointerSmall = pointerSmall.asInstanceOf[js.Any], question = "?", questionSmall = questionSmall.asInstanceOf[js.Any], radioOff = radioOff.asInstanceOf[js.Any], radioOn = radioOn.asInstanceOf[js.Any], section = "\u00A7", starsOff = "\u2606", starsOn = "\u2605", upDownArrow = "\u2195", warning = warning.asInstanceOf[js.Any])
@@ -751,9 +749,9 @@ object mod {
       
       inline def setQuestionSmall(value: Questionmark | Smallquestionmark): Self = StObject.set(x, "questionSmall", value.asInstanceOf[js.Any])
       
-      inline def setRadioOff(value: (`Leftparenthesis Rightparenthesis`) | Largecircle): Self = StObject.set(x, "radioOff", value.asInstanceOf[js.Any])
+      inline def setRadioOff(value: String | Largecircle): Self = StObject.set(x, "radioOff", value.asInstanceOf[js.Any])
       
-      inline def setRadioOn(value: LeftparenthesisAsteriskRightparenthesis | Fisheye): Self = StObject.set(x, "radioOn", value.asInstanceOf[js.Any])
+      inline def setRadioOn(value: String | Fisheye): Self = StObject.set(x, "radioOn", value.asInstanceOf[js.Any])
       
       inline def setSection(value: Sectionsign): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       

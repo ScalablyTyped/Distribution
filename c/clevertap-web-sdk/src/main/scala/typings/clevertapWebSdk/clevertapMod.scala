@@ -1,10 +1,10 @@
 package typings.clevertapWebSdk
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.clevertapWebSdk.clevertapWebSdkNumbers.`0`
-import typings.clevertapWebSdk.clevertapWebSdkNumbers.`1`
-import typings.clevertapWebSdk.clevertapWebSdkNumbers.`2`
-import typings.clevertapWebSdk.clevertapWebSdkNumbers.`3`
+import typings.clevertapWebSdk.clevertapWebSdkInts.`0`
+import typings.clevertapWebSdk.clevertapWebSdkInts.`1`
+import typings.clevertapWebSdk.clevertapWebSdkInts.`2`
+import typings.clevertapWebSdk.clevertapWebSdkInts.`3`
 import typings.clevertapWebSdk.clevertapWebSdkStrings.College
 import typings.clevertapWebSdk.clevertapWebSdkStrings.F
 import typings.clevertapWebSdk.clevertapWebSdkStrings.Graduate

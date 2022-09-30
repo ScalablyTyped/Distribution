@@ -1,9 +1,9 @@
 package typings.webcl.WEBCL
 
-import typings.webcl.webclNumbers.`0x1161`
-import typings.webcl.webclNumbers.`0x1162`
-import typings.webcl.webclNumbers.`0x1163`
-import typings.webcl.webclNumbers.`0x1164`
+import typings.webcl.webclInts.`0x1161`
+import typings.webcl.webclInts.`0x1162`
+import typings.webcl.webclInts.`0x1163`
+import typings.webcl.webclInts.`0x1164`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //MAP_WRITE                                 = 0x2, // disallowed
 /* cl_prograinfo */
 /* Rewritten from type alias, can be one of: 
-  - typings.webcl.webclNumbers.`0x1161`
-  - typings.webcl.webclNumbers.`0x1162`
-  - typings.webcl.webclNumbers.`0x1163`
-  - typings.webcl.webclNumbers.`0x1164`
+  - typings.webcl.webclInts.`0x1161`
+  - typings.webcl.webclInts.`0x1162`
+  - typings.webcl.webclInts.`0x1163`
+  - typings.webcl.webclInts.`0x1164`
 */
 trait ProgramInfo extends StObject
 object ProgramInfo {

@@ -1,6 +1,6 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`600`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`600`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.RU
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

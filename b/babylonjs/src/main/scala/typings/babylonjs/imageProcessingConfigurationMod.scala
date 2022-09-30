@@ -17,7 +17,7 @@ object imageProcessingConfigurationMod {
   @js.native
   open class ImageProcessingConfiguration () extends StObject {
     
-    /** @hidden */
+    /** @internal */
     var _applyByPostProcess: Boolean = js.native
     
     /* private */ var _colorCurvesEnabled: Any = js.native
@@ -36,12 +36,12 @@ object imageProcessingConfigurationMod {
     
     /* private */ var _ditheringIntensity: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _exposure: Double = js.native
     
     /* private */ var _isEnabled: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _skipFinalColorClamp: Boolean = js.native
     
     /* private */ var _toneMappingEnabled: Any = js.native

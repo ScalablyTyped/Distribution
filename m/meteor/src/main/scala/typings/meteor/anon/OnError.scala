@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnError extends StObject {
   
+  /**
+    * The function to run when an error
+    * happens in the Computation. The only argument it receives is the Error
+    * thrown. Defaults to the error being logged to the console.
+    */
   var onError: js.UndefOr[js.Function] = js.undefined
 }
 object OnError {

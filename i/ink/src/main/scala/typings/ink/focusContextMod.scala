@@ -27,6 +27,8 @@ object focusContextMod extends Shortcut {
     
     def enableFocus(): Unit
     
+    def focus(id: String): Unit
+    
     def focusNext(): Unit
     
     def focusPrevious(): Unit
@@ -41,11 +43,12 @@ object focusContextMod extends Shortcut {
       deactivate: String => Unit,
       disableFocus: () => Unit,
       enableFocus: () => Unit,
+      focus: String => Unit,
       focusNext: () => Unit,
       focusPrevious: () => Unit,
       remove: String => Unit
     ): Props = {
-      val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), add = js.Any.fromFunction2(add), deactivate = js.Any.fromFunction1(deactivate), disableFocus = js.Any.fromFunction0(disableFocus), enableFocus = js.Any.fromFunction0(enableFocus), focusNext = js.Any.fromFunction0(focusNext), focusPrevious = js.Any.fromFunction0(focusPrevious), remove = js.Any.fromFunction1(remove))
+      val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), add = js.Any.fromFunction2(add), deactivate = js.Any.fromFunction1(deactivate), disableFocus = js.Any.fromFunction0(disableFocus), enableFocus = js.Any.fromFunction0(enableFocus), focus = js.Any.fromFunction1(focus), focusNext = js.Any.fromFunction0(focusNext), focusPrevious = js.Any.fromFunction0(focusPrevious), remove = js.Any.fromFunction1(remove))
       __obj.asInstanceOf[Props]
     }
     
@@ -64,6 +67,8 @@ object focusContextMod extends Shortcut {
       inline def setDisableFocus(value: () => Unit): Self = StObject.set(x, "disableFocus", js.Any.fromFunction0(value))
       
       inline def setEnableFocus(value: () => Unit): Self = StObject.set(x, "enableFocus", js.Any.fromFunction0(value))
+      
+      inline def setFocus(value: String => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
       
       inline def setFocusNext(value: () => Unit): Self = StObject.set(x, "focusNext", js.Any.fromFunction0(value))
       

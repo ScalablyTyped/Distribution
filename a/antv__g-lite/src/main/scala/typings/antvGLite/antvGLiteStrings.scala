@@ -4,9 +4,7 @@ import typings.antvGLite.contextServiceMod.DataURLType
 import typings.antvGLite.csscolorvalueMod.ColorSpace
 import typings.antvGLite.cssnumericvalueMod.CSSNumericBaseType
 import typings.antvGLite.distTypesMod.Cursor
-import typings.antvGLite.distTypesMod.Percentage
 import typings.antvGLite.distTypesMod.TextTransform
-import typings.antvGLite.distTypesMod._LengthOrPercentageOrAuto
 import typings.antvGLite.distTypesMod._TextOverflow
 import typings.antvGLite.styleValueRegistryMod.CSSGlobalKeywords
 import org.scalablytyped.runtime.StObject
@@ -22,20 +20,8 @@ object antvGLiteStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait $LeftcurlybracketDigitRightcurlybracketPercentsign
-    extends StObject
-       with Percentage
-  inline def $LeftcurlybracketDigitRightcurlybracketPercentsign: $LeftcurlybracketDigitRightcurlybracketPercentsign = "${Digit}%".asInstanceOf[$LeftcurlybracketDigitRightcurlybracketPercentsign]
-  
-  @js.native
   sealed trait `2d` extends StObject
   inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
-  
-  @js.native
-  sealed trait DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign
-    extends StObject
-       with Percentage
-  inline def DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign: DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign = "${Digit}${Digit}%".asInstanceOf[DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign]
   
   @js.native
   sealed trait Percentsign extends StObject
@@ -109,7 +95,6 @@ object antvGLiteStrings {
   sealed trait auto
     extends StObject
        with Cursor
-       with _LengthOrPercentageOrAuto
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native

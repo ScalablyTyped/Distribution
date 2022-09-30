@@ -24,6 +24,7 @@ import typings.nodeRedUtil.nodeRedUtilStrings.preDeliver
 import typings.nodeRedUtil.nodeRedUtilStrings.preInstall
 import typings.nodeRedUtil.nodeRedUtilStrings.preRoute
 import typings.nodeRedUtil.nodeRedUtilStrings.preUninstall
+import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -66,7 +67,7 @@ object mod extends Shortcut {
   type HandlerFunction[T] = js.Function2[
     /* payload */ T, 
     /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
-    Unit | `false` | (js.Thenable[Unit | Boolean])
+    Unit | `false` | (PromiseLike[Unit | Boolean])
   ]
   
   // tslint:disable-line:void-return

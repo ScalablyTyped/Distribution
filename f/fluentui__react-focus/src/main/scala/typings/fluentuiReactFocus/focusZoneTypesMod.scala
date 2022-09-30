@@ -1,8 +1,8 @@
 package typings.fluentuiReactFocus
 
-import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`0`
-import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`1`
-import typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`2`
+import typings.fluentuiReactFocus.fluentuiReactFocusInts.`0`
+import typings.fluentuiReactFocus.fluentuiReactFocusInts.`1`
+import typings.fluentuiReactFocus.fluentuiReactFocusInts.`2`
 import typings.fluentuiUtilities.createRefMod.IRefObject
 import typings.fluentuiUtilities.pointMod.Point
 import typings.react.mod.ElementType
@@ -64,9 +64,9 @@ object focusZoneTypesMod {
   
   /* Inlined {  none :0,   all :1,   inputOnly :2}[keyof {  none :0,   all :1,   inputOnly :2}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`0`
-    - typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`1`
-    - typings.fluentuiReactFocus.fluentuiReactFocusNumbers.`2`
+    - typings.fluentuiReactFocus.fluentuiReactFocusInts.`0`
+    - typings.fluentuiReactFocus.fluentuiReactFocusInts.`1`
+    - typings.fluentuiReactFocus.fluentuiReactFocusInts.`2`
   */
   trait FocusZoneTabbableElements extends StObject
   object FocusZoneTabbableElements {

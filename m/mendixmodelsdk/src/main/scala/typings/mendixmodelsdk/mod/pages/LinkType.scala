@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.LinkType")
 @js.native
-class LinkType protected ()
+open class LinkType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.LinkType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

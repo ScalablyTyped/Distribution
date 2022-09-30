@@ -10,6 +10,7 @@ import typings.sentryTypes.optionsMod.ClientOptions
 import typings.sentryTypes.optionsMod.Options
 import typings.sentryTypes.stackframeMod.StackFrame
 import typings.sentryTypes.transportMod.Transport
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ object clientMod {
       */
     /* private */ var _flushOutcomes: Any = js.native
     
-    /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event | Null] = js.native
+    /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): PromiseLike[Event | Null] = js.native
   }
   
   trait BaseBrowserOptions extends StObject {

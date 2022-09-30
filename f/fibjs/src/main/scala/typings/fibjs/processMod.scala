@@ -51,7 +51,7 @@ object processMod {
   
   inline def memoryUsage(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[js.Object]
   
-  inline def nextTick(func: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def nextTick(func: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(scala.List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def open(command: String): ClassSubProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any]).asInstanceOf[ClassSubProcess]
   inline def open(command: String, args: js.Array[Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]

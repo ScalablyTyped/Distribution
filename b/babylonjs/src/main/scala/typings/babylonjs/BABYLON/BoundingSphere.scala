@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BoundingSphere extends StObject {
   
   /**
-    * @param worldMatrix
-    * @hidden
+    * @internal
     */
   def _update(worldMatrix: DeepImmutable[Matrix]): Unit = js.native
   

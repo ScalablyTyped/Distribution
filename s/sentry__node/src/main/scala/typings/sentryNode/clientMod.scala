@@ -6,6 +6,7 @@ import typings.sentryHub.mod.SessionFlusher
 import typings.sentryNode.typesMod.NodeClientOptions
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.eventMod.EventHint
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ object clientMod {
       */
     /* protected */ def _captureRequestSession(): Unit = js.native
     
-    /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event | Null] = js.native
+    /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): PromiseLike[Event | Null] = js.native
     
     /* protected */ var _sessionFlusher: js.UndefOr[SessionFlusher] = js.native
     

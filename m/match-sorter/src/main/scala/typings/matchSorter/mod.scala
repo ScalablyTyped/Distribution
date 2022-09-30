@@ -1,13 +1,13 @@
 package typings.matchSorter
 
-import typings.matchSorter.matchSorterNumbers.`0`
-import typings.matchSorter.matchSorterNumbers.`1`
-import typings.matchSorter.matchSorterNumbers.`2`
-import typings.matchSorter.matchSorterNumbers.`3`
-import typings.matchSorter.matchSorterNumbers.`4`
-import typings.matchSorter.matchSorterNumbers.`5`
-import typings.matchSorter.matchSorterNumbers.`6`
-import typings.matchSorter.matchSorterNumbers.`7`
+import typings.matchSorter.matchSorterInts.`0`
+import typings.matchSorter.matchSorterInts.`1`
+import typings.matchSorter.matchSorterInts.`2`
+import typings.matchSorter.matchSorterInts.`3`
+import typings.matchSorter.matchSorterInts.`4`
+import typings.matchSorter.matchSorterInts.`5`
+import typings.matchSorter.matchSorterInts.`6`
+import typings.matchSorter.matchSorterInts.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -255,33 +255,33 @@ object mod {
   
   /* Inlined { readonly CASE_SENSITIVE_EQUAL :7,  readonly EQUAL :6,  readonly STARTS_WITH :5,  readonly WORD_STARTS_WITH :4,  readonly CONTAINS :3,  readonly ACRONYM :2,  readonly MATCHES :1,  readonly NO_MATCH :0}[keyof { readonly CASE_SENSITIVE_EQUAL :7,  readonly EQUAL :6,  readonly STARTS_WITH :5,  readonly WORD_STARTS_WITH :4,  readonly CONTAINS :3,  readonly ACRONYM :2,  readonly MATCHES :1,  readonly NO_MATCH :0}] */
   /* Rewritten from type alias, can be one of: 
-    - typings.matchSorter.matchSorterNumbers.`3`
-    - typings.matchSorter.matchSorterNumbers.`2`
-    - typings.matchSorter.matchSorterNumbers.`4`
-    - typings.matchSorter.matchSorterNumbers.`0`
-    - typings.matchSorter.matchSorterNumbers.`7`
-    - typings.matchSorter.matchSorterNumbers.`5`
-    - typings.matchSorter.matchSorterNumbers.`6`
-    - typings.matchSorter.matchSorterNumbers.`1`
+    - typings.matchSorter.matchSorterInts.`3`
+    - typings.matchSorter.matchSorterInts.`2`
+    - typings.matchSorter.matchSorterInts.`4`
+    - typings.matchSorter.matchSorterInts.`0`
+    - typings.matchSorter.matchSorterInts.`7`
+    - typings.matchSorter.matchSorterInts.`5`
+    - typings.matchSorter.matchSorterInts.`6`
+    - typings.matchSorter.matchSorterInts.`1`
   */
   trait Ranking extends StObject
   object Ranking {
     
-    inline def `0`: typings.matchSorter.matchSorterNumbers.`0` = 0.asInstanceOf[typings.matchSorter.matchSorterNumbers.`0`]
+    inline def `0`: typings.matchSorter.matchSorterInts.`0` = 0.asInstanceOf[typings.matchSorter.matchSorterInts.`0`]
     
-    inline def `1`: typings.matchSorter.matchSorterNumbers.`1` = 1.asInstanceOf[typings.matchSorter.matchSorterNumbers.`1`]
+    inline def `1`: typings.matchSorter.matchSorterInts.`1` = 1.asInstanceOf[typings.matchSorter.matchSorterInts.`1`]
     
-    inline def `2`: typings.matchSorter.matchSorterNumbers.`2` = 2.asInstanceOf[typings.matchSorter.matchSorterNumbers.`2`]
+    inline def `2`: typings.matchSorter.matchSorterInts.`2` = 2.asInstanceOf[typings.matchSorter.matchSorterInts.`2`]
     
-    inline def `3`: typings.matchSorter.matchSorterNumbers.`3` = 3.asInstanceOf[typings.matchSorter.matchSorterNumbers.`3`]
+    inline def `3`: typings.matchSorter.matchSorterInts.`3` = 3.asInstanceOf[typings.matchSorter.matchSorterInts.`3`]
     
-    inline def `4`: typings.matchSorter.matchSorterNumbers.`4` = 4.asInstanceOf[typings.matchSorter.matchSorterNumbers.`4`]
+    inline def `4`: typings.matchSorter.matchSorterInts.`4` = 4.asInstanceOf[typings.matchSorter.matchSorterInts.`4`]
     
-    inline def `5`: typings.matchSorter.matchSorterNumbers.`5` = 5.asInstanceOf[typings.matchSorter.matchSorterNumbers.`5`]
+    inline def `5`: typings.matchSorter.matchSorterInts.`5` = 5.asInstanceOf[typings.matchSorter.matchSorterInts.`5`]
     
-    inline def `6`: typings.matchSorter.matchSorterNumbers.`6` = 6.asInstanceOf[typings.matchSorter.matchSorterNumbers.`6`]
+    inline def `6`: typings.matchSorter.matchSorterInts.`6` = 6.asInstanceOf[typings.matchSorter.matchSorterInts.`6`]
     
-    inline def `7`: typings.matchSorter.matchSorterNumbers.`7` = 7.asInstanceOf[typings.matchSorter.matchSorterNumbers.`7`]
+    inline def `7`: typings.matchSorter.matchSorterInts.`7` = 7.asInstanceOf[typings.matchSorter.matchSorterInts.`7`]
   }
   
   trait RankingInfo extends StObject {

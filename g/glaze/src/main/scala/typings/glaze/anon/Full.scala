@@ -1,6 +1,6 @@
 package typings.glaze.anon
 
-import typings.glaze.glazeNumbers.`9999`
+import typings.glaze.glazeInts.`9999`
 import typings.glaze.glazeStrings.Dot125rem
 import typings.glaze.glazeStrings.Dot25rem
 import typings.glaze.glazeStrings.Dot5rem

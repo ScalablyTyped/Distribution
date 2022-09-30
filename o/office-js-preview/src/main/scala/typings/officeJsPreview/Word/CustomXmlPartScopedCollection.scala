@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace.
   *
   * @remarks
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait CustomXmlPartScopedCollection
@@ -30,28 +29,25 @@ trait CustomXmlPartScopedCollection
     * Gets the number of items in the collection.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a custom XML part based on its ID. Read only.
+    * Gets a custom XML part based on its ID.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param id ID of the custom XML part to be retrieved.
     */
   def getItem(id: String): CustomXmlPart = js.native
   
   /**
-    * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist in the collection.
+    * Gets a custom XML part based on its ID. If the CustomXmlPart does not exist in the collection, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     *
     * @param id Required. ID of the object to be retrieved.
     */
@@ -61,17 +57,15 @@ trait CustomXmlPartScopedCollection
     * If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getOnlyItem(): CustomXmlPart = js.native
   
   /**
-    * If the collection contains exactly one item, this method returns it. Otherwise, this method returns a null object.
+    * If the collection contains exactly one item, this method returns it. Otherwise, this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   def getOnlyItemOrNullObject(): CustomXmlPart = js.native
   

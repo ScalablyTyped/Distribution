@@ -6,6 +6,7 @@ import typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import typings.react.mod.ClassAttributes
 import typings.react.mod.global.JSX.Element
+import typings.std.PromiseLike
 import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import org.scalablytyped.runtime.StObject
@@ -82,7 +83,7 @@ object baseSelectedItemsListTypesMod {
     /**
       * A callback to process a selection after the user selects something from the picker.
       */
-    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.undefined
+    var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | PromiseLike[T]]] = js.undefined
     
     /**
       * A callback when and item or items are deleted
@@ -152,7 +153,7 @@ object baseSelectedItemsListTypesMod {
       
       inline def setOnItemDeletedUndefined: Self = StObject.set(x, "onItemDeleted", js.undefined)
       
-      inline def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
+      inline def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | PromiseLike[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
       
       inline def setOnItemSelectedUndefined: Self = StObject.set(x, "onItemSelected", js.undefined)
       

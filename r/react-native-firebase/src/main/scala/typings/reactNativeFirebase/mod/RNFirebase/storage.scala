@@ -4,6 +4,7 @@ import typings.reactNativeFirebase.anon.CACHESDIRECTORYPATH
 import typings.reactNativeFirebase.anon.Complete
 import typings.reactNativeFirebase.mod.App
 import typings.std.Partial
+import typings.std.Promise
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -360,7 +361,8 @@ object storage {
   
   @js.native
   trait StorageTask[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     /**
       * Not supported by react-native-firebase

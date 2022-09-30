@@ -14,7 +14,7 @@ trait NameNewValue[T]
   
   var name: PropertyKey
   
-  var newValue: js.Any
+  var newValue: Any
   
   var `object`: T
   
@@ -22,7 +22,7 @@ trait NameNewValue[T]
 }
 object NameNewValue {
   
-  inline def apply[T](name: PropertyKey, newValue: js.Any, `object`: T, `type`: update | add): NameNewValue[T] = {
+  inline def apply[T](name: PropertyKey, newValue: Any, `object`: T, `type`: update | add): NameNewValue[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -33,7 +33,7 @@ object NameNewValue {
     
     inline def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

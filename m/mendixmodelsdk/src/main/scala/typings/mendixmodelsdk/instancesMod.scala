@@ -27,11 +27,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object instancesMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/instances", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal/instances", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "AbstractEnum")
+  @JSImport("mendixmodelsdk/src/sdk/internal/instances", "AbstractEnum")
   @js.native
   abstract class AbstractEnum protected () extends StObject {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
@@ -58,7 +58,7 @@ object instancesMod {
   
   object instancehelpers {
     
-    @JSImport("mendixmodelsdk/dist/sdk/internal/instances", "instancehelpers")
+    @JSImport("mendixmodelsdk/src/sdk/internal/instances", "instancehelpers")
     @js.native
     val ^ : js.Any = js.native
     
@@ -111,7 +111,7 @@ object instancesMod {
     /**
       * Creates a new unit for a SDK user.
       */
-    inline def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnit")(container.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnit")(container.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson): IAbstractUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnitFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[IAbstractUnit]
     inline def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson, resolveByIdReferences: Boolean): IAbstractUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnitFromJSON")(model.asInstanceOf[js.Any], json.asInstanceOf[js.Any], resolveByIdReferences.asInstanceOf[js.Any])).asInstanceOf[IAbstractUnit]
@@ -119,7 +119,7 @@ object instancesMod {
     /**
       * Type -> class (the constructor function, technically) lookup, e.g. "DomainModels$Entity" -> DomainModels.Entity
       */
-    inline def lookupClass(qualifiedTypeName: String, classes: js.Any): InstanceConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupClass")(qualifiedTypeName.asInstanceOf[js.Any], classes.asInstanceOf[js.Any])).asInstanceOf[InstanceConstructor]
+    inline def lookupClass(qualifiedTypeName: String, classes: Any): InstanceConstructor = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupClass")(qualifiedTypeName.asInstanceOf[js.Any], classes.asInstanceOf[js.Any])).asInstanceOf[InstanceConstructor]
     
     inline def modelElementJsonToInstance(
       model: AbstractModel,
@@ -144,7 +144,7 @@ object instancesMod {
     
     inline def structureAffectsQualifiedNames(structure: IStructure): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureAffectsQualifiedNames")(structure.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def structureIsByNameReferrable(structure: IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureIsByNameReferrable")(structure.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/structures.aliases.Container> */ Boolean]
+    inline def structureIsByNameReferrable(structure: IStructure): /* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/src/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/src/sdk/internal/structures.aliases.Container> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("structureIsByNameReferrable")(structure.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/elements.AbstractElement<mendixmodelsdk.mendixmodelsdk/src/sdk/internal/AbstractModel.IAbstractModel, mendixmodelsdk.mendixmodelsdk/src/sdk/internal/structures.aliases.Container> */ Boolean]
   }
   
   @js.native
@@ -156,7 +156,7 @@ object instancesMod {
     
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any,
+      thisArg: Any,
       fromIndex: Double
     ): js.UndefOr[T] = js.native
     def find(

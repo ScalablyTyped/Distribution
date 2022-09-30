@@ -1,28 +1,28 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`128`
-import typings.activexWord.activexWordNumbers.`16`
-import typings.activexWord.activexWordNumbers.`1`
-import typings.activexWord.activexWordNumbers.`256`
-import typings.activexWord.activexWordNumbers.`2`
-import typings.activexWord.activexWordNumbers.`32`
-import typings.activexWord.activexWordNumbers.`4`
-import typings.activexWord.activexWordNumbers.`64`
-import typings.activexWord.activexWordNumbers.`8`
+import typings.activexWord.activexWordInts.`128`
+import typings.activexWord.activexWordInts.`16`
+import typings.activexWord.activexWordInts.`1`
+import typings.activexWord.activexWordInts.`256`
+import typings.activexWord.activexWordInts.`2`
+import typings.activexWord.activexWordInts.`32`
+import typings.activexWord.activexWordInts.`4`
+import typings.activexWord.activexWordInts.`64`
+import typings.activexWord.activexWordInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`16`
-  - typings.activexWord.activexWordNumbers.`1`
-  - typings.activexWord.activexWordNumbers.`8`
-  - typings.activexWord.activexWordNumbers.`128`
-  - typings.activexWord.activexWordNumbers.`4`
-  - typings.activexWord.activexWordNumbers.`32`
-  - typings.activexWord.activexWordNumbers.`256`
-  - typings.activexWord.activexWordNumbers.`64`
-  - typings.activexWord.activexWordNumbers.`2`
+  - typings.activexWord.activexWordInts.`16`
+  - typings.activexWord.activexWordInts.`1`
+  - typings.activexWord.activexWordInts.`8`
+  - typings.activexWord.activexWordInts.`128`
+  - typings.activexWord.activexWordInts.`4`
+  - typings.activexWord.activexWordInts.`32`
+  - typings.activexWord.activexWordInts.`256`
+  - typings.activexWord.activexWordInts.`64`
+  - typings.activexWord.activexWordInts.`2`
 */
 trait WdTableFormatApply extends StObject
 object WdTableFormatApply {

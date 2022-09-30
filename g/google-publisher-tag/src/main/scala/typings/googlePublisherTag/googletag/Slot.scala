@@ -109,7 +109,7 @@ trait Slot extends StObject {
     *
     * @see [AdSense Attributes](https://developers.google.com/publisher-tag/adsense_attributes)
     * @param key Name of the attribute to look for.
-    * @return Current value for the attribute key, or <code>null</code> if the
+    * @return Current value for the attribute key, or `null` if the
     *     key is not present.
     */
   def get(key: String): String | Null = js.native
@@ -167,15 +167,15 @@ trait Slot extends StObject {
   /**
     * Returns the ad response information. This is based on the last ad
     * response for the slot. If this is called when the slot has no ad,
-    * <code>null</code> will be returned.
+    * `null` will be returned.
     *
-    * @return The latest ad response information, or <code>null</code> if the
+    * @return The latest ad response information, or `null` if the
     *     slot has no ad.
     */
   def getResponseInformation(): ResponseInformation | Null = js.native
   
   /**
-    * Returns the ID of the slot <code>div</code> provided when the slot was
+    * Returns the ID of the slot `div` provided when the slot was
     * defined.
     *
     * @example
@@ -185,7 +185,7 @@ trait Slot extends StObject {
     *   var slotElementId = slot.getSlotElementId();
     *   // slotElementId is 'div-1'
     *
-    * @return Slot <code>div</code> ID.
+    * @return Slot `div` ID.
     */
   def getSlotElementId(): String = js.native
   
@@ -230,11 +230,10 @@ trait Slot extends StObject {
   /**
     * Sets a value for an AdSense attribute on this ad slot. This will override
     * any values set at the service level for this key.
-    * <br><br>
-    * Calling this method more than
-    * once for the same key will override previously set values for that key.
-    * All values must be set before calling <code>display</code> or
-    * <code>refresh</code>.
+    *
+    * Calling this method more than once for the same key will override
+    * previously set values for that key. All values must be set before calling
+    * `display` or `refresh`.
     *
     * @example
     *   // Setting an attribute on a single ad slot.
@@ -267,7 +266,7 @@ trait Slot extends StObject {
   /**
     * Sets the click URL to which users will be redirected after clicking on
     * the ad.
-    * <br><br>
+    *
     * The Google Ad Manager servers still record a click even if the
     * click URL is replaced. Any landing page URL associated with the creative
     * that is served is appended to the provided value. Subsequent calls
@@ -284,7 +283,7 @@ trait Slot extends StObject {
   def setClickUrl(value: String): Slot = js.native
   
   /**
-    * Sets whether the slot <code>div</code> should be hidden when there is no
+    * Sets whether the slot `div` should be hidden when there is no
     * ad in the slot. This overrides the service-level settings.
     *
     * @example
@@ -304,7 +303,7 @@ trait Slot extends StObject {
     * @see [Minimize layout shift](https://developers.google.com/publisher-tag/guides/minimize-layout-shift)
     * @param collapse Whether to collapse the slot if no ad is returned.
     * @param collapseBeforeAdFetch Whether to collapse the slot even before an
-    *     ad is fetched. Ignored if collapse is not <code>true</code>.
+    *     ad is fetched. Ignored if collapse is not `true`.
     * @return The slot object on which the method was called.
     */
   def setCollapseEmptyDiv(collapse: Boolean): Slot = js.native
@@ -320,34 +319,22 @@ trait Slot extends StObject {
   /**
     * Configures whether ads in this slot should be forced to be rendered using
     * a SafeFrame container.
-    * <br><br>
-    * Please keep the following things in mind while using this API:
-    * <ul>
-    *   <li>
-    *     This setting will only take effect for <b>subsequent</b> ad requests
-    *     made for the respective slots.
-    *   </li>
-    *   <li>
-    *     The slot level setting, if specified, will always override the page
-    *     level setting.
-    *   </li>
-    *   <li>
-    *     If set to <code>true</code> (at slot-level or page level), the ad
-    *     will always be rendered using a SafeFrame container independent of
-    *     the choice made in the Google Ad Manager UI.
-    *   </li>
-    *   <li>
-    *     However, if set to <code>false</code> or left unspecified, the ad
-    *     will be rendered using a SafeFrame container depending on the type of
-    *     creative and the selection made in the Google Ad Manager UI.
-    *   </li>
-    *   <li>
-    *     This API should be used with caution as it could impact the behaviour
-    *     of creatives that attempt to break out of their iFrames or rely on
-    *     them being rendered directly in a publishers page.
-    *   </li>
-    * </ul>
     *
+    * Please keep the following things in mind while using this API:
+    *
+    * - This setting will only take effect for **subsequent** ad requests
+    *   made for the respective slots.
+    * - The slot level setting, if specified, will always override the page
+    *   level setting.
+    * - If set to `true` (at slot-level or page level), the ad will always be
+    *   rendered using a SafeFrame container independent of the choice made in
+    *   the Google Ad Manager UI.
+    * - However, if set to `false` or left unspecified, the ad will be rendered
+    *   using a SafeFrame container depending on the type of creative and the
+    *   selection made in the Google Ad Manager UI.
+    * - This API should be used with caution as it could impact the behaviour
+    *   of creatives that attempt to break out of their iFrames or rely on
+    *   them being rendered directly in a publishers page.
     *
     * @example
     *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
@@ -355,9 +342,9 @@ trait Slot extends StObject {
     *            .addService(googletag.pubads());
     *
     * @see [Render creatives using SafeFrame](https://support.google.com/admanager/answer/6023110)
-    * @param forceSafeFrame <code>true</code> to force all ads in this slot to
-    *     be rendered in SafeFrames and <code>false</code> to opt-out of a
-    *     page-level setting (if present). Setting this to <code>false</code>
+    * @param forceSafeFrame `true` to force all ads in this slot to
+    *     be rendered in SafeFrames and `false` to opt-out of a
+    *     page-level setting (if present). Setting this to `false`
     *     when not specified at the page-level won't change anything.
     * @return The slot object on which the method was called.
     */
@@ -423,21 +410,14 @@ trait Slot extends StObject {
     * in a JSON object. This is the same as calling {@link Slot.setTargeting}
     * for all the key values of the object. These keys are defined in your
     * Google Ad Manager account.
-    * <br><br>
-    * <b>Notes:</b>
-    * <ul>
-    *   <li>
-    *     In case of overwriting, only the last value will be kept.
-    *   </li>
-    *   <li>
-    *     If the value is an array, any previous value will be overwritten,
-    *     not merged.
-    *   </li>
-    *   <li>
-    *     Values set here will overwrite targeting parameters set at the
-    *     service-level.
-    *   </li>
-    * </ul>
+    *
+    * **Notes:**
+    *
+    * - In case of overwriting, only the last value will be kept.
+    * - If the value is an array, any previous value will be overwritten, not
+    *   merged.
+    * - Values set here will overwrite targeting parameters set at the
+    *   service-level.
     *
     * @example
     *   var slot = googletag.defineSlot('/1234567/sports', [160, 600],

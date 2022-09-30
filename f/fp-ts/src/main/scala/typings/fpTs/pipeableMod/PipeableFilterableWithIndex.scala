@@ -24,7 +24,7 @@ trait PipeableFilterableWithIndex[F, I]
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
   ] = js.native
   @JSName("filterWithIndex")
-  def filterWithIndex_AB_A[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
+  def filterWithIndex_AB[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
   ] = js.native
@@ -45,7 +45,7 @@ trait PipeableFilterableWithIndex[F, I]
     ]
   ] = js.native
   @JSName("partitionWithIndex")
-  def partitionWithIndex_AB_A[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
+  def partitionWithIndex_AB[A, B /* <: A */](refinementWithIndex: RefinementWithIndex[I, A, B]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ Any, 
     Separated[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, 

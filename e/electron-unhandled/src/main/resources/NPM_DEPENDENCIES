@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-unhandled" : "3.0.2"
+      "electron-unhandled" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-unhandled" : "3.0.2"
+      "electron-unhandled" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

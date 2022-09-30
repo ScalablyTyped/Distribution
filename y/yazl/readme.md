@@ -11,9 +11,9 @@ yet another zip library for node
 | Full name          | yazl |
 | Keywords           | zip, stream, archive, file |
 | # releases         | 0 |
-| # dependents       | 231 |
-| # downloads        | 15669477 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 5740312.333333333 |
+| # stars            | 295.0 |
 
 ## Links
 - [Homepage](https://github.com/thejoshwolfe/yazl)

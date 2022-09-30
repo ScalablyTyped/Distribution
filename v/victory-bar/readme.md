@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-bar
 
-Typings are for version 36.6.7
+Typings are for version 36.6.8
 
 ## Library description:
 Bar Component for Victory

@@ -1,7 +1,6 @@
 package typings.reduxAuthWrapper
 
 import typings.history.mod.Location
-import typings.history.mod.LocationState
 import typings.redux.mod.Action
 import typings.reduxAuthWrapper.mod.AuthWrapperDecorator
 import typings.reduxAuthWrapper.mod.StateSelector
@@ -21,9 +20,9 @@ object history4RedirectMod {
   inline def connectedReduxRedirect[OwnProps, State](config: ConnectedReduxRedirectConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedReduxRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthReduxProps]]
   
   inline def connectedRouterRedirect[OwnProps, State](config: ConnectedRouterRedirectConfig[OwnProps, State]): AuthWrapperDecorator[
-    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
+    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ Any, Action[Any]]])
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connectedRouterRedirect")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[
-    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ js.Any, Action[js.Any]]])
+    OwnProps & (InjectedAuthRouterProps[js.Function1[/* repeated */ Any, Action[Any]]])
   ]]
   
   trait ConnectedReduxRedirectConfig[OwnProps, State]
@@ -31,13 +30,13 @@ object history4RedirectMod {
        with ConnectedRouterRedirectConfig[OwnProps, State] {
     
     @JSName("redirectAction")
-    def redirectAction_MConnectedReduxRedirectConfig(location: Location[LocationState]): Action[js.Any]
+    def redirectAction_MConnectedReduxRedirectConfig(location: Location): Action[Any]
   }
   object ConnectedReduxRedirectConfig {
     
     inline def apply[OwnProps, State](
       authenticatedSelector: (State, OwnProps) => Boolean,
-      redirectAction: Location[LocationState] => Action[js.Any],
+      redirectAction: Location => Action[Any],
       redirectPath: String | (StateSelector[State, OwnProps, String])
     ): ConnectedReduxRedirectConfig[OwnProps, State] = {
       val __obj = js.Dynamic.literal(authenticatedSelector = js.Any.fromFunction2(authenticatedSelector), redirectAction = js.Any.fromFunction1(redirectAction), redirectPath = redirectPath.asInstanceOf[js.Any])
@@ -46,7 +45,7 @@ object history4RedirectMod {
     
     extension [Self <: ConnectedReduxRedirectConfig[?, ?], OwnProps, State](x: Self & (ConnectedReduxRedirectConfig[OwnProps, State])) {
       
-      inline def setRedirectAction(value: Location[LocationState] => Action[js.Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
+      inline def setRedirectAction(value: Location => Action[Any]): Self = StObject.set(x, "redirectAction", js.Any.fromFunction1(value))
     }
   }
 }

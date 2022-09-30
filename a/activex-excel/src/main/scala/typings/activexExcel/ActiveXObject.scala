@@ -64,7 +64,6 @@ import typings.activexExcel.activexExcelStrings.GotFocus
 import typings.activexExcel.activexExcelStrings.HasAxis
 import typings.activexExcel.activexExcelStrings.Invoke
 import typings.activexExcel.activexExcelStrings.IsRefresh
-import typings.activexExcel.activexExcelStrings.List
 import typings.activexExcel.activexExcelStrings.LostFocus
 import typings.activexExcel.activexExcelStrings.Map
 import typings.activexExcel.activexExcelStrings.MouseDown
@@ -765,11 +764,16 @@ trait ActiveXObject extends StObject {
     newValue: Boolean
   ): Unit = js.native
   @JSName("set")
-  def set_List(obj: ControlFormat, propertyName: List, parameterTypes: js.Array[Double], newValue: String): Unit = js.native
+  def set_List(
+    obj: ControlFormat,
+    propertyName: typings.activexExcel.activexExcelStrings.List,
+    parameterTypes: js.Array[Double],
+    newValue: String
+  ): Unit = js.native
   @JSName("set")
   def set_List(
     obj: ControlFormat,
-    propertyName: List,
+    propertyName: typings.activexExcel.activexExcelStrings.List,
     parameterTypes: js.Array[scala.Nothing],
     newValue: SafeArray[String]
   ): Unit = js.native

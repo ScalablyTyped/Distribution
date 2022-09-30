@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protractor", "Ptor")
 @js.native
-class Ptor ()
+open class Ptor ()
   extends typings.protractor.ptorMod.Ptor

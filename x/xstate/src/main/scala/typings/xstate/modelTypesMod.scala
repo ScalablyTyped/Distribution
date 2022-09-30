@@ -16,6 +16,8 @@ import typings.xstate.typesMod.PropertyAssigner
 import typings.xstate.typesMod.ServiceMap
 import typings.xstate.typesMod.StateMachine
 import typings.xstate.xstateBooleans.`false`
+import typings.xstate.xstateStrings.`An action creator must return an object`
+import typings.xstate.xstateStrings.`An event creator must return an object`
 import typings.xstate.xstateStrings.actions
 import typings.xstate.xstateStrings.events
 import typings.xstate.xstateStrings.missingImplementations
@@ -26,23 +28,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object modelTypesMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.xstate.xstateStrings.`An action creator must return an object`
-    - Self
-    - typings.xstate.xstateStrings.`An action creator canApostrophet return an object with a type property`
-  */
-  type ActionCreator[Self /* <: AnyFunction */, Return] = (_ActionCreator[Self, Return]) | Self
+  type ActionCreator[Self /* <: AnyFunction */, Return] = (`An action creator must return an object`) | Self | String
   
   type ActionCreators[Self] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Self ]: Self[K] extends xstate.xstate/lib/types.AnyFunction? xstate.xstate/lib/model.types.ActionCreator<Self[K], std.ReturnType<Self[K]>> : 'An action creator must be a function'}
     */ typings.xstate.xstateStrings.ActionCreators & TopLevel[Any]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.xstate.xstateStrings.`An event creator must return an object`
-    - Self
-    - typings.xstate.xstateStrings.`An event creator canApostrophet return an object with a type property`
-  */
-  type EventCreator[Self /* <: AnyFunction */, Return] = (_EventCreator[Self, Return]) | Self
+  type EventCreator[Self /* <: AnyFunction */, Return] = (`An event creator must return an object`) | Self | String
   
   type EventCreators[Self] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Self ]: Self[K] extends xstate.xstate/lib/types.AnyFunction? xstate.xstate/lib/model.types.EventCreator<Self[K], std.ReturnType<Self[K]>> : 'An event creator must be a function'}
@@ -162,8 +154,4 @@ object modelTypesMod {
   type SimplisticExtractEvent[TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] = TEvent
   
   type UnionFromCreatorsReturnTypes[TCreators] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TCreators ]: TCreators[K] extends xstate.xstate/lib/types.AnyFunction? std.ReturnType<TCreators[K]> : never}[keyof TCreators] */ js.Any
-  
-  trait _ActionCreator[Self /* <: AnyFunction */, Return] extends StObject
-  
-  trait _EventCreator[Self /* <: AnyFunction */, Return] extends StObject
 }

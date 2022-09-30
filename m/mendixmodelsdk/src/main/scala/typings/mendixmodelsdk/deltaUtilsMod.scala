@@ -19,17 +19,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object deltaUtilsMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/deltaUtils", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/deltaUtils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("mendixmodelsdk/src/sdk/internal/deltas/deltaUtils", "UnknownPropertyError")
+  @js.native
+  open class UnknownPropertyError protected ()
+    extends StObject
+       with Error {
+    def this(message: String) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
   inline def asModelUnit(unit: IAbstractUnit, delta: Delta): ModelUnit[IAbstractModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("asModelUnit")(unit.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[ModelUnit[IAbstractModel]]
   
-  inline def checkInsertionIndex(index: Double, property: AbstractProperty[js.Array[js.Any], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkInsertionIndex")(index.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkInsertionIndex(index: Double, property: AbstractProperty[js.Array[Any], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkInsertionIndex")(index.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def checkMutator(mutator: Mutator, property: AbstractProperty[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMutator")(mutator.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkMutator(mutator: Mutator, property: AbstractProperty[Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMutator")(mutator.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def checkUpdateOrRemovalIndex(index: Double, property: AbstractProperty[js.Array[js.Any], js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUpdateOrRemovalIndex")(index.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkUpdateOrRemovalIndex(index: Double, property: AbstractProperty[js.Array[Any], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUpdateOrRemovalIndex")(index.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def findElement(model: AbstractModel, unit: ModelUnit[IAbstractModel], elementId: String): (AbstractElement[IAbstractModel, Container]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findElement")(model.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[(AbstractElement[IAbstractModel, Container]) | Null]
   
@@ -37,17 +53,17 @@ object deltaUtilsMod {
   
   inline def getElement(model: AbstractModel, unit: ModelUnit[IAbstractModel], elementId: String): AbstractElement[IAbstractModel, Container] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(model.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[AbstractElement[IAbstractModel, Container]]
   
-  inline def getElementNotFoundError(unit: ModelUnit[IAbstractModel], elementId: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementNotFoundError")(unit.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def getElementNotFoundError(unit: ModelUnit[IAbstractModel], elementId: String): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementNotFoundError")(unit.asInstanceOf[js.Any], elementId.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
-  inline def getProperty(structure: IStructure, propertyName: String): AbstractProperty[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProperty")(structure.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[AbstractProperty[js.Any, js.Any]]
+  inline def getProperty(structure: IStructure, propertyName: String): AbstractProperty[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProperty")(structure.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[AbstractProperty[Any, Any]]
   
   inline def getUnit(model: AbstractModel, unitId: String): IAbstractUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnit")(model.asInstanceOf[js.Any], unitId.asInstanceOf[js.Any])).asInstanceOf[IAbstractUnit]
   
-  inline def isListProperty(property: AbstractProperty[js.Any, js.Any]): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties.AbstractProperty<std.Array<any>, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isListProperty")(property.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties.AbstractProperty<std.Array<any>, any> */ Boolean]
+  inline def isListProperty(property: AbstractProperty[Any, Any]): /* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/properties.AbstractProperty<std.Array<any>, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isListProperty")(property.asInstanceOf[js.Any]).asInstanceOf[/* is mendixmodelsdk.mendixmodelsdk/src/sdk/internal/properties.AbstractProperty<std.Array<any>, any> */ Boolean]
   
-  inline def rawList(property: AbstractProperty[js.Array[js.Any], js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawList")(property.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def rawList(property: AbstractProperty[js.Array[Any], Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawList")(property.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def rawValue(property: AbstractProperty[js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rawValue")(property.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def rawValue(property: AbstractProperty[Any, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rawValue")(property.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def removeUselessDeltas(deltas: js.Array[Delta]): js.Array[Delta] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUselessDeltas")(deltas.asInstanceOf[js.Any]).asInstanceOf[js.Array[Delta]]
   

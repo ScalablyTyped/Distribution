@@ -12,7 +12,7 @@ object withFiltersMod {
   val ^ : js.Any = js.native
   
   // prettier-ignore
-  inline def default(hookName: String): js.Function1[/* wrapped */ js.Any, ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ js.Any, ComponentType[js.Any]]]
+  inline def default(hookName: String): js.Function1[/* wrapped */ Any, ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ Any, ComponentType[Any]]]
   
-  inline def default_P[P](hookName: String): js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[P]]]
+  inline def default_P[P](hookName: String): js.Function1[/* wrapped */ ComponentType[Any], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[Any], ComponentType[P]]]
 }

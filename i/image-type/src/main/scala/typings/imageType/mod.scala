@@ -37,9 +37,12 @@ object mod {
     - typings.imageType.imageTypeStrings.heic
     - typings.imageType.imageTypeStrings.cur
     - typings.imageType.imageTypeStrings.dcm
+    - typings.imageType.imageTypeStrings.avif
   */
   trait ImageFileExtension extends StObject
   object ImageFileExtension {
+    
+    inline def avif: typings.imageType.imageTypeStrings.avif = "avif".asInstanceOf[typings.imageType.imageTypeStrings.avif]
     
     inline def bmp: typings.imageType.imageTypeStrings.bmp = "bmp".asInstanceOf[typings.imageType.imageTypeStrings.bmp]
     

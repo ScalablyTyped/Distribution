@@ -6,6 +6,7 @@ import typings.angular.mod.IPromise
 import typings.angular.mod.IScope
 import typings.angular.mod.Injectable
 import typings.std.Element
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,4 +20,4 @@ type IMedia = js.Function1[/* media */ String, Boolean]
 
 type IStickyService = js.Function3[/* scope */ IScope, /* element */ JQuery, /* elementClone */ js.UndefOr[JQuery], Unit]
 
-type ResolveObject = StringDictionary[Injectable[js.Function1[/* repeated */ Any, js.Thenable[Any]]]]
+type ResolveObject = StringDictionary[Injectable[js.Function1[/* repeated */ Any, PromiseLike[Any]]]]

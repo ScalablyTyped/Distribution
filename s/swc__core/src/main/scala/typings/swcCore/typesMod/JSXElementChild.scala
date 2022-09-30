@@ -1,0 +1,51 @@
+package typings.swcCore.typesMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.swcCore.typesMod.JSXText
+  - typings.swcCore.typesMod.JSXExpressionContainer
+  - typings.swcCore.typesMod.JSXSpreadChild
+  - typings.swcCore.typesMod.JSXElement
+  - typings.swcCore.typesMod.JSXFragment
+*/
+trait JSXElementChild extends StObject
+object JSXElementChild {
+  
+  inline def JSXElement(children: js.Array[JSXElementChild], opening: JSXOpeningElement, span: Span): typings.swcCore.typesMod.JSXElement = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], opening = opening.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXElement")
+    __obj.asInstanceOf[typings.swcCore.typesMod.JSXElement]
+  }
+  
+  inline def JSXExpressionContainer(expression: JSXExpression, span: Span): typings.swcCore.typesMod.JSXExpressionContainer = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXExpressionContainer")
+    __obj.asInstanceOf[typings.swcCore.typesMod.JSXExpressionContainer]
+  }
+  
+  inline def JSXFragment(
+    children: js.Array[JSXElementChild],
+    closing: JSXClosingFragment,
+    opening: JSXOpeningFragment,
+    span: Span
+  ): typings.swcCore.typesMod.JSXFragment = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closing = closing.asInstanceOf[js.Any], opening = opening.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXFragment")
+    __obj.asInstanceOf[typings.swcCore.typesMod.JSXFragment]
+  }
+  
+  inline def JSXSpreadChild(expression: Expression, span: Span): typings.swcCore.typesMod.JSXSpreadChild = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXSpreadChild")
+    __obj.asInstanceOf[typings.swcCore.typesMod.JSXSpreadChild]
+  }
+  
+  inline def JSXText(raw: String, span: Span, value: String): typings.swcCore.typesMod.JSXText = {
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXText")
+    __obj.asInstanceOf[typings.swcCore.typesMod.JSXText]
+  }
+}

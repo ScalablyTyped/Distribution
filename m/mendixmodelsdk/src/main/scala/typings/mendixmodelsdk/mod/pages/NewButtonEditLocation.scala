@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.NewButtonEditLocation")
 @js.native
-class NewButtonEditLocation protected ()
+open class NewButtonEditLocation protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.NewButtonEditLocation {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

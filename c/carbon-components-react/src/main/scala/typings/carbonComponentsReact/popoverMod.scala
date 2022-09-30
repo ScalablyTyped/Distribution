@@ -268,7 +268,7 @@ object popoverMod {
   
   inline def PopoverContent(props: ForwardRefProps[HTMLSpanElement, PopoverContentProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("PopoverContent")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def Popover_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, PopoverCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Popover")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Popover_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, PopoverCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Popover")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Popover_a[R](props: ForwardRefProps[R, PopoverIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Popover")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

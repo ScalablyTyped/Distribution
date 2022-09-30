@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.structuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IValueType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAttribute */ @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValueType")
+- typings.mendixmodelsdk.domainmodelsMod.domainmodels.IValueType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAttribute */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValueType")
 @js.native
 abstract class ValueType protected () extends Element[IModel] {
   def this(
@@ -38,18 +38,18 @@ abstract class ValueType protected () extends Element[IModel] {
 }
 object ValueType {
   
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValueType")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValueType")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValueType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValueType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValueType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.ValueType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

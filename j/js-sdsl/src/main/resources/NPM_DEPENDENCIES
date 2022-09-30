@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "js-sdsl" : "4.1.4"
+      "js-sdsl" : "4.1.5-beta.1"
     }
   ],
   "test-dependencies" : [
     {
-      "js-sdsl" : "4.1.4"
+      "js-sdsl" : "4.1.5-beta.1"
     }
   ],
   "compile-devDependencies" : [

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LENOFFSET extends StObject {
   
-  var LEN_OFFSET: typings.escpos.escposNumbers.`3`
+  var LEN_OFFSET: typings.escpos.escposInts.`3`
   
   var LEVEL: OPTIONS
   
@@ -27,7 +27,7 @@ object LENOFFSET {
   
   extension [Self <: LENOFFSET](x: Self) {
     
-    inline def setLEN_OFFSET(value: typings.escpos.escposNumbers.`3`): Self = StObject.set(x, "LEN_OFFSET", value.asInstanceOf[js.Any])
+    inline def setLEN_OFFSET(value: typings.escpos.escposInts.`3`): Self = StObject.set(x, "LEN_OFFSET", value.asInstanceOf[js.Any])
     
     inline def setLEVEL(value: OPTIONS): Self = StObject.set(x, "LEVEL", value.asInstanceOf[js.Any])
     

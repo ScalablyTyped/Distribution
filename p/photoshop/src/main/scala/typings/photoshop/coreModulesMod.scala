@@ -10,11 +10,11 @@ import typings.photoshop.anon.Message
 import typings.photoshop.anon.Name
 import typings.photoshop.anon.ResumeHistory
 import typings.photoshop.colorTypesMod.ColorDescriptor
-import typings.photoshop.photoshopNumbers.`15`
-import typings.photoshop.photoshopNumbers.`16`
-import typings.photoshop.photoshopNumbers.`4`
-import typings.photoshop.photoshopNumbers.`5`
-import typings.photoshop.photoshopNumbers.`6`
+import typings.photoshop.photoshopInts.`15`
+import typings.photoshop.photoshopInts.`16`
+import typings.photoshop.photoshopInts.`4`
+import typings.photoshop.photoshopInts.`5`
+import typings.photoshop.photoshopInts.`6`
 import typings.photoshop.photoshopStrings.execute
 import typings.photoshop.photoshopStrings.fail
 import typings.photoshop.photoshopStrings.rosetta2
@@ -305,11 +305,11 @@ object coreModulesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.photoshop.photoshopNumbers.`15`
-    - typings.photoshop.photoshopNumbers.`4`
-    - typings.photoshop.photoshopNumbers.`5`
-    - typings.photoshop.photoshopNumbers.`6`
-    - typings.photoshop.photoshopNumbers.`16`
+    - typings.photoshop.photoshopInts.`15`
+    - typings.photoshop.photoshopInts.`4`
+    - typings.photoshop.photoshopInts.`5`
+    - typings.photoshop.photoshopInts.`6`
+    - typings.photoshop.photoshopInts.`16`
   */
   trait ColorConversionModel extends StObject
   object ColorConversionModel {

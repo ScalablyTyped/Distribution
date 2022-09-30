@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ConditionalVisibilitySettings")
 @js.native
-class ConditionalVisibilitySettings protected ()
+open class ConditionalVisibilitySettings protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ConditionalVisibilitySettings {
   def this(
     model: AbstractModel,

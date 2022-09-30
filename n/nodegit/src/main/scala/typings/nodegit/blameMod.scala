@@ -2,12 +2,12 @@ package typings.nodegit
 
 import typings.nodegit.blameHunkMod.BlameHunk
 import typings.nodegit.blameOptionsMod.BlameOptions
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`16`
-import typings.nodegit.nodegitNumbers.`1`
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`8`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`16`
+import typings.nodegit.nodegitInts.`1`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`8`
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,12 +59,12 @@ object blameMod {
     inline def initOptions(opts: BlameOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`1`
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`8`
-      - typings.nodegit.nodegitNumbers.`16`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`1`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`8`
+      - typings.nodegit.nodegitInts.`16`
     */
     trait FLAG extends StObject
     object FLAG {

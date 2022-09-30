@@ -14,14 +14,13 @@ object ellipsisMod {
   
   @JSImport("ant-design-pro/lib/Ellipsis", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[EllipsisProps, js.Any, js.Any]
+  open class default () extends Component[EllipsisProps, Any, Any]
   
   inline def cutStrByFullLength(str: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cutStrByFullLength")(str.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getStrFullLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrFullLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  type Ellipsis = Component[EllipsisProps, js.Any, js.Any]
+  type Ellipsis = Component[EllipsisProps, Any, Any]
   
   trait EllipsisProps extends StObject {
     

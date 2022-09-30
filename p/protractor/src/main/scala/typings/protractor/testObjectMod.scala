@@ -10,7 +10,7 @@ object testObjectMod {
   
   @JSImport("protractor/built/driverProviders/testObject", "TestObject")
   @js.native
-  class TestObject protected () extends DriverProvider {
+  open class TestObject protected () extends DriverProvider {
     def this(config: Config) = this()
   }
 }

@@ -1,8 +1,8 @@
 package typings.nodeDhtSensor
 
 import typings.nodeDhtSensor.anon.Test
-import typings.nodeDhtSensor.nodeDhtSensorNumbers.`11`
-import typings.nodeDhtSensor.nodeDhtSensorNumbers.`22`
+import typings.nodeDhtSensor.nodeDhtSensorInts.`11`
+import typings.nodeDhtSensor.nodeDhtSensorInts.`22`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

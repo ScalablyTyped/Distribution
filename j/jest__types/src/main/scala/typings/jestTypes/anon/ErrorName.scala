@@ -1,9 +1,9 @@
 package typings.jestTypes.anon
 
-import typings.jestTypes.circusMod.AsyncEvent
-import typings.jestTypes.circusMod.Exception
-import typings.jestTypes.circusMod.TestEntry
 import typings.jestTypes.jestTypesStrings.test_fn_failure
+import typings.jestTypes.mod.AsyncEvent
+import typings.jestTypes.mod.Exception
+import typings.jestTypes.mod.TestEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

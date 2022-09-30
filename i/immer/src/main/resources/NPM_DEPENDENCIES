@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "immer" : "1.10.0"
+      "immer" : "9.0.15"
     }
   ],
   "test-dependencies" : [
     {
-      "immer" : "1.10.0"
+      "immer" : "9.0.15"
     }
   ],
   "compile-devDependencies" : [

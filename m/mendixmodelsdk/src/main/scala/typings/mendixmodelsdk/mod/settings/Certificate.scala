@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "settings.Certificate")
 @js.native
-class Certificate protected ()
+open class Certificate protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.Certificate {
   def this(
     model: AbstractModel,

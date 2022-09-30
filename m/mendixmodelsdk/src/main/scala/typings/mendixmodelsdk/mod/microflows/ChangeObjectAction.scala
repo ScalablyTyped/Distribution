@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.ChangeObjectAction")
 @js.native
-class ChangeObjectAction protected ()
+open class ChangeObjectAction protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ChangeObjectAction {
   def this(
     model: AbstractModel,

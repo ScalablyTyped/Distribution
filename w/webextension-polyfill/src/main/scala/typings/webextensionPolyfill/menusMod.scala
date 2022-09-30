@@ -5,7 +5,7 @@ import typings.std.Record
 import typings.webextensionPolyfill.eventsMod.Events.Event
 import typings.webextensionPolyfill.extensionMod.Extension.ViewType
 import typings.webextensionPolyfill.tabsMod.Tabs.Tab
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`6`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`6`
 import typings.webextensionPolyfill.webextensionPolyfillStrings._execute_action
 import typings.webextensionPolyfill.webextensionPolyfillStrings._execute_browser_action
 import typings.webextensionPolyfill.webextensionPolyfillStrings._execute_page_action

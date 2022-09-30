@@ -1,31 +1,29 @@
 package typings.styledComponents.anon
 
-import typings.std.ReturnType
-import typings.styledComponents.distTypesMod.IStyledComponentFactory
-import typings.styledComponents.distTypesMod.IStyledNativeComponentFactory
-import typings.styledComponents.distTypesMod.Interpolation
-import typings.styledComponents.distTypesMod.StyledNativeOptions
-import typings.styledComponents.distTypesMod.StyledOptions
-import typings.styledComponents.distTypesMod.Styles
-import typings.styledComponents.styledComponentsStrings.audio
-import typings.styledComponents.styledComponentsStrings.native
-import typings.styledComponents.styledComponentsStrings.web
+import typings.styledComponents.nativeDistTypesMod.Runtime
+import typings.styledComponents.nativeDistTypesMod.StyledTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `175`[OuterProps, Environment /* <: web | native */, // used for styled<{}>().attrs() so attrs() gets the generic prop context
-OuterStatics] extends StObject {
+trait `175`[ActualComponent /* <: StyledTarget[R] */, R /* <: Runtime */] extends StObject {
   
-  def apply[Props, Statics](initialStyles: Styles[OuterProps & Props], interpolations: (Interpolation[OuterProps & Props])*): ReturnType[
-    (IStyledNativeComponentFactory[audio, OuterProps & Props, OuterStatics & Statics]) | (IStyledComponentFactory[audio, OuterProps & Props, OuterStatics & Statics])
-  ] = js.native
+  @JSName("$as")
+  var $as: js.UndefOr[scala.Nothing] = js.undefined
   
-  def attrs(attrs: typings.styledComponents.distTypesMod.Attrs[OuterProps]): Any = js.native
+  var as: js.UndefOr[ActualComponent] = js.undefined
+}
+object `175` {
   
-  /**
-    * If config methods are called, wrap up a new template function and merge options */
-  @JSName("withConfig")
-  def withConfig_web(config: StyledNativeOptions[OuterProps] | StyledOptions[OuterProps]): Any = js.native
+  inline def apply[ActualComponent /* <: StyledTarget[R] */, R /* <: Runtime */](): `175`[ActualComponent, R] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`175`[ActualComponent, R]]
+  }
+  
+  extension [Self <: `175`[?, ?], ActualComponent /* <: StyledTarget[R] */, R /* <: Runtime */](x: Self & (`175`[ActualComponent, R])) {
+    
+    inline def setAs(value: ActualComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+  }
 }

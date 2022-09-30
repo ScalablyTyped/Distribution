@@ -24,7 +24,7 @@ object HistoryData {
     
     inline def setEntries(value: HistoryEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: Pathname*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: Pathname*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

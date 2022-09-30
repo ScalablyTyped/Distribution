@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.GroupBoxCollapsible")
 @js.native
-class GroupBoxCollapsible protected ()
+open class GroupBoxCollapsible protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.GroupBoxCollapsible {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

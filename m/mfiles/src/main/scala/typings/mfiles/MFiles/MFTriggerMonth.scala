@@ -1,36 +1,36 @@
 package typings.mfiles.MFiles
 
-import typings.mfiles.mfilesNumbers.`1024`
-import typings.mfiles.mfilesNumbers.`128`
-import typings.mfiles.mfilesNumbers.`16`
-import typings.mfiles.mfilesNumbers.`1`
-import typings.mfiles.mfilesNumbers.`2048`
-import typings.mfiles.mfilesNumbers.`256`
-import typings.mfiles.mfilesNumbers.`2`
-import typings.mfiles.mfilesNumbers.`32`
-import typings.mfiles.mfilesNumbers.`4095`
-import typings.mfiles.mfilesNumbers.`4`
-import typings.mfiles.mfilesNumbers.`512`
-import typings.mfiles.mfilesNumbers.`64`
-import typings.mfiles.mfilesNumbers.`8`
+import typings.mfiles.mfilesInts.`1024`
+import typings.mfiles.mfilesInts.`128`
+import typings.mfiles.mfilesInts.`16`
+import typings.mfiles.mfilesInts.`1`
+import typings.mfiles.mfilesInts.`2048`
+import typings.mfiles.mfilesInts.`256`
+import typings.mfiles.mfilesInts.`2`
+import typings.mfiles.mfilesInts.`32`
+import typings.mfiles.mfilesInts.`4095`
+import typings.mfiles.mfilesInts.`4`
+import typings.mfiles.mfilesInts.`512`
+import typings.mfiles.mfilesInts.`64`
+import typings.mfiles.mfilesInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.mfiles.mfilesNumbers.`1`
-  - typings.mfiles.mfilesNumbers.`2`
-  - typings.mfiles.mfilesNumbers.`4`
-  - typings.mfiles.mfilesNumbers.`8`
-  - typings.mfiles.mfilesNumbers.`16`
-  - typings.mfiles.mfilesNumbers.`32`
-  - typings.mfiles.mfilesNumbers.`64`
-  - typings.mfiles.mfilesNumbers.`128`
-  - typings.mfiles.mfilesNumbers.`256`
-  - typings.mfiles.mfilesNumbers.`512`
-  - typings.mfiles.mfilesNumbers.`1024`
-  - typings.mfiles.mfilesNumbers.`2048`
-  - typings.mfiles.mfilesNumbers.`4095`
+  - typings.mfiles.mfilesInts.`1`
+  - typings.mfiles.mfilesInts.`2`
+  - typings.mfiles.mfilesInts.`4`
+  - typings.mfiles.mfilesInts.`8`
+  - typings.mfiles.mfilesInts.`16`
+  - typings.mfiles.mfilesInts.`32`
+  - typings.mfiles.mfilesInts.`64`
+  - typings.mfiles.mfilesInts.`128`
+  - typings.mfiles.mfilesInts.`256`
+  - typings.mfiles.mfilesInts.`512`
+  - typings.mfiles.mfilesInts.`1024`
+  - typings.mfiles.mfilesInts.`2048`
+  - typings.mfiles.mfilesInts.`4095`
 */
 trait MFTriggerMonth extends StObject
 object MFTriggerMonth {

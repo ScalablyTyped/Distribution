@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/close-page relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CloseFormAction")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.CloseFormAction")
 @js.native
-class CloseFormAction protected () extends MicroflowAction {
+open class CloseFormAction protected () extends MicroflowAction {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -44,7 +44,7 @@ class CloseFormAction protected () extends MicroflowAction {
 }
 object CloseFormAction {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CloseFormAction")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.CloseFormAction")
   @js.native
   val ^ : js.Any = js.native
   
@@ -65,13 +65,13 @@ object CloseFormAction {
   inline def createIn(container: ActionActivity): CloseFormAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CloseFormAction]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CloseFormAction.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.CloseFormAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CloseFormAction.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.CloseFormAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

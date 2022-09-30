@@ -60,7 +60,7 @@ trait Body
   def clear(): Unit = js.native
   
   /**
-    * Gets the collection of rich text content control objects in the body. Read-only.
+    * Gets the collection of rich text content control objects in the body.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -72,7 +72,7 @@ trait Body
   var context_Body: RequestContext = js.native
   
   /**
-    * Gets the collection of endnotes in the body. Read-only.
+    * Gets the collection of endnotes in the body.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -80,7 +80,15 @@ trait Body
   val endnotes: NoteItemCollection = js.native
   
   /**
-    * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+    * Gets the collection of field objects in the body.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val fields: FieldCollection = js.native
+  
+  /**
+    * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -88,7 +96,7 @@ trait Body
   val font: Font = js.native
   
   /**
-    * Gets the collection of footnotes in the body. Read-only.
+    * Gets the collection of footnotes in the body.
     *
     * @remarks
     * [Api set: WordApiOnline 1.1]
@@ -99,7 +107,7 @@ trait Body
     * Gets comments associated with the body.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getComments(): CommentCollection = js.native
   
@@ -139,7 +147,7 @@ trait Body
     * Gets reviewed text based on ChangeTrackingVersion selection.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     *
     * @param changeTrackingVersion Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
     */
@@ -148,7 +156,7 @@ trait Body
   def getReviewedText(changeTrackingVersion: ChangeTrackingVersion): ClientResult[String] = js.native
   
   /**
-    * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+    * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -189,7 +197,13 @@ trait Body
   def insertContentControl(): ContentControl = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
+  def insertFileFromBase64(
+    base64File: String,
+    insertLocation: typings.officeJs.Word.InsertLocation.end,
+    asNewParagraph: Boolean
+  ): Range = js.native
   /**
     * Inserts a document into the body at the specified location.
     *
@@ -198,9 +212,16 @@ trait Body
     *
     * @param base64File Required. The base64 encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: replace): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
+  def insertFileFromBase64(
+    base64File: String,
+    insertLocation: typings.officeJs.Word.InsertLocation.start,
+    asNewParagraph: Boolean
+  ): Range = js.native
   
   def insertHtml(html: String, insertLocation: Replace | Start | End): Range = js.native
   def insertHtml(html: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
@@ -230,7 +251,9 @@ trait Body
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: typings.officeJs.Word.InsertLocation.start): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.end, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML at the specified location.
     *
@@ -239,9 +262,12 @@ trait Body
     *
     * @param ooxml Required. The OOXML to be inserted.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: replace): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: typings.officeJs.Word.InsertLocation.start, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Start | End): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: typings.officeJs.Word.InsertLocation.end): Paragraph = js.native
@@ -304,7 +330,7 @@ trait Body
   def insertText(text: String, insertLocation: typings.officeJs.Word.InsertLocation.start): Range = js.native
   
   /**
-    * Gets the collection of list objects in the body. Read-only.
+    * Gets the collection of list objects in the body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -323,7 +349,7 @@ trait Body
   def load(propertyNames: js.Array[String]): Body = js.native
   
   /**
-    * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+    * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -331,7 +357,7 @@ trait Body
   val paragraphs: ParagraphCollection = js.native
   
   /**
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body. Read-only.
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an `ItemNotFound` error if there isn't a parent body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -339,7 +365,7 @@ trait Body
   val parentBody: Body = js.native
   
   /**
-    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
+    * Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a parent body, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -347,7 +373,7 @@ trait Body
   val parentBodyOrNullObject: Body = js.native
   
   /**
-    * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -355,7 +381,7 @@ trait Body
   val parentContentControl: ContentControl = js.native
   
   /**
-    * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
+    * Gets the content control that contains the body. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -363,7 +389,7 @@ trait Body
   val parentContentControlOrNullObject: ContentControl = js.native
   
   /**
-    * Gets the parent section of the body. Throws an error if there isn't a parent section. Read-only.
+    * Gets the parent section of the body. Throws an `ItemNotFound` error if there isn't a parent section.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -371,7 +397,7 @@ trait Body
   val parentSection: Section = js.native
   
   /**
-    * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
+    * Gets the parent section of the body. If there isn't a parent section, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -430,7 +456,7 @@ trait Body
   var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ Any = js.native
   
   /**
-    * Gets the collection of table objects in the body. Read-only.
+    * Gets the collection of table objects in the body.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -438,7 +464,7 @@ trait Body
   val tables: TableCollection = js.native
   
   /**
-    * Gets the text of the body. Use the insertText method to insert text. Read-only.
+    * Gets the text of the body. Use the insertText method to insert text.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -457,7 +483,7 @@ trait Body
   def track(): Body = js.native
   
   /**
-    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
     *
     * @remarks
     * [Api set: WordApi 1.3]

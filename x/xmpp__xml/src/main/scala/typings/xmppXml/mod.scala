@@ -87,9 +87,9 @@ object mod {
     val name_XMLError: typings.xmppXml.xmppXmlStrings.XMLError = js.native
   }
   
-  inline def createElement(name: String, attrs: String, children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
-  inline def createElement(name: String, attrs: StringDictionary[Any], children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
-  inline def createElement(name: String, attrs: Unit, children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: String, children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: StringDictionary[Any], children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
+  inline def createElement(name: String, attrs: Unit, children: typings.ltx.srcElementMod.Node*): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[default]
   
   @JSImport("@xmpp/xml", "escapeXML")
   @js.native

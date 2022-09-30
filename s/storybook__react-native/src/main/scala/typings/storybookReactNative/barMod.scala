@@ -9,11 +9,11 @@ object barMod {
   
   @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/navigation/bar", JSImport.Default)
   @js.native
-  class default () extends Bar
+  open class default () extends Bar
   
   @js.native
   trait Bar
-    extends PureComponent[Props, js.Object, js.Any]
+    extends PureComponent[Props, js.Object, Any]
   
   trait Props extends StObject {
     

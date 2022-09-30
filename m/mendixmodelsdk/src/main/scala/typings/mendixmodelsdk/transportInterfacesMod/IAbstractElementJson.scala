@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IAbstractElementJson
   extends StObject
      with IStructureJson
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object IAbstractElementJson {
   
   inline def apply($ID: String, $Type: String): IAbstractElementJson = {

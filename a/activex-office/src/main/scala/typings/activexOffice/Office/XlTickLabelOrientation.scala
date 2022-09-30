@@ -1,20 +1,20 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`-4105`
-import typings.activexOffice.activexOfficeNumbers.`-4128`
-import typings.activexOffice.activexOfficeNumbers.`-4166`
-import typings.activexOffice.activexOfficeNumbers.`-4170`
-import typings.activexOffice.activexOfficeNumbers.`-4171`
+import typings.activexOffice.activexOfficeInts.`-4105`
+import typings.activexOffice.activexOfficeInts.`-4128`
+import typings.activexOffice.activexOfficeInts.`-4166`
+import typings.activexOffice.activexOfficeInts.`-4170`
+import typings.activexOffice.activexOfficeInts.`-4171`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`-4105`
-  - typings.activexOffice.activexOfficeNumbers.`-4170`
-  - typings.activexOffice.activexOfficeNumbers.`-4128`
-  - typings.activexOffice.activexOfficeNumbers.`-4171`
-  - typings.activexOffice.activexOfficeNumbers.`-4166`
+  - typings.activexOffice.activexOfficeInts.`-4105`
+  - typings.activexOffice.activexOfficeInts.`-4170`
+  - typings.activexOffice.activexOfficeInts.`-4128`
+  - typings.activexOffice.activexOfficeInts.`-4171`
+  - typings.activexOffice.activexOfficeInts.`-4166`
 */
 trait XlTickLabelOrientation extends StObject
 object XlTickLabelOrientation {

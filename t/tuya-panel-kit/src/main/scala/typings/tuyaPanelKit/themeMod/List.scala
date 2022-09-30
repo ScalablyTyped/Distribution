@@ -33,12 +33,12 @@ trait List extends StObject {
 }
 object List {
   
-  inline def apply(dark: ListTheme, light: ListTheme): List = {
+  inline def apply(dark: ListTheme, light: ListTheme): typings.tuyaPanelKit.themeMod.List = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.tuyaPanelKit.themeMod.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.tuyaPanelKit.themeMod.List](x: Self) {
     
     inline def setBoardBg(value: String): Self = StObject.set(x, "boardBg", value.asInstanceOf[js.Any])
     

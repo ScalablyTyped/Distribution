@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object monotonicInterpolantMod {
   
-  @JSImport("react-dnd-html5-backend/lib/MonotonicInterpolant", "MonotonicInterpolant")
+  @JSImport("react-dnd-html5-backend/dist/MonotonicInterpolant", "MonotonicInterpolant")
   @js.native
-  class MonotonicInterpolant protected () extends StObject {
+  open class MonotonicInterpolant protected () extends StObject {
     def this(xs: js.Array[Double], ys: js.Array[Double]) = this()
     
-    /* private */ var c1s: js.Any = js.native
+    /* private */ var c1s: Any = js.native
     
-    /* private */ var c2s: js.Any = js.native
+    /* private */ var c2s: Any = js.native
     
-    /* private */ var c3s: js.Any = js.native
+    /* private */ var c3s: Any = js.native
     
     def interpolate(x: Double): Double = js.native
     
-    /* private */ var xs: js.Any = js.native
+    /* private */ var xs: Any = js.native
     
-    /* private */ var ys: js.Any = js.native
+    /* private */ var ys: Any = js.native
   }
 }

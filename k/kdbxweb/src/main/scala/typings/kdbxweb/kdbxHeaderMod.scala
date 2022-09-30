@@ -3,7 +3,7 @@ package typings.kdbxweb
 import typings.kdbxweb.binaryStreamMod.BinaryStream
 import typings.kdbxweb.kdbxContextMod.KdbxContext
 import typings.kdbxweb.kdbxUuidMod.KdbxUuid
-import typings.kdbxweb.kdbxwebNumbers.`4`
+import typings.kdbxweb.kdbxwebInts.`4`
 import typings.kdbxweb.varDictionaryMod.VarDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

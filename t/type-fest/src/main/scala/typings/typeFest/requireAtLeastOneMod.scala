@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object requireAtLeastOneMod {
   
-  type RequireAtLeastOne[ObjectType, KeysType /* <: /* keyof ObjectType */ String */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in KeysType ]: // …by picking that Key's type and making it required
-  std.Required<std.Pick<ObjectType, Key>>}[KeysType] */ js.Any) & (Except[ObjectType, KeysType])
+  type RequireAtLeastOne[ObjectType, KeysType /* <: /* keyof ObjectType */ String */] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Key in KeysType ]: -? std.Required<std.Pick<ObjectType, Key>> & // 1. Make `Key`'s type required
+  // 2. Make all other keys in `KeysType` optional
+  std.Partial<std.Pick<ObjectType, std.Exclude<KeysType, Key>>>}[KeysType] */ js.Any) & (// 3. Add the remaining keys not in `KeysType`
+  Except[ObjectType, KeysType])
 }

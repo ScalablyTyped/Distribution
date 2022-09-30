@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jsYamlStrings {
   
   @js.native
-  sealed trait Apostrophe extends StObject
-  inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  
-  @js.native
   sealed trait Quotationmark extends StObject
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   

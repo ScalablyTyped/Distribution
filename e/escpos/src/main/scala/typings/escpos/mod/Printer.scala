@@ -5,9 +5,9 @@ import typings.escpos.anon.Cols
 import typings.escpos.anon.Encoding
 import typings.escpos.anon.Font
 import typings.escpos.anon.Mode
-import typings.escpos.escposNumbers.`0`
-import typings.escpos.escposNumbers.`1`
-import typings.escpos.escposNumbers.`2`
+import typings.escpos.escposInts.`0`
+import typings.escpos.escposInts.`1`
+import typings.escpos.escposInts.`2`
 import typings.escpos.escposStrings.A
 import typings.escpos.escposStrings.B
 import org.scalablytyped.runtime.StObject

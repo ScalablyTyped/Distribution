@@ -9,6 +9,7 @@ import typings.std.Exclude
 import typings.std.Generator
 import typings.std.GeneratorFunction
 import typings.std.IteratorResult
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +28,8 @@ object global {
       extends typings.regeneratorRuntime.mod.AsyncIterator[TYield, TReturn, TNext] {
       def this(
         generator: Generator[
-                TYield | js.Thenable[TYield] | typings.regeneratorRuntime.mod.awrap[Any], 
-                TReturn | js.Thenable[TReturn] | typings.regeneratorRuntime.mod.awrap[Any], 
+                TYield | PromiseLike[TYield] | typings.regeneratorRuntime.mod.awrap[Any], 
+                TReturn | PromiseLike[TReturn] | typings.regeneratorRuntime.mod.awrap[Any], 
                 Any
               ],
         PromiseImpl: ResolvablePromiseConstructorLike
@@ -332,8 +333,8 @@ object global {
           extends typings.regeneratorRuntime.mod.global.regeneratorRuntime.AsyncIterator[TYield, TReturn, TNext] {
           def this(
             generator: Generator[
-                        TYield | js.Thenable[TYield] | typings.regeneratorRuntime.mod.awrap[Any], 
-                        TReturn | js.Thenable[TReturn] | typings.regeneratorRuntime.mod.awrap[Any], 
+                        TYield | PromiseLike[TYield] | typings.regeneratorRuntime.mod.awrap[Any], 
+                        TReturn | PromiseLike[TReturn] | typings.regeneratorRuntime.mod.awrap[Any], 
                         Any
                       ],
             PromiseImpl: ResolvablePromiseConstructorLike

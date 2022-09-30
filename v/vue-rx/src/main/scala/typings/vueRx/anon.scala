@@ -93,9 +93,9 @@ import typings.vueRuntimeCore.mod.Renderer
 import typings.vueRuntimeCore.mod.RendererElement
 import typings.vueRuntimeCore.mod.RendererNode
 import typings.vueRuntimeCore.mod.RendererOptions
+import typings.vueRuntimeCore.mod.SSRSlot
 import typings.vueRuntimeCore.mod.SchedulerJobs
 import typings.vueRuntimeCore.mod.SetupContext
-import typings.vueRuntimeCore.mod.Slot
 import typings.vueRuntimeCore.mod.Slots
 import typings.vueRuntimeCore.mod.SuspenseProps
 import typings.vueRuntimeCore.mod.TeleportProps
@@ -481,9 +481,9 @@ object anon {
     def createSSRApp(rootComponent: Component[Any, Any, Any, ComputedOptions, MethodOptions], rootProps: Data): App[Element] = js.native
     
     def createSlots(
-      slots: Record[String, Slot],
+      slots: Record[String, SSRSlot],
       dynamicSlots: js.Array[js.UndefOr[CompiledSlotDescriptor | js.Array[CompiledSlotDescriptor]]]
-    ): Record[String, Slot] = js.native
+    ): Record[String, SSRSlot] = js.native
     
     def createStaticVNode(content: String, numberOfNodes: Double): VNode[RendererNode, RendererElement, StringDictionary[Any]] = js.native
     
@@ -1236,7 +1236,7 @@ object anon {
     def shallowRef[T](): ShallowRef_[js.UndefOr[T]] = js.native
     def shallowRef[T](value: T): ShallowRef_[T] = js.native
     @JSName("shallowRef")
-    def shallowRef_T_Object_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = js.native
+    def shallowRef_T_Union[T /* <: js.Object */](value: T): ShallowRef_[T] | T = js.native
     
     val ssrContextKey: js.Symbol = js.native
     

@@ -115,7 +115,6 @@ import typings.domHelpers.domHelpersStrings.webkitanimationstart
 import typings.domHelpers.domHelpersStrings.webkittransitionend
 import typings.domHelpers.domHelpersStrings.wheel
 import typings.domHelpers.transitionEndMod.Listener
-import typings.domHelpers.typesMod.CamelProperty
 import typings.domHelpers.typesMod.HyphenProperty
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleDeclaration
@@ -3933,8 +3932,6 @@ object mod {
     inline def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any]
     inline def style_=(x: FnCallNodeProperty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
-    
-    inline def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any]
     
     inline def text(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[String]
     inline def text(node: Null, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -8497,8 +8494,6 @@ object mod {
   
   inline def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any]
-  
-  inline def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any]
   
   inline def text(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[String]
   inline def text(node: Null, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]

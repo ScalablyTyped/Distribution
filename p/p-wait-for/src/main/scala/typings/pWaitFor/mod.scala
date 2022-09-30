@@ -1,5 +1,6 @@
 package typings.pWaitFor
 
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,12 +22,12 @@ object mod {
     	*/
     inline def apply[ResolveValueType](
       condition: js.Function0[
-          (js.Thenable[Boolean | ResolveValue[ResolveValueType]]) | Boolean | ResolveValue[ResolveValueType]
+          (PromiseLike[Boolean | ResolveValue[ResolveValueType]]) | Boolean | ResolveValue[ResolveValueType]
         ]
     ): js.Promise[ResolveValueType] = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResolveValueType]]
     inline def apply[ResolveValueType](
       condition: js.Function0[
-          (js.Thenable[Boolean | ResolveValue[ResolveValueType]]) | Boolean | ResolveValue[ResolveValueType]
+          (PromiseLike[Boolean | ResolveValue[ResolveValueType]]) | Boolean | ResolveValue[ResolveValueType]
         ],
       options: Options[ResolveValueType]
     ): js.Promise[ResolveValueType] = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolveValueType]]

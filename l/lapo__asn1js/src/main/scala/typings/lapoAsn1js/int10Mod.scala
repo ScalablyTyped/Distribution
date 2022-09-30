@@ -1,6 +1,6 @@
 package typings.lapoAsn1js
 
-import typings.lapoAsn1js.lapoAsn1jsNumbers.`10`
+import typings.lapoAsn1js.lapoAsn1jsInts.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

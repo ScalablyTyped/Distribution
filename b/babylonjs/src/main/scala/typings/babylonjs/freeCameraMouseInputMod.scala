@@ -27,7 +27,7 @@ object freeCameraMouseInputMod {
     touchEnabled: Boolean) = this()
     
     /**
-      * @hidden
+      * @internal
       * If the camera should be rotated automatically based on pointer movement
       */
     var _allowCameraRotation: Boolean = js.native

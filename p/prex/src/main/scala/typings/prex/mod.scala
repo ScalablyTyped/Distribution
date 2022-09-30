@@ -3,6 +3,7 @@ package typings.prex
 import typings.esfxCancelable.mod.Cancelable
 import typings.prex.cancellationMod.AbortSignalLike
 import typings.prex.cancellationMod.VSCodeCancellationTokenLike
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ object mod {
     */
   open class AsyncBoundedQueue[T] ()
     extends typings.prex.boundedQueueMod.AsyncBoundedQueue[T] {
-    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
+    def this(iterable: js.Iterable[T | PromiseLike[T]]) = this()
   }
   
   @JSImport("prex", "AsyncQueue")
@@ -34,7 +35,7 @@ object mod {
     */
   open class AsyncQueue[T] ()
     extends typings.prex.queueMod.AsyncQueue[T] {
-    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
+    def this(iterable: js.Iterable[T | PromiseLike[T]]) = this()
   }
   
   @JSImport("prex", "AsyncStack")
@@ -46,7 +47,7 @@ object mod {
     */
   open class AsyncStack[T] ()
     extends typings.prex.stackMod.AsyncStack[T] {
-    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
+    def this(iterable: js.Iterable[T | PromiseLike[T]]) = this()
   }
   
   @JSImport("prex", "AutoResetEvent")
@@ -74,7 +75,7 @@ object mod {
     def this(participantCount: Double) = this()
     def this(
       participantCount: Double,
-      postPhaseAction: js.Function1[/* barrier */ typings.prex.barrierMod.Barrier, Unit | js.Thenable[Unit]]
+      postPhaseAction: js.Function1[/* barrier */ typings.prex.barrierMod.Barrier, Unit | PromiseLike[Unit]]
     ) = this()
   }
   
@@ -210,9 +211,9 @@ object mod {
   inline def delay(token: Cancelable, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def delay(token: typings.prex.cancellationMod.CancellationToken, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def delay[T](msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](msec: Double, value: PromiseLike[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](token: Cancelable, msec: Double, value: PromiseLike[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: PromiseLike[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }

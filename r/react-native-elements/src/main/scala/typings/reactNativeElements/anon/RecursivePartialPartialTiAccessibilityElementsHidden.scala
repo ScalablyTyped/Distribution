@@ -98,7 +98,7 @@ trait RecursivePartialPartialTiAccessibilityElementsHidden extends StObject {
   
   var delayPressOut: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | Null]]] = js.undefined
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var featured: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
@@ -180,7 +180,7 @@ trait RecursivePartialPartialTiAccessibilityElementsHidden extends StObject {
   
   var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean | Null]]] = js.undefined
+  var touchSoundDisabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
   var tvParallaxProperties: js.UndefOr[RecursivePartial[js.UndefOr[TVParallaxProperties]]] = js.undefined
   
@@ -289,7 +289,7 @@ object RecursivePartialPartialTiAccessibilityElementsHidden {
     
     inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
     
-    inline def setDisabled(value: RecursivePartial[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
@@ -442,7 +442,7 @@ object RecursivePartialPartialTiAccessibilityElementsHidden {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTouchSoundDisabled(value: RecursivePartial[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
+    inline def setTouchSoundDisabled(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

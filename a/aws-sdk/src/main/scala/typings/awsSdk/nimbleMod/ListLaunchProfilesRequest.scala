@@ -17,7 +17,7 @@ trait ListLaunchProfilesRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The principal ID. This currently supports a Amazon Web Services SSO UserId. 
+    * The principal ID. This currently supports a IAM Identity Center UserId. 
     */
   var principalId: js.UndefOr[String] = js.undefined
   

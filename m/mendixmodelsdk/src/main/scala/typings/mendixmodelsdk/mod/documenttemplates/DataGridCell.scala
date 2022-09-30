@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.DataGridCell")
 @js.native
-class DataGridCell protected ()
+open class DataGridCell protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.DataGridCell {
   def this(
     model: AbstractModel,

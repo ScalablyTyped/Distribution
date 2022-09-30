@@ -1,9 +1,9 @@
 package typings.powerbiVisualsTools.mod
 
 import typings.powerbiVisualsTools.mod.jsCommon.IStringResourceProvider
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`0`
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`2`
-import typings.powerbiVisualsTools.powerbiVisualsToolsNumbers.`3`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`0`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`2`
+import typings.powerbiVisualsTools.powerbiVisualsToolsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

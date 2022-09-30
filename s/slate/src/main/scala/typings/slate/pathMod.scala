@@ -1,9 +1,9 @@
 package typings.slate
 
 import typings.slate.operationMod.Operation
-import typings.slate.slateNumbers.`-1`
-import typings.slate.slateNumbers.`0`
-import typings.slate.slateNumbers.`1`
+import typings.slate.slateInts.`-1`
+import typings.slate.slateInts.`0`
+import typings.slate.slateInts.`1`
 import typings.slate.typesMod.TextDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

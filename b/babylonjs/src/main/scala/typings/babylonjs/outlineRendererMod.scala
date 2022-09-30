@@ -116,10 +116,10 @@ object outlineRendererMod {
     
     trait AbstractMesh extends StObject {
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _renderOutline: Boolean
       
-      /** @hidden (Backing field) */
+      /** @internal (Backing field) */
       var _renderOverlay: Boolean
       
       /**
@@ -159,7 +159,7 @@ object outlineRendererMod {
     
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _outlineRenderer: OutlineRenderer
       
       /**

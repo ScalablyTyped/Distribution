@@ -24,6 +24,6 @@ object FailedCount {
     
     inline def setSpecResults(value: js.Array[SpecResult]): Self = StObject.set(x, "specResults", value.asInstanceOf[js.Any])
     
-    inline def setSpecResultsVarargs(value: SpecResult*): Self = StObject.set(x, "specResults", js.Array(value :_*))
+    inline def setSpecResultsVarargs(value: SpecResult*): Self = StObject.set(x, "specResults", js.Array(value*))
   }
 }

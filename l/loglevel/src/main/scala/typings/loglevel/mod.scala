@@ -2,12 +2,12 @@ package typings.loglevel
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.loglevel.loglevelNumbers.`0`
-import typings.loglevel.loglevelNumbers.`1`
-import typings.loglevel.loglevelNumbers.`2`
-import typings.loglevel.loglevelNumbers.`3`
-import typings.loglevel.loglevelNumbers.`4`
-import typings.loglevel.loglevelNumbers.`5`
+import typings.loglevel.loglevelInts.`0`
+import typings.loglevel.loglevelInts.`1`
+import typings.loglevel.loglevelInts.`2`
+import typings.loglevel.loglevelInts.`3`
+import typings.loglevel.loglevelInts.`4`
+import typings.loglevel.loglevelInts.`5`
 import typings.loglevel.loglevelStrings.debug_
 import typings.loglevel.loglevelStrings.error_
 import typings.loglevel.loglevelStrings.info_
@@ -69,12 +69,12 @@ object mod extends Shortcut {
     */
   /* Inlined loglevel.loglevel.LogLevelNumbers | 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'silent' | keyof loglevel.loglevel.LogLevel */
   /* Rewritten from type alias, can be one of: 
-    - typings.loglevel.loglevelNumbers.`3`
-    - typings.loglevel.loglevelNumbers.`2`
-    - typings.loglevel.loglevelNumbers.`4`
-    - typings.loglevel.loglevelNumbers.`0`
-    - typings.loglevel.loglevelNumbers.`5`
-    - typings.loglevel.loglevelNumbers.`1`
+    - typings.loglevel.loglevelInts.`3`
+    - typings.loglevel.loglevelInts.`2`
+    - typings.loglevel.loglevelInts.`4`
+    - typings.loglevel.loglevelInts.`0`
+    - typings.loglevel.loglevelInts.`5`
+    - typings.loglevel.loglevelInts.`1`
     - typings.loglevel.loglevelStrings.DEBUG
     - typings.loglevel.loglevelStrings.info_
     - typings.loglevel.loglevelStrings.INFO
@@ -91,17 +91,17 @@ object mod extends Shortcut {
   trait LogLevelDesc extends StObject
   object LogLevelDesc {
     
-    inline def `0`: typings.loglevel.loglevelNumbers.`0` = 0.asInstanceOf[typings.loglevel.loglevelNumbers.`0`]
+    inline def `0`: typings.loglevel.loglevelInts.`0` = 0.asInstanceOf[typings.loglevel.loglevelInts.`0`]
     
-    inline def `1`: typings.loglevel.loglevelNumbers.`1` = 1.asInstanceOf[typings.loglevel.loglevelNumbers.`1`]
+    inline def `1`: typings.loglevel.loglevelInts.`1` = 1.asInstanceOf[typings.loglevel.loglevelInts.`1`]
     
-    inline def `2`: typings.loglevel.loglevelNumbers.`2` = 2.asInstanceOf[typings.loglevel.loglevelNumbers.`2`]
+    inline def `2`: typings.loglevel.loglevelInts.`2` = 2.asInstanceOf[typings.loglevel.loglevelInts.`2`]
     
-    inline def `3`: typings.loglevel.loglevelNumbers.`3` = 3.asInstanceOf[typings.loglevel.loglevelNumbers.`3`]
+    inline def `3`: typings.loglevel.loglevelInts.`3` = 3.asInstanceOf[typings.loglevel.loglevelInts.`3`]
     
-    inline def `4`: typings.loglevel.loglevelNumbers.`4` = 4.asInstanceOf[typings.loglevel.loglevelNumbers.`4`]
+    inline def `4`: typings.loglevel.loglevelInts.`4` = 4.asInstanceOf[typings.loglevel.loglevelInts.`4`]
     
-    inline def `5`: typings.loglevel.loglevelNumbers.`5` = 5.asInstanceOf[typings.loglevel.loglevelNumbers.`5`]
+    inline def `5`: typings.loglevel.loglevelInts.`5` = 5.asInstanceOf[typings.loglevel.loglevelInts.`5`]
     
     inline def DEBUG: typings.loglevel.loglevelStrings.DEBUG = "DEBUG".asInstanceOf[typings.loglevel.loglevelStrings.DEBUG]
     
@@ -133,27 +133,27 @@ object mod extends Shortcut {
     */
   /* Inlined loglevel.loglevel.LogLevel[keyof loglevel.loglevel.LogLevel] */
   /* Rewritten from type alias, can be one of: 
-    - typings.loglevel.loglevelNumbers.`3`
-    - typings.loglevel.loglevelNumbers.`2`
-    - typings.loglevel.loglevelNumbers.`4`
-    - typings.loglevel.loglevelNumbers.`0`
-    - typings.loglevel.loglevelNumbers.`5`
-    - typings.loglevel.loglevelNumbers.`1`
+    - typings.loglevel.loglevelInts.`3`
+    - typings.loglevel.loglevelInts.`2`
+    - typings.loglevel.loglevelInts.`4`
+    - typings.loglevel.loglevelInts.`0`
+    - typings.loglevel.loglevelInts.`5`
+    - typings.loglevel.loglevelInts.`1`
   */
   trait LogLevelNumbers extends StObject
   object LogLevelNumbers {
     
-    inline def `0`: typings.loglevel.loglevelNumbers.`0` = 0.asInstanceOf[typings.loglevel.loglevelNumbers.`0`]
+    inline def `0`: typings.loglevel.loglevelInts.`0` = 0.asInstanceOf[typings.loglevel.loglevelInts.`0`]
     
-    inline def `1`: typings.loglevel.loglevelNumbers.`1` = 1.asInstanceOf[typings.loglevel.loglevelNumbers.`1`]
+    inline def `1`: typings.loglevel.loglevelInts.`1` = 1.asInstanceOf[typings.loglevel.loglevelInts.`1`]
     
-    inline def `2`: typings.loglevel.loglevelNumbers.`2` = 2.asInstanceOf[typings.loglevel.loglevelNumbers.`2`]
+    inline def `2`: typings.loglevel.loglevelInts.`2` = 2.asInstanceOf[typings.loglevel.loglevelInts.`2`]
     
-    inline def `3`: typings.loglevel.loglevelNumbers.`3` = 3.asInstanceOf[typings.loglevel.loglevelNumbers.`3`]
+    inline def `3`: typings.loglevel.loglevelInts.`3` = 3.asInstanceOf[typings.loglevel.loglevelInts.`3`]
     
-    inline def `4`: typings.loglevel.loglevelNumbers.`4` = 4.asInstanceOf[typings.loglevel.loglevelNumbers.`4`]
+    inline def `4`: typings.loglevel.loglevelInts.`4` = 4.asInstanceOf[typings.loglevel.loglevelInts.`4`]
     
-    inline def `5`: typings.loglevel.loglevelNumbers.`5` = 5.asInstanceOf[typings.loglevel.loglevelNumbers.`5`]
+    inline def `5`: typings.loglevel.loglevelInts.`5` = 5.asInstanceOf[typings.loglevel.loglevelInts.`5`]
   }
   
   @js.native

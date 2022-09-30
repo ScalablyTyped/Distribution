@@ -3,7 +3,7 @@ package typings.reactFlagIconCss
 import org.scalablytyped.runtime.StringDictionary
 import typings.csstype.mod.Properties
 import typings.csstype.mod.PropertiesHyphen
-import typings.reactFlagIconCss.reactFlagIconCssNumbers.`0`
+import typings.reactFlagIconCss.reactFlagIconCssInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

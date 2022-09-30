@@ -13,7 +13,7 @@ trait PostProcess extends StObject {
   
   /**
     * The index in _textures that corresponds to the output texture.
-    * @hidden
+    * @internal
     */
   var _currentRenderTextureInd: Double = js.native
   
@@ -27,7 +27,7 @@ trait PostProcess extends StObject {
   
   /* private */ var _flushTextureCache: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _forcedOutputTexture: Nullable[RenderTargetWrapper] = js.native
   
   /* private */ var _fragmentUrl: Any = js.native
@@ -48,20 +48,20 @@ trait PostProcess extends StObject {
   
   /**
     * Internal, reference to the location where this postprocess was output to. (Typically the texture on the next postprocess in the chain)
-    * @hidden
+    * @internal
     */
   var _outputTexture: Nullable[RenderTargetWrapper] = js.native
   
   /* private */ var _parameters: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _parentContainer: Nullable[AbstractScene] = js.native
   
   /* protected */ var _postProcessDefines: Nullable[String] = js.native
   
   /**
     * Prepass configuration in case this post process needs a texture from prepass
-    * @hidden
+    * @internal
     */
   var _prePassEffectConfiguration: PrePassEffectConfiguration = js.native
   
@@ -85,7 +85,7 @@ trait PostProcess extends StObject {
   
   /**
     * Smart array of input and output textures for the post process.
-    * @hidden
+    * @internal
     */
   /* private */ var _textureCache: Any = js.native
   
@@ -95,7 +95,7 @@ trait PostProcess extends StObject {
   
   /**
     * Smart array of input and output textures for the post process.
-    * @hidden
+    * @internal
     */
   var _textures: SmartArray[RenderTargetWrapper] = js.native
   

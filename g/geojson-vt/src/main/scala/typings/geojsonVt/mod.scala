@@ -2,13 +2,10 @@ package typings.geojsonVt
 
 import typings.geojson.mod.GeoJSON
 import typings.geojson.mod.GeoJsonGeometryTypes
-import typings.geojsonVt.anon.RecordnumberTile
-import typings.geojsonVt.anon.Recordznumbernumber
 import typings.geojsonVt.geojsonVtBooleans.`false`
-import typings.geojsonVt.geojsonVtNumbers.`0`
-import typings.geojsonVt.geojsonVtNumbers.`1`
-import typings.geojsonVt.geojsonVtNumbers.`2`
-import typings.geojsonVt.geojsonVtStrings.$LeftcurlybracketnumberRightcurlybracket
+import typings.geojsonVt.geojsonVtInts.`0`
+import typings.geojsonVt.geojsonVtInts.`1`
+import typings.geojsonVt.geojsonVtInts.`2`
 import typings.geojsonVt.geojsonVtStrings.GeometryCollection
 import typings.std.Exclude
 import typings.std.Record
@@ -73,7 +70,7 @@ object mod {
     /**
       * A feature MAY contain an id field. If a feature has an id field, the value of the id SHOULD be unique among the features of the parent layer.
       */
-    var id: js.UndefOr[$LeftcurlybracketnumberRightcurlybracket] = js.undefined
+    var id: js.UndefOr[/* template literal string: ${number} */ String] = js.undefined
     
     /**
       * A feature MAY contain a tags field. Feature-level metadata, if any, SHOULD be stored in the tags field.
@@ -99,7 +96,7 @@ object mod {
       
       inline def setGeometryVarargs(value: Geometry*): Self = StObject.set(x, "geometry", js.Array(value*))
       
-      inline def setId(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
@@ -145,7 +142,7 @@ object mod {
       */
     def splitTile(features: Tile, z: Double, x: Double, y: Double, cz: Double, cx: Double, cy: Double): Unit = js.native
     
-    var stats: Recordznumbernumber = js.native
+    var stats: Record[/* template literal string: z${number} */ String, Double] = js.native
     
     var tileCoords: TileCoords = js.native
     
@@ -153,7 +150,7 @@ object mod {
       * Resulting tiles conform to the JSON equivalent of the vector tile specification.
       * https://github.com/mapbox/vector-tile-spec/
       */
-    var tiles: RecordnumberTile = js.native
+    var tiles: Record[/* template literal string: ${number} */ String, Tile] = js.native
     
     var total: Double = js.native
   }

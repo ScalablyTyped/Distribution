@@ -40,11 +40,11 @@ object createDriverFactoryMod {
     
     var eventTrigger: TypeofSimulate
     
-    var wrapper: js.Any
+    var wrapper: Any
   }
   object ComponentFactory {
     
-    inline def apply(eventTrigger: TypeofSimulate, wrapper: js.Any): ComponentFactory = {
+    inline def apply(eventTrigger: TypeofSimulate, wrapper: Any): ComponentFactory = {
       val __obj = js.Dynamic.literal(eventTrigger = eventTrigger.asInstanceOf[js.Any], wrapper = wrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentFactory]
     }
@@ -61,7 +61,7 @@ object createDriverFactoryMod {
       
       inline def setEventTrigger(value: TypeofSimulate): Self = StObject.set(x, "eventTrigger", value.asInstanceOf[js.Any])
       
-      inline def setWrapper(value: js.Any): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: Any): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
   

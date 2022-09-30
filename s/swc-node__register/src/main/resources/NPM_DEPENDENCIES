@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@swc-node/register" : "1.5.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@swc-node/register" : "1.5.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

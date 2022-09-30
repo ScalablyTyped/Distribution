@@ -54,6 +54,7 @@ import typings.grommet.rangeInputMod.RangeInputExtendedProps
 import typings.grommet.rangeSelectorMod.RangeSelectorProps
 import typings.grommet.routedButtonMod.RoutedButtonProps
 import typings.grommet.selectMod.SelectExtendedProps
+import typings.grommet.selectMultipleMod.SelectMultipleExtendedProps
 import typings.grommet.sidebarMod.SidebarExtendedProps
 import typings.grommet.skipLinkMod.SkipLinkProps
 import typings.grommet.skipLinkTargetMod.SkipLinkTargetProps
@@ -357,6 +358,10 @@ object componentsMod {
   @JSImport("grommet/components", "Select")
   @js.native
   val Select: FC[SelectExtendedProps] = js.native
+  
+  @JSImport("grommet/components", "SelectMultiple")
+  @js.native
+  val SelectMultiple: FC[SelectMultipleExtendedProps] = js.native
   
   @JSImport("grommet/components", "Sidebar")
   @js.native

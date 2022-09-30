@@ -17,7 +17,7 @@ object taskMod {
   
   @JSImport("google-gax/build/src/bundlingCalls/task", "Task")
   @js.native
-  class Task protected () extends StObject {
+  open class Task protected () extends StObject {
     /**
       * A task coordinates the execution of a single bundle.
       *
@@ -87,8 +87,8 @@ object taskMod {
     def run(): js.Array[String] = js.native
   }
   
-  inline def deepCopyForResponse(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def deepCopyForResponse(obj: js.Any, subresponseInfo: SubResponseInfo): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any], subresponseInfo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deepCopyForResponse(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def deepCopyForResponse(obj: Any, subresponseInfo: SubResponseInfo): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any], subresponseInfo.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait SubResponseInfo extends StObject {
     
@@ -154,7 +154,7 @@ object taskMod {
       
       inline def setElements(value: js.Array[js.Object]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setElementsVarargs(value: js.Object*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: js.Object*): Self = StObject.set(x, "elements", js.Array(value*))
     }
   }
 }

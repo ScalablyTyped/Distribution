@@ -6,10 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataRepositoryTask extends StObject {
   
+  /**
+    * Specifies the amount of data to release, in GiB, by an Amazon File Cache AUTO_RELEASE_DATA task that automatically releases files from the cache.
+    */
+  var CapacityToRelease: js.UndefOr[typings.awsSdk.fsxMod.CapacityToRelease] = js.undefined
+  
   var CreationTime: js.Date
   
   /**
-    * The time that Amazon FSx completed processing the task, populated after the task is complete.
+    * The time the system completed processing the task, populated after the task is complete.
     */
   var EndTime: js.UndefOr[js.Date] = js.undefined
   
@@ -18,15 +23,23 @@ trait DataRepositoryTask extends StObject {
     */
   var FailureDetails: js.UndefOr[DataRepositoryTaskFailureDetails] = js.undefined
   
-  var FileSystemId: typings.awsSdk.fsxMod.FileSystemId
+  /**
+    * The system-generated, unique ID of the cache.
+    */
+  var FileCacheId: js.UndefOr[typings.awsSdk.fsxMod.FileCacheId] = js.undefined
   
   /**
-    * The lifecycle status of the data repository task, as follows:    PENDING - Amazon FSx has not started the task.    EXECUTING - Amazon FSx is processing the task.    FAILED - Amazon FSx was not able to complete the task. For example, there may be files the task failed to process. The DataRepositoryTaskFailureDetails property provides more information about task failures.    SUCCEEDED - FSx completed the task successfully.    CANCELED - Amazon FSx canceled the task and it did not complete.    CANCELING - FSx is in process of canceling the task.    You cannot delete an FSx for Lustre file system if there are data repository tasks for the file system in the PENDING or EXECUTING states. Please retry when the data repository task is finished (with a status of CANCELED, SUCCEEDED, or FAILED). You can use the DescribeDataRepositoryTask action to monitor the task status. Contact the FSx team if you need to delete your file system immediately. 
+    * The globally unique ID of the file system.
+    */
+  var FileSystemId: js.UndefOr[typings.awsSdk.fsxMod.FileSystemId] = js.undefined
+  
+  /**
+    * The lifecycle status of the data repository task, as follows:    PENDING - The task has not started.    EXECUTING - The task is in process.    FAILED - The task was not able to be completed. For example, there may be files the task failed to process. The DataRepositoryTaskFailureDetails property provides more information about task failures.    SUCCEEDED - The task has completed successfully.    CANCELED - The task was canceled and it did not complete.    CANCELING - The task is in process of being canceled.    You cannot delete an FSx for Lustre file system if there are data repository tasks for the file system in the PENDING or EXECUTING states. Please retry when the data repository task is finished (with a status of CANCELED, SUCCEEDED, or FAILED). You can use the DescribeDataRepositoryTask action to monitor the task status. Contact the FSx team if you need to delete your file system immediately. 
     */
   var Lifecycle: DataRepositoryTaskLifecycle
   
   /**
-    * An array of paths on the Amazon FSx for Lustre file system that specify the data for the data repository task to process. For example, in an EXPORT_TO_REPOSITORY task, the paths specify which data to export to the linked data repository. (Default) If Paths is not specified, Amazon FSx uses the file system root directory.
+    * An array of paths that specify the data for the data repository task to process. For example, in an EXPORT_TO_REPOSITORY task, the paths specify which data to export to the linked data repository. (Default) If Paths is not specified, Amazon FSx uses the file system root directory.
     */
   var Paths: js.UndefOr[DataRepositoryTaskPaths] = js.undefined
   
@@ -35,7 +48,7 @@ trait DataRepositoryTask extends StObject {
   var ResourceARN: js.UndefOr[typings.awsSdk.fsxMod.ResourceARN] = js.undefined
   
   /**
-    * The time that Amazon FSx began processing the task.
+    * The time the system began processing the task.
     */
   var StartTime: js.UndefOr[js.Date] = js.undefined
   
@@ -52,7 +65,7 @@ trait DataRepositoryTask extends StObject {
   var TaskId: typings.awsSdk.fsxMod.TaskId
   
   /**
-    * The type of data repository task.   The EXPORT_TO_REPOSITORY data repository task exports from your Lustre file system from to a linked S3 bucket.   The IMPORT_METADATA_FROM_REPOSITORY data repository task imports metadata changes from a linked S3 bucket to your Lustre file system.  
+    * The type of data repository task.    EXPORT_TO_REPOSITORY tasks export from your Amazon FSx for Lustre file system to a linked data repository.    IMPORT_METADATA_FROM_REPOSITORY tasks import metadata changes from a linked S3 bucket to your Amazon FSx for Lustre file system.    AUTO_RELEASE_DATA tasks automatically release files from an Amazon File Cache resource.  
     */
   var Type: DataRepositoryTaskType
 }
@@ -60,16 +73,19 @@ object DataRepositoryTask {
   
   inline def apply(
     CreationTime: js.Date,
-    FileSystemId: FileSystemId,
     Lifecycle: DataRepositoryTaskLifecycle,
     TaskId: TaskId,
     Type: DataRepositoryTaskType
   ): DataRepositoryTask = {
-    val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], FileSystemId = FileSystemId.asInstanceOf[js.Any], Lifecycle = Lifecycle.asInstanceOf[js.Any], TaskId = TaskId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], Lifecycle = Lifecycle.asInstanceOf[js.Any], TaskId = TaskId.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRepositoryTask]
   }
   
   extension [Self <: DataRepositoryTask](x: Self) {
+    
+    inline def setCapacityToRelease(value: CapacityToRelease): Self = StObject.set(x, "CapacityToRelease", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityToReleaseUndefined: Self = StObject.set(x, "CapacityToRelease", js.undefined)
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
@@ -81,7 +97,13 @@ object DataRepositoryTask {
     
     inline def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
+    inline def setFileCacheId(value: FileCacheId): Self = StObject.set(x, "FileCacheId", value.asInstanceOf[js.Any])
+    
+    inline def setFileCacheIdUndefined: Self = StObject.set(x, "FileCacheId", js.undefined)
+    
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    
+    inline def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
     inline def setLifecycle(value: DataRepositoryTaskLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

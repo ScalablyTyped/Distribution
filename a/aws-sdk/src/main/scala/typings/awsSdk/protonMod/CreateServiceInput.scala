@@ -22,7 +22,7 @@ trait CreateServiceInput extends StObject {
   var name: ResourceName
   
   /**
-    * The Amazon Resource Name (ARN) of the repository connection. For more information, see Set up repository connection in the Proton Administrator Guide and Setting up with Proton in the Proton User Guide. Don't include this parameter if your service template doesn't include a service pipeline.
+    * The Amazon Resource Name (ARN) of the repository connection. For more information, see Setting up an AWS CodeStar connection in the Proton User Guide. Don't include this parameter if your service template doesn't include a service pipeline.
     */
   var repositoryConnectionArn: js.UndefOr[Arn] = js.undefined
   
@@ -32,12 +32,12 @@ trait CreateServiceInput extends StObject {
   var repositoryId: js.UndefOr[RepositoryId] = js.undefined
   
   /**
-    * A link to a spec file that provides inputs as defined in the service template bundle schema file. The spec file is in YAML format. Don’t include pipeline inputs in the spec if your service template doesn’t include a service pipeline. For more information, see Create a service in the Proton Administrator Guide and Create a service in the Proton User Guide.
+    * A link to a spec file that provides inputs as defined in the service template bundle schema file. The spec file is in YAML format. Don’t include pipeline inputs in the spec if your service template doesn’t include a service pipeline. For more information, see Create a service in the Proton User Guide.
     */
   var spec: SpecContents
   
   /**
-    * An optional list of metadata items that you can associate with the Proton service. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton Administrator Guide or Proton User Guide.
+    * An optional list of metadata items that you can associate with the Proton service. A tag is a key-value pair. For more information, see Proton resources and tagging in the Proton User Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   

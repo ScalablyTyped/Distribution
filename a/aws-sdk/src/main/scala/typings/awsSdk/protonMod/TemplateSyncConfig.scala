@@ -12,7 +12,7 @@ trait TemplateSyncConfig extends StObject {
   var branch: GitBranchName
   
   /**
-    * The name of the repository, for example myrepos/myrepo.
+    * The repository name (for example, myrepos/myrepo).
     */
   var repositoryName: RepositoryName
   

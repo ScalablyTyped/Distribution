@@ -32,7 +32,7 @@ trait CreateWorkspaceImageResult extends StObject {
   var OperatingSystem: js.UndefOr[typings.awsSdk.workspacesMod.OperatingSystem] = js.undefined
   
   /**
-    * The identifier of the AWS account that owns the image.
+    * The identifier of the Amazon Web Services account that owns the image.
     */
   var OwnerAccountId: js.UndefOr[AwsAccount] = js.undefined
   

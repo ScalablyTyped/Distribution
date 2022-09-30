@@ -29,7 +29,7 @@ object dialogMod {
   
   inline def addContext(name: String, modalContext: DialogContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContext")(name.asInstanceOf[js.Any], modalContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def close(obj: Any, results: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(List(obj.asInstanceOf[js.Any]).`++`(results.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def close(obj: Any, results: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(scala.List(obj.asInstanceOf[js.Any]).`++`(results.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("plugins/dialog", "currentZIndex")
   @js.native

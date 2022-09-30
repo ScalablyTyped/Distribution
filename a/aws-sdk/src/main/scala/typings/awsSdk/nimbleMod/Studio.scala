@@ -32,7 +32,7 @@ trait Studio extends StObject {
   var homeRegion: js.UndefOr[Region] = js.undefined
   
   /**
-    * The Amazon Web Services SSO application client ID used to integrate with Amazon Web Services SSO to enable Amazon Web Services SSO users to log in to Nimble Studio portal.
+    * The IAM Identity Center application client ID used to integrate with IAM Identity Center to enable IAM Identity Center users to log in to Nimble Studio portal.
     */
   var ssoClientId: js.UndefOr[String] = js.undefined
   

@@ -1,18 +1,17 @@
 package typings.antd
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object titleMod {
+object titleMod extends Shortcut {
   
-  @JSImport("antd/lib/skeleton/Title", JSImport.Namespace)
+  @JSImport("antd/lib/skeleton/Title", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(hasPrefixClsClassNameWidthStyle: SkeletonTitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsClassNameWidthStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  val default: FC[SkeletonTitleProps] = js.native
   
   trait SkeletonTitleProps extends StObject {
     
@@ -50,4 +49,9 @@ object titleMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  type _To = FC[SkeletonTitleProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `titleMod.foo` */
+  override def _to: FC[SkeletonTitleProps] = default
 }

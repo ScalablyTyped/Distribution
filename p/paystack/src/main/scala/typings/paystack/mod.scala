@@ -5,7 +5,6 @@ import typings.paystack.anon.Charge
 import typings.paystack.anon.Create
 import typings.paystack.anon.Disable
 import typings.paystack.anon.Get
-import typings.paystack.anon.List
 import typings.paystack.anon.Listbanks
 import typings.paystack.anon.Update
 import org.scalablytyped.runtime.StObject
@@ -28,7 +27,7 @@ object mod {
     
     var page: Get
     
-    var plan: List
+    var plan: typings.paystack.anon.List
     
     var subaccount: Update
     
@@ -42,7 +41,7 @@ object mod {
       customer: Create,
       misc: Listbanks,
       page: Get,
-      plan: List,
+      plan: typings.paystack.anon.List,
       subaccount: Update,
       subscription: Disable,
       transaction: Charge
@@ -59,7 +58,7 @@ object mod {
       
       inline def setPage(value: Get): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      inline def setPlan(value: List): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: typings.paystack.anon.List): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
       inline def setSubaccount(value: Update): Self = StObject.set(x, "subaccount", value.asInstanceOf[js.Any])
       

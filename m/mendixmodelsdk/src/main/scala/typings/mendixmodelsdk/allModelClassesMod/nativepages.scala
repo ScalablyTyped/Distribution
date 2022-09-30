@@ -51,9 +51,9 @@ object nativepages {
     *
     * In version 8.0.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.BottomBarItem")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.BottomBarItem")
   @js.native
-  class BottomBarItem protected ()
+  open class BottomBarItem protected ()
     extends typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem {
     def this(
       model: AbstractModel,
@@ -66,7 +66,7 @@ object nativepages {
   }
   object BottomBarItem {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.BottomBarItem")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.BottomBarItem")
     @js.native
     val ^ : js.Any = js.native
     
@@ -90,13 +90,13 @@ object nativepages {
     inline def createIn(container: NativeNavigationProfile): typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.BottomBarItem.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.BottomBarItem.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.BottomBarItem.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.BottomBarItem.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -110,9 +110,9 @@ object nativepages {
     * In version 8.0.0: deleted
     * In version 7.21.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayout")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayout")
   @js.native
-  class NativeLayout protected ()
+  open class NativeLayout protected ()
     extends typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout {
     def this(
       model: AbstractModel,
@@ -124,7 +124,7 @@ object nativepages {
   }
   object NativeLayout {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayout")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayout")
     @js.native
     val ^ : js.Any = js.native
     
@@ -136,13 +136,13 @@ object nativepages {
     inline def createIn(container: IFolderBase): typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayout]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayout.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayout.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayout.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayout.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -156,9 +156,9 @@ object nativepages {
     * In version 8.0.0: deleted
     * In version 7.23.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayoutCallArgument")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayoutCallArgument")
   @js.native
-  class NativeLayoutCallArgument protected ()
+  open class NativeLayoutCallArgument protected ()
     extends typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument {
     def this(
       model: AbstractModel,
@@ -171,7 +171,7 @@ object nativepages {
   }
   object NativeLayoutCallArgument {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayoutCallArgument")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayoutCallArgument")
     @js.native
     val ^ : js.Any = js.native
     
@@ -195,13 +195,13 @@ object nativepages {
     inline def createIn(container: typings.mendixmodelsdk.nativepagesMod.nativepages.NativePage): typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.nativepagesMod.nativepages.NativeLayoutCallArgument]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayoutCallArgument.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayoutCallArgument.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativeLayoutCallArgument.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativeLayoutCallArgument.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -215,9 +215,9 @@ object nativepages {
     * In version 8.0.0: deleted
     * In version 7.21.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePage")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePage")
   @js.native
-  class NativePage protected ()
+  open class NativePage protected ()
     extends typings.mendixmodelsdk.nativepagesMod.nativepages.NativePage {
     def this(
       model: AbstractModel,
@@ -229,7 +229,7 @@ object nativepages {
   }
   object NativePage {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePage")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePage")
     @js.native
     val ^ : js.Any = js.native
     
@@ -241,13 +241,13 @@ object nativepages {
     inline def createIn(container: IFolderBase): typings.mendixmodelsdk.nativepagesMod.nativepages.NativePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.nativepagesMod.nativepages.NativePage]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePage.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePage.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePage.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePage.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -261,9 +261,9 @@ object nativepages {
     * In version 8.0.0: deleted
     * In version 7.23.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePageClientAction")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePageClientAction")
   @js.native
-  class NativePageClientAction protected ()
+  open class NativePageClientAction protected ()
     extends typings.mendixmodelsdk.nativepagesMod.nativepages.NativePageClientAction {
     def this(
       model: AbstractModel,
@@ -276,7 +276,7 @@ object nativepages {
   }
   object NativePageClientAction {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePageClientAction")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePageClientAction")
     @js.native
     val ^ : js.Any = js.native
     
@@ -432,13 +432,13 @@ object nativepages {
     inline def createInWidgetValueUnderAction(container: WidgetValue): typings.mendixmodelsdk.nativepagesMod.nativepages.NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.nativepagesMod.nativepages.NativePageClientAction]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePageClientAction.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePageClientAction.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePageClientAction.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePageClientAction.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
@@ -452,9 +452,9 @@ object nativepages {
     * In version 8.0.0: deleted
     * In version 7.23.0: introduced
     */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePlaceholder")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePlaceholder")
   @js.native
-  class NativePlaceholder protected ()
+  open class NativePlaceholder protected ()
     extends typings.mendixmodelsdk.nativepagesMod.nativepages.NativePlaceholder {
     def this(
       model: AbstractModel,
@@ -467,7 +467,7 @@ object nativepages {
   }
   object NativePlaceholder {
     
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePlaceholder")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePlaceholder")
     @js.native
     val ^ : js.Any = js.native
     
@@ -733,13 +733,13 @@ object nativepages {
     inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): typings.mendixmodelsdk.nativepagesMod.nativepages.NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.nativepagesMod.nativepages.NativePlaceholder]
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePlaceholder.structureTypeName")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePlaceholder.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
     inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "nativepages.NativePlaceholder.versionInfo")
+    @JSImport("mendixmodelsdk/src/gen/all-model-classes", "nativepages.NativePlaceholder.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo = js.native
     inline def versionInfo_=(x: typings.mendixmodelsdk.nativepagesMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

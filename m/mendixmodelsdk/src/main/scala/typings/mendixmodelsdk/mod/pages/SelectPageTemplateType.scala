@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SelectPageTemplateType")
 @js.native
-class SelectPageTemplateType protected ()
+open class SelectPageTemplateType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SelectPageTemplateType {
   def this(
     model: AbstractModel,

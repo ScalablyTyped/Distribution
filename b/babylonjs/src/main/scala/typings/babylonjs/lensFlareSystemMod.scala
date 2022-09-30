@@ -36,7 +36,7 @@ object lensFlareSystemMod {
     
     /* private */ var _isEnabled: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _isVisible(): Boolean = js.native
     
     /* private */ var _positionX: Any = js.native
@@ -53,8 +53,7 @@ object lensFlareSystemMod {
     var borderLimit: Double = js.native
     
     /**
-      * @param globalViewport
-      * @hidden
+      * @internal
       */
     def computeEffectivePosition(globalViewport: Viewport): Boolean = js.native
     
@@ -121,7 +120,7 @@ object lensFlareSystemMod {
     def rebuild(): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     def render(): Boolean = js.native
     
@@ -163,8 +162,7 @@ object lensFlareSystemMod {
     inline def Parse(parsedLensFlareSystem: Any, scene: Scene, rootUrl: String): LensFlareSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLensFlareSystem.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[LensFlareSystem]
     
     /**
-      * @param _
-      * @hidden
+      * @internal
       */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }

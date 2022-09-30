@@ -582,7 +582,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
-    def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](selector: String): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
+    def filter_FilteredElement[FilteredElement /* <: BaseType */](selector: String): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
     /**
       * Filter the selection, returning a new selection that contains only the elements for
       * which the specified filter is true.
@@ -596,7 +596,7 @@ object mod {
       */
     // tslint:disable-next-line:no-unnecessary-generics
     @JSName("filter")
-    def filter_FilteredElement_BaseType[FilteredElement /* <: BaseType */](selector: ValueFn[GElement, Datum, Boolean]): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
+    def filter_FilteredElement[FilteredElement /* <: BaseType */](selector: ValueFn[GElement, Datum, Boolean]): Selection_[FilteredElement, Datum, PElement, PDatum] = js.native
     
     /**
       * Sets the inner HTML to the specified value on all selected elements, replacing any existing child elements.

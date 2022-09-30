@@ -1,7 +1,7 @@
 
 # Scala.js typings for trtc-js-sdk
 
-Typings are for version 4.8
+Typings are for version 4.9
 
 ## Library description:
 Tencent Cloud RTC SDK for Web

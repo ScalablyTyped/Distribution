@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.DatePicker")
 @js.native
-class DatePicker protected ()
+open class DatePicker protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.DatePicker {
   def this(
     model: AbstractModel,

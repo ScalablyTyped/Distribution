@@ -4,6 +4,7 @@ import typings.grecaptcha.ReCaptchaV2.Action
 import typings.grecaptcha.ReCaptchaV2.Parameters
 import typings.grecaptcha.ReCaptchaV2.ReCaptcha
 import typings.std.HTMLElement
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,8 +27,8 @@ object global {
       * Programatically invoke the reCAPTCHA check. Used if the invisible reCAPTCHA is on a div instead of a button.
       * @param opt_widget_id Optional widget ID, defaults to the first widget created if unspecified.
       */
-    inline def execute(): js.Thenable[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")().asInstanceOf[js.Thenable[Unit]]
-    inline def execute(opt_widget_id: Double): js.Thenable[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(opt_widget_id.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Unit]]
+    inline def execute(): PromiseLike[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")().asInstanceOf[PromiseLike[Unit]]
+    inline def execute(opt_widget_id: Double): PromiseLike[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(opt_widget_id.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Unit]]
     /**
       * Programatically invoke the reCAPTCHA check. Used if the invisible reCAPTCHA is on a div instead of a button.
       * @param siteKey the key of your site
@@ -35,7 +36,7 @@ object global {
       *
       * @return a promise-like object containing the token
       */
-    inline def execute(siteKey: String, action: Action): js.Thenable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(siteKey.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[String]]
+    inline def execute(siteKey: String, action: Action): PromiseLike[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(siteKey.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[String]]
     
     /**
       * Gets the response for the reCAPTCHA widget.

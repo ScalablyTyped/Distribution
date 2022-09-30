@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "create-banner" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "create-banner" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

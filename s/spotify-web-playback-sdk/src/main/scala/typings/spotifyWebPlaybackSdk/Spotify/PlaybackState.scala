@@ -1,9 +1,9 @@
 package typings.spotifyWebPlaybackSdk.Spotify
 
 import typings.spotifyWebPlaybackSdk.anon.Hifistatus
-import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkNumbers.`0`
-import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkNumbers.`1`
-import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkNumbers.`2`
+import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkInts.`0`
+import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkInts.`1`
+import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

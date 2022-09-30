@@ -15,9 +15,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageIcon")
+@JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageIcon")
 @js.native
-class ImageIcon protected () extends Icon {
+open class ImageIcon protected () extends Icon {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ class ImageIcon protected () extends Icon {
 }
 object ImageIcon {
   
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageIcon")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageIcon")
   @js.native
   val ^ : js.Any = js.native
   
@@ -94,13 +94,13 @@ object ImageIcon {
   inline def createInWidgetValueUnderIcon(container: WidgetValue): ImageIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[ImageIcon]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageIcon.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageIcon.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ImageIcon.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/pages", "pages.ImageIcon.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -523,7 +523,7 @@ trait ObjectChain[T]
     * @see _.get
     */
   @JSName("get")
-  def get_TKey_StringTDefault_ExpChain[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): ExpChain[
+  def get_TKeyTDefault_ExpChain[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): ExpChain[
     (Exclude[
       /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
       Unit
@@ -533,7 +533,7 @@ trait ObjectChain[T]
     * @see _.get
     */
   @JSName("get")
-  def get_TKey_String_ExpChain[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): ExpChain[
+  def get_TKey_ExpChain[TKey /* <: /* keyof T */ java.lang.String */](path: TKey): ExpChain[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
   ] = js.native
   
@@ -682,7 +682,7 @@ trait ObjectChain[T]
     * @see _.map
     */
   @JSName("map")
-  def map_K_Any[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[keyof T] */ js.Any */](key: K): CollectionChain[
+  def map_K[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[keyof T] */ js.Any */](key: K): CollectionChain[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T][K] */ js.Any
   ] = js.native
   
@@ -752,7 +752,7 @@ trait ObjectChain[T]
     * @see _.omit
     */
   @JSName("omit")
-  def omit_K_String[K /* <: /* keyof T */ java.lang.String */](paths: Many[K]*): ObjectChain[Omit[T, K]] = js.native
+  def omit_K[K /* <: /* keyof T */ java.lang.String */](paths: Many[K]*): ObjectChain[Omit[T, K]] = js.native
   
   /**
     * @see _.orderBy
@@ -828,7 +828,7 @@ trait ObjectChain[T]
     * @see _.pick
     */
   @JSName("pick")
-  def pick_U_String[U /* <: /* keyof T */ java.lang.String */](props: Many[U]*): ObjectChain[Pick[T, U]] = js.native
+  def pick_U[U /* <: /* keyof T */ java.lang.String */](props: Many[U]*): ObjectChain[Pick[T, U]] = js.native
   
   /**
     * @see _.reduce

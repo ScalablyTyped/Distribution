@@ -30,25 +30,25 @@ trait CanGoBack extends StObject {
   
   def isFocused(): Boolean = js.native
   
-  def navigate[RouteName /* <: String */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName] | [RouteName, object | undefined] is not an array type */ args: js.Array[RouteName]
+  def navigate[RouteName_3 /* <: String */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName_3] | [RouteName_3, object | undefined] is not an array type */ args: js.Array[RouteName_3]
   ): Unit = js.native
-  def navigate[RouteName /* <: String */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName] | [RouteName, object | undefined] is not an array type */ args: js.Tuple2[RouteName, js.UndefOr[js.Object]]
+  def navigate[RouteName_3 /* <: String */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName_3] | [RouteName_3, object | undefined] is not an array type */ args: js.Tuple2[RouteName_3, js.UndefOr[js.Object]]
   ): Unit = js.native
   def navigate[RouteName_1 /* <: String */](route: Key): Unit = js.native
   def navigate[RouteName_4 /* <: String */](route: KeyNameParams[RouteName_4]): Unit = js.native
   def navigate[RouteName_1 /* <: String */](route: NameParams[RouteName_1]): Unit = js.native
   @JSName("navigate")
-  def navigate_RouteName_3_String[RouteName_3 /* <: String */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName_3] | [RouteName_3, object | undefined] is not an array type */ args: js.Array[RouteName_3]
+  def navigate_RouteName[RouteName /* <: String */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName] | [RouteName, object | undefined] is not an array type */ args: js.Array[RouteName]
   ): Unit = js.native
   @JSName("navigate")
-  def navigate_RouteName_3_String[RouteName_3 /* <: String */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName_3] | [RouteName_3, object | undefined] is not an array type */ args: js.Tuple2[RouteName_3, js.UndefOr[js.Object]]
+  def navigate_RouteName[RouteName /* <: String */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [RouteName] | [RouteName, object | undefined] is not an array type */ args: js.Tuple2[RouteName, js.UndefOr[js.Object]]
   ): Unit = js.native
   @JSName("navigate")
-  def navigate_RouteName_4_String[RouteName_4 /* <: String */](route: Key): Unit = js.native
+  def navigate_RouteName_4[RouteName_4 /* <: String */](route: Key): Unit = js.native
   
   def reset(state: Any): Unit = js.native
   def reset(state: PartialStateReadonlykeystHistory): Unit = js.native
@@ -60,7 +60,7 @@ trait CanGoBack extends StObject {
   def setParams(params: js.Object): Unit = js.native
   // tslint:disable-next-line no-unnecessary-generics
   @JSName("setParams")
-  def setParams_RouteName_2_String[RouteName_2 /* <: String */](): Unit = js.native
+  def setParams_RouteName_2[RouteName_2 /* <: String */](): Unit = js.native
   @JSName("setParams")
-  def setParams_RouteName_2_String[RouteName_2 /* <: String */](params: js.Object): Unit = js.native
+  def setParams_RouteName_2[RouteName_2 /* <: String */](params: js.Object): Unit = js.native
 }

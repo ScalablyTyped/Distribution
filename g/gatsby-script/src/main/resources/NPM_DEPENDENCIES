@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gatsby-script" : "1.8.0"
+      "gatsby-script" : "1.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gatsby-script" : "1.8.0"
+      "gatsby-script" : "1.9.0"
     }
   ],
   "compile-devDependencies" : [

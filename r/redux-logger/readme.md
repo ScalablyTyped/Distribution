@@ -10,15 +10,12 @@ Logger for Redux
 | ------------------ | :-------------: |
 | Full name          | redux-logger |
 | Keywords           | redux, logger, redux-logger, middleware |
-| # releases         | 2 |
-| # dependents       | 1265 |
-| # downloads        | 36302667 |
-| # stars            | 49 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3583001.0 |
+| # stars            | 5676.0 |
 
 ## Links
-- [Homepage](https://github.com/theaqua/redux-logger#readme)
-- [Bugs](https://github.com/theaqua/redux-logger/issues)
-- [Repository](https://github.com/theaqua/redux-logger)
 - [Npm](https://www.npmjs.com/package/redux-logger)
     
 

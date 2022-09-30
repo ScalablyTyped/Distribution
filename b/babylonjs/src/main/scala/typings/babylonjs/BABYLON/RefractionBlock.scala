@@ -9,38 +9,38 @@ trait RefractionBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /** @hidden */
+  /** @internal */
   var _2DSamplerName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _cubeSamplerName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _define3DName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineLODRefractionAlpha: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineLinearSpecularRefraction: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _defineOppositeZ: String = js.native
   
   /* protected */ def _getTexture(): Nullable[BaseTexture] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _refractionMatrixName: String = js.native
   
   /* private */ var _scene: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vRefractionFilteringInfoName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vRefractionInfosName: String = js.native
   
-  /** @hidden */
+  /** @internal */
   var _vRefractionMicrosurfaceInfosName: String = js.native
   
   /**
@@ -55,7 +55,7 @@ trait RefractionBlock
     */
   def hasTexture: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var indexOfRefractionConnectionPoint: NodeMaterialConnectionPoint = js.native
   
   /**
@@ -106,7 +106,7 @@ trait RefractionBlock
     * This is to avoid having to add them as inputs here whereas they are already inputs of the main block, so already known.
     * It's less burden on the user side in the editor part.
     */
-  /** @hidden */
+  /** @internal */
   var viewConnectionPoint: NodeMaterialConnectionPoint = js.native
   
   /**

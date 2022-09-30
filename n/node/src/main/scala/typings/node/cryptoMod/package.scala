@@ -6,8 +6,8 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.cryptoMod.^
 import typings.node.cryptoMod.webcrypto.SubtleCrypto
-import typings.node.nodeNumbers.`0`
-import typings.node.nodeNumbers.`1`
+import typings.node.nodeInts.`0`
+import typings.node.nodeInts.`1`
 import typings.node.nodeStrings.`rsa-pss`
 import typings.node.nodeStrings.aes
 import typings.node.nodeStrings.der

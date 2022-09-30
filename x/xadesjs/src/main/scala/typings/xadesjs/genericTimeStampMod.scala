@@ -1,6 +1,5 @@
 package typings.xadesjs
 
-import typings.std.Uint8Array
 import typings.xadesjs.anyMod.Any
 import typings.xadesjs.encapsulatedPkiDataMod.EncapsulatedPKIData
 import typings.xadesjs.xmlBaseMod.XadesCollection
@@ -11,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object genericTimeStampMod {
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "EncapsulatedTimeStamp")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "EncapsulatedTimeStamp")
   @js.native
-  class EncapsulatedTimeStamp () extends EncapsulatedPKIData {
+  open class EncapsulatedTimeStamp () extends EncapsulatedPKIData {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "EncapsulatedTimeStampCollection")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "EncapsulatedTimeStampCollection")
   @js.native
-  class EncapsulatedTimeStampCollection () extends XadesCollection[EncapsulatedTimeStamp] {
+  open class EncapsulatedTimeStampCollection () extends XadesCollection[EncapsulatedTimeStamp] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "GenericTimeStamp")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "GenericTimeStamp")
   @js.native
-  class GenericTimeStamp () extends XadesObject {
+  open class GenericTimeStamp () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var CanonicalizationMethod: typings.xmldsigjs.mod.CanonicalizationMethod = js.native
@@ -41,9 +40,9 @@ object genericTimeStampMod {
     var XMLTimeStamp: XMLTimeStampCollection = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "Include")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "Include")
   @js.native
-  class Include () extends XadesObject {
+  open class Include () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var ReferencedData: Boolean = js.native
@@ -51,35 +50,41 @@ object genericTimeStampMod {
     var Uri: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "ReferenceInfo")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "ReferenceInfo")
   @js.native
-  class ReferenceInfo () extends XadesObject {
+  open class ReferenceInfo () extends XadesObject {
     def this(properties: js.Object) = this()
     
-    var DigestMethod: String = js.native
+    /**
+      * Gets or sets the digest method Uniform Resource Identifier (URI) of the current
+      */
+    var DigestMethod: typings.xmldsigjs.mod.DigestMethod = js.native
     
-    var DigestValue: Uint8Array = js.native
+    /**
+      * Gets or sets the digest value of the current Reference.
+      */
+    var DigestValue: js.typedarray.Uint8Array = js.native
     
     var Id: String = js.native
     
     var Uri: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "ReferenceInfos")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "ReferenceInfos")
   @js.native
-  class ReferenceInfos () extends XadesCollection[ReferenceInfo] {
+  open class ReferenceInfos () extends XadesCollection[ReferenceInfo] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "XMLTimeStamp")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "XMLTimeStamp")
   @js.native
-  class XMLTimeStamp () extends Any {
+  open class XMLTimeStamp () extends Any {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/generic_time_stamp", "XMLTimeStampCollection")
+  @JSImport("xadesjs/build/types/src/xml/generic_time_stamp", "XMLTimeStampCollection")
   @js.native
-  class XMLTimeStampCollection () extends XadesCollection[XMLTimeStamp] {
+  open class XMLTimeStampCollection () extends XadesCollection[XMLTimeStamp] {
     def this(properties: js.Object) = this()
   }
 }

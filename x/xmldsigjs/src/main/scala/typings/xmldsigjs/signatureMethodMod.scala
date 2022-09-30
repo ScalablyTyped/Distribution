@@ -11,7 +11,7 @@ object signatureMethodMod {
   
   @JSImport("xmldsigjs/build/types/xml/signature_method", "SignatureMethod")
   @js.native
-  class SignatureMethod () extends XmlSignatureObject {
+  open class SignatureMethod () extends XmlSignatureObject {
     def this(properties: js.Object) = this()
     
     var Algorithm: String = js.native
@@ -30,7 +30,7 @@ object signatureMethodMod {
   
   @JSImport("xmldsigjs/build/types/xml/signature_method", "SignatureMethodOther")
   @js.native
-  class SignatureMethodOther () extends XmlSignatureCollection[XmlObject] {
+  open class SignatureMethodOther () extends XmlSignatureCollection[XmlObject] {
     def this(properties: js.Object) = this()
   }
 }

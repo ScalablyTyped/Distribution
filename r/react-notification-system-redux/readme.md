@@ -10,10 +10,10 @@ react-notification-system-redux
 | ------------------ | :-------------: |
 | Full name          | react-notification-system-redux |
 | Keywords           | react-notification-system, redux |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 493917 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 60294.0 |
+| # stars            | 326.0 |
 
 ## Links
 - [Homepage](https://github.com/gor181/react-notification-system-redux)

@@ -30,11 +30,11 @@ object findMod {
     thisArg: A
   ): OperatorFunction[T, js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, js.UndefOr[T]]]
   
-  inline def find_TS_T[T, S /* <: T */](
+  inline def find_TS[T, S /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
   ): OperatorFunction[T, js.UndefOr[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.UndefOr[S]]]
   
-  inline def find_TS_TA[T, S /* <: T */, A](
+  inline def find_TSA[T, S /* <: T */, A](
     predicate: js.ThisFunction3[
       /* this */ A, 
       /* value */ T, 

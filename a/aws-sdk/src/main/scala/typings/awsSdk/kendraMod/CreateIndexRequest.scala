@@ -47,7 +47,7 @@ trait CreateIndexRequest extends StObject {
   var UserContextPolicy: js.UndefOr[typings.awsSdk.kendraMod.UserContextPolicy] = js.undefined
   
   /**
-    * Enables fetching access levels of groups and users from an Amazon Web Services Single Sign On identity source. To configure this, see UserGroupResolutionConfiguration.
+    * Enables fetching access levels of groups and users from an IAM Identity Center (successor to Single Sign-On) identity source. To configure this, see UserGroupResolutionConfiguration.
     */
   var UserGroupResolutionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.UserGroupResolutionConfiguration] = js.undefined
   

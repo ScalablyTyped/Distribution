@@ -12,7 +12,7 @@ trait Func
   
   var func: GLenum
   
-  var mask: typings.maplibreGl.maplibreGlNumbers.`0`
+  var mask: typings.maplibreGl.maplibreGlInts.`0`
 }
 object Func {
   
@@ -25,6 +25,6 @@ object Func {
     
     inline def setFunc(value: GLenum): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    inline def setMask(value: typings.maplibreGl.maplibreGlNumbers.`0`): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: typings.maplibreGl.maplibreGlInts.`0`): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
   }
 }

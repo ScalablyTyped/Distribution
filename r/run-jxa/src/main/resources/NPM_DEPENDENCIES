@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "run-jxa" : "2.0.0"
+      "run-jxa" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "run-jxa" : "2.0.0"
+      "run-jxa" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -8,6 +8,7 @@ import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
 import typings.std.Error
 import typings.std.Partial
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -145,5 +146,5 @@ object mod {
     var timeout: js.UndefOr[Double] = js.native
   }
   
-  type Task[TaskResultType] = js.Function1[/* options */ TaskOptions, TaskResultType | js.Thenable[TaskResultType]]
+  type Task[TaskResultType] = js.Function1[/* options */ TaskOptions, PromiseLike[TaskResultType] | TaskResultType]
 }

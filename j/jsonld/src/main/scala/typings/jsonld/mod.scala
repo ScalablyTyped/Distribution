@@ -9,7 +9,6 @@ import typings.jsonld.jsonldSpecMod.JsonLdProcessor
 import typings.jsonld.jsonldSpecMod.RemoteDocument
 import typings.jsonld.jsonldSpecMod.Url
 import typings.jsonld.jsonldStrings.URDNA2015
-import typings.jsonld.jsonldStrings.URGNA2012
 import typings.jsonld.jsonldStrings.`@always`
 import typings.jsonld.jsonldStrings.`@last`
 import typings.jsonld.jsonldStrings.`@link`
@@ -336,7 +335,7 @@ object mod {
       extends StObject
          with Common {
       
-      var algorithm: js.UndefOr[URDNA2015 | URGNA2012] = js.undefined
+      var algorithm: js.UndefOr[URDNA2015 | (/* template literal string: URGNA2012 */ String)] = js.undefined
       
       var expansion: js.UndefOr[Boolean] = js.undefined
       
@@ -357,7 +356,7 @@ object mod {
       
       extension [Self <: Normalize](x: Self) {
         
-        inline def setAlgorithm(value: URDNA2015 | URGNA2012): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+        inline def setAlgorithm(value: URDNA2015 | (/* template literal string: URGNA2012 */ String)): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
         
         inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
         

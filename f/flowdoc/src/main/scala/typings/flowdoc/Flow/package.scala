@@ -1,6 +1,6 @@
 package typings.flowdoc.Flow
 
-import typings.flowdoc.flowdocNumbers.`1`
+import typings.flowdoc.flowdocInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

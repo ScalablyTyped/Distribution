@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * See: {@link https://docs.mendix.com/refguide/footer-document-template relevant section in reference guide}
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.Footer")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.Footer")
 @js.native
-class Footer protected ()
+open class Footer protected ()
   extends typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Footer {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class Footer protected ()
 }
 object Footer {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.Footer")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.Footer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -50,13 +50,13 @@ object Footer {
   inline def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplate): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Footer = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Footer]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.Footer.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.Footer.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.Footer.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.Footer.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

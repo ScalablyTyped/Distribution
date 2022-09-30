@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.0.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SplitPane")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SplitPane")
 @js.native
 abstract class SplitPane protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.SplitPane {
@@ -28,18 +28,18 @@ abstract class SplitPane protected ()
 }
 object SplitPane {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SplitPane")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SplitPane")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SplitPane.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SplitPane.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SplitPane.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.SplitPane.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for all-keys
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Get all property keys of an object including non-enumerable and inherited ones
@@ -10,10 +10,10 @@ Get all property keys of an object including non-enumerable and inherited ones
 | ------------------ | :-------------: |
 | Full name          | all-keys |
 | Keywords           | get, all, object, property, names, keys, properties, inherited, prototype, enumerable, non-enumerable, reflect, ownkeys, symbol, symbols |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 665 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 52.0 |
+| # stars            | 106.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/all-keys#readme)

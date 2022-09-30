@@ -14,19 +14,19 @@ object babylonjsSceneAugmentingMod {
   @js.native
   trait Scene extends StObject {
     
-    /** @hidden */
+    /** @internal */
     def _createMultiviewUbo(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _multiviewSceneUbo: Nullable[UniformBuffer] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _renderMultiviewToSingleView(camera: Camera): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     var _transformMatrixR: Matrix = js.native
     
-    /** @hidden */
+    /** @internal */
     def _updateMultiviewUbo(): Unit = js.native
     def _updateMultiviewUbo(viewR: Unit, projectionR: Matrix): Unit = js.native
     def _updateMultiviewUbo(viewR: Matrix): Unit = js.native

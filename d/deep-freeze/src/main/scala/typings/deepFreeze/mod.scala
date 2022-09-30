@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply[T](a: js.Array[T]): js.Array[DeepReadonly[T]] = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[DeepReadonly[T]]]
-  inline def apply[T /* <: js.Function */](f: T): T = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T](o: T): DeepReadonly[T] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[DeepReadonly[T]]
   
   @JSImport("deep-freeze", JSImport.Namespace)
   @js.native

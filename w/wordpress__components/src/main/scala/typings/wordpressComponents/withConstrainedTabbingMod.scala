@@ -11,5 +11,5 @@ object withConstrainedTabbingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def default[T](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
 }

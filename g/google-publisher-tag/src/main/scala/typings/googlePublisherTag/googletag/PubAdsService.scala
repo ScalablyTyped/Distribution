@@ -19,7 +19,7 @@ trait PubAdsService
   /**
     * Removes the ads from the given slots and replaces them with blank
     * content. The slots will be marked as unfetched.
-    * <br><br>
+    *
     * In particular, clearing a slot removes the ad from GPT's [long-lived
     * pageview](https://support.google.com/admanager/answer/183281), so future
     * requests will not be influenced by roadblocks or competitive exclusions
@@ -38,8 +38,8 @@ trait PubAdsService
     *
     * @param slots The array of slots to clear. Array is optional; all slots
     *     will be cleared if it is unspecified.
-    * @return Returns <code>true</code> if slots have been cleared,
-    *     <code>false</code> otherwise.
+    * @return Returns `true` if slots have been cleared,
+    *     `false` otherwise.
     */
   def clear(): Boolean = js.native
   def clear(slots: js.Array[Slot]): Boolean = js.native
@@ -96,9 +96,9 @@ trait PubAdsService
     * @see [Minimize layout shift](https://developers.google.com/publisher-tag/guides/minimize-layout-shift)
     * @param collapseBeforeAdFetch Whether to collapse the slots even before
     *     the ads are fetched. This parameter is optional; if not provided,
-    *     <code>false</code> will be used as the default value.
-    * @return Returns <code>true</code> if div collapse mode was enabled and
-    *     <code>false</code> if it is impossible to enable collapse mode
+    *     `false` will be used as the default value.
+    * @return Returns `true` if div collapse mode was enabled and
+    *     `false` if it is impossible to enable collapse mode
     *     because the method was called after the service was enabled.
     */
   def collapseEmptyDivs(): Boolean = js.native
@@ -108,7 +108,7 @@ trait PubAdsService
     * Disables requests for ads on page load, but allows ads to be requested
     * with a {@link PubAdsService.refresh} call. This should be set prior to
     * enabling the service. Async mode must be used; otherwise it will be
-    * impossible to request ads using <code>refresh</code>.
+    * impossible to request ads using `refresh`.
     *
     * @see [Control ad loading and refresh](https://developers.google.com/publisher-tag/guides/control-ad-loading)
     * @see [Control SRA batching](https://developers.google.com/publisher-tag/samples/control-sra-batching)
@@ -118,13 +118,13 @@ trait PubAdsService
   /**
     * Constructs and displays an ad slot with the given ad unit path and size.
     * This method does not work with single request mode.
-    * <br><br>
-    * <b>Note:</b> When this method is called, a snapshot of the slot and page
+    *
+    * **Note:** When this method is called, a snapshot of the slot and page
     * state is created to ensure consistency when sending the ad request and
     * rendering the response. Any changes that are made to the slot or page
     * state after this method is called (including targeting, privacy settings,
     * force SafeFrame, etc.) will only apply to subsequent
-    * <code>display()</code> or <code>refresh()</code> requests.
+    * `display()` or `refresh()` requests.
     *
     * @example
     *   googletag.pubads().display('/1234567/sports', [728, 90], 'div-1');
@@ -150,9 +150,10 @@ trait PubAdsService
     * Enables lazy loading in GPT as defined by the config object. For more
     * detailed examples, see the [Lazy
     * loading](https://developers.google.com/publisher-tag/samples/lazy-loading)
-    * sample. <br><br> <b>Notes:</b> <ul> <li>Lazy fetching in SRA only works if
-    * all slots are outside the fetching margin.</li>
-    * </ul>
+    * sample.
+    *
+    * **Note:** Lazy fetching in SRA only works if all slots are outside the
+    * fetching margin.
     *
     * @example
     *   googletag.pubads().enableLazyLoad({
@@ -166,31 +167,28 @@ trait PubAdsService
     * @param config Configuration object allows customization of lazy behavior.
     *     Any omitted configurations will use a default set by Google
     *     that will be tuned over time. To disable a particular setting, such
-    *     as a fetching margin, set the value to <code>-1</code>.
-    *     <dl>
-    *       <dt><code>fetchMarginPercent</code></dt>
-    *       <dd>
-    *         The minimum distance from the current viewport a slot must be
-    *         before we fetch the ad as a percentage of viewport size. A value
-    *         of 0 means "when the slot enters the viewport", 100 means "when
-    *         the ad is 1 viewport away", and so on.
-    *       </dd>
-    *       <dt><code>renderMarginPercent</code></dt>
-    *       <dd>
-    *         The minimum distance from the current viewport a slot must be
-    *         before we render an ad. This allows for prefetching the ad, but
-    *         waiting to render and download other subresources. The value
-    *         works just like <code>fetchMarginPercent</code> as a percentage
-    *         of viewport.
-    *       </dd>
-    *       <dt><code>mobileScaling</code></dt>
-    *       <dd>
-    *         A multiplier applied to margins on mobile devices. This allows
-    *         varying margins on mobile vs. desktop. For example, a value of
-    *         2.0 will multiply all margins by 2 on mobile devices, increasing
-    *         the minimum distance a slot can be before fetching and rendering.
-    *       </dd>
-    *     </dl>
+    *     as a fetching margin, set the value to `-1`.
+    *
+    * - `fetchMarginPercent`
+    *
+    *     The minimum distance from the current viewport a slot must be before
+    *     we fetch the ad as a percentage of viewport size. A value of 0 means
+    *     "when the slot enters the viewport", 100 means "when the ad is 1
+    *     viewport away", and so on.
+    *
+    * - `renderMarginPercent`
+    *
+    *     The minimum distance from the current viewport a slot must be before we
+    *     render an ad. This allows for prefetching the ad, but waiting to render
+    *     and download other subresources. The value works just like
+    *     `fetchMarginPercent` as a percentage of viewport.
+    *
+    * - `mobileScaling`
+    *
+    *     A multiplier applied to margins on mobile devices. This allows varying
+    *     margins on mobile vs. desktop. For example, a value of 2.0 will
+    *     multiply all margins by 2 on mobile devices, increasing the minimum
+    *     distance a slot can be before fetching and rendering.
     */
   def enableLazyLoad(): Unit = js.native
   def enableLazyLoad(config: FetchMarginPercent): Unit = js.native
@@ -203,8 +201,8 @@ trait PubAdsService
     *
     * @see [Ads best practices: Use Single Request Architecture correctly](https://developers.google.com/publisher-tag/guides/ad-best-practices#use_single_request_architecture_correctly)
     * @see [Control SRA batching](https://developers.google.com/publisher-tag/samples/control-sra-batching)
-    * @return Returns <code>true</code> if single request mode was enabled and
-    *     <code>false</code> if it is impossible to enable single request mode
+    * @return Returns `true` if single request mode was enabled and
+    *     `false` if it is impossible to enable single request mode
     *     because the method was called after the service was enabled.
     */
   def enableSingleRequest(): Boolean = js.native
@@ -228,7 +226,7 @@ trait PubAdsService
     *
     * @see [AdSense Attributes](https://developers.google.com/publisher-tag/adsense_attributes)
     * @param key Name of the attribute to look for.
-    * @return Current value for the attribute key, or <code>null</code> if the
+    * @return Current value for the attribute key, or `null` if the
     *     key is not present.
     */
   def get(key: String): String | Null = js.native
@@ -285,22 +283,22 @@ trait PubAdsService
     * Returns whether or not initial requests for ads was successfully disabled
     * by a previous {@link PubAdsService.disableInitialLoad} call.
     *
-    * @return Returns <code>true</code> if a previous call to
-    *     {@link PubAdsService.disableInitialLoad} was successful,
-    *     <code>false</code> otherwise.
+    * @return Returns `true` if a previous call to
+    *     {@link PubAdsService.disableInitialLoad} was successful, `false`
+    *     otherwise.
     */
   def isInitialLoadDisabled(): Boolean = js.native
   
   /**
     * Fetches and displays new ads for specific or all slots on the page. Works
     * only in asynchronous rendering mode.
-    * <br><br>
-    * For proper behavior across all browsers, calling <code>refresh</code>
-    * must be preceded by a call to <code>display</code> the ad slot. If the
-    * call to <code>display</code> is omitted, refresh may behave unexpectedly.
+    *
+    * For proper behavior across all browsers, calling `refresh`
+    * must be preceded by a call to `display` the ad slot. If the
+    * call to `display` is omitted, refresh may behave unexpectedly.
     * If desired, the {@link PubAdsService.disableInitialLoad}
-    * method can be used to stop <code>display</code> from fetching an ad.
-    * <br><br>
+    * method can be used to stop `display` from fetching an ad.
+    *
     * Refreshing a slot removes the old ad from GPT's
     * [long-lived pageview](https://support.google.com/admanager/answer/183281),
     * so future requests will not be influenced by roadblocks or competitive
@@ -331,23 +329,20 @@ trait PubAdsService
     *     will be refreshed if it is unspecified.
     * @param options Configuration options associated with this refresh
     *     call.
-    *     <dl>
-    *       <dt>changeCorrelator</dt>
-    *       <dd>
-    *         Specifies whether or not a new correlator is to be generated for
-    *         fetching ads. Our ad servers maintain this correlator value
-    *         briefly (currently for 30 seconds, but subject to change), such
-    *         that requests with the same correlator received close together
-    *         will be considered a single page view. By default a new
-    *         correlator is generated for every refresh.
-    *         <br><br>
-    *         <b>Note:</b> this option has no effect on GPT's
-    *         [long-lived
-    *         pageview](https://support.google.com/admanager/answer/183281),
-    *         which automatically reflects the ads currently on the page and has
-    *         no expiration time.
-    *       </dd>
-    *     </dl>
+    *
+    * - `changeCorrelator`
+    *
+    *     Specifies whether or not a new correlator is to be generated for
+    *     fetching ads. Our ad servers maintain this correlator value briefly
+    *     (currently for 30 seconds, but subject to change), such that requests
+    *     with the same correlator received close together will be considered
+    *     a single page view. By default a new correlator is generated for every
+    *     refresh.
+    *
+    *     **Note:** this option has no effect on GPT's [long-lived
+    *     pageview](https://support.google.com/admanager/answer/183281), which
+    *     automatically reflects the ads currently on the page and has no
+    *     expiration time.
     */
   def refresh(): Unit = js.native
   def refresh(slots: js.Array[Slot]): Unit = js.native
@@ -358,10 +353,10 @@ trait PubAdsService
   /**
     * Sets values for AdSense attributes that apply to all ad slots under the
     * Publisher Ads service.
-    * <br><br>
+    *
     * Calling this more than once for the same key will override previously set
     * values for that key. All values must be set before calling
-    * <code>display</code> or <code>refresh</code>.
+    * `display` or `refresh`.
     *
     * @example
     *   googletag.pubads().set('adsense_background_color', '#FFFFFF');
@@ -390,15 +385,15 @@ trait PubAdsService
     * Enables and disables horizontal centering of ads. Centering is disabled
     * by default. In legacy gpt_mobile.js, centering is enabled by default.
     *
-    * This method should be invoked before calling <code>display</code> or
-    * <code>refresh</code> because only ads that are requested after calling
+    * This method should be invoked before calling `display` or
+    * `refresh` because only ads that are requested after calling
     * this method will be centered.
     *
     * @example
     *   // Make ads centered.
     *   googletag.pubads().setCentering(true);
     *
-    * @param centerAds <code>true</code> to center ads, <code>false</code> to
+    * @param centerAds `true` to center ads, `false` to
     *     left-align them.
     */
   def setCentering(centerAds: Boolean): Unit = js.native
@@ -406,33 +401,22 @@ trait PubAdsService
   /**
     * Configures whether all ads on the page should be forced to be rendered
     * using a SafeFrame container.
-    * <br><br>
+    *
     * Please keep the following things in mind while using this API:
-    * <ul>
-    *   <li>
-    *     This setting will only take effect for <b>subsequent</b> ad requests
-    *     made for the respective slots.
-    *   </li>
-    *   <li>
-    *     The slot level setting, if specified, will always override the page
-    *     level setting.
-    *   </li>
-    *   <li>
-    *     If set to <code>true</code> (at slot-level or page level), the ad
-    *     will always be rendered using a SafeFrame container independent of
-    *     the choice made in the Google Ad Manager UI.
-    *   </li>
-    *   <li>
-    *     However, if set to <code>false</code> or left unspecified, the ad
-    *     will be rendered using a SafeFrame container depending on the type of
-    *     creative and the selection made in the Google Ad Manager UI.
-    *   </li>
-    *   <li>
-    *     This API should be used with caution as it could impact the behaviour
-    *     of creatives that attempt to break out of their iFrames or rely on
-    *     them being rendered directly in a publishers page.
-    *   </li>
-    * </ul>
+    *
+    * - This setting will only take effect for **subsequent** ad requests
+    *   made for the respective slots.
+    * - The slot level setting, if specified, will always override the page
+    *   level setting.
+    * - If set to `true` (at slot-level or page level), the ad will always be
+    *   rendered using a SafeFrame container independent of the choice made in
+    *   the Google Ad Manager UI.
+    * - However, if set to `false` or left unspecified, the ad will be rendered
+    *   using a SafeFrame container depending on the type of creative and the
+    *   selection made in the Google Ad Manager UI.
+    * - This API should be used with caution as it could impact the behaviour
+    *   of creatives that attempt to break out of their iFrames or rely on
+    *   them being rendered directly in a publishers page.
     *
     * @example
     *   googletag.pubads().setForceSafeFrame(true);
@@ -451,9 +435,9 @@ trait PubAdsService
     *   googletag.display('div-2');
     *
     * @see [Render creatives using SafeFrame](https://support.google.com/admanager/answer/6023110)
-    * @param forceSafeFrame <code>true</code> to force all ads on the page to
-    *     be rendered in SafeFrames and <code>false</code> to change the
-    *     previous setting to false. Setting this to <code>false</code> when
+    * @param forceSafeFrame `true` to force all ads on the page to
+    *     be rendered in SafeFrames and `false` to change the
+    *     previous setting to false. Setting this to `false` when
     *     unspecified earlier, won't change anything.
     * @return The service object on which the function was called.
     */
@@ -579,7 +563,7 @@ trait PubAdsService
     * Sets the video content information to be sent along with the ad requests
     * for targeting and content exclusion purposes. Video ads will be
     * automatically enabled when this method is called. For
-    * <code>videoContentId</code> and <code>videoCmsId</code>, use the values
+    * `videoContentId` and `videoCmsId`, use the values
     * that are provided to the Google Ad Manager content ingestion service.
     *
     * @see [VAST ad tag URL parameters](https://support.google.com/admanager/answer/1068325)
@@ -594,7 +578,7 @@ trait PubAdsService
     * requests coming from one page view, and unique across page views. Only
     * applies to async mode.
     *
-    * <b>Note:</b> this has no effect on GPT's [long-lived
+    * **Note:** this has no effect on GPT's [long-lived
     * pageview](https://support.google.com/admanager/answer/183281), which
     * automatically reflects the ads actually on the page and has no expiration
     * time.

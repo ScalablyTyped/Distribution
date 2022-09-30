@@ -12,8 +12,7 @@ object trendMod {
   
   @JSImport("ant-design-pro/lib/Trend", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ITrendProps, js.Any, js.Any]
+  open class default () extends Component[ITrendProps, Any, Any]
   
   trait ITrendProps extends StObject {
     
@@ -56,5 +55,5 @@ object trendMod {
     }
   }
   
-  type Trend = Component[ITrendProps, js.Any, js.Any]
+  type Trend = Component[ITrendProps, Any, Any]
 }

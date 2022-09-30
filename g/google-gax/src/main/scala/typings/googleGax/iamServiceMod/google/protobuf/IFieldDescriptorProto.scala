@@ -33,6 +33,9 @@ trait IFieldDescriptorProto extends StObject {
   /** FieldDescriptorProto options */
   var options: js.UndefOr[IFieldOptions | Null] = js.undefined
   
+  /** FieldDescriptorProto proto3Optional */
+  var proto3Optional: js.UndefOr[Boolean | Null] = js.undefined
+  
   /** FieldDescriptorProto type */
   var `type`: js.UndefOr[Type | Null] = js.undefined
   
@@ -95,6 +98,12 @@ object IFieldDescriptorProto {
     inline def setOptionsNull: Self = StObject.set(x, "options", null)
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setProto3Optional(value: Boolean): Self = StObject.set(x, "proto3Optional", value.asInstanceOf[js.Any])
+    
+    inline def setProto3OptionalNull: Self = StObject.set(x, "proto3Optional", null)
+    
+    inline def setProto3OptionalUndefined: Self = StObject.set(x, "proto3Optional", js.undefined)
     
     inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

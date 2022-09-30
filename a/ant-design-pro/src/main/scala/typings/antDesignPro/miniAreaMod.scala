@@ -10,43 +10,42 @@ object miniAreaMod {
   
   @JSImport("ant-design-pro/lib/Charts/MiniArea", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IMiniAreaProps, js.Any, js.Any]
+  open class default () extends Component[IMiniAreaProps, Any, Any]
   
   trait IAxis extends StObject {
     
-    var grid: js.Any
+    var grid: Any
     
-    var gridAlign: js.Any
+    var gridAlign: Any
     
-    var labels: js.Any
+    var labels: Any
     
-    var line: js.Any
+    var line: Any
     
-    var tickLine: js.Any
+    var tickLine: Any
     
-    var title: js.Any
+    var title: Any
   }
   object IAxis {
     
-    inline def apply(grid: js.Any, gridAlign: js.Any, labels: js.Any, line: js.Any, tickLine: js.Any, title: js.Any): IAxis = {
+    inline def apply(grid: Any, gridAlign: Any, labels: Any, line: Any, tickLine: Any, title: Any): IAxis = {
       val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any], gridAlign = gridAlign.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], tickLine = tickLine.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAxis]
     }
     
     extension [Self <: IAxis](x: Self) {
       
-      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      inline def setGridAlign(value: js.Any): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
+      inline def setGridAlign(value: Any): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
       
-      inline def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      inline def setLine(value: js.Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Any): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      inline def setTickLine(value: js.Any): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
+      inline def setTickLine(value: Any): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
       
-      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,7 +90,7 @@ object miniAreaMod {
       
       inline def setData(value: js.Array[Y]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -109,5 +108,5 @@ object miniAreaMod {
     }
   }
   
-  type MiniArea = Component[IMiniAreaProps, js.Any, js.Any]
+  type MiniArea = Component[IMiniAreaProps, Any, Any]
 }

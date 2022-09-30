@@ -51,6 +51,8 @@ trait Screen
   
   /**
     * The current absolute position of the mouse pointer.
+    *
+    * **Note:** The return value is a DIP point, not a screen physical point.
     */
   def getCursorScreenPoint(): Point = js.native
   

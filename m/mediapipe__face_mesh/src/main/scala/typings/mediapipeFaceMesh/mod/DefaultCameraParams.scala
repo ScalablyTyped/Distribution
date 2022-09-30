@@ -1,8 +1,8 @@
 package typings.mediapipeFaceMesh.mod
 
-import typings.mediapipeFaceMesh.mediapipeFaceMeshNumbers.`1.0`
-import typings.mediapipeFaceMesh.mediapipeFaceMeshNumbers.`10000.0`
-import typings.mediapipeFaceMesh.mediapipeFaceMeshNumbers.`63.0`
+import typings.mediapipeFaceMesh.mediapipeFaceMeshDoubles.`1.0`
+import typings.mediapipeFaceMesh.mediapipeFaceMeshDoubles.`10000.0`
+import typings.mediapipeFaceMesh.mediapipeFaceMeshDoubles.`63.0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait DefaultCameraParams extends StObject {
 object DefaultCameraParams {
   
   inline def apply(): DefaultCameraParams = {
-    val __obj = js.Dynamic.literal(far = 10000.0, near = 1.0, verticalFovDegrees = 63.0)
+    val __obj = js.Dynamic.literal(far = 10000.0d, near = 1.0d, verticalFovDegrees = 63.0d)
     __obj.asInstanceOf[DefaultCameraParams]
   }
   

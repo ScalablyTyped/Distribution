@@ -10,13 +10,13 @@ object anon {
     
     var gte: String
     
-    var keyAsBuffer: Boolean
+    var keyEncoding: String
     
     var keys: Boolean
     
     var lte: String
     
-    var valueAsBuffer: Boolean
+    var valueEncoding: String
     
     var values: Boolean
   }
@@ -24,13 +24,13 @@ object anon {
     
     inline def apply(
       gte: String,
-      keyAsBuffer: Boolean,
+      keyEncoding: String,
       keys: Boolean,
       lte: String,
-      valueAsBuffer: Boolean,
+      valueEncoding: String,
       values: Boolean
     ): Gte = {
-      val __obj = js.Dynamic.literal(gte = gte.asInstanceOf[js.Any], keyAsBuffer = keyAsBuffer.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any], valueAsBuffer = valueAsBuffer.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(gte = gte.asInstanceOf[js.Any], keyEncoding = keyEncoding.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any], valueEncoding = valueEncoding.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[Gte]
     }
     
@@ -38,13 +38,13 @@ object anon {
       
       inline def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       
-      inline def setKeyAsBuffer(value: Boolean): Self = StObject.set(x, "keyAsBuffer", value.asInstanceOf[js.Any])
+      inline def setKeyEncoding(value: String): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
       inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
       inline def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
       
-      inline def setValueAsBuffer(value: Boolean): Self = StObject.set(x, "valueAsBuffer", value.asInstanceOf[js.Any])
+      inline def setValueEncoding(value: String): Self = StObject.set(x, "valueEncoding", value.asInstanceOf[js.Any])
       
       inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }

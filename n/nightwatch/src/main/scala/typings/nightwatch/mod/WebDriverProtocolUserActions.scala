@@ -1,8 +1,8 @@
 package typings.nightwatch.mod
 
-import typings.nightwatch.nightwatchNumbers.`0`
-import typings.nightwatch.nightwatchNumbers.`1`
-import typings.nightwatch.nightwatchNumbers.`2`
+import typings.nightwatch.nightwatchInts.`0`
+import typings.nightwatch.nightwatchInts.`1`
+import typings.nightwatch.nightwatchInts.`2`
 import typings.nightwatch.nightwatchStrings.left
 import typings.nightwatch.nightwatchStrings.middle
 import typings.nightwatch.nightwatchStrings.right

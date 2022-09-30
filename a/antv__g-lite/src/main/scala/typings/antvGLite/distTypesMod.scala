@@ -934,39 +934,39 @@ object distTypesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.antvGLite.antvGLiteNumbers.`0`
-    - typings.antvGLite.antvGLiteNumbers.`1`
-    - typings.antvGLite.antvGLiteNumbers.`2`
-    - typings.antvGLite.antvGLiteNumbers.`3`
-    - typings.antvGLite.antvGLiteNumbers.`4`
-    - typings.antvGLite.antvGLiteNumbers.`5`
-    - typings.antvGLite.antvGLiteNumbers.`6`
-    - typings.antvGLite.antvGLiteNumbers.`7`
-    - typings.antvGLite.antvGLiteNumbers.`8`
-    - typings.antvGLite.antvGLiteNumbers.`9`
+    - typings.antvGLite.antvGLiteInts.`0`
+    - typings.antvGLite.antvGLiteInts.`1`
+    - typings.antvGLite.antvGLiteInts.`2`
+    - typings.antvGLite.antvGLiteInts.`3`
+    - typings.antvGLite.antvGLiteInts.`4`
+    - typings.antvGLite.antvGLiteInts.`5`
+    - typings.antvGLite.antvGLiteInts.`6`
+    - typings.antvGLite.antvGLiteInts.`7`
+    - typings.antvGLite.antvGLiteInts.`8`
+    - typings.antvGLite.antvGLiteInts.`9`
   */
   trait Digit extends StObject
   object Digit {
     
-    inline def `0`: typings.antvGLite.antvGLiteNumbers.`0` = 0.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`0`]
+    inline def `0`: typings.antvGLite.antvGLiteInts.`0` = 0.asInstanceOf[typings.antvGLite.antvGLiteInts.`0`]
     
-    inline def `1`: typings.antvGLite.antvGLiteNumbers.`1` = 1.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`1`]
+    inline def `1`: typings.antvGLite.antvGLiteInts.`1` = 1.asInstanceOf[typings.antvGLite.antvGLiteInts.`1`]
     
-    inline def `2`: typings.antvGLite.antvGLiteNumbers.`2` = 2.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`2`]
+    inline def `2`: typings.antvGLite.antvGLiteInts.`2` = 2.asInstanceOf[typings.antvGLite.antvGLiteInts.`2`]
     
-    inline def `3`: typings.antvGLite.antvGLiteNumbers.`3` = 3.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`3`]
+    inline def `3`: typings.antvGLite.antvGLiteInts.`3` = 3.asInstanceOf[typings.antvGLite.antvGLiteInts.`3`]
     
-    inline def `4`: typings.antvGLite.antvGLiteNumbers.`4` = 4.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`4`]
+    inline def `4`: typings.antvGLite.antvGLiteInts.`4` = 4.asInstanceOf[typings.antvGLite.antvGLiteInts.`4`]
     
-    inline def `5`: typings.antvGLite.antvGLiteNumbers.`5` = 5.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`5`]
+    inline def `5`: typings.antvGLite.antvGLiteInts.`5` = 5.asInstanceOf[typings.antvGLite.antvGLiteInts.`5`]
     
-    inline def `6`: typings.antvGLite.antvGLiteNumbers.`6` = 6.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`6`]
+    inline def `6`: typings.antvGLite.antvGLiteInts.`6` = 6.asInstanceOf[typings.antvGLite.antvGLiteInts.`6`]
     
-    inline def `7`: typings.antvGLite.antvGLiteNumbers.`7` = 7.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`7`]
+    inline def `7`: typings.antvGLite.antvGLiteInts.`7` = 7.asInstanceOf[typings.antvGLite.antvGLiteInts.`7`]
     
-    inline def `8`: typings.antvGLite.antvGLiteNumbers.`8` = 8.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`8`]
+    inline def `8`: typings.antvGLite.antvGLiteInts.`8` = 8.asInstanceOf[typings.antvGLite.antvGLiteInts.`8`]
     
-    inline def `9`: typings.antvGLite.antvGLiteNumbers.`9` = 9.asInstanceOf[typings.antvGLite.antvGLiteNumbers.`9`]
+    inline def `9`: typings.antvGLite.antvGLiteInts.`9` = 9.asInstanceOf[typings.antvGLite.antvGLiteInts.`9`]
   }
   
   trait EventPosition extends StObject {
@@ -1012,12 +1012,7 @@ object distTypesMod {
   
   type LengthOrPercentage = Length | Percentage
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antvGLite.distTypesMod.Length
-    - typings.antvGLite.distTypesMod.Percentage
-    - typings.antvGLite.antvGLiteStrings.auto
-  */
-  type LengthOrPercentageOrAuto = _LengthOrPercentageOrAuto | Length
+  type LengthOrPercentageOrAuto = Length | Percentage | auto
   
   /* Inlined parent std.Omit<@antv/g-lite.@antv/g-lite/dist/types.BaseStyleProps, 'anchor' | 'fill' | 'stroke' | 'lineWidth' | 'increasedLineWidthForHitTesting' | 'lineDash' | 'path' | 'points' | 'shadowColor' | 'transform' | 'transformOrigin' | 'miterLimit' | 'filter' | 'opacity' | 'fillOpacity' | 'strokeOpacity'> */
   trait ParsedBaseStyleProps extends StObject {
@@ -1331,19 +1326,7 @@ object distTypesMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antvGLite.antvGLiteStrings.$LeftcurlybracketDigitRightcurlybracketPercentsign
-    - typings.antvGLite.antvGLiteStrings.DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign
-  */
-  trait Percentage
-    extends StObject
-       with _LengthOrPercentageOrAuto
-  object Percentage {
-    
-    inline def $LeftcurlybracketDigitRightcurlybracketPercentsign: typings.antvGLite.antvGLiteStrings.$LeftcurlybracketDigitRightcurlybracketPercentsign = "${Digit}%".asInstanceOf[typings.antvGLite.antvGLiteStrings.$LeftcurlybracketDigitRightcurlybracketPercentsign]
-    
-    inline def DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign: typings.antvGLite.antvGLiteStrings.DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign = "${Digit}${Digit}%".asInstanceOf[typings.antvGLite.antvGLiteStrings.DollarLeftcurlybracketDigitRightcurlybracketDollarLeftcurlybracketDigitRightcurlybracketPercentsign]
-  }
+  type Percentage = /* template literal string: ${Digit}% */ String
   
   trait RendererConfig extends StObject {
     
@@ -1438,8 +1421,6 @@ object distTypesMod {
     /* duration */ js.UndefOr[Double], 
     Double
   ]
-  
-  trait _LengthOrPercentageOrAuto extends StObject
   
   trait _TextOverflow extends StObject
 }

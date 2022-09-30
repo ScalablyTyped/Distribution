@@ -5,11 +5,11 @@ import typings.chromeApps.chrome.double
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.notifications.ButtonOptions
 import typings.chromeApps.chrome.notifications.ItemOptions
-import typings.chromeApps.chromeAppsNumbers.`-1`
-import typings.chromeApps.chromeAppsNumbers.`-2`
-import typings.chromeApps.chromeAppsNumbers.`0`
-import typings.chromeApps.chromeAppsNumbers.`1`
-import typings.chromeApps.chromeAppsNumbers.`2`
+import typings.chromeApps.chromeAppsInts.`-1`
+import typings.chromeApps.chromeAppsInts.`-2`
+import typings.chromeApps.chromeAppsInts.`0`
+import typings.chromeApps.chromeAppsInts.`1`
+import typings.chromeApps.chromeAppsInts.`2`
 import typings.chromeApps.chromeAppsStrings.IMAGE
 import typings.chromeApps.chromeAppsStrings.LIST
 import typings.chromeApps.chromeAppsStrings.PROGRESS

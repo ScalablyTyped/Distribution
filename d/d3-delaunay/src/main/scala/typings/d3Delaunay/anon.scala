@@ -76,11 +76,11 @@ object anon {
       */
     /* standard es5 */
     @JSName("every")
-    def every_S_Point[S /* <: Point */](
+    def every_S[S /* <: Point */](
       predicate: js.Function3[/* value */ Point, /* index */ Double, /* array */ js.Array[Point], /* is S */ Boolean]
     ): /* is std.Array<S> */ Boolean = js.native
     @JSName("every")
-    def every_S_Point[S /* <: Point */](
+    def every_S[S /* <: Point */](
       predicate: js.Function3[/* value */ Point, /* index */ Double, /* array */ js.Array[Point], /* is S */ Boolean],
       thisArg: Any
     ): /* is std.Array<S> */ Boolean = js.native
@@ -117,11 +117,11 @@ object anon {
       */
     /* standard es5 */
     @JSName("filter")
-    def filter_S_Point[S /* <: Point */](
+    def filter_S[S /* <: Point */](
       predicate: js.Function3[/* value */ Point, /* index */ Double, /* array */ js.Array[Point], /* is S */ Boolean]
     ): js.Array[S] = js.native
     @JSName("filter")
-    def filter_S_Point[S /* <: Point */](
+    def filter_S[S /* <: Point */](
       predicate: js.Function3[/* value */ Point, /* index */ Double, /* array */ js.Array[Point], /* is S */ Boolean],
       thisArg: Any
     ): js.Array[S] = js.native

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-leaflet", "MapEvented")
 @js.native
-class MapEvented[P, E /* <: Evented */] protected ()
-  extends Component[P, js.Object, js.Any] {
+open class MapEvented[P, E /* <: Evented */] protected ()
+  extends Component[P, js.Object, Any] {
   def this(props: P) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   var _leafletEvents: LeafletEvents = js.native
   
@@ -23,7 +23,7 @@ class MapEvented[P, E /* <: Evented */] protected ()
   
   def extractLeafletEvents(props: P): LeafletEvents = js.native
   
-  def fireLeafletEvent(`type`: String, data: js.Any): Unit = js.native
+  def fireLeafletEvent(`type`: String, data: Any): Unit = js.native
   
   var leafletElement: E = js.native
 }

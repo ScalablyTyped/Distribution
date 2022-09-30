@@ -8,11 +8,11 @@ import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetterParams
 import typings.reactVirtualized.reactVirtualizedBooleans.`false`
 import typings.reactVirtualized.reactVirtualizedBooleans.`true`
-import typings.reactVirtualized.reactVirtualizedNumbers.`-1`
-import typings.reactVirtualized.reactVirtualizedNumbers.`0`
-import typings.reactVirtualized.reactVirtualizedNumbers.`100`
-import typings.reactVirtualized.reactVirtualizedNumbers.`10`
-import typings.reactVirtualized.reactVirtualizedNumbers.`30`
+import typings.reactVirtualized.reactVirtualizedInts.`-1`
+import typings.reactVirtualized.reactVirtualizedInts.`0`
+import typings.reactVirtualized.reactVirtualizedInts.`100`
+import typings.reactVirtualized.reactVirtualizedInts.`10`
+import typings.reactVirtualized.reactVirtualizedInts.`30`
 import typings.reactVirtualized.reactVirtualizedStrings.auto
 import typings.reactVirtualized.reactVirtualizedStrings.grid
 import typings.reactVirtualized.reactVirtualizedStrings.rowgroup

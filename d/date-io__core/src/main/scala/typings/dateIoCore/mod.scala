@@ -257,6 +257,8 @@ object mod {
     
     def getCurrentLocaleCode(): String = js.native
     
+    def getDate(value: TDate): Double = js.native
+    
     def getDaysInMonth(value: TDate): Double = js.native
     
     def getDiff(value: TDate, comparing: TDate): Double = js.native
@@ -335,6 +337,8 @@ object mod {
     def parse(value: String, format: String): TDate | Null = js.native
     
     def parseISO(isString: String): TDate = js.native
+    
+    def setDate(value: TDate, count: Double): TDate = js.native
     
     def setHours(value: TDate, count: Double): TDate = js.native
     

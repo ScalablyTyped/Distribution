@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridXPathSource")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridXPathSource")
 @js.native
-class GridXPathSource protected ()
+open class GridXPathSource protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.GridXPathSource {
   def this(
     model: AbstractModel,
@@ -27,7 +27,7 @@ class GridXPathSource protected ()
 }
 object GridXPathSource {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridXPathSource")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridXPathSource")
   @js.native
   val ^ : js.Any = js.native
   
@@ -70,13 +70,13 @@ object GridXPathSource {
   inline def createInWidgetValueUnderDataSource(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridXPathSource]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridXPathSource.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridXPathSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridXPathSource.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridXPathSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

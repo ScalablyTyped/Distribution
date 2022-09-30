@@ -1823,9 +1823,9 @@ type MozContextProperties = _MozContextProperties | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals
-  - typings.csstype.csstypeNumbers.`0`
+  - typings.csstype.csstypeInts.`0`
   - java.lang.String
-  - typings.csstype.csstypeNumbers.`1`
+  - typings.csstype.csstypeInts.`1`
 */
 type MozForceBrokenImageIcon = _MozForceBrokenImageIcon | String
 

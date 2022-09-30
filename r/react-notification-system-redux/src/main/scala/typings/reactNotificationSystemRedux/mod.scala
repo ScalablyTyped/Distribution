@@ -12,8 +12,8 @@ object mod {
   
   @JSImport("react-notification-system-redux", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NotificationsProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NotificationsProps, js.Object, Any]
   @JSImport("react-notification-system-redux", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -22,10 +22,10 @@ object mod {
   @js.native
   val error: NotificationShow = js.native
   
-  inline def hide(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Action[js.Any]]
-  inline def hide(opts: String): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-  inline def hide(opts: Double): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-  inline def hide(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
+  inline def hide(): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Action[Any]]
+  inline def hide(opts: String): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
+  inline def hide(opts: Double): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
+  inline def hide(opts: Notification): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
   
   @JSImport("react-notification-system-redux", "info")
   @js.native
@@ -33,14 +33,14 @@ object mod {
   
   @JSImport("react-notification-system-redux", "reducer")
   @js.native
-  val reducer: NotificationsReducer[js.Any] = js.native
+  val reducer: NotificationsReducer[Any] = js.native
   
-  inline def removeAll(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Action[js.Any]]
+  inline def removeAll(): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Action[Any]]
   
-  inline def show(): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Action[js.Any]]
-  inline def show(opts: Unit, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
-  inline def show(opts: Notification): Action[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[js.Any]]
-  inline def show(opts: Notification, level: NotificationLevel): Action[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[js.Any]]
+  inline def show(): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Action[Any]]
+  inline def show(opts: Unit, level: NotificationLevel): Action[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[Any]]
+  inline def show(opts: Notification): Action[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any]).asInstanceOf[Action[Any]]
+  inline def show(opts: Notification, level: NotificationLevel): Action[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(opts.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Action[Any]]
   
   @JSImport("react-notification-system-redux", "success")
   @js.native
@@ -68,9 +68,9 @@ object mod {
     inline def warning: typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.warning = "warning".asInstanceOf[typings.reactNotificationSystemRedux.reactNotificationSystemReduxStrings.warning]
   }
   
-  type NotificationShow = js.Function1[/* opts */ js.UndefOr[Notification], Action[js.Any]]
+  type NotificationShow = js.Function1[/* opts */ js.UndefOr[Notification], Action[Any]]
   
-  type Notifications = Component[NotificationsProps, js.Object, js.Any]
+  type Notifications = Component[NotificationsProps, js.Object, Any]
   
   trait NotificationsProps
     extends StObject
@@ -91,11 +91,11 @@ object mod {
       
       inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
     }
   }
   
-  type NotificationsReducer[A /* <: Action[js.Any] */] = js.Function2[/* state */ NotificationsState, /* action */ A, NotificationsState]
+  type NotificationsReducer[A /* <: Action[Any] */] = js.Function2[/* state */ NotificationsState, /* action */ A, NotificationsState]
   
   type NotificationsState = js.Array[Notification]
 }

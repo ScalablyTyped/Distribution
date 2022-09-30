@@ -139,8 +139,8 @@ inline def secureStorage_=(x: typings.tabris.Storage): Unit = js.Dynamic.global.
   * @param delay The delay in milliseconds.
   * @param params One or more values passed on to the callback.
   */
-inline def setInterval(callback: js.Function, delay: Double, params: Any*): Any = (js.Dynamic.global.applyDynamic("setInterval")((List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
-inline def setInterval(callback: js.Function, delay: Unit, params: Any*): Any = (js.Dynamic.global.applyDynamic("setInterval")((List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+inline def setInterval(callback: js.Function, delay: Double, params: Any*): Any = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+inline def setInterval(callback: js.Function, delay: Unit, params: Any*): Any = (js.Dynamic.global.applyDynamic("setInterval")((scala.List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 
 /**
   * Calls the given function with `param` (and all following parameters) after the specified delay. The
@@ -149,8 +149,8 @@ inline def setInterval(callback: js.Function, delay: Unit, params: Any*): Any = 
   * @param delay The delay in milliseconds.
   * @param params One or more values passed on to the callback.
   */
-inline def setTimeout(callback: js.Function, delay: Double, params: Any*): Any = (js.Dynamic.global.applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
-inline def setTimeout(callback: js.Function, delay: Unit, params: Any*): Any = (js.Dynamic.global.applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+inline def setTimeout(callback: js.Function, delay: Double, params: Any*): Any = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+inline def setTimeout(callback: js.Function, delay: Unit, params: Any*): Any = (js.Dynamic.global.applyDynamic("setTimeout")((scala.List(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).`++`(params.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 
 inline def window: Window = js.Dynamic.global.selectDynamic("window").asInstanceOf[Window]
 inline def window_=(x: Window): Unit = js.Dynamic.global.updateDynamic("window")(x.asInstanceOf[js.Any])

@@ -1,42 +1,42 @@
 package typings.activexMshtml.MSHTML
 
-import typings.activexMshtml.activexMshtmlNumbers.`1024`
-import typings.activexMshtml.activexMshtmlNumbers.`131072`
-import typings.activexMshtml.activexMshtmlNumbers.`16384`
-import typings.activexMshtml.activexMshtmlNumbers.`16`
-import typings.activexMshtml.activexMshtmlNumbers.`1`
-import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typings.activexMshtml.activexMshtmlNumbers.`256`
-import typings.activexMshtml.activexMshtmlNumbers.`2`
-import typings.activexMshtml.activexMshtmlNumbers.`32768`
-import typings.activexMshtml.activexMshtmlNumbers.`32`
-import typings.activexMshtml.activexMshtmlNumbers.`4096`
-import typings.activexMshtml.activexMshtmlNumbers.`4`
-import typings.activexMshtml.activexMshtmlNumbers.`512`
-import typings.activexMshtml.activexMshtmlNumbers.`65536`
-import typings.activexMshtml.activexMshtmlNumbers.`8192`
-import typings.activexMshtml.activexMshtmlNumbers.`8`
+import typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typings.activexMshtml.activexMshtmlInts.`1024`
+import typings.activexMshtml.activexMshtmlInts.`131072`
+import typings.activexMshtml.activexMshtmlInts.`16384`
+import typings.activexMshtml.activexMshtmlInts.`16`
+import typings.activexMshtml.activexMshtmlInts.`1`
+import typings.activexMshtml.activexMshtmlInts.`256`
+import typings.activexMshtml.activexMshtmlInts.`2`
+import typings.activexMshtml.activexMshtmlInts.`32768`
+import typings.activexMshtml.activexMshtmlInts.`32`
+import typings.activexMshtml.activexMshtmlInts.`4096`
+import typings.activexMshtml.activexMshtmlInts.`4`
+import typings.activexMshtml.activexMshtmlInts.`512`
+import typings.activexMshtml.activexMshtmlInts.`65536`
+import typings.activexMshtml.activexMshtmlInts.`8192`
+import typings.activexMshtml.activexMshtmlInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typings.activexMshtml.activexMshtmlNumbers.`512`
-  - typings.activexMshtml.activexMshtmlNumbers.`4`
-  - typings.activexMshtml.activexMshtmlNumbers.`8`
-  - typings.activexMshtml.activexMshtmlNumbers.`65536`
-  - typings.activexMshtml.activexMshtmlNumbers.`32`
-  - typings.activexMshtml.activexMshtmlNumbers.`1024`
-  - typings.activexMshtml.activexMshtmlNumbers.`4096`
-  - typings.activexMshtml.activexMshtmlNumbers.`8192`
-  - typings.activexMshtml.activexMshtmlNumbers.`16384`
-  - typings.activexMshtml.activexMshtmlNumbers.`131072`
-  - typings.activexMshtml.activexMshtmlNumbers.`1`
-  - typings.activexMshtml.activexMshtmlNumbers.`16`
-  - typings.activexMshtml.activexMshtmlNumbers.`32768`
-  - typings.activexMshtml.activexMshtmlNumbers.`256`
-  - typings.activexMshtml.activexMshtmlNumbers.`2`
+  - typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typings.activexMshtml.activexMshtmlInts.`512`
+  - typings.activexMshtml.activexMshtmlInts.`4`
+  - typings.activexMshtml.activexMshtmlInts.`8`
+  - typings.activexMshtml.activexMshtmlInts.`65536`
+  - typings.activexMshtml.activexMshtmlInts.`32`
+  - typings.activexMshtml.activexMshtmlInts.`1024`
+  - typings.activexMshtml.activexMshtmlInts.`4096`
+  - typings.activexMshtml.activexMshtmlInts.`8192`
+  - typings.activexMshtml.activexMshtmlInts.`16384`
+  - typings.activexMshtml.activexMshtmlInts.`131072`
+  - typings.activexMshtml.activexMshtmlInts.`1`
+  - typings.activexMshtml.activexMshtmlInts.`16`
+  - typings.activexMshtml.activexMshtmlInts.`32768`
+  - typings.activexMshtml.activexMshtmlInts.`256`
+  - typings.activexMshtml.activexMshtmlInts.`2`
 */
 trait _HTML_PAINTER extends StObject
 object _HTML_PAINTER {
@@ -71,5 +71,5 @@ object _HTML_PAINTER {
   
   inline def HTMLPAINTER_TRANSPARENT: `2` = 2.asInstanceOf[`2`]
   
-  inline def HTML_PAINTER_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTML_PAINTER_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }

@@ -91,7 +91,7 @@ object menuItemsChoiceMod {
         
         inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         
-        inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+        inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value*))
         
         inline def setOnSelect(value: String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
         

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param {object} [options] - The configuration object.
   * The options accepted by the constructor are described in detail
-  * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+  * in [this document](https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md#creating-the-client-instance).
   * The common options are:
   * @param {object} [options.credentials] - Credentials object.
   * @param {string} [options.credentials.client_email]
@@ -34,15 +34,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     your project ID will be detected automatically.
   * @param {string} [options.apiEndpoint] - The domain name of the
   *     API remote host.
-  * @param {gax.ClientConfig} [options.clientConfig] - client configuration override.
-  *     TODO(@alexander-fenster): link to gax documentation.
-  * @param {boolean} fallback - Use HTTP fallback mode.
-  *     In fallback mode, a special browser-compatible transport implementation is used
-  *     instead of gRPC transport. In browser context (if the `window` object is defined)
-  *     the fallback mode is enabled automatically; set `options.fallback` to `false`
-  *     if you need to override this behavior.
+  * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+  *     Follows the structure of {@link gapicConfig}.
+  * @param {boolean | "rest"} [options.fallback] - Use HTTP fallback mode.
+  *     Pass "rest" to use HTTP/1.1 REST API instead of gRPC.
+  *     For more information, please check the
+  *     {@link https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md#http11-rest-api-mode documentation}.
+  * @param {gax} [gaxInstance]: loaded instance of `google-gax`. Useful if you
+  *     need to avoid loading the default gRPC version and want to use the fallback
+  *     HTTP implementation. Load only fallback version and pass it to the constructor:
+  *     ```
+  *     const gax = require('google-gax/build/src/fallback'); // avoids loading google-gax with gRPC
+  *     const client = new TextToSpeechClient({fallback: 'rest'}, gax);
+  *     ```
   */
-class TextToSpeechClient ()
+open class TextToSpeechClient ()
   extends typings.googleCloudTextToSpeech.v1Mod.TextToSpeechClient {
   def this(opts: ClientOptions) = this()
+  def this(
+    opts: Unit,
+    gaxInstance: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof gax */ Any
+  ) = this()
+  def this(
+    opts: ClientOptions,
+    gaxInstance: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof gax */ Any
+  ) = this()
 }

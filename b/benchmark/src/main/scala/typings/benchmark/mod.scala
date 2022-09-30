@@ -196,8 +196,8 @@ object mod {
   inline def indexOf[T](arr: js.Array[T], value: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  inline def invoke(benches: js.Array[Benchmark], name: String, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
-  inline def invoke(benches: js.Array[Benchmark], name: js.Object, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
+  inline def invoke(benches: js.Array[Benchmark], name: String, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((scala.List(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
+  inline def invoke(benches: js.Array[Benchmark], name: js.Object, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((scala.List(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
   
   /* static member */
   inline def join(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(obj.asInstanceOf[js.Any]).asInstanceOf[String]

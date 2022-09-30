@@ -12,7 +12,7 @@ object finalizationRegistryWrapperMod {
   val FinalizationRegistry: js.UndefOr[
     Instantiable1[
       /* cleanup */ js.Function1[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ /* cleanupToken */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ /* cleanupToken */ Any, 
         Unit
       ], 
       FinalizationRegistryType[js.Object]

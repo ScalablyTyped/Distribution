@@ -1,21 +1,33 @@
 package typings.reactToolbox
 
-import typings.react.mod.Component
 import typings.reactToolbox.chipChipMod.ChipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-toolbox/components/chip", JSImport.Namespace)
-@js.native
-object chipMod extends js.Object {
-  @js.native
-  class Chip ()
-    extends Component[ChipProps, js.Object, js.Any]
+object chipMod {
   
+  @JSImport("react-toolbox/components/chip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ChipProps, js.Object, js.Any]
+  open class default protected ()
+    extends typings.reactToolbox.chipChipMod.Chip {
+    def this(props: ChipProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ChipProps, context: Any) = this()
+  }
   
+  @JSImport("react-toolbox/components/chip", "Chip")
+  @js.native
+  open class Chip protected ()
+    extends typings.reactToolbox.chipChipMod.Chip {
+    def this(props: ChipProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ChipProps, context: Any) = this()
+  }
 }
-

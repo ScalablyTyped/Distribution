@@ -38,9 +38,9 @@ object mod {
   type CmpArgs = Double | js.Array[Double]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.geoipLite.geoipLiteNumbers.`1`
-    - typings.geoipLite.geoipLiteNumbers.`-1`
-    - typings.geoipLite.geoipLiteNumbers.`0`
+    - typings.geoipLite.geoipLiteInts.`1`
+    - typings.geoipLite.geoipLiteInts.`-1`
+    - typings.geoipLite.geoipLiteInts.`0`
     - scala.Null
   */
   type CmpResult = _CmpResult | Null

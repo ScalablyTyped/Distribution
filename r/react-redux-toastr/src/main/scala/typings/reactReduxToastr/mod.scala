@@ -15,8 +15,8 @@ object mod {
   
   @JSImport("react-redux-toastr", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReduxToastrProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReduxToastrProps, js.Object, Any]
   
   @JSImport("react-redux-toastr", "actions")
   @js.native
@@ -84,7 +84,7 @@ object mod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Element] = js.undefined
+    var component: js.UndefOr[(Component[js.Object, js.Object, Any]) | Element] = js.undefined
     
     var getState: js.UndefOr[js.Function1[/* state */ ToastrState, ToastrState]] = js.undefined
     
@@ -127,7 +127,7 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setComponent(value: (Component[js.Object, js.Object, js.Any]) | Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: (Component[js.Object, js.Object, Any]) | Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -200,7 +200,11 @@ object mod {
   
   trait ConfirmToastrOptions extends StObject {
     
+    var cancelText: js.UndefOr[String] = js.undefined
+    
     var disableCancel: js.UndefOr[Boolean] = js.undefined
+    
+    var okText: js.UndefOr[String] = js.undefined
     
     var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -215,9 +219,17 @@ object mod {
     
     extension [Self <: ConfirmToastrOptions](x: Self) {
       
+      inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+      
+      inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+      
       inline def setDisableCancel(value: Boolean): Self = StObject.set(x, "disableCancel", value.asInstanceOf[js.Any])
       
       inline def setDisableCancelUndefined: Self = StObject.set(x, "disableCancel", js.undefined)
+      
+      inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+      
+      inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
       
       inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
@@ -326,7 +338,7 @@ object mod {
     }
   }
   
-  type ReduxToastr = Component[ReduxToastrProps, js.Object, js.Any]
+  type ReduxToastr = Component[ReduxToastrProps, js.Object, Any]
   
   trait ReduxToastrProps extends StObject {
     
@@ -338,7 +350,7 @@ object mod {
     
     var newestOnTop: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     // This is currently not used, waiting for response from the package author to remove
     var position: js.UndefOr[positionType] = js.undefined
@@ -380,7 +392,7 @@ object mod {
       
       inline def setNewestOnTopUndefined: Self = StObject.set(x, "newestOnTop", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -417,18 +429,18 @@ object mod {
   @js.native
   trait ToastrActionCreators extends StObject {
     
-    def add(toastr: AddToastPayload): Action[js.Any] = js.native
+    def add(toastr: AddToastPayload): Action[Any] = js.native
     
-    def clean(): Action[js.Any] = js.native
+    def clean(): Action[Any] = js.native
     
-    def hideConfirm(): Action[js.Any] = js.native
+    def hideConfirm(): Action[Any] = js.native
     
-    def remove(id: String): Action[js.Any] = js.native
+    def remove(id: String): Action[Any] = js.native
     
-    def removeByType(`type`: toastType): Action[js.Any] = js.native
+    def removeByType(`type`: toastType): Action[Any] = js.native
     
-    def showConfirm(confirm: ConfirmToastrCustomOptions): Action[js.Any] = js.native
-    def showConfirm(confirm: ConfirmToastrOptions): Action[js.Any] = js.native
+    def showConfirm(confirm: ConfirmToastrCustomOptions): Action[Any] = js.native
+    def showConfirm(confirm: ConfirmToastrOptions): Action[Any] = js.native
   }
   
   @js.native
@@ -480,7 +492,7 @@ object mod {
       
       inline def setToastrs(value: js.Array[Toastr_]): Self = StObject.set(x, "toastrs", value.asInstanceOf[js.Any])
       
-      inline def setToastrsVarargs(value: Toastr_ *): Self = StObject.set(x, "toastrs", js.Array(value :_*))
+      inline def setToastrsVarargs(value: Toastr_ *): Self = StObject.set(x, "toastrs", js.Array(value*))
     }
   }
   

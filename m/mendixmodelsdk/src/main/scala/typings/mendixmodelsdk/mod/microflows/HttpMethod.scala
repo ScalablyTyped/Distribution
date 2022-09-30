@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.HttpMethod")
 @js.native
-class HttpMethod protected ()
+open class HttpMethod protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.HttpMethod {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

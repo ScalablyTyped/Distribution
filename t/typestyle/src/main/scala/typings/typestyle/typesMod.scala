@@ -112,7 +112,7 @@ import typings.csstype.mod.StandardPropertiesFallback
 import typings.csstype.mod.VendorPropertiesHyphenFallback
 import typings.std.NonNullable
 import typings.std.Record
-import typings.typestyle.typestyleNumbers.`0`
+import typings.typestyle.typestyleInts.`0`
 import typings.typestyle.typestyleStrings.all
 import typings.typestyle.typestyleStrings.dark
 import typings.typestyle.typestyleStrings.landscape

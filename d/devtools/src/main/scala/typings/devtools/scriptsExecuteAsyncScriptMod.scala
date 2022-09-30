@@ -17,6 +17,6 @@ object scriptsExecuteAsyncScriptMod {
     scriptTimeout: Double,
     dataProperty: String,
     dataFlag: String,
-    commandArgs: js.Any*
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any], script.asInstanceOf[js.Any], scriptTimeout.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any], dataFlag.asInstanceOf[js.Any], commandArgs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    commandArgs: Any*
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")((scala.List(_underscore.asInstanceOf[js.Any], script.asInstanceOf[js.Any], scriptTimeout.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any], dataFlag.asInstanceOf[js.Any])).`++`(commandArgs.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
 }

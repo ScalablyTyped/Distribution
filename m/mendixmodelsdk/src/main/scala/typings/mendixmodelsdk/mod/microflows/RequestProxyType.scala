@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.RequestProxyType")
 @js.native
-class RequestProxyType protected ()
+open class RequestProxyType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.RequestProxyType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

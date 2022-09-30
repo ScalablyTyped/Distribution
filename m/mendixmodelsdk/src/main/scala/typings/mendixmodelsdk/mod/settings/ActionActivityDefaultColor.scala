@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "settings.ActionActivityDefaultColor")
 @js.native
-class ActionActivityDefaultColor protected ()
+open class ActionActivityDefaultColor protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.settings.ActionActivityDefaultColor {
   def this(
     model: AbstractModel,

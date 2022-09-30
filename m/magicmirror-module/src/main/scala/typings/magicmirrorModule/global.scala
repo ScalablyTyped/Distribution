@@ -1,8 +1,8 @@
 package typings.magicmirrorModule
 
 import typings.magicmirrorModule.Module.ModuleProperties
-import typings.magicmirrorModule.magicmirrorModuleNumbers.`12`
-import typings.magicmirrorModule.magicmirrorModuleNumbers.`24`
+import typings.magicmirrorModule.magicmirrorModuleInts.`12`
+import typings.magicmirrorModule.magicmirrorModuleInts.`24`
 import typings.magicmirrorModule.magicmirrorModuleStrings.imperial
 import typings.magicmirrorModule.magicmirrorModuleStrings.metric
 import typings.std.NonNullable

@@ -13,8 +13,8 @@ trait TypeofimportedActions extends StObject {
   def addBlockStyles(blockName: String, styles: js.Array[BlockStyle]): Unit = js.native
   def addBlockStyles(blockName: String, styles: BlockStyle): Unit = js.native
   
-  def addBlockTypes(blockTypes: js.Array[BlockConfiguration[js.Any]]): Unit = js.native
-  def addBlockTypes(blockTypes: BlockConfiguration[js.Any]): Unit = js.native
+  def addBlockTypes(blockTypes: js.Array[BlockConfiguration[Any]]): Unit = js.native
+  def addBlockTypes(blockTypes: BlockConfiguration[Any]): Unit = js.native
   
   def removeBlockStyles(blockName: String, styleNames: String): Unit = js.native
   def removeBlockStyles(blockName: String, styleNames: js.Array[String]): Unit = js.native

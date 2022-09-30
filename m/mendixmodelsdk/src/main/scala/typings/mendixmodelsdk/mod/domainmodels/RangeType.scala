@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.RangeType")
 @js.native
-class RangeType protected ()
+open class RangeType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.RangeType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

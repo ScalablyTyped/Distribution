@@ -1,10 +1,10 @@
 package typings.arrayPrototypeFlat
 
-import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`0`
-import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`1`
-import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`2`
-import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`3`
-import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`4`
+import typings.arrayPrototypeFlat.arrayPrototypeFlatInts.`0`
+import typings.arrayPrototypeFlat.arrayPrototypeFlatInts.`1`
+import typings.arrayPrototypeFlat.arrayPrototypeFlatInts.`2`
+import typings.arrayPrototypeFlat.arrayPrototypeFlatInts.`3`
+import typings.arrayPrototypeFlat.arrayPrototypeFlatInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

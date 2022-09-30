@@ -26,17 +26,17 @@ trait Float extends StObject {
   
   var lineHeight: Unit
   
-  var listStyleType: String
+  var listStyleType: Unit
   
-  var margin: String
+  var margin: Unit
   
-  var marginBottom: Unit
+  var marginBottom: String
   
   var marginLeft: Unit
   
   var marginRight: Unit
   
-  var padding: String
+  var padding: Unit
   
   var position: Unit
   
@@ -61,12 +61,12 @@ object Float {
     fontSize: Unit,
     height: Unit,
     lineHeight: Unit,
-    listStyleType: String,
-    margin: String,
-    marginBottom: Unit,
+    listStyleType: Unit,
+    margin: Unit,
+    marginBottom: String,
     marginLeft: Unit,
     marginRight: Unit,
-    padding: String,
+    padding: Unit,
     position: Unit,
     transition: Unit,
     visibility: Unit,
@@ -99,17 +99,17 @@ object Float {
     
     inline def setLineHeight(value: Unit): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    inline def setListStyleType(value: String): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
+    inline def setListStyleType(value: Unit): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
     
-    inline def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Unit): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMarginBottom(value: Unit): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: String): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     inline def setMarginLeft(value: Unit): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     inline def setMarginRight(value: Unit): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Unit): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Unit): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

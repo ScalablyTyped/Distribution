@@ -1,7 +1,6 @@
 package typings.node
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.nodeStrings.Backslash
 import typings.node.nodeStrings.Colon
 import typings.node.nodeStrings.Semicolon
 import typings.node.nodeStrings.Slash
@@ -243,7 +242,7 @@ object pathMod extends Shortcut {
     /**
       * The platform-specific file separator. '\\' or '/'.
       */
-    val sep: Backslash | Slash = js.native
+    val sep: String | Slash = js.native
     
     /**
       * On Windows systems only, returns an equivalent namespace-prefixed path for the given path.

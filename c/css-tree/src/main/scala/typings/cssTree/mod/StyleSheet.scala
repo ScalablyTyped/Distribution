@@ -9,14 +9,14 @@ trait StyleSheet
      with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode]
+  var children: typings.cssTree.mod.List[CssNode]
   
   @JSName("type")
   var type_StyleSheet: typings.cssTree.cssTreeStrings.StyleSheet
 }
 object StyleSheet {
   
-  inline def apply(children: List[CssNode]): StyleSheet = {
+  inline def apply(children: typings.cssTree.mod.List[CssNode]): StyleSheet = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StyleSheet")
     __obj.asInstanceOf[StyleSheet]
@@ -24,7 +24,7 @@ object StyleSheet {
   
   extension [Self <: StyleSheet](x: Self) {
     
-    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.cssTree.cssTreeStrings.StyleSheet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

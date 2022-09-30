@@ -5,6 +5,7 @@ import typings.delay.anon.Once
 import typings.delay.anon.Optionsvalueunknownundefi
 import typings.delay.anon.Value
 import typings.delay.delayStrings.abort
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,7 +76,8 @@ object mod {
   
   @js.native
   trait ClearablePromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     /**
     		Clears the delay and settles the promise.

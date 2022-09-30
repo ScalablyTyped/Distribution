@@ -149,47 +149,47 @@ object labelMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.plottable.plottableNumbers.`12`
-    - typings.plottable.plottableNumbers.`13`
-    - typings.plottable.plottableNumbers.`14`
-    - typings.plottable.plottableNumbers.`15`
-    - typings.plottable.plottableNumbers.`16`
-    - typings.plottable.plottableNumbers.`17`
-    - typings.plottable.plottableNumbers.`18`
-    - typings.plottable.plottableNumbers.`19`
-    - typings.plottable.plottableNumbers.`20`
-    - typings.plottable.plottableNumbers.`21`
-    - typings.plottable.plottableNumbers.`22`
-    - typings.plottable.plottableNumbers.`23`
-    - typings.plottable.plottableNumbers.`24`
+    - typings.plottable.plottableInts.`12`
+    - typings.plottable.plottableInts.`13`
+    - typings.plottable.plottableInts.`14`
+    - typings.plottable.plottableInts.`15`
+    - typings.plottable.plottableInts.`16`
+    - typings.plottable.plottableInts.`17`
+    - typings.plottable.plottableInts.`18`
+    - typings.plottable.plottableInts.`19`
+    - typings.plottable.plottableInts.`20`
+    - typings.plottable.plottableInts.`21`
+    - typings.plottable.plottableInts.`22`
+    - typings.plottable.plottableInts.`23`
+    - typings.plottable.plottableInts.`24`
   */
   trait LabelFontSizePx extends StObject
   object LabelFontSizePx {
     
-    inline def `12`: typings.plottable.plottableNumbers.`12` = 12.asInstanceOf[typings.plottable.plottableNumbers.`12`]
+    inline def `12`: typings.plottable.plottableInts.`12` = 12.asInstanceOf[typings.plottable.plottableInts.`12`]
     
-    inline def `13`: typings.plottable.plottableNumbers.`13` = 13.asInstanceOf[typings.plottable.plottableNumbers.`13`]
+    inline def `13`: typings.plottable.plottableInts.`13` = 13.asInstanceOf[typings.plottable.plottableInts.`13`]
     
-    inline def `14`: typings.plottable.plottableNumbers.`14` = 14.asInstanceOf[typings.plottable.plottableNumbers.`14`]
+    inline def `14`: typings.plottable.plottableInts.`14` = 14.asInstanceOf[typings.plottable.plottableInts.`14`]
     
-    inline def `15`: typings.plottable.plottableNumbers.`15` = 15.asInstanceOf[typings.plottable.plottableNumbers.`15`]
+    inline def `15`: typings.plottable.plottableInts.`15` = 15.asInstanceOf[typings.plottable.plottableInts.`15`]
     
-    inline def `16`: typings.plottable.plottableNumbers.`16` = 16.asInstanceOf[typings.plottable.plottableNumbers.`16`]
+    inline def `16`: typings.plottable.plottableInts.`16` = 16.asInstanceOf[typings.plottable.plottableInts.`16`]
     
-    inline def `17`: typings.plottable.plottableNumbers.`17` = 17.asInstanceOf[typings.plottable.plottableNumbers.`17`]
+    inline def `17`: typings.plottable.plottableInts.`17` = 17.asInstanceOf[typings.plottable.plottableInts.`17`]
     
-    inline def `18`: typings.plottable.plottableNumbers.`18` = 18.asInstanceOf[typings.plottable.plottableNumbers.`18`]
+    inline def `18`: typings.plottable.plottableInts.`18` = 18.asInstanceOf[typings.plottable.plottableInts.`18`]
     
-    inline def `19`: typings.plottable.plottableNumbers.`19` = 19.asInstanceOf[typings.plottable.plottableNumbers.`19`]
+    inline def `19`: typings.plottable.plottableInts.`19` = 19.asInstanceOf[typings.plottable.plottableInts.`19`]
     
-    inline def `20`: typings.plottable.plottableNumbers.`20` = 20.asInstanceOf[typings.plottable.plottableNumbers.`20`]
+    inline def `20`: typings.plottable.plottableInts.`20` = 20.asInstanceOf[typings.plottable.plottableInts.`20`]
     
-    inline def `21`: typings.plottable.plottableNumbers.`21` = 21.asInstanceOf[typings.plottable.plottableNumbers.`21`]
+    inline def `21`: typings.plottable.plottableInts.`21` = 21.asInstanceOf[typings.plottable.plottableInts.`21`]
     
-    inline def `22`: typings.plottable.plottableNumbers.`22` = 22.asInstanceOf[typings.plottable.plottableNumbers.`22`]
+    inline def `22`: typings.plottable.plottableInts.`22` = 22.asInstanceOf[typings.plottable.plottableInts.`22`]
     
-    inline def `23`: typings.plottable.plottableNumbers.`23` = 23.asInstanceOf[typings.plottable.plottableNumbers.`23`]
+    inline def `23`: typings.plottable.plottableInts.`23` = 23.asInstanceOf[typings.plottable.plottableInts.`23`]
     
-    inline def `24`: typings.plottable.plottableNumbers.`24` = 24.asInstanceOf[typings.plottable.plottableNumbers.`24`]
+    inline def `24`: typings.plottable.plottableInts.`24` = 24.asInstanceOf[typings.plottable.plottableInts.`24`]
   }
 }

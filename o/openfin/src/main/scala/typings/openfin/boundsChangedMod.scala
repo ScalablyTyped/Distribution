@@ -1,9 +1,9 @@
 package typings.openfin
 
 import typings.openfin.baseMod.Reply
-import typings.openfin.openfinNumbers.`0`
-import typings.openfin.openfinNumbers.`1`
-import typings.openfin.openfinNumbers.`2`
+import typings.openfin.openfinInts.`0`
+import typings.openfin.openfinInts.`1`
+import typings.openfin.openfinInts.`2`
 import typings.openfin.openfinStrings.`bounds-changed`
 import typings.openfin.openfinStrings.window
 import org.scalablytyped.runtime.StObject
@@ -17,9 +17,9 @@ object boundsChangedMod {
   open class default () extends BoundsChangedReply
   
   /* Rewritten from type alias, can be one of: 
-    - typings.openfin.openfinNumbers.`0`
-    - typings.openfin.openfinNumbers.`1`
-    - typings.openfin.openfinNumbers.`2`
+    - typings.openfin.openfinInts.`0`
+    - typings.openfin.openfinInts.`1`
+    - typings.openfin.openfinInts.`2`
   */
   trait BoundsChangeType extends StObject
   object BoundsChangeType {

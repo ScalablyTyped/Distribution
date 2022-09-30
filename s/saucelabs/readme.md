@@ -1,7 +1,7 @@
 
 # Scala.js typings for saucelabs
 
-Typings are for version 4.5.2
+Typings are for version 7.2.0
 
 ## Library description:
 A wrapper around Sauce Labs REST API
@@ -10,10 +10,10 @@ A wrapper around Sauce Labs REST API
 | ------------------ | :-------------: |
 | Full name          | saucelabs |
 | Keywords           | - |
-| # releases         | 55 |
-| # dependents       | 102 |
-| # downloads        | 67290694 |
-| # stars            | 1 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 5826298.0 |
+| # stars            | 88.0 |
 
 ## Links
 - [Homepage](https://github.com/saucelabs/node-saucelabs)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "merge-anything" : "2.4.4"
+      "merge-anything" : "5.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "merge-anything" : "2.4.4"
+      "merge-anything" : "5.0.4"
     }
   ],
   "compile-devDependencies" : [

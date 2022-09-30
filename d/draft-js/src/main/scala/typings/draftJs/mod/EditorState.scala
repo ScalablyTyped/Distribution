@@ -3,16 +3,87 @@ package typings.draftJs.mod
 import typings.draftJs.mod.Draft.Model.Decorators.DraftDecoratorType
 import typings.draftJs.mod.Draft.Model.ImmutableData.DraftInlineStyle
 import typings.draftJs.mod.Draft.Model.ImmutableData.EditorChangeType
+import typings.immutable.mod.OrderedMap
+import typings.immutable.mod.Stack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("draft-js", "EditorState")
 @js.native
-class EditorState ()
-  extends typings.draftJs.mod.Draft.Model.ImmutableData.EditorState
+open class EditorState ()
+  extends StObject
+     with typings.draftJs.mod.Draft.Model.ImmutableData.EditorState {
+  
+  /* CompleteClass */
+  override def getAllowUndo(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def getBlockTree(blockKey: String): typings.immutable.mod.List[Any] = js.native
+  
+  /* CompleteClass */
+  override def getCurrentContent(): typings.draftJs.mod.Draft.Model.ImmutableData.ContentState = js.native
+  
+  /**
+    * Get the appropriate inline style for the editor state. If an
+    * override is in place, use it. Otherwise, the current style is
+    * based on the location of the selection state.
+    */
+  /* CompleteClass */
+  override def getCurrentInlineStyle(): DraftInlineStyle = js.native
+  
+  /* CompleteClass */
+  override def getDecorator(): DraftDecoratorType = js.native
+  
+  /* CompleteClass */
+  override def getDirectionMap(): OrderedMap[Any, Any] = js.native
+  
+  /**
+    * While editing, the user may apply inline style commands with a collapsed
+    * cursor, intending to type text that adopts the specified style. In this
+    * case, we track the specified style as an "override" that takes precedence
+    * over the inline style of the text adjacent to the cursor.
+    *
+    * If null, there is no override in place.
+    */
+  /* CompleteClass */
+  override def getInlineStyleOverride(): DraftInlineStyle = js.native
+  
+  /* CompleteClass */
+  override def getLastChangeType(): EditorChangeType = js.native
+  
+  /* CompleteClass */
+  override def getNativelyRenderedContent(): typings.draftJs.mod.Draft.Model.ImmutableData.ContentState = js.native
+  
+  /* CompleteClass */
+  override def getRedoStack(): Stack[typings.draftJs.mod.Draft.Model.ImmutableData.ContentState] = js.native
+  
+  /* CompleteClass */
+  override def getSelection(): typings.draftJs.mod.Draft.Model.ImmutableData.SelectionState = js.native
+  
+  /* CompleteClass */
+  override def getUndoStack(): Stack[typings.draftJs.mod.Draft.Model.ImmutableData.ContentState] = js.native
+  
+  /* CompleteClass */
+  override def isInCompositionMode(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def isSelectionAtEndOfContent(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def isSelectionAtStartOfContent(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def mustForceSelection(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def toJS(): js.Object = js.native
+}
 object EditorState {
+  
+  @JSImport("draft-js", "EditorState")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Incorporate native DOM selection changes into the EditorState. This
@@ -23,36 +94,24 @@ object EditorState {
     * To forcibly move the DOM selection, see `EditorState.forceSelection`.
     */
   /* static member */
-  @JSImport("draft-js", "EditorState.acceptSelection")
-  @js.native
-  def acceptSelection(
+  inline def acceptSelection(
     editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState,
     selection: typings.draftJs.mod.Draft.Model.ImmutableData.SelectionState
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("acceptSelection")(editorState.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /* static member */
-  @JSImport("draft-js", "EditorState.create")
-  @js.native
-  def create(config: js.Object): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  inline def create(config: js.Object): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /* static member */
-  @JSImport("draft-js", "EditorState.createEmpty")
-  @js.native
-  def createEmpty(): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
-  @JSImport("draft-js", "EditorState.createEmpty")
-  @js.native
-  def createEmpty(decorator: DraftDecoratorType): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  inline def createEmpty(): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")().asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
+  inline def createEmpty(decorator: DraftDecoratorType): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmpty")(decorator.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /* static member */
-  @JSImport("draft-js", "EditorState.createWithContent")
-  @js.native
-  def createWithContent(contentState: typings.draftJs.mod.Draft.Model.ImmutableData.ContentState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
-  @JSImport("draft-js", "EditorState.createWithContent")
-  @js.native
-  def createWithContent(
+  inline def createWithContent(contentState: typings.draftJs.mod.Draft.Model.ImmutableData.ContentState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithContent")(contentState.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
+  inline def createWithContent(
     contentState: typings.draftJs.mod.Draft.Model.ImmutableData.ContentState,
     decorator: DraftDecoratorType
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithContent")(contentState.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /**
     * At times, we need to force the DOM selection to be where we
@@ -67,12 +126,10 @@ object EditorState {
     * in ContentState.
     */
   /* static member */
-  @JSImport("draft-js", "EditorState.forceSelection")
-  @js.native
-  def forceSelection(
+  inline def forceSelection(
     editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState,
     selection: typings.draftJs.mod.Draft.Model.ImmutableData.SelectionState
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("forceSelection")(editorState.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /**
     * Force focus to the end of the editor. This is useful in scenarios
@@ -80,17 +137,13 @@ object EditorState {
     * to allow the user to continue working seamlessly.
     */
   /* static member */
-  @JSImport("draft-js", "EditorState.moveFocusToEnd")
-  @js.native
-  def moveFocusToEnd(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  inline def moveFocusToEnd(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFocusToEnd")(editorState.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /**
     * Move selection to the end of the editor without forcing focus.
     */
   /* static member */
-  @JSImport("draft-js", "EditorState.moveSelectionToEnd")
-  @js.native
-  def moveSelectionToEnd(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  inline def moveSelectionToEnd(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("moveSelectionToEnd")(editorState.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /**
     * Push the current ContentState onto the undo stack if it should be
@@ -98,42 +151,32 @@ object EditorState {
     * new current content.
     */
   /* static member */
-  @JSImport("draft-js", "EditorState.push")
-  @js.native
-  def push(
+  inline def push(
     editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState,
     contentState: typings.draftJs.mod.Draft.Model.ImmutableData.ContentState,
     changeType: EditorChangeType
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(editorState.asInstanceOf[js.Any], contentState.asInstanceOf[js.Any], changeType.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /**
     * Make the top ContentState in the redo stack the new current content and
     * push the current content onto the undo stack.
     */
   /* static member */
-  @JSImport("draft-js", "EditorState.redo")
-  @js.native
-  def redo(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  inline def redo(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("redo")(editorState.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /* static member */
-  @JSImport("draft-js", "EditorState.set")
-  @js.native
-  def set(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState, put: js.Object): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  inline def set(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState, put: js.Object): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(editorState.asInstanceOf[js.Any], put.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /* static member */
-  @JSImport("draft-js", "EditorState.setInlineStyleOverride")
-  @js.native
-  def setInlineStyleOverride(
+  inline def setInlineStyleOverride(
     editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState,
     inlineStyleOverride: DraftInlineStyle
-  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  ): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = (^.asInstanceOf[js.Dynamic].applyDynamic("setInlineStyleOverride")(editorState.asInstanceOf[js.Any], inlineStyleOverride.asInstanceOf[js.Any])).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
   
   /**
     * Make the top ContentState in the undo stack the new current content and
     * push the current content onto the redo stack.
     */
   /* static member */
-  @JSImport("draft-js", "EditorState.undo")
-  @js.native
-  def undo(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = js.native
+  inline def undo(editorState: typings.draftJs.mod.Draft.Model.ImmutableData.EditorState): typings.draftJs.mod.Draft.Model.ImmutableData.EditorState = ^.asInstanceOf[js.Dynamic].applyDynamic("undo")(editorState.asInstanceOf[js.Any]).asInstanceOf[typings.draftJs.mod.Draft.Model.ImmutableData.EditorState]
 }

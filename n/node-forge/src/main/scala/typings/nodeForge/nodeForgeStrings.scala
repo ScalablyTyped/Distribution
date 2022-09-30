@@ -110,6 +110,22 @@ object nodeForgeStrings {
   inline def `RSASSA-PKCS1-V1_5`: `RSASSA-PKCS1-V1_5` = "RSASSA-PKCS1-V1_5".asInstanceOf[`RSASSA-PKCS1-V1_5`]
   
   @js.native
+  sealed trait `SHA-384` extends StObject
+  inline def `SHA-384`: `SHA-384` = "SHA-384".asInstanceOf[`SHA-384`]
+  
+  @js.native
+  sealed trait `SHA-512` extends StObject
+  inline def `SHA-512`: `SHA-512` = "SHA-512".asInstanceOf[`SHA-512`]
+  
+  @js.native
+  sealed trait `SHA-512Slash224` extends StObject
+  inline def `SHA-512Slash224`: `SHA-512Slash224` = "SHA-512/224".asInstanceOf[`SHA-512Slash224`]
+  
+  @js.native
+  sealed trait `SHA-512Slash256` extends StObject
+  inline def `SHA-512Slash256`: `SHA-512Slash256` = "SHA-512/256".asInstanceOf[`SHA-512Slash256`]
+  
+  @js.native
   sealed trait SubjectPublicKeyInfo extends StObject
   inline def SubjectPublicKeyInfo: SubjectPublicKeyInfo = "SubjectPublicKeyInfo".asInstanceOf[SubjectPublicKeyInfo]
   
@@ -138,10 +154,7 @@ object nodeForgeStrings {
   inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait md5
-    extends StObject
-       with typings.nodeForge.mod.md.Algorithm
-       with typings.nodeForge.mod.hmac.Algorithm
+  sealed trait md5 extends StObject
   inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
@@ -155,10 +168,7 @@ object nodeForgeStrings {
   inline def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait sha1
-    extends StObject
-       with typings.nodeForge.mod.md.Algorithm
-       with typings.nodeForge.mod.hmac.Algorithm
+  sealed trait sha1 extends StObject
   inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
@@ -166,24 +176,24 @@ object nodeForgeStrings {
   inline def sha224: sha224 = "sha224".asInstanceOf[sha224]
   
   @js.native
-  sealed trait sha256
-    extends StObject
-       with typings.nodeForge.mod.md.Algorithm
-       with typings.nodeForge.mod.hmac.Algorithm
+  sealed trait sha256 extends StObject
   inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
   
   @js.native
-  sealed trait sha384
-    extends StObject
-       with typings.nodeForge.mod.md.Algorithm
+  sealed trait sha384 extends StObject
   inline def sha384: sha384 = "sha384".asInstanceOf[sha384]
   
   @js.native
-  sealed trait sha512
-    extends StObject
-       with typings.nodeForge.mod.md.Algorithm
-       with typings.nodeForge.mod.hmac.Algorithm
+  sealed trait sha512 extends StObject
   inline def sha512: sha512 = "sha512".asInstanceOf[sha512]
+  
+  @js.native
+  sealed trait sha512Slash224 extends StObject
+  inline def sha512Slash224: sha512Slash224 = "sha512/224".asInstanceOf[sha512Slash224]
+  
+  @js.native
+  sealed trait sha512Slash256 extends StObject
+  inline def sha512Slash256: sha512Slash256 = "sha512/256".asInstanceOf[sha512Slash256]
   
   @js.native
   sealed trait utf8

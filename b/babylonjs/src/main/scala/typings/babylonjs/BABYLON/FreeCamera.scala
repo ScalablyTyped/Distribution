@@ -10,8 +10,7 @@ trait FreeCamera
      with TargetCamera {
   
   /**
-    * @param displacement
-    * @hidden
+    * @internal
     */
   def _collideWithWorld(displacement: Vector3): Unit = js.native
   
@@ -21,7 +20,7 @@ trait FreeCamera
   
   /* private */ var _diffPosition: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _localDirection: Vector3 = js.native
   
   /* private */ var _needMoveForGravity: Any = js.native
@@ -32,7 +31,7 @@ trait FreeCamera
   
   /* private */ var _onCollisionPositionChange: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _transformedDirection: Vector3 = js.native
   
   /**

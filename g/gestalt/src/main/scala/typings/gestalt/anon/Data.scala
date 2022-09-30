@@ -8,14 +8,14 @@ trait Data[T] extends StObject {
   
   var data: T
   
-  var isMeasuring: js.UndefOr[Boolean] = js.undefined
+  var isMeasuring: Boolean
   
-  var itemIdx: js.UndefOr[Double] = js.undefined
+  var itemIdx: Double
 }
 object Data {
   
-  inline def apply[T](data: T): Data[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+  inline def apply[T](data: T, isMeasuring: Boolean, itemIdx: Double): Data[T] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isMeasuring = isMeasuring.asInstanceOf[js.Any], itemIdx = itemIdx.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[T]]
   }
   
@@ -25,10 +25,6 @@ object Data {
     
     inline def setIsMeasuring(value: Boolean): Self = StObject.set(x, "isMeasuring", value.asInstanceOf[js.Any])
     
-    inline def setIsMeasuringUndefined: Self = StObject.set(x, "isMeasuring", js.undefined)
-    
     inline def setItemIdx(value: Double): Self = StObject.set(x, "itemIdx", value.asInstanceOf[js.Any])
-    
-    inline def setItemIdxUndefined: Self = StObject.set(x, "itemIdx", js.undefined)
   }
 }

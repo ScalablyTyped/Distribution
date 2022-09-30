@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object wrapConnectorHooksMod {
   
-  @JSImport("react-dnd/lib/common/wrapConnectorHooks", JSImport.Namespace)
+  @JSImport("react-dnd/dist/internals/wrapConnectorHooks", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def wrapConnectorHooks(hooks: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapConnectorHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def wrapConnectorHooks(hooks: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapConnectorHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -10,22 +10,22 @@ object stepMainMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/main", "WorksStep")
   @js.native
-  class WorksStep protected ()
+  open class WorksStep protected ()
     extends typings.homeworks.componentStepMod.WorksStep {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/main", "WorksStepItem")
   @js.native
-  class WorksStepItem protected ()
+  open class WorksStepItem protected ()
     extends typings.homeworks.componentStepMod.WorksStepItem {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/main", "WorksStepTitle")
   @js.native
-  class WorksStepTitle protected ()
+  open class WorksStepTitle protected ()
     extends typings.homeworks.componentStepMod.WorksStepTitle {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
   }
 }

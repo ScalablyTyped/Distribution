@@ -644,7 +644,11 @@ object connectionMod {
     var proxyUrl: js.UndefOr[String] = js.undefined
     
     var refreshFn: js.UndefOr[
-        js.Function2[/* conn */ Connection, /* callback */ Callback[UserInfo], js.Promise[UserInfo]]
+        js.Function2[
+          /* conn */ Connection, 
+          /* callback */ js.Function3[/* err */ js.Error | Null, /* accessToken */ String, /* res */ js.UndefOr[Any], Unit], 
+          Any
+        ]
       ] = js.undefined
     
     var refreshToken: js.UndefOr[String] = js.undefined
@@ -698,7 +702,9 @@ object connectionMod {
       
       inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
       
-      inline def setRefreshFn(value: (/* conn */ Connection, /* callback */ Callback[UserInfo]) => js.Promise[UserInfo]): Self = StObject.set(x, "refreshFn", js.Any.fromFunction2(value))
+      inline def setRefreshFn(
+        value: (/* conn */ Connection, /* callback */ js.Function3[/* err */ js.Error | Null, /* accessToken */ String, /* res */ js.UndefOr[Any], Unit]) => Any
+      ): Self = StObject.set(x, "refreshFn", js.Any.fromFunction2(value))
       
       inline def setRefreshFnUndefined: Self = StObject.set(x, "refreshFn", js.undefined)
       

@@ -17,6 +17,8 @@ trait Typeofchrome extends StObject {
   
   def getDefaultService(): DriverService
   
+  def locateSynchronously(): String | Null
+  
   def setDefaultService(service: DriverService): Unit
 }
 object Typeofchrome {
@@ -26,9 +28,10 @@ object Typeofchrome {
     Options: TypeofOptions,
     ServiceBuilder: Instantiable0[ServiceBuilder],
     getDefaultService: () => DriverService,
+    locateSynchronously: () => String | Null,
     setDefaultService: DriverService => Unit
   ): Typeofchrome = {
-    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any], ServiceBuilder = ServiceBuilder.asInstanceOf[js.Any], getDefaultService = js.Any.fromFunction0(getDefaultService), setDefaultService = js.Any.fromFunction1(setDefaultService))
+    val __obj = js.Dynamic.literal(Driver = Driver.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any], ServiceBuilder = ServiceBuilder.asInstanceOf[js.Any], getDefaultService = js.Any.fromFunction0(getDefaultService), locateSynchronously = js.Any.fromFunction0(locateSynchronously), setDefaultService = js.Any.fromFunction1(setDefaultService))
     __obj.asInstanceOf[Typeofchrome]
   }
   
@@ -37,6 +40,8 @@ object Typeofchrome {
     inline def setDriver(value: TypeofDriverInstantiable): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
     inline def setGetDefaultService(value: () => DriverService): Self = StObject.set(x, "getDefaultService", js.Any.fromFunction0(value))
+    
+    inline def setLocateSynchronously(value: () => String | Null): Self = StObject.set(x, "locateSynchronously", js.Any.fromFunction0(value))
     
     inline def setOptions(value: TypeofOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

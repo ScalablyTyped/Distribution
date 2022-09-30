@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Routing.Line")
 @js.native
-class Line_ protected ()
-  extends LayerGroup_[js.Any] {
+open class Line_ protected () extends LayerGroup_[Any] {
   def this(route: IRoute) = this()
   def this(route: IRoute, options: LineOptions) = this()
   

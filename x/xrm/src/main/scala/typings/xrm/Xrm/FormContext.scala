@@ -51,7 +51,7 @@ trait FormContext extends StObject {
     * @returns The attribute.
     */
   @JSName("getAttribute")
-  def getAttribute_T_AttributeAny_T[T /* <: Attribute[Any] */](attributeName: String): T = js.native
+  def getAttribute_T_T[T /* <: Attribute[Any] */](attributeName: String): T = js.native
   
   /**
     * Gets all controls.
@@ -84,7 +84,7 @@ trait FormContext extends StObject {
     * @returns The control.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](controlName: String): T = js.native
+  def getControl_T_T[T /* <: Control */](controlName: String): T = js.native
   /**
     * Gets a control by index.
     * @param T A Control type
@@ -92,7 +92,7 @@ trait FormContext extends StObject {
     * @returns The control.
     */
   @JSName("getControl")
-  def getControl_T_Control_T[T /* <: Control */](index: Double): T = js.native
+  def getControl_T_T[T /* <: Control */](index: Double): T = js.native
   
   /**
     * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.

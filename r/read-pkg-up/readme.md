@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-pkg-up
 
-Typings are for version 7.0.1
+Typings are for version 9.1.0
 
 ## Library description:
 Read the closest package.json file
@@ -10,10 +10,10 @@ Read the closest package.json file
 | ------------------ | :-------------: |
 | Full name          | read-pkg-up |
 | Keywords           | json, read, parse, file, fs, graceful, load, package, find, up, find-up, findup, look-up, look, search, match, resolve, parent, parents, folder, directory, walk, walking, path |
-| # releases         | 5 |
-| # dependents       | 1072 |
-| # downloads        | 1435995077 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4878897666666666E8 |
+| # stars            | 219.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/read-pkg-up#readme)

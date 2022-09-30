@@ -17,7 +17,7 @@ trait SubscribableFunctions[T]
   
   def extend(requestedExtenders: ObservableExtenderOptions[T]): this.type = js.native
   @JSName("extend")
-  def extend_S_Subscribable_T_S[S /* <: Subscribable_[T] */](requestedExtenders: ObservableExtenderOptions[T]): S = js.native
+  def extend_S_S[S /* <: Subscribable_[T] */](requestedExtenders: ObservableExtenderOptions[T]): S = js.native
   
   def getSubscriptionsCount(): Double = js.native
   def getSubscriptionsCount(event: String): Double = js.native

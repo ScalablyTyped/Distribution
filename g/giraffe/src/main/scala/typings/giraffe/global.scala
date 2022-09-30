@@ -148,7 +148,7 @@ object global {
     def defaultOptions: DefaultOptions = js.native
     inline def defaultOptions_=(x: DefaultOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
-    inline def dispose(instance: GiraffeObject, args: Any*): GiraffeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(List(instance.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[GiraffeObject]
+    inline def dispose(instance: GiraffeObject, args: Any*): GiraffeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(scala.List(instance.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[GiraffeObject]
     
     inline def disposeThis(args: Any*): GiraffeObject = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeThis")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[GiraffeObject]
     

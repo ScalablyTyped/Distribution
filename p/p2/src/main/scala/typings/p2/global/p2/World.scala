@@ -1,9 +1,9 @@
 package typings.p2.global.p2
 
 import typings.p2.mod.WorldOptions
-import typings.p2.p2Numbers.`1`
-import typings.p2.p2Numbers.`2`
-import typings.p2.p2Numbers.`4`
+import typings.p2.p2Ints.`1`
+import typings.p2.p2Ints.`2`
+import typings.p2.p2Ints.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -259,11 +259,11 @@ trait IDBPDatabase[DBTypes /* <: DBSchema | Any */]
     * @param options
     */
   @JSName("transaction")
-  def transaction_Name_StoreNamesDBTypesMode_IDBTransactionMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
+  def transaction_NameMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
   @JSName("transaction")
-  def transaction_Name_StoreNamesDBTypesMode_IDBTransactionMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name, mode: Mode): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
+  def transaction_NameMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name, mode: Mode): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
   @JSName("transaction")
-  def transaction_Name_StoreNamesDBTypesMode_IDBTransactionMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name, mode: Mode, options: IDBTransactionOptions): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
+  def transaction_NameMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name, mode: Mode, options: IDBTransactionOptions): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
   @JSName("transaction")
-  def transaction_Name_StoreNamesDBTypesMode_IDBTransactionMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name, mode: Unit, options: IDBTransactionOptions): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
+  def transaction_NameMode[Name /* <: StoreNames[DBTypes] */, Mode /* <: IDBTransactionMode */](storeNames: Name, mode: Unit, options: IDBTransactionOptions): IDBPTransaction[DBTypes, js.Array[Name], Mode] = js.native
 }

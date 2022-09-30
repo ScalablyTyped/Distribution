@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.RpcMessagePartElement")
 @js.native
-class RpcMessagePartElement protected ()
+open class RpcMessagePartElement protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.RpcMessagePartElement {
   def this(
     model: AbstractModel,

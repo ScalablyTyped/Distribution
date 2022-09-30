@@ -12,6 +12,8 @@ object flyoutPropsMod {
     extends StObject
        with ViewProps {
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var horizontalOffset: js.UndefOr[Double] = js.undefined
     
     var isLightDismissEnabled: js.UndefOr[Boolean] = js.undefined
@@ -27,6 +29,10 @@ object flyoutPropsMod {
     
     var placement: js.UndefOr[Placement] = js.undefined
     
+    var shouldConstrainToRootBounds: js.UndefOr[Boolean] = js.undefined
+    
+    var showMode: js.UndefOr[ShowMode] = js.undefined
+    
     var target: js.UndefOr[ReactNode] = js.undefined
     
     var verticalOffset: js.UndefOr[Double] = js.undefined
@@ -39,6 +45,10 @@ object flyoutPropsMod {
     }
     
     extension [Self <: IFlyoutProps](x: Self) {
+      
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       inline def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
       
@@ -63,6 +73,14 @@ object flyoutPropsMod {
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setShouldConstrainToRootBounds(value: Boolean): Self = StObject.set(x, "shouldConstrainToRootBounds", value.asInstanceOf[js.Any])
+      
+      inline def setShouldConstrainToRootBoundsUndefined: Self = StObject.set(x, "shouldConstrainToRootBounds", js.undefined)
+      
+      inline def setShowMode(value: ShowMode): Self = StObject.set(x, "showMode", value.asInstanceOf[js.Any])
+      
+      inline def setShowModeUndefined: Self = StObject.set(x, "showMode", js.undefined)
       
       inline def setTarget(value: ReactNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -117,5 +135,23 @@ object flyoutPropsMod {
     inline def `top-edge-aligned-left`: typings.reactNativeWindows.reactNativeWindowsStrings.`top-edge-aligned-left` = "top-edge-aligned-left".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.`top-edge-aligned-left`]
     
     inline def `top-edge-aligned-right`: typings.reactNativeWindows.reactNativeWindowsStrings.`top-edge-aligned-right` = "top-edge-aligned-right".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.`top-edge-aligned-right`]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactNativeWindows.reactNativeWindowsStrings.auto
+    - typings.reactNativeWindows.reactNativeWindowsStrings.standard
+    - typings.reactNativeWindows.reactNativeWindowsStrings.transient
+    - typings.reactNativeWindows.reactNativeWindowsStrings.`transient-with-dismiss-on-pointer-move-away`
+  */
+  trait ShowMode extends StObject
+  object ShowMode {
+    
+    inline def auto: typings.reactNativeWindows.reactNativeWindowsStrings.auto = "auto".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.auto]
+    
+    inline def standard: typings.reactNativeWindows.reactNativeWindowsStrings.standard = "standard".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.standard]
+    
+    inline def transient: typings.reactNativeWindows.reactNativeWindowsStrings.transient = "transient".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.transient]
+    
+    inline def `transient-with-dismiss-on-pointer-move-away`: typings.reactNativeWindows.reactNativeWindowsStrings.`transient-with-dismiss-on-pointer-move-away` = "transient-with-dismiss-on-pointer-move-away".asInstanceOf[typings.reactNativeWindows.reactNativeWindowsStrings.`transient-with-dismiss-on-pointer-move-away`]
   }
 }

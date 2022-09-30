@@ -18,7 +18,7 @@ trait GlobalTheme extends StObject {
   
   var global: Global
   
-  var list: List
+  var list: typings.tuyaPanelKit.themeMod.List
   
   var picker: Picker
   
@@ -44,7 +44,7 @@ object GlobalTheme {
     checkbox: Checkbox,
     dialog: Dialog,
     global: Global,
-    list: List,
+    list: typings.tuyaPanelKit.themeMod.List,
     picker: Picker,
     popup: Popup,
     slider: Slider,
@@ -71,7 +71,7 @@ object GlobalTheme {
     
     inline def setGlobal(value: Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    inline def setList(value: List): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: typings.tuyaPanelKit.themeMod.List): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setPicker(value: Picker): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     

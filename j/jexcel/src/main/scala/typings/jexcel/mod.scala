@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.jexcel.anon.Colspan
 import typings.jexcel.anon.Id
-import typings.jexcel.jexcelNumbers.`0`
-import typings.jexcel.jexcelNumbers.`1`
+import typings.jexcel.jexcelInts.`0`
+import typings.jexcel.jexcelInts.`1`
 import typings.jexcel.jexcelStrings.autocomplete
 import typings.jexcel.jexcelStrings.calendar
 import typings.jexcel.jexcelStrings.center

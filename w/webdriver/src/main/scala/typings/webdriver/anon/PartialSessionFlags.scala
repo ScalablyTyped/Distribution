@@ -11,6 +11,10 @@ trait PartialSessionFlags extends StObject {
   
   var isChrome: js.UndefOr[Boolean] = js.undefined
   
+  var isDevTools: js.UndefOr[Boolean] = js.undefined
+  
+  var isFirefox: js.UndefOr[Boolean] = js.undefined
+  
   var isIOS: js.UndefOr[Boolean] = js.undefined
   
   var isMobile: js.UndefOr[Boolean] = js.undefined
@@ -37,6 +41,14 @@ object PartialSessionFlags {
     inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
     
     inline def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
+    
+    inline def setIsDevTools(value: Boolean): Self = StObject.set(x, "isDevTools", value.asInstanceOf[js.Any])
+    
+    inline def setIsDevToolsUndefined: Self = StObject.set(x, "isDevTools", js.undefined)
+    
+    inline def setIsFirefox(value: Boolean): Self = StObject.set(x, "isFirefox", value.asInstanceOf[js.Any])
+    
+    inline def setIsFirefoxUndefined: Self = StObject.set(x, "isFirefox", js.undefined)
     
     inline def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
     

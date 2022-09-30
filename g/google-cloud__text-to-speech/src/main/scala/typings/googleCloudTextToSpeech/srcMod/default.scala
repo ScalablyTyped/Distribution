@@ -1,7 +1,7 @@
 package typings.googleCloudTextToSpeech.srcMod
 
 import typings.googleCloudTextToSpeech.anon.TypeofTextToSpeechClient
-import typings.googleCloudTextToSpeech.anon.Typeofv1
+import typings.googleCloudTextToSpeech.anon.Typeofv1TextToSpeechClient
 import typings.googleCloudTextToSpeech.anon.Typeofv1beta1
 import typings.googleGax.clientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
@@ -26,7 +26,7 @@ object default {
     *
     * @param {object} [options] - The configuration object.
     * The options accepted by the constructor are described in detail
-    * in [this document](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#creating-the-client-instance).
+    * in [this document](https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md#creating-the-client-instance).
     * The common options are:
     * @param {object} [options.credentials] - Credentials object.
     * @param {string} [options.credentials.client_email]
@@ -47,25 +47,39 @@ object default {
     *     your project ID will be detected automatically.
     * @param {string} [options.apiEndpoint] - The domain name of the
     *     API remote host.
-    * @param {gax.ClientConfig} [options.clientConfig] - client configuration override.
-    *     TODO(@alexander-fenster): link to gax documentation.
-    * @param {boolean} fallback - Use HTTP fallback mode.
-    *     In fallback mode, a special browser-compatible transport implementation is used
-    *     instead of gRPC transport. In browser context (if the `window` object is defined)
-    *     the fallback mode is enabled automatically; set `options.fallback` to `false`
-    *     if you need to override this behavior.
+    * @param {gax.ClientConfig} [options.clientConfig] - Client configuration override.
+    *     Follows the structure of {@link gapicConfig}.
+    * @param {boolean | "rest"} [options.fallback] - Use HTTP fallback mode.
+    *     Pass "rest" to use HTTP/1.1 REST API instead of gRPC.
+    *     For more information, please check the
+    *     {@link https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md#http11-rest-api-mode documentation}.
+    * @param {gax} [gaxInstance]: loaded instance of `google-gax`. Useful if you
+    *     need to avoid loading the default gRPC version and want to use the fallback
+    *     HTTP implementation. Load only fallback version and pass it to the constructor:
+    *     ```
+    *     const gax = require('google-gax/build/src/fallback'); // avoids loading google-gax with gRPC
+    *     const client = new TextToSpeechClient({fallback: 'rest'}, gax);
+    *     ```
     */
-  class TextToSpeechClientCls ()
+  open class TextToSpeechClientCls ()
     extends typings.googleCloudTextToSpeech.v1Mod.TextToSpeechClient {
     def this(opts: ClientOptions) = this()
+    def this(
+      opts: Unit,
+      gaxInstance: /* import warning: importer.ImportType#apply Failed type conversion: typeof gax */ js.Any
+    ) = this()
+    def this(
+      opts: ClientOptions,
+      gaxInstance: /* import warning: importer.ImportType#apply Failed type conversion: typeof gax */ js.Any
+    ) = this()
   }
   
   inline def TextToSpeechClient_=(x: TypeofTextToSpeechClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextToSpeechClient")(x.asInstanceOf[js.Any])
   
   @JSImport("@google-cloud/text-to-speech/build/src", "default.v1")
   @js.native
-  def v1: Typeofv1 = js.native
-  inline def v1_=(x: Typeofv1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+  def v1: Typeofv1TextToSpeechClient = js.native
+  inline def v1_=(x: Typeofv1TextToSpeechClient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   
   @JSImport("@google-cloud/text-to-speech/build/src", "default.v1beta1")
   @js.native

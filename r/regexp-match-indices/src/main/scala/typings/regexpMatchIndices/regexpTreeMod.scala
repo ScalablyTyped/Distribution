@@ -61,7 +61,7 @@ object regexpTreeMod {
     handlers: TransformHandlers[AstRegExp] | js.Array[TransformHandlers[AstRegExp]]
   ): TransformResult[AstRegExp, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(regexp.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[TransformResult[AstRegExp, Any]]
   
-  inline def transform_T_AstNode[T /* <: AstNode */](ast: T, handlers: TransformHandlers[T] | js.Array[TransformHandlers[T]]): TransformResult[T, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(ast.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[TransformResult[T, Any]]
+  inline def transform_T[T /* <: AstNode */](ast: T, handlers: TransformHandlers[T] | js.Array[TransformHandlers[T]]): TransformResult[T, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(ast.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[TransformResult[T, Any]]
   
   inline def traverse_Ast[T /* <: AstNode */](
     ast: T,

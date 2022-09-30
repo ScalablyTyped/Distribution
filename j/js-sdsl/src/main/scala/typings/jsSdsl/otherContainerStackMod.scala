@@ -27,8 +27,6 @@ object otherContainerStackMod {
       */
     def push(element: T): Unit = js.native
     
-    /* private */ var stack: Any = js.native
-    
     /**
       * @description Accesses the end element.
       */

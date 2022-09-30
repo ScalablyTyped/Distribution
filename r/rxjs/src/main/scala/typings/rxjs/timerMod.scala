@@ -2,7 +2,7 @@ package typings.rxjs
 
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.internalTypesMod.SchedulerLike
-import typings.rxjs.rxjsNumbers.`0`
+import typings.rxjs.rxjsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

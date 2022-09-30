@@ -250,7 +250,7 @@ object focusScopeMod {
   
   inline def FocusScope(props: ForwardRefProps[HTMLDivElement, FocusScopeDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def FocusScope_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, FocusScopeCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def FocusScope_TR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, FocusScopeCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def FocusScope_a[R /* <: HTMLElement */](props: ForwardRefProps[R, FocusScopeIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusScope")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.NullValueOption")
 @js.native
-class NullValueOption protected ()
+open class NullValueOption protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.NullValueOption {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

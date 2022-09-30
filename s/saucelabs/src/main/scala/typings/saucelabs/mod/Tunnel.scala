@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Tunnel
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var creation_time: js.UndefOr[Double] = js.undefined
   
@@ -66,13 +66,13 @@ object Tunnel {
     
     inline def setDirect_domainsUndefined: Self = StObject.set(x, "direct_domains", js.undefined)
     
-    inline def setDirect_domainsVarargs(value: String*): Self = StObject.set(x, "direct_domains", js.Array(value :_*))
+    inline def setDirect_domainsVarargs(value: String*): Self = StObject.set(x, "direct_domains", js.Array(value*))
     
     inline def setDomain_names(value: js.Array[String]): Self = StObject.set(x, "domain_names", value.asInstanceOf[js.Any])
     
     inline def setDomain_namesUndefined: Self = StObject.set(x, "domain_names", js.undefined)
     
-    inline def setDomain_namesVarargs(value: String*): Self = StObject.set(x, "domain_names", js.Array(value :_*))
+    inline def setDomain_namesVarargs(value: String*): Self = StObject.set(x, "domain_names", js.Array(value*))
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
@@ -100,7 +100,7 @@ object Tunnel {
     
     inline def setNo_ssl_bump_domainsUndefined: Self = StObject.set(x, "no_ssl_bump_domains", js.undefined)
     
-    inline def setNo_ssl_bump_domainsVarargs(value: String*): Self = StObject.set(x, "no_ssl_bump_domains", js.Array(value :_*))
+    inline def setNo_ssl_bump_domainsVarargs(value: String*): Self = StObject.set(x, "no_ssl_bump_domains", js.Array(value*))
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

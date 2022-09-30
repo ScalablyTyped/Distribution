@@ -1,7 +1,7 @@
 
 # Scala.js typings for download
 
-Typings are for version 6.2
+Typings are for version 8.0
 
 ## Library description:
 Download and extract files
@@ -10,10 +10,10 @@ Download and extract files
 | ------------------ | :-------------: |
 | Full name          | download |
 | Keywords           | download, extract, http, request, url |
-| # releases         | 2 |
-| # dependents       | 1088 |
-| # downloads        | 160099134 |
-| # stars            | 99 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2704658E7 |
+| # stars            | 1179.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/download#readme)

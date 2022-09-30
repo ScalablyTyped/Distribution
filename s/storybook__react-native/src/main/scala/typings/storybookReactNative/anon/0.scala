@@ -19,6 +19,6 @@ object `0` {
     
     inline def setTransform(value: js.Array[Scale]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    inline def setTransformVarargs(value: Scale*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Scale*): Self = StObject.set(x, "transform", js.Array(value*))
   }
 }

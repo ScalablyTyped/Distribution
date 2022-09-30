@@ -34,6 +34,7 @@ import typings.awsSdkSignatureV4.signatureV4Mod.SignatureV4Init
 import typings.awsSdkSmithyClient.defaultsModeMod.DefaultsMode
 import typings.awsSdkSmithyClient.mod.Client
 import typings.awsSdkTypes.anon.ForceRefresh
+import typings.awsSdkTypes.authMod.AuthScheme
 import typings.awsSdkTypes.credentialsMod.Credentials
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.httpMod.Endpoint
@@ -379,7 +380,8 @@ object cognitoIdentityClientMod {
     var disableHostPrefix: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The fully qualified endpoint of the webservice. This is only required when using a custom endpoint (for example, when using a local version of S3).
+      * The fully qualified endpoint of the webservice. This is only required when using
+      * a custom endpoint (for example, when using a local version of S3).
       */
     var endpoint: js.UndefOr[String | Endpoint | Provider[Endpoint]] = js.undefined
     
@@ -444,7 +446,9 @@ object cognitoIdentityClientMod {
     /**
       * The signer to use when signing requests.
       */
-    var signer: js.UndefOr[RequestSigner | Provider[RequestSigner]] = js.undefined
+    var signer: js.UndefOr[
+        RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ] = js.undefined
     
     /**
       * The injectable SigV4-compatible signer class constructor. If not supplied,
@@ -619,13 +623,15 @@ object cognitoIdentityClientMod {
       
       inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
-      inline def setSigner(value: RequestSigner | Provider[RequestSigner]): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(
+        value: RequestSigner | (js.Function1[/* authScheme */ js.UndefOr[AuthScheme], js.Promise[RequestSigner]])
+      ): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructor(value: Instantiable1[/* options */ SignatureV4Init & SignatureV4CryptoInit, RequestSigner]): Self = StObject.set(x, "signerConstructor", value.asInstanceOf[js.Any])
       
       inline def setSignerConstructorUndefined: Self = StObject.set(x, "signerConstructor", js.undefined)
       
-      inline def setSignerFunction0(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
+      inline def setSignerFunction1(value: /* authScheme */ js.UndefOr[AuthScheme] => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction1(value))
       
       inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
@@ -678,6 +684,7 @@ object cognitoIdentityClientMod {
   type CognitoIdentityClientResolvedConfig = CognitoIdentityClientResolvedConfigType
   
   /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyResolvedConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions> & std.Required<@aws-sdk/client-cognito-identity.@aws-sdk/client-cognito-identity/dist-types/CognitoIdentityClient.ClientDefaults> & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionResolvedConfig & @aws-sdk/config-resolver.@aws-sdk/config-resolver.EndpointsResolvedConfig & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryResolvedConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderResolvedConfig & @aws-sdk/middleware-signing.@aws-sdk/middleware-signing.AwsAuthResolvedConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentResolvedConfig */
+  @js.native
   trait CognitoIdentityClientResolvedConfigType extends StObject {
     
     /**
@@ -685,302 +692,180 @@ object cognitoIdentityClientMod {
       * not planned to be used by customer code.
       * @internal
       */
-    val apiVersion: String
+    val apiVersion: String = js.native
     
-    def base64Decoder(input: String): js.typedarray.Uint8Array
+    def base64Decoder(input: String): js.typedarray.Uint8Array = js.native
     @JSName("base64Decoder")
-    var base64Decoder_Original: Decoder
+    var base64Decoder_Original: Decoder = js.native
     
-    def base64Encoder(input: js.typedarray.Uint8Array): String
+    def base64Encoder(input: js.typedarray.Uint8Array): String = js.native
     @JSName("base64Encoder")
-    var base64Encoder_Original: Encoder
+    var base64Encoder_Original: Encoder = js.native
     
-    def bodyLengthChecker(body: Any): js.UndefOr[Double]
+    def bodyLengthChecker(body: Any): js.UndefOr[Double] = js.native
     @JSName("bodyLengthChecker")
-    var bodyLengthChecker_Original: BodyLengthCalculator
+    var bodyLengthChecker_Original: BodyLengthCalculator = js.native
     
-    def credentialDefaultProvider(input: Any): Provider[Credentials]
+    def credentialDefaultProvider(input: Any): Provider[Credentials] = js.native
     @JSName("credentialDefaultProvider")
-    var credentialDefaultProvider_Original: js.Function1[/* input */ Any, Provider[Credentials]]
+    var credentialDefaultProvider_Original: js.Function1[/* input */ Any, Provider[Credentials]] = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.credentials}
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
-    def credentials(): js.Promise[Credentials]
-    def credentials(options: ForceRefresh): js.Promise[Credentials]
+    def credentials(): js.Promise[Credentials] = js.native
+    def credentials(options: ForceRefresh): js.Promise[Credentials] = js.native
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.credentials}
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
     @JSName("credentials")
-    var credentials_Original: MemoizedProvider[Credentials]
+    var credentials_Original: MemoizedProvider[Credentials] = js.native
     
     /**
       * The custom user agent header that would be appended to default one
       */
-    var customUserAgent: js.UndefOr[UserAgent] = js.undefined
+    var customUserAgent: js.UndefOr[UserAgent] = js.native
     
-    def defaultUserAgentProvider(): js.Promise[UserAgent]
+    def defaultUserAgentProvider(): js.Promise[UserAgent] = js.native
     /**
       * The provider populating default tracking information to be sent with `user-agent`, `x-amz-user-agent` header.
       * @internal
       */
     @JSName("defaultUserAgentProvider")
-    var defaultUserAgentProvider_Original: Provider[UserAgent]
+    var defaultUserAgentProvider_Original: Provider[UserAgent] = js.native
     
-    var defaultsMode: DefaultsMode | Provider[DefaultsMode]
+    var defaultsMode: DefaultsMode | Provider[DefaultsMode] = js.native
     
-    var disableHostPrefix: Boolean
+    var disableHostPrefix: Boolean = js.native
     
     /**
       * Resolved value for input {@link EndpointsInputConfig.endpoint}
       */
-    def endpoint(): js.Promise[Endpoint]
+    def endpoint(): js.Promise[Endpoint] = js.native
     /**
       * Resolved value for input {@link EndpointsInputConfig.endpoint}
       */
     @JSName("endpoint")
-    var endpoint_Original: Provider[Endpoint]
+    var endpoint_Original: Provider[Endpoint] = js.native
     
     /**
       * Whether the endpoint is specified by caller.
       * @internal
       */
-    var isCustomEndpoint: Boolean
+    var isCustomEndpoint: Boolean = js.native
     
-    var logger: Logger
+    var logger: Logger = js.native
     
     /**
       * Resolved value for input config {@link RetryInputConfig.maxAttempts}
       */
-    def maxAttempts(): js.Promise[Double]
+    def maxAttempts(): js.Promise[Double] = js.native
     /**
       * Resolved value for input config {@link RetryInputConfig.maxAttempts}
       */
     @JSName("maxAttempts")
-    var maxAttempts_Original: (Double | Provider[Double]) & Provider[Double]
+    var maxAttempts_Original: (Double | Provider[Double]) & Provider[Double] = js.native
     
     /**
       * Resolved value for input config {@link RegionInputConfig.region}
       */
-    def region(): js.Promise[String]
+    def region(): js.Promise[String] = js.native
     
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]]
-    def regionInfoProvider(region: String, options: RegionInfoProviderOptions): js.Promise[js.UndefOr[RegionInfo]]
+    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = js.native
+    def regionInfoProvider(region: String, options: RegionInfoProviderOptions): js.Promise[js.UndefOr[RegionInfo]] = js.native
     @JSName("regionInfoProvider")
-    var regionInfoProvider_Original: RegionInfoProvider
+    var regionInfoProvider_Original: RegionInfoProvider = js.native
     
     /**
       * Resolved value for input config {@link RegionInputConfig.region}
       */
     @JSName("region")
-    var region_Original: (String | Provider[String]) & Provider[String]
+    var region_Original: (String | Provider[String]) & Provider[String] = js.native
     
     /**
       * The HTTP handler to use. Fetch in browser and Https in Nodejs.
       */
-    var requestHandler: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object])
+    var requestHandler: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object]) = js.native
     
-    var retryMode: String | Provider[String]
+    var retryMode: String | Provider[String] = js.native
     
     /**
       * Resolved value for input config {@link RetryInputConfig.retryStrategy}
       */
-    def retryStrategy(): js.Promise[RetryStrategy]
+    def retryStrategy(): js.Promise[RetryStrategy] = js.native
     /**
       * Resolved value for input config {@link RetryInputConfig.retryStrategy}
       */
     @JSName("retryStrategy")
-    var retryStrategy_Original: Provider[RetryStrategy]
+    var retryStrategy_Original: Provider[RetryStrategy] = js.native
     
     /**
       * The runtime environment
       */
-    var runtime: String
+    var runtime: String = js.native
     
-    var serviceId: String
+    var serviceId: String = js.native
     
-    var sha256: HashConstructor
+    var sha256: HashConstructor = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.signer}
       */
-    def signer(): js.Promise[RequestSigner]
-    /**
-      * Resolved value for input config {@link AwsAuthInputConfig.signer}
-      */
-    @JSName("signer")
-    var signer_Original: Provider[RequestSigner]
+    def signer(): js.Promise[RequestSigner] = js.native
+    def signer(authScheme: AuthScheme): js.Promise[RequestSigner] = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.signingEscapePath}
       */
-    var signingEscapePath: Boolean
+    var signingEscapePath: Boolean = js.native
     
-    def streamCollector(stream: Any): js.Promise[js.typedarray.Uint8Array]
+    def streamCollector(stream: Any): js.Promise[js.typedarray.Uint8Array] = js.native
     @JSName("streamCollector")
-    var streamCollector_Original: StreamCollector
+    var streamCollector_Original: StreamCollector = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.systemClockOffset}
       */
-    var systemClockOffset: Double
+    var systemClockOffset: Double = js.native
     
-    var tls: Boolean
+    var tls: Boolean = js.native
     
-    def urlParser(url: String): Endpoint
-    def urlParser(url: URL): Endpoint
+    def urlParser(url: String): Endpoint = js.native
+    def urlParser(url: URL): Endpoint = js.native
     @JSName("urlParser")
-    var urlParser_Original: UrlParser
+    var urlParser_Original: UrlParser = js.native
     
     /**
       * Resolved value for input {@link EndpointsInputConfig.useDualstackEndpoint}
       */
-    def useDualstackEndpoint(): js.Promise[Boolean]
+    def useDualstackEndpoint(): js.Promise[Boolean] = js.native
     /**
       * Resolved value for input {@link EndpointsInputConfig.useDualstackEndpoint}
       */
     @JSName("useDualstackEndpoint")
-    var useDualstackEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean]
+    var useDualstackEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] = js.native
     
     /**
       * Resolved value for input {@link RegionInputConfig.useFipsEndpoint}
       */
-    def useFipsEndpoint(): js.Promise[Boolean]
+    def useFipsEndpoint(): js.Promise[Boolean] = js.native
     /**
       * Resolved value for input {@link RegionInputConfig.useFipsEndpoint}
       */
     @JSName("useFipsEndpoint")
-    var useFipsEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean]
+    var useFipsEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] = js.native
     
-    def utf8Decoder(input: String): js.typedarray.Uint8Array
+    def utf8Decoder(input: String): js.typedarray.Uint8Array = js.native
     @JSName("utf8Decoder")
-    var utf8Decoder_Original: Decoder
+    var utf8Decoder_Original: Decoder = js.native
     
-    def utf8Encoder(input: js.typedarray.Uint8Array): String
+    def utf8Encoder(input: js.typedarray.Uint8Array): String = js.native
     @JSName("utf8Encoder")
-    var utf8Encoder_Original: Encoder
-  }
-  object CognitoIdentityClientResolvedConfigType {
-    
-    inline def apply(
-      apiVersion: String,
-      base64Decoder: /* input */ String => js.typedarray.Uint8Array,
-      base64Encoder: /* input */ js.typedarray.Uint8Array => String,
-      bodyLengthChecker: /* body */ Any => js.UndefOr[Double],
-      credentialDefaultProvider: /* input */ Any => Provider[Credentials],
-      credentials: /* options */ js.UndefOr[ForceRefresh] => js.Promise[Credentials],
-      defaultUserAgentProvider: () => js.Promise[UserAgent],
-      defaultsMode: DefaultsMode | Provider[DefaultsMode],
-      disableHostPrefix: Boolean,
-      endpoint: () => js.Promise[Endpoint],
-      isCustomEndpoint: Boolean,
-      logger: Logger,
-      maxAttempts: (Double | Provider[Double]) & Provider[Double],
-      region: (String | Provider[String]) & Provider[String],
-      regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]],
-      requestHandler: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object]),
-      retryMode: String | Provider[String],
-      retryStrategy: () => js.Promise[RetryStrategy],
-      runtime: String,
-      serviceId: String,
-      sha256: HashConstructor,
-      signer: () => js.Promise[RequestSigner],
-      signingEscapePath: Boolean,
-      streamCollector: /* stream */ Any => js.Promise[js.typedarray.Uint8Array],
-      systemClockOffset: Double,
-      tls: Boolean,
-      urlParser: /* url */ String | URL => Endpoint,
-      useDualstackEndpoint: (Boolean | Provider[Boolean]) & Provider[Boolean],
-      useFipsEndpoint: (Boolean | Provider[Boolean]) & Provider[Boolean],
-      utf8Decoder: /* input */ String => js.typedarray.Uint8Array,
-      utf8Encoder: /* input */ js.typedarray.Uint8Array => String
-    ): CognitoIdentityClientResolvedConfigType = {
-      val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], base64Decoder = js.Any.fromFunction1(base64Decoder), base64Encoder = js.Any.fromFunction1(base64Encoder), bodyLengthChecker = js.Any.fromFunction1(bodyLengthChecker), credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), credentials = js.Any.fromFunction1(credentials), defaultUserAgentProvider = js.Any.fromFunction0(defaultUserAgentProvider), defaultsMode = defaultsMode.asInstanceOf[js.Any], disableHostPrefix = disableHostPrefix.asInstanceOf[js.Any], endpoint = js.Any.fromFunction0(endpoint), isCustomEndpoint = isCustomEndpoint.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], regionInfoProvider = js.Any.fromFunction2(regionInfoProvider), requestHandler = requestHandler.asInstanceOf[js.Any], retryMode = retryMode.asInstanceOf[js.Any], retryStrategy = js.Any.fromFunction0(retryStrategy), runtime = runtime.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], signer = js.Any.fromFunction0(signer), signingEscapePath = signingEscapePath.asInstanceOf[js.Any], streamCollector = js.Any.fromFunction1(streamCollector), systemClockOffset = systemClockOffset.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any], urlParser = js.Any.fromFunction1(urlParser), useDualstackEndpoint = useDualstackEndpoint.asInstanceOf[js.Any], useFipsEndpoint = useFipsEndpoint.asInstanceOf[js.Any], utf8Decoder = js.Any.fromFunction1(utf8Decoder), utf8Encoder = js.Any.fromFunction1(utf8Encoder))
-      __obj.asInstanceOf[CognitoIdentityClientResolvedConfigType]
-    }
-    
-    extension [Self <: CognitoIdentityClientResolvedConfigType](x: Self) {
-      
-      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
-      
-      inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
-      
-      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
-      
-      inline def setBodyLengthChecker(value: /* body */ Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
-      
-      inline def setCredentialDefaultProvider(value: /* input */ Any => Provider[Credentials]): Self = StObject.set(x, "credentialDefaultProvider", js.Any.fromFunction1(value))
-      
-      inline def setCredentials(value: /* options */ js.UndefOr[ForceRefresh] => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction1(value))
-      
-      inline def setCustomUserAgent(value: UserAgent): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
-      
-      inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
-      
-      inline def setCustomUserAgentVarargs(value: UserAgentPair*): Self = StObject.set(x, "customUserAgent", js.Array(value*))
-      
-      inline def setDefaultUserAgentProvider(value: () => js.Promise[UserAgent]): Self = StObject.set(x, "defaultUserAgentProvider", js.Any.fromFunction0(value))
-      
-      inline def setDefaultsMode(value: DefaultsMode | Provider[DefaultsMode]): Self = StObject.set(x, "defaultsMode", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultsModeFunction0(value: () => js.Promise[DefaultsMode]): Self = StObject.set(x, "defaultsMode", js.Any.fromFunction0(value))
-      
-      inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
-      
-      inline def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
-      
-      inline def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
-      
-      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
-      
-      inline def setMaxAttempts(value: (Double | Provider[Double]) & Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
-      
-      inline def setRegion(value: (String | Provider[String]) & Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
-      
-      inline def setRegionInfoProvider(
-        value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
-      ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
-      
-      inline def setRequestHandler(
-        value: (RequestHandler[Any, Any, HttpHandlerOptions]) & HttpHandler & (RequestHandler[Any, Any, js.Object])
-      ): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
-      
-      inline def setRetryMode(value: String | Provider[String]): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
-      
-      inline def setRetryModeFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "retryMode", js.Any.fromFunction0(value))
-      
-      inline def setRetryStrategy(value: () => js.Promise[RetryStrategy]): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction0(value))
-      
-      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
-      
-      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
-      
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
-      
-      inline def setSigner(value: () => js.Promise[RequestSigner]): Self = StObject.set(x, "signer", js.Any.fromFunction0(value))
-      
-      inline def setSigningEscapePath(value: Boolean): Self = StObject.set(x, "signingEscapePath", value.asInstanceOf[js.Any])
-      
-      inline def setStreamCollector(value: /* stream */ Any => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
-      
-      inline def setSystemClockOffset(value: Double): Self = StObject.set(x, "systemClockOffset", value.asInstanceOf[js.Any])
-      
-      inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
-      
-      inline def setUrlParser(value: /* url */ String | URL => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
-      
-      inline def setUseDualstackEndpoint(value: (Boolean | Provider[Boolean]) & Provider[Boolean]): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
-      
-      inline def setUseFipsEndpoint(value: (Boolean | Provider[Boolean]) & Provider[Boolean]): Self = StObject.set(x, "useFipsEndpoint", value.asInstanceOf[js.Any])
-      
-      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
-      
-      inline def setUtf8Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
-    }
+    var utf8Encoder_Original: Encoder = js.native
   }
   
   type ServiceInputTypes = CreateIdentityPoolCommandInput | DeleteIdentitiesCommandInput | DeleteIdentityPoolCommandInput | DescribeIdentityCommandInput | DescribeIdentityPoolCommandInput | GetCredentialsForIdentityCommandInput | GetIdCommandInput | GetIdentityPoolRolesCommandInput | GetOpenIdTokenCommandInput | GetOpenIdTokenForDeveloperIdentityCommandInput | GetPrincipalTagAttributeMapCommandInput | ListIdentitiesCommandInput | ListIdentityPoolsCommandInput | ListTagsForResourceCommandInput | LookupDeveloperIdentityCommandInput | MergeDeveloperIdentitiesCommandInput | SetIdentityPoolRolesCommandInput | SetPrincipalTagAttributeMapCommandInput | TagResourceCommandInput | UnlinkDeveloperIdentityCommandInput | UnlinkIdentityCommandInput | UntagResourceCommandInput | UpdateIdentityPoolCommandInput

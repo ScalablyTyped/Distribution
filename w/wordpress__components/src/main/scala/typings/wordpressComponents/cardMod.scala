@@ -1,7 +1,7 @@
 package typings.wordpressComponents
 
 import typings.react.mod.global.JSX.Element
-import typings.wordpressComponents.anon.IsElevated
+import typings.wordpressComponents.anon.Elevation
 import typings.wordpressComponents.cardMod.Card.Props
 import typings.wordpressComponents.wordpressComponentsStrings.`object`
 import typings.wordpressComponents.wordpressComponentsStrings.`var`
@@ -218,6 +218,6 @@ object cardMod {
       inline def small: typings.wordpressComponents.wordpressComponentsStrings.small = "small".asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.small]
     }
     
-    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] = IsElevated[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
+    type Props[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */] = Elevation[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)
   }
 }

@@ -109,7 +109,7 @@ object ClassManager {
     * @param args Object... Additional arguments after the alias will be passed to the class constructor.
     * @returns Object instance
     */
-  inline def instantiateByAlias(alias: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateByAlias")(List(alias.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def instantiateByAlias(alias: java.lang.String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateByAlias")(scala.List(alias.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   /** [Method] Checks if a class has already been created
     * @param className String

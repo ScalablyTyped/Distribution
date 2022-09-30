@@ -1,16 +1,16 @@
 package typings.activexAdodb.ADODB
 
-import typings.activexAdodb.activexAdodbNumbers.`-1`
-import typings.activexAdodb.activexAdodbNumbers.`10`
-import typings.activexAdodb.activexAdodbNumbers.`13`
+import typings.activexAdodb.activexAdodbInts.`-1`
+import typings.activexAdodb.activexAdodbInts.`10`
+import typings.activexAdodb.activexAdodbInts.`13`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexAdodb.activexAdodbNumbers.`13`
-  - typings.activexAdodb.activexAdodbNumbers.`-1`
-  - typings.activexAdodb.activexAdodbNumbers.`10`
+  - typings.activexAdodb.activexAdodbInts.`13`
+  - typings.activexAdodb.activexAdodbInts.`-1`
+  - typings.activexAdodb.activexAdodbInts.`10`
 */
 trait LineSeparatorEnum extends StObject
 object LineSeparatorEnum {

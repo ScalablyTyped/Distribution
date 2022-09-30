@@ -1,9 +1,8 @@
 package typings.reactRouterRedux
 
 import typings.history.mod.Hash
+import typings.history.mod.Key
 import typings.history.mod.Location
-import typings.history.mod.LocationKey
-import typings.history.mod.LocationState
 import typings.history.mod.Pathname
 import typings.history.mod.Search
 import typings.reactRouterRedux.mod.RouterState
@@ -15,19 +14,15 @@ object anon {
   
   trait History extends StObject {
     
-    var history: typings.history.mod.History[LocationState]
+    var history: typings.history.mod.History
     
-    var location: Location[LocationState]
+    var location: Location
     
     var `match`: IsExact
   }
   object History {
     
-    inline def apply(
-      history: typings.history.mod.History[LocationState],
-      location: Location[LocationState],
-      `match`: IsExact
-    ): History = {
+    inline def apply(history: typings.history.mod.History, location: Location, `match`: IsExact): History = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[History]
@@ -35,9 +30,9 @@ object anon {
     
     extension [Self <: History](x: Self) {
       
-      inline def setHistory(value: typings.history.mod.History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: typings.history.mod.History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      inline def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setMatch(value: IsExact): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
@@ -47,7 +42,7 @@ object anon {
     
     var isExact: Boolean
     
-    var params: js.Any
+    var params: Any
     
     var path: String
     
@@ -55,7 +50,7 @@ object anon {
   }
   object IsExact {
     
-    inline def apply(isExact: Boolean, params: js.Any, path: String, url: String): IsExact = {
+    inline def apply(isExact: Boolean, params: Any, path: String, url: String): IsExact = {
       val __obj = js.Dynamic.literal(isExact = isExact.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsExact]
     }
@@ -64,7 +59,7 @@ object anon {
       
       inline def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -72,35 +67,61 @@ object anon {
     }
   }
   
-  /* Inlined history.history.Location<history.history.LocationState> & {  props :{  match :{  path :string,   url :string,   params :any,   isExact :boolean},   location :history.history.Location<history.history.LocationState>,   history :history.history.History<history.history.LocationState>} | undefined} */
-  trait LocationLocationStateprop extends StObject {
+  /* Inlined history.history.Location & {  props :{  match :{  path :string,   url :string,   params :any,   isExact :boolean},   location :history.history.Location,   history :history.history.History} | undefined} */
+  trait Locationpropsmatchpathstr extends StObject {
     
+    /**
+      * A URL fragment identifier, beginning with a #.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.hash
+      */
     var hash: Hash
     
-    var key: js.UndefOr[LocationKey] = js.undefined
+    /**
+      * A unique string associated with this location. May be used to safely store
+      * and retrieve data in some other storage API, like `localStorage`.
+      *
+      * Note: This value is always "default" on the initial location.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.key
+      */
+    var key: Key
     
+    /**
+      * A URL pathname, beginning with a /.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.pathname
+      */
     var pathname: Pathname
     
     var props: js.UndefOr[History] = js.undefined
     
+    /**
+      * A URL search string, beginning with a ?.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.search
+      */
     var search: Search
     
-    var state: LocationState
+    /**
+      * A value of arbitrary data associated with this location.
+      *
+      * @see https://github.com/remix-run/history/tree/main/docs/api-reference.md#location.state
+      */
+    var state: Any
   }
-  object LocationLocationStateprop {
+  object Locationpropsmatchpathstr {
     
-    inline def apply(hash: Hash, pathname: Pathname, search: Search, state: LocationState): LocationLocationStateprop = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LocationLocationStateprop]
+    inline def apply(hash: Hash, key: Key, pathname: Pathname, search: Search, state: Any): Locationpropsmatchpathstr = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Locationpropsmatchpathstr]
     }
     
-    extension [Self <: LocationLocationStateprop](x: Self) {
+    extension [Self <: Locationpropsmatchpathstr](x: Self) {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      inline def setKey(value: LocationKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
@@ -110,7 +131,7 @@ object anon {
       
       inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      inline def setState(value: LocationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   

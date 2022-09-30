@@ -73,17 +73,14 @@ object Node {
     * Parse animation range data from a serialization object and store them into a given node
     * @param node defines where to store the animation ranges
     * @param parsedNode defines the serialization object to read data from
-    * @param scene defines the hosting scene
+    * @param _scene defines the hosting scene
     */
-  inline def ParseAnimationRanges(node: typings.babylonjs.BABYLON.Node, parsedNode: Any, scene: typings.babylonjs.BABYLON.Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseAnimationRanges")(node.asInstanceOf[js.Any], parsedNode.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ParseAnimationRanges(node: typings.babylonjs.BABYLON.Node, parsedNode: Any, _scene: typings.babylonjs.BABYLON.Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseAnimationRanges")(node.asInstanceOf[js.Any], parsedNode.asInstanceOf[js.Any], _scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * @param name
-    * @param from
-    * @param to
-    * @hidden
+    * @internal
     */
-  inline def _AnimationRangeFactory(name: String, from: Double, to: Double): typings.babylonjs.BABYLON.AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(name.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.AnimationRange]
+  inline def _AnimationRangeFactory(_name: String, _from: Double, _to: Double): typings.babylonjs.BABYLON.AnimationRange = (^.asInstanceOf[js.Dynamic].applyDynamic("_AnimationRangeFactory")(_name.asInstanceOf[js.Any], _from.asInstanceOf[js.Any], _to.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.AnimationRange]
   
   @JSGlobal("BABYLON.Node._NodeConstructors")
   @js.native

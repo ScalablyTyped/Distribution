@@ -1,5 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
+import typings.matrixBotSdk.mod.MatrixClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class AppServiceBot protected ()
   extends typings.matrixAppserviceBridge.appServiceBotMod.AppServiceBot {
   def this(
-    client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixClient */ Any,
+    client: MatrixClient,
     userId: String,
     registration: typings.matrixAppservice.mod.AppServiceRegistration,
     memberCache: typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache

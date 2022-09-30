@@ -5,24 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.mongodb.mongodbStrings.nearest
   - typings.mongodb.mongodbStrings.primary
   - typings.mongodb.mongodbStrings.primaryPreferred
   - typings.mongodb.mongodbStrings.secondary
   - typings.mongodb.mongodbStrings.secondaryPreferred
-  - typings.mongodb.mongodbStrings.nearest
 */
 trait ReadPreferenceMode
   extends StObject
-     with ReadPreferenceOrMode
+     with ReadPreferenceLike
+/* Inlined std.Readonly<{ readonly primary :'primary',  readonly primaryPreferred :'primaryPreferred',  readonly secondary :'secondary',  readonly secondaryPreferred :'secondaryPreferred',  readonly nearest :'nearest'}> */
 object ReadPreferenceMode {
   
-  inline def nearest: typings.mongodb.mongodbStrings.nearest = "nearest".asInstanceOf[typings.mongodb.mongodbStrings.nearest]
+  @JSImport("mongodb", "ReadPreferenceMode.nearest")
+  @js.native
+  val nearest: typings.mongodb.mongodbStrings.nearest = js.native
   
-  inline def primary: typings.mongodb.mongodbStrings.primary = "primary".asInstanceOf[typings.mongodb.mongodbStrings.primary]
+  @JSImport("mongodb", "ReadPreferenceMode.primary")
+  @js.native
+  val primary: typings.mongodb.mongodbStrings.primary = js.native
   
-  inline def primaryPreferred: typings.mongodb.mongodbStrings.primaryPreferred = "primaryPreferred".asInstanceOf[typings.mongodb.mongodbStrings.primaryPreferred]
+  @JSImport("mongodb", "ReadPreferenceMode.primaryPreferred")
+  @js.native
+  val primaryPreferred: typings.mongodb.mongodbStrings.primaryPreferred = js.native
   
-  inline def secondary: typings.mongodb.mongodbStrings.secondary = "secondary".asInstanceOf[typings.mongodb.mongodbStrings.secondary]
+  @JSImport("mongodb", "ReadPreferenceMode.secondary")
+  @js.native
+  val secondary: typings.mongodb.mongodbStrings.secondary = js.native
   
-  inline def secondaryPreferred: typings.mongodb.mongodbStrings.secondaryPreferred = "secondaryPreferred".asInstanceOf[typings.mongodb.mongodbStrings.secondaryPreferred]
+  @JSImport("mongodb", "ReadPreferenceMode.secondaryPreferred")
+  @js.native
+  val secondaryPreferred: typings.mongodb.mongodbStrings.secondaryPreferred = js.native
 }

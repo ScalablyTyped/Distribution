@@ -25,7 +25,9 @@ object mod {
   type SuperTest = SuperAgent[Test]
   
   @js.native
-  trait Test extends SuperAgentRequest {
+  trait Test
+    extends StObject
+       with SuperAgentRequest {
     
     def expect(body: String): this.type = js.native
     def expect(body: String, callback: CallbackHandler): this.type = js.native

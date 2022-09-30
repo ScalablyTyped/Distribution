@@ -1,6 +1,5 @@
 package typings.shippo.mod.Shippo
 
-import typings.shippo.shippoStrings.$LeftcurlybracketnumberRightcurlybracket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,9 @@ trait Parcel
   
   var extra: js.UndefOr[ParcelExtras] = js.undefined
   
-  var height: $LeftcurlybracketnumberRightcurlybracket
+  var height: /* template literal string: ${number} */ String
   
-  var length: $LeftcurlybracketnumberRightcurlybracket
+  var length: /* template literal string: ${number} */ String
   
   var mass_unit: MassUnit
   
@@ -26,21 +25,25 @@ trait Parcel
   
   var test: js.UndefOr[Boolean] = js.undefined
   
-  var weight: $LeftcurlybracketnumberRightcurlybracket
+  var weight: /* template literal string: ${number} */ String
   
-  var width: $LeftcurlybracketnumberRightcurlybracket
+  var width: /* template literal string: ${number} */ String
 }
 object Parcel {
   
   inline def apply(
     distance_unit: DistanceUnit,
+    height: /* template literal string: ${number} */ String,
+    length: /* template literal string: ${number} */ String,
     mass_unit: MassUnit,
     object_created: String,
     object_id: String,
     object_owner: String,
-    object_updated: String
+    object_updated: String,
+    weight: /* template literal string: ${number} */ String,
+    width: /* template literal string: ${number} */ String
   ): Parcel = {
-    val __obj = js.Dynamic.literal(distance_unit = distance_unit.asInstanceOf[js.Any], height = "${number}", length = "${number}", mass_unit = mass_unit.asInstanceOf[js.Any], object_created = object_created.asInstanceOf[js.Any], object_id = object_id.asInstanceOf[js.Any], object_owner = object_owner.asInstanceOf[js.Any], object_updated = object_updated.asInstanceOf[js.Any], weight = "${number}", width = "${number}")
+    val __obj = js.Dynamic.literal(distance_unit = distance_unit.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], mass_unit = mass_unit.asInstanceOf[js.Any], object_created = object_created.asInstanceOf[js.Any], object_id = object_id.asInstanceOf[js.Any], object_owner = object_owner.asInstanceOf[js.Any], object_updated = object_updated.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parcel]
   }
   
@@ -52,9 +55,9 @@ object Parcel {
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    inline def setHeight(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setLength(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     inline def setMass_unit(value: MassUnit): Self = StObject.set(x, "mass_unit", value.asInstanceOf[js.Any])
     
@@ -70,8 +73,8 @@ object Parcel {
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    inline def setWeight(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    inline def setWidth(value: $LeftcurlybracketnumberRightcurlybracket): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

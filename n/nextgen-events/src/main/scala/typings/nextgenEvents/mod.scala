@@ -3,9 +3,9 @@ package typings.nextgenEvents
 import org.scalablytyped.runtime.StringDictionary
 import typings.nextgenEvents.anon.Ack
 import typings.nextgenEvents.anon.Async
-import typings.nextgenEvents.nextgenEventsNumbers.`0`
-import typings.nextgenEvents.nextgenEventsNumbers.`1`
-import typings.nextgenEvents.nextgenEventsNumbers.`2`
+import typings.nextgenEvents.nextgenEventsInts.`0`
+import typings.nextgenEvents.nextgenEventsInts.`1`
+import typings.nextgenEvents.nextgenEventsInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,11 +113,11 @@ object mod {
   inline def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupAddListener")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
-  inline def groupDefineStates(emitters: js.Array[NextGenEvents], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("groupDefineStates")(List(emitters.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def groupDefineStates(emitters: js.Array[NextGenEvents], args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("groupDefineStates")(scala.List(emitters.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /* static member */
-  inline def groupEmit(emitters: js.Array[NextGenEvents], nice: Double, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupEmit")((List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
-  inline def groupEmit(emitters: js.Array[NextGenEvents], nice: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupEmit")((List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def groupEmit(emitters: js.Array[NextGenEvents], nice: Double, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupEmit")((scala.List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+  inline def groupEmit(emitters: js.Array[NextGenEvents], nice: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupEmit")((scala.List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
   
   /* static member */
   inline def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -168,8 +168,8 @@ object mod {
   inline def groupWaitForAll(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  inline def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: Double, args: Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForEmit")((List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
-  inline def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: Unit, args: Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForEmit")((List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
+  inline def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: Double, args: Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForEmit")((scala.List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
+  inline def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: Unit, args: Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForEmit")((scala.List(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
   inline def groupWaitForFirst(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForFirst")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

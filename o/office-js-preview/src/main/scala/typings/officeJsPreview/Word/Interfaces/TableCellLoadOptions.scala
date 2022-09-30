@@ -27,7 +27,7 @@ trait TableCellLoadOptions extends StObject {
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * Gets the index of the cell in its row. Read-only.
+    * Gets the index of the cell in its row.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -67,7 +67,7 @@ trait TableCellLoadOptions extends StObject {
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * Gets the index of the cell's row in the table. Read-only.
+    * Gets the index of the cell's row in the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -99,7 +99,7 @@ trait TableCellLoadOptions extends StObject {
   var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the width of the cell in points. Read-only.
+    * Gets the width of the cell in points.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -4,39 +4,36 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Various GL texture/resources formats.
-  *
-  * @memberof PIXI
-  * @static
-  * @name FORMATS
-  * @enum {number}
-  * @property {number} RGBA=6408
-  * @property {number} RGB=6407
-  * @property {number} ALPHA=6406
-  * @property {number} LUMINANCE=6409
-  * @property {number} LUMINANCE_ALPHA=6410
-  * @property {number} DEPTH_COMPONENT=6402
-  * @property {number} DEPTH_STENCIL=34041
-  */
 @JSImport("pixi.js", "FORMATS")
 @js.native
 object FORMATS extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.FORMATS & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiConstants.mod.FORMATS & Double] = js.native
   
-  /* 2 */ val ALPHA: typings.pixiJs.PIXI.FORMATS.ALPHA & Double = js.native
+  /* 6406 */ val ALPHA: typings.pixiConstants.mod.FORMATS.ALPHA & Double = js.native
   
-  /* 5 */ val DEPTH_COMPONENT: typings.pixiJs.PIXI.FORMATS.DEPTH_COMPONENT & Double = js.native
+  /* 6402 */ val DEPTH_COMPONENT: typings.pixiConstants.mod.FORMATS.DEPTH_COMPONENT & Double = js.native
   
-  /* 6 */ val DEPTH_STENCIL: typings.pixiJs.PIXI.FORMATS.DEPTH_STENCIL & Double = js.native
+  /* 34041 */ val DEPTH_STENCIL: typings.pixiConstants.mod.FORMATS.DEPTH_STENCIL & Double = js.native
   
-  /* 3 */ val LUMINANCE: typings.pixiJs.PIXI.FORMATS.LUMINANCE & Double = js.native
+  /* 6409 */ val LUMINANCE: typings.pixiConstants.mod.FORMATS.LUMINANCE & Double = js.native
   
-  /* 4 */ val LUMINANCE_ALPHA: typings.pixiJs.PIXI.FORMATS.LUMINANCE_ALPHA & Double = js.native
+  /* 6410 */ val LUMINANCE_ALPHA: typings.pixiConstants.mod.FORMATS.LUMINANCE_ALPHA & Double = js.native
   
-  /* 1 */ val RGB: typings.pixiJs.PIXI.FORMATS.RGB & Double = js.native
+  /* 6403 */ val RED: typings.pixiConstants.mod.FORMATS.RED & Double = js.native
   
-  /* 0 */ val RGBA: typings.pixiJs.PIXI.FORMATS.RGBA & Double = js.native
+  /* 36244 */ val RED_INTEGER: typings.pixiConstants.mod.FORMATS.RED_INTEGER & Double = js.native
+  
+  /* 33319 */ val RG: typings.pixiConstants.mod.FORMATS.RG & Double = js.native
+  
+  /* 6407 */ val RGB: typings.pixiConstants.mod.FORMATS.RGB & Double = js.native
+  
+  /* 6408 */ val RGBA: typings.pixiConstants.mod.FORMATS.RGBA & Double = js.native
+  
+  /* 36249 */ val RGBA_INTEGER: typings.pixiConstants.mod.FORMATS.RGBA_INTEGER & Double = js.native
+  
+  /* 36248 */ val RGB_INTEGER: typings.pixiConstants.mod.FORMATS.RGB_INTEGER & Double = js.native
+  
+  /* 33320 */ val RG_INTEGER: typings.pixiConstants.mod.FORMATS.RG_INTEGER & Double = js.native
 }

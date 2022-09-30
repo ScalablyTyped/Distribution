@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 7.7.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateFormBase")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateFormBase")
 @js.native
 abstract class TemplateFormBase protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.TemplateFormBase {
@@ -24,18 +24,18 @@ abstract class TemplateFormBase protected ()
 }
 object TemplateFormBase {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateFormBase")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateFormBase")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateFormBase.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateFormBase.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.TemplateFormBase.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.TemplateFormBase.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

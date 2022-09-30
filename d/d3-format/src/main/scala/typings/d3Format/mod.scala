@@ -4,7 +4,6 @@ import typings.d3Format.anon.ValueOf
 import typings.d3Format.d3FormatStrings.$
 import typings.d3Format.d3FormatStrings.Equalssign
 import typings.d3Format.d3FormatStrings.Greaterthansign
-import typings.d3Format.d3FormatStrings.Leftparenthesis
 import typings.d3Format.d3FormatStrings.Lessthansign
 import typings.d3Format.d3FormatStrings.Numbersign
 import typings.d3Format.d3FormatStrings.Percentsign
@@ -83,7 +82,7 @@ object mod {
       * ' ' (space) - a space for positive and a minus sign for negative.
       *
       */
-    var sign: `-_` | Plussign | Leftparenthesis | Space = js.native
+    var sign: `-_` | Plussign | String | Space = js.native
     
     /**
       * The symbol can be:

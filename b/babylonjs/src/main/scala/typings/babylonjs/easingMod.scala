@@ -231,8 +231,7 @@ object easingMod {
     override def ease(gradient: Double): Double = js.native
     
     /**
-      * @param gradient
-      * @hidden
+      * @internal
       */
     def easeInCore(gradient: Double): Double = js.native
     

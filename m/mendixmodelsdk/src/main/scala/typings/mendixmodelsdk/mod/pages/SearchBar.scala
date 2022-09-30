@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SearchBar")
 @js.native
-class SearchBar protected ()
+open class SearchBar protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SearchBar {
   def this(
     model: AbstractModel,

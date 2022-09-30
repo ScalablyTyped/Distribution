@@ -1,8 +1,8 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
-import typings.iobroker.iobrokerNumbers.`1`
-import typings.iobroker.iobrokerNumbers.`2`
-import typings.iobroker.iobrokerNumbers.`3`
+import typings.iobroker.iobrokerInts.`1`
+import typings.iobroker.iobrokerInts.`2`
+import typings.iobroker.iobrokerInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Normal extends StObject {
   
-  val normal: typings.glaze.glazeNumbers.`0`
+  val normal: typings.glaze.glazeInts.`0`
   
   val tight: `-0Dot025em`
   
@@ -32,7 +32,7 @@ object Normal {
   
   extension [Self <: Normal](x: Self) {
     
-    inline def setNormal(value: typings.glaze.glazeNumbers.`0`): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: typings.glaze.glazeInts.`0`): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     inline def setTight(value: `-0Dot025em`): Self = StObject.set(x, "tight", value.asInstanceOf[js.Any])
     

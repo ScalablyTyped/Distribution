@@ -1,9 +1,9 @@
 package typings.tablestore.anon
 
-import typings.tablestore.tablestoreNumbers.`1`
-import typings.tablestore.tablestoreNumbers.`2`
-import typings.tablestore.tablestoreNumbers.`3`
-import typings.tablestore.tablestoreNumbers.`4`
+import typings.tablestore.tablestoreInts.`1`
+import typings.tablestore.tablestoreInts.`2`
+import typings.tablestore.tablestoreInts.`3`
+import typings.tablestore.tablestoreInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,7 @@
 package typings.typedQuerySelector
 
 import typings.typedQuerySelector.strictMod.global.Element
+import typings.typedQuerySelector.typedQuerySelectorStrings.Quotationmark
 import typings.typedQuerySelector.typedQuerySelectorStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,11 +34,7 @@ object parserMod {
   
   type GetLastTag[I] = I | Any
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.typedQuerySelector.typedQuerySelectorStrings.DollarLeftcurlybracketHeadRightcurlybracketDollarLeftcurlybracketJoinLessthansignRestGreaterthansignRightcurlybracket
-    - typings.typedQuerySelector.typedQuerySelectorStrings._empty
-  */
-  trait Join[Seq] extends StObject
+  type Join[Seq] = (/* template literal string: ${Head}${Join<Rest>} */ String) | _empty
   
   type ParseSelector[I /* <: String */, Fallback /* <: Element */] = Fallback | (TagNameToElement[
     _empty | (/* import warning: importer.ImportType#apply Failed type conversion: any[number] */ js.Any), 
@@ -118,17 +115,13 @@ object parserMod {
     inline def w: typings.typedQuerySelector.typedQuerySelectorStrings.w = "w".asInstanceOf[typings.typedQuerySelector.typedQuerySelectorStrings.w]
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.typedQuerySelector.typedQuerySelectorStrings.Quotationmark
-    - typings.typedQuerySelector.typedQuerySelectorStrings.Apostrophe
-  */
-  trait Quotes extends StObject
   object Quotes {
     
-    inline def Apostrophe: typings.typedQuerySelector.typedQuerySelectorStrings.Apostrophe = "'".asInstanceOf[typings.typedQuerySelector.typedQuerySelectorStrings.Apostrophe]
+    inline def Apostrophe: String = String.asInstanceOf[String]
     
     inline def Quotationmark: typings.typedQuerySelector.typedQuerySelectorStrings.Quotationmark = "\"".asInstanceOf[typings.typedQuerySelector.typedQuerySelectorStrings.Quotationmark]
   }
+  type Quotes = Quotationmark | String
   
   type Split[S] = (js.Array[Any | S]) | Any
   

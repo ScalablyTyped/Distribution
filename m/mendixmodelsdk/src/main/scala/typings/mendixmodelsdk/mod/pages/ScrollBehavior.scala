@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ScrollBehavior")
 @js.native
-class ScrollBehavior protected ()
+open class ScrollBehavior protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ScrollBehavior {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

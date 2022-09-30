@@ -11,20 +11,18 @@ trait FunctionBindKey extends StObject {
   
   def placeholder(): String = js.native
   def placeholder(value: java.lang.String): String = js.native
-  def placeholder[T /* <: js.Object */](value: T): Object[T] = js.native
-  def placeholder[T](value: List[T]): Collection[T] = js.native
+  def placeholder[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+  def placeholder[T](value: typings.lodash.mod.List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   @JSName("placeholder")
   def placeholder_T_Collection[T](): Collection[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
+  def placeholder_T_Object[T /* <: js.Object */](): Object[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  def placeholder_T_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Primitive[T](value: T): Primitive[T] = js.native
-  @JSName("placeholder")
-  def `placeholder_T_UnionNull<undefined>_Primitive`[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
+  def placeholder_T_Primitive[T /* <: js.UndefOr[Null] */](value: T): Primitive[T] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.
@@ -94,5 +92,5 @@ trait FunctionBindKey extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
+  def placeholder_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
 }

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "documenttemplates.StaticLabel")
 @js.native
-class StaticLabel protected ()
+open class StaticLabel protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.StaticLabel {
   def this(
     model: AbstractModel,

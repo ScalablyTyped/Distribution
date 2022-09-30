@@ -51,7 +51,7 @@ trait TableLoadOptions extends StObject {
   var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether all of the table rows are uniform. Read-only.
+    * Indicates whether all of the table rows are uniform.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -59,7 +59,7 @@ trait TableLoadOptions extends StObject {
   var isUniform: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+    * Gets the nesting level of the table. Top-level tables have level 1.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -75,7 +75,7 @@ trait TableLoadOptions extends StObject {
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the table. Throws an error if there isn't a parent content control.
+    * Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn't a parent content control.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait TableLoadOptions extends StObject {
   var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+    * Gets the content control that contains the table. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -91,7 +91,7 @@ trait TableLoadOptions extends StObject {
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    * Gets the table that contains this table. Throws an error if it is not contained in a table.
+    * Gets the table that contains this table. Throws an `ItemNotFound` error if it is not contained in a table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -99,7 +99,7 @@ trait TableLoadOptions extends StObject {
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.
+    * Gets the table cell that contains this table. Throws an `ItemNotFound` error if it is not contained in a table cell.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -107,7 +107,7 @@ trait TableLoadOptions extends StObject {
   var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+    * Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -115,7 +115,7 @@ trait TableLoadOptions extends StObject {
   var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    * Gets the table that contains this table. Returns a null object if it is not contained in a table.
+    * Gets the table that contains this table. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -123,7 +123,7 @@ trait TableLoadOptions extends StObject {
   var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    * Gets the number of rows in the table. Read-only.
+    * Gets the number of rows in the table.
     *
     * @remarks
     * [Api set: WordApi 1.3]

@@ -1,16 +1,16 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-4105`
-import typings.activexExcel.activexExcelNumbers.`-4146`
-import typings.activexExcel.activexExcelNumbers.`1`
+import typings.activexExcel.activexExcelInts.`-4105`
+import typings.activexExcel.activexExcelInts.`-4146`
+import typings.activexExcel.activexExcelInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`-4105`
-  - typings.activexExcel.activexExcelNumbers.`-4146`
-  - typings.activexExcel.activexExcelNumbers.`1`
+  - typings.activexExcel.activexExcelInts.`-4105`
+  - typings.activexExcel.activexExcelInts.`-4146`
+  - typings.activexExcel.activexExcelInts.`1`
 */
 trait XlCommandUnderlines extends StObject
 object XlCommandUnderlines {

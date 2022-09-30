@@ -188,7 +188,7 @@ trait MathJsChain[TValue] extends StObject {
     */
   def bignumber(): MathJsChain[BigNumber] = js.native
   @JSName("bignumber")
-  def bignumber_T_MathCollection[T /* <: MathCollection */](): MathJsChain[T] = js.native
+  def bignumber_T[T /* <: MathCollection */](): MathJsChain[T] = js.native
   
   /*************************************************************************
     * Bitwise functions
@@ -1082,7 +1082,7 @@ trait MathJsChain[TValue] extends StObject {
     * @param y The second value to multiply
     */
   @JSName("multiply")
-  def multiply_T_UnionMatrixMathArray[T /* <: Matrix | MathArray */](y: MathType): MathJsChain[T] = js.native
+  def multiply_T[T /* <: Matrix | MathArray */](y: MathType): MathJsChain[T] = js.native
   
   /**
     * Calculate the norm of a number, vector or matrix. The second
@@ -1296,9 +1296,9 @@ trait MathJsChain[TValue] extends StObject {
   
   // tslint:disable-next-line unified-signatures
   @JSName("random")
-  def random_T_MathCollection[T /* <: MathCollection */](): MathJsChain[T] = js.native
+  def random_T[T /* <: MathCollection */](): MathJsChain[T] = js.native
   @JSName("random")
-  def random_T_MathCollection[T /* <: MathCollection */](min: Double): MathJsChain[T] = js.native
+  def random_T[T /* <: MathCollection */](min: Double): MathJsChain[T] = js.native
   
   /**
     * Create an array from a range. By default, the range end is excluded.

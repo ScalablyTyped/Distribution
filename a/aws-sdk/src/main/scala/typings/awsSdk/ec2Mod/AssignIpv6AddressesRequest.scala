@@ -12,7 +12,7 @@ trait AssignIpv6AddressesRequest extends StObject {
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * One or more specific IPv6 addresses to be assigned to the network interface. You can't use this option if you're specifying a number of IPv6 addresses.
+    * The IPv6 addresses to be assigned to the network interface. You can't use this option if you're specifying a number of IPv6 addresses.
     */
   var Ipv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
   

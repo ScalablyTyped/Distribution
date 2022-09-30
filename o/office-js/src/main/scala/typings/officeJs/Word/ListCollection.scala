@@ -25,40 +25,40 @@ trait ListCollection
   var context_ListCollection: RequestContext = js.native
   
   /**
-    * Gets a list by its identifier. Throws an error if there isn't a list with the identifier in this collection.
+    * Gets a list by its identifier. Throws an `ItemNotFound` error if there isn't a list with the identifier in this collection.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param id Required. A list identifier.
     */
-  def getById(id: Double): List = js.native
+  def getById(id: Double): typings.officeJs.Word.List = js.native
   
   /**
-    * Gets a list by its identifier. Returns a null object if there isn't a list with the identifier in this collection.
+    * Gets a list by its identifier. If there isn't a list with the identifier in this collection, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param id Required. A list identifier.
     */
-  def getByIdOrNullObject(id: Double): List = js.native
+  def getByIdOrNullObject(id: Double): typings.officeJs.Word.List = js.native
   
   /**
-    * Gets the first list in this collection. Throws an error if this collection is empty.
+    * Gets the first list in this collection. Throws an `ItemNotFound` error if this collection is empty.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  def getFirst(): List = js.native
+  def getFirst(): typings.officeJs.Word.List = js.native
   
   /**
-    * Gets the first list in this collection. Returns a null object if this collection is empty.
+    * Gets the first list in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  def getFirstOrNullObject(): List = js.native
+  def getFirstOrNullObject(): typings.officeJs.Word.List = js.native
   
   /**
     * Gets a list object by its ID.
@@ -68,10 +68,10 @@ trait ListCollection
     *
     * @param id The list's ID.
     */
-  def getItem(id: Double): List = js.native
+  def getItem(id: Double): typings.officeJs.Word.List = js.native
   
   /** Gets the loaded child items in this collection. */
-  val items: js.Array[List] = js.native
+  val items: js.Array[typings.officeJs.Word.List] = js.native
   
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.

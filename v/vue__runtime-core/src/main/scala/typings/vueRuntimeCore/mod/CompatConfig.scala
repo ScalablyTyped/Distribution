@@ -1,7 +1,7 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`2`
-import typings.vueRuntimeCore.vueRuntimeCoreNumbers.`3`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`2`
+import typings.vueRuntimeCore.vueRuntimeCoreInts.`3`
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.`suppress-warning`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

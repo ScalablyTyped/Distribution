@@ -12,7 +12,11 @@ object diagnosticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createStructuredLoggingDiagnosticsMiddleware(store: GatsbyCLIStore): DiagnosticsMiddleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredLoggingDiagnosticsMiddleware")(store.asInstanceOf[js.Any]).asInstanceOf[DiagnosticsMiddleware]
+  inline def createStructuredLoggingDiagnosticsMiddleware(getStore: js.Function0[GatsbyCLIStore]): DiagnosticsMiddleware = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredLoggingDiagnosticsMiddleware")(getStore.asInstanceOf[js.Any]).asInstanceOf[DiagnosticsMiddleware]
+  
+  inline def registerAdditionalDiagnosticOutputHandler(handler: AdditionalDiagnosticsOutputHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAdditionalDiagnosticOutputHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  type AdditionalDiagnosticsOutputHandler = js.Function0[String]
   
   type DiagnosticsMiddleware = js.Function1[/* action */ ActionsUnion, Unit]
 }

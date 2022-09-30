@@ -22,47 +22,47 @@ object postProcessRenderPipelineMod {
       */
     def this(_engine: Engine, name: String) = this()
     
-    /** @hidden */
+    /** @internal */
     def _attachCameras(cameras: js.Array[Camera], unique: Boolean): Unit = js.native
-    /** @hidden */
+    /** @internal */
     def _attachCameras(cameras: Camera, unique: Boolean): Unit = js.native
     
     /**
-      * @hidden
+      * @internal
       */
     /* protected */ var _cameras: js.Array[Camera] = js.native
     
-    /** @hidden */
+    /** @internal */
     def _detachCameras(cameras: Camera): Unit = js.native
-    /** @hidden */
+    /** @internal */
     def _detachCameras(cameras: Nullable[js.Array[Camera]]): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _disableEffect(renderEffectName: String, cameras: Nullable[js.Array[Camera]]): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _enableEffect(renderEffectName: String, cameras: js.Array[Camera]): Unit = js.native
-    /** @hidden */
+    /** @internal */
     def _enableEffect(renderEffectName: String, cameras: Camera): Unit = js.native
     
     /* protected */ def _enableMSAAOnFirstPostProcess(sampleCount: Double): Boolean = js.native
     
     /* private */ var _engine: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     var _name: String = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
     /* private */ var _renderEffects: Any = js.native
     
     /* private */ var _renderEffectsForIsolatedPass: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _reset(): Unit = js.native
     
-    /** @hidden */
+    /** @internal */
     def _update(): Unit = js.native
     
     /**

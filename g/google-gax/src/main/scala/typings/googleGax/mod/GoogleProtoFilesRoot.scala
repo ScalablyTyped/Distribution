@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "GoogleProtoFilesRoot")
 @js.native
-class GoogleProtoFilesRoot protected ()
+open class GoogleProtoFilesRoot protected ()
   extends typings.googleGax.grpcMod.GoogleProtoFilesRoot {
   def this(args: js.Object*) = this()
 }

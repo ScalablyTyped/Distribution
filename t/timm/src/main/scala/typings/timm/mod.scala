@@ -32,7 +32,7 @@ object mod {
     @JSImport("timm", "default.addDefaults")
     @js.native
     def addDefaults: FnCallABRest = js.native
-    inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
+    inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")((scala.List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
     inline def addDefaults[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[U, /* keyof T */ String]) & T = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[U, /* keyof T */ String]) & T]
     inline def addDefaults_=(x: FnCallABRest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addDefaults")(x.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object mod {
     @JSImport("timm", "default.merge")
     @js.native
     def merge: FnCallABC = js.native
-    inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+    inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(a.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
     inline def merge[T /* <: js.Object */](a: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any]).asInstanceOf[T]
     inline def merge[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[T, /* keyof U */ String]) & U = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof U */ String]) & U]
     inline def merge[T /* <: js.Object */, V /* <: js.Object */](a: T, b: Null, c: V): (Omit[T, /* keyof V */ String]) & V = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof V */ String]) & V]
@@ -102,7 +102,7 @@ object mod {
       e: js.UndefOr[js.Object | Null],
       f: js.UndefOr[js.Object | Null],
       rest: (js.Object | Null)*
-    ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
+    ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")((scala.List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
     inline def mergeDeep_=(
       x: js.Function7[
           /* a */ js.Object, 
@@ -138,7 +138,7 @@ object mod {
       e: js.UndefOr[js.Object | Null],
       f: js.UndefOr[js.Object | Null],
       rest: (js.Object | Null)*
-    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")((List(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")((scala.List(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
     inline def mergeIn_=(
       x: js.Function8[
           /* a */ Any, 
@@ -258,7 +258,7 @@ object mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("update")(x.asInstanceOf[js.Any])
   }
   
-  inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
+  inline def addDefaults(a: js.Object, b: js.Object, rest: (js.Object | Null)*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")((scala.List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
   inline def addDefaults[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[U, /* keyof T */ String]) & T = (^.asInstanceOf[js.Dynamic].applyDynamic("addDefaults")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[U, /* keyof T */ String]) & T]
   
   inline def addFirst[T](array: js.Array[T], `val`: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addFirst")(array.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
@@ -276,7 +276,7 @@ object mod {
   inline def insert[T](array: js.Array[T], idx: Double, `val`: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], idx.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def insert[T](array: js.Array[T], idx: Double, `val`: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(array.asInstanceOf[js.Any], idx.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(List(a.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+  inline def merge(a: js.Object, rest: (js.Object | Null)*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(scala.List(a.asInstanceOf[js.Any]).`++`(rest.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
   inline def merge[T /* <: js.Object */](a: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def merge[T /* <: js.Object */, U /* <: js.Object */](a: T, b: U): (Omit[T, /* keyof U */ String]) & U = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof U */ String]) & U]
   inline def merge[T /* <: js.Object */, V /* <: js.Object */](a: T, b: Null, c: V): (Omit[T, /* keyof V */ String]) & V = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[(Omit[T, /* keyof V */ String]) & V]
@@ -291,7 +291,7 @@ object mod {
     e: js.UndefOr[js.Object | Null],
     f: js.UndefOr[js.Object | Null],
     rest: (js.Object | Null)*
-  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")((List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")((scala.List(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Object]
   
   inline def mergeIn(
     a: Any,
@@ -302,7 +302,7 @@ object mod {
     e: js.UndefOr[js.Object | Null],
     f: js.UndefOr[js.Object | Null],
     rest: (js.Object | Null)*
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")((List(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeIn")((scala.List(a.asInstanceOf[js.Any], path.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).`++`(rest.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def omit[T /* <: js.Object */, K /* <: String */](obj: T, attrs: K): Omit[T, /* keyof {[ P in K ]: any} */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Omit[T, /* keyof {[ P in K ]: any} */ String]]
   inline def omit[T /* <: js.Object */, K /* <: String */](obj: T, attrs: js.Array[K]): Omit[T, /* keyof {[ P in K ]: any} */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Omit[T, /* keyof {[ P in K ]: any} */ String]]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictkey
   extends StObject
-     with /* key */ StringDictionary[link | node] {
+     with /* key */ StringDictionary[link & node] {
   
   /**
     * To set the layout of the word cloud. "spiral" | "flow-center" | "flow-top"

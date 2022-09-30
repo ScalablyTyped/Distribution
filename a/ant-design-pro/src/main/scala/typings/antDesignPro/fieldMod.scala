@@ -11,10 +11,9 @@ object fieldMod {
   
   @JSImport("ant-design-pro/lib/Charts/Field", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IFieldProps, js.Any, js.Any]
+  open class default () extends Component[IFieldProps, Any, Any]
   
-  type Field = Component[IFieldProps, js.Any, js.Any]
+  type Field = Component[IFieldProps, Any, Any]
   
   trait IFieldProps extends StObject {
     

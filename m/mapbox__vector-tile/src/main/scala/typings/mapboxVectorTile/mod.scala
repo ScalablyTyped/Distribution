@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.geojson.mod.Feature
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Geometry
-import typings.mapboxVectorTile.mapboxVectorTileNumbers.`1`
-import typings.mapboxVectorTile.mapboxVectorTileNumbers.`2`
-import typings.mapboxVectorTile.mapboxVectorTileNumbers.`3`
+import typings.mapboxVectorTile.mapboxVectorTileInts.`1`
+import typings.mapboxVectorTile.mapboxVectorTileInts.`2`
+import typings.mapboxVectorTile.mapboxVectorTileInts.`3`
 import typings.mapboxVectorTile.mapboxVectorTileStrings.LineString
 import typings.mapboxVectorTile.mapboxVectorTileStrings.Point
 import typings.mapboxVectorTile.mapboxVectorTileStrings.Polygon

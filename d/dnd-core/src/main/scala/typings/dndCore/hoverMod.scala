@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hoverMod {
   
-  @JSImport("dnd-core/lib/actions/dragDrop/hover", JSImport.Namespace)
+  @JSImport("dnd-core/dist/actions/dragDrop/hover", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

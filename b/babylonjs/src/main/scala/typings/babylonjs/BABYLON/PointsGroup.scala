@@ -9,31 +9,31 @@ trait PointsGroup extends StObject {
   
   /**
     * density per facet for surface points
-    * @hidden
+    * @internal
     */
   var _groupDensity: js.Array[Double] = js.native
   
   /**
     * image data for group (internal use)
-    * @hidden
+    * @internal
     */
   var _groupImageData: Nullable[js.typedarray.ArrayBufferView] = js.native
   
   /**
     * Image Height (internal use)
-    * @hidden
+    * @internal
     */
   var _groupImgHeight: Double = js.native
   
   /**
     * Image Width (internal use)
-    * @hidden
+    * @internal
     */
   var _groupImgWidth: Double = js.native
   
   /**
     * Custom position function (internal use)
-    * @hidden
+    * @internal
     */
   var _positionFunction: Nullable[
     js.Function3[
@@ -46,7 +46,7 @@ trait PointsGroup extends StObject {
   
   /**
     * Only when points are colored by texture carries pointer to texture list array
-    * @hidden
+    * @internal
     */
   var _textureNb: Double = js.native
   
@@ -59,7 +59,7 @@ trait PointsGroup extends StObject {
   
   /**
     * The group id
-    * @hidden
+    * @internal
     */
   var groupId: Double = js.native
 }

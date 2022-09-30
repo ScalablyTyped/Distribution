@@ -4,27 +4,36 @@ import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.std.Partial
 import typings.std.Record
-import typings.wordpressBlocks.anon.From
+import typings.wordpressBlocks.anon.ReadonlyPartialBlockinner
+import typings.wordpressBlocks.anon.To
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<@wordpress/blocks.@wordpress/blocks.Block<T>, 'icon'>> & std.Pick<@wordpress/blocks.@wordpress/blocks.Block<T>, 'attributes' | 'category' | 'title'> & {  icon :@wordpress/blocks.@wordpress/blocks.BlockIcon | undefined} */
-trait BlockConfiguration[T /* <: Record[String, js.Any] */] extends StObject {
+trait BlockConfiguration[T /* <: Record[String, Any] */] extends StObject {
+  
+  var apiVersion: js.UndefOr[Double] = js.undefined
   
   var attributes: (js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[js.Any]
-  ]) & typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[js.Any]
+    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[Any]
+  ]) & typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[Any]
   
   var category: js.UndefOr[String] & String
   
-  var deprecated: js.UndefOr[js.Array[BlockDeprecation[T]]] = js.undefined
+  var deprecated: js.UndefOr[js.Array[BlockDeprecation[T, Record[String, Any]]]] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined
   
   var edit: js.UndefOr[ComponentType[BlockEditProps[T]]] = js.undefined
+  
+  var editorScript: js.UndefOr[String] = js.undefined
+  
+  var editorStyle: js.UndefOr[String] = js.undefined
+  
+  var example: js.UndefOr[ReadonlyPartialBlockinner] = js.undefined
   
   var getEditWrapperProps: js.UndefOr[js.Function1[/* attrs */ T, Record[String, String | Double | Boolean]]] = js.undefined
   
@@ -38,24 +47,36 @@ trait BlockConfiguration[T /* <: Record[String, js.Any] */] extends StObject {
   
   var parent: js.UndefOr[js.Array[String]] = js.undefined
   
+  var providesContext: js.UndefOr[Record[String, /* keyof T */ String]] = js.undefined
+  
   var save: js.UndefOr[ComponentType[BlockSaveProps[T]]] = js.undefined
+  
+  var script: js.UndefOr[String] = js.undefined
+  
+  var style: js.UndefOr[String] = js.undefined
   
   var styles: js.UndefOr[js.Array[BlockStyle]] = js.undefined
   
   var supports: js.UndefOr[BlockSupports] = js.undefined
   
+  var textdomain: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] & String
   
-  var transforms: js.UndefOr[From[T]] = js.undefined
+  var transforms: js.UndefOr[To[T]] = js.undefined
+  
+  var usesContext: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var version: js.UndefOr[String] = js.undefined
 }
 object BlockConfiguration {
   
-  inline def apply[T /* <: Record[String, js.Any] */](
+  inline def apply[T /* <: Record[String, Any] */](
     attributes: (js.UndefOr[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[js.Any]
-    ]) & typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[js.Any],
+    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[Any]
+    ]) & typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[Any],
     category: js.UndefOr[String] & String,
     title: js.UndefOr[String] & String
   ): BlockConfiguration[T] = {
@@ -63,23 +84,27 @@ object BlockConfiguration {
     __obj.asInstanceOf[BlockConfiguration[T]]
   }
   
-  extension [Self <: BlockConfiguration[?], T /* <: Record[String, js.Any] */](x: Self & BlockConfiguration[T]) {
+  extension [Self <: BlockConfiguration[?], T /* <: Record[String, Any] */](x: Self & BlockConfiguration[T]) {
+    
+    inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     inline def setAttributes(
       value: (js.UndefOr[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[js.Any]
-        ]) & typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[js.Any]
+      */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[Any]
+        ]) & typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration & TopLevel[Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setCategory(value: js.UndefOr[String] & String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    inline def setDeprecated(value: js.Array[BlockDeprecation[T]]): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: js.Array[BlockDeprecation[T, Record[String, Any]]]): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    inline def setDeprecatedVarargs(value: BlockDeprecation[T]*): Self = StObject.set(x, "deprecated", js.Array(value :_*))
+    inline def setDeprecatedVarargs(value: (BlockDeprecation[T, Record[String, Any]])*): Self = StObject.set(x, "deprecated", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -88,6 +113,18 @@ object BlockConfiguration {
     inline def setEdit(value: ComponentType[BlockEditProps[T]]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    inline def setEditorScript(value: String): Self = StObject.set(x, "editorScript", value.asInstanceOf[js.Any])
+    
+    inline def setEditorScriptUndefined: Self = StObject.set(x, "editorScript", js.undefined)
+    
+    inline def setEditorStyle(value: String): Self = StObject.set(x, "editorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setEditorStyleUndefined: Self = StObject.set(x, "editorStyle", js.undefined)
+    
+    inline def setExample(value: ReadonlyPartialBlockinner): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    
+    inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
     inline def setGetEditWrapperProps(value: /* attrs */ T => Record[String, String | Double | Boolean]): Self = StObject.set(x, "getEditWrapperProps", js.Any.fromFunction1(value))
     
@@ -101,7 +138,7 @@ object BlockConfiguration {
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setMerge(value: (/* attributes */ T, /* attributesToMerge */ T) => Partial[T]): Self = StObject.set(x, "merge", js.Any.fromFunction2(value))
     
@@ -115,26 +152,52 @@ object BlockConfiguration {
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    inline def setParentVarargs(value: String*): Self = StObject.set(x, "parent", js.Array(value :_*))
+    inline def setParentVarargs(value: String*): Self = StObject.set(x, "parent", js.Array(value*))
+    
+    inline def setProvidesContext(value: Record[String, /* keyof T */ String]): Self = StObject.set(x, "providesContext", value.asInstanceOf[js.Any])
+    
+    inline def setProvidesContextUndefined: Self = StObject.set(x, "providesContext", js.undefined)
     
     inline def setSave(value: ComponentType[BlockSaveProps[T]]): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
     inline def setStyles(value: js.Array[BlockStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: BlockStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: BlockStyle*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setSupports(value: BlockSupports): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
     inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
     
+    inline def setTextdomain(value: String): Self = StObject.set(x, "textdomain", value.asInstanceOf[js.Any])
+    
+    inline def setTextdomainUndefined: Self = StObject.set(x, "textdomain", js.undefined)
+    
     inline def setTitle(value: js.UndefOr[String] & String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTransforms(value: From[T]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+    inline def setTransforms(value: To[T]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
     
     inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+    
+    inline def setUsesContext(value: js.Array[String]): Self = StObject.set(x, "usesContext", value.asInstanceOf[js.Any])
+    
+    inline def setUsesContextUndefined: Self = StObject.set(x, "usesContext", js.undefined)
+    
+    inline def setUsesContextVarargs(value: String*): Self = StObject.set(x, "usesContext", js.Array(value*))
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

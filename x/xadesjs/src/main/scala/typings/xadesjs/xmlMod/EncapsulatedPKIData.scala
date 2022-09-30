@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "EncapsulatedPKIData")
+@JSImport("xadesjs/build/types/src/xml", "EncapsulatedPKIData")
 @js.native
-class EncapsulatedPKIData ()
+open class EncapsulatedPKIData ()
   extends typings.xadesjs.encapsulatedPkiDataMod.EncapsulatedPKIData {
   def this(properties: js.Object) = this()
 }

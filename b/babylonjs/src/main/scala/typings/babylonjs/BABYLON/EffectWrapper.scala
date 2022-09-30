@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EffectWrapper extends StObject {
   
-  /** @hidden */
+  /** @internal */
   var _drawWrapper: DrawWrapper = js.native
   
   /* private */ var _onContextRestoredObserver: Any = js.native

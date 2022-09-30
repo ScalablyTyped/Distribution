@@ -9,7 +9,7 @@ trait UpdateMapResponse extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the updated map resource. Used to specify a resource across AWS.   Format example: arn:aws:geo:region:account-id:maps/ExampleMap   
     */
-  var MapArn: Arn
+  var MapArn: GeoArn
   
   /**
     * The name of the updated map resource.
@@ -23,14 +23,14 @@ trait UpdateMapResponse extends StObject {
 }
 object UpdateMapResponse {
   
-  inline def apply(MapArn: Arn, MapName: ResourceName, UpdateTime: js.Date): UpdateMapResponse = {
+  inline def apply(MapArn: GeoArn, MapName: ResourceName, UpdateTime: js.Date): UpdateMapResponse = {
     val __obj = js.Dynamic.literal(MapArn = MapArn.asInstanceOf[js.Any], MapName = MapName.asInstanceOf[js.Any], UpdateTime = UpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMapResponse]
   }
   
   extension [Self <: UpdateMapResponse](x: Self) {
     
-    inline def setMapArn(value: Arn): Self = StObject.set(x, "MapArn", value.asInstanceOf[js.Any])
+    inline def setMapArn(value: GeoArn): Self = StObject.set(x, "MapArn", value.asInstanceOf[js.Any])
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
     

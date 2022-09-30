@@ -35,7 +35,7 @@ object distSrcCoreUtilAssertMod {
   
   inline def assertInstanceOf(auth: Auth, `object`: js.Object, instance: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_assertInstanceOf")(auth.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def assertTypes(args: OmitIArgumentscallee, expected: (TypeExpectation | Optional)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypes")(List(args.asInstanceOf[js.Any]).`++`(expected.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def assertTypes(args: OmitIArgumentscallee, expected: (TypeExpectation | Optional)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertTypes")(scala.List(args.asInstanceOf[js.Any]).`++`(expected.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def createError[K /* <: AuthErrorCode */](
     auth: Auth,

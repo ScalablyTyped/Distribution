@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "webservices.DataAttribute")
 @js.native
-class DataAttribute protected ()
+open class DataAttribute protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.webservices.DataAttribute {
   def this(
     model: AbstractModel,

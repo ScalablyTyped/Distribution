@@ -57,6 +57,7 @@ import typings.luminoCoreutils.jsonMod.JSONValue
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -164,7 +165,7 @@ object kernelKernelMod {
       * a promise, all kernel message processing pauses until the promise is
       * resolved.
       */
-    def onClose(msg: ICommCloseMsg[iopub | shell]): Unit | js.Thenable[Unit] = js.native
+    def onClose(msg: ICommCloseMsg[iopub | shell]): Unit | PromiseLike[Unit] = js.native
     
     /**
       * Callback for a comm message received event.
@@ -173,7 +174,7 @@ object kernelKernelMod {
       * If the handler returns a promise, all kernel message processing pauses
       * until the promise is resolved.
       */
-    def onMsg(msg: ICommMsgMsg[iopub | shell]): Unit | js.Thenable[Unit] = js.native
+    def onMsg(msg: ICommMsgMsg[iopub | shell]): Unit | PromiseLike[Unit] = js.native
     
     /**
       * Open a comm with optional data and metadata.
@@ -291,7 +292,7 @@ object kernelKernelMod {
       * If the handler returns a promise, all kernel message processing pauses
       * until the promise is resolved.
       */
-    def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | js.Thenable[Unit] = js.native
+    def onIOPub(msg: IIOPubMessage[IOPubMessageType]): Unit | PromiseLike[Unit] = js.native
     
     /**
       * The reply handler for the kernel future.
@@ -302,7 +303,7 @@ object kernelKernelMod {
       * `done` promise also resolves to the reply message after this handler has
       * been called.
       */
-    def onReply(msg: REPLY): Unit | js.Thenable[Unit] = js.native
+    def onReply(msg: REPLY): Unit | PromiseLike[Unit] = js.native
     
     /**
       * The stdin handler for the kernel future.
@@ -311,7 +312,7 @@ object kernelKernelMod {
       * If the handler returns a promise, all kernel message processing pauses
       * until the promise is resolved.
       */
-    def onStdin(msg: IStdinMessage[StdinMessageType]): Unit | js.Thenable[Unit] = js.native
+    def onStdin(msg: IStdinMessage[StdinMessageType]): Unit | PromiseLike[Unit] = js.native
     
     /**
       * Register hook for IOPub messages.
@@ -332,7 +333,7 @@ object kernelKernelMod {
       * message. If a hook is removed during the hook processing, it will be
       * deactivated immediately.
       */
-    def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
+    def registerMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | PromiseLike[Boolean]]): Unit = js.native
     
     /**
       * Remove a hook for IOPub messages.
@@ -342,7 +343,7 @@ object kernelKernelMod {
       * #### Notes
       * If a hook is removed during the hook processing, it will be deactivated immediately.
       */
-    def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]): Unit = js.native
+    def removeMessageHook(hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | PromiseLike[Boolean]]): Unit = js.native
     
     /**
       * Send an `input_reply` message.
@@ -504,7 +505,7 @@ object kernelKernelMod {
       */
     def registerCommTarget(
       targetName: String,
-      callback: js.Function2[/* comm */ IComm, /* msg */ ICommOpenMsg[iopub | shell], Unit | js.Thenable[Unit]]
+      callback: js.Function2[/* comm */ IComm, /* msg */ ICommOpenMsg[iopub | shell], Unit | PromiseLike[Unit]]
     ): Unit = js.native
     
     /**
@@ -529,7 +530,7 @@ object kernelKernelMod {
       */
     def registerMessageHook(
       msgId: String,
-      hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]
+      hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | PromiseLike[Boolean]]
     ): Unit = js.native
     
     /**
@@ -544,7 +545,7 @@ object kernelKernelMod {
       */
     def removeCommTarget(
       targetName: String,
-      callback: js.Function2[/* comm */ IComm, /* msg */ ICommOpenMsg[iopub | shell], Unit | js.Thenable[Unit]]
+      callback: js.Function2[/* comm */ IComm, /* msg */ ICommOpenMsg[iopub | shell], Unit | PromiseLike[Unit]]
     ): Unit = js.native
     
     /**
@@ -562,7 +563,7 @@ object kernelKernelMod {
       */
     def removeMessageHook(
       msgId: String,
-      hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | js.Thenable[Boolean]]
+      hook: js.Function1[/* msg */ IIOPubMessage[IOPubMessageType], Boolean | PromiseLike[Boolean]]
     ): Unit = js.native
     
     /**

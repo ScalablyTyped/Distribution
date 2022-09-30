@@ -27,7 +27,7 @@ object jsonPatchMod {
     
     val path: String
     
-    val value: js.UndefOr[js.Any] = js.undefined
+    val value: js.UndefOr[Any] = js.undefined
   }
   object IJsonPatch {
     
@@ -42,7 +42,7 @@ object jsonPatchMod {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -52,18 +52,18 @@ object jsonPatchMod {
     extends StObject
        with IJsonPatch {
     
-    val oldValue: js.Any
+    val oldValue: Any
   }
   object IReversibleJsonPatch {
     
-    inline def apply(oldValue: js.Any, op: replace | add | remove, path: String): IReversibleJsonPatch = {
+    inline def apply(oldValue: Any, op: replace | add | remove, path: String): IReversibleJsonPatch = {
       val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[IReversibleJsonPatch]
     }
     
     extension [Self <: IReversibleJsonPatch](x: Self) {
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }
   }
 }

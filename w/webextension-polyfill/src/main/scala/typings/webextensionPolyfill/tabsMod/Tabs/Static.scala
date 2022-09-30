@@ -4,7 +4,7 @@ import typings.webextensionPolyfill.eventsMod.Events.Event
 import typings.webextensionPolyfill.extensionTypesMod.ExtensionTypes.ImageDetails
 import typings.webextensionPolyfill.extensionTypesMod.ExtensionTypes.InjectDetails
 import typings.webextensionPolyfill.runtimeMod.Runtime.Port
-import typings.webextensionPolyfill.webextensionPolyfillNumbers.`-1`
+import typings.webextensionPolyfill.webextensionPolyfillInts.`-1`
 import typings.webextensionPolyfill.windowsMod.Windows.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.xelib.mod
 
 import typings.xelib.mod.^
-import typings.xelib.xelibNumbers.`0`
+import typings.xelib.xelibInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Payment extends StObject {
   
   /**
+    * An opaque identifier for the user’s account on your system.
+    */
+  var applicationUsername: String
+  
+  /**
+    * The details of the discount offer to apply to the payment.
+    */
+  var paymentDiscount: js.UndefOr[PaymentDiscount] = js.undefined
+  
+  /**
     * The identifier of the purchased product.
     */
   var productIdentifier: String
@@ -18,12 +28,18 @@ trait Payment extends StObject {
 }
 object Payment {
   
-  inline def apply(productIdentifier: String, quantity: Double): Payment = {
-    val __obj = js.Dynamic.literal(productIdentifier = productIdentifier.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
+  inline def apply(applicationUsername: String, productIdentifier: String, quantity: Double): Payment = {
+    val __obj = js.Dynamic.literal(applicationUsername = applicationUsername.asInstanceOf[js.Any], productIdentifier = productIdentifier.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payment]
   }
   
   extension [Self <: Payment](x: Self) {
+    
+    inline def setApplicationUsername(value: String): Self = StObject.set(x, "applicationUsername", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentDiscount(value: PaymentDiscount): Self = StObject.set(x, "paymentDiscount", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentDiscountUndefined: Self = StObject.set(x, "paymentDiscount", js.undefined)
     
     inline def setProductIdentifier(value: String): Self = StObject.set(x, "productIdentifier", value.asInstanceOf[js.Any])
     

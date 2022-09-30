@@ -32,9 +32,9 @@ trait FunctionDeclaration_
   
   var predicate: js.UndefOr[DeclaredPredicate_ | InferredPredicate_ | Null] = js.undefined
   
-  var returnType: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation | Noop_ | Null] = js.undefined
+  var returnType: js.UndefOr[TypeAnnotation_ | TSTypeAnnotation__ | Noop_ | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_ | Null] = js.undefined
+  var typeParameters: js.UndefOr[TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_ | Null] = js.undefined
   
   @JSName("type")
   var type_FunctionDeclaration_ : FunctionDeclaration
@@ -82,7 +82,7 @@ object FunctionDeclaration_ {
     
     inline def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
     
-    inline def setReturnType(value: TypeAnnotation_ | TSTypeAnnotation | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: TypeAnnotation_ | TSTypeAnnotation__ | Noop_): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
     inline def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
@@ -90,7 +90,7 @@ object FunctionDeclaration_ {
     
     inline def setType(value: FunctionDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_ | TSTypeParameterDeclaration__ | Noop_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     

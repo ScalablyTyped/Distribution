@@ -25,7 +25,8 @@ object mod {
   
   @js.native
   trait Test
-    extends typings.supertest.mod.Test {
+    extends StObject
+       with typings.supertest.mod.Test {
     
     def timeout(): js.Promise[Response] & this.type = js.native
     

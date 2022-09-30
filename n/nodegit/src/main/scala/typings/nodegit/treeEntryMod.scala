@@ -1,12 +1,12 @@
 package typings.nodegit
 
 import typings.nodegit.blobMod.Blob
-import typings.nodegit.nodegitNumbers.`0`
-import typings.nodegit.nodegitNumbers.`16384`
-import typings.nodegit.nodegitNumbers.`33188`
-import typings.nodegit.nodegitNumbers.`33261`
-import typings.nodegit.nodegitNumbers.`40960`
-import typings.nodegit.nodegitNumbers.`57344`
+import typings.nodegit.nodegitInts.`0`
+import typings.nodegit.nodegitInts.`16384`
+import typings.nodegit.nodegitInts.`33188`
+import typings.nodegit.nodegitInts.`33261`
+import typings.nodegit.nodegitInts.`40960`
+import typings.nodegit.nodegitInts.`57344`
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeEntryMod.TreeEntry.FILEMODE
@@ -67,12 +67,12 @@ object treeEntryMod {
   object TreeEntry {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`0`
-      - typings.nodegit.nodegitNumbers.`16384`
-      - typings.nodegit.nodegitNumbers.`33188`
-      - typings.nodegit.nodegitNumbers.`33261`
-      - typings.nodegit.nodegitNumbers.`40960`
-      - typings.nodegit.nodegitNumbers.`57344`
+      - typings.nodegit.nodegitInts.`0`
+      - typings.nodegit.nodegitInts.`16384`
+      - typings.nodegit.nodegitInts.`33188`
+      - typings.nodegit.nodegitInts.`33261`
+      - typings.nodegit.nodegitInts.`40960`
+      - typings.nodegit.nodegitInts.`57344`
     */
     trait FILEMODE extends StObject
     object FILEMODE {

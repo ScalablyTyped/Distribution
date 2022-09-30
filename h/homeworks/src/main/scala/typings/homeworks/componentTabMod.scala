@@ -14,11 +14,11 @@ object componentTabMod {
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/component.tab", "WorksTab")
   @js.native
-  class WorksTab protected () extends HomeworksManager {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+  open class WorksTab protected () extends HomeworksManager {
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
     var active: Double = js.native
     
@@ -26,9 +26,9 @@ object componentTabMod {
     
     var `class`: String = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
-    /* private */ var m_active: js.Any = js.native
+    /* private */ var m_active: Any = js.native
     
     def ngAfterViewInit(): Unit = js.native
     
@@ -36,24 +36,24 @@ object componentTabMod {
     
     var onMove: EventEmitter[TabEvent] = js.native
     
-    /* private */ var wrapperElement: js.Any = js.native
+    /* private */ var wrapperElement: Any = js.native
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/component.tab", "WorksTabItem")
   @js.native
-  class WorksTabItem protected ()
+  open class WorksTabItem protected ()
     extends HomeworksManager
        with AfterContentInit {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
-    /* private */ var contentElement: js.Any = js.native
+    /* private */ var contentElement: Any = js.native
     
-    /* private */ var elementRef: js.Any = js.native
+    /* private */ var elementRef: Any = js.native
     
-    /* private */ var m_title: js.Any = js.native
+    /* private */ var m_title: Any = js.native
     
     /**
       * A callback method that is invoked immediately after
@@ -70,17 +70,17 @@ object componentTabMod {
     
     var titleChild: WorksTabTitle = js.native
     
-    /* private */ var titleElement: js.Any = js.native
+    /* private */ var titleElement: Any = js.native
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/tab/component.tab", "WorksTabTitle")
   @js.native
-  class WorksTabTitle protected () extends HomeworksManager {
-    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
+  open class WorksTabTitle protected () extends HomeworksManager {
+    def this(renderer: Renderer2, elementRef: ElementRef[Any]) = this()
     
     /* private */ @JSName("$element")
-    var $element: js.Any = js.native
+    var $element: Any = js.native
     
-    var elementRef: ElementRef[js.Any] = js.native
+    var elementRef: ElementRef[Any] = js.native
   }
 }

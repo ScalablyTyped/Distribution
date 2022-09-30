@@ -1,9 +1,9 @@
 package typings.leichtgewichtIpCodec
 
-import typings.leichtgewichtIpCodec.leichtgewichtIpCodecNumbers.`16`
-import typings.leichtgewichtIpCodec.leichtgewichtIpCodecNumbers.`1`
-import typings.leichtgewichtIpCodec.leichtgewichtIpCodecNumbers.`2`
-import typings.leichtgewichtIpCodec.leichtgewichtIpCodecNumbers.`4`
+import typings.leichtgewichtIpCodec.leichtgewichtIpCodecInts.`16`
+import typings.leichtgewichtIpCodec.leichtgewichtIpCodecInts.`1`
+import typings.leichtgewichtIpCodec.leichtgewichtIpCodecInts.`2`
+import typings.leichtgewichtIpCodec.leichtgewichtIpCodecInts.`4`
 import typings.leichtgewichtIpCodec.leichtgewichtIpCodecStrings.ip
 import typings.leichtgewichtIpCodec.leichtgewichtIpCodecStrings.ipv4
 import typings.leichtgewichtIpCodec.leichtgewichtIpCodecStrings.ipv6

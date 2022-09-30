@@ -28,6 +28,11 @@ trait TextPropsAndroid extends StObject {
   var dataDetectorType: js.UndefOr[Null | phoneNumber | link | email | none | all_] = js.undefined
   
   /**
+    * Specifies the disabled state of the text view for testing purposes.
+    */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Lets the user select text, to use the native copy and paste functionality.
     */
   var selectable: js.UndefOr[Boolean] = js.undefined
@@ -61,6 +66,10 @@ object TextPropsAndroid {
     inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
     inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     

@@ -1,8 +1,5 @@
 package typings.scormBrowser
 
-import typings.scormBrowser.scormBrowserStrings.$LeftcurlybracketstringRightcurlybracket
-import typings.scormBrowser.scormBrowserStrings.DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket
-import typings.scormBrowser.scormBrowserStrings.Leftcurlybracket$LeftcurlybracketstringRightcurlybracketRightcurlybracket
 import typings.scormBrowser.scormBrowserStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,17 +21,17 @@ object cmidatatypesMod {
     inline def `true`: typings.scormBrowser.scormBrowserStrings.`true` = "true".asInstanceOf[typings.scormBrowser.scormBrowserStrings.`true`]
   }
   
-  type CMIDecimal = $LeftcurlybracketstringRightcurlybracket
+  type CMIDecimal = /* template literal string: ${string} */ String
   
   type CMIFeedback = CMIFeedbackTrueFalse | CMIFeedbackChoice | CMIFeedbackFillIn | CMIFeedbackNumeric | CMIFeedbackLikert | CMIFeedbackMatching | CMIFeedbackPerformance
   
-  type CMIFeedbackChoice = Leftcurlybracket$LeftcurlybracketstringRightcurlybracketRightcurlybracket | String
+  type CMIFeedbackChoice = /* template literal string: {${string}} */ String
   
   type CMIFeedbackFillIn = String
   
   type CMIFeedbackLikert = Char
   
-  type CMIFeedbackMatching = Leftcurlybracket$LeftcurlybracketstringRightcurlybracketRightcurlybracket | String
+  type CMIFeedbackMatching = /* template literal string: {${string}} */ String
   
   type CMIFeedbackNumeric = CMIDecimal
   
@@ -70,9 +67,9 @@ object cmidatatypesMod {
   
   type CMIString4096 = String
   
-  type CMITime = DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket
+  type CMITime = /* template literal string: ${string}:${string}:${string} */ String
   
-  type CMITimeSpan = DollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracketColonDollarLeftcurlybracketstringRightcurlybracket
+  type CMITimeSpan = /* template literal string: ${string}:${string}:${string} */ String
   
   /* Rewritten from type alias, can be one of: 
     - typings.scormBrowser.scormBrowserStrings.`0`

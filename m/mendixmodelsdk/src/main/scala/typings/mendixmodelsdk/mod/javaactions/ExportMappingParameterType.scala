@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "javaactions.ExportMappingParameterType")
 @js.native
-class ExportMappingParameterType protected ()
+open class ExportMappingParameterType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.javaactions.ExportMappingParameterType {
   def this(
     model: AbstractModel,

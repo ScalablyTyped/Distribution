@@ -57,7 +57,7 @@ object webgpuMaterialContextMod {
     inline def _Counter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Counter")(x.asInstanceOf[js.Any])
   }
   
-  /** @hidden */
+  /** @internal */
   trait IWebGPUMaterialContextSamplerCache extends StObject {
     
     @JSName("hashCode")
@@ -83,7 +83,7 @@ object webgpuMaterialContextMod {
     }
   }
   
-  /** @hidden */
+  /** @internal */
   trait IWebGPUMaterialContextTextureCache extends StObject {
     
     var isExternalTexture: Boolean

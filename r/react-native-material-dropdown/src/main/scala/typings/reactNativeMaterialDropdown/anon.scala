@@ -176,7 +176,7 @@ object anon {
     
     var textColor: js.UndefOr[String] = js.undefined
     
-    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+    var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
     
     var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
@@ -493,8 +493,6 @@ object anon {
       
       inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
       
-      inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
-      
       inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
       
       inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
@@ -654,7 +652,7 @@ object anon {
     
     var textColor: js.UndefOr[String] = js.undefined
     
-    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+    var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
     
     var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
@@ -972,8 +970,6 @@ object anon {
       inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
       inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-      
-      inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
       
       inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
       

@@ -6,7 +6,6 @@ import typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.I
 import typings.googleGax.mod.protobuf.Reader
 import typings.googleGax.mod.protobuf.Writer
 import typings.protobufjs.mod.IConversionOptions
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new UninterpretedOption.
   * @param [properties] Properties to set
   */
-class UninterpretedOption ()
+open class UninterpretedOption ()
   extends typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption {
   def this(properties: IUninterpretedOption) = this()
 }
@@ -35,7 +34,7 @@ object UninterpretedOption {
     * Constructs a new NamePart.
     * @param [properties] Properties to set
     */
-  class NamePart ()
+  open class NamePart ()
     extends typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart {
     def this(properties: INamePart) = this()
   }
@@ -54,6 +53,8 @@ object UninterpretedOption {
     inline def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
     inline def create(properties: INamePart): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
     /**
       * Decodes a NamePart message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object UninterpretedOption {
     /* static member */
     inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
     inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
-    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
     /**
       * Decodes a NamePart message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object UninterpretedOption {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
     
     /**
       * Encodes the specified NamePart message. Does not implicitly {@link google.protobuf.UninterpretedOption.NamePart.verify|verify} messages.
@@ -105,7 +104,16 @@ object UninterpretedOption {
       * @returns NamePart
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart]
+    
+    /**
+      * Gets the default type url for NamePart
+      * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+      * @returns The default type url
+      */
+    /* static member */
+    inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+    inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Creates a plain object from a NamePart message. Also converts values to other types if specified.
@@ -114,11 +122,11 @@ object UninterpretedOption {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption.NamePart,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a NamePart message.
@@ -126,7 +134,7 @@ object UninterpretedOption {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -138,6 +146,8 @@ object UninterpretedOption {
   inline def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
   inline def create(properties: IUninterpretedOption): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
   
+  inline def decode(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
   /**
     * Decodes an UninterpretedOption message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -149,9 +159,8 @@ object UninterpretedOption {
   /* static member */
   inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
   inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
-  inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
-  inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
   /**
     * Decodes an UninterpretedOption message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -161,7 +170,6 @@ object UninterpretedOption {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
-  inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
   
   /**
     * Encodes the specified UninterpretedOption message. Does not implicitly {@link google.protobuf.UninterpretedOption.verify|verify} messages.
@@ -189,7 +197,16 @@ object UninterpretedOption {
     * @returns UninterpretedOption
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
+  inline def fromObject(`object`: StringDictionary[Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption]
+  
+  /**
+    * Gets the default type url for UninterpretedOption
+    * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+    * @returns The default type url
+    */
+  /* static member */
+  inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+  inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Creates a plain object from an UninterpretedOption message. Also converts values to other types if specified.
@@ -198,11 +215,11 @@ object UninterpretedOption {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   inline def toObject(
     message: typings.googleCloudTextToSpeech.mod.google.protobuf.UninterpretedOption,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an UninterpretedOption message.
@@ -210,5 +227,5 @@ object UninterpretedOption {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

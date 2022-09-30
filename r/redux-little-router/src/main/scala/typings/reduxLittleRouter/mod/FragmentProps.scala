@@ -20,7 +20,7 @@ trait FragmentProps extends StObject {
   
   var parentRoute: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
+  var style: js.UndefOr[ObjectLiteral[Any]] = js.undefined
   
   var withConditions: js.UndefOr[js.Function1[/* location */ Location, Boolean]] = js.undefined
 }
@@ -61,7 +61,7 @@ object FragmentProps {
     
     inline def setParentRouteUndefined: Self = StObject.set(x, "parentRoute", js.undefined)
     
-    inline def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ObjectLiteral[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

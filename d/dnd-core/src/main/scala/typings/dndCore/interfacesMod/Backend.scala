@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Backend extends StObject {
   
-  def connectDragPreview(sourceId: js.Any): Unsubscribe = js.native
-  def connectDragPreview(sourceId: js.Any, node: js.Any): Unsubscribe = js.native
-  def connectDragPreview(sourceId: js.Any, node: js.Any, options: js.Any): Unsubscribe = js.native
-  def connectDragPreview(sourceId: js.Any, node: Unit, options: js.Any): Unsubscribe = js.native
+  def connectDragPreview(sourceId: Any): Unsubscribe = js.native
+  def connectDragPreview(sourceId: Any, node: Any): Unsubscribe = js.native
+  def connectDragPreview(sourceId: Any, node: Any, options: Any): Unsubscribe = js.native
+  def connectDragPreview(sourceId: Any, node: Unit, options: Any): Unsubscribe = js.native
   
-  def connectDragSource(sourceId: js.Any): Unsubscribe = js.native
-  def connectDragSource(sourceId: js.Any, node: js.Any): Unsubscribe = js.native
-  def connectDragSource(sourceId: js.Any, node: js.Any, options: js.Any): Unsubscribe = js.native
-  def connectDragSource(sourceId: js.Any, node: Unit, options: js.Any): Unsubscribe = js.native
+  def connectDragSource(sourceId: Any): Unsubscribe = js.native
+  def connectDragSource(sourceId: Any, node: Any): Unsubscribe = js.native
+  def connectDragSource(sourceId: Any, node: Any, options: Any): Unsubscribe = js.native
+  def connectDragSource(sourceId: Any, node: Unit, options: Any): Unsubscribe = js.native
   
-  def connectDropTarget(targetId: js.Any): Unsubscribe = js.native
-  def connectDropTarget(targetId: js.Any, node: js.Any): Unsubscribe = js.native
-  def connectDropTarget(targetId: js.Any, node: js.Any, options: js.Any): Unsubscribe = js.native
-  def connectDropTarget(targetId: js.Any, node: Unit, options: js.Any): Unsubscribe = js.native
+  def connectDropTarget(targetId: Any): Unsubscribe = js.native
+  def connectDropTarget(targetId: Any, node: Any): Unsubscribe = js.native
+  def connectDropTarget(targetId: Any, node: Any, options: Any): Unsubscribe = js.native
+  def connectDropTarget(targetId: Any, node: Unit, options: Any): Unsubscribe = js.native
   
   def profile(): Record[String, Double] = js.native
   

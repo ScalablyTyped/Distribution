@@ -1,16 +1,22 @@
 package typings.mobx
 
+import typings.mobx.annotationMod.Annotation
+import typings.mobx.anon.NewValueOldValue
+import typings.mobx.anon.NewValueType
+import typings.mobx.anon.ObservableKind
+import typings.mobx.anon.OldValueType
 import typings.mobx.atomMod.IAtom
 import typings.mobx.computedvalueMod.IComputedValueOptions
 import typings.mobx.interceptUtilsMod.IInterceptable
-import typings.mobx.interceptUtilsMod.IInterceptor
 import typings.mobx.internalMod.ComputedValue
 import typings.mobx.internalMod.ObservableValue
 import typings.mobx.listenUtilsMod.IListenable
 import typings.mobx.mobxStrings.add
 import typings.mobx.mobxStrings.update
 import typings.mobx.modifiersMod.IEnhancer
+import typings.mobx.observableMod.CreateObservableOptions
 import typings.mobx.utilsMod.Lambda
+import typings.std.ArrayLike
 import typings.std.Map
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -19,87 +25,130 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object observableobjectMod {
   
-  @JSImport("mobx/lib/types/observableobject", JSImport.Namespace)
+  @JSImport("mobx/dist/types/observableobject", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/types/observableobject", "ObservableObjectAdministration")
+  @JSImport("mobx/dist/types/observableobject", "ObservableObjectAdministration")
   @js.native
-  class ObservableObjectAdministration protected ()
+  open class ObservableObjectAdministration protected ()
     extends StObject
-       with IInterceptable[IObjectWillChange[js.Any]]
+       with IInterceptable[IObjectWillChange[Any]]
        with IListenable {
     def this(
-      target: js.Any,
-      values: Map[String | Double | js.Symbol, ObservableValue[js.Any] | ComputedValue[js.Any]],
-      name: String,
-      defaultEnhancer: IEnhancer[js.Any]
+      target_ : Any,
+      values_ : Map[PropertyKey, ObservableValue[Any] | ComputedValue[Any]],
+      name_ : String
+    ) = this()
+    def this(
+      target_ : Any,
+      values_ : Map[PropertyKey, ObservableValue[Any] | ComputedValue[Any]],
+      name_ : String,
+      defaultAnnotation_ : Annotation
     ) = this()
     
-    def addComputedProp(
-      propertyOwner: js.Any,
-      // where is the property declared?
-    propName: PropertyKey,
-      options: IComputedValueOptions[js.Any]
-    ): Unit = js.native
+    var appliedAnnotations_ : js.UndefOr[js.Object] = js.native
     
-    def addObservableProp(propName: PropertyKey, newValue: js.Any): Unit = js.native
-    def addObservableProp(propName: PropertyKey, newValue: js.Any, enhancer: IEnhancer[js.Any]): Unit = js.native
+    var defaultAnnotation_ : Annotation = js.native
     
-    def defaultEnhancer(newValue: js.Any, oldValue: js.Any, name: String): js.Any = js.native
-    def defaultEnhancer(newValue: js.Any, oldValue: Unit, name: String): js.Any = js.native
-    @JSName("defaultEnhancer")
-    var defaultEnhancer_Original: IEnhancer[js.Any] = js.native
+    def defineComputedProperty_(key: PropertyKey, options: IComputedValueOptions[Any]): Boolean | Null = js.native
+    def defineComputedProperty_(key: PropertyKey, options: IComputedValueOptions[Any], proxyTrap: Boolean): Boolean | Null = js.native
     
-    def getKeys(): js.Array[PropertyKey] = js.native
+    def defineObservableProperty_(key: PropertyKey, value: Any, enhancer: IEnhancer[Any]): Boolean | Null = js.native
+    def defineObservableProperty_(key: PropertyKey, value: Any, enhancer: IEnhancer[Any], proxyTrap: Boolean): Boolean | Null = js.native
     
-    def has(key: PropertyKey): js.Any = js.native
+    /**
+      * @param {PropertyKey} key
+      * @param {PropertyDescriptor} descriptor
+      * @param {boolean} proxyTrap whether it's called from proxy trap
+      * @returns {boolean|null} true on success, false on failure (proxyTrap + non-configurable), null when cancelled by interceptor
+      */
+    def defineProperty_(key: PropertyKey, descriptor: js.PropertyDescriptor): Boolean | Null = js.native
+    def defineProperty_(key: PropertyKey, descriptor: js.PropertyDescriptor, proxyTrap: Boolean): Boolean | Null = js.native
     
-    def illegalAccess(owner: js.Any, propName: js.Any): Unit = js.native
+    /**
+      * @param {PropertyKey} key
+      * @param {PropertyDescriptor} descriptor
+      * @param {boolean} proxyTrap whether it's called from proxy trap
+      * @returns {boolean|null} true on success, false on failure (proxyTrap + non-configurable), null when cancelled by interceptor
+      */
+    def delete_(key: PropertyKey): Boolean | Null = js.native
+    def delete_(key: PropertyKey, proxyTrap: Boolean): Boolean | Null = js.native
     
-    def intercept(handler: js.Any): Lambda = js.native
-    /* CompleteClass */
-    override def intercept(handler: IInterceptor[IObjectWillChange[js.Any]]): Lambda = js.native
+    def extend_(key: PropertyKey, descriptor: js.PropertyDescriptor, annotation: Boolean): Boolean | Null = js.native
+    def extend_(key: PropertyKey, descriptor: js.PropertyDescriptor, annotation: Boolean, proxyTrap: Boolean): Boolean | Null = js.native
+    /**
+      * @param {PropertyKey} key
+      * @param {PropertyDescriptor} descriptor
+      * @param {Annotation|boolean} annotation true - use default annotation, false - copy as is
+      * @param {boolean} proxyTrap whether it's called from proxy trap
+      * @returns {boolean|null} true on success, false on failure (proxyTrap + non-configurable), null when cancelled by interceptor
+      */
+    def extend_(key: PropertyKey, descriptor: js.PropertyDescriptor, annotation: Annotation): Boolean | Null = js.native
+    def extend_(key: PropertyKey, descriptor: js.PropertyDescriptor, annotation: Annotation, proxyTrap: Boolean): Boolean | Null = js.native
     
-    var keysAtom: IAtom = js.native
+    def getObservablePropValue_(key: PropertyKey): Any = js.native
     
-    var name: String = js.native
+    def get_(key: PropertyKey): Any = js.native
     
-    def notifyPropertyAddition(key: PropertyKey, newValue: js.Any): Unit = js.native
+    def has_(key: PropertyKey): Boolean = js.native
+    
+    def intercept_(handler: Any): Lambda = js.native
+    
+    var isPlainObject_ : Boolean = js.native
+    
+    var keysAtom_ : IAtom = js.native
+    
+    def keys_(): js.Array[PropertyKey] = js.native
+    
+    def make_(key: PropertyKey, annotation: Boolean): Unit = js.native
+    /**
+      * @param {PropertyKey} key
+      * @param {Annotation|boolean} annotation true - use default annotation, false - ignore prop
+      */
+    def make_(key: PropertyKey, annotation: Annotation): Unit = js.native
+    
+    var name_ : String = js.native
+    
+    def notifyPropertyAddition_(key: PropertyKey, value: Any): Unit = js.native
     
     /**
       * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
       * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
       * for callback details
       */
-    def observe(callback: js.Function1[/* changes */ IObjectDidChange[js.Any], Unit]): Lambda = js.native
-    def observe(callback: js.Function1[/* changes */ IObjectDidChange[js.Any], Unit], fireImmediately: Boolean): Lambda = js.native
+    def observe_(callback: js.Function1[/* changes */ IObjectDidChange[Any], Unit]): Lambda = js.native
+    def observe_(callback: js.Function1[/* changes */ IObjectDidChange[Any], Unit], fireImmediately: Boolean): Lambda = js.native
     
-    /* private */ var pendingKeys: js.Any = js.native
+    def ownKeys_(): ArrayLike[String | js.Symbol] = js.native
     
-    /* private */ var proxy: js.Any = js.native
+    /* private */ var pendingKeys_ : Any = js.native
     
-    def read(key: PropertyKey): js.Any = js.native
+    var proxy_ : Any = js.native
     
-    def remove(key: PropertyKey): Unit = js.native
+    def setObservablePropValue_(key: PropertyKey, newValue: Any): Boolean | Null = js.native
     
-    var target: js.Any = js.native
+    /**
+      * @param {PropertyKey} key
+      * @param {any} value
+      * @param {Annotation|boolean} annotation true - use default annotation, false - copy as is
+      * @param {boolean} proxyTrap whether it's called from proxy trap
+      * @returns {boolean|null} true on success, false on failure (proxyTrap + non-configurable), null when cancelled by interceptor
+      */
+    def set_(key: PropertyKey, value: Any): Boolean | Null = js.native
+    def set_(key: PropertyKey, value: Any, proxyTrap: Boolean): Boolean | Null = js.native
     
-    var values: Map[String | Double | js.Symbol, ObservableValue[js.Any] | ComputedValue[js.Any]] = js.native
+    var target_ : Any = js.native
     
-    def write(key: PropertyKey, newValue: js.Any): Unit = js.native
+    var values_ : Map[PropertyKey, ObservableValue[Any] | ComputedValue[Any]] = js.native
   }
   
-  inline def asObservableObject(target: js.Any): ObservableObjectAdministration = ^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any]).asInstanceOf[ObservableObjectAdministration]
-  inline def asObservableObject(target: js.Any, name: Unit, defaultEnhancer: IEnhancer[js.Any]): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultEnhancer.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
-  inline def asObservableObject(target: js.Any, name: PropertyKey): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
-  inline def asObservableObject(target: js.Any, name: PropertyKey, defaultEnhancer: IEnhancer[js.Any]): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultEnhancer.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
+  inline def asObservableObject(target: Any): IIsObservableObject = ^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any]).asInstanceOf[IIsObservableObject]
+  inline def asObservableObject(target: Any, options: CreateObservableOptions): IIsObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IIsObservableObject]
   
-  inline def generateComputedPropConfig(propName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateComputedPropConfig")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isObservableObject(thing: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableObject")(thing.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def generateObservablePropConfig(propName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateObservablePropConfig")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
-  inline def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableObject")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observableobject.IObservableObject */ Boolean]
+  inline def recordAnnotationApplied(adm: ObservableObjectAdministration, annotation: Annotation, key: PropertyKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordAnnotationApplied")(adm.asInstanceOf[js.Any], annotation.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait IIsObservableObject extends StObject {
     
@@ -119,73 +168,27 @@ object observableobjectMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.mobx.anon.Type[T]
-    - typings.mobx.anon.OldValue[T]
-    - typings.mobx.anon.NameObject[T]
-  */
-  trait IObjectDidChange[T] extends StObject
-  object IObjectDidChange {
-    
-    inline def NameObject[T](name: PropertyKey, `object`: T, oldValue: js.Any): typings.mobx.anon.NameObject[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("remove")
-      __obj.asInstanceOf[typings.mobx.anon.NameObject[T]]
-    }
-    
-    inline def OldValue[T](name: PropertyKey, newValue: js.Any, `object`: T, oldValue: js.Any): typings.mobx.anon.OldValue[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("update")
-      __obj.asInstanceOf[typings.mobx.anon.OldValue[T]]
-    }
-    
-    inline def Type[T](name: PropertyKey, newValue: js.Any, `object`: T): typings.mobx.anon.Type[T] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("add")
-      __obj.asInstanceOf[typings.mobx.anon.Type[T]]
-    }
-  }
+  type IObjectDidChange[T] = (NewValueType & ObservableKind[T]) | (NewValueOldValue & ObservableKind[T]) | (OldValueType & ObservableKind[T])
   
   /* Rewritten from type alias, can be one of: 
     - typings.mobx.anon.NameNewValue[T]
-    - typings.mobx.anon.ObjectType[T]
+    - typings.mobx.anon.NameObject[T]
   */
   trait IObjectWillChange[T] extends StObject
   object IObjectWillChange {
     
-    inline def NameNewValue[T](name: PropertyKey, newValue: js.Any, `object`: T, `type`: update | add): typings.mobx.anon.NameNewValue[T] = {
+    inline def NameNewValue[T](name: PropertyKey, newValue: Any, `object`: T, `type`: update | add): typings.mobx.anon.NameNewValue[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mobx.anon.NameNewValue[T]]
     }
     
-    inline def ObjectType[T](name: PropertyKey, `object`: T): typings.mobx.anon.ObjectType[T] = {
+    inline def NameObject[T](name: PropertyKey, `object`: T): typings.mobx.anon.NameObject[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("remove")
-      __obj.asInstanceOf[typings.mobx.anon.ObjectType[T]]
-    }
-  }
-  
-  trait IObservableObject extends StObject {
-    
-    var `observable-object`: IObservableObject
-  }
-  object IObservableObject {
-    
-    inline def apply(`observable-object`: IObservableObject): IObservableObject = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("observable-object")(`observable-object`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IObservableObject]
-    }
-    
-    extension [Self <: IObservableObject](x: Self) {
-      
-      inline def `setObservable-object`(value: IObservableObject): Self = StObject.set(x, "observable-object", value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.mobx.anon.NameObject[T]]
     }
   }
 }

@@ -20,14 +20,14 @@ object mod {
   
   type immutableStateInvariantMiddlewareInterface = js.Function1[
     /* options */ js.UndefOr[immutableStateInvariantMiddlewareOptions], 
-    Middleware[js.Object, js.Any, Dispatch[AnyAction]]
+    Middleware[js.Object, Any, Dispatch[AnyAction]]
   ]
   
   trait immutableStateInvariantMiddlewareOptions extends StObject {
     
     var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
-    var isImmutable: js.UndefOr[js.Function1[/* value */ js.Any, Boolean]] = js.undefined
+    var isImmutable: js.UndefOr[js.Function1[/* value */ Any, Boolean]] = js.undefined
   }
   object immutableStateInvariantMiddlewareOptions {
     
@@ -42,9 +42,9 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
-      inline def setIsImmutable(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isImmutable", js.Any.fromFunction1(value))
+      inline def setIsImmutable(value: /* value */ Any => Boolean): Self = StObject.set(x, "isImmutable", js.Any.fromFunction1(value))
       
       inline def setIsImmutableUndefined: Self = StObject.set(x, "isImmutable", js.undefined)
     }

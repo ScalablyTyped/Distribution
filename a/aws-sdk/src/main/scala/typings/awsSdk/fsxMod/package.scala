@@ -1,7 +1,10 @@
 package typings.awsSdk.fsxMod
 
+import typings.awsSdk.awsSdkStrings.CACHE_1
 import typings.awsSdk.awsSdkStrings.DELETE_CHILD_VOLUMES_AND_SNAPSHOTS
 import typings.awsSdk.awsSdkStrings.FAILED_FILES_ONLY
+import typings.awsSdk.awsSdkStrings.LUSTRE
+import typings.awsSdk.awsSdkStrings.NFS3
 import typings.awsSdk.awsSdkStrings.REPORT_CSV_20191124
 import typings.awsSdk.awsSdkStrings.SINGLE_AZ_1
 import typings.awsSdk.awsSdkStrings.`file-system-id`
@@ -87,9 +90,15 @@ type Backups = js.Array[Backup]
 
 type BatchImportMetaDataOnCreate = Boolean
 
+type CapacityToRelease = Double
+
 type ClientRequestToken = String
 
 type CoolingPeriod = Double
+
+type CopyTagsToDataRepositoryAssociations = Boolean
+
+type CreateFileCacheDataRepositoryAssociations = js.Array[FileCacheDataRepositoryAssociation]
 
 type CreationTime = js.Date
 
@@ -125,6 +134,7 @@ type DataRepositoryLifecycle = _DataRepositoryLifecycle | String
   - typings.awsSdk.awsSdkStrings.`file-system-id`
   - typings.awsSdk.awsSdkStrings.`task-lifecycle`
   - typings.awsSdk.awsSdkStrings.`data-repository-association-id`
+  - typings.awsSdk.awsSdkStrings.`file-cache-id`
   - java.lang.String
 */
 type DataRepositoryTaskFilterName = _DataRepositoryTaskFilterName | String
@@ -153,6 +163,8 @@ type DataRepositoryTaskPaths = js.Array[DataRepositoryTaskPath]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EXPORT_TO_REPOSITORY
   - typings.awsSdk.awsSdkStrings.IMPORT_METADATA_FROM_REPOSITORY
+  - typings.awsSdk.awsSdkStrings.RELEASE_DATA_FROM_FILESYSTEM
+  - typings.awsSdk.awsSdkStrings.AUTO_RELEASE_DATA
   - java.lang.String
 */
 type DataRepositoryTaskType = _DataRepositoryTaskType | String
@@ -207,6 +219,26 @@ type EventTypes = js.Array[EventType]
 
 type FailedCount = Double
 
+type FileCacheId = String
+
+type FileCacheIds = js.Array[FileCacheId]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type FileCacheLifecycle = _FileCacheLifecycle | String
+
+type FileCacheLustreDeploymentType = CACHE_1 | String
+
+type FileCacheType = LUSTRE | String
+
+type FileCaches = js.Array[FileCache]
+
 type FileSystemAdministratorsGroupName = String
 
 type FileSystemId = String
@@ -253,6 +285,8 @@ type FileSystems = js.Array[FileSystem]
   - typings.awsSdk.awsSdkStrings.`file-system-type`
   - typings.awsSdk.awsSdkStrings.`volume-id`
   - typings.awsSdk.awsSdkStrings.`data-repository-type`
+  - typings.awsSdk.awsSdkStrings.`file-cache-id`
+  - typings.awsSdk.awsSdkStrings.`file-cache-type`
   - java.lang.String
 */
 type FilterName = _FilterName | String
@@ -327,6 +361,8 @@ type Megabytes = Double
 
 type MegabytesPerSecond = Double
 
+type MetadataStorageCapacity = Double
+
 type Namespace = String
 
 type NetBiosAlias = String
@@ -336,6 +372,8 @@ type NetworkInterfaceId = String
 type NetworkInterfaceIds = js.Array[NetworkInterfaceId]
 
 type NextToken = String
+
+type NfsVersion = NFS3 | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MULTI_AZ_1
@@ -400,9 +438,13 @@ type ReadOnly = Boolean
 
 type Region = String
 
+type ReleasedCapacity = Double
+
 type ReportFormat = REPORT_CSV_20191124 | String
 
 type ReportScope = FAILED_FILES_ONLY | String
+
+type RepositoryDnsIps = js.Array[IpAddress]
 
 type RequestTime = js.Date
 
@@ -536,6 +578,8 @@ type StorageVirtualMachineRootVolumeSecurityStyle = _StorageVirtualMachineRootVo
 type StorageVirtualMachineSubtype = _StorageVirtualMachineSubtype | String
 
 type StorageVirtualMachines = js.Array[StorageVirtualMachine]
+
+type SubDirectoriesPaths = js.Array[Namespace]
 
 type SubnetId = String
 

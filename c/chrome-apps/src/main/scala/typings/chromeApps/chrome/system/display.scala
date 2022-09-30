@@ -5,10 +5,10 @@ import typings.chromeApps.anon.ManufacturerId
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.double
 import typings.chromeApps.chrome.integer
-import typings.chromeApps.chromeAppsNumbers.`0`
-import typings.chromeApps.chromeAppsNumbers.`180`
-import typings.chromeApps.chromeAppsNumbers.`270`
-import typings.chromeApps.chromeAppsNumbers.`90`
+import typings.chromeApps.chromeAppsInts.`0`
+import typings.chromeApps.chromeAppsInts.`180`
+import typings.chromeApps.chromeAppsInts.`270`
+import typings.chromeApps.chromeAppsInts.`90`
 import typings.chromeApps.chromeAppsStrings.LEFT
 import typings.chromeApps.chromeAppsStrings.RIGHT
 import typings.chromeApps.chromeAppsStrings.TOP

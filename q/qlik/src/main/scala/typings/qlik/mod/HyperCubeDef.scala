@@ -1,8 +1,8 @@
 package typings.qlik.mod
 
-import typings.qlik.qlikNumbers.`-1`
-import typings.qlik.qlikNumbers.`0`
-import typings.qlik.qlikNumbers.`1`
+import typings.qlik.qlikInts.`-1`
+import typings.qlik.qlikInts.`0`
+import typings.qlik.qlikInts.`1`
 import typings.qlik.qlikStrings.K
 import typings.qlik.qlikStrings.P
 import typings.qlik.qlikStrings.S

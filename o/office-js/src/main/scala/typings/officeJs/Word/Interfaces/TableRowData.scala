@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableRowData extends StObject {
   
   /**
-    * Gets the number of cells in the row. Read-only.
+    * Gets the number of cells in the row.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -35,7 +35,15 @@ trait TableRowData extends StObject {
   var cells: js.UndefOr[js.Array[TableCellData]] = js.undefined
   
   /**
-    * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+    * Gets the collection of field objects in the table row.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  var fields: js.UndefOr[js.Array[FieldData]] = js.undefined
+  
+  /**
+    * Gets the font. Use this to get and set font name, size, color, and other properties.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -51,7 +59,7 @@ trait TableRowData extends StObject {
   var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+    * Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table object.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -67,7 +75,7 @@ trait TableRowData extends StObject {
   var preferredHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets the index of the row in its parent table. Read-only.
+    * Gets the index of the row in its parent table.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -116,6 +124,12 @@ object TableRowData {
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
     inline def setCellsVarargs(value: TableCellData*): Self = StObject.set(x, "cells", js.Array(value*))
+    
+    inline def setFields(value: js.Array[FieldData]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: FieldData*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

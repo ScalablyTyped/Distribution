@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.HttpHeaderEntry")
 @js.native
-class HttpHeaderEntry protected ()
+open class HttpHeaderEntry protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.HttpHeaderEntry {
   def this(
     model: AbstractModel,
@@ -42,9 +42,31 @@ object HttpHeaderEntry {
     * Creates and returns a new HttpHeaderEntry instance in the SDK and on the server.
     * The new HttpHeaderEntry will be automatically stored in the 'headerEntries' property
     * of the parent HttpConfiguration element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  6.0.0 to 9.1.0
     */
   /* static member */
   inline def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry]
+  
+  /**
+    * Creates and returns a new HttpHeaderEntry instance in the SDK and on the server.
+    * The new HttpHeaderEntry will be automatically stored in the 'headerEntries' property
+    * of the parent FormDataPart element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.2.0 and higher
+    */
+  /* static member */
+  inline def createInFormDataPartUnderHeaderEntries(container: typings.mendixmodelsdk.microflowsMod.microflows.FormDataPart): typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInFormDataPartUnderHeaderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry]
+  
+  /**
+    * Creates and returns a new HttpHeaderEntry instance in the SDK and on the server.
+    * The new HttpHeaderEntry will be automatically stored in the 'headerEntries' property
+    * of the parent HttpConfiguration element passed as argument.
+    */
+  /* static member */
+  inline def createInHttpConfigurationUnderHeaderEntries(container: typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration): typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHttpConfigurationUnderHeaderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpHeaderEntry]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.HttpHeaderEntry.structureTypeName")

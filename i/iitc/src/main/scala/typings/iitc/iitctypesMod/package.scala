@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type FieldGUID = java.lang.String
+type FieldGUID = String
 
-type LinkGUID = java.lang.String
+type LinkGUID = String
 
-type PortalGUID = java.lang.String
+type PortalGUID = String

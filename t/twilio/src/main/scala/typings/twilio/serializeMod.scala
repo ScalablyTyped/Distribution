@@ -29,11 +29,11 @@ object serializeMod {
   inline def `object`(o: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def `object`[T](o: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(o.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def prefixedCollapsibleMap[T /* <: js.Object */](m: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def prefixedCollapsibleMap[T /* <: js.Object */](m: T, prefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def prefixedCollapsibleMap[T](m: T): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def prefixedCollapsibleMap[T](m: T, prefix: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  inline def prefixedCollapsibleMap_T_Object[T](m: T): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  inline def prefixedCollapsibleMap_T_Object[T](m: T, prefix: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def prefixedCollapsibleMap_T_T[T /* <: js.Object */](m: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def prefixedCollapsibleMap_T_T[T /* <: js.Object */](m: T, prefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixedCollapsibleMap")(m.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Maps transform over each element in input if input is an array

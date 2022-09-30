@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object offsetUtilsMod {
   
-  @JSImport("react-dnd-html5-backend/lib/OffsetUtils", JSImport.Namespace)
+  @JSImport("react-dnd-html5-backend/dist/OffsetUtils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -107,6 +107,16 @@ trait Library extends StObject {
   def playlists(ids: Null, parameters: QueryParameters): js.Promise[js.Array[Playlists]] = js.native
   
   /**
+    * Fetch the resources recently added to the library.
+    *
+    * @param parameters A query parameters object that is serialized and passed
+    * directly to the Apple Music API.
+    * https://developer.apple.com/documentation/applemusicapi/get_recently_added_resources
+    */
+  def recentlyAdded(): js.Promise[js.Array[Resource]] = js.native
+  def recentlyAdded(parameters: QueryParameters): js.Promise[js.Array[Resource]] = js.native
+  
+  /**
     * Search the library using a query.
     *
     * @param term The term to search.

@@ -1,10 +1,7 @@
 package typings.mirrorx.mod
 
 import typings.history.mod.Location
-import typings.history.mod.LocationDescriptor
-import typings.history.mod.LocationState
 import typings.react.mod.CSSProperties
-import typings.reactRouter.mod.`match`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,16 +17,22 @@ trait NavLinkProps
   var exact: js.UndefOr[Boolean] = js.undefined
   
   var isActive: js.UndefOr[
-    js.Function2[/* match */ `match`[js.Any], /* location */ Location[LocationState], Boolean]
+    js.Function2[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<any> */ /* match */ Any, 
+      /* location */ Location, 
+      Boolean
+    ]
   ] = js.undefined
   
-  var location: js.UndefOr[Location[LocationState]] = js.undefined
+  var location: js.UndefOr[Location] = js.undefined
   
   var strict: js.UndefOr[Boolean] = js.undefined
 }
 object NavLinkProps {
   
-  inline def apply(to: LocationDescriptor[LocationState]): NavLinkProps = {
+  inline def apply(
+    to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
+  ): NavLinkProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavLinkProps]
   }
@@ -48,11 +51,13 @@ object NavLinkProps {
     
     inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    inline def setIsActive(value: (/* match */ `match`[js.Any], /* location */ Location[LocationState]) => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
+    inline def setIsActive(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<any> */ /* match */ Any, /* location */ Location) => Boolean
+    ): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
     
     inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    inline def setLocation(value: Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     

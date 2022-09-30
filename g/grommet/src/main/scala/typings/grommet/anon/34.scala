@@ -1,13 +1,17 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.AlignContentType
+import typings.grommet.grommetStrings.large
+import typings.grommet.grommetStrings.medium
+import typings.grommet.grommetStrings.small
+import typings.grommet.grommetStrings.xlarge
+import typings.grommet.grommetStrings.xsmall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `34` extends StObject {
   
-  var align: js.UndefOr[AlignContentType] = js.undefined
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
 }
 object `34` {
   
@@ -18,8 +22,8 @@ object `34` {
   
   extension [Self <: `34`](x: Self) {
     
-    inline def setAlign(value: AlignContentType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setSize(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

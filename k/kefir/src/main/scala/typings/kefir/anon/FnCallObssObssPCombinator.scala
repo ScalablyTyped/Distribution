@@ -3,7 +3,6 @@ package typings.kefir.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.kefir.mod.Stream_
-import typings.kefir.mod.ValueOfAnObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,17 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallObssObssPCombinator extends StObject {
   
-  def apply[T /* <: js.Tuple2[typings.kefir.mod.Observable[Any, Any], typings.kefir.mod.Observable[Any, Any]] */](obss: T): Stream_[
-    js.Tuple2[
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ], 
-      ValueOfAnObservable[
-        /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-      ]
-    ], 
-    Any
-  ] = js.native
+  def apply[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = js.native
   def apply[T /* <: StringDictionary[typings.kefir.mod.Observable[Any, Any]] */, K /* <: StringDictionary[typings.kefir.mod.Observable[Any, Any]] */](obss: T, passiveObss: K): Stream_[
     typings.kefir.kefirStrings.FnCallObssObssPCombinator & TopLevel[T] & TopLevel[K], 
     Any

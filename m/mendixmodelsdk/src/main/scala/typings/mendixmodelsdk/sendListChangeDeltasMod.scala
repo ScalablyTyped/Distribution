@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sendListChangeDeltasMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/sendListChangeDeltas", JSImport.Namespace)
+  @JSImport("mendixmodelsdk/src/sdk/internal/properties/sendListChangeDeltas", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

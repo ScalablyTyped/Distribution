@@ -15,13 +15,13 @@ object jsxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Fragment(data: Null, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
-  inline def Fragment(data: Key, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
+  inline def Fragment(data: Null, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(scala.List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
+  inline def Fragment(data: Key, children: JsxVNodeChildren*): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("Fragment")(scala.List(data.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VNode_]
   
-  inline def jsx(tag: String, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
-  inline def jsx(tag: String, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
-  inline def jsx(tag: FunctionComponent, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
-  inline def jsx(tag: FunctionComponent, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: String, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: String, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: FunctionComponent, data: Null, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
+  inline def jsx(tag: FunctionComponent, data: VNodeData, children: JsxVNodeChildren*): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(tag.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode_]
   
   type FunctionComponent = js.Function2[
     /* props */ StringDictionary[Any] | Null, 

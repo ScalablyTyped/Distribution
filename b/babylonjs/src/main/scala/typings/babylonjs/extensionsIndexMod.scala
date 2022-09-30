@@ -120,19 +120,19 @@ object extensionsIndexMod {
     trait Camera extends StObject {
       
       /**
-        * @hidden
+        * @internal
         * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
         */
       var _multiviewTexture: Nullable[RenderTargetTexture]
       
       /**
-        * @hidden
+        * @internal
         * For WebXR cameras that are rendering to multiview texture arrays.
         */
       var _renderingMultiview: Boolean
       
       /**
-        * @hidden
+        * @internal
         * ensures the multiview texture of the camera exists and has the specified width/height
         * @param width height to set on the multiview texture
         * @param height width to set on the multiview texture
@@ -140,7 +140,7 @@ object extensionsIndexMod {
       def _resizeOrCreateMultiviewTexture(width: Double, height: Double): Unit
       
       /**
-        * @hidden
+        * @internal
         * For cameras that cannot use multiview images to display directly. (e.g. webVR camera will render to multiview texture, then copy to each eye texture and go from there)
         */
       var _useMultiviewToSingleView: Boolean
@@ -177,95 +177,95 @@ object extensionsIndexMod {
     @js.native
     trait Engine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _captureGPUFrameTime: Boolean = js.native
       
-      /** @hidden */
+      /** @internal */
       def _createTimeQuery(): WebGLQuery = js.native
       
-      /** @hidden */
+      /** @internal */
       var _currentNonTimestampToken: Nullable[TimeToken] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _deleteTimeQuery(query: WebGLQuery): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       var _excludedCompressedTextures: js.Array[String] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _getGlAlgorithmType(algorithmType: Double): Double = js.native
       
-      /** @hidden */
+      /** @internal */
       def _getTimeQueryAvailability(query: WebGLQuery): Any = js.native
       
-      /** @hidden */
+      /** @internal */
       def _getTimeQueryResult(query: WebGLQuery): Any = js.native
       
-      /** @hidden */
+      /** @internal */
       def _getVRDisplaysAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _gpuFrameTime: PerfCounter = js.native
       
-      /** @hidden */
+      /** @internal */
       var _gpuFrameTimeToken: Nullable[TimeToken] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _inputElement: Nullable[HTMLElement] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _oldHardwareScaleFactor: Double = js.native
       
-      /** @hidden */
+      /** @internal */
       var _oldSize: Size = js.native
       
-      /** @hidden */
+      /** @internal */
       var _onBeginFrameObserver: Nullable[
             Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
           ] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _onEndFrameObserver: Nullable[
             Observer[typings.babylonjs.engineQueryMod.babylonjsEnginesEngineAugmentingMod.Engine]
           ] = js.native
       
       /**
         * Observable to handle when a change to inputElement occurs
-        * @hidden
+        * @internal
         */
       var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _onVRDisplayPointerRestricted(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _onVRDisplayPointerUnrestricted(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _onVRFullScreenTriggered(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       var _onVrDisplayConnect: Nullable[js.Function1[/* display */ Any, Unit]] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _onVrDisplayDisconnect: Nullable[js.Function0[Unit]] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
       
-      /** @hidden */
+      /** @internal */
       var _textureFormatInUse: String = js.native
       
-      /** @hidden */
+      /** @internal */
       var _vrDisplay: Any = js.native
       
-      /** @hidden */
+      /** @internal */
       var _vrExclusivePointerMode: Boolean = js.native
       
-      /** @hidden */
+      /** @internal */
       var _vrSupported: Boolean = js.native
       
-      /** @hidden */
+      /** @internal */
       var _webVRInitPromise: js.Promise[IDisplayChangedEventArgs] = js.native
       
       /**
@@ -539,7 +539,7 @@ object extensionsIndexMod {
     @js.native
     trait ThinEngine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _cascadeLoadFiles(
         scene: Nullable[Scene],
         onfinish: js.Function1[/* images */ js.Array[js.typedarray.ArrayBuffer], Unit],
@@ -549,7 +549,7 @@ object extensionsIndexMod {
             ]
       ): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _cascadeLoadImgs(
         scene: Nullable[Scene],
         texture: InternalTexture,
@@ -592,34 +592,34 @@ object extensionsIndexMod {
         */
       def _createDepthStencilCubeTexture(size: Double, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
       
-      /** @hidden */
+      /** @internal */
       def _createDepthStencilTexture(size: TextureSize, options: DepthTextureCreationOptions, rtWrapper: RenderTargetWrapper): InternalTexture = js.native
       
-      /** @hidden */
+      /** @internal */
       def _createHardwareRenderTargetWrapper(isMulti: Boolean, isCube: Boolean, size: TextureSize): RenderTargetWrapper = js.native
       
-      /** @hidden */
+      /** @internal */
       def _debugFlushPendingCommands(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _debugInsertMarker(text: String): Unit = js.native
       def _debugInsertMarker(text: String, targetObject: Double): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _debugPopGroup(): Unit = js.native
       def _debugPopGroup(targetObject: Double): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _debugPushGroup(groupName: String): Unit = js.native
       def _debugPushGroup(groupName: String, targetObject: Double): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _deleteComputePipelineContext(pipelineContext: IComputePipelineContext): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _executeWhenComputeStateIsCompiled(pipelineContext: IComputePipelineContext, action: js.Function0[Unit]): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _partialLoadFile(
         url: String,
         index: Double,
@@ -630,7 +630,7 @@ object extensionsIndexMod {
             ]
       ): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _partialLoadImg(
         url: String,
         index: Double,
@@ -663,7 +663,7 @@ object extensionsIndexMod {
         mimeType: String
       ): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _prepareComputePipelineContext(
         pipelineContext: IComputePipelineContext,
         computeSourceCode: String,
@@ -672,7 +672,7 @@ object extensionsIndexMod {
         entryPoint: String
       ): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _readTexturePixels(
         texture: InternalTexture,
         width: Double,
@@ -686,7 +686,7 @@ object extensionsIndexMod {
         y: js.UndefOr[Double]
       ): js.Promise[js.typedarray.ArrayBufferView] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _readTexturePixelsSync(
         texture: InternalTexture,
         width: Double,
@@ -700,14 +700,14 @@ object extensionsIndexMod {
         y: js.UndefOr[Double]
       ): js.typedarray.ArrayBufferView = js.native
       
-      /** @hidden */
+      /** @internal */
       def _rebuildComputeEffects(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       def _releaseComputeEffect(effect: ComputeEffect): Unit = js.native
       
       /**
-        * @hidden
+        * @internal
         */
       def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean): Unit = js.native
       def _setCubeMapTextureParams(texture: InternalTexture, loadMipmap: Boolean, maxLevel: Double): Unit = js.native
@@ -1016,7 +1016,7 @@ object extensionsIndexMod {
         useSRGBBuffer: Boolean
       ): InternalTexture = js.native
       
-      /** @hidden */
+      /** @internal */
       def createCubeTextureBase(
         rootUrl: String,
         scene: Nullable[Scene],
@@ -1764,13 +1764,13 @@ object extensionsIndexMod {
       
       /**
         * Backing filed
-        * @hidden
+        * @internal
         */
       var __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
       
       /**
         * Access property
-        * @hidden
+        * @internal
         */
       var _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
       
@@ -1859,19 +1859,19 @@ object extensionsIndexMod {
     @js.native
     trait Scene extends StObject {
       
-      /** @hidden */
+      /** @internal */
       def _createMultiviewUbo(): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       var _multiviewSceneUbo: Nullable[UniformBuffer] = js.native
       
-      /** @hidden */
+      /** @internal */
       def _renderMultiviewToSingleView(camera: Camera): Unit = js.native
       
-      /** @hidden */
+      /** @internal */
       var _transformMatrixR: Matrix = js.native
       
-      /** @hidden */
+      /** @internal */
       def _updateMultiviewUbo(): Unit = js.native
       def _updateMultiviewUbo(viewR: Unit, projectionR: Matrix): Unit = js.native
       def _updateMultiviewUbo(viewR: Matrix): Unit = js.native

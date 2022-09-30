@@ -1,6 +1,6 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.kdbxwebNumbers.`4`
+import typings.kdbxweb.kdbxwebInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

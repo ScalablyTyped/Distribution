@@ -16,7 +16,7 @@ object postProcessRenderPipelineManagerMod {
     */
   open class PostProcessRenderPipelineManager () extends StObject {
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
     /* private */ var _renderPipelines: Any = js.native

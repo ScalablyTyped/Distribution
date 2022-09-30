@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "victory-line" : "36.6.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "victory-line" : "36.6.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

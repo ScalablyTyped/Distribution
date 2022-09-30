@@ -3,10 +3,6 @@ package typings.tokeyCssSelectorParser
 import typings.tokeyCore.mod.Seeker
 import typings.tokeyCssSelectorParser.astTypesMod.Nth
 import typings.tokeyCssSelectorParser.tokenizerMod.CSSSelectorToken
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.dash
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.of
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.offset
-import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.selector
 import typings.tokeyCssSelectorParser.tokeyCssSelectorParserStrings.step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +40,7 @@ object nthParserMod {
     
     /* private */ var standaloneDash: Any = js.native
     
-    var state: step | dash | offset | of | selector = js.native
+    var state: step | (/* template literal string: dash */ String) = js.native
   }
   /* static members */
   object NthParser {

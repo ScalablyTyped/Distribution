@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/pages", "StructureVersionInfo")
+@JSImport("mendixmodelsdk/src/gen/pages", "StructureVersionInfo")
 @js.native
-class StructureVersionInfo protected ()
+open class StructureVersionInfo protected ()
   extends typings.mendixmodelsdk.internalMod.StructureVersionInfo {
   def this(info: IStructureVersionInfo, structureType: StructureType) = this()
 }

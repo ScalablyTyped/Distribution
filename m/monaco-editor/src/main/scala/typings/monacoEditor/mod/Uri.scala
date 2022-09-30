@@ -100,7 +100,7 @@ object Uri {
     * @param pathFragment The path fragment to add to the Uri path.
     * @returns The resulting Uri.
     */
-  inline def joinPath(uri: Uri, pathFragment: String*): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(List(uri.asInstanceOf[js.Any]).`++`(pathFragment.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Uri]
+  inline def joinPath(uri: Uri, pathFragment: String*): Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(scala.List(uri.asInstanceOf[js.Any]).`++`(pathFragment.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Uri]
   
   /**
     * Creates a new Uri from a string, e.g. `http://www.example.com/some/path`,

@@ -1,74 +1,74 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`0`
-import typings.activexWord.activexWordNumbers.`10`
-import typings.activexWord.activexWordNumbers.`11`
-import typings.activexWord.activexWordNumbers.`14`
-import typings.activexWord.activexWordNumbers.`16`
-import typings.activexWord.activexWordNumbers.`18`
-import typings.activexWord.activexWordNumbers.`1`
-import typings.activexWord.activexWordNumbers.`24`
-import typings.activexWord.activexWordNumbers.`25`
-import typings.activexWord.activexWordNumbers.`2`
-import typings.activexWord.activexWordNumbers.`30`
-import typings.activexWord.activexWordNumbers.`31`
-import typings.activexWord.activexWordNumbers.`34`
-import typings.activexWord.activexWordNumbers.`35`
-import typings.activexWord.activexWordNumbers.`38`
-import typings.activexWord.activexWordNumbers.`39`
-import typings.activexWord.activexWordNumbers.`3`
-import typings.activexWord.activexWordNumbers.`41`
-import typings.activexWord.activexWordNumbers.`42`
-import typings.activexWord.activexWordNumbers.`45`
-import typings.activexWord.activexWordNumbers.`46`
-import typings.activexWord.activexWordNumbers.`47`
-import typings.activexWord.activexWordNumbers.`48`
-import typings.activexWord.activexWordNumbers.`49`
-import typings.activexWord.activexWordNumbers.`4`
-import typings.activexWord.activexWordNumbers.`50`
-import typings.activexWord.activexWordNumbers.`51`
-import typings.activexWord.activexWordNumbers.`52`
-import typings.activexWord.activexWordNumbers.`53`
-import typings.activexWord.activexWordNumbers.`54`
-import typings.activexWord.activexWordNumbers.`55`
-import typings.activexWord.activexWordNumbers.`56`
+import typings.activexWord.activexWordInts.`0`
+import typings.activexWord.activexWordInts.`10`
+import typings.activexWord.activexWordInts.`11`
+import typings.activexWord.activexWordInts.`14`
+import typings.activexWord.activexWordInts.`16`
+import typings.activexWord.activexWordInts.`18`
+import typings.activexWord.activexWordInts.`1`
+import typings.activexWord.activexWordInts.`24`
+import typings.activexWord.activexWordInts.`25`
+import typings.activexWord.activexWordInts.`2`
+import typings.activexWord.activexWordInts.`30`
+import typings.activexWord.activexWordInts.`31`
+import typings.activexWord.activexWordInts.`34`
+import typings.activexWord.activexWordInts.`35`
+import typings.activexWord.activexWordInts.`38`
+import typings.activexWord.activexWordInts.`39`
+import typings.activexWord.activexWordInts.`3`
+import typings.activexWord.activexWordInts.`41`
+import typings.activexWord.activexWordInts.`42`
+import typings.activexWord.activexWordInts.`45`
+import typings.activexWord.activexWordInts.`46`
+import typings.activexWord.activexWordInts.`47`
+import typings.activexWord.activexWordInts.`48`
+import typings.activexWord.activexWordInts.`49`
+import typings.activexWord.activexWordInts.`4`
+import typings.activexWord.activexWordInts.`50`
+import typings.activexWord.activexWordInts.`51`
+import typings.activexWord.activexWordInts.`52`
+import typings.activexWord.activexWordInts.`53`
+import typings.activexWord.activexWordInts.`54`
+import typings.activexWord.activexWordInts.`55`
+import typings.activexWord.activexWordInts.`56`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`0`
-  - typings.activexWord.activexWordNumbers.`14`
-  - typings.activexWord.activexWordNumbers.`46`
-  - typings.activexWord.activexWordNumbers.`48`
-  - typings.activexWord.activexWordNumbers.`25`
-  - typings.activexWord.activexWordNumbers.`24`
-  - typings.activexWord.activexWordNumbers.`41`
-  - typings.activexWord.activexWordNumbers.`42`
-  - typings.activexWord.activexWordNumbers.`45`
-  - typings.activexWord.activexWordNumbers.`47`
-  - typings.activexWord.activexWordNumbers.`51`
-  - typings.activexWord.activexWordNumbers.`52`
-  - typings.activexWord.activexWordNumbers.`49`
-  - typings.activexWord.activexWordNumbers.`50`
-  - typings.activexWord.activexWordNumbers.`10`
-  - typings.activexWord.activexWordNumbers.`11`
-  - typings.activexWord.activexWordNumbers.`16`
-  - typings.activexWord.activexWordNumbers.`4`
-  - typings.activexWord.activexWordNumbers.`2`
-  - typings.activexWord.activexWordNumbers.`18`
-  - typings.activexWord.activexWordNumbers.`38`
-  - typings.activexWord.activexWordNumbers.`39`
-  - typings.activexWord.activexWordNumbers.`54`
-  - typings.activexWord.activexWordNumbers.`55`
-  - typings.activexWord.activexWordNumbers.`53`
-  - typings.activexWord.activexWordNumbers.`34`
-  - typings.activexWord.activexWordNumbers.`35`
-  - typings.activexWord.activexWordNumbers.`3`
-  - typings.activexWord.activexWordNumbers.`1`
-  - typings.activexWord.activexWordNumbers.`56`
-  - typings.activexWord.activexWordNumbers.`30`
-  - typings.activexWord.activexWordNumbers.`31`
+  - typings.activexWord.activexWordInts.`0`
+  - typings.activexWord.activexWordInts.`14`
+  - typings.activexWord.activexWordInts.`46`
+  - typings.activexWord.activexWordInts.`48`
+  - typings.activexWord.activexWordInts.`25`
+  - typings.activexWord.activexWordInts.`24`
+  - typings.activexWord.activexWordInts.`41`
+  - typings.activexWord.activexWordInts.`42`
+  - typings.activexWord.activexWordInts.`45`
+  - typings.activexWord.activexWordInts.`47`
+  - typings.activexWord.activexWordInts.`51`
+  - typings.activexWord.activexWordInts.`52`
+  - typings.activexWord.activexWordInts.`49`
+  - typings.activexWord.activexWordInts.`50`
+  - typings.activexWord.activexWordInts.`10`
+  - typings.activexWord.activexWordInts.`11`
+  - typings.activexWord.activexWordInts.`16`
+  - typings.activexWord.activexWordInts.`4`
+  - typings.activexWord.activexWordInts.`2`
+  - typings.activexWord.activexWordInts.`18`
+  - typings.activexWord.activexWordInts.`38`
+  - typings.activexWord.activexWordInts.`39`
+  - typings.activexWord.activexWordInts.`54`
+  - typings.activexWord.activexWordInts.`55`
+  - typings.activexWord.activexWordInts.`53`
+  - typings.activexWord.activexWordInts.`34`
+  - typings.activexWord.activexWordInts.`35`
+  - typings.activexWord.activexWordInts.`3`
+  - typings.activexWord.activexWordInts.`1`
+  - typings.activexWord.activexWordInts.`56`
+  - typings.activexWord.activexWordInts.`30`
+  - typings.activexWord.activexWordInts.`31`
 */
 trait WdCaptionNumberStyle extends StObject
 object WdCaptionNumberStyle {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.SizeMode")
 @js.native
-class SizeMode protected ()
+open class SizeMode protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SizeMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

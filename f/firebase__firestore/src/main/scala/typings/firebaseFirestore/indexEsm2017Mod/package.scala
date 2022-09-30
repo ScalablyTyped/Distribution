@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.indexEsm2017Mod
 
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`-1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`-1`
 import typings.firebaseFirestore.indexEsm2017Mod.^
 import typings.firebaseUtil.srcErrorsMod.FirebaseError
 import org.scalablytyped.runtime.StObject
@@ -66,7 +66,7 @@ inline def cast(t: Any, e: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic(
 
 inline def clearIndexedDbPersistence(t: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIndexedDbPersistence")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 
-inline def collection(t: Any, e: Any, n: Any*): Aa = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Aa]
+inline def collection(t: Any, e: Any, n: Any*): Aa = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Aa]
 
 /**
   * Creates and returns a new `Query` instance that includes all documents in the
@@ -144,7 +144,7 @@ inline def connectFirestoreEmulator(t: Any, e: Any, n: Any, s: js.Object): Unit 
   * @returns A `Promise` that is resolved once the network has been disabled.
   */ inline def disableNetwork(t: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("disableNetwork")(t.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def doc(t: Any, e: Any, n: Any*): Ta = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Ta]
+inline def doc(t: Any, e: Any, n: Any*): Ta = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Ta]
 
 /**
   * Returns a special sentinel `FieldPath` to refer to the ID of a document.
@@ -398,7 +398,7 @@ inline def isBase64Available(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynami
 
 /**
   * @internal
-  */ inline def logWarn(t: Any, e: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logWarn")(List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  */ inline def logWarn(t: Any, e: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logWarn")(scala.List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
 
 /**
   * Reads a Firestore {@link Query} from local cache, identified by the given
@@ -413,7 +413,7 @@ inline def isBase64Available(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynami
   * @returns A `Promise` that is resolved with the Query or `null`.
   */ inline def namedQuery(t: Any, e: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("namedQuery")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def onSnapshot(t: Any, e: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
+inline def onSnapshot(t: Any, e: Any*): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshot")(scala.List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function0[Unit]]
 
 inline def onSnapshotsInSync(t: Any, e: Any): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 
@@ -436,7 +436,7 @@ inline def orderBy(t: Any, e: String): Lh_ = (^.asInstanceOf[js.Dynamic].applyDy
   * @param queryConstraints - The list of {@link QueryConstraint}s to apply.
   * @throws if any of the provided query constraints cannot be combined with the
   * existing or new constraints.
-  */ inline def query(t: Any, e: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  */ inline def query(t: Any, e: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 /**
   * Returns true if the provided queries point to the same collection and apply
@@ -550,7 +550,7 @@ inline def startAt(t: Any*): Qh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("star
   * terminated.
   */ inline def terminate(t: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(t.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def updateDoc(t: Any, e: Any, n: Any, s: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).`++`(s.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
+inline def updateDoc(t: Any, e: Any, n: Any, s: Any*): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).`++`(s.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Any]]
 
 /**
   * Validates that two boolean options are not set at the same time.

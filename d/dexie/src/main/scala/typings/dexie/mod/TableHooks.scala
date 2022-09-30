@@ -4,12 +4,14 @@ import typings.dexie.dexieStrings.creating
 import typings.dexie.dexieStrings.deleting
 import typings.dexie.dexieStrings.reading
 import typings.dexie.dexieStrings.updating
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableHooks[T, TKey] extends DexieEventSet {
+trait TableHooks[T, TKey]
+  extends StObject
+     with DexieEventSet {
   
   def apply(
     eventName: creating,
@@ -18,7 +20,7 @@ trait TableHooks[T, TKey] extends DexieEventSet {
       /* primKey */ TKey, 
       /* obj */ T, 
       /* transaction */ Transaction, 
-      _
+      Any
     ]
   ): Unit = js.native
   def apply(
@@ -28,10 +30,10 @@ trait TableHooks[T, TKey] extends DexieEventSet {
       /* primKey */ TKey, 
       /* obj */ T, 
       /* transaction */ Transaction, 
-      _
+      Any
     ]
   ): Unit = js.native
-  def apply(eventName: reading, subscriber: js.Function1[/* obj */ T, T | _]): Unit = js.native
+  def apply(eventName: reading, subscriber: js.Function1[/* obj */ T, T | Any]): Unit = js.native
   def apply(
     eventName: updating,
     subscriber: js.ThisFunction4[
@@ -40,7 +42,7 @@ trait TableHooks[T, TKey] extends DexieEventSet {
       /* primKey */ TKey, 
       /* obj */ T, 
       /* transaction */ Transaction, 
-      _
+      Any
     ]
   ): Unit = js.native
   

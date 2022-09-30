@@ -15,7 +15,7 @@ trait WebXRInputSource extends StObject {
   
   /**
     * The last XRPose the was calculated on the current XRFrame
-    * @hidden
+    * @internal
     */
   var _lastXRPose: js.UndefOr[XRPose] = js.native
   

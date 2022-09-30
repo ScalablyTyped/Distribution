@@ -76,9 +76,9 @@ object mod {
   inline def expr[T](expr: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expr")(expr.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def expr[T](expr: js.Function0[T], scope: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expr")(expr.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B*): A & B = ^.asInstanceOf[js.Dynamic].applyDynamic("extendObservable")(List(target.asInstanceOf[js.Any]).`++`(properties.asInstanceOf[Seq[js.Any]])*).asInstanceOf[A & B]
+  inline def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B*): A & B = ^.asInstanceOf[js.Dynamic].applyDynamic("extendObservable")(scala.List(target.asInstanceOf[js.Any]).`++`(properties.asInstanceOf[Seq[js.Any]])*).asInstanceOf[A & B]
   
-  inline def extendReactive[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B*): A & B = ^.asInstanceOf[js.Dynamic].applyDynamic("extendReactive")(List(target.asInstanceOf[js.Any]).`++`(properties.asInstanceOf[Seq[js.Any]])*).asInstanceOf[A & B]
+  inline def extendReactive[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B*): A & B = ^.asInstanceOf[js.Dynamic].applyDynamic("extendReactive")(scala.List(target.asInstanceOf[js.Any]).`++`(properties.asInstanceOf[Seq[js.Any]])*).asInstanceOf[A & B]
   
   object extras {
     

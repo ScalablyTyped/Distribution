@@ -35,6 +35,8 @@ object anon {
     
     val Data: Any
     
+    val LatLngBounds: Any
+    
     val Map: Any
     
     val Marker: Any
@@ -61,6 +63,7 @@ object anon {
     
     inline def apply(
       Data: Any,
+      LatLngBounds: Any,
       Map: Any,
       Marker: Any,
       OverlayView: Any,
@@ -73,7 +76,7 @@ object anon {
       places: Any,
       visualization: Any
     ): Typeofmaps = {
-      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], journeySharing = journeySharing.asInstanceOf[js.Any], localContext = localContext.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], LatLngBounds = LatLngBounds.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], journeySharing = journeySharing.asInstanceOf[js.Any], localContext = localContext.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofmaps]
     }
     
@@ -88,6 +91,8 @@ object anon {
       inline def setGeometry(value: Typeofgeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
       inline def setJourneySharing(value: Any): Self = StObject.set(x, "journeySharing", value.asInstanceOf[js.Any])
+      
+      inline def setLatLngBounds(value: Any): Self = StObject.set(x, "LatLngBounds", value.asInstanceOf[js.Any])
       
       inline def setLocalContext(value: Any): Self = StObject.set(x, "localContext", value.asInstanceOf[js.Any])
       

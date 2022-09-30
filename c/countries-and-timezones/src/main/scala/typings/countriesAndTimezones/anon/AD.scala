@@ -244,8 +244,6 @@ import typings.countriesAndTimezones.countriesAndTimezonesStrings.`United Arab E
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.`United Kingdom`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.`United States Minor Outlying Islands`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.`United States of America`
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.`Virgin Islands LeftparenthesisUKRightparenthesis`
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.`Virgin Islands LeftparenthesisUSRightparenthesis`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.`Wallis and Futuna`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.`Western Sahara`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.`Åland Islands`
@@ -731,9 +729,9 @@ trait AD extends StObject {
   
   var VE: Venezuela
   
-  var VG: `Virgin Islands LeftparenthesisUKRightparenthesis`
+  var VG: String
   
-  var VI: `Virgin Islands LeftparenthesisUSRightparenthesis`
+  var VI: String
   
   var VN: Vietnam
   
@@ -1238,9 +1236,9 @@ object AD {
     
     inline def setVE(value: Venezuela): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
     
-    inline def setVG(value: `Virgin Islands LeftparenthesisUKRightparenthesis`): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
+    inline def setVG(value: String): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
     
-    inline def setVI(value: `Virgin Islands LeftparenthesisUSRightparenthesis`): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
+    inline def setVI(value: String): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
     
     inline def setVN(value: Vietnam): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
     

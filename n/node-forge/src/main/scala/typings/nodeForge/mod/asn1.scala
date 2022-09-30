@@ -37,7 +37,7 @@ object asn1 {
     sealed trait PRIVATE
       extends StObject
          with Class
-    /* 0xC0 */ val PRIVATE: typings.nodeForge.mod.asn1.Class.PRIVATE & Double = js.native
+    /* 0xc0 */ val PRIVATE: typings.nodeForge.mod.asn1.Class.PRIVATE & Double = js.native
     
     @js.native
     sealed trait UNIVERSAL

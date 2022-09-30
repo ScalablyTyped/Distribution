@@ -1,6 +1,6 @@
 package typings.dwt.anon
 
-import typings.dwt.dwtNumbers.`10`
+import typings.dwt.dwtInts.`10`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -25,7 +25,7 @@ object mod {
   
   inline def stores_=(x: js.Array[Store]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_stores")(x.asInstanceOf[js.Any])
   
-  inline def trigger(name: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def trigger(name: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(scala.List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @js.native
   trait Store extends StObject {

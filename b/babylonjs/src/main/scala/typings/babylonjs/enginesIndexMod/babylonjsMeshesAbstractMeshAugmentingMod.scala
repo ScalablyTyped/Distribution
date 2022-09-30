@@ -11,13 +11,13 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     
     /**
       * Backing filed
-      * @hidden
+      * @internal
       */
     var __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
     
     /**
       * Access property
-      * @hidden
+      * @internal
       */
     var _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
     

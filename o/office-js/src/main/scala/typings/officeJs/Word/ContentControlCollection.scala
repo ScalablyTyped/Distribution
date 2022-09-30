@@ -25,7 +25,7 @@ trait ContentControlCollection
   var context_ContentControlCollection: RequestContext = js.native
   
   /**
-    * Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in this collection.
+    * Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the identifier in this collection.
     *
     * @remarks
     * [Api set: WordApi 1.1]
@@ -35,7 +35,7 @@ trait ContentControlCollection
   def getById(id: Double): ContentControl = js.native
   
   /**
-    * Gets a content control by its identifier. Returns a null object if there isn't a content control with the identifier in this collection.
+    * Gets a content control by its identifier. If there isn't a content control with the identifier in this collection, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -75,7 +75,7 @@ trait ContentControlCollection
   def getByTypes(types: js.Array[ContentControlType]): ContentControlCollection = js.native
   
   /**
-    * Gets the first content control in this collection. Throws an error if this collection is empty.
+    * Gets the first content control in this collection. Throws an `ItemNotFound` error if this collection is empty.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -83,7 +83,7 @@ trait ContentControlCollection
   def getFirst(): ContentControl = js.native
   
   /**
-    * Gets the first content control in this collection. Returns a null object if this collection is empty.
+    * Gets the first content control in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]

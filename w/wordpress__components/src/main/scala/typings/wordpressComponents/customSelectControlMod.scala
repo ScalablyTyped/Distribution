@@ -114,7 +114,7 @@ object customSelectControlMod {
         
         inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+        inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value*))
         
         inline def setValue(value: Option): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         

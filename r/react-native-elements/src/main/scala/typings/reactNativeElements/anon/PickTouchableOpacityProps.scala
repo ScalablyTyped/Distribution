@@ -86,7 +86,7 @@ trait PickTouchableOpacityProps extends StObject {
   
   var delayPressOut: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | Null] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -142,7 +142,7 @@ trait PickTouchableOpacityProps extends StObject {
   
   var titleProps: js.UndefOr[TextProps] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
+  var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
   
   var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
@@ -260,8 +260,6 @@ object PickTouchableOpacityProps {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
-    
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
@@ -377,8 +375,6 @@ object PickTouchableOpacityProps {
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setTouchSoundDisabledNull: Self = StObject.set(x, "touchSoundDisabled", null)
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
     

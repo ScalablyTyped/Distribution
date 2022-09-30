@@ -1,6 +1,6 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`-300`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`-300`
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.CA
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.KY
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.PA

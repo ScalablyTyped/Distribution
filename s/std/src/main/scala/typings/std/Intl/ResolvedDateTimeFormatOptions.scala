@@ -1,8 +1,8 @@
 package typings.std.Intl
 
-import typings.std.stdNumbers.`1`
-import typings.std.stdNumbers.`2`
-import typings.std.stdNumbers.`3`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import typings.std.stdStrings.`best fit`
 import typings.std.stdStrings.basic
 import typings.std.stdStrings.full

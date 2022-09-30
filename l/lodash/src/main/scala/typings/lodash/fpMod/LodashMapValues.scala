@@ -46,9 +46,7 @@ trait LodashMapValues extends StObject {
     */ typings.lodash.lodashStrings.LodashMapValues & TopLevel[Any] = js.native
   def apply[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: Dictionary[T]): Dictionary[TResult] = js.native
   def apply[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: NumericDictionary[T]): Dictionary[TResult] = js.native
-  def apply[T, TKey /* <: /* keyof T */ String */](iteratee: TKey): Dictionary[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
-  ] = js.native
+  def apply[T, TKey /* <: /* keyof T */ String */](iteratee: TKey): LodashMapValues5x1[T, TKey] = js.native
   def apply[T, TKey /* <: /* keyof T */ String */](iteratee: TKey, obj: Dictionary[T]): Dictionary[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
   ] = js.native

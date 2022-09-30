@@ -1,8 +1,8 @@
 package typings.gulpMinify
 
 import typings.gulpMinify.gulpMinifyBooleans.`false`
-import typings.gulpMinify.gulpMinifyNumbers.`32000`
-import typings.gulpMinify.gulpMinifyNumbers.`80`
+import typings.gulpMinify.gulpMinifyInts.`32000`
+import typings.gulpMinify.gulpMinifyInts.`80`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

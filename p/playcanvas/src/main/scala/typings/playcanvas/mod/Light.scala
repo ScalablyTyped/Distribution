@@ -65,6 +65,8 @@ open class Light protected () extends StObject {
   
   var _linearFinalColor: js.typedarray.Float32Array = js.native
   
+  var _luminance: Double = js.native
+  
   var _node: Any = js.native
   
   var _normalOffsetBias: Double = js.native
@@ -96,6 +98,8 @@ open class Light protected () extends StObject {
   var _type: Double = js.native
   
   def _updateFinalColor(): Unit = js.native
+  
+  var _usePhysicalUnits: Any = js.native
   
   var _vsmBlurSize: Double = js.native
   
@@ -180,6 +184,9 @@ open class Light protected () extends StObject {
   
   def layersDirty(): Unit = js.native
   
+  def luminance: Double = js.native
+  def luminance_=(arg: Double): Unit = js.native
+  
   var mask: Double = js.native
   
   var maxScreenSize: Double = js.native
@@ -223,6 +230,9 @@ open class Light protected () extends StObject {
   def updateKey(): Unit = js.native
   
   def updateShadow(): Unit = js.native
+  
+  def usePhysicalUnits: Any = js.native
+  def usePhysicalUnits_=(arg: Any): Unit = js.native
   
   var visibleThisFrame: Boolean = js.native
   

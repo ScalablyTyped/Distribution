@@ -3,7 +3,6 @@ package typings.shippo.mod
 import org.scalablytyped.runtime.TopLevel
 import typings.shippo.anon.Create
 import typings.shippo.anon.CreateList
-import typings.shippo.anon.List
 import typings.shippo.anon.ListRetrieve
 import typings.shippo.anon.Retrieve
 import typings.shippo.anon.`0`
@@ -20,7 +19,7 @@ open class ^ protected ()
   def this(token: String) = this()
   
   /* CompleteClass */
-  var address: List = js.native
+  var address: typings.shippo.anon.List = js.native
   
   /* CompleteClass */
   var carrieraccount: ListRetrieve = js.native

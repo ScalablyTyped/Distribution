@@ -1,6 +1,5 @@
 package typings.mdastUtilToMarkdown
 
-import typings.mdast.mod.List
 import typings.mdastUtilToMarkdown.typesMod.Context
 import typings.mdastUtilToMarkdown.typesMod.Parent
 import typings.mdastUtilToMarkdown.typesMod.SafeOptions
@@ -20,5 +19,5 @@ object listMod {
   
   type Handle = typings.mdastUtilToMarkdown.typesMod.Handle
   
-  type List_ = List
+  type List_ = typings.mdast.mod.List
 }

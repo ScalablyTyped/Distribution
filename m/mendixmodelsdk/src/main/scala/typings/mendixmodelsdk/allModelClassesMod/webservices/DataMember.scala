@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `WebServices`.
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataMember")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.DataMember")
 @js.native
 abstract class DataMember protected ()
   extends typings.mendixmodelsdk.webservicesMod.webservices.DataMember {
@@ -28,18 +28,18 @@ abstract class DataMember protected ()
 }
 object DataMember {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataMember")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.DataMember")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataMember.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.DataMember.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.DataMember.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "webservices.DataMember.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

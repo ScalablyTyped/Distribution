@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In version 6.7.0: deleted
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataViewActionButton")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DataViewActionButton")
 @js.native
-class DataViewActionButton protected ()
+open class DataViewActionButton protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.DataViewActionButton {
   def this(
     model: AbstractModel,
@@ -31,7 +31,7 @@ class DataViewActionButton protected ()
 }
 object DataViewActionButton {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataViewActionButton")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DataViewActionButton")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object DataViewActionButton {
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.DataViewActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DataViewActionButton]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataViewActionButton.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DataViewActionButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataViewActionButton.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.DataViewActionButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

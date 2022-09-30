@@ -22,7 +22,7 @@ object error {
     */
   @JSImport("protractor", "error.ElementClickInterceptedError")
   @js.native
-  class ElementClickInterceptedError ()
+  open class ElementClickInterceptedError ()
     extends typings.seleniumWebdriver.mod.error.ElementClickInterceptedError {
     def this(message: String) = this()
   }
@@ -35,7 +35,7 @@ object error {
     */
   @JSImport("protractor", "error.ElementNotInteractableError")
   @js.native
-  class ElementNotInteractableError ()
+  open class ElementNotInteractableError ()
     extends typings.seleniumWebdriver.mod.error.ElementNotInteractableError {
     def this(message: String) = this()
   }
@@ -45,7 +45,7 @@ object error {
     */
   @JSImport("protractor", "error.ElementNotSelectableError")
   @js.native
-  class ElementNotSelectableError ()
+  open class ElementNotSelectableError ()
     extends typings.seleniumWebdriver.mod.error.ElementNotSelectableError {
     def this(message: String) = this()
   }
@@ -56,7 +56,7 @@ object error {
   
   @JSImport("protractor", "error.IError")
   @js.native
-  class IError ()
+  open class IError ()
     extends typings.seleniumWebdriver.mod.error.IError {
     def this(message: String) = this()
   }
@@ -67,7 +67,7 @@ object error {
     */
   @JSImport("protractor", "error.InsecureCertificateError")
   @js.native
-  class InsecureCertificateError ()
+  open class InsecureCertificateError ()
     extends typings.seleniumWebdriver.mod.error.InsecureCertificateError {
     def this(message: String) = this()
   }
@@ -77,7 +77,7 @@ object error {
     */
   @JSImport("protractor", "error.InvalidArgumentError")
   @js.native
-  class InvalidArgumentError ()
+  open class InvalidArgumentError ()
     extends typings.seleniumWebdriver.mod.error.InvalidArgumentError {
     def this(message: String) = this()
   }
@@ -88,7 +88,7 @@ object error {
     */
   @JSImport("protractor", "error.InvalidCookieDomainError")
   @js.native
-  class InvalidCookieDomainError ()
+  open class InvalidCookieDomainError ()
     extends typings.seleniumWebdriver.mod.error.InvalidCookieDomainError {
     def this(message: String) = this()
   }
@@ -98,7 +98,7 @@ object error {
     */
   @JSImport("protractor", "error.InvalidCoordinatesError")
   @js.native
-  class InvalidCoordinatesError ()
+  open class InvalidCoordinatesError ()
     extends typings.seleniumWebdriver.mod.error.InvalidCoordinatesError {
     def this(message: String) = this()
   }
@@ -110,7 +110,7 @@ object error {
     */
   @JSImport("protractor", "error.InvalidElementStateError")
   @js.native
-  class InvalidElementStateError ()
+  open class InvalidElementStateError ()
     extends typings.seleniumWebdriver.mod.error.InvalidElementStateError {
     def this(message: String) = this()
   }
@@ -120,7 +120,7 @@ object error {
     */
   @JSImport("protractor", "error.InvalidSelectorError")
   @js.native
-  class InvalidSelectorError ()
+  open class InvalidSelectorError ()
     extends typings.seleniumWebdriver.mod.error.InvalidSelectorError {
     def this(message: String) = this()
   }
@@ -130,7 +130,7 @@ object error {
     */
   @JSImport("protractor", "error.JavascriptError")
   @js.native
-  class JavascriptError ()
+  open class JavascriptError ()
     extends typings.seleniumWebdriver.mod.error.JavascriptError {
     def this(message: String) = this()
   }
@@ -141,7 +141,7 @@ object error {
     */
   @JSImport("protractor", "error.MoveTargetOutOfBoundsError")
   @js.native
-  class MoveTargetOutOfBoundsError ()
+  open class MoveTargetOutOfBoundsError ()
     extends typings.seleniumWebdriver.mod.error.MoveTargetOutOfBoundsError {
     def this(message: String) = this()
   }
@@ -151,7 +151,7 @@ object error {
     */
   @JSImport("protractor", "error.NoSuchAlertError")
   @js.native
-  class NoSuchAlertError ()
+  open class NoSuchAlertError ()
     extends typings.seleniumWebdriver.mod.error.NoSuchAlertError {
     def this(message: String) = this()
   }
@@ -162,7 +162,7 @@ object error {
     */
   @JSImport("protractor", "error.NoSuchCookieError")
   @js.native
-  class NoSuchCookieError ()
+  open class NoSuchCookieError ()
     extends typings.seleniumWebdriver.mod.error.NoSuchCookieError {
     def this(message: String) = this()
   }
@@ -173,7 +173,7 @@ object error {
     */
   @JSImport("protractor", "error.NoSuchElementError")
   @js.native
-  class NoSuchElementError ()
+  open class NoSuchElementError ()
     extends typings.seleniumWebdriver.mod.error.NoSuchElementError {
     def this(message: String) = this()
   }
@@ -184,7 +184,7 @@ object error {
     */
   @JSImport("protractor", "error.NoSuchFrameError")
   @js.native
-  class NoSuchFrameError ()
+  open class NoSuchFrameError ()
     extends typings.seleniumWebdriver.mod.error.NoSuchFrameError {
     def this(message: String) = this()
   }
@@ -194,7 +194,7 @@ object error {
     */
   @JSImport("protractor", "error.NoSuchSessionError")
   @js.native
-  class NoSuchSessionError ()
+  open class NoSuchSessionError ()
     extends typings.seleniumWebdriver.mod.error.NoSuchSessionError {
     def this(message: String) = this()
   }
@@ -205,7 +205,7 @@ object error {
     */
   @JSImport("protractor", "error.NoSuchWindowError")
   @js.native
-  class NoSuchWindowError ()
+  open class NoSuchWindowError ()
     extends typings.seleniumWebdriver.mod.error.NoSuchWindowError {
     def this(message: String) = this()
   }
@@ -215,7 +215,7 @@ object error {
     */
   @JSImport("protractor", "error.ScriptTimeoutError")
   @js.native
-  class ScriptTimeoutError ()
+  open class ScriptTimeoutError ()
     extends typings.seleniumWebdriver.mod.error.ScriptTimeoutError {
     def this(message: String) = this()
   }
@@ -225,7 +225,7 @@ object error {
     */
   @JSImport("protractor", "error.SessionNotCreatedError")
   @js.native
-  class SessionNotCreatedError ()
+  open class SessionNotCreatedError ()
     extends typings.seleniumWebdriver.mod.error.SessionNotCreatedError {
     def this(message: String) = this()
   }
@@ -236,7 +236,7 @@ object error {
     */
   @JSImport("protractor", "error.StaleElementReferenceError")
   @js.native
-  class StaleElementReferenceError ()
+  open class StaleElementReferenceError ()
     extends typings.seleniumWebdriver.mod.error.StaleElementReferenceError {
     def this(message: String) = this()
   }
@@ -246,7 +246,7 @@ object error {
     */
   @JSImport("protractor", "error.TimeoutError")
   @js.native
-  class TimeoutError ()
+  open class TimeoutError ()
     extends typings.seleniumWebdriver.mod.error.TimeoutError {
     def this(message: String) = this()
   }
@@ -256,7 +256,7 @@ object error {
     */
   @JSImport("protractor", "error.UnableToCaptureScreenError")
   @js.native
-  class UnableToCaptureScreenError ()
+  open class UnableToCaptureScreenError ()
     extends typings.seleniumWebdriver.mod.error.UnableToCaptureScreenError {
     def this(message: String) = this()
   }
@@ -266,7 +266,7 @@ object error {
     */
   @JSImport("protractor", "error.UnableToSetCookieError")
   @js.native
-  class UnableToSetCookieError ()
+  open class UnableToSetCookieError ()
     extends typings.seleniumWebdriver.mod.error.UnableToSetCookieError {
     def this(message: String) = this()
   }
@@ -276,7 +276,7 @@ object error {
     */
   @JSImport("protractor", "error.UnexpectedAlertOpenError")
   @js.native
-  class UnexpectedAlertOpenError ()
+  open class UnexpectedAlertOpenError ()
     extends typings.seleniumWebdriver.mod.error.UnexpectedAlertOpenError {
     def this(message: String) = this()
     def this(message: String, openAlertText: String) = this()
@@ -288,7 +288,7 @@ object error {
     */
   @JSImport("protractor", "error.UnknownCommandError")
   @js.native
-  class UnknownCommandError ()
+  open class UnknownCommandError ()
     extends typings.seleniumWebdriver.mod.error.UnknownCommandError {
     def this(message: String) = this()
   }
@@ -299,7 +299,7 @@ object error {
     */
   @JSImport("protractor", "error.UnknownMethodError")
   @js.native
-  class UnknownMethodError ()
+  open class UnknownMethodError ()
     extends typings.seleniumWebdriver.mod.error.UnknownMethodError {
     def this(message: String) = this()
   }
@@ -309,7 +309,7 @@ object error {
     */
   @JSImport("protractor", "error.UnsupportedOperationError")
   @js.native
-  class UnsupportedOperationError ()
+  open class UnsupportedOperationError ()
     extends typings.seleniumWebdriver.mod.error.UnsupportedOperationError {
     def this(message: String) = this()
   }
@@ -320,7 +320,7 @@ object error {
     */
   @JSImport("protractor", "error.WebDriverError")
   @js.native
-  class WebDriverError ()
+  open class WebDriverError ()
     extends typings.seleniumWebdriver.mod.error.WebDriverError {
     def this(message: String) = this()
   }
@@ -339,7 +339,7 @@ object error {
   /**
     * Lookup the err in table of errors.
     */
-  inline def encodeError(err: js.Any): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def encodeError(err: Any): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   inline def throwDecodedError(data: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   /**

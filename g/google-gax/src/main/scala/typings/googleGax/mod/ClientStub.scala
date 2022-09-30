@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-gax", "ClientStub")
 @js.native
-class ClientStub protected ()
+open class ClientStub protected ()
   extends typings.googleGax.grpcMod.ClientStub {
   def this(address: String, credentials: typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials) = this()
   def this(

@@ -1,20 +1,21 @@
 package typings.reactLeaflet.mod
 
 import typings.leaflet.mod.CrossOrigin
+import typings.leaflet.mod.ReferrerPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.GridLayerOptions because Already inherited
-- typings.leaflet.mod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined minNativeZoom, zoomOffset, errorTileUrl, maxNativeZoom, zoomReverse, subdomains, id, tms, accessToken, crossOrigin, detectRetina */ trait TileLayerProps
+- typings.leaflet.mod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxNativeZoom, maxZoom, minNativeZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined zoomOffset, errorTileUrl, zoomReverse, subdomains, id, tms, accessToken, referrerPolicy, crossOrigin, detectRetina */ trait TileLayerProps
   extends StObject
      with GridLayerProps
      with TileLayerEvents {
   
   var accessToken: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
+  var crossOrigin: js.UndefOr[CrossOrigin | Boolean] = js.undefined
   
   var detectRetina: js.UndefOr[Boolean] = js.undefined
   
@@ -22,9 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var id: js.UndefOr[String] = js.undefined
   
-  var maxNativeZoom: js.UndefOr[Double] = js.undefined
-  
-  var minNativeZoom: js.UndefOr[Double] = js.undefined
+  var referrerPolicy: js.UndefOr[ReferrerPolicy | Boolean] = js.undefined
   
   var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -49,7 +48,7 @@ object TileLayerProps {
     
     inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    inline def setCrossOrigin(value: CrossOrigin): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: CrossOrigin | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -65,19 +64,15 @@ object TileLayerProps {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setMaxNativeZoom(value: Double): Self = StObject.set(x, "maxNativeZoom", value.asInstanceOf[js.Any])
+    inline def setReferrerPolicy(value: ReferrerPolicy | Boolean): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
-    inline def setMaxNativeZoomUndefined: Self = StObject.set(x, "maxNativeZoom", js.undefined)
-    
-    inline def setMinNativeZoom(value: Double): Self = StObject.set(x, "minNativeZoom", value.asInstanceOf[js.Any])
-    
-    inline def setMinNativeZoomUndefined: Self = StObject.set(x, "minNativeZoom", js.undefined)
+    inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
     
     inline def setSubdomains(value: String | js.Array[String]): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     
-    inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value :_*))
+    inline def setSubdomainsVarargs(value: String*): Self = StObject.set(x, "subdomains", js.Array(value*))
     
     inline def setTms(value: Boolean): Self = StObject.set(x, "tms", value.asInstanceOf[js.Any])
     

@@ -1,34 +1,34 @@
 package typings.activexWord.Word
 
-import typings.activexWord.activexWordNumbers.`-4105`
-import typings.activexWord.activexWordNumbers.`-4115`
-import typings.activexWord.activexWordNumbers.`-4118`
-import typings.activexWord.activexWordNumbers.`-4142`
-import typings.activexWord.activexWordNumbers.`-4147`
-import typings.activexWord.activexWordNumbers.`-4168`
-import typings.activexWord.activexWordNumbers.`1`
-import typings.activexWord.activexWordNumbers.`2`
-import typings.activexWord.activexWordNumbers.`3`
-import typings.activexWord.activexWordNumbers.`5`
-import typings.activexWord.activexWordNumbers.`8`
-import typings.activexWord.activexWordNumbers.`9`
+import typings.activexWord.activexWordInts.`-4105`
+import typings.activexWord.activexWordInts.`-4115`
+import typings.activexWord.activexWordInts.`-4118`
+import typings.activexWord.activexWordInts.`-4142`
+import typings.activexWord.activexWordInts.`-4147`
+import typings.activexWord.activexWordInts.`-4168`
+import typings.activexWord.activexWordInts.`1`
+import typings.activexWord.activexWordInts.`2`
+import typings.activexWord.activexWordInts.`3`
+import typings.activexWord.activexWordInts.`5`
+import typings.activexWord.activexWordInts.`8`
+import typings.activexWord.activexWordInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWord.activexWordNumbers.`-4105`
-  - typings.activexWord.activexWordNumbers.`8`
-  - typings.activexWord.activexWordNumbers.`-4115`
-  - typings.activexWord.activexWordNumbers.`2`
-  - typings.activexWord.activexWordNumbers.`-4118`
-  - typings.activexWord.activexWordNumbers.`-4142`
-  - typings.activexWord.activexWordNumbers.`-4147`
-  - typings.activexWord.activexWordNumbers.`9`
-  - typings.activexWord.activexWordNumbers.`1`
-  - typings.activexWord.activexWordNumbers.`5`
-  - typings.activexWord.activexWordNumbers.`3`
-  - typings.activexWord.activexWordNumbers.`-4168`
+  - typings.activexWord.activexWordInts.`-4105`
+  - typings.activexWord.activexWordInts.`8`
+  - typings.activexWord.activexWordInts.`-4115`
+  - typings.activexWord.activexWordInts.`2`
+  - typings.activexWord.activexWordInts.`-4118`
+  - typings.activexWord.activexWordInts.`-4142`
+  - typings.activexWord.activexWordInts.`-4147`
+  - typings.activexWord.activexWordInts.`9`
+  - typings.activexWord.activexWordInts.`1`
+  - typings.activexWord.activexWordInts.`5`
+  - typings.activexWord.activexWordInts.`3`
+  - typings.activexWord.activexWordInts.`-4168`
 */
 trait XlMarkerStyle extends StObject
 object XlMarkerStyle {

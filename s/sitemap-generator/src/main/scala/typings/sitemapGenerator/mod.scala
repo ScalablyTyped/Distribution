@@ -1,17 +1,17 @@
 package typings.sitemapGenerator
 
 import typings.sitemapGenerator.anon.ChangeFreq
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.0`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.1`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.2`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.3`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.4`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.5`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.6`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.7`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.8`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`0.9`
-import typings.sitemapGenerator.sitemapGeneratorNumbers.`1.0`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.0`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.1`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.2`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.3`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.4`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.5`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.6`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.7`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.8`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`0.9`
+import typings.sitemapGenerator.sitemapGeneratorDoubles.`1.0`
 import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
@@ -150,42 +150,42 @@ object mod {
   type Options = Partial[ExcludeFunctionProps[typings.simplecrawler.mod.^]] & ChangeFreq
   
   /* Rewritten from type alias, can be one of: 
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.0`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.1`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.2`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.3`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.4`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.5`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.6`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.7`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.8`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`0.9`
-    - typings.sitemapGenerator.sitemapGeneratorNumbers.`1.0`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.0`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.1`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.2`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.3`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.4`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.5`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.6`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.7`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.8`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`0.9`
+    - typings.sitemapGenerator.sitemapGeneratorDoubles.`1.0`
   */
   trait PriorityValues extends StObject
   object PriorityValues {
     
-    inline def `0Dot0`: `0.0` = 0.0.asInstanceOf[`0.0`]
+    inline def `0Dot0`: `0.0` = 0.0d.asInstanceOf[`0.0`]
     
-    inline def `0Dot1`: `0.1` = 0.1.asInstanceOf[`0.1`]
+    inline def `0Dot1`: `0.1` = 0.1d.asInstanceOf[`0.1`]
     
-    inline def `0Dot2`: `0.2` = 0.2.asInstanceOf[`0.2`]
+    inline def `0Dot2`: `0.2` = 0.2d.asInstanceOf[`0.2`]
     
-    inline def `0Dot3`: `0.3` = 0.3.asInstanceOf[`0.3`]
+    inline def `0Dot3`: `0.3` = 0.3d.asInstanceOf[`0.3`]
     
-    inline def `0Dot4`: `0.4` = 0.4.asInstanceOf[`0.4`]
+    inline def `0Dot4`: `0.4` = 0.4d.asInstanceOf[`0.4`]
     
-    inline def `0Dot5`: `0.5` = 0.5.asInstanceOf[`0.5`]
+    inline def `0Dot5`: `0.5` = 0.5d.asInstanceOf[`0.5`]
     
-    inline def `0Dot6`: `0.6` = 0.6.asInstanceOf[`0.6`]
+    inline def `0Dot6`: `0.6` = 0.6d.asInstanceOf[`0.6`]
     
-    inline def `0Dot7`: `0.7` = 0.7.asInstanceOf[`0.7`]
+    inline def `0Dot7`: `0.7` = 0.7d.asInstanceOf[`0.7`]
     
-    inline def `0Dot8`: `0.8` = 0.8.asInstanceOf[`0.8`]
+    inline def `0Dot8`: `0.8` = 0.8d.asInstanceOf[`0.8`]
     
-    inline def `0Dot9`: `0.9` = 0.9.asInstanceOf[`0.9`]
+    inline def `0Dot9`: `0.9` = 0.9d.asInstanceOf[`0.9`]
     
-    inline def `1Dot0`: `1.0` = 1.0.asInstanceOf[`1.0`]
+    inline def `1Dot0`: `1.0` = 1.0d.asInstanceOf[`1.0`]
   }
   
   @js.native

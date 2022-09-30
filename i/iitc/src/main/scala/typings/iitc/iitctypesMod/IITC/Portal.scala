@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Portal-Marker */
 @JSImport("iitc/core/iitctypes", "IITC.Portal")
 @js.native
-class Portal protected ()
-  extends CircleMarker_[js.Any] {
+open class Portal protected () extends CircleMarker_[Any] {
   def this(latlng: LatLngExpression) = this()
   def this(latlng: LatLngExpression, options: CircleMarkerOptions) = this()
   

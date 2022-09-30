@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "pages.SelectorDatabaseSource")
 @js.native
-class SelectorDatabaseSource protected ()
+open class SelectorDatabaseSource protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.SelectorDatabaseSource {
   def this(
     model: AbstractModel,

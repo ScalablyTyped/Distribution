@@ -12,6 +12,7 @@ import typings.childProcessPromise.childProcessPromiseStrings.stderr
 import typings.childProcessPromise.childProcessPromiseStrings.stdout
 import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ChildProcess
+import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +52,8 @@ object mod {
   
   @js.native
   trait ChildProcessPromise[T]
-    extends js.Promise[T] {
+    extends StObject
+       with Promise[T] {
     
     var childProcess: ChildProcess = js.native
   }

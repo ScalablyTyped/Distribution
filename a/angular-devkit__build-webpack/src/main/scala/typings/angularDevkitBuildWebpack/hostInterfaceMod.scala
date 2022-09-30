@@ -1,9 +1,9 @@
 package typings.angularDevkitBuildWebpack
 
-import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`0`
-import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`1`
-import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`2`
-import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`3`
+import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`0`
+import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`1`
+import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`2`
+import typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`3`
 import typings.angularDevkitBuildWebpack.anon.Atime
 import typings.angularDevkitBuildWebpack.pathMod.Path_
 import typings.std.ArrayBufferLike
@@ -76,10 +76,10 @@ object hostInterfaceMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`0`
-    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`1`
-    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`2`
-    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackNumbers.`3`
+    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`0`
+    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`1`
+    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`2`
+    - typings.angularDevkitBuildWebpack.angularDevkitBuildWebpackInts.`3`
   */
   trait HostWatchEventType extends StObject
   object HostWatchEventType {

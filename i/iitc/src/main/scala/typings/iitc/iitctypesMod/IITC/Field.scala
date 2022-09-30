@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Field-Polygon */
 @JSImport("iitc/core/iitctypes", "IITC.Field")
 @js.native
-class Field protected () extends GeodesicPolygon_ {
+open class Field protected () extends GeodesicPolygon_ {
   def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
   def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
   

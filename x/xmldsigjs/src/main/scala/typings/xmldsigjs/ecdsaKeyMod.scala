@@ -2,7 +2,6 @@ package typings.xmldsigjs
 
 import typings.std.CryptoKey
 import typings.std.JsonWebKey
-import typings.std.Uint8Array
 import typings.xmlCore.mod.XmlObject
 import typings.xmldsigjs.keyInfoClauseMod.KeyInfoClause
 import org.scalablytyped.runtime.StObject
@@ -13,7 +12,7 @@ object ecdsaKeyMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/ecdsa_key", "DomainParameters")
   @js.native
-  class DomainParameters () extends XmlObject {
+  open class DomainParameters () extends XmlObject {
     def this(properties: js.Object) = this()
     
     var NamedCurve: typings.xmldsigjs.ecdsaKeyMod.NamedCurve = js.native
@@ -21,7 +20,7 @@ object ecdsaKeyMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/ecdsa_key", "EcdsaKeyValue")
   @js.native
-  class EcdsaKeyValue () extends KeyInfoClause {
+  open class EcdsaKeyValue () extends KeyInfoClause {
     def this(properties: js.Object) = this()
     
     var DomainParameters: typings.xmldsigjs.ecdsaKeyMod.DomainParameters = js.native
@@ -44,17 +43,17 @@ object ecdsaKeyMod {
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/ecdsa_key", "EcdsaPublicKey")
   @js.native
-  class EcdsaPublicKey () extends XmlObject {
+  open class EcdsaPublicKey () extends XmlObject {
     def this(properties: js.Object) = this()
     
-    var X: Uint8Array = js.native
+    var X: js.typedarray.Uint8Array = js.native
     
-    var Y: Uint8Array = js.native
+    var Y: js.typedarray.Uint8Array = js.native
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/ecdsa_key", "NamedCurve")
   @js.native
-  class NamedCurve () extends XmlObject {
+  open class NamedCurve () extends XmlObject {
     def this(properties: js.Object) = this()
     
     var Uri: String = js.native

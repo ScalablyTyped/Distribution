@@ -1,7 +1,7 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`-420`
-import typings.countriesAndTimezones.countriesAndTimezonesNumbers.`-480`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`-420`
+import typings.countriesAndTimezones.countriesAndTimezonesInts.`-480`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

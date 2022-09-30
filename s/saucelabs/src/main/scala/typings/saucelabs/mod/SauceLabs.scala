@@ -1,19 +1,27 @@
 package typings.saucelabs.mod
 
+import typings.saucelabs.anon.All
 import typings.saucelabs.anon.AppId
 import typings.saucelabs.anon.Assets
 import typings.saucelabs.anon.AutoOnly
+import typings.saucelabs.anon.End
+import typings.saucelabs.anon.Errored
+import typings.saucelabs.anon.Files
 import typings.saucelabs.anon.Full
+import typings.saucelabs.anon.GroupId
 import typings.saucelabs.anon.IncludeBaseline
 import typings.saucelabs.anon.LastDays
 import typings.saucelabs.anon.Limit
 import typings.saucelabs.anon.MetricNames
+import typings.saucelabs.anon.Name
+import typings.saucelabs.anon.Offset
 import typings.saucelabs.anon.OrderIndex
 import typings.saucelabs.anon.OrderIndexNumber
 import typings.saucelabs.anon.PageUrl
-import typings.saucelabs.anon.Subaccounts
 import typings.saucelabs.saucelabsStrings.all
 import typings.saucelabs.saucelabsStrings.appium_
+import typings.saucelabs.saucelabsStrings.rdc
+import typings.saucelabs.saucelabsStrings.vdc
 import typings.saucelabs.saucelabsStrings.webdriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,6 +58,15 @@ trait SauceLabs extends StObject {
     */
   def assertPerformance(jobId: String): js.Promise[AssertView] = js.native
   def assertPerformance(jobId: String, options: MetricNames): js.Promise[AssertView] = js.native
+  
+  /**
+    *
+    * @method
+    * @see {@link https://wiki.saucelabs.com|TBD}
+    * @name SauceLabs#createJob
+    * @param {} parameters - create result job request body
+    */
+  def createJob(parameters: String): js.Promise[Unit] = js.native
   
   /**
     * Creates a manual job
@@ -181,6 +198,80 @@ trait SauceLabs extends StObject {
   def getBaselineHistory(jobId: String, options: Limit): js.Promise[PerformanceMetricsHistoryView] = js.native
   
   /**
+    * Get Build Jobs (build_source can be vdc or rdc)
+    * @method
+    * @name SauceLabs#getBuildByJobIdV2
+    * @param {string} buildSource - build_source
+    * @param {string} jobId - job_id
+    * @param {string} userId - user_idOption
+    * @param {string} orgId - org_idOption
+    * @param {string} groupId - group_idOption
+    * @param {string} teamId - team_idOption
+    */
+  def getBuildByJobIdV2(buildSource: vdc | rdc, jobId: String): js.Promise[BuildV2] = js.native
+  def getBuildByJobIdV2(buildSource: vdc | rdc, jobId: String, options: GroupId): js.Promise[BuildV2] = js.native
+  
+  /**
+    * Get Build detail (build_source can be vdc or rdc)
+    * @method
+    * @name SauceLabs#getBuildV2
+    * @param {string} buildSource - build_source
+    * @param {string} buildId - build_id
+    * @param {string} userId - user_idOption
+    * @param {string} orgId - org_idOption
+    * @param {string} groupId - group_idOption
+    * @param {string} teamId - team_idOption
+    */
+  def getBuildV2(buildSource: vdc | rdc, buildId: String): js.Promise[BuildV2] = js.native
+  def getBuildV2(buildSource: vdc | rdc, buildId: String, options: GroupId): js.Promise[BuildV2] = js.native
+  
+  /**
+    * Get Build detail (build_source can be vdc or rdc)
+    * @method
+    * @name SauceLabs#getBuildsJobsV2
+    * @param {string} buildSource - build_source
+    * @param {string} buildId - build_id
+    * @param {string} userId - user_idOption
+    * @param {string} orgId - org_idOption
+    * @param {string} groupId - group_idOption
+    * @param {string} teamId - team_idOption
+    * @param {string} modifiedSince - modified_sinceOption
+    * @param {boolean} completed - completedOption
+    * @param {string} errored - erroredOption
+    * @param {string} failed - failedOption
+    * @param {string} finished - finishedOption
+    * @param {string} new - newOption
+    * @param {string} passed - passedOption
+    * @param {boolean} public - publicOption
+    * @param {boolean} queued - queuedOption
+    * @param {boolean} running - runningOption
+    * @param {boolean} faulty - faultyOption
+    * @param {number} limit - Number of results to returnOption
+    * @param {number} offset - Starting numberOption
+    */
+  def getBuildsJobsV2(buildSource: vdc | rdc, buildId: String): js.Promise[BuildV2Job] = js.native
+  def getBuildsJobsV2(buildSource: vdc | rdc, buildId: String, options: Errored): js.Promise[BuildV2Job] = js.native
+  
+  /**
+    * Get List of Builds (build_source can be vdc or rdc)
+    * @method
+    * @name SauceLabs#getBuildsV2
+    * @param {string} buildSource - build_source
+    * @param {string} userId - user_idOption
+    * @param {string} orgId - org_idOption
+    * @param {string} groupId - group_idOption
+    * @param {string} teamId - team_idOption
+    * @param {string} status - statusOption
+    * @param {string} name - startOption
+    * @param {string} end - endOption
+    * @param {number} limit - Number of results to returnOption
+    * @param {number} offset - Starting numberOption
+    * @param {string} sort - sortOption
+    */
+  def getBuildsV2(buildSource: vdc | rdc): js.Promise[ResponseGetBuildsV2200] = js.native
+  def getBuildsV2(buildSource: vdc | rdc, options: End): js.Promise[ResponseGetBuildsV2200] = js.native
+  
+  /**
     * Authenticated user cookie information
     * @method
     * @name SauceLabs#getCurrentUser
@@ -243,6 +334,16 @@ trait SauceLabs extends StObject {
     * @param {string} id - job id
     */
   def getJobV1_1(id: String): js.Promise[Job] = js.native
+  
+  /**
+    * Get Job Information
+    * @method
+    * @name SauceLabs#getJobsV1_1
+    * @param {array} id - list of jobIdsOption
+    * @param {boolean} full - Should the response result contain everything or just the basicsOption
+    */
+  def getJobsV1_1(): js.Promise[ResponseGetJobsV11200] = js.native
+  def getJobsV1_1(options: typings.saucelabs.anon.Id): js.Promise[ResponseGetJobsV11200] = js.native
   
   /**
     * get manual task
@@ -331,7 +432,16 @@ trait SauceLabs extends StObject {
   def getSubaccounts(username: String): js.Promise[User] = js.native
   
   /**
-    * Get Tunnels
+    * Get List of Teams
+    * @method
+    * @name SauceLabs#getTeamsV1
+    * @param {string} name - nameOption
+    */
+  def getTeamsV1(): js.Promise[ResponseGetTeamsV1200] = js.native
+  def getTeamsV1(options: Name): js.Promise[ResponseGetTeamsV1200] = js.native
+  
+  /**
+    * Get Tunnel by ID
     * @method
     * @name SauceLabs#getTunnel
     * @param {string} username - username
@@ -379,6 +489,22 @@ trait SauceLabs extends StObject {
   def getUsersActivity(): js.Promise[ResponseGetUsersActivity200] = js.native
   
   /**
+    * Get List of Teams
+    * @method
+    * @name SauceLabs#getUsersV1
+    * @param {string} username - usernameOption
+    * @param {array} teams - List of team_idsOption
+    * @param {string} teamName - team-nameOption
+    * @param {integer} roles - rolesOption
+    * @param {string} phrase - phraseOption
+    * @param {string} status - statusOption
+    * @param {number} limit - Number of results to returnOption
+    * @param {number} offset - Starting numberOption
+    */
+  def getUsersV1(): js.Promise[ResponseGetUsersV1200] = js.native
+  def getUsersV1(options: Offset): js.Promise[ResponseGetUsersV1200] = js.native
+  
+  /**
     * Returns true if a baseline was resetted for a give job_id
     * @method
     * @name SauceLabs#hasBaselineReset
@@ -408,51 +534,13 @@ trait SauceLabs extends StObject {
   def listAllTunnels(username: String): js.Promise[ResponseListAllTunnels200] = js.native
   
   /**
-    * Get Tunnels
-    * @method
-    * @name SauceLabs#listAvailableTunnels
-    * @param {string} username - username
-    */
-  def listAvailableTunnels(username: String): js.Promise[ResponseListAvailableTunnels200] = js.native
-  
-  /**
-    * Get all of the jobs associated with a build that have failed
-    * @method
-    * @name SauceLabs#listBuildFailedJobs
-    * @param {string} username - username
-    * @param {string} id - job id
-    */
-  def listBuildFailedJobs(username: String, id: String): js.Promise[ResponseListBuildFailedJobs200] = js.native
-  
-  /**
-    * Get all of the jobs associated with a build
-    * @method
-    * @name SauceLabs#listBuildJobs
-    * @param {string} id - job id
-    * @param {boolean} full - Should the return result contain everything or just the basicsOption
-    */
-  def listBuildJobs(id: String): js.Promise[ResponseListBuildJobs200] = js.native
-  def listBuildJobs(id: String, options: Full): js.Promise[ResponseListBuildJobs200] = js.native
-  
-  /**
-    * Get all of a users builds
-    * @method
-    * @name SauceLabs#listBuilds
-    * @param {string} username - username
-    * @param {number} limit - Number of results to returnOption
-    * @param {boolean} subaccounts - Include subaccounts in list of jobsOption
-    */
-  def listBuilds(username: String): js.Promise[ResponseListBuilds200] = js.native
-  def listBuilds(username: String, options: Subaccounts): js.Promise[ResponseListBuilds200] = js.native
-  
-  /**
     * Get all of a users jobs
     * @method
     * @name SauceLabs#listJobs
     * @param {string} username - username
     * @param {number} limit - Number of results to returnOption
     * @param {boolean} subaccounts - Include subaccounts in list of jobsOption
-    * @param {boolean} full - Should the return result contain everything or just the basicsOption
+    * @param {boolean} full - Should the response result contain everything or just the basicsOption
     * @param {boolean} manualOnly - Only return manual jobsOption
     * @param {boolean} autoOnly - This is a REST API documentation provided by Sauce LabsOption
     * @param {string} name - name of the jobOption
@@ -471,28 +559,24 @@ trait SauceLabs extends StObject {
     */
   def listManualPlatforms(): js.Promise[ResponseListManualPlatforms200] = js.native
   
-  @JSName("listPlatforms")
-  def listPlatforms_all(platform: all): js.Promise[ResponseListPlatforms200] = js.native
   /**
     * returns a list of supported platforms in the Sauce cloud
     * @method
     * @name SauceLabs#listPlatforms
     * @param {string} platform - username
     */
-  @JSName("listPlatforms")
-  def listPlatforms_appium(platform: appium_): js.Promise[ResponseListPlatforms200] = js.native
-  @JSName("listPlatforms")
-  def listPlatforms_webdriver(platform: webdriver): js.Promise[ResponseListPlatforms200] = js.native
+  def listPlatforms(platform: appium_ | webdriver | all): js.Promise[ResponseListPlatforms200] = js.native
   
   /**
-    * Get Tunnels
+    * Get tunnels for the user or all the users in the team
     * @method
     * @name SauceLabs#listTunnels
     * @param {string} username - username
-    * @param {boolean} full - Should the return result contain everything or just the basicsOption
+    * @param {boolean} all - Should the response contain the same team user dataOption
+    * @param {boolean} full - Should the response result contain everything or just the basicsOption
     */
   def listTunnels(username: String): js.Promise[ResponseListTunnels200] = js.native
-  def listTunnels(username: String, options: Full): js.Promise[ResponseListTunnels200] = js.native
+  def listTunnels(username: String, options: All): js.Promise[ResponseListTunnels200] = js.native
   
   /**
     * Org information
@@ -709,6 +793,17 @@ trait SauceLabs extends StObject {
   def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: Unit, appActive: Boolean): js.Promise[ResponseUploadApp200] = js.native
   def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: Unit, appActive: Boolean, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
   def uploadApp(appType: Unit, appIdentifier: Unit, appDisplayName: Unit, appActive: Unit, body: InputStream): js.Promise[ResponseUploadApp200] = js.native
+  
+  /**
+    * Upload job assets
+    * @method
+    * @see {@link https://wiki.saucelabs.com|TBD}
+    * @name SauceLabs#uploadJobAssets
+    * @param {} jobId - id of the job that was run on Sauce Labs
+    * @param {} files - asset to upload and attach to your job
+    */
+  def uploadJobAssets(jobId: String): js.Promise[Unit] = js.native
+  def uploadJobAssets(jobId: String, files: Files): js.Promise[Unit] = js.native
   
   var username: String = js.native
   

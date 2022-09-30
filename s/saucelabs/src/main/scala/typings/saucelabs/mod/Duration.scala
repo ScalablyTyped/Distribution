@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Duration
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var nano: js.UndefOr[Double] = js.undefined
   
@@ -44,7 +44,7 @@ object Duration {
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: TemporalUnit*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: TemporalUnit*): Self = StObject.set(x, "units", js.Array(value*))
     
     inline def setZero(value: Boolean): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     

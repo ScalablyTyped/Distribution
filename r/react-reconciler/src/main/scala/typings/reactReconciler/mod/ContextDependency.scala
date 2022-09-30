@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// react-reconciler/ReactFiberNewContext
 trait ContextDependency[T] extends StObject {
   
   var context: ReactContext[T]
   
-  var next: ContextDependency[js.Any] | Null
+  var next: ContextDependency[Any] | Null
   
   var observedBits: Double
 }
@@ -24,7 +23,7 @@ object ContextDependency {
     
     inline def setContext(value: ReactContext[T]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setNext(value: ContextDependency[js.Any]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ContextDependency[Any]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextNull: Self = StObject.set(x, "next", null)
     

@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.javaactionsMod.javaactions.IParameterType because Already inherited
-- typings.mendixmodelsdk.javaactionsMod.javaactions.IEntityTypeParameterType because var conflicts: containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EntityTypeParameterType")
+- typings.mendixmodelsdk.javaactionsMod.javaactions.IEntityTypeParameterType because var conflicts: containerAsJavaActionParameter, id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.EntityTypeParameterType")
 @js.native
-class EntityTypeParameterType protected () extends ParameterType {
+open class EntityTypeParameterType protected () extends ParameterType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -43,7 +43,7 @@ class EntityTypeParameterType protected () extends ParameterType {
 }
 object EntityTypeParameterType {
   
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EntityTypeParameterType")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.EntityTypeParameterType")
   @js.native
   val ^ : js.Any = js.native
   
@@ -67,13 +67,13 @@ object EntityTypeParameterType {
   inline def createIn(container: JavaActionParameter): EntityTypeParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EntityTypeParameterType]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EntityTypeParameterType.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.EntityTypeParameterType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.EntityTypeParameterType.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/javaactions", "javaactions.EntityTypeParameterType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

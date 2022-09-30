@@ -16,7 +16,7 @@ import typings.leaflet.mod.Coords
 import typings.leaflet.mod.DomEvent.EventHandlerFn
 import typings.leaflet.mod.DomEvent.PropagableEvent
 import typings.leaflet.mod.Point_
-import typings.std.Date
+import typings.std.DOMRect
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -36,7 +36,7 @@ object anon {
     
     var el: HTMLElement
     
-    var loaded: js.UndefOr[Date] = js.undefined
+    var loaded: js.UndefOr[js.Date] = js.undefined
     
     var retain: js.UndefOr[Boolean] = js.undefined
   }
@@ -59,7 +59,7 @@ object anon {
       
       inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      inline def setLoaded(value: Date): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: js.Date): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
       inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
       
@@ -121,38 +121,65 @@ object anon {
     def extend[T /* <: js.Object */](props: T): InstantiableT[T] & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Control */ js.Any) = js.native
   }
   
+  trait BoundingClientRect extends StObject {
+    
+    var boundingClientRect: DOMRect
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object BoundingClientRect {
+    
+    inline def apply(boundingClientRect: DOMRect, x: Double, y: Double): BoundingClientRect = {
+      val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BoundingClientRect]
+    }
+    
+    extension [Self <: BoundingClientRect](x: Self) {
+      
+      inline def setBoundingClientRect(value: DOMRect): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, js.Any]
+       with Instantiable1[/* args (repeated) */ Any, Any]
   
   @js.native
   trait InstantiableT[T /* <: js.Object */]
     extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, T]
+       with Instantiable1[/* args (repeated) */ Any, T]
   
   @js.native
   trait TypeofClass
     extends StObject
        with Instantiable0[Class] {
     
-    def addInitHook(initHookFn: js.Function0[Unit]): js.Any = js.native
-    def addInitHook(methodName: String, args: js.Any*): js.Any = js.native
+    def addInitHook(initHookFn: js.Function0[Unit]): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    def addInitHook(methodName: String, args: Any*): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
     
-    def extend(props: js.Any): Instantiable & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    def callInitHooks(): Unit = js.native
     
-    def include(props: js.Any): js.Any = js.native
+    def extend(props: Any): Instantiable & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
     
-    def mergeOptions(props: js.Any): js.Any = js.native
+    def include(props: Any): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    
+    def mergeOptions(props: Any): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
   }
   
   @js.native
   trait TypeofDomEvent extends StObject {
     
     def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def addListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     def addListener(el: HTMLElement, types: String, fn: EventHandlerFn): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def addListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def addListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     
     def disableClickPropagation(el: HTMLElement): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     
@@ -163,25 +190,28 @@ object anon {
     
     def getWheelDelta(ev: Event): Double = js.native
     
+    // tslint:disable:unified-signatures
+    def off(el: HTMLElement): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def off(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     def off(el: HTMLElement, types: String, fn: EventHandlerFn): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def off(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def off(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     
     def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def on(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     def on(el: HTMLElement, types: String, fn: EventHandlerFn): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def on(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def on(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     
     def preventDefault(ev: Event): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     
     def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn]): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def removeListener(el: HTMLElement, eventMap: StringDictionary[EventHandlerFn], context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
-    def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: js.Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
+    def removeListener(el: HTMLElement, types: String, fn: EventHandlerFn, context: Any): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     
     def stop(ev: PropagableEvent): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
     
+    // tslint:enable:unified-signatures
     def stopPropagation(ev: PropagableEvent): /* import warning: importer.ImportType#apply Failed type conversion: typeof DomEvent */ js.Any = js.native
   }
   
@@ -258,20 +288,22 @@ object anon {
     }
   }
   
-  /* Inlined {new (args : ...any): any} & {extend (props : any): {new (args : ...any): any} & typeof Class, include (props : any): any & typeof Class, mergeOptions (props : any): any & typeof Class, addInitHook (initHookFn : (): void): any & typeof Class, addInitHook (methodName : string, args : ...any): any & typeof Class, new (): leaflet.leaflet.Class} */
+  /* Inlined {new (args : ...any): any} & {extend (props : any): {new (args : ...any): any} & typeof Class, include (props : any): any & typeof Class, mergeOptions (props : any): any & typeof Class, addInitHook (initHookFn : (): void): any & typeof Class, addInitHook (methodName : string, args : ...any): any & typeof Class, callInitHooks (): void, new (): leaflet.leaflet.Class} */
   @js.native
   trait newargsanyanyextendpropsa
     extends StObject
        with Instantiable0[Class]
-       with Instantiable1[/* args (repeated) */ js.Any, js.Any] {
+       with Instantiable1[/* args (repeated) */ Any, Any] {
     
-    def addInitHook(initHookFn: js.Function0[Unit]): js.Any = js.native
-    def addInitHook(methodName: String, args: js.Any*): js.Any = js.native
+    def addInitHook(initHookFn: js.Function0[Unit]): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    def addInitHook(methodName: String, args: Any*): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
     
-    def extend(props: js.Any): Instantiable & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    def callInitHooks(): Unit = js.native
     
-    def include(props: js.Any): js.Any = js.native
+    def extend(props: Any): Instantiable & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
     
-    def mergeOptions(props: js.Any): js.Any = js.native
+    def include(props: Any): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
+    
+    def mergeOptions(props: Any): Any & (/* import warning: importer.ImportType#apply Failed type conversion: typeof Class */ js.Any) = js.native
   }
 }

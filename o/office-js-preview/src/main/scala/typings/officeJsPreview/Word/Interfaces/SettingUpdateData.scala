@@ -11,8 +11,7 @@ trait SettingUpdateData extends StObject {
     * Gets or sets the value of the setting.
     *
     * @remarks
-    * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: WordApi 1.4]
     */
   var value: js.UndefOr[Any] = js.undefined
 }

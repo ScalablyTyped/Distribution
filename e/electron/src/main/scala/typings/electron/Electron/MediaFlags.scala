@@ -7,9 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaFlags extends StObject {
   
   /**
+    * Whether the media element can be looped.
+    */
+  var canLoop: Boolean
+  
+  /**
+    * Whether the media element can be printed.
+    */
+  var canPrint: Boolean
+  
+  /**
     * Whether the media element can be rotated.
     */
   var canRotate: Boolean
+  
+  /**
+    * Whether or not the media element can be downloaded.
+    */
+  var canSave: Boolean
+  
+  /**
+    * Whether the media element can show picture-in-picture.
+    */
+  var canShowPictureInPicture: Boolean
   
   /**
     * Whether the media element's controls are toggleable.
@@ -45,26 +65,44 @@ trait MediaFlags extends StObject {
     * Whether the media element is paused.
     */
   var isPaused: Boolean
+  
+  /**
+    * Whether the media element is currently showing picture-in-picture.
+    */
+  var isShowingPictureInPicture: Boolean
 }
 object MediaFlags {
   
   inline def apply(
+    canLoop: Boolean,
+    canPrint: Boolean,
     canRotate: Boolean,
+    canSave: Boolean,
+    canShowPictureInPicture: Boolean,
     canToggleControls: Boolean,
     hasAudio: Boolean,
     inError: Boolean,
     isControlsVisible: Boolean,
     isLooping: Boolean,
     isMuted: Boolean,
-    isPaused: Boolean
+    isPaused: Boolean,
+    isShowingPictureInPicture: Boolean
   ): MediaFlags = {
-    val __obj = js.Dynamic.literal(canRotate = canRotate.asInstanceOf[js.Any], canToggleControls = canToggleControls.asInstanceOf[js.Any], hasAudio = hasAudio.asInstanceOf[js.Any], inError = inError.asInstanceOf[js.Any], isControlsVisible = isControlsVisible.asInstanceOf[js.Any], isLooping = isLooping.asInstanceOf[js.Any], isMuted = isMuted.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(canLoop = canLoop.asInstanceOf[js.Any], canPrint = canPrint.asInstanceOf[js.Any], canRotate = canRotate.asInstanceOf[js.Any], canSave = canSave.asInstanceOf[js.Any], canShowPictureInPicture = canShowPictureInPicture.asInstanceOf[js.Any], canToggleControls = canToggleControls.asInstanceOf[js.Any], hasAudio = hasAudio.asInstanceOf[js.Any], inError = inError.asInstanceOf[js.Any], isControlsVisible = isControlsVisible.asInstanceOf[js.Any], isLooping = isLooping.asInstanceOf[js.Any], isMuted = isMuted.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], isShowingPictureInPicture = isShowingPictureInPicture.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaFlags]
   }
   
   extension [Self <: MediaFlags](x: Self) {
     
+    inline def setCanLoop(value: Boolean): Self = StObject.set(x, "canLoop", value.asInstanceOf[js.Any])
+    
+    inline def setCanPrint(value: Boolean): Self = StObject.set(x, "canPrint", value.asInstanceOf[js.Any])
+    
     inline def setCanRotate(value: Boolean): Self = StObject.set(x, "canRotate", value.asInstanceOf[js.Any])
+    
+    inline def setCanSave(value: Boolean): Self = StObject.set(x, "canSave", value.asInstanceOf[js.Any])
+    
+    inline def setCanShowPictureInPicture(value: Boolean): Self = StObject.set(x, "canShowPictureInPicture", value.asInstanceOf[js.Any])
     
     inline def setCanToggleControls(value: Boolean): Self = StObject.set(x, "canToggleControls", value.asInstanceOf[js.Any])
     
@@ -79,5 +117,7 @@ object MediaFlags {
     inline def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
     
     inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
+    
+    inline def setIsShowingPictureInPicture(value: Boolean): Self = StObject.set(x, "isShowingPictureInPicture", value.asInstanceOf[js.Any])
   }
 }

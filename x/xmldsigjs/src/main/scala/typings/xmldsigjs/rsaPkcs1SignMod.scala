@@ -29,17 +29,17 @@ object rsaPkcs1SignMod {
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pkcs1_sign", "RsaPkcs1Sha1")
   @js.native
-  class RsaPkcs1Sha1 () extends SignatureAlgorithm
+  open class RsaPkcs1Sha1 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pkcs1_sign", "RsaPkcs1Sha256")
   @js.native
-  class RsaPkcs1Sha256 () extends SignatureAlgorithm
+  open class RsaPkcs1Sha256 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pkcs1_sign", "RsaPkcs1Sha384")
   @js.native
-  class RsaPkcs1Sha384 () extends SignatureAlgorithm
+  open class RsaPkcs1Sha384 () extends SignatureAlgorithm
   
   @JSImport("xmldsigjs/build/types/algorithms/rsa_pkcs1_sign", "RsaPkcs1Sha512")
   @js.native
-  class RsaPkcs1Sha512 () extends SignatureAlgorithm
+  open class RsaPkcs1Sha512 () extends SignatureAlgorithm
 }

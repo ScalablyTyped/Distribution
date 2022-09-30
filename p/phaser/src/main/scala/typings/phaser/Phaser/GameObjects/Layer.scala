@@ -14,7 +14,6 @@ import typings.phaser.Phaser.Physics.Arcade.Body
 import typings.phaser.Phaser.Physics.Arcade.StaticBody
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
-import typings.phaser.Phaser.Structs.List
 import typings.phaser.Phaser.Types.GameObjects.JSONGameObject
 import typings.phaser.Phaser.Types.Input.InteractiveObject
 import org.scalablytyped.runtime.StObject
@@ -67,7 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Layer
   extends StObject
-     with List[GameObject]
+     with typings.phaser.Phaser.Structs.List[GameObject]
      with AlphaSingle
      with BlendMode
      with Depth

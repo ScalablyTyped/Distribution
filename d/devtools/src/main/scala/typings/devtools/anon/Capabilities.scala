@@ -1,26 +1,23 @@
 package typings.devtools.anon
 
+import typings.devtools.typesMod.ExtendedCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Capabilities extends StObject {
   
-  var capabilities: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Capabilities */ js.Any
+  var capabilities: ExtendedCapabilities
 }
 object Capabilities {
   
-  inline def apply(
-    capabilities: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Capabilities */ js.Any
-  ): Capabilities = {
+  inline def apply(capabilities: ExtendedCapabilities): Capabilities = {
     val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capabilities]
   }
   
   extension [Self <: Capabilities](x: Self) {
     
-    inline def setCapabilities(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Capabilities */ js.Any
-    ): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: ExtendedCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
   }
 }

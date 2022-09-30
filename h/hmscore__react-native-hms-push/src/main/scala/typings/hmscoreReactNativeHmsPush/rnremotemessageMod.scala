@@ -2,9 +2,9 @@ package typings.hmscoreReactNativeHmsPush
 
 import typings.hmscoreReactNativeHmsPush.anon.AnalyticInfo
 import typings.hmscoreReactNativeHmsPush.anon.BADGENUMBER
-import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushNumbers.`0`
-import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushNumbers.`1`
-import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushNumbers.`2`
+import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushInts.`0`
+import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushInts.`1`
+import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushInts.`2`
 import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushStrings.HCM
 import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushStrings.analyticInfo
 import typings.hmscoreReactNativeHmsPush.hmscoreReactNativeHmsPushStrings.analyticInfoMap

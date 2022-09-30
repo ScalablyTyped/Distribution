@@ -1,35 +1,35 @@
 package typings.activexMsxml2.MSXML2
 
-import typings.activexMsxml2.activexMsxml2Numbers.`0`
-import typings.activexMsxml2.activexMsxml2Numbers.`10`
-import typings.activexMsxml2.activexMsxml2Numbers.`11`
-import typings.activexMsxml2.activexMsxml2Numbers.`1`
-import typings.activexMsxml2.activexMsxml2Numbers.`2`
-import typings.activexMsxml2.activexMsxml2Numbers.`3`
-import typings.activexMsxml2.activexMsxml2Numbers.`4`
-import typings.activexMsxml2.activexMsxml2Numbers.`5`
-import typings.activexMsxml2.activexMsxml2Numbers.`6`
-import typings.activexMsxml2.activexMsxml2Numbers.`7`
-import typings.activexMsxml2.activexMsxml2Numbers.`8`
-import typings.activexMsxml2.activexMsxml2Numbers.`9`
+import typings.activexMsxml2.activexMsxml2Ints.`0`
+import typings.activexMsxml2.activexMsxml2Ints.`10`
+import typings.activexMsxml2.activexMsxml2Ints.`11`
+import typings.activexMsxml2.activexMsxml2Ints.`1`
+import typings.activexMsxml2.activexMsxml2Ints.`2`
+import typings.activexMsxml2.activexMsxml2Ints.`3`
+import typings.activexMsxml2.activexMsxml2Ints.`4`
+import typings.activexMsxml2.activexMsxml2Ints.`5`
+import typings.activexMsxml2.activexMsxml2Ints.`6`
+import typings.activexMsxml2.activexMsxml2Ints.`7`
+import typings.activexMsxml2.activexMsxml2Ints.`8`
+import typings.activexMsxml2.activexMsxml2Ints.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for XHR properties */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMsxml2.activexMsxml2Numbers.`6`
-  - typings.activexMsxml2.activexMsxml2Numbers.`8`
-  - typings.activexMsxml2.activexMsxml2Numbers.`11`
-  - typings.activexMsxml2.activexMsxml2Numbers.`1`
-  - typings.activexMsxml2.activexMsxml2Numbers.`5`
-  - typings.activexMsxml2.activexMsxml2Numbers.`0`
-  - typings.activexMsxml2.activexMsxml2Numbers.`3`
-  - typings.activexMsxml2.activexMsxml2Numbers.`9`
-  - typings.activexMsxml2.activexMsxml2Numbers.`7`
-  - typings.activexMsxml2.activexMsxml2Numbers.`4`
-  - typings.activexMsxml2.activexMsxml2Numbers.`10`
-  - typings.activexMsxml2.activexMsxml2Numbers.`2`
+  - typings.activexMsxml2.activexMsxml2Ints.`6`
+  - typings.activexMsxml2.activexMsxml2Ints.`8`
+  - typings.activexMsxml2.activexMsxml2Ints.`11`
+  - typings.activexMsxml2.activexMsxml2Ints.`1`
+  - typings.activexMsxml2.activexMsxml2Ints.`5`
+  - typings.activexMsxml2.activexMsxml2Ints.`0`
+  - typings.activexMsxml2.activexMsxml2Ints.`3`
+  - typings.activexMsxml2.activexMsxml2Ints.`9`
+  - typings.activexMsxml2.activexMsxml2Ints.`7`
+  - typings.activexMsxml2.activexMsxml2Ints.`4`
+  - typings.activexMsxml2.activexMsxml2Ints.`10`
+  - typings.activexMsxml2.activexMsxml2Ints.`2`
 */
 trait XHR_PROPERTY extends StObject
 object XHR_PROPERTY {

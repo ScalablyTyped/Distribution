@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def sprintf(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def sprintf(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   inline def vsprintf(fmt: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("vsprintf")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
 }

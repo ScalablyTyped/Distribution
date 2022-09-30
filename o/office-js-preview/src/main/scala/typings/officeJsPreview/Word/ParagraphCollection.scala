@@ -25,7 +25,7 @@ trait ParagraphCollection
   var context_ParagraphCollection: RequestContext = js.native
   
   /**
-    * Gets the first paragraph in this collection. Throws an error if the collection is empty.
+    * Gets the first paragraph in this collection. Throws an `ItemNotFound` error if the collection is empty.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -33,7 +33,7 @@ trait ParagraphCollection
   def getFirst(): Paragraph = js.native
   
   /**
-    * Gets the first paragraph in this collection. Returns a null object if the collection is empty.
+    * Gets the first paragraph in this collection. If the collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -41,7 +41,7 @@ trait ParagraphCollection
   def getFirstOrNullObject(): Paragraph = js.native
   
   /**
-    * Gets the last paragraph in this collection. Throws an error if the collection is empty.
+    * Gets the last paragraph in this collection. Throws an `ItemNotFound` error if the collection is empty.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -49,7 +49,7 @@ trait ParagraphCollection
   def getLast(): Paragraph = js.native
   
   /**
-    * Gets the last paragraph in this collection. Returns a null object if the collection is empty.
+    * Gets the last paragraph in this collection. If the collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
     * [Api set: WordApi 1.3]

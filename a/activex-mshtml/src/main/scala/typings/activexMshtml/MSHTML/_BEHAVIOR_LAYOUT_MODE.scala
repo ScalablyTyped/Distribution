@@ -1,22 +1,22 @@
 package typings.activexMshtml.MSHTML
 
-import typings.activexMshtml.activexMshtmlNumbers.`16384`
-import typings.activexMshtml.activexMshtmlNumbers.`1`
-import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typings.activexMshtml.activexMshtmlNumbers.`2`
-import typings.activexMshtml.activexMshtmlNumbers.`32768`
-import typings.activexMshtml.activexMshtmlNumbers.`4`
+import typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typings.activexMshtml.activexMshtmlInts.`16384`
+import typings.activexMshtml.activexMshtmlInts.`1`
+import typings.activexMshtml.activexMshtmlInts.`2`
+import typings.activexMshtml.activexMshtmlInts.`32768`
+import typings.activexMshtml.activexMshtmlInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typings.activexMshtml.activexMshtmlNumbers.`32768`
-  - typings.activexMshtml.activexMshtmlNumbers.`4`
-  - typings.activexMshtml.activexMshtmlNumbers.`16384`
-  - typings.activexMshtml.activexMshtmlNumbers.`2`
-  - typings.activexMshtml.activexMshtmlNumbers.`1`
+  - typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typings.activexMshtml.activexMshtmlInts.`32768`
+  - typings.activexMshtml.activexMshtmlInts.`4`
+  - typings.activexMshtml.activexMshtmlInts.`16384`
+  - typings.activexMshtml.activexMshtmlInts.`2`
+  - typings.activexMshtml.activexMshtmlInts.`1`
 */
 trait _BEHAVIOR_LAYOUT_MODE extends StObject
 object _BEHAVIOR_LAYOUT_MODE {
@@ -31,5 +31,5 @@ object _BEHAVIOR_LAYOUT_MODE {
   
   inline def BEHAVIORLAYOUTMODE_NATURAL: `1` = 1.asInstanceOf[`1`]
   
-  inline def BEHAVIOR_LAYOUT_MODE_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def BEHAVIOR_LAYOUT_MODE_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }

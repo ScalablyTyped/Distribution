@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a comment in the document.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait Comment
@@ -25,7 +25,7 @@ trait Comment
     * Gets the email of the comment's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val authorEmail: String = js.native
   
@@ -33,7 +33,7 @@ trait Comment
     * Gets the name of the comment's author.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val authorName: String = js.native
   
@@ -41,7 +41,7 @@ trait Comment
     * Gets or sets the comment's content as plain text.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var content: String = js.native
   
@@ -49,7 +49,7 @@ trait Comment
     * Gets or sets the comment's content range.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var contentRange: CommentContentRange = js.native
   
@@ -61,7 +61,7 @@ trait Comment
     * Gets the creation date of the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val creationDate: js.Date = js.native
   
@@ -69,7 +69,7 @@ trait Comment
     * Deletes the comment and its replies.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def delete(): Unit = js.native
   
@@ -77,15 +77,15 @@ trait Comment
     * Gets the range in the main document where the comment is on.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getRange(): Range = js.native
   
   /**
-    * Gets the ID of the comment. Read-only.
+    * Gets the ID of the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val id: String = js.native
   
@@ -104,7 +104,7 @@ trait Comment
     * Gets the collection of reply objects associated with the comment.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   val replies: CommentReplyCollection = js.native
   
@@ -112,7 +112,7 @@ trait Comment
     * Adds a new reply to the end of the comment thread.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     *
     * @param replyText Required. Reply text.
     */
@@ -122,7 +122,7 @@ trait Comment
     * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   var resolved: Boolean = js.native
   

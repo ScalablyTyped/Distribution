@@ -8,7 +8,7 @@ import typings.cookieclicker.Game.StocksMinigame
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.Track
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.Mod
 import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.SendCallback
-import typings.cookieclicker.cookieclickerNumbers.`8`
+import typings.cookieclicker.cookieclickerInts.`8`
 import typings.cookieclicker.cookieclickerStrings.`2d`
 import typings.cookieclicker.cookieclickerStrings.`object`
 import typings.cookieclicker.cookieclickerStrings.`var`

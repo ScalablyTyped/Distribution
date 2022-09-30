@@ -120,11 +120,11 @@ object taskThese {
     js.Function1[/* a */ js.Array[Any], TaskThese_[E, Any]]
   ]]
   
-  inline def fromPredicate[A_2, E_2](predicate: Predicate[A_2], onFalse: js.Function1[/* a */ A_2, E_2]): js.Function1[/* a */ A_2, TaskThese_[E_2, A_2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A_2, TaskThese_[E_2, A_2]]]
+  inline def fromPredicate[A_1, E_1](predicate: Predicate[A_1], onFalse: js.Function1[/* a */ A_1, E_1]): js.Function1[/* b */ A_1, TaskThese_[E_1, A_1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ A_1, TaskThese_[E_1, A_1]]]
   
-  inline def fromPredicate_AB_AE[A, B /* <: A */, E](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, TaskThese_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskThese_[E, B]]]
+  inline def fromPredicate_ABE[A, B /* <: A */, E](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, TaskThese_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, TaskThese_[E, B]]]
   
-  inline def fromPredicate_A_1E_1[A_1, E_1](predicate: Predicate[A_1], onFalse: js.Function1[/* a */ A_1, E_1]): js.Function1[/* b */ A_1, TaskThese_[E_1, A_1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* b */ A_1, TaskThese_[E_1, A_1]]]
+  inline def fromPredicate_A_2E_2[A_2, E_2](predicate: Predicate[A_2], onFalse: js.Function1[/* a */ A_2, E_2]): js.Function1[/* a */ A_2, TaskThese_[E_2, A_2]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A_2, TaskThese_[E_2, A_2]]]
   
   @JSImport("fp-ts", "taskThese.fromTask")
   @js.native

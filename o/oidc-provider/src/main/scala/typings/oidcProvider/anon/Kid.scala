@@ -2,10 +2,10 @@ package typings.oidcProvider.anon
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.cryptoMod.KeyObject
-import typings.oidcProvider.oidcProviderNumbers.`1`
-import typings.oidcProvider.oidcProviderNumbers.`2`
-import typings.oidcProvider.oidcProviderNumbers.`3`
-import typings.oidcProvider.oidcProviderNumbers.`4`
+import typings.oidcProvider.oidcProviderInts.`1`
+import typings.oidcProvider.oidcProviderInts.`2`
+import typings.oidcProvider.oidcProviderInts.`3`
+import typings.oidcProvider.oidcProviderInts.`4`
 import typings.oidcProvider.oidcProviderStrings.local
 import typings.oidcProvider.oidcProviderStrings.public
 import org.scalablytyped.runtime.StObject

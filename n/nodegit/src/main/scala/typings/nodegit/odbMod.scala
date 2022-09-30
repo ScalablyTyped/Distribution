@@ -1,9 +1,9 @@
 package typings.nodegit
 
 import typings.node.bufferMod.global.Buffer
-import typings.nodegit.nodegitNumbers.`2`
-import typings.nodegit.nodegitNumbers.`4`
-import typings.nodegit.nodegitNumbers.`6`
+import typings.nodegit.nodegitInts.`2`
+import typings.nodegit.nodegitInts.`4`
+import typings.nodegit.nodegitInts.`6`
 import typings.nodegit.objectMod.Object.TYPE
 import typings.nodegit.odbExpandIdMod.OdbExpandId
 import typings.nodegit.odbObjectMod.OdbObject
@@ -38,9 +38,9 @@ object odbMod {
     inline def open(objectsDir: String): js.Promise[Odb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(objectsDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Odb]]
     
     /* Rewritten from type alias, can be one of: 
-      - typings.nodegit.nodegitNumbers.`2`
-      - typings.nodegit.nodegitNumbers.`4`
-      - typings.nodegit.nodegitNumbers.`6`
+      - typings.nodegit.nodegitInts.`2`
+      - typings.nodegit.nodegitInts.`4`
+      - typings.nodegit.nodegitInts.`6`
     */
     trait STREAM extends StObject
     object STREAM {

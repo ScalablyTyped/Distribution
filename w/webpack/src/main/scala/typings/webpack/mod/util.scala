@@ -2,9 +2,9 @@ package typings.webpack.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.webpack.webpackBooleans.`true`
-import typings.webpack.webpackNumbers.`-1`
-import typings.webpack.webpackNumbers.`0`
-import typings.webpack.webpackNumbers.`1`
+import typings.webpack.webpackInts.`-1`
+import typings.webpack.webpackInts.`0`
+import typings.webpack.webpackInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

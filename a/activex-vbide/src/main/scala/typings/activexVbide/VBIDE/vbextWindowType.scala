@@ -1,38 +1,38 @@
 package typings.activexVbide.VBIDE
 
-import typings.activexVbide.activexVbideNumbers.`0`
-import typings.activexVbide.activexVbideNumbers.`10`
-import typings.activexVbide.activexVbideNumbers.`11`
-import typings.activexVbide.activexVbideNumbers.`12`
-import typings.activexVbide.activexVbideNumbers.`15`
-import typings.activexVbide.activexVbideNumbers.`1`
-import typings.activexVbide.activexVbideNumbers.`2`
-import typings.activexVbide.activexVbideNumbers.`3`
-import typings.activexVbide.activexVbideNumbers.`4`
-import typings.activexVbide.activexVbideNumbers.`5`
-import typings.activexVbide.activexVbideNumbers.`6`
-import typings.activexVbide.activexVbideNumbers.`7`
-import typings.activexVbide.activexVbideNumbers.`8`
-import typings.activexVbide.activexVbideNumbers.`9`
+import typings.activexVbide.activexVbideInts.`0`
+import typings.activexVbide.activexVbideInts.`10`
+import typings.activexVbide.activexVbideInts.`11`
+import typings.activexVbide.activexVbideInts.`12`
+import typings.activexVbide.activexVbideInts.`15`
+import typings.activexVbide.activexVbideInts.`1`
+import typings.activexVbide.activexVbideInts.`2`
+import typings.activexVbide.activexVbideInts.`3`
+import typings.activexVbide.activexVbideInts.`4`
+import typings.activexVbide.activexVbideInts.`5`
+import typings.activexVbide.activexVbideInts.`6`
+import typings.activexVbide.activexVbideInts.`7`
+import typings.activexVbide.activexVbideInts.`8`
+import typings.activexVbide.activexVbideInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexVbide.activexVbideNumbers.`2`
-  - typings.activexVbide.activexVbideNumbers.`0`
-  - typings.activexVbide.activexVbideNumbers.`1`
-  - typings.activexVbide.activexVbideNumbers.`8`
-  - typings.activexVbide.activexVbideNumbers.`9`
-  - typings.activexVbide.activexVbideNumbers.`5`
-  - typings.activexVbide.activexVbideNumbers.`11`
-  - typings.activexVbide.activexVbideNumbers.`4`
-  - typings.activexVbide.activexVbideNumbers.`12`
-  - typings.activexVbide.activexVbideNumbers.`6`
-  - typings.activexVbide.activexVbideNumbers.`7`
-  - typings.activexVbide.activexVbideNumbers.`10`
-  - typings.activexVbide.activexVbideNumbers.`15`
-  - typings.activexVbide.activexVbideNumbers.`3`
+  - typings.activexVbide.activexVbideInts.`2`
+  - typings.activexVbide.activexVbideInts.`0`
+  - typings.activexVbide.activexVbideInts.`1`
+  - typings.activexVbide.activexVbideInts.`8`
+  - typings.activexVbide.activexVbideInts.`9`
+  - typings.activexVbide.activexVbideInts.`5`
+  - typings.activexVbide.activexVbideInts.`11`
+  - typings.activexVbide.activexVbideInts.`4`
+  - typings.activexVbide.activexVbideInts.`12`
+  - typings.activexVbide.activexVbideInts.`6`
+  - typings.activexVbide.activexVbideInts.`7`
+  - typings.activexVbide.activexVbideInts.`10`
+  - typings.activexVbide.activexVbideInts.`15`
+  - typings.activexVbide.activexVbideInts.`3`
 */
 trait vbextWindowType extends StObject
 object vbextWindowType {

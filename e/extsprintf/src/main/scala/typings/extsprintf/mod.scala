@@ -10,11 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fprintf(stream: Stream, format: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fprintf")((List(stream.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def fprintf(stream: Stream, format: String, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fprintf")((scala.List(stream.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
-  inline def printf(format: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def printf(format: String, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
-  inline def sprintf(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+  inline def sprintf(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   
   trait Stream extends StObject {
     

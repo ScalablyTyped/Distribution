@@ -1,8 +1,8 @@
 package typings.zwjsbridge.anon
 
-import typings.zwjsbridge.zwjsbridgeNumbers.`1`
-import typings.zwjsbridge.zwjsbridgeNumbers.`2`
-import typings.zwjsbridge.zwjsbridgeNumbers.`3`
+import typings.zwjsbridge.zwjsbridgeInts.`1`
+import typings.zwjsbridge.zwjsbridgeInts.`2`
+import typings.zwjsbridge.zwjsbridgeInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

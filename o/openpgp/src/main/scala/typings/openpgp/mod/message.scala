@@ -3,7 +3,6 @@ package typings.openpgp.mod
 import typings.openpgp.anon.Algorithm
 import typings.openpgp.anon.Keyid
 import typings.openpgp.mod.enums.compression
-import typings.openpgp.mod.packet.List
 import typings.openpgp.mod.packet.Literal
 import typings.openpgp.mod.signature.Signature
 import typings.openpgp.openpgpStrings.binary
@@ -31,7 +30,7 @@ object message {
       * @param packetlist The packets that form this message
       *        See {@link https://tools.ietf.org/html/rfc4880#section-11.3}
       */
-    def this(packetlist: List) = this()
+    def this(packetlist: typings.openpgp.mod.packet.List) = this()
     
     /**
       * Append signature to unencrypted message object
@@ -145,7 +144,7 @@ object message {
       */
     def getText(): String | Null = js.native
     
-    var packets: List = js.native
+    var packets: typings.openpgp.mod.packet.List = js.native
     
     /**
       * Sign the message (the literal data packet of the message)
@@ -225,7 +224,7 @@ object message {
     signature: Signature,
     date: js.Date,
     userIds: js.Array[Any]
-  ): js.Promise[List] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignaturePackets")(literalDataPacket.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[List]]
+  ): js.Promise[typings.openpgp.mod.packet.List] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignaturePackets")(literalDataPacket.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], date.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.mod.packet.List]]
   
   /**
     * Create object containing signer's keyid and validity of signature

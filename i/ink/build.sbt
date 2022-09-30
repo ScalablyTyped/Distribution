@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "ink"
-version := "3.0.8-06a2de"
-scalaVersion := "3.0.1"
+version := "3.2.0-17c0a2"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chalk" % "4.1.0-502e56",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "react-reconciler" % "0.18-dt-20190109Z-f24b72",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "type-fest" % "0.8.1-460399",
-  "org.scalablytyped" %%% "yoga-layout" % "1.9-dt-20201002Z-b0e5f5")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-0912f8",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-975e63",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-fc8273",
+  "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-f8a5d5",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-3fbb8c",
+  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
+  "org.scalablytyped" %%% "type-fest" % "3.0.0-e72bbe",
+  "org.scalablytyped" %%% "yoga-layout" % "1.9-dt-20211202Z-a7875c")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

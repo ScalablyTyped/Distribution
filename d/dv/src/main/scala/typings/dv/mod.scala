@@ -1,8 +1,8 @@
 package typings.dv
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.dv.dvNumbers.`4`
-import typings.dv.dvNumbers.`8`
+import typings.dv.dvInts.`4`
+import typings.dv.dvInts.`8`
 import typings.dv.dvStrings.AZTEC
 import typings.dv.dvStrings.CODE_128
 import typings.dv.dvStrings.CODE_39

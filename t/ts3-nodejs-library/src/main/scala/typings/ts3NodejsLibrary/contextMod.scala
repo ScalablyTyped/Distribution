@@ -3,7 +3,7 @@ package typings.ts3NodejsLibrary
 import typings.ts3NodejsLibrary.contextMod.SelectType.NONE
 import typings.ts3NodejsLibrary.contextMod.SelectType.PORT
 import typings.ts3NodejsLibrary.contextMod.SelectType.SID
-import typings.ts3NodejsLibrary.ts3NodejsLibraryNumbers.`0`
+import typings.ts3NodejsLibrary.ts3NodejsLibraryInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.parsimmon.parsimmonBooleans.`false`
 import typings.parsimmon.parsimmonBooleans.`true`
-import typings.parsimmon.parsimmonNumbers.`-1`
+import typings.parsimmon.parsimmonInts.`-1`
 import typings.parsimmon.parsimmonStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

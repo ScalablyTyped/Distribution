@@ -22,7 +22,7 @@ trait RuleAction extends StObject {
   var Captcha: js.UndefOr[CaptchaAction] = js.undefined
   
   /**
-    * Instructs WAF to count the web request and allow it.
+    * Instructs WAF to count the web request and then continue evaluating the request using the remaining rules in the web ACL.
     */
   var Count: js.UndefOr[CountAction] = js.undefined
 }

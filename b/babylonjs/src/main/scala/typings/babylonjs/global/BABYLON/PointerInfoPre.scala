@@ -39,6 +39,12 @@ open class PointerInfoPre protected ()
   var nearInteractionPickingInfo: Nullable[typings.babylonjs.BABYLON.PickingInfo] = js.native
   
   /**
+    * The original picking info that was used to trigger the pointer event
+    */
+  /* CompleteClass */
+  var originalPickingInfo: Nullable[typings.babylonjs.BABYLON.PickingInfo] = js.native
+  
+  /**
     * Ray from a pointer if available (eg. 6dof controller)
     */
   /* CompleteClass */

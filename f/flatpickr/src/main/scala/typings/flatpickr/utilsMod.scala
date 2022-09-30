@@ -1,7 +1,7 @@
 package typings.flatpickr
 
-import typings.flatpickr.flatpickrNumbers.`0`
-import typings.flatpickr.flatpickrNumbers.`1`
+import typings.flatpickr.flatpickrInts.`0`
+import typings.flatpickr.flatpickrInts.`1`
 import typings.flatpickr.flatpickrStrings.increment
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interfaces and instance classes for types from the Mendix sub meta model `DocumentTemplates`.
   */
-@JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Widget")
+@JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Widget")
 @js.native
 abstract class Widget protected () extends Element[IModel] {
   def this(
@@ -36,18 +36,18 @@ abstract class Widget protected () extends Element[IModel] {
 }
 object Widget {
   
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Widget")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Widget")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Widget.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Widget.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Widget.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/documenttemplates", "documenttemplates.Widget.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

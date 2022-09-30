@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "documenttemplates.GridSortItem")
 @js.native
-class GridSortItem protected ()
+open class GridSortItem protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.GridSortItem {
   def this(
     model: AbstractModel,

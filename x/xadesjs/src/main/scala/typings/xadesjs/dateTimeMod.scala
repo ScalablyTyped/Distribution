@@ -1,6 +1,5 @@
 package typings.xadesjs
 
-import typings.std.Date
 import typings.xadesjs.xmlBaseMod.XadesObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dateTimeMod {
   
-  @JSImport("xadesjs/build/types/xml/date_time", "XadesDateTime")
+  @JSImport("xadesjs/build/types/src/xml/date_time", "XadesDateTime")
   @js.native
-  class XadesDateTime () extends XadesObject {
+  open class XadesDateTime () extends XadesObject {
     def this(properties: js.Object) = this()
     
     /**
@@ -21,6 +20,6 @@ object dateTimeMod {
       */
     var Format: js.UndefOr[String] = js.native
     
-    var Value: Date = js.native
+    var Value: js.Date = js.native
   }
 }

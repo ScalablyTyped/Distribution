@@ -35,10 +35,10 @@ object pbrBRDFConfigurationMod {
     def this(material: PBRBaseMaterial) = this()
     def this(material: PBRBaseMaterial, addToPluginList: Boolean) = this()
     
-    /** @hidden */
+    /** @internal */
     /* private */ var _internalMarkAllSubMeshesAsMiscDirty: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _markAllSubMeshesAsMiscDirty(): Unit = js.native
     
     /* private */ var _useEnergyConservation: Any = js.native

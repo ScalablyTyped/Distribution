@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object inferLabelMod {
   
-  @JSImport("ow/dist/source/utils/infer-label", JSImport.Namespace)
+  @JSImport("ow/dist/utils/infer-label", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def inferLabel(callsites: js.Array[CallSite]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferLabel")(callsites.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def inferLabel(callsites: js.Array[CallSite]): Unit | String = ^.asInstanceOf[js.Dynamic].applyDynamic("inferLabel")(callsites.asInstanceOf[js.Any]).asInstanceOf[Unit | String]
 }

@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import typings.lodash.mod.List
 import typings.lodash.mod.ValueIteratee
 import typings.lodash.mod.ValueIteratorTypeGuard
 import typings.lodash.mod.__
@@ -26,10 +25,10 @@ trait LodashPartition extends StObject {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
-  def apply[T](callback: ValueIteratee[T], collection: List[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-  def apply[T](callback: __): LodashPartition1x2[T] = js.native
+  def apply[T](callback: ValueIteratee[T], collection: typings.lodash.mod.List[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
+  def apply[T /* <: js.Object */](callback: __): LodashPartition3x2[T] = js.native
   def apply[T /* <: js.Object */](callback: __, collection: T): LodashPartition3x2[T] = js.native
-  def apply[T](callback: __, collection: List[T]): LodashPartition1x2[T] = js.native
+  def apply[T](callback: __, collection: typings.lodash.mod.List[T]): LodashPartition1x2[T] = js.native
   def apply[T, U /* <: T */](callback: ValueIteratorTypeGuard[T, U]): js.Tuple2[js.Array[U], js.Array[Exclude[T, U]]] = js.native
-  def apply[T, U /* <: T */](callback: ValueIteratorTypeGuard[T, U], collection: List[T]): js.Tuple2[js.Array[U], js.Array[Exclude[T, U]]] = js.native
+  def apply[T, U /* <: T */](callback: ValueIteratorTypeGuard[T, U], collection: typings.lodash.mod.List[T]): js.Tuple2[js.Array[U], js.Array[Exclude[T, U]]] = js.native
 }

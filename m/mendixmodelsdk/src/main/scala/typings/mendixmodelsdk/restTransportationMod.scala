@@ -1,5 +1,6 @@
 package typings.mendixmodelsdk
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.transportationMod.IRequestFileDownloadOptions
@@ -13,20 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object restTransportationMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/RestTransportation", "RestTransportation")
+  @JSImport("mendixmodelsdk/src/sdk/internal/RestTransportation", "RestTransportation")
   @js.native
-  class RestTransportation protected ()
+  open class RestTransportation protected ()
     extends StObject
        with ITransportation {
     def this(config: ISdkConfig) = this()
     
-    /* private */ var config: js.Any = js.native
+    /* private */ var config: Any = js.native
     
-    /* private */ var generateStandardOptions: js.Any = js.native
+    /* private */ var generateStandardOptions: Any = js.native
     
-    /* private */ var handleRequest: js.Any = js.native
+    /* private */ var got: Any = js.native
     
-    /* private */ var prepareRequestOptions: js.Any = js.native
+    /* private */ var handleRequest: Any = js.native
+    
+    /* private */ var prepareRequestOptions: Any = js.native
     
     /**
       * Send a HTTP request, with specified method, url, data, success and failure callbacks.
@@ -44,7 +47,7 @@ object restTransportationMod {
       failure: IErrorCallback
     ): Unit = js.native
     
-    /* private */ var retryRequest: js.Any = js.native
+    /* private */ var retryRequest: Any = js.native
     
     /**
       * Send a HTTP request that will be retried in case of network errors, with specified method, url, data, success and failure callbacks.
@@ -52,8 +55,31 @@ object restTransportationMod {
     /* CompleteClass */
     override def retryableRequest[T](options: IRequestOptions, success: IResponseCallback[T], failure: IErrorCallback): Unit = js.native
     
-    /* private */ var sanitizedMethod: js.Any = js.native
+    /* private */ var sanitizedMethod: Any = js.native
+  }
+  
+  trait IRequestResult extends StObject {
     
-    /* private */ var url: js.Any = js.native
+    var body: Any
+    
+    var headers: StringDictionary[Any]
+    
+    var statusCode: Double
+  }
+  object IRequestResult {
+    
+    inline def apply(body: Any, headers: StringDictionary[Any], statusCode: Double): IRequestResult = {
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IRequestResult]
+    }
+    
+    extension [Self <: IRequestResult](x: Self) {
+      
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    }
   }
 }

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.versionChecksMod.VersionInfo because Already inherited
 - typings.mendixmodelsdk.versionChecksMod.StructureVersionInfo because Already inherited
 - typings.mendixmodelsdk.internalMod.StructureVersionInfo because Already inherited
+- typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.clientMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.codeactionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.constantsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
@@ -27,6 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.javascriptactionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.jsonstructuresMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.kafkaMod.StructureVersionInfo because Inheritance from two classes. Inlined 
+- typings.mendixmodelsdk.mlmappingsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.mappingsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.menusMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.messagedefinitionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
@@ -36,6 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.navigationMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.pagesMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.projectsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
+- typings.mendixmodelsdk.queuesMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.regularexpressionsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.reportsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.restMod.StructureVersionInfo because Inheritance from two classes. Inlined 
@@ -46,9 +49,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.textsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.webservicesMod.StructureVersionInfo because Inheritance from two classes. Inlined 
 - typings.mendixmodelsdk.workflowsMod.StructureVersionInfo because Inheritance from two classes. Inlined 
-- typings.mendixmodelsdk.xmlschemasMod.StructureVersionInfo because Inheritance from two classes. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "StructureVersionInfo")
+- typings.mendixmodelsdk.xmlschemasMod.StructureVersionInfo because Inheritance from two classes. Inlined  */ @JSImport("mendixmodelsdk/src/gen/all-model-classes", "StructureVersionInfo")
 @js.native
-class StructureVersionInfo protected ()
+open class StructureVersionInfo protected ()
   extends typings.mendixmodelsdk.appservicesMod.StructureVersionInfo {
   def this(info: IStructureVersionInfo, structureType: StructureType) = this()
 }

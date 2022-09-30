@@ -1,7 +1,7 @@
 package typings.creditCardType
 
-import typings.creditCardType.creditCardTypeNumbers.`3`
-import typings.creditCardType.creditCardTypeNumbers.`4`
+import typings.creditCardType.creditCardTypeInts.`3`
+import typings.creditCardType.creditCardTypeInts.`4`
 import typings.creditCardType.typesMod.CreditCardTypeSecurityCodeLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

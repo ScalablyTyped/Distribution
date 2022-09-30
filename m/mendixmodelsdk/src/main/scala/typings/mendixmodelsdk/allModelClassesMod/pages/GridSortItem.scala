@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortItem")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortItem")
 @js.native
-class GridSortItem protected ()
+open class GridSortItem protected ()
   extends typings.mendixmodelsdk.pagesMod.pages.GridSortItem {
   def this(
     model: AbstractModel,
@@ -26,7 +26,7 @@ class GridSortItem protected ()
 }
 object GridSortItem {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortItem")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortItem")
   @js.native
   val ^ : js.Any = js.native
   
@@ -47,13 +47,13 @@ object GridSortItem {
   inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.GridSortBar): typings.mendixmodelsdk.pagesMod.pages.GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.GridSortItem]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortItem.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortItem.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSortItem.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "pages.GridSortItem.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

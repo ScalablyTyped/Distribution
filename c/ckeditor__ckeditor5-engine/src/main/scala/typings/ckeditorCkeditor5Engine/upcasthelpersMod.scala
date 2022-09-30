@@ -7,7 +7,6 @@ import typings.ckeditorCkeditor5Engine.anon.`11`
 import typings.ckeditorCkeditor5Engine.anon.`9`
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.documentFragment
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.element
-import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.elementColon$LeftcurlybracketstringRightcurlybracket
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.selectionChange
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.text
 import typings.ckeditorCkeditor5Engine.modelMod.Model
@@ -37,10 +36,10 @@ object upcasthelpersMod {
   ]]
   
   inline def convertToModelFragment(): UpcastDispatcherCallback[
-    element | elementColon$LeftcurlybracketstringRightcurlybracket | documentFragment, 
+    element | (/* template literal string: element:${string} */ String) | documentFragment, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToModelFragment")().asInstanceOf[UpcastDispatcherCallback[
-    element | elementColon$LeftcurlybracketstringRightcurlybracket | documentFragment, 
+    element | (/* template literal string: element:${string} */ String) | documentFragment, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any
   ]]
   

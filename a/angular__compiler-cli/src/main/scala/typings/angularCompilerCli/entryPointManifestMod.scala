@@ -108,7 +108,7 @@ object entryPointManifestMod {
     js.UndefOr[js.Array[AbsoluteFsPath]]
   ]
   
-  /* Inlined {[ Property in @angular/compiler-cli.@angular/compiler-cli/ngcc/src/packages/entry_point.PackageJsonFormatProperties as '${Property}_ivy_ngcc' ]:? string} */
+  /* Inlined {[ Property in @angular/compiler-cli.@angular/compiler-cli/ngcc/src/packages/entry_point.PackageJsonFormatProperties as / * template literal string: ${Property}_ivy_ngcc * / string ]:? string} */
   trait NewEntryPointPropertiesMap extends StObject {
     
     var browser: js.UndefOr[String] = js.undefined

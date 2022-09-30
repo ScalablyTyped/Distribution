@@ -1,177 +1,177 @@
 package typings.activexShdocvw.SHDocVw
 
-import typings.activexShdocvw.activexShdocvwNumbers.`10`
-import typings.activexShdocvw.activexShdocvwNumbers.`11`
-import typings.activexShdocvw.activexShdocvwNumbers.`12`
-import typings.activexShdocvw.activexShdocvwNumbers.`13`
-import typings.activexShdocvw.activexShdocvwNumbers.`14`
-import typings.activexShdocvw.activexShdocvwNumbers.`15`
-import typings.activexShdocvw.activexShdocvwNumbers.`16`
-import typings.activexShdocvw.activexShdocvwNumbers.`17`
-import typings.activexShdocvw.activexShdocvwNumbers.`18`
-import typings.activexShdocvw.activexShdocvwNumbers.`19`
-import typings.activexShdocvw.activexShdocvwNumbers.`1`
-import typings.activexShdocvw.activexShdocvwNumbers.`20`
-import typings.activexShdocvw.activexShdocvwNumbers.`21`
-import typings.activexShdocvw.activexShdocvwNumbers.`22`
-import typings.activexShdocvw.activexShdocvwNumbers.`23`
-import typings.activexShdocvw.activexShdocvwNumbers.`24`
-import typings.activexShdocvw.activexShdocvwNumbers.`25`
-import typings.activexShdocvw.activexShdocvwNumbers.`26`
-import typings.activexShdocvw.activexShdocvwNumbers.`27`
-import typings.activexShdocvw.activexShdocvwNumbers.`28`
-import typings.activexShdocvw.activexShdocvwNumbers.`29`
-import typings.activexShdocvw.activexShdocvwNumbers.`2`
-import typings.activexShdocvw.activexShdocvwNumbers.`30`
-import typings.activexShdocvw.activexShdocvwNumbers.`31`
-import typings.activexShdocvw.activexShdocvwNumbers.`32`
-import typings.activexShdocvw.activexShdocvwNumbers.`33`
-import typings.activexShdocvw.activexShdocvwNumbers.`34`
-import typings.activexShdocvw.activexShdocvwNumbers.`35`
-import typings.activexShdocvw.activexShdocvwNumbers.`36`
-import typings.activexShdocvw.activexShdocvwNumbers.`37`
-import typings.activexShdocvw.activexShdocvwNumbers.`38`
-import typings.activexShdocvw.activexShdocvwNumbers.`39`
-import typings.activexShdocvw.activexShdocvwNumbers.`3`
-import typings.activexShdocvw.activexShdocvwNumbers.`40`
-import typings.activexShdocvw.activexShdocvwNumbers.`41`
-import typings.activexShdocvw.activexShdocvwNumbers.`42`
-import typings.activexShdocvw.activexShdocvwNumbers.`43`
-import typings.activexShdocvw.activexShdocvwNumbers.`44`
-import typings.activexShdocvw.activexShdocvwNumbers.`45`
-import typings.activexShdocvw.activexShdocvwNumbers.`46`
-import typings.activexShdocvw.activexShdocvwNumbers.`47`
-import typings.activexShdocvw.activexShdocvwNumbers.`48`
-import typings.activexShdocvw.activexShdocvwNumbers.`49`
-import typings.activexShdocvw.activexShdocvwNumbers.`4`
-import typings.activexShdocvw.activexShdocvwNumbers.`50`
-import typings.activexShdocvw.activexShdocvwNumbers.`51`
-import typings.activexShdocvw.activexShdocvwNumbers.`52`
-import typings.activexShdocvw.activexShdocvwNumbers.`55`
-import typings.activexShdocvw.activexShdocvwNumbers.`56`
-import typings.activexShdocvw.activexShdocvwNumbers.`57`
-import typings.activexShdocvw.activexShdocvwNumbers.`58`
-import typings.activexShdocvw.activexShdocvwNumbers.`59`
-import typings.activexShdocvw.activexShdocvwNumbers.`5`
-import typings.activexShdocvw.activexShdocvwNumbers.`60`
-import typings.activexShdocvw.activexShdocvwNumbers.`61`
-import typings.activexShdocvw.activexShdocvwNumbers.`62`
-import typings.activexShdocvw.activexShdocvwNumbers.`63`
-import typings.activexShdocvw.activexShdocvwNumbers.`64`
-import typings.activexShdocvw.activexShdocvwNumbers.`65`
-import typings.activexShdocvw.activexShdocvwNumbers.`66`
-import typings.activexShdocvw.activexShdocvwNumbers.`67`
-import typings.activexShdocvw.activexShdocvwNumbers.`68`
-import typings.activexShdocvw.activexShdocvwNumbers.`69`
-import typings.activexShdocvw.activexShdocvwNumbers.`6`
-import typings.activexShdocvw.activexShdocvwNumbers.`70`
-import typings.activexShdocvw.activexShdocvwNumbers.`71`
-import typings.activexShdocvw.activexShdocvwNumbers.`72`
-import typings.activexShdocvw.activexShdocvwNumbers.`73`
-import typings.activexShdocvw.activexShdocvwNumbers.`74`
-import typings.activexShdocvw.activexShdocvwNumbers.`75`
-import typings.activexShdocvw.activexShdocvwNumbers.`76`
-import typings.activexShdocvw.activexShdocvwNumbers.`77`
-import typings.activexShdocvw.activexShdocvwNumbers.`78`
-import typings.activexShdocvw.activexShdocvwNumbers.`79`
-import typings.activexShdocvw.activexShdocvwNumbers.`7`
-import typings.activexShdocvw.activexShdocvwNumbers.`80`
-import typings.activexShdocvw.activexShdocvwNumbers.`81`
-import typings.activexShdocvw.activexShdocvwNumbers.`82`
-import typings.activexShdocvw.activexShdocvwNumbers.`83`
-import typings.activexShdocvw.activexShdocvwNumbers.`84`
-import typings.activexShdocvw.activexShdocvwNumbers.`85`
-import typings.activexShdocvw.activexShdocvwNumbers.`8`
-import typings.activexShdocvw.activexShdocvwNumbers.`9`
+import typings.activexShdocvw.activexShdocvwInts.`10`
+import typings.activexShdocvw.activexShdocvwInts.`11`
+import typings.activexShdocvw.activexShdocvwInts.`12`
+import typings.activexShdocvw.activexShdocvwInts.`13`
+import typings.activexShdocvw.activexShdocvwInts.`14`
+import typings.activexShdocvw.activexShdocvwInts.`15`
+import typings.activexShdocvw.activexShdocvwInts.`16`
+import typings.activexShdocvw.activexShdocvwInts.`17`
+import typings.activexShdocvw.activexShdocvwInts.`18`
+import typings.activexShdocvw.activexShdocvwInts.`19`
+import typings.activexShdocvw.activexShdocvwInts.`1`
+import typings.activexShdocvw.activexShdocvwInts.`20`
+import typings.activexShdocvw.activexShdocvwInts.`21`
+import typings.activexShdocvw.activexShdocvwInts.`22`
+import typings.activexShdocvw.activexShdocvwInts.`23`
+import typings.activexShdocvw.activexShdocvwInts.`24`
+import typings.activexShdocvw.activexShdocvwInts.`25`
+import typings.activexShdocvw.activexShdocvwInts.`26`
+import typings.activexShdocvw.activexShdocvwInts.`27`
+import typings.activexShdocvw.activexShdocvwInts.`28`
+import typings.activexShdocvw.activexShdocvwInts.`29`
+import typings.activexShdocvw.activexShdocvwInts.`2`
+import typings.activexShdocvw.activexShdocvwInts.`30`
+import typings.activexShdocvw.activexShdocvwInts.`31`
+import typings.activexShdocvw.activexShdocvwInts.`32`
+import typings.activexShdocvw.activexShdocvwInts.`33`
+import typings.activexShdocvw.activexShdocvwInts.`34`
+import typings.activexShdocvw.activexShdocvwInts.`35`
+import typings.activexShdocvw.activexShdocvwInts.`36`
+import typings.activexShdocvw.activexShdocvwInts.`37`
+import typings.activexShdocvw.activexShdocvwInts.`38`
+import typings.activexShdocvw.activexShdocvwInts.`39`
+import typings.activexShdocvw.activexShdocvwInts.`3`
+import typings.activexShdocvw.activexShdocvwInts.`40`
+import typings.activexShdocvw.activexShdocvwInts.`41`
+import typings.activexShdocvw.activexShdocvwInts.`42`
+import typings.activexShdocvw.activexShdocvwInts.`43`
+import typings.activexShdocvw.activexShdocvwInts.`44`
+import typings.activexShdocvw.activexShdocvwInts.`45`
+import typings.activexShdocvw.activexShdocvwInts.`46`
+import typings.activexShdocvw.activexShdocvwInts.`47`
+import typings.activexShdocvw.activexShdocvwInts.`48`
+import typings.activexShdocvw.activexShdocvwInts.`49`
+import typings.activexShdocvw.activexShdocvwInts.`4`
+import typings.activexShdocvw.activexShdocvwInts.`50`
+import typings.activexShdocvw.activexShdocvwInts.`51`
+import typings.activexShdocvw.activexShdocvwInts.`52`
+import typings.activexShdocvw.activexShdocvwInts.`55`
+import typings.activexShdocvw.activexShdocvwInts.`56`
+import typings.activexShdocvw.activexShdocvwInts.`57`
+import typings.activexShdocvw.activexShdocvwInts.`58`
+import typings.activexShdocvw.activexShdocvwInts.`59`
+import typings.activexShdocvw.activexShdocvwInts.`5`
+import typings.activexShdocvw.activexShdocvwInts.`60`
+import typings.activexShdocvw.activexShdocvwInts.`61`
+import typings.activexShdocvw.activexShdocvwInts.`62`
+import typings.activexShdocvw.activexShdocvwInts.`63`
+import typings.activexShdocvw.activexShdocvwInts.`64`
+import typings.activexShdocvw.activexShdocvwInts.`65`
+import typings.activexShdocvw.activexShdocvwInts.`66`
+import typings.activexShdocvw.activexShdocvwInts.`67`
+import typings.activexShdocvw.activexShdocvwInts.`68`
+import typings.activexShdocvw.activexShdocvwInts.`69`
+import typings.activexShdocvw.activexShdocvwInts.`6`
+import typings.activexShdocvw.activexShdocvwInts.`70`
+import typings.activexShdocvw.activexShdocvwInts.`71`
+import typings.activexShdocvw.activexShdocvwInts.`72`
+import typings.activexShdocvw.activexShdocvwInts.`73`
+import typings.activexShdocvw.activexShdocvwInts.`74`
+import typings.activexShdocvw.activexShdocvwInts.`75`
+import typings.activexShdocvw.activexShdocvwInts.`76`
+import typings.activexShdocvw.activexShdocvwInts.`77`
+import typings.activexShdocvw.activexShdocvwInts.`78`
+import typings.activexShdocvw.activexShdocvwInts.`79`
+import typings.activexShdocvw.activexShdocvwInts.`7`
+import typings.activexShdocvw.activexShdocvwInts.`80`
+import typings.activexShdocvw.activexShdocvwInts.`81`
+import typings.activexShdocvw.activexShdocvwInts.`82`
+import typings.activexShdocvw.activexShdocvwInts.`83`
+import typings.activexShdocvw.activexShdocvwInts.`84`
+import typings.activexShdocvw.activexShdocvwInts.`85`
+import typings.activexShdocvw.activexShdocvwInts.`8`
+import typings.activexShdocvw.activexShdocvwInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typings.activexShdocvw.activexShdocvwNumbers.`66`
-  - typings.activexShdocvw.activexShdocvwNumbers.`60`
-  - typings.activexShdocvw.activexShdocvwNumbers.`46`
-  - typings.activexShdocvw.activexShdocvwNumbers.`18`
-  - typings.activexShdocvw.activexShdocvwNumbers.`45`
-  - typings.activexShdocvw.activexShdocvwNumbers.`12`
-  - typings.activexShdocvw.activexShdocvwNumbers.`11`
-  - typings.activexShdocvw.activexShdocvwNumbers.`33`
-  - typings.activexShdocvw.activexShdocvwNumbers.`47`
-  - typings.activexShdocvw.activexShdocvwNumbers.`36`
-  - typings.activexShdocvw.activexShdocvwNumbers.`77`
-  - typings.activexShdocvw.activexShdocvwNumbers.`81`
-  - typings.activexShdocvw.activexShdocvwNumbers.`32`
-  - typings.activexShdocvw.activexShdocvwNumbers.`57`
-  - typings.activexShdocvw.activexShdocvwNumbers.`58`
-  - typings.activexShdocvw.activexShdocvwNumbers.`52`
-  - typings.activexShdocvw.activexShdocvwNumbers.`75`
-  - typings.activexShdocvw.activexShdocvwNumbers.`20`
-  - typings.activexShdocvw.activexShdocvwNumbers.`24`
-  - typings.activexShdocvw.activexShdocvwNumbers.`34`
-  - typings.activexShdocvw.activexShdocvwNumbers.`35`
-  - typings.activexShdocvw.activexShdocvwNumbers.`71`
-  - typings.activexShdocvw.activexShdocvwNumbers.`78`
-  - typings.activexShdocvw.activexShdocvwNumbers.`2`
-  - typings.activexShdocvw.activexShdocvwNumbers.`83`
-  - typings.activexShdocvw.activexShdocvwNumbers.`31`
-  - typings.activexShdocvw.activexShdocvwNumbers.`37`
-  - typings.activexShdocvw.activexShdocvwNumbers.`1`
-  - typings.activexShdocvw.activexShdocvwNumbers.`64`
-  - typings.activexShdocvw.activexShdocvwNumbers.`63`
-  - typings.activexShdocvw.activexShdocvwNumbers.`55`
-  - typings.activexShdocvw.activexShdocvwNumbers.`56`
-  - typings.activexShdocvw.activexShdocvwNumbers.`74`
-  - typings.activexShdocvw.activexShdocvwNumbers.`8`
-  - typings.activexShdocvw.activexShdocvwNumbers.`13`
-  - typings.activexShdocvw.activexShdocvwNumbers.`14`
-  - typings.activexShdocvw.activexShdocvwNumbers.`69`
-  - typings.activexShdocvw.activexShdocvwNumbers.`39`
-  - typings.activexShdocvw.activexShdocvwNumbers.`6`
-  - typings.activexShdocvw.activexShdocvwNumbers.`49`
-  - typings.activexShdocvw.activexShdocvwNumbers.`7`
-  - typings.activexShdocvw.activexShdocvwNumbers.`50`
-  - typings.activexShdocvw.activexShdocvwNumbers.`10`
-  - typings.activexShdocvw.activexShdocvwNumbers.`38`
-  - typings.activexShdocvw.activexShdocvwNumbers.`16`
-  - typings.activexShdocvw.activexShdocvwNumbers.`22`
-  - typings.activexShdocvw.activexShdocvwNumbers.`3`
-  - typings.activexShdocvw.activexShdocvwNumbers.`4`
-  - typings.activexShdocvw.activexShdocvwNumbers.`5`
-  - typings.activexShdocvw.activexShdocvwNumbers.`82`
-  - typings.activexShdocvw.activexShdocvwNumbers.`17`
-  - typings.activexShdocvw.activexShdocvwNumbers.`80`
-  - typings.activexShdocvw.activexShdocvwNumbers.`29`
-  - typings.activexShdocvw.activexShdocvwNumbers.`79`
-  - typings.activexShdocvw.activexShdocvwNumbers.`51`
-  - typings.activexShdocvw.activexShdocvwNumbers.`25`
-  - typings.activexShdocvw.activexShdocvwNumbers.`26`
-  - typings.activexShdocvw.activexShdocvwNumbers.`27`
-  - typings.activexShdocvw.activexShdocvwNumbers.`28`
-  - typings.activexShdocvw.activexShdocvwNumbers.`42`
-  - typings.activexShdocvw.activexShdocvwNumbers.`41`
-  - typings.activexShdocvw.activexShdocvwNumbers.`84`
-  - typings.activexShdocvw.activexShdocvwNumbers.`59`
-  - typings.activexShdocvw.activexShdocvwNumbers.`43`
-  - typings.activexShdocvw.activexShdocvwNumbers.`44`
-  - typings.activexShdocvw.activexShdocvwNumbers.`40`
-  - typings.activexShdocvw.activexShdocvwNumbers.`68`
-  - typings.activexShdocvw.activexShdocvwNumbers.`85`
-  - typings.activexShdocvw.activexShdocvwNumbers.`9`
-  - typings.activexShdocvw.activexShdocvwNumbers.`23`
-  - typings.activexShdocvw.activexShdocvwNumbers.`30`
-  - typings.activexShdocvw.activexShdocvwNumbers.`15`
-  - typings.activexShdocvw.activexShdocvwNumbers.`76`
-  - typings.activexShdocvw.activexShdocvwNumbers.`62`
-  - typings.activexShdocvw.activexShdocvwNumbers.`21`
-  - typings.activexShdocvw.activexShdocvwNumbers.`48`
-  - typings.activexShdocvw.activexShdocvwNumbers.`61`
-  - typings.activexShdocvw.activexShdocvwNumbers.`67`
-  - typings.activexShdocvw.activexShdocvwNumbers.`73`
-  - typings.activexShdocvw.activexShdocvwNumbers.`70`
-  - typings.activexShdocvw.activexShdocvwNumbers.`72`
-  - typings.activexShdocvw.activexShdocvwNumbers.`65`
-  - typings.activexShdocvw.activexShdocvwNumbers.`19`
+  - typings.activexShdocvw.activexShdocvwInts.`66`
+  - typings.activexShdocvw.activexShdocvwInts.`60`
+  - typings.activexShdocvw.activexShdocvwInts.`46`
+  - typings.activexShdocvw.activexShdocvwInts.`18`
+  - typings.activexShdocvw.activexShdocvwInts.`45`
+  - typings.activexShdocvw.activexShdocvwInts.`12`
+  - typings.activexShdocvw.activexShdocvwInts.`11`
+  - typings.activexShdocvw.activexShdocvwInts.`33`
+  - typings.activexShdocvw.activexShdocvwInts.`47`
+  - typings.activexShdocvw.activexShdocvwInts.`36`
+  - typings.activexShdocvw.activexShdocvwInts.`77`
+  - typings.activexShdocvw.activexShdocvwInts.`81`
+  - typings.activexShdocvw.activexShdocvwInts.`32`
+  - typings.activexShdocvw.activexShdocvwInts.`57`
+  - typings.activexShdocvw.activexShdocvwInts.`58`
+  - typings.activexShdocvw.activexShdocvwInts.`52`
+  - typings.activexShdocvw.activexShdocvwInts.`75`
+  - typings.activexShdocvw.activexShdocvwInts.`20`
+  - typings.activexShdocvw.activexShdocvwInts.`24`
+  - typings.activexShdocvw.activexShdocvwInts.`34`
+  - typings.activexShdocvw.activexShdocvwInts.`35`
+  - typings.activexShdocvw.activexShdocvwInts.`71`
+  - typings.activexShdocvw.activexShdocvwInts.`78`
+  - typings.activexShdocvw.activexShdocvwInts.`2`
+  - typings.activexShdocvw.activexShdocvwInts.`83`
+  - typings.activexShdocvw.activexShdocvwInts.`31`
+  - typings.activexShdocvw.activexShdocvwInts.`37`
+  - typings.activexShdocvw.activexShdocvwInts.`1`
+  - typings.activexShdocvw.activexShdocvwInts.`64`
+  - typings.activexShdocvw.activexShdocvwInts.`63`
+  - typings.activexShdocvw.activexShdocvwInts.`55`
+  - typings.activexShdocvw.activexShdocvwInts.`56`
+  - typings.activexShdocvw.activexShdocvwInts.`74`
+  - typings.activexShdocvw.activexShdocvwInts.`8`
+  - typings.activexShdocvw.activexShdocvwInts.`13`
+  - typings.activexShdocvw.activexShdocvwInts.`14`
+  - typings.activexShdocvw.activexShdocvwInts.`69`
+  - typings.activexShdocvw.activexShdocvwInts.`39`
+  - typings.activexShdocvw.activexShdocvwInts.`6`
+  - typings.activexShdocvw.activexShdocvwInts.`49`
+  - typings.activexShdocvw.activexShdocvwInts.`7`
+  - typings.activexShdocvw.activexShdocvwInts.`50`
+  - typings.activexShdocvw.activexShdocvwInts.`10`
+  - typings.activexShdocvw.activexShdocvwInts.`38`
+  - typings.activexShdocvw.activexShdocvwInts.`16`
+  - typings.activexShdocvw.activexShdocvwInts.`22`
+  - typings.activexShdocvw.activexShdocvwInts.`3`
+  - typings.activexShdocvw.activexShdocvwInts.`4`
+  - typings.activexShdocvw.activexShdocvwInts.`5`
+  - typings.activexShdocvw.activexShdocvwInts.`82`
+  - typings.activexShdocvw.activexShdocvwInts.`17`
+  - typings.activexShdocvw.activexShdocvwInts.`80`
+  - typings.activexShdocvw.activexShdocvwInts.`29`
+  - typings.activexShdocvw.activexShdocvwInts.`79`
+  - typings.activexShdocvw.activexShdocvwInts.`51`
+  - typings.activexShdocvw.activexShdocvwInts.`25`
+  - typings.activexShdocvw.activexShdocvwInts.`26`
+  - typings.activexShdocvw.activexShdocvwInts.`27`
+  - typings.activexShdocvw.activexShdocvwInts.`28`
+  - typings.activexShdocvw.activexShdocvwInts.`42`
+  - typings.activexShdocvw.activexShdocvwInts.`41`
+  - typings.activexShdocvw.activexShdocvwInts.`84`
+  - typings.activexShdocvw.activexShdocvwInts.`59`
+  - typings.activexShdocvw.activexShdocvwInts.`43`
+  - typings.activexShdocvw.activexShdocvwInts.`44`
+  - typings.activexShdocvw.activexShdocvwInts.`40`
+  - typings.activexShdocvw.activexShdocvwInts.`68`
+  - typings.activexShdocvw.activexShdocvwInts.`85`
+  - typings.activexShdocvw.activexShdocvwInts.`9`
+  - typings.activexShdocvw.activexShdocvwInts.`23`
+  - typings.activexShdocvw.activexShdocvwInts.`30`
+  - typings.activexShdocvw.activexShdocvwInts.`15`
+  - typings.activexShdocvw.activexShdocvwInts.`76`
+  - typings.activexShdocvw.activexShdocvwInts.`62`
+  - typings.activexShdocvw.activexShdocvwInts.`21`
+  - typings.activexShdocvw.activexShdocvwInts.`48`
+  - typings.activexShdocvw.activexShdocvwInts.`61`
+  - typings.activexShdocvw.activexShdocvwInts.`67`
+  - typings.activexShdocvw.activexShdocvwInts.`73`
+  - typings.activexShdocvw.activexShdocvwInts.`70`
+  - typings.activexShdocvw.activexShdocvwInts.`72`
+  - typings.activexShdocvw.activexShdocvwInts.`65`
+  - typings.activexShdocvw.activexShdocvwInts.`19`
 */
 trait OLECMDID extends StObject
 object OLECMDID {

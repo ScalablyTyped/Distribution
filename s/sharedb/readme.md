@@ -1,7 +1,7 @@
 
 # Scala.js typings for sharedb
 
-Typings are for version 3.0
+Typings are for version 3.2
 
 ## Library description:
 JSON OT database backend

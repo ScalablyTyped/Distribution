@@ -3,7 +3,6 @@ package typings.structuredHeaders
 import typings.std.Error
 import typings.structuredHeaders.typesMod.Dictionary
 import typings.structuredHeaders.typesMod.Item
-import typings.structuredHeaders.typesMod.List
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object parserMod {
   
   inline def parseItem(input: String): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("parseItem")(input.asInstanceOf[js.Any]).asInstanceOf[Item]
   
-  inline def parseList(input: String): List = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(input.asInstanceOf[js.Any]).asInstanceOf[List]
+  inline def parseList(input: String): typings.structuredHeaders.typesMod.List = ^.asInstanceOf[js.Dynamic].applyDynamic("parseList")(input.asInstanceOf[js.Any]).asInstanceOf[typings.structuredHeaders.typesMod.List]
   
   @js.native
   trait Parser extends StObject {
@@ -84,7 +83,7 @@ object parserMod {
     
     /* private */ var parseKey: Any = js.native
     
-    def parseList(): List = js.native
+    def parseList(): typings.structuredHeaders.typesMod.List = js.native
     
     /* private */ var parseParameters: Any = js.native
     

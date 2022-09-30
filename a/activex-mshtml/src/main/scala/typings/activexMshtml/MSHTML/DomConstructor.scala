@@ -1,228 +1,228 @@
 package typings.activexMshtml.MSHTML
 
-import typings.activexMshtml.activexMshtmlNumbers.`0`
-import typings.activexMshtml.activexMshtmlNumbers.`100`
-import typings.activexMshtml.activexMshtmlNumbers.`101`
-import typings.activexMshtml.activexMshtmlNumbers.`102`
-import typings.activexMshtml.activexMshtmlNumbers.`103`
-import typings.activexMshtml.activexMshtmlNumbers.`104`
-import typings.activexMshtml.activexMshtmlNumbers.`105`
-import typings.activexMshtml.activexMshtmlNumbers.`106`
-import typings.activexMshtml.activexMshtmlNumbers.`107`
-import typings.activexMshtml.activexMshtmlNumbers.`10`
-import typings.activexMshtml.activexMshtmlNumbers.`11`
-import typings.activexMshtml.activexMshtmlNumbers.`12`
-import typings.activexMshtml.activexMshtmlNumbers.`13`
-import typings.activexMshtml.activexMshtmlNumbers.`14`
-import typings.activexMshtml.activexMshtmlNumbers.`15`
-import typings.activexMshtml.activexMshtmlNumbers.`16`
-import typings.activexMshtml.activexMshtmlNumbers.`17`
-import typings.activexMshtml.activexMshtmlNumbers.`18`
-import typings.activexMshtml.activexMshtmlNumbers.`19`
-import typings.activexMshtml.activexMshtmlNumbers.`1`
-import typings.activexMshtml.activexMshtmlNumbers.`20`
-import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typings.activexMshtml.activexMshtmlNumbers.`21`
-import typings.activexMshtml.activexMshtmlNumbers.`22`
-import typings.activexMshtml.activexMshtmlNumbers.`23`
-import typings.activexMshtml.activexMshtmlNumbers.`24`
-import typings.activexMshtml.activexMshtmlNumbers.`25`
-import typings.activexMshtml.activexMshtmlNumbers.`26`
-import typings.activexMshtml.activexMshtmlNumbers.`27`
-import typings.activexMshtml.activexMshtmlNumbers.`28`
-import typings.activexMshtml.activexMshtmlNumbers.`29`
-import typings.activexMshtml.activexMshtmlNumbers.`2`
-import typings.activexMshtml.activexMshtmlNumbers.`30`
-import typings.activexMshtml.activexMshtmlNumbers.`31`
-import typings.activexMshtml.activexMshtmlNumbers.`32`
-import typings.activexMshtml.activexMshtmlNumbers.`33`
-import typings.activexMshtml.activexMshtmlNumbers.`34`
-import typings.activexMshtml.activexMshtmlNumbers.`35`
-import typings.activexMshtml.activexMshtmlNumbers.`36`
-import typings.activexMshtml.activexMshtmlNumbers.`37`
-import typings.activexMshtml.activexMshtmlNumbers.`38`
-import typings.activexMshtml.activexMshtmlNumbers.`39`
-import typings.activexMshtml.activexMshtmlNumbers.`3`
-import typings.activexMshtml.activexMshtmlNumbers.`40`
-import typings.activexMshtml.activexMshtmlNumbers.`41`
-import typings.activexMshtml.activexMshtmlNumbers.`42`
-import typings.activexMshtml.activexMshtmlNumbers.`43`
-import typings.activexMshtml.activexMshtmlNumbers.`44`
-import typings.activexMshtml.activexMshtmlNumbers.`45`
-import typings.activexMshtml.activexMshtmlNumbers.`46`
-import typings.activexMshtml.activexMshtmlNumbers.`47`
-import typings.activexMshtml.activexMshtmlNumbers.`48`
-import typings.activexMshtml.activexMshtmlNumbers.`49`
-import typings.activexMshtml.activexMshtmlNumbers.`4`
-import typings.activexMshtml.activexMshtmlNumbers.`50`
-import typings.activexMshtml.activexMshtmlNumbers.`51`
-import typings.activexMshtml.activexMshtmlNumbers.`52`
-import typings.activexMshtml.activexMshtmlNumbers.`53`
-import typings.activexMshtml.activexMshtmlNumbers.`54`
-import typings.activexMshtml.activexMshtmlNumbers.`55`
-import typings.activexMshtml.activexMshtmlNumbers.`56`
-import typings.activexMshtml.activexMshtmlNumbers.`57`
-import typings.activexMshtml.activexMshtmlNumbers.`58`
-import typings.activexMshtml.activexMshtmlNumbers.`59`
-import typings.activexMshtml.activexMshtmlNumbers.`5`
-import typings.activexMshtml.activexMshtmlNumbers.`60`
-import typings.activexMshtml.activexMshtmlNumbers.`61`
-import typings.activexMshtml.activexMshtmlNumbers.`62`
-import typings.activexMshtml.activexMshtmlNumbers.`63`
-import typings.activexMshtml.activexMshtmlNumbers.`64`
-import typings.activexMshtml.activexMshtmlNumbers.`65`
-import typings.activexMshtml.activexMshtmlNumbers.`66`
-import typings.activexMshtml.activexMshtmlNumbers.`67`
-import typings.activexMshtml.activexMshtmlNumbers.`68`
-import typings.activexMshtml.activexMshtmlNumbers.`69`
-import typings.activexMshtml.activexMshtmlNumbers.`6`
-import typings.activexMshtml.activexMshtmlNumbers.`70`
-import typings.activexMshtml.activexMshtmlNumbers.`71`
-import typings.activexMshtml.activexMshtmlNumbers.`72`
-import typings.activexMshtml.activexMshtmlNumbers.`73`
-import typings.activexMshtml.activexMshtmlNumbers.`74`
-import typings.activexMshtml.activexMshtmlNumbers.`75`
-import typings.activexMshtml.activexMshtmlNumbers.`76`
-import typings.activexMshtml.activexMshtmlNumbers.`77`
-import typings.activexMshtml.activexMshtmlNumbers.`78`
-import typings.activexMshtml.activexMshtmlNumbers.`79`
-import typings.activexMshtml.activexMshtmlNumbers.`7`
-import typings.activexMshtml.activexMshtmlNumbers.`80`
-import typings.activexMshtml.activexMshtmlNumbers.`81`
-import typings.activexMshtml.activexMshtmlNumbers.`82`
-import typings.activexMshtml.activexMshtmlNumbers.`83`
-import typings.activexMshtml.activexMshtmlNumbers.`84`
-import typings.activexMshtml.activexMshtmlNumbers.`85`
-import typings.activexMshtml.activexMshtmlNumbers.`86`
-import typings.activexMshtml.activexMshtmlNumbers.`87`
-import typings.activexMshtml.activexMshtmlNumbers.`88`
-import typings.activexMshtml.activexMshtmlNumbers.`89`
-import typings.activexMshtml.activexMshtmlNumbers.`8`
-import typings.activexMshtml.activexMshtmlNumbers.`90`
-import typings.activexMshtml.activexMshtmlNumbers.`91`
-import typings.activexMshtml.activexMshtmlNumbers.`92`
-import typings.activexMshtml.activexMshtmlNumbers.`93`
-import typings.activexMshtml.activexMshtmlNumbers.`94`
-import typings.activexMshtml.activexMshtmlNumbers.`95`
-import typings.activexMshtml.activexMshtmlNumbers.`96`
-import typings.activexMshtml.activexMshtmlNumbers.`97`
-import typings.activexMshtml.activexMshtmlNumbers.`98`
-import typings.activexMshtml.activexMshtmlNumbers.`99`
-import typings.activexMshtml.activexMshtmlNumbers.`9`
+import typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typings.activexMshtml.activexMshtmlInts.`0`
+import typings.activexMshtml.activexMshtmlInts.`100`
+import typings.activexMshtml.activexMshtmlInts.`101`
+import typings.activexMshtml.activexMshtmlInts.`102`
+import typings.activexMshtml.activexMshtmlInts.`103`
+import typings.activexMshtml.activexMshtmlInts.`104`
+import typings.activexMshtml.activexMshtmlInts.`105`
+import typings.activexMshtml.activexMshtmlInts.`106`
+import typings.activexMshtml.activexMshtmlInts.`107`
+import typings.activexMshtml.activexMshtmlInts.`10`
+import typings.activexMshtml.activexMshtmlInts.`11`
+import typings.activexMshtml.activexMshtmlInts.`12`
+import typings.activexMshtml.activexMshtmlInts.`13`
+import typings.activexMshtml.activexMshtmlInts.`14`
+import typings.activexMshtml.activexMshtmlInts.`15`
+import typings.activexMshtml.activexMshtmlInts.`16`
+import typings.activexMshtml.activexMshtmlInts.`17`
+import typings.activexMshtml.activexMshtmlInts.`18`
+import typings.activexMshtml.activexMshtmlInts.`19`
+import typings.activexMshtml.activexMshtmlInts.`1`
+import typings.activexMshtml.activexMshtmlInts.`20`
+import typings.activexMshtml.activexMshtmlInts.`21`
+import typings.activexMshtml.activexMshtmlInts.`22`
+import typings.activexMshtml.activexMshtmlInts.`23`
+import typings.activexMshtml.activexMshtmlInts.`24`
+import typings.activexMshtml.activexMshtmlInts.`25`
+import typings.activexMshtml.activexMshtmlInts.`26`
+import typings.activexMshtml.activexMshtmlInts.`27`
+import typings.activexMshtml.activexMshtmlInts.`28`
+import typings.activexMshtml.activexMshtmlInts.`29`
+import typings.activexMshtml.activexMshtmlInts.`2`
+import typings.activexMshtml.activexMshtmlInts.`30`
+import typings.activexMshtml.activexMshtmlInts.`31`
+import typings.activexMshtml.activexMshtmlInts.`32`
+import typings.activexMshtml.activexMshtmlInts.`33`
+import typings.activexMshtml.activexMshtmlInts.`34`
+import typings.activexMshtml.activexMshtmlInts.`35`
+import typings.activexMshtml.activexMshtmlInts.`36`
+import typings.activexMshtml.activexMshtmlInts.`37`
+import typings.activexMshtml.activexMshtmlInts.`38`
+import typings.activexMshtml.activexMshtmlInts.`39`
+import typings.activexMshtml.activexMshtmlInts.`3`
+import typings.activexMshtml.activexMshtmlInts.`40`
+import typings.activexMshtml.activexMshtmlInts.`41`
+import typings.activexMshtml.activexMshtmlInts.`42`
+import typings.activexMshtml.activexMshtmlInts.`43`
+import typings.activexMshtml.activexMshtmlInts.`44`
+import typings.activexMshtml.activexMshtmlInts.`45`
+import typings.activexMshtml.activexMshtmlInts.`46`
+import typings.activexMshtml.activexMshtmlInts.`47`
+import typings.activexMshtml.activexMshtmlInts.`48`
+import typings.activexMshtml.activexMshtmlInts.`49`
+import typings.activexMshtml.activexMshtmlInts.`4`
+import typings.activexMshtml.activexMshtmlInts.`50`
+import typings.activexMshtml.activexMshtmlInts.`51`
+import typings.activexMshtml.activexMshtmlInts.`52`
+import typings.activexMshtml.activexMshtmlInts.`53`
+import typings.activexMshtml.activexMshtmlInts.`54`
+import typings.activexMshtml.activexMshtmlInts.`55`
+import typings.activexMshtml.activexMshtmlInts.`56`
+import typings.activexMshtml.activexMshtmlInts.`57`
+import typings.activexMshtml.activexMshtmlInts.`58`
+import typings.activexMshtml.activexMshtmlInts.`59`
+import typings.activexMshtml.activexMshtmlInts.`5`
+import typings.activexMshtml.activexMshtmlInts.`60`
+import typings.activexMshtml.activexMshtmlInts.`61`
+import typings.activexMshtml.activexMshtmlInts.`62`
+import typings.activexMshtml.activexMshtmlInts.`63`
+import typings.activexMshtml.activexMshtmlInts.`64`
+import typings.activexMshtml.activexMshtmlInts.`65`
+import typings.activexMshtml.activexMshtmlInts.`66`
+import typings.activexMshtml.activexMshtmlInts.`67`
+import typings.activexMshtml.activexMshtmlInts.`68`
+import typings.activexMshtml.activexMshtmlInts.`69`
+import typings.activexMshtml.activexMshtmlInts.`6`
+import typings.activexMshtml.activexMshtmlInts.`70`
+import typings.activexMshtml.activexMshtmlInts.`71`
+import typings.activexMshtml.activexMshtmlInts.`72`
+import typings.activexMshtml.activexMshtmlInts.`73`
+import typings.activexMshtml.activexMshtmlInts.`74`
+import typings.activexMshtml.activexMshtmlInts.`75`
+import typings.activexMshtml.activexMshtmlInts.`76`
+import typings.activexMshtml.activexMshtmlInts.`77`
+import typings.activexMshtml.activexMshtmlInts.`78`
+import typings.activexMshtml.activexMshtmlInts.`79`
+import typings.activexMshtml.activexMshtmlInts.`7`
+import typings.activexMshtml.activexMshtmlInts.`80`
+import typings.activexMshtml.activexMshtmlInts.`81`
+import typings.activexMshtml.activexMshtmlInts.`82`
+import typings.activexMshtml.activexMshtmlInts.`83`
+import typings.activexMshtml.activexMshtmlInts.`84`
+import typings.activexMshtml.activexMshtmlInts.`85`
+import typings.activexMshtml.activexMshtmlInts.`86`
+import typings.activexMshtml.activexMshtmlInts.`87`
+import typings.activexMshtml.activexMshtmlInts.`88`
+import typings.activexMshtml.activexMshtmlInts.`89`
+import typings.activexMshtml.activexMshtmlInts.`8`
+import typings.activexMshtml.activexMshtmlInts.`90`
+import typings.activexMshtml.activexMshtmlInts.`91`
+import typings.activexMshtml.activexMshtmlInts.`92`
+import typings.activexMshtml.activexMshtmlInts.`93`
+import typings.activexMshtml.activexMshtmlInts.`94`
+import typings.activexMshtml.activexMshtmlInts.`95`
+import typings.activexMshtml.activexMshtmlInts.`96`
+import typings.activexMshtml.activexMshtmlInts.`97`
+import typings.activexMshtml.activexMshtmlInts.`98`
+import typings.activexMshtml.activexMshtmlInts.`99`
+import typings.activexMshtml.activexMshtmlInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typings.activexMshtml.activexMshtmlNumbers.`1`
-  - typings.activexMshtml.activexMshtmlNumbers.`2`
-  - typings.activexMshtml.activexMshtmlNumbers.`3`
-  - typings.activexMshtml.activexMshtmlNumbers.`4`
-  - typings.activexMshtml.activexMshtmlNumbers.`5`
-  - typings.activexMshtml.activexMshtmlNumbers.`6`
-  - typings.activexMshtml.activexMshtmlNumbers.`7`
-  - typings.activexMshtml.activexMshtmlNumbers.`8`
-  - typings.activexMshtml.activexMshtmlNumbers.`9`
-  - typings.activexMshtml.activexMshtmlNumbers.`10`
-  - typings.activexMshtml.activexMshtmlNumbers.`11`
-  - typings.activexMshtml.activexMshtmlNumbers.`12`
-  - typings.activexMshtml.activexMshtmlNumbers.`13`
-  - typings.activexMshtml.activexMshtmlNumbers.`14`
-  - typings.activexMshtml.activexMshtmlNumbers.`15`
-  - typings.activexMshtml.activexMshtmlNumbers.`16`
-  - typings.activexMshtml.activexMshtmlNumbers.`17`
-  - typings.activexMshtml.activexMshtmlNumbers.`18`
-  - typings.activexMshtml.activexMshtmlNumbers.`19`
-  - typings.activexMshtml.activexMshtmlNumbers.`20`
-  - typings.activexMshtml.activexMshtmlNumbers.`21`
-  - typings.activexMshtml.activexMshtmlNumbers.`22`
-  - typings.activexMshtml.activexMshtmlNumbers.`23`
-  - typings.activexMshtml.activexMshtmlNumbers.`24`
-  - typings.activexMshtml.activexMshtmlNumbers.`25`
-  - typings.activexMshtml.activexMshtmlNumbers.`26`
-  - typings.activexMshtml.activexMshtmlNumbers.`27`
-  - typings.activexMshtml.activexMshtmlNumbers.`28`
-  - typings.activexMshtml.activexMshtmlNumbers.`29`
-  - typings.activexMshtml.activexMshtmlNumbers.`30`
-  - typings.activexMshtml.activexMshtmlNumbers.`31`
-  - typings.activexMshtml.activexMshtmlNumbers.`32`
-  - typings.activexMshtml.activexMshtmlNumbers.`34`
-  - typings.activexMshtml.activexMshtmlNumbers.`33`
-  - typings.activexMshtml.activexMshtmlNumbers.`35`
-  - typings.activexMshtml.activexMshtmlNumbers.`36`
-  - typings.activexMshtml.activexMshtmlNumbers.`37`
-  - typings.activexMshtml.activexMshtmlNumbers.`38`
-  - typings.activexMshtml.activexMshtmlNumbers.`39`
-  - typings.activexMshtml.activexMshtmlNumbers.`40`
-  - typings.activexMshtml.activexMshtmlNumbers.`41`
-  - typings.activexMshtml.activexMshtmlNumbers.`42`
-  - typings.activexMshtml.activexMshtmlNumbers.`43`
-  - typings.activexMshtml.activexMshtmlNumbers.`44`
-  - typings.activexMshtml.activexMshtmlNumbers.`45`
-  - typings.activexMshtml.activexMshtmlNumbers.`46`
-  - typings.activexMshtml.activexMshtmlNumbers.`47`
-  - typings.activexMshtml.activexMshtmlNumbers.`48`
-  - typings.activexMshtml.activexMshtmlNumbers.`49`
-  - typings.activexMshtml.activexMshtmlNumbers.`50`
-  - typings.activexMshtml.activexMshtmlNumbers.`51`
-  - typings.activexMshtml.activexMshtmlNumbers.`52`
-  - typings.activexMshtml.activexMshtmlNumbers.`53`
-  - typings.activexMshtml.activexMshtmlNumbers.`54`
-  - typings.activexMshtml.activexMshtmlNumbers.`55`
-  - typings.activexMshtml.activexMshtmlNumbers.`56`
-  - typings.activexMshtml.activexMshtmlNumbers.`57`
-  - typings.activexMshtml.activexMshtmlNumbers.`58`
-  - typings.activexMshtml.activexMshtmlNumbers.`59`
-  - typings.activexMshtml.activexMshtmlNumbers.`60`
-  - typings.activexMshtml.activexMshtmlNumbers.`61`
-  - typings.activexMshtml.activexMshtmlNumbers.`62`
-  - typings.activexMshtml.activexMshtmlNumbers.`63`
-  - typings.activexMshtml.activexMshtmlNumbers.`64`
-  - typings.activexMshtml.activexMshtmlNumbers.`65`
-  - typings.activexMshtml.activexMshtmlNumbers.`66`
-  - typings.activexMshtml.activexMshtmlNumbers.`67`
-  - typings.activexMshtml.activexMshtmlNumbers.`68`
-  - typings.activexMshtml.activexMshtmlNumbers.`69`
-  - typings.activexMshtml.activexMshtmlNumbers.`70`
-  - typings.activexMshtml.activexMshtmlNumbers.`71`
-  - typings.activexMshtml.activexMshtmlNumbers.`72`
-  - typings.activexMshtml.activexMshtmlNumbers.`73`
-  - typings.activexMshtml.activexMshtmlNumbers.`74`
-  - typings.activexMshtml.activexMshtmlNumbers.`75`
-  - typings.activexMshtml.activexMshtmlNumbers.`76`
-  - typings.activexMshtml.activexMshtmlNumbers.`77`
-  - typings.activexMshtml.activexMshtmlNumbers.`78`
-  - typings.activexMshtml.activexMshtmlNumbers.`79`
-  - typings.activexMshtml.activexMshtmlNumbers.`80`
-  - typings.activexMshtml.activexMshtmlNumbers.`81`
-  - typings.activexMshtml.activexMshtmlNumbers.`82`
-  - typings.activexMshtml.activexMshtmlNumbers.`83`
-  - typings.activexMshtml.activexMshtmlNumbers.`84`
-  - typings.activexMshtml.activexMshtmlNumbers.`85`
-  - typings.activexMshtml.activexMshtmlNumbers.`86`
-  - typings.activexMshtml.activexMshtmlNumbers.`87`
-  - typings.activexMshtml.activexMshtmlNumbers.`107`
-  - typings.activexMshtml.activexMshtmlNumbers.`88`
-  - typings.activexMshtml.activexMshtmlNumbers.`89`
-  - typings.activexMshtml.activexMshtmlNumbers.`90`
-  - typings.activexMshtml.activexMshtmlNumbers.`0`
-  - typings.activexMshtml.activexMshtmlNumbers.`91`
-  - typings.activexMshtml.activexMshtmlNumbers.`92`
-  - typings.activexMshtml.activexMshtmlNumbers.`93`
-  - typings.activexMshtml.activexMshtmlNumbers.`94`
-  - typings.activexMshtml.activexMshtmlNumbers.`95`
-  - typings.activexMshtml.activexMshtmlNumbers.`96`
-  - typings.activexMshtml.activexMshtmlNumbers.`97`
-  - typings.activexMshtml.activexMshtmlNumbers.`98`
-  - typings.activexMshtml.activexMshtmlNumbers.`99`
-  - typings.activexMshtml.activexMshtmlNumbers.`100`
-  - typings.activexMshtml.activexMshtmlNumbers.`101`
-  - typings.activexMshtml.activexMshtmlNumbers.`102`
-  - typings.activexMshtml.activexMshtmlNumbers.`103`
-  - typings.activexMshtml.activexMshtmlNumbers.`104`
-  - typings.activexMshtml.activexMshtmlNumbers.`105`
-  - typings.activexMshtml.activexMshtmlNumbers.`106`
+  - typings.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typings.activexMshtml.activexMshtmlInts.`1`
+  - typings.activexMshtml.activexMshtmlInts.`2`
+  - typings.activexMshtml.activexMshtmlInts.`3`
+  - typings.activexMshtml.activexMshtmlInts.`4`
+  - typings.activexMshtml.activexMshtmlInts.`5`
+  - typings.activexMshtml.activexMshtmlInts.`6`
+  - typings.activexMshtml.activexMshtmlInts.`7`
+  - typings.activexMshtml.activexMshtmlInts.`8`
+  - typings.activexMshtml.activexMshtmlInts.`9`
+  - typings.activexMshtml.activexMshtmlInts.`10`
+  - typings.activexMshtml.activexMshtmlInts.`11`
+  - typings.activexMshtml.activexMshtmlInts.`12`
+  - typings.activexMshtml.activexMshtmlInts.`13`
+  - typings.activexMshtml.activexMshtmlInts.`14`
+  - typings.activexMshtml.activexMshtmlInts.`15`
+  - typings.activexMshtml.activexMshtmlInts.`16`
+  - typings.activexMshtml.activexMshtmlInts.`17`
+  - typings.activexMshtml.activexMshtmlInts.`18`
+  - typings.activexMshtml.activexMshtmlInts.`19`
+  - typings.activexMshtml.activexMshtmlInts.`20`
+  - typings.activexMshtml.activexMshtmlInts.`21`
+  - typings.activexMshtml.activexMshtmlInts.`22`
+  - typings.activexMshtml.activexMshtmlInts.`23`
+  - typings.activexMshtml.activexMshtmlInts.`24`
+  - typings.activexMshtml.activexMshtmlInts.`25`
+  - typings.activexMshtml.activexMshtmlInts.`26`
+  - typings.activexMshtml.activexMshtmlInts.`27`
+  - typings.activexMshtml.activexMshtmlInts.`28`
+  - typings.activexMshtml.activexMshtmlInts.`29`
+  - typings.activexMshtml.activexMshtmlInts.`30`
+  - typings.activexMshtml.activexMshtmlInts.`31`
+  - typings.activexMshtml.activexMshtmlInts.`32`
+  - typings.activexMshtml.activexMshtmlInts.`34`
+  - typings.activexMshtml.activexMshtmlInts.`33`
+  - typings.activexMshtml.activexMshtmlInts.`35`
+  - typings.activexMshtml.activexMshtmlInts.`36`
+  - typings.activexMshtml.activexMshtmlInts.`37`
+  - typings.activexMshtml.activexMshtmlInts.`38`
+  - typings.activexMshtml.activexMshtmlInts.`39`
+  - typings.activexMshtml.activexMshtmlInts.`40`
+  - typings.activexMshtml.activexMshtmlInts.`41`
+  - typings.activexMshtml.activexMshtmlInts.`42`
+  - typings.activexMshtml.activexMshtmlInts.`43`
+  - typings.activexMshtml.activexMshtmlInts.`44`
+  - typings.activexMshtml.activexMshtmlInts.`45`
+  - typings.activexMshtml.activexMshtmlInts.`46`
+  - typings.activexMshtml.activexMshtmlInts.`47`
+  - typings.activexMshtml.activexMshtmlInts.`48`
+  - typings.activexMshtml.activexMshtmlInts.`49`
+  - typings.activexMshtml.activexMshtmlInts.`50`
+  - typings.activexMshtml.activexMshtmlInts.`51`
+  - typings.activexMshtml.activexMshtmlInts.`52`
+  - typings.activexMshtml.activexMshtmlInts.`53`
+  - typings.activexMshtml.activexMshtmlInts.`54`
+  - typings.activexMshtml.activexMshtmlInts.`55`
+  - typings.activexMshtml.activexMshtmlInts.`56`
+  - typings.activexMshtml.activexMshtmlInts.`57`
+  - typings.activexMshtml.activexMshtmlInts.`58`
+  - typings.activexMshtml.activexMshtmlInts.`59`
+  - typings.activexMshtml.activexMshtmlInts.`60`
+  - typings.activexMshtml.activexMshtmlInts.`61`
+  - typings.activexMshtml.activexMshtmlInts.`62`
+  - typings.activexMshtml.activexMshtmlInts.`63`
+  - typings.activexMshtml.activexMshtmlInts.`64`
+  - typings.activexMshtml.activexMshtmlInts.`65`
+  - typings.activexMshtml.activexMshtmlInts.`66`
+  - typings.activexMshtml.activexMshtmlInts.`67`
+  - typings.activexMshtml.activexMshtmlInts.`68`
+  - typings.activexMshtml.activexMshtmlInts.`69`
+  - typings.activexMshtml.activexMshtmlInts.`70`
+  - typings.activexMshtml.activexMshtmlInts.`71`
+  - typings.activexMshtml.activexMshtmlInts.`72`
+  - typings.activexMshtml.activexMshtmlInts.`73`
+  - typings.activexMshtml.activexMshtmlInts.`74`
+  - typings.activexMshtml.activexMshtmlInts.`75`
+  - typings.activexMshtml.activexMshtmlInts.`76`
+  - typings.activexMshtml.activexMshtmlInts.`77`
+  - typings.activexMshtml.activexMshtmlInts.`78`
+  - typings.activexMshtml.activexMshtmlInts.`79`
+  - typings.activexMshtml.activexMshtmlInts.`80`
+  - typings.activexMshtml.activexMshtmlInts.`81`
+  - typings.activexMshtml.activexMshtmlInts.`82`
+  - typings.activexMshtml.activexMshtmlInts.`83`
+  - typings.activexMshtml.activexMshtmlInts.`84`
+  - typings.activexMshtml.activexMshtmlInts.`85`
+  - typings.activexMshtml.activexMshtmlInts.`86`
+  - typings.activexMshtml.activexMshtmlInts.`87`
+  - typings.activexMshtml.activexMshtmlInts.`107`
+  - typings.activexMshtml.activexMshtmlInts.`88`
+  - typings.activexMshtml.activexMshtmlInts.`89`
+  - typings.activexMshtml.activexMshtmlInts.`90`
+  - typings.activexMshtml.activexMshtmlInts.`0`
+  - typings.activexMshtml.activexMshtmlInts.`91`
+  - typings.activexMshtml.activexMshtmlInts.`92`
+  - typings.activexMshtml.activexMshtmlInts.`93`
+  - typings.activexMshtml.activexMshtmlInts.`94`
+  - typings.activexMshtml.activexMshtmlInts.`95`
+  - typings.activexMshtml.activexMshtmlInts.`96`
+  - typings.activexMshtml.activexMshtmlInts.`97`
+  - typings.activexMshtml.activexMshtmlInts.`98`
+  - typings.activexMshtml.activexMshtmlInts.`99`
+  - typings.activexMshtml.activexMshtmlInts.`100`
+  - typings.activexMshtml.activexMshtmlInts.`101`
+  - typings.activexMshtml.activexMshtmlInts.`102`
+  - typings.activexMshtml.activexMshtmlInts.`103`
+  - typings.activexMshtml.activexMshtmlInts.`104`
+  - typings.activexMshtml.activexMshtmlInts.`105`
+  - typings.activexMshtml.activexMshtmlInts.`106`
 */
 trait DomConstructor extends StObject
 object DomConstructor {
@@ -443,5 +443,5 @@ object DomConstructor {
   
   inline def DomConstructorXMLHttpRequest: `106` = 106.asInstanceOf[`106`]
   
-  inline def DomConstructor_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def DomConstructor_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }

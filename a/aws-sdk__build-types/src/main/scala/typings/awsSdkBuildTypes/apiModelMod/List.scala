@@ -24,13 +24,13 @@ trait List
 }
 object List {
   
-  inline def apply(member: Member): List = {
+  inline def apply(member: Member): typings.awsSdkBuildTypes.apiModelMod.List = {
     val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("list")
-    __obj.asInstanceOf[List]
+    __obj.asInstanceOf[typings.awsSdkBuildTypes.apiModelMod.List]
   }
   
-  extension [Self <: List](x: Self) {
+  extension [Self <: typings.awsSdkBuildTypes.apiModelMod.List](x: Self) {
     
     inline def setFlattened(value: scala.Boolean): Self = StObject.set(x, "flattened", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,7 @@ trait ArrayValidationChainrunre
     */
   /* standard es5 */
   @JSName("every")
-  def every_S_ValidationChain[S /* <: ValidationChain */](
+  def every_S[S /* <: ValidationChain */](
     predicate: js.Function3[
       /* value */ ValidationChain, 
       /* index */ Double, 
@@ -97,7 +97,7 @@ trait ArrayValidationChainrunre
     ]
   ): /* is std.Array<S> */ Boolean = js.native
   @JSName("every")
-  def every_S_ValidationChain[S /* <: ValidationChain */](
+  def every_S[S /* <: ValidationChain */](
     predicate: js.Function3[
       /* value */ ValidationChain, 
       /* index */ Double, 
@@ -151,7 +151,7 @@ trait ArrayValidationChainrunre
     */
   /* standard es5 */
   @JSName("filter")
-  def filter_S_ValidationChain[S /* <: ValidationChain */](
+  def filter_S[S /* <: ValidationChain */](
     predicate: js.Function3[
       /* value */ ValidationChain, 
       /* index */ Double, 
@@ -160,7 +160,7 @@ trait ArrayValidationChainrunre
     ]
   ): js.Array[S] = js.native
   @JSName("filter")
-  def filter_S_ValidationChain[S /* <: ValidationChain */](
+  def filter_S[S /* <: ValidationChain */](
     predicate: js.Function3[
       /* value */ ValidationChain, 
       /* index */ Double, 

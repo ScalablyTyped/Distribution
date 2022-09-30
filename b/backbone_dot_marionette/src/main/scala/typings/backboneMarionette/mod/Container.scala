@@ -2,7 +2,6 @@ package typings.backboneMarionette.mod
 
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
-import typings.underscore.mod.List
 import typings.underscore.mod.ListIterator
 import typings.underscore.mod.MemoIterator
 import org.scalablytyped.runtime.StObject
@@ -22,14 +21,14 @@ open class Container[TView] () extends StObject {
   /**
     * @see _.all
     */
-  def all(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
-  def all(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): Boolean = js.native
+  def all(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): Boolean = js.native
+  def all(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): Boolean = js.native
   
   /**
     * @see _.any
     */
-  def any(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
-  def any(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): Boolean = js.native
+  def any(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): Boolean = js.native
+  def any(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): Boolean = js.native
   
   /**
     * @see _.contains
@@ -40,32 +39,32 @@ open class Container[TView] () extends StObject {
   /**
     * @see _.detect
     */
-  def detect(iterator: ListIterator[TView, Boolean, List[TView]]): js.UndefOr[Container[TView]] = js.native
-  def detect(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): js.UndefOr[Container[TView]] = js.native
+  def detect(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): js.UndefOr[Container[TView]] = js.native
+  def detect(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): js.UndefOr[Container[TView]] = js.native
   
   /**
     * @see _.each
     */
-  def each(iterator: ListIterator[TView, Unit, List[TView]]): Container[TView] = js.native
-  def each(iterator: ListIterator[TView, Unit, List[TView]], context: Any): Container[TView] = js.native
+  def each(iterator: ListIterator[TView, Unit, typings.underscore.mod.List[TView]]): Container[TView] = js.native
+  def each(iterator: ListIterator[TView, Unit, typings.underscore.mod.List[TView]], context: Any): Container[TView] = js.native
   
   /**
     * @see _.every
     */
-  def every(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
-  def every(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): Boolean = js.native
+  def every(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): Boolean = js.native
+  def every(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): Boolean = js.native
   
   /**
     * @see _.filter
     */
-  def filter(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[TView] = js.native
-  def filter(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): js.Array[TView] = js.native
+  def filter(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): js.Array[TView] = js.native
+  def filter(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): js.Array[TView] = js.native
   
   /**
     * @see _.find
     */
-  def find(iterator: ListIterator[TView, Boolean, List[TView]]): js.UndefOr[Container[TView]] = js.native
-  def find(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): js.UndefOr[Container[TView]] = js.native
+  def find(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): js.UndefOr[Container[TView]] = js.native
+  def find(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): js.UndefOr[Container[TView]] = js.native
   
   /**
     * Find a view by it's cid.
@@ -100,8 +99,8 @@ open class Container[TView] () extends StObject {
   /**
     * @see _.forEach
     */
-  def forEach(iterator: ListIterator[TView, Unit, List[TView]]): Container[TView] = js.native
-  def forEach(iterator: ListIterator[TView, Unit, List[TView]], context: Any): Container[TView] = js.native
+  def forEach(iterator: ListIterator[TView, Unit, typings.underscore.mod.List[TView]]): Container[TView] = js.native
+  def forEach(iterator: ListIterator[TView, Unit, typings.underscore.mod.List[TView]], context: Any): Container[TView] = js.native
   
   /**
     * @see _.include
@@ -133,14 +132,14 @@ open class Container[TView] () extends StObject {
   /**
     * @see _.map
     */
-  def map[TResult](iterator: ListIterator[TView, TResult, List[TView]]): js.Array[TResult] = js.native
-  def map[TResult](iterator: ListIterator[TView, TResult, List[TView]], context: Any): js.Array[TResult] = js.native
+  def map[TResult](iterator: ListIterator[TView, TResult, typings.underscore.mod.List[TView]]): js.Array[TResult] = js.native
+  def map[TResult](iterator: ListIterator[TView, TResult, typings.underscore.mod.List[TView]], context: Any): js.Array[TResult] = js.native
   
   /**
     * @see _.partition
     */
-  def partition(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[js.Array[TView]] = js.native
-  def partition(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): js.Array[js.Array[TView]] = js.native
+  def partition(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): js.Array[js.Array[TView]] = js.native
+  def partition(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): js.Array[js.Array[TView]] = js.native
   
   /**
     * @see _.pluck
@@ -150,16 +149,24 @@ open class Container[TView] () extends StObject {
   /**
     * @see _.reduce
     */
-  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]]): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: TResult): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: TResult, context: Any): TResult = js.native
-  def reduce[TResult](iterator: MemoIterator[TView, TResult, List[TView]], memo: Unit, context: Any): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TView, TResult, typings.underscore.mod.List[TView]]): TResult = js.native
+  def reduce[TResult](iterator: MemoIterator[TView, TResult, typings.underscore.mod.List[TView]], memo: TResult): TResult = js.native
+  def reduce[TResult](
+    iterator: MemoIterator[TView, TResult, typings.underscore.mod.List[TView]],
+    memo: TResult,
+    context: Any
+  ): TResult = js.native
+  def reduce[TResult](
+    iterator: MemoIterator[TView, TResult, typings.underscore.mod.List[TView]],
+    memo: Unit,
+    context: Any
+  ): TResult = js.native
   
   /**
     * @see _.reject
     */
-  def reject(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[TView] = js.native
-  def reject(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): js.Array[TView] = js.native
+  def reject(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): js.Array[TView] = js.native
+  def reject(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): js.Array[TView] = js.native
   
   /**
     * Find a view by it's cid.
@@ -175,14 +182,14 @@ open class Container[TView] () extends StObject {
   /**
     * @see _.select
     */
-  def select(iterator: ListIterator[TView, Boolean, List[TView]]): js.Array[TView] = js.native
-  def select(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): js.Array[TView] = js.native
+  def select(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): js.Array[TView] = js.native
+  def select(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): js.Array[TView] = js.native
   
   /**
     * @see _.some
     */
-  def some(iterator: ListIterator[TView, Boolean, List[TView]]): Boolean = js.native
-  def some(iterator: ListIterator[TView, Boolean, List[TView]], context: Any): Boolean = js.native
+  def some(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]]): Boolean = js.native
+  def some(iterator: ListIterator[TView, Boolean, typings.underscore.mod.List[TView]], context: Any): Boolean = js.native
   
   /**
     * @see _.toArray

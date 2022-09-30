@@ -10,10 +10,10 @@ Helper function to create Redux modules using the ducks-modular-redux proposal.
 | ------------------ | :-------------: |
 | Full name          | redux-duck |
 | Keywords           | redux, duck, module, helper |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 64546 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3567.3333333333335 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/sergiodxa/redux-duck/)

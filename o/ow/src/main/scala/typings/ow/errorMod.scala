@@ -2,19 +2,19 @@ package typings.ow
 
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
   
-  @JSImport("ow/dist/source/predicates/error", "ErrorPredicate")
+  @JSImport("ow/dist/predicates/error", "ErrorPredicate")
   @js.native
   /**
     @hidden
     */
-  class ErrorPredicate () extends Predicate[Error] {
+  open class ErrorPredicate ()
+    extends Predicate[js.Error] {
     def this(options: PredicateOptions) = this()
     
     /**
@@ -33,12 +33,6 @@ object errorMod {
       @param instance - The expected instance type of the error.
       */
     def instanceOf(instance: js.Function): this.type = js.native
-    
-    /**
-      Test an error to have a specific message.
-      @param expected - Expected message of the Error.
-      */
-    def message(expected: String): this.type = js.native
     
     /**
       Test the error message to include a specific message.

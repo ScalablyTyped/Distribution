@@ -19,7 +19,7 @@ trait CustomPropertyLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the key of the custom property. Read only.
+    * Gets the key of the custom property.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -27,7 +27,7 @@ trait CustomPropertyLoadOptions extends StObject {
   var key: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+    * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.
     *
     * @remarks
     * [Api set: WordApi 1.3]

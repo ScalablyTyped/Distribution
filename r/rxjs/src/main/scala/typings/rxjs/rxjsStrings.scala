@@ -14,10 +14,6 @@ object rxjsStrings {
   inline def C: C = "C".asInstanceOf[C]
   
   @js.native
-  sealed trait DollarLeftcurlybracketAjaxDirectionRightcurlybracket_DollarLeftcurlybracketProgressEventTypeRightcurlybracket extends StObject
-  inline def DollarLeftcurlybracketAjaxDirectionRightcurlybracket_DollarLeftcurlybracketProgressEventTypeRightcurlybracket: DollarLeftcurlybracketAjaxDirectionRightcurlybracket_DollarLeftcurlybracketProgressEventTypeRightcurlybracket = "${AjaxDirection}_${ProgressEventType}".asInstanceOf[DollarLeftcurlybracketAjaxDirectionRightcurlybracket_DollarLeftcurlybracketProgressEventTypeRightcurlybracket]
-  
-  @js.native
   sealed trait E extends StObject
   inline def E: E = "E".asInstanceOf[E]
   

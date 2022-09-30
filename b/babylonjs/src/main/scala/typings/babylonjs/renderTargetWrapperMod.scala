@@ -22,37 +22,37 @@ object renderTargetWrapperMod {
       */
     def this(isMulti: Boolean, isCube: Boolean, size: TextureSize, engine: ThinEngine) = this()
     
-    /** @hidden */
+    /** @internal */
     var _attachments: Nullable[js.Array[Double]] = js.native
     
     /* protected */ def _cloneRenderTargetWrapper(): Nullable[RenderTargetWrapper] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _depthStencilTexture: Nullable[InternalTexture] = js.native
     
-    /** @hidden */
+    /** @internal */
     var _depthStencilTextureWithStencil: Boolean = js.native
     
     /* protected */ var _engine: ThinEngine = js.native
     
-    /** @hidden */
+    /** @internal */
     var _generateDepthBuffer: Boolean = js.native
     
-    /** @hidden */
+    /** @internal */
     var _generateStencilBuffer: Boolean = js.native
     
     /* private */ var _isCube: Any = js.native
     
     /* private */ var _isMulti: Any = js.native
     
-    /** @hidden */
+    /** @internal */
     def _rebuild(): Unit = js.native
     
     /* private */ var _samples: Any = js.native
     
     /**
       * Shares the depth buffer of this render target with another render target.
-      * @hidden
+      * @internal
       * @param renderTarget Destination renderTarget
       */
     def _shareDepth(renderTarget: RenderTargetWrapper): Unit = js.native
@@ -60,8 +60,7 @@ object renderTargetWrapperMod {
     /* private */ var _size: Any = js.native
     
     /**
-      * @param target
-      * @hidden
+      * @internal
       */
     def _swapAndDie(target: InternalTexture): Unit = js.native
     

@@ -106,7 +106,7 @@ object distributedProcessMod {
       * @return The parent {@link DistributedSystemArray} object.
       */
     @JSName("getSystemArray")
-    def getSystemArray_SystemArray_DistributedSystemArrayDistributedSystem_SystemArray[SystemArray /* <: DistributedSystemArray[DistributedSystem] */](): SystemArray = js.native
+    def getSystemArray_SystemArray_SystemArray[SystemArray /* <: DistributedSystemArray[DistributedSystem] */](): SystemArray = js.native
     
     /**
       * @hidden

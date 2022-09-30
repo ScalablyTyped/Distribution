@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml", "UnsignedProperties")
+@JSImport("xadesjs/build/types/src/xml", "UnsignedProperties")
 @js.native
-class UnsignedProperties ()
+open class UnsignedProperties ()
   extends typings.xadesjs.unsignedPropertiesMod.UnsignedProperties {
   def this(properties: js.Object) = this()
 }

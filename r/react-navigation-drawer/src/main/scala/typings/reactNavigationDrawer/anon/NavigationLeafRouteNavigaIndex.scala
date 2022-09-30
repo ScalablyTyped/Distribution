@@ -17,7 +17,7 @@ trait NavigationLeafRouteNavigaIndex extends StObject {
     */
   var index: Double
   
-  var isDrawerOpen: js.UndefOr[js.Any] = js.undefined
+  var isDrawerOpen: js.UndefOr[Any] = js.undefined
   
   /**
     * Flag that indicates the transition state of the route
@@ -69,7 +69,7 @@ object NavigationLeafRouteNavigaIndex {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIsDrawerOpen(value: js.Any): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
+    inline def setIsDrawerOpen(value: Any): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
     
     inline def setIsDrawerOpenUndefined: Self = StObject.set(x, "isDrawerOpen", js.undefined)
     
@@ -89,6 +89,6 @@ object NavigationLeafRouteNavigaIndex {
     
     inline def setRoutes(value: js.Array[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "routes", js.Array(value*))
   }
 }

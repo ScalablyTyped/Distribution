@@ -77,6 +77,42 @@ object mod {
         range: js.Tuple2[Double, Double],
         voidTag: typings.nodeHtmlParser.voidTagMod.default
       ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: Null,
+        range: js.Tuple2[Double, Double],
+        voidTag: Unit,
+        _parseOptions: PartialOptions
+      ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: Null,
+        range: js.Tuple2[Double, Double],
+        voidTag: typings.nodeHtmlParser.voidTagMod.default,
+        _parseOptions: PartialOptions
+      ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: typings.nodeHtmlParser.htmlMod.HTMLElement,
+        range: js.Tuple2[Double, Double],
+        voidTag: Unit,
+        _parseOptions: PartialOptions
+      ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: typings.nodeHtmlParser.htmlMod.HTMLElement,
+        range: js.Tuple2[Double, Double],
+        voidTag: typings.nodeHtmlParser.voidTagMod.default,
+        _parseOptions: PartialOptions
+      ) = this()
     }
     
     /* was `typeof imported_node.default` */
@@ -178,6 +214,42 @@ object mod {
       range: js.Tuple2[Double, Double],
       voidTag: typings.nodeHtmlParser.voidTagMod.default
     ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: Null,
+      range: js.Tuple2[Double, Double],
+      voidTag: Unit,
+      _parseOptions: PartialOptions
+    ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: Null,
+      range: js.Tuple2[Double, Double],
+      voidTag: typings.nodeHtmlParser.voidTagMod.default,
+      _parseOptions: PartialOptions
+    ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: typings.nodeHtmlParser.htmlMod.HTMLElement,
+      range: js.Tuple2[Double, Double],
+      voidTag: Unit,
+      _parseOptions: PartialOptions
+    ) = this()
+    def this(
+      tagName: String,
+      keyAttrs: KeyAttributes,
+      rawAttrs: String,
+      parentNode: typings.nodeHtmlParser.htmlMod.HTMLElement,
+      range: js.Tuple2[Double, Double],
+      voidTag: typings.nodeHtmlParser.voidTagMod.default,
+      _parseOptions: PartialOptions
+    ) = this()
   }
   
   @JSImport("node-html-parser", "Node")
@@ -277,6 +349,42 @@ object mod {
         parentNode: typings.nodeHtmlParser.htmlMod.HTMLElement,
         range: js.Tuple2[Double, Double],
         voidTag: typings.nodeHtmlParser.voidTagMod.default
+      ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: Null,
+        range: js.Tuple2[Double, Double],
+        voidTag: Unit,
+        _parseOptions: PartialOptions
+      ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: Null,
+        range: js.Tuple2[Double, Double],
+        voidTag: typings.nodeHtmlParser.voidTagMod.default,
+        _parseOptions: PartialOptions
+      ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: typings.nodeHtmlParser.htmlMod.HTMLElement,
+        range: js.Tuple2[Double, Double],
+        voidTag: Unit,
+        _parseOptions: PartialOptions
+      ) = this()
+      def this(
+        tagName: String,
+        keyAttrs: KeyAttributes,
+        rawAttrs: String,
+        parentNode: typings.nodeHtmlParser.htmlMod.HTMLElement,
+        range: js.Tuple2[Double, Double],
+        voidTag: typings.nodeHtmlParser.voidTagMod.default,
+        _parseOptions: PartialOptions
       ) = this()
     }
     

@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @constructor
   */
-class Builder ()
+open class Builder ()
   extends typings.seleniumWebdriver.mod.Builder

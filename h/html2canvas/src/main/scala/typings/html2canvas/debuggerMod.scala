@@ -1,10 +1,10 @@
 package typings.html2canvas
 
-import typings.html2canvas.html2canvasNumbers.`0`
-import typings.html2canvas.html2canvasNumbers.`1`
-import typings.html2canvas.html2canvasNumbers.`2`
-import typings.html2canvas.html2canvasNumbers.`3`
-import typings.html2canvas.html2canvasNumbers.`4`
+import typings.html2canvas.html2canvasInts.`0`
+import typings.html2canvas.html2canvasInts.`1`
+import typings.html2canvas.html2canvasInts.`2`
+import typings.html2canvas.html2canvasInts.`3`
+import typings.html2canvas.html2canvasInts.`4`
 import typings.std.Element
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -20,11 +20,11 @@ object debuggerMod {
   inline def isDebugging_0(element: Element, `type`: Omit[DebuggerType, `0`]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDebugging")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.html2canvas.html2canvasNumbers.`0`
-    - typings.html2canvas.html2canvasNumbers.`1`
-    - typings.html2canvas.html2canvasNumbers.`2`
-    - typings.html2canvas.html2canvasNumbers.`3`
-    - typings.html2canvas.html2canvasNumbers.`4`
+    - typings.html2canvas.html2canvasInts.`0`
+    - typings.html2canvas.html2canvasInts.`1`
+    - typings.html2canvas.html2canvasInts.`2`
+    - typings.html2canvas.html2canvasInts.`3`
+    - typings.html2canvas.html2canvasInts.`4`
   */
   trait DebuggerType extends StObject
   object DebuggerType {

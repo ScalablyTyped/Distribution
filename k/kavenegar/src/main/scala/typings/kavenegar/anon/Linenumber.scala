@@ -1,7 +1,7 @@
 package typings.kavenegar.anon
 
-import typings.kavenegar.kavenegarNumbers.`0`
-import typings.kavenegar.kavenegarNumbers.`1`
+import typings.kavenegar.kavenegarInts.`0`
+import typings.kavenegar.kavenegarInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

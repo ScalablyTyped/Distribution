@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Subtract")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Subtract")
 @js.native
-class Subtract protected () extends BinaryListOperation {
+open class Subtract protected () extends BinaryListOperation {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -25,7 +25,7 @@ class Subtract protected () extends BinaryListOperation {
 }
 object Subtract {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Subtract")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Subtract")
   @js.native
   val ^ : js.Any = js.native
   
@@ -46,13 +46,13 @@ object Subtract {
   inline def createIn(container: ListOperationAction): Subtract = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Subtract]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Subtract.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Subtract.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Subtract.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Subtract.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

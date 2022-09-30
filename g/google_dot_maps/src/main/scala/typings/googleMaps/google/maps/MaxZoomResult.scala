@@ -14,7 +14,7 @@ trait MaxZoomResult extends StObject {
     * with {@link google.maps.MaxZoomService.getMaxZoomAtLatLng} (it is not
     * defined when using Promises).
     */
-  var status: MaxZoomStatus | Null
+  var status: Null | MaxZoomStatus
   
   /**
     * The maximum zoom level found at the given <code>LatLng</code>.

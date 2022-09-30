@@ -5,6 +5,7 @@ import typings.node.zlibMod.ZlibOptions
 import typings.std.WritableStream
 import typings.tar.mod.FileStat
 import typings.tar.mod.ReadEntry
+import typings.tar.mod.RequiredFileOptions
 import typings.tar.tarBooleans.`false`
 import typings.tar.tarBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -536,107 +537,62 @@ object anon {
     }
   }
   
-  /* Inlined tar.tar.ListOptions & tar.tar.FileOptions & {  sync :true} */
-  trait ListOptionsFileOptionssyn extends StObject {
-    
-    /**
-      * Alias for cwd.
-      */
-    var C: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Extract files relative to the specified directory. Defaults to
-      * process.cwd(). If provided, this must exist and must be a directory.
-      */
-    var cwd: js.UndefOr[String] = js.undefined
+  trait F
+    extends StObject
+       with RequiredFileOptions {
     
     /**
       * Alias for file.
       */
-    var f: js.UndefOr[String] = js.undefined
+    var f: String
+  }
+  object F {
+    
+    inline def apply(f: String): F = {
+      val __obj = js.Dynamic.literal(f = f.asInstanceOf[js.Any])
+      __obj.asInstanceOf[F]
+    }
+    
+    extension [Self <: F](x: Self) {
+      
+      inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait File
+    extends StObject
+       with RequiredFileOptions {
     
     /**
       * Uses the given file as the input or output of this function.
       */
-    var file: js.UndefOr[String] = js.undefined
+    var file: String
+  }
+  object File {
     
-    /**
-      * A function that gets called with (path, stat) for each entry being
-      * added. Return true to emit the entry from the archive, or false to skip it.
-      */
-    var filter: js.UndefOr[js.Function2[/* path */ String, /* entry */ FileStat, Boolean]] = js.undefined
+    inline def apply(file: String): File = {
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+      __obj.asInstanceOf[File]
+    }
     
-    /**
-      * The maximum buffer size for fs.read() operations. Defaults to 16 MB.
-      */
-    var maxReadSize: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * By default, entry streams are resumed immediately after the call to
-      * onentry. Set noResume: true to suppress this behavior. Note that by
-      * opting into this, the stream will never complete until the entry
-      * data is consumed.
-      */
-    var noResume: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * A function that gets called with (entry) for each entry that passes the
-      * filter. This is important for when both file and sync are set, because
-      * it will be called synchronously.
-      */
-    var onentry: js.UndefOr[js.Function1[/* entry */ FileStat, Unit]] = js.undefined
-    
-    /**
-      * Treat warnings as crash-worthy errors. Default false.
-      */
-    var strict: js.UndefOr[Boolean] = js.undefined
+    extension [Self <: File](x: Self) {
+      
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Sync extends StObject {
     
     var sync: `true`
   }
-  object ListOptionsFileOptionssyn {
+  object Sync {
     
-    inline def apply(): ListOptionsFileOptionssyn = {
+    inline def apply(): Sync = {
       val __obj = js.Dynamic.literal(sync = true)
-      __obj.asInstanceOf[ListOptionsFileOptionssyn]
+      __obj.asInstanceOf[Sync]
     }
     
-    extension [Self <: ListOptionsFileOptionssyn](x: Self) {
-      
-      inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
-      
-      inline def setCUndefined: Self = StObject.set(x, "C", js.undefined)
-      
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
-      
-      inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
-      
-      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-      
-      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
-      
-      inline def setFilter(value: (/* path */ String, /* entry */ FileStat) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
-      
-      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
-      
-      inline def setMaxReadSize(value: Double): Self = StObject.set(x, "maxReadSize", value.asInstanceOf[js.Any])
-      
-      inline def setMaxReadSizeUndefined: Self = StObject.set(x, "maxReadSize", js.undefined)
-      
-      inline def setNoResume(value: Boolean): Self = StObject.set(x, "noResume", value.asInstanceOf[js.Any])
-      
-      inline def setNoResumeUndefined: Self = StObject.set(x, "noResume", js.undefined)
-      
-      inline def setOnentry(value: /* entry */ FileStat => Unit): Self = StObject.set(x, "onentry", js.Any.fromFunction1(value))
-      
-      inline def setOnentryUndefined: Self = StObject.set(x, "onentry", js.undefined)
-      
-      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    extension [Self <: Sync](x: Self) {
       
       inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }

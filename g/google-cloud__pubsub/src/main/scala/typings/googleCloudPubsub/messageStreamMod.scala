@@ -1,12 +1,12 @@
 package typings.googleCloudPubsub
 
 import typings.googleCloudPubsub.subscriberMod.Subscriber
+import typings.googleCloudPubsub.temporalMod.Duration
 import typings.grpcGrpcJs.callMod.ServiceError
 import typings.grpcGrpcJs.callStreamMod.StatusObject
 import typings.grpcGrpcJs.constantsMod.Status
 import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.node.streamMod.PassThrough
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +15,10 @@ object messageStreamMod {
   
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "ChannelError")
   @js.native
-  class ChannelError protected ()
+  open class ChannelError protected ()
     extends StObject
        with ServiceError {
-    def this(err: Error) = this()
+    def this(err: js.Error) = this()
     
     /* CompleteClass */
     var code: Status = js.native
@@ -26,6 +26,7 @@ object messageStreamMod {
     /* CompleteClass */
     var details: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
@@ -34,13 +35,14 @@ object messageStreamMod {
     @JSName("metadata")
     var metadata_ChannelError: typings.googleGax.mod.grpc.Metadata = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "MessageStream")
   @js.native
-  class MessageStream protected () extends PassThrough {
+  open class MessageStream protected () extends PassThrough {
     def this(sub: Subscriber) = this()
     def this(sub: Subscriber, options: MessageStreamOptions) = this()
     
@@ -51,9 +53,19 @@ object messageStreamMod {
       *
       * @param {stream} stream The StreamingPull stream.
       */
-    /* private */ var _addStream: js.Any = js.native
+    /* private */ var _addStream: Any = js.native
     
-    /* private */ var _fillHandle: js.Any = js.native
+    /**
+      * Destroys the stream and any underlying streams.
+      *
+      * @param {error?} error An error to emit, if any.
+      * @param {Function} callback Callback for completion of any destruction.
+      * @private
+      */
+    def _destroy(error: js.Error, callback: js.Function1[/* error */ js.Error | Null, Unit]): Unit = js.native
+    def _destroy(error: Null, callback: js.Function1[/* error */ js.Error | Null, Unit]): Unit = js.native
+    
+    /* private */ var _fillHandle: Any = js.native
     
     /**
       * Attempts to create and cache the desired number of StreamingPull requests.
@@ -65,7 +77,7 @@ object messageStreamMod {
       *
       * @returns {Promise}
       */
-    /* private */ var _fillStreamPool: js.Any = js.native
+    /* private */ var _fillStreamPool: Any = js.native
     
     /**
       * It is critical that we keep as few `PullResponse` objects in memory as
@@ -77,7 +89,7 @@ object messageStreamMod {
       *
       * @returns {Promise.<object>}
       */
-    /* private */ var _getClient: js.Any = js.native
+    /* private */ var _getClient: Any = js.native
     
     /**
       * Since we do not use the streams to ack/modAck messages, they will close
@@ -85,9 +97,9 @@ object messageStreamMod {
       *
       * @private
       */
-    /* private */ var _keepAlive: js.Any = js.native
+    /* private */ var _keepAlive: Any = js.native
     
-    /* private */ var _keepAliveHandle: js.Any = js.native
+    /* private */ var _keepAliveHandle: Any = js.native
     
     /**
       * Once the stream has nothing left to read, we'll remove it and attempt to
@@ -98,7 +110,7 @@ object messageStreamMod {
       * @param {Duplex} stream The ended stream.
       * @param {object} status The stream status.
       */
-    /* private */ var _onEnd: js.Any = js.native
+    /* private */ var _onEnd: Any = js.native
     
     /**
       * gRPC will usually emit a status as a ServiceError via `error` event before
@@ -110,7 +122,7 @@ object messageStreamMod {
       * @param {stream} stream The stream that errored.
       * @param {Error} err The error.
       */
-    /* private */ var _onError: js.Any = js.native
+    /* private */ var _onError: Any = js.native
     
     /**
       * gRPC streams will emit a status event once the connection has been
@@ -122,9 +134,9 @@ object messageStreamMod {
       * @param {stream} stream The stream that was closed.
       * @param {object} status The status message stating why it was closed.
       */
-    /* private */ var _onStatus: js.Any = js.native
+    /* private */ var _onStatus: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     /**
       * Removes a stream from the combined stream.
@@ -133,9 +145,9 @@ object messageStreamMod {
       *
       * @param {stream} stream The stream to remove.
       */
-    /* private */ var _removeStream: js.Any = js.native
+    /* private */ var _removeStream: Any = js.native
     
-    /* private */ var _retrier: js.Any = js.native
+    /* private */ var _retrier: Any = js.native
     
     /**
       * Neither gRPC or gax allow for the highWaterMark option to be specified.
@@ -150,11 +162,11 @@ object messageStreamMod {
       * @param {Duplex} stream The duplex stream to adjust the
       *     highWaterMarks for.
       */
-    /* private */ var _setHighWaterMark: js.Any = js.native
+    /* private */ var _setHighWaterMark: Any = js.native
     
-    /* private */ var _streams: js.Any = js.native
+    /* private */ var _streams: Any = js.native
     
-    /* private */ var _subscriber: js.Any = js.native
+    /* private */ var _subscriber: Any = js.native
     
     /**
       * Promisified version of gRPCs Client#waitForReady function.
@@ -164,12 +176,19 @@ object messageStreamMod {
       * @param {object} client The gRPC client to wait for.
       * @returns {Promise}
       */
-    /* private */ var _waitForClientReady: js.Any = js.native
+    /* private */ var _waitForClientReady: Any = js.native
+    
+    /**
+      * Updates the stream ack deadline with the server.
+      *
+      * @param {Duration} deadline The new deadline value to set.
+      */
+    def setStreamAckDeadline(deadline: Duration): Unit = js.native
   }
   
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "StatusError")
   @js.native
-  class StatusError protected ()
+  open class StatusError protected ()
     extends StObject
        with ServiceError {
     def this(status: StatusObject) = this()
@@ -180,6 +199,7 @@ object messageStreamMod {
     /* CompleteClass */
     var details: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
@@ -188,6 +208,7 @@ object messageStreamMod {
     @JSName("metadata")
     var metadata_StatusError: typings.googleGax.mod.grpc.Metadata = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

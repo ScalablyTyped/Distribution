@@ -1,51 +1,61 @@
 package typings.webpackSubresourceIntegrity
 
-import typings.std.Plugin
+import typings.webpack.mod.Compiler
+import typings.webpackSubresourceIntegrity.webpackSubresourceIntegrityBooleans.`false`
+import typings.webpackSubresourceIntegrity.webpackSubresourceIntegrityBooleans.`true`
+import typings.webpackSubresourceIntegrity.webpackSubresourceIntegrityStrings.`lazy`
+import typings.webpackSubresourceIntegrity.webpackSubresourceIntegrityStrings.auto
+import typings.webpackSubresourceIntegrity.webpackSubresourceIntegrityStrings.eager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-subresource-integrity", JSImport.Namespace)
+  @JSImport("webpack-subresource-integrity", "SubresourceIntegrityPlugin")
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
-    def this(options: Options) = this()
+  /**
+    * Create a new instance.
+    *
+    * @public
+    */
+  open class SubresourceIntegrityPlugin () extends StObject {
+    def this(options: SubresourceIntegrityPluginOptions) = this()
+    
+    @JSName("apply")
+    def apply(compiler: Compiler): Unit = js.native
+    
+    /* private */ val options: Any = js.native
   }
   
-  trait Options extends StObject {
+  trait SubresourceIntegrityPluginOptions extends StObject {
     
-    /**
-      * Default value: true
-      * When this value is falsy, the plugin doesn't run and no integrity values are calculated. It is recommended to disable the plugin in development mode.
-      */
-    var enabled: js.UndefOr[Boolean] = js.undefined
+    val enabled: js.UndefOr[auto | `true` | `false`] = js.undefined
     
-    /**
-      * An array of strings, each specifying the name of a hash function to be used for calculating integrity hash values. For example, ['sha256', 'sha512'].
-      */
-    var hashFuncNames: js.Array[String]
+    val hashFuncNames: js.UndefOr[Array[String]] = js.undefined
+    
+    val hashLoading: js.UndefOr[eager | `lazy`] = js.undefined
   }
-  object Options {
+  object SubresourceIntegrityPluginOptions {
     
-    inline def apply(hashFuncNames: js.Array[String]): Options = {
-      val __obj = js.Dynamic.literal(hashFuncNames = hashFuncNames.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
+    inline def apply(): SubresourceIntegrityPluginOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SubresourceIntegrityPluginOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: SubresourceIntegrityPluginOptions](x: Self) {
       
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: auto | `true` | `false`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      inline def setHashFuncNames(value: js.Array[String]): Self = StObject.set(x, "hashFuncNames", value.asInstanceOf[js.Any])
+      inline def setHashFuncNames(value: Array[String]): Self = StObject.set(x, "hashFuncNames", value.asInstanceOf[js.Any])
       
-      inline def setHashFuncNamesVarargs(value: String*): Self = StObject.set(x, "hashFuncNames", js.Array(value :_*))
+      inline def setHashFuncNamesUndefined: Self = StObject.set(x, "hashFuncNames", js.undefined)
+      
+      inline def setHashLoading(value: eager | `lazy`): Self = StObject.set(x, "hashLoading", value.asInstanceOf[js.Any])
+      
+      inline def setHashLoadingUndefined: Self = StObject.set(x, "hashLoading", js.undefined)
     }
   }
-  
-  type WebpackSubresourceIntegrityPlugin = Plugin
 }

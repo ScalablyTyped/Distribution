@@ -169,7 +169,7 @@ object Standardized {
   }
   
   inline def AssignmentPattern_(
-    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression | TSTypeAssertion | TSNonNullExpression,
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression__ | TSTypeAssertion__ | TSNonNullExpression__,
     right: Expression
   ): typings.babelTypes.libMod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
@@ -218,7 +218,7 @@ object Standardized {
   }
   
   inline def CallExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
     callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.libMod.CallExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
@@ -244,7 +244,7 @@ object Standardized {
   
   inline def ClassBody_(
     body: js.Array[
-      ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod | TSIndexSignature | StaticBlock_
+      ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod__ | TSIndexSignature__ | StaticBlock_
     ]
   ): typings.babelTypes.libMod.ClassBody_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
@@ -271,7 +271,7 @@ object Standardized {
     generator: Boolean,
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
     kind: get | set | method_ | constructor,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): typings.babelTypes.libMod.ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
@@ -283,7 +283,7 @@ object Standardized {
     body: BlockStatement_,
     key: PrivateName_,
     kind: get | set | method_,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty],
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty__],
     static: Boolean
   ): typings.babelTypes.libMod.ClassPrivateMethod_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
@@ -355,7 +355,7 @@ object Standardized {
     __obj.asInstanceOf[typings.babelTypes.libMod.ExportAllDeclaration_]
   }
   
-  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.libMod.ExportDefaultDeclaration_ = {
+  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction__ | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.libMod.ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[typings.babelTypes.libMod.ExportDefaultDeclaration_]
@@ -516,7 +516,7 @@ object Standardized {
   }
   
   inline def NewExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
     callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.libMod.NewExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
@@ -574,7 +574,7 @@ object Standardized {
   }
   
   inline def OptionalCallExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName | ArgumentPlaceholder_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName__ | ArgumentPlaceholder_],
     callee: Expression,
     optional: Boolean
   ): typings.babelTypes.libMod.OptionalCallExpression_ = {

@@ -1,40 +1,40 @@
 package typings.activexDao.DAO
 
-import typings.activexDao.activexDaoNumbers.`0`
-import typings.activexDao.activexDaoNumbers.`1048575`
-import typings.activexDao.activexDaoNumbers.`128`
-import typings.activexDao.activexDaoNumbers.`131072`
-import typings.activexDao.activexDaoNumbers.`1`
-import typings.activexDao.activexDaoNumbers.`20`
-import typings.activexDao.activexDaoNumbers.`262144`
-import typings.activexDao.activexDaoNumbers.`2`
-import typings.activexDao.activexDaoNumbers.`32`
-import typings.activexDao.activexDaoNumbers.`4`
-import typings.activexDao.activexDaoNumbers.`524288`
-import typings.activexDao.activexDaoNumbers.`64`
-import typings.activexDao.activexDaoNumbers.`65536`
-import typings.activexDao.activexDaoNumbers.`65548`
-import typings.activexDao.activexDaoNumbers.`8`
+import typings.activexDao.activexDaoInts.`0`
+import typings.activexDao.activexDaoInts.`1048575`
+import typings.activexDao.activexDaoInts.`128`
+import typings.activexDao.activexDaoInts.`131072`
+import typings.activexDao.activexDaoInts.`1`
+import typings.activexDao.activexDaoInts.`20`
+import typings.activexDao.activexDaoInts.`262144`
+import typings.activexDao.activexDaoInts.`2`
+import typings.activexDao.activexDaoInts.`32`
+import typings.activexDao.activexDaoInts.`4`
+import typings.activexDao.activexDaoInts.`524288`
+import typings.activexDao.activexDaoInts.`64`
+import typings.activexDao.activexDaoInts.`65536`
+import typings.activexDao.activexDaoInts.`65548`
+import typings.activexDao.activexDaoInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexDao.activexDaoNumbers.`1`
-  - typings.activexDao.activexDaoNumbers.`8`
-  - typings.activexDao.activexDaoNumbers.`4`
-  - typings.activexDao.activexDaoNumbers.`2`
-  - typings.activexDao.activexDaoNumbers.`65536`
-  - typings.activexDao.activexDaoNumbers.`128`
-  - typings.activexDao.activexDaoNumbers.`1048575`
-  - typings.activexDao.activexDaoNumbers.`32`
-  - typings.activexDao.activexDaoNumbers.`0`
-  - typings.activexDao.activexDaoNumbers.`131072`
-  - typings.activexDao.activexDaoNumbers.`64`
-  - typings.activexDao.activexDaoNumbers.`20`
-  - typings.activexDao.activexDaoNumbers.`65548`
-  - typings.activexDao.activexDaoNumbers.`524288`
-  - typings.activexDao.activexDaoNumbers.`262144`
+  - typings.activexDao.activexDaoInts.`1`
+  - typings.activexDao.activexDaoInts.`8`
+  - typings.activexDao.activexDaoInts.`4`
+  - typings.activexDao.activexDaoInts.`2`
+  - typings.activexDao.activexDaoInts.`65536`
+  - typings.activexDao.activexDaoInts.`128`
+  - typings.activexDao.activexDaoInts.`1048575`
+  - typings.activexDao.activexDaoInts.`32`
+  - typings.activexDao.activexDaoInts.`0`
+  - typings.activexDao.activexDaoInts.`131072`
+  - typings.activexDao.activexDaoInts.`64`
+  - typings.activexDao.activexDaoInts.`20`
+  - typings.activexDao.activexDaoInts.`65548`
+  - typings.activexDao.activexDaoInts.`524288`
+  - typings.activexDao.activexDaoInts.`262144`
 */
 trait PermissionEnum extends StObject
 object PermissionEnum {

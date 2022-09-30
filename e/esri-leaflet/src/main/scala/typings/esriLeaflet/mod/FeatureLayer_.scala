@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "FeatureLayer")
 @js.native
-class FeatureLayer_ protected ()
+open class FeatureLayer_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.FeatureLayer_ {
   def this(options: FeatureLayerOptions) = this()
 }

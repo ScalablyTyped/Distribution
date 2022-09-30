@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait HandlerRole extends StObject
-@JSImport("dnd-core/lib/interfaces", "HandlerRole")
+@JSImport("dnd-core/dist/interfaces", "HandlerRole")
 @js.native
 object HandlerRole extends StObject {
   

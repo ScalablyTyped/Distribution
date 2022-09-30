@@ -13,10 +13,10 @@ trait ThinTexture extends StObject {
   
   /* protected */ var _engine: Nullable[ThinEngine] = js.native
   
-  /** @hidden */
+  /** @internal */
   /* protected */ var _initialSamplingMode: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _texture: Nullable[InternalTexture] = js.native
   
   /* protected */ var _wrapU: Double = js.native

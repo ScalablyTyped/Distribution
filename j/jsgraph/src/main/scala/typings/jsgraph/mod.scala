@@ -7,9 +7,9 @@ import typings.jsgraph.anon.E
 import typings.jsgraph.anon.Error
 import typings.jsgraph.anon.G
 import typings.jsgraph.anon.Result
-import typings.jsgraph.jsgraphNumbers.`0`
-import typings.jsgraph.jsgraphNumbers.`1`
-import typings.jsgraph.jsgraphNumbers.`2`
+import typings.jsgraph.jsgraphInts.`0`
+import typings.jsgraph.jsgraphInts.`1`
+import typings.jsgraph.jsgraphInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

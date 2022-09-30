@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.Instantiable7
 import org.scalablytyped.runtime.Instantiable8
 import org.scalablytyped.runtime.Instantiable9
-import typings.aframe.aframeNumbers.`1`
-import typings.aframe.aframeNumbers.`2`
-import typings.aframe.aframeNumbers.`4`
+import typings.aframe.aframeInts.`1`
+import typings.aframe.aframeInts.`2`
+import typings.aframe.aframeInts.`4`
 import typings.aframe.anon.TypeofAnimationClip
 import typings.aframe.anon.TypeofAnimationUtils
 import typings.aframe.anon.TypeofAudioContext

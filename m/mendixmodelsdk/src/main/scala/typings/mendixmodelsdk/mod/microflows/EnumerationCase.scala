@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "microflows.EnumerationCase")
 @js.native
-class EnumerationCase protected ()
+open class EnumerationCase protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.EnumerationCase {
   def this(
     model: AbstractModel,

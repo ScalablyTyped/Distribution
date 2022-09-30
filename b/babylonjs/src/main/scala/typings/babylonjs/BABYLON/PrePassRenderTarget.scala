@@ -10,46 +10,46 @@ trait PrePassRenderTarget
      with MultiRenderTarget {
   
   /**
-    * @hidden
+    * @internal
     */
   var _beforeCompositionPostProcesses: js.Array[PostProcess] = js.native
   
   /**
     * Checks that the size of this RT is still adapted to the desired render size.
-    * @hidden
+    * @internal
     */
   def _checkSize(): Unit = js.native
   
   /**
     * Creates a composition effect for this RT
-    * @hidden
+    * @internal
     */
   def _createCompositionEffect(): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   @JSName("_engine")
   var _engine_PrePassRenderTarget: Engine = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _internalTextureDirty: Boolean = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   var _outputPostProcess: Nullable[PostProcess] = js.native
   
   /**
     * Resets the post processes chains applied to this RT.
-    * @hidden
+    * @internal
     */
   def _resetPostProcessChain(): Unit = js.native
   
   /**
-    * @hidden
+    * @internal
     */
   @JSName("_scene")
   var _scene_PrePassRenderTarget: Scene = js.native

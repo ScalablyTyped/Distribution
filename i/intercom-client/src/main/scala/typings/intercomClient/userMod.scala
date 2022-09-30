@@ -208,13 +208,13 @@ object userMod {
   }
   object List {
     
-    inline def apply(pages: Next, total_count: Double, users: js.Array[User]): List = {
+    inline def apply(pages: Next, total_count: Double, users: js.Array[User]): typings.intercomClient.userMod.List = {
       val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("user.list")
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.intercomClient.userMod.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.intercomClient.userMod.List](x: Self) {
       
       inline def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       

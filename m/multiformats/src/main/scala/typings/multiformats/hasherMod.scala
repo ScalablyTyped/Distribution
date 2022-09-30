@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hasherMod {
   
-  @JSImport("multiformats/dist/types/src/hashes/hasher", JSImport.Namespace)
+  @JSImport("multiformats/types/src/hashes/hasher", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("multiformats/dist/types/src/hashes/hasher", "Hasher")
+  @JSImport("multiformats/types/src/hashes/hasher", "Hasher")
   @js.native
   open class Hasher[Name /* <: String */, Code /* <: Double */] protected ()
     extends StObject

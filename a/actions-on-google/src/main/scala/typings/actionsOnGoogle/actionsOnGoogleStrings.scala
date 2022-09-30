@@ -7,9 +7,8 @@ import typings.actionsOnGoogle.apiV2Mod.GoogleCloudDialogflowV2IntentDefaultResp
 import typings.actionsOnGoogle.apiV2Mod.GoogleCloudDialogflowV2IntentMessagePlatform
 import typings.actionsOnGoogle.apiV2Mod.GoogleCloudDialogflowV2IntentTrainingPhraseType
 import typings.actionsOnGoogle.apiV2Mod.GoogleCloudDialogflowV2IntentWebhookState
-import typings.actionsOnGoogle.conversationConversationMod.DialogSpec
-import typings.actionsOnGoogle.conversationConversationMod.InputValueSpec
 import typings.actionsOnGoogle.conversationConversationMod.Intent
+import typings.actionsOnGoogle.conversationConversationMod._InputValueSpec
 import typings.actionsOnGoogle.dialogflowDialogflowMod.DefaultDialogflowIntent
 import typings.actionsOnGoogle.surfaceMod.SurfaceCapability
 import typings.actionsOnGoogle.v2Mod.GoogleActionsOrdersV3ActionType
@@ -1745,112 +1744,52 @@ object actionsOnGoogleStrings {
   inline def telegram_ : telegram_ = "telegram".asInstanceOf[telegram_]
   
   @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec = "type.googleapis.com/google.actions.transactions.v3.CompletePurchaseValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotCompletePurchaseValueSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec = "type.googleapis.com/google.actions.transactions.v3.DigitalPurchaseCheckSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotDigitalPurchaseCheckSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec = "type.googleapis.com/google.actions.transactions.v3.TransactionDecisionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionDecisionValueSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec = "type.googleapis.com/google.actions.transactions.v3.TransactionRequirementsCheckSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDottransactionsDotv3DotTransactionRequirementsCheckSpec]
-  
-  @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec = "type.googleapis.com/google.actions.v2.ConfirmationValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotConfirmationValueSpec]
   
   @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec = "type.googleapis.com/google.actions.v2.DateTimeValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDateTimeValueSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec = "type.googleapis.com/google.actions.v2.DeliveryAddressValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotDeliveryAddressValueSpec]
   
   @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec = "type.googleapis.com/google.actions.v2.LinkValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec
-    extends StObject
-       with DialogSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec = "type.googleapis.com/google.actions.v2.LinkValueSpec.LinkDialogSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotLinkValueSpecDotLinkDialogSpec]
   
   @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec = "type.googleapis.com/google.actions.v2.NewSurfaceValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotNewSurfaceValueSpec]
   
   @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec = "type.googleapis.com/google.actions.v2.OptionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotOptionValueSpec]
   
   @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec = "type.googleapis.com/google.actions.v2.PermissionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPermissionValueSpec]
   
   @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec = "type.googleapis.com/google.actions.v2.PlaceValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec
-    extends StObject
-       with DialogSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec = "type.googleapis.com/google.actions.v2.PlaceValueSpec.PlaceDialogSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotPlaceValueSpecDotPlaceDialogSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec = "type.googleapis.com/google.actions.v2.RegisterUpdateValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotRegisterUpdateValueSpec]
   
   @js.native
   sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec
     extends StObject
-       with InputValueSpec
+       with _InputValueSpec
   inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec = "type.googleapis.com/google.actions.v2.SignInValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotSignInValueSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec = "type.googleapis.com/google.actions.v2.TransactionDecisionValueSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionDecisionValueSpec]
-  
-  @js.native
-  sealed trait typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec
-    extends StObject
-       with InputValueSpec
-  inline def typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec: typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec = "type.googleapis.com/google.actions.v2.TransactionRequirementsCheckSpec".asInstanceOf[typeDotgoogleapisDotcomSlashgoogleDotactionsDotv2DotTransactionRequirementsCheckSpec]
   
   @js.native
   sealed trait viber_ extends StObject

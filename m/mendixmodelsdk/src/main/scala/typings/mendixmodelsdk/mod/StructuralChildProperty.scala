@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "StructuralChildProperty")
 @js.native
-class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
+open class StructuralChildProperty[T /* <: IStructuralUnit | IModelUnit */] protected ()
   extends typings.mendixmodelsdk.propertiesMod.StructuralChildProperty[T] {
   def this(
     declaredOn: IStructureClass,

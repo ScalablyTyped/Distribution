@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @remarks
   * [Api set: WordApi 1.1]
   *
-  * Content control appearance options are bounding box, tags, or hidden.
+  * Content control appearance options are BoundingBox, Tags, or Hidden.
   */
 @JSGlobal("Word.ContentControlAppearance")
 @js.native

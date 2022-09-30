@@ -4,33 +4,33 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnDragPreviousAndNextLocation
+trait OnDragPreviousAndNextLocation[T]
   extends StObject
      with PreviousAndNextLocation {
   
-  var nextParent: TreeItem | Null
+  var nextParent: TreeItem[T] | Null
   
-  var prevParent: TreeItem | Null
+  var prevParent: TreeItem[T] | Null
 }
 object OnDragPreviousAndNextLocation {
   
-  inline def apply(
+  inline def apply[T](
     nextPath: NumberOrStringArray,
     nextTreeIndex: Double,
     prevPath: NumberOrStringArray,
     prevTreeIndex: Double
-  ): OnDragPreviousAndNextLocation = {
+  ): OnDragPreviousAndNextLocation[T] = {
     val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any], nextParent = null, prevParent = null)
-    __obj.asInstanceOf[OnDragPreviousAndNextLocation]
+    __obj.asInstanceOf[OnDragPreviousAndNextLocation[T]]
   }
   
-  extension [Self <: OnDragPreviousAndNextLocation](x: Self) {
+  extension [Self <: OnDragPreviousAndNextLocation[?], T](x: Self & OnDragPreviousAndNextLocation[T]) {
     
-    inline def setNextParent(value: TreeItem): Self = StObject.set(x, "nextParent", value.asInstanceOf[js.Any])
+    inline def setNextParent(value: TreeItem[T]): Self = StObject.set(x, "nextParent", value.asInstanceOf[js.Any])
     
     inline def setNextParentNull: Self = StObject.set(x, "nextParent", null)
     
-    inline def setPrevParent(value: TreeItem): Self = StObject.set(x, "prevParent", value.asInstanceOf[js.Any])
+    inline def setPrevParent(value: TreeItem[T]): Self = StObject.set(x, "prevParent", value.asInstanceOf[js.Any])
     
     inline def setPrevParentNull: Self = StObject.set(x, "prevParent", null)
   }

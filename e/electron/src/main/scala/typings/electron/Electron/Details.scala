@@ -27,9 +27,8 @@ trait Details extends StObject {
   var exitCode: Double
   
   /**
-    * The name of the process. i.e. for plugins it might be Flash. Examples for
-    * utility: `Audio Service`, `Content Decryption Module Service`, `Network
-    * Service`, `Video Capture`, etc.
+    * The name of the process. Examples for utility: `Audio Service`, `Content
+    * Decryption Module Service`, `Network Service`, `Video Capture`, etc.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -37,6 +36,11 @@ trait Details extends StObject {
     * The reason the child process is gone. Possible values:
     */
   var reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
+  
+  /**
+    * The non-localized name of the process.
+    */
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /**
     * Process type. One of the following values:
@@ -66,6 +70,10 @@ object Details {
     inline def setReason(
       value: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
     ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     inline def setType(
       value: Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown

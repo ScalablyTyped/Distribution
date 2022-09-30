@@ -143,9 +143,7 @@ object Geometry {
   inline def _GetGeometryByLoadedUniqueId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetGeometryByLoadedUniqueId")(x.asInstanceOf[js.Any])
   
   /**
-    * @param parsedGeometry
-    * @param mesh
-    * @hidden
+    * @internal
     */
   inline def _ImportGeometry(parsedGeometry: Any, mesh: typings.babylonjs.BABYLON.Mesh): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_ImportGeometry")(parsedGeometry.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

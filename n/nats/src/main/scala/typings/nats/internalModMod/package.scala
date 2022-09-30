@@ -75,7 +75,7 @@ inline def deferred[T](): Deferred_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic
 inline def delay(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")().asInstanceOf[js.Promise[Unit]]
 inline def delay(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 
-inline def extend(a: Any, b: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(a.asInstanceOf[js.Any]).`++`(b.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+inline def extend(a: Any, b: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(scala.List(a.asInstanceOf[js.Any]).`++`(b.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 
 inline def extractProtocolMessage(a: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractProtocolMessage")(a.asInstanceOf[js.Any]).asInstanceOf[String]
 

@@ -34,12 +34,12 @@ object parserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
-  inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
-  inline def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
+  inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def parse(content: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  inline def parse(content: String): js.Array[BlockInstance[StringDictionary[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[Any]]]]
   
   inline def parseWithAttributeSchema(innerHTML: String, schema: Attributetypeboolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   inline def parseWithAttributeSchema(innerHTML: String, schema: Attribute): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
@@ -47,12 +47,12 @@ object parserMod {
   inline def parseWithAttributeSchema(innerHTML: String, schema: HTML): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   inline def parseWithAttributeSchema(innerHTML: String, schema: Node): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
   inline def parseWithAttributeSchema(innerHTML: String, schema: Tag): js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 171 */ Any
   ]]
   inline def parseWithAttributeSchema(innerHTML: String, schema: Text): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  inline def parseWithAttributeSchema[T /* <: Record[String, Source[js.Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def parseWithAttributeSchema[T /* <: Record[String, Source[Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
@@ -62,7 +62,7 @@ object parserMod {
     
     trait Attribute
       extends StObject
-         with Source[js.Any] {
+         with Source[Any] {
       
       var attribute: String
       
@@ -97,7 +97,7 @@ object parserMod {
     
     trait Children
       extends StObject
-         with Source[js.Any] {
+         with Source[Any] {
       
       var selector: js.UndefOr[String] = js.undefined
       
@@ -122,10 +122,10 @@ object parserMod {
     
     trait HTML
       extends StObject
-         with Source[js.Any] {
+         with Source[Any] {
       
       var multiline: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
           ] = js.undefined
       
       var selector: js.UndefOr[String] = js.undefined
@@ -141,7 +141,7 @@ object parserMod {
       
       extension [Self <: HTML](x: Self) {
         
-        inline def setMultiline(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+        inline def setMultiline(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
         
         inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
         
@@ -155,7 +155,7 @@ object parserMod {
     
     trait Node
       extends StObject
-         with Source[js.Any] {
+         with Source[Any] {
       
       var selector: js.UndefOr[String] = js.undefined
       
@@ -209,7 +209,7 @@ object parserMod {
     
     trait Tag
       extends StObject
-         with Source[js.Any] {
+         with Source[Any] {
       
       var selector: js.UndefOr[String] = js.undefined
       
@@ -234,7 +234,7 @@ object parserMod {
     
     trait Text
       extends StObject
-         with Source[js.Any] {
+         with Source[Any] {
       
       var selector: js.UndefOr[String] = js.undefined
       
@@ -310,19 +310,17 @@ object parserMod {
     - java.lang.String
     - scala.Unit
     - / * import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof any ]: any[k] extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer V>? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<@wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<V>> * / object : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<U[k]> * / object}
-    * / typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue & org.scalablytyped.runtime.TopLevel[js.Any]
+  {[ k in keyof any ]: any[k] extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer V>? @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<@wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<any>> : @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<any[k]>}
+    * / typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue & org.scalablytyped.runtime.TopLevel[scala.Any]
     - typings.wordpressBlocks.wordpressBlocksStrings.a
     - typings.wordpressBlocks.wordpressBlocksStrings.abbr
     - typings.wordpressBlocks.wordpressBlocksStrings.address
-    - typings.wordpressBlocks.wordpressBlocksStrings.applet
     - typings.wordpressBlocks.wordpressBlocksStrings.area
     - typings.wordpressBlocks.wordpressBlocksStrings.article
     - typings.wordpressBlocks.wordpressBlocksStrings.aside
     - typings.wordpressBlocks.wordpressBlocksStrings.audio
     - typings.wordpressBlocks.wordpressBlocksStrings.b
     - typings.wordpressBlocks.wordpressBlocksStrings.base
-    - typings.wordpressBlocks.wordpressBlocksStrings.basefont
     - typings.wordpressBlocks.wordpressBlocksStrings.bdi
     - typings.wordpressBlocks.wordpressBlocksStrings.bdo
     - typings.wordpressBlocks.wordpressBlocksStrings.blockquote
@@ -342,7 +340,6 @@ object parserMod {
     - typings.wordpressBlocks.wordpressBlocksStrings.details
     - typings.wordpressBlocks.wordpressBlocksStrings.dfn
     - typings.wordpressBlocks.wordpressBlocksStrings.dialog
-    - typings.wordpressBlocks.wordpressBlocksStrings.dir
     - typings.wordpressBlocks.wordpressBlocksStrings.div
     - typings.wordpressBlocks.wordpressBlocksStrings.dl
     - typings.wordpressBlocks.wordpressBlocksStrings.dt
@@ -351,11 +348,8 @@ object parserMod {
     - typings.wordpressBlocks.wordpressBlocksStrings.fieldset
     - typings.wordpressBlocks.wordpressBlocksStrings.figcaption
     - typings.wordpressBlocks.wordpressBlocksStrings.figure
-    - typings.wordpressBlocks.wordpressBlocksStrings.font
     - typings.wordpressBlocks.wordpressBlocksStrings.footer
     - typings.wordpressBlocks.wordpressBlocksStrings.form
-    - typings.wordpressBlocks.wordpressBlocksStrings.frame
-    - typings.wordpressBlocks.wordpressBlocksStrings.frameset
     - typings.wordpressBlocks.wordpressBlocksStrings.h1
     - typings.wordpressBlocks.wordpressBlocksStrings.h2
     - typings.wordpressBlocks.wordpressBlocksStrings.h3
@@ -380,7 +374,6 @@ object parserMod {
     - typings.wordpressBlocks.wordpressBlocksStrings.main
     - typings.wordpressBlocks.wordpressBlocksStrings.map
     - typings.wordpressBlocks.wordpressBlocksStrings.mark
-    - typings.wordpressBlocks.wordpressBlocksStrings.marquee
     - typings.wordpressBlocks.wordpressBlocksStrings.menu
     - typings.wordpressBlocks.wordpressBlocksStrings.meta
     - typings.wordpressBlocks.wordpressBlocksStrings.meter
@@ -392,7 +385,6 @@ object parserMod {
     - typings.wordpressBlocks.wordpressBlocksStrings.option
     - typings.wordpressBlocks.wordpressBlocksStrings.output
     - typings.wordpressBlocks.wordpressBlocksStrings.p
-    - typings.wordpressBlocks.wordpressBlocksStrings.param
     - typings.wordpressBlocks.wordpressBlocksStrings.picture
     - typings.wordpressBlocks.wordpressBlocksStrings.pre
     - typings.wordpressBlocks.wordpressBlocksStrings.progress
@@ -431,6 +423,9 @@ object parserMod {
     - typings.wordpressBlocks.wordpressBlocksStrings.`var`
     - typings.wordpressBlocks.wordpressBlocksStrings.video
     - typings.wordpressBlocks.wordpressBlocksStrings.wbr
+    - typings.wordpressBlocks.wordpressBlocksStrings.animate
+    - typings.wordpressBlocks.wordpressBlocksStrings.animateMotion
+    - typings.wordpressBlocks.wordpressBlocksStrings.animateTransform
     - typings.wordpressBlocks.wordpressBlocksStrings.circle
     - typings.wordpressBlocks.wordpressBlocksStrings.clipPath
     - typings.wordpressBlocks.wordpressBlocksStrings.defs
@@ -444,6 +439,7 @@ object parserMod {
     - typings.wordpressBlocks.wordpressBlocksStrings.feDiffuseLighting
     - typings.wordpressBlocks.wordpressBlocksStrings.feDisplacementMap
     - typings.wordpressBlocks.wordpressBlocksStrings.feDistantLight
+    - typings.wordpressBlocks.wordpressBlocksStrings.feDropShadow
     - typings.wordpressBlocks.wordpressBlocksStrings.feFlood
     - typings.wordpressBlocks.wordpressBlocksStrings.feFuncA
     - typings.wordpressBlocks.wordpressBlocksStrings.feFuncB
@@ -469,12 +465,14 @@ object parserMod {
     - typings.wordpressBlocks.wordpressBlocksStrings.marker
     - typings.wordpressBlocks.wordpressBlocksStrings.mask
     - typings.wordpressBlocks.wordpressBlocksStrings.metadata
+    - typings.wordpressBlocks.wordpressBlocksStrings.mpath
     - typings.wordpressBlocks.wordpressBlocksStrings.path
     - typings.wordpressBlocks.wordpressBlocksStrings.pattern
     - typings.wordpressBlocks.wordpressBlocksStrings.polygon
     - typings.wordpressBlocks.wordpressBlocksStrings.polyline
     - typings.wordpressBlocks.wordpressBlocksStrings.radialGradient
     - typings.wordpressBlocks.wordpressBlocksStrings.rect
+    - typings.wordpressBlocks.wordpressBlocksStrings.set
     - typings.wordpressBlocks.wordpressBlocksStrings.stop
     - typings.wordpressBlocks.wordpressBlocksStrings.svg
     - typings.wordpressBlocks.wordpressBlocksStrings.switch
@@ -491,8 +489,8 @@ object parserMod {
   */
   type SourceReturnValue[T] = js.UndefOr[
     _SourceReturnValue[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof any ]: any[k] extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer V>? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<@wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<V>> * / object : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<U[k]> * / object}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue & TopLevel[js.Any]) | js.Array[ReactChild] | String | Element | Null | Boolean
+  {[ k in keyof any ]: any[k] extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer V>? @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<@wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<any>> : @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<any[k]>}
+    */ typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue & TopLevel[Any]) | js.Array[ReactChild] | String | Element | Null | Boolean
   ]
   
   trait _SourceReturnValue[T] extends StObject

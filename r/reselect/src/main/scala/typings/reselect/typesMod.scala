@@ -29,15 +29,15 @@ object typesMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reselect.reselectNumbers.`0`
-    - typings.reselect.reselectNumbers.`1`
+    - typings.reselect.reselectInts.`0`
+    - typings.reselect.reselectInts.`1`
   */
   trait Boolean2 extends StObject
   object Boolean2 {
     
-    inline def `0`: typings.reselect.reselectNumbers.`0` = 0.asInstanceOf[typings.reselect.reselectNumbers.`0`]
+    inline def `0`: typings.reselect.reselectInts.`0` = 0.asInstanceOf[typings.reselect.reselectInts.`0`]
     
-    inline def `1`: typings.reselect.reselectNumbers.`1` = 1.asInstanceOf[typings.reselect.reselectNumbers.`1`]
+    inline def `1`: typings.reselect.reselectInts.`1` = 1.asInstanceOf[typings.reselect.reselectInts.`1`]
   }
   
   type BuiltIn = js.Function | js.Error | js.Date | ToStringTag | js.RegExp | (Generator[Any, Any, Any])
@@ -76,8 +76,8 @@ object typesMod {
   type GetStateFromSelectors[S /* <: SelectorArray */] = /* import warning: importer.ImportType#apply Failed type conversion: reselect.reselect/es/types.MergeParameters<S, reselect.reselect/es/types.ExtractParams<S>, reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<S>>, reselect.reselect/es/types.TuplifyUnion<reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<S>>, reselect.reselect/es/types.LastOf<reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<S>>>, [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<S>>] extends [never] ? true : false>, reselect.reselect/es/types.LongestArray<reselect.reselect/es/types.TuplifyUnion<reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<S>>, reselect.reselect/es/types.LastOf<reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<S>>>, [reselect.reselect/es/types.Transpose<reselect.reselect/es/types.ExtractParams<S>>] extends [never] ? true : false>>>[0] */ js.Any
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reselect.reselectNumbers.`0`
-    - typings.reselect.reselectNumbers.`1`
+    - typings.reselect.reselectInts.`0`
+    - typings.reselect.reselectInts.`1`
   */
   trait Has[U, U1] extends StObject
   
@@ -111,7 +111,7 @@ object typesMod {
   
   type List[A] = js.Array[A]
   
-  type Longest[L /* <: List[Any] */, L1 /* <: List[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: reselect.anon.0<L1, L>[reselect.reselect/es/types.Has<keyof L, keyof L1>] */ js.Any
+  type Longest[L /* <: typings.reselect.typesMod.List[Any] */, L1 /* <: typings.reselect.typesMod.List[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: reselect.anon.0<L1, L>[reselect.reselect/es/types.Has<keyof L, keyof L1>] */ js.Any
   
   type LongestArray[S /* <: js.Array[js.Array[Any]] */] = (/* import warning: importer.ImportType#apply Failed type conversion: S[0] */ js.Any) | (Longest[
     (/* import warning: importer.ImportType#apply Failed type conversion: S[0] */ js.Any) | (Longest[

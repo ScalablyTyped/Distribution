@@ -8,8 +8,8 @@ import typings.tensorflowTfjsCore.distTensorMod.DataToGPUOptions
 import typings.tensorflowTfjsCore.distTensorMod.GPUData
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreNumbers.`16`
-import typings.tensorflowTfjsCore.tensorflowTfjsCoreNumbers.`32`
+import typings.tensorflowTfjsCore.tensorflowTfjsCoreInts.`16`
+import typings.tensorflowTfjsCore.tensorflowTfjsCoreInts.`32`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

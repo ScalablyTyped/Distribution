@@ -50,6 +50,6 @@ object PortalDataDetail {
     
     inline def setResonators(value: js.Array[Resonator]): Self = StObject.set(x, "resonators", value.asInstanceOf[js.Any])
     
-    inline def setResonatorsVarargs(value: Resonator*): Self = StObject.set(x, "resonators", js.Array(value :_*))
+    inline def setResonatorsVarargs(value: Resonator*): Self = StObject.set(x, "resonators", js.Array(value*))
   }
 }

@@ -14,6 +14,9 @@ trait IFileDescriptorProto extends StObject {
   /** FileDescriptorProto dependency */
   var dependency: js.UndefOr[js.Array[String] | Null] = js.undefined
   
+  /** FileDescriptorProto edition */
+  var edition: js.UndefOr[String | Null] = js.undefined
+  
   /** FileDescriptorProto enumType */
   var enumType: js.UndefOr[js.Array[IEnumDescriptorProto] | Null] = js.undefined
   
@@ -59,7 +62,13 @@ object IFileDescriptorProto {
     
     inline def setDependencyUndefined: Self = StObject.set(x, "dependency", js.undefined)
     
-    inline def setDependencyVarargs(value: String*): Self = StObject.set(x, "dependency", js.Array(value :_*))
+    inline def setDependencyVarargs(value: String*): Self = StObject.set(x, "dependency", js.Array(value*))
+    
+    inline def setEdition(value: String): Self = StObject.set(x, "edition", value.asInstanceOf[js.Any])
+    
+    inline def setEditionNull: Self = StObject.set(x, "edition", null)
+    
+    inline def setEditionUndefined: Self = StObject.set(x, "edition", js.undefined)
     
     inline def setEnumType(value: js.Array[IEnumDescriptorProto]): Self = StObject.set(x, "enumType", value.asInstanceOf[js.Any])
     
@@ -67,7 +76,7 @@ object IFileDescriptorProto {
     
     inline def setEnumTypeUndefined: Self = StObject.set(x, "enumType", js.undefined)
     
-    inline def setEnumTypeVarargs(value: IEnumDescriptorProto*): Self = StObject.set(x, "enumType", js.Array(value :_*))
+    inline def setEnumTypeVarargs(value: IEnumDescriptorProto*): Self = StObject.set(x, "enumType", js.Array(value*))
     
     inline def setExtension(value: js.Array[IFieldDescriptorProto]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
@@ -75,7 +84,7 @@ object IFileDescriptorProto {
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    inline def setExtensionVarargs(value: IFieldDescriptorProto*): Self = StObject.set(x, "extension", js.Array(value :_*))
+    inline def setExtensionVarargs(value: IFieldDescriptorProto*): Self = StObject.set(x, "extension", js.Array(value*))
     
     inline def setMessageType(value: js.Array[IDescriptorProto]): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
@@ -83,7 +92,7 @@ object IFileDescriptorProto {
     
     inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
-    inline def setMessageTypeVarargs(value: IDescriptorProto*): Self = StObject.set(x, "messageType", js.Array(value :_*))
+    inline def setMessageTypeVarargs(value: IDescriptorProto*): Self = StObject.set(x, "messageType", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -103,7 +112,7 @@ object IFileDescriptorProto {
     
     inline def setPublicDependencyUndefined: Self = StObject.set(x, "publicDependency", js.undefined)
     
-    inline def setPublicDependencyVarargs(value: Double*): Self = StObject.set(x, "publicDependency", js.Array(value :_*))
+    inline def setPublicDependencyVarargs(value: Double*): Self = StObject.set(x, "publicDependency", js.Array(value*))
     
     inline def setService(value: js.Array[IServiceDescriptorProto]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
@@ -111,7 +120,7 @@ object IFileDescriptorProto {
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    inline def setServiceVarargs(value: IServiceDescriptorProto*): Self = StObject.set(x, "service", js.Array(value :_*))
+    inline def setServiceVarargs(value: IServiceDescriptorProto*): Self = StObject.set(x, "service", js.Array(value*))
     
     inline def setSourceCodeInfo(value: ISourceCodeInfo): Self = StObject.set(x, "sourceCodeInfo", value.asInstanceOf[js.Any])
     
@@ -131,7 +140,7 @@ object IFileDescriptorProto {
     
     inline def setWeakDependencyUndefined: Self = StObject.set(x, "weakDependency", js.undefined)
     
-    inline def setWeakDependencyVarargs(value: Double*): Self = StObject.set(x, "weakDependency", js.Array(value :_*))
+    inline def setWeakDependencyVarargs(value: Double*): Self = StObject.set(x, "weakDependency", js.Array(value*))
     
     inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     

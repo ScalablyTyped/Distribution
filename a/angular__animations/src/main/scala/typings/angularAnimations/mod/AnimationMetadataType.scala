@@ -1,36 +1,36 @@
 package typings.angularAnimations.mod
 
-import typings.angularAnimations.angularAnimationsNumbers.`0`
-import typings.angularAnimations.angularAnimationsNumbers.`10`
-import typings.angularAnimations.angularAnimationsNumbers.`11`
-import typings.angularAnimations.angularAnimationsNumbers.`12`
-import typings.angularAnimations.angularAnimationsNumbers.`1`
-import typings.angularAnimations.angularAnimationsNumbers.`2`
-import typings.angularAnimations.angularAnimationsNumbers.`3`
-import typings.angularAnimations.angularAnimationsNumbers.`4`
-import typings.angularAnimations.angularAnimationsNumbers.`5`
-import typings.angularAnimations.angularAnimationsNumbers.`6`
-import typings.angularAnimations.angularAnimationsNumbers.`7`
-import typings.angularAnimations.angularAnimationsNumbers.`8`
-import typings.angularAnimations.angularAnimationsNumbers.`9`
+import typings.angularAnimations.angularAnimationsInts.`0`
+import typings.angularAnimations.angularAnimationsInts.`10`
+import typings.angularAnimations.angularAnimationsInts.`11`
+import typings.angularAnimations.angularAnimationsInts.`12`
+import typings.angularAnimations.angularAnimationsInts.`1`
+import typings.angularAnimations.angularAnimationsInts.`2`
+import typings.angularAnimations.angularAnimationsInts.`3`
+import typings.angularAnimations.angularAnimationsInts.`4`
+import typings.angularAnimations.angularAnimationsInts.`5`
+import typings.angularAnimations.angularAnimationsInts.`6`
+import typings.angularAnimations.angularAnimationsInts.`7`
+import typings.angularAnimations.angularAnimationsInts.`8`
+import typings.angularAnimations.angularAnimationsInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.angularAnimations.angularAnimationsNumbers.`0`
-  - typings.angularAnimations.angularAnimationsNumbers.`1`
-  - typings.angularAnimations.angularAnimationsNumbers.`2`
-  - typings.angularAnimations.angularAnimationsNumbers.`3`
-  - typings.angularAnimations.angularAnimationsNumbers.`4`
-  - typings.angularAnimations.angularAnimationsNumbers.`5`
-  - typings.angularAnimations.angularAnimationsNumbers.`6`
-  - typings.angularAnimations.angularAnimationsNumbers.`7`
-  - typings.angularAnimations.angularAnimationsNumbers.`8`
-  - typings.angularAnimations.angularAnimationsNumbers.`9`
-  - typings.angularAnimations.angularAnimationsNumbers.`10`
-  - typings.angularAnimations.angularAnimationsNumbers.`11`
-  - typings.angularAnimations.angularAnimationsNumbers.`12`
+  - typings.angularAnimations.angularAnimationsInts.`0`
+  - typings.angularAnimations.angularAnimationsInts.`1`
+  - typings.angularAnimations.angularAnimationsInts.`2`
+  - typings.angularAnimations.angularAnimationsInts.`3`
+  - typings.angularAnimations.angularAnimationsInts.`4`
+  - typings.angularAnimations.angularAnimationsInts.`5`
+  - typings.angularAnimations.angularAnimationsInts.`6`
+  - typings.angularAnimations.angularAnimationsInts.`7`
+  - typings.angularAnimations.angularAnimationsInts.`8`
+  - typings.angularAnimations.angularAnimationsInts.`9`
+  - typings.angularAnimations.angularAnimationsInts.`10`
+  - typings.angularAnimations.angularAnimationsInts.`11`
+  - typings.angularAnimations.angularAnimationsInts.`12`
 */
 trait AnimationMetadataType extends StObject
 object AnimationMetadataType {

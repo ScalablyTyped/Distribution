@@ -21,7 +21,7 @@ trait Clear extends StObject {
   
   var clear: js.UndefOr[ContainerText] = js.undefined
   
-  var container: js.UndefOr[`15`] = js.undefined
+  var container: js.UndefOr[`16`] = js.undefined
   
   var control: js.UndefOr[Open] = js.undefined
   
@@ -29,7 +29,7 @@ trait Clear extends StObject {
   
   var icons: js.UndefOr[Up] = js.undefined
   
-  var options: js.UndefOr[`17`] = js.undefined
+  var options: js.UndefOr[`18`] = js.undefined
   
   // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37506
   var searchInput: js.UndefOr[
@@ -61,7 +61,7 @@ object Clear {
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    inline def setContainer(value: `15`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -79,7 +79,7 @@ object Clear {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setOptions(value: `17`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: `18`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

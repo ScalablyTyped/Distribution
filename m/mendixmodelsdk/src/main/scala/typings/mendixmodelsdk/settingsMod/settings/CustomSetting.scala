@@ -12,9 +12,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/settings", "settings.CustomSetting")
+@JSImport("mendixmodelsdk/src/gen/settings", "settings.CustomSetting")
 @js.native
-class CustomSetting protected () extends Element[IModel] {
+open class CustomSetting protected () extends Element[IModel] {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -34,7 +34,7 @@ class CustomSetting protected () extends Element[IModel] {
 }
 object CustomSetting {
   
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.CustomSetting")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.CustomSetting")
   @js.native
   val ^ : js.Any = js.native
   
@@ -55,13 +55,13 @@ object CustomSetting {
   inline def createIn(container: Configuration): CustomSetting = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[CustomSetting]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.CustomSetting.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.CustomSetting.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.CustomSetting.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/settings", "settings.CustomSetting.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

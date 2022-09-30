@@ -35,9 +35,7 @@ object staticMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  trait Props[T]
-    extends StObject
-       with Styles {
+  trait Props[T] extends StObject {
     
     /**
       * Function that is called to render every item in `items` array.
@@ -69,7 +67,7 @@ object staticMod {
       
       inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

@@ -20,6 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
+  @JSImport("gridstack/dist/es5/types", "GridDefaults")
+  @js.native
+  val GridDefaults: GridStackOptions = js.native
+  
   /* Rewritten from type alias, can be one of: 
     - typings.gridstack.gridstackStrings.moveScale
     - typings.gridstack.gridstackStrings.move
@@ -208,6 +212,9 @@ object typesMod {
     /** vars to calculate other cells coordinates */
     var cellWidth: js.UndefOr[Double] = js.undefined
     
+    /** best node (most coverage) we collied with */
+    var collide: js.UndefOr[GridStackNode] = js.undefined
+    
     var marginBottom: js.UndefOr[Double] = js.undefined
     
     var marginLeft: js.UndefOr[Double] = js.undefined
@@ -247,6 +254,10 @@ object typesMod {
       inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
       
       inline def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
+      
+      inline def setCollide(value: GridStackNode): Self = StObject.set(x, "collide", value.asInstanceOf[js.Any])
+      
+      inline def setCollideUndefined: Self = StObject.set(x, "collide", js.undefined)
       
       inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       

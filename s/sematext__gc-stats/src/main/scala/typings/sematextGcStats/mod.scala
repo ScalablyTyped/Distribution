@@ -1,11 +1,11 @@
 package typings.sematextGcStats
 
 import typings.node.eventsMod.EventEmitter
-import typings.sematextGcStats.sematextGcStatsNumbers.`15`
-import typings.sematextGcStats.sematextGcStatsNumbers.`1`
-import typings.sematextGcStats.sematextGcStatsNumbers.`2`
-import typings.sematextGcStats.sematextGcStatsNumbers.`4`
-import typings.sematextGcStats.sematextGcStatsNumbers.`8`
+import typings.sematextGcStats.sematextGcStatsInts.`15`
+import typings.sematextGcStats.sematextGcStatsInts.`1`
+import typings.sematextGcStats.sematextGcStatsInts.`2`
+import typings.sematextGcStats.sematextGcStatsInts.`4`
+import typings.sematextGcStats.sematextGcStatsInts.`8`
 import typings.sematextGcStats.sematextGcStatsStrings.stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

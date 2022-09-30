@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NetLog extends StObject {
   
   /**
-    * A `Boolean` property that indicates whether network logs are currently being
+    * A `boolean` property that indicates whether network logs are currently being
     * recorded.
     *
     */
@@ -17,8 +17,8 @@ trait NetLog extends StObject {
   // Docs: https://electronjs.org/docs/api/net-log
   /**
     * resolves when the net log has begun recording.
-    * 
-  Starts recording network events to `path`.
+    *
+    * Starts recording network events to `path`.
     */
   def startLogging(path: String): js.Promise[Unit] = js.native
   def startLogging(path: String, options: StartLoggingOptions): js.Promise[Unit] = js.native

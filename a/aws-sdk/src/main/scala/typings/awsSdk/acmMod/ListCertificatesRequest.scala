@@ -25,6 +25,16 @@ trait ListCertificatesRequest extends StObject {
     * Use this parameter only when paginating results and only in a subsequent request after you receive a response with truncated results. Set it to the value of NextToken from the response you just received.
     */
   var NextToken: js.UndefOr[typings.awsSdk.acmMod.NextToken] = js.undefined
+  
+  /**
+    * Specifies the field to sort results by. If you specify SortBy, you must also specify SortOrder.
+    */
+  var SortBy: js.UndefOr[typings.awsSdk.acmMod.SortBy] = js.undefined
+  
+  /**
+    * Specifies the order of sorted results. If you specify SortOrder, you must also specify SortBy.
+    */
+  var SortOrder: js.UndefOr[typings.awsSdk.acmMod.SortOrder] = js.undefined
 }
 object ListCertificatesRequest {
   
@@ -52,5 +62,13 @@ object ListCertificatesRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setSortBy(value: SortBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

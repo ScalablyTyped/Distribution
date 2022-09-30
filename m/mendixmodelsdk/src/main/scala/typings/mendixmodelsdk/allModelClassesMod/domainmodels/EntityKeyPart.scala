@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * In version 8.9.0: introduced
   */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKeyPart")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKeyPart")
 @js.native
-class EntityKeyPart protected ()
+open class EntityKeyPart protected ()
   extends typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart {
   def this(
     model: AbstractModel,
@@ -29,7 +29,7 @@ class EntityKeyPart protected ()
 }
 object EntityKeyPart {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKeyPart")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKeyPart")
   @js.native
   val ^ : js.Any = js.native
   
@@ -53,13 +53,13 @@ object EntityKeyPart {
   inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKey): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKeyPart.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKeyPart.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.EntityKeyPart.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "domainmodels.EntityKeyPart.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

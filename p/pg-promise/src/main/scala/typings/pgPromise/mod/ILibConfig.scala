@@ -27,7 +27,7 @@ trait ILibConfig[Ext, C /* <: IClient */] extends StObject {
       /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
       Unit
     ]
-  ): XPromise[Any]
+  ): js.Promise[Any]
   
   var promiseLib: Any
   

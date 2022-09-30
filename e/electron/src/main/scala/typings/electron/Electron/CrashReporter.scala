@@ -24,32 +24,16 @@ trait CrashReporter extends StObject {
     * must be no longer than 39 bytes, and values must be no longer than 20320 bytes.
     * Keys with names longer than the maximum will be silently ignored. Key values
     * longer than the maximum length will be truncated.
-    *
-    * **Note:** On linux values that are longer than 127 bytes will be chunked into
-    * multiple keys, each 127 bytes in length.  E.g. `addExtraParameter('foo',
-    * 'a'.repeat(130))` will result in two chunked keys `foo__1` and `foo__2`, the
-    * first will contain the first 127 bytes and the second will contain the remaining
-    * 3 bytes.  On your crash reporting backend you should stitch together keys in
-    * this format.
     */
   def addExtraParameter(key: String, value: String): Unit
-  
-  /**
-    * The directory where crashes are temporarily stored before being uploaded.
-    * 
-  **Note:** This method is deprecated, use `app.getPath('crashDumps')` instead.
-    *
-    * @deprecated
-    */
-  def getCrashesDirectory(): String
   
   /**
     * The date and ID of the last crash report. Only crash reports that have been
     * uploaded will be returned; even if a crash report is present on disk it will not
     * be returned until it is uploaded. In the case that there are no uploaded
     * reports, `null` is returned.
-    * 
-  **Note:** Calling this method from the renderer process is deprecated.
+    *
+    * **Note:** This method is only available in the main process.
     */
   def getLastCrashReport(): CrashReport
   
@@ -61,15 +45,16 @@ trait CrashReporter extends StObject {
   /**
     * Whether reports should be submitted to the server. Set through the `start`
     * method or `setUploadToServer`.
-    * 
-  **Note:** Calling this method from the renderer process is deprecated.
+    *
+    * **Note:** This method is only available in the main process.
     */
   def getUploadToServer(): Boolean
   
   /**
     * Returns all uploaded crash reports. Each report contains the date and uploaded
     * ID.
-  **Note:** Calling this method from the renderer process is deprecated.
+    *
+    * **Note:** This method is only available in the main process.
     */
   def getUploadedReports(): js.Array[CrashReport]
   
@@ -82,8 +67,8 @@ trait CrashReporter extends StObject {
   /**
     * This would normally be controlled by user preferences. This has no effect if
     * called before `start` is called.
-    * 
-  **Note:** Calling this method from the renderer process is deprecated.
+    *
+    * **Note:** This method is only available in the main process.
     */
   def setUploadToServer(uploadToServer: Boolean): Unit
   
@@ -109,8 +94,8 @@ trait CrashReporter extends StObject {
     * must be at most 39 bytes long, and values must be no longer than 127 bytes. Keys
     * with names longer than the maximum will be silently ignored. Key values longer
     * than the maximum length will be truncated.
-    * 
-  **Note:** Calling this method from the renderer process is deprecated.
+    *
+    * **Note:** This method is only available in the main process.
     */
   def start(options: CrashReporterStartOptions): Unit
 }
@@ -118,7 +103,6 @@ object CrashReporter {
   
   inline def apply(
     addExtraParameter: (String, String) => Unit,
-    getCrashesDirectory: () => String,
     getLastCrashReport: () => CrashReport,
     getParameters: () => Record[String, String],
     getUploadToServer: () => Boolean,
@@ -127,15 +111,13 @@ object CrashReporter {
     setUploadToServer: Boolean => Unit,
     start: CrashReporterStartOptions => Unit
   ): CrashReporter = {
-    val __obj = js.Dynamic.literal(addExtraParameter = js.Any.fromFunction2(addExtraParameter), getCrashesDirectory = js.Any.fromFunction0(getCrashesDirectory), getLastCrashReport = js.Any.fromFunction0(getLastCrashReport), getParameters = js.Any.fromFunction0(getParameters), getUploadToServer = js.Any.fromFunction0(getUploadToServer), getUploadedReports = js.Any.fromFunction0(getUploadedReports), removeExtraParameter = js.Any.fromFunction1(removeExtraParameter), setUploadToServer = js.Any.fromFunction1(setUploadToServer), start = js.Any.fromFunction1(start))
+    val __obj = js.Dynamic.literal(addExtraParameter = js.Any.fromFunction2(addExtraParameter), getLastCrashReport = js.Any.fromFunction0(getLastCrashReport), getParameters = js.Any.fromFunction0(getParameters), getUploadToServer = js.Any.fromFunction0(getUploadToServer), getUploadedReports = js.Any.fromFunction0(getUploadedReports), removeExtraParameter = js.Any.fromFunction1(removeExtraParameter), setUploadToServer = js.Any.fromFunction1(setUploadToServer), start = js.Any.fromFunction1(start))
     __obj.asInstanceOf[CrashReporter]
   }
   
   extension [Self <: CrashReporter](x: Self) {
     
     inline def setAddExtraParameter(value: (String, String) => Unit): Self = StObject.set(x, "addExtraParameter", js.Any.fromFunction2(value))
-    
-    inline def setGetCrashesDirectory(value: () => String): Self = StObject.set(x, "getCrashesDirectory", js.Any.fromFunction0(value))
     
     inline def setGetLastCrashReport(value: () => CrashReport): Self = StObject.set(x, "getLastCrashReport", js.Any.fromFunction0(value))
     

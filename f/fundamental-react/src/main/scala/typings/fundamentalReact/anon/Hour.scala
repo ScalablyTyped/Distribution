@@ -1,7 +1,7 @@
 package typings.fundamentalReact.anon
 
-import typings.fundamentalReact.fundamentalReactNumbers.`0`
-import typings.fundamentalReact.fundamentalReactNumbers.`1`
+import typings.fundamentalReact.fundamentalReactInts.`0`
+import typings.fundamentalReact.fundamentalReactInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

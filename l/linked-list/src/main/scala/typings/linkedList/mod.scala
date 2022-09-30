@@ -15,7 +15,7 @@ object mod {
     
     def detach(): this.type = js.native
     
-    var list: List[this.type] = js.native
+    var list: typings.linkedList.mod.List[this.type] = js.native
     
     var next: this.type = js.native
     
@@ -52,8 +52,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def from[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Item */ Any */](items: js.Iterable[T]): List[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[List[T]]
+    inline def from[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Item */ Any */](items: js.Iterable[T]): typings.linkedList.mod.List[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[typings.linkedList.mod.List[T]]
     
-    inline def of[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Item */ Any */](items: T*): List[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[List[T]]
+    inline def of[T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify List.Item */ Any */](items: T*): typings.linkedList.mod.List[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.linkedList.mod.List[T]]
   }
 }

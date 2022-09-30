@@ -1,8 +1,8 @@
 package typings.cssDeclarationSorter
 
-import typings.cssDeclarationSorter.cssDeclarationSorterNumbers.`-1`
-import typings.cssDeclarationSorter.cssDeclarationSorterNumbers.`0`
-import typings.cssDeclarationSorter.cssDeclarationSorterNumbers.`1`
+import typings.cssDeclarationSorter.cssDeclarationSorterInts.`-1`
+import typings.cssDeclarationSorter.cssDeclarationSorterInts.`0`
+import typings.cssDeclarationSorter.cssDeclarationSorterInts.`1`
 import typings.cssDeclarationSorter.mod.SortFunction
 import typings.cssDeclarationSorter.mod.SortOrder
 import org.scalablytyped.runtime.StObject

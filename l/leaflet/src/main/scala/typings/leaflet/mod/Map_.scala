@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("leaflet", "Map")
 @js.native
-class Map_ protected () extends Evented {
+open class Map_ protected () extends Evented {
   def this(element: String) = this()
   def this(element: HTMLElement) = this()
   def this(element: String, options: MapOptions) = this()
@@ -50,7 +50,7 @@ class Map_ protected () extends Evented {
   var dragging: Handler = js.native
   
   def eachLayer(fn: js.Function1[/* layer */ Layer, Unit]): this.type = js.native
-  def eachLayer(fn: js.Function1[/* layer */ Layer, Unit], context: js.Any): this.type = js.native
+  def eachLayer(fn: js.Function1[/* layer */ Layer, Unit], context: Any): this.type = js.native
   
   def fitBounds(bounds: LatLngBoundsExpression): this.type = js.native
   def fitBounds(bounds: LatLngBoundsExpression, options: FitBoundsOptions): this.type = js.native
@@ -99,6 +99,7 @@ class Map_ protected () extends Evented {
   
   def getRenderer(layer: Path): Renderer = js.native
   
+  def getScaleZoom(scale: Double): Double = js.native
   def getScaleZoom(scale: Double, fromZoom: Double): Double = js.native
   
   def getSize(): Point_ = js.native
@@ -106,6 +107,7 @@ class Map_ protected () extends Evented {
   def getZoom(): Double = js.native
   
   // Conversion methods
+  def getZoomScale(toZoom: Double): Double = js.native
   def getZoomScale(toZoom: Double, fromZoom: Double): Double = js.native
   
   def hasLayer(layer: Layer): Boolean = js.native
@@ -159,6 +161,7 @@ class Map_ protected () extends Evented {
   def panTo(latlng: LatLngExpression): this.type = js.native
   def panTo(latlng: LatLngExpression, options: PanOptions): this.type = js.native
   
+  def project(latlng: LatLngExpression): Point_ = js.native
   def project(latlng: LatLngExpression, zoom: Double): Point_ = js.native
   
   // Alternatively, HandlerClass: new(map: Map) => Handler
@@ -177,8 +180,10 @@ class Map_ protected () extends Evented {
   def setMinZoom(zoom: Double): this.type = js.native
   
   // Methods for modifying map state
+  def setView(center: LatLngExpression): this.type = js.native
   def setView(center: LatLngExpression, zoom: Double): this.type = js.native
   def setView(center: LatLngExpression, zoom: Double, options: ZoomPanOptions): this.type = js.native
+  def setView(center: LatLngExpression, zoom: Unit, options: ZoomPanOptions): this.type = js.native
   
   def setZoom(zoom: Double): this.type = js.native
   def setZoom(zoom: Double, options: ZoomPanOptions): this.type = js.native
@@ -196,10 +201,11 @@ class Map_ protected () extends Evented {
   
   var touchZoom: Handler = js.native
   
+  def unproject(point: PointExpression): LatLng_ = js.native
   def unproject(point: PointExpression, zoom: Double): LatLng_ = js.native
   
   def whenReady(fn: js.Function0[Unit]): this.type = js.native
-  def whenReady(fn: js.Function0[Unit], context: js.Any): this.type = js.native
+  def whenReady(fn: js.Function0[Unit], context: Any): this.type = js.native
   
   def wrapLatLng(latlng: LatLngExpression): LatLng_ = js.native
   

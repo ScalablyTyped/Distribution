@@ -31,6 +31,10 @@ object reactNativePermissionsStrings {
   inline def androidDotpermissionDotACCESS_FINE_LOCATION: androidDotpermissionDotACCESS_FINE_LOCATION = "android.permission.ACCESS_FINE_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_FINE_LOCATION]
   
   @js.native
+  sealed trait androidDotpermissionDotACCESS_MEDIA_LOCATION extends StObject
+  inline def androidDotpermissionDotACCESS_MEDIA_LOCATION: androidDotpermissionDotACCESS_MEDIA_LOCATION = "android.permission.ACCESS_MEDIA_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_MEDIA_LOCATION]
+  
+  @js.native
   sealed trait androidDotpermissionDotACTIVITY_RECOGNITION extends StObject
   inline def androidDotpermissionDotACTIVITY_RECOGNITION: androidDotpermissionDotACTIVITY_RECOGNITION = "android.permission.ACTIVITY_RECOGNITION".asInstanceOf[androidDotpermissionDotACTIVITY_RECOGNITION]
   
@@ -39,8 +43,24 @@ object reactNativePermissionsStrings {
   inline def androidDotpermissionDotANSWER_PHONE_CALLS: androidDotpermissionDotANSWER_PHONE_CALLS = "android.permission.ANSWER_PHONE_CALLS".asInstanceOf[androidDotpermissionDotANSWER_PHONE_CALLS]
   
   @js.native
+  sealed trait androidDotpermissionDotBLUETOOTH_ADVERTISE extends StObject
+  inline def androidDotpermissionDotBLUETOOTH_ADVERTISE: androidDotpermissionDotBLUETOOTH_ADVERTISE = "android.permission.BLUETOOTH_ADVERTISE".asInstanceOf[androidDotpermissionDotBLUETOOTH_ADVERTISE]
+  
+  @js.native
+  sealed trait androidDotpermissionDotBLUETOOTH_CONNECT extends StObject
+  inline def androidDotpermissionDotBLUETOOTH_CONNECT: androidDotpermissionDotBLUETOOTH_CONNECT = "android.permission.BLUETOOTH_CONNECT".asInstanceOf[androidDotpermissionDotBLUETOOTH_CONNECT]
+  
+  @js.native
+  sealed trait androidDotpermissionDotBLUETOOTH_SCAN extends StObject
+  inline def androidDotpermissionDotBLUETOOTH_SCAN: androidDotpermissionDotBLUETOOTH_SCAN = "android.permission.BLUETOOTH_SCAN".asInstanceOf[androidDotpermissionDotBLUETOOTH_SCAN]
+  
+  @js.native
   sealed trait androidDotpermissionDotBODY_SENSORS extends StObject
   inline def androidDotpermissionDotBODY_SENSORS: androidDotpermissionDotBODY_SENSORS = "android.permission.BODY_SENSORS".asInstanceOf[androidDotpermissionDotBODY_SENSORS]
+  
+  @js.native
+  sealed trait androidDotpermissionDotBODY_SENSORS_BACKGROUND extends StObject
+  inline def androidDotpermissionDotBODY_SENSORS_BACKGROUND: androidDotpermissionDotBODY_SENSORS_BACKGROUND = "android.permission.BODY_SENSORS_BACKGROUND".asInstanceOf[androidDotpermissionDotBODY_SENSORS_BACKGROUND]
   
   @js.native
   sealed trait androidDotpermissionDotCALL_PHONE extends StObject
@@ -53,6 +73,14 @@ object reactNativePermissionsStrings {
   @js.native
   sealed trait androidDotpermissionDotGET_ACCOUNTS extends StObject
   inline def androidDotpermissionDotGET_ACCOUNTS: androidDotpermissionDotGET_ACCOUNTS = "android.permission.GET_ACCOUNTS".asInstanceOf[androidDotpermissionDotGET_ACCOUNTS]
+  
+  @js.native
+  sealed trait androidDotpermissionDotNEARBY_WIFI_DEVICES extends StObject
+  inline def androidDotpermissionDotNEARBY_WIFI_DEVICES: androidDotpermissionDotNEARBY_WIFI_DEVICES = "android.permission.NEARBY_WIFI_DEVICES".asInstanceOf[androidDotpermissionDotNEARBY_WIFI_DEVICES]
+  
+  @js.native
+  sealed trait androidDotpermissionDotPOST_NOTIFICATIONS extends StObject
+  inline def androidDotpermissionDotPOST_NOTIFICATIONS: androidDotpermissionDotPOST_NOTIFICATIONS = "android.permission.POST_NOTIFICATIONS".asInstanceOf[androidDotpermissionDotPOST_NOTIFICATIONS]
   
   @js.native
   sealed trait androidDotpermissionDotPROCESS_OUTGOING_CALLS extends StObject
@@ -73,6 +101,18 @@ object reactNativePermissionsStrings {
   @js.native
   sealed trait androidDotpermissionDotREAD_EXTERNAL_STORAGE extends StObject
   inline def androidDotpermissionDotREAD_EXTERNAL_STORAGE: androidDotpermissionDotREAD_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE".asInstanceOf[androidDotpermissionDotREAD_EXTERNAL_STORAGE]
+  
+  @js.native
+  sealed trait androidDotpermissionDotREAD_MEDIA_AUDIO extends StObject
+  inline def androidDotpermissionDotREAD_MEDIA_AUDIO: androidDotpermissionDotREAD_MEDIA_AUDIO = "android.permission.READ_MEDIA_AUDIO".asInstanceOf[androidDotpermissionDotREAD_MEDIA_AUDIO]
+  
+  @js.native
+  sealed trait androidDotpermissionDotREAD_MEDIA_IMAGES extends StObject
+  inline def androidDotpermissionDotREAD_MEDIA_IMAGES: androidDotpermissionDotREAD_MEDIA_IMAGES = "android.permission.READ_MEDIA_IMAGES".asInstanceOf[androidDotpermissionDotREAD_MEDIA_IMAGES]
+  
+  @js.native
+  sealed trait androidDotpermissionDotREAD_MEDIA_VIDEO extends StObject
+  inline def androidDotpermissionDotREAD_MEDIA_VIDEO: androidDotpermissionDotREAD_MEDIA_VIDEO = "android.permission.READ_MEDIA_VIDEO".asInstanceOf[androidDotpermissionDotREAD_MEDIA_VIDEO]
   
   @js.native
   sealed trait androidDotpermissionDotREAD_PHONE_NUMBERS extends StObject
@@ -109,6 +149,10 @@ object reactNativePermissionsStrings {
   @js.native
   sealed trait androidDotpermissionDotUSE_SIP extends StObject
   inline def androidDotpermissionDotUSE_SIP: androidDotpermissionDotUSE_SIP = "android.permission.USE_SIP".asInstanceOf[androidDotpermissionDotUSE_SIP]
+  
+  @js.native
+  sealed trait androidDotpermissionDotUWB_RANGING extends StObject
+  inline def androidDotpermissionDotUWB_RANGING: androidDotpermissionDotUWB_RANGING = "android.permission.UWB_RANGING".asInstanceOf[androidDotpermissionDotUWB_RANGING]
   
   @js.native
   sealed trait androidDotpermissionDotWRITE_CALENDAR extends StObject
@@ -237,6 +281,12 @@ object reactNativePermissionsStrings {
   @js.native
   sealed trait limited extends StObject
   inline def limited: limited = "limited".asInstanceOf[limited]
+  
+  @js.native
+  sealed trait providesAppSettings
+    extends StObject
+       with NotificationOption
+  inline def providesAppSettings: providesAppSettings = "providesAppSettings".asInstanceOf[providesAppSettings]
   
   @js.native
   sealed trait provisional

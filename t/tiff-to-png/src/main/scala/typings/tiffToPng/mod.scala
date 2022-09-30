@@ -2,8 +2,8 @@ package typings.tiffToPng
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tiffToPng.tiffToPngBooleans.`true`
-import typings.tiffToPng.tiffToPngNumbers.`1`
-import typings.tiffToPng.tiffToPngNumbers.`2`
+import typings.tiffToPng.tiffToPngInts.`1`
+import typings.tiffToPng.tiffToPngInts.`2`
 import typings.tiffToPng.tiffToPngStrings.A3
 import typings.tiffToPng.tiffToPngStrings.A4
 import typings.tiffToPng.tiffToPngStrings.jpg

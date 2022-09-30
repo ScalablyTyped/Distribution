@@ -20,16 +20,13 @@ trait Dock extends StObject {
     * However, the request remains active until either the application becomes active
     * or the request is canceled.
     *
-    * **Nota Bene:** This method can only be used while the app is not focused; when
-    * the app is focused it will return -1.
+    * **Note:** This method can only be used while the app is not focused; when the
+    * app is focused it will return -1.
     *
     * @platform darwin
     */
   def bounce(): Double = js.native
-  @JSName("bounce")
-  def bounce_critical(`type`: critical): Double = js.native
-  @JSName("bounce")
-  def bounce_informational(`type`: informational): Double = js.native
+  def bounce(`type`: critical | informational): Double = js.native
   
   /**
     * Cancel the bounce of `id`.

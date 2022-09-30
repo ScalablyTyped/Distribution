@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object byIdReferenceMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/ByIdReference", "ByIdReference")
+  @JSImport("mendixmodelsdk/src/sdk/internal/ByIdReference", "ByIdReference")
   @js.native
-  class ByIdReference[T /* <: AbstractElement[IAbstractModel, Container] */] protected () extends StObject {
+  open class ByIdReference[T /* <: AbstractElement[IAbstractModel, Container] */] protected () extends StObject {
     /**
       * Constructs and returns a new reference instance, that is owned (by a property of) an abstract element.
       */

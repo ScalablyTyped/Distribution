@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "domainmodels.MaxLengthRuleInfo")
 @js.native
-class MaxLengthRuleInfo protected ()
+open class MaxLengthRuleInfo protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.MaxLengthRuleInfo {
   def this(
     model: AbstractModel,

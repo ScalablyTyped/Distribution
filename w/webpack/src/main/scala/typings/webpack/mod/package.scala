@@ -57,9 +57,9 @@ import typings.webpack.anon.Apply
 import typings.webpack.anon.OmitStatsOptionscontextch
 import typings.webpack.mod.^
 import typings.webpack.webpackBooleans.`false`
-import typings.webpack.webpackNumbers.`-1`
-import typings.webpack.webpackNumbers.`0`
-import typings.webpack.webpackNumbers.`1`
+import typings.webpack.webpackInts.`-1`
+import typings.webpack.webpackInts.`0`
+import typings.webpack.webpackInts.`1`
 import typings.webpack.webpackStrings.`root-of-chunk`
 import typings.webpack.webpackStrings.chunk
 import typings.webpack.webpackStrings.module

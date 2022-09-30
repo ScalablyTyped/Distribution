@@ -40,7 +40,7 @@ object blockSettingsMenuMod {
         
         inline def setClientIds(value: js.Array[String]): Self = StObject.set(x, "clientIds", value.asInstanceOf[js.Any])
         
-        inline def setClientIdsVarargs(value: String*): Self = StObject.set(x, "clientIds", js.Array(value :_*))
+        inline def setClientIdsVarargs(value: String*): Self = StObject.set(x, "clientIds", js.Array(value*))
       }
     }
   }

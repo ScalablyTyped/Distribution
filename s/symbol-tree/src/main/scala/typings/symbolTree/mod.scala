@@ -1,10 +1,10 @@
 package typings.symbolTree
 
-import typings.symbolTree.symbolTreeNumbers.`16`
-import typings.symbolTree.symbolTreeNumbers.`1`
-import typings.symbolTree.symbolTreeNumbers.`2`
-import typings.symbolTree.symbolTreeNumbers.`4`
-import typings.symbolTree.symbolTreeNumbers.`8`
+import typings.symbolTree.symbolTreeInts.`16`
+import typings.symbolTree.symbolTreeInts.`1`
+import typings.symbolTree.symbolTreeInts.`2`
+import typings.symbolTree.symbolTreeInts.`4`
+import typings.symbolTree.symbolTreeInts.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

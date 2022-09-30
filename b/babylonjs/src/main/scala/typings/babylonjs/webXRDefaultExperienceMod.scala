@@ -1,18 +1,18 @@
 package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
+import typings.babylonjs.anon.PartialIWebXRControllerPo
+import typings.babylonjs.anon.PartialIWebXRInputOptions
+import typings.babylonjs.anon.PartialIWebXRNearInteract
+import typings.babylonjs.anon.PartialIWebXRTeleportatio
+import typings.babylonjs.anon.PartialWebXREnterExitUIOp
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.webXRControllerPointerSelectionMod.IWebXRControllerPointerSelectionOptions
 import typings.babylonjs.webXRControllerPointerSelectionMod.WebXRControllerPointerSelection
-import typings.babylonjs.webXRControllerTeleportationMod.IWebXRTeleportationOptions
 import typings.babylonjs.webXRControllerTeleportationMod.WebXRMotionControllerTeleportation
 import typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI
-import typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIOptions
 import typings.babylonjs.webXRExperienceHelperMod.WebXRExperienceHelper
-import typings.babylonjs.webXRInputMod.IWebXRInputOptions
 import typings.babylonjs.webXRInputMod.WebXRInput
 import typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions
-import typings.babylonjs.webXRNearInteractionMod.IWebXRNearInteractionOptions
 import typings.babylonjs.webXRNearInteractionMod.WebXRNearInteraction
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
 import org.scalablytyped.runtime.StObject
@@ -121,14 +121,14 @@ object webXRDefaultExperienceMod {
     var ignoreNativeCameraTransformation: js.UndefOr[Boolean] = js.native
     
     /**
-      * Disable the controller mesh-loading. Can be used if you want to load your own meshes
+      * Optional configuration for the XR input object
       */
-    var inputOptions: js.UndefOr[IWebXRInputOptions] = js.native
+    var inputOptions: js.UndefOr[PartialIWebXRInputOptions] = js.native
     
     /**
       * optional configuration for near interaction
       */
-    var nearInteractionOptions: js.UndefOr[IWebXRNearInteractionOptions] = js.native
+    var nearInteractionOptions: js.UndefOr[PartialIWebXRNearInteract] = js.native
     
     /**
       * A list of optional features to init the session with
@@ -144,7 +144,7 @@ object webXRDefaultExperienceMod {
     /**
       * optional configuration for pointer selection
       */
-    var pointerSelectionOptions: js.UndefOr[IWebXRControllerPointerSelectionOptions] = js.native
+    var pointerSelectionOptions: js.UndefOr[PartialIWebXRControllerPo] = js.native
     
     /**
       * An optional rendering group id that will be set globally for teleportation, pointer selection and default controller meshes
@@ -154,12 +154,12 @@ object webXRDefaultExperienceMod {
     /**
       * optional configuration for teleportation
       */
-    var teleportationOptions: js.UndefOr[IWebXRTeleportationOptions] = js.native
+    var teleportationOptions: js.UndefOr[PartialIWebXRTeleportatio] = js.native
     
     /**
       * optional UI options. This can be used among other to change session mode and reference space type
       */
-    var uiOptions: js.UndefOr[WebXREnterExitUIOptions] = js.native
+    var uiOptions: js.UndefOr[PartialWebXREnterExitUIOp] = js.native
     
     /**
       * When loading teleportation and pointer select, use stable versions instead of latest.

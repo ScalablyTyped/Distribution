@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object enterLeaveCounterMod {
   
-  @JSImport("react-dnd-html5-backend/lib/EnterLeaveCounter", "EnterLeaveCounter")
+  @JSImport("react-dnd-html5-backend/dist/EnterLeaveCounter", "EnterLeaveCounter")
   @js.native
-  class EnterLeaveCounter protected () extends StObject {
+  open class EnterLeaveCounter protected () extends StObject {
     def this(isNodeInDocument: NodePredicate) = this()
     
     def enter(): Boolean = js.native
     def enter(enteringNode: EventTarget): Boolean = js.native
     
-    /* private */ var entered: js.Any = js.native
+    /* private */ var entered: Any = js.native
     
-    /* private */ var isNodeInDocument: js.Any = js.native
+    /* private */ var isNodeInDocument: Any = js.native
     
     def leave(): Boolean = js.native
     def leave(leavingNode: EventTarget): Boolean = js.native

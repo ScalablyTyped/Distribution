@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rate-limiter-flexible" : "2.3.10"
+      "rate-limiter-flexible" : "2.3.11"
     }
   ],
   "test-dependencies" : [
     {
-      "rate-limiter-flexible" : "2.3.10"
+      "rate-limiter-flexible" : "2.3.11"
     }
   ],
   "compile-devDependencies" : [

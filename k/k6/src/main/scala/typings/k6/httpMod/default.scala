@@ -253,5 +253,5 @@ object default {
     * @example
     * http.get(http.url`http://example.com/posts/${id}`) // tags.name="http://example.com/posts/${}",
     */
-  inline def url(strings: TemplateStringsArray, args: (String | Double | Boolean)*): HttpURL = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HttpURL]
+  inline def url(strings: TemplateStringsArray, args: (String | Double | Boolean)*): HttpURL = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(scala.List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HttpURL]
 }

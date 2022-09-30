@@ -15,37 +15,34 @@ trait SubMesh
     */
   def IsGlobal: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _alphaIndex: Double = js.native
   
   /* private */ var _boundingInfo: Any = js.native
   
   /**
-    * @param collider
-    * @hidden
+    * @internal
     */
   def _checkCollision(collider: Collider): Boolean = js.native
   
   /* private */ var _currentMaterial: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _distanceToCamera: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   def _drawWrapper: DrawWrapper = js.native
   
-  /** @hidden */
+  /** @internal */
   def _drawWrapperOverride: Nullable[DrawWrapper] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _drawWrappers: js.Array[DrawWrapper] = js.native
   
   /* private */ var _engine: Any = js.native
   
   /**
-    * @param passId
-    * @param createIfNotExisting
-    * @hidden
+    * @internal
     */
   def _getDrawWrapper(): js.UndefOr[DrawWrapper] = js.native
   def _getDrawWrapper(passId: Double): js.UndefOr[DrawWrapper] = js.native
@@ -53,75 +50,51 @@ trait SubMesh
   def _getDrawWrapper(passId: Unit, createIfNotExisting: Boolean): js.UndefOr[DrawWrapper] = js.native
   
   /**
-    * @param indices
-    * @param engine
-    * @hidden
+    * @internal
     */
   def _getLinesIndexBuffer(indices: IndicesArray, engine: Engine): DataBuffer = js.native
   
-  /** @hidden */
+  /** @internal */
   var _id: Double = js.native
   
   /**
-    * @param ray
-    * @param positions
-    * @param indices
-    * @param intersectionThreshold
-    * @param fastCheck
-    * @hidden
+    * @internal
     */
   /* private */ var _intersectLines: Any = js.native
   
   /**
-    * @param ray
-    * @param positions
-    * @param indices
-    * @param step
-    * @param checkStopper
-    * @param fastCheck
-    * @param trianglePredicate
-    * @hidden
+    * @internal
     */
   /* private */ var _intersectTriangles: Any = js.native
   
   /**
-    * @param ray
-    * @param positions
-    * @param indices
-    * @param intersectionThreshold
-    * @param fastCheck
-    * @hidden
+    * @internal
     */
   /* private */ var _intersectUnIndexedLines: Any = js.native
   
   /**
-    * @param ray
-    * @param positions
-    * @param indices
-    * @param fastCheck
-    * @param trianglePredicate
-    * @hidden
+    * @internal
     */
   /* private */ var _intersectUnIndexedTriangles: Any = js.native
   
   /* private */ var _isMultiMaterial: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _lastColliderTransformMatrix: Nullable[Matrix] = js.native
   
-  /** @hidden */
+  /** @internal */
   var _lastColliderWorldVertices: Nullable[js.Array[Vector3]] = js.native
   
   /* private */ var _linesIndexBuffer: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   var _linesIndexCount: Double = js.native
   
   /* private */ var _mainDrawWrapperOverride: Any = js.native
   
   /* private */ var _mesh: Any = js.native
   
-  /** @hidden */
+  /** @internal */
   def _projectOnTrianglesToRef(
     vector: Vector3,
     positions: js.Array[Vector3],
@@ -131,33 +104,33 @@ trait SubMesh
     ref: Vector3
   ): Double = js.native
   
-  /** @hidden */
+  /** @internal */
   def _projectOnUnIndexedTrianglesToRef(vector: Vector3, positions: js.Array[Vector3], indices: IndicesArray, ref: Vector3): Double = js.native
   
-  /** @hidden */
+  /** @internal */
   def _rebuild(): Unit = js.native
   
   /**
-    * @param passId
-    * @param disposeWrapper
-    * @hidden
+    * @internal
     */
   def _removeDrawWrapper(passId: Double): Unit = js.native
   def _removeDrawWrapper(passId: Double, disposeWrapper: Boolean): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _renderId: Double = js.native
   
   /* private */ var _renderingMesh: Any = js.native
   
   /**
-    * @param wrapper
-    * @hidden
+    * @internal
     */
   def _setMainDrawWrapperOverride(wrapper: Nullable[DrawWrapper]): Unit = js.native
   
-  /** @hidden */
+  /** @internal */
   var _trianglePlanes: js.Array[Plane] = js.native
+  
+  /** @internal */
+  var _wasDispatched: Boolean = js.native
   
   /**
     * Checks if the submesh intersects with a ray

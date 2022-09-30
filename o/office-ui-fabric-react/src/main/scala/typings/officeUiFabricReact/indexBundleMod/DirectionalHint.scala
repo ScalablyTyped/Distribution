@@ -1,19 +1,19 @@
 package typings.officeUiFabricReact.indexBundleMod
 
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`10`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`11`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`12`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`13`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`2`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`3`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`4`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`5`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
-import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`10`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`11`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`12`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`13`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`1`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`2`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`3`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`4`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`5`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`6`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`7`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`8`
+import typings.officeUiFabricReact.officeUiFabricReactInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

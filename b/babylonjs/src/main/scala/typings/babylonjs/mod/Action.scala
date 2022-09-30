@@ -32,15 +32,13 @@ object Action {
   inline def _GetTargetProperty(target: typings.babylonjs.nodeMod.Node): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   /**
     * Internal only
-    * @param target
-    * @hidden
+    * @internal
     */
   inline def _GetTargetProperty(target: typings.babylonjs.sceneMod.Scene): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("_GetTargetProperty")(target.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   /**
     * Internal only
-    * @param value
-    * @hidden
+    * @internal
     */
   inline def _SerializeValueAsString(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_SerializeValueAsString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

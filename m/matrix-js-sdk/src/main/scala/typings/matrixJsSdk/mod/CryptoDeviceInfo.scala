@@ -1,9 +1,9 @@
 package typings.matrixJsSdk.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.matrixJsSdk.matrixJsSdkNumbers.`-1`
-import typings.matrixJsSdk.matrixJsSdkNumbers.`0`
-import typings.matrixJsSdk.matrixJsSdkNumbers.`1`
+import typings.matrixJsSdk.matrixJsSdkInts.`-1`
+import typings.matrixJsSdk.matrixJsSdkInts.`0`
+import typings.matrixJsSdk.matrixJsSdkInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -81,21 +81,21 @@ object prismMod {
   
   inline def filter[A](predicate: Predicate[A]): js.Function1[/* sa */ Prism_[Any, A], Prism_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, A], Prism_[Any, A]]]
   
-  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Prism_[Any, A], Prism_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, A], Prism_[Any, B]]]
+  inline def filter_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Prism_[Any, A], Prism_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, A], Prism_[Any, B]]]
   
   inline def findFirst[A](predicate: Predicate[A]): js.Function1[/* sa */ Prism_[Any, js.Array[A]], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, js.Array[A]], Optional_[Any, A]]]
   
   inline def findFirstNonEmpty[A](predicate: Predicate[A]): js.Function1[/* sa */ Prism_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, A]]]
   
-  inline def findFirstNonEmpty_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Prism_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]]]
+  inline def findFirstNonEmpty_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Prism_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirstNonEmpty")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, ReadonlyNonEmptyArray_[A]], Optional_[Any, B]]]
   
-  inline def findFirst_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Prism_[Any, js.Array[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, js.Array[A]], Optional_[Any, B]]]
+  inline def findFirst_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* sa */ Prism_[Any, js.Array[A]], Optional_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFirst")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Prism_[Any, js.Array[A]], Optional_[Any, B]]]
   
   inline def fromNullable[S, A](sa: Prism_[S, A]): Prism_[S, NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(sa.asInstanceOf[js.Any]).asInstanceOf[Prism_[S, NonNullable[A]]]
   
   inline def fromPredicate[A](predicate: Predicate[A]): Prism_[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[Prism_[A, A]]
   
-  inline def fromPredicate_SA_S[S, A /* <: S */](refinement: Refinement[S, A]): Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[Prism_[S, A]]
+  inline def fromPredicate_SA[S, A /* <: S */](refinement: Refinement[S, A]): Prism_[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[Prism_[S, A]]
   
   inline def id[S](): Prism_[S, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[Prism_[S, S]]
   
@@ -238,7 +238,7 @@ object prismMod {
   {[ K in P ]: A[K]}
     */ typings.monocleTs.monocleTsStrings.props & TopLevel[A]
     ]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("props")((scala.List(props_0.asInstanceOf[js.Any], props_1.asInstanceOf[js.Any])).`++`(props_2.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[
     /* sa */ Prism_[Any, A], 
     Optional_[
       Any, 

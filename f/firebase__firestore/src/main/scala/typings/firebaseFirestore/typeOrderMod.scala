@@ -1,17 +1,17 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.firebaseFirestoreNumbers._9007199254740991
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`10`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`4`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`5`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`6`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`7`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`8`
-import typings.firebaseFirestore.firebaseFirestoreNumbers.`9`
+import typings.firebaseFirestore.firebaseFirestoreDoubles.`9007199254740991`
+import typings.firebaseFirestore.firebaseFirestoreInts.`0`
+import typings.firebaseFirestore.firebaseFirestoreInts.`10`
+import typings.firebaseFirestore.firebaseFirestoreInts.`1`
+import typings.firebaseFirestore.firebaseFirestoreInts.`2`
+import typings.firebaseFirestore.firebaseFirestoreInts.`3`
+import typings.firebaseFirestore.firebaseFirestoreInts.`4`
+import typings.firebaseFirestore.firebaseFirestoreInts.`5`
+import typings.firebaseFirestore.firebaseFirestoreInts.`6`
+import typings.firebaseFirestore.firebaseFirestoreInts.`7`
+import typings.firebaseFirestore.firebaseFirestoreInts.`8`
+import typings.firebaseFirestore.firebaseFirestoreInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,18 +19,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typeOrderMod {
   
   /* Rewritten from type alias, can be one of: 
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`4`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`5`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`6`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`7`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`8`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`9`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers.`10`
-    - typings.firebaseFirestore.firebaseFirestoreNumbers._9007199254740991
+    - typings.firebaseFirestore.firebaseFirestoreInts.`0`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`1`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`2`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`3`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`4`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`5`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`6`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`7`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`8`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`9`
+    - typings.firebaseFirestore.firebaseFirestoreInts.`10`
+    - typings.firebaseFirestore.firebaseFirestoreDoubles.`9007199254740991`
   */
   trait TypeOrder extends StObject
   object TypeOrder {
@@ -43,7 +43,7 @@ object typeOrderMod {
     
     inline def GeoPointValue: `8` = 8.asInstanceOf[`8`]
     
-    inline def MaxValue: _9007199254740991 = 9007199254740991.0.asInstanceOf[_9007199254740991]
+    inline def MaxValue: `9007199254740991` = 9007199254740991d.asInstanceOf[`9007199254740991`]
     
     inline def NullValue: `0` = 0.asInstanceOf[`0`]
     

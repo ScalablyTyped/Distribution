@@ -1,15 +1,16 @@
 package typings.webdriver
 
 import typings.std.Error
-import typings.std.PropertyDescriptor
 import typings.std.Record
+import typings.wdioTypes.optionsMod.RequestLibOptions
+import typings.wdioTypes.optionsMod.WebDriver
 import typings.webdriver.anon.Capabilities
 import typings.webdriver.anon.IsAndroid
-import typings.webdriver.anon.PartialOptions
 import typings.webdriver.anon.PartialSessionFlags
+import typings.webdriver.anon.PartialWebDriver
 import typings.webdriver.requestMod.WebDriverResponse
+import typings.webdriver.typesMod.Client
 import typings.webdriver.typesMod.JSONWPCommandError
-import typings.webdriver.typesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,31 +23,37 @@ object utilsMod {
   
   @JSImport("webdriver/build/utils", "CustomRequestError")
   @js.native
-  class CustomRequestError protected ()
+  open class CustomRequestError protected ()
     extends StObject
        with Error {
-    def this(body: WebDriverResponse) = this()
+    def this(body: WebDriverResponse, requestOptions: Any) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def getEnvironmentVars(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsSauceIsSeleniumStandalone: PartialSessionFlags): IsAndroid = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentVars")(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[IsAndroid]
+  inline def getEnvironmentVars(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsFirefoxIsSauceIsSeleniumStandalone: PartialSessionFlags): IsAndroid = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentVars")(hasIsW3CIsMobileIsIOSIsAndroidIsChromeIsFirefoxIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[IsAndroid]
   
-  inline def getErrorFromResponseBody(body: js.Any): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFromResponseBody")(body.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def getErrorFromResponseBody(body: Any, requestOptions: Any): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getErrorFromResponseBody")(body.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
-  inline def getPrototype(hasIsW3CIsChromeIsMobileIsSauceIsSeleniumStandalone: PartialSessionFlags): Record[String, PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(hasIsW3CIsChromeIsMobileIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[Record[String, PropertyDescriptor]]
+  inline def getPrototype(hasIsW3CIsChromeIsFirefoxIsMobileIsSauceIsSeleniumStandalone: PartialSessionFlags): Record[String, js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(hasIsW3CIsChromeIsFirefoxIsMobileIsSauceIsSeleniumStandalone.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.PropertyDescriptor]]
   
   inline def getSessionError(err: JSONWPCommandError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getSessionError(err: JSONWPCommandError, params: PartialOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getSessionError(err: JSONWPCommandError, params: PartialWebDriver): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSessionError")(err.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getTimeoutError(error: js.Error, requestOptions: RequestLibOptions): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeoutError")(error.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   inline def isSuccessfulResponse(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")().asInstanceOf[Boolean]
   inline def isSuccessfulResponse(statusCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isSuccessfulResponse(statusCode: Double, body: WebDriverResponse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isSuccessfulResponse(statusCode: Unit, body: WebDriverResponse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSuccessfulResponse")(statusCode.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def startWebDriverSession(params: Options): js.Promise[Capabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("startWebDriverSession")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Capabilities]]
+  inline def setupDirectConnect(client: Client): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDirectConnect")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def startWebDriverSession(params: WebDriver): js.Promise[Capabilities] = ^.asInstanceOf[js.Dynamic].applyDynamic("startWebDriverSession")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Capabilities]]
 }

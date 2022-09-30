@@ -23,7 +23,7 @@ import typings.chromeApps.anon.Partitions
 import typings.chromeApps.anon.Tcp
 import typings.chromeApps.anon.`3D`
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsNumbers.`2`
+import typings.chromeApps.chromeAppsInts.`2`
 import typings.chromeApps.chromeAppsStrings.NEW_NOTE
 import typings.chromeApps.chromeAppsStrings.new_note_
 import typings.std.Exclude

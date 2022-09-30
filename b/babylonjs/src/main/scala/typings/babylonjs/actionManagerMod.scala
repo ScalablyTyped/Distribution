@@ -20,15 +20,12 @@ object actionManagerMod {
     def this(scene: Nullable[Scene]) = this()
     
     /**
-      * @param target
-      * @param propertyPath
-      * @hidden
+      * @internal
       */
     def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
     
     /**
-      * @param propertyPath
-      * @hidden
+      * @internal
       */
     def _getProperty(propertyPath: String): String = js.native
     

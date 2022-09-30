@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Find")
+@JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Find")
 @js.native
-class Find protected () extends InspectAttribute {
+open class Find protected () extends InspectAttribute {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -25,7 +25,7 @@ class Find protected () extends InspectAttribute {
 }
 object Find {
   
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Find")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Find")
   @js.native
   val ^ : js.Any = js.native
   
@@ -46,13 +46,13 @@ object Find {
   inline def createIn(container: ListOperationAction): Find = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Find]
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Find.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Find.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Find.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/microflows", "microflows.Find.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

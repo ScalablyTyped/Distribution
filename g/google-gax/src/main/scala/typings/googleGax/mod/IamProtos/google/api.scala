@@ -9,7 +9,6 @@ import typings.googleGax.iamServiceMod.google.api.IResourceReference
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object api {
     * Constructs a new CustomHttpPattern.
     * @param [properties] Properties to set
     */
-  class CustomHttpPattern ()
+  open class CustomHttpPattern ()
     extends typings.googleGax.iamServiceMod.google.api.CustomHttpPattern {
     def this(properties: ICustomHttpPattern) = this()
   }
@@ -43,6 +42,8 @@ object api {
     inline def create(): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     inline def create(properties: ICustomHttpPattern): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -54,9 +55,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -66,7 +66,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     
     /**
       * Encodes the specified CustomHttpPattern message. Does not implicitly {@link google.api.CustomHttpPattern.verify|verify} messages.
@@ -94,7 +93,7 @@ object api {
       * @returns CustomHttpPattern
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.api.CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.CustomHttpPattern]
     
     /**
       * Creates a plain object from a CustomHttpPattern message. Also converts values to other types if specified.
@@ -103,8 +102,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.CustomHttpPattern): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.CustomHttpPattern, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.CustomHttpPattern): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.CustomHttpPattern, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a CustomHttpPattern message.
@@ -112,7 +111,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** FieldBehavior enum. */
@@ -143,7 +142,7 @@ object api {
     * Constructs a new Http.
     * @param [properties] Properties to set
     */
-  class Http ()
+  open class Http ()
     extends typings.googleGax.iamServiceMod.google.api.Http {
     def this(properties: IHttp) = this()
   }
@@ -162,6 +161,8 @@ object api {
     inline def create(): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     inline def create(properties: IHttp): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     /**
       * Decodes a Http message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -173,9 +174,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.api.Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     /**
       * Decodes a Http message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -185,7 +185,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     
     /**
       * Encodes the specified Http message. Does not implicitly {@link google.api.Http.verify|verify} messages.
@@ -213,7 +212,7 @@ object api {
       * @returns Http
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.api.Http = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.Http]
     
     /**
       * Creates a plain object from a Http message. Also converts values to other types if specified.
@@ -222,8 +221,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.Http): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.Http, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.Http): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.Http, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a Http message.
@@ -231,7 +230,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a HttpRule. */
@@ -241,7 +240,7 @@ object api {
     * Constructs a new HttpRule.
     * @param [properties] Properties to set
     */
-  class HttpRule ()
+  open class HttpRule ()
     extends typings.googleGax.iamServiceMod.google.api.HttpRule {
     def this(properties: IHttpRule) = this()
   }
@@ -260,6 +259,8 @@ object api {
     inline def create(): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     inline def create(properties: IHttpRule): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     /**
       * Decodes a HttpRule message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -271,9 +272,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.api.HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     /**
       * Decodes a HttpRule message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -283,7 +283,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     
     /**
       * Encodes the specified HttpRule message. Does not implicitly {@link google.api.HttpRule.verify|verify} messages.
@@ -311,7 +310,7 @@ object api {
       * @returns HttpRule
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.api.HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.HttpRule]
     
     /**
       * Creates a plain object from a HttpRule message. Also converts values to other types if specified.
@@ -320,8 +319,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.HttpRule): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.HttpRule, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.HttpRule): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.HttpRule, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a HttpRule message.
@@ -329,7 +328,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceDescriptor. */
@@ -339,7 +338,7 @@ object api {
     * Constructs a new ResourceDescriptor.
     * @param [properties] Properties to set
     */
-  class ResourceDescriptor ()
+  open class ResourceDescriptor ()
     extends typings.googleGax.iamServiceMod.google.api.ResourceDescriptor {
     def this(properties: IResourceDescriptor) = this()
   }
@@ -373,6 +372,8 @@ object api {
     inline def create(): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     inline def create(properties: IResourceDescriptor): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -384,9 +385,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -396,7 +396,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     
     /**
       * Encodes the specified ResourceDescriptor message. Does not implicitly {@link google.api.ResourceDescriptor.verify|verify} messages.
@@ -424,7 +423,7 @@ object api {
       * @returns ResourceDescriptor
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.api.ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceDescriptor]
     
     /**
       * Creates a plain object from a ResourceDescriptor message. Also converts values to other types if specified.
@@ -433,11 +432,11 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.ResourceDescriptor): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.ResourceDescriptor): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
     inline def toObject(
       message: typings.googleGax.iamServiceMod.google.api.ResourceDescriptor,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ResourceDescriptor message.
@@ -445,7 +444,7 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceReference. */
@@ -455,7 +454,7 @@ object api {
     * Constructs a new ResourceReference.
     * @param [properties] Properties to set
     */
-  class ResourceReference ()
+  open class ResourceReference ()
     extends typings.googleGax.iamServiceMod.google.api.ResourceReference {
     def this(properties: IResourceReference) = this()
   }
@@ -474,6 +473,8 @@ object api {
     inline def create(): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     inline def create(properties: IResourceReference): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     /**
       * Decodes a ResourceReference message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -485,9 +486,8 @@ object api {
     /* static member */
     inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.api.ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
-    inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
-    inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.api.ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     /**
       * Decodes a ResourceReference message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -497,7 +497,6 @@ object api {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
-    inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     
     /**
       * Encodes the specified ResourceReference message. Does not implicitly {@link google.api.ResourceReference.verify|verify} messages.
@@ -525,7 +524,7 @@ object api {
       * @returns ResourceReference
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleGax.iamServiceMod.google.api.ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.api.ResourceReference]
     
     /**
       * Creates a plain object from a ResourceReference message. Also converts values to other types if specified.
@@ -534,8 +533,8 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.ResourceReference): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.ResourceReference, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.ResourceReference): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: typings.googleGax.iamServiceMod.google.api.ResourceReference, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies a ResourceReference message.
@@ -543,6 +542,6 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
 }

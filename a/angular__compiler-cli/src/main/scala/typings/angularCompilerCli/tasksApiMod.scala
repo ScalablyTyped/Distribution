@@ -1,7 +1,7 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-import typings.angularCompilerCli.angularCompilerCliNumbers.`1`
+import typings.angularCompilerCli.angularCompilerCliInts.`0`
+import typings.angularCompilerCli.angularCompilerCliInts.`1`
 import typings.angularCompilerCli.entryPointMod.EntryPoint
 import typings.angularCompilerCli.entryPointMod.EntryPointJsonProperty
 import typings.angularCompilerCli.srcUtilsMod.JsonObject
@@ -133,8 +133,8 @@ object tasksApiMod {
   ]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`0`
-    - typings.angularCompilerCli.angularCompilerCliNumbers.`1`
+    - typings.angularCompilerCli.angularCompilerCliInts.`0`
+    - typings.angularCompilerCli.angularCompilerCliInts.`1`
   */
   trait TaskProcessingOutcome extends StObject
   object TaskProcessingOutcome {

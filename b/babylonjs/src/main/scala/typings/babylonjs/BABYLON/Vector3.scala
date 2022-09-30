@@ -7,16 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Vector3 extends StObject {
   
-  /** @hidden */
+  /**
+    * Creates a vector normal (perpendicular) to the current Vector3 and stores the result in the given vector
+    * @param result defines the Vector3 object where to store the resultant normal
+    * returns the result
+    * @hidden
+    */
+  def _getNormalToRef(result: DeepImmutable[Vector3]): Vector3 = js.native
+  
+  /** @internal */
   var _isDirty: Boolean = js.native
   
-  /** @hidden */
+  /** @internal */
   var _x: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _y: Double = js.native
   
-  /** @hidden */
+  /** @internal */
   var _z: Double = js.native
   
   /**
@@ -50,7 +58,7 @@ trait Vector3 extends StObject {
     * Example Playground https://playground.babylonjs.com/#R1F8YU#6
     * @param otherVector defines the second operand
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector3
+    * @returns the result
     */
   def addToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
   
@@ -75,7 +83,7 @@ trait Vector3 extends StObject {
     * Example Playground https://playground.babylonjs.com/#R1F8YU#9
     * @param q the unit quaternion representing the rotation
     * @param result the output vector
-    * @returns the current Vector3
+    * @returns the result
     */
   def applyRotationQuaternionToRef(q: Quaternion, result: Vector3): Vector3 = js.native
   
@@ -134,7 +142,7 @@ trait Vector3 extends StObject {
     * Example Playground https://playground.babylonjs.com/#R1F8YU#18
     * @param otherVector defines the second operand
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector3
+    * @returns the result
     */
   def divideToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
   
@@ -302,7 +310,7 @@ trait Vector3 extends StObject {
     * Example Playground https://playground.babylonjs.com/#R1F8YU#33
     * @param otherVector defines the second operand
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector3
+    * @returns the result
     */
   def multiplyToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
   
@@ -324,7 +332,7 @@ trait Vector3 extends StObject {
     * Negate the current Vector3 and stores the result in the given vector "result" coordinates
     * Example Playground https://playground.babylonjs.com/#R1F8YU#37
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector3
+    * @returns the result
     */
   def negateToRef(result: Vector3): Vector3 = js.native
   
@@ -435,7 +443,7 @@ trait Vector3 extends StObject {
     * Example Playground https://playground.babylonjs.com/#R1F8YU#57
     * @param scale defines the multiplier factor
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector3
+    * @returns the result
     */
   def scaleToRef(scale: Double, result: Vector3): Vector3 = js.native
   
@@ -482,7 +490,7 @@ trait Vector3 extends StObject {
     * @param y defines the y coordinate of the operand
     * @param z defines the z coordinate of the operand
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector3
+    * @returns the result
     */
   def subtractFromFloatsToRef(x: Double, y: Double, z: Double, result: Vector3): Vector3 = js.native
   
@@ -499,7 +507,7 @@ trait Vector3 extends StObject {
     * Example Playground https://playground.babylonjs.com/#R1F8YU#63
     * @param otherVector defines the second operand
     * @param result defines the Vector3 object where to store the result
-    * @returns the current Vector3
+    * @returns the result
     */
   def subtractToRef(otherVector: DeepImmutable[Vector3], result: Vector3): Vector3 = js.native
   

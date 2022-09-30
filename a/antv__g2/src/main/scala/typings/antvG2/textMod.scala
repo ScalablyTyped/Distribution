@@ -1,6 +1,6 @@
 package typings.antvG2
 
-import typings.antvG2.antvG2Numbers.`0`
+import typings.antvG2.antvG2Ints.`0`
 import typings.csstype.mod.Properties
 import typings.csstype.mod.Property.FontFamily
 import typings.csstype.mod.Property.FontStyle

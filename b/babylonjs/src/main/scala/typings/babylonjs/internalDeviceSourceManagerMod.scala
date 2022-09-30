@@ -87,7 +87,7 @@ object internalDeviceSourceManagerMod {
     
     trait Engine extends StObject {
       
-      /** @hidden */
+      /** @internal */
       var _deviceSourceManager: js.UndefOr[InternalDeviceSourceManager] = js.undefined
     }
     object Engine {

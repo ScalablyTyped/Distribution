@@ -1,8 +1,8 @@
 package typings.nivoCore.mod
 
 import typings.nivoCore.nivoCoreBooleans.`true`
-import typings.nivoCore.nivoCoreNumbers.`15`
-import typings.nivoCore.nivoCoreNumbers.`90`
+import typings.nivoCore.nivoCoreInts.`15`
+import typings.nivoCore.nivoCoreInts.`90`
 import typings.nivoCore.nivoCoreStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.antvDataSet
 
-import typings.antvDataSet.antvDataSetNumbers.`0.5`
-import typings.antvDataSet.antvDataSetNumbers.`0`
+import typings.antvDataSet.antvDataSetDoubles.`0.5`
+import typings.antvDataSet.antvDataSetInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

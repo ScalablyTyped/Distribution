@@ -1,6 +1,6 @@
 package typings.baseui.themesTypesMod
 
-import typings.baseui.baseuiNumbers.`0`
+import typings.baseui.baseuiInts.`0`
 import typings.csstype.mod.Property.BorderColor
 import typings.csstype.mod.Property.BorderLeftStyle
 import typings.csstype.mod.Property.BorderWidth

@@ -9,7 +9,7 @@ object pkiMod {
   
   @JSImport("xmldsigjs/build/types/pki", "X509Certificate")
   @js.native
-  class X509Certificate ()
+  open class X509Certificate ()
     extends typings.xmldsigjs.x509Mod.X509Certificate {
     def this(rawData: BufferSource) = this()
   }

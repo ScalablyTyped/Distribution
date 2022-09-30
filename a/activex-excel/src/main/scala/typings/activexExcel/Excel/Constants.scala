@@ -1,114 +1,114 @@
 package typings.activexExcel.Excel
 
-import typings.activexExcel.activexExcelNumbers.`-1`
-import typings.activexExcel.activexExcelNumbers.`-4099`
-import typings.activexExcel.activexExcelNumbers.`-4103`
-import typings.activexExcel.activexExcelNumbers.`-4104`
-import typings.activexExcel.activexExcelNumbers.`-4105`
-import typings.activexExcel.activexExcelNumbers.`-4107`
-import typings.activexExcel.activexExcelNumbers.`-4108`
-import typings.activexExcel.activexExcelNumbers.`-4111`
-import typings.activexExcel.activexExcelNumbers.`-4114`
-import typings.activexExcel.activexExcelNumbers.`-4117`
-import typings.activexExcel.activexExcelNumbers.`-4122`
-import typings.activexExcel.activexExcelNumbers.`-4124`
-import typings.activexExcel.activexExcelNumbers.`-4125`
-import typings.activexExcel.activexExcelNumbers.`-4126`
-import typings.activexExcel.activexExcelNumbers.`-4127`
-import typings.activexExcel.activexExcelNumbers.`-4130`
-import typings.activexExcel.activexExcelNumbers.`-4131`
-import typings.activexExcel.activexExcelNumbers.`-4134`
-import typings.activexExcel.activexExcelNumbers.`-4135`
-import typings.activexExcel.activexExcelNumbers.`-4141`
-import typings.activexExcel.activexExcelNumbers.`-4142`
-import typings.activexExcel.activexExcelNumbers.`-4144`
-import typings.activexExcel.activexExcelNumbers.`-4146`
-import typings.activexExcel.activexExcelNumbers.`-4152`
-import typings.activexExcel.activexExcelNumbers.`-4154`
-import typings.activexExcel.activexExcelNumbers.`-4160`
-import typings.activexExcel.activexExcelNumbers.`-5000`
-import typings.activexExcel.activexExcelNumbers.`-5001`
-import typings.activexExcel.activexExcelNumbers.`-5002`
-import typings.activexExcel.activexExcelNumbers.`-5003`
-import typings.activexExcel.activexExcelNumbers.`-5004`
-import typings.activexExcel.activexExcelNumbers.`0`
-import typings.activexExcel.activexExcelNumbers.`10`
-import typings.activexExcel.activexExcelNumbers.`11`
-import typings.activexExcel.activexExcelNumbers.`12`
-import typings.activexExcel.activexExcelNumbers.`13`
-import typings.activexExcel.activexExcelNumbers.`14`
-import typings.activexExcel.activexExcelNumbers.`15`
-import typings.activexExcel.activexExcelNumbers.`16`
-import typings.activexExcel.activexExcelNumbers.`17`
-import typings.activexExcel.activexExcelNumbers.`18`
-import typings.activexExcel.activexExcelNumbers.`1`
-import typings.activexExcel.activexExcelNumbers.`20`
-import typings.activexExcel.activexExcelNumbers.`22`
-import typings.activexExcel.activexExcelNumbers.`2`
-import typings.activexExcel.activexExcelNumbers.`3`
-import typings.activexExcel.activexExcelNumbers.`4`
-import typings.activexExcel.activexExcelNumbers.`5`
-import typings.activexExcel.activexExcelNumbers.`6`
-import typings.activexExcel.activexExcelNumbers.`7`
-import typings.activexExcel.activexExcelNumbers.`8`
-import typings.activexExcel.activexExcelNumbers.`9`
+import typings.activexExcel.activexExcelInts.`-1`
+import typings.activexExcel.activexExcelInts.`-4099`
+import typings.activexExcel.activexExcelInts.`-4103`
+import typings.activexExcel.activexExcelInts.`-4104`
+import typings.activexExcel.activexExcelInts.`-4105`
+import typings.activexExcel.activexExcelInts.`-4107`
+import typings.activexExcel.activexExcelInts.`-4108`
+import typings.activexExcel.activexExcelInts.`-4111`
+import typings.activexExcel.activexExcelInts.`-4114`
+import typings.activexExcel.activexExcelInts.`-4117`
+import typings.activexExcel.activexExcelInts.`-4122`
+import typings.activexExcel.activexExcelInts.`-4124`
+import typings.activexExcel.activexExcelInts.`-4125`
+import typings.activexExcel.activexExcelInts.`-4126`
+import typings.activexExcel.activexExcelInts.`-4127`
+import typings.activexExcel.activexExcelInts.`-4130`
+import typings.activexExcel.activexExcelInts.`-4131`
+import typings.activexExcel.activexExcelInts.`-4134`
+import typings.activexExcel.activexExcelInts.`-4135`
+import typings.activexExcel.activexExcelInts.`-4141`
+import typings.activexExcel.activexExcelInts.`-4142`
+import typings.activexExcel.activexExcelInts.`-4144`
+import typings.activexExcel.activexExcelInts.`-4146`
+import typings.activexExcel.activexExcelInts.`-4152`
+import typings.activexExcel.activexExcelInts.`-4154`
+import typings.activexExcel.activexExcelInts.`-4160`
+import typings.activexExcel.activexExcelInts.`-5000`
+import typings.activexExcel.activexExcelInts.`-5001`
+import typings.activexExcel.activexExcelInts.`-5002`
+import typings.activexExcel.activexExcelInts.`-5003`
+import typings.activexExcel.activexExcelInts.`-5004`
+import typings.activexExcel.activexExcelInts.`0`
+import typings.activexExcel.activexExcelInts.`10`
+import typings.activexExcel.activexExcelInts.`11`
+import typings.activexExcel.activexExcelInts.`12`
+import typings.activexExcel.activexExcelInts.`13`
+import typings.activexExcel.activexExcelInts.`14`
+import typings.activexExcel.activexExcelInts.`15`
+import typings.activexExcel.activexExcelInts.`16`
+import typings.activexExcel.activexExcelInts.`17`
+import typings.activexExcel.activexExcelInts.`18`
+import typings.activexExcel.activexExcelInts.`1`
+import typings.activexExcel.activexExcelInts.`20`
+import typings.activexExcel.activexExcelInts.`22`
+import typings.activexExcel.activexExcelInts.`2`
+import typings.activexExcel.activexExcelInts.`3`
+import typings.activexExcel.activexExcelInts.`4`
+import typings.activexExcel.activexExcelInts.`5`
+import typings.activexExcel.activexExcelInts.`6`
+import typings.activexExcel.activexExcelInts.`7`
+import typings.activexExcel.activexExcelInts.`8`
+import typings.activexExcel.activexExcelInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexExcel.activexExcelNumbers.`-4099`
-  - typings.activexExcel.activexExcelNumbers.`13`
-  - typings.activexExcel.activexExcelNumbers.`14`
-  - typings.activexExcel.activexExcelNumbers.`-4103`
-  - typings.activexExcel.activexExcelNumbers.`0`
-  - typings.activexExcel.activexExcelNumbers.`4`
-  - typings.activexExcel.activexExcelNumbers.`5`
-  - typings.activexExcel.activexExcelNumbers.`6`
-  - typings.activexExcel.activexExcelNumbers.`17`
-  - typings.activexExcel.activexExcelNumbers.`2`
-  - typings.activexExcel.activexExcelNumbers.`-4104`
-  - typings.activexExcel.activexExcelNumbers.`7`
-  - typings.activexExcel.activexExcelNumbers.`-4105`
-  - typings.activexExcel.activexExcelNumbers.`1`
-  - typings.activexExcel.activexExcelNumbers.`-5000`
-  - typings.activexExcel.activexExcelNumbers.`3`
-  - typings.activexExcel.activexExcelNumbers.`-4107`
-  - typings.activexExcel.activexExcelNumbers.`-4108`
-  - typings.activexExcel.activexExcelNumbers.`18`
-  - typings.activexExcel.activexExcelNumbers.`9`
-  - typings.activexExcel.activexExcelNumbers.`8`
-  - typings.activexExcel.activexExcelNumbers.`-4111`
-  - typings.activexExcel.activexExcelNumbers.`-5002`
-  - typings.activexExcel.activexExcelNumbers.`16`
-  - typings.activexExcel.activexExcelNumbers.`-4114`
-  - typings.activexExcel.activexExcelNumbers.`-1`
-  - typings.activexExcel.activexExcelNumbers.`-4117`
-  - typings.activexExcel.activexExcelNumbers.`20`
-  - typings.activexExcel.activexExcelNumbers.`-4122`
-  - typings.activexExcel.activexExcelNumbers.`-4124`
-  - typings.activexExcel.activexExcelNumbers.`-4125`
-  - typings.activexExcel.activexExcelNumbers.`-4126`
-  - typings.activexExcel.activexExcelNumbers.`15`
-  - typings.activexExcel.activexExcelNumbers.`22`
-  - typings.activexExcel.activexExcelNumbers.`-4127`
-  - typings.activexExcel.activexExcelNumbers.`12`
-  - typings.activexExcel.activexExcelNumbers.`-4130`
-  - typings.activexExcel.activexExcelNumbers.`11`
-  - typings.activexExcel.activexExcelNumbers.`-5001`
-  - typings.activexExcel.activexExcelNumbers.`-4131`
-  - typings.activexExcel.activexExcelNumbers.`10`
-  - typings.activexExcel.activexExcelNumbers.`-4134`
-  - typings.activexExcel.activexExcelNumbers.`-5003`
-  - typings.activexExcel.activexExcelNumbers.`-4135`
-  - typings.activexExcel.activexExcelNumbers.`-4141`
-  - typings.activexExcel.activexExcelNumbers.`-4142`
-  - typings.activexExcel.activexExcelNumbers.`-4144`
-  - typings.activexExcel.activexExcelNumbers.`-4146`
-  - typings.activexExcel.activexExcelNumbers.`-4152`
-  - typings.activexExcel.activexExcelNumbers.`-5004`
-  - typings.activexExcel.activexExcelNumbers.`-4154`
-  - typings.activexExcel.activexExcelNumbers.`-4160`
+  - typings.activexExcel.activexExcelInts.`-4099`
+  - typings.activexExcel.activexExcelInts.`13`
+  - typings.activexExcel.activexExcelInts.`14`
+  - typings.activexExcel.activexExcelInts.`-4103`
+  - typings.activexExcel.activexExcelInts.`0`
+  - typings.activexExcel.activexExcelInts.`4`
+  - typings.activexExcel.activexExcelInts.`5`
+  - typings.activexExcel.activexExcelInts.`6`
+  - typings.activexExcel.activexExcelInts.`17`
+  - typings.activexExcel.activexExcelInts.`2`
+  - typings.activexExcel.activexExcelInts.`-4104`
+  - typings.activexExcel.activexExcelInts.`7`
+  - typings.activexExcel.activexExcelInts.`-4105`
+  - typings.activexExcel.activexExcelInts.`1`
+  - typings.activexExcel.activexExcelInts.`-5000`
+  - typings.activexExcel.activexExcelInts.`3`
+  - typings.activexExcel.activexExcelInts.`-4107`
+  - typings.activexExcel.activexExcelInts.`-4108`
+  - typings.activexExcel.activexExcelInts.`18`
+  - typings.activexExcel.activexExcelInts.`9`
+  - typings.activexExcel.activexExcelInts.`8`
+  - typings.activexExcel.activexExcelInts.`-4111`
+  - typings.activexExcel.activexExcelInts.`-5002`
+  - typings.activexExcel.activexExcelInts.`16`
+  - typings.activexExcel.activexExcelInts.`-4114`
+  - typings.activexExcel.activexExcelInts.`-1`
+  - typings.activexExcel.activexExcelInts.`-4117`
+  - typings.activexExcel.activexExcelInts.`20`
+  - typings.activexExcel.activexExcelInts.`-4122`
+  - typings.activexExcel.activexExcelInts.`-4124`
+  - typings.activexExcel.activexExcelInts.`-4125`
+  - typings.activexExcel.activexExcelInts.`-4126`
+  - typings.activexExcel.activexExcelInts.`15`
+  - typings.activexExcel.activexExcelInts.`22`
+  - typings.activexExcel.activexExcelInts.`-4127`
+  - typings.activexExcel.activexExcelInts.`12`
+  - typings.activexExcel.activexExcelInts.`-4130`
+  - typings.activexExcel.activexExcelInts.`11`
+  - typings.activexExcel.activexExcelInts.`-5001`
+  - typings.activexExcel.activexExcelInts.`-4131`
+  - typings.activexExcel.activexExcelInts.`10`
+  - typings.activexExcel.activexExcelInts.`-4134`
+  - typings.activexExcel.activexExcelInts.`-5003`
+  - typings.activexExcel.activexExcelInts.`-4135`
+  - typings.activexExcel.activexExcelInts.`-4141`
+  - typings.activexExcel.activexExcelInts.`-4142`
+  - typings.activexExcel.activexExcelInts.`-4144`
+  - typings.activexExcel.activexExcelInts.`-4146`
+  - typings.activexExcel.activexExcelInts.`-4152`
+  - typings.activexExcel.activexExcelInts.`-5004`
+  - typings.activexExcel.activexExcelInts.`-4154`
+  - typings.activexExcel.activexExcelInts.`-4160`
 */
 trait Constants extends StObject
 object Constants {

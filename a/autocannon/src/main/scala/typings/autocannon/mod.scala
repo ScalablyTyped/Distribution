@@ -730,6 +730,9 @@ object mod {
     /** A histogram object containing statistics about response latency. */
     var latency: Histogram
     
+    /** The number of requests with a mismatched body. */
+    var mismatches: Double
+    
     /** The number of non-2xx response status codes received. */
     var non2xx: Double
     
@@ -738,6 +741,9 @@ object mod {
     
     /** A histogram object containing statistics about the amount of requests that were sent per second. */
     var requests: Histogramsentnumber
+    
+    /** How many times the requests pipeline was reset due to setupRequest returning a falsey value. */
+    var resets: Double
     
     /** The UNIX Domain Socket or Windows Named Pipe that was targeted, or `undefined`. */
     var socketPath: js.UndefOr[String] = js.undefined
@@ -770,15 +776,17 @@ object mod {
       errors: Double,
       finish: js.Date,
       latency: Histogram,
+      mismatches: Double,
       non2xx: Double,
       pipelining: Double,
       requests: Histogramsentnumber,
+      resets: Double,
       start: js.Date,
       throughput: Histogram,
       timeouts: Double,
       url: String
     ): Result = {
-      val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], finish = finish.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], non2xx = non2xx.asInstanceOf[js.Any], pipelining = pipelining.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], throughput = throughput.asInstanceOf[js.Any], timeouts = timeouts.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(connections = connections.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], finish = finish.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], mismatches = mismatches.asInstanceOf[js.Any], non2xx = non2xx.asInstanceOf[js.Any], pipelining = pipelining.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], resets = resets.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], throughput = throughput.asInstanceOf[js.Any], timeouts = timeouts.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("1XX")(`1XX`.asInstanceOf[js.Any])
       __obj.updateDynamic("2XX")(`2XX`.asInstanceOf[js.Any])
       __obj.updateDynamic("3XX")(`3XX`.asInstanceOf[js.Any])
@@ -809,11 +817,15 @@ object mod {
       
       inline def setLatency(value: Histogram): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
       
+      inline def setMismatches(value: Double): Self = StObject.set(x, "mismatches", value.asInstanceOf[js.Any])
+      
       inline def setNon2xx(value: Double): Self = StObject.set(x, "non2xx", value.asInstanceOf[js.Any])
       
       inline def setPipelining(value: Double): Self = StObject.set(x, "pipelining", value.asInstanceOf[js.Any])
       
       inline def setRequests(value: Histogramsentnumber): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+      
+      inline def setResets(value: Double): Self = StObject.set(x, "resets", value.asInstanceOf[js.Any])
       
       inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       

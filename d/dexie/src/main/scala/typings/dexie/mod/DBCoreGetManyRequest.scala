@@ -1,46 +1,36 @@
 package typings.dexie.mod
 
+import typings.dexie.dexieStrings.clone
+import typings.dexie.dexieStrings.immutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DBCoreGetManyRequest extends js.Object {
+trait DBCoreGetManyRequest extends StObject {
   
-  var keys: js.Array[_] = js.native
+  var cache: js.UndefOr[immutable | clone] = js.undefined
   
-  var trans: DBCoreTransaction = js.native
+  var keys: js.Array[Any]
+  
+  var trans: DBCoreTransaction
 }
 object DBCoreGetManyRequest {
   
-  @scala.inline
-  def apply(keys: js.Array[_], trans: DBCoreTransaction): DBCoreGetManyRequest = {
+  inline def apply(keys: js.Array[Any], trans: DBCoreTransaction): DBCoreGetManyRequest = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any], trans = trans.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBCoreGetManyRequest]
   }
   
-  @scala.inline
-  implicit class DBCoreGetManyRequestOps[Self <: DBCoreGetManyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DBCoreGetManyRequest](x: Self) {
     
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    inline def setCache(value: immutable | clone): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = this.set("keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Any*): Self = StObject.set(x, "keys", js.Array(value*))
     
-    @scala.inline
-    def setKeys(value: js.Array[_]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrans(value: DBCoreTransaction): Self = this.set("trans", value.asInstanceOf[js.Any])
+    inline def setTrans(value: DBCoreTransaction): Self = StObject.set(x, "trans", value.asInstanceOf[js.Any])
   }
 }

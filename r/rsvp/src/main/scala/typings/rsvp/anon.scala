@@ -4,13 +4,14 @@ import typings.rsvp.mod.RSVP.Arg
 import typings.rsvp.mod.RSVP.InstrumentEvent
 import typings.rsvp.mod.RSVP.ObjectWithEventMixins
 import typings.rsvp.mod.RSVP.Promise
-import typings.rsvp.rsvpNumbers.`10`
-import typings.rsvp.rsvpNumbers.`9`
+import typings.rsvp.rsvpInts.`10`
+import typings.rsvp.rsvpInts.`9`
 import typings.rsvp.rsvpStrings.chained
 import typings.rsvp.rsvpStrings.created
 import typings.rsvp.rsvpStrings.error
 import typings.rsvp.rsvpStrings.fulfilled
 import typings.rsvp.rsvpStrings.rejected
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ object anon {
   
   trait `1` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`8`
+    var length: typings.rsvp.rsvpInts.`8`
   }
   object `1` {
     
@@ -47,13 +48,13 @@ object anon {
     
     extension [Self <: `1`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`8`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`8`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
   trait `2` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`7`
+    var length: typings.rsvp.rsvpInts.`7`
   }
   object `2` {
     
@@ -64,13 +65,13 @@ object anon {
     
     extension [Self <: `2`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`7`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`7`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
   trait `3` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`6`
+    var length: typings.rsvp.rsvpInts.`6`
   }
   object `3` {
     
@@ -81,13 +82,13 @@ object anon {
     
     extension [Self <: `3`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`6`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`6`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
   trait `4` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`5`
+    var length: typings.rsvp.rsvpInts.`5`
   }
   object `4` {
     
@@ -98,13 +99,13 @@ object anon {
     
     extension [Self <: `4`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
   trait `5` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`4`
+    var length: typings.rsvp.rsvpInts.`4`
   }
   object `5` {
     
@@ -115,13 +116,13 @@ object anon {
     
     extension [Self <: `5`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
   trait `6` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`3`
+    var length: typings.rsvp.rsvpInts.`3`
   }
   object `6` {
     
@@ -132,13 +133,13 @@ object anon {
     
     extension [Self <: `6`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
   trait `7` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`2`
+    var length: typings.rsvp.rsvpInts.`2`
   }
   object `7` {
     
@@ -149,13 +150,13 @@ object anon {
     
     extension [Self <: `7`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
   trait `8` extends StObject {
     
-    var length: typings.rsvp.rsvpNumbers.`1`
+    var length: typings.rsvp.rsvpInts.`1`
   }
   object `8` {
     
@@ -166,7 +167,7 @@ object anon {
     
     extension [Self <: `8`](x: Self) {
       
-      inline def setLength(value: typings.rsvp.rsvpNumbers.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.rsvp.rsvpInts.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,7 +320,7 @@ object anon {
           Arg[T7], 
           Arg[T8], 
           Arg[T9], 
-          T10 | js.Thenable[T10]
+          T10 | PromiseLike[T10]
         ]
     ): Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
     def race[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
@@ -333,7 +334,7 @@ object anon {
           Arg[T7], 
           Arg[T8], 
           Arg[T9], 
-          T10 | js.Thenable[T10]
+          T10 | PromiseLike[T10]
         ],
       label: String
     ): Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native

@@ -2,6 +2,7 @@ package typings.sequelize.mod
 
 import typings.sequelize.anon.Query
 import typings.sequelize.anon.`2`
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -289,7 +290,7 @@ trait Sequelize
   
   def transaction(): typings.bluebird.mod.^[Transaction] = js.native
   def transaction(options: TransactionOptions): typings.bluebird.mod.^[Transaction] = js.native
-  def transaction[T](autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): typings.bluebird.mod.^[T] = js.native
+  def transaction[T](autoCallback: js.Function1[/* t */ Transaction, PromiseLike[T]]): typings.bluebird.mod.^[T] = js.native
   /**
     * Start a transaction. When using transactions, you should pass the transaction in the options argument
     * in order for the query to happen under that transaction
@@ -335,7 +336,7 @@ trait Sequelize
     * @param options Transaction Options
     * @param autoCallback Callback for the transaction
     */
-  def transaction[T](options: TransactionOptions, autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): typings.bluebird.mod.^[T] = js.native
+  def transaction[T](options: TransactionOptions, autoCallback: js.Function1[/* t */ Transaction, PromiseLike[T]]): typings.bluebird.mod.^[T] = js.native
   
   /**
     * Truncate all tables defined through the sequelize models. This is done

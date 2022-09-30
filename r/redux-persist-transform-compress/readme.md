@@ -11,14 +11,11 @@ compress your redux state
 | Full name          | redux-persist-transform-compress |
 | Keywords           | redux, redux-persist, redux-persist-transform, compression |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 98733 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9082.333333333334 |
+| # stars            | 41.0 |
 
 ## Links
-- [Homepage](https://github.com/rt2zz/redux-persist-transform-compress)
-- [Bugs](https://github.com/rt2zz/redux-persist-transform-compress/issues)
-- [Repository](https://github.com/rt2zz/redux-persist-transform-compress)
 - [Npm](https://www.npmjs.com/package/redux-persist-transform-compress)
     
 

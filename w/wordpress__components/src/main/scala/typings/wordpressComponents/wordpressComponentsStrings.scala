@@ -1,6 +1,7 @@
 package typings.wordpressComponents
 
 import typings.wordpressComponents.autocompleteMod.Autocomplete.Action
+import typings.wordpressComponents.buttonMod.Button.ButtonVariant
 import typings.wordpressComponents.cardMod.Card.CardSize
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import typings.wordpressComponents.popoverMod.Popover.Position
@@ -157,6 +158,12 @@ object wordpressComponentsStrings {
   inline def `admin-users`: `admin-users` = "admin-users".asInstanceOf[`admin-users`]
   
   @js.native
+  sealed trait airplane
+    extends StObject
+       with Icon
+  inline def airplane: airplane = "airplane".asInstanceOf[airplane]
+  
+  @js.native
   sealed trait album
     extends StObject
        with Icon
@@ -213,6 +220,12 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait amazon
+    extends StObject
+       with Icon
+  inline def amazon: amazon = "amazon".asInstanceOf[amazon]
   
   @js.native
   sealed trait analytics
@@ -329,6 +342,10 @@ object wordpressComponentsStrings {
   inline def article: article = "article".asInstanceOf[article]
   
   @js.native
+  sealed trait as extends StObject
+  inline def as: as = "as".asInstanceOf[as]
+  
+  @js.native
   sealed trait asc
     extends StObject
        with Order
@@ -367,6 +384,12 @@ object wordpressComponentsStrings {
   inline def backup: backup = "backup".asInstanceOf[backup]
   
   @js.native
+  sealed trait bank
+    extends StObject
+       with Icon
+  inline def bank: bank = "bank".asInstanceOf[bank]
+  
+  @js.native
   sealed trait base extends StObject
   inline def base: base = "base".asInstanceOf[base]
   
@@ -377,6 +400,18 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait bdo extends StObject
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
+  
+  @js.native
+  sealed trait beer
+    extends StObject
+       with Icon
+  inline def beer: beer = "beer".asInstanceOf[beer]
+  
+  @js.native
+  sealed trait bell
+    extends StObject
+       with Icon
+  inline def bell: bell = "bell".asInstanceOf[bell]
   
   @js.native
   sealed trait big extends StObject
@@ -517,10 +552,28 @@ object wordpressComponentsStrings {
   inline def businessman: businessman = "businessman".asInstanceOf[businessman]
   
   @js.native
+  sealed trait businessperson
+    extends StObject
+       with Icon
+  inline def businessperson: businessperson = "businessperson".asInstanceOf[businessperson]
+  
+  @js.native
+  sealed trait businesswoman
+    extends StObject
+       with Icon
+  inline def businesswoman: businesswoman = "businesswoman".asInstanceOf[businesswoman]
+  
+  @js.native
   sealed trait button
     extends StObject
        with Icon
   inline def button: button = "button".asInstanceOf[button]
+  
+  @js.native
+  sealed trait calculator
+    extends StObject
+       with Icon
+  inline def calculator: calculator = "calculator".asInstanceOf[calculator]
   
   @js.native
   sealed trait calendar
@@ -541,12 +594,24 @@ object wordpressComponentsStrings {
   inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
+  sealed trait `camera-alt`
+    extends StObject
+       with Icon
+  inline def `camera-alt`: `camera-alt` = "camera-alt".asInstanceOf[`camera-alt`]
+  
+  @js.native
   sealed trait canvas extends StObject
   inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
   sealed trait caption extends StObject
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait car
+    extends StObject
+       with Icon
+  inline def car: car = "car".asInstanceOf[car]
   
   @js.native
   sealed trait carrot
@@ -589,6 +654,10 @@ object wordpressComponentsStrings {
     extends StObject
        with Icon
   inline def `chart-pie`: `chart-pie` = "chart-pie".asInstanceOf[`chart-pie`]
+  
+  @js.native
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait circle extends StObject
@@ -637,12 +706,30 @@ object wordpressComponentsStrings {
   inline def code: code = "code".asInstanceOf[code]
   
   @js.native
+  sealed trait `code-standards`
+    extends StObject
+       with Icon
+  inline def `code-standards`: `code-standards` = "code-standards".asInstanceOf[`code-standards`]
+  
+  @js.native
+  sealed trait coffee
+    extends StObject
+       with Icon
+  inline def coffee: coffee = "coffee".asInstanceOf[coffee]
+  
+  @js.native
   sealed trait col extends StObject
   inline def col: col = "col".asInstanceOf[col]
   
   @js.native
   sealed trait colgroup extends StObject
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
+  
+  @js.native
+  sealed trait `color-picker`
+    extends StObject
+       with Icon
+  inline def `color-picker`: `color-picker` = "color-picker".asInstanceOf[`color-picker`]
   
   @js.native
   sealed trait columns
@@ -729,6 +816,42 @@ object wordpressComponentsStrings {
   inline def data: data = "data".asInstanceOf[data]
   
   @js.native
+  sealed trait database
+    extends StObject
+       with Icon
+  inline def database: database = "database".asInstanceOf[database]
+  
+  @js.native
+  sealed trait `database-add`
+    extends StObject
+       with Icon
+  inline def `database-add`: `database-add` = "database-add".asInstanceOf[`database-add`]
+  
+  @js.native
+  sealed trait `database-export`
+    extends StObject
+       with Icon
+  inline def `database-export`: `database-export` = "database-export".asInstanceOf[`database-export`]
+  
+  @js.native
+  sealed trait `database-import`
+    extends StObject
+       with Icon
+  inline def `database-import`: `database-import` = "database-import".asInstanceOf[`database-import`]
+  
+  @js.native
+  sealed trait `database-remove`
+    extends StObject
+       with Icon
+  inline def `database-remove`: `database-remove` = "database-remove".asInstanceOf[`database-remove`]
+  
+  @js.native
+  sealed trait `database-view`
+    extends StObject
+       with Icon
+  inline def `database-view`: `database-view` = "database-view".asInstanceOf[`database-view`]
+  
+  @js.native
   sealed trait datalist extends StObject
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
@@ -807,6 +930,12 @@ object wordpressComponentsStrings {
   inline def download: download = "download".asInstanceOf[download]
   
   @js.native
+  sealed trait drumstick
+    extends StObject
+       with Icon
+  inline def drumstick: drumstick = "drumstick".asInstanceOf[drumstick]
+  
+  @js.native
   sealed trait dt extends StObject
   inline def dt: dt = "dt".asInstanceOf[dt]
   
@@ -815,6 +944,18 @@ object wordpressComponentsStrings {
     extends StObject
        with Icon
   inline def edit: edit = "edit".asInstanceOf[edit]
+  
+  @js.native
+  sealed trait `edit-large`
+    extends StObject
+       with Icon
+  inline def `edit-large`: `edit-large` = "edit-large".asInstanceOf[`edit-large`]
+  
+  @js.native
+  sealed trait `edit-page`
+    extends StObject
+       with Icon
+  inline def `edit-page`: `edit-page` = "edit-page".asInstanceOf[`edit-page`]
   
   @js.native
   sealed trait `editor-aligncenter`
@@ -1081,6 +1222,10 @@ object wordpressComponentsStrings {
   inline def `embed-video`: `embed-video` = "embed-video".asInstanceOf[`embed-video`]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
   
@@ -1259,6 +1404,12 @@ object wordpressComponentsStrings {
   inline def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
+  sealed trait food
+    extends StObject
+       with Icon
+  inline def food: food = "food".asInstanceOf[food]
+  
+  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -1325,14 +1476,32 @@ object wordpressComponentsStrings {
   inline def forms: forms = "forms".asInstanceOf[forms]
   
   @js.native
+  sealed trait `fullscreen-alt`
+    extends StObject
+       with Icon
+  inline def `fullscreen-alt`: `fullscreen-alt` = "fullscreen-alt".asInstanceOf[`fullscreen-alt`]
+  
+  @js.native
+  sealed trait `fullscreen-exit-alt`
+    extends StObject
+       with Icon
+  inline def `fullscreen-exit-alt`: `fullscreen-exit-alt` = "fullscreen-exit-alt".asInstanceOf[`fullscreen-exit-alt`]
+  
+  @js.native
   sealed trait g extends StObject
   inline def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait googleplus
+  sealed trait games
     extends StObject
        with Icon
-  inline def googleplus: googleplus = "googleplus".asInstanceOf[googleplus]
+  inline def games: games = "games".asInstanceOf[games]
+  
+  @js.native
+  sealed trait google
+    extends StObject
+       with Icon
+  inline def google: google = "google".asInstanceOf[google]
   
   @js.native
   sealed trait grammar extends StObject
@@ -1417,6 +1586,12 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait hourglass
+    extends StObject
+       with Icon
+  inline def hourglass: hourglass = "hourglass".asInstanceOf[hourglass]
   
   @js.native
   sealed trait hr extends StObject
@@ -1579,12 +1754,6 @@ object wordpressComponentsStrings {
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
-  sealed trait `keyboard-hide`
-    extends StObject
-       with Icon
-  inline def `keyboard-hide`: `keyboard-hide` = "keyboard-hide".asInstanceOf[`keyboard-hide`]
-  
-  @js.native
   sealed trait keydown extends StObject
   inline def keydown: keydown = "keydown".asInstanceOf[keydown]
   
@@ -1655,8 +1824,16 @@ object wordpressComponentsStrings {
   inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
-  sealed trait link extends StObject
+  sealed trait link
+    extends StObject
+       with ButtonVariant
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait linkedin
+    extends StObject
+       with Icon
+  inline def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
   
   @js.native
   sealed trait list extends StObject
@@ -1671,6 +1848,10 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait listbox extends StObject
   inline def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @js.native
+  sealed trait loading extends StObject
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
   sealed trait location
@@ -1791,6 +1972,18 @@ object wordpressComponentsStrings {
   inline def `menu-alt`: `menu-alt` = "menu-alt".asInstanceOf[`menu-alt`]
   
   @js.native
+  sealed trait `menu-alt2`
+    extends StObject
+       with Icon
+  inline def `menu-alt2`: `menu-alt2` = "menu-alt2".asInstanceOf[`menu-alt2`]
+  
+  @js.native
+  sealed trait `menu-alt3`
+    extends StObject
+       with Icon
+  inline def `menu-alt3`: `menu-alt3` = "menu-alt3".asInstanceOf[`menu-alt3`]
+  
+  @js.native
   sealed trait menuitem extends StObject
   inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
@@ -1851,6 +2044,12 @@ object wordpressComponentsStrings {
     extends StObject
        with Icon
   inline def money: money = "money".asInstanceOf[money]
+  
+  @js.native
+  sealed trait `money-alt`
+    extends StObject
+       with Icon
+  inline def `money-alt`: `money-alt` = "money-alt".asInstanceOf[`money-alt`]
   
   @js.native
   sealed trait move
@@ -1935,6 +2134,12 @@ object wordpressComponentsStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
+  sealed trait `open-folder`
+    extends StObject
+       with Icon
+  inline def `open-folder`: `open-folder` = "open-folder".asInstanceOf[`open-folder`]
+  
+  @js.native
   sealed trait optgroup extends StObject
   inline def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   
@@ -1983,10 +2188,22 @@ object wordpressComponentsStrings {
   inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
+  sealed trait pdf
+    extends StObject
+       with Icon
+  inline def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @js.native
   sealed trait performance
     extends StObject
        with Icon
   inline def performance: performance = "performance".asInstanceOf[performance]
+  
+  @js.native
+  sealed trait pets
+    extends StObject
+       with Icon
+  inline def pets: pets = "pets".asInstanceOf[pets]
   
   @js.native
   sealed trait phone
@@ -1997,6 +2214,12 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
+  
+  @js.native
+  sealed trait pinterest
+    extends StObject
+       with Icon
+  inline def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   
   @js.native
   sealed trait `playlist-audio`
@@ -2011,6 +2234,12 @@ object wordpressComponentsStrings {
   inline def `playlist-video`: `playlist-video` = "playlist-video".asInstanceOf[`playlist-video`]
   
   @js.native
+  sealed trait `plugins-checked`
+    extends StObject
+       with Icon
+  inline def `plugins-checked`: `plugins-checked` = "plugins-checked".asInstanceOf[`plugins-checked`]
+  
+  @js.native
   sealed trait plus
     extends StObject
        with Icon
@@ -2023,10 +2252,16 @@ object wordpressComponentsStrings {
   inline def `plus-alt`: `plus-alt` = "plus-alt".asInstanceOf[`plus-alt`]
   
   @js.native
-  sealed trait `plus-light`
+  sealed trait `plus-alt2`
     extends StObject
        with Icon
-  inline def `plus-light`: `plus-light` = "plus-light".asInstanceOf[`plus-light`]
+  inline def `plus-alt2`: `plus-alt2` = "plus-alt2".asInstanceOf[`plus-alt2`]
+  
+  @js.native
+  sealed trait podio
+    extends StObject
+       with Icon
+  inline def podio: podio = "podio".asInstanceOf[podio]
   
   @js.native
   sealed trait polite extends StObject
@@ -2067,6 +2302,24 @@ object wordpressComponentsStrings {
   inline def pressthis: pressthis = "pressthis".asInstanceOf[pressthis]
   
   @js.native
+  sealed trait primary
+    extends StObject
+       with ButtonVariant
+  inline def primary: primary = "primary".asInstanceOf[primary]
+  
+  @js.native
+  sealed trait printer
+    extends StObject
+       with Icon
+  inline def printer: printer = "printer".asInstanceOf[printer]
+  
+  @js.native
+  sealed trait privacy
+    extends StObject
+       with Icon
+  inline def privacy: privacy = "privacy".asInstanceOf[privacy]
+  
+  @js.native
   sealed trait products
     extends StObject
        with Icon
@@ -2093,6 +2346,12 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
+  
+  @js.native
+  sealed trait reddit
+    extends StObject
+       with Icon
+  inline def reddit: reddit = "reddit".asInstanceOf[reddit]
   
   @js.native
   sealed trait redo
@@ -2191,6 +2450,12 @@ object wordpressComponentsStrings {
     extends StObject
        with Icon
   inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
+  sealed trait secondary
+    extends StObject
+       with ButtonVariant
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
   sealed trait section extends StObject
@@ -2297,6 +2562,12 @@ object wordpressComponentsStrings {
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
+  sealed trait spotify
+    extends StObject
+       with Icon
+  inline def spotify: spotify = "spotify".asInstanceOf[spotify]
+  
+  @js.native
   sealed trait `star-empty`
     extends StObject
        with Icon
@@ -2357,6 +2628,18 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait sup extends StObject
   inline def sup: sup = "sup".asInstanceOf[sup]
+  
+  @js.native
+  sealed trait superhero
+    extends StObject
+       with Icon
+  inline def superhero: superhero = "superhero".asInstanceOf[superhero]
+  
+  @js.native
+  sealed trait `superhero-alt`
+    extends StObject
+       with Icon
+  inline def `superhero-alt`: `superhero-alt` = "superhero-alt".asInstanceOf[`superhero-alt`]
   
   @js.native
   sealed trait svg extends StObject
@@ -2445,6 +2728,12 @@ object wordpressComponentsStrings {
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
+  sealed trait tertiary
+    extends StObject
+       with ButtonVariant
+  inline def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
+  
+  @js.native
   sealed trait testimonial
     extends StObject
        with Icon
@@ -2463,6 +2752,12 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait `text removals` extends StObject
   inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
+  
+  @js.native
+  sealed trait `text-page`
+    extends StObject
+       with Icon
+  inline def `text-page`: `text-page` = "text-page".asInstanceOf[`text-page`]
   
   @js.native
   sealed trait textPath extends StObject
@@ -2575,10 +2870,22 @@ object wordpressComponentsStrings {
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
+  sealed trait twitch
+    extends StObject
+       with Icon
+  inline def twitch: twitch = "twitch".asInstanceOf[twitch]
+  
+  @js.native
   sealed trait twitter
     extends StObject
        with Icon
   inline def twitter: twitter = "twitter".asInstanceOf[twitter]
+  
+  @js.native
+  sealed trait `twitter-alt`
+    extends StObject
+       with Icon
+  inline def `twitter-alt`: `twitter-alt` = "twitter-alt".asInstanceOf[`twitter-alt`]
   
   @js.native
   sealed trait u extends StObject
@@ -2619,6 +2926,12 @@ object wordpressComponentsStrings {
   inline def update: update = "update".asInstanceOf[update]
   
   @js.native
+  sealed trait `update-alt`
+    extends StObject
+       with Icon
+  inline def `update-alt`: `update-alt` = "update-alt".asInstanceOf[`update-alt`]
+  
+  @js.native
   sealed trait upload
     extends StObject
        with Icon
@@ -2631,6 +2944,10 @@ object wordpressComponentsStrings {
   @js.native
   sealed trait use extends StObject
   inline def use: use = "use".asInstanceOf[use]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait validating extends StObject
@@ -2733,6 +3050,12 @@ object wordpressComponentsStrings {
   inline def `welcome-write-blog`: `welcome-write-blog` = "welcome-write-blog".asInstanceOf[`welcome-write-blog`]
   
   @js.native
+  sealed trait whatsapp
+    extends StObject
+       with Icon
+  inline def whatsapp: whatsapp = "whatsapp".asInstanceOf[whatsapp]
+  
+  @js.native
   sealed trait wordpress
     extends StObject
        with Icon
@@ -2745,6 +3068,12 @@ object wordpressComponentsStrings {
   inline def `wordpress-alt`: `wordpress-alt` = "wordpress-alt".asInstanceOf[`wordpress-alt`]
   
   @js.native
+  sealed trait xing
+    extends StObject
+       with Icon
+  inline def xing: xing = "xing".asInstanceOf[xing]
+  
+  @js.native
   sealed trait yes
     extends StObject
        with Icon
@@ -2755,4 +3084,10 @@ object wordpressComponentsStrings {
     extends StObject
        with Icon
   inline def `yes-alt`: `yes-alt` = "yes-alt".asInstanceOf[`yes-alt`]
+  
+  @js.native
+  sealed trait youtube
+    extends StObject
+       with Icon
+  inline def youtube: youtube = "youtube".asInstanceOf[youtube]
 }

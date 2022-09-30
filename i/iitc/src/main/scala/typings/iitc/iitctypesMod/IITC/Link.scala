@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Link-Marker */
 @JSImport("iitc/core/iitctypes", "IITC.Link")
 @js.native
-class Link protected () extends GeodesicPolyline_ {
+open class Link protected () extends GeodesicPolyline_ {
   def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
   def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
   

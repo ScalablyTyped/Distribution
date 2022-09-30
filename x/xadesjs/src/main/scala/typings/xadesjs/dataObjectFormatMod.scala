@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dataObjectFormatMod {
   
-  @JSImport("xadesjs/build/types/xml/data_object_format", "DataObjectFormat")
+  @JSImport("xadesjs/build/types/src/xml/data_object_format", "DataObjectFormat")
   @js.native
-  class DataObjectFormat () extends XadesObject {
+  open class DataObjectFormat () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Description: String = js.native

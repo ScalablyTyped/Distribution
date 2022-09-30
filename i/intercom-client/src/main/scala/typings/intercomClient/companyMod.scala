@@ -143,13 +143,13 @@ object companyMod {
   }
   object List {
     
-    inline def apply(companies: js.Array[Company & CompanyIdentifier], pages: Next, total_count: Double): List = {
+    inline def apply(companies: js.Array[Company & CompanyIdentifier], pages: Next, total_count: Double): typings.intercomClient.companyMod.List = {
       val __obj = js.Dynamic.literal(companies = companies.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("company.list")
-      __obj.asInstanceOf[List]
+      __obj.asInstanceOf[typings.intercomClient.companyMod.List]
     }
     
-    extension [Self <: List](x: Self) {
+    extension [Self <: typings.intercomClient.companyMod.List](x: Self) {
       
       inline def setCompanies(value: js.Array[Company & CompanyIdentifier]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       

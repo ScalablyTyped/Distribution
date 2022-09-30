@@ -2,8 +2,8 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer
 
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
+import typings.activexLibreoffice.activexLibreofficeInts.`1`
+import typings.activexLibreoffice.activexLibreofficeInts.`2`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
@@ -102,8 +102,8 @@ object clipboard {
   object RenderingCapabilities {
     
     /* Rewritten from type alias, can be one of: 
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`1`
-      - typings.activexLibreoffice.activexLibreofficeNumbers.`2`
+      - typings.activexLibreoffice.activexLibreofficeInts.`1`
+      - typings.activexLibreoffice.activexLibreofficeInts.`2`
     */
     trait Constants extends StObject
     object Constants {

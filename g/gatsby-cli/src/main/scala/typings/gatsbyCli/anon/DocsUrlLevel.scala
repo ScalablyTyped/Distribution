@@ -13,7 +13,9 @@ trait DocsUrlLevel extends StObject {
   
   var level: typings.gatsbyCli.structuredErrorsTypesMod.Level
   
-  def text(): String
+  def text(context: Any): String
+  
+  var `type`: typings.gatsbyCli.structuredErrorsTypesMod.Type
 }
 object DocsUrlLevel {
   
@@ -21,9 +23,11 @@ object DocsUrlLevel {
     category: ErrorCategory,
     docsUrl: String,
     level: typings.gatsbyCli.structuredErrorsTypesMod.Level,
-    text: () => String
+    text: Any => String,
+    `type`: typings.gatsbyCli.structuredErrorsTypesMod.Type
   ): DocsUrlLevel = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocsUrlLevel]
   }
   
@@ -35,6 +39,8 @@ object DocsUrlLevel {
     
     inline def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    
+    inline def setType(value: typings.gatsbyCli.structuredErrorsTypesMod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

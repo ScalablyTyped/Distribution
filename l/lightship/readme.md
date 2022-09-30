@@ -1,7 +1,7 @@
 
 # Scala.js typings for lightship
 
-Typings are for version 6.1
+Typings are for version 7.0.2
 
 ## Library description:
 Abstracts readiness, liveness and startup checks and graceful shutdown of Node.js services running in Kubernetes.
@@ -10,10 +10,10 @@ Abstracts readiness, liveness and startup checks and graceful shutdown of Node.j
 | ------------------ | :-------------: |
 | Full name          | lightship |
 | Keywords           | kubernetes |
-| # releases         | 33 |
-| # dependents       | 11 |
-| # downloads        | 686625 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 178102.0 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/lightship#readme)
@@ -24,7 +24,7 @@ Abstracts readiness, liveness and startup checks and graceful shutdown of Node.j
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

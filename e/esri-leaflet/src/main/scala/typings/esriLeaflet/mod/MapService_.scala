@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("esri-leaflet", "MapService")
 @js.native
-class MapService_ protected ()
+open class MapService_ protected ()
   extends typings.esriLeaflet.mod.leafletAugmentingMod.esri.MapService_ {
   def this(options: MapServiceOptions) = this()
 }

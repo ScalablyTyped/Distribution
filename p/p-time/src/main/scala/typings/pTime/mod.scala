@@ -1,5 +1,7 @@
 package typings.pTime
 
+import typings.std.Promise
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +24,7 @@ object mod {
     	//=> 1016
     	```
     	*/
-    inline def apply[ArgumentsType /* <: js.Array[Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
+    inline def apply[ArgumentsType /* <: js.Array[Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, PromiseLike[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
     
     @JSImport("p-time", JSImport.Default)
     @js.native
@@ -33,12 +35,13 @@ object mod {
     	@param asyncFunction - Promise-returning/async function.
     	@returns A decorated version of `asyncFunction`.
     	*/
-    inline def log[ArgumentsType /* <: js.Array[Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
+    inline def log[ArgumentsType /* <: js.Array[Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, PromiseLike[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
   }
   
   @js.native
   trait PromiseWithTime[ValueType]
-    extends js.Promise[ValueType] {
+    extends StObject
+       with Promise[ValueType] {
     
     /**
     	The elapsed time in milliseconds.

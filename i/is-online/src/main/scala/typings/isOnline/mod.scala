@@ -1,48 +1,33 @@
 package typings.isOnline
 
-import typings.isOnline.isOnlineNumbers.`4`
-import typings.isOnline.isOnlineNumbers.`6`
+import typings.isOnline.isOnlineInts.`4`
+import typings.isOnline.isOnlineInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  Check if the internet connection is up.
-  The following checks are run in parallel:
-  - Retrieve [icanhazip.com](https://github.com/major/icanhaz) via HTTPS
-  - Query `myip.opendns.com` on OpenDNS (Node.js only)
-  - Retrieve Apple's Captive Portal test page (Node.js only)
-  When the first check succeeds, the returned Promise is resolved to `true`.
-  @example
-  ```
-  import isOnline = require('is-online');
-  (async () => {
-  	console.log(await isOnline());
-  	//=> true
-  })();
-  ```
-  */
-  inline def apply(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Boolean]]
-  inline def apply(options: Options): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  
   @JSImport("is-online", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Boolean]]
+  inline def default(options: Options): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
   trait Options extends StObject {
     
     /**
-    		Internet Protocol version to use. This is an advanced option that is usually not necessary to be set, but it can prove useful to specifically assert IPv6 connectivity.
-    		@default 4
-    		*/
+    	[Internet Protocol version](https://en.wikipedia.org/wiki/Internet_Protocol#Version_history) to use.
+    	This is an advanced option that is usually not necessary to be set, but it can prove useful to specifically assert IPv6 connectivity.
+    	@default 4
+    	*/
     val ipVersion: js.UndefOr[`4` | `6`] = js.undefined
     
     /**
-    		Milliseconds to wait for a server to respond.
-    		@default 5000
-    		*/
+    	Milliseconds to wait for a server to respond.
+    	@default 5000
+    	*/
     val timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {

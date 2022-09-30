@@ -26,13 +26,13 @@ object mod {
     vars: js.Array[EnvVars | String]
   ): IfUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("getIfUtils")(env.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[IfUtils]
   
-  inline def propIf[I](a: Any, value: I, alternate: Any): I = (^.asInstanceOf[js.Dynamic].applyDynamic("propIf")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[I]
+  inline def propIf[E](a: Falsy, value: Any, alternate: E): E = (^.asInstanceOf[js.Dynamic].applyDynamic("propIf")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[E]
   
-  inline def propIfNot[I](a: Falsy, value: I, alternate: Any): I = (^.asInstanceOf[js.Dynamic].applyDynamic("propIfNot")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[I]
+  inline def propIfNot[E](a: Any, value: Any, alternate: E): E = (^.asInstanceOf[js.Dynamic].applyDynamic("propIfNot")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[E]
   
-  inline def propIfNot_E_E[E](a: Any, value: Any, alternate: E): E = (^.asInstanceOf[js.Dynamic].applyDynamic("propIfNot")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[E]
+  inline def propIfNot_I_I[I](a: Falsy, value: I, alternate: Any): I = (^.asInstanceOf[js.Dynamic].applyDynamic("propIfNot")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[I]
   
-  inline def propIf_E_E[E](a: Falsy, value: Any, alternate: E): E = (^.asInstanceOf[js.Dynamic].applyDynamic("propIf")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[E]
+  inline def propIf_I_I[I](a: Any, value: I, alternate: Any): I = (^.asInstanceOf[js.Dynamic].applyDynamic("propIf")(a.asInstanceOf[js.Any], value.asInstanceOf[js.Any], alternate.asInstanceOf[js.Any])).asInstanceOf[I]
   
   inline def removeEmpty[T](
     input: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -70,7 +70,7 @@ object mod {
     - typings.webpackConfigUtils.webpackConfigUtilsStrings.`false`
     - scala.Unit
     - scala.Null
-    - typings.webpackConfigUtils.webpackConfigUtilsNumbers.`0`
+    - typings.webpackConfigUtils.webpackConfigUtilsInts.`0`
   */
   type Falsy = js.UndefOr[_Falsy | Null]
   

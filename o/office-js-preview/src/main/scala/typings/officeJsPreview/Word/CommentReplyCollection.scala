@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains a collection of {@link Word.CommentReply} objects. Represents all comment replies in one comment thread.
   *
   * @remarks
-  * [Api set: WordApiOnline 1.1]
+  * [Api set: WordApi 1.4]
   */
 @js.native
 trait CommentReplyCollection
@@ -25,18 +25,18 @@ trait CommentReplyCollection
   var context_CommentReplyCollection: RequestContext = js.native
   
   /**
-    * Gets the first comment reply in the collection. Throws an error if this collection is empty.
+    * Gets the first comment reply in the collection. Throws an `ItemNotFound` error if this collection is empty.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getFirst(): CommentReply = js.native
   
   /**
-    * Gets the first comment reply in the collection. If the collection is empty, returns a null object.
+    * Gets the first comment reply in the collection. If the collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
     * @remarks
-    * [Api set: WordApiOnline 1.1]
+    * [Api set: WordApi 1.4]
     */
   def getFirstOrNullObject(): CommentReply = js.native
   

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Instantiable
   extends StObject
      with Instantiable1[/* props */ js.Object, ComponentDidCatch]
-     with Instantiable2[/* props */ js.Object, /* context */ js.Any, ComponentDidCatch] {
+     with Instantiable2[/* props */ js.Object, /* context */ Any, ComponentDidCatch] {
   
-  var contextType: js.UndefOr[Context[js.Any]] = js.native
+  var contextType: js.UndefOr[Context[Any]] = js.native
 }

@@ -1,9 +1,9 @@
 package typings.guacamoleClient
 
-import typings.guacamoleClient.guacamoleClientNumbers.`0`
-import typings.guacamoleClient.guacamoleClientNumbers.`1`
-import typings.guacamoleClient.guacamoleClientNumbers.`2`
-import typings.guacamoleClient.guacamoleClientNumbers.`3`
+import typings.guacamoleClient.guacamoleClientInts.`0`
+import typings.guacamoleClient.guacamoleClientInts.`1`
+import typings.guacamoleClient.guacamoleClientInts.`2`
+import typings.guacamoleClient.guacamoleClientInts.`3`
 import typings.guacamoleClient.guacamoleClientStrings._empty
 import typings.guacamoleClient.statusMod.Status
 import typings.guacamoleClient.tunnelMod.Tunnel.State
@@ -105,10 +105,10 @@ object tunnelMod {
     val INTERNAL_DATA_OPCODE: _empty = js.native
     
     /* Rewritten from type alias, can be one of: 
-      - typings.guacamoleClient.guacamoleClientNumbers.`0`
-      - typings.guacamoleClient.guacamoleClientNumbers.`1`
-      - typings.guacamoleClient.guacamoleClientNumbers.`2`
-      - typings.guacamoleClient.guacamoleClientNumbers.`3`
+      - typings.guacamoleClient.guacamoleClientInts.`0`
+      - typings.guacamoleClient.guacamoleClientInts.`1`
+      - typings.guacamoleClient.guacamoleClientInts.`2`
+      - typings.guacamoleClient.guacamoleClientInts.`3`
     */
     trait State extends StObject
     @JSImport("guacamole-client/lib/Tunnel", "Tunnel.State")

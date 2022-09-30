@@ -86,17 +86,9 @@ object subscriptionMod {
   
   @js.native
   trait SubscriptionPricingPromise
-    extends PricingPromise[SubscriptionPricingState, SubscriptionPricingMethods]
-       with SubscriptionPricingInstance {
-    
-    /* InferMemberOverrides */
-    override def `then`[B](
-      onFulfilled: js.Function1[SubscriptionPricingState, B | js.Thenable[B]],
-      onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
-    ): js.Thenable[B] & js.Promise[B] = js.native
-    /* InferMemberOverrides */
-    override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Thenable[B] & js.Promise[B] = js.native
-  }
+    extends StObject
+       with SubscriptionPricingInstance
+       with PricingPromise[SubscriptionPricingState, SubscriptionPricingMethods]
   
   trait SubscriptionPricingState extends StObject {
     

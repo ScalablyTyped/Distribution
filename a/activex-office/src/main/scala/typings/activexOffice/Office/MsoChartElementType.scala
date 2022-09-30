@@ -1,262 +1,262 @@
 package typings.activexOffice.Office
 
-import typings.activexOffice.activexOfficeNumbers.`0`
-import typings.activexOffice.activexOfficeNumbers.`1000`
-import typings.activexOffice.activexOfficeNumbers.`1001`
-import typings.activexOffice.activexOfficeNumbers.`100`
-import typings.activexOffice.activexOfficeNumbers.`101`
-import typings.activexOffice.activexOfficeNumbers.`102`
-import typings.activexOffice.activexOfficeNumbers.`103`
-import typings.activexOffice.activexOfficeNumbers.`104`
-import typings.activexOffice.activexOfficeNumbers.`105`
-import typings.activexOffice.activexOfficeNumbers.`106`
-import typings.activexOffice.activexOfficeNumbers.`1100`
-import typings.activexOffice.activexOfficeNumbers.`1101`
-import typings.activexOffice.activexOfficeNumbers.`1200`
-import typings.activexOffice.activexOfficeNumbers.`1201`
-import typings.activexOffice.activexOfficeNumbers.`1`
-import typings.activexOffice.activexOfficeNumbers.`200`
-import typings.activexOffice.activexOfficeNumbers.`201`
-import typings.activexOffice.activexOfficeNumbers.`202`
-import typings.activexOffice.activexOfficeNumbers.`203`
-import typings.activexOffice.activexOfficeNumbers.`204`
-import typings.activexOffice.activexOfficeNumbers.`205`
-import typings.activexOffice.activexOfficeNumbers.`206`
-import typings.activexOffice.activexOfficeNumbers.`207`
-import typings.activexOffice.activexOfficeNumbers.`208`
-import typings.activexOffice.activexOfficeNumbers.`209`
-import typings.activexOffice.activexOfficeNumbers.`210`
-import typings.activexOffice.activexOfficeNumbers.`211`
-import typings.activexOffice.activexOfficeNumbers.`2`
-import typings.activexOffice.activexOfficeNumbers.`300`
-import typings.activexOffice.activexOfficeNumbers.`301`
-import typings.activexOffice.activexOfficeNumbers.`302`
-import typings.activexOffice.activexOfficeNumbers.`303`
-import typings.activexOffice.activexOfficeNumbers.`304`
-import typings.activexOffice.activexOfficeNumbers.`305`
-import typings.activexOffice.activexOfficeNumbers.`306`
-import typings.activexOffice.activexOfficeNumbers.`308`
-import typings.activexOffice.activexOfficeNumbers.`309`
-import typings.activexOffice.activexOfficeNumbers.`310`
-import typings.activexOffice.activexOfficeNumbers.`311`
-import typings.activexOffice.activexOfficeNumbers.`312`
-import typings.activexOffice.activexOfficeNumbers.`313`
-import typings.activexOffice.activexOfficeNumbers.`314`
-import typings.activexOffice.activexOfficeNumbers.`315`
-import typings.activexOffice.activexOfficeNumbers.`316`
-import typings.activexOffice.activexOfficeNumbers.`317`
-import typings.activexOffice.activexOfficeNumbers.`318`
-import typings.activexOffice.activexOfficeNumbers.`319`
-import typings.activexOffice.activexOfficeNumbers.`320`
-import typings.activexOffice.activexOfficeNumbers.`321`
-import typings.activexOffice.activexOfficeNumbers.`322`
-import typings.activexOffice.activexOfficeNumbers.`323`
-import typings.activexOffice.activexOfficeNumbers.`324`
-import typings.activexOffice.activexOfficeNumbers.`325`
-import typings.activexOffice.activexOfficeNumbers.`326`
-import typings.activexOffice.activexOfficeNumbers.`327`
-import typings.activexOffice.activexOfficeNumbers.`328`
-import typings.activexOffice.activexOfficeNumbers.`329`
-import typings.activexOffice.activexOfficeNumbers.`330`
-import typings.activexOffice.activexOfficeNumbers.`331`
-import typings.activexOffice.activexOfficeNumbers.`332`
-import typings.activexOffice.activexOfficeNumbers.`333`
-import typings.activexOffice.activexOfficeNumbers.`334`
-import typings.activexOffice.activexOfficeNumbers.`335`
-import typings.activexOffice.activexOfficeNumbers.`336`
-import typings.activexOffice.activexOfficeNumbers.`337`
-import typings.activexOffice.activexOfficeNumbers.`338`
-import typings.activexOffice.activexOfficeNumbers.`339`
-import typings.activexOffice.activexOfficeNumbers.`340`
-import typings.activexOffice.activexOfficeNumbers.`341`
-import typings.activexOffice.activexOfficeNumbers.`342`
-import typings.activexOffice.activexOfficeNumbers.`343`
-import typings.activexOffice.activexOfficeNumbers.`344`
-import typings.activexOffice.activexOfficeNumbers.`345`
-import typings.activexOffice.activexOfficeNumbers.`346`
-import typings.activexOffice.activexOfficeNumbers.`347`
-import typings.activexOffice.activexOfficeNumbers.`348`
-import typings.activexOffice.activexOfficeNumbers.`349`
-import typings.activexOffice.activexOfficeNumbers.`350`
-import typings.activexOffice.activexOfficeNumbers.`351`
-import typings.activexOffice.activexOfficeNumbers.`352`
-import typings.activexOffice.activexOfficeNumbers.`353`
-import typings.activexOffice.activexOfficeNumbers.`354`
-import typings.activexOffice.activexOfficeNumbers.`355`
-import typings.activexOffice.activexOfficeNumbers.`356`
-import typings.activexOffice.activexOfficeNumbers.`357`
-import typings.activexOffice.activexOfficeNumbers.`358`
-import typings.activexOffice.activexOfficeNumbers.`359`
-import typings.activexOffice.activexOfficeNumbers.`360`
-import typings.activexOffice.activexOfficeNumbers.`361`
-import typings.activexOffice.activexOfficeNumbers.`362`
-import typings.activexOffice.activexOfficeNumbers.`363`
-import typings.activexOffice.activexOfficeNumbers.`364`
-import typings.activexOffice.activexOfficeNumbers.`365`
-import typings.activexOffice.activexOfficeNumbers.`366`
-import typings.activexOffice.activexOfficeNumbers.`367`
-import typings.activexOffice.activexOfficeNumbers.`368`
-import typings.activexOffice.activexOfficeNumbers.`369`
-import typings.activexOffice.activexOfficeNumbers.`370`
-import typings.activexOffice.activexOfficeNumbers.`371`
-import typings.activexOffice.activexOfficeNumbers.`372`
-import typings.activexOffice.activexOfficeNumbers.`373`
-import typings.activexOffice.activexOfficeNumbers.`374`
-import typings.activexOffice.activexOfficeNumbers.`375`
-import typings.activexOffice.activexOfficeNumbers.`376`
-import typings.activexOffice.activexOfficeNumbers.`377`
-import typings.activexOffice.activexOfficeNumbers.`378`
-import typings.activexOffice.activexOfficeNumbers.`379`
-import typings.activexOffice.activexOfficeNumbers.`500`
-import typings.activexOffice.activexOfficeNumbers.`501`
-import typings.activexOffice.activexOfficeNumbers.`502`
-import typings.activexOffice.activexOfficeNumbers.`600`
-import typings.activexOffice.activexOfficeNumbers.`601`
-import typings.activexOffice.activexOfficeNumbers.`602`
-import typings.activexOffice.activexOfficeNumbers.`603`
-import typings.activexOffice.activexOfficeNumbers.`604`
-import typings.activexOffice.activexOfficeNumbers.`700`
-import typings.activexOffice.activexOfficeNumbers.`701`
-import typings.activexOffice.activexOfficeNumbers.`702`
-import typings.activexOffice.activexOfficeNumbers.`703`
-import typings.activexOffice.activexOfficeNumbers.`800`
-import typings.activexOffice.activexOfficeNumbers.`801`
-import typings.activexOffice.activexOfficeNumbers.`802`
-import typings.activexOffice.activexOfficeNumbers.`803`
-import typings.activexOffice.activexOfficeNumbers.`804`
-import typings.activexOffice.activexOfficeNumbers.`900`
-import typings.activexOffice.activexOfficeNumbers.`901`
+import typings.activexOffice.activexOfficeInts.`0`
+import typings.activexOffice.activexOfficeInts.`1000`
+import typings.activexOffice.activexOfficeInts.`1001`
+import typings.activexOffice.activexOfficeInts.`100`
+import typings.activexOffice.activexOfficeInts.`101`
+import typings.activexOffice.activexOfficeInts.`102`
+import typings.activexOffice.activexOfficeInts.`103`
+import typings.activexOffice.activexOfficeInts.`104`
+import typings.activexOffice.activexOfficeInts.`105`
+import typings.activexOffice.activexOfficeInts.`106`
+import typings.activexOffice.activexOfficeInts.`1100`
+import typings.activexOffice.activexOfficeInts.`1101`
+import typings.activexOffice.activexOfficeInts.`1200`
+import typings.activexOffice.activexOfficeInts.`1201`
+import typings.activexOffice.activexOfficeInts.`1`
+import typings.activexOffice.activexOfficeInts.`200`
+import typings.activexOffice.activexOfficeInts.`201`
+import typings.activexOffice.activexOfficeInts.`202`
+import typings.activexOffice.activexOfficeInts.`203`
+import typings.activexOffice.activexOfficeInts.`204`
+import typings.activexOffice.activexOfficeInts.`205`
+import typings.activexOffice.activexOfficeInts.`206`
+import typings.activexOffice.activexOfficeInts.`207`
+import typings.activexOffice.activexOfficeInts.`208`
+import typings.activexOffice.activexOfficeInts.`209`
+import typings.activexOffice.activexOfficeInts.`210`
+import typings.activexOffice.activexOfficeInts.`211`
+import typings.activexOffice.activexOfficeInts.`2`
+import typings.activexOffice.activexOfficeInts.`300`
+import typings.activexOffice.activexOfficeInts.`301`
+import typings.activexOffice.activexOfficeInts.`302`
+import typings.activexOffice.activexOfficeInts.`303`
+import typings.activexOffice.activexOfficeInts.`304`
+import typings.activexOffice.activexOfficeInts.`305`
+import typings.activexOffice.activexOfficeInts.`306`
+import typings.activexOffice.activexOfficeInts.`308`
+import typings.activexOffice.activexOfficeInts.`309`
+import typings.activexOffice.activexOfficeInts.`310`
+import typings.activexOffice.activexOfficeInts.`311`
+import typings.activexOffice.activexOfficeInts.`312`
+import typings.activexOffice.activexOfficeInts.`313`
+import typings.activexOffice.activexOfficeInts.`314`
+import typings.activexOffice.activexOfficeInts.`315`
+import typings.activexOffice.activexOfficeInts.`316`
+import typings.activexOffice.activexOfficeInts.`317`
+import typings.activexOffice.activexOfficeInts.`318`
+import typings.activexOffice.activexOfficeInts.`319`
+import typings.activexOffice.activexOfficeInts.`320`
+import typings.activexOffice.activexOfficeInts.`321`
+import typings.activexOffice.activexOfficeInts.`322`
+import typings.activexOffice.activexOfficeInts.`323`
+import typings.activexOffice.activexOfficeInts.`324`
+import typings.activexOffice.activexOfficeInts.`325`
+import typings.activexOffice.activexOfficeInts.`326`
+import typings.activexOffice.activexOfficeInts.`327`
+import typings.activexOffice.activexOfficeInts.`328`
+import typings.activexOffice.activexOfficeInts.`329`
+import typings.activexOffice.activexOfficeInts.`330`
+import typings.activexOffice.activexOfficeInts.`331`
+import typings.activexOffice.activexOfficeInts.`332`
+import typings.activexOffice.activexOfficeInts.`333`
+import typings.activexOffice.activexOfficeInts.`334`
+import typings.activexOffice.activexOfficeInts.`335`
+import typings.activexOffice.activexOfficeInts.`336`
+import typings.activexOffice.activexOfficeInts.`337`
+import typings.activexOffice.activexOfficeInts.`338`
+import typings.activexOffice.activexOfficeInts.`339`
+import typings.activexOffice.activexOfficeInts.`340`
+import typings.activexOffice.activexOfficeInts.`341`
+import typings.activexOffice.activexOfficeInts.`342`
+import typings.activexOffice.activexOfficeInts.`343`
+import typings.activexOffice.activexOfficeInts.`344`
+import typings.activexOffice.activexOfficeInts.`345`
+import typings.activexOffice.activexOfficeInts.`346`
+import typings.activexOffice.activexOfficeInts.`347`
+import typings.activexOffice.activexOfficeInts.`348`
+import typings.activexOffice.activexOfficeInts.`349`
+import typings.activexOffice.activexOfficeInts.`350`
+import typings.activexOffice.activexOfficeInts.`351`
+import typings.activexOffice.activexOfficeInts.`352`
+import typings.activexOffice.activexOfficeInts.`353`
+import typings.activexOffice.activexOfficeInts.`354`
+import typings.activexOffice.activexOfficeInts.`355`
+import typings.activexOffice.activexOfficeInts.`356`
+import typings.activexOffice.activexOfficeInts.`357`
+import typings.activexOffice.activexOfficeInts.`358`
+import typings.activexOffice.activexOfficeInts.`359`
+import typings.activexOffice.activexOfficeInts.`360`
+import typings.activexOffice.activexOfficeInts.`361`
+import typings.activexOffice.activexOfficeInts.`362`
+import typings.activexOffice.activexOfficeInts.`363`
+import typings.activexOffice.activexOfficeInts.`364`
+import typings.activexOffice.activexOfficeInts.`365`
+import typings.activexOffice.activexOfficeInts.`366`
+import typings.activexOffice.activexOfficeInts.`367`
+import typings.activexOffice.activexOfficeInts.`368`
+import typings.activexOffice.activexOfficeInts.`369`
+import typings.activexOffice.activexOfficeInts.`370`
+import typings.activexOffice.activexOfficeInts.`371`
+import typings.activexOffice.activexOfficeInts.`372`
+import typings.activexOffice.activexOfficeInts.`373`
+import typings.activexOffice.activexOfficeInts.`374`
+import typings.activexOffice.activexOfficeInts.`375`
+import typings.activexOffice.activexOfficeInts.`376`
+import typings.activexOffice.activexOfficeInts.`377`
+import typings.activexOffice.activexOfficeInts.`378`
+import typings.activexOffice.activexOfficeInts.`379`
+import typings.activexOffice.activexOfficeInts.`500`
+import typings.activexOffice.activexOfficeInts.`501`
+import typings.activexOffice.activexOfficeInts.`502`
+import typings.activexOffice.activexOfficeInts.`600`
+import typings.activexOffice.activexOfficeInts.`601`
+import typings.activexOffice.activexOfficeInts.`602`
+import typings.activexOffice.activexOfficeInts.`603`
+import typings.activexOffice.activexOfficeInts.`604`
+import typings.activexOffice.activexOfficeInts.`700`
+import typings.activexOffice.activexOfficeInts.`701`
+import typings.activexOffice.activexOfficeInts.`702`
+import typings.activexOffice.activexOfficeInts.`703`
+import typings.activexOffice.activexOfficeInts.`800`
+import typings.activexOffice.activexOfficeInts.`801`
+import typings.activexOffice.activexOfficeInts.`802`
+import typings.activexOffice.activexOfficeInts.`803`
+import typings.activexOffice.activexOfficeInts.`804`
+import typings.activexOffice.activexOfficeInts.`900`
+import typings.activexOffice.activexOfficeInts.`901`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.activexOffice.activexOfficeNumbers.`1200`
-  - typings.activexOffice.activexOfficeNumbers.`1201`
-  - typings.activexOffice.activexOfficeNumbers.`2`
-  - typings.activexOffice.activexOfficeNumbers.`1`
-  - typings.activexOffice.activexOfficeNumbers.`0`
-  - typings.activexOffice.activexOfficeNumbers.`1100`
-  - typings.activexOffice.activexOfficeNumbers.`1101`
-  - typings.activexOffice.activexOfficeNumbers.`210`
-  - typings.activexOffice.activexOfficeNumbers.`209`
-  - typings.activexOffice.activexOfficeNumbers.`211`
-  - typings.activexOffice.activexOfficeNumbers.`202`
-  - typings.activexOffice.activexOfficeNumbers.`204`
-  - typings.activexOffice.activexOfficeNumbers.`203`
-  - typings.activexOffice.activexOfficeNumbers.`206`
-  - typings.activexOffice.activexOfficeNumbers.`200`
-  - typings.activexOffice.activexOfficeNumbers.`205`
-  - typings.activexOffice.activexOfficeNumbers.`207`
-  - typings.activexOffice.activexOfficeNumbers.`201`
-  - typings.activexOffice.activexOfficeNumbers.`208`
-  - typings.activexOffice.activexOfficeNumbers.`500`
-  - typings.activexOffice.activexOfficeNumbers.`501`
-  - typings.activexOffice.activexOfficeNumbers.`502`
-  - typings.activexOffice.activexOfficeNumbers.`700`
-  - typings.activexOffice.activexOfficeNumbers.`702`
-  - typings.activexOffice.activexOfficeNumbers.`703`
-  - typings.activexOffice.activexOfficeNumbers.`701`
-  - typings.activexOffice.activexOfficeNumbers.`104`
-  - typings.activexOffice.activexOfficeNumbers.`103`
-  - typings.activexOffice.activexOfficeNumbers.`106`
-  - typings.activexOffice.activexOfficeNumbers.`100`
-  - typings.activexOffice.activexOfficeNumbers.`101`
-  - typings.activexOffice.activexOfficeNumbers.`105`
-  - typings.activexOffice.activexOfficeNumbers.`102`
-  - typings.activexOffice.activexOfficeNumbers.`804`
-  - typings.activexOffice.activexOfficeNumbers.`801`
-  - typings.activexOffice.activexOfficeNumbers.`802`
-  - typings.activexOffice.activexOfficeNumbers.`800`
-  - typings.activexOffice.activexOfficeNumbers.`803`
-  - typings.activexOffice.activexOfficeNumbers.`1000`
-  - typings.activexOffice.activexOfficeNumbers.`1001`
-  - typings.activexOffice.activexOfficeNumbers.`374`
-  - typings.activexOffice.activexOfficeNumbers.`375`
-  - typings.activexOffice.activexOfficeNumbers.`373`
-  - typings.activexOffice.activexOfficeNumbers.`348`
-  - typings.activexOffice.activexOfficeNumbers.`351`
-  - typings.activexOffice.activexOfficeNumbers.`349`
-  - typings.activexOffice.activexOfficeNumbers.`372`
-  - typings.activexOffice.activexOfficeNumbers.`301`
-  - typings.activexOffice.activexOfficeNumbers.`302`
-  - typings.activexOffice.activexOfficeNumbers.`305`
-  - typings.activexOffice.activexOfficeNumbers.`300`
-  - typings.activexOffice.activexOfficeNumbers.`303`
-  - typings.activexOffice.activexOfficeNumbers.`304`
-  - typings.activexOffice.activexOfficeNumbers.`350`
-  - typings.activexOffice.activexOfficeNumbers.`334`
-  - typings.activexOffice.activexOfficeNumbers.`333`
-  - typings.activexOffice.activexOfficeNumbers.`335`
-  - typings.activexOffice.activexOfficeNumbers.`332`
-  - typings.activexOffice.activexOfficeNumbers.`356`
-  - typings.activexOffice.activexOfficeNumbers.`357`
-  - typings.activexOffice.activexOfficeNumbers.`355`
-  - typings.activexOffice.activexOfficeNumbers.`352`
-  - typings.activexOffice.activexOfficeNumbers.`353`
-  - typings.activexOffice.activexOfficeNumbers.`354`
-  - typings.activexOffice.activexOfficeNumbers.`306`
-  - typings.activexOffice.activexOfficeNumbers.`308`
-  - typings.activexOffice.activexOfficeNumbers.`311`
-  - typings.activexOffice.activexOfficeNumbers.`309`
-  - typings.activexOffice.activexOfficeNumbers.`310`
-  - typings.activexOffice.activexOfficeNumbers.`330`
-  - typings.activexOffice.activexOfficeNumbers.`329`
-  - typings.activexOffice.activexOfficeNumbers.`331`
-  - typings.activexOffice.activexOfficeNumbers.`328`
-  - typings.activexOffice.activexOfficeNumbers.`378`
-  - typings.activexOffice.activexOfficeNumbers.`379`
-  - typings.activexOffice.activexOfficeNumbers.`377`
-  - typings.activexOffice.activexOfficeNumbers.`358`
-  - typings.activexOffice.activexOfficeNumbers.`361`
-  - typings.activexOffice.activexOfficeNumbers.`359`
-  - typings.activexOffice.activexOfficeNumbers.`376`
-  - typings.activexOffice.activexOfficeNumbers.`313`
-  - typings.activexOffice.activexOfficeNumbers.`314`
-  - typings.activexOffice.activexOfficeNumbers.`317`
-  - typings.activexOffice.activexOfficeNumbers.`312`
-  - typings.activexOffice.activexOfficeNumbers.`315`
-  - typings.activexOffice.activexOfficeNumbers.`316`
-  - typings.activexOffice.activexOfficeNumbers.`360`
-  - typings.activexOffice.activexOfficeNumbers.`342`
-  - typings.activexOffice.activexOfficeNumbers.`341`
-  - typings.activexOffice.activexOfficeNumbers.`343`
-  - typings.activexOffice.activexOfficeNumbers.`340`
-  - typings.activexOffice.activexOfficeNumbers.`366`
-  - typings.activexOffice.activexOfficeNumbers.`367`
-  - typings.activexOffice.activexOfficeNumbers.`365`
-  - typings.activexOffice.activexOfficeNumbers.`362`
-  - typings.activexOffice.activexOfficeNumbers.`363`
-  - typings.activexOffice.activexOfficeNumbers.`364`
-  - typings.activexOffice.activexOfficeNumbers.`319`
-  - typings.activexOffice.activexOfficeNumbers.`320`
-  - typings.activexOffice.activexOfficeNumbers.`323`
-  - typings.activexOffice.activexOfficeNumbers.`318`
-  - typings.activexOffice.activexOfficeNumbers.`321`
-  - typings.activexOffice.activexOfficeNumbers.`322`
-  - typings.activexOffice.activexOfficeNumbers.`338`
-  - typings.activexOffice.activexOfficeNumbers.`337`
-  - typings.activexOffice.activexOfficeNumbers.`339`
-  - typings.activexOffice.activexOfficeNumbers.`336`
-  - typings.activexOffice.activexOfficeNumbers.`346`
-  - typings.activexOffice.activexOfficeNumbers.`345`
-  - typings.activexOffice.activexOfficeNumbers.`347`
-  - typings.activexOffice.activexOfficeNumbers.`344`
-  - typings.activexOffice.activexOfficeNumbers.`368`
-  - typings.activexOffice.activexOfficeNumbers.`371`
-  - typings.activexOffice.activexOfficeNumbers.`369`
-  - typings.activexOffice.activexOfficeNumbers.`327`
-  - typings.activexOffice.activexOfficeNumbers.`324`
-  - typings.activexOffice.activexOfficeNumbers.`325`
-  - typings.activexOffice.activexOfficeNumbers.`326`
-  - typings.activexOffice.activexOfficeNumbers.`370`
-  - typings.activexOffice.activexOfficeNumbers.`602`
-  - typings.activexOffice.activexOfficeNumbers.`601`
-  - typings.activexOffice.activexOfficeNumbers.`603`
-  - typings.activexOffice.activexOfficeNumbers.`604`
-  - typings.activexOffice.activexOfficeNumbers.`600`
-  - typings.activexOffice.activexOfficeNumbers.`900`
-  - typings.activexOffice.activexOfficeNumbers.`901`
+  - typings.activexOffice.activexOfficeInts.`1200`
+  - typings.activexOffice.activexOfficeInts.`1201`
+  - typings.activexOffice.activexOfficeInts.`2`
+  - typings.activexOffice.activexOfficeInts.`1`
+  - typings.activexOffice.activexOfficeInts.`0`
+  - typings.activexOffice.activexOfficeInts.`1100`
+  - typings.activexOffice.activexOfficeInts.`1101`
+  - typings.activexOffice.activexOfficeInts.`210`
+  - typings.activexOffice.activexOfficeInts.`209`
+  - typings.activexOffice.activexOfficeInts.`211`
+  - typings.activexOffice.activexOfficeInts.`202`
+  - typings.activexOffice.activexOfficeInts.`204`
+  - typings.activexOffice.activexOfficeInts.`203`
+  - typings.activexOffice.activexOfficeInts.`206`
+  - typings.activexOffice.activexOfficeInts.`200`
+  - typings.activexOffice.activexOfficeInts.`205`
+  - typings.activexOffice.activexOfficeInts.`207`
+  - typings.activexOffice.activexOfficeInts.`201`
+  - typings.activexOffice.activexOfficeInts.`208`
+  - typings.activexOffice.activexOfficeInts.`500`
+  - typings.activexOffice.activexOfficeInts.`501`
+  - typings.activexOffice.activexOfficeInts.`502`
+  - typings.activexOffice.activexOfficeInts.`700`
+  - typings.activexOffice.activexOfficeInts.`702`
+  - typings.activexOffice.activexOfficeInts.`703`
+  - typings.activexOffice.activexOfficeInts.`701`
+  - typings.activexOffice.activexOfficeInts.`104`
+  - typings.activexOffice.activexOfficeInts.`103`
+  - typings.activexOffice.activexOfficeInts.`106`
+  - typings.activexOffice.activexOfficeInts.`100`
+  - typings.activexOffice.activexOfficeInts.`101`
+  - typings.activexOffice.activexOfficeInts.`105`
+  - typings.activexOffice.activexOfficeInts.`102`
+  - typings.activexOffice.activexOfficeInts.`804`
+  - typings.activexOffice.activexOfficeInts.`801`
+  - typings.activexOffice.activexOfficeInts.`802`
+  - typings.activexOffice.activexOfficeInts.`800`
+  - typings.activexOffice.activexOfficeInts.`803`
+  - typings.activexOffice.activexOfficeInts.`1000`
+  - typings.activexOffice.activexOfficeInts.`1001`
+  - typings.activexOffice.activexOfficeInts.`374`
+  - typings.activexOffice.activexOfficeInts.`375`
+  - typings.activexOffice.activexOfficeInts.`373`
+  - typings.activexOffice.activexOfficeInts.`348`
+  - typings.activexOffice.activexOfficeInts.`351`
+  - typings.activexOffice.activexOfficeInts.`349`
+  - typings.activexOffice.activexOfficeInts.`372`
+  - typings.activexOffice.activexOfficeInts.`301`
+  - typings.activexOffice.activexOfficeInts.`302`
+  - typings.activexOffice.activexOfficeInts.`305`
+  - typings.activexOffice.activexOfficeInts.`300`
+  - typings.activexOffice.activexOfficeInts.`303`
+  - typings.activexOffice.activexOfficeInts.`304`
+  - typings.activexOffice.activexOfficeInts.`350`
+  - typings.activexOffice.activexOfficeInts.`334`
+  - typings.activexOffice.activexOfficeInts.`333`
+  - typings.activexOffice.activexOfficeInts.`335`
+  - typings.activexOffice.activexOfficeInts.`332`
+  - typings.activexOffice.activexOfficeInts.`356`
+  - typings.activexOffice.activexOfficeInts.`357`
+  - typings.activexOffice.activexOfficeInts.`355`
+  - typings.activexOffice.activexOfficeInts.`352`
+  - typings.activexOffice.activexOfficeInts.`353`
+  - typings.activexOffice.activexOfficeInts.`354`
+  - typings.activexOffice.activexOfficeInts.`306`
+  - typings.activexOffice.activexOfficeInts.`308`
+  - typings.activexOffice.activexOfficeInts.`311`
+  - typings.activexOffice.activexOfficeInts.`309`
+  - typings.activexOffice.activexOfficeInts.`310`
+  - typings.activexOffice.activexOfficeInts.`330`
+  - typings.activexOffice.activexOfficeInts.`329`
+  - typings.activexOffice.activexOfficeInts.`331`
+  - typings.activexOffice.activexOfficeInts.`328`
+  - typings.activexOffice.activexOfficeInts.`378`
+  - typings.activexOffice.activexOfficeInts.`379`
+  - typings.activexOffice.activexOfficeInts.`377`
+  - typings.activexOffice.activexOfficeInts.`358`
+  - typings.activexOffice.activexOfficeInts.`361`
+  - typings.activexOffice.activexOfficeInts.`359`
+  - typings.activexOffice.activexOfficeInts.`376`
+  - typings.activexOffice.activexOfficeInts.`313`
+  - typings.activexOffice.activexOfficeInts.`314`
+  - typings.activexOffice.activexOfficeInts.`317`
+  - typings.activexOffice.activexOfficeInts.`312`
+  - typings.activexOffice.activexOfficeInts.`315`
+  - typings.activexOffice.activexOfficeInts.`316`
+  - typings.activexOffice.activexOfficeInts.`360`
+  - typings.activexOffice.activexOfficeInts.`342`
+  - typings.activexOffice.activexOfficeInts.`341`
+  - typings.activexOffice.activexOfficeInts.`343`
+  - typings.activexOffice.activexOfficeInts.`340`
+  - typings.activexOffice.activexOfficeInts.`366`
+  - typings.activexOffice.activexOfficeInts.`367`
+  - typings.activexOffice.activexOfficeInts.`365`
+  - typings.activexOffice.activexOfficeInts.`362`
+  - typings.activexOffice.activexOfficeInts.`363`
+  - typings.activexOffice.activexOfficeInts.`364`
+  - typings.activexOffice.activexOfficeInts.`319`
+  - typings.activexOffice.activexOfficeInts.`320`
+  - typings.activexOffice.activexOfficeInts.`323`
+  - typings.activexOffice.activexOfficeInts.`318`
+  - typings.activexOffice.activexOfficeInts.`321`
+  - typings.activexOffice.activexOfficeInts.`322`
+  - typings.activexOffice.activexOfficeInts.`338`
+  - typings.activexOffice.activexOfficeInts.`337`
+  - typings.activexOffice.activexOfficeInts.`339`
+  - typings.activexOffice.activexOfficeInts.`336`
+  - typings.activexOffice.activexOfficeInts.`346`
+  - typings.activexOffice.activexOfficeInts.`345`
+  - typings.activexOffice.activexOfficeInts.`347`
+  - typings.activexOffice.activexOfficeInts.`344`
+  - typings.activexOffice.activexOfficeInts.`368`
+  - typings.activexOffice.activexOfficeInts.`371`
+  - typings.activexOffice.activexOfficeInts.`369`
+  - typings.activexOffice.activexOfficeInts.`327`
+  - typings.activexOffice.activexOfficeInts.`324`
+  - typings.activexOffice.activexOfficeInts.`325`
+  - typings.activexOffice.activexOfficeInts.`326`
+  - typings.activexOffice.activexOfficeInts.`370`
+  - typings.activexOffice.activexOfficeInts.`602`
+  - typings.activexOffice.activexOfficeInts.`601`
+  - typings.activexOffice.activexOfficeInts.`603`
+  - typings.activexOffice.activexOfficeInts.`604`
+  - typings.activexOffice.activexOfficeInts.`600`
+  - typings.activexOffice.activexOfficeInts.`900`
+  - typings.activexOffice.activexOfficeInts.`901`
 */
 trait MsoChartElementType extends StObject
 object MsoChartElementType {

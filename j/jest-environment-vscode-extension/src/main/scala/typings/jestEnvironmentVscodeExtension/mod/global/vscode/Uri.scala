@@ -75,7 +75,7 @@ object Uri {
     * @param pathSegments One more more path fragments
     * @returns A new uri which path is joined with the given fragments
     */
-  inline def joinPath(base: typings.vscode.mod.Uri, pathSegments: String*): typings.vscode.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(List(base.asInstanceOf[js.Any]).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.vscode.mod.Uri]
+  inline def joinPath(base: typings.vscode.mod.Uri, pathSegments: String*): typings.vscode.mod.Uri = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(scala.List(base.asInstanceOf[js.Any]).`++`(pathSegments.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.vscode.mod.Uri]
   
   /**
     * Create an URI from a string, e.g. `http://www.example.com/some/path`,

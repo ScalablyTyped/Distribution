@@ -10,7 +10,7 @@ object androidMod {
     
     @JSGlobal("Android")
     @js.native
-    class Android_ () extends StObject {
+    open class Android_ () extends StObject {
       
       def addPane(id: String, label: String): Unit = js.native
       def addPane(id: String, label: String, icon: String): Unit = js.native

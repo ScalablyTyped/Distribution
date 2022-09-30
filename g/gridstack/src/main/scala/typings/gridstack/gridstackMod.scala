@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.gridstack.anon.Target
 import typings.gridstack.anon.TypeofUtils
 import typings.gridstack.gridstackEngineMod.GridStackEngineOptions
-import typings.gridstack.gridstackNumbers.`-1`
-import typings.gridstack.gridstackNumbers.`1`
+import typings.gridstack.gridstackInts.`-1`
+import typings.gridstack.gridstackInts.`1`
 import typings.gridstack.typesMod.ColumnOptions
 import typings.gridstack.typesMod.DDDragInOpt
 import typings.gridstack.typesMod.GridItemHTMLElement
@@ -50,6 +50,10 @@ object gridstackMod {
     /** get the global (but static to this code) DD implementation */
     inline def get(): typings.gridstack.es5DdGridstackMod.DDGridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.gridstack.es5DdGridstackMod.DDGridStack]
   }
+  
+  @JSImport("gridstack/dist/es5/gridstack", "GridDefaults")
+  @js.native
+  val GridDefaults: GridStackOptions = js.native
   
   @JSImport("gridstack/dist/es5/gridstack", "GridStack")
   @js.native
@@ -550,7 +554,7 @@ object gridstackMod {
     inline def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
     
     /** copies unset fields in target to use the given default sources values */
-    inline def defaults(target: Any, sources: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+    inline def defaults(target: Any, sources: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
     
     /** convert a potential selector into actual single element */
     inline def getElement(els: GridStackElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(els.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]

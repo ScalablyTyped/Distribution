@@ -1,6 +1,6 @@
 package typings.ipldDagPb
 
-import typings.ipldDagPb.ipldDagPbNumbers.`112`
+import typings.ipldDagPb.ipldDagPbInts.`112`
 import typings.ipldDagPb.ipldDagPbStrings.`dag-pb`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

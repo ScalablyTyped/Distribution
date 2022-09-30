@@ -1,7 +1,6 @@
 package typings.fuzzaldrinPlus
 
 import typings.fuzzaldrinPlus.anon.TagClass
-import typings.fuzzaldrinPlus.fuzzaldrinPlusStrings.Backslash
 import typings.fuzzaldrinPlus.fuzzaldrinPlusStrings.Slash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -75,7 +74,7 @@ object mod {
     
     var optCharRegEx: js.UndefOr[js.RegExp] = js.undefined
     
-    var pathSeparator: js.UndefOr[Slash | Backslash | String] = js.undefined
+    var pathSeparator: js.UndefOr[Slash | String] = js.undefined
     
     var preparedQuery: js.UndefOr[Query] = js.undefined
     
@@ -102,7 +101,7 @@ object mod {
       
       inline def setOptCharRegExUndefined: Self = StObject.set(x, "optCharRegEx", js.undefined)
       
-      inline def setPathSeparator(value: Slash | Backslash | String): Self = StObject.set(x, "pathSeparator", value.asInstanceOf[js.Any])
+      inline def setPathSeparator(value: Slash | String): Self = StObject.set(x, "pathSeparator", value.asInstanceOf[js.Any])
       
       inline def setPathSeparatorUndefined: Self = StObject.set(x, "pathSeparator", js.undefined)
       

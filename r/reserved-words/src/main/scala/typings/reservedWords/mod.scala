@@ -22,10 +22,10 @@ object mod {
   inline def check(word: String, dialect: Dialect, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(word.asInstanceOf[js.Any], dialect.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.reservedWords.reservedWordsNumbers.`3`
-    - typings.reservedWords.reservedWordsNumbers.`5`
-    - typings.reservedWords.reservedWordsNumbers.`6`
-    - typings.reservedWords.reservedWordsNumbers.`7`
+    - typings.reservedWords.reservedWordsInts.`3`
+    - typings.reservedWords.reservedWordsInts.`5`
+    - typings.reservedWords.reservedWordsInts.`6`
+    - typings.reservedWords.reservedWordsInts.`7`
     - typings.reservedWords.reservedWordsStrings.es3
     - typings.reservedWords.reservedWordsStrings.es5
     - typings.reservedWords.reservedWordsStrings.es2015
@@ -36,13 +36,13 @@ object mod {
   trait Dialect extends StObject
   object Dialect {
     
-    inline def `3`: typings.reservedWords.reservedWordsNumbers.`3` = 3.asInstanceOf[typings.reservedWords.reservedWordsNumbers.`3`]
+    inline def `3`: typings.reservedWords.reservedWordsInts.`3` = 3.asInstanceOf[typings.reservedWords.reservedWordsInts.`3`]
     
-    inline def `5`: typings.reservedWords.reservedWordsNumbers.`5` = 5.asInstanceOf[typings.reservedWords.reservedWordsNumbers.`5`]
+    inline def `5`: typings.reservedWords.reservedWordsInts.`5` = 5.asInstanceOf[typings.reservedWords.reservedWordsInts.`5`]
     
-    inline def `6`: typings.reservedWords.reservedWordsNumbers.`6` = 6.asInstanceOf[typings.reservedWords.reservedWordsNumbers.`6`]
+    inline def `6`: typings.reservedWords.reservedWordsInts.`6` = 6.asInstanceOf[typings.reservedWords.reservedWordsInts.`6`]
     
-    inline def `7`: typings.reservedWords.reservedWordsNumbers.`7` = 7.asInstanceOf[typings.reservedWords.reservedWordsNumbers.`7`]
+    inline def `7`: typings.reservedWords.reservedWordsInts.`7` = 7.asInstanceOf[typings.reservedWords.reservedWordsInts.`7`]
     
     inline def es2015: typings.reservedWords.reservedWordsStrings.es2015 = "es2015".asInstanceOf[typings.reservedWords.reservedWordsStrings.es2015]
     

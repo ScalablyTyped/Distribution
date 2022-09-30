@@ -67,7 +67,7 @@ object Collection {
       * @see {@link Controls.Control.getName Controls.Control.getName()} for Control-naming schemes.
       */
     @JSName("get")
-    def get_TSubType_T_TSubType[TSubType /* <: T */](attributeName: String): TSubType = js.native
+    def get_TSubType_TSubType[TSubType /* <: T */](attributeName: String): TSubType = js.native
     /**
       * Gets the item given by the index.
       * @param itemNumber The item number to get.
@@ -75,7 +75,7 @@ object Collection {
       * @see {@link Controls.Control.getName Controls.Control.getName()} for Control-naming schemes.
       */
     @JSName("get")
-    def get_TSubType_T_TSubType[TSubType /* <: T */](itemNumber: Double): TSubType = js.native
+    def get_TSubType_TSubType[TSubType /* <: T */](itemNumber: Double): TSubType = js.native
   }
   
   /**

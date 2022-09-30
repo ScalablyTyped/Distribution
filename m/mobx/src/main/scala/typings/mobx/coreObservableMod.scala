@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object coreObservableMod {
   
-  @JSImport("mobx/lib/core/observable", JSImport.Namespace)
+  @JSImport("mobx/dist/core/observable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -38,26 +38,26 @@ object coreObservableMod {
   
   trait IDepTreeNode extends StObject {
     
-    var name: String
+    var name_ : String
     
-    var observing: js.UndefOr[js.Array[IObservable]] = js.undefined
+    var observing_ : js.UndefOr[js.Array[IObservable]] = js.undefined
   }
   object IDepTreeNode {
     
-    inline def apply(name: String): IDepTreeNode = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name_ : String): IDepTreeNode = {
+      val __obj = js.Dynamic.literal(name_ = name_.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDepTreeNode]
     }
     
     extension [Self <: IDepTreeNode](x: Self) {
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName_(value: String): Self = StObject.set(x, "name_", value.asInstanceOf[js.Any])
       
-      inline def setObserving(value: js.Array[IObservable]): Self = StObject.set(x, "observing", value.asInstanceOf[js.Any])
+      inline def setObserving_(value: js.Array[IObservable]): Self = StObject.set(x, "observing_", value.asInstanceOf[js.Any])
       
-      inline def setObservingUndefined: Self = StObject.set(x, "observing", js.undefined)
+      inline def setObserving_Undefined: Self = StObject.set(x, "observing_", js.undefined)
       
-      inline def setObservingVarargs(value: IObservable*): Self = StObject.set(x, "observing", js.Array(value :_*))
+      inline def setObserving_Varargs(value: IObservable*): Self = StObject.set(x, "observing_", js.Array(value*))
     }
   }
   
@@ -65,73 +65,73 @@ object coreObservableMod {
     extends StObject
        with IDepTreeNode {
     
-    var diffValue: Double
+    var diffValue_ : Double
     
-    var isBeingObserved: Boolean
+    var isBeingObserved_ : Boolean
     
-    var isPendingUnobservation: Boolean
+    var isPendingUnobservation_ : Boolean
     
     /**
       * Id of the derivation *run* that last accessed this observable.
       * If this id equals the *run* id of the current derivation,
       * the dependency is already established
       */
-    var lastAccessedBy: Double
+    var lastAccessedBy_ : Double
     
-    var lowestObserverState: IDerivationState
+    var lowestObserverState_ : IDerivationState
     
-    var observers: Set[IDerivation]
+    var observers_ : Set[IDerivation]
     
-    def onBecomeObserved(): Unit
+    def onBO(): Unit
     
-    var onBecomeObservedListeners: js.UndefOr[Set[Lambda]] = js.undefined
+    var onBOL: js.UndefOr[Set[Lambda]] = js.undefined
     
-    def onBecomeUnobserved(): Unit
+    def onBUO(): Unit
     
-    var onBecomeUnobservedListeners: js.UndefOr[Set[Lambda]] = js.undefined
+    var onBUOL: js.UndefOr[Set[Lambda]] = js.undefined
   }
   object IObservable {
     
     inline def apply(
-      diffValue: Double,
-      isBeingObserved: Boolean,
-      isPendingUnobservation: Boolean,
-      lastAccessedBy: Double,
-      lowestObserverState: IDerivationState,
-      name: String,
-      observers: Set[IDerivation],
-      onBecomeObserved: () => Unit,
-      onBecomeUnobserved: () => Unit
+      diffValue_ : Double,
+      isBeingObserved_ : Boolean,
+      isPendingUnobservation_ : Boolean,
+      lastAccessedBy_ : Double,
+      lowestObserverState_ : IDerivationState,
+      name_ : String,
+      observers_ : Set[IDerivation],
+      onBO: () => Unit,
+      onBUO: () => Unit
     ): IObservable = {
-      val __obj = js.Dynamic.literal(diffValue = diffValue.asInstanceOf[js.Any], isBeingObserved = isBeingObserved.asInstanceOf[js.Any], isPendingUnobservation = isPendingUnobservation.asInstanceOf[js.Any], lastAccessedBy = lastAccessedBy.asInstanceOf[js.Any], lowestObserverState = lowestObserverState.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], observers = observers.asInstanceOf[js.Any], onBecomeObserved = js.Any.fromFunction0(onBecomeObserved), onBecomeUnobserved = js.Any.fromFunction0(onBecomeUnobserved))
+      val __obj = js.Dynamic.literal(diffValue_ = diffValue_.asInstanceOf[js.Any], isBeingObserved_ = isBeingObserved_.asInstanceOf[js.Any], isPendingUnobservation_ = isPendingUnobservation_.asInstanceOf[js.Any], lastAccessedBy_ = lastAccessedBy_.asInstanceOf[js.Any], lowestObserverState_ = lowestObserverState_.asInstanceOf[js.Any], name_ = name_.asInstanceOf[js.Any], observers_ = observers_.asInstanceOf[js.Any], onBO = js.Any.fromFunction0(onBO), onBUO = js.Any.fromFunction0(onBUO))
       __obj.asInstanceOf[IObservable]
     }
     
     extension [Self <: IObservable](x: Self) {
       
-      inline def setDiffValue(value: Double): Self = StObject.set(x, "diffValue", value.asInstanceOf[js.Any])
+      inline def setDiffValue_(value: Double): Self = StObject.set(x, "diffValue_", value.asInstanceOf[js.Any])
       
-      inline def setIsBeingObserved(value: Boolean): Self = StObject.set(x, "isBeingObserved", value.asInstanceOf[js.Any])
+      inline def setIsBeingObserved_(value: Boolean): Self = StObject.set(x, "isBeingObserved_", value.asInstanceOf[js.Any])
       
-      inline def setIsPendingUnobservation(value: Boolean): Self = StObject.set(x, "isPendingUnobservation", value.asInstanceOf[js.Any])
+      inline def setIsPendingUnobservation_(value: Boolean): Self = StObject.set(x, "isPendingUnobservation_", value.asInstanceOf[js.Any])
       
-      inline def setLastAccessedBy(value: Double): Self = StObject.set(x, "lastAccessedBy", value.asInstanceOf[js.Any])
+      inline def setLastAccessedBy_(value: Double): Self = StObject.set(x, "lastAccessedBy_", value.asInstanceOf[js.Any])
       
-      inline def setLowestObserverState(value: IDerivationState): Self = StObject.set(x, "lowestObserverState", value.asInstanceOf[js.Any])
+      inline def setLowestObserverState_(value: IDerivationState): Self = StObject.set(x, "lowestObserverState_", value.asInstanceOf[js.Any])
       
-      inline def setObservers(value: Set[IDerivation]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+      inline def setObservers_(value: Set[IDerivation]): Self = StObject.set(x, "observers_", value.asInstanceOf[js.Any])
       
-      inline def setOnBecomeObserved(value: () => Unit): Self = StObject.set(x, "onBecomeObserved", js.Any.fromFunction0(value))
+      inline def setOnBO(value: () => Unit): Self = StObject.set(x, "onBO", js.Any.fromFunction0(value))
       
-      inline def setOnBecomeObservedListeners(value: Set[Lambda]): Self = StObject.set(x, "onBecomeObservedListeners", value.asInstanceOf[js.Any])
+      inline def setOnBOL(value: Set[Lambda]): Self = StObject.set(x, "onBOL", value.asInstanceOf[js.Any])
       
-      inline def setOnBecomeObservedListenersUndefined: Self = StObject.set(x, "onBecomeObservedListeners", js.undefined)
+      inline def setOnBOLUndefined: Self = StObject.set(x, "onBOL", js.undefined)
       
-      inline def setOnBecomeUnobserved(value: () => Unit): Self = StObject.set(x, "onBecomeUnobserved", js.Any.fromFunction0(value))
+      inline def setOnBUO(value: () => Unit): Self = StObject.set(x, "onBUO", js.Any.fromFunction0(value))
       
-      inline def setOnBecomeUnobservedListeners(value: Set[Lambda]): Self = StObject.set(x, "onBecomeUnobservedListeners", value.asInstanceOf[js.Any])
+      inline def setOnBUOL(value: Set[Lambda]): Self = StObject.set(x, "onBUOL", value.asInstanceOf[js.Any])
       
-      inline def setOnBecomeUnobservedListenersUndefined: Self = StObject.set(x, "onBecomeUnobservedListeners", js.undefined)
+      inline def setOnBUOLUndefined: Self = StObject.set(x, "onBUOL", js.undefined)
     }
   }
 }

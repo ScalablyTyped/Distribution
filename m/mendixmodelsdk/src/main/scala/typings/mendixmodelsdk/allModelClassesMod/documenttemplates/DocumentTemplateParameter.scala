@@ -10,9 +10,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter")
+@JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter")
 @js.native
-class DocumentTemplateParameter protected ()
+open class DocumentTemplateParameter protected ()
   extends typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplateParameter {
   def this(
     model: AbstractModel,
@@ -25,18 +25,18 @@ class DocumentTemplateParameter protected ()
 }
 object DocumentTemplateParameter {
   
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter")
   @js.native
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter.structureTypeName")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
   inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter.versionInfo")
+  @JSImport("mendixmodelsdk/src/gen/all-model-classes", "documenttemplates.DocumentTemplateParameter.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
   inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])

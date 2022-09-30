@@ -87,21 +87,21 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.supportsColor.supportsColorNumbers.`0`
-    - typings.supportsColor.supportsColorNumbers.`1`
-    - typings.supportsColor.supportsColorNumbers.`2`
-    - typings.supportsColor.supportsColorNumbers.`3`
+    - typings.supportsColor.supportsColorInts.`0`
+    - typings.supportsColor.supportsColorInts.`1`
+    - typings.supportsColor.supportsColorInts.`2`
+    - typings.supportsColor.supportsColorInts.`3`
   */
   trait ColorSupportLevel extends StObject
   object ColorSupportLevel {
     
-    inline def `0`: typings.supportsColor.supportsColorNumbers.`0` = 0.asInstanceOf[typings.supportsColor.supportsColorNumbers.`0`]
+    inline def `0`: typings.supportsColor.supportsColorInts.`0` = 0.asInstanceOf[typings.supportsColor.supportsColorInts.`0`]
     
-    inline def `1`: typings.supportsColor.supportsColorNumbers.`1` = 1.asInstanceOf[typings.supportsColor.supportsColorNumbers.`1`]
+    inline def `1`: typings.supportsColor.supportsColorInts.`1` = 1.asInstanceOf[typings.supportsColor.supportsColorInts.`1`]
     
-    inline def `2`: typings.supportsColor.supportsColorNumbers.`2` = 2.asInstanceOf[typings.supportsColor.supportsColorNumbers.`2`]
+    inline def `2`: typings.supportsColor.supportsColorInts.`2` = 2.asInstanceOf[typings.supportsColor.supportsColorInts.`2`]
     
-    inline def `3`: typings.supportsColor.supportsColorNumbers.`3` = 3.asInstanceOf[typings.supportsColor.supportsColorNumbers.`3`]
+    inline def `3`: typings.supportsColor.supportsColorInts.`3` = 3.asInstanceOf[typings.supportsColor.supportsColorInts.`3`]
   }
   
   trait Options extends StObject {

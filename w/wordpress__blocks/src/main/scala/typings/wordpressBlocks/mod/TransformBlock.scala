@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransformBlock[T /* <: Record[String, js.Any] */]
+trait TransformBlock[T /* <: Record[String, Any] */]
   extends StObject
      with Transform[T] {
   
@@ -25,17 +25,17 @@ trait TransformBlock[T /* <: Record[String, js.Any] */]
 }
 object TransformBlock {
   
-  inline def apply[T /* <: Record[String, js.Any] */](blocks: js.Array[String], transform: T => BlockInstance[Partial[T]]): TransformBlock[T] = {
+  inline def apply[T /* <: Record[String, Any] */](blocks: js.Array[String], transform: T => BlockInstance[Partial[T]]): TransformBlock[T] = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
     __obj.updateDynamic("type")("block")
     __obj.asInstanceOf[TransformBlock[T]]
   }
   
-  extension [Self <: TransformBlock[?], T /* <: Record[String, js.Any] */](x: Self & TransformBlock[T]) {
+  extension [Self <: TransformBlock[?], T /* <: Record[String, Any] */](x: Self & TransformBlock[T]) {
     
     inline def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    inline def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value*))
     
     inline def setIsMatch(value: /* attributes */ T => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
     

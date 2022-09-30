@@ -15,7 +15,7 @@ object validateStringMod {
     classKey: js.UndefOr[Double],
     dateFormat: js.UndefOr[Any],
     args: Any*
-  ): Any = (^.asInstanceOf[js.Dynamic].apply((List(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any], caseType.asInstanceOf[js.Any], classKey.asInstanceOf[js.Any], dateFormat.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  ): Any = (^.asInstanceOf[js.Dynamic].apply((scala.List(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any], caseType.asInstanceOf[js.Any], classKey.asInstanceOf[js.Any], dateFormat.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   @JSImport("@nginstack/engine/lib/string/validateString", JSImport.Namespace)
   @js.native

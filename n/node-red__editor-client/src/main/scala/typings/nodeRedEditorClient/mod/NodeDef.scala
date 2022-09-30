@@ -2,8 +2,8 @@ package typings.nodeRedEditorClient.mod
 
 import typings.nodeRedEditorClient.anon.Enabled
 import typings.nodeRedEditorClient.anon.Height
-import typings.nodeRedEditorClient.nodeRedEditorClientNumbers.`0`
-import typings.nodeRedEditorClient.nodeRedEditorClientNumbers.`1`
+import typings.nodeRedEditorClient.nodeRedEditorClientInts.`0`
+import typings.nodeRedEditorClient.nodeRedEditorClientInts.`1`
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.config
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.left
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.node_label

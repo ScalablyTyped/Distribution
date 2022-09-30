@@ -1,8 +1,8 @@
 package typings.playcanvas.mod
 
-import typings.playcanvas.playcanvasNumbers.`-1`
-import typings.playcanvas.playcanvasNumbers.`0`
-import typings.playcanvas.playcanvasNumbers.`1`
+import typings.playcanvas.playcanvasInts.`-1`
+import typings.playcanvas.playcanvasInts.`0`
+import typings.playcanvas.playcanvasInts.`1`
 import typings.playcanvas.playcanvasStrings.calculatedHeight
 import typings.playcanvas.playcanvasStrings.calculatedWidth
 import typings.playcanvas.playcanvasStrings.x

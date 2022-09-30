@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "microflows.ExclusiveSplit")
 @js.native
-class ExclusiveSplit protected ()
+open class ExclusiveSplit protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.microflows.ExclusiveSplit {
   def this(
     model: AbstractModel,

@@ -883,21 +883,21 @@ object Cropper {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.cropperjs.cropperjsNumbers.`0`
-    - typings.cropperjs.cropperjsNumbers.`1`
-    - typings.cropperjs.cropperjsNumbers.`2`
-    - typings.cropperjs.cropperjsNumbers.`3`
+    - typings.cropperjs.cropperjsInts.`0`
+    - typings.cropperjs.cropperjsInts.`1`
+    - typings.cropperjs.cropperjsInts.`2`
+    - typings.cropperjs.cropperjsInts.`3`
   */
   trait ViewMode extends StObject
   object ViewMode {
     
-    inline def `0`: typings.cropperjs.cropperjsNumbers.`0` = 0.asInstanceOf[typings.cropperjs.cropperjsNumbers.`0`]
+    inline def `0`: typings.cropperjs.cropperjsInts.`0` = 0.asInstanceOf[typings.cropperjs.cropperjsInts.`0`]
     
-    inline def `1`: typings.cropperjs.cropperjsNumbers.`1` = 1.asInstanceOf[typings.cropperjs.cropperjsNumbers.`1`]
+    inline def `1`: typings.cropperjs.cropperjsInts.`1` = 1.asInstanceOf[typings.cropperjs.cropperjsInts.`1`]
     
-    inline def `2`: typings.cropperjs.cropperjsNumbers.`2` = 2.asInstanceOf[typings.cropperjs.cropperjsNumbers.`2`]
+    inline def `2`: typings.cropperjs.cropperjsInts.`2` = 2.asInstanceOf[typings.cropperjs.cropperjsInts.`2`]
     
-    inline def `3`: typings.cropperjs.cropperjsNumbers.`3` = 3.asInstanceOf[typings.cropperjs.cropperjsNumbers.`3`]
+    inline def `3`: typings.cropperjs.cropperjsInts.`3` = 3.asInstanceOf[typings.cropperjs.cropperjsInts.`3`]
   }
   
   @js.native

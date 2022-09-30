@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-mosaic-component
 
-Typings are for version 3.2.0
+Typings are for version 5.3.0
 
 ## Library description:
 A React Tiling Window Manager
@@ -9,13 +9,16 @@ A React Tiling Window Manager
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-mosaic-component |
-| Keywords           | ui, palantir, react, component, typescript, tiling-window-manager, window-manager |
-| # releases         | 23 |
-| # dependents       | 2 |
-| # downloads        | 34672 |
-| # stars            | 2 |
+| Keywords           | ui, react, component, typescript, tiling-window-manager, window-manager |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 57212.333333333336 |
+| # stars            | 3002.0 |
 
 ## Links
+- [Homepage](https://github.com/nomcopter/react-mosaic#readme)
+- [Bugs](https://github.com/nomcopter/react-mosaic/issues)
+- [Repository](https://github.com/nomcopter/react-mosaic)
 - [Npm](https://www.npmjs.com/package/react-mosaic-component)
     
 

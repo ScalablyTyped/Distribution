@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mendixmodelsdk", "pages.ContainerRenderMode")
 @js.native
-class ContainerRenderMode protected ()
+open class ContainerRenderMode protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.pages.ContainerRenderMode {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }

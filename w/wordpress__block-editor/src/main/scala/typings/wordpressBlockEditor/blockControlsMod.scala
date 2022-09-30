@@ -52,7 +52,7 @@ object blockControlsMod {
         
         inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
         
-        inline def setControlsVarargs(value: (js.Array[Control] | Control)*): Self = StObject.set(x, "controls", js.Array(value :_*))
+        inline def setControlsVarargs(value: (js.Array[Control] | Control)*): Self = StObject.set(x, "controls", js.Array(value*))
       }
     }
   }

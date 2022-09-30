@@ -21,26 +21,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var cols: js.UndefOr[Double] = js.undefined
   
   // uses all available space on false, uses minimal space on true
-  var condense: Boolean
+  var condense: js.UndefOr[Boolean] = js.undefined
   
   @JSName("name")
   var name_GridLayoutOptions: grid
   
   // returns { row, col } for element
-  def position(node: NodeSingular): Col
+  var position: js.UndefOr[js.Function1[/* node */ NodeSingular, Col]] = js.undefined
   
   // force num of rows in the grid
   var rows: js.UndefOr[Double] = js.undefined
 }
 object GridLayoutOptions {
   
-  inline def apply(
-    condense: Boolean,
-    fit: Boolean,
-    nodeDimensionsIncludeLabels: Boolean,
-    position: NodeSingular => Col
-  ): GridLayoutOptions = {
-    val __obj = js.Dynamic.literal(condense = condense.asInstanceOf[js.Any], fit = fit.asInstanceOf[js.Any], name = "grid", nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any], position = js.Any.fromFunction1(position))
+  inline def apply(): GridLayoutOptions = {
+    val __obj = js.Dynamic.literal(name = "grid")
     __obj.asInstanceOf[GridLayoutOptions]
   }
   
@@ -56,9 +51,13 @@ object GridLayoutOptions {
     
     inline def setCondense(value: Boolean): Self = StObject.set(x, "condense", value.asInstanceOf[js.Any])
     
+    inline def setCondenseUndefined: Self = StObject.set(x, "condense", js.undefined)
+    
     inline def setName(value: grid): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: NodeSingular => Col): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+    inline def setPosition(value: /* node */ NodeSingular => Col): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

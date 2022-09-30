@@ -1,6 +1,8 @@
 package typings.jsSdsl
 
 import typings.jsSdsl.containerBaseMod.ContainerIterator
+import typings.jsSdsl.containerBaseMod.IteratorType
+import typings.jsSdsl.treeNodeMod.TreeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +12,8 @@ object treeIteratorMod {
   @JSImport("js-sdsl/dist/cjs/container/TreeContainer/Base/TreeIterator", JSImport.Default)
   @js.native
   abstract class default[K, V] protected () extends TreeIterator[K, V] {
-    def this(node: typings.jsSdsl.treeNodeMod.default[K, V], header: typings.jsSdsl.treeNodeMod.default[K, V]) = this()
-    def this(
-      node: typings.jsSdsl.treeNodeMod.default[K, V],
-      header: typings.jsSdsl.treeNodeMod.default[K, V],
-      iteratorType: Boolean
-    ) = this()
+    def this(_node: TreeNode[K, V], _header: TreeNode[K, V]) = this()
+    def this(_node: TreeNode[K, V], _header: TreeNode[K, V], iteratorType: IteratorType) = this()
   }
   
   @js.native
@@ -24,9 +22,6 @@ object treeIteratorMod {
     
     def equals(obj: TreeIterator[K, V]): Boolean = js.native
     
-    /* protected */ var header: typings.jsSdsl.treeNodeMod.default[K, V] = js.native
-    
-    /* protected */ @JSName("node")
-    var node_TreeIterator: typings.jsSdsl.treeNodeMod.default[K, V] = js.native
+    def index: Double = js.native
   }
 }

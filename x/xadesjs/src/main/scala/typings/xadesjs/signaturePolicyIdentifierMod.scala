@@ -11,23 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object signaturePolicyIdentifierMod {
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "Integer")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "Integer")
   @js.native
-  class Integer () extends XadesObject {
+  open class Integer () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Value: Double = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "IntegerList")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "IntegerList")
   @js.native
-  class IntegerList () extends XadesCollection[Integer] {
+  open class IntegerList () extends XadesCollection[Integer] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "NoticeReference")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "NoticeReference")
   @js.native
-  class NoticeReference () extends XadesObject {
+  open class NoticeReference () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var NoticeNumbers: IntegerList = js.native
@@ -35,17 +35,17 @@ object signaturePolicyIdentifierMod {
     var Organization: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SPURI")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SPURI")
   @js.native
-  class SPURI () extends XadesObject {
+  open class SPURI () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var Value: String = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SPUserNotice")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SPUserNotice")
   @js.native
-  class SPUserNotice () extends XadesObject {
+  open class SPUserNotice () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var ExplicitText: String = js.native
@@ -53,33 +53,33 @@ object signaturePolicyIdentifierMod {
     var NoticeRef: NoticeReference = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SigPolicyHash")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SigPolicyHash")
   @js.native
-  class SigPolicyHash () extends DigestAlgAndValueType {
+  open class SigPolicyHash () extends DigestAlgAndValueType {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SigPolicyId")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SigPolicyId")
   @js.native
-  class SigPolicyId () extends ObjectIdentifier {
+  open class SigPolicyId () extends ObjectIdentifier {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SigPolicyQualifier")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SigPolicyQualifier")
   @js.native
-  class SigPolicyQualifier () extends AnyCollection {
+  open class SigPolicyQualifier () extends AnyCollection {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SigPolicyQualifiers")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SigPolicyQualifiers")
   @js.native
-  class SigPolicyQualifiers () extends XadesCollection[SigPolicyQualifier] {
+  open class SigPolicyQualifiers () extends XadesCollection[SigPolicyQualifier] {
     def this(properties: js.Object) = this()
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SignaturePolicyId")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SignaturePolicyId")
   @js.native
-  class SignaturePolicyId () extends XadesObject {
+  open class SignaturePolicyId () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var SigPolicyHash: typings.xadesjs.signaturePolicyIdentifierMod.SigPolicyHash = js.native
@@ -91,9 +91,9 @@ object signaturePolicyIdentifierMod {
     var Transforms: typings.xmldsigjs.mod.Transforms = js.native
   }
   
-  @JSImport("xadesjs/build/types/xml/signature_policy_identifier", "SignaturePolicyIdentifier")
+  @JSImport("xadesjs/build/types/src/xml/signature_policy_identifier", "SignaturePolicyIdentifier")
   @js.native
-  class SignaturePolicyIdentifier () extends XadesObject {
+  open class SignaturePolicyIdentifier () extends XadesObject {
     def this(properties: js.Object) = this()
     
     var SignaturePolicyId: typings.xadesjs.signaturePolicyIdentifierMod.SignaturePolicyId = js.native

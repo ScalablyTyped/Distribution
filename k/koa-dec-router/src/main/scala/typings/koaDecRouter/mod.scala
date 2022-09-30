@@ -30,8 +30,8 @@ object mod {
   
   inline def all(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def controller(path: Any, opts: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")((List(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
-  inline def controller(path: Any, opts: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")((List(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def controller(path: Any, opts: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")((scala.List(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def controller(path: Any, opts: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")((scala.List(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   inline def del(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
@@ -45,6 +45,6 @@ object mod {
   
   inline def put(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
-  inline def route(method: String, path: Any, opts: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")((List(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
-  inline def route(method: String, path: Any, opts: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")((List(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def route(method: String, path: Any, opts: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")((scala.List(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def route(method: String, path: Any, opts: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("route")((scala.List(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 }

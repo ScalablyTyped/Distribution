@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mendixmodelsdk", "codeactions.BooleanType")
 @js.native
-class BooleanType protected ()
+open class BooleanType protected ()
   extends typings.mendixmodelsdk.allModelClassesMod.codeactions.BooleanType {
   def this(
     model: AbstractModel,

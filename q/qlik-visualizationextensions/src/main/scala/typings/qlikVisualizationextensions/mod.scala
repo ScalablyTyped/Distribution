@@ -2,6 +2,7 @@ package typings.qlikVisualizationextensions
 
 import org.scalablytyped.runtime.Shortcut
 import typings.qlikVisualizationextensions.RootAPI.IRoot
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ object mod extends Shortcut {
       */
     /* standard es2015.promise */
     def this(executor: js.Function2[
-            /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
+            /* resolve */ js.Function1[/* value */ T | PromiseLike[T], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()

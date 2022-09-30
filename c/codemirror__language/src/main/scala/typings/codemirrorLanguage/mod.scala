@@ -10,9 +10,9 @@ import typings.codemirrorLanguage.anon.From
 import typings.codemirrorLanguage.anon.LanguageData
 import typings.codemirrorLanguage.anon.OverrideIndentation
 import typings.codemirrorLanguage.anon.To
-import typings.codemirrorLanguage.codemirrorLanguageNumbers.`-1`
-import typings.codemirrorLanguage.codemirrorLanguageNumbers.`0`
-import typings.codemirrorLanguage.codemirrorLanguageNumbers.`1`
+import typings.codemirrorLanguage.codemirrorLanguageInts.`-1`
+import typings.codemirrorLanguage.codemirrorLanguageInts.`0`
+import typings.codemirrorLanguage.codemirrorLanguageInts.`1`
 import typings.codemirrorState.mod.ChangeSet
 import typings.codemirrorState.mod.EditorState
 import typings.codemirrorState.mod.Extension

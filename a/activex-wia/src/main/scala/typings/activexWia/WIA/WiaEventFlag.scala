@@ -1,7 +1,7 @@
 package typings.activexWia.WIA
 
-import typings.activexWia.activexWiaNumbers.`1`
-import typings.activexWia.activexWiaNumbers.`2`
+import typings.activexWia.activexWiaInts.`1`
+import typings.activexWia.activexWiaInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DeviceEvent.Type and a member from the WiaEventFlags enumeration.
   */
 /* Rewritten from type alias, can be one of: 
-  - typings.activexWia.activexWiaNumbers.`2`
-  - typings.activexWia.activexWiaNumbers.`1`
+  - typings.activexWia.activexWiaInts.`2`
+  - typings.activexWia.activexWiaInts.`1`
 */
 trait WiaEventFlag extends StObject
 object WiaEventFlag {
